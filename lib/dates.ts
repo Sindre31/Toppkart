@@ -1,24 +1,15 @@
-/** Norwegian date helpers.
+/** Date helpers.
  *
- *  Dependency-free on purpose: no Intl locale data, no date library. The whole
- *  app writes dates the way the prototypes do — «12. august 2026» — and adds
- *  days when it needs the end of a 14-day trial.
+ *  Formatting goes through `Intl.DateTimeFormat` on the tag `htmlLang()`
+ *  returns, so the same call renders «12. august 2026» for a Norwegian reader
+ *  and "August 12, 2026" for an English one. The Norwegian output is identical
+ *  to the hand-rolled month table this file used to carry.
+ *
+ *  Parsing and arithmetic stay dependency-free: the app only ever needs to read
+ *  a date the database wrote and add days to it for the end of a trial.
  */
 
-export const NORWEGIAN_MONTHS = [
-  "januar",
-  "februar",
-  "mars",
-  "april",
-  "mai",
-  "juni",
-  "juli",
-  "august",
-  "september",
-  "oktober",
-  "november",
-  "desember",
-] as const;
+import { htmlLang, type Lang } from "@/lib/i18n";
 
 /** Anything a date can arrive as: an ISO string, a timestamp, or a Date. */
 export type DateInput = string | number | Date;
@@ -55,24 +46,56 @@ export function addDays(value: DateInput, days: number): Date {
   return next;
 }
 
-/** «12. august 2026». Returns an empty string for a missing/invalid date, so
- *  callers can render it straight into copy without guarding first. */
-export function formatNorwegianDate(value: DateInput | null | undefined): string {
-  const date = toDate(value);
-  if (!date) return "";
-  return `${date.getDate()}. ${NORWEGIAN_MONTHS[date.getMonth()]} ${date.getFullYear()}`;
+/* — formatting —
+ *
+ * Building an `Intl.DateTimeFormat` is the expensive part, so the two we need
+ * are memoised per language and reused for the rest of the process.
+ */
+
+const DATE_FORMATS: Partial<Record<Lang, Intl.DateTimeFormat>> = {};
+const TIME_FORMATS: Partial<Record<Lang, Intl.DateTimeFormat>> = {};
+
+function dateFormat(lang: Lang): Intl.DateTimeFormat {
+  return (DATE_FORMATS[lang] ??= new Intl.DateTimeFormat(htmlLang(lang), {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  }));
 }
 
-/** «12. august 2026, 09:30» — for timestamps where the clock matters. */
-export function formatNorwegianDateTime(value: DateInput | null | undefined): string {
-  const date = toDate(value);
-  if (!date) return "";
-  const hh = String(date.getHours()).padStart(2, "0");
-  const mm = String(date.getMinutes()).padStart(2, "0");
-  return `${formatNorwegianDate(date)}, ${hh}:${mm}`;
+/** Norwegian keeps the 24-hour clock the prototypes use; English gets whatever
+ *  the locale prefers, which is `9:30 AM`. */
+function timeFormat(lang: Lang): Intl.DateTimeFormat {
+  return (TIME_FORMATS[lang] ??=
+    lang === "no"
+      ? new Intl.DateTimeFormat(htmlLang(lang), { hour: "2-digit", minute: "2-digit", hour12: false })
+      : new Intl.DateTimeFormat(htmlLang(lang), { hour: "numeric", minute: "2-digit" }));
 }
 
-/** `YYYY-MM-DD` for the given date, in local time. */
+/** «12. august 2026» / "August 12, 2026". Returns an empty string for a
+ *  missing/invalid date, so callers can render it straight into copy without
+ *  guarding first. */
+export function formatDate(value: DateInput | null | undefined, lang: Lang = "no"): string {
+  const date = toDate(value);
+  if (!date) return "";
+  return dateFormat(lang).format(date);
+}
+
+/** «12. august 2026, 09:30» / "August 12, 2026, 9:30 AM" — for timestamps where
+ *  the clock matters. */
+export function formatDateTime(value: DateInput | null | undefined, lang: Lang = "no"): string {
+  const date = toDate(value);
+  if (!date) return "";
+  return `${formatDate(date, lang)}, ${timeFormat(lang).format(date)}`;
+}
+
+/** Former names of `formatDate` / `formatDateTime`, kept so call sites that
+ *  have not been passed a language yet keep working. Prefer the new names. */
+export const formatNorwegianDate = formatDate;
+export const formatNorwegianDateTime = formatDateTime;
+
+/** `YYYY-MM-DD` for the given date, in local time. Machine-readable, so it is
+ *  the same in both languages. */
 export function toISODateString(value: DateInput): string {
   const date = toDate(value) ?? new Date();
   const mm = String(date.getMonth() + 1).padStart(2, "0");

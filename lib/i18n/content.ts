@@ -41,7 +41,7 @@ export const TOUR_TEASER_EN: Record<string, string> = {
   tromsdalstinden:
     "Tromsø's signature peak: a long, even climb out of Tromsdalen with a big view across to Lyngen.",
   "store-blamann":
-    "The boldest profile on Kvaløya — a steep classic that asks for stable conditions and careful planning.",
+    "Kvaløya's steepest classic profile — it asks for stable conditions and careful planning.",
   storgalten:
     "Fjord to summit in outer Lyngen: 1219 metres of vertical straight up from sea level.",
   rornestinden:
@@ -53,7 +53,7 @@ export const TOUR_TEASER_EN: Record<string, string> = {
   rombakstotta:
     "Narvik's pointed landmark — a varied climb and a fine, sustained descent.",
   himmeltindan:
-    "The highest point on Vestvågøy, alpine in character, with lines running straight at the Arctic Ocean.",
+    "Vestvågøy's highest: alpine in character, with lines straight at the Arctic Ocean.",
   stornappstinden:
     "A Lofoten classic in manageable format — plenty of mountain for the vertical.",
   kirketaket:
@@ -65,17 +65,17 @@ export const TOUR_TEASER_EN: Record<string, string> = {
   skala:
     "1848 unbroken metres of vertical from the fjord at Loen — one of the longest descents in the country.",
   fanaraken:
-    "A high-mountain tour from Sognefjellet, with glacier views and dependable spring snow.",
+    "A high-mountain tour from Sognefjellet: glacier views and reliable spring snow.",
   steindalsnosi:
-    "A 2000-metre summit within most people's reach: short, gentle and sunlit from Sognefjellsveien.",
+    "A 2000er for most people: short, gentle and sun-facing from Sognefjellsveien.",
   galdhopiggen:
     "The roof of Norway on skis — glacier, rope and real altitude; usually done from Juvasshytta.",
   synshorn:
-    "Short and safe from Valdresflye — an ideal first tour, and a good one for a narrow weather window.",
+    "Short and safe from Valdresflye — a perfect first tour, and a weather-window tour.",
   bitihorn:
-    "A distinct horn with a straightforward normal route and a fine view over Bygdin.",
+    "A marked horn with a simple normal route and a fine view over Bygdin.",
   rondslottet:
-    "The high point of Rondane: calm high-mountain terrain and a dependable spring season.",
+    "Rondane's highest: quiet high-mountain terrain and a reliable spring season.",
   snohetta:
     "Grand and airy, but surprisingly good-natured — once Snøheimvegen opens.",
   storehorn:
@@ -84,7 +84,7 @@ export const TOUR_TEASER_EN: Record<string, string> = {
   melderskin:
     "The great classic of the Rosendal Alps, from the sea to 1426 m.",
   gaustatoppen:
-    "The most prominent summit in southern Norway — if you can see it, it can see you.",
+    "Southern Norway's most striking summit — if you can see it, it can see you.",
 };
 
 export function teaserFor(slug: string, lang: Lang): string {
@@ -137,8 +137,51 @@ export interface GuideTextEn {
   };
 }
 
-/** English guide prose, keyed by slug. Mirrors `GUIDES` in `lib/guides.ts`. */
-export const GUIDE_EN: Record<string, GuideTextEn> = {};
+/** English guide prose, keyed by slug. Mirrors `GUIDES` in `lib/guides.ts`.
+ *
+ *  Array lengths must match the Norwegian source paragraph for paragraph — the
+ *  guide page renders whichever array it is handed, so a short translation
+ *  silently drops a paragraph rather than falling back to Norwegian.
+ *
+ *  The literal `varsom.no` in the avalanche text is load-bearing: the display
+ *  (`components/guide/GuideSections.tsx` → `AvalancheBody`) finds that exact
+ *  substring and turns it into the link. Keep it spelled that way. */
+export const GUIDE_EN: Record<string, GuideTextEn> = {
+  kirketaket: {
+    intro:
+      "Perhaps Norway's most popular ski tour — a broad ridge, safe line choices and a long season. A tour that gives you plenty of mountain for the money, whether it is your first time up or your hundredth.",
+    ascent: [
+      "From the winter parking at Skarbakkane, follow the broad ridge towards the southwest. The skin track is usually well trodden; keep right where the forest thins out and you avoid the steepest rolls at the treeline.",
+      "Above the treeline the terrain opens up. The ridge is low-angle and safe in normal conditions — the steepest section comes between 900 and 1200 m, where many put in gentler switchbacks. The summit plateau is broad and good-natured; the cairn stands at its far southeast end.",
+      "In poor visibility: stay on the ridge. The ground on either side falls away more steeply than it looks from the track.",
+    ],
+    descent: [
+      "The normal route down follows the ascent — wide, even and with good flow all the way to the treeline. In good conditions the southwest-facing flank is a natural line, but it loads with wind slab after wind from the northwest.",
+      "The most common mistake is drifting too far south on the way down. That puts you above the steep ground dropping into the valley — stay with the track until you can see the parking.",
+    ],
+    avalanche: [
+      {
+        title: "The normal route",
+        body: "Stays below 30° the whole way in normal conditions. No known runout zones cross the route.",
+      },
+      {
+        title: "Off the route",
+        body: "The south and southwest flanks reach 30–40° and collect wind slab. Consider them only in stable conditions.",
+      },
+      {
+        // «varsom.no» is turned into a link in the display (Turguide → AvalancheBody).
+        title: "Before you go",
+        body: "Check the day's avalanche forecast for Romsdal at varsom.no. Bring a beacon, probe and shovel.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "60 m",
+      endLabel: "1439 m",
+      distanceLabel: "5.5 km",
+      caption: "A steady climb the whole way; steepest between 900 and 1200 m.",
+    },
+  },
+};
 
 /** A guide rendered in `lang`. Falls back field-by-field, so a partial
  *  translation still shows everything it has. */

@@ -5,8 +5,9 @@
  *  inline (the schematic-route note, the trailhead tooltip) plus the labels the
  *  React version needs for accessibility and the unlocked state.
  *
- *  Tour *content* — teasers, seasons, aspects — is translated separately, in
- *  `./content` and `./format`; the prototype left it Norwegian.
+ *  Tour *content* — teasers, seasons, aspects, durations — is translated
+ *  separately, in `./content` and `./format`; the page runs each row through
+ *  `localizeTours()` before rendering it. Only chrome lives here.
  */
 
 import { gradeLabel } from "./format";

@@ -1,10 +1,35 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { Blueprint } from "@/components/Blueprint";
+import { DEFAULT_LANG, LANG_COOKIE, toLang, type Lang } from "@/lib/i18n";
+import { systemDict } from "@/lib/i18n/system";
+
+/** Reads the language straight off `document.cookie`.
+ *
+ *  An error boundary has to be a Client Component, so it cannot await
+ *  `getLang()` — and it renders when the tree below it has already failed, so
+ *  it cannot rely on a `lang` prop from a Server Component either. Reading the
+ *  same `tk_lang` cookie the server reads keeps the two in step without a new
+ *  cookie or a provider. The name comes from `LANG_COOKIE` so the two readers
+ *  can never drift apart.
+ */
+function readLangCookie(): Lang {
+  const match = document.cookie.match(new RegExp(`(?:^|; )${LANG_COOKIE}=([^;]*)`));
+  return toLang(match ? decodeURIComponent(match[1]) : undefined);
+}
 
 export default function Error({ error, reset }: { error: Error & { digest?: string }; reset: () => void }) {
+  // Norwegian for the first paint — the cookie is only readable once mounted,
+  // and the default language is the one most readers are already on.
+  const [lang, setLang] = useState<Lang>(DEFAULT_LANG);
+  const t = systemDict(lang);
+
+  useEffect(() => {
+    setLang(readLangCookie());
+  }, []);
+
   useEffect(() => {
     console.error(error);
   }, [error]);
@@ -13,19 +38,19 @@ export default function Error({ error, reset }: { error: Error & { digest?: stri
     <div className="shell">
       <main style={{ display: "grid", placeItems: "center", padding: "48px 20px" }}>
         <Blueprint style={{ padding: 32, width: "min(480px, 100%)" }}>
-          <span className="kicker">Noe gikk galt</span>
+          <span className="kicker">{t.errorKicker}</span>
           <h1 style={{ fontSize: 34, lineHeight: 1.08, letterSpacing: "0.02em", textTransform: "uppercase", margin: "10px 0 0" }}>
-            Uventet feil
+            {t.errorTitle}
           </h1>
           <p className="prose" style={{ margin: "12px 0 0" }}>
-            Vi klarte ikke å laste siden. Prøv på nytt — hjelper det ikke, gå tilbake til kartet.
+            {t.errorBody}
           </p>
           <div style={{ display: "flex", gap: 10, flexWrap: "wrap", marginTop: 22 }}>
             <button type="button" className="btn btn-primary" onClick={reset}>
-              Prøv på nytt
+              {t.errorRetry}
             </button>
             <Link className="btn btn-secondary" href="/kart">
-              Åpne kartet
+              {t.errorMap}
             </Link>
           </div>
         </Blueprint>

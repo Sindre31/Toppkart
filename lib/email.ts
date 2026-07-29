@@ -1,10 +1,15 @@
 import { Resend } from "resend";
 import { PRICE, SITE, TRIAL_DAYS, env, isResendConfigured } from "@/lib/config";
+import { htmlLang, type Lang } from "@/lib/i18n";
+import { siteMeta } from "@/lib/i18n/common";
+import { systemDict } from "@/lib/i18n/system";
 
 /** Transactional email via Resend.
  *
- *  Three messages, all in Norwegian and in the product's voice: calm, factual,
- *  no exclamation marks, no marketing.
+ *  Three messages, in the product's voice: calm, factual, no exclamation marks,
+ *  no marketing. Each one is written in the reader's language — every send
+ *  function takes an optional `lang`, defaulting to Norwegian so a caller that
+ *  has no language to hand keeps sending exactly what it always sent.
  *
  *  When `RESEND_API_KEY` is absent (demo mode) every function logs what it would
  *  have sent and resolves successfully. Nothing here ever throws — a failed
@@ -31,40 +36,59 @@ function getResend(): Resend | null {
 // Formatting helpers
 // ---------------------------------------------------------------------------
 
-const dateFormat = new Intl.DateTimeFormat("nb-NO", {
-  day: "numeric",
-  month: "long",
-  year: "numeric",
-});
+const dateFormat: Record<Lang, Intl.DateTimeFormat> = {
+  no: new Intl.DateTimeFormat(htmlLang("no"), { day: "numeric", month: "long", year: "numeric" }),
+  en: new Intl.DateTimeFormat(htmlLang("en"), { day: "numeric", month: "long", year: "numeric" }),
+};
 
-/** «12. august 2026». Returns null for missing or unparseable input. */
-function formatDate(value: string | Date | null | undefined): string | null {
+/** «12. august 2026» / «12 August 2026». Returns null for missing or
+ *  unparseable input. */
+function formatDate(value: string | Date | null | undefined, lang: Lang): string | null {
   if (!value) return null;
   const date = value instanceof Date ? value : new Date(value);
   if (Number.isNaN(date.getTime())) return null;
-  return dateFormat.format(date);
+  return dateFormat[lang].format(date);
 }
 
-/** Minor units to «29,00 kr». */
-function formatAmount(minorUnits: number, currency = "nok"): string {
-  return new Intl.NumberFormat("nb-NO", {
-    style: "currency",
-    currency: currency.toUpperCase(),
-    currencyDisplay: "code",
-  })
-    .format(minorUnits / 100)
-    .replace(/\s*NOK\s*/, " kr")
-    .trim();
+/** Minor units to «29,00 kr» / «29.00 kr». The currency stays NOK in both
+ *  languages — it is what the card is charged, not copy — so English only
+ *  changes the decimal separator and grouping. */
+function formatAmount(minorUnits: number, currency: string, lang: Lang): string {
+  if (lang === "no") {
+    return new Intl.NumberFormat("nb-NO", {
+      style: "currency",
+      currency: currency.toUpperCase(),
+      currencyDisplay: "code",
+    })
+      .format(minorUnits / 100)
+      .replace(/\s*NOK\s*/, " kr")
+      .trim();
+  }
+  const amount = new Intl.NumberFormat(htmlLang(lang), {
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2,
+  }).format(minorUnits / 100);
+  return `${amount} ${currency.toLowerCase() === "nok" ? "kr" : currency.toUpperCase()}`;
 }
 
-function planLabel(plan: "maned" | "ar"): string {
-  return plan === "ar" ? PRICE.yearly.planLabel : PRICE.monthly.planLabel;
+/** The Norwegian plan names live in `PRICE` — they are product constants, not
+ *  copy — so only the English half comes from the dictionary. */
+function planLabel(plan: "maned" | "ar", lang: Lang): string {
+  if (lang === "no") return plan === "ar" ? PRICE.yearly.planLabel : PRICE.monthly.planLabel;
+  const t = systemDict(lang);
+  return plan === "ar" ? t.emailPlanYearly : t.emailPlanMonthly;
 }
 
-function planPrice(plan: "maned" | "ar"): string {
+function planPrice(plan: "maned" | "ar", lang: Lang): string {
+  if (lang === "no") {
+    return plan === "ar"
+      ? `${PRICE.yearly.label} ${PRICE.yearly.perLabel}`
+      : `${PRICE.monthly.label} ${PRICE.monthly.perLabel}`;
+  }
+  const t = systemDict(lang);
   return plan === "ar"
-    ? `${PRICE.yearly.label} ${PRICE.yearly.perLabel}`
-    : `${PRICE.monthly.label} ${PRICE.monthly.perLabel}`;
+    ? `${PRICE.yearly.label} ${t.emailPerYear}`
+    : `${PRICE.monthly.label} ${t.emailPerMonth}`;
 }
 
 function escapeHtml(value: string): string {
@@ -114,8 +138,10 @@ function renderRows(rows: Row[]): string {
     .join("");
 }
 
-function layout(options: LayoutOptions): string {
+function layout(options: LayoutOptions, lang: Lang): string {
   const { kicker, heading, intro, rows = [], paragraphs = [], cta, footnote } = options;
+  const site = siteMeta(lang);
+  const t = systemDict(lang);
 
   const rowsBlock = rows.length
     ? `<table role="presentation" cellpadding="0" cellspacing="0" width="100%" style="border:1px solid ${HAIRLINE};border-collapse:collapse;margin:0 0 24px;">
@@ -143,7 +169,7 @@ function layout(options: LayoutOptions): string {
   return `<div style="margin:0;padding:32px 16px;background:${BG};font-family:${FONT};">
   <table role="presentation" cellpadding="0" cellspacing="0" width="100%" style="max-width:560px;margin:0 auto;background:${BG};border-collapse:collapse;">
     <tr>
-      <td style="padding:0 0 24px;font-size:14px;letter-spacing:0.06em;text-transform:uppercase;font-weight:600;color:${TEXT};">${escapeHtml(SITE.name)}</td>
+      <td style="padding:0 0 24px;font-size:14px;letter-spacing:0.06em;text-transform:uppercase;font-weight:600;color:${TEXT};">${escapeHtml(site.name)}</td>
     </tr>
     <tr>
       <td style="border:1px solid ${HAIRLINE};padding:28px 24px;">
@@ -158,8 +184,8 @@ function layout(options: LayoutOptions): string {
     </tr>
     <tr>
       <td style="padding:20px 0 0;border-top:1px solid ${HAIRLINE};font-size:12px;line-height:20px;color:${MUTED};">
-        ${escapeHtml(SITE.name)} — ${escapeHtml(SITE.tagline)}<br>
-        Du får denne e-posten fordi du har et abonnement hos ${escapeHtml(SITE.name)}.
+        ${escapeHtml(site.name)} — ${escapeHtml(site.tagline)}<br>
+        ${escapeHtml(t.emailFooterReason(site.name))}
       </td>
     </tr>
   </table>
@@ -167,7 +193,7 @@ function layout(options: LayoutOptions): string {
 }
 
 /** Plain-text twin, so the message reads sensibly without HTML. */
-function plain(options: LayoutOptions): string {
+function plain(options: LayoutOptions, lang: Lang): string {
   const { heading, intro, rows = [], paragraphs = [], cta, footnote } = options;
   const parts: string[] = [heading.toUpperCase(), "", intro];
   if (rows.length) {
@@ -186,7 +212,8 @@ function plain(options: LayoutOptions): string {
     parts.push("");
     parts.push(footnote);
   }
-  parts.push("", `${SITE.name} — ${SITE.tagline}`);
+  const site = siteMeta(lang);
+  parts.push("", `${site.name} — ${site.tagline}`);
   return parts.join("\n");
 }
 

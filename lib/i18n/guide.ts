@@ -48,6 +48,10 @@ export interface GuideDict {
   /* — page furniture — */
   footerNote: string;
   notFoundTitle: string;
+  /* — GPX file (served by `app/api/gpx/[slug]`, read in the user's GPS app) — */
+  gpxNotFound: string;
+  gpxDesc: (peak: string, region: string) => string;
+  gpxSummitType: string;
 }
 
 const GUIDE: Translated<GuideDict> = {
@@ -81,6 +85,10 @@ const GUIDE: Translated<GuideDict> = {
     lockedCta: "Start gratis prøveperiode",
     footerNote: "Eksempelinnhold i prototypen — ikke en reell turbeskrivelse.",
     notFoundTitle: "Turen finnes ikke",
+    gpxNotFound: "Fant ikke turen.",
+    gpxDesc: (peak, region) =>
+      `${peak} (${region}) — skjematisk rutelinje fra Toppkart. Eksempeldata, ikke en kvalitetssikret rute.`,
+    gpxSummitType: "Topp",
   },
   en: {
     backToMap: "← Back to the map",
@@ -112,6 +120,10 @@ const GUIDE: Translated<GuideDict> = {
     lockedCta: "Start free trial",
     footerNote: "Sample content in this prototype — not a real tour description.",
     notFoundTitle: "Tour not found",
+    gpxNotFound: "Tour not found.",
+    gpxDesc: (peak, region) =>
+      `${peak} (${region}) — schematic route line from Toppkart. Sample data, not a quality-assured route.`,
+    gpxSummitType: "Summit",
   },
 };
 

@@ -82,9 +82,10 @@ export default function MapCanvas({
   visible,
   selectedSlug,
   onSelect,
-  startLabel,
+  lang,
 }: MapCanvasProps) {
-  const selected = tours.find((t) => t.slug === selectedSlug) ?? null;
+  const t = mapDict(lang);
+  const selected = tours.find((tour) => tour.slug === selectedSlug) ?? null;
 
   return (
     <MapContainer bounds={NORWAY} zoomControl={false} style={{ height: "100%", width: "100%" }}>
@@ -92,34 +93,35 @@ export default function MapCanvas({
         url="https://tile.openstreetmap.org/{z}/{x}/{y}.png"
         attribution="© OpenStreetMap contributors"
       />
-      <ZoomControl position="bottomright" />
+      {/* Leaflet's zoom buttons ship English titles; give them the page's. */}
+      <ZoomControl position="bottomright" zoomInTitle={t.zoomIn} zoomOutTitle={t.zoomOut} />
 
-      {tours.map((t) => {
-        const shown = visible.has(t.slug);
-        const isSelected = t.slug === selectedSlug;
+      {tours.map((tour) => {
+        const shown = visible.has(tour.slug);
+        const isSelected = tour.slug === selectedSlug;
         return (
           <CircleMarker
-            key={t.slug}
-            center={[t.lat, t.lng]}
+            key={tour.slug}
+            center={[tour.lat, tour.lng]}
             radius={isSelected ? 10 : 7}
             pathOptions={{
               color: MARKER_STROKE,
               weight: isSelected ? 2.5 : 1.5,
-              fillColor: GRADE_COLORS[t.grade - 1],
+              fillColor: GRADE_COLORS[tour.grade - 1],
               opacity: shown ? 1 : 0.15,
               fillOpacity: shown ? 0.95 : 0.12,
             }}
-            eventHandlers={{ click: () => onSelect(t.slug) }}
+            eventHandlers={{ click: () => onSelect(tour.slug) }}
           >
             <Tooltip direction="top" offset={[0, -8]}>
-              {t.name}
+              {tour.name}
             </Tooltip>
           </CircleMarker>
         );
       })}
 
       {selected ? (
-        <RouteLayer key={selected.slug} tour={selected} startLabel={startLabel} />
+        <RouteLayer key={selected.slug} tour={selected} startLabel={t.startTooltip} />
       ) : null}
     </MapContainer>
   );
