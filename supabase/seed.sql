@@ -18,7 +18,7 @@
 --     prototype's example text, not a usable trip description.
 -- ============================================================================
 
-insert into public.tours
+insert into public.tk_tours
   (slug, name, region, lat, lng, summit_m, vertical_m, duration, grade, aspect, season, teaser, published)
 values
   ('tromsdalstinden', 'Tromsdalstinden', 'Troms',      69.618, 19.078, 1238, 1200, '5–7 t', 2, 'V',  'des–mai', 'Tromsøs signaturtopp: lang, jevn oppstigning fra Tromsdalen med storslått utsikt mot Lyngen.', true),
@@ -71,7 +71,7 @@ on conflict (slug) do update set
 -- Paragraphs in the description columns are separated by a blank line.
 -- ============================================================================
 
-update public.tours set
+update public.tk_tours set
   description_up =
     'Fra vinterparkeringen i Skarbakkane følger du den brede ryggen mot sørvest. Sporet er som regel godt tråkket; hold høyre der skogen tynnes ut, så unngår du de bratteste kulene i skoggrensa.' || E'\n\n' ||
     'Over skoggrensa åpner terrenget seg. Ryggen er slak og trygg i normale forhold — det bratteste partiet kommer mellom 900 og 1200 moh, der mange legger slakere sikksakk. Toppflata er stor og godslig; varden står lengst sørøst.' || E'\n\n' ||

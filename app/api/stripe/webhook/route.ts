@@ -141,7 +141,7 @@ async function cardFieldsFor(
 async function userIdByCustomerId(admin: SupabaseAdmin, customerId: string | null): Promise<string | null> {
   if (!customerId) return null;
   const { data } = await admin
-    .from("subscriptions")
+    .from("tk_subscriptions")
     .select("user_id")
     .eq("stripe_customer_id", customerId)
     .maybeSingle();
@@ -152,7 +152,7 @@ async function userIdByEmail(admin: SupabaseAdmin, email: string | null | undefi
   if (!email) return null;
   for (const candidate of [email, email.toLowerCase()]) {
     const { data } = await admin
-      .from("profiles")
+      .from("tk_profiles")
       .select("user_id")
       .eq("email", candidate)
       .maybeSingle();
@@ -204,7 +204,7 @@ async function resolveUserId(
 // ---------------------------------------------------------------------------
 
 async function upsertSubscription(admin: SupabaseAdmin, row: SubscriptionRow): Promise<void> {
-  const { error } = await admin.from("subscriptions").upsert(row, { onConflict: "user_id" });
+  const { error } = await admin.from("tk_subscriptions").upsert(row, { onConflict: "user_id" });
   if (error) {
     // Rethrown so the outer handler logs it; Stripe will retry the delivery.
     throw new Error(`subscriptions upsert failed: ${error.message}`);
@@ -252,7 +252,7 @@ async function mirrorInvoice(
   userId: string,
 ): Promise<void> {
   if (!invoice.id) return;
-  const { error } = await admin.from("invoices").upsert(
+  const { error } = await admin.from("tk_invoices").upsert(
     {
       id: invoice.id,
       user_id: userId,

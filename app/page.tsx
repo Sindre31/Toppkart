@@ -121,31 +121,6 @@ export default function LandingPage() {
             </Blueprint>
           </section>
 
-          {/* — sitat — */}
-          <section style={{ padding: "48px 0 84px" }}>
-            <figure style={{ margin: 0 }}>
-              <blockquote
-                style={{
-                  fontFamily: "var(--font-heading)",
-                  fontWeight: 600,
-                  fontSize: "clamp(26px, 2.8vw, 36px)",
-                  lineHeight: "36px",
-                  maxWidth: "36ch",
-                  margin: 0,
-                  textIndent: "-0.316em",
-                }}
-              >
-                «Vi brukte guiden til Kirketaket i februar. Beskrivelsen av nedkjøringen stemte på meteren — også der
-                vi ikke burde kjøre.»
-              </blockquote>
-              <figcaption
-                style={{ fontSize: 15, lineHeight: "24px", color: muted(70), margin: "40px 0 0", textIndent: "-0.885em" }}
-              >
-                — Betabruker, Romsdalen
-              </figcaption>
-            </figure>
-          </section>
-
           {/* — 04 · Abonnement — */}
           <section id="pris" style={{ padding: "60px 0 48px" }}>
             <SectionKicker>04 · Abonnement</SectionKicker>
