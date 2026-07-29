@@ -2,26 +2,40 @@
 
 /** `/kart` — the core of the product. React port of `design-reference/kart.html`:
  *  56px topbar, 372px tour list on the left, full-bleed Leaflet map on the right,
- *  NO/EN toggle, and a detail panel that draws the schematic route line. */
+ *  the shared NO/EN switcher, and a detail panel that draws the schematic route
+ *  line. The language arrives as a prop from the server, which reads the
+ *  `tk_lang` cookie — switching it is a navigation, not local state. */
 
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState, type ComponentType } from "react";
 import dynamic from "next/dynamic";
 import Link from "next/link";
 import { Check, Lock, Unlock } from "lucide-react";
 
+import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { GRADE_COLORS } from "@/lib/config";
 import { REGIONS, TOURS } from "@/lib/tours";
-import { LANGS, type Lang } from "@/lib/i18n";
+import type { Lang } from "@/lib/i18n";
+import { localizeTours } from "@/lib/i18n/content";
 import { mapDict, type Dict } from "@/lib/i18n/map";
 import type { Grade, Tour } from "@/lib/types";
+import type { MapCanvasProps } from "./MapCanvas";
 import s from "./kart.module.css";
 
-/* The loading placeholder renders before the language state exists, so it
-   speaks the default language. */
-const MapCanvas = dynamic(() => import("./MapCanvas"), {
-  ssr: false,
-  loading: () => <div className={s.mapLoading}>{mapDict("no").mapLoading}</div>,
-});
+/* `next/dynamic` hands its `loading` element no props, so it cannot read the
+   active language at render time. Build one lazy wrapper per language instead
+   and pick with `lang` — both resolve the same module, so the chunk is still
+   fetched exactly once. */
+function lazyMapCanvas(lang: Lang): ComponentType<MapCanvasProps> {
+  return dynamic(() => import("./MapCanvas"), {
+    ssr: false,
+    loading: () => <div className={s.mapLoading}>{mapDict(lang).mapLoading}</div>,
+  });
+}
+
+const MAP_CANVAS: Record<Lang, ComponentType<MapCanvasProps>> = {
+  no: lazyMapCanvas("no"),
+  en: lazyMapCanvas("en"),
+};
 
 /** `.btn-primary` sets `color: var(--color-bg)`, but globals' `a:hover` rule is
  *  more specific for links — pin the colour inline so CTAs stay legible. */
@@ -56,13 +70,14 @@ function TourMeta({ tour, t, showSummit }: { tour: Tour; t: Dict; showSummit?: b
 }
 
 export default function MapView({
+  lang,
   hasAccess,
   initialSlug,
 }: {
+  lang: Lang;
   hasAccess: boolean;
   initialSlug: string | null;
 }) {
-  const [lang, setLang] = useState<Lang>("no");
   const [query, setQuery] = useState("");
   const [grade, setGrade] = useState(0);
   const [region, setRegion] = useState("");
@@ -70,6 +85,12 @@ export default function MapView({
   const detailRef = useRef<HTMLDivElement>(null);
 
   const t = mapDict(lang);
+  const MapCanvas = MAP_CANVAS[lang];
+
+  /* Teaser, aspect, season and duration come out translated; peak and region
+     names are proper nouns and stay Norwegian, so search and the region filter
+     keep matching what the map shows. */
+  const tours = useMemo(() => localizeTours(TOURS, lang), [lang]);
 
   /* The prototype sets `body { overflow: hidden }` globally; scope it to this
      route so the other pages keep scrolling normally. */

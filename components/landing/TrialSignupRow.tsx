@@ -3,10 +3,14 @@
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 
+import type { Lang } from "@/lib/i18n";
+import { landingDict } from "@/lib/i18n/landing";
+
 /** «04 · Abonnement» — e-postpåmelding. Adressen sendes videre til
  *  /betaling?email=… slik at kassen kan forhåndsutfylle feltet. */
-export function TrialSignupRow() {
+export function TrialSignupRow({ lang }: { lang: Lang }) {
   const router = useRouter();
+  const t = landingDict(lang);
   const [email, setEmail] = useState("");
   const [error, setError] = useState<string | null>(null);
 
@@ -17,7 +21,7 @@ export function TrialSignupRow() {
       return;
     }
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) {
-      setError("Skriv inn en gyldig e-postadresse.");
+      setError(t.emailInvalid);
       return;
     }
     setError(null);
@@ -38,8 +42,8 @@ export function TrialSignupRow() {
           className="input"
           type="email"
           name="email"
-          placeholder="din@epost.no"
-          aria-label="E-postadresse"
+          placeholder={t.emailPlaceholder}
+          aria-label={t.emailLabel}
           aria-invalid={error ? true : undefined}
           value={email}
           onChange={(event) => {
@@ -49,7 +53,7 @@ export function TrialSignupRow() {
           style={{ flex: 1 }}
         />
         <button className="btn btn-primary" type="submit">
-          Start prøveperiode
+          {t.emailSubmit}
         </button>
       </form>
       {error ? (

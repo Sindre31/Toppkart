@@ -7,52 +7,36 @@ import { SiteFooter, SiteNav } from "@/components/SiteChrome";
 import { DataPlate } from "@/components/landing/DataPlate";
 import { TrialSignupRow } from "@/components/landing/TrialSignupRow";
 import styles from "@/components/landing/landing.module.css";
+import { getLang } from "@/lib/i18n";
+import { commonDict } from "@/lib/i18n/common";
+import { landingDict } from "@/lib/i18n/landing";
 
-export const metadata: Metadata = {
-  title: "Alle toppturene. Ett kart.",
-  description:
-    "Toppkart er en feltguide for skiturer i Norge: kvalitetssikrede toppturer på ett kart, med rute, høydemeter, bratthet og skredterreng. 29 kr/mnd, 14 dager gratis.",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const t = landingDict(await getLang());
+  return { title: t.metaTitle, description: t.metaDescription };
+}
 
 /** Årsprisen (290 kr/år — to måneder gratis) er skrudd av. Sett til true for å vise raden. */
 const SHOW_ANNUAL = false;
 
-const GUIDE_CELLS: ReadonlyArray<{ title: string; body: string }> = [
-  {
-    title: "Rute og nedkjøring",
-    body: "Opptegnet rute med høydeprofil, normal tidsbruk og beskrivelse av både oppstigning og nedkjøring — inkludert hvor folk pleier å gjøre feil. GPX-fil til klokke og app.",
-  },
-  {
-    title: "Skredterreng",
-    body: "Bratthetskart, utløpssoner og hvilke himmelretninger ruta eksponerer deg mot — koblet til dagens skredvarsel fra Varsom, rett i turguiden.",
-  },
-  {
-    title: "Sesong og forhold",
-    body: "Når på året turen er på sitt beste, hvor snøen legger seg, og alternative ruter når forholdene ikke spiller på lag. Skrevet av folk som går turene selv.",
-  },
-];
-
-const PLAN_POINTS: ReadonlyArray<{ num: string; text: string }> = [
-  { num: "01", text: "14 dager gratis prøveperiode" },
-  { num: "02", text: "Alle turguider, GPX og høydeprofiler" },
-  { num: "03", text: "Skredterreng og Varsom-varsel per tur" },
-  { num: "04", text: "Ingen binding — avslutt når som helst" },
-];
-
 const muted = (percent: number) => `color-mix(in srgb, var(--color-text) ${percent}%, transparent)`;
 
-export default function LandingPage() {
+export default async function LandingPage() {
+  const lang = await getLang();
+  const t = landingDict(lang);
+  const c = commonDict(lang);
+
   return (
     <>
-      <SiteNav>
-        <Link href="/kart">Kartet</Link>
-        <a href="#innhold">Innhold</a>
-        <a href="#pris">Pris</a>
+      <SiteNav lang={lang}>
+        <Link href="/kart">{c.map}</Link>
+        <a href="#innhold">{c.contents}</a>
+        <a href="#pris">{c.price}</a>
         <Link className="nav-muted" href="/logg-inn">
-          Logg inn
+          {c.login}
         </Link>
         <Link className="btn btn-primary" href="/betaling">
-          Prøv gratis
+          {c.trial}
         </Link>
       </SiteNav>
 
@@ -61,33 +45,31 @@ export default function LandingPage() {
           {/* — hero — */}
           <section style={{ padding: "96px 0 72px" }}>
             <h1 className="display" style={{ fontSize: "clamp(46px, 7vw, 92px)" }}>
-              <span style={{ display: "block" }}>Alle toppturene.</span>
-              <span style={{ display: "block" }}>Ett kart.</span>
+              <span style={{ display: "block" }}>{t.heroLine1}</span>
+              <span style={{ display: "block" }}>{t.heroLine2}</span>
             </h1>
             <p className="lede" style={{ margin: "32px 0 0" }}>
-              Toppkart er en feltguide for skiturer i Norge: kvalitetssikrede toppturer på ett kart, med rute,
-              høydemeter, bratthet og skredterreng — skrevet for at du skal komme trygt opp og trygt ned. For deg som
-              går din første topptur, og for deg som går din hundrede.
+              {t.lede}
             </p>
             <div style={{ display: "flex", gap: 10, flexWrap: "wrap", alignItems: "center", marginTop: 28 }}>
               <Link className="btn btn-primary" href="/betaling">
-                Prøv gratis i 14 dager
+                {t.ctaTrial}
               </Link>
               <Link className="btn btn-secondary" href="/kart">
-                Se kartet
+                {t.ctaMap}
               </Link>
-              <span style={{ fontSize: 13, color: muted(60) }}>Deretter 29 kr/mnd. Ingen binding.</span>
+              <span style={{ fontSize: 13, color: muted(60) }}>{t.priceNote}</span>
             </div>
           </section>
 
           {/* — nøkkeldata — */}
-          <DataPlate />
+          <DataPlate lang={lang} />
 
           {/* — 02 · Hva hver turguide holder — */}
           <section id="innhold" style={{ padding: "72px 0 60px" }}>
-            <SectionKicker>02 · Hva hver turguide holder</SectionKicker>
+            <SectionKicker>{t.guidesKicker}</SectionKicker>
             <div className="grid-auto">
-              {GUIDE_CELLS.map((cell) => (
+              {t.guideCells.map((cell) => (
                 <Blueprint key={cell.title} style={{ padding: 24 }}>
                   <h2 className="h-cell">{cell.title}</h2>
                   <p className="prose" style={{ margin: "16px 0 0" }}>
@@ -101,18 +83,16 @@ export default function LandingPage() {
           {/* — 03 · Trygghet først — */}
           <section className={styles.split57}>
             <div>
-              <SectionKicker>03 · Trygghet først</SectionKicker>
-              <h2 className="h-section">Skrevet for å komme hjem</h2>
+              <SectionKicker>{t.safetyKicker}</SectionKicker>
+              <h2 className="h-section">{t.safetyHeading}</h2>
               <p className="prose" style={{ margin: "16px 0 0", maxWidth: "48ch" }}>
-                I snitt dør fem mennesker i snøskred i Norge hvert år — de fleste på topptur. Hver guide i Toppkart er
-                derfor bygget rundt terrenget, ikke rundt bildene: bratthet, utløpssoner og trygge alternativer står
-                først, pudderpratet sist.
+                {t.safetyBody}
               </p>
             </div>
             <Blueprint as="figure" className="duotone" style={{ margin: 0 }}>
               <Image
                 src="/assets/kontur.png"
-                alt="Toppturfoto — skiløper på vei opp"
+                alt={t.safetyPhotoAlt}
                 width={1500}
                 height={1000}
                 priority
@@ -123,20 +103,18 @@ export default function LandingPage() {
 
           {/* — 04 · Abonnement — */}
           <section id="pris" style={{ padding: "60px 0 48px" }}>
-            <SectionKicker>04 · Abonnement</SectionKicker>
+            <SectionKicker>{t.planKicker}</SectionKicker>
             <div className="grid-split">
               <div>
                 <h3 style={{ fontSize: 24, lineHeight: "24px", letterSpacing: "0.02em", textTransform: "uppercase", margin: 0 }}>
-                  Hele kartet. Alle guidene.
+                  {t.planHeading}
                 </h3>
                 <p className="prose" style={{ margin: "16px 0 0", maxWidth: "52ch" }}>
-                  Én pris, alt åpent. Nye turer legges til hver sesong, og guidene revideres når terrenget eller
-                  normalruta endrer seg. Avslutt når du vil — abonnementet stopper ved neste trekk.
+                  {t.planBody}
                 </p>
-                <TrialSignupRow />
+                <TrialSignupRow lang={lang} />
                 <p className="note" style={{ margin: "12px 0 0" }}>
-                  Vi sender en innloggingslenke på e-post — ingen passord. Betaling håndteres sikkert av Stripe. Du
-                  legger inn kort ved start — første trekk etter 14 dager.
+                  {t.planNote}
                 </p>
               </div>
               <Blueprint style={{ padding: 24 }}>
@@ -150,24 +128,24 @@ export default function LandingPage() {
                       letterSpacing: "0.01em",
                     }}
                   >
-                    29 kr
+                    {t.planPrice}
                   </span>
-                  <span style={{ fontSize: 15, color: muted(70) }}>per måned</span>
+                  <span style={{ fontSize: 15, color: muted(70) }}>{t.planPriceUnit}</span>
                 </div>
                 {SHOW_ANNUAL ? (
                   <div style={{ display: "flex", alignItems: "baseline", gap: 10, marginTop: 10 }}>
                     <span style={{ fontFamily: "var(--font-heading)", fontWeight: 600, fontSize: 26, lineHeight: 1 }}>
-                      290 kr
+                      {t.planAnnualPrice}
                     </span>
-                    <span style={{ fontSize: 14, color: muted(70) }}>per år — to måneder gratis</span>
+                    <span style={{ fontSize: 14, color: muted(70) }}>{t.planAnnualUnit}</span>
                   </div>
                 ) : null}
                 <hr className="hr" style={{ margin: "20px 0" }} />
                 <ul className="numbered">
-                  {PLAN_POINTS.map((point) => (
-                    <li key={point.num}>
-                      <span>{point.num}</span>
-                      {point.text}
+                  {t.planPoints.map((point, index) => (
+                    <li key={point}>
+                      <span>{String(index + 1).padStart(2, "0")}</span>
+                      {point}
                     </li>
                   ))}
                 </ul>
@@ -176,9 +154,7 @@ export default function LandingPage() {
           </section>
         </main>
 
-        <SiteFooter>
-          <span className="push">Norsk / English</span>
-        </SiteFooter>
+        <SiteFooter lang={lang} />
       </div>
     </>
   );

@@ -1,0 +1,211 @@
+/** NO/EN dictionary for the front page.
+ *
+ *  The landing page is pure copy — every string it renders lives here, down to
+ *  the numbers in the data plate: «214» and «12» carry no unit, but «29 kr» and
+ *  «14 dager» do, and the unit is the part that has to change language. Prices
+ *  stay in kroner in both languages; the product is sold in Norway.
+ *
+ *  Section kickers keep their numbering (`02 · …`) — the numbers are part of the
+ *  blueprint conceit, not of the sentence.
+ */
+
+import type { Lang, Translated } from "./index";
+import { pick } from "./index";
+
+/** One row of the «Toppkart — nøkkeldata» plate: property, figure, remark. The
+ *  ordinal (`01`…`04`) is generated from the index, not stored. */
+export interface PlateRow {
+  prop: string;
+  val: string;
+  rem: string;
+}
+
+export interface GuideCell {
+  title: string;
+  body: string;
+}
+
+export interface LandingDict {
+  /* — <head> — */
+  metaTitle: string;
+  metaDescription: string;
+  /* — hero — */
+  heroLine1: string;
+  heroLine2: string;
+  lede: string;
+  ctaTrial: string;
+  ctaMap: string;
+  priceNote: string;
+  /* — data plate — */
+  plateLabel: string;
+  plateSheet: string;
+  plateRows: readonly PlateRow[];
+  plateFoot: string;
+  /* — 02 · what a guide holds — */
+  guidesKicker: string;
+  guideCells: readonly GuideCell[];
+  /* — 03 · safety first — */
+  safetyKicker: string;
+  safetyHeading: string;
+  safetyBody: string;
+  safetyPhotoAlt: string;
+  /* — 04 · subscription — */
+  planKicker: string;
+  planHeading: string;
+  planBody: string;
+  planNote: string;
+  planPrice: string;
+  planPriceUnit: string;
+  planAnnualPrice: string;
+  planAnnualUnit: string;
+  planPoints: readonly string[];
+  /* — trial signup row — */
+  emailPlaceholder: string;
+  emailLabel: string;
+  emailSubmit: string;
+  emailInvalid: string;
+}
+
+const LANDING: Translated<LandingDict> = {
+  no: {
+    metaTitle: "Alle toppturene. Ett kart.",
+    metaDescription:
+      "Toppkart er en feltguide for skiturer i Norge: kvalitetssikrede toppturer på ett kart, med rute, høydemeter, bratthet og skredterreng. 29 kr/mnd, 14 dager gratis.",
+
+    heroLine1: "Alle toppturene.",
+    heroLine2: "Ett kart.",
+    lede:
+      "Toppkart er en feltguide for skiturer i Norge: kvalitetssikrede toppturer på ett kart, med rute, høydemeter, bratthet og skredterreng — skrevet for at du skal komme trygt opp og trygt ned. For deg som går din første topptur, og for deg som går din hundrede.",
+    ctaTrial: "Prøv gratis i 14 dager",
+    ctaMap: "Se kartet",
+    priceNote: "Deretter 29 kr/mnd. Ingen binding.",
+
+    plateLabel: "Toppkart — nøkkeldata",
+    plateSheet: "Ark 01 av 04",
+    plateRows: [
+      { prop: "Toppturer i kartet", val: "214", rem: "Fra Lyngen i nord til Sirdal i sør" },
+      { prop: "Regioner", val: "12", rem: "Alle med lokal rutebeskrivelse" },
+      { prop: "Pris per måned", val: "29 kr", rem: "Ingen binding" },
+      { prop: "Gratis prøveperiode", val: "14 dager", rem: "Kort kreves — første trekk etter prøveperioden" },
+    ],
+    plateFoot:
+      "Turene er kvalitetssikret mot kart, bratthetsdata og lokale kjentfolk. Sjekk alltid skredvarselet på varsom.no før du går.",
+
+    guidesKicker: "02 · Hva hver turguide holder",
+    guideCells: [
+      {
+        title: "Rute og nedkjøring",
+        body: "Opptegnet rute med høydeprofil, normal tidsbruk og beskrivelse av både oppstigning og nedkjøring — inkludert hvor folk pleier å gjøre feil. GPX-fil til klokke og app.",
+      },
+      {
+        title: "Skredterreng",
+        body: "Bratthetskart, utløpssoner og hvilke himmelretninger ruta eksponerer deg mot — koblet til dagens skredvarsel fra Varsom, rett i turguiden.",
+      },
+      {
+        title: "Sesong og forhold",
+        body: "Når på året turen er på sitt beste, hvor snøen legger seg, og alternative ruter når forholdene ikke spiller på lag. Skrevet av folk som går turene selv.",
+      },
+    ],
+
+    safetyKicker: "03 · Trygghet først",
+    safetyHeading: "Skrevet for å komme hjem",
+    safetyBody:
+      "I snitt dør fem mennesker i snøskred i Norge hvert år — de fleste på topptur. Hver guide i Toppkart er derfor bygget rundt terrenget, ikke rundt bildene: bratthet, utløpssoner og trygge alternativer står først, pudderpratet sist.",
+    safetyPhotoAlt: "Toppturfoto — skiløper på vei opp",
+
+    planKicker: "04 · Abonnement",
+    planHeading: "Hele kartet. Alle guidene.",
+    planBody:
+      "Én pris, alt åpent. Nye turer legges til hver sesong, og guidene revideres når terrenget eller normalruta endrer seg. Avslutt når du vil — abonnementet stopper ved neste trekk.",
+    planNote:
+      "Vi sender en innloggingslenke på e-post — ingen passord. Betaling håndteres sikkert av Stripe. Du legger inn kort ved start — første trekk etter 14 dager.",
+    planPrice: "29 kr",
+    planPriceUnit: "per måned",
+    planAnnualPrice: "290 kr",
+    planAnnualUnit: "per år — to måneder gratis",
+    planPoints: [
+      "14 dager gratis prøveperiode",
+      "Alle turguider, GPX og høydeprofiler",
+      "Skredterreng og Varsom-varsel per tur",
+      "Ingen binding — avslutt når som helst",
+    ],
+
+    emailPlaceholder: "din@epost.no",
+    emailLabel: "E-postadresse",
+    emailSubmit: "Start prøveperiode",
+    emailInvalid: "Skriv inn en gyldig e-postadresse.",
+  },
+
+  en: {
+    metaTitle: "Every ski tour. One map.",
+    metaDescription:
+      "Toppkart is a field guide to ski touring in Norway: quality-assured peaks on a single map, with routes, vertical gain, steepness and avalanche terrain. 29 kr/month, 14 days free.",
+
+    heroLine1: "Every ski tour.",
+    heroLine2: "One map.",
+    lede:
+      "Toppkart is a field guide to ski touring in Norway: quality-assured peaks on a single map, with routes, vertical gain, steepness and avalanche terrain — written to get you safely up and safely back down. For your first ski tour, and for your hundredth.",
+    ctaTrial: "Try free for 14 days",
+    ctaMap: "See the map",
+    priceNote: "Then 29 kr/month. No lock-in.",
+
+    plateLabel: "Toppkart — key figures",
+    plateSheet: "Sheet 01 of 04",
+    plateRows: [
+      { prop: "Tours on the map", val: "214", rem: "From Lyngen in the north to Sirdal in the south" },
+      { prop: "Regions", val: "12", rem: "Every one with a local route description" },
+      { prop: "Price per month", val: "29 kr", rem: "No lock-in" },
+      { prop: "Free trial", val: "14 days", rem: "Card required — first charge after the trial" },
+    ],
+    plateFoot:
+      "Every tour is checked against maps, slope-angle data and people who know the area. Always check the avalanche forecast at varsom.no before you head out.",
+
+    guidesKicker: "02 · What every guide holds",
+    guideCells: [
+      {
+        title: "Route and descent",
+        body: "A drawn route with elevation profile, typical time, and a description of both the ascent and the descent — including where people usually get it wrong. GPX file for your watch and your app.",
+      },
+      {
+        title: "Avalanche terrain",
+        body: "Slope-angle maps, runout zones and the aspects the route exposes you to — tied to the day's Varsom forecast, right there in the guide.",
+      },
+      {
+        title: "Season and conditions",
+        body: "When the tour is at its best, where the snow settles, and alternative lines for when conditions won't play along. Written by people who ski these tours themselves.",
+      },
+    ],
+
+    safetyKicker: "03 · Safety first",
+    safetyHeading: "Written to get you home",
+    safetyBody:
+      "On average, five people die in avalanches in Norway every year — most of them ski touring. Every guide in Toppkart is therefore built around the terrain, not around the photos: steepness, runout zones and safer alternatives come first, the powder talk last.",
+    safetyPhotoAlt: "Ski touring photo — a skier on the way up",
+
+    planKicker: "04 · Subscription",
+    planHeading: "The whole map. Every guide.",
+    planBody:
+      "One price, everything open. New tours are added every season, and guides are revised whenever the terrain or the normal route changes. Cancel whenever you like — the subscription stops at the next charge.",
+    planNote:
+      "We email you a sign-in link — no passwords. Payments are handled securely by Stripe. You add a card at signup — first charge after 14 days.",
+    planPrice: "29 kr",
+    planPriceUnit: "per month",
+    planAnnualPrice: "290 kr",
+    planAnnualUnit: "per year — two months free",
+    planPoints: [
+      "14-day free trial",
+      "Every guide, GPX file and elevation profile",
+      "Avalanche terrain and Varsom forecast per tour",
+      "No lock-in — cancel anytime",
+    ],
+
+    emailPlaceholder: "you@example.com",
+    emailLabel: "Email address",
+    emailSubmit: "Start free trial",
+    emailInvalid: "Enter a valid email address.",
+  },
+};
+
+export function landingDict(lang: Lang): LandingDict {
+  return pick(LANDING, lang);
+}

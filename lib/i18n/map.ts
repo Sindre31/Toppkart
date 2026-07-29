@@ -9,13 +9,23 @@
  *  `./content` and `./format`; the prototype left it Norwegian.
  */
 
+import { gradeLabel } from "./format";
 import type { Lang, Translated } from "./index";
 import { pick } from "./index";
 
 /** Grade names indexed 1…4 — index 0 is unused, matching the prototype. */
 export type GradeNames = readonly [string, string, string, string, string];
 
+/** The grade names come from `./format`, which every other page also reads, so
+ *  the map can never drift out of step with the guide pages. */
+function gradeNames(lang: Lang): GradeNames {
+  return ["", gradeLabel(1, lang), gradeLabel(2, lang), gradeLabel(3, lang), gradeLabel(4, lang)];
+}
+
 export interface Dict {
+  /* — document head — */
+  metaTitle: string;
+  metaDescription: string;
   /* — topbar — */
   login: string;
   trial: string;
@@ -56,10 +66,12 @@ export interface Dict {
   schematicNote: string;
   startTooltip: string;
   /* — React additions: labels + the unlocked (subscriber) state — */
-  langGroup: string;
   gradeGroup: string;
   searchLabel: string;
   regionLabel: string;
+  /** Titles on Leaflet's own zoom buttons, which default to English. */
+  zoomIn: string;
+  zoomOut: string;
   mapLoading: string;
   unlockedTitle: string;
   unlockedBody: string;
@@ -68,6 +80,9 @@ export interface Dict {
 
 const MAP: Translated<Dict> = {
   no: {
+    metaTitle: "Kartet",
+    metaDescription:
+      "Alle toppturene på ett kart: grad, høydemeter, normaltid, himmelretning og sesong for hver topp.",
     login: "Logg inn",
     trial: "Prøv gratis",
     all: "Alle",
@@ -77,7 +92,7 @@ const MAP: Translated<Dict> = {
     tour: "tur",
     approx: "Posisjoner er omtrentlige i prototypen.",
     back: "← Til lista",
-    grades: ["", "Enkel", "Middels", "Krevende", "Ekspert"],
+    grades: gradeNames("no"),
     moh: "moh",
     stHm: "Høydemeter",
     stTime: "Normaltid",
@@ -103,16 +118,20 @@ const MAP: Translated<Dict> = {
     close2: "Lukk",
     schematicNote: "Rutelinjen på kartet er skjematisk i prototypen.",
     startTooltip: "Start / parkering",
-    langGroup: "Språk / Language",
     gradeGroup: "Vanskelighetsgrad",
     searchLabel: "Søk etter topp eller region",
     regionLabel: "Region",
+    zoomIn: "Zoom inn",
+    zoomOut: "Zoom ut",
     mapLoading: "Laster kartet…",
     unlockedTitle: "Du har full tilgang",
     unlockedBody: "Rutebeskrivelse, høydeprofil, GPX og skredterreng er åpne for deg.",
     guidePending: "Full turguide for denne toppen er under arbeid.",
   },
   en: {
+    metaTitle: "The map",
+    metaDescription:
+      "Every ski tour on one map: grade, vertical gain, typical time, aspect and season for each peak.",
     login: "Log in",
     trial: "Try for free",
     all: "All",
@@ -122,7 +141,7 @@ const MAP: Translated<Dict> = {
     tour: "tour",
     approx: "Positions are approximate in this prototype.",
     back: "← Back to list",
-    grades: ["", "Easy", "Moderate", "Demanding", "Expert"],
+    grades: gradeNames("en"),
     moh: "m",
     stHm: "Vertical gain",
     stTime: "Typical time",
@@ -155,10 +174,11 @@ const MAP: Translated<Dict> = {
     close2: "Close",
     schematicNote: "The route line on the map is schematic in this prototype.",
     startTooltip: "Trailhead / parking",
-    langGroup: "Språk / Language",
     gradeGroup: "Difficulty",
     searchLabel: "Search peak or region",
     regionLabel: "Region",
+    zoomIn: "Zoom in",
+    zoomOut: "Zoom out",
     mapLoading: "Loading the map…",
     unlockedTitle: "You have full access",
     unlockedBody: "Route description, elevation profile, GPX and avalanche terrain are open to you.",
