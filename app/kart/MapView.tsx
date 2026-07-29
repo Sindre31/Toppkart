@@ -11,7 +11,8 @@ import { Check, Lock, Unlock } from "lucide-react";
 
 import { GRADE_COLORS } from "@/lib/config";
 import { REGIONS, TOURS } from "@/lib/tours";
-import { I18N, LANGS, type Dict, type Lang } from "@/lib/i18n";
+import { LANGS, type Lang } from "@/lib/i18n";
+import { mapDict, type Dict } from "@/lib/i18n/map";
 import type { Grade, Tour } from "@/lib/types";
 import s from "./kart.module.css";
 
@@ -19,7 +20,7 @@ import s from "./kart.module.css";
    speaks the default language. */
 const MapCanvas = dynamic(() => import("./MapCanvas"), {
   ssr: false,
-  loading: () => <div className={s.mapLoading}>{I18N.no.mapLoading}</div>,
+  loading: () => <div className={s.mapLoading}>{mapDict("no").mapLoading}</div>,
 });
 
 /** `.btn-primary` sets `color: var(--color-bg)`, but globals' `a:hover` rule is
@@ -68,7 +69,7 @@ export default function MapView({
   const [selectedSlug, setSelectedSlug] = useState<string | null>(initialSlug);
   const detailRef = useRef<HTMLDivElement>(null);
 
-  const t = I18N[lang];
+  const t = mapDict(lang);
 
   /* The prototype sets `body { overflow: hidden }` globally; scope it to this
      route so the other pages keep scrolling normally. */

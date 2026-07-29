@@ -1,10 +1,33 @@
 import { createServerClient } from "@supabase/ssr";
 import { NextResponse, type NextRequest } from "next/server";
 import { env, isSupabaseConfigured } from "@/lib/config";
+import { LANG_COOKIE, LANG_COOKIE_MAX_AGE, LANG_PARAM, isLang } from "@/lib/i18n";
+
+/** Promotes `?lang=` into the `tk_lang` cookie and redirects to the same URL
+ *  without the parameter. This is what the language switcher links hit: the
+ *  choice persists, the address bar stays clean, and `/kart?lang=en` remains a
+ *  shareable entry point into the English site. */
+function languageRedirect(request: NextRequest): NextResponse | null {
+  const requested = request.nextUrl.searchParams.get(LANG_PARAM);
+  if (!isLang(requested)) return null;
+
+  const url = request.nextUrl.clone();
+  url.searchParams.delete(LANG_PARAM);
+  const response = NextResponse.redirect(url);
+  response.cookies.set(LANG_COOKIE, requested, {
+    path: "/",
+    maxAge: LANG_COOKIE_MAX_AGE,
+    sameSite: "lax",
+  });
+  return response;
+}
 
 /** Keeps the Supabase auth cookie fresh on every navigation. In demo mode
  *  (no keys) this is a pass-through — nothing to refresh, nothing to crash on. */
 export async function middleware(request: NextRequest) {
+  const langResponse = languageRedirect(request);
+  if (langResponse) return langResponse;
+
   if (!isSupabaseConfigured) return NextResponse.next();
 
   let response = NextResponse.next({ request });

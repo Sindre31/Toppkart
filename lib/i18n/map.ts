@@ -1,15 +1,16 @@
 /** NO/EN dictionary for the map page.
  *
- *  Lifted verbatim from `design-reference/kart.html` → `I18N`. Only *UI* strings
- *  are translated; tour content (names, teasers, seasons) stays Norwegian, exactly
- *  as in the prototype. A handful of keys at the end cover strings the prototype
- *  expressed inline (the schematic-route note, the trailhead tooltip) plus the
- *  labels the React version needs for accessibility and the unlocked state.
+ *  The UI strings were lifted verbatim from `design-reference/kart.html` →
+ *  `I18N`. A handful of keys at the end cover strings the prototype expressed
+ *  inline (the schematic-route note, the trailhead tooltip) plus the labels the
+ *  React version needs for accessibility and the unlocked state.
+ *
+ *  Tour *content* — teasers, seasons, aspects — is translated separately, in
+ *  `./content` and `./format`; the prototype left it Norwegian.
  */
 
-export type Lang = "no" | "en";
-
-export const LANGS: readonly Lang[] = ["no", "en"];
+import type { Lang, Translated } from "./index";
+import { pick } from "./index";
 
 /** Grade names indexed 1…4 — index 0 is unused, matching the prototype. */
 export type GradeNames = readonly [string, string, string, string, string];
@@ -65,7 +66,7 @@ export interface Dict {
   guidePending: string;
 }
 
-export const I18N: Record<Lang, Dict> = {
+const MAP: Translated<Dict> = {
   no: {
     login: "Logg inn",
     trial: "Prøv gratis",
@@ -161,10 +162,10 @@ export const I18N: Record<Lang, Dict> = {
     mapLoading: "Loading the map…",
     unlockedTitle: "You have full access",
     unlockedBody: "Route description, elevation profile, GPX and avalanche terrain are open to you.",
-    guidePending: "Full turguide for denne toppen er under arbeid.",
+    guidePending: "The full guide for this peak is still being written.",
   },
 };
 
-export function dict(lang: Lang): Dict {
-  return I18N[lang];
+export function mapDict(lang: Lang): Dict {
+  return pick(MAP, lang);
 }

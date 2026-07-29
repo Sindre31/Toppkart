@@ -202,6 +202,17 @@ textarea.input { min-height: 90px; resize: vertical; }
 .seg-opt:not(:has(input:checked)):hover { background: color-mix(in srgb, var(--color-text) 7%, transparent); }
 .seg-opt:has(input:focus-visible) { outline: 2px solid var(--color-accent); outline-offset: -2px; }
 
+/* The language switcher is a `.seg` built from links rather than radios, so the
+   selected state comes from `data-active` instead of `:has(input:checked)`. */
+.lang-switch { align-self: flex-start; }
+.lang-switch a.seg-opt { color: inherit; text-decoration: none; }
+.lang-switch a.seg-opt[data-active] { background: var(--color-accent); color: var(--color-bg); }
+.lang-switch a.seg-opt:not([data-active]):hover {
+  background: color-mix(in srgb, var(--color-text) 7%, transparent);
+  color: inherit;
+}
+.lang-switch a.seg-opt:focus-visible { outline: 2px solid var(--color-accent); outline-offset: -2px; }
+
 /* — cards — */
 .card {
   display: flex; flex-direction: column; gap: var(--space-2);
