@@ -104,8 +104,10 @@ site's URL.
    - `checkout.session.completed` — the trial has started; create or attach the subscription row.
    - `customer.subscription.updated` — status changes (`trialing` → `active`, `past_due`,
      scheduled cancellation), period end, card details.
+   - `customer.subscription.created` — the subscription exists in Stripe; the row is upserted.
    - `customer.subscription.deleted` — the subscription has ended; access closes.
    - `invoice.paid` — a charge succeeded; the receipt appears on `/min-side`.
+   - `invoice.payment_failed` — the charge bounced; the status moves to `past_due`.
 
 8. Copy the endpoint's **Signing secret** (`whsec_…`) into `STRIPE_WEBHOOK_SECRET`. The handler
    verifies every request against it and rejects anything that does not match, so a missing or

@@ -318,6 +318,12 @@ a:hover { color: var(--color-accent-900); }
 .site-nav a:hover { color: var(--color-accent-900); }
 .site-nav a.btn { color: var(--color-bg); }
 .nav-muted { font-size: 13px; color: color-mix(in srgb, var(--color-text) 60%, transparent) !important; }
+
+/* Anchors styled as buttons: the page-level `a:hover` rule above out-specifies
+   `.btn-primary`, which would turn a filled button's label accent-900 on hover.
+   Pin the label to the ground colour so links and buttons behave identically. */
+a.btn-primary, a.btn-primary:hover { color: var(--color-bg); }
+a.btn-secondary, a.btn-secondary:hover { color: var(--color-text); }
 @media (max-width: 620px) { .site-nav { padding: 10px 20px; gap: var(--space-3); flex-wrap: wrap; } }
 
 /* — section kicker: "01 · Abonnement" over a 1px rule — */
