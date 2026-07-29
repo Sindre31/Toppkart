@@ -24,10 +24,41 @@ Vercel to get a domain, then a return trip to fill in redirect URLs and webhook 
    test mode and, ideally, a separate Supabase project.
 4. Deploy. Note the production URL.
 5. Set `NEXT_PUBLIC_SITE_URL` to that URL (`https://toppkart.no`, no trailing slash) and redeploy.
-   Without it the app falls back to the per-deployment `VERCEL_URL`, which changes on every
-   deploy and will break Stripe return URLs and magic-link redirects.
 6. If you are using a custom domain, add it under **Settings → Domains** first, then use the
    custom domain as `NEXT_PUBLIC_SITE_URL`.
+
+> ### Do not skip step 5
+>
+> This is the single most common way to get a deployment that looks fine and quietly does not
+> work, so it is worth understanding rather than just copying.
+>
+> `NEXT_PUBLIC_SITE_URL` is optional in the sense that nothing crashes without it. `lib/config.ts`
+> falls back to `https://$VERCEL_URL`, which is the **per-deployment** hostname — something like
+> `toppkart-qytwddyuz-yourteam.vercel.app`. A new one is minted on every single deploy. Two
+> things are built from that value, and both break in ways that do not look like a URL problem:
+>
+> - **Magic links.** `emailRedirectTo` becomes `https://<per-deploy-host>/auth/callback`. Supabase
+>   checks that against the Redirect URLs allow-list, which contains your real domain, not a
+>   hostname that did not exist when you configured it. The mail sends, the user clicks, and
+>   sign-in fails — with no error on your side, because the rejection happens at Supabase.
+> - **Stripe returns.** `success_url` and `cancel_url` point at the deployment that happened to be
+>   live when the session was created. After the next deploy that host is stale, so a customer
+>   who pays can land somewhere unexpected instead of the confirmation screen.
+>
+> To check what it actually resolved to, create a Checkout session against the deployed API and
+> read the URL back — this reports the real runtime value, not what you think you configured:
+>
+> ```bash
+> curl -s -X POST https://your-domain/api/checkout \
+>   -H 'Content-Type: application/json' -d '{"plan":"maned"}'
+> # then, with your Stripe secret key:
+> curl -s "https://api.stripe.com/v1/checkout/sessions?limit=1" -u "sk_test_…:" \
+>   | grep -o '"success_url": *"[^"]*"'
+> ```
+>
+> If the host in `success_url` is not your real domain, `NEXT_PUBLIC_SITE_URL` is not set on that
+> environment. Set it and **redeploy** — environment variable changes do not apply to existing
+> deployments.
 
 Anything prefixed `NEXT_PUBLIC_` ends up in the browser bundle. Do not put the Supabase
 service-role key or the Stripe secret key behind that prefix.
@@ -72,9 +103,31 @@ site's URL.
 
    The sender domain must be verified in Resend first (**Domains → Add Domain**, then the DNS
    records it gives you).
+
+   **Treat custom SMTP as required, not optional, the moment you start testing.** Supabase's
+   built-in mailer allows roughly two messages per hour across the whole project. Past that,
+   `signInWithOtp` fails with `429 over_email_send_rate_limit` — and because the app deliberately
+   does not leak auth internals to the browser, all the user sees is «Vi klarte ikke å sende
+   innloggingslenken. Prøv igjen om litt.» The real reason is only in the Supabase auth log
+   (**Logs → Auth**), so check there before assuming the code is wrong. Note that the account is
+   still created when this happens; only the mail fails.
+
+   **If you do not have a domain yet**, you have two ways to test and neither needs DNS:
+
+   - **Gmail SMTP.** Point Supabase at `smtp.gmail.com:587` with the Gmail address as username and
+     a Google **App Password** as the password (App Passwords require 2-Step Verification on the
+     account). Sends from that address to anyone, with a daily cap in the hundreds. Fine for
+     testing and small pilots; not what you want on a real launch, since the mail comes from a
+     personal-looking address and you cannot align SPF/DKIM to your own domain.
+   - **Resend without a verified domain.** You get the shared `onboarding@resend.dev` sender,
+     which delivers **only to the address that owns the Resend account**. Enough to sign yourself
+     in and walk the flow; nobody else can log in until a domain is verified.
 7. Copy the project URL and the anon key from **Project Settings → API** into
    `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_ANON_KEY`. Copy the service-role key into
-   `SUPABASE_SERVICE_ROLE_KEY` only if the webhook handler needs it — it bypasses RLS.
+   `SUPABASE_SERVICE_ROLE_KEY` as well: it bypasses RLS, so it is server-only and must never sit
+   behind a `NEXT_PUBLIC_` prefix — but it is **required** as soon as Stripe is live. The webhook
+   writes subscription rows for a user it is not authenticated as, which no other key can do, and
+   returns 503 without it. Billing then appears to work while no one ever gains access.
 
 ---
 
@@ -155,3 +208,41 @@ Walk the real flow on the deployed site, not just the local one:
       period ends.
 - [ ] Query the gated `tk_tours` columns with the anon key while signed out and confirm RLS returns
       nothing. The server-side gate and RLS should both hold on their own.
+
+---
+
+## 5. Troubleshooting
+
+Symptoms that were hit during the first real deployment of this app, and what they actually meant.
+
+**«Vi klarte ikke å sende innloggingslenken. Prøv igjen om litt.»**
+The app never shows the underlying auth error, by design — it should not tell a stranger whether
+an address exists. Look in Supabase → **Logs → Auth** for the real one. In practice it is almost
+always `429 over_email_send_rate_limit` (the built-in mailer's ~2/hour cap; configure custom SMTP)
+or `400 email_address_invalid` (the address was rejected outright — `@example.com` and other
+reserved test domains are, which makes them useless for probing this endpoint).
+
+**Sign-in mail arrives, the link does nothing.**
+The redirect target is not on Supabase's allow-list. Compare the `redirect_to` in the link against
+**Authentication → URL Configuration**, and check `NEXT_PUBLIC_SITE_URL` — see the warning in the
+Vercel section, which is the usual root cause.
+
+**Checkout succeeds but the guides stay locked.**
+The webhook could not resolve the payer to an app user. Its log line is
+`[stripe-webhook] abonnementshendelse uten brukertreff`. It resolves by `client_reference_id`
+first, then by matching the Stripe customer email against `tk_profiles.email`, so this is expected
+if the purchase was made while signed out. It also happens when `SUPABASE_SERVICE_ROLE_KEY` is
+missing — but that returns 503 and shows up in Stripe's delivery attempts as a failure, so check
+there to tell the two apart.
+
+**Trial starts, nothing unlocks, and no Stripe session was ever created.**
+Supabase and Stripe are configured independently, and the app switches each on its own key. With
+Supabase live but `STRIPE_SECRET_KEY` absent, `/api/checkout` takes the demo path and writes the
+demo cookies — which `getViewer()` never reads, because it is on the Supabase path. The user gets
+the confirmation screen and no access. Configure both together, or neither.
+
+**Anonymous users can write to the database.**
+If you adapt `tk_tours_public` or add a view of your own, remember that a single-table view with
+no aggregate is auto-updatable, Supabase grants writes on new objects to `anon` by default, and a
+non-`security_invoker` view executes as its owner, which bypasses RLS. `schema.sql` revokes those
+grants explicitly for that reason. Supabase's advisor does not flag this combination.
