@@ -3,6 +3,9 @@
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 
+import type { Lang } from "@/lib/i18n";
+import { checkoutDict } from "@/lib/i18n/checkout";
+
 import { Confirmation } from "./Confirmation";
 import { Summary } from "./Summary";
 
@@ -13,6 +16,9 @@ import { Summary } from "./Summary";
  *  til Stripes egen Checkout-side. I demo-modus er kortskjemaet under en ren
  *  visuell gjengivelse av prototypen: feltene er uten `name`, leses aldri, og
  *  det eneste som sendes til /api/checkout er plan og e-postadresse.
+ *
+ *  `plan` is the value the API validates (`maned` / `ar`) and is never
+ *  translated — only `planLabel`, which the server picked for `lang`.
  */
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -25,6 +31,7 @@ interface CheckoutResponse {
 }
 
 export function CheckoutForm({
+  lang,
   plan,
   planLabel,
   planPrice,
@@ -32,6 +39,7 @@ export function CheckoutForm({
   initialEmail,
   stripeEnabled,
 }: {
+  lang: Lang;
   plan: "maned" | "ar";
   planLabel: string;
   planPrice: string;
@@ -39,6 +47,7 @@ export function CheckoutForm({
   initialEmail: string;
   stripeEnabled: boolean;
 }) {
+  const t = checkoutDict(lang);
   const router = useRouter();
   const [email, setEmail] = useState(initialEmail);
   const [busy, setBusy] = useState(false);
@@ -51,7 +60,7 @@ export function CheckoutForm({
 
     const value = email.trim();
     if (!EMAIL_RE.test(value)) {
-      setError("Skriv inn en gyldig e-postadresse.");
+      setError(t.emailInvalid);
       return;
     }
 
@@ -67,7 +76,10 @@ export function CheckoutForm({
       const data = (await response.json()) as CheckoutResponse;
 
       if (!response.ok) {
-        setError(data.error ?? "Vi fikk ikke startet prøveperioden. Prøv igjen om litt.");
+        // /api/checkout answers with Norwegian prose in `error`. Until that
+        // route hands back a language-neutral code we only surface its text on
+        // the Norwegian site, and fall back to our own message in English.
+        setError((lang === "no" ? data.error : undefined) ?? t.startFailed);
         setBusy(false);
         return;
       }
@@ -81,17 +93,17 @@ export function CheckoutForm({
       setDone(true);
       router.refresh();
     } catch {
-      setError("Vi fikk ikke kontakt med serveren. Prøv igjen om litt.");
+      setError(t.networkFailed);
       setBusy(false);
     }
   }
 
-  if (done) return <Confirmation trialEndDate={trialEndDate} />;
+  if (done) return <Confirmation lang={lang} trialEndDate={trialEndDate} />;
 
   return (
     <>
       <header style={{ marginBottom: 32 }}>
-        <span className="kicker">Steg 2 av 2 · Betaling</span>
+        <span className="kicker">{t.kicker}</span>
         <h1
           className="display"
           style={{
@@ -100,7 +112,7 @@ export function CheckoutForm({
             margin: "10px 0 0 -0.052em",
           }}
         >
-          Start prøveperioden
+          {t.heading}
         </h1>
       </header>
 
@@ -112,7 +124,12 @@ export function CheckoutForm({
           alignItems: "start",
         }}
       >
-        <Summary planLabel={planLabel} planPrice={planPrice} firstChargeDate={trialEndDate} />
+        <Summary
+          lang={lang}
+          planLabel={planLabel}
+          planPrice={planPrice}
+          firstChargeDate={trialEndDate}
+        />
 
         <section>
           <form
@@ -122,19 +139,19 @@ export function CheckoutForm({
           >
             {stripeEnabled ? (
               <p className="prose" style={{ margin: 0 }}>
-                Kortopplysningene legges inn hos Stripe i neste steg.
+                {t.stripeNextStep}
               </p>
             ) : null}
 
             <div className="field">
-              <label htmlFor="betaling-epost">E-post</label>
+              <label htmlFor="betaling-epost">{t.emailLabel}</label>
               <input
                 id="betaling-epost"
                 className="input"
                 type="email"
                 autoComplete="email"
-                placeholder="kari@epost.no"
-                aria-label="E-post"
+                placeholder={t.emailPlaceholder}
+                aria-label={t.emailLabel}
                 aria-invalid={error ? true : undefined}
                 value={email}
                 onChange={(event) => {
@@ -150,50 +167,50 @@ export function CheckoutForm({
             {stripeEnabled ? null : (
               <>
                 <div className="field">
-                  <label htmlFor="betaling-kortnummer">Kortnummer</label>
+                  <label htmlFor="betaling-kortnummer">{t.cardNumberLabel}</label>
                   <input
                     id="betaling-kortnummer"
                     className="input"
                     inputMode="numeric"
                     autoComplete="off"
-                    placeholder="1234 1234 1234 1234"
-                    aria-label="Kortnummer"
+                    placeholder={t.cardNumberPlaceholder}
+                    aria-label={t.cardNumberLabel}
                     style={{ fontFeatureSettings: "'tnum' 1" }}
                   />
                 </div>
                 <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 14 }}>
                   <div className="field">
-                    <label htmlFor="betaling-utlopsdato">Utløpsdato</label>
+                    <label htmlFor="betaling-utlopsdato">{t.expiryLabel}</label>
                     <input
                       id="betaling-utlopsdato"
                       className="input"
                       inputMode="numeric"
                       autoComplete="off"
-                      placeholder="MM / ÅÅ"
-                      aria-label="Utløpsdato"
+                      placeholder={t.expiryPlaceholder}
+                      aria-label={t.expiryLabel}
                     />
                   </div>
                   <div className="field">
-                    <label htmlFor="betaling-cvc">CVC</label>
+                    <label htmlFor="betaling-cvc">{t.cvcLabel}</label>
                     <input
                       id="betaling-cvc"
                       className="input"
                       inputMode="numeric"
                       autoComplete="off"
-                      placeholder="123"
-                      aria-label="CVC"
+                      placeholder={t.cvcPlaceholder}
+                      aria-label={t.cvcLabel}
                     />
                   </div>
                 </div>
                 <div className="field">
-                  <label htmlFor="betaling-navn">Navn på kortet</label>
+                  <label htmlFor="betaling-navn">{t.cardNameLabel}</label>
                   <input
                     id="betaling-navn"
                     className="input"
                     type="text"
                     autoComplete="off"
-                    placeholder="Kari Nordmann"
-                    aria-label="Navn på kortet"
+                    placeholder={t.cardNamePlaceholder}
+                    aria-label={t.cardNameLabel}
                   />
                 </div>
               </>
@@ -205,7 +222,7 @@ export function CheckoutForm({
               disabled={busy}
               style={{ margin: "6px 0 0", minHeight: 42 }}
             >
-              {busy ? "Starter prøveperioden …" : "Start prøveperiode — 0 kr i dag"}
+              {busy ? t.submitBusy : t.submit}
             </button>
 
             {error ? (
@@ -215,8 +232,7 @@ export function CheckoutForm({
             ) : null}
 
             <p className="note-sm" style={{ margin: 0 }}>
-              Kortopplysningene behandles av Stripe og lagres aldri hos Toppkart. Ingen binding —
-              avslutt når som helst fra Min side. Kvittering sendes på e-post etter hvert trekk.
+              {t.reassurance}
             </p>
           </form>
         </section>

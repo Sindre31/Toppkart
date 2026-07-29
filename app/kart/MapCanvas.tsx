@@ -17,6 +17,8 @@ import { latLngBounds, type LatLngBoundsExpression, type LatLngTuple } from "lea
 import "leaflet/dist/leaflet.css";
 
 import { GRADE_COLORS } from "@/lib/config";
+import type { Lang } from "@/lib/i18n";
+import { mapDict } from "@/lib/i18n/map";
 import { routeFor } from "@/lib/tours";
 import type { Tour } from "@/lib/types";
 
@@ -35,8 +37,9 @@ export interface MapCanvasProps {
   visible: ReadonlySet<string>;
   selectedSlug: string | null;
   onSelect: (slug: string) => void;
-  /** «Start / parkering» — localised by the caller. */
-  startLabel: string;
+  /** Language for the tooltips and Leaflet's own controls. Peak names are
+   *  proper nouns and are rendered as they come. */
+  lang: Lang;
 }
 
 /** Schematic route line for the selected tour: white underlay, dashed accent

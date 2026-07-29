@@ -104,7 +104,7 @@ export default function MapView({
 
   const rows = useMemo(() => {
     const q = query.trim().toLowerCase();
-    return TOURS.filter(
+    return tours.filter(
       (tour) =>
         (!q ||
           tour.name.toLowerCase().includes(q) ||
@@ -112,13 +112,13 @@ export default function MapView({
         (!grade || tour.grade === grade) &&
         (!region || tour.region === region),
     );
-  }, [query, grade, region]);
+  }, [tours, query, grade, region]);
 
   const visible = useMemo(() => new Set(rows.map((tour) => tour.slug)), [rows]);
 
   const selected = useMemo(
-    () => TOURS.find((tour) => tour.slug === selectedSlug) ?? null,
-    [selectedSlug],
+    () => tours.find((tour) => tour.slug === selectedSlug) ?? null,
+    [tours, selectedSlug],
   );
 
   /* Deep link both ways: `/kart?tur=<slug>` opens a tour, and selecting one
@@ -142,20 +142,7 @@ export default function MapView({
         <Link className={s.brand} href="/">
           Toppkart
         </Link>
-        <div className="seg" role="group" aria-label={t.langGroup}>
-          {LANGS.map((code) => (
-            <label className="seg-opt" key={code}>
-              <input
-                type="radio"
-                name="lang"
-                value={code}
-                checked={lang === code}
-                onChange={() => setLang(code)}
-              />
-              {code.toUpperCase()}
-            </label>
-          ))}
-        </div>
+        <LanguageSwitcher lang={lang} className={s.topbarLang} />
         <Link className={s.loginLink} href="/logg-inn">
           {t.login}
         </Link>
@@ -187,11 +174,14 @@ export default function MapView({
                 <span>{t.all}</span>
               </label>
               {GRADE_FILTERS.map((g) => (
+                /* The visible label is the bare number, as in the prototype —
+                   the grade name rides along for screen readers. */
                 <label className="seg-opt" key={g}>
                   <input
                     type="radio"
                     name="g"
                     value={g}
+                    aria-label={t.grades[g]}
                     checked={grade === g}
                     onChange={() => setGrade(g)}
                   />
@@ -355,11 +345,11 @@ export default function MapView({
 
       <div className={s.map}>
         <MapCanvas
-          tours={TOURS}
+          tours={tours}
           visible={visible}
           selectedSlug={selectedSlug}
           onSelect={openTour}
-          startLabel={t.startTooltip}
+          lang={lang}
         />
       </div>
     </div>

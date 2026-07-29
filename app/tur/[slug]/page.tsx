@@ -10,13 +10,23 @@ import { ElevationProfile } from "@/components/guide/ElevationProfile";
 import { GuideSections } from "@/components/guide/GuideSections";
 import { LockedGuide } from "@/components/guide/LockedGuide";
 import { getViewer } from "@/lib/access";
-import { GRADE_LABELS, getGuide, guideSlugs } from "@/lib/guides";
+import { guideSlugs } from "@/lib/guides";
+import { getLang } from "@/lib/i18n";
+import { commonDict } from "@/lib/i18n/common";
+import { getLocalizedGuide, localizeTour, teaserFor } from "@/lib/i18n/content";
+import { elevationLabel, gradeLabel } from "@/lib/i18n/format";
+import { guideDict } from "@/lib/i18n/guide";
 import { getTour } from "@/lib/tours";
 import styles from "./guide.module.css";
 
 /** Turguiden. Kart, nøkkeltall og høydeprofil er åpne for alle; rute-
  *  beskrivelse, nedkjøring, skredterreng og GPX ligger bak abonnement
- *  (`getViewer().hasAccess`). */
+ *  (`getViewer().hasAccess`).
+ *
+ *  The page reads two cookies — the viewer's subscription and `tk_lang` — so it
+ *  renders per request. `generateStaticParams` is kept for the route's params
+ *  contract, but nothing here was prerenderable before either: `getViewer()`
+ *  has always made the guide dynamic. */
 
 export function generateStaticParams(): { slug: string }[] {
   return guideSlugs().map((slug) => ({ slug }));
@@ -28,44 +38,50 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
+  const lang = await getLang();
   const tour = getTour(slug);
-  if (!tour) return { title: "Turen finnes ikke" };
+  if (!tour) return { title: guideDict(lang).notFoundTitle };
   return {
+    // Peak and region are proper nouns — the title is identical in both.
     title: `${tour.name}, ${tour.region}`,
-    description: getGuide(slug)?.intro ?? tour.teaser,
+    description: getLocalizedGuide(slug, lang)?.intro ?? teaserFor(slug, lang),
   };
 }
 
 export default async function TourGuidePage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const tour = getTour(slug);
-  if (!tour) notFound();
+  const lang = await getLang();
+  const source = getTour(slug);
+  if (!source) notFound();
 
-  const guide = getGuide(slug);
+  const tour = localizeTour(source, lang);
+  const guide = getLocalizedGuide(slug, lang);
   const { hasAccess } = await getViewer();
+  const t = guideDict(lang);
+  const common = commonDict(lang);
   const mapHref = `/kart?tur=${tour.slug}`;
 
   const stats: { label: string; value: string }[] = [
-    { label: "Topp", value: `${tour.summitM} moh` },
-    { label: "Høydemeter", value: `↑ ${tour.verticalM} m` },
-    { label: "Normaltid", value: tour.duration },
-    { label: "Grad", value: GRADE_LABELS[tour.grade] },
-    { label: "Himmelretning", value: tour.aspect },
+    { label: t.statSummit, value: elevationLabel(tour.summitM, lang) },
+    { label: t.statVertical, value: `↑ ${tour.verticalM} m` },
+    { label: t.statTime, value: tour.duration },
+    { label: t.statGrade, value: gradeLabel(tour.grade, lang) },
+    { label: t.statAspect, value: tour.aspect },
   ];
 
   return (
     <div className="shell">
-      <SiteNav>
-        <Link href="/kart">Kartet</Link>
+      <SiteNav lang={lang}>
+        <Link href="/kart">{common.map}</Link>
         <Link className="nav-muted" href="/min-side">
-          Min side
+          {common.account}
         </Link>
       </SiteNav>
 
       <main className="page page-narrow" style={{ paddingBottom: 64 }}>
         <header style={{ padding: "48px 0 32px" }}>
           <Link href={mapHref} style={{ fontSize: 13, textDecoration: "none" }}>
-            ← Tilbake til kartet
+            {t.backToMap}
           </Link>
           <div style={{ display: "flex", gap: 10, alignItems: "center", marginTop: 20, flexWrap: "wrap" }}>
             <span
@@ -83,10 +99,10 @@ export default async function TourGuidePage({ params }: { params: Promise<{ slug
               className="tag tag-accent"
               style={{ letterSpacing: "0.06em", textTransform: "uppercase", fontWeight: 600 }}
             >
-              {GRADE_LABELS[tour.grade]}
+              {gradeLabel(tour.grade, lang)}
             </span>
             <span className="tag tag-neutral" style={{ letterSpacing: "0.06em", textTransform: "uppercase" }}>
-              Sesong {tour.season}
+              {t.seasonPrefix} {tour.season}
             </span>
           </div>
           <h1 className="display" style={{ fontSize: "clamp(44px, 6vw, 76px)", margin: "10px 0 0 -0.052em" }}>
@@ -98,7 +114,7 @@ export default async function TourGuidePage({ params }: { params: Promise<{ slug
           <div style={{ display: "flex", gap: 10, flexWrap: "wrap", marginTop: 22 }}>
             {hasAccess ? (
               <a className="btn btn-primary" href={`/api/gpx/${tour.slug}`} download={`${tour.slug}.gpx`}>
-                Last ned GPX
+                {t.downloadGpx}
               </a>
             ) : (
               /* Uten abonnement er nedlastingen stengt både her og i API-et —
@@ -106,15 +122,15 @@ export default async function TourGuidePage({ params }: { params: Promise<{ slug
               <Link
                 className="btn btn-secondary"
                 href="/betaling"
-                aria-label="Last ned GPX — krever abonnement"
-                title="Krever abonnement"
+                aria-label={t.downloadGpxLocked}
+                title={t.requiresSubscription}
               >
                 <Lock size={14} strokeWidth={1.5} />
-                Last ned GPX
+                {t.downloadGpx}
               </Link>
             )}
             <Link className="btn btn-secondary" href={mapHref}>
-              Åpne i kartet
+              {t.openInMap}
             </Link>
           </div>
         </header>
@@ -145,35 +161,36 @@ export default async function TourGuidePage({ params }: { params: Promise<{ slug
           <Blueprint as="figure" className="duotone" style={{ margin: 0 }}>
             <Image
               src="/assets/kontur.png"
-              alt={`Skjematisk kartutsnitt av ruta opp ${tour.name}`}
+              alt={t.mapImageAlt(tour.name)}
               width={1500}
               height={1000}
               priority
               style={{ width: "100%", height: "auto", aspectRatio: "3 / 2", objectFit: "cover" }}
             />
             <figcaption style={{ padding: "8px 2px 0" }}>
-              Skjematisk kartutsnitt i prototypen — <Link href={mapHref}>se turen i kartet</Link>.
+              {t.figureCaption}
+              <Link href={mapHref}>{t.figureCaptionLink}</Link>.
             </figcaption>
           </Blueprint>
 
           {guide ? (
-            <ElevationProfile profile={guide.elevationProfile} />
+            <ElevationProfile profile={guide.elevationProfile} lang={lang} />
           ) : (
             <Blueprint style={{ padding: "18px 20px" }}>
               <h2 style={{ fontSize: 18, letterSpacing: "0.02em", textTransform: "uppercase", margin: "0 0 12px" }}>
-                Turguide
+                {t.guidePendingTitle}
               </h2>
               <p className="note" style={{ margin: 0 }}>
-                Turguiden for denne toppen er under arbeid.
+                {t.guidePendingBody}
               </p>
             </Blueprint>
           )}
         </section>
 
-        {guide && (hasAccess ? <GuideSections guide={guide} /> : <LockedGuide />)}
+        {guide && (hasAccess ? <GuideSections guide={guide} lang={lang} /> : <LockedGuide lang={lang} />)}
 
-        <SiteFooter>
-          <span className="push">Eksempelinnhold i prototypen — ikke en reell turbeskrivelse.</span>
+        <SiteFooter lang={lang}>
+          <span className="push">{t.footerNote}</span>
         </SiteFooter>
       </main>
     </div>
