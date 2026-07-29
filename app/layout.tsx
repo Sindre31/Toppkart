@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { getLang, htmlLang } from "@/lib/i18n";
+import { htmlLang } from "@/lib/i18n";
+import { getLang } from "@/lib/i18n/server";
 import { siteMeta } from "@/lib/i18n/common";
 import "./globals.css";
 

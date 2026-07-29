@@ -11,7 +11,7 @@ import { GuideSections } from "@/components/guide/GuideSections";
 import { LockedGuide } from "@/components/guide/LockedGuide";
 import { getViewer } from "@/lib/access";
 import { guideSlugs } from "@/lib/guides";
-import { getLang } from "@/lib/i18n";
+import { getLang } from "@/lib/i18n/server";
 import { commonDict } from "@/lib/i18n/common";
 import { getLocalizedGuide, localizeTour, teaserFor } from "@/lib/i18n/content";
 import { elevationLabel, gradeLabel } from "@/lib/i18n/format";

@@ -9,9 +9,12 @@
  *  Dictionaries are namespaced per page area (`./landing`, `./map`, …) rather
  *  than pooled in one object — each area owns its own file, and pages import
  *  only the strings they render.
+ *
+ *  Everything here must stay safe to import from anywhere: the Edge middleware
+ *  and two client components depend on it. Reading the cookie needs
+ *  `next/headers`, which neither can bundle, so `getLang()` lives in the
+ *  server-only sibling `./server`.
  */
-
-import { cookies } from "next/headers";
 
 export type Lang = "no" | "en";
 
@@ -36,12 +39,6 @@ export function isLang(value: unknown): value is Lang {
 /** Narrow an untrusted string (cookie, query param) to a supported language. */
 export function toLang(value: unknown): Lang {
   return isLang(value) ? value : DEFAULT_LANG;
-}
-
-/** The active language for the current request. Server Components only. */
-export async function getLang(): Promise<Lang> {
-  const store = await cookies();
-  return toLang(store.get(LANG_COOKIE)?.value);
 }
 
 /** A NO/EN pair. Every namespaced dictionary is built from these. */

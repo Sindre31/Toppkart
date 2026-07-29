@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { getViewer } from "@/lib/access";
-import { getLang } from "@/lib/i18n";
+import { getLang } from "@/lib/i18n/server";
 import { mapDict } from "@/lib/i18n/map";
 import { getTour } from "@/lib/tours";
 import MapView from "./MapView";

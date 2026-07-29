@@ -1,5 +1,5 @@
 import { Resend } from "resend";
-import { PRICE, SITE, TRIAL_DAYS, env, isResendConfigured } from "@/lib/config";
+import { PRICE, TRIAL_DAYS, env, isResendConfigured } from "@/lib/config";
 import { htmlLang, type Lang } from "@/lib/i18n";
 import { siteMeta } from "@/lib/i18n/common";
 import { systemDict } from "@/lib/i18n/system";
@@ -265,33 +265,37 @@ export interface WelcomeEmailInput {
   /** ISO date the trial ends. */
   trialEnd?: string | null;
   plan?: "maned" | "ar";
+  /** Language the message is written in. Norwegian unless told otherwise. */
+  lang?: Lang;
 }
 
 /** Sent when Stripe Checkout completes — the trial has started. */
 export async function sendWelcomeEmail(input: WelcomeEmailInput): Promise<EmailResult> {
+  const lang: Lang = input.lang ?? "no";
+  const t = systemDict(lang);
   const plan = input.plan ?? "maned";
-  const trialEnd = formatDate(input.trialEnd);
+  const trialEnd = formatDate(input.trialEnd, lang);
 
   const rows: Row[] = [
-    { label: "Abonnement", value: planLabel(plan) },
-    { label: "Pris", value: planPrice(plan) },
+    { label: t.emailRowPlan, value: planLabel(plan, lang) },
+    { label: t.emailRowPrice, value: planPrice(plan, lang) },
   ];
-  if (trialEnd) rows.push({ label: "Første trekk", value: trialEnd });
+  if (trialEnd) rows.push({ label: t.emailRowFirstCharge, value: trialEnd });
 
-  return send(input.to, "Velkommen opp — prøveperioden har startet", {
-    kicker: "Prøveperiode",
-    heading: "Velkommen opp",
-    intro: trialEnd
-      ? `Prøveperioden er i gang og varer i ${TRIAL_DAYS} dager, til ${trialEnd}. Hele kartet og alle turguidene er åpne fra nå.`
-      : `Prøveperioden er i gang og varer i ${TRIAL_DAYS} dager. Hele kartet og alle turguidene er åpne fra nå.`,
-    rows,
-    paragraphs: [
-      "Turguidene gir deg rutebeskrivelse opp og ned, høydeprofil, GPX-fil og en gjennomgang av skredterrenget. Sjekk alltid dagens skredvarsel på varsom.no før du går.",
-      "Du kan avslutte når som helst på Min side. Avslutter du i prøveperioden, blir du ikke belastet.",
-    ],
-    cta: { label: "Åpne kartet", href: `${env.siteUrl}/kart` },
-    footnote: "Kvittering kommer på e-post ved hvert trekk. Ingen binding.",
-  });
+  return send(
+    input.to,
+    t.welcomeSubject,
+    {
+      kicker: t.welcomeKicker,
+      heading: t.welcomeHeading,
+      intro: t.welcomeIntro(TRIAL_DAYS, trialEnd),
+      rows,
+      paragraphs: [t.welcomeBodyGuides, t.welcomeBodyCancel],
+      cta: { label: t.welcomeCta, href: `${env.siteUrl}/kart` },
+      footnote: t.welcomeFootnote,
+    },
+    lang,
+  );
 }
 
 export interface ReceiptEmailInput {
@@ -307,40 +311,49 @@ export interface ReceiptEmailInput {
   hostedInvoiceUrl?: string | null;
   invoicePdf?: string | null;
   plan?: "maned" | "ar";
+  /** Language the message is written in. Norwegian unless told otherwise. */
+  lang?: Lang;
 }
 
 /** Sent on `invoice.paid` — and once at checkout, so the first charge is
  *  never a surprise. */
 export async function sendReceiptEmail(input: ReceiptEmailInput): Promise<EmailResult> {
+  const lang: Lang = input.lang ?? "no";
+  const t = systemDict(lang);
   const plan = input.plan ?? "maned";
-  const amount = formatAmount(input.amountTotal, input.currency ?? "nok");
-  const periodEnd = formatDate(input.periodEnd);
+  const amount = formatAmount(input.amountTotal, input.currency ?? "nok", lang);
+  const periodEnd = formatDate(input.periodEnd, lang);
 
   const rows: Row[] = [
-    { label: "Abonnement", value: planLabel(plan) },
-    { label: "Beløp", value: amount },
+    { label: t.emailRowPlan, value: planLabel(plan, lang) },
+    { label: t.emailRowAmount, value: amount },
   ];
-  if (input.invoiceNumber) rows.push({ label: "Kvitteringsnummer", value: input.invoiceNumber });
-  if (periodEnd) rows.push({ label: "Neste trekk", value: periodEnd });
+  if (input.invoiceNumber) rows.push({ label: t.emailRowReceiptNumber, value: input.invoiceNumber });
+  if (periodEnd) rows.push({ label: t.emailRowNextCharge, value: periodEnd });
 
-  const paragraphs = ["Beløpet er trukket fra betalingskortet du registrerte hos Stripe."];
+  const paragraphs = [t.receiptBodyCharged];
   if (input.invoicePdf) {
-    paragraphs.push(`Kvitteringen som PDF: ${input.invoicePdf}`);
+    paragraphs.push(t.receiptBodyPdf(input.invoicePdf));
   }
-  paragraphs.push("Du finner alle kvitteringer under «Kvitteringer» på Min side.");
+  paragraphs.push(t.receiptBodyArchive);
 
-  return send(input.to, `Kvittering fra ${SITE.name} — ${amount}`, {
-    kicker: "Kvittering",
-    heading: "Takk for betalingen",
-    intro: `Vi har mottatt ${amount} for ${planLabel(plan).toLowerCase()}.`,
-    rows,
-    paragraphs,
-    cta: {
-      label: input.hostedInvoiceUrl ? "Se kvitteringen" : "Min side",
-      href: input.hostedInvoiceUrl ?? `${env.siteUrl}/min-side`,
+  return send(
+    input.to,
+    t.receiptSubject(siteMeta(lang).name, amount),
+    {
+      kicker: t.receiptKicker,
+      heading: t.receiptHeading,
+      intro: t.receiptIntro(amount, planLabel(plan, lang)),
+      rows,
+      paragraphs,
+      cta: {
+        label: input.hostedInvoiceUrl ? t.receiptCtaInvoice : t.receiptCtaAccount,
+        href: input.hostedInvoiceUrl ?? `${env.siteUrl}/min-side`,
+      },
+      footnote: t.receiptFootnote,
     },
-    footnote: "Ingen binding. Du kan avslutte abonnementet når som helst på Min side.",
-  });
+    lang,
+  );
 }
 
 export interface TrialEndingEmailInput {
@@ -348,32 +361,39 @@ export interface TrialEndingEmailInput {
   /** ISO date the trial ends. */
   trialEnd?: string | null;
   plan?: "maned" | "ar";
+  /** Language the message is written in. Norwegian unless told otherwise. */
+  lang?: Lang;
 }
 
 /** Sent a few days before the trial runs out. Stripe's
  *  `customer.subscription.trial_will_end` event is the natural trigger. */
 export async function sendTrialEndingEmail(input: TrialEndingEmailInput): Promise<EmailResult> {
+  const lang: Lang = input.lang ?? "no";
+  const t = systemDict(lang);
   const plan = input.plan ?? "maned";
-  const trialEnd = formatDate(input.trialEnd);
+  const trialEnd = formatDate(input.trialEnd, lang);
 
   const rows: Row[] = [
-    { label: "Abonnement", value: planLabel(plan) },
-    { label: "Pris", value: planPrice(plan) },
+    { label: t.emailRowPlan, value: planLabel(plan, lang) },
+    { label: t.emailRowPrice, value: planPrice(plan, lang) },
   ];
-  if (trialEnd) rows.push({ label: "Første trekk", value: trialEnd });
+  if (trialEnd) rows.push({ label: t.emailRowFirstCharge, value: trialEnd });
 
-  return send(input.to, "Prøveperioden går mot slutten", {
-    kicker: "Prøveperiode",
-    heading: "Prøveperioden går mot slutten",
-    intro: trialEnd
-      ? `Prøveperioden din varer til ${trialEnd}. Da starter abonnementet, og kortet ditt blir belastet ${plan === "ar" ? PRICE.yearly.label : PRICE.monthly.label}.`
-      : `Prøveperioden din nærmer seg slutten. Da starter abonnementet, og kortet ditt blir belastet ${plan === "ar" ? PRICE.yearly.label : PRICE.monthly.label}.`,
-    rows,
-    paragraphs: [
-      "Vil du fortsette, trenger du ikke gjøre noe. Abonnementet løper videre, og du beholder tilgangen til kartet og turguidene.",
-      "Vil du ikke fortsette, avslutter du på Min side før prøveperioden er ute. Da blir du ikke belastet, og du beholder tilgangen ut perioden.",
-    ],
-    cta: { label: "Min side", href: `${env.siteUrl}/min-side` },
-    footnote: "Ingen binding.",
-  });
+  return send(
+    input.to,
+    t.trialEndingSubject,
+    {
+      kicker: t.trialEndingKicker,
+      heading: t.trialEndingHeading,
+      intro: t.trialEndingIntro(
+        trialEnd,
+        plan === "ar" ? PRICE.yearly.label : PRICE.monthly.label,
+      ),
+      rows,
+      paragraphs: [t.trialEndingBodyContinue, t.trialEndingBodyCancel],
+      cta: { label: t.trialEndingCta, href: `${env.siteUrl}/min-side` },
+      footnote: t.trialEndingFootnote,
+    },
+    lang,
+  );
 }

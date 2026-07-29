@@ -1,9 +1,21 @@
 import { NextResponse } from "next/server";
 import { env, isSupabaseConfigured } from "@/lib/config";
 import { setDemoEmail } from "@/lib/demo-session";
+import { LANG_COOKIE, toLang, type Lang } from "@/lib/i18n";
+import { systemDict } from "@/lib/i18n/system";
 import { getSupabaseServerClient } from "@/lib/supabase/server";
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+/** The reader's language, read straight off the request. A Route Handler is
+ *  handed the request, so it can take the cookie from the header it already
+ *  has rather than reaching for `getLang()`. The name comes from `LANG_COOKIE`,
+ *  so this reader can never drift from the one the pages use. */
+function langOf(request: Request): Lang {
+  const cookie = request.headers.get("cookie") ?? "";
+  const match = cookie.match(new RegExp(`(?:^|;\\s*)${LANG_COOKIE}=([^;]*)`));
+  return toLang(match?.[1]);
+}
 
 /** Only same-origin relative paths may ride along to the magic link. */
 function safeNext(value: unknown): string {
@@ -13,8 +25,13 @@ function safeNext(value: unknown): string {
 }
 
 /** POST { email, next? } — sends a magic link (live) or opens the demo session.
- *  The response is identical whether or not the address has an account. */
+ *  The response is identical whether or not the address has an account.
+ *
+ *  The login form prints `error` verbatim, so the replies follow the language
+ *  the reader is browsing in. */
 export async function POST(request: Request) {
+  const t = systemDict(langOf(request));
+
   let payload: unknown = null;
   try {
     payload = await request.json();
@@ -26,7 +43,7 @@ export async function POST(request: Request) {
 
   if (!EMAIL_RE.test(email)) {
     return NextResponse.json(
-      { ok: false, error: "Skriv inn en gyldig e-postadresse." },
+      { ok: false, error: t.authInvalidEmail },
       { status: 400 },
     );
   }
@@ -37,7 +54,7 @@ export async function POST(request: Request) {
     const supabase = await getSupabaseServerClient();
     if (!supabase) {
       return NextResponse.json(
-        { ok: false, error: "Vi klarte ikke å sende innloggingslenken. Prøv igjen om litt." },
+        { ok: false, error: t.authSendFailed },
         { status: 503 },
       );
     }
@@ -49,7 +66,7 @@ export async function POST(request: Request) {
     });
     if (error) {
       return NextResponse.json(
-        { ok: false, error: "Vi klarte ikke å sende innloggingslenken. Prøv igjen om litt." },
+        { ok: false, error: t.authSendFailed },
         { status: 502 },
       );
     }

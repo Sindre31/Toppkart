@@ -1,7 +1,8 @@
 import { NextResponse } from "next/server";
 
 import { getViewer } from "@/lib/access";
-import { getLang, type Lang } from "@/lib/i18n";
+import type { Lang } from "@/lib/i18n";
+import { getLang } from "@/lib/i18n/server";
 import { guideDict } from "@/lib/i18n/guide";
 import { getTour, routeFor } from "@/lib/tours";
 import type { Tour } from "@/lib/types";

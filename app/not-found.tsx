@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Blueprint } from "@/components/Blueprint";
 import { SiteNav, SiteFooter } from "@/components/SiteChrome";
-import { getLang } from "@/lib/i18n";
+import { getLang } from "@/lib/i18n/server";
 import { commonDict } from "@/lib/i18n/common";
 import { systemDict } from "@/lib/i18n/system";
 

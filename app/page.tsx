@@ -7,7 +7,7 @@ import { SiteFooter, SiteNav } from "@/components/SiteChrome";
 import { DataPlate } from "@/components/landing/DataPlate";
 import { TrialSignupRow } from "@/components/landing/TrialSignupRow";
 import styles from "@/components/landing/landing.module.css";
-import { getLang } from "@/lib/i18n";
+import { getLang } from "@/lib/i18n/server";
 import { commonDict } from "@/lib/i18n/common";
 import { landingDict } from "@/lib/i18n/landing";
 

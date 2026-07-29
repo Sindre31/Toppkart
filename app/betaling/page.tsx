@@ -3,9 +3,8 @@ import type { Metadata } from "next";
 import { SiteFooter, SiteNav } from "@/components/SiteChrome";
 import { getViewer } from "@/lib/access";
 import { PRICE, TRIAL_DAYS, isStripeConfigured } from "@/lib/config";
-import { addDays, formatNorwegianDate } from "@/lib/dates";
-import type { Lang } from "@/lib/i18n";
-import { getLang } from "@/lib/i18n";
+import { addDays, formatDate } from "@/lib/dates";
+import { getLang } from "@/lib/i18n/server";
 import { checkoutDict, priceLabel } from "@/lib/i18n/checkout";
 
 import { CheckoutForm } from "./CheckoutForm";
@@ -21,18 +20,6 @@ type SearchParams = Record<string, string | string[] | undefined>;
 
 function first(value: string | string[] | undefined): string | undefined {
   return Array.isArray(value) ? value[0] : value;
-}
-
-/** «12. august 2026» / «12 August 2026». `lib/dates.ts` writes the Norwegian
- *  form the prototypes use; English takes the same day through `Intl` so the
- *  sentence around the date reads naturally. */
-function formatTrialEnd(date: Date, lang: Lang): string {
-  if (lang === "no") return formatNorwegianDate(date);
-  return new Intl.DateTimeFormat("en-GB", {
-    day: "numeric",
-    month: "long",
-    year: "numeric",
-  }).format(date);
 }
 
 export default async function BetalingPage({
@@ -57,7 +44,7 @@ export default async function BetalingPage({
 
   // Første trekk / prøveperiodens slutt: i dag + 14 dager, ikke prototypens
   // hardkodede «12. august 2026».
-  const trialEndDate = formatTrialEnd(addDays(new Date(), TRIAL_DAYS), lang);
+  const trialEndDate = formatDate(addDays(new Date(), TRIAL_DAYS), lang);
 
   // Stripe sender brukeren tilbake hit med ?status=ok etter fullført Checkout.
   const done = first(params.status) === "ok";

@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation";
 import { useState } from "react";
 
 import type { Lang } from "@/lib/i18n";
-import { checkoutDict } from "@/lib/i18n/checkout";
+import { checkoutDict, checkoutError } from "@/lib/i18n/checkout";
 
 import { Confirmation } from "./Confirmation";
 import { Summary } from "./Summary";
@@ -79,7 +79,7 @@ export function CheckoutForm({
         // /api/checkout answers with Norwegian prose in `error`. Until that
         // route hands back a language-neutral code we only surface its text on
         // the Norwegian site, and fall back to our own message in English.
-        setError((lang === "no" ? data.error : undefined) ?? t.startFailed);
+        setError(checkoutError(data.error, lang));
         setBusy(false);
         return;
       }

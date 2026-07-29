@@ -57,6 +57,9 @@ export interface CheckoutDict {
   emailInvalid: string;
   startFailed: string;
   networkFailed: string;
+  unknownPlan: string;
+  priceUnavailable: string;
+  providerSilent: string;
   /* — confirmation — */
   confirmKicker: string;
   confirmHeading: string;
@@ -103,6 +106,9 @@ const CHECKOUT: Translated<CheckoutDict> = {
     emailInvalid: "Skriv inn en gyldig e-postadresse.",
     startFailed: "Vi fikk ikke startet prøveperioden. Prøv igjen om litt.",
     networkFailed: "Vi fikk ikke kontakt med serveren. Prøv igjen om litt.",
+    unknownPlan: "Ukjent abonnement. Velg månedlig eller årlig.",
+    priceUnavailable: "Prisen for dette abonnementet er ikke satt opp ennå. Prøv igjen senere.",
+    providerSilent: "Fikk ikke svar fra betalingsleverandøren. Prøv igjen om litt.",
 
     confirmKicker: "Kvittering sendt på e-post",
     confirmHeading: "Velkommen opp",
@@ -152,6 +158,9 @@ const CHECKOUT: Translated<CheckoutDict> = {
     emailInvalid: "Enter a valid email address.",
     startFailed: "We couldn't start your trial. Please try again in a moment.",
     networkFailed: "We couldn't reach the server. Please try again in a moment.",
+    unknownPlan: "Unknown subscription. Choose monthly or yearly.",
+    priceUnavailable: "The price for this subscription isn't set up yet. Please try again later.",
+    providerSilent: "The payment provider didn't respond. Please try again in a moment.",
 
     confirmKicker: "Receipt sent by email",
     confirmHeading: "Welcome up",
@@ -188,4 +197,34 @@ export function priceLabel(amount: number): string {
 /** The visible name and cadence for a plan, in `lang`. */
 export function planCopy(plan: PlanKey, lang: Lang): PlanCopy {
   return checkoutDict(lang).plans[plan];
+}
+
+/* — API error codes — */
+
+/** `app/api/checkout` replies with one of these codes rather than a sentence.
+ *  The route runs on the server and has no business deciding which language the
+ *  reader wants; the client already knows, and owns the wording. */
+export type CheckoutErrorCode =
+  | "unknown_plan"
+  | "invalid_email"
+  | "price_unavailable"
+  | "provider_silent"
+  | "checkout_failed";
+
+/** Resolve a code from the API into copy. Anything unrecognised — an old client,
+ *  a proxy rewriting the body — falls back to the generic failure. */
+export function checkoutError(code: unknown, lang: Lang): string {
+  const t = checkoutDict(lang);
+  switch (code) {
+    case "unknown_plan":
+      return t.unknownPlan;
+    case "invalid_email":
+      return t.emailInvalid;
+    case "price_unavailable":
+      return t.priceUnavailable;
+    case "provider_silent":
+      return t.providerSilent;
+    default:
+      return t.startFailed;
+  }
 }
