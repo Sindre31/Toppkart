@@ -265,6 +265,12 @@ create policy "tk_tours: subscribers read published rows"
 -- still decides which rows they actually see.
 revoke all on public.tk_tours from anon;
 grant select on public.tk_tours to authenticated;
+-- `grant select` adds; it does not take away. Supabase's default privileges on
+-- `public` hand every new table full write access to both roles, so the write
+-- bits survive unless they are revoked explicitly. RLS would refuse these
+-- writes anyway (there is no write policy), but a grant nobody should hold is
+-- one dropped policy away from being a hole.
+revoke insert, update, delete, truncate on public.tk_tours from authenticated;
 
 -- ------------------------------------------------------------- profiles -----
 
@@ -296,6 +302,14 @@ create policy "tk_profiles: update own row"
   using (auth.uid() = user_id)
   with check (auth.uid() = user_id);
 
+-- `authenticated` keeps insert and update because the two policies above are
+-- what «03 · Konto» writes through; the policies pin the row to auth.uid().
+-- Nobody deletes a profile from the browser, and a signed-out caller has no
+-- business writing at all — RLS already refuses both, but the grants should
+-- not be sitting there waiting for a policy edit to go wrong.
+revoke insert, update, delete, truncate on public.tk_profiles from anon;
+revoke delete, truncate on public.tk_profiles from authenticated;
+
 -- -------------------------------------------------------- subscriptions -----
 
 -- Protects: billing state. A user may read their own subscription and nothing
@@ -311,7 +325,7 @@ create policy "tk_subscriptions: read own row"
 -- update or delete policy on `subscriptions`. Only the service role — i.e.
 -- app/api/stripe/webhook/route.ts using getSupabaseAdminClient() — can write
 -- here, so a user cannot grant themselves a subscription from the browser.
-revoke insert, update, delete on public.tk_subscriptions from anon, authenticated;
+revoke insert, update, delete, truncate on public.tk_subscriptions from anon, authenticated;
 
 -- ------------------------------------------------------------- invoices -----
 
@@ -324,7 +338,7 @@ create policy "tk_invoices: read own rows"
   to authenticated
   using (auth.uid() = user_id);
 
-revoke insert, update, delete on public.tk_invoices from anon, authenticated;
+revoke insert, update, delete, truncate on public.tk_invoices from anon, authenticated;
 
 -- ============================================================================
 -- 6. tours_public — the free columns, for everyone
@@ -369,6 +383,26 @@ comment on view public.tk_tours_public is
   'Free columns of public.tk_tours, world-readable. The gated columns are not projected here — this is how column-level gating is implemented on top of row-level RLS.';
 
 grant select on public.tk_tours_public to anon, authenticated;
+
+-- This revoke is load-bearing, and the reason is subtle.
+--
+-- `tk_tours_public` selects from a single table with no aggregate, DISTINCT or
+-- GROUP BY, which makes it *auto-updatable*: Postgres will happily rewrite an
+-- insert, update or delete against the view into one against `tk_tours`.
+-- Supabase's default privileges grant exactly those verbs on every new object
+-- to `anon` and `authenticated`. And because the view is deliberately not
+-- `security_invoker`, anything routed through it runs as the owner, `postgres`,
+-- which has `rolbypassrls`.
+--
+-- Stack those three facts together and an anonymous PostgREST caller can
+-- `DELETE /rest/v1/tk_tours_public` and have the delete land on the base table
+-- with RLS bypassed entirely. Read-only is the whole contract of this view.
+revoke insert, update, delete, truncate on public.tk_tours_public from anon, authenticated;
+
+-- The trigger function is reachable over `/rest/v1/rpc/` by default. Postgres
+-- refuses to run a plpgsql trigger function outside a trigger context, so this
+-- is tidiness rather than a live hole — but nothing should be able to call it.
+revoke all on function public.tk_handle_new_user() from anon, authenticated;
 
 -- ============================================================================
 -- 7. Keep profiles in step with auth.users
