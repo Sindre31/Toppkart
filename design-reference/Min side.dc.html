@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="styles.css">
+<style>
+html { scroll-behavior: smooth; }
+body { margin: 0; text-wrap: pretty; }
+a { color: var(--color-accent-700); }
+a:hover { color: var(--color-accent-900); }
+</style>
+</helmet>
+
+<nav class="nav" style="padding: 10px 40px; border-bottom: 1px solid var(--color-divider); position: sticky; top: 0; background: var(--color-bg); z-index: 20;">
+  <a class="nav-brand" href="Landing.dc.html" style="letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none; color: var(--color-text);">Toppkart</a>
+  <a href="kart.html">Kartet</a>
+  <a href="#" aria-current="page" style="color: var(--color-accent-700);">Min side</a>
+  <a href="Landing.dc.html" style="font-size: 13px; color: color-mix(in srgb, var(--color-text) 60%, transparent);">Logg ut</a>
+</nav>
+
+<div style="max-width: 920px; margin: 0 auto; padding: 0 clamp(20px, 5vw, 64px) 64px;">
+
+  <header style="padding: 56px 0 40px;">
+    <h1 style="font-size: clamp(38px, 5vw, 56px); line-height: 1.04; letter-spacing: 0.01em; text-transform: uppercase; margin: 0 0 0 -0.052em;">Min side</h1>
+    <p style="font-size: 15px; line-height: 24px; margin: 14px 0 0; color: color-mix(in srgb, var(--color-text) 70%, transparent);">Innlogget som <strong style="color: var(--color-text);">kari@epost.no</strong></p>
+  </header>
+
+  <section style="padding: 0 0 48px;">
+    <span style="display: block; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 600; color: var(--color-accent-700); margin-bottom: 12px;">01 · Abonnement</span>
+    <hr style="height: 1px; border: 0; margin: 0 0 28px; background: var(--color-divider);">
+    <div class="blueprint">
+      <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+      <div style="display: flex; flex-wrap: wrap; gap: 16px; align-items: center; padding: 20px 24px; border-bottom: 1px solid var(--color-divider);">
+        <div style="display: flex; flex-direction: column; gap: 4px; margin-right: auto;">
+          <span style="font-family: var(--font-heading); font-weight: 600; font-size: 26px; letter-spacing: 0.02em; text-transform: uppercase;">Toppkart — 29 kr/mnd</span>
+          <span style="font-size: 14px; color: color-mix(in srgb, var(--color-text) 70%, transparent);">{{ statusNote }}</span>
+        </div>
+        <span class="tag {{ statusTag }}" style="font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 600; padding: 5px 12px;">{{ statusLabel }}</span>
+      </div>
+      <table class="table">
+        <tbody>
+          <sc-for list="{{ subRows }}" as="row" hint-placeholder-count="3">
+            <tr>
+              <td style="width: 34%; padding: 12px 0 12px 24px; font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600; color: color-mix(in srgb, var(--color-text) 60%, transparent); border-bottom: 1px solid color-mix(in srgb, var(--color-text) 8%, transparent);">{{ row.l }}</td>
+              <td style="padding: 12px 24px 12px 0; font-size: 15px; border-bottom: 1px solid color-mix(in srgb, var(--color-text) 8%, transparent);">{{ row.v }}</td>
+            </tr>
+          </sc-for>
+        </tbody>
+      </table>
+      <div style="display: flex; gap: 10px; flex-wrap: wrap; padding: 16px 24px;">
+        <button class="btn btn-secondary" onClick="{{ changeCard }}">Endre betalingsmetode</button>
+        <sc-if value="{{ isCancelled }}" hint-placeholder-val="{{ false }}">
+          <button class="btn btn-primary" onClick="{{ reactivate }}">Gjenoppta abonnement</button>
+        </sc-if>
+        <sc-if value="{{ notCancelled }}" hint-placeholder-val="{{ true }}">
+          <button class="btn btn-ghost" onClick="{{ openCancel }}">Avslutt abonnement</button>
+        </sc-if>
+      </div>
+    </div>
+    <p style="font-size: 13px; line-height: 20px; color: color-mix(in srgb, var(--color-text) 55%, transparent); margin: 12px 0 0;">Betaling og kort håndteres sikkert av Stripe. Kvittering sendes på e-post etter hvert trekk.</p>
+  </section>
+
+  <section style="padding: 0 0 48px;">
+    <span style="display: block; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 600; color: var(--color-accent-700); margin-bottom: 12px;">02 · Kvitteringer</span>
+    <hr style="height: 1px; border: 0; margin: 0 0 28px; background: var(--color-divider);">
+    <sc-if value="{{ hasInvoices }}" hint-placeholder-val="{{ true }}">
+      <table class="table">
+        <thead>
+          <tr><th>Dato</th><th>Beskrivelse</th><th>Beløp</th><th>Status</th><th></th></tr>
+        </thead>
+        <tbody>
+          <sc-for list="{{ invoices }}" as="inv" hint-placeholder-count="3">
+            <tr>
+              <td style="white-space: nowrap;">{{ inv.date }}</td>
+              <td>{{ inv.desc }}</td>
+              <td style="font-family: var(--font-heading); font-weight: 600; font-size: 16px;">{{ inv.amount }}</td>
+              <td><span class="tag tag-accent">{{ inv.status }}</span></td>
+              <td style="text-align: right;"><a href="#" onClick="{{ noop }}">PDF</a></td>
+            </tr>
+          </sc-for>
+        </tbody>
+      </table>
+    </sc-if>
+    <sc-if value="{{ noInvoices }}" hint-placeholder-val="{{ false }}">
+      <p style="font-size: 14px; color: color-mix(in srgb, var(--color-text) 60%, transparent); margin: 0;">Ingen kvitteringer ennå — første trekk kommer etter prøveperioden.</p>
+    </sc-if>
+  </section>
+
+  <section style="padding: 0 0 48px;">
+    <span style="display: block; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 600; color: var(--color-accent-700); margin-bottom: 12px;">03 · Konto</span>
+    <hr style="height: 1px; border: 0; margin: 0 0 28px; background: var(--color-divider);">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: clamp(20px, 3vw, 40px);">
+      <div class="blueprint" style="padding: 20px 24px;">
+        <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+        <h2 style="font-size: 18px; letter-spacing: 0.02em; text-transform: uppercase; margin: 0 0 12px;">E-post</h2>
+        <div style="display: flex; gap: 8px;">
+          <input class="input" type="email" defaultValue="kari@epost.no" aria-label="E-postadresse" style="flex: 1;">
+          <button class="btn btn-secondary" onClick="{{ noop }}">Endre</button>
+        </div>
+        <p style="font-size: 13px; line-height: 20px; color: color-mix(in srgb, var(--color-text) 55%, transparent); margin: 10px 0 0;">Innlogging skjer med lenke til denne adressen — ingen passord.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer style="padding: 40px 0 0; font-size: 13px; line-height: 24px; color: color-mix(in srgb, var(--color-text) 70%, transparent); border-top: 1px solid var(--color-divider); display: flex; gap: 24px; flex-wrap: wrap;">
+    <span>Toppkart</span>
+    <a href="kart.html">Kartet</a>
+    <a href="Landing.dc.html">Om abonnementet</a>
+  </footer>
+</div>
+
+<sc-if value="{{ cancelOpen }}" hint-placeholder-val="{{ false }}">
+  <div class="dialog-backdrop" style="z-index: 100;" onClick="{{ closeCancelBackdrop }}">
+    <div class="dialog elev-lg blueprint" style="position: relative; background: var(--color-bg);">
+      <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+      <div class="dialog-title">Avslutte abonnementet?</div>
+      <p class="dialog-body" style="margin: 0;">Du beholder tilgang ut inneværende periode ({{ periodEnd }}). Etter det låses turguidene, men kontoen og lagrede turer beholdes.</p>
+      <div class="dialog-actions">
+        <button class="btn btn-secondary" onClick="{{ closeCancel }}">Behold abonnement</button>
+        <button class="btn btn-primary" onClick="{{ confirmCancel }}">Avslutt</button>
+      </div>
+    </div>
+  </div>
+</sc-if>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;subState&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;default&quot;:&quot;trial&quot;,&quot;options&quot;:[&quot;trial&quot;,&quot;active&quot;,&quot;cancelled&quot;],&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Abonnement&quot;}}">
+class Component extends DCLogic {
+  state = { cancelOpen: false, cancelledNow: false };
+  renderVals() {
+    const base = this.props.subState ?? "trial";
+    const st = this.state.cancelledNow ? "cancelled" : base;
+    const periodEnd = st === "trial" ? "12. august 2026" : "15. august 2026";
+    const M = {
+      trial: { label: "Prøveperiode", tag: "tag-accent", note: "Gratis til 12. august 2026 — deretter 29 kr/mnd." },
+      active: { label: "Aktiv", tag: "tag-accent", note: "Fornyes automatisk hver måned." },
+      cancelled: { label: "Avsluttet", tag: "tag-neutral", note: "Tilgang ut perioden — ingen flere trekk." },
+    }[st];
+    const subRows = [
+      { l: "Neste trekk", v: st === "cancelled" ? "Ingen — abonnementet er avsluttet" : (st === "trial" ? "29 kr den 12. august 2026" : "29 kr den 15. august 2026") },
+      { l: "Betalingsmetode", v: "Visa •••• 4242 (utløper 08/28)" },
+      { l: "Medlem siden", v: "29. juli 2026" },
+    ];
+    const invoices = st === "trial" ? [] : [
+      { date: "15. juli 2026", desc: "Toppkart månedlig", amount: "29 kr", status: "Betalt" },
+      { date: "15. juni 2026", desc: "Toppkart månedlig", amount: "29 kr", status: "Betalt" },
+      { date: "15. mai 2026", desc: "Toppkart månedlig", amount: "29 kr", status: "Betalt" },
+    ];
+    return {
+      statusLabel: M.label, statusTag: M.tag, statusNote: M.note, periodEnd,
+      subRows, invoices,
+      hasInvoices: invoices.length > 0, noInvoices: invoices.length === 0,
+      isCancelled: st === "cancelled", notCancelled: st !== "cancelled",
+      cancelOpen: this.state.cancelOpen,
+      openCancel: () => this.setState({ cancelOpen: true }),
+      closeCancel: () => this.setState({ cancelOpen: false }),
+      closeCancelBackdrop: (e) => { if (e.target.classList.contains("dialog-backdrop")) this.setState({ cancelOpen: false }); },
+      confirmCancel: () => this.setState({ cancelOpen: false, cancelledNow: true }),
+      reactivate: () => { this.setState({ cancelledNow: false }); },
+      changeCard: () => {}, noop: (e) => { if (e && e.preventDefault) e.preventDefault(); },
+    };
+  }
+}
+</script>
+</body>
+</html>

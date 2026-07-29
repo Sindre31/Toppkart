@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="styles.css">
+<script src="image-slot.js"></script>
+<style>
+html { scroll-behavior: smooth; }
+body { margin: 0; text-wrap: pretty; }
+a { color: var(--color-accent-700); }
+a:hover { color: var(--color-accent-900); }
+</style>
+</helmet>
+
+<nav class="nav" style="padding: 10px 40px; border-bottom: 1px solid var(--color-divider); position: sticky; top: 0; background: var(--color-bg); z-index: 20;">
+  <a class="nav-brand" href="Landing.dc.html" style="letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none; color: var(--color-text);">Toppkart</a>
+  <a href="kart.html">Kartet</a>
+  <a href="Min side.dc.html" style="font-size: 13px; color: color-mix(in srgb, var(--color-text) 60%, transparent);">Min side</a>
+</nav>
+
+<div style="max-width: 960px; margin: 0 auto; padding: 0 clamp(20px, 5vw, 64px) 64px;">
+
+  <header style="padding: 48px 0 32px;">
+    <a href="kart.html" style="font-size: 13px; text-decoration: none;">← Tilbake til kartet</a>
+    <div style="display: flex; gap: 10px; align-items: center; margin-top: 20px; flex-wrap: wrap;">
+      <span style="font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 600; color: var(--color-accent-700);">Romsdal</span>
+      <span class="tag tag-accent" style="letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600;">Middels</span>
+      <span class="tag tag-neutral" style="letter-spacing: 0.06em; text-transform: uppercase;">Sesong des–mai</span>
+    </div>
+    <h1 style="font-size: clamp(44px, 6vw, 76px); line-height: 1.04; letter-spacing: 0.01em; text-transform: uppercase; margin: 10px 0 0 -0.052em;">Kirketaket</h1>
+    <p style="font-size: 16px; line-height: 24px; max-width: 60ch; margin: 18px 0 0;">Norges kanskje mest populære topptur — bred rygg, trygge linjevalg og lang sesong. En tur som gir mye fjell for pengene, både for førstegangsturen og for hundredegangen.</p>
+    <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-top: 22px;">
+      <button class="btn btn-primary" onClick="{{ noop }}">Last ned GPX</button>
+      <a class="btn btn-secondary" href="kart.html">Åpne i kartet</a>
+    </div>
+  </header>
+
+  <section style="padding: 0 0 40px;">
+    <div class="blueprint">
+      <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));">
+        <sc-for list="{{ stats }}" as="s" hint-placeholder-count="5">
+          <div style="padding: 14px 18px; border-right: 1px solid var(--color-divider); border-bottom: 1px solid var(--color-divider);">
+            <div style="font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: color-mix(in srgb, var(--color-text) 60%, transparent);">{{ s.l }}</div>
+            <div style="font-family: var(--font-heading); font-weight: 600; font-size: 24px; letter-spacing: 0.02em;">{{ s.v }}</div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <section style="display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: 24px clamp(24px, 4vw, 64px); align-items: start; padding: 0 0 48px;">
+    <figure class="blueprint duotone" style="margin: 0;">
+      <image-slot id="guide-map" shape="rect" src="assets/kontur.png" placeholder="kartutsnitt med rute" style="width: 100%; aspect-ratio: 3 / 2;"></image-slot>
+      <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+      <figcaption style="padding: 8px 2px 0;">Skjematisk kartutsnitt i prototypen — <a href="kart.html">se turen i kartet</a>.</figcaption>
+    </figure>
+    <div class="blueprint" style="padding: 18px 20px;">
+      <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+      <h2 style="font-size: 18px; letter-spacing: 0.02em; text-transform: uppercase; margin: 0 0 12px;">Høydeprofil</h2>
+      <svg viewBox="0 0 600 220" style="width: 100%; height: auto; display: block;" role="img" aria-label="Høydeprofil fra 60 til 1439 moh over 5,5 km">
+        <line x1="0" y1="55" x2="600" y2="55" stroke="#1d1f2029" stroke-width="1"></line>
+        <line x1="0" y1="110" x2="600" y2="110" stroke="#1d1f2029" stroke-width="1"></line>
+        <line x1="0" y1="165" x2="600" y2="165" stroke="#1d1f2029" stroke-width="1"></line>
+        <path d="M0,200 L70,184 L130,158 L200,138 L260,104 L330,86 L400,62 L470,44 L545,26 L600,18 L600,220 L0,220 Z" fill="#5980a626"></path>
+        <path d="M0,200 L70,184 L130,158 L200,138 L260,104 L330,86 L400,62 L470,44 L545,26 L600,18" fill="none" stroke="#416180" stroke-width="2.5"></path>
+        <text x="6" y="196" font-size="13" fill="#5d5d60" font-family="monospace">60 moh</text>
+        <text x="452" y="16" font-size="13" fill="#5d5d60" font-family="monospace">1439 moh</text>
+        <text x="6" y="216" font-size="13" fill="#5d5d60" font-family="monospace">0 km</text>
+        <text x="548" y="216" font-size="13" fill="#5d5d60" font-family="monospace">5,5 km</text>
+      </svg>
+      <p style="font-size: 13px; line-height: 20px; color: color-mix(in srgb, var(--color-text) 60%, transparent); margin: 12px 0 0;">Jevn stigning hele veien; brattest mellom 900 og 1200 moh.</p>
+    </div>
+  </section>
+
+  <sc-if value="{{ abonnent }}" hint-placeholder-val="{{ true }}">
+    <section style="padding: 0 0 40px;">
+      <span style="display: block; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 600; color: var(--color-accent-700); margin-bottom: 12px;">01 · Oppstigning</span>
+      <hr style="height: 1px; border: 0; margin: 0 0 20px; background: var(--color-divider);">
+      <div style="max-width: 68ch; font-size: 15px; line-height: 24px;">
+        <p style="margin: 0 0 16px;">Fra vinterparkeringen i Skarbakkane følger du den brede ryggen mot sørvest. Sporet er som regel godt tråkket; hold høyre der skogen tynnes ut, så unngår du de bratteste kulene i skoggrensa.</p>
+        <p style="margin: 0 0 16px;">Over skoggrensa åpner terrenget seg. Ryggen er slak og trygg i normale forhold — det bratteste partiet kommer mellom 900 og 1200 moh, der mange legger slakere sikksakk. Toppflata er stor og godslig; varden står lengst sørøst.</p>
+        <p style="margin: 0;">Ved dårlig sikt: hold ryggen. Terrenget på begge sider faller brattere enn det ser ut til fra sporet.</p>
+      </div>
+    </section>
+
+    <section style="padding: 0 0 40px;">
+      <span style="display: block; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 600; color: var(--color-accent-700); margin-bottom: 12px;">02 · Nedkjøring</span>
+      <hr style="height: 1px; border: 0; margin: 0 0 20px; background: var(--color-divider);">
+      <div style="max-width: 68ch; font-size: 15px; line-height: 24px;">
+        <p style="margin: 0 0 16px;">Normalvegen ned følger oppstigningen — bred, jevn og med god flyt hele veien til skoggrensa. Ved gode forhold er den sørvestvendte flanken et naturlig linjevalg, men den samler fokksnø etter vind fra nordvest.</p>
+        <p style="margin: 0;">Vanligste feil: å dra for langt mot sør på vei ned. Da havner du over de bratte partiene mot dalen — hold sporet til du ser parkeringen.</p>
+      </div>
+    </section>
+
+    <section style="padding: 0 0 40px;">
+      <span style="display: block; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 600; color: var(--color-accent-700); margin-bottom: 12px;">03 · Skredterreng</span>
+      <hr style="height: 1px; border: 0; margin: 0 0 20px; background: var(--color-divider);">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: clamp(16px, 2.5vw, 32px);">
+        <div class="blueprint" style="padding: 18px 20px;">
+          <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+          <h2 style="font-size: 17px; letter-spacing: 0.02em; text-transform: uppercase; margin: 0 0 8px;">Normalruta</h2>
+          <p style="font-size: 14px; line-height: 22px; margin: 0; color: color-mix(in srgb, var(--color-text) 78%, transparent);">Holder seg under 30° hele veien i normale forhold. Ingen kjente utløpssoner krysser ruta.</p>
+        </div>
+        <div class="blueprint" style="padding: 18px 20px;">
+          <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+          <h2 style="font-size: 17px; letter-spacing: 0.02em; text-transform: uppercase; margin: 0 0 8px;">Utenfor ruta</h2>
+          <p style="font-size: 14px; line-height: 22px; margin: 0; color: color-mix(in srgb, var(--color-text) 78%, transparent);">Flankene mot sør og sørvest passerer 30–40° og samler fokksnø. Vurder kun ved stabile forhold.</p>
+        </div>
+        <div class="blueprint" style="padding: 18px 20px;">
+          <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+          <h2 style="font-size: 17px; letter-spacing: 0.02em; text-transform: uppercase; margin: 0 0 8px;">Før du går</h2>
+          <p style="font-size: 14px; line-height: 22px; margin: 0; color: color-mix(in srgb, var(--color-text) 78%, transparent);">Sjekk dagens skredvarsel for Romsdal på <a href="https://varsom.no" target="_blank" rel="noopener">varsom.no</a>. Ta med sender/mottaker, søkestang og spade.</p>
+        </div>
+      </div>
+    </section>
+  </sc-if>
+
+  <sc-if value="{{ locked }}" hint-placeholder-val="{{ false }}">
+    <section class="blueprint" style="padding: 24px; margin-bottom: 40px;">
+      <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+      <span style="display: block; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 600; color: var(--color-accent-700);">🔒 Resten av guiden er låst</span>
+      <p style="font-size: 14px; line-height: 22px; margin: 10px 0 16px; color: color-mix(in srgb, var(--color-text) 70%, transparent); max-width: 52ch;">Rutebeskrivelse, nedkjøring og skredterreng åpnes med abonnement — 14 dager gratis, deretter 29 kr/mnd.</p>
+      <a class="btn btn-primary" href="Betaling.dc.html">Start gratis prøveperiode</a>
+    </section>
+  </sc-if>
+
+  <footer style="padding: 32px 0 0; font-size: 13px; line-height: 24px; color: color-mix(in srgb, var(--color-text) 70%, transparent); border-top: 1px solid var(--color-divider); display: flex; gap: 24px; flex-wrap: wrap;">
+    <span>Toppkart</span>
+    <a href="kart.html">Kartet</a>
+    <span style="margin-left: auto;">Eksempelinnhold i prototypen — ikke en reell turbeskrivelse.</span>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;abonnent&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Tilgang&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    const ab = this.props.abonnent ?? true;
+    return {
+      abonnent: ab, locked: !ab,
+      noop: () => {},
+      stats: [
+        { l: "Topp", v: "1439 moh" },
+        { l: "Høydemeter", v: "↑ 1380 m" },
+        { l: "Normaltid", v: "5–6 t" },
+        { l: "Grad", v: "Middels" },
+        { l: "Himmelretning", v: "SV" },
+      ],
+    };
+  }
+}
+</script>
+</body>
+</html>

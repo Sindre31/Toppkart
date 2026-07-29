@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="styles.css">
+<style>
+body { margin: 0; text-wrap: pretty; }
+a { color: var(--color-accent-700); }
+a:hover { color: var(--color-accent-900); }
+</style>
+</helmet>
+
+<div style="min-height: 100vh; display: flex; flex-direction: column;">
+  <nav class="nav" style="padding: 10px 40px; border-bottom: 1px solid var(--color-divider);">
+    <a class="nav-brand" href="Landing.dc.html" style="letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none; color: var(--color-text);">Toppkart</a>
+    <span style="font-size: 13px; color: color-mix(in srgb, var(--color-text) 60%, transparent);">Sikker betaling via Stripe</span>
+  </nav>
+
+  <main style="flex: 1; width: 100%; max-width: 980px; margin: 0 auto; padding: 48px clamp(20px, 5vw, 64px) 64px;">
+
+    <sc-if value="{{ formVisible }}" hint-placeholder-val="{{ true }}">
+      <header style="margin-bottom: 32px;">
+        <span style="display: block; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 600; color: var(--color-accent-700);">Steg 2 av 2 · Betaling</span>
+        <h1 style="font-size: clamp(32px, 4.5vw, 48px); line-height: 1.06; letter-spacing: 0.01em; text-transform: uppercase; margin: 10px 0 0 -0.052em;">Start prøveperioden</h1>
+      </header>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: clamp(24px, 4vw, 56px); align-items: start;">
+
+        <section class="blueprint" style="padding: 0;">
+          <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+          <header style="padding: 14px 22px; border-bottom: 1px solid var(--color-divider); font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 600;">Oppsummering</header>
+          <div style="padding: 18px 22px; display: flex; flex-direction: column; gap: 12px;">
+            <div style="display: flex; justify-content: space-between; gap: 12px; font-size: 15px;">
+              <span>{{ planLabel }}</span>
+              <span style="font-family: var(--font-heading); font-weight: 600; font-size: 18px; white-space: nowrap;">{{ planPrice }}</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; gap: 12px; font-size: 15px;">
+              <span>Prøveperiode 14 dager</span>
+              <span style="font-family: var(--font-heading); font-weight: 600; font-size: 18px; color: var(--color-accent-700); white-space: nowrap;">− {{ planPrice }}</span>
+            </div>
+            <hr style="height: 1px; border: 0; margin: 4px 0; background: var(--color-divider);">
+            <div style="display: flex; justify-content: space-between; gap: 12px; align-items: baseline;">
+              <span style="font-size: 15px; font-weight: 700;">Å betale i dag</span>
+              <span style="font-family: var(--font-heading); font-weight: 600; font-size: 32px;">0 kr</span>
+            </div>
+            <p style="font-size: 13px; line-height: 20px; color: color-mix(in srgb, var(--color-text) 60%, transparent); margin: 4px 0 0;">Første trekk {{ firstCharge }} den 12. august 2026. Avslutt før det, så trekkes ingenting.</p>
+          </div>
+        </section>
+
+        <section>
+          <div style="display: flex; flex-direction: column; gap: 14px;">
+            <div class="field">
+              <label>E-post</label>
+              <input class="input" type="email" defaultValue="kari@epost.no" aria-label="E-post">
+            </div>
+            <div class="field">
+              <label>Kortnummer</label>
+              <input class="input" inputMode="numeric" placeholder="1234 1234 1234 1234" aria-label="Kortnummer" style="font-feature-settings: 'tnum' 1;">
+            </div>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+              <div class="field">
+                <label>Utløpsdato</label>
+                <input class="input" inputMode="numeric" placeholder="MM / ÅÅ" aria-label="Utløpsdato">
+              </div>
+              <div class="field">
+                <label>CVC</label>
+                <input class="input" inputMode="numeric" placeholder="123" aria-label="CVC">
+              </div>
+            </div>
+            <div class="field">
+              <label>Navn på kortet</label>
+              <input class="input" type="text" placeholder="Kari Nordmann" aria-label="Navn på kortet">
+            </div>
+            <button class="btn btn-primary btn-block" style="margin: 6px 0 0; min-height: 42px;" onClick="{{ pay }}">Start prøveperiode — 0 kr i dag</button>
+            <p style="font-size: 12px; line-height: 18px; color: color-mix(in srgb, var(--color-text) 55%, transparent); margin: 0;">Kortopplysningene behandles av Stripe og lagres aldri hos Toppkart. Ingen binding — avslutt når som helst fra Min side. Kvittering sendes på e-post etter hvert trekk.</p>
+          </div>
+        </section>
+
+      </div>
+    </sc-if>
+
+    <sc-if value="{{ done }}" hint-placeholder-val="{{ false }}">
+      <div style="display: grid; place-items: center; padding: 48px 0;">
+        <div class="blueprint" style="padding: 32px; width: min(480px, 100%); text-align: left;">
+          <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+          <span style="display: block; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 600; color: var(--color-accent-700);">Kvittering sendt på e-post</span>
+          <h1 style="font-size: 34px; line-height: 1.08; letter-spacing: 0.02em; text-transform: uppercase; margin: 10px 0 0;">Velkommen opp</h1>
+          <p style="font-size: 15px; line-height: 24px; color: color-mix(in srgb, var(--color-text) 78%, transparent); margin: 12px 0 0;">Prøveperioden er i gang og varer til 12. august 2026. Alle turguider, GPX-filer og skredterreng er nå åpne.</p>
+          <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-top: 22px;">
+            <a class="btn btn-primary" href="kart.html">Åpne kartet</a>
+            <a class="btn btn-secondary" href="Min side.dc.html">Min side</a>
+          </div>
+        </div>
+      </div>
+    </sc-if>
+
+  </main>
+
+  <footer style="padding: 20px 40px; font-size: 13px; color: color-mix(in srgb, var(--color-text) 60%, transparent); border-top: 1px solid var(--color-divider); display: flex; gap: 24px;">
+    <span>Toppkart</span>
+    <a href="kart.html">Kartet</a>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;plan&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;default&quot;:&quot;maned&quot;,&quot;options&quot;:[&quot;maned&quot;,&quot;ar&quot;],&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Abonnement&quot;}}">
+class Component extends DCLogic {
+  state = { done: false };
+  renderVals() {
+    const yearly = (this.props.plan ?? "maned") === "ar";
+    return {
+      planLabel: yearly ? "Toppkart årlig" : "Toppkart månedlig",
+      planPrice: yearly ? "290 kr" : "29 kr",
+      firstCharge: yearly ? "(290 kr)" : "(29 kr)",
+      formVisible: !this.state.done,
+      done: this.state.done,
+      pay: () => this.setState({ done: true }),
+    };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+/* Sideoppsett for turguiden. Prototypen legger dette inline (7/5-delt rad);
+   media-spørringen kan ikke uttrykkes med style-attributt, så raden bor her. */
+
+.split {
+  display: grid;
+  grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+  gap: 24px clamp(24px, 4vw, 64px);
+  align-items: start;
+  padding: 0 0 48px;
+}
+
+@media (max-width: 760px) {
+  .split {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

@@ -1,0 +1,13 @@
+/* Betalingssiden er en smal, selvstendig kasse: navigasjonen har bare brand +
+   notis, og foten er en tynn hårstrek nederst (20px 40px) i stedet for den
+   luftige seksjonsfoten resten av sidene bruker. Klassen dobles for å vinne
+   over .site-footer i globals.css uansett rekkefølge på stilarkene. */
+.footer.footer {
+  padding: 20px 40px;
+}
+
+@media (max-width: 620px) {
+  .footer.footer {
+    padding: 20px;
+  }
+}
