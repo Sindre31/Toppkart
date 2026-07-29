@@ -1,0 +1,17 @@
+/* Landing-only layout: the 5fr/7fr text + figure split in «03 · Trygghet
+   først». The shared .grid-split in globals.css is 6fr/6fr, so this ratio
+   lives here — as a module, so the narrow-screen collapse still wins (an
+   inline style would beat the media query). */
+.split57 {
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+  gap: 24px clamp(24px, 5vw, 96px);
+  align-items: center;
+  padding: 48px 0 72px;
+}
+
+@media (max-width: 760px) {
+  .split57 {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
