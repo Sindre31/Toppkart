@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="no">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Toppkart — kartet</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha384-sHL9NAb7lN7rfvG5lfHpm643Xkcjzp4jFvuavGOndn6pjVqS6ny56CAt3nsEVT4H" crossorigin="anonymous">
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha384-cxOPjt7s7Iz04uaHJceBmS+qpjv2JkIHNVcuOrM+YHwZOmJGBXI00mdUXEq65HTH" crossorigin="anonymous"></script>
+<style>
+html, body { height: 100%; }
+body { margin: 0; overflow: hidden; }
+a { color: var(--color-accent-700); } a:hover { color: var(--color-accent-900); }
+.topbar { position: fixed; inset: 0 0 auto 0; height: 56px; display: flex; align-items: center; gap: 20px;
+  padding: 0 20px; background: var(--color-bg); border-bottom: 1px solid var(--color-divider); z-index: 1200; }
+.topbar .nav-brand { font-size: 18px; letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none; color: var(--color-text); margin-right: auto; }
+.kicker { font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 600; color: var(--color-accent-700); }
+.side { position: fixed; top: 56px; left: 0; bottom: 0; width: 372px; display: flex; flex-direction: column;
+  background: var(--color-bg); border-right: 1px solid var(--color-divider); z-index: 1100; }
+.side-head { padding: 14px 16px 12px; border-bottom: 1px solid var(--color-divider); display: flex; flex-direction: column; gap: 10px; }
+.filters { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.count { font-size: 12px; color: color-mix(in srgb, var(--color-text) 60%, transparent); }
+.list { flex: 1; overflow-y: auto; padding: 12px 16px 20px; display: flex; flex-direction: column; gap: 10px; }
+.tour { border: 1px solid var(--color-divider); padding: 12px 14px; cursor: pointer; background: transparent; text-align: left; font: inherit; color: inherit; }
+.tour:hover { background: color-mix(in srgb, var(--color-text) 5%, transparent); }
+.tour.sel { border-color: var(--color-accent); box-shadow: inset 0 0 0 1px var(--color-accent); }
+.tour h3 { font-size: 17px; line-height: 1.15; letter-spacing: 0.02em; text-transform: uppercase; margin: 0 0 2px; display: flex; justify-content: space-between; gap: 10px; }
+.tour h3 .moh { font-weight: 600; color: var(--color-accent-700); white-space: nowrap; }
+.meta { display: flex; gap: 6px 12px; flex-wrap: wrap; font-size: 12px; color: color-mix(in srgb, var(--color-text) 60%, transparent); align-items: center; }
+.dot { width: 9px; height: 9px; border-radius: 50%; display: inline-block; flex: none; }
+.grade { display: inline-flex; align-items: center; gap: 6px; }
+#map { position: fixed; top: 56px; left: 372px; right: 0; bottom: 0; background: var(--color-neutral-200); }
+.detail { display: none; flex-direction: column; overflow-y: auto; flex: 1; }
+.side[data-mode="detail"] .list, .side[data-mode="detail"] .side-head { display: none; }
+.side[data-mode="detail"] .detail { display: flex; }
+.d-head { padding: 12px 16px; border-bottom: 1px solid var(--color-divider); }
+.d-body { padding: 16px; display: flex; flex-direction: column; gap: 16px; }
+.stats { display: grid; grid-template-columns: 1fr 1fr; border: 1px solid var(--color-divider); }
+.stat { padding: 10px 12px; border-bottom: 1px solid var(--color-divider); }
+.stat:nth-child(odd) { border-right: 1px solid var(--color-divider); }
+.stat:nth-last-child(-n+2) { border-bottom: 0; }
+.stat .l { font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: color-mix(in srgb, var(--color-text) 60%, transparent); }
+.stat .v { font-family: var(--font-heading); font-weight: 600; font-size: 20px; letter-spacing: 0.02em; }
+.locked { position: relative; border: 1px solid var(--color-divider); padding: 16px; }
+.bars { display: flex; flex-direction: column; gap: 8px; filter: blur(3px); user-select: none; }
+.bars i { display: block; height: 10px; background: color-mix(in srgb, var(--color-text) 14%, transparent); }
+.lockmsg { margin-top: 14px; display: flex; flex-direction: column; gap: 10px; align-items: flex-start; }
+.chips { display: flex; gap: 8px; flex-wrap: wrap; }
+.chip { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; padding: 4px 10px; border: 1px solid var(--color-divider); color: color-mix(in srgb, var(--color-text) 60%, transparent); }
+.leaflet-container { font-family: var(--font-body); }
+.leaflet-tooltip { border-radius: 0; border: 1px solid var(--color-divider); font-family: var(--font-heading); font-weight: 600; letter-spacing: 0.03em; text-transform: uppercase; }
+.backdrop { position: fixed; inset: 0; display: none; place-items: center; padding: 16px;
+  background: color-mix(in srgb, var(--color-neutral-900) 50%, transparent); z-index: 2000; }
+.backdrop.open { display: grid; }
+.dialog { background: var(--color-bg); }
+@media (max-width: 760px) {
+  .side { width: min(85vw, 372px); }
+  #map { left: 0; }
+}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <a class="nav-brand" href="Landing.dc.html">Toppkart</a>
+  <div class="seg" role="group" aria-label="Språk / Language">
+    <label class="seg-opt"><input type="radio" name="lang" value="no" checked>NO</label>
+    <label class="seg-opt"><input type="radio" name="lang" value="en">EN</label>
+  </div>
+  <a href="Logg inn.dc.html" style="font-size: 13px; text-decoration: none; color: color-mix(in srgb, var(--color-text) 60%, transparent);" data-i18n="login">Logg inn</a>
+  <button type="button" class="btn btn-primary" id="cta-top" data-i18n="trial">Prøv gratis</button>
+</header>
+
+<aside class="side" id="side" data-mode="list">
+  <div class="side-head">
+    <input class="input" id="q" type="search" placeholder="Søk etter topp eller region…" data-i18n-ph="search">
+    <div class="filters">
+      <div class="seg" id="gseg" role="group" aria-label="Vanskelighetsgrad">
+        <label class="seg-opt"><input type="radio" name="g" value="0" checked><span data-i18n="all">Alle</span></label>
+        <label class="seg-opt"><input type="radio" name="g" value="1">1</label>
+        <label class="seg-opt"><input type="radio" name="g" value="2">2</label>
+        <label class="seg-opt"><input type="radio" name="g" value="3">3</label>
+        <label class="seg-opt"><input type="radio" name="g" value="4">4</label>
+      </div>
+      <select class="input" id="region" style="width: auto; flex: 1; min-width: 0;"></select>
+    </div>
+    <div class="count" id="count"></div>
+  </div>
+  <div class="list" id="list"></div>
+  <div class="detail" id="detail"></div>
+</aside>
+
+<div id="map"></div>
+
+<div class="backdrop" id="paywall">
+</div>
+
+<script>
+const GC = ["#b5d9fd", "#749dc4", "#416180", "#1d2d3d"]; // accent 300/500/700/900
+const TOURS = [
+  { n: "Tromsdalstinden", r: "Troms", lat: 69.618, lng: 19.078, moh: 1238, hm: 1200, t: "5–7 t", g: 2, asp: "V", sea: "des–mai", tz: "Tromsøs signaturtopp: lang, jevn oppstigning fra Tromsdalen med storslått utsikt mot Lyngen." },
+  { n: "Store Blåmann", r: "Troms", lat: 69.663, lng: 18.510, moh: 1044, hm: 1040, t: "4–6 t", g: 3, asp: "S", sea: "feb–mai", tz: "Kvaløyas brattest profilerte klassiker — krever stabile forhold og god planlegging." },
+  { n: "Storgalten", r: "Lyngen", lat: 69.795, lng: 20.285, moh: 1219, hm: 1219, t: "5–7 t", g: 3, asp: "NV", sea: "feb–mai", tz: "Fjord-til-topp i ytre Lyngen: 1219 høydemeter rett opp fra havnivå." },
+  { n: "Rørnestinden", r: "Lyngen", lat: 69.712, lng: 20.049, moh: 1041, hm: 1041, t: "4–6 t", g: 2, asp: "V", sea: "jan–mai", tz: "Den vennligste inngangen til Lyngsalpene, med slak rygg og romslig nedkjøring." },
+  { n: "Kavringtinden", r: "Lyngen", lat: 69.556, lng: 20.166, moh: 1289, hm: 1150, t: "5–7 t", g: 3, asp: "N", sea: "mar–mai", tz: "Indre Lyngen-perle med nordvendt snø som holder seg langt ut i mai." },
+  { n: "Hesten (Segla)", r: "Senja", lat: 69.503, lng: 17.652, moh: 626, hm: 620, t: "2–4 t", g: 2, asp: "S", sea: "jan–apr", tz: "Kort tur, stort postkort: nedkjøring med Segla i fanget og havet under." },
+  { n: "Rombakstøtta", r: "Narvik", lat: 68.428, lng: 17.703, moh: 1243, hm: 1100, t: "5–7 t", g: 3, asp: "SV", sea: "feb–mai", tz: "Narviks spisse landemerke — variert oppstigning og fin, vedvarende nedkjøring." },
+  { n: "Himmeltindan", r: "Lofoten", lat: 68.115, lng: 13.435, moh: 962, hm: 960, t: "4–6 t", g: 3, asp: "Ø", sea: "feb–apr", tz: "Vestvågøys høyeste, med alpint preg og linjer rett mot Nordishavet." },
+  { n: "Stornappstinden", r: "Lofoten", lat: 68.080, lng: 13.630, moh: 740, hm: 730, t: "3–5 t", g: 2, asp: "N", sea: "jan–apr", tz: "Lofot-klassiker i overkommelig format — mye fjell for høydemeterne." },
+  { n: "Kirketaket", r: "Romsdal", lat: 62.583, lng: 7.831, moh: 1439, hm: 1380, t: "5–6 t", g: 2, asp: "SV", sea: "des–mai", guide: "Turguide Kirketaket.dc.html", tz: "Norges kanskje mest populære topptur: bred rygg, trygge linjevalg, lang sesong." },
+  { n: "Slogen", r: "Sunnmøre", lat: 62.085, lng: 6.898, moh: 1564, hm: 1560, t: "6–8 t", g: 4, asp: "V", sea: "mar–mai", tz: "Sunnmørsalpenes dronning — en alvorlig tur for erfarne, i riktig vindu." },
+  { n: "Kolåstinden", r: "Sunnmøre", lat: 62.255, lng: 6.432, moh: 1432, hm: 1150, t: "5–7 t", g: 3, asp: "N", sea: "feb–mai", tz: "Alpin klassiker fra Standaldalen med velkjent renne og storslått finish." },
+  { n: "Skåla", r: "Nordfjord", lat: 61.862, lng: 6.937, moh: 1848, hm: 1840, t: "6–8 t", g: 3, asp: "SV", sea: "mar–jun", tz: "1848 sammenhengende høydemeter fra fjorden i Loen — en av landets lengste nedkjøringer." },
+  { n: "Fanaråken", r: "Sogn", lat: 61.517, lng: 7.899, moh: 2068, hm: 950, t: "5–7 t", g: 2, asp: "N", sea: "apr–jun", tz: "Høyfjellstur fra Sognefjellet med breutsikt og pålitelig vårsnø." },
+  { n: "Steindalsnosi", r: "Sogn", lat: 61.453, lng: 7.938, moh: 2025, hm: 620, t: "3–5 t", g: 1, asp: "S", sea: "apr–jun", tz: "2000-meter for de fleste: kort, slak og solvendt fra Sognefjellsveien." },
+  { n: "Galdhøpiggen", r: "Jotunheimen", lat: 61.636, lng: 8.313, moh: 2469, hm: 1100, t: "6–8 t", g: 3, asp: "N", sea: "apr–jun", tz: "Norges tak på ski — bre, tau og stor høyde; vanligvis gått fra Juvasshytta." },
+  { n: "Synshorn", r: "Valdres", lat: 61.437, lng: 8.928, moh: 1475, hm: 400, t: "2–3 t", g: 1, asp: "Ø", sea: "feb–mai", tz: "Kort og trygg tur fra Valdresflye — perfekt førstetur og værvindu-tur." },
+  { n: "Bitihorn", r: "Valdres", lat: 61.303, lng: 8.792, moh: 1607, hm: 500, t: "2–4 t", g: 1, asp: "S", sea: "feb–mai", tz: "Markert horn med enkel normalrute og fin utsikt over Bygdin." },
+  { n: "Rondslottet", r: "Rondane", lat: 61.911, lng: 9.841, moh: 2178, hm: 1050, t: "6–8 t", g: 2, asp: "S", sea: "mar–mai", tz: "Rondanes høyeste: rolig høyfjellsterreng og stabil vårsesong." },
+  { n: "Snøhetta", r: "Dovrefjell", lat: 62.320, lng: 9.266, moh: 2286, hm: 800, t: "5–7 t", g: 2, asp: "Ø", sea: "apr–jun", tz: "Storslått og luftig, men overraskende snill — når Snøheimvegen åpner." },
+  { n: "Storehorn", r: "Hemsedal", lat: 60.832, lng: 8.325, moh: 1478, hm: 630, t: "3–4 t", g: 2, asp: "Ø", sea: "des–apr", tz: "Hemsedals husfjell for topptur — kort vei fra bilen, mange linjevalg." },
+  { n: "Oksen", r: "Hardanger", lat: 60.452, lng: 6.749, moh: 1241, hm: 1240, t: "4–6 t", g: 2, asp: "SV", sea: "jan–apr", tz: "Fjordutsikt i alle retninger og jevn stigning fra Tjoflot." },
+  { n: "Melderskin", r: "Hardanger", lat: 60.017, lng: 6.130, moh: 1426, hm: 1420, t: "6–8 t", g: 3, asp: "V", sea: "feb–mai", tz: "Rosendalsalpenes storslåtte klassiker, fra sjøen til 1426 moh." },
+  { n: "Gaustatoppen", r: "Telemark", lat: 59.852, lng: 8.648, moh: 1883, hm: 950, t: "4–6 t", g: 2, asp: "NV", sea: "des–mai", tz: "Sør-Norges mest markante topp — ser du den, ser den deg." },
+];
+
+const I18N = {
+  no: { login: "Logg inn", trial: "Prøv gratis", all: "Alle", search: "Søk etter topp eller region…",
+    allRegions: "Alle regioner", tours: "turer", tour: "tur", approx: "Posisjoner er omtrentlige i prototypen.",
+    back: "← Til lista", grades: ["", "Enkel", "Middels", "Krevende", "Ekspert"],
+    moh: "moh", stHm: "Høydemeter", stTime: "Normaltid", stGrade: "Grad", stAsp: "Himmelretning", stSea: "Sesong",
+    openGuide: "Åpne turguiden", lockTitle: "Resten av guiden er låst", lockBody: "Rutebeskrivelse, høydeprofil, GPX og skredterreng åpnes med abonnement.",
+    lockCta: "Start gratis prøveperiode", chips: ["Rutebeskrivelse", "Høydeprofil", "GPX", "Skredterreng", "Varsom-varsel"],
+    pwKick: "Abonnement", pwTitle: "14 dager gratis — deretter 29 kr/mnd",
+    pwBody: "Full tilgang til alle turguider, GPX-filer, høydeprofiler og skredterreng. Ingen binding — avslutt når du vil.",
+    pwSend: "Send lenke", pwNote: "Ingen passord — vi sender en innloggingslenke på e-post. Sikker betaling via Stripe. Kort legges inn ved start — første trekk etter prøveperioden.",
+    close: "Lukk", pwKick2: "Sjekk innboksen", pwDoneTitle: "Lenken er sendt",
+    pwDoneBody: "Åpne e-posten og trykk på lenken for å logge inn og starte prøveperioden.", close2: "Lukk" },
+  en: { login: "Log in", trial: "Try for free", all: "All", search: "Search peak or region…",
+    allRegions: "All regions", tours: "tours", tour: "tour", approx: "Positions are approximate in this prototype.",
+    back: "← Back to list", grades: ["", "Easy", "Moderate", "Demanding", "Expert"],
+    moh: "m", stHm: "Vertical gain", stTime: "Typical time", stGrade: "Grade", stAsp: "Aspect", stSea: "Season",
+    openGuide: "Open the guide", lockTitle: "The rest of this guide is locked", lockBody: "Route description, elevation profile, GPX and avalanche terrain open with a subscription.",
+    lockCta: "Start free trial", chips: ["Route description", "Elevation profile", "GPX", "Avalanche terrain", "Varsom forecast"],
+    pwKick: "Subscription", pwTitle: "14 days free — then 29 kr/month",
+    pwBody: "Full access to every guide, GPX file, elevation profile and avalanche terrain map. No lock-in — cancel anytime.",
+    pwSend: "Send link", pwNote: "No passwords — we email you a sign-in link. Payments handled securely by Stripe. Card added at signup — first charge after the trial.",
+    close: "Close", pwKick2: "Check your inbox", pwDoneTitle: "Link sent",
+    pwDoneBody: "Open the email and click the link to sign in and start your trial.", close2: "Close" },
+};
+let lang = "no", sel = null, markers = [], map = null, routeLayer = null;
+
+// Omtrentlig rutelinje for prototypen: start plasseres i turens himmelretning,
+// avstand skalert etter høydemeter, med litt sving på veien opp.
+const DIR = { N: [1, 0], S: [-1, 0], Ø: [0, 1], V: [0, -1], NV: [0.7, -0.7], NE: [0.7, 0.7], SV: [-0.7, -0.7], SØ: [-0.7, 0.7] };
+function routeFor(t) {
+  const [dy, dx] = DIR[t.asp] || [1, 0];
+  const dist = 0.012 + (t.hm / 1000) * 0.028;
+  const lngScale = 1 / Math.cos(t.lat * Math.PI / 180);
+  const start = [t.lat + dy * dist, t.lng + dx * dist * lngScale];
+  const px = -dx, py = dy; // perpendikulær for sving
+  const pt = (f, s) => [t.lat + dy * dist * f + py * s * dist, t.lng + (dx * dist * f + px * s * dist) * lngScale];
+  return [start, pt(0.72, 0.18), pt(0.45, -0.14), pt(0.2, 0.1), [t.lat, t.lng]];
+}
+function clearRoute() { if (routeLayer) { routeLayer.remove(); routeLayer = null; } }
+function showRoute(t) {
+  if (!map) return;
+  clearRoute();
+  const pts = routeFor(t);
+  routeLayer = L.layerGroup([
+    L.polyline(pts, { color: "#f2f2f3", weight: 6, opacity: 0.8 }),
+    L.polyline(pts, { color: "#416180", weight: 3, dashArray: "7 6" }),
+    L.circleMarker(pts[0], { radius: 6, color: "#416180", weight: 2, fillColor: "#f2f2f3", fillOpacity: 1 })
+      .bindTooltip(lang === "no" ? "Start / parkering" : "Trailhead / parking", { direction: "top", offset: [0, -6] }),
+  ]).addTo(map);
+  map.flyToBounds(L.latLngBounds(pts).pad(0.35), { duration: 0.8 });
+}
+
+function initMap() {
+  if (map || typeof L === "undefined") return;
+  map = L.map("map", { zoomControl: false }).fitBounds([[58.0, 4.5], [70.6, 26.0]]);
+  L.control.zoom({ position: "bottomright" }).addTo(map);
+  L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", { attribution: "© OpenStreetMap contributors" }).addTo(map);
+  TOURS.forEach((t, i) => {
+    const m = L.circleMarker([t.lat, t.lng], { radius: 7, color: "#f2f2f3", weight: 1.5, fillColor: GC[t.g - 1], fillOpacity: 0.95 })
+      .addTo(map).bindTooltip(t.n, { direction: "top", offset: [0, -8] }).on("click", () => openTour(i));
+    markers.push(m);
+  });
+  renderList();
+}
+
+function S(k) { return I18N[lang][k]; }
+function filtered() {
+  const q = document.getElementById("q").value.trim().toLowerCase();
+  const g = +document.querySelector('input[name="g"]:checked').value;
+  const r = document.getElementById("region").value;
+  return TOURS.map((t, i) => ({ t, i })).filter(({ t }) =>
+    (!q || t.n.toLowerCase().includes(q) || t.r.toLowerCase().includes(q)) &&
+    (!g || t.g === g) && (!r || t.r === r));
+}
+function gradeDot(g) { return `<span class="grade"><span class="dot" style="background:${GC[g - 1]}"></span>${S("grades")[g]}</span>`; }
+function renderList() {
+  const rows = filtered();
+  document.getElementById("count").textContent =
+    `${rows.length} ${rows.length === 1 ? S("tour") : S("tours")} · ${S("approx")}`;
+  document.getElementById("list").innerHTML = rows.map(({ t, i }) => `
+    <button type="button" class="tour${sel === i ? " sel" : ""}" data-i="${i}">
+      <h3><span>${t.n}</span><span class="moh">${t.moh} ${S("moh")}</span></h3>
+      <div class="meta">${gradeDot(t.g)}<span>${t.r}</span><span>↑ ${t.hm} m</span><span>${t.t}</span></div>
+    </button>`).join("");
+  const visible = new Set(rows.map(r => r.i));
+  markers.forEach((m, i) => m.setStyle({ opacity: visible.has(i) ? 1 : 0.15, fillOpacity: visible.has(i) ? 0.95 : 0.12 }));
+  document.querySelectorAll(".tour").forEach(b => b.onclick = () => openTour(+b.dataset.i));
+}
+function openTour(i) {
+  sel = i;
+  const t = TOURS[i];
+  markers.forEach((m, j) => m.setStyle({ radius: j === i ? 10 : 7, weight: j === i ? 2.5 : 1.5 }));
+  showRoute(t);
+  document.getElementById("side").dataset.mode = "detail";
+  document.getElementById("detail").innerHTML = `
+    <div class="d-head">
+      <button type="button" class="btn btn-ghost" id="back" style="margin-left:-6px;">${S("back")}</button>
+      <h2 style="font-size:26px; line-height:1.1; letter-spacing:0.02em; text-transform:uppercase; margin:8px 0 2px;">${t.n}</h2>
+      <div class="meta">${gradeDot(t.g)}<span>${t.r}</span><span>${t.moh} ${S("moh")}</span></div>
+    </div>
+    <div class="d-body">
+      <p style="font-size:15px; line-height:1.55; margin:0;">${t.tz}</p>
+      ${t.guide ? `<a class="btn btn-secondary" href="${t.guide}" style="align-self:flex-start;">${S("openGuide")} →</a>` : ""}
+      <div class="stats">
+        <div class="stat"><div class="l">${S("stHm")}</div><div class="v">↑ ${t.hm} m</div></div>
+        <div class="stat"><div class="l">${S("stTime")}</div><div class="v">${t.t}</div></div>
+        <div class="stat"><div class="l">${S("stGrade")}</div><div class="v">${S("grades")[t.g]}</div></div>
+        <div class="stat"><div class="l">${S("stAsp")}</div><div class="v">${t.asp}</div></div>
+        <div class="stat" style="grid-column:1/-1;"><div class="l">${S("stSea")}</div><div class="v">${t.sea}</div></div>
+      </div>
+      <p style="font-size:11px; color:color-mix(in srgb, var(--color-text) 50%, transparent); margin:-6px 0 0;">${lang === "no" ? "Rutelinjen på kartet er skjematisk i prototypen." : "The route line on the map is schematic in this prototype."}</p>
+      <div class="locked">
+        <div class="bars" aria-hidden="true">
+          <i style="width:92%"></i><i style="width:100%"></i><i style="width:86%"></i><i style="width:95%"></i>
+          <i style="width:64%"></i><i style="width:0; height:6px;"></i><i style="width:97%"></i><i style="width:78%"></i>
+        </div>
+        <div class="lockmsg">
+          <span class="kicker">🔒 ${S("lockTitle")}</span>
+          <p style="font-size:14px; line-height:1.5; margin:0; color:color-mix(in srgb, var(--color-text) 70%, transparent);">${S("lockBody")}</p>
+          <div class="chips">${S("chips").map(c => `<span class="chip">${c}</span>`).join("")}</div>
+          <button type="button" class="btn btn-primary" id="cta-detail">${S("lockCta")}</button>
+        </div>
+      </div>
+    </div>`;
+  document.getElementById("back").onclick = () => { sel = null; clearRoute(); markers.forEach(m => m.setStyle({ radius: 7, weight: 1.5 })); document.getElementById("side").dataset.mode = "list"; renderList(); };
+  document.getElementById("detail").scrollTop = 0;
+  document.getElementById("cta-detail").onclick = openPaywall;
+}
+function applyLang() {
+  document.querySelectorAll("[data-i18n]").forEach(el => { el.textContent = S(el.dataset.i18n); });
+  document.getElementById("q").placeholder = S("search");
+  const rSel = document.getElementById("region"), cur = rSel.value;
+  rSel.innerHTML = `<option value="">${S("allRegions")}</option>` +
+    [...new Set(TOURS.map(t => t.r))].map(r => `<option${r === cur ? " selected" : ""}>${r}</option>`).join("");
+  if (sel !== null) openTour(sel); else renderList();
+}
+function openPaywall() {
+  location.href = "Betaling.dc.html";
+}
+document.getElementById("cta-top").onclick = openPaywall;
+document.querySelectorAll('input[name="lang"]').forEach(r => r.onchange = () => { lang = r.value; applyLang(); });
+document.getElementById("q").oninput = renderList;
+document.querySelectorAll('input[name="g"]').forEach(r => r.onchange = renderList);
+document.getElementById("region").onchange = renderList;
+applyLang();
+if (document.readyState === "complete" || typeof L !== "undefined") initMap();
+else { window.addEventListener("DOMContentLoaded", initMap); window.addEventListener("load", initMap); }
+</script>
+</body>
+</html>

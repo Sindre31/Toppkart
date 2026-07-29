@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="styles.css">
+<style>
+body { margin: 0; text-wrap: pretty; }
+a { color: var(--color-accent-700); }
+a:hover { color: var(--color-accent-900); }
+</style>
+</helmet>
+
+<div style="min-height: 100vh; display: flex; flex-direction: column;">
+  <nav class="nav" style="padding: 10px 40px; border-bottom: 1px solid var(--color-divider);">
+    <a class="nav-brand" href="Landing.dc.html" style="letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none; color: var(--color-text);">Toppkart</a>
+    <a href="kart.html">Kartet</a>
+  </nav>
+
+  <main style="flex: 1; display: grid; place-items: center; padding: 48px 20px;">
+    <div style="width: min(420px, 100%);">
+      <div class="blueprint" style="padding: 28px 28px 24px; background: var(--color-bg);">
+        <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+
+        <sc-if value="{{ formVisible }}" hint-placeholder-val="{{ true }}">
+          <span style="display: block; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 600; color: var(--color-accent-700);">Logg inn</span>
+          <h1 style="font-size: 30px; line-height: 1.1; letter-spacing: 0.02em; text-transform: uppercase; margin: 10px 0 0;">Uten passord</h1>
+          <p style="font-size: 15px; line-height: 24px; color: color-mix(in srgb, var(--color-text) 78%, transparent); margin: 12px 0 0;">Skriv inn e-postadressen din, så sender vi en innloggingslenke. Lenken virker i 15 minutter.</p>
+          <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 20px;">
+            <input class="input" type="email" placeholder="din@epost.no" aria-label="E-postadresse" value="{{ email }}" onChange="{{ setEmail }}" onKeyDown="{{ onKey }}">
+            <button class="btn btn-primary btn-block" style="margin: 0;" onClick="{{ send }}">Send innloggingslenke</button>
+          </div>
+          <sc-if value="{{ error }}" hint-placeholder-val="{{ false }}">
+            <p style="font-size: 13px; color: var(--color-accent-800); margin: 10px 0 0;">Skriv inn en gyldig e-postadresse.</p>
+          </sc-if>
+        </sc-if>
+
+        <sc-if value="{{ sent }}" hint-placeholder-val="{{ false }}">
+          <span style="display: block; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 600; color: var(--color-accent-700);">Sjekk innboksen</span>
+          <h1 style="font-size: 30px; line-height: 1.1; letter-spacing: 0.02em; text-transform: uppercase; margin: 10px 0 0;">Lenken er sendt</h1>
+          <p style="font-size: 15px; line-height: 24px; color: color-mix(in srgb, var(--color-text) 78%, transparent); margin: 12px 0 0;">Vi har sendt en innloggingslenke til <strong style="color: var(--color-text);">{{ email }}</strong>. Åpne e-posten og trykk på lenken.</p>
+          <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-top: 20px;">
+            <a class="btn btn-primary" href="Min side.dc.html">Åpne Min side (demo)</a>
+            <button class="btn btn-ghost" onClick="{{ reset }}">Send på nytt</button>
+          </div>
+        </sc-if>
+
+      </div>
+      <p style="font-size: 13px; line-height: 20px; color: color-mix(in srgb, var(--color-text) 60%, transparent); margin: 16px 0 0; text-align: center;">Ny her? <a href="Betaling.dc.html">Prøv gratis i 14 dager — deretter 29 kr/mnd</a></p>
+    </div>
+  </main>
+
+  <footer style="padding: 20px 40px; font-size: 13px; color: color-mix(in srgb, var(--color-text) 60%, transparent); border-top: 1px solid var(--color-divider); display: flex; gap: 24px;">
+    <span>Toppkart</span>
+    <a href="kart.html">Kartet</a>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1200,&quot;height&quot;:760}}">
+class Component extends DCLogic {
+  state = { email: "", sent: false, error: false };
+  renderVals() {
+    const valid = /.+@.+\..+/.test(this.state.email);
+    return {
+      email: this.state.email,
+      sent: this.state.sent,
+      formVisible: !this.state.sent,
+      error: this.state.error,
+      setEmail: (e) => this.setState({ email: e.target.value, error: false }),
+      onKey: (e) => { if (e.key === "Enter") this.doSend(); },
+      send: () => this.doSend(),
+      reset: () => this.setState({ sent: false }),
+    };
+  }
+  doSend() {
+    if (/.+@.+\..+/.test(this.state.email)) this.setState({ sent: true, error: false });
+    else this.setState({ error: true });
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="styles.css">
+<script src="image-slot.js"></script>
+<style>
+html { scroll-behavior: smooth; }
+body { margin: 0; text-wrap: pretty; }
+a { color: var(--color-accent-700); }
+a:hover { color: var(--color-accent-900); }
+</style>
+</helmet>
+
+<nav class="nav" style="padding: 10px 40px; border-bottom: 1px solid var(--color-divider); position: sticky; top: 0; background: var(--color-bg); z-index: 20;">
+  <span class="nav-brand" style="letter-spacing: 0.06em; text-transform: uppercase;">Toppkart</span>
+  <a href="kart.html">Kartet</a>
+  <a href="#innhold">Innhold</a>
+  <a href="#pris">Pris</a>
+  <a href="Logg inn.dc.html" style="font-size: 13px; color: color-mix(in srgb, var(--color-text) 60%, transparent);">Logg inn</a>
+  <a class="btn btn-primary" href="Betaling.dc.html">Prøv gratis</a>
+</nav>
+
+<div style="max-width: 1160px; margin: 0 auto; padding: 0 clamp(20px, 5vw, 64px);">
+
+  <section style="padding: 96px 0 72px;">
+    <h1 style="font-family: var(--font-heading); font-weight: 600; font-size: clamp(46px, 7vw, 92px); line-height: 1.04; letter-spacing: 0.01em; text-transform: uppercase; margin: 0 0 0 -0.052em;">
+      <span style="display: block;">Alle toppturene.</span>
+      <span style="display: block;">Ett kart.</span>
+    </h1>
+    <p style="font-size: 16px; line-height: 24px; max-width: 60ch; margin: 32px 0 0;">Toppkart er en feltguide for skiturer i Norge: kvalitetssikrede toppturer på ett kart, med rute, høydemeter, bratthet og skredterreng — skrevet for at du skal komme trygt opp og trygt ned. For deg som går din første topptur, og for deg som går din hundrede.</p>
+    <div style="display: flex; gap: 10px; flex-wrap: wrap; align-items: center; margin-top: 28px;">
+      <a class="btn btn-primary" href="Betaling.dc.html">Prøv gratis i 14 dager</a>
+      <a class="btn btn-secondary" href="kart.html">Se kartet</a>
+      <span style="font-size: 13px; color: color-mix(in srgb, var(--color-text) 60%, transparent);">Deretter 29 kr/mnd. Ingen binding.</span>
+    </div>
+  </section>
+
+  <section style="padding: 24px 0 60px;" aria-label="Toppkart — nøkkeldata">
+    <div class="blueprint" style="background: transparent;">
+      <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+      <header style="display: flex; flex-wrap: wrap; border-bottom: 1px solid var(--color-divider);">
+        <span style="flex: 1; min-width: 16ch; padding: 12px 24px; font-size: 13px; line-height: 24px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 600;">Toppkart — nøkkeldata</span>
+        <span style="border-left: 1px solid var(--color-divider); padding: 12px 24px; font-size: 13px; line-height: 24px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 600; color: color-mix(in srgb, var(--color-text) 70%, transparent); white-space: nowrap;">TK-100</span>
+        <span style="border-left: 1px solid var(--color-divider); padding: 12px 24px; font-size: 13px; line-height: 24px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 600; color: color-mix(in srgb, var(--color-text) 70%, transparent); white-space: nowrap;">Ark 01 av 04</span>
+      </header>
+      <table class="table">
+        <tbody>
+          <sc-for list="{{ specs }}" as="row" hint-placeholder-count="4">
+            <tr>
+              <td style="width: 72px; padding: 12px 0 12px 24px; font-size: 13px; font-weight: 600; letter-spacing: 0.08em; color: var(--color-accent-700); border-bottom: 1px solid color-mix(in srgb, var(--color-text) 8%, transparent);">{{ row.num }}</td>
+              <td style="width: 30%; padding: 12px 24px 12px 0; font-size: 15px; border-bottom: 1px solid color-mix(in srgb, var(--color-text) 8%, transparent);">{{ row.prop }}</td>
+              <td style="width: 22%; padding: 12px 24px 12px 0; font-family: var(--font-heading); font-weight: 600; font-size: 22px; letter-spacing: 0.02em; white-space: nowrap; border-bottom: 1px solid color-mix(in srgb, var(--color-text) 8%, transparent);">{{ row.val }}</td>
+              <td style="padding: 12px 24px 12px 0; font-size: 14px; color: color-mix(in srgb, var(--color-text) 70%, transparent); border-bottom: 1px solid color-mix(in srgb, var(--color-text) 8%, transparent);">{{ row.rem }}</td>
+            </tr>
+          </sc-for>
+        </tbody>
+      </table>
+      <p style="margin: 0; padding: 12px 24px; border-top: 1px solid var(--color-divider); font-size: 13px; line-height: 24px; color: color-mix(in srgb, var(--color-text) 70%, transparent);">Turene er kvalitetssikret mot kart, bratthetsdata og lokale kjentfolk. Sjekk alltid skredvarselet på varsom.no før du går.</p>
+    </div>
+  </section>
+
+  <section id="innhold" style="padding: 72px 0 60px;">
+    <span style="display: block; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 600; color: var(--color-accent-700); margin-bottom: 12px;">02 · Hva hver turguide holder</span>
+    <hr style="height: 1px; border: 0; margin: 0 0 32px; background: var(--color-divider);">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: clamp(20px, 3vw, 48px);">
+      <div class="blueprint" style="padding: 24px;">
+        <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+        <h2 style="font-size: 22px; line-height: 24px; letter-spacing: 0.02em; text-transform: uppercase; margin: 0;">Rute og nedkjøring</h2>
+        <p style="font-size: 15px; line-height: 24px; margin: 16px 0 0; color: color-mix(in srgb, var(--color-text) 78%, transparent);">Opptegnet rute med høydeprofil, normal tidsbruk og beskrivelse av både oppstigning og nedkjøring — inkludert hvor folk pleier å gjøre feil. GPX-fil til klokke og app.</p>
+      </div>
+      <div class="blueprint" style="padding: 24px;">
+        <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+        <h2 style="font-size: 22px; line-height: 24px; letter-spacing: 0.02em; text-transform: uppercase; margin: 0;">Skredterreng</h2>
+        <p style="font-size: 15px; line-height: 24px; margin: 16px 0 0; color: color-mix(in srgb, var(--color-text) 78%, transparent);">Bratthetskart, utløpssoner og hvilke himmelretninger ruta eksponerer deg mot — koblet til dagens skredvarsel fra Varsom, rett i turguiden.</p>
+      </div>
+      <div class="blueprint" style="padding: 24px;">
+        <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+        <h2 style="font-size: 22px; line-height: 24px; letter-spacing: 0.02em; text-transform: uppercase; margin: 0;">Sesong og forhold</h2>
+        <p style="font-size: 15px; line-height: 24px; margin: 16px 0 0; color: color-mix(in srgb, var(--color-text) 78%, transparent);">Når på året turen er på sitt beste, hvor snøen legger seg, og alternative ruter når forholdene ikke spiller på lag. Skrevet av folk som går turene selv.</p>
+      </div>
+    </div>
+  </section>
+
+  <section style="display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 24px clamp(24px, 5vw, 96px); align-items: center; padding: 48px 0 72px;">
+    <div>
+      <span style="display: block; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 600; color: var(--color-accent-700); margin-bottom: 12px;">03 · Trygghet først</span>
+      <hr style="height: 1px; border: 0; margin: 0 0 24px; background: var(--color-divider);">
+      <h2 style="font-size: 32px; line-height: 36px; letter-spacing: 0.02em; text-transform: uppercase; margin: 0;">Skrevet for å komme hjem</h2>
+      <p style="font-size: 15px; line-height: 24px; color: color-mix(in srgb, var(--color-text) 78%, transparent); margin: 16px 0 0; max-width: 48ch;">I snitt dør fem mennesker i snøskred i Norge hvert år — de fleste på topptur. Hver guide i Toppkart er derfor bygget rundt terrenget, ikke rundt bildene: bratthet, utløpssoner og trygge alternativer står først, pudderpratet sist.</p>
+    </div>
+    <figure class="blueprint duotone" style="margin: 0;">
+      <image-slot id="landing-split" shape="rect" src="assets/kontur.png" placeholder="toppturfoto — skiløper på vei opp" style="width: 100%; aspect-ratio: 3 / 2;"></image-slot>
+      <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+    </figure>
+  </section>
+
+  <sc-if value="{{ showQuote }}" hint-placeholder-val="{{ true }}">
+    <section style="padding: 48px 0 84px;">
+      <figure style="margin: 0;">
+        <blockquote style="font-family: var(--font-heading); font-weight: 600; font-size: clamp(26px, 2.8vw, 36px); line-height: 36px; max-width: 36ch; margin: 0; text-indent: -0.316em;">«Vi brukte guiden til Kirketaket i februar. Beskrivelsen av nedkjøringen stemte på meteren — også der vi ikke burde kjøre.»</blockquote>
+        <figcaption style="font-size: 15px; line-height: 24px; color: color-mix(in srgb, var(--color-text) 70%, transparent); margin: 40px 0 0; text-indent: -0.885em;">— Betabruker, Romsdalen</figcaption>
+      </figure>
+    </section>
+  </sc-if>
+
+  <section id="pris" style="padding: 60px 0 48px;">
+    <span style="display: block; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 600; color: var(--color-accent-700); margin-bottom: 12px;">04 · Abonnement</span>
+    <hr style="height: 1px; border: 0; margin: 0 0 32px; background: var(--color-divider);">
+    <div style="display: grid; grid-template-columns: minmax(0, 6fr) minmax(0, 6fr); gap: 24px clamp(24px, 5vw, 96px); align-items: start;">
+      <div>
+        <h3 style="font-size: 24px; line-height: 24px; letter-spacing: 0.02em; text-transform: uppercase; margin: 0;">Hele kartet. Alle guidene.</h3>
+        <p style="font-size: 15px; line-height: 24px; color: color-mix(in srgb, var(--color-text) 78%, transparent); margin: 16px 0 0; max-width: 52ch;">Én pris, alt åpent. Nye turer legges til hver sesong, og guidene revideres når terrenget eller normalruta endrer seg. Avslutt når du vil — abonnementet stopper ved neste trekk.</p>
+        <div style="display: flex; gap: 10px; align-items: stretch; max-width: 460px; margin-top: 24px;">
+          <input class="input" type="email" placeholder="din@epost.no" aria-label="E-postadresse" style="flex: 1;">
+          <a class="btn btn-primary" href="Betaling.dc.html">Start prøveperiode</a>
+        </div>
+        <p style="font-size: 13px; line-height: 20px; color: color-mix(in srgb, var(--color-text) 60%, transparent); margin: 12px 0 0;">Vi sender en innloggingslenke på e-post — ingen passord. Betaling håndteres sikkert av Stripe. Du legger inn kort ved start — første trekk etter 14 dager.</p>
+      </div>
+      <div class="blueprint" style="padding: 24px;">
+        <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+        <div style="display: flex; align-items: baseline; gap: 10px;">
+          <span style="font-family: var(--font-heading); font-weight: 600; font-size: 64px; line-height: 1; letter-spacing: 0.01em;">29 kr</span>
+          <span style="font-size: 15px; color: color-mix(in srgb, var(--color-text) 70%, transparent);">per måned</span>
+        </div>
+        <sc-if value="{{ showAnnual }}" hint-placeholder-val="{{ false }}">
+          <div style="display: flex; align-items: baseline; gap: 10px; margin-top: 10px;">
+            <span style="font-family: var(--font-heading); font-weight: 600; font-size: 26px; line-height: 1;">290 kr</span>
+            <span style="font-size: 14px; color: color-mix(in srgb, var(--color-text) 70%, transparent);">per år — to måneder gratis</span>
+          </div>
+        </sc-if>
+        <hr style="height: 1px; border: 0; margin: 20px 0; background: var(--color-divider);">
+        <ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; font-size: 15px; line-height: 22px;">
+          <li style="display: flex; gap: 10px;"><span style="color: var(--color-accent-700); font-weight: 600;">01</span>14 dager gratis prøveperiode</li>
+          <li style="display: flex; gap: 10px;"><span style="color: var(--color-accent-700); font-weight: 600;">02</span>Alle turguider, GPX og høydeprofiler</li>
+          <li style="display: flex; gap: 10px;"><span style="color: var(--color-accent-700); font-weight: 600;">03</span>Skredterreng og Varsom-varsel per tur</li>
+          <li style="display: flex; gap: 10px;"><span style="color: var(--color-accent-700); font-weight: 600;">04</span>Ingen binding — avslutt når som helst</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer style="padding: 48px 0; font-size: 13px; line-height: 24px; color: color-mix(in srgb, var(--color-text) 70%, transparent); border-top: 1px solid var(--color-divider); display: flex; gap: 24px; flex-wrap: wrap;">
+    <span>Toppkart</span>
+    <a href="kart.html">Kartet</a>
+    <span style="margin-left: auto;">Norsk / English</span>
+  </footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;showAnnual&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Pris&quot;},&quot;showQuote&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:false,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Innhold&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      showAnnual: this.props.showAnnual ?? false,
+      showQuote: this.props.showQuote ?? true,
+      specs: [
+        { num: "01", prop: "Toppturer i kartet", val: "214", rem: "Fra Lyngen i nord til Sirdal i sør" },
+        { num: "02", prop: "Regioner", val: "12", rem: "Alle med lokal rutebeskrivelse" },
+        { num: "03", prop: "Pris per måned", val: "29 kr", rem: "Ingen binding" },
+        { num: "04", prop: "Gratis prøveperiode", val: "14 dager", rem: "Kort kreves — første trekk etter prøveperioden" },
+      ],
+    };
+  }
+}
+</script>
+</body>
+</html>
