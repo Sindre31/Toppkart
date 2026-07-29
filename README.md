@@ -9,7 +9,7 @@ Norwegian; this README and the rest of `docs/` are in English for whoever mainta
 ## Stack
 
 - **Next.js 16, App Router**, TypeScript in strict mode. Server Components by default.
-- **Supabase** — passwordless magic-link auth, Postgres for tours/profiles/subscriptions, and
+- **Supabase** — passwordless magic-link auth, Postgres for tours/profiles/subscriptions (tables are prefixed `tk_`, so the database can be shared with other projects), and
   row-level security as the second line of defence on gated columns.
 - **Stripe** — subscription billing. Checkout in `mode: "subscription"` with
   `trial_period_days: 14`, the Customer Portal for payment-method changes and cancellation, and

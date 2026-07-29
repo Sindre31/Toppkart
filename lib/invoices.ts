@@ -23,7 +23,7 @@ export async function getBillingRefs(userId: string): Promise<BillingRefs> {
     const supabase = await getSupabaseServerClient();
     if (!supabase) return empty;
     const { data } = await supabase
-      .from("subscriptions")
+      .from("tk_subscriptions")
       .select("stripe_customer_id, stripe_subscription_id")
       .eq("user_id", userId)
       .maybeSingle();

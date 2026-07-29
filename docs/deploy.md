@@ -41,8 +41,8 @@ site's URL.
 
 1. Create a project at <https://supabase.com/dashboard>. Pick a region close to your users
    (Frankfurt or Stockholm for Norwegian traffic).
-2. Open the **SQL Editor** and run `supabase/schema.sql`. This creates the `tours`, `profiles`
-   and `subscriptions` tables, enables row-level security and installs the policies that keep
+2. Open the **SQL Editor** and run `supabase/schema.sql`. This creates the `tk_tours`, `tk_profiles`
+   and `tk_subscriptions` tables, enables row-level security and installs the policies that keep
    the gated tour columns away from non-subscribers.
 3. Run `supabase/seed.sql` in the same editor. This loads the 24 tours and the Kirketaket guide
    content. Running it against a database without the schema will fail, so do not reorder these.
@@ -153,5 +153,5 @@ Walk the real flow on the deployed site, not just the local one:
 - [ ] `/min-side` shows the plan, the trial end date and the card; "Endre betalingsmetode" opens
       the Customer Portal; cancelling sets `cancel_at_period_end` and keeps access until the
       period ends.
-- [ ] Query the gated `tours` columns with the anon key while signed out and confirm RLS returns
+- [ ] Query the gated `tk_tours` columns with the anon key while signed out and confirm RLS returns
       nothing. The server-side gate and RLS should both hold on their own.

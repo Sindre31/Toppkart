@@ -32,7 +32,7 @@ export async function getViewer(): Promise<Viewer> {
   if (!user) return { email: null, userId: null, subscription: null, hasAccess: false };
 
   const { data: row } = await supabase!
-    .from("subscriptions")
+    .from("tk_subscriptions")
     .select(
       "status, plan, cancel_at_period_end, current_period_end, trial_end, created_at, card_brand, card_last4, card_exp_month, card_exp_year",
     )
