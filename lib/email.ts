@@ -221,7 +221,12 @@ function plain(options: LayoutOptions, lang: Lang): string {
 // Send
 // ---------------------------------------------------------------------------
 
-async function send(to: string, subject: string, options: LayoutOptions): Promise<EmailResult> {
+async function send(
+  to: string,
+  subject: string,
+  options: LayoutOptions,
+  lang: Lang,
+): Promise<EmailResult> {
   const resend = getResend();
 
   if (!resend) {
@@ -236,8 +241,8 @@ async function send(to: string, subject: string, options: LayoutOptions): Promis
       from: env.fromEmail,
       to,
       subject,
-      html: layout(options),
-      text: plain(options),
+      html: layout(options, lang),
+      text: plain(options, lang),
     });
     if (error) {
       console.error(`[email] Resend avviste «${subject}» til ${to}:`, error.message);
