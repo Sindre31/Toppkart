@@ -11,6 +11,13 @@ function languageRedirect(request: NextRequest): NextResponse | null {
   const requested = request.nextUrl.searchParams.get(LANG_PARAM);
   if (!isLang(requested)) return null;
 
+  /* Next prefetches `<Link>` targets speculatively, and the switcher renders one
+     link per language. Honouring `?lang=` on a prefetch therefore set the cookie
+     for a language nobody clicked — with both links prefetched on sight,
+     whichever response landed last silently won. A speculative fetch must not
+     change a stored preference, so prefetches fall through and just render. */
+  if (request.headers.get("next-router-prefetch")) return null;
+
   const url = request.nextUrl.clone();
   url.searchParams.delete(LANG_PARAM);
   const response = NextResponse.redirect(url);
