@@ -36,9 +36,6 @@
   margin-right: auto;
 }
 .brand:hover { color: var(--color-text); }
-/* The shared language switcher sits flush-left in a column elsewhere; in the
-   56px topbar it has to line up with the other controls instead. */
-.topbar .topbarLang { align-self: center; }
 .loginLink {
   font-size: 13px;
   text-decoration: none;

@@ -134,13 +134,13 @@ export default function MapView({
         <Link className={s.brand} href="/">
           Toppkart
         </Link>
-        <LanguageSwitcher lang={lang} className={s.topbarLang} />
         <Link className={s.loginLink} href="/logg-inn">
           {t.login}
         </Link>
         <Link className="btn btn-primary" href="/betaling" style={PRIMARY_LINK}>
           {t.trial}
         </Link>
+        <LanguageSwitcher lang={lang} />
       </header>
 
       <aside className={s.side} data-mode={selected ? "detail" : "list"}>

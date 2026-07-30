@@ -6,7 +6,11 @@ import type { Lang } from "@/lib/i18n";
 import { commonDict } from "@/lib/i18n/common";
 
 /** Sticky top navigation. `children` carries the page-specific tail (CTA,
- *  account links); every page shares the brand and the link to the map. */
+ *  account links); every page shares the brand and the language switcher.
+ *
+ *  The switcher is the last item, so it lands in the top-right corner — the
+ *  same corner on every page, visible without scrolling. `.nav-brand` takes
+ *  `margin-right: auto`, which is what pushes this whole tail to the right. */
 export function SiteNav({ lang, children }: { lang: Lang; children?: ReactNode }) {
   const t = commonDict(lang);
   return (
@@ -15,12 +19,13 @@ export function SiteNav({ lang, children }: { lang: Lang; children?: ReactNode }
         Toppkart
       </Link>
       {children}
+      <LanguageSwitcher lang={lang} />
     </nav>
   );
 }
 
-/** The footer carries the language switcher on every page, so the English site
- *  is reachable from anywhere without hunting for a control in the nav. */
+/** Page footer. The language switcher lives in the nav rather than down here —
+ *  same corner on every page, no scrolling to reach it. */
 export function SiteFooter({
   lang,
   children,
@@ -36,7 +41,6 @@ export function SiteFooter({
       <span>Toppkart</span>
       <Link href="/kart">{t.footerMap}</Link>
       {children}
-      <LanguageSwitcher lang={lang} className="push" />
     </footer>
   );
 }
