@@ -115,81 +115,81 @@ one line:
 
 | tour | routes |
 | --- | --- |
-| Galdhøpiggen | Juvasshytta (627 m) and Spiterstulen (1434 m) — two standard starts 737 vertical metres apart |
+| Galdhøpiggen | Juvasshytta (632 m) and Spiterstulen (1434 m) — two standard starts 737 vertical metres apart |
+| Fanaråken | Korpen (757 m) and Turtagrø (1196 m) |
 | Tromsdalstinden | the Salen ski line and the marked NNV-ridge summer path — **same car park**, different sides of the mountain |
-| Rondslottet | Spranget (1241 m) and Dørålseter (1222 m) — opposite approaches |
-| Snøhetta | Snøheim (815 m) and Reinheim (948 m) |
-| Gaustatoppen | Gaustablikk (972 m) and Stavsro (706 m) |
+| Rondslottet | Spranget (1245 m) and Dørålseter (1222 m) — opposite approaches |
+| Snøhetta | Snøheim (819 m) and Reinheim (948 m) |
+| Gaustatoppen | Gaustablikk (965 m) and Stavsro (706 m) |
+| Slogen | Skylstad (1482 m) and direct from Øye (1512 m) |
+| Bitihorn | Bygdin (549 m) and Båtskaret (454 m) |
 
-The first route of a tour is the one the tour's own `verticalM` and `duration`
-describe. Alternatives are only added where a second route is actually
-documented; `ALTERNATES` in `build_corridors.py` is not a place to invent one
-because the schema allows it. The remaining 19 tours have a single route, and the
-app renders no picker for them.
+32 routes over 24 tours. The first route of a tour is the one its own `verticalM`
+and `duration` describe. Alternatives are only added where a second route is
+actually documented — `ALTERNATES` in `build_corridors.py`, and the research
+output, are not places to invent one because the schema allows it. The remaining
+16 tours have a single route, and the app renders no picker for them.
 
 Route and trailhead *names* get shortened for display — the research came back
 with sentences like "Normalruta fra Djupvik/Forselvveien via Pumpvatnet,
 bekkedalen mot Forsnesvatnet, Isvatnet og sørøstryggen", which is good prose and
 a useless label. The full text is kept alongside as `description` / `fullName`.
 
-## Where the app's own numbers disagree with the ground
+## The app's numbers, reconciled against the ground
 
-Three figures were fixed earlier, with the tour owner's agreement, because they
+`verticalM` now means one thing everywhere: the cumulative ascent of the tour's
+**first** route, as solved over the terrain model, rounded to the nearest 10 m so
+it reads like a published figure and does not drift when the geometry is
+regenerated. An alternative route has its own gain and is not expected to match.
+
+Sixteen tours needed correcting to get there. Three were obvious — figures that
 matched no real trailhead at all:
 
 | tour | was | now | why |
 | --- | --- | --- | --- |
-| Galdhøpiggen | 1100 m | **630 m** | 1100 matched neither standard start. It sat between them, and both are now routes: Juvasshytta 632 m, Spiterstulen 1434 m. |
-| Oksen | 1240 m | **1060 m** | 1240 implies a sea-level start; Tjoflot, which the teaser names, is at 181 m. |
-| Hesten (Segla) | 626 m summit, 620 m gain | **556 m / 510 m** | The summit is 557 m in DTM1. 626 looks like Segla (638 m), a spire, not a ski summit. |
+| Galdhøpiggen | 1100 m | **630 m** | 1100 matched neither standard start; it sat between Juvasshytta (632 m) and Spiterstulen (1434 m), and both are now routes in their own right. |
+| Oksen | 1240 m | **1060 → 960 m** | 1240 was the 1241 m summit altitude duplicated into the gain field. Corrected again once the audit moved the start to Tjoflot øvre. |
+| Hesten (Segla) | 626 m summit, 620 m gain | **556 m / 510 m** | The summit is 557 m in DTM1. The old 626 looks like Segla (638 m), a spire, not a ski summit. |
 
-### `verticalM` is not always a vertical gain
+The other thirteen followed from the audited trailheads:
 
-The Rørnestinden audit turned up the reason so many of these look odd. In eight
-tours the field holds the peak's **published altitude**, not its ascent:
-Storgalten 1219/1219, Rørnestinden 1041/1041, and Store Blåmann, Himmeltindan,
-Stornappstinden, Slogen, Skåla and Melderskin all within 10 m of their own summit
-heights. For a genuine fjord-to-summit tour that happens to be nearly right, which
-is why it went unnoticed; where the standard trailhead is higher up, it is simply
-wrong. Oksen's old 1240 was its 1241 m summit altitude duplicated the same way.
+| tour | was | now | audited trailhead |
+| --- | --- | --- | --- |
+| Rondslottet | 1050 m | **1240 m** | Spranget p-plass |
+| Fanaråken | 950 m | **760 m** | Korpen (the 950 fits the 1196 m Turtagrø route, which is here as the alternative) |
+| Storehorn | 630 m | **470 m** | Hornslie p-plass |
+| Melderskin | 1420 m | **1270 m** | Kletta p-plass |
+| Steindalsnosi | 620 m | **760 m** | Gjuvvatnet |
+| Kirketaket | 1380 m | **1270 m** | Hellerøra-parkeringa (ut.no gives 1243 m) |
+| Kavringtinden | 1150 m | **1240 m** | Lyngseidet |
+| Slogen | 1560 m | **1480 m** | Skylstad i Norangsdalen |
+| Kolåstinden | 1150 m | **1080 m** | Standaleidet |
+| Rørnestinden | 1041 m | **1000 m** | Lyngseidet — and Friflyt publishes exactly 1000 m |
+| Bitihorn | 500 m | **550 m** | Bitihorn p-plass ved Fv51 |
+| Stornappstinden | 730 m | **680 m** | Nappskaret skianlegg (Friflyt gives 680 m) |
+| Oksen | 1060 m | **960 m** | Tjoflot øvre parkering |
 
-Treat the field as unreliable. In particular **do not use it to infer a trailhead
-elevation** — an earlier version of this pipeline picked placeholder trailheads by
-matching `summitM − verticalM`, which quietly bakes the error into the geometry
-and then appears to confirm itself.
+Where a guidebook publishes its own gain the two now agree closely — Rørnestinden
+1000 against Friflyt's 1000, Stornappstinden 680 against Friflyt's 680, Kirketaket
+1270 against ut.no's 1243, Fanaråken 760 against ut.no's 724. The residual few tens
+of metres is a counting difference: these figures are cumulative ascent, so they
+include the undulation a simple summit-minus-trailhead subtraction misses.
 
-### Remaining disagreements
+### The bug that caused most of this
 
-Twelve of the 24 primary routes now land within 40 m of the published figure,
-including Galdhøpiggen +2, Hesten −4, Himmeltindan +5, Rombakstøtta −5,
-Tromsdalstinden +6. The other twelve do not:
+`verticalM` originally held the peak's published **altitude** rather than its
+ascent in eight tours: Storgalten 1219/1219, Rørnestinden 1041/1041, and Store
+Blåmann, Himmeltindan, Stornappstinden, Slogen, Skåla and Melderskin all within
+10 m of their own summit heights. For a fjord-to-summit tour that is nearly
+right, which is why it survived; where the trailhead is higher up it is simply
+wrong.
 
-| tour | app says | routed | diff | audited trailhead |
-| --- | --- | --- | --- | --- |
-| Rondslottet | 1050 m | 1245 m | +195 | Spranget p-plass |
-| Fanaråken | 950 m | 757 m | −193 | Korpen |
-| Storehorn | 630 m | 473 m | −157 | Hornslie p-plass |
-| Melderskin | 1420 m | 1272 m | −148 | Kletta p-plass |
-| Steindalsnosi | 620 m | 758 m | +138 | Gjuvvatnet |
-| Kirketaket | 1380 m | 1271 m | −109 | Hellerøra-parkeringa |
-| Oksen | 1060 m | 963 m | −97 | Tjoflot øvre parkering |
-| Kavringtinden | 1150 m | 1243 m | +93 | Lyngseidet |
-| Slogen | 1560 m | 1482 m | −78 | Skylstad i Norangsdalen |
-| Kolåstinden | 1150 m | 1076 m | −74 | Standaleidet |
-| Stornappstinden | 730 m | 680 m | −50 | Nappskaret skianlegg |
-| Bitihorn | 500 m | 549 m | +49 | Bitihorn p-plass ved Fv51 |
-
-**These are deliberately not reconciled.** The trailheads are the audited ones,
-each traced to a route description and a mapped car park, and in several cases the
-audit found an independent published gain that agrees with the route and not with
-the app: Fanaråken 724 m on ut.no against the app's 950 (the app figure fits the
-1200 m Turtagrø route, which is here as the alternative); Kirketaket 1243 m on
-ut.no against 1380; Stornappstinden 680 m on Friflyt against 730; Rørnestinden
-1000 m on Friflyt, which the router reproduces at 1004 m.
-
-Changing published figures is an editorial call. What the pipeline guarantees is
-that the geometry is right for the trailhead named beside it, and that the gap is
-written down rather than hidden.
+That matters beyond the numbers. **Do not use `verticalM` to infer a trailhead
+elevation.** An earlier version of this pipeline picked placeholder trailheads by
+matching `summitM − verticalM`, which bakes the error into the geometry and then
+reads back as confirmation — it is how the Rørnestinden trailhead was moved to
+sea level on an argument that turned out to be circular, and it took an
+independent audit against Friflyt, OSM and the router to undo.
 
 ### Two routes worth knowing about
 

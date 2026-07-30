@@ -260,8 +260,8 @@
     ],
     "source": "audited (corrected)",
     "notes": "",
-    "implied_start_m": -10.8,
-    "start_vs_implied_m": 73.3
+    "implied_start_m": 30.2,
+    "start_vs_implied_m": 32.3
    }
   ]
  },
@@ -318,8 +318,8 @@
     ],
     "source": "audited (corrected)",
     "notes": "",
-    "implied_start_m": 139.1,
-    "start_vs_implied_m": -76.6
+    "implied_start_m": 49.1,
+    "start_vs_implied_m": 13.4
    }
   ]
  },
@@ -538,8 +538,8 @@
     ],
     "source": "audited (corrected)",
     "notes": "",
-    "implied_start_m": 11.2,
-    "start_vs_implied_m": 49.3
+    "implied_start_m": 61.2,
+    "start_vs_implied_m": -0.7
    }
   ]
  },
@@ -590,8 +590,8 @@
     ],
     "source": "audited (corrected)",
     "notes": "",
-    "implied_start_m": 59.0,
-    "start_vs_implied_m": 126.3
+    "implied_start_m": 169.0,
+    "start_vs_implied_m": 16.3
    }
   ]
  },
@@ -642,8 +642,8 @@
     ],
     "source": "audited (corrected)",
     "notes": "",
-    "implied_start_m": 3.4,
-    "start_vs_implied_m": 81.3
+    "implied_start_m": 83.4,
+    "start_vs_implied_m": 1.3
    },
    {
     "id": "oye-direkte",
@@ -736,8 +736,8 @@
     ],
     "source": "audited (ok)",
     "notes": "",
-    "implied_start_m": 281.4,
-    "start_vs_implied_m": 94.3
+    "implied_start_m": 351.4,
+    "start_vs_implied_m": 24.3
    }
   ]
  },
@@ -840,8 +840,8 @@
     ],
     "source": "audited (ok)",
     "notes": "",
-    "implied_start_m": 1117.0,
-    "start_vs_implied_m": 279.7
+    "implied_start_m": 1307.0,
+    "start_vs_implied_m": 89.7
    },
    {
     "id": "turtagro",
@@ -940,8 +940,8 @@
     ],
     "source": "audited (ok)",
     "notes": "",
-    "implied_start_m": 1403.8,
-    "start_vs_implied_m": -130.0
+    "implied_start_m": 1263.8,
+    "start_vs_implied_m": 10.0
    }
   ]
  },
@@ -1025,7 +1025,7 @@
      }
     ],
     "source": "documented alternative route",
-    "note": "The other standard route, and the one the app's 1100 m figure sits closest to — 1365 m from the valley floor at Spiterstulen.",
+    "note": "The other standard route. Its 1434 m of gain from the valley floor is why the app's old 1100 m figure matched neither start: it sat between this and the 632 m from Juvasshytta.",
     "implied_start_m": null,
     "start_vs_implied_m": null
    }
@@ -1118,8 +1118,8 @@
     ],
     "source": "audited (ok)",
     "notes": "",
-    "implied_start_m": 1107.5,
-    "start_vs_implied_m": -46.8
+    "implied_start_m": 1057.5,
+    "start_vs_implied_m": 3.2
    },
    {
     "id": "batskaret",
@@ -1212,8 +1212,8 @@
     ],
     "source": "audited (corrected)",
     "notes": "",
-    "implied_start_m": 1128.4,
-    "start_vs_implied_m": -46.7
+    "implied_start_m": 938.4,
+    "start_vs_implied_m": 143.3
    },
    {
     "id": "doralseter",
@@ -1352,8 +1352,8 @@
     ],
     "source": "audited (ok)",
     "notes": "",
-    "implied_start_m": 852.5,
-    "start_vs_implied_m": 203.6
+    "implied_start_m": 1012.5,
+    "start_vs_implied_m": 43.6
    }
   ]
  },
@@ -1398,8 +1398,8 @@
     ],
     "source": "audited (ok)",
     "notes": "",
-    "implied_start_m": 181.5,
-    "start_vs_implied_m": 94.8
+    "implied_start_m": 281.5,
+    "start_vs_implied_m": -5.2
    }
   ]
  },
@@ -1450,8 +1450,8 @@
     ],
     "source": "audited (suspect)",
     "notes": "",
-    "implied_start_m": 5.7,
-    "start_vs_implied_m": 148.3
+    "implied_start_m": 155.7,
+    "start_vs_implied_m": -1.7
    }
   ]
  },

@@ -154,7 +154,9 @@ content and data quality that has to be settled before the site is sold to anyon
   that nobody has researched yet — the gap is content, not capability.
 - **Three summit heights disagree with the terrain model.** Rørnestinden, Rombakstøtta and
   Himmeltindan sit 11–13 m below their published figures in DTM1. The coordinates are right; the
-  heights are old survey numbers on sharp, corniced tops. Worth settling before print.
+  heights are old survey numbers on sharp, corniced tops. Worth settling before print. (The
+  *vertical gain* figures have all been reconciled against the audited trailheads — see
+  `scripts/build-routes/README.md`. It is only `summitM` on these three that is still open.)
 - **The Kirketaket guide text is example content.** The ascent, descent and avalanche-terrain
   copy in `lib/guides.ts` was written to fill the layout. It needs editorial review by someone
   who knows the tour before publication, and the same applies to every guide written after it.
