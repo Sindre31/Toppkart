@@ -42,8 +42,15 @@ PICKS = {
     "rornestinden": (69.58195, 20.14945, "Rørnesveien"),                 # 2 m, want -11
 }
 
-# Tours where PICKS wins over a researched corridor — see Rørnestinden above.
-OVERRIDE_RESEARCH = {"rornestinden"}
+# Tours where PICKS would win over a researched corridor. Empty: the one entry it
+# ever held, Rørnestinden, was refuted by the Lyngen audit. I had argued from the
+# app's stated 1041 m "gain" equalling the summit height, so the start had to be
+# at sea level — but 1041 is Rørnestinden's published *altitude*, duplicated into
+# the vertical field, so it says nothing about the trailhead. Friflyt names
+# Lyngseidet/Eidebakken explicitly, OSM has a mapped car park on that exact
+# coordinate, and the router gives +1003 m there against Friflyt's published
+# 1000 m. See README, "Where the app's own numbers disagree with the ground".
+OVERRIDE_RESEARCH: set[str] = set()
 
 # ------------------------------------------------------------ alternative routes
 # Second (and further) documented ways up. Every coordinate here was read back
@@ -114,6 +121,32 @@ def _load(path):
     return json.load(open(path)) if os.path.exists(path) else {}
 
 
+# The research agents sometimes transliterate Norwegian letters away in the
+# labels they return. These are proper nouns on a Norwegian map, so repair them.
+SPELLING = {
+    "Fanarak": "Fanaråk",
+    "Turtagro": "Turtagrø",
+    "Roernes": "Rørnes",
+    "Blamann": "Blåmann",
+    "Snoheim": "Snøheim",
+    "Doralseter": "Dørålseter",
+    "Batskaret": "Båtskaret",
+    "Fjordgard": "Fjordgård",
+    "Hellerora": "Hellerøra",
+    "Grovdal": "Grøvdal",
+    "Kolastind": "Kolåstind",
+    "Skala": "Skåla",
+    "Soerrut": "Sørrut",
+    "Norangsdal": "Norangsdal",
+}
+
+
+def respell(text):
+    for wrong, right in SPELLING.items():
+        text = text.replace(wrong, right)
+    return text
+
+
 def short_name(name):
     """A route needs a name, not a description.
 
@@ -123,6 +156,7 @@ def short_name(name):
     clause break and keep the head; the full text stays in `description` for the
     guides to use later.
     """
+    name = respell(name)
     head = re.split(r"\s*[:—–]\s*| via | med | opp | til |, ", name, maxsplit=1)[0]
     head = head.strip(" ,–—:/(")
     return head if 8 <= len(head) <= 60 else name[:60].strip(" ,–—:/(")
@@ -138,7 +172,7 @@ def short_trailhead(name):
     is a driving instruction. The label wants "Tromsdalen skytebane"; the full
     text stays in the corridor file.
     """
-    out = re.sub(r"\s*\([^)]*\)", "", name)          # drop parentheticals
+    out = re.sub(r"\s*\([^)]*\)", "", respell(name))  # drop parentheticals
     out = re.split(r"\s*[,–—]\s*", out, maxsplit=1)[0]  # first clause only
     out = PARKING_PREFIX.sub("", out).strip()
     if len(out) > 40:
@@ -148,7 +182,10 @@ def short_trailhead(name):
 
 def wp(lat, lng, name):
     z, _ = dtm_point(lat, lng)
-    return {"lat": lat, "lng": lng, "name": name, "elevation_m": round(z, 1) if z else None}
+    return {
+        "lat": lat, "lng": lng, "name": respell(name),
+        "elevation_m": round(z, 1) if z else None,
+    }
 
 
 def main():
@@ -160,23 +197,26 @@ def main():
     for slug in summits:
         routes = []
 
-        # --- primary
+        # --- researched routes (primary first), from harvest_swarm.py
         if slug in swarm and slug not in OVERRIDE_RESEARCH:
             rec = swarm[slug]
-            routes.append(
-                {
-                    "id": "normalruta",
-                    "name": short_name(rec.get("route_name") or "Normalruta"),
-                    "description": rec.get("route_name") or "",
-                    "trailhead": {
-                        **rec["trailhead"],
-                        "name": short_trailhead(rec["trailhead"].get("name", "")),
-                        "fullName": rec["trailhead"].get("name", ""),
-                    },
-                    "waypoints": rec.get("waypoints") or [],
-                    "source": rec.get("source", "researched"),
-                }
-            )
+            for r in rec["routes"]:
+                th = r["trailhead"]
+                routes.append(
+                    {
+                        "id": r["id"],
+                        "name": short_name(r.get("name") or "Normalruta"),
+                        "description": r.get("name") or "",
+                        "trailhead": {
+                            **th,
+                            "name": short_trailhead(th.get("name", "")),
+                            "fullName": th.get("name", ""),
+                        },
+                        "waypoints": r.get("waypoints") or [],
+                        "source": rec.get("source", "researched"),
+                        "notes": r.get("notes", ""),
+                    }
+                )
         elif slug in PICKS:
             lat, lng, name = PICKS[slug]
             routes.append(
@@ -192,8 +232,11 @@ def main():
             print(f"!! {slug}: no primary corridor")
             continue
 
-        # --- alternatives
+        # --- hand-entered alternatives, skipping any the research already covered
+        have = {r["id"] for r in routes}
         for alt in ALTERNATES.get(slug, []):
+            if alt["id"] in have:
+                continue
             lat, lng, name = alt["trailhead"]
             routes.append(
                 {
@@ -214,6 +257,13 @@ def main():
             z = r["trailhead"].get("elevation_m")
             r["implied_start_m"] = implied if i == 0 else None
             r["start_vs_implied_m"] = round(z - implied, 1) if (i == 0 and z is not None) else None
+
+        routes[0]["id"] = "normalruta"
+        seen_ids = {"normalruta"}
+        for i, r in enumerate(routes[1:], start=2):
+            if r["id"] in seen_ids:
+                r["id"] = f"rute-{i}"
+            seen_ids.add(r["id"])
 
         out[slug] = {"routes": routes}
         head = routes[0]

@@ -3,30 +3,30 @@
   "routes": [
    {
     "id": "normalruta",
-    "name": "Forsiden / Salen-ruta fra Tromsdalen",
-    "description": "Forsiden / Salen-ruta fra Tromsdalen: skogsbilvegen innover Tromsdalen, opp til Salen og videre sørryggen til toppen",
+    "name": "Salen-ruta fra Tromsdalen",
+    "description": "Salen-ruta fra Tromsdalen via sørryggen",
     "trailhead": {
-     "name": "Tromsdalen skytebane",
+     "name": "skytebanen",
      "lat": 69.63243,
      "lng": 19.03232,
      "elevation_m": 37.54,
-     "fullName": "Parkering ved Tromsdalen skytebane, innerst i Turistvegen (Tromsdalen)"
+     "fullName": "Parkering ved skytebanen, innerst i Turistvegen"
     },
     "waypoints": [
      {
-      "name": "Skogsbilvegen i Tromsdalen, vestsida av Tromsdalselva",
+      "name": "Skogsbilvegen, vestsida av Tromsdalselva",
       "lat": 69.617,
       "lng": 19.0625,
       "elevation_m": 127.75
      },
      {
-      "name": "Innerst i Tromsdalen ved Dalbotn / Dalbotnvatnet",
+      "name": "Innerst i Tromsdalen ved Dalbotnvatnet",
       "lat": 69.6024,
       "lng": 19.0803,
       "elevation_m": 311.74
      },
      {
-      "name": "Foten av bakken (~30 grader) opp mot Salen",
+      "name": "Foten av bakken opp mot Salen (~30°)",
       "lat": 69.5989,
       "lng": 19.0913,
       "elevation_m": 379.98
@@ -38,19 +38,20 @@
       "elevation_m": 735.33
      },
      {
-      "name": "Salen – der sørryggen begynner",
+      "name": "Salen – starten på sørryggen",
       "lat": 69.597,
       "lng": 19.121,
       "elevation_m": 884.58
      },
      {
-      "name": "Sørryggen ca. 1100 m (hold vest, unna skavlene på østkanten)",
+      "name": "Sørryggen ca. 1100 m",
       "lat": 69.5999,
       "lng": 19.1353,
       "elevation_m": 1112.7
      }
     ],
-    "source": "researched (high)",
+    "source": "audited (corrected)",
+    "notes": "",
     "implied_start_m": 37.5,
     "start_vs_implied_m": 0.0
    },
@@ -106,24 +107,24 @@
   "routes": [
    {
     "id": "normalruta",
-    "name": "Normalruta / merka sti fra Slettneset",
-    "description": "Normalruta / merka sti fra Slettneset opp øst-sørøstryggen (Steet) til toppen",
+    "name": "Normalruta fra Slettneset",
+    "description": "Normalruta fra Slettneset opp øst-sørøstryggen",
     "trailhead": {
      "name": "Slettneset",
      "lat": 69.73971,
      "lng": 18.64315,
      "elevation_m": 9.43,
-     "fullName": "Parkering ved Slettneset, Fjordvegen (fv 7768), Kaldfjorden"
+     "fullName": "Parkering ved Slettneset, Fjordvegen fv 7768"
     },
     "waypoints": [
      {
-      "name": "Stien over skoggrensa vest for Slettneset",
+      "name": "Merka sti over skoggrensa vest for Slettneset",
       "lat": 69.74115,
       "lng": 18.633,
       "elevation_m": 102.37
      },
      {
-      "name": "Skulderen der stien dreier sørvest inn på ryggen",
+      "name": "Skulderen der stien svinger inn på ryggen",
       "lat": 69.74005,
       "lng": 18.62094,
       "elevation_m": 228.72
@@ -135,19 +136,20 @@
       "elevation_m": 477.53
      },
      {
-      "name": "Øst-sørøstryggen, ca. 670 m, sørvendt flanke over Blåmannsvikdalen",
+      "name": "Øst-sørøstryggen ca. 670 m",
       "lat": 69.7343,
       "lng": 18.607,
       "elevation_m": 669.46
      },
      {
-      "name": "Under den siste bratte, eksponerte toppseksjonen",
+      "name": "Under den siste bratte toppseksjonen",
       "lat": 69.7339,
       "lng": 18.597,
       "elevation_m": 881.46
      }
     ],
-    "source": "researched (high)",
+    "source": "audited (corrected)",
+    "notes": "",
     "implied_start_m": 3.4,
     "start_vs_implied_m": 6.0
    }
@@ -157,50 +159,51 @@
   "routes": [
    {
     "id": "normalruta",
-    "name": "Normalruta fra Galtdalen / Sandneset i Nord-Lenangen",
-    "description": "Normalruta fra Galtdalen / Sandneset i Nord-Lenangen: opp Galtdalen på høyre (sørlige) side av Galtelva, rundt nordsida av Lassofjellet, sikte mot skaret mellom Litle-Galten og Storgalten, oppstigning litt sør for skaret, deretter den breie nordvestflata til varden",
+    "name": "Normalruta fra Sandneset",
+    "description": "Normalruta fra Sandneset opp Galtdalen",
     "trailhead": {
-     "name": "Fv7922 Lenangsveien",
+     "name": "Sandneset",
      "lat": 69.9039,
      "lng": 20.18075,
-     "elevation_m": 14.41,
-     "fullName": "Fv7922 Lenangsveien (gamle Fv312) ved utløpet av Galtdalen, Sandneset"
+     "elevation_m": 14.1,
+     "fullName": "Sandneset, Fv7922 ved utløpet av Galtdalen"
     },
     "waypoints": [
      {
-      "name": "Nedre Galtdalen, høyre (sørlige) side av Galtelva",
+      "name": "Nedre Galtdalen, sørsida av Galtelva",
       "lat": 69.9026,
       "lng": 20.193,
-      "elevation_m": 130.98
+      "elevation_m": 130.6
      },
      {
-      "name": "Øvre Galtdalen ved samlop av Galtelva, nordsida av Lassofjellet passert",
+      "name": "Øvre Galtdalen, nord for Lassofjellet",
       "lat": 69.9005,
       "lng": 20.2115,
-      "elevation_m": 283.34
+      "elevation_m": 283.3
      },
      {
-      "name": "Åpen nordvestvendt sliske opp mot skaret",
+      "name": "Nordvestvendt sliske mot skaret, 530 m",
       "lat": 69.896,
       "lng": 20.226,
-      "elevation_m": 529.8
+      "elevation_m": 529.5
      },
      {
-      "name": "Rygg litt sør for skaret mellom Litle-Galten og Storgalten - her starter oppstigninga",
+      "name": "Rygg sør for skaret Litle-Galten–Storgalten",
       "lat": 69.8932,
       "lng": 20.2415,
-      "elevation_m": 783.93
+      "elevation_m": 779.8
      },
      {
-      "name": "Over det bratte trinnet (800-860 m), inn på den breie NV-skuldra",
+      "name": "Over det bratte trinnet, inn på NV-skuldra",
       "lat": 69.8905,
       "lng": 20.249,
-      "elevation_m": 981.21
+      "elevation_m": 979.7
      }
     ],
-    "source": "researched (high)",
+    "source": "audited (corrected)",
+    "notes": "",
     "implied_start_m": -0.7,
-    "start_vs_implied_m": 15.1
+    "start_vs_implied_m": 14.8
    }
   ]
  },
@@ -208,17 +211,57 @@
   "routes": [
    {
     "id": "normalruta",
-    "name": "Normalruta fra Rørnesveien",
+    "name": "Normalruta fra Lyngseidet",
+    "description": "Normalruta fra Lyngseidet via Rørneshytta",
     "trailhead": {
-     "lat": 69.58195,
-     "lng": 20.14945,
-     "name": "Rørnesveien",
-     "elevation_m": 2.0
+     "name": "Lyngseidet",
+     "lat": 69.57474,
+     "lng": 20.19132,
+     "elevation_m": 62.5,
+     "fullName": "Lyngseidet, parkering ved Eidebakken"
     },
-    "waypoints": [],
-    "source": "trailhead from Kartverket/OSM, line from the terrain model",
+    "waypoints": [
+     {
+      "name": "Hyttehaugen, skogsveien forlates",
+      "lat": 69.56544,
+      "lng": 20.18104,
+      "elevation_m": 285.9
+     },
+     {
+      "name": "Skihytta",
+      "lat": 69.56103,
+      "lng": 20.18306,
+      "elevation_m": 316.7
+     },
+     {
+      "name": "Gjerdelvdalen, sørsida av Gjerdelva",
+      "lat": 69.5625,
+      "lng": 20.16,
+      "elevation_m": 527.9
+     },
+     {
+      "name": "Rørneshytta",
+      "lat": 69.56354,
+      "lng": 20.13736,
+      "elevation_m": 603.6
+     },
+     {
+      "name": "Foten av østflanken etter elvekryssing",
+      "lat": 69.569,
+      "lng": 20.125,
+      "elevation_m": 710.5
+     },
+     {
+      "name": "Østflanken, bratt sone 800-920 m",
+      "lat": 69.5712,
+      "lng": 20.1183,
+      "elevation_m": 837.4
+     }
+    ],
+    "source": "audited (corrected)",
+    "notes": "",
     "implied_start_m": -10.8,
-    "start_vs_implied_m": 12.8
+    "start_vs_implied_m": 73.3
    }
   ]
  },
@@ -226,54 +269,55 @@
   "routes": [
    {
     "id": "normalruta",
-    "name": "Normalruta (Goalsevarri/Kavringtinden) fra Lyngseidet",
-    "description": "Normalruta (Goalsevarri/Kavringtinden) fra Lyngseidet: skogsvei på østsida av Gjerdelva forbi Rødsteinen, opp ryggen øst for elva til Skihytta, deretter vestover inn på nordøstryggen og opp østsida av ryggen til toppryggen",
+    "name": "Normalruta fra Lyngseidet",
+    "description": "Normalruta fra Lyngseidet, nordøstryggen",
     "trailhead": {
      "name": "Lyngseidet",
      "lat": 69.57474,
      "lng": 20.19132,
-     "elevation_m": 62.46,
-     "fullName": "Lyngseidet, parkering ved Eidebakken industriområde (Plastfabrikken/Skytebanen)"
+     "elevation_m": 62.5,
+     "fullName": "Lyngseidet, parkering ved Eidebakken"
     },
     "waypoints": [
      {
-      "name": "Rødsteinen - skogsveien på østsida av Gjerdelva",
+      "name": "Rødsteinen, skogsvei øst for Gjerdelva",
       "lat": 69.56762,
       "lng": 20.19441,
-      "elevation_m": 202
+      "elevation_m": 201.4
      },
      {
-      "name": "Skihytta, på ryggen øst for elva",
+      "name": "Skihytta, ryggen øst for elva",
       "lat": 69.56103,
       "lng": 20.18306,
-      "elevation_m": 316.57
+      "elevation_m": 316.7
      },
      {
-      "name": "Åpen nordvendt flanke vest for Skihytta, ruta svinger av mot nordøstryggen",
+      "name": "Åpen nordflanke vest for Skihytta",
       "lat": 69.5594,
       "lng": 20.1584,
-      "elevation_m": 592.28
+      "elevation_m": 592.4
      },
      {
-      "name": "Foten av nordøstryggen på Goalsevarri",
+      "name": "Foten av nordøstryggen",
       "lat": 69.5578,
       "lng": 20.1336,
-      "elevation_m": 773.58
+      "elevation_m": 776.1
      },
      {
-      "name": "Midt på nordøstryggen, østsida av ryggen",
+      "name": "Midt på nordøstryggen, østsida",
       "lat": 69.554,
       "lng": 20.1324,
-      "elevation_m": 1017.26
+      "elevation_m": 1017.5
      },
      {
-      "name": "Øverst på nordøstryggen der man kommer opp på toppryggen",
+      "name": "Toppen av nordøstryggen, inn på toppryggen",
       "lat": 69.5505,
       "lng": 20.1288,
-      "elevation_m": 1219.4
+      "elevation_m": 1219
      }
     ],
-    "source": "researched (high)",
+    "source": "audited (corrected)",
+    "notes": "",
     "implied_start_m": 139.1,
     "start_vs_implied_m": -76.6
    }
@@ -283,48 +327,49 @@
   "routes": [
    {
     "id": "normalruta",
-    "name": "Normalruta fra Fjordgård",
-    "description": "Normalruta fra Fjordgård – merket sti opp sørøstflanken til sørøstryggen",
+    "name": "Merket sti fra Fjordgård over sørflanken",
+    "description": "Merket sti fra Fjordgård over sørflanken til østryggen",
     "trailhead": {
      "name": "Fjordgård",
      "lat": 69.5045,
      "lng": 17.62582,
      "elevation_m": 47.5,
-     "fullName": "Fjordgård – avgiftsparkering ved gamle skolen (Senja montessoriskole / Fjellheim samfunnshus)"
+     "fullName": "Fjordgård – avgiftsparkering (Segla/Hesten)"
     },
     "waypoints": [
      {
-      "name": "Skiltet stistart over Fjordgård (guidepost, topp av alpinbakken/Fjordgården)",
+      "name": "Stistart ved øvre Fjordgård",
       "lat": 69.50818,
       "lng": 17.62134,
-      "elevation_m": 48.81
+      "elevation_m": 49.2
      },
      {
-      "name": "Skogsflanken over Storelva, ca 140 moh",
+      "name": "Skogsflanken i Fjordgardlia, ca 140 moh",
       "lat": 69.50971,
       "lng": 17.61256,
-      "elevation_m": 138.59
+      "elevation_m": 138.7
      },
      {
-      "name": "Skoggrensa – over i åpent terreng på sørflanken",
+      "name": "Skoggrensa – over i åpent terreng",
       "lat": 69.51112,
       "lng": 17.60366,
-      "elevation_m": 234.95
+      "elevation_m": 234.6
      },
      {
-      "name": "Åpen sørflanke under Hestryggen, ca 340 moh",
+      "name": "Åpen sørflanke, ca 340 moh",
       "lat": 69.51282,
       "lng": 17.59656,
-      "elevation_m": 341.89
+      "elevation_m": 340
      },
      {
-      "name": "Inngang på sørøstryggen mot Hesten, ca 465 moh",
+      "name": "Inn på østryggen, ca 465 moh",
       "lat": 69.51436,
       "lng": 17.59025,
-      "elevation_m": 467.47
+      "elevation_m": 466.3
      }
     ],
-    "source": "researched (high)",
+    "source": "audited (corrected)",
+    "notes": "",
     "implied_start_m": 47.4,
     "start_vs_implied_m": 0.1
    }
@@ -334,56 +379,63 @@
   "routes": [
    {
     "id": "normalruta",
-    "name": "Normalruta fra Djupvik/Forselvveien",
-    "description": "Normalruta fra Djupvik/Forselvveien via Pumpvatnet, bekkedalen mot Forsnesvatnet, Isvatnet og sørøstryggen",
+    "name": "Normalruta fra Djupvik",
+    "description": "Normalruta fra Djupvik via Pumpvatnet og Isvatnet",
     "trailhead": {
      "name": "Forselvveien over Djupvik",
      "lat": 68.44847,
      "lng": 17.5217,
-     "elevation_m": 141.24,
-     "fullName": "Veienden i Forselvveien (steinbruddsveien) over Djupvik, Narvik"
+     "elevation_m": 141.3,
+     "fullName": "Veienden i Forselvveien over Djupvik"
     },
     "waypoints": [
      {
-      "name": "Topp av den bratte skogen, inn på vannverksveien mot Pumpvatnet",
+      "name": "Topp av den bratte skogen, inn på vannverksveien",
       "lat": 68.44427,
       "lng": 17.51955,
-      "elevation_m": 317.61
+      "elevation_m": 317.7
      },
      {
-      "name": "Sørøstre hjørne av Pumpvatnet",
+      "name": "Sørøstenden av Pumpvatnet",
       "lat": 68.44175,
       "lng": 17.53073,
-      "elevation_m": 327.35
+      "elevation_m": 328.8
      },
      {
       "name": "Bekkedalen sørover mot Forsnesvatnet, ca 450 moh",
       "lat": 68.4365,
       "lng": 17.543,
-      "elevation_m": 448.21
+      "elevation_m": 448.8
      },
      {
-      "name": "Dalhodet – sving østover inn i den lille dalen mot Isvatnet",
+      "name": "Nordenden av Forsnesvatnet – sving østover",
       "lat": 68.43,
       "lng": 17.5435,
-      "elevation_m": 653.2
+      "elevation_m": 654.9
      },
      {
-      "name": "Nordøst for Isvatnet, start på snøfonnene",
-      "lat": 68.4285,
-      "lng": 17.5745,
-      "elevation_m": 887.04
+      "name": "Nordsiden av Isvatnet, ca 855 moh",
+      "lat": 68.4297,
+      "lng": 17.566,
+      "elevation_m": 853.1
      },
      {
-      "name": "Der man kommer opp på sørøstryggen, ca 1145 moh",
+      "name": "Snøfonnene øst for Isvatnet, ca 950 moh",
+      "lat": 68.4302,
+      "lng": 17.573,
+      "elevation_m": 949.4
+     },
+     {
+      "name": "Opp på sørøstryggen, ca 1145 moh",
       "lat": 68.4303,
       "lng": 17.5915,
-      "elevation_m": 1145.35
+      "elevation_m": 1142.6
      }
     ],
-    "source": "researched (high)",
+    "source": "audited (corrected)",
+    "notes": "",
     "implied_start_m": 131.0,
-    "start_vs_implied_m": 10.2
+    "start_vs_implied_m": 10.3
    }
   ]
  },
@@ -391,17 +443,51 @@
   "routes": [
    {
     "id": "normalruta",
-    "name": "Normalruta fra Haukland",
+    "name": "Normalruta fra Hauklandstranda",
+    "description": "Normalruta fra Hauklandstranda via Durmålsdalen",
     "trailhead": {
-     "lat": 68.19984,
-     "lng": 13.54135,
-     "name": "Haukland",
-     "elevation_m": 9.1
+     "name": "Hauklandstranda parkering",
+     "lat": 68.19908,
+     "lng": 13.53277,
+     "elevation_m": 6.6,
+     "fullName": "Hauklandstranda parkering"
     },
-    "waypoints": [],
-    "source": "trailhead from Kartverket/OSM, line from the terrain model",
+    "waypoints": [
+     {
+      "name": "Vegen over Uttakleivtunnelen",
+      "lat": 68.20235,
+      "lng": 13.53987,
+      "elevation_m": 52.1
+     },
+     {
+      "name": "Inngangen til Durmålsdalen",
+      "lat": 68.20574,
+      "lng": 13.53854,
+      "elevation_m": 157.99
+     },
+     {
+      "name": "Durmålsdalen, midtre del",
+      "lat": 68.2117,
+      "lng": 13.554,
+      "elevation_m": 415.68
+     },
+     {
+      "name": "Skulderen under Molheia",
+      "lat": 68.2146,
+      "lng": 13.5605,
+      "elevation_m": 664.86
+     },
+     {
+      "name": "Sørtoppen, varden 931",
+      "lat": 68.21785,
+      "lng": 13.57188,
+      "elevation_m": 928.45
+     }
+    ],
+    "source": "audited (ok)",
+    "notes": "",
     "implied_start_m": -11.3,
-    "start_vs_implied_m": 20.4
+    "start_vs_implied_m": 17.9
    }
   ]
  },
@@ -409,17 +495,51 @@
   "routes": [
    {
     "id": "normalruta",
-    "name": "Normalruta fra Napp",
+    "name": "Normalruta fra Nappskaret",
+    "description": "Normalruta fra Nappskaret",
     "trailhead": {
-     "lat": 68.13317,
-     "lng": 13.43193,
-     "name": "Napp",
-     "elevation_m": 10.7
+     "name": "Nappskaret skianlegg",
+     "lat": 68.12919,
+     "lng": 13.39662,
+     "elevation_m": 60.55,
+     "fullName": "Nappskaret skianlegg, parkering"
     },
-    "waypoints": [],
-    "source": "trailhead from Kartverket/OSM, line from the terrain model",
+    "waypoints": [
+     {
+      "name": "Over skitrekket",
+      "lat": 68.135,
+      "lng": 13.3973,
+      "elevation_m": 163.39
+     },
+     {
+      "name": "Dalen mellom Okstinden og Litlnappstinden",
+      "lat": 68.138,
+      "lng": 13.397,
+      "elevation_m": 215.37
+     },
+     {
+      "name": "Søkket ved Skarvatnet",
+      "lat": 68.142,
+      "lng": 13.396,
+      "elevation_m": 338.69
+     },
+     {
+      "name": "Over det bratte trinnet",
+      "lat": 68.145,
+      "lng": 13.403,
+      "elevation_m": 560.65
+     },
+     {
+      "name": "Vestre toppflate",
+      "lat": 68.1445,
+      "lng": 13.4135,
+      "elevation_m": 724.05
+     }
+    ],
+    "source": "audited (corrected)",
+    "notes": "",
     "implied_start_m": 11.2,
-    "start_vs_implied_m": -0.5
+    "start_vs_implied_m": 49.3
    }
   ]
  },
@@ -427,17 +547,51 @@
   "routes": [
    {
     "id": "normalruta",
-    "name": "Normalruta fra Tverråbrua i Grøvdalen",
+    "name": "Normalruta frå Hellerøra over Steinberget",
+    "description": "Normalruta frå Hellerøra over Steinberget",
     "trailhead": {
-     "lat": 62.58289,
-     "lng": 7.92225,
-     "name": "Tverråbrua i Grøvdalen",
-     "elevation_m": 68.1
+     "name": "Hellerøra-parkeringa",
+     "lat": 62.58615,
+     "lng": 7.83357,
+     "elevation_m": 185.3,
+     "fullName": "Hellerøra-parkeringa (Øvre Kavli)"
     },
-    "waypoints": [],
-    "source": "trailhead from Kartverket/OSM, line from the terrain model",
+    "waypoints": [
+     {
+      "name": "Kavlivegkrysset, der Kavlisetra-vegen tar av",
+      "lat": 62.5906,
+      "lng": 7.83551,
+      "elevation_m": 223.42
+     },
+     {
+      "name": "Avstikk frå Måsvassbu-vegen, ~420 m",
+      "lat": 62.59802,
+      "lng": 7.83733,
+      "elevation_m": 422.7
+     },
+     {
+      "name": "Vesttoppen på Steinberget",
+      "lat": 62.59896,
+      "lng": 7.8523,
+      "elevation_m": 764.72
+     },
+     {
+      "name": "Steinberget",
+      "lat": 62.60061,
+      "lng": 7.89051,
+      "elevation_m": 980.47
+     },
+     {
+      "name": "Sørvestryggen, ~1190 m",
+      "lat": 62.60792,
+      "lng": 7.90132,
+      "elevation_m": 1190.06
+     }
+    ],
+    "source": "audited (corrected)",
+    "notes": "",
     "implied_start_m": 59.0,
-    "start_vs_implied_m": 9.1
+    "start_vs_implied_m": 126.3
    }
   ]
  },
@@ -445,17 +599,93 @@
   "routes": [
    {
     "id": "normalruta",
-    "name": "Normalruta fra Øye i Norangsdalen",
+    "name": "Normalruta frå Skylstad over Pukkelen",
+    "description": "Normalruta frå Skylstad over Pukkelen",
     "trailhead": {
-     "lat": 62.19291,
-     "lng": 6.6584,
-     "name": "Øye i Norangsdalen",
-     "elevation_m": 5.4
+     "name": "Skylstad i Norangsdalen",
+     "lat": 62.18653,
+     "lng": 6.68992,
+     "elevation_m": 84.7,
+     "fullName": "Skylstad i Norangsdalen"
     },
-    "waypoints": [],
-    "source": "trailhead from Kartverket/OSM, line from the terrain model",
+    "waypoints": [
+     {
+      "name": "Brekkheida (Skylstadbrekka)",
+      "lat": 62.195,
+      "lng": 6.694,
+      "elevation_m": 433.2
+     },
+     {
+      "name": "Over Brekkheida ved Brekkeelva, ~650 m",
+      "lat": 62.1995,
+      "lng": 6.6995,
+      "elevation_m": 647.68
+     },
+     {
+      "name": "Flata sørvest for Patchellhytta, ~795 m",
+      "lat": 62.2065,
+      "lng": 6.7095,
+      "elevation_m": 793.03
+     },
+     {
+      "name": "Pukkelen",
+      "lat": 62.20614,
+      "lng": 6.69308,
+      "elevation_m": 1143.07
+     },
+     {
+      "name": "Høgde 1204 på ryggen",
+      "lat": 62.20612,
+      "lng": 6.68698,
+      "elevation_m": 1203.64
+     }
+    ],
+    "source": "audited (corrected)",
+    "notes": "",
     "implied_start_m": 3.4,
-    "start_vs_implied_m": 2.0
+    "start_vs_implied_m": 81.3
+   },
+   {
+    "id": "oye-direkte",
+    "name": "Direkteruta frå Øye",
+    "description": "Direkteruta frå Øye opp fjellsida",
+    "trailhead": {
+     "name": "Slogen-parkeringa i Norangsdalen",
+     "lat": 62.18748,
+     "lng": 6.67421,
+     "elevation_m": 40.77,
+     "fullName": "Slogen-parkeringa i Norangsdalen"
+    },
+    "waypoints": [
+     {
+      "name": "Nedre fjellsida",
+      "lat": 62.193,
+      "lng": 6.68,
+      "elevation_m": 406.61
+     },
+     {
+      "name": "Fjellsida, ~795 m",
+      "lat": 62.1985,
+      "lng": 6.6828,
+      "elevation_m": 794.42
+     },
+     {
+      "name": "Fjellsida, ~986 m",
+      "lat": 62.203,
+      "lng": 6.6858,
+      "elevation_m": 985.96
+     },
+     {
+      "name": "Ryggmøtet, høgde 1204",
+      "lat": 62.20612,
+      "lng": 6.68698,
+      "elevation_m": 1203.64
+     }
+    ],
+    "source": "audited (corrected)",
+    "notes": "",
+    "implied_start_m": null,
+    "start_vs_implied_m": null
    }
   ]
  },
@@ -463,17 +693,51 @@
   "routes": [
    {
     "id": "normalruta",
-    "name": "Normalruta fra Standaldalen",
+    "name": "Normalruta frå Standaleidet gjennom Kvanndalen",
+    "description": "Normalruta frå Standaleidet gjennom Kvanndalen",
     "trailhead": {
-     "lat": 62.2579,
-     "lng": 6.38382,
-     "name": "Standaldalen",
-     "elevation_m": 375.6
+     "name": "Standaleidet ved Standalhytta",
+     "lat": 62.24731,
+     "lng": 6.35317,
+     "elevation_m": 375.7,
+     "fullName": "Standaleidet ved Standalhytta"
     },
-    "waypoints": [],
-    "source": "trailhead from Kartverket/OSM, line from the terrain model",
+    "waypoints": [
+     {
+      "name": "Inngangen til Kvanndalen",
+      "lat": 62.2569,
+      "lng": 6.3535,
+      "elevation_m": 534.94
+     },
+     {
+      "name": "Kvanndalen, dalbotnen",
+      "lat": 62.2626,
+      "lng": 6.3405,
+      "elevation_m": 650.5
+     },
+     {
+      "name": "Appelsinhaugen",
+      "lat": 62.2712,
+      "lng": 6.3324,
+      "elevation_m": 950.53
+     },
+     {
+      "name": "Kvanndalsskardet, flata ~1020 m",
+      "lat": 62.2689,
+      "lng": 6.3267,
+      "elevation_m": 1024.64
+     },
+     {
+      "name": "Stretet",
+      "lat": 62.2655,
+      "lng": 6.321,
+      "elevation_m": 1140.55
+     }
+    ],
+    "source": "audited (ok)",
+    "notes": "",
     "implied_start_m": 281.4,
-    "start_vs_implied_m": 94.2
+    "start_vs_implied_m": 94.3
    }
   ]
  },
@@ -481,17 +745,51 @@
   "routes": [
    {
     "id": "normalruta",
-    "name": "Normalruta fra Loen",
+    "name": "Normalruta (Kloumannstien) fra Tjugen",
+    "description": "Normalruta (Kloumannstien) fra Tjugen",
     "trailhead": {
-     "lat": 61.87151,
-     "lng": 6.8459,
-     "name": "Loen",
-     "elevation_m": 2.3
+     "name": "Tjugen",
+     "lat": 61.8672,
+     "lng": 6.8801,
+     "elevation_m": 33.96,
+     "fullName": "Tjugen, Loen (Skala parkering)"
     },
-    "waypoints": [],
-    "source": "trailhead from Kartverket/OSM, line from the terrain model",
+    "waypoints": [
+     {
+      "name": "Skalastien i skogen over Fosdola",
+      "lat": 61.8719,
+      "lng": 6.90804,
+      "elevation_m": 484.26
+     },
+     {
+      "name": "Kryssing av Skalelva ved Skringla",
+      "lat": 61.87634,
+      "lng": 6.92513,
+      "elevation_m": 783.19
+     },
+     {
+      "name": "Nordvest for Skalavatnet",
+      "lat": 61.86702,
+      "lng": 6.93072,
+      "elevation_m": 1086.56
+     },
+     {
+      "name": "Over Sandsnibba, sorvestflanken",
+      "lat": 61.86307,
+      "lng": 6.94904,
+      "elevation_m": 1425.56
+     },
+     {
+      "name": "Inn pa sorvestryggen mot Skalabu",
+      "lat": 61.86781,
+      "lng": 6.9552,
+      "elevation_m": 1671.48
+     }
+    ],
+    "source": "audited (ok)",
+    "notes": "",
     "implied_start_m": 7.1,
-    "start_vs_implied_m": -4.8
+    "start_vs_implied_m": 26.9
    }
   ]
  },
@@ -499,17 +797,99 @@
   "routes": [
    {
     "id": "normalruta",
-    "name": "Normalruta fra 1100-meteren, Sognefjellsvegen",
+    "name": "Normalvegen fra Korpen over Fanaråkbreen",
+    "description": "Normalvegen fra Korpen over Fanarakbreen",
     "trailhead": {
-     "lat": 61.50808,
-     "lng": 7.81156,
-     "name": "1100-meteren, Sognefjellsvegen",
-     "elevation_m": 1099.7
+     "name": "Korpen",
+     "lat": 61.54884,
+     "lng": 7.89055,
+     "elevation_m": 1396.66,
+     "fullName": "Korpen, Sognefjellsvegen (rv55)"
     },
-    "waypoints": [],
-    "source": "trailhead from Kartverket/OSM, line from the terrain model",
+    "waypoints": [
+     {
+      "name": "Demninga, utlopet av Prestesteinsvatnet",
+      "lat": 61.5443,
+      "lng": 7.9135,
+      "elevation_m": 1343.31
+     },
+     {
+      "name": "Sokket aust for nordryggen til Steindalsnosi",
+      "lat": 61.536,
+      "lng": 7.921,
+      "elevation_m": 1435.17
+     },
+     {
+      "name": "Inn pa Fanarakbreen",
+      "lat": 61.53,
+      "lng": 7.93,
+      "elevation_m": 1526.58
+     },
+     {
+      "name": "Ovre Fanarakbreen ved 1688-hogda",
+      "lat": 61.51904,
+      "lng": 7.93833,
+      "elevation_m": 1660.8
+     },
+     {
+      "name": "Fannaraknosi pa soraustryggen",
+      "lat": 61.51488,
+      "lng": 7.92499,
+      "elevation_m": 1984.24
+     }
+    ],
+    "source": "audited (ok)",
+    "notes": "",
     "implied_start_m": 1117.0,
-    "start_vs_implied_m": -17.3
+    "start_vs_implied_m": 279.7
+   },
+   {
+    "id": "turtagro",
+    "name": "Fra Turtagrø gjennom Helgedalen",
+    "description": "Fra Turtagro gjennom Helgedalen",
+    "trailhead": {
+     "name": "Turtagrø",
+     "lat": 61.50457,
+     "lng": 7.80159,
+     "elevation_m": 883.69,
+     "fullName": "Turtagro"
+    },
+    "waypoints": [
+     {
+      "name": "Helgedalen, dalbotnen",
+      "lat": 61.5042,
+      "lng": 7.82947,
+      "elevation_m": 910.41
+     },
+     {
+      "name": "Indre Helgedalen mot Helgedalsbotnen",
+      "lat": 61.506,
+      "lng": 7.865,
+      "elevation_m": 1026.39
+     },
+     {
+      "name": "Over det bratte partiet ved Ekrehytta",
+      "lat": 61.50971,
+      "lng": 7.88006,
+      "elevation_m": 1323.88
+     },
+     {
+      "name": "Vestsida, 1550-nivaet",
+      "lat": 61.51115,
+      "lng": 7.88659,
+      "elevation_m": 1555.63
+     },
+     {
+      "name": "Inn pa topplataet fra vest",
+      "lat": 61.51334,
+      "lng": 7.90093,
+      "elevation_m": 1944.3
+     }
+    ],
+    "source": "audited (ok)",
+    "notes": "",
+    "implied_start_m": null,
+    "start_vs_implied_m": null
    }
   ]
  },
@@ -517,17 +897,51 @@
   "routes": [
    {
     "id": "normalruta",
-    "name": "Normalruta fra Korpen, Sognefjellsvegen",
+    "name": "Normalvegen fra Gjuvvatnet (vestsida)",
+    "description": "Normalvegen fra Gjuvvatnet (vestsida)",
     "trailhead": {
-     "lat": 61.54884,
-     "lng": 7.89055,
-     "name": "Korpen, Sognefjellsvegen",
-     "elevation_m": 1396.7
+     "name": "Gjuvvatnet",
+     "lat": 61.52503,
+     "lng": 7.83797,
+     "elevation_m": 1273.75,
+     "fullName": "Gjuvvatnet, Sognefjellsvegen (rv55)"
     },
-    "waypoints": [],
-    "source": "trailhead from Kartverket/OSM, line from the terrain model",
+    "waypoints": [
+     {
+      "name": "Inn i dalsokket aust for Gjuvvatnet",
+      "lat": 61.527,
+      "lng": 7.852,
+      "elevation_m": 1327.94
+     },
+     {
+      "name": "Ved det vesle vatnet pa dalbotnen",
+      "lat": 61.5275,
+      "lng": 7.865,
+      "elevation_m": 1426.34
+     },
+     {
+      "name": "Ut av dalsokket, dreier nordaustover",
+      "lat": 61.5272,
+      "lng": 7.876,
+      "elevation_m": 1560.92
+     },
+     {
+      "name": "Inn pa den vestvende ryggformasjonen",
+      "lat": 61.5284,
+      "lng": 7.887,
+      "elevation_m": 1767.33
+     },
+     {
+      "name": "Over det bratte steget, vestkanten av topplataet",
+      "lat": 61.5279,
+      "lng": 7.894,
+      "elevation_m": 1931.21
+     }
+    ],
+    "source": "audited (ok)",
+    "notes": "",
     "implied_start_m": 1403.8,
-    "start_vs_implied_m": -7.1
+    "start_vs_implied_m": -130.0
    }
   ]
  },
@@ -535,15 +949,55 @@
   "routes": [
    {
     "id": "normalruta",
-    "name": "Normalruta fra Juvvasshytta",
+    "name": "Normalruta fra Juvasshytta over Styggebrean",
+    "description": "Normalruta fra Juvasshytta over Styggebrean",
     "trailhead": {
+     "name": "Juvasshytta",
      "lat": 61.67276,
      "lng": 8.37059,
-     "name": "Juvvasshytta",
-     "elevation_m": 1841.3
+     "elevation_m": 1841.32,
+     "fullName": "Juvasshytta"
     },
-    "waypoints": [],
-    "source": "trailhead from Kartverket/OSM, line from the terrain model",
+    "waypoints": [
+     {
+      "name": "Over Juvflye sorvestover",
+      "lat": 61.66198,
+      "lng": 8.36268,
+      "elevation_m": 1890.73
+     },
+     {
+      "name": "Brekanten, inngang til Styggebrean",
+      "lat": 61.65296,
+      "lng": 8.34304,
+      "elevation_m": 2025.78
+     },
+     {
+      "name": "Midt pa Styggebrean",
+      "lat": 61.64787,
+      "lng": 8.33243,
+      "elevation_m": 2093.55
+     },
+     {
+      "name": "Ovre Styggebrean, av breen",
+      "lat": 61.64228,
+      "lng": 8.32522,
+      "elevation_m": 2171.1
+     },
+     {
+      "name": "2354-skuldra ved Keilhaus topp",
+      "lat": 61.63713,
+      "lng": 8.31839,
+      "elevation_m": 2354.18
+     },
+     {
+      "name": "Toppryggen fra aust",
+      "lat": 61.63663,
+      "lng": 8.3169,
+      "elevation_m": 2386
+     }
+    ],
+    "source": "audited (ok)",
+    "notes": "",
     "implied_start_m": 1838.6,
     "start_vs_implied_m": 2.7
    },
@@ -581,17 +1035,45 @@
   "routes": [
    {
     "id": "normalruta",
-    "name": "Normalruta fra Bygdin",
+    "name": "Normalruta fra Fagerstrand ved Bygdin",
+    "description": "Normalruta fra Fagerstrand ved Bygdin",
     "trailhead": {
-     "lat": 61.32767,
-     "lng": 8.7988,
-     "name": "Bygdin",
-     "elevation_m": 1061.7
+     "name": "Fagerstrand ved Bygdin",
+     "lat": 61.3306,
+     "lng": 8.79429,
+     "elevation_m": 1059.77,
+     "fullName": "Fagerstrand ved Bygdin"
     },
-    "waypoints": [],
-    "source": "trailhead from Kartverket/OSM, line from the terrain model",
+    "waypoints": [
+     {
+      "name": "Nedre sørvestflanken",
+      "lat": 61.3335,
+      "lng": 8.79,
+      "elevation_m": 1130.25
+     },
+     {
+      "name": "Sørvestskuldra, ca 1230 m",
+      "lat": 61.3356,
+      "lng": 8.7885,
+      "elevation_m": 1231.69
+     },
+     {
+      "name": "Midt i sørvestflanken",
+      "lat": 61.3378,
+      "lng": 8.7895,
+      "elevation_m": 1325.16
+     },
+     {
+      "name": "Inn på toppplatået fra vest",
+      "lat": 61.3396,
+      "lng": 8.793,
+      "elevation_m": 1405.01
+     }
+    ],
+    "source": "audited (corrected)",
+    "notes": "",
     "implied_start_m": 1075.0,
-    "start_vs_implied_m": -13.3
+    "start_vs_implied_m": -15.2
    }
   ]
  },
@@ -599,17 +1081,81 @@
   "routes": [
    {
     "id": "normalruta",
-    "name": "Normalruta fra Bygdin",
+    "name": "Normalruta fra Bygdin over nordryggen",
+    "description": "Normalruta fra Bygdin over nordryggen",
     "trailhead": {
-     "lat": 61.32767,
-     "lng": 8.7988,
-     "name": "Bygdin",
-     "elevation_m": 1061.7
+     "name": "Bitihorn p-plass ved Fv51",
+     "lat": 61.31861,
+     "lng": 8.80556,
+     "elevation_m": 1060.71,
+     "fullName": "Bitihorn p-plass ved Fv51, 1 km før Bygdin"
     },
-    "waypoints": [],
-    "source": "trailhead from Kartverket/OSM, line from the terrain model",
+    "waypoints": [
+     {
+      "name": "Der stien forlater flatene vest for Stavtjerne",
+      "lat": 61.3121,
+      "lng": 8.795,
+      "elevation_m": 1092.39
+     },
+     {
+      "name": "Nedre del av nordryggen",
+      "lat": 61.308,
+      "lng": 8.7918,
+      "elevation_m": 1177.11
+     },
+     {
+      "name": "Nordryggen, ca 1270 m",
+      "lat": 61.303,
+      "lng": 8.7912,
+      "elevation_m": 1270.84
+     },
+     {
+      "name": "Inn på nordvestflanken under toppkjeglen",
+      "lat": 61.298,
+      "lng": 8.7962,
+      "elevation_m": 1463.06
+     }
+    ],
+    "source": "audited (ok)",
+    "notes": "",
     "implied_start_m": 1107.5,
-    "start_vs_implied_m": -45.8
+    "start_vs_implied_m": -46.8
+   },
+   {
+    "id": "batskaret",
+    "name": "Sørruta fra Båtskaret",
+    "description": "Sørruta fra Båtskaret",
+    "trailhead": {
+     "name": "Nørdre Båtskardet p-plass ved Fv51",
+     "lat": 61.28984,
+     "lng": 8.81301,
+     "elevation_m": 1153.56,
+     "fullName": "Nørdre Båtskardet p-plass ved Fv51"
+    },
+    "waypoints": [
+     {
+      "name": "Vest fra skaret inn i sørøstflanken",
+      "lat": 61.2906,
+      "lng": 8.8052,
+      "elevation_m": 1273.06
+     },
+     {
+      "name": "Sørøstflanken, ca 1370 m",
+      "lat": 61.2909,
+      "lng": 8.8002,
+      "elevation_m": 1370.46
+     },
+     {
+      "name": "Inn på sørryggen",
+      "lat": 61.2923,
+      "lng": 8.7973,
+      "elevation_m": 1487.89
+     }
+    ],
+    "source": "audited (ok)",
+    "notes": "",
+    "implied_start_m": null,
+    "start_vs_implied_m": null
    }
   ]
  },
@@ -618,16 +1164,56 @@
    {
     "id": "normalruta",
     "name": "Normalruta fra Spranget",
+    "description": "Normalruta fra Spranget via Rondvassbu",
     "trailhead": {
-     "lat": 61.83918,
-     "lng": 9.72398,
-     "name": "Spranget",
-     "elevation_m": 1060.7
+     "name": "Spranget p-plass",
+     "lat": 61.83502,
+     "lng": 9.73108,
+     "elevation_m": 1081.68,
+     "fullName": "Spranget p-plass"
     },
-    "waypoints": [],
-    "source": "trailhead from Kartverket/OSM, line from the terrain model",
+    "waypoints": [
+     {
+      "name": "Stien fra Spranget, ca 1140 m",
+      "lat": 61.8522,
+      "lng": 9.7567,
+      "elevation_m": 1136.98
+     },
+     {
+      "name": "Dalen sørvest for Rondvassbu",
+      "lat": 61.8692,
+      "lng": 9.7873,
+      "elevation_m": 1171.73
+     },
+     {
+      "name": "Rondvassbu, inn på bratta mot nordøst",
+      "lat": 61.879,
+      "lng": 9.798,
+      "elevation_m": 1213.62
+     },
+     {
+      "name": "Stikrysset over Rondvassbu, ca 1440 m",
+      "lat": 61.8855,
+      "lng": 9.8137,
+      "elevation_m": 1439.92
+     },
+     {
+      "name": "Inn i Rondholet",
+      "lat": 61.8938,
+      "lng": 9.837,
+      "elevation_m": 1498.33
+     },
+     {
+      "name": "Vinjeronden",
+      "lat": 61.90381,
+      "lng": 9.84824,
+      "elevation_m": 2042.85
+     }
+    ],
+    "source": "audited (corrected)",
+    "notes": "",
     "implied_start_m": 1128.4,
-    "start_vs_implied_m": -67.7
+    "start_vs_implied_m": -46.7
    },
    {
     "id": "doralseter",
@@ -650,15 +1236,61 @@
   "routes": [
    {
     "id": "normalruta",
-    "name": "Normalruta fra Snøheim",
+    "name": "Normalruta fra Snøheim over østryggen",
+    "description": "Normalruta fra Snøheim over østryggen",
     "trailhead": {
+     "name": "Snøheim turisthytte",
      "lat": 62.29417,
      "lng": 9.35067,
-     "name": "Snøheim",
-     "elevation_m": 1474.5
+     "elevation_m": 1474.49,
+     "fullName": "Snøheim turisthytte"
     },
-    "waypoints": [],
-    "source": "trailhead from Kartverket/OSM, line from the terrain model",
+    "waypoints": [
+     {
+      "name": "Gangbrua over Stridåi",
+      "lat": 62.29365,
+      "lng": 9.34882,
+      "elevation_m": 1470.92
+     },
+     {
+      "name": "Inn på gamle militærtraktorvegen",
+      "lat": 62.29373,
+      "lng": 9.34622,
+      "elevation_m": 1474.02
+     },
+     {
+      "name": "Traktorvegen mot Snøhetta, ca 1520 m",
+      "lat": 62.30107,
+      "lng": 9.33287,
+      "elevation_m": 1519.22
+     },
+     {
+      "name": "Gamle Reinheim (ruinane)",
+      "lat": 62.31073,
+      "lng": 9.30794,
+      "elevation_m": 1670.51
+     },
+     {
+      "name": "Inn på østryggen",
+      "lat": 62.315,
+      "lng": 9.298,
+      "elevation_m": 1824.38
+     },
+     {
+      "name": "Østryggen, ca 2040 m",
+      "lat": 62.3187,
+      "lng": 9.2863,
+      "elevation_m": 2044.13
+     },
+     {
+      "name": "Siste bratte partiet mot Stortoppen",
+      "lat": 62.32,
+      "lng": 9.2746,
+      "elevation_m": 2212.53
+     }
+    ],
+    "source": "audited (corrected)",
+    "notes": "",
     "implied_start_m": 1487.0,
     "start_vs_implied_m": -12.5
    },
@@ -683,17 +1315,45 @@
   "routes": [
    {
     "id": "normalruta",
-    "name": "Normalruta fra Skyrvedalsvegen",
+    "name": "Normalruta frå Hornslie over Hødnetjedne",
+    "description": "Normalruta frå Hornslie over Hødnetjedne",
     "trailhead": {
-     "lat": 60.82829,
-     "lng": 8.57482,
-     "name": "Skyrvedalsvegen",
-     "elevation_m": 887.6
+     "name": "Hornslie p-plass",
+     "lat": 60.80085,
+     "lng": 8.62869,
+     "elevation_m": 1056.13,
+     "fullName": "Hornslie p-plass"
     },
-    "waypoints": [],
-    "source": "trailhead from Kartverket/OSM, line from the terrain model",
+    "waypoints": [
+     {
+      "name": "Over stigninga frå Hornslie",
+      "lat": 60.80348,
+      "lng": 8.62167,
+      "elevation_m": 1192.21
+     },
+     {
+      "name": "Platået aust for Hødnetjedne",
+      "lat": 60.80838,
+      "lng": 8.6125,
+      "elevation_m": 1219.69
+     },
+     {
+      "name": "Foten av austryggen",
+      "lat": 60.81617,
+      "lng": 8.6052,
+      "elevation_m": 1243.43
+     },
+     {
+      "name": "Austryggen 1380",
+      "lat": 60.81635,
+      "lng": 8.59859,
+      "elevation_m": 1385.77
+     }
+    ],
+    "source": "audited (ok)",
+    "notes": "",
     "implied_start_m": 852.5,
-    "start_vs_implied_m": 35.1
+    "start_vs_implied_m": 203.6
    }
   ]
  },
@@ -701,17 +1361,45 @@
   "routes": [
    {
     "id": "normalruta",
-    "name": "Normalruta fra Tjoflot",
+    "name": "Normalruta frå Tjoflot",
+    "description": "Normalruta frå Tjoflot via Vindhovden",
     "trailhead": {
-     "lat": 60.45066,
-     "lng": 6.64006,
-     "name": "Tjoflot",
-     "elevation_m": 181.2
+     "name": "Tjoflot øvre parkering",
+     "lat": 60.45406,
+     "lng": 6.64375,
+     "elevation_m": 276.33,
+     "fullName": "Tjoflot øvre parkering"
     },
-    "waypoints": [],
-    "source": "trailhead from Kartverket/OSM, line from the terrain model",
+    "waypoints": [
+     {
+      "name": "Vindhovden stølar",
+      "lat": 60.4585,
+      "lng": 6.6406,
+      "elevation_m": 586.03
+     },
+     {
+      "name": "Ryggen 750",
+      "lat": 60.45899,
+      "lng": 6.6556,
+      "elevation_m": 753.16
+     },
+     {
+      "name": "Der det brattnar",
+      "lat": 60.45898,
+      "lng": 6.66695,
+      "elevation_m": 952.84
+     },
+     {
+      "name": "Øvre flanke 1146",
+      "lat": 60.45877,
+      "lng": 6.67432,
+      "elevation_m": 1146.11
+     }
+    ],
+    "source": "audited (ok)",
+    "notes": "",
     "implied_start_m": 181.5,
-    "start_vs_implied_m": -0.3
+    "start_vs_implied_m": 94.8
    }
   ]
  },
@@ -719,17 +1407,51 @@
   "routes": [
    {
     "id": "normalruta",
-    "name": "Normalruta fra Rosendal",
+    "name": "Normalruta frå Kletta",
+    "description": "Normalruta frå Kletta via Skarshaug",
     "trailhead": {
-     "lat": 59.98589,
-     "lng": 6.01157,
-     "name": "Rosendal",
-     "elevation_m": 8.9
+     "name": "Kletta p-plass",
+     "lat": 59.99694,
+     "lng": 6.01657,
+     "elevation_m": 153.97,
+     "fullName": "Kletta p-plass, Rosendal"
     },
-    "waypoints": [],
-    "source": "trailhead from Kartverket/OSM, line from the terrain model",
+    "waypoints": [
+     {
+      "name": "Skogen over Kletta",
+      "lat": 60.00062,
+      "lng": 6.03065,
+      "elevation_m": 313.99
+     },
+     {
+      "name": "Skarshaug",
+      "lat": 59.99987,
+      "lng": 6.04651,
+      "elevation_m": 803.39
+     },
+     {
+      "name": "Rindane",
+      "lat": 60.00215,
+      "lng": 6.05631,
+      "elevation_m": 1121.77
+     },
+     {
+      "name": "Holo",
+      "lat": 60.00711,
+      "lng": 6.06652,
+      "elevation_m": 1210.81
+     },
+     {
+      "name": "Siste bakken",
+      "lat": 60.00605,
+      "lng": 6.07679,
+      "elevation_m": 1332.14
+     }
+    ],
+    "source": "audited (suspect)",
+    "notes": "",
     "implied_start_m": 5.7,
-    "start_vs_implied_m": 3.2
+    "start_vs_implied_m": 148.3
    }
   ]
  },
@@ -737,17 +1459,51 @@
   "routes": [
    {
     "id": "normalruta",
-    "name": "Normalruta fra Gaustablikk",
+    "name": "Frå Langefonn",
+    "description": "Frå Langefonn via Svineroi og austryggen",
     "trailhead": {
-     "lat": 59.88011,
-     "lng": 8.73429,
-     "name": "Gaustablikk",
-     "elevation_m": 944.6
+     "name": "Langefonn parkering",
+     "lat": 59.86816,
+     "lng": 8.68879,
+     "elevation_m": 921.53,
+     "fullName": "Langefonn parkering"
     },
-    "waypoints": [],
-    "source": "trailhead from Kartverket/OSM, line from the terrain model",
+    "waypoints": [
+     {
+      "name": "Svineroisetra",
+      "lat": 59.86307,
+      "lng": 8.68024,
+      "elevation_m": 1021.36
+     },
+     {
+      "name": "Flanken 1250",
+      "lat": 59.85408,
+      "lng": 8.67462,
+      "elevation_m": 1250.04
+     },
+     {
+      "name": "Toppen av Langefonn",
+      "lat": 59.84764,
+      "lng": 8.6741,
+      "elevation_m": 1455.29
+     },
+     {
+      "name": "Himmelranden-ryggen",
+      "lat": 59.84755,
+      "lng": 8.6664,
+      "elevation_m": 1584.91
+     },
+     {
+      "name": "Inn på toppflata",
+      "lat": 59.85033,
+      "lng": 8.65542,
+      "elevation_m": 1831.03
+     }
+    ],
+    "source": "audited (ok)",
+    "notes": "",
     "implied_start_m": 931.5,
-    "start_vs_implied_m": 13.1
+    "start_vs_implied_m": -10.0
    },
    {
     "id": "stavsro",

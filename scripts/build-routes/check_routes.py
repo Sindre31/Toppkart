@@ -22,7 +22,7 @@ for slug, recs in routes.items():
         bad.append(f"{slug}: duplicate route ids {ids}")
     for r in recs:
         pts, zs = r["points"], r["elevations"]
-        notes = []
+        notes: list[str] = []
         d_end = haversine(pts[-1][0], pts[-1][1], s["lat"], s["lng"])
         maxgap = max(haversine(a[0], a[1], b[0], b[1]) for a, b in zip(pts, pts[1:]))
         steep = sum(
@@ -32,7 +32,14 @@ for slug, recs in routes.items():
             and abs(math.degrees(math.atan2(zb - za, haversine(a[0], a[1], b[0], b[1])))) > 40
         )
         mid = len(pts) // 2
-        z_api, _ = dtm_point(*pts[mid])
+        # The elevation API drops connections under load; a flaky network should
+        # not look like a data defect, so an unreachable probe is reported as
+        # unchecked rather than crashing the pass.
+        try:
+            z_api, _ = dtm_point(*pts[mid])
+        except Exception:  # noqa: BLE001
+            z_api = None
+            notes.append("midpoint elevation unverified (API unreachable)")
         if d_end > 30:
             notes.append(f"ends {d_end:.0f} m off the summit")
         if maxgap > 120:
