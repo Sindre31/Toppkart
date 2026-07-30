@@ -276,3 +276,16 @@
   .side { width: min(85vw, 372px); }
   .map { left: 0; }
 }
+
+/* The topbar is a fixed 56px row that cannot wrap, and at 360px it was asking
+   for ~453px of content. Tightening the gap, the padding and the wordmark buys
+   back what the brand, both links and the switcher need to sit side by side —
+   the switcher's short labels (globals.css) cover the rest. */
+@media (max-width: 620px) {
+  .topbar { gap: 12px; padding: 0 14px; }
+  .brand { font-size: 15px; }
+  /* The sidebar is 85vw here, and at 17px a long single-word peak name plus its
+     nowrap altitude ("TROMSDALSTINDEN 1238 MOH") overran the card and was cut
+     off at the edge. Two points down is enough for the longest name in the set. */
+  .tour h3 { font-size: 15px; }
+}

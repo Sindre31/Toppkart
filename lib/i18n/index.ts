@@ -71,3 +71,10 @@ export const LANG_NAMES: Record<Lang, string> = {
   no: "Norsk",
   en: "English",
 };
+
+/** Short forms for narrow screens. The full endonyms need 133px, which a 56px
+ *  topbar on a phone does not have — see the `.lang-short` rule in globals. */
+export const LANG_CODES: Record<Lang, string> = {
+  no: "NO",
+  en: "EN",
+};

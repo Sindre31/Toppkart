@@ -119,7 +119,10 @@ export function CheckoutForm({
       <div
         style={{
           display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
+          /* `min(320px, 100%)` rather than a bare 320px: a plain minimum can
+             never shrink under it, so on a 320px phone the track stayed 320
+             wide inside a 280px container and pushed the page sideways. */
+          gridTemplateColumns: "repeat(auto-fit, minmax(min(320px, 100%), 1fr))",
           gap: "clamp(24px, 4vw, 56px)",
           alignItems: "start",
         }}
