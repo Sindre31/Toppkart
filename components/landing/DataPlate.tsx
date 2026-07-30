@@ -15,48 +15,15 @@ export function DataPlate({ lang }: { lang: Lang }) {
         </header>
         <table className="table">
           <tbody>
+            {/* The cells are styled from globals rather than inline so the
+                narrow-screen rule can restack them — an inline `width` would
+                out-specify any media query and keep forcing four columns. */}
             {t.plateRows.map((row, index) => (
               <tr key={row.prop}>
-                <td
-                  className="hairline"
-                  style={{
-                    width: 72,
-                    padding: "12px 0 12px 24px",
-                    fontSize: 13,
-                    fontWeight: 600,
-                    letterSpacing: "0.08em",
-                    color: "var(--color-accent-700)",
-                  }}
-                >
-                  {String(index + 1).padStart(2, "0")}
-                </td>
-                <td className="hairline" style={{ width: "30%", padding: "12px 24px 12px 0", fontSize: 15 }}>
-                  {row.prop}
-                </td>
-                <td
-                  className="hairline"
-                  style={{
-                    width: "22%",
-                    padding: "12px 24px 12px 0",
-                    fontFamily: "var(--font-heading)",
-                    fontWeight: 600,
-                    fontSize: 22,
-                    letterSpacing: "0.02em",
-                    whiteSpace: "nowrap",
-                  }}
-                >
-                  {row.val}
-                </td>
-                <td
-                  className="hairline"
-                  style={{
-                    padding: "12px 24px 12px 0",
-                    fontSize: 14,
-                    color: "color-mix(in srgb, var(--color-text) 70%, transparent)",
-                  }}
-                >
-                  {row.rem}
-                </td>
+                <td className="hairline plate-idx">{String(index + 1).padStart(2, "0")}</td>
+                <td className="hairline plate-prop">{row.prop}</td>
+                <td className="hairline plate-val">{row.val}</td>
+                <td className="hairline plate-rem">{row.rem}</td>
               </tr>
             ))}
           </tbody>

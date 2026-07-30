@@ -137,7 +137,14 @@ export default async function TourGuidePage({ params }: { params: Promise<{ slug
 
         <section style={{ padding: "0 0 40px" }}>
           <Blueprint>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(150px, 1fr))" }}>
+            {/* `min(150px, 100%)` so the two stat columns can fall below their
+                floor on a narrow phone instead of widening the page. */}
+            <div
+              style={{
+                display: "grid",
+                gridTemplateColumns: "repeat(auto-fit, minmax(min(150px, 100%), 1fr))",
+              }}
+            >
               {stats.map((s) => (
                 <div
                   key={s.label}

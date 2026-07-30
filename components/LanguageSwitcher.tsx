@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { Suspense, type MouseEvent } from "react";
 
-import { LANGS, LANG_NAMES, LANG_PARAM, langCookie, type Lang } from "@/lib/i18n";
+import { LANGS, LANG_CODES, LANG_NAMES, LANG_PARAM, langCookie, type Lang } from "@/lib/i18n";
 import { commonDict } from "@/lib/i18n/common";
 
 /** One option in the NO/EN switch.
@@ -50,7 +50,12 @@ function LangLink({ code, href, lang }: { code: Lang; href: string; lang: Lang }
       aria-current={code === lang ? "true" : undefined}
       data-active={code === lang ? "true" : undefined}
     >
-      {LANG_NAMES[code]}
+      {/* Both labels ship; CSS picks one by width. Doing it in JS would need the
+          viewport at render time, which the server does not have. `display:none`
+          keeps the hidden one out of the accessibility tree, so it is never
+          announced twice. */}
+      <span className="lang-full">{LANG_NAMES[code]}</span>
+      <span className="lang-short">{LANG_CODES[code]}</span>
     </Link>
   );
 }

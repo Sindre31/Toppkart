@@ -44,7 +44,7 @@ export default async function LandingPage() {
         <main>
           {/* — hero — */}
           <section style={{ padding: "96px 0 72px" }}>
-            <h1 className="display" style={{ fontSize: "clamp(46px, 7vw, 92px)" }}>
+            <h1 className="display display-hero">
               <span style={{ display: "block" }}>{t.heroLine1}</span>
               <span style={{ display: "block" }}>{t.heroLine2}</span>
             </h1>

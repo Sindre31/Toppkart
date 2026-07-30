@@ -205,8 +205,17 @@ textarea.input { min-height: 90px; resize: vertical; }
 /* The language switcher is a `.seg` built from links rather than radios, so the
    selected state comes from `data-active` instead of `:has(input:checked)`.
    It lives in the top-right corner of a nav row on every page, so it centres on
-   the cross axis to line up with the links and the CTA beside it. */
-.lang-switch { align-self: center; }
+   the cross axis to line up with the links and the CTA beside it.
+
+   `flex: none` is a fix, not a default. `.seg` sets `overflow: hidden`, which
+   drops a flex item's automatic minimum size to zero — so in a tight nav the
+   switcher was the one item able to shrink, and it absorbed the whole shortfall
+   silently: the box collapsed to 40px while its links still needed 133px, and
+   `overflow: hidden` clipped them. On a phone that left "English" entirely off
+   screen with no way to reach it. Now it keeps its width and the short labels
+   below make it fit. */
+.lang-switch { align-self: center; flex: none; }
+.lang-short { display: none; }
 .lang-switch a.seg-opt { color: inherit; text-decoration: none; }
 .lang-switch a.seg-opt[data-active] { background: var(--color-accent); color: var(--color-bg); }
 .lang-switch a.seg-opt:not([data-active]):hover {
@@ -343,6 +352,11 @@ a.btn-secondary, a.btn-secondary:hover { color: var(--color-text); }
      only pushes the first row. Without this the switcher lands at the left end
      of the second row instead of staying in the right-hand corner. */
   .site-nav .lang-switch { margin-left: auto; }
+  /* "Norsk"/"English" costs 133px; "NO"/"EN" costs 70. That is the difference
+     between the map's 56px topbar fitting on a phone and clipping a language
+     nobody can then reach. */
+  .lang-full { display: none; }
+  .lang-short { display: inline; }
 }
 
 /* — section kicker: "01 · Abonnement" over a 1px rule — */
@@ -357,6 +371,15 @@ a.btn-secondary, a.btn-secondary:hover { color: var(--color-text); }
   font-family: var(--font-heading); font-weight: 600;
   line-height: 1.04; letter-spacing: 0.01em; text-transform: uppercase;
   margin: 0 0 0 -0.052em;
+}
+.display-hero { font-size: clamp(46px, 7vw, 92px); }
+/* The 46px floor assumes a viewport wide enough for the longest word. It is not
+   on a phone: "TOPPTURENE." sets at 366px there against 322px of usable width,
+   and since it cannot break it dragged the entire landing page into horizontal
+   scroll. Below this width the size tracks the viewport instead. `min()` meets
+   the clamp floor exactly at 620px, so the two curves join without a jump. */
+@media (max-width: 620px) {
+  .display-hero { font-size: min(46px, 10.5vw); }
 }
 .h-section {
   font-size: 32px; line-height: 36px; letter-spacing: 0.02em;
@@ -393,6 +416,38 @@ a.btn-secondary, a.btn-secondary:hover { color: var(--color-text); }
   color: color-mix(in srgb, var(--color-text) 70%, transparent);
 }
 .hairline { border-bottom: 1px solid color-mix(in srgb, var(--color-text) 8%, transparent); }
+
+/* The four plate cells: index, property, value, remark. */
+.plate-idx {
+  width: 72px; padding: 12px 0 12px 24px;
+  font-size: 13px; font-weight: 600; letter-spacing: 0.08em;
+  color: var(--color-accent-700);
+}
+.plate-prop { width: 30%; padding: 12px 24px 12px 0; font-size: 15px; }
+.plate-val {
+  width: 22%; padding: 12px 24px 12px 0;
+  font-family: var(--font-heading); font-weight: 600; font-size: 22px;
+  letter-spacing: 0.02em; white-space: nowrap;
+}
+.plate-rem {
+  padding: 12px 24px 12px 0; font-size: 14px;
+  color: color-mix(in srgb, var(--color-text) 70%, transparent);
+}
+
+/* Four columns need ~459px of content and will not shrink below it, so on a
+   phone the plate pushed the whole landing page into horizontal scroll. Drop
+   the remark onto its own line and the row fits any width. */
+@media (max-width: 620px) {
+  .plate .table, .plate .table tbody { display: block; }
+  .plate .table tr {
+    display: grid; grid-template-columns: auto 1fr auto;
+    align-items: baseline; column-gap: 12px; padding: 10px 16px;
+    border-bottom: 1px solid color-mix(in srgb, var(--color-text) 8%, transparent);
+  }
+  .plate .table td { display: block; width: auto; padding: 0; border-bottom: 0; }
+  .plate-val { font-size: 19px; }
+  .plate-rem { grid-column: 1 / -1; padding-top: 4px; }
+}
 
 /* — stat cells (guide plate, map detail) — */
 .stat-l {
