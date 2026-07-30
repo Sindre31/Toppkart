@@ -36,6 +36,13 @@ export function isLang(value: unknown): value is Lang {
   return value === "no" || value === "en";
 }
 
+/** The client-side counterpart to the cookie the middleware writes. It lives
+ *  next to the constants so the two cannot drift apart on path, lifetime or
+ *  SameSite — a mismatch there would leave two `tk_lang` cookies racing. */
+export function langCookie(lang: Lang): string {
+  return `${LANG_COOKIE}=${lang}; path=/; max-age=${LANG_COOKIE_MAX_AGE}; samesite=lax`;
+}
+
 /** Narrow an untrusted string (cookie, query param) to a supported language. */
 export function toLang(value: unknown): Lang {
   return isLang(value) ? value : DEFAULT_LANG;

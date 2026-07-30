@@ -1,17 +1,60 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname, useSearchParams } from "next/navigation";
-import { Suspense } from "react";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import { Suspense, type MouseEvent } from "react";
 
-import { LANGS, LANG_NAMES, LANG_PARAM, type Lang } from "@/lib/i18n";
+import { LANGS, LANG_NAMES, LANG_PARAM, langCookie, type Lang } from "@/lib/i18n";
 import { commonDict } from "@/lib/i18n/common";
 
-/** NO/EN switch, rendered as two links rather than a JS control: each one
- *  points at the current URL with `?lang=` appended, which the middleware turns
- *  into the `tk_lang` cookie before redirecting back to the clean path. That
- *  keeps the switch working without JavaScript and keeps every URL shareable.
+/** One option in the NO/EN switch.
+ *
+ *  The `href` is the no-JavaScript path: `?lang=` reaches the middleware, which
+ *  writes the `tk_lang` cookie and redirects back to the clean URL. That keeps
+ *  the switch working with scripting off and keeps `/kart?lang=en` shareable.
+ *
+ *  With JavaScript we deliberately do not follow it. Going through the redirect
+ *  is a navigation, and Next's Router Cache keys on URL — so landing back on the
+ *  clean path re-used the payload already cached under it and the page kept the
+ *  previous language until something else evicted the entry. Writing the cookie
+ *  here and refetching the current route avoids the round trip entirely: no URL
+ *  change, no cache entry to go stale, and client state survives. On `/kart`
+ *  that is the difference between retranslating the map in place and tearing
+ *  Leaflet down to rebuild it tile by tile.
+ *
+ *  `prefetch={false}` is load-bearing either way. These hrefs have a side
+ *  effect, and prefetching them set the language before anyone clicked — with
+ *  one link per language, whichever prefetch landed last silently won.
  */
+function LangLink({ code, href, lang }: { code: Lang; href: string; lang: Lang }) {
+  const router = useRouter();
+
+  function onClick(event: MouseEvent<HTMLAnchorElement>) {
+    // Modified clicks mean "open elsewhere" — leave those to the browser, and
+    // let the href do the work in the new tab.
+    if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) {
+      return;
+    }
+    event.preventDefault();
+    document.cookie = langCookie(code);
+    router.refresh();
+  }
+
+  return (
+    <Link
+      href={href}
+      prefetch={false}
+      onClick={onClick}
+      className="seg-opt"
+      hrefLang={code === "en" ? "en" : "no"}
+      aria-current={code === lang ? "true" : undefined}
+      data-active={code === lang ? "true" : undefined}
+    >
+      {LANG_NAMES[code]}
+    </Link>
+  );
+}
+
 function Switcher({ lang, className = "" }: { lang: Lang; className?: string }) {
   const pathname = usePathname();
   const searchParams = useSearchParams();
@@ -26,16 +69,7 @@ function Switcher({ lang, className = "" }: { lang: Lang; className?: string }) 
   return (
     <div className={`seg lang-switch ${className}`.trim()} role="group" aria-label={t.langLabel}>
       {LANGS.map((code) => (
-        <Link
-          key={code}
-          href={hrefFor(code)}
-          className="seg-opt"
-          hrefLang={code === "en" ? "en" : "no"}
-          aria-current={code === lang ? "true" : undefined}
-          data-active={code === lang ? "true" : undefined}
-        >
-          {LANG_NAMES[code]}
-        </Link>
+        <LangLink key={code} code={code} href={hrefFor(code)} lang={lang} />
       ))}
     </div>
   );
@@ -57,16 +91,7 @@ function SwitcherFallback({ lang, className = "" }: { lang: Lang; className?: st
   return (
     <div className={`seg lang-switch ${className}`.trim()} role="group" aria-label={t.langLabel}>
       {LANGS.map((code) => (
-        <Link
-          key={code}
-          href={`?${LANG_PARAM}=${code}`}
-          className="seg-opt"
-          hrefLang={code === "en" ? "en" : "no"}
-          aria-current={code === lang ? "true" : undefined}
-          data-active={code === lang ? "true" : undefined}
-        >
-          {LANG_NAMES[code]}
-        </Link>
+        <LangLink key={code} code={code} href={`?${LANG_PARAM}=${code}`} lang={lang} />
       ))}
     </div>
   );

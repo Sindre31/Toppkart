@@ -4,9 +4,11 @@
  *  56px topbar, 372px tour list on the left, full-bleed Leaflet map on the right,
  *  the shared NO/EN switcher, and a detail panel that draws the schematic route
  *  line. The language arrives as a prop from the server, which reads the
- *  `tk_lang` cookie — switching it is a navigation, not local state. */
+ *  `tk_lang` cookie — it is never local state. Switching refetches this route
+ *  rather than navigating, so the filters, the selected tour and the live
+ *  Leaflet instance all survive the change. */
 
-import { useCallback, useEffect, useMemo, useRef, useState, type ComponentType } from "react";
+import { Suspense, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import dynamic from "next/dynamic";
 import Link from "next/link";
 import { Check, Lock, Unlock } from "lucide-react";
@@ -18,24 +20,15 @@ import type { Lang } from "@/lib/i18n";
 import { localizeTours } from "@/lib/i18n/content";
 import { mapDict, type Dict } from "@/lib/i18n/map";
 import type { Grade, Tour } from "@/lib/types";
-import type { MapCanvasProps } from "./MapCanvas";
 import s from "./kart.module.css";
 
-/* `next/dynamic` hands its `loading` element no props, so it cannot read the
-   active language at render time. Build one lazy wrapper per language instead
-   and pick with `lang` — both resolve the same module, so the chunk is still
-   fetched exactly once. */
-function lazyMapCanvas(lang: Lang): ComponentType<MapCanvasProps> {
-  return dynamic(() => import("./MapCanvas"), {
-    ssr: false,
-    loading: () => <div className={s.mapLoading}>{mapDict(lang).mapLoading}</div>,
-  });
-}
-
-const MAP_CANVAS: Record<Lang, ComponentType<MapCanvasProps>> = {
-  no: lazyMapCanvas("no"),
-  en: lazyMapCanvas("en"),
-};
+/* One lazy wrapper, created once at module scope. A wrapper per language would
+   hand React a different component type whenever `lang` changes, which unmounts
+   the Leaflet map and refetches every tile just to retranslate the tooltips.
+   The canvas takes `lang` as a prop, and the loading placeholder comes from the
+   Suspense boundary at the render site — so both stay translated without the
+   component's identity depending on the language. */
+const MapCanvas = dynamic(() => import("./MapCanvas"), { ssr: false });
 
 /** `.btn-primary` sets `color: var(--color-bg)`, but globals' `a:hover` rule is
  *  more specific for links — pin the colour inline so CTAs stay legible. */
@@ -85,7 +78,6 @@ export default function MapView({
   const detailRef = useRef<HTMLDivElement>(null);
 
   const t = mapDict(lang);
-  const MapCanvas = MAP_CANVAS[lang];
 
   /* Teaser, aspect, season and duration come out translated; peak and region
      names are proper nouns and stay Norwegian, so search and the region filter
@@ -344,13 +336,15 @@ export default function MapView({
       </aside>
 
       <div className={s.map}>
-        <MapCanvas
-          tours={tours}
-          visible={visible}
-          selectedSlug={selectedSlug}
-          onSelect={openTour}
-          lang={lang}
-        />
+        <Suspense fallback={<div className={s.mapLoading}>{t.mapLoading}</div>}>
+          <MapCanvas
+            tours={tours}
+            visible={visible}
+            selectedSlug={selectedSlug}
+            onSelect={openTour}
+            lang={lang}
+          />
+        </Suspense>
       </div>
     </div>
   );
