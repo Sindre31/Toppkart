@@ -17,8 +17,17 @@ import re
 from geo import dtm_point
 
 # ---------------------------------------------------------------- primary routes
-# slug -> (lat, lng, trailhead name). The elevation beside each is what the DTM
-# returns, against the start height the tour's stated vertical implies.
+# Fallback trailheads, used only for a tour with no researched corridor. Every
+# tour currently has one, so nothing here is reached — it is kept as the path
+# back if corridors.swarm.json is ever regenerated from scratch.
+#
+# CAUTION: the "want" figures below are summitM − verticalM, and that is not a
+# sound way to locate a trailhead. verticalM holds the peak's published ALTITUDE
+# in eight of the 24 tours rather than its ascent (see README), so matching a
+# candidate's elevation to it can reproduce the error and then look like
+# confirmation. That is exactly how the Rørnestinden entry below went wrong.
+# Treat these as a shortlist to check against a route description, never as an
+# answer.
 PICKS = {
     "slogen": (62.19291, 6.65840, "Øye i Norangsdalen"),          # 5 m, want 3
     "snohetta": (62.29417, 9.35067, "Snøheim"),                   # 1474 m, want 1487
@@ -37,9 +46,14 @@ PICKS = {
     "fanaraken": (61.50808, 7.81156, "1100-meteren, Sognefjellsvegen"),  # 1100 m, want 1117
     "steindalsnosi": (61.54884, 7.89055, "Korpen, Sognefjellsvegen"),    # 1397 m, want 1404
     "storehorn": (60.82829, 8.57482, "Skyrvedalsvegen"),                 # 887 m, want 852
-    # Rørnestinden takes its name from Rørnes, and its stated 1041 m gain equals
-    # the summit height — so the tour starts at the fjord, not up at Lyngseidet.
-    "rornestinden": (69.58195, 20.14945, "Rørnesveien"),                 # 2 m, want -11
+    # REFUTED, kept only so the mistake is not made again. I argued that
+    # Rørnestinden's stated 1041 m "gain" equalling its summit height meant a
+    # fjord start. 1041 is the peak's published altitude, duplicated into the
+    # vertical field. Friflyt names Lyngseidet/Eidebakken as the start, OSM has a
+    # car park on that exact coordinate against farm access with no parking within
+    # a kilometre here, and the router gives +1004 m from Lyngseidet against a
+    # published 1000 m. The researched corridor wins.
+    "rornestinden": (69.58195, 20.14945, "Rørnesveien"),                 # 2 m — do not use
 }
 
 # Tours where PICKS would win over a researched corridor. Empty: the one entry it
@@ -65,8 +79,9 @@ ALTERNATES = {
                 (61.63362, 8.33792, "Svellnose"),      # 2271 m
                 (61.63491, 8.32595, "Keilhaus topp"),  # 2353 m
             ],
-            "note": "The other standard route, and the one the app's 1100 m figure "
-                    "sits closest to — 1365 m from the valley floor at Spiterstulen.",
+            "note": "The other standard route. Its 1434 m of gain from the valley "
+                    "floor is why the app's old 1100 m figure matched neither start: "
+                    "it sat between this and the 632 m from Juvasshytta.",
         }
     ],
     "tromsdalstinden": [
