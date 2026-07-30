@@ -137,13 +137,18 @@ a useless label. The full text is kept alongside as `description` / `fullName`.
 
 ## The app's numbers, reconciled against the ground
 
-`verticalM` now means one thing everywhere: the cumulative ascent of the tour's
-**first** route, as solved over the terrain model, rounded to the nearest 10 m so
-it reads like a published figure and does not drift when the geometry is
-regenerated. An alternative route has its own gain and is not expected to match.
+`verticalM` is now the cumulative ascent of the tour's **first** route. Every one
+of the 24 agrees with its routed gain to within 25 m, and most to within 5 m; an
+alternative route has its own gain and is not expected to match.
 
-Sixteen tours needed correcting to get there. Three were obvious — figures that
-matched no real trailhead at all:
+Sixteen tours were corrected to get there, to the routed gain rounded to the
+nearest 10 m — rounded so the figures read like published data and do not drift
+when the geometry is regenerated. Four were left as they were, because the gap is
+within the noise of how a gain is counted and the published number is the rounder
+one: Skåla 1840 (routed 1815), Synshorn 400 (424), Snøhetta 800 (819),
+Gaustatoppen 950 (965).
+
+Of the sixteen, three were figures that matched no real trailhead at all:
 
 | tour | was | now | why |
 | --- | --- | --- | --- |
