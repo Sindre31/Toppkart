@@ -203,8 +203,10 @@ textarea.input { min-height: 90px; resize: vertical; }
 .seg-opt:has(input:focus-visible) { outline: 2px solid var(--color-accent); outline-offset: -2px; }
 
 /* The language switcher is a `.seg` built from links rather than radios, so the
-   selected state comes from `data-active` instead of `:has(input:checked)`. */
-.lang-switch { align-self: flex-start; }
+   selected state comes from `data-active` instead of `:has(input:checked)`.
+   It lives in the top-right corner of a nav row on every page, so it centres on
+   the cross axis to line up with the links and the CTA beside it. */
+.lang-switch { align-self: center; }
 .lang-switch a.seg-opt { color: inherit; text-decoration: none; }
 .lang-switch a.seg-opt[data-active] { background: var(--color-accent); color: var(--color-bg); }
 .lang-switch a.seg-opt:not([data-active]):hover {
@@ -335,7 +337,13 @@ a:hover { color: var(--color-accent-900); }
    Pin the label to the ground colour so links and buttons behave identically. */
 a.btn-primary, a.btn-primary:hover { color: var(--color-bg); }
 a.btn-secondary, a.btn-secondary:hover { color: var(--color-text); }
-@media (max-width: 620px) { .site-nav { padding: 10px 20px; gap: var(--space-3); flex-wrap: wrap; } }
+@media (max-width: 620px) {
+  .site-nav { padding: 10px 20px; gap: var(--space-3); flex-wrap: wrap; }
+  /* A nav with enough links wraps here, and the brand's `margin-right: auto`
+     only pushes the first row. Without this the switcher lands at the left end
+     of the second row instead of staying in the right-hand corner. */
+  .site-nav .lang-switch { margin-left: auto; }
+}
 
 /* — section kicker: "01 · Abonnement" over a 1px rule — */
 .kicker {
