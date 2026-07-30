@@ -137,18 +137,22 @@ a useless label. The full text is kept alongside as `description` / `fullName`.
 
 ## The app's numbers, reconciled against the ground
 
-`verticalM` is now the cumulative ascent of the tour's **first** route. Every one
-of the 24 agrees with its routed gain to within 25 m, and most to within 5 m; an
-alternative route has its own gain and is not expected to match.
+`verticalM` is now the cumulative ascent of the tour's **first** route. **Every one
+of the 24 agrees with its routed gain to within 10 m**, which is the invariant to
+assert if this is ever checked automatically. An alternative route has its own
+gain and is not expected to match.
 
-Sixteen tours were corrected to get there, to the routed gain rounded to the
+Twenty tours were corrected to get there, to the routed gain rounded to the
 nearest 10 m — rounded so the figures read like published data and do not drift
-when the geometry is regenerated. Four were left as they were, because the gap is
-within the noise of how a gain is counted and the published number is the rounder
-one: Skåla 1840 (routed 1815), Synshorn 400 (424), Snøhetta 800 (819),
-Gaustatoppen 950 (965).
+when the geometry is regenerated.
 
-Of the sixteen, three were figures that matched no real trailhead at all:
+The four that were *not* touched are the ones already inside 10 m of a figure that
+is deliberately round and matches the guidebooks: Tromsdalstinden 1200 (routed
+1206), Store Blåmann 1040 (1031), Storgalten 1219 (1210), Rondslottet 1240 (1245).
+Replacing a published 1200 with a machine-rounded 1210 would be a downgrade, not a
+correction.
+
+Of the twenty, three were figures that matched no real trailhead at all:
 
 | tour | was | now | why |
 | --- | --- | --- | --- |
@@ -173,6 +177,10 @@ The other thirteen followed from the audited trailheads:
 | Bitihorn | 500 m | **550 m** | Bitihorn p-plass ved Fv51 |
 | Stornappstinden | 730 m | **680 m** | Nappskaret skianlegg (Friflyt gives 680 m) |
 | Oksen | 1060 m | **960 m** | Tjoflot øvre parkering |
+
+And four more where the figure was only 15–25 m out — small, but still a real
+discrepancy rather than rounding: Skåla 1840 → **1820**, Synshorn 400 → **420**,
+Snøhetta 800 → **820**, Gaustatoppen 950 → **970**.
 
 Where a guidebook publishes its own gain the two now agree closely — Rørnestinden
 1000 against Friflyt's 1000, Stornappstinden 680 against Friflyt's 680, Kirketaket

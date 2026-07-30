@@ -788,8 +788,8 @@
     ],
     "source": "audited (ok)",
     "notes": "",
-    "implied_start_m": 7.1,
-    "start_vs_implied_m": 26.9
+    "implied_start_m": 27.1,
+    "start_vs_implied_m": 6.9
    }
   ]
  },
@@ -1072,8 +1072,8 @@
     ],
     "source": "audited (corrected)",
     "notes": "",
-    "implied_start_m": 1075.0,
-    "start_vs_implied_m": -15.2
+    "implied_start_m": 1055.0,
+    "start_vs_implied_m": 4.8
    }
   ]
  },
@@ -1291,8 +1291,8 @@
     ],
     "source": "audited (corrected)",
     "notes": "",
-    "implied_start_m": 1487.0,
-    "start_vs_implied_m": -12.5
+    "implied_start_m": 1467.0,
+    "start_vs_implied_m": 7.5
    },
    {
     "id": "reinheim",
@@ -1502,8 +1502,8 @@
     ],
     "source": "audited (ok)",
     "notes": "",
-    "implied_start_m": 931.5,
-    "start_vs_implied_m": -10.0
+    "implied_start_m": 911.5,
+    "start_vs_implied_m": 10.0
    },
    {
     "id": "stavsro",

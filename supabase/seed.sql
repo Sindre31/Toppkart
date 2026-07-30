@@ -33,18 +33,18 @@ values
   ('kirketaket',      'Kirketaket',      'Romsdal',    62.61158,  7.90672, 1439, 1270, '5–6 t', 2, 'SV', 'des–mai', 'Norges kanskje mest populære topptur: bred rygg, trygge linjevalg, lang sesong.', true),
   ('slogen',          'Slogen',          'Sunnmøre',   62.20818,  6.67306, 1564, 1480, '6–8 t', 4, 'V',  'mar–mai', 'Sunnmørsalpenes dronning — en alvorlig tur for erfarne, i riktig vindu.', true),
   ('kolastinden',     'Kolåstinden',     'Sunnmøre',   62.25886,  6.31102, 1432, 1080, '5–7 t', 3, 'N',  'feb–mai', 'Alpin klassiker fra Standaldalen med velkjent renne og storslått finish.', true),
-  ('skala',           'Skåla',           'Nordfjord',  61.86923,  6.97251, 1848, 1840, '6–8 t', 3, 'SV', 'mar–jun', '1848 sammenhengende høydemeter fra fjorden i Loen — en av landets lengste nedkjøringer.', true),
+  ('skala',           'Skåla',           'Nordfjord',  61.86923,  6.97251, 1848, 1820, '6–8 t', 3, 'SV', 'mar–jun', '1848 sammenhengende høydemeter fra fjorden i Loen — en av landets lengste nedkjøringer.', true),
   ('fanaraken',       'Fanaråken',       'Sogn',       61.51669,  7.90825, 2068,  760, '5–7 t', 2, 'N',  'apr–jun', 'Høyfjellstur fra Sognefjellet med breutsikt og pålitelig vårsnø.', true),
   ('steindalsnosi',   'Steindalsnosi',   'Sogn',       61.52696,  7.90076, 2025,  760, '3–5 t', 1, 'S',  'apr–jun', '2000-meter for de fleste: kort, slak og solvendt fra Sognefjellsveien.', true),
   ('galdhopiggen',    'Galdhøpiggen',    'Jotunheimen',61.63644,  8.31243, 2469, 630, '6–8 t', 3, 'N',  'apr–jun', 'Norges tak på ski — bre, tau og stor høyde; vanligvis gått fra Juvasshytta.', true),
-  ('synshorn',        'Synshorn',        'Valdres',    61.34011,  8.79727, 1475,  400, '2–3 t', 1, 'Ø',  'feb–mai', 'Kort og trygg tur fra Valdresflye — perfekt førstetur og værvindu-tur.', true),
+  ('synshorn',        'Synshorn',        'Valdres',    61.34011,  8.79727, 1475,  420, '2–3 t', 1, 'Ø',  'feb–mai', 'Kort og trygg tur fra Valdresflye — perfekt førstetur og værvindu-tur.', true),
   ('bitihorn',        'Bitihorn',        'Valdres',    61.29435,  8.79947, 1607,  550, '2–4 t', 1, 'S',  'feb–mai', 'Markert horn med enkel normalrute og fin utsikt over Bygdin.', true),
   ('rondslottet',     'Rondslottet',     'Rondane',    61.9149,  9.8512, 2178, 1240, '6–8 t', 2, 'S',  'mar–mai', 'Rondanes høyeste: rolig høyfjellsterreng og stabil vårsesong.', true),
-  ('snohetta',        'Snøhetta',        'Dovrefjell', 62.31992,  9.26747, 2286,  800, '5–7 t', 2, 'Ø',  'apr–jun', 'Storslått og luftig, men overraskende snill — når Snøheimvegen åpner.', true),
+  ('snohetta',        'Snøhetta',        'Dovrefjell', 62.31992,  9.26747, 2286,  820, '5–7 t', 2, 'Ø',  'apr–jun', 'Storslått og luftig, men overraskende snill — når Snøheimvegen åpner.', true),
   ('storehorn',       'Storehorn',       'Hemsedal',   60.81506,  8.59566, 1478,  470, '3–4 t', 2, 'Ø',  'des–apr', 'Hemsedals husfjell for topptur — kort vei fra bilen, mange linjevalg.', true),
   ('oksen',           'Oksen',           'Hardanger',  60.45983,  6.68301, 1241, 960, '4–6 t', 2, 'SV', 'jan–apr', 'Fjordutsikt i alle retninger og jevn stigning fra Tjoflot.', true),
   ('melderskin',      'Melderskin',      'Hardanger',  60.00623,  6.08261, 1426, 1270, '6–8 t', 3, 'V',  'feb–mai', 'Rosendalsalpenes storslåtte klassiker, fra sjøen til 1426 moh.', true),
-  ('gaustatoppen',    'Gaustatoppen',    'Telemark',   59.8542,  8.64928, 1883,  950, '4–6 t', 2, 'NV', 'des–mai', 'Sør-Norges mest markante topp — ser du den, ser den deg.', true)
+  ('gaustatoppen',    'Gaustatoppen',    'Telemark',   59.8542,  8.64928, 1883,  970, '4–6 t', 2, 'NV', 'des–mai', 'Sør-Norges mest markante topp — ser du den, ser den deg.', true)
 on conflict (slug) do update set
   name       = excluded.name,
   region     = excluded.region,
