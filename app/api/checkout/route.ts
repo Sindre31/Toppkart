@@ -1,5 +1,7 @@
 import { NextResponse } from "next/server";
 
+import type { CheckoutErrorCode } from "@/lib/i18n/checkout";
+
 import { getViewer } from "@/lib/access";
 import { TRIAL_DAYS, env, isStripeConfigured } from "@/lib/config";
 import { getDemoEmail, setDemoEmail, startDemoSubscription } from "@/lib/demo-session";
@@ -40,7 +42,7 @@ export async function POST(request: Request) {
 
   const plan = payload.plan ?? "maned";
   if (!isPlan(plan)) {
-    return NextResponse.json({ error: "Ukjent abonnement. Velg månedlig eller årlig." }, { status: 400 });
+    return NextResponse.json({ error: "unknown_plan" satisfies CheckoutErrorCode }, { status: 400 });
   }
   const email = readEmail(payload.email);
 
@@ -51,7 +53,7 @@ export async function POST(request: Request) {
     const existing = await getDemoEmail();
     if (!existing) {
       if (!email) {
-        return NextResponse.json({ error: "Skriv inn en gyldig e-postadresse." }, { status: 400 });
+        return NextResponse.json({ error: "invalid_email" satisfies CheckoutErrorCode }, { status: 400 });
       }
       await setDemoEmail(email);
     }
@@ -63,7 +65,7 @@ export async function POST(request: Request) {
   const price = priceIdFor(plan);
   if (!price) {
     return NextResponse.json(
-      { error: "Prisen for dette abonnementet er ikke satt opp ennå. Prøv igjen senere." },
+      { error: "price_unavailable" satisfies CheckoutErrorCode },
       { status: 503 },
     );
   }
@@ -87,7 +89,7 @@ export async function POST(request: Request) {
 
     if (!session.url) {
       return NextResponse.json(
-        { error: "Fikk ikke svar fra betalingsleverandøren. Prøv igjen om litt." },
+        { error: "provider_silent" satisfies CheckoutErrorCode },
         { status: 502 },
       );
     }
@@ -95,7 +97,7 @@ export async function POST(request: Request) {
     return NextResponse.json({ url: session.url });
   } catch {
     return NextResponse.json(
-      { error: "Vi fikk ikke startet betalingen. Prøv igjen om litt." },
+      { error: "checkout_failed" satisfies CheckoutErrorCode },
       { status: 502 },
     );
   }

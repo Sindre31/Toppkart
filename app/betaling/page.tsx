@@ -3,17 +3,18 @@ import type { Metadata } from "next";
 import { SiteFooter, SiteNav } from "@/components/SiteChrome";
 import { getViewer } from "@/lib/access";
 import { PRICE, TRIAL_DAYS, isStripeConfigured } from "@/lib/config";
-import { addDays, formatNorwegianDate } from "@/lib/dates";
+import { addDays, formatDate } from "@/lib/dates";
+import { getLang } from "@/lib/i18n/server";
+import { checkoutDict, priceLabel } from "@/lib/i18n/checkout";
 
 import { CheckoutForm } from "./CheckoutForm";
 import { Confirmation } from "./Confirmation";
 import styles from "./betaling.module.css";
 
-export const metadata: Metadata = {
-  title: "Betaling",
-  description:
-    "Start prøveperioden på Toppkart: 14 dager gratis, deretter 29 kr/mnd. Kort kreves ved oppstart, ingen binding.",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const t = checkoutDict(await getLang());
+  return { title: t.metaTitle, description: t.metaDescription };
+}
 
 type SearchParams = Record<string, string | string[] | undefined>;
 
@@ -30,20 +31,28 @@ export default async function BetalingPage({
   const plan = first(params.plan) === "ar" ? "ar" : "maned";
   const price = plan === "ar" ? PRICE.yearly : PRICE.monthly;
 
+  const lang = await getLang();
+  const t = checkoutDict(lang);
+
+  // The figure comes from `PRICE`, the words around it from the dictionary —
+  // see `priceLabel` in `lib/i18n/checkout.ts`.
+  const planLabel = t.plans[plan].planLabel;
+  const planPrice = priceLabel(price.amount);
+
   const viewer = await getViewer();
   const initialEmail = viewer.email ?? first(params.email) ?? "";
 
   // Første trekk / prøveperiodens slutt: i dag + 14 dager, ikke prototypens
   // hardkodede «12. august 2026».
-  const trialEndDate = formatNorwegianDate(addDays(new Date(), TRIAL_DAYS));
+  const trialEndDate = formatDate(addDays(new Date(), TRIAL_DAYS), lang);
 
   // Stripe sender brukeren tilbake hit med ?status=ok etter fullført Checkout.
   const done = first(params.status) === "ok";
 
   return (
     <div className="shell">
-      <SiteNav>
-        <span className="nav-muted">Sikker betaling via Stripe</span>
+      <SiteNav lang={lang}>
+        <span className="nav-muted">{t.navNote}</span>
       </SiteNav>
 
       <main
@@ -55,12 +64,13 @@ export default async function BetalingPage({
         }}
       >
         {done ? (
-          <Confirmation trialEndDate={trialEndDate} />
+          <Confirmation lang={lang} trialEndDate={trialEndDate} />
         ) : (
           <CheckoutForm
+            lang={lang}
             plan={plan}
-            planLabel={price.planLabel}
-            planPrice={price.label}
+            planLabel={planLabel}
+            planPrice={planPrice}
             trialEndDate={trialEndDate}
             initialEmail={initialEmail}
             stripeEnabled={isStripeConfigured}
@@ -68,7 +78,7 @@ export default async function BetalingPage({
         )}
       </main>
 
-      <SiteFooter className={styles.footer} />
+      <SiteFooter lang={lang} className={styles.footer} />
     </div>
   );
 }

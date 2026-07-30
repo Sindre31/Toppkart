@@ -2,9 +2,15 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { SiteFooter, SiteNav } from "@/components/SiteChrome";
 import { isSupabaseConfigured } from "@/lib/config";
+import { getLang } from "@/lib/i18n/server";
+import { accountDict } from "@/lib/i18n/account";
+import { commonDict } from "@/lib/i18n/common";
 import LoginForm from "./LoginForm";
 
-export const metadata: Metadata = { title: "Logg inn" };
+export async function generateMetadata(): Promise<Metadata> {
+  const t = accountDict(await getLang());
+  return { title: t.loginMetaTitle, description: t.loginMetaDescription };
+}
 
 type SearchParams = Promise<{ [key: string]: string | string[] | undefined }>;
 
@@ -24,10 +30,14 @@ export default async function LoggInnPage({ searchParams }: { searchParams: Sear
   const email = first(params.email);
   const linkFailed = first(params.feil) === "1";
 
+  const lang = await getLang();
+  const t = accountDict(lang);
+  const c = commonDict(lang);
+
   return (
     <div className="shell">
-      <SiteNav>
-        <Link href="/kart">Kartet</Link>
+      <SiteNav lang={lang}>
+        <Link href="/kart">{c.map}</Link>
       </SiteNav>
 
       <main style={{ display: "grid", placeItems: "center", padding: "48px 20px" }}>
@@ -37,15 +47,16 @@ export default async function LoggInnPage({ searchParams }: { searchParams: Sear
             next={next}
             demoMode={!isSupabaseConfigured}
             linkFailed={linkFailed}
+            lang={lang}
           />
           <p className="note" style={{ margin: "16px 0 0", textAlign: "center" }}>
-            Ny her? <Link href="/betaling">Prøv gratis i 14 dager — deretter 29 kr/mnd</Link>
+            {t.newHere} <Link href="/betaling">{t.newHereLink}</Link>
           </p>
         </div>
       </main>
 
       <div className="page">
-        <SiteFooter />
+        <SiteFooter lang={lang} />
       </div>
     </div>
   );

@@ -1,24 +1,36 @@
 import { Blueprint } from "@/components/Blueprint";
+import type { Lang } from "@/lib/i18n";
+import { guideDict } from "@/lib/i18n/guide";
 import type { TourGuide } from "@/lib/types";
 
 /** Høydeprofil — arealgraf over viewBox «0 0 600 220».
  *
  *  `profile.path` er selve linja; arealet under den lukkes her ved å føye til
  *  nedre kant, slik at guideinnholdet bare trenger å bære én path. Nullpunktet
- *  på x-aksen er alltid «0 km» og ligger derfor i visningen, ikke i dataene. */
-export function ElevationProfile({ profile }: { profile: TourGuide["elevationProfile"] }) {
+ *  på x-aksen er alltid «0 km» og ligger derfor i visningen, ikke i dataene.
+ *
+ *  The labels arrive already localised (`localizeGuide`); only the heading and
+ *  the accessible description come from the dictionary. */
+export function ElevationProfile({
+  profile,
+  lang,
+}: {
+  profile: TourGuide["elevationProfile"];
+  lang: Lang;
+}) {
+  const t = guideDict(lang);
   const area = `${profile.path} L600,220 L0,220 Z`;
 
   return (
     <Blueprint style={{ padding: "18px 20px" }}>
       <h2 style={{ fontSize: 18, letterSpacing: "0.02em", textTransform: "uppercase", margin: "0 0 12px" }}>
-        Høydeprofil
+        {t.elevationTitle}
       </h2>
       <svg
         viewBox="0 0 600 220"
         style={{ width: "100%", height: "auto", display: "block" }}
         role="img"
-        aria-label={`Høydeprofil fra ${profile.startLabel} til ${profile.endLabel} over ${profile.distanceLabel}`}
+        aria-label={t.elevationAria(profile.startLabel, profile.endLabel, profile.distanceLabel)}
       >
         <line x1="0" y1="55" x2="600" y2="55" stroke="#1d1f2029" strokeWidth="1" />
         <line x1="0" y1="110" x2="600" y2="110" stroke="#1d1f2029" strokeWidth="1" />

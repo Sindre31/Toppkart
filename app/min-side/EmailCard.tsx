@@ -2,12 +2,15 @@
 
 import { useState } from "react";
 import { Blueprint } from "@/components/Blueprint";
+import type { Lang } from "@/lib/i18n";
+import { accountDict } from "@/lib/i18n/account";
 import { getSupabaseBrowserClient } from "@/lib/supabase/client";
 
 /** «03 · Konto» — e-postkortet. Endring bekreftes med en lenke til den nye
  *  adressen (Supabase sender den i live-modus; i demo-modus vises bare
  *  bekreftelsen). Ingen nyhetsbrev eller varsler — bevisst fjernet. */
-export function EmailCard({ email }: { email: string }) {
+export function EmailCard({ email, lang }: { email: string; lang: Lang }) {
+  const t = accountDict(lang);
   const [value, setValue] = useState(email);
   const [busy, setBusy] = useState(false);
   const [message, setMessage] = useState<{ tone: "ok" | "error"; text: string } | null>(null);
@@ -15,15 +18,15 @@ export function EmailCard({ email }: { email: string }) {
   async function change() {
     const next = value.trim();
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(next)) {
-      setMessage({ tone: "error", text: "Skriv inn en gyldig e-postadresse." });
+      setMessage({ tone: "error", text: t.errInvalidEmail });
       return;
     }
     if (next.toLowerCase() === email.trim().toLowerCase()) {
-      setMessage({ tone: "error", text: "Dette er allerede adressen din." });
+      setMessage({ tone: "error", text: t.errSameEmail });
       return;
     }
 
-    const confirmation = `Vi har sendt en bekreftelseslenke til ${next}. Åpne den for å fullføre endringen.`;
+    const confirmation = t.emailChangeSent(next);
     const supabase = getSupabaseBrowserClient();
     if (!supabase) {
       setMessage({ tone: "ok", text: confirmation });
@@ -35,7 +38,7 @@ export function EmailCard({ email }: { email: string }) {
     setBusy(false);
     setMessage(
       error
-        ? { tone: "error", text: "Vi fikk ikke endret adressen. Prøv igjen om litt." }
+        ? { tone: "error", text: t.errEmailChangeFailed }
         : { tone: "ok", text: confirmation },
     );
   }
@@ -43,7 +46,7 @@ export function EmailCard({ email }: { email: string }) {
   return (
     <Blueprint style={{ padding: "20px 24px" }}>
       <h2 style={{ fontSize: 18, letterSpacing: "0.02em", textTransform: "uppercase", margin: "0 0 12px" }}>
-        E-post
+        {t.emailCardTitle}
       </h2>
       <form
         noValidate
@@ -57,7 +60,7 @@ export function EmailCard({ email }: { email: string }) {
           className="input"
           type="email"
           value={value}
-          aria-label="E-postadresse"
+          aria-label={t.emailLabel}
           onChange={(event) => {
             setValue(event.target.value);
             if (message) setMessage(null);
@@ -65,7 +68,7 @@ export function EmailCard({ email }: { email: string }) {
           style={{ flex: 1 }}
         />
         <button className="btn btn-secondary" type="submit" disabled={busy}>
-          Endre
+          {t.changeEmail}
         </button>
       </form>
       {message ? (
@@ -81,7 +84,7 @@ export function EmailCard({ email }: { email: string }) {
         </p>
       ) : null}
       <p className="note" style={{ margin: "10px 0 0" }}>
-        Innlogging skjer med lenke til denne adressen — ingen passord.
+        {t.emailCardNote}
       </p>
     </Blueprint>
   );

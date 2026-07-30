@@ -2,6 +2,8 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
+import type { Lang } from "@/lib/i18n";
+import { accountDict } from "@/lib/i18n/account";
 
 /** «01 · Abonnement» — knapperaden og avslutt-dialogen.
  *  Alt som endrer abonnementet går via /api/subscription, som slår opp
@@ -9,12 +11,17 @@ import { useRouter } from "next/navigation";
 export function SubscriptionActions({
   cancelled,
   periodEnd,
+  lang,
 }: {
   /** True når abonnementet allerede er avsluttet / avsluttes ved periodeslutt. */
   cancelled: boolean;
-  /** Ferdig formatert dato, f.eks. «12. august 2026». */
+  /** Ferdig formatert dato, f.eks. «12. august 2026» — already localised by the
+   *  page, so the dialog only has to drop it into the sentence. */
   periodEnd: string;
+  /** Read from the cookie by the server component above. */
+  lang: Lang;
 }) {
+  const t = accountDict(lang);
   const router = useRouter();
   const [open, setOpen] = useState(false);
   const [busy, setBusy] = useState(false);
@@ -64,12 +71,12 @@ export function SubscriptionActions({
         return;
       }
       if (data.demo) {
-        setNote("Stripe-portalen åpnes her når betalingsnøklene er satt opp.");
+        setNote(t.portalDemoNote);
         return;
       }
-      setNote("Vi fikk ikke åpnet betalingsportalen. Prøv igjen om litt.");
+      setNote(t.errPortalFailed);
     } catch {
-      setNote("Vi fikk ikke åpnet betalingsportalen. Prøv igjen om litt.");
+      setNote(t.errPortalFailed);
     } finally {
       setBusy(false);
     }
@@ -85,13 +92,13 @@ export function SubscriptionActions({
         body: JSON.stringify({ action }),
       });
       if (!response.ok) {
-        setNote("Vi fikk ikke oppdatert abonnementet. Prøv igjen om litt.");
+        setNote(t.errSubscriptionFailed);
         return;
       }
       if (action === "cancel") closeDialog();
       router.refresh();
     } catch {
-      setNote("Vi fikk ikke oppdatert abonnementet. Prøv igjen om litt.");
+      setNote(t.errSubscriptionFailed);
     } finally {
       setBusy(false);
     }
@@ -101,15 +108,15 @@ export function SubscriptionActions({
     <>
       <div style={{ display: "flex", gap: 10, flexWrap: "wrap", padding: "16px 24px" }}>
         <button className="btn btn-secondary" type="button" disabled={busy} onClick={openPortal}>
-          Endre betalingsmetode
+          {t.changePaymentMethod}
         </button>
         {cancelled ? (
           <button className="btn btn-primary" type="button" disabled={busy} onClick={() => submit("resume")}>
-            Gjenoppta abonnement
+            {t.resumeSubscription}
           </button>
         ) : (
           <button className="btn btn-ghost" type="button" disabled={busy} onClick={openDialog}>
-            Avslutt abonnement
+            {t.cancelSubscription}
           </button>
         )}
       </div>
@@ -139,11 +146,10 @@ export function SubscriptionActions({
             <i className="corner bl" />
             <i className="corner br" />
             <div className="dialog-title" id="avslutt-dialog-tittel">
-              Avslutte abonnementet?
+              {t.cancelDialogTitle}
             </div>
             <p className="dialog-body" style={{ margin: 0 }}>
-              Du beholder tilgang ut inneværende periode ({periodEnd}). Etter det låses turguidene, men
-              kontoen og lagrede turer beholdes.
+              {t.cancelDialogBody(periodEnd)}
             </p>
             <div className="dialog-actions">
               <button
@@ -153,7 +159,7 @@ export function SubscriptionActions({
                 disabled={busy}
                 onClick={closeDialog}
               >
-                Behold abonnement
+                {t.keepSubscription}
               </button>
               <button
                 className="btn btn-primary"
@@ -161,7 +167,7 @@ export function SubscriptionActions({
                 disabled={busy}
                 onClick={() => submit("cancel")}
               >
-                Avslutt
+                {t.confirmCancel}
               </button>
             </div>
           </div>
