@@ -2,7 +2,7 @@
 
 /** `/kart` — the core of the product. React port of `design-reference/kart.html`:
  *  56px topbar, 372px tour list on the left, full-bleed Leaflet map on the right,
- *  the shared NO/EN switcher, and a detail panel that draws the schematic route
+ *  the shared NO/EN switcher, and a detail panel that draws the tour's ascent
  *  line. The language arrives as a prop from the server, which reads the
  *  `tk_lang` cookie — it is never local state. Switching refetches this route
  *  rather than navigating, so the filters, the selected tour and the live

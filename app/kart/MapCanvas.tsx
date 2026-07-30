@@ -19,7 +19,7 @@ import "leaflet/dist/leaflet.css";
 import { GRADE_COLORS } from "@/lib/config";
 import type { Lang } from "@/lib/i18n";
 import { mapDict } from "@/lib/i18n/map";
-import { routeFor } from "@/lib/tours";
+import { routeProfile } from "@/lib/tours";
 import type { Tour } from "@/lib/types";
 
 /** Initial view — mainland Norway, as in the prototype. */
@@ -42,22 +42,48 @@ export interface MapCanvasProps {
   lang: Lang;
 }
 
-/** Schematic route line for the selected tour: white underlay, dashed accent
- *  overlay, trailhead dot — then fly the map to it. */
+/** The ascent line for the selected tour: white casing, accent line on top,
+ *  trailhead dot — then fly the map to it.
+ *
+ *  The line is real terrain geometry (see `lib/routes`), around a hundred points
+ *  following the valley and ridge the route uses, so it is drawn solid and
+ *  round-joined rather than as the dashed placeholder it used to be. */
 function RouteLayer({ tour, startLabel }: { tour: Tour; startLabel: string }) {
   const map = useMap();
-  const points = useMemo<LatLngTuple[]>(() => routeFor(tour), [tour]);
+  const route = useMemo(() => routeProfile(tour), [tour]);
+  const points = useMemo<LatLngTuple[]>(() => route?.points ?? [], [route]);
 
   useEffect(() => {
-    map.flyToBounds(latLngBounds(points).pad(0.35), { duration: 0.8 });
+    if (!points.length) return;
+    map.flyToBounds(latLngBounds(points).pad(0.18), { duration: 0.8 });
   }, [map, points]);
+
+  if (!points.length) return null;
+
+  /* Name the actual parking place where we know it — "Start / parkering" alone
+     is a lot less useful than "Skorgedalen" when you are planning the drive. */
+  const startName = route?.trailhead ? `${startLabel}: ${route.trailhead}` : startLabel;
 
   return (
     <>
-      <Polyline positions={points} pathOptions={{ color: MARKER_STROKE, weight: 6, opacity: 0.8 }} />
       <Polyline
         positions={points}
-        pathOptions={{ color: ROUTE_ACCENT, weight: 3, dashArray: "7 6" }}
+        pathOptions={{
+          color: MARKER_STROKE,
+          weight: 7,
+          opacity: 0.85,
+          lineJoin: "round",
+          lineCap: "round",
+        }}
+      />
+      <Polyline
+        positions={points}
+        pathOptions={{
+          color: ROUTE_ACCENT,
+          weight: 3.5,
+          lineJoin: "round",
+          lineCap: "round",
+        }}
       />
       <CircleMarker
         center={points[0]}
@@ -70,7 +96,7 @@ function RouteLayer({ tour, startLabel }: { tour: Tour; startLabel: string }) {
         }}
       >
         <Tooltip direction="top" offset={[0, -6]}>
-          {startLabel}
+          {startName}
         </Tooltip>
       </CircleMarker>
     </>

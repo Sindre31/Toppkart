@@ -77,7 +77,8 @@ components/
 lib/
   config.ts              PRICE, TRIAL_DAYS, SITE, GRADE_COLORS, env, is*Configured
   types.ts               Tour, TourGuide, Viewer, Subscription, Invoice
-  tours.ts               The 24 tours, REGIONS, getTour(), routeFor()
+  tours.ts               The 24 tours, REGIONS, getTour(), routeFor(), routeProfile()
+  routes.ts              Generated ascent lines — see scripts/build-routes/
   guides.ts              Editorial guide content (currently Kirketaket only)
   access.ts              getViewer() / grantsAccess() — server-only access gate
   stripe.ts              Stripe client, null in demo mode
@@ -138,12 +139,16 @@ the product behaviour, RLS is the backstop.
 The design handoff flags this work as unfinished. None of it is a code defect; all of it is
 content and data quality that has to be settled before the site is sold to anyone.
 
-- **Tour coordinates are approximate.** The 24 tours in `lib/tours.ts` come straight out of the
-  prototype and their latitude/longitude values were eyeballed. Every one needs to be checked
-  against a real source before it guides anyone up a mountain.
-- **Route lines are schematic.** `routeFor()` draws a plausible-looking line by offsetting from
-  the summit in the tour's aspect direction. It is a placeholder for real GPX geometry per tour
-  and must be replaced, not tuned.
+- **Route lines are generated, not surveyed.** They are no longer schematic: `lib/routes.ts` holds
+  a detailed line per tour, solved as a least-cost path over Kartverket's 1 m terrain model through
+  the corridor the standard route follows, and the summit coordinates behind them are snapped to
+  the terrain model and checked against published heights. See `scripts/build-routes/` for the
+  pipeline and what it verifies. What is still missing is ground truth: these lines show where a
+  route goes, but nobody has skied them with a GPS. Surveyed GPX per tour, served from Supabase
+  Storage, is still the production plan.
+- **Three summit heights disagree with the terrain model.** Rørnestinden, Rombakstøtta and
+  Himmeltindan sit 11–13 m below their published figures in DTM1. The coordinates are right; the
+  heights are old survey numbers on sharp, corniced tops. Worth settling before print.
 - **The Kirketaket guide text is example content.** The ascent, descent and avalanche-terrain
   copy in `lib/guides.ts` was written to fill the layout. It needs editorial review by someone
   who knows the tour before publication, and the same applies to every guide written after it.

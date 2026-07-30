@@ -52,6 +52,7 @@ export interface GuideDict {
   gpxNotFound: string;
   gpxDesc: (peak: string, region: string) => string;
   gpxSummitType: string;
+  gpxStartType: string;
 }
 
 const GUIDE: Translated<GuideDict> = {
@@ -87,8 +88,9 @@ const GUIDE: Translated<GuideDict> = {
     notFoundTitle: "Turen finnes ikke",
     gpxNotFound: "Fant ikke turen.",
     gpxDesc: (peak, region) =>
-      `${peak} (${region}) — skjematisk rutelinje fra Toppkart. Eksempeldata, ikke en kvalitetssikret rute.`,
+      `${peak} (${region}) — oppstigning fra Toppkart, beregnet i Kartverkets terrengmodell. Generert geometri, ikke et innspilt spor: sjekk kart og skredvarsel før du går.`,
     gpxSummitType: "Topp",
+    gpxStartType: "Start / parkering",
   },
   en: {
     backToMap: "← Back to the map",
@@ -122,8 +124,9 @@ const GUIDE: Translated<GuideDict> = {
     notFoundTitle: "Tour not found",
     gpxNotFound: "Tour not found.",
     gpxDesc: (peak, region) =>
-      `${peak} (${region}) — schematic route line from Toppkart. Sample data, not a quality-assured route.`,
+      `${peak} (${region}) — ascent from Toppkart, solved over Kartverket's terrain model. Generated geometry, not a recorded track: check the map and the avalanche forecast before you go.`,
     gpxSummitType: "Summit",
+    gpxStartType: "Trailhead / parking",
   },
 };
 

@@ -1,0 +1,474 @@
+{
+ "tromsdalstinden": {
+  "route_name": "Forsiden / Salen-ruta fra Tromsdalen: skogsbilvegen innover Tromsdalen, opp til Salen og videre sørryggen til toppen",
+  "trailhead": {
+   "name": "Parkering ved Tromsdalen skytebane, innerst i Turistvegen (Tromsdalen)",
+   "lat": 69.63243,
+   "lng": 19.03232,
+   "elevation_m": 37.5,
+   "terreng": "ÅpentOmråde"
+  },
+  "waypoints": [
+   {
+    "name": "Skogsbilvegen i Tromsdalen, vestsida av Tromsdalselva",
+    "lat": 69.617,
+    "lng": 19.0625,
+    "elevation_m": 127.8
+   },
+   {
+    "name": "Innerst i Tromsdalen ved Dalbotn / Dalbotnvatnet",
+    "lat": 69.6024,
+    "lng": 19.0803,
+    "elevation_m": 311.7
+   },
+   {
+    "name": "Foten av bakken (~30 grader) opp mot Salen",
+    "lat": 69.5989,
+    "lng": 19.0913,
+    "elevation_m": 380.0
+   },
+   {
+    "name": "Salen – skaret sørvest for tinden",
+    "lat": 69.595,
+    "lng": 19.106,
+    "elevation_m": 735.3
+   },
+   {
+    "name": "Salen – der sørryggen begynner",
+    "lat": 69.597,
+    "lng": 19.121,
+    "elevation_m": 884.6
+   },
+   {
+    "name": "Sørryggen ca. 1100 m (hold vest, unna skavlene på østkanten)",
+    "lat": 69.5999,
+    "lng": 19.1353,
+    "elevation_m": 1112.7
+   }
+  ],
+  "source": "researched (high)",
+  "implied_start_m": 37.5,
+  "start_vs_implied_m": 0.0
+ },
+ "store-blamann": {
+  "route_name": "Normalruta / merka sti fra Slettneset opp øst-sørøstryggen (Steet) til toppen",
+  "trailhead": {
+   "name": "Parkering ved Slettneset, Fjordvegen (fv 7768), Kaldfjorden",
+   "lat": 69.73971,
+   "lng": 18.64315,
+   "elevation_m": 9.4,
+   "terreng": "Skog"
+  },
+  "waypoints": [
+   {
+    "name": "Stien over skoggrensa vest for Slettneset",
+    "lat": 69.74115,
+    "lng": 18.633,
+    "elevation_m": 102.4
+   },
+   {
+    "name": "Skulderen der stien dreier sørvest inn på ryggen",
+    "lat": 69.74005,
+    "lng": 18.62094,
+    "elevation_m": 228.7
+   },
+   {
+    "name": "Ryggen ovenfor Steet",
+    "lat": 69.734,
+    "lng": 18.6176,
+    "elevation_m": 477.5
+   },
+   {
+    "name": "Øst-sørøstryggen, ca. 670 m, sørvendt flanke over Blåmannsvikdalen",
+    "lat": 69.7343,
+    "lng": 18.607,
+    "elevation_m": 669.5
+   },
+   {
+    "name": "Under den siste bratte, eksponerte toppseksjonen",
+    "lat": 69.7339,
+    "lng": 18.597,
+    "elevation_m": 881.5
+   }
+  ],
+  "source": "researched (high)",
+  "implied_start_m": 3.4,
+  "start_vs_implied_m": 6.0
+ },
+ "storgalten": {
+  "route_name": "Normalruta fra Galtdalen / Sandneset i Nord-Lenangen: opp Galtdalen på høyre (sørlige) side av Galtelva, rundt nordsida av Lassofjellet, sikte mot skaret mellom Litle-Galten og Storgalten, oppstigning litt sør for skaret, deretter den breie nordvestflata til varden",
+  "trailhead": {
+   "name": "Fv7922 Lenangsveien (gamle Fv312) ved utløpet av Galtdalen, Sandneset",
+   "lat": 69.9039,
+   "lng": 20.18075,
+   "elevation_m": 14.4,
+   "terreng": "ÅpentOmråde"
+  },
+  "waypoints": [
+   {
+    "name": "Nedre Galtdalen, høyre (sørlige) side av Galtelva",
+    "lat": 69.9026,
+    "lng": 20.193,
+    "elevation_m": 131.0
+   },
+   {
+    "name": "Øvre Galtdalen ved samlop av Galtelva, nordsida av Lassofjellet passert",
+    "lat": 69.9005,
+    "lng": 20.2115,
+    "elevation_m": 283.3
+   },
+   {
+    "name": "Åpen nordvestvendt sliske opp mot skaret",
+    "lat": 69.896,
+    "lng": 20.226,
+    "elevation_m": 529.8
+   },
+   {
+    "name": "Rygg litt sør for skaret mellom Litle-Galten og Storgalten - her starter oppstigninga",
+    "lat": 69.8932,
+    "lng": 20.2415,
+    "elevation_m": 783.9
+   },
+   {
+    "name": "Over det bratte trinnet (800-860 m), inn på den breie NV-skuldra",
+    "lat": 69.8905,
+    "lng": 20.249,
+    "elevation_m": 981.2
+   }
+  ],
+  "source": "researched (high)",
+  "implied_start_m": -0.7,
+  "start_vs_implied_m": 15.1
+ },
+ "rornestinden": {
+  "route_name": "",
+  "trailhead": {
+   "lat": 69.58195,
+   "lng": 20.14945,
+   "name": "Rørnesveien",
+   "elevation_m": 2.0,
+   "terreng": "Skog"
+  },
+  "waypoints": [],
+  "source": "named place (SSR)",
+  "implied_start_m": -10.8,
+  "start_vs_implied_m": 12.8
+ },
+ "kavringtinden": {
+  "route_name": "Normalruta (Goalsevarri/Kavringtinden) fra Lyngseidet: skogsvei på østsida av Gjerdelva forbi Rødsteinen, opp ryggen øst for elva til Skihytta, deretter vestover inn på nordøstryggen og opp østsida av ryggen til toppryggen",
+  "trailhead": {
+   "name": "Lyngseidet, parkering ved Eidebakken industriområde (Plastfabrikken/Skytebanen)",
+   "lat": 69.57474,
+   "lng": 20.19132,
+   "elevation_m": 62.5,
+   "terreng": "ÅpentOmråde"
+  },
+  "waypoints": [
+   {
+    "name": "Rødsteinen - skogsveien på østsida av Gjerdelva",
+    "lat": 69.56762,
+    "lng": 20.19441,
+    "elevation_m": 202.0
+   },
+   {
+    "name": "Skihytta, på ryggen øst for elva",
+    "lat": 69.56103,
+    "lng": 20.18306,
+    "elevation_m": 316.6
+   },
+   {
+    "name": "Åpen nordvendt flanke vest for Skihytta, ruta svinger av mot nordøstryggen",
+    "lat": 69.5594,
+    "lng": 20.1584,
+    "elevation_m": 592.3
+   },
+   {
+    "name": "Foten av nordøstryggen på Goalsevarri",
+    "lat": 69.5578,
+    "lng": 20.1336,
+    "elevation_m": 773.6
+   },
+   {
+    "name": "Midt på nordøstryggen, østsida av ryggen",
+    "lat": 69.554,
+    "lng": 20.1324,
+    "elevation_m": 1017.3
+   },
+   {
+    "name": "Øverst på nordøstryggen der man kommer opp på toppryggen",
+    "lat": 69.5505,
+    "lng": 20.1288,
+    "elevation_m": 1219.4
+   }
+  ],
+  "source": "researched (high)",
+  "implied_start_m": 139.1,
+  "start_vs_implied_m": -76.6
+ },
+ "hesten-segla": {
+  "route_name": "",
+  "trailhead": {
+   "lat": 69.50893,
+   "lng": 17.62825,
+   "name": "Fjordgård",
+   "elevation_m": 10.1,
+   "terreng": "Tettbebyggelse"
+  },
+  "waypoints": [],
+  "source": "named place (SSR)",
+  "implied_start_m": -62.6,
+  "start_vs_implied_m": 72.7
+ },
+ "rombakstotta": {
+  "route_name": "",
+  "trailhead": {
+   "lat": 68.43758,
+   "lng": 17.64546,
+   "name": "Straumsnes",
+   "elevation_m": 169.2,
+   "terreng": "Skog"
+  },
+  "waypoints": [],
+  "source": "named place (SSR)",
+  "implied_start_m": 131.0,
+  "start_vs_implied_m": 38.2
+ },
+ "himmeltindan": {
+  "route_name": "",
+  "trailhead": {
+   "lat": 68.19984,
+   "lng": 13.54135,
+   "name": "Haukland",
+   "elevation_m": 9.1,
+   "terreng": "ÅpentOmråde"
+  },
+  "waypoints": [],
+  "source": "named place (SSR)",
+  "implied_start_m": -11.3,
+  "start_vs_implied_m": 20.4
+ },
+ "stornappstinden": {
+  "route_name": "",
+  "trailhead": {
+   "lat": 68.13317,
+   "lng": 13.43193,
+   "name": "Napp",
+   "elevation_m": 10.7,
+   "terreng": "ÅpentOmråde"
+  },
+  "waypoints": [],
+  "source": "named place (SSR)",
+  "implied_start_m": 11.2,
+  "start_vs_implied_m": -0.5
+ },
+ "kirketaket": {
+  "route_name": "",
+  "trailhead": {
+   "lat": 62.58289,
+   "lng": 7.92225,
+   "name": "Tverråbrua i Grøvdalen",
+   "elevation_m": 68.1,
+   "terreng": "Skog"
+  },
+  "waypoints": [],
+  "source": "named place (SSR)",
+  "implied_start_m": 59.0,
+  "start_vs_implied_m": 9.1
+ },
+ "slogen": {
+  "route_name": "",
+  "trailhead": {
+   "lat": 62.19291,
+   "lng": 6.6584,
+   "name": "Øye i Norangsdalen",
+   "elevation_m": 5.4,
+   "terreng": "DyrketMark"
+  },
+  "waypoints": [],
+  "source": "named place (SSR)",
+  "implied_start_m": 3.4,
+  "start_vs_implied_m": 2.0
+ },
+ "kolastinden": {
+  "route_name": "",
+  "trailhead": {
+   "lat": 62.2579,
+   "lng": 6.38382,
+   "name": "Standaldalen",
+   "elevation_m": 375.6,
+   "terreng": "Skog"
+  },
+  "waypoints": [],
+  "source": "named place (SSR)",
+  "implied_start_m": 281.4,
+  "start_vs_implied_m": 94.2
+ },
+ "skala": {
+  "route_name": "",
+  "trailhead": {
+   "lat": 61.87151,
+   "lng": 6.8459,
+   "name": "Loen",
+   "elevation_m": 2.3,
+   "terreng": "ÅpentOmråde"
+  },
+  "waypoints": [],
+  "source": "named place (SSR)",
+  "implied_start_m": 7.1,
+  "start_vs_implied_m": -4.8
+ },
+ "fanaraken": {
+  "route_name": "",
+  "trailhead": {
+   "lat": 61.50808,
+   "lng": 7.81156,
+   "name": "1100-meteren, Sognefjellsvegen",
+   "elevation_m": 1099.7,
+   "terreng": "ÅpentOmråde"
+  },
+  "waypoints": [],
+  "source": "named place (SSR)",
+  "implied_start_m": 1117.0,
+  "start_vs_implied_m": -17.3
+ },
+ "steindalsnosi": {
+  "route_name": "",
+  "trailhead": {
+   "lat": 61.54884,
+   "lng": 7.89055,
+   "name": "Korpen, Sognefjellsvegen",
+   "elevation_m": 1396.7,
+   "terreng": "ÅpentOmråde"
+  },
+  "waypoints": [],
+  "source": "named place (SSR)",
+  "implied_start_m": 1403.8,
+  "start_vs_implied_m": -7.1
+ },
+ "galdhopiggen": {
+  "route_name": "",
+  "trailhead": {
+   "lat": 61.67276,
+   "lng": 8.37059,
+   "name": "Juvvasshytta",
+   "elevation_m": 1841.3,
+   "terreng": "ÅpentOmråde"
+  },
+  "waypoints": [],
+  "source": "named place (SSR)",
+  "implied_start_m": 1368.6,
+  "start_vs_implied_m": 472.7
+ },
+ "synshorn": {
+  "route_name": "",
+  "trailhead": {
+   "lat": 61.32767,
+   "lng": 8.7988,
+   "name": "Bygdin",
+   "elevation_m": 1061.7,
+   "terreng": "ÅpentOmråde"
+  },
+  "waypoints": [],
+  "source": "named place (SSR)",
+  "implied_start_m": 1075.0,
+  "start_vs_implied_m": -13.3
+ },
+ "bitihorn": {
+  "route_name": "",
+  "trailhead": {
+   "lat": 61.32767,
+   "lng": 8.7988,
+   "name": "Bygdin",
+   "elevation_m": 1061.7,
+   "terreng": "ÅpentOmråde"
+  },
+  "waypoints": [],
+  "source": "named place (SSR)",
+  "implied_start_m": 1107.5,
+  "start_vs_implied_m": -45.8
+ },
+ "rondslottet": {
+  "route_name": "",
+  "trailhead": {
+   "lat": 61.83918,
+   "lng": 9.72398,
+   "name": "Spranget",
+   "elevation_m": 1060.7,
+   "terreng": "ÅpentOmråde"
+  },
+  "waypoints": [],
+  "source": "named place (SSR)",
+  "implied_start_m": 1128.4,
+  "start_vs_implied_m": -67.7
+ },
+ "snohetta": {
+  "route_name": "",
+  "trailhead": {
+   "lat": 62.29417,
+   "lng": 9.35067,
+   "name": "Snøheim",
+   "elevation_m": 1474.5,
+   "terreng": "ÅpentOmråde"
+  },
+  "waypoints": [],
+  "source": "named place (SSR)",
+  "implied_start_m": 1487.0,
+  "start_vs_implied_m": -12.5
+ },
+ "storehorn": {
+  "route_name": "",
+  "trailhead": {
+   "lat": 60.82829,
+   "lng": 8.57482,
+   "name": "Skyrvedalsvegen",
+   "elevation_m": 887.6,
+   "terreng": "Skog"
+  },
+  "waypoints": [],
+  "source": "named place (SSR)",
+  "implied_start_m": 852.5,
+  "start_vs_implied_m": 35.1
+ },
+ "oksen": {
+  "route_name": "",
+  "trailhead": {
+   "lat": 60.45066,
+   "lng": 6.64006,
+   "name": "Tjoflot",
+   "elevation_m": 181.2,
+   "terreng": "ÅpentOmråde"
+  },
+  "waypoints": [],
+  "source": "named place (SSR)",
+  "implied_start_m": 1.5,
+  "start_vs_implied_m": 179.7
+ },
+ "melderskin": {
+  "route_name": "",
+  "trailhead": {
+   "lat": 59.98589,
+   "lng": 6.01157,
+   "name": "Rosendal",
+   "elevation_m": 8.9,
+   "terreng": null
+  },
+  "waypoints": [],
+  "source": "named place (SSR)",
+  "implied_start_m": 5.7,
+  "start_vs_implied_m": 3.2
+ },
+ "gaustatoppen": {
+  "route_name": "",
+  "trailhead": {
+   "lat": 59.88011,
+   "lng": 8.73429,
+   "name": "Gaustablikk",
+   "elevation_m": 944.6,
+   "terreng": "ÅpentOmråde"
+  },
+  "waypoints": [],
+  "source": "named place (SSR)",
+  "implied_start_m": 931.5,
+  "start_vs_implied_m": 13.1
+ }
+}

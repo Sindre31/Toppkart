@@ -4,16 +4,20 @@ import { getViewer } from "@/lib/access";
 import type { Lang } from "@/lib/i18n";
 import { getLang } from "@/lib/i18n/server";
 import { guideDict } from "@/lib/i18n/guide";
-import { getTour, routeFor } from "@/lib/tours";
+import { getTour, routeProfile } from "@/lib/tours";
 import type { Tour } from "@/lib/types";
 
 /** GPX-nedlasting for én tur.
  *
- *  NB: Sporet som genereres her er den samme **skjematiske** rutelinja som
- *  kartet tegner (`routeFor`) — en illustrasjon, ikke en reell rute. I
- *  produksjon serveres ekte, innspilt GPX fra Supabase Storage (`gpx_path` på
+ *  Sporet er den samme rutelinja som kartet tegner (`routeProfile`): en
+ *  minstekostnadsrute beregnet i Kartverkets 1 m terrengmodell gjennom
+ *  korridoren normalruta følger. Høydene i `<ele>` er lest rett ut av
+ *  terrengmodellen punkt for punkt — ikke interpolert mellom start og topp.
+ *
+ *  NB: dette er generert geometri, ikke et innspilt spor. Den viser hvor ruta
+ *  går, men erstatter ikke kart, skredvarsel og egne vurderinger i felt. I
+ *  produksjon serveres kvalitetssikret GPX fra Supabase Storage (`gpx_path` på
  *  `tours`), signert per forespørsel etter samme tilgangssjekk som under.
- *  Ingen skal navigere etter denne fila i felt.
  *
  *  Gaten er serverside: uten aktivt abonnement eller prøveperiode sendes du
  *  til /betaling, slik at fila aldri kan hentes ved å gjette URL-en.
@@ -32,17 +36,15 @@ function xml(value: string): string {
     .replace(/"/g, "&quot;");
 }
 
-function buildGpx(tour: Tour, lang: Lang): string {
+function buildGpx(tour: Tour, route: NonNullable<ReturnType<typeof routeProfile>>, lang: Lang): string {
   const t = guideDict(lang);
-  const points = routeFor(tour);
-  const base = tour.summitM - tour.verticalM;
-  const last = Math.max(points.length - 1, 1);
 
-  const trkpts = points
-    .map(([lat, lng], i) => {
-      const ele = Math.round(base + (tour.summitM - base) * (i / last));
-      return `      <trkpt lat="${lat.toFixed(6)}" lon="${lng.toFixed(6)}"><ele>${ele}</ele></trkpt>`;
-    })
+  const start = route.points[0];
+  const trkpts = route.points
+    .map(
+      ([lat, lng], i) =>
+        `      <trkpt lat="${lat.toFixed(6)}" lon="${lng.toFixed(6)}"><ele>${route.elevations[i]}</ele></trkpt>`,
+    )
     .join("\n");
 
   return `<?xml version="1.0" encoding="UTF-8"?>
@@ -52,13 +54,18 @@ function buildGpx(tour: Tour, lang: Lang): string {
     <desc>${xml(t.gpxDesc(tour.name, tour.region))}</desc>
     <time>${new Date().toISOString()}</time>
   </metadata>
+  <wpt lat="${start[0].toFixed(6)}" lon="${start[1].toFixed(6)}">
+    <ele>${route.elevations[0]}</ele>
+    <name>${xml(route.trailhead || t.gpxStartType)}</name>
+    <type>${xml(t.gpxStartType)}</type>
+  </wpt>
   <wpt lat="${tour.lat.toFixed(6)}" lon="${tour.lng.toFixed(6)}">
     <ele>${tour.summitM}</ele>
     <name>${xml(tour.name)}</name>
     <type>${xml(t.gpxSummitType)}</type>
   </wpt>
   <trk>
-    <name>${xml(tour.name)}</name>
+    <name>${xml(route.routeName || tour.name)}</name>
     <trkseg>
 ${trkpts}
     </trkseg>
@@ -83,7 +90,15 @@ export async function GET(request: Request, { params }: { params: Promise<{ slug
     return NextResponse.redirect(new URL("/betaling", request.url), 303);
   }
 
-  return new NextResponse(buildGpx(tour, lang), {
+  const route = routeProfile(tour);
+  if (!route) {
+    return new NextResponse(guideDict(lang).gpxNotFound, {
+      status: 404,
+      headers: { "Content-Type": "text/plain; charset=utf-8" },
+    });
+  }
+
+  return new NextResponse(buildGpx(tour, route, lang), {
     status: 200,
     headers: {
       "Content-Type": "application/gpx+xml; charset=utf-8",
