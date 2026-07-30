@@ -77,8 +77,9 @@ components/
 lib/
   config.ts              PRICE, TRIAL_DAYS, SITE, GRADE_COLORS, env, is*Configured
   types.ts               Tour, TourGuide, Viewer, Subscription, Invoice
-  tours.ts               The 24 tours, REGIONS, getTour(), routeFor(), routeProfile()
-  routes.ts              Generated ascent lines — see scripts/build-routes/
+  tours.ts               The 24 tours, REGIONS, getTour(), routesFor(), routeById(),
+                         routeFor(), routeProfile()
+  routes.ts              Generated ascent routes per tour — see scripts/build-routes/
   guides.ts              Editorial guide content (currently Kirketaket only)
   access.ts              getViewer() / grantsAccess() — server-only access gate
   stripe.ts              Stripe client, null in demo mode
@@ -98,7 +99,7 @@ docs/
 | Route | What it is | Prototype |
 |---|---|---|
 | `/` | Landing page: hero, data plate, what a guide contains, subscription | `Landing.dc.html` |
-| `/kart` | The map — tour list, grade/region filters, detail panel with the locked block | `kart.html` |
+| `/kart` | The map — tour list, grade/region filters, detail panel with the route picker and the locked block. `?tur=<slug>` opens a tour, `&rute=<id>` a specific route | `kart.html` |
 | `/tur/[slug]` | Tour guide: stats, elevation profile, ascent/descent, avalanche terrain | `Turguide Kirketaket.dc.html` |
 | `/logg-inn` | Passwordless sign-in, sends a magic link | `Logg inn.dc.html` |
 | `/betaling` | Start the trial — 0 kr today, card required | `Betaling.dc.html` |
@@ -140,12 +141,17 @@ The design handoff flags this work as unfinished. None of it is a code defect; a
 content and data quality that has to be settled before the site is sold to anyone.
 
 - **Route lines are generated, not surveyed.** They are no longer schematic: `lib/routes.ts` holds
-  a detailed line per tour, solved as a least-cost path over Kartverket's 1 m terrain model through
-  the corridor the standard route follows, and the summit coordinates behind them are snapped to
-  the terrain model and checked against published heights. See `scripts/build-routes/` for the
+  detailed lines — one or more per tour — solved as least-cost paths over Kartverket's 1 m terrain
+  model through the corridor each route follows, and the summit coordinates behind them are snapped
+  to the terrain model and checked against published heights. See `scripts/build-routes/` for the
   pipeline and what it verifies. What is still missing is ground truth: these lines show where a
-  route goes, but nobody has skied them with a GPS. Surveyed GPX per tour, served from Supabase
+  route goes, but nobody has skied them with a GPS. Surveyed GPX per route, served from Supabase
   Storage, is still the production plan.
+- **Only five peaks have their alternative routes entered.** The data model takes any number of
+  routes per tour and the map renders a picker when there is more than one, but `ALTERNATES` in
+  `scripts/build-routes/build_corridors.py` currently covers Galdhøpiggen, Tromsdalstinden,
+  Rondslottet, Snøhetta and Gaustatoppen. Other peaks in the list have well-known second routes
+  that nobody has researched yet — the gap is content, not capability.
 - **Three summit heights disagree with the terrain model.** Rørnestinden, Rombakstøtta and
   Himmeltindan sit 11–13 m below their published figures in DTM1. The coordinates are right; the
   heights are old survey numbers on sharp, corniced tops. Worth settling before print.

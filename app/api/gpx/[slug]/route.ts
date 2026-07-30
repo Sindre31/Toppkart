@@ -76,6 +76,9 @@ ${trkpts}
 
 export async function GET(request: Request, { params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
+  /* `?rute=<id>` picks one of the peak's routes; unknown or absent falls back to
+     the tour's own route, so an old link keeps working. */
+  const routeId = new URL(request.url).searchParams.get("rute");
   const lang = await getLang();
   const tour = getTour(slug);
   if (!tour) {
@@ -90,7 +93,7 @@ export async function GET(request: Request, { params }: { params: Promise<{ slug
     return NextResponse.redirect(new URL("/betaling", request.url), 303);
   }
 
-  const route = routeProfile(tour);
+  const route = routeProfile(tour, routeId);
   if (!route) {
     return new NextResponse(guideDict(lang).gpxNotFound, {
       status: 404,
@@ -102,7 +105,9 @@ export async function GET(request: Request, { params }: { params: Promise<{ slug
     status: 200,
     headers: {
       "Content-Type": "application/gpx+xml; charset=utf-8",
-      "Content-Disposition": `attachment; filename="${slug}.gpx"`,
+      "Content-Disposition": `attachment; filename="${
+        route.routeId && route.routeId !== "normalruta" ? `${slug}-${route.routeId}` : slug
+      }.gpx"`,
       "Cache-Control": "private, no-store",
     },
   });

@@ -66,6 +66,10 @@ export interface Dict {
   /* — strings the prototype held inline — */
   schematicNote: string;
   startTooltip: string;
+  /** Heading above the route picker, shown when a peak has more than one way up. */
+  routesLabel: string;
+  /** Screen-reader name for the picker itself. */
+  routesGroup: string;
   /* — React additions: labels + the unlocked (subscriber) state — */
   gradeGroup: string;
   searchLabel: string;
@@ -118,8 +122,10 @@ const MAP: Translated<Dict> = {
     pwDoneBody: "Åpne e-posten og trykk på lenken for å logge inn og starte prøveperioden.",
     close2: "Lukk",
     schematicNote:
-      "Rutelinjen følger normalruta i Kartverkets terrengmodell. Generert geometri — ikke et innspilt spor.",
+      "Rutelinjene er beregnet i Kartverkets terrengmodell. Generert geometri — ikke innspilte spor.",
     startTooltip: "Start / parkering",
+    routesLabel: "Ruter opp",
+    routesGroup: "Velg rute",
     gradeGroup: "Vanskelighetsgrad",
     searchLabel: "Søk etter topp eller region",
     regionLabel: "Region",
@@ -175,8 +181,10 @@ const MAP: Translated<Dict> = {
     pwDoneBody: "Open the email and click the link to sign in and start your trial.",
     close2: "Close",
     schematicNote:
-      "The route line follows the standard route through Kartverket's terrain model. Generated geometry — not a recorded track.",
+      "The route lines are solved over Kartverket's terrain model. Generated geometry — not recorded tracks.",
     startTooltip: "Trailhead / parking",
+    routesLabel: "Routes up",
+    routesGroup: "Choose a route",
     gradeGroup: "Difficulty",
     searchLabel: "Search peak or region",
     regionLabel: "Region",

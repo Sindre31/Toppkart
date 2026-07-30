@@ -1,36 +1,54 @@
-"""Independent sanity pass over the generated routes."""
-import json, math
-from geo import haversine, dtm_point
+"""Independent sanity pass over the generated routes.
+
+Deliberately re-derives everything from routes.json and re-queries the elevation
+API, rather than trusting what the generator reported.
+"""
+
+import json
+import math
+import sys
+
+from geo import dtm_point, haversine
 
 routes = json.load(open("routes.json"))
-tours = json.load(open("tourmeta.json"))
 summits = json.load(open("summits.json"))
 
-print(f"{'slug':<18}{'pts':>4} {'endpoints':>9} {'monotone':>9} {'steep>40':>9}  notes")
+print(f"{'tour / route':<34}{'pts':>4} {'end':>6} {'>40°':>5}  notes")
 bad = []
-for slug, r in routes.items():
-    pts, zs = r["points"], r["elevations"]
+for slug, recs in routes.items():
     s = summits[slug]
-    # endpoints
-    d_end = haversine(pts[-1][0], pts[-1][1], s["lat"], s["lng"])
-    # spacing sanity: no huge jumps (would mean a straight line through terrain)
-    gaps = [haversine(a[0],a[1],b[0],b[1]) for a,b in zip(pts,pts[1:])]
-    maxgap = max(gaps)
-    # steep segments
-    steep = 0
-    for (a,b),(za,zb) in zip(zip(pts,pts[1:]), zip(zs,zs[1:])):
-        d = haversine(a[0],a[1],b[0],b[1])
-        if d>1 and abs(math.degrees(math.atan2(zb-za,d)))>40: steep += 1
-    # elevation consistency: does the stored elevation match the DTM?
-    mid = len(pts)//2
-    z_api,_ = dtm_point(*pts[mid])
-    drift = abs(z_api - zs[mid]) if z_api is not None else -1
-    notes = []
-    if d_end > 30: notes.append(f"end {d_end:.0f} m off summit")
-    if maxgap > 120: notes.append(f"gap {maxgap:.0f} m")
-    if drift > 12: notes.append(f"stored ele off by {drift:.0f} m at midpoint")
-    if zs[-1] < s["summit_dtm"] - 30: notes.append("ends below the summit")
-    print(f"{slug:<18}{len(pts):>4} {d_end:>7.0f} m {'yes' if steep==0 else 'no':>9} {steep:>9}  {'; '.join(notes)}")
-    if notes: bad.append((slug, notes))
-print()
-print("clean" if not bad else f"{len(bad)} routes need a look")
+    ids = [r["id"] for r in recs]
+    if len(ids) != len(set(ids)):
+        bad.append(f"{slug}: duplicate route ids {ids}")
+    for r in recs:
+        pts, zs = r["points"], r["elevations"]
+        notes = []
+        d_end = haversine(pts[-1][0], pts[-1][1], s["lat"], s["lng"])
+        maxgap = max(haversine(a[0], a[1], b[0], b[1]) for a, b in zip(pts, pts[1:]))
+        steep = sum(
+            1
+            for (a, b), (za, zb) in zip(zip(pts, pts[1:]), zip(zs, zs[1:]))
+            if haversine(a[0], a[1], b[0], b[1]) > 1
+            and abs(math.degrees(math.atan2(zb - za, haversine(a[0], a[1], b[0], b[1])))) > 40
+        )
+        mid = len(pts) // 2
+        z_api, _ = dtm_point(*pts[mid])
+        if d_end > 30:
+            notes.append(f"ends {d_end:.0f} m off the summit")
+        if maxgap > 120:
+            notes.append(f"{maxgap:.0f} m gap between points")
+        if z_api is not None and abs(z_api - zs[mid]) > 12:
+            notes.append(f"stored elevation off by {abs(z_api - zs[mid]):.0f} m at the midpoint")
+        if zs[-1] < s["summit_dtm"] - 30:
+            notes.append("ends below the summit")
+        if len(pts) < 25:
+            notes.append("too few points to be a detailed line")
+        print(f"{slug + ' / ' + r['id']:<34}{len(pts):>4} {d_end:>5.0f}m {steep:>5}  {'; '.join(notes)}")
+        if notes:
+            bad.append(f"{slug}/{r['id']}: " + "; ".join(notes))
+
+total = sum(len(v) for v in routes.values())
+print(f"\n{len(routes)} tours, {total} routes — " + ("clean" if not bad else f"{len(bad)} need a look"))
+for b in bad:
+    print("  -", b)
+sys.exit(1 if bad else 0)

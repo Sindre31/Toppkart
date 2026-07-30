@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { getViewer } from "@/lib/access";
 import { getLang } from "@/lib/i18n/server";
 import { mapDict } from "@/lib/i18n/map";
-import { getTour } from "@/lib/tours";
+import { getTour, routesFor } from "@/lib/tours";
 import MapView from "./MapView";
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -15,13 +15,29 @@ export async function generateMetadata(): Promise<Metadata> {
 export default async function KartPage({
   searchParams,
 }: {
-  searchParams: Promise<{ tur?: string | string[] }>;
+  searchParams: Promise<{ tur?: string | string[]; rute?: string | string[] }>;
 }) {
   const [viewer, params, lang] = await Promise.all([getViewer(), searchParams, getLang()]);
 
-  const raw = params?.tur;
-  const slug = Array.isArray(raw) ? raw[0] : raw;
-  const initialSlug = slug && getTour(slug) ? slug : null;
+  const first = (v: string | string[] | undefined) => (Array.isArray(v) ? v[0] : v);
 
-  return <MapView lang={lang} hasAccess={viewer.hasAccess} initialSlug={initialSlug} />;
+  const slug = first(params?.tur);
+  const tour = slug ? getTour(slug) : undefined;
+  const initialSlug = tour ? slug! : null;
+
+  /* `?rute=` only means anything alongside a tour, and an id that peak does not
+     have is dropped here rather than trusted — `routeById` would fall back
+     anyway, but then the URL and the drawn line would disagree. */
+  const routeId = first(params?.rute);
+  const initialRouteId =
+    tour && routeId && routesFor(tour).some((r) => r.id === routeId) ? routeId : null;
+
+  return (
+    <MapView
+      lang={lang}
+      hasAccess={viewer.hasAccess}
+      initialSlug={initialSlug}
+      initialRouteId={initialRouteId}
+    />
+  );
 }

@@ -15,7 +15,7 @@ import { Check, Lock, Unlock } from "lucide-react";
 
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { GRADE_COLORS } from "@/lib/config";
-import { REGIONS, TOURS } from "@/lib/tours";
+import { REGIONS, TOURS, routesFor } from "@/lib/tours";
 import type { Lang } from "@/lib/i18n";
 import { localizeTours } from "@/lib/i18n/content";
 import { mapDict, type Dict } from "@/lib/i18n/map";
@@ -66,15 +66,20 @@ export default function MapView({
   lang,
   hasAccess,
   initialSlug,
+  initialRouteId,
 }: {
   lang: Lang;
   hasAccess: boolean;
   initialSlug: string | null;
+  initialRouteId: string | null;
 }) {
   const [query, setQuery] = useState("");
   const [grade, setGrade] = useState(0);
   const [region, setRegion] = useState("");
   const [selectedSlug, setSelectedSlug] = useState<string | null>(initialSlug);
+  /* Which of the peak's routes is drawn. Null means "the tour's own route", so a
+     peak with one route needs no state and picking a tour never has to guess. */
+  const [selectedRouteId, setSelectedRouteId] = useState<string | null>(initialRouteId);
   const detailRef = useRef<HTMLDivElement>(null);
 
   const t = mapDict(lang);
@@ -113,20 +118,38 @@ export default function MapView({
     [tours, selectedSlug],
   );
 
-  /* Deep link both ways: `/kart?tur=<slug>` opens a tour, and selecting one
-     rewrites the URL so the guide page can link straight back in. */
+  const routes = useMemo(() => (selected ? routesFor(selected) : []), [selected]);
+  const activeRouteId = useMemo(() => {
+    if (!routes.length) return null;
+    return routes.some((r) => r.id === selectedRouteId) ? selectedRouteId : routes[0].id;
+  }, [routes, selectedRouteId]);
+
+  /* Deep link both ways: `/kart?tur=<slug>&rute=<id>` opens a tour on a given
+     route, and choosing either rewrites the URL so a link can be shared and the
+     guide page can link straight back in. */
   useEffect(() => {
     const url = new URL(window.location.href);
     if (selectedSlug) url.searchParams.set("tur", selectedSlug);
     else url.searchParams.delete("tur");
+    /* Only pin the route when it is not the tour's own — keeps the common link short. */
+    if (selectedSlug && activeRouteId && routes.length > 1 && activeRouteId !== routes[0].id) {
+      url.searchParams.set("rute", activeRouteId);
+    } else {
+      url.searchParams.delete("rute");
+    }
     window.history.replaceState(window.history.state, "", url);
-  }, [selectedSlug]);
+  }, [selectedSlug, activeRouteId, routes]);
 
   useEffect(() => {
     if (selectedSlug && detailRef.current) detailRef.current.scrollTop = 0;
   }, [selectedSlug]);
 
-  const openTour = useCallback((slug: string) => setSelectedSlug(slug), []);
+  const openTour = useCallback((slug: string) => {
+    setSelectedSlug(slug);
+    /* A route id belongs to one peak; carrying it across would pick an unrelated
+       route or silently fall back. */
+    setSelectedRouteId(null);
+  }, []);
 
   return (
     <div className={s.page}>
@@ -245,6 +268,33 @@ export default function MapView({
                 </Link>
               ) : null}
 
+              {routes.length > 1 ? (
+                <div className={s.routes}>
+                  <div className={s.routesHead}>{t.routesLabel}</div>
+                  <div className={s.routeList} role="radiogroup" aria-label={t.routesGroup}>
+                    {routes.map((route) => (
+                      <label
+                        key={route.id}
+                        className={`${s.route}${route.id === activeRouteId ? ` ${s.routeSel}` : ""}`}
+                      >
+                        <input
+                          type="radio"
+                          name="rute"
+                          value={route.id}
+                          checked={route.id === activeRouteId}
+                          onChange={() => setSelectedRouteId(route.id)}
+                        />
+                        <span className={s.routeName}>{route.name}</span>
+                        <span className={s.routeMeta}>
+                          ↑ {route.gainM} m · {(route.distanceM / 1000).toFixed(1)} km ·{" "}
+                          {route.trailhead}
+                        </span>
+                      </label>
+                    ))}
+                  </div>
+                </div>
+              ) : null}
+
               <div className={s.stats}>
                 <div className={s.stat}>
                   <div className={s.statL}>{t.stHm}</div>
@@ -341,7 +391,9 @@ export default function MapView({
             tours={tours}
             visible={visible}
             selectedSlug={selectedSlug}
+            selectedRouteId={activeRouteId}
             onSelect={openTour}
+            onSelectRoute={setSelectedRouteId}
             lang={lang}
           />
         </Suspense>

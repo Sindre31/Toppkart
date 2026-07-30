@@ -19,7 +19,7 @@ import "leaflet/dist/leaflet.css";
 import { GRADE_COLORS } from "@/lib/config";
 import type { Lang } from "@/lib/i18n";
 import { mapDict } from "@/lib/i18n/map";
-import { routeProfile } from "@/lib/tours";
+import { routeById, routesFor } from "@/lib/tours";
 import type { Tour } from "@/lib/types";
 
 /** Initial view — mainland Norway, as in the prototype. */
@@ -30,44 +30,103 @@ const NORWAY: LatLngBoundsExpression = [
 
 const MARKER_STROKE = "#f2f2f3";
 const ROUTE_ACCENT = "#416180"; // accent-700
+const ROUTE_ALT = "#8aa2b8"; // the peak's other routes, a step back
 
 export interface MapCanvasProps {
   tours: readonly Tour[];
   /** Slugs surviving the sidebar filters — everything else dims. */
   visible: ReadonlySet<string>;
   selectedSlug: string | null;
+  /** Which of the selected tour's routes is drawn; null means the tour's own. */
+  selectedRouteId: string | null;
   onSelect: (slug: string) => void;
+  onSelectRoute: (routeId: string) => void;
   /** Language for the tooltips and Leaflet's own controls. Peak names are
    *  proper nouns and are rendered as they come. */
   lang: Lang;
 }
 
-/** The ascent line for the selected tour: white casing, accent line on top,
- *  trailhead dot — then fly the map to it.
+/** Every route up the selected tour.
  *
- *  The line is real terrain geometry (see `lib/routes`), around a hundred points
- *  following the valley and ridge the route uses, so it is drawn solid and
- *  round-joined rather than as the dashed placeholder it used to be. */
-function RouteLayer({ tour, startLabel }: { tour: Tour; startLabel: string }) {
+ *  The chosen route is drawn white-cased with an accent line on top; the peak's
+ *  other routes sit underneath in a lighter tone so you can see at a glance that
+ *  there is more than one way up, and clicking one selects it. Each route keeps
+ *  its own trailhead dot, because alternatives usually start somewhere else
+ *  entirely.
+ *
+ *  The lines are real terrain geometry (see `lib/routes`), a hundred points or
+ *  more following the valley and ridge the route uses, so they are drawn solid
+ *  and round-joined rather than as the dashed placeholder they replace. */
+function RouteLayer({
+  tour,
+  routeId,
+  onSelectRoute,
+  startLabel,
+}: {
+  tour: Tour;
+  routeId: string | null;
+  onSelectRoute: (routeId: string) => void;
+  startLabel: string;
+}) {
   const map = useMap();
-  const route = useMemo(() => routeProfile(tour), [tour]);
-  const points = useMemo<LatLngTuple[]>(() => route?.points ?? [], [route]);
+  const routes = useMemo(() => routesFor(tour), [tour]);
+  const active = useMemo(() => routeById(tour, routeId), [tour, routeId]);
+
+  const lines = useMemo(
+    () =>
+      routes.map((route) => {
+        const points: LatLngTuple[] = [];
+        for (let i = 0; i < route.line.length; i += 3) {
+          points.push([route.line[i], route.line[i + 1]]);
+        }
+        return { route, points };
+      }),
+    [routes],
+  );
+
+  const activePoints = useMemo<LatLngTuple[]>(
+    () => lines.find((l) => l.route.id === active?.id)?.points ?? [],
+    [lines, active],
+  );
+
+  /* Frame every route, not just the chosen one — otherwise picking an alternative
+     that starts in the next valley flies the map somewhere unexpected. */
+  const allPoints = useMemo<LatLngTuple[]>(() => lines.flatMap((l) => l.points), [lines]);
 
   useEffect(() => {
-    if (!points.length) return;
-    map.flyToBounds(latLngBounds(points).pad(0.18), { duration: 0.8 });
-  }, [map, points]);
+    if (!allPoints.length) return;
+    map.flyToBounds(latLngBounds(allPoints).pad(0.14), { duration: 0.8 });
+  }, [map, allPoints]);
 
-  if (!points.length) return null;
-
-  /* Name the actual parking place where we know it — "Start / parkering" alone
-     is a lot less useful than "Skorgedalen" when you are planning the drive. */
-  const startName = route?.trailhead ? `${startLabel}: ${route.trailhead}` : startLabel;
+  if (!activePoints.length) return null;
 
   return (
     <>
+      {lines
+        .filter((l) => l.route.id !== active?.id)
+        .map(({ route, points }) => (
+          <Polyline
+            key={route.id}
+            positions={points}
+            eventHandlers={{ click: () => onSelectRoute(route.id) }}
+            pathOptions={{
+              color: ROUTE_ALT,
+              weight: 3,
+              opacity: 0.75,
+              dashArray: "2 7",
+              lineCap: "round",
+              /* A hairline is hard to hit; widen the invisible click target. */
+              interactive: true,
+            }}
+          >
+            <Tooltip direction="top" sticky>
+              {route.name}
+            </Tooltip>
+          </Polyline>
+        ))}
+
       <Polyline
-        positions={points}
+        positions={activePoints}
         pathOptions={{
           color: MARKER_STROKE,
           weight: 7,
@@ -77,7 +136,7 @@ function RouteLayer({ tour, startLabel }: { tour: Tour; startLabel: string }) {
         }}
       />
       <Polyline
-        positions={points}
+        positions={activePoints}
         pathOptions={{
           color: ROUTE_ACCENT,
           weight: 3.5,
@@ -85,20 +144,31 @@ function RouteLayer({ tour, startLabel }: { tour: Tour; startLabel: string }) {
           lineCap: "round",
         }}
       />
-      <CircleMarker
-        center={points[0]}
-        radius={6}
-        pathOptions={{
-          color: ROUTE_ACCENT,
-          weight: 2,
-          fillColor: MARKER_STROKE,
-          fillOpacity: 1,
-        }}
-      >
-        <Tooltip direction="top" offset={[0, -6]}>
-          {startName}
-        </Tooltip>
-      </CircleMarker>
+
+      {lines.map(({ route, points }) => {
+        const isActive = route.id === active?.id;
+        /* Name the actual parking place — "Start / parkering" alone is a lot less
+           useful than "Skorgedalen" when you are planning the drive. */
+        const label = route.trailhead ? `${startLabel}: ${route.trailhead}` : startLabel;
+        return (
+          <CircleMarker
+            key={`start-${route.id}`}
+            center={points[0]}
+            radius={isActive ? 6 : 4.5}
+            eventHandlers={isActive ? undefined : { click: () => onSelectRoute(route.id) }}
+            pathOptions={{
+              color: isActive ? ROUTE_ACCENT : ROUTE_ALT,
+              weight: 2,
+              fillColor: MARKER_STROKE,
+              fillOpacity: 1,
+            }}
+          >
+            <Tooltip direction="top" offset={[0, -6]}>
+              {routes.length > 1 ? `${route.name} — ${label}` : label}
+            </Tooltip>
+          </CircleMarker>
+        );
+      })}
     </>
   );
 }
@@ -107,7 +177,9 @@ export default function MapCanvas({
   tours,
   visible,
   selectedSlug,
+  selectedRouteId,
   onSelect,
+  onSelectRoute,
   lang,
 }: MapCanvasProps) {
   const t = mapDict(lang);
@@ -147,7 +219,13 @@ export default function MapCanvas({
       })}
 
       {selected ? (
-        <RouteLayer key={selected.slug} tour={selected} startLabel={t.startTooltip} />
+        <RouteLayer
+          key={selected.slug}
+          tour={selected}
+          routeId={selectedRouteId}
+          onSelectRoute={onSelectRoute}
+          startLabel={t.startTooltip}
+        />
       ) : null}
     </MapContainer>
   );
