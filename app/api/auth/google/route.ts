@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
-import { env, isSupabaseConfigured } from "@/lib/config";
+import { isSupabaseConfigured } from "@/lib/config";
+import { requestOrigin } from "@/lib/origin";
 import { setDemoEmail } from "@/lib/demo-session";
 import { getSupabaseServerClient } from "@/lib/supabase/server";
 
@@ -37,7 +38,9 @@ export async function GET(request: Request) {
   const { data, error } = await supabase.auth.signInWithOAuth({
     provider: "google",
     options: {
-      redirectTo: `${env.siteUrl}/auth/callback?next=${encodeURIComponent(next)}`,
+      // The origin the visitor is actually on, not NEXT_PUBLIC_SITE_URL: the
+      // session cookie must be set on the domain they came from.
+      redirectTo: `${requestOrigin(request)}/auth/callback?next=${encodeURIComponent(next)}`,
     },
   });
 

@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
-import { env, isSupabaseConfigured } from "@/lib/config";
+import { isSupabaseConfigured } from "@/lib/config";
+import { requestOrigin } from "@/lib/origin";
 import { setDemoEmail } from "@/lib/demo-session";
 import { LANG_COOKIE, toLang, type Lang } from "@/lib/i18n";
 import { systemDict } from "@/lib/i18n/system";
@@ -61,7 +62,9 @@ export async function POST(request: Request) {
     const { error } = await supabase.auth.signInWithOtp({
       email,
       options: {
-        emailRedirectTo: `${env.siteUrl}/auth/callback?next=${encodeURIComponent(next)}`,
+        // Same reasoning as the Google route: the link has to come back to
+        // the origin the link was asked for from.
+        emailRedirectTo: `${requestOrigin(request)}/auth/callback?next=${encodeURIComponent(next)}`,
       },
     });
     if (error) {

@@ -34,31 +34,30 @@ Vercel to get a domain, then a return trip to fill in redirect URLs and webhook 
 >
 > `NEXT_PUBLIC_SITE_URL` is optional in the sense that nothing crashes without it. `lib/config.ts`
 > falls back to `https://$VERCEL_URL`, which is the **per-deployment** hostname — something like
-> `toppkart-qytwddyuz-yourteam.vercel.app`. A new one is minted on every single deploy. Two
-> things are built from that value, and both break in ways that do not look like a URL problem:
+> `toppkart-qytwddyuz-yourteam.vercel.app`. A new one is minted on every single deploy.
 >
-> - **Magic links.** `emailRedirectTo` becomes `https://<per-deploy-host>/auth/callback`. Supabase
->   checks that against the Redirect URLs allow-list, which contains your real domain, not a
->   hostname that did not exist when you configured it. The mail sends, the user clicks, and
->   sign-in fails — with no error on your side, because the rejection happens at Supabase.
-> - **Stripe returns.** `success_url` and `cancel_url` point at the deployment that happened to be
->   live when the session was created. After the next deploy that host is stale, so a customer
->   who pays can land somewhere unexpected instead of the confirmation screen.
+> **The four redirects that come back to a signed-in browser no longer read it.** Google sign-in,
+> the magic link, and Stripe's `success_url` / `return_url` are built from `requestOrigin()` in
+> `lib/origin.ts`, which reads the origin off the incoming request. You come back to whatever
+> domain you left from — apex, `www`, or a preview host that did not exist when anything was
+> configured. This used to be the single most effective way to break sign-in: a visitor on
+> `toppkart.no` was sent back to `*.vercel.app`, the session cookie was set on that origin, and
+> they returned to the real domain still signed out.
 >
-> To check what it actually resolved to, create a Checkout session against the deployed API and
-> read the URL back — this reports the real runtime value, not what you think you configured:
+> **What still reads it**, and so still wants setting:
 >
-> ```bash
-> curl -s -X POST https://your-domain/api/checkout \
->   -H 'Content-Type: application/json' -d '{"plan":"maned"}'
-> # then, with your Stripe secret key:
-> curl -s "https://api.stripe.com/v1/checkout/sessions?limit=1" -u "sk_test_…:" \
->   | grep -o '"success_url": *"[^"]*"'
-> ```
+> - **Links inside e-mail** (`lib/email.ts` — welcome, receipts, trial-ending). These are sent
+>   from the Stripe webhook, where there is no browser request to read an origin from. Unset, the
+>   buttons in those mails point at a stale per-deploy hostname.
+> - **Supabase's own Site URL** field, which you paste this value into in step 4 below. That is
+>   configured in the dashboard, not read from the app.
 >
-> If the host in `success_url` is not your real domain, `NEXT_PUBLIC_SITE_URL` is not set on that
-> environment. Set it and **redeploy** — environment variable changes do not apply to existing
-> deployments.
+> Set it to `https://toppkart.no`, no trailing slash, and **redeploy** — environment variable
+> changes do not apply to existing deployments.
+>
+> Whatever it is set to, the Redirect URLs allow-list in step 4 has to cover every origin people
+> actually arrive on. `requestOrigin()` will faithfully send them back to a preview hostname, and
+> Supabase will reject it unless the wildcard covers it.
 
 Anything prefixed `NEXT_PUBLIC_` ends up in the browser bundle. Do not put the Supabase
 service-role key or the Stripe secret key behind that prefix.
@@ -294,8 +293,21 @@ account that is not on the test-user list is refused here and looks identical.
 
 **«Vi klarte ikke å fullføre innlogginga.»**
 The round-trip came back but `exchangeCodeForSession` failed. Nearly always the redirect target is
-not on Supabase's allow-list: compare it against **Authentication → URL Configuration**, and check
-`NEXT_PUBLIC_SITE_URL` — see the warning in the Vercel section, which is the usual root cause.
+not on Supabase's allow-list: compare it against **Authentication → URL Configuration**.
+
+**Google sends you round the loop and you end up signed out, with no error.**
+Look at where the round-trip is actually pointed — this needs no browser and no credentials:
+
+```bash
+curl -s -o /dev/null -w '%{redirect_url}\n' 'https://toppkart.no/api/auth/google?next=%2Fkart'
+```
+
+Decode the `redirect_to` parameter in what comes back. It must be **the same origin you asked
+from**. If you ask `toppkart.no` and `redirect_to` says `toppkart.vercel.app`, the session cookie
+is being set on a domain you are not browsing, which is exactly what "signed in, then still signed
+out" looks like. Since `requestOrigin()` landed this cannot come from a missing environment
+variable any more; check for a proxy or redirect in front of the app rewriting the `Host` header,
+and confirm the origin is in the Redirect URLs allow-list.
 
 **«Vi klarte ikke å sende innloggingslenken. Prøv igjen om litt.»**
 The app never shows the underlying auth error, by design — it should not tell a stranger whether an
