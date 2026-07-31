@@ -48,11 +48,11 @@ PEAKS = [
     #   trailhead rather than an audited route description, and no guide is
     #   written yet. See README, «The second batch». —
     ("hamperokken", "Hamperokken", ["Tromsø"], 1404, 69.562, 19.358),
-    ("istinden", "Istinden", ["Bardu"], 1494, 68.573, 18.082),
+    ("istinden", "Istinden", ["Bardu"], 1459, 68.573, 18.082),
     ("fastdalstinden", "Fastdalstinden", ["Lyngen"], 1275, 69.629, 20.169),
     ("store-kjostinden", "Store Kjostinden", ["Lyngen"], 1488, 69.606, 20.130),
     ("breitinden", "Breitinden", ["Senja"], 1001, 69.455, 17.649),
-    ("keipen", "Keipen", ["Senja"], 1042, 69.495, 17.723),
+    ("keipen", "Keipen", ["Senja"], 938, 69.495, 17.723),
     ("moysalen", "Møysalen", ["Lødingen", "Sortland - Suortá"], 1262, 68.526, 15.452),
     ("geitgaljen", "Geitgallien", ["Vågan"], 1085, 68.344, 14.813),
     ("skjomtinden", "Skjomtinden", ["Narvik"], 1575, 68.344, 17.355),

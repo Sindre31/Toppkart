@@ -204,7 +204,7 @@
   "lat": 68.57136,
   "lng": 18.07995,
   "summit_dtm": 1459.0,
-  "claims": 1494,
+  "claims": 1459,
   "stored_off_km": 0.2
  },
  "fastdalstinden": {
@@ -236,7 +236,7 @@
   "lat": 69.4953,
   "lng": 17.72324,
   "summit_dtm": 938.4,
-  "claims": 1042,
+  "claims": 938,
   "stored_off_km": 0.03
  },
  "moysalen": {
