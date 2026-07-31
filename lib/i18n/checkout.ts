@@ -40,6 +40,13 @@ export interface CheckoutDict {
   firstCharge: (price: string, date: string) => string;
   /* — form — */
   stripeNextStep: string;
+  /* — sign in before paying — */
+  googleButton: string;
+  googleRedirecting: string;
+  /** Separator between the Google button and the e-mail field. */
+  orDivider: string;
+  /** Sits under the Google button: says why signing in first is worth it. */
+  googleNote: string;
   emailLabel: string;
   emailPlaceholder: string;
   cardNumberLabel: string;
@@ -88,6 +95,11 @@ const CHECKOUT: Translated<CheckoutDict> = {
       `Første trekk (${price}) den ${date}. Avslutt før det, så trekkes ingenting.`,
 
     stripeNextStep: "Kortopplysningene legges inn hos Stripe i neste steg.",
+    googleButton: "Fortsett med Google",
+    googleRedirecting: "Sender deg til Google …",
+    orDivider: "eller",
+    googleNote:
+      "Da slipper du å oppgi e-post her, og du er logget inn med én gang abonnementet er i orden.",
     emailLabel: "E-post",
     emailPlaceholder: "kari@epost.no",
     cardNumberLabel: "Kortnummer",
@@ -140,6 +152,11 @@ const CHECKOUT: Translated<CheckoutDict> = {
       `First charge (${price}) on ${date}. Cancel before then and you won't be charged.`,
 
     stripeNextStep: "You'll enter your card details with Stripe in the next step.",
+    googleButton: "Continue with Google",
+    googleRedirecting: "Taking you to Google …",
+    orDivider: "or",
+    googleNote:
+      "Saves typing your address here, and you are signed in the moment the subscription is set up.",
     emailLabel: "Email",
     emailPlaceholder: "you@example.com",
     cardNumberLabel: "Card number",

@@ -3,6 +3,7 @@
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 
+import { GoogleMark } from "@/components/GoogleMark";
 import type { Lang } from "@/lib/i18n";
 import { checkoutDict, checkoutError } from "@/lib/i18n/checkout";
 
@@ -38,6 +39,7 @@ export function CheckoutForm({
   trialEndDate,
   initialEmail,
   stripeEnabled,
+  signedIn,
 }: {
   lang: Lang;
   plan: "maned" | "ar";
@@ -46,6 +48,9 @@ export function CheckoutForm({
   trialEndDate: string;
   initialEmail: string;
   stripeEnabled: boolean;
+  /** Already has a session, so the address is known and Google would be a
+   *  detour rather than a shortcut. */
+  signedIn: boolean;
 }) {
   const t = checkoutDict(lang);
   const router = useRouter();
@@ -53,6 +58,11 @@ export function CheckoutForm({
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [done, setDone] = useState(false);
+  const [googlePending, setGooglePending] = useState(false);
+
+  /** Comes back to this same step with the plan intact, address already
+   *  known — a full navigation, since the response redirects to Google. */
+  const googleHref = `/api/auth/google?next=${encodeURIComponent(`/betaling?plan=${plan}`)}`;
 
   async function start(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -145,6 +155,47 @@ export function CheckoutForm({
                 {t.stripeNextStep}
               </p>
             ) : null}
+
+            {signedIn ? null : (
+              <>
+                <a
+                  className="btn btn-block"
+                  href={googleHref}
+                  aria-disabled={googlePending}
+                  onClick={() => setGooglePending(true)}
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    gap: 10,
+                    margin: 0,
+                  }}
+                >
+                  <GoogleMark />
+                  {googlePending ? t.googleRedirecting : t.googleButton}
+                </a>
+                <p className="note" style={{ margin: "-4px 0 0" }}>
+                  {t.googleNote}
+                </p>
+
+                <div
+                  aria-hidden="true"
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: 12,
+                    fontSize: 12,
+                    letterSpacing: "0.08em",
+                    textTransform: "uppercase",
+                    color: "var(--color-text-soft, #6b7785)",
+                  }}
+                >
+                  <span style={{ flex: 1, height: 1, background: "var(--color-rule, #d8dee5)" }} />
+                  {t.orDivider}
+                  <span style={{ flex: 1, height: 1, background: "var(--color-rule, #d8dee5)" }} />
+                </div>
+              </>
+            )}
 
             <div className="field">
               <label htmlFor="betaling-epost">{t.emailLabel}</label>
