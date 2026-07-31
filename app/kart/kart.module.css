@@ -327,6 +327,7 @@
    Leaflet's zoom buttons (top-right) and the attribution (bottom-right).
    Hidden by default — it only exists below the breakpoint. */
 .paneToggle { display: none; }
+.peakBar { display: none; }
 
 /* One pane at a time.
 
@@ -379,6 +380,75 @@
   /* The toggle floats over the panel, so the last card has to be able to scroll
      clear of it — otherwise the bottom tour sits permanently under the button. */
   .list { padding-bottom: calc(76px + env(safe-area-inset-bottom, 0px)); }
+
+  /* The picked-peak bar. Only on the map pane: on the list pane the panel is
+     already showing that peak's detail, so a bar offering to open it would be
+     pointing at what is already on screen. */
+  .page[data-pane="map"] .peakBar {
+    display: flex;
+    align-items: stretch;
+    position: fixed;
+    left: 12px;
+    right: 12px;
+    bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+    z-index: 1300;
+    background: var(--color-bg);
+    border: 1px solid var(--color-divider);
+    box-shadow: 0 2px 14px rgb(0 0 0 / 0.22);
+  }
+  .peakBarOpen {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 12px 14px;
+    background: transparent;
+    border: 0;
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+  }
+  .peakBarName {
+    font-family: var(--font-heading);
+    font-weight: var(--font-heading-weight);
+    font-size: 15px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: var(--color-text);
+    /* A long peak name must not push the call to action off the bar. */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .peakBarCta {
+    flex: none;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--color-accent-700, #416180);
+  }
+  /* Leaflet's zoom buttons live bottom-right, which is exactly where the
+     toggle and the peak bar float. Lift the whole bottom control row above
+     them so «−» is not sitting underneath something. */
+  .map :global(.leaflet-bottom.leaflet-right) {
+    bottom: calc(72px + env(safe-area-inset-bottom, 0px));
+  }
+  .page[data-pane="map"] .map :global(.leaflet-bottom.leaflet-right) {
+    bottom: calc(84px + env(safe-area-inset-bottom, 0px));
+  }
+
+  .peakBarClose {
+    flex: none;
+    width: 44px;
+    border: 0;
+    border-left: 1px solid var(--color-divider);
+    background: transparent;
+    font-size: 20px;
+    line-height: 1;
+    color: color-mix(in srgb, var(--color-text) 55%, transparent);
+    cursor: pointer;
+  }
 }
 
 @media (max-width: 760px) and (prefers-reduced-motion: reduce) {

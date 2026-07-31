@@ -5,7 +5,7 @@ import { notFound } from "next/navigation";
 import { Lock } from "lucide-react";
 
 import { Blueprint } from "@/components/Blueprint";
-import { SiteNav, SiteFooter } from "@/components/SiteChrome";
+import { AccountNav, SiteNav, SiteFooter } from "@/components/SiteChrome";
 import { ElevationProfile } from "@/components/guide/ElevationProfile";
 import { GuideSections } from "@/components/guide/GuideSections";
 import { LockedGuide } from "@/components/guide/LockedGuide";
@@ -73,9 +73,7 @@ export default async function TourGuidePage({ params }: { params: Promise<{ slug
     <div className="shell">
       <SiteNav lang={lang}>
         <Link href="/kart">{common.map}</Link>
-        <Link className="nav-muted" href="/min-side">
-          {common.account}
-        </Link>
+        <AccountNav lang={lang} />
       </SiteNav>
 
       <main className="page page-narrow" style={{ paddingBottom: 64 }}>

@@ -36,6 +36,7 @@ export default async function KartPage({
     <MapView
       lang={lang}
       hasAccess={viewer.hasAccess}
+      signedIn={Boolean(viewer.userId)}
       initialSlug={initialSlug}
       initialRouteId={initialRouteId}
     />

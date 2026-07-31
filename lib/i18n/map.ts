@@ -29,6 +29,8 @@ export interface Dict {
   metaDescription: string;
   /* — topbar — */
   login: string;
+  /** Replaces login + trial in the topbar once there is a session. */
+  account: string;
   trial: string;
   /* — filters — */
   all: string;
@@ -81,6 +83,10 @@ export interface Dict {
   /* — mobile: the list/map toggle, one pane at a time on a narrow screen — */
   showMap: string;
   showList: string;
+  /** Bottom bar on the map once a peak is picked: opens the detail panel. */
+  showInfo: string;
+  /** Clears the picked peak and returns to the plain map. */
+  clearPeak: string;
   unlockedTitle: string;
   unlockedBody: string;
   guidePending: string;
@@ -92,6 +98,7 @@ const MAP: Translated<Dict> = {
     metaDescription:
       "Alle toppturene på ett kart: grad, høydemeter, normaltid, himmelretning og sesong for hver topp.",
     login: "Logg inn",
+    account: "Min side",
     trial: "Prøv gratis",
     all: "Alle",
     search: "Søk etter topp eller region…",
@@ -137,6 +144,8 @@ const MAP: Translated<Dict> = {
     mapLoading: "Laster kartet…",
     showMap: "Vis kart",
     showList: "Vis liste",
+    showInfo: "Vis info",
+    clearPeak: "Lukk valgt topp",
     unlockedTitle: "Du har full tilgang",
     unlockedBody: "Rutebeskrivelse, høydeprofil, GPX og skredterreng er åpne for deg.",
     guidePending: "Full turguide for denne toppen er under arbeid.",
@@ -146,6 +155,7 @@ const MAP: Translated<Dict> = {
     metaDescription:
       "Every ski tour on one map: grade, vertical gain, typical time, aspect and season for each peak.",
     login: "Log in",
+    account: "My account",
     trial: "Try for free",
     all: "All",
     search: "Search peak or region…",
@@ -198,6 +208,8 @@ const MAP: Translated<Dict> = {
     mapLoading: "Loading the map…",
     showMap: "Show map",
     showList: "Show list",
+    showInfo: "Show info",
+    clearPeak: "Clear selected peak",
     unlockedTitle: "You have full access",
     unlockedBody: "Route description, elevation profile, GPX and avalanche terrain are open to you.",
     guidePending: "The full guide for this peak is still being written.",

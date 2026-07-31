@@ -65,11 +65,14 @@ function TourMeta({ tour, t, showSummit }: { tour: Tour; t: Dict; showSummit?: b
 export default function MapView({
   lang,
   hasAccess,
+  signedIn,
   initialSlug,
   initialRouteId,
 }: {
   lang: Lang;
   hasAccess: boolean;
+  /** Session, not subscription — decides «Min side» vs «Logg inn»/«Prøv gratis». */
+  signedIn: boolean;
   initialSlug: string | null;
   initialRouteId: string | null;
 }) {
@@ -154,9 +157,11 @@ export default function MapView({
     /* A route id belongs to one peak; carrying it across would pick an unrelated
        route or silently fall back. */
     setSelectedRouteId(null);
-    /* The detail lives in the panel, so picking a peak off the map on a phone
-       has to bring the panel back or the tap would look like it did nothing. */
-    setMobilePane("list");
+    /* Deliberately does not touch `mobilePane`. Picking a peak off the map
+       should draw its route and leave you looking at it — the facts are one tap
+       away in the bar below, not forced over the thing you just asked to see.
+       From the list there is nothing to do either: that pane is already open,
+       and the detail replaces the list in place. */
   }, []);
 
   return (
@@ -165,12 +170,15 @@ export default function MapView({
         <Link className={s.brand} href="/">
           Toppkart
         </Link>
-        <Link className={s.loginLink} href="/logg-inn">
-          {t.login}
-        </Link>
-        <Link className="btn btn-primary" href="/betaling" style={PRIMARY_LINK}>
-          {t.trial}
-        </Link>
+        {signedIn ? (
+          <Link className={s.loginLink} href="/min-side">
+            {t.account}
+          </Link>
+        ) : (
+          <Link className="btn btn-primary" href="/betaling" style={PRIMARY_LINK}>
+            {t.trial}
+          </Link>
+        )}
         <LanguageSwitcher lang={lang} />
       </header>
 
@@ -416,6 +424,30 @@ export default function MapView({
       >
         {mobilePane === "map" ? t.showList : t.showMap}
       </button>
+
+      {/* Looking at the map with a peak picked: its route is drawn, and this is
+          the offer to read about it. Also phone-only — on a wide screen the
+          detail is already beside the map. */}
+      {selected ? (
+        <div className={s.peakBar}>
+          <button
+            type="button"
+            className={s.peakBarOpen}
+            onClick={() => setMobilePane("list")}
+          >
+            <span className={s.peakBarName}>{selected.name}</span>
+            <span className={s.peakBarCta}>{t.showInfo}</span>
+          </button>
+          <button
+            type="button"
+            className={s.peakBarClose}
+            aria-label={t.clearPeak}
+            onClick={() => setSelectedSlug(null)}
+          >
+            ×
+          </button>
+        </div>
+      ) : null}
     </div>
   );
 }
