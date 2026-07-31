@@ -153,11 +153,15 @@ content and data quality that has to be settled before the site is sold to anyon
   `scripts/build-routes/build_corridors.py` currently covers Galdhøpiggen, Tromsdalstinden,
   Rondslottet, Snøhetta and Gaustatoppen. Other peaks in the list have well-known second routes
   that nobody has researched yet — the gap is content, not capability.
-- **Three summit heights disagree with the terrain model.** Rørnestinden, Rombakstøtta and
-  Himmeltindan sit 11–13 m below their published figures in DTM1. The coordinates are right; the
-  heights are old survey numbers on sharp, corniced tops. Worth settling before print. (The
-  *vertical gain* figures have all been reconciled against the audited trailheads — see
-  `scripts/build-routes/README.md`. It is only `summitM` on these three that is still open.)
+- **Three summit heights were settled against DTM1, and still disagree with the published
+  figures.** Rørnestinden (1041 → **1030**), Rombakstøtta (1243 → **1231**) and Himmeltindan
+  (962 → **956**) now carry Kartverket's 1 m terrain model, the same source as the other 21
+  summits. Himmeltindan's stored coordinate turned out to be 67 m off the top as well, reading
+  8 m low; it was moved and its route regenerated, which is why its gain went 960 → 980 m.
+  What remains open is *why* the published numbers sit 6–12 m higher. These are sharp, corniced
+  Arctic tops and the published figures are old survey numbers, so the gap may be a cornice, a
+  cairn, or simply an older measurement — DTM1 is bare rock. A local reader should settle it
+  before print; the app is at least now internally consistent and single-sourced.
 - **The guide text has not been read by anyone who has skied these tours.** Every number in
   `lib/guides.ts` traces to Kartverket's terrain model, the route research or a cited source, and
   every guide was put through an adversarial fact-check that rewrote all 24 of them — it caught a
