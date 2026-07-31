@@ -105,21 +105,33 @@ export async function getInvoices(viewer: Viewer, lang: Lang = "no"): Promise<In
 
   try {
     const list = await stripe.invoices.list({ customer: customerId, limit: 12 });
-    return list.data.map((invoice) => {
-      const line = invoice.lines.data[0];
-      // A description Stripe wrote follows the product, not the reader's
-      // language; only our own fallback is translated.
-      const description = line?.description ?? planDescription(plan, lang);
-      const amount = invoice.amount_paid > 0 ? invoice.amount_paid : invoice.amount_due;
-      return {
-        id: invoice.id,
-        date: new Date(invoice.created * 1000).toISOString(),
-        description,
-        amount: formatAmount(amount, invoice.currency),
-        status: statusLabel(invoice.status, lang),
-        pdfUrl: invoice.invoice_pdf ?? invoice.hosted_invoice_url ?? null,
-      } satisfies Invoice;
-    });
+    return list.data
+      /* Drafts are dropped. A draft has not been finalised, so Stripe has not
+         rendered a PDF for it yet — `invoice_pdf` and `hosted_invoice_url` are
+         both null — and the row would show a «PDF» label that leads nowhere.
+         It is not a receipt either: nobody has been charged for a draft.
+         Everything else stays, including open and void, because those did
+         happen to the customer and the status column says which is which.
+
+         Filtered here rather than through the API: `invoices.list` takes a
+         single `status`, so asking for not-draft is not something it can
+         express. */
+      .filter((invoice) => invoice.status !== "draft")
+      .map((invoice) => {
+        const line = invoice.lines.data[0];
+        // A description Stripe wrote follows the product, not the reader's
+        // language; only our own fallback is translated.
+        const description = line?.description ?? planDescription(plan, lang);
+        const amount = invoice.amount_paid > 0 ? invoice.amount_paid : invoice.amount_due;
+        return {
+          id: invoice.id,
+          date: new Date(invoice.created * 1000).toISOString(),
+          description,
+          amount: formatAmount(amount, invoice.currency),
+          status: statusLabel(invoice.status, lang),
+          pdfUrl: invoice.invoice_pdf ?? invoice.hosted_invoice_url ?? null,
+        } satisfies Invoice;
+      });
   } catch {
     return [];
   }
