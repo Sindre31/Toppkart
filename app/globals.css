@@ -357,6 +357,12 @@ a.btn-secondary, a.btn-secondary:hover { color: var(--color-text); }
      nobody can then reach. */
   .lang-full { display: none; }
   .lang-short { display: inline; }
+  /* In-page jump links ("Innhold", "Pris"). They are what tips the nav onto a
+     second row on a phone, and they are the two items worth the least there:
+     both only scroll the page the reader is already on, while everything else
+     in the bar goes somewhere they cannot otherwise reach. The sections stay
+     reachable by scrolling, which is what a phone reader does anyway. */
+  .nav-jump { display: none; }
 }
 
 /* — section kicker: "01 · Abonnement" over a 1px rule — */
