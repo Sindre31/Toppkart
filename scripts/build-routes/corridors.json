@@ -1521,5 +1521,823 @@
     "start_vs_implied_m": null
    }
   ]
+ },
+ "skarasalen": {
+  "routes": [
+   {
+    "id": "normalruta",
+    "name": "Normalruta frå bommen på Kvistadvegen om Kvistadsætra",
+    "description": "Frå bommen på Kvistadvegen ovanfor Kvistad-gardane i Bondalen (104 moh) følgjer ein den vinterstengde setervegen om lag 3,7 km sørover og innover Kvistaddalen til parkeringa framfor Kvistadsætra og Årsetsætra (509 moh). Derifrå går ruta nordaustover opp gjennom open bjørkeskog og vidare opp storhellinga - nord for og langsmed skredrenna aust for Blåhornet - til skaret mellom Blåhornet og Skårasalen (1074 moh). Over skaret svingar ein aust-nordaust opp hovudhellinga mot ryggen og toppplatået (1448 moh), og siste stykket sørover langs platået til toppen på 1542 moh. Aust for eggja fell fjellet rett ned i Skåradalen, og skavlane ligg på den sida.",
+    "trailhead": {
+     "name": "Bommen på Kvistadvegen",
+     "lat": 62.18612,
+     "lng": 6.41212,
+     "elevation_m": 104.24,
+     "fullName": "Bommen på Kvistadvegen"
+    },
+    "waypoints": [
+     {
+      "name": "Parkeringa ved Kvistadsætra og Årsetsætra",
+      "lat": 62.15893,
+      "lng": 6.45179,
+      "elevation_m": 509.15
+     },
+     {
+      "name": "Skaret mellom Blåhornet og Skårasalen",
+      "lat": 62.165,
+      "lng": 6.468,
+      "elevation_m": 1073.82
+     },
+     {
+      "name": "Toppplatået nordvest for toppen",
+      "lat": 62.168,
+      "lng": 6.482,
+      "elevation_m": 1447.76
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Renna aust for Blåhornet går vanlegvis eitt eller fleire store skred ned mot setervegen kvar vinter, og oppstiginga går rett ved sida av henne; hellinga held 30-40° frå om lag 800 til 1100 moh. På toppplatået ligg det store skavlar mot aust, der fjellet fell 300 høgdemeter på 75 meter ned i Skåradalen - hald god avstand frå eggja. Nedkøyringa Vestrennene er 45° og er ikkje ein del av denne ruta."
+   }
+  ]
+ },
+ "vesoldo": {
+  "routes": [
+   {
+    "id": "normalruta",
+    "name": "Normalruta frå Byrkjenes over Fadnastølen",
+    "description": "Frå parkeringa ved Byrkjenes (211 m), innerst på bomvegen Tordalsvegen nord for Strandebarm, går ein opp den bratte skogkledde lia mot Fadnastølen (498 m). Over stølen opnar terrenget seg, og ruta held nordaustover inn på den breie sørvestryggen ved 629 m. Derfrå følgjer ein ryggen samanhengande nordover – 791 m, så skulderen på 977 m – før dei siste hundre metrane svingar nordaustover opp den slake toppkuppelen til varden på 1046 m. Heile den øvre delen ligg på open, jamn rygg; ein held seg vest for sørfallet og godt aust for stupa mot Goddalen.",
+    "trailhead": {
+     "name": "Byrkjenes parkering",
+     "lat": 60.28673,
+     "lng": 6.06502,
+     "elevation_m": 211.45,
+     "fullName": "Byrkjenes parkering"
+    },
+    "waypoints": [
+     {
+      "name": "Fadnastølen",
+      "lat": 60.29068,
+      "lng": 6.07731,
+      "elevation_m": 497.65
+     },
+     {
+      "name": "Nedre del av sørvestryggen",
+      "lat": 60.294,
+      "lng": 6.081,
+      "elevation_m": 629.19
+     },
+     {
+      "name": "Sørvestryggen 790",
+      "lat": 60.3005,
+      "lng": 6.0845,
+      "elevation_m": 791.24
+     },
+     {
+      "name": "Skulderen 980",
+      "lat": 60.309,
+      "lng": 6.0855,
+      "elevation_m": 976.6
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Hald deg på sørvestryggen heilt opp. Nordsida og nordvestsida av toppen fell 55° og vestsida 48° innanfor 800 m frå varden, og i flatt lys er kanten ikkje synleg. Den skogkledde lia over Byrkjenes er bratt nok til å gå laus etter mildvêr og regn, og Tordalsvegen er privat bomveg – brøyting til parkeringa er ikkje garantert."
+   }
+  ]
+ },
+ "besshoe": {
+  "routes": [
+   {
+    "id": "normalruta",
+    "name": "Normalruta fra Bessheim over Bessvatnet og Brue",
+    "description": "Fra parkeringa ved Bessheim fjellstue (961 moh) følger du den merkede ruta vestover og opp de 410 høydemeterne til nordøstenden av Bessvatnet (1374 moh). Videre vestover langs vatnet, som er 1372 moh og vinterstid en flat sletting på seks kilometer, fram til Grotåosen i nordvestenden (1385 moh). Derfra vender ruta rett vestover opp Grotådalen, mellom Bukkehøe i nord og austryggen til Besshø i sør, i jevn stigning til rundt 1745 moh. Så sørvestover opp på ryggen ved Brue (2047 moh), og til slutt vest-sørvest langs den slake ryggen de siste 210 høydemeterne til det store topplatået på 2257 moh. Samme vei ned.",
+    "trailhead": {
+     "name": "Bessheim fjellstue",
+     "lat": 61.51461,
+     "lng": 8.85351,
+     "elevation_m": 961.26,
+     "fullName": "Bessheim fjellstue"
+    },
+    "waypoints": [
+     {
+      "name": "Nordøstenden av Bessvatnet",
+      "lat": 61.5262,
+      "lng": 8.808,
+      "elevation_m": 1374.21
+     },
+     {
+      "name": "Grotåosen, vestenden av Bessvatnet",
+      "lat": 61.525,
+      "lng": 8.7445,
+      "elevation_m": 1384.82
+     },
+     {
+      "name": "Opp Grotådalen, ca 1745 moh",
+      "lat": 61.5248,
+      "lng": 8.72,
+      "elevation_m": 1744.48
+     },
+     {
+      "name": "Brue, ca 2045 moh",
+      "lat": 61.5197,
+      "lng": 8.705,
+      "elevation_m": 2046.99
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Toppen er stor og rund, og nord-, nordvest- og vestsida faller 55–70° rett ned mot Russvatnet og Gjende. I dårlig sikt er det her turen blir farlig, ikke i oppstigningen. Ryggen inn mot Brue er smal nok til at det teller: sørsida faller 35–40° mot Gjende, nordsida 25–30° ned mot Besshøbrean. Sørrennene som brukes til nedkjøring holder 35–40° med korte partier på 45° og er steinete og isete i dårlige forhold."
+   }
+  ]
+ },
+ "breitinden": {
+  "routes": [
+   {
+    "id": "normalruta",
+    "name": "Normalruta fra Svarthola",
+    "description": "Normalruta fra parkeringa i Svarthola langs Fv862, opp til nordenden av Svartholvatnet, videre østover over ryggen til Breitindvatnet, langs nordøstsida av vatnet og opp vestflanken til skulderen sørvest for toppblokka. Derfra følger ruta sørvestryggen til topps; de siste 140 høydemeterne er utsatt klyving, og skiene blir vanligvis satt igjen på skulderen.",
+    "trailhead": {
+     "name": "Svarthola rasteplass ved Fv862",
+     "lat": 69.45859,
+     "lng": 17.59591,
+     "elevation_m": 30.41,
+     "fullName": "Svarthola rasteplass ved Fv862"
+    },
+    "waypoints": [
+     {
+      "name": "Nordenden av Svartholvatnet",
+      "lat": 69.4545,
+      "lng": 17.606,
+      "elevation_m": 206.57
+     },
+     {
+      "name": "Ryggen øst for Svartholvatnet",
+      "lat": 69.4525,
+      "lng": 17.62,
+      "elevation_m": 399.51
+     },
+     {
+      "name": "Nordøstsida av Breitindvatnet",
+      "lat": 69.4508,
+      "lng": 17.636,
+      "elevation_m": 480.6
+     },
+     {
+      "name": "Skulderen sørvest for toppblokka",
+      "lat": 69.4503,
+      "lng": 17.6512,
+      "elevation_m": 762.92
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Vestflanken opp fra Breitindvatnet er et sammenhengende heng på 25-32 grader med vatnet som terrengfelle nedenfor. Nord- og nordøstsida av toppen faller 53-70 grader rett under egget, så skavlene ligger der — hold deg på sørvestsida av ryggen. De siste 140 høydemeterne er utsatt klyving og gjøres uten ski på beina."
+   }
+  ]
+ },
+ "folarskardnuten": {
+  "routes": [
+   {
+    "id": "normalruta",
+    "name": "Frå Haugastøl gjennom Folarskardet",
+    "description": "Standard vinterrute på Buskeruds høgaste. Frå p-plassen ved Rv7 på Haugastøl følgjer ein den kvista DNT-vinterruta mot Raggsteindalen nordover over Slåttehall-flatene og Hellevatn-terrenget, i alt nær 11 km og rundt 600 høgdemeter, opp i Folarskardet ved Lordehytta (1620 moh). Der går ein av merkinga, forbi tjørna på 1603 m, og opp ramma i sørausthellinga - eit kort, bratt trinn - til skulderen på ca. 1830 m og vidare slakt nordvestover til toppvarden på 1927 moh. Retur same veg.",
+    "trailhead": {
+     "name": "Haugastøl p-plass ved Rv7",
+     "lat": 60.51412,
+     "lng": 7.85272,
+     "elevation_m": 1007.14,
+     "fullName": "Haugastøl p-plass ved Rv7"
+    },
+    "waypoints": [
+     {
+      "name": "Over stigninga frå Haugastøl, 1212",
+      "lat": 60.5515,
+      "lng": 7.8231,
+      "elevation_m": 1211.86
+     },
+     {
+      "name": "Flatene under Folarskardet, 1326",
+      "lat": 60.5814,
+      "lng": 7.8039,
+      "elevation_m": 1326.34
+     },
+     {
+      "name": "Lordehytta i Folarskardet, 1620",
+      "lat": 60.6056,
+      "lng": 7.802,
+      "elevation_m": 1619.92
+     },
+     {
+      "name": "Over det bratte trinnet, 1830",
+      "lat": 60.6093,
+      "lng": 7.7948,
+      "elevation_m": 1829.88
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Trinnet opp frå Folarskardet er 35-40 grader og er det einaste verkelege skredterrenget på turen; det kan òg vera avblåst og isete, og då er det her ein treng stegjern. Toppplatået er ope og navigasjonskrevjande i dårleg sikt, og skavlane på nordsida av skarvet heng langt ut over Raggsteindalen. Den lange innmarsjen gjer vêrvindauget viktigare enn sjølve ruta."
+   }
+  ]
+ },
+ "geitgaljen": {
+  "routes": [
+   {
+    "id": "normalruta",
+    "name": "Normalruta fra Liland gjennom Lilandsdalen",
+    "description": "Normalruta fra Liland/Skinvollen innerst i Austnesfjorden: følg lysløypa et stykke og videre inn i Lilandsdalen gjennom bjørkeskogen, opp den bratte renna fra ca. 250 til 360 moh og deretter i slakere terreng oppover dalen til ca. 620 moh. Der elveleiet bratter til, går en tydelig rampe opp mot høyre inn i den store skålformasjonen som utgjør toppen av sørrenna, og videre mot skaret og toppen. Øverste del er klyving med stegjern og isøks. Sørrenna brukes som nedkjøring og krever bil nummer to.",
+    "trailhead": {
+     "name": "Vegenden i Geitgallien ved Skinvollen, Liland",
+     "lat": 68.34799,
+     "lng": 14.74685,
+     "elevation_m": 19.76,
+     "fullName": "Vegenden i Geitgallien ved Skinvollen, Liland"
+    },
+    "waypoints": [
+     {
+      "name": "Nedenfor renna i Lilandsdalen, ~290 moh",
+      "lat": 68.34852,
+      "lng": 14.77815,
+      "elevation_m": 290.45
+     },
+     {
+      "name": "Dalen på ~620 moh",
+      "lat": 68.34849,
+      "lng": 14.79598,
+      "elevation_m": 621.17
+     },
+     {
+      "name": "Skålformasjonen over sørrenna, ~845 moh",
+      "lat": 68.34724,
+      "lng": 14.80615,
+      "elevation_m": 843.7
+     },
+     {
+      "name": "Der det bratter til mot toppen, ~930 moh",
+      "lat": 68.34585,
+      "lng": 14.81187,
+      "elevation_m": 928.48
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Hele ruta ligger i skredterreng: renna på 250-360 moh er 35 grader med dalbunnen som terrengfelle under, og skålformasjonen over sørrenna er et klassisk utløpsområde der stoppestedet må velges med omhu. Rett sør for toppen faller terrenget 64 grader, og de øverste 170 høydemeterne ligger på 42 grader — stegjern og isøks, ikke ski. Området går store skred flere ganger hver vinter."
+   }
+  ]
+ },
+ "glittertinden": {
+  "routes": [
+   {
+    "id": "normalruta",
+    "name": "Normalruta fra Glitterheim over Glitterbrean",
+    "description": "Fra den store grusparkeringa ved nasjonalparkgrensa i Veodalen (1297 moh) følger du den bilfrie vegen/skiløypa 7 km sørvestover langs Veo inn til Glitterheim (1385 moh). Bak hytta legger ruta seg nordvestover opp nordsida av Steinbudalen, forbi 1668 moh og videre i jevn stigning til rundt 2010 moh. Derfra går den inn på ryggen øst for Glitterbrean, opp forbi 2222 moh og 2357 moh på øvre del av breen, og sist vestover opp den siste kneika til toppen på 2451 moh. Samme vei ned. Ut.no beskriver skiruta som jevn stigning hele veien med terreng under 30 grader, med valget mellom sommerstien øst for Glitterbrean og selve breen.",
+    "trailhead": {
+     "name": "Veodalen p-plass ved nasjonalparkgrensa",
+     "lat": 61.67152,
+     "lng": 8.71796,
+     "elevation_m": 1297.27,
+     "fullName": "Veodalen p-plass ved nasjonalparkgrensa"
+    },
+    "waypoints": [
+     {
+      "name": "Midt i Veodalen, nord for elva",
+      "lat": 61.6548,
+      "lng": 8.6795,
+      "elevation_m": 1336.93
+     },
+     {
+      "name": "Glitterheim",
+      "lat": 61.62265,
+      "lng": 8.63237,
+      "elevation_m": 1385.11
+     },
+     {
+      "name": "Flanken over Steinbudalen, ca 2010 moh",
+      "lat": 61.64504,
+      "lng": 8.60061,
+      "elevation_m": 2009.89
+     },
+     {
+      "name": "Øst for Glitterbrean, ca 2220 moh",
+      "lat": 61.65058,
+      "lng": 8.58666,
+      "elevation_m": 2221.76
+     },
+     {
+      "name": "Øvre Glitterbrean, ca 2355 moh",
+      "lat": 61.65061,
+      "lng": 8.56709,
+      "elevation_m": 2357.46
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Glitterbrean er en bre: sprekker og snøbroer er reelle, og turen bør gås med bresikring når snødekket er tynt. Toppen har bare tre slake sider — nord, nordøst, vest og nordvest faller 52–70° ned mot Grjotbrean og Glitterholet, og i dårlig sikt er det lett å dra for langt nord på det brede topplatået. Det er ingen brøytet veg inn: kommer du i mars–mai må du enten gå de 24 km fra Randsverk på ski eller forhåndsbestille beltebil hos Glitterheim."
+   }
+  ]
+ },
+ "jakta": {
+  "routes": [
+   {
+    "id": "normalruta",
+    "name": "Normalruta frå Norang gjennom Konedalen",
+    "description": "Frå vegenden ved Lisjeholen sør for Norang-gardane går ein den bratte stien opp til Konedalen med skia på sekken, først på venstre side av elva og så over på høgre. Oppe i dalen tek ein på seg skia og følgjer det slake dalføret sørvestover til om lag 740 moh. Der svingar ein til høgre og sikk-sakkar opp den 33-36 grader bratte sida i nordvest til ein når toppryggen ved 1240 moh. Ryggen blir følgd sørvestover heilt til topps; ein held seg midt på han, med skavlar mot Konedalen i søraust og den stupbratte nordvestveggen mot Hjørundfjorden på hi sida. Vanlegaste nedkøyring er same veg tilbake: 35 grader frå ryggen ned mot Konedalen, slakare vidare ut dalen.",
+    "trailhead": {
+     "name": "Norang, vegenden ved Lisjeholen",
+     "lat": 62.18571,
+     "lng": 6.66455,
+     "elevation_m": 60.82,
+     "fullName": "Norang, vegenden ved Lisjeholen"
+    },
+    "waypoints": [
+     {
+      "name": "Øvre Konedalen, 742",
+      "lat": 62.1745,
+      "lng": 6.646,
+      "elevation_m": 742.44
+     },
+     {
+      "name": "Toppryggen 1242",
+      "lat": 62.175,
+      "lng": 6.6312,
+      "elevation_m": 1241.55
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Det kan gå skred frå Jakta heile vegen inn Konedalen; hald deg til venstre (søraustre) side på veg inn dalen. Den 33-36 grader bratte sida opp til toppryggen er den store skredfella på turen. På sjølve toppryggen er det skavlar til begge sider - mot Konedalen i søraust, og mot den stupbratte nordvestveggen ned mot Hjørundfjorden, der DTM1 måler om lag 80 grader rett under toppen."
+   }
+  ]
+ },
+ "keipen": {
+  "routes": [
+   {
+    "id": "normalruta",
+    "name": "Normalruta fra Medfjordbotnvatnan",
+    "description": "Normalruta fra grusparkeringa ved Medfjordbotnvatnan langs Fv862: følg Keipelva nordover i jevnt stigende terreng til ca. 200-225 moh, drei så mot vestnordvest og følg fjellsida oppover inn i den store skåla sør for toppen. Fra skåla på ca. 595 moh går sporet rett nord opp henget til toppryggen ved ca. 800 moh, og videre langs ryggen til toppen. Nedkjøringen følger oppstigningen, med en litt brattere variant ned en liten dalformasjon fra ryggen.",
+    "trailhead": {
+     "name": "Parkeringa ved Medfjordbotnvatnan (Fv862)",
+     "lat": 69.47591,
+     "lng": 17.739,
+     "elevation_m": 101.7,
+     "fullName": "Parkeringa ved Medfjordbotnvatnan (Fv862)"
+    },
+    "waypoints": [
+     {
+      "name": "Keipelva, ~225 moh",
+      "lat": 69.4795,
+      "lng": 17.7382,
+      "elevation_m": 224.73
+     },
+     {
+      "name": "Fjellsida vest for Keipelva, ~385 moh",
+      "lat": 69.482,
+      "lng": 17.733,
+      "elevation_m": 384.01
+     },
+     {
+      "name": "Skåla sør for Keipen, ~595 moh",
+      "lat": 69.4905,
+      "lng": 17.723,
+      "elevation_m": 593.77
+     },
+     {
+      "name": "Bratthenget opp mot toppryggen, ~815 moh",
+      "lat": 69.4935,
+      "lng": 17.723,
+      "elevation_m": 812.86
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Skåla sør for toppen er både løsne- og utløpsområde, og henget opp mot toppryggen ligger jevnt på 32-33 grader. Nordsida av toppen faller 60 grader rett under egget, så skavlene henger nordover — hold deg på sørsida av ryggen. De øverste hundre høydemeterne er ofte vindherjet og harde."
+   }
+  ]
+ },
+ "kjerag": {
+  "routes": [
+   {
+    "id": "normalruta",
+    "name": "Vårruta frå Øygardstøl om Langavassvegen",
+    "description": "Frå den store parkeringa på Øygardstøl (641 m) følgjer ein Lysevegen sørover – forbi 735 m – dei drygt to kilometrane til der anleggsvegen mot Langavatn tek av ved Stølsdalen bru (850 m). Vidare oppover Langavassvegen sørvestover til om lag 944 m, der ein forlèt vegen og held vest/nordvest inn på Kjeragplatået. Over platået går ruta jamt vestover over knausar og små vatn til punktet på 1090 m, og siste kilometeren er nesten flat fram til toppunktet på 1096 m. Terrenget heile vegen er slakt – innanfor 800 m av toppen ligg alle åtte retningane under 6° i snitt – men platået er svaberg med korte, brå kantar, og nordsida stuper i Lysefjorden.",
+    "trailhead": {
+     "name": "Øygardstøl parkering",
+     "lat": 59.04468,
+     "lng": 6.65146,
+     "elevation_m": 640.67,
+     "fullName": "Øygardstøl parkering"
+    },
+    "waypoints": [
+     {
+      "name": "Lysevegen 735",
+      "lat": 59.0389,
+      "lng": 6.65146,
+      "elevation_m": 735.43
+     },
+     {
+      "name": "Avkjøringa til Langavassvegen",
+      "lat": 59.02907,
+      "lng": 6.65772,
+      "elevation_m": 850.3
+     },
+     {
+      "name": "Langavassvegen 944",
+      "lat": 59.01931,
+      "lng": 6.64767,
+      "elevation_m": 944.01
+     },
+     {
+      "name": "Kjeragplatået 1090",
+      "lat": 59.018,
+      "lng": 6.6045,
+      "elevation_m": 1089.56
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Nordsida av Kjerag er stupet mot Lysefjorden – hald godt sør for kanten, særleg i tåke og flatt lys. Platået er svaberg med små, brå skrentar mellom slake parti; fleire stader fell terrenget 25–30° på under seksti meter. Lysevegen er vinterstengd og blir normalt ikkje brøytt før veka før påske, med opning tidlegast 1. mai og ofte seinare, så turen er eit vårvindauge og ikkje ein vintertur."
+   }
+  ]
+ },
+ "moysalen": {
+  "routes": [
+   {
+    "id": "vestryggen",
+    "name": "Vestryggen fra E10 ved Litlvatnet",
+    "description": "Normalruta (Vestryggen) fra den store parkeringa langs E10 på sørsida av Litlvatnet: nordover gjennom vassdraget nord for Litlvatnet, over skardet på ca. 450 moh og ned til Grønnvatnet 328. Derfra følges sommerruta oppover, men på høyre (østre) side av punkt 450, opp bekkedraget og over det bratte partiet til breen sørøst for toppen. Fra breen går ruta nordvest opp på den lange ryggen som fører helt til toppen.",
+    "trailhead": {
+     "name": "Parkeringa langs E10 sør for Litlvatnet",
+     "lat": 68.46535,
+     "lng": 15.44134,
+     "elevation_m": 22.53,
+     "fullName": "Parkeringa langs E10 sør for Litlvatnet"
+    },
+    "waypoints": [
+     {
+      "name": "Dalen nord for Litlvatnet",
+      "lat": 68.48,
+      "lng": 15.4545,
+      "elevation_m": 136.26
+     },
+     {
+      "name": "Skardet inn mot Grønnvatnet, ~450 moh",
+      "lat": 68.5035,
+      "lng": 15.4545,
+      "elevation_m": 450.71
+     },
+     {
+      "name": "Grønnvatnet 328",
+      "lat": 68.50774,
+      "lng": 15.45174,
+      "elevation_m": 328.0
+     },
+     {
+      "name": "Breen sørøst for Møysalen, ~1025 moh",
+      "lat": 68.5225,
+      "lng": 15.46,
+      "elevation_m": 1026.59
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Turen er lang — 1364 høydemeter kumulativt og 11-18 timer — så tidspunktet avgjør om du møter gjennomvåt eller gjennomfrossen snø i det bratte partiet under breen. Stigningen opp fra Grønnvatnet ligger over 20 grader på lang strekning og har brattere trinn opp mot breen. Toppryggen er eksponert og ofte hard; mange bærer skiene der, og isøks og stegjern hører med."
+   }
+  ]
+ },
+ "rasletinden": {
+  "routes": [
+   {
+    "id": "normalruta",
+    "name": "Normalruta fra Valdresflye",
+    "description": "Fra parkeringa på østsida av fv51 der Valdresflya vandrerhjem sto før brannen i 2015 (1391 moh) går ruta vestover ut på vidda, sør for Fisketjerne, der de første 1,2 km er helt flate og faktisk faller ti høydemeter. Så begynner det å stige jevnt mot den første kneika på rundt 1530 moh, og over den opp på ryggen på ca 1735 moh. Videre vestover langs ryggen, sør for Øystre Rasletinden (2011 moh), til ca 1890 moh, og til slutt opp den siste kneika og ut på toppplatået på 2104 moh. Samme vei ned.",
+    "trailhead": {
+     "name": "P-plassen ved gamle Valdresflya vandrerhjem",
+     "lat": 61.38952,
+     "lng": 8.81131,
+     "elevation_m": 1390.65,
+     "fullName": "P-plassen ved gamle Valdresflya vandrerhjem"
+    },
+    "waypoints": [
+     {
+      "name": "Ut på Valdresflye, sør for Fisketjerne",
+      "lat": 61.3925,
+      "lng": 8.79,
+      "elevation_m": 1376.83
+     },
+     {
+      "name": "Foten av første kneik",
+      "lat": 61.394,
+      "lng": 8.762,
+      "elevation_m": 1531.26
+     },
+     {
+      "name": "Oppe på ryggen, ca 1735 moh",
+      "lat": 61.3952,
+      "lng": 8.744,
+      "elevation_m": 1736.17
+     },
+     {
+      "name": "Under Øystre Rasletinden, ca 1890 moh",
+      "lat": 61.3948,
+      "lng": 8.715,
+      "elevation_m": 1890.34
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Nord- og nordvestsida av Rasletinden faller 55–65° ned mot Leirungsdalen, og sørsida 48–57°. Hold deg på ryggen; det er bare aust og nordaust som er slake. Den korte kneika under toppplatået på 1945–1980 moh er det ene stedet på ruta med samlet bratt heng over deg. Vidda ut fra fv51 er helt åpen og gir ingen ly — dette er en tur som blir vanskelig i dårlig sikt, ikke i dårlig føre."
+   }
+  ]
+ },
+ "saebyggjenuten": {
+  "routes": [
+   {
+    "id": "normalruta",
+    "name": "Vinterruta frå Berdalen over Tverrheiskara",
+    "description": "Frå parkeringa innerst i Berdalen hyttegrend (810 m) går ein austover forbi Langemyr (891 m) og opp i Tverrheiskaret (1028 m), det fyrste skaret. Vidare aust over Tverrheii og Tverrheitjønnane til Tverrheiskardet (1156 m), så ned i Gjuvvatn-bassenget og over til austenden av Midtre Gjuvvatn (1137 m). Frå vatnet stig ruta jamt austover forbi dei to namnlause vatna på 1234 og 1257 m – vegpunktet på 1225 m ligg på fast mark like vest for det nedste – og siste kilometeren går opp vestflanken av nuten til toppen på 1506 m. Ingen sti heile vegen; ruta er om lag 10,7 km kvar veg og går på fjellski med feller.",
+    "trailhead": {
+     "name": "Berdalen hyttegrend, parkering ved bommen",
+     "lat": 59.44906,
+     "lng": 7.44172,
+     "elevation_m": 809.81,
+     "fullName": "Berdalen hyttegrend, parkering ved bommen"
+    },
+    "waypoints": [
+     {
+      "name": "Langemyr",
+      "lat": 59.45516,
+      "lng": 7.46132,
+      "elevation_m": 891.3
+     },
+     {
+      "name": "Tverrheiskaret",
+      "lat": 59.45645,
+      "lng": 7.48044,
+      "elevation_m": 1027.59
+     },
+     {
+      "name": "Tverrheiskardet",
+      "lat": 59.45764,
+      "lng": 7.51592,
+      "elevation_m": 1155.68
+     },
+     {
+      "name": "Austenden av Midtre Gjuvvatn",
+      "lat": 59.4595,
+      "lng": 7.575,
+      "elevation_m": 1136.93
+     },
+     {
+      "name": "Vestflanken 1225",
+      "lat": 59.4575,
+      "lng": 7.594,
+      "elevation_m": 1225.47
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Toppen er skavlkanta mot nord: nordsida fell 41,9° i det brattaste 60-metersvindauget 460–520 m ute, medan vest og sørvest ligg på 9–11°. Kom opp og gå ned på vestsida, og hald deg unna kanten i dårleg sikt. Ruta er ti kilometer frå bilen utan sti eller merking, så vêrvindauge og navigasjon er den styrande faktoren."
+   }
+  ]
+ },
+ "saudehornet": {
+  "routes": [
+   {
+    "id": "normalruta",
+    "name": "Normalruta frå Vasshuset over skaret og sørryggen",
+    "description": "Frå parkeringa ved vassverket øvst i Vikegeila i Ørsta sentrum (149 moh) følgjer ein anleggsvegen oppover Skåla. Ved om lag 400 moh går ein av vegen, på skrå nordaustover mot Vikeelva, kryssar elva og siktar mot det lågaste punktet på ryggen mellom Vallahornet og Saudehornet (812 moh). Over skaret følgjer ein sørryggen om lag 490 høgdemeter opp til toppen på 1303 moh; dei siste 170 høgdemetrane held 33-39°. Vanlegaste nedkøyringa går same vegen, men gjerne på flanken på skiløparen si høgre side av renna - sørvestflanken, som held om lag 37° i 600 høgdemeter.",
+    "trailhead": {
+     "name": "Vasshuset (vassverket) i Vikegeila",
+     "lat": 62.21087,
+     "lng": 6.12681,
+     "elevation_m": 149.26,
+     "fullName": "Vasshuset (vassverket) i Vikegeila"
+    },
+    "waypoints": [
+     {
+      "name": "Der stien tar av frå anleggsvegen",
+      "lat": 62.21976,
+      "lng": 6.12336,
+      "elevation_m": 395.54
+     },
+     {
+      "name": "Skaret mellom Vallahornet og Saudehornet",
+      "lat": 62.225,
+      "lng": 6.1415,
+      "elevation_m": 811.69
+     },
+     {
+      "name": "Sørryggen, ~1137 moh",
+      "lat": 62.23363,
+      "lng": 6.14206,
+      "elevation_m": 1136.62
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Skredterreng frå Skåla og heile vegen opp, og sørryggen er bratt nok til at ei utglidning på hard snø får lang utløpsbane. Langs toppeggja ligg det skavl, og Friflyt nemner moglege sprekker i rennene på vestsida. Turen går rett ovanfor Ørsta sentrum, men er ikkje ein snilltur - fjellet er for erfarne."
+   }
+  ]
+ },
+ "skogshorn": {
+  "routes": [
+   {
+    "id": "normalruta",
+    "name": "Normalruta frå Trefta over austryggen",
+    "description": "Normalruta frå den store parkeringa ved Hyndra bru nedanfor Trefta på Lykkjavegen (Fv2920). Ein kryssar elva og går opp lia på vestsida, nordvestover over det opne beltet på 1000-1100 m, og inn på den breie austryggen ved ca. 1320 m. Ryggen blir følgd heile vegen til toppen. Vanlegaste nedkøyring er same veg; friflyt.no nemner òg ei renne rett nord frå toppen ned til flata på 1100 m og deretter sørover til parkeringa.",
+    "trailhead": {
+     "name": "Trefta p-plass ved Lykkjavegen",
+     "lat": 60.88134,
+     "lng": 8.75133,
+     "elevation_m": 893.12,
+     "fullName": "Trefta p-plass ved Lykkjavegen"
+    },
+    "waypoints": [
+     {
+      "name": "Lia over Trefta, 1095",
+      "lat": 60.88928,
+      "lng": 8.73177,
+      "elevation_m": 1095.27
+     },
+     {
+      "name": "Foten av austryggen, 1323",
+      "lat": 60.88781,
+      "lng": 8.71432,
+      "elevation_m": 1322.57
+     },
+     {
+      "name": "Austryggen 1595",
+      "lat": 60.88358,
+      "lng": 8.70528,
+      "elevation_m": 1594.57
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Den breie NØ-vendte fjellsida under austryggen samlar flakskavl etter vestleg vind, og det er her ein køyrer ned. Toppryggen er ofte avblåst og hard. Skogshornrenna vest og nord for toppen er ei eiga, skredutsett ekspertlinje på rundt 40 grader og må ikkje forvekslast med normalruta."
+   }
+  ]
+ },
+ "storronden": {
+  "routes": [
+   {
+    "id": "normalruta",
+    "name": "Normalruta fra Spranget over vestryggen",
+    "description": "Fra Spranget p-plass (1082 moh) følger du Rondvassbu-vegen seks kilometer nordøstover, over 1137 moh og gjennom dalen sørvest for hytta, til Rondvassbu på 1214 moh. Rundt vika ved Lonin i sørenden av Rondvatnet holder du deg på land i stedet for å ta snarveien over isen. Bak hytta stiger det bratt mot nordøst opp til stidelet på ca 1440 moh. Der rondslottet-ruta fortsetter nordover inn i Rondholet, tar Storronden av mot høyre og østover opp på vestryggen. Ryggen stiger jevnt over 1816 moh og videre de siste 320 høydemeterne til toppen på 2139 moh. Samme vei ned.",
+    "trailhead": {
+     "name": "Spranget p-plass",
+     "lat": 61.83502,
+     "lng": 9.73108,
+     "elevation_m": 1081.68,
+     "fullName": "Spranget p-plass"
+    },
+    "waypoints": [
+     {
+      "name": "Stien fra Spranget, ca 1140 moh",
+      "lat": 61.8522,
+      "lng": 9.7567,
+      "elevation_m": 1136.98
+     },
+     {
+      "name": "Dalen sørvest for Rondvassbu",
+      "lat": 61.8692,
+      "lng": 9.7873,
+      "elevation_m": 1171.73
+     },
+     {
+      "name": "Rondvassbu",
+      "lat": 61.879,
+      "lng": 9.798,
+      "elevation_m": 1213.62
+     },
+     {
+      "name": "Stidelet over Rondvassbu, ca 1440 moh",
+      "lat": 61.8855,
+      "lng": 9.8137,
+      "elevation_m": 1439.92
+     },
+     {
+      "name": "Vestryggen, ca 1815 moh",
+      "lat": 61.88938,
+      "lng": 9.84388,
+      "elevation_m": 1816.1
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Vestryggen er slak, men det er bare den ene sida av fjellet som er det: nord faller 63°, øst og sørøst 56–67°, og rett vest fra toppen 50°. Hold deg på ryggen fra stidelet og oppover, og la være å slippe deg nordover mot Rondholet fra toppen. Ur på ryggen blåser ofte bar, og da bæres skiene. Rondane ligger i varslingsregion Nord-Gudbrandsdalen, en B-region på varsom.no der skredvarsel bare publiseres ved faregrad 4–5 — en tom side betyr ikke trygt fjell."
+   }
+  ]
+ },
+ "hamperokken": {
+  "routes": [
+   {
+    "id": "normalruta",
+    "name": "Normalruta fra Fv91 over Vartavarhaugen til Middagsaksla",
+    "description": "Fra parkeringa ved Fv91 (Breivikeidvegen) nedenfor Vartavarhaugen, ca. 4,5 km fra E8 på Fagernes, går ruta østover over Vartavarhaugen og krysser Tverrelva. Derfra følger skisporet den brede nordvestryggen sammenhengende oppover: DTM1 gir jevne 16-26 grader fra ca. 350 moh til Middagsaksla, uten bratte trinn. På Middagsaksla (DTM1 1076 moh) stopper skituren. Videre til Hamperokken er det ca. 1,4 km eksponert nordvestrygg som gås til fots med stegjern og isøks; ryggen bølger 25-90 høydemeter opp og ned, har luftige partier og korte klyvepartier, og de siste par hundre metrene er ei renne og en bratt topppyramide. Mange setter fra seg skiene på Middagsaksla, andre bærer dem til forvarden på ca. 1190 moh og lar dem ligge der. Nedkjøringen følger oppstigningsryggen tilbake mot Vartavarhaugen; fallretningen der er målt til NV (293 grader) med 16-26 grader.",
+    "trailhead": {
+     "name": "Parkeringa ved Vartavarhaugen (Fv91, skiltet Ti på Topp)",
+     "lat": 69.58534,
+     "lng": 19.26861,
+     "elevation_m": 65.09,
+     "fullName": "Parkeringa ved Vartavarhaugen (Fv91, skiltet Ti på Topp)"
+    },
+    "waypoints": [
+     {
+      "name": "Vartavarhaugen",
+      "lat": 69.58614,
+      "lng": 19.28303,
+      "elevation_m": 158.76
+     },
+     {
+      "name": "Nordvestryggen, ~610 moh",
+      "lat": 69.57809,
+      "lng": 19.31586,
+      "elevation_m": 609.27
+     },
+     {
+      "name": "Middagsaksla - her tas skiene av",
+      "lat": 69.57296,
+      "lng": 19.33775,
+      "elevation_m": 1076.07
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Skituren opp ryggen er lite skredutsatt, men flankene på begge sider av nordvestryggen er bratte og terrengfeller: hold deg på ryggen i dårlig sikt. Toppryggen er den reelle faren - luftig, delvis skavlet mot nordøst, og med isete klyvepartier som krever stegjern, isøks og tau-vurdering. Snu på Middagsaksla hvis ryggen er isete eller sikten er dårlig; det er der skituren uansett slutter."
+   }
+  ]
+ },
+ "hornindalsrokken": {
+  "routes": [
+   {
+    "id": "normalruta",
+    "name": "Normalruta frå Langøylia over Trollaksla og Sætrenibba",
+    "description": "Frå vestenden av hyttevegen i Langøylia går ein opp lia gjennom open lauvskog, aust for Gjøelva, til ein når Aksla på om lag 920 moh. Vidare følgjer ein ryggen nordvestover til Trollaksla (1255 moh.) og deretter sørryggen litt opp og ned nordover til Sætrenibba (1370 moh.) og skaret nord for denne, som ligg på 1226 moh. Frå skaret rundar ein austover inn i sida som fell mot Kjellstaddalen og traverserer denne opp på ryggen aust for toppen. Der, kring 1420 moh., tek dei fleste av seg skia: dei siste 103 høgdemetrane er ein smal og eksponert rygg. Vanlegaste nedkøyring er ned Kjellstaddalen, nesten 1000 høgdemeter i 25-35 grader ned til Kjellstadsætra, og deretter eit par flate kilometer ut dalen og vestover attende til bilen.",
+    "trailhead": {
+     "name": "Langøylia hyttefelt, vestre vegende",
+     "lat": 62.0341,
+     "lng": 6.74613,
+     "elevation_m": 387.7,
+     "fullName": "Langøylia hyttefelt, vestre vegende"
+    },
+    "waypoints": [
+     {
+      "name": "Aksla, 921",
+      "lat": 62.0445,
+      "lng": 6.719,
+      "elevation_m": 921.26
+     },
+     {
+      "name": "Trollaksla",
+      "lat": 62.0497,
+      "lng": 6.6938,
+      "elevation_m": 1255.41
+     },
+     {
+      "name": "Sætrenibba",
+      "lat": 62.06347,
+      "lng": 6.67999,
+      "elevation_m": 1369.56
+     },
+     {
+      "name": "Austryggen 1424 – der skia blir sette igjen",
+      "lat": 62.0703,
+      "lng": 6.6598,
+      "elevation_m": 1423.8
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Skredterreng i botnen av Kjellstaddalen og i heile austsida opp mot toppryggen - det er både traversen på veg opp og nedkøyringa. Toppryggen er smal og skavlete; DTM1 gjev om lag 55 grader rett aust og 75 grader rett vest for ryggen dei siste hundre høgdemetrane, så eit feiltrinn her er ikkje til å rette opp. Isøks er vanleg når snøen er hard, og heile turen er lang nok til at vending må avgjerast tidleg."
+   }
+  ]
+ },
+ "lonahorgi": {
+  "routes": [
+   {
+    "id": "normalruta",
+    "name": "Ruta frå Høyland via Breiming og Svartahorgi",
+    "description": "Frå E16 ved Grotlandsbrua, om lag ein kilometer nord for enden av Lønavatnet, tek ein av mot vest og køyrer Høylandsvegen opp til den nedlagde garden Høyland. Derfrå følgjer ein skogsbilvegen sørvestover til Bergsstølen (380 moh.) og tek seg opp det trange dalføret ved Breiming (610 moh.). Vidare følgjer ein slakaste veg nordvestover mot Svartahorgi, til venstre for det trigonometriske punktet 835, og rundar Svartahorgi før ein kjem inn på ryggen på om lag 1000 moh. Ryggen blir følgd vestover og deretter sørover over punkt 1305 og opp nordryggen til toppen. Nedkøyringa følgjer same linje; ved stabile forhold kan dyktige køyrarar i staden ta seg ned i Årdalen frå punkt 1305.",
+    "trailhead": {
+     "name": "Høyland ved Grotlandsbrua",
+     "lat": 60.70289,
+     "lng": 6.47641,
+     "elevation_m": 138.96,
+     "fullName": "Høyland ved Grotlandsbrua"
+    },
+    "waypoints": [
+     {
+      "name": "Bergsstølen",
+      "lat": 60.69687,
+      "lng": 6.45979,
+      "elevation_m": 379.66
+     },
+     {
+      "name": "Breiming",
+      "lat": 60.69543,
+      "lng": 6.44614,
+      "elevation_m": 609.8
+     },
+     {
+      "name": "Ryggen nordvest for Svartahorgi",
+      "lat": 60.708,
+      "lng": 6.4355,
+      "elevation_m": 1003.2
+     },
+     {
+      "name": "Punkt 1305 nord for toppen",
+      "lat": 60.7015,
+      "lng": 6.41,
+      "elevation_m": 1305.2
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Skredfare i det trange dalføret ved Breiming og i austsida ned mot Årdalen, som er den bratte delen av fjellet; store svaskred losnar seint på våren og går langt. Ryggen frå punkt 1305 og opp er brei og slak, men vindutsett og ofte avblåst og hard. Snødekket nede ved Høyland og Bergsstølen er tynt og kortvarig - vurder å gå av tidleg om våren."
+   }
+  ]
  }
 }

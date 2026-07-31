@@ -12,6 +12,7 @@ same peak has its own vertical and is not expected to match.
 
 import json
 import math
+import os
 import sys
 
 from geo import haversine
@@ -70,6 +71,14 @@ def build(route_rec, summit):
 
 
 def problems_with(rec, is_primary, claimed):
+    """`claimed` is None for a tour the app does not carry a vertical for yet.
+
+    The other four checks are properties of the line itself and always apply; the
+    gain check compares it against a *published* figure, and a peak being added
+    from scratch has none — its vertical is going to be read off this route. See
+    the README on why inferring one from the other in either direction is how the
+    Rørnestinden trailhead ended up in the fjord.
+    """
     out = []
     if rec["lossM"] > max(60.0, 0.12 * rec["gainM"]):
         out.append(f"gives back {rec['lossM']} m of {rec['gainM']} m gained")
@@ -77,7 +86,7 @@ def problems_with(rec, is_primary, claimed):
         out.append(f"max step angle {rec['maxAngle']}°")
     if rec["minZ"] < 0.4:
         out.append("a point sits at or below sea level")
-    if is_primary and abs(rec["gainM"] - claimed) > max(150.0, 0.25 * claimed):
+    if is_primary and claimed is not None and abs(rec["gainM"] - claimed) > max(150.0, 0.25 * claimed):
         out.append(f"gain {rec['gainM']} m vs app's {claimed} m")
     if len(rec["points"]) < 25:
         out.append(f"only {len(rec['points'])} points — not a detailed line")
@@ -89,9 +98,16 @@ def main():
     corridors = json.load(open("corridors.json"))
     tours = json.load(open("tourmeta.json"))
 
-    out = {}
+    # `generate_routes.py [slug …]` routes only those tours and merges them into
+    # the existing routes.json. Routing is ten minutes of Dijkstra over DTM1 for
+    # the whole set, so re-solving 56 unchanged lines to add one is the
+    # difference between iterating on a corridor and waiting on one.
+    only = set(sys.argv[1:])
+    out = json.load(open("routes.json")) if only and os.path.exists("routes.json") else {}
     bad = []
     for slug, summit in summits.items():
+        if only and slug not in only:
+            continue
         if slug not in corridors:
             bad.append(f"{slug}: no corridor")
             continue
@@ -102,7 +118,7 @@ def main():
             except Exception as e:  # noqa: BLE001
                 bad.append(f"{slug}/{route_rec['id']}: router failed — {e}")
                 continue
-            probs = problems_with(rec, i == 0, tours[slug]["verticalM"])
+            probs = problems_with(rec, i == 0, (tours.get(slug) or {}).get("verticalM"))
             rec["problems"] = probs
             built.append(rec)
             tag = "primary" if i == 0 else "alt    "
