@@ -78,51 +78,57 @@ site's URL.
 3. Run `supabase/seed.sql` in the same editor. This loads the 24 tours and the Kirketaket guide
    content. Running it against a database without the schema will fail, so do not reorder these.
 4. **Authentication → URL Configuration**: set **Site URL** to your `NEXT_PUBLIC_SITE_URL`, and
-   add the magic-link callback to **Redirect URLs**:
+   add the sign-in callback to **Redirect URLs**:
 
    ```
    https://toppkart.no/**
    http://localhost:3000/**
    ```
 
-   A magic link whose redirect target is not on this list is rejected by Supabase, which shows up
-   as a sign-in that silently fails.
-5. **Authentication → Providers → Email**: confirm the e-mail provider is enabled. Toppkart uses
-   only passwordless sign-in (`signInWithOtp`), so you can leave passwords disabled.
-6. Optional but recommended — **Project Settings → Authentication → SMTP Settings**: point
-   Supabase Auth at Resend so magic links come from your own verified domain instead of
-   Supabase's shared sender, which has a low rate limit and poor deliverability.
+   A redirect target that is not on this list is rejected by Supabase, which shows up as a
+   sign-in that silently fails.
+5. **Authentication → Providers → Email**: turn it **off**. Nothing in the app calls it — there
+   is no password form and no magic link — and an enabled provider nobody uses is one more way in
+   than the product has thought about.
+6. **Authentication → Providers → Google**: enable it and paste in a client ID and secret from
+   Google. **This is the only way into the product, and it sends no e-mail at all** — the browser
+   goes to Google, comes back to `/auth/callback` with a code, and the code is traded for a
+   session. Supabase reads the address out of the Google profile, so the account still has an
+   e-mail; nothing ever has to send one. That is why the app needs no SMTP.
 
-   ```
-   Host:     smtp.resend.com
-   Port:     587
-   Username: resend
-   Password: <your RESEND_API_KEY>
-   Sender:   Toppkart <ingen-svar@toppkart.no>
-   ```
+   In the [Google Cloud console](https://console.cloud.google.com/):
 
-   The sender domain must be verified in Resend first (**Domains → Add Domain**, then the DNS
-   records it gives you).
+   - **APIs & Services → OAuth consent screen**: pick *External*, fill in app name, support
+     e-mail and developer e-mail. Add only the non-sensitive scopes — `openid`,
+     `.../auth/userinfo.email`, `.../auth/userinfo.profile`. Sign-in needs nothing more, and
+     scopes Google classes as sensitive or restricted are what drag you into its verification
+     review. Check Google's current rules before adding anything beyond those three.
+   - While the consent screen is in **Testing**, only accounts you list as test users can sign in,
+     and their refresh tokens expire after a week. Publish it before launch.
+   - **Credentials → Create credentials → OAuth client ID → Web application**. Under *Authorised
+     redirect URIs* add the Supabase callback, which is the project URL plus `/auth/v1/callback`:
 
-   **Treat custom SMTP as required, not optional, the moment you start testing.** Supabase's
-   built-in mailer allows roughly two messages per hour across the whole project. Past that,
-   `signInWithOtp` fails with `429 over_email_send_rate_limit` — and because the app deliberately
-   does not leak auth internals to the browser, all the user sees is «Vi klarte ikke å sende
-   innloggingslenken. Prøv igjen om litt.» The real reason is only in the Supabase auth log
-   (**Logs → Auth**), so check there before assuming the code is wrong. Note that the account is
-   still created when this happens; only the mail fails.
+     ```
+     https://<project-ref>.supabase.co/auth/v1/callback
+     ```
 
-   **If you do not have a domain yet**, you have two ways to test and neither needs DNS:
+     This is Supabase's URL, not the app's. Toppkart's own `/auth/callback` is where Supabase
+     sends the browser afterwards, and it is covered by the Redirect URLs in step 4.
+   - Copy the client ID and secret into the Supabase Google provider and save.
 
-   - **Gmail SMTP.** Point Supabase at `smtp.gmail.com:587` with the Gmail address as username and
-     a Google **App Password** as the password (App Passwords require 2-Step Verification on the
-     account). Sends from that address to anyone, with a daily cap in the hundreds. Fine for
-     testing and small pilots; not what you want on a real launch, since the mail comes from a
-     personal-looking address and you cannot align SPF/DKIM to your own domain.
-   - **Resend without a verified domain.** You get the shared `onboarding@resend.dev` sender,
-     which delivers **only to the address that owns the Resend account**. Enough to sign yourself
-     in and walk the flow; nobody else can log in until a domain is verified.
-7. Copy the project URL and the anon key from **Project Settings → API** into
+   Nothing needs to go into the app's environment: the secret lives in Supabase, and
+   `app/api/auth/google/route.ts` only asks Supabase to start the round-trip.
+7. **Project Settings → Authentication → SMTP Settings: leave it alone.** Supabase Auth sends no
+   mail in this product, so there is nothing to configure and nothing to pay for. Supabase's
+   built-in mailer would only allow roughly two messages an hour across the whole project anyway
+   — which is exactly why sign-in does not depend on it.
+
+   Do not confuse this with `RESEND_API_KEY`. That key is for `lib/email.ts`, which sends the
+   welcome and receipt mail after a Stripe checkout. It is billing correspondence, it goes
+   through Resend's own API rather than Supabase SMTP, and it is unrelated to signing in. The
+   product works without it — those sends log and no-op when the key is absent.
+
+8. Copy the project URL and the anon key from **Project Settings → API** into
    `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_ANON_KEY`. Copy the service-role key into
    `SUPABASE_SERVICE_ROLE_KEY` as well: it bypasses RLS, so it is server-only and must never sit
    behind a `NEXT_PUBLIC_` prefix — but it is **required** as soon as Stripe is live. The webhook
@@ -198,7 +204,9 @@ Walk the real flow on the deployed site, not just the local one:
 - [ ] `/kart` renders the map with all tours; filters and the detail panel work.
 - [ ] Signed out, the locked block on a tour detail shows and the guide text is genuinely absent
       from the page source — not merely hidden with CSS.
-- [ ] `/logg-inn` sends a magic link that arrives and signs you in on the deployed domain.
+- [ ] `/logg-inn` sends you to Google and signs you in on the deployed domain. Cancelling at
+      Google's consent screen returns you to `/logg-inn` with the Google-specific error, not a
+      blank page.
 - [ ] `/betaling` creates a Stripe Checkout session, the card is collected, and today's total is
       0 kr.
 - [ ] The webhook fires and the subscription row in Supabase reaches status `trialing`.
@@ -215,17 +223,21 @@ Walk the real flow on the deployed site, not just the local one:
 
 Symptoms that were hit during the first real deployment of this app, and what they actually meant.
 
-**«Vi klarte ikke å sende innloggingslenken. Prøv igjen om litt.»**
-The app never shows the underlying auth error, by design — it should not tell a stranger whether
-an address exists. Look in Supabase → **Logs → Auth** for the real one. In practice it is almost
-always `429 over_email_send_rate_limit` (the built-in mailer's ~2/hour cap; configure custom SMTP)
-or `400 email_address_invalid` (the address was rejected outright — `@example.com` and other
-reserved test domains are, which makes them useless for probing this endpoint).
+**«Vi fikk ikke kontakt med Google, eller innlogginga ble avbrutt.»**
+Either the visitor backed out of Google's consent screen — in which case nothing is wrong — or the
+Google provider is not enabled in Supabase. Check **Authentication → Providers → Google** first,
+then **Logs → Auth** for the real error. While the OAuth consent screen is still in *Testing*, an
+account that is not on the test-user list is refused here and looks identical.
 
-**Sign-in mail arrives, the link does nothing.**
-The redirect target is not on Supabase's allow-list. Compare the `redirect_to` in the link against
-**Authentication → URL Configuration**, and check `NEXT_PUBLIC_SITE_URL` — see the warning in the
-Vercel section, which is the usual root cause.
+**«Vi klarte ikke å fullføre innlogginga.»**
+The round-trip came back but `exchangeCodeForSession` failed. Nearly always the redirect target is
+not on Supabase's allow-list: compare it against **Authentication → URL Configuration**, and check
+`NEXT_PUBLIC_SITE_URL` — see the warning in the Vercel section, which is the usual root cause.
+
+**Google rejects the redirect before the consent screen appears.**
+The *Authorised redirect URI* in the Google Cloud credential must be Supabase's callback, the
+project URL plus `/auth/v1/callback` — not the app's `/auth/callback`. Getting these two the wrong
+way round is the most common setup mistake.
 
 **Checkout succeeds but the guides stay locked.**
 The webhook could not resolve the payer to an app user. Its log line is

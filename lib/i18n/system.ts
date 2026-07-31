@@ -26,9 +26,6 @@ export interface SystemDict {
   errorBody: string;
   errorRetry: string;
   errorMap: string;
-  /* — sign-in endpoint (shown verbatim by the login form) — */
-  authInvalidEmail: string;
-  authSendFailed: string;
   /* — email: shared chrome — */
   emailFooterReason: (site: string) => string;
   emailPlanMonthly: string;
@@ -87,8 +84,6 @@ const SYSTEM: Translated<SystemDict> = {
       "Vi klarte ikke å laste siden. Prøv på nytt — hjelper det ikke, gå tilbake til kartet.",
     errorRetry: "Prøv på nytt",
     errorMap: "Åpne kartet",
-    authInvalidEmail: "Skriv inn en gyldig e-postadresse.",
-    authSendFailed: "Vi klarte ikke å sende innloggingslenken. Prøv igjen om litt.",
     emailFooterReason: (site) => `Du får denne e-posten fordi du har et abonnement hos ${site}.`,
     emailPlanMonthly: "Toppkart månedlig",
     emailPlanYearly: "Toppkart årlig",
@@ -151,8 +146,6 @@ const SYSTEM: Translated<SystemDict> = {
       "We could not load the page. Try again — if that does not help, head back to the map.",
     errorRetry: "Try again",
     errorMap: "Open the map",
-    authInvalidEmail: "Enter a valid email address.",
-    authSendFailed: "We could not send the sign-in link. Try again in a moment.",
     emailFooterReason: (site) => `You are getting this email because you have a ${site} subscription.`,
     emailPlanMonthly: "Toppkart monthly",
     emailPlanYearly: "Toppkart yearly",
