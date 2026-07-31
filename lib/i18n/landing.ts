@@ -118,7 +118,7 @@ const LANDING: Translated<LandingDict> = {
     planBody:
       "Én pris, alt åpent. Nye turer legges til hver sesong, og guidene revideres når terrenget eller normalruta endrer seg. Avslutt når du vil — abonnementet stopper ved neste trekk.",
     planNote:
-      "Vi sender en innloggingslenke på e-post — ingen passord. Betaling håndteres sikkert av Stripe. Du legger inn kort ved start — første trekk etter 14 dager.",
+      "Du logger inn med Google — ingen passord. Betaling håndteres sikkert av Stripe. Du legger inn kort ved start — første trekk etter 14 dager.",
     planPrice: "29 kr",
     planPriceUnit: "per måned",
     planAnnualPrice: "290 kr",
@@ -187,7 +187,7 @@ const LANDING: Translated<LandingDict> = {
     planBody:
       "One price, everything open. New tours are added every season, and guides are revised whenever the terrain or the normal route changes. Cancel whenever you like — the subscription stops at the next charge.",
     planNote:
-      "We email you a sign-in link — no passwords. Payments are handled securely by Stripe. You add a card at signup — first charge after 14 days.",
+      "You sign in with Google — no passwords. Payments are handled securely by Stripe. You add a card at signup — first charge after 14 days.",
     planPrice: "29 kr",
     planPriceUnit: "per month",
     planAnnualPrice: "290 kr",

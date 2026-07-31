@@ -9,14 +9,14 @@ Norwegian; this README and the rest of `docs/` are in English for whoever mainta
 ## Stack
 
 - **Next.js 16, App Router**, TypeScript in strict mode. Server Components by default.
-- **Supabase** — passwordless auth (Google, or a magic link by e-mail), Postgres for tours/profiles/subscriptions (tables are prefixed `tk_`, so the database can be shared with other projects), and
+- **Supabase** — Google sign-in (the only way in — no password, no magic link, no SMTP), Postgres for tours/profiles/subscriptions (tables are prefixed `tk_`, so the database can be shared with other projects), and
   row-level security as the second line of defence on gated columns.
 - **Stripe** — subscription billing. Checkout in `mode: "subscription"` with
   `trial_period_days: 14`, the Customer Portal for payment-method changes and cancellation, and
   webhooks to sync subscription status back into Postgres.
-- **Resend** — transactional mail (receipts, "your trial is ending" notices). Supabase Auth can
-  also be pointed at Resend SMTP so the magic-link mail comes from the same sender. Google sign-in
-  needs none of this: it sends no mail, so it works with no SMTP configured at all.
+- **Resend** — transactional mail (receipts, "your trial is ending" notices) after a Stripe
+  checkout. Nothing to do with signing in: Google sign-in sends no mail, so auth needs no SMTP at
+  all. Optional — without the key those sends log and no-op.
 - **Leaflet + OpenStreetMap** — the full-screen map on `/kart`. See "Before launch" about moving
   to a Norwegian topographic tile source.
 - **Vercel** — hosting and deploys. See `docs/deploy.md`.
@@ -68,7 +68,7 @@ app/
   page.tsx               / — landing
   kart/                  /kart — full-screen Leaflet map, list panel, detail panel
   tur/[slug]/            /tur/[slug] — tour guide, gated below the key figures
-  logg-inn/              /logg-inn — Google or magic-link sign-in
+  logg-inn/              /logg-inn — Google sign-in
   betaling/              /betaling — start-the-trial checkout
   min-side/              /min-side — subscription, receipts, account
   api/                   Route handlers, incl. api/stripe/webhook
@@ -102,9 +102,9 @@ docs/
 | `/` | Landing page: hero, data plate, what a guide contains, subscription | `Landing.dc.html` |
 | `/kart` | The map — tour list, grade/region filters, detail panel with the route picker and the locked block. `?tur=<slug>` opens a tour, `&rute=<id>` a specific route | `kart.html` |
 | `/tur/[slug]` | Tour guide: stats, elevation profile, ascent/descent, avalanche terrain | `Turguide Kirketaket.dc.html` |
-| `/logg-inn` | Passwordless sign-in: Google, or a magic link | `Logg inn.dc.html` |
+| `/logg-inn` | Sign in with Google | `Logg inn.dc.html` |
 | `/betaling` | Start the trial — 0 kr today, card required | `Betaling.dc.html` |
-| `/min-side` | Subscription status, receipts, account e-mail | `Min side.dc.html` |
+| `/min-side` | Subscription status, receipts, the Google address | `Min side.dc.html` |
 
 Every «Prøv gratis» / «Start gratis prøveperiode» call to action anywhere in the app goes to
 `/betaling`.
