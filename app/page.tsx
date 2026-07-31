@@ -30,8 +30,12 @@ export default async function LandingPage() {
     <>
       <SiteNav lang={lang}>
         <Link href="/kart">{c.map}</Link>
-        <a href="#innhold">{c.contents}</a>
-        <a href="#pris">{c.price}</a>
+        <a className="nav-jump" href="#innhold">
+          {c.contents}
+        </a>
+        <a className="nav-jump" href="#pris">
+          {c.price}
+        </a>
         <Link className="nav-muted" href="/logg-inn">
           {c.login}
         </Link>
