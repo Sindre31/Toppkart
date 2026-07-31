@@ -41,7 +41,7 @@ or 500s on a missing key; the code path just changes.
 
 Be clear-eyed about what this is: **demo mode gates sample content, it is not a security
 boundary.** The demo cookies are not signed and are trivially forged, and the "gated" text they
-protect is placeholder copy that ships in the repository anyway. It exists so the app can be
+protect ships in the repository anyway. It exists so the app can be
 reviewed and developed without credentials. Real enforcement in live mode is `getViewer()` on the
 server plus RLS in Postgres — see "Access model".
 
@@ -77,15 +77,17 @@ components/
 lib/
   config.ts              PRICE, TRIAL_DAYS, SITE, GRADE_COLORS, env, is*Configured
   types.ts               Tour, TourGuide, Viewer, Subscription, Invoice
-  tours.ts               The 24 tours, REGIONS, getTour(), routeFor()
-  guides.ts              Editorial guide content (currently Kirketaket only)
+  tours.ts               The 24 tours, REGIONS, getTour(), routesFor(), routeById(),
+                         routeFor(), routeProfile()
+  routes.ts              Generated ascent routes per tour — see scripts/build-routes/
+  guides.ts              Editorial guide content — all 24 tours, generated
   access.ts              getViewer() / grantsAccess() — server-only access gate
   stripe.ts              Stripe client, null in demo mode
   demo-session.ts        Cookie-backed stand-ins for auth and subscription
   supabase/              Browser and server Supabase clients
 supabase/
   schema.sql             Tables, policies, RLS
-  seed.sql               The 24 tours and the Kirketaket guide
+  seed.sql               The 24 tours and all 24 guides
 design-reference/        The HTML prototypes and the product/design handoff. Read-only ground
                          truth; not shipped.
 docs/
@@ -97,7 +99,7 @@ docs/
 | Route | What it is | Prototype |
 |---|---|---|
 | `/` | Landing page: hero, data plate, what a guide contains, subscription | `Landing.dc.html` |
-| `/kart` | The map — tour list, grade/region filters, detail panel with the locked block | `kart.html` |
+| `/kart` | The map — tour list, grade/region filters, detail panel with the route picker and the locked block. `?tur=<slug>` opens a tour, `&rute=<id>` a specific route | `kart.html` |
 | `/tur/[slug]` | Tour guide: stats, elevation profile, ascent/descent, avalanche terrain | `Turguide Kirketaket.dc.html` |
 | `/logg-inn` | Passwordless sign-in, sends a magic link | `Logg inn.dc.html` |
 | `/betaling` | Start the trial — 0 kr today, card required | `Betaling.dc.html` |
@@ -138,18 +140,36 @@ the product behaviour, RLS is the backstop.
 The design handoff flags this work as unfinished. None of it is a code defect; all of it is
 content and data quality that has to be settled before the site is sold to anyone.
 
-- **Tour coordinates are approximate.** The 24 tours in `lib/tours.ts` come straight out of the
-  prototype and their latitude/longitude values were eyeballed. Every one needs to be checked
-  against a real source before it guides anyone up a mountain.
-- **Route lines are schematic.** `routeFor()` draws a plausible-looking line by offsetting from
-  the summit in the tour's aspect direction. It is a placeholder for real GPX geometry per tour
-  and must be replaced, not tuned.
-- **The Kirketaket guide text is example content.** The ascent, descent and avalanche-terrain
-  copy in `lib/guides.ts` was written to fill the layout. It needs editorial review by someone
-  who knows the tour before publication, and the same applies to every guide written after it.
+- **Route lines are generated, not surveyed.** They are no longer schematic: `lib/routes.ts` holds
+  detailed lines — one or more per tour — solved as least-cost paths over Kartverket's 1 m terrain
+  model through the corridor each route follows, and the summit coordinates behind them are snapped
+  to the terrain model and checked against published heights. See `scripts/build-routes/` for the
+  pipeline and what it verifies. What is still missing is ground truth: these lines show where a
+  route goes, but nobody has skied them with a GPS. Surveyed GPX per route, served from Supabase
+  Storage, is still the production plan.
+- **Only five peaks have their alternative routes entered.** The data model takes any number of
+  routes per tour and the map renders a picker when there is more than one, but `ALTERNATES` in
+  `scripts/build-routes/build_corridors.py` currently covers Galdhøpiggen, Tromsdalstinden,
+  Rondslottet, Snøhetta and Gaustatoppen. Other peaks in the list have well-known second routes
+  that nobody has researched yet — the gap is content, not capability.
+- **Three summit heights disagree with the terrain model.** Rørnestinden, Rombakstøtta and
+  Himmeltindan sit 11–13 m below their published figures in DTM1. The coordinates are right; the
+  heights are old survey numbers on sharp, corniced tops. Worth settling before print. (The
+  *vertical gain* figures have all been reconciled against the audited trailheads — see
+  `scripts/build-routes/README.md`. It is only `summitM` on these three that is still open.)
+- **The guide text has not been read by anyone who has skied these tours.** Every number in
+  `lib/guides.ts` traces to Kartverket's terrain model, the route research or a cited source, and
+  every guide was put through an adversarial fact-check that rewrote all 24 of them — it caught a
+  descent sold on the wrong side of Kavringtinden, a cliff warning pointing away from the cliff on
+  Storehorn, and a rock band on Synshorn that does not exist. That makes the copy sourced, not
+  verified. It still needs a local reader per tour before print. See "The written guides" in
+  `scripts/build-routes/README.md` for what the check does and does not cover.
 - **`assets/kontur.png` is a placeholder.** It is a generated contour-map graphic standing in for
   real ski-touring photography. `assets/photo.jpg` is an unrelated reference photo from the design
-  system and should also go.
+  system and should also go. The contour graphic is now the only invented terrain left on a tour
+  page: it carries a "1439 moh" label baked into the artwork and renders identically on all 24
+  tours, so on 23 of them it states a height that is not that peak's. The caption says it is
+  schematic, but it sits beside real figures — replace it before print.
 - **Map tiles should move to a Norwegian topographic source.** OpenStreetMap is what the prototype
   used; Kartverket's WMTS or a MapTiler style with Norwegian topography is the intended
   production source. Keep the OpenStreetMap attribution visible for exactly as long as OSM tiles

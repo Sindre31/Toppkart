@@ -9,3 +9,7 @@ build/
 next-env.d.ts
 .DS_Store
 .vercel
+
+# Cached Kartverket DTM tiles pulled by scripts/build-routes (hundreds of MB).
+scripts/build-routes/cache/
+__pycache__/

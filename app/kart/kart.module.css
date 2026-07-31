@@ -196,6 +196,57 @@
   margin: -6px 0 0;
 }
 
+/* — route picker: only rendered when a peak has more than one way up — */
+.routes {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.routesHead {
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--color-text) 55%, transparent);
+}
+.routeList {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--color-divider);
+}
+.route {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 10px 12px;
+  cursor: pointer;
+  border-bottom: 1px solid var(--color-divider);
+}
+.route:last-child { border-bottom: 0; }
+.route:hover { background: color-mix(in srgb, var(--color-text) 4%, transparent); }
+/* The radio drives state and keyboard/screen-reader behaviour; the row is the
+   visible control, so hide the input without taking it out of the tab order. */
+.route input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+.route:focus-within {
+  outline: 2px solid var(--color-accent-700, #416180);
+  outline-offset: -2px;
+}
+.routeSel { background: color-mix(in srgb, var(--color-accent-700, #416180) 10%, transparent); }
+.routeName {
+  font-size: 14px;
+  line-height: 1.35;
+}
+.routeSel .routeName { font-weight: 600; }
+.routeMeta {
+  font-size: 11px;
+  color: color-mix(in srgb, var(--color-text) 55%, transparent);
+}
+
 /* — 2×3 stats grid — */
 .stats {
   display: grid;

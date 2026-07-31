@@ -66,6 +66,10 @@ export interface Dict {
   /* — strings the prototype held inline — */
   schematicNote: string;
   startTooltip: string;
+  /** Heading above the route picker, shown when a peak has more than one way up. */
+  routesLabel: string;
+  /** Screen-reader name for the picker itself. */
+  routesGroup: string;
   /* — React additions: labels + the unlocked (subscriber) state — */
   gradeGroup: string;
   searchLabel: string;
@@ -91,7 +95,7 @@ const MAP: Translated<Dict> = {
     allRegions: "Alle regioner",
     tours: "turer",
     tour: "tur",
-    approx: "Posisjoner er omtrentlige i prototypen.",
+    approx: "Toppunkter er hentet fra Kartverkets terrengmodell.",
     back: "← Til lista",
     grades: gradeNames("no"),
     moh: "moh",
@@ -117,8 +121,11 @@ const MAP: Translated<Dict> = {
     pwDoneTitle: "Lenken er sendt",
     pwDoneBody: "Åpne e-posten og trykk på lenken for å logge inn og starte prøveperioden.",
     close2: "Lukk",
-    schematicNote: "Rutelinjen på kartet er skjematisk i prototypen.",
+    schematicNote:
+      "Rutelinjene er beregnet i Kartverkets terrengmodell. Generert geometri — ikke innspilte spor.",
     startTooltip: "Start / parkering",
+    routesLabel: "Ruter opp",
+    routesGroup: "Velg rute",
     gradeGroup: "Vanskelighetsgrad",
     searchLabel: "Søk etter topp eller region",
     regionLabel: "Region",
@@ -140,7 +147,7 @@ const MAP: Translated<Dict> = {
     allRegions: "All regions",
     tours: "tours",
     tour: "tour",
-    approx: "Positions are approximate in this prototype.",
+    approx: "Summit positions come from Kartverket's terrain model.",
     back: "← Back to list",
     grades: gradeNames("en"),
     moh: "m",
@@ -173,8 +180,11 @@ const MAP: Translated<Dict> = {
     pwDoneTitle: "Link sent",
     pwDoneBody: "Open the email and click the link to sign in and start your trial.",
     close2: "Close",
-    schematicNote: "The route line on the map is schematic in this prototype.",
+    schematicNote:
+      "The route lines are solved over Kartverket's terrain model. Generated geometry — not recorded tracks.",
     startTooltip: "Trailhead / parking",
+    routesLabel: "Routes up",
+    routesGroup: "Choose a route",
     gradeGroup: "Difficulty",
     searchLabel: "Search peak or region",
     regionLabel: "Region",
