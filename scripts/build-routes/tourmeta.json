@@ -35,7 +35,7 @@
  "rornestinden": {
   "name": "Rørnestinden",
   "region": "Lyngen",
-  "summitM": 1041,
+  "summitM": 1030,
   "verticalM": 1000,
   "duration": "4–6 t",
   "grade": 2,
@@ -68,7 +68,7 @@
  "rombakstotta": {
   "name": "Rombakstøtta",
   "region": "Narvik",
-  "summitM": 1243,
+  "summitM": 1231,
   "verticalM": 1100,
   "duration": "5–7 t",
   "grade": 3,
@@ -79,8 +79,8 @@
  "himmeltindan": {
   "name": "Himmeltindan",
   "region": "Lofoten",
-  "summitM": 962,
-  "verticalM": 960,
+  "summitM": 956,
+  "verticalM": 980,
   "duration": "4–6 t",
   "grade": 3,
   "aspect": "Ø",

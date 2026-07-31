@@ -115,7 +115,7 @@ const MAP: Translated<Dict> = {
       "Full tilgang til alle turguider, GPX-filer, høydeprofiler og skredterreng. Ingen binding — avslutt når du vil.",
     pwSend: "Send lenke",
     pwNote:
-      "Ingen passord — du logger inn med Google. Sikker betaling via Stripe. Kort legges inn ved start — første trekk etter prøveperioden.",
+      "Ingen passord — du logger inn med Google eller en lenke på e-post. Sikker betaling via Stripe. Kort legges inn ved start — første trekk etter prøveperioden.",
     close: "Lukk",
     pwKick2: "Sjekk innboksen",
     pwDoneTitle: "Lenken er sendt",
@@ -174,7 +174,7 @@ const MAP: Translated<Dict> = {
       "Full access to every guide, GPX file, elevation profile and avalanche terrain map. No lock-in — cancel anytime.",
     pwSend: "Send link",
     pwNote:
-      "No passwords — you sign in with Google. Payments handled securely by Stripe. Card added at signup — first charge after the trial.",
+      "No passwords — you sign in with Google or a link by email. Payments handled securely by Stripe. Card added at signup — first charge after the trial.",
     close: "Close",
     pwKick2: "Check your inbox",
     pwDoneTitle: "Link sent",

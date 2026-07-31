@@ -17,6 +17,14 @@ export const TRIAL_DAYS = 14;
 export const SITE = {
   name: "Toppkart",
   tagline: "Alle toppturene. Ett kart.",
+  /** Receive-only support mailbox. Outgoing mail leaves from a no-reply
+   *  address, so this is what `Reply-To` points at and what the footer links
+   *  to — it never has to send anything, only take delivery.
+   *
+   *  Deliberately a constant rather than an env var: it is a public fact about
+   *  the site and it is read in the browser bundle, where a non-`NEXT_PUBLIC_`
+   *  variable would silently be undefined. */
+  supportEmail: "support@toppkart.no",
   description:
     "Toppkart er en feltguide for skiturer i Norge: kvalitetssikrede toppturer på ett kart, med rute, høydemeter, bratthet og skredterreng.",
 } as const;
@@ -44,4 +52,10 @@ export const isStripeConfigured = Boolean(env.stripeSecretKey);
 export const isResendConfigured = Boolean(env.resendApiKey);
 
 /** Cookie names used by demo mode. */
-export const DEMO_COOKIE = { session: "tk_demo_session", subscription: "tk_demo_sub" } as const;
+export const DEMO_COOKIE = {
+  session: "tk_demo_session",
+  subscription: "tk_demo_sub",
+  /** Which route opened the demo session, so `/min-side` can behave the way
+   *  it would in live mode instead of always showing the e-mail form. */
+  provider: "tk_demo_provider",
+} as const;

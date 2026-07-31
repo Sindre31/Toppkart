@@ -286,7 +286,11 @@ export default async function MinSidePage() {
               gap: "clamp(20px, 3vw, 40px)",
             }}
           >
-            <EmailCard email={viewer.email ?? ""} lang={lang} />
+            <EmailCard
+              email={viewer.email ?? ""}
+              googleAccount={viewer.hasGoogleIdentity}
+              lang={lang}
+            />
           </div>
         </section>
 

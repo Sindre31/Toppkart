@@ -256,7 +256,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       "Start from the car park at Eidebakken on the edge of Lyngseidet, at 62 m, in the area by the plastics factory and the shooting range. Follow the forest road inland and up toward Hyttehaugen at 286 m, then on past Skihytta. The birch forest gives up at around 310 m, and from there you can see the rest of the tour ahead of you.",
       "Continue west toward Rørneshytta, staying on the south side of Gjerdelva throughout — a variant follows the ridge north of the river up to the flat at around 600 m when the snow cover allows, but the normal route keeps to the south bank. Whichever side you are on: do not go far down into the river valley toward Gjerdelva. The sides dropping into it break at 34–37 degrees where they read as flat from above, and the bottom is a terrain trap. The hut sits at 604 m, and that is where people stop.",
       "From the hut you drop a little before climbing again. You cross Gjerdelva at around 590 m, a dip of some fifteen metres; the tour gives back 38 metres in total on the way up. Then follow the east side of the flank upward to about 850 m and turn from there toward the summit.",
-      "Along the line on the map the steepest step is 24.6 degrees, and the hundred metres between 800 and 900 m average 23.5. The flank around you is steeper: between 800 and 920 m there are sections at 30–35 degrees, and measured 400 m out from the track at 910 m the east side runs 31 degrees on average and the north side 34. Take too direct a line for the top and those are what you are standing in. Higher up it flattens out onto the broad summit plateau at 1041.",
+      "Along the line on the map the steepest step is 24.6 degrees, and the hundred metres between 800 and 900 m average 23.5. The flank around you is steeper: between 800 and 920 m there are sections at 30–35 degrees, and measured 400 m out from the track at 910 m the east side runs 31 degrees on average and the north side 34. Take too direct a line for the top and those are what you are standing in. Higher up it flattens out onto the broad summit plateau at 1030.",
     ],
     descent: [
       "Back down the same way. The summit plateau is roomy enough to put your turns where you like — as long as you stay on its south and east side. The north and northwest edges fall away at 40–47 degrees on average with steps of 50–57, and that is where the cornices build. The east flank down to 850 m is the longest continuous run on the normal route, 20–23 degrees along the track. Below that, hold the ascent track down to Rørneshytta and on east toward Skihytta and the forest road.",
@@ -279,9 +279,9 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
     ],
     elevationProfile: {
       startLabel: "62 m",
-      endLabel: "1041 m",
+      endLabel: "1030 m",
       distanceLabel: "5.3 km",
-      caption: "From 62 m at Eidebakken to 1041 at the top — 1004 metres of climbing over 5.3 kilometres, with a dip at Rørneshytta.",
+      caption: "From 62 m at Eidebakken to 1030 at the top — 1004 metres of climbing over 5.3 kilometres, with a dip at Rørneshytta.",
     },
   },
   kavringtinden: {
@@ -383,19 +383,19 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
     ],
     elevationProfile: {
       startLabel: "141 m",
-      endLabel: "1243 m",
+      endLabel: "1231 m",
       distanceLabel: "5.2 km",
       caption: "5.19 km and 1095 m of climbing from the quarry in Forselvveien; the steepest hundred metres sit between 500 and 600 m.",
     },
   },
   himmeltindan: {
     intro:
-      "Vestvågøy's highest mountain, starting on the shore at Haukland and climbing 965 m in under three and a half kilometres. A short tour, but the last third is steep and the summit ridge is narrow.",
+      "Vestvågøy's highest mountain, starting on the shore at Haukland and climbing 982 m in three and a half kilometres. A short tour, but the last third is steep and the summit ridge is narrow.",
     ascent: [
       "From the car park at Hauklandstranda, six metres above the sea, head north toward the southern portal of the tunnel to Utakleiv. Not through the tunnel: take the service road that climbs north-east over it, past Klumpan, and follow it until it levels out on the bench at 150 m at the mouth of Durmålsdalen. The marked path starts here, and it runs all the way up to the cairn at 931.",
       "Continue north-east up the south side of Durmålsdalen. The ground is open the whole way — there is no forest on this tour — and the line settles into long zig-zags up toward the shoulder at Molheia. It steepens from 700 m: the hundred metres between 700 and 800 m run at a mean of 28.6 degrees, and the steepest step on the line measures 36.1 degrees. Do not cut straight up the west flank of the summit ridge; it runs at 34 to 37 degrees on average with sections to 46. You take the height on the shoulder on the south side.",
       "From Molheia at around 800 m it is only thirty metres up to the 830 m sub-peak and the small flat there. That is the last wide ground on the tour — south-east of the flat the terrain falls at 38 degrees on average. From here on you are on the ridge.",
-      "From the flat the ridge runs north, and it is narrow. Follow the crest to the cairn at 931. Do not step out onto the east side — large cornices hang there over very steep ground: below the cairn the east flank measures 42 degrees on average, the south-east flank 44, with sections of 54 to 57. Further north the ridge drops to 898 m and then rises fifty metres again toward the main top. The highest point of all, 962 m, is up there and is closed by a military radar installation.",
+      "From the flat the ridge runs north, and it is narrow. Follow the crest to the cairn at 931. Do not step out onto the east side — large cornices hang there over very steep ground: below the cairn the east flank measures 42 degrees on average, the south-east flank 44, with sections of 54 to 57. Further north the ridge drops to 898 m and then rises to the main top, which measures 956 m in the terrain model. A military radar installation stands on the ridge at 936 m, a hundred metres or so below the top; the ground around it is closed, so follow the crest past it and obey the signs on site.",
     ],
     descent: [
       "Back along the ridge to the sub-peak, on the crest or just west of it. From there you have close to seven hundred unbroken metres down the wide Durmålsdalen to the bench at 150 m. For a variation, turn right into Øvredalen just before the sub-peak and follow the flank between the valleys until it eases at around 600 m, then back left into Durmålsdalen.",
@@ -418,9 +418,9 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
     ],
     elevationProfile: {
       startLabel: "6 m",
-      endLabel: "962 m",
-      distanceLabel: "3.4 km",
-      caption: "965 m of climbing from the shore at Haukland over 3.39 km; the steep ground sits between 700 and 800 m.",
+      endLabel: "956 m",
+      distanceLabel: "3.6 km",
+      caption: "982 m of climbing from the shore at Haukland over 3.55 km; the steep ground sits between 700 and 800 m.",
     },
   },
   stornappstinden: {

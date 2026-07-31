@@ -146,7 +146,7 @@ export const GUIDES: Record<string, TourGuide> = {
       "Start fra parkeringa ved Eidebakken i utkanten av Lyngseidet, på 62 moh, i området ved plastfabrikken og skytebanen. Følg skogsveien innover og opp mot Hyttehaugen på 286 moh, videre forbi Skihytta. Bjørkeskogen slipper rundt 310 moh, og derfra ser du resten av turen foran deg.",
       "Videre vestover mot Rørneshytta, hele tiden på sørsiden av Gjerdelva — en variant følger ryggen nord for elva opp til flata rundt 600 moh når snødekket tillater det, men normalruta holder sørsiden. Uansett hvilken side du går: ikke gå for langt ned i elvedalen mot Gjerdelva. Sidene ned i den bryter av på 34–37 grader der de ovenfra leser som flatt, og bunnen er ei terrengfelle. Hytta ligger på 604 moh, og det er der folk stopper.",
       "Fra hytta går du litt ned før du går opp igjen. Du krysser Gjerdelva rundt 590 moh, et søkk på en femtentalls høydemeter; turen gir fra seg 38 høydemeter til sammen på vei opp. Så følger du østsiden av flanken oppover til rundt 850 moh og svinger derfra mot toppen.",
-      "Langs linja på kartet er bratteste steg 24,6 grader, og hundremeteren mellom 800 og 900 moh går i 23,5 i snitt. Flanken rundt deg er brattere: mellom 800 og 920 moh ligger partier på 30–35 grader, og målt 400 meter ut fra sporet ved 910 moh holder østsiden 31 grader i snitt, nordsiden 34. Legger du deg for direkte mot toppen, er det dem du står i. Øverst flater det ut til den brede toppflata på 1041.",
+      "Langs linja på kartet er bratteste steg 24,6 grader, og hundremeteren mellom 800 og 900 moh går i 23,5 i snitt. Flanken rundt deg er brattere: mellom 800 og 920 moh ligger partier på 30–35 grader, og målt 400 meter ut fra sporet ved 910 moh holder østsiden 31 grader i snitt, nordsiden 34. Legger du deg for direkte mot toppen, er det dem du står i. Øverst flater det ut til den brede toppflata på 1030.",
     ],
     descent: [
       "Ned samme vei. Toppflata er romslig nok til å legge svingene der du vil — så lenge du holder deg sør og øst på den. Nord- og nordvestkanten faller av på 40–47 grader i snitt med steg på 50–57, og det er der det bygger skavler. Østflanken ned mot 850 moh er den lengste sammenhengende nedkjøringa på normalruta, 20–23 grader langs sporet. Under det holder du oppstigningssporet ned til Rørneshytta og videre østover mot Skihytta og skogsveien.",
@@ -170,9 +170,9 @@ export const GUIDES: Record<string, TourGuide> = {
     elevationProfile: {
       path: "M0,200 L20,197 L41,189 L61,180 L81,176 L101,171 L121,160 L141,159 L162,156 L182,154 L202,148 L222,140 L242,131 L262,122 L282,116 L303,112 L323,105 L343,100 L364,99 L384,96 L404,98 L424,101 L444,100 L465,92 L485,82 L505,74 L525,65 L544,51 L565,37 L585,26 L600,18",
       startLabel: "62 moh",
-      endLabel: "1041 moh",
+      endLabel: "1030 moh",
       distanceLabel: "5,3 km",
-      caption: "Fra 62 moh ved Eidebakken til 1041 på toppen — 1004 høydemeter på 5,3 kilometer, med et søkk ved Rørneshytta.",
+      caption: "Fra 62 moh ved Eidebakken til 1030 på toppen — 1004 høydemeter på 5,3 kilometer, med et søkk ved Rørneshytta.",
     },
   },
   kavringtinden: {
@@ -280,7 +280,7 @@ export const GUIDES: Record<string, TourGuide> = {
     elevationProfile: {
       path: "M0,200 L20,191 L41,183 L62,174 L78,170 L98,169 L119,169 L140,168 L161,165 L182,162 L202,157 L223,148 L244,144 L264,138 L285,126 L305,116 L326,111 L346,106 L367,96 L388,91 L409,89 L429,79 L450,69 L470,62 L491,57 L512,50 L532,39 L551,31 L572,27 L592,20 L600,18",
       startLabel: "141 moh",
-      endLabel: "1243 moh",
+      endLabel: "1231 moh",
       distanceLabel: "5,2 km",
       caption: "5,19 km og 1095 høydemeter fra steinbruddet i Forselvveien; bratteste hundremeteren ligger mellom 500 og 600 moh.",
     },
@@ -288,12 +288,12 @@ export const GUIDES: Record<string, TourGuide> = {
   himmeltindan: {
     slug: "himmeltindan",
     intro:
-      "Vestvågøys høyeste fjell, med start i fjæra på Haukland og 965 høydemeter opp på under tre og en halv kilometer. Kort tur, men siste tredjedel er bratt og toppryggen er smal.",
+      "Vestvågøys høyeste fjell, med start i fjæra på Haukland og 982 høydemeter opp på tre og en halv kilometer. Kort tur, men siste tredjedel er bratt og toppryggen er smal.",
     ascent: [
       "Fra parkeringen på Hauklandstranda, seks meter over havet, går du nordover mot søndre munning av tunnelen til Utakleiv. Ikke gjennom tunnelen: ta serviceveien som klatrer nordøstover over den, forbi Klumpan, og følg den til den flater ut på benken på 150 moh ved munningen av Durmålsdalen. Her starter den merkede stien, og den går hele veien opp til varden på 931.",
       "Videre nordøstover opp sørsida av Durmålsdalen. Terrenget er åpent hele veien — det er ingen skog på denne turen — og linja legger seg i lange sikksakk opp mot skulderen ved Molheia. Det brattner fra 700 moh: hundremeteren mellom 700 og 800 moh ligger på 28,6 grader i snitt, og bratteste steget på linja måler 36,1 grader. Ikke skjær rett opp vestflanken av toppryggen; den ligger på 34 til 37 grader i snitt med partier opp mot 46. Høyden tas på skulderen på sørsida.",
       "Fra Molheia rundt 800 moh er det bare tretti meter opp til fortoppen på 830 og den vesle flata der. Det er det siste brede stedet på turen — sørøst for flata faller terrenget 38 grader i snitt. Herfra og ut er du på rygg.",
-      "Fra flata går ryggen nordover, og den er smal. Følg krona til varden på 931. Ikke gå ut på østsida — der ligger store hengskavler over svært bratt lende: østflanken under varden måler 42 grader i snitt, sørøstflanken 44, med partier på 54 til 57. Videre nordover faller ryggen til 898 moh og stiger så femti meter igjen mot hovedtoppen. Det aller høyeste punktet, 962 moh, ligger der oppe og er stengt av militært radaranlegg.",
+      "Fra flata går ryggen nordover, og den er smal. Følg krona til varden på 931. Ikke gå ut på østsida — der ligger store hengskavler over svært bratt lende: østflanken under varden måler 42 grader i snitt, sørøstflanken 44, med partier på 54 til 57. Videre nordover faller ryggen til 898 moh og stiger så mot hovedtoppen, som måler 956 moh i terrengmodellen. Et militært radaranlegg står på ryggen på 936 moh, vel hundre meter før toppen; området rundt det er sperret, så følg krona forbi og rett deg etter skilting på stedet.",
     ],
     descent: [
       "Tilbake langs ryggen til fortoppen, på krona eller like vest for den. Derfra har du snaut sju hundre sammenhengende høydemeter ned den brede Durmålsdalen til benken på 150 moh. Vil du ha en variant, svinger du til høyre ned i Øvredalen like før fortoppen og følger ryggsida mellom dalene til det flater ut rundt 600 moh, og derfra tilbake til venstre inn i Durmålsdalen.",
@@ -317,9 +317,9 @@ export const GUIDES: Record<string, TourGuide> = {
     elevationProfile: {
       path: "M0,200 L23,199 L47,197 L71,194 L95,189 L116,181 L137,171 L161,170 L184,170 L208,165 L232,158 L256,151 L280,145 L304,136 L326,126 L349,113 L372,101 L396,90 L417,79 L439,68 L459,56 L479,44 L503,40 L526,32 L550,23 L570,26 L594,21 L600,18",
       startLabel: "6 moh",
-      endLabel: "962 moh",
-      distanceLabel: "3,4 km",
-      caption: "965 høydemeter fra fjæra på Haukland på 3,39 km; det bratteste ligger mellom 700 og 800 moh.",
+      endLabel: "956 moh",
+      distanceLabel: "3,6 km",
+      caption: "982 høydemeter fra fjæra på Haukland på 3,55 km; det bratteste ligger mellom 700 og 800 moh.",
     },
   },
   stornappstinden: {

@@ -9,14 +9,14 @@ Norwegian; this README and the rest of `docs/` are in English for whoever mainta
 ## Stack
 
 - **Next.js 16, App Router**, TypeScript in strict mode. Server Components by default.
-- **Supabase** — Google sign-in (the only way in — no password, no magic link, no SMTP), Postgres for tours/profiles/subscriptions (tables are prefixed `tk_`, so the database can be shared with other projects), and
+- **Supabase** — passwordless auth: Google, or a magic link by e-mail. Postgres for tours/profiles/subscriptions (tables are prefixed `tk_`, so the database can be shared with other projects), and
   row-level security as the second line of defence on gated columns.
 - **Stripe** — subscription billing. Checkout in `mode: "subscription"` with
   `trial_period_days: 14`, the Customer Portal for payment-method changes and cancellation, and
   webhooks to sync subscription status back into Postgres.
 - **Resend** — transactional mail (receipts, "your trial is ending" notices) after a Stripe
-  checkout. Nothing to do with signing in: Google sign-in sends no mail, so auth needs no SMTP at
-  all. Optional — without the key those sends log and no-op.
+  checkout. Supabase Auth can also be pointed at Resend SMTP so the magic-link mail comes from the
+  same sender. Google sign-in needs neither — it sends no mail at all.
 - **Leaflet + OpenStreetMap** — the full-screen map on `/kart`. See "Before launch" about moving
   to a Norwegian topographic tile source.
 - **Vercel** — hosting and deploys. See `docs/deploy.md`.
@@ -68,7 +68,7 @@ app/
   page.tsx               / — landing
   kart/                  /kart — full-screen Leaflet map, list panel, detail panel
   tur/[slug]/            /tur/[slug] — tour guide, gated below the key figures
-  logg-inn/              /logg-inn — Google sign-in
+  logg-inn/              /logg-inn — Google or magic-link sign-in
   betaling/              /betaling — start-the-trial checkout
   min-side/              /min-side — subscription, receipts, account
   api/                   Route handlers, incl. api/stripe/webhook
@@ -102,9 +102,9 @@ docs/
 | `/` | Landing page: hero, data plate, what a guide contains, subscription | `Landing.dc.html` |
 | `/kart` | The map — tour list, grade/region filters, detail panel with the route picker and the locked block. `?tur=<slug>` opens a tour, `&rute=<id>` a specific route | `kart.html` |
 | `/tur/[slug]` | Tour guide: stats, elevation profile, ascent/descent, avalanche terrain | `Turguide Kirketaket.dc.html` |
-| `/logg-inn` | Sign in with Google | `Logg inn.dc.html` |
+| `/logg-inn` | Passwordless sign-in: Google, or a magic link | `Logg inn.dc.html` |
 | `/betaling` | Start the trial — 0 kr today, card required | `Betaling.dc.html` |
-| `/min-side` | Subscription status, receipts, the Google address | `Min side.dc.html` |
+| `/min-side` | Subscription status, receipts, account e-mail | `Min side.dc.html` |
 
 Every «Prøv gratis» / «Start gratis prøveperiode» call to action anywhere in the app goes to
 `/betaling`.
@@ -153,11 +153,15 @@ content and data quality that has to be settled before the site is sold to anyon
   `scripts/build-routes/build_corridors.py` currently covers Galdhøpiggen, Tromsdalstinden,
   Rondslottet, Snøhetta and Gaustatoppen. Other peaks in the list have well-known second routes
   that nobody has researched yet — the gap is content, not capability.
-- **Three summit heights disagree with the terrain model.** Rørnestinden, Rombakstøtta and
-  Himmeltindan sit 11–13 m below their published figures in DTM1. The coordinates are right; the
-  heights are old survey numbers on sharp, corniced tops. Worth settling before print. (The
-  *vertical gain* figures have all been reconciled against the audited trailheads — see
-  `scripts/build-routes/README.md`. It is only `summitM` on these three that is still open.)
+- **Three summit heights were settled against DTM1, and still disagree with the published
+  figures.** Rørnestinden (1041 → **1030**), Rombakstøtta (1243 → **1231**) and Himmeltindan
+  (962 → **956**) now carry Kartverket's 1 m terrain model, the same source as the other 21
+  summits. Himmeltindan's stored coordinate turned out to be 67 m off the top as well, reading
+  8 m low; it was moved and its route regenerated, which is why its gain went 960 → 980 m.
+  What remains open is *why* the published numbers sit 6–12 m higher. These are sharp, corniced
+  Arctic tops and the published figures are old survey numbers, so the gap may be a cornice, a
+  cairn, or simply an older measurement — DTM1 is bare rock. A local reader should settle it
+  before print; the app is at least now internally consistent and single-sourced.
 - **The guide text has not been read by anyone who has skied these tours.** Every number in
   `lib/guides.ts` traces to Kartverket's terrain model, the route research or a cited source, and
   every guide was put through an adversarial fact-check that rewrote all 24 of them — it caught a
