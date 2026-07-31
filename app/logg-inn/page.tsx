@@ -28,7 +28,9 @@ export default async function LoggInnPage({ searchParams }: { searchParams: Sear
   const params = await searchParams;
   const next = safeNext(first(params.next));
   const email = first(params.email);
-  const linkFailed = first(params.feil) === "1";
+  const failure = first(params.feil);
+  const linkFailed = failure === "1";
+  const googleFailed = failure === "google";
 
   const lang = await getLang();
   const t = accountDict(lang);
@@ -47,6 +49,7 @@ export default async function LoggInnPage({ searchParams }: { searchParams: Sear
             next={next}
             demoMode={!isSupabaseConfigured}
             linkFailed={linkFailed}
+            googleFailed={googleFailed}
             lang={lang}
           />
           <p className="note" style={{ margin: "16px 0 0", textAlign: "center" }}>

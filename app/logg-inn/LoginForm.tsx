@@ -8,11 +8,38 @@ import { accountDict } from "@/lib/i18n/account";
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
+/** Google's mark, inlined rather than fetched: the sign-in page must render
+ *  the same with no network, and Google's brand guidance wants the four-colour
+ *  «G» rather than a monochrome stand-in. */
+function GoogleMark() {
+  return (
+    <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true" focusable="false">
+      <path
+        fill="#4285F4"
+        d="M17.64 9.2c0-.64-.06-1.25-.16-1.84H9v3.48h4.84a4.14 4.14 0 0 1-1.8 2.72v2.26h2.92c1.7-1.57 2.68-3.88 2.68-6.62Z"
+      />
+      <path
+        fill="#34A853"
+        d="M9 18c2.43 0 4.47-.8 5.96-2.18l-2.92-2.26c-.8.54-1.84.86-3.04.86-2.34 0-4.32-1.58-5.03-3.7H.96v2.33A9 9 0 0 0 9 18Z"
+      />
+      <path
+        fill="#FBBC05"
+        d="M3.97 10.72a5.4 5.4 0 0 1 0-3.44V4.95H.96a9 9 0 0 0 0 8.1l3.01-2.33Z"
+      />
+      <path
+        fill="#EA4335"
+        d="M9 3.58c1.32 0 2.5.45 3.44 1.35l2.58-2.58C13.46.9 11.43 0 9 0A9 9 0 0 0 .96 4.95l3.01 2.33C4.68 5.16 6.66 3.58 9 3.58Z"
+      />
+    </svg>
+  );
+}
+
 export default function LoginForm({
   initialEmail,
   next,
   demoMode,
   linkFailed,
+  googleFailed,
   lang,
 }: {
   initialEmail: string;
@@ -23,14 +50,23 @@ export default function LoginForm({
   demoMode: boolean;
   /** Arrived back from /auth/callback with ?feil=1. */
   linkFailed: boolean;
+  /** Arrived back from /auth/callback with ?feil=google — Google refused, or
+   *  the provider is not enabled in Supabase. */
+  googleFailed: boolean;
   /** Read from the cookie by the server component above. */
   lang: Lang;
 }) {
   const t = accountDict(lang);
   const [email, setEmail] = useState(initialEmail);
   const [sentTo, setSentTo] = useState<string | null>(null);
-  const [error, setError] = useState<string | null>(linkFailed ? t.errLinkExpired : null);
+  const [error, setError] = useState<string | null>(
+    googleFailed ? t.errGoogleFailed : linkFailed ? t.errLinkExpired : null,
+  );
   const [pending, setPending] = useState(false);
+  const [googlePending, setGooglePending] = useState(false);
+
+  /** A full navigation, not fetch: the response is a redirect to Google. */
+  const googleHref = `/api/auth/google?next=${encodeURIComponent(next)}`;
 
   async function onSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -79,7 +115,43 @@ export default function LoginForm({
           <p className="prose" style={{ margin: "12px 0 0" }}>
             {t.loginIntro}
           </p>
-          <div style={{ display: "flex", flexDirection: "column", gap: 10, marginTop: 20 }}>
+
+          <a
+            className="btn btn-block"
+            href={googleHref}
+            aria-disabled={googlePending}
+            onClick={() => setGooglePending(true)}
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              gap: 10,
+              margin: "20px 0 0",
+            }}
+          >
+            <GoogleMark />
+            {googlePending ? t.googleRedirecting : t.googleButton}
+          </a>
+
+          <div
+            aria-hidden="true"
+            style={{
+              display: "flex",
+              alignItems: "center",
+              gap: 12,
+              margin: "18px 0 0",
+              fontSize: 12,
+              letterSpacing: "0.08em",
+              textTransform: "uppercase",
+              color: "var(--color-text-soft, #6b7785)",
+            }}
+          >
+            <span style={{ flex: 1, height: 1, background: "var(--color-rule, #d8dee5)" }} />
+            {t.orDivider}
+            <span style={{ flex: 1, height: 1, background: "var(--color-rule, #d8dee5)" }} />
+          </div>
+
+          <div style={{ display: "flex", flexDirection: "column", gap: 10, marginTop: 18 }}>
             <input
               className="input"
               type="email"

@@ -27,6 +27,11 @@ export interface AccountDict {
   emailPlaceholder: string;
   sendLink: string;
   sending: string;
+  /* — sign-in: Google — */
+  googleButton: string;
+  googleRedirecting: string;
+  /** Separator between the Google button and the email form. */
+  orDivider: string;
   /** Trailing question + link under the card, for readers without an account. */
   newHere: string;
   newHereLink: string;
@@ -34,6 +39,8 @@ export interface AccountDict {
   errInvalidEmail: string;
   errSendFailed: string;
   errLinkExpired: string;
+  /** Google handed back an error, or the provider is not enabled in Supabase. */
+  errGoogleFailed: string;
   /* — sign-in: the «check your inbox» state — */
   sentKicker: string;
   sentHeading: string;
@@ -116,20 +123,24 @@ const ACCOUNT: Translated<AccountDict> = {
   no: {
     loginMetaTitle: "Logg inn",
     loginMetaDescription:
-      "Logg inn på Toppkart med en engangslenke på e-post — ingen passord å huske.",
+      "Logg inn på Toppkart med Google eller en engangslenke på e-post — ingen passord å huske.",
     loginKicker: "Logg inn",
     loginHeading: "Uten passord",
     loginIntro:
-      "Skriv inn e-postadressen din, så sender vi en innloggingslenke. Lenken virker i 15 minutter.",
+      "Logg inn med Google, eller få en engangslenke på e-post. Lenken virker i 15 minutter.",
     emailLabel: "E-postadresse",
     emailPlaceholder: "din@epost.no",
     sendLink: "Send innloggingslenke",
     sending: "Sender …",
+    googleButton: "Fortsett med Google",
+    googleRedirecting: "Sender deg til Google …",
+    orDivider: "eller",
     newHere: "Ny her?",
     newHereLink: "Prøv gratis i 14 dager — deretter 29 kr/mnd",
     errInvalidEmail: "Skriv inn en gyldig e-postadresse.",
     errSendFailed: "Vi klarte ikke å sende innloggingslenken. Prøv igjen om litt.",
     errLinkExpired: "Innloggingslenken er ugyldig eller utløpt. Be om en ny lenke.",
+    errGoogleFailed: "Vi fikk ikke kontakt med Google. Prøv igjen, eller bruk e-post.",
     sentKicker: "Sjekk innboksen",
     sentHeading: "Lenken er sendt",
     sentBodyBefore: "Vi har sendt en innloggingslenke til",
@@ -202,20 +213,24 @@ const ACCOUNT: Translated<AccountDict> = {
   en: {
     loginMetaTitle: "Log in",
     loginMetaDescription:
-      "Sign in to Toppkart with a one-time link sent to your email — no password to remember.",
+      "Sign in to Toppkart with Google or a one-time link sent to your email — no password to remember.",
     loginKicker: "Log in",
     loginHeading: "No password",
     loginIntro:
-      "Enter your email address and we will send you a sign-in link. The link works for 15 minutes.",
+      "Sign in with Google, or get a one-time link by email. The link works for 15 minutes.",
     emailLabel: "Email address",
     emailPlaceholder: "you@example.com",
     sendLink: "Send sign-in link",
     sending: "Sending …",
+    googleButton: "Continue with Google",
+    googleRedirecting: "Taking you to Google …",
+    orDivider: "or",
     newHere: "New here?",
     newHereLink: "Try free for 14 days — then 29 kr/month",
     errInvalidEmail: "Enter a valid email address.",
     errSendFailed: "We could not send the sign-in link. Try again in a moment.",
     errLinkExpired: "That sign-in link is invalid or has expired. Ask for a new one.",
+    errGoogleFailed: "We could not reach Google. Try again, or use email instead.",
     sentKicker: "Check your inbox",
     sentHeading: "Link sent",
     sentBodyBefore: "We have sent a sign-in link to",

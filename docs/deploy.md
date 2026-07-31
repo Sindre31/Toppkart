@@ -89,7 +89,35 @@ site's URL.
    as a sign-in that silently fails.
 5. **Authentication → Providers → Email**: confirm the e-mail provider is enabled. Toppkart uses
    only passwordless sign-in (`signInWithOtp`), so you can leave passwords disabled.
-6. Optional but recommended — **Project Settings → Authentication → SMTP Settings**: point
+6. **Authentication → Providers → Google**: enable it and paste in a client ID and secret from
+   Google. **This path sends no e-mail at all** — the browser goes to Google, comes back to
+   `/auth/callback` with a code, and the code is traded for a session. Supabase reads the address
+   out of the Google profile, so the account still has an e-mail; nothing ever has to send one.
+   If you want sign-in that costs nothing and does not depend on SMTP, this is it.
+
+   In the [Google Cloud console](https://console.cloud.google.com/):
+
+   - **APIs & Services → OAuth consent screen**: pick *External*, fill in app name, support
+     e-mail and developer e-mail. Add only the non-sensitive scopes — `openid`,
+     `.../auth/userinfo.email`, `.../auth/userinfo.profile`. Sign-in needs nothing more, and
+     scopes Google classes as sensitive or restricted are what drag you into its verification
+     review. Check Google's current rules before adding anything beyond those three.
+   - While the consent screen is in **Testing**, only accounts you list as test users can sign in,
+     and their refresh tokens expire after a week. Publish it before launch.
+   - **Credentials → Create credentials → OAuth client ID → Web application**. Under *Authorised
+     redirect URIs* add the Supabase callback, which is the project URL plus `/auth/v1/callback`:
+
+     ```
+     https://<project-ref>.supabase.co/auth/v1/callback
+     ```
+
+     This is Supabase's URL, not the app's. Toppkart's own `/auth/callback` is where Supabase
+     sends the browser afterwards, and it is covered by the Redirect URLs in step 4.
+   - Copy the client ID and secret into the Supabase Google provider and save.
+
+   Nothing needs to go into the app's environment: the secret lives in Supabase, and
+   `app/api/auth/google/route.ts` only asks Supabase to start the round-trip.
+7. Optional but recommended — **Project Settings → Authentication → SMTP Settings**: point
    Supabase Auth at Resend so magic links come from your own verified domain instead of
    Supabase's shared sender, which has a low rate limit and poor deliverability.
 
@@ -104,8 +132,15 @@ site's URL.
    The sender domain must be verified in Resend first (**Domains → Add Domain**, then the DNS
    records it gives you).
 
-   **Treat custom SMTP as required, not optional, the moment you start testing.** Supabase's
-   built-in mailer allows roughly two messages per hour across the whole project. Past that,
+   **This step is only about magic links.** Google sign-in (step 6) never touches SMTP, so if you
+   are happy for Google to be the only way in you can skip the rest of this step and pay nothing
+   for e-mail. Note that `lib/email.ts` still sends the welcome and receipt mail through Resend
+   after a Stripe checkout — that is billing correspondence, on a separate key, and it is
+   unaffected either way.
+
+   **If you do keep magic links, treat custom SMTP as required, not optional, the moment you
+   start testing.** Supabase's built-in mailer allows roughly two messages per hour across the
+   whole project. Past that,
    `signInWithOtp` fails with `429 over_email_send_rate_limit` — and because the app deliberately
    does not leak auth internals to the browser, all the user sees is «Vi klarte ikke å sende
    innloggingslenken. Prøv igjen om litt.» The real reason is only in the Supabase auth log
@@ -122,7 +157,7 @@ site's URL.
    - **Resend without a verified domain.** You get the shared `onboarding@resend.dev` sender,
      which delivers **only to the address that owns the Resend account**. Enough to sign yourself
      in and walk the flow; nobody else can log in until a domain is verified.
-7. Copy the project URL and the anon key from **Project Settings → API** into
+8. Copy the project URL and the anon key from **Project Settings → API** into
    `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_ANON_KEY`. Copy the service-role key into
    `SUPABASE_SERVICE_ROLE_KEY` as well: it bypasses RLS, so it is server-only and must never sit
    behind a `NEXT_PUBLIC_` prefix — but it is **required** as soon as Stripe is live. The webhook
