@@ -17,6 +17,14 @@ export const TRIAL_DAYS = 14;
 export const SITE = {
   name: "Toppkart",
   tagline: "Alle toppturene. Ett kart.",
+  /** Receive-only support mailbox. Outgoing mail leaves from a no-reply
+   *  address, so this is what `Reply-To` points at and what the footer links
+   *  to — it never has to send anything, only take delivery.
+   *
+   *  Deliberately a constant rather than an env var: it is a public fact about
+   *  the site and it is read in the browser bundle, where a non-`NEXT_PUBLIC_`
+   *  variable would silently be undefined. */
+  supportEmail: "support@toppkart.no",
   description:
     "Toppkart er en feltguide for skiturer i Norge: kvalitetssikrede toppturer på ett kart, med rute, høydemeter, bratthet og skredterreng.",
 } as const;

@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
+import { SITE } from "@/lib/config";
 import type { Lang } from "@/lib/i18n";
 import { commonDict } from "@/lib/i18n/common";
 
@@ -40,6 +41,7 @@ export function SiteFooter({
     <footer className={`site-footer ${className}`.trim()}>
       <span>Toppkart</span>
       <Link href="/kart">{t.footerMap}</Link>
+      <a href={`mailto:${SITE.supportEmail}`}>{t.footerSupport}</a>
       {children}
     </footer>
   );

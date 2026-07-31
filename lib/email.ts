@@ -1,5 +1,5 @@
 import { Resend } from "resend";
-import { PRICE, TRIAL_DAYS, env, isResendConfigured } from "@/lib/config";
+import { PRICE, SITE, TRIAL_DAYS, env, isResendConfigured } from "@/lib/config";
 import { htmlLang, type Lang } from "@/lib/i18n";
 import { siteMeta } from "@/lib/i18n/common";
 import { systemDict } from "@/lib/i18n/system";
@@ -185,7 +185,8 @@ function layout(options: LayoutOptions, lang: Lang): string {
     <tr>
       <td style="padding:20px 0 0;border-top:1px solid ${HAIRLINE};font-size:12px;line-height:20px;color:${MUTED};">
         ${escapeHtml(site.name)} — ${escapeHtml(site.tagline)}<br>
-        ${escapeHtml(t.emailFooterReason(site.name))}
+        ${escapeHtml(t.emailFooterReason(site.name))}<br>
+        ${escapeHtml(t.emailFooterSupport)} <a href="mailto:${escapeHtml(SITE.supportEmail)}" style="color:${MUTED};">${escapeHtml(SITE.supportEmail)}</a>
       </td>
     </tr>
   </table>
@@ -213,7 +214,9 @@ function plain(options: LayoutOptions, lang: Lang): string {
     parts.push(footnote);
   }
   const site = siteMeta(lang);
+  const t = systemDict(lang);
   parts.push("", `${site.name} — ${site.tagline}`);
+  parts.push(`${t.emailFooterSupport} ${SITE.supportEmail}`);
   return parts.join("\n");
 }
 
@@ -239,6 +242,9 @@ async function send(
   try {
     const { error } = await resend.emails.send({
       from: env.fromEmail,
+      // Sent from a no-reply address, so point replies at the support mailbox
+      // rather than letting them fall into a box nobody opens.
+      replyTo: SITE.supportEmail,
       to,
       subject,
       html: layout(options, lang),

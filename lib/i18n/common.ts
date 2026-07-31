@@ -16,6 +16,8 @@ export interface CommonDict {
   price: string;
   /* — footer — */
   footerMap: string;
+  /** Footer link to the receive-only support mailbox. */
+  footerSupport: string;
   /* — language switcher — */
   langLabel: string;
   langSwitchTo: string;
@@ -36,6 +38,7 @@ const COMMON: Translated<CommonDict> = {
     contents: "Innhold",
     price: "Pris",
     footerMap: "Kartet",
+    footerSupport: "Kontakt",
     langLabel: "Språk",
     langSwitchTo: "Bytt til engelsk",
     close: "Lukk",
@@ -52,6 +55,7 @@ const COMMON: Translated<CommonDict> = {
     contents: "Contents",
     price: "Pricing",
     footerMap: "The map",
+    footerSupport: "Contact",
     langLabel: "Language",
     langSwitchTo: "Switch to Norwegian",
     close: "Close",
