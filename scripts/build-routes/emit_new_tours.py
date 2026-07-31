@@ -138,8 +138,13 @@ def main():
     rewrite_tours(ts_rows, summits)
     rewrite_teasers_en(teasers)
     rewrite_seed(sql_rows, summits)
+    # Same north-to-south order as lib/tours.ts: emit_ts.py takes the order of
+    # ROUTES from this file, and two files listing the same tours in different
+    # orders is a diff nobody can read.
+    ordered = {slug: tourmeta[slug] for slug in order(tourmeta, summits) if slug in summits}
+    ordered.update({k: v for k, v in tourmeta.items() if k not in ordered})
     with open("tourmeta.json", "w") as f:
-        json.dump(tourmeta, f, indent=1, ensure_ascii=False)
+        json.dump(ordered, f, indent=1, ensure_ascii=False)
     print(f"tourmeta.json: {len(tourmeta)} tours")
     if skipped:
         print("\nno route or no research, left off the map:")
