@@ -355,8 +355,8 @@ a.btn-secondary, a.btn-secondary:hover { color: var(--color-text); }
      none of it is decoration: padding, gap, wordmark, links, the CTA and the
      switcher each give up a little rather than one of them giving up a lot. */
   .site-nav {
-    padding: 10px 8px;
-    gap: 5px;
+    padding: 10px 10px;
+    gap: 10px;
     flex-wrap: nowrap;
     /* Below ~360px the row genuinely cannot hold all four without dropping one.
        Letting the nav scroll on its own axis keeps that from becoming a
@@ -368,13 +368,13 @@ a.btn-secondary, a.btn-secondary:hover { color: var(--color-text); }
   /* The two auto margins are what put the links in the middle: the wordmark
      pushes right, the switcher pushes left, and the links settle between. */
   .site-nav .lang-switch { margin-left: auto; flex: none; }
-  .site-nav .nav-brand { font-size: 12px; letter-spacing: 0.03em; flex: none; }
-  .site-nav a { font-size: 12px; }
-  .nav-muted { font-size: 12px !important; }
+  .site-nav .nav-brand { font-size: 14px; letter-spacing: 0.04em; flex: none; }
+  .site-nav a { font-size: 13px; }
+  .nav-muted { font-size: 13px !important; }
   /* Nothing in a single row may wrap or shrink into an ellipsis. */
   .site-nav > * { white-space: nowrap; }
-  .site-nav a.btn { padding: 6px 9px; font-size: 12px; }
-  .site-nav .lang-switch .seg-opt { padding: 5px 7px; font-size: 12px; }
+  .site-nav a.btn { padding: 8px 11px; font-size: 13px; }
+  .site-nav .lang-switch .seg-opt { padding: 6px 8px; font-size: 13px; }
 
   /* "Norsk"/"English" costs 133px; "NO"/"EN" costs 70. That is the difference
      between the map's 56px topbar fitting on a phone and clipping a language
