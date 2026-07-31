@@ -105,7 +105,7 @@ const CHECKOUT: Translated<CheckoutDict> = {
     googleNote:
       "Vi lagrer e-postadressen fra Google-kontoen din, og bruker den bare til kvitteringer.",
     signInFirst:
-      "Logg inn først, så knyttes abonnementet til kontoen din med én gang. Det tar ett klikk, og du kommer rett tilbake hit.",
+      "Logg inn først, så knyttes abonnementet til kontoen din med én gang. Samme knapp gjelder enten du er ny eller har konto fra før — du kommer rett tilbake hit.",
     signedInAs: "Abonnementet knyttes til",
     notSignedIn: "Du må logge inn med Google før du starter abonnementet.",
     cardNumberLabel: "Kortnummer",
@@ -164,7 +164,7 @@ const CHECKOUT: Translated<CheckoutDict> = {
     googleNote:
       "We store the email address from your Google account, and use it only for receipts.",
     signInFirst:
-      "Sign in first, so the subscription attaches to your account right away. One click, and you come straight back here.",
+      "Sign in first, so the subscription attaches to your account right away. The same button works whether you are new or already have an account — you come straight back here.",
     signedInAs: "The subscription will be attached to",
     notSignedIn: "Sign in with Google before starting the subscription.",
     cardNumberLabel: "Card number",

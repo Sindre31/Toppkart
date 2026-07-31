@@ -347,20 +347,35 @@ a:hover { color: var(--color-accent-900); }
 a.btn-primary, a.btn-primary:hover { color: var(--color-bg); }
 a.btn-secondary, a.btn-secondary:hover { color: var(--color-text); }
 @media (max-width: 620px) {
-  .site-nav { padding: 10px 20px; gap: var(--space-3); flex-wrap: wrap; }
+  /* One row on a phone: wordmark left, links in the middle, language right.
 
-  /* The nav does not fit on one row on a phone, so it wraps — and source order
-     alone put the switcher last, stranding it at the bottom. Reordering pairs
-     it with the wordmark on the top row, where it sits in the right-hand corner
-     on every other width, and lets the links take the second row.
+     `nowrap` is the whole point — the moment this is allowed to wrap, the
+     switcher drops to a second row and the bar doubles in height. Everything
+     below exists to buy back the ~104px that one row was short at 375px, so
+     none of it is decoration: padding, gap, wordmark, links, the CTA and the
+     switcher each give up a little rather than one of them giving up a lot. */
+  .site-nav {
+    padding: 10px 8px;
+    gap: 5px;
+    flex-wrap: nowrap;
+    /* Below ~360px the row genuinely cannot hold all four without dropping one.
+       Letting the nav scroll on its own axis keeps that from becoming a
+       sideways-scrolling page, which is the worse failure. */
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .site-nav::-webkit-scrollbar { display: none; }
+  /* The two auto margins are what put the links in the middle: the wordmark
+     pushes right, the switcher pushes left, and the links settle between. */
+  .site-nav .lang-switch { margin-left: auto; flex: none; }
+  .site-nav .nav-brand { font-size: 12px; letter-spacing: 0.03em; flex: none; }
+  .site-nav a { font-size: 12px; }
+  .nav-muted { font-size: 12px !important; }
+  /* Nothing in a single row may wrap or shrink into an ellipsis. */
+  .site-nav > * { white-space: nowrap; }
+  .site-nav a.btn { padding: 6px 9px; font-size: 12px; }
+  .site-nav .lang-switch .seg-opt { padding: 5px 7px; font-size: 12px; }
 
-     `::after` is a flex item too: given zero height and a full-width basis it
-     is a forced line break, which is what pins the split to exactly here rather
-     than wherever the widths happen to land. */
-  .site-nav .nav-brand { order: 1; }
-  .site-nav .lang-switch { order: 2; margin-left: auto; }
-  .site-nav::after { content: ""; order: 3; flex-basis: 100%; height: 0; }
-  .site-nav > *:not(.nav-brand):not(.lang-switch) { order: 4; }
   /* "Norsk"/"English" costs 133px; "NO"/"EN" costs 70. That is the difference
      between the map's 56px topbar fitting on a phone and clipping a language
      nobody can then reach. */

@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { Blueprint, SectionKicker } from "@/components/Blueprint";
-import { SiteFooter, SiteNav } from "@/components/SiteChrome";
+import { AccountNav, SiteFooter, SiteNav } from "@/components/SiteChrome";
 import { DataPlate } from "@/components/landing/DataPlate";
 import { TrialSignupRow } from "@/components/landing/TrialSignupRow";
 import styles from "@/components/landing/landing.module.css";
@@ -36,12 +36,7 @@ export default async function LandingPage() {
         <a className="nav-jump" href="#pris">
           {c.price}
         </a>
-        <Link className="nav-muted" href="/logg-inn">
-          {c.login}
-        </Link>
-        <Link className="btn btn-primary" href="/betaling">
-          {c.trial}
-        </Link>
+        <AccountNav lang={lang} />
       </SiteNav>
 
       <div className="page">
