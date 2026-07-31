@@ -1,119 +1,36 @@
-"use client";
-
-import { useState } from "react";
 import { Blueprint } from "@/components/Blueprint";
 import type { Lang } from "@/lib/i18n";
 import { accountDict } from "@/lib/i18n/account";
-import { getSupabaseBrowserClient } from "@/lib/supabase/client";
 
-/** «03 · Konto» — e-postkortet.
+/** «03 · Konto» — the e-mail card, read-only.
  *
- *  To utgaver, avhengig av hvor adressen kommer fra. Logger du inn med en
- *  lenke på e-post, er adressen din egen og kan endres her; endringen
- *  bekreftes med en lenke til den nye adressen (Supabase sender den i
- *  live-modus, i demo-modus vises bare bekreftelsen).
+ *  It used to offer a change-address form backed by `supabase.auth.updateUser`.
+ *  With Google as the only way in, that field had nowhere useful to go: the
+ *  identity is the Google account, so editing the stored address would not
+ *  change how you sign in — it would only split the address the receipts go to
+ *  away from the one you actually log in with. It also sent a confirmation
+ *  mail, which is the SMTP dependency this product deliberately does not have.
  *
- *  Er kontoen knyttet til Google, eier Google adressen. Da vises den bare.
- *  Å tilby et endre-felt der ville vært misvisende: det endrer ikke hvordan
- *  du logger inn, bare hvor kvitteringene havner — og neste innlogging ville
- *  uansett hentet Google-adressen tilbake.
- *
- *  Ingen nyhetsbrev eller varsler — bevisst fjernet.
+ *  So the address is shown, not edited. Change it at Google and it follows.
  */
-export function EmailCard({
-  email,
-  googleAccount,
-  lang,
-}: {
-  email: string;
-  /** `Viewer.hasGoogleIdentity` — the address belongs to Google, so it is
-   *  shown rather than offered for editing. */
-  googleAccount: boolean;
-  lang: Lang;
-}) {
+export function EmailCard({ email, lang }: { email: string; lang: Lang }) {
   const t = accountDict(lang);
-  const [value, setValue] = useState(email);
-  const [busy, setBusy] = useState(false);
-  const [message, setMessage] = useState<{ tone: "ok" | "error"; text: string } | null>(null);
-
-  async function change() {
-    const next = value.trim();
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(next)) {
-      setMessage({ tone: "error", text: t.errInvalidEmail });
-      return;
-    }
-    if (next.toLowerCase() === email.trim().toLowerCase()) {
-      setMessage({ tone: "error", text: t.errSameEmail });
-      return;
-    }
-
-    const confirmation = t.emailChangeSent(next);
-    const supabase = getSupabaseBrowserClient();
-    if (!supabase) {
-      setMessage({ tone: "ok", text: confirmation });
-      return;
-    }
-
-    setBusy(true);
-    const { error } = await supabase.auth.updateUser({ email: next });
-    setBusy(false);
-    setMessage(
-      error
-        ? { tone: "error", text: t.errEmailChangeFailed }
-        : { tone: "ok", text: confirmation },
-    );
-  }
 
   return (
     <Blueprint style={{ padding: "20px 24px" }}>
-      <h2 style={{ fontSize: 18, letterSpacing: "0.02em", textTransform: "uppercase", margin: "0 0 12px" }}>
+      <h2
+        style={{
+          fontSize: 18,
+          letterSpacing: "0.02em",
+          textTransform: "uppercase",
+          margin: "0 0 12px",
+        }}
+      >
         {t.emailCardTitle}
       </h2>
-
-      {googleAccount ? (
-        <p style={{ margin: 0, fontWeight: 500 }}>{email}</p>
-      ) : (
-        <>
-          <form
-            noValidate
-            onSubmit={(event) => {
-              event.preventDefault();
-              void change();
-            }}
-            style={{ display: "flex", gap: 8 }}
-          >
-            <input
-              className="input"
-              type="email"
-              value={value}
-              aria-label={t.emailLabel}
-              onChange={(event) => {
-                setValue(event.target.value);
-                if (message) setMessage(null);
-              }}
-              style={{ flex: 1 }}
-            />
-            <button className="btn btn-secondary" type="submit" disabled={busy}>
-              {t.changeEmail}
-            </button>
-          </form>
-          {message ? (
-            <p
-              className="note"
-              role="status"
-              style={{
-                margin: "10px 0 0",
-                color: message.tone === "error" ? "var(--color-accent-800)" : undefined,
-              }}
-            >
-              {message.text}
-            </p>
-          ) : null}
-        </>
-      )}
-
+      <p style={{ margin: 0, fontWeight: 500 }}>{email}</p>
       <p className="note" style={{ margin: "10px 0 0" }}>
-        {googleAccount ? t.emailCardNoteGoogle : t.emailCardNote}
+        {t.emailCardNote}
       </p>
     </Blueprint>
   );

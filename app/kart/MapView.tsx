@@ -77,6 +77,11 @@ export default function MapView({
   const [grade, setGrade] = useState(0);
   const [region, setRegion] = useState("");
   const [selectedSlug, setSelectedSlug] = useState<string | null>(initialSlug);
+  /** Narrow screens show one pane at a time. The panel is opaque and nearly
+   *  full width there, so side-by-side just means the map is permanently
+   *  behind it — on the one page whose whole point is the map. Above the
+   *  breakpoint this state is inert; the CSS ignores it. */
+  const [mobilePane, setMobilePane] = useState<"list" | "map">("list");
   /* Which of the peak's routes is drawn. Null means "the tour's own route", so a
      peak with one route needs no state and picking a tour never has to guess. */
   const [selectedRouteId, setSelectedRouteId] = useState<string | null>(initialRouteId);
@@ -149,10 +154,13 @@ export default function MapView({
     /* A route id belongs to one peak; carrying it across would pick an unrelated
        route or silently fall back. */
     setSelectedRouteId(null);
+    /* The detail lives in the panel, so picking a peak off the map on a phone
+       has to bring the panel back or the tap would look like it did nothing. */
+    setMobilePane("list");
   }, []);
 
   return (
-    <div className={s.page}>
+    <div className={s.page} data-pane={mobilePane}>
       <header className={s.topbar}>
         <Link className={s.brand} href="/">
           Toppkart
@@ -398,6 +406,16 @@ export default function MapView({
           />
         </Suspense>
       </div>
+
+      {/* Phone only — hidden by CSS above the breakpoint, where both panes are
+          visible at once and there is nothing to toggle between. */}
+      <button
+        type="button"
+        className={s.paneToggle}
+        onClick={() => setMobilePane((pane) => (pane === "map" ? "list" : "map"))}
+      >
+        {mobilePane === "map" ? t.showList : t.showMap}
+      </button>
     </div>
   );
 }

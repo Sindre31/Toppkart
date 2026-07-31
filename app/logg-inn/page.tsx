@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SiteFooter, SiteNav } from "@/components/SiteChrome";
-import { isSupabaseConfigured } from "@/lib/config";
 import { getLang } from "@/lib/i18n/server";
 import { accountDict } from "@/lib/i18n/account";
 import { commonDict } from "@/lib/i18n/common";
@@ -24,13 +23,15 @@ function safeNext(value: string): string {
   return value;
 }
 
+/** `?feil=` comes back from `/auth/callback`; anything else is ignored. */
+function failureOf(value: string): "google" | "1" | null {
+  return value === "google" || value === "1" ? value : null;
+}
+
 export default async function LoggInnPage({ searchParams }: { searchParams: SearchParams }) {
   const params = await searchParams;
   const next = safeNext(first(params.next));
-  const email = first(params.email);
-  const failure = first(params.feil);
-  const linkFailed = failure === "1";
-  const googleFailed = failure === "google";
+  const failure = failureOf(first(params.feil));
 
   const lang = await getLang();
   const t = accountDict(lang);
@@ -44,14 +45,7 @@ export default async function LoggInnPage({ searchParams }: { searchParams: Sear
 
       <main style={{ display: "grid", placeItems: "center", padding: "48px 20px" }}>
         <div style={{ width: "min(420px, 100%)" }}>
-          <LoginForm
-            initialEmail={email}
-            next={next}
-            demoMode={!isSupabaseConfigured}
-            linkFailed={linkFailed}
-            googleFailed={googleFailed}
-            lang={lang}
-          />
+          <LoginForm next={next} failure={failure} lang={lang} />
           <p className="note" style={{ margin: "16px 0 0", textAlign: "center" }}>
             {t.newHere} <Link href="/betaling">{t.newHereLink}</Link>
           </p>

@@ -74,6 +74,7 @@ export default async function BetalingPage({
             trialEndDate={trialEndDate}
             initialEmail={initialEmail}
             stripeEnabled={isStripeConfigured}
+            signedIn={Boolean(viewer.userId)}
           />
         )}
       </main>

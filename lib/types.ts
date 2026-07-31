@@ -80,9 +80,4 @@ export interface Viewer {
   subscription: Subscription | null;
   /** True when the viewer may read gated guide content. */
   hasAccess: boolean;
-  /** The account has a Google identity, so its address is Google's and cannot
-   *  meaningfully be changed in the app. True whenever such an identity is
-   *  linked — not only when Google was the method used this session — because
-   *  the address follows the identity either way. */
-  hasGoogleIdentity: boolean;
 }

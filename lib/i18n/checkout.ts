@@ -40,8 +40,19 @@ export interface CheckoutDict {
   firstCharge: (price: string, date: string) => string;
   /* — form — */
   stripeNextStep: string;
-  emailLabel: string;
-  emailPlaceholder: string;
+  /* — sign in before paying — */
+  googleButton: string;
+  googleRedirecting: string;
+  /** Separator between the Google button and the e-mail field. */
+  orDivider: string;
+  /** Sits under the Google button. */
+  googleNote: string;
+  /** Explains why the payment form is not shown yet. */
+  signInFirst: string;
+  /** Precedes the address on the signed-in step. */
+  signedInAs: string;
+  /** The API refused a checkout with no session behind it. */
+  notSignedIn: string;
   cardNumberLabel: string;
   cardNumberPlaceholder: string;
   expiryLabel: string;
@@ -88,8 +99,15 @@ const CHECKOUT: Translated<CheckoutDict> = {
       `Første trekk (${price}) den ${date}. Avslutt før det, så trekkes ingenting.`,
 
     stripeNextStep: "Kortopplysningene legges inn hos Stripe i neste steg.",
-    emailLabel: "E-post",
-    emailPlaceholder: "kari@epost.no",
+    googleButton: "Fortsett med Google",
+    googleRedirecting: "Sender deg til Google …",
+    orDivider: "eller",
+    googleNote:
+      "Vi lagrer e-postadressen fra Google-kontoen din, og bruker den bare til kvitteringer.",
+    signInFirst:
+      "Logg inn først, så knyttes abonnementet til kontoen din med én gang. Det tar ett klikk, og du kommer rett tilbake hit.",
+    signedInAs: "Abonnementet knyttes til",
+    notSignedIn: "Du må logge inn med Google før du starter abonnementet.",
     cardNumberLabel: "Kortnummer",
     cardNumberPlaceholder: "1234 1234 1234 1234",
     expiryLabel: "Utløpsdato",
@@ -140,8 +158,15 @@ const CHECKOUT: Translated<CheckoutDict> = {
       `First charge (${price}) on ${date}. Cancel before then and you won't be charged.`,
 
     stripeNextStep: "You'll enter your card details with Stripe in the next step.",
-    emailLabel: "Email",
-    emailPlaceholder: "you@example.com",
+    googleButton: "Continue with Google",
+    googleRedirecting: "Taking you to Google …",
+    orDivider: "or",
+    googleNote:
+      "We store the email address from your Google account, and use it only for receipts.",
+    signInFirst:
+      "Sign in first, so the subscription attaches to your account right away. One click, and you come straight back here.",
+    signedInAs: "The subscription will be attached to",
+    notSignedIn: "Sign in with Google before starting the subscription.",
     cardNumberLabel: "Card number",
     cardNumberPlaceholder: "1234 1234 1234 1234",
     expiryLabel: "Expiry date",
@@ -206,6 +231,7 @@ export function planCopy(plan: PlanKey, lang: Lang): PlanCopy {
  *  reader wants; the client already knows, and owns the wording. */
 export type CheckoutErrorCode =
   | "unknown_plan"
+  | "not_signed_in"
   | "invalid_email"
   | "price_unavailable"
   | "provider_silent"
@@ -218,6 +244,8 @@ export function checkoutError(code: unknown, lang: Lang): string {
   switch (code) {
     case "unknown_plan":
       return t.unknownPlan;
+    case "not_signed_in":
+      return t.notSignedIn;
     case "invalid_email":
       return t.emailInvalid;
     case "price_unavailable":

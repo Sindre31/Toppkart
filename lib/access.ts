@@ -1,6 +1,6 @@
 import { isSupabaseConfigured } from "@/lib/config";
 import { getSupabaseServerClient } from "@/lib/supabase/server";
-import { getDemoEmail, getDemoProvider, getDemoSubscription } from "@/lib/demo-session";
+import { getDemoEmail, getDemoSubscription } from "@/lib/demo-session";
 import type { Subscription, Viewer } from "@/lib/types";
 
 /** The single gate every page asks: who is this, and may they read the guides?
@@ -23,26 +23,13 @@ export async function getViewer(): Promise<Viewer> {
   if (!isSupabaseConfigured) {
     const email = await getDemoEmail();
     const subscription = email ? await getDemoSubscription() : null;
-    return {
-      email,
-      userId: email ? `demo:${email}` : null,
-      subscription,
-      hasAccess: grantsAccess(subscription),
-      hasGoogleIdentity: email ? (await getDemoProvider()) === "google" : false,
-    };
+    return { email, userId: email ? `demo:${email}` : null, subscription, hasAccess: grantsAccess(subscription) };
   }
 
   const supabase = await getSupabaseServerClient();
   const { data } = (await supabase!.auth.getUser()) ?? { data: { user: null } };
   const user = data?.user ?? null;
-  if (!user)
-    return {
-      email: null,
-      userId: null,
-      subscription: null,
-      hasAccess: false,
-      hasGoogleIdentity: false,
-    };
+  if (!user) return { email: null, userId: null, subscription: null, hasAccess: false };
 
   const { data: row } = await supabase!
     .from("tk_subscriptions")
@@ -76,9 +63,5 @@ export async function getViewer(): Promise<Viewer> {
     userId: user.id,
     subscription,
     hasAccess: grantsAccess(subscription),
-    // `identities` lists every linked provider. Reading that rather than
-    // `app_metadata.provider` — the latter is only the most recently used one,
-    // so it flips when someone with both uses the magic link once.
-    hasGoogleIdentity: (user.identities ?? []).some((i) => i.provider === "google"),
   };
 }
