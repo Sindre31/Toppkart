@@ -484,3 +484,64 @@
   .topbar :global(.btn) { padding: 7px 12px; font-size: 13px; }
   .loginLink { font-size: 12px; }
 }
+
+/* — today's avalanche danger (Varsom) — */
+.avalanche {
+  margin: 18px 0 0;
+  padding: 14px 0 0;
+  border-top: 1px solid var(--color-divider);
+}
+.avalancheHead {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 0 0 10px;
+  font-family: var(--font-heading);
+  font-weight: var(--font-heading-weight);
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--color-text) 70%, transparent);
+}
+.avalancheRegion {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0;
+  text-transform: none;
+}
+/* The colour is set inline from DANGER_COLORS — the European scale's own five,
+   not the site palette. See lib/avalanche.ts for why. */
+.avalancheLevel {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  font-size: 13px;
+  font-weight: 500;
+}
+.avalancheNum {
+  font-family: var(--font-heading);
+  font-weight: var(--font-heading-weight);
+  font-size: 22px;
+  line-height: 1;
+}
+.avalancheText {
+  margin: 10px 0 0;
+  font-size: 13px;
+  line-height: 20px;
+  color: color-mix(in srgb, var(--color-text) 85%, transparent);
+}
+.avalancheNote {
+  margin: 0;
+  font-size: 13px;
+  line-height: 20px;
+  color: color-mix(in srgb, var(--color-text) 60%, transparent);
+}
+.avalancheSource {
+  display: inline-block;
+  margin: 10px 0 0;
+  font-size: 12px;
+  color: var(--color-accent-700);
+}
