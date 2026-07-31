@@ -23,32 +23,18 @@ export interface AccountDict {
   loginKicker: string;
   loginHeading: string;
   loginIntro: string;
-  emailLabel: string;
-  emailPlaceholder: string;
-  sendLink: string;
-  sending: string;
-  /* — sign-in: Google — */
   googleButton: string;
   googleRedirecting: string;
-  /** Separator between the Google button and the email form. */
-  orDivider: string;
+  /** Standing note under the button: Google is the only way in. */
+  googleOnlyNote: string;
   /** Trailing question + link under the card, for readers without an account. */
   newHere: string;
   newHereLink: string;
   /* — sign-in: errors — */
-  errInvalidEmail: string;
-  errSendFailed: string;
-  errLinkExpired: string;
   /** Google handed back an error, or the provider is not enabled in Supabase. */
   errGoogleFailed: string;
-  /* — sign-in: the «check your inbox» state — */
-  sentKicker: string;
-  sentHeading: string;
-  /** Split around the address, which renders bold between the two halves. */
-  sentBodyBefore: string;
-  sentBodyAfter: string;
-  openAccountDemo: string;
-  sendAgain: string;
+  /** The round-trip came back but the session exchange failed. */
+  errSignInFailed: string;
 
   /* — account: metadata and header — */
   accountMetaTitle: string;
@@ -108,15 +94,9 @@ export interface AccountDict {
   receiptStatus: string;
   receiptPdf: string;
   receiptsEmpty: string;
-  /* — account: the e-mail card — */
+  /* — account: the e-mail card, read-only — */
   emailCardTitle: string;
-  changeEmail: string;
-  errSameEmail: string;
-  errEmailChangeFailed: string;
-  emailChangeSent: (email: string) => string;
   emailCardNote: string;
-  /** Shown instead, when the address comes from a linked Google account. */
-  emailCardNoteGoogle: string;
   /* — account: footer — */
   aboutSubscription: string;
 }
@@ -125,31 +105,20 @@ const ACCOUNT: Translated<AccountDict> = {
   no: {
     loginMetaTitle: "Logg inn",
     loginMetaDescription:
-      "Logg inn på Toppkart med Google eller en engangslenke på e-post — ingen passord å huske.",
+      "Logg inn på Toppkart med Google-kontoen din — ingen passord å huske.",
     loginKicker: "Logg inn",
     loginHeading: "Uten passord",
     loginIntro:
-      "Logg inn med Google, eller få en engangslenke på e-post. Lenken virker i 15 minutter.",
-    emailLabel: "E-postadresse",
-    emailPlaceholder: "din@epost.no",
-    sendLink: "Send innloggingslenke",
-    sending: "Sender …",
+      "Logg inn med Google-kontoen din. Ingen passord, ingen ny konto å opprette.",
     googleButton: "Fortsett med Google",
     googleRedirecting: "Sender deg til Google …",
-    orDivider: "eller",
+    googleOnlyNote:
+      "Google er eneste innloggingsmåte. Vi lagrer e-postadressen fra Google-kontoen din, og bruker den bare til kvitteringer.",
     newHere: "Ny her?",
     newHereLink: "Prøv gratis i 14 dager — deretter 29 kr/mnd",
-    errInvalidEmail: "Skriv inn en gyldig e-postadresse.",
-    errSendFailed: "Vi klarte ikke å sende innloggingslenken. Prøv igjen om litt.",
-    errLinkExpired: "Innloggingslenken er ugyldig eller utløpt. Be om en ny lenke.",
     errGoogleFailed:
-      "Vi fikk ikke kontakt med Google, eller innlogginga ble avbrutt. Prøv igjen, eller bruk e-post.",
-    sentKicker: "Sjekk innboksen",
-    sentHeading: "Lenken er sendt",
-    sentBodyBefore: "Vi har sendt en innloggingslenke til",
-    sentBodyAfter: ". Åpne e-posten og trykk på lenken.",
-    openAccountDemo: "Åpne Min side (demo)",
-    sendAgain: "Send på nytt",
+      "Vi fikk ikke kontakt med Google, eller innlogginga ble avbrutt. Prøv igjen.",
+    errSignInFailed: "Vi klarte ikke å fullføre innlogginga. Prøv igjen.",
 
     accountMetaTitle: "Min side",
     accountMetaDescription: "Abonnement, kvitteringer og kontoinnstillinger for Toppkart.",
@@ -205,45 +174,27 @@ const ACCOUNT: Translated<AccountDict> = {
     receiptPdf: "PDF",
     receiptsEmpty: "Ingen kvitteringer ennå — første trekk kommer etter prøveperioden.",
     emailCardTitle: "E-post",
-    changeEmail: "Endre",
-    errSameEmail: "Dette er allerede adressen din.",
-    errEmailChangeFailed: "Vi fikk ikke endret adressen. Prøv igjen om litt.",
-    emailChangeSent: (email) =>
-      `Vi har sendt en bekreftelseslenke til ${email}. Åpne den for å fullføre endringen.`,
     emailCardNote:
-      "Du logger inn med en lenke til denne adressen — ingen passord. Endrer du den, sender vi en bekreftelseslenke til den nye.",
-    emailCardNoteGoogle:
       "Adressen kommer fra Google-kontoen du logger inn med, og kan ikke endres her. Endrer du den hos Google, følger den etter.",
     aboutSubscription: "Om abonnementet",
   },
   en: {
     loginMetaTitle: "Log in",
     loginMetaDescription:
-      "Sign in to Toppkart with Google or a one-time link sent to your email — no password to remember.",
+      "Sign in to Toppkart with your Google account — no password to remember.",
     loginKicker: "Log in",
     loginHeading: "No password",
     loginIntro:
-      "Sign in with Google, or get a one-time link by email. The link works for 15 minutes.",
-    emailLabel: "Email address",
-    emailPlaceholder: "you@example.com",
-    sendLink: "Send sign-in link",
-    sending: "Sending …",
+      "Sign in with your Google account. No password, no new account to create.",
     googleButton: "Continue with Google",
     googleRedirecting: "Taking you to Google …",
-    orDivider: "or",
+    googleOnlyNote:
+      "Google is the only way to sign in. We store the email address from your Google account, and use it only for receipts.",
     newHere: "New here?",
     newHereLink: "Try free for 14 days — then 29 kr/month",
-    errInvalidEmail: "Enter a valid email address.",
-    errSendFailed: "We could not send the sign-in link. Try again in a moment.",
-    errLinkExpired: "That sign-in link is invalid or has expired. Ask for a new one.",
     errGoogleFailed:
-      "We could not reach Google, or the sign-in was cancelled. Try again, or use email instead.",
-    sentKicker: "Check your inbox",
-    sentHeading: "Link sent",
-    sentBodyBefore: "We have sent a sign-in link to",
-    sentBodyAfter: ". Open the email and click the link.",
-    openAccountDemo: "Open My account (demo)",
-    sendAgain: "Send again",
+      "We could not reach Google, or the sign-in was cancelled. Try again.",
+    errSignInFailed: "We could not complete the sign-in. Try again.",
 
     accountMetaTitle: "My account",
     accountMetaDescription: "Subscription, receipts and account settings for Toppkart.",
@@ -299,14 +250,7 @@ const ACCOUNT: Translated<AccountDict> = {
     receiptPdf: "PDF",
     receiptsEmpty: "No receipts yet — the first charge comes after the trial.",
     emailCardTitle: "Email",
-    changeEmail: "Change",
-    errSameEmail: "That is already your address.",
-    errEmailChangeFailed: "We could not change your address. Try again in a moment.",
-    emailChangeSent: (email) =>
-      `We have sent a confirmation link to ${email}. Open it to finish the change.`,
     emailCardNote:
-      "You sign in with a link sent to this address — no password. Change it and we send a confirmation link to the new one.",
-    emailCardNoteGoogle:
       "This address comes from the Google account you sign in with, and cannot be changed here. Change it at Google and it follows.",
     aboutSubscription: "About the subscription",
   },

@@ -3,7 +3,7 @@ import { env } from "@/lib/config";
 /** The origin the browser actually asked for, e.g. `https://toppkart.no`.
  *
  *  Every redirect that has to come *back* to a signed-in browser — the OAuth
- *  round-trip, the magic link, Stripe's return URLs — has to land on the origin
+ *  round-trip and Stripe's return URLs — has to land on the origin
  *  the visitor started on. Building those from `NEXT_PUBLIC_SITE_URL` looks
  *  right until the variable is unset: `env.siteUrl` then falls back to
  *  `https://$VERCEL_URL`, so a visitor on the custom domain is sent to

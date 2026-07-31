@@ -22,8 +22,6 @@ import { Summary } from "./Summary";
  *  translated — only `planLabel`, which the server picked for `lang`.
  */
 
-const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
 interface CheckoutResponse {
   url?: string;
   ok?: boolean;
@@ -54,7 +52,6 @@ export function CheckoutForm({
 }) {
   const t = checkoutDict(lang);
   const router = useRouter();
-  const [email, setEmail] = useState(initialEmail);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [done, setDone] = useState(false);
@@ -68,20 +65,14 @@ export function CheckoutForm({
     event.preventDefault();
     if (busy) return;
 
-    const value = email.trim();
-    if (!EMAIL_RE.test(value)) {
-      setError(t.emailInvalid);
-      return;
-    }
-
     setBusy(true);
     setError(null);
     try {
       const response = await fetch("/api/checkout", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        // Kun plan og e-post — aldri kortdata.
-        body: JSON.stringify({ plan, email: value }),
+        // Kun planen — adressen kommer fra sesjonen, og aldri kortdata.
+        body: JSON.stringify({ plan }),
       });
       const data = (await response.json()) as CheckoutResponse;
 
@@ -145,10 +136,54 @@ export function CheckoutForm({
         />
 
         <section>
+          {/* Sign-in first, deliberately. Google is the only way in, so a card
+              paid for by someone with no session could not be attached to an
+              account afterwards — the Stripe webhook would find no user, log
+              the event and drop it, and the customer would have paid for
+              nothing. Identity before money. */}
+          {signedIn ? null : (
+            <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
+              <p className="prose" style={{ margin: 0 }}>
+                {t.signInFirst}
+              </p>
+              <a
+                className="btn btn-primary btn-block"
+                href={googleHref}
+                aria-disabled={googlePending}
+                onClick={() => setGooglePending(true)}
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  gap: 10,
+                  margin: 0,
+                }}
+              >
+                <span
+                  style={{
+                    display: "grid",
+                    placeItems: "center",
+                    width: 22,
+                    height: 22,
+                    background: "#fff",
+                    borderRadius: 2,
+                  }}
+                >
+                  <GoogleMark />
+                </span>
+                {googlePending ? t.googleRedirecting : t.googleButton}
+              </a>
+              <p className="note" style={{ margin: 0 }}>
+                {t.googleNote}
+              </p>
+            </div>
+          )}
+
           <form
             noValidate
             onSubmit={start}
-            style={{ display: "flex", flexDirection: "column", gap: 14 }}
+            hidden={!signedIn}
+            style={{ display: signedIn ? "flex" : "none", flexDirection: "column", gap: 14 }}
           >
             {stripeEnabled ? (
               <p className="prose" style={{ margin: 0 }}>
@@ -156,64 +191,10 @@ export function CheckoutForm({
               </p>
             ) : null}
 
-            {signedIn ? null : (
-              <>
-                <a
-                  className="btn btn-block"
-                  href={googleHref}
-                  aria-disabled={googlePending}
-                  onClick={() => setGooglePending(true)}
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    gap: 10,
-                    margin: 0,
-                  }}
-                >
-                  <GoogleMark />
-                  {googlePending ? t.googleRedirecting : t.googleButton}
-                </a>
-                <p className="note" style={{ margin: "-4px 0 0" }}>
-                  {t.googleNote}
-                </p>
 
-                <div
-                  aria-hidden="true"
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    gap: 12,
-                    fontSize: 12,
-                    letterSpacing: "0.08em",
-                    textTransform: "uppercase",
-                    color: "var(--color-text-soft, #6b7785)",
-                  }}
-                >
-                  <span style={{ flex: 1, height: 1, background: "var(--color-rule, #d8dee5)" }} />
-                  {t.orDivider}
-                  <span style={{ flex: 1, height: 1, background: "var(--color-rule, #d8dee5)" }} />
-                </div>
-              </>
-            )}
-
-            <div className="field">
-              <label htmlFor="betaling-epost">{t.emailLabel}</label>
-              <input
-                id="betaling-epost"
-                className="input"
-                type="email"
-                autoComplete="email"
-                placeholder={t.emailPlaceholder}
-                aria-label={t.emailLabel}
-                aria-invalid={error ? true : undefined}
-                value={email}
-                onChange={(event) => {
-                  setEmail(event.target.value);
-                  if (error) setError(null);
-                }}
-              />
-            </div>
+            <p className="note" style={{ margin: 0 }}>
+              {t.signedInAs} <strong style={{ color: "var(--color-text)" }}>{initialEmail}</strong>
+            </p>
 
             {/* Kortfeltene finnes bare i demo-modus, og er en ren tegning av
                 prototypen: ingen `name`, ingen state, ingen innsending. Ekte

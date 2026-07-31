@@ -28,7 +28,7 @@ export async function GET(request: Request) {
   if (!isSupabaseConfigured) {
     // Demo mode: there is no Google to talk to, so stand in a demo session and
     // land where the caller asked, keeping the whole flow clickable with no keys.
-    await setDemoEmail("demo@toppkart.no", "google");
+    await setDemoEmail("demo@toppkart.no");
     return NextResponse.redirect(new URL(next, url.origin));
   }
 

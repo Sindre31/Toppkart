@@ -72,6 +72,18 @@ export async function POST(request: Request) {
   }
 
   const viewer = await getViewer();
+
+  /* Google is the only way in, so a payment with no session behind it could
+     never be attached to an account: the webhook resolves the payer by
+     `client_reference_id` or by an e-mail that has a profile row, and an
+     unauthenticated payer has neither. It would log the event and drop it —
+     the customer pays and gets nothing. Refuse instead. */
+  if (!viewer.userId) {
+    return NextResponse.json(
+      { error: "not_signed_in" satisfies CheckoutErrorCode },
+      { status: 401 },
+    );
+  }
   const customerEmail = viewer.email ?? email;
 
   try {
