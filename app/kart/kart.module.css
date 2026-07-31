@@ -460,8 +460,12 @@
    back what the brand, both links and the switcher need to sit side by side —
    the switcher's short labels (globals.css) cover the rest. */
 @media (max-width: 620px) {
-  .topbar { gap: 12px; padding: 0 14px; }
-  .brand { font-size: 15px; }
+  /* Same treatment as the site nav in globals.css: no auto margin on the
+     wordmark, one gap value between every pair, group centred. Left to itself
+     the bar sat at 64px between the wordmark and the CTA against 10px before
+     the switcher, which is the uneven look the site nav just lost. */
+  .topbar { gap: 8px; padding: 0 12px; justify-content: center; }
+  .brand { font-size: 14px; margin-right: 0; }
   /* Both links were wrapping to two lines inside a fixed 56px row, which
      clipped them. Nothing in a single-line bar may wrap. */
   .topbar :global(.btn),
