@@ -84,8 +84,21 @@ site's URL.
    http://localhost:3000/**
    ```
 
-   A redirect target that is not on this list is rejected by Supabase, which shows up as a
-   sign-in that silently fails.
+   **This is the single most common way to break sign-in, and it fails misleadingly.** When a
+   `redirect_to` is missing from the list, Supabase does not report an error — it quietly
+   substitutes the **Site URL** instead. Site URL is normally a bare domain with no path, so the
+   browser arrives at `https://your-site/?code=…` rather than `/auth/callback?code=…`. If Site URL
+   is still pointing at `http://localhost:3000` from early development, a visitor signing in on
+   the live site is sent to *their own machine*.
+
+   The tell is a `?code=` in the address bar on a page that is not `/auth/callback`, on a site
+   that looks normal and simply is not signed in. `middleware.ts` forwards such a code to the
+   callback so a bare Site URL still works, but that is a safety net: a rejected `redirect_to`
+   also loses the `next` the visitor was heading to. Get the list right.
+
+   Both entries above matter. Production sign-in needs the real domain; `localhost` is for
+   development. If you use preview deployments, add a pattern that covers them too, or accept that
+   sign-in only works on the domains listed here.
 5. **Authentication → Providers → Email**: enable it, and leave **Confirm email** off. The app
    uses only passwordless sign-in (`signInWithOtp`), so passwords can stay disabled. Confirmation
    is redundant here: receiving the magic link already proves the address, and leaving it on adds
@@ -294,6 +307,14 @@ account that is not on the test-user list is refused here and looks identical.
 **«Vi klarte ikke å fullføre innlogginga.»**
 The round-trip came back but `exchangeCodeForSession` failed. Nearly always the redirect target is
 not on Supabase's allow-list: compare it against **Authentication → URL Configuration**.
+
+**You land on `/?code=…` — the wrong path, or even the wrong domain.**
+Supabase rejected the `redirect_to` the app sent and fell back to its **Site URL**. Nothing in the
+app produces that address, so the value you see is whatever is in **Authentication → URL
+Configuration → Site URL**; landing on `localhost` from the live site means that field was never
+moved off the development default. Fix both fields there: Site URL to the real origin, and add
+`https://your-domain/**` to **Redirect URLs**. `middleware.ts` forwards a stray code to
+`/auth/callback` so this still completes, but the allow-list is the actual fix.
 
 **Google sends you round the loop and you end up signed out, with no error.**
 Look at where the round-trip is actually pointed — this needs no browser and no credentials:
