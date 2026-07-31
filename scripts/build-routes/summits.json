@@ -454,5 +454,13 @@
     "summit_dtm": 1057.2,
     "claims": 1054,
     "stored_off_km": 0.03
+  },
+  "grubba": {
+    "name": "Grubbå",
+    "lat": 58.9492,
+    "lng": 6.98546,
+    "summit_dtm": 1184.5,
+    "claims": 1184,
+    "stored_off_km": 0.54
   }
 }

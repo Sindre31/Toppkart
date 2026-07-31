@@ -1,0 +1,1248 @@
+[
+ {
+  "slug": "besshoe",
+  "verdict": "ok",
+  "corrections": [
+   "Waypointet i vestenden av Bessvatnet lå først på 61.52500/8.73700. DTM1 ga 1454,17 moh — det er 80 høydemeter oppe i lia, ikke ved vannet (Bessvatnet ligger på 1372–1374 moh). Flyttet til 61.52500/8.74450, 1384,82 moh, der Grotåe kommer ned i nordvestenden av vatnet.",
+   "Første utkast fulgte bessheim.no ordrett og la ruta opp Besshøbrean til Brue. DTM1 viser et steg fra 2004 til 2050 moh over 26 m horisontalt — omtrent 60° — i overgangen fra breen til ryggen. Ruta er lagt om til Grotådalen langs breddegrad 61.525 og opp på austryggen sør for breen; da er bratteste målte steg 34°.",
+   "Toppanløpet er kontrollert med radialprofilar: 75° (austryggen mot Brue) holder 17,8°, men 60° og 90° måler 54–57°. Korridoren må treffe ryggen, ikke flankene ved siden av — waypointet på Brue (61.51970/8.70500, 2046,99 moh) er der for akkurat det.",
+   "Sjekket vinteradkomsten før roadClosedInWinter ble satt. Fv51 er vinterstengt over Valdresflye mellom Bygdin og Maurvangen, men Bessheim ligger nord for stengsla, i Sjodalen, og nås hele vinteren via Sjoa–Heidal–Randsverk. roadClosedInWinter = false.",
+   "Nedkjøringsaspektet er ø, ikke sørøst. Friflyts sørøstrenne ned mot Besseggen og Memurubu er en gjennomgangsvariant, ikke opp-og-ned-linja; korridoren beskriver ryggen mot Brue, som ligger på peiling 78° fra toppen."
+  ],
+  "rejectReason": "",
+  "corridor": {
+   "routeId": "normalruta",
+   "routeName": "Normalruta fra Bessheim over Bessvatnet og Brue",
+   "routeDescriptionFull": "Fra parkeringa ved Bessheim fjellstue (961 moh) følger du den merkede ruta vestover og opp de 410 høydemeterne til nordøstenden av Bessvatnet (1374 moh). Videre vestover langs vatnet, som er 1372 moh og vinterstid en flat sletting på seks kilometer, fram til Grotåosen i nordvestenden (1385 moh). Derfra vender ruta rett vestover opp Grotådalen, mellom Bukkehøe i nord og austryggen til Besshø i sør, i jevn stigning til rundt 1745 moh. Så sørvestover opp på ryggen ved Brue (2047 moh), og til slutt vest-sørvest langs den slake ryggen de siste 210 høydemeterne til det store topplatået på 2257 moh. Samme vei ned.",
+   "trailhead": {
+    "name": "Bessheim fjellstue",
+    "lat": 61.51461,
+    "lng": 8.85351,
+    "elevationM": 961.26,
+    "osmEvidence": "OSM way 443857989, amenity=parking, senter 61.51461/8.85351, rett ved node 844080404, tourism=alpine_hut, name=Bessheim Fjellstue. Sjodalsvegen fv51 (OSM ways 70469960 / 70469296, highway=primary, delvis surface=asphalt) går forbi døra. Denne delen av fv51 ligger nord for vinterstengsla over Valdresflye og brøytes hele året fra Randsverk."
+   },
+   "waypoints": [
+    {
+     "name": "Nordøstenden av Bessvatnet",
+     "lat": 61.5262,
+     "lng": 8.808,
+     "elevationM": 1374.21
+    },
+    {
+     "name": "Grotåosen, vestenden av Bessvatnet",
+     "lat": 61.525,
+     "lng": 8.7445,
+     "elevationM": 1384.82
+    },
+    {
+     "name": "Opp Grotådalen, ca 1745 moh",
+     "lat": 61.5248,
+     "lng": 8.72,
+     "elevationM": 1744.48
+    },
+    {
+     "name": "Brue, ca 2045 moh",
+     "lat": 61.5197,
+     "lng": 8.705,
+     "elevationM": 2046.99
+    }
+   ],
+   "season": "mars–mai",
+   "roadClosedInWinter": false,
+   "aspect": "Ø",
+   "grade": 3,
+   "gradeReason": "1296 høydemeter og 9,3 km én vei, med toppen på 2257 moh. Oppstigningen er ikke teknisk — bratteste målte steg er 34° i Grotådalen og opp på Brue, og selve austryggen holder 18–20°. Det som gjør turen krevende er lengden, høyfjellet, og et stort rundt topplatå med 55–70° fall på nord- og vestsida der navigering i dårlig sikt er den reelle vanskeligheten.",
+   "hazardNotes": "Toppen er stor og rund, og nord-, nordvest- og vestsida faller 55–70° rett ned mot Russvatnet og Gjende. I dårlig sikt er det her turen blir farlig, ikke i oppstigningen. Ryggen inn mot Brue er smal nok til at det teller: sørsida faller 35–40° mot Gjende, nordsida 25–30° ned mot Besshøbrean. Sørrennene som brukes til nedkjøring holder 35–40° med korte partier på 45° og er steinete og isete i dårlige forhold.",
+   "teaserNo": "1296 høydemeter fra Bessheim: seks kilometer langs Bessvatnet før Grotådalen, og til slutt den slake austryggen over Brue.",
+   "teaserEn": "1296 m of climbing from Bessheim: six kilometres along Bessvatnet before Grotådalen, then the gentle east ridge over Brue.",
+   "sources": [
+    "https://www.friflyt.no/topptur/skiturer-jotunheimen/turbeskrivelse-besshoee-2258-moh",
+    "https://bessheim.no/2017/06/12/bessho/?lang=en",
+    "https://www.toppturnorge.no/turer/besshoe/",
+    "https://no.wikipedia.org/wiki/Fylkesvei_51"
+   ],
+   "confidence": "high",
+   "notes": "Ruta er dokumentert både av Friflyt (Bessheim 964 moh, ca 16 km, 1200 høydemeter) og av Bessheim fjellstue selv, som beskriver skivarianten: til Bessvatnet langs merket løype, rett gjennom juvet, opp mot Brue og siste bratte stigning til toppen. Målingene her gir 9,35 km og 1296 høydemeter én vei fra den mappede parkeringa, altså litt mer enn Friflyts avrundede tall. Bessvatnet krysses/følges på is; det er normal vinterpraksis her, men waypointene er lagt på land ved begge ender. Turen kan også gås fra Gjendesheim (1008 moh). Friflyts nedkjøring i sørøstrenna til Memurubu er en gjennomgangstur og krever transport tilbake — den er ikke lagt inn som korridor."
+  }
+ },
+ {
+  "slug": "breitinden",
+  "verdict": "ok",
+  "corrections": [
+   "First draft ended the corridor at the broad 522 m shelf south-west of the summit ridge (the 'skar' the trail description names). Re-probing DTM1 showed the west flank rising from Breitindvatnet holds 20-32 degrees all the way to about 760 m, so the ski line goes much higher: the last waypoint was moved up to the 762.9 m shoulder at 69.45030,17.65120.",
+   "Checked the summit block before trusting the corridor to reach the top. 69.45030,17.65120 (762.9 m) to the summit is 44.4 degrees over 249 m, and the ridge steps above ~800 m measure 45-52 degrees in ~100 m windows (69.4503,17.6512 = 762.9 -> 69.4510,17.6535 = 827.9 -> 69.4514,17.6550 = 971.1). That is not a skin track, so the corridor stops below it and confidence is low.",
+   "Cross-checked the summit rather than assuming it. The SSR point named Breitinden (69.45536,17.64851) reads 983.2 m in DTM1; the point in summits.json is 0.46 km south-east and reads 1007.0 m. That south-east top is what Peakbook lists as 'Breidtinden (SO)' 1008 m and is the real high point of Senja. summits.json unchanged.",
+   "Verified the trailhead against the text rather than picking the nearest road. The route description says the start is 5-6 km east of Senjahopen; SSR Senjahopen (69.49686,17.48979) to the OSM parking at 69.45859,17.59591 is 5.9 km."
+  ],
+  "rejectReason": "",
+  "corridor": {
+   "routeId": "normalruta",
+   "routeName": "Normalruta fra Svarthola",
+   "routeDescriptionFull": "Normalruta fra parkeringa i Svarthola langs Fv862, opp til nordenden av Svartholvatnet, videre østover over ryggen til Breitindvatnet, langs nordøstsida av vatnet og opp vestflanken til skulderen sørvest for toppblokka. Derfra følger ruta sørvestryggen til topps; de siste 140 høydemeterne er utsatt klyving, og skiene blir vanligvis satt igjen på skulderen.",
+   "trailhead": {
+    "name": "Svarthola rasteplass ved Fv862",
+    "lat": 69.45859,
+    "lng": 17.59591,
+    "elevationM": 30.41,
+    "osmEvidence": "OSM way/1068983205 amenity=parking and node/4943176322 highway=rest_area at 69.45859,17.59591, 94 m from way/1022476301 highway=primary name=Mefjordveien ref=862 (Fv862, asphalt, maxspeed 60). Svartholla skredoverbygg (way/1022476306, tunnel=avalanche_protector) is 170 m east and Svarthollatunnelen (way/154991865) 370 m east: a snow-sheltered primary road, ploughed all winter."
+   },
+   "waypoints": [
+    {
+     "name": "Nordenden av Svartholvatnet",
+     "lat": 69.4545,
+     "lng": 17.606,
+     "elevationM": 206.57
+    },
+    {
+     "name": "Ryggen øst for Svartholvatnet",
+     "lat": 69.4525,
+     "lng": 17.62,
+     "elevationM": 399.51
+    },
+    {
+     "name": "Nordøstsida av Breitindvatnet",
+     "lat": 69.4508,
+     "lng": 17.636,
+     "elevationM": 480.6
+    },
+    {
+     "name": "Skulderen sørvest for toppblokka",
+     "lat": 69.4503,
+     "lng": 17.6512,
+     "elevationM": 762.92
+    }
+   ],
+   "season": "jan–apr",
+   "roadClosedInWinter": false,
+   "aspect": "SV",
+   "grade": 4,
+   "gradeReason": "977 høydemeter og fem kilometer fra sjøen, og en avslutning som ikke er skiterreng: sørvestryggen måler 45-52 grader i 100-metersvinduer over ca. 800 moh, og nordsida faller 53-70 grader rett under toppen. Selve skidelen opp vestflanken er 20-32 grader.",
+   "hazardNotes": "Vestflanken opp fra Breitindvatnet er et sammenhengende heng på 25-32 grader med vatnet som terrengfelle nedenfor. Nord- og nordøstsida av toppen faller 53-70 grader rett under egget, så skavlene ligger der — hold deg på sørvestsida av ryggen. De siste 140 høydemeterne er utsatt klyving og gjøres uten ski på beina.",
+   "teaserNo": "977 høydemeter fra Svarthola via Svartholvatnet og Breitindvatnet; de siste 140 er klyving på sørvestryggen.",
+   "teaserEn": "977 metres of ascent from Svarthola past Svartholvatnet and Breitindvatnet; the last 140 are a scramble on the summit ridge.",
+   "sources": [
+    "https://ut.no/turforslag/1112122/breidtind-1001-moh",
+    "https://peakbook.org/no/tour/167401/Breidtinden+(S%C3%98)+-+h%C3%B8yest+p%C3%A5+Senja+-+en+fantastisk+topp!.html",
+    "https://www.utemagasinet.no/fjelltur/breitind-paa-senja-bratt-og-luftig-klyvetur",
+    "https://nordnorge.com/en/artikkel/ski-touring-on-senja/",
+    "https://www.alpine-guides.com/trips/senja-island-ski-touring-holiday/"
+   ],
+   "confidence": "low",
+   "notes": "No ski-specific route description for Breitinden could be found, and that is the main reason confidence is low. Guided operators list Senja's highest peak as a ski-touring objective, but every line-by-line description found (ut.no, Peakbook, Utemagasinet) is the normal route in summer form: Svarthola parking -> Svartholvatnet -> east over the ridge -> Breitindvatnet -> along the north-east side of the lake -> the shelf south-west of the summit ridge -> the south-west ridge, called 'airy and steep, comparable to many Jotunheimen peaks' with several small exposed climbing sections. The approach valley is the same for ski and foot - there is no other feasible way in from Fv862 - so the corridor pins the valley, not the footpath's zig-zags. The corridor ends at the 762.9 m shoulder because the ridge above measures 45-52 degrees; treat everything above roughly 850 m as a boot-and-scramble finish. Note also that the summit used here (1007.0 m) is the south-east top, 0.46 km from the SSR point named Breitinden, which reads 983.2 m."
+  }
+ },
+ {
+  "slug": "folarskardnuten",
+  "verdict": "ok",
+  "corrections": [
+   "Svar på spørsmålet i briefen: normal vinterstart er korkje Prestholtseter/Geilo eller Finse. Prestholtseter ligg under Prestholtskarvet i austenden av Hallingskarvet, 13 km frå Folarskardnuten, og Prestholtvegen er ein sommarbomveg - om vinteren kjem ein berre dit på ski frå Havsdalen eller Ustaoset, så setervegen er ikkje brøytt. Finse har ikkje bilveg i det heile. Den dokumenterte vinterstarten er Haugastøl på Rv7, altså Ustaoset-sida, og derifrå følgjer ein den kvista DNT-vinterruta inn i Folarskardet.",
+   "Oppstigningslinja flytta. Straklinja Lordehytta - topp målte 40,3 grader som brattaste steg. Publisert rutebeskriving seier at ein forlèt merkinga ved det vesle vatnet på ca. 1600 m og følgjer varder oppover; den linja måler 36,7 grader som verste steg. Øvre vegpunkt er difor lagt til 60,60930/7,79480 (1829,9 m), rett over det bratte trinnet på den ramma.",
+   "Vegpunkt forkasta fordi det låg på vatn: tjørna i Folarskardet, 60,60320/7,79980, kjem tilbake frå dtm_point som z=1603,0 med terreng 'Innsjø'. Erstatta med Lordehytta (SSR seter/støl, 49 m unna, 1619,92 m på land).",
+   "Descent aspect målt, ikkje gjetta: fallvekta gjennomsnittleg fallretning på nedkøyringa er 167,2 grader, altså S. Å føre denne turen som V hadde vore feil - vestsida er Hellevassfonn og Finse-traversen, ikkje normalruta."
+  ],
+  "rejectReason": "",
+  "corridor": {
+   "routeId": "normalruta",
+   "routeName": "Frå Haugastøl gjennom Folarskardet",
+   "routeDescriptionFull": "Standard vinterrute på Buskeruds høgaste. Frå p-plassen ved Rv7 på Haugastøl følgjer ein den kvista DNT-vinterruta mot Raggsteindalen nordover over Slåttehall-flatene og Hellevatn-terrenget, i alt nær 11 km og rundt 600 høgdemeter, opp i Folarskardet ved Lordehytta (1620 moh). Der går ein av merkinga, forbi tjørna på 1603 m, og opp ramma i sørausthellinga - eit kort, bratt trinn - til skulderen på ca. 1830 m og vidare slakt nordvestover til toppvarden på 1927 moh. Retur same veg.",
+   "trailhead": {
+    "name": "Haugastøl p-plass ved Rv7",
+    "lat": 60.51412,
+    "lng": 7.85272,
+    "elevationM": 1007.14,
+    "osmEvidence": "OSM node/12040158547, amenity=parking, parking=surface, access=yes, fee=no, ca. 120 m frå Rv7 'Haugastølvegen' (OSM way/23307018, way/80843909, way/475847508: highway=trunk, surface=asphalt). Rv7 er open heile året fram til Haugastøl - det er her vinterstengingsbommen for Hardangervidda står, så staden er per definisjon brøytt. Fleire andre kartlagde p-plassar på Haugastøl: node/9801919150 (access=customers), way/504970211, node/12040146313."
+   },
+   "waypoints": [
+    {
+     "name": "Over stigninga frå Haugastøl, 1212",
+     "lat": 60.5515,
+     "lng": 7.8231,
+     "elevationM": 1211.86
+    },
+    {
+     "name": "Flatene under Folarskardet, 1326",
+     "lat": 60.5814,
+     "lng": 7.8039,
+     "elevationM": 1326.34
+    },
+    {
+     "name": "Lordehytta i Folarskardet, 1620",
+     "lat": 60.6056,
+     "lng": 7.802,
+     "elevationM": 1619.92
+    },
+    {
+     "name": "Over det bratte trinnet, 1830",
+     "lat": 60.6093,
+     "lng": 7.7948,
+     "elevationM": 1829.88
+    }
+   ],
+   "season": "mars–mai",
+   "roadClosedInWinter": false,
+   "aspect": "S",
+   "grade": 3,
+   "gradeReason": "Sjølve klatringa er ikkje teknisk, men turen er lang - nær 12 km og 920 høgdemeter kvar veg - og har eit kort, bratt trinn ut av Folarskardet som måler 36,7 grader over 41 m på den slakaste linja eg finn. Rutebeskrivinga tilrår stegjern og lett isøks når snøen er hard eller isete.",
+   "hazardNotes": "Trinnet opp frå Folarskardet er 35-40 grader og er det einaste verkelege skredterrenget på turen; det kan òg vera avblåst og isete, og då er det her ein treng stegjern. Toppplatået er ope og navigasjonskrevjande i dårleg sikt, og skavlane på nordsida av skarvet heng langt ut over Raggsteindalen. Den lange innmarsjen gjer vêrvindauget viktigare enn sjølve ruta.",
+   "teaserNo": "Nær 12 km inn frå Haugastøl og 920 høgdemeter, med eit kort 37-graders trinn opp frå Folarskardet.",
+   "teaserEn": "Nearly 12 km in from Haugastøl and 920 m of ascent, with one short 37-degree step up out of Folarskardet.",
+   "sources": [
+    "https://www.tinderangel.no/pa-topptur-til-folarskardnuten/",
+    "https://peakbook.org/no/peakbook-element/229/no/Folarskardnuten.html",
+    "https://turtid.no/turene/buskerud-folarskardnuten/",
+    "https://ut.no/turforslag/114555/topptur-pa-ski-til-hallingskarvet",
+    "https://geilolia.no/prestholtstien/",
+    "https://www.openstreetmap.org/node/12040158547",
+    "https://www.openstreetmap.org/way/400561355",
+    "https://www.openstreetmap.org/way/390078020"
+   ],
+   "confidence": "medium",
+   "notes": "Ruta er godt dokumentert som vintertur: tinderangel.no skriv at Folarskardnuten 'normalt sett' blir gått som fjellskitur nettopp på grunn av den lange innmarsjen, 'fra Haugastøl er det en lang og jevn stigning på 600 høydemeter til foten av Folarskardnuten inne i Folarskardet', løypa inn er 'nesten 12 km', Lordehytta frå 1880 står i skardet på 1620 moh, og oppe på ryggen er det 'noen korte bratte partier som må forseres'. Peakbook: 'ved det vesle vatnet på ca 1600 moh forlèt ein den merkte stien' og følgjer varder. Korridoren er lagd på den kvista DNT-vinterruta i OSM (way/390078020 frå Haugastøl og way/400561355 vidare til Folarskardet, operator=DNT Oslo og Omegn, piste:type=nordic) - dei to midtre vegpunkta er noder på desse. Målt vertikal p-plass til topp er 920,2 m (1007,14 til 1927,29), straklinjelengd 11,7 km. Alle fem koordinatane er lesne tilbake frå ws.geonorge.no/hoydedata/v1/punkt; alle kjem ut som 'ÅpentOmråde'. Confidence er medium og ikkje high fordi det bratte trinnet ut av skardet ligg nær grensa for kva som er skibart - 36,7 grader målt, og fleire nærliggjande linjer måler 40-46 grader - så ruteren må treffe rampa, og i hard eller isete snø tek folk skia av her."
+  }
+ },
+ {
+  "slug": "geitgaljen",
+  "verdict": "ok",
+  "corrections": [
+   "First guess put the 'store skålformasjon' south-west of the summit and the descent aspect at S. Pulling the OSM path geometry (way/315008826 and way/315012799, which ends exactly on the summit at 68.34435,14.81299) and sampling it against DTM1 showed the line traverses the north-west flank at 713 -> 789 -> 844 -> 928 m before turning up. Descent aspect corrected to NV; sørrenna is a separate south-facing descent that needs a second car.",
+   "The OSM path independently confirmed the written description rather than just agreeing with it. Northadviser describes 'a steep gully from about 250 m until about 360 m, then easier terrain up the valley to about 600 m'. The mapped path steepens to 34.8 degrees between 68.34852,14.77815 (290.5 m) and 68.34875,14.78005 (350 m) and reaches 621.2 m at 68.34849,14.79598, where it flattens.",
+   "Checked the trailhead is a road and not the floodlit ski trail the descriptions tell you to follow. The corridor starts on OSM way/1110248087 highway=residential name=Geitgallien at 68.34799,14.74685 (19.8 m), not on the lysløype, and not at the two path nodes at 68.34870,14.74422 / 68.34827,14.74433 which DTM1 puts at 3.4 and 4.0 m, effectively on the shoreline.",
+   "Measured the summit block before claiming the corridor reaches it. 68.34585,14.81187 (928.5 m) to the summit is 41.9 degrees over 174 m, and straight south off the summit the DTM falls 64.2 degrees. The last waypoint is therefore placed where it steepens, and the top is recorded as a crampons-and-axe finish."
+  ],
+  "rejectReason": "",
+  "corridor": {
+   "routeId": "normalruta",
+   "routeName": "Normalruta fra Liland gjennom Lilandsdalen",
+   "routeDescriptionFull": "Normalruta fra Liland/Skinvollen innerst i Austnesfjorden: følg lysløypa et stykke og videre inn i Lilandsdalen gjennom bjørkeskogen, opp den bratte renna fra ca. 250 til 360 moh og deretter i slakere terreng oppover dalen til ca. 620 moh. Der elveleiet bratter til, går en tydelig rampe opp mot høyre inn i den store skålformasjonen som utgjør toppen av sørrenna, og videre mot skaret og toppen. Øverste del er klyving med stegjern og isøks. Sørrenna brukes som nedkjøring og krever bil nummer to.",
+   "trailhead": {
+    "name": "Vegenden i Geitgallien ved Skinvollen, Liland",
+    "lat": 68.34799,
+    "lng": 14.74685,
+    "elevationM": 19.76,
+    "osmEvidence": "OSM way/1110248087 highway=residential name=Geitgallien at 68.34799,14.74685 - the village road named after the mountain (way/1110248086 is its other half). The trail into Lilandsdalen, OSM way/1228118312 highway=path, starts 130 m north at 68.34908,14.74620 and runs into way/315008826. E10 (highway=trunk, Lilandveien/Vestpollveien) is 300 m west. No amenity=parking is mapped within 4 km of the summit; the published descriptions say to park at the old shop on Liland / at Skinvollen along the Austnesfjord road, which is this road."
+   },
+   "waypoints": [
+    {
+     "name": "Nedenfor renna i Lilandsdalen, ~290 moh",
+     "lat": 68.34852,
+     "lng": 14.77815,
+     "elevationM": 290.45
+    },
+    {
+     "name": "Dalen på ~620 moh",
+     "lat": 68.34849,
+     "lng": 14.79598,
+     "elevationM": 621.17
+    },
+    {
+     "name": "Skålformasjonen over sørrenna, ~845 moh",
+     "lat": 68.34724,
+     "lng": 14.80615,
+     "elevationM": 843.7
+    },
+    {
+     "name": "Der det bratter til mot toppen, ~930 moh",
+     "lat": 68.34585,
+     "lng": 14.81187,
+     "elevationM": 928.48
+    }
+   ],
+   "season": "feb–apr",
+   "roadClosedInWinter": false,
+   "aspect": "NV",
+   "grade": 4,
+   "gradeReason": "1065 høydemeter fra fjorden på 3,5 km, renna på 250-360 moh måler 35 grader, og de siste 174 metrene opp til toppen ligger på 42 grader. Topptursentralen setter turen til KAST 4 – ekstremt, og sørrenna er 35-40 grader.",
+   "hazardNotes": "Hele ruta ligger i skredterreng: renna på 250-360 moh er 35 grader med dalbunnen som terrengfelle under, og skålformasjonen over sørrenna er et klassisk utløpsområde der stoppestedet må velges med omhu. Rett sør for toppen faller terrenget 64 grader, og de øverste 170 høydemeterne ligger på 42 grader — stegjern og isøks, ikke ski. Området går store skred flere ganger hver vinter.",
+   "teaserNo": "1065 høydemeter fra Liland opp Lilandsdalen; renna fra 250 til 360 moh er 35 grader, og toppen krever stegjern.",
+   "teaserEn": "1065 metres of ascent from Liland up Lilandsdalen; the gully from 250 to 360 m runs at 35 degrees and the summit needs crampons.",
+   "sources": [
+    "https://www.topptursentralen.no/ski/lofoten/geitgallien/",
+    "https://www.toppturnorge.no/turer/geitgaljen/",
+    "https://www.northadviser.com/no/fjellturer/geitgaljen/",
+    "https://peakbook.org/no/tour/64231/Geitgaljen.html"
+   ],
+   "confidence": "medium",
+   "notes": "Geitgallien (SSR spelling; Geitgaljen locally) is Lofoten's second highest peak, and Topptursentralen grades the ski line KAST 4 - ekstremt, 'only for experienced skiers, not recommended without a guide'. The corridor stops at 928.5 m: from there to the summit is 41.9 degrees over 174 m, the described skar usually means carrying the skis, and the final section wants crampons and an axe in hard conditions. The documented ski descent is sørrenna, a ~600 m south-facing gully at 35-40 degrees that comes out in another valley and needs a second car; the corridor describes the ascent up Lilandsdalen, which is also the descent for parties with one car, so the aspect is given as NV. Two vertical figures are published, 1070 m (Toppturnorge) and 1082 m (Topptursentralen); DTM1 gives 1085.2 - 19.8 = 1065.4 m from this trailhead."
+  }
+ },
+ {
+  "slug": "glittertinden",
+  "verdict": "ok",
+  "corrections": [
+   "Første utkast la ruta vestover langs botnen av Steinbudalen, over Nedre og Øvre Steinbuvatnet (begge 1496–1500 moh). DTM-sjekk viste at utgangen av dalen mot Glitterbrean har steg på 37–41°, mot 23–32° på nordflanken. Ruta er flytta opp på nordsida, som er der den merka stien faktisk går.",
+   "Nordflanken er ikkje gjetta: OSM way 367493605 er den merka stien Glitterheim–Glittertinden, og nodene (61.63113/8.61792, 61.64504/8.60061, 61.65058/8.58666, 61.65061/8.56709) ligg akkurat der ut.no skriv at skiruta går «aust for Glitterbrean». Waypointa er henta frå den linja og lest på nytt mot DTM1.",
+   "Waypointet midt i Veodalen låg først på 61.65400/8.68000, som DTM1 klassifiserer som «Elv» — altså i sjølve elvelaupet. Flytta 40 m nord til 61.65480/8.67950 (1336,93 moh, ÅpentOmråde).",
+   "Vegen: eg antok først at bomvegen i Veodalen kunne brøytast som Fv51 til Bygdin. Det er feil. DNT/Glitterheim opplyser at det ikkje finst brøytt veg til Glitterheim om vinteren, og at bomvegen frå Randsverk opnar saman med hytta i midten av juni. roadClosedInWinter er sett til true og sesongen flytta til juni–juli, som er det einaste vindauget der bilen faktisk kjem fram til startpunktet og det framleis er ski på Glitterbrean.",
+   "Aspektet er kontrollert med radialprofilar frå toppen: 105–150° (SØ) held 17–24°, medan N, NØ, V og NV måler 52–70°. Nedkjøringa er SØ, ikkje nord slik ein 'Glitterbrean-tur' lett kan bli feilskriven."
+  ],
+  "rejectReason": "",
+  "corridor": {
+   "routeId": "normalruta",
+   "routeName": "Normalruta fra Glitterheim over Glitterbrean",
+   "routeDescriptionFull": "Fra den store grusparkeringa ved nasjonalparkgrensa i Veodalen (1297 moh) følger du den bilfrie vegen/skiløypa 7 km sørvestover langs Veo inn til Glitterheim (1385 moh). Bak hytta legger ruta seg nordvestover opp nordsida av Steinbudalen, forbi 1668 moh og videre i jevn stigning til rundt 2010 moh. Derfra går den inn på ryggen øst for Glitterbrean, opp forbi 2222 moh og 2357 moh på øvre del av breen, og sist vestover opp den siste kneika til toppen på 2451 moh. Samme vei ned. Ut.no beskriver skiruta som jevn stigning hele veien med terreng under 30 grader, med valget mellom sommerstien øst for Glitterbrean og selve breen.",
+   "trailhead": {
+    "name": "Veodalen p-plass ved nasjonalparkgrensa",
+    "lat": 61.67152,
+    "lng": 8.71796,
+    "elevationM": 1297.27,
+    "osmEvidence": "OSM way 129791832, amenity=parking, surface=ground, access=yes, senter 61.67152/8.71796 — den store grusplassen rett før bommen inn i Jotunheimen nasjonalpark. Vegen inn er OSM ways 129777114 / 367306334 / 367306324, highway=unclassified, name=Veodalsvegen, surface=gravel, 23–24 km bomveg fra Randsverk. Ingen offentlig bilveg fortsetter inn i nasjonalparken; siste 7 km til Glitterheim er sti/skiløype."
+   },
+   "waypoints": [
+    {
+     "name": "Midt i Veodalen, nord for elva",
+     "lat": 61.6548,
+     "lng": 8.6795,
+     "elevationM": 1336.93
+    },
+    {
+     "name": "Glitterheim",
+     "lat": 61.62265,
+     "lng": 8.63237,
+     "elevationM": 1385.11
+    },
+    {
+     "name": "Flanken over Steinbudalen, ca 2010 moh",
+     "lat": 61.64504,
+     "lng": 8.60061,
+     "elevationM": 2009.89
+    },
+    {
+     "name": "Øst for Glitterbrean, ca 2220 moh",
+     "lat": 61.65058,
+     "lng": 8.58666,
+     "elevationM": 2221.76
+    },
+    {
+     "name": "Øvre Glitterbrean, ca 2355 moh",
+     "lat": 61.65061,
+     "lng": 8.56709,
+     "elevationM": 2357.46
+    }
+   ],
+   "season": "juni–juli",
+   "roadClosedInWinter": true,
+   "aspect": "SØ",
+   "grade": 3,
+   "gradeReason": "12,6 km og 1154 høydemeter én vei, hvorav 7 km bare er innmarsj i Veodalen. Selve stigningen er slak — bratteste målte steg på korridoren er 34° på flanken over Steinbudalen og 41° på den siste kneika under toppen, resten ligger på 22–25°. Det som løfter turen til krevende er lengden, høyden (2451 moh) og at øvre del ligger på Glitterbrean.",
+   "hazardNotes": "Glitterbrean er en bre: sprekker og snøbroer er reelle, og turen bør gås med bresikring når snødekket er tynt. Toppen har bare tre slake sider — nord, nordøst, vest og nordvest faller 52–70° ned mot Grjotbrean og Glitterholet, og i dårlig sikt er det lett å dra for langt nord på det brede topplatået. Det er ingen brøytet veg inn: kommer du i mars–mai må du enten gå de 24 km fra Randsverk på ski eller forhåndsbestille beltebil hos Glitterheim.",
+   "teaserNo": "12,6 km og 1154 høydemeter fra Veodalen: 7 km flat innmarsj til Glitterheim, så jevn stigning øst for Glitterbrean.",
+   "teaserEn": "12.6 km and 1154 m of climbing from Veodalen: 7 km of flat approach to Glitterheim, then a steady rise east of Glitterbrean.",
+   "sources": [
+    "https://ut.no/turforslag/115512/topptur-pa-ski-til-glittertinden-2457-moh",
+    "https://ut.no/turforslag/116787/topptur-til-glittertinden-fra-glitterheim",
+    "https://www.tinderangel.no/hytter/glitterheim/",
+    "https://www.randsverk.no/no/opplevelser/glittertind",
+    "https://peakbook.org/no/peakbook-element/52221/no/Veodalen+nasjonalparkgrense+parkering.html",
+    "https://glitterheim.dnt.no/adkomst/"
+   ],
+   "confidence": "medium",
+   "notes": "Den dokumenterte skiruta går fra Glitterheim, og Glitterheim har ingen bilveg. Bommen i Veodalen er 7 km og 88 høydemeter unna hytta, og bomvegen fra Randsverk er ikke brøytet — den åpner sammen med hytta i midten av juni (19. juni i 2026). Derfor er sesongen satt til juni–juli, som er når startpunktet faktisk kan nås med bil og Glitterbrean fortsatt bærer ski. Den klassiske vårturen i mars–mai gjøres fra Glitterheim etter beltebil eller skiinngang fra Randsverk (ca 27 km), og da er de første 7 km av denne korridoren en del av en mye lengre innmarsj. Selve linja er den samme uansett. Korridoren er lagt etter OSM way 367493605, den merkede stien Glitterheim–Glittertinden, som ligger øst for Glitterbrean akkurat slik ut.no beskriver skiruta. Alternativ dokumentert rute fra Spiterstulen over Skautkampan og Skauta (19 km) er ikke lagt inn her."
+  }
+ },
+ {
+  "slug": "hamperokken",
+  "verdict": "ok",
+  "corrections": [
+   "Første utkast la siste veipunkt på forvarden 1190 moh (69.56466, 19.34805, DTM1 1190.02), altså inne på nordvestryggen. Egen kontroll mot turrapportene viste at skiene byttes mot stegjern allerede rundt 1076-1100 moh; korridoren ble derfor avsluttet på Middagsaksla og ryggen tatt ut av veipunktlista, slik at ingen del av korridoren later som om ryggen er skispor.",
+   "Middagsaksla ble først satt til SSR sitt representasjonspunkt 69.57398, 19.33455, som DTM1 måler til 1007 m - en skulder, ikke toppen. Rastersøk fant selve varden 120 m sørøst på 69.57296, 19.33775 (DTM1 1076.07), som stemmer med de publiserte 1075 moh.",
+   "Startpunktet ble kontrollert mot Overpass med full geometri: parkeringa er OSM node 9804678569 og ligger 58 m fra Breivikeidvegen (way 417525810, ref 91), ikke 1,9 km som det første sentroide-svaret fra find_trailheads antydet - det avviket kom av at Overpass returnerer ett senterpunkt per veg, ikke per node.",
+   "Teleskiers sin nordvariant fra Stormo (opp dalen mellom Gabrielfjellet og Middagsaksla) ble vurdert og forkastet som normalrute: den er beskrevet som en enkelttur, går opp ei ca. 40 graders renne til skavlet rygg, og er ikke den linja turrapportene ellers beskriver."
+  ],
+  "rejectReason": "",
+  "corridor": {
+   "routeId": "normalruta",
+   "routeName": "Normalruta fra Fv91 over Vartavarhaugen til Middagsaksla",
+   "routeDescriptionFull": "Fra parkeringa ved Fv91 (Breivikeidvegen) nedenfor Vartavarhaugen, ca. 4,5 km fra E8 på Fagernes, går ruta østover over Vartavarhaugen og krysser Tverrelva. Derfra følger skisporet den brede nordvestryggen sammenhengende oppover: DTM1 gir jevne 16-26 grader fra ca. 350 moh til Middagsaksla, uten bratte trinn. På Middagsaksla (DTM1 1076 moh) stopper skituren. Videre til Hamperokken er det ca. 1,4 km eksponert nordvestrygg som gås til fots med stegjern og isøks; ryggen bølger 25-90 høydemeter opp og ned, har luftige partier og korte klyvepartier, og de siste par hundre metrene er ei renne og en bratt topppyramide. Mange setter fra seg skiene på Middagsaksla, andre bærer dem til forvarden på ca. 1190 moh og lar dem ligge der. Nedkjøringen følger oppstigningsryggen tilbake mot Vartavarhaugen; fallretningen der er målt til NV (293 grader) med 16-26 grader.",
+   "trailhead": {
+    "name": "Parkeringa ved Vartavarhaugen (Fv91, skiltet Ti på Topp)",
+    "lat": 69.58534,
+    "lng": 19.26861,
+    "elevationM": 65.09,
+    "osmEvidence": "OSM node 9804678569, amenity=parking, parking=surface. Nærmeste node på way 417525810 «Breivikeidvegen» (highway=primary, ref=91, surface=asphalt) ligger 58 m unna. Fv91 Fagernes-Breivikeidet er gjennomfartsveg til Svensby-ferja og brøytes hele året. Parkeringa har ingen name-tag i OSM; turrapportene omtaler den som skiltet «Ti på Topp», ca. 4,5 km fra E8 på Fagernes. To skogsbilveger (way 628934035/628934036) starter 17-65 m fra parkeringa og går opp mot Vartavarhaugen."
+   },
+   "waypoints": [
+    {
+     "name": "Vartavarhaugen",
+     "lat": 69.58614,
+     "lng": 19.28303,
+     "elevationM": 158.76
+    },
+    {
+     "name": "Nordvestryggen, ~610 moh",
+     "lat": 69.57809,
+     "lng": 19.31586,
+     "elevationM": 609.27
+    },
+    {
+     "name": "Middagsaksla - her tas skiene av",
+     "lat": 69.57296,
+     "lng": 19.33775,
+     "elevationM": 1076.07
+    }
+   ],
+   "season": "feb–mai",
+   "roadClosedInWinter": false,
+   "aspect": "NV",
+   "grade": 4,
+   "gradeReason": "Selve skiterrenget er snilt - DTM1 måler 16-26 grader hele veien opp nordvestryggen til Middagsaksla. Graderingen styres av det som kommer etterpå: 1,4 km eksponert rygg til fots med stegjern og isøks, luftige partier, korte klyvepartier og ei renne rett under toppen. Det gjør Hamperokken til en ekspertturs avslutning på en middels skitur.",
+   "hazardNotes": "Skituren opp ryggen er lite skredutsatt, men flankene på begge sider av nordvestryggen er bratte og terrengfeller: hold deg på ryggen i dårlig sikt. Toppryggen er den reelle faren - luftig, delvis skavlet mot nordøst, og med isete klyvepartier som krever stegjern, isøks og tau-vurdering. Snu på Middagsaksla hvis ryggen er isete eller sikten er dårlig; det er der skituren uansett slutter.",
+   "teaserNo": "1332 høydemeter fra Fv91, men skiene settes igjen på Middagsaksla 1076 moh – siste 1,4 km er eksponert rygg til fots.",
+   "teaserEn": "1332 m of ascent from Fv91, but the skis stay on Middagsaksla at 1076 m – the last 1.4 km is an exposed ridge on foot.",
+   "sources": [
+    "https://www.summitpost.org/hamperokken/152499",
+    "https://peakbook.org/no/tour/247967/Vinterbestigning+av+klassikeren+Hamperokken.html",
+    "https://peakbook.org/no/tour/279630/Hamperokken.html",
+    "https://www.tinderogtopper.no/post/hamperokken-1404-moh",
+    "https://teleskiers.blogspot.com/2019/05/hamperokken-fra-nord.html",
+    "https://en.wikipedia.org/wiki/Hamperokken"
+   ],
+   "confidence": "medium",
+   "notes": "Korridoren stopper med vilje på Middagsaksla, 1076 moh. Turrapportene fra vinterbestigninger er samstemte: «Over ca. 1100 moh måtte skiene byttes mot stegjern og isøks», og «hele ryggen fra Middagsaksla og opp til toppen av Hamperokken ble gått til fots». Skiene settes igjen enten på Middagsaksla eller på forvarden 1190 moh (69.56466, 19.34805, DTM1 1190.02) før renna og klyvepartiet. De siste 1,4 km er derfor ikke skispor, og korridoren skal ikke leses som at de er det. Linja som genereres fra Middagsaksla til toppen vil måtte følge ryggen - DTM1 gir 1076-1157-1093-1190-1219-1208-1256-1331-1393 langs ryggkammen, altså både motbakke og motfall og et siste trinn som lokalt måler over 45 grader. Det er reell terreng, ikke en feil i korridoren, men det er verdt å vite hvis rutegenereringen klager. Ingen enkeltstående publisert skiruteskildring for Hamperokken ble funnet; korridoren er bygd på tre uavhengige turrapporter som beskriver samme startsted, samme rygg og samme sted for skiavtak. Confidence er derfor medium, ikke high."
+  }
+ },
+ {
+  "slug": "hornindalsrokken",
+  "verdict": "ok",
+  "corrections": [
+   "Corridor ends 103 m below the summit. The last waypoint is the east rib at 1423,8 m, not the top. Both the summer description (ut.no: the final section 'is airy', exposure and scrambling, ice axe needed when there is much or hard snow) and the DTM agree that the summit block is not skinnable ground: 52 m west of the summit the terrain reads 1247 m against 1443 m on the crest (about 75 deg), and 52 m east 1427 m against 1513 m (about 55 deg). Skis normally come off on the rib. grade set to 4 and confidence to medium for that reason.",
+   "Trailhead moved 1,1 km west of the mapped car park. The first draft used OSM node/10219443853, amenity=parking, name=Hyttehola (62.03157,6.76660, 357,7 m) at the entrance to the Langøylia cabin field. That start is 7,21 km from the summit in a straight line - longer than Fri Flyt's stated 7 km for the whole walk - and it puts the line across the Kjellstaddalen valley floor. The west end of the cabin-field road, OSM way/948937340 (unclassified, name=Langøylia) at 62.03410,6.74613, reads 387,7 m, which matches the 377 m that Fri Flyt's 1150 hm implies, and gives a 6,42 km corridor that stays on the ascent side of the river throughout.",
+   "The 'Aksla (912 moh.)' of the guidebook is not the SSR point. Kartverket registers Aksla as a Rygg at 62.04241,6.75170, which dtm_point reads at 463,1 m down in the valley. The 912 m spot height is on the same ridge 2,3 km WNW; the waypoint was moved to 62.04450,6.71900, read back at 921,3 m.",
+   "Checked the descent aspect rather than inheriting it from the ascent. Fri Flyt's recommended descent is Kjellstaddalen, 'nesten 1000 høgdemeter køyring i hellingsvinklar på 25-35 grader heile vegen ned til Kjellstadsætra'. Kjellstadsætra reads 507,4 m at 62.05942,6.70966, east-southeast of the summit, and the flank the route traverses on the way up is the same east side. Aspect recorded as Ø. Recording this tour as W or N would have pointed skiers at the 75 deg wall."
+  ],
+  "rejectReason": "",
+  "corridor": {
+   "routeId": "normalruta",
+   "routeName": "Normalruta frå Langøylia over Trollaksla og Sætrenibba",
+   "routeDescriptionFull": "Frå vestenden av hyttevegen i Langøylia går ein opp lia gjennom open lauvskog, aust for Gjøelva, til ein når Aksla på om lag 920 moh. Vidare følgjer ein ryggen nordvestover til Trollaksla (1255 moh.) og deretter sørryggen litt opp og ned nordover til Sætrenibba (1370 moh.) og skaret nord for denne, som ligg på 1226 moh. Frå skaret rundar ein austover inn i sida som fell mot Kjellstaddalen og traverserer denne opp på ryggen aust for toppen. Der, kring 1420 moh., tek dei fleste av seg skia: dei siste 103 høgdemetrane er ein smal og eksponert rygg. Vanlegaste nedkøyring er ned Kjellstaddalen, nesten 1000 høgdemeter i 25-35 grader ned til Kjellstadsætra, og deretter eit par flate kilometer ut dalen og vestover attende til bilen.",
+   "trailhead": {
+    "name": "Langøylia hyttefelt, vestre vegende",
+    "lat": 62.0341,
+    "lng": 6.74613,
+    "elevationM": 387.7,
+    "osmEvidence": "OSM way/948937340, highway=unclassified, name=Langøylia - vestre enden av vegnettet i hyttefeltet, som held fram i way/948937338 og way/948937325 (service, same namn). Heile feltet greinar av frå Rv60 'Langedalsvegen', OSM way/948937385, highway=primary, ref=60, surface=asphalt: hovudvegen Hellesylt-Hornindal, heilårsveg. Fri Flyt seier berre 'parker på eigna plass' i hyttefeltet. OSM har i tillegg ein kartfesta p-plass, node/10219443853, amenity=parking, name=Hyttehola, ved innkøyringa til feltet 1,1 km aust (62.03157,6.76660, 357,7 m) - eit alternativ dersom vestre vegende ikkje er brøytt."
+   },
+   "waypoints": [
+    {
+     "name": "Aksla, 921",
+     "lat": 62.0445,
+     "lng": 6.719,
+     "elevationM": 921.26
+    },
+    {
+     "name": "Trollaksla",
+     "lat": 62.0497,
+     "lng": 6.6938,
+     "elevationM": 1255.41
+    },
+    {
+     "name": "Sætrenibba",
+     "lat": 62.06347,
+     "lng": 6.67999,
+     "elevationM": 1369.56
+    },
+    {
+     "name": "Austryggen 1424 – der skia blir sette igjen",
+     "lat": 62.0703,
+     "lng": 6.6598,
+     "elevationM": 1423.8
+    }
+   ],
+   "season": "mars–mai",
+   "roadClosedInWinter": false,
+   "aspect": "Ø",
+   "grade": 4,
+   "gradeReason": "Lang tur i alpint terreng: 1139 høgdemeter og 6,4 km korridor, med ein sørrygg som går opp og ned og ein travers over austsida ovanfor Kjellstaddalen før ein kjem opp på toppryggen. Sjølve skiruta held seg under 37 grader målt over 25-metersvindauge, men dei siste 103 høgdemetrane er smal, eksponert rygg med 55 grader ned austsida og om lag 75 grader ned vestsida, og blir normalt gått med skia på sekken og isøks når snøen er hard.",
+   "hazardNotes": "Skredterreng i botnen av Kjellstaddalen og i heile austsida opp mot toppryggen - det er både traversen på veg opp og nedkøyringa. Toppryggen er smal og skavlete; DTM1 gjev om lag 55 grader rett aust og 75 grader rett vest for ryggen dei siste hundre høgdemetrane, så eit feiltrinn her er ikkje til å rette opp. Isøks er vanleg når snøen er hard, og heile turen er lang nok til at vending må avgjerast tidleg.",
+   "teaserNo": "1139 høgdemeter frå Langøylia over Aksla, Trollaksla og Sætrenibba; dei siste 103 går på utsett rygg.",
+   "teaserEn": "1139 m from Langøylia over Aksla, Trollaksla and Sætrenibba; the last 103 are on an exposed ridge.",
+   "sources": [
+    "https://www.friflyt.no/topptur/skiturer-sunnmoere/turbeskrivelse-hornindalsrokken",
+    "https://www.friflyt.no/randone/skiturer-i-austefjordomraadet-hornindalsfjella",
+    "https://ut.no/turforslag/115755",
+    "https://visitstranda.com/en/opplevelser/toppturer/hornindalsrokken/",
+    "https://www.openstreetmap.org/way/948937340",
+    "https://www.openstreetmap.org/way/948937385",
+    "https://www.openstreetmap.org/node/10219443853"
+   ],
+   "confidence": "medium",
+   "notes": "Fri Flyt rute 3.5.1 'Opp frå Langøylia' (KAST 3 Komplekst): 1150 høgdemeter, 7 km, 5 timar, tilkomst 'Langøylia. Følg hovudvegen mellom Hellesylt og Hornindal. Ta av opp mot hyttefeltet Langøylia om lag 10 kilometer vest for Hellesylt (mellom Tronstad og Røyrhus) og parker på eigna plass.' Rutelinja i teksten er 'Ta opp lia aust (til høgre) for Gjøelva ... til du når Aksla (912 moh.). Følg ryggen til Trollaksla (1250 moh.) og sørryggen vidare litt opp og ned til Sætrenibba (1374 moh.) og skaret nord for denne. Frå skaret rundar ein austover (høgre) inn i sida som leier ned mot Kjellstaddalen. Traverser denne sida til du kjem opp på ryggen nord for toppen, og følg denne til topps.' Alle fire punkta er stadfesta mot DTM1: Trollaksla 1255,4 (Fri Flyt 1250), Sætrenibba 1369,6 (Fri Flyt 1374), skaret nord for Sætrenibba 1226 ved 62.0675,6.6681, Aksla 921,3. Målt vertikal frå start til topp er 1139,4 m mot dei publiserte 1150. Kryssjekk av ryggen nord for toppen viser fire 25-metersvindauge over 42 grader mellom 1300 og 1380 moh, medan aust-ribba som korridoren følgjer held seg under 37 grader heile vegen frå skaret - det er difor korridoren går den vegen. Merk at 'Gjøelva' ikkje finst i SSR og at eg ikkje har kunna stadfeste kva side av bekken stien går på; korridoren er lagd etter terrenget og etter dei namngjevne toppunkta, ikkje etter bekken. Alle koordinatar er lesne tilbake frå ws.geonorge.no/hoydedata/v1/punkt."
+  }
+ },
+ {
+  "slug": "jakta",
+  "verdict": "ok",
+  "corrections": [
+   "Cornice sides swapped relative to the guidebook. Fri Flyt writes 'fare for skavlar både til høgre ned mot Konedalen og til venstre ned den stupbratte nordveggen mot Hjørundfjorden'. Read against DTM1 that is the wrong way round for anyone ascending: the summit ridge runs NE-SW, Konedalen lies to the SØ of it and the fjord face to the NV. Cross-section at 62.1715 N gives 6.6170=1556 m and 6.6160=1265 m, i.e. about 290 m of drop in 52 m of ground (roughly 80 deg) on the NV side, while the SE flank down to Konedalen measures 33-36 deg. hazardNotes is therefore written by compass, not by left/right.",
+   "Dropped two waypoints from the first draft. It had four (lower Konedalen ~470 m, upper Konedalen, ridge 1240, ridge 1435). The 470 m point sits on the lip of the gorge step out of Konedalen - 30 m sampling around it gives 54 deg - and the trailhead-to-upper-Konedalen straight line already passes within 50 m of the valley thalweg at 62.180 N, so it pinned nothing. The 1435 m point is a real crest knoll but sits directly above the 84 deg NV wall; the crest between waypoint 1240 and the summit is already forced, since the NV side is impassable and the SE flank is a penalised 35 deg side-slope. Two waypoints left.",
+   "Turn-off point moved 500 m down-valley. The first draft put the climb out of Konedalen at the valley head basin around 62.169 N, 6.638 E, reading Fri Flyt's '1,5 kilometer innover' literally. Sampling that line gives a 40-44 deg step between 1030 and 1205 m. The flank at 62.174-62.176 N instead measures a sustained 33-36 deg from the valley floor to the crest at 1240 m, which is what Fri Flyt's own '35 grader' for the descent describes. Waypoint moved there.",
+   "Trailhead is the road end, not the mapped car park 800 m east. OSM has amenity=parking 'Slogen' at 62.18748,6.67421 (40,8 m) on Fv655, which corridors.json already uses for Slogen's direkterute. Fri Flyt sends Jakta-parties past the last Norang farm instead, and OSM way 618221843 (service, name=Lisjeholen) ends at 62.18571,6.66455 exactly there, at the foot of the path into Konedalen. Implied start from Fri Flyt's 1550 hm is 39 m; the road end reads 60,8 m."
+  ],
+  "rejectReason": "",
+  "corridor": {
+   "routeId": "normalruta",
+   "routeName": "Normalruta frå Norang gjennom Konedalen",
+   "routeDescriptionFull": "Frå vegenden ved Lisjeholen sør for Norang-gardane går ein den bratte stien opp til Konedalen med skia på sekken, først på venstre side av elva og så over på høgre. Oppe i dalen tek ein på seg skia og følgjer det slake dalføret sørvestover til om lag 740 moh. Der svingar ein til høgre og sikk-sakkar opp den 33-36 grader bratte sida i nordvest til ein når toppryggen ved 1240 moh. Ryggen blir følgd sørvestover heilt til topps; ein held seg midt på han, med skavlar mot Konedalen i søraust og den stupbratte nordvestveggen mot Hjørundfjorden på hi sida. Vanlegaste nedkøyring er same veg tilbake: 35 grader frå ryggen ned mot Konedalen, slakare vidare ut dalen.",
+   "trailhead": {
+    "name": "Norang, vegenden ved Lisjeholen",
+    "lat": 62.18571,
+    "lng": 6.66455,
+    "elevationM": 60.82,
+    "osmEvidence": "Sørenden av OSM way/618221843, highway=service, name=Lisjeholen - den siste vegstubben forbi Norang-gardane. Vegen heng saman med way/618221896, way/618221865 og way/618221918 (same namn) og vidare med dei uklassifiserte gardsvegane way/118687243, way/618221849 og way/618221877, alle name=Norang, som tek av frå Fv655 'Norangdal' (way/618221907 og way/618221820, highway=primary, ref=655, surface=asphalt) ved Øye. Fv655 nordover mot Urke og Leknes er heilårsveg; gardane på Norang er i drift, så gardsvegen blir brøytt. Terrengklassen frå hoydedata er 'DyrketMark' - dette er innmark ved vegenden, ikkje ein opparbeidd p-plass, og det er slik Fri Flyt skildrar det ('parker like sør (til venstre) for elva'). Næraste kartfesta p-plass er amenity=parking 'Slogen' 815 m aust (62.18748,6.67421, 40,8 m)."
+   },
+   "waypoints": [
+    {
+     "name": "Øvre Konedalen, 742",
+     "lat": 62.1745,
+     "lng": 6.646,
+     "elevationM": 742.44
+    },
+    {
+     "name": "Toppryggen 1242",
+     "lat": 62.175,
+     "lng": 6.6312,
+     "elevationM": 1241.55
+    }
+   ],
+   "season": "feb–mai",
+   "roadClosedInWinter": false,
+   "aspect": "SØ",
+   "grade": 3,
+   "gradeReason": "1528 høgdemeter frå fjordnivå på under 3 km i luftlinje. Sida frå Konedalen opp til toppryggen måler 33 grader frå waypoint til waypoint og 36 grader over den brattaste 500-metersstrekninga i DTM1, og toppryggen er smal: kryssprofil ved 62.1715 N viser 1556 m på ryggen og 1265 m 52 m nordvest for han. Ingen klatring, men eksponert og skredutsett heile vegen frå 740 moh og opp.",
+   "hazardNotes": "Det kan gå skred frå Jakta heile vegen inn Konedalen; hald deg til venstre (søraustre) side på veg inn dalen. Den 33-36 grader bratte sida opp til toppryggen er den store skredfella på turen. På sjølve toppryggen er det skavlar til begge sider - mot Konedalen i søraust, og mot den stupbratte nordvestveggen ned mot Hjørundfjorden, der DTM1 måler om lag 80 grader rett under toppen.",
+   "teaserNo": "1528 høgdemeter frå Norang: slak stigning inn Konedalen, så ei 33-graders side opp på den smale toppryggen.",
+   "teaserEn": "1528 m of ascent from Norang: a steady climb into Konedalen, then a 33° flank onto the narrow summit ridge.",
+   "sources": [
+    "https://www.friflyt.no/topptur/skiturer-sunnmoere/turbeskrivelse-jakta",
+    "https://www.friflyt.no/topptur/skiturer-sunnmoere/skiturer-i-hjoerundfjordomraadet-raanahalvoeya",
+    "https://ut.no/turforslag/1111890/jakta-1588-moh",
+    "https://www.openstreetmap.org/way/618221843",
+    "https://www.openstreetmap.org/way/118687243",
+    "https://www.openstreetmap.org/way/618221907"
+   ],
+   "confidence": "high",
+   "notes": "Fri Flyt har ei eiga turbeskriving for Jakta på ski (rute 2.12.1 'Opp frå Norang', KAST 3 Komplekst): 1550 høgdemeter, 4 km, 5 timar opp og ned, startstad Øye, tilkomst 'Norang. Følg hovudvegen til Øye og ta av ved Hotel Union mot gardane på Norang. Køyr forbi siste garden og parker like sør (til venstre) for elva.' Målt vertikal frå vegenden til toppen er 1527,9 m (60,82 til 1588,76), som stemmer med dei publiserte 1550 når ein reknar med kupering. Straklinja frå start til topp er 2967 m med retning 237 grader (VSV), og korridoren følgjer Konedalen som SSR har som Dal på 62.17657,6.64613 - altså rett drenering. Toppen er skikøyrt heile vegen; den brattaste 25-metersvindauga langs sjølve ryggen frå 1240 moh måler 44 grader i eit kort steg ved 1400-1430 moh, resten ligg under 40. Fv655 vidare sørover gjennom Norangsdalen mot Hellesylt er vinterstengd, men Øye/Norang er tilgjengeleg heile året nordfrå via Urke og Leknes/ferja frå Sæbø - difor roadClosedInWinter=false. Alle koordinatar er lesne tilbake frå ws.geonorge.no/hoydedata/v1/punkt."
+  }
+ },
+ {
+  "slug": "keipen",
+  "verdict": "ok",
+  "corrections": [
+   "The disputed summit was resolved AGAINST an override - summits.json is right. SSR has two Keipen in Senja kommune, 69.49528,17.72256 and 69.32562,17.14972. DTM1 reads 938.4 m at the first and only 660.9 m at the second, and no peak on Senja reaches 1042 m: the island's high point, Breitinden, is 1007.0 m in DTM1. The 1042 m figure matches no Senja Keipen at all.",
+   "Positively identified the ski-touring Keipen instead of merely eliminating the other one. Friflyt gives 838 m of ascent from 'Mefjordbotnvatnet, parkering langs Fv.862'; the OSM parking at 69.47591,17.73900 reads 101.7 m in DTM1, so 938.4 - 101.7 = 836.7 m, within 1.3 m of the published figure. ut.no and nordnorge.com both pair Keipen with Grytetippen, which SSR puts 1.05 km west at 69.49453,17.69667 (846.1 m). Same mountain.",
+   "First attempt at the upper corridor put a waypoint on the ridge at 69.49360,17.71850 (816.5 m); the step from the bowl to it measured 37.2 degrees. Re-sampling showed the direct southern line at longitude 17.723 runs 32-33 degrees the whole way (593.8 -> 812.9 -> 938.4), which fits Friflyt's 'terrenget tillater helninger under 30 grader, men har også brattere partier' far better. Waypoint moved east.",
+   "Checked which side the cornices sit on before writing it down. Due north of the summit the DTM falls 60.0 then 52.5 degrees in 78-111 m steps, while the south side into the bowl is 32 degrees. The 'skavler' Friflyt lists are on the north edge, so the hazard note sends you south along the ridge, not north."
+  ],
+  "rejectReason": "",
+  "corridor": {
+   "routeId": "normalruta",
+   "routeName": "Normalruta fra Medfjordbotnvatnan",
+   "routeDescriptionFull": "Normalruta fra grusparkeringa ved Medfjordbotnvatnan langs Fv862: følg Keipelva nordover i jevnt stigende terreng til ca. 200-225 moh, drei så mot vestnordvest og følg fjellsida oppover inn i den store skåla sør for toppen. Fra skåla på ca. 595 moh går sporet rett nord opp henget til toppryggen ved ca. 800 moh, og videre langs ryggen til toppen. Nedkjøringen følger oppstigningen, med en litt brattere variant ned en liten dalformasjon fra ryggen.",
+   "trailhead": {
+    "name": "Parkeringa ved Medfjordbotnvatnan (Fv862)",
+    "lat": 69.47591,
+    "lng": 17.739,
+    "elevationM": 101.7,
+    "osmEvidence": "OSM node/7143704596 amenity=parking, parking=surface, surface=gravel at 69.47591,17.73900, on Fv862 (ref=862; way/80346363 Mefjordveien and way/621309553 Stønesbotnveien, highway=primary, asphalt, maxspeed 80). The signposted summer trail way/445106364 highway=path name=Grytetippen (sac_scale=mountain_hiking, trailblazed=yes) leaves from the same stretch."
+   },
+   "waypoints": [
+    {
+     "name": "Keipelva, ~225 moh",
+     "lat": 69.4795,
+     "lng": 17.7382,
+     "elevationM": 224.73
+    },
+    {
+     "name": "Fjellsida vest for Keipelva, ~385 moh",
+     "lat": 69.482,
+     "lng": 17.733,
+     "elevationM": 384.01
+    },
+    {
+     "name": "Skåla sør for Keipen, ~595 moh",
+     "lat": 69.4905,
+     "lng": 17.723,
+     "elevationM": 593.77
+    },
+    {
+     "name": "Bratthenget opp mot toppryggen, ~815 moh",
+     "lat": 69.4935,
+     "lng": 17.723,
+     "elevationM": 812.86
+    }
+   ],
+   "season": "jan–mai",
+   "roadClosedInWinter": false,
+   "aspect": "S",
+   "grade": 3,
+   "gradeReason": "837 høydemeter, og de siste 350 høydemeterne fra skåla til toppen ligger jevnt på 32-33 grader målt i DTM1. Friflyt setter turen til KAST 2 – utfordrende, med løsne- og utløpsområder og skavler på toppryggen.",
+   "hazardNotes": "Skåla sør for toppen er både løsne- og utløpsområde, og henget opp mot toppryggen ligger jevnt på 32-33 grader. Nordsida av toppen faller 60 grader rett under egget, så skavlene henger nordover — hold deg på sørsida av ryggen. De øverste hundre høydemeterne er ofte vindherjet og harde.",
+   "teaserNo": "837 høydemeter fra Medfjordbotnvatnan gjennom skåla sør for toppen, jevnt 33 grader opp mot toppryggen.",
+   "teaserEn": "837 metres of ascent from Medfjordbotnvatnan through the bowl south of Keipen, a steady 33 degrees up to the summit ridge.",
+   "sources": [
+    "https://www.friflyt.no/topptur/tromso/turbeskrivelse-keipen",
+    "https://ut.no/turforslag/112352770/topptur-til-grytetippen-og-keipen-ca-1000-moh-i-fjordgard-pa-senja",
+    "https://nordnorge.com/en/artikkel/ski-touring-on-senja/",
+    "https://www.visitsenja.no/en/skitouring-in-senjaregionen"
+   ],
+   "confidence": "high",
+   "notes": "SUMMIT DISPUTE RESOLVED IN FAVOUR OF summits.json - no override. The 1042 m figure matches no Keipen on Senja: DTM1 gives 938.4 m at the resolved point (69.49530,17.72324) and 660.9 m at the other Senja Keipen (69.32562,17.14972), and Senja's highest peak of any name is Breitinden at 1007.0 m, so a 1042 m Senja Keipen cannot exist. Friflyt, ut.no and nordnorge.com all describe the ski classic as Keipen 938 moh above Mefjordbotn/Fjordgård, paired with Grytetippen 1.05 km west, and Friflyt's stated 838 m of ascent reproduces to within 1.3 m from the mapped Fv862 parking at 101.7 m. Friflyt gives the aspect as 'sør til sørøst', the season as January-May, KAST 2 - utfordrende, 4-5 hours round trip."
+  }
+ },
+ {
+  "slug": "kjerag",
+  "verdict": "ok",
+  "corrections": [
+   "Sette fyrst roadClosedInWinter=false ut frå at Øygardstøl er ein heilårs turistparkering. Det er feil: OSM-vegen Lysevegen (ref=4224, tidlegare 500) har motor_vehicle:conditional=no @ Nov-May og snowplowing=no, og Sirdal kommune vinterstengjer vegen. Sett til true, og sesongen flytta til eit vårvindauge (mai–juni) i staden for vinter.",
+   "friflyt/Utemagasinet skriv at ein tek av frå Langavatn-vegen «mot nordvest til Kjerag». Målt peiling frå vegpunktet på Langavassvegen (59.0193/6.6477) til toppunktet i summits.json er 271°, altså rett vest; nordvest derfrå fører til Kjeragbolten (59.03375/6.59324), 1,8 km nord for toppen. Skildringa er teken med som vest/nordvest og ikkje kopiert ukritisk.",
+   "Den rette linja Øygardstøl → avkjøringa skar eit 61° steg. Henta faktisk veggeometri frå OSM (way 40069909) – Lysevegen går sørover langs lng 6,651–6,658, ikkje austover – og la eit vegpunkt på 59.0389/6.65146 (735,43 m) på sjølve vegen, slik at korridoren følgjer vegen.",
+   "Kontroll av toppunktet: DTM1 gjev 1095,99 m på 59.01948/6.58514, men 1115,57 m 400 m aust-nordaust (59.0200/6.5900) og 1163 m to km aust. Toppunktet er ikkje endra – det er SSR-punktet for «Kjerag» og er låst i summits.json – men siste etappe kjem inn frå aust over litt høgare mark, så ruta gjev litt frå seg dei siste hundre metrane."
+  ],
+  "rejectReason": "",
+  "corridor": {
+   "routeId": "normalruta",
+   "routeName": "Vårruta frå Øygardstøl om Langavassvegen",
+   "routeDescriptionFull": "Frå den store parkeringa på Øygardstøl (641 m) følgjer ein Lysevegen sørover – forbi 735 m – dei drygt to kilometrane til der anleggsvegen mot Langavatn tek av ved Stølsdalen bru (850 m). Vidare oppover Langavassvegen sørvestover til om lag 944 m, der ein forlèt vegen og held vest/nordvest inn på Kjeragplatået. Over platået går ruta jamt vestover over knausar og små vatn til punktet på 1090 m, og siste kilometeren er nesten flat fram til toppunktet på 1096 m. Terrenget heile vegen er slakt – innanfor 800 m av toppen ligg alle åtte retningane under 6° i snitt – men platået er svaberg med korte, brå kantar, og nordsida stuper i Lysefjorden.",
+   "trailhead": {
+    "name": "Øygardstøl parkering",
+    "lat": 59.04468,
+    "lng": 6.65146,
+    "elevationM": 640.67,
+    "osmEvidence": "OSM way 690411834, amenity=parking, capacity=100, surface=asphalt, hiking=yes, fee=yes (200 NOK bil), og OSM relation 1660977 med description «Parking for walking trail to Kjerag». Ligg ved Lysevegen, OSM way 40069909, highway=secondary, ref=4224, med motor_vehicle:conditional=no @ Nov-May og snowplowing=no – vegen er stengd om vinteren."
+   },
+   "waypoints": [
+    {
+     "name": "Lysevegen 735",
+     "lat": 59.0389,
+     "lng": 6.65146,
+     "elevationM": 735.43
+    },
+    {
+     "name": "Avkjøringa til Langavassvegen",
+     "lat": 59.02907,
+     "lng": 6.65772,
+     "elevationM": 850.3
+    },
+    {
+     "name": "Langavassvegen 944",
+     "lat": 59.01931,
+     "lng": 6.64767,
+     "elevationM": 944.01
+    },
+    {
+     "name": "Kjeragplatået 1090",
+     "lat": 59.018,
+     "lng": 6.6045,
+     "elevationM": 1089.56
+    }
+   ],
+   "season": "mai–juni",
+   "roadClosedInWinter": true,
+   "aspect": "Ø",
+   "grade": 2,
+   "gradeReason": "455 netto høgdemeter og 6,6 km korridor i slakt platåterreng; friflyt kallar det «slakt og passar for dei fleste». Graderinga blir ikkje lågare enn 2 fordi Kjeragplatået er orienteringsterreng utan merking, med korte kantar og djupe kløfter, og fordi nordsida er ei tusen meter høg vegg mot Lysefjorden.",
+   "hazardNotes": "Nordsida av Kjerag er stupet mot Lysefjorden – hald godt sør for kanten, særleg i tåke og flatt lys. Platået er svaberg med små, brå skrentar mellom slake parti; fleire stader fell terrenget 25–30° på under seksti meter. Lysevegen er vinterstengd og blir normalt ikkje brøytt før veka før påske, med opning tidlegast 1. mai og ofte seinare, så turen er eit vårvindauge og ikkje ein vintertur.",
+   "teaserNo": "455 høgdemeter frå Øygardstøl om Langavassvegen og Kjeragplatået; under 6° dei siste 800 m, men Lysevegen opnar først i mai.",
+   "teaserEn": "455 m of ascent from Øygardstøl via Langavassvegen and the Kjerag plateau; under 6° for the last 800 m, but Lysevegen only opens in May.",
+   "sources": [
+    "https://friflyt.no/topptur/siste_toppturer",
+    "https://www.utemagasinet.no/randonee/fine-toppturer-paa-slutten-av-vaaren",
+    "https://www.sirdal.kommune.no/fv-4224-lysevegen-vinterstenges.6571413-412705.html",
+    "https://ut.no/turforslag/118458905/topptur-til-kjerag-majesteten-i-lysefjorden",
+    "https://www.openstreetmap.org/way/690411834",
+    "https://www.openstreetmap.org/way/40069909"
+   ],
+   "confidence": "medium",
+   "notes": "Det finst ein dokumentert skitur til Kjerag, men berre som vårtur. Friflyt/Utemagasinet («Fine toppturer på slutten av våren») skriv at vegen inn til Lysebotn opnar i byrjinga av mai, at mange går på ski til Kjerag, at den enklaste måten er å følgje Lysevegen eit par kilometer frå Øygardstølen til der vegen inn til Langavatn startar, og så følgje den vegen eit stykke før ein tek av mot nordvest – «terrenget her er slakt og passer for de fleste». DNT-hytta ved Langavatn er overnattingsalternativet. Vinterturen frå Lysebotn eksisterer ikkje som ei brøytt bilrute: Lysevegen er stengd frå november til mai, og sommarstien Øygardstøl–Kjeragbolten over Stordalen og Trædalen er kjettingsikra bratt terreng som ikkje er skiterreng. Difor roadClosedInWinter=true og sesong mai–juni. Merk at det populære målet Kjeragbolten ligg 1,8 km nord for toppunktet i summits.json; korridoren går til toppunktet, ikkje til bolten."
+  }
+ },
+ {
+  "slug": "lonahorgi",
+  "verdict": "ok",
+  "corrections": [
+   "Rejected the lift start and the Bavallen car park. Fri Flyt gives 'Voss Fjellheiser, øverst i Horgaletten' as the primary startsted, and 'de aller fleste besøkende velger å benytte seg av heissystemet'. A chairlift top station is not a place a car can stand, and a corridor from the Bavallen car park would have to be drawn straight up the alpine pistes - the same mistake the Kirketaket audit caught. Fri Flyt's own alternative, the road start at Høyland south of Tvinne, is used instead; it is also the line Fri Flyt calls 'den flotteste nedturen'.",
+   "Trailhead placed at the far end of the drivable road, not at the E16. Fri Flyt says 'Følg bilveg og så traktorveg', so the car goes as far as Høyland. The south end of OSM way/242290756 (unclassified, name=Høylandsvegen, surface=unpaved) at 60.70289,6.47641 reads 138,96 m and is where the forest tracks (way/1393187888, way/1393187889, way/1393187887) take over towards Bergsstølen. That costs 57 m against Fri Flyt's stated 1330 hm, which is measured from the E16 junction: dtm_point at the road's lower end, 60.70492,6.47996, reads 81,63 m and 1412,07 - 81,63 = 1330,4.",
+   "Verified 'punkt 1305' instead of guessing the ridge. Fri Flyt's descent variant says 'Kjør nordover til punkt 1305 på kartet'. The point at 60.70150,6.41000 reads 1305,20 m from DTM1 - an exact match - and it is the shoulder where the ridge from Svartahorgi turns south towards the summit, so it became the last waypoint.",
+   "Dropped a trig-point waypoint. The first draft had a fifth waypoint west of the trigonometric point 835 (confirmed at 834,3 m, 60.70200,6.44400), but the Breiming-to-Svartahorgi straight line already passes 60.7017,6.4408 - within 60 m of it - so it pinned nothing new. Four waypoints left.",
+   "Descent aspect checked against the terrain, not assumed from 'Bodegaen'. The best known freeride run at Voss, Bodegaen, is on the southeast side of the mountain and feeds back into the Bavallen lift system; it is not this route. The Høyland line drops north off the summit to point 1305 and then east-northeast over Svartahorgi and Breiming, and the alternative bowl, Årdalen, lies northeast of the summit at about 930 m. Recorded as NØ."
+  ],
+  "rejectReason": "",
+  "corridor": {
+   "routeId": "normalruta",
+   "routeName": "Ruta frå Høyland via Breiming og Svartahorgi",
+   "routeDescriptionFull": "Frå E16 ved Grotlandsbrua, om lag ein kilometer nord for enden av Lønavatnet, tek ein av mot vest og køyrer Høylandsvegen opp til den nedlagde garden Høyland. Derfrå følgjer ein skogsbilvegen sørvestover til Bergsstølen (380 moh.) og tek seg opp det trange dalføret ved Breiming (610 moh.). Vidare følgjer ein slakaste veg nordvestover mot Svartahorgi, til venstre for det trigonometriske punktet 835, og rundar Svartahorgi før ein kjem inn på ryggen på om lag 1000 moh. Ryggen blir følgd vestover og deretter sørover over punkt 1305 og opp nordryggen til toppen. Nedkøyringa følgjer same linje; ved stabile forhold kan dyktige køyrarar i staden ta seg ned i Årdalen frå punkt 1305.",
+   "trailhead": {
+    "name": "Høyland ved Grotlandsbrua",
+    "lat": 60.70289,
+    "lng": 6.47641,
+    "elevationM": 138.96,
+    "osmEvidence": "Søre enden av OSM way/242290756, highway=unclassified, name=Høylandsvegen, surface=unpaved. Vegen tek av frå E16 'Strandavegen', OSM way/80499840, highway=trunk, ref='E 16;13', surface=asphalt - stamveg som blir brøytt heile året. Vidare sørvestover mot Bergsstølen finst berre skogsvegar (way/1393187888, way/1393187889, way/1393187887, highway=track) og way/1533489746 (service), altså 'traktorvegen' i turskildringa. OSM har ingen kartfesta p-plass ved Høyland; garden er nedlagd, så det er ikkje gjeve at siste stykket av Høylandsvegen er brøytt - då må ein starte 500 m lenger nede der vegen møter E16 (60.70492,6.47996, 81,6 moh.), og turen blir 57 høgdemeter lengre."
+   },
+   "waypoints": [
+    {
+     "name": "Bergsstølen",
+     "lat": 60.69687,
+     "lng": 6.45979,
+     "elevationM": 379.66
+    },
+    {
+     "name": "Breiming",
+     "lat": 60.69543,
+     "lng": 6.44614,
+     "elevationM": 609.8
+    },
+    {
+     "name": "Ryggen nordvest for Svartahorgi",
+     "lat": 60.708,
+     "lng": 6.4355,
+     "elevationM": 1003.2
+    },
+    {
+     "name": "Punkt 1305 nord for toppen",
+     "lat": 60.7015,
+     "lng": 6.41,
+     "elevationM": 1305.2
+    }
+   ],
+   "season": "feb–april",
+   "roadClosedInWinter": false,
+   "aspect": "NØ",
+   "grade": 2,
+   "gradeReason": "Lang, men teknisk enkel linje. Målt frå waypoint til waypoint stig korridoren 12, 17, 15, 11 og 7 grader, og brattaste terreng innanfor 30 m av noko waypoint er 24 grader ved Breiming. Nordryggen frå punkt 1305 til toppen tek berre 107 høgdemeter på 893 m. Utfordringa er lengda - 6,9 km korridor og 1273 høgdemeter - og at ein startar på 139 moh., ikkje bratta.",
+   "hazardNotes": "Skredfare i det trange dalføret ved Breiming og i austsida ned mot Årdalen, som er den bratte delen av fjellet; store svaskred losnar seint på våren og går langt. Ryggen frå punkt 1305 og opp er brei og slak, men vindutsett og ofte avblåst og hard. Snødekket nede ved Høyland og Bergsstølen er tynt og kortvarig - vurder å gå av tidleg om våren.",
+   "teaserNo": "1273 høgdemeter frå Høyland via Bergsstølen og Breiming, med dei siste 107 opp nordryggen frå punkt 1305.",
+   "teaserEn": "1273 m of ascent from Høyland via Bergsstølen and Breiming, the last 107 up the north ridge from point 1305.",
+   "sources": [
+    "https://www.friflyt.no/topptur/skiturer-voss/turbeskrivelse-loenahorgi",
+    "https://ut.no/kart/rutebeskrivelse/136536",
+    "https://www.westcoastpeaks.com/Peaks/lonahorgi.html",
+    "https://www.openstreetmap.org/way/242290756",
+    "https://www.openstreetmap.org/way/80499840",
+    "https://www.openstreetmap.org/way/1393187888"
+   ],
+   "confidence": "medium",
+   "notes": "Fri Flyt (Lønahorgi, 1410 moh., 1330 høgdemeter) gjev to startstader. Den som kan brukast her er 'den nedlagte gården Høyland sør for Tvinne. Ta av til venstre ved Grotlandsbrua omtrent en kilometer nord for innløpet av Lønavatnet. Følg bilveg og så traktorveg', 3-4 timar opp, og rutelinja 'Følg skogsbilvei sørover til du kommer til Bergstølen. Herfra tar du deg opp det trange dalføret ved Breiming. Følg slakeste vei mot Svartahorge (1037) til venstre for det trigonometriske punktet 835. Følg rundt til høyre for selve Svartahorge, og følg ryggen mot selve toppen.' Alle namna er stadfesta: Bergsstølen (SSR, 60.69687,6.45979) 379,7 m, Breiming (SSR Li, 60.69543,6.44614) 609,8 m, trigpunktet 834,3 m ved 60.70200,6.44400, Svartahorgi (SSR, 60.70634,6.43978) 1029,0 m mot dei publiserte 1037, og punkt 1305 på 1305,2 m. Straklinja start-topp er 3496 m med retning 253 grader (VSV) og korridoren er 6,9 km. Confidence er medium av to grunnar: dei fleste går faktisk turen frå toppen av Horgaletten-heisen på om lag 920 moh. og korta ned til 490 høgdemeter, og det er ikkje dokumentert at Høylandsvegen blir brøytt fram til den nedlagde garden om vinteren. Alle koordinatar er lesne tilbake frå ws.geonorge.no/hoydedata/v1/punkt."
+  }
+ },
+ {
+  "slug": "moysalen",
+  "verdict": "ok",
+  "corrections": [
+   "Checked whether the normal line starts from a boat, because getting that backwards would have put the trailhead on a quay. Møysalen Nasjonalparksenter's guided ascents run late June-September and begin with a ~20 minute boat from Hennes into Lonkanfjorden. Friflyt's ski route does not: it starts from the large car park on E10 south of Litlvatnet. The corridor uses the road start, which is what people actually drive to.",
+   "Identified 'Litlvatnet' rather than guessing it. OSM relation/7844287 natural=water name=Litlvatnet is centred 68.46728,15.44098, and OSM way/361322473 (plus node/1894346151) amenity=parking access=yes sits at 68.46535,15.44134 on its south shore, 40 m from E10. DTM1 reads 22.5 m there.",
+   "Kept a 123 m height loss instead of smoothing it away. The line crosses a 450.7 m saddle at 68.50350,15.45450 and then drops to Grønnvatnet at 328.0 m (68.50774,15.45174, DTM terrain class Innsjø). That looked like an error until it explained Friflyt's stated 1400-1800 m of ascent against only 1241 m of net gain: the waypoint chain sums to 1363.7 m of cumulative climb, inside Friflyt's band.",
+   "Confirmed Grønnvatnet is the 'vann 328' the route text names - DTM1 returns exactly 328.0 m at the SSR point. Also checked the descent aspect: summit to the glacier waypoint bears 140 degrees, i.e. SØ, which agrees with Friflyt's 'sørvendte partier gir spennende nedkjøringer'. A west or north aspect would have been wrong."
+  ],
+  "rejectReason": "",
+  "corridor": {
+   "routeId": "vestryggen",
+   "routeName": "Vestryggen fra E10 ved Litlvatnet",
+   "routeDescriptionFull": "Normalruta (Vestryggen) fra den store parkeringa langs E10 på sørsida av Litlvatnet: nordover gjennom vassdraget nord for Litlvatnet, over skardet på ca. 450 moh og ned til Grønnvatnet 328. Derfra følges sommerruta oppover, men på høyre (østre) side av punkt 450, opp bekkedraget og over det bratte partiet til breen sørøst for toppen. Fra breen går ruta nordvest opp på den lange ryggen som fører helt til toppen.",
+   "trailhead": {
+    "name": "Parkeringa langs E10 sør for Litlvatnet",
+    "lat": 68.46535,
+    "lng": 15.44134,
+    "elevationM": 22.53,
+    "osmEvidence": "OSM way/361322473 amenity=parking access=yes parking=surface (with node/1894346151, same tags) at 68.46535,15.44134, reached by way/361322487 highway=service off way/549971185 highway=trunk name=Lofotvegen ref='E 10', asphalt. Litlvatnet itself is OSM relation/7844287 natural=water immediately north. E10 is a year-round trunk road."
+   },
+   "waypoints": [
+    {
+     "name": "Dalen nord for Litlvatnet",
+     "lat": 68.48,
+     "lng": 15.4545,
+     "elevationM": 136.26
+    },
+    {
+     "name": "Skardet inn mot Grønnvatnet, ~450 moh",
+     "lat": 68.5035,
+     "lng": 15.4545,
+     "elevationM": 450.71
+    },
+    {
+     "name": "Grønnvatnet 328",
+     "lat": 68.50774,
+     "lng": 15.45174,
+     "elevationM": 328.0
+    },
+    {
+     "name": "Breen sørøst for Møysalen, ~1025 moh",
+     "lat": 68.5225,
+     "lng": 15.46,
+     "elevationM": 1026.59
+    }
+   ],
+   "season": "jan–mai",
+   "roadClosedInWinter": false,
+   "aspect": "SØ",
+   "grade": 4,
+   "gradeReason": "1364 høydemeter kumulativt fra sjøkanten og 11-18 timer tur-retur etter Friflyt, med bre og en eksponert toppryg som ofte er skare og is. Friflyt krever isøks og stegjern og setter turen til KAST 3 – komplekst.",
+   "hazardNotes": "Turen er lang — 1364 høydemeter kumulativt og 11-18 timer — så tidspunktet avgjør om du møter gjennomvåt eller gjennomfrossen snø i det bratte partiet under breen. Stigningen opp fra Grønnvatnet ligger over 20 grader på lang strekning og har brattere trinn opp mot breen. Toppryggen er eksponert og ofte hard; mange bærer skiene der, og isøks og stegjern hører med.",
+   "teaserNo": "1364 høydemeter fra E10 ved Litlvatnet, medregnet 123 meter tapt ned til Grønnvatnet 328.",
+   "teaserEn": "1364 cumulative metres of ascent from the E10 at Litlvatnet, including 123 given back on the drop to Grønnvatnet at 328 m.",
+   "sources": [
+    "https://www.friflyt.no/topptur/skiturer-troms/turbeskrivelse-moeysalen",
+    "https://www.friflyt.no/topptur/harstad/moysalens-hogrute",
+    "https://moeysalen.no/en/moysalen-tour/",
+    "https://nordnorge.com/en/aktiviteter/moysalen-has-the-widest-view-in-the-north/"
+   ],
+   "confidence": "medium",
+   "notes": "Møysalen is a national park summit with a long approach, so the start matters. Said plainly: the guided SUMMER ascents from Møysalen Nasjonalparksenter begin with a boat from Hennes into Lonkanfjorden, but the winter ski route does not - Friflyt starts it from the big car park on E10 south of Litlvatnet, and that is the trailhead used here. Friflyt: KAST 3 - komplekst, 1400-1800 m ascent, 11-18 hours, January-May, ice axe and crampons required; the glacier is described as crevasse-free and normally unroped. The corridor is pinned to the named features (Grønnvatnet 328, the glacier south-east of the summit). The final ridge is exposed and often ice, and many parties carry their skis on it, so the last stretch is not really a skin track. Confidence medium: the description is detailed but gives no coordinates, and the two waypoints below Grønnvatnet are my own reading of the drainage rather than named places."
+  }
+ },
+ {
+  "slug": "rasletinden",
+  "verdict": "ok",
+  "corrections": [
+   "Første utkast la et waypoint på Øystre Rasletinden (2011 moh, funnet som lokalt toppunkt på 61.39843/8.72150 — det er 2010-toppen Villspor nevner). Radialprofilar viser at aust- og sørøstsida av den toppen måler 42–50°, og alle testlinjer inn dit fra aust fikk steg på 51–63°. Skiruta passerer sør for toppen, ikke over den, og waypointet er byttet ut med 61.39480/8.71500 (1890,34 moh) på den slake ryggen under.",
+   "Vegen over Valdresflye er kontrollert. Fv51 er brøytet hele vinteren bare Beitostølen–Bygdin; strekninga videre nordover forbi Valdresflya vandrerhjem er vinterstengt og åpner normalt rundt 1. april. Startpunktet ligger på den stengte strekninga, så roadClosedInWinter er satt til true og sesongen til apr–mai, i tråd med ut.no.",
+   "Parkeringa er flyttet fra tufta etter vandrerheimen til den mappede plassen 50 m sør. Villspor skriver «parkeringsplassen på østsiden av veien»; OSM way 832041640 (amenity=parking, surface=asphalt) ligger på 8,8113 mot fv51 på 8,8105 — altså østsida. Bekreftet.",
+   "Waypointet på 61.39480/8.71500 kommer tilbake fra DTM1 med terrengklasse SnøIsbre. Det er en permanent snøfonn på 1890 moh, ikke en sprukken bre — Leirungsbrean og Kalvehøgdbreene ligger 4 km lenger vest og sør. Beholdt.",
+   "Aspektet er kontrollert: aust (90°) måler 26° og nordaust 32°, mens nord, nordvest og sør måler 55–65°. Ruta og nedkjøringa er Ø."
+  ],
+  "rejectReason": "",
+  "corridor": {
+   "routeId": "normalruta",
+   "routeName": "Normalruta fra Valdresflye",
+   "routeDescriptionFull": "Fra parkeringa på østsida av fv51 der Valdresflya vandrerhjem sto før brannen i 2015 (1391 moh) går ruta vestover ut på vidda, sør for Fisketjerne, der de første 1,2 km er helt flate og faktisk faller ti høydemeter. Så begynner det å stige jevnt mot den første kneika på rundt 1530 moh, og over den opp på ryggen på ca 1735 moh. Videre vestover langs ryggen, sør for Øystre Rasletinden (2011 moh), til ca 1890 moh, og til slutt opp den siste kneika og ut på toppplatået på 2104 moh. Samme vei ned.",
+   "trailhead": {
+    "name": "P-plassen ved gamle Valdresflya vandrerhjem",
+    "lat": 61.38952,
+    "lng": 8.81131,
+    "elevationM": 1390.65,
+    "osmEvidence": "OSM way 832041640, amenity=parking, surface=asphalt, access=yes, senter 61.38952/8.81131, på østsida av Bygdinvegen fv51 (OSM ways 1190120331 / 1190120332, highway=primary, ref=51, surface=asphalt). Rett ved SSR-tufta «Valdresflya vandrerhjem» (61.38980/8.81131). Ytterligere mappede plasser like ved: node 7768317242 (surface=compacted) og ways 1295130790 / 1295130784 (surface=fine_gravel). Strekninga av fv51 forbi her er vinterstengt."
+   },
+   "waypoints": [
+    {
+     "name": "Ut på Valdresflye, sør for Fisketjerne",
+     "lat": 61.3925,
+     "lng": 8.79,
+     "elevationM": 1376.83
+    },
+    {
+     "name": "Foten av første kneik",
+     "lat": 61.394,
+     "lng": 8.762,
+     "elevationM": 1531.26
+    },
+    {
+     "name": "Oppe på ryggen, ca 1735 moh",
+     "lat": 61.3952,
+     "lng": 8.744,
+     "elevationM": 1736.17
+    },
+    {
+     "name": "Under Øystre Rasletinden, ca 1890 moh",
+     "lat": 61.3948,
+     "lng": 8.715,
+     "elevationM": 1890.34
+    }
+   ],
+   "season": "apr–mai",
+   "roadClosedInWinter": true,
+   "aspect": "Ø",
+   "grade": 2,
+   "gradeReason": "713 høydemeter og 6,0 km én vei, med slak stigning nesten hele veien: første kneik måler 22–24°, ryggen 23°. Det eneste virkelig bratte er en kort kneik på rundt 40° mellom 1945 og 1980 moh rett under toppplatået. Turen går på høyfjell over 2000 moh og er værutsatt, men er teknisk enkel og gjøres både på fjellski og randonee.",
+   "hazardNotes": "Nord- og nordvestsida av Rasletinden faller 55–65° ned mot Leirungsdalen, og sørsida 48–57°. Hold deg på ryggen; det er bare aust og nordaust som er slake. Den korte kneika under toppplatået på 1945–1980 moh er det ene stedet på ruta med samlet bratt heng over deg. Vidda ut fra fv51 er helt åpen og gir ingen ly — dette er en tur som blir vanskelig i dårlig sikt, ikke i dårlig føre.",
+   "teaserNo": "713 høydemeter og 6 km fra Valdresflye: flatt de første 1,2 km, så en kneik til 1530 moh og slak rygg østfra mot toppen.",
+   "teaserEn": "713 m and 6 km from Valdresflye: flat for the first 1.2 km, then a step to 1530 m and a gentle ridge from the east.",
+   "sources": [
+    "https://ut.no/turforslag/113605/topptur-pa-ski-til-rasletinden-i-jotunheimen-2105-moh",
+    "https://magasinetvillspor.no/rasletinden-2105-tilgjengelig-topptur-fra-valdresflyas-hoyeste-punkt/",
+    "https://www.valdres.com/things-to-do/ski-tour-to-rasletinden-p4811093",
+    "https://no.wikipedia.org/wiki/Fylkesvei_51"
+   ],
+   "confidence": "high",
+   "notes": "Ut.no beskriver ruta ordrett: «Fra gamle Valdresflya Vandrerhjem legger du ruta mot vest over vidda. Når du nærmer deg første kneik dreier du nordover til du er oppe på sjølve ryggen som går opp mot tinden. Herifra er det en slak tur mot toppen.» Villspor legger til at ruta går rett sør for Fisketjerni, over en liten høyde på ca 1530 moh, og videre mot Øystre Rasletinden (2010 moh) før siste stykke. Korridoren følger begge. Ut.no oppgir 15,2 km og 755 høydemeter tur/retur; mine målinger gir 6,02 km og 713 høydemeter én vei fra parkeringa, altså litt kortere enn ut.nos rundtur og innenfor rimelig avvik. Sesongen er begrenset av vegen, ikke av snøen: fv51 over Valdresflye åpner normalt rundt 1. april, og forholdene holder ofte til tidlig juni."
+  }
+ },
+ {
+  "slug": "saebyggjenuten",
+  "verdict": "ok",
+  "corrections": [
+   "ut.no oppgjev «Midtre Gjuvann» som vegpunkt. SSR har Midtre Gjuvvatn på 59.45963/7.56908, og DTM1 gjev vassflate på 1125 m der. Flytta punktet til austenden av vatnet, 59.4595/7.5750 (1136,93 m, ÅpentOmråde), så ingen waypoint ligg på vatn.",
+   "Den rette linja frå Tverrheiskardet skar eit 44° fall ned mot vestsida av Gjuvvatn-bassenget. Med strandpunktet i staden er største steg langs korridoren 32,4°.",
+   "Øvste vegpunkt låg først på det namnlause vatnet på 1234 m som ut.no nemner; lokalrelieffet der er 45,7° innanfor 50 m. Flytta 300 m vestover til 59.4575/7.5940 (1225,47 m), der lokalrelieffet er 18,4°.",
+   "SSR har to skar med nesten same namn på ruta – Tverrheiskaret 59.45645/7.48044 og Tverrheiskardet 59.45764/7.51592. Begge er tekne med, i den rekkjefølgja turskildringane gjev dei (fyrste skaret, så Tverrheitjønni, så det andre skaret).",
+   "Retning trailhead → topp er 82° (aust), som stemmer med at Berdalen ligg vest for fjellet. Netto stigning frå DTM1 er 1506,49 − 809,81 = 697 m; ut.no oppgjev 879 m kumulativt over 26,3 km, som er same tur med bølgjene rekna med."
+  ],
+  "rejectReason": "",
+  "corridor": {
+   "routeId": "normalruta",
+   "routeName": "Vinterruta frå Berdalen over Tverrheiskara",
+   "routeDescriptionFull": "Frå parkeringa innerst i Berdalen hyttegrend (810 m) går ein austover forbi Langemyr (891 m) og opp i Tverrheiskaret (1028 m), det fyrste skaret. Vidare aust over Tverrheii og Tverrheitjønnane til Tverrheiskardet (1156 m), så ned i Gjuvvatn-bassenget og over til austenden av Midtre Gjuvvatn (1137 m). Frå vatnet stig ruta jamt austover forbi dei to namnlause vatna på 1234 og 1257 m – vegpunktet på 1225 m ligg på fast mark like vest for det nedste – og siste kilometeren går opp vestflanken av nuten til toppen på 1506 m. Ingen sti heile vegen; ruta er om lag 10,7 km kvar veg og går på fjellski med feller.",
+   "trailhead": {
+    "name": "Berdalen hyttegrend, parkering ved bommen",
+    "lat": 59.44906,
+    "lng": 7.44172,
+    "elevationM": 809.81,
+    "osmEvidence": "OSM node 4991831285, amenity=parking, ved enden av vegen Berdalen hyttegrend (OSM way 24482719 og 130756203, highway=residential; way 507002888 og 1008037910, highway=service). Hyttegrenda ligg på oppsida av Rv9 Setesdalsvegen (OSM highway=trunk) mellom Bykle og Hovden og er brøytt heile vinteren; ut.no presiserer at ein ikkje skal køyre den siste kilometeren etter bommen."
+   },
+   "waypoints": [
+    {
+     "name": "Langemyr",
+     "lat": 59.45516,
+     "lng": 7.46132,
+     "elevationM": 891.3
+    },
+    {
+     "name": "Tverrheiskaret",
+     "lat": 59.45645,
+     "lng": 7.48044,
+     "elevationM": 1027.59
+    },
+    {
+     "name": "Tverrheiskardet",
+     "lat": 59.45764,
+     "lng": 7.51592,
+     "elevationM": 1155.68
+    },
+    {
+     "name": "Austenden av Midtre Gjuvvatn",
+     "lat": 59.4595,
+     "lng": 7.575,
+     "elevationM": 1136.93
+    },
+    {
+     "name": "Vestflanken 1225",
+     "lat": 59.4575,
+     "lng": 7.594,
+     "elevationM": 1225.47
+    }
+   ],
+   "season": "feb–apr",
+   "roadClosedInWinter": false,
+   "aspect": "V",
+   "grade": 3,
+   "gradeReason": "10,7 km kvar veg og 697 netto høgdemeter, men med fleire skar undervegs blir samla stigning vesentleg større. Sjølve terrenget er slakt – vestflanken ligg på 11° i snitt og sørvestsida på 9° – så det krevjande er lengda, orienteringa i høgfjell utan sti, og skavlen på nordkanten av toppen.",
+   "hazardNotes": "Toppen er skavlkanta mot nord: nordsida fell 41,9° i det brattaste 60-metersvindauget 460–520 m ute, medan vest og sørvest ligg på 9–11°. Kom opp og gå ned på vestsida, og hald deg unna kanten i dårleg sikt. Ruta er ti kilometer frå bilen utan sti eller merking, så vêrvindauge og navigasjon er den styrande faktoren.",
+   "teaserNo": "10,7 km og 697 høgdemeter inn frå Berdalen over Tverrheiskara og Gjuvvatna; nordsida av toppen fell 42° og er ofte skavla.",
+   "teaserEn": "10.7 km and 697 m of ascent in from Berdalen over the Tverrheiskar passes and the Gjuvvatn lakes; the north side falls 42° and is often corniced.",
+   "sources": [
+    "https://ut.no/turforslag/1112156036/sbyggjenuten-1507-moh-agders-hyeste-topp-26-km-dagstur-fra-berdalen-hyttegrend",
+    "https://ut.no/turforslag/1110654/sbyggjenuten-srlandets-hyeste-punkt",
+    "https://19topper.blog/2020/02/28/aust-agder-saebyggjenuten/",
+    "https://www.openstreetmap.org/node/4991831285"
+   ],
+   "confidence": "medium",
+   "notes": "Ruta er dokumentert både som sommartur (ut.no, to skildringar frå Berdalen) og som vintertur på ski: 19topper gjekk ho siste helga i februar 2020 på fjellski frå Berdalen hyttefelt, om lag 10 km kvar veg, med rekkjefølgja Berdalen – Langemyr – fyrste skar – Tverrheitjønni – Tverrheiskardet – Gjuvvatn – dei to små vatna – toppen frå høgre flanke. Same kjelde nemner ein markert skavl på dei siste 240 høgdemetrane; korridoren endar på toppunktet fordi flankane vest og sørvest ligg på 9–11° og er ski-terreng heilt opp, men kanten mot nord er ikkje det. Fyrste kilometeren ut frå hyttegrenda deler trasé med oppkøyrde løyper i Berdalen; korridoren er terrenglinja, ikkje løypa. Ei alternativ oppgang finst frå Strandstøylsdalen i aust (Tokke-sida), men utan kartlagd vinterparkering."
+  }
+ },
+ {
+  "slug": "saudehornet",
+  "verdict": "ok",
+  "corrections": [
+   "SSR har to Saudehornet i Ørsta kommune: 62.28693/6.50239 ovanfor Hjørundfjorden og 62.23585/6.14243 ovanfor Ørsta sentrum. Kontrollerte at summits.json brukar den siste (62.23578/6.14246, 1303,07 moh i DTM1 mot oppgjeven høgd 1303). All ruteresearch er gjort mot den, og kjeldene (Friflyt, ut.no) skildrar òg den, med start i Ørsta sentrum.",
+   "Fyrste utkast la skaret mellom Vallahornet og Saudehornet på 795,67 moh, funne ved å skanne ei rett linje mellom dei to toppunkta. Ei skanning av sjølve ryggkammen (lengdegrad 6,1405-6,1435, breiddegrad 62,223-62,229) viser at kammen ligg lenger aust: lågaste punkt på kammen er 811,69 moh på 62.22500/6.14150. Vegpunktet er flytta dit, og det ligg om lag 30 m frå ein kartlagd OSM-sti som følgjer ryggen.",
+   "Fyrste utkast la vegpunktet på anleggsvegen på 62.21753/6.12378 - det var senterpunktet Overpass gav for vegen, ikkje eit punkt på vegen. Henta full geometri: anleggsvegen er ein OSM highway=service med 90 punkt frå 62.21087/6.12681 opp til 62.22416/6.12099. Vegpunktet er flytta til 62.21976/6.12336 (395,54 moh), der ein kartlagd sti tar av frå vegen og kryssar mot ryggen - same staden som Friflyt skildrar med 'på skrå mot Vikeelva, kryss elva'.",
+   "Kontrollerte nedkøyringsretninga i staden for å tru på 'rett ned mot Ørsta'. Frå toppen fell terrenget 1303,07 -> 1031 -> 834 -> 717 moh mot sørvest, 36-38° over dei fyrste 470 høgdemetrane. Rett vest for ryggen mellom skaret og toppen er hellinga berre 12-15°, så aspekt er sett til SV og ikkje V.",
+   "Kontrollerte at oppstiginga er skibar: sørryggen frå 62.23363/6.14206 (1136,62 moh) til toppen har steg på 33,5°, 32,5°, 33,5° og 38,6° over 56-65 m - bratt, men under 42°. Ingen del av korridoren treng at skia kjem av."
+  ],
+  "rejectReason": "",
+  "corridor": {
+   "routeId": "normalruta",
+   "routeName": "Normalruta frå Vasshuset over skaret og sørryggen",
+   "routeDescriptionFull": "Frå parkeringa ved vassverket øvst i Vikegeila i Ørsta sentrum (149 moh) følgjer ein anleggsvegen oppover Skåla. Ved om lag 400 moh går ein av vegen, på skrå nordaustover mot Vikeelva, kryssar elva og siktar mot det lågaste punktet på ryggen mellom Vallahornet og Saudehornet (812 moh). Over skaret følgjer ein sørryggen om lag 490 høgdemeter opp til toppen på 1303 moh; dei siste 170 høgdemetrane held 33-39°. Vanlegaste nedkøyringa går same vegen, men gjerne på flanken på skiløparen si høgre side av renna - sørvestflanken, som held om lag 37° i 600 høgdemeter.",
+   "trailhead": {
+    "name": "Vasshuset (vassverket) i Vikegeila",
+    "lat": 62.21087,
+    "lng": 6.12681,
+    "elevationM": 149.26,
+    "osmEvidence": "Punktet er fyrste noden i ein OSM highway=service med 90 punkt som går frå 62.21087/6.12681 opp til 62.22416/6.12099 - anleggsvegen til vassverket. Han startar der highway=residential 'Vikegeila' (nærmaste node 62.20807/6.12676) sluttar, og Vikegeila går i sin tur ned til Håkonsgata og E39 i Ørsta sentrum, som er brøytt heile året. Det er ikkje kartlagt nokon amenity=parking-flate her; nærmaste kartlagde P i OSM ligg 3,5 km unna i sentrum. Både ut.no og Friflyt oppgir at det er stor, god parkeringsplass ved vassverket."
+   },
+   "waypoints": [
+    {
+     "name": "Der stien tar av frå anleggsvegen",
+     "lat": 62.21976,
+     "lng": 6.12336,
+     "elevationM": 395.54
+    },
+    {
+     "name": "Skaret mellom Vallahornet og Saudehornet",
+     "lat": 62.225,
+     "lng": 6.1415,
+     "elevationM": 811.69
+    },
+    {
+     "name": "Sørryggen, ~1137 moh",
+     "lat": 62.23363,
+     "lng": 6.14206,
+     "elevationM": 1136.62
+    }
+   ],
+   "season": "jan–mai",
+   "roadClosedInWinter": false,
+   "aspect": "SV",
+   "grade": 3,
+   "gradeReason": "Friflyt graderer turen 'Komplekst'. 1154 høgdemeter i eitt strekk, og sørryggen held 33-39° dei siste 170 høgdemetrane opp mot toppen. Det er skibart heile vegen, men hard snø på sørryggen gir lang utløpsbane ved utglidning, og skavlen langs toppeggja gjer at ein ikkje kan gå heilt ut på kanten.",
+   "hazardNotes": "Skredterreng frå Skåla og heile vegen opp, og sørryggen er bratt nok til at ei utglidning på hard snø får lang utløpsbane. Langs toppeggja ligg det skavl, og Friflyt nemner moglege sprekker i rennene på vestsida. Turen går rett ovanfor Ørsta sentrum, men er ikkje ein snilltur - fjellet er for erfarne.",
+   "teaserNo": "1154 høgdemeter frå vassverket i Ørsta, og sørryggen held 33–39° dei siste 170.",
+   "teaserEn": "1154 metres of ascent from the waterworks in Ørsta, and the south ridge holds 33–39° for the last 170.",
+   "sources": [
+    "https://www.friflyt.no/topptur/skiturer-sunnmoere/turbeskrivelse-saudehornet",
+    "https://ut.no/turforslag/1113172/saudehornet-1303-moh",
+    "https://www.fjordnorway.com/en/see-and-do/hiking-trip-to-saudehornet-1303-masl"
+   ],
+   "confidence": "high",
+   "notes": "Friflyt skildrar dette som skitur heile vinteren og våren, gradert 'Komplekst', 1150 høgdemeter, 3-4 timar opp og ned; ut.no oppgir 1157 høgdemeter frå 140 til 1303 moh. Måld gain frå det valde utgangspunktet er 1303,07 - 149,26 = 1153,8 m, som ligg mellom dei to. Ruta er den same om vinteren og sommaren opp til skaret; over skaret følgjer skiruta sørryggen, som OSM òg har som merka sti heilt opp frå Vallahornet. Vegen fram er brøytt heile året - dette er ein tur som startar i sentrum av Ørsta. Friflyt nemner Austtoppen som endepunkt for sørryggen; DTM1 gir 1303,07 moh på SSR-punktet, som er den høgda turen er kjend for."
+  }
+ },
+ {
+  "slug": "skarasalen",
+  "verdict": "ok",
+  "corrections": [
+   "Fyrste utkast sette utgangspunktet på seterparkeringa framfor Kvistadsætra og Årsetsætra (62.15893/6.45179, 509,15 moh). Kvistadvegen er bomveg og vinterstengd ovanfor bommen - ut.no seier 'kjør så langt det er bart', og westcoastpeaks reknar med at ein kjem til om lag 400 moh fyrst i mai. Startpunktet er flytta ned til bommen (OSM barrier=toll_booth, 62.18612/6.41212, 104,24 moh), og seterparkeringa er i staden fyrste vegpunkt. Kontroll: 1542,49 - 104,24 = 1438 høgdemeter, som passar med Friflyt sine oppgjevne 1450 frå Bondalen; ut.no sine 1057 gjeld start på setra.",
+   "Sjekka at toppvegpunktet ikkje ligg feil side av eggja. DTM fell frå 1541,7 moh til 1239,1 moh på 74 m rett aust for toppen (om lag 76°) - det er austveggen ned mot Skåradalen, og skavlane ligg der. Siste vegpunkt er difor lagt på platået nord-nordvest for toppen (62.16800/6.48200, 1447,76 moh), slik at lina kjem inn frå nordvest.",
+   "Vurderte ut.no si formulering om å gå frå Kvistadsætra 'innover dalen mot Vasstøylvatnet'. Vasstøylvatnet ligg på 62.15119/6.47755, sør-søraust for setrene, og er ei anna retning enn den ruta faktisk tar oppover - nordaust inn i renna mellom Blåhornet og Skårasalen. Ingen vegpunkt er lagt der.",
+   "Kontrollerte skaret: DTM langs linja Blåhornet (62.16579/6.46423, 1119,13 moh) - Skårasalen viser lågaste punkt 1073,82 moh på 62.16500/6.46800. Vegpunktet er lagt der, ikkje på Blåhornet sjølv.",
+   "Kontrollerte aspekt. Frå hovudhellinga fell terrenget mot vest: 1447,76 -> 1373,0 -> 1207,56 -> 1073,82 moh vestover/sørvestover, medan det aust for ryggen stuper ned i Skåradalen. Aspekt er sett til V, som også stemmer med at Friflyt legg skavlane 'aust på toppplatået/ryggen'."
+  ],
+  "rejectReason": "",
+  "corridor": {
+   "routeId": "normalruta",
+   "routeName": "Normalruta frå bommen på Kvistadvegen om Kvistadsætra",
+   "routeDescriptionFull": "Frå bommen på Kvistadvegen ovanfor Kvistad-gardane i Bondalen (104 moh) følgjer ein den vinterstengde setervegen om lag 3,7 km sørover og innover Kvistaddalen til parkeringa framfor Kvistadsætra og Årsetsætra (509 moh). Derifrå går ruta nordaustover opp gjennom open bjørkeskog og vidare opp storhellinga - nord for og langsmed skredrenna aust for Blåhornet - til skaret mellom Blåhornet og Skårasalen (1074 moh). Over skaret svingar ein aust-nordaust opp hovudhellinga mot ryggen og toppplatået (1448 moh), og siste stykket sørover langs platået til toppen på 1542 moh. Aust for eggja fell fjellet rett ned i Skåradalen, og skavlane ligg på den sida.",
+   "trailhead": {
+    "name": "Bommen på Kvistadvegen",
+    "lat": 62.18612,
+    "lng": 6.41212,
+    "elevationM": 104.24,
+    "osmEvidence": "OSM node barrier=toll_booth på 62.18612/6.41212, i enden av dei brøytte gardsstrekka av 'Kvistadvegen' (highway=unclassified). Den lange vegen vidare oppover er kartlagd som ein samanhengande highway=unclassified 'Kvistadvegen' med 276 punkt, frå 62.18693/6.41303 like ovanfor bommen til 62.15846/6.45092 ved setrene - om lag 3,7 km. I andre enden ligg OSM node amenity=parking, hiking=yes på 62.15893/6.45179 (509,15 moh), seterparkeringa. Kvistadvegen tar av frå fv. 655 'Bondalsvegen' om lag 1 km lenger nede."
+   },
+   "waypoints": [
+    {
+     "name": "Parkeringa ved Kvistadsætra og Årsetsætra",
+     "lat": 62.15893,
+     "lng": 6.45179,
+     "elevationM": 509.15
+    },
+    {
+     "name": "Skaret mellom Blåhornet og Skårasalen",
+     "lat": 62.165,
+     "lng": 6.468,
+     "elevationM": 1073.82
+    },
+    {
+     "name": "Toppplatået nordvest for toppen",
+     "lat": 62.168,
+     "lng": 6.482,
+     "elevationM": 1447.76
+    }
+   ],
+   "season": "jan–mai",
+   "roadClosedInWinter": false,
+   "aspect": "V",
+   "grade": 3,
+   "gradeReason": "1438 høgdemeter i eitt strekk, og storhellinga frå bjørkeskogen opp til skaret held 30-40° over 300-400 høgdemeter i eit terreng der det jamleg går skred. Sjølve toppen er lettvint å nå når ein fyrst er på platået, men lengda, hellinga og skavlane over austveggen gjer dette til ein krevjande, ikkje ein moderat tur.",
+   "hazardNotes": "Renna aust for Blåhornet går vanlegvis eitt eller fleire store skred ned mot setervegen kvar vinter, og oppstiginga går rett ved sida av henne; hellinga held 30-40° frå om lag 800 til 1100 moh. På toppplatået ligg det store skavlar mot aust, der fjellet fell 300 høgdemeter på 75 meter ned i Skåradalen - hald god avstand frå eggja. Nedkøyringa Vestrennene er 45° og er ikkje ein del av denne ruta.",
+   "teaserNo": "1438 høgdemeter frå bommen på Kvistadvegen, med det brattaste opp mot skaret på 1074 moh.",
+   "teaserEn": "1438 metres of ascent from the gate on Kvistadvegen, the steepest of it up to the 1074 m col.",
+   "sources": [
+    "https://www.friflyt.no/topptur/skiturer-sunnmoere/turbeskrivelse-skaarasalen",
+    "https://ut.no/turforslag/115419/topptur-til-skarasalen-1542-moh",
+    "https://www.westcoastpeaks.com/Peaks/skaarasalen.html",
+    "https://morotur.no/tur/Skaarasalen-1542-moh",
+    "https://www.visitnorway.no/listings/topptur-til-sk%C3%A5rasalen/234752/"
+   ],
+   "confidence": "high",
+   "notes": "Ruta er skildra som skitur av både Friflyt (start Bondalen eller Kvistadsætra, 1450 høgdemeter, gradering 'Komplekst') og ut.no (start Kvistadsætra, 1057 høgdemeter, sesong jan-mai). Skilnaden mellom dei to talstorleikane er berre kvar ein får parkert. roadClosedInWinter står som false fordi utgangspunktet er lagt nedanfor vinterstenginga, på bommen: sjølve setervegen ovanfor bommen er stengd om vinteren og opnar normalt seint i april eller tidleg i mai, og då kan ein køyre heilt til seterparkeringa på 509 moh og kutte 3,7 km og 405 høgdemeter. Dei to andre dokumenterte nedkøyringane - Lisje Skåradalen (25-30° krusterreng mot Skår ved Hjørundfjorden) og Vestrennene (45° ned til Årsetsætra) - er ikkje lagt inn i korridoren."
+  }
+ },
+ {
+  "slug": "skogshorn",
+  "verdict": "ok",
+  "corrections": [
+   "Trailhead moved 110 m: the first draft used outdooractive's start point 60.882168,8.753071 (894 m), which has no OSM feature under it. Re-querying OSM found a mapped car park, node/5742184342 (amenity=parking, parking=surface), at 60.88134,8.75133 immediately on Lykkjavegen at Hyndra bru. dtm_point gives 893.12 m there, matching ut.no's stated 904 moh and outdooractive's 894 m start.",
+   "Waypoints moved off the ridge crest. The first draft placed them on the crest line read off a DEM grid (60.883/8.705, 60.885/8.715, 60.887/8.720). Re-checking against OSM's piste:type=skitour way 402784116 and the marked summer path way 167235638 showed both run 200-400 m further north, on the broad NE shoulder. Moving the waypoints there dropped the steepest measured step on the corridor from 30.8 deg to 28.5 deg.",
+   "Descent aspect verified rather than assumed. The drop-weighted mean downhill bearing along the whole descent line measures 84 deg, i.e. Oe. Friflyt's alternative descent does run north from the summit down a gully to the 1100 m flat, but that is the variant, not the normal route, so recording this tour as N would have been wrong.",
+   "Noted, but not corrected: the first ~700 m from the car park share ground with groomed classic nordic tracks (OSM ways 986382225/227/228, piste:type=nordic, piste:grooming=classic). The trailhead itself is a car park, not a piste, and the corridor leaves the loype corridor as soon as it starts climbing."
+  ],
+  "rejectReason": "",
+  "corridor": {
+   "routeId": "normalruta",
+   "routeName": "Normalruta frå Trefta over austryggen",
+   "routeDescriptionFull": "Normalruta frå den store parkeringa ved Hyndra bru nedanfor Trefta på Lykkjavegen (Fv2920). Ein kryssar elva og går opp lia på vestsida, nordvestover over det opne beltet på 1000-1100 m, og inn på den breie austryggen ved ca. 1320 m. Ryggen blir følgd heile vegen til toppen. Vanlegaste nedkøyring er same veg; friflyt.no nemner òg ei renne rett nord frå toppen ned til flata på 1100 m og deretter sørover til parkeringa.",
+   "trailhead": {
+    "name": "Trefta p-plass ved Lykkjavegen",
+    "lat": 60.88134,
+    "lng": 8.75133,
+    "elevationM": 893.12,
+    "osmEvidence": "OSM node/5742184342, amenity=parking, parking=surface. Ligg rett ved Lykkjavegen, OSM way/605402967 og way/605402974: highway=secondary, ref=2920, surface=asphalt, maxspeed=80 - offentleg fylkesveg mellom Ulsåk og Lykkja som blir brøytt heile vinteren. ut.no omtalar plassen som 'stor opparbeidet parkeringsplass (904 moh) med frivillig P-avgift som går til det lokale løypelaget', altså ein plass som er i bruk om vinteren."
+   },
+   "waypoints": [
+    {
+     "name": "Lia over Trefta, 1095",
+     "lat": 60.88928,
+     "lng": 8.73177,
+     "elevationM": 1095.27
+    },
+    {
+     "name": "Foten av austryggen, 1323",
+     "lat": 60.88781,
+     "lng": 8.71432,
+     "elevationM": 1322.57
+    },
+    {
+     "name": "Austryggen 1595",
+     "lat": 60.88358,
+     "lng": 8.70528,
+     "elevationM": 1594.57
+    }
+   ],
+   "season": "feb–mai",
+   "roadClosedInWinter": false,
+   "aspect": "Ø",
+   "grade": 2,
+   "gradeReason": "Jamn, brei stigning utan tekniske parti eller trange passasjar. Brattaste målte steg på korridoren er 28,5 grader over 62 m nede i austryggen; resten ligg under 25 grader, og toppryggen sjølv er slak.",
+   "hazardNotes": "Den breie NØ-vendte fjellsida under austryggen samlar flakskavl etter vestleg vind, og det er her ein køyrer ned. Toppryggen er ofte avblåst og hard. Skogshornrenna vest og nord for toppen er ei eiga, skredutsett ekspertlinje på rundt 40 grader og må ikkje forvekslast med normalruta.",
+   "teaserNo": "836 høgdemeter frå Trefta opp den breie austryggen; brattaste måling er 28,5 grader.",
+   "teaserEn": "836 m of ascent from Trefta up the broad east ridge of Skogshorn; steepest measured step 28.5 degrees.",
+   "sources": [
+    "https://www.friflyt.no/topptur/skiturer-hemsedal/turbeskrivelse-skogshorn",
+    "https://www.toppturnorge.no/turer/skogshorn/",
+    "https://ut.no/turforslag/1111726500/skogshorn",
+    "https://www.outdooractive.com/en/route/hiking-trail/hemsedal/skogshorn-1728-masl-topp20-hemsedal/56007403/",
+    "https://www.openstreetmap.org/node/5742184342",
+    "https://www.openstreetmap.org/way/402784116",
+    "https://www.openstreetmap.org/way/167235638"
+   ],
+   "confidence": "high",
+   "notes": "Godt dokumentert tur. Friflyt: 'Oppstigningen følger vanligvis sommerløypa eller i skaret litt nord for denne. Gå fra vestsiden av elva rett mot ryggen og følg denne helt til topps', 800 høgdemeter, 3-4 timar. OSM har ein eigen piste:type=skitour-veg (way 402784116) opp same sida, og han og den merkte sommarstien (way 167235638) følgjer kvarandre innanfor 200-400 m - korridoren er lagd mellom dei. Målt vertikal frå p-plassen til toppen er 835,6 m (893,12 til 1728,68), som stemmer med outdooractive sine 834 m og friflyt sine 800 m. Straklinjelengda på korridoren er 3,6 km; publiserte 4,6-4,8 km er den svingande stien. Alle fire koordinatane er lesne tilbake frå ws.geonorge.no/hoydedata/v1/punkt og kjem ut som terreng 'ÅpentOmråde' over tregrensa."
+  }
+ },
+ {
+  "slug": "storronden",
+  "verdict": "ok",
+  "corrections": [
+   "Sjekket om Storronden deler start med rondslottet. Den gjør det: begge går fra Spranget p-plass (OSM way 37687797) og følger samme linje inn til stidelet over Rondvassbu på 1440 moh. Men korridoren er Storrondens egen — der rondslottet fortsetter nordover inn i Rondholet, tar denne av østover opp vestryggen. De fire første waypointene er gjenbrukt uendret fra den auditerte rondslottet-korridoren, med samme koordinater og samme DTM-verdier lest på nytt; de to siste (vestryggen 1816 moh og toppen) er nye.",
+   "Vestryggen er verifisert, ikke antatt. Profilen fra stidelet (1440,8 moh) til toppen er monotont stigende over 2,62 km med 698 høydemeter, og bratteste steg er 32°. Ingen gjenstigning, ingen egg — dette er en helt annen karakter enn rondslottets Vinjeronden–Slottsbrue-egg.",
+   "Aspektet ble først skrevet V, siden ruta kommer inn fra vest. Radialprofilar viser at rett vest (270°) fra toppen måler 49,6°, mens 225–255° holder 26–32°. Nedkjøringa er SV, ikke V. Nord og øst måler 56–67° og er ikke skiterreng.",
+   "Vegen: Tjønnbakkvegen til Spranget er bomveg, og parkeringa er offisielt åpen 15. juni–1. november. Midtvinters er Mysusæter siste brøytepunkt. roadClosedInWinter er derfor satt til true, med sesongen som et vårvindu — samme vurdering som den auditerte rondslottet-korridoren, som også starter fra Spranget."
+  ],
+  "rejectReason": "",
+  "corridor": {
+   "routeId": "normalruta",
+   "routeName": "Normalruta fra Spranget over vestryggen",
+   "routeDescriptionFull": "Fra Spranget p-plass (1082 moh) følger du Rondvassbu-vegen seks kilometer nordøstover, over 1137 moh og gjennom dalen sørvest for hytta, til Rondvassbu på 1214 moh. Rundt vika ved Lonin i sørenden av Rondvatnet holder du deg på land i stedet for å ta snarveien over isen. Bak hytta stiger det bratt mot nordøst opp til stidelet på ca 1440 moh. Der rondslottet-ruta fortsetter nordover inn i Rondholet, tar Storronden av mot høyre og østover opp på vestryggen. Ryggen stiger jevnt over 1816 moh og videre de siste 320 høydemeterne til toppen på 2139 moh. Samme vei ned.",
+   "trailhead": {
+    "name": "Spranget p-plass",
+    "lat": 61.83502,
+    "lng": 9.73108,
+    "elevationM": 1081.68,
+    "osmEvidence": "OSM way 37687797, amenity=parking, name=Spranget p-plass, senter 61.83502/9.73108 — samme mappede plass som den auditerte rondslottet-korridoren starter fra, i enden av bomvegen Tjønnbakkvegen fra Mysusæter. Rondane–Dovre nasjonalparkstyre oppgir parkeringa som åpen 15. juni–1. november; Mysusæter-parkeringa lenger ned er åpen hele året."
+   },
+   "waypoints": [
+    {
+     "name": "Stien fra Spranget, ca 1140 moh",
+     "lat": 61.8522,
+     "lng": 9.7567,
+     "elevationM": 1136.98
+    },
+    {
+     "name": "Dalen sørvest for Rondvassbu",
+     "lat": 61.8692,
+     "lng": 9.7873,
+     "elevationM": 1171.73
+    },
+    {
+     "name": "Rondvassbu",
+     "lat": 61.879,
+     "lng": 9.798,
+     "elevationM": 1213.62
+    },
+    {
+     "name": "Stidelet over Rondvassbu, ca 1440 moh",
+     "lat": 61.8855,
+     "lng": 9.8137,
+     "elevationM": 1439.92
+    },
+    {
+     "name": "Vestryggen, ca 1815 moh",
+     "lat": 61.88938,
+     "lng": 9.84388,
+     "elevationM": 1816.1
+    }
+   ],
+   "season": "mars–mai",
+   "roadClosedInWinter": true,
+   "aspect": "SV",
+   "grade": 2,
+   "gradeReason": "1057 høydemeter og 9,8 km én vei, hvorav de første seks kilometerne bare er innmarsj til Rondvassbu og stiger 132 høydemeter. Fjellet begynner bak hytta: 698 høydemeter på 2,6 km opp vestryggen, jevnt og monotont, med 32° som bratteste målte steg. Ingen egg og ingen gjenstigning — dette er en enklere tur enn Rondslottet fra samme parkering.",
+   "hazardNotes": "Vestryggen er slak, men det er bare den ene sida av fjellet som er det: nord faller 63°, øst og sørøst 56–67°, og rett vest fra toppen 50°. Hold deg på ryggen fra stidelet og oppover, og la være å slippe deg nordover mot Rondholet fra toppen. Ur på ryggen blåser ofte bar, og da bæres skiene. Rondane ligger i varslingsregion Nord-Gudbrandsdalen, en B-region på varsom.no der skredvarsel bare publiseres ved faregrad 4–5 — en tom side betyr ikke trygt fjell.",
+   "teaserNo": "1057 høydemeter fra Spranget: seks kilometer innmarsj til Rondvassbu, så 2,6 km jevn vestrygg fra stidelet på 1440 moh.",
+   "teaserEn": "1057 m of climbing from Spranget: six kilometres of approach to Rondvassbu, then 2.6 km of steady west ridge from the 1440 m junction.",
+   "sources": [
+    "https://ut.no/turforslag/11120/topptur-til-storronden-2138-moh",
+    "https://ut.no/kart/rutebeskrivelse/135882",
+    "https://rondane-dovre.no/startpunkt/",
+    "https://ut.no/hytte/101111/rondvassbu"
+   ],
+   "confidence": "high",
+   "notes": "Ut.no: «Fra Rondvassbu følger du merket og tydelig sti østover opp mot Rondholet. Etter ca 2 km kommer du til stidelet for Rondeslottet og Storronden. Her tar stien til Storronden av til høyre mot eggen nordøstover.» Stidelet er det samme punktet som den auditerte rondslottet-korridoren kaller «Stikrysset over Rondvassbu, ca 1440 m», og DTM1 gir 1439,92 moh der. Storronden deler altså start og de første 7,1 km med Rondslottet og skiller lag der. Ut.no oppgir 8,5 km og 959 høydemeter fra Rondvassbu; mine målinger gir 9,76 km og 1057 høydemeter fra Spranget, som er 3,7 km lenger ute. Merk startpunktet: bomvegen til Spranget brøytes ikke, og i mars–mai er Mysusæter (åpen hele året, ca 4,5 km og 100 høydemeter lenger ned) reelt vinterparkering. Korridoren beholder Spranget for å være konsistent med den auditerte rondslottet-korridoren."
+  }
+ },
+ {
+  "slug": "vesoldo",
+  "verdict": "ok",
+  "corrections": [
+   "Byrjinga stod på Perslå/Osadal-sida (peakbook 106283, 856 hm) og på Ryssing/Augastadvegen (westcoastpeaks, via Tørvikenuten). Sjekka mot OSM: den einaste kartlagde parkeringa innanfor 3,5 km av toppen er node 2919165915 ved Byrkjenes (capacity 10, fee no), og både ut.no og paturnorge namngjev nettopp «parkeringsplassen i Byrkjenes». Flytta trailhead dit.",
+   "Dei øvre vegpunkta låg først rett sør for toppen. flank_probe frå toppen gjev S 20,8° i snitt med eit 33,7°-belte 580–640 m ute, medan SV er 9,5°. Flytta ryggpunkta vestover på skulderen (lng 6,0845–6,0855) slik at linja følgjer den slake sørvestryggen og ikkje sørfallet.",
+   "Kryssjekk av høgd: DTM1 gjev 1045,64 m på toppen og 211,45 m på parkeringa = 834 hm, mot 850 hm publisert på ut.no. Retning trailhead → topp er 28° (NNA), som stemmer med «opp den skogkledde lia frå Strandebarm»."
+  ],
+  "rejectReason": "",
+  "corridor": {
+   "routeId": "normalruta",
+   "routeName": "Normalruta frå Byrkjenes over Fadnastølen",
+   "routeDescriptionFull": "Frå parkeringa ved Byrkjenes (211 m), innerst på bomvegen Tordalsvegen nord for Strandebarm, går ein opp den bratte skogkledde lia mot Fadnastølen (498 m). Over stølen opnar terrenget seg, og ruta held nordaustover inn på den breie sørvestryggen ved 629 m. Derfrå følgjer ein ryggen samanhengande nordover – 791 m, så skulderen på 977 m – før dei siste hundre metrane svingar nordaustover opp den slake toppkuppelen til varden på 1046 m. Heile den øvre delen ligg på open, jamn rygg; ein held seg vest for sørfallet og godt aust for stupa mot Goddalen.",
+   "trailhead": {
+    "name": "Byrkjenes parkering",
+    "lat": 60.28673,
+    "lng": 6.06502,
+    "elevationM": 211.45,
+    "osmEvidence": "OSM node 2919165915, amenity=parking, access=yes, fee=no, capacity=10, parking=surface, ved enden av Tordalsvegen (OSM way 1157691760/615487186, highway=service, med bru way 1157691761). Merka sti startar rett ved: OSM way 288358041, highway=path, sac_scale=hiking, trail_visibility=good."
+   },
+   "waypoints": [
+    {
+     "name": "Fadnastølen",
+     "lat": 60.29068,
+     "lng": 6.07731,
+     "elevationM": 497.65
+    },
+    {
+     "name": "Nedre del av sørvestryggen",
+     "lat": 60.294,
+     "lng": 6.081,
+     "elevationM": 629.19
+    },
+    {
+     "name": "Sørvestryggen 790",
+     "lat": 60.3005,
+     "lng": 6.0845,
+     "elevationM": 791.24
+    },
+    {
+     "name": "Skulderen 980",
+     "lat": 60.309,
+     "lng": 6.0855,
+     "elevationM": 976.6
+    }
+   ],
+   "season": "feb–apr",
+   "roadClosedInWinter": false,
+   "aspect": "SV",
+   "grade": 2,
+   "gradeReason": "834 høgdemeter og 3,4 km korridor. Nedste halvdelen er bratt skogsli (rundt 19° i snitt frå parkeringa til Fadnastølen), medan heile den øvre ryggen ligg på 10–13°. Ingenting krev anna enn skinn og vanleg vinterferdsel, men toppkuppelen står rett over stup mot nord og vest.",
+   "hazardNotes": "Hald deg på sørvestryggen heilt opp. Nordsida og nordvestsida av toppen fell 55° og vestsida 48° innanfor 800 m frå varden, og i flatt lys er kanten ikkje synleg. Den skogkledde lia over Byrkjenes er bratt nok til å gå laus etter mildvêr og regn, og Tordalsvegen er privat bomveg – brøyting til parkeringa er ikkje garantert.",
+   "teaserNo": "834 høgdemeter frå Byrkjenes, skog opp til Fadnastølen og open sørvestrygg over; nord- og vestsida av toppen fell 48–55°.",
+   "teaserEn": "834 m of ascent from Byrkjenes, forest up to Fadnastølen and an open south-west shoulder above; the north and west sides fall 48–55°.",
+   "sources": [
+    "https://ut.no/turforslag/119618/vesoldo",
+    "https://paturnorge.no/turtips/premium/fjelltur-til-vesoldo-1046-moh-i-kvam",
+    "https://www.westcoastpeaks.com/Peaks/vesoldo.html",
+    "https://peakbook.org/no/tour/106283/Vesoldo+-+Kvam.html",
+    "https://hardangerfjord.com/en/attractions/ski-touring-with-hardangerfjord-adventure-6526703",
+    "https://www.openstreetmap.org/node/2919165915"
+   ],
+   "confidence": "medium",
+   "notes": "Vesoldo er ein dokumentert toppturfjell – Hardangerfjord Adventure fører guida skiturar på «Vesoldo/Tørvikanuten» og oppgjev 700–1000 høgdemeter, som passar med dei 834 vi måler frå Byrkjenes. Men ingen publiserer ei eiga skiruteskildring for fjellet. Korridoren følgjer derfor den dokumenterte normalruta frå Byrkjenes i den nedre delen, og er over tregrensa lagd på den sørvestryggen DTM1 viser er den slake sida (SV 9,5° i snitt mot S 20,8°, V 48,3° og NV 55,3°) – ikkje på den raudmerka sommarstien. Det finst to andre dokumenterte oppgangar som ikkje er brukte her: frå Perslå via Osadal, Finnhellersvatnet og Knostenakkjen (aust), og frå Ryssing via Skorsete og Tørvikenuten (søraust); ingen av dei har kartlagd parkering nær starten."
+  }
+ }
+]

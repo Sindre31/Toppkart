@@ -79,5 +79,5 @@ PEAKS = [
     ("vesoldo", "Vesoldo", ["Kvam"], 1046, 60.312, 6.092),
     ("saebyggjenuten", "Sæbyggjenuten", ["Bykle", "Tokke"], 1507, 59.462, 7.626),
     ("kjerag", "Kjerag", ["Sandnes"], 1110, 59.021, 6.580),
-    ("urdalsknuten", "Urdalsknuten", ["Sirdal"], 1054, 58.926, 6.973),
+    ("grubba", "Grubbå", ["Sirdal"], 1184, 58.94971, 6.99479),
 ]

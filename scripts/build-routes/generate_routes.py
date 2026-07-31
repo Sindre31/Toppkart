@@ -12,6 +12,7 @@ same peak has its own vertical and is not expected to match.
 
 import json
 import math
+import os
 import sys
 
 from geo import haversine
@@ -97,9 +98,16 @@ def main():
     corridors = json.load(open("corridors.json"))
     tours = json.load(open("tourmeta.json"))
 
-    out = {}
+    # `generate_routes.py [slug …]` routes only those tours and merges them into
+    # the existing routes.json. Routing is ten minutes of Dijkstra over DTM1 for
+    # the whole set, so re-solving 56 unchanged lines to add one is the
+    # difference between iterating on a corridor and waiting on one.
+    only = set(sys.argv[1:])
+    out = json.load(open("routes.json")) if only and os.path.exists("routes.json") else {}
     bad = []
     for slug, summit in summits.items():
+        if only and slug not in only:
+            continue
         if slug not in corridors:
             bad.append(f"{slug}: no corridor")
             continue
