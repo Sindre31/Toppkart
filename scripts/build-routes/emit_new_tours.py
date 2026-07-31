@@ -19,6 +19,7 @@ the check for the first two rather than the source.
 import json
 import os
 import re
+import sys
 
 from newtours import NEW_TOURS
 
@@ -52,6 +53,32 @@ def order(slugs, summits):
     return sorted(slugs, key=lambda slug: -summits[slug]["lat"])
 
 
+TEASER_VERTICAL = (
+    re.compile(r"(?<![\d,])(\d{3,4})(?=\s*(?:høydemeter|høgdemeter))"),
+    re.compile(r"(?<![\d.])(\d{3,4})(?=\s*(?:m|metres)\b[^.;:]{0,20}?(?:ascent|climbing))"),
+)
+TEASER_TOL_M = 15
+
+
+def teaser_vertical_disagreements(slug, meta, vertical):
+    """A teaser that quotes its own vertical has to quote the card's.
+
+    The research wrote summit-minus-trailhead — Hamperokken's «1332 høydemeter»
+    is exactly 1397 − 65 — while the card carries cumulative ascent, which is
+    what the word means in a tour description. Both numbers were right and they
+    appeared one above the other in the same card, differing by 68 m.
+    """
+    out = []
+    for key, rx in zip(("teaserNo", "teaserEn"), TEASER_VERTICAL):
+        text = meta.get(key)
+        if not text:
+            continue
+        found = rx.search(text)
+        if found and abs(int(found.group(1)) - vertical) > TEASER_TOL_M:
+            out.append(f"{slug}.{key} says {found.group(1)} m, the card says {vertical} m")
+    return out
+
+
 def rewrite_tours(rows_by_slug, summits):
     path = os.path.join(REPO, "lib", "tours.ts")
     src = open(path).read().splitlines(keepends=True)
@@ -72,22 +99,46 @@ def rewrite_tours(rows_by_slug, summits):
     print(f"lib/tours.ts: {len(merged)} tours ({len(rows_by_slug)} new)")
 
 
+TEASER_EN_ENTRY = re.compile(
+    r'^[ \t]*"?([a-z][a-z0-9-]*)"?:\s*\n?\s*("(?:[^"\\]|\\.)*"),\s*$', re.MULTILINE
+)
+
+
 def rewrite_teasers_en(teasers):
+    """Merge, not append.
+
+    This used to skip any slug already present, which quietly made the file
+    append-only: correcting a teaser in `new_tourmeta.json` re-emitted the
+    Norwegian one and left the English one carrying the old text. Same tour, two
+    languages, two different numbers.
+    """
     path = os.path.join(REPO, "lib", "i18n", "content.ts")
     src = open(path).read()
     anchor = "export const TOUR_TEASER_EN: Record<string, string> = {"
     start = src.index(anchor) + len(anchor)
     end = src.index("\n};", start)
     block = src[start:end]
+
+    existing = {m.group(1): m.group(2) for m in TEASER_EN_ENTRY.finditer(block)}
+    if not existing:
+        raise SystemExit("no English teasers found in lib/i18n/content.ts")
+
+    added = updated = 0
+    merged = dict(existing)
     for slug, text in teasers.items():
-        if f"\n  {slug}:" in block or f'\n  "{slug}":' in block:
-            continue
-        key = slug if re.fullmatch(r"[a-z][a-z0-9]*", slug) else f'"{slug}"'
         body = json.dumps(text, ensure_ascii=False)
-        line = f"  {key}:\n    {body},"
-        block += ("" if block.endswith("\n") else "\n") + line + "\n"
-    open(path, "w").write(src[:start] + block + src[end:])
-    print(f"lib/i18n/content.ts: +{len(teasers)} English teasers")
+        if slug not in merged:
+            added += 1
+        elif merged[slug] != body:
+            updated += 1
+        merged[slug] = body
+
+    lines = []
+    for slug, body in merged.items():
+        key = slug if re.fullmatch(r"[a-z][a-z0-9]*", slug) else f'"{slug}"'
+        lines.append(f"  {key}:\n    {body},")
+    open(path, "w").write(src[:start] + "\n" + "\n".join(lines) + "\n" + src[end:])
+    print(f"lib/i18n/content.ts: {len(merged)} English teasers (+{added} new, {updated} corrected)")
 
 
 def rewrite_seed(sql_by_slug, summits):
@@ -113,12 +164,13 @@ def main():
     tourmeta = json.load(open("tourmeta.json"))
 
     ts_rows, sql_rows, teasers = {}, {}, {}
-    skipped = []
+    skipped, mismatched = [], []
     for slug, (name, region) in NEW_TOURS.items():
         if slug not in metrics or slug not in meta:
             skipped.append(slug)
             continue
         s, m, mt = summits[slug], metrics[slug], meta[slug]
+        mismatched += teaser_vertical_disagreements(slug, mt, m["verticalM"])
         ts_rows[slug] = ts_row(slug, name, region, s, m, mt)
         sql_rows[slug] = sql_row(slug, name, region, s, m, mt)
         if mt.get("teaserEn"):
@@ -150,7 +202,13 @@ def main():
         print("\nno route or no research, left off the map:")
         for slug in skipped:
             print("  -", slug)
+    if mismatched:
+        print("\nteaser and card disagree about the vertical:")
+        for line in mismatched:
+            print("  -", line)
+        return 1
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())
