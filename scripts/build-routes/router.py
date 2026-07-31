@@ -241,23 +241,61 @@ def simplify(points, eps_m):
     return [p for p, k in zip(points, keep) if k]
 
 
-def chaikin(points, iterations=2):
-    """Corner cutting, endpoints pinned."""
+def turn_deg(a, b, c):
+    """How far the line turns at b, in degrees. 0 is straight on, 180 doubles back."""
+    lngscale = 111320.0 * math.cos(math.radians(b[0]))
+    ax, ay = (a[1] - b[1]) * lngscale, (a[0] - b[0]) * 110540.0
+    cx, cy = (c[1] - b[1]) * lngscale, (c[0] - b[0]) * 110540.0
+    if (ax == 0 and ay == 0) or (cx == 0 and cy == 0):
+        return 0.0
+    return 180.0 - math.degrees(
+        math.acos(max(-1.0, min(1.0, (ax * cx + ay * cy) / (math.hypot(ax, ay) * math.hypot(cx, cy)))))
+    )
+
+
+# A skin track turns through nearly 180° at every kick turn, and those corners
+# are the route: they are how the line stays at a skinnable angle on ground that
+# is not. Both smoothing passes below cut corners, which on an open slope is what
+# you want and on a switchback deletes the zigzag — the line then runs straight
+# up the fall line between two legs of the track. On Hamperokken that replaced
+# 376 m of walking at 14° with a 30 m chord at 48°, and the 48° was then reported
+# as the terrain being unskiable. Corners sharper than this are kept intact.
+KICK_TURN_DEG = 55.0
+
+
+def chaikin(points, iterations=2, keep_turn_deg=KICK_TURN_DEG):
+    """Corner cutting, endpoints and kick turns pinned."""
     pts = list(points)
     for _ in range(iterations):
         if len(pts) < 3:
             break
+        sharp = {
+            i
+            for i in range(1, len(pts) - 1)
+            if turn_deg(pts[i - 1], pts[i], pts[i + 1]) >= keep_turn_deg
+        }
         out = [pts[0]]
-        for a, b in zip(pts, pts[1:]):
+        for i, (a, b) in enumerate(zip(pts, pts[1:])):
+            if i in sharp:
+                out.append(a)
             out.append((a[0] * 0.75 + b[0] * 0.25, a[1] * 0.75 + b[1] * 0.25))
             out.append((a[0] * 0.25 + b[0] * 0.75, a[1] * 0.25 + b[1] * 0.75))
+            if i + 1 in sharp:
+                out.append(b)
         out.append(pts[-1])
         pts = out
     return pts
 
 
 def resample(points, step_m):
-    """Even spacing along the line, endpoints preserved."""
+    """Even spacing along the line — endpoints and every input vertex preserved.
+
+    Interpolated points are added *between* the input vertices rather than
+    instead of them. Dropping a vertex is only safe where the line is straight,
+    and the places it is not straight are exactly the kick turns; a step longer
+    than a switchback leg would otherwise skip the apex and join the two legs
+    with a chord straight up the fall line.
+    """
     if len(points) < 2:
         return list(points)
     out = [points[0]]
@@ -272,12 +310,48 @@ def resample(points, step_m):
             out.append((a[0] + (b[0] - a[0]) * f, a[1] + (b[1] - a[1]) * f))
             t += step_m
         carry = (carry + seg) % step_m
-    if haversine(*out[-1], *points[-1]) > step_m * 0.3:
-        out.append(points[-1])
-    else:
-        out[-1] = points[-1]
+        out.append(b)
+    out[-1] = points[-1]
     return out
 
 
 def path_length_m(points):
     return sum(haversine(a[0], a[1], b[0], b[1]) for a, b in zip(points, points[1:]))
+
+
+# Shortest run of ground over which calling something «a slope» means anything.
+# Below this the number is the terrain model's own noise: on Hamperokken the
+# steepest «step» in the line was 1.5 m long and 2.0 m high, which is not a
+# 53° slope, it is two adjacent DTM cells disagreeing.
+SLOPE_WINDOW_M = 30.0
+
+
+def steepest_gradient(points, elevations, window_m=SLOPE_WINDOW_M):
+    """Steepest sustained gradient along the line, in degrees.
+
+    Measured over the ground actually covered rather than between neighbouring
+    vertices, for two reasons that both used to inflate it:
+
+    - Adjacent vertices can be a metre apart, and a metre of DTM1 is noise.
+    - A skin track's straight-line displacement across a kick turn is nearly
+      zero while its climb is not, so the chord between two points either side
+      of a switchback reads as a cliff. Walking distance is also the honest
+      denominator: it is what the skier climbs over.
+    """
+    if len(points) < 2:
+        return 0.0
+    d = [0.0]
+    for a, b in zip(points, points[1:]):
+        d.append(d[-1] + haversine(a[0], a[1], b[0], b[1]))
+
+    worst = 0.0
+    j = 0
+    for i in range(len(points)):
+        j = max(j, i + 1)
+        while j < len(points) and d[j] - d[i] < window_m:
+            j += 1
+        if j >= len(points):
+            break
+        run = d[j] - d[i]
+        worst = max(worst, abs(math.degrees(math.atan2(elevations[j] - elevations[i], run))))
+    return worst

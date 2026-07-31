@@ -58,10 +58,12 @@ def main():
 
     chunks = [HEADER, "/** Routes per tour, the tour's own route first. */\n"]
     chunks.append("export const ROUTES: Record<string, readonly TourRoute[]> = {\n")
+    written = {}
     for slug in order:
         recs = routes.get(slug)
         if not recs:
             continue
+        written[slug] = recs
         key = slug if "-" not in slug else f'"{slug}"'
         chunks.append(f"  {key}: [\n")
         for r in recs:
@@ -85,11 +87,16 @@ def main():
     path = os.path.join(REPO, "lib", "routes.ts")
     with open(path, "w") as f:
         f.write("".join(chunks))
-    n = sum(len(r["points"]) for recs in routes.values() for r in recs)
-    total = sum(len(recs) for recs in routes.values())
+    # Count what was written, not what was read: routes.json also holds lines for
+    # peaks that are routed but not yet published, and reporting those as shipped
+    # is how a tour looks live when it is not.
+    n = sum(len(r["points"]) for recs in written.values() for r in recs)
+    total = sum(len(recs) for recs in written.values())
+    held = len(routes) - len(written)
     print(
-        f"wrote {path}: {len(routes)} tours, {total} routes, {n} points, "
+        f"wrote {path}: {len(written)} tours, {total} routes, {n} points, "
         f"{os.path.getsize(path)/1024:.0f} KB"
+        + (f" ({held} routed but unpublished tours left out)" if held else "")
     )
 
 
