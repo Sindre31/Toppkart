@@ -87,6 +87,20 @@ export interface Dict {
   showInfo: string;
   /** Clears the picked peak and returns to the plain map. */
   clearPeak: string;
+  /* — today's avalanche danger, from Varsom — */
+  avalancheTitle: string;
+  /** 1–5 on the European scale, indexed from 1. */
+  dangerLevels: readonly string[];
+  dangerLevelLabel: (level: number, name: string) => string;
+  /** Out of season: in a region, but nobody has assessed today. */
+  dangerNotAssessed: string;
+  /** The peak is not inside any Varsom forecast region. */
+  dangerOutsideRegion: string;
+  /** We could not reach Varsom. */
+  dangerUnavailable: string;
+  dangerLoading: string;
+  dangerSource: string;
+
   unlockedTitle: string;
   unlockedBody: string;
   guidePending: string;
@@ -146,6 +160,14 @@ const MAP: Translated<Dict> = {
     showList: "Vis liste",
     showInfo: "Vis info",
     clearPeak: "Lukk valgt topp",
+    avalancheTitle: "Skredfare i dag",
+    dangerLevels: ["Liten", "Moderat", "Betydelig", "Stor", "Meget stor"],
+    dangerLevelLabel: (level, name) => `Faregrad ${level} — ${name}`,
+    dangerNotAssessed: "Ikke vurdert i dag. Varsom varsler i skredsesongen, omtrent desember til mai.",
+    dangerOutsideRegion: "Toppen ligger utenfor Varsoms varslingsregioner.",
+    dangerUnavailable: "Skredvarselet kunne ikke hentes nå. Sjekk varsom.no før du drar.",
+    dangerLoading: "Henter skredvarsel …",
+    dangerSource: "Varsom.no",
     unlockedTitle: "Du har full tilgang",
     unlockedBody: "Rutebeskrivelse, høydeprofil, GPX og skredterreng er åpne for deg.",
     guidePending: "Full turguide for denne toppen er under arbeid.",
@@ -210,6 +232,14 @@ const MAP: Translated<Dict> = {
     showList: "Show list",
     showInfo: "Show info",
     clearPeak: "Clear selected peak",
+    avalancheTitle: "Avalanche danger today",
+    dangerLevels: ["Low", "Moderate", "Considerable", "High", "Very high"],
+    dangerLevelLabel: (level, name) => `Danger level ${level} — ${name}`,
+    dangerNotAssessed: "Not assessed today. Varsom forecasts during the avalanche season, roughly December to May.",
+    dangerOutsideRegion: "This peak lies outside Varsom's forecast regions.",
+    dangerUnavailable: "Could not load the avalanche forecast. Check varsom.no before you go.",
+    dangerLoading: "Loading avalanche forecast …",
+    dangerSource: "Varsom.no",
     unlockedTitle: "You have full access",
     unlockedBody: "Route description, elevation profile, GPX and avalanche terrain are open to you.",
     guidePending: "The full guide for this peak is still being written.",

@@ -20,6 +20,7 @@ import type { Lang } from "@/lib/i18n";
 import { localizeTours } from "@/lib/i18n/content";
 import { mapDict, type Dict } from "@/lib/i18n/map";
 import type { Grade, Tour } from "@/lib/types";
+import { AvalanchePanel } from "./AvalanchePanel";
 import s from "./kart.module.css";
 
 /* One lazy wrapper, created once at module scope. A wrapper per language would
@@ -277,6 +278,12 @@ export default function MapView({
 
             <div className={s.dBody}>
               <p className={s.teaser}>{selected.teaser}</p>
+
+              {/* Open to everyone, subscription or not. A danger level is
+                  safety information about the mountain someone is looking at
+                  right now; putting it behind the paywall would be the one
+                  thing on this page it is not defensible to withhold. */}
+              <AvalanchePanel slug={selected.slug} lang={lang} />
 
               {selected.hasGuide ? (
                 <Link className={`btn btn-secondary ${s.guideLink}`} href={`/tur/${selected.slug}`}>

@@ -8,6 +8,12 @@ import { LANG_COOKIE, LANG_COOKIE_MAX_AGE, LANG_PARAM, isLang } from "@/lib/i18n
  *  choice persists, the address bar stays clean, and `/kart?lang=en` remains a
  *  shareable entry point into the English site. */
 function languageRedirect(request: NextRequest): NextResponse | null {
+  /* Pages only. `?lang=` is a reader-facing switch, and answering an API call
+     with a redirect plus a cookie is not what a caller asked for — it silently
+     swallowed `/api/skredvarsel?...&lang=no`, which never reached its handler
+     at all. Route handlers read the language off the query themselves. */
+  if (request.nextUrl.pathname.startsWith("/api/")) return null;
+
   const requested = request.nextUrl.searchParams.get(LANG_PARAM);
   if (!isLang(requested)) return null;
 
