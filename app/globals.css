@@ -356,7 +356,13 @@ a.btn-secondary, a.btn-secondary:hover { color: var(--color-text); }
      switcher each give up a little rather than one of them giving up a lot. */
   .site-nav {
     padding: 10px 10px;
-    gap: 10px;
+    gap: 8px;
+    /* Equal spacing means no auto margins. Those pushed the wordmark hard left
+       and the switcher hard right, so the freed space pooled into the two edge
+       gaps — 20px there against 10px in the middle, which is what made the bar
+       read as separate clumps. Centring the whole group instead gives one gap
+       value between every pair, with the leftover split evenly outside. */
+    justify-content: center;
     flex-wrap: nowrap;
     /* Below ~360px the row genuinely cannot hold all four without dropping one.
        Letting the nav scroll on its own axis keeps that from becoming a
@@ -367,8 +373,8 @@ a.btn-secondary, a.btn-secondary:hover { color: var(--color-text); }
   .site-nav::-webkit-scrollbar { display: none; }
   /* The two auto margins are what put the links in the middle: the wordmark
      pushes right, the switcher pushes left, and the links settle between. */
-  .site-nav .lang-switch { margin-left: auto; flex: none; }
-  .site-nav .nav-brand { font-size: 14px; letter-spacing: 0.04em; flex: none; }
+  .site-nav .lang-switch { margin-left: 0; flex: none; }
+  .site-nav .nav-brand { font-size: 14px; letter-spacing: 0.04em; flex: none; margin-right: 0; }
   .site-nav a { font-size: 13px; }
   .nav-muted { font-size: 13px !important; }
   /* Nothing in a single row may wrap or shrink into an ellipsis. */
