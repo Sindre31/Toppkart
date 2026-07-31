@@ -20,17 +20,27 @@ export async function getDemoEmail(): Promise<string | null> {
   return jar.get(DEMO_COOKIE.session)?.value ?? null;
 }
 
-export async function setDemoEmail(email: string) {
+export async function setDemoEmail(email: string, provider: DemoProvider = "email") {
   const jar = await cookies();
-  jar.set(DEMO_COOKIE.session, email, {
-    httpOnly: true, sameSite: "lax", path: "/", maxAge: 60 * 60 * 24 * 30,
-  });
+  const opts = { httpOnly: true, sameSite: "lax" as const, path: "/", maxAge: 60 * 60 * 24 * 30 };
+  jar.set(DEMO_COOKIE.session, email, opts);
+  jar.set(DEMO_COOKIE.provider, provider, opts);
+}
+
+/** Which way the demo session was opened. Live mode reads this off the
+ *  Supabase identities instead; the cookie only stands in for that. */
+export type DemoProvider = "email" | "google";
+
+export async function getDemoProvider(): Promise<DemoProvider> {
+  const jar = await cookies();
+  return jar.get(DEMO_COOKIE.provider)?.value === "google" ? "google" : "email";
 }
 
 export async function clearDemoSession() {
   const jar = await cookies();
   jar.delete(DEMO_COOKIE.session);
   jar.delete(DEMO_COOKIE.subscription);
+  jar.delete(DEMO_COOKIE.provider);
 }
 
 export async function getDemoSubscription(): Promise<Subscription | null> {

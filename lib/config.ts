@@ -52,4 +52,10 @@ export const isStripeConfigured = Boolean(env.stripeSecretKey);
 export const isResendConfigured = Boolean(env.resendApiKey);
 
 /** Cookie names used by demo mode. */
-export const DEMO_COOKIE = { session: "tk_demo_session", subscription: "tk_demo_sub" } as const;
+export const DEMO_COOKIE = {
+  session: "tk_demo_session",
+  subscription: "tk_demo_sub",
+  /** Which route opened the demo session, so `/min-side` can behave the way
+   *  it would in live mode instead of always showing the e-mail form. */
+  provider: "tk_demo_provider",
+} as const;

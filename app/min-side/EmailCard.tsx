@@ -6,10 +6,31 @@ import type { Lang } from "@/lib/i18n";
 import { accountDict } from "@/lib/i18n/account";
 import { getSupabaseBrowserClient } from "@/lib/supabase/client";
 
-/** «03 · Konto» — e-postkortet. Endring bekreftes med en lenke til den nye
- *  adressen (Supabase sender den i live-modus; i demo-modus vises bare
- *  bekreftelsen). Ingen nyhetsbrev eller varsler — bevisst fjernet. */
-export function EmailCard({ email, lang }: { email: string; lang: Lang }) {
+/** «03 · Konto» — e-postkortet.
+ *
+ *  To utgaver, avhengig av hvor adressen kommer fra. Logger du inn med en
+ *  lenke på e-post, er adressen din egen og kan endres her; endringen
+ *  bekreftes med en lenke til den nye adressen (Supabase sender den i
+ *  live-modus, i demo-modus vises bare bekreftelsen).
+ *
+ *  Er kontoen knyttet til Google, eier Google adressen. Da vises den bare.
+ *  Å tilby et endre-felt der ville vært misvisende: det endrer ikke hvordan
+ *  du logger inn, bare hvor kvitteringene havner — og neste innlogging ville
+ *  uansett hentet Google-adressen tilbake.
+ *
+ *  Ingen nyhetsbrev eller varsler — bevisst fjernet.
+ */
+export function EmailCard({
+  email,
+  googleAccount,
+  lang,
+}: {
+  email: string;
+  /** `Viewer.hasGoogleIdentity` — the address belongs to Google, so it is
+   *  shown rather than offered for editing. */
+  googleAccount: boolean;
+  lang: Lang;
+}) {
   const t = accountDict(lang);
   const [value, setValue] = useState(email);
   const [busy, setBusy] = useState(false);
@@ -48,43 +69,51 @@ export function EmailCard({ email, lang }: { email: string; lang: Lang }) {
       <h2 style={{ fontSize: 18, letterSpacing: "0.02em", textTransform: "uppercase", margin: "0 0 12px" }}>
         {t.emailCardTitle}
       </h2>
-      <form
-        noValidate
-        onSubmit={(event) => {
-          event.preventDefault();
-          void change();
-        }}
-        style={{ display: "flex", gap: 8 }}
-      >
-        <input
-          className="input"
-          type="email"
-          value={value}
-          aria-label={t.emailLabel}
-          onChange={(event) => {
-            setValue(event.target.value);
-            if (message) setMessage(null);
-          }}
-          style={{ flex: 1 }}
-        />
-        <button className="btn btn-secondary" type="submit" disabled={busy}>
-          {t.changeEmail}
-        </button>
-      </form>
-      {message ? (
-        <p
-          className="note"
-          role="status"
-          style={{
-            margin: "10px 0 0",
-            color: message.tone === "error" ? "var(--color-accent-800)" : undefined,
-          }}
-        >
-          {message.text}
-        </p>
-      ) : null}
+
+      {googleAccount ? (
+        <p style={{ margin: 0, fontWeight: 500 }}>{email}</p>
+      ) : (
+        <>
+          <form
+            noValidate
+            onSubmit={(event) => {
+              event.preventDefault();
+              void change();
+            }}
+            style={{ display: "flex", gap: 8 }}
+          >
+            <input
+              className="input"
+              type="email"
+              value={value}
+              aria-label={t.emailLabel}
+              onChange={(event) => {
+                setValue(event.target.value);
+                if (message) setMessage(null);
+              }}
+              style={{ flex: 1 }}
+            />
+            <button className="btn btn-secondary" type="submit" disabled={busy}>
+              {t.changeEmail}
+            </button>
+          </form>
+          {message ? (
+            <p
+              className="note"
+              role="status"
+              style={{
+                margin: "10px 0 0",
+                color: message.tone === "error" ? "var(--color-accent-800)" : undefined,
+              }}
+            >
+              {message.text}
+            </p>
+          ) : null}
+        </>
+      )}
+
       <p className="note" style={{ margin: "10px 0 0" }}>
-        {t.emailCardNote}
+        {googleAccount ? t.emailCardNoteGoogle : t.emailCardNote}
       </p>
     </Blueprint>
   );

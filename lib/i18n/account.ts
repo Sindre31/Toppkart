@@ -115,6 +115,8 @@ export interface AccountDict {
   errEmailChangeFailed: string;
   emailChangeSent: (email: string) => string;
   emailCardNote: string;
+  /** Shown instead, when the address comes from a linked Google account. */
+  emailCardNoteGoogle: string;
   /* — account: footer — */
   aboutSubscription: string;
 }
@@ -209,7 +211,9 @@ const ACCOUNT: Translated<AccountDict> = {
     emailChangeSent: (email) =>
       `Vi har sendt en bekreftelseslenke til ${email}. Åpne den for å fullføre endringen.`,
     emailCardNote:
-      "Du kan logge inn med lenke til denne adressen, eller med Google. Ingen passord. Logger du inn med Google, er det Google-adressen som gjelder.",
+      "Du logger inn med en lenke til denne adressen — ingen passord. Endrer du den, sender vi en bekreftelseslenke til den nye.",
+    emailCardNoteGoogle:
+      "Adressen kommer fra Google-kontoen du logger inn med, og kan ikke endres her. Endrer du den hos Google, følger den etter.",
     aboutSubscription: "Om abonnementet",
   },
   en: {
@@ -301,7 +305,9 @@ const ACCOUNT: Translated<AccountDict> = {
     emailChangeSent: (email) =>
       `We have sent a confirmation link to ${email}. Open it to finish the change.`,
     emailCardNote:
-      "You can sign in with a link sent to this address, or with Google. No password. If you sign in with Google, the Google address is the one that counts.",
+      "You sign in with a link sent to this address — no password. Change it and we send a confirmation link to the new one.",
+    emailCardNoteGoogle:
+      "This address comes from the Google account you sign in with, and cannot be changed here. Change it at Google and it follows.",
     aboutSubscription: "About the subscription",
   },
 };
