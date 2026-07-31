@@ -348,10 +348,19 @@ a.btn-primary, a.btn-primary:hover { color: var(--color-bg); }
 a.btn-secondary, a.btn-secondary:hover { color: var(--color-text); }
 @media (max-width: 620px) {
   .site-nav { padding: 10px 20px; gap: var(--space-3); flex-wrap: wrap; }
-  /* A nav with enough links wraps here, and the brand's `margin-right: auto`
-     only pushes the first row. Without this the switcher lands at the left end
-     of the second row instead of staying in the right-hand corner. */
-  .site-nav .lang-switch { margin-left: auto; }
+
+  /* The nav does not fit on one row on a phone, so it wraps — and source order
+     alone put the switcher last, stranding it at the bottom. Reordering pairs
+     it with the wordmark on the top row, where it sits in the right-hand corner
+     on every other width, and lets the links take the second row.
+
+     `::after` is a flex item too: given zero height and a full-width basis it
+     is a forced line break, which is what pins the split to exactly here rather
+     than wherever the widths happen to land. */
+  .site-nav .nav-brand { order: 1; }
+  .site-nav .lang-switch { order: 2; margin-left: auto; }
+  .site-nav::after { content: ""; order: 3; flex-basis: 100%; height: 0; }
+  .site-nav > *:not(.nav-brand):not(.lang-switch) { order: 4; }
   /* "Norsk"/"English" costs 133px; "NO"/"EN" costs 70. That is the difference
      between the map's 56px topbar fitting on a phone and clipping a language
      nobody can then reach. */
