@@ -1,13 +1,13 @@
 {
- "tromsdalstinden": {
-  "name": "Tromsdalstinden",
-  "region": "Troms",
-  "summitM": 1238,
-  "verticalM": 1200,
+ "storgalten": {
+  "name": "Storgalten",
+  "region": "Lyngen",
+  "summitM": 1219,
+  "verticalM": 1219,
   "duration": "5–7 t",
-  "grade": 2,
-  "aspect": "V",
-  "season": "des–mai",
+  "grade": 3,
+  "aspect": "NV",
+  "season": "feb–mai",
   "hasGuide": false
  },
  "store-blamann": {
@@ -21,15 +21,15 @@
   "season": "feb–mai",
   "hasGuide": false
  },
- "storgalten": {
-  "name": "Storgalten",
-  "region": "Lyngen",
-  "summitM": 1219,
-  "verticalM": 1219,
+ "tromsdalstinden": {
+  "name": "Tromsdalstinden",
+  "region": "Troms",
+  "summitM": 1238,
+  "verticalM": 1200,
   "duration": "5–7 t",
-  "grade": 3,
-  "aspect": "NV",
-  "season": "feb–mai",
+  "grade": 2,
+  "aspect": "V",
+  "season": "des–mai",
   "hasGuide": false
  },
  "rornestinden": {
@@ -63,6 +63,17 @@
   "grade": 2,
   "aspect": "S",
   "season": "jan–apr",
+  "hasGuide": false
+ },
+ "keipen": {
+  "name": "Keipen",
+  "region": "Senja",
+  "summitM": 938,
+  "verticalM": 840,
+  "duration": "3–5 t",
+  "grade": 3,
+  "aspect": "S",
+  "season": "jan–mai",
   "hasGuide": false
  },
  "rombakstotta": {
@@ -109,15 +120,15 @@
   "season": "des–mai",
   "hasGuide": true
  },
- "slogen": {
-  "name": "Slogen",
-  "region": "Sunnmøre",
-  "summitM": 1564,
-  "verticalM": 1480,
-  "duration": "6–8 t",
-  "grade": 4,
-  "aspect": "V",
-  "season": "mar–mai",
+ "snohetta": {
+  "name": "Snøhetta",
+  "region": "Dovrefjell",
+  "summitM": 2286,
+  "verticalM": 820,
+  "duration": "5–7 t",
+  "grade": 2,
+  "aspect": "Ø",
+  "season": "apr–jun",
   "hasGuide": false
  },
  "kolastinden": {
@@ -131,6 +142,61 @@
   "season": "feb–mai",
   "hasGuide": false
  },
+ "saudehornet": {
+  "name": "Saudehornet",
+  "region": "Sunnmøre",
+  "summitM": 1303,
+  "verticalM": 1150,
+  "duration": "4–6 t",
+  "grade": 3,
+  "aspect": "SV",
+  "season": "jan–mai",
+  "hasGuide": false
+ },
+ "slogen": {
+  "name": "Slogen",
+  "region": "Sunnmøre",
+  "summitM": 1564,
+  "verticalM": 1480,
+  "duration": "6–8 t",
+  "grade": 4,
+  "aspect": "V",
+  "season": "mar–mai",
+  "hasGuide": false
+ },
+ "skarasalen": {
+  "name": "Skårasalen",
+  "region": "Sunnmøre",
+  "summitM": 1542,
+  "verticalM": 1430,
+  "duration": "6–8 t",
+  "grade": 3,
+  "aspect": "V",
+  "season": "jan–mai",
+  "hasGuide": false
+ },
+ "rondslottet": {
+  "name": "Rondslottet",
+  "region": "Rondane",
+  "summitM": 2178,
+  "verticalM": 1240,
+  "duration": "6–8 t",
+  "grade": 2,
+  "aspect": "S",
+  "season": "mar–mai",
+  "hasGuide": false
+ },
+ "storronden": {
+  "name": "Storronden",
+  "region": "Rondane",
+  "summitM": 2139,
+  "verticalM": 1090,
+  "duration": "6–8 t",
+  "grade": 2,
+  "aspect": "SV",
+  "season": "mars–mai",
+  "hasGuide": false
+ },
  "skala": {
   "name": "Skåla",
   "region": "Nordfjord",
@@ -142,13 +208,24 @@
   "season": "mar–jun",
   "hasGuide": false
  },
- "fanaraken": {
-  "name": "Fanaråken",
-  "region": "Sogn",
-  "summitM": 2068,
-  "verticalM": 760,
-  "duration": "5–7 t",
-  "grade": 2,
+ "glittertinden": {
+  "name": "Glittertinden",
+  "region": "Jotunheimen",
+  "summitM": 2451,
+  "verticalM": 1170,
+  "duration": "7–9 t",
+  "grade": 3,
+  "aspect": "SØ",
+  "season": "juni–juli",
+  "hasGuide": false
+ },
+ "galdhopiggen": {
+  "name": "Galdhøpiggen",
+  "region": "Jotunheimen",
+  "summitM": 2469,
+  "verticalM": 630,
+  "duration": "6–8 t",
+  "grade": 3,
   "aspect": "N",
   "season": "apr–jun",
   "hasGuide": false
@@ -164,15 +241,37 @@
   "season": "apr–jun",
   "hasGuide": false
  },
- "galdhopiggen": {
-  "name": "Galdhøpiggen",
+ "besshoe": {
+  "name": "Besshø",
   "region": "Jotunheimen",
-  "summitM": 2469,
-  "verticalM": 630,
+  "summitM": 2257,
+  "verticalM": 1300,
   "duration": "6–8 t",
   "grade": 3,
+  "aspect": "Ø",
+  "season": "mars–mai",
+  "hasGuide": false
+ },
+ "fanaraken": {
+  "name": "Fanaråken",
+  "region": "Sogn",
+  "summitM": 2068,
+  "verticalM": 760,
+  "duration": "5–7 t",
+  "grade": 2,
   "aspect": "N",
   "season": "apr–jun",
+  "hasGuide": false
+ },
+ "rasletinden": {
+  "name": "Rasletinden",
+  "region": "Jotunheimen",
+  "summitM": 2104,
+  "verticalM": 740,
+  "duration": "4–6 t",
+  "grade": 2,
+  "aspect": "Ø",
+  "season": "apr–mai",
   "hasGuide": false
  },
  "synshorn": {
@@ -197,26 +296,15 @@
   "season": "feb–mai",
   "hasGuide": false
  },
- "rondslottet": {
-  "name": "Rondslottet",
-  "region": "Rondane",
-  "summitM": 2178,
-  "verticalM": 1240,
-  "duration": "6–8 t",
-  "grade": 2,
-  "aspect": "S",
-  "season": "mar–mai",
-  "hasGuide": false
- },
- "snohetta": {
-  "name": "Snøhetta",
-  "region": "Dovrefjell",
-  "summitM": 2286,
-  "verticalM": 820,
-  "duration": "5–7 t",
+ "skogshorn": {
+  "name": "Skogshorn",
+  "region": "Hemsedal",
+  "summitM": 1729,
+  "verticalM": 830,
+  "duration": "3–5 t",
   "grade": 2,
   "aspect": "Ø",
-  "season": "apr–jun",
+  "season": "feb–mai",
   "hasGuide": false
  },
  "storehorn": {
@@ -230,6 +318,28 @@
   "season": "des–apr",
   "hasGuide": false
  },
+ "lonahorgi": {
+  "name": "Lønahorgi",
+  "region": "Voss",
+  "summitM": 1412,
+  "verticalM": 1300,
+  "duration": "5–7 t",
+  "grade": 2,
+  "aspect": "NØ",
+  "season": "feb–april",
+  "hasGuide": false
+ },
+ "folarskardnuten": {
+  "name": "Folarskardnuten",
+  "region": "Hallingdal",
+  "summitM": 1927,
+  "verticalM": 940,
+  "duration": "6–8 t",
+  "grade": 3,
+  "aspect": "S",
+  "season": "mars–mai",
+  "hasGuide": false
+ },
  "oksen": {
   "name": "Oksen",
   "region": "Hardanger",
@@ -239,6 +349,17 @@
   "grade": 2,
   "aspect": "SV",
   "season": "jan–apr",
+  "hasGuide": false
+ },
+ "vesoldo": {
+  "name": "Vesoldo",
+  "region": "Hardanger",
+  "summitM": 1046,
+  "verticalM": 830,
+  "duration": "3–5 t",
+  "grade": 2,
+  "aspect": "SV",
+  "season": "feb–apr",
   "hasGuide": false
  },
  "melderskin": {

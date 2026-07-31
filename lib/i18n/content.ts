@@ -85,6 +85,29 @@ export const TOUR_TEASER_EN: Record<string, string> = {
     "The great classic of the Rosendal Alps, from the sea to 1426 m.",
   gaustatoppen:
     "Southern Norway's most striking summit — if you can see it, it can see you.",
+  keipen:
+    "837 metres of ascent from Medfjordbotnvatnan through the bowl south of Keipen, a steady 33 degrees up to the summit ridge.",
+  skarasalen:
+    "1438 metres of ascent from the gate on Kvistadvegen, the steepest of it up to the 1074 m col.",
+  saudehornet:
+    "1154 metres of ascent from the waterworks in Ørsta, and the south ridge holds 33–39° for the last 170.",
+  glittertinden:
+    "12.6 km and 1154 m of climbing from Veodalen: 7 km of flat approach to Glitterheim, then a steady rise east of Glitterbrean.",
+  besshoe:
+    "1296 m of climbing from Bessheim: six kilometres along Bessvatnet before Grotådalen, then the gentle east ridge over Brue.",
+  rasletinden:
+    "713 m and 6 km from Valdresflye: flat for the first 1.2 km, then a step to 1530 m and a gentle ridge from the east.",
+  storronden:
+    "1057 m of climbing from Spranget: six kilometres of approach to Rondvassbu, then 2.6 km of steady west ridge from the 1440 m junction.",
+  skogshorn:
+    "836 m of ascent from Trefta up the broad east ridge of Skogshorn; steepest measured step 28.5 degrees.",
+  folarskardnuten:
+    "Nearly 12 km in from Haugastøl and 920 m of ascent, with one short 37-degree step up out of Folarskardet.",
+  lonahorgi:
+    "1273 m of ascent from Høyland via Bergsstølen and Breiming, the last 107 up the north ridge from point 1305.",
+  vesoldo:
+    "834 m of ascent from Byrkjenes, forest up to Fadnastølen and an open south-west shoulder above; the north and west sides fall 48–55°.",
+
 };
 
 export function teaserFor(slug: string, lang: Lang): string {
