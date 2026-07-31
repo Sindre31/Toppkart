@@ -1,12 +1,12 @@
 import { NextResponse } from "next/server";
-import { env } from "@/lib/config";
+import { requestOrigin } from "@/lib/origin";
 import { getViewer } from "@/lib/access";
 import { getStripe } from "@/lib/stripe";
 import { getBillingRefs } from "@/lib/invoices";
 
 /** Stripe Customer Portal — «Endre betalingsmetode» on /min-side.
  *  The session is always re-checked here; nothing is trusted from the client. */
-export async function POST() {
+export async function POST(request: Request) {
   const viewer = await getViewer();
   if (!viewer.userId) {
     return NextResponse.json({ error: "unauthorized" }, { status: 401 });
@@ -25,7 +25,7 @@ export async function POST() {
     }
     const session = await stripe.billingPortal.sessions.create({
       customer: customerId,
-      return_url: `${env.siteUrl}/min-side`,
+      return_url: `${requestOrigin(request)}/min-side`,
     });
     return NextResponse.json({ url: session.url });
   } catch {

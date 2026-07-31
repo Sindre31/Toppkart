@@ -5,6 +5,7 @@ import type { CheckoutErrorCode } from "@/lib/i18n/checkout";
 import { getViewer } from "@/lib/access";
 import { TRIAL_DAYS, env, isStripeConfigured } from "@/lib/config";
 import { getDemoEmail, setDemoEmail, startDemoSubscription } from "@/lib/demo-session";
+import { requestOrigin } from "@/lib/origin";
 import { getStripe, priceIdFor } from "@/lib/stripe";
 
 /** Starts the 14-day trial.
@@ -82,8 +83,8 @@ export async function POST(request: Request) {
       payment_method_collection: "always",
       ...(customerEmail ? { customer_email: customerEmail } : {}),
       ...(viewer.userId ? { client_reference_id: viewer.userId } : {}),
-      success_url: `${env.siteUrl}/betaling?status=ok`,
-      cancel_url: `${env.siteUrl}/betaling`,
+      success_url: `${requestOrigin(request)}/betaling?status=ok`,
+      cancel_url: `${requestOrigin(request)}/betaling`,
       allow_promotion_codes: true,
     });
 
