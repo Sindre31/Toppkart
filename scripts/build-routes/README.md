@@ -73,6 +73,18 @@ python3 nearby_places.py              # SSR point search  -> nearby_places.json
 TOPPKART_WF=<transcripts> python3 harvest_swarm.py   # -> corridors.swarm.json
 ```
 
+Then the written guides, which depend on the finished geometry:
+
+```
+python3 guide_facts.py        # routes.json + DTM1  -> guide_facts.json
+python3 enrich_facts.py       # folds the corridor research and audit back in
+python3 guide_brief.py <slug> # the writing brief one agent gets for one tour
+
+TOPPKART_WF=<transcripts> python3 harvest_guides.py  # -> guides.json
+python3 check_guides.py       # mechanical pass; must be read, not just run
+python3 emit_guides.py        # -> ../../lib/guides.ts, GUIDE_EN, seed.sql, hasGuide
+```
+
 `find_trailheads.py` and `nearby_places.py` only ever produce a *shortlist*; the
 choice is recorded in `PICKS` in `build_corridors.py`, with the terrain height
 and the height the tour's stated vertical implies in a comment beside each. Two
@@ -134,6 +146,41 @@ Route and trailhead *names* get shortened for display — the research came back
 with sentences like "Normalruta fra Djupvik/Forselvveien via Pumpvatnet,
 bekkedalen mot Forsnesvatnet, Isvatnet og sørøstryggen", which is good prose and
 a useless label. The full text is kept alongside as `description` / `fullName`.
+
+## The written guides
+
+Every tour has a Norwegian and an English guide, written by one agent per tour
+against `guide_brief.py <slug>` and then handed to a second agent whose only job
+is to try to break it. All 24 came back `corrected`, which is the point: an agent
+writing confident prose about terrain it cannot see will produce a plausible
+sentence rather than no sentence.
+
+What the adversarial pass actually caught, on real tours:
+
+- **Kavringtinden** was sold a north-facing couloir for the descent. Friflyt's
+  descent is Østrenna, E–NE. The cornices had been placed on the wrong side, and
+  the guide then routed you onto them.
+- **Storehorn** warned you off the west side — "the west drops 47° right below the
+  summit". West is the *flattest* side there: a near-level bench for 260 m. The
+  ground that falls away under the cairn is south, 96 vertical metres in 20 of
+  ground. In flat light the original sentence pointed at the cliff.
+- **Synshorn** had a rock band "over 60°" directly below the summit on the south
+  side. The south side is 4.5° for the first 400 m. The wall is real but sits
+  half a kilometre out, past a plateau that is exactly the trap the copy should
+  have described.
+- **Hesten** grew a north-west cliff, "330 vertical metres in 160". NW measures
+  11.6°. **Store Blåmann** grew 45° flanks on the lower ridge. **Storgalten** put
+  the route in Russelva, a different drainage 6.3 km north.
+
+Two tools keep this honest. `flank_probe.py <lat> <lng> [bearing…]` walks a radial
+line out from a point and prints the profile and the steepest 60 m window, so
+"the south side is over 60°" stops being an opinion. `check_guides.py` matches
+every number in the prose against the route facts, the corridor research and the
+checker's own measurements, and prints anything left over — a plausible metre
+figure nobody can source is exactly what should not ship in an avalanche product.
+
+Neither tool can tell you the route goes up the wrong valley. That is what the
+second agent is for, and it is why no guide here shipped unchecked.
 
 ## The app's numbers, reconciled against the ground
 
