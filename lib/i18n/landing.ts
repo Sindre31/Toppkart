@@ -1,9 +1,20 @@
 /** NO/EN dictionary for the front page.
  *
- *  The landing page is pure copy — every string it renders lives here, down to
- *  the numbers in the data plate: «214» and «12» carry no unit, but «29 kr» and
- *  «14 dager» do, and the unit is the part that has to change language. Prices
- *  stay in kroner in both languages; the product is sold in Norway.
+ *  The landing page is pure copy — every string it renders lives here. The
+ *  units in the data plate are copy too: «29 kr» and «14 dager» carry one, and
+ *  the unit is the part that has to change language. Prices stay in kroner in
+ *  both languages; the product is sold in Norway.
+ *
+ *  What is *not* copy is how many tours and regions the map holds. Those two
+ *  figures sat here as the literals «214» and «12» and were wrong by an order of
+ *  magnitude — the map has never had 214 tours. They are counted from `TOURS`
+ *  now and passed in as `PlateFigures`, so the plate cannot claim a number the
+ *  map does not have. `plateRows` and `plateFoot` are therefore functions of
+ *  those figures rather than plain strings.
+ *
+ *  The counting is done by the caller, not here: this module is imported by a
+ *  client component, and importing the tour catalogue would send every route's
+ *  geometry to the browser on a page that draws no map.
  *
  *  Section kickers keep their numbering (`02 · …`) — the numbers are part of the
  *  blueprint conceit, not of the sentence.
@@ -18,6 +29,21 @@ export interface PlateRow {
   prop: string;
   val: string;
   rem: string;
+}
+
+/** What the plate counts, read off the tour catalogue by `DataPlate`. */
+export interface PlateFigures {
+  /** Tours on the map. */
+  tours: number;
+  /** Regions those tours cover. */
+  regions: number;
+  /** Tours with a written guide behind the subscription — fewer than `tours`,
+   *  and the plate says so rather than implying every peak has one. */
+  guides: number;
+  /** Region of the northernmost tour, and of the southernmost. Proper nouns:
+   *  they stay Norwegian in both languages. */
+  north: string;
+  south: string;
 }
 
 export interface GuideCell {
@@ -39,8 +65,8 @@ export interface LandingDict {
   /* — data plate — */
   plateLabel: string;
   plateSheet: string;
-  plateRows: readonly PlateRow[];
-  plateFoot: string;
+  plateRows: (figures: PlateFigures) => readonly PlateRow[];
+  plateFoot: (figures: PlateFigures) => string;
   /* — 02 · what a guide holds — */
   guidesKicker: string;
   guideCells: readonly GuideCell[];
@@ -82,14 +108,14 @@ const LANDING: Translated<LandingDict> = {
 
     plateLabel: "Toppkart — nøkkeldata",
     plateSheet: "Ark 01 av 04",
-    plateRows: [
-      { prop: "Toppturer i kartet", val: "214", rem: "Fra Lyngen i nord til Sirdal i sør" },
-      { prop: "Regioner", val: "12", rem: "Alle med lokal rutebeskrivelse" },
+    plateRows: (f) => [
+      { prop: "Toppturer i kartet", val: String(f.tours), rem: `Fra ${f.north} i nord til ${f.south} i sør` },
+      { prop: "Regioner", val: String(f.regions), rem: "Alle med opptegnet rute og høydeprofil" },
       { prop: "Pris per måned", val: "29 kr", rem: "Ingen binding" },
       { prop: "Gratis prøveperiode", val: "14 dager", rem: "Kort kreves — første trekk etter prøveperioden" },
     ],
-    plateFoot:
-      "Turene er kvalitetssikret mot kart, bratthetsdata og lokale kjentfolk. Sjekk alltid skredvarselet på varsom.no før du går.",
+    plateFoot: (f) =>
+      `Hver topp er stedfestet mot Kartverkets terrengmodell, og ${f.guides} av turene har en full turguide skrevet mot ruta. Sjekk alltid skredvarselet på varsom.no før du går.`,
 
     guidesKicker: "02 · Hva hver turguide holder",
     guideCells: [
@@ -151,14 +177,14 @@ const LANDING: Translated<LandingDict> = {
 
     plateLabel: "Toppkart — key figures",
     plateSheet: "Sheet 01 of 04",
-    plateRows: [
-      { prop: "Tours on the map", val: "214", rem: "From Lyngen in the north to Sirdal in the south" },
-      { prop: "Regions", val: "12", rem: "Every one with a local route description" },
+    plateRows: (f) => [
+      { prop: "Tours on the map", val: String(f.tours), rem: `From ${f.north} in the north to ${f.south} in the south` },
+      { prop: "Regions", val: String(f.regions), rem: "Every one with drawn routes and elevation profiles" },
       { prop: "Price per month", val: "29 kr", rem: "No lock-in" },
       { prop: "Free trial", val: "14 days", rem: "Card required — first charge after the trial" },
     ],
-    plateFoot:
-      "Every tour is checked against maps, slope-angle data and people who know the area. Always check the avalanche forecast at varsom.no before you head out.",
+    plateFoot: (f) =>
+      `Every summit is placed against Kartverket's terrain model, and ${f.guides} of the tours have a full guide written against the route. Always check the avalanche forecast at varsom.no before you head out.`,
 
     guidesKicker: "02 · What every guide holds",
     guideCells: [
