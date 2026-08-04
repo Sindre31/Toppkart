@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Script from "next/script";
 import { Analytics } from "@vercel/analytics/next";
+import { Feedback } from "@/components/Feedback";
+import { getViewer } from "@/lib/access";
 import { GA_MEASUREMENT_ID } from "@/lib/config";
 import { htmlLang } from "@/lib/i18n";
 import { getLang } from "@/lib/i18n/server";
@@ -20,6 +22,10 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   const lang = await getLang();
+  /* Free: `getViewer()` is memoised per request, and every page that renders
+     the account nav has already asked. The dialog only needs the address, to
+     tell the reader whether a reply can reach them. */
+  const { email } = await getViewer();
 
   /* Production only. `VERCEL_ENV` is "preview" on branch deploys and undefined
      locally, so neither ends up in the property's numbers — a preview deploy
@@ -38,6 +44,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
       </head>
       <body>
         {children}
+        <Feedback lang={lang} email={email} />
         <Analytics />
         {analytics && (
           <>
