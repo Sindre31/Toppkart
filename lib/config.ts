@@ -63,6 +63,9 @@ export const env = {
   stripeWebhookSecret: process.env.STRIPE_WEBHOOK_SECRET ?? "",
   stripePriceMonthly: process.env.STRIPE_PRICE_MONTHLY ?? "",
   stripePriceYearly: process.env.STRIPE_PRICE_YEARLY ?? "",
+  /** Comma-separated e-mail addresses that may open /admin/*. Server-side
+   *  only — never give this a NEXT_PUBLIC_ prefix. Unset means nobody. */
+  adminEmails: process.env.ADMIN_EMAILS ?? "",
   resendApiKey: process.env.RESEND_API_KEY ?? "",
   fromEmail: process.env.RESEND_FROM_EMAIL ?? "Toppkart <ingen-svar@toppkart.no>",
   siteUrl:

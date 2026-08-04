@@ -223,6 +223,26 @@ Card `4242 4242 4242 4242`, any future expiry and any CVC works in test mode.
 
 ---
 
+## 3a. The admin page
+
+`/admin/tilbakemeldinger` lists what people wrote in the feedback dialog, including the e-mail
+addresses of those who were signed in. Nothing links to it; you reach it by typing the address.
+
+Set `ADMIN_EMAILS` to the address on the Google account you sign in with — comma-separated if
+there is more than one — and redeploy. Matching is case-insensitive.
+
+**It fails closed, and that is the whole security model.** Unset means *nobody* is an admin, not
+everybody, so the page answers 404 for every visitor including you. A misconfiguration locks you
+out, which you can fix; the other way round would publish readers' e-mail addresses, which you
+cannot take back.
+
+Non-admins get the 404 rather than a «forbidden» page, so a mistyped URL and a real one are
+indistinguishable. Reading the table needs `SUPABASE_SERVICE_ROLE_KEY` as well — `tk_feedback`
+has row-level security on with no policies at all, so no other role can see it whoever is signed
+in.
+
+---
+
 ## 3b. The support mailbox
 
 `support@toppkart.no` is the one address a human reads. The app never sends *from* it — mail goes
