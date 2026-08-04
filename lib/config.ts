@@ -29,6 +29,17 @@ export const SITE = {
     "Toppkart er en feltguide for skiturer i Norge: kvalitetssikrede toppturer på ett kart, med rute, høydemeter, bratthet og skredterreng.",
 } as const;
 
+/** No company stands behind Toppkart yet, so `/vilkar` and `/personvern` name
+ *  the service itself as operator and controller, and point at `supportEmail`
+ *  as the single contact route. That is the honest description of a small
+ *  private project and it is what those pages say.
+ *
+ *  If the service is ever run through a registered company — or turnover grows
+ *  enough that it has to be — the seller has to be identifiable by name and
+ *  address, and the controller has to be named. At that point add the details
+ *  here and interpolate them in `lib/i18n/legal.ts`, where the two paragraphs
+ *  that would carry them are marked. */
+
 /** Accent ramp 300/500/700/900 — grade 1…4 on the map. */
 export const GRADE_COLORS = ["#b5d9fd", "#749dc4", "#416180", "#1d2d3d"] as const;
 

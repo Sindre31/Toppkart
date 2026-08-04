@@ -114,7 +114,10 @@ site's URL.
    In the [Google Cloud console](https://console.cloud.google.com/):
 
    - **APIs & Services → OAuth consent screen**: pick *External*, fill in app name, support
-     e-mail and developer e-mail. Add only the non-sensitive scopes — `openid`,
+     e-mail and developer e-mail. The app homepage is `https://toppkart.no` and the privacy
+     policy link is `https://toppkart.no/personvern` — Google asks for both before it will let
+     you publish, which is why that page has to exist before launch rather than after.
+     Add only the non-sensitive scopes — `openid`,
      `.../auth/userinfo.email`, `.../auth/userinfo.profile`. Sign-in needs nothing more, and
      scopes Google classes as sensitive or restricted are what drag you into its verification
      review. Check Google's current rules before adding anything beyond those three.
@@ -165,6 +168,17 @@ site's URL.
    there as well would apply it twice.
 6. **Settings → Billing → Customer portal**: activate the portal and allow customers to update
    their payment method and to cancel at period end. `/min-side` sends people there for both.
+
+   Under **Business information**, link the two legal pages — `https://toppkart.no/vilkar` and
+   `https://toppkart.no/personvern`. Leave **Redirect link** empty: `app/api/portal/route.ts`
+   sets `return_url` on every session from `requestOrigin()`, which overrides anything configured
+   here, so a value in that field is dead config that can only go stale.
+
+   If you also let customers switch between the monthly and yearly plan, turn **off** «End trials
+   on subscription updates». With it on, a customer who upgrades on day 3 of the trial has the
+   trial ended immediately and is charged there and then — the opposite of what checkout promised
+   them. The webhook handles the switch either way: `planFor()` reads the new price id and updates
+   the `plan` column.
 7. **Developers → Webhooks → Add endpoint**. URL:
 
    ```
@@ -260,6 +274,13 @@ Walk the real flow on the deployed site, not just the local one:
 - [ ] `/betaling` signed out shows the Google button and **no** payment form; the trial cannot be
       started without a session. Signing in from there returns you to the same plan.
 - [ ] `support@toppkart.no` receives a message sent from an outside address.
+- [ ] `/vilkar` and `/personvern` load and are linked from the footer of every page.
+
+      Both pages describe Toppkart as a privately run project with no company behind it, and
+      route all contact to `SITE.supportEmail`. That is accurate while this is a side project.
+      Register an entity, or grow into having to, and two things change together: the operator
+      and controller paragraphs in `lib/i18n/legal.ts` need a name and address, and the price
+      paragraph needs to say whether VAT is included. They are marked in that file.
 - [ ] `/betaling` creates a Stripe Checkout session, the card is collected, and today's total is
       0 kr.
 - [ ] The webhook fires and the subscription row in Supabase reaches status `trialing`.
