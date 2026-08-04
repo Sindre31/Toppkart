@@ -1064,8 +1064,8 @@ export const GUIDES: Record<string, TourGuide> = {
     ascent: [
       "Start på parkeringa på østsida av fv51 der Valdresflya vandrerhjem sto før brannen i 2015, 1391 moh. Vegen er det som setter sesongen: fv51 er brøytet vinteren gjennom bare til Bygdin, og strekninga nordover forbi vandrerheimen åpner normalt rundt 1. april.",
       "Herfra går ruta vestover ut på vidda, sør for Fisketjerne. De første 1,2 kilometerne er helt flate og faller faktisk ti høydemeter — du kommer til å stake dem, og du kommer til å stake dem hjem igjen. Vidda er samtidig helt åpen og gir ingen ly.",
-      "Så stiger det jevnt mot den første kneika på rundt 1530 moh og videre opp på ryggen ved 1736 moh. Ryggen følges vestover, sør for Øystre Rasletinden (2011 moh), til rundt 1890 moh. Ikke gå over Øystre Rasletinden: aust- og sørøstsida av den toppen måler 42 til 50 grader, og linjer inn dit fra aust får steg på 51 til 63.",
-      "Til slutt den korte kneika opp mot toppplatået. I fallinja måler den rundt 40 grader mellom 1945 og 1980 moh, og det er det ene stedet på ruta der du har et samlet bratt heng over deg. Linja som er tegnet legger seg på skrå over den og holder 22,1 grader som bratteste sammenhengende parti; den bratteste hundremeteren, 1900 til 2000 moh, måler 17,6 grader i snitt. Over kneika er det ut på platået og de siste hundre meterne til 2104 moh.",
+      "Så stiger det jevnt mot den første kneika på rundt 1530 moh og videre opp på ryggen ved 1736 moh. Ryggen følges vestover, sør for Øystre Rasletinden (2011 moh), til rundt 1890 moh. Merk at sporet her ikke ligger på en rygg i skredfaglig forstand: mellom 1810 og 1890 moh går det under sørsida av Øystre Rasletinden, som stiger 130 høydemeter rett over deg med et parti på 47 grader. Ikke gå over Øystre Rasletinden: aust- og sørøstsida av den toppen måler 42 til 50 grader, og linjer inn dit fra aust får steg på 51 til 63.",
+      "Til slutt den korte kneika opp mot toppplatået. I fallinja måler den 31 til 35 grader mellom 1910 og 1960 moh; over 1960 slakner den til 16 til 20 inn mot platået. Det er ett av to steder på ruta med et samlet bratt heng over deg — det andre kommer lenger nede, på ryggen under Øystre Rasletinden. Linja som er tegnet legger seg på skrå over den og holder 22,1 grader som bratteste sammenhengende parti; den bratteste hundremeteren, 1900 til 2000 moh, måler 17,6 grader i snitt. Over kneika er det ut på platået og de siste hundre meterne til 2104 moh.",
     ],
     descent: [
       "Ned samme vei: kneika, ryggen østover sør for Øystre Rasletinden, ned til 1736 og videre ned første kneik til vidda. Under første kneik, fra 1531 moh, er det slutt på kjøringa — de siste to kilometerne over vidda er flate, og de ti høydemeterne du fikk gratis på vei ut skal betales tilbake.",
@@ -1075,7 +1075,7 @@ export const GUIDES: Record<string, TourGuide> = {
     avalanche: [
       {
         title: "Ruta",
-        body: "Nesten hele ruta er slak: første kneik måler 22 til 24 grader, ryggen 23, og bratteste sammenhengende parti på linja 22,1 grader. Det ene stedet med et samlet bratt heng over deg er kneika under toppplatået, som i fallinja måler rundt 40 grader mellom 1945 og 1980 moh. Der legger sporet seg på skrå, men snøen over deg bryr seg ikke om sporet.",
+        body: "Nesten hele ruta er slak: første kneik måler 22 til 24 grader, ryggen 23, og bratteste sammenhengende parti på linja 22,1 grader. To steder har et samlet bratt heng over seg. Kneika under toppplatået måler 31 til 35 grader i fallinja mellom 1910 og 1960 moh. Og ryggtraversen mellom 1810 og 1890 moh går under sørsida av Øystre Rasletinden: 130 høydemeter rett over sporet, 34 grader i snitt og 47 på det brattaste. Begge steder legger sporet seg på skrå, men snøen over deg bryr seg ikke om sporet — og et sørvendt heng i april er nettopp det du vurderer tidlig på dagen.",
       },
       {
         title: "Terrenget utenfor",
