@@ -76,13 +76,14 @@ TOPPKART_WF=<transcripts> python3 harvest_swarm.py   # -> corridors.swarm.json
 Then the written guides, which depend on the finished geometry:
 
 ```
+python3 routes_from_ts.py     # lib/routes.ts       -> routes.json  (skips re-routing)
 python3 guide_facts.py        # routes.json + DTM1  -> guide_facts.json
 python3 enrich_facts.py       # folds the corridor research and audit back in
 python3 guide_brief.py <slug> # the writing brief one agent gets for one tour
 
 TOPPKART_WF=<transcripts> python3 harvest_guides.py  # -> guides.json
 python3 check_guides.py       # mechanical pass; must be read, not just run
-python3 emit_guides.py        # -> ../../lib/guides.ts, GUIDE_EN, seed.sql, hasGuide
+python3 emit_guides.py [slug…]  # -> ../../lib/guides.ts, GUIDE_EN, seed.sql, hasGuide
 ```
 
 `find_trailheads.py` and `nearby_places.py` only ever produce a *shortlist*; the
@@ -149,11 +150,24 @@ a useless label. The full text is kept alongside as `description` / `fullName`.
 
 ## The written guides
 
-Every tour has a Norwegian and an English guide, written by one agent per tour
-against `guide_brief.py <slug>` and then handed to a second agent whose only job
-is to try to break it. All 24 came back `corrected`, which is the point: an agent
-writing confident prose about terrain it cannot see will produce a plausible
-sentence rather than no sentence.
+Every tour has a Norwegian and an English guide. The first 24 were written by one
+agent per tour against `guide_brief.py <slug>` and then handed to a second agent
+whose only job was to try to break it. All 24 came back `corrected`, which is the
+point: an agent writing confident prose about terrain it cannot see will produce
+a plausible sentence rather than no sentence.
+
+The fifteen tours added in the second round — Besshø, Breitinden, Folarskardnuten,
+Geitgaljen, Glittertinden, Hamperokken, Jakta, Keipen, Lønahorgi, Rasletinden,
+Saudehornet, Skårasalen, Skogshorn, Storronden and Vesoldo — were written against
+the same material, which for them is tracked rather than harvested: the corridor
+description and notes in `corridors.json`, and the audit corrections in
+`new_corridors.json` and `new_tourmeta.json`, all folded into the brief by
+`enrich_facts.py`. They pass `check_guides.py` clean. They have **not** been
+through an adversarial second reader, and that is the honest caveat on them.
+
+A guide is written in the language its teaser uses, so the seven western tours
+whose research came back in nynorsk read as nynorsk on the page rather than
+switching dialect halfway down.
 
 What the adversarial pass actually caught, on real tours:
 
@@ -178,9 +192,34 @@ line out from a point and prints the profile and the steepest 60 m window, so
 every number in the prose against the route facts, the corridor research and the
 checker's own measurements, and prints anything left over — a plausible metre
 figure nobody can source is exactly what should not ship in an avalanche product.
+It reads `guides.json`, and takes slugs to check a subset.
+
+Three of its inputs were widened for the second round, because they were failing
+sourced figures rather than catching invented ones: the per-100 m band table and
+the corridor's own waypoint elevations are now facts a guide may quote, and a
+number written with a decimal comma in Norwegian research ("1,4 km eksponert
+rygg") is read as one number rather than two.
 
 Neither tool can tell you the route goes up the wrong valley. That is what the
-second agent is for, and it is why no guide here shipped unchecked.
+second agent is for.
+
+### Emitting
+
+`emit_guides.py` with no arguments writes every guide in `guides.json`; naming
+slugs writes only those and copies the rest through byte for byte. Prefer the
+second when adding tours. A guide's prose and its elevation profile are written
+against the same geometry at the same time, so re-emitting a tour whose line has
+been re-routed since gives it a fresh distance label under a caption that still
+quotes the old one — which is exactly the state the first 24 are in after the
+`maxAngle` fix re-routed every line. Bringing them up to the current
+`lib/routes.ts` means rewriting their numbers too, and that is a job of its own.
+
+`guide_facts.py` needs `routes.json`, which is not tracked. When the guides are
+what is being worked on rather than the geometry, `routes_from_ts.py` reads the
+finished lines back out of `lib/routes.ts` instead of spending ten minutes and a
+few hundred megabytes of DTM tiles reproducing them. The terrain classes behind
+the treeline are cached in the previous `guide_facts.json` and only re-queried
+for a line that has actually moved.
 
 ## The app's numbers, reconciled against the ground
 

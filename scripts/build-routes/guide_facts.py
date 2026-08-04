@@ -11,8 +11,10 @@ Also emits the elevation-profile SVG path the guide page draws, over the same
 
 import json
 import math
+import os
 
 from geo import dtm_point, haversine
+from router import steepest_gradient
 
 PROFILE_W = 600.0
 PROFILE_TOP = 18.0     # y of the summit
@@ -47,39 +49,59 @@ def svg_path(points, elevations):
     return "M" + " L".join(pts)
 
 
-def steepest_band(points, elevations, band=100):
-    """The 100 m elevation band with the highest mean gradient, and its angle."""
+def bands(points, elevations, band=100):
+    """Mean gradient per 100 m of height, trailhead band first.
+
+    The single steepest band answers "how steep does it get"; the table answers
+    "where is the climbing", which is the question a route description is
+    actually written around — a flat six-kilometre lake and a sustained
+    twenty-degree ridge are both invisible in a maximum.
+    """
     d = cumdist(points)
     lo = int(min(elevations) // band * band)
     hi = int(max(elevations))
-    best = None
-    for base in range(lo, hi, band):
+    out = []
+    for base in range(lo, hi + 1, band):
         run = 0.0
         rise = 0.0
         for i in range(len(points) - 1):
-            za, zb = elevations[i], elevations[i + 1]
-            if not (base <= za < base + band):
+            if not (base <= elevations[i] < base + band):
                 continue
             step = d[i + 1] - d[i]
             if step <= 0:
                 continue
             run += step
-            rise += zb - za
-        if run < 120:
+            rise += elevations[i + 1] - elevations[i]
+        if run <= 0:
             continue
-        ang = math.degrees(math.atan2(rise, run))
-        if best is None or ang > best[2]:
-            best = (base, base + band, ang, run)
-    return best
+        out.append(
+            {
+                "fromM": base,
+                "toM": base + band,
+                "angle": round(math.degrees(math.atan2(rise, run)), 1),
+                "groundM": int(round(run)),
+            }
+        )
+    return out
+
+
+def steepest_band(table):
+    """The steepest band with enough ground under it to be a slope, not a step."""
+    real = [b for b in table if b["groundM"] >= 120]
+    return max(real, key=lambda b: b["angle"]) if real else None
 
 
 def max_step_angle(points, elevations):
-    worst = 0.0
-    for (a, b), (za, zb) in zip(zip(points, points[1:]), zip(elevations, elevations[1:])):
-        dd = haversine(a[0], a[1], b[0], b[1])
-        if dd > 1:
-            worst = max(worst, math.degrees(math.atan2(zb - za, dd)))
-    return worst
+    """The steepest sustained gradient on the line — `router.steepest_gradient`.
+
+    It used to measure between neighbouring vertices, which is the measurement
+    `generate_routes.py` stopped trusting: two vertices can be a metre apart, a
+    metre of DTM1 is noise, and the chord across a kick turn climbs without
+    covering ground, so a skin track reads as a cliff. A guide quoting a steeper
+    figure than the geometry it describes is the one number here nobody can
+    check in the field, so both must come out of the same function.
+    """
+    return steepest_gradient(points, elevations)
 
 
 def terrain_along(points, elevations, n=TERRAIN_SAMPLES):
@@ -115,11 +137,28 @@ def treeline(samples):
     return {"last_forest_m": last_forest, "first_open_m": min(above) if above else None}
 
 
+def cached_samples(previous, slug, route_id, elevations):
+    """The terrain classes from a previous run, when the line has not moved.
+
+    Kartverket's terrain class at a point does not change between runs; the DTM
+    lookups behind it are ~550 requests and several minutes. Reuse them when the
+    profile is identical, and re-query the moment it is not.
+    """
+    for r in ((previous.get(slug) or {}).get("routes") or []):
+        if r.get("id") != route_id:
+            continue
+        got = r.get("terrainSamples") or []
+        if got and [s["z"] for s in got] == [elevations[s["i"]] for s in got]:
+            return got
+    return None
+
+
 def main():
     routes = json.load(open("routes.json"))
     corridors = json.load(open("corridors.json"))
     tours = json.load(open("tourmeta.json"))
     summits = json.load(open("summits.json"))
+    previous = json.load(open("guide_facts.json")) if os.path.exists("guide_facts.json") else {}
 
     out = {}
     for slug, recs in routes.items():
@@ -128,8 +167,11 @@ def main():
         for r in recs:
             pts = [tuple(p) for p in r["points"]]
             zs = r["elevations"]
-            band = steepest_band(pts, zs)
-            samples = terrain_along(pts, zs) if r["id"] == "normalruta" else []
+            table = bands(pts, zs)
+            band = steepest_band(table)
+            samples = []
+            if r["id"] == "normalruta":
+                samples = cached_samples(previous, slug, r["id"], zs) or terrain_along(pts, zs)
             src = by_id.get(r["id"], {})
             entries.append(
                 {
@@ -143,10 +185,15 @@ def main():
                     "lossM": r["lossM"],
                     "distanceM": r["distanceM"],
                     "maxAngle": round(max_step_angle(pts, zs), 1),
-                    "steepestBand": (
-                        {"fromM": band[0], "toM": band[1], "angle": round(band[2], 1)}
-                        if band else None
-                    ),
+                    "steepestBand": band,
+                    "bands": table,
+                    # Where the corridor research pinned the line: these are the
+                    # elevations a route description names out loud.
+                    "waypoints": [
+                        {"name": w.get("name", ""), "m": round(w["elevation_m"], 1)}
+                        for w in (src.get("waypoints") or [])
+                        if w.get("elevation_m") is not None
+                    ],
                     "svgPath": svg_path(pts, zs),
                     "terrainSamples": samples,
                     "treeline": treeline(samples) if samples else None,

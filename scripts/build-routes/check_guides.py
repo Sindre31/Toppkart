@@ -45,9 +45,18 @@ def allowed_values(t):
         float(t["verticalM"]), round(p["distanceM"] / 1000.0, 1),
         float(p["distanceM"]), float(p["lossM"]),
     }
+    for b in p.get("bands") or []:
+        # Every 100 m band: its edges, its mean angle and the ground it covers.
+        # A guide that says "the first pitch runs at fourteen degrees" is quoting
+        # this table, and it should not have to round to the single steepest band
+        # to be checkable.
+        vals |= {float(b["fromM"]), float(b["toM"]), float(b["angle"]), float(b["groundM"])}
     if p.get("steepestBand"):
         sb = p["steepestBand"]
         vals |= {float(sb["fromM"]), float(sb["toM"]), float(sb["angle"])}
+    # The elevations the corridor research pinned the line to — a route
+    # description names them, and they are measurements, not prose.
+    vals |= {float(w["m"]) for w in p.get("waypoints") or []}
     if p.get("treeline"):
         tl = p["treeline"]
         vals.add(float(tl["last_forest_m"]))
@@ -71,8 +80,11 @@ def numbers_in(text_obj):
 
 
 def main():
-    guides = json.load(open("guides_swarm.json"))
+    guides = json.load(open("guides.json"))
     facts = json.load(open("guide_facts.json"))
+    only = set(sys.argv[1:])
+    if only:
+        guides = {s: g for s, g in guides.items() if s in only}
 
     unmatched_total = 0
     reassure_total = 0
@@ -84,13 +96,17 @@ def main():
         # where the flank angles measured with flank_probe.py end up.
         notes = (
             (t["routes"][0].get("researchNotes") or "")
+            + (t["routes"][0].get("description") or "")
             + " ".join(t.get("auditFindings") or [])
             + " ".join(guides[slug].get("problems") or [])
         )
         # Prose rounds: a note reading "31.3° mean" entitles the copy to say
         # "31 grader". Compare numerically rather than by substring, or every
         # rounded figure reads as invented.
-        noted = {float(m) for m in re.findall(r"\d+(?:\.\d+)?", notes)}
+        # The research is written in Norwegian as often as in English, so a
+        # decimal comma is a decimal: reading "1,4 km eksponert rygg" as the two
+        # numbers 1 and 4 is how a sourced figure gets reported as invented.
+        noted = {float(m.replace(",", ".")) for m in re.findall(r"\d+(?:[.,]\d+)?", notes)}
         issues = []
 
         for lang in ("no", "en"):
@@ -100,7 +116,10 @@ def main():
                 if unit.startswith(("grader", "degrees", "°")):
                     ok = any(abs(value - a) <= 1.5 for a in allowed | noted)
                 elif unit.startswith("km"):
-                    ok = any(abs(value - a) <= 0.15 for a in allowed if a < 100)
+                    # Research states distances in kilometres too — "1.4 km of
+                    # exposed ridge" is sourced even though it is not the route's
+                    # own length.
+                    ok = any(abs(value - a) <= 0.15 for a in (allowed | noted) if a < 100)
                 else:
                     ok = any(abs(value - a) <= 6 for a in allowed | noted)
                 if not ok:
