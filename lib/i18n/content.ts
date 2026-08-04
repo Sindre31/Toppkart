@@ -848,8 +848,8 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       "Over the col you turn east-north-east up the main slope towards the ridge and onto the summit plateau at 1448 m, and the last stretch south along the plateau to the summit at 1542 m. The line comes onto the plateau from the north-west deliberately: east of the crest the mountain falls 300 metres in 74 metres of ground, roughly 76 degrees, into Skåradalen.",
     ],
     descent: [
-      "Back the same way: south-west off the plateau, down the main slope to the col, the big slope down towards the farms and the road out. Allow time for the last 3.7 kilometres — they are flat enough that you pole them.",
-      "The usual mistake: holding too far east on the summit plateau. The cornices sit to the east, and beneath them the east wall drops 300 metres in 74. In flat light the crest is invisible, and the plateau offers no other reference.",
+      "Back the same way: north-west off the summit onto the plateau, west along the plateau and down the main slope to the col, the big slope down towards the farms and the road out. Allow time for the last 3.7 kilometres — they are flat enough that you pole them.",
+      "The usual mistake: holding too far east on the summit plateau — and taking south-west for the way down. South-west of the summit are the Vestrennene at 45 degrees; the line goes north-west. The cornices sit to the east, and beneath them the east wall drops 300 metres in 74. In flat light the crest is invisible, and the plateau offers no other reference.",
       "The Vestrennene gullies down to Årsetsætra are 45 degrees and are not part of this route. The third documented descent, Lisje Skåradalen towards Skår on the Hjørundfjord, is 25 to 30 degree crust terrain — but it ends at the fjord, not at your car in Bondalen.",
     ],
     avalanche: [
@@ -914,21 +914,21 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       "From Spranget car park, 1082 m, follow the Rondvassbu road six kilometres north-east: over 1137 m, through the valley south-west of the hut and on to Rondvassbu at 1214 m. The band between 1100 and 1200 m averages 1.3 degrees over four and a half kilometres. Around the bay at Lonin at the south end of Rondvatnet, keep to the land rather than taking the short cut over the ice.",
       "Note the trailhead: the toll road to Spranget is not ploughed, and the car park is officially open from mid-June. In March–May, Mysusæter is the last ploughed point — 4.5 kilometres and a hundred metres lower, and they come on top of everything described here.",
       "Behind the hut it climbs steeply north-east to the path junction at 1440 m. This is where the tour parts company with Rondslottet: that route continues north into Rondholet, while Storronden turns right and east onto the west ridge.",
-      "From the junction to the summit is 698 metres over 2.62 kilometres, monotonically rising and with no height given back. The steepest hundred-metre band lies between 1900 and 2000 m and averages 20.7 degrees; the steepest sustained section on the line is 25.2 degrees. The ridge is stony, and the scree often blows bare — then the skis are carried for the last stretch to the cairn at 2139 m.",
+      "From the junction to the summit is 698 metres over 2.85 kilometres along the line, monotonically rising and with no height given back. The steepest hundred-metre band lies between 1900 and 2000 m and averages 20.7 degrees; the steepest sustained section on the line is 25.2 degrees. The ridge is stony, and the scree often blows bare — then the skis are carried for the last stretch to the cairn at 2139 m.",
     ],
     descent: [
       "Down the west ridge to the junction, down the pitch to Rondvassbu and then the six kilometres out to Spranget. The descent faces south-west: bearings between 225 and 255 degrees hold 26 to 32 degrees, and that is the sector the route uses.",
-      "The usual mistake: dropping due west from the summit because that is where the car is. Due west, 270 degrees, measures 49.6 degrees. North falls 63, and east and south-east 56 to 67 — that is not ski terrain, and it lies right beside the gentle ridge you came up. The second mistake is letting the ground pull you north towards Rondholet from the summit.",
+      "The usual mistake: dropping due west from the summit because that is where the car is. Due west looks gentle from the cairn — under 26 degrees for the first six hundred metres — and then breaks over at 46 to 57. North is the same trap: four or five hundred metres under 20 degrees, then 48 to 64 down into Rondholet. East and south-east are the steepest and the closest, 56 to 67 degrees right beside the gentle ridge you came up. The second mistake is letting the ground pull you north towards Rondholet from the summit.",
       "The last six kilometres are flat. Expect to pole them, and expect them to take longer than they look from the summit when you can see the hut.",
     ],
     avalanche: [
       {
         title: "The route",
-        body: "The west ridge is gentle and easy to read: 698 metres over 2.62 kilometres, a steepest sustained section of 25.2 degrees, and a steepest hundred-metre band, 1900 to 2000 m, of 20.7 degrees. There is no arête and no reclimbing on the route. Stay on the ridge from the junction upwards — it is the one gentle side of the mountain.",
+        body: "The west ridge is gentle and easy to read: 698 metres over 2.85 kilometres, a steepest sustained section of 25.2 degrees, and a steepest hundred-metre band, 1900 to 2000 m, of 20.7 degrees. There is no arête and no reclimbing on the route. Stay on the ridge from the junction upwards — it is the one gentle side of the mountain.",
       },
       {
         title: "The terrain off it",
-        body: "Only the west ridge is gentle. North falls 63 degrees, east and south-east 56 to 67, and due west from the summit 49.6. Rondane lies in the Nord-Gudbrandsdalen forecast region, which is a B region on varsom.no: forecasts there are published only at danger level 4–5, so an empty page does not mean the hazard has been assessed and found low. That makes your own observation matter more here than in the regions with a daily forecast.",
+        body: "East and south-east fall 56 to 67 degrees right beside the cairn. North and west are another matter, and a more dangerous one: both look gentle from the summit — north holds under 20 degrees for four or five hundred metres and west under 26 for six hundred — before breaking over at 48 to 64 degrees down into Rondholet and 46 to 57 to the west. Those are terrain traps, not walls you can see. Rondane lies in the Nord-Gudbrandsdalen forecast region, which is a B region on varsom.no: forecasts there are published only at danger level 4–5, so an empty page does not mean the hazard has been assessed and found low. That makes your own observation matter more here than in the regions with a daily forecast.",
       },
       {
         title: "Before you go",
@@ -939,7 +939,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       startLabel: "1082 m",
       endLabel: "2139 m",
       distanceLabel: "10.3 km",
-      caption: "1140 metres of climbing and 10.26 km from Spranget, 698 of those metres in the last 2.62 kilometres up the west ridge.",
+      caption: "1140 metres of climbing and 10.26 km from Spranget, 698 of those metres in the last 2.85 kilometres up the west ridge.",
     },
   },
   skala: {
@@ -1266,7 +1266,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
     ],
     descent: [
       "Back the same way, east down the ridge and the slope to Trefta. The descent faces east — the drop-weighted mean bearing measures 84 degrees. The broad north-east-facing mountainside below the east ridge is the descent, and it is also the side that collects wind slab after westerly wind. That is the one assessment this tour actually demands.",
-      "The usual mistake: taking Skogshornrenna because it looks like a quicker way down. The gully west and north of the summit is a separate, avalanche-prone expert line of around 40 degrees — it is not the normal route, and it does not end where the car is parked. Fri Flyt also mentions a gully running due north from the summit down to the flat at 1100 m with a return south to the car park; that is a variant for people who know what they are choosing.",
+      "The usual mistake: taking Skogshornrenna because it looks like a quicker way down. The gully drops in from the flat of the west top and falls south: measured from there the south side holds 39.5 degrees on average with 56 at its steepest, while the north side is 9.4. It is a separate, avalanche-prone expert line — it is not the normal route, and it does not end where the car is parked. Fri Flyt also mentions a gully running due north from the summit down to the flat at 1100 m with a return south to the car park; that is a variant for people who know what they are choosing.",
       "Back down you rejoin the cross-country trail for the last seven hundred metres. Walk beside the groomed track, not in it.",
     ],
     avalanche: [
@@ -1276,7 +1276,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       },
       {
         title: "The terrain around it",
-        body: "Skogshornrenna, west and north of the summit, is a separate, avalanche-prone expert line of around 40 degrees and must not be confused with the normal route. The summit ridge is often scoured hard. Otherwise the mountain is broad and easy to read — this is a tour where the mistake is choosing the wrong way down, not being surprised on the way up.",
+        body: "Skogshornrenna drops in from the flat of the west top and falls south — 39.5 degrees on average, 56 at its steepest. It must not be confused with the normal route, nor with Fri Flyt's north variant, which descends the gentle north side. The summit ridge is often scoured hard. Otherwise the mountain is broad and easy to read — this is a tour where the mistake is choosing the wrong way down, not being surprised on the way up.",
       },
       {
         title: "Before you go",
