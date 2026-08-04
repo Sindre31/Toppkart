@@ -735,22 +735,22 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
   },
   saudehornet: {
     intro:
-      "1158 metres of climbing straight up from the centre of Ørsta, and no part of the route requires taking the skis off. But Fri Flyt grades the tour \"complex\" for a reason: the south ridge holds 33 to 39 degrees over the last 170 metres, and on hard snow a slip there has a long runout.",
+      "1158 metres of climbing straight up from the centre of Ørsta, and Fri Flyt grades the tour \"complex\" for a reason: the crest holds about 32 degrees on average over the last 170 metres with its steepest section at 37, and on hard snow a slip there has a long runout. Fri Flyt reckons many parties carry their skis for the last stretch.",
     ascent: [
       "From the car park at the waterworks at the top of Vikegeila, 149 m, follow the service road up into Skåla. The forest ends around 339 m and the ground is open from 423. At about 395 m you leave the road where a mapped path branches off — the same place Fri Flyt describes as \"diagonally towards the Vikeelva, cross the river\".",
       "Across the river, aim for the lowest point on the ridge between Vallahornet and Saudehornet, 812 m. The col sits further east than a straight line between the two summits would suggest; the crest itself has its low point there, and a mapped path follows it some thirty metres away.",
-      "Over the col, follow the south ridge some 490 metres up to the summit at 1303 m. The climbing is steady to around 1137 m and then steepens: measured from 1137 m upwards the steps are 33.5, 32.5, 33.5 and 38.6 degrees over 56 to 65 metres. The steepest hundred-metre band on the route lies between 1200 and 1300 m and averages 23.2 degrees; the steepest sustained section on the line is 33.7 degrees. Steep, but under 42 — the whole route is skiable.",
+      "Over the col, follow the south ridge some 490 metres up to the summit at 1303 m. The climbing is steady to around 1137 m and then steepens. Measured along the crest itself from 1135 m upwards the steps are 33, 30, 37 and 25 degrees over roughly sixty metres each: the ridge is steepest mid-way, around 1266 m, and eases into the summit dome. Fri Flyt reckons many parties carry their skis for the last 200 metres.",
       "There are cornices along the summit crest. You cannot walk right out to the edge, and that is worth knowing before you are standing there wanting the view over the Hjørundfjord.",
     ],
     descent: [
       "The usual descent takes the same way down, but often on the flank to the skier's right of the gully — the south-west flank, which holds about 37 degrees for 600 metres. From the summit the ground falls 1303 to 1031 to 834 to 717 m towards the south-west, that is 36 to 38 degrees over the first 470 metres. It is sustained steep skiing in one run.",
-      "The usual mistake: assuming \"straight down towards Ørsta\" means west. Directly west of the ridge between the col and the summit the angle is only 12 to 15 degrees, and that is a different side of the mountain from the one that takes you back to the car. The descent faces south-west, and Fri Flyt notes possible crevassing in the gullies on the west side.",
+      "The usual mistake: assuming \"straight down towards Ørsta\" means west. Directly west of the col the angle is 14 to 17 degrees, but that holds only down at the col: from 1270 m upwards the west flank measures 24 to 45 degrees, and directly west of the summit 32 to 47. Either way, west is a different side of the mountain from the one that takes you back to the car. The descent faces south-west, and Fri Flyt notes possible crevassing in the gullies on the west side.",
       "The second mistake is measuring the tour by how short it is. 1158 metres of climbing from the centre of a town does not make the mountain gentle — the avalanche terrain starts in Skåla and continues the whole way up.",
     ],
     avalanche: [
       {
         title: "The route",
-        body: "It is avalanche terrain from Skåla and all the way up. The south ridge is steep enough that a slip on hard snow has a long runout: the last 170 metres hold 33 to 39 degrees, with single steps measured at 33.5, 32.5, 33.5 and 38.6. The steepest sustained section on the line is 33.7 degrees and the steepest hundred-metre band, 1200 to 1300 m, 23.2 degrees on average.",
+        body: "It is avalanche terrain from Skåla and all the way up. The south ridge is steep enough that a slip on hard snow has a long runout: the crest from 1135 m upwards holds about 32 degrees on average, with its steepest section around 1266 m at 37 degrees. The figures for the skin track itself are lower — 33.7 degrees at its steepest and 23.2 on average for the 1200 to 1300 m band — because the track switchbacks across the ridge.",
       },
       {
         title: "The terrain around it",

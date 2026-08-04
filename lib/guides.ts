@@ -619,22 +619,22 @@ export const GUIDES: Record<string, TourGuide> = {
   saudehornet: {
     slug: "saudehornet",
     intro:
-      "1158 høgdemeter rett opp frå Ørsta sentrum, og ingen del av ruta krev at skia kjem av. Men Fri Flyt graderer turen «Komplekst» av ein grunn: sørryggen held 33 til 39 grader dei siste 170 høgdemetrane, og på hard snø gir ei utglidning der lang utløpsbane.",
+      "1158 høgdemeter rett opp frå Ørsta sentrum, og Fri Flyt graderer turen «Komplekst» av ein grunn: ryggkammen held rundt 32 grader i snitt dei siste 170 høgdemetrane med det brattaste partiet på 37, og på hard snø gir ei utglidning der lang utløpsbane. Fri Flyt reknar med at mange tek skia på sekken det siste stykket.",
     ascent: [
       "Frå parkeringa ved vasshuset øvst i Vikegeila, 149 moh, følgjer du anleggsvegen oppover Skåla. Skogen sluttar rundt 339 moh og terrenget er ope frå 423. Ved om lag 395 moh går ein av vegen der ein kartlagd sti tek av — det er same staden Fri Flyt skildrar med «på skrå mot Vikeelva, kryss elva».",
       "Over elva siktar du mot det lågaste punktet på ryggen mellom Vallahornet og Saudehornet, 812 moh. Skaret ligg lenger aust enn ei rett linje mellom dei to toppane skulle tilseia; ryggkammen sjølv har lågaste punkt der, og ein kartlagd sti følgjer han om lag tretti meter unna.",
-      "Over skaret følgjer du sørryggen om lag 490 høgdemeter opp til toppen på 1303 moh. Stigninga er jamn til rundt 1137 moh og bratnar så: målt frå 1137 moh og opp er stega 33,5, 32,5, 33,5 og 38,6 grader over 56 til 65 meter. Brattaste hundremeteren på ruta ligg mellom 1200 og 1300 moh og måler 23,2 grader i snitt; brattaste samanhengande parti på linja er 33,7 grader. Bratt, men under 42 — heile ruta er skibar.",
+      "Over skaret følgjer du sørryggen om lag 490 høgdemeter opp til toppen på 1303 moh. Stigninga er jamn til rundt 1137 moh og bratnar så. Målt langs sjølve ryggkammen frå 1135 moh og opp er stega 33, 30, 37 og 25 grader over om lag seksti meter: ryggen er brattast midtvegs, rundt 1266 moh, og slakkar inn mot toppkulen. Fri Flyt reknar med at mange tek skia på sekken dei siste 200 høgdemetrane.",
       "Langs toppeggja ligg det skavl. Du kan ikkje gå heilt ut på kanten, og det er verdt å vita før du står der og vil ha utsikta mot Hjørundfjorden.",
     ],
     descent: [
       "Vanlegaste nedkøyringa går same vegen, men gjerne på flanken på skiløparen si høgre side av renna — sørvestflanken, som held om lag 37 grader i 600 høgdemeter. Frå toppen fell terrenget 1303 til 1031 til 834 til 717 moh mot sørvest, altså 36 til 38 grader over dei fyrste 470 høgdemetrane. Det er samanhengande bratt køyring i eitt strekk.",
-      "Vanlegaste feil: å tru at «rett ned mot Ørsta» er vest. Rett vest for ryggen mellom skaret og toppen er hellinga berre 12 til 15 grader, og det er ei anna side av fjellet enn den som fører deg ned til bilen. Nedkøyringa er sørvestvend, og Fri Flyt nemner moglege sprekker i rennene på vestsida.",
+      "Vanlegaste feil: å tru at «rett ned mot Ørsta» er vest. Rett vest for skaret er hellinga 14 til 17 grader, men det gjeld berre nede ved skaret: frå 1270 moh og opp måler vestflanken 24 til 45 grader, og rett vest for toppen 32 til 47. Vest er uansett ei anna side av fjellet enn den som fører deg ned til bilen. Nedkøyringa er sørvestvend, og Fri Flyt nemner moglege sprekker i rennene på vestsida.",
       "Den andre feilen er å måla turen etter kor kort han er. 1158 høgdemeter frå sentrum av ein by gjer ikkje fjellet snilt — skredterrenget byrjar i Skåla og held fram heile vegen opp.",
     ],
     avalanche: [
       {
         title: "Ruta",
-        body: "Det er skredterreng frå Skåla og heile vegen opp. Sørryggen er bratt nok til at ei utglidning på hard snø får lang utløpsbane: dei siste 170 høgdemetrane held 33 til 39 grader, med enkeltsteg målte til 33,5, 32,5, 33,5 og 38,6. Brattaste samanhengande parti på linja er 33,7 grader og brattaste hundremeteren, 1200 til 1300 moh, 23,2 grader i snitt.",
+        body: "Det er skredterreng frå Skåla og heile vegen opp. Sørryggen er bratt nok til at ei utglidning på hard snø får lang utløpsbane: ryggkammen frå 1135 moh og opp held rundt 32 grader i snitt, med det brattaste partiet rundt 1266 moh på 37 grader. Tala for sjølve skisporet er lågare — 33,7 grader som brattaste parti og 23,2 i snitt for bandet 1200 til 1300 moh — fordi sporet sikk-sakkar over ryggen.",
       },
       {
         title: "Terrenget rundt",
