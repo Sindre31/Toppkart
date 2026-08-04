@@ -1,0 +1,75 @@
+import { NextResponse } from "next/server";
+
+import { getViewer } from "@/lib/access";
+import { FEEDBACK_MAX_LENGTH } from "@/lib/i18n/feedback";
+import { getSupabaseAdminClient } from "@/lib/supabase/server";
+
+/** «Gi tilbakemelding» — writes one row to `tk_feedback`.
+ *
+ *  The service role is what writes: the table has RLS on and no policies, so
+ *  neither `anon` nor `authenticated` can reach it from the browser. That also
+ *  means nothing reads it back through the app — open it in the SQL editor.
+ *
+ *  Signing in is not required. The people most likely to have something useful
+ *  to say are the ones who have not signed up, and turning them away to protect
+ *  an inbox would lose exactly the feedback worth having.
+ */
+export const runtime = "nodejs";
+
+type Payload = Record<string, unknown>;
+
+function str(value: unknown): string {
+  return typeof value === "string" ? value : "";
+}
+
+export async function POST(request: Request) {
+  let payload: Payload = {};
+  try {
+    const parsed: unknown = await request.json();
+    if (parsed && typeof parsed === "object") payload = parsed as Payload;
+  } catch {
+    payload = {};
+  }
+
+  /* Honeypot. The field is hidden and labelled as something a form-filler wants
+     to complete, so a human never touches it and a naive bot always does.
+     Answering 200 rather than an error keeps the bot from learning what tripped
+     it — an honest rejection here is just a hint to try again differently. */
+  if (str(payload.selskap).trim() !== "") {
+    return NextResponse.json({ ok: true });
+  }
+
+  const message = str(payload.message).trim();
+  if (!message) {
+    return NextResponse.json({ error: "empty" }, { status: 400 });
+  }
+  if (message.length > FEEDBACK_MAX_LENGTH) {
+    return NextResponse.json({ error: "too_long" }, { status: 400 });
+  }
+
+  const admin = getSupabaseAdminClient();
+  if (!admin) {
+    console.warn("[tilbakemelding] SUPABASE_SERVICE_ROLE_KEY mangler — ingenting lagret");
+    return NextResponse.json({ error: "unavailable" }, { status: 503 });
+  }
+
+  const viewer = await getViewer();
+  /* Demo mode hands out `demo:<e-post>` as a user id. That is not a uuid and
+     has no row in auth.users, so it would fail the foreign key. */
+  const userId = viewer.userId && !viewer.userId.startsWith("demo:") ? viewer.userId : null;
+
+  const { error } = await admin.from("tk_feedback").insert({
+    user_id: userId,
+    email: viewer.email,
+    message,
+    path: str(payload.path).slice(0, 512) || null,
+    lang: payload.lang === "en" ? "en" : "no",
+  });
+
+  if (error) {
+    console.error("[tilbakemelding] kunne ikke lagre:", error.message);
+    return NextResponse.json({ error: "unavailable" }, { status: 502 });
+  }
+
+  return NextResponse.json({ ok: true });
+}

@@ -150,6 +150,32 @@ create table if not exists public.tk_invoices (
 
 comment on table public.tk_invoices is 'Mirror of Stripe invoices for the receipts table on Min side. Optional — Stripe remains the source of truth.';
 
+-- ----------------------------------------------------------------------------
+-- feedback — messages from the «Gi tilbakemelding» button.
+--
+-- Write-only from the app: `app/api/tilbakemelding` inserts with the service
+-- role, and nothing reads it back through the API. Read it in the SQL editor:
+--
+--   select created_at, email, path, message
+--   from public.tk_feedback order by created_at desc limit 50;
+--
+-- `user_id` cascades on account deletion, so a reader who asks to be forgotten
+-- takes their messages with them. Feedback left signed out has no user_id and
+-- is unaffected.
+-- ----------------------------------------------------------------------------
+create table if not exists public.tk_feedback (
+  id         uuid primary key default gen_random_uuid(),
+  user_id    uuid references auth.users (id) on delete cascade,
+  email      text,
+  message    text not null,
+  path       text,
+  lang       text,
+  created_at timestamptz not null default now()
+);
+
+comment on table public.tk_feedback is
+  'Messages from the «Gi tilbakemelding» button. Written only by the service role (app/api/tilbakemelding); nobody reads it through the API — query it in the SQL editor.';
+
 -- ============================================================================
 -- 2. Indexes
 -- ============================================================================
@@ -164,6 +190,7 @@ create index if not exists tk_subscriptions_stripe_subscription_id_idx
   on public.tk_subscriptions (stripe_subscription_id);
 
 create index if not exists tk_invoices_user_id_idx on public.tk_invoices (user_id);
+create index if not exists tk_feedback_created_at_idx on public.tk_feedback (created_at desc);
 create index if not exists tk_profiles_email_idx   on public.tk_profiles (lower(email));
 
 -- ============================================================================
@@ -239,6 +266,7 @@ alter table public.tk_tours         enable row level security;
 alter table public.tk_profiles      enable row level security;
 alter table public.tk_subscriptions enable row level security;
 alter table public.tk_invoices      enable row level security;
+alter table public.tk_feedback      enable row level security;
 
 -- ---------------------------------------------------------------- tours -----
 
@@ -339,6 +367,18 @@ create policy "tk_invoices: read own rows"
   using (auth.uid() = user_id);
 
 revoke insert, update, delete, truncate on public.tk_invoices from anon, authenticated;
+
+-- tk_feedback ----------------------------------------------------------------
+-- No policies at all, deliberately. The table is written by the service role
+-- (which bypasses RLS) and read by a human in the dashboard; with no policy,
+-- every other role is refused outright.
+--
+-- The revoke is load-bearing, not decorative: Supabase's default privileges
+-- hand `anon` and `authenticated` full DML on new tables in public, and neither
+-- `enable row level security` nor a missing policy takes that grant away. RLS
+-- refuses the writes on its own today — but a grant nobody should hold is one
+-- mistake away from mattering.
+revoke all on public.tk_feedback from anon, authenticated;
 
 -- ============================================================================
 -- 6. tours_public — the free columns, for everyone

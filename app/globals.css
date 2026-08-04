@@ -285,6 +285,10 @@ textarea.input { min-height: 90px; resize: vertical; }
   position: fixed; inset: 0; display: grid; place-items: center;
   padding: var(--space-4);
   background: color-mix(in srgb, var(--color-neutral-900) 50%, transparent);
+  /* Above every fixed thing the app puts on screen — the map topbar at 1200,
+     its panel at 1100, and the feedback button at 1300. A modal that something
+     else can sit on top of is not a modal. */
+  z-index: 2000;
 }
 .dialog {
   width: min(440px, 100%); display: flex; flex-direction: column; gap: var(--space-3);
@@ -297,6 +301,29 @@ textarea.input { min-height: 90px; resize: vertical; }
 }
 .dialog-body { font-size: 14px; opacity: 0.85; }
 .dialog-actions { display: flex; justify-content: flex-end; gap: var(--space-2); margin-top: var(--space-2); }
+
+/* — feedback — */
+.feedback-fab {
+  position: fixed;
+  right: clamp(12px, 3vw, 24px);
+  bottom: clamp(12px, 3vw, 24px);
+  z-index: 1300;
+  background: var(--color-surface);
+  box-shadow: var(--shadow-md);
+}
+/* Wider than the default dialog: this one holds six rows of prose, and 440px
+   makes a textarea feel like a search box. */
+.feedback-dialog { width: min(520px, 100%); }
+/* The honeypot. Off-screen rather than `display: none`, which some form-fillers
+   know to skip; `aria-hidden` on the wrapper keeps it away from screen readers,
+   and `tabindex="-1"` keeps it out of the keyboard path. */
+.feedback-trap {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
 
 /* — blueprint frame: components are wireframe objects (see .blueprint
      and .corner above) — square, transparent, hairline-bordered — */
