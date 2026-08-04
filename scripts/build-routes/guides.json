@@ -2455,8 +2455,8 @@
    "ascent": [
     "Frå E16 ved Grotlandsbrua, om lag ein kilometer nord for enden av Lønavatnet, tek du av mot vest og køyrer Høylandsvegen opp til den nedlagde garden Høyland, 139 moh. Der tek skogsbilvegen over. Merk at brøyting heilt fram ikkje er dokumentert — det er ein grusveg til ein nedlagd gard, ikkje ein vinterveg.",
     "Følg skogsbilvegen sørvestover til Bergsstølen på 380 moh og vidare opp det trange dalføret ved Breiming, 610 moh. Skogen held til rundt 544 moh og terrenget er ope frå 646. Det trange partiet ved Breiming er skredterreng — det er den eine staden på turen der du står i eit søkk med sider over deg.",
-    "Vidare følgjer du slakaste veg nordvestover mot Svartahorgi, til venstre for det trigonometriske punktet 834, og rundar sjølve Svartahorgi (1029 moh) før du kjem inn på ryggen på om lag 1003 moh. Brattaste hundremeteren på turen ligg mellom 800 og 900 moh og måler 18,6 grader i snitt.",
-    "Ryggen blir følgd vestover og deretter sørover over punkt 1305 — som ligg på nøyaktig 1305 moh — og opp nordryggen til toppen på 1412 moh. Dei siste 107 høgdemetrane tek 893 meter grunn: brei, slak rygg, og ofte avblåsen og hard fordi han er vindutsett. Dei fleste som går Lønahorgi startar frå toppen av Horgaletten-heisen på om lag 920 moh og har då 490 høgdemeter att; denne ruta er den lange varianten frå bilvegen, og det er òg den Fri Flyt kallar den finaste nedturen."
+    "Vidare følgjer du slakaste veg nordvestover mot Svartahorgi, til venstre for det trigonometriske punktet 834, og rundar sjølve Svartahorgi (1037 moh; SSR-punktet ligg 41 meter frå toppen og les 1029) før du kjem inn på ryggen på om lag 1003 moh. Brattaste hundremeteren på turen ligg mellom 800 og 900 moh og måler 18,6 grader i snitt.",
+    "Ryggen blir følgd vestover og deretter sørover over punkt 1305 — som ligg på nøyaktig 1305 moh — og opp nordryggen til toppen på 1412 moh. Dei siste 107 høgdemetrane tek 1,1 kilometer grunn, og linja fell 17 meter frå punkt 1305 før ho stig att: brei, slak rygg, og ofte avblåsen og hard fordi han er vindutsett. Dei fleste som går Lønahorgi startar frå toppen av Horgaletten-heisen på om lag 920 moh og har då 490 høgdemeter att; denne ruta er den lange varianten frå bilvegen, og det er òg den Fri Flyt kallar den finaste nedturen."
    ],
    "descent": [
     "Ned same linja: nordryggen til punkt 1305, austover over Svartahorgi og ned til Breiming og Bergsstølen, og til slutt skogsbilvegen ned til Høyland. Fallretninga på nedkøyringa er nordaust. Nedste delen er tynn: snødekket ved Høyland og Bergsstølen er kortvarig, og utpå våren er det verdt å gå av tidleg heller enn å skrapa dei siste hundre høgdemetrane.",
@@ -2466,26 +2466,26 @@
    "avalanche": [
     {
      "title": "Ruta",
-     "body": "Linja er teknisk enkel: brattaste samanhengande parti måler 30,8 grader og brattaste hundremeteren, 800 til 900 moh, 18,6 grader i snitt. Det trange dalføret ved Breiming er den eine staden ruta går inn i skredterreng, og det er òg der ho er smalast. Ryggen frå punkt 1305 og opp er brei og slak, men vindutsett og ofte avblåsen og hard — der er problemet feste, ikkje flak."
+     "body": "Linja er teknisk enkel: brattaste samanhengande parti måler 30,8 grader og brattaste hundremeteren, 800 til 900 moh, 18,6 grader i snitt. Det trange dalføret ved Breiming er den eine staden ruta går inn i skredterreng, og det er òg der ho er smalast. Ryggen frå punkt 1305 og opp er brei og slak mot vest — under éin grad dei fyrste fire hundre metrane — men han er samstundes vestkanten av Årdalsida: aust for linja måler flanken 33 grader i snitt over fire hundre meter, med 48 til 52 på det brattaste. Ryggen er vindutsett og ofte avblåsen, og då ligg snøen han har mist på nettopp den lesida."
     },
     {
      "title": "Terrenget rundt",
-     "body": "Austsida ned mot Årdalen er den bratte delen av fjellet, og store svaskred losnar der seint på våren og går langt. Årdalen ligg nordaust for toppen på om lag 930 moh og er ei dokumentert nedkøyring for dei som vel ho med opne auge — ikkje ein snarveg heim. Snødekket nede ved Høyland og Bergsstølen er tynt og kortvarig."
+     "body": "Austsida ned mot Årdalen er den bratte delen av fjellet, og ruta følgjer kanten av henne den siste kilometeren, og store svaskred losnar der seint på våren og går langt. Årdalen ligg nordaust for toppen på om lag 930 moh og er ei dokumentert nedkøyring for dei som vel ho med opne auge — ikkje ein snarveg heim. Snødekket nede ved Høyland og Bergsstølen er tynt og kortvarig."
     },
     {
      "title": "Før du går",
      "body": "Sjekk dagens skredvarsel for Voss på varsom.no. Ta med sender/mottakar, søkjestang og spade."
     }
    ],
-   "caption": "1305 høgdemeter og 6,71 km frå Høyland, med dei siste 107 høgdemetrane fordelte på 893 meter slak nordrygg."
+   "caption": "1305 høgdemeter og 6,71 km frå Høyland, med dei siste 107 høgdemetrane fordelte på 1,1 km slak nordrygg."
   },
   "en": {
    "intro": "1305 metres of climbing from 139 m — one of the longest continuous ascents at Voss, and technically one of the easiest. The steepest sustained section on the line measures 30.8 degrees, and the north ridge over the last 107 metres is nearly flat.",
    "ascent": [
     "From the E16 at Grotlandsbrua, about a kilometre north of the end of Lønavatnet, turn west and drive Høylandsvegen up to the abandoned farm at Høyland, 139 m. The forest track takes over there. Note that ploughing all the way is not documented — this is a gravel road to a disused farm, not a winter road.",
     "Follow the forest track south-west to Bergsstølen at 380 m and on up the narrow valley at Breiming, 610 m. The forest holds to around 544 m and the ground is open from 646. The narrow section at Breiming is avalanche terrain — it is the one place on the tour where you stand in a trough with sides above you.",
-    "Continue by the gentlest line north-west towards Svartahorgi, left of the trigonometric point 834, and round Svartahorgi itself (1029 m) before joining the ridge at about 1003 m. The steepest hundred-metre band on the tour lies between 800 and 900 m and averages 18.6 degrees.",
-    "The ridge is followed west and then south over point 1305 — which reads exactly 1305 m — and up the north ridge to the summit at 1412 m. The final 107 metres take 893 metres of ground: a broad, gentle ridge, and often scoured hard because it is exposed to the wind. Most people who climb Lønahorgi start from the top of the Horgaletten lift at about 920 m and have 490 metres left; this route is the long version from the road, and it is also the one Fri Flyt calls the finest way down."
+    "Continue by the gentlest line north-west towards Svartahorgi, left of the trigonometric point 834, and round Svartahorgi itself (1037 m; the SSR point sits 41 metres off the top and reads 1029) before joining the ridge at about 1003 m. The steepest hundred-metre band on the tour lies between 800 and 900 m and averages 18.6 degrees.",
+    "The ridge is followed west and then south over point 1305 — which reads exactly 1305 m — and up the north ridge to the summit at 1412 m. The final 107 metres take 1.1 km of ground, and the line drops 17 m from point 1305 before it climbs again: a broad, gentle ridge, and often scoured hard because it is exposed to the wind. Most people who climb Lønahorgi start from the top of the Horgaletten lift at about 920 m and have 490 metres left; this route is the long version from the road, and it is also the one Fri Flyt calls the finest way down."
    ],
    "descent": [
     "Down the same line: the north ridge to point 1305, east over Svartahorgi and down to Breiming and Bergsstølen, and finally the forest track down to Høyland. The descent faces north-east. The bottom section is thin: the snow cover at Høyland and Bergsstølen is short-lived, and later in spring it is worth taking the skis off early rather than scraping the last hundred metres.",
@@ -2495,18 +2495,18 @@
    "avalanche": [
     {
      "title": "The route",
-     "body": "The line is technically simple: the steepest sustained section measures 30.8 degrees and the steepest hundred-metre band, 800 to 900 m, 18.6 degrees on average. The narrow valley at Breiming is the one place the route enters avalanche terrain, and it is also where it is most confined. The ridge from point 1305 upwards is broad and gentle, but wind-exposed and often scoured hard — there the problem is grip, not slabs."
+     "body": "The line is technically simple: the steepest sustained section measures 30.8 degrees and the steepest hundred-metre band, 800 to 900 m, 18.6 degrees on average. The narrow valley at Breiming is the one place the route enters avalanche terrain, and it is also where it is most confined. The ridge from point 1305 upwards is broad and gentle to the west — under one degree for the first four hundred metres — but it is also the western rim of the Årdalen face: east of the line the flank measures 33 degrees on average over four hundred metres, with 48 to 52 at its steepest. The crest is wind-exposed and often scoured, and the snow it has lost is sitting on exactly that lee side."
     },
     {
      "title": "The terrain around it",
-     "body": "The east side down towards Årdalen is the steep part of the mountain, and large full-depth avalanches release there late in spring and run a long way. Årdalen lies north-east of the summit at about 930 m and is a documented descent for those who choose it deliberately — not a short cut home. The snow cover down at Høyland and Bergsstølen is thin and short-lived."
+     "body": "The east side down towards Årdalen is the steep part of the mountain, and the route follows its rim for the last kilometre, and large full-depth avalanches release there late in spring and run a long way. Årdalen lies north-east of the summit at about 930 m and is a documented descent for those who choose it deliberately — not a short cut home. The snow cover down at Høyland and Bergsstølen is thin and short-lived."
     },
     {
      "title": "Before you go",
      "body": "Check today's avalanche forecast for Voss at varsom.no. Bring a transceiver, probe and shovel."
     }
    ],
-   "caption": "1305 metres of climbing and 6.71 km from Høyland, with the last 107 metres spread over 893 metres of gentle north ridge."
+   "caption": "1305 metres of climbing and 6.71 km from Høyland, with the last 107 metres spread over 1.1 km of gentle north ridge."
   },
   "source": "written against corridors.json and the routed line",
   "sources": [

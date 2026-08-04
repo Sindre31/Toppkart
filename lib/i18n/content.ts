@@ -1329,8 +1329,8 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
     ascent: [
       "From the E16 at Grotlandsbrua, about a kilometre north of the end of Lønavatnet, turn west and drive Høylandsvegen up to the abandoned farm at Høyland, 139 m. The forest track takes over there. Note that ploughing all the way is not documented — this is a gravel road to a disused farm, not a winter road.",
       "Follow the forest track south-west to Bergsstølen at 380 m and on up the narrow valley at Breiming, 610 m. The forest holds to around 544 m and the ground is open from 646. The narrow section at Breiming is avalanche terrain — it is the one place on the tour where you stand in a trough with sides above you.",
-      "Continue by the gentlest line north-west towards Svartahorgi, left of the trigonometric point 834, and round Svartahorgi itself (1029 m) before joining the ridge at about 1003 m. The steepest hundred-metre band on the tour lies between 800 and 900 m and averages 18.6 degrees.",
-      "The ridge is followed west and then south over point 1305 — which reads exactly 1305 m — and up the north ridge to the summit at 1412 m. The final 107 metres take 893 metres of ground: a broad, gentle ridge, and often scoured hard because it is exposed to the wind. Most people who climb Lønahorgi start from the top of the Horgaletten lift at about 920 m and have 490 metres left; this route is the long version from the road, and it is also the one Fri Flyt calls the finest way down.",
+      "Continue by the gentlest line north-west towards Svartahorgi, left of the trigonometric point 834, and round Svartahorgi itself (1037 m; the SSR point sits 41 metres off the top and reads 1029) before joining the ridge at about 1003 m. The steepest hundred-metre band on the tour lies between 800 and 900 m and averages 18.6 degrees.",
+      "The ridge is followed west and then south over point 1305 — which reads exactly 1305 m — and up the north ridge to the summit at 1412 m. The final 107 metres take 1.1 km of ground, and the line drops 17 m from point 1305 before it climbs again: a broad, gentle ridge, and often scoured hard because it is exposed to the wind. Most people who climb Lønahorgi start from the top of the Horgaletten lift at about 920 m and have 490 metres left; this route is the long version from the road, and it is also the one Fri Flyt calls the finest way down.",
     ],
     descent: [
       "Down the same line: the north ridge to point 1305, east over Svartahorgi and down to Breiming and Bergsstølen, and finally the forest track down to Høyland. The descent faces north-east. The bottom section is thin: the snow cover at Høyland and Bergsstølen is short-lived, and later in spring it is worth taking the skis off early rather than scraping the last hundred metres.",
@@ -1340,11 +1340,11 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
     avalanche: [
       {
         title: "The route",
-        body: "The line is technically simple: the steepest sustained section measures 30.8 degrees and the steepest hundred-metre band, 800 to 900 m, 18.6 degrees on average. The narrow valley at Breiming is the one place the route enters avalanche terrain, and it is also where it is most confined. The ridge from point 1305 upwards is broad and gentle, but wind-exposed and often scoured hard — there the problem is grip, not slabs.",
+        body: "The line is technically simple: the steepest sustained section measures 30.8 degrees and the steepest hundred-metre band, 800 to 900 m, 18.6 degrees on average. The narrow valley at Breiming is the one place the route enters avalanche terrain, and it is also where it is most confined. The ridge from point 1305 upwards is broad and gentle to the west — under one degree for the first four hundred metres — but it is also the western rim of the Årdalen face: east of the line the flank measures 33 degrees on average over four hundred metres, with 48 to 52 at its steepest. The crest is wind-exposed and often scoured, and the snow it has lost is sitting on exactly that lee side.",
       },
       {
         title: "The terrain around it",
-        body: "The east side down towards Årdalen is the steep part of the mountain, and large full-depth avalanches release there late in spring and run a long way. Årdalen lies north-east of the summit at about 930 m and is a documented descent for those who choose it deliberately — not a short cut home. The snow cover down at Høyland and Bergsstølen is thin and short-lived.",
+        body: "The east side down towards Årdalen is the steep part of the mountain, and the route follows its rim for the last kilometre, and large full-depth avalanches release there late in spring and run a long way. Årdalen lies north-east of the summit at about 930 m and is a documented descent for those who choose it deliberately — not a short cut home. The snow cover down at Høyland and Bergsstølen is thin and short-lived.",
       },
       {
         title: "Before you go",
@@ -1355,7 +1355,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       startLabel: "139 m",
       endLabel: "1412 m",
       distanceLabel: "6.7 km",
-      caption: "1305 metres of climbing and 6.71 km from Høyland, with the last 107 metres spread over 893 metres of gentle north ridge.",
+      caption: "1305 metres of climbing and 6.71 km from Høyland, with the last 107 metres spread over 1.1 km of gentle north ridge.",
     },
   },
   folarskardnuten: {
