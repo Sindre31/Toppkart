@@ -62,7 +62,12 @@ export async function AccountNav({ lang }: { lang: Lang }) {
 }
 
 /** Page footer. The language switcher lives in the nav rather than down here —
- *  same corner on every page, no scrolling to reach it. */
+ *  same corner on every page, no scrolling to reach it.
+ *
+ *  «Vilkår» and «Personvern» sit on every page deliberately. Both are linked
+ *  from outside the app as well — the Stripe Customer Portal and Google's OAuth
+ *  consent screen each take a URL — so they have to be reachable without a
+ *  session and without hunting. */
 export function SiteFooter({
   lang,
   children,
@@ -77,6 +82,8 @@ export function SiteFooter({
     <footer className={`site-footer ${className}`.trim()}>
       <span>Toppkart</span>
       <Link href="/kart">{t.footerMap}</Link>
+      <Link href="/vilkar">{t.footerTerms}</Link>
+      <Link href="/personvern">{t.footerPrivacy}</Link>
       <a href={`mailto:${SITE.supportEmail}`}>{t.footerSupport}</a>
       {children}
     </footer>

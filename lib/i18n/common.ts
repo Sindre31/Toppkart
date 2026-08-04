@@ -18,6 +18,8 @@ export interface CommonDict {
   footerMap: string;
   /** Footer link to the receive-only support mailbox. */
   footerSupport: string;
+  footerTerms: string;
+  footerPrivacy: string;
   /* — language switcher — */
   langLabel: string;
   langSwitchTo: string;
@@ -39,6 +41,8 @@ const COMMON: Translated<CommonDict> = {
     price: "Pris",
     footerMap: "Kartet",
     footerSupport: "Kontakt",
+    footerTerms: "Vilkår",
+    footerPrivacy: "Personvern",
     langLabel: "Språk",
     langSwitchTo: "Bytt til engelsk",
     close: "Lukk",
@@ -56,6 +60,8 @@ const COMMON: Translated<CommonDict> = {
     price: "Pricing",
     footerMap: "The map",
     footerSupport: "Contact",
+    footerTerms: "Terms",
+    footerPrivacy: "Privacy",
     langLabel: "Language",
     langSwitchTo: "Switch to Norwegian",
     close: "Close",
