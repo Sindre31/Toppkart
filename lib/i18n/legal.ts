@@ -11,8 +11,10 @@
  *     translation, not a second draft. A discrepancy between them is a
  *     discrepancy in what you have promised.
  *
- *  The trader's name, organisation number and address come from `LEGAL` in
- *  `lib/config.ts` and are interpolated, so they are written once.
+ *  No company stands behind the service yet, so the operator and controller
+ *  paragraphs name Toppkart itself and route everything to `SITE.supportEmail`.
+ *  Both are marked below; if a registered entity ever takes over, its name and
+ *  address belong in those two paragraphs and nowhere else.
  *
  *  Structure mirrors `guide.ts`: a document is a header plus numbered sections
  *  of plain paragraphs. No markup inside a paragraph — `LegalDocument` renders
@@ -20,7 +22,7 @@
  *  translation honest.
  */
 
-import { LEGAL, PRICE, SITE, TRIAL_DAYS } from "@/lib/config";
+import { PRICE, SITE, TRIAL_DAYS } from "@/lib/config";
 import type { Lang, Translated } from "./index";
 import { pick } from "./index";
 
@@ -52,8 +54,6 @@ export interface LegalDict {
 }
 
 const CONTACT = SITE.supportEmail;
-const OPERATOR = `${LEGAL.entity}, organisasjonsnummer ${LEGAL.orgNumber}, ${LEGAL.address}`;
-const OPERATOR_EN = `${LEGAL.entity}, company registration number ${LEGAL.orgNumber}, ${LEGAL.address}`;
 
 const LEGAL_TEXT: Translated<LegalDict> = {
   no: {
@@ -71,7 +71,8 @@ const LEGAL_TEXT: Translated<LegalDict> = {
           title: "Om tjenesten",
           body: [
             "Toppkart er en digital feltguide for skiturer i Norge. Abonnementet gir tilgang til rutebeskrivelser, høydeprofil, bratthet, skredterreng og GPX-filer for turene i kartet.",
-            `Tjenesten leveres av ${OPERATOR}. Henvendelser går til ${CONTACT}.`,
+            /* Operator. A registered entity's name and address go here. */
+            `Toppkart er et lite prosjekt drevet privat, ikke gjennom et registrert selskap. All kontakt går til ${CONTACT}, og henvendelser om abonnement, oppsigelse og denne avtalen besvares derfra.`,
           ],
         },
         {
@@ -85,7 +86,7 @@ const LEGAL_TEXT: Translated<LegalDict> = {
         {
           title: "Abonnement og pris",
           body: [
-            `Abonnementet koster ${PRICE.monthly.amount} kr per måned eller ${PRICE.yearly.amount} kr per år. Prisene er inkludert merverdiavgift.`,
+            `Abonnementet koster ${PRICE.monthly.amount} kr per måned eller ${PRICE.yearly.amount} kr per år. Det er hele prisen — ingenting kommer i tillegg.`,
             `Nye kunder får ${TRIAL_DAYS} dager gratis. Du må registrere et betalingskort når du starter, men kortet belastes ikke i prøveperioden.`,
             "Etter prøveperioden fornyes abonnementet automatisk ved utløpet av hver periode, til du sier det opp. Betalingen trekkes fra kortet du har registrert.",
             "Vi kan endre prisen. Du får beskjed på e-post minst 30 dager før en endring trer i kraft, og du kan si opp før den gjelder.",
@@ -155,7 +156,8 @@ const LEGAL_TEXT: Translated<LegalDict> = {
         {
           title: "Behandlingsansvarlig",
           body: [
-            `${OPERATOR} er behandlingsansvarlig for opplysningene som beskrives her.`,
+            /* Controller. A registered entity's name and address go here. */
+            "Toppkart er behandlingsansvarlig for opplysningene som beskrives her. Tjenesten drives privat, ikke gjennom et registrert selskap.",
             `Spørsmål om personvern, og forespørsler om innsyn eller sletting, går til ${CONTACT}.`,
           ],
         },
@@ -233,7 +235,8 @@ const LEGAL_TEXT: Translated<LegalDict> = {
           title: "The service",
           body: [
             "Toppkart is a digital field guide to ski touring in Norway. A subscription gives you route descriptions, elevation profiles, steepness, avalanche terrain and GPX files for the tours on the map.",
-            `The service is operated by ${OPERATOR_EN}. Enquiries go to ${CONTACT}.`,
+            /* Operator. A registered entity's name and address go here. */
+            `Toppkart is a small project run privately, not through a registered company. All contact goes to ${CONTACT}, and questions about subscriptions, cancellation and this agreement are answered from there.`,
           ],
         },
         {
@@ -247,7 +250,7 @@ const LEGAL_TEXT: Translated<LegalDict> = {
         {
           title: "Subscription and price",
           body: [
-            `The subscription costs ${PRICE.monthly.amount} NOK per month or ${PRICE.yearly.amount} NOK per year. Prices include Norwegian VAT.`,
+            `The subscription costs ${PRICE.monthly.amount} NOK per month or ${PRICE.yearly.amount} NOK per year. That is the whole price — nothing is added on top.`,
             `New customers get ${TRIAL_DAYS} days free. You have to register a payment card when you start, but the card is not charged during the trial.`,
             "After the trial the subscription renews automatically at the end of each period until you cancel. Payment is taken from the card you registered.",
             "We may change the price. You will be told by e-mail at least 30 days before a change takes effect, and you can cancel before it applies.",
@@ -317,7 +320,8 @@ const LEGAL_TEXT: Translated<LegalDict> = {
         {
           title: "Data controller",
           body: [
-            `${OPERATOR_EN} is the controller for the data described here.`,
+            /* Controller. A registered entity's name and address go here. */
+            "Toppkart is the controller for the data described here. The service is run privately, not through a registered company.",
             `Questions about privacy, and requests for access or deletion, go to ${CONTACT}.`,
           ],
         },

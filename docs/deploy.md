@@ -274,9 +274,13 @@ Walk the real flow on the deployed site, not just the local one:
 - [ ] `/betaling` signed out shows the Google button and **no** payment form; the trial cannot be
       started without a session. Signing in from there returns you to the same plan.
 - [ ] `support@toppkart.no` receives a message sent from an outside address.
-- [ ] `/vilkar` and `/personvern` load, are linked from the footer of every page, and contain no
-      remaining `[selskapsnavn]`-style placeholders from `LEGAL` in `lib/config.ts`. Those render
-      literally, so an unfilled value is visible on the live site.
+- [ ] `/vilkar` and `/personvern` load and are linked from the footer of every page.
+
+      Both pages describe Toppkart as a privately run project with no company behind it, and
+      route all contact to `SITE.supportEmail`. That is accurate while this is a side project.
+      Register an entity, or grow into having to, and two things change together: the operator
+      and controller paragraphs in `lib/i18n/legal.ts` need a name and address, and the price
+      paragraph needs to say whether VAT is included. They are marked in that file.
 - [ ] `/betaling` creates a Stripe Checkout session, the card is collected, and today's total is
       0 kr.
 - [ ] The webhook fires and the subscription row in Supabase reaches status `trialing`.
