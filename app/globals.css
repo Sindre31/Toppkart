@@ -312,8 +312,20 @@ textarea.input { min-height: 90px; resize: vertical; }
   box-shadow: var(--shadow-md);
 }
 /* Wider than the default dialog: this one holds six rows of prose, and 440px
-   makes a textarea feel like a search box. */
-.feedback-dialog { width: min(520px, 100%); }
+   makes a textarea feel like a search box.
+
+   The background is restated because the blueprint layer below sets
+   `.card, .dialog { background: transparent }` — right for a card sitting on
+   the page, wrong for a modal, which then lets the heading behind it show
+   through its own body text.
+
+   Two classes rather than one: that override comes *later* in this file and
+   carries the same weight, so a single `.feedback-dialog` loses to it on
+   source order alone. */
+.dialog.feedback-dialog {
+  width: min(520px, 100%);
+  background: var(--color-surface);
+}
 /* The honeypot. Off-screen rather than `display: none`, which some form-fillers
    know to skip; `aria-hidden` on the wrapper keeps it away from screen readers,
    and `tabindex="-1"` keeps it out of the keyboard path. */
