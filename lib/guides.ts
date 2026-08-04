@@ -178,16 +178,16 @@ export const GUIDES: Record<string, TourGuide> = {
   hamperokken: {
     slug: "hamperokken",
     intro:
-      "En middels skitur med en eksperts avslutning. 1399 høydemeter fra Fv91 opp en bred nordvestrygg som aldri blir brattere enn 26 grader — og så 1,4 kilometer eksponert rygg til fots fra Middagsaksla, med stegjern, isøks og et siste trinn som lokalt måler over 45 grader.",
+      "En middels skitur med en eksperts avslutning. 1399 høydemeter fra Fv91 opp en bred nordvestrygg som aldri blir brattere enn 26 grader — og så 1,7 kilometer eksponert rygg til fots fra Middagsaksla, med stegjern, isøks og et siste trinn som lokalt måler over 45 grader.",
     ascent: [
       "Fra parkeringa ved Fv91 nedenfor Vartavarhaugen, 65 moh, går ruta østover over Vartavarhaugen på 159 moh og krysser Tverrelva. Bjørka slipper taket rundt 424 moh, og over 542 moh er terrenget åpent hele veien.",
       "Derfra følger skisporet den brede nordvestryggen sammenhengende oppover. Terrengmodellen gir jevne 16 til 26 grader fra rundt 350 moh til Middagsaksla, uten bratte trinn: bandene mellom 500 og 1000 moh ligger alle på 19 til 21 grader i snitt. Det er en lang, jevn skitur, og den er lite skredutsatt så lenge du blir på ryggen. Flankene på begge sider er noe annet, og de er terrengfeller i dårlig sikt.",
-      "På Middagsaksla, 1076 moh, stopper skituren. Her setter de fleste fra seg skiene; noen bærer dem til forvarden på rundt 1190 moh og lar dem ligge der. Turrapportene fra vinterbestigninger er samstemte om at ryggen videre går til fots — «over ca. 1100 moh måtte skiene byttes mot stegjern og isøks».",
-      "De siste 1,4 kilometerne er eksponert nordvestrygg. Ryggkammen bølger — 1076, 1157, 1093, 1190, 1219, 1208, 1256, 1331 og til slutt 1393 moh — og linja gir til sammen tilbake 66 høydemeter på veien. Det er luftige parti, korte klyvepartier, og helt til slutt ei renne og en bratt topppyramide: den bratteste hundremeteren på hele turen ligger mellom 1300 og 1400 moh og måler 23,7 grader i snitt, mens det bratteste sammenhengende partiet er 36 grader og siste trinn lokalt er over 45.",
+      "På Middagsaksla, 1076 moh, stopper skituren. Mange setter fra seg skiene her; noen bærer dem til forvarden på rundt 1190 moh og lar dem ligge der. Turrapportene fra vinterbestigninger er samstemte om at ryggen videre går til fots — «over ca. 1100 moh måtte skiene byttes mot stegjern og isøks».",
+      "De siste 1,7 kilometerne er eksponert nordvestrygg. Ryggkammen bølger seg oppover fra 1076 til 1393 moh med korte motfall underveis — 47 høydemeter til sammen over Middagsaksla, og ingen av dem mer enn ti om gangen på linja. Det er luftige parti, korte klyvepartier, og helt til slutt ei renne og en bratt topppyramide: den bratteste hundremeteren på hele turen ligger mellom 1300 og 1400 moh og måler 23,7 grader i snitt, mens det bratteste sammenhengende partiet er 36 grader og siste trinn lokalt er over 45.",
     ],
     descent: [
       "Ryggen tilbake til fots til Middagsaksla, og derfra ned nordvestryggen på ski til Vartavarhaugen og bilen. Fallretningen ned ryggen er målt til nordvest, 293 grader, og hellinga er 16 til 26 grader hele veien — jevn, oversiktlig kjøring uten trange partier.",
-      "Vanligste feil: å behandle Middagsaksla som en pause i stedet for et vedtak. Er ryggen isete, eller er sikta dårlig, er det her turen slutter — skituren er uansett over, og det som ligger foran er 1,4 kilometer der en glipp ikke har noen utgang til sida. Å snu på Middagsaksla er ikke en avbrutt tur; det er den turen de fleste faktisk går.",
+      "Vanligste feil: å behandle Middagsaksla som en pause i stedet for et vedtak. Er ryggen isete, eller er sikta dårlig, er det her turen slutter — skituren er uansett over, og det som ligger foran er 1,4 kilometer der en glipp ikke har noen utgang til sida. Å snu på Middagsaksla er ikke en avbrutt tur; det er en fullverdig tur i seg selv, og den riktige når ryggen er isete.",
       "Den andre feilen er å slippe seg ned en av flankene fra ryggen for å korte inn. Begge sider av nordvestryggen er bratte og samler snø; ryggen selv er linja, både opp og ned.",
     ],
     avalanche: [
@@ -209,7 +209,7 @@ export const GUIDES: Record<string, TourGuide> = {
       startLabel: "65 moh",
       endLabel: "1397 moh",
       distanceLabel: "5,4 km",
-      caption: "1399 høydemeter og 5,42 km fra Fv91. Skituren slutter på Middagsaksla 1076 moh; de siste 1,4 km til fots gir tilbake 66 høydemeter underveis.",
+      caption: "1399 høydemeter og 5,42 km fra Fv91. Skituren slutter på Middagsaksla 1076 moh; de siste 1,7 km til fots gir tilbake 47 høydemeter underveis.",
     },
   },
   kavringtinden: {
@@ -693,22 +693,22 @@ export const GUIDES: Record<string, TourGuide> = {
   jakta: {
     slug: "jakta",
     intro:
-      "1555 høgdemeter frå fjorden på under fem kilometer, og det meste av dei kjem i eitt strekk. Frå Konedalen går ei 33 til 36 grader bratt side opp på ein smal topprygg som har skavl mot Konedalen og ein om lag 80 grader bratt vegg ned mot Hjørundfjorden på hi sida.",
+      "1555 høgdemeter frå fjorden på under fem kilometer, og det meste av dei kjem i eitt strekk. Frå Konedalen går ei side opp på ein smal topprygg — 25 til 33 grader nedst, 40 til 50 dei siste 200 høgdemetrane som har skavl mot Konedalen og ein om lag 80 grader bratt vegg ned mot Hjørundfjorden på hi sida.",
     ascent: [
       "Frå vegenden ved Lisjeholen sør for Norang-gardane, 61 moh, tek du den bratte stien opp til Konedalen med skia på sekken — fyrst på venstre side av elva, så over på høgre. Skogen sluttar rundt 296 moh og terrenget er ope frå om lag 400. Dette er den delen av turen som ikkje er skitur, og ho stig 20 til 22 grader i snitt.",
       "Oppe i dalen tek du på deg skia og følgjer det slake dalføret sørvestover til om lag 740 moh. Hald deg på søraustre side på veg inn: det kan gå skred frå Jakta heile vegen inn Konedalen, og dalbotnen er utløpssona.",
-      "Ved 740 moh svingar du til høgre og sikk-sakkar opp den 33 til 36 grader bratte sida i nordvest til du når toppryggen ved 1240 moh. Dette er den store skredfella på turen: eit samanhengande heng på 300 til 400 høgdemeter, og det er også nedkøyringa. Linja slik ho er teikna held 34,5 grader som brattaste samanhengande parti — sikk-sakken er kva som gjer talet lågare enn fallinja.",
+      "Ved 740 moh svingar du til høgre og sikk-sakkar opp sida i nordvest til du når toppryggen ved 1240 moh. Sida er ikkje jamn: nedst held ho 25 til 33 grader, men dei siste 200 høgdemetrane opp mot ryggen måler fallinja 40 til 50. Dette er den store skredfella på turen: eit samanhengande heng på 300 til 400 høgdemeter, og det er også nedkøyringa. Linja slik ho er teikna held 34,5 grader som brattaste samanhengande parti — sikk-sakken er kva som gjer talet lågare enn fallinja.",
       "Ryggen blir følgd sørvestover heilt til topps på 1589 moh. Hald deg midt på han. Den bratteste hundremeteren på turen ligg mellom 1500 og 1600 moh og måler 24,6 grader i snitt, men det er ikkje hellinga som er problemet på ryggen — det er breidda: ein kryssprofil ved 62,1715 nord gjev 1556 moh på ryggen og 1265 moh berre 52 meter nordvest for han.",
     ],
     descent: [
-      "Vanlegaste nedkøyring er same vegen tilbake: 35 grader frå ryggen ned mot Konedalen, slakare vidare ut dalen, og til slutt stien ned til Lisjeholen med skia på sekken igjen. Sida ned frå ryggen er den beste køyringa på turen og samstundes det brattaste og mest skredutsette du er innom.",
+      "Vanlegaste nedkøyring er same vegen tilbake: 45 til 50 grader dei fyrste 200 høgdemetrane frå ryggen, så 30 til 35 ned mot Konedalen og slakare vidare ut dalen, og til slutt stien ned til Lisjeholen med skia på sekken igjen. Sida ned frå ryggen er den beste køyringa på turen og samstundes det brattaste og mest skredutsette du er innom.",
       "Vanlegaste feil: å lesa skavlane etter «høgre og venstre» i staden for etter kompasset. Fri Flyt skriv om skavlar både til høgre ned mot Konedalen og til venstre ned nordveggen, men det gjeld nedstiginga — på veg opp ligg Konedalen i søraust og fjordveggen i nordvest. Nordvestsida er ikkje ei felle du kan korrigera for undervegs: DTM1 måler om lag 80 grader rett under toppen, og fallet er nær 290 høgdemeter på 52 meter grunn.",
-      "Den andre feilen er å ta av frå dalen for tidleg. Fyrste utkastet av denne ruta svinga opp mot dalbotnen lenger inne, og den linja måler 40 til 44 grader mellom 1030 og 1205 moh. Sida ved 62,174 til 62,176 nord er den som held 33 til 36 heile vegen til ryggen.",
+      "Den andre feilen er å gå for langt inn i dalen før du tek av. Ruta svingar opp ved om lag 740 moh, 1,6 kilometer frå vegenden. Fyrste utkastet av denne ruta svinga opp mot dalbotnen lenger inne, og den linja måler 40 til 44 grader mellom 1030 og 1205 moh. Sida ved 62,174 til 62,176 nord er den som held 33 til 36 heile vegen til ryggen.",
     ],
     avalanche: [
       {
         title: "Ruta",
-        body: "Sida frå Konedalen opp til toppryggen er den store skredfella: 33 til 36 grader over 300 til 400 høgdemeter, og du må gjennom henne både opp og ned. Det kan gå skred frå Jakta heile vegen inn Konedalen, så hald deg på søraustre side på veg inn dalen. Brattaste samanhengande parti på linja måler 34,5 grader, og brattaste hundremeter, 1500 til 1600 moh, 24,6 grader i snitt.",
+        body: "Sida frå Konedalen opp til toppryggen er den store skredfella: 25 til 33 grader nedst og 40 til 50 dei øvste 200 høgdemetrane, i eit samanhengande heng på over 400, og du må gjennom henne både opp og ned. Det kan gå skred frå Jakta heile vegen inn Konedalen, så hald deg på søraustre side på veg inn dalen. Brattaste samanhengande parti på linja måler 34,5 grader, og brattaste hundremeter, 1500 til 1600 moh, 24,6 grader i snitt.",
       },
       {
         title: "Terrenget rundt",
@@ -1353,7 +1353,7 @@ export const GUIDES: Record<string, TourGuide> = {
   vesoldo: {
     slug: "vesoldo",
     intro:
-      "835 høgdemeter frå Byrkjenes, og ein tur som blir slakare dess høgare du kjem: bratt skogsli nedst, open og jamn rygg over. Toppkuppelen er lettvint å gå — men han står rett over stup mot nord og vest, og i flatt lys er kanten ikkje synleg.",
+      "835 høgdemeter frå Byrkjenes, og ein tur som blir slakare dess høgare du kjem: bratt skogsli nedst, open og jamn rygg over. Toppkuppelen er lettvint å gå — men han ligg eit par hundre meter over stupa mot vest og nordvest, og ein halv kilometer over dei mot nord, og i flatt lys er kanten ikkje synleg.",
     ascent: [
       "Frå parkeringa ved Byrkjenes, 211 moh, innerst på Tordalsvegen nord for Strandebarm, går du opp den bratte skogkledde lia mot Fadnastølen, 498 moh. Dette er den brattaste delen av turen: brattaste hundremeteren ligg mellom 300 og 400 moh og måler 16,2 grader i snitt. Tordalsvegen er privat bomveg, og brøyting heilt fram til parkeringa er ikkje garantert — ring eller sjekk før du køyrer langt.",
       "Over stølen opnar terrenget seg, med skog i flekkar opp til rundt 577 moh. Ruta held nordaustover inn på den breie sørvestryggen ved 629 moh.",
@@ -1362,7 +1362,7 @@ export const GUIDES: Record<string, TourGuide> = {
     ],
     descent: [
       "Ned same ryggen: sørover over skuldra på 977 moh og 791 moh, ned til 629 og vidare til Fadnastølen. Frå stølen og ned er det skogsli — bratt nok til å vera fin køyring, og bratt nok til å gå laus etter mildvêr og regn.",
-      "Vanlegaste feil: å gå for langt vest eller nord frå varden. Nordsida og nordvestsida fell 55 grader og vestsida 48 innanfor 800 meter frå toppen, og toppkuppelen er så slak at du ikkje kjenner det på skia før kanten er der. I flatt lys er det den einaste reelle faren på turen.",
+      "Vanlegaste feil: å gå for langt vest eller nord frå varden. Nord, nordvest og vest fell 19 til 26 grader i snitt, men bryt av i 48 til 55 grader eit halvt kilometer ute frå varden, og toppkuppelen er så slak at du ikkje kjenner det på skia før kanten er der. I flatt lys er det den einaste reelle faren på turen.",
       "Den andre feilen er å ta sørfallet ned frå toppen i staden for sørvestryggen. Sør held 20,8 grader i snitt, men har eit belte på 33,7 grader 580 til 640 meter ute — det er ikkje same linja som ryggen, og det er ikkje der ruta går.",
     ],
     avalanche: [
@@ -1372,7 +1372,7 @@ export const GUIDES: Record<string, TourGuide> = {
       },
       {
         title: "Terrenget rundt",
-        body: "Hald deg på sørvestryggen heilt opp. Nordsida og nordvestsida av toppen fell 55 grader og vestsida 48 innanfor 800 meter frå varden. Sørfallet held 20,8 grader i snitt, men med eit 33,7-graders belte 580 til 640 meter ute. Sørvestryggen sjølv måler 9,5 grader i snitt, og skilnaden mellom han og nabosidene er heile poenget med linjevalet på dette fjellet.",
+        body: "Hald deg på sørvestryggen heilt opp. I snitt over dei fyrste 800 metrane frå varden fell nordsida 19 grader, nordvestsida 25 og vestsida 26 — men snittet skjuler kanten. Brattaste seksti meter måler 55 grader mot nord (520 til 580 meter ute), 55 mot nordvest (500 til 560) og 48 mot vest (620 til 680), og det er kanten som tel. Sørfallet held 20,8 grader i snitt, men med eit 33,7-graders belte 580 til 640 meter ute. Sørvestryggen sjølv måler 9,5 grader i snitt, og skilnaden mellom han og nabosidene er heile poenget med linjevalet på dette fjellet.",
       },
       {
         title: "Før du går",

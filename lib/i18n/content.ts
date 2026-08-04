@@ -318,16 +318,16 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
   },
   hamperokken: {
     intro:
-      "A moderate ski tour with an expert's finish. 1399 metres of climbing from Fv91 up a broad north-west ridge that never exceeds 26 degrees — and then 1.4 kilometres of exposed ridge on foot from Middagsaksla, with crampons, an axe and a final step that locally measures over 45 degrees.",
+      "A moderate ski tour with an expert's finish. 1399 metres of climbing from Fv91 up a broad north-west ridge that never exceeds 26 degrees — and then 1.7 kilometres of exposed ridge on foot from Middagsaksla, with crampons, an axe and a final step that locally measures over 45 degrees.",
     ascent: [
       "From the car park on Fv91 below Vartavarhaugen, 65 m, the route runs east over Vartavarhaugen at 159 m and crosses the Tverrelva. The birch gives up at around 424 m, and above 542 m the ground is open the rest of the way.",
       "From there the skin track follows the broad north-west ridge in one unbroken line. The terrain model gives a steady 16 to 26 degrees from about 350 m to Middagsaksla, with no steep steps: the bands between 500 and 1000 m all average 19 to 21 degrees. It is a long, even ski tour, and it is not much exposed to avalanches as long as you stay on the ridge. The flanks on either side are another matter, and they are terrain traps in poor visibility.",
-      "At Middagsaksla, 1076 m, the ski tour stops. Most people leave their skis here; some carry them to the forward cairn at about 1190 m and leave them there. Winter trip reports agree that the ridge beyond is walked — \"above about 1100 m the skis had to be swapped for crampons and an axe\".",
-      "The last 1.4 kilometres are exposed north-west ridge. The crest undulates — 1076, 1157, 1093, 1190, 1219, 1208, 1256, 1331 and finally 1393 m — and the line gives back 66 metres of height along the way. There are airy sections, short scrambling steps, and right at the end a gully and a steep summit pyramid: the steepest hundred-metre band on the whole tour lies between 1300 and 1400 m and averages 23.7 degrees, while the steepest sustained section is 36 degrees and the final step locally over 45.",
+      "At Middagsaksla, 1076 m, the ski tour stops. Many leave their skis here; some carry them to the forward cairn at about 1190 m and leave them there. Winter trip reports agree that the ridge beyond is walked — \"above about 1100 m the skis had to be swapped for crampons and an axe\".",
+      "The last 1.7 kilometres are exposed north-west ridge. The crest undulates upward from 1076 to 1393 m with short drops on the way — 47 metres in all above Middagsaksla, and none of them more than ten at a time on the line. There are airy sections, short scrambling steps, and right at the end a gully and a steep summit pyramid: the steepest hundred-metre band on the whole tour lies between 1300 and 1400 m and averages 23.7 degrees, while the steepest sustained section is 36 degrees and the final step locally over 45.",
     ],
     descent: [
       "The ridge back on foot to Middagsaksla, and from there down the north-west ridge on skis to Vartavarhaugen and the car. The fall line down the ridge measures north-west, 293 degrees, and the angle is 16 to 26 degrees throughout — even, open skiing with no confined sections.",
-      "The usual mistake: treating Middagsaksla as a rest rather than a decision. If the ridge is icy, or the visibility poor, this is where the tour ends — the skiing is over either way, and what lies ahead is 1.4 kilometres where a slip has no way out to the side. Turning round at Middagsaksla is not an aborted tour; it is the tour most parties actually do.",
+      "The usual mistake: treating Middagsaksla as a rest rather than a decision. If the ridge is icy, or the visibility poor, this is where the tour ends — the skiing is over either way, and what lies ahead is 1.4 kilometres where a slip has no way out to the side. Turning round at Middagsaksla is not an aborted tour; it is a complete tour in its own right, and the right one when the ridge is icy.",
       "The second mistake is dropping off one of the flanks from the ridge to cut the descent short. Both sides of the north-west ridge are steep and collect snow; the ridge itself is the line, up and down.",
     ],
     avalanche: [
@@ -348,7 +348,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       startLabel: "65 m",
       endLabel: "1397 m",
       distanceLabel: "5.4 km",
-      caption: "1399 metres of climbing and 5.42 km from Fv91. The skiing ends at Middagsaksla, 1076 m; the last 1.4 km on foot give back 66 metres of height on the way.",
+      caption: "1399 metres of climbing and 5.42 km from Fv91. The skiing ends at Middagsaksla, 1076 m; the last 1.7 km on foot give back 47 metres of height on the way.",
     },
   },
   kavringtinden: {
@@ -805,22 +805,22 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
   },
   jakta: {
     intro:
-      "1555 metres of climbing from the fjord in under five kilometres, most of it in one unbroken push. From Konedalen a flank of 33 to 36 degrees leads onto a narrow summit ridge with cornices towards Konedalen and a roughly 80-degree wall down to the Hjørundfjord on the other side.",
+      "1555 metres of climbing from the fjord in under five kilometres, most of it in one unbroken push. From Konedalen a flank leads onto a narrow summit ridge — 25 to 33 degrees low down, 40 to 50 over the last 200 metres with cornices towards Konedalen and a roughly 80-degree wall down to the Hjørundfjord on the other side.",
     ascent: [
       "From the road end at Lisjeholen south of the Norang farms, 61 m, take the steep path up to Konedalen with the skis on your pack — first on the left bank of the river, then across to the right. The forest ends around 296 m and the ground is open from about 400. This is the part of the tour that is not a ski tour, and it climbs at 20 to 22 degrees on average.",
       "Up in the valley you put the skis on and follow the gentle valley floor south-west to about 740 m. Keep to the south-east side on the way in: avalanches run off Jakta the whole length of Konedalen, and the valley floor is the runout.",
-      "At 740 m you turn right and switchback up the 33 to 36 degree flank to the north-west until you reach the summit ridge at 1240 m. This is the big avalanche trap on the tour: a continuous slope of 300 to 400 metres, and it is also the descent. The line as drawn holds 34.5 degrees as its steepest sustained section — the switchbacks are what make that number lower than the fall line.",
+      "At 740 m you turn right and switchback up the flank to the north-west until you reach the summit ridge at 1240 m. The flank is not uniform: low down it holds 25 to 33 degrees, but over the last 200 metres up to the ridge the fall line measures 40 to 50. This is the big avalanche trap on the tour: a continuous slope of 300 to 400 metres, and it is also the descent. The line as drawn holds 34.5 degrees as its steepest sustained section — the switchbacks are what make that number lower than the fall line.",
       "The ridge is followed south-west all the way to the top at 1589 m. Stay on the crest. The steepest hundred-metre band on the tour lies between 1500 and 1600 m and averages 24.6 degrees, but the angle is not the problem on the ridge — the width is: a cross-section at 62.1715 north gives 1556 m on the crest and 1265 m just 52 metres to the north-west.",
     ],
     descent: [
-      "The usual descent is back the same way: 35 degrees from the ridge down towards Konedalen, gentler on out the valley, and finally the path down to Lisjeholen with the skis on your pack again. The flank down from the ridge is the best skiing on the tour and at the same time the steepest and most avalanche-prone ground you touch.",
+      "The usual descent is back the same way: 45 to 50 degrees for the first 200 metres off the ridge, then 30 to 35 down towards Konedalen and gentler on out the valley, and finally the path down to Lisjeholen with the skis on your pack again. The flank down from the ridge is the best skiing on the tour and at the same time the steepest and most avalanche-prone ground you touch.",
       "The usual mistake: reading the cornices by \"left and right\" instead of by compass. Fri Flyt writes of cornices both right towards Konedalen and left down the north face, but that describes the descent — on the way up Konedalen lies to the south-east and the fjord wall to the north-west. The north-west side is not a mistake you can correct on the move: DTM1 measures roughly 80 degrees directly below the summit, a drop of nearly 290 metres in 52 metres of ground.",
-      "The second mistake is leaving the valley too early. The first draft of this route turned uphill at the valley head further in, and that line measures 40 to 44 degrees between 1030 and 1205 m. The flank at 62.174 to 62.176 north is the one that holds 33 to 36 all the way to the ridge.",
+      "The second mistake is going too far up the valley before turning off. The route turns uphill at about 740 m, 1.6 kilometres from the road end. The first draft of this route turned uphill at the valley head further in, and that line measures 40 to 44 degrees between 1030 and 1205 m. The flank at 62.174 to 62.176 north is the one that holds 33 to 36 all the way to the ridge.",
     ],
     avalanche: [
       {
         title: "The route",
-        body: "The flank from Konedalen up to the summit ridge is the big avalanche trap: 33 to 36 degrees over 300 to 400 metres, and you pass through it both ways. Avalanches run off Jakta the whole length of Konedalen, so keep to the south-east side going in. The steepest sustained section on the line measures 34.5 degrees, and the steepest hundred-metre band, 1500 to 1600 m, 24.6 degrees on average.",
+        body: "The flank from Konedalen up to the summit ridge is the big avalanche trap: 25 to 33 degrees low down and 40 to 50 over the top 200 metres, in one continuous slope of over 400, and you pass through it both ways. Avalanches run off Jakta the whole length of Konedalen, so keep to the south-east side going in. The steepest sustained section on the line measures 34.5 degrees, and the steepest hundred-metre band, 1500 to 1600 m, 24.6 degrees on average.",
       },
       {
         title: "The terrain around it",
@@ -1429,7 +1429,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
   },
   vesoldo: {
     intro:
-      "835 metres of climbing from Byrkjenes, and a tour that gets gentler the higher you go: steep forested slope at the bottom, open even ridge above. The summit dome is easy walking — but it stands directly above cliffs to the north and west, and in flat light the edge is invisible.",
+      "835 metres of climbing from Byrkjenes, and a tour that gets gentler the higher you go: steep forested slope at the bottom, open even ridge above. The summit dome is easy walking — but it sits a couple of hundred metres above the cliffs to the west and north-west, and half a kilometre above those to the north, and in flat light the edge is invisible.",
     ascent: [
       "From the car park at Byrkjenes, 211 m, at the far end of Tordalsvegen north of Strandebarm, climb the steep forested slope towards Fadnastølen, 498 m. This is the steepest part of the tour: the steepest hundred-metre band lies between 300 and 400 m and averages 16.2 degrees. Tordalsvegen is a private toll road, and ploughing all the way to the car park is not guaranteed — check before you drive far.",
       "Above the summer farm the ground opens up, with patches of forest to around 577 m. The route holds north-east onto the broad south-west ridge at 629 m.",
@@ -1438,7 +1438,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
     ],
     descent: [
       "Down the same ridge: south over the shoulder at 977 m and 791 m, down to 629 and on to Fadnastølen. From the farm down it is forested slope — steep enough to be good skiing, and steep enough to release after mild weather and rain.",
-      "The usual mistake: wandering too far west or north from the cairn. The north and north-west sides fall 55 degrees and the west side 48 within 800 metres of the summit, and the summit dome is so gentle that you will not feel it underfoot before the edge is there. In flat light that is the only real hazard on the tour.",
+      "The usual mistake: wandering too far west or north from the cairn. North, north-west and west fall 19 to 26 degrees on average, but break over at 48 to 55 degrees about half a kilometre out from the cairn, and the summit dome is so gentle that you will not feel it underfoot before the edge is there. In flat light that is the only real hazard on the tour.",
       "The second mistake is taking the south face down from the summit instead of the south-west ridge. South averages 20.8 degrees, but has a 33.7-degree belt 580 to 640 metres out — it is not the same line as the ridge, and it is not where the route goes.",
     ],
     avalanche: [
@@ -1448,7 +1448,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       },
       {
         title: "The terrain around it",
-        body: "Stay on the south-west ridge all the way up. The north and north-west sides of the summit fall 55 degrees and the west side 48 within 800 metres of the cairn. The south face averages 20.8 degrees, but with a 33.7-degree belt 580 to 640 metres out. The south-west ridge itself measures 9.5 degrees, and the difference between it and the neighbouring faces is the whole point of the line choice on this mountain.",
+        body: "Stay on the south-west ridge all the way up. Averaged over the first 800 metres from the cairn the north side falls 19 degrees, the north-west 25 and the west 26 — but the average hides the edge. The steepest sixty metres measure 55 degrees to the north (520 to 580 metres out), 55 to the north-west (500 to 560) and 48 to the west (620 to 680), and the edge is what counts. The south face averages 20.8 degrees, but with a 33.7-degree belt 580 to 640 metres out. The south-west ridge itself measures 9.5 degrees, and the difference between it and the neighbouring faces is the whole point of the line choice on this mountain.",
       },
       {
         title: "Before you go",
