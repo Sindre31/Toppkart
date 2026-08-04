@@ -33,20 +33,20 @@ export const GUIDES: Record<string, TourGuide> = {
   storgalten: {
     slug: "storgalten",
     intro:
-      "Fjord til topp i ytre Lyngen: 1210 høydemeter fra veikanten der Galtelva renner ut i Nord-Lenangen, til varden på 1219. Kort linje, åpent fjell fra 70 moh og opp, og fjorden i ryggen fra første stigning.",
+      "Fjord til topp i ytre Lyngen: 1213 høydemeter fra veikanten der Galtelva renner ut i Nord-Lenangen, til varden på 1219. Kort linje, åpent fjell fra 70 moh og opp, og fjorden i ryggen fra første stigning.",
     ascent: [
       "Start ved Sandneset, der Galtelva renner ut i fjorden på 14 moh. Det finnes ingen opparbeidet parkering her — du står i veikanten på Fv7922, Lenangsveien, rett ved elveosen. Herfra går du rett inn i Galtdalen nord for Lassofjellet og holder sørsiden av elva, det vil si høyre side på vei opp. Bjørkeskogen slipper taket allerede rundt 70 moh; resten av turen er åpent terreng.",
       "Rund nordsiden av Lassofjellet og ta sikte på skaret mellom Litle-Galten og Storgalten. Du skal ikke helt opp i skaret. Det bunner på 626 moh, og går du dit, gir du fra deg høyde du nettopp har tatt. Legg deg inn på ribben et par hundre meter sør for skaret i stedet — det er der oppstigninga begynner.",
-      "Mellom 800 og 860 moh reiser flanken seg til 30–35 grader, og bratteste steg på hele linja ligger her: 35,6 grader mellom 823 og 849 moh. Er snøen avblåst og hard, er stegjern verdt vekta. Over 880 moh brer ryggen seg ut, men den slutter ikke å stige — de siste drøyt 300 høydemeterne holder rundt 22 grader i snitt, med ett steg på 32 rundt 1100 moh. Hold deg på vestsida av ryggkanten hele veien: øst- og nordøstsiden faller 36–43 grader i snitt ned i Kalddalen mot Kalddalsvatnet på 477 moh, med enkeltpartier på 53–58.",
+      "Mellom 800 og 860 moh reiser flanken seg til 30–35 grader, og bratteste steg på hele linja ligger her: 29,2 grader mellom 803 og 820 moh. Er snøen avblåst og hard, er stegjern verdt vekta. Over 880 moh brer ryggen seg ut, men den slutter ikke å stige — de siste drøyt 300 høydemeterne holder rundt 20 grader i snitt, med ett steg på 26 rundt 1000 moh. Hold deg på vestsida av ryggkanten hele veien: øst- og nordøstsiden faller 36–43 grader i snitt ned i Kalddalen mot Kalddalsvatnet på 477 moh, med enkeltpartier på 53–58.",
     ],
     descent: [
-      "Ned samme vei. Fra toppflata følger du den brede ryggen nordover tilbake til ribben sør for skaret og videre ut i vestflanken; derfra og ned til dalbunnen er det sammenhengende åpent terreng uten skog å bremse i. Vil du ha mer plass, traverserer du sørvestover like før den siste nedkjøringa mot skaret — der ligger en stor flate som holder seg under 20 grader og tåler store svinger.",
+      "Ned samme vei. Fra toppflata følger du den brede ryggen nordover tilbake til ribben sør for skaret og videre ut i vestflanken; derfra og ned til dalbunnen er det sammenhengende åpent terreng uten skog å bremse i. Vil du ha mer plass, traverserer du sørvestover like før den siste nedkjøringa mot skaret — der ligger en stor, slak flate som tåler store svinger.",
       "Vanligste feil: å slippe seg rett vestover fra toppflata i stedet for å følge ryggen nordover ned til ribben. Langs hele vestsiden av Storgalten går det rennesystemer, og de bratteste partiene måler 40–50 grader. Fra ryggen ser du ikke hvor de begynner, og inngangen er vanskelig å lese ovenfra — skal du kjøre dem, går du dem opp først. Skaret er ikke faren her; vestflanken sør for ribben er det.",
     ],
     avalanche: [
       {
         title: "Ruta",
-        body: "Normalruta går i vestflanken, i løsne- og utløpsterreng. Det bratteste på linja er partiet mellom 800 og 860 moh på 30–35 grader, med bratteste steg målt til 35,6 mellom 823 og 849. Hundremeteren fra 800 til 900 moh er den bratteste på hele ruta, 26,5 grader i snitt. Under den er flanken åpen fra 70 moh og ned til fjorden, uten skog som bremser.",
+        body: "Normalruta går i vestflanken, i løsne- og utløpsterreng. Det bratteste på linja er partiet mellom 800 og 860 moh på 30–35 grader, med bratteste steg målt til 29,2 mellom 803 og 820. Hundremeteren fra 800 til 900 moh er den bratteste på hele ruta, 21,9 grader i snitt. Under den er flanken åpen fra 70 moh og ned til fjorden, uten skog som bremser.",
       },
       {
         title: "Terrenget rundt",
@@ -58,21 +58,21 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,200 L21,196 L42,192 L62,187 L82,183 L102,182 L123,177 L143,172 L164,168 L184,163 L205,160 L226,156 L246,150 L267,144 L287,138 L307,130 L327,122 L347,117 L368,111 L388,102 L408,94 L428,87 L446,81 L464,71 L484,63 L504,55 L523,47 L544,41 L564,30 L584,22 L600,18",
+      path: "M0,200 L26,194 L49,190 L64,186 L90,182 L103,181 L129,175 L148,171 L175,164 L199,159 L224,154 L256,144 L285,134 L301,128 L321,121 L346,114 L373,104 L397,95 L414,89 L430,85 L447,78 L466,69 L487,62 L500,57 L517,51 L544,40 L565,30 L589,21 L600,18",
       startLabel: "14 moh",
       endLabel: "1219 moh",
-      distanceLabel: "3,9 km",
-      caption: "Fra 14 moh ved Galtelvas utløp til 1219 på toppen — 1210 høydemeter på 3,9 kilometer, med det bratteste mellom 800 og 860.",
+      distanceLabel: "4,2 km",
+      caption: "Fra 14 moh ved Galtelvas utløp til 1219 på toppen — 1213 høydemeter på 4,2 kilometer, med det bratteste mellom 800 og 860.",
     },
   },
   "store-blamann": {
     slug: "store-blamann",
     intro:
-      "Kvaløyas høyeste, og en tur som skiller seg fra resten av Tromsø-toppene: 1031 høydemeter på tre kilometer, med et toppparti de fleste tar av seg skiene på.",
+      "Kvaløyas høyeste, og en tur som skiller seg fra resten av Tromsø-toppene: 1035 høydemeter på tre kilometer, med et toppparti de fleste tar av seg skiene på.",
     ascent: [
       "Fra parkeringen ved Slettneset på Fjordvegen (fv 7768) tar den merka Blåmann-stien vestover rett fra sjøkanten. De første hundre metrene går på klopper over myr; skogen slipper med en gang, og fra 56 moh og opp går du i åpent terreng resten av veien.",
       "Stien stiger jevnt vestover til skulderen på rundt 230 moh, svinger så sørvest og tar seg opp på ryggen ovenfor Steet. Fra 475 moh og opp er ryggkammen hele ruta. De første tre hundre høydemeterne der oppe er brede og snille — flankene faller bare 10 til 25 grader, og fjellet føles lettere enn det er. Det varer til rundt 800 moh.",
-      "Videre følger du østsørøst-ryggen vestover, med sørflanken fallende ned i Blåmannsvikdalen. Et flatere mellomparti gir pusterom rundt 670 moh. Fra rundt 800 moh strammer det til på begge sider: sørflanken går fra 20 til 42 grader i snitt, med parti over 55, og nordsida begynner å falle bort. Det bratteste hundremetersbeltet på linja ligger mellom 900 og 1000 moh med et snitt på 28,6 grader, og det bratteste enkeltpartiet måler 36,5.",
+      "Videre følger du østsørøst-ryggen vestover, med sørflanken fallende ned i Blåmannsvikdalen. Et flatere mellomparti gir pusterom rundt 670 moh. Fra rundt 800 moh strammer det til på begge sider: sørflanken går fra 20 til 42 grader i snitt, med parti over 55, og nordsida begynner å falle bort. Det bratteste hundremetersbeltet på linja ligger mellom 900 og 1000 moh med et snitt på 22,2 grader, og det bratteste enkeltpartiet måler 36,5.",
       "De siste 160 høydemeterne er bratte og luftige, med lett klyving mot varden. Det er her skiene går på sekken. I hard snø eller is trenger du stegjern og isøks, og hjelm hører med.",
     ],
     descent: [
@@ -83,7 +83,7 @@ export const GUIDES: Record<string, TourGuide> = {
     avalanche: [
       {
         title: "Selve ruta",
-        body: "Ruta ligger på ryggkammen fra 475 moh og opp, og det er det som gjør den mulig. Opp til rundt 800 moh er ryggen bred og flankene slake, 10 til 25 grader. Over 800 er det slutt: sørflanken holder 42 grader i snitt, nordsida 38 og oppover. Det bratteste hundremetersbeltet på linja, 900 til 1000 moh, holder 28,6 grader i snitt, og enkeltpartier måler 36,5. Toppartiet over 880 moh er bratt og eksponert; i hard snø er det en klatretur, ikke en skitur.",
+        body: "Ruta ligger på ryggkammen fra 475 moh og opp, og det er det som gjør den mulig. Opp til rundt 800 moh er ryggen bred og flankene slake, 10 til 25 grader. Over 800 er det slutt: sørflanken holder 42 grader i snitt, nordsida 38 og oppover. Det bratteste hundremetersbeltet på linja, 900 til 1000 moh, holder 22,2 grader i snitt, og enkeltpartier måler 36,5. Toppartiet over 880 moh er bratt og eksponert; i hard snø er det en klatretur, ikke en skitur.",
       },
       {
         title: "Terrenget utenfor",
@@ -95,21 +95,21 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,200 L17,197 L34,193 L52,190 L70,187 L87,183 L105,179 L122,175 L140,171 L158,168 L175,162 L192,158 L210,153 L228,149 L245,144 L263,138 L281,134 L298,130 L316,127 L333,121 L350,115 L366,108 L383,104 L399,98 L416,92 L433,86 L450,80 L467,76 L485,71 L501,64 L515,56 L529,48 L546,42 L561,34 L578,26 L594,20 L600,18",
+      path: "M0,200 L27,194 L62,187 L94,180 L117,174 L141,168 L164,161 L188,155 L220,145 L251,135 L277,130 L298,124 L321,115 L338,110 L358,104 L377,97 L401,89 L424,81 L448,75 L466,69 L487,61 L502,55 L518,50 L542,41 L557,36 L569,30 L589,22 L600,18",
       startLabel: "9 moh",
       endLabel: "1044 moh",
-      distanceLabel: "3,1 km",
-      caption: "3,1 km og 1031 høydemeter: kloppene ved Slettneset, ryggen ovenfor Steet, og det bratte toppartiet.",
+      distanceLabel: "3,4 km",
+      caption: "3,4 km og 1035 høydemeter: kloppene ved Slettneset, ryggen ovenfor Steet, og det bratte toppartiet.",
     },
   },
   tromsdalstinden: {
     slug: "tromsdalstinden",
     intro:
-      "Tromsøs signaturtopp, og 1206 høydemeter i strekk fra skytebanen i Tromsdalen til varden. Sporet holder seg under 25 grader hele veien — det er lengden, ikke bratthet, som gjør turen.",
+      "Tromsøs signaturtopp, og 1208 høydemeter i strekk fra skytebanen i Tromsdalen til varden. Sporet holder seg under 25 grader hele veien — det er lengden, ikke bratthet, som gjør turen.",
     ascent: [
       "Fra parkeringen ved skytebanen innerst i Turistvegen følger du skogsbilvegen sørøstover inn i Tromsdalen. Hold vestsida av Tromsdalselva hele veien; bjørka slipper taket allerede rundt 220 moh, og derfra ligger dalen åpen foran deg. Sommerruta tar NNV-ryggen ut av dalen lenger nede — det er gåruta, ikke skiruta.",
-      "Innerst flater dalen ut ved Dalbotnvatnet på 311 moh. Rett før botnen reiser Svarthammaren seg på vestsida — et nordvendt stup som taper nær 100 høydemeter på seksti meter. Hold dalbunnen øst for det og styr mot skaret. Bakken opp til Salen på 740 moh er turens bratteste enkeltparti: rundt 25 grader der sporet legger seg på skrå over den, 30 til 35 i fallinja om du tar den rett på.",
-      "Fra Salen slakner det av. Følg sørryggen nordøstover mot varden. Det bratteste sammenhengende beltet på turen ligger mellom 1000 og 1100 moh, med et snitt på 21 grader. Over 1100 moh er østkanten av ryggen skavlet — gå på vestsida av kammen, også når sporet frister lenger ut.",
+      "Innerst flater dalen ut ved Dalbotnvatnet på 311 moh. Rett før botnen reiser Svarthammaren seg på vestsida — et nordvendt stup som taper nær 100 høydemeter på seksti meter. Hold dalbunnen øst for det og styr mot skaret. Bakken opp til Salen på 740 moh er turens bratteste enkeltparti: rundt 24 grader der sporet legger seg på skrå over den, 30 til 35 i fallinja om du tar den rett på.",
+      "Fra Salen slakner det av. Følg sørryggen nordøstover mot varden. Det bratteste sammenhengende beltet på turen ligger mellom 1000 og 1100 moh, med et snitt på 20 grader. Over 1100 moh er østkanten av ryggen skavlet — gå på vestsida av kammen, også når sporet frister lenger ut.",
     ],
     descent: [
       "Ned samme vei: sørryggen til Salen, så vestover ned i indre Tromsdalen og ut dalen til bilen. Fra Salen faller flanken jevnt vestover mot Dalbotnvatnet, og det er der de beste svingene ligger.",
@@ -119,7 +119,7 @@ export const GUIDES: Record<string, TourGuide> = {
     avalanche: [
       {
         title: "Selve ruta",
-        body: "Sporet passerer aldri 25 grader, og det bratteste sammenhengende beltet — 1000 til 1100 moh — holder 21 grader i snitt. Bakken opp til Salen er partiet du må lese. Den vender vest og nordvest, og fallinja måler 30 til 35 grader i snitt med parti over 40: sporet legger seg på skrå over den, men snøen bryr seg ikke om sporet. Det er en lastflate i østlig og sørøstlig vind, ikke i vestlig. Over 1100 moh er østkanten av ryggen skavlet hele veien til varden.",
+        body: "Sporet passerer aldri 25 grader, og det bratteste sammenhengende beltet — 1000 til 1100 moh — holder 20 grader i snitt. Bakken opp til Salen er partiet du må lese. Den vender vest og nordvest, og fallinja måler 30 til 35 grader i snitt med parti over 40: sporet legger seg på skrå over den, men snøen bryr seg ikke om sporet. Det er en lastflate i østlig og sørøstlig vind, ikke i vestlig. Over 1100 moh er østkanten av ryggen skavlet hele veien til varden.",
       },
       {
         title: "Terrenget utenfor",
@@ -131,11 +131,11 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,199 L24,199 L47,198 L70,197 L93,195 L117,193 L140,188 L163,184 L186,179 L210,175 L233,172 L256,166 L279,159 L302,157 L325,151 L349,140 L372,131 L395,114 L418,103 L441,93 L464,81 L487,69 L510,53 L533,35 L557,28 L580,20 L600,18",
+      path: "M0,199 L27,199 L53,198 L79,196 L102,195 L122,192 L151,186 L181,179 L204,176 L223,173 L250,167 L269,160 L289,157 L315,154 L335,144 L361,135 L381,124 L397,113 L417,103 L435,94 L453,89 L476,75 L499,61 L519,47 L538,33 L562,25 L584,20 L600,18",
       startLabel: "38 moh",
       endLabel: "1238 moh",
-      distanceLabel: "8,1 km",
-      caption: "8,1 km og 1206 høydemeter: skogsbilveg til Dalbotnvatnet, bakken opp til Salen, sørryggen til varden.",
+      distanceLabel: "8,2 km",
+      caption: "8,2 km og 1208 høydemeter: skogsbilveg til Dalbotnvatnet, bakken opp til Salen, sørryggen til varden.",
     },
   },
   rornestinden: {
@@ -146,7 +146,7 @@ export const GUIDES: Record<string, TourGuide> = {
       "Start fra parkeringa ved Eidebakken i utkanten av Lyngseidet, på 62 moh, i området ved plastfabrikken og skytebanen. Følg skogsveien innover og opp mot Hyttehaugen på 286 moh, videre forbi Skihytta. Bjørkeskogen slipper rundt 310 moh, og derfra ser du resten av turen foran deg.",
       "Videre vestover mot Rørneshytta, hele tiden på sørsiden av Gjerdelva — en variant følger ryggen nord for elva opp til flata rundt 600 moh når snødekket tillater det, men normalruta holder sørsiden. Uansett hvilken side du går: ikke gå for langt ned i elvedalen mot Gjerdelva. Sidene ned i den bryter av på 34–37 grader der de ovenfra leser som flatt, og bunnen er ei terrengfelle. Hytta ligger på 604 moh, og det er der folk stopper.",
       "Fra hytta går du litt ned før du går opp igjen. Du krysser Gjerdelva rundt 590 moh, et søkk på en femtentalls høydemeter; turen gir fra seg 38 høydemeter til sammen på vei opp. Så følger du østsiden av flanken oppover til rundt 850 moh og svinger derfra mot toppen.",
-      "Langs linja på kartet er bratteste steg 24,6 grader, og hundremeteren mellom 800 og 900 moh går i 23,5 i snitt. Flanken rundt deg er brattere: mellom 800 og 920 moh ligger partier på 30–35 grader, og målt 400 meter ut fra sporet ved 910 moh holder østsiden 31 grader i snitt, nordsiden 34. Legger du deg for direkte mot toppen, er det dem du står i. Øverst flater det ut til den brede toppflata på 1030.",
+      "Langs linja på kartet er bratteste steg 25,9 grader, og hundremeteren mellom 800 og 900 moh går i 21,7 i snitt. Flanken rundt deg er brattere: mellom 800 og 920 moh ligger partier på 30–35 grader, og målt 400 meter ut fra sporet ved 910 moh holder østsiden 31 grader i snitt, nordsiden 34. Legger du deg for direkte mot toppen, er det dem du står i. Øverst flater det ut til den brede toppflata på 1030.",
     ],
     descent: [
       "Ned samme vei. Toppflata er romslig nok til å legge svingene der du vil — så lenge du holder deg sør og øst på den. Nord- og nordvestkanten faller av på 40–47 grader i snitt med steg på 50–57, og det er der det bygger skavler. Østflanken ned mot 850 moh er den lengste sammenhengende nedkjøringa på normalruta, 20–23 grader langs sporet. Under det holder du oppstigningssporet ned til Rørneshytta og videre østover mot Skihytta og skogsveien.",
@@ -156,7 +156,7 @@ export const GUIDES: Record<string, TourGuide> = {
     avalanche: [
       {
         title: "Ruta",
-        body: "Oppstigninga går gjennom utløpsområder fra 800 moh og opp. Selve sporet er slakt — bratteste steg måler 24,6 grader, og båndet 800–900 moh går i 23,5 i snitt — men flanken over og ved siden av holder 30–35 grader mellom 800 og 920 moh, målt til 31 grader i snitt i øst og 34 i nord. Det er den som eventuelt løsner over deg.",
+        body: "Oppstigninga går gjennom utløpsområder fra 800 moh og opp. Selve sporet er slakt — bratteste steg måler 25,9 grader, og båndet 800–900 moh går i 21,7 i snitt — men flanken over og ved siden av holder 30–35 grader mellom 800 og 920 moh, målt til 31 grader i snitt i øst og 34 i nord. Det er den som eventuelt løsner over deg.",
       },
       {
         title: "Terrenget rundt",
@@ -168,11 +168,11 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,200 L20,197 L41,189 L61,180 L81,176 L101,171 L121,160 L141,159 L162,156 L182,154 L202,148 L222,140 L242,131 L262,122 L282,116 L303,112 L323,105 L343,100 L364,99 L384,96 L404,98 L424,101 L444,100 L465,92 L485,82 L505,74 L525,65 L544,51 L565,37 L585,26 L600,18",
+      path: "M0,200 L30,193 L49,186 L69,179 L91,174 L109,166 L128,158 L153,156 L173,155 L191,152 L207,147 L229,137 L252,127 L273,118 L296,113 L316,108 L336,101 L362,99 L380,97 L398,98 L420,100 L441,100 L464,91 L484,82 L498,76 L518,67 L536,55 L550,48 L568,35 L587,24 L600,18",
       startLabel: "62 moh",
       endLabel: "1030 moh",
-      distanceLabel: "5,3 km",
-      caption: "Fra 62 moh ved Eidebakken til 1030 på toppen — 1004 høydemeter på 5,3 kilometer, med et søkk ved Rørneshytta.",
+      distanceLabel: "5,5 km",
+      caption: "Fra 62 moh ved Eidebakken til 1030 på toppen — 1008 høydemeter på 5,5 kilometer, med et søkk ved Rørneshytta.",
     },
   },
   hamperokken: {
@@ -215,9 +215,9 @@ export const GUIDES: Record<string, TourGuide> = {
   kavringtinden: {
     slug: "kavringtinden",
     intro:
-      "Lyngseidets hustopp, og 1243 høydemeter rett opp fra fjorden. Rygg opp, Østrenna ned — den store, østvendte renna nord for toppen samler den beste snøen på fjellet og holder på den langt ut i mai.",
+      "Lyngseidets hustopp, og 1251 høydemeter rett opp fra fjorden. Rygg opp, Østrenna ned — den store, østvendte renna nord for toppen samler den beste snøen på fjellet og holder på den langt ut i mai.",
     ascent: [
-      "Fra parkeringen ved Eidebakken, 63 moh, følger du skogsveien opp østsida av Gjerdelva. Du passerer Rødsteinen i bjørkeskogen rundt 200 moh og fortsetter opp ryggen øst for elva. Ruta krysser aldri Gjerdelva — går du over vann, har du gått feil.",
+      "Fra parkeringen ved Eidebakken, 62 moh, følger du skogsveien opp østsida av Gjerdelva. Du passerer Rødsteinen i bjørkeskogen rundt 200 moh og fortsetter opp ryggen øst for elva. Ruta krysser aldri Gjerdelva — går du over vann, har du gått feil.",
       "Skogen slipper taket ved 301 moh, og du går forbi Skihytta på 317. Mellom Rødsteinen og Skihytta må du gjennom et grunt søkk før stigningen tar seg opp igjen, og terrenget blir først ordentlig oversiktlig rundt 400. Skogsveiene fra Karnes, Solhov, Marieslett og Jensbakk kommer opp på den samme hylla, så hvilken du velger nede i bygda spiller mindre rolle. Herfra legger du kursen vestover mot nordøstryggen og kommer opp på kammen rundt 780 moh.",
       "Videre følger du ryggen sørover, på eller like øst for kammen. Mellom 900 og 950 moh reiser østsida seg i partier over 30 grader, og bratteste enkeltsteget på linja måler 34. Vestsida er ikke et alternativ: der faller det 40 til 80 høydemeter per hundre meter rett ned mot Gjerdelva.",
       "Toppryggen smalner inn de siste hundre meterne, og rundt nitti meter før varden tar et grunt skar tilbake et par høydemeter. Her henger skavlene ut mot øst, over Østrenna: kammen faller 30 til 41 grader på østsida og 21 til 31 på vestsida. Skift side i god tid og gå det siste stykket vest for skavlekanten, fram til varden på 1289.",
@@ -225,12 +225,12 @@ export const GUIDES: Record<string, TourGuide> = {
     descent: [
       "Den store renneformasjonen rett nord for toppen er nedkjøringen. Den heter Østrenna og ligger øst for kammen. De øverste to hundre metrene måler 33 til 42 grader, 37 i snitt, og renna er vid nok til nesten å være en flanke — den ligger i le, fylles av fokksnø mens det blåser på toppryggen, og har som regel den beste snøen på fjellet. Vel nede skrår du nordover tilbake på oppstigningsruta.",
       "Vanligste feil: å ta sats utfor skavlen rett fra toppen, og sent på dagen. Den store skavlen over renna slipper i vårsola nesten hvert år, og løsner den, går den i renna du står i. Renna vender øst og får sola først av alt her oppe, så kjør tidlig — og gå inn gjennom det grunne skaret nitti meter nord for varden. Det er det naturlige innsteget, den samme renna du kommer bort i like før toppen.",
-      "Vil du ikke inn i renna, kjører du ned nordøstryggen du kom opp. Den er brattest mellom 900 og 800 moh, 26 grader i snitt, og er ofte avblåst; regn med hard snø der ryggen er smalest.",
+      "Vil du ikke inn i renna, kjører du ned nordøstryggen du kom opp. Den er brattest mellom 900 og 800 moh, 24,5 grader i snitt, og er ofte avblåst; regn med hard snø der ryggen er smalest.",
     ],
     avalanche: [
       {
         title: "Ruta opp",
-        body: "Nordøstryggen er det tryggeste linjevalget på fjellet, men flat er den ikke. Østsida under kammen går i partier over 30 grader mellom 900 og 950 moh, bratteste hundremeteren på selve linja ligger mellom 800 og 900 moh på 26 grader i snitt, og bratteste steget måler 34. Ryggen er ofte avblåst hele veien opp — det gir hard snø på kammen og fokksnø i lesidene rett ved siden av.",
+        body: "Nordøstryggen er det tryggeste linjevalget på fjellet, men flat er den ikke. Østsida under kammen går i partier over 30 grader mellom 900 og 950 moh, bratteste hundremeteren på selve linja ligger mellom 800 og 900 moh på 24,5 grader i snitt, og bratteste steget måler 30,3. Ryggen er ofte avblåst hele veien opp — det gir hard snø på kammen og fokksnø i lesidene rett ved siden av.",
       },
       {
         title: "Terrenget rundt",
@@ -242,17 +242,17 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,200 L21,197 L42,192 L63,185 L84,181 L104,180 L125,182 L145,177 L166,169 L187,165 L207,161 L228,155 L249,147 L269,140 L289,131 L310,124 L331,117 L352,111 L372,110 L393,110 L414,105 L433,94 L453,84 L473,71 L493,60 L513,49 L530,35 L551,27 L571,25 L592,22 L600,18",
-      startLabel: "63 moh",
+      path: "M0,200 L30,195 L59,185 L83,181 L108,181 L137,178 L161,169 L190,163 L210,159 L239,149 L263,140 L281,132 L305,123 L327,115 L351,111 L380,110 L400,106 L424,94 L443,84 L463,73 L482,62 L499,54 L515,46 L531,36 L550,28 L575,25 L595,20 L600,18",
+      startLabel: "62 moh",
       endLabel: "1289 moh",
-      distanceLabel: "5,2 km",
-      caption: "1243 høydemeter fra Eidebakken til varden; bratteste hundremeteren ligger mellom 800 og 900 moh, 26 grader i snitt.",
+      distanceLabel: "5,5 km",
+      caption: "1251 høydemeter fra Eidebakken til varden; bratteste hundremeteren ligger mellom 800 og 900 moh, 24,5 grader i snitt.",
     },
   },
   "hesten-segla": {
     slug: "hesten-segla",
     intro:
-      "Senjas korteste store tur: 506 høydemeter fra Fjordgård opp en bred, sørøstvendt flanke, med Segla rett foran deg fra toppryggen. To til fire timer fra bilen og tilbake.",
+      "Senjas korteste store tur: 512 høydemeter fra Fjordgård opp en bred, sørøstvendt flanke, med Segla rett foran deg fra toppryggen. To til fire timer fra bilen og tilbake.",
     ascent: [
       "Fra avgiftsparkeringen i Fjordgård, 48 moh, går du opp veien som heter Segla og videre opp den gamle alpinbakken. Den første halvkilometeren er flat, og stien er fint kloppet der bakken er våt. Ved øvre Fjordgård, 49 moh, står skiltet der den merka stien tar av — det er her turen egentlig begynner.",
       "Stien stiger jevnt gjennom bjørka i Fjordgardlia og over et par bekker, og skogen slipper ved 204 moh. Derfra ligger hele flanken åpen. Bratteste hundremeteren er 300 til 400 moh, og den ligger på 20 grader i snitt: bredt, jevnt og uten brudd.",
@@ -278,32 +278,32 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,199 L12,200 L24,200 L37,200 L49,200 L62,200 L75,199 L87,199 L100,199 L112,199 L125,197 L137,195 L150,192 L163,189 L175,185 L188,180 L200,175 L213,172 L225,168 L238,164 L250,160 L263,156 L275,153 L288,148 L301,143 L313,138 L326,134 L338,132 L351,128 L363,124 L376,120 L388,115 L401,109 L413,103 L426,97 L438,90 L450,84 L462,78 L475,74 L487,68 L498,59 L509,54 L522,48 L535,45 L547,40 L560,36 L572,31 L584,24 L600,18",
+      path: "M0,200 L23,200 L36,200 L60,200 L84,199 L109,199 L132,198 L145,194 L169,186 L182,182 L194,177 L213,172 L230,166 L255,158 L279,151 L303,141 L327,134 L340,131 L364,123 L376,119 L388,113 L412,100 L423,95 L430,92 L444,85 L461,78 L477,72 L486,67 L497,60 L510,56 L534,47 L546,43 L568,35 L580,29 L595,20 L600,18",
       startLabel: "48 moh",
       endLabel: "556 moh",
-      distanceLabel: "2,1 km",
-      caption: "506 høydemeter fra Fjordgård; flanken er 20 grader i snitt der den er brattest, mellom 300 og 400 moh.",
+      distanceLabel: "2,2 km",
+      caption: "512 høydemeter fra Fjordgård; flanken er 20 grader i snitt der den er brattest, mellom 300 og 400 moh.",
     },
   },
   keipen: {
     slug: "keipen",
     intro:
-      "842 høydemeter fra Medfjordbotnvatnan, og en tur som holder seg jevn hele veien: skåla sør for toppen og henget opp mot toppryggen ligger på 32 til 33 grader. Friflyt setter den til KAST 2 — utfordrende, med løsne- og utløpsområder og skavler på toppryggen.",
+      "842 høydemeter fra Medfjordbotnvatnan, og en tur som avgjøres i den øvre tredjedelen: skåla sør for toppen er både løsne- og utløpsområde, og henget opp fra den er brattere enn ruta selv. Friflyt setter turen til KAST 2 — utfordrende, med skavler på toppryggen.",
     ascent: [
       "Start på grusparkeringa ved Medfjordbotnvatnan langs Fv862, 102 moh. Følg Keipelva nordover i jevnt stigende terreng til rundt 225 moh. Skogen slipper taket ved 250 moh, og over 333 er du i åpent terreng resten av turen.",
       "Drei mot vestnordvest og følg fjellsida oppover forbi 385 moh. Rundt 470 moh flater det ut i et parti som strekker seg nesten en kilometer med 6 grader i snitt — den eneste pusten på turen — før terrenget stiger inn i den store skåla sør for toppen på rundt 595 moh.",
-      "Fra skåla går sporet rett nord opp henget til toppryggen ved rundt 815 moh. Henget ligger jevnt på 32 til 33 grader hele veien, og skåla under er både løsne- og utløpsområde: det er her turen skal vurderes, ikke på toppen. Den bratteste hundremeteren på ruta ligger mellom 800 og 900 moh og måler 22,2 grader i snitt; bratteste sammenhengende parti på linja er 27,1 grader.",
-      "Videre langs ryggen til toppen på 938 moh. De øverste hundre høydemeterne er ofte vindherjet og harde. Hold deg på sørsida av ryggen — nordsida faller 60 grader rett under egget, og det er der skavlene henger.",
+      "Fra skåla på rundt 595 moh skal du ikke rett nord opp fallinja. Målt rett nordover holder bakken 29 til 36 grader de første 180 høydemetrene, og mellom 713 og 814 moh måler den 38 til 52. Sporet legger seg i stedet østover i stigende skrå til rundt 670 moh og tilbake mot vestnordvest opp på skulderen ved 813 moh; slik holder linja seg under 30 grader. Bratteste hundremeteren på ruta ligger mellom 800 og 900 moh og måler 22,2 grader i snitt; bratteste sammenhengende parti på linja er 27,1 grader.",
+      "Fra skulderen følger du ryggformasjonen sørvest for toppen nordover til varden på 938 moh. De øverste hundre høydemeterne er ofte vindherjet og harde. Hold deg på sørsida av ryggen — nordsida faller 60 grader rett under egget, og det er der skavlene henger.",
     ],
     descent: [
-      "Ned samme vei: sørover langs ryggen, ned henget til skåla, og ut fjellsida mot Keipelva og parkeringa. Henget fra ryggen til skåla er den beste kjøringen og det brattaste du er innom — 32 til 33 grader, og en skål under deg som samler alt som løsner.",
+      "Ned samme vei: sørover langs ryggen, ned på skulderen og ut den skrå linja mot skåla, og derfra fjellsida mot Keipelva og parkeringa. Ruta selv måler 27,1 grader på det bratteste. Legger du deg i fallinja rett sør fra skulderen i stedet, står du i det partiet som måler 38 til 52 grader ned til 713 moh, med skåla under som samler alt som løsner.",
       "Vanligste feil: å legge seg for langt nord på ryggen fordi kanten ser ut til å gi bedre snø. Rett nord for toppen faller terrenget 60 grader og deretter 52,5 — skavlene ligger nordover, og de bygger seg opp gjennom hele vinteren. Sørsida ned i skåla er 32 grader, og det er den sida ruta bruker.",
-      "Nedkjøringa kan også ta en litt brattere variant ned en liten dalformasjon fra ryggen. Den kommer ut i den samme skåla, så vurderingen av skåla er den samme uansett hvilken av dem du velger.",
+      "Friflyt nevner også en litt brattere variant ned en liten dalformasjon fra ryggen. Den er ikke målt opp her, og sørsida har partier på 38 til 52 grader — velger du den, er det en egen vurdering, ikke den samme som normalruta.",
     ],
     avalanche: [
       {
         title: "Ruta",
-        body: "Skåla sør for toppen er både løsneområde og utløpsområde, og henget opp mot toppryggen ligger jevnt på 32 til 33 grader. Ruta har ikke noe alternativ til den — opp og ned går gjennom det samme henget. Bratteste sammenhengende parti på linja måler 27,1 grader og bratteste hundremeter, 800 til 900 moh, 22,2 grader i snitt, men gjennomsnittstallene skjuler at hele den øvre tredjedelen er ett sammenhengende heng.",
+        body: "Skåla sør for toppen er både løsneområde og utløpsområde, og du må gjennom den både opp og ned. Selve linja er slakere enn terrenget rundt: bratteste sammenhengende parti måler 27,1 grader og bratteste hundremeter, 800 til 900 moh, 22,2 grader i snitt. Det er den skrå føringa østover som gir de tallene. Fallinja rett nord opp fra skåla måler 38 til 52 grader mellom 713 og 814 moh, og den ligger over deg hele veien opp henget.",
       },
       {
         title: "Terrenget utenfor",
@@ -319,7 +319,7 @@ export const GUIDES: Record<string, TourGuide> = {
       startLabel: "102 moh",
       endLabel: "938 moh",
       distanceLabel: "3,4 km",
-      caption: "842 høydemeter og 3,35 km fra Medfjordbotnvatnan, med henget fra skåla opp til toppryggen jevnt på 32–33 grader.",
+      caption: "842 høydemeter og 3,35 km fra Medfjordbotnvatnan; ruta går skrått opp fra skåla og holder 27,1 grader der fallinja ved siden av måler over 40.",
     },
   },
   breitinden: {
@@ -376,7 +376,7 @@ export const GUIDES: Record<string, TourGuide> = {
     avalanche: [
       {
         title: "Ruta",
-        body: "Linja som er tegnet holder seg under 30 grader hele veien. Bratteste hundremeteren ligger mellom 500 og 600 moh med 19,8 grader i snitt, og bratteste enkeltsteg måler 27,9 grader. Benken nord for Isvatnet ligger på fire til tjuefire grader. Toppblokka er unntaket — den er klatring, ikke skiterreng.",
+        body: "Linja som er tegnet holder seg under 30 grader hele veien. Bratteste hundremeteren ligger mellom 500 og 600 moh med 18,6 grader i snitt, og bratteste enkeltsteg måler 24,5 grader. Benken nord for Isvatnet ligger på fire til tjuefire grader. Toppblokka er unntaket — den er klatring, ikke skiterreng.",
       },
       {
         title: "Terrenget rundt",
@@ -388,11 +388,11 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,200 L20,191 L41,183 L62,174 L78,170 L98,169 L119,169 L140,168 L161,165 L182,162 L202,157 L223,148 L244,144 L264,138 L285,126 L305,116 L326,111 L346,106 L367,96 L388,91 L409,89 L429,79 L450,69 L470,62 L491,57 L512,50 L532,39 L551,31 L572,27 L592,20 L600,18",
+      path: "M0,200 L16,193 L35,185 L50,180 L70,170 L87,171 L109,169 L134,169 L153,168 L183,163 L203,157 L222,149 L247,144 L271,134 L291,123 L311,114 L334,111 L350,104 L368,96 L390,92 L414,86 L429,79 L444,71 L464,64 L488,57 L508,51 L519,44 L538,35 L557,30 L577,26 L600,18",
       startLabel: "141 moh",
       endLabel: "1231 moh",
-      distanceLabel: "5,2 km",
-      caption: "5,19 km og 1095 høydemeter fra steinbruddet i Forselvveien; bratteste hundremeteren ligger mellom 500 og 600 moh.",
+      distanceLabel: "5,5 km",
+      caption: "5,49 km og 1102 høydemeter fra steinbruddet i Forselvveien; bratteste hundremeteren ligger mellom 500 og 600 moh.",
     },
   },
   geitgaljen: {
@@ -435,7 +435,7 @@ export const GUIDES: Record<string, TourGuide> = {
   himmeltindan: {
     slug: "himmeltindan",
     intro:
-      "Vestvågøys høyeste fjell, med start i fjæra på Haukland og 982 høydemeter opp på tre og en halv kilometer. Kort tur, men siste tredjedel er bratt og toppryggen er smal.",
+      "Vestvågøys høyeste fjell, med start i fjæra på Haukland og 984 høydemeter opp på tre og en halv kilometer. Kort tur, men siste tredjedel er bratt og toppryggen er smal.",
     ascent: [
       "Fra parkeringen på Hauklandstranda, seks meter over havet, går du nordover mot søndre munning av tunnelen til Utakleiv. Ikke gjennom tunnelen: ta serviceveien som klatrer nordøstover over den, forbi Klumpan, og følg den til den flater ut på benken på 150 moh ved munningen av Durmålsdalen. Her starter den merkede stien, og den går hele veien opp til varden på 931.",
       "Videre nordøstover opp sørsida av Durmålsdalen. Terrenget er åpent hele veien — det er ingen skog på denne turen — og linja legger seg i lange sikksakk opp mot skulderen ved Molheia. Det brattner fra 700 moh: hundremeteren mellom 700 og 800 moh ligger på 28,6 grader i snitt, og bratteste steget på linja måler 36,1 grader. Ikke skjær rett opp vestflanken av toppryggen; den ligger på 34 til 37 grader i snitt med partier opp mot 46. Høyden tas på skulderen på sørsida.",
@@ -450,7 +450,7 @@ export const GUIDES: Record<string, TourGuide> = {
     avalanche: [
       {
         title: "Ruta",
-        body: "Nedre halvdel er slak og åpen. Det brattner fra 700 moh: hundremeteren mellom 700 og 800 moh ligger på 28,6 grader i snitt, og bratteste steget på linja måler 36,1 grader. Fra fortoppen og nordover er ryggen smal, med et fall til 898 moh og femti meter opp igjen før hovedtoppen.",
+        body: "Nedre halvdel er slak og åpen. Det brattner fra 400 moh: hundremeteren mellom 400 og 500 moh ligger på 24,2 grader i snitt, og over 500 moh holder beltene 20 til 21 grader helt til toppflata. Bratteste steget på linja måler 28,8 grader. Fra fortoppen og nordover er ryggen smal, med et fall til 898 moh og femti meter opp igjen før hovedtoppen.",
       },
       {
         title: "Terrenget rundt",
@@ -462,22 +462,22 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,200 L23,199 L47,197 L71,194 L95,189 L116,181 L137,171 L161,170 L184,170 L208,165 L232,158 L256,151 L280,145 L304,136 L326,126 L349,113 L372,101 L396,90 L417,79 L439,68 L459,56 L479,44 L503,40 L526,32 L550,23 L570,26 L594,21 L600,18",
-      startLabel: "6 moh",
+      path: "M0,199 L28,199 L51,196 L72,191 L97,186 L114,178 L128,171 L151,170 L173,170 L199,165 L221,159 L242,152 L270,143 L291,135 L306,128 L320,122 L342,109 L361,100 L378,92 L393,85 L413,77 L427,69 L441,63 L460,55 L472,48 L487,44 L513,37 L541,27 L556,23 L584,23 L600,18",
+      startLabel: "7 moh",
       endLabel: "956 moh",
-      distanceLabel: "3,6 km",
-      caption: "982 høydemeter fra fjæra på Haukland på 3,55 km; det bratteste ligger mellom 700 og 800 moh.",
+      distanceLabel: "3,8 km",
+      caption: "984 høydemeter fra fjæra på Haukland på 3,79 km; det bratteste ligger mellom 400 og 500 moh.",
     },
   },
   stornappstinden: {
     slug: "stornappstinden",
     intro:
-      "Lofot-klassikeren i overkommelig format: 680 høydemeter fra veikanten til en varde som står rett på stupkanten. Kort nok til en ettermiddag, stor nok til å bli en favoritt.",
+      "Lofot-klassikeren i overkommelig format: 681 høydemeter fra veikanten til en varde som står rett på stupkanten. Kort nok til en ettermiddag, stor nok til å bli en favoritt.",
     ascent: [
       "Fra parkeringen ved skianlegget i Nappskaret, en kilometer vest for Napp, går du nordover og holder deg til venstre for skitrekket. Rett over øvre trekkstolpe, ved 139 moh, samles stiene fra de ulike parkeringene til ett spor — starter du fra den vestre parkeringen drøyt 250 meter unna, kommer du inn på det samme sporet her. Fra 61 moh og opp er du over skoggrensa hele veien; det finnes ikke skog på denne ruta.",
       "Sporet svinger nordøst inn i dalen mellom Okstinden og Litlnappstinden og krysser Myrlandselva rundt 215 moh. Videre opp dalen til søkket ved Skarvatnet, det islagte tjernet på 341 moh. Hold til venstre opp mot Middagstinden, og legg deg deretter mot høyre der terrenget heller slakest — det er den linja som tar deg opp uten å komme borti sørflanken.",
-      "Over 500 moh reiser terrenget seg til et kort, bratt trinn opp på ryggen ved 560 moh. Det bratteste hundremeterssjiktet på ruta ligger likevel mellom 400 og 500 moh og holder 21,6° i snitt; bratteste enkelttrinn på hele linja måler 34°. Over trinnet flater det ut, og fra rundt 724 moh går den brede toppflata østover som en 13 graders rampe inn mot varden.",
-      "Varden på 740 moh står på kanten av østveggen. Stopp ved varden. Toppen bærer store hengskavler mot øst, og øst- og nordøstsida over Napp og Perklubben faller 42–43° i snitt med bergband over 60° — det er stup, ikke en linje.",
+      "Over 500 moh reiser terrenget seg til et kort, bratt trinn opp på ryggen ved 560 moh. Det bratteste hundremeterssjiktet på ruta ligger lenger nede, mellom 200 og 300 moh, og holder 17,3° i snitt; bratteste enkelttrinn på hele linja måler 24,4° og ligger i det samme sjiktet. Over trinnet flater det ut, og fra rundt 724 moh går den brede toppflata østover som en 13 graders rampe inn mot varden.",
+      "Varden på 741 moh står på kanten av østveggen. Stopp ved varden. Toppen bærer store hengskavler mot øst, og øst- og nordøstsida over Napp og Perklubben faller 42–43° i snitt med bergband over 60° — det er stup, ikke en linje.",
     ],
     descent: [
       "Ned samme vei. Dalen mellom Okstinden og Litlnappstinden gir variert kjøring, og fra søkket ved Skarvatnet er det åpent hele veien ned til trekket.",
@@ -487,7 +487,7 @@ export const GUIDES: Record<string, TourGuide> = {
     avalanche: [
       {
         title: "Ruta",
-        body: "Oppstigninga gjennom dalen er slak: bratteste hundremeterssjikt er 400–500 moh med 21,6° i snitt. Men snittet skjuler det bratteste enkelttrinnet på linja, som måler 34°, og trinnet opp på ryggen ved 560 moh er kort og bratt. Det er de partiene som kan løsne på normalruta.",
+        body: "Oppstigninga gjennom dalen er slak: bratteste hundremeterssjikt er 200–300 moh med 17,3° i snitt. Men snittet skjuler det bratteste enkelttrinnet på linja, som måler 24,4°, og trinnet opp på ryggen ved 560 moh er kort og bratt. Det er de partiene som kan løsne på normalruta.",
       },
       {
         title: "Terrenget rundt",
@@ -499,22 +499,22 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,200 L18,198 L37,195 L56,192 L75,189 L94,184 L113,179 L132,174 L151,172 L170,171 L189,168 L208,161 L227,153 L245,146 L261,137 L280,132 L299,132 L319,128 L338,126 L356,124 L375,118 L394,109 L409,99 L428,91 L447,84 L464,74 L483,68 L499,58 L518,50 L537,44 L556,37 L575,28 L594,20 L600,18",
+      path: "M0,200 L25,197 L61,190 L87,184 L117,176 L140,172 L167,170 L188,165 L211,156 L228,147 L246,140 L270,133 L292,131 L320,126 L343,124 L369,115 L387,106 L396,102 L414,94 L444,83 L467,72 L492,63 L519,50 L543,43 L563,35 L581,25 L600,18",
       startLabel: "61 moh",
       endLabel: "740 moh",
-      distanceLabel: "2,8 km",
-      caption: "61 til 740 moh på 2,8 kilometer: jevn stigning gjennom dalen, ett bratt trinn, så flatt inn til varden.",
+      distanceLabel: "3,1 km",
+      caption: "61 til 741 moh på 3,1 kilometer: jevn stigning gjennom dalen, ett bratt trinn, så flatt inn til varden.",
     },
   },
   kirketaket: {
     slug: "kirketaket",
     intro:
-      "Norges kanskje mest populære topptur — bred rygg, trygge linjevalg og lang sesong. En tur som gir mye fjell for pengene, både for førstegangsturen og for hundredegangen.",
+      "Norges kanskje mest populære topptur — bred rygg, oversiktlige linjevalg og lang sesong. En tur som gir mye fjell for pengene, både for førstegangsturen og for hundredegangen.",
     ascent: [
       "Fra parkeringen på Hellerøra (Øvre Kavli), 185 moh, følger du bomveien nordover den første kilometeren, til den krysser Heiaelva. Rundt svingen og videre inn på sporet mot Kavlisetra og Måsvassbu.",
       "Ved rundt 420 moh forlater du Måsvassbu-sporet og går nordøst opp gjennom åpen bjørkeskog. Skogen slipper taket akkurat der: over 421 moh er det åpent terreng resten av veien. Målet er Vesttoppen på Steinberget, 766 moh.",
-      "Fra Vesttoppen følger du kammen østover til Steinberget, 981 moh. Ryggen henger sammen og stiger jevnt, men rett nord for Steinberget faller den 18 meter i et søkk før den reiser seg igjen. De 18 meterne må du opp igjen på vei tilbake — de er med i turens 1271 høydemeter.",
-      "Herfra går sørvestryggen nord-nordøstover mot toppen. Bratteste hundremeterssjikt på hele oppstigninga ligger mellom 1300 og 1400 moh: 26° i snitt, med et enkelttrinn på 30°. Skavler henger ut på både øst- og vestsida av toppryggen; hold deg på ryggen og klar av begge kanter helt inn til varden på 1439.",
+      "Fra Vesttoppen følger du kammen østover til Steinberget, 981 moh. Ryggen henger sammen og stiger jevnt, men rett nord for Steinberget faller den 19 meter i et søkk før den reiser seg igjen. De 19 meterne må du opp igjen på vei tilbake — de er med i turens 1275 høydemeter.",
+      "Herfra går sørvestryggen nord-nordøstover mot toppen. Bratteste hundremeterssjikt på hele oppstigninga ligger mellom 1300 og 1400 moh: 20,8° i snitt, med et enkelttrinn på 28°. Skavler henger ut på både øst- og vestsida av toppryggen; hold deg på ryggen og klar av begge kanter helt inn til varden på 1439.",
     ],
     descent: [
       "Standardnedkjøringen går sørover fra toppen, ned sørflanken til Kavliheian — 950 sammenhengende høydemeter — og derfra i oppkjørte spor tilbake til Øvre Kavli. Øverste del kan skjule stein tidlig i sesongen; den beste snøen ligger lenger ned. Sørflanken er også det første stedet i området som blir oppkjørt etter snøfall, så vær tidlig ute om du vil ha den urørt.",
@@ -524,7 +524,7 @@ export const GUIDES: Record<string, TourGuide> = {
     avalanche: [
       {
         title: "Ruta",
-        body: "Oppstigninga over Steinberget er den slake linja på fjellet, men den er ikke skredfri. Skredterrenget ligger i beltene 950–1050 moh og 1300–1400 moh, og du går gjennom begge på vei til toppen. Bratteste hundremeterssjikt på oppstigninga er nettopp 1300–1400 moh, med 26° i snitt og et enkelttrinn på 30°.",
+        body: "Oppstigninga over Steinberget er den slake linja på fjellet, men den er ikke skredfri. Skredterrenget ligger i beltene 950–1050 moh og 1300–1400 moh, og du går gjennom begge på vei til toppen. Bratteste hundremeterssjikt på oppstigninga er nettopp 1300–1400 moh, med 20,8° i snitt og et enkelttrinn på 28°.",
       },
       {
         title: "Terrenget rundt",
@@ -536,22 +536,22 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,200 L23,198 L46,196 L68,192 L91,185 L114,176 L136,166 L158,154 L181,144 L202,131 L222,121 L245,115 L268,112 L291,109 L314,106 L336,103 L359,102 L382,100 L405,94 L428,86 L451,86 L474,81 L497,76 L519,67 L541,55 L562,43 L584,29 L600,18",
+      path: "M0,200 L30,198 L52,194 L80,189 L100,180 L117,173 L143,160 L165,150 L186,140 L205,131 L221,124 L247,115 L277,111 L299,109 L325,105 L349,103 L377,100 L407,91 L434,85 L459,84 L485,76 L511,66 L524,58 L545,49 L563,40 L576,33 L594,22 L600,18",
       startLabel: "185 moh",
       endLabel: "1439 moh",
-      distanceLabel: "5,9 km",
-      caption: "185 til 1439 moh på 5,9 kilometer: bomvei, bjørkeskog til 421, så rygg hele veien — 1271 høydemeter medregnet søkket nord for Steinberget.",
+      distanceLabel: "6,2 km",
+      caption: "185 til 1439 moh på 6,2 kilometer: bomvei, bjørkeskog til 421, så rygg hele veien — 1275 høydemeter medregnet søkket nord for Steinberget.",
     },
   },
   snohetta: {
     slug: "snohetta",
     intro:
-      "Norges høyeste fjell utenfor Jotunheimen, og et av de snilleste i sin klasse: østryggen er staket hele veien, og linja passerer aldri 29°. Det som avgjør dagen er ikke fjellet, men hvordan du kommer deg inn til Snøheim.",
+      "Norges høyeste fjell utenfor Jotunheimen, og et av de snilleste i sin klasse: østryggen er staket hele veien, og bratteste parti på linja måler 23,0°. Det som avgjør dagen er ikke fjellet, men hvordan du kommer deg inn til Snøheim.",
     ascent: [
       "Snøheim turisthytte, 1474 moh, ligger ved enden av Snøheimvegen. Vegen er stengt for privatbil, sykkel er forbudt fram til 1. juni av hensyn til villreinkalvinga, og bussen fra Hjerkinn går først når hytta åpner rundt St. Hans. I skisesongen tar du altså de fjorten kilometerne inn fra Hjerkinn for egen maskin — det er den delen av dagen folk undervurderer. Fra hytta følger du sporet et par hundre meter vestover til gangbrua over Stridåe. Brua ligger i sørøsthjørnet av tjernet rett vest for hytta; du går rundt sørsida av tjernet, ikke over det.",
       "Etter brua svinger du umiddelbart til høyre inn på Forsvarets gamle traktorveg, sperret for kjøring med store steiner. Den tar deg jevnt oppover til Gamle Reinheim, ruinen på 1670 moh. Ingen skog noe sted på denne turen — du er over tregrensa fra hytta og oppover, og ser hele ryggen foran deg hele veien.",
       "Fra Gamle Reinheim stiger det bratt, delvis på snøfonner, opp på østryggen. Oppe på kammen ligger stidelet mot Reinheim i Stroplsjødalen, inngangen for dem som kommer østfra. Hold avstand til det bratte terrenget mot nord i starten av stigningen; ryggen er bred nok til at du kan gå midt på den.",
-      "Det bratteste hundremeterbeltet ligger mellom 1800 og 1900 moh og holder 19,6° i snitt; ingen del av linja passerer 29°. Herfra er det staker og varder hele veien, og øverst går det på snøfonner opp til Stortoppen, 2286 moh, der radiolinkstasjonen står. I dårlig sikt er det stakene som holder deg på kammen — den øvre delen er bred nok til at du mister følelsen av hvor ryggen går.",
+      "Det bratteste hundremeterbeltet ligger mellom 1800 og 1900 moh og holder 18,6° i snitt; bratteste parti på linja måler 23,0°. Herfra er det staker og varder hele veien, og øverst går det på snøfonner opp til Stortoppen, 2286 moh, der radiolinkstasjonen står. I dårlig sikt er det stakene som holder deg på kammen — den øvre delen er bred nok til at du mister følelsen av hvor ryggen går.",
     ],
     descent: [
       "Samme vei ned. Fra Stortoppen til Gamle Reinheim gir østryggen drøyt 600 sammenhengende høydemeter, og de siste 200 tar traktorvegen. Under 1800 moh slakner det så mye at det blir mer gliding enn svinger. Vil du ha mer helning og bedre snø, legger du noe av nedkjøringen sør for oppoversporet — men da står du i 30–40°-terreng i stedet for 20°.",
@@ -560,7 +560,7 @@ export const GUIDES: Record<string, TourGuide> = {
     avalanche: [
       {
         title: "Ruta",
-        body: "Østryggen er slak etter høyfjellsmålestokk. Det bratteste hundremeterbeltet, mellom 1800 og 1900 moh, holder 19,6° i snitt, og ingen del av linja passerer 29°. Fra Snøheim til Gamle Reinheim går du på gammel traktorveg i åpent, slakt terreng. Det som betyr noe her er ikke det du står på, men hvor nær kanten av kammen du legger sporet.",
+        body: "Østryggen er slak etter høyfjellsmålestokk. Det bratteste hundremeterbeltet, mellom 1800 og 1900 moh, holder 18,6° i snitt, og og bratteste parti på linja måler 23,0°. Fra Snøheim til Gamle Reinheim går du på gammel traktorveg i åpent, slakt terreng. Det som betyr noe her er ikke det du står på, men hvor nær kanten av kammen du legger sporet.",
       },
       {
         title: "Terrenget rundt",
@@ -572,11 +572,11 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,199 L19,200 L38,198 L57,197 L77,195 L96,193 L115,190 L134,189 L153,189 L173,186 L192,182 L211,177 L230,172 L250,170 L269,168 L288,167 L307,160 L326,155 L346,151 L365,145 L383,133 L402,118 L421,103 L440,90 L460,82 L479,74 L498,66 L517,55 L536,46 L555,37 L575,27 L594,19 L600,18",
+      path: "M0,199 L23,199 L42,198 L66,196 L94,193 L123,190 L146,189 L170,186 L198,181 L222,174 L246,170 L274,168 L298,163 L321,155 L345,150 L364,144 L379,134 L397,121 L416,107 L435,94 L459,82 L482,74 L501,65 L525,52 L553,39 L577,27 L600,18",
       startLabel: "1474 moh",
       endLabel: "2286 moh",
-      distanceLabel: "5,6 km",
-      caption: "5,6 km og 819 høydemeter fra Snøheim — jevnt oppover hele veien, og aldri over 29°.",
+      distanceLabel: "5,7 km",
+      caption: "5,7 km og 819 høydemeter fra Snøheim — jevnt oppover hele veien, og og aldri brattere enn 23,0°.",
     },
   },
   kolastinden: {
@@ -585,7 +585,7 @@ export const GUIDES: Record<string, TourGuide> = {
       "Sunnmøres mest kjente skitopp. Slak dalgang hele veien inn, så en nordvendt passasje over 40°, bre — og en topp som er halvannen meter bred.",
     ascent: [
       "Fra parkeringen ved Standaleidet, 376 moh, følger du den ryddede traseen nordover mot Fossane under Søre Sætretind. Skogen slipper allerede på 410 moh, og fossen markerer inngangen til Kvanndalen.",
-      "Følg dalbunnen langs elvefaret nordover. Terrenget er slakt: det bratteste hundremeterspennet, mellom 800 og 900 moh, ligger på 18,5° i snitt. Ikke sving vest der dalen åpner seg rundt 650 moh — det juvet fører opp i breens utløp. Hold nordover til Appelsinhaugen på 950 moh, den naturlige rasten halvveis.",
+      "Følg dalbunnen langs elvefaret nordover. Terrenget er slakt: det bratteste hundremeterspennet, mellom 800 og 900 moh, ligger på 17,8° i snitt. Ikke sving vest der dalen åpner seg rundt 650 moh — det juvet fører opp i breens utløp. Hold nordover til Appelsinhaugen på 950 moh, den naturlige rasten halvveis.",
       "Fra Appelsinhaugen går du vest-sørvestover inn på flata i Kvanndalsskardet, drøyt 1020 moh. Herfra og opp til Stretet er det bratt: målte trinn i den nordvendte siden går over 45°. Stretet ligger på 1140 moh, en trang passasje på egga, og over den ser du toppen.",
       "Over Stretet er du på Kolåsbreen, som ligger som bre fra 1173 til 1355 moh. Følg brekanten under egga sørvestover mot toppen. De fleste tar av skia rundt 1350 moh og går den siste kneika, som måler 47°. Toppen er 1432 moh, halvannen til to meter bred og ti meter lang, med skavl mot øst — hold deg midt på — og en vestside som faller 260 høydemeter på 160, med trinn over 65°.",
     ],
@@ -597,7 +597,7 @@ export const GUIDES: Record<string, TourGuide> = {
     avalanche: [
       {
         title: "Ruta",
-        body: "Dalgangen gjennom Kvanndalen er slak, 18,5° i snitt over det bratteste hundremeterspennet. Bratt terreng møter du to steder: den nordvendte siden fra Kvanndalsskardet opp til Stretet, der målte trinn går over 45°, og toppslippet over 1350 moh på 47°. Begge vender nord.",
+        body: "Dalgangen gjennom Kvanndalen er slak, 17,8° i snitt over det bratteste hundremeterspennet. Bratt terreng møter du to steder: den nordvendte siden fra Kvanndalsskardet opp til Stretet, der målte trinn går over 45°, og toppslippet over 1350 moh på 47°. Begge vender nord.",
       },
       {
         title: "Terrenget rundt",
@@ -609,11 +609,11 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,200 L20,198 L40,193 L60,194 L81,195 L101,191 L121,178 L141,167 L161,163 L181,157 L201,153 L221,153 L241,152 L261,145 L281,139 L302,135 L322,127 L341,117 L362,106 L380,101 L400,100 L419,87 L439,78 L459,68 L478,67 L498,58 L518,50 L538,46 L558,39 L578,33 L595,22 L600,18",
+      path: "M0,200 L33,194 L56,194 L81,195 L108,183 L128,171 L152,164 L175,157 L199,154 L227,153 L246,148 L270,140 L294,134 L317,123 L336,113 L360,102 L378,103 L398,95 L422,82 L438,74 L454,69 L474,67 L493,58 L526,47 L553,38 L575,30 L588,25 L600,18",
       startLabel: "376 moh",
       endLabel: "1432 moh",
-      distanceLabel: "5,4 km",
-      caption: "376 moh ved Standaleidet til 1432 på Kolåstinden — 1076 høydemeter på 5,35 kilometer, med bre fra 1173 moh.",
+      distanceLabel: "5,7 km",
+      caption: "376 moh ved Standaleidet til 1432 på Kolåstinden — 1107 høydemeter på 5,70 kilometer, med bre fra 1173 moh.",
     },
   },
   saudehornet: {
@@ -656,9 +656,9 @@ export const GUIDES: Record<string, TourGuide> = {
   slogen: {
     slug: "slogen",
     intro:
-      "Sunnmørsalpenes dronning, og en av de mest alvorlige turene i landsdelen. 1482 høydemeter fra Norangsdalen til en topp de fleste går de siste 350 metrene til fots.",
+      "Sunnmørsalpenes dronning, og en av de mest alvorlige turene i landsdelen. 1517 høydemeter fra Norangsdalen til en topp de fleste går de siste 350 metrene til fots.",
     ascent: [
-      "Fra veilomma ved Skylstad i Norangsdalen, 84 moh, går du rett opp Brekkheida. Hold deg vest for Brekkeelva gjennom hele skogen — elva ligger et par hundre meter øst for linja, og du kommer først inn på elvefaret oppe på flata rundt 700 moh. Dette er den bratteste delen av skogen: de hundre metrene mellom 400 og 500 moh ligger på 29,5° i snitt.",
+      "Fra veilomma ved Skylstad i Norangsdalen, 85 moh, går du rett opp Brekkheida. Hold deg vest for Brekkeelva gjennom hele skogen — elva ligger et par hundre meter øst for linja, og du kommer først inn på elvefaret oppe på flata rundt 700 moh. Dette er den bratteste delen av skogen: de hundre metrene mellom 100 og 200 moh ligger på 22,8° i snitt.",
       "Skoggrensa slipper på 659 moh. Videre følger du sporet mot Patchellhytta inn på flata sørvest for hytta, drøyt 795 moh. Her forlater du hyttesporet. Sving vest opp østryggen før du krysser 1000-meteren — går du lenger inn mot Steinreset, må du hente igjen høyden på feil side av ryggen.",
       "Pukkelen topper på 1143 moh. Derfra faller ryggen 26 meter til et skar før den stiger til høgde 1204, og videre er det 56 meter ned til kolen på 1148 før selve toppryggen. Hold deg til høyre for ura.",
       "De siste 350 høydemeterne går de fleste til fots. Toppryggen smalner for hvert steg: 40 høydemeter under toppen faller nordsiden 43° og sørsiden 50°, og fra selve toppen måler nordflanken 57° og sørflanken 49° over de første 200 metrene ut. De øverste 70 meterne er knivegg. Toppen er 1564 moh.",
@@ -671,7 +671,7 @@ export const GUIDES: Record<string, TourGuide> = {
     avalanche: [
       {
         title: "Ruta",
-        body: "Skogpartiet over Brekkheida er brattest mellom 400 og 500 moh, 29,5° i snitt, og det bratteste enkelttrinnet på linja måler 40,7°. Ryggen fra Pukkelen til høgde 1204 er snill: flankene der ligger på 26–35°. Det er de øverste 250 høydemeterne som er egg — nordsiden 43–57°, sørsiden 49–50°. Der er utglidning den reelle faren, og det er derfor skia blir båret.",
+        body: "Skogpartiet over Brekkheida er brattest mellom 100 og 200 moh, 22,8° i snitt. Det bratteste enkelttrinnet på hele linja måler 49,3°, og det ligger ikke i skogen — det er toppblokka over 1520 moh, den delen skiene uansett bæres opp. Ryggen fra Pukkelen til høgde 1204 er snill: flankene der ligger på 26–35°. Det er de øverste 250 høydemeterne som er egg — nordsiden 43–57°, sørsiden 49–50°. Der er utglidning den reelle faren, og det er derfor skia blir båret.",
       },
       {
         title: "Terrenget rundt",
@@ -683,11 +683,11 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,198 L21,200 L42,198 L62,190 L82,180 L100,172 L119,166 L137,156 L154,145 L174,141 L195,136 L215,128 L235,127 L256,124 L277,119 L297,117 L318,113 L339,105 L359,98 L379,90 L400,82 L420,73 L440,68 L460,68 L480,60 L501,61 L522,55 L541,47 L561,39 L579,30 L597,20 L600,18",
-      startLabel: "84 moh",
+      path: "M0,198 L33,199 L61,189 L84,179 L100,173 L114,169 L130,162 L149,154 L164,147 L186,142 L213,134 L237,128 L265,125 L302,118 L329,111 L353,101 L376,92 L400,83 L420,74 L446,70 L468,64 L496,62 L519,53 L539,47 L558,39 L578,31 L595,23 L600,18",
+      startLabel: "85 moh",
       endLabel: "1564 moh",
-      distanceLabel: "5,2 km",
-      caption: "84 moh ved Skylstad til 1564 på Slogen — 1482 høydemeter på 5,22 kilometer, de siste 350 til fots.",
+      distanceLabel: "5,8 km",
+      caption: "85 moh ved Skylstad til 1564 på Slogen — 1517 høydemeter på 5,81 kilometer, de siste 350 til fots.",
     },
   },
   jakta: {
@@ -771,7 +771,7 @@ export const GUIDES: Record<string, TourGuide> = {
     ascent: [
       "Fra Spranget p-plass, 1082 moh, er det seks kilometer inn til Rondvassbu. Tjønnbakkvegen inn hit er bomveg, og midtvinters er Mysusæter siste brøytepunkt — da blir turen tilsvarende lengre. Du er over tregrensa fra første meter, så det er åpent fjell hele veien inn. Hold deg på land rundt vika ved Lonin i sørenden av Rondvatnet i stedet for å ta snarveien over isen; dette er utløpsenden, og der er isen tynnest.",
       "Bak Rondvassbu, 1169 moh, stiger det bratt mot nordøst. Stidelet mot Storronden kommer tidlig, og din vei er den som fortsetter nordover inn i Rondholet. Botnen ligger på rundt 1500 moh og er flat — det er det siste flate partiet du får før toppen.",
-      "Fra Rondholet går det meget bratt opp i ur mot Firkløvereggen, eggen mellom Storronden og Vinjeronden på 1869 moh. Det bratteste hundremeterbeltet på hele oppstigningen ligger her, mellom 1600 og 1700 moh, og holder 23° i snitt. Er ura avblåst, bærer du skiene til du er oppe på eggen.",
+      "Fra Rondholet går det meget bratt opp i ur mot Firkløvereggen, eggen mellom Storronden og Vinjeronden på 1869 moh. Det bratteste hundremeterbeltet på hele oppstigningen ligger her, mellom 1600 og 1700 moh, og holder 20° i snitt. Er ura avblåst, bærer du skiene til du er oppe på eggen.",
       "Videre stiger det til Vinjeronden, 2043 moh. Herfra faller ruta vel hundre høydemeter ned i Slottsbrue, skaret på 1939 moh, før den går opp igjen på eggen mot Rondslottet, 2178 moh. Eggen er fin å gå på, men den er smal: hold deg midt på ryggen. Terrenget faller 33–38° mot vest og over 45° mot øst.",
     ],
     descent: [
@@ -781,7 +781,7 @@ export const GUIDES: Record<string, TourGuide> = {
     avalanche: [
       {
         title: "Ruta",
-        body: "Fra Spranget inn til Rondholet er terrenget åpent og slakt, og du ligger over tregrensa hele veien. Det bratteste hundremeterbeltet på oppstigningen ligger mellom 1600 og 1700 moh og holder 23° i snitt — det er ura opp mot Firkløvereggen. Over Vinjeronden går ruta ned i Slottsbrue og opp igjen på en smal egg, med bratte flanker rett ved sporet på begge sider.",
+        body: "Fra Spranget inn til Rondholet er terrenget åpent og slakt, og du ligger over tregrensa hele veien. Det bratteste hundremeterbeltet på oppstigningen ligger mellom 1600 og 1700 moh og holder 20° i snitt — det er ura opp mot Firkløvereggen. Over Vinjeronden går ruta ned i Slottsbrue og opp igjen på en smal egg, med bratte flanker rett ved sporet på begge sider.",
       },
       {
         title: "Terrenget rundt",
@@ -793,11 +793,11 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,200 L23,200 L45,198 L67,197 L89,194 L112,191 L134,190 L156,189 L179,189 L201,188 L223,186 L245,185 L268,186 L290,186 L312,171 L334,160 L357,143 L379,142 L401,137 L423,133 L446,129 L468,107 L489,83 L511,64 L533,41 L555,57 L578,39 L600,18",
+      path: "M0,200 L27,200 L49,198 L75,196 L98,193 L123,190 L145,189 L169,188 L193,188 L215,187 L241,185 L263,186 L292,186 L310,170 L336,158 L358,141 L382,142 L404,136 L428,132 L449,124 L467,102 L487,82 L509,64 L526,45 L546,48 L568,46 L588,28 L600,18",
       startLabel: "1082 moh",
       endLabel: "2178 moh",
-      distanceLabel: "12,1 km",
-      caption: "12,1 km og 1245 høydemeter fra Spranget. Hundre av dem gis bort i Slottsbrue og må tas igjen opp eggen.",
+      distanceLabel: "12,3 km",
+      caption: "12,3 km og 1250 høydemeter fra Spranget. Hundre av dem gis bort i Slottsbrue og må tas igjen opp eggen.",
     },
   },
   storronden: {
@@ -840,21 +840,21 @@ export const GUIDES: Record<string, TourGuide> = {
   skala: {
     slug: "skala",
     intro:
-      "Fra Tjugen i Loen til 1848 moh: 1815 høydemeter i én sammenhengende stigning, og en av landets lengste nedkjøringer. Turen krever kondisjon og sikt, ikke bratt teknikk.",
+      "Fra Tjugen i Loen til 1848 moh: 1816 høydemeter i én sammenhengende stigning, og en av landets lengste nedkjøringer. Turen krever kondisjon og sikt, ikke bratt teknikk.",
     ascent: [
       "Fra parkeringen på Tjugen ved Lodalsvegen, 34 moh, følger du traktorvegen som etter hvert blir til Kloumannstien og går oppover i Fosdalen. De første 540 meterne går på veg; deretter tar stien over. Skogen slipper taket rundt 426 moh, ved Tyvasætra, og fra midten av mai må du regne med å bære skiene opp til Tjugensætra rundt 750 moh.",
       "Elva krysser du rundt 650 moh. Stien svinger nordover et stykke før den tar seg tilbake sørover — følg den; juvet nedenfor er ikke noe å skjære over. Så følger rundt 400 høydemeter jevn stigning opp mot Skålavatnet. Stien svinger seg opp gjennom hellinga, og ingen hundremeter på dette strekket holder mer enn 18°.",
-      "Du passerer Skålavatnet på nordvestsida, 1141 moh, og fortsetter sørøstover inn i botnen. Derfra tar du opp til venstre mot den brede ryggen mot Sandsnibba. Den bratteste hundremeteren på hele linja ligger mellom 1400 og 1500 moh og holder 22,8° i snitt; det bratteste enkelttrinnet måler 29,1°.",
+      "Du passerer Skålavatnet på nordvestsida, 1141 moh, og fortsetter sørøstover inn i botnen. Derfra tar du opp til venstre mot den brede ryggen mot Sandsnibba. Den bratteste hundremeteren på hele linja ligger mellom 1400 og 1500 moh og holder 20,1° i snitt; det bratteste enkelttrinnet måler 29,1°.",
       "Skålabu og Skålatårnet står på 1835 moh, der stien formelt slutter. Toppunktet ligger 370 meter lenger øst, flatt platå hele vegen. Ved dårlig sikt: hold ryggen. Den er slak å gå, men den faller bratt til begge sider — 56° i snitt de første 200 metrene mot nordvest, 42° mot sør — og skavlen henger ut over nordvestkanten.",
     ],
     descent: [
-      "Ned går du samme linja: over platået, ut ryggen, ned i botnen og forbi Skålavatnet på nordvestsida, så ned Fosdalen. 1815 høydemeter i ett strekk. Vil du ha noe brattere, følger du toppeggen lenger ut og legger linja i den sørvestvendte fjellsida — det er den vanlige varianten. Rett sørvest for tårnet står et bergtrinn på 60–66°, så du må ut på eggen før du slipper deg ned; derfra holder sida 24–26° i snitt med trinn på 39–44°, mot 22,8° på oppstigningen.",
+      "Ned går du samme linja: over platået, ut ryggen, ned i botnen og forbi Skålavatnet på nordvestsida, så ned Fosdalen. 1816 høydemeter i ett strekk. Vil du ha noe brattere, følger du toppeggen lenger ut og legger linja i den sørvestvendte fjellsida — det er den vanlige varianten. Rett sørvest for tårnet står et bergtrinn på 60–66°, så du må ut på eggen før du slipper deg ned; derfra holder sida 24–26° i snitt med trinn på 39–44°, mot 20,1° på oppstigningen.",
       "Vanligste feil: å forlate ryggen for tidlig. Nord- og nordvestsida rett under toppen er stup — 64° i de første 80 metrene — og sørsida er ikke stort snillere med sine 42°. Hold kammen til du er nede i botnen, og hold deretter nordvest for Skålavatnet og ned i Fosdalen. Trekker du vest for vatnet, står du over bergband som måler 68° ned mot Loen. Fra midten av mai slutter snøen rundt Tjugensætra, og de siste 750 høydemeterne går på beina.",
     ],
     avalanche: [
       {
         title: "Ruta",
-        body: "Linja i seg selv er slak — bratteste hundremeter 22,8° i snitt, bratteste enkelttrinn 29,1°. Faren ligger i det du går under: det går skred langs Fosdøla og Skålelva, og nord for sommerruta etter at du har passert Skålavatnet.",
+        body: "Linja i seg selv er slak — bratteste hundremeter 20,1° i snitt, bratteste enkelttrinn 29,1°. Faren ligger i det du går under: det går skred langs Fosdøla og Skålelva, og nord for sommerruta etter at du har passert Skålavatnet.",
       },
       {
         title: "Terrenget rundt",
@@ -866,11 +866,11 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,200 L24,198 L47,193 L70,184 L91,176 L112,167 L134,161 L157,153 L181,147 L204,139 L227,133 L251,126 L274,119 L297,114 L320,106 L343,98 L367,91 L390,85 L413,79 L437,68 L460,59 L481,48 L504,39 L528,30 L551,24 L574,19 L598,18 L600,18",
+      path: "M0,200 L33,196 L55,190 L70,184 L83,180 L103,173 L117,167 L134,163 L157,156 L183,148 L205,141 L227,135 L249,128 L275,121 L294,115 L320,108 L342,100 L365,92 L390,85 L417,78 L438,68 L457,61 L475,53 L493,46 L517,37 L539,28 L562,21 L585,18 L600,18",
       startLabel: "34 moh",
       endLabel: "1848 moh",
-      distanceLabel: "6,9 km",
-      caption: "1815 høydemeter fra Tjugen til toppen — bratteste hundremeteren ligger mellom 1400 og 1500 moh.",
+      distanceLabel: "7,3 km",
+      caption: "1816 høydemeter fra Tjugen til toppen — bratteste hundremeteren ligger mellom 1400 og 1500 moh.",
     },
   },
   glittertinden: {
@@ -913,7 +913,7 @@ export const GUIDES: Record<string, TourGuide> = {
   galdhopiggen: {
     slug: "galdhopiggen",
     intro:
-      "Norges høyeste punkt, og fra Juvasshytta er det bare 632 høydemeter. Regnestykket lyver: mellom deg og toppen ligger Styggebrean, og den krysser du i taulag.",
+      "Norges høyeste punkt, og fra Juvasshytta er det bare 639 høydemeter. Regnestykket lyver: mellom deg og toppen ligger Styggebrean, og den krysser du i taulag.",
     ascent: [
       "Turen starter ved Juvasshytta, 1841 moh, øverst på Galdhøpiggvegen. Veg og hytte åpner rundt 30. mai. Går du på ski i april eller mai, starter turen der brøytinga stopper, og da blir både lengden og høydemeterne større enn tallene her.",
       "Fra hytta følger du den stakede ruta sørvestover over Juvflye. 2,8 kilometer og rundt 200 høydemeter i steinete, åpent terreng tar deg til brekanten på Styggebrean. Dette er den delen av turen du går fort.",
@@ -928,7 +928,7 @@ export const GUIDES: Record<string, TourGuide> = {
     avalanche: [
       {
         title: "Ruta",
-        body: "Selve linja er slak. Det bratteste hundremetersbåndet, 2400–2500 moh, ligger på 16,5 grader i snitt, og det bratteste enkeltsteget langs ruta måler 24,5 grader. Skredterreng er ikke det som gjør denne turen krevende — det er sprekkene i Styggebrean og høyden. Østryggen er smal og fanger fokksnø på lesida.",
+        body: "Selve linja er slak. Det bratteste hundremetersbåndet, 2400–2500 moh, ligger på 17,1 grader i snitt, og det bratteste enkeltsteget langs ruta måler 26,8 grader. Skredterreng er ikke det som gjør denne turen krevende — det er sprekkene i Styggebrean og høyden. Østryggen er smal og fanger fokksnø på lesida.",
       },
       {
         title: "Terrenget utenfor",
@@ -940,32 +940,32 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,200 L21,200 L41,199 L62,196 L82,194 L102,193 L123,192 L143,187 L163,177 L184,174 L204,169 L224,159 L245,152 L265,149 L286,148 L306,148 L326,147 L347,142 L367,135 L387,129 L408,124 L428,120 L448,117 L469,111 L489,96 L509,85 L530,73 L550,54 L570,41 L591,24 L600,18",
+      path: "M0,200 L21,200 L46,199 L61,197 L82,195 L102,193 L122,192 L145,185 L167,176 L193,173 L213,165 L233,157 L254,151 L275,149 L299,149 L314,148 L334,146 L360,138 L385,130 L410,124 L426,121 L446,118 L471,111 L486,99 L512,83 L531,70 L547,57 L567,45 L582,32 L597,20 L600,18",
       startLabel: "1841 moh",
       endLabel: "2469 moh",
       distanceLabel: "5,3 km",
-      caption: "632 høydemeter over 5,3 kilometer fra Juvasshytta — 1,6 av dem på Styggebrean, i taulag.",
+      caption: "639 høydemeter over 5,3 kilometer fra Juvasshytta — 1,6 av dem på Styggebrean, i taulag.",
     },
   },
   steindalsnosi: {
     slug: "steindalsnosi",
     intro:
-      "758 høydemeter fra Sognefjellsvegen til 2025 moh, alt over skoggrensa. Normalvegen går opp vestsida; nordsida av det samme fjellet er en helt annen tur, og skillet mellom dem går på topplatået.",
+      "765 høydemeter fra Sognefjellsvegen til 2025 moh, alt over skoggrensa. Normalvegen går opp vestsida; nordsida av det samme fjellet er en helt annen tur, og skillet mellom dem går på topplatået.",
     ascent: [
       "Fra den brøytede plassen ved Gjuvvatnet på Sognefjellsvegen, 1274 moh, går du østover inn i dalsøkket. Hold sørsida av vatnet — der er det fast grunn hele veien, og du slipper å miste de tretti meterne ned på isen. Er vegkanten full, ligger alternativet ved Galgebergstjørnane et par kilometer nordover; korridoren fungerer derfra også.",
       "Dalsøkket tar deg rett østover forbi et lite vatn på 1428 moh. Her er det åpent terreng fra første skritt til toppen — ingen skog, ingen skoggrense å ta hensyn til. Ved rundt 1500 moh trekker du nordøstover ut av søkket og opp mot en svak, vestvendt ryggformasjon. Den ryggen er hele resten av turen.",
-      "Ryggen stiger jevnt. Hundremetersbåndet mellom 1700 og 1800 moh ligger på 23,6 grader i snitt, og det bratteste steget på veg opp er 40 meter med 35 grader mellom 1820 og 1860 moh. Hold ryggkammen gjennom det partiet. Trekker du nordover her, faller terrenget 100 til 180 meter bort under deg, og du kommer inn under nordsida.",
+      "Ryggen stiger jevnt. Hundremetersbåndet mellom 1700 og 1800 moh ligger på 19,7 grader i snitt, og det bratteste steget på veg opp er 40 meter med 35 grader mellom 1820 og 1860 moh. Hold ryggkammen gjennom det partiet. Trekker du nordover her, faller terrenget 100 til 180 meter bort under deg, og du kommer inn under nordsida.",
       "Toppen er et platå på 2025 moh. Varden ligger helt på kanten av nordsida — gå fram til den, ikke forbi den. Skavlene bygger seg ut mot nord og øst. Rett under varden stuper nordsida: de første 120 høydemetrene faller på nær 60 grader. Så slakner den til en hylle rundt 1840 moh, før den setter utfor igjen — 42 til 45 grader fra 1620 til 1500 moh, med bre og klipper under det.",
     ],
     descent: [
-      "Ned går du samme veg, vestover. Den store skålforma under ryggen er det morsomste på turen: 25 til 30 grader jevnt, korte partier over 30, og ett steg på 36 grader mellom 1880 og 1860 moh. Derfra er det slakt ned dalsøkket til Gjuvvatnet.",
+      "Ned går du samme veg, vestover. Den store skålforma under ryggen er det morsomste på turen: 25 til 30 grader jevnt, korte partier over 30, og ett steg på 26 grader rett under ryggen. Derfra er det slakt ned dalsøkket til Gjuvvatnet.",
       "Vanligste feil: å la seg dra sørover fra toppen, ned Steindalen. Det er fin skikjøring, men det er en annen tur — 1025 høydemeter ned til Helgedalen, og bilen din står på Sognefjellsvegen. Hold vestryggen til du ser vatnet.",
       "Vestsida er hard om morgenen i april og mai, og sola trenger noen timer på den. Går du tidlig, tar du med stegjern; det bratte partiet ved 1840 moh er ikke morsomt på blank skare, verken opp eller ned.",
     ],
     avalanche: [
       {
         title: "Ruta",
-        body: "Normalvegen ligger i slakt til middels bratt terreng. Dalsøkket opp til 1500 moh er flatt i seg selv, men det går under vestflanken av fjellet. Over 1700 moh blir det brattere: 23,6 grader i snitt gjennom båndet 1700–1800 moh, og det bratteste enkeltsteget langs linja måler 36,5 grader. Nøkkelpartiet mellom 1820 og 1860 moh er stedet på ruta der et flak løsner.",
+        body: "Normalvegen ligger i slakt til middels bratt terreng. Dalsøkket opp til 1500 moh er flatt i seg selv, men det går under vestflanken av fjellet. Over 1700 moh blir det brattere: 19,7 grader i snitt gjennom båndet 1700–1800 moh, og det bratteste enkeltsteget langs linja måler 26,4 grader. Nøkkelpartiet mellom 1820 og 1860 moh er stedet på ruta der et flak løsner.",
       },
       {
         title: "Terrenget utenfor",
@@ -977,11 +977,11 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,197 L22,198 L43,199 L65,200 L86,196 L108,194 L129,190 L150,181 L171,171 L192,166 L214,164 L235,162 L257,160 L278,159 L299,156 L321,150 L342,142 L363,133 L384,121 L405,114 L427,109 L447,97 L466,85 L487,71 L505,56 L525,45 L546,35 L568,26 L589,21 L600,18",
+      path: "M0,197 L21,198 L44,200 L61,200 L82,196 L106,194 L129,189 L149,180 L167,171 L190,166 L224,163 L251,160 L278,158 L305,152 L325,143 L352,134 L373,121 L393,115 L420,106 L435,98 L454,89 L472,77 L488,68 L501,60 L522,49 L543,40 L569,28 L596,20 L600,18",
       startLabel: "1274 moh",
       endLabel: "2025 moh",
-      distanceLabel: "3,8 km",
-      caption: "758 høydemeter over 3,8 kilometer fra Gjuvvatnet, alt over skoggrensa. Bratteste parti på oppstigninga: 35 grader mellom 1820 og 1860 moh.",
+      distanceLabel: "4,0 km",
+      caption: "765 høydemeter over 4,0 kilometer fra Gjuvvatnet, alt over skoggrensa. Bratteste parti på oppstigninga: 35 grader mellom 1820 og 1860 moh.",
     },
   },
   besshoe: {
@@ -1028,7 +1028,7 @@ export const GUIDES: Record<string, TourGuide> = {
     ascent: [
       "Du starter på Korpen, parkeringen på rv55 ved Prestesteinsvatnet, 1397 moh. Første kilometeren og litt til går nedover: følg vestsida av vatnet ned til demninga ved utløpet på 1343 moh. Du gir fra deg 53 høydemeter før du har begynt å stige. Hold land langs vestsida — ikke skjær over isen.",
       "Forbi demninga trekker du opp i søkket øst for nordryggen til Steindalsnosi og inn på Fannaråkbreen rundt 1550 moh. Hold deg lavt og i den slake delen av breen. Den er oppsprukket, og du går den i tau.",
-      "Sikt deg inn mot 1688-høgda øst for Fannaråknosi og rund den. Ikke hold høyde over breen: går du for høyt før du svinger opp, blir passasjen opp på austryggen vesentlig brattere. Den bratteste hundremeteren ligger mellom 1800 og 1900 moh og holder 27,5° i snitt, og det bratteste enkelttrinnet på linja måler 42,7°.",
+      "Sikt deg inn mot 1688-høgda øst for Fannaråknosi og rund den. Ikke hold høyde over breen: går du for høyt før du svinger opp, blir passasjen opp på austryggen vesentlig brattere. Den bratteste hundremeteren ligger mellom 1800 og 1900 moh og holder 19,9° i snitt, og det bratteste enkelttrinnet på linja måler 42,7°.",
       "Rundt knausen kommer du inn på søraustryggen og sommerstien fra Keisarpasset. Følg den over Fannaråknosi og videre langs austryggen til Fanaråken. Det henger store skavler på nordsida hele vegen, og nordsida faller 55–58° i de øverste 90 metrene under kammen — hold deg på sørsida, også når sikten er god.",
     ],
     descent: [
@@ -1038,7 +1038,7 @@ export const GUIDES: Record<string, TourGuide> = {
     avalanche: [
       {
         title: "Ruta",
-        body: "Normalvegen er slak — bratteste hundremeter holder 27,5° i snitt mellom 1800 og 1900 moh. Det bratteste enkelttrinnet på linja måler 42,7°, og det ligger i overgangen fra breen opp på austryggen rett øst for Fannaråknosi; går du for høyt over breen, blir den passasjen brattere enn den trenger å være. På Fannaråkbreen er sprekkene faren like mye som snøen.",
+        body: "Normalvegen er slak — bratteste hundremeter holder 19,9° i snitt mellom 1800 og 1900 moh. Det bratteste enkelttrinnet på linja måler 42,7°, og det ligger i overgangen fra breen opp på austryggen rett øst for Fannaråknosi; går du for høyt over breen, blir den passasjen brattere enn den trenger å være. På Fannaråkbreen er sprekkene faren like mye som snøen.",
       },
       {
         title: "Terrenget rundt",
@@ -1050,11 +1050,11 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,182 L21,187 L42,188 L63,188 L84,189 L105,192 L126,194 L147,199 L168,199 L188,190 L209,183 L230,171 L251,171 L272,161 L292,155 L313,146 L334,140 L355,137 L376,136 L397,134 L418,126 L439,111 L460,96 L480,76 L498,52 L518,39 L539,36 L560,31 L581,25 L600,18",
+      path: "M0,183 L21,187 L45,188 L70,188 L93,190 L114,193 L136,197 L158,199 L183,190 L199,185 L221,176 L240,173 L264,162 L286,155 L305,148 L325,142 L349,138 L378,135 L402,131 L422,117 L447,101 L468,82 L483,68 L500,51 L516,39 L536,38 L557,33 L581,26 L600,18",
       startLabel: "1397 moh",
       endLabel: "2068 moh",
-      distanceLabel: "6,4 km",
-      caption: "757 høydemeter fra Korpen til toppen — 89 av dem gir du fra deg, de fleste før stigningen begynner.",
+      distanceLabel: "6,6 km",
+      caption: "762 høydemeter fra Korpen til toppen — 89 av dem gir du fra deg, de fleste før stigningen begynner.",
     },
   },
   rasletinden: {
@@ -1097,11 +1097,11 @@ export const GUIDES: Record<string, TourGuide> = {
   synshorn: {
     slug: "synshorn",
     intro:
-      "Kort tur rett opp fra Bygdin, med 360 graders utsikt fra toppen — Jotunheimen i nord, Bygdin i vest, Bitihorn i sør. 424 høydemeter på knapt to kilometer gjør dette til turen du tar når værvinduet er kort.",
+      "Kort tur rett opp fra Bygdin, med 360 graders utsikt fra toppen — Jotunheimen i nord, Bygdin i vest, Bitihorn i sør. 426 høydemeter på knapt to kilometer gjør dette til turen du tar når værvinduet er kort.",
     ascent: [
       "Start på parkeringen ved Fagerstrand på østsida av Bygdin, like ved Bygdinstøga og Bygdin Høifjellshotell. Avgift 80 kroner, betales med Vipps. Fv51 er vinterstengt nordover, så Bygdin er den brøytede enden av vegen og plassen er tilgjengelig hele våren. Du er over skoggrensa fra første skritt, og stigningen begynner med en gang.",
       "Legg sporet vest- og nordvestover inn mot den nedre delen av Fagerdalen framfor å gå rett mot toppen. Toppen ser nær ut herfra, men rett nord for parkeringen ligger et trinn som holder rundt 40 grader mellom 1090 og 1220 moh, og østsida av Synshorn faller enda lenger: 31 grader i snitt de første fire hundre metrene ned mot Fv51, med et parti på 57 grader. Ingen av dem er oppstigning. Hold deg vest for fjellet til du er over 1400 moh.",
-      "Flanken du går på ligger stort sett mellom 10 og 20 grader, i åpent terreng uten en trestamme. De siste hundre høydemeterne, fra 1400 til 1475, ligger i snitt på 16,6 grader, og bratteste enkeltparti på hele ruta måler 24,6 grader. Toppen tas fra sørvest, over den slake platåkanten.",
+      "Flanken du går på ligger stort sett mellom 10 og 20 grader, i åpent terreng uten en trestamme. De siste hundre høydemeterne, fra 1400 til 1475, ligger i snitt på 16,6 grader, og bratteste enkeltparti på hele ruta måler 21,3 grader. Toppen tas fra sørvest, over den slake platåkanten.",
       "Ved dårlig sikt: ikke gå øst eller nordøst fra toppen. Der slutter fjellet med en gang — østsida måler 31 grader i snitt, nordøstsida 33, og begge har partier over 50 grader innen to hundre meter fra toppryggen. Sørover er fella den motsatte: platået fortsetter nesten flatt og drar deg utover.",
     ],
     descent: [
@@ -1112,7 +1112,7 @@ export const GUIDES: Record<string, TourGuide> = {
     avalanche: [
       {
         title: "Ruta",
-        body: "Oppstigningen går i åpent terreng hele vegen, uten skog å bremse noe. Bratteste enkeltparti på linja måler 24,6 grader, og de øverste hundre høydemeterne ligger i snitt på 16,6 grader. Selve sporet er altså slakt; det du må vurdere er hva som henger over deg når du kommer inn mot toppen fra sørvest.",
+        body: "Oppstigningen går i åpent terreng hele vegen, uten skog å bremse noe. Bratteste enkeltparti på linja måler 21,3 grader, og de øverste hundre høydemeterne ligger i snitt på 16,6 grader. Selve sporet er altså slakt; det du må vurdere er hva som henger over deg når du kommer inn mot toppen fra sørvest.",
       },
       {
         title: "Terrenget rundt",
@@ -1124,21 +1124,21 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,200 L13,200 L27,200 L41,199 L54,196 L68,195 L82,190 L95,185 L108,178 L121,171 L135,174 L149,175 L162,175 L176,171 L190,169 L203,160 L216,154 L230,150 L243,145 L257,142 L271,135 L285,131 L298,127 L311,122 L325,122 L338,121 L352,121 L366,119 L379,114 L393,108 L406,101 L420,94 L433,88 L447,84 L461,81 L474,78 L488,72 L502,64 L516,57 L528,49 L542,43 L556,37 L569,31 L583,25 L600,18",
+      path: "M0,200 L25,200 L51,196 L76,191 L90,186 L102,180 L120,170 L134,175 L151,175 L167,172 L179,170 L200,161 L218,153 L231,149 L257,141 L269,134 L295,128 L308,124 L334,122 L347,121 L372,118 L385,113 L398,106 L411,100 L437,88 L450,83 L475,78 L501,64 L516,57 L528,51 L543,43 L565,32 L591,20 L600,18",
       startLabel: "1060 moh",
       endLabel: "1475 moh",
-      distanceLabel: "2,0 km",
+      distanceLabel: "2,1 km",
       caption: "1060 til 1475 moh på knapt to kilometer — jevn stigning i åpent terreng, brattest de siste hundre høydemeterne.",
     },
   },
   bitihorn: {
     slug: "bitihorn",
     intro:
-      "Bitihorn står alene sør for Bygdin og ses fra hele Øystre Slidre. Normalruta går opp baksida — 549 høydemeter i jevn stigning, flatt den første kilometeren og merket med jernstenger øverst.",
+      "Bitihorn står alene sør for Bygdin og ses fra hele Øystre Slidre. Normalruta går opp baksida — 551 høydemeter i jevn stigning, flatt den første kilometeren og merket med jernstenger øverst.",
     ascent: [
       "Start på parkeringen ved Fv51, en kilometer sør for Bygdin Høifjellshotell. Avgift 60 kroner dagen. Du er over skoggrensa allerede fra bilen. Den første kilometeren går over det flate platået vest for Stavtjerne og gir bare rundt tretti høydemeter, med et myrdrag som ligger dekket når det er skiføre.",
       "Etter platået runder du foten av nordryggen og passerer grinda i reingjerdet. Herfra legger du sporet opp den brede nordvestskuldra. Den ligger stort sett på 15 til 22 grader, og de bratteste hundre høydemeterne, fra 1300 til 1400, ligger i snitt på 18,9 grader.",
-      "Øverst er ruta merket med jernstenger. De står der for folkene som vedlikeholder sambandsanlegget på toppen, og de er verdt gull i flatt lys. Bratteste enkeltparti på hele linja måler 27,5 grader, og det ligger her oppe, over 1500 moh. Toppen er 1607 moh, med Bygdin i nord og Jotunheimen bak.",
+      "Øverst er ruta merket med jernstenger. De står der for folkene som vedlikeholder sambandsanlegget på toppen, og de er verdt gull i flatt lys. Bratteste enkeltparti på hele linja måler 22,9 grader, og det ligger her oppe, over 1500 moh. Toppen er 1607 moh, med Bygdin i nord og Jotunheimen bak.",
       "Hold skuldra. Østover, mot Fv51, faller fjellet 43 grader i snitt de første fire hundre metrene, og mellom 1580 og 1420 moh — rett under toppen — går det 65 til 74 grader. Sørøstover, mot Nørdre Båtskardet, er snittet 41 grader og bratteste parti 63. Sørsida er slak øverst, rundt 16 grader de første to hundre metrene, og går så over i et trinn på 40 til 59 grader mellom 1535 og 1435 moh. Televerkets vinterløype svinger lenger vest, opp fra Raudfjorden på vestryggen, og møter denne linja først oppe under toppen; begge ligger på samme nord- og nordvestside.",
     ],
     descent: [
@@ -1149,7 +1149,7 @@ export const GUIDES: Record<string, TourGuide> = {
     avalanche: [
       {
         title: "Ruta",
-        body: "Nordvestskuldra ligger stort sett på 15 til 22 grader, de bratteste hundre høydemeterne 18,9 grader i snitt, og bratteste enkeltparti 27,5 grader oppe over 1500 moh. Visit Valdres beskriver flere linjevalg under 30 grader på denne sida, men med terrengfeller og utløpssoner i forsenkningene. Velg linje etter dagens varsel, ikke etter sporet som allerede ligger der.",
+        body: "Nordvestskuldra ligger stort sett på 15 til 22 grader, de bratteste hundre høydemeterne 18,9 grader i snitt, og bratteste enkeltparti 22,9 grader oppe over 1500 moh. Visit Valdres beskriver flere linjevalg under 30 grader på denne sida, men med terrengfeller og utløpssoner i forsenkningene. Velg linje etter dagens varsel, ikke etter sporet som allerede ligger der.",
       },
       {
         title: "Terrenget rundt",
@@ -1161,10 +1161,10 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,200 L17,197 L34,197 L51,197 L68,197 L85,197 L102,197 L119,197 L136,196 L153,194 L170,190 L186,188 L203,182 L220,177 L237,172 L254,168 L271,162 L288,157 L305,158 L322,156 L338,151 L355,144 L372,136 L389,130 L406,125 L423,115 L440,106 L457,94 L474,85 L491,74 L508,66 L524,57 L541,46 L557,36 L573,25 L590,20 L600,18",
+      path: "M0,200 L25,197 L50,197 L74,197 L107,197 L140,195 L165,190 L190,186 L207,181 L231,174 L256,167 L281,158 L305,158 L333,152 L355,144 L380,133 L405,124 L421,115 L446,101 L462,89 L487,75 L507,66 L528,54 L543,43 L561,33 L582,24 L600,18",
       startLabel: "1061 moh",
       endLabel: "1607 moh",
-      distanceLabel: "3,2 km",
+      distanceLabel: "3,3 km",
       caption: "1061 til 1607 moh: flatt den første kilometeren, så jevn stigning opp nordvestskuldra til jernstengene.",
     },
   },
@@ -1210,7 +1210,7 @@ export const GUIDES: Record<string, TourGuide> = {
     intro:
       "Kort vei fra bilen til en topp som ser ut over hele Hemsedal. Turen starter allerede over skoggrensa, og terrenget er åpent fra første steg — en fin førstetur på ski i dalen, og en rask formiddagstopp for den som kjenner den.",
     ascent: [
-      "Fra Hornslie, der Torsetstølvegen ender på 1056 moh, går du rett opp den første bakken. Den er kortere enn den ser ut — det bratteste hundremeterspennet på hele ruta, 1000–1100 moh, ligger på 18,8° i snitt — og over kanten flater det ut. Her er ingen skog å forholde seg til: hele turen går i åpent terreng.",
+      "Fra Hornslie, der Torsetstølvegen ender på 1056 moh, går du rett opp den første bakken. Den er kortere enn den ser ut — det bratteste hundremeterspennet på hele ruta, 1000–1100 moh, ligger på 17,2° i snitt — og over kanten flater det ut. Her er ingen skog å forholde seg til: hele turen går i åpent terreng.",
       "Over kanten åpner Hødnetjedne-bassenget seg — Horntjerne på Kartverkets kart — og du gir tilbake 48 høydemeter ned mot vannet på 1191 moh. Om vinteren går linja rett over det frosne vannet; sommerstien holder venstre side. På andre sida deler ruta seg i to merkede linjer: én lengre og slakere ut på nordvestskulderen, én kortere og brattere opp østryggen. Denne beskrivelsen følger østryggen.",
       "Fra østryggen er det jevn stigning vestover til toppen, med Veslehødn — Veslehorn på kartet — og hele Hemsedalen i ryggen. Toppflata er liten, og sørkanten ligger nærmere varden enn den ser ut: åtti meter sør for toppunktet faller terrenget 96 høydemeter på tjue meter grunn. Sørøstkanten gjør det samme, 63° over de bratteste seksti meterne, og sørvestkanten 57°. Hold ryggen inn til varden, og hold deg nord for kanten når du står der.",
     ],
@@ -1221,7 +1221,7 @@ export const GUIDES: Record<string, TourGuide> = {
     avalanche: [
       {
         title: "Ruta",
-        body: "Selve linja er slak. Det bratteste hundremeterspennet, 1000–1100 moh i den første bakken opp fra Hornslie, ligger på 18,8° i snitt. Det bratteste enkeltpartiet kommer først på siste rygg, mellom 1394 og 1415 moh, og måler 29,8°. Ingen del av linja går over 30°.",
+        body: "Selve linja er slak. Det bratteste hundremeterspennet, 1000–1100 moh i den første bakken opp fra Hornslie, ligger på 17,2° i snitt. Det bratteste enkeltpartiet ligger i bakken opp fra Hødnetjedne, mellom 1200 og 1230 moh, og måler 32,0° — det eneste stedet på linja som passerer 30°.",
       },
       {
         title: "Terrenget utenfor",
@@ -1233,11 +1233,11 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,200 L17,187 L36,176 L55,163 L74,152 L93,146 L111,137 L130,132 L149,125 L168,124 L187,125 L205,127 L224,130 L243,129 L261,131 L280,132 L298,136 L317,138 L336,142 L355,142 L374,142 L392,142 L411,142 L430,135 L449,124 L466,114 L483,98 L502,85 L520,80 L539,62 L556,47 L574,33 L593,21 L600,18",
+      path: "M0,200 L17,188 L41,174 L60,158 L76,151 L98,143 L125,132 L144,126 L166,124 L189,126 L208,128 L228,129 L243,130 L261,132 L279,133 L297,135 L324,141 L342,142 L369,142 L389,142 L412,139 L432,125 L443,121 L459,112 L468,106 L485,92 L500,85 L520,77 L533,63 L549,51 L567,39 L585,26 L600,18",
       startLabel: "1056 moh",
       endLabel: "1478 moh",
-      distanceLabel: "2,9 km",
-      caption: "473 høydemeter og 2,87 km fra Hornslie til toppen, med 48 meter gitt tilbake i Hødnetjedne-bassenget.",
+      distanceLabel: "3,0 km",
+      caption: "474 høydemeter og 3,00 km fra Hornslie til toppen, med 48 meter gitt tilbake i Hødnetjedne-bassenget.",
     },
   },
   lonahorgi: {
@@ -1316,11 +1316,11 @@ export const GUIDES: Record<string, TourGuide> = {
   oksen: {
     slug: "oksen",
     intro:
-      "963 høydemeter i ett strekk, fra Tjoflot nede ved fjorden til en topp som ser ut over Hardangerfjorden, Granvinsfjorden, Sørfjorden og Eidfjorden. Turen krever kondisjon mer enn teknikk.",
+      "965 høydemeter i ett strekk, fra Tjoflot nede ved fjorden til en topp som ser ut over Hardangerfjorden, Granvinsfjorden, Sørfjorden og Eidfjorden. Turen krever kondisjon mer enn teknikk.",
     ascent: [
-      "Fra avgiftsparkeringen øverst på Tjoflotvegen, 277 moh, følger du traktorveien et kort stykke før stien tar over. Regn med å bære ski gjennom skogen: skoggrensa ligger på 538 moh, og de fleste spenner dem først på oppe ved Vindhovden.",
-      "Skogen er det bratteste partiet før flanken. Fallinja mellom 335 og 405 moh måler 30° i snitt og tar 51° over de bratteste seksti meterne; stien tar den i svinger, holder seg under 25° per hundremeterspenn og topper på 33° rundt 480 moh. Følg svingene — det finnes ingen snarvei her som lønner seg.",
-      "Ved stølen Vindhovden på 586 moh åpner det seg. Herfra følger du sørvestsida østover mot toppen, langs skulderen under ryggen. Rundt 900 moh strammer det til: spennet 900–1000 moh ligger på 26,7° i snitt og 1000–1100 på 24,7°, og det bratteste enkeltpartiet på linja — 34,8° — kommer rundt 1080 moh. Grunnen blir samtidig steinete.",
+      "Fra avgiftsparkeringen øverst på Tjoflotvegen, 276 moh, følger du traktorveien et kort stykke før stien tar over. Regn med å bære ski gjennom skogen: skoggrensa ligger på 538 moh, og de fleste spenner dem først på oppe ved Vindhovden.",
+      "Skogen er det bratteste partiet før flanken. Fallinja mellom 335 og 405 moh måler 30° i snitt og tar 51° over de bratteste seksti meterne; stien tar den i svinger — ingen hundremeter i skogen holder mer enn 21° — og topper på 29° rundt 490 moh. Følg svingene — det finnes ingen snarvei her som lønner seg.",
+      "Ved stølen Vindhovden på 586 moh åpner det seg. Herfra følger du sørvestsida østover mot toppen, langs skulderen under ryggen. Rundt 900 moh strammer det til: spennet 900–1000 moh ligger på 23,3° i snitt og 1000–1100 på 19,7°, og det bratteste enkeltpartiet på linja, 29,1°, ligger lenger nede, rundt 490 moh i skogen. Grunnen blir samtidig steinete.",
       "Over 1100 moh slakner linja igjen, og de siste høydemeterne er rolig terreng inn mot toppen. Men hold linja: noen titalls meter sør for deg ruller skulderen over. Ved 1146 moh faller sørsida 40° i snitt de neste 340 høydemeterne, med et enkelttrinn på 66°. Nord for linja er det motsatt — der slakner det ut i 2–5°, og det er den sida som lurer deg av ruta.",
     ],
     descent: [
@@ -1331,7 +1331,7 @@ export const GUIDES: Record<string, TourGuide> = {
     avalanche: [
       {
         title: "Ruta",
-        body: "Ruta stiger 963 høydemeter på 3,39 km, og den bratteste delen ligger mellom 900 og 1100 moh: 26,7° i snitt over det første hundremeterspennet, 24,7° over det neste. Det bratteste enkeltpartiet på linja måler 34,8° og ligger rundt 1080 moh. Det er over grensa der snø løsner, og partiet er langt nok til at du bør vurdere det for seg.",
+        body: "Ruta stiger 965 høydemeter på 3,66 km, og den bratteste delen ligger mellom 900 og 1100 moh: 23,3° i snitt over det første hundremeterspennet, 19,7° over det neste. Det bratteste enkeltpartiet på linja måler 29,1° og ligger rundt 490 moh, i skogen under Vindhovden. Det er over grensa der snø løsner, og partiet er langt nok til at du bør vurdere det for seg.",
       },
       {
         title: "Terrenget utenfor",
@@ -1343,11 +1343,11 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,200 L23,194 L47,187 L71,179 L95,173 L117,162 L137,151 L160,142 L184,138 L208,131 L232,127 L256,124 L279,118 L303,112 L327,108 L351,104 L375,97 L398,89 L420,77 L442,65 L465,54 L487,43 L510,36 L534,30 L558,25 L582,19 L600,18",
-      startLabel: "277 moh",
+      path: "M0,200 L22,194 L44,187 L66,179 L81,175 L103,166 L113,163 L125,157 L140,151 L161,143 L177,141 L196,137 L214,131 L243,126 L262,123 L280,117 L302,112 L324,108 L346,104 L361,100 L383,92 L392,89 L408,82 L421,76 L435,69 L456,59 L479,49 L494,43 L509,39 L531,33 L553,27 L579,20 L600,18",
+      startLabel: "276 moh",
       endLabel: "1241 moh",
-      distanceLabel: "3,4 km",
-      caption: "277 moh ved Tjoflot til toppen av Oksen — 963 høydemeter på 3,39 km, uten en meter tilbake.",
+      distanceLabel: "3,7 km",
+      caption: "276 moh ved Tjoflot til toppen av Oksen — 965 høydemeter på 3,66 km, uten en meter tilbake.",
     },
   },
   vesoldo: {
@@ -1390,10 +1390,10 @@ export const GUIDES: Record<string, TourGuide> = {
   melderskin: {
     slug: "melderskin",
     intro:
-      "Rosendalsalpenes klassiker — 1272 høydemeter fra gårdstunet på Kletta til varden, uten en meter tilbake underveis. En lang dag for den som vil ha hele fjellet fra bunnen av.",
+      "Rosendalsalpenes klassiker — 1273 høydemeter fra gårdstunet på Kletta til varden, uten en meter tilbake underveis. En lang dag for den som vil ha hele fjellet fra bunnen av.",
     ascent: [
-      "Fra parkeringen ved Kletta, 153 moh, følger du veien 300 meter før stien svinger opp mot Skarshaug. Første strekket går over innmark og videre inn i blandingsskogen; sporet er tydelig, og du stiger jevnt gjennom skogen til rundt 520 moh.",
-      "Over tregrensa reiser lia seg. Mellom 600 og 700 moh holder den 31,8° i snitt over hundre høydemeter — det bratteste sammenhengende partiet på hele turen, og det du vil ha unnagjort tidlig på dagen. Toppen av bakken er Skarshaug, 806 moh, halvveis til Melderskin.",
+      "Fra parkeringen ved Kletta, 154 moh, følger du veien 300 meter før stien svinger opp mot Skarshaug. Første strekket går over innmark og videre inn i blandingsskogen; sporet er tydelig, og du stiger jevnt gjennom skogen til rundt 520 moh.",
+      "Over tregrensa reiser lia seg. Mellom 600 og 700 moh holder den 20,1° i snitt over hundre høydemeter, og det bratteste hundremeterspennet på turen kommer høyere: 22,7° mellom 900 og 1000 moh. Begge er noe du vil ha unnagjort tidlig på dagen. Toppen av bakken er Skarshaug, 806 moh, halvveis til Melderskin.",
       "Nordøstover flater det ut i Rindane, de små ryggene og søkkene du siger gjennom mot Holo. Holo er flata på 1211 moh; Kartverket klassifiserer den som myr, og det er det ene stedet på ruta der linja flater helt ut. Her svinger den nordøst før den vender tilbake østover — den svingen holder deg på hylla og utenfor den bratte sør- og sørvestsiden rett under toppen.",
       "Siste stigningen fra Holo til varden er 215 høydemeter på ni hundre meter: 13° i snitt, 25° der den er brattest. Øverst ligger skavlene langs toppkanten, og er snøen avblåst og hard, tar du på deg stegjern og har isøksa i hånda de siste meterne.",
     ],
@@ -1405,7 +1405,7 @@ export const GUIDES: Record<string, TourGuide> = {
     avalanche: [
       {
         title: "Ruta",
-        body: "Den bratteste hundremeteren ligger mellom 600 og 700 moh og holder 31,8°; bratteste enkeltsteg på linja måler 36,3°. Det er skredterreng, og det ligger i lia du må gjennom uansett. Ta den vurderingen nede ved skogkanten, mens det ikke koster deg noe å snu.",
+        body: "Den bratteste hundremeteren ligger mellom 900 og 1000 moh og holder 22,7°; bratteste enkeltsteg på linja måler 30,9°. Det er skredterreng, og det ligger i lia du må gjennom uansett. Ta den vurderingen nede ved skogkanten, mens det ikke koster deg noe å snu.",
       },
       {
         title: "Terrenget rundt",
@@ -1417,21 +1417,21 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,200 L24,197 L47,194 L71,189 L94,182 L118,177 L140,169 L161,158 L183,147 L206,137 L226,126 L247,113 L269,105 L291,96 L314,85 L337,74 L361,64 L384,60 L407,56 L431,52 L454,49 L478,48 L501,46 L525,43 L547,34 L570,24 L593,18 L600,18",
-      startLabel: "153 moh",
+      path: "M0,200 L22,197 L54,193 L75,186 L98,179 L123,172 L139,165 L155,158 L170,150 L186,144 L213,133 L232,125 L250,116 L274,106 L293,102 L312,93 L330,85 L351,74 L367,67 L388,61 L415,56 L442,52 L468,49 L493,47 L521,43 L537,38 L553,31 L580,21 L600,18",
+      startLabel: "154 moh",
       endLabel: "1426 moh",
-      distanceLabel: "4,6 km",
-      caption: "153 til 1425 moh på 4,6 km. Bratteste hundremeteren ligger mellom 600 og 700, opp mot Skarshaug.",
+      distanceLabel: "5,1 km",
+      caption: "154 til 1426 moh på 5,1 km. Bratteste hundremeteren ligger mellom 900 og 1000, over Skarshaug.",
     },
   },
   gaustatoppen: {
     slug: "gaustatoppen",
     intro:
-      "Sør-Norges mest markante topp, og en av de snilleste å gå på ski: 965 høydemeter fra Langefonn, og ikke et steg over 25° på hele oppstigningen.",
+      "Sør-Norges mest markante topp, og en av de snilleste å gå på ski: 972 høydemeter fra Langefonn, og ikke et steg over 25° på hele oppstigningen.",
     ascent: [
-      "Fra parkeringen ved Langefonn turisthytte, 921 moh, følger du den vinterstengte veien mot Stavsro. Etter 850 meter står du ved Svineroisetra, 1021 moh — det er kilometeren beskrivelsene snakker om. Bjørkebeltet slipper taket rundt 970 moh, og derfra er alt åpent fjell. Østryggen kan også nås fra Stavsro med 706 høydemeter, men veien dit er vinterstengt.",
+      "Fra parkeringen ved Langefonn turisthytte, 922 moh, følger du den vinterstengte veien mot Stavsro. Etter 850 meter står du ved Svineroisetra, 1021 moh — det er kilometeren beskrivelsene snakker om. Bjørkebeltet slipper taket rundt 970 moh, og derfra er alt åpent fjell. Østryggen kan også nås fra Stavsro med 706 høydemeter, men veien dit er vinterstengt.",
       "Ved setra tar du av veien svakt til høyre, sørvest, og setter kursen mot det laveste punktet på Himmelranden — toppen av Langefonn, 1455 moh. Ikke gå rett opp mot varden herfra. Fallinja fra Svineroisetra rett mot toppen holder 35–37° i øverste tredjedel; traversen mot Langefonn stiger jevnt på 12–16° og passerer aldri 25°, og det er den linja denne ruta følger.",
-      "Fra det laveste punktet vender du vest-nordvest og følger eggen. Stigningen er jevn: den bratteste hundremeteren på hele turen ligger mellom 1700 og 1800 moh og måler 17,3°, og bratteste enkeltsteg er 23,4°. Underveis kommer du inn på sommerstien fra Stavsro.",
+      "Fra det laveste punktet vender du vest-nordvest og følger eggen. Stigningen er jevn: den bratteste hundremeteren på hele turen ligger mellom 1700 og 1800 moh og måler 15,8°, og bratteste enkeltsteg er 24,6°. Underveis kommer du inn på sommerstien fra Stavsro.",
       "På 1831 moh går du ut på toppflata ved Gaustatoppen turisthytte, og derfra er det vel fem hundre meter nordvestover over blokkmark til varden. Flata er åpen og steinete og gir lite å styre etter; i dårlig sikt er hytta holdepunktet du navigerer på, både på vei opp og på vei ned.",
     ],
     descent: [
@@ -1442,7 +1442,7 @@ export const GUIDES: Record<string, TourGuide> = {
     avalanche: [
       {
         title: "Ruta",
-        body: "Linja fra Langefonn holder seg under 25° hele veien til varden: bratteste enkeltsteg måler 23,4°, og den bratteste hundremeteren, mellom 1700 og 1800 moh, holder 17,3°. Selve oppstigningen er lite skredterreng. Det som flytter regnestykket er vinden — den blåser eggen bar og legger snøen i rennene på østsiden.",
+        body: "Linja fra Langefonn holder seg under 25° hele veien til varden: bratteste enkeltsteg måler 24,6°, og den bratteste hundremeteren, mellom 1700 og 1800 moh, holder 15,8°. Selve oppstigningen er lite skredterreng. Det som flytter regnestykket er vinden — den blåser eggen bar og legger snøen i rennene på østsiden.",
       },
       {
         title: "Terrenget rundt",
@@ -1454,11 +1454,11 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,200 L19,197 L38,191 L56,187 L74,185 L93,182 L112,179 L130,175 L149,169 L168,163 L186,156 L205,149 L224,145 L242,140 L261,135 L279,128 L297,119 L316,112 L334,106 L353,97 L372,91 L390,82 L409,75 L427,67 L446,59 L464,51 L483,45 L502,36 L520,27 L539,23 L557,24 L576,21 L594,20 L600,18",
-      startLabel: "921 moh",
+      path: "M0,200 L25,195 L45,190 L61,187 L86,184 L110,179 L135,174 L165,163 L190,154 L214,147 L232,143 L257,136 L275,129 L292,122 L307,115 L330,108 L355,97 L373,90 L397,79 L422,70 L440,62 L465,52 L483,46 L502,37 L520,28 L544,23 L568,22 L593,20 L600,18",
+      startLabel: "922 moh",
       endLabel: "1883 moh",
-      distanceLabel: "4,3 km",
-      caption: "921 til 1879 moh på 4,35 km. Bratteste hundremeteren måler 17,3°, og ingenting på linja passerer 25°.",
+      distanceLabel: "4,4 km",
+      caption: "922 til 1882 moh på 4,42 km. Bratteste hundremeteren måler 15,8°, og ingenting på linja passerer 25°.",
     },
   },
 };
