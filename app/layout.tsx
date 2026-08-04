@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Analytics } from "@vercel/analytics/next";
+import { GA_MEASUREMENT_ID } from "@/lib/config";
 import { htmlLang } from "@/lib/i18n";
 import { getLang } from "@/lib/i18n/server";
 import { siteMeta } from "@/lib/i18n/common";
@@ -19,6 +21,12 @@ export async function generateMetadata(): Promise<Metadata> {
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   const lang = await getLang();
 
+  /* Production only. `VERCEL_ENV` is "preview" on branch deploys and undefined
+     locally, so neither ends up in the property's numbers — a preview deploy
+     counted as real traffic is the usual way analytics start lying. Read on the
+     server, where the variable exists; it is not a NEXT_PUBLIC_ one. */
+  const analytics = process.env.VERCEL_ENV === "production";
+
   return (
     <html lang={htmlLang(lang)}>
       <head>
@@ -31,6 +39,20 @@ export default async function RootLayout({ children }: { children: React.ReactNo
       <body>
         {children}
         <Analytics />
+        {analytics && (
+          <>
+            <Script
+              src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+              strategy="afterInteractive"
+            />
+            <Script id="ga-init" strategy="afterInteractive">
+              {`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', '${GA_MEASUREMENT_ID}');`}
+            </Script>
+          </>
+        )}
       </body>
     </html>
   );

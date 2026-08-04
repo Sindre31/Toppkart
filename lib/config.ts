@@ -40,6 +40,18 @@ export const SITE = {
  *  here and interpolate them in `lib/i18n/legal.ts`, where the two paragraphs
  *  that would carry them are marked. */
 
+/** Google Analytics measurement id.
+ *
+ *  A public constant rather than an env var: it ships in the browser bundle
+ *  either way, and a measurement id is not a secret — it identifies the
+ *  property, it does not grant access to it.
+ *
+ *  `app/layout.tsx` loads the tag only on the production deployment, so
+ *  localhost and Vercel previews stay out of the numbers. GA4's enhanced
+ *  measurement picks up client-side route changes through history events, so
+ *  no page-view listener is needed for the App Router. */
+export const GA_MEASUREMENT_ID = "G-5VS58ECVSB";
+
 /** Accent ramp 300/500/700/900 — grade 1…4 on the map. */
 export const GRADE_COLORS = ["#b5d9fd", "#749dc4", "#416180", "#1d2d3d"] as const;
 
