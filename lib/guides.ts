@@ -1284,8 +1284,8 @@ export const GUIDES: Record<string, TourGuide> = {
     ascent: [
       "Frå p-plassen ved Rv7 på Haugastøl, 1007 moh, følgjer du den kvista DNT-vinterruta mot Raggsteindalen nordover. Dei fyrste elleve kilometrane er innmarsj: over stigninga på 1212 moh, ut på flatene under Folarskardet på 1326 moh, og i alt rundt 600 høgdemeter fordelte så tynt at bandet mellom 1200 og 1300 moh måler 1,5 grader i snitt. Det er stakelende, ikkje skinnlende.",
       "Ved Lordehytta i Folarskardet, 1620 moh, går du av merkinga. Hytta er frå 1880 og står i sjølve skardet; tjørna like ved ligg på 1603 moh og er vatn under snøen. Rutebeskrivinga seier at ein forlèt merkinga ved tjørna og følgjer varder oppover, og det er den linja som er teikna her — ikkje straklinja frå hytta mot toppen, som måler 40,3 grader som verste steg.",
-      "Trinnet ut av skardet er turens einaste bratte parti: 35 til 40 grader, målt til 36,7 grader over 41 meter på den slakaste ramma nokon finn. På linja som er teikna held bratteste samanhengande parti 25,5 grader, og den bratteste hundremeteren, 1700 til 1800 moh, måler 21,4 grader i snitt — skilnaden er at ruteren følgjer ramma i staden for fallinja. Er snøen hard eller avblåsen, er det her folk tek på seg stegjern.",
-      "Over trinnet, på om lag 1830 moh, flatar det ut att, og dei siste hundre høgdemetrane nordvestover til varden på 1927 moh går i 5 grader. Toppplatået er ope og har lite å navigere etter.",
+      "Trinnet ut av skardet er turens einaste bratte parti: 35 til 40 grader, målt til 36,7 grader over 41 meter på den slakaste ramma nokon finn. Tala ruteren gjev for linja — 25,5 grader som brattaste parti — er rekna på eit grovare høgdegrid enn terrengmodellen, og dei er lågare enn bakken. Bandsnittet på 21,4 grader for 1700 til 1800 moh er dessutan eit snitt over 270 meter grunn og skjuler trinnet heilt. Er snøen hard eller avblåsen, er det her folk tek på seg stegjern.",
+      "Over trinnet, på om lag 1830 moh, flatar det ut att, og dei siste hundre høgdemetrane nordvestover til varden på 1927 moh går i 11 grader i snitt. Merk at ruta endar her: sjølve toppunktet på Folarskardnuten er 1933 moh og ligg om lag 820 meter vest-sørvest, på den andre sida av eit grunt skar. Terrengmodellen gjev 1932,1 der mot 1927,3 på punktet ruta går til. Toppplatået er ope og har lite å navigere etter.",
     ],
     descent: [
       "Ned same veg: over kanten av trinnet, ned ramma til Lordehytta, og deretter dei elleve kilometrane tilbake til Haugastøl. Nedkøyringa er sørvend — fallvekta gjennomsnittsretning er 167 grader — men ho er òg kort. Under skardet er det lang, slak transport, og har du motvind på flatene tek heimvegen like lang tid som innmarsjen.",
@@ -1294,7 +1294,7 @@ export const GUIDES: Record<string, TourGuide> = {
     avalanche: [
       {
         title: "Ruta",
-        body: "Trinnet opp frå Folarskardet er 35 til 40 grader og er det einaste verkelege skredterrenget på turen. Slik linja er teikna held ho seg lågare — bratteste samanhengande parti måler 25,5 grader og den bratteste hundremeteren, 1700 til 1800 moh, 21,4 grader i snitt — fordi ho følgjer ramma vardane går. Bommar du på ramma, måler nærliggjande linjer 40 til 46 grader. Trinnet kan òg vera avblåse og isete, og då er det stegjern og ikkje skredvurdering som er problemet.",
+        body: "Trinnet opp frå Folarskardet er 35 til 40 grader og er det einaste verkelege skredterrenget på turen. Linja som er teikna går over trinnet, ikkje utanom det. Tala ruteren gjev henne — 25,5 grader som brattaste parti, 21,4 i snitt for bandet 1700 til 1800 moh — er rekna på eit grovare grid enn terrengmodellen og er lågare enn bakken. Bommar du på ramma, måler nærliggjande linjer 40 til 46 grader. Trinnet kan òg vera avblåse og isete, og då er det stegjern og ikkje skredvurdering som er problemet.",
       },
       {
         title: "Terrenget rundt",
