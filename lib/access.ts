@@ -1,3 +1,5 @@
+import { cache } from "react";
+
 import { isSupabaseConfigured } from "@/lib/config";
 import { getSupabaseServerClient } from "@/lib/supabase/server";
 import { getDemoEmail, getDemoSubscription } from "@/lib/demo-session";
@@ -19,7 +21,8 @@ export function grantsAccess(sub: Subscription | null): boolean {
   return false;
 }
 
-export async function getViewer(): Promise<Viewer> {
+/** Uncached body. Everything should call the memoised `getViewer` below. */
+async function loadViewer(): Promise<Viewer> {
   if (!isSupabaseConfigured) {
     const email = await getDemoEmail();
     const subscription = email ? await getDemoSubscription() : null;
@@ -65,3 +68,17 @@ export async function getViewer(): Promise<Viewer> {
     hasAccess: grantsAccess(subscription),
   };
 }
+
+/** Memoised for the lifetime of one request.
+ *
+ *  Every page that shows the account nav asks this question, and several ask it
+ *  again for their own gate: `/tur/[slug]` reads `hasAccess`, `/min-side` reads
+ *  the whole subscription, and both also render `AccountNav`. Uncached, that is
+ *  two `auth.getUser()` calls and two subscription queries for one page — each
+ *  one a round trip to Supabase, and none of them able to return a different
+ *  answer within the same request.
+ *
+ *  `cache()` collapses them to one. It is per-request, not a shared cache:
+ *  nothing survives into the next request, so a sign-in or a webhook landing
+ *  mid-session is seen immediately. */
+export const getViewer = cache(loadViewer);
