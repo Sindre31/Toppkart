@@ -457,21 +457,21 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
   },
   breitinden: {
     intro:
-      "Senja's highest peak, 1023 metres of climbing from the lay-by at the fjord. The ski tour ends at the shoulder at 763 m; the last 140 metres are exposed scrambling on the south-west ridge, and that finish is what makes this a grade 4.",
+      "Senja's highest peak, 1023 metres of climbing from the lay-by at the fjord. The ski tour ends at the shoulder at 763 m; the last 244 metres are exposed scrambling on the south-west ridge, and that finish is what makes this a grade 4.",
     ascent: [
       "Start at the lay-by in Svarthola on Fv862, 30 m, just under six kilometres east of Senjahopen. The first two hundred metres climb straight to the north end of Svartholvatnet at 207 m, and from there east over the ridge between that lake and Breitindvatnet — a section around 400 m where the line flattens before rising again.",
-      "From the north-east side of Breitindvatnet at 481 m the west flank begins. It is a continuous slope of 25 to 32 degrees all the way to about 760 m, with no benches to rest on and the lake directly below it. The steepest hundred-metre band on the route lies between 600 and 700 m and averages 23.2 degrees; the steepest sustained section on the line is 38.8 degrees, and it is in the summit block.",
-      "Skis are left at the shoulder south-west of the summit block, 763 m. From there to the top is 44.4 degrees over 249 metres, and the ridge steps above roughly 800 m measure 45 to 52 degrees in hundred-metre windows. That is not a skin track. The last 140 metres are exposed scrambling on the south-west ridge with short committing sections — stay on the south-west side of the crest. The top you stand on is the south-east one, 1007 m; the SSR point named Breitinden lies 0.46 km north-west and is 24 metres lower.",
+      "From the north-east side of Breitindvatnet at 481 m the west flank begins. Low down it is gentle — about 24 degrees to 550 m and 29 on to 620 — but above that it steepens: a median 36 degrees between 620 and 680 m, 41 between 680 and 720, and directly below the shoulder the fall line measures 50 to 59 degrees. The summer description calls this same ground narrow, exposed rock ledges, and the lake sits below the whole slope. The steepest hundred-metre band on the route lies between 600 and 700 m and averages 23.2 degrees; the steepest sustained section on the line is 38.8 degrees, and it is in the summit block.",
+      "Skis are left at the shoulder south-west of the summit block, 763 m. From there to the top is 44.4 degrees over 249 metres, and the crest above 800 m measures 54 degrees in its steepest hundred-metre window and over 60 in the shortest steps. That is not a skin track. The last 244 metres are exposed scrambling on the south-west ridge with short committing sections — stay on the south-west side of the crest. The top you stand on is the south-east one, 1007 m; the SSR point named Breitinden lies 0.46 km north-west and is 24 metres lower.",
       "No published ski-route description exists for Breitinden — the sources describe the normal route in summer form. The approach valley is the same either way, and there is no other feasible way in from Fv862, but it does mean the line above the shoulder is the terrain model's and not a rendering of a written ski route.",
     ],
     descent: [
-      "Going down you scramble the south-west ridge back to the shoulder, put the skis on and ride the west flank down to Breitindvatnet. The flank is the best skiing on the tour and the most serious part of it at the same time: 25 to 32 degrees unbroken, with the lake as a terrain trap below the whole slope.",
+      "Going down you scramble the south-west ridge back to the shoulder, put the skis on and ride the west flank down to Breitindvatnet. The flank is the most serious part of the tour. The first hundred metres below the shoulder run 50 to 59 degrees, then 36 to 41 down to about 620 m, and only below that does it ease to 24 to 29. The lake is a terrain trap below the whole slope.",
       "The usual mistake: assuming the north side is a way down because it looks shorter from the top. The north and north-east sides fall 53 to 70 degrees straight below the crest, and that is where the cornices hang. From the lake follow the ascent back west over the ridge to Svartholvatnet and down to Fv862 — the bottom two hundred metres are the steepest skiing on the way home, 16 to 18 degrees on average.",
     ],
     avalanche: [
       {
         title: "The route",
-        body: "The west flank up from Breitindvatnet is a continuous slope of 25 to 32 degrees with the lake as a terrain trap below it — that is the avalanche terrain on this tour, and you pass through it both ways. The steepest hundred-metre band on the line, 600 to 700 m, averages 23.2 degrees. Above 800 m the route becomes scrambling: the ridge steps measure 45 to 52 degrees, and 763 m to the summit is 44.4 degrees over 249 metres.",
+        body: "The west flank up from Breitindvatnet runs 24 to 29 degrees low down, 36 to 41 above 620 m, and the fall line directly below the shoulder measures 50 to 59 — with the lake as a terrain trap below the whole slope — that is the avalanche terrain on this tour, and you pass through it both ways. The steepest hundred-metre band on the line, 600 to 700 m, averages 23.2 degrees. Above the shoulder the route becomes scrambling: the crest measures 54 degrees in its steepest hundred-metre window, and 763 m to the summit is 44.4 degrees over 249 metres.",
       },
       {
         title: "The terrain off it",
@@ -486,7 +486,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       startLabel: "30 m",
       endLabel: "1007 m",
       distanceLabel: "4.2 km",
-      caption: "1023 metres of climbing and 4.21 km from Svarthola; the skis stay at the shoulder at 763 m, 140 metres below the summit.",
+      caption: "1023 metres of climbing and 4.21 km from Svarthola; the skis stay at the shoulder at 763 m, 244 metres below the summit.",
     },
   },
   rombakstotta: {
@@ -526,12 +526,12 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
   },
   geitgaljen: {
     intro:
-      "1067 metres of climbing from the fjord in 3.82 km, and the entire line lies in avalanche terrain. Topptursentralen grades the tour KAST 4 — extreme — and the top 174 metres run at 42 degrees and want crampons and an axe.",
+      "1067 metres of climbing from the fjord in 3.82 km, and the entire line lies in avalanche terrain. Topptursentralen grades the tour KAST 4 — extreme — and the top 157 metres average 42 degrees and require crampons and an axe.",
     ascent: [
       "Start at the road end in Geitgallien by Skinvollen at the head of Austnesfjorden, 20 m. Follow the floodlit trail for a stretch and on into Lilandsdalen through the birch forest. The first eight hundred metres barely climb — 6 degrees on average — and that is the only flat part of the tour.",
       "From around 250 m the valley steepens into a gully holding 35 degrees up to 360 m; the mapped path measures 34.8 degrees between 290 and 350 m. Above the gully it eases again, and you follow the valley upward at 17 to 20 degrees to about 620 m, where the stream bed steepens. The valley floor below the gully is a terrain trap: if something releases above you here, there is no way out to the side.",
-      "Where the stream bed steepens, an obvious ramp leads up to the right into the large bowl at about 845 m — the top of the south gully. This is a classic runout zone, and your stopping place is chosen here, not in the middle of the bowl. On towards the col and up to 928 m, where it steepens for good: the steepest sustained section on the line measures 32.2 degrees, and the steepest hundred-metre band, 1000 to 1100 m, averages 21.6 degrees.",
-      "The last 174 metres to the summit at 1085 m measure 41.9 degrees. That is scrambling with crampons and an axe, not skiing. Directly south of the cairn the ground falls 64 degrees.",
+      "Where the stream bed steepens, an obvious ramp leads up to the right into the large bowl at about 845 m — the top of the south gully. This is a classic runout zone, and your stopping place is chosen here, not in the middle of the bowl. On towards the col and up to 928 m, where it steepens for good: the steepest sustained section on the skin track measures 32.2 degrees. Above 1000 m the track's figures stop being the terrain's: the fall line there measures 33 to 50 degrees.",
+      "The last 157 metres to the summit at 1085 m average 42 degrees, but the average hides the summit block: the top sixty metres measure 40 to 50 degrees. That is scrambling with crampons and an axe, not skiing. Directly south of the cairn the ground falls close to 70 degrees.",
     ],
     descent: [
       "With one car you go down the way you came: from the summit to 928 m on foot, then the bowl, the ramp down to the valley at 620 m, the gully from 360 to 250 m and out through Lilandsdalen. The gully is the part to reassess on the way down — it has been above you the whole way up, and in the sun it may have changed while you were on top.",
@@ -541,11 +541,11 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
     avalanche: [
       {
         title: "The route",
-        body: "The entire route lies in avalanche terrain. The gully at 250 to 360 m is 35 degrees with the valley floor as a terrain trap below it, the bowl above the south gully is a classic runout zone, and the top 174 metres run at 41.9 degrees. On the line itself the steepest sustained section measures 32.2 degrees and the steepest hundred-metre band, 1000 to 1100 m, 21.6 degrees on average — but averages are the wrong tool here: the problem is that there is nowhere on the route with nothing above you.",
+        body: "The entire route lies in avalanche terrain. The gully at 250 to 360 m is 35 degrees with the valley floor as a terrain trap below it, the bowl above the south gully is a classic runout zone, and the top 157 metres average 42 degrees, the last sixty 40 to 50. On the line itself the steepest sustained section measures 32.2 degrees, but those figures describe the skin track up the valley. Above 1000 m the fall line measures 33 to 50 degrees, and averages are the wrong tool here anyway: there is nowhere on the route with nothing above you.",
       },
       {
         title: "The terrain off it",
-        body: "Directly south of the summit the ground falls 64 degrees. The south gully, used as a descent, holds 35 to 40 degrees over some six hundred metres and ends in a different valley from the one you climbed. Topptursentralen grades the line KAST 4 — extreme — and writes that it is not recommended without a guide. Large avalanches run in this area several times each winter.",
+        body: "Directly south of the summit the ground falls close to 70 degrees — 65 to 72 measured in twenty-metre steps over the first hundred metres. The south gully, used as a descent, holds 35 to 40 degrees over some six hundred metres and ends in a different valley from the one you climbed. Topptursentralen grades the line KAST 4 — extreme — and lists avalanches, runout zone and terrain trap among its hazards. Large avalanches run in this area several times each winter.",
       },
       {
         title: "Before you go",
@@ -981,14 +981,14 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       "Norway's second highest summit, and a surprisingly gentle tour: the steepest sustained section on the whole line measures 21.8 degrees. What it costs you is distance — 12.88 km each way, seven of them pure approach up Veodalen — and the fact that the upper part lies on Glitterbrean.",
     ascent: [
       "Start at the gravel car park at the national park boundary in Veodalen, 1297 m. From here follow the car-free road south-west along the Veo for seven kilometres to Glitterheim at 1385 m. Seven kilometres for 88 metres of height: the band between 1300 and 1400 m averages 0.9 degrees over nearly seven kilometres, and it is the flattest stretch on any tour in this app. Reckon on an hour or so each way before the mountain begins.",
-      "Behind the hut the route turns north-west up the north side of Steinbudalen. Do not follow the valley floor west over the Steinbu lakes: the exit of that valley towards the glacier has steps of 37 to 41 degrees, while the north flank — where the marked path runs — measures 23 to 32. The steepest hundred-metre band on the route lies between 1400 and 1500 m and averages 13.5 degrees.",
+      "Behind the hut the route turns north-west up the north side of Steinbudalen. Do not follow the valley floor west over the Steinbu lakes: the exit of that valley towards the glacier has steps of 37 to 41 degrees, while the north flank — where the marked path runs — holds 9 to 16 degrees on average, with individual steps up to 23. The steepest hundred-metre band on the route lies between 1400 and 1500 m and averages 13.5 degrees.",
       "From about 2010 m the route joins the ridge east of Glitterbrean, past 2222 m and 2357 m on the upper glacier, and finally west up the last rise to the summit at 2451 m. Ut.no describes the route as a steady climb throughout in terrain under 30 degrees, with a choice between the summer path east of the glacier and the glacier itself. The terrain model agrees: the steepest sustained section on the line is 21.8 degrees.",
       "The season is set by the road, not by the snow. The toll road from Randsverk into Veodalen is not ploughed and opens along with Glitterheim in mid-June. To do the classic spring tour in March–May you either ski the 24-odd kilometres in or book a snowcat with the hut in advance — the line is the same, but the first seven kilometres then form part of a much longer approach.",
     ],
     descent: [
-      "Back the same way: the west ridge and the glacier down to about 2010 m, the north side of Steinbudalen down to Glitterheim, and then the seven kilometres out through Veodalen. Those last seven are not skiing — they are zero point nine degrees, and you pole them.",
-      "The usual mistake: drifting too far north on the broad summit plateau in poor visibility. The summit has only three gentle sides; north, north-east, west and north-west fall 52 to 70 degrees down towards Grjotbrean and Glitterholet. Bearings between 105 and 150 degrees — south-east, the way you came — hold 17 to 24 degrees. Take the bearing at the top.",
-      "Glitterbrean is a glacier. Crevasses and snow bridges are real, and when the cover is thin the tour belongs on a rope and in a harness. That is a different assessment from the avalanche one, and it is made before you step onto the glacier, not once you are standing in the middle of it.",
+      "Back the same way: the east ridge and the glacier down to about 2010 m, the north side of Steinbudalen down to Glitterheim, and then the seven kilometres out through Veodalen. Those last seven are not skiing. In June and July Veodalen is bare ground, so the skis are carried the seven kilometres out — reckon on an hour and a half on foot, or forty-five minutes if you left a bike at the gate.",
+      "The usual mistake: drifting too far north on the broad summit plateau in poor visibility. The summit has only one gentle side. North, north-east, west and north-west fall 52 to 70 degrees down towards Grjotbrean and Glitterholet, and south and south-west — bearings between 165 and 230 degrees — fall 42 to 64 into Steinbudalen. Only the sector between 105 and 160 degrees is gentle, and that is the way you came. Take the bearing at the top. The edge is corniced too: ut.no reports documented overhanging cornices towards the north-west, so the edge you can see is not the edge that will hold you.",
+      "Glitterbrean is a glacier. Crevasses and snow bridges are real, and in June and July — the only period this route is described for — the bridges are at their thinnest. The tour belongs on a rope and in a harness for the whole season. That is a different assessment from the avalanche one, and it is made before you step onto the glacier, not once you are standing in the middle of it.",
     ],
     avalanche: [
       {
@@ -997,11 +997,11 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       },
       {
         title: "The terrain off it",
-        body: "North, north-east, west and north-west fall 52 to 70 degrees from the summit down towards Grjotbrean and Glitterholet. The summit plateau is broad and offers no reference points in poor visibility, and that is where those three steep sides become dangerous — not because they are avalanche terrain you choose, but because they are edges you can walk onto. South-east, between 105 and 150 degrees, is the gentle side and the one you came up.",
+        body: "North, north-east, west and north-west fall 52 to 70 degrees from the summit down towards Grjotbrean and Glitterholet, and south and south-west 42 to 64 degrees into Steinbudalen. The north-west edge is corniced. The summit plateau is broad and offers no reference points in poor visibility, and that is where those three steep sides become dangerous — not because they are avalanche terrain you choose, but because they are edges you can walk onto. South-east, between 105 and 160 degrees, is the one gentle side, and the one you came up.",
       },
       {
         title: "Before you go",
-        body: "Check today's avalanche forecast for Jotunheimen at varsom.no. Bring a transceiver, probe and shovel, and a harness and rope for Glitterbrean.",
+        body: "Check today's avalanche forecast for Jotunheimen at varsom.no. Bring a transceiver, probe and shovel — and rope, harness and crevasse rescue gear. Glitterbrean is crossed roped; if you do not have glacier experience yourself, go with a guide.",
       },
     ],
     elevationProfile: {
@@ -1083,26 +1083,26 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
   },
   besshoe: {
     intro:
-      "1302 metres of climbing from Bessheim, but only half of it is mountain: six kilometres of the tour lie flat on Bessvatnet. The climbing itself is gentle throughout, and what makes Besshø demanding is the length and a large, round summit plateau that does not show you where it ends.",
+      "1302 metres of climbing from Bessheim, and a good third of the tour is flat: three and a half kilometres lie on the ice of Bessvatnet. The climbing itself is gentle throughout, and what makes Besshø demanding is the length and a large, round summit plateau that does not show you where it ends.",
     ascent: [
       "From the car park at Bessheim fjellstue at 961 m, follow the marked route west and up the 400-odd metres to the north-east end of Bessvatnet at 1374 m. This is the tour's first pitch and it holds 10–14 degrees — steady, but this is where you do the climbing before the flat. Fv51 over Valdresflye is closed in winter south of Maurvangen, but Bessheim lies north of the closure and is reached all winter via Sjoa, Heidal and Randsverk.",
-      "Out on Bessvatnet the tour stops climbing. The lake sits at 1372 m, and the next six kilometres west rise and fall no more than a couple of metres in total — in the elevation profile it is the long flat middle. The ice is the normal winter route here, but the line on the map is drawn on land at both ends. At the far end, at Grotåosen at 1385 m, the mountain starts again.",
+      "Out on Bessvatnet the tour stops climbing. The lake sits at 1372 m, and the next three and a half kilometres west rise and fall no more than a couple of metres in total — in the elevation profile it is the long flat middle. The ice is the normal winter route here, but the line on the map is drawn on land at both ends. At the far end, at Grotåosen at 1385 m, the mountain starts again.",
       "From there the route runs due west up Grotådalen, between Bukkehøe to the north and Besshø's east ridge to the south, climbing steadily to about 1745 m. The steepest hundred-metre band on the whole tour lies between 1800 and 1900 m and averages 17.3 degrees; the steepest sustained section on the line is 26.1 degrees. Then south-west onto the ridge at Brue at 2047 m, and west-south-west along the gentle ridge for the last 210 metres. Do not climb Besshøbrean to Brue, which is one way to read the lodge's own description: the transition from the glacier onto the ridge rises from 2004 to 2050 m over 26 metres of ground, roughly 60 degrees.",
-      "The summit is a large plateau at 2257 m. A bearing of 75 degrees from the cairn — the east ridge you came up — holds 17.8 degrees. Bearings of 60 and 90 degrees measure 54 to 57. That is the whole problem of the tour in one sentence: the ridge is narrow enough that missing it by thirty degrees costs you twenty degrees of slope.",
+      "The summit is a large plateau at 2257 m. A bearing of 75 degrees from the cairn — the east ridge you came up — holds 17.8 degrees. Bearings of 60 and 90 degrees feel just as gentle for five hundred to eight hundred metres — and then break over at 55 to 60 degrees. That is the whole problem of the tour: fifteen degrees of wrong bearing is unnoticeable underfoot until it is too late.",
     ],
     descent: [
-      "Back the same way: west-south-west down to Brue, down Grotådalen to Grotåosen, and then the six flat kilometres east along Bessvatnet. Expect to pole the whole lake — it is not skiing, it is transport, and it takes daylight you need to have left.",
-      "The usual mistake: leaving the summit plateau on the wrong bearing. The north, north-west and west sides fall 55 to 70 degrees straight down towards Russvatnet and Gjende, and from a round plateau in poor visibility every direction looks equally gentle for the first few steps. Take your bearing at the cairn, not two hundred metres out. The ridge back to Brue is also narrower than it feels: the south side falls 35 to 40 degrees towards Gjende, the north side 25 to 30 down to Besshøbrean.",
+      "Back the same way: east-north-east down to Brue — a bearing of 78 degrees from the cairn, down Grotådalen to Grotåosen, and then the three and a half flat kilometres east along Bessvatnet. Expect to pole the whole lake — it is not skiing, it is transport, and it takes daylight you need to have left.",
+      "The usual mistake: leaving the summit plateau on the wrong bearing. The north, north-west and west sides fall 55 to 70 degrees straight down towards Russvatnet and Gjende, and from a round plateau in poor visibility every direction looks equally gentle for the first few steps. Take your bearing at the cairn, not two hundred metres out. The ridge back to Brue is also narrower than it feels: the north side breaks over at 50 to 60 degrees down to Besshøbrean within two hundred metres of the track, while the south side is gentle and broad for the first three hundred.",
       "The south gullies are used as a descent by people who know the mountain. They hold 35 to 40 degrees with short sections at 45, and are rocky and icy in poor conditions. Friflyt's south-east gully down to Memurubu is a traverse — it does not end at your car.",
     ],
     avalanche: [
       {
         title: "The route",
-        body: "The ascent is not steep ground: the steepest sustained section on the line measures 26.1 degrees, and the steepest hundred-metre band, 1800 to 1900 m, averages 17.3 degrees. The east ridge itself runs at 18 to 20 degrees. What counts on the route is the ridge in to Brue, where the south side falls 35 to 40 degrees towards Gjende and the north side 25 to 30 towards Besshøbrean — narrow enough that a track drifting a little too far onto the lee side is a different track from the one you planned.",
+        body: "The ascent is not steep ground: the steepest sustained section on the line measures 26.1 degrees, and the steepest hundred-metre band, 1800 to 1900 m, averages 17.3 degrees. The east ridge itself runs at 18 to 20 degrees. What counts on the route is the ridge in to Brue, where the north side breaks over at 50 to 60 degrees down to Besshøbrean within two hundred metres of the track, while the south side is gentle and broad — a track drifting north onto the lee is a different track from the one you planned.",
       },
       {
         title: "The terrain off it",
-        body: "The summit plateau is large and round, and the north, north-west and west sides fall 55 to 70 degrees down towards Russvatnet and Gjende. In poor visibility this is where the tour becomes dangerous, not on the way up. Radial measurements from the cairn show how abruptly it changes: a bearing of 75 degrees holds 17.8, while 60 and 90 degrees measure 54 to 57. The step from Besshøbrean up onto Brue is around 60 degrees and is not to be climbed. The south gullies hold 35 to 40 degrees with sections at 45.",
+        body: "The summit plateau is large and round, and the north, north-west and west sides fall 55 to 70 degrees down towards Russvatnet and Gjende. In poor visibility this is where the tour becomes dangerous, not on the way up. Radial measurements from the cairn show why the mistake is made: a bearing of 75 degrees holds 17.8 degrees, but 60 and 90 feel just as gentle for five hundred to eight hundred metres and then break over at 55 to 60. The step from Besshøbrean up onto Brue is around 60 degrees and is not to be climbed. The south gullies hold 35 to 40 degrees with sections at 45.",
       },
       {
         title: "Before you go",
@@ -1113,7 +1113,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       startLabel: "961 m",
       endLabel: "2257 m",
       distanceLabel: "9.6 km",
-      caption: "1302 metres of climbing and 9.58 km from Bessheim to the summit, six of those kilometres flat lake at 1372 m.",
+      caption: "1302 metres of climbing and 9.58 km from Bessheim to the summit, three and a half of those kilometres flat lake at 1372 m.",
     },
   },
   fanaraken: {

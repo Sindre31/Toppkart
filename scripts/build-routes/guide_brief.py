@@ -30,7 +30,7 @@ def block(slug, f):
         f"height given back {p['lossM']} m",
         f"    steepest 100 m band: "
         + (f"{sb['fromM']}–{sb['toM']} moh at a mean {sb['angle']}°" if sb else "not resolved"),
-        f"    steepest single step on the line: {p['maxAngle']}°",
+        f"    steepest sustained gradient (30 m window): {p['maxAngle']}°",
         "    treeline (Kartverket class stops being Skog): "
         + (f"{tl['last_forest_m']} m" if tl else "no forest — the route starts above the treeline"),
         "",
