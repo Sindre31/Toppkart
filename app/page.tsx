@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { Blueprint, SectionKicker } from "@/components/Blueprint";
-import { AccountNav, SiteFooter, SiteNav } from "@/components/SiteChrome";
+import { SiteFooter, SiteNav } from "@/components/SiteChrome";
 import { DataPlate } from "@/components/landing/DataPlate";
 import { TrialSignupRow } from "@/components/landing/TrialSignupRow";
 import styles from "@/components/landing/landing.module.css";
@@ -28,16 +28,15 @@ export default async function LandingPage() {
 
   return (
     <>
+      {/* «Innhold» og «Pris» er det eneste sidespesifikke i navigasjonen på
+          hele nettstedet: de scroller forsida, og finnes bare her. */}
       <SiteNav lang={lang}>
-        <Link href="/turer">{c.tours}</Link>
-        <Link href="/kart">{c.map}</Link>
         <a className="nav-jump" href="#innhold">
           {c.contents}
         </a>
         <a className="nav-jump" href="#pris">
           {c.price}
         </a>
-        <AccountNav lang={lang} />
       </SiteNav>
 
       <div className="page">

@@ -6,7 +6,6 @@ import { SiteFooter, SiteNav } from "@/components/SiteChrome";
 import { requireAdmin } from "@/lib/admin";
 import { formatDateTime } from "@/lib/dates";
 import { getLang } from "@/lib/i18n/server";
-import { commonDict } from "@/lib/i18n/common";
 import { getSupabaseAdminClient } from "@/lib/supabase/server";
 
 import { setHandled } from "./actions";
@@ -107,7 +106,6 @@ export default async function TilbakemeldingerPage() {
   await requireAdmin();
 
   const lang = await getLang();
-  const c = commonDict(lang);
   const admin = getSupabaseAdminClient();
 
   let rows: FeedbackRow[] = [];
@@ -137,12 +135,7 @@ export default async function TilbakemeldingerPage() {
 
   return (
     <div className="shell">
-      <SiteNav lang={lang}>
-        <Link href="/kart">{c.map}</Link>
-        <Link className="nav-muted" href="/min-side">
-          {c.account}
-        </Link>
-      </SiteNav>
+      <SiteNav lang={lang} />
 
       <main className="page page-narrow" style={{ paddingBottom: 72 }}>
         <header style={{ padding: "48px 0 8px" }}>

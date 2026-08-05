@@ -16,6 +16,9 @@ export interface CommonDict {
   trial: string;
   contents: string;
   price: string;
+  /** Menyknappen som samler navigasjonslenkene på telefon. */
+  menu: string;
+  menuClose: string;
   /* — footer — */
   footerMap: string;
   footerTours: string;
@@ -43,6 +46,8 @@ const COMMON: Translated<CommonDict> = {
     trial: "Prøv gratis",
     contents: "Innhold",
     price: "Pris",
+    menu: "Meny",
+    menuClose: "Lukk menyen",
     footerMap: "Kartet",
     footerTours: "Turene",
     footerSupport: "Kontakt",
@@ -64,6 +69,8 @@ const COMMON: Translated<CommonDict> = {
     trial: "Try for free",
     contents: "Contents",
     price: "Pricing",
+    menu: "Menu",
+    menuClose: "Close the menu",
     footerMap: "The map",
     footerTours: "The tours",
     footerSupport: "Contact",

@@ -2,9 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 import { Blueprint } from "@/components/Blueprint";
-import { AccountNav, SiteFooter, SiteNav } from "@/components/SiteChrome";
+import { SiteFooter, SiteNav } from "@/components/SiteChrome";
 import { getLang } from "@/lib/i18n/server";
-import { commonDict } from "@/lib/i18n/common";
 import { localizeTours } from "@/lib/i18n/content";
 import { durationLabel, elevationLabel, gradeLabel, seasonLabel } from "@/lib/i18n/format";
 import { toursDict } from "@/lib/i18n/tours";
@@ -38,7 +37,6 @@ export async function generateMetadata(): Promise<Metadata> {
 export default async function TurerPage() {
   const lang = await getLang();
   const t = toursDict(lang);
-  const common = commonDict(lang);
 
   /* Grupperinga er språknøytral — regionene er egennavn — så turene lokaliseres
      etter at de er delt opp, ikke før. */
@@ -51,13 +49,7 @@ export default async function TurerPage() {
 
   return (
     <div className="shell">
-      <SiteNav lang={lang}>
-        <Link href="/turer" aria-current="page">
-          {common.tours}
-        </Link>
-        <Link href="/kart">{common.map}</Link>
-        <AccountNav lang={lang} />
-      </SiteNav>
+      <SiteNav lang={lang} current="/turer" />
 
       <main className="page" style={{ paddingBottom: 64 }}>
         <header style={{ padding: "48px 0 40px" }}>

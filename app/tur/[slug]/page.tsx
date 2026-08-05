@@ -5,7 +5,7 @@ import { notFound } from "next/navigation";
 import { Lock } from "lucide-react";
 
 import { Blueprint } from "@/components/Blueprint";
-import { AccountNav, SiteNav, SiteFooter } from "@/components/SiteChrome";
+import { SiteNav, SiteFooter } from "@/components/SiteChrome";
 import { ElevationProfile } from "@/components/guide/ElevationProfile";
 import { GuideSections } from "@/components/guide/GuideSections";
 import { LockedGuide } from "@/components/guide/LockedGuide";
@@ -14,7 +14,6 @@ import { SITE } from "@/lib/config";
 import { guideSlugs } from "@/lib/guides";
 import { OG_IMAGE } from "@/lib/seo";
 import { getLang } from "@/lib/i18n/server";
-import { commonDict } from "@/lib/i18n/common";
 import { getLocalizedGuide, localizeTour, localizeTours, teaserFor } from "@/lib/i18n/content";
 import { elevationLabel, gradeLabel } from "@/lib/i18n/format";
 import { guideDict } from "@/lib/i18n/guide";
@@ -78,7 +77,6 @@ export default async function TourGuidePage({ params }: { params: Promise<{ slug
   const guide = getLocalizedGuide(slug, lang);
   const { hasAccess } = await getViewer();
   const t = guideDict(lang);
-  const common = commonDict(lang);
   const mapHref = `/kart?tur=${tour.slug}`;
   const neighbours = localizeTours(toursInRegion(source.region, source.slug), lang);
 
@@ -92,11 +90,7 @@ export default async function TourGuidePage({ params }: { params: Promise<{ slug
 
   return (
     <div className="shell">
-      <SiteNav lang={lang}>
-        <Link href="/turer">{common.tours}</Link>
-        <Link href="/kart">{common.map}</Link>
-        <AccountNav lang={lang} />
-      </SiteNav>
+      <SiteNav lang={lang} />
 
       <main className="page page-narrow" style={{ paddingBottom: 64 }}>
         <header style={{ padding: "48px 0 32px" }}>

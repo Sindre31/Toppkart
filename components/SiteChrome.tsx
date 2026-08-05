@@ -2,25 +2,77 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
+import { NavMenu } from "@/components/NavMenu";
 import { getViewer } from "@/lib/access";
 import { SITE } from "@/lib/config";
 import type { Lang } from "@/lib/i18n";
 import { commonDict } from "@/lib/i18n/common";
 
-/** Sticky top navigation. `children` carries the page-specific tail (CTA,
- *  account links); every page shares the brand and the language switcher.
+/** Sticky top navigation. Merket, de faste destinasjonene, kontodelen og
+ *  språkvelgeren — i den rekkefølgen, på hver side.
  *
  *  The switcher is the last item, so it lands in the top-right corner — the
  *  same corner on every page, visible without scrolling. `.nav-brand` takes
- *  `margin-right: auto`, which is what pushes this whole tail to the right. */
-export function SiteNav({ lang, children }: { lang: Lang; children?: ReactNode }) {
+ *  `margin-right: auto`, which is what pushes this whole tail to the right.
+ *
+ *  Lenkene sto tidligere i hver enkelt side, og da var de i praksis ikke de
+ *  samme to steder: forsida tilbød «Turene» og «Kartet», guidene det samme
+ *  pluss konto, de juridiske sidene bare «Kartet», og /min-side sin egen
+ *  variant av kontolenka. Menyen er den samme uansett hvor man står i den, så
+ *  den hører hjemme her — ikke i ti kall som må huske å si det samme.
+ *  `AccountNav` avgjør fortsatt kontoenden ut fra sesjonen.
+ *
+ *  På telefon ligger lenkene bak hamburgerknappen (`NavMenu`): raden vokste med
+ *  hver lenke som ble lagt i den, og det er den veksten som er problemet, ikke
+ *  den enkelte lenka. På skjerm er det den samme markupen i den samme raden —
+ *  se `.nav-menu` i globals.
+ *
+ *  De to hakene:
+ *   - `children` er sidespesifikt tillegg som bare gir mening der det står. I
+ *     dag er det «Innhold» og «Pris» på forsida, som scroller den sida du
+ *     allerede er på; de er `.nav-jump` og er skjult på telefon, der de ville
+ *     vært to fremmedelementer i en meny som ellers går til andre sider.
+ *   - `aside` står framme uansett bredde. I dag «Sikker betaling via Stripe» på
+ *     kassa: et tillitssignal hører hjemme der kortet tastes inn, ikke bak en
+ *     knapp.
+ */
+export async function SiteNav({
+  lang,
+  current,
+  children,
+  aside,
+  menu = true,
+}: {
+  lang: Lang;
+  /** Stien til sida man står på, når den er en av destinasjonene i menyen. */
+  current?: string;
+  children?: ReactNode;
+  aside?: ReactNode;
+  /** Kassa slår den av: der er navigasjon bort fra sida det motsatte av det
+   *  sida er til for. */
+  menu?: boolean;
+}) {
   const t = commonDict(lang);
+  const here = (href: string) => (href === current ? ("page" as const) : undefined);
+
   return (
     <nav className="nav site-nav">
       <Link className="nav-brand" href="/" aria-label={t.brandHome}>
         Toppkart
       </Link>
-      {children}
+      {menu ? (
+        <NavMenu label={t.menu} closeLabel={t.menuClose}>
+          <Link href="/turer" aria-current={here("/turer")}>
+            {t.tours}
+          </Link>
+          <Link href="/kart" aria-current={here("/kart")}>
+            {t.map}
+          </Link>
+          {children}
+          <AccountNav lang={lang} current={current} />
+        </NavMenu>
+      ) : null}
+      {aside}
       <LanguageSwitcher lang={lang} />
     </nav>
   );
@@ -38,14 +90,18 @@ export function SiteNav({ lang, children }: { lang: Lang; children?: ReactNode }
  *  A server component, so the session is read where the session lives. `/kart`
  *  cannot use it — its topbar is inside a client component — so it takes the
  *  same decision as a `signedIn` prop instead.
+ *
+ *  Kalles fra `SiteNav`, ikke fra sidene: kontoenden av navigasjonen er den
+ *  samme overalt, og den er avhengig av sesjonen, ikke av hvilken side man
+ *  står på.
  */
-export async function AccountNav({ lang }: { lang: Lang }) {
+export async function AccountNav({ lang, current }: { lang: Lang; current?: string }) {
   const t = commonDict(lang);
   const { userId } = await getViewer();
 
   if (userId) {
     return (
-      <Link className="nav-muted" href="/min-side">
+      <Link className="nav-muted" href="/min-side" aria-current={current === "/min-side" ? "page" : undefined}>
         {t.account}
       </Link>
     );

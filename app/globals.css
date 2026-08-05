@@ -386,49 +386,34 @@ a:hover { color: var(--color-accent-900); }
 a.btn-primary, a.btn-primary:hover { color: var(--color-bg); }
 a.btn-secondary, a.btn-secondary:hover { color: var(--color-text); }
 @media (max-width: 620px) {
-  /* One row on a phone: wordmark left, links in the middle, language right.
+  /* One row on a phone: wordmark left, menu button and language right.
 
-     `nowrap` is the whole point — the moment this is allowed to wrap, the
-     switcher drops to a second row and the bar doubles in height. Everything
-     below exists to buy back the ~104px that one row was short at 375px, so
-     none of it is decoration: padding, gap, wordmark, links, the CTA and the
-     switcher each give up a little rather than one of them giving up a lot. */
+     Raden holdt lenkene direkte fram til «Turene» ble lagt i den. Da var
+     innholdet 438px: for langt for 390px (iPhone 15), for langt for 360px (de
+     vanligste Android-ene) og for langt for 430px (den største iPhonen som
+     finnes). To ganger tidligere ble det løst ved å stramme padding, gap og
+     skriftstørrelse noen piksler av gangen — men den veien tar slutt, og den
+     betaler med trykkflater.
+
+     Nå ligger lenkene bak menyknappen (`.nav-menu` under). Det som står igjen i
+     raden er merket, knappen og språkvelgeren: 219px, og — det viktige — et
+     tall som ikke vokser neste gang det kommer en lenke til. */
   .site-nav {
-    /* Retightened when «Logg inn» joined the row: that link costs about 60px,
-       which put the language switcher over the edge at every common phone
-       width instead of only below ~360px. Padding, gap and the two controls
-       each give back a few pixels again, on the same principle as before —
-       nothing gives up enough to notice on its own. */
-    padding: 10px 8px;
-    gap: 5px;
-    /* Equal spacing means no auto margins. Those pushed the wordmark hard left
-       and the switcher hard right, so the freed space pooled into the two edge
-       gaps — 20px there against 10px in the middle, which is what made the bar
-       read as separate clumps. Centring the whole group instead gives one gap
-       value between every pair, with the leftover split evenly outside. */
-    justify-content: center;
-    /* `safe` faller tilbake til venstrestilling i det raden blir for lang for
-       skjermen. Uten det sentreres innholdet også når det ikke får plass, og da
-       renner det ut på *begge* sider — den venstre halvparten havner på negativ
-       offset, der ingen scroll når den. Wordmarket sto som «OPPKART» på 390px
-       fra det øyeblikket «Turene» ble lenke nummer to i raden. */
-    justify-content: safe center;
+    padding: 10px 12px;
+    gap: 10px;
     flex-wrap: nowrap;
-    /* Below ~360px the row genuinely cannot hold all four without dropping one.
-       Letting the nav scroll on its own axis keeps that from becoming a
-       sideways-scrolling page, which is the worse failure. */
-    overflow-x: auto;
-    scrollbar-width: none;
   }
-  .site-nav::-webkit-scrollbar { display: none; }
-  /* The two auto margins are what put the links in the middle: the wordmark
-     pushes right, the switcher pushes left, and the links settle between. */
   .site-nav .lang-switch { margin-left: 0; flex: none; }
-  .site-nav .nav-brand { font-size: 14px; letter-spacing: 0.04em; flex: none; margin-right: 0; }
+  .site-nav .nav-brand { font-size: 14px; letter-spacing: 0.04em; flex: none; }
   .site-nav a { font-size: 13px; }
   .nav-muted { font-size: 13px !important; }
   /* Nothing in a single row may wrap or shrink into an ellipsis. */
   .site-nav > * { white-space: nowrap; }
+  /* Unntaket er kassa-notisen, som er den eneste teksten i raden som ikke er en
+     kontroll. «Sikker betaling via Stripe» koster 155px, og på 320px skjøv den
+     hele sida sideveis. To linjer i baren er et lite tap; en side som skrenger
+     sidelengs under kortskjemaet er et større. */
+  .site-nav .nav-muted { white-space: normal; }
   .site-nav a.btn { padding: 8px 9px; font-size: 13px; }
   .site-nav .lang-switch .seg-opt { padding: 6px 7px; font-size: 13px; }
 
@@ -437,12 +422,74 @@ a.btn-secondary, a.btn-secondary:hover { color: var(--color-text); }
      nobody can then reach. */
   .lang-full { display: none; }
   .lang-short { display: inline; }
-  /* In-page jump links ("Innhold", "Pris"). They are what tips the nav onto a
-     second row on a phone, and they are the two items worth the least there:
-     both only scroll the page the reader is already on, while everything else
-     in the bar goes somewhere they cannot otherwise reach. The sections stay
-     reachable by scrolling, which is what a phone reader does anyway. */
+
+  /* In-page jump links ("Innhold", "Pris"). De scroller sida du allerede står
+     på, og finnes bare på forsida. I menyen ville de vært to fremmedelementer i
+     en liste som ellers går til andre sider — og menyen skal se lik ut uansett
+     hvor i den man står. Seksjonene nås ved å scrolle, som er det en
+     telefonleser gjør uansett. */
   .nav-jump { display: none; }
+}
+
+/* — navigasjonsmenyen (`components/NavMenu.tsx`) — */
+
+/* Fra 621px og opp finnes den ikke: `display: contents` løser opp både
+   innpakningen og panelet, så lenkene blir flex-elementer i navigasjonsraden
+   akkurat som da de lå der direkte. Én DOM, to oppsett. */
+.nav-menu, .nav-menu-panel { display: contents; }
+.nav-menu-toggle { display: none; }
+
+@media (max-width: 620px) {
+  .nav-menu { display: block; }
+  .nav-menu-toggle { display: inline-flex; }
+
+  /* Panelet henger under raden i stedet for i knappen: `.site-nav` er sticky,
+     altså posisjonert, så det er den som er utgangspunktet for `left`/`right`
+     og full bredde. Raden har ingen `overflow` lenger — den trengte den bare
+     fordi den vokste med antall lenker — og uten den er det ingenting som
+     klipper panelet vekk. */
+  .nav-menu-panel {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 2px;
+    padding: 8px 12px 14px;
+    background: var(--color-bg);
+    border-bottom: 1px solid var(--color-divider);
+    box-shadow: var(--shadow-md);
+  }
+  .nav-menu[data-open] .nav-menu-panel { display: flex; }
+
+  /* Trykkflater, ikke navigasjonslenker klemt sammen: 15px tekst og 44px høyde
+     er minstemålet en finger trenger for å treffe riktig lenke av fem. */
+  .nav-menu-panel a,
+  .nav-menu-panel > span {
+    font-size: 15px;
+    line-height: 20px;
+    padding: 12px 2px;
+    border-bottom: 1px solid var(--color-divider);
+  }
+  .nav-menu-panel > :last-child { border-bottom: 0; }
+  /* `.nav-muted` demper «Logg inn» og «Min side» ned til 60% fordi de i raden
+     står ved siden av en fylt knapp og ikke skal konkurrere med den. I panelet
+     står de i en liste med fire likestilte lenker, og der leste den samme
+     dempinga som «deaktivert». */
+  .nav-menu-panel .nav-muted {
+    color: var(--color-accent-700) !important;
+    font-size: 15px !important;
+  }
+  .nav-menu-panel a.btn {
+    justify-content: center;
+    margin-top: 10px;
+    padding: 12px;
+    font-size: 15px;
+    border-bottom: 0;
+  }
+
 }
 
 /* — section kicker: "01 · Abonnement" over a 1px rule — */

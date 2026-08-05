@@ -9,7 +9,6 @@ import { formatDate } from "@/lib/dates";
 import type { Lang } from "@/lib/i18n";
 import { getLang } from "@/lib/i18n/server";
 import { accountDict, type AccountDict } from "@/lib/i18n/account";
-import { commonDict } from "@/lib/i18n/common";
 import type { Subscription } from "@/lib/types";
 import { EmailCard } from "./EmailCard";
 import { SignOutCard } from "./SignOutCard";
@@ -61,7 +60,6 @@ export default async function MinSidePage() {
 
   const lang = await getLang();
   const t = accountDict(lang);
-  const c = commonDict(lang);
 
   const sub = viewer.subscription;
   const state = stateOf(sub);
@@ -124,12 +122,7 @@ export default async function MinSidePage() {
 
   return (
     <div className="shell">
-      <SiteNav lang={lang}>
-        <Link href="/kart">{c.map}</Link>
-        <Link href="/min-side" aria-current="page" style={{ color: "var(--color-accent-700)" }}>
-          {c.account}
-        </Link>
-      </SiteNav>
+      <SiteNav lang={lang} current="/min-side" />
 
       <main className="page page-account">
         <header style={{ padding: "56px 0 40px" }}>
