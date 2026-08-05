@@ -394,8 +394,13 @@ a.btn-secondary, a.btn-secondary:hover { color: var(--color-text); }
      none of it is decoration: padding, gap, wordmark, links, the CTA and the
      switcher each give up a little rather than one of them giving up a lot. */
   .site-nav {
-    padding: 10px 10px;
-    gap: 8px;
+    /* Retightened when «Logg inn» joined the row: that link costs about 60px,
+       which put the language switcher over the edge at every common phone
+       width instead of only below ~360px. Padding, gap and the two controls
+       each give back a few pixels again, on the same principle as before —
+       nothing gives up enough to notice on its own. */
+    padding: 10px 8px;
+    gap: 5px;
     /* Equal spacing means no auto margins. Those pushed the wordmark hard left
        and the switcher hard right, so the freed space pooled into the two edge
        gaps — 20px there against 10px in the middle, which is what made the bar
@@ -418,8 +423,8 @@ a.btn-secondary, a.btn-secondary:hover { color: var(--color-text); }
   .nav-muted { font-size: 13px !important; }
   /* Nothing in a single row may wrap or shrink into an ellipsis. */
   .site-nav > * { white-space: nowrap; }
-  .site-nav a.btn { padding: 8px 11px; font-size: 13px; }
-  .site-nav .lang-switch .seg-opt { padding: 6px 8px; font-size: 13px; }
+  .site-nav a.btn { padding: 8px 9px; font-size: 13px; }
+  .site-nav .lang-switch .seg-opt { padding: 6px 7px; font-size: 13px; }
 
   /* "Norsk"/"English" costs 133px; "NO"/"EN" costs 70. That is the difference
      between the map's 56px topbar fitting on a phone and clipping a language
