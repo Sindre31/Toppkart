@@ -27,24 +27,37 @@
   z-index: 0;
 }
 
-/* Sløret som holder teksten lesbar. Toner fra sidefargen i venstre kant, der
-   overskriften står, og ut til rent bilde der fjellet er. Fargen er
-   `--color-bg`, som bildets egen bakgrunn allerede ligger tett opptil, så
-   overgangen mot resten av siden ikke har noen kant. */
+/* Sløret som holder teksten lesbar, og som toner ut kantene.
+
+   Alle lagene er `--color-bg` — den samme fargen som ligger rundt seksjonen.
+   Et lag som går til full `--color-bg` er derfor ikke et slør over bildet der
+   ute, det *er* sida: bildet forsvinner i den, uten kant. Det er hele grunnen
+   til at kanttoningen kan gjøres med gradienter i stedet for `mask-image` og
+   `mask-composite`, som ville trengt prefiks for å treffe like bredt.
+
+   Rekkefølgen er malerens: første lag ligger øverst. Lesbarhetssløret står
+   derfor sist — kantene skal legge seg oppå det, ikke under. */
 .hero::after {
   content: "";
   position: absolute;
   inset: 0;
   z-index: 1;
   pointer-events: none;
-  background: linear-gradient(
-    100deg,
-    var(--color-bg) 0%,
-    color-mix(in srgb, var(--color-bg) 88%, transparent) 34%,
-    color-mix(in srgb, var(--color-bg) 45%, transparent) 58%,
-    color-mix(in srgb, var(--color-bg) 12%, transparent) 78%,
-    transparent 100%
-  );
+  background:
+    /* høyre kant */
+    linear-gradient(to left, var(--color-bg), transparent 160px),
+    /* nederste kant */
+    linear-gradient(to top, var(--color-bg), transparent 110px),
+    /* lesbarhetssløret: fra sidefargen der overskriften står, ut til rent
+       bilde der fjellet er */
+    linear-gradient(
+      100deg,
+      var(--color-bg) 0%,
+      color-mix(in srgb, var(--color-bg) 88%, transparent) 34%,
+      color-mix(in srgb, var(--color-bg) 45%, transparent) 58%,
+      color-mix(in srgb, var(--color-bg) 12%, transparent) 78%,
+      transparent 100%
+    );
 }
 
 .heroContent {
@@ -54,20 +67,26 @@
 
 /* Smalt: utsnittet blir en loddrett stripe, og teksten dekker det meste av
    den. Sløret legges ovenfra i stedet for fra siden, og tettere — her er det
-   ingen tom flate å sette overskriften på. */
+   ingen tom flate å sette overskriften på.
+
+   Bare den nederste kanten tones ut. Sidekantene går helt ut til skjermen på
+   telefon, og en toning der ville lest som en vignett rundt hele bildet
+   heller enn som en overgang mot resten av sida. */
 @media (max-width: 760px) {
   .heroImage {
     object-position: 68% 42%;
   }
 
   .hero::after {
-    background: linear-gradient(
-      180deg,
-      var(--color-bg) 0%,
-      color-mix(in srgb, var(--color-bg) 88%, transparent) 45%,
-      color-mix(in srgb, var(--color-bg) 66%, transparent) 78%,
-      color-mix(in srgb, var(--color-bg) 55%, transparent) 100%
-    );
+    background:
+      linear-gradient(to top, var(--color-bg), transparent 90px),
+      linear-gradient(
+        180deg,
+        var(--color-bg) 0%,
+        color-mix(in srgb, var(--color-bg) 88%, transparent) 45%,
+        color-mix(in srgb, var(--color-bg) 66%, transparent) 78%,
+        color-mix(in srgb, var(--color-bg) 55%, transparent) 100%
+      );
   }
 }
 
