@@ -1,10 +1,9 @@
 import Link from "next/link";
 
 import { Blueprint, SectionKicker } from "@/components/Blueprint";
-import { AccountNav, SiteFooter, SiteNav } from "@/components/SiteChrome";
+import { SiteFooter, SiteNav } from "@/components/SiteChrome";
 import { formatDate } from "@/lib/dates";
 import type { Lang } from "@/lib/i18n";
-import { commonDict } from "@/lib/i18n/common";
 import { LEGAL_UPDATED, type LegalDocument as LegalDoc } from "@/lib/i18n/legal";
 
 /** Shared shell for `/vilkar` and `/personvern`.
@@ -18,14 +17,10 @@ import { LEGAL_UPDATED, type LegalDocument as LegalDoc } from "@/lib/i18n/legal"
  *  moved without renumbering anything by hand.
  */
 export function LegalDocument({ lang, doc }: { lang: Lang; doc: LegalDoc }) {
-  const c = commonDict(lang);
 
   return (
     <div className="shell">
-      <SiteNav lang={lang}>
-        <Link href="/kart">{c.map}</Link>
-        <AccountNav lang={lang} />
-      </SiteNav>
+      <SiteNav lang={lang} />
 
       <main className="page page-narrow" style={{ paddingBottom: 72 }}>
         <header style={{ padding: "48px 0 8px" }}>

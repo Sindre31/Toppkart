@@ -3,7 +3,6 @@ import Link from "next/link";
 import { Blueprint } from "@/components/Blueprint";
 import { SiteNav, SiteFooter } from "@/components/SiteChrome";
 import { getLang } from "@/lib/i18n/server";
-import { commonDict } from "@/lib/i18n/common";
 import { systemDict } from "@/lib/i18n/system";
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -14,13 +13,10 @@ export async function generateMetadata(): Promise<Metadata> {
 export default async function NotFound() {
   const lang = await getLang();
   const t = systemDict(lang);
-  const c = commonDict(lang);
 
   return (
     <div className="shell">
-      <SiteNav lang={lang}>
-        <Link href="/kart">{c.map}</Link>
-      </SiteNav>
+      <SiteNav lang={lang} />
       <main style={{ display: "grid", placeItems: "center", padding: "48px 20px" }}>
         <Blueprint style={{ padding: 32, width: "min(480px, 100%)" }}>
           <span className="kicker">{t.notFoundKicker}</span>

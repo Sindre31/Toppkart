@@ -3,7 +3,6 @@ import Link from "next/link";
 import { SiteFooter, SiteNav } from "@/components/SiteChrome";
 import { getLang } from "@/lib/i18n/server";
 import { accountDict } from "@/lib/i18n/account";
-import { commonDict } from "@/lib/i18n/common";
 import LoginForm from "./LoginForm";
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -41,13 +40,10 @@ export default async function LoggInnPage({ searchParams }: { searchParams: Sear
 
   const lang = await getLang();
   const t = accountDict(lang);
-  const c = commonDict(lang);
 
   return (
     <div className="shell">
-      <SiteNav lang={lang}>
-        <Link href="/kart">{c.map}</Link>
-      </SiteNav>
+      <SiteNav lang={lang} />
 
       <main style={{ display: "grid", placeItems: "center", padding: "48px 20px" }}>
         <div style={{ width: "min(420px, 100%)" }}>

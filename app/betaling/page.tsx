@@ -57,9 +57,10 @@ export default async function BetalingPage({
 
   return (
     <div className="shell">
-      <SiteNav lang={lang}>
-        <span className="nav-muted">{t.navNote}</span>
-      </SiteNav>
+      {/* `aside`, ikke `children`: dette er et tillitssignal på kassa, og det
+          skal stå framme der kortnummeret tastes inn — ikke bak menyknappen
+          telefonoppsettet ellers samler navigasjonen i. */}
+      <SiteNav lang={lang} menu={false} aside={<span className="nav-muted">{t.navNote}</span>} />
 
       <main
         style={{
