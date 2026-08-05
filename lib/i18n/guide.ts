@@ -45,6 +45,9 @@ export interface GuideDict {
   lockedTitle: string;
   lockedBody: (trialDays: number, price: string) => string;
   lockedCta: string;
+  /* — naboturer i samme region — */
+  moreInRegion: (region: string) => string;
+  allTours: string;
   /* — page furniture — */
   footerNote: string;
   notFoundTitle: string;
@@ -84,6 +87,8 @@ const GUIDE: Translated<GuideDict> = {
     lockedBody: (trialDays, price) =>
       `Rutebeskrivelse, nedkjøring og skredterreng åpnes med abonnement — ${trialDays} dager gratis, deretter ${price}/mnd.`,
     lockedCta: "Start gratis prøveperiode",
+    moreInRegion: (region) => `Flere turer i ${region}`,
+    allTours: "Se alle turene",
     footerNote: "Eksempelinnhold i prototypen — ikke en reell turbeskrivelse.",
     notFoundTitle: "Turen finnes ikke",
     gpxNotFound: "Fant ikke turen.",
@@ -120,6 +125,8 @@ const GUIDE: Translated<GuideDict> = {
     lockedBody: (trialDays, price) =>
       `Route description, descent and avalanche terrain open with a subscription — ${trialDays} days free, then ${price}/month.`,
     lockedCta: "Start free trial",
+    moreInRegion: (region) => `More tours in ${region}`,
+    allTours: "See all the tours",
     footerNote: "Sample content in this prototype — not a real tour description.",
     notFoundTitle: "Tour not found",
     gpxNotFound: "Tour not found.",

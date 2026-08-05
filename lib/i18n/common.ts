@@ -8,6 +8,8 @@ export interface CommonDict {
   /* — nav — */
   brandHome: string;
   map: string;
+  /** Turoversikta på `/turer`. */
+  tours: string;
   login: string;
   logout: string;
   account: string;
@@ -16,6 +18,7 @@ export interface CommonDict {
   price: string;
   /* — footer — */
   footerMap: string;
+  footerTours: string;
   /** Footer link to the receive-only support mailbox. */
   footerSupport: string;
   footerTerms: string;
@@ -33,6 +36,7 @@ const COMMON: Translated<CommonDict> = {
   no: {
     brandHome: "Til forsiden",
     map: "Kartet",
+    tours: "Turene",
     login: "Logg inn",
     logout: "Logg ut",
     account: "Min side",
@@ -40,6 +44,7 @@ const COMMON: Translated<CommonDict> = {
     contents: "Innhold",
     price: "Pris",
     footerMap: "Kartet",
+    footerTours: "Turene",
     footerSupport: "Kontakt",
     footerTerms: "Vilkår",
     footerPrivacy: "Personvern",
@@ -52,6 +57,7 @@ const COMMON: Translated<CommonDict> = {
   en: {
     brandHome: "Back to the front page",
     map: "The map",
+    tours: "The tours",
     login: "Log in",
     logout: "Log out",
     account: "My account",
@@ -59,6 +65,7 @@ const COMMON: Translated<CommonDict> = {
     contents: "Contents",
     price: "Pricing",
     footerMap: "The map",
+    footerTours: "The tours",
     footerSupport: "Contact",
     footerTerms: "Terms",
     footerPrivacy: "Privacy",

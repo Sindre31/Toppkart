@@ -1,0 +1,101 @@
+/* Turoversikta. Kortene ligger i `.grid-auto` fra globals; det som står her er
+   det rutenettet ikke dekker — snarveisraden, kortets indre og statistikkfoten. */
+
+/* — snarveier til regionene — */
+
+.jump {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 28px;
+}
+
+.jumpItem {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 8px;
+  padding: 5px 10px;
+  border: 1px solid var(--color-divider);
+  font-size: 13px;
+  line-height: 18px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.jumpItem:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+.jumpCount {
+  font-size: 11px;
+  color: color-mix(in srgb, var(--color-text) 55%, transparent);
+}
+
+.jumpItem:hover .jumpCount {
+  color: inherit;
+}
+
+/* — regionoverskrift — */
+
+.regionCount {
+  margin-left: 10px;
+  font-weight: 400;
+  color: color-mix(in srgb, var(--color-text) 50%, transparent);
+}
+
+/* — turkort — */
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px;
+}
+
+/* Hele kortet er klikkbart, ikke bare de tolv tegnene i fjellnavnet.
+   `::after` legger seg over kortet fra tittellenka, som blir liggende igjen som
+   den eneste lenka i kortet — det er forutsetninga for at trikset er trygt:
+   ingenting annet der inne kan bli begravd under den. `.blueprint` er allerede
+   `position: relative`, så flata stopper ved kortkanten. */
+.cardLink {
+  color: inherit;
+  text-decoration: none;
+}
+
+.cardLink::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+.card:hover .cardLink,
+.cardLink:focus-visible {
+  color: var(--color-accent);
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+/* Nøkkeltallene skyves ned til bunnen (`margin-top: auto`) slik at foten står
+   på linje mellom nabokort med ulikt lange teasere. */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin: auto 0 0;
+  padding-top: 14px;
+  border-top: 1px solid var(--color-divider);
+}
+
+/* `1219 moh` brøt mellom tall og enhet i den midterste kolonnen på et kort av
+   minstebredde. Tallet og enheten hører sammen — heller ett hakk mindre skrift
+   enn en verdi som står på to linjer ved siden av to som står på én. */
+.stats dd {
+  margin: 4px 0 0;
+  font-size: 14px;
+  white-space: nowrap;
+}
