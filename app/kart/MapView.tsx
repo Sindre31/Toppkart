@@ -8,16 +8,18 @@
  *  rather than navigating, so the filters, the selected tour and the live
  *  Leaflet instance all survive the change. */
 
-import { Suspense, useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { Suspense, useCallback, useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import dynamic from "next/dynamic";
 import Link from "next/link";
 import { Check, Lock, Unlock } from "lucide-react";
 
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
+import { NavMenu } from "@/components/NavMenu";
 import { GRADE_COLORS } from "@/lib/config";
 import { REGIONS, TOURS, routesFor } from "@/lib/tours";
 import type { Lang } from "@/lib/i18n";
 import { localizeTours } from "@/lib/i18n/content";
+import { commonDict } from "@/lib/i18n/common";
 import { mapDict, type Dict } from "@/lib/i18n/map";
 import type { Grade, Tour } from "@/lib/types";
 import { AvalanchePanel } from "./AvalanchePanel";
@@ -66,14 +68,24 @@ function TourMeta({ tour, t, showSummit }: { tour: Tour; t: Dict; showSummit?: b
 export default function MapView({
   lang,
   hasAccess,
-  signedIn,
+  nav,
   initialSlug,
   initialRouteId,
 }: {
   lang: Lang;
   hasAccess: boolean;
-  /** Session, not subscription — decides «Min side» vs «Logg inn»/«Prøv gratis». */
-  signedIn: boolean;
+  /** Menylenkene, rendret på serveren av `NavLinks` og sendt inn ferdige.
+   *
+   *  Topbaren her er den eneste navigasjonen på nettstedet som ikke er
+   *  `SiteNav`, og den drev fra resten: mens de andre sidene fikk «Turene»,
+   *  «Kartet» og kontodelen, hadde kartet bare en innloggingslenke og en
+   *  prøveknapp. Den avgjorde dessuten kontoenden ut fra et `signedIn`-flagg
+   *  som måtte holdes i takt med `AccountNav` for hånd.
+   *
+   *  Nå er det den samme funksjonen som lager lenkene begge steder. Den er en
+   *  serverkomponent og kan ikke kalles herfra, men den ferdige noden kan
+   *  sendes inn som en hvilken som helst annen prop. */
+  nav: ReactNode;
   initialSlug: string | null;
   initialRouteId: string | null;
 }) {
@@ -92,6 +104,9 @@ export default function MapView({
   const detailRef = useRef<HTMLDivElement>(null);
 
   const t = mapDict(lang);
+  /* Menyknappens etiketter er sidechromets, ikke kartets — samme knapp, samme
+     ord som på de andre sidene. */
+  const c = commonDict(lang);
 
   /* Teaser, aspect, season and duration come out translated; peak and region
      names are proper nouns and stay Norwegian, so search and the region filter
@@ -171,15 +186,9 @@ export default function MapView({
         <Link className={s.brand} href="/">
           Toppkart
         </Link>
-        {signedIn ? (
-          <Link className={s.loginLink} href="/min-side">
-            {t.account}
-          </Link>
-        ) : (
-          <Link className="btn btn-primary" href="/betaling" style={PRIMARY_LINK}>
-            {t.trial}
-          </Link>
-        )}
+        <NavMenu label={c.menu} closeLabel={c.menuClose}>
+          {nav}
+        </NavMenu>
         <LanguageSwitcher lang={lang} />
       </header>
 

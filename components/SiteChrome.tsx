@@ -27,33 +27,25 @@ import { commonDict } from "@/lib/i18n/common";
  *  den enkelte lenka. På skjerm er det den samme markupen i den samme raden —
  *  se `.nav-menu` i globals.
  *
- *  De to hakene:
- *   - `children` er sidespesifikt tillegg som bare gir mening der det står. I
- *     dag er det «Innhold» og «Pris» på forsida, som scroller den sida du
- *     allerede er på; de er `.nav-jump` og er skjult på telefon, der de ville
- *     vært to fremmedelementer i en meny som ellers går til andre sider.
- *   - `aside` står framme uansett bredde. I dag «Sikker betaling via Stripe» på
- *     kassa: et tillitssignal hører hjemme der kortet tastes inn, ikke bak en
- *     knapp.
+ *  `aside` er det ene som står framme uansett bredde. I dag «Sikker betaling via
+ *  Stripe» på kassa: et tillitssignal hører hjemme der kortet tastes inn, ikke
+ *  bak en knapp.
  */
 export async function SiteNav({
   lang,
   current,
-  children,
   aside,
   menu = true,
 }: {
   lang: Lang;
   /** Stien til sida man står på, når den er en av destinasjonene i menyen. */
   current?: string;
-  children?: ReactNode;
   aside?: ReactNode;
   /** Kassa slår den av: der er navigasjon bort fra sida det motsatte av det
    *  sida er til for. */
   menu?: boolean;
 }) {
   const t = commonDict(lang);
-  const here = (href: string) => (href === current ? ("page" as const) : undefined);
 
   return (
     <nav className="nav site-nav">
@@ -62,19 +54,37 @@ export async function SiteNav({
       </Link>
       {menu ? (
         <NavMenu label={t.menu} closeLabel={t.menuClose}>
-          <Link href="/turer" aria-current={here("/turer")}>
-            {t.tours}
-          </Link>
-          <Link href="/kart" aria-current={here("/kart")}>
-            {t.map}
-          </Link>
-          {children}
-          <AccountNav lang={lang} current={current} />
+          <NavLinks lang={lang} current={current} />
         </NavMenu>
       ) : null}
       {aside}
       <LanguageSwitcher lang={lang} />
     </nav>
+  );
+}
+
+/** Destinasjonene i menyen. Én liste, to steder som rendrer den: `SiteNav` og
+ *  kartets egen topbar, som ligger i en klientkomponent og derfor ikke kan kalle
+ *  `AccountNav` selv — `/kart` får denne inn som prop i stedet.
+ *
+ *  Poenget med å ha den her framfor to steder er at «lik meny på kartet» ikke
+ *  skal være noe noen må huske: det er den samme funksjonen som kjører begge
+ *  steder, så de kan ikke drive fra hverandre.
+ */
+export async function NavLinks({ lang, current }: { lang: Lang; current?: string }) {
+  const t = commonDict(lang);
+  const here = (href: string) => (href === current ? ("page" as const) : undefined);
+
+  return (
+    <>
+      <Link className="nav-link" href="/turer" aria-current={here("/turer")}>
+        {t.tours}
+      </Link>
+      <Link className="nav-link" href="/kart" aria-current={here("/kart")}>
+        {t.map}
+      </Link>
+      <AccountNav lang={lang} current={current} />
+    </>
   );
 }
 
@@ -87,11 +97,13 @@ export async function SiteNav({
  *  given reader. Signed in you get «Min side» everywhere; signed out you get
  *  the way in and the trial.
  *
- *  A server component, so the session is read where the session lives. `/kart`
- *  cannot use it — its topbar is inside a client component — so it takes the
- *  same decision as a `signedIn` prop instead.
+ *  A server component, so the session is read where the session lives. Kartets
+ *  topbar ligger i en klientkomponent og kan ikke kalle den selv; `/kart`
+ *  rendrer `NavLinks` på serveren og sender resultatet inn som prop, slik at
+ *  også kartet får kontoenden avgjort av sesjonen framfor av en `signedIn`-flagg
+ *  som må holdes i takt.
  *
- *  Kalles fra `SiteNav`, ikke fra sidene: kontoenden av navigasjonen er den
+ *  Kalles fra `NavLinks`, ikke fra sidene: kontoenden av navigasjonen er den
  *  samme overalt, og den er avhengig av sesjonen, ikke av hvilken side man
  *  står på.
  */
@@ -101,7 +113,7 @@ export async function AccountNav({ lang, current }: { lang: Lang; current?: stri
 
   if (userId) {
     return (
-      <Link className="nav-muted" href="/min-side" aria-current={current === "/min-side" ? "page" : undefined}>
+      <Link className="nav-link nav-muted" href="/min-side" aria-current={current === "/min-side" ? "page" : undefined}>
         {t.account}
       </Link>
     );
@@ -115,12 +127,11 @@ export async function AccountNav({ lang, current }: { lang: Lang; current?: stri
    *  returning subscriber looking for their account does not read «Prøv gratis»
    *  as «this is also how you sign in», and had nowhere obvious to click.
    *
-   *  The cost is one more item in a row that is tight on a phone. `.site-nav`
-   *  scrolls on its own axis below ~360px rather than wrapping, so the failure
-   *  mode is a nudge sideways in the bar, not a page that scrolls sideways. */
+   *  Kostnaden var ett element til i en rad som var trang på telefon. Den er
+   *  borte nå: raden holder ikke lenkene lenger, menyen gjør. */
   return (
     <>
-      <Link className="nav-muted" href="/logg-inn">
+      <Link className="nav-link nav-muted" href="/logg-inn">
         {t.login}
       </Link>
       <Link className="btn btn-primary" href="/betaling">

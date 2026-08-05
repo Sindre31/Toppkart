@@ -6,8 +6,8 @@ import { getSupabaseServerClient } from "@/lib/supabase/server";
 
 /** Only same-origin relative paths may ride along through the provider. */
 function safeNext(value: string | null): string {
-  if (!value) return "/kart";
-  if (!value.startsWith("/") || value.startsWith("//") || value.startsWith("/\\")) return "/kart";
+  if (!value) return "/min-side";
+  if (!value.startsWith("/") || value.startsWith("//") || value.startsWith("/\\")) return "/min-side";
   return value;
 }
 

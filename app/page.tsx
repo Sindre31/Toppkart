@@ -8,7 +8,6 @@ import { DataPlate } from "@/components/landing/DataPlate";
 import { TrialSignupRow } from "@/components/landing/TrialSignupRow";
 import styles from "@/components/landing/landing.module.css";
 import { getLang } from "@/lib/i18n/server";
-import { commonDict } from "@/lib/i18n/common";
 import { landingDict } from "@/lib/i18n/landing";
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -24,20 +23,10 @@ const muted = (percent: number) => `color-mix(in srgb, var(--color-text) ${perce
 export default async function LandingPage() {
   const lang = await getLang();
   const t = landingDict(lang);
-  const c = commonDict(lang);
 
   return (
     <>
-      {/* «Innhold» og «Pris» er det eneste sidespesifikke i navigasjonen på
-          hele nettstedet: de scroller forsida, og finnes bare her. */}
-      <SiteNav lang={lang}>
-        <a className="nav-jump" href="#innhold">
-          {c.contents}
-        </a>
-        <a className="nav-jump" href="#pris">
-          {c.price}
-        </a>
-      </SiteNav>
+      <SiteNav lang={lang} />
 
       <div className="page">
         <main>

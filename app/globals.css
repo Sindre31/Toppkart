@@ -422,16 +422,15 @@ a.btn-secondary, a.btn-secondary:hover { color: var(--color-text); }
      nobody can then reach. */
   .lang-full { display: none; }
   .lang-short { display: inline; }
-
-  /* In-page jump links ("Innhold", "Pris"). De scroller sida du allerede står
-     på, og finnes bare på forsida. I menyen ville de vært to fremmedelementer i
-     en liste som ellers går til andre sider — og menyen skal se lik ut uansett
-     hvor i den man står. Seksjonene nås ved å scrolle, som er det en
-     telefonleser gjør uansett. */
-  .nav-jump { display: none; }
 }
 
 /* — navigasjonsmenyen (`components/NavMenu.tsx`) — */
+
+/* Lenkene i menyen. Global klasse framfor `.site-nav a`, fordi den samme menyen
+   også står i kartets topbar — som er en CSS-modul med sine egne klassenavn og
+   ikke kan treffes av en regel som henger på sidenavigasjonen. */
+.nav-link { font-size: 14px; color: var(--color-accent-700); text-decoration: none; }
+.nav-link:hover { color: var(--color-accent-900); }
 
 /* Fra 621px og opp finnes den ikke: `display: contents` løser opp både
    innpakningen og panelet, så lenkene blir flex-elementer i navigasjonsraden

@@ -36,12 +36,6 @@
   margin-right: auto;
 }
 .brand:hover { color: var(--color-text); }
-.loginLink {
-  font-size: 13px;
-  text-decoration: none;
-  color: color-mix(in srgb, var(--color-text) 60%, transparent);
-}
-.loginLink:hover { color: var(--color-text); }
 
 /* — left sidebar — */
 .side {
@@ -455,34 +449,24 @@
   .side { transition: none; }
 }
 
-/* The topbar is a fixed 56px row that cannot wrap, and at 360px it was asking
-   for ~453px of content. Tightening the gap, the padding and the wordmark buys
-   back what the brand, both links and the switcher need to sit side by side —
-   the switcher's short labels (globals.css) cover the rest. */
+/* Topbaren er en fast 56px-rad som ikke kan wrappe, og den ba om ~453px på
+   360px skjerm. To runder med innstramming — gap, padding, wordmark, begge
+   lenkene, CTA-en — holdt den akkurat innafor.
+
+   Lenkene ligger nå i menyen (`NavMenu`, som `SiteNav`), så raden er merket,
+   knappen og språkvelgeren. Innstrammingene er borte igjen: de kjøpte plass til
+   noe som ikke står her lenger, og `justify-content: center` sentrerte innhold
+   som var for bredt, slik at venstre halvdel havnet på negativ offset. */
 @media (max-width: 620px) {
-  /* Same treatment as the site nav in globals.css: no auto margin on the
-     wordmark, one gap value between every pair, group centred. Left to itself
-     the bar sat at 64px between the wordmark and the CTA against 10px before
-     the switcher, which is the uneven look the site nav just lost. */
-  .topbar { gap: 8px; padding: 0 12px; justify-content: center; }
-  .brand { font-size: 14px; margin-right: 0; }
-  /* Both links were wrapping to two lines inside a fixed 56px row, which
-     clipped them. Nothing in a single-line bar may wrap. */
-  .topbar :global(.btn),
-  .loginLink { white-space: nowrap; }
+  .topbar { gap: 10px; padding: 0 12px; }
+  .brand { font-size: 14px; }
+  /* Nothing in a single-line bar may wrap. Panelet under baren er unntatt — det
+     er ikke i raden. */
+  .topbar > * { white-space: nowrap; }
   /* The sidebar is 85vw here, and at 17px a long single-word peak name plus its
      nowrap altitude ("TROMSDALSTINDEN 1238 MOH") overran the card and was cut
      off at the edge. Two points down is enough for the longest name in the set. */
   .tour h3 { font-size: 15px; }
-}
-
-/* At 390px the wordmark, both links and the switcher still asked for more than
-   the row had, so the two links wrapped. Trimming the CTA's padding and the
-   login link is enough to fit without dropping anything a visitor needs. */
-@media (max-width: 430px) {
-  .topbar { gap: 10px; padding: 0 12px; }
-  .topbar :global(.btn) { padding: 7px 12px; font-size: 13px; }
-  .loginLink { font-size: 12px; }
 }
 
 /* — today's avalanche danger (Varsom) — */
