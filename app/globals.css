@@ -207,6 +207,27 @@ figcaption {
 .input:hover { border-color: color-mix(in srgb, var(--color-text) 45%, transparent); }
 .input:focus-visible { border-color: var(--color-accent); outline-offset: 0; }
 textarea.input { min-height: 90px; resize: vertical; }
+
+/* 16px, ikke 14, på berøringsskjerm. iOS Safari zoomer hele sida inn når et
+   tekstfelt med skrift under 16px får fokus, og zoomer ikke ut igjen — så et
+   trykk på e-postfeltet på forsiden etterlot leseren på en side som var
+   bredere enn skjermen. Grensa er Apples, ikke vår, og 16 er der den går.
+   `pointer: coarse` treffer telefon og nettbrett i begge retninger; på
+   pekerskjermer finnes ikke autozoomen, og feltet blir stående på 14. */
+@media (pointer: coarse) {
+  .input {
+    font-size: 16px;
+    /* Brødtekstens 1,55 ville tatt 16px forbi `min-height` og gjort feltet
+       39px i stedet for 36 — tre piksler som flytter alt under seg. 1,2 holder
+       tekstboksen innenfor de 36 og lar høyden stå akkurat der den sto. */
+    line-height: 1.2;
+  }
+  /* Flerlinjefeltet styres av sin egen `min-height`, så det kan beholde en
+     luftigere linjeavstand uten å flytte noe. */
+  textarea.input {
+    line-height: 1.45;
+  }
+}
 .radio { display: inline-flex; align-items: center; gap: 8px; cursor: pointer; font-size: 14px; }
 .radio input, .seg-opt input {
   position: absolute; opacity: 0; width: 0; height: 0; pointer-events: none;
