@@ -62,7 +62,6 @@ export interface LandingDict {
   ctaTrial: string;
   ctaMap: string;
   priceNote: string;
-  heroImageAlt: string;
   /* — data plate — */
   plateLabel: string;
   plateSheet: string;
@@ -106,8 +105,6 @@ const LANDING: Translated<LandingDict> = {
     ctaTrial: "Prøv gratis i 14 dager",
     ctaMap: "Se kartet",
     priceNote: "Deretter 29 kr/mnd. Ingen binding.",
-    heroImageAlt:
-      "Reliefkart i perspektiv: opptegnet rute med veipunkter fra dalbunnen opp til en topp på 1478 moh, med høydekoter og kompassrose.",
 
     plateLabel: "Toppkart — nøkkeldata",
     plateSheet: "Ark 01 av 04",
@@ -177,8 +174,6 @@ const LANDING: Translated<LandingDict> = {
     ctaTrial: "Try free for 14 days",
     ctaMap: "See the map",
     priceNote: "Then 29 kr/month. No lock-in.",
-    heroImageAlt:
-      "Relief map in perspective: a drawn route with waypoints from the valley floor up to a 1478 m summit, with contour lines and a compass rose.",
 
     plateLabel: "Toppkart — key figures",
     plateSheet: "Sheet 01 of 04",
