@@ -56,6 +56,35 @@ Neither half is much use alone. The corridor without the terrain model gives you
 straight lines through cliffs; the terrain model without the corridor gives you a
 technically-gentle line up a face nobody skis.
 
+### Solved on a coarse grid, measured on a fine one
+
+Dijkstra over a 1 m grid for a ten-kilometre corridor is not a thing you run, so
+the router solves on a downsampled DTM — a few metres per cell. That resolution
+is right for *finding* a way up and wrong for *saying how steep it is*: the grid
+rounds the corner off a step, and a couple of metres of error over a 30 m
+baseline is a dozen degrees.
+
+`resample_dtm1.py` re-reads every vertex elevation straight from the DTM1 point
+API and rewrites `gainM`, `lossM` and `maxAngle` from it. The geometry stays
+exactly as routed; only the heights change. The two ends keep their pinned values
+— the trailhead from the corridor research, the summit from `summits.json` —
+because those were resolved deliberately and a reader recognises them.
+
+Folarskardnuten is the case that showed why it was needed. Vertex by vertex the
+stored profile was within ±6 m of DTM1 and averaged −0.4 m; it looked fine. Its
+steepest 30 m window read **25.5° stored and 37.8° measured**, and the guide
+written from it told the reader a 38-degree step was a 25-degree one. Across all
+39 tours it moved the steepest sustained gradient by 2° or more on fifteen of
+them — eleven steeper, four gentler. Storgalten 29.2 → 34.6, Steindalsnosi
+26.4 → 30.3, Kavringtinden 30.3 → 33.8, Tromsdalstinden 23.8 → 26.9; the other
+way, Melderskin 30.9 → 27.3 and Besshø 26.1 → 23.2. Cumulative gain moved much
+less — under 2.5% everywhere, mostly a metre or two.
+
+`router.steepest_span` now returns *where* the steepest window is as well as how
+steep, `guide_facts.py` carries it as `steepestStep`, and `check_guides.py` counts
+those two elevations as sourced. A guide that says "29.4 degrees between 1411 and
+1428 moh" is checkable in a way that a bare angle is not.
+
 ## Steps
 
 ```
@@ -64,6 +93,7 @@ pip install numpy scipy rasterio
 python3 resolve_summits.py    # SSR + DTM1          -> summits.json
 python3 build_corridors.py    # corridors.swarm.json + PICKS/ALTERNATES -> corridors.json
 python3 generate_routes.py    # corridors + summits -> routes.json   (~10 min)
+python3 resample_dtm1.py      # every vertex re-read from DTM1        (~15 min)
 python3 emit_ts.py            # routes.json         -> ../../lib/routes.ts
 python3 check_routes.py       # independent sanity pass
 
@@ -224,19 +254,26 @@ for a line that has actually moved.
 ## The app's numbers, reconciled against the ground
 
 `verticalM` is now the cumulative ascent of the tour's **first** route. **Every one
-of the 24 agrees with its routed gain to within 10 m**, which is the invariant to
+of the 39 agrees with its routed gain to within 10 m**, which is the invariant to
 assert if this is ever checked automatically. An alternative route has its own
 gain and is not expected to match.
+
+The DTM1 re-sampling moved six of them past that line and they were re-rounded:
+Kavringtinden 1240 → 1250, Breitinden 1020 → 1030, Kolåstinden 1080 → 1120,
+Slogen 1480 → 1520, Rondslottet 1240 → 1280, Folarskardnuten 950 → 970. Three of
+those six were already outside 10 m before the re-sampling. The teasers quote the
+gain too, and eight of them were brought along.
 
 Twenty tours were corrected to get there, to the routed gain rounded to the
 nearest 10 m — rounded so the figures read like published data and do not drift
 when the geometry is regenerated.
 
-The four that were *not* touched are the ones already inside 10 m of a figure that
+The ones *not* touched at the time were already inside 10 m of a figure that
 is deliberately round and matches the guidebooks: Tromsdalstinden 1200 (routed
 1206), Store Blåmann 1040 (1031), Storgalten 1219 (1210), Rondslottet 1240 (1245).
 Replacing a published 1200 with a machine-rounded 1210 would be a downgrade, not a
-correction.
+correction. Rondslottet has since moved anyway — the re-sampling put its routed
+gain at 1281.
 
 Of the twenty, three were figures that matched no real trailhead at all:
 

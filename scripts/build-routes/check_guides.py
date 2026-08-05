@@ -51,6 +51,11 @@ def allowed_values(t):
         # this table, and it should not have to round to the single steepest band
         # to be checkable.
         vals |= {float(b["fromM"]), float(b["toM"]), float(b["angle"]), float(b["groundM"])}
+    if p.get("steepestStep"):
+        # The steepest 30 m window and the two elevations it runs between: a
+        # guide that says where the step is should not read as unsourced for it.
+        ss = p["steepestStep"]
+        vals |= {float(ss["fromM"]), float(ss["toM"]), float(ss["angle"])}
     if p.get("steepestBand"):
         sb = p["steepestBand"]
         vals |= {float(sb["fromM"]), float(sb["toM"]), float(sb["angle"])}

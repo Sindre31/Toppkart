@@ -164,12 +164,13 @@ content and data quality that has to be settled before the site is sold to anyon
   before print; the app is at least now internally consistent and single-sourced.
 - **The guide text has not been read by anyone who has skied these tours.** Every number in
   `lib/guides.ts` traces to Kartverket's terrain model, the route research or a cited source, and
-  every guide was put through an adversarial fact-check that rewrote all 24 of the first round —
-  it caught a descent sold on the wrong side of Kavringtinden, a cliff warning pointing away from
-  the cliff on Storehorn, and a rock band on Synshorn that does not exist. The fifteen tours added
-  since have guides written against the same route research and audit findings, and every number in
-  them is matched mechanically by `check_guides.py`, but no second writer has tried to break them.
-  That makes the copy sourced, not verified. It still needs a local reader per tour before print. See "The written guides" in
+  every guide was put through an adversarial fact-check — all 24 of the first round, and then all
+  15 of the second. It caught a descent sold on the wrong side of Kavringtinden, a cliff warning
+  pointing away from the cliff on Storehorn, a rock band on Synshorn that does not exist, and, in
+  the second round, four guides that named the wrong compass direction and a systematic habit of
+  quoting the skin track's own gradient as if it were the slope it crosses. Every number is matched
+  mechanically by `check_guides.py`, and since the elevations were re-read from DTM1 the angles the
+  guides quote are the ones the terrain model gives. That makes the copy sourced, not verified. It still needs a local reader per tour before print. See "The written guides" in
   `scripts/build-routes/README.md` for what the check does and does not cover.
 - **`assets/kontur.png` is a placeholder.** It is a generated contour-map graphic standing in for
   real ski-touring photography. `assets/photo.jpg` is an unrelated reference photo from the design

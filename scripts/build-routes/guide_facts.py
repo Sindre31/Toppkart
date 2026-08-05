@@ -14,7 +14,7 @@ import math
 import os
 
 from geo import dtm_point, haversine
-from router import steepest_gradient
+from router import steepest_span
 
 PROFILE_W = 600.0
 PROFILE_TOP = 18.0     # y of the summit
@@ -91,19 +91,6 @@ def steepest_band(table):
     return max(real, key=lambda b: b["angle"]) if real else None
 
 
-def max_step_angle(points, elevations):
-    """The steepest sustained gradient on the line — `router.steepest_gradient`.
-
-    It used to measure between neighbouring vertices, which is the measurement
-    `generate_routes.py` stopped trusting: two vertices can be a metre apart, a
-    metre of DTM1 is noise, and the chord across a kick turn climbs without
-    covering ground, so a skin track reads as a cliff. A guide quoting a steeper
-    figure than the geometry it describes is the one number here nobody can
-    check in the field, so both must come out of the same function.
-    """
-    return steepest_gradient(points, elevations)
-
-
 def terrain_along(points, elevations, n=TERRAIN_SAMPLES):
     """Kartverket terrain class at n points along the line.
 
@@ -169,6 +156,7 @@ def main():
             zs = r["elevations"]
             table = bands(pts, zs)
             band = steepest_band(table)
+            ang, i0, i1 = steepest_span(pts, zs)
             samples = []
             if r["id"] == "normalruta":
                 samples = cached_samples(previous, slug, r["id"], zs) or terrain_along(pts, zs)
@@ -184,7 +172,11 @@ def main():
                     "gainM": r["gainM"],
                     "lossM": r["lossM"],
                     "distanceM": r["distanceM"],
-                    "maxAngle": round(max_step_angle(pts, zs), 1),
+                    "maxAngle": round(ang, 1),
+                    # Where that steepest window actually is. A guide is allowed
+                    # to name the two elevations, and naming them is better than
+                    # an angle floating free of the mountain.
+                    "steepestStep": {"fromM": zs[i0], "toM": zs[i1], "angle": round(ang, 1)},
                     "steepestBand": band,
                     "bands": table,
                     # Where the corridor research pinned the line: these are the
