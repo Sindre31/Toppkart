@@ -288,7 +288,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       "Start from the car park at Eidebakken on the edge of Lyngseidet, at 62 m, in the area by the plastics factory and the shooting range. Follow the forest road inland and up toward Hyttehaugen at 286 m, then on past Skihytta. The birch forest gives up at around 310 m, and from there you can see the rest of the tour ahead of you.",
       "Continue west toward Rørneshytta, staying on the south side of Gjerdelva throughout — a variant follows the ridge north of the river up to the flat at around 600 m when the snow cover allows, but the normal route keeps to the south bank. Whichever side you are on: do not go far down into the river valley toward Gjerdelva. The sides dropping into it break at 34–37 degrees where they read as flat from above, and the bottom is a terrain trap. The hut sits at 604 m, and that is where people stop.",
       "From the hut you drop a little before climbing again. You cross Gjerdelva at around 590 m, a dip of some fifteen metres; the tour gives back 38 metres in total on the way up. Then follow the east side of the flank upward to about 850 m and turn from there toward the summit.",
-      "Along the line on the map the steepest step is 27.3 degrees, and the hundred metres between 800 and 900 m average 23.5. The flank around you is steeper: between 800 and 920 m there are sections at 30–35 degrees, and measured 400 m out from the track at 910 m the east side runs 31 degrees on average and the north side 34. Take too direct a line for the top and those are what you are standing in. Higher up it flattens out onto the broad summit plateau at 1030.",
+      "Along the line on the map the steepest step is 27.3 degrees, and the hundred metres between 800 and 900 m average 21.4. The flank around you is steeper, and the average hides how much: measured 400 m out from the track at 907 m the east side runs 30 degrees on average and the north side 33, but the north side falls in steps of 41 to 58 degrees between 928 and 692 m, and the east side in steps of 44 to 48 below 794. Take too direct a line for the top and those are what you are standing in. Higher up it flattens out onto the broad summit plateau at 1030.",
     ],
     descent: [
       "Back down the same way. The summit plateau is roomy enough to put your turns where you like — as long as you stay on its south and east side. The north and northwest edges fall away at 40–47 degrees on average with steps of 50–57, and that is where the cornices build. The east flank down to 850 m is the longest continuous run on the normal route, 20–23 degrees along the track. Below that, hold the ascent track down to Rørneshytta and on east toward Skihytta and the forest road.",
@@ -298,7 +298,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
     avalanche: [
       {
         title: "The route",
-        body: "The ascent passes through runout zones from 800 m up. The track itself is easy-angled — the steepest step measures 27.3 degrees, and the 800–900 m band averages 21.4 — but the flank above and beside you holds 30–35 degrees between 800 and 920 m, measured at 31 degrees on average to the east and 34 to the north. That is what releases over you.",
+        body: "The ascent passes through runout zones from 800 m up. The track itself is easy-angled — the steepest step measures 27.3 degrees, and the 800–900 m band averages 21.4 — but the flank above and beside you measures 30 degrees on average to the east and 33 to the north from 907 m, with single steps of 44 to 58. That is what releases over you.",
       },
       {
         title: "The terrain off it",
@@ -700,12 +700,12 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
   },
   kolastinden: {
     intro:
-      "Sunnmøre's best-known ski summit. A gentle valley the whole way in, then a north-facing passage over 40°, a glacier — and a summit a metre and a half wide.",
+      "Sunnmøre's best-known ski summit. A gentle valley the whole way in, then a north-facing passage over 45°, a glacier — and a summit a metre and a half wide.",
     ascent: [
       "From the car park at Standaleidet, 376 m, you follow the cleared track north toward Fossane below Søre Sætretind. The forest lets go already at 410 m, and the waterfall marks the mouth of Kvanndalen.",
       "Follow the valley floor along the riverbed northward. The terrain is gentle: the steepest hundred-metre band, between 800 and 900 m, averages 17.6°. Do not turn west where the valley opens around 650 m — that gorge leads up into the glacier's outflow. Hold north to Appelsinhaugen at 950 m, the natural rest point halfway.",
       "From Appelsinhaugen you head west-southwest onto the flat in Kvanndalsskardet, just over 1020 m. From here up to Stretet it is steep: measured steps on the north-facing side pass 45°. Stretet sits at 1140 m, a narrow passage on the edge, and above it you see the summit.",
-      "Above Stretet you are on Kolåsbreen, glacier from 1173 to 1355 m. Follow the glacier edge under the crest southwest toward the top. Most people take the skis off around 1350 m and walk the final pitch, which measures 47°. The summit is 1432 m, one and a half to two metres wide and ten metres long, with a cornice to the east — stay in the middle — and a west side that drops 260 vertical metres in 160, with steps over 65°.",
+      "Above Stretet you are on Kolåsbreen, glacier from 1173 to 1355 m. Follow the glacier edge under the crest southwest toward the top. Most people take the skis off around 1350 m and walk the final pitch, which measures 47°. The summit is 1432 m, one and a half to two metres wide and ten metres long, with a cornice to the east — stay in the middle — and a west side that drops 260 vertical metres in 180, with twenty-metre steps up to 75°.",
     ],
     descent: [
       "Back down the same line you meet the two steep steps in reverse order: the summit pitch from 1432 to 1350, which measures 47°, and the north-facing side from Stretet down toward Kvanndalsskardet, where measured steps pass 45°. Take both on a traverse and with spacing between people. From Kvanndalsskardet down, the terrain stays under 30° the whole way out of Kvanndalen.",
@@ -1085,7 +1085,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
     intro:
       "1305 metres of climbing from Bessheim, and a good third of the tour is flat: three and a half kilometres lie on the ice of Bessvatnet. The climbing itself is gentle throughout, and what makes Besshø demanding is the length and a large, round summit plateau that does not show you where it ends.",
     ascent: [
-      "From the car park at Bessheim fjellstue at 961 m, follow the marked route west and up the 400-odd metres to the north-east end of Bessvatnet at 1374 m. This is the tour's first pitch and it holds 10–14 degrees — steady, but this is where you do the climbing before the flat. Fv51 over Valdresflye is closed in winter south of Maurvangen, but Bessheim lies north of the closure and is reached all winter via Sjoa, Heidal and Randsverk.",
+      "From the car park at Bessheim fjellstue at 961 m, follow the marked route west and up the 413 metres to the north-east end of Bessvatnet at 1374 m. This is the tour's first pitch and it holds 10–14 degrees — steady, but this is where you do the climbing before the flat. Fv51 over Valdresflye is closed in winter south of Maurvangen, but Bessheim lies north of the closure and is reached all winter via Sjoa, Heidal and Randsverk.",
       "Out on Bessvatnet the tour stops climbing. The lake sits at 1372 m, and the next three and a half kilometres west rise and fall no more than a couple of metres in total — in the elevation profile it is the long flat middle. The ice is the normal winter route here, but the line on the map is drawn on land at both ends. At the far end, at Grotåosen at 1385 m, the mountain starts again.",
       "From there the route runs due west up Grotådalen, between Bukkehøe to the north and Besshø's east ridge to the south, climbing steadily to about 1745 m. The steepest hundred-metre band on the whole tour lies between 1900 and 2000 m and averages 17.0 degrees; the steepest sustained section on the line is 23.2 degrees. Then south-west onto the ridge at Brue at 2047 m, and west-south-west along the gentle ridge for the last 210 metres. Do not climb Besshøbrean to Brue, which is one way to read the lodge's own description: the transition from the glacier onto the ridge rises from 2004 to 2050 m over 26 metres of ground, roughly 60 degrees.",
       "The summit is a large plateau at 2257 m. A bearing of 75 degrees from the cairn — the east ridge you came up — holds 17.8 degrees. Bearings of 60 and 90 degrees feel just as gentle for five hundred to eight hundred metres — and then break over at 55 to 60 degrees. That is the whole problem of the tour: fifteen degrees of wrong bearing is unnoticeable underfoot until it is too late.",
@@ -1518,7 +1518,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       },
       {
         title: "The terrain off it",
-        body: "Three places lie off the route and should stay that way. The east side of the summit tower with its seven gullies, where avalanches have killed. The north-east flank directly below the cairn, 35° on average over four hundred metres and 46° at its steepest — that is the fall line towards Svineroisetra, and it is what you land in if you drop straight off the plateau. And the north-west side towards Rjukan: gentle at the top, 14° for the first four hundred metres, but it runs 1,350 vertical metres down into the valley and steepens past 50° low down. The gentleness up top is the trap.",
+        body: "Three places lie off the route and should stay that way. The east side of the summit tower with its seven gullies, where avalanches have killed. The north-east flank directly below the cairn, 35° on average over four hundred metres and 46° at its steepest — that is the fall line towards Svineroisetra, and it is what you land in if you drop straight off the plateau. And the north-west side towards Rjukan: gentle at the top, 14° for the first four hundred metres, but it runs close to 1,600 vertical metres down into the valley — 1,878 to 284 m over 3.6 km — and steepens past 50° on the way. The gentleness up top is the trap.",
       },
       {
         title: "Before you go",
@@ -1529,7 +1529,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       startLabel: "922 m",
       endLabel: "1883 m",
       distanceLabel: "4.4 km",
-      caption: "922 to 1,879 m over 4.42 km. The steepest hundred metres measures 15.8°, and nothing on the line passes 25°.",
+      caption: "922 to 1,882 m over 4.42 km. The steepest hundred metres measures 15.8°, and nothing on the line passes 25°.",
     },
   },
 };

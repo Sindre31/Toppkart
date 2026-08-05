@@ -109,7 +109,7 @@ Then the written guides, which depend on the finished geometry:
 python3 routes_from_ts.py     # lib/routes.ts       -> routes.json  (skips re-routing)
 python3 sync_tourmeta.py      # lib/tours.ts        -> tourmeta.json (after hand edits)
 python3 guide_facts.py        # routes.json + DTM1  -> guide_facts.json
-python3 enrich_facts.py       # folds the corridor research and audit back in
+python3 enrich_facts.py       # folds the research, audit and measurements back in
 python3 guide_brief.py <slug> # the writing brief one agent gets for one tour
 
 TOPPKART_WF=<transcripts> python3 harvest_guides.py  # -> guides.json
@@ -210,6 +210,11 @@ through an adversarial second reader — one per tour, all fifteen found somethi
 
 `new_tourmeta.json` accumulates: each later pass appends what it measured, and
 `check_guides.py` treats those notes as the source for the figures in the prose.
+`measurements.json` is the same thing for **any** tour, and it exists because the
+first round's research lives in agent transcripts: a flank measured after the
+guide was written had nowhere to be recorded, so twelve numbers sat in the check
+as unsourced for as long as they did. One record per figure, and `how` has to say
+enough that the next reader can repeat the measurement.
 `merge_corridors.py` therefore keeps the corrections already recorded and adds
 only what is new, and leaves a teaser alone once it has been rewritten against
 the routed gain. Replacing either wholesale on a re-run silently unsources every
