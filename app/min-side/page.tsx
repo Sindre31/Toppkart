@@ -17,7 +17,14 @@ import { SubscriptionActions } from "./SubscriptionActions";
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = accountDict(await getLang());
-  return { title: t.accountMetaTitle, description: t.accountMetaDescription };
+  /* Kontoside: ingenting å søke opp, og den redirecter uansett en utlogget
+     leser videre. `follow` står på, så lenkene herfra (kartet, vilkårene)
+     fortsatt teller. */
+  return {
+    title: t.accountMetaTitle,
+    description: t.accountMetaDescription,
+    robots: { index: false, follow: true },
+  };
 }
 
 const MUTED_70 = "color-mix(in srgb, var(--color-text) 70%, transparent)";

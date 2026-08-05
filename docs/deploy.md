@@ -280,6 +280,52 @@ conflict; a domain can send through Resend and receive through someone else.
 
 ---
 
+## 3c. Google Search Console
+
+The app serves everything a crawler needs on its own — you do not configure any of this in
+Vercel, and there is no verification key to paste into the code.
+
+- `app/robots.ts` → `/robots.txt`. In production it opens the site and points at the sitemap.
+  **Everywhere else it answers `Disallow: /`**, and every page additionally renders
+  `noindex, nofollow`. A preview deploy is the whole site, same text, on its own domain; indexed,
+  it competes with `toppkart.no` for the same searches. The switch is `VERCEL_ENV === "production"`
+  in `lib/seo.ts`.
+- `app/sitemap.ts` → `/sitemap.xml`. The front page, the map, the 39 tour guides and the two legal
+  pages — 43 URLs, built from `TOURS`, so a new tour is in the sitemap the moment it is in the
+  data. Account and checkout pages are not listed, and say `noindex` in their own metadata.
+- Canonical URLs and Open Graph tags come from `metadataBase` in `app/layout.tsx` plus an
+  `alternates.canonical` on each public page. `/kart?tur=…&rute=…` canonicalises to `/kart`: the
+  parameters are navigation, and the tour's own page at `/tur/<slug>` is what should rank on the
+  peak's name.
+
+Both files build their addresses from `NEXT_PUBLIC_SITE_URL`, falling back to `SITE.url`
+(`https://toppkart.no`) — deliberately **not** `env.siteUrl`, which falls back to the per-deploy
+`$VERCEL_URL`. A sitemap full of hostnames that expire at the next push is worse than no sitemap.
+
+**Verifying the property.** The domain is normally verified with a DNS TXT record at the
+registrar — a domain property covers `www`, apex and every subdomain at once, which is what you
+want. Vercel's Search Console integration and the HTML-tag method both work too; none of them
+need a code change.
+
+Once verified:
+
+1. **Sitemaps → Add a new sitemap →** `sitemap.xml`. Search Console reports "Success" and a
+   discovered-URL count within a day or so; 43 is the number to expect today.
+2. **URL Inspection** on `https://toppkart.no/` and one guide, e.g. `/tur/slogen` → **Test live
+   URL**. Confirm it says crawling is allowed, indexing is allowed, and that the rendered HTML
+   holds the guide's intro text. Then **Request indexing** for both — it seeds the crawl instead
+   of waiting for it.
+3. Expect **Pages** and **Performance** to stay empty for a few days to a couple of weeks. That is
+   normal; nothing is wrong until a URL shows up under a specific exclusion reason.
+
+Two exclusions are expected rather than faults. Guides are half-gated — intro, map, key figures
+and elevation profile are open, the route description and avalanche notes are not — so a guide
+page is genuinely indexable, but thin compared to what a subscriber sees. And `/logg-inn`,
+`/betaling`, `/min-side` and `/admin/*` will report "Excluded by 'noindex' tag", which is the
+intended outcome, not a problem to fix.
+
+---
+
 ## 4. Verify
 
 Walk the real flow on the deployed site, not just the local one:
@@ -310,6 +356,11 @@ Walk the real flow on the deployed site, not just the local one:
       period ends.
 - [ ] Query the gated `tk_tours` columns with the anon key while signed out and confirm RLS returns
       nothing. The server-side gate and RLS should both hold on their own.
+- [ ] `https://toppkart.no/robots.txt` allows crawling and names the sitemap;
+      `https://toppkart.no/sitemap.xml` lists 43 URLs on the production domain — not on a
+      `*.vercel.app` host. The same two files on a preview deploy say `Disallow: /`.
+- [ ] View source on `/` and on one guide: `<link rel="canonical">` points at the production
+      domain, and `/kart?tur=slogen` canonicalises to `/kart`.
 
 ---
 

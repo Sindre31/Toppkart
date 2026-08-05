@@ -6,7 +6,11 @@ import { legalDict } from "@/lib/i18n/legal";
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = legalDict(await getLang()).privacy;
-  return { title: t.metaTitle, description: t.metaDescription };
+  return {
+    title: t.metaTitle,
+    description: t.metaDescription,
+    alternates: { canonical: "/personvern" },
+  };
 }
 
 export default async function PersonvernPage() {

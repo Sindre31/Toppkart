@@ -17,6 +17,11 @@ export const TRIAL_DAYS = 14;
 export const SITE = {
   name: "Toppkart",
   tagline: "Alle toppturene. Ett kart.",
+  /** Domenet siden er indeksert under. Som `supportEmail` en offentlig
+   *  kjensgjerning om nettstedet, ikke en hemmelighet — og fallbacken når
+   *  `NEXT_PUBLIC_SITE_URL` ikke er satt. Se `lib/seo.ts` for hvorfor sitemap
+   *  og canonical ikke kan bruke per-deploy-verten `env.siteUrl` faller ned på. */
+  url: "https://toppkart.no",
   /** Receive-only support mailbox. Outgoing mail leaves from a no-reply
    *  address, so this is what `Reply-To` points at and what the footer links
    *  to — it never has to send anything, only take delivery.

@@ -6,7 +6,7 @@ import { legalDict } from "@/lib/i18n/legal";
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = legalDict(await getLang()).terms;
-  return { title: t.metaTitle, description: t.metaDescription };
+  return { title: t.metaTitle, description: t.metaDescription, alternates: { canonical: "/vilkar" } };
 }
 
 export default async function VilkarPage() {
