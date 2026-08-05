@@ -170,8 +170,15 @@ create table if not exists public.tk_feedback (
   message    text not null,
   path       text,
   lang       text,
+  -- Null means unhandled. A timestamp rather than a boolean: «behandlet» and
+  -- «behandlet den 5. august» cost the same to store, and only one of them can
+  -- answer «how long did that sit there».
+  handled_at timestamptz,
   created_at timestamptz not null default now()
 );
+
+-- Re-run safety.
+alter table public.tk_feedback add column if not exists handled_at timestamptz;
 
 comment on table public.tk_feedback is
   'Messages from the «Gi tilbakemelding» button. Written only by the service role (app/api/tilbakemelding); nobody reads it through the API — query it in the SQL editor.';
@@ -191,6 +198,7 @@ create index if not exists tk_subscriptions_stripe_subscription_id_idx
 
 create index if not exists tk_invoices_user_id_idx on public.tk_invoices (user_id);
 create index if not exists tk_feedback_created_at_idx on public.tk_feedback (created_at desc);
+create index if not exists tk_feedback_handled_at_idx on public.tk_feedback (handled_at);
 create index if not exists tk_profiles_email_idx   on public.tk_profiles (lower(email));
 
 -- ============================================================================

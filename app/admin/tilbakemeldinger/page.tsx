@@ -9,6 +9,8 @@ import { getLang } from "@/lib/i18n/server";
 import { commonDict } from "@/lib/i18n/common";
 import { getSupabaseAdminClient } from "@/lib/supabase/server";
 
+import { setHandled } from "./actions";
+
 /** `/admin/tilbakemeldinger` — the messages from the feedback button.
  *
  *  Norwegian only, deliberately, and the one page in the app that breaks the
@@ -38,10 +40,68 @@ interface FeedbackRow {
   message: string;
   path: string | null;
   lang: string | null;
+  handled_at: string | null;
 }
 
 const MUTED = "color-mix(in srgb, var(--color-text) 60%, transparent)";
 const HAIRLINE = "1px solid color-mix(in srgb, var(--color-text) 8%, transparent)";
+
+function Message({ row }: { row: FeedbackRow }) {
+  const handled = Boolean(row.handled_at);
+  return (
+    <Blueprint style={{ padding: "18px 22px", opacity: handled ? 0.72 : 1 }}>
+      <div
+        style={{
+          display: "flex",
+          gap: 12,
+          flexWrap: "wrap",
+          alignItems: "baseline",
+          paddingBottom: 12,
+          borderBottom: HAIRLINE,
+        }}
+      >
+        <span style={{ fontSize: 13, fontWeight: 600 }}>{row.email ?? "Ikke innlogget"}</span>
+        <span style={{ fontSize: 12, color: MUTED, marginLeft: "auto" }}>
+          {formatDateTime(row.created_at, "no")}
+        </span>
+      </div>
+
+      {/* `pre-wrap` because people press Enter, and a feedback note collapsed
+          into one paragraph loses the shape they gave it. */}
+      <p className="prose" style={{ margin: "12px 0 0", whiteSpace: "pre-wrap", maxWidth: "72ch" }}>
+        {row.message}
+      </p>
+
+      <div
+        style={{
+          display: "flex",
+          gap: 12,
+          flexWrap: "wrap",
+          alignItems: "center",
+          marginTop: 14,
+        }}
+      >
+        <span className="note-sm" style={{ margin: 0 }}>
+          {row.path ? `Skrevet fra ${row.path}` : null}
+          {row.path && row.lang ? " · " : null}
+          {row.lang ? row.lang.toUpperCase() : null}
+          {handled ? `${row.path || row.lang ? " · " : ""}Behandlet ${formatDateTime(row.handled_at!, "no")}` : null}
+        </span>
+
+        {/* A plain form, so the buttons work with JavaScript off. The desired
+            state travels in the payload rather than being inferred from the
+            row, so two open tabs cannot flip each other's change. */}
+        <form action={setHandled} style={{ margin: "0 0 0 auto" }}>
+          <input type="hidden" name="id" value={row.id} />
+          <input type="hidden" name="handled" value={handled ? "0" : "1"} />
+          <button type="submit" className={`btn ${handled ? "btn-secondary" : "btn-primary"}`}>
+            {handled ? "Merk som ubehandlet" : "Merk som behandlet"}
+          </button>
+        </form>
+      </div>
+    </Blueprint>
+  );
+}
 
 export default async function TilbakemeldingerPage() {
   await requireAdmin();
@@ -58,7 +118,7 @@ export default async function TilbakemeldingerPage() {
   } else {
     const { data, error } = await admin
       .from("tk_feedback")
-      .select("id, created_at, email, message, path, lang")
+      .select("id, created_at, email, message, path, lang, handled_at")
       .order("created_at", { ascending: false })
       .limit(MAX_ROWS);
     if (error) {
@@ -68,6 +128,12 @@ export default async function TilbakemeldingerPage() {
       rows = (data ?? []) as FeedbackRow[];
     }
   }
+
+  /* Partitioned here rather than in SQL. «Unhandled first, then newest first»
+     is two sort keys the query builder cannot express in one `order`, and at
+     200 rows the split costs nothing. */
+  const unhandled = rows.filter((row) => !row.handled_at);
+  const handled = rows.filter((row) => row.handled_at);
 
   return (
     <div className="shell">
@@ -97,16 +163,17 @@ export default async function TilbakemeldingerPage() {
               ? "Klarte ikke å lese tabellen."
               : rows.length === 0
                 ? "Ingen tilbakemeldinger ennå."
-                : rows.length === MAX_ROWS
-                  ? `Viser de ${MAX_ROWS} nyeste. Det finnes flere — hent resten i SQL-editoren.`
-                  : `${rows.length} ${rows.length === 1 ? "melding" : "meldinger"}, nyeste først.`}
+                : `${unhandled.length} ubehandlet, ${handled.length} behandlet.${
+                    rows.length === MAX_ROWS
+                      ? ` Viser de ${MAX_ROWS} nyeste — det finnes flere.`
+                      : ""
+                  }`}
           </p>
         </header>
 
-        <section style={{ marginTop: 32 }}>
-          <SectionKicker>01 · Innboks</SectionKicker>
-
-          {failed ? (
+        {failed ? (
+          <section style={{ marginTop: 32 }}>
+            <SectionKicker>01 · Innboks</SectionKicker>
             <Blueprint style={{ padding: "24px 28px" }}>
               <p className="prose" style={{ margin: 0 }}>
                 Tabellen svarte ikke. Vanligste årsak er at{" "}
@@ -114,56 +181,48 @@ export default async function TilbakemeldingerPage() {
                 lese <code>tk_feedback</code>, som med vilje er utilgjengelig for alle andre roller.
               </p>
             </Blueprint>
-          ) : rows.length === 0 ? (
+          </section>
+        ) : rows.length === 0 ? (
+          <section style={{ marginTop: 32 }}>
+            <SectionKicker>01 · Innboks</SectionKicker>
             <Blueprint style={{ padding: "24px 28px" }}>
               <p className="prose" style={{ margin: 0 }}>
                 Ingenting har kommet inn. Knappen står nederst til høyre på alle sider unntatt
                 kartet.
               </p>
             </Blueprint>
-          ) : (
-            <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
-              {rows.map((row) => (
-                <Blueprint key={row.id} style={{ padding: "18px 22px" }}>
-                  <div
-                    style={{
-                      display: "flex",
-                      gap: 12,
-                      flexWrap: "wrap",
-                      alignItems: "baseline",
-                      paddingBottom: 12,
-                      borderBottom: HAIRLINE,
-                    }}
-                  >
-                    <span style={{ fontSize: 13, fontWeight: 600 }}>
-                      {row.email ?? "Ikke innlogget"}
-                    </span>
-                    <span style={{ fontSize: 12, color: MUTED, marginLeft: "auto" }}>
-                      {formatDateTime(row.created_at, "no")}
-                    </span>
-                  </div>
-
-                  {/* `pre-wrap` because people press Enter, and a feedback note
-                      collapsed into one paragraph loses the shape they gave it. */}
-                  <p
-                    className="prose"
-                    style={{ margin: "12px 0 0", whiteSpace: "pre-wrap", maxWidth: "72ch" }}
-                  >
-                    {row.message}
+          </section>
+        ) : (
+          <>
+            <section style={{ marginTop: 32 }}>
+              <SectionKicker>01 · Ubehandlet ({unhandled.length})</SectionKicker>
+              {unhandled.length === 0 ? (
+                <Blueprint style={{ padding: "24px 28px" }}>
+                  <p className="prose" style={{ margin: 0 }}>
+                    Alt er behandlet.
                   </p>
-
-                  {(row.path || row.lang) && (
-                    <p className="note-sm" style={{ margin: "12px 0 0" }}>
-                      {row.path ? `Skrevet fra ${row.path}` : null}
-                      {row.path && row.lang ? " · " : null}
-                      {row.lang ? row.lang.toUpperCase() : null}
-                    </p>
-                  )}
                 </Blueprint>
-              ))}
-            </div>
-          )}
-        </section>
+              ) : (
+                <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
+                  {unhandled.map((row) => (
+                    <Message key={row.id} row={row} />
+                  ))}
+                </div>
+              )}
+            </section>
+
+            {handled.length > 0 && (
+              <section style={{ marginTop: 44 }}>
+                <SectionKicker>02 · Behandlet ({handled.length})</SectionKicker>
+                <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
+                  {handled.map((row) => (
+                    <Message key={row.id} row={row} />
+                  ))}
+                </div>
+              </section>
+            )}
+          </>
+        )}
       </main>
 
       <SiteFooter lang={lang} />

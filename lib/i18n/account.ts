@@ -97,6 +97,9 @@ export interface AccountDict {
   /* — account: the e-mail card, read-only — */
   emailCardTitle: string;
   emailCardNote: string;
+  signOutCardTitle: string;
+  signOutCardNote: string;
+  signOutCardAction: string;
   /* — account: footer — */
   aboutSubscription: string;
 }
@@ -176,6 +179,10 @@ const ACCOUNT: Translated<AccountDict> = {
     emailCardTitle: "E-post",
     emailCardNote:
       "Adressen kommer fra Google-kontoen du logger inn med, og kan ikke endres her. Endrer du den hos Google, følger den etter.",
+    signOutCardTitle: "Logg ut",
+    signOutCardNote:
+      "Logger deg ut på denne enheten. Abonnementet løper som før, og du kommer inn igjen med Google når du vil.",
+    signOutCardAction: "Logg ut",
     aboutSubscription: "Om abonnementet",
   },
   en: {
@@ -252,6 +259,10 @@ const ACCOUNT: Translated<AccountDict> = {
     emailCardTitle: "Email",
     emailCardNote:
       "This address comes from the Google account you sign in with, and cannot be changed here. Change it at Google and it follows.",
+    signOutCardTitle: "Log out",
+    signOutCardNote:
+      "Signs you out on this device. The subscription carries on as before, and Google lets you back in whenever you like.",
+    signOutCardAction: "Log out",
     aboutSubscription: "About the subscription",
   },
 };
