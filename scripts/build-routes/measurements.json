@@ -1,0 +1,53 @@
+{
+ "_README": [
+  "Terrain measurements made against Kartverket for figures a guide states that the",
+  "routed line cannot supply — a flank beside the track, a face below a summit, the",
+  "drop from a top to a valley floor. `enrich_facts.py` folds these into the tour's",
+  "auditFindings, which is what `check_guides.py` reads when deciding whether a",
+  "number in the prose is sourced.",
+  "",
+  "The fifteen tours of the second round record theirs in new_tourmeta.json, next to",
+  "the corridor research they were audited with. The twenty-four of the first round",
+  "had nowhere to put one: their research lives in agent transcripts, and a figure",
+  "measured afterwards could not be written down at all. That is why twelve numbers",
+  "sat unsourced in the check for as long as they did.",
+  "",
+  "One record per figure. `how` has to say enough that the next reader can repeat",
+  "the measurement and get the same answer."
+ ],
+ "besshoe": [
+  {
+   "what": "Første kneik, Bessheim til nordaustenden av Bessvatnet",
+   "figure": "416 høgdemeter kumulativt, 413 netto",
+   "how": "Summert langs den rutede linja i routes.json frå vertex 0 (961 moh) til vertex 69 (1374 moh), 2,57 km ut. Vegpunktet 'Nordøstenden av Bessvatnet' i corridors.json ligg på 1374,21 moh."
+  }
+ ],
+ "gaustatoppen": [
+  {
+   "what": "Nordvestsida frå toppen ned mot Rjukan",
+   "figure": "1593 høgdemeter til dalbotnen, 14 grader dei første 400 metrane, 52 grader brattast",
+   "how": "Radial frå 59,85420/8,64928 på peiling 315, 100-meterssteg til 4,1 km ut (DTM1-flis 9 km). 1877,8 moh på toppen, 1779,8 ved 400 m ut (13,8 grader), flatar ut på 284,5 moh 3,6 km ute. Brattaste hundremeterssteg 52,6 grader mellom 2400 og 2500 m ut; flank_probe gjev 57,6 grader i det brattaste 60-metersvindauget."
+  }
+ ],
+ "kolastinden": [
+  {
+   "what": "Vestsida rett under toppen",
+   "figure": "260 høgdemeter på 180 meter grunn, tjuemeterssteg opp mot 75 grader",
+   "how": "Radialar frå 62,25886/6,31102 på peiling 260, 270 og 280, 20-meterssteg. 260 høgdemeter er borte etter 180 m (260 grader), 200 m (280 grader) og 220 m (270 grader). Brattaste tjuemeterssteg 74, 75 og 71 grader."
+  }
+ ],
+ "rornestinden": [
+  {
+   "what": "Flanken 400 meter ut frå sporet ved 907 moh",
+   "figure": "Aust 30 grader i snitt, nord 33 — men einskildsteg på 44 til 58",
+   "how": "Radialar frå linja sitt punkt på 907 moh (69,57270/20,11935), 25-meterssteg ut til 400 m. Nord: 905 til 650 moh, snitt 32,5 grader, med steg på 47, 41, 58, 53 og 50 grader mellom 928 og 692 moh. Aust: 905 til 674 moh, snitt 30 grader, med steg på 48, 44, 46 og 47 grader under 794 moh."
+  }
+ ],
+ "snohetta": [
+  {
+   "what": "Nordsida rett under Stortoppen",
+   "figure": "31 til 32 grader i snitt dei første 500 metrane, steg over 50",
+   "how": "Radialar frå 62,31992/9,26747 på peiling 345, 0 og 15, 25-meterssteg ut til 500 m. 2287 moh til 1977–1987 moh, snitt 31 til 32 grader; brattaste tjuefemmeterssteg 55, 53 og 50 grader, og to av stega på rein nordpeiling ligg over 50."
+  }
+ ]
+}

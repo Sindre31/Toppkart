@@ -50,6 +50,18 @@ for slug, m in json.load(open("new_tourmeta.json")).items():
     if extra:
         findings.setdefault(slug, []).extend(extra)
 
+# Terrain measured after the fact, for any tour. The first round's research lives
+# in transcripts, so a figure measured later — a flank beside the track, a face
+# below a summit — had nowhere to be written down, and twelve of them sat in the
+# check as unsourced numbers because of it.
+for slug, records in json.load(open("measurements.json")).items():
+    if slug.startswith("_"):
+        continue
+    for m in records:
+        findings.setdefault(slug, []).append(
+            f"Målt: {m['what']} — {m['figure']}. {m['how']}"
+        )
+
 # teasers straight out of the shipped source
 teasers = {}
 src = open("/home/user/Toppkart/lib/tours.ts").read()
