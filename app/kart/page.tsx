@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { NavLinks } from "@/components/SiteChrome";
 import { getViewer } from "@/lib/access";
 import { getLang } from "@/lib/i18n/server";
 import { mapDict } from "@/lib/i18n/map";
@@ -40,7 +41,7 @@ export default async function KartPage({
     <MapView
       lang={lang}
       hasAccess={viewer.hasAccess}
-      signedIn={Boolean(viewer.userId)}
+      nav={<NavLinks lang={lang} current="/kart" />}
       initialSlug={initialSlug}
       initialRouteId={initialRouteId}
     />

@@ -24,7 +24,7 @@ function first(value: string | string[] | undefined): string {
 
 /** `?next=` is attacker-controlled: only same-origin relative paths pass. */
 function safeNext(value: string): string {
-  if (!value.startsWith("/") || value.startsWith("//") || value.startsWith("/\\")) return "/kart";
+  if (!value.startsWith("/") || value.startsWith("//") || value.startsWith("/\\")) return "/min-side";
   return value;
 }
 
