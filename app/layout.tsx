@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Barlow, Barlow_Condensed } from "next/font/google";
 import Script from "next/script";
 import { Analytics } from "@vercel/analytics/next";
@@ -71,6 +71,25 @@ export async function generateMetadata(): Promise<Metadata> {
     ...(isIndexable ? {} : { robots: { index: false, follow: false } }),
   };
 }
+
+/** Låser sida til skjermbredden: ingen knip-zoom, alltid den bredden layouten
+ *  er tegnet for.
+ *
+ *  `width`/`initialScale` er de samme Next satte selv før denne eksporten
+ *  fantes; det nye er `maximumScale` og `userScalable`.
+ *
+ *  To ting å vite om dem. iOS Safari har ignorert begge siden iOS 10 — Apple
+ *  overstyrer dem med vilje, så på iPhone er de uten virkning, og det er
+ *  16px-regelen på `.input` i globals.css som gjør at sida faktisk blir
+ *  stående i riktig bredde der. Og de bryter WCAG 1.4.4, som krever at tekst
+ *  kan forstørres til 200 %; på Android, der de virker, mister lesere med
+ *  svakt syn den muligheten. Fjern de to linjene for å få den tilbake. */
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+};
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   const lang = await getLang();
