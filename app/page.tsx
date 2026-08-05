@@ -31,34 +31,36 @@ export default async function LandingPage() {
       <div className="page">
         <main>
           {/* — hero — */}
-          <section style={{ padding: "96px 0 72px" }}>
-            <h1 className="display display-hero">
-              <span style={{ display: "block" }}>{t.heroLine1}</span>
-              <span style={{ display: "block" }}>{t.heroLine2}</span>
-            </h1>
-            <p className="lede" style={{ margin: "32px 0 0" }}>
-              {t.lede}
-            </p>
-            <div style={{ display: "flex", gap: 10, flexWrap: "wrap", alignItems: "center", marginTop: 28 }}>
-              <Link className="btn btn-primary" href="/betaling">
-                {t.ctaTrial}
-              </Link>
-              <Link className="btn btn-secondary" href="/kart">
-                {t.ctaMap}
-              </Link>
-              <span style={{ fontSize: 13, color: muted(60) }}>{t.priceNote}</span>
+          <section className={styles.hero}>
+            {/* Dekor: teksten over sier det bildet viser, så en alt-tekst her
+                ville lest opp det samme en gang til. */}
+            <Image
+              src="/assets/hero-relief.webp"
+              alt=""
+              aria-hidden
+              fill
+              priority
+              sizes="(max-width: 1160px) 100vw, 1160px"
+              className={styles.heroImage}
+            />
+            <div className={styles.heroContent}>
+              <h1 className="display display-hero">
+                <span style={{ display: "block" }}>{t.heroLine1}</span>
+                <span style={{ display: "block" }}>{t.heroLine2}</span>
+              </h1>
+              <p className="lede" style={{ margin: "32px 0 0" }}>
+                {t.lede}
+              </p>
+              <div style={{ display: "flex", gap: 10, flexWrap: "wrap", alignItems: "center", marginTop: 28 }}>
+                <Link className="btn btn-primary" href="/betaling">
+                  {t.ctaTrial}
+                </Link>
+                <Link className="btn btn-secondary" href="/kart">
+                  {t.ctaMap}
+                </Link>
+                <span style={{ fontSize: 13, color: muted(60) }}>{t.priceNote}</span>
+              </div>
             </div>
-            <Blueprint as="figure" style={{ margin: "48px 0 0" }}>
-              <Image
-                src="/assets/hero-relief.png"
-                alt={t.heroImageAlt}
-                width={1536}
-                height={1024}
-                priority
-                sizes="(max-width: 1160px) 100vw, 1160px"
-                style={{ width: "100%", height: "auto", aspectRatio: "3 / 2", objectFit: "cover" }}
-              />
-            </Blueprint>
           </section>
 
           {/* — nøkkeldata — */}

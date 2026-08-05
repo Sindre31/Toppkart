@@ -1,3 +1,76 @@
+/* Hero: reliefkartet ligger bak teksten, ikke under den.
+   Bildet er absolutt plassert og teller derfor ikke i flyten — seksjonen er
+   nøyaktig like høy som da den bare holdt tekst, og siden like lang som før.
+   Paddingen er den samme 96/72 den alltid har hatt.
+
+   Negativ inline-margin på nøyaktig `.page`-paddingen, og så den samme
+   paddingen tilbake innvendig: bakteppet når ut til containerkanten mens
+   teksten står på samme sted som før. `100vw` ville nådd lenger, men teller
+   rullefeltet som bredde og har dratt denne siden ut i horisontal scroll før. */
+.hero {
+  position: relative;
+  padding: 96px clamp(20px, 5vw, 64px) 72px;
+  margin-inline: calc(-1 * clamp(20px, 5vw, 64px));
+}
+
+.heroImage {
+  object-fit: cover;
+  /* Toppen sitter ~65 % inn i bildet. Litt til høyre for midten holder den i
+     ramma på brede skjermer uten å skyve dalbunnen — den lyse flata teksten
+     står på — ut av utsnittet.
+
+     Loddrett: 38, ikke 50. Jo bredere seksjonen blir, jo mer skaleres bildet
+     opp og jo mer faller bort over og under. På 1440 er det 226 piksler, og
+     sentrert kutter de «1478 MOH» tvers over — halv tekst leser som en feil,
+     ikke som et utsnitt. 38 % legger snittet over etiketten på alle bredder. */
+  object-position: 60% 38%;
+  z-index: 0;
+}
+
+/* Sløret som holder teksten lesbar. Toner fra sidefargen i venstre kant, der
+   overskriften står, og ut til rent bilde der fjellet er. Fargen er
+   `--color-bg`, som bildets egen bakgrunn allerede ligger tett opptil, så
+   overgangen mot resten av siden ikke har noen kant. */
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background: linear-gradient(
+    100deg,
+    var(--color-bg) 0%,
+    color-mix(in srgb, var(--color-bg) 88%, transparent) 34%,
+    color-mix(in srgb, var(--color-bg) 45%, transparent) 58%,
+    color-mix(in srgb, var(--color-bg) 12%, transparent) 78%,
+    transparent 100%
+  );
+}
+
+.heroContent {
+  position: relative;
+  z-index: 2;
+}
+
+/* Smalt: utsnittet blir en loddrett stripe, og teksten dekker det meste av
+   den. Sløret legges ovenfra i stedet for fra siden, og tettere — her er det
+   ingen tom flate å sette overskriften på. */
+@media (max-width: 760px) {
+  .heroImage {
+    object-position: 68% 42%;
+  }
+
+  .hero::after {
+    background: linear-gradient(
+      180deg,
+      var(--color-bg) 0%,
+      color-mix(in srgb, var(--color-bg) 88%, transparent) 45%,
+      color-mix(in srgb, var(--color-bg) 66%, transparent) 78%,
+      color-mix(in srgb, var(--color-bg) 55%, transparent) 100%
+    );
+  }
+}
+
 /* Landing-only layout: the 5fr/7fr text + figure split in «03 · Trygghet
    først». The shared .grid-split in globals.css is 6fr/6fr, so this ratio
    lives here — as a module, so the narrow-screen collapse still wins (an
