@@ -16,9 +16,8 @@ import { Check, Lock, Unlock } from "lucide-react";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { NavMenu } from "@/components/NavMenu";
 import { GRADE_COLORS } from "@/lib/config";
-import { REGIONS, TOURS, routesFor } from "@/lib/tours";
+import type { RouteMeta } from "@/lib/tours";
 import type { Lang } from "@/lib/i18n";
-import { localizeTours } from "@/lib/i18n/content";
 import { commonDict } from "@/lib/i18n/common";
 import { mapDict, type Dict } from "@/lib/i18n/map";
 import type { Grade, Tour } from "@/lib/types";
@@ -69,11 +68,29 @@ export default function MapView({
   lang,
   hasAccess,
   nav,
+  tours,
+  regions,
+  routeMeta,
   initialSlug,
   initialRouteId,
 }: {
   lang: Lang;
   hasAccess: boolean;
+  /** Turene, ferdig oversatt av serveren.
+   *
+   *  De ble tidligere hentet fra `lib/tours` og kjørt gjennom `localizeTours`
+   *  her. Begge modulene er store — den engelske overlay-en drar med seg all
+   *  guideprosa — og de havnet i bunten som må lastes og kjøres før sida
+   *  reagerer på et trykk. Oversettelsen er ren funksjon av språket, og språket
+   *  er allerede kjent på serveren, så den hører hjemme der. Språkbyttet gjør
+   *  `router.refresh()` og ikke en navigasjon, så disse kommer oversatt tilbake
+   *  uten at Leaflet rives ned. */
+  tours: Tour[];
+  /** Regionene i filteret, i redaksjonell rekkefølge. */
+  regions: string[];
+  /** Rutene per tur uten geometrien — det rutevelgeren viser. Punktene tegnes av
+   *  `MapCanvas`, som laster dem i sin egen bunt. */
+  routeMeta: Record<string, RouteMeta[]>;
   /** Menylenkene, rendret på serveren av `NavLinks` og sendt inn ferdige.
    *
    *  Topbaren her er den eneste navigasjonen på nettstedet som ikke er
@@ -108,11 +125,6 @@ export default function MapView({
      ord som på de andre sidene. */
   const c = commonDict(lang);
 
-  /* Teaser, aspect, season and duration come out translated; peak and region
-     names are proper nouns and stay Norwegian, so search and the region filter
-     keep matching what the map shows. */
-  const tours = useMemo(() => localizeTours(TOURS, lang), [lang]);
-
   /* The prototype sets `body { overflow: hidden }` globally; scope it to this
      route so the other pages keep scrolling normally. */
   useEffect(() => {
@@ -142,7 +154,10 @@ export default function MapView({
     [tours, selectedSlug],
   );
 
-  const routes = useMemo(() => (selected ? routesFor(selected) : []), [selected]);
+  const routes = useMemo(
+    () => (selected ? (routeMeta[selected.slug] ?? []) : []),
+    [routeMeta, selected],
+  );
   const activeRouteId = useMemo(() => {
     if (!routes.length) return null;
     return routes.some((r) => r.id === selectedRouteId) ? selectedRouteId : routes[0].id;
@@ -240,7 +255,7 @@ export default function MapView({
               onChange={(e) => setRegion(e.target.value)}
             >
               <option value="">{t.allRegions}</option>
-              {REGIONS.map((r) => (
+              {regions.map((r) => (
                 <option key={r} value={r}>
                   {r}
                 </option>

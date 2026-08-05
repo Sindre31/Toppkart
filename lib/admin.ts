@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 
-import { getViewer } from "@/lib/access";
+import { getIdentity } from "@/lib/access";
 import { env } from "@/lib/config";
 
 /** Who may open `/admin/*`.
@@ -38,7 +38,7 @@ export function isAdminEmail(email: string | null | undefined): boolean {
  *  one is behind nothing but a session.
  */
 export async function requireAdmin(): Promise<string> {
-  const { email } = await getViewer();
+  const { email } = await getIdentity();
   if (!isAdminEmail(email)) notFound();
   return email!;
 }
@@ -50,6 +50,6 @@ export async function requireAdmin(): Promise<string> {
  *  mutation open to anyone who can construct the request. `notFound()` is for
  *  something being rendered; here there is nothing to render, so it throws. */
 export async function assertAdminAction(): Promise<void> {
-  const { email } = await getViewer();
+  const { email } = await getIdentity();
   if (!isAdminEmail(email)) throw new Error("Ikke tilgang.");
 }
