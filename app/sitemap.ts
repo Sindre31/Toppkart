@@ -23,6 +23,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     { url: canonicalUrl("/"), changeFrequency: "monthly", priority: 1 },
     { url: canonicalUrl("/kart"), changeFrequency: "weekly", priority: 0.9 },
+    { url: canonicalUrl("/turer"), changeFrequency: "weekly", priority: 0.9 },
     ...TOURS.map((tour) => ({
       url: canonicalUrl(`/tur/${tour.slug}`),
       changeFrequency: "monthly" as const,

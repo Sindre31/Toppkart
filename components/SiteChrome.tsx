@@ -94,6 +94,7 @@ export function SiteFooter({
   return (
     <footer className={`site-footer ${className}`.trim()}>
       <span>Toppkart</span>
+      <Link href="/turer">{t.footerTours}</Link>
       <Link href="/kart">{t.footerMap}</Link>
       <Link href="/vilkar">{t.footerTerms}</Link>
       <Link href="/personvern">{t.footerPrivacy}</Link>

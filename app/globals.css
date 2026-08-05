@@ -407,6 +407,12 @@ a.btn-secondary, a.btn-secondary:hover { color: var(--color-text); }
        read as separate clumps. Centring the whole group instead gives one gap
        value between every pair, with the leftover split evenly outside. */
     justify-content: center;
+    /* `safe` faller tilbake til venstrestilling i det raden blir for lang for
+       skjermen. Uten det sentreres innholdet også når det ikke får plass, og da
+       renner det ut på *begge* sider — den venstre halvparten havner på negativ
+       offset, der ingen scroll når den. Wordmarket sto som «OPPKART» på 390px
+       fra det øyeblikket «Turene» ble lenke nummer to i raden. */
+    justify-content: safe center;
     flex-wrap: nowrap;
     /* Below ~360px the row genuinely cannot hold all four without dropping one.
        Letting the nav scroll on its own axis keeps that from becoming a

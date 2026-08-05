@@ -15,10 +15,10 @@ import { guideSlugs } from "@/lib/guides";
 import { OG_IMAGE } from "@/lib/seo";
 import { getLang } from "@/lib/i18n/server";
 import { commonDict } from "@/lib/i18n/common";
-import { getLocalizedGuide, localizeTour, teaserFor } from "@/lib/i18n/content";
+import { getLocalizedGuide, localizeTour, localizeTours, teaserFor } from "@/lib/i18n/content";
 import { elevationLabel, gradeLabel } from "@/lib/i18n/format";
 import { guideDict } from "@/lib/i18n/guide";
-import { getTour } from "@/lib/tours";
+import { getTour, toursInRegion } from "@/lib/tours";
 import styles from "./guide.module.css";
 
 /** Turguiden. Kart, nøkkeltall og høydeprofil er åpne for alle; rute-
@@ -80,6 +80,7 @@ export default async function TourGuidePage({ params }: { params: Promise<{ slug
   const t = guideDict(lang);
   const common = commonDict(lang);
   const mapHref = `/kart?tur=${tour.slug}`;
+  const neighbours = localizeTours(toursInRegion(source.region, source.slug), lang);
 
   const stats: { label: string; value: string }[] = [
     { label: t.statSummit, value: elevationLabel(tour.summitM, lang) },
@@ -92,6 +93,7 @@ export default async function TourGuidePage({ params }: { params: Promise<{ slug
   return (
     <div className="shell">
       <SiteNav lang={lang}>
+        <Link href="/turer">{common.tours}</Link>
         <Link href="/kart">{common.map}</Link>
         <AccountNav lang={lang} />
       </SiteNav>
@@ -213,6 +215,31 @@ export default async function TourGuidePage({ params }: { params: Promise<{ slug
         </section>
 
         {guide && (hasAccess ? <GuideSections guide={guide} lang={lang} /> : <LockedGuide lang={lang} />)}
+
+        {/* Naboturene. Regionen er den eneste slektskapen datasettet kjenner, og
+            den er nok: den som leser om Slogen er som regel i ferd med å legge
+            en uke i Sunnmørsalpene, ikke å velge mellom Slogen og Gaustatoppen.
+            At de også gir hver guide inngående lenker fra sine naboer er en
+            bivirkning — men det var mangelen på dem som var problemet. */}
+        {neighbours.length > 0 && (
+          <section className={styles.neighbours}>
+            <h2 className="kicker">{t.moreInRegion(tour.region)}</h2>
+            <hr className="kicker-rule" />
+            <ul className={styles.neighbourList}>
+              {neighbours.map((peak) => (
+                <li key={peak.slug}>
+                  <Link href={`/tur/${peak.slug}`}>{peak.name}</Link>
+                  <span className="note">
+                    {elevationLabel(peak.summitM, lang)} · {gradeLabel(peak.grade, lang)}
+                  </span>
+                </li>
+              ))}
+            </ul>
+            <Link className="btn btn-secondary" href="/turer">
+              {t.allTours}
+            </Link>
+          </section>
+        )}
 
         <SiteFooter lang={lang}>
           <span className="push">{t.footerNote}</span>
