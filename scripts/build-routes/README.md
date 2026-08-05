@@ -181,11 +181,12 @@ one line:
 | Slogen | Skylstad (1482 m) and direct from Øye (1512 m) |
 | Bitihorn | Bygdin (549 m) and Båtskaret (454 m) |
 
-32 routes over 24 tours. The first route of a tour is the one its own `verticalM`
-and `duration` describe. Alternatives are only added where a second route is
-actually documented — `ALTERNATES` in `build_corridors.py`, and the research
-output, are not places to invent one because the schema allows it. The remaining
-16 tours have a single route, and the app renders no picker for them.
+Eight tours carry a second route; the table above is all of them. 59 routes over
+51 tours. The first route of a tour is the one its own `verticalM` and `duration`
+describe. Alternatives are only added where a second route is actually documented
+— `ALTERNATES` in `build_corridors.py`, and the research output, are not places
+to invent one because the schema allows it. The other 43 tours have a single
+route, and the app renders no picker for them.
 
 Route and trailhead *names* get shortened for display — the research came back
 with sentences like "Normalruta fra Djupvik/Forselvveien via Pumpvatnet,
@@ -315,7 +316,7 @@ for a line that has actually moved.
 ## The app's numbers, reconciled against the ground
 
 `verticalM` is now the cumulative ascent of the tour's **first** route. **Every one
-of the 39 agrees with its routed gain to within 10 m**, which is the invariant to
+of the 51 agrees with its routed gain to within 10 m**, which is the invariant to
 assert if this is ever checked automatically. An alternative route has its own
 gain and is not expected to match.
 
@@ -413,6 +414,121 @@ Slogen's primary line has a 40.4° step and Fanaråken's a 41.8° one. Both are 
 — Slogen is a grade 4 alpine tour, and the Fanaråken audit confirmed the router
 detours around a 55.7° band the straight corridor would otherwise cross. They are
 the first places to look if a line ever renders wrong.
+
+## The Sunnmøre round
+
+Twelve peaks were added to Sunnmøre in one pass — the region goes from five tours
+to seventeen, and the app from 39 to 51. The brief was "every well-documented ski
+tour in Sunnmøre", and that question has no natural end: Fri Flyt alone publishes
+around ninety route descriptions for the region, from Melshornet's floodlit track
+to couloirs nobody skis twice. So the line was drawn where it can be defended,
+and it is four conditions, all of them checkable:
+
+1. Fri Flyt publishes a **full route description** — a named start, the line
+   through named ground, gain, length and time. A photo caption is not one.
+2. The tour **starts at a road**. This is what ruled out the Patchellhytta pair
+   (Store Smørskredtind, Store Brekketind): the hut is a day's walk in, so the
+   corridor would begin somewhere no car reaches and the vertical would describe
+   a tour nobody does in one day. Shuttle-only descents are out for the same
+   reason — Jønshornet is here as the ascent from Vollane, not as Fri Flyt's
+   round trip down Jønshornrenna with a car left in Molladalen.
+3. A **second, independent source** covers the same line: ut.no, morotur,
+   peakbook, utemagasinet, a kommune or Visit site. Where the two disagree, the
+   disagreement is recorded rather than averaged.
+4. Every point of the corridor **resolves and measures**: the name in Kartverket's
+   register, the trailhead against an OSM road or car park, and every elevation
+   re-queried from DTM1. `check_new_corridors.py` re-runs all of it from scratch.
+
+Hornindalsrokken was researched in the earlier round and had never been routed;
+it goes in here with the eleven new ones.
+
+| tour | start | summit | gain | km | steepest 100 m band | steepest 30 m | grade |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Råna | 63 | 1587 | 1595 | 8.1 | 21.0° | 37.5° | 3 |
+| Kvitegga | 324 | 1700 | 1477 | 6.1 | 22.5° | 38.1° | 3 |
+| Hornindalsrokken | 388 | 1527 | 1466 | 7.3 | 23.3° | 46.6° | 4 |
+| Torvløysa | 453 | 1851 | 1461 | 10.6 | 20.2° | 27.2° | 2 |
+| Jønshornet | 107 | 1417 | 1428 | 5.7 | 19.5° | 32.2° | 4 |
+| Skårene | 621 | 1830 | 1219 | 6.4 | 21.3° | 26.8° | 3 |
+| Vassdalstinden | 92 | 1278 | 1212 | 6.5 | 23.6° | 36.2° | 3 |
+| Eidskyrkja | 368 | 1482 | 1115 | 4.6 | 18.3° | 22.9° | 3 |
+| Sunndalsnipa | 437 | 1395 | 989 | 5.6 | 19.6° | 29.0° | 2 |
+| Auskjeret | 333 | 1203 | 870 | 3.8 | 18.6° | 26.4° | 2 |
+| Ytstevasshornet | 538 | 1331 | 835 | 3.9 | 21.2° | 25.3° | 3 |
+| Melshornet | 252 | 809 | 559 | 3.0 | 17.8° | 21.7° | 1 |
+
+None of the twelve has a written guide yet. The research they were built from —
+route description, trailhead evidence, hazard notes, sources and every correction
+below — is in `new_corridors.json` and `new_tourmeta.json`, which is what
+`guide_brief.py` reads.
+
+### What the checks caught
+
+**Two mountains called Kvitegga, nine kilometres apart, both documented.** Fri
+Flyt has a route up each. The register has nine of the name. The one this round
+ships is Kvitegga 1717, registered in **Volda**, skied from Snødalen; the Stranda
+point at 62.13855,6.86486 climbs to 1488 m and is the 1489 m Kvitegga skied from
+Ljøen — a different tour, and the one the summit search picked first. The
+published 1717 is the **snow dome**: DTM1 reads 1700.3 m on bare ground, and
+Hjørundfjordportalen says as much in words. The card carries the measurement.
+
+**Fausaskiftet is not in the place-name register.** Auskjeret's start is named in
+both sources and findable in neither SSR nor an address search. It is the west
+end of Fausavegen (OSM way/598763759) at 62.36019,6.82149, 332,6 m — and that
+point reconciles three published figures at once: 870 m of routed gain against
+Fri Flyt's 850 and ut.no's 871, and 3,2 km in a straight line against Fri Flyt's
+3 km. A trailhead that makes three independent numbers land is not a guess.
+
+**Råna needed the corridor pinned onto the crest.** The first solve took the
+east side of the summit ridge and finished with a 30 m window at **62°** — the
+routing grid's summit cell reads about 1530 m where the top is 1587, so the line
+walked up to the pin and then stood up. `flank_probe.py` says why there is no
+gentle way: every direction off that summit falls 22–41° in the first 400 m, with
+60 m windows of 53–66°. Two waypoints on the crest (1531 m, then 1562 m at 30 m
+from the top) put the line where the description puts it — «følg toppryggen
+nordover heile vegen til toppen» — and the steepest 30 m dropped to 37.5°.
+
+**Skårene is spelled Skorene in the register**, and its register point sits
+1,3 km north of the top on 1773 m ground. The summit search climbed to 1829,9 m
+against a published 1829. Its access is documented under *Eidshornet*, two pages
+away: park at Korsmyra, which OSM has as a car park 380 m from Grandesætra.
+
+**Hornindalsrokken gives back 327 m and has a 46,6° step, and both are real.**
+The give-back is the documented ridge — Trollaksla 1255, Sætrenibba 1370, the
+skaret north of it at 1226 — and the 129 m of it in one drop is that skaret. The
+steep step is the east rib in the last hundred metres, which the research already
+recorded as the place skis come off (52 m west of the summit the ground reads
+1247 against 1443 on the crest, about 75°). Its teaser had to be rewritten: the
+research figure, 1139 m, is summit minus trailhead in a straight line, and the
+ridge that goes up and down collects 1466.
+
+**Three tours' published verticals belong to a start the winter driver does not
+reach.** Fri Flyt gives Råna 1500 m and «5 timar frå Haukåssætra» — but the sætra
+reads 229,8 m, which is 1357 to the top, and the road up to it is winter-closed;
+starting where the gravel road leaves Urke (63,4 m) gives 1524 m and matches the
+published figure. Vassdalstinden's 1200 m is from Nupen (92,2 m), not from
+Vallasætra (323,5 m) up the toll road. Torvløysa's «Hatlestad-gardane på 350
+moh» is the mapped car park at 453,2 m, so its routed 1461 m sits below the
+published 1500 rather than at it.
+
+### The two bugs this round found in the pipeline
+
+`route_metrics.py` had not been run since `guide_facts.steepest_band` changed
+shape: it still called `steepest_band(pts, zs)` and unpacked a tuple, where the
+function now takes the per-100 m band table and returns a dict. It raised
+`TypeError` on the first tour, so no new tour could get a row at all.
+
+`emit_new_tours.py` re-emits **every** tour in `NEW_TOURS` when run bare, and a
+re-emitted row is built from today's `route_metrics.json` and `new_tourmeta.json`
+rather than from the row that shipped. Run without arguments it rewrote fifteen
+settled tours: `hasGuide: true` vanished from all of them, because the row format
+here is for tours that do not have a guide yet, and Hamperokken's vertical moved
+1400 → 1390 on a re-measurement of a line that had not changed. It now takes
+slugs, and the ones you leave out are copied through byte for byte.
+`resolve_summits.py` and `resample_dtm1.py` take slugs for the same reason —
+re-resolving 57 settled summits or re-reading 10 786 vertices to add twelve tours
+is hours spent reproducing numbers that are already in the file.
+
 
 ## Network
 

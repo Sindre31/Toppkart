@@ -454,5 +454,93 @@
     "summit_dtm": 1184.5,
     "claims": 1184,
     "stored_off_km": 0.54
+  },
+  "jonshornet": {
+    "name": "Jønshornet",
+    "lat": 62.31695,
+    "lng": 6.33395,
+    "summit_dtm": 1416.9,
+    "claims": 1419,
+    "stored_off_km": 0.02
+  },
+  "auskjeret": {
+    "name": "Auskjeret",
+    "lat": 62.37746,
+    "lng": 6.77458,
+    "summit_dtm": 1202.6,
+    "claims": 1203,
+    "stored_off_km": 0.02
+  },
+  "ytstevasshornet": {
+    "name": "Ytstevasshornet",
+    "lat": 62.28014,
+    "lng": 6.73548,
+    "summit_dtm": 1331.0,
+    "claims": 1330,
+    "stored_off_km": 0.45
+  },
+  "rana": {
+    "name": "Råna",
+    "lat": 62.27554,
+    "lng": 6.57479,
+    "summit_dtm": 1587.0,
+    "claims": 1586,
+    "stored_off_km": 0.04
+  },
+  "vassdalstinden": {
+    "name": "Vassdalstinden",
+    "lat": 62.24405,
+    "lng": 6.18966,
+    "summit_dtm": 1278.1,
+    "claims": 1277,
+    "stored_off_km": 0.11
+  },
+  "torvloysa": {
+    "name": "Torvløysa",
+    "lat": 62.1834,
+    "lng": 7.28026,
+    "summit_dtm": 1850.7,
+    "claims": 1850,
+    "stored_off_km": 0.01
+  },
+  "skarene": {
+    "name": "Skorene",
+    "lat": 62.17982,
+    "lng": 7.19977,
+    "summit_dtm": 1829.9,
+    "claims": 1829,
+    "stored_off_km": 1.32
+  },
+  "melshornet": {
+    "name": "Melshornet",
+    "lat": 62.17381,
+    "lng": 6.14287,
+    "summit_dtm": 809.4,
+    "claims": 807,
+    "stored_off_km": 0.03
+  },
+  "kvitegga": {
+    "name": "Kvitegga",
+    "lat": 62.0948,
+    "lng": 6.7022,
+    "summit_dtm": 1700.3,
+    "claims": 1717,
+    "stored_off_km": 0.01
+  },
+  "eidskyrkja": {
+    "name": "Eidskyrkja",
+    "lat": 62.01709,
+    "lng": 6.2624,
+    "summit_dtm": 1482.5,
+    "claims": 1482,
+    "stored_off_km": 0.01
+  },
+  "sunndalsnipa": {
+    "name": "Sunndalsnipa",
+    "lat": 62.01816,
+    "lng": 6.32162,
+    "summit_dtm": 1395.2,
+    "claims": 1396,
+    "stored_off_km": 0.94
   }
 }

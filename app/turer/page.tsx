@@ -67,7 +67,7 @@ export default async function TurerPage() {
             </Link>
           </div>
 
-          {/* Snarveiene ned i sida. På en 39-raders liste er det forskjellen på
+          {/* Snarveiene ned i sida. På en 51-raders liste er det forskjellen på
               å bla og å lete — og hvert anker er samtidig en lenke Google kan
               følge til riktig del av lista. */}
           <nav className={styles.jump} aria-label={t.regionsLabel}>

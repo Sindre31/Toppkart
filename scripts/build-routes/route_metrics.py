@@ -36,7 +36,7 @@ import math
 import sys
 
 from geo import haversine
-from guide_facts import cumdist, steepest_band
+from guide_facts import bands, cumdist, steepest_band
 
 COMPASS_NO = ["N", "NØ", "Ø", "SØ", "S", "SV", "V", "NV"]
 
@@ -113,8 +113,12 @@ def grade_from(band_angle, gain_m):
 def metrics(rec):
     pts = [tuple(p) for p in rec["points"]]
     zs = rec["elevations"]
-    band = steepest_band(pts, zs)
-    angle = band[2] if band else 0.0
+    # `steepest_band` takes the per-100 m band table, not the line: it is the
+    # steepest band with at least 120 m of ground under it, which is what makes
+    # it a slope rather than a step. (It used to take the line and return a
+    # tuple; this module still called it that way and had not been run since.)
+    band = steepest_band(bands(pts, zs))
+    angle = band["angle"] if band else 0.0
     return {
         "verticalM": int(round(rec["gainM"] / 10.0) * 10),
         "gainM": rec["gainM"],
@@ -123,8 +127,8 @@ def metrics(rec):
         "summitM": zs[-1],
         "duration": duration_band(rec["distanceM"], rec["gainM"]),
         "steepestBandAngle": round(angle, 1),
-        "steepestBandFrom": band[0] if band else None,
-        "steepestBandTo": band[1] if band else None,
+        "steepestBandFrom": band["fromM"] if band else None,
+        "steepestBandTo": band["toM"] if band else None,
         "maxStepAngle": round(rec["maxAngle"], 1),
         "grade": grade_from(angle, rec["gainM"]),
         "aspect": descent_aspect(pts),

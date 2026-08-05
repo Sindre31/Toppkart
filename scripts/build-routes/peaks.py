@@ -80,4 +80,26 @@ PEAKS = [
     ("saebyggjenuten", "Sæbyggjenuten", ["Bykle", "Tokke"], 1507, 59.462, 7.626),
     ("kjerag", "Kjerag", ["Sandnes"], 1110, 59.021, 6.580),
     ("grubba", "Grubbå", ["Sirdal"], 1184, 58.94971, 6.99479),
+    #
+    # — the Sunnmøre round: every peak Fri Flyt publishes a full route
+    #   description for that starts at a road, cross-checked against a second
+    #   source. `near` is the SSR representation point, which on these sits well
+    #   off the top — Råna's reads 1562 m against a published 1586, Kvitegga's
+    #   1451 against 1717 — so the height below is the published one and the disc
+    #   search is what finds the summit. —
+    ("jonshornet", "Jønshornet", ["Ørsta"], 1419, 62.31676, 6.33388),
+    ("auskjeret", "Auskjeret", ["Sykkylven", "Stranda"], 1203, 62.37739, 6.77488),
+    ("ytstevasshornet", "Ytstevasshornet", ["Sykkylven", "Ålesund"], 1330, 62.28256, 6.74254),
+    ("rana", "Råna", ["Ørsta"], 1586, 62.27519, 6.57437),
+    ("vassdalstinden", "Vassdalstinden", ["Ørsta"], 1277, 62.24479, 6.18813),
+    ("torvloysa", "Torvløysa", ["Fjord"], 1850, 62.18331, 7.28006),
+    ("skarene", "Skorene", ["Fjord", "Stranda"], 1829, 62.19164, 7.19670),
+    ("melshornet", "Melshornet", ["Ørsta", "Volda"], 807, 62.17409, 6.14309),
+    # Two mountains called Kvitegga are documented within 9 km of each other, and
+    # the register has nine of the name. This is the 1717 m one above Snødalen,
+    # registered in Volda; the Stranda point 62.13855,6.86486 tops out at 1488 m
+    # and is the 1489 m Kvitegga skied from Ljøen — a different tour.
+    ("kvitegga", "Kvitegga", ["Volda"], 1717, 62.09473, 6.70223),
+    ("eidskyrkja", "Eidskyrkja", ["Volda"], 1482, 62.01697, 6.26245),
+    ("sunndalsnipa", "Sunndalsnipa", ["Volda"], 1396, 62.00999, 6.31721),
 ]

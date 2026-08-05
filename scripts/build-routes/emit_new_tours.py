@@ -14,6 +14,18 @@ Every number in a new row is measured, not chosen: `summitM` from the DTM summit
 aspect, season and the teasers come from the route research in
 `new_tourmeta.json` — see `route_metrics.py` on why the terrain measurement is
 the check for the first two rather than the source.
+
+    python3 emit_new_tours.py [slug …]
+
+**Name the slugs you are adding.** With no arguments this re-emits every tour in
+`NEW_TOURS`, including the ones already on the map — and a re-emitted row is
+built from today's `route_metrics.json` and today's `new_tourmeta.json`, not from
+the row that shipped. Run bare while adding the Sunnmøre round and it rewrote
+fifteen settled tours: `hasGuide: true` disappeared from all of them (the row
+format here has no guide flag, because a tour being added does not have one), and
+Hamperokken's vertical moved 1400 → 1390 and Jakta's 1560 → 1570 on nothing but a
+re-measurement of an unchanged line. Existing rows are copied through byte for
+byte; that is the property to rely on, and it only holds for slugs left out.
 """
 
 import json
@@ -163,9 +175,12 @@ def main():
     meta = json.load(open("new_tourmeta.json"))
     tourmeta = json.load(open("tourmeta.json"))
 
+    only = set(sys.argv[1:])
     ts_rows, sql_rows, teasers = {}, {}, {}
     skipped, mismatched = [], []
     for slug, (name, region) in NEW_TOURS.items():
+        if only and slug not in only:
+            continue
         if slug not in metrics or slug not in meta:
             skipped.append(slug)
             continue
