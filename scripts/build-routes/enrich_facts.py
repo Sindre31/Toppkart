@@ -34,6 +34,22 @@ for path in sorted(glob.glob(os.path.join(WF, "*", "agent-*.jsonl"))):
                     if t.get("notes"):  # first-generation shape
                         notes.setdefault(slug, {})["normalruta"] = t["notes"]
 
+# The fifteen tours added after the first round were audited into tracked files
+# rather than left in transcripts, so their findings can be read straight off
+# disk. Same material, same role: the measured flank angles, the corrected
+# cornice sides and the rejected first drafts a guide is entitled to quote.
+for rec in json.load(open("new_corridors.json")):
+    ps = [p for p in (rec.get("corrections") or []) if p]
+    if ps:
+        findings.setdefault(rec["slug"], []).extend(ps)
+for slug, m in json.load(open("new_tourmeta.json")).items():
+    extra = [p for p in (m.get("corrections") or []) if p]
+    for key in ("gradeReason", "hazardNotes", "notes"):
+        if m.get(key):
+            extra.append(m[key])
+    if extra:
+        findings.setdefault(slug, []).extend(extra)
+
 # teasers straight out of the shipped source
 teasers = {}
 src = open("/home/user/Toppkart/lib/tours.ts").read()
@@ -53,8 +69,8 @@ for slug, t in f.items():
         t["auditFindings"] = findings[slug]; n_find += 1
 
 json.dump(f, open("guide_facts.json", "w"), ensure_ascii=False, indent=1)
-print(f"teasers restored: {n_teas}/24")
+print(f"teasers restored: {n_teas}/{len(f)}")
 print(f"routes given research notes: {n_notes}")
-print(f"tours given audit findings: {n_find}/24")
+print(f"tours given audit findings: {n_find}/{len(f)}")
 missing = [s for s, t in f.items() if not t["routes"][0].get("researchNotes") and s not in findings]
 print("still with no prose at all:", missing or "none")

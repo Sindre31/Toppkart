@@ -13,6 +13,10 @@ next-env.d.ts
 # Cached Kartverket DTM tiles pulled by scripts/build-routes (hundreds of MB).
 scripts/build-routes/cache/
 
+# guide_facts.py's output: derived from routes.json, the corridor research and
+# DTM1, and re-emitted into lib/guides.ts. Same reasoning as routes.json below.
+scripts/build-routes/guide_facts.json
+
 # generate_routes.py's output. It has never been tracked, and should not be:
 # every byte of it is re-emitted into lib/routes.ts, which is the artefact the
 # app reads and the one worth reviewing in a diff. The research inputs beside it

@@ -56,6 +56,35 @@ Neither half is much use alone. The corridor without the terrain model gives you
 straight lines through cliffs; the terrain model without the corridor gives you a
 technically-gentle line up a face nobody skis.
 
+### Solved on a coarse grid, measured on a fine one
+
+Dijkstra over a 1 m grid for a ten-kilometre corridor is not a thing you run, so
+the router solves on a downsampled DTM — a few metres per cell. That resolution
+is right for *finding* a way up and wrong for *saying how steep it is*: the grid
+rounds the corner off a step, and a couple of metres of error over a 30 m
+baseline is a dozen degrees.
+
+`resample_dtm1.py` re-reads every vertex elevation straight from the DTM1 point
+API and rewrites `gainM`, `lossM` and `maxAngle` from it. The geometry stays
+exactly as routed; only the heights change. The two ends keep their pinned values
+— the trailhead from the corridor research, the summit from `summits.json` —
+because those were resolved deliberately and a reader recognises them.
+
+Folarskardnuten is the case that showed why it was needed. Vertex by vertex the
+stored profile was within ±6 m of DTM1 and averaged −0.4 m; it looked fine. Its
+steepest 30 m window read **25.5° stored and 37.8° measured**, and the guide
+written from it told the reader a 38-degree step was a 25-degree one. Across all
+39 tours it moved the steepest sustained gradient by 2° or more on fifteen of
+them — eleven steeper, four gentler. Storgalten 29.2 → 34.6, Steindalsnosi
+26.4 → 30.3, Kavringtinden 30.3 → 33.8, Tromsdalstinden 23.8 → 26.9; the other
+way, Melderskin 30.9 → 27.3 and Besshø 26.1 → 23.2. Cumulative gain moved much
+less — under 2.5% everywhere, mostly a metre or two.
+
+`router.steepest_span` now returns *where* the steepest window is as well as how
+steep, `guide_facts.py` carries it as `steepestStep`, and `check_guides.py` counts
+those two elevations as sourced. A guide that says "29.4 degrees between 1411 and
+1428 moh" is checkable in a way that a bare angle is not.
+
 ## Steps
 
 ```
@@ -64,6 +93,7 @@ pip install numpy scipy rasterio
 python3 resolve_summits.py    # SSR + DTM1          -> summits.json
 python3 build_corridors.py    # corridors.swarm.json + PICKS/ALTERNATES -> corridors.json
 python3 generate_routes.py    # corridors + summits -> routes.json   (~10 min)
+python3 resample_dtm1.py      # every vertex re-read from DTM1        (~15 min)
 python3 emit_ts.py            # routes.json         -> ../../lib/routes.ts
 python3 check_routes.py       # independent sanity pass
 
@@ -76,13 +106,15 @@ TOPPKART_WF=<transcripts> python3 harvest_swarm.py   # -> corridors.swarm.json
 Then the written guides, which depend on the finished geometry:
 
 ```
+python3 routes_from_ts.py     # lib/routes.ts       -> routes.json  (skips re-routing)
+python3 sync_tourmeta.py      # lib/tours.ts        -> tourmeta.json (after hand edits)
 python3 guide_facts.py        # routes.json + DTM1  -> guide_facts.json
 python3 enrich_facts.py       # folds the corridor research and audit back in
 python3 guide_brief.py <slug> # the writing brief one agent gets for one tour
 
 TOPPKART_WF=<transcripts> python3 harvest_guides.py  # -> guides.json
 python3 check_guides.py       # mechanical pass; must be read, not just run
-python3 emit_guides.py        # -> ../../lib/guides.ts, GUIDE_EN, seed.sql, hasGuide
+python3 emit_guides.py [slug…]  # -> ../../lib/guides.ts, GUIDE_EN, seed.sql, hasGuide
 ```
 
 `find_trailheads.py` and `nearby_places.py` only ever produce a *shortlist*; the
@@ -100,15 +132,27 @@ tour it looks the name up in Kartverket's place-name register (SSR),
 disambiguates by kommune and by proximity to the old coordinate, then snaps to
 the true summit in two stages:
 
-1. a search disc that **grows** until the highest cell inside it matches the
-   published height. Growing outward and stopping at the first match is what
-   keeps a peak from being confused with a taller neighbour — Steindalsnosi
-   (2025 m) matches 975 m out, well before Fannaråki (2068 m) comes into range
-   at 1490 m.
-2. a hill-climb from there onto the exact top. Run in this order on purpose:
-   climbing straight from an SSR point stalls on the first shoulder above a
-   saddle, which is how Himmeltindan and Steindalsnosi first came out ~30 m and
-   ~120 m short.
+1. a search disc that **grows**, taking the highest cell inside it at each
+   radius. Growing outward rather than searching one big box is what keeps a peak
+   from being confused with a taller neighbour — Steindalsnosi (2025 m) matches
+   975 m out, and once Fannaråki (2068 m) comes into range at 1490 m it is 43 m
+   off the claim and loses.
+2. a hill-climb from each of those candidates onto the exact top. Run in this
+   order on purpose: climbing straight from an SSR point stalls on the first
+   shoulder above a saddle, which is how Himmeltindan and Steindalsnosi first
+   came out ~30 m and ~120 m short.
+3. **the climbed top whose height comes closest to the published one wins.**
+
+Climbing before judging, rather than judging the disc maxima, is what the third
+step buys, and it fixes two failures that pull in opposite directions. The search
+used to *stop* at the first disc whose maximum was within 15 m of the claim, and
+that put **Folarskardnuten on a subsidiary top**: 1927.3 m at 311 m out is inside
+15 m of the claimed 1933, so it was returned and the disc never grew far enough
+to see the real summit, 1931.7 m at 647 m. Simply preferring the closest disc
+maximum instead moves **Skåla** 50 m onto a 1851.4 m cell — Skålatårnet, the
+stone tower on the top — where climbing from the smaller disc reaches the 1847.1 m
+ground the guidebooks call 1848. The highest cell in a wide disc is exactly where
+a structure or a noise spike sits.
 
 Every summit is then checked against the height the tour claims. 21 of 24 agree
 within 2 m. The three that do not — Rørnestinden −11 m, Rombakstøtta −12 m,
@@ -149,11 +193,32 @@ a useless label. The full text is kept alongside as `description` / `fullName`.
 
 ## The written guides
 
-Every tour has a Norwegian and an English guide, written by one agent per tour
-against `guide_brief.py <slug>` and then handed to a second agent whose only job
-is to try to break it. All 24 came back `corrected`, which is the point: an agent
-writing confident prose about terrain it cannot see will produce a plausible
-sentence rather than no sentence.
+Every tour has a Norwegian and an English guide. The first 24 were written by one
+agent per tour against `guide_brief.py <slug>` and then handed to a second agent
+whose only job was to try to break it. All 24 came back `corrected`, which is the
+point: an agent writing confident prose about terrain it cannot see will produce
+a plausible sentence rather than no sentence.
+
+The fifteen tours added in the second round — Besshø, Breitinden, Folarskardnuten,
+Geitgaljen, Glittertinden, Hamperokken, Jakta, Keipen, Lønahorgi, Rasletinden,
+Saudehornet, Skårasalen, Skogshorn, Storronden and Vesoldo — were written against
+the same material, which for them is tracked rather than harvested: the corridor
+description and notes in `corridors.json`, and the audit corrections in
+`new_corridors.json` and `new_tourmeta.json`, all folded into the brief by
+`enrich_facts.py`. They pass `check_guides.py` clean, and they have since been
+through an adversarial second reader — one per tour, all fifteen found something.
+
+`new_tourmeta.json` accumulates: each later pass appends what it measured, and
+`check_guides.py` treats those notes as the source for the figures in the prose.
+`merge_corridors.py` therefore keeps the corrections already recorded and adds
+only what is new, and leaves a teaser alone once it has been rewritten against
+the routed gain. Replacing either wholesale on a re-run silently unsources every
+number a later pass measured — which is exactly what it did once, and the check
+went from 12 unsourced numbers to 75 in one command.
+
+A guide is written in the language its teaser uses, so the seven western tours
+whose research came back in nynorsk read as nynorsk on the page rather than
+switching dialect halfway down.
 
 What the adversarial pass actually caught, on real tours:
 
@@ -178,26 +243,86 @@ line out from a point and prints the profile and the steepest 60 m window, so
 every number in the prose against the route facts, the corridor research and the
 checker's own measurements, and prints anything left over — a plausible metre
 figure nobody can source is exactly what should not ship in an avalanche product.
+It reads `guides.json`, and takes slugs to check a subset.
+
+Three of its inputs were widened for the second round, because they were failing
+sourced figures rather than catching invented ones: the per-100 m band table and
+the corridor's own waypoint elevations are now facts a guide may quote, and a
+number written with a decimal comma in Norwegian research ("1,4 km eksponert
+rygg") is read as one number rather than two.
 
 Neither tool can tell you the route goes up the wrong valley. That is what the
-second agent is for, and it is why no guide here shipped unchecked.
+second agent is for.
+
+### Emitting
+
+`emit_guides.py` with no arguments writes every guide in `guides.json`; naming
+slugs writes only those and copies the rest through byte for byte. Prefer the
+second when adding tours. A guide's prose and its elevation profile are written
+against the same geometry at the same time, so re-emitting a tour whose line has
+been re-routed since gives it a fresh distance label under a caption that still
+quotes the old one — which is exactly the state the first 24 are in after the
+`maxAngle` fix re-routed every line. Bringing them up to the current
+`lib/routes.ts` means rewriting their numbers too, and that is a job of its own.
+
+`tourmeta.json` is the pipeline's copy of the tour list, and nothing the app
+reads: `guide_facts.py` takes the claimed summit height from it, `emit_ts.py`
+takes the order of ROUTES from it, and `generate_routes.py` checks a routed gain
+against its `verticalM`. It drifts the moment a tour row is corrected by hand,
+and it drifts silently — after Folarskardnuten's summit moved, the profile under
+the guide went on labelling the top "1927 moh" because `summitClaimM` comes from
+here. `sync_tourmeta.py` re-reads it from `lib/tours.ts`; run it after any hand
+edit to the rows.
+
+`guide_facts.py` needs `routes.json`, which is not tracked. When the guides are
+what is being worked on rather than the geometry, `routes_from_ts.py` reads the
+finished lines back out of `lib/routes.ts` instead of spending ten minutes and a
+few hundred megabytes of DTM tiles reproducing them. The terrain classes behind
+the treeline are cached in the previous `guide_facts.json` and only re-queried
+for a line that has actually moved.
 
 ## The app's numbers, reconciled against the ground
 
 `verticalM` is now the cumulative ascent of the tour's **first** route. **Every one
-of the 24 agrees with its routed gain to within 10 m**, which is the invariant to
+of the 39 agrees with its routed gain to within 10 m**, which is the invariant to
 assert if this is ever checked automatically. An alternative route has its own
 gain and is not expected to match.
+
+The DTM1 re-sampling moved six of them past that line and they were re-rounded:
+Kavringtinden 1240 → 1250, Breitinden 1020 → 1030, Kolåstinden 1080 → 1120,
+Slogen 1480 → 1520, Rondslottet 1240 → 1280, Folarskardnuten 950 → 970. Three of
+those six were already outside 10 m before the re-sampling. The teasers quote the
+gain too, and eight of them were brought along.
+
+### Folarskardnuten's summit moved
+
+Fixing the summit search moved three peaks, two of them published. **Folarskardnuten**
+went 821 m — from the 1927.3 m north-east top to the 1932.2 m high point, on a
+bearing of 216° across a 1899.9 m saddle — and **Himmeltindan** 67 m and 7 m up,
+to 955.9 m, which is where `lib/tours.ts` already had it. Storehorn's moved a
+metre. All three were re-routed and re-sampled.
+
+Folarskardnuten's finish is a different piece of mountain now: from the 1830 m
+shoulder the route runs 702 m west-south-west on a bearing of 253°, climbing
+evenly at 0.5 to 17.5° instead of 487 m north-west to the old top. The tour is
+115 m longer, and its steepest sustained gradient reads **27.2° instead of 37.8°**
+— not because the step out of Folarskardet changed, but because the re-solved
+line crosses it diagonally rather than head on. The fall line up the ramp is
+still the researched 36.7° over 41 m, and the guide now says which is which.
+
+The cairn the published route descriptions name is on the 1927 m top, and the
+guide says so.
 
 Twenty tours were corrected to get there, to the routed gain rounded to the
 nearest 10 m — rounded so the figures read like published data and do not drift
 when the geometry is regenerated.
 
-The four that were *not* touched are the ones already inside 10 m of a figure that
+The ones *not* touched at the time were already inside 10 m of a figure that
 is deliberately round and matches the guidebooks: Tromsdalstinden 1200 (routed
 1206), Store Blåmann 1040 (1031), Storgalten 1219 (1210), Rondslottet 1240 (1245).
 Replacing a published 1200 with a machine-rounded 1210 would be a downgrade, not a
-correction.
+correction. Rondslottet has since moved anyway — the re-sampling put its routed
+gain at 1281.
 
 Of the twenty, three were figures that matched no real trailhead at all:
 

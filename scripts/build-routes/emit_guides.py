@@ -3,11 +3,23 @@
 The elevation profile is not editorial — it is the real route, so the SVG path and
 the three labels are computed from routes.json rather than left to a writer. Only
 the caption underneath is prose.
+
+    python3 emit_guides.py                  # every guide in guides.json
+    python3 emit_guides.py besshoe jakta    # only these, leaving the rest alone
+
+Naming slugs rewrites those blocks and splices them into the existing files in
+tourmeta order; every other guide is copied through byte for byte. That matters
+because a guide's prose and its profile are written against the same geometry at
+the same time: re-emitting a tour whose line has since been re-routed would give
+it a new distance label under a caption that still quotes the old one. Adding
+tours is therefore a per-slug operation, and bringing older guides up to a newer
+`lib/routes.ts` is a separate job that has to touch their numbers too.
 """
 
 import json
 import os
 import re
+import sys
 
 REPO = "/home/user/Toppkart"
 
@@ -39,6 +51,9 @@ def profile_of(facts, slug):
         "distEn": f"{p['distanceM']/1000:.1f} km",
     }
 
+
+MARKER_NO = "export const GUIDES: Record<string, TourGuide> = {"
+MARKER_EN = "export const GUIDE_EN: Record<string, GuideTextEn> = {"
 
 HEADER = '''/** Redaksjonelt guideinnhold — den delen av en tur som ligger bak abonnement.
  *
@@ -74,99 +89,141 @@ export const GRADE_LABELS: Record<Grade, string> = {
 '''
 
 
-def emit_guides_ts(guides, facts, order):
-    chunks = [HEADER, "export const GUIDES: Record<string, TourGuide> = {\n"]
-    for slug in order:
-        if slug not in guides:
-            continue
-        g = guides[slug]["no"]
-        pr = profile_of(facts, slug)
-        key = slug if "-" not in slug else q(slug)
-        chunks.append(f"  {key}: {{\n")
-        chunks.append(f"    slug: {q(slug)},\n")
-        chunks.append(f"    intro:\n      {q(g['intro'])},\n")
-        for field in ("ascent", "descent"):
-            chunks.append(f"    {field}: [\n")
-            for p in g[field]:
-                chunks.append(f"      {q(p)},\n")
-            chunks.append("    ],\n")
-        chunks.append("    avalanche: [\n")
-        for a in g["avalanche"]:
-            chunks.append(
-                "      {\n"
-                f"        title: {q(a['title'])},\n"
-                f"        body: {q(a['body'])},\n"
-                "      },\n"
-            )
-        chunks.append("    ],\n")
-        chunks.append(
-            "    elevationProfile: {\n"
-            f"      path: {q(pr['path'])},\n"
-            f"      startLabel: {q(pr['startNo'])},\n"
-            f"      endLabel: {q(pr['endNo'])},\n"
-            f"      distanceLabel: {q(pr['distNo'])},\n"
-            f"      caption: {q(g['caption'])},\n"
-            "    },\n"
-        )
-        chunks.append("  },\n")
-    chunks.append("};\n\n")
+def existing_blocks(src, marker):
+    """The guide blocks already in a file, verbatim, keyed by slug.
+
+    Everything from the `  slug: {` line to its closing `  },` — the text this
+    emitter would otherwise regenerate, kept exactly as it shipped.
+    """
+    start = src.index(marker)
+    end = src.index("\n};\n", start)
+    body = src[start:end]
+    heads = [(m.group(1), m.start()) for m in re.finditer(r'\n  "?([a-z0-9-]+)"?: \{\n', body)]
+    out = {}
+    for i, (slug, pos) in enumerate(heads):
+        stop = heads[i + 1][1] if i + 1 < len(heads) else len(body)
+        # The last block stops where the literal's own "\n};" begins, so it is
+        # the one arriving without its trailing newline. Give it one back.
+        out[slug] = body[pos:stop].strip("\n") + "\n"
+    return out
+
+
+def guide_block_ts(slug, guides, facts):
+    """One guide's block in lib/guides.ts, prose from guides.json, profile from facts."""
+    g = guides[slug]["no"]
+    pr = profile_of(facts, slug)
+    key = slug if "-" not in slug else q(slug)
+    chunks = [
+        f"  {key}: {{\n",
+        f"    slug: {q(slug)},\n",
+        f"    intro:\n      {q(g['intro'])},\n",
+    ]
+    chunks += prose_fields(g)
     chunks.append(
-        "export function getGuide(slug: string): TourGuide | undefined {\n"
-        "  return GUIDES[slug];\n"
-        "}\n\n"
-        "/** Slugs som faktisk har en skrevet guide — brukes av `generateStaticParams`. */\n"
-        "export function guideSlugs(): string[] {\n"
-        "  return Object.keys(GUIDES);\n"
-        "}\n"
+        "    elevationProfile: {\n"
+        f"      path: {q(pr['path'])},\n"
+        f"      startLabel: {q(pr['startNo'])},\n"
+        f"      endLabel: {q(pr['endNo'])},\n"
+        f"      distanceLabel: {q(pr['distNo'])},\n"
+        f"      caption: {q(g['caption'])},\n"
+        "    },\n"
     )
+    chunks.append("  },\n")
+    return "".join(chunks)
+
+
+def guide_block_en(slug, guides, facts):
+    """One guide's block in GUIDE_EN. No path — the English page draws the same one."""
+    g = guides[slug]["en"]
+    pr = profile_of(facts, slug)
+    key = slug if "-" not in slug else q(slug)
+    chunks = [f"  {key}: {{\n", f"    intro:\n      {q(g['intro'])},\n"]
+    chunks += prose_fields(g)
+    chunks.append(
+        "    elevationProfile: {\n"
+        f"      startLabel: {q(pr['startEn'])},\n"
+        f"      endLabel: {q(pr['endEn'])},\n"
+        f"      distanceLabel: {q(pr['distEn'])},\n"
+        f"      caption: {q(g['caption'])},\n"
+        "    },\n"
+    )
+    chunks.append("  },\n")
+    return "".join(chunks)
+
+
+def prose_fields(g):
+    """ascent, descent and avalanche — identical in both languages' literals."""
+    chunks = []
+    for field in ("ascent", "descent"):
+        chunks.append(f"    {field}: [\n")
+        for p in g[field]:
+            chunks.append(f"      {q(p)},\n")
+        chunks.append("    ],\n")
+    chunks.append("    avalanche: [\n")
+    for a in g["avalanche"]:
+        chunks.append(
+            "      {\n"
+            f"        title: {q(a['title'])},\n"
+            f"        body: {q(a['body'])},\n"
+            "      },\n"
+        )
+    chunks.append("    ],\n")
+    return chunks
+
+
+def splice(path, marker, order, targets, build):
+    """Rewrite `targets` inside the record literal at `marker`, keep the rest verbatim.
+
+    Blocks come out in `order` — tourmeta's order, which is also lib/tours.ts's —
+    so a guide added later still lands beside its neighbours rather than at the end.
+    """
+    src = open(path).read()
+    start = src.index(marker)
+    end = src.index("\n};\n", start) + len("\n};\n")
+    kept = existing_blocks(src, marker)
+    written = 0
+    out = [marker + "\n"]
+    for slug in order:
+        if slug in targets:
+            out.append(build(slug))
+            written += 1
+        elif slug in kept:
+            out.append(kept[slug])
+    out.append("};\n")
+    open(path, "w").write(src[:start] + "".join(out) + src[end:])
+    return written, len(out) - 2 - written
+
+
+def emit_guides_ts(guides, facts, order, targets):
     path = os.path.join(REPO, "lib", "guides.ts")
-    open(path, "w").write("".join(chunks))
-    print(f"wrote {path} ({len(guides)} guides, {os.path.getsize(path)//1024} KB)")
+    if not os.path.exists(path) or targets >= set(existing_blocks(open(path).read(), MARKER_NO)):
+        # Nothing to preserve: write the file from scratch, header and all.
+        chunks = [HEADER, MARKER_NO + "\n"]
+        chunks += [guide_block_ts(s, guides, facts) for s in order if s in targets]
+        chunks.append("};\n\n")
+        chunks.append(
+            "export function getGuide(slug: string): TourGuide | undefined {\n"
+            "  return GUIDES[slug];\n"
+            "}\n\n"
+            "/** Slugs som faktisk har en skrevet guide — brukes av `generateStaticParams`. */\n"
+            "export function guideSlugs(): string[] {\n"
+            "  return Object.keys(GUIDES);\n"
+            "}\n"
+        )
+        open(path, "w").write("".join(chunks))
+        wrote, kept = len(targets), 0
+    else:
+        wrote, kept = splice(path, MARKER_NO, order, targets,
+                             lambda s: guide_block_ts(s, guides, facts))
+    print(f"wrote {path} ({wrote} emitted, {kept} kept, {os.path.getsize(path)//1024} KB)")
 
 
-def emit_guide_en(guides, facts, order):
+def emit_guide_en(guides, facts, order, targets):
     """Replace the GUIDE_EN literal in lib/i18n/content.ts, leaving the rest alone."""
     path = os.path.join(REPO, "lib", "i18n", "content.ts")
-    src = open(path).read()
-    start = src.index("export const GUIDE_EN: Record<string, GuideTextEn> = {")
-    end = src.index("\n};\n", start) + len("\n};\n")
-
-    chunks = ["export const GUIDE_EN: Record<string, GuideTextEn> = {\n"]
-    for slug in order:
-        if slug not in guides:
-            continue
-        g = guides[slug]["en"]
-        pr = profile_of(facts, slug)
-        key = slug if "-" not in slug else q(slug)
-        chunks.append(f"  {key}: {{\n")
-        chunks.append(f"    intro:\n      {q(g['intro'])},\n")
-        for field in ("ascent", "descent"):
-            chunks.append(f"    {field}: [\n")
-            for p in g[field]:
-                chunks.append(f"      {q(p)},\n")
-            chunks.append("    ],\n")
-        chunks.append("    avalanche: [\n")
-        for a in g["avalanche"]:
-            chunks.append(
-                "      {\n"
-                f"        title: {q(a['title'])},\n"
-                f"        body: {q(a['body'])},\n"
-                "      },\n"
-            )
-        chunks.append("    ],\n")
-        chunks.append(
-            "    elevationProfile: {\n"
-            f"      startLabel: {q(pr['startEn'])},\n"
-            f"      endLabel: {q(pr['endEn'])},\n"
-            f"      distanceLabel: {q(pr['distEn'])},\n"
-            f"      caption: {q(g['caption'])},\n"
-            "    },\n"
-        )
-        chunks.append("  },\n")
-    chunks.append("};\n")
-
-    open(path, "w").write(src[:start] + "".join(chunks) + src[end:])
-    print(f"wrote GUIDE_EN in {path}")
+    wrote, kept = splice(path, MARKER_EN, order, targets,
+                         lambda s: guide_block_en(s, guides, facts))
+    print(f"wrote GUIDE_EN in {path} ({wrote} emitted, {kept} kept)")
 
 
 def set_has_guide(guides):
@@ -204,7 +261,7 @@ def emit_seed(guides, order):
     out = [
         src.rstrip() + "\n\n",
         "-- ============================================================================\n",
-        "-- Written guides — all 24 tours\n",
+        f"-- Written guides — all {len([s for s in order if s in guides])} tours\n",
         "-- ----------------------------------------------------------------------------\n",
         "-- Generated by scripts/build-routes/emit_guides.py alongside lib/guides.ts, so\n",
         "-- the database seed and the local fallback cannot drift apart. Paragraphs in\n",
@@ -246,12 +303,19 @@ def emit_seed(guides, order):
 
 
 def main():
-    guides = json.load(open("guides_swarm.json"))
+    guides = json.load(open("guides.json"))
     facts = json.load(open("guide_facts.json"))
     order = list(json.load(open("tourmeta.json")).keys())
 
-    emit_guides_ts(guides, facts, order)
-    emit_guide_en(guides, facts, order)
+    targets = set(sys.argv[1:]) or set(guides)
+    unknown = targets - set(guides)
+    if unknown:
+        raise SystemExit(f"no guide written for: {', '.join(sorted(unknown))}")
+
+    emit_guides_ts(guides, facts, order, targets)
+    emit_guide_en(guides, facts, order, targets)
+    # hasGuide and the seed are derived from the whole file either way: a slug
+    # has a guide or it does not, and the seed is one block of SQL.
     set_has_guide(guides)
     emit_seed(guides, order)
 

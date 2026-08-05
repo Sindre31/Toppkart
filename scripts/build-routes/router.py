@@ -326,8 +326,8 @@ def path_length_m(points):
 SLOPE_WINDOW_M = 30.0
 
 
-def steepest_gradient(points, elevations, window_m=SLOPE_WINDOW_M):
-    """Steepest sustained gradient along the line, in degrees.
+def steepest_span(points, elevations, window_m=SLOPE_WINDOW_M):
+    """Steepest sustained gradient along the line: (degrees, start index, end index).
 
     Measured over the ground actually covered rather than between neighbouring
     vertices, for two reasons that both used to inflate it:
@@ -337,14 +337,18 @@ def steepest_gradient(points, elevations, window_m=SLOPE_WINDOW_M):
       zero while its climb is not, so the chord between two points either side
       of a switchback reads as a cliff. Walking distance is also the honest
       denominator: it is what the skier climbs over.
+
+    The indices come back because a guide that says "the steepest step measures
+    29 degrees" is worth little next to one that says where it is, and the two
+    elevations are then a measurement the checker can source rather than prose.
     """
     if len(points) < 2:
-        return 0.0
+        return 0.0, 0, 0
     d = [0.0]
     for a, b in zip(points, points[1:]):
         d.append(d[-1] + haversine(a[0], a[1], b[0], b[1]))
 
-    worst = 0.0
+    worst = (0.0, 0, 0)
     j = 0
     for i in range(len(points)):
         j = max(j, i + 1)
@@ -353,5 +357,12 @@ def steepest_gradient(points, elevations, window_m=SLOPE_WINDOW_M):
         if j >= len(points):
             break
         run = d[j] - d[i]
-        worst = max(worst, abs(math.degrees(math.atan2(elevations[j] - elevations[i], run))))
+        ang = abs(math.degrees(math.atan2(elevations[j] - elevations[i], run)))
+        if ang > worst[0]:
+            worst = (ang, i, j)
     return worst
+
+
+def steepest_gradient(points, elevations, window_m=SLOPE_WINDOW_M):
+    """Just the angle from `steepest_span`, for callers that only price the line."""
+    return steepest_span(points, elevations, window_m)[0]

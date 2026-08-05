@@ -68,18 +68,34 @@ def main():
                 }
             ]
         }
+        # Three fields are revised downstream and must survive a re-merge.
+        #
+        # `corrections` accumulate: the adversarial read of the written guides and
+        # the re-measurement after a summit moved both appended their findings
+        # here, and `check_guides.py` treats them as the source for the figures in
+        # the prose. Replacing the list wholesale silently unsources every number
+        # a later pass measured.
+        #
+        # The two teasers are drafted from the research and then rewritten against
+        # the routed gain — the research figure is a straight-line estimate, and
+        # resetting a shipped teaser to it puts a wrong number on the tour card.
+        prev = meta.get(slug) or {}
+        corrections = list(prev.get("corrections") or [])
+        for note in rec.get("corrections", []):
+            if note not in corrections:
+                corrections.append(note)
         meta[slug] = {
             "season": c.get("season", ""),
             "aspect": c.get("aspect", ""),
             "grade": c.get("grade"),
             "gradeReason": c.get("gradeReason", ""),
             "roadClosedInWinter": c.get("roadClosedInWinter", False),
-            "teaserNo": c.get("teaserNo", ""),
-            "teaserEn": c.get("teaserEn", ""),
+            "teaserNo": prev.get("teaserNo") or c.get("teaserNo", ""),
+            "teaserEn": prev.get("teaserEn") or c.get("teaserEn", ""),
             "hazardNotes": c.get("hazardNotes", ""),
             "sources": c.get("sources", []),
             "confidence": c.get("confidence", ""),
-            "corrections": rec.get("corrections", []),
+            "corrections": corrections,
             "notes": c.get("notes", ""),
         }
         kept += 1
