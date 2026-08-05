@@ -5,9 +5,13 @@ import { mapDict } from "@/lib/i18n/map";
 import { getTour, routesFor } from "@/lib/tours";
 import MapView from "./MapView";
 
+/** `?tur=` og `?rute=` velger hva panelet åpner på — de er navigasjon, ikke nye
+ *  sider, og hver kombinasjon ville ellers blitt en egen adresse i indeksen med
+ *  samme kart under. Canonical peker dem alle tilbake på `/kart`; turen har sin
+ *  egen side på `/tur/<slug>`, og det er den som skal rangere på fjellnavnet. */
 export async function generateMetadata(): Promise<Metadata> {
   const t = mapDict(await getLang());
-  return { title: t.metaTitle, description: t.metaDescription };
+  return { title: t.metaTitle, description: t.metaDescription, alternates: { canonical: "/kart" } };
 }
 
 /** The map is open to everyone; `hasAccess` only decides whether the detail

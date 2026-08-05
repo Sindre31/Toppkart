@@ -13,7 +13,13 @@ import styles from "./betaling.module.css";
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = checkoutDict(await getLang());
-  return { title: t.metaTitle, description: t.metaDescription };
+  /* Kassa er et steg i en handel, ikke en landingsside — og `?session_id=` gir
+     den én adresse per kjøp. Ingen av dem hører hjemme i et søkeresultat. */
+  return {
+    title: t.metaTitle,
+    description: t.metaDescription,
+    robots: { index: false, follow: true },
+  };
 }
 
 type SearchParams = Record<string, string | string[] | undefined>;

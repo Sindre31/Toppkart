@@ -7,16 +7,40 @@ import { GA_MEASUREMENT_ID } from "@/lib/config";
 import { htmlLang } from "@/lib/i18n";
 import { getLang } from "@/lib/i18n/server";
 import { siteMeta } from "@/lib/i18n/common";
+import { CANONICAL_ORIGIN, OG_IMAGE, isIndexable } from "@/lib/seo";
 import "./globals.css";
 
 /** Title and description follow the reader's language. `generateMetadata` runs
- *  per request, so it can read the language cookie the way the pages do. */
+ *  per request, so it can read the language cookie the way the pages do.
+ *
+ *  `metadataBase` er det som gjør at de relative adressene under — canonical på
+ *  hver side, og bildet her — kommer ut som hele URL-er i HTML-en. Uten den
+ *  skriver Next ut `/tur/slogen` der Google venter `https://toppkart.no/tur/slogen`.
+ *
+ *  Alt som ikke er produksjonsdeployen sier `noindex` i tillegg til
+ *  `Disallow: /` i `robots.txt` — beltet for de robotene som allerede kjenner
+ *  en preview-URL og henter den uten å spørre robots.txt først. */
 export async function generateMetadata(): Promise<Metadata> {
   const lang = await getLang();
   const site = siteMeta(lang);
+  const title = `${site.name} — ${site.tagline}`;
   return {
-    title: { default: `${site.name} — ${site.tagline}`, template: `${site.name} — %s` },
+    metadataBase: new URL(CANONICAL_ORIGIN),
+    title: { default: title, template: `${site.name} — %s` },
     description: site.description,
+    applicationName: site.name,
+    openGraph: {
+      type: "website",
+      siteName: site.name,
+      /* Delingsspråket følger leserens eget: samme URL, to språk, valgt av
+         `tk_lang`-cookien. */
+      locale: lang === "en" ? "en_GB" : "nb_NO",
+      title,
+      description: site.description,
+      images: [{ ...OG_IMAGE, alt: site.tagline }],
+    },
+    twitter: { card: "summary_large_image" },
+    ...(isIndexable ? {} : { robots: { index: false, follow: false } }),
   };
 }
 

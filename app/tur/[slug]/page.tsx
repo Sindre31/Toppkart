@@ -10,7 +10,9 @@ import { ElevationProfile } from "@/components/guide/ElevationProfile";
 import { GuideSections } from "@/components/guide/GuideSections";
 import { LockedGuide } from "@/components/guide/LockedGuide";
 import { getViewer } from "@/lib/access";
+import { SITE } from "@/lib/config";
 import { guideSlugs } from "@/lib/guides";
+import { OG_IMAGE } from "@/lib/seo";
 import { getLang } from "@/lib/i18n/server";
 import { commonDict } from "@/lib/i18n/common";
 import { getLocalizedGuide, localizeTour, teaserFor } from "@/lib/i18n/content";
@@ -40,11 +42,29 @@ export async function generateMetadata({
   const { slug } = await params;
   const lang = await getLang();
   const tour = getTour(slug);
-  if (!tour) return { title: guideDict(lang).notFoundTitle };
+  if (!tour) return { title: guideDict(lang).notFoundTitle, robots: { index: false } };
+
+  // Peak and region are proper nouns — the title is identical in both.
+  const title = `${tour.name}, ${tour.region}`;
+  const description = getLocalizedGuide(slug, lang)?.intro ?? teaserFor(slug, lang);
+  const path = `/tur/${slug}`;
+
   return {
-    // Peak and region are proper nouns — the title is identical in both.
-    title: `${tour.name}, ${tour.region}`,
-    description: getLocalizedGuide(slug, lang)?.intro ?? teaserFor(slug, lang),
+    title,
+    description,
+    alternates: { canonical: path },
+    /* Egen `openGraph` her, ikke arven fra rotlayouten: en delt guidelenke skal
+       vise fjellet den handler om. Bildet må gjentas — Next erstatter hele
+       `openGraph`-objektet når en side setter sitt eget. */
+    openGraph: {
+      type: "article",
+      siteName: SITE.name,
+      locale: lang === "en" ? "en_GB" : "nb_NO",
+      title: `${SITE.name} — ${title}`,
+      description,
+      url: path,
+      images: [{ ...OG_IMAGE, alt: title }],
+    },
   };
 }
 

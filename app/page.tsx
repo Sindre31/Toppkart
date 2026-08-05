@@ -13,7 +13,7 @@ import { landingDict } from "@/lib/i18n/landing";
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = landingDict(await getLang());
-  return { title: t.metaTitle, description: t.metaDescription };
+  return { title: t.metaTitle, description: t.metaDescription, alternates: { canonical: "/" } };
 }
 
 /** Årsprisen (290 kr/år — to måneder gratis) er skrudd av. Sett til true for å vise raden. */

@@ -8,7 +8,13 @@ import LoginForm from "./LoginForm";
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = accountDict(await getLang());
-  return { title: t.loginMetaTitle, description: t.loginMetaDescription };
+  /* `?next=` gjør innloggingssida til like mange adresser som det er sider å
+     komme fra. Ingen av dem skal rangere på noe. */
+  return {
+    title: t.loginMetaTitle,
+    description: t.loginMetaDescription,
+    robots: { index: false, follow: true },
+  };
 }
 
 type SearchParams = Promise<{ [key: string]: string | string[] | undefined }>;
