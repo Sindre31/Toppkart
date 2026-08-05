@@ -48,6 +48,17 @@ export default async function LandingPage() {
               </Link>
               <span style={{ fontSize: 13, color: muted(60) }}>{t.priceNote}</span>
             </div>
+            <Blueprint as="figure" style={{ margin: "48px 0 0" }}>
+              <Image
+                src="/assets/hero-relief.png"
+                alt={t.heroImageAlt}
+                width={1536}
+                height={1024}
+                priority
+                sizes="(max-width: 1160px) 100vw, 1160px"
+                style={{ width: "100%", height: "auto", aspectRatio: "3 / 2", objectFit: "cover" }}
+              />
+            </Blueprint>
           </section>
 
           {/* — nøkkeldata — */}
@@ -83,7 +94,6 @@ export default async function LandingPage() {
                 alt={t.safetyPhotoAlt}
                 width={1500}
                 height={1000}
-                priority
                 style={{ width: "100%", height: "auto", aspectRatio: "3 / 2", objectFit: "cover" }}
               />
             </Blueprint>
