@@ -1,5 +1,13 @@
 /* Industry — design-system tokens and component classes. This file is the source of truth for the system's look; retune it here and see readme.md. */
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;700&family=Barlow+Condensed:wght@400;600&display=swap');
+
+/* Skriftene lastes ikke herfra lenger. En `@import` øverst i et stilark er en
+   lenke nettleseren først finner etter at arket er hentet og lest, og den er
+   blokkerende: hent globals → les linje 2 → hent Googles CSS → les den → hent
+   filene → tegn tekst. Tre rundturer på rad, hver eneste førstegangsvisning,
+   til to fjerne verter.
+   `next/font` i `app/layout.tsx` gjør det motsatte: filene hentes ved bygging og
+   ligger på vårt eget domene, i samme forespørsel som resten av siden.
+   `--font-heading` og `--font-body` under peker på dem. */
 
 :root {
   --color-bg: #f2f2f3;
@@ -41,9 +49,33 @@
   --color-accent-2-800: #314457;
   --color-accent-2-900: #1f2d3a;
 
-  --font-heading: "Barlow Condensed", system-ui, sans-serif;
+  /* `--tk-font-*` settes av `next/font` i rotlayouten. Fallbacken bak er den
+     samme som før, for det tilfellet at en side rendres uten den klassen. */
+  --font-heading: var(--tk-font-heading), "Barlow Condensed", system-ui, sans-serif;
   --font-heading-weight: 600;
-  --font-body: "Barlow", system-ui, sans-serif;
+  --font-body: var(--tk-font-body), "Barlow", system-ui, sans-serif;
+
+  /* Navigasjonen har én tekststørrelse, og dette er den. Den gjelder hver
+     tekstflate i baren — lenkene, kontolenka, knappen, språkvelgeren og
+     lenkene i mobilmenyen — på hver bredde og i begge navigasjonene (sidenes
+     `.site-nav` og kartets egen topbar).
+
+     Grunnen til at den finnes: størrelsene hadde grodd fram hver for seg. Én
+     regel satte 14px, `.nav-muted` 13, `.btn` 14, `.seg-opt` 13, og under 620px
+     ble alt sammen 13 mens menypanelet stod på 15. Sju steder å endre, og
+     ingenting som holdt dem i takt — så de var ikke i takt. Nå er det ett tall.
+
+     Trykkflatene i mobilmenyen kommer fra padding og line-height, ikke fra
+     skriftstørrelsen, så de er de samme 44px som før. */
+  --nav-text: 14px;
+
+  /* Ordmerket er det ene som ikke er 14px — det er et merke og ikke en lenke i
+     rekka — men det er 18px begge steder det står.
+     Det var det ikke: `.nav-brand` sa 18px, men `.site-nav a` er en mer
+     spesifikk velger og satte 14, så merket stod på 14 på alle de vanlige
+     sidene og på 18 i kartets topbar. Ingen av tallene var valgt; forskjellen
+     var utfallet av en spesifisitetskollisjon. */
+  --nav-brand-text: 18px;
 
   --space-1: 3.4px;
   --space-2: 6.8px;
@@ -262,9 +294,9 @@ textarea.input { min-height: 90px; resize: vertical; }
 }
 .nav-brand {
   font-family: var(--font-heading); font-weight: var(--font-heading-weight);
-  font-size: 18px; margin-right: auto;
+  font-size: var(--nav-brand-text); margin-right: auto;
 }
-.nav a { color: inherit; text-decoration: none; font-size: 14px; }
+.nav a { color: inherit; text-decoration: none; font-size: var(--nav-text); }
 .nav a:hover, .nav a[aria-current='page'] { color: var(--color-accent); }
 
 /* — tables — */
@@ -371,14 +403,30 @@ a:hover { color: var(--color-accent-900); }
   padding: 10px 40px; border-bottom: 1px solid var(--color-divider);
   position: sticky; top: 0; background: var(--color-bg); z-index: 20;
 }
-.site-nav .nav-brand {
+/* `a.nav-brand`, ikke `.nav-brand`: `.site-nav a` under er en klasse pluss et
+   element og vinner ellers over en ren klasse — det var slik merket havnet på
+   lenkestørrelsen her og på 18px i kartets bar. */
+.site-nav a.nav-brand {
+  font-size: var(--nav-brand-text);
   letter-spacing: 0.06em; text-transform: uppercase;
   text-decoration: none; color: var(--color-text); margin-right: auto;
 }
-.site-nav a { color: var(--color-accent-700); text-decoration: none; font-size: 14px; }
+.site-nav a { color: var(--color-accent-700); text-decoration: none; font-size: var(--nav-text); }
 .site-nav a:hover { color: var(--color-accent-900); }
 .site-nav a.btn { color: var(--color-bg); }
-.nav-muted { font-size: 13px; color: color-mix(in srgb, var(--color-text) 60%, transparent) !important; }
+.nav-muted { font-size: var(--nav-text); color: color-mix(in srgb, var(--color-text) 60%, transparent) !important; }
+
+/* Knappen og språkvelgeren i baren. Begge er delte komponenter med sine egne
+   standardstørrelser (`.btn` 14px, `.seg-opt` 13px) — her er de først og fremst
+   elementer i navigasjonen, og da er det navigasjonens størrelse som gjelder.
+   Dempinga av `.nav-muted` er en fargeforskjell; den skal ikke også være en
+   størrelsesforskjell.
+
+   Språkvelgeren treffes på sin egen klasse framfor på baren rundt: den står i to
+   navigasjoner, og kartets er en CSS-modul med hashede klassenavn som en regel
+   herfra ikke kan nå. `.lang-switch` finnes ingen andre steder enn i en bar. */
+.site-nav a.btn { font-size: var(--nav-text); }
+.lang-switch .seg-opt { font-size: var(--nav-text); }
 
 /* Anchors styled as buttons: the page-level `a:hover` rule above out-specifies
    `.btn-primary`, which would turn a filled button's label accent-900 on hover.
@@ -404,9 +452,7 @@ a.btn-secondary, a.btn-secondary:hover { color: var(--color-text); }
     flex-wrap: nowrap;
   }
   .site-nav .lang-switch { margin-left: 0; flex: none; }
-  .site-nav .nav-brand { font-size: 14px; letter-spacing: 0.04em; flex: none; }
-  .site-nav a { font-size: 13px; }
-  .nav-muted { font-size: 13px !important; }
+  .site-nav .nav-brand { letter-spacing: 0.04em; flex: none; }
   /* Nothing in a single row may wrap or shrink into an ellipsis. */
   .site-nav > * { white-space: nowrap; }
   /* Unntaket er kassa-notisen, som er den eneste teksten i raden som ikke er en
@@ -414,8 +460,12 @@ a.btn-secondary, a.btn-secondary:hover { color: var(--color-text); }
      hele sida sideveis. To linjer i baren er et lite tap; en side som skrenger
      sidelengs under kortskjemaet er et større. */
   .site-nav .nav-muted { white-space: normal; }
-  .site-nav a.btn { padding: 8px 9px; font-size: 13px; }
-  .site-nav .lang-switch .seg-opt { padding: 6px 7px; font-size: 13px; }
+  /* Bare padding her. Skriftstørrelsen sto tidligere i hver av disse reglene og
+     satte 13px — én av de tre størrelsene baren hadde samtidig. Plassen som
+     trengtes ble frigjort da lenkene flyttet inn i menyen; raden holder nå
+     merket, knappen og språkvelgeren, og har god margin på 320px. */
+  .site-nav a.btn { padding: 8px 9px; }
+  .site-nav .lang-switch .seg-opt { padding: 6px 7px; }
 
   /* "Norsk"/"English" costs 133px; "NO"/"EN" costs 70. That is the difference
      between the map's 56px topbar fitting on a phone and clipping a language
@@ -429,7 +479,7 @@ a.btn-secondary, a.btn-secondary:hover { color: var(--color-text); }
 /* Lenkene i menyen. Global klasse framfor `.site-nav a`, fordi den samme menyen
    også står i kartets topbar — som er en CSS-modul med sine egne klassenavn og
    ikke kan treffes av en regel som henger på sidenavigasjonen. */
-.nav-link { font-size: 14px; color: var(--color-accent-700); text-decoration: none; }
+.nav-link { font-size: var(--nav-text); color: var(--color-accent-700); text-decoration: none; }
 .nav-link:hover { color: var(--color-accent-900); }
 
 /* Fra 621px og opp finnes den ikke: `display: contents` løser opp både
@@ -463,11 +513,14 @@ a.btn-secondary, a.btn-secondary:hover { color: var(--color-text); }
   }
   .nav-menu[data-open] .nav-menu-panel { display: flex; }
 
-  /* Trykkflater, ikke navigasjonslenker klemt sammen: 15px tekst og 44px høyde
-     er minstemålet en finger trenger for å treffe riktig lenke av fem. */
+  /* Trykkflater, ikke navigasjonslenker klemt sammen: 44px høyde er minstemålet
+     en finger trenger for å treffe riktig lenke av fem. Høyden kommer av
+     `line-height` og padding — 20 + 12 + 12 — og ikke av skriftstørrelsen, så
+     lenkene her kan stå i samme størrelse som resten av navigasjonen uten at
+     flata blir mindre. */
   .nav-menu-panel a,
   .nav-menu-panel > span {
-    font-size: 15px;
+    font-size: var(--nav-text);
     line-height: 20px;
     padding: 12px 2px;
     border-bottom: 1px solid var(--color-divider);
@@ -479,16 +532,55 @@ a.btn-secondary, a.btn-secondary:hover { color: var(--color-text); }
      dempinga som «deaktivert». */
   .nav-menu-panel .nav-muted {
     color: var(--color-accent-700) !important;
-    font-size: 15px !important;
+    font-size: var(--nav-text) !important;
   }
   .nav-menu-panel a.btn {
     justify-content: center;
     margin-top: 10px;
     padding: 12px;
-    font-size: 15px;
+    font-size: var(--nav-text);
     border-bottom: 0;
   }
 
+}
+
+/* — skjelettet mellom to sider (`app/loading.tsx`) —
+
+   Hver rute her er dynamisk: de leser `tk_lang` og sesjonen, så ingen av dem
+   kan ligge ferdig bygget. Uten en `loading`-grense hopper Next over prefetch
+   av en dynamisk rute helt — det står i deres egen dokumentasjon — og da er en
+   navigasjon dette: du trykker, og ingenting skjer før serveren er ferdig.
+
+   Med grensa på plass hentes skallet på forhånd og tegnes med det samme, og
+   sida strømmer inn i det. Det som står i skallet må derfor kunne bygges
+   statisk: ingen informasjonskapsler, ingen sesjon, ingen oversettelser. Derfor
+   er ordmerket det eneste ordet her — det er det samme på begge språk. */
+.skeleton-bar {
+  display: flex; align-items: center; gap: var(--space-4);
+  padding: 10px 40px; border-bottom: 1px solid var(--color-divider);
+  height: 57px;
+}
+.skeleton-brand {
+  font-family: var(--font-heading); font-weight: var(--font-heading-weight);
+  font-size: 18px; letter-spacing: 0.06em; text-transform: uppercase;
+  color: var(--color-text); margin-right: auto;
+}
+.skeleton-block {
+  border-radius: var(--radius-md);
+  background: color-mix(in srgb, var(--color-text) 9%, transparent);
+}
+/* Pulsen sier «det kommer noe», og den skal ikke si det høyere enn det. */
+.skeleton-block { animation: skeleton-pulse 1.4s ease-in-out infinite; }
+@keyframes skeleton-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.45; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .skeleton-block { animation: none; }
+}
+.skeleton-main { padding-top: 48px; display: flex; flex-direction: column; gap: 14px; }
+@media (max-width: 620px) {
+  .skeleton-bar { padding: 10px 12px; gap: 10px; }
 }
 
 /* — section kicker: "01 · Abonnement" over a 1px rule — */

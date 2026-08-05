@@ -74,9 +74,14 @@ export interface Invoice {
   pdfUrl: string | null;
 }
 
-export interface Viewer {
+/** Hvem leseren er — det som kan avgjøres fra sesjonen alene, uten å slå opp
+ *  noe. Navigasjonen og tilbakemeldingsdialogen trenger bare dette. */
+export interface Identity {
   email: string | null;
   userId: string | null;
+}
+
+export interface Viewer extends Identity {
   subscription: Subscription | null;
   /** True when the viewer may read gated guide content. */
   hasAccess: boolean;

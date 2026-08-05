@@ -96,6 +96,36 @@ export function routesFor(t: Tour): readonly TourRoute[] {
   return ROUTES[t.slug] ?? [];
 }
 
+/** En rute uten geometrien: alt rutevelgeren i panelet viser. */
+export type RouteMeta = Omit<TourRoute, "line">;
+
+/** Rutene til hver tur, uten linjene.
+ *
+ *  Rutevelgeren på `/kart` viser navn, oppstigning, lengde og utgangspunkt — den
+ *  har aldri hatt bruk for punktene. Å hente dem derfra kostet likevel hele
+ *  `lib/routes` i nettleseren, fordi `routesFor` og geometrien bor i samme
+ *  modul: rundt 240 kB terrengpunkter lastet ned og parset før lista til
+ *  venstre kunne trykkes på.
+ *
+ *  Denne kjører på serveren og sendes inn som en prop, så det klienten får er
+ *  det den viser. Linjene lastes fortsatt — de skal tegnes — men i Leaflet-bunten
+ *  som uansett hentes for seg, og ikke foran alt annet. */
+export function routeMeta(): Record<string, RouteMeta[]> {
+  const out: Record<string, RouteMeta[]> = {};
+  for (const tour of TOURS) {
+    const routes = routesFor(tour);
+    if (!routes.length) continue;
+    out[tour.slug] = routes.map(({ id, name, trailhead, distanceM, gainM }) => ({
+      id,
+      name,
+      trailhead,
+      distanceM,
+      gainM,
+    }));
+  }
+  return out;
+}
+
 /** One route of a tour, by id. Falls back to the tour's own route when `id` is
  *  missing or unknown, so a stale `?rute=` in a shared link still draws. */
 export function routeById(t: Tour, id?: string | null): TourRoute | null {

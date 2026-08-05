@@ -28,7 +28,9 @@
 .brand {
   font-family: var(--font-heading);
   font-weight: var(--font-heading-weight);
-  font-size: 18px;
+  /* Samme token som `.nav-brand` i globals — merket er like stort i begge
+     navigasjonene, og det er ett sted å endre det. */
+  font-size: var(--nav-brand-text);
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-decoration: none;
@@ -459,7 +461,9 @@
    som var for bredt, slik at venstre halvdel havnet på negativ offset. */
 @media (max-width: 620px) {
   .topbar { gap: 10px; padding: 0 12px; }
-  .brand { font-size: 14px; }
+  /* Merket sto tidligere på 14px her, mot 18 på skjerm og mot 18 i sidenes egen
+     bar. Raden har plass til de fire punktene nå som lenkene ligger i menyen, så
+     ordmerket er det samme overalt. */
   /* Nothing in a single-line bar may wrap. Panelet under baren er unntatt — det
      er ikke i raden. */
   .topbar > * { white-space: nowrap; }

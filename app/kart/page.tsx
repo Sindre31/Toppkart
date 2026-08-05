@@ -3,7 +3,8 @@ import { NavLinks } from "@/components/SiteChrome";
 import { getViewer } from "@/lib/access";
 import { getLang } from "@/lib/i18n/server";
 import { mapDict } from "@/lib/i18n/map";
-import { getTour, routesFor } from "@/lib/tours";
+import { localizeTours } from "@/lib/i18n/content";
+import { REGIONS, TOURS, getTour, routeMeta, routesFor } from "@/lib/tours";
 import MapView from "./MapView";
 
 /** `?tur=` og `?rute=` velger hva panelet åpner på — de er navigasjon, ikke nye
@@ -37,11 +38,23 @@ export default async function KartPage({
   const initialRouteId =
     tour && routeId && routesFor(tour).some((r) => r.id === routeId) ? routeId : null;
 
+  /* Turene og rutenavnene lages her framfor i `MapView`.
+   *
+   *  Datasettet og den engelske overlay-en er store moduler, og så lenge
+   *  klientkomponenten importerte dem, lå de i bunten `/kart` må laste og kjøre
+   *  før noe på sida svarer. Ingenting av det er avhengig av noe nettleseren
+   *  vet: språket leses av en informasjonskapsel, som serveren har lest
+   *  allerede. Så det som sendes over er resultatet — turene ferdig oversatt, og
+   *  rutene uten geometrien de ikke viser. Linjene tegnes av Leaflet-halvdelen,
+   *  som lastes for seg. */
   return (
     <MapView
       lang={lang}
       hasAccess={viewer.hasAccess}
       nav={<NavLinks lang={lang} current="/kart" />}
+      tours={localizeTours(TOURS, lang)}
+      regions={REGIONS}
+      routeMeta={routeMeta()}
       initialSlug={initialSlug}
       initialRouteId={initialRouteId}
     />

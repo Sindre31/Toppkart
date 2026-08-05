@@ -3,7 +3,7 @@ import type { ReactNode } from "react";
 
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { NavMenu } from "@/components/NavMenu";
-import { getViewer } from "@/lib/access";
+import { getIdentity } from "@/lib/access";
 import { SITE } from "@/lib/config";
 import type { Lang } from "@/lib/i18n";
 import { commonDict } from "@/lib/i18n/common";
@@ -97,6 +97,11 @@ export async function NavLinks({ lang, current }: { lang: Lang; current?: string
  *  given reader. Signed in you get «Min side» everywhere; signed out you get
  *  the way in and the trial.
  *
+ *  Den spør `getIdentity()`, ikke `getViewer()`: her er spørsmålet «er noen
+ *  logget inn», og abonnementsraden — som `getViewer()` alltid henter — hadde
+ *  ingen leser på de sidene som bare rendrer denne. Det var én databasespørring
+ *  per sidevisning på `/`, `/turer` og de juridiske sidene, til ingen nytte.
+ *
  *  A server component, so the session is read where the session lives. Kartets
  *  topbar ligger i en klientkomponent og kan ikke kalle den selv; `/kart`
  *  rendrer `NavLinks` på serveren og sender resultatet inn som prop, slik at
@@ -109,7 +114,7 @@ export async function NavLinks({ lang, current }: { lang: Lang; current?: string
  */
 export async function AccountNav({ lang, current }: { lang: Lang; current?: string }) {
   const t = commonDict(lang);
-  const { userId } = await getViewer();
+  const { userId } = await getIdentity();
 
   if (userId) {
     return (

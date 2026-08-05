@@ -61,7 +61,20 @@ function strayAuthCode(request: NextRequest): NextResponse | null {
 }
 
 /** Keeps the Supabase auth cookie fresh on every navigation. In demo mode
- *  (no keys) this is a pass-through — nothing to refresh, nothing to crash on. */
+ *  (no keys) this is a pass-through — nothing to refresh, nothing to crash on.
+ *
+ *  Dette er den ene tingen som står foran hver eneste sidevisning, så det den
+ *  koster, koster den overalt. Den kostet en rundtur til auth-serveren:
+ *  `getUser()` spør alltid over nettet, og ingenting ble sendt til leseren før
+ *  svaret var inne. `getClaims()` svarer på det samme — er dette tokenet ekte og
+ *  gyldig — ved å kontrollere signaturen lokalt mot prosjektets JWKS, og går
+ *  bare på nettet når sesjonen faktisk må fornyes. Se `lib/access.ts`, som gjør
+ *  det samme byttet på sidesida.
+ *
+ *  Fornyelsen må skje nettopp her og ikke i sida: en serverkomponent kan ikke
+ *  skrive informasjonskapsler, så et token som fornyes der blir aldri lagret.
+ *  `getClaims()` fornyer selv når tokenet nærmer seg utløp, og `setAll` under
+ *  fanger det opp. */
 export async function middleware(request: NextRequest) {
   const strayCode = strayAuthCode(request);
   if (strayCode) return strayCode;
@@ -70,6 +83,11 @@ export async function middleware(request: NextRequest) {
   if (langResponse) return langResponse;
 
   if (!isSupabaseConfigured) return NextResponse.next();
+
+  /* En prefetch er en gjetning om hvor leseren skal, ikke et besøk. Sesjonen
+     hører til besøket: den fornyes når noen faktisk kommer fram, og fram til da
+     er det ingenting her som må gjøres for en side som kanskje aldri åpnes. */
+  if (request.headers.get("next-router-prefetch")) return NextResponse.next();
 
   let response = NextResponse.next({ request });
 
@@ -86,8 +104,8 @@ export async function middleware(request: NextRequest) {
     },
   });
 
-  // Touching getUser() is what triggers the refresh + Set-Cookie.
-  await supabase.auth.getUser();
+  // Touching the session is what triggers the refresh + Set-Cookie.
+  await supabase.auth.getClaims();
 
   return response;
 }
