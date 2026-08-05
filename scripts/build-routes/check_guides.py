@@ -22,9 +22,27 @@ REASSURING = [
     (re.compile(r"stays below (\d+)", re.I), "under-N-degrees claim (EN)"),
     (re.compile(r"ingen kjente utløpssoner", re.I), "no-known-runout claim (NO)"),
     (re.compile(r"no known runout", re.I), "no-known-runout claim (EN)"),
-    (re.compile(r"\btrygg\b|\btrygge\b", re.I), "calls terrain safe (NO)"),
-    (re.compile(r"\bsafe\b", re.I), "calls terrain safe (EN)"),
+    # trygg / trygt / trygge / tryggere / trygghet. The old pattern listed
+    # "trygg" and "trygge" only, so "trygt terreng" — the most natural way to
+    # write the claim — was never checked at all.
+    (re.compile(r"\btryg[gt]\w*\b", re.I), "calls terrain safe (NO)"),
+    # safe / safer / safest. "the safest line choice on the mountain" is the
+    # claim this rule exists for, and the bare-word pattern walked past it.
+    (re.compile(r"\bsaf(?:e|er|est)\b", re.I), "calls terrain safe (EN)"),
 ]
+
+# Denying that terrain is safe is the opposite of claiming it is, and the two
+# read alike to a word search. Every guide's forecast paragraph ends "an empty
+# page does not mean a safe mountain" / "ei tom side betyr ikkje trygt fjell",
+# and matching on the word alone reports the warning as the thing it warns
+# against.
+#
+# A denial counts only when it sits immediately in front of the word, in the same
+# sentence: a negation this close cannot be doing anything but negating it. The
+# gap is what keeps the rule honest — "not steep here, and safe" is two clauses
+# and is still reported, as it should be. The one shape it would wave through is
+# "not only is it safe", which nothing in this corpus writes.
+DENIAL = re.compile(r"\b(ikkje|ikke|aldri|not|never|no)\b[^.!?;:]{0,25}$", re.I)
 
 NUM_UNIT = re.compile(
     r"(\d[\d\s.,]*)\s*(moh|m\.o\.h|høydemeter|vertical met|metres|meters|m\b|km\b|grader|degrees|°)",
@@ -141,7 +159,7 @@ def main():
                                 f"[{lang}] {label}: says under {claimed:.0f}° but the "
                                 f"line reaches {real}° — …{ctx.strip()}…"
                             )
-                    else:
+                    elif not DENIAL.search(blob[max(0, m.start() - 40): m.start()]):
                         issues.append(f"[{lang}] {label}: …{ctx.strip()}…")
 
         if issues:

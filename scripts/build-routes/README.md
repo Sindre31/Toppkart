@@ -114,6 +114,7 @@ python3 guide_brief.py <slug> # the writing brief one agent gets for one tour
 
 TOPPKART_WF=<transcripts> python3 harvest_guides.py  # -> guides.json
 python3 check_guides.py       # mechanical pass; must be read, not just run
+python3 test_check_guides.py  # pins the reassurance rule in both directions
 python3 emit_guides.py [slug…]  # -> ../../lib/guides.ts, GUIDE_EN, seed.sql, hasGuide
 ```
 
@@ -255,6 +256,31 @@ sourced figures rather than catching invented ones: the per-100 m band table and
 the corridor's own waypoint elevations are now facts a guide may quote, and a
 number written with a decimal comma in Norwegian research ("1,4 km eksponert
 rygg") is read as one number rather than two.
+
+### The reassurance rule, and why it is easy to get backwards
+
+The second half of the check looks for copy that tells the reader terrain is
+safe. It has to do two opposite things at once, and a word search only does one
+of them: every guide's forecast paragraph ends "an empty page does not mean a
+safe mountain", so the rule reported the warning as the thing it warns against —
+on both tours that carry the sentence, every run.
+
+A denial now exempts a match, but only when it sits immediately in front of the
+word and inside the same sentence. That gap is the whole rule: "not steep here,
+and the bowl below is safe" is two clauses and is still reported. Widening it to
+"a negation anywhere in the sentence" would have made the rule silent, which is
+worse than the noise — so `test_check_guides.py` pins fifteen cases in both
+directions and is the thing to run after touching either pattern.
+
+Both word patterns were also too narrow to do the job they existed for. The
+Norwegian listed `trygg` and `trygge`, so `trygt terreng` — the most natural way
+to write the claim — was never checked at all, and the sentence that started this
+escaped in Norwegian by luck rather than by rule. The English matched `safe` but
+not `safest`, which is how "the northeast ridge is the safest line choice on the
+mountain" sat unread in Kavringtinden's avalanche paragraph. Widening both caught
+it on the first run. It now says *gentlest of the documented line choices*, which
+is what the paragraph goes on to give the numbers for — safest is a judgement
+about cornices, wind and consequence; gentlest is a measurement.
 
 Neither tool can tell you the route goes up the wrong valley. That is what the
 second agent is for.

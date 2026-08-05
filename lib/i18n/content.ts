@@ -368,7 +368,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
     avalanche: [
       {
         title: "The route",
-        body: "The northeast ridge is the safest line choice on the mountain, but it is not flat. The east side below the crest runs past 30 degrees in places between 900 and 950 m, the steepest hundred metres on the line itself lies between 800 and 900 m at 24.9 degrees on average, and the steepest step measures 30.3. The ridge is often wind-scoured the whole way up — that means hard snow on the crest and wind slab in the lee slopes right beside it.",
+        body: "The northeast ridge is the gentlest of the documented line choices on the mountain, but it is not flat. The east side below the crest runs past 30 degrees in places between 900 and 950 m, the steepest hundred metres on the line itself lies between 800 and 900 m at 24.9 degrees on average, and the steepest step measures 30.3. The ridge is often wind-scoured the whole way up — that means hard snow on the crest and wind slab in the lee slopes right beside it.",
       },
       {
         title: "The terrain off it",
