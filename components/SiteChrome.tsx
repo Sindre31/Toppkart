@@ -50,14 +50,27 @@ export async function AccountNav({ lang }: { lang: Lang }) {
       </Link>
     );
   }
-  /* Signed out there is one call to action and no «Logg inn» beside it. The
-     trial page opens with «Fortsett med Google», and that single button both
-     creates an account and signs an existing one in — so a second nav item
-     pointing at the same round-trip only spent space a phone does not have. */
+  /* Signed out: the way back in, then the way in for the first time.
+   *
+   *  This nav used to carry only «Prøv gratis», on the reasoning that
+   *  `signInWithOAuth` both creates an account and signs an existing one in, so
+   *  the trial page was already the door for everybody and a second link led to
+   *  the same round trip. True of the mechanism, wrong about the reader: a
+   *  returning subscriber looking for their account does not read «Prøv gratis»
+   *  as «this is also how you sign in», and had nowhere obvious to click.
+   *
+   *  The cost is one more item in a row that is tight on a phone. `.site-nav`
+   *  scrolls on its own axis below ~360px rather than wrapping, so the failure
+   *  mode is a nudge sideways in the bar, not a page that scrolls sideways. */
   return (
-    <Link className="btn btn-primary" href="/betaling">
-      {t.trial}
-    </Link>
+    <>
+      <Link className="nav-muted" href="/logg-inn">
+        {t.login}
+      </Link>
+      <Link className="btn btn-primary" href="/betaling">
+        {t.trial}
+      </Link>
+    </>
   );
 }
 
