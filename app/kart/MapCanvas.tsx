@@ -3,7 +3,7 @@
 /** The Leaflet half of the map page. Loaded through `next/dynamic` with
  *  `ssr: false` from MapView — Leaflet touches `window` at import time. */
 
-import { useEffect, useMemo } from "react";
+import { useEffect, useMemo, useState } from "react";
 import {
   CircleMarker,
   MapContainer,
@@ -19,7 +19,7 @@ import "leaflet/dist/leaflet.css";
 import { GRADE_COLORS } from "@/lib/config";
 import type { Lang } from "@/lib/i18n";
 import { mapDict } from "@/lib/i18n/map";
-import { routeById, routesFor } from "@/lib/tours";
+import type { TourRoute } from "@/lib/routes";
 import type { Tour } from "@/lib/types";
 
 /** Initial view — mainland Norway, as in the prototype. */
@@ -31,6 +31,44 @@ const NORWAY: LatLngBoundsExpression = [
 const MARKER_STROKE = "#f2f2f3";
 const ROUTE_ACCENT = "#416180"; // accent-700
 const ROUTE_ALT = "#8aa2b8"; // the peak's other routes, a step back
+
+type RouteTable = Record<string, readonly TourRoute[]>;
+
+/** Terrenglinjene, hentet i sin egen bunt så snart kartet er montert.
+ *
+ *  De lå tidligere i den samme bunten som Leaflet, og det er en dyrere plass enn
+ *  den ser ut som: `MapContainer` rendres ikke før hele bunten er lastet, og
+ *  `TileLayer` ber ikke om en eneste flis før den er rendret. 47 rutelinjer —
+ *  71 kB komprimert, 62 % av bunten — stod altså på rekke *foran* det første
+ *  kartbildet, ikke ved siden av det.
+ *
+ *  Alternativet var å hente linjene per valgt topp. Det sparer de samme
+ *  bytene, men flytter kostnaden til klikket: hver rute er ~1,4 kB
+ *  komprimert, så det man betaler er ikke data, det er en rundtur — hver gang,
+ *  hver økt, og på de forbindelsene folk faktisk har i fjellet. Å tegne ruta med
+ *  det samme er det denne sida er til for.
+ *
+ *  Så: alt sammen, men ikke i veien. Importen starter når kartet monteres og
+ *  lastes parallelt med flisene, og er nede lenge før noen rekker å velge en
+ *  topp. Fram til da er kartet fullt brukbart — det mangler bare linja.
+ *
+ *  Modulen er ren data uten importer, så den blir en egen bunt av seg selv, og
+ *  Turbopack gir den et innholdsbasert navn som kan bufres for godt. */
+function useRouteTable(): RouteTable | null {
+  const [routes, setRoutes] = useState<RouteTable | null>(null);
+
+  useEffect(() => {
+    let alive = true;
+    import("@/lib/routes").then((m) => {
+      if (alive) setRoutes(m.ROUTES);
+    });
+    return () => {
+      alive = false;
+    };
+  }, []);
+
+  return routes;
+}
 
 export interface MapCanvasProps {
   tours: readonly Tour[];
@@ -59,18 +97,29 @@ export interface MapCanvasProps {
  *  and round-joined rather than as the dashed placeholder they replace. */
 function RouteLayer({
   tour,
+  routeTable,
   routeId,
   onSelectRoute,
   startLabel,
 }: {
   tour: Tour;
+  /** Linjene, når de har landet. Null i det korte vinduet etter montering der
+   *  bunten fortsatt er på vei; da tegnes ingen rute, og resten av kartet
+   *  virker som før. */
+  routeTable: RouteTable;
   routeId: string | null;
   onSelectRoute: (routeId: string) => void;
   startLabel: string;
 }) {
   const map = useMap();
-  const routes = useMemo(() => routesFor(tour), [tour]);
-  const active = useMemo(() => routeById(tour, routeId), [tour, routeId]);
+  const routes = useMemo(() => routeTable[tour.slug] ?? [], [routeTable, tour]);
+  /* Samme regel som `routeById` i `lib/tours`: en ukjent eller manglende id
+     faller tilbake på turens egen rute, så en foreldet `?rute=` i en delt lenke
+     fortsatt tegner noe. */
+  const active = useMemo(
+    () => (routeId ? routes.find((r) => r.id === routeId) : undefined) ?? routes[0] ?? null,
+    [routes, routeId],
+  );
 
   const lines = useMemo(
     () =>
@@ -184,6 +233,7 @@ export default function MapCanvas({
 }: MapCanvasProps) {
   const t = mapDict(lang);
   const selected = tours.find((tour) => tour.slug === selectedSlug) ?? null;
+  const routeTable = useRouteTable();
 
   return (
     <MapContainer bounds={NORWAY} zoomControl={false} style={{ height: "100%", width: "100%" }}>
@@ -218,10 +268,11 @@ export default function MapCanvas({
         );
       })}
 
-      {selected ? (
+      {selected && routeTable ? (
         <RouteLayer
           key={selected.slug}
           tour={selected}
+          routeTable={routeTable}
           routeId={selectedRouteId}
           onSelectRoute={onSelectRoute}
           startLabel={t.startTooltip}
