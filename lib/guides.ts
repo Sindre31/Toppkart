@@ -435,10 +435,10 @@ export const GUIDES: Record<string, TourGuide> = {
   himmeltindan: {
     slug: "himmeltindan",
     intro:
-      "Vestvågøys høyeste fjell, med start i fjæra på Haukland og 987 høydemeter opp på tre og en halv kilometer. Kort tur, men siste tredjedel er bratt og toppryggen er smal.",
+      "Vestvågøys høyeste fjell, med start i fjæra på Haukland og 988 høydemeter opp på knapt fire kilometer. Kort tur, men siste tredjedel er bratt og toppryggen er smal.",
     ascent: [
       "Fra parkeringen på Hauklandstranda, seks meter over havet, går du nordover mot søndre munning av tunnelen til Utakleiv. Ikke gjennom tunnelen: ta serviceveien som klatrer nordøstover over den, forbi Klumpan, og følg den til den flater ut på benken på 150 moh ved munningen av Durmålsdalen. Her starter den merkede stien, og den går hele veien opp til varden på 931.",
-      "Videre nordøstover opp sørsida av Durmålsdalen. Terrenget er åpent hele veien — det er ingen skog på denne turen — og linja legger seg i lange sikksakk opp mot skulderen ved Molheia. Det brattner fra 700 moh: hundremeteren mellom 700 og 800 moh ligger på 28,6 grader i snitt, og bratteste steget på linja måler 36,1 grader. Ikke skjær rett opp vestflanken av toppryggen; den ligger på 34 til 37 grader i snitt med partier opp mot 46. Høyden tas på skulderen på sørsida.",
+      "Videre nordøstover opp sørsida av Durmålsdalen. Terrenget er åpent hele veien — det er ingen skog på denne turen — og linja legger seg i lange sikksakk opp mot skulderen ved Molheia. Det brattner fra 300 moh: beltene fra 300 til 700 moh ligger på 21,7 til 23,2 grader i snitt, og bratteste steget på linja måler 28,4 grader, mellom 666 og 687 moh. Ikke skjær rett opp vestflanken av toppryggen; den ligger på 34 til 37 grader i snitt med partier opp mot 46. Høyden tas på skulderen på sørsida.",
       "Fra Molheia rundt 800 moh er det bare tretti meter opp til fortoppen på 830 og den vesle flata der. Det er det siste brede stedet på turen — sørøst for flata faller terrenget 38 grader i snitt. Herfra og ut er du på rygg.",
       "Fra flata går ryggen nordover, og den er smal. Følg krona til varden på 931. Ikke gå ut på østsida — der ligger store hengskavler over svært bratt lende: østflanken under varden måler 42 grader i snitt, sørøstflanken 44, med partier på 54 til 57. Videre nordover faller ryggen til 898 moh og stiger så mot hovedtoppen, som måler 956 moh i terrengmodellen. Et militært radaranlegg står på ryggen på 936 moh, vel hundre meter før toppen; området rundt det er sperret, så følg krona forbi og rett deg etter skilting på stedet.",
     ],
@@ -450,7 +450,7 @@ export const GUIDES: Record<string, TourGuide> = {
     avalanche: [
       {
         title: "Ruta",
-        body: "Nedre halvdel er slak og åpen. Det brattner fra 400 moh: hundremeteren mellom 400 og 500 moh ligger på 24,2 grader i snitt, og over 500 moh holder beltene 20 til 21 grader helt til toppflata. Bratteste steget på linja måler 29,5 grader. Fra fortoppen og nordover er ryggen smal, med et fall til 898 moh og femti meter opp igjen før hovedtoppen.",
+        body: "Nedre halvdel er slak og åpen. Det brattner fra 300 moh: beltene fra 300 til 800 moh holder 19,4 til 23,2 grader i snitt, brattest mellom 500 og 600 moh. Bratteste steget på linja måler 28,4 grader, mellom 666 og 687 moh. Fra fortoppen og nordover er ryggen smal, med et fall til 898 moh og femti meter opp igjen før hovedtoppen.",
       },
       {
         title: "Terrenget rundt",
@@ -462,11 +462,11 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,199 L28,199 L51,195 L72,191 L97,186 L114,178 L128,171 L151,170 L173,170 L199,165 L221,159 L242,152 L270,143 L291,135 L306,128 L320,121 L342,109 L361,100 L378,92 L393,85 L413,76 L427,69 L441,63 L460,55 L472,49 L487,44 L513,37 L541,27 L556,23 L584,23 L600,18",
+      path: "M0,199 L34,198 L62,194 L90,185 L109,177 L118,172 L145,171 L166,171 L187,169 L214,161 L238,153 L270,142 L298,128 L314,120 L330,113 L346,104 L360,96 L374,89 L395,80 L411,72 L429,63 L444,56 L464,47 L492,41 L513,34 L536,25 L557,28 L584,23 L600,18",
       startLabel: "7 moh",
       endLabel: "956 moh",
-      distanceLabel: "3,8 km",
-      caption: "987 høydemeter fra fjæra på Haukland på 3,79 km; det bratteste ligger mellom 400 og 500 moh.",
+      distanceLabel: "3,9 km",
+      caption: "988 høydemeter fra fjæra på Haukland på 3,89 km; det bratteste ligger mellom 500 og 600 moh.",
     },
   },
   stornappstinden: {
@@ -1210,18 +1210,18 @@ export const GUIDES: Record<string, TourGuide> = {
     intro:
       "Kort vei fra bilen til en topp som ser ut over hele Hemsedal. Turen starter allerede over skoggrensa, og terrenget er åpent fra første steg — en fin førstetur på ski i dalen, og en rask formiddagstopp for den som kjenner den.",
     ascent: [
-      "Fra Hornslie, der Torsetstølvegen ender på 1056 moh, går du rett opp den første bakken. Den er kortere enn den ser ut — det bratteste hundremeterspennet på hele ruta, 1000–1100 moh, ligger på 17,2° i snitt — og over kanten flater det ut. Her er ingen skog å forholde seg til: hele turen går i åpent terreng.",
-      "Over kanten åpner Hødnetjedne-bassenget seg — Horntjerne på Kartverkets kart — og du gir tilbake 46 høydemeter ned mot vannet på 1191 moh. Om vinteren går linja rett over det frosne vannet; sommerstien holder venstre side. På andre sida deler ruta seg i to merkede linjer: én lengre og slakere ut på nordvestskulderen, én kortere og brattere opp østryggen. Denne beskrivelsen følger østryggen.",
+      "Fra Hornslie, der Torsetstølvegen ender på 1056 moh, går du rett opp den første bakken. Den er kortere enn den ser ut — den første hundremeteren, 1000–1100 moh, ligger på 18,8° i snitt — og over kanten flater det ut. Her er ingen skog å forholde seg til: hele turen går i åpent terreng.",
+      "Over kanten åpner Hødnetjedne-bassenget seg — Horntjerne på Kartverkets kart — og du gir tilbake 45 høydemeter ned mot vannet på 1191 moh. Om vinteren går linja rett over det frosne vannet; sommerstien holder venstre side. På andre sida deler ruta seg i to merkede linjer: én lengre og slakere ut på nordvestskulderen, én kortere og brattere opp østryggen. Denne beskrivelsen følger østryggen.",
       "Fra østryggen er det jevn stigning vestover til toppen, med Veslehødn — Veslehorn på kartet — og hele Hemsedalen i ryggen. Toppflata er liten, og sørkanten ligger nærmere varden enn den ser ut: åtti meter sør for toppunktet faller terrenget 96 høydemeter på tjue meter grunn. Sørøstkanten gjør det samme, 63° over de bratteste seksti meterne, og sørvestkanten 57°. Hold ryggen inn til varden, og hold deg nord for kanten når du står der.",
     ],
     descent: [
       "Samme vei ned. Østryggen gir jevn, oversiktlig kjøring ned mot Hødnetjedne, og bassenget under er det slakeste terrenget på turen — regn med å stake.",
-      "Vanligste feil: å la terrenget dra deg nordøstover mot Veslehødn i stedet for å svinge ned mot Hornslie. Øst for Veslehødn stuper Hydnefossen 155 meter fritt — høydemodellen tar 151 av dem i ett eneste tjuemeterssteg — og under fossen holder terrenget 50° videre ned. Fra vannet går hjemveien sørøstover, og husk de 46 høydemeterne opp av bassenget før den siste bakken ned til bilen.",
+      "Vanligste feil: å la terrenget dra deg nordøstover mot Veslehødn i stedet for å svinge ned mot Hornslie. Øst for Veslehødn stuper Hydnefossen 155 meter fritt — høydemodellen tar 151 av dem i ett eneste tjuemeterssteg — og under fossen holder terrenget 50° videre ned. Fra vannet går hjemveien sørøstover, og husk de 45 høydemeterne opp av bassenget før den siste bakken ned til bilen.",
     ],
     avalanche: [
       {
         title: "Ruta",
-        body: "Selve linja er slak. Det bratteste hundremeterspennet, 1000–1100 moh i den første bakken opp fra Hornslie, ligger på 17,2° i snitt. Det bratteste enkeltpartiet ligger i bakken opp fra Hødnetjedne, mellom 1200 og 1230 moh, og måler 31,1° — det eneste stedet på linja som passerer 30°.",
+        body: "Selve linja er slak. Det bratteste hundremeterspennet er 1400–1500 moh, den siste stigninga mot varden, på 19,0° i snitt; den første bakken opp fra Hornslie ligger på 18,8°. Det bratteste enkeltpartiet ligger mellom 1370 og 1385 moh og måler 25,6° — ingen del av linja passerer 30°.",
       },
       {
         title: "Terrenget utenfor",
@@ -1233,11 +1233,11 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,200 L17,188 L41,174 L60,158 L76,151 L98,143 L125,132 L144,126 L166,124 L189,126 L208,128 L228,129 L243,130 L261,132 L279,133 L297,135 L324,141 L342,142 L369,142 L389,142 L412,140 L432,126 L443,121 L459,112 L468,106 L485,92 L500,85 L520,77 L533,63 L549,51 L567,40 L585,26 L600,18",
+      path: "M0,200 L17,188 L45,171 L65,155 L81,150 L108,138 L126,132 L153,124 L171,124 L198,127 L216,130 L234,129 L251,130 L270,132 L296,137 L315,140 L343,142 L370,142 L397,142 L415,139 L433,126 L446,121 L460,112 L469,106 L484,93 L496,85 L514,81 L523,74 L535,66 L550,54 L560,47 L577,33 L588,25 L600,18",
       startLabel: "1056 moh",
       endLabel: "1478 moh",
       distanceLabel: "3,0 km",
-      caption: "472 høydemeter og 3,00 km fra Hornslie til toppen, med 46 meter gitt tilbake i Hødnetjedne-bassenget.",
+      caption: "471 høydemeter og 2,99 km fra Hornslie til toppen, med 45 meter gitt tilbake i Hødnetjedne-bassenget.",
     },
   },
   lonahorgi: {
@@ -1280,21 +1280,21 @@ export const GUIDES: Record<string, TourGuide> = {
   folarskardnuten: {
     slug: "folarskardnuten",
     intro:
-      "Buskeruds høgaste, og ein tur der 12,49 km og 969 høgdemeter kjem nesten heilt utan bratt terreng. Det einaste trinnet som krev noko står ut av Folarskardet, og det er kort — resten er lang, jamn innmarsj over Hallingskarvet.",
+      "Buskeruds høgaste, og ein tur der 12,61 km og 967 høgdemeter kjem nesten heilt utan bratt terreng. Det einaste trinnet som krev noko står ut av Folarskardet, og det er kort — resten er lang, jamn innmarsj over Hallingskarvet.",
     ascent: [
-      "Frå p-plassen ved Rv7 på Haugastøl, 1007 moh, følgjer du den kvista DNT-vinterruta mot Raggsteindalen nordover. Dei fyrste elleve kilometrane er innmarsj: over stigninga på 1212 moh, ut på flatene under Folarskardet på 1326 moh, og i alt rundt 600 høgdemeter fordelte så tynt at bandet mellom 1200 og 1300 moh måler 1,5 grader i snitt. Det er stakelende, ikkje skinnlende.",
+      "Frå p-plassen ved Rv7 på Haugastøl, 1007 moh, følgjer du den kvista DNT-vinterruta mot Raggsteindalen nordover. Dei fyrste elleve kilometrane er innmarsj: over stigninga på 1212 moh, ut på flatene under Folarskardet på 1326 moh, og i alt rundt 600 høgdemeter fordelte så tynt at bandet mellom 1200 og 1300 moh måler 1,6 grader i snitt. Det er stakelende, ikkje skinnlende.",
       "Ved Lordehytta i Folarskardet, 1620 moh, går du av merkinga. Hytta er frå 1880 og står i sjølve skardet; tjørna like ved ligg på 1603 moh og er vatn under snøen. Rutebeskrivinga seier at ein forlèt merkinga ved tjørna og følgjer varder oppover, og det er den linja som er teikna her — ikkje straklinja frå hytta mot toppen, som måler 40,3 grader som verste steg.",
-      "Trinnet ut av skardet er turens einaste bratte parti: 35 til 40 grader, målt til 36,7 grader over 41 meter på den slakaste ramma nokon finn. Linja seier det same: 37,8 grader over det brattaste 30-metersvindauget, mellom 1731 og 1760 moh. Bandsnittet på 20,6 grader for 1700 til 1800 moh er derimot eit snitt over 234 meter grunn og skjuler trinnet heilt. Er snøen hard eller avblåsen, er det her folk tek på seg stegjern.",
-      "Over trinnet, på om lag 1830 moh, flatar det ut att, og dei siste hundre høgdemetrane nordvestover til varden på 1927 moh går i 11 grader i snitt. Merk at ruta endar her: sjølve toppunktet på Folarskardnuten er 1933 moh og ligg om lag 820 meter vest-sørvest, på den andre sida av eit grunt skar. Terrengmodellen gjev 1932,1 der mot 1927,3 på punktet ruta går til. Toppplatået er ope og har lite å navigere etter.",
+      "Trinnet ut av skardet er turens einaste bratte parti: 35 til 40 grader, målt til 36,7 grader over 41 meter på den slakaste ramma nokon finn. Linja skrår over trinnet i staden for å ta det rett på, og les difor lågare: 27,2 grader over det brattaste 30-metersvindauget, mellom 1775 og 1808 moh. Bandsnittet på 18,7 grader for 1700 til 1800 moh er eit snitt over 320 meter grunn og skjuler trinnet heilt. Er snøen hard eller avblåsen, er det her folk tek på seg stegjern.",
+      "Over trinnet, på om lag 1830 moh, flatar det ut att, og dei siste 702 metrane går vest-sørvestover — peiling 253 grader — opp til toppen på 1932 moh, jamt frå 0,5 til 17,5 grader. Merk at varden i rutebeskrivingane står på nordausttoppen: 1927 moh, 821 meter unna på peiling 36 grader, med eit skar på 1900 moh imellom. Terrengmodellen gjev 1932,2 på toppunktet og 1927,3 på nordausttoppen, mot 1933 i den førte høgda. Toppplatået er ope og har lite å navigere etter.",
     ],
     descent: [
-      "Ned same veg: over kanten av trinnet, ned ramma til Lordehytta, og deretter dei elleve kilometrane tilbake til Haugastøl. Nedkøyringa er sørvend — fallvekta gjennomsnittsretning er 167 grader — men ho er òg kort. Under skardet er det lang, slak transport, og har du motvind på flatene tek heimvegen like lang tid som innmarsjen.",
+      "Ned same veg: over kanten av trinnet, ned ramma til Lordehytta, og deretter dei elleve kilometrane tilbake til Haugastøl. Nedkøyringa er sørvend — fallvekta gjennomsnittsretning er 154 grader — men ho er òg kort. Under skardet er det lang, slak transport, og har du motvind på flatene tek heimvegen like lang tid som innmarsjen.",
       "Vanlegaste feil: å gå ut på nordsida av skarvet for å finne ei betre linje ned. Skavlane på nordsida heng langt ut over Raggsteindalen, og kanten er ikkje synleg frå platået i flatt lys. Den andre feilen er å undervurdera vêrvindauget: turen er ikkje bratt, men han er lang, og ein snuoperasjon på toppplatået i dårleg sikt betyr elleve kilometer att i motvind.",
     ],
     avalanche: [
       {
         title: "Ruta",
-        body: "Trinnet opp frå Folarskardet er 35 til 40 grader og er det einaste verkelege skredterrenget på turen. Linja som er teikna går over trinnet, ikkje utanom det. Tala for henne — 37,8 grader som brattaste parti, 20,6 i snitt for bandet 1700 til 1800 moh — er lesne av same terrengmodell: snittet skjuler trinnet, det brattaste vindauget viser det. Bommar du på ramma, måler nærliggjande linjer 40 til 46 grader. Trinnet kan òg vera avblåse og isete, og då er det stegjern og ikkje skredvurdering som er problemet.",
+        body: "Trinnet opp frå Folarskardet er 35 til 40 grader og er det einaste verkelege skredterrenget på turen. Linja som er teikna går over trinnet, ikkje utanom det. Tala for henne — 27,2 grader som brattaste parti, 18,7 i snitt for bandet 1700 til 1800 moh — gjeld sporet og ikkje ramma: linja skrår over trinnet, medan fallinja der måler 36,7 grader over 41 meter. Bommar du på ramma, måler nærliggjande linjer 40 til 46 grader. Trinnet kan òg vera avblåse og isete, og då er det stegjern og ikkje skredvurdering som er problemet.",
       },
       {
         title: "Terrenget rundt",
@@ -1306,11 +1306,11 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,200 L26,181 L47,182 L67,179 L91,174 L117,173 L143,168 L168,167 L192,162 L214,160 L233,157 L255,157 L277,157 L305,154 L328,150 L350,146 L373,141 L396,135 L419,128 L443,119 L466,114 L488,104 L509,83 L533,79 L552,64 L568,41 L588,24 L600,18",
+      path: "M0,200 L18,187 L42,182 L63,180 L87,176 L108,174 L134,169 L158,167 L183,164 L205,161 L226,158 L245,157 L267,157 L293,156 L316,153 L338,147 L361,143 L383,140 L402,132 L423,124 L445,119 L468,113 L492,96 L515,83 L539,74 L556,49 L574,37 L599,18 L600,18",
       startLabel: "1007 moh",
-      endLabel: "1927 moh",
-      distanceLabel: "12,5 km",
-      caption: "969 høgdemeter og 12,49 km frå Haugastøl, der elleve av kilometrane er innmarsj og eitt kort trinn ut av Folarskardet er alt som er bratt.",
+      endLabel: "1932 moh",
+      distanceLabel: "12,6 km",
+      caption: "967 høgdemeter og 12,61 km frå Haugastøl, der elleve av kilometrane er innmarsj og eitt kort trinn ut av Folarskardet er alt som er bratt.",
     },
   },
   oksen: {

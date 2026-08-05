@@ -8,7 +8,7 @@
   "grade": 3,
   "aspect": "NV",
   "season": "feb–mai",
-  "hasGuide": false
+  "hasGuide": true
  },
  "store-blamann": {
   "name": "Store Blåmann",
@@ -19,7 +19,7 @@
   "grade": 3,
   "aspect": "S",
   "season": "feb–mai",
-  "hasGuide": false
+  "hasGuide": true
  },
  "tromsdalstinden": {
   "name": "Tromsdalstinden",
@@ -30,7 +30,7 @@
   "grade": 2,
   "aspect": "V",
   "season": "des–mai",
-  "hasGuide": false
+  "hasGuide": true
  },
  "rornestinden": {
   "name": "Rørnestinden",
@@ -41,7 +41,7 @@
   "grade": 2,
   "aspect": "V",
   "season": "jan–mai",
-  "hasGuide": false
+  "hasGuide": true
  },
  "hamperokken": {
   "name": "Hamperokken",
@@ -52,18 +52,18 @@
   "grade": 4,
   "aspect": "NV",
   "season": "feb–mai",
-  "hasGuide": false
+  "hasGuide": true
  },
  "kavringtinden": {
   "name": "Kavringtinden",
   "region": "Lyngen",
   "summitM": 1289,
-  "verticalM": 1240,
+  "verticalM": 1250,
   "duration": "5–7 t",
   "grade": 3,
   "aspect": "N",
   "season": "mar–mai",
-  "hasGuide": false
+  "hasGuide": true
  },
  "hesten-segla": {
   "name": "Hesten (Segla)",
@@ -74,7 +74,7 @@
   "grade": 2,
   "aspect": "S",
   "season": "jan–apr",
-  "hasGuide": false
+  "hasGuide": true
  },
  "keipen": {
   "name": "Keipen",
@@ -85,18 +85,18 @@
   "grade": 3,
   "aspect": "S",
   "season": "jan–mai",
-  "hasGuide": false
+  "hasGuide": true
  },
  "breitinden": {
   "name": "Breitinden",
   "region": "Senja",
   "summitM": 1007,
-  "verticalM": 1020,
+  "verticalM": 1030,
   "duration": "4–6 t",
   "grade": 4,
   "aspect": "SV",
   "season": "jan–apr",
-  "hasGuide": false
+  "hasGuide": true
  },
  "rombakstotta": {
   "name": "Rombakstøtta",
@@ -107,7 +107,7 @@
   "grade": 3,
   "aspect": "SV",
   "season": "feb–mai",
-  "hasGuide": false
+  "hasGuide": true
  },
  "geitgaljen": {
   "name": "Geitgaljen",
@@ -118,7 +118,7 @@
   "grade": 4,
   "aspect": "NV",
   "season": "feb–apr",
-  "hasGuide": false
+  "hasGuide": true
  },
  "himmeltindan": {
   "name": "Himmeltindan",
@@ -129,7 +129,7 @@
   "grade": 3,
   "aspect": "Ø",
   "season": "feb–apr",
-  "hasGuide": false
+  "hasGuide": true
  },
  "stornappstinden": {
   "name": "Stornappstinden",
@@ -140,7 +140,7 @@
   "grade": 2,
   "aspect": "N",
   "season": "jan–apr",
-  "hasGuide": false
+  "hasGuide": true
  },
  "kirketaket": {
   "name": "Kirketaket",
@@ -162,18 +162,18 @@
   "grade": 2,
   "aspect": "Ø",
   "season": "apr–jun",
-  "hasGuide": false
+  "hasGuide": true
  },
  "kolastinden": {
   "name": "Kolåstinden",
   "region": "Sunnmøre",
   "summitM": 1432,
-  "verticalM": 1080,
+  "verticalM": 1120,
   "duration": "5–7 t",
   "grade": 3,
   "aspect": "N",
   "season": "feb–mai",
-  "hasGuide": false
+  "hasGuide": true
  },
  "saudehornet": {
   "name": "Saudehornet",
@@ -184,18 +184,18 @@
   "grade": 3,
   "aspect": "SV",
   "season": "jan–mai",
-  "hasGuide": false
+  "hasGuide": true
  },
  "slogen": {
   "name": "Slogen",
   "region": "Sunnmøre",
   "summitM": 1564,
-  "verticalM": 1480,
+  "verticalM": 1520,
   "duration": "6–8 t",
   "grade": 4,
   "aspect": "V",
   "season": "mar–mai",
-  "hasGuide": false
+  "hasGuide": true
  },
  "jakta": {
   "name": "Jakta",
@@ -206,7 +206,7 @@
   "grade": 3,
   "aspect": "SØ",
   "season": "feb–mai",
-  "hasGuide": false
+  "hasGuide": true
  },
  "skarasalen": {
   "name": "Skårasalen",
@@ -217,18 +217,18 @@
   "grade": 3,
   "aspect": "V",
   "season": "jan–mai",
-  "hasGuide": false
+  "hasGuide": true
  },
  "rondslottet": {
   "name": "Rondslottet",
   "region": "Rondane",
   "summitM": 2178,
-  "verticalM": 1240,
+  "verticalM": 1280,
   "duration": "6–8 t",
   "grade": 2,
   "aspect": "S",
   "season": "mar–mai",
-  "hasGuide": false
+  "hasGuide": true
  },
  "storronden": {
   "name": "Storronden",
@@ -239,7 +239,7 @@
   "grade": 2,
   "aspect": "SV",
   "season": "mars–mai",
-  "hasGuide": false
+  "hasGuide": true
  },
  "skala": {
   "name": "Skåla",
@@ -250,7 +250,7 @@
   "grade": 3,
   "aspect": "SV",
   "season": "mar–jun",
-  "hasGuide": false
+  "hasGuide": true
  },
  "glittertinden": {
   "name": "Glittertinden",
@@ -261,7 +261,7 @@
   "grade": 3,
   "aspect": "SØ",
   "season": "juni–juli",
-  "hasGuide": false
+  "hasGuide": true
  },
  "galdhopiggen": {
   "name": "Galdhøpiggen",
@@ -272,7 +272,7 @@
   "grade": 3,
   "aspect": "N",
   "season": "apr–jun",
-  "hasGuide": false
+  "hasGuide": true
  },
  "steindalsnosi": {
   "name": "Steindalsnosi",
@@ -283,7 +283,7 @@
   "grade": 1,
   "aspect": "S",
   "season": "apr–jun",
-  "hasGuide": false
+  "hasGuide": true
  },
  "besshoe": {
   "name": "Besshø",
@@ -294,7 +294,7 @@
   "grade": 3,
   "aspect": "Ø",
   "season": "mars–mai",
-  "hasGuide": false
+  "hasGuide": true
  },
  "fanaraken": {
   "name": "Fanaråken",
@@ -305,7 +305,7 @@
   "grade": 2,
   "aspect": "N",
   "season": "apr–jun",
-  "hasGuide": false
+  "hasGuide": true
  },
  "rasletinden": {
   "name": "Rasletinden",
@@ -316,7 +316,7 @@
   "grade": 2,
   "aspect": "Ø",
   "season": "apr–mai",
-  "hasGuide": false
+  "hasGuide": true
  },
  "synshorn": {
   "name": "Synshorn",
@@ -327,7 +327,7 @@
   "grade": 1,
   "aspect": "Ø",
   "season": "feb–mai",
-  "hasGuide": false
+  "hasGuide": true
  },
  "bitihorn": {
   "name": "Bitihorn",
@@ -338,7 +338,7 @@
   "grade": 1,
   "aspect": "S",
   "season": "feb–mai",
-  "hasGuide": false
+  "hasGuide": true
  },
  "skogshorn": {
   "name": "Skogshorn",
@@ -349,7 +349,7 @@
   "grade": 2,
   "aspect": "Ø",
   "season": "feb–mai",
-  "hasGuide": false
+  "hasGuide": true
  },
  "storehorn": {
   "name": "Storehorn",
@@ -360,7 +360,7 @@
   "grade": 2,
   "aspect": "Ø",
   "season": "des–apr",
-  "hasGuide": false
+  "hasGuide": true
  },
  "lonahorgi": {
   "name": "Lønahorgi",
@@ -371,18 +371,18 @@
   "grade": 2,
   "aspect": "NØ",
   "season": "feb–april",
-  "hasGuide": false
+  "hasGuide": true
  },
  "folarskardnuten": {
   "name": "Folarskardnuten",
   "region": "Hallingdal",
-  "summitM": 1927,
-  "verticalM": 950,
+  "summitM": 1932,
+  "verticalM": 970,
   "duration": "6–8 t",
   "grade": 3,
   "aspect": "S",
   "season": "mars–mai",
-  "hasGuide": false
+  "hasGuide": true
  },
  "oksen": {
   "name": "Oksen",
@@ -393,7 +393,7 @@
   "grade": 2,
   "aspect": "SV",
   "season": "jan–apr",
-  "hasGuide": false
+  "hasGuide": true
  },
  "vesoldo": {
   "name": "Vesoldo",
@@ -404,7 +404,7 @@
   "grade": 2,
   "aspect": "SV",
   "season": "feb–apr",
-  "hasGuide": false
+  "hasGuide": true
  },
  "melderskin": {
   "name": "Melderskin",
@@ -415,7 +415,7 @@
   "grade": 3,
   "aspect": "V",
   "season": "feb–mai",
-  "hasGuide": false
+  "hasGuide": true
  },
  "gaustatoppen": {
   "name": "Gaustatoppen",
@@ -426,6 +426,6 @@
   "grade": 2,
   "aspect": "NV",
   "season": "des–mai",
-  "hasGuide": false
+  "hasGuide": true
  }
 }

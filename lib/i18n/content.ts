@@ -103,7 +103,7 @@ export const TOUR_TEASER_EN: Record<string, string> = {
   skogshorn:
     "836 m of ascent from Trefta up the broad east ridge of Skogshorn; steepest measured step 28.5 degrees.",
   folarskardnuten:
-    "Nearly 12 km in from Haugastøl and 970 m of ascent, with one short 37-degree step up out of Folarskardet.",
+    "More than 12 km in from Haugastøl and 970 m of ascent, with one short 37-degree step up out of Folarskardet.",
   lonahorgi:
     "1300 m of ascent from Høyland via Bergsstølen and Breiming, the last 107 up the north ridge from point 1305.",
   vesoldo:
@@ -561,10 +561,10 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
   },
   himmeltindan: {
     intro:
-      "Vestvågøy's highest mountain, starting on the shore at Haukland and climbing 987 m in three and a half kilometres. A short tour, but the last third is steep and the summit ridge is narrow.",
+      "Vestvågøy's highest mountain, starting on the shore at Haukland and climbing 988 m in just under four kilometres. A short tour, but the last third is steep and the summit ridge is narrow.",
     ascent: [
       "From the car park at Hauklandstranda, six metres above the sea, head north toward the southern portal of the tunnel to Utakleiv. Not through the tunnel: take the service road that climbs north-east over it, past Klumpan, and follow it until it levels out on the bench at 150 m at the mouth of Durmålsdalen. The marked path starts here, and it runs all the way up to the cairn at 931.",
-      "Continue north-east up the south side of Durmålsdalen. The ground is open the whole way — there is no forest on this tour — and the line settles into long zig-zags up toward the shoulder at Molheia. It steepens from 700 m: the hundred metres between 700 and 800 m run at a mean of 28.6 degrees, and the steepest step on the line measures 36.1 degrees. Do not cut straight up the west flank of the summit ridge; it runs at 34 to 37 degrees on average with sections to 46. You take the height on the shoulder on the south side.",
+      "Continue north-east up the south side of Durmålsdalen. The ground is open the whole way — there is no forest on this tour — and the line settles into long zig-zags up toward the shoulder at Molheia. It steepens from 300 m: the bands from 300 to 700 m run at a mean of 21.7 to 23.2 degrees, and the steepest step on the line measures 28.4 degrees, between 666 and 687 m. Do not cut straight up the west flank of the summit ridge; it runs at 34 to 37 degrees on average with sections to 46. You take the height on the shoulder on the south side.",
       "From Molheia at around 800 m it is only thirty metres up to the 830 m sub-peak and the small flat there. That is the last wide ground on the tour — south-east of the flat the terrain falls at 38 degrees on average. From here on you are on the ridge.",
       "From the flat the ridge runs north, and it is narrow. Follow the crest to the cairn at 931. Do not step out onto the east side — large cornices hang there over very steep ground: below the cairn the east flank measures 42 degrees on average, the south-east flank 44, with sections of 54 to 57. Further north the ridge drops to 898 m and then rises to the main top, which measures 956 m in the terrain model. A military radar installation stands on the ridge at 936 m, a hundred metres or so below the top; the ground around it is closed, so follow the crest past it and obey the signs on site.",
     ],
@@ -576,7 +576,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
     avalanche: [
       {
         title: "The route",
-        body: "The lower half is gentle and open. It steepens from 400 m: the hundred metres between 400 and 500 m run at a mean of 24.2 degrees, and above 500 m the bands hold 20 to 21 degrees all the way to the summit plateau. The steepest step on the line measures 29.5 degrees. From the sub-peak north the ridge is narrow, with a drop to 898 m and fifty metres of re-climb before the main top.",
+        body: "The lower half is gentle and open. It steepens from 300 m: the bands from 300 to 800 m hold 19.4 to 23.2 degrees on average, steepest between 500 and 600 m. The steepest step on the line measures 28.4 degrees, between 666 and 687 m. From the sub-peak north the ridge is narrow, with a drop to 898 m and fifty metres of re-climb before the main top.",
       },
       {
         title: "The terrain around it",
@@ -590,8 +590,8 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
     elevationProfile: {
       startLabel: "7 m",
       endLabel: "956 m",
-      distanceLabel: "3.8 km",
-      caption: "987 m of climbing from the shore at Haukland over 3.79 km; the steep ground sits between 400 and 500 m.",
+      distanceLabel: "3.9 km",
+      caption: "988 m of climbing from the shore at Haukland over 3.89 km; the steep ground sits between 500 and 600 m.",
     },
   },
   stornappstinden: {
@@ -1294,18 +1294,18 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
     intro:
       "A short walk from the car to a summit that looks out over the whole of Hemsedal. The tour starts above the treeline and the ground is open from the first step — a good first ski tour in the valley, and a quick morning summit once you know it.",
     ascent: [
-      "From Hornslie, where Torsetstølvegen ends at 1056 m, you climb the first pitch straight off. It is shorter than it looks — the steepest hundred-metre band on the whole route, 1000–1100 m, averages 17.2° — and it flattens out over the lip. There is no forest to deal with: the entire tour runs in open terrain.",
-      "Over the lip the Hødnetjedne basin opens up — Horntjerne on the Kartverket map — and you give back 46 metres down to the lake at 1191 m. In winter the line runs straight across the frozen water; the summer path keeps to the left side. On the far bank the route splits into two marked lines: one longer and gentler out onto the northwest shoulder, one shorter and steeper up the east ridge. This description follows the east ridge.",
+      "From Hornslie, where Torsetstølvegen ends at 1056 m, you climb the first pitch straight off. It is shorter than it looks — the first hundred-metre band, 1000–1100 m, averages 18.8° — and it flattens out over the lip. There is no forest to deal with: the entire tour runs in open terrain.",
+      "Over the lip the Hødnetjedne basin opens up — Horntjerne on the Kartverket map — and you give back 45 metres down to the lake at 1191 m. In winter the line runs straight across the frozen water; the summer path keeps to the left side. On the far bank the route splits into two marked lines: one longer and gentler out onto the northwest shoulder, one shorter and steeper up the east ridge. This description follows the east ridge.",
       "From the east ridge it is steady climbing west to the summit, with Veslehødn — Veslehorn on the map — and the whole of Hemsedalen behind you. The summit plateau is small, and its southern edge is closer to the cairn than it looks: eighty metres south of the top the ground drops 96 metres in twenty metres of ground. The southeast edge does the same, 63° over the steepest sixty metres, and the southwest edge 57°. Hold the ridge to the cairn, and stay north of the edge once you are standing there.",
     ],
     descent: [
       "Same way down. The east ridge gives even, open skiing back to Hødnetjedne, and the basin below is the flattest ground on the tour — expect to pole.",
-      "The usual mistake: letting the terrain pull you northeast toward Veslehødn instead of turning down toward Hornslie. East of Veslehødn, Hydnefossen falls 155 metres free — the elevation model takes 151 of them in a single twenty-metre step — and below the fall the ground holds 50° on down. From the lake the way home runs southeast, and remember the 46 metres of climbing back out of the basin before the last pitch down to the car.",
+      "The usual mistake: letting the terrain pull you northeast toward Veslehødn instead of turning down toward Hornslie. East of Veslehødn, Hydnefossen falls 155 metres free — the elevation model takes 151 of them in a single twenty-metre step — and below the fall the ground holds 50° on down. From the lake the way home runs southeast, and remember the 45 metres of climbing back out of the basin before the last pitch down to the car.",
     ],
     avalanche: [
       {
         title: "The route",
-        body: "The line itself is gentle. The steepest hundred-metre band, 1000–1100 m on the first pitch above Hornslie, averages 17.2°. The steepest single step sits in the pitch up from Hødnetjedne, between 1200 and 1230 m, and it measures 31.1° — the only place on the line that passes 30°.",
+        body: "The line itself is gentle. The steepest hundred-metre band is 1400–1500 m, the last rise to the cairn, at 19.0°; the first pitch above Hornslie averages 18.8°. The steepest single step sits between 1370 and 1385 m and measures 25.6° — no part of the line passes 30°.",
       },
       {
         title: "The terrain off it",
@@ -1320,7 +1320,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       startLabel: "1056 m",
       endLabel: "1478 m",
       distanceLabel: "3.0 km",
-      caption: "472 metres of climbing and 3.00 km from Hornslie to the summit, with 46 metres given back in the Hødnetjedne basin.",
+      caption: "471 metres of climbing and 2.99 km from Hornslie to the summit, with 45 metres given back in the Hødnetjedne basin.",
     },
   },
   lonahorgi: {
@@ -1360,21 +1360,21 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
   },
   folarskardnuten: {
     intro:
-      "Buskerud's highest point, and a tour where 12.49 km and 969 metres of climbing come almost entirely without steep ground. The only step that asks anything of you leads out of Folarskardet, and it is short — the rest is a long, even approach across Hallingskarvet.",
+      "Buskerud's highest point, and a tour where 12.61 km and 967 metres of climbing come almost entirely without steep ground. The only step that asks anything of you leads out of Folarskardet, and it is short — the rest is a long, even approach across Hallingskarvet.",
     ascent: [
-      "From the car park on Rv7 at Haugastøl, 1007 m, follow the staked DNT winter route north towards Raggsteindalen. The first eleven kilometres are approach: over the rise at 1212 m, out onto the flats below Folarskardet at 1326 m, some 600 metres of climbing spread so thin that the band between 1200 and 1300 m averages 1.5 degrees. This is poling terrain, not skinning terrain.",
+      "From the car park on Rv7 at Haugastøl, 1007 m, follow the staked DNT winter route north towards Raggsteindalen. The first eleven kilometres are approach: over the rise at 1212 m, out onto the flats below Folarskardet at 1326 m, some 600 metres of climbing spread so thin that the band between 1200 and 1300 m averages 1.6 degrees. This is poling terrain, not skinning terrain.",
       "At Lordehytta in Folarskardet, 1620 m, you leave the marking. The hut dates from 1880 and stands in the pass itself; the tarn beside it lies at 1603 m and is water under the snow. The route description says you leave the markers at the tarn and follow cairns upward, and that is the line drawn here — not the straight line from the hut to the summit, which measures 40.3 degrees at its worst step.",
-      "The step out of the pass is the tour's only steep section: 35 to 40 degrees, measured at 36.7 degrees over 41 metres on the gentlest ramp anyone finds. The line says the same: 37.8 degrees over its steepest 30-metre window, between 1731 and 1760 m. The 20.6-degree average for the 1700 to 1800 m band, by contrast, is an average over 234 metres of ground and hides the step entirely. If the snow is hard or wind-scoured, this is where people put crampons on.",
-      "Above the step, at about 1830 m, it flattens again, and the last hundred metres north-west to the cairn at 1927 m average 11 degrees. Note that the route ends here: the high point of Folarskardnuten is 1933 m and lies about 820 metres west-south-west, across a shallow saddle. The terrain model gives 1932.1 m there against 1927.3 m at the point the route reaches. The summit plateau is open and gives you little to navigate by.",
+      "The step out of the pass is the tour's only steep section: 35 to 40 degrees, measured at 36.7 degrees over 41 metres on the gentlest ramp anyone finds. The line cuts across the step rather than taking it head on, and so reads lower: 27.2 degrees over its steepest 30-metre window, between 1775 and 1808 m. The 18.7-degree average for the 1700 to 1800 m band is an average over 320 metres of ground and hides the step entirely. If the snow is hard or wind-scoured, this is where people put crampons on.",
+      "Above the step, at about 1830 m, it flattens again, and the last 702 metres run west-south-west — a bearing of 253 degrees — up to the summit at 1932 m, evenly, at 0.5 to 17.5 degrees. Note that the cairn in the route descriptions stands on the north-east top: 1927 m, 821 metres away on a bearing of 36 degrees, with a 1900 m saddle between them. The terrain model gives 1932.2 m at the high point and 1927.3 m on the north-east top, against a published 1933. The summit plateau is open and gives you little to navigate by.",
     ],
     descent: [
-      "Back the same way: over the lip of the step, down the ramp to Lordehytta, and then the eleven kilometres back to Haugastøl. The descent faces south — the drop-weighted mean bearing is 167 degrees — but it is also short. Below the pass it is long, gentle transport, and with a headwind on the flats the way home takes as long as the way in.",
+      "Back the same way: over the lip of the step, down the ramp to Lordehytta, and then the eleven kilometres back to Haugastøl. The descent faces south — the drop-weighted mean bearing is 154 degrees — but it is also short. Below the pass it is long, gentle transport, and with a headwind on the flats the way home takes as long as the way in.",
       "The usual mistake: wandering onto the north side of the escarpment looking for a better line down. The cornices on the north side hang far out over Raggsteindalen, and the edge is invisible from the plateau in flat light. The second mistake is underestimating the weather window: the tour is not steep, but it is long, and turning around on the summit plateau in poor visibility means eleven kilometres left into the wind.",
     ],
     avalanche: [
       {
         title: "The route",
-        body: "The step up out of Folarskardet is 35 to 40 degrees and is the only real avalanche terrain on the tour. The line as drawn crosses the step rather than avoiding it. The figures for it — 37.8 degrees at its steepest, 20.6 on average for the 1700 to 1800 m band — are read off the same terrain model: the average hides the step, the steepest window shows it. Miss the ramp and neighbouring lines measure 40 to 46 degrees. The step can also be scoured and icy, and then crampons rather than snowpack assessment are the problem.",
+        body: "The step up out of Folarskardet is 35 to 40 degrees and is the only real avalanche terrain on the tour. The line as drawn crosses the step rather than avoiding it. The figures for it — 27.2 degrees at its steepest, 18.7 on average for the 1700 to 1800 m band — describe the track and not the ramp: the line cuts across the step, while the fall line there measures 36.7 degrees over 41 metres. Miss the ramp and neighbouring lines measure 40 to 46 degrees. The step can also be scoured and icy, and then crampons rather than snowpack assessment are the problem.",
       },
       {
         title: "The terrain around it",
@@ -1387,9 +1387,9 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
     ],
     elevationProfile: {
       startLabel: "1007 m",
-      endLabel: "1927 m",
-      distanceLabel: "12.5 km",
-      caption: "969 metres of climbing and 12.49 km from Haugastøl, eleven of those kilometres approach and one short step out of Folarskardet all there is of steep ground.",
+      endLabel: "1932 m",
+      distanceLabel: "12.6 km",
+      caption: "967 metres of climbing and 12.61 km from Haugastøl, eleven of those kilometres approach and one short step out of Folarskardet all there is of steep ground.",
     },
   },
   oksen: {

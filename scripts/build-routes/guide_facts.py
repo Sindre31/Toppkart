@@ -135,7 +135,12 @@ def cached_samples(previous, slug, route_id, elevations):
         if r.get("id") != route_id:
             continue
         got = r.get("terrainSamples") or []
-        if got and [s["z"] for s in got] == [elevations[s["i"]] for s in got]:
+        # A re-routed line can be shorter than the one the samples were taken
+        # from, so the stored indices are not safe to read blind — an out-of-range
+        # index is itself the answer that the line has moved.
+        if not got or any(s["i"] >= len(elevations) for s in got):
+            return None
+        if [s["z"] for s in got] == [elevations[s["i"]] for s in got]:
             return got
     return None
 

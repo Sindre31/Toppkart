@@ -53,13 +53,12 @@ def _seed_dem(lat, lng):
     )
 
 
-def snap_summit(lat, lng, expect):
-    """Highest DTM cell within a disc that grows until its height matches the
-    elevation the tour claims.
+def snap_candidates(lat, lng):
+    """The highest DTM cell in each of a series of growing discs.
 
-    Growing outward and stopping on the first match is what keeps a peak from
-    being confused with a taller neighbour: Steindalsnosi (2025 m) matches at
-    975 m out, well before Fannaråki (2068 m) comes into range at 1490 m.
+    One candidate per radius, deduplicated: once the real top is inside the disc
+    every larger radius returns the same cell, so a peak usually yields two or
+    three distinct places to look at rather than six.
     """
     dem = _seed_dem(lat, lng)
     rows = np.arange(dem.height)[:, None]
@@ -67,28 +66,27 @@ def snap_summit(lat, lng, expect):
     r0, c0 = dem.rc(lat, lng)
     dist = np.hypot((rows - r0) * dem.my, (cols - c0) * dem.mx)
 
-    fallback = None
+    out = []
     for radius in (300, 600, 900, 1200, 1500, 2000):
         z = np.where(dist <= radius, dem.z, np.nan)
         if np.all(np.isnan(z)):
             continue
         idx = int(np.nanargmax(z))
         row, col = divmod(idx, dem.width)
-        zz = float(dem.z[row, col])
         slat, slng = dem.latlng(row, col)
-        if fallback is None or abs(zz - expect) < abs(fallback[2] - expect):
-            fallback = (slat, slng, zz, radius)
-        if abs(zz - expect) <= TOL_M:
-            return slat, slng, zz, radius
-    return fallback
+        if any(haversine(slat, slng, a, b) < 20 for a, b, _, _ in out):
+            continue
+        out.append((slat, slng, float(dem.z[row, col]), radius))
+    return out
 
 
 def hill_climb(lat, lng, span_m=700, px=700):
     """Walk uphill to the exact local top.
 
-    Run *after* snap_summit, never instead of it: starting from a point already
-    high on the right massif, this only sharpens the position, whereas climbing
-    straight from an SSR point stalls on the first shoulder above a saddle.
+    Run *after* `snap_candidates`, never instead of it: starting from a point
+    already high on the right massif, this only sharpens the position, whereas
+    climbing straight from an SSR point stalls on the first shoulder above a
+    saddle.
     """
     half_lat = span_m / 2 / 110540.0
     half_lng = span_m / 2 / (111320.0 * math.cos(math.radians(lat)))
@@ -120,6 +118,35 @@ def hill_climb(lat, lng, span_m=700, px=700):
     return slat, slng, float(dem.at(row, col))
 
 
+def resolve_top(lat, lng, expect):
+    """The local top whose height comes closest to the elevation the tour claims.
+
+    Every candidate is hill-climbed *before* it is judged, and that ordering is
+    the whole point. Judging the disc maxima instead gets two things wrong in
+    opposite directions:
+
+    - It stopped at the first disc whose maximum was within `TOL_M`, which is how
+      Folarskardnuten ended up on a subsidiary top: 1927.3 m at 311 m out is
+      inside 15 m of the claimed 1933, so the search returned it and never grew
+      far enough to see the real summit, 1931.7 m at 647 m.
+    - Simply preferring the closest disc maximum instead moves Skåla 50 m onto a
+      1851.4 m cell — Skålatårnet, the stone tower on the top — where climbing
+      from the smaller disc's maximum reaches the 1847.1 m ground the guidebooks
+      call 1848. The highest cell in a wide disc is exactly where a structure or
+      a noise spike sits.
+
+    Climbing first and comparing after gets both right, and still refuses a
+    taller neighbour: Steindalsnosi climbs to 2023.8 m against a claimed 2025,
+    and Fannaråki at 2067 m never comes close enough to win.
+    """
+    best = None
+    for slat, slng, _, radius in snap_candidates(lat, lng):
+        flat, flng, fz = hill_climb(slat, slng)
+        if best is None or abs(fz - expect) < abs(best[2] - expect):
+            best = (flat, flng, fz, radius)
+    return best
+
+
 def nearby_maxima(lat, lng, n=5):
     """Distinct local maxima around a seed — for eyeballing a mismatch."""
     dem = _seed_dem(lat, lng)
@@ -146,10 +173,10 @@ def main():
             continue
         _, d_near, best = cands[0]
 
-        slat, slng, sz, radius = snap_summit(best["lat"], best["lng"], expect)
-        flat, flng, fz = hill_climb(slat, slng)
-        if fz < sz:
-            flat, flng, fz = slat, slng, sz
+        # The climbed height stands even where it is lower than the disc maximum
+        # that seeded it: the climb reads a 1 m tile and the disc a 6 m one, so
+        # the lower number is the better measurement, not a lost summit.
+        flat, flng, fz, radius = resolve_top(best["lat"], best["lng"], expect)
         z_api, terr = dtm_point(flat, flng)
         drift = haversine(nlat, nlng, flat, flng)
         delta = fz - expect
