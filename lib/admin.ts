@@ -42,3 +42,14 @@ export async function requireAdmin(): Promise<string> {
   if (!isAdminEmail(email)) notFound();
   return email!;
 }
+
+/** The same gate for a Server Action, which throws instead of rendering.
+ *
+ *  Actions are their own entry point — a POST to one does not go through the
+ *  page that rendered the form, so checking on the page only would leave the
+ *  mutation open to anyone who can construct the request. `notFound()` is for
+ *  something being rendered; here there is nothing to render, so it throws. */
+export async function assertAdminAction(): Promise<void> {
+  const { email } = await getViewer();
+  if (!isAdminEmail(email)) throw new Error("Ikke tilgang.");
+}

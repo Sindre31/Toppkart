@@ -12,6 +12,7 @@ import { accountDict, type AccountDict } from "@/lib/i18n/account";
 import { commonDict } from "@/lib/i18n/common";
 import type { Subscription } from "@/lib/types";
 import { EmailCard } from "./EmailCard";
+import { SignOutCard } from "./SignOutCard";
 import { SubscriptionActions } from "./SubscriptionActions";
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -121,21 +122,6 @@ export default async function MinSidePage() {
         <Link href="/min-side" aria-current="page" style={{ color: "var(--color-accent-700)" }}>
           {c.account}
         </Link>
-        <form action="/api/auth/signout" method="post" style={{ display: "flex", margin: 0 }}>
-          <button
-            type="submit"
-            className="nav-muted"
-            style={{
-              background: "transparent",
-              border: 0,
-              padding: 0,
-              font: "inherit",
-              cursor: "pointer",
-            }}
-          >
-            {c.logout}
-          </button>
-        </form>
       </SiteNav>
 
       <main className="page page-account">
@@ -287,6 +273,7 @@ export default async function MinSidePage() {
             }}
           >
             <EmailCard email={viewer.email ?? ""} lang={lang} />
+            <SignOutCard lang={lang} />
           </div>
         </section>
 
