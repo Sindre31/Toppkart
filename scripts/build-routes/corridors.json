@@ -2339,5 +2339,381 @@
     "notes": "Skredfare i det trange dalføret ved Breiming og i austsida ned mot Årdalen, som er den bratte delen av fjellet; store svaskred losnar seint på våren og går langt. Ryggen frå punkt 1305 og opp er brei og slak, men vindutsett og ofte avblåst og hard. Snødekket nede ved Høyland og Bergsstølen er tynt og kortvarig - vurder å gå av tidleg om våren."
    }
   ]
+ },
+ "rana": {
+  "routes": [
+   {
+    "id": "normalruta",
+    "name": "Normalruta frå Urkegjerdet over Haukåssætra og Nordkopen",
+    "description": "Frå Urkegjerdet ved Urke følgjer ein den vinterstengde grusvegen opp mot Haukåssætra. Litt nedanfor sætra tek ein av frå vegen og går innover dalen mot Nordkopen. Frå kopen sikksakkar ein bratt opp mot egga i nord, som ein tek inn på til høgre for ein markert hammar, og følgjer så toppryggen nordover heile vegen til toppen.",
+    "trailhead": {
+     "name": "Urkegjerdet ved Urke",
+     "lat": 62.21816,
+     "lng": 6.57065,
+     "elevation_m": 63.38,
+     "fullName": "Urkegjerdet ved Urke"
+    },
+    "waypoints": [
+     {
+      "name": "Haukåssætra",
+      "lat": 62.23111,
+      "lng": 6.58833,
+      "elevation_m": 229.75
+     },
+     {
+      "name": "Nordkopen",
+      "lat": 62.24521,
+      "lng": 6.59171,
+      "elevation_m": 500.56
+     },
+     {
+      "name": "Botnen i Nordkopen, 987",
+      "lat": 62.258,
+      "lng": 6.5786,
+      "elevation_m": 987.39
+     },
+     {
+      "name": "Egga, 1331",
+      "lat": 62.266,
+      "lng": 6.5758,
+      "elevation_m": 1330.91
+     },
+     {
+      "name": "Toppryggen, 1531",
+      "lat": 62.274,
+      "lng": 6.5735,
+      "elevation_m": 1531.35
+     },
+     {
+      "name": "Toppkammen, 1562",
+      "lat": 62.27523,
+      "lng": 6.57453,
+      "elevation_m": 1562.37
+     }
+    ],
+    "source": "researched, verified (corrected), no local audit",
+    "notes": "Skredterreng inn mot Nordkopen og i sida opp frå kopen til egga. Store skavlar på austsida av den breie toppryggen — hald deg vest for kammen. Ekstra varsemd i vårsnø utover ettermiddagen."
+   }
+  ]
+ },
+ "kvitegga": {
+  "routes": [
+   {
+    "id": "normalruta",
+    "name": "Normalruta frå Nibbedalen gjennom Snødalen",
+    "description": "Frå grustaket i Nibbedalen følgjer ein grusvegen eit lite stykke og deretter sommarstien gjennom open skog vestover inn Snødalen. Innerst i dalen tek ein Brattbakken, ei bratt bakke på om lag 35 grader opp mot 1300 moh, og følgjer så det brelagde platået til høgda på 1583 moh. Derfrå går ein ned eit lite skar og nordover langs ryggen til toppen.",
+    "trailhead": {
+     "name": "Grustaket i Nibbedalen",
+     "lat": 62.10491,
+     "lng": 6.74662,
+     "elevation_m": 323.87,
+     "fullName": "Grustaket i Nibbedalen"
+    },
+    "waypoints": [
+     {
+      "name": "Snødalen, 925",
+      "lat": 62.0917,
+      "lng": 6.7306,
+      "elevation_m": 925.13
+     },
+     {
+      "name": "Brattbakken, 1316",
+      "lat": 62.0885,
+      "lng": 6.7209,
+      "elevation_m": 1316.43
+     },
+     {
+      "name": "Høgda 1583",
+      "lat": 62.08607,
+      "lng": 6.71162,
+      "elevation_m": 1582.37
+     }
+    ],
+    "source": "researched, verified (corrected), no local audit",
+    "notes": "Brattbakken er skredterreng og målt til om lag 35 grader. Sprekker i breen seinvinters og utover våren. Store skavlar langs toppryggen — hald avstand til kantane, særleg i dårleg sikt."
+   }
+  ]
+ },
+ "jonshornet": {
+  "routes": [
+   {
+    "id": "normalruta",
+    "name": "Normalruta frå Vollane over Vollesætra og Rametinden",
+    "description": "Frå Vollane ved Tverrelva går ein gjennom stålgrinda ved elva og følgjer stien oppover, først på venstre og så på høgre side av elva, til terrenget legg seg ved Vollesætra. Herifrå går ein i relativt slakt terreng opp til Rametinden (1198 moh.), og følgjer ryggen og etter kvart egga sørover mot Jønshornet.",
+    "trailhead": {
+     "name": "Vollane ved Tverrelva",
+     "lat": 62.34862,
+     "lng": 6.27885,
+     "elevation_m": 106.55,
+     "fullName": "Vollane ved Tverrelva"
+    },
+    "waypoints": [
+     {
+      "name": "Vollesætra",
+      "lat": 62.34263,
+      "lng": 6.29289,
+      "elevation_m": 410.46
+     },
+     {
+      "name": "Rametinden",
+      "lat": 62.32655,
+      "lng": 6.31943,
+      "elevation_m": 1197.23
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Skredterreng i sidene ned frå ryggen mellom Rametinden og toppen, og i Jønshornrenna mot Molladalen. Eksponert egg dei siste hundre høgdemetrane. Skaret på 1089 moh gjev 108 m attgjeving på veg opp."
+   }
+  ]
+ },
+ "vassdalstinden": {
+  "routes": [
+   {
+    "id": "normalruta",
+    "name": "Normalruta frå Nupen over Vallasætra og Bukkedalen",
+    "description": "Frå bilparkeringa etter bommen i Nupen følgjer ein Engesetvegen oppover og austover til Vallasætra. Frå setra går ein nokre hundre meter inn Langedalen før ein tek bratt opp kneika til Bukkedalen, eventuelt med skia på sekken. Så følgjer ein dalbotnen innover til den bratte, lange flanken som fører opp til toppen.",
+    "trailhead": {
+     "name": "Nupen",
+     "lat": 62.21249,
+     "lng": 6.1747,
+     "elevation_m": 92.21,
+     "fullName": "Nupen"
+    },
+    "waypoints": [
+     {
+      "name": "Vallasætra",
+      "lat": 62.23207,
+      "lng": 6.21122,
+      "elevation_m": 323.48
+     },
+     {
+      "name": "Bukkedalen",
+      "lat": 62.2406,
+      "lng": 6.20127,
+      "elevation_m": 790.86
+     },
+     {
+      "name": "Dalbotnen, 960",
+      "lat": 62.2463,
+      "lng": 6.1964,
+      "elevation_m": 960.47
+     }
+    ],
+    "source": "researched, verified (corrected), no local audit",
+    "notes": "Skredterreng i kneika opp til Bukkedalen og i heile flanken mot toppen. Frå skaret nord for toppen fell Vestrenna 700 høgdemeter i 45–50 grader ned i Nupadalen — ei feilnavigering vestover i dårleg sikt er alvorleg."
+   }
+  ]
+ },
+ "melshornet": {
+  "routes": [
+   {
+    "id": "normalruta",
+    "name": "Skiløypa frå Helgatun",
+    "description": "Frå parkeringsplassen ved Helgatun følgjer ein den tydelege, slake og skredtrygge skiløypa til topps. Løypa er tidvis preparert med trakkemaskin, og den siste bakken er gjerne merkt med brøytestikker, noko som gjer det lettare å finne fram i dårleg sikt og i mørket. Same veg ned.",
+    "trailhead": {
+     "name": "Helgatun på Krøvelseidet",
+     "lat": 62.15456,
+     "lng": 6.17792,
+     "elevation_m": 251.77,
+     "fullName": "Helgatun på Krøvelseidet"
+    },
+    "waypoints": [
+     {
+      "name": "Ryggen, 519",
+      "lat": 62.16419,
+      "lng": 6.1604,
+      "elevation_m": 519.41
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Løypa sjølv er skredtrygg, men sidene av Grøthornet er skredterreng, og det kan liggje skavl mot Ørsta nær toppen. Hald deg til løypetraseen i dårleg sikt."
+   }
+  ]
+ },
+ "sunndalsnipa": {
+  "routes": [
+   {
+    "id": "normalruta",
+    "name": "Normalruta frå Grøndalsvatnet opp søraustryggen",
+    "description": "Frå vegenden ved Grøndalsvatnet går ein nordover gjennom open lauvskog i slakt terreng til ein kjem opp på søraustryggen. Ryggen følgjer ein oppover til platået, og vidare nordover om lag ein kilometer til toppvarden. Hald deg midt på platået: både vest- og austsida fell bratt.",
+    "trailhead": {
+     "name": "Grøndalsvatnet",
+     "lat": 61.98372,
+     "lng": 6.29275,
+     "elevation_m": 437.49,
+     "fullName": "Grøndalsvatnet"
+    },
+    "waypoints": [
+     {
+      "name": "Skogkanten, 839",
+      "lat": 61.9911,
+      "lng": 6.29894,
+      "elevation_m": 839.13
+     },
+     {
+      "name": "Søraustryggen, 1280",
+      "lat": 62.00832,
+      "lng": 6.31337,
+      "elevation_m": 1279.96
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Bratte vestre og austre vegger frå platået — orienteringsfelle i skodde og snødrev. Sørflanken, som er den brattare nedkøyringa Fri Flyt nemner, er skredterreng og skal berre køyrast på stabile dagar."
+   }
+  ]
+ },
+ "eidskyrkja": {
+  "routes": [
+   {
+    "id": "normalruta",
+    "name": "Normalruta frå Skinnviksætra over Blåbreen",
+    "description": "Frå Skinnviksætra går ein sørover og opp mot Blåbreen. Breen held om lag 25 grader nedst og legg seg gradvis slakare mot toppplatået. Den siste kilometeren er slak stigning sørover til toppvarden. Same veg ned, eventuelt med ein travers mot Lisje Eidskyrkja på vårføre.",
+    "trailhead": {
+     "name": "Skinnviksætra",
+     "lat": 62.05265,
+     "lng": 6.28155,
+     "elevation_m": 368.04,
+     "fullName": "Skinnviksætra"
+    },
+    "waypoints": [
+     {
+      "name": "Blåbreen, 1197",
+      "lat": 62.02725,
+      "lng": 6.26787,
+      "elevation_m": 1197.48
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Orienteringsvanskar i toppområdet ved skodde eller snødrev. Skredfaren er liten om ein held seg midt på Blåbreen, men ver merksam på sprekker vest på breen og på utløpsområde for skred i same område."
+   }
+  ]
+ },
+ "auskjeret": {
+  "routes": [
+   {
+    "id": "normalruta",
+    "name": "Normalruta frå Fausaskiftet",
+    "description": "Frå Fausaskiftet ved enden av Nysætervatnet tek ein på skia og går nordover i jamn og slak stigning heile vegen til toppen. Nedkøyringa følgjer same veg i moderat og triveleg skiterreng.",
+    "trailhead": {
+     "name": "Fausaskiftet ved Nysætervatnet",
+     "lat": 62.36019,
+     "lng": 6.82149,
+     "elevation_m": 332.61,
+     "fullName": "Fausaskiftet ved Nysætervatnet"
+    },
+    "waypoints": [
+     {
+      "name": "Sida, 685",
+      "lat": 62.36425,
+      "lng": 6.78557,
+      "elevation_m": 685.14
+     }
+    ],
+    "source": "researched, verified (corrected), no local audit",
+    "notes": "Fjellet har eit brattheng mot aust som er over 30 grader og skal styrast unna i skredver. Elles held ruta seg under 30 grader om ein følgjer ryggen opp og ned."
+   }
+  ]
+ },
+ "torvloysa": {
+  "routes": [
+   {
+    "id": "normalruta",
+    "name": "Normalruta frå Hatlestad over Rellingsætra og Daurmålsfjellet",
+    "description": "Frå Hatlestad-gardane går ein slakt inn i munningen av Dyrdalen og opp til Rellingsætra. Frå setra tek ein brattare opp på Daurmålsfjellet, og derifrå følgjer ein ryggen i slakt terreng heile vegen til toppen av Torvløysa. Same veg ned.",
+    "trailhead": {
+     "name": "Hatlestad i Norddal",
+     "lat": 62.24629,
+     "lng": 7.21215,
+     "elevation_m": 453.24,
+     "fullName": "Hatlestad i Norddal"
+    },
+    "waypoints": [
+     {
+      "name": "Rellingsætra",
+      "lat": 62.23128,
+      "lng": 7.24464,
+      "elevation_m": 557.05
+     },
+     {
+      "name": "Daurmålsfjellet",
+      "lat": 62.22841,
+      "lng": 7.26388,
+      "elevation_m": 824.62
+     },
+     {
+      "name": "Ryggen, 1186",
+      "lat": 62.20269,
+      "lng": 7.27324,
+      "elevation_m": 1186.16
+     }
+    ],
+    "source": "researched, verified (corrected), no local audit",
+    "notes": "Kneika frå Rellingsætra opp på Daurmålsfjellet er den bratte delen. Ryggen vidare er slak, men lang og utan ly, og breterrenget kring 1400 moh har sprekker seinvinters. Vending må avgjerast tidleg."
+   }
+  ]
+ },
+ "skarene": {
+  "routes": [
+   {
+    "id": "normalruta",
+    "name": "Normalruta frå Korsmyra over Grandesætra og Gråsteindalen",
+    "description": "Frå biloppstillingsplassen på Korsmyra følgjer ein setervegen inn til Grandesætra. Frå setra går ein slakt inn og oppover Gråsteindalen, og komen inn mot botnen av dalen følgjer ein den store snøflanken heile vegen til topps. Same veg attende i flott skiterreng med slake hellingsvinklar.",
+    "trailhead": {
+     "name": "Korsmyra",
+     "lat": 62.13584,
+     "lng": 7.18546,
+     "elevation_m": 621.4,
+     "fullName": "Korsmyra"
+    },
+    "waypoints": [
+     {
+      "name": "Grandesætra",
+      "lat": 62.13487,
+      "lng": 7.19246,
+      "elevation_m": 648.03
+     },
+     {
+      "name": "Gråsteindalen",
+      "lat": 62.14129,
+      "lng": 7.20479,
+      "elevation_m": 720.89
+     },
+     {
+      "name": "Dalbotnen, 940",
+      "lat": 62.16056,
+      "lng": 7.20228,
+      "elevation_m": 940.49
+     }
+    ],
+    "source": "researched, verified (corrected), no local audit",
+    "notes": "Skredterreng frå botnen av Gråsteindalen og heile vegen opp til toppen — flanken er stor og samanhengande, og det er inga trygg line rundt han. Turen bør gåast på stabile dagar."
+   }
+  ]
+ },
+ "ytstevasshornet": {
+  "routes": [
+   {
+    "id": "normalruta",
+    "name": "Normalruta frå Svartevatnet opp Vassdalen",
+    "description": "Frå parkeringa ved Svartevatnet går ein vestover, på venstre side av elva, opp Vassdalen i ganske bratt terreng til ein når nokre små fjellvatn på om lag 950 moh. Derifrå held ein nordvestover mot toppryggen, og dei siste metrane blir gjerne gått utan ski. Same veg ned.",
+    "trailhead": {
+     "name": "Svartevatnet ved Vasshaugen",
+     "lat": 62.29057,
+     "lng": 6.7698,
+     "elevation_m": 537.78,
+     "fullName": "Svartevatnet ved Vasshaugen"
+    },
+    "waypoints": [
+     {
+      "name": "Vatna i Vassdalen, 976",
+      "lat": 62.28449,
+      "lng": 6.74978,
+      "elevation_m": 976.08
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Skavlar langs toppryggen — det dannar seg normalt ei stor skavl mellom førtoppen og hovudtoppen, og ein skal køyre ned i sida når ein rundar henne. Skredterreng i sida ned frå hovudtoppen og ikkje minst i sjølve Vassdalen."
+   }
+  ]
  }
 }

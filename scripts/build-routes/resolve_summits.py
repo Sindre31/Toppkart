@@ -12,6 +12,8 @@ peak agreeing to within a few metres is what tells us we found the right summit.
 
 import json
 import math
+import os
+import sys
 
 import numpy as np
 
@@ -164,9 +166,17 @@ def nearby_maxima(lat, lng, n=5):
 
 
 def main():
-    out = {}
+    # `resolve_summits.py [slug …]` resolves only those peaks and merges them
+    # into the existing summits.json. Same reasoning as generate_routes.py's slug
+    # argument: every peak costs a 4.2 km DTM tile and a hill-climb tile on top,
+    # so re-resolving 57 settled summits to add one is a few hundred megabytes
+    # spent reproducing coordinates that are already in the file.
+    only = set(sys.argv[1:])
+    out = json.load(open("summits.json")) if only and os.path.exists("summits.json") else {}
     problems = []
     for slug, name, kommuner, expect, nlat, nlng in PEAKS:
+        if only and slug not in only:
+            continue
         cands = pick(name, kommuner, nlat, nlng)
         if not cands:
             problems.append(f"{slug}: no SSR match for {name!r}")

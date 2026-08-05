@@ -153,6 +153,17 @@
   "season": "des–mai",
   "hasGuide": true
  },
+ "auskjeret": {
+  "name": "Auskjeret",
+  "region": "Sunnmøre",
+  "summitM": 1203,
+  "verticalM": 870,
+  "duration": "3–5 t",
+  "grade": 2,
+  "aspect": "SØ",
+  "season": "des–apr",
+  "hasGuide": false
+ },
  "snohetta": {
   "name": "Snøhetta",
   "region": "Dovrefjell",
@@ -164,6 +175,39 @@
   "season": "apr–jun",
   "hasGuide": true
  },
+ "jonshornet": {
+  "name": "Jønshornet",
+  "region": "Sunnmøre",
+  "summitM": 1417,
+  "verticalM": 1430,
+  "duration": "6–8 t",
+  "grade": 4,
+  "aspect": "N",
+  "season": "feb–mai",
+  "hasGuide": false
+ },
+ "ytstevasshornet": {
+  "name": "Ytstevasshornet",
+  "region": "Sunnmøre",
+  "summitM": 1331,
+  "verticalM": 840,
+  "duration": "3–5 t",
+  "grade": 3,
+  "aspect": "Ø",
+  "season": "jan–mai",
+  "hasGuide": false
+ },
+ "rana": {
+  "name": "Råna",
+  "region": "Sunnmøre",
+  "summitM": 1587,
+  "verticalM": 1600,
+  "duration": "7–9 t",
+  "grade": 3,
+  "aspect": "SØ",
+  "season": "mars–mai",
+  "hasGuide": false
+ },
  "kolastinden": {
   "name": "Kolåstinden",
   "region": "Sunnmøre",
@@ -174,6 +218,17 @@
   "aspect": "N",
   "season": "feb–mai",
   "hasGuide": true
+ },
+ "vassdalstinden": {
+  "name": "Vassdalstinden",
+  "region": "Sunnmøre",
+  "summitM": 1278,
+  "verticalM": 1210,
+  "duration": "5–7 t",
+  "grade": 3,
+  "aspect": "Ø",
+  "season": "feb–mai",
+  "hasGuide": false
  },
  "saudehornet": {
   "name": "Saudehornet",
@@ -197,6 +252,39 @@
   "season": "mar–mai",
   "hasGuide": true
  },
+ "torvloysa": {
+  "name": "Torvløysa",
+  "region": "Sunnmøre",
+  "summitM": 1851,
+  "verticalM": 1460,
+  "duration": "7–9 t",
+  "grade": 2,
+  "aspect": "N",
+  "season": "mars–mai",
+  "hasGuide": false
+ },
+ "skarene": {
+  "name": "Skårene",
+  "region": "Sunnmøre",
+  "summitM": 1830,
+  "verticalM": 1220,
+  "duration": "5–7 t",
+  "grade": 3,
+  "aspect": "S",
+  "season": "mars–mai",
+  "hasGuide": false
+ },
+ "melshornet": {
+  "name": "Melshornet",
+  "region": "Sunnmøre",
+  "summitM": 809,
+  "verticalM": 560,
+  "duration": "2–4 t",
+  "grade": 1,
+  "aspect": "SØ",
+  "season": "des–apr",
+  "hasGuide": false
+ },
  "jakta": {
   "name": "Jakta",
   "region": "Sunnmøre",
@@ -218,6 +306,50 @@
   "aspect": "V",
   "season": "jan–mai",
   "hasGuide": true
+ },
+ "kvitegga": {
+  "name": "Kvitegga",
+  "region": "Sunnmøre",
+  "summitM": 1700,
+  "verticalM": 1480,
+  "duration": "6–8 t",
+  "grade": 3,
+  "aspect": "Ø",
+  "season": "mars–mai",
+  "hasGuide": false
+ },
+ "hornindalsrokken": {
+  "name": "Hornindalsrokken",
+  "region": "Sunnmøre",
+  "summitM": 1527,
+  "verticalM": 1470,
+  "duration": "6–8 t",
+  "grade": 4,
+  "aspect": "Ø",
+  "season": "mars–mai",
+  "hasGuide": false
+ },
+ "sunndalsnipa": {
+  "name": "Sunndalsnipa",
+  "region": "Sunnmøre",
+  "summitM": 1395,
+  "verticalM": 990,
+  "duration": "4–6 t",
+  "grade": 2,
+  "aspect": "S",
+  "season": "des–apr",
+  "hasGuide": false
+ },
+ "eidskyrkja": {
+  "name": "Eidskyrkja",
+  "region": "Sunnmøre",
+  "summitM": 1482,
+  "verticalM": 1120,
+  "duration": "4–6 t",
+  "grade": 3,
+  "aspect": "N",
+  "season": "mars–mai",
+  "hasGuide": false
  },
  "rondslottet": {
   "name": "Rondslottet",

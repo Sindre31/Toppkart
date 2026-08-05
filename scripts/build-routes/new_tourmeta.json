@@ -479,8 +479,8 @@
   "grade": 4,
   "gradeReason": "Lang tur i alpint terreng: 1139 høgdemeter og 6,4 km korridor, med ein sørrygg som går opp og ned og ein travers over austsida ovanfor Kjellstaddalen før ein kjem opp på toppryggen. Sjølve skiruta held seg under 37 grader målt over 25-metersvindauge, men dei siste 103 høgdemetrane er smal, eksponert rygg med 55 grader ned austsida og om lag 75 grader ned vestsida, og blir normalt gått med skia på sekken og isøks når snøen er hard.",
   "roadClosedInWinter": false,
-  "teaserNo": "1139 høgdemeter frå Langøylia over Aksla, Trollaksla og Sætrenibba; dei siste 103 går på utsett rygg.",
-  "teaserEn": "1139 m from Langøylia over Aksla, Trollaksla and Sætrenibba; the last 103 are on an exposed ridge.",
+  "teaserNo": "1470 høgdemeter frå Langøylia over Aksla, Trollaksla og Sætrenibba; dei siste 103 går på utsett rygg.",
+  "teaserEn": "1470 m of ascent from Langøylia over Aksla, Trollaksla and Sætrenibba; the last 103 are on an exposed ridge.",
   "hazardNotes": "Skredterreng i botnen av Kjellstaddalen og i heile austsida opp mot toppryggen - det er både traversen på veg opp og nedkøyringa. Toppryggen er smal og skavlete; DTM1 gjev om lag 55 grader rett aust og 75 grader rett vest for ryggen dei siste hundre høgdemetrane, så eit feiltrinn her er ikkje til å rette opp. Isøks er vanleg når snøen er hard, og heile turen er lang nok til at vending må avgjerast tidleg.",
   "sources": [
    "https://www.friflyt.no/topptur/skiturer-sunnmoere/turbeskrivelse-hornindalsrokken",
@@ -496,7 +496,8 @@
    "Corridor ends 103 m below the summit. The last waypoint is the east rib at 1423,8 m, not the top. Both the summer description (ut.no: the final section 'is airy', exposure and scrambling, ice axe needed when there is much or hard snow) and the DTM agree that the summit block is not skinnable ground: 52 m west of the summit the terrain reads 1247 m against 1443 m on the crest (about 75 deg), and 52 m east 1427 m against 1513 m (about 55 deg). Skis normally come off on the rib. grade set to 4 and confidence to medium for that reason.",
    "Trailhead moved 1,1 km west of the mapped car park. The first draft used OSM node/10219443853, amenity=parking, name=Hyttehola (62.03157,6.76660, 357,7 m) at the entrance to the Langøylia cabin field. That start is 7,21 km from the summit in a straight line - longer than Fri Flyt's stated 7 km for the whole walk - and it puts the line across the Kjellstaddalen valley floor. The west end of the cabin-field road, OSM way/948937340 (unclassified, name=Langøylia) at 62.03410,6.74613, reads 387,7 m, which matches the 377 m that Fri Flyt's 1150 hm implies, and gives a 6,42 km corridor that stays on the ascent side of the river throughout.",
    "The 'Aksla (912 moh.)' of the guidebook is not the SSR point. Kartverket registers Aksla as a Rygg at 62.04241,6.75170, which dtm_point reads at 463,1 m down in the valley. The 912 m spot height is on the same ridge 2,3 km WNW; the waypoint was moved to 62.04450,6.71900, read back at 921,3 m.",
-   "Checked the descent aspect rather than inheriting it from the ascent. Fri Flyt's recommended descent is Kjellstaddalen, 'nesten 1000 høgdemeter køyring i hellingsvinklar på 25-35 grader heile vegen ned til Kjellstadsætra'. Kjellstadsætra reads 507,4 m at 62.05942,6.70966, east-southeast of the summit, and the flank the route traverses on the way up is the same east side. Aspect recorded as Ø. Recording this tour as W or N would have pointed skiers at the 75 deg wall."
+   "Checked the descent aspect rather than inheriting it from the ascent. Fri Flyt's recommended descent is Kjellstaddalen, 'nesten 1000 høgdemeter køyring i hellingsvinklar på 25-35 grader heile vegen ned til Kjellstadsætra'. Kjellstadsætra reads 507,4 m at 62.05942,6.70966, east-southeast of the summit, and the flank the route traverses on the way up is the same east side. Aspect recorded as Ø. Recording this tour as W or N would have pointed skiers at the 75 deg wall.",
+   "Teaseren er skriven om mot den rutede vertikalen. Forskinga sitt tal, 1139 høgdemeter, er summit minus trailhead i luftlinje; den rutede linja over Aksla, Trollaksla og Sætrenibba samlar 1466 m fordi ryggen går opp og ned. Same måling gjev 327 m attgjeving og eit 30-meterssteg på 46,6 grader på austribba — det siste er dei 103 høgdemetrane som blir gått utan ski."
   ],
   "notes": "Fri Flyt rute 3.5.1 'Opp frå Langøylia' (KAST 3 Komplekst): 1150 høgdemeter, 7 km, 5 timar, tilkomst 'Langøylia. Følg hovudvegen mellom Hellesylt og Hornindal. Ta av opp mot hyttefeltet Langøylia om lag 10 kilometer vest for Hellesylt (mellom Tronstad og Røyrhus) og parker på eigna plass.' Rutelinja i teksten er 'Ta opp lia aust (til høgre) for Gjøelva ... til du når Aksla (912 moh.). Følg ryggen til Trollaksla (1250 moh.) og sørryggen vidare litt opp og ned til Sætrenibba (1374 moh.) og skaret nord for denne. Frå skaret rundar ein austover (høgre) inn i sida som leier ned mot Kjellstaddalen. Traverser denne sida til du kjem opp på ryggen nord for toppen, og følg denne til topps.' Alle fire punkta er stadfesta mot DTM1: Trollaksla 1255,4 (Fri Flyt 1250), Sætrenibba 1369,6 (Fri Flyt 1374), skaret nord for Sætrenibba 1226 ved 62.0675,6.6681, Aksla 921,3. Målt vertikal frå start til topp er 1139,4 m mot dei publiserte 1150. Kryssjekk av ryggen nord for toppen viser fire 25-metersvindauge over 42 grader mellom 1300 og 1380 moh, medan aust-ribba som korridoren følgjer held seg under 37 grader heile vegen frå skaret - det er difor korridoren går den vegen. Merk at 'Gjøelva' ikkje finst i SSR og at eg ikkje har kunna stadfeste kva side av bekken stien går på; korridoren er lagd etter terrenget og etter dei namngjevne toppunkta, ikkje etter bekken. Alle koordinatar er lesne tilbake frå ws.geonorge.no/hoydedata/v1/punkt."
  },
@@ -527,5 +528,255 @@
    "Adversarial pass, verified with flank_probe 60.69588 6.41101 --out 400 --step 20: east of the north ridge, bearings 60 and 75 measure 33,6 and 33,1 grader mean with 51,5 and 48,6 over the steepest 60 m, while west measures 0,2. The ridge is the western rim of the Aardalen face, so 'brei og slak, problemet er feste, ikkje flak' was a reassurance the terrain does not support. Also: the '893 meter grunn' for the last 107 vertical metres is the chord from the punkt 1305 waypoint to the summit; along the line it is 1095 m and the line drops to 1288 moh first. And Svartahorgi's SSR point reads 1029 m but sits 41 m off the top, whose DTM1 max is 1036 - the published 1037 is right."
   ],
   "notes": "Fri Flyt (Lønahorgi, 1410 moh., 1330 høgdemeter) gjev to startstader. Den som kan brukast her er 'den nedlagte gården Høyland sør for Tvinne. Ta av til venstre ved Grotlandsbrua omtrent en kilometer nord for innløpet av Lønavatnet. Følg bilveg og så traktorveg', 3-4 timar opp, og rutelinja 'Følg skogsbilvei sørover til du kommer til Bergstølen. Herfra tar du deg opp det trange dalføret ved Breiming. Følg slakeste vei mot Svartahorge (1037) til venstre for det trigonometriske punktet 835. Følg rundt til høyre for selve Svartahorge, og følg ryggen mot selve toppen.' Alle namna er stadfesta: Bergsstølen (SSR, 60.69687,6.45979) 379,7 m, Breiming (SSR Li, 60.69543,6.44614) 609,8 m, trigpunktet 834,3 m ved 60.70200,6.44400, Svartahorgi (SSR, 60.70634,6.43978) 1029,0 m mot dei publiserte 1037, og punkt 1305 på 1305,2 m. Straklinja start-topp er 3496 m med retning 253 grader (VSV) og korridoren er 6,9 km. Confidence er medium av to grunnar: dei fleste går faktisk turen frå toppen av Horgaletten-heisen på om lag 920 moh. og korta ned til 490 høgdemeter, og det er ikkje dokumentert at Høylandsvegen blir brøytt fram til den nedlagde garden om vinteren. Alle koordinatar er lesne tilbake frå ws.geonorge.no/hoydedata/v1/punkt."
+ },
+ "rana": {
+  "season": "mars–mai",
+  "aspect": "SØ",
+  "grade": 3,
+  "gradeReason": "Lang fjord-til-topp-tur på 1500 høgdemeter i alpint terreng, KAST 3 Komplekst hos Fri Flyt. Sjølve skiruta går opp ein bratt bakke frå Nordkopen til egga og deretter ein brei rygg; det er lengda, skredterrenget inn mot kopen og skavlane på austsida av toppryggen som avgjer graden, ikkje ein einskild bratt meter.",
+  "roadClosedInWinter": true,
+  "teaserNo": "1600 høgdemeter frå Urkegjerdet ved fjorden: inn dalen til Nordkopen, bratt opp på egga og nordover den breie toppryggen.",
+  "teaserEn": "1600 m of ascent from Urkegjerdet at the fjord: up the valley to Nordkopen, steeply onto the arête and north along the broad summit ridge.",
+  "hazardNotes": "Skredterreng inn mot Nordkopen og i sida opp frå kopen til egga. Store skavlar på austsida av den breie toppryggen — hald deg vest for kammen. Ekstra varsemd i vårsnø utover ettermiddagen.",
+  "sources": [
+   "https://www.friflyt.no/topptur/skiturer-sunnmoere/turbeskrivelse-raana",
+   "https://ut.no/turforslag/115112/topptur-til-rana-1586-moh",
+   "https://morotur.no/tur/Raana-1586-moh.-fra-Urkedalen",
+   "https://www.openstreetmap.org/way/39091487",
+   "https://ws.geonorge.no/stedsnavn/v1/navn (Råna, Haukåssætra, Nordkopen)"
+  ],
+  "confidence": "medium",
+  "corrections": [
+   "Start flytta frå Haukåssætra til Urkegjerdet. Fri Flyt oppgjev 1500 høgdemeter og «5 timar frå Haukåssætra», og dei to tala gjeld ikkje same punkt: Haukåssætra les 229,8 m på DTM1, som gjev 1357 m til toppen. Vegen opp frå Urke er vinterstengd («køyr så langt du kjem på den vinterstengde vegen»), så turen startar i praksis der grusvegen tek av ved Urke Landhandel — OSM way/39091487 «Urkegjerde», 63,4 m, som gjev 1524 m og svarar til dei publiserte 1500. Sætra er lagt inn som vegpunkt.",
+   "Ryggen nord for Nordkopen er målt, ikkje gjetta. Fri Flyt seier «frå kopen sikksakkar du bratt opp mot egga i nord, som du tek inn på til høgre for markert hammar». Rett linje Nordkopen–toppen kryssar ei 1486 m høgde og fell så til 1260 m på Snøisbre: det er ikkje ruta. Rasteret viser botnen på 62.2580,6.5786 (987,4 m) og eggkammen på 62.2660,6.5758 (1330,9 m), der ryggen held fram nordover mot toppen, og begge er lagde inn som vegpunkt.",
+   "Toppen ligg 1587,0 m på DTM1 mot publiserte 1586.",
+   "Siste vegpunkt lagt på toppryggen sørvest for toppen. Utan det gjekk linja opp austsida og fekk eit 30-meterssteg på 62 grader inn mot toppen; flankemålinga viser at Råna er bratt i alle retningar (22–41 grader i snitt over 400 m, med 53–66 graders vindauge), og at den slakaste vegen til topps går langs kammen: frå 62.27400,6.57350 (1531.3 m) stig ryggen jamt til toppen på 184 m."
+  ],
+  "notes": "Fri Flyt: 1586 moh, 1500 høgdemeter, 5 timar frå Haukåssætra, KAST 3 Komplekst. Tilkomst: «Urkegjerdet/Haukåssætra. Følg hovudvegen til Urke og ta inn på grusveg ved Urke Landhandel, og køyr så langt du kjem på den vinterstengde vegen i retning Haukåssætra.» Rutelinje: «Ta av frå vegen litt nedanfor Haukåssætra og følg dalen innover mot Nordkopen. Frå kopen sikksakkar du bratt opp mot egga i nord, som du tek inn på til høgre for markert hammar. Følg deretter toppryggen nordover heile vegen til toppen.»"
+ },
+ "kvitegga": {
+  "season": "mars–mai",
+  "aspect": "Ø",
+  "grade": 3,
+  "gradeReason": "1400 høgdemeter og bre. Brattbakken er om lag 35 grader over ei kort strekning, og resten av turen er slakt platå- og ryggterreng; det er breen og lengda som gjer turen kompleks, ikkje hellinga.",
+  "roadClosedInWinter": false,
+  "teaserNo": "1480 høgdemeter frå Nibbedalen gjennom Snødalen og over Brattbakken til det høgste fjellet i midtre Sunnmørsalpane.",
+  "teaserEn": "1480 m of climbing from Nibbedalen through Snødalen and over Brattbakken to the highest mountain in the central Sunnmøre Alps.",
+  "hazardNotes": "Brattbakken er skredterreng og målt til om lag 35 grader. Sprekker i breen seinvinters og utover våren. Store skavlar langs toppryggen — hald avstand til kantane, særleg i dårleg sikt.",
+  "sources": [
+   "https://www.friflyt.no/topptur/skiturer-sunnmoere/turbeskrivelse-kvitegga-raanahalvoeya",
+   "https://morotur.no/tur/kvitegga-oersta",
+   "https://visitstranda.com/en/opplevelser/toppturer/kvitegga-volda/",
+   "https://www.hjorundfjord.no/artikkel/2007/05/kvitegga-1717-m-o-h",
+   "https://www.openstreetmap.org/way/948937402"
+  ],
+  "confidence": "medium",
+  "corrections": [
+   "Namnet peikar på to fjell. SSR har ni Kvitegga, og to av dei er dokumenterte toppturar innanfor 9 km: den i Stranda på 62.13855,6.86486 toppar seg på 1488 m og er Kvitegga (1489 moh.) frå Ljøen, ei anna rute. Denne turen går på Kvitegga 1717, registrert i Volda på 62.09473,6.70223.",
+   "Publisert høgde er snøkuppelen, ikkje terrenget. DTM1 les 1700,3 m på toppcella mot publiserte 1717; Hjørundfjordportalen skriv sjølv at «1717 moh på snøkuppelen». Kortet fører den målte høgda.",
+   "Rett linje frå parkeringa til toppen er ikkje ruta. Profilen stig jamt til 1180 m og går så 1180 → 1508 → 1700 på dei siste 370 metrane — ein vegg. Den skildra ruta går vestover inn Snødalen (925,1 m på 62.0917,6.7306), opp Brattbakken (1316,4 m på 62.0885,6.7209, brear i sida) og over platået til 1582,4 m-toppen på 62.08607,6.71162, før ein følgjer ryggen nordover til topps. Alle tre er lagde inn som vegpunkt og lesne av DTM1."
+  ],
+  "notes": "Fri Flyt rute 2.16.1: 1717 moh, 1400 høgdemeter, 6 km, 5 timar, KAST 3 Komplekst. «Snødalen. Følg hovudvegen mellom Hornindal og Hellesylt og ta av opp mot Nibbedalen ved Tryggestad.» Morotur gjev 5,84 km ein veg, 1430 høgdemeter og høgste punkt 1699 moh, og skildrar Brattbakken mellom Kvanngrønibba og Blåfjellet på 1300 moh, 35 grader, og at ein går over 1587-toppen og ned om lag 20 m før ein snur nordover mot Kvitegga."
+ },
+ "jonshornet": {
+  "season": "feb–mai",
+  "aspect": "N",
+  "grade": 4,
+  "gradeReason": "KAST 3 Komplekst hos Fri Flyt, og dei siste hundre høgdemetrane går på egg: frå skaret på 1089 m stig ryggen 328 m til toppen, som er ein haug av store steinblokker. Skia blir normalt sette igjen på ryggen, og alternativ nedkøyring gjennom Jønshornrenna held opp mot 45 grader.",
+  "roadClosedInWinter": false,
+  "teaserNo": "1430 høgdemeter frå Vollane over Rametinden, og dei siste hundre på smal egg til varden på Ramoen.",
+  "teaserEn": "1430 m of ascent from Vollane over Rametinden, with the last hundred on a narrow arête to the cairn on Ramoen.",
+  "hazardNotes": "Skredterreng i sidene ned frå ryggen mellom Rametinden og toppen, og i Jønshornrenna mot Molladalen. Eksponert egg dei siste hundre høgdemetrane. Skaret på 1089 moh gjev 108 m attgjeving på veg opp.",
+  "sources": [
+   "https://www.friflyt.no/topptur/skiturer-sunnmoere/turbeskrivelse-joenshornet",
+   "https://ut.no/turforslag/115752/topptur-til-jnshornet-1419-moh",
+   "http://www.fjellfant.com/index.php/toppfjell/sunnmore/788-jonshornetramoen-1419-moh-via-rametinden-1198-moh",
+   "https://www.openstreetmap.org/way/1347389668"
+  ],
+  "confidence": "medium",
+  "corrections": [
+   "Vegpunkta er henta frå SSR og lesne av DTM1: Vollesætra 410,5 m, Rametinden 1197,2 m. Toppen les 1416,9 m mot publiserte 1419.",
+   "Nedkøyringa er ikkje ruta. Fri Flyt skildrar ei rundtur der ein køyrer Jønshornrenna ned i Molladalen med bilnøkkel-logistikk; korridoren her er oppstiginga frå Vollane, som er den ut.no og fjellfant.com skildrar, og som er den ein køyrer ned att utan omkøyring."
+  ],
+  "notes": "Fri Flyt: 1419 moh, 1300 høgdemeter, 6 km, 5 timar, KAST 3. «Gå gjennom stålgrinda ved elva og følg stien oppover først på venstre side og så på høgre side av elva til terrenget legg seg ved Vollesætra. Herifrå går ein i relativt slakt terreng opp til Rametinden. Følg ryggen og etter kvart egga sørover mot Jønshornet.» Målt vertikal frå Vollane til toppen er 1310 m mot publiserte 1300. Fjellet blir lokalt kalla Ramoen."
+ },
+ "vassdalstinden": {
+  "season": "feb–mai",
+  "aspect": "Ø",
+  "grade": 3,
+  "gradeReason": "KAST 3 Komplekst hos Fri Flyt. Kneika opp til Bukkedalen og flanken opp mot toppen er begge lange og bratte, og toppen har ei 45–50 graders renne rett ned i Nupadalen på vestsida.",
+  "roadClosedInWinter": false,
+  "teaserNo": "1210 høgdemeter frå Nupen: seterveg til Vallasætra, kneiken opp i Bukkedalen og ein lang flanke til topps.",
+  "teaserEn": "1210 m of ascent from Nupen: the seter road to Vallasætra, the step up into Bukkedalen and one long flank to the top.",
+  "hazardNotes": "Skredterreng i kneika opp til Bukkedalen og i heile flanken mot toppen. Frå skaret nord for toppen fell Vestrenna 700 høgdemeter i 45–50 grader ned i Nupadalen — ei feilnavigering vestover i dårleg sikt er alvorleg.",
+  "sources": [
+   "https://www.friflyt.no/topptur/skiturer-sunnmoere/turbeskrivelse-vassdalstinden",
+   "https://www.openstreetmap.org/way/40526148",
+   "https://ws.geonorge.no/stedsnavn/v1/navn (Vassdalstinden, Vallasætra, Bukkedalen, Nupen)"
+  ],
+  "confidence": "medium",
+  "corrections": [
+   "Start sett til Nupen, ikkje Vallasætra. Fri Flyt gjev 1200 høgdemeter og «3 timar frå Vallasætra» eller «4 timar frå Nupen»; Vallasætra les 323,5 m på DTM1 og gjev berre 955 m, medan Nupen på 92,2 m gjev 1186 m og svarar til den publiserte vertikalen. Vegen vidare til sætra er bomveg og «viss vegen er open», så den låge starten er den som gjeld om vinteren. Vallasætra er lagt inn som vegpunkt.",
+   "Rett linje Bukkedalen–toppen er 713 m grunn og 487 høgdemeter, om lag 34 grader i snitt. Rasteret viser at dalbotnen held fram nordover til 62.24630,6.19640 (960,5 m), og at flanken derifrå er kortare og slakare. Vegpunktet er lagt der, i tråd med «følg dalbotnen innover til du ser den bratte, lange og dryge flanken».",
+   "Vestrenna er ikkje teken med. Fri Flyt skildrar ei 45–50 graders renne som stuper 700 høgdemeter frå skaret nord for toppen ned i Nupadalen; det er ei nedkøyring for erfarne, ikkje ruta opp."
+  ],
+  "notes": "Fri Flyt: 1277 moh, 1200 høgdemeter, 5 km, 3 timar frå Vallasætra / 4 timar frå Nupen, KAST 3. Tilkomst: «Ta av frå veg 655 ved Rossåbrua aust for Ørsta sentrum, inn på Mosmarkvegen … vidare til bilparkering etter bom i Nupen eller heilt til Vallasætra, viss vegen er open.» Toppen les 1278,1 m på DTM1 mot publiserte 1277."
+ },
+ "melshornet": {
+  "season": "des–apr",
+  "aspect": "SØ",
+  "grade": 1,
+  "gradeReason": "KAST 1 Enkelt hos Fri Flyt: preparert og merkt løype i slakt terreng heile vegen, og turen blir gått i mørket gjennom heile vinteren.",
+  "roadClosedInWinter": false,
+  "teaserNo": "560 høgdemeter på preparert løype frå Helgatun — husfjellet som blir gått i mørket heile vinteren.",
+  "teaserEn": "560 m of climbing on a groomed track from Helgatun — the local hill, skied after dark all winter.",
+  "hazardNotes": "Løypa sjølv er skredtrygg, men sidene av Grøthornet er skredterreng, og det kan liggje skavl mot Ørsta nær toppen. Hald deg til løypetraseen i dårleg sikt.",
+  "sources": [
+   "https://www.friflyt.no/topptur/skiturer-sunnmoere/turbeskrivelse-melshornet-kolaashalvoeya",
+   "https://www.openstreetmap.org/way/932657357",
+   "https://ws.geonorge.no/stedsnavn/v1/navn (Melshornet, Helgatun)"
+  ],
+  "confidence": "high",
+  "corrections": [
+   "Parkeringa er kartfest: OSM way/932657357, amenity=parking, name=Helgatun, 251,8 m — 96 m frå SSR-punktet for Helgatun. Fri Flyt: «Parker på stor parkeringsplass ved Helgatun.»",
+   "Målt vertikal frå parkeringa til toppen er 558 m mot publiserte 550, og toppen les 809,4 m mot 807."
+  ],
+  "notes": "Fri Flyt: 807 moh, 550 høgdemeter, 3 km, 1–2 timar frå botnstasjonen og frå Helgatun på Krøvelseidet, KAST 1 Enkelt."
+ },
+ "sunndalsnipa": {
+  "season": "des–apr",
+  "aspect": "S",
+  "grade": 2,
+  "gradeReason": "KAST 2 Utfordrande hos Fri Flyt for oppstiginga. Turen er lang, men slak: ryggen og platået held låge hellingsvinklar, og det bratte ligg i vest- og austveggen ein skal halde seg unna.",
+  "roadClosedInWinter": false,
+  "teaserNo": "990 høgdemeter frå Grøndalsvatnet opp søraustryggen, og ein kilometer flatt platå fram til varden.",
+  "teaserEn": "990 m of ascent from Grøndalsvatnet up the south-east ridge, then a kilometre of flat plateau to the cairn.",
+  "hazardNotes": "Bratte vestre og austre vegger frå platået — orienteringsfelle i skodde og snødrev. Sørflanken, som er den brattare nedkøyringa Fri Flyt nemner, er skredterreng og skal berre køyrast på stabile dagar.",
+  "sources": [
+   "https://www.friflyt.no/topptur/skiturer-sunnmoere/turbeskrivelse-sunndalsnipa-i-sunnmoersalpene",
+   "https://www.openstreetmap.org/way/367717121",
+   "https://ws.geonorge.no/stedsnavn/v1/navn (Sunndalsnipa, Grøndalsvatnet)"
+  ],
+  "confidence": "medium",
+  "corrections": [
+   "Starten er lagd ved enden av Grøndalsvegen ved Grøndalsvatnet, 437,5 m — Fri Flyt: «vidare opp den heilårsopne vegen opp bakkane til Grøndalsvatnet». Målt vertikal til toppen er 958 m mot publiserte 1000.",
+   "Toppvarden ligg om lag ein kilometer nord for SSR-punktet. Summit-søket landa på 62.01816,6.32162, 1395,2 m mot publiserte 1396, 0,94 km frå registerpunktet — som svarar til skildringa av eit platå der varden ligg ein kilometer lenger nord."
+  ],
+  "notes": "Fri Flyt: 1396 moh, 1000 høgdemeter, 5 km, 3 timar, KAST 2 opp / KAST 3 for sørflanken ned. «Grøndalsvatnet. Følg E39 frå Volda langs Austefjorden og vidare inn til Kalvatn. Ta her høgre mot Osdalen og vidare opp den heilårsopne vegen opp bakkane til Grøndalsvatnet.»"
+ },
+ "eidskyrkja": {
+  "season": "mars–mai",
+  "aspect": "N",
+  "grade": 3,
+  "gradeReason": "KAST 3 Komplekst hos Fri Flyt. Sjølve hellinga er moderat — om lag 25 grader nedst på breen og slakare oppover — men det er bre med sprekker, og toppplatået er ei orienteringsfelle.",
+  "roadClosedInWinter": true,
+  "teaserNo": "1120 høgdemeter frå Skinnviksætra opp Blåbreen: 25 grader nedst på breen og eit vidt toppplatå øvst.",
+  "teaserEn": "1120 m of climbing from Skinnviksætra up the Blåbreen glacier: 25 degrees low down and a wide summit plateau on top.",
+  "hazardNotes": "Orienteringsvanskar i toppområdet ved skodde eller snødrev. Skredfaren er liten om ein held seg midt på Blåbreen, men ver merksam på sprekker vest på breen og på utløpsområde for skred i same område.",
+  "sources": [
+   "https://www.friflyt.no/topptur/skiturer-sunnmoere/turbeskrivelse-eidskyrkja",
+   "https://www.openstreetmap.org/way/129235168",
+   "https://ws.geonorge.no/stedsnavn/v1/navn (Eidskyrkja, Skinnviksætra)"
+  ],
+  "confidence": "medium",
+  "corrections": [
+   "Starten er lagd på setervegen ved Skinnviksætra, 368,0 m, 152 m frå SSR-punktet for sætra. Målt vertikal til toppen er 1114 m mot publiserte 1100.",
+   "Linja over Blåbreen er kontrollert mot DTM1: profilen frå sætra stig jamt 368 → 1482 m, med breterreng registrert på 1289 m og 1430 m. Det er ruta Fri Flyt skildrar, og ingen omveg trengst.",
+   "SSR-treffet «Blåbreden» i Volda på 62.05677,6.57667 er ein annan bre, 15 km aust, på Storhornet-sida. Breen på denne turen er den mellom Skinnviksætra og Eidskyrkja."
+  ],
+  "notes": "Fri Flyt: 1482 moh, 1100 høgdemeter, 4 km, 3 timar, KAST 3. «Skinnviksætra. Følg E39 frå Volda inn til Fyrde i botnen av Austefjorden. Følg veg 655 om lag 2 kilometer ut fjorden på andre sida, før du tek av til venstre på seterveg/bomveg.» Toppen les 1482,5 m på DTM1 mot publiserte 1482."
+ },
+ "auskjeret": {
+  "season": "des–apr",
+  "aspect": "SØ",
+  "grade": 2,
+  "gradeReason": "Jamn stigning på om lag 15 grader i snitt heile vegen, og med rett rutevalg held turen seg under 30 grader. Det er lengda og eit brattheng mot aust som skil han frå ein reint enkel tur.",
+  "roadClosedInWinter": false,
+  "teaserNo": "870 høgdemeter frå Fausaskiftet i jamn stigning nordover — heilårsopen veg og moderate hellingar.",
+  "teaserEn": "870 m of ascent from Fausaskiftet in even climbing northward — a road open all year and moderate angles.",
+  "hazardNotes": "Fjellet har eit brattheng mot aust som er over 30 grader og skal styrast unna i skredver. Elles held ruta seg under 30 grader om ein følgjer ryggen opp og ned.",
+  "sources": [
+   "https://www.friflyt.no/topptur/skiturer-sunnmoere/turbeskrivelse-auskjaeret",
+   "https://ut.no/turforslag/115022/topptur-til-auskjeretausekaret-i-sykkylven-1203-moh",
+   "https://www.utemagasinet.no/randonee/turbeskrivelse-auskjeret",
+   "https://www.openstreetmap.org/way/598763759"
+  ],
+  "confidence": "medium",
+  "corrections": [
+   "Fausaskiftet er funne i OSM, ikkje gjetta. Namnet står ikkje i SSR. Fausavegen (OSM way/598763759, tertiary) tek av frå vegnettet ved Nysætervatnet på 62.36019,6.82149, 332,6 m, og det er dette skiftet Fri Flyt og ut.no skildrar. Punktet gjev 870 høgdemeter til toppen mot Fri Flyts 850 og ut.no sine 871, og 3,2 km i luftlinje mot Fri Flyts 3 km — alle tre stemmer.",
+   "Toppen les 1202,6 m på DTM1 mot publiserte 1203.",
+   "Auskjeret finst to gonger i SSR innan 20 km: 62.41235,7.16615 (1340 m) i Fjord, som Fri Flyt fører som «Auskjeret i Stordal, 1360 moh», og denne på 62.37739,6.77488 i Sykkylven. Turen her er Sykkylven-toppen."
+  ],
+  "notes": "Fri Flyt: 1203 moh, 850 høgdemeter, 3 km, 2–3 timar. «Køyr om lag 4 km forbi skianlegget, til du kjem til Fausaskiftet ved enden av Nysætervatnet.» ut.no gjev 7,0 km tur/retur og 871 høgdemeter totalt, sesong desember–april."
+ },
+ "torvloysa": {
+  "season": "mars–mai",
+  "aspect": "N",
+  "grade": 2,
+  "gradeReason": "Fri Flyt: «Dersom du følgjer den skildra ruta, kan du halde deg under 30 grader.» Det bratte ligg i kneika frå Rellingsætra opp på Daurmålsfjellet; resten er slak rygg. Lengda — åtte kilometer og 1400 høgdemeter — er det som gjer turen krevjande.",
+  "roadClosedInWinter": false,
+  "teaserNo": "1460 høgdemeter og ti kilometer frå Hatlestad over Rellingsætra og Daurmålsfjellet, mest slak rygg.",
+  "teaserEn": "1460 m of ascent and ten kilometres from Hatlestad over Rellingsætra and Daurmålsfjellet, mostly gentle ridge.",
+  "hazardNotes": "Kneika frå Rellingsætra opp på Daurmålsfjellet er den bratte delen. Ryggen vidare er slak, men lang og utan ly, og breterrenget kring 1400 moh har sprekker seinvinters. Vending må avgjerast tidleg.",
+  "sources": [
+   "https://www.friflyt.no/topptur/skiturer-sunnmoere/turbeskrivelse-torvloeysa",
+   "https://ut.no/turforslag/1112886/torvlysa1851m-fra-herdalen",
+   "https://www.tinderogtopper.no/post/torvl%C3%B8ysa-1850-moh",
+   "https://www.openstreetmap.org/node/10219240171"
+  ],
+  "confidence": "medium",
+  "corrections": [
+   "Starten er den kartfeste p-plassen på Hatlestad, OSM node/10219240171, 453,2 m. Fri Flyt skriv «parker ved Hatlestad-gardane på 350 moh»; SSR-punktet for Hatlestad les 412,5 m og p-plassen 453,2 m, så den publiserte 350-metaren er avrunda ned. Difor blir vertikalen om lag 1400 m og ikkje dei 1500 Fri Flyt oppgjev.",
+   "Vegpunkta er SSR-namn lesne av DTM1: Rellingsætra 557,1 m og Daurmålsfjellet 824,6 m. Profilen frå Daurmålsfjellet til toppen stig jamt 825 → 1851 m over fem kilometer, med breterreng registrert på 1437 m — som svarar til «følg ryggen i slakt terreng heile vegen til toppen».",
+   "Toppen les 1850,7 m på DTM1 mot publiserte 1850 (lokalt òg skrive 1851).",
+   "Lagt inn eit ryggpunkt mellom Daurmålsfjellet og toppen. Fem kilometer utan noko som held linja er for langt for ein korridor; DTM1 les 62.20269,7.27324 til 1186.2 m, midt på ryggen, og korridoren blir to strekk på 2,9 og 2,2 km."
+  ],
+  "notes": "Fri Flyt: 1850 moh, 1500 høgdemeter, 8 km, 6 timar. «Frå Hatlestad-gardane … gå slakt inn i munninga av Dyrdalen. Frå Rellingssætra tek du deg brattare opp på Daurmålsfjellet. Herifrå følgjer du ryggen i slakt terreng heile vegen til toppen av Torvløysa.» Tilkomst med ferje Linge–Eidsdal."
+ },
+ "skarene": {
+  "season": "mars–mai",
+  "aspect": "S",
+  "grade": 3,
+  "gradeReason": "Sjølve snøflanken er jamn og slak nok til at Fri Flyt kallar nedkøyringa «flott skiterreng med snille hellingsvinklar», men heile strekket frå botnen av Gråsteindalen og opp er skredterreng, og turen er 1250 høgdemeter til eit av dei høgaste fjella i området.",
+  "roadClosedInWinter": false,
+  "teaserNo": "1220 høgdemeter frå Korsmyra opp Gråsteindalen og den store snøflanken til ein av dei høgaste toppane over Eidsdal.",
+  "teaserEn": "1220 m of climbing from Korsmyra up Gråsteindalen and the big snow flank to one of the highest peaks above Eidsdal.",
+  "hazardNotes": "Skredterreng frå botnen av Gråsteindalen og heile vegen opp til toppen — flanken er stor og samanhengande, og det er inga trygg line rundt han. Turen bør gåast på stabile dagar.",
+  "sources": [
+   "https://www.friflyt.no/topptur/skiturer-sunnmoere/turbeskrivelse-skaarene",
+   "https://www.friflyt.no/topptur/skiturer-sunnmoere/turbeskrivelse-eidshornet",
+   "https://www.openstreetmap.org/node/9802173662",
+   "https://ws.geonorge.no/stedsnavn/v1/navn (Skorene, Grandesætra, Gråsteindalen)"
+  ],
+  "confidence": "medium",
+  "corrections": [
+   "Tilkomsten står under Eidshornet hos Fri Flyt, og er Korsmyra: «Ta hovudvegen mellom Eidsdal og Geiranger og parker ved biloppstillingsplassen på Korsmyra.» OSM har p-plassen kartfest — node/9802173662, amenity=parking, name=Korsmyra, 621,4 m — 380 m frå SSR-punktet for Grandesætra, med bomgrind (node/2956176072) på setervegen vidare. Grandesætra er difor vegpunkt og ikkje start.",
+   "SSR skriv fjellet Skorene, ikkje Skårene. Registerpunktet på 62.19164,7.19670 les 1773,1 m; toppsøket landar 1,32 km sør på 62.17982,7.19977, 1829,9 m, som svarar til dei publiserte 1829.",
+   "Ruta er kontrollert mot DTM1: Korsmyra 621 → Gråsteindalen 721 m, så dalbotnen på 850–940 m i to kilometer, og deretter snøflanken 940 → 1830 m. Det svarar til «frå setra går du slakt inn og oppover Gråsteindalen; komen inn mot botnen av denne, følgjer du den store snøflanken heile vegen til topps». Den målte vertikalen frå Korsmyra blir om lag 1250 m mot Fri Flyts 1300 frå Grandesætra."
+  ],
+  "notes": "Fri Flyt: 1829 moh, 1300 høgdemeter, 7 km, 4 timar. «Tilkomsten til Grandesætra er skildra under Eidshornet.» Rutelinje: «Frå setra går du slakt inn og oppover Gråsteindalen. Komen inn mot botnen av denne, følgjer du den store snøflanken heile vegen til topps.»"
+ },
+ "ytstevasshornet": {
+  "season": "jan–mai",
+  "aspect": "Ø",
+  "grade": 3,
+  "gradeReason": "KAST 3 Komplekst hos Fri Flyt. Vassdalen er bratt og er skredterreng, det ligg normalt ei stor skavl mellom førtoppen og hovudtoppen, og skia blir sette igjen dei siste metrane.",
+  "roadClosedInWinter": false,
+  "teaserNo": "840 høgdemeter frå Svartevatnet: bratt opp Vassdalen til vatna på 950 moh, så nordvest mot ein smal og skavlete topprygg.",
+  "teaserEn": "840 m of ascent from Svartevatnet: steeply up Vassdalen to the tarns at 950 m, then north-west onto a narrow, corniced summit ridge.",
+  "hazardNotes": "Skavlar langs toppryggen — det dannar seg normalt ei stor skavl mellom førtoppen og hovudtoppen, og ein skal køyre ned i sida når ein rundar henne. Skredterreng i sida ned frå hovudtoppen og ikkje minst i sjølve Vassdalen.",
+  "sources": [
+   "https://www.friflyt.no/topptur/skiturer-sunnmoere/turbeskrivelse-ytstevasshornet",
+   "https://peakbook.org/no/peakbook-element/7201/no/Ytstevasshornet.html",
+   "https://www.haramfjell.com/Mountains/Mountain_facts/Ystevasshornet_Sykkylven.htm",
+   "https://www.openstreetmap.org/way/1206657874"
+  ],
+  "confidence": "medium",
+  "corrections": [
+   "Starten er den kartfeste p-plassen ved Svartevatnet, OSM way/1206657874, 537,8 m, 439 m frå SSR-punktet Vasshaugen — Fri Flyt: «parker langs vegen ved Vasshaugen, mellom Svartevatnet og Buvatnet». Målt vertikal til toppen er 793 m mot publiserte 800.",
+   "Vatna på om lag 950 moh i Vassdalen er lesne av DTM1: profilen frå parkeringa vestover passerer 975,8 m på 62.28449,6.74978, og det er lagt inn som vegpunkt.",
+   "Toppen les 1331,0 m på DTM1 mot publiserte 1330; peakbook fører 1331."
+  ],
+  "notes": "Fri Flyt: 1330 moh, 800 høgdemeter, 3 km, 3 timar, KAST 3. «Vasshaugen. Følg hovudvegen mellom Sykkylven og Stranda og parker ved langs vegen ved Vasshaugen, mellom Svartevatnet og Buvatnet.» Rutelinje: vestover opp Vassdalen i bratt terreng til små vatn kring 950 moh, så nordvestover mot toppryggen."
  }
 }

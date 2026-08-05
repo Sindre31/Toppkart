@@ -86,11 +86,20 @@ def main():
     corridors = json.load(open("corridors.json"))
     summits = json.load(open("summits.json"))
     os.makedirs(os.path.dirname(CACHE), exist_ok=True)
-    cache = resample(routes, load_cache())
+
+    # `resample_dtm1.py [slug …]` re-reads only those tours. A line that came
+    # back out of lib/routes.ts through routes_from_ts.py has already been
+    # resampled once, and the point API answers about two vertices a second —
+    # so re-reading the settled tours to add a few costs an hour and reproduces
+    # numbers that are already in the file. The cache makes it free the second
+    # time; the first time it is the whole job.
+    only = set(sys.argv[1:])
+    todo = {s: r for s, r in routes.items() if not only or s in only}
+    cache = resample(todo, load_cache())
 
     missing = 0
     print(f"\n{'tour':<18}{'route':<14}  gain          loss      steepest 30 m")
-    for slug, recs in routes.items():
+    for slug, recs in todo.items():
         by_id = {r["id"]: r for r in corridors[slug]["routes"]}
         for r in recs:
             pts = [tuple(p) for p in r["points"]]

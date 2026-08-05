@@ -116,6 +116,30 @@ export const TOUR_TEASER_EN: Record<string, string> = {
     "1071 metres of ascent from Liland up Lilandsdalen; the gully from 250 to 360 m runs at 35 degrees and the summit needs crampons.",
   jakta:
     "1560 m of ascent from Norang: a steady climb into Konedalen, then a 33° flank onto the narrow summit ridge.",
+  hornindalsrokken:
+    "1470 m of ascent from Langøylia over Aksla, Trollaksla and Sætrenibba; the last 103 are on an exposed ridge.",
+  jonshornet:
+    "1430 m of ascent from Vollane over Rametinden, with the last hundred on a narrow arête to the cairn on Ramoen.",
+  auskjeret:
+    "870 m of ascent from Fausaskiftet in even climbing northward — a road open all year and moderate angles.",
+  ytstevasshornet:
+    "840 m of ascent from Svartevatnet: steeply up Vassdalen to the tarns at 950 m, then north-west onto a narrow, corniced summit ridge.",
+  rana:
+    "1600 m of ascent from Urkegjerdet at the fjord: up the valley to Nordkopen, steeply onto the arête and north along the broad summit ridge.",
+  vassdalstinden:
+    "1210 m of ascent from Nupen: the seter road to Vallasætra, the step up into Bukkedalen and one long flank to the top.",
+  torvloysa:
+    "1460 m of ascent and ten kilometres from Hatlestad over Rellingsætra and Daurmålsfjellet, mostly gentle ridge.",
+  skarene:
+    "1220 m of climbing from Korsmyra up Gråsteindalen and the big snow flank to one of the highest peaks above Eidsdal.",
+  melshornet:
+    "560 m of climbing on a groomed track from Helgatun — the local hill, skied after dark all winter.",
+  kvitegga:
+    "1480 m of climbing from Nibbedalen through Snødalen and over Brattbakken to the highest mountain in the central Sunnmøre Alps.",
+  eidskyrkja:
+    "1120 m of climbing from Skinnviksætra up the Blåbreen glacier: 25 degrees low down and a wide summit plateau on top.",
+  sunndalsnipa:
+    "990 m of ascent from Grøndalsvatnet up the south-east ridge, then a kilometre of flat plateau to the cairn.",
 
 };
 
