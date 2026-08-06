@@ -76,11 +76,22 @@ const WEBHOOK_EVENTS = [
 
 function parseArgs(argv) {
   const args = { apply: false, account: null, site: null };
+  /* A flag whose value is missing has to be an error, not a shrug. `--account`
+     is the guard against writing into the wrong business, and silently
+     swallowing `--account` with nothing after it would disarm exactly the run
+     where it mattered. */
+  const takeValue = (flag, value) => {
+    if (!value || value.startsWith("--")) {
+      console.error(`${flag} mangler en verdi.`);
+      process.exit(2);
+    }
+    return value;
+  };
   for (let i = 0; i < argv.length; i += 1) {
     const arg = argv[i];
     if (arg === "--apply") args.apply = true;
-    else if (arg === "--account") args.account = argv[++i] ?? null;
-    else if (arg === "--site") args.site = argv[++i] ?? null;
+    else if (arg === "--account") args.account = takeValue(arg, argv[++i]);
+    else if (arg === "--site") args.site = takeValue(arg, argv[++i]);
     else if (arg === "--help" || arg === "-h") args.help = true;
     else {
       console.error(`Ukjent argument: ${arg}`);
@@ -128,15 +139,47 @@ function record(what, state, detail) {
   console.log(`  ${what.padEnd(28)} ${mark}${detail ? `  ${detail}` : ""}`);
 }
 
+/** Something that exists but is not what the app needs. Tracked apart from
+ *  `planned`, because a run that finds a wrong price has nothing to create and
+ *  would otherwise report «alt er på plass». */
+function warn(message) {
+  results.push({ state: "warned" });
+  console.log(`      ${message}`);
+}
+
+/** Stripe hands back references either expanded or as a bare id. */
+function idOf(value) {
+  if (!value) return null;
+  return typeof value === "string" ? value : value.id;
+}
+
+/** Walks every page. The list endpoints cap at 100 per call, and finding the
+ *  objects we created before is the whole of this script's idempotency — a
+ *  lookup that silently stops at page one creates duplicates in any account
+ *  that has grown past it. */
+async function findAll(page, predicate) {
+  const matches = [];
+  for await (const item of page) {
+    if (predicate(item)) matches.push(item);
+  }
+  return matches;
+}
+
 // ---------------------------------------------------------------------------
 // Steps
 // ---------------------------------------------------------------------------
 
 async function ensureProduct(stripe, apply) {
-  const existing = await stripe.products.list({ limit: 100, active: true });
-  const found = existing.data.find((product) => product.metadata?.app === APP_TAG);
+  const matches = await findAll(
+    stripe.products.list({ limit: 100, active: true }),
+    (product) => product.metadata?.app === APP_TAG,
+  );
+  const found = matches[0];
   if (found) {
     record("Produkt", "exists", found.id);
+    if (matches.length > 1) {
+      warn(`${matches.length} produkter er merket app=${APP_TAG}. Bruker ${found.id}; rydd opp i resten.`);
+    }
     return found;
   }
   if (!apply) {
@@ -164,19 +207,34 @@ async function ensurePrice(stripe, apply, product, plan) {
       found.unit_amount !== plan.unitAmount ||
       found.currency !== CURRENCY ||
       found.recurring?.interval !== plan.interval;
-    record(`Pris ${plan.human}`, "exists", mismatch ? `${found.id}  ⚠ avviker` : found.id);
+    /* The lookup key is unique per account, not per product, so a price can
+       carry ours while hanging off something else entirely. Checkout would
+       happily sell that, under that product's name. */
+    const foreignProduct = product && idOf(found.product) !== product.id;
+
+    record(
+      `Pris ${plan.human}`,
+      "exists",
+      mismatch || foreignProduct ? `${found.id}  ⚠ avviker` : found.id,
+    );
     if (mismatch) {
-      console.log(
-        `      forventet ${plan.unitAmount} ${CURRENCY}/${plan.interval}, fant ` +
+      warn(
+        `forventet ${plan.unitAmount} ${CURRENCY}/${plan.interval}, fant ` +
           `${found.unit_amount} ${found.currency}/${found.recurring?.interval ?? "—"}. ` +
           `Priser kan ikke endres: arkiver den i dashbordet og kjør på nytt.`,
       );
     }
-    return found;
+    if (foreignProduct) {
+      warn(
+        `prisen hører til produkt ${idOf(found.product)}, ikke ${product.id}. ` +
+          `Checkout ville solgt det produktet under dets navn.`,
+      );
+    }
+    return { price: found, ok: !mismatch && !foreignProduct };
   }
   if (!apply || !product) {
     record(`Pris ${plan.human}`, "planned", `${plan.unitAmount} ${CURRENCY}/${plan.interval}`);
-    return null;
+    return { price: null, ok: false };
   }
   const price = await stripe.prices.create({
     product: product.id,
@@ -188,7 +246,7 @@ async function ensurePrice(stripe, apply, product, plan) {
     metadata: { app: APP_TAG, plan: plan.key },
   });
   record(`Pris ${plan.human}`, "created", price.id);
-  return price;
+  return { price, ok: true };
 }
 
 /** The portal settings /min-side depends on: change the card, cancel at period
@@ -226,8 +284,11 @@ function portalFeatures(site) {
 }
 
 async function ensurePortal(stripe, apply, site) {
-  const existing = await stripe.billingPortal.configurations.list({ limit: 100 });
-  const found = existing.data.find((config) => config.metadata?.app === APP_TAG);
+  const matches = await findAll(
+    stripe.billingPortal.configurations.list({ limit: 100 }),
+    (config) => config.metadata?.app === APP_TAG,
+  );
+  const found = matches[0];
   const params = portalFeatures(site);
 
   if (found) {
@@ -255,11 +316,20 @@ async function ensurePortal(stripe, apply, site) {
 
 async function ensureWebhook(stripe, apply, site) {
   const url = `${site}/api/stripe/webhook`;
-  const existing = await stripe.webhookEndpoints.list({ limit: 100 });
-  const found = existing.data.find((endpoint) => endpoint.url === url);
+  const matches = await findAll(
+    stripe.webhookEndpoints.list({ limit: 100 }),
+    (endpoint) => endpoint.url === url,
+  );
+  const found = matches[0];
 
   if (found) {
-    const missing = WEBHOOK_EVENTS.filter((event) => !found.enabled_events.includes(event));
+    /* `enabled_events: ["*"]` is a real configuration, and it does cover every
+       event the handler acts on. Treating it as «mangler alle seks» would send
+       people to fix an endpoint that works. */
+    const catchAll = found.enabled_events.includes("*");
+    const missing = catchAll
+      ? []
+      : WEBHOOK_EVENTS.filter((event) => !found.enabled_events.includes(event));
     if (missing.length && apply) {
       const updated = await stripe.webhookEndpoints.update(found.id, {
         enabled_events: [...new Set([...found.enabled_events, ...WEBHOOK_EVENTS])],
@@ -351,26 +421,31 @@ async function main() {
   const product = await ensureProduct(stripe, args.apply);
   const prices = [];
   for (const plan of PLANS) {
-    prices.push({ plan, price: await ensurePrice(stripe, args.apply, product, plan) });
+    prices.push({ plan, ...(await ensurePrice(stripe, args.apply, product, plan)) });
   }
   const portal = await ensurePortal(stripe, args.apply, site);
   const { endpoint, secret } = await ensureWebhook(stripe, args.apply, site);
 
   console.log("");
 
+  const warned = results.filter((result) => result.state === "warned").length;
+
   if (!args.apply) {
     const planned = results.filter((result) => result.state === "planned").length;
-    console.log(
-      planned
-        ? `${planned} ting mangler. Kjør på nytt med --apply for å opprette dem.`
-        : "Alt er på plass.",
-    );
+    /* Both numbers, and never «alt er på plass» while an ⚠ is on screen: a
+       price with the wrong amount has nothing to create, so counting only what
+       is missing would call that account finished. */
+    if (planned) console.log(`${planned} ting mangler. Kjør på nytt med --apply for å opprette dem.`);
+    if (warned) console.log(`${warned} ting finnes, men avviker — se ⚠ over. Skriptet retter dem ikke.`);
+    if (!planned && !warned) console.log("Alt er på plass.");
     return;
   }
 
   console.log("Miljøvariabler — legg dem inn i Vercel (og .env.local lokalt):\n");
-  for (const { plan, price } of prices) {
-    if (price) console.log(`${plan.envVar}=${price.id}`);
+  for (const { plan, price, ok } of prices) {
+    // A price that failed the check is still printed — it is what the account
+    // has — but never as a clean line somebody pastes without reading.
+    if (price) console.log(`${plan.envVar}=${price.id}${ok ? "" : "   # ⚠ avviker, se over"}`);
   }
   if (portal) console.log(`STRIPE_PORTAL_CONFIGURATION=${portal.id}`);
   if (secret) {
@@ -384,6 +459,9 @@ async function main() {
   console.log(
     `\nSTRIPE_SECRET_KEY setter du selv — dette skriptet skriver aldri ut nøkkelen det brukte.`,
   );
+  if (warned) {
+    console.log(`\n${warned} ting finnes, men avviker — se ⚠ over. Skriptet retter dem ikke.`);
+  }
   if (live) {
     console.log(
       `\nDette var live-kontoen. Kjør det samme mot en sandkasse før du tar imot ekte kort.`,
