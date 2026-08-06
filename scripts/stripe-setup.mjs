@@ -324,13 +324,16 @@ async function ensurePrice(stripe, apply, product, plan) {
  *  No `default_return_url`: app/api/portal/route.ts sets `return_url` on every
  *  session from the incoming request's origin, which overrides anything set
  *  here — a value would be dead config that can only go stale.
+ *
+ *  No `business_profile` either. The links to `/vilkar` and `/personvern` live
+ *  on the account, under Public business information, and a configuration that
+ *  leaves the field empty inherits them — which is what you want, because the
+ *  same links are what Checkout and the receipts use. Writing them here would
+ *  create a second copy that wins over the account's and then quietly goes
+ *  stale the day either page moves.
  */
-function portalFeatures(site) {
+function portalFeatures() {
   return {
-    business_profile: {
-      privacy_policy_url: `${site}/personvern`,
-      terms_of_service_url: `${site}/vilkar`,
-    },
     features: {
       customer_update: { enabled: true, allowed_updates: ["email", "address"] },
       invoice_history: { enabled: true },
@@ -355,15 +358,20 @@ function portalFeatures(site) {
  *  choices (which fields customers may edit, whether plans can be switched,
  *  whether downgrades wait for the period to end), and overwriting those
  *  because they are not what this file happens to say would be the script
- *  exceeding its remit. Three classes get corrected: features `/min-side`
- *  depends on to function at all, the trial trap — which charges a customer
- *  during a period checkout promised was free — and the two legal links, which
- *  point at pages the app already serves.
+ *  exceeding its remit. Two classes get corrected: features `/min-side`
+ *  depends on to function at all, and the trial trap — which charges a
+ *  customer during a period checkout promised was free.
+ *
+ *  The legal links are deliberately not among them, and not reported either.
+ *  An empty `business_profile` on a configuration means «inherit the account's
+ *  Public business information», not «missing» — and the Account object
+ *  exposes no privacy-policy or terms URL at all, so there is nothing here to
+ *  check them against. Reporting the empty field as a gap called a correctly
+ *  configured portal broken.
  */
-function auditPortal(config, site) {
+function auditPortal(config) {
   const features = config.features ?? {};
   const fix = {};
-  let profile = null;
 
   if (!features.payment_method_update?.enabled) {
     note("«Endre betalingsmetode» er av i portalen — /min-side sender folk dit for nettopp det.");
@@ -406,31 +414,10 @@ function auditPortal(config, site) {
     fix.invoice_history = { enabled: true };
   }
 
-  /* `/vilkar` and `/personvern` are served by the app at fixed paths, so the
-     only thing to decide is whether Stripe points at them — and there is no
-     version of «subscription portal that does not link to the terms» that is
-     the better answer. A link already set to something else is left alone;
-     only the empty ones are filled. */
-  const current = config.business_profile ?? {};
-  const wanted = { privacy_policy_url: `${site}/personvern`, terms_of_service_url: `${site}/vilkar` };
-  const missing = Object.entries(wanted).filter(([key]) => !current[key]);
-  if (missing.length) {
-    note(`Portalen lenker ikke til ${missing.map(([, url]) => url).join(" og ")}.`);
-    profile = {
-      ...(current.headline ? { headline: current.headline } : {}),
-      privacy_policy_url: current.privacy_policy_url || wanted.privacy_policy_url,
-      terms_of_service_url: current.terms_of_service_url || wanted.terms_of_service_url,
-    };
-  }
-
-  if (!Object.keys(fix).length && !profile) return null;
-  return {
-    ...(Object.keys(fix).length ? { features: fix } : {}),
-    ...(profile ? { business_profile: profile } : {}),
-  };
+  return Object.keys(fix).length ? fix : null;
 }
 
-async function ensurePortal(stripe, apply, site) {
+async function ensurePortal(stripe, apply) {
   const all = await findAll(stripe.billingPortal.configurations.list({ limit: 100 }), () => true);
   /* Prefer one of ours, then the account's default. That fallback is the whole
      point: a portal activated in the dashboard is the default and carries no
@@ -441,11 +428,10 @@ async function ensurePortal(stripe, apply, site) {
   if (found) {
     const mine = found.metadata?.app === APP_TAG;
     record("Kundeportal", "exists", `${found.id}${mine ? "" : "  (kontoens standard)"}`);
-    const fix = auditPortal(found, site);
+    const fix = auditPortal(found);
     if (!fix || !apply) return found;
-    const changed = [...Object.keys(fix.features ?? {}), ...(fix.business_profile ? ["lenker"] : [])];
-    const updated = await stripe.billingPortal.configurations.update(found.id, fix);
-    record("Kundeportal", "updated", `${updated.id}  ${changed.join(", ")}`);
+    const updated = await stripe.billingPortal.configurations.update(found.id, { features: fix });
+    record("Kundeportal", "updated", `${updated.id}  ${Object.keys(fix).join(", ")}`);
     return updated;
   }
 
@@ -454,7 +440,7 @@ async function ensurePortal(stripe, apply, site) {
     return null;
   }
   const config = await stripe.billingPortal.configurations.create({
-    ...portalFeatures(site),
+    ...portalFeatures(),
     metadata: { app: APP_TAG },
   });
   record("Kundeportal", "created", config.id);
@@ -515,8 +501,8 @@ Setter opp en Stripe-konto for Toppkart: produkt, priser, kundeportal og webhook
               rapporterer bare hva det ville gjort.
   --account   Avbryt hvis nøkkelen ikke tilhører denne kontoen. Bruk den når du
               har mer enn én Stripe-konto.
-  --site      Origin webhooken og de juridiske lenkene bygges fra. Standard er
-              NEXT_PUBLIC_SITE_URL, ellers https://toppkart.no.
+  --site      Origin webhook-URL-en bygges fra. Standard er NEXT_PUBLIC_SITE_URL,
+              ellers https://toppkart.no.
 
 Nøkkelen leses fra STRIPE_SECRET_KEY, ellers fra .env.local.
 `;
@@ -570,7 +556,7 @@ async function main() {
   for (const plan of PLANS) {
     prices.push({ plan, ...(await ensurePrice(stripe, args.apply, product, plan)) });
   }
-  const portal = await ensurePortal(stripe, args.apply, site);
+  const portal = await ensurePortal(stripe, args.apply);
   const { endpoint, secret } = await ensureWebhook(stripe, args.apply, site);
 
   console.log("");

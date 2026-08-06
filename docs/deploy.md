@@ -188,8 +188,8 @@ STRIPE_SECRET_KEY=sk_test_… npm run stripe:setup -- --apply      # creates wha
 It reads the key from `.env.local` if it is not in the environment, and prints the account id,
 the display name and whether the key is live before it writes anything. Pass
 `--account acct_…` to make it abort unless the key belongs to that account, and `--site
-https://toppkart.no` to set the origin the webhook URL and the legal links are built from
-(default: `NEXT_PUBLIC_SITE_URL`, then `https://toppkart.no`).
+https://toppkart.no` to set the origin the webhook URL is built from (default:
+`NEXT_PUBLIC_SITE_URL`, then `https://toppkart.no`).
 
 **Run it against an account you built by hand and it adopts what is there.** A dashboard-made
 product carries no metadata and its prices no lookup keys, so the script falls back to
@@ -202,9 +202,9 @@ missing, what `--apply` corrects on its own, and what needs you. The last group 
 ⚠ — a price whose amount is wrong (prices are immutable; archive it and re-run), or a price
 sitting on someone else's product.
 
-The portal's two legal links are in the middle group: if `privacy_policy_url` or
-`terms_of_service_url` is empty, `--apply` points it at `/personvern` and `/vilkar` on `--site`.
-A link already set to something else is left as it is.
+The legal links are in none of the three groups: the script neither checks nor writes them. See
+step 6 for why — the empty field on a portal configuration is inheritance, not a gap, and nothing
+in the API lets the script see what it would be inheriting.
 
 Two things it deliberately leaves alone. It does not touch how plan changes work in the portal —
 whether switching is offered at all, and whether downgrades wait for the period to end, are
@@ -240,10 +240,21 @@ that once, at creation.
    work — the variable is what makes the settings reviewable in the repository rather than only
    in a settings page.
 
-   Under **Business information**, link the two legal pages — `https://toppkart.no/vilkar` and
-   `https://toppkart.no/personvern`. Leave **Redirect link** empty: `app/api/portal/route.ts`
-   sets `return_url` on every session from `requestOrigin()`, which overrides anything configured
-   here, so a value in that field is dead config that can only go stale.
+   Leave **Redirect link** empty: `app/api/portal/route.ts` sets `return_url` on every session
+   from `requestOrigin()`, which overrides anything configured here, so a value in that field is
+   dead config that can only go stale.
+
+   **The two legal links are not set on this page**, even though it displays them. The portal's
+   **Legal policies** panel shows `https://toppkart.no/vilkar` and `https://toppkart.no/personvern`
+   and then sends you to **Public business information** to change them, because that is where
+   they live — on the account, not on the portal configuration. Checkout, invoices and receipts
+   read the same two values, so setting them once covers all of it.
+
+   This is worth knowing before you go looking for them in the API. A portal configuration *has*
+   a `business_profile.privacy_policy_url`, but it is an **override**, and it is `null` on a
+   correctly configured account — the empty field means «inherit», not «missing». The Account
+   object exposes no legal-policy URLs at all, so there is nothing to read them back from either.
+   Reading that `null` as a gap is a mistake that looks like diligence.
 
    If you also let customers switch between the monthly and yearly plan, turn **off** «End trials
    on subscription updates». With it on, a customer who upgrades on day 3 of the trial has the
