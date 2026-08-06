@@ -44,8 +44,11 @@ REASSURING = [
 # "not only is it safe", which nothing in this corpus writes.
 DENIAL = re.compile(r"\b(ikkje|ikke|aldri|not|never|no)\b[^.!?;:]{0,25}$", re.I)
 
+# «høgdemeter» as well as «høydemeter»: seven of the guides are written in
+# nynorsk, and the bokmål-only pattern walked straight past every vertical they
+# stated. A figure the check cannot see is a figure nobody sourced.
 NUM_UNIT = re.compile(
-    r"(\d[\d\s.,]*)\s*(moh|m\.o\.h|høydemeter|vertical met|metres|meters|m\b|km\b|grader|degrees|°)",
+    r"(\d[\d\s.,]*)\s*(moh|m\.o\.h|høydemeter|høgdemeter|vertical met|metres|meters|m\b|km\b|grader|degrees|°)",
     re.I,
 )
 

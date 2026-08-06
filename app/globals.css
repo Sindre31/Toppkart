@@ -635,6 +635,20 @@ a.btn-secondary, a.btn-secondary:hover { color: var(--color-text); }
   text-transform: uppercase; margin: 0;
 }
 
+/* — stor Ø, strammet inn — */
+/* Barlow Condensed gir stor Ø en bredde på 597 enheter mot 467 for O (SemiBold):
+   0,13 em tomt felt til høyre for en glyf som ikke er bredere enn en O, og uten
+   et eneste kerningpar i skriften å rette det opp med. Alle overskriftene her
+   settes med versaler, så «Jønshornet» kommer ut som «JØ NSHORNET» og
+   «Høydeprofil» som «HØ YDEPROFIL».
+
+   Korreksjonen ligger på wrapperen `components/CapsText.tsx` skriver ut, og
+   ikke på en liste over versalklasser: klassen finnes bare der noen har valgt
+   å bruke komponenten, og komponenten brukes bare på tekst som settes med
+   versaler. Liten ø har 0,03 em å gå på og skal ikke røres — den er heller
+   ikke pakket inn noe sted. */
+.oslash { margin-right: -0.13em; }
+
 /* — body copy — */
 .lede { font-size: 16px; line-height: 24px; max-width: 60ch; }
 .prose { font-size: 15px; line-height: 24px; color: color-mix(in srgb, var(--color-text) 78%, transparent); }

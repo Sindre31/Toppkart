@@ -1576,6 +1576,761 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       caption: "922 to 1,882 m over 4.42 km. The steepest hundred metres measures 15.8°, and nothing on the line passes 25°.",
     },
   },
+  auskjeret: {
+    intro:
+      "870 metres of climbing over 3.83 km from Fausaskiftet, an even ascent northward the whole way — about fifteen degrees on average. A road open all year to the start is why this is one of the first tours to go in Sykkylven each winter.",
+    ascent: [
+      "Start at Fausaskiftet at the end of Nysætervatnet, 333 m, where Fausavegen leaves the road network about four kilometres past the ski centre. The road here is open all year.",
+      "Put the skis on and head north. The first 671 metres of ground average 6.2 degrees, and the forest holds to 527 m.",
+      "Above the forest the climbing continues evenly and without steps: 14.2 degrees from 500 to 600 m, 11.4 from 600 to 700 and 11.7 from 700 to 800. At 685 m you are out in the open flank, and just above sits the steepest part of the tour — 26.4 degrees over thirty metres, between 862 and 884 m, inside the band that averages 18.6 degrees.",
+      "From 900 m upward it is even ridge all the way: 16.1 degrees from 900 to 1000 m, 18.1 from 1000 to 1100 and 15.1 from 1100 to 1200, with the cairn at 1203 m.",
+    ],
+    descent: [
+      "Back down the same ridge, south-east toward Nysætervatnet, in moderate and open ski terrain. Follow the ridge up and down and the route stays below 30 degrees the whole way.",
+      "The usual mistake: dropping east off the ridge because the flank looks inviting. The mountain has a steep face to the east measuring over 30 degrees, and it is the one place on this tour where the line choice decides what kind of day you get.",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "An even climb averaging about fifteen degrees. The steepest hundred-metre band, 800 to 900 m, measures 18.6 degrees, and the steepest sustained section 26.4 degrees between 862 and 884 m. The ridge is broad, and it is the route both up and down.",
+      },
+      {
+        title: "The terrain around it",
+        body: "The steep east face is over 30 degrees and is to be kept away from in avalanche conditions. That face, together with the length, is what separates this from a pure beginner's tour — the ridge itself does not.",
+      },
+      {
+        title: "Before you go",
+        body: "Check today's avalanche forecast for Sunnmøre at varsom.no. Bring a transceiver, probe and shovel — an empty page does not mean a safe mountain.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "333 m",
+      endLabel: "1203 m",
+      distanceLabel: "3.8 km",
+      caption: "870 metres of climbing and 3.83 km from Fausaskiftet by Nysætervatnet, with the treeline at 527 m and the steepest hundred-metre band between 800 and 900 m.",
+    },
+  },
+  jonshornet: {
+    intro:
+      "1428 metres of climbing from 107 m over Rametinden, and the last hundred on a narrow arête to the cairn on the mountain locally called Ramoen. The steepest sustained section measures 32.2 degrees, and most people leave the skis on the ridge.",
+    ascent: [
+      "Start in Vollane by Tverrelva, 107 m, at the top of the farm road off Molladalsvegen. Go through the steel gate by the river and follow the path up, first on the left and then on the right bank.",
+      "The first stretch is the steepest of the low bands: 19.5 degrees from 200 to 300 m and 19.1 from 300 to 400. The ground levels off at Vollesætra at 411 m, and the forest holds to 426.",
+      "From the seter it is relatively gentle ground up to Rametinden, 1197 m — the band from 700 to 800 m measures 12.5 degrees and 900 to 1000 m runs at 15.5. From Rametinden the ridge drops to the col at 1089 m; that is 108 metres given back on the way up, and the line takes them back with the band from 1100 to 1200 m at 5.7 degrees over 1008 metres of ground.",
+      "From the col the ridge climbs 328 metres to the summit, and that is where the tour changes character: the band from 1200 to 1300 m measures 18.4 degrees, the steepest sustained section 32.2 degrees between 1165 and 1187 m, and the summit itself is a heap of large blocks. The last hundred metres of climbing are on the arête, and most people leave the skis on the ridge.",
+    ],
+    descent: [
+      "Back down the same ridge: over the col, back up the small rise to Rametinden and down the north ridge to Vollesætra and Vollane. The descent faces north.",
+      "The usual mistake: taking Jønshornrenna down into Molladalen without arranging transport. Fri Flyt describes that round trip, and the gully runs up to 45 degrees — but it ends in a different valley from the one you parked in, and it takes two cars. The second is counting the arête as part of the ski tour: it is a hundred metres of climbing on foot on exposed ridge.",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "An even climb to Rametinden and seriousness above the col. The steepest sustained section measures 32.2 degrees between 1165 and 1187 m, and the band from 1200 to 1300 m runs at 18.4. The flanks off the ridge between Rametinden and the summit are avalanche terrain.",
+      },
+      {
+        title: "The terrain around it",
+        body: "Jønshornrenna toward Molladalen runs up to 45 degrees and is avalanche terrain. The arête on the last hundred metres of climbing is exposed, and there it is the drop and not the snowpack that is the danger — hard snow makes it a different job from powder.",
+      },
+      {
+        title: "Before you go",
+        body: "Check today's avalanche forecast for Sunnmøre at varsom.no. Bring a transceiver, probe and shovel — an empty page does not mean a safe mountain.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "107 m",
+      endLabel: "1417 m",
+      distanceLabel: "5.7 km",
+      caption: "1428 metres of climbing and 5.68 km from Vollane over Vollesætra and Rametinden, with the col at 1089 m between Rametinden and the summit ridge.",
+    },
+  },
+  ytstevasshornet: {
+    intro:
+      "835 metres of climbing over 3.87 km from Svartevatnet, steeply up Vassdalen to the tarns at 976 m and then north-west onto a narrow summit ridge. The steepest sustained section measures 25.3 degrees, and the last metres are usually walked without skis.",
+    ascent: [
+      "Start at the car park by Svartevatnet, 538 m, on the main road between Sykkylven and Stranda. The first 769 metres of ground are flat along the lake — 4.9 degrees — before the valley begins.",
+      "Head west, on the left bank of the river, up Vassdalen. This is the steep part of the tour: 18.3 degrees from 600 to 700 m, 21.2 from 700 to 800 and 19.2 from 800 to 900, with the steepest sustained section at 25.3 degrees between 785 and 813 m. The forest holds to 663 m.",
+      "At the small tarns at 976 m it flattens again — the band from 900 to 1000 m measures 6.3 degrees over 855 metres of ground. This is where you see the rest of the route, and it is also the natural place to turn around if the wind has built a cornice on the ridge above.",
+      "From there hold north-west toward the summit ridge: 16.3 degrees from 1000 to 1100 m and 19.7 from 1100 to 1200. The last metres to 1331 m are usually walked without skis.",
+    ],
+    descent: [
+      "Back the same way, east through Vassdalen to Svartevatnet. The descent faces east, and Vassdalen is both the steepest and the most avalanche-prone part of the tour.",
+      "The usual mistake: rounding the cornice between the fore-summit and the main top on its upper side. A large cornice normally forms there, and you should drop into the flank to get around it — not follow the edge.",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "A flat start, a steep middle and a flat shelf before the summit ridge: the steepest hundred-metre band, 700 to 800 m, measures 21.2 degrees, and the steepest sustained section 25.3 degrees between 785 and 813 m. Vassdalen is avalanche terrain from 600 m upward.",
+      },
+      {
+        title: "The terrain around it",
+        body: "Cornices along the summit ridge — a large one normally forms between the fore-summit and the main top, and it is rounded from below. The flank down from the main summit is avalanche terrain, and so is Vassdalen itself, which is the only way back to the car.",
+      },
+      {
+        title: "Before you go",
+        body: "Check today's avalanche forecast for Sunnmøre at varsom.no. Bring a transceiver, probe and shovel — an empty page does not mean a safe mountain.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "538 m",
+      endLabel: "1331 m",
+      distanceLabel: "3.9 km",
+      caption: "835 metres of climbing and 3.87 km from Svartevatnet up Vassdalen, with the treeline at 663 m and the tarns at 976 m as the flat midpoint.",
+    },
+  },
+  rana: {
+    intro:
+      "1595 metres of climbing from 63 m — fjord to summit over 8.12 km, under one of the oldest names in the Sunnmøre Alps. The steepest sustained section measures 37.5 degrees and sits right up on the summit crest, between 1530 and 1555 m.",
+    ascent: [
+      "Start at Urkegjerdet, 63 m, where the gravel road leaves the main road by Urke Landhandel. The road on toward Haukåssætra is closed in winter, which is why the tour starts down at the fjord and not up at the seter at 230 m — Fri Flyt's «5 hours from Haukåssætra» is time from a point you rarely reach by car in winter.",
+      "Follow the road up through the forest — Kartverket has forest to 257 m — past Haukåssætra and into the valley toward Nordkopen at 501 m. The band from 400 to 500 m measures 17.3 degrees, and otherwise the whole approach is gentle: 5.8 degrees from 100 to 200 m and 6.6 from 200 to 300.",
+      "From the basin the route zigzags steeply up toward the arête to the north, which you join to the right of a marked rock band. The basin floor is at 987 m and the crest at 1331. The band from 1000 to 1100 m is the steepest hundred-metre band at 21.0 degrees, and the ground from 600 to 800 m below it runs at 18 to 20.",
+      "From there you follow the summit ridge north. It is broad and eases toward 1400 m — 6.9 degrees from 1300 to 1400 — before the final climb along the crest from 1531 and 1562 m to the cairn at 1587. That is where the steepest ground is: 37.5 degrees over thirty metres between 1530 and 1555 m.",
+    ],
+    descent: [
+      "Back the same way: the crest, the broad summit ridge, down the arête to Nordkopen and out the valley to Urkegjerdet. The descent faces south-east, and it is long — 1595 metres in one run from the summit to the fjord.",
+      "The usual mistake: holding east on the summit ridge. Large cornices sit on the east side, and a flank measurement from the summit shows the mountain is steep in every direction: 22 to 41 degrees on average over the first 400 metres, with 60-metre windows of 53 to 66 degrees. Keep west of the crest.",
+      "The second is timing. The route runs through avalanche terrain both into Nordkopen and on the flank up to the arête, and in spring snow through the afternoon that is the part of the tour that changes fastest.",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "A gentle approach and a steep middle: the band from 1000 to 1100 m averages 21.0 degrees, and the flank up from Nordkopen to the arête is avalanche terrain. The summit crest itself is the steepest part at 37.5 degrees over thirty metres between 1530 and 1555 m, and it is also where the cornices sit.",
+      },
+      {
+        title: "The terrain around it",
+        body: "Large cornices on the east side of the broad summit ridge. The flank measurement from the top gives 22 to 41 degrees on average over 400 metres in all eight directions, with 60-metre windows between 53 and 66 degrees — there is no gentle side to drop off here, only the crest you came up.",
+      },
+      {
+        title: "Before you go",
+        body: "Check today's avalanche forecast for Sunnmøre at varsom.no. Bring a transceiver, probe and shovel — an empty page does not mean a safe mountain.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "63 m",
+      endLabel: "1587 m",
+      distanceLabel: "8.1 km",
+      caption: "1595 metres of climbing and 8.12 km from Urkegjerdet over Haukåssætra, Nordkopen and the arête, with the steepest ground in the last hundred metres of climbing.",
+    },
+  },
+  vassdalstinden: {
+    intro:
+      "1212 metres of climbing from 92 m at Nupen, through Bukkedalen and up a long flank that averages 23.6 degrees over the last hundred. The steepest sustained section measures 36.2 degrees and sits between 1205 and 1238 m.",
+    ascent: [
+      "Start at the parking beyond the gate at Nupen, 92 m. Fri Flyt gives «3 hours from Vallasætra» and «4 hours from Nupen», and the difference is real: the seter sits at 324 m, and the road on to it is a toll road that only applies «if the road is open».",
+      "Follow Engesetvegen up and east to Vallasætra. The first 766 metres of ground are flat — 0.7 degrees — and then the road gets to work: 5.3 degrees from 100 to 200 m, 9.2 from 200 to 300 and a steeper stretch at 19.9 and 21.8 degrees between 400 and 600 m. The forest holds to 529 m.",
+      "From the seter you go a few hundred metres into Langedalen and then steeply up the step into Bukkedalen, 791 m — with the skis on the pack if need be. The band from 700 to 800 m is gentle, 8.9 degrees over 632 metres of ground, and gives you the breather before the flank.",
+      "Follow the valley floor in to 960 m, where the long steep flank begins. From here the line climbs evenly and hard: 19.5 degrees from 1000 to 1100 m, 22.5 from 1100 to 1200 and 23.6 from 1200 to 1300, with the steepest sustained section at 36.2 degrees between 1205 and 1238 m. The summit stands at 1278.",
+    ],
+    descent: [
+      "Back down the same flank to the valley floor, out Bukkedalen and down the step to Vallasætra and Nupen. The descent faces east, and the flank is both the way up and the way down.",
+      "The usual mistake: navigating west off the summit in poor visibility. From the col north of the top, Vestrenna drops 700 metres at 45 to 50 degrees into Nupadalen. It is a documented expert line for those who choose it with open eyes, and a serious error for anyone who does not know it is there.",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "Two steep stretches with a gentle interlude: the step up into Bukkedalen between 400 and 600 m (19.9 and 21.8 degrees on average) and the flank from 960 m to the summit, where the band from 1200 to 1300 m measures 23.6 degrees and the steepest sustained section 36.2. Both are avalanche terrain.",
+      },
+      {
+        title: "The terrain around it",
+        body: "Vestrenna from the col north of the summit drops 700 metres at 45 to 50 degrees into Nupadalen. It is not the route, but it is close enough to the top that a wrong bearing in cloud takes you to it.",
+      },
+      {
+        title: "Before you go",
+        body: "Check today's avalanche forecast for Sunnmøre at varsom.no. Bring a transceiver, probe and shovel — an empty page does not mean a safe mountain.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "92 m",
+      endLabel: "1278 m",
+      distanceLabel: "6.5 km",
+      caption: "1212 metres of climbing and 6.50 km from Nupen over Vallasætra and Bukkedalen, with the treeline at 529 m and the flank from the valley floor at 960 m to the summit.",
+    },
+  },
+  torvloysa: {
+    intro:
+      "1461 metres of climbing over 10.61 km from Hatlestad — one of the longest tours above Norddal, and one of the gentlest. The steepest sustained section measures 27.2 degrees, and five kilometres of the route lie on the ridge from Daurmålsfjellet to the summit.",
+    ascent: [
+      "Start at the mapped car park at Hatlestad, 453 m, above Norddalen. Fri Flyt says you park at 350 m; the terrain model reads the farms at 412 and the car park at 453, and that difference is why this tour measures 1461 metres of climbing and not 1500.",
+      "Walk gently into the mouth of Dyrdalen and up to Rellingsætra at 557 m. The first two bands are nearly flat — 3.0 degrees from 400 to 500 m and 2.1 over 2656 metres of ground from 500 to 600.",
+      "From the seter the step climbs onto Daurmålsfjellet, 825 m: 16.9 degrees from 600 to 700 m and 15.2 from 700 to 800. The forest holds to 748 m. This is the steep part of the tour, and it is short.",
+      "Then comes the ridge. Five kilometres of gentle ground, over the ridge point at 1186 m, with bands between 7 and 20 degrees the whole way: 8.4 from 1000 to 1100 m, 14.1 from 1200 to 1300, 20.2 from 1400 to 1500 — the steepest hundred-metre band — and 9.0 for the last hundred to the cairn at 1851 m. Kartverket registers glacier terrain around 1437 m.",
+    ],
+    descent: [
+      "Back down the same ridge: north to Daurmålsfjellet, down the step to Rellingsætra and out Dyrdalen to Hatlestad. The descent faces north, and it is long and even rather than steep.",
+      "The usual mistake: turning back too late. Ten kilometres without shelter, with most of the height far from the car, means a change in the weather costs more here than on a short tour — the decision to turn has to be made early, not when you are on the ridge watching it close in.",
+      "The second is the glacier terrain around 1437 m: it has crevasses late in the winter, and on a ridge this gentle it is easy to stop thinking about what you are walking on.",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "Gentle at both ends and steep in exactly one place: the step from Rellingsætra onto Daurmålsfjellet. The steepest hundred-metre band, 1400 to 1500 m, measures 20.2 degrees and the steepest sustained section 27.2 degrees between 1396 and 1419 m. The rest of the ridge lies between 7 and 18 degrees.",
+      },
+      {
+        title: "The terrain around it",
+        body: "The glacier terrain around 1437 m has crevasses late in the season. The ridge is broad, but it is long and without shelter, and the length is the real hazard here: ten kilometres from the car in bad weather is a different tour from ten kilometres in sunshine.",
+      },
+      {
+        title: "Before you go",
+        body: "Check today's avalanche forecast for Sunnmøre at varsom.no. Bring a transceiver, probe and shovel — an empty page does not mean a safe mountain.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "453 m",
+      endLabel: "1851 m",
+      distanceLabel: "10.6 km",
+      caption: "1461 metres of climbing and 10.61 km from Hatlestad over Rellingsætra and Daurmålsfjellet, with the treeline at 748 m and the ridge from 1186 m to the cairn.",
+    },
+  },
+  skarene: {
+    intro:
+      "1219 metres of climbing over 6.44 km from Korsmyra, with two kilometres of flat valley floor before the big snow flank begins. The flank holds 18 to 21 degrees band after band from 900 to 1700 m — and it is continuous avalanche terrain the whole way.",
+    ascent: [
+      "Start at the car park on Korsmyra, 621 m, on the main road between Eidsdal and Geiranger. Fri Flyt describes the access under Eidshornet, and it is the same place.",
+      "Follow the seter road in to Grandesætra at 648 m and on gently into and up Gråsteindalen, 721 m. The first two bands are almost flat: 3.7 degrees over 1268 metres of ground from 600 to 700 m and 3.6 over 1575 metres from 800 to 900.",
+      "Coming in toward the head of the valley at 940 m the big snow flank begins, and it holds the same character all the way up: 18.1 degrees from 900 to 1000 m, 20.5 from 1000 to 1100, 20.0 from 1300 to 1400, 21.2 from 1500 to 1600 and 21.3 from 1600 to 1700 — the steepest hundred-metre band. The steepest sustained section measures 26.8 degrees between 1528 and 1544 m.",
+      "The last hundred metres of climbing ease to 9.6 degrees and lead to the cairn at 1830 m, one of the highest points in the mountains above Eidsdal. The register spells the mountain Skorene.",
+    ],
+    descent: [
+      "Back down the same flank and out Gråsteindalen to Grandesætra and Korsmyra. Fri Flyt calls this fine ski terrain with forgiving angles, and the numbers agree: no band above 21.3 degrees.",
+      "The usual mistake: reading those forgiving angles as a reason to go on an unstable day. The whole stretch from the head of Gråsteindalen upward is avalanche terrain, the flank is large and continuous, and there is no line around it — this tour belongs to stable days, and that is the whole assessment.",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "A continuous snow flank from 940 m to the summit, with bands between 18.1 and 21.3 degrees and a steepest sustained section of 26.8 degrees between 1528 and 1544 m. The angle is moderate; it is the size and the continuity that are the problem.",
+      },
+      {
+        title: "The terrain around it",
+        body: "Avalanche terrain from the head of Gråsteindalen all the way to the summit. The flank is large and unbroken, and there is no line around it: if you do this tour, you are on it.",
+      },
+      {
+        title: "Before you go",
+        body: "Check today's avalanche forecast for Sunnmøre at varsom.no. Bring a transceiver, probe and shovel — an empty page does not mean a safe mountain.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "621 m",
+      endLabel: "1830 m",
+      distanceLabel: "6.4 km",
+      caption: "1219 metres of climbing and 6.44 km from Korsmyra over Grandesætra and Gråsteindalen, with the snow flank from the valley floor at 940 m to the cairn at 1830.",
+    },
+  },
+  melshornet: {
+    intro:
+      "559 metres of climbing over 3.00 km from Helgatun, on a groomed and marked track that is skied after dark all winter. The steepest sustained section measures 21.7 degrees, and it sits down at the treeline at 441 m — not up under the cairn.",
+    ascent: [
+      "Start at the large car park by Helgatun on Krøvelseidet, 252 m, on the road between Volda and Ørsta. The track leaves the car park straight into the forest. It is groomed with a snowcat at times, and the final slope is marked with snow poles.",
+      "The first hundred and fifty metres of climbing are gentle: the band from 200 to 300 m averages 5.3 degrees over 580 metres of ground, and 300 to 400 m runs at 12.0. The forest lets go at 441 m, and that is where the steepest step of the whole tour sits — 21.7 degrees over thirty metres, between 423 and 441 m.",
+      "Above the treeline it flattens out toward the ridge at 519 m. The band from 500 to 600 m is the gentlest on the tour, 7.2 degrees over 810 metres of ground, and from here you can see where the rest of the route goes.",
+      "The ridge climbs evenly to the top: 12.7 degrees from 600 to 700 m and 17.8 from 700 to 800, which is the steepest hundred-metre band. The last metres to the cairn at 809 m are flat — the band above 800 m measures 7.0 degrees.",
+    ],
+    descent: [
+      "Back down the same track, south-east. It is the same slope you climbed, short and open, and the car is in sight for most of the way down.",
+      "The usual mistake on this hill is not a line choice but a timing one: the tour is skied in the dark all winter, and then the trail and the snow poles are the navigation. Leave the track and the flanks of Grøthornet are avalanche terrain, and near the summit there can be a cornice out toward Ørsta.",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "A groomed, marked track in gentle terrain. The steepest sustained section measures 21.7 degrees and sits low, between 423 and 441 m just below the treeline; above 500 m the tour is at its gentlest with 7.2 degrees on average from 500 to 600 m, and the steepest hundred-metre band, 700 to 800 m, measures 17.8.",
+      },
+      {
+        title: "The terrain around it",
+        body: "The flanks of Grøthornet are avalanche terrain, and near the summit a cornice can build out toward Ørsta. Both lie off the trail corridor — and both become relevant the moment you leave it in poor visibility or after dark.",
+      },
+      {
+        title: "Before you go",
+        body: "Check today's avalanche forecast for Sunnmøre at varsom.no. Bring a transceiver, probe and shovel — an empty page does not mean a safe mountain.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "252 m",
+      endLabel: "809 m",
+      distanceLabel: "3.0 km",
+      caption: "559 metres of climbing and 3.00 km from Helgatun on Krøvelseidet, with the treeline at 441 m and the steepest hundred-metre band between 700 and 800 m.",
+    },
+  },
+  kvitegga: {
+    intro:
+      "1477 metres of climbing over 6.05 km from Nibbedalen to the highest mountain in the central Sunnmøre Alps. The steepest sustained section measures 38.1 degrees — that is Brattbakken, and it is the one technical part of the tour.",
+    ascent: [
+      "Start in the gravel pit in Nibbedalen, 324 m, where the side road leaves county road 655. If the road is not ploughed, park along the county road. The first 771 metres of ground lie at 5.9 degrees.",
+      "Follow the gravel road a short way and then the summer path west into Snødalen. The climbing is even and sustained: 20.1 degrees from 500 to 600 m, 19.6 from 600 to 700 and 19.0 from 700 to 800. At 925 m you are inside the valley itself.",
+      "At its head Brattbakken begins — the slope up to 1316 m that the route description puts at about 35 degrees. The terrain model measures the band from 1100 to 1200 m at 22.5 degrees on average and the steepest sustained section at 38.1 degrees between 1265 and 1292 m. Kartverket registers glacier terrain from 1290 m.",
+      "Above the slope the glaciated plateau lays back: 10.2 degrees from 1200 to 1300 m and 5.6 from 1500 to 1600 over 1036 metres of ground. Follow it to the 1583 m top, drop through a small col and head north along the ridge to the summit at 1700 m. The published 1717 is the snow dome; the terrain model reads the mountain at 1700.",
+    ],
+    descent: [
+      "Back the same way: south along the ridge, across the plateau and down Brattbakken into Snødalen. The descent faces east, and Brattbakken is the part that decides whether the day is a ski tour or an exercise in edge control.",
+      "The usual mistake: treating the glacier casually. The route crosses glacier terrain from 1290 m, and the crevasses are there however gently the plateau measures. The second is the cornices along the summit ridge — keep away from the edges, especially in poor visibility.",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "An even 19 to 20 degrees through Snødalen, and then Brattbakken: the band from 1100 to 1200 m averages 22.5 degrees and the steepest sustained section 38.1 degrees between 1265 and 1292 m. The slope is avalanche terrain, and it is the only way up onto the plateau.",
+      },
+      {
+        title: "The terrain around it",
+        body: "Glacier terrain from 1290 m with crevasses late in the winter and into spring. Large cornices along the summit ridge — keep away from the edges. The plateau is gentle enough that you stop reading the terrain, and that is exactly where the glacier is.",
+      },
+      {
+        title: "Before you go",
+        body: "Check today's avalanche forecast for Sunnmøre at varsom.no. Bring a transceiver, probe and shovel, and glacier kit — an empty page does not mean a safe mountain.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "324 m",
+      endLabel: "1700 m",
+      distanceLabel: "6.1 km",
+      caption: "1477 metres of climbing and 6.05 km from the gravel pit in Nibbedalen through Snødalen, over Brattbakken and the 1583 m top to the summit.",
+    },
+  },
+  hornindalsrokken: {
+    intro:
+      "1466 metres of climbing over 7.29 km from Langøylia, along a south ridge that rises and falls — 327 metres are given back on the way up. The last 103 are on a narrow, exposed rib where the steepest sustained section measures 46.6 degrees, and that is where most people take the skis off.",
+    ascent: [
+      "Start at the west end of the cabin road in Langøylia, 388 m, between Hellesylt and Hornindal. Climb the slope through open birch forest, east of Gjøelva; the forest holds to 521 m, and the band from 600 to 700 m measures 18.9 degrees.",
+      "At Aksla, 921 m, you are on the ridge. Follow it north-west to Trollaksla, 1255 m, and then the south ridge north to Sætrenibba at 1370 m. The ridge rises and falls the whole way: the bands from 1100 to 1300 m measure 3.7 and 3.5 degrees over more than three kilometres of ground between them, and the tour gives back 327 metres of height in total.",
+      "From the col north of Sætrenibba, 1226 m, you round east into the flank falling toward Kjellstaddalen and traverse it up to the ridge east of the summit. This is avalanche terrain, and it is the same flank you ski down.",
+      "At about 1424 m you are on the east rib, and that is where most people take the skis off. The last 103 metres of climbing are narrow, exposed ridge: the band from 1400 to 1500 m averages 23.3 degrees, the steepest sustained section 46.6 degrees between 1476 and 1508 m, and the terrain model gives about 55 degrees straight east of the crest and 75 straight west.",
+    ],
+    descent: [
+      "The usual descent is Kjellstaddalen: almost a thousand metres at 25 to 35 degrees down to Kjellstadsætra, then a couple of flat kilometres out the valley and west back to the car. The descent faces east.",
+      "The usual mistake: treating the summit ridge as ski terrain. The last 103 metres of climbing are a crest with 55 degrees down one side and 75 down the other — a slip there cannot be corrected, and an ice axe is standard when the snow is hard.",
+      "The second is starting too late. The tour is long, the ridge rises and falls, and the traverse across the east side above Kjellstaddalen is avalanche terrain that changes with the sun. The decision to turn has to be made early.",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "A long ridge that rises and falls, and a traverse across the east flank above Kjellstaddalen. The band from 1400 to 1500 m averages 23.3 degrees, and the steepest sustained section measures 46.6 degrees between 1476 and 1508 m — that last one is the east rib, not the skin track.",
+      },
+      {
+        title: "The terrain around it",
+        body: "Avalanche terrain in the floor of Kjellstaddalen and across the whole east side up to the summit ridge — that is both the traverse on the way up and the descent. The summit ridge is narrow and corniced: about 55 degrees straight east and 75 straight west over the last hundred metres of climbing.",
+      },
+      {
+        title: "Before you go",
+        body: "Check today's avalanche forecast for Sunnmøre at varsom.no. Bring a transceiver, probe and shovel, and an ice axe when the snow is hard — an empty page does not mean a safe mountain.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "388 m",
+      endLabel: "1527 m",
+      distanceLabel: "7.3 km",
+      caption: "1466 metres of climbing and 7.29 km from Langøylia over Aksla, Trollaksla and Sætrenibba, with the east rib from 1424 m as the stretch most people walk.",
+    },
+  },
+  sunndalsnipa: {
+    intro:
+      "989 metres of climbing over 5.56 km from Grøndalsvatnet, up a south-east ridge and out onto a plateau where the last 1261 metres of ground lie at 4.2 degrees. South-facing and reachable all winter — the road in is open year round.",
+    ascent: [
+      "Start at the end of the road by Grøndalsvatnet, 437 m, up the hills from Osdalen. The first 638 metres of ground are gentle, 5.7 degrees, crossing bog and into open birch forest.",
+      "Head north through the forest — Kartverket has forest to 673 m — and up onto the south-east ridge. The climbing increases steadily: 14.7 degrees from 500 to 600 m, 15.6 from 600 to 700 and 19.6 from 700 to 800, the steepest hundred-metre band of the tour.",
+      "At the forest edge at 839 m it flattens markedly: the band from 800 to 900 m measures 5.2 degrees over 1035 metres of ground. Then the ridge picks up again, 14.0 degrees from 900 to 1000 m and 17.3 from 1100 to 1200, with the steepest sustained section at 29.0 degrees between 1073 and 1094 m.",
+      "From 1280 m you are on the plateau, and from there it is about a kilometre north to the summit cairn at 1395 m — the band from 1300 to 1400 m measures 4.2 degrees. Hold the middle of the plateau: both the west and east sides fall steeply.",
+    ],
+    descent: [
+      "Back down the same ridge, south across the plateau and down through the birch forest to Grøndalsvatnet. The descent faces south, the sunny side — the surface changes quickly through a spring day.",
+      "The usual mistake: drifting toward the edge of the plateau in cloud. Both the west and east walls fall steeply from the plateau, and on ground lying at 4.2 degrees there is no slope to tell you that you are going wrong.",
+      "The second is the south flank. Fri Flyt mentions it as a steeper descent on stable days; it is avalanche terrain, and it is a choice of its own — not a shortcut off the plateau.",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "Gentle at both ends and even in the middle: the steepest hundred-metre band, 700 to 800 m, measures 19.6 degrees, and the steepest sustained section 29.0 degrees between 1073 and 1094 m. The plateau from 1300 to 1400 m lies at 4.2 degrees over 1261 metres of ground.",
+      },
+      {
+        title: "The terrain around it",
+        body: "Steep west and east walls off the plateau — a navigation trap in cloud and drifting snow rather than an avalanche problem in itself. The south flank is the steeper descent, and it is avalanche terrain.",
+      },
+      {
+        title: "Before you go",
+        body: "Check today's avalanche forecast for Sunnmøre at varsom.no. Bring a transceiver, probe and shovel — an empty page does not mean a safe mountain.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "437 m",
+      endLabel: "1395 m",
+      distanceLabel: "5.6 km",
+      caption: "989 metres of climbing and 5.56 km from Grøndalsvatnet up the south-east ridge, with the treeline at 673 m and a kilometre of flat plateau to the cairn.",
+    },
+  },
+  eidskyrkja: {
+    intro:
+      "1115 metres of climbing over 4.56 km from Skinnviksætra up the Blåbreen glacier, an even ice slope that lays back gradually toward the summit plateau. The steepest sustained section measures 22.9 degrees — it is the crevasses and the navigation, not the angle, that make this tour complex.",
+    ascent: [
+      "Start on the seter road by Skinnviksætra, 368 m, on the north side of Austefjorden. The road in is a toll road, and the tour counts as reachable once it opens — which is why the season reads March to May.",
+      "Head south and up toward the glacier. The ground is open the whole way; there is no forest on this route. The climbing is even: 14.1 degrees from 400 to 500 m, 15.5 from 500 to 600 and 16.1 from 700 to 800.",
+      "From about 1197 m you are on Blåbreen. The steepest hundred-metre band sits just below, 1000 to 1100 m averaging 18.3 degrees, and the steepest sustained section measures 22.9 degrees between 1166 and 1179 m. Kartverket registers glacier terrain on the line from 1409 m.",
+      "The last kilometre is a gentle climb south to the summit cairn at 1482 m: 13.9 degrees from 1300 to 1400 m and 11.0 above that. Hold the middle of the glacier.",
+    ],
+    descent: [
+      "Back down the same line, north across the glacier and down to Skinnviksætra. The descent faces north, and in spring conditions you can also traverse toward Lisje Eidskyrkja — that is a variant, not the normal route.",
+      "The usual mistake: drifting west on the glacier. The crevasses lie on the west side, and so do the avalanche runouts. Hold the middle and the angle is moderate the whole way; leave the centre line and the tour changes character.",
+      "The second is the summit area in cloud or drifting snow. The plateau is wide and flat, and navigating up there is the one technical demand this tour actually makes.",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "Moderate angles and a glacier. The steepest hundred-metre band, 1000 to 1100 m, measures 18.3 degrees and the steepest sustained section 22.9 degrees between 1166 and 1179 m; glacier terrain is registered from 1409 m on the line. Avalanche danger is small if you hold the middle of Blåbreen.",
+      },
+      {
+        title: "The terrain around it",
+        body: "Crevasses on the west side of the glacier, and avalanche runouts in the same area. The summit plateau is a navigation trap in cloud or drifting snow — that is where the tour asks most of you, and the angle is not the reason.",
+      },
+      {
+        title: "Before you go",
+        body: "Check today's avalanche forecast for Sunnmøre at varsom.no. Bring a transceiver, probe and shovel, and glacier kit — an empty page does not mean a safe mountain.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "368 m",
+      endLabel: "1482 m",
+      distanceLabel: "4.6 km",
+      caption: "1115 metres of climbing and 4.56 km from Skinnviksætra over Blåbreen, with glacier terrain registered from 1409 m and a wide summit plateau on top.",
+    },
+  },
+  glitregga: {
+    intro:
+      "901 metres of climbing over 4.38 km from the sports ground in Randabygd, south-facing and even the whole way. The steepest sustained section on the line measures 21.4 degrees — a full day in vertical metres and an easy one in angle.",
+    ascent: [
+      "Start at the car park by the sports ground in Randabygd, 398 m on Ålandsleite. Follow the gravel road north-east; the first kilometre is nearly flat, with the band from 400 to 500 m at 5.4 degrees over 1125 metres of ground.",
+      "At Djupegrova, 487 m, the route turns north and north-west and stays on the west side of the gully throughout. The first steeper section comes here: 16.0 degrees on average from 500 to 600 m.",
+      "The forest holds to 737 m. Above it the ground eases for a while before the climb picks up again toward the pass: 16.0 degrees from 800 to 900 m and 18.4 from 900 to 1000, which is the steepest hundred-metre band of the tour. The steepest sustained section measures 21.4 degrees and lies between 1044 and 1063 m.",
+      "From the marked pass you head east to the summit. The last hundred metres of climbing are gentler again, 11.9 degrees from 1200 to 1300 m, and the cairn stands at 1297 m.",
+    ],
+    descent: [
+      "Back the same way: east down to the pass, south-west down the open flank and back along Djupegrova to the sports ground. Facing south means the surface can change quickly through the day in spring.",
+      "The usual mistake: skiing straight off the summit instead of working back to the pass. Directly below the top of Glitregga the ground is steep, and it is the one place on this tour where the line has to be the described one.",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "Even and open: the steepest hundred-metre band, 900 to 1000 m, measures 18.4 degrees, and the steepest sustained section 21.4 degrees between 1044 and 1063 m. It is the length and the 901 metres of climbing that make this demanding, not the angle.",
+      },
+      {
+        title: "The terrain around it",
+        body: "Directly below the summit of Glitregga the ground is steep — hold to the line over the pass both up and down. The flank into Djupegrova is the other place where a line choice has consequences, because the gully collects snow from the whole face above.",
+      },
+      {
+        title: "Before you go",
+        body: "Check today's avalanche forecast for the area at varsom.no. Bring a transceiver, probe and shovel — an empty page does not mean a safe mountain.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "398 m",
+      endLabel: "1297 m",
+      distanceLabel: "4.4 km",
+      caption: "901 metres of climbing and 4.38 km from Randabygd sports ground, with the treeline at 737 m and the steepest hundred-metre band between 900 and 1000 m.",
+    },
+  },
+  skarsteinfjellet: {
+    intro:
+      "1219 metres of climbing over 5.84 km from Innvikdalen, up a ridge that stays even from the treeline to the cairn. The steepest sustained section measures 25.0 degrees and sits low, at 520 m; above 800 m the line never exceeds 16 degrees in any hundred-metre band.",
+    ascent: [
+      "Start at the gate on Dragesetvegen at the head of Innvikdalen, 349 m, up the valley from Innvik. The tractor road takes you to Remestøylen at 596 m; the band from 300 to 400 m measures 7.1 degrees and 400 to 500 m runs at 10.6.",
+      "From the seter hold west-south-west up the clear ridge, with Innvikdalen on your right. The steepest hundred-metre band of the tour is here, 600 to 700 m averaging 17.3 degrees, and the steepest sustained section measures 25.0 degrees between 520 and 541 m.",
+      "Past Hestehytta at 864 m the forest ends — Kartverket classes the ground as forest to 800 m — and the rest is open ridge. From Hestehytta to the summit the line climbs 864 to 1567 m over 3.3 kilometres, about twelve degrees on average.",
+      "The ridge is even the whole way up: 13.6 degrees from 900 to 1000 m, 15.4 from 1000 to 1100 and 15.9 from 1100 to 1200. Above 1400 m it flattens toward the cairn at 1567 — the band from 1400 to 1500 m measures 8.3 degrees over 675 metres of ground.",
+    ],
+    descent: [
+      "Back down the same ridge, east toward Remestøylen and Dragesetvegen. The ridge is broad and open, and the descent faces west.",
+      "The usual mistake: choosing a different line down from the one you climbed. The mountain has several avalanche-prone descent options off the sides of the ridge, and it is easy to follow tracks that do not end where you parked. Follow the ascent ridge, not other people's tracks.",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "A long, broad ridge with no technical sections. The steepest hundred-metre band, 600 to 700 m, measures 17.3 degrees, and the steepest sustained section 25.0 degrees between 520 and 541 m — both down in the forested part. From Hestehytta upward the line holds about twelve degrees on average.",
+      },
+      {
+        title: "The terrain around it",
+        body: "The flanks off the ridge are avalanche-prone, and several of them look like tempting descents from the summit. That is where the judgement lies on this mountain: not in the way up, but in what you choose standing at 1567 m looking down.",
+      },
+      {
+        title: "Before you go",
+        body: "Check today's avalanche forecast for Indre Fjordane at varsom.no. Bring a transceiver, probe and shovel — an empty page does not mean a safe mountain.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "349 m",
+      endLabel: "1567 m",
+      distanceLabel: "5.8 km",
+      caption: "1219 metres of climbing and 5.84 km from Dragesetvegen in Innvikdalen, over Remestøylen and Hestehytta, with the treeline at 800 m.",
+    },
+  },
+  lodalskapa: {
+    intro:
+      "1524 metres of climbing over 10.43 km to the only 2000-metre peak in Nordfjord. Two thirds of the tour is a gentle approach; the rest is glacier with deep crevasses, and the steepest sustained section measures 35.6 degrees between 1975 and 2008 m.",
+    ascent: [
+      "Start at the car park by Bødalssætra, 584 m, just under thirty kilometres from Stryn past Loen and along Lovatnet. The road into Bødalen is closed in winter and opens in May or June — this is a spring tour, and the season says so.",
+      "Head east along the north-east side of the valley toward the outlet of Sætrevatnet, 606 m, and follow the river on in. The approach is long and flat: the band from 500 to 600 m measures 0.6 degrees over 1583 metres of ground, 600 to 700 m runs at 4.5 over 1345, and 1200 to 1300 m at 2.3 over 2429 metres.",
+      "At Kåpevatnet, 1211 m, the route turns south and up Brattebakkane onto Bohrsbreen. From here it is glacier: Kartverket registers glacier terrain on the line from 1860 m, and Fri Flyt describes very deep crevasses on Bohrsbreen. The band from 1300 to 1400 m measures 20.5 degrees, the steepest hundred-metre band of the tour.",
+      "On up toward the ridge and a traverse below Veslekåpa before the final stretch to the summit at 2082 m. The band from 1900 to 2000 m measures 19.8 degrees, and the steepest sustained section 35.6 degrees between 1975 and 2008. Glacier kit, crampons and an ice axe belong on this tour.",
+    ],
+    descent: [
+      "Back the same way: below Veslekåpa, down the glacier and Brattebakkane to Kåpevatnet, and then the long flat approach out Bødalen. The descent faces west.",
+      "The usual mistake: treating Bohrsbreen as a snow slope. The crevasses are deep, rope and glacier kit are not optional, and on the way down you cross the same bridges quickly that you crossed slowly on the way up.",
+      "The second is underestimating the approach. Five of the ten kilometres lie below 5 degrees; that is little resistance on skis, but it is also two hours home after the day's vertical is spent.",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "A long flat approach and a steep top: the steepest hundred-metre band, 1300 to 1400 m, measures 20.5 degrees, and the steepest sustained section 35.6 degrees between 1975 and 2008 m. Brattebakkane up to the glacier is avalanche terrain.",
+      },
+      {
+        title: "The terrain around it",
+        body: "Very deep crevasses on Bohrsbreen — that is the hazard that separates this tour from an ordinary spring outing, and it does not depend on the avalanche forecast. Crampons and an ice axe when the snow is hard, and a rope on the glacier.",
+      },
+      {
+        title: "Before you go",
+        body: "Check today's avalanche forecast for Indre Fjordane at varsom.no. Bring a transceiver, probe and shovel, and glacier kit — an empty page does not mean a safe mountain.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "584 m",
+      endLabel: "2082 m",
+      distanceLabel: "10.4 km",
+      caption: "1524 metres of climbing and 10.43 km from Bødalssætra over Sætrevatnet, Kåpevatnet and Bohrsbreen, with the steepest ground in the last hundred metres of climbing.",
+    },
+  },
+  snonipa: {
+    intro:
+      "1493 metres of climbing over 8.29 km from Stardalen to the highest mountain in Sunnfjord, up Haugadalen and straight through the Haugabreen icefall. The steepest sustained section measures 26.0 degrees, and the tour is on glacier from 922 m upward.",
+    ascent: [
+      "Start by the campsite in Stardalen, 351 m — from Skei follow the E39 north and turn off at Klakegg. Fri Flyt points to pull-outs along the gravel road or parking down by the county road.",
+      "Follow the forest road in along Haugadalen to Haugastøylen at 659 m. The flat stretch along the forest road is particularly exposed to naturally released avalanches when the snowpack warms — it is not where you expect it, and it is worth remembering.",
+      "On up the valley to the icefall. Kartverket registers glacier terrain on the line from 922 m, and Haugabreen itself lies at 1100 m. You climb through the middle of the fall; large crevasses are the governing hazard here.",
+      "Up on the plateau you traverse north-west and come onto the summit from the north-west. The climbing is even: 15.9 degrees from 1200 to 1300 m, 19.2 from 1300 to 1400 — the steepest hundred-metre band — and 18.2 from 1700 to 1800, with the cairn at 1827 m. Around 1687 m the surface is often wind-scoured and hard.",
+    ],
+    descent: [
+      "Back the same way: across the plateau, down the icefall and out Haugadalen. The descent faces south-east.",
+      "The usual mistake: choosing Veitebergsdalen for the way down because it looks shorter on the map. That is a different route from a different valley — Fri Flyt lists it as its own tour over Sollirinden — and it does not end where the car is parked.",
+      "The second is the timing on the flat stretch at the bottom: that is where naturally released avalanches come once the sun has been on it, and it is the part of the tour you cross last.",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "Even climbing over glacier. The steepest hundred-metre band, 1300 to 1400 m, measures 19.2 degrees and the steepest sustained section 26.0 degrees; glacier terrain is registered from 922 m. Large crevasses on Haugabreen are the governing hazard, not the angle.",
+      },
+      {
+        title: "The terrain around it",
+        body: "The flat stretch along the forest road toward Haugastøylen is particularly exposed to naturally released avalanches as the snowpack warms. Around 1687 m it is often wind-scoured and hard, and that decides more about the day than the steepness does.",
+      },
+      {
+        title: "Before you go",
+        body: "Check today's avalanche forecast for the area at varsom.no. Bring a transceiver, probe and shovel, and glacier kit — an empty page does not mean a safe mountain.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "351 m",
+      endLabel: "1827 m",
+      distanceLabel: "8.3 km",
+      caption: "1493 metres of climbing and 8.29 km from Stardalen over Haugastøylen and Haugabreen, with glacier terrain from 922 m and the treeline at 589.",
+    },
+  },
+  kvamshesten: {
+    intro:
+      "838 metres of climbing over 4.93 km from Rytnavegen, most of it gentle — and then a bowl at the end averaging about 36 degrees from Grunnevatnet to the summit. That is why an ice axe and crampons are on the equipment list.",
+    ascent: [
+      "Start at the end of Rytnavegen, 404 m — the private road signed to parking for Storehesten. Fri Flyt gives two verticals for this mountain, and they are two different starts: 960 metres from Rytnane down at 209 m, and 810 from here.",
+      "Follow the forest road up toward Kårstadstølen at 495 m, then hold east toward Rabbane at 512. The route runs east before it turns north — it looks like a detour on the map, and it is the described way.",
+      "From Rabbane it goes north toward the pass east of Skaravatnet at 715 m. The stretch between 700 and 800 m is the gentlest of the tour, 3.9 degrees over 1485 metres of ground. The route holds the north side of the lake westward and rounds Grunnevatnet at 785 m.",
+      "West of Grunnevatnet you take a little height and then follow the marked bowl south all the way up. This is the steep part: the band from 1000 to 1100 m averages 22.8 degrees over 237 metres of ground, and the steepest sustained section 27.4 degrees between 997 and 1015 m. From Grunnevatnet to the cairn at 1209 m it is 424 metres of climbing over 581 metres of ground — about 36 degrees across the whole bowl.",
+    ],
+    descent: [
+      "Back down the same bowl and out over Grunnevatnet, Skaravatnet and Rabbane. The descent faces north, and the bowl is both the way up and the way down.",
+      "The usual mistake: going up the bowl on hard snow without an ice axe and crampons. Fri Flyt lists both as required equipment on this tour, and the reason is in the numbers — 36 degrees on average over the last 424 metres of climbing is not a slope you slide down under control.",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "Gentle to 900 m and steep above. The bowl south of Grunnevatnet is avalanche terrain: the band from 1000 to 1100 m averages 22.8 degrees, the steepest sustained section measures 27.4 degrees between 997 and 1015 m, and the whole stretch from Grunnevatnet to the top runs at about 36 degrees.",
+      },
+      {
+        title: "The terrain around it",
+        body: "The bowl is the one large judgement on this tour, and there is no way around it: the route goes up through it. Hard snow turns the final climb into scrambling rather than skiing, and that is when the ice axe and crampons go from being kit in the pack to being what you stand on.",
+      },
+      {
+        title: "Before you go",
+        body: "Check today's avalanche forecast for the area at varsom.no. Bring a transceiver, probe and shovel — an empty page does not mean a safe mountain.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "404 m",
+      endLabel: "1209 m",
+      distanceLabel: "4.9 km",
+      caption: "838 metres of climbing and 4.93 km from Rytnavegen over Kårstadstølen, Skaravatnet and Grunnevatnet, with the steep bowl between 1000 and 1100 m.",
+    },
+  },
+  molden: {
+    intro:
+      "623 metres of climbing over 3.01 km from Mollandsmarki up the south-west ridge, the Lustrafjord below you the whole way. The steepest hundred-metre band measures 14.8 degrees, and the steepest sustained section 24.8 — and that one is down in the forest, not on the ridge.",
+    ascent: [
+      "Start at the mapped car park on Mollandsmarki, 501 m, above Marifjøra in Luster. The first hundred metres of ground are flat — the band from 400 to 500 m measures 0.5 degrees — before the road toward Garden begins to climb.",
+      "Follow the road and then the summer path up through the forest. The climbing is even and without surprises: 10.7 degrees from 500 to 600 m, 14.4 from 600 to 700 and 14.2 from 700 to 800. The steepest sustained section of the whole tour is down here, 24.8 degrees over thirty metres between 725 and 746 m.",
+      "The forest holds to 849 m. Above the treeline, at about 816 m, you join the south-west ridge, and it carries you all the way. The steepest hundred-metre band is 900 to 1000 m averaging 14.8 degrees — those are the steeper points the route description warns about, and they are short.",
+      "From 1000 m it eases again: 8.9 degrees from 1000 to 1100 m and 6.5 above that, with the cairn at 1120 m. The east top at the same height sits close by for anyone who wants the view from both.",
+    ],
+    descent: [
+      "Back down the same ridge, south-west. The ridge is broad, and on stable days you can also ski due west from the summit.",
+      "The usual mistake: choosing the western line without thinking about where it ends. Head west instead of following the ridge down and you land in the dense forest below 849 m, which is a long and unpleasant way back to the car.",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "A broad south-west ridge with even climbing. The steepest hundred-metre band, 900 to 1000 m, measures 14.8 degrees, and the steepest sustained section 24.8 degrees between 725 and 746 m — down in the forest, where the terrain is short and open.",
+      },
+      {
+        title: "The terrain around it",
+        body: "The south-west ridge has a couple of steeper points on the last stretch up, and they are worth a look when the snow is unstable. The west side below the summit is the other assessment: it gets skied on stable days, and it ends in dense forest.",
+      },
+      {
+        title: "Before you go",
+        body: "Check today's avalanche forecast for Indre Sogn at varsom.no. Bring a transceiver, probe and shovel — an empty page does not mean a safe mountain.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "501 m",
+      endLabel: "1120 m",
+      distanceLabel: "3.0 km",
+      caption: "623 metres of climbing and 3.01 km from Mollandsmarki, with the treeline at 849 m and the steepest hundred-metre band between 900 and 1000 m.",
+    },
+  },
+  storanosi: {
+    intro:
+      "735 metres of climbing over 4.43 km from Ljosno: open birch forest low down, and a wide plateau above Eggjane where the band from 1100 to 1200 m measures 3.1 degrees over 1756 metres of ground. The steepest hundred-metre band sits between 1000 and 1100 m and measures 18.8 degrees.",
+    ascent: [
+      "Start at the end of Ljosnavegen in Brandsetdalen, 510 m, east of Voss. The first 587 metres of ground are near-flat — the band from 500 to 600 m measures 8.9 degrees on average.",
+      "Follow the birch forest up toward the north side of Middagshovden. The forest holds to 795 m, and above that everything is open. Kartverket classes the ground between 877 and 957 m as a firing range; check the local signs before you put the route through there.",
+      "Before the top of the hovde you turn off toward Eggjane. The steepest hundred-metre band of the tour is here, 1000 to 1100 m averaging 18.8 degrees, and the steepest sustained section measures 26.3 degrees between 1085 and 1107 m.",
+      "From Eggjane at 1179 m it is one and a half kilometres of plateau west to Storanosi, 1205 m. The band from 1100 to 1200 m measures 3.1 degrees over 1756 metres of ground — that is the part that makes this tour long rather than steep, and the line gives back 40 metres of height along the way.",
+    ],
+    descent: [
+      "Back the same way, north-east across the plateau and down through the birch forest to Ljosno. The mountain is known for dry snow after several days of easterly wind, and it is the plateau and the open forest that hold it.",
+      "The usual mistake: taking the eastern gully from the summit because it looks like a shorter way down. The gully is 30 degrees steep and is an assessment of its own — it is not the normal route, and it does not end where the car is parked.",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "Gentle the whole way: the steepest hundred-metre band, 1000 to 1100 m, measures 18.8 degrees, and the steepest sustained section 26.3 degrees between 1085 and 1107 m. The plateau from 1100 to 1200 m lies at 3.1 degrees — up there the challenge is navigation in poor visibility, not the angle.",
+      },
+      {
+        title: "The terrain around it",
+        body: "The eastern gully from Storanosi is 30 degrees steep and avalanche-prone; assess it on its own terms if you want to ski it. Kartverket also classes the ground between 877 and 957 m on the ascent as a firing range.",
+      },
+      {
+        title: "Before you go",
+        body: "Check today's avalanche forecast for Voss at varsom.no. Bring a transceiver, probe and shovel — an empty page does not mean a safe mountain.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "510 m",
+      endLabel: "1205 m",
+      distanceLabel: "4.4 km",
+      caption: "735 metres of climbing and 4.43 km from Ljosno in Brandsetdalen, with the treeline at 795 m and one and a half kilometres of gentle plateau from Eggjane to the cairn.",
+    },
+  },
+  horndalsnuten: {
+    intro:
+      "1121 metres of climbing over 5.93 km from Skiple in Raundalen, with a kilometre and a half of flat approach before the ground starts to rise. The steepest sustained section measures 31.4 degrees between 1093 and 1116 m — north-facing, and the final pitch to the summit is the steepest part of the route.",
+    ascent: [
+      "Start at the mapped car park by the bridge over Raundalselvi at Skiple, 398 m, about twenty kilometres east of Voss. The first 1490 metres of ground are near-flat — the band from 300 to 400 m measures 0.8 degrees — and the route crosses the river early.",
+      "Follow the tractor road past Horndalsbruni and into Horndalsbotnen at 757 m. The forest holds to 731 m, and in the upper slope toward Bjørnsetstølen there are avalanche paths; keep to the forest down there.",
+      "From the basin the route climbs toward the shoulder. The band from 900 to 1000 m measures 16.9 degrees and 1000 to 1100 m runs at 21.4, the steepest hundred-metre band. The steepest sustained section of the whole tour is here, 31.4 degrees over thirty metres between 1093 and 1116 m.",
+      "Above the shoulder at 1153 m it eases for a while, 13.3 degrees from 1100 to 1200 m, before the last pitch: 20.6 degrees from 1200 to 1300 m, and then steadier ground to the cairn at 1462.",
+    ],
+    descent: [
+      "Back the same way, north through Horndalsbotnen and out along the flat approach to Skiple. The descent faces north, so the mountain holds cold snow for a long time — which is also why there is rarely spring corn to be had here.",
+      "The usual mistake: putting the descent into the upper slope toward Bjørnsetstølen because it looks open. That ground is avalanche paths. The second is underestimating the approach: 1490 metres of near-flat ground is hard work on the way back in soft snow, and the tour is longer than its vertical suggests.",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "A flat approach, an even middle and a steep pitch at the end. The steepest hundred-metre band, 1000 to 1100 m, measures 21.4 degrees, and the steepest sustained section 31.4 degrees between 1093 and 1116 m. The whole face is north-facing.",
+      },
+      {
+        title: "The terrain around it",
+        body: "The upper slope toward Bjørnsetstølen is avalanche paths — the one place on this tour to stay in the forest rather than in the open. Fri Flyt also describes a southern start from Skaftedalen via Skytjeset; that is a different route on the same mountain, not an option halfway up.",
+      },
+      {
+        title: "Before you go",
+        body: "Check today's avalanche forecast for Voss at varsom.no. Bring a transceiver, probe and shovel — an empty page does not mean a safe mountain.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "398 m",
+      endLabel: "1462 m",
+      distanceLabel: "5.9 km",
+      caption: "1121 metres of climbing and 5.93 km from Skiple through Horndalsbotnen, with the treeline at 731 m and the shoulder at 1153 m before the summit pitch.",
+    },
+  },
+  gygrastolen: {
+    intro:
+      "1267 metres of climbing from 90 m — fjord to summit over 5.96 km, with the Folgefonna icecap straight ahead of you on the ridge. The steepest sustained section measures 25.4 degrees, so it is the length and not the angle that decides the day.",
+    ascent: [
+      "Start where the construction road turns uphill from Ænes, 90 m; the church the route description mentions sits at 41 m down by the fjord. The first hundred metres of climbing run at 6.3 degrees, and then the road gets to work: 11.3 degrees from 100 to 200 m and 12.9 from 200 to 300.",
+      "Follow the path on toward Gygrastølvatnet at 492 m. The band from 400 to 500 m is the gentlest of the tour, 5.6 degrees over 1035 metres of ground — that is the flat around the lake.",
+      "From the lake you climb onto the ridge itself and follow it. The forest holds to 577 m; above that everything is open. The climbing is even and increases gradually: 16.8 degrees from 600 to 700 m, 19.4 from 800 to 900 and 19.8 from 1000 to 1100, the steepest hundred-metre band. The steepest sustained section measures 25.4 degrees between 1042 and 1063 m.",
+      "Above 1300 m the ridge lies almost flat — 4.7 degrees over 565 metres of ground — and carries you to the summit at 1347 m.",
+    ],
+    descent: [
+      "Back down the same ridge, north toward Gygrastølvatnet and on down the construction road to Ænes. The lowest part is forest skiing, and it is hard work when the snow is wet.",
+      "The usual mistake: choosing the north-west flank because it is steeper and shorter. It is a documented alternative, but it is avalanche terrain, and it is not the line this route takes. The second is assuming you can take in both summits: between them light climbing and protection are needed, and the normal route goes to the main top.",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "A long ridge with even climbing: the steepest hundred-metre band, 1000 to 1100 m, measures 19.8 degrees, and the steepest sustained section 25.4 degrees between 1042 and 1063 m. The ridge is the line both up and down.",
+      },
+      {
+        title: "The terrain around it",
+        body: "The north-west flank is avalanche terrain and a steeper option for those who choose it with open eyes. Between the main summit and its neighbour light climbing and protection are required — that is not an extension of the ski tour.",
+      },
+      {
+        title: "Before you go",
+        body: "Check today's avalanche forecast for Hardanger at varsom.no. Bring a transceiver, probe and shovel — an empty page does not mean a safe mountain.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "90 m",
+      endLabel: "1347 m",
+      distanceLabel: "6.0 km",
+      caption: "1267 metres of climbing and 5.96 km from Ænes over Gygrastølvatnet, with the treeline at 577 m and the ridge above 1300 m at 4.7 degrees.",
+    },
+  },
+  juklavasstinden: {
+    intro:
+      "1341 metres of climbing over 7.16 km from Myrdalsvatnet — and 347 of them are given back along the way. The route climbs onto the ridge above Omnetjørnene, drops east toward Møsetjørna and takes the north ridge to a summit that carries a cornice.",
+    ascent: [
+      "Start by the road at Myrdalsvatnet, 367 m, in Uskedalen. Follow the road back a little to a tractor road and follow that until Nipelva comes into view. The forest holds to 531 m.",
+      "Follow the river up to the ridge above Omnetjørnene. This is where the climbing is: 18.4 degrees from 500 to 600 m and 20.0 from 600 to 700, with the steepest sustained section at 30.8 degrees between 995 and 1022 m. The ridge tops out at 1033 m.",
+      "From there hold east toward Møsetjørnene with Juklavasstinden in front of you. The ground falls to 755 m at the tarn — Fri Flyt's 988 metres is the summit minus the start, while the routed line collects 1341 because it has to come down here first.",
+      "From the basin you climb the north ridge to the top; it is the gentlest of the documented lines on this mountain — the western gully beside it holds 40 degrees. The band from 1100 to 1200 m measures 20.5 degrees, 1200 to 1300 m runs at 17.8 and 1300 to 1400 m at 21.5, with the cairn at 1361 m.",
+    ],
+    descent: [
+      "Down the north ridge, across the basin by Møsetjørna and back over the ridge to Nipelva and Myrdalsvatnet. The descent faces north-west, and the tour has a climb left in it on the way home — the same ridge you came over.",
+      "The usual mistake: taking the western gully down. It runs at 40 degrees and is a choice of its own; the north ridge is the line the route description points to. The second is the summit cornice — the tour can call for crampons and an ice axe, and the cornice is why.",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "Two climbs with a descent in between. The steepest sustained section measures 30.8 degrees between 995 and 1022 m, and the band from 1300 to 1400 m runs at 21.5. The north ridge is the gentlest of the documented lines — 20.5 degrees against 40 in the western gully — and it is the one the corridor follows.",
+      },
+      {
+        title: "The terrain around it",
+        body: "The summit carries a cornice. The western descent holds 40 degrees and is a decision of its own. The basin between the ridge and the north ridge is where you lose height on the way up — and where you have to take it back on the way home, with the time that costs.",
+      },
+      {
+        title: "Before you go",
+        body: "Check today's avalanche forecast for Hardanger at varsom.no. Bring a transceiver, probe and shovel — an empty page does not mean a safe mountain.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "367 m",
+      endLabel: "1361 m",
+      distanceLabel: "7.2 km",
+      caption: "1341 metres of climbing and 7.16 km from Myrdalsvatnet over the ridge at 1033 m and Møsetjørna at 755, with the north ridge from 865 m to the cairn.",
+    },
+  },
 };
 
 /** A guide rendered in `lang`. Falls back field-by-field, so a partial

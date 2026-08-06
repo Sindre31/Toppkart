@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
+import { CapsText } from "@/components/CapsText";
+
 import { Blueprint } from "@/components/Blueprint";
 import { SiteFooter, SiteNav } from "@/components/SiteChrome";
 import { getLang } from "@/lib/i18n/server";
@@ -86,7 +88,7 @@ export default async function TurerPage() {
                 regionen den faktiske overskrifta over turene sine, så den skal
                 være en `<h2>` — samme utseende, riktig dokumentstruktur. */}
             <h2 className="kicker" id={group.anchor} style={{ scrollMarginTop: 80 }}>
-              {group.region}
+              <CapsText>{group.region}</CapsText>
               <span className={styles.regionCount}>{t.tourCount(group.tours.length)}</span>
             </h2>
             <hr className="kicker-rule" />
@@ -96,7 +98,7 @@ export default async function TurerPage() {
                 <Blueprint as="article" key={tour.slug} className={styles.card}>
                   <h3 className="h-cell">
                     <Link className={styles.cardLink} href={`/tur/${tour.slug}`}>
-                      {tour.name}
+                      <CapsText>{tour.name}</CapsText>
                     </Link>
                   </h3>
                   <div className={styles.tags}>
@@ -114,7 +116,9 @@ export default async function TurerPage() {
                       <dd className="stat-v">{elevationLabel(tour.summitM, lang)}</dd>
                     </div>
                     <div>
-                      <dt className="stat-l">{t.statVertical}</dt>
+                      <dt className="stat-l">
+                        <CapsText>{t.statVertical}</CapsText>
+                      </dt>
                       <dd className="stat-v">↑ {tour.verticalM} m</dd>
                     </div>
                     <div>

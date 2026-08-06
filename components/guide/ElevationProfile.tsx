@@ -1,4 +1,5 @@
 import { Blueprint } from "@/components/Blueprint";
+import { CapsText } from "@/components/CapsText";
 import type { Lang } from "@/lib/i18n";
 import { guideDict } from "@/lib/i18n/guide";
 import type { TourGuide } from "@/lib/types";
@@ -24,7 +25,7 @@ export function ElevationProfile({
   return (
     <Blueprint style={{ padding: "18px 20px" }}>
       <h2 style={{ fontSize: 18, letterSpacing: "0.02em", textTransform: "uppercase", margin: "0 0 12px" }}>
-        {t.elevationTitle}
+        <CapsText>{t.elevationTitle}</CapsText>
       </h2>
       <svg
         viewBox="0 0 600 220"
