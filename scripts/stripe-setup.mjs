@@ -7,10 +7,14 @@
  *  up in one command, the same way twice, and so the settings the app depends on
  *  are written down rather than remembered.
  *
- *  It is idempotent. Objects it has created before are recognised by
- *  `metadata.app = "toppkart"` (product, portal configuration), by lookup key
- *  (prices) or by URL (webhook endpoint), so a second run reports «finnes» and
- *  changes nothing. It never deletes or archives anything.
+ *  It is idempotent, and it adopts rather than duplicates. Objects it created
+ *  before are recognised by `metadata.app = "toppkart"`, by lookup key or by
+ *  URL. An account built by hand has none of those, so it falls back to what
+ *  such an account *can* be recognised by — the product's name, a price's
+ *  amount and interval, the portal being the account's default — and labels
+ *  what it finds instead of building a second set beside it. That fallback is
+ *  the difference between «already set up» and two products with live
+ *  subscriptions split across them. It never deletes or archives anything.
  *
  *      node scripts/stripe-setup.mjs                     # dry run, changes nothing
  *      node scripts/stripe-setup.mjs --apply             # creates what is missing
@@ -139,11 +143,21 @@ function record(what, state, detail) {
   console.log(`  ${what.padEnd(28)} ${mark}${detail ? `  ${detail}` : ""}`);
 }
 
-/** Something that exists but is not what the app needs. Tracked apart from
- *  `planned`, because a run that finds a wrong price has nothing to create and
- *  would otherwise report «alt er på plass». */
+/** Something that exists but is not what the app needs, and that this script
+ *  will not touch — a wrong amount, a price on someone else's product. Tracked
+ *  apart from `planned` because there is nothing to *create* for these, so
+ *  counting only what is missing would call such an account finished. */
 function warn(message) {
   results.push({ state: "warned" });
+  console.log(`      ⚠ ${message}`);
+}
+
+/** Something `--apply` handles by itself: an object that is correct but
+ *  unlabelled, a portal setting this script knows how to correct. Separate
+ *  from `warn` so a dry run can say «--apply ordner dette» instead of filing it
+ *  under problems the reader has to go solve by hand. */
+function note(message) {
+  results.push({ state: "noted" });
   console.log(`      ${message}`);
 }
 
@@ -169,16 +183,34 @@ async function findAll(page, predicate) {
 // Steps
 // ---------------------------------------------------------------------------
 
+/** Marker first, then the product's own name.
+ *
+ *  The name fallback is what keeps this script from duplicating an account that
+ *  was set up by hand: a dashboard-created «Toppkart» carries no metadata, and
+ *  a marker-only lookup would declare it missing and build a second one beside
+ *  it — with the live subscriptions still pointing at the first.
+ */
 async function ensureProduct(stripe, apply) {
-  const matches = await findAll(
-    stripe.products.list({ limit: 100, active: true }),
-    (product) => product.metadata?.app === APP_TAG,
-  );
-  const found = matches[0];
+  const active = await findAll(stripe.products.list({ limit: 100, active: true }), () => true);
+  const tagged = active.filter((product) => product.metadata?.app === APP_TAG);
+  const found = tagged[0] ?? active.find((product) => product.name === PRODUCT_NAME);
+
   if (found) {
-    record("Produkt", "exists", found.id);
-    if (matches.length > 1) {
-      warn(`${matches.length} produkter er merket app=${APP_TAG}. Bruker ${found.id}; rydd opp i resten.`);
+    const adopt = !tagged.length;
+    record("Produkt", "exists", `${found.id}${adopt ? "  (umerket)" : ""}`);
+    if (tagged.length > 1) {
+      warn(`${tagged.length} produkter er merket app=${APP_TAG}. Bruker ${found.id}; rydd opp i resten.`);
+    }
+    if (adopt) {
+      if (!apply) {
+        note(`«${PRODUCT_NAME}» finnes uten metadata.app=${APP_TAG}. --apply merker det i stedet for å lage et nytt.`);
+        return found;
+      }
+      const tagged_ = await stripe.products.update(found.id, {
+        metadata: { ...found.metadata, app: APP_TAG },
+      });
+      record("Produkt", "updated", `${tagged_.id}  merket app=${APP_TAG}`);
+      return tagged_;
     }
     return found;
   }
@@ -198,8 +230,40 @@ async function ensureProduct(stripe, apply) {
 
 async function ensurePrice(stripe, apply, product, plan) {
   const byLookup = await stripe.prices.list({ lookup_keys: [plan.lookupKey], limit: 10 });
-  const found = byLookup.data.find((price) => price.active);
-  if (found) {
+  let found = byLookup.data.find((price) => price.active);
+  let adopted = false;
+
+  /* Same adoption as the product, by the only thing a hand-made price can be
+     recognised by: it sells our product, in our currency, for our amount, on
+     our interval. `lookup_key` is settable after the fact — unlike the amount —
+     so an adopted price can be labelled rather than replaced. */
+  if (!found && product) {
+    const onProduct = await findAll(
+      stripe.prices.list({ product: product.id, active: true, limit: 100 }),
+      (price) =>
+        !price.lookup_key &&
+        price.unit_amount === plan.unitAmount &&
+        price.currency === CURRENCY &&
+        price.recurring?.interval === plan.interval,
+    );
+    if (onProduct.length) {
+      found = onProduct[0];
+      adopted = true;
+      if (apply) {
+        found = await stripe.prices.update(found.id, {
+          lookup_key: plan.lookupKey,
+          metadata: { ...found.metadata, app: APP_TAG, plan: plan.key },
+        });
+        record(`Pris ${plan.human}`, "updated", `${found.id}  merket ${plan.lookupKey}`);
+        return { price: found, ok: true };
+      }
+      record(`Pris ${plan.human}`, "exists", `${found.id}  (umerket)`);
+      note(`prisen finnes uten lookup_key. --apply merker den som ${plan.lookupKey} framfor å lage en ny.`);
+      return { price: found, ok: true };
+    }
+  }
+
+  if (found && !adopted) {
     /* Prices are immutable in Stripe. If one exists under our lookup key with
        the wrong amount, currency or interval, say so and leave it alone —
        archiving somebody's live price is not this script's call to make. */
@@ -283,31 +347,97 @@ function portalFeatures(site) {
   };
 }
 
+/** Reads an existing configuration against what the app actually needs, and
+ *  returns the narrowest update that would fix it — `null` when nothing is
+ *  wrong.
+ *
+ *  Deliberately not a rewrite. A portal somebody set up by hand carries their
+ *  choices (which fields customers may edit, whether plans can be switched),
+ *  and overwriting those because they are not what this file happens to say
+ *  would be the script exceeding its remit. Only two classes get corrected:
+ *  features `/min-side` depends on to function at all, and the trial trap,
+ *  which charges a customer during a period checkout promised was free.
+ */
+function auditPortal(config) {
+  const features = config.features ?? {};
+  const fix = {};
+
+  if (!features.payment_method_update?.enabled) {
+    note("«Endre betalingsmetode» er av i portalen — /min-side sender folk dit for nettopp det.");
+    fix.payment_method_update = { enabled: true };
+  }
+
+  const cancel = features.subscription_cancel ?? {};
+  if (!cancel.enabled) {
+    note("Oppsigelse er av i portalen — /min-side sender folk dit for det også.");
+    fix.subscription_cancel = { enabled: true, mode: "at_period_end" };
+  } else if (cancel.mode !== "at_period_end") {
+    note(
+      `Oppsigelse står på «${cancel.mode}». Tilgangen skal løpe ut perioden som er betalt — ` +
+        `grantsAccess() i lib/access.ts regner med det.`,
+    );
+    fix.subscription_cancel = { enabled: true, mode: "at_period_end" };
+  }
+
+  /* The one that costs money. With plan switching on and trials ending on
+     update, a customer who moves from monthly to yearly on day 3 of the 14 has
+     the trial closed and is invoiced there and then — the opposite of what
+     /betaling promised them. Everything else about their subscription_update
+     setup is left exactly as it was. */
+  const update = features.subscription_update ?? {};
+  if (update.enabled && update.trial_update_behavior === "end_trial") {
+    note(
+      "Portalen avslutter prøveperioden ved planbytte, og fakturerer der og da. " +
+        "/betaling lover 0 kr i prøveperioden.",
+    );
+    fix.subscription_update = {
+      enabled: true,
+      default_allowed_updates: update.default_allowed_updates ?? ["price"],
+      proration_behavior: update.proration_behavior ?? "none",
+      trial_update_behavior: "continue_trial",
+    };
+  }
+
+  if (!features.invoice_history?.enabled) {
+    note("Fakturahistorikk er av i portalen — kvitteringene på Min side blir tomme.");
+    fix.invoice_history = { enabled: true };
+  }
+
+  const profile = config.business_profile ?? {};
+  if (!profile.privacy_policy_url || !profile.terms_of_service_url) {
+    // Warned, never written. Which pages a portal links to is the operator's
+    // call, and both exist in the app whether or not Stripe points at them.
+    warn("Portalen lenker ikke til /vilkar og /personvern. Sett dem i dashbordet hvis du vil.");
+  }
+
+  return Object.keys(fix).length ? fix : null;
+}
+
 async function ensurePortal(stripe, apply, site) {
-  const matches = await findAll(
-    stripe.billingPortal.configurations.list({ limit: 100 }),
-    (config) => config.metadata?.app === APP_TAG,
-  );
-  const found = matches[0];
-  const params = portalFeatures(site);
+  const all = await findAll(stripe.billingPortal.configurations.list({ limit: 100 }), () => true);
+  /* Prefer one of ours, then the account's default. That fallback is the whole
+     point: a portal activated in the dashboard is the default and carries no
+     metadata, and creating a second configuration beside it would leave the
+     live one — the one sessions actually use — untouched and unfixed. */
+  const found = all.find((config) => config.metadata?.app === APP_TAG) ?? all.find((c) => c.is_default);
 
   if (found) {
-    if (!apply) {
-      record("Kundeportal", "exists", found.id);
-      return found;
-    }
-    /* Re-applied on every --apply run so the configuration follows this file
-       rather than whatever it drifted into. */
-    const updated = await stripe.billingPortal.configurations.update(found.id, params);
-    record("Kundeportal", "updated", updated.id);
+    const mine = found.metadata?.app === APP_TAG;
+    record("Kundeportal", "exists", `${found.id}${mine ? "" : "  (kontoens standard)"}`);
+    const fix = auditPortal(found);
+    if (!fix) return found;
+    if (!apply) return found;
+    const updated = await stripe.billingPortal.configurations.update(found.id, { features: fix });
+    record("Kundeportal", "updated", `${updated.id}  ${Object.keys(fix).join(", ")}`);
     return updated;
   }
+
   if (!apply) {
     record("Kundeportal", "planned", "betalingsmetode + oppsigelse ved periodeslutt");
     return null;
   }
   const config = await stripe.billingPortal.configurations.create({
-    ...params,
+    ...portalFeatures(site),
     metadata: { app: APP_TAG },
   });
   record("Kundeportal", "created", config.id);
@@ -428,16 +558,22 @@ async function main() {
 
   console.log("");
 
-  const warned = results.filter((result) => result.state === "warned").length;
+  const count = (state) => results.filter((result) => result.state === state).length;
+  const warned = count("warned");
 
   if (!args.apply) {
-    const planned = results.filter((result) => result.state === "planned").length;
-    /* Both numbers, and never «alt er på plass» while an ⚠ is on screen: a
-       price with the wrong amount has nothing to create, so counting only what
-       is missing would call that account finished. */
-    if (planned) console.log(`${planned} ting mangler. Kjør på nytt med --apply for å opprette dem.`);
-    if (warned) console.log(`${warned} ting finnes, men avviker — se ⚠ over. Skriptet retter dem ikke.`);
-    if (!planned && !warned) console.log("Alt er på plass.");
+    const planned = count("planned");
+    const noted = count("noted");
+    /* Three buckets, never collapsed into one: what has to be created, what
+       --apply corrects on its own, and what needs a person. Reporting the
+       middle group as «skriptet retter dem ikke» sent readers off to fix by
+       hand exactly the things the next run would have handled. And never «alt
+       er på plass» while any of them is non-zero. */
+    if (planned) console.log(`${planned} ting mangler.`);
+    if (noted) console.log(`${noted} ting finnes umerket eller feil innstilt — --apply ordner dem.`);
+    if (planned || noted) console.log(`Kjør på nytt med --apply.`);
+    if (warned) console.log(`${warned} ting krever at du gjør noe selv — se ⚠ over.`);
+    if (!planned && !noted && !warned) console.log("Alt er på plass.");
     return;
   }
 
@@ -447,7 +583,13 @@ async function main() {
     // has — but never as a clean line somebody pastes without reading.
     if (price) console.log(`${plan.envVar}=${price.id}${ok ? "" : "   # ⚠ avviker, se over"}`);
   }
-  if (portal) console.log(`STRIPE_PORTAL_CONFIGURATION=${portal.id}`);
+  if (portal?.is_default) {
+    // Sessions fall back to the default when the variable is unset, so setting
+    // it to the default's own id would be a value that does nothing.
+    console.log(`# STRIPE_PORTAL_CONFIGURATION trengs ikke — ${portal.id} er kontoens standard`);
+  } else if (portal) {
+    console.log(`STRIPE_PORTAL_CONFIGURATION=${portal.id}`);
+  }
   if (secret) {
     console.log(`STRIPE_WEBHOOK_SECRET=${secret}`);
   } else if (endpoint) {
@@ -459,9 +601,9 @@ async function main() {
   console.log(
     `\nSTRIPE_SECRET_KEY setter du selv — dette skriptet skriver aldri ut nøkkelen det brukte.`,
   );
-  if (warned) {
-    console.log(`\n${warned} ting finnes, men avviker — se ⚠ over. Skriptet retter dem ikke.`);
-  }
+  // Only the human-shaped ones. Anything this run corrected is done, and
+  // repeating it here reads as an outstanding problem it no longer is.
+  if (warned) console.log(`\n${warned} ting krever at du gjør noe selv — se ⚠ over.`);
   if (live) {
     console.log(
       `\nDette var live-kontoen. Kjør det samme mot en sandkasse før du tar imot ekte kort.`,

@@ -191,9 +191,22 @@ the display name and whether the key is live before it writes anything. Pass
 https://toppkart.no` to set the origin the webhook URL and the legal links are built from
 (default: `NEXT_PUBLIC_SITE_URL`, then `https://toppkart.no`).
 
-Two things it deliberately leaves alone. It does not enable plan switching in the portal — see
-step 6 for the trial trap behind that — and it cannot show you the webhook signing secret for an
-endpoint that already existed, because Stripe returns that once, at creation.
+**Run it against an account you built by hand and it adopts what is there.** A dashboard-made
+product carries no metadata and its prices no lookup keys, so the script falls back to
+recognising the product by name, a price by its amount and interval, and the portal by being the
+account's default — then labels them. Without that fallback it would report a fully working
+account as empty and build a second product beside the one your live subscriptions point at.
+
+It sorts what it finds into three groups, and the dry run counts them separately: what is
+missing, what `--apply` corrects on its own, and what needs you. The last group is the one marked
+⚠ — a price whose amount is wrong (prices are immutable; archive it and re-run), a price sitting
+on someone else's product, or a portal that does not link to the legal pages.
+
+Two things it deliberately leaves alone. It does not turn plan switching on or off in the portal
+— that is a product decision — though it will correct the trial behaviour described in step 6 if
+switching is already enabled, because that one charges a customer during a period checkout
+promised was free. And it cannot show you the webhook signing secret for an endpoint that already
+existed, because Stripe returns that once, at creation.
 
 ### By hand
 
