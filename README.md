@@ -80,17 +80,17 @@ components/
 lib/
   config.ts              PRICE, TRIAL_DAYS, SITE, GRADE_COLORS, env, is*Configured
   types.ts               Tour, TourGuide, Viewer, Subscription, Invoice
-  tours.ts               The 51 tours, REGIONS, getTour(), routesFor(), routeById(),
+  tours.ts               The 61 tours, REGIONS, getTour(), routesFor(), routeById(),
                          routeFor(), routeProfile()
   routes.ts              Generated ascent routes per tour — see scripts/build-routes/
-  guides.ts              Editorial guide content — 39 of the 51 tours, generated
+  guides.ts              Editorial guide content — 39 of the 61 tours, generated
   access.ts              getViewer() / grantsAccess() — server-only access gate
   stripe.ts              Stripe client, null in demo mode
   demo-session.ts        Cookie-backed stand-ins for auth and subscription
   supabase/              Browser and server Supabase clients
 supabase/
   schema.sql             Tables, policies, RLS
-  seed.sql               The 51 tours and the 39 guides
+  seed.sql               The 61 tours and the 39 guides
 design-reference/        The HTML prototypes and the product/design handoff. Read-only ground
                          truth; not shipped.
 docs/
@@ -185,8 +185,8 @@ content and data quality that has to be settled before the site is sold to anyon
 - **`assets/kontur.png` is a placeholder.** It is a generated contour-map graphic standing in for
   real ski-touring photography. `assets/photo.jpg` is an unrelated reference photo from the design
   system and should also go. The contour graphic is now the only invented terrain left on a tour
-  page: it carries a "1439 moh" label baked into the artwork and renders identically on all 51
-  tours, so on 50 of them it states a height that is not that peak's. The caption says it is
+  page: it carries a "1439 moh" label baked into the artwork and renders identically on all 61
+  tours, so on 60 of them it states a height that is not that peak's. The caption says it is
   schematic, but it sits beside real figures — replace it before print.
 - **Map tiles should move to a Norwegian topographic source.** OpenStreetMap is what the prototype
   used; Kartverket's WMTS or a MapTiler style with Norwegian topography is the intended

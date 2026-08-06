@@ -1838,5 +1838,516 @@
    "confidence": "medium",
    "notes": "Fri Flyt: 1330 moh, 800 høgdemeter, 3 km, 3 timar, KAST 3. «Vasshaugen. Følg hovudvegen mellom Sykkylven og Stranda og parker ved langs vegen ved Vasshaugen, mellom Svartevatnet og Buvatnet.» Rutelinje: vestover opp Vassdalen i bratt terreng til små vatn kring 950 moh, så nordvestover mot toppryggen."
   }
+ },
+ {
+  "slug": "lodalskapa",
+  "verdict": "ok",
+  "corrections": [
+   "Toppen les 2082,5 m på DTM1 mot publiserte 2082 — det einaste 2000-metersfjellet i Nordfjord.",
+   "Starten er den kartfeste p-plassen ved Bødalssætra, 584,2 m. Vegen inn Bødalen er stengd om vinteren og opnar i mai/juni; turen er difor ein vårskitur, og sesongen er sett deretter. Målt vertikal frå parkeringa er 1498 m mot Fri Flyts 1400.",
+   "Vegpunkta er lesne av DTM1: Sætrevatnet 606 m, Kåpevatnet 1211 m (registrert som innsjø, altså frose vatn om våren) og eit punkt på breryggen under Veslekåpa på 1569,5 m. Profilen frå Kåpevatnet stig 1211 → 2082 over 1,9 km, med det brattaste øvst — det er Brattebakkane og Bohrsbreen som Fri Flyt skildrar."
+  ],
+  "rejectReason": "",
+  "corridor": {
+   "routeId": "normalruta",
+   "routeName": "Normalruta frå Bødalssætra over Kåpevatnet og Bohrsbreen",
+   "routeDescriptionFull": "Frå Bødalssætra går ein austover langs nordaustsida av dalen mot osen av Sætrevatnet og følgjer elva vidare innover til Kåpevatnet. Derfrå svingar ein sørover og opp Brattebakkane inn på Bohrsbreen, som ein følgjer opp mot ryggen. Ein traverserer under Veslekåpa og går siste stykket opp til toppen. Breutstyr, stegjern og isøks høyrer med.",
+   "trailhead": {
+    "name": "Bødalssætra",
+    "lat": 61.80976,
+    "lng": 7.07596,
+    "elevationM": 584.2,
+    "osmEvidence": "OSM node/5741676733, amenity=parking, ved Bødalssætra innerst i Bødalen — 30 km frå Stryn forbi Loen og langs Lovatnet. Vegen er vinterstengd og opnar i mai/juni."
+   },
+   "waypoints": [
+    {
+     "name": "Sætrevatnet",
+     "lat": 61.79603,
+     "lng": 7.10282,
+     "elevationM": 606.0
+    },
+    {
+     "name": "Kåpevatnet",
+     "lat": 61.7994,
+     "lng": 7.17403,
+     "elevationM": 1211.0
+    },
+    {
+     "name": "Bohrsbreen under Veslekåpa",
+     "lat": 61.79318,
+     "lng": 7.19553,
+     "elevationM": 1569.45
+    }
+   ],
+   "season": "mai–jun",
+   "roadClosedInWinter": true,
+   "aspect": "V",
+   "grade": 4,
+   "gradeReason": "Breterreng med djupe sprekker på Bohrsbreen, ei bratt kneik opp på ryggen og eit avsluttande stykke som normalt krev stegjern og isøks. Fri Flyt klassifiserer ikkje turen i KAST, men listar breutstyr som naudsynt.",
+   "hazardNotes": "Bresprekker, og svært djupe sprekker på Bohrsbreen — tau og breutstyr er ikkje valfritt. Brattebakkane er skredterreng. Stegjern og isøks når snøen er hard.",
+   "teaserNo": "Det einaste 2000-metersfjellet i Nordfjord: Bødalen, Kåpevatnet og Bohrsbreen til topps.",
+   "teaserEn": "The only 2000-metre peak in Nordfjord: Bødalen, Kåpevatnet and the Bohrsbreen glacier to the top.",
+   "sources": [
+    "https://www.friflyt.no/topptur/skiturer-stryn/turbeskrivelse-lodalskaapa",
+    "https://www.openstreetmap.org/node/5741676733",
+    "https://ws.geonorge.no/stedsnavn/v1/navn (Lodalskåpa, Bødalssætra, Sætrevatnet, Kåpevatnet, Bohrsbreen)"
+   ],
+   "confidence": "medium",
+   "notes": "Fri Flyt: 2082 moh, 1400 høgdemeter, 7 timar, «ikkje klassifisert». Tilkomst: «Bødalssetra, snaut 30 kilometer fra Stryn forbi Loen og langs Lovatnet», vegen stengd om vinteren, opnar mai/juni."
+  }
+ },
+ {
+  "slug": "skarsteinfjellet",
+  "verdict": "corrected",
+  "corrections": [
+   "SSR skriv fjellet Skarsteinsfjellet; Fri Flyt skriv Skarsteinfjellet. Registerforma er brukt. Toppen les 1566,6 m mot publiserte 1566.",
+   "Starten er lagd ved grinda på Dragesetvegen, 349,1 m, og ikkje på garden Drageset (249,4 m). Det gjev 1218 høgdemeter mot Fri Flyts 1100 — differansen svarar til at ein køyrer eit stykke lenger opp traktorvegen når han er brøytt.",
+   "Vegpunkta er SSR-namn lesne av DTM1: Remestøylen 596,4 m og Hestehytta 864,5 m. Profilen frå Hestehytta til toppen stig jamt 864 → 1567 over 3,3 km, om lag 12 grader i snitt, som svarar til Fri Flyts «heile ruta går i terreng under 30 grader»."
+  ],
+  "rejectReason": "",
+  "corridor": {
+   "routeId": "normalruta",
+   "routeName": "Normalruta frå Drageset over Remestøylen og Hestehytta",
+   "routeDescriptionFull": "Frå grinda på Dragesetvegen innerst i Innvikdalen følgjer ein traktorvegen opp til Remestøylen. Derfrå held ein vest-sørvestover opp den tydelege ryggen med Innvikdalen på høgre side, forbi Hestehytta på 900 moh, og vidare langs ryggen heilt til toppen. Same veg ned — det finst fleire skredutsette nedkøyringsalternativ her, så følg ruta og ikkje andre sine spor.",
+   "trailhead": {
+    "name": "Dragesetvegen i Innvikdalen",
+    "lat": 61.83421,
+    "lng": 6.64306,
+    "elevationM": 349.1,
+    "osmEvidence": "OSM node/5072937837, barrier=gate, på Dragesetvegen (way, highway=unclassified) opp Innvikdalen frå Drageset ved Innvik."
+   },
+   "waypoints": [
+    {
+     "name": "Remestøylen",
+     "lat": 61.84241,
+     "lng": 6.6605,
+     "elevationM": 596.43
+    },
+    {
+     "name": "Hestehytta",
+     "lat": 61.83633,
+     "lng": 6.67368,
+     "elevationM": 864.47
+    },
+    {
+     "name": "Ryggen, 1275",
+     "lat": 61.83344,
+     "lng": 6.70451,
+     "elevationM": 1275.35
+    }
+   ],
+   "season": "jan–apr",
+   "roadClosedInWinter": false,
+   "aspect": "V",
+   "grade": 2,
+   "gradeReason": "KAST 1 Enkelt hos Fri Flyt, og heile ruta ligg under 30 grader. Det er lengda og dei drygt 1200 høgdemetrane som gjer turen til meir enn ein nybyrjartur.",
+   "hazardNotes": "Ruta sjølv held seg under 30 grader, men fjellet har fleire skredutsette nedkøyringsalternativ til sidene. Følg oppstigningsryggen ned att.",
+   "teaserNo": "Lang og jamn rygg over Innvikdalen — heile vegen i terreng under 30 grader.",
+   "teaserEn": "A long, even ridge above Innvikdalen — the whole way in terrain under 30 degrees.",
+   "sources": [
+    "https://www.friflyt.no/topptur/skiturer-stryn/turbeskrivelse-skarsteinfjellet",
+    "https://www.openstreetmap.org/node/5072937837",
+    "https://ws.geonorge.no/stedsnavn/v1/navn (Skarsteinsfjellet, Drageset, Remestøylen, Hestehytta)"
+   ],
+   "confidence": "medium",
+   "notes": "Fri Flyt: 1566 moh, 1100 høgdemeter, 5 km, 5 timar, KAST 1 Enkelt. «Fra Innvik kjører du inn dalen til Drageset.»"
+  }
+ },
+ {
+  "slug": "glitregga",
+  "verdict": "ok",
+  "corrections": [
+   "Starten er kartfest: OSM relation/5871905, leisure, Randabygd idrettsanlegg, som DTM1 les til 397,9 m — Fri Flyt oppgjev «Randabygd Idrettsanlegg, Ålandsleite (400 moh.)». Målt vertikal til toppen er 899 m mot publiserte 900.",
+   "Djupegrova er henta frå SSR og lesen til 487,5 m. Profilen frå idrettsanlegget til toppen stig jamt 398 → 1297 over 3,7 km, utan trinn — som svarar til at heile turen går i terreng under 30 grader.",
+   "Toppen les 1296,6 m mot publiserte 1297."
+  ],
+  "rejectReason": "",
+  "corridor": {
+   "routeId": "normalruta",
+   "routeName": "Normalruta frå Randabygd idrettsanlegg",
+   "routeDescriptionFull": "Frå parkeringa ved idrettsanlegget i Randabygd følgjer ein grusvegen nordaustover, og svingar så nordover og nordvestover på venstre (vestre) side av Djupegrova. Etter eit brattare parti flatar det ut, og ein held nordaustover mot eit markert skar. Frå skaret tek ein austover til toppen av Glitregga. Same veg ned.",
+   "trailhead": {
+    "name": "Randabygd idrettsanlegg",
+    "lat": 61.87732,
+    "lng": 6.32777,
+    "elevationM": 397.91,
+    "osmEvidence": "OSM relation/5871905, idrettsanlegget på Ålandsleite i Randabygd; DTM1 gjev terrengklassen SportIdrettPlass på punktet."
+   },
+   "waypoints": [
+    {
+     "name": "Djupegrova",
+     "lat": 61.88348,
+     "lng": 6.34632,
+     "elevationM": 487.53
+    }
+   ],
+   "season": "des–apr",
+   "roadClosedInWinter": false,
+   "aspect": "S",
+   "grade": 2,
+   "gradeReason": "KAST 1 Enkelt hos Fri Flyt, og heile turen går i terreng under 30 grader. 900 høgdemeter gjer han likevel til ein heil dagstur.",
+   "hazardNotes": "Bratt terreng rett under toppen av Glitregga — hald deg til den skildra linja over skaret. Elles er ruta slak og oversiktleg.",
+   "teaserNo": "Sørvend og slak heile vegen frå Randabygd, med utsyn over Nordfjorden.",
+   "teaserEn": "South-facing and gentle the whole way from Randabygd, with a view over the Nordfjord.",
+   "sources": [
+    "https://www.friflyt.no/topptur/skiturer-stryn/turbeskrivelse-glitregga",
+    "https://www.openstreetmap.org/relation/5871905",
+    "https://ws.geonorge.no/stedsnavn/v1/navn (Glitregga, Djupegrova, Ålandsleitet)"
+   ],
+   "confidence": "medium",
+   "notes": "Fri Flyt: 1297 moh, 900 høgdemeter, 3 km, 3–4 timar, KAST 1 Enkelt, aspekt S."
+  }
+ },
+ {
+  "slug": "snonipa",
+  "verdict": "corrected",
+  "corrections": [
+   "Starten er kartfest ved Høyseth Camping, OSM node/3663315361, 351,3 m — Fri Flyt: «parker ved utkøyringsplassar langs grusvegen ved campingplassen, eller nede ved fylkesvegen». Det gjev 1476 høgdemeter mot Fri Flyts 1500 for Haugabreen-ruta.",
+   "Vegpunkta er SSR-namn lesne av DTM1: Haugastøylen 658,5 m og Haugabreen 1099,9 m (registrert som SnøIsbre). Profilen frå breen til toppen stig 1100 → 1827 over 2,8 km, med breterreng heile vegen opp til 1711 m.",
+   "Berre Haugabreen-ruta er teken med. Fri Flyt skildrar òg oppstigning frå Veitebergsdalen (E2, 1540 høgdemeter) over Sollirinden; det er ei anna rute frå ein annan dal, og ho er ikkje lagd inn her.",
+   "Toppen les 1826,6 m mot publiserte 1827."
+  ],
+  "rejectReason": "",
+  "corridor": {
+   "routeId": "normalruta",
+   "routeName": "Normalruta frå Klakegg opp Haugadalen og Haugabreen",
+   "routeDescriptionFull": "Frå parkeringa ved campingplassen i Stardalen følgjer ein skogsvegen innover Haugadalen til Haugastøylen. Vidare går ein opp dalen til brefallet, og opp midt i fallet på Haugabreen. Oppe på platået traverserer ein nordvestover og kjem opp på toppen frå nordvest. Same veg ned.",
+   "trailhead": {
+    "name": "Stardalen ved Høyseth",
+    "lat": 61.61847,
+    "lng": 6.7142,
+    "elevationM": 351.28,
+    "osmEvidence": "OSM node/3663315361, tourism=camp_site, Høyseth Camping i Stardalen. Frå Skei følgjer ein E39 nordover og tek av på Klakegg i krysset skilta mot Stardalen."
+   },
+   "waypoints": [
+    {
+     "name": "Haugastøylen",
+     "lat": 61.63412,
+     "lng": 6.73025,
+     "elevationM": 658.54
+    },
+    {
+     "name": "Haugabreen",
+     "lat": 61.65853,
+     "lng": 6.72291,
+     "elevationM": 1099.94
+    }
+   ],
+   "season": "feb–mai",
+   "roadClosedInWinter": false,
+   "aspect": "SØ",
+   "grade": 3,
+   "gradeReason": "E1 «Utfordrande» hos Fri Flyt. Sjølve stigninga er jamn, men ho går over bre med store sprekker, og turen er 1500 høgdemeter og fem til ti timar.",
+   "hazardNotes": "Store sprekker på Haugabreen. Det flate partiet langs skogsvegen mot Haugastøylen er særleg utsett for naturleg utløyste skred når snødekket blir varma opp. Vindavblåst hardt føre kring 1687 moh.",
+   "teaserNo": "Det høgste fjellet i Sunnfjord, opp Haugadalen og midt i brefallet på Haugabreen.",
+   "teaserEn": "The highest mountain in Sunnfjord, up Haugadalen and straight through the Haugabreen icefall.",
+   "sources": [
+    "https://www.friflyt.no/topptur/skiturer-sunnfjord/turbeskrivelse-snonipa",
+    "https://www.openstreetmap.org/node/3663315361",
+    "https://ws.geonorge.no/stedsnavn/v1/navn (Snønipa, Haugastøylen, Haugabreen, Klakegg)"
+   ],
+   "confidence": "medium",
+   "notes": "Fri Flyt: 1827 moh, 1500 høgdemeter via Haugabreen (1540 via Veitebergsdalen), 5–10 timar, E1/E2 Utfordrande, sesong februar–mai."
+  }
+ },
+ {
+  "slug": "kvamshesten",
+  "verdict": "corrected",
+  "corrections": [
+   "Fjellet heiter Kvamshesten i SSR; toppen blir lokalt kalla Storehesten, og Fri Flyt fører turen som «Kvamhesten (Storhesten)». Registerforma er brukt. Toppen les 1209,2 m mot publiserte 1209.",
+   "Starten er vegenden på Rytnavegen, 404,5 m. Fri Flyt oppgjev to tal — 960 høgdemeter frå Rytnane og 810 frå parkeringa sørvest for Kårstadstølen — og DTM1 skil dei: Rytnane ligg på 209,1 m (1209 − 209 = 1000) og vegenden på 404,5 (1209 − 405 = 805). Det er den siste som er den skilta parkeringa til Storehesten.",
+   "Alle fire vegpunkta er SSR-namn lesne av DTM1: Kårstadstølen 494,9, Rabbane 511,6, Skaravatnet 715,0 og Grunnevatnet 785,0 — same rekkjefølgje som rutebeskrivinga. Registeret skriv Skaravatnet der Fri Flyt skriv Skardavatnet, og høgda 715 stemmer med teksten.",
+   "Siste strekket er bratt: frå Grunnevatnet til toppen er det 424 høgdemeter på 581 m grunn, om lag 36 grader i snitt. Det er skålformasjonen Fri Flyt skildrar, og grunnen til at turen krev stegjern og isøks."
+  ],
+  "rejectReason": "",
+  "corridor": {
+   "routeId": "normalruta",
+   "routeName": "Normalruta frå Rytnane over Kårstadstølen og Grunnevatnet",
+   "routeDescriptionFull": "Frå Kårstad og Rytnane følgjer ein skogsvegen vidare oppover mot Kårstadstølen. Så held ein aust mot Rabbane, og deretter i nordleg retning mot skaret aust for Skardavatnet på 715 moh. Ruta går på nordsida av Skardavatnet i vestleg retning og rundar Grunnevatnet. Etter å ha teke litt høgde vest for Grunnevatnet følgjer ein den markerte skålformasjonen sørover heilt opp til toppen.",
+   "trailhead": {
+    "name": "Rytnavegen ved Rytnane",
+    "lat": 61.39404,
+    "lng": 5.64034,
+    "elevationM": 404.5,
+    "osmEvidence": "Vegenden på Rytnavegen (OSM, highway=unclassified) over Rytnane — den private vegen som er skilta mot parkering til Storehesten frå fv391 mot Laukeland."
+   },
+   "waypoints": [
+    {
+     "name": "Kårstadstølen",
+     "lat": 61.39691,
+     "lng": 5.6468,
+     "elevationM": 494.89
+    },
+    {
+     "name": "Rabbane",
+     "lat": 61.39856,
+     "lng": 5.65369,
+     "elevationM": 511.56
+    },
+    {
+     "name": "Skaravatnet",
+     "lat": 61.40488,
+     "lng": 5.64633,
+     "elevationM": 715.0
+    },
+    {
+     "name": "Grunnevatnet",
+     "lat": 61.40657,
+     "lng": 5.62898,
+     "elevationM": 785.0
+    }
+   ],
+   "season": "des–mai",
+   "roadClosedInWinter": false,
+   "aspect": "N",
+   "grade": 3,
+   "gradeReason": "E2 «Ganske vanskeleg» hos Fri Flyt, og siste skåla frå Grunnevatnet til toppen måler om lag 36 grader i snitt. Isøks og stegjern er oppgjeve som naudsynt utstyr.",
+   "hazardNotes": "Skålformasjonen sør for Grunnevatnet er skredterreng og er den bratte delen av turen. Hardt føre gjer siste stigninga til ei klyving — isøks og stegjern.",
+   "teaserNo": "Landemerket over Dalsfjorden, med ei bratt skål som siste stigning.",
+   "teaserEn": "The landmark above Dalsfjorden, with a steep bowl for the final climb.",
+   "sources": [
+    "https://www.friflyt.no/topptur/skiturer-sunnfjord/turbeskrivelse-kvamhesten-storhesten",
+    "https://ws.geonorge.no/stedsnavn/v1/navn (Kvamshesten, Rytnane, Kårstadstølen, Rabbane, Skaravatnet, Grunnevatnet)"
+   ],
+   "confidence": "medium",
+   "notes": "Fri Flyt: 1209 moh, 960 høgdemeter frå Rytnane / 810 frå parkeringa sørvest for Kårstadstølen, 3–6 timar, E2, sesong desember–mai."
+  }
+ },
+ {
+  "slug": "molden",
+  "verdict": "ok",
+  "corrections": [
+   "Starten er den kartfeste p-plassen på Mollandsmarki, OSM way/761054317, 501,4 m. Målt vertikal til toppen er 619 m mot Fri Flyts 640, og avstanden 2,8 km mot oppgjevne 4 km — ruta følgjer vegen og sommarstien og er difor lenger enn luftlinja.",
+   "Toppen les 1120,3 m mot publiserte 1116; toppsøket landa 0,18 km frå SSR-punktet.",
+   "Profilen frå parkeringa stig jamt 501 → 1120 utan trinn, med det brattaste mellom 850 og 1000 moh — som svarar til Fri Flyts «pass opp for eit par bratte punkt opp den siste ryggen» og oppgjevne 30 grader på det brattaste."
+  ],
+  "rejectReason": "",
+  "corridor": {
+   "routeId": "normalruta",
+   "routeName": "Normalruta frå Mollandsmarki opp sørvestryggen",
+   "routeDescriptionFull": "Frå parkeringa på Mollandsmarki følgjer ein vegen mot Garden og vidare opp sommarstien gjennom skogen. Over tregrensa tek ein inn på sørvestryggen, som fører heile vegen til toppen. Det brattaste ligg mellom 850 og 1000 moh. Same veg ned; på stabile dagar kan ein òg køyre rett vestover frå toppen, men då må ein passe på å ikkje hamne i den tette skogen.",
+   "trailhead": {
+    "name": "Mollandsmarki",
+    "lat": 61.33308,
+    "lng": 7.2718,
+    "elevationM": 501.42,
+    "osmEvidence": "OSM way/761054317, amenity=parking, på Mollandsmarki over Marifjøra i Luster — «kjør opp mot Mollandsmarki og parker ved tydelig parkering»."
+   },
+   "waypoints": [
+    {
+     "name": "Over tregrensa, 816",
+     "lat": 61.33863,
+     "lng": 7.29576,
+     "elevationM": 816.42
+    }
+   ],
+   "season": "feb–apr",
+   "roadClosedInWinter": false,
+   "aspect": "SV",
+   "grade": 1,
+   "gradeReason": "KAST 1 Enkelt hos Fri Flyt: 640 høgdemeter på ein brei sørvestrygg, med 30 grader som brattaste måling og resten godt under.",
+   "hazardNotes": "Eit par brattare punkt opp den siste ryggen, elles slakt. Køyrer ein rett vestover frå toppen i staden for å følgje ryggen, endar ein i tett skog.",
+   "teaserNo": "Utsiktstoppen over Lustrafjorden — kort, slak og solvend.",
+   "teaserEn": "The viewpoint above the Lustrafjord — short, gentle and sun-facing.",
+   "sources": [
+    "https://www.friflyt.no/topptur/skiturer-sogn/turbeskrivelse-molden",
+    "https://www.openstreetmap.org/way/761054317",
+    "https://ws.geonorge.no/stedsnavn/v1/navn (Molden, Mollandsmarki)"
+   ],
+   "confidence": "medium",
+   "notes": "Fri Flyt: 1116 moh, 640 høgdemeter, 4 km, 3 timar, KAST 1 Enkelt, brattaste måling 30 grader."
+  }
+ },
+ {
+  "slug": "storanosi",
+  "verdict": "ok",
+  "corrections": [
+   "Starten er vegenden på Ljosnavegen i Brandsetdalen, 509,5 m — Fri Flyt oppgjev «Ljosno i Brandsetdalen» og 700 høgdemeter, og 1205 − 510 = 695 stemmer.",
+   "Vegpunktet Eggjane er SSR-namn lese til 1178,8 m. Middagshovden (1030,6 m) er *ikkje* lagt inn som vegpunkt: rutebeskrivinga går opp mot nordsida av hovden og forbi han, ikkje over toppen, og linja frå Ljosno til Eggjane passerer nordsida utan trinn.",
+   "Toppen les 1205,0 m mot publiserte 1205."
+  ],
+  "rejectReason": "",
+  "corridor": {
+   "routeId": "normalruta",
+   "routeName": "Normalruta frå Ljosno over Eggjane",
+   "routeDescriptionFull": "Frå Ljosno i Brandsetdalen følgjer ein bjørkeskogen opp mot nordsida av Middagshovden. Før toppen tek ein av mot Eggjane og følgjer platået halvanna kilometer vestover mot Storanosi. Same veg ned.",
+   "trailhead": {
+    "name": "Ljosno i Brandsetdalen",
+    "lat": 60.78855,
+    "lng": 6.68446,
+    "elevationM": 509.54,
+    "osmEvidence": "Vegenden på Ljosnavegen (OSM, highway=service) i Brandsetdalen, som greinar av frå Brandsetvegen aust for Voss."
+   },
+   "waypoints": [
+    {
+     "name": "Eggjane",
+     "lat": 60.77113,
+     "lng": 6.64496,
+     "elevationM": 1178.84
+    }
+   ],
+   "season": "jan–apr",
+   "roadClosedInWinter": false,
+   "aspect": "NØ",
+   "grade": 2,
+   "gradeReason": "KAST 1 Enkelt hos Fri Flyt, brattaste måling 30 grader, og 700 høgdemeter opp open bjørkeskog og platå. Den austlege renna frå toppen er brattare og er ikkje normalruta.",
+   "hazardNotes": "Den austlege renna frå Storanosi er 30 grader bratt — vurder skredfaren nøye om du vil køyre der. Sjølve ruta over Eggjane er slak.",
+   "teaserNo": "Tørrsnøterreng over Brandsetdalen: open bjørkeskog nedst og eit vidt platå øvst.",
+   "teaserEn": "Dry-snow country above Brandsetdalen: open birch forest low down and a wide plateau on top.",
+   "sources": [
+    "https://www.friflyt.no/topptur/skiturer-voss/turbeskrivelse-storanosi",
+    "https://ws.geonorge.no/stedsnavn/v1/navn (Storanosi, Ljosno, Eggjane, Middagshovden)"
+   ],
+   "confidence": "medium",
+   "notes": "Fri Flyt: 1205 moh, 700 høgdemeter, 3,8 km, 4,5 timar, KAST 1 Enkelt, aspekt NØ, brattaste 30 grader."
+  }
+ },
+ {
+  "slug": "horndalsnuten",
+  "verdict": "corrected",
+  "corrections": [
+   "Nordruta er vald. Fri Flyt skildrar to startpunkt — brua over Raundalselvi ved Skiple i nord og Skaftedalen i sør — og korridoren her er nordruta, som er den med kartfest parkering: OSM node/4792386725, 397,6 m, 400 m frå SSR-punktet for Skiple bru. Målt vertikal er 1064 m mot Fri Flyts 1000.",
+   "Horndalsbotnen er SSR-namn lese til 756,5 m. Profilen derfrå til toppen stig 757 → 1461 over 1,7 km, med dei siste 400 metrane på om lag 35 grader — det er skuldra på 1300 moh og toppkneika Fri Flyt skildrar.",
+   "Toppen les 1461,5 m mot publiserte 1461."
+  ],
+  "rejectReason": "",
+  "corridor": {
+   "routeId": "normalruta",
+   "routeName": "Normalruta frå Skiple gjennom Horndalsbotnen",
+   "routeDescriptionFull": "Frå brua over Raundalselvi ved Skiple følgjer ein traktorvegen forbi Horndalsbruni og inn i Horndalsbotnen. Frå botnen stig ein opp til skuldra på om lag 1300 moh, og går derfrå den siste kneika opp til toppen. Same veg ned.",
+   "trailhead": {
+    "name": "Skiple i Raundalen",
+    "lat": 60.67739,
+    "lng": 6.69027,
+    "elevationM": 397.63,
+    "osmEvidence": "OSM node/4792386725, amenity=parking, ved brua over Raundalselvi ved Skiple, om lag 20 km aust for Voss."
+   },
+   "waypoints": [
+    {
+     "name": "Horndalsbotnen",
+     "lat": 60.65143,
+     "lng": 6.70104,
+     "elevationM": 756.53
+    },
+    {
+     "name": "Skuldra, 1153",
+     "lat": 60.64449,
+     "lng": 6.68267,
+     "elevationM": 1153.25
+    }
+   ],
+   "season": "jan–apr",
+   "roadClosedInWinter": false,
+   "aspect": "N",
+   "grade": 3,
+   "gradeReason": "Fri Flyt klassifiserer ikkje turen, men siste stigninga frå skuldra held om lag 35 grader over 400 m, og oversida mot Bjørnsetstølen er skredbaner. Tusen høgdemeter i nordvend terreng.",
+   "hazardNotes": "Skredbaner i den øvre lia mot Bjørnsetstølen — hald deg i skogen der nede. Siste kneika opp mot toppen er brattaste partiet på ruta.",
+   "teaserNo": "Nordvend og bratt over Raundalen, med ei tydeleg skulder før toppkneika.",
+   "teaserEn": "North-facing and steep above Raundalen, with a clear shoulder before the summit pitch.",
+   "sources": [
+    "https://www.friflyt.no/topptur/skiturer-voss/turbeskrivelse-horndalsnuten",
+    "https://www.openstreetmap.org/node/4792386725",
+    "https://ws.geonorge.no/stedsnavn/v1/navn (Horndalsnuten, Skiple, Horndalsbotnen)"
+   ],
+   "confidence": "medium",
+   "notes": "Fri Flyt: 1461 moh, 1000 høgdemeter, 3 timar. Nordstart: «broen som går over Raundalselvi ved Skiple». Sørstart frå Skaftedalen via Skytjeset (890 moh) er ei anna rute og er ikkje lagd inn."
+  }
+ },
+ {
+  "slug": "gygrastolen",
+  "verdict": "corrected",
+  "corrections": [
+   "Starten er byrjinga på anleggsvegen opp frå Ænes, 90,2 m. Fri Flyt oppgjev 1330 høgdemeter, og 1347 − 90 = 1257; resten er undulasjon på veg opp. Ænes kyrkje, som teksten nemner, ligg på 40,6 m nede ved fjorden.",
+   "Gygrastølvatnet er SSR-namn — registeret skriv Gygrastolsvatnet — lese til 492,0 m. Profilen derfrå til toppen stig jamt 492 → 1347 over 2,4 km langs ryggen.",
+   "Berre ryggruta er teken med. Fri Flyt skildrar òg ein variant om Skrunten (1045,9 m på DTM1) som «endar i ei luftig egg der tau og sikringar krevst»; det er ikkje normalruta, og ho er ikkje lagd inn.",
+   "Toppen les 1346,8 m mot publiserte 1339."
+  ],
+  "rejectReason": "",
+  "corridor": {
+   "routeId": "normalruta",
+   "routeName": "Normalruta frå Ænes over Gygrastølvatnet",
+   "routeDescriptionFull": "Frå Ænes følgjer ein anleggsvegen opp frå kyrkja og stien vidare til Gygrastølvatnet. Frå vatnet går ein opp på sjølve ryggen og følgjer han heile vegen til toppen — det er den tryggaste linja. Nedkøyringa følgjer normalt same ryggen; nordvestflanken er eit brattare alternativ i skredterreng.",
+   "trailhead": {
+    "name": "Ænes",
+    "lat": 60.08439,
+    "lng": 6.11828,
+    "elevationM": 90.2,
+    "osmEvidence": "OSM track — byrjinga på anleggsvegen som går opp frå Ænes kyrkje (SSR, 40,6 m) på austsida av Hardangerfjorden i Kvinnherad."
+   },
+   "waypoints": [
+    {
+     "name": "Gygrastølvatnet",
+     "lat": 60.08086,
+     "lng": 6.15529,
+     "elevationM": 492.0
+    }
+   ],
+   "season": "feb–apr",
+   "roadClosedInWinter": false,
+   "aspect": "N",
+   "grade": 3,
+   "gradeReason": "«Moderat» hos Fri Flyt, men turen er 1300 høgdemeter frå fjorden opp ein rygg, og nordvestflanken ved sida av er skredterreng. Å ta med begge toppane krev lett klatring og sikringsutstyr — det er ikkje normalruta.",
+   "hazardNotes": "Nordvestflanken er skredutsett. Mellom dei to toppane krevst lett klatring og sikringsutstyr — normalruta går berre til hovudtoppen. Tøff skogskøyring nedst att til bilen.",
+   "teaserNo": "Frå fjorden i Ænes opp ryggen over Gygrastølvatnet til utsyn over Folgefonna.",
+   "teaserEn": "From the fjord at Ænes up the ridge above Gygrastølvatnet, facing the Folgefonna icecap.",
+   "sources": [
+    "https://www.friflyt.no/topptur/skiturer-rosendal/turbeskrivelse-gygrastolen",
+    "https://ws.geonorge.no/stedsnavn/v1/navn (Gygrastolen, Gygrastolsvatnet, Skrunten, Ænes)"
+   ],
+   "confidence": "medium",
+   "notes": "Fri Flyt: 1339 moh, 1330 høgdemeter, 7 timar, «moderat». «Ænes … anleggsvei opp fra Ænes Kirke og sti til Gygrastølvannet.»"
+  }
+ },
+ {
+  "slug": "juklavasstinden",
+  "verdict": "corrected",
+  "corrections": [
+   "Starten er vegen ved Myrdalsvatnet, 366,8 m — Fri Flyt oppgjev «Myrdalsvannet» og 988 høgdemeter, og 1361 − 367 = 994. Det er den beste stadfestinga korridoren har.",
+   "Ryggen over Omnetjørnene er lesen av DTM1 til 1033,3 m og lagd inn som vegpunkt. Møsetjørna (755,3 m) er *ikkje* vegpunkt: linja mellom ryggen og nordryggen på toppen fell til 755 om ho går rett over vatnet, og ei korridorlinje gjennom det punktet ville tvinge fram 300 høgdemeter attgjeving. Fri Flyt nemner Møsetjørnene som landemerke ein ser mot, ikkje som eit punkt ruta går gjennom.",
+   "Toppen les 1361,2 m mot publiserte 1360.",
+   "Attgjevinga er ekte og skildra. Ruta går opp på ryggen over Omnetjørnene (1033 m), aust ned mot Møsetjørna (755 m) og opp nordryggen til 1361 — altså kring 300 høgdemeter attgjeving på veg opp. Fri Flyts 988 er toppen minus starten, ikkje samla stigning; målt samla stigning på den rutede linja er kring 1330 m. Ei linje utan vegpunkt gjev 1149 m og berre 155 m attgjeving, men ho tek ein annan botn 500–800 m nord for landemerka i teksten, og korridoren skal følgje ruta som er skildra."
+  ],
+  "rejectReason": "",
+  "corridor": {
+   "routeId": "normalruta",
+   "routeName": "Normalruta frå Myrdalsvatnet opp nordryggen",
+   "routeDescriptionFull": "Frå Myrdalsvatnet følgjer ein vegen litt tilbake til ein traktorveg, og følgjer denne til Nipelva kjem til syne. Så følgjer ein elva oppover til ryggen over Omnetjørnene. Derfrå held ein austover mot Møsetjørnene med Juklavasstinden framfor seg, og går opp den nordlege ryggen til topps — det er den tryggaste linja. Same veg ned.",
+   "trailhead": {
+    "name": "Myrdalsvatnet",
+    "lat": 60.023,
+    "lng": 6.06094,
+    "elevationM": 366.76,
+    "osmEvidence": "OSM way/368726570, skogsveg ved Myrdalsvatnet i Uskedalen/Rosendal — same utgangspunkt som Fri Flyt fører for Bjørndalstind og Omnatind."
+   },
+   "waypoints": [
+    {
+     "name": "Ryggen over Omnetjørnene, 1033",
+     "lat": 60.0191,
+     "lng": 6.08444,
+     "elevationM": 1033.25
+    },
+    {
+     "name": "Møsetjørna",
+     "lat": 60.00942,
+     "lng": 6.11401,
+     "elevationM": 755.32
+    }
+   ],
+   "season": "mars–mai",
+   "roadClosedInWinter": false,
+   "aspect": "NV",
+   "grade": 3,
+   "gradeReason": "«Moderat» hos Fri Flyt med 35 grader som brattaste på oppstigninga og 40 på den vestlege nedkøyringa. Toppen ber skavl, og turen kan krevje stegjern og isøks.",
+   "hazardNotes": "Toppskavl. Turen kan krevje stegjern og isøks. Den vestlege renna ned er 40 grader og eit eige val, ikkje normalruta.",
+   "teaserNo": "Nordryggen opp frå Myrdalsvatnet, med skavl på toppen og Folgefonna i ryggen.",
+   "teaserEn": "The north ridge up from Myrdalsvatnet, a corniced top and the Folgefonna icecap behind you.",
+   "sources": [
+    "https://www.friflyt.no/topptur/skiturer-rosendal/turbeskrivelse-juklavasstinden",
+    "https://www.openstreetmap.org/way/368726570",
+    "https://ws.geonorge.no/stedsnavn/v1/navn (Juklavasstinden, Myrdalsvatnet, Møsetjørna)"
+   ],
+   "confidence": "medium",
+   "notes": "Fri Flyt: 1360 moh, 988 høgdemeter, 5–6 timar, «moderat», aspekt NV, brattaste 35 grader. «Denne er spesielt fin om våren.»"
+  }
  }
 ]

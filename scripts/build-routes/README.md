@@ -181,11 +181,11 @@ one line:
 | Slogen | Skylstad (1482 m) and direct from Øye (1512 m) |
 | Bitihorn | Bygdin (549 m) and Båtskaret (454 m) |
 
-Eight tours carry a second route; the table above is all of them. 59 routes over
-51 tours. The first route of a tour is the one its own `verticalM` and `duration`
+Eight tours carry a second route; the table above is all of them. 69 routes over
+61 tours. The first route of a tour is the one its own `verticalM` and `duration`
 describe. Alternatives are only added where a second route is actually documented
 — `ALTERNATES` in `build_corridors.py`, and the research output, are not places
-to invent one because the schema allows it. The other 43 tours have a single
+to invent one because the schema allows it. The other 53 tours have a single
 route, and the app renders no picker for them.
 
 Route and trailhead *names* get shortened for display — the research came back
@@ -316,7 +316,7 @@ for a line that has actually moved.
 ## The app's numbers, reconciled against the ground
 
 `verticalM` is now the cumulative ascent of the tour's **first** route. **Every one
-of the 51 agrees with its routed gain to within 10 m**, which is the invariant to
+of the 61 agrees with its routed gain to within 10 m**, which is the invariant to
 assert if this is ever checked automatically. An alternative route has its own
 gain and is not expected to match.
 
@@ -528,6 +528,83 @@ slugs, and the ones you leave out are copied through byte for byte.
 `resolve_summits.py` and `resample_dtm1.py` take slugs for the same reason —
 re-resolving 57 settled summits or re-reading 10 786 vertices to add twelve tours
 is hours spent reproducing numbers that are already in the file.
+
+
+## The Vestland round
+
+Ten more peaks, on the same four conditions: a full Fri Flyt route description, a
+start at a road, an independent second source, and every point resolving in the
+place-name register and measuring on DTM1. Vestland is not one Fri Flyt index but
+five — `skiturer-stryn`, `-sunnfjord`, `-sogn`, `-voss` and `-rosendal` — so the
+round reads as five small ones, and it lands in five of the app's regions.
+Sunnfjord is new; the other four already had tours.
+
+| tour | region | start | summit | gain | km | steepest 100 m band | steepest 30 m | grade |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Lodalskåpa | Nordfjord | 584 | 2082 | 1524 | 10.4 | 20.5° | 35.6° | 4 |
+| Snønipa | Sunnfjord | 351 | 1827 | 1493 | 8.3 | 19.2° | 26.0° | 3 |
+| Juklavasstinden | Hardanger | 367 | 1361 | 1341 | 7.2 | 21.5° | 30.8° | 3 |
+| Gygrastolen | Hardanger | 90 | 1347 | 1267 | 6.0 | 19.8° | 25.4° | 3 |
+| Skarsteinsfjellet | Nordfjord | 349 | 1567 | 1219 | 5.8 | 17.3° | 25.0° | 2 |
+| Horndalsnuten | Voss | 398 | 1462 | 1121 | 5.9 | 21.4° | 31.4° | 3 |
+| Glitregga | Nordfjord | 398 | 1297 | 901 | 4.4 | 18.4° | 21.4° | 2 |
+| Kvamshesten | Sunnfjord | 404 | 1209 | 838 | 4.9 | 22.8° | 27.4° | 3 |
+| Storanosi | Voss | 510 | 1205 | 735 | 4.4 | 18.8° | 26.3° | 2 |
+| Molden | Sogn | 501 | 1120 | 623 | 3.0 | 14.8° | 24.8° | 1 |
+
+### Two tours the ground would not confirm, and were left out
+
+**Togga.** Fri Flyt has two tours on it, «Togga 1205» and «Togga 1340». The
+register has one Togga, and the local top its point sits on measures 1235,5 m on
+DTM1 — 30 m above the one published height and 105 below the other. A tour row
+carries a summit height; there is no reading of this massif that makes one true,
+so it waits for someone who knows which top is which.
+
+**Englafjell.** The description starts at the first farm in Musland and follows a
+ridge over Såta to the summit. The raster says the ground west of Musland rises
+to 900–1000 m and then falls to 350–400 m before Englafjell's own slope — a
+valley the width of the corridor, with no name in the text to pin the crossing
+to. The line was placeable only by guessing which side of it the route takes, and
+a guess is what this pipeline is built not to draw.
+
+### What the checks caught
+
+**Kvamshesten's two published verticals are two different starts.** Fri Flyt
+gives «960 høgdemeter frå Rytnane» and «810 frå parkeringa sørvest for
+Kårstadstølen», and DTM1 separates them cleanly: Rytnane reads 209,1 m and the
+road end 404,5 m, against a 1209 m summit. The signed parking is the second, and
+that is where the corridor starts.
+
+`check_new_corridors.py` also flagged its second leg — «Kårstadstølen ->
+Rabbane: heads 128° away from the summit». The rule is right that the leg points
+away; the guidebook is right that the route goes that way: «Du held no fram aust
+mot Rabbane, og deretter i nordleg retning mot skaret aust for Skardavatnet». A
+bearing rule cannot tell a detour from a dogleg, which is why its output is read
+rather than obeyed.
+
+**Juklavasstinden's 988 m is summit minus trailhead, not cumulative ascent.** The
+described line climbs to the ridge above Omnetjørnene at 1033 m, drops east to
+Møsetjørna at 755 and takes the north ridge to 1361 — about 300 m given back on
+the way up. Routing it with no waypoints at all produces a tidier line, 1149 m of
+gain and 155 m of loss, and it runs 500–800 m north of every landmark in the
+text. The corridor won, and the card carries the measured 1340 m.
+
+**Glitregga starts on a football pitch.** «Randabygd Idrettsanlegg, Ålandsleite
+(400 moh.)» is OSM relation/5871905, and DTM1 answers 397,9 m with the terrain
+class SportIdrettPlass — the rare case where the guidebook figure, the map object
+and the terrain model agree to two metres.
+
+**Lodalskåpa is a spring tour because of a road.** Bødalen is closed through the
+winter and opens in May or June, so the season is set to `mai–jun` rather than
+the winter window the other nine carry. Its 1524 m of routed gain sits 124 m
+above Fri Flyt's 1400, which is the undulation along ten kilometres of valley,
+glacier and ridge.
+
+**Skarsteinsfjellet and Gygrastolen start lower than the guidebook implies.** The
+gate on Dragesetvegen reads 349,1 m against a start the published 1100 m would
+put at 466; the anleggsveg above Ænes reads 90,2 m against 1330 m of stated gain
+from a summit at 1347. Both are the point where a car stops, and both are
+recorded as the difference they are rather than smoothed away.
 
 
 ## Network

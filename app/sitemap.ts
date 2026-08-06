@@ -6,7 +6,7 @@ import { TOURS } from "@/lib/tours";
 /** `/sitemap.xml` — listen Search Console skal fôres med.
  *
  *  Bare sider en utlogget leser faktisk får se står her: forsiden, kartet, de
- *  51 tursidene og de to juridiske sidene. `/min-side`, `/betaling`,
+ *  61 tursidene og de to juridiske sidene. `/min-side`, `/betaling`,
  *  `/logg-inn` og `/admin/*` hører ikke hjemme i et sitemap — de er konto- og
  *  driftssider, og de er merket `noindex` der de defineres.
  *
