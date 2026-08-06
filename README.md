@@ -172,19 +172,21 @@ content and data quality that has to be settled before the site is sold to anyon
   rather than assumed.
 - **The guide text has not been read by anyone who has skied these tours.** Every number in
   `lib/guides.ts` traces to Kartverket's terrain model, the route research or a cited source, and
-  every guide was put through an adversarial fact-check — all 24 of the first round, and then all
-  15 of the second. **The 29 written for the Sunnmøre, Vestland and Oslo rounds have not had that
-  second read yet**: they are checked mechanically by `check_guides.py`, which now reads nynorsk verticals
-  too, and every number in them traces to the route facts or the corridor research — but nobody has
-  yet tried to break them. It caught a descent sold on the wrong side of Kavringtinden, a cliff warning
-  pointing away from the cliff on Storehorn, a rock band on Synshorn that does not exist, and, in
-  the second round, four guides that named the wrong compass direction and a systematic habit of
-  quoting the skin track's own gradient as if it were the slope it crosses. Every number is matched
-  mechanically by `check_guides.py`, and since the elevations were re-read from DTM1 the angles the
-  guides quote are the ones the terrain model gives, and the Oslo round adds a flank sweep of
-  every summit on all eight bearings — which caught a cliff the research had put on the wrong
-  side of Gyranfisen before it reached a guide. That makes the copy sourced, not verified. It still needs a local reader per tour before print. See "The written guides" in
-  `scripts/build-routes/README.md` for what the check does and does not cover.
+  every number is matched mechanically by `check_guides.py` — which reads nynorsk verticals as well
+  as bokmål ones, and comes back clean on all 68 guides.
+  On top of that, most guides have been through an adversarial second read whose only job is to
+  break them: all 24 of the first round, all 15 of the second, and the 7 of the Oslo round. It
+  earns its keep every time. It caught a descent sold on the wrong side of Kavringtinden, a cliff
+  warning pointing away from the cliff on Storehorn, a rock band on Synshorn that does not exist,
+  four guides naming the wrong compass direction in the second round, and, in the Oslo round, a
+  ski centre placed on the wrong side of Høgevarde, a south face on Ranten that is a bench before
+  it is a wall, and a descent radial on Styggemann that was not the line the reader would ski.
+  **The 22 written for the Sunnmøre and Vestland rounds have not had that read yet**: their numbers
+  trace to the route facts and the corridor research, but nobody has tried to break them.
+  That makes the copy sourced, and for most of it verified against the terrain model — but not
+  against anyone's experience of the mountain. It still needs a local reader per tour before print.
+  See "The written guides" in `scripts/build-routes/README.md` for what the check does and does not
+  cover.
 - **`assets/kontur.png` is a placeholder.** It is a generated contour-map graphic standing in for
   real ski-touring photography. `assets/photo.jpg` is an unrelated reference photo from the design
   system and should also go. The contour graphic is now the only invented terrain left on a tour

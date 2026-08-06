@@ -70,6 +70,16 @@
    "what": "Varslingsregionen toppkoordinaten ligger i",
    "figure": "Buskerud sør (region 3041), regiontype B — B-regioner varsles berre ved faregrad 4 og 5",
    "how": "Spurt Varsom/NVE på same endepunkt som appen bruker: api01.nve.no/hydrology/forecast/avalanche/v6.3.2/api/AvalancheWarningByCoordinates/Simple/<lat>/<lng>/1/<dato>/<dato> med toppkoordinaten frå summits.json. Svaret gir RegionName, RegionId og RegionTypeName."
+  },
+  {
+   "what": "Retning og avstand til Norefjell skisenter (Norefjellstua) frå toppen",
+   "figure": "148° (sørøst) og 9,85 km",
+   "how": "Peiling og haversine frå toppkoordinaten i summits.json til parkeringa way/257732509 (60.22187/9.56066). Anlegget er ikkje «rett nedanfor» toppen mot aust."
+  },
+  {
+   "what": "Kvar det brattaste 30-metersvindauget på den routede linja ligg",
+   "figure": "19,5° mellom 1179 og 1195 moh, på peiling 221 frå toppen og 1,99 km ut, altså 1990 m langs bakken",
+   "how": "router.steepest_span over routes.json-linja, og peiling/haversine frå toppkoordinaten i summits.json til det fyrste punktet i vindauget."
   }
  ],
  "grafjell": [
@@ -82,6 +92,11 @@
    "what": "Varslingsregionen toppkoordinaten ligger i",
    "figure": "Buskerud sør (region 3041), regiontype B — B-regioner varsles berre ved faregrad 4 og 5",
    "how": "Spurt Varsom/NVE på same endepunkt som appen bruker: api01.nve.no/hydrology/forecast/avalanche/v6.3.2/api/AvalancheWarningByCoordinates/Simple/<lat>/<lng>/1/<dato>/<dato> med toppkoordinaten frå summits.json. Svaret gir RegionName, RegionId og RegionTypeName."
+  },
+  {
+   "what": "Kvar det brattaste 30-metersvindauget på den routede linja ligg",
+   "figure": "20,7° mellom 1275 og 1292 moh, på peiling 305 frå toppen og 1,09 km ut, altså 1090 m langs bakken",
+   "how": "router.steepest_span over routes.json-linja, og peiling/haversine frå toppkoordinaten i summits.json til det fyrste punktet i vindauget."
   }
  ],
  "ranten": [
@@ -104,6 +119,16 @@
    "what": "Varslingsregionen toppkoordinaten ligger i",
    "figure": "Buskerud sør (region 3041), regiontype B — B-regioner varsles berre ved faregrad 4 og 5",
    "how": "Spurt Varsom/NVE på same endepunkt som appen bruker: api01.nve.no/hydrology/forecast/avalanche/v6.3.2/api/AvalancheWarningByCoordinates/Simple/<lat>/<lng>/1/<dato>/<dato> med toppkoordinaten frå summits.json. Svaret gir RegionName, RegionId og RegionTypeName."
+  },
+  {
+   "what": "Punktprofil rett sørover og sørsørvest frå varden, kvar 30. meter",
+   "figure": "Peiling 180: 1415,6 – 1399,2 – 1393,9 – 1395,5 – 1363,1 – 1321,0 moh ut til 150 m, altså 28,6° dei fyrste 30 m og så ei skulder på 10,0 og −3,1° før bruddet på 47,2 og 54,5°. Peiling 195: 1415,6 – 1400,9 – 1396,1 – 1402,0 – 1396,3 – 1344,3 moh, ei skulder som stig att på 90 m (−11,1°) og eit brudd på 60,0° mellom 120 og 150 m ut",
+   "how": "ws.geonorge.no/hoydedata punkt-API, ikkje rasteret, kvar 30. meter ut frå 60.30259/9.41922."
+  },
+  {
+   "what": "Kvar det brattaste 30-metersvindauget på den routede linja ligg",
+   "figure": "27,1° mellom 1322 og 1338 moh, på peiling 93 frå toppen og 0,34 km ut, altså 340 m langs bakken",
+   "how": "router.steepest_span over routes.json-linja, og peiling/haversine frå toppkoordinaten i summits.json til det fyrste punktet i vindauget."
   }
  ],
  "store-ble": [
@@ -126,6 +151,11 @@
    "what": "Varslingsregionen toppkoordinaten ligger i",
    "figure": "Telemark sør (region 3039), regiontype B — B-regioner varsles berre ved faregrad 4 og 5",
    "how": "Spurt Varsom/NVE på same endepunkt som appen bruker: api01.nve.no/hydrology/forecast/avalanche/v6.3.2/api/AvalancheWarningByCoordinates/Simple/<lat>/<lng>/1/<dato>/<dato> med toppkoordinaten frå summits.json. Svaret gir RegionName, RegionId og RegionTypeName."
+  },
+  {
+   "what": "Kvar det brattaste 30-metersvindauget på den routede linja ligg",
+   "figure": "35,2° mellom 1290 og 1314 moh, på peiling 200 frå toppen og 0,3 km ut, altså 300 m langs bakken",
+   "how": "router.steepest_span over routes.json-linja, og peiling/haversine frå toppkoordinaten i summits.json til det fyrste punktet i vindauget."
   }
  ],
  "surloytenuten": [
@@ -148,6 +178,11 @@
    "what": "Varslingsregionen toppkoordinaten ligger i",
    "figure": "Telemark sør (region 3039), regiontype B — B-regioner varsles berre ved faregrad 4 og 5",
    "how": "Spurt Varsom/NVE på same endepunkt som appen bruker: api01.nve.no/hydrology/forecast/avalanche/v6.3.2/api/AvalancheWarningByCoordinates/Simple/<lat>/<lng>/1/<dato>/<dato> med toppkoordinaten frå summits.json. Svaret gir RegionName, RegionId og RegionTypeName."
+  },
+  {
+   "what": "Kvar det brattaste 30-metersvindauget på den routede linja ligg",
+   "figure": "24,9° mellom 994 og 1014 moh, på peiling 17 frå toppen og 1,64 km ut, altså 1640 m langs bakken",
+   "how": "router.steepest_span over routes.json-linja, og peiling/haversine frå toppkoordinaten i summits.json til det fyrste punktet i vindauget."
   }
  ],
  "gyranfisen": [
@@ -165,6 +200,16 @@
    "what": "Varslingsregionen toppkoordinaten ligger i",
    "figure": "Buskerud sør (region 3041), regiontype B — B-regioner varsles berre ved faregrad 4 og 5",
    "how": "Spurt Varsom/NVE på same endepunkt som appen bruker: api01.nve.no/hydrology/forecast/avalanche/v6.3.2/api/AvalancheWarningByCoordinates/Simple/<lat>/<lng>/1/<dato>/<dato> med toppkoordinaten frå summits.json. Svaret gir RegionName, RegionId og RegionTypeName."
+  },
+  {
+   "what": "Retning og avstand til Treknatten frå Gyranfisen",
+   "figure": "340° (nord-nordvest) og 4,20 km",
+   "how": "Peiling og haversine mellom toppkoordinatane i summits.json (60.47203/9.89027) og SSR-punktet for Treknatten (60.50753/9.86396). Rettar ein forskingsnotat som sa «1,3 km nordaust»."
+  },
+  {
+   "what": "Kvar det brattaste 30-metersvindauget på den routede linja ligg",
+   "figure": "24,9° mellom 767 og 788 moh, på peiling 130 frå toppen og 3,6 km ut, altså 3600 m langs bakken",
+   "how": "router.steepest_span over routes.json-linja, og peiling/haversine frå toppkoordinaten i summits.json til det fyrste punktet i vindauget."
   }
  ],
  "styggemann": [
@@ -172,11 +217,6 @@
    "what": "Austsida rett under varden",
    "figure": "48,5° i brattaste 60-metersvindu 30–90 m ut (Ø), 45,3° 20–80 m ut (SØ) og 43,9° 40–100 m ut (NØ)",
    "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
-  },
-  {
-   "what": "Oppstigninga frå Sørmyrseter, sørsida",
-   "figure": "29,8° (peiling 190) og 34,4° (peiling 200) i brattaste 60-metersvindu, 140–220 m under toppen; 14–16° i snitt over 400 m",
-   "how": "flank_probe.py 59.52064 9.64361 170 190 200 210 --out 400 --step 10. Sørmyrseter ligg på peiling 191 frå toppen."
   },
   {
    "what": "Sørsida frå varden i åtte-peilings-sveipet",
@@ -192,6 +232,16 @@
    "what": "Varslingsregionen toppkoordinaten ligger i",
    "figure": "Buskerud sør (region 3041), regiontype B — B-regioner varsles berre ved faregrad 4 og 5",
    "how": "Spurt Varsom/NVE på same endepunkt som appen bruker: api01.nve.no/hydrology/forecast/avalanche/v6.3.2/api/AvalancheWarningByCoordinates/Simple/<lat>/<lng>/1/<dato>/<dato> med toppkoordinaten frå summits.json. Svaret gir RegionName, RegionId og RegionTypeName."
+  },
+  {
+   "what": "Peiling og fallinje frå varden til Sørmyrseter",
+   "figure": "172° og 1,90 km. Den radialen måler 29,1° i brattaste 60-metersvindu 70–130 m ut, med eit 35,1° steg over 30 m mellom 120 og 150 m ut. Nabopeilingane skil seg mykje: 165° gir 36,8° 40–100 m ut, 180° gir 25,1° 130–190 m ut",
+   "how": "flank_probe.py 59.52064 9.64361 165 172 180 --out 400 --step 10, og punktprofil på peiling 172 henta frå ws.geonorge.no/hoydedata punkt-API kvar 30. meter."
+  },
+  {
+   "what": "Kvar det brattaste 30-metersvindauget på den routede linja ligg",
+   "figure": "23,2° mellom 700 og 719 moh, på peiling 155 frå toppen og 0,52 km ut, altså 520 m langs bakken",
+   "how": "router.steepest_span over routes.json-linja, og peiling/haversine frå toppkoordinaten i summits.json til det fyrste punktet i vindauget."
   }
  ]
 }

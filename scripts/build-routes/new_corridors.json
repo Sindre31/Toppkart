@@ -2680,7 +2680,8 @@
    "Svarttjernskollen leser 1054,3 moh mot ut.nos oppgitte 1054 — kontrollen på at korridoren følger den beskrevne ryggen og ikke Fjelldalen i vest.",
    "Venekollen ligger på 982,4 moh og passeres «på høyre hånd» i turbeskrivelsen — waypointet er derfor lagt 300 m vest for toppen, på 948,8 moh, der ruta faktisk går. Med pinnen på selve toppen ga korridoren 694 høydemeter og 227 m tilbake; slik den står nå gir den 668 og 202. Tilbakefallet er ekte uansett variant: mellom Svarttjernskollen og Gyranfisen ligger søkket mot Fjelldalen og Steintjern, og DTM1 leser 866 moh midtveis mot 1054 og 1127 på de to sidene.",
    "Målt linje: 666 høydemeter, 5,4 km, bratteste band 15,4° og bratteste 30 m 24,9°, og 200 m gitt tilbake. Aspektet er satt til Ø etter målingen framfor researchens SØ.",
-   "Refutert av eiga måling: researchen skreiv at «vestsida av Gyranfisen stuper mot Vidalen». Det gjer ho ikkje. flank_probe.py gir 5,7° i snitt mot vest over 1500 m og eit brattaste 60-metersvindu på 20,9°. Stupa i ut.nos tekst høyrer til Bukollen, Gråfjell og Storrustefjell — fjella på andre sida av Vidalen, som ein ser frå toppen. Setninga er retta i hazardNotes før ho rakk å hamne i ein guide."
+   "Refutert av eiga måling: researchen skreiv at «vestsida av Gyranfisen stuper mot Vidalen». Det gjer ho ikkje. flank_probe.py gir 5,7° i snitt mot vest over 1500 m og eit brattaste 60-metersvindu på 20,9°. Stupa i ut.nos tekst høyrer til Bukollen, Gråfjell og Storrustefjell — fjella på andre sida av Vidalen, som ein ser frå toppen. Setninga er retta i hazardNotes før ho rakk å hamne i ein guide.",
+   "Rettet av den fiendtlige andrelesinga: notatet sa at Treknatten ligger «1,3 km nordøst» for Gyranfisen. Peiling og haversine mellom de to registerpunktene gir 4,20 km på peiling 340 — nord-nordvest. Guiden hadde arvet retningen før dette ble målt."
   ],
   "rejectReason": "",
   "corridor": {
@@ -2723,7 +2724,7 @@
     "http://www.vikerfjell.com/vikerfjell-skiloyper/"
    ],
    "confidence": "medium",
-   "notes": "Ut.no 1111944 gir den detaljerte rutekjeden over Svarttjernskollen (1054 moh), Venekollen, Den store steinen og opp mot Gyranfisen (1127 moh) — den er skrevet for barmark og starter fra Sandviksetra. Vinterbruken er dokumentert av Vikerfjell Skiløyper, som kjører egne løyper til toppen av Gyranfisen og Treknatten, og av Vikersetra.com, som beskriver toppturen fra Vikerkoia med parkering. Korridoren starter derfor ved Vikerkoia. Den store steinen er en flyttblokk uten navn i registeret og er utelatt fra waypointene; Treknatten (1097,7 moh) ligger 1,3 km nordøst for toppen og er den andre toppen løypa går til."
+   "notes": "Ut.no 1111944 gir den detaljerte rutekjeden over Svarttjernskollen (1054 moh), Venekollen, Den store steinen og opp mot Gyranfisen (1127 moh) — den er skrevet for barmark og starter fra Sandviksetra. Vinterbruken er dokumentert av Vikerfjell Skiløyper, som kjører egne løyper til toppen av Gyranfisen og Treknatten, og av Vikersetra.com, som beskriver toppturen fra Vikerkoia med parkering. Korridoren starter derfor ved Vikerkoia. Den store steinen er en flyttblokk uten navn i registeret og er utelatt fra waypointene; Treknatten (1097,7 moh) ligger 4,20 km nord-nordvest for toppen, på peiling 340, og er den andre toppen løypa går til. Et tidligere notat sa 1,3 km nordøst; begge deler var feil."
   }
  },
  {
