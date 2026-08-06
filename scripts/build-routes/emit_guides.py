@@ -252,8 +252,18 @@ def emit_seed(guides, order):
     """Rebuild the editorial block at the end of seed.sql."""
     path = os.path.join(REPO, "supabase", "seed.sql")
     src = open(path).read()
-    marker = "-- ============================================================================\n-- Kirketaket"
-    if marker in src:
+    banner = "-- ============================================================================\n"
+    # Cut the previously generated block off before writing a new one. The old
+    # marker was the first guide's name, so it stopped matching the moment a tour
+    # sorted ahead of Kirketaket — and the fallback (cut at the first `update`)
+    # left the generated header standing, so every re-emit stacked another copy
+    # of it. Cut on the header itself instead; it is the one line this function
+    # is guaranteed to have written.
+    generated = "-- Written guides — all"
+    marker = banner + "-- Kirketaket"
+    if generated in src:
+        src = src[: src.rindex(banner, 0, src.index(generated))]
+    elif marker in src:
         src = src[: src.index(marker)]
     else:
         src = src[: src.index("update public.tk_tours set")]

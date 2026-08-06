@@ -923,6 +923,98 @@ states both — the card's SØ and the measured 182 — and says the crest is he
 its west side, away from the cornices the research recorded. A tour card and a
 guide that disagree silently is worse than one that says which is which.
 
+## The trailheads, checked against the ground
+
+The rounds above audited where the line goes. This one audited where the day
+starts: all 77 trailheads across the 68 published tours, and every claim the copy
+makes about them — road name and number, whether there is a car park, whether it
+charges, whether the road is even open in the season the tour is sold for.
+
+That last one is the reason the pass was worth running. A wrong steepness figure
+is a bad guide; a start point on a road that is gated until Easter is a wasted
+drive, and the reader has no way to tell from the page.
+
+Method, in the order it was run:
+
+- Every trailhead coordinate reverse-geocoded against **Nominatim**, then queried
+  against **Overpass** in a 400 m radius for roads (with `ref`), `amenity=parking`
+  (with `fee`), barriers and gates, and mountain huts.
+- Every place name and road name re-read from **Kartverket's place-name register**
+  (`api.kartverket.no/stedsnavn/v1/punkt`), which is what settles a spelling.
+- Everything the copy asserts that a map cannot answer — opening dates, tolls,
+  parking charges — read back to the primary source: the county's own road
+  notices, the national park authority, the toll road's own site, the tour
+  descriptions the corridor research already cites.
+
+One trap is worth writing down because it produced a false alarm before it was
+caught: Overpass returns a way's **centre**, and a fylkesveg is a long way. Ranking
+roads by distance-to-centre put Lenangsveien 900 m from a trailhead it runs past
+at 150 m, which reads exactly like «the guide names a road that isn't there».
+Road presence has to be asked with a tight `around` and read as a yes/no, not
+sorted by a centroid.
+
+**Eleven of the 68 needed a change.** What the register and the car-park data
+confirmed is the larger half of the result: `Fv7922` at Sandneset, `fv7768` at
+Slettneset, `fv862` at both Senja starts, `fv655` in Norangsdalen *and*
+Nibbedalen, `fv51` at Bygdin and Bessheim, `fv5910` at Vollane, `fv2920` on
+Lykkjavegen, `fv3430` at Stavsro, `fv5723` at Tjugen — every road number in the
+copy is the current one. So are the names: Kartverket has **Slettneset**,
+**Sandneset**, **Hornslie**, **Medfjordbotnvatnan** and **Langefonn turisthytte**
+exactly as written, and Fausaskiftet really is where Fausavegen leaves
+Nysætervegen. The Reinheim start sits 2 m from the hut. The mapped car parks at
+Spranget, Hellerøra, Melderskin, Korsmyra, Hatlestad, Helgatun, Svartevatnet and
+Ålandsleite are all at the trailhead; Skårasalen's start is a `barrier=toll_booth`
+at 0 m and Skarsteinsfjellet's a `barrier=gate` at 0 m, which is what both guides
+say. Rørnestinden and Kavringtinden share Eidebakken in two independent
+descriptions, and Kvamshesten's road really is signed to «Storehesten» — the local
+name for the mountain the guide calls Kvamshesten, which the copy now says out
+loud instead of leaving as an apparent mismatch.
+
+The changes, by kind:
+
+- **Two started on a winter-closed pass without saying so.** Steindalsnosi and
+  Fanaråken both begin on Sognefjellsvegen, which closes over the high ground and
+  is plowed open around Easter, with the pass night-closed 20–08 for the first
+  weeks after. Neither guide mentioned it, and both were still calling the road
+  `rv55` — it has been **fv55** since the 2020 road reform. Both now carry the
+  road number and the closure, because on these two tours the road *is* the
+  season.
+- **Four were silent about a charge.** Hauklandstranda (Himmeltindan) charges
+  year round and is time-limited by the hour, which matters on a 4–6 hour tour;
+  Tjugen (Skåla), Trefta (Skogshorn) and the toll road up to Hornslie (Storehorn)
+  all charge too. All four are tagged `fee=yes` in OSM and confirmed against the
+  operators' own descriptions.
+- **Three named the wrong thing.** Melshornet's Krøvelseidet road is fv5894
+  Vikebygdvegen and runs Volda–**Åmdalen**, not Volda–Ørsta. Storehorn's road ends
+  at Hornslie as **Leinestølvegen**; Torsetstølvegen is the toll road you turn off
+  onto to get there, so the guide now describes the drive instead of naming the
+  wrong road. Snøheimvegen's cycling rule is a **window**, 1 June–15 July, not a
+  date to wait out — and e-bikes are banned all year, which the guide had not said
+  at all.
+- **Two asserted more than the sources support.** Storgalten's «there is no proper
+  car park here» is contradicted by a documented parking on the north side of
+  Galtelva, and no OSM parking is not evidence of none; it now describes what is
+  there — unsigned space by the river mouth and the verge — without the negative
+  claim. Synshorn quoted a flat 80 kroner where sources give both 60 and 80; it
+  now says the plot charges and to read the sign.
+- **One was internally inconsistent.** Kvamshesten cited Fri Flyt's 960 m from
+  Rytnane «nede på 209 moh», and 209 + 960 does not reach a 1209 m summit. The
+  disputed elevation is simply gone; the two verticals and where each starts are
+  what the sentence was for.
+
+Four route labels changed with them, because the route picker on `/kart` shows the
+trailhead string and nothing else: `skytebanen` → `Tromsdalen skytebane` (its
+sibling route already said that), `Lyngseidet` → `Eidebakken ved Lyngseidet` on
+both Lyngen tours, since the guides send you to Eidebakken and «Lyngseidet» is a
+village, and `Tempelsetra kafè` → `Tempelseter` so that the three tours leaving
+the same car park name it the same way.
+
+One bug fell out of re-running the emitter. `emit_seed` truncated the old block at
+`-- Kirketaket`, which stopped matching the moment a tour sorted ahead of
+Kirketaket; the fallback cut at the first `update` and left the generated banner
+standing, so **every re-emit since had stacked another copy of it — 34 of them**
+in the committed `seed.sql`. It now cuts on the banner itself.
+
 ## Network
 
 Everything is public and unauthenticated:
