@@ -170,6 +170,13 @@ content and data quality that has to be settled before the site is sold to anyon
   5 — so on most winter days the avalanche panel on those tours has no assessment to show, because
   none was made. Each of the seven guides says so in its own words, and the region was queried
   rather than assumed.
+- **The tour cards are checked, the guides are checked, the geometry is checked — by machine.**
+  `check_tours.py`, `check_guides.py` and `check_routes.py` come back clean on all 68 tours: every
+  card height is DTM1 at the resolved summit, every vertical is its route's cumulative ascent to
+  within 10 m, every number in the prose traces to a measurement, and `supabase/seed.sql` holds the
+  same figures as `lib/tours.ts`. That last one was not true until it was checked: the seed had
+  missed the summit corrections for Rørnestinden, Rombakstøtta and Himmeltindan, so production and
+  demo mode would have shown different heights for three tours.
 - **The guide text has not been read by anyone who has skied these tours.** Every number in
   `lib/guides.ts` traces to Kartverket's terrain model, the route research or a cited source, and
   every number is matched mechanically by `check_guides.py` — which reads nynorsk verticals as well

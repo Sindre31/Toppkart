@@ -552,7 +552,7 @@
  "storehorn": {
   "name": "Storehorn",
   "region": "Hemsedal",
-  "summitM": 1478,
+  "summitM": 1482,
   "verticalM": 470,
   "duration": "3–4 t",
   "grade": 2,
@@ -604,6 +604,17 @@
   "season": "mars–mai",
   "hasGuide": true
  },
+ "gyranfisen": {
+  "name": "Gyranfisen",
+  "region": "Vikerfjell",
+  "summitM": 1127,
+  "verticalM": 670,
+  "duration": "3–5 t",
+  "grade": 2,
+  "aspect": "Ø",
+  "season": "jan–apr",
+  "hasGuide": true
+ },
  "oksen": {
   "name": "Oksen",
   "region": "Hardanger",
@@ -615,6 +626,17 @@
   "season": "jan–apr",
   "hasGuide": true
  },
+ "grafjell": {
+  "name": "Gråfjell",
+  "region": "Norefjell",
+  "summitM": 1466,
+  "verticalM": 580,
+  "duration": "4–6 t",
+  "grade": 2,
+  "aspect": "S",
+  "season": "des–mars",
+  "hasGuide": true
+ },
  "vesoldo": {
   "name": "Vesoldo",
   "region": "Hardanger",
@@ -624,6 +646,28 @@
   "grade": 2,
   "aspect": "SV",
   "season": "feb–apr",
+  "hasGuide": true
+ },
+ "ranten": {
+  "name": "Ranten",
+  "region": "Norefjell",
+  "summitM": 1416,
+  "verticalM": 530,
+  "duration": "3–5 t",
+  "grade": 2,
+  "aspect": "S",
+  "season": "jan–apr",
+  "hasGuide": true
+ },
+ "hogevarde": {
+  "name": "Høgevarde",
+  "region": "Norefjell",
+  "summitM": 1461,
+  "verticalM": 600,
+  "duration": "3–5 t",
+  "grade": 1,
+  "aspect": "SV",
+  "season": "jan–apr",
   "hasGuide": true
  },
  "gygrastolen": {
@@ -670,50 +714,6 @@
   "season": "des–mai",
   "hasGuide": true
  },
- "gyranfisen": {
-  "name": "Gyranfisen",
-  "region": "Vikerfjell",
-  "summitM": 1127,
-  "verticalM": 670,
-  "duration": "3–5 t",
-  "grade": 2,
-  "aspect": "Ø",
-  "season": "jan–apr",
-  "hasGuide": false
- },
- "grafjell": {
-  "name": "Gråfjell",
-  "region": "Norefjell",
-  "summitM": 1466,
-  "verticalM": 580,
-  "duration": "4–6 t",
-  "grade": 2,
-  "aspect": "S",
-  "season": "des–mars",
-  "hasGuide": false
- },
- "ranten": {
-  "name": "Ranten",
-  "region": "Norefjell",
-  "summitM": 1416,
-  "verticalM": 530,
-  "duration": "3–5 t",
-  "grade": 2,
-  "aspect": "S",
-  "season": "jan–apr",
-  "hasGuide": false
- },
- "hogevarde": {
-  "name": "Høgevarde",
-  "region": "Norefjell",
-  "summitM": 1461,
-  "verticalM": 600,
-  "duration": "3–5 t",
-  "grade": 1,
-  "aspect": "SV",
-  "season": "jan–apr",
-  "hasGuide": false
- },
  "store-ble": {
   "name": "Store Ble",
   "region": "Blefjell",
@@ -723,7 +723,7 @@
   "grade": 2,
   "aspect": "SØ",
   "season": "jan–apr",
-  "hasGuide": false
+  "hasGuide": true
  },
  "surloytenuten": {
   "name": "Surløytenuten",
@@ -734,7 +734,7 @@
   "grade": 2,
   "aspect": "S",
   "season": "jan–apr",
-  "hasGuide": false
+  "hasGuide": true
  },
  "styggemann": {
   "name": "Styggemann",
@@ -745,6 +745,6 @@
   "grade": 2,
   "aspect": "SV",
   "season": "jan–mars",
-  "hasGuide": false
+  "hasGuide": true
  }
 }

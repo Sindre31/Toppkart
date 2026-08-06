@@ -24,15 +24,15 @@ values
   ('storgalten',      'Storgalten',      'Lyngen',     69.88543, 20.25257, 1219, 1219, '5–7 t', 3, 'NV', 'feb–mai', 'Fjord-til-topp i ytre Lyngen: 1219 høydemeter rett opp fra havnivå.', true),
   ('store-blamann',   'Store Blåmann',   'Troms',      69.73502, 18.59147, 1044, 1040, '4–6 t', 3, 'S',  'feb–mai', 'Kvaløyas brattest profilerte klassiker — krever stabile forhold og god planlegging.', true),
   ('tromsdalstinden', 'Tromsdalstinden', 'Troms',      69.6071, 19.14585, 1238, 1200, '5–7 t', 2, 'V',  'des–mai', 'Tromsøs signaturtopp: lang, jevn oppstigning fra Tromsdalen med storslått utsikt mot Lyngen.', true),
-  ('rornestinden',    'Rørnestinden',    'Lyngen',     69.57329, 20.11187, 1041, 1000, '4–6 t', 2, 'V',  'jan–mai', 'Den vennligste inngangen til Lyngsalpene, med slak rygg og romslig nedkjøring.', true),
+  ('rornestinden',    'Rørnestinden',    'Lyngen',     69.57329, 20.11187, 1030, 1000, '4–6 t', 2, 'V',  'jan–mai', 'Den vennligste inngangen til Lyngsalpene, med slak rygg og romslig nedkjøring.', true),
   ('hamperokken', 'Hamperokken', 'Troms', 69.5621, 19.35872, 1397, 1400, '5–7 t', 4, 'NV', 'feb–mai', '1400 høydemeter fra Fv91, men skiene settes igjen på Middagsaksla 1076 moh – siste 1,4 km er eksponert rygg til fots.', true),
   ('kavringtinden',   'Kavringtinden',   'Lyngen',     69.54704, 20.12428, 1289, 1250, '5–7 t', 3, 'N',  'mar–mai', 'Indre Lyngen-perle med nordvendt snø som holder seg langt ut i mai.', true),
   ('hesten-segla',    'Hesten (Segla)',  'Senja',      69.51388, 17.58462,  556,  510, '2–4 t', 2, 'S',  'jan–apr', 'Kort tur, stort postkort: nedkjøring med Segla i fanget og havet under.', true),
   ('keipen', 'Keipen', 'Senja', 69.4953, 17.72324, 938, 840, '3–5 t', 3, 'S', 'jan–mai', '840 høydemeter fra Medfjordbotnvatnan gjennom skåla sør for toppen; ruta skrår opp, mens fallinja ved sida av måler 38–52 grader.', true),
   ('breitinden', 'Breitinden', 'Senja', 69.45168, 17.65623, 1007, 1030, '4–6 t', 4, 'SV', 'jan–apr', '1030 høydemeter fra Svarthola via Svartholvatnet og Breitindvatnet; de siste 244 er klyving på sørvestryggen.', true),
-  ('rombakstotta',    'Rombakstøtta',    'Narvik',     68.43312, 17.58324, 1243, 1100, '5–7 t', 3, 'SV', 'feb–mai', 'Narviks spisse landemerke — variert oppstigning og fin, vedvarende nedkjøring.', true),
+  ('rombakstotta',    'Rombakstøtta',    'Narvik',     68.43312, 17.58324, 1231, 1100, '5–7 t', 3, 'SV', 'feb–mai', 'Narviks spisse landemerke — variert oppstigning og fin, vedvarende nedkjøring.', true),
   ('geitgaljen', 'Geitgaljen', 'Lofoten', 68.34434, 14.81302, 1085, 1070, '4–6 t', 4, 'NV', 'feb–apr', '1071 høydemeter fra Liland opp Lilandsdalen; renna fra 250 til 360 moh er 35 grader, og toppen krever stegjern.', true),
-  ('himmeltindan',    'Himmeltindan',    'Lofoten',    68.22041, 13.57328,  962,  960, '4–6 t', 3, 'Ø',  'feb–apr', 'Vestvågøys høyeste, med alpint preg og linjer rett mot Nordishavet.', true),
+  ('himmeltindan',    'Himmeltindan',    'Lofoten',    68.22101, 13.57307,  956,  980, '4–6 t', 3, 'Ø',  'feb–apr', 'Vestvågøys høyeste, med alpint preg og linjer rett mot Nordishavet.', true),
   ('stornappstinden', 'Stornappstinden', 'Lofoten',    68.1441, 13.41493,  740,  680, '3–5 t', 2, 'N',  'jan–apr', 'Lofot-klassiker i overkommelig format — mye fjell for høydemeterne.', true),
   ('kirketaket',      'Kirketaket',      'Romsdal',    62.61158,  7.90672, 1439, 1270, '5–6 t', 2, 'SV', 'des–mai', 'Norges kanskje mest populære topptur: bred rygg, trygge linjevalg, lang sesong.', true),
   ('auskjeret', 'Auskjeret', 'Sunnmøre', 62.37746, 6.77458, 1203, 870, '3–5 t', 2, 'SØ', 'des–apr', '870 høgdemeter frå Fausaskiftet i jamn stigning nordover — heilårsopen veg og moderate hellingar.', true),
@@ -71,7 +71,7 @@ values
   ('synshorn',        'Synshorn',        'Valdres',    61.34011,  8.79727, 1475,  420, '2–3 t', 1, 'Ø',  'feb–mai', 'Kort og trygg tur fra Valdresflye — perfekt førstetur og værvindu-tur.', true),
   ('bitihorn',        'Bitihorn',        'Valdres',    61.29435,  8.79947, 1607,  550, '2–4 t', 1, 'S',  'feb–mai', 'Markert horn med enkel normalrute og fin utsikt over Bygdin.', true),
   ('skogshorn', 'Skogshorn', 'Hemsedal', 60.88148, 8.69482, 1729, 840, '3–5 t', 2, 'Ø', 'feb–mai', '836 høgdemeter frå Trefta opp den breie austryggen; brattaste måling er 28,5 grader.', true),
-  ('storehorn',       'Storehorn',       'Hemsedal',   60.81506,  8.59566, 1478,  470, '3–4 t', 2, 'Ø',  'des–apr', 'Hemsedals husfjell for topptur — kort vei fra bilen, mange linjevalg.', true),
+  ('storehorn',       'Storehorn',       'Hemsedal',   60.81506,  8.59566, 1482,  470, '3–4 t', 2, 'Ø',  'des–apr', 'Hemsedals husfjell for topptur — kort vei fra bilen, mange linjevalg.', true),
   ('storanosi', 'Storanosi', 'Voss', 60.7663, 6.62341, 1205, 740, '3–5 t', 2, 'NØ', 'jan–apr', '740 høgdemeter frå Ljosno gjennom open bjørkeskog og ut på platået over Brandsetdalen.', true),
   ('lonahorgi', 'Lønahorgi', 'Voss', 60.69383, 6.41489, 1412, 1300, '6–8 t', 2, 'NØ', 'feb–april', '1300 høgdemeter frå Høyland via Bergsstølen og Breiming, med dei siste 107 opp nordryggen frå punkt 1305.', true),
   ('horndalsnuten', 'Horndalsnuten', 'Voss', 60.64218, 6.67655, 1462, 1120, '5–7 t', 3, 'N', 'jan–apr', '1120 høgdemeter frå Skiple gjennom Horndalsbotnen, med den bratte kneika frå skuldra til slutt.', true),
@@ -1652,6 +1652,33 @@ Vanlegaste feil: å gå ut på nordsida av skarvet for å finne ei betre linje n
 where slug = 'folarskardnuten';
 
 update public.tk_tours set
+  description_up   = 'Start på parkeringa ved Vikerkoia på Vikerseterveien, 661 moh — Kartverket klasser punktet som myr, og det er en presis beskrivelse av Vikerfjell. De første høydemeterne er slake, 5,1 grader fra 600 til 700 moh, før skogen tar over ved 698 moh.
+
+Stigningen opp mot Svarttjernskollen er den bratteste på turen: 15,4 grader fra 700 til 800 moh over 360 meter grunn, med bratteste sammenhengende parti 24,9 grader mellom 767 og 788 moh. Ved 916 moh er du fortsatt i skog, og på 1050 moh er du ute i åpent terreng.
+
+Svarttjernskollen ligger på 1054 moh, og ut.no oppgir 1054 — det er kontrollen på at du er på rett rygg. Herfra ser du Vikerfjellplatået i sør og Gyranfisen i vest. Så går det ned igjen: linja passerer 1002, 961, 904 og 922 moh, og Kartverket klasser flere av dem som skog. Du er under tregrensa på nytt, midt i turen.
+
+Venekollen, 982 moh, passeres på høyre hånd, og waypointet i korridoren ligger vest for toppen på 949 moh, der ruta faktisk går. Fra bunnen av søkket stiger det jevnt igjen — 4,1 grader fra 1000 til 1100 moh over 1207 meter grunn, og 8,0 grader det siste bandet — til varden på 1127 moh. Treknatten, 1098 moh, ligger 4,20 km nord-nordvest, på peiling 340.',
+  description_down = 'Ned samme vegen, sørøstover, og du skal opp igjen underveis. Det er turens egenart: 200 høydemeter gitt tilbake på veg opp betyr 200 høydemeter å klatre på veg ned, og det er verdt å ha spart krefter til dem.
+
+Fjellet er slakt i alle retninger. Radialmålinger fra varden gir 4,8 til 12,6 grader i snitt over 500 meter, og bratteste 60-metersvindu på hele toppen er 29,9 grader mot nordaust, 410 til 470 meter ut. Vestsida — den mot Vidalen — måler 5,7 grader i snitt helt ut til halvannen kilometer, med bratteste vindu 20,9 grader. Stupene du ser den vegen tilhører Bukollen, Gråfjell og Storrustefjell på andre sida av dalen, ikke fjellet du står på.',
+  avalanche_notes  = jsonb_build_array(
+    jsonb_build_object(
+      'title', 'Ruta',
+      'body',  'Slakt terreng med én kneik: 15,4 grader fra 700 til 800 moh over 360 meter grunn, og bratteste sammenhengende parti 24,9 grader mellom 767 og 788 moh. De andre bandene måler 2,3 til 10,5 grader i snitt. Skredfaren er lav; det som kan gå galt er lengden, søkket og at siste stykket opp er umerket.'
+    ),
+    jsonb_build_object(
+      'title', 'Terrenget utenfor',
+      'body',  'Ingen retning fra varden måler over 12,6 grader i snitt de første 500 meterne. Ryggen fra Svarttjernskollen er avblåst i vind, og søkket mot Fjelldalen og Steintjern må krysses begge veger. Løypene til Gyranfisen og Treknatten blir kjørt bare når forholdene tillater det og prioriteres i vinter- og påskeferien — utenom det er ruta usporet myr og fjell. Deler av området ligger i Vikerfjell naturreservat.'
+    ),
+    jsonb_build_object(
+      'title', 'Før du går',
+      'body',  'Sjekk dagens skredvarsel for Buskerud sør på varsom.no. Buskerud sør er en B-region: den varslet bare ved faregrad 4 og 5, så de fleste vinterdager finnes det ingen vurdering å lese, og en tom side betyr ikke et trygt fjell. Ta med sender/mottaker, søkestang og spade.'
+    )
+  )
+where slug = 'gyranfisen';
+
+update public.tk_tours set
   description_up   = 'Fra avgiftsparkeringen øverst på Tjoflotvegen, 276 moh, følger du traktorveien et kort stykke før stien tar over. Regn med å bære ski gjennom skogen: skoggrensa ligger på 538 moh, og de fleste spenner dem først på oppe ved Vindhovden.
 
 Skogen er det bratteste partiet før flanken. Fallinja mellom 335 og 405 moh måler 30° i snitt og tar 51° over de bratteste seksti meterne; stien tar den i svinger — ingen hundremeter i skogen holder mer enn 21° — og topper på 29° rundt 490 moh. Følg svingene — det finnes ingen snarvei her som lønner seg.
@@ -1681,6 +1708,33 @@ Under Vindhovden er kjøringen over. Skoggrensa på 538 moh er der skiene går p
 where slug = 'oksen';
 
 update public.tk_tours set
+  description_up   = 'Start bak Tempelsetra kafè, 910 moh, og følg løypa mot Istjenn. Skogen slipper taket allerede ved 937 moh, og på 950 moh går ruta ut på Istjenn — Kartverket klasser punktet som innsjø, og det er det første av to vann ruta går ut på isen på — Donkelitjenn er det andre.
+
+Videre nordover forbi Vesletjenn på 1095 moh. Dette er den flate delen: bandet fra 900 til 1000 moh måler 2,2 grader over 2472 meter grunn, 1000 til 1100 måler 3,6 over 1564, og 1100 til 1200 bare 2,9 over 1902 meter. Fem kilometer går med før du står på 1156 moh, og i dårlig sikt er det her turen faktisk er krevende.
+
+Ved Donkelitjenn, 1156 moh, kaller ut.no turen halvgått, og oppgir at det er 313 høydemeter igjen. Det er deres løype som er halv der; den routede linja her er kortere og har vannet på to tredeler. Uansett er det herfra det stiger: 7,4 grader fra 1200 til 1300 moh, og et sted mellom 1275 og 1292 moh ligger bratteste sammenhengende parti på turen, 20,7 grader.
+
+Løypa fortsetter nordover til den deler seg rundt 1282 moh, og grenen som dreier østover går opp på Gråfjell. Bandet fra 1300 til 1400 moh er det bratteste, 10,0 grader over 596 meter grunn, og det siste bandet, over 1400 moh, måler 6,4 grader. Varden står på 1466 moh, 4,5 km nordvest for Høgevarde.',
+  description_down = 'Ned samme vegen — men ikke sørover fra varden. Ruta kommer inn på toppen fra nordvest, så den første kilometeren ned går tilbake dit løypa delte seg på 1282 moh, og først derfra svinger du sørover mot Donkelitjenn. Toppen er rund og flat, og det er verdt å vite hvor rund: radialmålinger fra varden gir 5,2 til 18,3 grader i snitt over 500 meter i alle åtte retninger, og det bratteste 60-metersvinduet på hele fjellet måler 30,2 grader.
+
+Det er derfor Gråfjell er en navigasjonstur og ikke en skredtur. Går du feil ned fra et rundt topplatå i skodde, ender du ikke i en henging — du ender i feil dal, med fem kilometer myr og tjern mellom deg og bilen. Ta peiling på toppen mens du kan se, og hold løypa tilbake over Donkelitjenn.',
+  avalanche_notes  = jsonb_build_array(
+    jsonb_build_object(
+      'title', 'Ruta',
+      'body',  'Slakt høyfjell hele vegen. Bratteste sammenhengende parti måler 20,7 grader, mellom 1275 og 1292 moh, og bratteste hundremeteren, 1300 til 1400 moh, holder 10,0 grader over 596 meter grunn. Tre av punktene Kartverket sampler langs linja er innsjø: Istjenn på 950 moh og Donkelitjenn på 1152 og 1156. Vinterstid er de flate sletter, og de er en del av ruta — men de er is, og isen er ikke terrengmodellens ansvar.'
+    ),
+    jsonb_build_object(
+      'title', 'Terrenget utenfor',
+      'body',  'Det er lite av det. Ingen retning fra varden måler over 18,3 grader i snitt de første 500 meterne, og de bratteste 60-metersvinduene ligger på 30,2 grader mot sørøst og sør. Faren på Gråfjell er vær, avstand og sikt: toppen er det høyeste punktet på Norefjell og fanger vind og skodde før resten av platået, og ut.no fører sesongen som desember til mars.'
+    ),
+    jsonb_build_object(
+      'title', 'Før du går',
+      'body',  'Sjekk dagens skredvarsel for Buskerud sør på varsom.no. Buskerud sør er en B-region: den varslet bare ved faregrad 4 og 5, så de fleste vinterdager finnes det ingen vurdering å lese, og en tom side betyr ikke et trygt fjell. Ta med sender/mottaker, søkestang og spade.'
+    )
+  )
+where slug = 'grafjell';
+
+update public.tk_tours set
   description_up   = 'Frå parkeringa ved Byrkjenes, 211 moh, innerst på Tordalsvegen nord for Strandebarm, går du opp den bratte skogkledde lia mot Fadnastølen, 498 moh. Dette er den brattaste delen av turen: brattaste hundremeteren ligg mellom 300 og 400 moh og måler 16,7 grader i snitt. Tordalsvegen er privat bomveg, og brøyting heilt fram til parkeringa er ikkje garantert — ring eller sjekk før du køyrer langt.
 
 Over stølen opnar terrenget seg, med skog i flekkar opp til rundt 577 moh. Ruta held nordaustover inn på den breie sørvestryggen ved 629 moh.
@@ -1708,6 +1762,60 @@ Den andre feilen er å ta sørfallet ned frå toppen i staden for sørvestryggen
     )
   )
 where slug = 'vesoldo';
+
+update public.tk_tours set
+  description_up   = 'Start på parkeringa ved Tempelseter, 910 moh, og følg den T-merkede og blåmerkede ruta over fossen i retning Høgevarde. Skogen slipper taket ved 931 moh, og de neste tre kilometerne er nesten flate: 4,8 grader fra 900 til 1000 moh over 1075 meter grunn, 4,0 fra 1000 til 1100 over 1440 meter, og 3,9 fra 1200 til 1300 over 1516.
+
+Stikrysset på Raudmyra ligger på 1229 moh, og navnet er ikke tilfeldig: Kartverket klasser både punktet på 1216 og punktet på 1229 moh som myr. Her tar du av til venstre, mot Gråfjell, og forlater Høgevarde-løypa.
+
+Nå kommer turen. Bandet fra 1300 til 1400 moh måler 13,9 grader over 405 meter grunn — det er halve stigningen på under en halv kilometer — og mellom 1322 og 1338 moh ligger bratteste sammenhengende parti, 27,1 grader.
+
+Det siste bandet, over 1400 moh, måler 5,7 grader over 120 meter grunn, og der står varden på 1416 moh. Toppen er en smal, taggete rygg, og profilen som gjør fjellet lett å kjenne igjen nedenfra er den samme profilen som gjør at det ikke er mye plass på den.',
+  description_down = 'Den slake vegen ned er den du kom opp: østover mot Raudmyra, der flanken måler 13,3 grader i snitt over 500 meter. Nord, vest og nordvest er også slake — 10,4, 11,9 og 10,8 grader i snitt, med bratteste 60-metersvinduer på 19,6, 18,8 og 16,8 grader — men de fører deg vekk fra bilen.
+
+Den merkede stien går bratt sørover til Fetjenn på 990 moh, og som skilinje er det en helt annen tur enn oppstigningen — men den ser ikke slik ut fra toppen. Punktmålinger hver tretti meter rett sørover gir først en skulder: 1415,6, 1399,2, 1393,9 og 1395,5 moh, altså 28,6 grader det første steget og så noe som er flatt og til og med stiger litt. Der skulderen slutter, 120 meter ut, faller det 47,2 og 54,5 grader. På peiling 195, som er retningen til Fetjenn, er skulderen enda tydeligere — bakken stiger igjen på 90 meter — og bruddet måler 60,0 grader. Det er rennene randofolk.no mener når de kaller Ranten «en mer alpin topp med brattere nedkjøring» enn Høgevarde. Ta ikke bakken over bruddet som et mål på det som ligger under: kjør dem hvis dette er terreng du kjører til vanlig, og hvis varselet og snøen sier ja; ellers går du tilbake den vegen du kom.',
+  avalanche_notes  = jsonb_build_array(
+    jsonb_build_object(
+      'title', 'Ruta',
+      'body',  'Oppstigningen fra Raudmyra er en jevn skråning: 13,9 grader i snitt fra 1300 til 1400 moh, og bratteste sammenhengende parti 27,1 grader mellom 1322 og 1338 moh. De første fire kilometerne fra Tempelseter holder under 6 grader. Ruta i seg selv er ikke problemet på dette fjellet.'
+    ),
+    jsonb_build_object(
+      'title', 'Terrenget utenfor',
+      'body',  'Sørsida er problemet, og den er farligere enn tallene alene sier. Fra varden faller den 40,2 til 54,8 grader i 60-metersvinduene 90 til 170 meter ut, på alle peilinger fra 150 til 210 grader — hele sektoren fra sørøst til sørvest. Men de første hundre meterne er en skulder på rundt ti grader, som på peiling 195 til og med stiger igjen, så bruddet er ikke synlig fra der du står. Toppryggen er smal, og skavl bygger seg ut over den kanten i vestavind. Nord- og vestsida er det motsatte, 10 til 12 grader i snitt.'
+    ),
+    jsonb_build_object(
+      'title', 'Før du går',
+      'body',  'Sjekk dagens skredvarsel for Buskerud sør på varsom.no. Buskerud sør er en B-region: den varslet bare ved faregrad 4 og 5, så de fleste vinterdager finnes det ingen vurdering å lese, og en tom side betyr ikke et trygt fjell. Ta med sender/mottaker, søkestang og spade.'
+    )
+  )
+where slug = 'ranten';
+
+update public.tk_tours set
+  description_up   = 'Start på parkeringa ved Tempelseter, 910 moh, og gå opp til høyre for skibakken. Løypa er stukket og som regel kjørt, og de første hundre høydemeterne er det slakeste på turen: bandet fra 900 til 1000 moh måler 3,9 grader over 1305 meter grunn.
+
+Over anlegget stiger det jevnt — 8,8 grader fra 1000 til 1100 moh og 7,8 fra 1100 til 1200 — og et sted der inne, mellom 1179 og 1195 moh, ligger bratteste sammenhengende parti på hele turen: 19,5 grader. Ingen av punktene Kartverket sampler langs ruta er klasset som skog. Du starter over skoggrensa og ser hvor du skal hele vegen, og det er en fordel helt til sikten forsvinner.
+
+Fra ryggen på rundt 1190 moh svinger ruta nordøstover mot hytta. Bandet fra 1200 til 1300 moh er det bratteste på turen, 11,8 grader over 496 meter grunn, og over det flater det ut igjen: 7,7 grader fra 1300 til 1400.
+
+DNT-hytta Høgevarde ligger på 1397 moh, og toppen 560 meter lenger nordøst, på 1461. Det siste bandet, over 1400 moh, måler 3,5 grader over 810 meter grunn — flatt, og samtidig den mest værutsatte delen av turen. Gamle Høgevarde turisthytte har kafé i vinterferiene og påsken, og skilt nederst i bakken sier om den er åpen.',
+  description_down = 'Ned samme vegen, sørvestover. Det er den slake sida av fjellet, og målingene sier hvor slak: 7,1 grader i snitt mot vest og 8,6 mot sørvest over 500 meter, med bratteste 60-metersvindu på 25,6 og 23,8 grader. Den andre dokumenterte ruta, høyfjellsruta fra Norefjellstua over Norefjellsryggen, gir 826 høydemeter på 11,67 km og er en annen dag.
+
+Fristelsen er å ta av mot øst, mot Norefjell skisenter som er godt synlig fra varden. Det er ikke rett nedenfor: anlegget ligger 9,85 kilometer unna på peiling 148, altså sørøst. Å sette kursen dit fra toppen er å velge den bratteste sektoren på fjellet — øst måler 25 grader i snitt og bryter av i 41,5 grader 70 til 130 meter ut fra varden, nordøst gir 41,3, og sørøst, som er retningen mot anlegget, 51,2 grader i vinduet 420 til 480 meter ut. Toppryggen er ofte avblåst mens snøen ligger fin 200 meter lenger nede, og det er nettopp da linjevalget flyttes uten at noen bestemmer seg for det.',
+  avalanche_notes  = jsonb_build_array(
+    jsonb_build_object(
+      'title', 'Ruta',
+      'body',  'Oppstaket og som regel oppkjørt løype i slakt terreng hele vegen. Bratteste sammenhengende parti måler 19,5 grader og ligger mellom 1179 og 1195 moh; bratteste hundremeteren, 1200 til 1300 moh, holder 11,8 grader over 496 meter grunn. Staking er ikke kvisting — ut.no minner om at løypa tidlig i sesongen ikke alltid er supplert med kvist, og over skoggrensa er det ingenting annet å navigere etter.'
+    ),
+    jsonb_build_object(
+      'title', 'Terrenget utenfor',
+      'body',  'Fjellet er slakt på tre kanter og bratt på én. Øst og nordøst under toppen måler 25 grader i snitt med 60-metersvinduer på 41,5 og 41,3 grader, 70 til 160 meter ut fra varden, og sørøst 51,2 grader i vinduet 420 til 480 meter ut. Vest, sørvest og nordvest holder 7,1 til 8,6 grader i snitt. Det er hele fjellet i én setning: gå og kjør på vestsida.'
+    ),
+    jsonb_build_object(
+      'title', 'Før du går',
+      'body',  'Sjekk dagens skredvarsel for Buskerud sør på varsom.no. Buskerud sør er en B-region: den varslet bare ved faregrad 4 og 5, så de fleste vinterdager finnes det ingen vurdering å lese, og en tom side betyr ikke et trygt fjell. Ta med sender/mottaker, søkestang og spade.'
+    )
+  )
+where slug = 'hogevarde';
 
 update public.tk_tours set
   description_up   = 'Start der anleggsvegen tek av oppover frå Ænes, 90 moh; kyrkja som rutebeskrivinga nemner ligg på 41 moh nede ved fjorden. Dei fyrste hundre høgdemetrane går på 6,3 grader, og så tek vegen fatt: 11,3 grader frå 100 til 200 moh og 12,9 frå 200 til 300.
@@ -1820,114 +1928,6 @@ De sju rennene østover fra toppryggen er noe annet. Friflyt oppgir et snitt lik
     )
   )
 where slug = 'gaustatoppen';
-
-update public.tk_tours set
-  description_up   = 'Start på parkeringa ved Vikerkoia på Vikerseterveien, 661 moh — Kartverket klasser punktet som myr, og det er en presis beskrivelse av Vikerfjell. De første høydemeterne er slake, 5,1 grader fra 600 til 700 moh, før skogen tar over ved 698 moh.
-
-Stigningen opp mot Svarttjernskollen er den bratteste på turen: 15,4 grader fra 700 til 800 moh over 360 meter grunn, med bratteste sammenhengende parti 24,9 grader mellom 767 og 788 moh. Ved 916 moh er du fortsatt i skog, og på 1050 moh er du ute i åpent terreng.
-
-Svarttjernskollen ligger på 1054 moh, og ut.no oppgir 1054 — det er kontrollen på at du er på rett rygg. Herfra ser du Vikerfjellplatået i sør og Gyranfisen i vest. Så går det ned igjen: linja passerer 1002, 961, 904 og 922 moh, og Kartverket klasser flere av dem som skog. Du er under tregrensa på nytt, midt i turen.
-
-Venekollen, 982 moh, passeres på høyre hånd, og waypointet i korridoren ligger vest for toppen på 949 moh, der ruta faktisk går. Fra bunnen av søkket stiger det jevnt igjen — 4,1 grader fra 1000 til 1100 moh over 1207 meter grunn, og 8,0 grader det siste bandet — til varden på 1127 moh. Treknatten, 1098 moh, ligger 4,20 km nord-nordvest, på peiling 340.',
-  description_down = 'Ned samme vegen, sørøstover, og du skal opp igjen underveis. Det er turens egenart: 200 høydemeter gitt tilbake på veg opp betyr 200 høydemeter å klatre på veg ned, og det er verdt å ha spart krefter til dem.
-
-Fjellet er slakt i alle retninger. Radialmålinger fra varden gir 4,8 til 12,6 grader i snitt over 500 meter, og bratteste 60-metersvindu på hele toppen er 29,9 grader mot nordaust, 410 til 470 meter ut. Vestsida — den mot Vidalen — måler 5,7 grader i snitt helt ut til halvannen kilometer, med bratteste vindu 20,9 grader. Stupene du ser den vegen tilhører Bukollen, Gråfjell og Storrustefjell på andre sida av dalen, ikke fjellet du står på.',
-  avalanche_notes  = jsonb_build_array(
-    jsonb_build_object(
-      'title', 'Ruta',
-      'body',  'Slakt terreng med én kneik: 15,4 grader fra 700 til 800 moh over 360 meter grunn, og bratteste sammenhengende parti 24,9 grader mellom 767 og 788 moh. De andre bandene måler 2,3 til 10,5 grader i snitt. Skredfaren er lav; det som kan gå galt er lengden, søkket og at siste stykket opp er umerket.'
-    ),
-    jsonb_build_object(
-      'title', 'Terrenget utenfor',
-      'body',  'Ingen retning fra varden måler over 12,6 grader i snitt de første 500 meterne. Ryggen fra Svarttjernskollen er avblåst i vind, og søkket mot Fjelldalen og Steintjern må krysses begge veger. Løypene til Gyranfisen og Treknatten blir kjørt bare når forholdene tillater det og prioriteres i vinter- og påskeferien — utenom det er ruta usporet myr og fjell. Deler av området ligger i Vikerfjell naturreservat.'
-    ),
-    jsonb_build_object(
-      'title', 'Før du går',
-      'body',  'Sjekk dagens skredvarsel for Buskerud sør på varsom.no. Buskerud sør er en B-region: den varslet bare ved faregrad 4 og 5, så de fleste vinterdager finnes det ingen vurdering å lese, og en tom side betyr ikke et trygt fjell. Ta med sender/mottaker, søkestang og spade.'
-    )
-  )
-where slug = 'gyranfisen';
-
-update public.tk_tours set
-  description_up   = 'Start bak Tempelsetra kafè, 910 moh, og følg løypa mot Istjenn. Skogen slipper taket allerede ved 937 moh, og på 950 moh går ruta ut på Istjenn — Kartverket klasser punktet som innsjø, og det er det første av to vann ruta går ut på isen på — Donkelitjenn er det andre.
-
-Videre nordover forbi Vesletjenn på 1095 moh. Dette er den flate delen: bandet fra 900 til 1000 moh måler 2,2 grader over 2472 meter grunn, 1000 til 1100 måler 3,6 over 1564, og 1100 til 1200 bare 2,9 over 1902 meter. Fem kilometer går med før du står på 1156 moh, og i dårlig sikt er det her turen faktisk er krevende.
-
-Ved Donkelitjenn, 1156 moh, kaller ut.no turen halvgått, og oppgir at det er 313 høydemeter igjen. Det er deres løype som er halv der; den routede linja her er kortere og har vannet på to tredeler. Uansett er det herfra det stiger: 7,4 grader fra 1200 til 1300 moh, og et sted mellom 1275 og 1292 moh ligger bratteste sammenhengende parti på turen, 20,7 grader.
-
-Løypa fortsetter nordover til den deler seg rundt 1282 moh, og grenen som dreier østover går opp på Gråfjell. Bandet fra 1300 til 1400 moh er det bratteste, 10,0 grader over 596 meter grunn, og det siste bandet, over 1400 moh, måler 6,4 grader. Varden står på 1466 moh, 4,5 km nordvest for Høgevarde.',
-  description_down = 'Ned samme vegen — men ikke sørover fra varden. Ruta kommer inn på toppen fra nordvest, så den første kilometeren ned går tilbake dit løypa delte seg på 1282 moh, og først derfra svinger du sørover mot Donkelitjenn. Toppen er rund og flat, og det er verdt å vite hvor rund: radialmålinger fra varden gir 5,2 til 18,3 grader i snitt over 500 meter i alle åtte retninger, og det bratteste 60-metersvinduet på hele fjellet måler 30,2 grader.
-
-Det er derfor Gråfjell er en navigasjonstur og ikke en skredtur. Går du feil ned fra et rundt topplatå i skodde, ender du ikke i en henging — du ender i feil dal, med fem kilometer myr og tjern mellom deg og bilen. Ta peiling på toppen mens du kan se, og hold løypa tilbake over Donkelitjenn.',
-  avalanche_notes  = jsonb_build_array(
-    jsonb_build_object(
-      'title', 'Ruta',
-      'body',  'Slakt høyfjell hele vegen. Bratteste sammenhengende parti måler 20,7 grader, mellom 1275 og 1292 moh, og bratteste hundremeteren, 1300 til 1400 moh, holder 10,0 grader over 596 meter grunn. Tre av punktene Kartverket sampler langs linja er innsjø: Istjenn på 950 moh og Donkelitjenn på 1152 og 1156. Vinterstid er de flate sletter, og de er en del av ruta — men de er is, og isen er ikke terrengmodellens ansvar.'
-    ),
-    jsonb_build_object(
-      'title', 'Terrenget utenfor',
-      'body',  'Det er lite av det. Ingen retning fra varden måler over 18,3 grader i snitt de første 500 meterne, og de bratteste 60-metersvinduene ligger på 30,2 grader mot sørøst og sør. Faren på Gråfjell er vær, avstand og sikt: toppen er det høyeste punktet på Norefjell og fanger vind og skodde før resten av platået, og ut.no fører sesongen som desember til mars.'
-    ),
-    jsonb_build_object(
-      'title', 'Før du går',
-      'body',  'Sjekk dagens skredvarsel for Buskerud sør på varsom.no. Buskerud sør er en B-region: den varslet bare ved faregrad 4 og 5, så de fleste vinterdager finnes det ingen vurdering å lese, og en tom side betyr ikke et trygt fjell. Ta med sender/mottaker, søkestang og spade.'
-    )
-  )
-where slug = 'grafjell';
-
-update public.tk_tours set
-  description_up   = 'Start på parkeringa ved Tempelseter, 910 moh, og følg den T-merkede og blåmerkede ruta over fossen i retning Høgevarde. Skogen slipper taket ved 931 moh, og de neste tre kilometerne er nesten flate: 4,8 grader fra 900 til 1000 moh over 1075 meter grunn, 4,0 fra 1000 til 1100 over 1440 meter, og 3,9 fra 1200 til 1300 over 1516.
-
-Stikrysset på Raudmyra ligger på 1229 moh, og navnet er ikke tilfeldig: Kartverket klasser både punktet på 1216 og punktet på 1229 moh som myr. Her tar du av til venstre, mot Gråfjell, og forlater Høgevarde-løypa.
-
-Nå kommer turen. Bandet fra 1300 til 1400 moh måler 13,9 grader over 405 meter grunn — det er halve stigningen på under en halv kilometer — og mellom 1322 og 1338 moh ligger bratteste sammenhengende parti, 27,1 grader.
-
-Det siste bandet, over 1400 moh, måler 5,7 grader over 120 meter grunn, og der står varden på 1416 moh. Toppen er en smal, taggete rygg, og profilen som gjør fjellet lett å kjenne igjen nedenfra er den samme profilen som gjør at det ikke er mye plass på den.',
-  description_down = 'Den slake vegen ned er den du kom opp: østover mot Raudmyra, der flanken måler 13,3 grader i snitt over 500 meter. Nord, vest og nordvest er også slake — 10,4, 11,9 og 10,8 grader i snitt, med bratteste 60-metersvinduer på 19,6, 18,8 og 16,8 grader — men de fører deg vekk fra bilen.
-
-Den merkede stien går bratt sørover til Fetjenn på 990 moh, og som skilinje er det en helt annen tur enn oppstigningen — men den ser ikke slik ut fra toppen. Punktmålinger hver tretti meter rett sørover gir først en skulder: 1415,6, 1399,2, 1393,9 og 1395,5 moh, altså 28,6 grader det første steget og så noe som er flatt og til og med stiger litt. Der skulderen slutter, 120 meter ut, faller det 47,2 og 54,5 grader. På peiling 195, som er retningen til Fetjenn, er skulderen enda tydeligere — bakken stiger igjen på 90 meter — og bruddet måler 60,0 grader. Det er rennene randofolk.no mener når de kaller Ranten «en mer alpin topp med brattere nedkjøring» enn Høgevarde. Ta ikke bakken over bruddet som et mål på det som ligger under: kjør dem hvis dette er terreng du kjører til vanlig, og hvis varselet og snøen sier ja; ellers går du tilbake den vegen du kom.',
-  avalanche_notes  = jsonb_build_array(
-    jsonb_build_object(
-      'title', 'Ruta',
-      'body',  'Oppstigningen fra Raudmyra er en jevn skråning: 13,9 grader i snitt fra 1300 til 1400 moh, og bratteste sammenhengende parti 27,1 grader mellom 1322 og 1338 moh. De første fire kilometerne fra Tempelseter holder under 6 grader. Ruta i seg selv er ikke problemet på dette fjellet.'
-    ),
-    jsonb_build_object(
-      'title', 'Terrenget utenfor',
-      'body',  'Sørsida er problemet, og den er farligere enn tallene alene sier. Fra varden faller den 40,2 til 54,8 grader i 60-metersvinduene 90 til 170 meter ut, på alle peilinger fra 150 til 210 grader — hele sektoren fra sørøst til sørvest. Men de første hundre meterne er en skulder på rundt ti grader, som på peiling 195 til og med stiger igjen, så bruddet er ikke synlig fra der du står. Toppryggen er smal, og skavl bygger seg ut over den kanten i vestavind. Nord- og vestsida er det motsatte, 10 til 12 grader i snitt.'
-    ),
-    jsonb_build_object(
-      'title', 'Før du går',
-      'body',  'Sjekk dagens skredvarsel for Buskerud sør på varsom.no. Buskerud sør er en B-region: den varslet bare ved faregrad 4 og 5, så de fleste vinterdager finnes det ingen vurdering å lese, og en tom side betyr ikke et trygt fjell. Ta med sender/mottaker, søkestang og spade.'
-    )
-  )
-where slug = 'ranten';
-
-update public.tk_tours set
-  description_up   = 'Start på parkeringa ved Tempelseter, 910 moh, og gå opp til høyre for skibakken. Løypa er stukket og som regel kjørt, og de første hundre høydemeterne er det slakeste på turen: bandet fra 900 til 1000 moh måler 3,9 grader over 1305 meter grunn.
-
-Over anlegget stiger det jevnt — 8,8 grader fra 1000 til 1100 moh og 7,8 fra 1100 til 1200 — og et sted der inne, mellom 1179 og 1195 moh, ligger bratteste sammenhengende parti på hele turen: 19,5 grader. Ingen av punktene Kartverket sampler langs ruta er klasset som skog. Du starter over skoggrensa og ser hvor du skal hele vegen, og det er en fordel helt til sikten forsvinner.
-
-Fra ryggen på rundt 1190 moh svinger ruta nordøstover mot hytta. Bandet fra 1200 til 1300 moh er det bratteste på turen, 11,8 grader over 496 meter grunn, og over det flater det ut igjen: 7,7 grader fra 1300 til 1400.
-
-DNT-hytta Høgevarde ligger på 1397 moh, og toppen 560 meter lenger nordøst, på 1461. Det siste bandet, over 1400 moh, måler 3,5 grader over 810 meter grunn — flatt, og samtidig den mest værutsatte delen av turen. Gamle Høgevarde turisthytte har kafé i vinterferiene og påsken, og skilt nederst i bakken sier om den er åpen.',
-  description_down = 'Ned samme vegen, sørvestover. Det er den slake sida av fjellet, og målingene sier hvor slak: 7,1 grader i snitt mot vest og 8,6 mot sørvest over 500 meter, med bratteste 60-metersvindu på 25,6 og 23,8 grader. Den andre dokumenterte ruta, høyfjellsruta fra Norefjellstua over Norefjellsryggen, gir 826 høydemeter på 11,67 km og er en annen dag.
-
-Fristelsen er å ta av mot øst, mot Norefjell skisenter som er godt synlig fra varden. Det er ikke rett nedenfor: anlegget ligger 9,85 kilometer unna på peiling 148, altså sørøst. Å sette kursen dit fra toppen er å velge den bratteste sektoren på fjellet — øst måler 25 grader i snitt og bryter av i 41,5 grader 70 til 130 meter ut fra varden, nordøst gir 41,3, og sørøst, som er retningen mot anlegget, 51,2 grader i vinduet 420 til 480 meter ut. Toppryggen er ofte avblåst mens snøen ligger fin 200 meter lenger nede, og det er nettopp da linjevalget flyttes uten at noen bestemmer seg for det.',
-  avalanche_notes  = jsonb_build_array(
-    jsonb_build_object(
-      'title', 'Ruta',
-      'body',  'Oppstaket og som regel oppkjørt løype i slakt terreng hele vegen. Bratteste sammenhengende parti måler 19,5 grader og ligger mellom 1179 og 1195 moh; bratteste hundremeteren, 1200 til 1300 moh, holder 11,8 grader over 496 meter grunn. Staking er ikke kvisting — ut.no minner om at løypa tidlig i sesongen ikke alltid er supplert med kvist, og over skoggrensa er det ingenting annet å navigere etter.'
-    ),
-    jsonb_build_object(
-      'title', 'Terrenget utenfor',
-      'body',  'Fjellet er slakt på tre kanter og bratt på én. Øst og nordøst under toppen måler 25 grader i snitt med 60-metersvinduer på 41,5 og 41,3 grader, 70 til 160 meter ut fra varden, og sørøst 51,2 grader i vinduet 420 til 480 meter ut. Vest, sørvest og nordvest holder 7,1 til 8,6 grader i snitt. Det er hele fjellet i én setning: gå og kjør på vestsida.'
-    ),
-    jsonb_build_object(
-      'title', 'Før du går',
-      'body',  'Sjekk dagens skredvarsel for Buskerud sør på varsom.no. Buskerud sør er en B-region: den varslet bare ved faregrad 4 og 5, så de fleste vinterdager finnes det ingen vurdering å lese, og en tom side betyr ikke et trygt fjell. Ta med sender/mottaker, søkestang og spade.'
-    )
-  )
-where slug = 'hogevarde';
 
 update public.tk_tours set
   description_up   = 'Start på den store parkeringa ved Nordstulvatnet, 714 moh. Ruta går slakt oppover gjennom åpen skog og krysser elva som renner ut av Sønstevatn, 746 moh; randofolk.no beskriver ei bru der. Bandet fra 700 til 800 moh måler 2,9 grader over 1785 meter grunn — det er den flate innmarsjen, og den er lengre enn den ser ut på kartet.
