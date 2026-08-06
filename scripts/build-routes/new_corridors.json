@@ -2679,7 +2679,8 @@
    "Vinterstarten er Vikerkoia, ikke Sandviksetra som sommerbeskrivelsen bruker. Vikerfjell Skiløyper kjører løype fra Tosseviksetra nordover til Skarrud via Den store steinen og har egne løyper til Gyranfisen og Treknatten; Vikersetra.com peker på Vikerkoia og Fanteputten som utgangspunktene med parkering.",
    "Svarttjernskollen leser 1054,3 moh mot ut.nos oppgitte 1054 — kontrollen på at korridoren følger den beskrevne ryggen og ikke Fjelldalen i vest.",
    "Venekollen ligger på 982,4 moh og passeres «på høyre hånd» i turbeskrivelsen — waypointet er derfor lagt 300 m vest for toppen, på 948,8 moh, der ruta faktisk går. Med pinnen på selve toppen ga korridoren 694 høydemeter og 227 m tilbake; slik den står nå gir den 668 og 202. Tilbakefallet er ekte uansett variant: mellom Svarttjernskollen og Gyranfisen ligger søkket mot Fjelldalen og Steintjern, og DTM1 leser 866 moh midtveis mot 1054 og 1127 på de to sidene.",
-   "Målt linje: 666 høydemeter, 5,4 km, bratteste band 15,4° og bratteste 30 m 24,9°, og 200 m gitt tilbake. Aspektet er satt til Ø etter målingen framfor researchens SØ."
+   "Målt linje: 666 høydemeter, 5,4 km, bratteste band 15,4° og bratteste 30 m 24,9°, og 200 m gitt tilbake. Aspektet er satt til Ø etter målingen framfor researchens SØ.",
+   "Refutert av eiga måling: researchen skreiv at «vestsida av Gyranfisen stuper mot Vidalen». Det gjer ho ikkje. flank_probe.py gir 5,7° i snitt mot vest over 1500 m og eit brattaste 60-metersvindu på 20,9°. Stupa i ut.nos tekst høyrer til Bukollen, Gråfjell og Storrustefjell — fjella på andre sida av Vidalen, som ein ser frå toppen. Setninga er retta i hazardNotes før ho rakk å hamne i ein guide."
   ],
   "rejectReason": "",
   "corridor": {
@@ -2712,7 +2713,7 @@
    "aspect": "Ø",
    "grade": 2,
    "gradeReason": "Vikersetra.com kaller den «en krevende topptur» og setter 7 km hver veg med rundt 600 høydemeter. Terrenget er myrlendt platå og avrundede koller uten bratte partier; vanskeligheten er lengden, høydedraget som går opp og ned over Svarttjernskollen og Venekollen, og at siste stykke opp på Gyranfisen er umerket på barmark.",
-   "hazardNotes": "Vestsida av Gyranfisen stuper mot Vidalen, og både Bukollen, Gråfjell og Storrustefjell på andre sida av dalen er beskrevet med bratte stup — det er den kanten toppen har, og den er feil veg å kjøre ned. Ryggen fra Svarttjernskollen til toppen er avblåst i vind. Løypene til Gyranfisen og Treknatten kjøres bare når forholdene tillater det, og prioriteres i vinter- og påskeferien; utenfor det er ruta usporet myr og fjell. Vikerfjell naturreservat dekker deler av området.",
+   "hazardNotes": "Toppen og flankane rundt er slake — brattaste 60-metersvindu i alle åtte retningar er 29,9° mot nordaust, og vestsida måler 5,7° i snitt heilt ut til halvannan kilometer. Faren her er ikkje helling, men lengde og orientering: ryggen frå Svarttjernskollen er avblåst i vind, søkket mot Fjelldalen og Steintjern må kryssast begge vegar, og siste stykket opp er umerkt. Løypene til Gyranfisen og Treknatten blir kjørt berre når forholda tillèt det og blir prioriterte i vinter- og påskeferien; utanom det er ruta usporet myr og fjell. Vikerfjell naturreservat dekkjer delar av området.",
    "teaserNo": "670 høydemeter fra Vikerkoia over Svarttjernskollen, med 200 av dem gitt tilbake i søkket før Ringerikes høyeste punkt.",
    "teaserEn": "670 m of climbing from Vikerkoia over Svarttjernskollen, 200 of them given back in the dip before the highest point in Ringerike.",
    "sources": [

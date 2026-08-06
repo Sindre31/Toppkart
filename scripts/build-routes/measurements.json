@@ -49,5 +49,149 @@
    "figure": "31 til 32 grader i snitt dei første 500 metrane, steg over 50",
    "how": "Radialar frå 62,31992/9,26747 på peiling 345, 0 og 15, 25-meterssteg ut til 500 m. 2287 moh til 1977–1987 moh, snitt 31 til 32 grader; brattaste tjuefemmeterssteg 55, 53 og 50 grader, og to av stega på rein nordpeiling ligg over 50."
   }
+ ],
+ "hogevarde": [
+  {
+   "what": "Vest- og sørvestflanken rett under toppen (nedkjøringssida)",
+   "figure": "7,1° i snitt mot vest og 8,6° mot sørvest over 500 m; brattaste 60-metersvindu 25,6° (V) og 23,8° (SV)",
+   "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+  },
+  {
+   "what": "Aust- og nordaustflanken under toppen, mot skianlegget",
+   "figure": "25,2° i snitt mot aust og 25,1° mot nordaust; brattaste 60-metersvindu 41,5° 70–130 m ut (Ø) og 41,3° 100–160 m ut (NØ)",
+   "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+  },
+  {
+   "what": "Sørausthellinga under toppen",
+   "figure": "22,5° i snitt, med eit 51,2° vindu 420–480 m ut",
+   "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+  },
+  {
+   "what": "Varslingsregionen toppkoordinaten ligger i",
+   "figure": "Buskerud sør (region 3041), regiontype B — B-regioner varsles berre ved faregrad 4 og 5",
+   "how": "Spurt Varsom/NVE på same endepunkt som appen bruker: api01.nve.no/hydrology/forecast/avalanche/v6.3.2/api/AvalancheWarningByCoordinates/Simple/<lat>/<lng>/1/<dato>/<dato> med toppkoordinaten frå summits.json. Svaret gir RegionName, RegionId og RegionTypeName."
+  }
+ ],
+ "grafjell": [
+  {
+   "what": "Alle åtte flankane frå varden",
+   "figure": "5,2–18,3° i snitt over 500 m; brattaste 60-metersvindu på heile fjellet er 30,2° (SØ 120–180 m ut og S 330–390 m ut)",
+   "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+  },
+  {
+   "what": "Varslingsregionen toppkoordinaten ligger i",
+   "figure": "Buskerud sør (region 3041), regiontype B — B-regioner varsles berre ved faregrad 4 og 5",
+   "how": "Spurt Varsom/NVE på same endepunkt som appen bruker: api01.nve.no/hydrology/forecast/avalanche/v6.3.2/api/AvalancheWarningByCoordinates/Simple/<lat>/<lng>/1/<dato>/<dato> med toppkoordinaten frå summits.json. Svaret gir RegionName, RegionId og RegionTypeName."
+  }
+ ],
+ "ranten": [
+  {
+   "what": "Sørsida frå toppen, retning Fetjenn",
+   "figure": "Brattaste 60-metersvindu 52,3° (peiling 180, 100–160 m ut), 54,8° (peiling 195, 110–170 m ut), 46,1° (peiling 165) og 40,2° (peiling 150). Snittet over dei fyrste 400 m er 24–29°",
+   "how": "flank_probe.py 60.30259 9.41922 150 165 180 195 210 --out 400 --step 10. Peiling 198 er retninga til Fetjenn."
+  },
+  {
+   "what": "Nord-, vest- og nordvestsida frå toppen",
+   "figure": "10,4° (N), 11,9° (V) og 10,8° (NV) i snitt over 500 m, med brattaste vindu 16,8–19,6°",
+   "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+  },
+  {
+   "what": "Austsida, mot Raudmyra",
+   "figure": "13,3° i snitt over 500 m, med eit 26,4° vindu dei fyrste 70 metrane",
+   "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+  },
+  {
+   "what": "Varslingsregionen toppkoordinaten ligger i",
+   "figure": "Buskerud sør (region 3041), regiontype B — B-regioner varsles berre ved faregrad 4 og 5",
+   "how": "Spurt Varsom/NVE på same endepunkt som appen bruker: api01.nve.no/hydrology/forecast/avalanche/v6.3.2/api/AvalancheWarningByCoordinates/Simple/<lat>/<lng>/1/<dato>/<dato> med toppkoordinaten frå summits.json. Svaret gir RegionName, RegionId og RegionTypeName."
+  }
+ ],
+ "store-ble": [
+  {
+   "what": "Sørausthellinga rett under toppen — «karre deg opp sørsiden»",
+   "figure": "41,5° i brattaste 60-metersvindu, 60–120 m under toppen; 11,3° i snitt over 500 m",
+   "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+  },
+  {
+   "what": "Nord- og nordvestsida, som er innfallet frå Sigridsbu-sida",
+   "figure": "5,8° (N) og 8,7° (NV) i snitt; brattaste vindu 16,0° og 19,6°",
+   "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+  },
+  {
+   "what": "Vestflanken",
+   "figure": "18,5° i snitt over 500 m, med eit 45,0° vindu 430–490 m ut",
+   "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+  },
+  {
+   "what": "Varslingsregionen toppkoordinaten ligger i",
+   "figure": "Telemark sør (region 3039), regiontype B — B-regioner varsles berre ved faregrad 4 og 5",
+   "how": "Spurt Varsom/NVE på same endepunkt som appen bruker: api01.nve.no/hydrology/forecast/avalanche/v6.3.2/api/AvalancheWarningByCoordinates/Simple/<lat>/<lng>/1/<dato>/<dato> med toppkoordinaten frå summits.json. Svaret gir RegionName, RegionId og RegionTypeName."
+  }
+ ],
+ "surloytenuten": [
+  {
+   "what": "Ryggen nordover frå varden — returen langs Surløyterinden",
+   "figure": "2,2° i snitt over 500 m, brattaste 60-metersvindu 5,7°",
+   "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+  },
+  {
+   "what": "Den bratte nedstigninga mot sør",
+   "figure": "13,5° i snitt over 500 m, med brattaste 60-metersvindu 29,5° 400–460 m ut",
+   "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+  },
+  {
+   "what": "Austsida mot Kjøvekjønn-dalen",
+   "figure": "17,8° i snitt, brattaste vindu 25,1° 70–130 m ut",
+   "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+  },
+  {
+   "what": "Varslingsregionen toppkoordinaten ligger i",
+   "figure": "Telemark sør (region 3039), regiontype B — B-regioner varsles berre ved faregrad 4 og 5",
+   "how": "Spurt Varsom/NVE på same endepunkt som appen bruker: api01.nve.no/hydrology/forecast/avalanche/v6.3.2/api/AvalancheWarningByCoordinates/Simple/<lat>/<lng>/1/<dato>/<dato> med toppkoordinaten frå summits.json. Svaret gir RegionName, RegionId og RegionTypeName."
+  }
+ ],
+ "gyranfisen": [
+  {
+   "what": "Vestflanken mot Vidalen",
+   "figure": "5,7° i snitt over 1500 m og brattaste 60-metersvindu 20,9°; mot 250 og 290 grader 6,3 og 5,0° med vindu på 22,8 og 19,8°",
+   "how": "flank_probe.py 60.47203 9.89027 250 270 290 --out 1500 --step 20. Måler at Gyranfisens eiga vestside ikkje stuper — stupa i turbeskrivinga høyrer til Bukollen, Gråfjell og Storrustefjell på andre sida av dalen."
+  },
+  {
+   "what": "Flankane rundt toppen",
+   "figure": "4,8–12,6° i snitt over 500 m; brattaste 60-metersvindu 29,9° mot nordaust, 410–470 m ut",
+   "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+  },
+  {
+   "what": "Varslingsregionen toppkoordinaten ligger i",
+   "figure": "Buskerud sør (region 3041), regiontype B — B-regioner varsles berre ved faregrad 4 og 5",
+   "how": "Spurt Varsom/NVE på same endepunkt som appen bruker: api01.nve.no/hydrology/forecast/avalanche/v6.3.2/api/AvalancheWarningByCoordinates/Simple/<lat>/<lng>/1/<dato>/<dato> med toppkoordinaten frå summits.json. Svaret gir RegionName, RegionId og RegionTypeName."
+  }
+ ],
+ "styggemann": [
+  {
+   "what": "Austsida rett under varden",
+   "figure": "48,5° i brattaste 60-metersvindu 30–90 m ut (Ø), 45,3° 20–80 m ut (SØ) og 43,9° 40–100 m ut (NØ)",
+   "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+  },
+  {
+   "what": "Oppstigninga frå Sørmyrseter, sørsida",
+   "figure": "29,8° (peiling 190) og 34,4° (peiling 200) i brattaste 60-metersvindu, 140–220 m under toppen; 14–16° i snitt over 400 m",
+   "how": "flank_probe.py 59.52064 9.64361 170 190 200 210 --out 400 --step 10. Sørmyrseter ligg på peiling 191 frå toppen."
+  },
+  {
+   "what": "Sørsida frå varden i åtte-peilings-sveipet",
+   "figure": "13,3° i snitt over 500 m, med brattaste 60-metersvindu 25,1° 130–190 m ut",
+   "how": "flank_probe.py 59.52064 9.64361 --out 500 --step 10, åtte peilingar over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+  },
+  {
+   "what": "Sørvestsida",
+   "figure": "9,0° i snitt over 500 m, med eit 38,6° vindu 160–220 m ut",
+   "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+  },
+  {
+   "what": "Varslingsregionen toppkoordinaten ligger i",
+   "figure": "Buskerud sør (region 3041), regiontype B — B-regioner varsles berre ved faregrad 4 og 5",
+   "how": "Spurt Varsom/NVE på same endepunkt som appen bruker: api01.nve.no/hydrology/forecast/avalanche/v6.3.2/api/AvalancheWarningByCoordinates/Simple/<lat>/<lng>/1/<dato>/<dato> med toppkoordinaten frå summits.json. Svaret gir RegionName, RegionId og RegionTypeName."
+  }
  ]
 }

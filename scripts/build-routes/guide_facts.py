@@ -163,7 +163,13 @@ def main():
             band = steepest_band(table)
             ang, i0, i1 = steepest_span(pts, zs)
             samples = []
-            if r["id"] == "normalruta":
+            # The tour's own route, not the one called "normalruta". The two were
+            # the same thing until a round gave its routes descriptive ids —
+            # Høgevarde leaves from Tempelseter and Norefjellstua, and neither is
+            # a "normalruta" — and the id test then silently dropped the terrain
+            # classes for all seven of them. Treeline is one of the few facts a
+            # guide for a forested Eastern Norway fjell is actually built on.
+            if r is recs[0]:
                 samples = cached_samples(previous, slug, r["id"], zs) or terrain_along(pts, zs)
             src = by_id.get(r["id"], {})
             entries.append(

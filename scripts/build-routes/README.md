@@ -670,9 +670,9 @@ tours and 77 routes clean.
 Three of the seven leave from the same car park at Tempelseter, and two from the
 same one at Nordstul. That is not a shortcut — it is what an Eastern Norway ski
 fjell looks like: one ploughed road in, a løypenett out of it, and several tops
-off the same network. None of the seven has a written guide yet; the research
-they were built from is in `new_corridors.json` and `new_tourmeta.json`, which is
-what `guide_brief.py` reads.
+off the same network. All seven have a written guide, in bokmål and English, and
+they pass `check_guides.py` clean — see below for what was measured to make that
+true.
 
 ### What the checks caught
 
@@ -725,6 +725,63 @@ though it is climbed from the east, and Surløytenuten's published return is the
 steep south side though the corridor's last leg faces north. Both are the
 Bitihorn case — the way the route faces and the way the descent flank faces are
 different statements. Where nothing is named, `route_metrics.py` decides.
+
+### The seven guides, and the flank probes they are built on
+
+The Oslo round's guides were written against `guide_brief.py` like the others,
+and then against a measurement pass the earlier rounds did not have: every one of
+the seven summits was swept with `flank_probe.py` on all eight bearings, and the
+readings are in `measurements.json` rather than in a sentence somebody has to
+take on trust. That is what lets a guide say **which** side of a mountain is the
+dangerous one instead of saying that some side is.
+
+It paid for itself before a word was written. The research for **Gyranfisen** had
+recorded that «vestsida av Gyranfisen stuper mot Vidalen». It does not: the probe
+reads 5.7° mean to the west out to a kilometre and a half, with a steepest 60 m
+window of 20.9°. The cliffs in ut.no's text are Bukollen, Gråfjell and
+Storrustefjell — the mountains on the *far* side of the valley, which you look at
+from the summit. The sentence was corrected in `new_corridors.json` before it
+could become a guide that pointed a reader at the wrong edge.
+
+What the sweeps found on the other six, all of it now in the copy:
+
+- **Ranten** falls 40.2–54.8° in the 60 m windows 90–170 m below the cairn on
+  every bearing from 150 to 210 — and 195 is the bearing to Fetjenn, which is
+  where the marked path goes down. North and west measure 10–12°. From the top
+  the two sides do not look very different.
+- **Styggemann** is steepest where nobody is heading: 48.5° east, 45.3°
+  south-east and 43.9° north-east, all within a hundred metres of the cairn. The
+  route comes from the south at 25.1°.
+- **Høgevarde** is gentle on three sides and steep on one: 7.1–8.6° west,
+  south-west and north-west; 41.5° and 41.3° in the windows 70–160 m below the
+  top to the east and north-east, toward the ski centre you can see from the
+  summit.
+- **Store Ble**'s south-east side, the one randofolk.no says you may have to
+  scramble in thin snow, measures 41.5° 60–120 m below the top; the north side it
+  offers as the alternative measures 5.8°. The guidebook and the terrain model
+  agree about which way to go.
+- **Gråfjell** has no steep side at all — 5.2–18.3° mean in all eight directions,
+  steepest window 30.2°. Its guide is about navigation, because that is what the
+  mountain is.
+- **Surløytenuten**'s ridge back north measures 2.2° mean with a 5.7° steepest
+  window; the published steep return south reads 29.5°.
+
+Two other things the check made the copy change. Gyranfisen's «the rest stays
+below 11 degrees» was reported as an under-N-degrees claim against a line that
+reaches 24.9°, and it was right to: the sentence was about hundred-metre bands
+and read as a claim about the tour. It now lists the bands. And Ranten's «den
+trygge vegen ned» was reported for calling terrain safe — it is now «den slake
+vegen ned», which is a measurement rather than a judgement, the same correction
+the Kavringtinden pass made.
+
+All seven forecast regions were queried rather than assumed, on the same Varsom
+endpoint the app uses: Norefjell, Vikerfjell and Skrim are **Buskerud sør** and
+Blefjell is **Telemark sør**, and both are **B-regions** — forecast only at
+danger level 4 and 5. On most winter days there is no assessment for these
+mountains at all, and every one of the seven guides says so in its own words.
+
+They have **not** been through an adversarial second reader. Same standing as the
+Sunnmøre and Vestland rounds: sourced, mechanically checked, not verified.
 
 ### What was left out
 
