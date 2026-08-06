@@ -661,6 +661,12 @@ over: Surløytenuten and Gyranfisen are the two, and both are `medium`.
 | Ranten | Norefjell | 910 | 1416 | 527 | 5.6 | 13.9° | 27.1° | 2 |
 | Surløytenuten | Blefjell | 714 | 1097 | 456 | 6.1 | 5.3° | 24.9° | 2 |
 
+`check_new_corridors.py` re-queries all of it from scratch and comes back with
+one note across the seven: Gyranfisen's give-back, which is the next section.
+Every waypoint elevation matches DTM1, every trailhead has mapped parking within
+250 m, no leg heads away from its summit, and `check_routes.py` calls the 68
+tours and 77 routes clean.
+
 Three of the seven leave from the same car park at Tempelseter, and two from the
 same one at Nordstul. That is not a shortcut — it is what an Eastern Norway ski
 fjell looks like: one ploughed road in, a løypenett out of it, and several tops
