@@ -180,13 +180,20 @@ one line:
 | Gaustatoppen | Gaustablikk (965 m) and Stavsro (706 m) |
 | Slogen | Skylstad (1482 m) and direct from Øye (1512 m) |
 | Bitihorn | Bygdin (549 m) and Båtskaret (454 m) |
+| Høgevarde | Tempelseter (598 m) and Norefjellstua (826 m) — opposite sides of Norefjell |
 
-Eight tours carry a second route; the table above is all of them. 69 routes over
-61 tours. The first route of a tour is the one its own `verticalM` and `duration`
+Nine tours carry a second route; the table above is all of them. 77 routes over
+68 tours. The first route of a tour is the one its own `verticalM` and `duration`
 describe. Alternatives are only added where a second route is actually documented
 — `ALTERNATES` in `build_corridors.py`, and the research output, are not places
-to invent one because the schema allows it. The other 53 tours have a single
+to invent one because the schema allows it. The other 59 tours have a single
 route, and the app renders no picker for them.
+
+`ALTERNATES` only reaches the first 24, because `build_corridors.py` is fed by a
+swarm file the later rounds have no equivalent of. A researched corridor can now
+carry its own second route instead: an `alternates` list on the record in
+`new_corridors.json`, folded in by `merge_corridors.py` after the primary. That
+is how Høgevarde carries both of its documented starts.
 
 Route and trailhead *names* get shortened for display — the research came back
 with sentences like "Normalruta fra Djupvik/Forselvveien via Pumpvatnet,
@@ -619,6 +626,110 @@ put at 466; the anleggsveg above Ænes reads 90,2 m against 1330 m of stated gai
 from a summit at 1347. Both are the point where a car stops, and both are
 recorded as the difference they are rather than smoothed away.
 
+
+## The Oslo round
+
+Seven peaks, on the fjells a car from Oslo reaches in one to two hours: Norefjell,
+Blefjell, Skrim and Vikerfjell. Four new regions, and none of them is called Oslo,
+because **the ski terrain is not in the city**. Oslomarka's high points are
+forested 400–630 m hills, and Fri Flyt's own `skiturer-oslo` tag holds two
+articles: Rødkleiva, which is a 200 m offpiste slope in an old alpine hill, and
+Høgruta i Maridalen, a two-day 44 km traverse over Fagervann, Mellomkollen and
+Barlindåsen. Neither is a tour row — one has no summit and the other has no day.
+So the round goes where the ski tours are, and the drive is the thing that makes
+it an Oslo round, in the sources' own figures: Skrim «en drøy times kjøring fra
+Oslo», Vikerfjell «bare 10 mil», Blefjell «i underkant av to timer», and
+Tempelseter on Norefjell «ca 14 mil og to timer».
+
+The four conditions the Sunnmøre and Vestland rounds were built on still hold,
+with one changed: **Fri Flyt does not publish route descriptions for these
+fjells.** The primary source is ut.no, which does — with an activity type, a
+season, a stated distance and gain, and a named chain of ground — and, for the
+winter line specifically, randofolk.no, a randonée site that publishes the same
+shape of description with a start, a route, the descent and the season it was
+skied in. Where a tour's own full description exists only for barmark, that is
+said out loud in `confidence` and in the record's `notes` rather than papered
+over: Surløytenuten and Gyranfisen are the two, and both are `medium`.
+
+| tour | region | start | summit | gain | km | steepest 100 m band | steepest 30 m | grade |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Store Ble | Blefjell | 714 | 1343 | 670 | 6.3 | 16.7° | 35.2° | 2 |
+| Gyranfisen | Vikerfjell | 661 | 1127 | 666 | 5.4 | 15.4° | 24.9° | 2 |
+| Høgevarde | Norefjell | 910 | 1461 | 598 | 4.8 | 11.8° | 19.5° | 1 |
+| Gråfjell | Norefjell | 910 | 1466 | 581 | 7.8 | 10.0° | 20.7° | 2 |
+| Styggemann | Skrim | 483 | 871 | 549 | 9.6 | 15.1° | 23.2° | 2 |
+| Ranten | Norefjell | 910 | 1416 | 527 | 5.6 | 13.9° | 27.1° | 2 |
+| Surløytenuten | Blefjell | 714 | 1097 | 456 | 6.1 | 5.3° | 24.9° | 2 |
+
+Three of the seven leave from the same car park at Tempelseter, and two from the
+same one at Nordstul. That is not a shortcut — it is what an Eastern Norway ski
+fjell looks like: one ploughed road in, a løypenett out of it, and several tops
+off the same network. None of the seven has a written guide yet; the research
+they were built from is in `new_corridors.json` and `new_tourmeta.json`, which is
+what `guide_brief.py` reads.
+
+### What the checks caught
+
+**Ranten was resolved onto a different mountain, and the margin was 30 cm.** The
+summit search climbed to a 1415.9 m top on the Gråfjell massif, 1.5 km from
+Ranten's register point, because against a published 1419 it beat Ranten's own
+1415.6 m top by three tenths of a metre. Height alone cannot separate two
+candidates that agree that closely — a published summit figure is rounded to the
+metre at best. `resolve_top` now breaks a tie inside 2 m by distance from the
+register point, which is the one piece of evidence that says which mountain
+carries the name. The rule only applies between *different* tops: two candidates
+within 200 m of each other are the same summit seen from two discs, and there
+the height still decides. Without that guard Folarskardnuten's settled summit
+moved 22 m onto a cell 0.7 m lower.
+
+**Gyranfisen gives back 200 m of the 666 it climbs, and the terrain says so.**
+Between Svarttjernskollen (1054 m) and Gyranfisen (1127 m) lies the søkk toward
+Fjelldalen and Steintjern, and DTM1 reads 866 m midway. Three corridor variants
+were routed — waypoint on Venekollen's top, no waypoint at all, and the waypoint
+300 m west of it — and all three gave back 173–227 m. The one that shipped is the
+one the description describes: ut.no passes Venekollen «på høyre hånd», so the
+line goes west of it at 948.8 m, not over the 982.4 m top.
+
+**Gråfjell's trail junction is an inference, and it is labelled as one.** Ut.no
+places it «ca 1,5 km nord for Donkelitjenn», and there is no name in the register
+at that spot. The waypoint is the distance and bearing the source gives, measured
+on DTM1 at 1282.5 m, and the record says that is where it came from. Donkelitjenn
+itself is the check that the corridor is on the described løype at all: ut.no
+gives 1153 moh and «herfra er det en stigning på 313 m igjen», DTM1 reads 1156.0,
+and 1156 + 313 lands 3 m from the summit.
+
+**Surløytenuten's season is borrowed from its neighbour.** Nobody publishes one
+for this top. It shares a car park, a fjell and a height band with Store Ble,
+where randofolk.no gives January to April, so that is what the card carries — and
+the record says it is an inference from the next tour over rather than a source
+for this one.
+
+**Two grades came back two steps from the measurement, and one of them was
+wrong.** Ranten was researched as grade 3 on randofolk.no's «en mer alpin topp
+med brattere nedkjøring». That is the renner in the jagged profile, and the route
+does not go in them: the line measures 27.1° at its steepest 30 m and 13.9° over
+its steepest sustained hundred. It ships as 2, with the renner still in
+`hazardNotes`. Gråfjell stays at 2 against a measured 1, because its difficulty is
+eight kilometres of high fjell and navigation between tarns, which a slope angle
+cannot see.
+
+**Four aspects were taken from the measurement and two from the guidebook.**
+Where a source names the descent it wins: Ranten skis south to Fetjenn (198°)
+though it is climbed from the east, and Surløytenuten's published return is the
+steep south side though the corridor's last leg faces north. Both are the
+Bitihorn case — the way the route faces and the way the descent flank faces are
+different statements. Where nothing is named, `route_metrics.py` decides.
+
+### What was left out
+
+**Vikerfjell's Høgfjell (1010 m)** is the thousand-metre peak nearest Oslo and
+has groomed trails to the top, but no source publishes a route to it — only that
+the løype exists. A trail that is known to be driven is not a described line, and
+this pipeline draws described lines.
+
+**Oslomarka.** Rødkleiva and Høgruta i Maridalen are covered above. Kolsås,
+Vettakollen, Tryvannshøgda and Oppkuven are real winter destinations and none of
+them is a topptur with a vertical worth a card.
 
 ## Network
 

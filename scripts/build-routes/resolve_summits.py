@@ -44,6 +44,8 @@ def pick(name, kommuner, near_lat, near_lng):
 
 SPAN_M = 4200
 TOL_M = 15
+TIE_M = 2.0
+SAME_TOP_M = 200.0
 
 
 def _seed_dem(lat, lng):
@@ -140,11 +142,38 @@ def resolve_top(lat, lng, expect):
     Climbing first and comparing after gets both right, and still refuses a
     taller neighbour: Steindalsnosi climbs to 2023.8 m against a claimed 2025,
     and Fannaråki at 2067 m never comes close enough to win.
+
+    When two climbed tops are a different mountain each and match the claim
+    equally well, the nearer one wins. Ranten is why: its own top reads 1415.6 m
+    at 34 m from the register point and a top on the Gråfjell massif 1.5 km away
+    reads 1415.9 m, so against a claimed 1419 the neighbour won by three tenths of
+    a metre and the tour was moved onto a mountain it is not. Height alone cannot
+    separate two candidates that agree to within the accuracy of a published
+    figure; the register point can, because it is the one piece of evidence that
+    says which mountain carries the name.
+
+    Two candidates within `SAME_TOP_M` of each other are the same summit seen
+    from two discs, and there the height decides as before — otherwise
+    Folarskardnuten's top moves 22 m onto a cell 0.7 m lower, which is a settled
+    coordinate changed for no reason.
     """
     best = None
     for slat, slng, _, radius in snap_candidates(lat, lng):
         flat, flng, fz = hill_climb(slat, slng)
-        if best is None or abs(fz - expect) < abs(best[2] - expect):
+        if best is None:
+            best = (flat, flng, fz, radius)
+            continue
+        delta, best_delta = abs(fz - expect), abs(best[2] - expect)
+        # A tie is anything inside TIE_M: a published summit height is rounded to
+        # the metre at best, so a smaller difference than that is not evidence.
+        tied = (
+            abs(delta - best_delta) <= TIE_M
+            and haversine(flat, flng, best[0], best[1]) > SAME_TOP_M
+        )
+        if tied:
+            if haversine(lat, lng, flat, flng) < haversine(lat, lng, best[0], best[1]):
+                best = (flat, flng, fz, radius)
+        elif delta < best_delta:
             best = (flat, flng, fz, radius)
     return best
 

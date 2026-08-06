@@ -8,6 +8,11 @@ pass returns —
    {"name","lat","lng","elevationM"}, "waypoints": [...], "season", "aspect",
    "grade", "hazardNotes", "teaserNo", "teaserEn", "sources", "confidence"}}
 
+A corridor may carry an `alternates` list of the same shape — a second documented
+way up, with its own trailhead and waypoints and a `note` saying what it is. They
+are appended after the primary, which stays first because it is the route the
+tour's `verticalM` and `duration` describe.
+
 Everything outside the corridor itself — season, aspect, grade, teasers — is kept
 in `new_tourmeta.json` rather than dropped, because it is what the tour rows in
 lib/tours.ts are written from, and it should be reviewable next to the geometry
@@ -25,6 +30,36 @@ IN = "new_corridors.json"
 META = "new_tourmeta.json"
 
 
+def route_rec(c, source, note=""):
+    """One corridor route in the shape generate_routes.py reads."""
+    th = c["trailhead"]
+    return {
+        "id": c.get("routeId") or "normalruta",
+        "name": c["routeName"],
+        "description": c.get("routeDescriptionFull", c["routeName"]),
+        "trailhead": {
+            "name": th["name"],
+            "lat": round(float(th["lat"]), 5),
+            "lng": round(float(th["lng"]), 5),
+            "elevation_m": round(float(th["elevationM"]), 2),
+            "fullName": th["name"],
+        },
+        "waypoints": [
+            {
+                "name": w["name"],
+                "lat": round(float(w["lat"]), 5),
+                "lng": round(float(w["lng"]), 5),
+                "elevation_m": round(float(w["elevationM"]), 2),
+            }
+            for w in c.get("waypoints") or []
+        ],
+        # The 24 audited corridors say "audited (ok)"; these say what they are, so
+        # nobody reads a second batch as a first one.
+        "source": source,
+        "notes": note or c.get("hazardNotes", ""),
+    }
+
+
 def main():
     records = json.load(open(IN))
     corridors = json.load(open(CORRIDORS)) if os.path.exists(CORRIDORS) else {}
@@ -38,36 +73,17 @@ def main():
             rejected += 1
             continue
         c = rec["corridor"]
-        th = c["trailhead"]
-        corridors[slug] = {
-            "routes": [
-                {
-                    "id": c.get("routeId") or "normalruta",
-                    "name": c["routeName"],
-                    "description": c.get("routeDescriptionFull", c["routeName"]),
-                    "trailhead": {
-                        "name": th["name"],
-                        "lat": round(float(th["lat"]), 5),
-                        "lng": round(float(th["lng"]), 5),
-                        "elevation_m": round(float(th["elevationM"]), 2),
-                        "fullName": th["name"],
-                    },
-                    "waypoints": [
-                        {
-                            "name": w["name"],
-                            "lat": round(float(w["lat"]), 5),
-                            "lng": round(float(w["lng"]), 5),
-                            "elevation_m": round(float(w["elevationM"]), 2),
-                        }
-                        for w in c.get("waypoints") or []
-                    ],
-                    # The 24 audited corridors say "audited (ok)"; these say what
-                    # they are, so nobody reads a second batch as a first one.
-                    "source": f"researched, verified ({rec.get('verdict', '?')}), no local audit",
-                    "notes": c.get("hazardNotes", ""),
-                }
-            ]
-        }
+        source = f"researched, verified ({rec.get('verdict', '?')}), no local audit"
+        # A peak researched with two documented starts carries both, the primary
+        # first — the same rule `ALTERNATES` in build_corridors.py follows for the
+        # first 24, and it needs a way in here too because that module is fed by
+        # a swarm file this batch has no equivalent of. Høgevarde is the case:
+        # Tempelseter and Norefjellstua are nine kilometres and 85 vertical metres
+        # apart, and each has its own published route description.
+        routes = [route_rec(c, source)]
+        for alt in c.get("alternates") or []:
+            routes.append(route_rec(alt, source, note=alt.get("note", "")))
+        corridors[slug] = {"routes": routes}
         # Three fields are revised downstream and must survive a re-merge.
         #
         # `corrections` accumulate: the adversarial read of the written guides and

@@ -76,12 +76,19 @@ values
   ('lonahorgi', 'Lønahorgi', 'Voss', 60.69383, 6.41489, 1412, 1300, '6–8 t', 2, 'NØ', 'feb–april', '1300 høgdemeter frå Høyland via Bergsstølen og Breiming, med dei siste 107 opp nordryggen frå punkt 1305.', true),
   ('horndalsnuten', 'Horndalsnuten', 'Voss', 60.64218, 6.67655, 1462, 1120, '5–7 t', 3, 'N', 'jan–apr', '1120 høgdemeter frå Skiple gjennom Horndalsbotnen, med den bratte kneika frå skuldra til slutt.', true),
   ('folarskardnuten', 'Folarskardnuten', 'Hallingdal', 60.60742, 7.78251, 1932, 970, '6–8 t', 3, 'S', 'mars–mai', 'Over 12 km inn frå Haugastøl og 970 høgdemeter, med eit kort 37-graders trinn opp frå Folarskardet.', true),
+  ('gyranfisen', 'Gyranfisen', 'Vikerfjell', 60.47203, 9.89027, 1127, 670, '3–5 t', 2, 'Ø', 'jan–apr', '670 høydemeter fra Vikerkoia over Svarttjernskollen, med 200 av dem gitt tilbake i søkket før Ringerikes høyeste punkt.', true),
   ('oksen',           'Oksen',           'Hardanger',  60.45983,  6.68301, 1241, 960, '4–6 t', 2, 'SV', 'jan–apr', 'Fjordutsikt i alle retninger og jevn stigning fra Tjoflot.', true),
+  ('grafjell', 'Gråfjell', 'Norefjell', 60.31831, 9.39572, 1466, 580, '4–6 t', 2, 'S', 'des–mars', '580 høydemeter og 7,8 km fra Tempelsetra forbi Istjenn og Donkelitjenn til Norefjells høyeste topp.', true),
   ('vesoldo', 'Vesoldo', 'Hardanger', 60.31237, 6.09197, 1046, 840, '3–5 t', 2, 'SV', 'feb–apr', '838 høgdemeter frå Byrkjenes, skog opp til Fadnastølen og open sørvestrygg over; nord- og vestsida av toppen fell 48–55°.', true),
+  ('ranten', 'Ranten', 'Norefjell', 60.30259, 9.41922, 1416, 530, '3–5 t', 2, 'S', 'jan–apr', '530 høydemeter fra Tempelseter om stikrysset på Raudmyra og vestover opp på den taggete ryggen Kittelsen malte som Soria Moria.', true),
+  ('hogevarde', 'Høgevarde', 'Norefjell', 60.2972, 9.46662, 1461, 600, '3–5 t', 1, 'SV', 'jan–apr', '600 høydemeter fra Tempelseter opp den oppstakede løypa til DNT-hytta på 1397, og de siste 560 metrene ut på ryggen til sikteplata.', true),
   ('gygrastolen', 'Gygrastolen', 'Hardanger', 60.05949, 6.16031, 1347, 1270, '5–7 t', 3, 'N', 'feb–apr', '1270 høgdemeter frå fjorden i Ænes opp ryggen over Gygrastølvatnet, rett mot Folgefonna.', true),
   ('juklavasstinden', 'Juklavasstinden', 'Hardanger', 60.00853, 6.13296, 1361, 1340, '6–8 t', 3, 'NV', 'mars–mai', '1340 høgdemeter frå Myrdalsvatnet: opp ryggen, ned mot Møsetjørna og opp nordryggen til ein skavla topp.', true),
   ('melderskin',      'Melderskin',      'Hardanger',  60.00623,  6.08261, 1426, 1270, '6–8 t', 3, 'V',  'feb–mai', 'Rosendalsalpenes storslåtte klassiker, fra sjøen til 1426 moh.', true),
-  ('gaustatoppen',    'Gaustatoppen',    'Telemark',   59.8542,  8.64928, 1883,  970, '4–6 t', 2, 'NV', 'des–mai', 'Sør-Norges mest markante topp — ser du den, ser den deg.', true)
+  ('gaustatoppen',    'Gaustatoppen',    'Telemark',   59.8542,  8.64928, 1883,  970, '4–6 t', 2, 'NV', 'des–mai', 'Sør-Norges mest markante topp — ser du den, ser den deg.', true),
+  ('store-ble', 'Store Ble', 'Blefjell', 59.80825, 9.15349, 1343, 670, '4–6 t', 2, 'SØ', 'jan–apr', '670 høydemeter fra Nordstulvatnet gjennom skogen og opp om Sigridsbu — utløpssonene ligger i Langedalen ved sida av.', true),
+  ('surloytenuten', 'Surløytenuten', 'Blefjell', 59.79473, 9.20603, 1097, 460, '3–5 t', 2, 'S', 'jan–apr', '460 høydemeter fra Nordstul om Sudstul og Vassholet, og sørover det ytre høydedraget langs Surløyterinden til varden.', true),
+  ('styggemann', 'Styggemann', 'Skrim', 59.52064, 9.64361, 871, 550, '4–6 t', 2, 'SV', 'jan–mars', '550 høydemeter og 9,6 km fra Ravalsjø om Sørmyrseter, med de siste 240 rett opp på Skrims høyeste topp.', true)
 ;
 -- The conflict clause refreshes the free columns only. description_up,
 -- description_down, avalanche_notes and gpx_path are never touched here, so

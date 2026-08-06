@@ -81,17 +81,17 @@ components/
 lib/
   config.ts              PRICE, TRIAL_DAYS, SITE, GRADE_COLORS, env, is*Configured
   types.ts               Tour, TourGuide, Viewer, Subscription, Invoice
-  tours.ts               The 61 tours, REGIONS, getTour(), routesFor(), routeById(),
+  tours.ts               The 68 tours, REGIONS, getTour(), routesFor(), routeById(),
                          routeFor(), routeProfile()
   routes.ts              Generated ascent routes per tour — see scripts/build-routes/
-  guides.ts              Editorial guide content — all 61 tours, generated
+  guides.ts              Editorial guide content — 61 of the 68 tours, generated
   access.ts              getViewer() / grantsAccess() — server-only access gate
   stripe.ts              Stripe client, null in demo mode
   demo-session.ts        Cookie-backed stand-ins for auth and subscription
   supabase/              Browser and server Supabase clients
 supabase/
   schema.sql             Tables, policies, RLS
-  seed.sql               The 61 tours and all 61 guides
+  seed.sql               The 68 tours and the 61 guides
 design-reference/        The HTML prototypes and the product/design handoff. Read-only ground
                          truth; not shipped.
 docs/
@@ -165,6 +165,12 @@ content and data quality that has to be settled before the site is sold to anyon
   Arctic tops and the published figures are old survey numbers, so the gap may be a cornice, a
   cairn, or simply an older measurement — DTM1 is bare rock. A local reader should settle it
   before print; the app is at least now internally consistent and single-sourced.
+- **Seven tours have a route but no guide.** The Oslo round — Høgevarde, Gråfjell and Ranten on
+  Norefjell, Store Ble and Surløytenuten on Blefjell, Gyranfisen on Vikerfjell and Styggemann on
+  Skrim — ships with a card, a routed line, an elevation profile and a teaser, and `/tur/<slug>`
+  says the guide is pending on all seven. That is the same state the Sunnmøre and Vestland rounds
+  shipped in before their guides were written, and the research the guides will be written from is
+  tracked in `scripts/build-routes/new_corridors.json`.
 - **The guide text has not been read by anyone who has skied these tours.** Every number in
   `lib/guides.ts` traces to Kartverket's terrain model, the route research or a cited source, and
   every guide was put through an adversarial fact-check — all 24 of the first round, and then all
@@ -181,8 +187,8 @@ content and data quality that has to be settled before the site is sold to anyon
 - **`assets/kontur.png` is a placeholder.** It is a generated contour-map graphic standing in for
   real ski-touring photography. `assets/photo.jpg` is an unrelated reference photo from the design
   system and should also go. The contour graphic is now the only invented terrain left on a tour
-  page: it carries a "1439 moh" label baked into the artwork and renders identically on all 61
-  tours, so on 60 of them it states a height that is not that peak's. The caption says it is
+  page: it carries a "1439 moh" label baked into the artwork and renders identically on all 68
+  tours, so on 67 of them it states a height that is not that peak's. The caption says it is
   schematic, but it sits beside real figures — replace it before print.
 - **Map tiles should move to a Norwegian topographic source.** OpenStreetMap is what the prototype
   used; Kartverket's WMTS or a MapTiler style with Norwegian topography is the intended

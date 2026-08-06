@@ -2349,5 +2349,446 @@
    "confidence": "medium",
    "notes": "Fri Flyt: 1360 moh, 988 høgdemeter, 5–6 timar, «moderat», aspekt NV, brattaste 35 grader. «Denne er spesielt fin om våren.»"
   }
+ },
+ {
+  "slug": "hogevarde",
+  "verdict": "ok",
+  "corrections": [
+   "Fjellet heter Høgevard i stedsnavnregisteret og Høgevarde på DNT-hytta 600 m sørvest for toppen; turbeskrivelsene bruker begge om hverandre. Kortet bruker Høgevarde, som er navnet folk sier, og korridoren treffer toppunktet: 60.29720/9.46662, 1461,0 moh mot publiserte 1459.",
+   "Utgangspunktet er Tempelseter og ikke skianlegget på Norefjell. De to er dokumentert hver for seg — ut.no har skituren fra Norefjellstua og randofolk.no fra Tempelseter — og de starter 85 høydemeter og ni kilometer fra hverandre. Begge ligger inne: Tempelseter som hovedrute fordi den er den korte og den mest gåtte, Norefjellstua som alternativ.",
+   "Parkeringa er målt, ikke antatt: OSM way/494501835 ligger på 910,0 moh og 100 m fra Tempelseter høyfjellshotell. Med toppen på 1461 gir det 551 høydemeter i luftlinje, mot randofolk.no sine «ca. 650 m» stigning — differansen er kupering underveis, som den routede linja måler.",
+   "Målt linje: 598 høydemeter, 4,8 km, bratteste 100-metersband 11,8° og bratteste 30 m 19,5°. Terrengmålingen gir grad 1, som er den graden researchen satte — de to er enige her."
+  ],
+  "rejectReason": "",
+  "corridor": {
+   "routeId": "tempelseter",
+   "routeName": "Fra Tempelseter over ryggen til DNT-hytta",
+   "routeDescriptionFull": "Fra parkeringa ved Tempelseter (910 moh) går du opp til høyre for skibakken og videre nordøstover i den oppstakede løypa. Ruta stiger jevnt over åpent fjell mot ryggen på rundt 1200 moh, følger den nordøstover og kommer fram ved den selvbetjente DNT-hytta Høgevarde på 1397 moh. Toppen ligger 560 m nordøst for hytta, med sikteplata på 1461 moh. Samme vei ned, eller ned igjen mot Ranten og Fetjenn for en rundtur.",
+   "trailhead": {
+    "name": "Tempelseter",
+    "lat": 60.27,
+    "lng": 9.40643,
+    "elevationM": 910.0,
+    "osmEvidence": "OSM way/494501835, amenity=parking, senter 60.27000/9.40643, 100 m fra node/1288244562 (tourism=hotel, Tempelseter høyfjellshotell). Bomvegen opp fra Eggedal sentrum brøytes hele vinteren — Tempelseter er et hyttefelt med skianlegg og kafé, og ut.no oppgir bompengesatsen for vinterturen."
+   },
+   "waypoints": [
+    {
+     "name": "Ryggen over skibakken, ca 1190 moh",
+     "lat": 60.284,
+     "lng": 9.443,
+     "elevationM": 1188.33
+    },
+    {
+     "name": "Høgevarde turisthytte",
+     "lat": 60.29319,
+     "lng": 9.46043,
+     "elevationM": 1396.93
+    }
+   ],
+   "alternates": [
+    {
+     "routeId": "norefjellstua",
+     "routeName": "Høyfjellsruta fra Norefjellstua over Norefjellsryggen",
+     "routeDescriptionFull": "Fra parkeringa ved Norefjellstua i skianlegget (825 moh) stiger ruta jevnt forbi Ravnås, som passeres på vestsida, og videre opp til Augunshaug (1340 moh). Derfra flater det ut langs Norefjellsryggen nordover til Høgevarde turisthytte og toppen. Ut.no kaller den høyfjellsruta og oppgir 13 km; den går på preparerte løyper store deler av vegen.",
+     "trailhead": {
+      "name": "Norefjellstua",
+      "lat": 60.22187,
+      "lng": 9.56066,
+      "elevationM": 825.01,
+      "osmEvidence": "OSM way/257732509, amenity=parking, senter 60.22187/9.56066, 825,0 moh, 124 m fra SSR-punktet for Norefjellstua (serveringssted, 60.22184/9.56290). Dette er parkeringa i Norefjell skisenter, og seks andre parkeringsflater ligger innenfor 600 m av den."
+     },
+     "waypoints": [
+      {
+       "name": "Ravnås, passeres på vestsida",
+       "lat": 60.24562,
+       "lng": 9.5435,
+       "elevationM": 1165.52
+      },
+      {
+       "name": "Augunshaug",
+       "lat": 60.25415,
+       "lng": 9.50955,
+       "elevationM": 1340.47
+      },
+      {
+       "name": "Høgevarde turisthytte",
+       "lat": 60.29319,
+       "lng": 9.46043,
+       "elevationM": 1396.93
+      }
+     ],
+     "note": "Den andre dokumenterte starten, fra motsatt side av fjellet og 85 høydemeter lavere. Ut.no fører den som skitur (jan–apr, 10,7 km, 527 høydemeter i deres spor) og anbefaler høyfjellsruta over ryggen framfor løypene i skogen når været tillater det."
+    }
+   ],
+   "season": "jan–apr",
+   "roadClosedInWinter": false,
+   "aspect": "SV",
+   "grade": 1,
+   "gradeReason": "Slak, oppstaket og som regel oppkjørt løype over åpent fjell hele vegen; randofolk.no kaller den «perfekt for nybegynnere». Bratteste måling ligger i kneika opp mot ryggen, og selve toppanløpet fra hytta er en rygg på under 20 grader. Det som gjør turen alvorlig er været: Norefjell ligger høyt og fritt, og ruta er værutsatt og eksponert for vind fra toppen av bakken og opp.",
+   "hazardNotes": "Terrenget i ruta er slakt, og hovedfaren er vær og sikt framfor skred: ryggen er vindutsatt, og ut.no minner om at staking ikke alltid er supplert med kvist tidlig i sesongen. Sør- og østsida av toppen faller brattere ned mot Norefjells alpinanlegg, og det er der terrenget begynner å kunne løsne. Toppen er ofte avblåst — randofolk.no droppet den i mars 2025 av den grunn — og ryggen kan være bar eller isete når snøen ligger fint 200 m lenger nede.",
+   "teaserNo": "600 høydemeter fra Tempelseter opp den oppstakede løypa til DNT-hytta på 1397, og de siste 560 metrene ut på ryggen til sikteplata.",
+   "teaserEn": "600 m of climbing from Tempelseter up the staked track to the DNT hut at 1397 m, then the last 560 metres out along the ridge to the view indicator.",
+   "sources": [
+    "https://ut.no/turforslag/114739/topptur-pa-ski-til-hgevard-1459-moh",
+    "https://ut.no/turforslag/115722/familievennlig-topptur-pa-norefjell-hgevard-1459-moh",
+    "https://ut.no/turforslag/115875/vintertur-pa-norefjell",
+    "https://www.randofolk.no/artikler/topptur-til-hogevarde-1459-moh-en-kort-kjoretur-fra-oslo/",
+    "https://www.randofolk.no/toppturer/hogevarde-sma-turer-kan-bli-store/"
+   ],
+   "confidence": "high",
+   "notes": "To uavhengige kilder beskriver hver sin start. randofolk.no fra Tempelseter: 5 km én veg, ca. 650 høydemeter, 2–3 timer, «gå til høyre for skibakken oppover», oppstakede og som regel kjørte løyper. Ut.no fra Norefjellstua: 10,7 km, 527 høydemeter, sesong januar–april, og anbefaler høyfjellsruta over Norefjellsryggen. Begge ender på DNT-hytta Høgevarde (1397 moh i DTM1, hyttas egen oppgitte høyde 1400) med toppen 560 m nordøst. Ut.no 115722 beskriver den samme ryggen om sommeren og navngir Ravnås og Augunshaug, som er waypointene i alternativruta."
+  }
+ },
+ {
+  "slug": "grafjell",
+  "verdict": "corrected",
+  "corrections": [
+   "Gråfjell er 7 meter høyere enn Høgevarde og den nordligste toppen på Norefjell. DTM1 gir 1466,0 moh mot publiserte 1466 — det er den beste overensstemmelsen i hele runden.",
+   "Løypedelet «ca 1,5 km nord for Donkelitjenn» finnes ikke som navn i registeret. Punktet i korridoren er avledet av avstanden og retningen i ut.nos egen beskrivelse — 1,5 km rett nord for Donkelitjenn — og DTM1 gir 1282,5 moh på åpent fjell der. Det er en utledning, ikke et navngitt sted, og det er derfor det står her.",
+   "Donkelitjenn er kontrollmålet på at korridoren følger den beskrevne løypa: ut.no oppgir 1153 moh og «herfra er det en stigning på 313 m igjen», DTM1 leser 1156,0. 1156 + 313 = 1469, mot en topp på 1466.",
+   "Aspektet er satt til S etter målingen på linja, ikke V som researchen gjettet. Selve toppanløpet kommer inn fra nordvest på de siste 500 metrene, men nedkjøringa som fører tilbake til Tempelsetra peiler 174° — og det er den flanken kortet beskriver.",
+   "Målt linje: 581 høydemeter, 7,8 km, bratteste band 10,0° og bratteste 30 m 20,7°. Terrengmålingen gir grad 1; graden står som 2 fordi vanskeligheten er lengde, høyfjell og navigering, som en hellingsvinkel ikke ser. Ut.no graderer turen «middels krevende»."
+  ],
+  "rejectReason": "",
+  "corridor": {
+   "routeId": "tempelseter",
+   "routeName": "Fra Tempelseter over Istjenn og Donkelitjenn",
+   "routeDescriptionFull": "Fra parkeringa bak Tempelsetra kafè (910 moh) følger du løypa mot Istjenn (950 moh) og videre nordover forbi Vesletjenn (1095 moh). Løypa fortsetter mot Fiskeløysingen med Drotninggutunatten og Steinveggvatnet i vest, og når Donkelitjenn på 1156 moh er turen halvgått. Herfra er det 313 høydemeter igjen. Rundt 1,5 km nord for Donkelitjenn deler løypa seg, og den som dreier østover går opp på Gråfjell — Norefjells høyeste topp på 1466 moh, 4,5 km nordvest for Høgevarde.",
+   "trailhead": {
+    "name": "Tempelsetra kafè",
+    "lat": 60.27,
+    "lng": 9.40643,
+    "elevationM": 910.0,
+    "osmEvidence": "OSM way/494501835, amenity=parking, senter 60.27000/9.40643, 910,0 moh. Samme parkering som Høgevarde og Ranten går fra; ut.no skriver «sett bilen på parkeringsplassen bak kafèen. Løypa starter her»."
+   },
+   "waypoints": [
+    {
+     "name": "Istjenn",
+     "lat": 60.27891,
+     "lng": 9.39449,
+     "elevationM": 950.0
+    },
+    {
+     "name": "Vesletjenn",
+     "lat": 60.29946,
+     "lng": 9.38693,
+     "elevationM": 1095.0
+    },
+    {
+     "name": "Donkelitjenn",
+     "lat": 60.3107,
+     "lng": 9.37972,
+     "elevationM": 1156.0
+    },
+    {
+     "name": "Løypedelet nord for Donkelitjenn",
+     "lat": 60.3242,
+     "lng": 9.3797,
+     "elevationM": 1282.45
+    }
+   ],
+   "season": "des–mars",
+   "roadClosedInWinter": false,
+   "aspect": "S",
+   "grade": 2,
+   "gradeReason": "Ni kilometer og 600 høydemeter over høyfjell uten bratte partier — ut.no graderer den «middels krevende» og setter fire og en halv time. Lengden og navigeringen er vanskeligheten: løypa går over en rekke vann og myrflater der orienteringspunktene er tjern, og siste kilometer opp på toppen er åpent, vindutsatt fjell.",
+   "hazardNotes": "Ruta går over frosne tjern og myrer store deler av vegen, og både Istjenn, Vesletjenn og Donkelitjenn krysses eller følges på is. Skredterrenget er lite — flankene opp mot toppen er slake — men Gråfjell er det høyeste punktet på Norefjell og fanger vind og skodde før resten av platået. Ut.no fører sesongen som desember til mars, og løypa nordover mot Fiskeløysingen er lang å snu på hvis været skifter.",
+   "teaserNo": "580 høydemeter og 7,8 km fra Tempelsetra forbi Istjenn og Donkelitjenn til Norefjells høyeste topp.",
+   "teaserEn": "580 m of climbing and 7.8 km from Tempelsetra past Istjenn and Donkelitjenn to the highest top on Norefjell.",
+   "sources": [
+    "https://ut.no/turforslag/1112345/pa-ski-til-grafjell-pa-norefjell",
+    "https://ut.no/turforslag/114629/toppturer-til-hgevarde-grafjell-og-ranten-pa-norefjell",
+    "https://ut.no/turforslag/115875/vintertur-pa-norefjell",
+    "https://www.visitnorefjell.com/no/se-og-gjore/toppturer-norefjell/"
+   ],
+   "confidence": "medium",
+   "notes": "Ut.no 1112345 er en ren skitur (SKI_TOURING, desember–mars, 19,3 km tur-retur, 615 høydemeter) og navngir hele kjeden Tempelseter–Istjern–Vesletjenn–Neverfanttjenn–Donkelitjenn. Ut.no 114629 og 115875 dekker den samme toppen sommer og vinter og gir høyden 1466 og avstanden 4,5 km nordvest for Høgevarde. Neverfanttjenn finnes ikke i registeret og er utelatt fra korridoren; de tre andre vannene resolverer og måler. Den routede linja blir kortere enn ut.nos 19,3 km fordi den løser terrenget direkte og ikke følger løypemaskinens trasé."
+  }
+ },
+ {
+  "slug": "ranten",
+  "verdict": "corrected",
+  "corrections": [
+   "Toppsøket landet først 1,5 km unna, på en 1415,9 m høy topp på Gråfjell-massivet, fordi den traff publiserte 1419 tre tideler bedre enn Rantens egen topp på 1415,6. Registerpunktet ligger 34 m fra den riktige. resolve_summits.py har fått en avstandsregel for uavgjort — se resolve_top — og Ranten er tilfellet som avdekket den.",
+   "Raudmyra, stikrysset i turbeskrivelsen, ligger i Flå kommune på 60.30176/9.44311 og måler 1228,9 moh. Det er 1,3 km øst for toppen, og det er derfra ruta svinger vestover opp skråningen — uten det punktet går korridoren rett på fra sør.",
+   "Rantens publiserte høyde er 1419 moh og DTM1 leser 1415,6. Fjellet er en taggete rygg — «Rantehønna» i dialekten — og differansen på 3,4 m er av samme slag som Rørnestinden og Rombakstøtta i den første runden: koordinaten er riktig, metern er omtvistelig.",
+   "Graden er senket fra 3 til 2. Researchen leste randofolk.nos «en mer alpin topp med brattere nedkjøring» som grad 3, men det er rennene i den taggete profilen, og ruta går ikke i dem: målt på linja er bratteste 30 m 27,1° og bratteste 100-metersband 13,9°. Rennene står fortsatt i hazardNotes, der de hører hjemme.",
+   "Aspektet er S, ikke Ø. Oppstigningen kommer fra aust via Raudmyra, men den merkede nedstigningen går bratt sørover mot Fetjenn — peiling 198° fra toppen — og kortets felt beskriver nedkjøringsflanken. Samme tilfelle som Bitihorn, som måler N på ruta og står som S i appen."
+  ],
+  "rejectReason": "",
+  "corridor": {
+   "routeId": "tempelseter",
+   "routeName": "Fra Tempelseter over Raudmyra",
+   "routeDescriptionFull": "Fra parkeringa ved Tempelseter (910 moh) følger du den T-merkede og blåmerkede ruta over fossen i retning Høgevarde. I stikrysset på Raudmyra (1229 moh) tar du av til venstre mot Gråfjell og følger skråningen vestover og opp på toppen av Ranten, 1416 moh. Ned igjen enten samme veg eller bratt sørover mot Fetjenn (990 moh) og tilbake til Tempelseter — det er den rundturen Eggedal turlag har merket.",
+   "trailhead": {
+    "name": "Tempelseter",
+    "lat": 60.27,
+    "lng": 9.40643,
+    "elevationM": 910.0,
+    "osmEvidence": "OSM way/494501835, amenity=parking, senter 60.27000/9.40643, 910,0 moh, ved Tempelseter høyfjellstue. Ut.no: «Kjør til Tempelseter Fjellstue hvor det er parkeringsplass. Turstien starter her, følg skilting til Ranten.»"
+   },
+   "waypoints": [
+    {
+     "name": "Raudmyra, stikrysset",
+     "lat": 60.30176,
+     "lng": 9.44311,
+     "elevationM": 1228.91
+    }
+   ],
+   "season": "jan–apr",
+   "roadClosedInWinter": false,
+   "aspect": "S",
+   "grade": 2,
+   "gradeReason": "Oppstigningen fra Raudmyra er en jevn skråning — bratteste 30 m måler 27,1° og bratteste 100-metersband 13,9° — så selve ruta er ikke en 3-er. Det som løfter den over Høgevarde, som er grad 1 fra samme parkering, er den bratte merkede nedstigningen mot Fetjenn og at toppen er en smal, taggete rygg med 2–3 markante renner på sidene. randofolk.no kaller den «en mer alpin topp med brattere nedkjøring» enn nabotoppen.",
+   "hazardNotes": "Toppen er en smal, taggete rygg med bratte renner på begge sider — de er korte, men de er fallinja fra selve toppunktet, og de samler fokksnø i vestavind. Den merkede nedstigningen mot Fetjenn er det bratteste partiet på turen og er beskrevet som «bratt nedover» i turbeskrivelsen. Nabofjellet Høgevarde tar unna folk og spor; Ranten er tommere og mer eksponert, og skredvarselet for Vest-Telemark og Norefjell-området dekker ikke fjellet med egen region.",
+   "teaserNo": "530 høydemeter fra Tempelseter om stikrysset på Raudmyra og vestover opp på den taggete ryggen Kittelsen malte som Soria Moria.",
+   "teaserEn": "530 m of climbing from Tempelseter by way of the Raudmyra junction and west onto the jagged ridge Kittelsen painted as Soria Moria.",
+   "sources": [
+    "https://ut.no/turforslag/1114498/tur-til-ranten-1419-moh-th-kittelsens-soria-moria",
+    "https://ut.no/turforslag/114629/toppturer-til-hgevarde-grafjell-og-ranten-pa-norefjell",
+    "https://www.randofolk.no/artikler/topptur-til-hogevarde-1459-moh-en-kort-kjoretur-fra-oslo/",
+    "https://www.visitnorefjell.com/no/se-og-gjore/ranten/"
+   ],
+   "confidence": "medium",
+   "notes": "Ut.no 1114498 gir hele rutekjeden — Tempelseter, over fossen, stikrysset på Raudmyra, blåmerket sti opp skråningen, bratt ned til Fetjenn — og oppgir 11,1 km og 515 høydemeter for rundturen. Ruta er blåmerket av Eggedal turlag. randofolk.no dekker vintersida: Ranten ligger «opp mot venstre» sett fra Tempelseter-bakken, det er som regel kjørt løype bortover, og toppen har brattere nedkjøring enn Høgevarde. Ranten var modell for Th. Kittelsens «Soria Moria»."
+  }
+ },
+ {
+  "slug": "store-ble",
+  "verdict": "ok",
+  "corrections": [
+   "Registeret kjenner fjellet som Store Ble; turbeskrivelsene bruker Bletoppen like ofte. Kortet bruker registerets navn, som også er det randofolk.no og skiltinga på Storeblevegen bruker.",
+   "Parkeringa er OSM way/185143342, navngitt «Nordstulvtnet», på 714,0 moh — 1,3 km øst for setervollen Nordstul og rett ved Esperåa, som er der begge turbeskrivelsene begynner («fra nordenden av parkeringsplassen»). Setervollen selv leser 754 moh og er ikke der bilen står.",
+   "Randofolk.nos «ca. 900 m stigning fra Nordstulvatnet» er summen for deres runde, som går opp nordsida og ned Langedalen. Korridoren her er oppstigningen om Sigridsbu, og gevinsten måles på linja framfor å arves fra teksten.",
+   "Målt linje: 670 høydemeter, 6,3 km, bratteste band 16,7° og bratteste 30 m 35,2°. Det bratteste steget ligger i toppanløpet, og det er den sørsida randofolk.no beskriver som «karre deg opp» i lite snø. Terrengmålingen gir grad 1; graden står som 2 på det steget og på utløpssonene i Langedalen."
+  ],
+  "rejectReason": "",
+  "corridor": {
+   "routeId": "sigridsbu",
+   "routeName": "Fra Nordstul om Sigridsbu",
+   "routeDescriptionFull": "Fra den store parkeringa ved Nordstulvatnet (714 moh) går ruta slakt oppover gjennom åpen skog, over brua der elva renner ut av Sønstevatn (746 moh), og videre opp over tregrensa mot Store Ble. Du følger T-merket rute mot Sigridsbu/Eriksbu, enten opp Langedalen eller utsiktsløypa om Sigridsbu turisthytte (1175 moh) — den siste anbefales på vegen opp. Fra Sigridsbu stiger det jevnt nordover til toppunktet på 1343 moh. Ned igjen samme veg, eller ned nordsida og østover mot Kongtjønn.",
+   "trailhead": {
+    "name": "Nordstul",
+    "lat": 59.77637,
+    "lng": 9.2193,
+    "elevationM": 714.0,
+    "osmEvidence": "OSM way/185143342, amenity=parking, name=Nordstulvtnet, senter 59.77637/9.21930, 714,0 moh. Storeblevegen opp fra Jondalen/Bolkesjø er bomveg (100 kr) og brøytet: randofolk.no kjørte den i mars og beskriver «stor gratis parkeringsplass på toppen», ut.no oppgir bomavgifta for samme parkering."
+   },
+   "waypoints": [
+    {
+     "name": "Utløpet av Sønstevatn",
+     "lat": 59.779,
+     "lng": 9.21,
+     "elevationM": 746.0
+    },
+    {
+     "name": "Sigridsbu turisthytte",
+     "lat": 59.79453,
+     "lng": 9.15568,
+     "elevationM": 1174.88
+    }
+   ],
+   "season": "jan–apr",
+   "roadClosedInWinter": false,
+   "aspect": "SØ",
+   "grade": 2,
+   "gradeReason": "Randofolk.no setter 6–7 timer på runden og beskriver terrenget som kupert, ikke bratt: «det er ikke mange partier som er utsatt for snøskred». Ut.no graderer sommerruta som krevende fottur på lengden. Det som løfter turen fra 1 til 2 er utløpssonene i Langedalen, som randofolk.no advarer om to ganger, og at toppanløpet fra sørsida kan bety å ta av skiene i lite snø.",
+   "hazardNotes": "Langedalen er den ene plassen på Blefjell der skred faktisk teller: randofolk.no skriver «vær oppmerksom på utløpssoner!» både for oppstigningen og for nedkjøringa den vegen. Selve toppen tas enten fra sørsida, som er brattest og steinete i lite snø, eller langs fjellet og opp fra nordsida, som er den slake. Skogpartiet ned mot Nordstulvatnet er brattere enn resten av ruta. Blefjell er høyfjell med tynt jordlag og lys kvartsitt — vinden pakker snøen hardt over tregrensa, og orienteringspunktene er få i skodde.",
+   "teaserNo": "670 høydemeter fra Nordstulvatnet gjennom skogen og opp om Sigridsbu — utløpssonene ligger i Langedalen ved sida av.",
+   "teaserEn": "670 m of climbing from Nordstulvatnet through the forest and up past Sigridsbu — the avalanche runouts are in Langedalen alongside.",
+   "sources": [
+    "https://www.randofolk.no/toppturer/store-ble-hvem-skulle-tro-dette-skulle-bli-en-av-favorittene/",
+    "https://ut.no/turforslag/116430/bletoppen-store-ble",
+    "https://ut.no/turforslag/1112877/topptur-til-bledalsrinden",
+    "https://www.visittelemark.no/notodden/opplev-notodden/blefjell-og-bletoppen-p1538273"
+   ],
+   "confidence": "high",
+   "notes": "randofolk.no er vinterkilden: 1342 moh, ca. 16 km tur-retur, ca. 900 høydemeter fra Nordstulvatnet, 6–7 timer, sesong januar–april, med hele rutekjeden fra kiosken ved parkeringa til toppen og to beskrevne nedkjøringer. Ut.no 116430 dekker samme linje på barmark (15,1 km, 704 høydemeter) og navngir Sigridsbu, Langedalen, utsiktsløypa og vestre Bletjønn. Bletjønn finnes ikke i registeret og er utelatt. Kongtjønn (1225 moh) og Sigridsfjell (1193 moh), som randofolk.no bruker om nedkjøringa, resolverer begge og ligger der teksten sier."
+  }
+ },
+ {
+  "slug": "surloytenuten",
+  "verdict": "corrected",
+  "corrections": [
+   "Sesongen er ikke publisert for denne toppen. Den er satt til jan–apr fordi Surløytenuten deler parkering, høydeband og fjell med Store Ble, der randofolk.no oppgir januar til april. Det er en avledning fra nabotoppen, ikke en kilde for denne.",
+   "Vassholet er et søkk i registeret, ikke et vann, og ligger på 992,7 moh nord for toppen. Turbeskrivelsen svinger til venstre der og følger Surløyterinden sørover — korridoren gjør det samme, og det er derfor ruta går forbi toppen i nord før den kommer tilbake til den.",
+   "Nordstul-parkeringa leser 714,0 moh og toppen 1096,9. Ut.nos oppgitte 428 høydemeter for rundturen er dermed kumulativ stigning inkludert kupering, ikke topp minus start (383).",
+   "Aspektet måler NØ på ruta og står som S på kortet. Korridoren går nordover til Vassholet og sørover ryggen til toppen, så det siste stykket vender nordover — men den dokumenterte nedkjøringa er «bratt nedstigning mot sør», og det er flanken kortet skal beskrive.",
+   "Målt linje: 456 høydemeter, 6,1 km, bratteste band 5,3° og bratteste 30 m 24,9°. De 73 metrene ruta gir tilbake er søkket ved Vassholet, som beskrivelsen går gjennom."
+  ],
+  "rejectReason": "",
+  "corridor": {
+   "routeId": "sudstul",
+   "routeName": "Fra Nordstul om Sudstul og Vassholet",
+   "routeDescriptionFull": "Fra nordenden av parkeringa ved Nordstul (714 moh) følger du stien ned til høyre og krysser Esperåa på bru (730 moh). Hold til høyre og følg den kloppelagte stien til setervollen Sudstul (727 moh), der DNT-ruta mellom Selsli og Sigridsbu krysser. Ta av til høyre rett før siste hytte på vollen og følg den umerkede, men godt synlige stien nordover mot Vassholet (993 moh). Ved Vassholet svinger ruta til venstre og følger det ytre høydedraget langs Surløyterinden (1085 moh) sørover til varden på 1097 moh. Retur enten samme veg eller bratt nedstigning mot sør til DNT-stien.",
+   "trailhead": {
+    "name": "Nordstul",
+    "lat": 59.77637,
+    "lng": 9.2193,
+    "elevationM": 714.0,
+    "osmEvidence": "OSM way/185143342, amenity=parking, name=Nordstulvtnet, senter 59.77637/9.21930, 714,0 moh — samme parkering som Store Ble. Ut.no: «Følg vegen til stor parkeringsplass ved Nordstul. Fra nordenden av parkeringsplassen følg sti ned til høyre. Kryss Esperåa på bru.»"
+   },
+   "waypoints": [
+    {
+     "name": "Esperåa bru",
+     "lat": 59.77953,
+     "lng": 9.21582,
+     "elevationM": 729.65
+    },
+    {
+     "name": "Sudstul",
+     "lat": 59.78396,
+     "lng": 9.22618,
+     "elevationM": 726.81
+    },
+    {
+     "name": "Vassholet",
+     "lat": 59.80915,
+     "lng": 9.21509,
+     "elevationM": 992.73
+    },
+    {
+     "name": "Surløyterinden",
+     "lat": 59.805,
+     "lng": 9.20936,
+     "elevationM": 1084.6
+    }
+   ],
+   "season": "jan–apr",
+   "roadClosedInWinter": false,
+   "aspect": "S",
+   "grade": 2,
+   "gradeReason": "Ut.no graderer den «middels krevende» med tre timer og 428 høydemeter på ti kilometer. Ruta er slak til Vassholet og går så på rygg; det bratte partiet er nedstigningen mot sør, som beskrivelsen kaller bratt og bruker som returalternativ. Nabotoppene Tverrgrønuten, Blerinden og Bletoppen ligger i nordvest, og fjellet er åpent og vindutsatt over tregrensa.",
+   "hazardNotes": "Den bratte nedstigningen mot sør er det eneste partiet på turen der helninga teller, og den er samtidig den anbefalte returen — velg den etter forholdene, ikke etter kartet. Ryggen langs Surløyterinden er avblåst i vind og kan være hard og isete mens sørsida er myk. Blefjell har en sårbar villreinstamme, og ut.no ber uttrykkelig om at det tas hensyn; det er en grunn til å holde seg til den beskrevne ruta framfor å legge egne spor over platået.",
+   "teaserNo": "460 høydemeter fra Nordstul om Sudstul og Vassholet, og sørover det ytre høydedraget langs Surløyterinden til varden.",
+   "teaserEn": "460 m of climbing from Nordstul by Sudstul and Vassholet, then south along the outer ridge of Surløyterinden to the cairn.",
+   "sources": [
+    "https://ut.no/turforslag/116642/topptur-til-surlytenuten-1096-moh-pa-blefjell",
+    "https://ut.no/turforslag/116430/bletoppen-store-ble",
+    "https://www.randofolk.no/toppturer/store-ble-hvem-skulle-tro-dette-skulle-bli-en-av-favorittene/"
+   ],
+   "confidence": "medium",
+   "notes": "Ut.no 116642 er den eneste fulle rutebeskrivelsen og gir hele kjeden med avstander: parkeringa på Nordstul, Esperåa på bru, Sudstul, umerket sti til Vassholet, ytre høydedrag langs Surløyterinden til varden, «i overkant av 10 km». Alle fire waypointene resolverer i registeret og måler på DTM1. Beskrivelsen er for barmark; vinterbruken hviler på at ruta deler parkering og terreng med Store Ble, der randofolk.no beskriver skiturbruken direkte. Det er svakere enn de andre seks i denne runden, og confidence er satt deretter."
+  }
+ },
+ {
+  "slug": "gyranfisen",
+  "verdict": "corrected",
+  "corrections": [
+   "Fjellet skrives Gyranfisen i registeret og Jøranfisen på Vikersetras sider; det er samme topp på 60.47203/9.89027, og DTM1 gir 1127,1 mot publiserte 1127.",
+   "Vinterstarten er Vikerkoia, ikke Sandviksetra som sommerbeskrivelsen bruker. Vikerfjell Skiløyper kjører løype fra Tosseviksetra nordover til Skarrud via Den store steinen og har egne løyper til Gyranfisen og Treknatten; Vikersetra.com peker på Vikerkoia og Fanteputten som utgangspunktene med parkering.",
+   "Svarttjernskollen leser 1054,3 moh mot ut.nos oppgitte 1054 — kontrollen på at korridoren følger den beskrevne ryggen og ikke Fjelldalen i vest.",
+   "Venekollen ligger på 982,4 moh og passeres «på høyre hånd» i turbeskrivelsen — waypointet er derfor lagt 300 m vest for toppen, på 948,8 moh, der ruta faktisk går. Med pinnen på selve toppen ga korridoren 694 høydemeter og 227 m tilbake; slik den står nå gir den 668 og 202. Tilbakefallet er ekte uansett variant: mellom Svarttjernskollen og Gyranfisen ligger søkket mot Fjelldalen og Steintjern, og DTM1 leser 866 moh midtveis mot 1054 og 1127 på de to sidene.",
+   "Målt linje: 666 høydemeter, 5,4 km, bratteste band 15,4° og bratteste 30 m 24,9°, og 200 m gitt tilbake. Aspektet er satt til Ø etter målingen framfor researchens SØ."
+  ],
+  "rejectReason": "",
+  "corridor": {
+   "routeId": "vikerkoia",
+   "routeName": "Fra Vikerkoia over Svarttjernskollen",
+   "routeDescriptionFull": "Fra parkeringa ved Vikerkoia på Vikerseterveien (661 moh) stiger ruta nordvestover opp til Svarttjernskollen (1054 moh), det første høydepunktet på fjellryggen, med vidt utsyn over Vikerfjellplatået. Videre nordover forbi Venekollen (982 moh), som passeres på høyre hånd, og Den store steinen — flyttblokka som er merket på kartet — før ruta tar av mot sørvest og opp på Gyranfisen, 1127 moh og Ringerikes høyeste punkt. Rett vestunder faller fjellet mot den brede Vidalen.",
+   "trailhead": {
+    "name": "Vikerkoia",
+    "lat": 60.44742,
+    "lng": 9.95201,
+    "elevationM": 660.67,
+    "osmEvidence": "OSM node/1897235677, amenity=parking, 60.44742/9.95201, 660,7 moh, 220 m fra node/1288126381 (tourism=wilderness_hut, Vikerkoia). Tre parkeringsnoder til ligger langs samme veg vestover. Vikersetra.com: «På Vikerseterveien har man perfekt utgangspunkt til løypenettet fra både Fanteputten og Vikerkoia … Det er svært gode parkeringsmuligheter begge steder.»"
+   },
+   "waypoints": [
+    {
+     "name": "Svarttjernskollen",
+     "lat": 60.46191,
+     "lng": 9.93353,
+     "elevationM": 1054.32
+    },
+    {
+     "name": "Vest for Venekollen",
+     "lat": 60.47604,
+     "lng": 9.9126,
+     "elevationM": 948.76
+    }
+   ],
+   "season": "jan–apr",
+   "roadClosedInWinter": false,
+   "aspect": "Ø",
+   "grade": 2,
+   "gradeReason": "Vikersetra.com kaller den «en krevende topptur» og setter 7 km hver veg med rundt 600 høydemeter. Terrenget er myrlendt platå og avrundede koller uten bratte partier; vanskeligheten er lengden, høydedraget som går opp og ned over Svarttjernskollen og Venekollen, og at siste stykke opp på Gyranfisen er umerket på barmark.",
+   "hazardNotes": "Vestsida av Gyranfisen stuper mot Vidalen, og både Bukollen, Gråfjell og Storrustefjell på andre sida av dalen er beskrevet med bratte stup — det er den kanten toppen har, og den er feil veg å kjøre ned. Ryggen fra Svarttjernskollen til toppen er avblåst i vind. Løypene til Gyranfisen og Treknatten kjøres bare når forholdene tillater det, og prioriteres i vinter- og påskeferien; utenfor det er ruta usporet myr og fjell. Vikerfjell naturreservat dekker deler av området.",
+   "teaserNo": "670 høydemeter fra Vikerkoia over Svarttjernskollen, med 200 av dem gitt tilbake i søkket før Ringerikes høyeste punkt.",
+   "teaserEn": "670 m of climbing from Vikerkoia over Svarttjernskollen, 200 of them given back in the dip before the highest point in Ringerike.",
+   "sources": [
+    "https://ut.no/turforslag/1111944/gyranfisen-toppen-av-ringerike",
+    "http://www.vikersetra.com/Vikersetra/Ski.html",
+    "https://www.vikerfjell.com/vikerfjell-skiloyper-informerer-2/",
+    "http://www.vikerfjell.com/vikerfjell-skiloyper/"
+   ],
+   "confidence": "medium",
+   "notes": "Ut.no 1111944 gir den detaljerte rutekjeden over Svarttjernskollen (1054 moh), Venekollen, Den store steinen og opp mot Gyranfisen (1127 moh) — den er skrevet for barmark og starter fra Sandviksetra. Vinterbruken er dokumentert av Vikerfjell Skiløyper, som kjører egne løyper til toppen av Gyranfisen og Treknatten, og av Vikersetra.com, som beskriver toppturen fra Vikerkoia med parkering. Korridoren starter derfor ved Vikerkoia. Den store steinen er en flyttblokk uten navn i registeret og er utelatt fra waypointene; Treknatten (1097,7 moh) ligger 1,3 km nordøst for toppen og er den andre toppen løypa går til."
+  }
+ },
+ {
+  "slug": "styggemann",
+  "verdict": "corrected",
+  "corrections": [
+   "Registeret skriver Styggmann, turbeskrivelsene Styggemann eller Styggemannen. Kortet bruker Styggemann. Toppen måler 871,4 moh mot publiserte 871 — og Styggemannshytta, 30 m unna, leser 871,2.",
+   "Vinterruta går fra Ravalsjø i vest, ikke fra Stølevann i øst. Begge er hovedutgangspunkt for de oppkjørte løypene i Skrim; Ravalsjø er den som har den navngitte kjeden Ormetangen–Skrimsetra–Fugleleikskarva–Sørmyrseter, og som DNTs egen områdebeskrivelse oppgir høydeforskjellen fra: «fra Sørmyrseter er det en stigning på ca. 240 meter til Styggemann».",
+   "620,5 moh på Sørmyrseter pluss de 240 metrene DNT oppgir gir 860 mot en topp på 871. Ruta fra setra er altså litt brattere enn tallet antyder, og den er også beskrevet som «temmelig bratt» av ut.no.",
+   "Målt linje: 549 høydemeter, 9,6 km, bratteste band 15,1° og bratteste 30 m 23,2°, og 161 m gitt tilbake over de rullende skogsryggene mellom Ravalsjø og Sørmyrseter. Terrengmålingen gir grad 1; graden står som 2 på den siste kilometeren opp fra setra.",
+   "Aspektet er satt til SV etter målingen på linja framfor researchens S."
+  ],
+  "rejectReason": "",
+  "corridor": {
+   "routeId": "ravalsjo",
+   "routeName": "Fra Ravalsjø over Fugleleikskarva og Sørmyrseter",
+   "routeDescriptionFull": "Fra parkeringa ved Ravalsjø (483 moh) følger du skilting og merking forbi Ormetangen (476 moh) og opp lia øst for vatnet, videre forbi Skrimsetra (591 moh) og Urdstjerna, over Fugleleikskarva (635 moh) til DNT-hytta Sørmyrseter (620 moh). Fra setra er det rundt 240 høydemeter opp til Styggemann, Skrims høyeste topp på 871 moh, med Styggemannshytta rett ved varden. Oppstigningen fra sør er temmelig bratt.",
+   "trailhead": {
+    "name": "Ravalsjø",
+    "lat": 59.52186,
+    "lng": 9.54564,
+    "elevationM": 483.09,
+    "osmEvidence": "OSM way/612082547, amenity=parking, senter 59.52186/9.54564, 483,1 moh, ved nordenden av Ravalsjø (SSR-vannet ligger på 475 moh). Adkomst forbi Heistadmoen og Raje på bomveg. Ut.no beskriver parkeringa i området som helårsåpen, og Skrim har oppkjørte løyper med Ravalsjø i vest og Stølevann i øst som hovedutgangspunkt."
+   },
+   "waypoints": [
+    {
+     "name": "Ormetangen",
+     "lat": 59.51822,
+     "lng": 9.55183,
+     "elevationM": 476.29
+    },
+    {
+     "name": "Skrimsetra",
+     "lat": 59.50837,
+     "lng": 9.59368,
+     "elevationM": 590.58
+    },
+    {
+     "name": "Fugleleikskarva",
+     "lat": 59.5041,
+     "lng": 9.62403,
+     "elevationM": 634.53
+    },
+    {
+     "name": "Sørmyrseter",
+     "lat": 59.50372,
+     "lng": 9.64855,
+     "elevationM": 620.45
+    }
+   ],
+   "season": "jan–mars",
+   "roadClosedInWinter": false,
+   "aspect": "SV",
+   "grade": 2,
+   "gradeReason": "Åtte kilometer i skogsterreng på oppkjørte løyper med en kort, bratt topp til slutt. Ut.no fører skituren i området som «lett» og barnevennlig, men skriver om selve toppen at «turen opp på Styggemann er nemlig temmelig bratt» og anbefaler å sette igjen sekken i stikrysset. Det er den siste kilometeren som gir graden.",
+   "hazardNotes": "Toppen ligger over tregrensa og er den eneste plassen på turen der helninga teller: 240 høydemeter opp fra Sørmyrseter på rundt en og en halv kilometer, brattest de siste hundre. Ellers er ruta skogsterreng og myr, og faren er å bomme på løypa i skodde snarere enn skred. Skrim ligger lavt nok til at snøen kommer og går — ut.no fører skisesongen som januar til mars — og løypene mellom Ravalsjø og Sørmyrseter er det som gjør turen gjennomførbar på en dag.",
+   "teaserNo": "550 høydemeter og 9,6 km fra Ravalsjø om Sørmyrseter, med de siste 240 rett opp på Skrims høyeste topp.",
+   "teaserEn": "550 m of climbing and 9.6 km from Ravalsjø by way of Sørmyrseter, the last 240 straight up to the highest top in Skrim.",
+   "sources": [
+    "https://ut.no/turforslag/115250/skrim-barnevennlig-skitur",
+    "https://ut.no/turforslag/115278/helgetur-pa-skrim",
+    "https://fjellogvidde.dnt.no/ut-pa-tur/skrim/",
+    "https://ut.no/hytte/10828/styggemannshytta"
+   ],
+   "confidence": "medium",
+   "notes": "Ut.no 115250 er en skitur (SKI_TOURING, sesong januar–mars) i det samme løypenettet og navngir Styggemann, 871 moh, som toppen man tar oppom. Ut.no 115278 beskriver oppstigningen og hvor bratt den er. DNTs egen områdebeskrivelse i Fjell og Vidde gir vinterkjeden fra Ravalsjø: forbi Ormetangen, opp lia øst for Ravalsjø, forbi Skrimsetra og Urdstjerna, over Fugleleikskarva til Sørmyrseter, og 240 høydemeter derfra til toppen. Urdstjerna finnes ikke i registeret og er utelatt fra waypointene; de fire andre resolverer og måler. Den østlige adkomsten fra Stølevann om Ivarsbu og stikrysset vest på Jotefjell (765 moh) er dokumentert i samme kilde, men er ikke lagt inn som korridor."
+  }
  }
 ]

@@ -160,6 +160,20 @@ export const TOUR_TEASER_EN: Record<string, string> = {
     "1270 m of ascent from the fjord at Ænes up the ridge above Gygrastølvatnet, facing the Folgefonna icecap.",
   juklavasstinden:
     "1340 m of ascent from Myrdalsvatnet: up the ridge, down to Møsetjørna and up the north ridge to a corniced top.",
+  hogevarde:
+    "600 m of climbing from Tempelseter up the staked track to the DNT hut at 1397 m, then the last 560 metres out along the ridge to the view indicator.",
+  grafjell:
+    "580 m of climbing and 7.8 km from Tempelsetra past Istjenn and Donkelitjenn to the highest top on Norefjell.",
+  ranten:
+    "530 m of climbing from Tempelseter by way of the Raudmyra junction and west onto the jagged ridge Kittelsen painted as Soria Moria.",
+  "store-ble":
+    "670 m of climbing from Nordstulvatnet through the forest and up past Sigridsbu — the avalanche runouts are in Langedalen alongside.",
+  surloytenuten:
+    "460 m of climbing from Nordstul by Sudstul and Vassholet, then south along the outer ridge of Surløyterinden to the cairn.",
+  gyranfisen:
+    "670 m of climbing from Vikerkoia over Svarttjernskollen, 200 of them given back in the dip before the highest point in Ringerike.",
+  styggemann:
+    "550 m of climbing and 9.6 km from Ravalsjø by way of Sørmyrseter, the last 240 straight up to the highest top in Skrim.",
 
 };
 
