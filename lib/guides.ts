@@ -506,6 +506,260 @@ export const GUIDES: Record<string, TourGuide> = {
       caption: "61 til 741 moh på 3,1 kilometer: jevn stigning gjennom dalen, ett bratt trinn, så flatt inn til varden.",
     },
   },
+  vassfjellet: {
+    slug: "vassfjellet",
+    intro:
+      "541 høydemeter og 4,74 km fra Markavollen til varden på 711 moh — den nærmeste toppturen til Trondheim. Nesten alt det bratte ligger i ett band: 15,9 grader fra 500 til 600 moh, over bare 405 meter grunn. Brattaste sammenhengende steg er 23,0 grader mellom 534 og 553 moh, og det er også det brattaste hele linja måler.",
+    ascent: [
+      "Start på parkeringa på Markavollen, 184 moh. Ut.no oppgir p-avgift, og terrengmodellen leser plassen til 184 moh — nøyaktig den starthøyda beskrivelsen oppgir. Følg skiløypa sørover, så østover og sørover igjen. Første halvdel er flat i en topptur å være: bandet fra 300 til 400 moh måler 4,6 grader over 1215 meter grunn, og 400 til 500 moh 3,3 grader over 1710.",
+      "Vassfjellhytta ligger på 507 moh, og rett etter den kommer stigninga: 15,9 grader fra 500 til 600 moh over 405 meter grunn, med et steg på 23,0 grader mellom 534 og 553 moh. Skogen slipper taket på 512 moh, og fra 597 er terrenget åpent.",
+      "Over skoggrensa slakner det til 11,6 grader fra 600 til 700 moh, og du treffer anleggsvegen ut.no sender deg inn på. Den går opp til Melhus hovedsender, kommunikasjonsmasta som står 131 meter fra varden på 709 moh. Varden selv står på 711, og terrengmodellen måler den til 710,9.",
+    ],
+    descent: [
+      "Ned samme vegen. Første 200 meter fra varden peiler 255 grader — vest — ned til 676 moh, og 500 meter ned peiler 249. Det er flanken kortet fører: vestsida måler 12,0 grader i snitt over 400 meter med et 26,2 graders vindu 230 til 290 meter ut, og 12,3 grader i snitt når sveipet går ut til en kilometer.",
+      "Ut.no advarer mot «diverse brattheng både under og over tregrensa», og sveipet sier hvor de er. Nordvest er brattast: 13,8 grader i snitt med 33,3 grader i vinduet 190 til 250 meter ut, og 32,9 grader 180 til 240 meter ut når sveipet går en kilometer. Søraust måler 13,9 i snitt og 26,7 i brattaste vindu. Nordaust, mot heisene, måler 3,9 — men det du kommer ned i der er alpinbakken i Vassfjellet skisenter, ikke fjellet.",
+    ],
+    avalanche: [
+      {
+        title: "Ruta",
+        body: "541 høydemeter der bandene under 500 moh måler 3,3 og 4,6 grader, og bandet fra 500 til 600 måler 15,9 over 405 meter grunn. Brattaste punkt på hele den routede linja er 23,0 grader, mellom 534 og 553 moh, og ruta gir tilbake 14 høydemeter på 4,74 km. Det er en løypetur med ett bratt parti i, ikke en flankeoppstigning.",
+      },
+      {
+        title: "Terrenget utenfor",
+        body: "Fjellet har bratte sider; de ligger bare ikke der løypa går. Nordvest måler 33,3 grader i brattaste 60-metersvindu innafor 400 meter og 32,9 grader ut til en kilometer, søraust 26,7 og vest 26,2. Det er høyt og bratt nok til at et enkeltheng kan løsne, og det er akkurat de linjene som frister når du står på toppen med skiene på.",
+      },
+      {
+        title: "Før du går",
+        body: "Sjekk dagens skredvarsel for Sør-Trøndelag på varsom.no. Sør-Trøndelag er en B-region: den varsles bare ved faregrad 4 og 5, så de fleste vinterdager finnes det ingen vurdering å lese, og en tom side betyr ikke et trygt fjell. Ta med sender/mottaker, søkestang og spade.",
+      },
+    ],
+    elevationProfile: {
+      path: "M0,200 L18,192 L37,186 L58,179 L80,170 L98,165 L120,158 L136,152 L154,149 L177,146 L200,145 L223,141 L245,133 L263,127 L280,119 L304,111 L325,110 L348,106 L366,99 L388,95 L411,95 L428,95 L450,93 L473,93 L496,88 L513,79 L530,61 L547,49 L566,36 L581,29 L600,18",
+      startLabel: "184 moh",
+      endLabel: "711 moh",
+      distanceLabel: "4,7 km",
+      caption: "541 høydemeter og 4,74 km fra Markavollen forbi Vassfjellhytta på 507 moh, med skogen som slipper taket på 512 og åpent terreng fra 597 moh.",
+    },
+  },
+  krakfjellet: {
+    slug: "krakfjellet",
+    intro:
+      "430 høydemeter og 9,34 km fra Håen til kommunetoppen i Trondheim. Det er en lang, slak dag: bandet fra 400 til 500 moh måler 1,2 grader over 4238 meter grunn, og det brattaste stedet på hele linja er 18,6 grader mellom 465 og 480 moh.",
+    ascent: [
+      "Start på parkeringa ved Håen, 411 moh, der Lundadalsvegen ender — bomveg fra Lundamo, og normalt brøytet de 18 kilometerne inn. Følg strandlinja på nordsida av vatnet rett austover. Vassflata måler 433 moh og er klassifisert som regulert innsjø: Håen tappes ned hver vinter, og ut.no ber deg holde deg unna usikker is langs kanten.",
+      "Etter knapt tre kilometer kommer du til Kråklivollen, 452 moh, og derfra går ruta opp i skogen, opp Kråklia og vest for Samsjølia. Bandet fra 400 til 500 moh måler 1,2 grader over 4238 meter grunn — det er avstanden, ikke stigninga, som er turen her.",
+      "Rundtjønnin ligger på 526 moh, og det er kontrollmålet på at ruta ligger der beskrivelsen sier: ut.no oppgir 525. Videre nord og nordaust følger du rygger eller søkk i samme retning, avhengig av snø og føre, til ruta dreier mot nord og nordvest opp mot toppen. Bandene over Rundtjønnin måler 2,4, 3,8 og 5,4 grader.",
+      "Varden står på 815 moh. Kråkfjellet ble kommunetopp i Trondheim etter sammenslåinga med Klæbu, og publiserte tall sier 817; terrengmodellen leser 814,9 på det høyeste punktet, og kortet fører målinga.",
+    ],
+    descent: [
+      "Ned samme vegen. Første 200 meter fra toppen peiler 202 grader, ned til 789 moh, og 500 meter ned peiler 199. Parkeringa ligger 7,4 km unna, på peiling 225 grader, så det meste av nedturen er å gå, ikke å kjøre.",
+      "Sveipet finner ingen bratt side på dette fjellet: brattaste 60-metersvindu i noen retning er 21,8 grader mot aust, i vinduet 260 til 320 meter ut, nordaust måler 13,1 grader i snitt og nord 2,0. Det ut.no advarer mot er noe annet enn skred — «høye skavler i le-retningen» som du kan falle ned fra i dårlig lys når du krysser ryggene i området.",
+    ],
+    avalanche: [
+      {
+        title: "Ruta",
+        body: "Ni kilometer der bandene måler 1,2, 2,4, 3,8 og 5,4 grader, og brattaste sammenhengende steg er 18,6 grader mellom 465 og 480 moh. Ruta gir tilbake 26 høydemeter. Den routede linja stiger 430 høydemeter mot ut.nos oppgitte 519: forskjellen ligger i linjevalget mellom ryggene, som beskrivelsen selv overlater til snøen og føret.",
+      },
+      {
+        title: "Terrenget utenfor",
+        body: "Brattaste måling rundt toppen er 21,8 grader mot aust. Nord er nesten flatt, 2,0 grader i snitt over 400 meter. De to tingene som kan gå galt her er derfor ikke skred i seg selv: skavlene ut.no beskriver, som er et fallproblem i dårlig lys, og isen på Håen, som er regulert og tappes ned hver vinter.",
+      },
+      {
+        title: "Før du går",
+        body: "Sjekk dagens skredvarsel for Sør-Trøndelag på varsom.no. Sør-Trøndelag er en B-region: den varsles bare ved faregrad 4 og 5, så de fleste vinterdager finnes det ingen vurdering å lese, og en tom side betyr ikke et trygt fjell. Ta med sender/mottaker, søkestang og spade.",
+      },
+    ],
+    elevationProfile: {
+      path: "M0,200 L24,198 L44,189 L67,190 L87,190 L113,190 L134,190 L155,190 L180,187 L199,182 L217,181 L235,179 L255,163 L275,158 L301,147 L319,147 L339,148 L362,146 L380,143 L403,123 L425,114 L445,110 L466,105 L484,99 L506,80 L524,68 L547,55 L564,45 L585,30 L600,18",
+      startLabel: "411 moh",
+      endLabel: "815 moh",
+      distanceLabel: "9,3 km",
+      caption: "430 høydemeter og 9,34 km fra Håen om Kråklivollen på 452 moh og Rundtjønnin på 526, med de siste 148 meterne grunn over 800 moh.",
+    },
+  },
+  rensfjellet: {
+    slug: "rensfjellet",
+    intro:
+      "674 høydemeter og 11,0 km fra Håen til Melhus' høyeste punkt, med 143 av høydemeterne gitt tilbake underveis. Stigninga kommer sist: brattaste hundremetersband er 12,2 grader fra 700 til 800 moh, og brattaste sammenhengende steg 25,9 grader mellom 660 og 682.",
+    ascent: [
+      "Start på parkeringa ved Håen, 411 moh, og følg nordbredden austover — de samme tre første kilometerne som Kråkfjellet, og det samme regulerte vatnet på 433 moh å holde seg unna kanten av. Kråklivollen ligger på 452 moh.",
+      "Videre opp Kråklia og vest for Samsjølia, forbi Rundtjønnin på 526 moh. Ut.no oppgir 525 for dette vatnet og terrengmodellen leser 526 — det er kontrollen på at korridoren følger den beskrevne løypa. Bandene hit måler 1,3 og 1,4 grader, over 4147 og 4096 meter grunn.",
+      "Så krysser ruta Oksdalen på 532 moh. Punktet er ikke navngitt i noen kilde: dalen er registrert med representasjonspunkt 3,95 km unna på peiling 15, altså nord-nordaust, og kryssinga er lest ut av terrengmodellen som lavlinja sørover derfra. Skogen slipper taket på 543 moh.",
+      "Etter Oksdalen begynner de siste fire kilometerne. Bandet fra 600 til 700 moh måler 6,0 grader, og det er her det brattaste sammenhengende steget ligger — 25,9 grader mellom 660 og 682 moh. Videre måler 700 til 800 moh 12,2 grader over 450 meter grunn, og så slakner det til 5,8 og 6,3 mot varden på 942 moh. Rensfjellet er grensetopp mellom Melhus, Midtre Gauldal og Selbu; ut.no noterer at den «mangler bare 2,1 km mot N-NV på å inkludere også Trondheim i den klubben».",
+    ],
+    descent: [
+      "Ned samme vegen, vestover: første 200 meter fra toppen peiler 251 grader ned til 915 moh, og 500 meter ned 254. Parkeringa ligger 10,2 km unna, på peiling 254 grader. Ut.no gir ett alternativ — å styre ned mot Samsjøen etter Oksdalen — og setter to betingelser: at føret utenfor oppkjørte løyper er godt, eller at du har et spor å gå i.",
+      "Sveipet finner ingen bratt side innafor 400 meter av varden: aust måler 11,0 grader i snitt med 17,8 i brattaste vindu, søraust 3,4 og nordvest 2,5. Ut.nos «bratte enkeltheng som er høye nok til at det kan gå skred» ligger lenger ute enn sveipet rekker, og beskrivelsen sier selv at de er mulige å unngå.",
+    ],
+    avalanche: [
+      {
+        title: "Ruta",
+        body: "Elleve kilometer der de to lange bandene måler 1,3 og 1,4 grader over drøye fire kilometer hver, og all stigninga ligger i de siste fire. Brattaste sammenhengende steg er 25,9 grader mellom 660 og 682 moh, brattaste hundremetersband 12,2 fra 700 til 800. Ruta gir tilbake 143 høydemeter, mot ut.nos oppgitte «ca 130» — det er den samme terrengformen, rygger og søkk som må krysses.",
+      },
+      {
+        title: "Terrenget utenfor",
+        body: "Innafor 400 meter av varden er brattaste måling 17,8 grader mot aust. Det som gjør turen krevende er lengden og orienteringa: elleve kilometer over vann, myr og rygger, 143 høydemeter gitt tilbake på vegen inn og de samme igjen på vegen ut. Ut.no advarer om skavler i le-retningen, som er et fallproblem i dårlig lys, og om enkeltheng som finnes, men kan omgås.",
+      },
+      {
+        title: "Før du går",
+        body: "Sjekk dagens skredvarsel for Sør-Trøndelag på varsom.no. Sør-Trøndelag er en B-region: den varsles bare ved faregrad 4 og 5, så de fleste vinterdager finnes det ingen vurdering å lese, og en tom side betyr ikke et trygt fjell. Ta med sender/mottaker, søkestang og spade.",
+      },
+    ],
+    elevationProfile: {
+      path: "M0,200 L25,194 L51,192 L71,192 L98,192 L121,192 L143,192 L165,186 L190,186 L214,173 L236,168 L258,161 L280,160 L301,159 L322,162 L346,159 L367,152 L388,146 L408,159 L427,151 L449,134 L467,126 L489,112 L508,90 L532,65 L550,62 L572,41 L592,23 L600,18",
+      startLabel: "411 moh",
+      endLabel: "942 moh",
+      distanceLabel: "11,0 km",
+      caption: "674 høydemeter og 11,0 km fra Håen om Kråklivollen på 452 moh, Rundtjønnin på 526 og krysset av Oksdalen på 532, med skogen som slipper taket på 543 moh.",
+    },
+  },
+  snota: {
+    slug: "snota",
+    intro:
+      "1268 høydemeter og 10,22 km fra Gråhaugen til det høyeste fjellet nord i Trollheimen. Ruta går i skredterreng fra Litj-Snota og opp, krysser 436 meter bre mellom 1364 og 1471 moh, og toppflanken faller 48,1 grader mot aust.",
+    ascent: [
+      "Start på parkeringa ved dammen på Gråsjøen, 495 moh — 15 km bomveg opp Folldalsvegen, betaling med kort. Følg vegtraséen langs vatnet til sommerstien skrår opp lia, og ikke tidligere: ut.no advarer om at det kan gå skred fra fonna på Gråhaugfjellet, og at de enkelte år går helt ut på vatnet.",
+      "Opp lia sør–sørvest, gjennom 686 moh, med bandene 10,3, 6,3 og 7,0 grader. Så flater det ut på platået øst for Midtveggen, 931 moh: bandet fra 800 til 900 moh måler 3,2 grader over 1979 meter grunn, og 900 til 1000 måler 2,2 over 2250. Her gir ruta tilbake høyde, fra 931 ned til Svartvatnet på 888 moh — ut.no fører «ca 100» tapte høydemeter opp, og den routede linja gir tilbake 95.",
+      "Fra Svartvatnet kommer du til foten av Litj-Snota og runder den i aust, 1026 moh, og sør. Herfra og opp er du i utløpsområder og i kortere partier i løsneområder over 30 grader, som ut.no skriver at det ikke er mulig å omgå. Bandene stiger til 7,1, 15,7 og 15,3 grader.",
+      "På 1352 moh flater det ut, og den bratte bakken rett imot i vest er breen. Kartverket klasser sju punkter på linja mellom 1364 og 1471 moh som breterreng, og strekket måler 436 meter — ut.no oppgir «fra ca 1380 moh ... i ca 500 m» og ber deg sjekke med lokalkjente at det er nok snø. Brattaste sammenhengende steg på hele turen ligger her: 28,9 grader mellom 1414 og 1434 moh.",
+      "Over breen, på 1516 moh, kommer du opp på toppflanken, og ruta dreier sørvest, sør og til slutt sør–søraust til toppunktet på 1668 moh.",
+    ],
+    descent: [
+      "Ned samme sporet — ut.no kaller det det beste valget i de fleste tilfeller, og legger til at faren for våte løssnøskred øker utover dagen på varme vårdager. Første 200 meter fra toppen peiler 320 grader, altså nordvest, ned til 1653 moh, og 500 meter ned 328: ruta går tilbake langs toppflanken før den faller austover ned breen. Parkeringa ligger 8,0 km unna, på peiling 13 grader.",
+      "Det er verdt å vite hvorfor det første trekket går nordvest. Aust fra toppunktet måler 48,1 grader i snitt over 400 meter med et 57,9 graders vindu 130 til 190 meter ut — det er «toppflanken er stupbratt mot Ø» i tall. Sør og søraust måler 42,0 og 36,5 i snitt, med vindu på 71,4 og 71,0 grader bare 10 til 70 meter ut, og nordaust 42,0 med 64,2. Vest og nordvest, der ruta kommer opp og går ned, måler 14,8 og 9,4.",
+    ],
+    avalanche: [
+      {
+        title: "Ruta",
+        body: "1268 høydemeter og 10,22 km, med 95 gitt tilbake. Ut.no fører ruta som skredterreng — «både løsneområder over 30 grader bratt og utløpsområder som det ikke er mulig å omgå» — og terrengklassen som KAST 2, utfordrende. Brattaste hundremetersband på den routede linja er 15,7 grader fra 1100 til 1200 moh og brattaste steg 28,9 grader mellom 1414 og 1434, men de tallene beskriver skisporet, ikke sidene det går under.",
+      },
+      {
+        title: "Terrenget utenfor",
+        body: "Toppflanken mot aust måler 48,1 grader i snitt med 57,9 i brattaste vindu, og sør og søraust har vindu på 71,4 og 71,0 grader bare 10 til 70 meter ut fra toppunktet. Den andre er fonna på Gråhaugfjellet, nede ved starten: ut.no skriver at skred derfra enkelte år går helt ut på vatnet, og at turen ikke bør gås ved fare for store, naturlig utløste skred i østlige heng.",
+      },
+      {
+        title: "Før du går",
+        body: "Sjekk dagens skredvarsel for Trollheimen på varsom.no. Trollheimen er en A-region og varsles hver dag i sesongen. Breen mellom 1364 og 1471 moh krever nok snø, og ut.no ber deg sjekke med lokalkjente på forhånd. Ta med sender/mottaker, søkestang og spade.",
+      },
+    ],
+    elevationProfile: {
+      path: "M0,200 L24,191 L45,181 L66,175 L87,170 L111,163 L135,154 L158,146 L182,136 L203,132 L222,132 L243,132 L264,132 L290,138 L314,139 L338,138 L362,138 L385,124 L407,116 L430,113 L446,100 L468,86 L486,71 L507,64 L528,52 L549,42 L570,29 L596,19 L600,18",
+      startLabel: "495 moh",
+      endLabel: "1668 moh",
+      distanceLabel: "10,2 km",
+      caption: "1268 høydemeter og 10,22 km fra Gråhaugen om platået øst for Midtveggen på 931 moh, Svartvatnet på 888 og flata på 1352, med breen fra 1364 til 1471 moh.",
+    },
+  },
+  storbekkhoa: {
+    slug: "storbekkhoa",
+    intro:
+      "893 høydemeter og 5,57 km fra Storli til varden på 1504 moh. Oppstigninga er slak — brattaste hundremetersband er 17,5 grader — og sørøstveggen rett ved toppen er ikke: den måler 34,1 grader i snitt med et 46,9 graders vindu 20 til 80 meter ut fra varden.",
+    ascent: [
+      "Start på parkeringa ved Storli, 623 moh — avgiftsbelagt, 30 kroner i kassa, og taggd for ski. Ut.no: «Fra Storli parkering spenner du på deg skia ved bilen.» Gå rett nordover mot Storbekkdalen gjennom bjørkelia til høyre for Veslebekken. Bandet fra 700 til 800 moh er det brattaste på hele turen, 17,5 grader over 299 meter grunn.",
+      "Skogen slipper taket på 822 moh, og fra 918 er du i åpent terreng og myr. Dalbotnen på 1000 moh er flat — bandet fra 900 til 1000 måler 3,4 grader over 1621 meter grunn — og det er her ruta krysser Storbekken og legger seg vestover opp mot ryggen.",
+      "Ryggen vest for bekken ligger på 1211 moh, og det brattaste sammenhengende steget kommer like under: 26,4 grader mellom 1082 og 1099 moh. Videre nordover langs ryggen til den bratte sørøstveggen står rett imot deg — da går du et stykke lenger vest og opp gjennom skaret på 1313 moh.",
+      "Fra skaret følger ruta det slake terrenget i en halvsirkel til varden på 1504 moh, der kassa med gjesteboka står. Bandene her måler 17,5 og 16,1 grader. Kildene er uenige om høydemeterne — Fri Flyt oppgir 600, ut.no 900 — og den routede linja stiger 893 fra en parkering terrengmodellen leser til 623 moh. Fri Flyts egen GPS-posisjon for toppunktet lander 27 meter fra det punktet summitsøket klatrer til.",
+    ],
+    descent: [
+      "Ned samme vegen, og de første metrene går vestover, ikke mot bilen: første 200 meter fra varden peiler 276 grader, ned til 1458 moh, og 500 meter ned 236. Parkeringa ligger 4,2 km unna, på peiling 170 grader. Halvsirkelen må gås ferdig før ruta snur sørover, og i dårlig sikt er det den detaljen som betyr noe her.",
+      "Sørøstveggen er den Fri Flyt advarer mot, og sveipet bekrefter den: 34,1 grader i snitt over 400 meter med et 46,9 graders vindu 20 til 80 meter ut fra varden. Sør måler 25,5 med samme 46,9 i vinduet 30 til 90 meter, og aust 24,9 med 35,5. Nordvest — der ruta kommer opp — måler 3,7 grader i snitt, med 7,7 som brattaste vindu.",
+    ],
+    avalanche: [
+      {
+        title: "Ruta",
+        body: "893 høydemeter der brattaste hundremetersband er 17,5 grader fra 700 til 800 moh og brattaste sammenhengende steg 26,4 grader mellom 1082 og 1099. Fri Flyt skriver at hele oppstigninga går i terreng under 30 grader og fører turen som KAST 1. Ruta gir tilbake 12 høydemeter på 5,57 km.",
+      },
+      {
+        title: "Terrenget utenfor",
+        body: "Fri Flyt fører ett utløpsområde og «den bratte sørøstsiden av toppen. Her kan det være skumle skavler.» Sveipet måler den sida til 34,1 grader i snitt og 46,9 i brattaste vindu 20 til 80 meter ut, og sørsida til 25,5 med samme 46,9 i vinduet 30 til 90. Nedkjøring mot Storbekkdalen er brattere enn oppstigninga, og Fri Flyt kaller det skredfarlig terreng.",
+      },
+      {
+        title: "Før du går",
+        body: "Sjekk dagens skredvarsel for Trollheimen på varsom.no. Trollheimen er en A-region og varsles hver dag i sesongen. Ta med sender/mottaker, søkestang og spade.",
+      },
+    ],
+    elevationProfile: {
+      path: "M0,200 L24,196 L39,187 L63,173 L80,162 L93,155 L116,144 L140,136 L169,131 L192,128 L213,126 L236,124 L257,123 L281,123 L305,121 L329,113 L344,101 L359,93 L383,86 L407,81 L425,79 L446,80 L475,72 L494,68 L519,62 L538,53 L557,42 L572,31 L591,20 L600,18",
+      startLabel: "623 moh",
+      endLabel: "1504 moh",
+      distanceLabel: "5,6 km",
+      caption: "893 høydemeter og 5,57 km fra Storli opp Storbekkdalen på 1000 moh, over ryggen vest for Storbekken på 1211 og gjennom skaret på 1313 moh.",
+    },
+  },
+  okla: {
+    slug: "okla",
+    intro:
+      "1028 høydemeter og 5,56 km fra Dalen i Storlidalen til Snydda, 1582 moh — toppunktet på Okla-massivet, der varden og turboka står. Brattaste hundremetersband er 20,6 grader fra 1000 til 1100 moh, og brattaste steg 25,1 grader mellom 1522 og 1543. Nordsida er en annen sak: 44,7 grader i snitt mot nordvest.",
+    ascent: [
+      "Start på parkeringa i Dalen, 599 moh — avgiftsbelagt og taggd for ski, nede ved Storlidalsvegen. Fri Flyt beskriver den samme starten som «brua mellom Dalsvatnet og Ångårdsvatnet»; brua ligger 300 meter unna. Opp går det med en gang: 12,3 grader fra 600 til 700 moh og 19,8 fra 700 til 800, gjennom bjørkeskogen som slipper taket på 814 moh.",
+      "Videre slakt på skrå oppover mot Korgtjønna, 1151 moh. Bandene måler 16,4 og 15,8 grader, og det brattaste hundremetersbandet på turen ligger her: 20,6 grader fra 1000 til 1100 moh over 271 meter grunn.",
+      "Fra Korgtjønna flater det ut — 3,2 grader fra 1100 til 1200 moh over 1665 meter grunn — og ruta dreier vestover. Så runder du eggen over Mjølkskåla: vatnet ligger på 1277 moh, og linja går 1324 moh over det.",
+      "Siste stigning måler 20,0 grader fra 1400 til 1500 moh og 16,9 videre, med et steg på 25,1 grader mellom 1522 og 1543 moh. Toppen heter Snydda i place-navneregisteret og måler 1582,3 moh; ut.no publiserer 1580 og Fri Flyt 1564, og kortet fører målinga. Punktet som er registrert som Okla ligger 2,4 km rett vest, på peiling 267, og er 1458,8 moh — fjellet heter Okla, men varden står på Snydda.",
+    ],
+    descent: [
+      "Ned samme vegen, og første trekk fra varden går austover langs ryggen, ikke ned: første 200 meter peiler 73 grader ned til 1522 moh, og 500 meter ned 72. Parkeringa ligger 3,4 km unna, på peiling 167 grader.",
+      "Grunnen til at det trekket betyr noe er nordsida. Nordvest måler 44,7 grader i snitt over 400 meter med et 57,1 graders vindu 200 til 260 meter ut, og nord 43,6 med 50,9. Det er der Fri Flyts alternative nedkjøring mot Gjevilvatnet går, og de kaller den «svært bratt og seriøst» — den ender dessuten langt fra bilen. Sørvest, langs Okla-ryggen, måler 3,4 grader i snitt: det er det flate topplatået beskrivelsene omtaler, og i dårlig sikt er det navigeringa som er problemet.",
+      "Sørsida er den kortet fører, og den er ikke slak heller: sør måler 27,4 grader i snitt med 34,0 i brattaste vindu, søraust 33,1 med 39,4. Fri Flyt om oppstigningssida: «Dette er en side der det legger seg mye snø, så vurdér skredfaren nøye», og om bekkedalen langs Sandbekken at den «bør bare kjøres under svært stabile forhold».",
+    ],
+    avalanche: [
+      {
+        title: "Ruta",
+        body: "1028 høydemeter der brattaste hundremetersband er 20,6 grader fra 1000 til 1100 moh og brattaste sammenhengende steg 25,1 grader mellom 1522 og 1543. Ruta gir tilbake 44 høydemeter. Fri Flyt skriver at Okla ikke er en bratt topptur, og terrengmålinga er enig — det er snømengden på sørsida, ikke vinkelen, som er problemet her.",
+      },
+      {
+        title: "Terrenget utenfor",
+        body: "Sørsida, som er både oppstigning og nedkjøring, måler 27,4 grader i snitt med 34,0 i brattaste vindu, og søraust 33,1 med 39,4 — nok til at det løsner, og Fri Flyt sier selv at det legger seg mye snø her. Nord og nordvest er en helt annen kant av fjellet: 43,6 og 44,7 grader i snitt, med vindu på 50,9 og 57,1, og du ender ved Gjevilvatnet i stedet for ved bilen.",
+      },
+      {
+        title: "Før du går",
+        body: "Sjekk dagens skredvarsel for Trollheimen på varsom.no. Trollheimen er en A-region og varsles hver dag i sesongen. Ta med sender/mottaker, søkestang og spade.",
+      },
+    ],
+    elevationProfile: {
+      path: "M0,200 L29,192 L49,184 L68,171 L87,160 L112,147 L136,136 L160,124 L180,111 L199,100 L228,91 L252,96 L277,98 L306,98 L325,98 L354,95 L374,85 L393,75 L413,74 L442,74 L467,74 L494,70 L510,65 L534,57 L549,48 L563,38 L583,25 L600,18",
+      startLabel: "598 moh",
+      endLabel: "1582 moh",
+      distanceLabel: "5,6 km",
+      caption: "1028 høydemeter og 5,56 km fra Dalen om Korgtjønna på 1151 moh og eggen over Mjølkskåla på 1324, med skogen som slipper taket på 814 moh.",
+    },
+  },
+  storhornet: {
+    slug: "storhornet",
+    intro:
+      "938 høydemeter og 6,53 km på merket vinterløype fra Bree til steinbua på 1589 moh. Jevn er ordet: brattaste hundremetersband er 19,1 grader fra 1100 til 1200 moh, og brattaste sammenhengende steg 21,8 grader mellom 1135 og 1153. Det bratte på fjellet ligger på nordaustsida, bak toppen.",
+    ascent: [
+      "Start på den avgiftsbelagte parkeringa ved Bree, 653 moh — ti plasser, taggd for både ski og fottur, og Fri Flyt sender deg dit med «følg veien som går til venstre etter butikken og kjør ca 1,3 kilometer». Løypa er hogd ut gjennom skogen; punktet på 725 moh er klassifisert som dyrket mark, altså gardsjorda like over parkeringa.",
+      "Gjennom hyttefeltet i Hornlia, 847 moh, stiger løypa jevnt: 4,0 grader fra 700 til 800 moh over 1485 meter grunn, 8,7 fra 800 til 900 og 11,7 fra 900 til 1000. Skogen slipper taket på 933 moh.",
+      "Fra 1021 moh er du på åpent fjell, og den brattaste delen kommer her: 19,1 grader fra 1100 til 1200 moh over 277 meter grunn, med et steg på 21,8 grader mellom 1135 og 1153. Videre måler bandene 12,9, 8,3, 14,8 og 9,9 grader mot toppen.",
+      "På 1589 moh står steinbua fra 1946, med gjestebok. Dette er den best kontrollerte toppen i runden: terrengmodellen gir 1589,0 moh mot publiserte 1589, og Fri Flyts egen GPS-posisjon for toppunktet lander 10 meter fra det punktet.",
+    ],
+    descent: [
+      "Ned samme vegen — det er linja Fri Flyt anbefaler. Første 200 meter fra bua peiler 134 grader, ned til 1562 moh, og 500 meter ned 128. Parkeringa ligger 4,7 km unna, på peiling 135 grader, så nedkjøringa følger oppstigninga hele vegen.",
+      "Det bratte på dette fjellet ligger bak deg når du står ved bua. Nordaust måler 30,7 grader i snitt over 400 meter, med et 46,2 graders vindu bare 10 til 70 meter ut; nord 22,2 med 37,7 i vinduet 20 til 80, og aust 23,1 med 34,4. Sør og sørvest, der løypa kommer opp, måler 6,0 og 0,4 grader i snitt.",
+      "Fri Flyts eget faremoment peker sørover: «Hvis du velger å oppsøke det bratte terrenget rundt Omnråa sør for toppen må du ta hensyn til både eksponert terreng og skredfare.» Det stemmer, men det er langt unna — Omnråa er en botn 3,02 km sør for varden, og radialen sørover treffer ikke 24,8 grader før i vinduet 1450 til 1500 meter ut. Kanten du kan gå ut på i dårlig sikt er nordaust.",
+    ],
+    avalanche: [
+      {
+        title: "Ruta",
+        body: "938 høydemeter der ingen del av den routede linja måler mer enn 21,8 grader, og brattaste hundremetersband er 19,1 fra 1100 til 1200 moh. Fri Flyt fører bratteste punkt som under 25 grader og klassifiserer turen som KAST 1, enkelt. Ruta gir tilbake 2 høydemeter på 6,53 km — den stiger praktisk talt uavbrutt fra bilen til bua.",
+      },
+      {
+        title: "Terrenget utenfor",
+        body: "Nordaustsida er den som teller: 30,7 grader i snitt over 400 meter og 46,2 grader i vinduet 10 til 70 meter ut fra toppen, med nord på 22,2 og aust på 23,1. Sørsida, som Fri Flyt navngir i faremomentet sitt, måler 6,0 grader i snitt de første 400 meterne og først 24,8 grader 1450 til 1500 meter ut, ved botnen Omnråa. To ulike ting, og det er nordaust som ligger ved bua.",
+      },
+      {
+        title: "Før du går",
+        body: "Sjekk dagens skredvarsel for Trollheimen på varsom.no. Trollheimen er en A-region og varsles hver dag i sesongen, så her finnes det en vurdering å lese. Ta med sender/mottaker, søkestang og spade.",
+      },
+    ],
+    elevationProfile: {
+      path: "M0,200 L21,195 L37,192 L56,190 L76,186 L95,184 L112,181 L128,179 L153,176 L171,173 L190,168 L211,163 L232,155 L252,146 L273,136 L293,130 L315,124 L335,122 L355,121 L375,119 L393,112 L409,100 L426,87 L451,76 L475,69 L496,62 L517,56 L533,48 L558,34 L579,23 L600,18",
+      startLabel: "653 moh",
+      endLabel: "1589 moh",
+      distanceLabel: "6,5 km",
+      caption: "938 høydemeter og 6,53 km fra Bree gjennom hyttefeltet i Hornlia på 847 moh, med skogen som slipper taket på 933 og åpent fjell fra 1021 moh.",
+    },
+  },
   kirketaket: {
     slug: "kirketaket",
     intro:

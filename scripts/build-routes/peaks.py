@@ -132,4 +132,16 @@ PEAKS = [
     ("surloytenuten", "Surløytenuten", ["Notodden"], 1096, 59.79453, 9.20624),
     ("gyranfisen", "Gyranfisen", ["Ringerike"], 1127, 60.47199, 9.89037),
     ("styggemann", "Styggmann", ["Kongsberg"], 871, 59.52074, 9.64325),
+    #
+    # — the Trondheim round: the fjells a car from Trondheim reaches in one to
+    #   two hours. Okla is looked up as **Snydda**, which is what the register
+    #   calls the massif's high point and where the cairn and the summit book
+    #   are; the point registered as Okla, 2,4 km due west, is a 1460 m
+    #   shoulder. `near` is the SSR representation point for all six. —
+    ("vassfjellet", "Vassfjellet", ["Melhus"], 710, 63.26183, 10.35606),
+    ("krakfjellet", "Kråkfjellet", ["Trondheim", "Melhus"], 817, 63.16317, 10.63236),
+    ("rensfjellet", "Rensfjellet", ["Melhus", "Selbu", "Midtre Gauldal"], 941, 63.14214, 10.72183),
+    ("storhornet", "Storhornet", ["Oppdal"], 1589, 62.64811, 9.39909),
+    ("storbekkhoa", "Storbekkhøa", ["Oppdal"], 1504, 62.73018, 9.08053),
+    ("okla", "Snydda", ["Oppdal"], 1580, 62.68968, 9.26195),
 ]

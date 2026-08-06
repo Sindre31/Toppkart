@@ -75,4 +75,15 @@ NEW_TOURS = {
     "surloytenuten": ("Surløytenuten", "Blefjell"),
     "gyranfisen": ("Gyranfisen", "Vikerfjell"),
     "styggemann": ("Styggemann", "Skrim"),
+    # — the Trondheim round: the fjells a car from Trondheim reaches in one to
+    #   two hours. Two regions — Trøndelag for the three tops in Melhus and
+    #   Trondheim kommune, Trollheimen for the four in Oppdal and Surnadal. Okla
+    #   is the name the tour goes under; its high point is registered as
+    #   Snydda. —
+    "vassfjellet": ("Vassfjellet", "Trøndelag"),
+    "krakfjellet": ("Kråkfjellet", "Trøndelag"),
+    "rensfjellet": ("Rensfjellet", "Trøndelag"),
+    "storhornet": ("Storhornet", "Trollheimen"),
+    "storbekkhoa": ("Storbekkhøa", "Trollheimen"),
+    "okla": ("Okla", "Trollheimen"),
 }

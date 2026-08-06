@@ -174,6 +174,20 @@ export const TOUR_TEASER_EN: Record<string, string> = {
     "670 m of climbing from Vikerkoia over Svarttjernskollen, 200 of them given back in the dip before the highest point in Ringerike.",
   styggemann:
     "550 m of climbing and 9.6 km from Ravalsjø by way of Sørmyrseter, the last 240 straight up to the highest top in Skrim.",
+  snota:
+    "1270 m of climbing from Gråhaugen across Svartvatnet and around Litj-Snota to the highest mountain in northern Trollheimen.",
+  vassfjellet:
+    "540 m of climbing from Markavollen past Vassfjellhytta — the closest ski tour to Trondheim, on a marked track the whole way.",
+  krakfjellet:
+    "The highest point in Trondheim municipality: 430 m of climbing and nine kilometres from Håen past Kråklivollen and Rundtjønnin.",
+  rensfjellet:
+    "670 m of climbing and eleven kilometres from Håen past Rundtjønnin and Oksdalen to the highest point in Melhus.",
+  storhornet:
+    "940 m of climbing on a marked winter route from Bree through Hornlia to the stone shelter on the most visited peak in Oppdal.",
+  storbekkhoa:
+    "890 m of climbing from Storli up Storbekkdalen and through the col west of the steep south-east face.",
+  okla:
+    "1030 m of climbing from Dalen in Storlidalen to Snydda — the cairn on the high point of the Okla massif.",
 
 };
 
@@ -685,6 +699,246 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       endLabel: "740 m",
       distanceLabel: "3.1 km",
       caption: "61 to 741 m over 3.1 kilometres: steady climbing through the valley, one steep step, then flat ground to the cairn.",
+    },
+  },
+  vassfjellet: {
+    intro:
+      "541 metres of climbing and 4.74 km from Markavollen to the cairn at 711 m — the closest ski tour to Trondheim. Almost all the steep ground sits in one band: 15.9 degrees from 500 to 600 m, over just 405 metres of ground. The steepest sustained step is 23.0 degrees between 534 and 553 m, and that is also the steepest the whole line measures.",
+    ascent: [
+      "Start at the car park at Markavollen, 184 m. Ut.no notes a parking charge, and the terrain model reads the plot at 184 m — exactly the start elevation the description gives. Follow the ski track south, then east and south again. The first half is flat for a ski tour: the band from 300 to 400 m measures 4.6 degrees over 1215 metres of ground, and 400 to 500 m 3.3 degrees over 1710.",
+      "Vassfjellhytta sits at 507 m, and the climbing starts right after it: 15.9 degrees from 500 to 600 m over 405 metres of ground, with a step of 23.0 degrees between 534 and 553 m. The forest lets go at 512 m, and from 597 the ground is open.",
+      "Above the treeline it eases to 11.6 degrees from 600 to 700 m, and you meet the service road ut.no puts you on. It runs up to Melhus hovedsender, the communications mast standing 131 metres from the cairn at 709 m. The cairn itself is at 711 m, and the terrain model measures it at 710.9.",
+    ],
+    descent: [
+      "Back down the same way. The first 200 metres off the cairn bear 255 degrees — west — down to 676 m, and 500 metres down bears 249. That is the flank the card carries: the west side measures 12.0 degrees on average over 400 metres with a 26.2-degree window 230 to 290 metres out, and 12.3 degrees on average when the sweep runs out to a kilometre.",
+      "Ut.no warns of «assorted steep pitches both below and above the treeline», and the sweep says where they are. North-west is the steepest: 13.8 degrees on average with 33.3 degrees in the window 190 to 250 metres out, and 32.9 degrees 180 to 240 metres out when the sweep runs a kilometre. South-east measures 13.9 on average and 26.7 in its steepest window. North-east, toward the lifts, measures 3.9 — but what you end up in there is the piste at Vassfjellet skisenter, not the mountain.",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "541 metres of climbing where the bands below 500 m measure 3.3 and 4.6 degrees, and the band from 500 to 600 measures 15.9 over 405 metres of ground. The steepest point on the whole routed line is 23.0 degrees, between 534 and 553 m, and the route gives back 14 metres over 4.74 km. It is a marked-track tour with one steep pitch in it, not a flank ascent.",
+      },
+      {
+        title: "The terrain off it",
+        body: "The mountain has steep sides; they just are not where the track goes. North-west measures 33.3 degrees in its steepest 60-metre window within 400 metres and 32.9 degrees out to a kilometre, south-east 26.7 and west 26.2. That is high enough and steep enough for a single pitch to release, and those are exactly the lines that tempt when you are standing on top with skis on.",
+      },
+      {
+        title: "Before you go",
+        body: "Check today's avalanche forecast for Sør-Trøndelag at varsom.no. Sør-Trøndelag is a B region: it is forecast only at danger levels 4 and 5, so on most winter days there is no assessment to read, and an empty page does not mean a safe mountain. Carry a transceiver, probe and shovel.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "184 m",
+      endLabel: "711 m",
+      distanceLabel: "4.7 km",
+      caption: "541 metres of climbing and 4.74 km from Markavollen past Vassfjellhytta at 507 m, with the forest letting go at 512 and open ground from 597 m.",
+    },
+  },
+  krakfjellet: {
+    intro:
+      "430 metres of climbing and 9.34 km from Håen to the highest point in Trondheim municipality. It is a long, gentle day: the band from 400 to 500 m measures 1.2 degrees over 4238 metres of ground, and the steepest place on the whole line is 18.6 degrees between 465 and 480 m.",
+    ascent: [
+      "Start at the car park by Håen, 411 m, where Lundadalsvegen ends — a toll road from Lundamo, normally ploughed the 18 kilometres in. Follow the shoreline on the north side of the lake due east. The water surface measures 433 m and is classed as a regulated lake: Håen is drawn down every winter, and ut.no tells you to keep off uncertain ice along its edge.",
+      "After barely three kilometres you reach Kråklivollen, 452 m, and from there the route climbs into the forest, up Kråklia and west of Samsjølia. The band from 400 to 500 m measures 1.2 degrees over 4238 metres of ground — here it is the distance, not the climbing, that is the tour.",
+      "Rundtjønnin sits at 526 m, and it is the check that the route runs where the description says: ut.no gives 525. On north and north-east you follow ridges or hollows in the same direction, depending on the snow, until the route turns north and north-west toward the summit. The bands above Rundtjønnin measure 2.4, 3.8 and 5.4 degrees.",
+      "The cairn stands at 815 m. Kråkfjellet became the highest point in Trondheim municipality after the merger with Klæbu, and published figures say 817; the terrain model reads 814.9 at the high point, and the card carries the measurement.",
+    ],
+    descent: [
+      "Back down the same way. The first 200 metres off the top bear 202 degrees, down to 789 m, and 500 metres down bears 199. The car park lies 7.4 km away, on a bearing of 225 degrees, so most of the way back is walking rather than skiing.",
+      "The sweep finds no steep side on this mountain: the steepest 60-metre window in any direction is 21.8 degrees to the east, in the window 260 to 320 metres out, with north-east at 13.1 degrees on average and north at 2.0. What ut.no warns about is something other than avalanches — «high cornices on the lee side» that you can fall off in flat light when crossing the ridges here.",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "Nine kilometres where the bands measure 1.2, 2.4, 3.8 and 5.4 degrees, and the steepest sustained step is 18.6 degrees between 465 and 480 m. The route gives back 26 metres. The routed line climbs 430 metres against ut.no's stated 519: the difference is in the choice of line between the ridges, which the description itself leaves to the snow and the going.",
+      },
+      {
+        title: "The terrain off it",
+        body: "The steepest measurement around the summit is 21.8 degrees to the east. North is close to flat, 2.0 degrees on average over 400 metres. The two things that can go wrong here are therefore not avalanches as such: the cornices ut.no describes, which are a fall problem in flat light, and the ice on Håen, which is regulated and drawn down every winter.",
+      },
+      {
+        title: "Before you go",
+        body: "Check today's avalanche forecast for Sør-Trøndelag at varsom.no. Sør-Trøndelag is a B region: it is forecast only at danger levels 4 and 5, so on most winter days there is no assessment to read, and an empty page does not mean a safe mountain. Carry a transceiver, probe and shovel.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "411 m",
+      endLabel: "815 m",
+      distanceLabel: "9.3 km",
+      caption: "430 metres of climbing and 9.34 km from Håen by Kråklivollen at 452 m and Rundtjønnin at 526, with the last 148 metres of ground above 800 m.",
+    },
+  },
+  rensfjellet: {
+    intro:
+      "674 metres of climbing and 11.0 km from Håen to the highest point in Melhus, with 143 of those metres given back along the way. The climbing comes last: the steepest hundred-metre band is 12.2 degrees from 700 to 800 m, and the steepest sustained step 25.9 degrees between 660 and 682.",
+    ascent: [
+      "Start at the car park by Håen, 411 m, and follow the north shore east — the same first three kilometres as Kråkfjellet, and the same regulated lake at 433 m to keep clear of the edge of. Kråklivollen sits at 452 m.",
+      "On up Kråklia and west of Samsjølia, past Rundtjønnin at 526 m. Ut.no gives 525 for this tarn and the terrain model reads 526 — that is the check that the corridor follows the described route. The bands to here measure 1.3 and 1.4 degrees, over 4147 and 4096 metres of ground.",
+      "Then the route crosses Oksdalen at 532 m. The point is not named in any source: the valley is registered with a representation point 3.95 km away on a bearing of 15, north-north-east, and the crossing is read off the terrain model as the low line running south from it. The forest lets go at 543 m.",
+      "After Oksdalen the last four kilometres begin. The band from 600 to 700 m measures 6.0 degrees, and this is where the steepest sustained step sits — 25.9 degrees between 660 and 682 m. Above it, 700 to 800 m measures 12.2 degrees over 450 metres of ground, then it eases to 5.8 and 6.3 toward the cairn at 942 m. Rensfjellet is a boundary summit between Melhus, Midtre Gauldal and Selbu; ut.no notes that it «is only 2.1 km short toward N-NW of including Trondheim in that club too».",
+    ],
+    descent: [
+      "Back down the same way, westward: the first 200 metres off the top bear 251 degrees down to 915 m, and 500 metres down 254. The car park lies 10.2 km away, on a bearing of 254 degrees. Ut.no gives one alternative — dropping toward Samsjøen after Oksdalen — and attaches two conditions: that the going outside the groomed tracks is good, or that you have a track to follow.",
+      "The sweep finds no steep side within 400 metres of the cairn: east measures 11.0 degrees on average with 17.8 in its steepest window, south-east 3.4 and north-west 2.5. Ut.no's «steep single pitches high enough to slide» sit further out than the sweep reaches, and the description itself says they can be avoided.",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "Eleven kilometres where the two long bands measure 1.3 and 1.4 degrees over four kilometres of ground each, and all the climbing sits in the last four. The steepest sustained step is 25.9 degrees between 660 and 682 m, the steepest hundred-metre band 12.2 from 700 to 800. The route gives back 143 metres against ut.no's stated «about 130» — the same shape of ground, ridges and hollows that have to be crossed.",
+      },
+      {
+        title: "The terrain off it",
+        body: "Within 400 metres of the cairn the steepest measurement is 17.8 degrees to the east. What makes the tour demanding is the length and the navigation: eleven kilometres over lakes, bog and ridges, 143 metres given back on the way in and the same again on the way out. Ut.no warns of cornices on the lee side, which are a fall problem in flat light, and of single pitches that exist but can be gone around.",
+      },
+      {
+        title: "Before you go",
+        body: "Check today's avalanche forecast for Sør-Trøndelag at varsom.no. Sør-Trøndelag is a B region: it is forecast only at danger levels 4 and 5, so on most winter days there is no assessment to read, and an empty page does not mean a safe mountain. Carry a transceiver, probe and shovel.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "411 m",
+      endLabel: "942 m",
+      distanceLabel: "11.0 km",
+      caption: "674 metres of climbing and 11.0 km from Håen by Kråklivollen at 452 m, Rundtjønnin at 526 and the crossing of Oksdalen at 532, with the forest letting go at 543 m.",
+    },
+  },
+  snota: {
+    intro:
+      "1268 metres of climbing and 10.22 km from Gråhaugen to the highest mountain in northern Trollheimen. The route runs in avalanche terrain from Litj-Snota upward, crosses 436 metres of glacier between 1364 and 1471 m, and the summit flank falls 48.1 degrees to the east.",
+    ascent: [
+      "Start at the car park by the dam on Gråsjøen, 495 m — 15 km of toll road up Folldalsvegen, paid by card. Follow the line of the road along the lake until the summer path slants up the hillside, and not earlier: ut.no warns that avalanches run from the snowfield on Gråhaugfjellet, and that in some years they reach the water.",
+      "Up the hillside south-south-west, through 686 m, with bands of 10.3, 6.3 and 7.0 degrees. Then it flattens onto the plateau east of Midtveggen, 931 m: the band from 800 to 900 m measures 3.2 degrees over 1979 metres of ground, and 900 to 1000 measures 2.2 over 2250. Here the route gives height back, from 931 down to Svartvatnet at 888 m — ut.no gives «about 100» metres lost on the way up, and the routed line gives back 95.",
+      "From Svartvatnet you reach the foot of Litj-Snota and round it to the east, 1026 m, and south. From here up you are in runout zones and, in shorter stretches, in start zones over 30 degrees, which ut.no says cannot be avoided. The bands rise to 7.1, 15.7 and 15.3 degrees.",
+      "At 1352 m it flattens, and the steep slope facing you to the west is the glacier. Kartverket classes seven points on the line between 1364 and 1471 m as glacier terrain, and the stretch measures 436 metres — ut.no gives «from about 1380 m ... for about 500 m» and asks you to check with locals that there is enough snow. The steepest sustained step of the tour is here: 28.9 degrees between 1414 and 1434 m.",
+      "Above the glacier, at 1516 m, you come onto the summit flank, and the route turns south-west, south and finally south-south-east to the high point at 1668 m.",
+    ],
+    descent: [
+      "Back down your own track — ut.no calls it the best choice in most cases, and adds that the danger of wet loose-snow avalanches rises through the day in warm spring weather. The first 200 metres off the top bear 320 degrees, north-west, down to 1653 m, and 500 metres down 328: the route runs back along the summit flank before it drops east down the glacier. The car park lies 8.0 km away, on a bearing of 13 degrees.",
+      "It is worth knowing why that first move goes north-west. East of the high point measures 48.1 degrees on average over 400 metres with a 57.9-degree window 130 to 190 metres out — that is «the summit flank is precipitous to the east» in numbers. South and south-east measure 42.0 and 36.5 on average, with windows of 71.4 and 71.0 degrees only 10 to 70 metres out, and north-east 42.0 with 64.2. West and north-west, where the route comes up and goes down, measure 14.8 and 9.4.",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "1268 metres of climbing and 10.22 km, with 95 given back. Ut.no lists the route as avalanche terrain — «both start zones over 30 degrees and runout zones that cannot be avoided» — and the terrain class as KAST 2, challenging. The steepest hundred-metre band on the routed line is 15.7 degrees from 1100 to 1200 m and the steepest step 28.9 degrees between 1414 and 1434, but those figures describe the skin track, not the sides it runs beneath.",
+      },
+      {
+        title: "The terrain off it",
+        body: "The summit flank to the east measures 48.1 degrees on average with 57.9 in its steepest window, and south and south-east carry windows of 71.4 and 71.0 degrees only 10 to 70 metres out from the high point. The other one is the snowfield on Gråhaugfjellet, down at the start: ut.no writes that avalanches from it reach the lake in some years, and that the tour should not be attempted when large naturally triggered avalanches are likely on easterly slopes.",
+      },
+      {
+        title: "Before you go",
+        body: "Check today's avalanche forecast for Trollheimen at varsom.no. Trollheimen is an A region and is forecast every day in season. The glacier between 1364 and 1471 m needs enough snow, and ut.no asks you to check with locals beforehand. Carry a transceiver, probe and shovel.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "495 m",
+      endLabel: "1668 m",
+      distanceLabel: "10.2 km",
+      caption: "1268 metres of climbing and 10.22 km from Gråhaugen by the plateau east of Midtveggen at 931 m, Svartvatnet at 888 and the flat at 1352, with the glacier from 1364 to 1471 m.",
+    },
+  },
+  storbekkhoa: {
+    intro:
+      "893 metres of climbing and 5.57 km from Storli to the cairn at 1504 m. The ascent is gentle — the steepest hundred-metre band is 17.5 degrees — and the south-east face right by the top is not: it measures 34.1 degrees on average with a 46.9-degree window 20 to 80 metres out from the cairn.",
+    ascent: [
+      "Start at the car park by Storli, 623 m — a paid plot, 30 kroner in the box, tagged for skiing. Ut.no: «From Storli parking you put your skis on at the car.» Head due north toward Storbekkdalen through the birch slope right of Veslebekken. The band from 700 to 800 m is the steepest on the whole tour, 17.5 degrees over 299 metres of ground.",
+      "The forest lets go at 822 m, and from 918 you are in open ground and bog. The valley floor at 1000 m is flat — the band from 900 to 1000 measures 3.4 degrees over 1621 metres of ground — and this is where the route crosses Storbekken and works west up toward the ridge.",
+      "The ridge west of the stream sits at 1211 m, and the steepest sustained step comes just below it: 26.4 degrees between 1082 and 1099 m. On north along the ridge until the steep south-east face stands in front of you — then you go a stretch further west and up through the col at 1313 m.",
+      "From the col the route follows gentle ground in a half circle to the cairn at 1504 m, where the box with the summit book stands. The bands here measure 17.5 and 16.1 degrees. The sources disagree about the climb — Fri Flyt gives 600 metres, ut.no 900 — and the routed line climbs 893 from a car park the terrain model reads at 623 m. Fri Flyt's own GPS position for the high point lands 27 metres from the cell the summit search climbs to.",
+    ],
+    descent: [
+      "Back down the same way, and the first metres go west, not toward the car: the first 200 metres off the cairn bear 276 degrees, down to 1458 m, and 500 metres down 236. The car park lies 4.2 km away, on a bearing of 170 degrees. The half circle has to be finished before the route turns south, and in flat light that detail is what matters here.",
+      "The south-east face is the one Fri Flyt warns about, and the sweep confirms it: 34.1 degrees on average over 400 metres with a 46.9-degree window 20 to 80 metres out from the cairn. South measures 25.5 with the same 46.9 in the window 30 to 90 metres, and east 24.9 with 35.5. North-west — where the route comes up — measures 3.7 degrees on average, with 7.7 as its steepest window.",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "893 metres of climbing where the steepest hundred-metre band is 17.5 degrees from 700 to 800 m and the steepest sustained step 26.4 degrees between 1082 and 1099. Fri Flyt writes that the whole ascent runs in terrain under 30 degrees and classes the tour KAST 1. The route gives back 12 metres over 5.57 km.",
+      },
+      {
+        title: "The terrain off it",
+        body: "Fri Flyt lists one runout zone and «the steep south-east side of the summit. There can be nasty cornices here.» The sweep measures that side at 34.1 degrees on average and 46.9 in its steepest window 20 to 80 metres out, and the south side at 25.5 with the same 46.9 in the window 30 to 90. Skiing down toward Storbekkdalen is steeper than the ascent, and Fri Flyt calls it avalanche terrain.",
+      },
+      {
+        title: "Before you go",
+        body: "Check today's avalanche forecast for Trollheimen at varsom.no. Trollheimen is an A region and is forecast every day in season. Carry a transceiver, probe and shovel.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "623 m",
+      endLabel: "1504 m",
+      distanceLabel: "5.6 km",
+      caption: "893 metres of climbing and 5.57 km from Storli up Storbekkdalen at 1000 m, over the ridge west of Storbekken at 1211 and through the col at 1313 m.",
+    },
+  },
+  okla: {
+    intro:
+      "1028 metres of climbing and 5.56 km from Dalen in Storlidalen to Snydda, 1582 m — the high point of the Okla massif, where the cairn and the summit book stand. The steepest hundred-metre band is 20.6 degrees from 1000 to 1100 m, and the steepest step 25.1 degrees between 1522 and 1543. The north side is another matter: 44.7 degrees on average to the north-west.",
+    ascent: [
+      "Start at the car park in Dalen, 599 m — a paid plot tagged for skiing, down by Storlidalsvegen. Fri Flyt describes the same start as «the bridge between Dalsvatnet and Ångårdsvatnet»; the bridge is 300 metres away. It climbs from the first step: 12.3 degrees from 600 to 700 m and 19.8 from 700 to 800, through the birch forest that lets go at 814 m.",
+      "On at a gentler angle toward Korgtjønna, 1151 m. The bands measure 16.4 and 15.8 degrees, and the steepest hundred-metre band on the tour sits here: 20.6 degrees from 1000 to 1100 m over 271 metres of ground.",
+      "From Korgtjønna it flattens — 3.2 degrees from 1100 to 1200 m over 1665 metres of ground — and the route turns west. Then you round the crest above Mjølkskåla: the tarn lies at 1277 m, and the line runs 1324 m above it.",
+      "The last climb measures 20.0 degrees from 1400 to 1500 m and 16.9 above that, with a step of 25.1 degrees between 1522 and 1543 m. The top is called Snydda in the place-name register and measures 1582.3 m; ut.no publishes 1580 and Fri Flyt 1564, and the card carries the measurement. The point registered as Okla lies 2.4 km due west, on a bearing of 267, and is 1458.8 m — the mountain is called Okla, but the cairn stands on Snydda.",
+    ],
+    descent: [
+      "Back down the same way, and the first move off the cairn runs east along the ridge, not down: the first 200 metres bear 73 degrees down to 1522 m, and 500 metres down 72. The car park lies 3.4 km away, on a bearing of 167 degrees.",
+      "The reason that move matters is the north side. North-west measures 44.7 degrees on average over 400 metres with a 57.1-degree window 200 to 260 metres out, and north 43.6 with 50.9. That is where Fri Flyt's alternative descent toward Gjevilvatnet goes, and they call it «very steep and serious» — it also ends a long way from the car. South-west, along the Okla ridge, measures 3.4 degrees on average: that is the flat summit plateau the descriptions mention, and in flat light the navigation is the problem.",
+      "The south side is the one the card carries, and it is not gentle either: south measures 27.4 degrees on average with 34.0 in its steepest window, south-east 33.1 with 39.4. Fri Flyt on the side you climb: «This is a side where a lot of snow collects, so assess the avalanche danger carefully», and on the gully along Sandbekken that it «should only be skied in very stable conditions».",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "1028 metres of climbing where the steepest hundred-metre band is 20.6 degrees from 1000 to 1100 m and the steepest sustained step 25.1 degrees between 1522 and 1543. The route gives back 44 metres. Fri Flyt writes that Okla is not a steep ski tour, and the terrain measurement agrees — it is the amount of snow on the south side, not the angle, that is the problem here.",
+      },
+      {
+        title: "The terrain off it",
+        body: "The south side, which is both the ascent and the descent, measures 27.4 degrees on average with 34.0 in its steepest window, and south-east 33.1 with 39.4 — enough to release, and Fri Flyt says itself that a lot of snow collects here. North and north-west are a different part of the mountain altogether: 43.6 and 44.7 degrees on average, with windows of 50.9 and 57.1, and you end up at Gjevilvatnet instead of at the car.",
+      },
+      {
+        title: "Before you go",
+        body: "Check today's avalanche forecast for Trollheimen at varsom.no. Trollheimen is an A region and is forecast every day in season. Carry a transceiver, probe and shovel.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "598 m",
+      endLabel: "1582 m",
+      distanceLabel: "5.6 km",
+      caption: "1028 metres of climbing and 5.56 km from Dalen by Korgtjønna at 1151 m and the crest above Mjølkskåla at 1324, with the forest letting go at 814 m.",
+    },
+  },
+  storhornet: {
+    intro:
+      "938 metres of climbing and 6.53 km on a marked winter route from Bree to the stone shelter at 1589 m. Even is the word: the steepest hundred-metre band is 19.1 degrees from 1100 to 1200 m, and the steepest sustained step 21.8 degrees between 1135 and 1153. The steep ground on this mountain is on the north-east side, behind the top.",
+    ascent: [
+      "Start at the paid car park by Bree, 653 m — ten spaces, tagged for both skiing and hiking, and Fri Flyt sends you there with «follow the road to the left after the shop and drive about 1.3 kilometres». The track is cut through the forest; the point at 725 m is classed as cultivated land, the farm ground just above the car park.",
+      "Through the cabin area in Hornlia, 847 m, the track climbs evenly: 4.0 degrees from 700 to 800 m over 1485 metres of ground, 8.7 from 800 to 900 and 11.7 from 900 to 1000. The forest lets go at 933 m.",
+      "From 1021 m you are on open mountain, and the steepest part comes here: 19.1 degrees from 1100 to 1200 m over 277 metres of ground, with a step of 21.8 degrees between 1135 and 1153. Above that the bands measure 12.9, 8.3, 14.8 and 9.9 degrees toward the top.",
+      "At 1589 m stands the stone shelter from 1946, with a summit book. This is the best-confirmed summit of the round: the terrain model gives 1589.0 m against a published 1589, and Fri Flyt's own GPS position for the high point lands 10 metres from that cell.",
+    ],
+    descent: [
+      "Back down the same way — the line Fri Flyt recommends. The first 200 metres off the shelter bear 134 degrees, down to 1562 m, and 500 metres down 128. The car park lies 4.7 km away, on a bearing of 135 degrees, so the descent follows the ascent the whole way.",
+      "The steep ground on this mountain is behind you when you stand at the shelter. North-east measures 30.7 degrees on average over 400 metres, with a 46.2-degree window only 10 to 70 metres out; north 22.2 with 37.7 in the window 20 to 80, and east 23.1 with 34.4. South and south-west, where the track comes up, measure 6.0 and 0.4 degrees on average.",
+      "Fri Flyt's own hazard note points south: «If you choose to seek out the steep terrain around Omnråa south of the summit you have to account for both exposed terrain and avalanche danger.» That is true, but it is a long way off — Omnråa is a cirque 3.02 km south of the cairn, and the southward radial does not reach 24.8 degrees until the window 1450 to 1500 metres out. The edge you can walk out onto in flat light is the north-east one.",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "938 metres of climbing where no part of the routed line measures more than 21.8 degrees, and the steepest hundred-metre band is 19.1 from 1100 to 1200 m. Fri Flyt gives the steepest point as under 25 degrees and classes the tour KAST 1, simple. The route gives back 2 metres over 6.53 km — it climbs almost without interruption from the car to the shelter.",
+      },
+      {
+        title: "The terrain off it",
+        body: "The north-east side is the one that counts: 30.7 degrees on average over 400 metres and 46.2 degrees in the window 10 to 70 metres out from the top, with north at 22.2 and east at 23.1. The south side, which Fri Flyt names in its hazard note, measures 6.0 degrees on average over the first 400 metres and does not reach 24.8 degrees until 1450 to 1500 metres out, at the cirque Omnråa. Two different things, and it is the north-east one that sits by the shelter.",
+      },
+      {
+        title: "Before you go",
+        body: "Check today's avalanche forecast for Trollheimen at varsom.no. Trollheimen is an A region and is forecast every day in season, so here there is an assessment to read. Carry a transceiver, probe and shovel.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "653 m",
+      endLabel: "1589 m",
+      distanceLabel: "6.5 km",
+      caption: "938 metres of climbing and 6.53 km from Bree through the cabin area in Hornlia at 847 m, with the forest letting go at 933 and open mountain from 1021 m.",
     },
   },
   kirketaket: {

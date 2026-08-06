@@ -81,17 +81,17 @@ components/
 lib/
   config.ts              PRICE, TRIAL_DAYS, SITE, GRADE_COLORS, env, is*Configured
   types.ts               Tour, TourGuide, Viewer, Subscription, Invoice
-  tours.ts               The 68 tours, REGIONS, getTour(), routesFor(), routeById(),
+  tours.ts               The 75 tours, REGIONS, getTour(), routesFor(), routeById(),
                          routeFor(), routeProfile()
   routes.ts              Generated ascent routes per tour — see scripts/build-routes/
-  guides.ts              Editorial guide content — all 68 tours, generated
+  guides.ts              Editorial guide content — all 75 tours, generated
   access.ts              getViewer() / grantsAccess() — server-only access gate
   stripe.ts              Stripe client, null in demo mode
   demo-session.ts        Cookie-backed stand-ins for auth and subscription
   supabase/              Browser and server Supabase clients
 supabase/
   schema.sql             Tables, policies, RLS
-  seed.sql               The 68 tours and all 68 guides
+  seed.sql               The 75 tours and all 75 guides
 design-reference/        The HTML prototypes and the product/design handoff. Read-only ground
                          truth; not shipped.
 docs/
@@ -165,13 +165,14 @@ content and data quality that has to be settled before the site is sold to anyon
   Arctic tops and the published figures are old survey numbers, so the gap may be a cornice, a
   cairn, or simply an older measurement — DTM1 is bare rock. A local reader should settle it
   before print; the app is at least now internally consistent and single-sourced.
-- **All seven Oslo-round tours sit in Varsom B-regions.** Norefjell, Vikerfjell and Skrim are
-  *Buskerud sør*, Blefjell is *Telemark sør*, and a B-region is forecast only at danger level 4 and
+- **All seven Oslo-round tours sit in Varsom B-regions, and so do the three nearest Trondheim.**
+  Norefjell, Vikerfjell and Skrim are *Buskerud sør*, Blefjell is *Telemark sør*, and Vassfjellet,
+  Kråkfjellet and Rensfjellet are *Sør-Trøndelag*. A B-region is forecast only at danger level 4 and
   5 — so on most winter days the avalanche panel on those tours has no assessment to show, because
-  none was made. Each of the seven guides says so in its own words, and the region was queried
-  rather than assumed.
+  none was made. Each of the ten guides says so in its own words, and every region was queried
+  rather than assumed. The four Trollheimen tours are in an A-region and are forecast daily.
 - **The tour cards are checked, the guides are checked, the geometry is checked — by machine.**
-  `check_tours.py`, `check_guides.py` and `check_routes.py` come back clean on all 68 tours: every
+  `check_tours.py`, `check_guides.py` and `check_routes.py` come back clean on all 75 tours: every
   card height is DTM1 at the resolved summit, every vertical is its route's cumulative ascent to
   within 10 m, every number in the prose traces to a measurement, and `supabase/seed.sql` holds the
   same figures as `lib/tours.ts`. That last one was not true until it was checked: the seed had
@@ -180,10 +181,14 @@ content and data quality that has to be settled before the site is sold to anyon
 - **The guide text has not been read by anyone who has skied these tours.** Every number in
   `lib/guides.ts` traces to Kartverket's terrain model, the route research or a cited source, and
   every number is matched mechanically by `check_guides.py` — which reads nynorsk verticals as well
-  as bokmål ones, and comes back clean on all 68 guides.
-  On top of that, **every one of the 68 guides has now been through an adversarial second read**
+  as bokmål ones, and comes back clean on all 75 guides.
+  On top of that, **68 of the 75 guides have been through an adversarial second read**
   whose only job is to break it — the 24 of the first round, the 15 of the second, the 7 of the
-  Oslo round, and finally the 22 of the Sunnmøre and Vestland rounds. It earns its keep every
+  Oslo round, and finally the 22 of the Sunnmøre and Vestland rounds. The seven of the Trondheim
+  round have had the same checks run over them — every compass claim re-derived as a bearing from
+  the routed line, every summit swept on all eight bearings, terrain-class claims re-queried, and
+  the two languages compared number by number — but by the pass that wrote them rather than by an
+  independent reader, so they are the ones to point a second reader at first. It earns its keep every
   time. It caught a descent sold on the wrong side of Kavringtinden, a cliff warning pointing away
   from the cliff on Storehorn, a rock band on Synshorn that does not exist, a ski centre placed on
   the wrong side of Høgevarde, and — in the last pass — Skarsteinsfjellet sent *east* down a
@@ -196,8 +201,8 @@ content and data quality that has to be settled before the site is sold to anyon
 - **`assets/kontur.png` is a placeholder.** It is a generated contour-map graphic standing in for
   real ski-touring photography. `assets/photo.jpg` is an unrelated reference photo from the design
   system and should also go. The contour graphic is now the only invented terrain left on a tour
-  page: it carries a "1439 moh" label baked into the artwork and renders identically on all 68
-  tours, so on 67 of them it states a height that is not that peak's. The caption says it is
+  page: it carries a "1439 moh" label baked into the artwork and renders identically on all 75
+  tours, so on 74 of them it states a height that is not that peak's. The caption says it is
   schematic, but it sits beside real figures — replace it before print.
 - **Map tiles should move to a Norwegian topographic source.** OpenStreetMap is what the prototype
   used; Kartverket's WMTS or a MapTiler style with Norwegian topography is the intended
