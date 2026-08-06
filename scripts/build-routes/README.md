@@ -95,7 +95,8 @@ python3 build_corridors.py    # corridors.swarm.json + PICKS/ALTERNATES -> corri
 python3 generate_routes.py    # corridors + summits -> routes.json   (~10 min)
 python3 resample_dtm1.py      # every vertex re-read from DTM1        (~15 min)
 python3 emit_ts.py            # routes.json         -> ../../lib/routes.ts
-python3 check_routes.py       # independent sanity pass
+python3 check_routes.py       # independent sanity pass over the geometry
+python3 check_tours.py        # the card figures: summit, vertical, coordinate, seed
 
 # only when re-running the research itself:
 python3 find_trailheads.py            # OSM roads/parking -> trailhead_candidates.json
@@ -1014,6 +1015,44 @@ One bug fell out of re-running the emitter. `emit_seed` truncated the old block 
 Kirketaket; the fallback cut at the first `update` and left the generated banner
 standing, so **every re-emit since had stacked another copy of it — 34 of them**
 in the committed `seed.sql`. It now cuts on the banner itself.
+## The card figures, checked
+
+`check_routes.py` checks the geometry and `check_guides.py` the prose. Nothing
+checked the four numbers on the tour card itself — summit height, vertical,
+coordinate, and the copy of all three in `supabase/seed.sql` — so `check_tours.py`
+now does, and it asserts what this README already claims: **`summitM` is DTM1 at
+the resolved summit, `verticalM` is the first route's cumulative ascent to within
+10 m, `lat`/`lng` is the resolved summit, and the elevation profile's end label is
+the elevation the line under it actually ends at.**
+
+Running it the first time found four things across the 68 tours.
+
+**The database seed had missed three summit corrections.** When Rørnestinden went
+1041 → 1030, Rombakstøtta 1243 → 1231 and Himmeltindan 962 → 956 — the round that
+single-sourced every height from the terrain model — `lib/tours.ts` was updated and
+`supabase/seed.sql` was not. Himmeltindan's row still carried the old coordinate
+too, 67 m off the top, and the old 960 m vertical. `lib/tours.ts` is the demo-mode
+fallback and the seed is what populates production, so the two would have served
+different heights for those three tours to different readers. Both now agree.
+
+**Storehorn carried a published height where every other tour carries a measured
+one.** The card said 1478; DTM1 reads 1482.4 at the local maximum 2 m from the
+stored coordinate, with the next top 8 m lower and 203 m away — so the coordinate
+is right and the mountain is 4 m higher than the published figure. Eleven other
+tours also carry a published number, but on those the published and measured
+figures agree to within 1.5 m, so nothing turns on it; Storehorn was the only one
+where the card and the terrain model genuinely disagreed. It now carries 1482,
+which is the same rule Rørnestinden, Rombakstøtta and Himmeltindan follow, and the
+elevation profile under its guide — which had been labelling the top 1478 while
+drawing a line that ends at 1482 — was re-emitted with it.
+
+**And the check's own first version was quietly checking half the file.** The
+first 24 seed rows are column-aligned with runs of spaces, the later ones use a
+single space, and Galdhøpiggen's has none at all after its region. A `', '`
+pattern matched 44 of the 68 rows and reported clean on the 24 it could not see —
+which is exactly the failure mode this file exists to catch, one level up. The
+separator is `,\s*` now, and the row count is printed so a silent shortfall is
+visible.
 
 ## Network
 

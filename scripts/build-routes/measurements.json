@@ -432,5 +432,12 @@
    "figure": "N 6,6/11,8 · NØ 34,2/51,3 · Ø 46,1/62,4 · SØ 46,4/63,6 · S 34,1/57,3 · SV 5,9/14,3 · V 8,6/22,1 · NV 9,4/28,2",
    "how": "flank_probe.py <lat> <lng> --out 500 --step 10 frå toppkoordinaten i summits.json, åtte peilingar over DTM1. Snittet er over heile radialen; vindauget er det brattaste 60-metersvindauget langs han."
   }
+ ],
+ "storehorn": [
+  {
+   "what": "Toppunktet og høgda på Storehorn",
+   "figure": "1482,4 moh i det lokale toppunktet 2 m frå den lagra koordinaten; nest høgaste lokale toppunkt er 1474,3 moh og ligg 203 m unna. Publisert høgd er 1478",
+   "how": "DEM-rutenett 0,04 × 0,02 grader kring 60.81506/8.59565 med lokale maksimum, og SSR-punktet for Storehorn i Hemsedal ligg 10 m frå toppen. Fjellet er rett; metern er 4,3 m høgare enn den publiserte."
+  }
  ]
 }
