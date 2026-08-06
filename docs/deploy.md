@@ -155,6 +155,66 @@ site's URL.
 
 ## 3. Stripe
 
+### Which account
+
+Toppkart needs **its own Stripe account**, not a section of one that already sells something
+else. An account carries one legal entity and one tax ID, one statement descriptor, one set of
+public business information and one payout bank account — so a customer who subscribes to
+Toppkart and sees somebody else's business name on their card statement is a dispute waiting to
+happen, and the reporting never separates cleanly afterwards.
+
+One login can own any number of accounts. In the Dashboard, click the account name in the
+upper-left corner and choose **New account**; the switcher in the same menu moves between them
+afterwards. A new account inherits nothing from the old one — not its pricing, not its
+verification status — so it goes through business verification on its own. If two accounts belong
+to the same legal entity, they can share a tax ID and even a payout account; they still need
+distinct public business information so customers can tell which one charged them.
+
+Every key, price ID, portal configuration and webhook secret below belongs to one account. Mixing
+them across two is the failure this section is arranged to prevent: `--account` on the setup
+script exists for exactly that reason.
+
+### With the setup script
+
+`scripts/stripe-setup.mjs` does steps 1–3 and 6–8 below in one command — product, both prices,
+the customer portal configuration and the webhook endpoint — and prints the environment variables
+they produce. It is idempotent, so running it twice is safe, and it never deletes anything.
+
+```bash
+STRIPE_SECRET_KEY=sk_test_… npm run stripe:setup                 # dry run, changes nothing
+STRIPE_SECRET_KEY=sk_test_… npm run stripe:setup -- --apply      # creates what is missing
+```
+
+It reads the key from `.env.local` if it is not in the environment, and prints the account id,
+the display name and whether the key is live before it writes anything. Pass
+`--account acct_…` to make it abort unless the key belongs to that account, and `--site
+https://toppkart.no` to set the origin the webhook URL and the legal links are built from
+(default: `NEXT_PUBLIC_SITE_URL`, then `https://toppkart.no`).
+
+**Run it against an account you built by hand and it adopts what is there.** A dashboard-made
+product carries no metadata and its prices no lookup keys, so the script falls back to
+recognising the product by name, a price by its amount and interval, and the portal by being the
+account's default — then labels them. Without that fallback it would report a fully working
+account as empty and build a second product beside the one your live subscriptions point at.
+
+It sorts what it finds into three groups, and the dry run counts them separately: what is
+missing, what `--apply` corrects on its own, and what needs you. The last group is the one marked
+⚠ — a price whose amount is wrong (prices are immutable; archive it and re-run), or a price
+sitting on someone else's product.
+
+The portal's two legal links are in the middle group: if `privacy_policy_url` or
+`terms_of_service_url` is empty, `--apply` points it at `/personvern` and `/vilkar` on `--site`.
+A link already set to something else is left as it is.
+
+Two things it deliberately leaves alone. It does not touch how plan changes work in the portal —
+whether switching is offered at all, and whether downgrades wait for the period to end, are
+product decisions — with one exception: it corrects the trial behaviour described in step 6,
+because that one charges a customer during a period checkout promised was free. And it cannot
+show you the webhook signing secret for an endpoint that already existed, because Stripe returns
+that once, at creation.
+
+### By hand
+
 1. Create the product in **Product catalogue → Add product**. Name it "Toppkart".
 2. Add two recurring prices on that product:
    - **29 NOK**, recurring, billing period **monthly**.
@@ -168,6 +228,17 @@ site's URL.
    there as well would apply it twice.
 6. **Settings → Billing → Customer portal**: activate the portal and allow customers to update
    their payment method and to cancel at period end. `/min-side` sends people there for both.
+
+   **The portal has to be activated before `/min-side` can open it.** Until it is, every click on
+   «Endre betalingsmetode» comes back as «Vi fikk ikke åpnet betalingsportalen» — the reader sees
+   a transient-looking error and the real cause is only in the server log, which
+   `app/api/portal/route.ts` writes as `[portal] kunne ikke opprette portaløkt`.
+
+   The setup script writes these settings as a portal *configuration* and prints its id as
+   `STRIPE_PORTAL_CONFIGURATION`. Set that variable and every portal session is created against
+   that configuration; leave it unset and sessions use whatever is default in the dashboard. Both
+   work — the variable is what makes the settings reviewable in the repository rather than only
+   in a settings page.
 
    Under **Business information**, link the two legal pages — `https://toppkart.no/vilkar` and
    `https://toppkart.no/personvern`. Leave **Redirect link** empty: `app/api/portal/route.ts`
