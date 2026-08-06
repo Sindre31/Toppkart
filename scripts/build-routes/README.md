@@ -210,6 +210,19 @@ description and notes in `corridors.json`, and the audit corrections in
 `enrich_facts.py`. They pass `check_guides.py` clean, and they have since been
 through an adversarial second reader — one per tour, all fifteen found something.
 
+The 22 tours of the Sunnmøre and Vestland rounds were written the same way, against
+`guide_brief.py` and the corridor research each one was built from, and they pass
+`check_guides.py` clean. They have **not** been through an adversarial second reader — that
+pass is what caught the wrong-side descent on Kavringtinden and the cliff warning pointing away
+from the cliff on Storehorn, and until it has run on these, the copy is sourced rather than
+verified.
+
+Writing them found one hole in the check itself. `NUM_UNIT` matched «høydemeter» and not
+«høgdemeter», so every vertical stated in nynorsk — seven of the shipped guides, and all 22 of
+the new ones — was invisible to it. The pattern now reads both, `test_check_guides.py` still
+passes its fifteen cases, and the only figure the widened check turned up across all 61 guides
+was one of the new ones, which was wrong and has been rewritten.
+
 `new_tourmeta.json` accumulates: each later pass appends what it measured, and
 `check_guides.py` treats those notes as the source for the figures in the prose.
 `measurements.json` is the same thing for **any** tour, and it exists because the

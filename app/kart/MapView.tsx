@@ -21,6 +21,7 @@ import type { Lang } from "@/lib/i18n";
 import { commonDict } from "@/lib/i18n/common";
 import { mapDict, type Dict } from "@/lib/i18n/map";
 import type { Grade, Tour } from "@/lib/types";
+import { CapsText } from "@/components/CapsText";
 import { AvalanchePanel } from "./AvalanchePanel";
 import s from "./kart.module.css";
 
@@ -276,7 +277,9 @@ export default function MapView({
               onClick={() => openTour(tour.slug)}
             >
               <h3>
-                <span>{tour.name}</span>
+                <span>
+                  <CapsText>{tour.name}</CapsText>
+                </span>
                 <span className={s.moh}>
                   {tour.summitM} {t.moh}
                 </span>
@@ -296,7 +299,9 @@ export default function MapView({
               >
                 {t.back}
               </button>
-              <h2 className={s.dTitle}>{selected.name}</h2>
+              <h2 className={s.dTitle}>
+                <CapsText>{selected.name}</CapsText>
+              </h2>
               <TourMeta tour={selected} t={t} showSummit />
             </div>
 
@@ -317,7 +322,9 @@ export default function MapView({
 
               {routes.length > 1 ? (
                 <div className={s.routes}>
-                  <div className={s.routesHead}>{t.routesLabel}</div>
+                  <div className={s.routesHead}>
+                    <CapsText>{t.routesLabel}</CapsText>
+                  </div>
                   <div className={s.routeList} role="radiogroup" aria-label={t.routesGroup}>
                     {routes.map((route) => (
                       <label
@@ -344,23 +351,33 @@ export default function MapView({
 
               <div className={s.stats}>
                 <div className={s.stat}>
-                  <div className={s.statL}>{t.stHm}</div>
+                  <div className={s.statL}>
+                    <CapsText>{t.stHm}</CapsText>
+                  </div>
                   <div className={s.statV}>↑ {selected.verticalM} m</div>
                 </div>
                 <div className={s.stat}>
-                  <div className={s.statL}>{t.stTime}</div>
+                  <div className={s.statL}>
+                    <CapsText>{t.stTime}</CapsText>
+                  </div>
                   <div className={s.statV}>{selected.duration}</div>
                 </div>
                 <div className={s.stat}>
-                  <div className={s.statL}>{t.stGrade}</div>
+                  <div className={s.statL}>
+                    <CapsText>{t.stGrade}</CapsText>
+                  </div>
                   <div className={s.statV}>{t.grades[selected.grade]}</div>
                 </div>
                 <div className={s.stat}>
-                  <div className={s.statL}>{t.stAsp}</div>
+                  <div className={s.statL}>
+                    <CapsText>{t.stAsp}</CapsText>
+                  </div>
                   <div className={s.statV}>{selected.aspect}</div>
                 </div>
                 <div className={`${s.stat} ${s.statWide}`}>
-                  <div className={s.statL}>{t.stSea}</div>
+                  <div className={s.statL}>
+                    <CapsText>{t.stSea}</CapsText>
+                  </div>
                   <div className={s.statV}>{selected.season}</div>
                 </div>
               </div>
@@ -466,7 +483,9 @@ export default function MapView({
             className={s.peakBarOpen}
             onClick={() => setMobilePane("list")}
           >
-            <span className={s.peakBarName}>{selected.name}</span>
+            <span className={s.peakBarName}>
+              <CapsText>{selected.name}</CapsText>
+            </span>
             <span className={s.peakBarCta}>{t.showInfo}</span>
           </button>
           <button

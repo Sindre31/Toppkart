@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { Lock } from "lucide-react";
 
 import { Blueprint } from "@/components/Blueprint";
+import { CapsText } from "@/components/CapsText";
 import { SiteNav, SiteFooter } from "@/components/SiteChrome";
 import { ElevationProfile } from "@/components/guide/ElevationProfile";
 import { GuideSections } from "@/components/guide/GuideSections";
@@ -107,7 +108,7 @@ export default async function TourGuidePage({ params }: { params: Promise<{ slug
                 color: "var(--color-accent-700)",
               }}
             >
-              {tour.region}
+              <CapsText>{tour.region}</CapsText>
             </span>
             <span
               className="tag tag-accent"
@@ -120,7 +121,7 @@ export default async function TourGuidePage({ params }: { params: Promise<{ slug
             </span>
           </div>
           <h1 className="display" style={{ fontSize: "clamp(44px, 6vw, 76px)", margin: "10px 0 0 -0.052em" }}>
-            {tour.name}
+            <CapsText>{tour.name}</CapsText>
           </h1>
           <p className="lede" style={{ margin: "18px 0 0" }}>
             {guide?.intro ?? tour.teaser}
@@ -168,7 +169,9 @@ export default async function TourGuidePage({ params }: { params: Promise<{ slug
                     borderBottom: "1px solid var(--color-divider)",
                   }}
                 >
-                  <div className="stat-l">{s.label}</div>
+                  <div className="stat-l">
+                    <CapsText>{s.label}</CapsText>
+                  </div>
                   <div className="stat-v" style={{ fontSize: 24 }}>
                     {s.value}
                   </div>
@@ -217,12 +220,16 @@ export default async function TourGuidePage({ params }: { params: Promise<{ slug
             bivirkning — men det var mangelen på dem som var problemet. */}
         {neighbours.length > 0 && (
           <section className={styles.neighbours}>
-            <h2 className="kicker">{t.moreInRegion(tour.region)}</h2>
+            <h2 className="kicker">
+              <CapsText>{t.moreInRegion(tour.region)}</CapsText>
+            </h2>
             <hr className="kicker-rule" />
             <ul className={styles.neighbourList}>
               {neighbours.map((peak) => (
                 <li key={peak.slug}>
-                  <Link href={`/tur/${peak.slug}`}>{peak.name}</Link>
+                  <Link href={`/tur/${peak.slug}`}>
+                    <CapsText>{peak.name}</CapsText>
+                  </Link>
                   <span className="note">
                     {elevationLabel(peak.summitM, lang)} · {gradeLabel(peak.grade, lang)}
                   </span>

@@ -76,6 +76,7 @@ app/
   api/                   Route handlers, incl. api/stripe/webhook
 components/
   Blueprint.tsx          <Blueprint> registration-cross frame, <SectionKicker>
+  CapsText.tsx           Pulls back Barlow Condensed's over-wide uppercase Ø
   SiteChrome.tsx         <SiteNav>, <SiteFooter>
 lib/
   config.ts              PRICE, TRIAL_DAYS, SITE, GRADE_COLORS, env, is*Configured
@@ -83,14 +84,14 @@ lib/
   tours.ts               The 61 tours, REGIONS, getTour(), routesFor(), routeById(),
                          routeFor(), routeProfile()
   routes.ts              Generated ascent routes per tour — see scripts/build-routes/
-  guides.ts              Editorial guide content — 39 of the 61 tours, generated
+  guides.ts              Editorial guide content — all 61 tours, generated
   access.ts              getViewer() / grantsAccess() — server-only access gate
   stripe.ts              Stripe client, null in demo mode
   demo-session.ts        Cookie-backed stand-ins for auth and subscription
   supabase/              Browser and server Supabase clients
 supabase/
   schema.sql             Tables, policies, RLS
-  seed.sql               The 61 tours and the 39 guides
+  seed.sql               The 61 tours and all 61 guides
 design-reference/        The HTML prototypes and the product/design handoff. Read-only ground
                          truth; not shipped.
 docs/
@@ -164,18 +165,13 @@ content and data quality that has to be settled before the site is sold to anyon
   Arctic tops and the published figures are old survey numbers, so the gap may be a cornice, a
   cairn, or simply an older measurement — DTM1 is bare rock. A local reader should settle it
   before print; the app is at least now internally consistent and single-sourced.
-- **Twelve tours are on the map without a written guide.** The Sunnmøre round — Råna, Kvitegga,
-  Jønshornet, Vassdalstinden, Torvløysa, Skårene, Ytstevasshornet, Auskjeret, Eidskyrkja,
-  Sunndalsnipa, Melshornet and Hornindalsrokken — has the same geometry and the same measured
-  figures as the other 39: routed line, DTM1 summit, vertical read off the route. What they do not
-  have is `lib/guides.ts` content, so `/tur/<slug>` renders the key figures and says the guide is
-  still being written, and the map's detail panel links into the map rather than to a guide. The
-  research each one was built from is in `scripts/build-routes/new_corridors.json`, which is what a
-  guide would be written against. See "The Sunnmøre round" in `scripts/build-routes/README.md`.
 - **The guide text has not been read by anyone who has skied these tours.** Every number in
   `lib/guides.ts` traces to Kartverket's terrain model, the route research or a cited source, and
   every guide was put through an adversarial fact-check — all 24 of the first round, and then all
-  15 of the second. It caught a descent sold on the wrong side of Kavringtinden, a cliff warning
+  15 of the second. **The 22 written for the Sunnmøre and Vestland rounds have not had that second
+  read yet**: they are checked mechanically by `check_guides.py`, which now reads nynorsk verticals
+  too, and every number in them traces to the route facts or the corridor research — but nobody has
+  yet tried to break them. It caught a descent sold on the wrong side of Kavringtinden, a cliff warning
   pointing away from the cliff on Storehorn, a rock band on Synshorn that does not exist, and, in
   the second round, four guides that named the wrong compass direction and a systematic habit of
   quoting the skin track's own gradient as if it were the slope it crosses. Every number is matched
