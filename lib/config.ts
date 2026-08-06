@@ -68,6 +68,12 @@ export const env = {
   stripeWebhookSecret: process.env.STRIPE_WEBHOOK_SECRET ?? "",
   stripePriceMonthly: process.env.STRIPE_PRICE_MONTHLY ?? "",
   stripePriceYearly: process.env.STRIPE_PRICE_YEARLY ?? "",
+  /** Customer portal configuration id (`bpc_…`), written by
+   *  `scripts/stripe-setup.mjs`. Optional: unset means the portal session falls
+   *  back to whatever configuration is default in the dashboard, which is how
+   *  an account set up by hand works. Set it and the portal's settings come
+   *  from the script rather than from someone's memory of a settings page. */
+  stripePortalConfiguration: process.env.STRIPE_PORTAL_CONFIGURATION ?? "",
   /** Comma-separated e-mail addresses that may open /admin/*. Server-side
    *  only — never give this a NEXT_PUBLIC_ prefix. Unset means nobody. */
   adminEmails: process.env.ADMIN_EMAILS ?? "",

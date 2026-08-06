@@ -13,7 +13,9 @@ Norwegian; this README and the rest of `docs/` are in English for whoever mainta
   row-level security as the second line of defence on gated columns.
 - **Stripe** — subscription billing. Checkout in `mode: "subscription"` with
   `trial_period_days: 14`, the Customer Portal for payment-method changes and cancellation, and
-  webhooks to sync subscription status back into Postgres.
+  webhooks to sync subscription status back into Postgres. `npm run stripe:setup -- --apply`
+  provisions a fresh Stripe account with the product, both prices, the portal configuration and
+  the webhook endpoint, and prints the environment variables they produce.
 - **Resend** — transactional mail (receipts, "your trial is ending" notices) after a Stripe
   checkout. Nothing to do with signing in: Google sends no mail, so auth needs no SMTP at all.
   Optional — without the key those sends log and no-op.

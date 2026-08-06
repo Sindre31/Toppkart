@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { env } from "@/lib/config";
 import { requestOrigin } from "@/lib/origin";
 import { getViewer } from "@/lib/access";
 import { getStripe } from "@/lib/stripe";
@@ -26,9 +27,20 @@ export async function POST(request: Request) {
     const session = await stripe.billingPortal.sessions.create({
       customer: customerId,
       return_url: `${requestOrigin(request)}/min-side`,
+      // Unset falls back to the account's default configuration, which is what
+      // a portal activated by hand in the dashboard gives you.
+      ...(env.stripePortalConfiguration ? { configuration: env.stripePortalConfiguration } : {}),
     });
     return NextResponse.json({ url: session.url });
-  } catch {
+  } catch (error) {
+    /* The reader gets «vi fikk ikke åpnet betalingsportalen» either way, but the
+       overwhelmingly likely cause is an account whose portal has never been
+       activated — and that is indistinguishable from a network blip unless the
+       message is written down somewhere. */
+    console.warn(
+      "[portal] kunne ikke opprette portaløkt:",
+      error instanceof Error ? error.message : error,
+    );
     return NextResponse.json({ error: "portal_failed" }, { status: 502 });
   }
 }
