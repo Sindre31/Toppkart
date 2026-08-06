@@ -199,14 +199,19 @@ account as empty and build a second product beside the one your live subscriptio
 
 It sorts what it finds into three groups, and the dry run counts them separately: what is
 missing, what `--apply` corrects on its own, and what needs you. The last group is the one marked
-⚠ — a price whose amount is wrong (prices are immutable; archive it and re-run), a price sitting
-on someone else's product, or a portal that does not link to the legal pages.
+⚠ — a price whose amount is wrong (prices are immutable; archive it and re-run), or a price
+sitting on someone else's product.
 
-Two things it deliberately leaves alone. It does not turn plan switching on or off in the portal
-— that is a product decision — though it will correct the trial behaviour described in step 6 if
-switching is already enabled, because that one charges a customer during a period checkout
-promised was free. And it cannot show you the webhook signing secret for an endpoint that already
-existed, because Stripe returns that once, at creation.
+The portal's two legal links are in the middle group: if `privacy_policy_url` or
+`terms_of_service_url` is empty, `--apply` points it at `/personvern` and `/vilkar` on `--site`.
+A link already set to something else is left as it is.
+
+Two things it deliberately leaves alone. It does not touch how plan changes work in the portal —
+whether switching is offered at all, and whether downgrades wait for the period to end, are
+product decisions — with one exception: it corrects the trial behaviour described in step 6,
+because that one charges a customer during a period checkout promised was free. And it cannot
+show you the webhook signing secret for an endpoint that already existed, because Stripe returns
+that once, at creation.
 
 ### By hand
 

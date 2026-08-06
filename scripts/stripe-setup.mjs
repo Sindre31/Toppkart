@@ -352,15 +352,18 @@ function portalFeatures(site) {
  *  wrong.
  *
  *  Deliberately not a rewrite. A portal somebody set up by hand carries their
- *  choices (which fields customers may edit, whether plans can be switched),
- *  and overwriting those because they are not what this file happens to say
- *  would be the script exceeding its remit. Only two classes get corrected:
- *  features `/min-side` depends on to function at all, and the trial trap,
- *  which charges a customer during a period checkout promised was free.
+ *  choices (which fields customers may edit, whether plans can be switched,
+ *  whether downgrades wait for the period to end), and overwriting those
+ *  because they are not what this file happens to say would be the script
+ *  exceeding its remit. Three classes get corrected: features `/min-side`
+ *  depends on to function at all, the trial trap — which charges a customer
+ *  during a period checkout promised was free — and the two legal links, which
+ *  point at pages the app already serves.
  */
-function auditPortal(config) {
+function auditPortal(config, site) {
   const features = config.features ?? {};
   const fix = {};
+  let profile = null;
 
   if (!features.payment_method_update?.enabled) {
     note("«Endre betalingsmetode» er av i portalen — /min-side sender folk dit for nettopp det.");
@@ -403,14 +406,28 @@ function auditPortal(config) {
     fix.invoice_history = { enabled: true };
   }
 
-  const profile = config.business_profile ?? {};
-  if (!profile.privacy_policy_url || !profile.terms_of_service_url) {
-    // Warned, never written. Which pages a portal links to is the operator's
-    // call, and both exist in the app whether or not Stripe points at them.
-    warn("Portalen lenker ikke til /vilkar og /personvern. Sett dem i dashbordet hvis du vil.");
+  /* `/vilkar` and `/personvern` are served by the app at fixed paths, so the
+     only thing to decide is whether Stripe points at them — and there is no
+     version of «subscription portal that does not link to the terms» that is
+     the better answer. A link already set to something else is left alone;
+     only the empty ones are filled. */
+  const current = config.business_profile ?? {};
+  const wanted = { privacy_policy_url: `${site}/personvern`, terms_of_service_url: `${site}/vilkar` };
+  const missing = Object.entries(wanted).filter(([key]) => !current[key]);
+  if (missing.length) {
+    note(`Portalen lenker ikke til ${missing.map(([, url]) => url).join(" og ")}.`);
+    profile = {
+      ...(current.headline ? { headline: current.headline } : {}),
+      privacy_policy_url: current.privacy_policy_url || wanted.privacy_policy_url,
+      terms_of_service_url: current.terms_of_service_url || wanted.terms_of_service_url,
+    };
   }
 
-  return Object.keys(fix).length ? fix : null;
+  if (!Object.keys(fix).length && !profile) return null;
+  return {
+    ...(Object.keys(fix).length ? { features: fix } : {}),
+    ...(profile ? { business_profile: profile } : {}),
+  };
 }
 
 async function ensurePortal(stripe, apply, site) {
@@ -424,11 +441,11 @@ async function ensurePortal(stripe, apply, site) {
   if (found) {
     const mine = found.metadata?.app === APP_TAG;
     record("Kundeportal", "exists", `${found.id}${mine ? "" : "  (kontoens standard)"}`);
-    const fix = auditPortal(found);
-    if (!fix) return found;
-    if (!apply) return found;
-    const updated = await stripe.billingPortal.configurations.update(found.id, { features: fix });
-    record("Kundeportal", "updated", `${updated.id}  ${Object.keys(fix).join(", ")}`);
+    const fix = auditPortal(found, site);
+    if (!fix || !apply) return found;
+    const changed = [...Object.keys(fix.features ?? {}), ...(fix.business_profile ? ["lenker"] : [])];
+    const updated = await stripe.billingPortal.configurations.update(found.id, fix);
+    record("Kundeportal", "updated", `${updated.id}  ${changed.join(", ")}`);
     return updated;
   }
 
