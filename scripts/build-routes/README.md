@@ -219,10 +219,8 @@ through an adversarial second reader — one per tour, all fifteen found somethi
 
 The 22 tours of the Sunnmøre and Vestland rounds were written the same way, against
 `guide_brief.py` and the corridor research each one was built from, and they pass
-`check_guides.py` clean. They have **not** been through an adversarial second reader — that
-pass is what caught the wrong-side descent on Kavringtinden and the cliff warning pointing away
-from the cliff on Storehorn, and, in the Oslo round, a ski centre placed on the wrong side of a
-mountain. Until it has run on these 22, their copy is sourced rather than verified.
+`check_guides.py` clean. They have **now** been through the adversarial second reader too — see
+"The 22, read adversarially" below. Ten of the 22 came back with something; twelve were clean.
 
 Writing them found one hole in the check itself. `NUM_UNIT` matched «høydemeter» and not
 «høgdemeter», so every vertical stated in nynorsk — seven of the shipped guides, and all 22 of
@@ -848,6 +846,82 @@ this pipeline draws described lines.
 **Oslomarka.** Rødkleiva and Høgruta i Maridalen are covered above. Kolsås,
 Vettakollen, Tryvannshøgda and Oppkuven are real winter destinations and none of
 them is a topptur with a vertical worth a card.
+
+## The 22, read adversarially
+
+The Sunnmøre and Vestland guides shipped sourced but unverified, and this is what
+happened when the same second reader that went over the Oslo round was pointed at
+them. Method: every compass claim re-derived as a bearing from the corridor and
+the routed line, every summit swept with `flank_probe.py` on all eight bearings
+(none of these 22 had ever been swept), the steep faces re-read from the DTM1
+*point* API rather than the raster, terrain-class claims re-queried, the research
+records re-read for what they actually say, and the two languages compared number
+by number. All 22 sweeps are in `measurements.json`.
+
+**Ten of the 22 needed a change. Twelve were clean.** The clean twelve are worth
+naming, because a pass that finds something everywhere is not measuring anything:
+Hornindalsrokken, Jønshornet, Vassdalstinden, Eidskyrkja, Sunndalsnipa,
+Melshornet, Lodalskåpa, Snønipa, Juklavasstinden, Gygrastolen, Horndalsnuten and
+Storanosi came through with their directions, their flank claims and their
+terrain-class claims all confirmed. Hornindalsrokken's «om lag 55 grader rett aust
+for ryggen og 75 rett vest» measures 55.8 and 74.2. Vassdalstinden's Vestrenna,
+«45 til 50 grader», measures 46.9 mean on the west radial with a 57.1 window.
+Melshornet's cornice «ut mot Ørsta» is on the north side, and north is the steep
+one, 41.1°.
+
+The three that were wrong rather than imprecise:
+
+- **Skarsteinsfjellet was sent down the mountain in the wrong direction.** The
+  guide said «ned same ryggen, austover mot Remestøylen og Dragesetvegen» and then,
+  one sentence later, «fallretninga er vest». Remestøylen is on a bearing of 289
+  from the summit and the trailhead 275: both west. The ascent legs measure 45,
+  134, 101 and 101 — you climb east. The error came from the corridor research,
+  which says «vest-sørvestover opp den tydelege ryggen»; the guide inherited it
+  mirror-image and contradicted itself inside two sentences. Both are corrected.
+- **Torvløysa carried a glacier the route does not cross.** The guide stated
+  «Kartverket registrerer breterreng kring 1437 moh» and built a crevasse warning
+  on it, in the section a reader uses to decide whether to bring a rope. Every
+  point on the line between 1380 and 1520 m reads `ÅpentOmråde`. The nearest cell
+  classed `SnøIsbre` sits about 300 m off the route at 1482 m. The paragraph now
+  says that, and the ridge's real hazard — its sides — took its place.
+- **Auskjeret warned about the wrong side.** The research said «fjellet har eit
+  brattheng mot aust som er over 30 grader», and the guide told the reader not to
+  drop east off the ridge. East off the ridge measures 7.5, 7.0 and 8.9 degrees
+  mean from three points on it (896, 1000 and 1103 m), and 18.9 from the cairn,
+  with the steepest 60 m window at 31.1° a full 280–340 m out. What is actually
+  steep is **north and north-east of the summit**: 30.6 and 35.8 mean, windows
+  58.9 and 50.5. This is the Storehorn shape exactly — a warning pointing away
+  from the hazard.
+
+Two more were true but pointed loosely, which on this product is the same
+problem:
+
+- **Kvitegga's «fallretninga er aust»** is the way home, not the first move: from
+  the cairn the route runs *south* along the ridge to 1583 m before it turns down.
+  Due east of the summit the flank measures 39.2° mean with a **73.1° window
+  190–250 m out**. A reader taking the aspect field literally at the cairn drops
+  into that. The guide now says which comes first. Its «sommarstien vestover inn
+  Snødalen» is also south-west — the leg measures 210° — and that came from the
+  research too.
+- **Glitregga's «rett under toppen er terrenget bratt»** did not say which side.
+  North measures 26.3 mean with a 37.8° window; south, east and west measure 2.8,
+  8.9 and 1.8. Now it names the north.
+
+And five guides gained a measured hazard they had simply never mentioned, because
+nobody had swept these summits: **Molden** — a grade 1 tour — has 46.1 and 46.4
+degrees mean east and south-east with 62–64° windows, which is the fjord view
+being an edge rather than a slope; **Kvamshesten** 48.9 and 47.1 south and
+south-east with 74° windows; **Skårene** 40.0 west and 37.7 north-east against 13
+on the flank you climbed; **Ytstevasshornet** 43.2 north with a 67.3° window as
+little as 10–70 m out from the cairn; **Torvløysa** 40.9 west and 36.2 south-west
+off a ridge the copy called broad and gentle.
+
+One thing was left as a disagreement rather than a fix. **Råna's card says the
+descent faces south-east**; the line home bears 182° and `route_metrics` measures
+S. Rather than overwrite an editorial field from a single radial, the guide now
+states both — the card's SØ and the measured 182 — and says the crest is held on
+its west side, away from the cornices the research recorded. A tour card and a
+guide that disagree silently is worse than one that says which is which.
 
 ## Network
 

@@ -1330,13 +1330,14 @@
   "corrections": [
    "Namnet peikar på to fjell. SSR har ni Kvitegga, og to av dei er dokumenterte toppturar innanfor 9 km: den i Stranda på 62.13855,6.86486 toppar seg på 1488 m og er Kvitegga (1489 moh.) frå Ljøen, ei anna rute. Denne turen går på Kvitegga 1717, registrert i Volda på 62.09473,6.70223.",
    "Publisert høgde er snøkuppelen, ikkje terrenget. DTM1 les 1700,3 m på toppcella mot publiserte 1717; Hjørundfjordportalen skriv sjølv at «1717 moh på snøkuppelen». Kortet fører den målte høgda.",
-   "Rett linje frå parkeringa til toppen er ikkje ruta. Profilen stig jamt til 1180 m og går så 1180 → 1508 → 1700 på dei siste 370 metrane — ein vegg. Den skildra ruta går vestover inn Snødalen (925,1 m på 62.0917,6.7306), opp Brattbakken (1316,4 m på 62.0885,6.7209, brear i sida) og over platået til 1582,4 m-toppen på 62.08607,6.71162, før ein følgjer ryggen nordover til topps. Alle tre er lagde inn som vegpunkt og lesne av DTM1."
+   "Rett linje frå parkeringa til toppen er ikkje ruta. Profilen stig jamt til 1180 m og går så 1180 → 1508 → 1700 på dei siste 370 metrane — ein vegg. Den skildra ruta går vestover inn Snødalen (925,1 m på 62.0917,6.7306), opp Brattbakken (1316,4 m på 62.0885,6.7209, brear i sida) og over platået til 1582,4 m-toppen på 62.08607,6.71162, før ein følgjer ryggen nordover til topps. Alle tre er lagde inn som vegpunkt og lesne av DTM1.",
+   "Retta av den fiendtlege andrelesinga: etappen frå grustaket til Snødalen måler 210 grader, altså sørvest, ikkje vestover som beskrivinga sa. Same lesing målte austflanken under toppen til 39,2 grader i snitt med eit 73,1-graders vindauge 190–250 m ut — kortet fører nedkøyringsaspektet som aust, men det er retninga heim, ikkje fyrste steget frå varden."
   ],
   "rejectReason": "",
   "corridor": {
    "routeId": "normalruta",
    "routeName": "Normalruta frå Nibbedalen gjennom Snødalen",
-   "routeDescriptionFull": "Frå grustaket i Nibbedalen følgjer ein grusvegen eit lite stykke og deretter sommarstien gjennom open skog vestover inn Snødalen. Innerst i dalen tek ein Brattbakken, ei bratt bakke på om lag 35 grader opp mot 1300 moh, og følgjer så det brelagde platået til høgda på 1583 moh. Derfrå går ein ned eit lite skar og nordover langs ryggen til toppen.",
+   "routeDescriptionFull": "Frå grustaket i Nibbedalen følgjer ein grusvegen eit lite stykke og deretter sommarstien gjennom open skog sørvestover inn Snødalen. Innerst i dalen tek ein Brattbakken, ei bratt bakke på om lag 35 grader opp mot 1300 moh, og følgjer så det brelagde platået til høgda på 1583 moh. Derfrå går ein ned eit lite skar og nordover langs ryggen til toppen.",
    "trailhead": {
     "name": "Grustaket i Nibbedalen",
     "lat": 62.10491,
@@ -1636,7 +1637,8 @@
   "corrections": [
    "Fausaskiftet er funne i OSM, ikkje gjetta. Namnet står ikkje i SSR. Fausavegen (OSM way/598763759, tertiary) tek av frå vegnettet ved Nysætervatnet på 62.36019,6.82149, 332,6 m, og det er dette skiftet Fri Flyt og ut.no skildrar. Punktet gjev 870 høgdemeter til toppen mot Fri Flyts 850 og ut.no sine 871, og 3,2 km i luftlinje mot Fri Flyts 3 km — alle tre stemmer.",
    "Toppen les 1202,6 m på DTM1 mot publiserte 1203.",
-   "Auskjeret finst to gonger i SSR innan 20 km: 62.41235,7.16615 (1340 m) i Fjord, som Fri Flyt fører som «Auskjeret i Stordal, 1360 moh», og denne på 62.37739,6.77488 i Sykkylven. Turen her er Sykkylven-toppen."
+   "Auskjeret finst to gonger i SSR innan 20 km: 62.41235,7.16615 (1340 m) i Fjord, som Fri Flyt fører som «Auskjeret i Stordal, 1360 moh», og denne på 62.37739,6.77488 i Sykkylven. Turen her er Sykkylven-toppen.",
+   "Refutert av den fiendtlege andrelesinga: notatet sa «fjellet har eit brattheng mot aust som er over 30 grader». Aust frå tre punkt på sjølve ryggen (896, 1000 og 1103 moh) måler 7,5, 7,0 og 8,9 grader i snitt over 400 m, og aust frå varden 18,9 med brattaste 60-metersvindauge på 31,1 grader heile 280–340 m ut. Det som er bratt, er nord og nordaust for toppen."
   ],
   "rejectReason": "",
   "corridor": {
@@ -1663,7 +1665,7 @@
    "aspect": "SØ",
    "grade": 2,
    "gradeReason": "Jamn stigning på om lag 15 grader i snitt heile vegen, og med rett rutevalg held turen seg under 30 grader. Det er lengda og eit brattheng mot aust som skil han frå ein reint enkel tur.",
-   "hazardNotes": "Fjellet har eit brattheng mot aust som er over 30 grader og skal styrast unna i skredver. Elles held ruta seg under 30 grader om ein følgjer ryggen opp og ned.",
+   "hazardNotes": "Ryggen opp er slak og brei. Det bratte ligg nord og nordaust for toppen — 30,6 og 35,8 grader i snitt over 500 m, med 60-metersvindauge på 58,9 og 50,5 — altså bak toppen, ikkje langs ryggen. Elles held ruta seg under 30 grader.",
    "teaserNo": "Ein av dei mest gåtte skitoppane i Sykkylven: heilårsopen veg, moderate hellingar og tidleg sesong.",
    "teaserEn": "One of the most-skied peaks in Sykkylven: a road open all year, moderate angles and an early season.",
    "sources": [
@@ -1683,7 +1685,8 @@
    "Starten er den kartfeste p-plassen på Hatlestad, OSM node/10219240171, 453,2 m. Fri Flyt skriv «parker ved Hatlestad-gardane på 350 moh»; SSR-punktet for Hatlestad les 412,5 m og p-plassen 453,2 m, så den publiserte 350-metaren er avrunda ned. Difor blir vertikalen om lag 1400 m og ikkje dei 1500 Fri Flyt oppgjev.",
    "Vegpunkta er SSR-namn lesne av DTM1: Rellingsætra 557,1 m og Daurmålsfjellet 824,6 m. Profilen frå Daurmålsfjellet til toppen stig jamt 825 → 1851 m over fem kilometer, med breterreng registrert på 1437 m — som svarar til «følg ryggen i slakt terreng heile vegen til toppen».",
    "Toppen les 1850,7 m på DTM1 mot publiserte 1850 (lokalt òg skrive 1851).",
-   "Lagt inn eit ryggpunkt mellom Daurmålsfjellet og toppen. Fem kilometer utan noko som held linja er for langt for ein korridor; DTM1 les 62.20269,7.27324 til 1186.2 m, midt på ryggen, og korridoren blir to strekk på 2,9 og 2,2 km."
+   "Lagt inn eit ryggpunkt mellom Daurmålsfjellet og toppen. Fem kilometer utan noko som held linja er for langt for ein korridor; DTM1 les 62.20269,7.27324 til 1186.2 m, midt på ryggen, og korridoren blir to strekk på 2,9 og 2,2 km.",
+   "Refutert av den fiendtlege andrelesinga: notatet sa at «breterrenget kring 1400 moh har sprekker seinvinters», og guiden gjentok det som ei Kartverket-registrering på 1437 moh. Ruta kryssar ikkje breterreng i det heile: kvart punkt på linja mellom 1380 og 1520 moh er klassa ÅpentOmråde, og næraste SnøIsbre-celle ligg om lag 300 m frå linja på 1482 moh."
   ],
   "rejectReason": "",
   "corridor": {
@@ -1722,7 +1725,7 @@
    "aspect": "N",
    "grade": 2,
    "gradeReason": "Fri Flyt: «Dersom du følgjer den skildra ruta, kan du halde deg under 30 grader.» Det bratte ligg i kneika frå Rellingsætra opp på Daurmålsfjellet; resten er slak rygg. Lengda — åtte kilometer og 1400 høgdemeter — er det som gjer turen krevjande.",
-   "hazardNotes": "Kneika frå Rellingsætra opp på Daurmålsfjellet er den bratte delen. Ryggen vidare er slak, men lang og utan ly, og breterrenget kring 1400 moh har sprekker seinvinters. Vending må avgjerast tidleg.",
+   "hazardNotes": "Kneika frå Rellingsætra opp på Daurmålsfjellet er den bratte delen. Ryggen vidare er slak, men lang og utan ly, og sidene av han er ikkje slake: vest 40,9 grader i snitt frå varden, sørvest 36,2 og søraust 35,2, mot 9 grader nord og aust. Vending må avgjerast tidleg.",
    "teaserNo": "Ein av dei store toppane i Norddal, med åtte kilometer slak rygg og utsikt utan sidestykke.",
    "teaserEn": "One of the big peaks above Norddal: eight kilometres of gentle ridge and an unmatched view.",
    "sources": [
@@ -1902,13 +1905,14 @@
   "corrections": [
    "SSR skriv fjellet Skarsteinsfjellet; Fri Flyt skriv Skarsteinfjellet. Registerforma er brukt. Toppen les 1566,6 m mot publiserte 1566.",
    "Starten er lagd ved grinda på Dragesetvegen, 349,1 m, og ikkje på garden Drageset (249,4 m). Det gjev 1218 høgdemeter mot Fri Flyts 1100 — differansen svarar til at ein køyrer eit stykke lenger opp traktorvegen når han er brøytt.",
-   "Vegpunkta er SSR-namn lesne av DTM1: Remestøylen 596,4 m og Hestehytta 864,5 m. Profilen frå Hestehytta til toppen stig jamt 864 → 1567 over 3,3 km, om lag 12 grader i snitt, som svarar til Fri Flyts «heile ruta går i terreng under 30 grader»."
+   "Vegpunkta er SSR-namn lesne av DTM1: Remestøylen 596,4 m og Hestehytta 864,5 m. Profilen frå Hestehytta til toppen stig jamt 864 → 1567 over 3,3 km, om lag 12 grader i snitt, som svarar til Fri Flyts «heile ruta går i terreng under 30 grader».",
+   "Retta av den fiendtlege andrelesinga: rutebeskrivinga sa «vest-sørvestover opp den tydelege ryggen». Etappane måler 45, 134, 101 og 101 grader — oppstigninga går aust. Remestøylen ligg på peiling 289 og starten på 275 frå toppen, altså vest. Guiden hadde arva feilen spegelvend og sende lesaren austover ned mot ein stad som ligg vest."
   ],
   "rejectReason": "",
   "corridor": {
    "routeId": "normalruta",
    "routeName": "Normalruta frå Drageset over Remestøylen og Hestehytta",
-   "routeDescriptionFull": "Frå grinda på Dragesetvegen innerst i Innvikdalen følgjer ein traktorvegen opp til Remestøylen. Derfrå held ein vest-sørvestover opp den tydelege ryggen med Innvikdalen på høgre side, forbi Hestehytta på 900 moh, og vidare langs ryggen heilt til toppen. Same veg ned — det finst fleire skredutsette nedkøyringsalternativ her, så følg ruta og ikkje andre sine spor.",
+   "routeDescriptionFull": "Frå grinda på Dragesetvegen innerst i Innvikdalen følgjer ein traktorvegen opp til Remestøylen. Derfrå held ein austover og aust-søraustover opp den tydelege ryggen med Innvikdalen på høgre side, forbi Hestehytta på 900 moh, og vidare langs ryggen heilt til toppen. Same veg ned — det finst fleire skredutsette nedkøyringsalternativ her, så følg ruta og ikkje andre sine spor.",
    "trailhead": {
     "name": "Dragesetvegen i Innvikdalen",
     "lat": 61.83421,

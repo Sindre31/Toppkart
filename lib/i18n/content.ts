@@ -733,7 +733,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
     ],
     descent: [
       "Back down the same ridge, south-east toward Nysætervatnet, in moderate and open ski terrain. Follow the ridge up and down and the route stays below 30 degrees the whole way.",
-      "The usual mistake: dropping east off the ridge because the flank looks inviting. The mountain has a steep face to the east measuring over 30 degrees, and it is the one place on this tour where the line choice decides what kind of day you get.",
+      "The usual mistake is to assume the steep ground is to the east. The measurements say otherwise. From three points on the ridge — 896, 1000 and 1103 m — the east side measures 7.5, 7.0 and 8.9 degrees on average over 400 metres, and from the cairn 18.9. The steep ground is north and north-east of the summit: 30.6 and 35.8 degrees on average, with 60-metre windows of 58.9 and 50.5. The ridge you climb is the gentle line, and the terrain behind the summit is what you cannot see from it.",
     ],
     avalanche: [
       {
@@ -742,7 +742,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       },
       {
         title: "The terrain around it",
-        body: "The steep east face is over 30 degrees and is to be kept away from in avalanche conditions. That face, together with the length, is what separates this from a pure beginner's tour — the ridge itself does not.",
+        body: "The research for this tour said the mountain has an east-facing slope over 30 degrees. The terrain model does not find it: east from the ridge measures 7 to 9 degrees on average and east from the cairn 18.9, with the steepest 60-metre window at 31.1 degrees a full 280 to 340 metres out. What is actually steep is north and north-east of the summit — 30.6 and 35.8 degrees on average with windows of 58.9 and 50.5. It is the length and that side, not the east side, that separates this from a beginner's tour.",
       },
       {
         title: "Before you go",
@@ -844,7 +844,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       },
       {
         title: "The terrain around it",
-        body: "Cornices along the summit ridge — a large one normally forms between the fore-summit and the main top, and it is rounded from below. The flank down from the main summit is avalanche terrain, and so is Vassdalen itself, which is the only way back to the car.",
+        body: "Cornices along the summit ridge — a large one normally forms between the fore-summit and the main top, and it is rounded from below. The flank down from the main summit is avalanche terrain, and the north side is the steepest: 43.2 degrees on average over 500 metres with a 67.3-degree window as little as 10 to 70 metres out from the cairn, and north-east 56.3 degrees in the first 60. East — the way down Vassdalen — measures 9.8 degrees on average, and Vassdalen is still avalanche terrain and the only way back to the car.",
       },
       {
         title: "Before you go",
@@ -868,7 +868,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       "From there you follow the summit ridge north. It is broad and eases toward 1400 m — 6.9 degrees from 1300 to 1400 — before the final climb along the crest from 1531 and 1562 m to the cairn at 1587. That is where the steepest ground is: 37.5 degrees over thirty metres between 1530 and 1555 m.",
     ],
     descent: [
-      "Back the same way: the crest, the broad summit ridge, down the arête to Nordkopen and out the valley to Urkegjerdet. The descent faces south-east, and it is long — 1595 metres in one run from the summit to the fjord.",
+      "Back the same way: the crest, the broad summit ridge, down the arête to Nordkopen and out the valley to Urkegjerdet. The card gives the descent aspect as south-east; the line home bears 182 degrees, which is due south, and the crest is held on its west side where the cornices are not. It is long — 1595 metres in one run from the summit to the fjord.",
       "The usual mistake: holding east on the summit ridge. Large cornices sit on the east side, and a flank measurement from the summit shows the mountain is steep in every direction: 22 to 41 degrees on average over the first 400 metres, with 60-metre windows of 53 to 66 degrees. Keep west of the crest.",
       "The second is timing. The route runs through avalanche terrain both into Nordkopen and on the flank up to the arête, and in spring snow through the afternoon that is the part of the tour that changes fastest.",
     ],
@@ -1039,12 +1039,12 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       "Start at the mapped car park at Hatlestad, 453 m, above Norddalen. Fri Flyt says you park at 350 m; the terrain model reads the farms at 412 and the car park at 453, and that difference is why this tour measures 1461 metres of climbing and not 1500.",
       "Walk gently into the mouth of Dyrdalen and up to Rellingsætra at 557 m. The first two bands are nearly flat — 3.0 degrees from 400 to 500 m and 2.1 over 2656 metres of ground from 500 to 600.",
       "From the seter the step climbs onto Daurmålsfjellet, 825 m: 16.9 degrees from 600 to 700 m and 15.2 from 700 to 800. The forest holds to 748 m. This is the steep part of the tour, and it is short.",
-      "Then comes the ridge. Five kilometres of gentle ground, over the ridge point at 1186 m, with bands between 7 and 20 degrees the whole way: 8.4 from 1000 to 1100 m, 14.1 from 1200 to 1300, 20.2 from 1400 to 1500 — the steepest hundred-metre band — and 9.0 for the last hundred to the cairn at 1851 m. Kartverket registers glacier terrain around 1437 m.",
+      "Then comes the ridge. Five kilometres of gentle ground, over the ridge point at 1186 m, with bands between 7 and 20 degrees the whole way: 8.4 from 1000 to 1100 m, 14.1 from 1200 to 1300, 20.2 from 1400 to 1500 — the steepest hundred-metre band — and 9.0 for the last hundred to the cairn at 1851 m. Kartverket registers no glacier terrain anywhere on the line itself: every point between 1380 and 1520 m is open ground. The nearest cell classed as glacier lies about 300 metres off the route, at 1482 m.",
     ],
     descent: [
       "Back down the same ridge: north to Daurmålsfjellet, down the step to Rellingsætra and out Dyrdalen to Hatlestad. The descent faces north, and it is long and even rather than steep.",
       "The usual mistake: turning back too late. Ten kilometres without shelter, with most of the height far from the car, means a change in the weather costs more here than on a short tour — the decision to turn has to be made early, not when you are on the ridge watching it close in.",
-      "The second is the glacier terrain around 1437 m: it has crevasses late in the winter, and on a ridge this gentle it is easy to stop thinking about what you are walking on.",
+      "The second is the sides of the ridge. It is broad enough that you stop thinking about its edges, but it falls away beyond them: from the cairn, west measures 40.9 degrees on average over 500 metres, south-west 36.2 and south-east 35.2, with 60-metre windows of 49.3, 54.4 and 47.5. North and east, which is the way home, hold 9.0 and 9.3 degrees. Ten kilometres in cloud on a ridge that is gentle in two directions and steep in six is a navigation problem, not a tour to improvise.",
     ],
     avalanche: [
       {
@@ -1053,7 +1053,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       },
       {
         title: "The terrain around it",
-        body: "The glacier terrain around 1437 m has crevasses late in the season. The ridge is broad, but it is long and without shelter, and the length is the real hazard here: ten kilometres from the car in bad weather is a different tour from ten kilometres in sunshine.",
+        body: "The ridge is broad and gentle, but its sides are not: west measures 40.9 degrees on average from the cairn, south-west 36.2 and south-east 35.2. North and east — the way home — hold 9 degrees. It is the length and the navigation that are the real danger here: ten kilometres from the car in bad weather is a different tour from ten kilometres in sunshine.",
       },
       {
         title: "Before you go",
@@ -1087,7 +1087,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       },
       {
         title: "The terrain around it",
-        body: "Avalanche terrain from the head of Gråsteindalen all the way to the summit. The flank is large and unbroken, and there is no line around it: if you do this tour, you are on it.",
+        body: "Avalanche terrain from the head of Gråsteindalen all the way to the summit. The flank is large and unbroken, and there is no line around it: if you do this tour, you are on it. And the summit is not gentle on its far side: west measures 40.0 degrees on average over 500 metres with a 67.7-degree window, north-west 29.5 with 70.4 and north-east 37.7 with 65.6. South and south-east — the flank you climbed — hold 13 degrees.",
       },
       {
         title: "Before you go",
@@ -1210,12 +1210,12 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       "1477 metres of climbing over 6.05 km from Nibbedalen to the highest mountain in the central Sunnmøre Alps. The steepest sustained section measures 38.1 degrees — that is Brattbakken, and it is the one technical part of the tour.",
     ascent: [
       "Start in the gravel pit in Nibbedalen, 324 m, where the side road leaves county road 655. If the road is not ploughed, park along the county road. The first 771 metres of ground lie at 5.9 degrees.",
-      "Follow the gravel road a short way and then the summer path west into Snødalen. The climbing is even and sustained: 20.1 degrees from 500 to 600 m, 19.6 from 600 to 700 and 19.0 from 700 to 800. At 925 m you are inside the valley itself.",
+      "Follow the gravel road a short way and then the summer path south-west into Snødalen — the route description says west, but the leg measures 210 degrees. The climbing is even and sustained: 20.1 degrees from 500 to 600 m, 19.6 from 600 to 700 and 19.0 from 700 to 800. At 925 m you are inside the valley itself.",
       "At its head Brattbakken begins — the slope up to 1316 m that the route description puts at about 35 degrees. The terrain model measures the band from 1100 to 1200 m at 22.5 degrees on average and the steepest sustained section at 38.1 degrees between 1265 and 1292 m. Kartverket registers glacier terrain from 1290 m.",
       "Above the slope the glaciated plateau lays back: 10.2 degrees from 1200 to 1300 m and 5.6 from 1500 to 1600 over 1036 metres of ground. Follow it to the 1583 m top, drop through a small col and head north along the ridge to the summit at 1700 m. The published 1717 is the snow dome; the terrain model reads the mountain at 1700.",
     ],
     descent: [
-      "Back the same way: south along the ridge, across the plateau and down Brattbakken into Snødalen. The descent faces east, and Brattbakken is the part that decides whether the day is a ski tour or an exercise in edge control.",
+      "Back the same way: south along the ridge, across the plateau and down Brattbakken into Snødalen. The descent faces east — but that is the way home, not the first move: from the cairn the route runs south along the ridge to the high point at 1583 m before it turns down. Due east of the summit the flank measures 39.2 degrees on average with a 73.1-degree window 190 to 250 metres out, and that is not a descent. Brattbakken is the part of the proper descent that decides whether the day is a ski tour or an exercise in edge control.",
       "The usual mistake: treating the glacier casually. The route crosses glacier terrain from 1290 m, and the crevasses are there however gently the plateau measures. The second is the cornices along the summit ridge — keep away from the edges, especially in poor visibility.",
     ],
     avalanche: [
@@ -1398,7 +1398,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       },
       {
         title: "The terrain around it",
-        body: "Directly below the summit of Glitregga the ground is steep — hold to the line over the pass both up and down. The flank into Djupegrova is the other place where a line choice has consequences, because the gully collects snow from the whole face above.",
+        body: "The steep ground below the summit is to the north: 26.3 degrees on average over 500 metres with a 37.8-degree window 250 to 310 metres out, and north-west and north-east 20.3 and 21.0. South, east and west are nearly flat — 2.8, 8.9 and 1.8 degrees — so it is the north side, and only that side, the line over the col keeps you away from, both up and down. The flank into Djupegrova is the other place where a line choice has consequences, because the gully collects snow from the whole face above.",
       },
       {
         title: "Before you go",
@@ -1491,7 +1491,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       "The ridge is even the whole way up: 13.6 degrees from 900 to 1000 m, 15.4 from 1000 to 1100 and 15.9 from 1100 to 1200. Above 1400 m it flattens toward the cairn at 1567 — the band from 1400 to 1500 m measures 8.3 degrees over 675 metres of ground.",
     ],
     descent: [
-      "Back down the same ridge, east toward Remestøylen and Dragesetvegen. The ridge is broad and open, and the descent faces west.",
+      "Back down the same ridge, west toward Remestøylen and Dragesetvegen — the climb goes east, and Remestøylen lies on a bearing of 289 from the summit. The ridge is broad and open, and the descent faces west.",
       "The usual mistake: choosing a different line down from the one you climbed. The mountain has several avalanche-prone descent options off the sides of the ridge, and it is easy to follow tracks that do not end where you parked. Follow the ascent ridge, not other people's tracks.",
     ],
     avalanche: [
@@ -1501,7 +1501,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       },
       {
         title: "The terrain around it",
-        body: "The flanks off the ridge are avalanche-prone, and several of them look like tempting descents from the summit. That is where the judgement lies on this mountain: not in the way up, but in what you choose standing at 1567 m looking down.",
+        body: "The sides of the ridge are avalanche terrain, and now we know which: south and south-west, down toward Innvikdalen. From the ridge point at 1096 m the south side measures 26.9 degrees on average over 400 metres with a 45.5-degree window, and south-west 28.8 with 49.3. From 1275 m south-west gives 32.9 degrees on average and a 67.5-degree window 320 to 380 metres out. North and west from the same ridge hold 10 to 15 degrees. The summit itself is gentle in all eight directions — 2.5 to 11.3 degrees on average — so the judgement is not where you stand at the cairn, but in what you choose once you are some way down.",
       },
       {
         title: "Before you go",
@@ -1779,7 +1779,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       },
       {
         title: "The terrain around it",
-        body: "The bowl is the one large judgement on this tour, and there is no way around it: the route goes up through it. Hard snow turns the final climb into scrambling rather than skiing, and that is when the ice axe and crampons go from being kit in the pack to being what you stand on.",
+        body: "The bowl is the one large judgement on this tour, and there is no way around it: the route goes up through it. Hard snow turns the final climb into scrambling rather than skiing, and that is when the ice axe and crampons go from being kit in the pack to being what you stand on. The summit itself has a side there is no staying on: south and south-east measure 48.9 and 47.1 degrees on average over 500 metres, with 60-metre windows of 74.0 and 74.3. East and west, 15.1 and 13.8 degrees, are the gentle ones, and the bowl comes up from the north.",
       },
       {
         title: "Before you go",
@@ -1848,7 +1848,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       },
       {
         title: "The terrain around it",
-        body: "The south-west ridge has a couple of steeper points on the last stretch up, and they are worth a look when the snow is unstable. The west side below the summit is the other assessment: it gets skied on stable days, and it ends in dense forest.",
+        body: "The south-west ridge has a couple of steeper points on the last stretch up, and they are worth a look when the snow is unstable. The west side below the summit is the other assessment: it gets skied on stable days, and it ends in dense forest. The third is the fjord side, and it is not a judgement but a boundary: east and south-east from the cairn measure 46.1 and 46.4 degrees on average over 500 metres, with 60-metre windows of 62.4 and 63.6. The view down to Lustrafjorden comes off an edge, not a slope.",
       },
       {
         title: "Before you go",

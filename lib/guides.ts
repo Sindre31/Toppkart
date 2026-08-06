@@ -555,7 +555,7 @@ export const GUIDES: Record<string, TourGuide> = {
     ],
     descent: [
       "Ned same ryggen, søraustover mot Nysætervatnet, i moderat og oversiktleg skiterreng. Følgjer du ryggen opp og ned, held ruta seg under 30 grader heile vegen.",
-      "Vanlegaste feil: å sleppe seg austover frå ryggen fordi sida ser innbydande ut. Fjellet har eit brattheng mot aust som er over 30 grader, og det er den eine staden på turen der linjevalet faktisk avgjer kva slags dag du får.",
+      "Vanlegaste feil: å tru at det brattaste ligg mot aust. Målingane seier noko anna. Frå tre punkt på ryggen — 896, 1000 og 1103 moh — måler austsida 7,5, 7,0 og 8,9 grader i snitt over 400 meter, og frå varden 18,9. Det bratte ligg nord og nordaust for toppen: 30,6 og 35,8 grader i snitt, med 60-metersvindauge på 58,9 og 50,5. Ryggen opp er den slake linja, og terrenget bak toppen er det du ikkje ser frå han.",
     ],
     avalanche: [
       {
@@ -564,7 +564,7 @@ export const GUIDES: Record<string, TourGuide> = {
       },
       {
         title: "Terrenget rundt",
-        body: "Braatthenget mot aust er over 30 grader og skal styrast unna i skredver. Det er dette henget, saman med lengda, som skil turen frå ein rein nybyrjartur — sjølve ryggen gjer det ikkje.",
+        body: "Researchen for denne turen sa at fjellet har eit brattheng mot aust over 30 grader. Det finn ikkje terrengmodellen: aust frå ryggen måler 7 til 9 grader i snitt og aust frå varden 18,9, med det brattaste 60-metersvindauget på 31,1 grader heile 280 til 340 meter ut. Det som faktisk er bratt, er nord og nordaust for toppen — 30,6 og 35,8 grader i snitt med vindauge på 58,9 og 50,5. Det er lengda og den sida, ikkje austsida, som skil turen frå ein rein nybyrjartur.",
       },
       {
         title: "Før du går",
@@ -672,7 +672,7 @@ export const GUIDES: Record<string, TourGuide> = {
       },
       {
         title: "Terrenget rundt",
-        body: "Skavlar langs toppryggen — det dannar seg normalt ei stor skavl mellom førtoppen og hovudtoppen, og ho skal rundast på nedsida. Sida ned frå hovudtoppen er skredterreng, og det same er sjølve Vassdalen, som er den einaste vegen ned til bilen.",
+        body: "Skavlar langs toppryggen — det dannar seg normalt ei stor skavl mellom førtoppen og hovudtoppen, og ho skal rundast på nedsida. Sida ned frå hovudtoppen er skredterreng, og nordsida er den brattaste: 43,2 grader i snitt over 500 meter med eit 67,3-graders vindauge alt 10 til 70 meter ut frå varden, og nordaust 56,3 grader dei fyrste 60. Aust — vegen ned Vassdalen — måler 9,8 grader i snitt, og Vassdalen er likevel skredterreng og den einaste vegen ned til bilen.",
       },
       {
         title: "Før du går",
@@ -698,7 +698,7 @@ export const GUIDES: Record<string, TourGuide> = {
       "Derfrå følgjer du toppryggen nordover. Han er brei og slakar av mot 1400 moh — 6,9 grader frå 1300 til 1400 — før den siste stigninga langs kammen frå 1531 og 1562 moh til varden på 1587. Det er her det brattaste ligg: 37,5 grader over tretti meter mellom 1530 og 1555 moh.",
     ],
     descent: [
-      "Ned same vegen: kammen, den breie toppryggen, ned egga til Nordkopen og ut dalen til Urkegjerdet. Fallretninga er søraust, og nedkøyringa er lang — 1595 høgdemeter i eitt strekk frå toppen til fjorden.",
+      "Ned same vegen: kammen, den breie toppryggen, ned egga til Nordkopen og ut dalen til Urkegjerdet. Kortet fører fallretninga som søraust; linja heim peilar 182 grader, altså rett sør, og kammen blir halden på vestsida der skavlane ikkje er. Nedkøyringa er lang — 1595 høgdemeter i eitt strekk frå toppen til fjorden.",
       "Vanlegaste feil: å halde seg aust på toppryggen. Det ligg store skavlar på austsida av ryggen, og ein flankemåling frå toppen viser at fjellet er bratt i alle retningar: 22 til 41 grader i snitt over dei fyrste 400 metrane, med 60-metersvindauge på 53 til 66 grader. Hald vest for kammen.",
       "Den andre er tidspunktet. Ruta går gjennom skredterreng både inn mot Nordkopen og i sida opp mot egga, og i vårsnø utover ettermiddagen er det den delen av turen som endrar seg raskast.",
     ],
@@ -879,12 +879,12 @@ export const GUIDES: Record<string, TourGuide> = {
       "Start på den kartfeste parkeringa på Hatlestad, 453 moh, over Norddalen. Fri Flyt skriv at ein parkerer på 350 moh; terrengmodellen les gardane til 412 og p-plassen til 453, og differansen er grunnen til at turen her måler 1461 høgdemeter og ikkje 1500.",
       "Gå slakt inn i munningen av Dyrdalen og opp til Rellingsætra på 557 moh. Dei to fyrste banda er nesten flate — 3,0 grader frå 400 til 500 moh og 2,1 over 2656 meter grunn frå 500 til 600.",
       "Frå setra tek kneiken opp på Daurmålsfjellet, 825 moh: 16,9 grader frå 600 til 700 moh og 15,2 frå 700 til 800. Skogen held til 748 moh. Dette er den bratte delen av turen, og han er kort.",
-      "Så følgjer ryggen. Fem kilometer i slakt terreng, over ryggpunktet på 1186 moh, med band mellom 7 og 20 grader heile vegen: 8,4 frå 1000 til 1100 moh, 14,1 frå 1200 til 1300, 20,2 frå 1400 til 1500 — brattaste hundremeteren — og 9,0 dei siste hundre til varden på 1851 moh. Kartverket registrerer breterreng kring 1437 moh.",
+      "Så følgjer ryggen. Fem kilometer i slakt terreng, over ryggpunktet på 1186 moh, med band mellom 7 og 20 grader heile vegen: 8,4 frå 1000 til 1100 moh, 14,1 frå 1200 til 1300, 20,2 frå 1400 til 1500 — brattaste hundremeteren — og 9,0 dei siste hundre til varden på 1851 moh. Kartverket registrerer ikkje breterreng nokon stad på sjølve linja: kvart punkt mellom 1380 og 1520 moh er ope område. Den næraste cella som er klassa SnøIsbre ligg om lag 300 meter frå ruta, på 1482 moh.",
     ],
     descent: [
       "Ned same ryggen: nordover til Daurmålsfjellet, ned kneiken til Rellingsætra og ut Dyrdalen til Hatlestad. Fallretninga er nord, og nedkøyringa er lang og jamn heller enn bratt.",
       "Vanlegaste feil: å vende for seint. Ti kilometer utan ly, med det meste av høgda langt frå bilen, gjer at eit verskifte kostar meir her enn på ein kort tur — vendinga må avgjerast tidleg, ikkje når du står på ryggen og ser at det trekkjer til.",
-      "Den andre er breterrenget kring 1437 moh: det har sprekker seinvinters, og på ein rygg som elles er så slak er det lett å slutte å tenkje på kva ein går på.",
+      "Den andre er sidene av ryggen. Han er brei nok til at ein ikkje tenkjer på kantane, men han fell av utanfor: frå varden måler vest 40,9 grader i snitt over 500 meter, sørvest 36,2 og søraust 35,2, med 60-metersvindauge på 49,3, 54,4 og 47,5. Nord og aust, som er vegen heim, held 9,0 og 9,3 grader. Ti kilometer i skodde på ein rygg som er slak i to retningar og bratt i seks er ei orienteringsoppgåve, ikkje ein tur ein improviserer.",
     ],
     avalanche: [
       {
@@ -893,7 +893,7 @@ export const GUIDES: Record<string, TourGuide> = {
       },
       {
         title: "Terrenget rundt",
-        body: "Breterrenget kring 1437 moh har sprekker seinvinters. Ryggen er brei, men han er lang og utan ly, og det er lengda som er den reelle faren her: ti kilometer frå bilen i dårleg ver er ein annan tur enn ti kilometer i sol.",
+        body: "Ryggen er brei og slak, men sidene er det ikkje: vest 40,9 grader i snitt frå varden, sørvest 36,2 og søraust 35,2. Nord og aust — vegen heim — held 9 grader. Det er lengda og orienteringa som er den reelle faren her: ti kilometer frå bilen i dårleg ver er ein annan tur enn ti kilometer i sol.",
       },
       {
         title: "Før du går",
@@ -929,7 +929,7 @@ export const GUIDES: Record<string, TourGuide> = {
       },
       {
         title: "Terrenget rundt",
-        body: "Skredterreng frå botnen av Gråsteindalen og heile vegen opp til toppen. Flanken er stor og samanhengande, og det finst inga line rundt han: går du turen, går du i han.",
+        body: "Skredterreng frå botnen av Gråsteindalen og heile vegen opp til toppen. Flanken er stor og samanhengande, og det finst inga line rundt han: går du turen, går du i han. Og toppen er ikkje slak på baksida: vest måler 40,0 grader i snitt over 500 meter med eit 67,7-graders vindauge, nordvest 29,5 med 70,4 og nordaust 37,7 med 65,6. Sør og søraust — flanken du kom opp — held 13 grader.",
       },
       {
         title: "Før du går",
@@ -1060,12 +1060,12 @@ export const GUIDES: Record<string, TourGuide> = {
       "1477 høgdemeter på 6,05 km frå Nibbedalen til det høgste fjellet i midtre Sunnmørsalpane. Brattaste samanhengande parti måler 38,1 grader — det er Brattbakken, og han er den eine tekniske delen av turen.",
     ascent: [
       "Start i grustaket i Nibbedalen, 324 moh, der sidevegen tek av frå fv655. Er vegen ikkje brøytt, parkerer ein langs fylkesvegen. Dei fyrste 771 metrane grunn ligg på 5,9 grader.",
-      "Følg grusvegen eit lite stykke og deretter sommarstien vestover inn Snødalen. Stigninga er jamn og vedvarande: 20,1 grader frå 500 til 600 moh, 19,6 frå 600 til 700 og 19,0 frå 700 til 800. Ved 925 moh er du inne i sjølve dalen.",
+      "Følg grusvegen eit lite stykke og deretter sommarstien sørvestover inn Snødalen — rutebeskrivinga seier vestover, men etappen måler 210 grader. Stigninga er jamn og vedvarande: 20,1 grader frå 500 til 600 moh, 19,6 frå 600 til 700 og 19,0 frå 700 til 800. Ved 925 moh er du inne i sjølve dalen.",
       "Innerst tek Brattbakken til — bakken opp mot 1316 moh som rutebeskrivinga set til om lag 35 grader. Terrengmodellen måler bandet frå 1100 til 1200 moh til 22,5 grader i snitt og det brattaste samanhengande partiet til 38,1 grader mellom 1265 og 1292 moh. Kartverket registrerer breterreng frå 1290 moh.",
       "Over bakken flatar det brelagde platået ut: 10,2 grader frå 1200 til 1300 moh og 5,6 frå 1500 til 1600 over 1036 meter grunn. Du følgjer det til høgda på 1583 moh, går ned eit lite skar og nordover langs ryggen til toppen på 1700 moh. Den publiserte høgda 1717 er snøkuppelen; terrengmodellen les fjellet til 1700.",
     ],
     descent: [
-      "Ned same vegen: sørover langs ryggen, over platået og ned Brattbakken til Snødalen. Fallretninga er aust, og Brattbakken er den delen av nedkøyringa som avgjer om dagen er ein skitur eller ei øving i kantsikring.",
+      "Ned same vegen: sørover langs ryggen, over platået og ned Brattbakken til Snødalen. Fallretninga er aust — men det er retninga heim, ikkje det fyrste steget: frå varden går ruta sørover langs ryggen til høgda på 1583 moh før ho svingar ned. Rett aust for toppen måler flanken 39,2 grader i snitt med eit 73,1-graders vindauge 190 til 250 meter ut, og det er ikkje ein nedkøyring. Brattbakken er den delen av den rette nedkøyringa som avgjer om dagen er ein skitur eller ei øving i kantsikring.",
       "Vanlegaste feil: å gå på breen utan å ta han på alvor. Ruta kryssar breterreng frå 1290 moh, og sprekkene er der uansett kor slakt platået måler. Den andre er skavlane langs toppryggen — hald avstand til kantane, særleg i dårleg sikt.",
     ],
     avalanche: [
@@ -1258,7 +1258,7 @@ export const GUIDES: Record<string, TourGuide> = {
       },
       {
         title: "Terrenget rundt",
-        body: "Rett under toppen av Glitregga er terrenget bratt — hald deg til linja over skaret både opp og ned. Sida ned mot Djupegrova er den andre staden der eit linjeval får konsekvensar, for grova samlar snø frå heile flanken over.",
+        body: "Det bratte under toppen ligg mot nord: 26,3 grader i snitt over 500 meter med eit 37,8-graders vindauge 250 til 310 meter ut, og nordvest og nordaust 20,3 og 21,0. Sør, aust og vest er nesten flate — 2,8, 8,9 og 1,8 grader — så det er nordsida, og berre henne, linja over skaret held deg unna både opp og ned. Sida ned mot Djupegrova er den andre staden der eit linjeval får konsekvensar, for grova samlar snø frå heile flanken over.",
       },
       {
         title: "Før du går",
@@ -1357,7 +1357,7 @@ export const GUIDES: Record<string, TourGuide> = {
       "Ryggen er jamn heile vegen opp: 13,6 grader frå 900 til 1000 moh, 15,4 frå 1000 til 1100 og 15,9 frå 1100 til 1200. Over 1400 moh flatar han ut mot varden på 1567 — bandet frå 1400 til 1500 moh måler 8,3 grader over 675 meter grunn.",
     ],
     descent: [
-      "Ned same ryggen, austover mot Remestøylen og Dragesetvegen. Ryggen er brei og oversiktleg, og fallretninga er vest.",
+      "Ned same ryggen, vestover mot Remestøylen og Dragesetvegen — oppstigninga går austover, og Remestøylen ligg på peiling 289 frå toppen. Ryggen er brei og oversiktleg, og fallretninga er vest.",
       "Vanlegaste feil: å velje ei anna linje ned enn den du gjekk opp. Fjellet har fleire skredutsette nedkøyringsalternativ til sidene av ryggen, og det er lett å følgje spor som ikkje endar der du parkerte. Følg oppstigningsryggen, ikkje andre sine spor.",
     ],
     avalanche: [
@@ -1367,7 +1367,7 @@ export const GUIDES: Record<string, TourGuide> = {
       },
       {
         title: "Terrenget rundt",
-        body: "Sidene av ryggen er skredutsette, og fleire av dei ser ut som freistande nedkøyringar frå toppen. Det er der vurderinga ligg på dette fjellet: ikkje i ruta opp, men i kva ein vel når ein står på 1567 moh og ser ned.",
+        body: "Sidene av ryggen er skredutsette, og no veit vi kva for nokre: sør og sørvest, ned mot Innvikdalen. Frå ryggpunktet på 1096 moh måler sørsida 26,9 grader i snitt over 400 meter med eit 45,5-graders vindauge, og sørvest 28,8 med 49,3. Frå 1275 moh gir sørvest 32,9 grader i snitt og eit 67,5-graders vindauge 320 til 380 meter ut. Nord og vest frå den same ryggen held 10 til 15 grader. Sjølve toppen er slak i alle åtte retningar — 2,5 til 11,3 grader i snitt — så vurderinga ligg ikkje der du står med varden, men i kva du vel når du er komen eit stykke ned.",
       },
       {
         title: "Før du går",
@@ -1661,7 +1661,7 @@ export const GUIDES: Record<string, TourGuide> = {
       },
       {
         title: "Terrenget rundt",
-        body: "Skåla er den eine store vurderinga på turen, og ho har ingen omveg: ruta går opp gjennom henne. Hardt føre gjer siste stigninga til ei klyving heller enn ein skitur, og det er då isøks og stegjern går frå å vere utstyr i sekken til å vere det du står på.",
+        body: "Skåla er den eine store vurderinga på turen, og ho har ingen omveg: ruta går opp gjennom henne. Hardt føre gjer siste stigninga til ei klyving heller enn ein skitur, og det er då isøks og stegjern går frå å vere utstyr i sekken til å vere det du står på. Toppen sjølv har ei side det ikkje går an å halde seg på: sør og søraust måler 48,9 og 47,1 grader i snitt over 500 meter, med 60-metersvindauge på 74,0 og 74,3. Aust og vest, 15,1 og 13,8 grader, er dei slake, og skåla kjem opp frå nord.",
       },
       {
         title: "Før du går",
@@ -1734,7 +1734,7 @@ export const GUIDES: Record<string, TourGuide> = {
       },
       {
         title: "Terrenget rundt",
-        body: "Sørvestryggen har eit par brattare punkt den siste biten opp, og dei er verdt å sjå på når snøen er ustabil. Vestsida under toppen er den andre vurderinga: ho blir køyrd på stabile dagar, og ho endar i tett skog.",
+        body: "Sørvestryggen har eit par brattare punkt den siste biten opp, og dei er verdt å sjå på når snøen er ustabil. Vestsida under toppen er den andre vurderinga: ho blir køyrd på stabile dagar, og ho endar i tett skog. Den tredje er fjordsida, og ho er ikkje ei vurdering men ei grense: aust og søraust frå varden måler 46,1 og 46,4 grader i snitt over 500 meter, med 60-metersvindauge på 62,4 og 63,6. Utsikta ned mot Lustrafjorden kjem frå ein kant, ikkje frå ei helling.",
       },
       {
         title: "Før du går",
