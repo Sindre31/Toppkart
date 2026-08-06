@@ -119,4 +119,17 @@ PEAKS = [
     ("gygrastolen", "Gygrastolen", ["Kvinnherad"], 1339, 60.05918, 6.16160),
     ("juklavasstinden", "Juklavasstinden", ["Kvinnherad"], 1360, 60.00844, 6.13299),
     ("englafjell", "Englafjell", ["Kvinnherad"], 1200, 59.89635, 5.87561),
+    #
+    # — the Oslo round. The register spells three of these differently than the
+    #   route descriptions do: the mountain is Høgevard and the DNT hut on its
+    #   shoulder is Høgevarde, Bletoppen is registered as Store Ble, and
+    #   Styggemann as Styggmann. `near` is the SSR representation point, which on
+    #   all seven sits on or within a few hundred metres of the top. —
+    ("hogevarde", "Høgevard", ["Krødsherad", "Flå"], 1459, 60.29741, 9.46728),
+    ("grafjell", "Gråfjell", ["Sigdal"], 1466, 60.31753, 9.39595),
+    ("ranten", "Ranten", ["Sigdal"], 1419, 60.30228, 9.41905),
+    ("store-ble", "Store Ble", ["Tinn", "Notodden", "Flesberg"], 1341, 59.80767, 9.15277),
+    ("surloytenuten", "Surløytenuten", ["Notodden"], 1096, 59.79453, 9.20624),
+    ("gyranfisen", "Gyranfisen", ["Ringerike"], 1127, 60.47199, 9.89037),
+    ("styggemann", "Styggmann", ["Kongsberg"], 871, 59.52074, 9.64325),
 ]

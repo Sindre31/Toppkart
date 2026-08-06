@@ -64,4 +64,15 @@ NEW_TOURS = {
     "saebyggjenuten": ("Sæbyggjenuten", "Setesdal"),
     "kjerag": ("Kjerag", "Rogaland"),
     "grubba": ("Grubbå", "Sirdal"),
+    # — the Oslo round: the fjells a bil-tur from Oslo reaches in one to two
+    #   hours. Four more new regions, none of them called Oslo, because the ski
+    #   terrain is not in the city — it is on Norefjell, Blefjell, Skrim and
+    #   Vikerfjell. —
+    "hogevarde": ("Høgevarde", "Norefjell"),
+    "grafjell": ("Gråfjell", "Norefjell"),
+    "ranten": ("Ranten", "Norefjell"),
+    "store-ble": ("Store Ble", "Blefjell"),
+    "surloytenuten": ("Surløytenuten", "Blefjell"),
+    "gyranfisen": ("Gyranfisen", "Vikerfjell"),
+    "styggemann": ("Styggemann", "Skrim"),
 }

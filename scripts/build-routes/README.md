@@ -180,13 +180,20 @@ one line:
 | Gaustatoppen | Gaustablikk (965 m) and Stavsro (706 m) |
 | Slogen | Skylstad (1482 m) and direct from Øye (1512 m) |
 | Bitihorn | Bygdin (549 m) and Båtskaret (454 m) |
+| Høgevarde | Tempelseter (598 m) and Norefjellstua (826 m) — opposite sides of Norefjell |
 
-Eight tours carry a second route; the table above is all of them. 69 routes over
-61 tours. The first route of a tour is the one its own `verticalM` and `duration`
+Nine tours carry a second route; the table above is all of them. 77 routes over
+68 tours. The first route of a tour is the one its own `verticalM` and `duration`
 describe. Alternatives are only added where a second route is actually documented
 — `ALTERNATES` in `build_corridors.py`, and the research output, are not places
-to invent one because the schema allows it. The other 53 tours have a single
+to invent one because the schema allows it. The other 59 tours have a single
 route, and the app renders no picker for them.
+
+`ALTERNATES` only reaches the first 24, because `build_corridors.py` is fed by a
+swarm file the later rounds have no equivalent of. A researched corridor can now
+carry its own second route instead: an `alternates` list on the record in
+`new_corridors.json`, folded in by `merge_corridors.py` after the primary. That
+is how Høgevarde carries both of its documented starts.
 
 Route and trailhead *names* get shortened for display — the research came back
 with sentences like "Normalruta fra Djupvik/Forselvveien via Pumpvatnet,
@@ -212,10 +219,8 @@ through an adversarial second reader — one per tour, all fifteen found somethi
 
 The 22 tours of the Sunnmøre and Vestland rounds were written the same way, against
 `guide_brief.py` and the corridor research each one was built from, and they pass
-`check_guides.py` clean. They have **not** been through an adversarial second reader — that
-pass is what caught the wrong-side descent on Kavringtinden and the cliff warning pointing away
-from the cliff on Storehorn, and until it has run on these, the copy is sourced rather than
-verified.
+`check_guides.py` clean. They have **now** been through the adversarial second reader too — see
+"The 22, read adversarially" below. Ten of the 22 came back with something; twelve were clean.
 
 Writing them found one hole in the check itself. `NUM_UNIT` matched «høydemeter» and not
 «høgdemeter», so every vertical stated in nynorsk — seven of the shipped guides, and all 22 of
@@ -619,6 +624,304 @@ put at 466; the anleggsveg above Ænes reads 90,2 m against 1330 m of stated gai
 from a summit at 1347. Both are the point where a car stops, and both are
 recorded as the difference they are rather than smoothed away.
 
+
+## The Oslo round
+
+Seven peaks, on the fjells a car from Oslo reaches in one to two hours: Norefjell,
+Blefjell, Skrim and Vikerfjell. Four new regions, and none of them is called Oslo,
+because **the ski terrain is not in the city**. Oslomarka's high points are
+forested 400–630 m hills, and Fri Flyt's own `skiturer-oslo` tag holds two
+articles: Rødkleiva, which is a 200 m offpiste slope in an old alpine hill, and
+Høgruta i Maridalen, a two-day 44 km traverse over Fagervann, Mellomkollen and
+Barlindåsen. Neither is a tour row — one has no summit and the other has no day.
+So the round goes where the ski tours are, and the drive is the thing that makes
+it an Oslo round, in the sources' own figures: Skrim «en drøy times kjøring fra
+Oslo», Vikerfjell «bare 10 mil», Blefjell «i underkant av to timer», and
+Tempelseter on Norefjell «ca 14 mil og to timer».
+
+The four conditions the Sunnmøre and Vestland rounds were built on still hold,
+with one changed: **Fri Flyt does not publish route descriptions for these
+fjells.** The primary source is ut.no, which does — with an activity type, a
+season, a stated distance and gain, and a named chain of ground — and, for the
+winter line specifically, randofolk.no, a randonée site that publishes the same
+shape of description with a start, a route, the descent and the season it was
+skied in. Where a tour's own full description exists only for barmark, that is
+said out loud in `confidence` and in the record's `notes` rather than papered
+over: Surløytenuten and Gyranfisen are the two, and both are `medium`.
+
+| tour | region | start | summit | gain | km | steepest 100 m band | steepest 30 m | grade |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Store Ble | Blefjell | 714 | 1343 | 670 | 6.3 | 16.7° | 35.2° | 2 |
+| Gyranfisen | Vikerfjell | 661 | 1127 | 666 | 5.4 | 15.4° | 24.9° | 2 |
+| Høgevarde | Norefjell | 910 | 1461 | 598 | 4.8 | 11.8° | 19.5° | 1 |
+| Gråfjell | Norefjell | 910 | 1466 | 581 | 7.8 | 10.0° | 20.7° | 2 |
+| Styggemann | Skrim | 483 | 871 | 549 | 9.6 | 15.1° | 23.2° | 2 |
+| Ranten | Norefjell | 910 | 1416 | 527 | 5.6 | 13.9° | 27.1° | 2 |
+| Surløytenuten | Blefjell | 714 | 1097 | 456 | 6.1 | 5.3° | 24.9° | 2 |
+
+`check_new_corridors.py` re-queries all of it from scratch and comes back with
+one note across the seven: Gyranfisen's give-back, which is the next section.
+Every waypoint elevation matches DTM1, every trailhead has mapped parking within
+250 m, no leg heads away from its summit, and `check_routes.py` calls the 68
+tours and 77 routes clean.
+
+Three of the seven leave from the same car park at Tempelseter, and two from the
+same one at Nordstul. That is not a shortcut — it is what an Eastern Norway ski
+fjell looks like: one ploughed road in, a løypenett out of it, and several tops
+off the same network. All seven have a written guide, in bokmål and English, and
+they pass `check_guides.py` clean — see below for what was measured to make that
+true.
+
+### What the checks caught
+
+**Ranten was resolved onto a different mountain, and the margin was 30 cm.** The
+summit search climbed to a 1415.9 m top on the Gråfjell massif, 1.5 km from
+Ranten's register point, because against a published 1419 it beat Ranten's own
+1415.6 m top by three tenths of a metre. Height alone cannot separate two
+candidates that agree that closely — a published summit figure is rounded to the
+metre at best. `resolve_top` now breaks a tie inside 2 m by distance from the
+register point, which is the one piece of evidence that says which mountain
+carries the name. The rule only applies between *different* tops: two candidates
+within 200 m of each other are the same summit seen from two discs, and there
+the height still decides. Without that guard Folarskardnuten's settled summit
+moved 22 m onto a cell 0.7 m lower.
+
+**Gyranfisen gives back 200 m of the 666 it climbs, and the terrain says so.**
+Between Svarttjernskollen (1054 m) and Gyranfisen (1127 m) lies the søkk toward
+Fjelldalen and Steintjern, and DTM1 reads 866 m midway. Three corridor variants
+were routed — waypoint on Venekollen's top, no waypoint at all, and the waypoint
+300 m west of it — and all three gave back 173–227 m. The one that shipped is the
+one the description describes: ut.no passes Venekollen «på høyre hånd», so the
+line goes west of it at 948.8 m, not over the 982.4 m top.
+
+**Gråfjell's trail junction is an inference, and it is labelled as one.** Ut.no
+places it «ca 1,5 km nord for Donkelitjenn», and there is no name in the register
+at that spot. The waypoint is the distance and bearing the source gives, measured
+on DTM1 at 1282.5 m, and the record says that is where it came from. Donkelitjenn
+itself is the check that the corridor is on the described løype at all: ut.no
+gives 1153 moh and «herfra er det en stigning på 313 m igjen», DTM1 reads 1156.0,
+and 1156 + 313 lands 3 m from the summit.
+
+**Surløytenuten's season is borrowed from its neighbour.** Nobody publishes one
+for this top. It shares a car park, a fjell and a height band with Store Ble,
+where randofolk.no gives January to April, so that is what the card carries — and
+the record says it is an inference from the next tour over rather than a source
+for this one.
+
+**Two grades came back two steps from the measurement, and one of them was
+wrong.** Ranten was researched as grade 3 on randofolk.no's «en mer alpin topp
+med brattere nedkjøring». That is the renner in the jagged profile, and the route
+does not go in them: the line measures 27.1° at its steepest 30 m and 13.9° over
+its steepest sustained hundred. It ships as 2, with the renner still in
+`hazardNotes`. Gråfjell stays at 2 against a measured 1, because its difficulty is
+eight kilometres of high fjell and navigation between tarns, which a slope angle
+cannot see.
+
+**Four aspects were taken from the measurement and two from the guidebook.**
+Where a source names the descent it wins: Ranten skis south to Fetjenn (198°)
+though it is climbed from the east, and Surløytenuten's published return is the
+steep south side though the corridor's last leg faces north. Both are the
+Bitihorn case — the way the route faces and the way the descent flank faces are
+different statements. Where nothing is named, `route_metrics.py` decides.
+
+### The seven guides, and the flank probes they are built on
+
+The Oslo round's guides were written against `guide_brief.py` like the others,
+and then against a measurement pass the earlier rounds did not have: every one of
+the seven summits was swept with `flank_probe.py` on all eight bearings, and the
+readings are in `measurements.json` rather than in a sentence somebody has to
+take on trust. That is what lets a guide say **which** side of a mountain is the
+dangerous one instead of saying that some side is.
+
+It paid for itself before a word was written. The research for **Gyranfisen** had
+recorded that «vestsida av Gyranfisen stuper mot Vidalen». It does not: the probe
+reads 5.7° mean to the west out to a kilometre and a half, with a steepest 60 m
+window of 20.9°. The cliffs in ut.no's text are Bukollen, Gråfjell and
+Storrustefjell — the mountains on the *far* side of the valley, which you look at
+from the summit. The sentence was corrected in `new_corridors.json` before it
+could become a guide that pointed a reader at the wrong edge.
+
+What the sweeps found on the other six, all of it now in the copy:
+
+- **Ranten** falls 40.2–54.8° in the 60 m windows 90–170 m below the cairn on
+  every bearing from 150 to 210 — and 195 is the bearing to Fetjenn, which is
+  where the marked path goes down. North and west measure 10–12°. From the top
+  the two sides do not look very different.
+- **Styggemann** is steepest where nobody is heading: 48.5° east, 45.3°
+  south-east and 43.9° north-east, all within a hundred metres of the cairn. The
+  route comes from the south at 25.1°.
+- **Høgevarde** is gentle on three sides and steep on one: 7.1–8.6° west,
+  south-west and north-west; 41.5° and 41.3° in the windows 70–160 m below the
+  top to the east and north-east, toward the ski centre you can see from the
+  summit.
+- **Store Ble**'s south-east side, the one randofolk.no says you may have to
+  scramble in thin snow, measures 41.5° 60–120 m below the top; the north side it
+  offers as the alternative measures 5.8°. The guidebook and the terrain model
+  agree about which way to go.
+- **Gråfjell** has no steep side at all — 5.2–18.3° mean in all eight directions,
+  steepest window 30.2°. Its guide is about navigation, because that is what the
+  mountain is.
+- **Surløytenuten**'s ridge back north measures 2.2° mean with a 5.7° steepest
+  window; the published steep return south reads 29.5°.
+
+Two other things the check made the copy change. Gyranfisen's «the rest stays
+below 11 degrees» was reported as an under-N-degrees claim against a line that
+reaches 24.9°, and it was right to: the sentence was about hundred-metre bands
+and read as a claim about the tour. It now lists the bands. And Ranten's «den
+trygge vegen ned» was reported for calling terrain safe — it is now «den slake
+vegen ned», which is a measurement rather than a judgement, the same correction
+the Kavringtinden pass made.
+
+All seven forecast regions were queried rather than assumed, on the same Varsom
+endpoint the app uses: Norefjell, Vikerfjell and Skrim are **Buskerud sør** and
+Blefjell is **Telemark sør**, and both are **B-regions** — forecast only at
+danger level 4 and 5. On most winter days there is no assessment for these
+mountains at all, and every one of the seven guides says so in its own words.
+
+### What the adversarial reader found
+
+All seven then went through the second pass — the one whose job is to refute the
+copy rather than polish it. It re-derived every compass claim as a bearing, took
+the steep faces again from the DTM1 *point* API rather than the raster the first
+sweep used, re-read the sources for what they actually say, and checked the two
+languages against each other number by number. Nine findings, seven of them in
+the class this pass exists for: a sentence that points the reader somewhere.
+
+- **Høgevarde told the reader the ski centre was below them to the east.** It is
+  9.85 km away on a bearing of 148 — south-east — and that direction is the
+  steepest sector of the mountain: 51.2° in the window 420–480 m out. The east
+  and north-east flanks the sentence warned about are real (41.5° and 41.3°), but
+  the reason given for looking that way was invented, and it made a ten-kilometre
+  descent sound like a shortcut to the car.
+- **Ranten's south side is a shoulder before it is a wall.** The first sweep gave
+  40–55° in the windows 90–170 m out and the guide said so. Re-measured every 30 m
+  from the point API, the ground reads 1415.6, 1399.2, 1393.9, 1395.5 — one steep
+  step, then flat, and on the bearing to Fetjenn it *rises again* at 90 m — before
+  breaking at 47.2, 54.5 and 60.0°. That is the Synshorn shape exactly: the trap
+  is the bench you can see, not the wall you cannot. Both languages now describe
+  the shoulder first.
+- **Styggemann quoted the wrong radial for its own descent.** The guide said
+  Sørmyrseter lies on a bearing of 191 and that the described line was therefore
+  the mildest. The bearing is 172, and that radial measures 29.1° with a 35.1°
+  step at 120–150 m out — while 165 reads 36.8 and 180 reads 25.1. The line the
+  reader will actually ski was neither the one measured nor the mildest.
+- **Gyranfisen put Treknatten on the wrong side of the mountain.** A research note
+  said 1.3 km north-east; it is 4.20 km on a bearing of 340. The note was
+  corrected in `new_corridors.json` and the guide with it.
+- **Gråfjell descended the wrong way off its own summit.** The route comes onto
+  the top from the north-west, so the first kilometre down retraces north-west to
+  the junction at 1282 m — the guide said south-west. It also called the tour
+  "half done" at Donkelitjenn, which is ut.no's 19.3 km track; on the routed line
+  the tarn is at 65 %. And it counted three lakes where the route goes out onto
+  two.
+- **Store Ble ran two different measurements together** — the route's own 35.2°
+  step, which is on the south side 300 m from the cairn, and the 41.5° south-east
+  radial beside it. They are now stated as the two things they are.
+- **"Meter under varden" was horizontal distance everywhere.** Every flank figure
+  in this round is a window *out* from the summit, not below it, and four guides
+  said "under". A reader converting that to vertical metres would place every
+  steep band far lower on the mountain than it is.
+
+Two smaller ones: Gyranfisen read an opening in the forest at a sample point that
+has no terrain class at all (the API answers null there — it now uses the first
+classified open point, 1050 m), and Styggemann carried ut.no's advice to leave
+your pack at the trail junction, which belongs to the Ivarsbu approach from the
+east, 1.26 km away on the other side of the summit. Høgevarde also gained the
+sentence naming its second route, which every other two-route guide in the app
+has and it did not.
+
+The number parity check between Norwegian and English came back clean on all
+seven, and `check_guides.py` is clean again after the rewrites. What is still
+true is that **nobody who has skied these tours has read the copy** — that is a
+different check from this one, and it is the one the repository README lists as
+open.
+
+### What was left out
+
+**Vikerfjell's Høgfjell (1010 m)** is the thousand-metre peak nearest Oslo and
+has groomed trails to the top, but no source publishes a route to it — only that
+the løype exists. A trail that is known to be driven is not a described line, and
+this pipeline draws described lines.
+
+**Oslomarka.** Rødkleiva and Høgruta i Maridalen are covered above. Kolsås,
+Vettakollen, Tryvannshøgda and Oppkuven are real winter destinations and none of
+them is a topptur with a vertical worth a card.
+
+## The 22, read adversarially
+
+The Sunnmøre and Vestland guides shipped sourced but unverified, and this is what
+happened when the same second reader that went over the Oslo round was pointed at
+them. Method: every compass claim re-derived as a bearing from the corridor and
+the routed line, every summit swept with `flank_probe.py` on all eight bearings
+(none of these 22 had ever been swept), the steep faces re-read from the DTM1
+*point* API rather than the raster, terrain-class claims re-queried, the research
+records re-read for what they actually say, and the two languages compared number
+by number. All 22 sweeps are in `measurements.json`.
+
+**Ten of the 22 needed a change. Twelve were clean.** The clean twelve are worth
+naming, because a pass that finds something everywhere is not measuring anything:
+Hornindalsrokken, Jønshornet, Vassdalstinden, Eidskyrkja, Sunndalsnipa,
+Melshornet, Lodalskåpa, Snønipa, Juklavasstinden, Gygrastolen, Horndalsnuten and
+Storanosi came through with their directions, their flank claims and their
+terrain-class claims all confirmed. Hornindalsrokken's «om lag 55 grader rett aust
+for ryggen og 75 rett vest» measures 55.8 and 74.2. Vassdalstinden's Vestrenna,
+«45 til 50 grader», measures 46.9 mean on the west radial with a 57.1 window.
+Melshornet's cornice «ut mot Ørsta» is on the north side, and north is the steep
+one, 41.1°.
+
+The three that were wrong rather than imprecise:
+
+- **Skarsteinsfjellet was sent down the mountain in the wrong direction.** The
+  guide said «ned same ryggen, austover mot Remestøylen og Dragesetvegen» and then,
+  one sentence later, «fallretninga er vest». Remestøylen is on a bearing of 289
+  from the summit and the trailhead 275: both west. The ascent legs measure 45,
+  134, 101 and 101 — you climb east. The error came from the corridor research,
+  which says «vest-sørvestover opp den tydelege ryggen»; the guide inherited it
+  mirror-image and contradicted itself inside two sentences. Both are corrected.
+- **Torvløysa carried a glacier the route does not cross.** The guide stated
+  «Kartverket registrerer breterreng kring 1437 moh» and built a crevasse warning
+  on it, in the section a reader uses to decide whether to bring a rope. Every
+  point on the line between 1380 and 1520 m reads `ÅpentOmråde`. The nearest cell
+  classed `SnøIsbre` sits about 300 m off the route at 1482 m. The paragraph now
+  says that, and the ridge's real hazard — its sides — took its place.
+- **Auskjeret warned about the wrong side.** The research said «fjellet har eit
+  brattheng mot aust som er over 30 grader», and the guide told the reader not to
+  drop east off the ridge. East off the ridge measures 7.5, 7.0 and 8.9 degrees
+  mean from three points on it (896, 1000 and 1103 m), and 18.9 from the cairn,
+  with the steepest 60 m window at 31.1° a full 280–340 m out. What is actually
+  steep is **north and north-east of the summit**: 30.6 and 35.8 mean, windows
+  58.9 and 50.5. This is the Storehorn shape exactly — a warning pointing away
+  from the hazard.
+
+Two more were true but pointed loosely, which on this product is the same
+problem:
+
+- **Kvitegga's «fallretninga er aust»** is the way home, not the first move: from
+  the cairn the route runs *south* along the ridge to 1583 m before it turns down.
+  Due east of the summit the flank measures 39.2° mean with a **73.1° window
+  190–250 m out**. A reader taking the aspect field literally at the cairn drops
+  into that. The guide now says which comes first. Its «sommarstien vestover inn
+  Snødalen» is also south-west — the leg measures 210° — and that came from the
+  research too.
+- **Glitregga's «rett under toppen er terrenget bratt»** did not say which side.
+  North measures 26.3 mean with a 37.8° window; south, east and west measure 2.8,
+  8.9 and 1.8. Now it names the north.
+
+And five guides gained a measured hazard they had simply never mentioned, because
+nobody had swept these summits: **Molden** — a grade 1 tour — has 46.1 and 46.4
+degrees mean east and south-east with 62–64° windows, which is the fjord view
+being an edge rather than a slope; **Kvamshesten** 48.9 and 47.1 south and
+south-east with 74° windows; **Skårene** 40.0 west and 37.7 north-east against 13
+on the flank you climbed; **Ytstevasshornet** 43.2 north with a 67.3° window as
+little as 10–70 m out from the cairn; **Torvløysa** 40.9 west and 36.2 south-west
+off a ridge the copy called broad and gentle.
+
+One thing was left as a disagreement rather than a fix. **Råna's card says the
+descent faces south-east**; the line home bears 182° and `route_metrics` measures
+S. Rather than overwrite an editorial field from a single radial, the guide now
+states both — the card's SØ and the measured 182 — and says the crest is held on
+its west side, away from the cornices the research recorded. A tour card and a
+guide that disagree silently is worse than one that says which is which.
 
 ## Network
 

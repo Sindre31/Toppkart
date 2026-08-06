@@ -2964,7 +2964,7 @@
    ],
    "descent": [
     "Ned same ryggen, søraustover mot Nysætervatnet, i moderat og oversiktleg skiterreng. Følgjer du ryggen opp og ned, held ruta seg under 30 grader heile vegen.",
-    "Vanlegaste feil: å sleppe seg austover frå ryggen fordi sida ser innbydande ut. Fjellet har eit brattheng mot aust som er over 30 grader, og det er den eine staden på turen der linjevalet faktisk avgjer kva slags dag du får."
+    "Vanlegaste feil: å tru at det brattaste ligg mot aust. Målingane seier noko anna. Frå tre punkt på ryggen — 896, 1000 og 1103 moh — måler austsida 7,5, 7,0 og 8,9 grader i snitt over 400 meter, og frå varden 18,9. Det bratte ligg nord og nordaust for toppen: 30,6 og 35,8 grader i snitt, med 60-metersvindauge på 58,9 og 50,5. Ryggen opp er den slake linja, og terrenget bak toppen er det du ikkje ser frå han."
    ],
    "avalanche": [
     {
@@ -2973,7 +2973,7 @@
     },
     {
      "title": "Terrenget rundt",
-     "body": "Braatthenget mot aust er over 30 grader og skal styrast unna i skredver. Det er dette henget, saman med lengda, som skil turen frå ein rein nybyrjartur — sjølve ryggen gjer det ikkje."
+     "body": "Researchen for denne turen sa at fjellet har eit brattheng mot aust over 30 grader. Det finn ikkje terrengmodellen: aust frå ryggen måler 7 til 9 grader i snitt og aust frå varden 18,9, med det brattaste 60-metersvindauget på 31,1 grader heile 280 til 340 meter ut. Det som faktisk er bratt, er nord og nordaust for toppen — 30,6 og 35,8 grader i snitt med vindauge på 58,9 og 50,5. Det er lengda og den sida, ikkje austsida, som skil turen frå ein rein nybyrjartur."
     },
     {
      "title": "Før du går",
@@ -2992,7 +2992,7 @@
    ],
    "descent": [
     "Back down the same ridge, south-east toward Nysætervatnet, in moderate and open ski terrain. Follow the ridge up and down and the route stays below 30 degrees the whole way.",
-    "The usual mistake: dropping east off the ridge because the flank looks inviting. The mountain has a steep face to the east measuring over 30 degrees, and it is the one place on this tour where the line choice decides what kind of day you get."
+    "The usual mistake is to assume the steep ground is to the east. The measurements say otherwise. From three points on the ridge — 896, 1000 and 1103 m — the east side measures 7.5, 7.0 and 8.9 degrees on average over 400 metres, and from the cairn 18.9. The steep ground is north and north-east of the summit: 30.6 and 35.8 degrees on average, with 60-metre windows of 58.9 and 50.5. The ridge you climb is the gentle line, and the terrain behind the summit is what you cannot see from it."
    ],
    "avalanche": [
     {
@@ -3001,7 +3001,7 @@
     },
     {
      "title": "The terrain around it",
-     "body": "The steep east face is over 30 degrees and is to be kept away from in avalanche conditions. That face, together with the length, is what separates this from a pure beginner's tour — the ridge itself does not."
+     "body": "The research for this tour said the mountain has an east-facing slope over 30 degrees. The terrain model does not find it: east from the ridge measures 7 to 9 degrees on average and east from the cairn 18.9, with the steepest 60-metre window at 31.1 degrees a full 280 to 340 metres out. What is actually steep is north and north-east of the summit — 30.6 and 35.8 degrees on average with windows of 58.9 and 50.5. It is the length and that side, not the east side, that separates this from a beginner's tour."
     },
     {
      "title": "Before you go",
@@ -3099,7 +3099,7 @@
     },
     {
      "title": "Terrenget rundt",
-     "body": "Sørvestryggen har eit par brattare punkt den siste biten opp, og dei er verdt å sjå på når snøen er ustabil. Vestsida under toppen er den andre vurderinga: ho blir køyrd på stabile dagar, og ho endar i tett skog."
+     "body": "Sørvestryggen har eit par brattare punkt den siste biten opp, og dei er verdt å sjå på når snøen er ustabil. Vestsida under toppen er den andre vurderinga: ho blir køyrd på stabile dagar, og ho endar i tett skog. Den tredje er fjordsida, og ho er ikkje ei vurdering men ei grense: aust og søraust frå varden måler 46,1 og 46,4 grader i snitt over 500 meter, med 60-metersvindauge på 62,4 og 63,6. Utsikta ned mot Lustrafjorden kjem frå ein kant, ikkje frå ei helling."
     },
     {
      "title": "Før du går",
@@ -3127,7 +3127,7 @@
     },
     {
      "title": "The terrain around it",
-     "body": "The south-west ridge has a couple of steeper points on the last stretch up, and they are worth a look when the snow is unstable. The west side below the summit is the other assessment: it gets skied on stable days, and it ends in dense forest."
+     "body": "The south-west ridge has a couple of steeper points on the last stretch up, and they are worth a look when the snow is unstable. The west side below the summit is the other assessment: it gets skied on stable days, and it ends in dense forest. The third is the fjord side, and it is not a judgement but a boundary: east and south-east from the cairn measure 46.1 and 46.4 degrees on average over 500 metres, with 60-metre windows of 62.4 and 63.6. The view down to Lustrafjorden comes off an edge, not a slope."
     },
     {
      "title": "Before you go",
@@ -3162,7 +3162,7 @@
     },
     {
      "title": "Terrenget rundt",
-     "body": "Rett under toppen av Glitregga er terrenget bratt — hald deg til linja over skaret både opp og ned. Sida ned mot Djupegrova er den andre staden der eit linjeval får konsekvensar, for grova samlar snø frå heile flanken over."
+     "body": "Det bratte under toppen ligg mot nord: 26,3 grader i snitt over 500 meter med eit 37,8-graders vindauge 250 til 310 meter ut, og nordvest og nordaust 20,3 og 21,0. Sør, aust og vest er nesten flate — 2,8, 8,9 og 1,8 grader — så det er nordsida, og berre henne, linja over skaret held deg unna både opp og ned. Sida ned mot Djupegrova er den andre staden der eit linjeval får konsekvensar, for grova samlar snø frå heile flanken over."
     },
     {
      "title": "Før du går",
@@ -3190,7 +3190,7 @@
     },
     {
      "title": "The terrain around it",
-     "body": "Directly below the summit of Glitregga the ground is steep — hold to the line over the pass both up and down. The flank into Djupegrova is the other place where a line choice has consequences, because the gully collects snow from the whole face above."
+     "body": "The steep ground below the summit is to the north: 26.3 degrees on average over 500 metres with a 37.8-degree window 250 to 310 metres out, and north-west and north-east 20.3 and 21.0. South, east and west are nearly flat — 2.8, 8.9 and 1.8 degrees — so it is the north side, and only that side, the line over the col keeps you away from, both up and down. The flank into Djupegrova is the other place where a line choice has consequences, because the gully collects snow from the whole face above."
     },
     {
      "title": "Before you go",
@@ -3215,7 +3215,7 @@
     "Ryggen er jamn heile vegen opp: 13,6 grader frå 900 til 1000 moh, 15,4 frå 1000 til 1100 og 15,9 frå 1100 til 1200. Over 1400 moh flatar han ut mot varden på 1567 — bandet frå 1400 til 1500 moh måler 8,3 grader over 675 meter grunn."
    ],
    "descent": [
-    "Ned same ryggen, austover mot Remestøylen og Dragesetvegen. Ryggen er brei og oversiktleg, og fallretninga er vest.",
+    "Ned same ryggen, vestover mot Remestøylen og Dragesetvegen — oppstigninga går austover, og Remestøylen ligg på peiling 289 frå toppen. Ryggen er brei og oversiktleg, og fallretninga er vest.",
     "Vanlegaste feil: å velje ei anna linje ned enn den du gjekk opp. Fjellet har fleire skredutsette nedkøyringsalternativ til sidene av ryggen, og det er lett å følgje spor som ikkje endar der du parkerte. Følg oppstigningsryggen, ikkje andre sine spor."
    ],
    "avalanche": [
@@ -3225,7 +3225,7 @@
     },
     {
      "title": "Terrenget rundt",
-     "body": "Sidene av ryggen er skredutsette, og fleire av dei ser ut som freistande nedkøyringar frå toppen. Det er der vurderinga ligg på dette fjellet: ikkje i ruta opp, men i kva ein vel når ein står på 1567 moh og ser ned."
+     "body": "Sidene av ryggen er skredutsette, og no veit vi kva for nokre: sør og sørvest, ned mot Innvikdalen. Frå ryggpunktet på 1096 moh måler sørsida 26,9 grader i snitt over 400 meter med eit 45,5-graders vindauge, og sørvest 28,8 med 49,3. Frå 1275 moh gir sørvest 32,9 grader i snitt og eit 67,5-graders vindauge 320 til 380 meter ut. Nord og vest frå den same ryggen held 10 til 15 grader. Sjølve toppen er slak i alle åtte retningar — 2,5 til 11,3 grader i snitt — så vurderinga ligg ikkje der du står med varden, men i kva du vel når du er komen eit stykke ned."
     },
     {
      "title": "Før du går",
@@ -3243,7 +3243,7 @@
     "The ridge is even the whole way up: 13.6 degrees from 900 to 1000 m, 15.4 from 1000 to 1100 and 15.9 from 1100 to 1200. Above 1400 m it flattens toward the cairn at 1567 — the band from 1400 to 1500 m measures 8.3 degrees over 675 metres of ground."
    ],
    "descent": [
-    "Back down the same ridge, east toward Remestøylen and Dragesetvegen. The ridge is broad and open, and the descent faces west.",
+    "Back down the same ridge, west toward Remestøylen and Dragesetvegen — the climb goes east, and Remestøylen lies on a bearing of 289 from the summit. The ridge is broad and open, and the descent faces west.",
     "The usual mistake: choosing a different line down from the one you climbed. The mountain has several avalanche-prone descent options off the sides of the ridge, and it is easy to follow tracks that do not end where you parked. Follow the ascent ridge, not other people's tracks."
    ],
    "avalanche": [
@@ -3253,7 +3253,7 @@
     },
     {
      "title": "The terrain around it",
-     "body": "The flanks off the ridge are avalanche-prone, and several of them look like tempting descents from the summit. That is where the judgement lies on this mountain: not in the way up, but in what you choose standing at 1567 m looking down."
+     "body": "The sides of the ridge are avalanche terrain, and now we know which: south and south-west, down toward Innvikdalen. From the ridge point at 1096 m the south side measures 26.9 degrees on average over 400 metres with a 45.5-degree window, and south-west 28.8 with 49.3. From 1275 m south-west gives 32.9 degrees on average and a 67.5-degree window 320 to 380 metres out. North and west from the same ridge hold 10 to 15 degrees. The summit itself is gentle in all eight directions — 2.5 to 11.3 degrees on average — so the judgement is not where you stand at the cairn, but in what you choose once you are some way down."
     },
     {
      "title": "Before you go",
@@ -3288,7 +3288,7 @@
     },
     {
      "title": "Terrenget rundt",
-     "body": "Skåla er den eine store vurderinga på turen, og ho har ingen omveg: ruta går opp gjennom henne. Hardt føre gjer siste stigninga til ei klyving heller enn ein skitur, og det er då isøks og stegjern går frå å vere utstyr i sekken til å vere det du står på."
+     "body": "Skåla er den eine store vurderinga på turen, og ho har ingen omveg: ruta går opp gjennom henne. Hardt føre gjer siste stigninga til ei klyving heller enn ein skitur, og det er då isøks og stegjern går frå å vere utstyr i sekken til å vere det du står på. Toppen sjølv har ei side det ikkje går an å halde seg på: sør og søraust måler 48,9 og 47,1 grader i snitt over 500 meter, med 60-metersvindauge på 74,0 og 74,3. Aust og vest, 15,1 og 13,8 grader, er dei slake, og skåla kjem opp frå nord."
     },
     {
      "title": "Før du går",
@@ -3316,7 +3316,7 @@
     },
     {
      "title": "The terrain around it",
-     "body": "The bowl is the one large judgement on this tour, and there is no way around it: the route goes up through it. Hard snow turns the final climb into scrambling rather than skiing, and that is when the ice axe and crampons go from being kit in the pack to being what you stand on."
+     "body": "The bowl is the one large judgement on this tour, and there is no way around it: the route goes up through it. Hard snow turns the final climb into scrambling rather than skiing, and that is when the ice axe and crampons go from being kit in the pack to being what you stand on. The summit itself has a side there is no staying on: south and south-east measure 48.9 and 47.1 degrees on average over 500 metres, with 60-metre windows of 74.0 and 74.3. East and west, 15.1 and 13.8 degrees, are the gentle ones, and the bowl comes up from the north."
     },
     {
      "title": "Before you go",
@@ -3465,7 +3465,7 @@
     "Derfrå følgjer du toppryggen nordover. Han er brei og slakar av mot 1400 moh — 6,9 grader frå 1300 til 1400 — før den siste stigninga langs kammen frå 1531 og 1562 moh til varden på 1587. Det er her det brattaste ligg: 37,5 grader over tretti meter mellom 1530 og 1555 moh."
    ],
    "descent": [
-    "Ned same vegen: kammen, den breie toppryggen, ned egga til Nordkopen og ut dalen til Urkegjerdet. Fallretninga er søraust, og nedkøyringa er lang — 1595 høgdemeter i eitt strekk frå toppen til fjorden.",
+    "Ned same vegen: kammen, den breie toppryggen, ned egga til Nordkopen og ut dalen til Urkegjerdet. Kortet fører fallretninga som søraust; linja heim peilar 182 grader, altså rett sør, og kammen blir halden på vestsida der skavlane ikkje er. Nedkøyringa er lang — 1595 høgdemeter i eitt strekk frå toppen til fjorden.",
     "Vanlegaste feil: å halde seg aust på toppryggen. Det ligg store skavlar på austsida av ryggen, og ein flankemåling frå toppen viser at fjellet er bratt i alle retningar: 22 til 41 grader i snitt over dei fyrste 400 metrane, med 60-metersvindauge på 53 til 66 grader. Hald vest for kammen.",
     "Den andre er tidspunktet. Ruta går gjennom skredterreng både inn mot Nordkopen og i sida opp mot egga, og i vårsnø utover ettermiddagen er det den delen av turen som endrar seg raskast."
    ],
@@ -3494,7 +3494,7 @@
     "From there you follow the summit ridge north. It is broad and eases toward 1400 m — 6.9 degrees from 1300 to 1400 — before the final climb along the crest from 1531 and 1562 m to the cairn at 1587. That is where the steepest ground is: 37.5 degrees over thirty metres between 1530 and 1555 m."
    ],
    "descent": [
-    "Back the same way: the crest, the broad summit ridge, down the arête to Nordkopen and out the valley to Urkegjerdet. The descent faces south-east, and it is long — 1595 metres in one run from the summit to the fjord.",
+    "Back the same way: the crest, the broad summit ridge, down the arête to Nordkopen and out the valley to Urkegjerdet. The card gives the descent aspect as south-east; the line home bears 182 degrees, which is due south, and the crest is held on its west side where the cornices are not. It is long — 1595 metres in one run from the summit to the fjord.",
     "The usual mistake: holding east on the summit ridge. Large cornices sit on the east side, and a flank measurement from the summit shows the mountain is steep in every direction: 22 to 41 degrees on average over the first 400 metres, with 60-metre windows of 53 to 66 degrees. Keep west of the crest.",
     "The second is timing. The route runs through avalanche terrain both into Nordkopen and on the flank up to the arête, and in spring snow through the afternoon that is the part of the tour that changes fastest."
    ],
@@ -3794,7 +3794,7 @@
     },
     {
      "title": "Terrenget rundt",
-     "body": "Skavlar langs toppryggen — det dannar seg normalt ei stor skavl mellom førtoppen og hovudtoppen, og ho skal rundast på nedsida. Sida ned frå hovudtoppen er skredterreng, og det same er sjølve Vassdalen, som er den einaste vegen ned til bilen."
+     "body": "Skavlar langs toppryggen — det dannar seg normalt ei stor skavl mellom førtoppen og hovudtoppen, og ho skal rundast på nedsida. Sida ned frå hovudtoppen er skredterreng, og nordsida er den brattaste: 43,2 grader i snitt over 500 meter med eit 67,3-graders vindauge alt 10 til 70 meter ut frå varden, og nordaust 56,3 grader dei fyrste 60. Aust — vegen ned Vassdalen — måler 9,8 grader i snitt, og Vassdalen er likevel skredterreng og den einaste vegen ned til bilen."
     },
     {
      "title": "Før du går",
@@ -3822,7 +3822,7 @@
     },
     {
      "title": "The terrain around it",
-     "body": "Cornices along the summit ridge — a large one normally forms between the fore-summit and the main top, and it is rounded from below. The flank down from the main summit is avalanche terrain, and so is Vassdalen itself, which is the only way back to the car."
+     "body": "Cornices along the summit ridge — a large one normally forms between the fore-summit and the main top, and it is rounded from below. The flank down from the main summit is avalanche terrain, and the north side is the steepest: 43.2 degrees on average over 500 metres with a 67.3-degree window as little as 10 to 70 metres out from the cairn, and north-east 56.3 degrees in the first 60. East — the way down Vassdalen — measures 9.8 degrees on average, and Vassdalen is still avalanche terrain and the only way back to the car."
     },
     {
      "title": "Before you go",
@@ -3844,12 +3844,12 @@
     "Start på den kartfeste parkeringa på Hatlestad, 453 moh, over Norddalen. Fri Flyt skriv at ein parkerer på 350 moh; terrengmodellen les gardane til 412 og p-plassen til 453, og differansen er grunnen til at turen her måler 1461 høgdemeter og ikkje 1500.",
     "Gå slakt inn i munningen av Dyrdalen og opp til Rellingsætra på 557 moh. Dei to fyrste banda er nesten flate — 3,0 grader frå 400 til 500 moh og 2,1 over 2656 meter grunn frå 500 til 600.",
     "Frå setra tek kneiken opp på Daurmålsfjellet, 825 moh: 16,9 grader frå 600 til 700 moh og 15,2 frå 700 til 800. Skogen held til 748 moh. Dette er den bratte delen av turen, og han er kort.",
-    "Så følgjer ryggen. Fem kilometer i slakt terreng, over ryggpunktet på 1186 moh, med band mellom 7 og 20 grader heile vegen: 8,4 frå 1000 til 1100 moh, 14,1 frå 1200 til 1300, 20,2 frå 1400 til 1500 — brattaste hundremeteren — og 9,0 dei siste hundre til varden på 1851 moh. Kartverket registrerer breterreng kring 1437 moh."
+    "Så følgjer ryggen. Fem kilometer i slakt terreng, over ryggpunktet på 1186 moh, med band mellom 7 og 20 grader heile vegen: 8,4 frå 1000 til 1100 moh, 14,1 frå 1200 til 1300, 20,2 frå 1400 til 1500 — brattaste hundremeteren — og 9,0 dei siste hundre til varden på 1851 moh. Kartverket registrerer ikkje breterreng nokon stad på sjølve linja: kvart punkt mellom 1380 og 1520 moh er ope område. Den næraste cella som er klassa SnøIsbre ligg om lag 300 meter frå ruta, på 1482 moh."
    ],
    "descent": [
     "Ned same ryggen: nordover til Daurmålsfjellet, ned kneiken til Rellingsætra og ut Dyrdalen til Hatlestad. Fallretninga er nord, og nedkøyringa er lang og jamn heller enn bratt.",
     "Vanlegaste feil: å vende for seint. Ti kilometer utan ly, med det meste av høgda langt frå bilen, gjer at eit verskifte kostar meir her enn på ein kort tur — vendinga må avgjerast tidleg, ikkje når du står på ryggen og ser at det trekkjer til.",
-    "Den andre er breterrenget kring 1437 moh: det har sprekker seinvinters, og på ein rygg som elles er så slak er det lett å slutte å tenkje på kva ein går på."
+    "Den andre er sidene av ryggen. Han er brei nok til at ein ikkje tenkjer på kantane, men han fell av utanfor: frå varden måler vest 40,9 grader i snitt over 500 meter, sørvest 36,2 og søraust 35,2, med 60-metersvindauge på 49,3, 54,4 og 47,5. Nord og aust, som er vegen heim, held 9,0 og 9,3 grader. Ti kilometer i skodde på ein rygg som er slak i to retningar og bratt i seks er ei orienteringsoppgåve, ikkje ein tur ein improviserer."
    ],
    "avalanche": [
     {
@@ -3858,7 +3858,7 @@
     },
     {
      "title": "Terrenget rundt",
-     "body": "Breterrenget kring 1437 moh har sprekker seinvinters. Ryggen er brei, men han er lang og utan ly, og det er lengda som er den reelle faren her: ti kilometer frå bilen i dårleg ver er ein annan tur enn ti kilometer i sol."
+     "body": "Ryggen er brei og slak, men sidene er det ikkje: vest 40,9 grader i snitt frå varden, sørvest 36,2 og søraust 35,2. Nord og aust — vegen heim — held 9 grader. Det er lengda og orienteringa som er den reelle faren her: ti kilometer frå bilen i dårleg ver er ein annan tur enn ti kilometer i sol."
     },
     {
      "title": "Før du går",
@@ -3873,12 +3873,12 @@
     "Start at the mapped car park at Hatlestad, 453 m, above Norddalen. Fri Flyt says you park at 350 m; the terrain model reads the farms at 412 and the car park at 453, and that difference is why this tour measures 1461 metres of climbing and not 1500.",
     "Walk gently into the mouth of Dyrdalen and up to Rellingsætra at 557 m. The first two bands are nearly flat — 3.0 degrees from 400 to 500 m and 2.1 over 2656 metres of ground from 500 to 600.",
     "From the seter the step climbs onto Daurmålsfjellet, 825 m: 16.9 degrees from 600 to 700 m and 15.2 from 700 to 800. The forest holds to 748 m. This is the steep part of the tour, and it is short.",
-    "Then comes the ridge. Five kilometres of gentle ground, over the ridge point at 1186 m, with bands between 7 and 20 degrees the whole way: 8.4 from 1000 to 1100 m, 14.1 from 1200 to 1300, 20.2 from 1400 to 1500 — the steepest hundred-metre band — and 9.0 for the last hundred to the cairn at 1851 m. Kartverket registers glacier terrain around 1437 m."
+    "Then comes the ridge. Five kilometres of gentle ground, over the ridge point at 1186 m, with bands between 7 and 20 degrees the whole way: 8.4 from 1000 to 1100 m, 14.1 from 1200 to 1300, 20.2 from 1400 to 1500 — the steepest hundred-metre band — and 9.0 for the last hundred to the cairn at 1851 m. Kartverket registers no glacier terrain anywhere on the line itself: every point between 1380 and 1520 m is open ground. The nearest cell classed as glacier lies about 300 metres off the route, at 1482 m."
    ],
    "descent": [
     "Back down the same ridge: north to Daurmålsfjellet, down the step to Rellingsætra and out Dyrdalen to Hatlestad. The descent faces north, and it is long and even rather than steep.",
     "The usual mistake: turning back too late. Ten kilometres without shelter, with most of the height far from the car, means a change in the weather costs more here than on a short tour — the decision to turn has to be made early, not when you are on the ridge watching it close in.",
-    "The second is the glacier terrain around 1437 m: it has crevasses late in the winter, and on a ridge this gentle it is easy to stop thinking about what you are walking on."
+    "The second is the sides of the ridge. It is broad enough that you stop thinking about its edges, but it falls away beyond them: from the cairn, west measures 40.9 degrees on average over 500 metres, south-west 36.2 and south-east 35.2, with 60-metre windows of 49.3, 54.4 and 47.5. North and east, which is the way home, hold 9.0 and 9.3 degrees. Ten kilometres in cloud on a ridge that is gentle in two directions and steep in six is a navigation problem, not a tour to improvise."
    ],
    "avalanche": [
     {
@@ -3887,7 +3887,7 @@
     },
     {
      "title": "The terrain around it",
-     "body": "The glacier terrain around 1437 m has crevasses late in the season. The ridge is broad, but it is long and without shelter, and the length is the real hazard here: ten kilometres from the car in bad weather is a different tour from ten kilometres in sunshine."
+     "body": "The ridge is broad and gentle, but its sides are not: west measures 40.9 degrees on average from the cairn, south-west 36.2 and south-east 35.2. North and east — the way home — hold 9 degrees. It is the length and the navigation that are the real danger here: ten kilometres from the car in bad weather is a different tour from ten kilometres in sunshine."
     },
     {
      "title": "Before you go",
@@ -3922,7 +3922,7 @@
     },
     {
      "title": "Terrenget rundt",
-     "body": "Skredterreng frå botnen av Gråsteindalen og heile vegen opp til toppen. Flanken er stor og samanhengande, og det finst inga line rundt han: går du turen, går du i han."
+     "body": "Skredterreng frå botnen av Gråsteindalen og heile vegen opp til toppen. Flanken er stor og samanhengande, og det finst inga line rundt han: går du turen, går du i han. Og toppen er ikkje slak på baksida: vest måler 40,0 grader i snitt over 500 meter med eit 67,7-graders vindauge, nordvest 29,5 med 70,4 og nordaust 37,7 med 65,6. Sør og søraust — flanken du kom opp — held 13 grader."
     },
     {
      "title": "Før du går",
@@ -3950,7 +3950,7 @@
     },
     {
      "title": "The terrain around it",
-     "body": "Avalanche terrain from the head of Gråsteindalen all the way to the summit. The flank is large and unbroken, and there is no line around it: if you do this tour, you are on it."
+     "body": "Avalanche terrain from the head of Gråsteindalen all the way to the summit. The flank is large and unbroken, and there is no line around it: if you do this tour, you are on it. And the summit is not gentle on its far side: west measures 40.0 degrees on average over 500 metres with a 67.7-degree window, north-west 29.5 with 70.4 and north-east 37.7 with 65.6. South and south-east — the flank you climbed — hold 13 degrees."
     },
     {
      "title": "Before you go",
@@ -3970,12 +3970,12 @@
    "caption": "1477 høgdemeter og 6,05 km frå grustaket i Nibbedalen gjennom Snødalen, over Brattbakken og høgda på 1583 moh til toppen.",
    "ascent": [
     "Start i grustaket i Nibbedalen, 324 moh, der sidevegen tek av frå fv655. Er vegen ikkje brøytt, parkerer ein langs fylkesvegen. Dei fyrste 771 metrane grunn ligg på 5,9 grader.",
-    "Følg grusvegen eit lite stykke og deretter sommarstien vestover inn Snødalen. Stigninga er jamn og vedvarande: 20,1 grader frå 500 til 600 moh, 19,6 frå 600 til 700 og 19,0 frå 700 til 800. Ved 925 moh er du inne i sjølve dalen.",
+    "Følg grusvegen eit lite stykke og deretter sommarstien sørvestover inn Snødalen — rutebeskrivinga seier vestover, men etappen måler 210 grader. Stigninga er jamn og vedvarande: 20,1 grader frå 500 til 600 moh, 19,6 frå 600 til 700 og 19,0 frå 700 til 800. Ved 925 moh er du inne i sjølve dalen.",
     "Innerst tek Brattbakken til — bakken opp mot 1316 moh som rutebeskrivinga set til om lag 35 grader. Terrengmodellen måler bandet frå 1100 til 1200 moh til 22,5 grader i snitt og det brattaste samanhengande partiet til 38,1 grader mellom 1265 og 1292 moh. Kartverket registrerer breterreng frå 1290 moh.",
     "Over bakken flatar det brelagde platået ut: 10,2 grader frå 1200 til 1300 moh og 5,6 frå 1500 til 1600 over 1036 meter grunn. Du følgjer det til høgda på 1583 moh, går ned eit lite skar og nordover langs ryggen til toppen på 1700 moh. Den publiserte høgda 1717 er snøkuppelen; terrengmodellen les fjellet til 1700."
    ],
    "descent": [
-    "Ned same vegen: sørover langs ryggen, over platået og ned Brattbakken til Snødalen. Fallretninga er aust, og Brattbakken er den delen av nedkøyringa som avgjer om dagen er ein skitur eller ei øving i kantsikring.",
+    "Ned same vegen: sørover langs ryggen, over platået og ned Brattbakken til Snødalen. Fallretninga er aust — men det er retninga heim, ikkje det fyrste steget: frå varden går ruta sørover langs ryggen til høgda på 1583 moh før ho svingar ned. Rett aust for toppen måler flanken 39,2 grader i snitt med eit 73,1-graders vindauge 190 til 250 meter ut, og det er ikkje ein nedkøyring. Brattbakken er den delen av den rette nedkøyringa som avgjer om dagen er ein skitur eller ei øving i kantsikring.",
     "Vanlegaste feil: å gå på breen utan å ta han på alvor. Ruta kryssar breterreng frå 1290 moh, og sprekkene er der uansett kor slakt platået måler. Den andre er skavlane langs toppryggen — hald avstand til kantane, særleg i dårleg sikt."
    ],
    "avalanche": [
@@ -3998,12 +3998,12 @@
    "caption": "1477 metres of climbing and 6.05 km from the gravel pit in Nibbedalen through Snødalen, over Brattbakken and the 1583 m top to the summit.",
    "ascent": [
     "Start in the gravel pit in Nibbedalen, 324 m, where the side road leaves county road 655. If the road is not ploughed, park along the county road. The first 771 metres of ground lie at 5.9 degrees.",
-    "Follow the gravel road a short way and then the summer path west into Snødalen. The climbing is even and sustained: 20.1 degrees from 500 to 600 m, 19.6 from 600 to 700 and 19.0 from 700 to 800. At 925 m you are inside the valley itself.",
+    "Follow the gravel road a short way and then the summer path south-west into Snødalen — the route description says west, but the leg measures 210 degrees. The climbing is even and sustained: 20.1 degrees from 500 to 600 m, 19.6 from 600 to 700 and 19.0 from 700 to 800. At 925 m you are inside the valley itself.",
     "At its head Brattbakken begins — the slope up to 1316 m that the route description puts at about 35 degrees. The terrain model measures the band from 1100 to 1200 m at 22.5 degrees on average and the steepest sustained section at 38.1 degrees between 1265 and 1292 m. Kartverket registers glacier terrain from 1290 m.",
     "Above the slope the glaciated plateau lays back: 10.2 degrees from 1200 to 1300 m and 5.6 from 1500 to 1600 over 1036 metres of ground. Follow it to the 1583 m top, drop through a small col and head north along the ridge to the summit at 1700 m. The published 1717 is the snow dome; the terrain model reads the mountain at 1700."
    ],
    "descent": [
-    "Back the same way: south along the ridge, across the plateau and down Brattbakken into Snødalen. The descent faces east, and Brattbakken is the part that decides whether the day is a ski tour or an exercise in edge control.",
+    "Back the same way: south along the ridge, across the plateau and down Brattbakken into Snødalen. The descent faces east — but that is the way home, not the first move: from the cairn the route runs south along the ridge to the high point at 1583 m before it turns down. Due east of the summit the flank measures 39.2 degrees on average with a 73.1-degree window 190 to 250 metres out, and that is not a descent. Brattbakken is the part of the proper descent that decides whether the day is a ski tour or an exercise in edge control.",
     "The usual mistake: treating the glacier casually. The route crosses glacier terrain from 1290 m, and the crevasses are there however gently the plateau measures. The second is the cornices along the summit ridge — keep away from the edges, especially in poor visibility."
    ],
    "avalanche": [
@@ -4286,5 +4286,459 @@
    "https://www.openstreetmap.org/way/368726570"
   ],
   "source": "written against corridors.json and the routed line"
+ },
+ "hogevarde": {
+  "no": {
+   "intro": "598 høydemeter på 4,78 km fra Tempelseter, i en oppstaket og som regel oppkjørt løype. Ingen del av oppstigningen er bratt: bratteste sammenhengende parti måler 19,5 grader, mellom 1179 og 1195 moh, og bratteste hundremeteren, 1200 til 1300 moh, holder 11,8 grader i snitt. Det du planlegger etter her er været og østsida, ikke hellinga i sporet.",
+   "caption": "598 høydemeter og 4,78 km fra Tempelseter, hele ruta over skoggrensa, med DNT-hytta på 1397 moh og toppen 560 meter lenger nordøst.",
+   "ascent": [
+    "Start på parkeringa ved Tempelseter, 910 moh, og gå opp til høyre for skibakken. Løypa er stukket og som regel kjørt, og de første hundre høydemeterne er det slakeste på turen: bandet fra 900 til 1000 moh måler 3,9 grader over 1305 meter grunn.",
+    "Over anlegget stiger det jevnt — 8,8 grader fra 1000 til 1100 moh og 7,8 fra 1100 til 1200 — og et sted der inne, mellom 1179 og 1195 moh, ligger bratteste sammenhengende parti på hele turen: 19,5 grader. Ingen av punktene Kartverket sampler langs ruta er klasset som skog. Du starter over skoggrensa og ser hvor du skal hele vegen, og det er en fordel helt til sikten forsvinner.",
+    "Fra ryggen på rundt 1190 moh svinger ruta nordøstover mot hytta. Bandet fra 1200 til 1300 moh er det bratteste på turen, 11,8 grader over 496 meter grunn, og over det flater det ut igjen: 7,7 grader fra 1300 til 1400.",
+    "DNT-hytta Høgevarde ligger på 1397 moh, og toppen 560 meter lenger nordøst, på 1461. Det siste bandet, over 1400 moh, måler 3,5 grader over 810 meter grunn — flatt, og samtidig den mest værutsatte delen av turen. Gamle Høgevarde turisthytte har kafé i vinterferiene og påsken, og skilt nederst i bakken sier om den er åpen."
+   ],
+   "descent": [
+    "Ned samme vegen, sørvestover. Det er den slake sida av fjellet, og målingene sier hvor slak: 7,1 grader i snitt mot vest og 8,6 mot sørvest over 500 meter, med bratteste 60-metersvindu på 25,6 og 23,8 grader. Den andre dokumenterte ruta, høyfjellsruta fra Norefjellstua over Norefjellsryggen, gir 826 høydemeter på 11,67 km og er en annen dag.",
+    "Fristelsen er å ta av mot øst, mot Norefjell skisenter som er godt synlig fra varden. Det er ikke rett nedenfor: anlegget ligger 9,85 kilometer unna på peiling 148, altså sørøst. Å sette kursen dit fra toppen er å velge den bratteste sektoren på fjellet — øst måler 25 grader i snitt og bryter av i 41,5 grader 70 til 130 meter ut fra varden, nordøst gir 41,3, og sørøst, som er retningen mot anlegget, 51,2 grader i vinduet 420 til 480 meter ut. Toppryggen er ofte avblåst mens snøen ligger fin 200 meter lenger nede, og det er nettopp da linjevalget flyttes uten at noen bestemmer seg for det."
+   ],
+   "avalanche": [
+    {
+     "title": "Ruta",
+     "body": "Oppstaket og som regel oppkjørt løype i slakt terreng hele vegen. Bratteste sammenhengende parti måler 19,5 grader og ligger mellom 1179 og 1195 moh; bratteste hundremeteren, 1200 til 1300 moh, holder 11,8 grader over 496 meter grunn. Staking er ikke kvisting — ut.no minner om at løypa tidlig i sesongen ikke alltid er supplert med kvist, og over skoggrensa er det ingenting annet å navigere etter."
+    },
+    {
+     "title": "Terrenget utenfor",
+     "body": "Fjellet er slakt på tre kanter og bratt på én. Øst og nordøst under toppen måler 25 grader i snitt med 60-metersvinduer på 41,5 og 41,3 grader, 70 til 160 meter ut fra varden, og sørøst 51,2 grader i vinduet 420 til 480 meter ut. Vest, sørvest og nordvest holder 7,1 til 8,6 grader i snitt. Det er hele fjellet i én setning: gå og kjør på vestsida."
+    },
+    {
+     "title": "Før du går",
+     "body": "Sjekk dagens skredvarsel for Buskerud sør på varsom.no. Buskerud sør er en B-region: den varslet bare ved faregrad 4 og 5, så de fleste vinterdager finnes det ingen vurdering å lese, og en tom side betyr ikke et trygt fjell. Ta med sender/mottaker, søkestang og spade."
+    }
+   ]
+  },
+  "en": {
+   "intro": "598 metres of climbing over 4.78 km from Tempelseter, on a staked and usually groomed track. No part of the ascent is steep: the steepest sustained section measures 19.5 degrees, between 1179 and 1195 m, and the steepest hundred-metre band, 1200 to 1300 m, averages 11.8 degrees. What you plan around here is the weather and the east side, not the gradient under your skins.",
+   "caption": "598 metres of climbing and 4.78 km from Tempelseter, the whole route above the treeline, with the DNT hut at 1397 m and the summit 560 metres further north-east.",
+   "ascent": [
+    "Start at the car park by Tempelseter, 910 m, and climb to the right of the ski slope. The track is staked and usually groomed, and the first hundred metres of climbing are the gentlest on the tour: the band from 900 to 1000 m measures 3.9 degrees over 1305 metres of ground.",
+    "Above the lift it climbs evenly — 8.8 degrees from 1000 to 1100 m and 7.8 from 1100 to 1200 — and somewhere in there, between 1179 and 1195 m, sits the steepest sustained section of the whole tour: 19.5 degrees. Not one of the points Kartverket samples along this route is classed as forest. You start above the treeline and can see where you are going the whole way, which helps right up until the visibility goes.",
+    "From the ridge at around 1190 m the route swings north-east toward the hut. The band from 1200 to 1300 m is the steepest on the tour, 11.8 degrees over 496 metres of ground, and above it the ground flattens again: 7.7 degrees from 1300 to 1400.",
+    "The DNT hut Høgevarde sits at 1397 m, and the summit 560 metres further north-east, at 1461. The last band, above 1400 m, measures 3.5 degrees over 810 metres of ground — flat, and at the same time the most weather-exposed part of the day. The old Høgevarde tourist hut serves waffles in the winter holidays and at Easter, and a sign at the bottom of the slope tells you whether it is open."
+   ],
+   "descent": [
+    "Back down the same way, south-west. That is the gentle side of the mountain, and the measurements say how gentle: 7.1 degrees on average to the west and 8.6 to the south-west over 500 metres, with steepest 60-metre windows of 25.6 and 23.8 degrees. The other documented route, the high-mountain track from Norefjellstua over Norefjellsryggen, gives 826 metres of climbing over 11.67 km and is a different day.",
+    "The temptation is to head east, toward the Norefjell ski centre you can see clearly from the cairn. It is not just below you: the resort is 9.85 kilometres away on a bearing of 148, which is south-east. Setting a course for it from the summit means choosing the steepest sector of the mountain — east averages 25 degrees and breaks off at 41.5 degrees 70 to 130 metres out from the cairn, north-east gives 41.3, and south-east, the direction of the resort, 51.2 degrees in the window 420 to 480 metres out. The summit ridge is often scoured bare while the snow is good 200 metres lower, and that is exactly when the line choice moves without anyone deciding it."
+   ],
+   "avalanche": [
+    {
+     "title": "The route",
+     "body": "A staked and usually groomed track in gentle terrain the whole way. The steepest sustained section measures 19.5 degrees and sits between 1179 and 1195 m; the steepest hundred-metre band, 1200 to 1300 m, holds 11.8 degrees over 496 metres of ground. Staking is not brushing — ut.no points out that early in the season the poles are not always supplemented with markers, and above the treeline there is nothing else to navigate by."
+    },
+    {
+     "title": "The terrain around it",
+     "body": "The mountain is gentle on three sides and steep on one. East and north-east below the summit average 25 degrees with 60-metre windows of 41.5 and 41.3 degrees, 70 to 160 metres out from the cairn, and south-east 51.2 degrees in the window 420 to 480 metres out. West, south-west and north-west hold 7.1 to 8.6 degrees on average. That is the whole mountain in one sentence: climb and ski the west side."
+    },
+    {
+     "title": "Before you go",
+     "body": "Check today's avalanche forecast for Buskerud sør at varsom.no. Buskerud sør is a B region: it is only forecast at danger levels 4 and 5, so on most winter days there is no assessment to read, and an empty page does not mean a safe mountain. Bring a transceiver, probe and shovel."
+    }
+   ]
+  },
+  "sources": [
+   "https://ut.no/turforslag/114739/topptur-pa-ski-til-hgevard-1459-moh",
+   "https://ut.no/turforslag/115722/familievennlig-topptur-pa-norefjell-hgevard-1459-moh",
+   "https://www.randofolk.no/artikler/topptur-til-hogevarde-1459-moh-en-kort-kjoretur-fra-oslo/",
+   "https://www.randofolk.no/toppturer/hogevarde-sma-turer-kan-bli-store/",
+   "https://www.openstreetmap.org/way/494501835"
+  ],
+  "source": "written against corridors.json, the routed line and flank_probe.py"
+ },
+ "grafjell": {
+  "no": {
+   "intro": "581 høydemeter på 7,84 km fra Tempelsetra til Norefjells høyeste punkt. Ruta er slakere enn nabotoppene — bratteste hundremeteren, 1300 til 1400 moh, måler 10,0 grader — og lengre enn dem alle. Vanskeligheten er ikke hellinga, men at orienteringspunktene på de første fem kilometerne er tjern.",
+   "caption": "581 høydemeter og 7,84 km fra Tempelsetra over Istjenn, Vesletjenn og Donkelitjenn, med skoggrensa på 937 moh og bratteste hundremeteren mellom 1300 og 1400 moh.",
+   "ascent": [
+    "Start bak Tempelsetra kafè, 910 moh, og følg løypa mot Istjenn. Skogen slipper taket allerede ved 937 moh, og på 950 moh går ruta ut på Istjenn — Kartverket klasser punktet som innsjø, og det er det første av to vann ruta går ut på isen på — Donkelitjenn er det andre.",
+    "Videre nordover forbi Vesletjenn på 1095 moh. Dette er den flate delen: bandet fra 900 til 1000 moh måler 2,2 grader over 2472 meter grunn, 1000 til 1100 måler 3,6 over 1564, og 1100 til 1200 bare 2,9 over 1902 meter. Fem kilometer går med før du står på 1156 moh, og i dårlig sikt er det her turen faktisk er krevende.",
+    "Ved Donkelitjenn, 1156 moh, kaller ut.no turen halvgått, og oppgir at det er 313 høydemeter igjen. Det er deres løype som er halv der; den routede linja her er kortere og har vannet på to tredeler. Uansett er det herfra det stiger: 7,4 grader fra 1200 til 1300 moh, og et sted mellom 1275 og 1292 moh ligger bratteste sammenhengende parti på turen, 20,7 grader.",
+    "Løypa fortsetter nordover til den deler seg rundt 1282 moh, og grenen som dreier østover går opp på Gråfjell. Bandet fra 1300 til 1400 moh er det bratteste, 10,0 grader over 596 meter grunn, og det siste bandet, over 1400 moh, måler 6,4 grader. Varden står på 1466 moh, 4,5 km nordvest for Høgevarde."
+   ],
+   "descent": [
+    "Ned samme vegen — men ikke sørover fra varden. Ruta kommer inn på toppen fra nordvest, så den første kilometeren ned går tilbake dit løypa delte seg på 1282 moh, og først derfra svinger du sørover mot Donkelitjenn. Toppen er rund og flat, og det er verdt å vite hvor rund: radialmålinger fra varden gir 5,2 til 18,3 grader i snitt over 500 meter i alle åtte retninger, og det bratteste 60-metersvinduet på hele fjellet måler 30,2 grader.",
+    "Det er derfor Gråfjell er en navigasjonstur og ikke en skredtur. Går du feil ned fra et rundt topplatå i skodde, ender du ikke i en henging — du ender i feil dal, med fem kilometer myr og tjern mellom deg og bilen. Ta peiling på toppen mens du kan se, og hold løypa tilbake over Donkelitjenn."
+   ],
+   "avalanche": [
+    {
+     "title": "Ruta",
+     "body": "Slakt høyfjell hele vegen. Bratteste sammenhengende parti måler 20,7 grader, mellom 1275 og 1292 moh, og bratteste hundremeteren, 1300 til 1400 moh, holder 10,0 grader over 596 meter grunn. Tre av punktene Kartverket sampler langs linja er innsjø: Istjenn på 950 moh og Donkelitjenn på 1152 og 1156. Vinterstid er de flate sletter, og de er en del av ruta — men de er is, og isen er ikke terrengmodellens ansvar."
+    },
+    {
+     "title": "Terrenget utenfor",
+     "body": "Det er lite av det. Ingen retning fra varden måler over 18,3 grader i snitt de første 500 meterne, og de bratteste 60-metersvinduene ligger på 30,2 grader mot sørøst og sør. Faren på Gråfjell er vær, avstand og sikt: toppen er det høyeste punktet på Norefjell og fanger vind og skodde før resten av platået, og ut.no fører sesongen som desember til mars."
+    },
+    {
+     "title": "Før du går",
+     "body": "Sjekk dagens skredvarsel for Buskerud sør på varsom.no. Buskerud sør er en B-region: den varslet bare ved faregrad 4 og 5, så de fleste vinterdager finnes det ingen vurdering å lese, og en tom side betyr ikke et trygt fjell. Ta med sender/mottaker, søkestang og spade."
+    }
+   ]
+  },
+  "en": {
+   "intro": "581 metres of climbing over 7.84 km from Tempelsetra to the highest point on Norefjell. The route is gentler than its neighbours — the steepest hundred-metre band, 1300 to 1400 m, measures 10.0 degrees — and longer than all of them. The difficulty is not the gradient but that the landmarks on the first five kilometres are tarns.",
+   "caption": "581 metres of climbing and 7.84 km from Tempelsetra past Istjenn, Vesletjenn and Donkelitjenn, with the treeline at 937 m and the steepest hundred-metre band between 1300 and 1400 m.",
+   "ascent": [
+    "Start behind the Tempelsetra café, 910 m, and follow the track toward Istjenn. The forest lets go already at 937 m, and at 950 m the route goes out onto Istjenn — Kartverket classes the point as lake, and it is the first of two waters the route goes out onto the ice of — Donkelitjenn is the other.",
+    "On north past Vesletjenn at 1095 m. This is the flat part: the band from 900 to 1000 m measures 2.2 degrees over 2472 metres of ground, 1000 to 1100 measures 3.6 over 1564, and 1100 to 1200 only 2.9 over 1902 metres. Five kilometres go by before you stand at 1156 m, and in poor visibility this is where the tour is actually demanding.",
+    "At Donkelitjenn, 1156 m, ut.no calls the tour half done and states that 313 metres of climbing remain. It is their track that is half done there; the routed line here is shorter and has the tarn at two thirds. Either way this is where it starts to rise: 7.4 degrees from 1200 to 1300 m, and somewhere between 1275 and 1292 m sits the steepest sustained section of the tour, 20.7 degrees.",
+    "The track continues north until it splits at around 1282 m, and the branch turning east climbs Gråfjell. The band from 1300 to 1400 m is the steepest, 10.0 degrees over 596 metres of ground, and the last band, above 1400 m, measures 6.4 degrees. The cairn stands at 1466 m, 4.5 km north-west of Høgevarde."
+   ],
+   "descent": [
+    "Back down the same way — but not south from the cairn. The route comes onto the summit from the north-west, so the first kilometre down retraces to where the track split at 1282 m, and only from there do you turn south toward Donkelitjenn. The summit is round and flat, and it is worth knowing how round: radial measurements from the cairn give 5.2 to 18.3 degrees on average over 500 metres in all eight directions, and the steepest 60-metre window on the whole mountain measures 30.2 degrees.",
+    "That is why Gråfjell is a navigation tour and not an avalanche one. Come off a round summit plateau the wrong way in cloud and you do not end up in a slab — you end up in the wrong valley, with five kilometres of bog and tarns between you and the car. Take a bearing on top while you can still see, and hold the track back over Donkelitjenn."
+   ],
+   "avalanche": [
+    {
+     "title": "The route",
+     "body": "Gentle high fjell the whole way. The steepest sustained section measures 20.7 degrees, between 1275 and 1292 m, and the steepest hundred-metre band, 1300 to 1400 m, holds 10.0 degrees over 596 metres of ground. Three of the points Kartverket samples along the line are lake: Istjenn at 950 m and Donkelitjenn at 1152 and 1156. In winter they are flat plains and they are part of the route — but they are ice, and ice is not the terrain model's business."
+    },
+    {
+     "title": "The terrain around it",
+     "body": "There is little of it. No direction from the cairn averages more than 18.3 degrees over the first 500 metres, and the steepest 60-metre windows measure 30.2 degrees to the south-east and south. The danger on Gråfjell is weather, distance and visibility: the summit is the highest point on Norefjell and catches wind and cloud before the rest of the plateau, and ut.no gives the season as December to March."
+    },
+    {
+     "title": "Before you go",
+     "body": "Check today's avalanche forecast for Buskerud sør at varsom.no. Buskerud sør is a B region: it is only forecast at danger levels 4 and 5, so on most winter days there is no assessment to read, and an empty page does not mean a safe mountain. Bring a transceiver, probe and shovel."
+    }
+   ]
+  },
+  "sources": [
+   "https://ut.no/turforslag/1112345/pa-ski-til-grafjell-pa-norefjell",
+   "https://ut.no/turforslag/114629/toppturer-til-hgevarde-grafjell-og-ranten-pa-norefjell",
+   "https://ut.no/turforslag/115875/vintertur-pa-norefjell",
+   "https://www.openstreetmap.org/way/494501835"
+  ],
+  "source": "written against corridors.json, the routed line and flank_probe.py"
+ },
+ "ranten": {
+  "no": {
+   "intro": "527 høydemeter på 5,56 km fra Tempelseter til den taggete ryggen Th. Kittelsen malte som Soria Moria. Oppstigningen fra Raudmyra er slak — bratteste sammenhengende parti måler 27,1 grader — og sørsida ser slak ut de første hundre meterne fra varden. Så bryter den av i 47 til 60 grader, og det er den vegen den merkede stien går ned.",
+   "caption": "527 høydemeter og 5,56 km fra Tempelseter over stikrysset på Raudmyra, 1229 moh, med skoggrensa på 931 moh og all stigningen i de siste to kilometerne.",
+   "ascent": [
+    "Start på parkeringa ved Tempelseter, 910 moh, og følg den T-merkede og blåmerkede ruta over fossen i retning Høgevarde. Skogen slipper taket ved 931 moh, og de neste tre kilometerne er nesten flate: 4,8 grader fra 900 til 1000 moh over 1075 meter grunn, 4,0 fra 1000 til 1100 over 1440 meter, og 3,9 fra 1200 til 1300 over 1516.",
+    "Stikrysset på Raudmyra ligger på 1229 moh, og navnet er ikke tilfeldig: Kartverket klasser både punktet på 1216 og punktet på 1229 moh som myr. Her tar du av til venstre, mot Gråfjell, og forlater Høgevarde-løypa.",
+    "Nå kommer turen. Bandet fra 1300 til 1400 moh måler 13,9 grader over 405 meter grunn — det er halve stigningen på under en halv kilometer — og mellom 1322 og 1338 moh ligger bratteste sammenhengende parti, 27,1 grader.",
+    "Det siste bandet, over 1400 moh, måler 5,7 grader over 120 meter grunn, og der står varden på 1416 moh. Toppen er en smal, taggete rygg, og profilen som gjør fjellet lett å kjenne igjen nedenfra er den samme profilen som gjør at det ikke er mye plass på den."
+   ],
+   "descent": [
+    "Den slake vegen ned er den du kom opp: østover mot Raudmyra, der flanken måler 13,3 grader i snitt over 500 meter. Nord, vest og nordvest er også slake — 10,4, 11,9 og 10,8 grader i snitt, med bratteste 60-metersvinduer på 19,6, 18,8 og 16,8 grader — men de fører deg vekk fra bilen.",
+    "Den merkede stien går bratt sørover til Fetjenn på 990 moh, og som skilinje er det en helt annen tur enn oppstigningen — men den ser ikke slik ut fra toppen. Punktmålinger hver tretti meter rett sørover gir først en skulder: 1415,6, 1399,2, 1393,9 og 1395,5 moh, altså 28,6 grader det første steget og så noe som er flatt og til og med stiger litt. Der skulderen slutter, 120 meter ut, faller det 47,2 og 54,5 grader. På peiling 195, som er retningen til Fetjenn, er skulderen enda tydeligere — bakken stiger igjen på 90 meter — og bruddet måler 60,0 grader. Det er rennene randofolk.no mener når de kaller Ranten «en mer alpin topp med brattere nedkjøring» enn Høgevarde. Ta ikke bakken over bruddet som et mål på det som ligger under: kjør dem hvis dette er terreng du kjører til vanlig, og hvis varselet og snøen sier ja; ellers går du tilbake den vegen du kom."
+   ],
+   "avalanche": [
+    {
+     "title": "Ruta",
+     "body": "Oppstigningen fra Raudmyra er en jevn skråning: 13,9 grader i snitt fra 1300 til 1400 moh, og bratteste sammenhengende parti 27,1 grader mellom 1322 og 1338 moh. De første fire kilometerne fra Tempelseter holder under 6 grader. Ruta i seg selv er ikke problemet på dette fjellet."
+    },
+    {
+     "title": "Terrenget utenfor",
+     "body": "Sørsida er problemet, og den er farligere enn tallene alene sier. Fra varden faller den 40,2 til 54,8 grader i 60-metersvinduene 90 til 170 meter ut, på alle peilinger fra 150 til 210 grader — hele sektoren fra sørøst til sørvest. Men de første hundre meterne er en skulder på rundt ti grader, som på peiling 195 til og med stiger igjen, så bruddet er ikke synlig fra der du står. Toppryggen er smal, og skavl bygger seg ut over den kanten i vestavind. Nord- og vestsida er det motsatte, 10 til 12 grader i snitt."
+    },
+    {
+     "title": "Før du går",
+     "body": "Sjekk dagens skredvarsel for Buskerud sør på varsom.no. Buskerud sør er en B-region: den varslet bare ved faregrad 4 og 5, så de fleste vinterdager finnes det ingen vurdering å lese, og en tom side betyr ikke et trygt fjell. Ta med sender/mottaker, søkestang og spade."
+    }
+   ]
+  },
+  "en": {
+   "intro": "527 metres of climbing over 5.56 km from Tempelseter to the jagged ridge Th. Kittelsen painted as Soria Moria. The climb from Raudmyra is gentle — the steepest sustained section measures 27.1 degrees — and the south side looks gentle for the first hundred metres from the cairn. Then it breaks off at 47 to 60 degrees, and that is the way the marked path goes down.",
+   "caption": "527 metres of climbing and 5.56 km from Tempelseter by the trail junction at Raudmyra, 1229 m, with the treeline at 931 m and all the climbing in the last two kilometres.",
+   "ascent": [
+    "Start at the car park by Tempelseter, 910 m, and follow the T-marked and blue-marked route past the waterfall toward Høgevarde. The forest lets go at 931 m, and the next three kilometres are almost flat: 4.8 degrees from 900 to 1000 m over 1075 metres of ground, 4.0 from 1000 to 1100 over 1440 metres, and 3.9 from 1200 to 1300 over 1516.",
+    "The trail junction at Raudmyra sits at 1229 m, and the name — red bog — is not an accident: Kartverket classes both the point at 1216 and the point at 1229 m as bog. Here you turn left toward Gråfjell and leave the Høgevarde track.",
+    "Now the tour starts. The band from 1300 to 1400 m measures 13.9 degrees over 405 metres of ground — half the climbing in under half a kilometre — and between 1322 and 1338 m sits the steepest sustained section, 27.1 degrees.",
+    "The last band, above 1400 m, measures 5.7 degrees over 120 metres of ground, and the cairn stands at 1416 m. The top is a narrow, jagged ridge, and the profile that makes the mountain easy to recognise from below is the same profile that means there is not much room on it."
+   ],
+   "descent": [
+    "The gentle way down is the way you came: east toward Raudmyra, where the flank averages 13.3 degrees over 500 metres. North, west and north-west are gentle too — 10.4, 11.9 and 10.8 degrees on average, with steepest 60-metre windows of 19.6, 18.8 and 16.8 degrees — but they take you away from the car.",
+    "The marked path drops steeply south to Fetjenn at 990 m, and as a ski line that is a different tour from the ascent — but it does not look like it from the top. Point measurements every thirty metres due south give a shoulder first: 1415.6, 1399.2, 1393.9 and 1395.5 m, meaning 28.6 degrees for the first step and then ground that is flat and even rises slightly. Where the shoulder ends, 120 metres out, it falls at 47.2 and 54.5 degrees. On a bearing of 195, which is the direction of Fetjenn, the shoulder is clearer still — the ground rises again at 90 metres — and the break measures 60.0 degrees. These are the gullies randofolk.no means when it calls Ranten «a more alpine top with a steeper descent» than Høgevarde. Do not read the ground above the break as a measure of what lies below it: ski them if this is terrain you ski routinely, and if the forecast and the snow say yes; otherwise go back the way you came."
+   ],
+   "avalanche": [
+    {
+     "title": "The route",
+     "body": "The climb from Raudmyra is an even slope: 13.9 degrees on average from 1300 to 1400 m, and a steepest sustained section of 27.1 degrees between 1322 and 1338 m. The first four kilometres from Tempelseter stay below 6 degrees. The route itself is not the problem on this mountain."
+    },
+    {
+     "title": "The terrain around it",
+     "body": "The south side is, and it is more dangerous than the numbers alone say. From the cairn it falls 40.2 to 54.8 degrees in the 60-metre windows 90 to 170 metres out, on every bearing from 150 to 210 degrees — the whole sector from south-east to south-west. But the first hundred metres are a shoulder at around ten degrees, which on a bearing of 195 even rises again, so the break is not visible from where you stand. The summit ridge is narrow, and cornices build out over that edge in a westerly. North and west are the opposite, 10 to 12 degrees on average."
+    },
+    {
+     "title": "Before you go",
+     "body": "Check today's avalanche forecast for Buskerud sør at varsom.no. Buskerud sør is a B region: it is only forecast at danger levels 4 and 5, so on most winter days there is no assessment to read, and an empty page does not mean a safe mountain. Bring a transceiver, probe and shovel."
+    }
+   ]
+  },
+  "sources": [
+   "https://ut.no/turforslag/1114498/tur-til-ranten-1419-moh-th-kittelsens-soria-moria",
+   "https://ut.no/turforslag/114629/toppturer-til-hgevarde-grafjell-og-ranten-pa-norefjell",
+   "https://www.randofolk.no/artikler/topptur-til-hogevarde-1459-moh-en-kort-kjoretur-fra-oslo/",
+   "https://www.openstreetmap.org/way/494501835"
+  ],
+  "source": "written against corridors.json, the routed line and flank_probe.py"
+ },
+ "store-ble": {
+  "no": {
+   "intro": "670 høydemeter på 6,26 km fra Nordstulvatnet: nesten to kilometer flat skog, en kneik gjennom Langedalen der bandet fra 900 til 1000 moh måler 16,7 grader, og et høyfjellsplatå over. Bratteste sammenhengende parti, 35,2 grader mellom 1290 og 1314 moh, ligger i toppanløpet — og det er den sida beskrivelsene sier du kan måtte klatre opp i lite snø.",
+   "caption": "670 høydemeter og 6,26 km fra Nordstul, med skoggrensa på 914 moh, Sigridsbu på 1175 og bratteste hundremeteren mellom 900 og 1000 moh.",
+   "ascent": [
+    "Start på den store parkeringa ved Nordstulvatnet, 714 moh. Ruta går slakt oppover gjennom åpen skog og krysser elva som renner ut av Sønstevatn, 746 moh; randofolk.no beskriver ei bru der. Bandet fra 700 til 800 moh måler 2,9 grader over 1785 meter grunn — det er den flate innmarsjen, og den er lengre enn den ser ut på kartet.",
+    "Så kommer stigningen. 10,7 grader fra 800 til 900 moh, og 16,7 grader fra 900 til 1000 over bare 360 meter grunn, som er bratteste hundremeteren på turen. Skogen slipper taket ved 914 moh, og først på 1047 moh er du i åpent terreng for godt. Det er her T-ruta deler seg: opp Langedalen, eller utsiktsløypa om Sigridsbu.",
+    "Sigridsbu ligger på 1175 moh, og fra hytta flater det ut. Bandet fra 1100 til 1200 moh måler 3,1 grader over 1890 meter grunn — nesten to kilometer platå med vidåpen utsikt, og linja krysser et tjern på 1162 moh på vegen.",
+    "Toppanløpet er det bratte. Mellom 1290 og 1314 moh måler bratteste sammenhengende parti 35,2 grader, og det er sørsida av toppen randofolk.no beskriver som å «karre deg opp» når snøen er tynn. Alternativet i beskrivelsen er å gå langs fjellet og opp fra nordsida, som måler 5,8 grader i snitt. Varden står på 1343 moh."
+   ],
+   "descent": [
+    "To nedkjøringer er beskrevet, og de er ikke like. Samme veg tilbake går ned Langedalen og videre gjennom skogen mot Nordstulvatnet — randofolk.no skriver «vær oppmerksom på utløpssoner!» om akkurat den dalen, både på veg opp og på veg ned. Den andre går ned nordsida og østover mot Kongtjønn på 1225 moh, med et kort stykke til fots før det åpner seg.",
+    "Sørøstflanken rett under toppen bryter av i 41,5 grader i 60-metersvinduet 60 til 120 meter ut, og vest gir 45,0 grader lenger nede. Nord og nordvest er de slake, 16,0 og 19,6 grader i bratteste vindu. Blefjell er kupert, og kupert betyr her at linjevalget teller mer enn hellinga du står i: det er utløpet under deg som bestemmer."
+   ],
+   "avalanche": [
+    {
+     "title": "Ruta",
+     "body": "Bratteste sammenhengende parti måler 35,2 grader og ligger i toppanløpet, mellom 1290 og 1314 moh. Bratteste hundremeteren er 900 til 1000 moh med 16,7 grader over 360 meter grunn — kneika opp mot skoggrensa. Resten av ruta er slak: 2,9 grader på innmarsjen og 3,1 grader over platået fra 1100 til 1200 moh."
+    },
+    {
+     "title": "Terrenget utenfor",
+     "body": "Langedalen er stedet på dette fjellet der skred faktisk teller, og kilden sier det selv to ganger: utløpssoner, både i oppstigningen og i nedkjøringa. Rutas eget bratteste steg, 35,2 grader, ligger på sørsida 300 meter fra varden; sørøstradialen ved sida av måler 41,5 grader i bratteste 60-metersvindu, 60 til 120 meter ut, og vestflanken 45,0 grader 430 til 490 meter ut. Nordsida er den slake vegen opp og ned. Over tregrensa er berget hardt og jordlaget tynt, og vinden pakker snøen deretter."
+    },
+    {
+     "title": "Før du går",
+     "body": "Sjekk dagens skredvarsel for Telemark sør på varsom.no. Telemark sør er en B-region: den varslet bare ved faregrad 4 og 5, så de fleste vinterdager finnes det ingen vurdering å lese, og en tom side betyr ikke et trygt fjell. Ta med sender/mottaker, søkestang og spade."
+    }
+   ]
+  },
+  "en": {
+   "intro": "670 metres of climbing over 6.26 km from Nordstulvatnet: almost two kilometres of flat forest, a pitch through Langedalen where the band from 900 to 1000 m measures 16.7 degrees, and a high plateau above. The steepest sustained section, 35.2 degrees between 1290 and 1314 m, is in the summit slope — and that is the side the descriptions say you may have to scramble in thin snow.",
+   "caption": "670 metres of climbing and 6.26 km from Nordstul, with the treeline at 914 m, Sigridsbu at 1175 and the steepest hundred-metre band between 900 and 1000 m.",
+   "ascent": [
+    "Start at the large car park by Nordstulvatnet, 714 m. The route climbs gently through open forest and crosses the river running out of Sønstevatn, 746 m; randofolk.no describes a bridge there. The band from 700 to 800 m measures 2.9 degrees over 1785 metres of ground — that is the flat approach, and it is longer than it looks on the map.",
+    "Then the climbing starts. 10.7 degrees from 800 to 900 m, and 16.7 degrees from 900 to 1000 over only 360 metres of ground, which is the steepest hundred-metre band on the tour. The forest lets go at 914 m, and only at 1047 m are you in open terrain for good. This is where the T-marked route splits: up Langedalen, or the viewpoint loop past Sigridsbu.",
+    "Sigridsbu sits at 1175 m, and from the hut the ground flattens. The band from 1100 to 1200 m measures 3.1 degrees over 1890 metres of ground — almost two kilometres of plateau with the view wide open, and the line crosses a tarn at 1162 m on the way.",
+    "The summit slope is the steep part. Between 1290 and 1314 m the steepest sustained section measures 35.2 degrees, and that is the south side randofolk.no describes as scrambling when the snow is thin. The alternative in the description is to go along the mountain and up from the north side, which averages 5.8 degrees. The cairn stands at 1343 m."
+   ],
+   "descent": [
+    "Two descents are described, and they are not alike. The same way back goes down Langedalen and on through the forest toward Nordstulvatnet — randofolk.no writes «watch out for runout zones!» about that valley specifically, both on the way up and on the way down. The other drops the north side and heads east toward Kongtjønn at 1225 m, with a short section on foot before it opens up.",
+    "The south-east flank directly below the summit breaks off at 41.5 degrees in the 60-metre window 60 to 120 metres out, and west gives 45.0 degrees lower down. North and north-west are the gentle ones, 16.0 and 19.6 degrees in the steepest window. Blefjell is broken ground, and here that means the line choice matters more than the slope you are standing on: it is the runout below you that decides."
+   ],
+   "avalanche": [
+    {
+     "title": "The route",
+     "body": "The steepest sustained section measures 35.2 degrees and sits in the summit slope, between 1290 and 1314 m. The steepest hundred-metre band is 900 to 1000 m at 16.7 degrees over 360 metres of ground — the pitch up to the treeline. The rest of the route is gentle: 2.9 degrees on the approach and 3.1 degrees across the plateau from 1100 to 1200 m."
+    },
+    {
+     "title": "The terrain around it",
+     "body": "Langedalen is where avalanches actually count on this mountain, and the source says so itself twice: runout zones, on the way up and on the way down. The route's own steepest step, 35.2 degrees, is on the south side 300 metres from the cairn; the south-east radial beside it measures 41.5 degrees in its steepest 60-metre window, 60 to 120 metres out, and the west flank 45.0 degrees 430 to 490 metres out. The north side is the gentle way up and down. Above the treeline the rock is hard and the soil thin, and the wind packs the snow to match."
+    },
+    {
+     "title": "Before you go",
+     "body": "Check today's avalanche forecast for Telemark sør at varsom.no. Telemark sør is a B region: it is only forecast at danger levels 4 and 5, so on most winter days there is no assessment to read, and an empty page does not mean a safe mountain. Bring a transceiver, probe and shovel."
+    }
+   ]
+  },
+  "sources": [
+   "https://www.randofolk.no/toppturer/store-ble-hvem-skulle-tro-dette-skulle-bli-en-av-favorittene/",
+   "https://ut.no/turforslag/116430/bletoppen-store-ble",
+   "https://www.openstreetmap.org/way/185143342"
+  ],
+  "source": "written against corridors.json, the routed line and flank_probe.py"
+ },
+ "surloytenuten": {
+  "no": {
+   "intro": "456 høydemeter på 6,10 km fra Nordstul, og den slakeste turen i denne delen av Blefjell: bratteste hundremeteren måler 5,3 grader. Ruta går nordover forbi toppen til Vassholet på 993 moh og kommer tilbake sørover langs Surløyterinden — det er derfor de siste kilometerne føles som en rygg og ikke som en bakke.",
+   "caption": "456 høydemeter og 6,10 km fra Nordstul om Sudstul og Vassholet, med skoggrensa på 943 moh og varden på 1097.",
+   "ascent": [
+    "Fra nordenden av parkeringa ved Nordstul, 714 moh, går stien ned til høyre og over Esperåa på bru, 730 moh. Hold til høyre og følg den kloppelagte stien til setervollen Sudstul, 727 moh, der DNT-ruta mellom Selsli og Sigridsbu krysser.",
+    "Rett før siste hytta på vollen tar du av til høyre på umerket, men godt synlig sti. Nå går det nordover og oppover gjennom skog og myr: bandet fra 700 til 800 moh måler 2,7 grader over 1841 meter grunn og 800 til 900 moh 4,2 grader over 1346. Skogen slipper taket ved 943 moh.",
+    "Ved Vassholet, 993 moh, snur ruta. Herfra følger du det ytre høydedraget sørover langs Surløyterinden, 1085 moh, og bratteste sammenhengende parti på hele turen ligger i kneika opp dit: 24,9 grader mellom 994 og 1014 moh.",
+    "Ryggen sørover er nesten flat — bandet fra 1000 til 1100 moh måler 2,8 grader over 1697 meter grunn — og ender ved varden på 1097 moh. I nordvest ser du Tverrgrønuten, Blerinden og Bletoppen."
+   ],
+   "descent": [
+    "Samme vegen tilbake er nordover langs ryggen først, og den er så slak som en rygg blir: 2,2 grader i snitt over 500 meter, med bratteste 60-metersvindu på 5,7 grader. Det er ikke en nedkjøring, det er en gåtur med ski på.",
+    "Den andre returen i beskrivelsen er bratt nedstigning mot sør til DNT-stien, og den er nedkjøringa: sørflanken måler 13,5 grader i snitt over 500 meter med bratteste 60-metersvindu på 29,5 grader, 400 til 460 meter ut. Austsida gir 25,1 grader nærmere toppen. Blefjell har en sårbar villreinstamme, og ut.no ber uttrykkelig om at det tas hensyn — det er en god grunn til å holde seg til de to beskrevne linjene framfor å legge egne spor over platået."
+   ],
+   "avalanche": [
+    {
+     "title": "Ruta",
+     "body": "Slakt terreng nesten hele vegen. Bratteste hundremeteren, 900 til 1000 moh, måler 5,3 grader over 1216 meter grunn, og bratteste sammenhengende parti 24,9 grader mellom 994 og 1014 moh — kneika opp mot Vassholet. Ruta gir tilbake 73 høydemeter underveis, og de ligger i søkket ved Vassholet som beskrivelsen går gjennom."
+    },
+    {
+     "title": "Terrenget utenfor",
+     "body": "Den bratte nedstigningen mot sør er det ene stedet hellinga teller: 29,5 grader i bratteste 60-metersvindu, 400 til 460 meter ut fra varden, og den er samtidig det anbefalte returalternativet. Velg den etter forholdene, ikke etter kartet. Ryggen langs Surløyterinden er avblåst i vind og kan være hard og isete mens sørsida er myk."
+    },
+    {
+     "title": "Før du går",
+     "body": "Sjekk dagens skredvarsel for Telemark sør på varsom.no. Telemark sør er en B-region: den varslet bare ved faregrad 4 og 5, så de fleste vinterdager finnes det ingen vurdering å lese, og en tom side betyr ikke et trygt fjell. Ta med sender/mottaker, søkestang og spade."
+    }
+   ]
+  },
+  "en": {
+   "intro": "456 metres of climbing over 6.10 km from Nordstul, and the gentlest tour in this part of Blefjell: the steepest hundred-metre band measures 5.3 degrees. The route runs north past the summit to Vassholet at 993 m and comes back south along Surløyterinden — which is why the last kilometres feel like a ridge rather than a slope.",
+   "caption": "456 metres of climbing and 6.10 km from Nordstul by Sudstul and Vassholet, with the treeline at 943 m and the cairn at 1097.",
+   "ascent": [
+    "From the north end of the car park at Nordstul, 714 m, the path drops right and crosses Esperåa on a bridge, 730 m. Keep right and follow the boardwalked path to the summer farm at Sudstul, 727 m, where the DNT route between Selsli and Sigridsbu crosses.",
+    "Just before the last hut on the meadow you turn right onto an unmarked but clear path. Now it goes north and up through forest and bog: the band from 700 to 800 m measures 2.7 degrees over 1841 metres of ground and 800 to 900 m 4.2 degrees over 1346. The forest lets go at 943 m.",
+    "At Vassholet, 993 m, the route turns. From here you follow the outer ridge south along Surløyterinden, 1085 m, and the steepest sustained section of the whole tour is in the pitch up to it: 24.9 degrees between 994 and 1014 m.",
+    "The ridge south is almost flat — the band from 1000 to 1100 m measures 2.8 degrees over 1697 metres of ground — and ends at the cairn at 1097 m. To the north-west you see Tverrgrønuten, Blerinden and Bletoppen."
+   ],
+   "descent": [
+    "The same way back means north along the ridge first, and it is as gentle as a ridge gets: 2.2 degrees on average over 500 metres, with a steepest 60-metre window of 5.7 degrees. That is not a descent, it is a walk with skis on.",
+    "The other return in the description is the steep drop south to the DNT path, and that one is the descent: the south flank measures 13.5 degrees on average over 500 metres with a steepest 60-metre window of 29.5 degrees, 400 to 460 metres out. The east side gives 25.1 degrees nearer the top. Blefjell has a vulnerable wild reindeer population and ut.no asks explicitly that it be respected — which is a good reason to hold to the two described lines rather than laying your own track across the plateau."
+   ],
+   "avalanche": [
+    {
+     "title": "The route",
+     "body": "Gentle terrain almost the whole way. The steepest hundred-metre band, 900 to 1000 m, measures 5.3 degrees over 1216 metres of ground, and the steepest sustained section 24.9 degrees between 994 and 1014 m — the pitch up to Vassholet. The route gives back 73 metres of height on the way, and they are in the dip at Vassholet the description goes through."
+    },
+    {
+     "title": "The terrain around it",
+     "body": "The steep descent south is the one place the gradient counts: 29.5 degrees in its steepest 60-metre window, 400 to 460 metres out from the cairn, and it is at the same time the recommended way back. Choose it on the conditions, not on the map. The ridge along Surløyterinden is scoured by wind and can be hard and icy while the south side is soft."
+    },
+    {
+     "title": "Before you go",
+     "body": "Check today's avalanche forecast for Telemark sør at varsom.no. Telemark sør is a B region: it is only forecast at danger levels 4 and 5, so on most winter days there is no assessment to read, and an empty page does not mean a safe mountain. Bring a transceiver, probe and shovel."
+    }
+   ]
+  },
+  "sources": [
+   "https://ut.no/turforslag/116642/topptur-til-surlytenuten-1096-moh-pa-blefjell",
+   "https://www.randofolk.no/toppturer/store-ble-hvem-skulle-tro-dette-skulle-bli-en-av-favorittene/",
+   "https://www.openstreetmap.org/way/185143342"
+  ],
+  "source": "written against corridors.json, the routed line and flank_probe.py"
+ },
+ "gyranfisen": {
+  "no": {
+   "intro": "666 høydemeter på 5,36 km fra Vikerkoia, 661 moh, til Ringerikes høyeste punkt på 1127. Differansen mellom de to tallene er søkket: ruta klatrer opp på Svarttjernskollen, 1054 moh, faller ned mot Fjelldalen og går opp igjen, og gir tilbake 200 høydemeter som kommer igjen som stigning på vegen hjem.",
+   "caption": "666 høydemeter og 5,36 km fra Vikerkoia over Svarttjernskollen, med skoggrensa på 911 moh og 200 høydemeter gitt tilbake i søkket underveis.",
+   "ascent": [
+    "Start på parkeringa ved Vikerkoia på Vikerseterveien, 661 moh — Kartverket klasser punktet som myr, og det er en presis beskrivelse av Vikerfjell. De første høydemeterne er slake, 5,1 grader fra 600 til 700 moh, før skogen tar over ved 698 moh.",
+    "Stigningen opp mot Svarttjernskollen er den bratteste på turen: 15,4 grader fra 700 til 800 moh over 360 meter grunn, med bratteste sammenhengende parti 24,9 grader mellom 767 og 788 moh. Ved 916 moh er du fortsatt i skog, og på 1050 moh er du ute i åpent terreng.",
+    "Svarttjernskollen ligger på 1054 moh, og ut.no oppgir 1054 — det er kontrollen på at du er på rett rygg. Herfra ser du Vikerfjellplatået i sør og Gyranfisen i vest. Så går det ned igjen: linja passerer 1002, 961, 904 og 922 moh, og Kartverket klasser flere av dem som skog. Du er under tregrensa på nytt, midt i turen.",
+    "Venekollen, 982 moh, passeres på høyre hånd, og waypointet i korridoren ligger vest for toppen på 949 moh, der ruta faktisk går. Fra bunnen av søkket stiger det jevnt igjen — 4,1 grader fra 1000 til 1100 moh over 1207 meter grunn, og 8,0 grader det siste bandet — til varden på 1127 moh. Treknatten, 1098 moh, ligger 4,20 km nord-nordvest, på peiling 340."
+   ],
+   "descent": [
+    "Ned samme vegen, sørøstover, og du skal opp igjen underveis. Det er turens egenart: 200 høydemeter gitt tilbake på veg opp betyr 200 høydemeter å klatre på veg ned, og det er verdt å ha spart krefter til dem.",
+    "Fjellet er slakt i alle retninger. Radialmålinger fra varden gir 4,8 til 12,6 grader i snitt over 500 meter, og bratteste 60-metersvindu på hele toppen er 29,9 grader mot nordaust, 410 til 470 meter ut. Vestsida — den mot Vidalen — måler 5,7 grader i snitt helt ut til halvannen kilometer, med bratteste vindu 20,9 grader. Stupene du ser den vegen tilhører Bukollen, Gråfjell og Storrustefjell på andre sida av dalen, ikke fjellet du står på."
+   ],
+   "avalanche": [
+    {
+     "title": "Ruta",
+     "body": "Slakt terreng med én kneik: 15,4 grader fra 700 til 800 moh over 360 meter grunn, og bratteste sammenhengende parti 24,9 grader mellom 767 og 788 moh. De andre bandene måler 2,3 til 10,5 grader i snitt. Skredfaren er lav; det som kan gå galt er lengden, søkket og at siste stykket opp er umerket."
+    },
+    {
+     "title": "Terrenget utenfor",
+     "body": "Ingen retning fra varden måler over 12,6 grader i snitt de første 500 meterne. Ryggen fra Svarttjernskollen er avblåst i vind, og søkket mot Fjelldalen og Steintjern må krysses begge veger. Løypene til Gyranfisen og Treknatten blir kjørt bare når forholdene tillater det og prioriteres i vinter- og påskeferien — utenom det er ruta usporet myr og fjell. Deler av området ligger i Vikerfjell naturreservat."
+    },
+    {
+     "title": "Før du går",
+     "body": "Sjekk dagens skredvarsel for Buskerud sør på varsom.no. Buskerud sør er en B-region: den varslet bare ved faregrad 4 og 5, så de fleste vinterdager finnes det ingen vurdering å lese, og en tom side betyr ikke et trygt fjell. Ta med sender/mottaker, søkestang og spade."
+    }
+   ]
+  },
+  "en": {
+   "intro": "666 metres of climbing over 5.36 km from Vikerkoia, 661 m, to the highest point in Ringerike at 1127 m. The difference between those two figures is the dip: the route climbs onto Svarttjernskollen, 1054 m, drops toward Fjelldalen and climbs again, giving back 200 metres that come back as climbing on the way home.",
+   "caption": "666 metres of climbing and 5.36 km from Vikerkoia over Svarttjernskollen, with the treeline at 911 m and 200 metres of height given back in the dip on the way.",
+   "ascent": [
+    "Start at the car park by Vikerkoia on Vikerseterveien, 661 m — Kartverket classes the point as bog, which is an accurate description of Vikerfjell. The first metres of climbing are gentle, 5.1 degrees from 600 to 700 m, before the forest takes over at 698 m.",
+    "The climb up to Svarttjernskollen is the steepest part of the tour: 15.4 degrees from 700 to 800 m over 360 metres of ground, with a steepest sustained section of 24.9 degrees between 767 and 788 m. At 916 m you are still in forest, and by 1050 m you are out in open terrain.",
+    "Svarttjernskollen sits at 1054 m, and ut.no gives 1054 — that is the check that you are on the right ridge. From here you see the Vikerfjell plateau to the south and Gyranfisen to the west. Then it goes down again: the line passes 1002, 961, 904 and 922 m, and Kartverket classes several of them as forest. You are below the treeline again, in the middle of the tour.",
+    "Venekollen, 982 m, is passed on your right, and the corridor's waypoint sits west of the top at 949 m, where the route actually runs. From the bottom of the dip it climbs evenly again — 4.1 degrees from 1000 to 1100 m over 1207 metres of ground, and 8.0 degrees in the last band — to the cairn at 1127 m. Treknatten, 1098 m, lies 4.20 km north-north-west, on a bearing of 340."
+   ],
+   "descent": [
+    "Back down the same way, south-east, and you will be climbing again on the way. That is the character of this tour: 200 metres given back on the way up means 200 metres to climb on the way down, and it is worth having saved something for them.",
+    "The mountain is gentle in every direction. Radial measurements from the cairn give 4.8 to 12.6 degrees on average over 500 metres, and the steepest 60-metre window on the whole summit is 29.9 degrees to the north-east, 410 to 470 metres out. The west side — the one toward Vidalen — measures 5.7 degrees on average all the way out to a kilometre and a half, with a steepest window of 20.9 degrees. The cliffs you see that way belong to Bukollen, Gråfjell and Storrustefjell on the far side of the valley, not to the mountain you are standing on."
+   ],
+   "avalanche": [
+    {
+     "title": "The route",
+     "body": "Gentle terrain with one pitch: 15.4 degrees from 700 to 800 m over 360 metres of ground, and a steepest sustained section of 24.9 degrees between 767 and 788 m. The other bands measure 2.3 to 10.5 degrees on average. The avalanche hazard is low; what can go wrong is the length, the dip, and that the last stretch to the top is unmarked."
+    },
+    {
+     "title": "The terrain around it",
+     "body": "No direction from the cairn averages more than 12.6 degrees over the first 500 metres. The ridge from Svarttjernskollen is scoured by wind, and the dip toward Fjelldalen and Steintjern has to be crossed both ways. The tracks to Gyranfisen and Treknatten are only groomed when conditions allow and are prioritised in the winter and Easter holidays — outside that the route is untracked bog and fjell. Part of the area lies within the Vikerfjell nature reserve."
+    },
+    {
+     "title": "Before you go",
+     "body": "Check today's avalanche forecast for Buskerud sør at varsom.no. Buskerud sør is a B region: it is only forecast at danger levels 4 and 5, so on most winter days there is no assessment to read, and an empty page does not mean a safe mountain. Bring a transceiver, probe and shovel."
+    }
+   ]
+  },
+  "sources": [
+   "https://ut.no/turforslag/1111944/gyranfisen-toppen-av-ringerike",
+   "http://www.vikersetra.com/Vikersetra/Ski.html",
+   "https://www.vikerfjell.com/vikerfjell-skiloyper-informerer-2/",
+   "https://www.openstreetmap.org/node/1897235677"
+  ],
+  "source": "written against corridors.json, the routed line and flank_probe.py"
+ },
+ "styggemann": {
+  "no": {
+   "intro": "549 høydemeter på 9,61 km fra Ravalsjø til Skrims høyeste topp, og de fleste av dem kommer til slutt: de første seks kilometerne holder under 2 grader i snitt per hundremeter. Toppen er den bratte delen — 15,1 grader fra 800 til 900 moh, og austsida rett under varden faller 48,5 grader.",
+   "caption": "549 høydemeter og 9,61 km fra Ravalsjø om Skrimsetra, Fugleleikskarva og Sørmyrseter, med skoggrensa på 676 moh og all stigningen over 700 moh.",
+   "ascent": [
+    "Start på parkeringa ved Ravalsjø, 483 moh, og følg skilting og merking forbi Ormetangen, 476 moh, og opp lia øst for vatnet. Dette er skogsterreng med oppkjørte løyper, og de er det som gjør turen til en dagstur: bandet fra 400 til 500 moh måler 0,6 grader over 1848 meter grunn.",
+    "Videre forbi Skrimsetra, 591 moh, og over Fugleleikskarva, 635 moh. Bandet fra 500 til 600 moh måler 1,8 grader over 3285 meter grunn og 600 til 700 moh 1,4 grader over 3826 — det er over sju kilometer skog og myr mellom 483 og 676 moh. Kartverket klasser punktet på 611 moh som dyrket mark — det er setervollen på Sørmyrseter, like før hytta.",
+    "Sørmyrseter ligger på 620 moh, og herfra oppgir DNT rundt 240 høydemeter opp til Styggemann. Nå begynner turen å stige på ordentlig: 14,6 grader fra 700 til 800 moh over 404 meter grunn, med bratteste sammenhengende parti 23,2 grader mellom 700 og 719 moh. Skogen slipper taket ved 676 moh, og på 820 moh er du i åpent terreng.",
+    "Det siste bandet, 800 til 900 moh, er det bratteste: 15,1 grader over bare 244 meter grunn. Ut.no kaller oppstigningen «temmelig bratt». Rådet deres om å sette igjen sekken i stikrysset gjelder den andre adkomsten, fra Ivarsbu i øst, der krysset ligger vest på Jotefjell — 1,26 km sørøst for varden. Varden står på 871 moh, og Styggemannshytta ligger rett ved."
+   ],
+   "descent": [
+    "Ned samme vegen, sørover og så vestover langs løypa. Peilinga fra varden til Sørmyrseter er 172 grader, og akkurat den radialen måler 29,1 grader i bratteste 60-metersvindu, 70 til 130 meter ut, med et steg på 35,1 grader mellom 120 og 150 meter. Noen få grader til hver side endrer tallet mye: 165 grader gir 36,8 og 180 gir 25,1. Fallinja til setra er altså ikke det mildeste valget, og driver du vestover fra den blir det brattere, ikke slakere.",
+    "De andre sidene av toppen er ikke det. Aust måler 48,5 grader i 60-metersvinduet 30 til 90 meter under varden, sørøst 45,3 grader 20 til 80 meter ut, og nordaust 43,9 grader. Det er innenfor hundre meter av der du står med kaffekoppen. Sørvest ser slakt ut med 9,0 grader i snitt, men har et 38,6 graders vindu 160 til 220 meter ut — det er den fella på dette fjellet som ikke ser ut som en felle."
+   ],
+   "avalanche": [
+    {
+     "title": "Ruta",
+     "body": "Sju kilometer skogsterreng under 2 grader, og så en kilometer som stiger: 14,6 grader fra 700 til 800 moh og 15,1 fra 800 til 900, med bratteste sammenhengende parti 23,2 grader mellom 700 og 719 moh. Ruta gir tilbake 161 høydemeter over de rullende skogsryggene mellom Ravalsjø og Sørmyrseter."
+    },
+    {
+     "title": "Terrenget utenfor",
+     "body": "Toppen er brattest der ingen har tenkt seg: aust 48,5 grader, sørøst 45,3 og nordaust 43,9 i bratteste 60-metersvindu, alle i vinduer som starter 20 til 40 meter ut fra varden. Ruta kommer fra sørsørøst: peiling 172 mot Sørmyrseter måler 29,1 grader i bratteste 60-metersvindu, og rett sør, 180 grader, 25,1 grader i vinduet 130 til 190 meter ut. Skrim ligger lavt nok til at snøen kommer og går — ut.no fører skisesongen som januar til mars — og de oppkjørte løypene mellom Ravalsjø og Sørmyrseter er det som gjør turen gjennomførbar på en dag."
+    },
+    {
+     "title": "Før du går",
+     "body": "Sjekk dagens skredvarsel for Buskerud sør på varsom.no. Buskerud sør er en B-region: den varslet bare ved faregrad 4 og 5, så de fleste vinterdager finnes det ingen vurdering å lese, og en tom side betyr ikke et trygt fjell. Ta med sender/mottaker, søkestang og spade."
+    }
+   ]
+  },
+  "en": {
+   "intro": "549 metres of climbing over 9.61 km from Ravalsjø to the highest top in Skrim, and most of them come at the end: the first six kilometres stay below 2 degrees on average per hundred metres. The summit is the steep part — 15.1 degrees from 800 to 900 m, and the east side directly below the cairn falls 48.5 degrees.",
+   "caption": "549 metres of climbing and 9.61 km from Ravalsjø by Skrimsetra, Fugleleikskarva and Sørmyrseter, with the treeline at 676 m and all the climbing above 700 m.",
+   "ascent": [
+    "Start at the car park by Ravalsjø, 483 m, and follow the signs and markers past Ormetangen, 476 m, and up the hillside east of the lake. This is forest terrain with groomed tracks, and they are what make the tour a day trip: the band from 400 to 500 m measures 0.6 degrees over 1848 metres of ground.",
+    "On past Skrimsetra, 591 m, and over Fugleleikskarva, 635 m. The band from 500 to 600 m measures 1.8 degrees over 3285 metres of ground and 600 to 700 m 1.4 degrees over 3826 — that is more than seven kilometres of forest and bog between 483 and 676 m. Kartverket classes the point at 611 m as cultivated land — it is Sørmyrseter's own meadow, just before the hut.",
+    "Sørmyrseter sits at 620 m, and from there DNT gives around 240 metres of climbing up to Styggemann. Now the tour starts to rise in earnest: 14.6 degrees from 700 to 800 m over 404 metres of ground, with a steepest sustained section of 23.2 degrees between 700 and 719 m. The forest lets go at 676 m, and by 820 m you are in open terrain.",
+    "The last band, 800 to 900 m, is the steepest: 15.1 degrees over only 244 metres of ground. Ut.no calls the climb «rather steep». Its advice to leave your pack at the trail junction belongs to the other approach, from Ivarsbu in the east, where the junction sits west on Jotefjell — 1.26 km south-east of the cairn. The cairn stands at 871 m, with Styggemannshytta right beside it."
+   ],
+   "descent": [
+    "Back down the same way, south and then west along the track. The bearing from the cairn to Sørmyrseter is 172 degrees, and that radial measures 29.1 degrees in its steepest 60-metre window, 70 to 130 metres out, with a 35.1-degree step between 120 and 150 metres. A few degrees either side changes the figure a lot: 165 degrees gives 36.8 and 180 gives 25.1. The fall line to the hut is not the mildest option, and drifting west of it makes the ground steeper, not gentler.",
+    "The other sides of the summit are not. East measures 48.5 degrees in the 60-metre window 30 to 90 metres below the cairn, south-east 45.3 degrees 20 to 80 metres out, and north-east 43.9 degrees. That is within a hundred metres of where you are standing with your coffee. South-west looks gentle at 9.0 degrees on average, but has a 38.6-degree window 160 to 220 metres out — the trap on this mountain that does not look like one."
+   ],
+   "avalanche": [
+    {
+     "title": "The route",
+     "body": "Seven kilometres of forest terrain below 2 degrees, and then a kilometre that climbs: 14.6 degrees from 700 to 800 m and 15.1 from 800 to 900, with a steepest sustained section of 23.2 degrees between 700 and 719 m. The route gives back 161 metres of height over the rolling forest ridges between Ravalsjø and Sørmyrseter."
+    },
+    {
+     "title": "The terrain around it",
+     "body": "The summit is steepest where nobody is heading: east 48.5 degrees, south-east 45.3 and north-east 43.9 in the steepest 60-metre windows, all in windows starting 20 to 40 metres out from the cairn. The route comes from the south-south-east: bearing 172 toward Sørmyrseter measures 29.1 degrees in its steepest 60-metre window, and due south, 180 degrees, 25.1 degrees in the window 130 to 190 metres out. Skrim sits low enough that the snow comes and goes — ut.no gives the ski season as January to March — and the groomed tracks between Ravalsjø and Sørmyrseter are what make the tour possible in a day."
+    },
+    {
+     "title": "Before you go",
+     "body": "Check today's avalanche forecast for Buskerud sør at varsom.no. Buskerud sør is a B region: it is only forecast at danger levels 4 and 5, so on most winter days there is no assessment to read, and an empty page does not mean a safe mountain. Bring a transceiver, probe and shovel."
+    }
+   ]
+  },
+  "sources": [
+   "https://ut.no/turforslag/115250/skrim-barnevennlig-skitur",
+   "https://ut.no/turforslag/115278/helgetur-pa-skrim",
+   "https://fjellogvidde.dnt.no/ut-pa-tur/skrim/",
+   "https://www.openstreetmap.org/way/612082547"
+  ],
+  "source": "written against corridors.json, the routed line and flank_probe.py"
  }
 }

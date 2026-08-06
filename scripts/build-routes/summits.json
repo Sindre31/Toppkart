@@ -638,5 +638,61 @@
     "summit_dtm": 1199.9,
     "claims": 1200,
     "stored_off_km": 0.02
+  },
+  "hogevarde": {
+    "name": "Høgevard",
+    "lat": 60.2972,
+    "lng": 9.46662,
+    "summit_dtm": 1461.0,
+    "claims": 1459,
+    "stored_off_km": 0.04
+  },
+  "grafjell": {
+    "name": "Gråfjell",
+    "lat": 60.31831,
+    "lng": 9.39572,
+    "summit_dtm": 1466.1,
+    "claims": 1466,
+    "stored_off_km": 0.09
+  },
+  "ranten": {
+    "name": "Ranten",
+    "lat": 60.30259,
+    "lng": 9.41922,
+    "summit_dtm": 1415.6,
+    "claims": 1419,
+    "stored_off_km": 0.04
+  },
+  "store-ble": {
+    "name": "Store Ble",
+    "lat": 59.80825,
+    "lng": 9.15349,
+    "summit_dtm": 1343.0,
+    "claims": 1341,
+    "stored_off_km": 0.08
+  },
+  "surloytenuten": {
+    "name": "Surløytenuten",
+    "lat": 59.79473,
+    "lng": 9.20603,
+    "summit_dtm": 1096.9,
+    "claims": 1096,
+    "stored_off_km": 0.03
+  },
+  "gyranfisen": {
+    "name": "Gyranfisen",
+    "lat": 60.47203,
+    "lng": 9.89027,
+    "summit_dtm": 1127.1,
+    "claims": 1127,
+    "stored_off_km": 0.01
+  },
+  "styggemann": {
+    "name": "Styggmann",
+    "lat": 59.52064,
+    "lng": 9.64361,
+    "summit_dtm": 871.4,
+    "claims": 871,
+    "stored_off_km": 0.02
   }
 }
