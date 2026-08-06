@@ -140,6 +140,26 @@ export const TOUR_TEASER_EN: Record<string, string> = {
     "1120 m of climbing from Skinnviksætra up the Blåbreen glacier: 25 degrees low down and a wide summit plateau on top.",
   sunndalsnipa:
     "990 m of ascent from Grøndalsvatnet up the south-east ridge, then a kilometre of flat plateau to the cairn.",
+  skarsteinfjellet:
+    "1220 m of climbing up an even ridge above Innvikdalen — the whole route in terrain under 30 degrees.",
+  glitregga:
+    "900 m of ascent from the sports ground in Randabygd, south-facing and gentle the whole way.",
+  lodalskapa:
+    "1520 m of ascent from Bødalssætra over Kåpevatnet and the Bohrsbreen glacier to the only 2000-metre peak in Nordfjord.",
+  snonipa:
+    "1490 m of climbing up Haugadalen and through the Haugabreen icefall to the highest mountain in Sunnfjord.",
+  kvamshesten:
+    "840 m of ascent from Rytnavegen past Skaravatnet and Grunnevatnet, finishing up a 36-degree bowl.",
+  molden:
+    "620 m of climbing from Mollandsmarki up the south-west ridge, the Lustrafjord below you the whole way.",
+  storanosi:
+    "740 m of ascent from Ljosno through open birch forest and out onto the plateau above Brandsetdalen.",
+  horndalsnuten:
+    "1120 m of climbing from Skiple through Horndalsbotnen, with the steep pitch off the shoulder at the end.",
+  gygrastolen:
+    "1270 m of ascent from the fjord at Ænes up the ridge above Gygrastølvatnet, facing the Folgefonna icecap.",
+  juklavasstinden:
+    "1340 m of ascent from Myrdalsvatnet: up the ridge, down to Møsetjørna and up the north ridge to a corniced top.",
 
 };
 

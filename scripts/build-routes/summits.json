@@ -542,5 +542,101 @@
     "summit_dtm": 1395.2,
     "claims": 1396,
     "stored_off_km": 0.94
+  },
+  "skarsteinfjellet": {
+    "name": "Skarsteinsfjellet",
+    "lat": 61.83055,
+    "lng": 6.73533,
+    "summit_dtm": 1566.6,
+    "claims": 1566,
+    "stored_off_km": 0.07
+  },
+  "glitregga": {
+    "name": "Glitregga",
+    "lat": 61.90741,
+    "lng": 6.37278,
+    "summit_dtm": 1296.6,
+    "claims": 1297,
+    "stored_off_km": 0.02
+  },
+  "lodalskapa": {
+    "name": "Lodalskåpa",
+    "lat": 61.79051,
+    "lng": 7.20475,
+    "summit_dtm": 2082.5,
+    "claims": 2082,
+    "stored_off_km": 0.01
+  },
+  "snonipa": {
+    "name": "Snønipa",
+    "lat": 61.67808,
+    "lng": 6.69055,
+    "summit_dtm": 1826.6,
+    "claims": 1827,
+    "stored_off_km": 0.0
+  },
+  "kvamshesten": {
+    "name": "Kvamshesten",
+    "lat": 61.40141,
+    "lng": 5.62732,
+    "summit_dtm": 1209.2,
+    "claims": 1209,
+    "stored_off_km": 0.02
+  },
+  "molden": {
+    "name": "Molden",
+    "lat": 61.34417,
+    "lng": 7.31973,
+    "summit_dtm": 1120.3,
+    "claims": 1116,
+    "stored_off_km": 0.18
+  },
+  "togga": {
+    "name": "Togga",
+    "lat": 61.33446,
+    "lng": 6.88793,
+    "summit_dtm": 1235.5,
+    "claims": 1205,
+    "stored_off_km": 0.28
+  },
+  "storanosi": {
+    "name": "Storanosi",
+    "lat": 60.7663,
+    "lng": 6.62341,
+    "summit_dtm": 1205.0,
+    "claims": 1205,
+    "stored_off_km": 0.04
+  },
+  "horndalsnuten": {
+    "name": "Horndalsnuten",
+    "lat": 60.64218,
+    "lng": 6.67655,
+    "summit_dtm": 1461.5,
+    "claims": 1461,
+    "stored_off_km": 0.07
+  },
+  "gygrastolen": {
+    "name": "Gygrastolen",
+    "lat": 60.05949,
+    "lng": 6.16031,
+    "summit_dtm": 1346.8,
+    "claims": 1339,
+    "stored_off_km": 0.08
+  },
+  "juklavasstinden": {
+    "name": "Juklavasstinden",
+    "lat": 60.00853,
+    "lng": 6.13296,
+    "summit_dtm": 1361.2,
+    "claims": 1360,
+    "stored_off_km": 0.01
+  },
+  "englafjell": {
+    "name": "Englafjell",
+    "lat": 59.89637,
+    "lng": 5.87533,
+    "summit_dtm": 1199.9,
+    "claims": 1200,
+    "stored_off_km": 0.02
   }
 }

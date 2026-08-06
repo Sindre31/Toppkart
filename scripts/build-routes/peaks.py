@@ -102,4 +102,21 @@ PEAKS = [
     ("kvitegga", "Kvitegga", ["Volda"], 1717, 62.09473, 6.70223),
     ("eidskyrkja", "Eidskyrkja", ["Volda"], 1482, 62.01697, 6.26245),
     ("sunndalsnipa", "Sunndalsnipa", ["Volda"], 1396, 62.00999, 6.31721),
+    #
+    # — the Vestland round, on the same four conditions as the Sunnmøre one.
+    #   Fri Flyt indexes the county by district rather than by fylke, so the
+    #   research came from five of them: skiturer-stryn, -sunnfjord, -sogn,
+    #   -voss and -rosendal. —
+    ("skarsteinfjellet", "Skarsteinsfjellet", ["Stryn"], 1566, 61.83096, 6.73422),
+    ("glitregga", "Glitregga", ["Stryn"], 1297, 61.90726, 6.37298),
+    ("lodalskapa", "Lodalskåpa", ["Stryn", "Luster"], 2082, 61.79061, 7.20465),
+    ("snonipa", "Snønipa", ["Sunnfjord", "Gloppen"], 1827, 61.67808, 6.69054),
+    ("kvamshesten", "Kvamshesten", ["Sunnfjord", "Askvoll"], 1209, 61.40128, 5.62742),
+    ("molden", "Molden", ["Luster"], 1116, 61.34560, 7.31798),
+    ("togga", "Togga", ["Sogndal"], 1205, 61.33508, 6.89296),
+    ("storanosi", "Storanosi", ["Voss"], 1205, 60.76643, 6.62281),
+    ("horndalsnuten", "Horndalsnuten", ["Voss"], 1461, 60.64227, 6.67533),
+    ("gygrastolen", "Gygrastolen", ["Kvinnherad"], 1339, 60.05918, 6.16160),
+    ("juklavasstinden", "Juklavasstinden", ["Kvinnherad"], 1360, 60.00844, 6.13299),
+    ("englafjell", "Englafjell", ["Kvinnherad"], 1200, 59.89635, 5.87561),
 ]

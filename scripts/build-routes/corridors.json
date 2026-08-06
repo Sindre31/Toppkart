@@ -2715,5 +2715,325 @@
     "notes": "Skavlar langs toppryggen — det dannar seg normalt ei stor skavl mellom førtoppen og hovudtoppen, og ein skal køyre ned i sida når ein rundar henne. Skredterreng i sida ned frå hovudtoppen og ikkje minst i sjølve Vassdalen."
    }
   ]
+ },
+ "lodalskapa": {
+  "routes": [
+   {
+    "id": "normalruta",
+    "name": "Normalruta frå Bødalssætra over Kåpevatnet og Bohrsbreen",
+    "description": "Frå Bødalssætra går ein austover langs nordaustsida av dalen mot osen av Sætrevatnet og følgjer elva vidare innover til Kåpevatnet. Derfrå svingar ein sørover og opp Brattebakkane inn på Bohrsbreen, som ein følgjer opp mot ryggen. Ein traverserer under Veslekåpa og går siste stykket opp til toppen. Breutstyr, stegjern og isøks høyrer med.",
+    "trailhead": {
+     "name": "Bødalssætra",
+     "lat": 61.80976,
+     "lng": 7.07596,
+     "elevation_m": 584.2,
+     "fullName": "Bødalssætra"
+    },
+    "waypoints": [
+     {
+      "name": "Sætrevatnet",
+      "lat": 61.79603,
+      "lng": 7.10282,
+      "elevation_m": 606.0
+     },
+     {
+      "name": "Kåpevatnet",
+      "lat": 61.7994,
+      "lng": 7.17403,
+      "elevation_m": 1211.0
+     },
+     {
+      "name": "Bohrsbreen under Veslekåpa",
+      "lat": 61.79318,
+      "lng": 7.19553,
+      "elevation_m": 1569.45
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Bresprekker, og svært djupe sprekker på Bohrsbreen — tau og breutstyr er ikkje valfritt. Brattebakkane er skredterreng. Stegjern og isøks når snøen er hard."
+   }
+  ]
+ },
+ "skarsteinfjellet": {
+  "routes": [
+   {
+    "id": "normalruta",
+    "name": "Normalruta frå Drageset over Remestøylen og Hestehytta",
+    "description": "Frå grinda på Dragesetvegen innerst i Innvikdalen følgjer ein traktorvegen opp til Remestøylen. Derfrå held ein vest-sørvestover opp den tydelege ryggen med Innvikdalen på høgre side, forbi Hestehytta på 900 moh, og vidare langs ryggen heilt til toppen. Same veg ned — det finst fleire skredutsette nedkøyringsalternativ her, så følg ruta og ikkje andre sine spor.",
+    "trailhead": {
+     "name": "Dragesetvegen i Innvikdalen",
+     "lat": 61.83421,
+     "lng": 6.64306,
+     "elevation_m": 349.1,
+     "fullName": "Dragesetvegen i Innvikdalen"
+    },
+    "waypoints": [
+     {
+      "name": "Remestøylen",
+      "lat": 61.84241,
+      "lng": 6.6605,
+      "elevation_m": 596.43
+     },
+     {
+      "name": "Hestehytta",
+      "lat": 61.83633,
+      "lng": 6.67368,
+      "elevation_m": 864.47
+     },
+     {
+      "name": "Ryggen, 1275",
+      "lat": 61.83344,
+      "lng": 6.70451,
+      "elevation_m": 1275.35
+     }
+    ],
+    "source": "researched, verified (corrected), no local audit",
+    "notes": "Ruta sjølv held seg under 30 grader, men fjellet har fleire skredutsette nedkøyringsalternativ til sidene. Følg oppstigningsryggen ned att."
+   }
+  ]
+ },
+ "glitregga": {
+  "routes": [
+   {
+    "id": "normalruta",
+    "name": "Normalruta frå Randabygd idrettsanlegg",
+    "description": "Frå parkeringa ved idrettsanlegget i Randabygd følgjer ein grusvegen nordaustover, og svingar så nordover og nordvestover på venstre (vestre) side av Djupegrova. Etter eit brattare parti flatar det ut, og ein held nordaustover mot eit markert skar. Frå skaret tek ein austover til toppen av Glitregga. Same veg ned.",
+    "trailhead": {
+     "name": "Randabygd idrettsanlegg",
+     "lat": 61.87732,
+     "lng": 6.32777,
+     "elevation_m": 397.91,
+     "fullName": "Randabygd idrettsanlegg"
+    },
+    "waypoints": [
+     {
+      "name": "Djupegrova",
+      "lat": 61.88348,
+      "lng": 6.34632,
+      "elevation_m": 487.53
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Bratt terreng rett under toppen av Glitregga — hald deg til den skildra linja over skaret. Elles er ruta slak og oversiktleg."
+   }
+  ]
+ },
+ "snonipa": {
+  "routes": [
+   {
+    "id": "normalruta",
+    "name": "Normalruta frå Klakegg opp Haugadalen og Haugabreen",
+    "description": "Frå parkeringa ved campingplassen i Stardalen følgjer ein skogsvegen innover Haugadalen til Haugastøylen. Vidare går ein opp dalen til brefallet, og opp midt i fallet på Haugabreen. Oppe på platået traverserer ein nordvestover og kjem opp på toppen frå nordvest. Same veg ned.",
+    "trailhead": {
+     "name": "Stardalen ved Høyseth",
+     "lat": 61.61847,
+     "lng": 6.7142,
+     "elevation_m": 351.28,
+     "fullName": "Stardalen ved Høyseth"
+    },
+    "waypoints": [
+     {
+      "name": "Haugastøylen",
+      "lat": 61.63412,
+      "lng": 6.73025,
+      "elevation_m": 658.54
+     },
+     {
+      "name": "Haugabreen",
+      "lat": 61.65853,
+      "lng": 6.72291,
+      "elevation_m": 1099.94
+     }
+    ],
+    "source": "researched, verified (corrected), no local audit",
+    "notes": "Store sprekker på Haugabreen. Det flate partiet langs skogsvegen mot Haugastøylen er særleg utsett for naturleg utløyste skred når snødekket blir varma opp. Vindavblåst hardt føre kring 1687 moh."
+   }
+  ]
+ },
+ "kvamshesten": {
+  "routes": [
+   {
+    "id": "normalruta",
+    "name": "Normalruta frå Rytnane over Kårstadstølen og Grunnevatnet",
+    "description": "Frå Kårstad og Rytnane følgjer ein skogsvegen vidare oppover mot Kårstadstølen. Så held ein aust mot Rabbane, og deretter i nordleg retning mot skaret aust for Skardavatnet på 715 moh. Ruta går på nordsida av Skardavatnet i vestleg retning og rundar Grunnevatnet. Etter å ha teke litt høgde vest for Grunnevatnet følgjer ein den markerte skålformasjonen sørover heilt opp til toppen.",
+    "trailhead": {
+     "name": "Rytnavegen ved Rytnane",
+     "lat": 61.39404,
+     "lng": 5.64034,
+     "elevation_m": 404.5,
+     "fullName": "Rytnavegen ved Rytnane"
+    },
+    "waypoints": [
+     {
+      "name": "Kårstadstølen",
+      "lat": 61.39691,
+      "lng": 5.6468,
+      "elevation_m": 494.89
+     },
+     {
+      "name": "Rabbane",
+      "lat": 61.39856,
+      "lng": 5.65369,
+      "elevation_m": 511.56
+     },
+     {
+      "name": "Skaravatnet",
+      "lat": 61.40488,
+      "lng": 5.64633,
+      "elevation_m": 715.0
+     },
+     {
+      "name": "Grunnevatnet",
+      "lat": 61.40657,
+      "lng": 5.62898,
+      "elevation_m": 785.0
+     }
+    ],
+    "source": "researched, verified (corrected), no local audit",
+    "notes": "Skålformasjonen sør for Grunnevatnet er skredterreng og er den bratte delen av turen. Hardt føre gjer siste stigninga til ei klyving — isøks og stegjern."
+   }
+  ]
+ },
+ "molden": {
+  "routes": [
+   {
+    "id": "normalruta",
+    "name": "Normalruta frå Mollandsmarki opp sørvestryggen",
+    "description": "Frå parkeringa på Mollandsmarki følgjer ein vegen mot Garden og vidare opp sommarstien gjennom skogen. Over tregrensa tek ein inn på sørvestryggen, som fører heile vegen til toppen. Det brattaste ligg mellom 850 og 1000 moh. Same veg ned; på stabile dagar kan ein òg køyre rett vestover frå toppen, men då må ein passe på å ikkje hamne i den tette skogen.",
+    "trailhead": {
+     "name": "Mollandsmarki",
+     "lat": 61.33308,
+     "lng": 7.2718,
+     "elevation_m": 501.42,
+     "fullName": "Mollandsmarki"
+    },
+    "waypoints": [
+     {
+      "name": "Over tregrensa, 816",
+      "lat": 61.33863,
+      "lng": 7.29576,
+      "elevation_m": 816.42
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Eit par brattare punkt opp den siste ryggen, elles slakt. Køyrer ein rett vestover frå toppen i staden for å følgje ryggen, endar ein i tett skog."
+   }
+  ]
+ },
+ "storanosi": {
+  "routes": [
+   {
+    "id": "normalruta",
+    "name": "Normalruta frå Ljosno over Eggjane",
+    "description": "Frå Ljosno i Brandsetdalen følgjer ein bjørkeskogen opp mot nordsida av Middagshovden. Før toppen tek ein av mot Eggjane og følgjer platået halvanna kilometer vestover mot Storanosi. Same veg ned.",
+    "trailhead": {
+     "name": "Ljosno i Brandsetdalen",
+     "lat": 60.78855,
+     "lng": 6.68446,
+     "elevation_m": 509.54,
+     "fullName": "Ljosno i Brandsetdalen"
+    },
+    "waypoints": [
+     {
+      "name": "Eggjane",
+      "lat": 60.77113,
+      "lng": 6.64496,
+      "elevation_m": 1178.84
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Den austlege renna frå Storanosi er 30 grader bratt — vurder skredfaren nøye om du vil køyre der. Sjølve ruta over Eggjane er slak."
+   }
+  ]
+ },
+ "horndalsnuten": {
+  "routes": [
+   {
+    "id": "normalruta",
+    "name": "Normalruta frå Skiple gjennom Horndalsbotnen",
+    "description": "Frå brua over Raundalselvi ved Skiple følgjer ein traktorvegen forbi Horndalsbruni og inn i Horndalsbotnen. Frå botnen stig ein opp til skuldra på om lag 1300 moh, og går derfrå den siste kneika opp til toppen. Same veg ned.",
+    "trailhead": {
+     "name": "Skiple i Raundalen",
+     "lat": 60.67739,
+     "lng": 6.69027,
+     "elevation_m": 397.63,
+     "fullName": "Skiple i Raundalen"
+    },
+    "waypoints": [
+     {
+      "name": "Horndalsbotnen",
+      "lat": 60.65143,
+      "lng": 6.70104,
+      "elevation_m": 756.53
+     },
+     {
+      "name": "Skuldra, 1153",
+      "lat": 60.64449,
+      "lng": 6.68267,
+      "elevation_m": 1153.25
+     }
+    ],
+    "source": "researched, verified (corrected), no local audit",
+    "notes": "Skredbaner i den øvre lia mot Bjørnsetstølen — hald deg i skogen der nede. Siste kneika opp mot toppen er brattaste partiet på ruta."
+   }
+  ]
+ },
+ "gygrastolen": {
+  "routes": [
+   {
+    "id": "normalruta",
+    "name": "Normalruta frå Ænes over Gygrastølvatnet",
+    "description": "Frå Ænes følgjer ein anleggsvegen opp frå kyrkja og stien vidare til Gygrastølvatnet. Frå vatnet går ein opp på sjølve ryggen og følgjer han heile vegen til toppen — det er den tryggaste linja. Nedkøyringa følgjer normalt same ryggen; nordvestflanken er eit brattare alternativ i skredterreng.",
+    "trailhead": {
+     "name": "Ænes",
+     "lat": 60.08439,
+     "lng": 6.11828,
+     "elevation_m": 90.2,
+     "fullName": "Ænes"
+    },
+    "waypoints": [
+     {
+      "name": "Gygrastølvatnet",
+      "lat": 60.08086,
+      "lng": 6.15529,
+      "elevation_m": 492.0
+     }
+    ],
+    "source": "researched, verified (corrected), no local audit",
+    "notes": "Nordvestflanken er skredutsett. Mellom dei to toppane krevst lett klatring og sikringsutstyr — normalruta går berre til hovudtoppen. Tøff skogskøyring nedst att til bilen."
+   }
+  ]
+ },
+ "juklavasstinden": {
+  "routes": [
+   {
+    "id": "normalruta",
+    "name": "Normalruta frå Myrdalsvatnet opp nordryggen",
+    "description": "Frå Myrdalsvatnet følgjer ein vegen litt tilbake til ein traktorveg, og følgjer denne til Nipelva kjem til syne. Så følgjer ein elva oppover til ryggen over Omnetjørnene. Derfrå held ein austover mot Møsetjørnene med Juklavasstinden framfor seg, og går opp den nordlege ryggen til topps — det er den tryggaste linja. Same veg ned.",
+    "trailhead": {
+     "name": "Myrdalsvatnet",
+     "lat": 60.023,
+     "lng": 6.06094,
+     "elevation_m": 366.76,
+     "fullName": "Myrdalsvatnet"
+    },
+    "waypoints": [
+     {
+      "name": "Ryggen over Omnetjørnene, 1033",
+      "lat": 60.0191,
+      "lng": 6.08444,
+      "elevation_m": 1033.25
+     },
+     {
+      "name": "Møsetjørna",
+      "lat": 60.00942,
+      "lng": 6.11401,
+      "elevation_m": 755.32
+     }
+    ],
+    "source": "researched, verified (corrected), no local audit",
+    "notes": "Toppskavl. Turen kan krevje stegjern og isøks. Den vestlege renna ned er 40 grader og eit eige val, ikkje normalruta."
+   }
+  ]
  }
 }
