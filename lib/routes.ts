@@ -139,7 +139,7 @@ export const ROUTES: Record<string, readonly TourRoute[]> = {
     {
       id: "normalruta",
       name: "Salen-ruta fra Tromsdalen",
-      trailhead: "skytebanen",
+      trailhead: "Tromsdalen skytebane",
       distanceM: 8239,
       gainM: 1209,
       line: [
@@ -269,7 +269,7 @@ export const ROUTES: Record<string, readonly TourRoute[]> = {
     {
       id: "normalruta",
       name: "Normalruta fra Lyngseidet",
-      trailhead: "Lyngseidet",
+      trailhead: "Eidebakken ved Lyngseidet",
       distanceM: 5470,
       gainM: 1008,
       line: [
@@ -384,7 +384,7 @@ export const ROUTES: Record<string, readonly TourRoute[]> = {
     {
       id: "normalruta",
       name: "Normalruta fra Lyngseidet",
-      trailhead: "Lyngseidet",
+      trailhead: "Eidebakken ved Lyngseidet",
       distanceM: 5547,
       gainM: 1252,
       line: [
@@ -3708,7 +3708,7 @@ export const ROUTES: Record<string, readonly TourRoute[]> = {
     {
       id: "tempelseter",
       name: "Fra Tempelseter over Istjenn og Donkelitjenn",
-      trailhead: "Tempelsetra kafè",
+      trailhead: "Tempelseter",
       distanceM: 7845,
       gainM: 581,
       line: [

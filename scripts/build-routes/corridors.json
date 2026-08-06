@@ -6,7 +6,7 @@
     "name": "Salen-ruta fra Tromsdalen",
     "description": "Salen-ruta fra Tromsdalen via sørryggen",
     "trailhead": {
-     "name": "skytebanen",
+     "name": "Tromsdalen skytebane",
      "lat": 69.63243,
      "lng": 19.03232,
      "elevation_m": 37.54,
@@ -214,7 +214,7 @@
     "name": "Normalruta fra Lyngseidet",
     "description": "Normalruta fra Lyngseidet via Rørneshytta",
     "trailhead": {
-     "name": "Lyngseidet",
+     "name": "Eidebakken ved Lyngseidet",
      "lat": 69.57474,
      "lng": 20.19132,
      "elevation_m": 62.5,
@@ -272,7 +272,7 @@
     "name": "Normalruta fra Lyngseidet",
     "description": "Normalruta fra Lyngseidet, nordøstryggen",
     "trailhead": {
-     "name": "Lyngseidet",
+     "name": "Eidebakken ved Lyngseidet",
      "lat": 69.57474,
      "lng": 20.19132,
      "elevation_m": 62.5,
@@ -3109,7 +3109,7 @@
     "name": "Fra Tempelseter over Istjenn og Donkelitjenn",
     "description": "Fra parkeringa bak Tempelsetra kafè (910 moh) følger du løypa mot Istjenn (950 moh) og videre nordover forbi Vesletjenn (1095 moh). Løypa fortsetter mot Fiskeløysingen med Drotninggutunatten og Steinveggvatnet i vest, og når Donkelitjenn på 1156 moh er turen halvgått. Herfra er det 313 høydemeter igjen. Rundt 1,5 km nord for Donkelitjenn deler løypa seg, og den som dreier østover går opp på Gråfjell — Norefjells høyeste topp på 1466 moh, 4,5 km nordvest for Høgevarde.",
     "trailhead": {
-     "name": "Tempelsetra kafè",
+     "name": "Tempelseter",
      "lat": 60.27,
      "lng": 9.40643,
      "elevation_m": 910.0,
