@@ -457,12 +457,39 @@ def check_trail(slug, rec, text, on_water, trail_els):
         ]
     if worst[0] < TRAIL_REPORT_M:
         return []
-    return [
+    verdict = (
         f"says «{quoted}» and a mapped trail runs the whole way (trailhead {d_start:.0f} m, "
         f"summit {d_top:.0f} m), but the line strays {worst[0]:.0f} m from it "
         f"({worst[1]:.0f} m out, {worst[2]} m), with {off:.0f} m of {cum:.0f} beyond "
         f"{TRAIL_REPORT_M:.0f} m"
-    ]
+    )
+    # The water check softens to a note once the guide names the height it
+    # crosses; the trail check had no equivalent, so a tour whose copy states the
+    # gap in metres stayed a finding for ever and there was no way to close it
+    # except by moving a line that was not wrong. Høgevarde is the case: its
+    # groomed track is a network of unnamed nordic loops, and a loop is not
+    # obliged to reach a summit, so the line leaves it correctly. Saying the
+    # number out loud is the fix, and a guide that says it should read as one.
+    if states_gap(text, worst[0]):
+        return [f"note: {verdict} — and the guide says so"]
+    return [verdict]
+
+
+def states_gap(text, worst_m, tol=15.0):
+    """Does the copy quote this gap, in metres, within `tol`?
+
+    Deliberately narrow: a bare number anywhere in the prose is not a
+    disclosure, so the figure has to carry a metre unit like every other
+    measurement in these guides.
+    """
+    for m in re.finditer(r"(\d[\d\s.,]*)\s*(?:m\b|meter|metre|metres)", text):
+        try:
+            v = float(m.group(1).replace(" ", "").replace("\u00a0", "").replace(",", "."))
+        except ValueError:
+            continue
+        if abs(v - worst_m) <= tol:
+            return True
+    return False
 
 
 def check_side(slug, rec, text, stream_els):

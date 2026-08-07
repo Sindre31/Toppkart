@@ -1715,6 +1715,70 @@ Sæbyggjenuten's «Langemyr» waypoint, which looked wrong because a name search
 returns a different Bykle Langemyr 4.6 km away on the wrong side of the car park,
 is right: a point search on the waypoint itself returns Langemyr at 0 m.
 
+## The eleven, worked
+
+The list `check_ground.py`'s first full run left behind. Overpass was throttling
+badly on the day, so the crossings were re-measured against **Kartverket's
+terrain class** instead — walk perpendicular to the line from the crossing until
+the class stops being water, which gives the offshore distance from the same
+source the rest of the pipeline uses, and gives `InnsjøRegulert` for free.
+
+**Two were never water.** Glittertinden's 45 m «on water» at 1335 m sits in a
+228 m flat run whose midpoint is terrain class `Myr`, with firm ground 10 m to
+either side — bog in Veodalen. Two of Rondslottet's three flat runs at 1167 m
+(63 and 135 m) are `ÅpentOmråde`. The flat-run heuristic finds candidates; only
+the class settles them.
+
+**Two were rerouted, and both are the Fanaråken shape** — prose said land, the
+line went on the ice:
+
+  Rondslottet's guide opens with «Hold deg på land rundt vika ved Lonin i sørenden
+  av Rondvatnet i stedet for å ta snarveien over isen; dette er utløpsenden, og
+  der er isen tynnest». The line ran 90 m on that ice, up to 50 m offshore, 60 to
+  128 m from the SSR point for Lonin. A waypoint on land west of the bay
+  (61.8782/9.7950, `ÅpentOmråde`) and moving the Rondvassbu point from
+  61.879/9.798 onto the hut itself (61.87886/9.79645) fixes it. The route now has
+  no vertex on water at all: 12.34 km, +1283, −187, steepest step 34.9°.
+
+  Breitinden ran 315 m straight across Breitindvatnet at 474 m, up to 40 m
+  offshore, beneath the flank its own guide calls «terrengfelle under hele
+  henget» — and the guide also says there is no published ski description for the
+  mountain, so that line was the terrain model's own invention. The lake is narrow
+  there: land lies 80 m north. Two north-shore waypoints (69.4527/17.6255 at 467 m
+  and 69.4519/17.6324 at 500 m). No vertex on water: 4.24 km, +1049, −72, 39.4°,
+  and the card went 1030 → 1050 m.
+
+**Seven became prose.** Høgevardtjenn at 1378 m on both Høgevarde routes,
+Omnatjørnane at 1066 m on Juklavasstinden, two unnamed tarns at 1379 and 1377 m
+on Rasletinden, a second tarn at 1177 m on Store Blæ, one at 1068 m on
+Surløytenuten and one at 946 m on Vassdalstinden. All `Innsjø`, none regulated,
+all on lines the sources themselves follow. Each is now named with its height,
+its length and how far offshore the line gets. Juklavasstinden's also fixed a
+name: the register spells them **Omnatjørnane**, not Omnetjørnene, and the
+guide's «ryggen over Omnetjørnene» was hiding a 269 m crossing behind an
+ambiguous preposition.
+
+### The finding this pass created
+
+Running the trail check with a network — the first run had done it offline —
+surfaced Høgevarde/tempelseter: says «oppkjørt», and the line strays up to 573 m
+from the mapped track, with 1081 m of 4782 beyond 250 m. It was **not** re-pinned,
+and that is the interesting part. Storhornet was re-pinned because the mapped
+thing was a named `piste:type=skitour` chain running to a cairn through a cabin
+field — an actual route. What is mapped around Høgevarde is unnamed
+`piste:type=nordic` loops (way 399105957, `piste:grooming=classic`, and way
+444823421) and a `highway=path`. A cross-country loop is not obliged to reach a
+summit, so a summit line leaving it is correct behaviour, not a defect. The
+guide says the number out loud instead.
+
+That left the check unable to ever return clean on a tour where nothing was
+wrong. `check_water` has always softened to a note once the guide names the
+height it crosses; `check_trail` had no equivalent, so it now does the same:
+`states_gap()` looks for the worst-gap figure in the copy, within 15 m, and it
+must carry a metre unit — a bare number anywhere in the prose is not a
+disclosure. Seven cases cover the shapes that must not match: a degrees figure,
+a bare number, a *moh* height, and a wrong value behind a thousands separator.
+
 ## Network
 
 Everything is public and unauthenticated:

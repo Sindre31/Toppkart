@@ -198,8 +198,20 @@ content and data quality that has to be settled before the site is sold to anyon
   natural waters, 1541 of 9608 metres, none of them named in the guide and none regulated — a
   groomed track over a narrow forest lake is ordinary winter travel, so the missing sentence was
   the defect, and Folarskardnuten the fourth on the same reasoning — four crossings, 495 of
-  12 610 metres, on the marked DNT winter route. The remaining eleven are a work list in
-  `scripts/build-routes/check_ground_run.txt`.
+  12 610 metres, on the marked DNT winter route. The remaining eleven have now been worked.
+  **Two dissolved**: Glittertinden's «water» at 1335 m is terrain class `Myr`, and two of
+  Rondslottet's three flat runs at 1167 m are open ground. **Two were rerouted**, both because the
+  line went where the guide told the reader not to go — Rondslottet ran 90 m on the ice 60 m from
+  Lonin under its own «Hold deg på land rundt vika ved Lonin ... i stedet for å ta snarveien over
+  isen», and Breitinden ran 315 m straight across Breitindvatnet under the flank its guide calls a
+  *terrengfelle*, with no published ski description sending it there. Neither has a vertex on water
+  any more. **Seven became prose**: natural tarns on lines the sources themselves follow, now named
+  with height, length and offshore distance. Working them turned up one new finding — Høgevarde
+  strays up to 573 m from the track it calls «oppkjørt» — which is *not* a defect in the line: what
+  is mapped there is unnamed `piste:type=nordic` loops, and a cross-country loop need not reach a
+  summit. The guide states the number instead, and `check_trail` learned to soften to a note when
+  the copy states the gap, which is what the water check has always done. The record of all eleven
+  is in `scripts/build-routes/check_ground_run.txt`. **No check_ground finding is outstanding.**
 - **Three peaks were added after the Trondheim round: Kjerag, Møysalen and Sæbyggjenuten.**
   They bring three new regions with them — Rogaland, Vesterålen and Setesdal — and they were
   routed, carded and written the same way as the rest, with `check_ground.py` run before the prose
@@ -230,6 +242,13 @@ content and data quality that has to be settled before the site is sold to anyon
   corrupted Grafjell's «på 950 moh går ruta ut på Istjenn», which is a lake elevation that happened
   to equal the old treeline. The replacement is scoped to the phrasings that actually *state* a
   treeline, and every substitution is checked against the stored old value before it is made.
+- **`emit_new_tours.py` must be given slugs, never run bare.** It rebuilds the `TOURS` rows from
+  `new_tourmeta.json`, which is the *research* snapshot — so a bare run reverts every teaser and
+  vertical corrected after the research, silently. Running it once during this round put back ten
+  stale teasers and two card verticals (Hamperøkken 1400 → 1390, Jakta 1560 → 1570). `check_tours.py`
+  caught it and it was reverted. The four teasers in `new_tourmeta.json` that were genuinely stale —
+  Breitinden, Kråkfjellet, Rensfjellet and Folarskardnuten, all disagreeing with their cards since
+  the reroutes of earlier rounds — are fixed at source so the next run agrees.
 - **The guide text has not been read by anyone who has skied these tours.** Every number in
   `lib/guides.ts` traces to Kartverket's terrain model, the route research or a cited source, and
   every number is matched mechanically by `check_guides.py` — which reads nynorsk verticals as well

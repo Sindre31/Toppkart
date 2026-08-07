@@ -1222,10 +1222,16 @@
       "elevation_m": 1171.73
      },
      {
-      "name": "Rondvassbu, inn på bratta mot nordøst",
-      "lat": 61.879,
-      "lng": 9.798,
-      "elevation_m": 1213.62
+      "name": "Vestsida av vika ved Lonin",
+      "lat": 61.8782,
+      "lng": 9.795,
+      "elevation_m": 1166.83
+     },
+     {
+      "name": "Rondvassbu",
+      "lat": 61.87886,
+      "lng": 9.79645,
+      "elevation_m": 1169.19
      },
      {
       "name": "Stikrysset over Rondvassbu, ca 1440 m",
@@ -1709,6 +1715,18 @@
       "lat": 69.4525,
       "lng": 17.62,
       "elevation_m": 399.51
+     },
+     {
+      "name": "Nordvestenden av Breitindvatnet",
+      "lat": 69.4527,
+      "lng": 17.6255,
+      "elevation_m": 467.0
+     },
+     {
+      "name": "Nordbredden av Breitindvatnet",
+      "lat": 69.4519,
+      "lng": 17.6324,
+      "elevation_m": 499.8
      },
      {
       "name": "Nordøstsida av Breitindvatnet",

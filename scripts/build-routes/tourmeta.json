@@ -91,7 +91,7 @@
   "name": "Breitinden",
   "region": "Senja",
   "summitM": 1007,
-  "verticalM": 1030,
+  "verticalM": 1050,
   "duration": "4–6 t",
   "grade": 4,
   "aspect": "SV",
@@ -107,7 +107,7 @@
   "grade": 4,
   "aspect": "S",
   "season": "jan–mai",
-  "hasGuide": false
+  "hasGuide": true
  },
  "rombakstotta": {
   "name": "Rombakstøtta",
@@ -844,7 +844,7 @@
   "grade": 3,
   "aspect": "V",
   "season": "feb–apr",
-  "hasGuide": false
+  "hasGuide": true
  },
  "kjerag": {
   "name": "Kjerag",
@@ -855,6 +855,6 @@
   "grade": 2,
   "aspect": "Ø",
   "season": "mai–juni",
-  "hasGuide": false
+  "hasGuide": true
  }
 }
