@@ -594,15 +594,15 @@
   "verdict": "ok",
   "corrections": [
    "Sette fyrst roadClosedInWinter=false ut frå at Øygardstøl er ein heilårs turistparkering. Det er feil: OSM-vegen Lysevegen (ref=4224, tidlegare 500) har motor_vehicle:conditional=no @ Nov-May og snowplowing=no, og Sirdal kommune vinterstengjer vegen. Sett til true, og sesongen flytta til eit vårvindauge (mai–juni) i staden for vinter.",
-   "friflyt/Utemagasinet skriv at ein tek av frå Langavatn-vegen «mot nordvest til Kjerag». Målt peiling frå vegpunktet på Langavassvegen (59.0193/6.6477) til toppunktet i summits.json er 271°, altså rett vest; nordvest derfrå fører til Kjeragbolten (59.03375/6.59324), 1,8 km nord for toppen. Skildringa er teken med som vest/nordvest og ikkje kopiert ukritisk.",
+   "friflyt/Utemagasinet skriv at ein tek av frå Langavatn-vegen «mot nordvest til Kjerag». Målt peiling frå vegpunktet på Langvassvegen (59.0193/6.6477) til toppunktet i summits.json er 271°, altså rett vest; nordvest derfrå fører til Kjeragbolten (59.03375/6.59324), 1,8 km nord for toppen. Skildringa er teken med som vest/nordvest og ikkje kopiert ukritisk.",
    "Den rette linja Øygardstøl → avkjøringa skar eit 61° steg. Henta faktisk veggeometri frå OSM (way 40069909) – Lysevegen går sørover langs lng 6,651–6,658, ikkje austover – og la eit vegpunkt på 59.0389/6.65146 (735,43 m) på sjølve vegen, slik at korridoren følgjer vegen.",
    "Kontroll av toppunktet: DTM1 gjev 1095,99 m på 59.01948/6.58514, men 1115,57 m 400 m aust-nordaust (59.0200/6.5900) og 1163 m to km aust. Toppunktet er ikkje endra – det er SSR-punktet for «Kjerag» og er låst i summits.json – men siste etappe kjem inn frå aust over litt høgare mark, så ruta gjev litt frå seg dei siste hundre metrane."
   ],
   "rejectReason": "",
   "corridor": {
    "routeId": "normalruta",
-   "routeName": "Vårruta frå Øygardstøl om Langavassvegen",
-   "routeDescriptionFull": "Frå den store parkeringa på Øygardstøl (641 m) følgjer ein Lysevegen sørover – forbi 735 m – dei drygt to kilometrane til der anleggsvegen mot Langavatn tek av ved Stølsdalen bru (850 m). Vidare oppover Langavassvegen sørvestover til om lag 944 m, der ein forlèt vegen og held vest/nordvest inn på Kjeragplatået. Over platået går ruta jamt vestover over knausar og små vatn til punktet på 1090 m, og siste kilometeren er nesten flat fram til toppunktet på 1096 m. Terrenget heile vegen er slakt – innanfor 800 m av toppen ligg alle åtte retningane under 6° i snitt – men platået er svaberg med korte, brå kantar, og nordsida stuper i Lysefjorden.",
+   "routeName": "Vårruta frå Øygardstøl om Langvassvegen",
+   "routeDescriptionFull": "Frå den store parkeringa på Øygardstøl (641 m) følgjer ein Lysevegen sørover – forbi 735 m – dei drygt to kilometrane til der anleggsvegen mot Langavatn tek av ved Stølsdalen bru (850 m). Vidare oppover Langvassvegen sørvestover til om lag 944 m, der ein forlèt vegen og held vest/nordvest inn på Kjeragplatået. Over platået går ruta jamt vestover over knausar og små vatn til punktet på 1090 m, og siste kilometeren er nesten flat fram til toppunktet på 1096 m. Terrenget heile vegen er slakt – innanfor 800 m av toppen ligg alle åtte retningane under 6° i snitt – men platået er svaberg med korte, brå kantar, og nordsida stuper i Lysefjorden.",
    "trailhead": {
     "name": "Øygardstøl parkering",
     "lat": 59.04468,
@@ -618,13 +618,13 @@
      "elevationM": 735.43
     },
     {
-     "name": "Avkjøringa til Langavassvegen",
+     "name": "Avkjøringa til Langvassvegen",
      "lat": 59.02907,
      "lng": 6.65772,
      "elevationM": 850.3
     },
     {
-     "name": "Langavassvegen 944",
+     "name": "Langvassvegen 944",
      "lat": 59.01931,
      "lng": 6.64767,
      "elevationM": 944.01
@@ -642,8 +642,8 @@
    "grade": 2,
    "gradeReason": "455 netto høgdemeter og 6,6 km korridor i slakt platåterreng; friflyt kallar det «slakt og passar for dei fleste». Graderinga blir ikkje lågare enn 2 fordi Kjeragplatået er orienteringsterreng utan merking, med korte kantar og djupe kløfter, og fordi nordsida er ei tusen meter høg vegg mot Lysefjorden.",
    "hazardNotes": "Nordsida av Kjerag er stupet mot Lysefjorden – hald godt sør for kanten, særleg i tåke og flatt lys. Platået er svaberg med små, brå skrentar mellom slake parti; fleire stader fell terrenget 25–30° på under seksti meter. Lysevegen er vinterstengd og blir normalt ikkje brøytt før veka før påske, med opning tidlegast 1. mai og ofte seinare, så turen er eit vårvindauge og ikkje ein vintertur.",
-   "teaserNo": "455 høgdemeter frå Øygardstøl om Langavassvegen og Kjeragplatået; under 6° dei siste 800 m, men Lysevegen opnar først i mai.",
-   "teaserEn": "455 m of ascent from Øygardstøl via Langavassvegen and the Kjerag plateau; under 6° for the last 800 m, but Lysevegen only opens in May.",
+   "teaserNo": "455 høgdemeter frå Øygardstøl om Langvassvegen og Kjeragplatået; under 6° dei siste 800 m, men Lysevegen opnar først i mai.",
+   "teaserEn": "455 m of ascent from Øygardstøl via Langvassvegen and the Kjerag plateau; under 6° for the last 800 m, but Lysevegen only opens in May.",
    "sources": [
     "https://friflyt.no/topptur/siste_toppturer",
     "https://www.utemagasinet.no/randonee/fine-toppturer-paa-slutten-av-vaaren",

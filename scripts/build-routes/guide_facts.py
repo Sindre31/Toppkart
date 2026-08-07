@@ -21,6 +21,25 @@ PROFILE_TOP = 18.0     # y of the summit
 PROFILE_BASE = 200.0   # y of the trailhead
 TERRAIN_SAMPLES = 14
 
+# How far past the last forest vertex the treeline scan keeps looking before it
+# accepts that the forest has ended. Both have to be satisfied: a birch belt
+# interleaved with bog can go quiet for several hundred metres of ground and
+# then come back, and it can do that without gaining height.
+TREELINE_QUIET_M = 600.0    # ground since the last Skog vertex
+TREELINE_QUIET_UP = 150.0   # height above the highest Skog vertex
+# And a ceiling, because the quiet rule alone never fires on a route that starts
+# above the forest: with no Skog vertex to count from, the scan walks all 300
+# vertices of every alpine tour for an answer it already has. No forest grows
+# this high anywhere in Norway — the highest treeline in the country is in the
+# inland south and stops well below it, and the highest in this corpus is
+# Sæbyggjenuten's at 1028 m.
+TREELINE_CEILING_M = 1300.0
+
+_CLASS_CACHE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "cache", "terrain_class.json")
+
+# Sentinel: the scan could not complete, so the tour keeps the treeline it has.
+KEEP_PREVIOUS = object()
+
 
 def cumdist(points):
     out = [0.0]
@@ -94,9 +113,9 @@ def steepest_band(table):
 def terrain_along(points, elevations, n=TERRAIN_SAMPLES):
     """Kartverket terrain class at n points along the line.
 
-    This is what gives a guide an honest treeline: the elevation at which the
-    class stops being Skog. Guessing it would be exactly the sort of invented
-    detail these guides must not contain.
+    Fourteen points is enough to say what kind of ground a route crosses — bog,
+    slab, glacier, water — which is what this table is for. It is *not* enough to
+    say where the forest ends; see `treeline_scan`.
     """
     step = max(1, len(points) // (n - 1))
     idx = list(range(0, len(points), step))
@@ -112,16 +131,103 @@ def terrain_along(points, elevations, n=TERRAIN_SAMPLES):
     return out
 
 
-def treeline(samples):
-    """Highest sample still classed as forest, and the first one above it."""
-    last_forest = None
-    for s in samples:
-        if s["terreng"] == "Skog":
-            last_forest = s["z"]
-    if last_forest is None:
+def _class_cache():
+    try:
+        return json.load(open(_CLASS_CACHE))
+    except (OSError, ValueError):
+        return {}
+
+
+class LookupFailed(Exception):
+    """Kartverket did not answer. Distinct from "it answered, and it is not forest"."""
+
+
+def _class_at(cache, lat, lng):
+    key = f"{lat:.5f},{lng:.5f}"
+    if key not in cache:
+        try:
+            _, terr = dtm_point(lat, lng)
+        except Exception as exc:  # noqa: BLE001
+            # Never cache a failure as an answer about the ground, and never let
+            # it read as one either. A silent None here would have made an hour
+            # of Kartverket downtime say "no forest on this mountain" for every
+            # tour processed during it — the same shape as check_ground.py's
+            # cached-failure bug, which turned a five-minute outage into a
+            # permanent claim. Raise instead, and let the scan abstain.
+            raise LookupFailed(f"{lat:.5f},{lng:.5f}") from exc
+        cache[key] = terr
+    return cache[key]
+
+
+def treeline_scan(points, elevations, cum):
+    """Where the forest actually ends, from every vertex rather than from a sample.
+
+    The old version read the treeline off the fourteen-point `terrain_along`
+    table, and that is wrong in a way that always errs the same direction: the
+    highest *sampled* forest point is at best a lower bound on the highest forest
+    point, so every treeline it produced was too low. Møysalen is the case that
+    exposed it — sampled 162 m, actually 234 m, because the birch along the
+    valley floor is interleaved with bog and the sampler landed on bog three
+    times running before climbing out of the belt entirely.
+
+    Bisecting between adjacent samples would not have found it either: the two
+    samples bracketing the true last forest vertex were *both* non-forest. So
+    this walks vertices from the start and only stops once the line has been out
+    of the forest for both `TREELINE_QUIET_M` of ground and `TREELINE_QUIET_UP`
+    of height — enough that a belt coming back is no longer plausible.
+
+    Costs a few hundred lookups on a first run for a low-starting tour and none
+    on a re-run; the classes are cached to disk because ground cover does not
+    change between invocations.
+    """
+    cache = _class_cache()
+    before = len(cache)
+    last_i = None
+    first_open_m = None
+    scanned = 0
+    failed = False
+    try:
+        for i in range(len(points)):
+            if elevations[i] > TREELINE_CEILING_M:
+                continue      # too high for forest; skip the lookup, keep walking
+            terr = _class_at(cache, *points[i])
+            scanned = i
+            if terr == "Skog":
+                last_i = i
+                first_open_m = None
+            elif last_i is not None and first_open_m is None:
+                first_open_m = elevations[i]
+            if last_i is not None:
+                quiet_ground = cum[i] - cum[last_i]
+                quiet_up = elevations[i] - elevations[last_i]
+                if quiet_ground >= TREELINE_QUIET_M and quiet_up >= TREELINE_QUIET_UP:
+                    break
+    except LookupFailed:
+        failed = True
+    if len(cache) != before:
+        os.makedirs(os.path.dirname(_CLASS_CACHE), exist_ok=True)
+        json.dump(cache, open(_CLASS_CACHE, "w"))
+    if failed:
+        # An incomplete scan cannot rule the forest out, and a treeline that is
+        # only a lower bound is what this function exists to stop shipping. The
+        # tour keeps whatever treeline it already had until a complete scan runs.
+        return KEEP_PREVIOUS
+    if last_i is None:
         return None
-    above = [s["z"] for s in samples if s["z"] > last_forest]
-    return {"last_forest_m": last_forest, "first_open_m": min(above) if above else None}
+    return {
+        "last_forest_m": elevations[last_i],
+        "first_open_m": first_open_m,
+        "last_forest_km": round(cum[last_i] / 1000.0, 2),
+        "scanned_vertices": scanned + 1,
+    }
+
+
+def prev_treeline(previous, slug, route_id):
+    """The treeline from the last complete run, for a scan that could not finish."""
+    for r in ((previous.get(slug) or {}).get("routes") or []):
+        if r.get("id") == route_id:
+            return r.get("treeline")
+    return None
 
 
 def cached_samples(previous, slug, route_id, elevations):
@@ -159,6 +265,12 @@ def main():
         for r in recs:
             pts = [tuple(p) for p in r["points"]]
             zs = r["elevations"]
+            cum = cumdist(pts)
+            tl = treeline_scan(pts, zs, cum)
+            if tl is KEEP_PREVIOUS:
+                tl = prev_treeline(previous, slug, r.get("id"))
+                print(f"  ! {slug}/{r.get('id')}: treeline scan incomplete "
+                      f"(Kartverket unavailable) — kept {tl}")
             table = bands(pts, zs)
             band = steepest_band(table)
             ang, i0, i1 = steepest_span(pts, zs)
@@ -199,7 +311,7 @@ def main():
                     ],
                     "svgPath": svg_path(pts, zs),
                     "terrainSamples": samples,
-                    "treeline": treeline(samples) if samples else None,
+                    "treeline": tl,
                     # The research/audit notes: cornices, cliff bands, what the
                     # line must avoid. The single most valuable input to a guide.
                     "researchNotes": src.get("notes", "") or src.get("note", ""),

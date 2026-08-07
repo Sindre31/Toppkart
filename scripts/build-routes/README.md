@@ -1566,6 +1566,120 @@ three slugs, which is what `check_guides.py` reads when deciding whether a numbe
 in the prose is sourced. `check_ground.py` re-run after the guides went in returns
 all six crossings as notes rather than findings, and the three tours as clean.
 
+### The three, read adversarially
+
+The section above ends the way the Trondheim one did, by naming the gap: the pass
+that wrote these three guides was the pass that checked them. This is the
+independent read. It moved one card, rewrote half of one guide, found a pipeline
+bug reaching **38 guides**, and found a second bug in the fix for the first.
+
+**The treeline in every guide is a sample, not a measurement.** `guide_facts.py`
+read the treeline off the fourteen-point `terrain_along` table, so
+`last_forest_m` was the highest of fourteen points that happened to be forest.
+That is a lower bound on the treeline and never anything else — the error only
+ever runs one way. Møysalen is the case that exposed it: sampled **162 m**,
+actually **234 m**, confirmed by querying the terrain class at every one of the
+route's 333 vertices. The birch along the valley floor is interleaved with bog,
+55 of the 333 vertices are forest, and the sampler landed on bog three times
+running before climbing out of the belt. Bisecting between neighbouring samples
+would not have found it either, because the two samples bracketing the true last
+forest vertex were *both* non-forest. Sæbyggjenuten is wrong the same way and by
+more: its guide claimed forest to 904 m and open ground from 1052, and the
+registered pass at **Tverrheiskaret, 1028 m, is terrain class `Skog`** — forest
+124 m above the claimed treeline, in the middle of the claimed open ground.
+
+`treeline_scan` replaces it: walk vertices from the start, stop only once the
+line has been out of the forest for both 600 m of ground and 150 m of height,
+cache the classes to disk. **38 of the 78 guides quote a treeline figure and all
+38 are suspect.** Re-measuring them needs a complete run, and Kartverket's point
+API went down partway through this one — so Møysalen carries its measured 234 m,
+Sæbyggjenuten states only what is measured (forest at least to 1028 m, no
+figure), and the other 36 keep the numbers they have until the scan can finish.
+They are listed as owed in the root README.
+
+**The outage found the second bug, in the fix.** `_class_at` first returned
+`None` when a lookup failed, and `None` is not `"Skog"` — so an hour of
+Kartverket downtime would have written *"no forest on this mountain"* into every
+tour processed during it, silently and permanently. That is the exact shape of
+`check_ground.py`'s cached-failure bug. It now raises, and a scan that cannot
+complete returns a sentinel and keeps the previous value rather than inventing an
+absence. An incomplete scan cannot rule the forest out, and it must not be
+allowed to sound as if it can.
+
+**Møysalen's glacier is not where the guide put it.** The corridor waypoint was
+called «Breen sørøst for Møysalen, ~1025 moh» and the guide repeated it. At that
+point — 502 m from the summit on bearing 140 — DTM1 returns 1026.59 m with
+terrain class `ÅpentOmråde`. The ice the line actually crosses is at **752 to
+898 m**, continuously over 405 m of ground, on bearings **184 to 216** from the
+summit, 422 to 582 m out. Ring probes at 300, 500, 700 and 900 m in all eight
+directions find `SnøIsbre` only east and south-west; south-east is bare ground
+from 759 to 1047 m. The consequence ran into the avalanche copy too: the guide
+placed its 41.9-degree step «rett under breen», and that step is at 1036–1063 m,
+*above* the ice.
+
+**And it moved the card.** The aspect was `SØ`, justified in the research by the
+140-degree bearing to that same waypoint. With the waypoint gone, four things
+agree on **S**: Friflyt calls the Vestryggen route «sørvendt bratt terreng» and
+every other line on the mountain south-facing; `route_metrics.py` measures S; the
+drop-weighted mean bearing is 193 degrees; and the ice is at 184–216. Changed to
+S. While there, the teaser said 123 m down to Grønnvatnet (the waypoint chain)
+against the guide's 120 (the routed line) — both now 120 — and `gradeReason`
+still carried the waypoint chain's 1364 m of cumulative ascent against the
+routed 1596.
+
+**Kjerag's bearing was measured against a summit that moved.** The guide said the
+bearing from the road point to the top is 271 degrees. It is **265**: the
+research measured 270.3 to its own summit point, and the point `summits.json`
+carries today is 338 m away. The argument survives — the sources say «mot
+nordvest», north-west leads to Kjeragbolten 1921 m away, and the top is due west
+— but the number was stale.
+
+**Two of Kjerag's four sources are dead.** `utemagasinet.no` has been shut down
+entirely and redirects to friflyt.no, taking with it the article the whole ski
+route was researched from; the Sirdal kommune page on the winter closure returns
+404. The claim they supported — not ploughed until the week before Easter,
+opening 1 May at the earliest — cannot be sourced any more and is out. ut.no is
+live and says it plainly: «Rv500 mellom Sirdal og Lysebotn stenges når første
+snøfall kommer i okt/nov og åpner ikke før mai/juni.» Also from ut.no, and worth
+saying: «Kjeragbolten ligger ca. 300 meter sør for varden» — the cairn the
+walking descriptions mean is up by the bolt, not where this line ends.
+
+**The road is Langvassvegen.** OSM way 374684028 carries `name=Langvassvegen` and
+the place-name register agrees. «Langavassvegen» was the research's spelling and
+had reached the route name, the teaser and the prose.
+
+**Sæbyggjenuten has three passes, not two, and the guide warned about the wrong
+pair.** The register has `Tverrheiskaret` at 1027.59 m, a second `Tverrheiskaret`
+at 1091.50 m, and `Tverrheiskardet` at 1155.68 m. The two that are genuinely easy
+to confuse are the last two — **305 m apart** — not the pair 2.4 km apart the
+guide named.
+
+**A distance written as a word walked past the check.** «Ti kilometer inn» on an
+11.31 km route, and `check_guides.py` only ever matched `\d`. It now reads
+spelled-out quantities where a unit follows, which surfaced six more across four
+tours — all sourced once the check learned that «fire kilometer» and a 4455 m
+`groundM` are the same fact at two scales. The one real gap it found besides
+Sæbyggjenuten's was Horndalsnuten's «om lag tjue kilometer aust for Voss», a road
+distance with nothing on the route to source it against; it is measured and
+recorded now (15.9 km straight line, the 20 being the road through Raundalen).
+
+**What was confirmed clean.** All 19 named elevations across the three tours were
+re-queried from DTM1 and land within 0.35 m of the stored value — every
+trailhead, every waypoint, every height quoted in prose. Every 100 m band table
+was recomputed from `routes.json` and reproduces exactly. Every car park was
+re-fetched from OSM and every tag the guides lean on is there: Øygardstøl
+`capacity=100 fee=yes charge="200 NOK (car)"`, Litlvatnet `fee=no
+check_date=2025-07-28`, Berdalen `amenity=parking` on node 4991831285. Lysevegen
+still carries `motor_vehicle:conditional=no @ Nov-May` and `snowplowing=no`.
+Kjerag's junction really is at the bridge — 12 m from OSM way 736576464,
+`bridge:description=Stølsdalen I`. Kjerag's south-west flank really does fall
+54.8 degrees in its steepest 60 m window 800 m out: a 20 m-step profile gives
+1023.4 down to 937.5, and the neighbouring bearing reads 54.0. All six water
+crossings re-verified as natural, none carrying a reservoir tag. And
+Sæbyggjenuten's «Langemyr» waypoint, which looked wrong because a name search
+returns a different Bykle Langemyr 4.6 km away on the wrong side of the car park,
+is right: a point search on the waypoint itself returns Langemyr at 0 m.
+
 ## Network
 
 Everything is public and unauthenticated:

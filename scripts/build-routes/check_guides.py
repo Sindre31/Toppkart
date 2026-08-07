@@ -52,6 +52,31 @@ NUM_UNIT = re.compile(
     re.I,
 )
 
+# A quantity spelled out is still a quantity, and the digits-only pattern above
+# could not see one. Sæbyggjenuten's guide said «Ti kilometer inn» about an
+# 11.31 km route and came back clean, because "Ti" is not \d. Prose reaches for
+# the word at exactly the sizes that matter most — the length of the walk in —
+# so this is not a rare shape.
+WORD_NUM = {
+    "ein": 1, "éin": 1, "one": 1, "to": 2, "two": 2, "tre": 3, "three": 3,
+    "fire": 4, "four": 4, "fem": 5, "five": 5, "seks": 6, "six": 6,
+    "sju": 7, "syv": 7, "seven": 7, "åtte": 8, "eight": 8, "ni": 9, "nine": 9,
+    "ti": 10, "ten": 10, "elleve": 11, "eleven": 11, "tolv": 12, "twelve": 12,
+    "tjue": 20, "twenty": 20,
+}
+# Only where a unit follows immediately, so the word is plainly counting it.
+# «ti av dei åtte retningane» is not a distance and «eit bratt parti» is not a
+# number at all; the unit requirement is what keeps those out. Round hundreds
+# and thousands are deliberately absent — «over tusen meter ned i Lysefjorden»
+# is a figure of speech about a wall, and demanding it match a stored value to
+# within 6 m would report good prose as invented.
+WORD_UNIT = re.compile(
+    r"\b(" + "|".join(sorted(WORD_NUM, key=len, reverse=True)) + r")\s+"
+    r"(kilometerene|kilometrane|kilometrene|kilometres|kilometre|kilometer|km|"
+    r"høydemeter|høgdemeter|metrane|metrene|metrar|metres|metre|meter)\b",
+    re.I,
+)
+
 
 def norm(tok):
     return float(tok.replace(" ", "").replace(" ", "").replace(",", "."))
@@ -133,6 +158,14 @@ def main():
         # decimal comma is a decimal: reading "1,4 km eksponert rygg" as the two
         # numbers 1 and 4 is how a sourced figure gets reported as invented.
         noted = {float(m.replace(",", ".")) for m in re.findall(r"\d+(?:[.,]\d+)?", notes)}
+        # Kilometres and metres are the same facts at two scales, and the copy
+        # picks whichever reads better: «over fire kilometer nesten flatt
+        # høgfjell» is the 4455 m of ground in the 1100-1200 m band, stated in
+        # km. Comparing only against values already below 100 reported every one
+        # of those as invented.
+        in_km = {a for a in (allowed | noted) if a < 100} | {
+            a / 1000.0 for a in (allowed | noted) if a >= 100
+        }
         issues = []
 
         for lang in ("no", "en"):
@@ -145,11 +178,25 @@ def main():
                     # Research states distances in kilometres too — "1.4 km of
                     # exposed ridge" is sourced even though it is not the route's
                     # own length.
-                    ok = any(abs(value - a) <= 0.15 for a in (allowed | noted) if a < 100)
+                    ok = any(abs(value - a) <= 0.15 for a in in_km)
                 else:
                     ok = any(abs(value - a) <= 6 for a in allowed | noted)
                 if not ok:
                     issues.append(f"[{lang}] unsourced number: {raw.strip()!r}")
+
+            for m in WORD_UNIT.finditer(blob):
+                value = WORD_NUM[m.group(1).lower()]
+                if m.group(2).lower().startswith("km") or "kilomet" in m.group(2).lower():
+                    # A spelled-out distance is a rounded one by nature: nobody
+                    # writes "eleven point three kilometres". Allow the half
+                    # kilometre either side that the rounding itself implies,
+                    # and no more — that is still tight enough to have caught
+                    # "ti kilometer" on an 11.31 km route.
+                    ok = any(abs(value - a) <= 0.5 for a in in_km)
+                else:
+                    ok = any(abs(value - a) <= 6 for a in allowed | noted)
+                if not ok:
+                    issues.append(f"[{lang}] unsourced number in words: {m.group(0)!r}")
 
             for pat, label in REASSURING:
                 for m in pat.finditer(blob):

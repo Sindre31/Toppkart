@@ -214,15 +214,29 @@ content and data quality that has to be settled before the site is sold to anyon
   ridge holds a 51 m notch over 27.3 m of ground; it was checked point by point at 2.3 m spacing
   before it went in the copy, because a drop that abrupt is usually a grid artefact and this one
   is not.
+- **36 guides still quote a treeline that is a sample rather than a measurement.**
+  `guide_facts.py` derived the treeline from a fourteen-point terrain-class table, so its
+  `last_forest_m` was the highest of fourteen points that happened to be forest — a lower bound,
+  never anything else, and wrong in the same direction every time. Møysalen sampled 162 m and
+  measures **234 m**; Sæbyggjenuten claimed forest to 904 m while the registered pass at
+  **1028 m is classed `Skog`**. `treeline_scan` now walks every vertex instead, but re-measuring
+  all 78 needs a complete run and Kartverket's point API went down partway through the first one.
+  Møysalen carries its measured figure, Sæbyggjenuten states only what is measured and no number,
+  and **the other 36 keep the numbers they have.** They are listed by
+  `python3 -c` over `guide_facts.json` in the pipeline README's "The three, read adversarially";
+  re-run `guide_facts.py` when the API is up, then fix the prose for whichever moved. Nothing
+  about this is dangerous — a treeline that reads low is a nuisance, not a hazard — but it is a
+  number in a product that says every number traces to a measurement, and right now 36 of them
+  trace to a sample.
 - **The guide text has not been read by anyone who has skied these tours.** Every number in
   `lib/guides.ts` traces to Kartverket's terrain model, the route research or a cited source, and
   every number is matched mechanically by `check_guides.py` — which reads nynorsk verticals as well
   as bokmål ones, and comes back clean on all 78 guides.
-  On top of that, **75 of the 78 guides have been through an adversarial second read**
+  On top of that, **all 78 guides have been through an adversarial second read**
   whose only job is to break it — the 24 of the first round, the 15 of the second, the 7 of the
-  Oslo round, the 22 of the Sunnmøre and Vestland rounds, and the 7 of the Trondheim
-  round. The three most recent — Kjerag, Møysalen and Sæbyggjenuten — have not had one yet, and
-  are the next thing owed. That last read was the first one done by someone other than the pass that wrote the
+  Oslo round, the 22 of the Sunnmøre and Vestland rounds, the 7 of the Trondheim round, and
+  finally Kjerag, Møysalen and Sæbyggjenuten. That last read moved a card, rewrote half a guide,
+  and found the pipeline bug in the next bullet. That last read was the first one done by someone other than the pass that wrote the
   guides, and it found the worst class of error yet: **two routed lines that crossed water the
   guide said they went around.** Kråkfjellet and Rensfjellet ran 1.9 km out on Håen — a reservoir
   drawn down every winter, and the one hazard their source names — while the copy said «følg
