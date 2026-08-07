@@ -439,5 +439,104 @@
    "figure": "1482,4 moh i det lokale toppunktet 2 m frå den lagra koordinaten; nest høgaste lokale toppunkt er 1474,3 moh og ligg 203 m unna. Publisert høgd er 1478",
    "how": "DEM-rutenett 0,04 × 0,02 grader kring 60.81506/8.59565 med lokale maksimum, og SSR-punktet for Storehorn i Hemsedal ligg 10 m frå toppen. Fjellet er rett; metern er 4,3 m høgare enn den publiserte."
   }
+ ],
+ "vassfjellet": [
+  {
+   "what": "Flankesveip fra toppen, alle åtte peilinger",
+   "figure": "N 8,8° (16,1° 70–130 m ut), NØ 3,9° (17,2° 0–60), Ø 13,8° (24,4° 310–370), SØ 13,9° (26,7° 330–390), S 8,8° (18,6° 210–270), SV 12,0° (25,1° 210–270), V 12,0° (26,2° 230–290), NV 13,8° (33,3° 190–250)",
+   "how": "python3 flank_probe.py 63.26205 10.35659 — radial 400 m ut fra toppunktet, samplet hver 10 m på DTM1-rasteret, med bratteste 60-metersvindu per retning."
+  },
+  {
+   "what": "Vest- og nordvestsida ut til en kilometer",
+   "figure": "NV 11,1° i snitt med 32,9° i vinduet 180–240 m ut; V 12,3° med 28,1° i vinduet 480–540 m; N 3,4° med 14,7° i vinduet 60–120 m",
+   "how": "python3 flank_probe.py 63.26205 10.35659 315 270 0 --out 1000 --step 20."
+  },
+  {
+   "what": "Peilinger fra toppen langs den routede linja",
+   "figure": "Første 200 m ned fra varden peiler 255 grader (vest, ned til 676 moh), 500 m ned 249 grader (599 moh). Parkeringa ligger på peiling 342 fra toppen, 3,6 km unna.",
+   "how": "Storsirkelpeiling fra siste vertex i routes.json til vertexen 200 og 500 m tilbake langs linja, og til trailheaden."
+  }
+ ],
+ "krakfjellet": [
+  {
+   "what": "Flankesveip fra toppen, alle åtte peilinger",
+   "figure": "N 2,0° (6,0° 310–370 m ut), NØ 13,1° (17,6° 180–240), Ø 17,1° (21,8° 260–320), SØ 7,4° (16,6° 10–70), S 8,4° (12,3° 220–280), SV 5,5° (13,5° 110–170), V 8,4° (15,0° 290–350), NV 5,2° (12,5° 180–240)",
+   "how": "python3 flank_probe.py 63.16336 10.63219 — radial 400 m ut fra toppunktet, samplet hver 10 m på DTM1-rasteret, med bratteste 60-metersvindu per retning."
+  },
+  {
+   "what": "Peilinger fra toppen langs den routede linja",
+   "figure": "Første 200 m ned fra toppen peiler 202 grader (789 moh), 500 m ned 199 grader (761 moh). Parkeringa ved Håen ligger på peiling 225 fra toppen, 7,4 km unna.",
+   "how": "Storsirkelpeiling fra siste vertex i routes.json til vertexen 200 og 500 m tilbake langs linja, og til trailheaden."
+  }
+ ],
+ "rensfjellet": [
+  {
+   "what": "Flankesveip fra toppen, alle åtte peilinger",
+   "figure": "N 7,8° (12,2° 190–250 m ut), NØ 10,4° (15,6° 320–380), Ø 11,0° (17,8° 300–360), SØ 3,4° (11,2° 250–310), S 4,8° (15,9° 300–360), SV 7,1° (10,9° 340–400), V 6,2° (11,0° 280–340), NV 2,5° (12,2° 40–100)",
+   "how": "python3 flank_probe.py 63.14219 10.72186 — radial 400 m ut fra toppunktet, samplet hver 10 m på DTM1-rasteret, med bratteste 60-metersvindu per retning."
+  },
+  {
+   "what": "Peilinger fra toppen langs den routede linja",
+   "figure": "Første 200 m ned fra toppen peiler 251 grader (915 moh), 500 m ned 254 grader (873 moh). Parkeringa ved Håen ligger på peiling 254 fra toppen, 10,2 km unna.",
+   "how": "Storsirkelpeiling fra siste vertex i routes.json til vertexen 200 og 500 m tilbake langs linja, og til trailheaden."
+  }
+ ],
+ "storhornet": [
+  {
+   "what": "Flankesveip fra toppen, alle åtte peilinger",
+   "figure": "N 22,2° (37,7° 20–80 m ut), NØ 30,7° (46,2° 10–70), Ø 23,1° (34,4° 10–70), SØ 10,5° (17,2° 270–330), S 6,0° (8,2° 260–320), SV 0,4° (8,4° 0–60), V 11,0° (15,1° 270–330), NV 18,7° (23,8° 120–180)",
+   "how": "python3 flank_probe.py 62.64779 9.39918 — radial 400 m ut fra toppunktet, samplet hver 10 m på DTM1-rasteret, med bratteste 60-metersvindu per retning."
+  },
+  {
+   "what": "Sørsida ut til halvannen kilometer, mot Omnråa",
+   "figure": "SØ 11,1° i snitt med 19,3° i vinduet 625–675 m ut; S 4,2° med 24,8° først i vinduet 1450–1500 m; SV 5,8° med 12,9° i vinduet 800–850 m",
+   "how": "python3 flank_probe.py 62.64779 9.39918 135 180 225 --out 1500 --step 25. Omnråa er registrert som botn i SSR på 62.621/9.40927, 3,02 km fra toppen."
+  },
+  {
+   "what": "Peilinger fra toppen langs den routede linja",
+   "figure": "Første 200 m ned fra steinbua peiler 134 grader (1562 moh), 500 m ned 128 grader (1494 moh). Parkeringa ved Bree ligger på peiling 135 fra toppen, 4,7 km unna.",
+   "how": "Storsirkelpeiling fra siste vertex i routes.json til vertexen 200 og 500 m tilbake langs linja, og til trailheaden."
+  }
+ ],
+ "storbekkhoa": [
+  {
+   "what": "Flankesveip fra toppen, alle åtte peilinger",
+   "figure": "N 13,4° (18,8° 30–90 m ut), NØ 18,7° (31,4° 30–90), Ø 24,9° (35,5° 20–80), SØ 34,1° (46,9° 20–80), S 25,5° (46,9° 30–90), SV 23,4° (35,4° 140–200), V 16,0° (22,7° 130–190), NV 3,7° (7,7° 50–110)",
+   "how": "python3 flank_probe.py 62.73022 9.08038 — radial 400 m ut fra toppunktet, samplet hver 10 m på DTM1-rasteret, med bratteste 60-metersvindu per retning."
+  },
+  {
+   "what": "Peilinger fra toppen langs den routede linja",
+   "figure": "Første 200 m ned fra varden peiler 276 grader (vest, 1458 moh) og 500 m ned 236 grader (1352 moh) — halvsirkelen Fri Flyt beskriver. Parkeringa ved Storli ligger på peiling 170 fra toppen, 4,2 km unna.",
+   "how": "Storsirkelpeiling fra siste vertex i routes.json til vertexen 200 og 500 m tilbake langs linja, og til trailheaden."
+  }
+ ],
+ "okla": [
+  {
+   "what": "Flankesveip fra toppen, alle åtte peilinger",
+   "figure": "N 43,6° (50,9° 250–310 m ut), NØ 33,8° (46,2° 70–130), Ø 27,3° (33,6° 130–190), SØ 33,1° (39,4° 110–170), S 27,4° (34,0° 130–190), SV 3,4° (8,0° 110–170), V 19,3° (33,1° 230–290), NV 44,7° (57,1° 200–260)",
+   "how": "python3 flank_probe.py 62.68955 9.26225 — radial 400 m ut fra toppunktet, samplet hver 10 m på DTM1-rasteret, med bratteste 60-metersvindu per retning."
+  },
+  {
+   "what": "Peilinger fra toppen langs den routede linja",
+   "figure": "Første 200 m ned fra varden peiler 73 grader (aust, 1522 moh) og 500 m ned 72 grader (1411 moh) — langs ryggen, ikke i fallinja. Parkeringa i Dalen ligger på peiling 167 fra toppen, 3,4 km unna.",
+   "how": "Storsirkelpeiling fra siste vertex i routes.json til vertexen 200 og 500 m tilbake langs linja, og til trailheaden."
+  }
+ ],
+ "snota": [
+  {
+   "what": "Flankesveip fra toppen, alle åtte peilinger",
+   "figure": "N 28,6° (49,9° 50–110 m ut), NØ 42,0° (64,2° 40–100), Ø 48,1° (57,9° 130–190), SØ 36,5° (71,0° 10–70), S 42,0° (71,4° 10–70), SV 32,1° (62,6° 30–90), V 14,8° (35,4° 340–400), NV 9,4° (21,3° 340–400)",
+   "how": "python3 flank_probe.py 62.84778 9.09428 — radial 400 m ut fra toppunktet, samplet hver 10 m på DTM1-rasteret, med bratteste 60-metersvindu per retning."
+  },
+  {
+   "what": "Breterrenget ut.no oppgir fra ca 1380 moh",
+   "figure": "Sju av vertexene på den routede linja mellom 1364 og 1471 moh svarer SnøIsbre i Kartverkets terrengklasser: strekket måler 436 m langs linja fra 1364 til 1471 moh. Punktene på 1352,4 og 1473,8 moh på hver side er ÅpentOmråde.",
+   "how": "ws.geonorge.no/hoydedata/v1/punkt på annakvar vertex i routes.json mellom 1330 og 1560 moh (vertex 244–280), og lengda summert langs linja mellom vertex 254 og 267. Ut.no oppgir «fra ca 1380 moh går ruta over bre i ca 500 m»."
+  },
+  {
+   "what": "Peilinger fra toppen langs den routede linja",
+   "figure": "Første 200 m ned fra toppunktet peiler 320 grader (nordvest, 1653 moh) og 500 m ned 328 grader (1598 moh) — ruta går tilbake langs toppflanken før den faller austover ned breen. Parkeringa ved Gråhaugen ligger på peiling 13 fra toppen, 8,0 km unna.",
+   "how": "Storsirkelpeiling fra siste vertex i routes.json til vertexen 200 og 500 m tilbake langs linja, og til trailheaden."
+  }
  ]
 }

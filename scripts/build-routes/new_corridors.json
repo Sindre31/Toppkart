@@ -2796,5 +2796,414 @@
    "confidence": "medium",
    "notes": "Ut.no 115250 er en skitur (SKI_TOURING, sesong januar–mars) i det samme løypenettet og navngir Styggemann, 871 moh, som toppen man tar oppom. Ut.no 115278 beskriver oppstigningen og hvor bratt den er. DNTs egen områdebeskrivelse i Fjell og Vidde gir vinterkjeden fra Ravalsjø: forbi Ormetangen, opp lia øst for Ravalsjø, forbi Skrimsetra og Urdstjerna, over Fugleleikskarva til Sørmyrseter, og 240 høydemeter derfra til toppen. Urdstjerna finnes ikke i registeret og er utelatt fra waypointene; de fire andre resolverer og måler. Den østlige adkomsten fra Stølevann om Ivarsbu og stikrysset vest på Jotefjell (765 moh) er dokumentert i samme kilde, men er ikke lagt inn som korridor."
   }
+ },
+ {
+  "slug": "vassfjellet",
+  "verdict": "ok",
+  "corrections": [
+   "Starthøyda er kontrollert mot DTM1: parkeringa på Markavollen (OSM way/75096530, amenity=parking, name=Markavollen) måler 183,6 moh mot ut.nos oppgitte 184. Det er den nærmeste overensstemmelsen i hele runden, og den slår fast at det er denne parkeringa beskrivelsen starter fra.",
+   "Toppen måler 710,9 moh på DTM1 mot publiserte 710. Kortet bærer målingen.",
+   "Ruta er lagt om Vassfjellhytta (SSR: Turisthytte, 63.26151/10.34241, 507,4 moh), som er punktet ut.no navngir mellom start og skoggrense. Resten av oppstigninga er skiløype og anleggsveg, og korridoren pinner den ikke lenger enn beskrivelsen gjør.",
+   "Alpinanlegget ligger øst for toppen, ikke nord som første utkast sa. Vassfjellet skisenter (OSM way/22923382, landuse=winter_sports) har senter 1,3 km unna på peiling 86, Vassfjellet vinterpark 2,5 km på peiling 80, og den nærmeste heisen, Toppheisen, ender 893 m fra varden på peiling 46. Ruta fra Markavollen kommer opp vestfra og krysser ikke anlegget. «Anleggsvegen mot toppen» som ut.no sender deg inn på er vegen til Melhus hovedsender, en kommunikasjonsmast (OSM node/299763925) 131 m fra varden på 709 moh; selve varden står på 711.",
+   "Flankesveipet: nordvestsida er den brattaste, 13,8 grader i snitt over 400 m med et 33,3-graders vindu 190–250 m ut, og ut til en kilometer holder den 11,1 grader i snitt med 32,9 i vinduet 180–240 m. Søraust måler 26,7 og vest 26,2 i sine brattaste vindu. Nord — mot alpinanlegget — er slakest av alt, 3,4 grader i snitt ut til en kilometer. Det er de «diverse brattheng» ut.no advarer mot, og de ligger vest og søraust for toppen.",
+   "Flankesveipet plasserer det bratte vest og søraust, ikke der anlegget er: nordvest måler 13,8 grader i snitt med 33,3 i vinduet 190–250 m ut, søraust 13,9 med 26,7, mens nordaust — mot heisene — måler 3,9 grader i snitt. En leser som kjører ned mot anlegget kjører altså ikke i det brattaste terrenget, men han kjører ned i en alpinbakke."
+  ],
+  "rejectReason": "",
+  "corridor": {
+   "routeId": "markavollen",
+   "routeName": "Fra Markavollen over Vassfjellhytta",
+   "routeDescriptionFull": "Fra parkeringa på Markavollen (184 moh) følger du skiløypa sørover, så østover og sørover igjen, forbi Vassfjellhytta (507 moh) og opp over skoggrensa. Der løypa treffer anleggsvegen mot toppen følger du denne de siste høydemeterne til toppunktet på 711 moh. Ned samme veg; det finnes flere brattere linjer på vestsida, men de krever at du kan vurdere skredfaren i de enkelthengene ut.no advarer mot.",
+   "trailhead": {
+    "name": "Markavollen",
+    "lat": 63.29292,
+    "lng": 10.33415,
+    "elevationM": 183.6,
+    "osmEvidence": "OSM way/75096530, amenity=parking, name=Markavollen, senter 63.29292/10.33415, 183,6 moh på DTM1 mot ut.nos oppgitte 184. Kjørt fra Melhus sentrum via Hesttrøa (OSM way/75096529) fra Løvsetvegen fv6616. Ut.no oppgir p-avgift; OSM har ingen fee-tagg her."
+   },
+   "waypoints": [
+    {
+     "name": "Vassfjellhytta",
+     "lat": 63.26151,
+     "lng": 10.34241,
+     "elevationM": 507.4
+    }
+   ],
+   "season": "des–apr",
+   "roadClosedInWinter": false,
+   "aspect": "V",
+   "grade": 1,
+   "gradeReason": "Drøye 500 høydemeter i preparert skiløype og på anleggsveg, i terreng som stort sett ligger godt under 30 grader. Ut.no graderer den «Middels» fysisk. Vanskeligheten er ikke terrenget, men at det finnes enkeltheng både under og over skoggrensa som frister til brattere nedkjøring enn ruta.",
+   "hazardNotes": "Ut.no: «Vær oppmerksom på diverse brattheng både under og over tregrensa. Disse er relativt enkle å omgå. Ikke fall for fristelsen til å kjøre brattere ned igjen med mindre du er i stand til å vurdere skredfaren i disse enkelthengene.» Toppen er vindutsatt og bærer master; alpinanlegget Vassfjellet vinterpark ligger på nordsida, utenfor ruta.",
+   "teaserNo": "540 høydemeter fra Markavollen forbi Vassfjellhytta — den nærmeste toppturen til Trondheim, i løype hele vegen.",
+   "teaserEn": "540 m of climbing from Markavollen past Vassfjellhytta — the closest ski tour to Trondheim, on a marked track the whole way.",
+   "sources": [
+    "https://ut.no/turforslag/1112157081/vassfjellet-710-fra-markavollen-melhus-topptur-pa-ski",
+    "https://ut.no/turforslag/1112157078/vassfjellet-710-fra-kirkfla-melhus-topptur-pa-ski"
+   ],
+   "confidence": "high",
+   "notes": "Ut.no 1112157081 er en ren skitur (starthøyde 184, slutthøyde 710, 6,7 km, 526 hm, desember–april, eksposisjon V), beskrevet av Håvard Engen og gjennomgått av Trondhjems Turistforening. Ut.no 1112157078 beskriver den samme toppen fra Kirkflå (575 hm, 7,0 km) og er tatt med som uavhengig dekning av fjellet, ikke som andre rute: den starter på en veg der ut.no selv skriver at det er få parkeringsplasser og ber deg ta hensyn til fastboende, og en slik start hører ikke hjemme på et kort som sender folk dit."
+  }
+ },
+ {
+  "slug": "krakfjellet",
+  "verdict": "corrected",
+  "corrections": [
+   "Kråkfjellet er kommunetoppen i Trondheim etter sammenslåinga med Klæbu, og publiseres over alt som 817 moh. DTM1 gir 814,9 på det høyeste punktet innafor 300 m av registerpunktet. Kortet bærer målingen, 815, etter samme regel som Storehorn i Hemsedal: der kortet og terrengmodellen er uenige, er det terrengmodellen som er målt.",
+   "Starthøyda i beskrivelsen er 418 moh. Parkeringa (OSM way/145361330) måler 411,1 moh på DTM1, og vassflata på Håen 431,8 — parkeringa ligger altså i underkant av 20 m under det regulerte vatnet, vest for demninga. Korridoren bærer den målte høyda.",
+   "Rundtjønnin er kontrollmålet på at korridoren følger den beskrevne løypa: ut.no oppgir «Rundtjønnin 525 moh», DTM1 leser 526,0. Kråklivollen måler 452,0.",
+   "Ruta er lagt langs nordbredden av Håen slik beskrivelsen sier, ikke over vatnet. Håen er regulert og tappes ned hver vinter, og ut.no advarer eksplisitt mot usikker is langs kanten.",
+   "Den routede linja stiger 430 høydemeter mot ut.nos oppgitte 519, og gir tilbake 26 mot deres «ca 140». Forskjellen er reell og ligger i linjevalget: beskrivelsen sier «følg rygg eller søkk i samme retning avhengig av snøen og skiføret», og ryggene her går nord–sør, så en linje som krysser dem samler opp og ned som en linje langs dem ikke gjør. Kortet fører den routede stigninga, som er den linja appen tegner.",
+   "Flankesveipet finner ingen bratt side på dette fjellet: brattaste 60-metersvindu i noen retning er 21,8 grader mot aust, og nord måler 2,0 grader i snitt. Skavlene ut.no advarer mot er et fallproblem i dårlig lys, ikke et skredproblem, og guiden skal si det slik."
+  ],
+  "rejectReason": "",
+  "corridor": {
+   "routeId": "haaen",
+   "routeName": "Fra Håen over Kråklivollen og Rundtjønnin",
+   "routeDescriptionFull": "Fra parkeringa ved Håen (411 moh) følger du strandlinja på nordsida av vatnet rett østover. Etter knappe tre kilometer kommer du til Kråklivollen (452 moh), der ruta går opp i skogen og bukter seg fram opp Kråklia og vest for Samsjølia. Videre nord–nordøst forbi Rundtjønnin (526 moh), og så følger du rygger eller søkk i samme retning, avhengig av snø og skiføre, til du etter hvert dreier mot nord og nordvest opp mot toppen på 815 moh.",
+   "trailhead": {
+    "name": "Håen",
+    "lat": 63.11658,
+    "lng": 10.52769,
+    "elevationM": 411.1,
+    "osmEvidence": "OSM way/145361330, amenity=parking, senter 63.11658/10.52769, 411,1 moh. Lundadalsvegen (OSM way/617154075, og way/15054350 / way/617153815 med toll=yes) går forbi 92 m unna. Ut.no: «Ta av fra E6 midt i Lundamo østover Lundadalen mot Samsjøen. Det er bomvei det meste av veien, betaling med kort. På vinteren er veien normalt brøytet de 18 kilometerne til parkeringa ved Håen.»"
+   },
+   "waypoints": [
+    {
+     "name": "Kråklivollen",
+     "lat": 63.11635,
+     "lng": 10.58504,
+     "elevationM": 452.0
+    },
+    {
+     "name": "Rundtjønnin",
+     "lat": 63.12784,
+     "lng": 10.61756,
+     "elevationM": 526.0
+    }
+   ],
+   "season": "des–apr",
+   "roadClosedInWinter": false,
+   "aspect": "S",
+   "grade": 2,
+   "gradeReason": "Vel ti kilometer én veg og drøye 500 høydemeter i enkelt terreng — ut.no fører turen som «Middels» og terrengklassen for nabotoppen fra samme start som KAST 1. Vanskeligheten er lengden og orienteringa mellom ryggene, ikke bratthet.",
+   "hazardNotes": "Ut.no: «Håen er regulert og tappes ned hver vinter, sørg for ikke å komme ut på usikker is når du går langs kanten av vannet.» Og: «Vær obs på høye skavler i le-retningen i perioder det har vært mye vind når du går/kjører på tvers av ryggene i området. Hold avstand fra disse særlig i dårlig lys så du ikke risikerer å falle ned.»",
+   "teaserNo": "Kommunetoppen i Trondheim: 430 høydemeter og ni kilometer fra Håen over Kråklivollen og Rundtjønnin.",
+   "teaserEn": "The highest point in Trondheim municipality: 430 m of climbing and nine kilometres from Håen past Kråklivollen and Rundtjønnin.",
+   "sources": [
+    "https://ut.no/turforslag/1112157076/topptur-pa-ski-til-krakfjellet-817-moh-fra-haen-melhus",
+    "https://ut.no/turforslag/1112155515/krakfjellet-817-fra-brttem-trondheim-topptur-ski",
+    "https://ut.no/turforslag/1112155516",
+    "https://peakbook.org/no/tour/304006/"
+   ],
+   "confidence": "high",
+   "notes": "Ut.no 1112157076 er skituren fra Håen (starthøyde 418, slutthøyde 817, 10,6 km, ca 140 tapte høydemeter opp, eksposisjon S, desember–april), beskrevet av Håvard Engen og gjennomgått av Trondhjems Turistforening. Den samme toppen er uavhengig beskrevet fra Brøttem i to andre ut.no-turer, og turartikkelen på Peakbook dekker Kråkfjellet og Rensfjellet i samme runde. Brøttem-starten er ikke tatt med som andre rute: den er 19,5 km én veg, godt over det korridorene i dette prosjektet strekker seg."
+  }
+ },
+ {
+  "slug": "rensfjellet",
+  "verdict": "ok",
+  "corrections": [
+   "Toppen måler 941,5 moh på DTM1 mot publiserte 941. Registerpunktet ligger 5 m fra det høyeste punktet.",
+   "Rundtjønnin på 525 moh er kontrollmålet: DTM1 leser 526,0 der ut.no oppgir 525. Kråklivollen måler 452,0 og parkeringa 411,1 mot oppgitte 418.",
+   "«Krysser Oksdalen» er ikke et navngitt punkt. Oksdalen er registrert som dal med representasjonspunkt 3,95 km frå kryssinga, på peiling 15, og lavlinja i dalen er lest ut av terrengmodellen: den følger lengdegrad 10,660 sørover fra registerpunktet, og på breddegrad 63,136 måler den 532,0 moh. Det er en utledning fra terrengmodellen, ikke et navngitt sted, og det er derfor det står her.",
+   "Rensfjellet er grensetopp mellom Melhus, Midtre Gauldal og Selbu, og kommunetopp i Melhus — ikke i Trondheim. Ut.no sier det selv: den «mangler bare 2,1 km mot N-NV på å inkludere også Trondheim i den klubben». Kråkfjellet er Trondheims topp, og de to ligger 4 km fra hverandre med samme parkering.",
+   "Den routede linja gir tilbake 143 høydemeter av 674 den stiger — ut.no oppgir «tapte hm opp: ca 130». Det er det samme terrenget: rygger og søkk mellom Håen og toppen som ruta må over.",
+   "Flankesveipet finner heller ikke her noen bratt side: brattaste 60-metersvindu er 17,8 grader mot aust, og søraust måler 3,4 grader i snitt. Ut.nos «bratte enkeltheng som er høye nok til at det kan gå skred» ligger utenfor de 400 metrene sveipet dekker, og guiden skal ikke plassere dem ved varden."
+  ],
+  "rejectReason": "",
+  "corridor": {
+   "routeId": "haaen",
+   "routeName": "Fra Håen over Rundtjønnin og Oksdalen",
+   "routeDescriptionFull": "Fra parkeringa ved Håen (411 moh) følger du strandlinja på nordsida av vatnet rett østover til Kråklivollen (452 moh) etter knappe tre kilometer. Derfra går ruta opp i skogen og bukter seg fram opp Kråklia og vest for Samsjølia, videre forbi Rundtjønnin (526 moh) og krysser Oksdalen på rundt 532 moh. Så begynner de siste fire kilometerne med stigning: ruta følger terrenget østover og seinere nordøstover og unngår bratta, til den flater ut mot toppen på 941 moh.",
+   "trailhead": {
+    "name": "Håen",
+    "lat": 63.11658,
+    "lng": 10.52769,
+    "elevationM": 411.1,
+    "osmEvidence": "OSM way/145361330, amenity=parking, senter 63.11658/10.52769, 411,1 moh, 92 m fra Lundadalsvegen (OSM way/617154075; bomveg, toll=yes lenger nede). Samme parkering som Kråkfjellet går fra. Ut.no: «På vinteren er veien normalt brøytet de 18 kilometerne til parkeringa ved Håen.»"
+   },
+   "waypoints": [
+    {
+     "name": "Kråklivollen",
+     "lat": 63.11635,
+     "lng": 10.58504,
+     "elevationM": 452.0
+    },
+    {
+     "name": "Rundtjønnin",
+     "lat": 63.12784,
+     "lng": 10.61756,
+     "elevationM": 526.0
+    },
+    {
+     "name": "Oksdalen, der ruta krysser",
+     "lat": 63.136,
+     "lng": 10.66,
+     "elevationM": 532.0
+    }
+   ],
+   "season": "des–apr",
+   "roadClosedInWinter": false,
+   "aspect": "V",
+   "grade": 2,
+   "gradeReason": "Tretten kilometer én veg og 650 høydemeter, med rundt 130 av dem gitt tilbake underveis. Ut.no fører turen som «Middels» fysisk og «Middels, KAST-klasse 1, enkelt terreng». Det er lengden og orienteringa over vann, myr og rygger som er turen, ikke bratthet.",
+   "hazardNotes": "Ut.no: «Håen er regulert og tappes ned hver vinter, sørg for ikke å komme ut på usikker is når du går langs kanten av vannet.» Videre: «Det finnes bratte enkeltheng som er høye nok til at det kan gå skred, men de er mulige å unngå», og «det dannes skavler i området, hold avstand fra disse særlig i dårlig lys så du ikke risikerer å falle ned».",
+   "teaserNo": "670 høydemeter og elleve kilometer fra Håen over Rundtjønnin og Oksdalen til Melhus' høyeste punkt.",
+   "teaserEn": "670 m of climbing and eleven kilometres from Håen past Rundtjønnin and Oksdalen to the highest point in Melhus.",
+   "sources": [
+    "https://ut.no/turforslag/1112155230/rensfjellet-941-fra-haen-melhus-topptur-ski",
+    "https://ut.no/turforslag/1112155520/rensfjellet-941-fra-brttem-trondheim-ski-topptur",
+    "https://ut.no/turforslag/118204/nordvest-for-rensfjellets-topp-930-moh"
+   ],
+   "confidence": "high",
+   "notes": "Ut.no 1112155230 er skituren fra Håen (starthøyde 418, slutthøyde 941, ca 130 tapte høydemeter opp, total stigning ca 650, 13 km, 3 t, eksposisjon V, KAST-klasse 1), beskrevet av Håvard Engen og gjennomgått av Trondhjems Turistforening. Ut.no 1112155520 beskriver den samme toppen fra Brøttem (19,5 km, ca 950 hm) og 118204 dekker den fra Samsjøen med en annen forfatter. Brøttem-ruta er ikke tatt med som andre rute fordi den er 19,5 km én veg."
+  }
+ },
+ {
+  "slug": "storhornet",
+  "verdict": "ok",
+  "corrections": [
+   "Toppen måler 1589,0 moh på DTM1 mot publiserte 1589 — den beste overensstemmelsen i runden. Fri Flyt publiserer i tillegg sin egen GPS-posisjon for toppunktet i UTM33 (213151,854 / 6958824,056); omregnet lander den 10 m fra det punktet summit-søket klatret til. To uavhengige kilder på samme celle.",
+   "Parkeringa ved Bree er avgiftsbelagt og taggd som det: OSM way/444402278, amenity=parking, fee=yes, capacity=10, ski=yes, 652,9 moh. Fri Flyt: «Følg veien som går til venstre etter butikken og kjør ca 1,3 kilometer til avgiftsbelagt parkering ved Bree.» Visit Oppdal oppgir adressa Festavegen 140.",
+   "Hornlia er hytteområdet ruta går gjennom, ikke et punkt på ryggen: registerpunktet ligger på 846,8 moh i skogen, og det stemmer med at både Fri Flyt og ut.no beskriver første del av turen gjennom bjørkeskog og hyttefelt.",
+   "Fri Flyts «Bratteste punkt: Under 25 grader» er tatt med som en påstand som skal måles mot den routede linja, ikke som en beskrivelse av fjellet: sørsida ned mot Omnråa er bratt, og det er nettopp det Fri Flyt fører som faremoment.",
+   "Fri Flyts faremoment peiker lengre unna enn det ser ut til. «Det bratte terrenget rundt Omnråa sør for toppen» er reelt, men Omnråa er registrert som botn 3,02 km sør for varden, og sørsida rett under toppen måler 6,0 grader i snitt over 400 m med bratteste 60-metersvindu på 8,2. Radialen sørover treffer først 24,8 grader i vinduet 1450–1500 m ut. Det som er bratt der du står, er nordaust: 30,7 grader i snitt og 46,2 i vinduet 10–70 m ut, med nord 22,2 og aust 23,1. Guiden må si hvilken som er hvilken."
+  ],
+  "rejectReason": "",
+  "corridor": {
+   "routeId": "bree",
+   "routeName": "Fra Bree gjennom Hornlia",
+   "routeDescriptionFull": "Fra den avgiftsbelagte parkeringa ved gården Bree (653 moh) følger du den merkede vinterløypa som er hogd ut gjennom skogen og svinger seg opp gjennom hyttefeltet i Hornlia (847 moh). Over tregrensa fortsetter løypa i jevn stigning mot nordvest, over høyfjellet og opp til steinbua på toppen av Storhornet, 1589 moh. Retur samme veg — Fri Flyt kaller det den sikreste nedkjøringa.",
+   "trailhead": {
+    "name": "Bree",
+    "lat": 62.61829,
+    "lng": 9.46417,
+    "elevationM": 652.9,
+    "osmEvidence": "OSM way/444402278, amenity=parking, fee=yes, capacity=10, ski=yes, hiking=yes, senter 62.61829/9.46417, 652,9 moh. Festavegen (OSM way/210842718) 215 m unna, Breeslivegen (way/309863249) 96 m. Visit Oppdal oppgir Festavegen 140 og p-avgift; Fri Flyt kaller den «avgiftsbelagt parkering ved Bree»."
+   },
+   "waypoints": [
+    {
+     "name": "Hornlia",
+     "lat": 62.63835,
+     "lng": 9.46726,
+     "elevationM": 846.8
+    },
+    {
+     "name": "Over tregrensa, ca 1070 moh",
+     "lat": 62.636,
+     "lng": 9.438,
+     "elevationM": 1072.3
+    }
+   ],
+   "season": "des–mai",
+   "roadClosedInWinter": false,
+   "aspect": "SØ",
+   "grade": 2,
+   "gradeReason": "900 høydemeter i jevn stigning på merket vinterløype, og Fri Flyt fører bratteste punkt som under 25 grader og klassifiserer turen som KAST 1 – enkelt. Ut.no graderer den «Krevende» på fysisk innsats, som er lengden og høydemeterne, ikke terrenget. Det er turen Oppdal sender førstegangsgjengere på.",
+   "hazardNotes": "Fri Flyt fører ett faremoment: «Hvis du velger å oppsøke det bratte terrenget rundt Omnråa sør for toppen må du ta hensyn til både eksponert terreng og skredfare.» Selve løypa ligger utenfor dette. Toppen er værhard; steinbua fra 1946 står der som krypinn.",
+   "teaserNo": "940 høydemeter på merket vinterløype fra Bree gjennom Hornlia til steinbua på Oppdals mest besøkte topp.",
+   "teaserEn": "940 m of climbing on a marked winter route from Bree through Hornlia to the stone shelter on the most visited peak in Oppdal.",
+   "sources": [
+    "https://friflyt.no/topptur/oppdal/storhornet-1589-moh",
+    "https://ut.no/turforslag/1110843",
+    "https://oppdal.com/en/ski-touring-in-oppdal-find-your-perfect-route/",
+    "https://www.randofolk.no/toppturer/storhornet-oppdalsklassikeren/"
+   ],
+   "confidence": "high",
+   "notes": "Fri Flyt gir toppunkt 1589, 900 høydemeter, 5,3 km, 4 timer opp/ned, himmelretning SØ, KAST 1 og startsted Festa i Oppdal. Ut.no 1110843 gir 1589 moh, total stigning 900 hm, 5,5 km, 2,5 t opp, startpunkt parkeringsplassen ved gården Breen med p-avgift, og «jevn stigning mot toppen etter merket vinterløype». Randofolk og Visit Oppdal dekker den samme løypa."
+  }
+ },
+ {
+  "slug": "storbekkhoa",
+  "verdict": "corrected",
+  "corrections": [
+   "Toppen måler 1504,3 moh på DTM1 mot publiserte 1504. Fri Flyts egen GPS-posisjon for toppunktet (UTM33 197690,602 / 6969452,427) lander 27 m fra den cella summit-søket klatret til.",
+   "De to kildene er uenige om høydemeterne: Fri Flyt oppgir 600, ut.no 900. Parkeringa ved Storli måler 622,6 moh og toppen 1504,3, altså 882 m i rein differanse — ut.nos tall er det som stemmer, og Fri Flyts 600 passer ingen start på denne sida av fjellet. Kortet bærer den routede stigninga.",
+   "Storbekkdalen er registrert to steder i Oppdal; den som hører til denne turen er 62.71578/9.08775, rett nord for Storli. Waypointet i korridoren ligger på 62.716/9.093, der dalbotnen måler 1000,2 moh og terrengklassen er myr — det er dalen ruta går opp i, ikke registerpunktet oppe i lia.",
+   "«Skaret du følger opp mot toppen» er ikke navngitt i noen av kildene. Punktet i korridoren, 62.728/9.072 på 1313,3 moh, er lest ut av terrengmodellen vest for den bratte sørøstveggen, og er der begge beskrivelsene sender deg: ut.no «gå litt lengre mot vest for å finne skaret», Fri Flyt «dreier du igjen vestover og følger det slake terrenget i en halvsirkel til toppen».",
+   "Flankesveipet bekrefter Fri Flyts faremoment nøyaktig: søraust måler 34,1 grader i snitt over 400 m med et 46,9-graders vindu 20–80 m ut fra varden, og sør 25,5 med samme 46,9 i vinduet 30–90. Nordvest — halvsirkelen ruta kommer opp i — måler 3,7 grader i snitt med 7,7 som brattaste vindu."
+  ],
+  "rejectReason": "",
+  "corridor": {
+   "routeId": "storli",
+   "routeName": "Fra Storli opp Storbekkdalen",
+   "routeDescriptionFull": "Fra parkeringa ved Storli (623 moh) spenner du på deg skiene ved bilen og går rett nordover opp mot Storbekkdalen gjennom bjørkelia til høyre for Veslebekken. Når du passerer skogbandet dreier ruta vestover og krysser Storbekken, og derfra følges ryggen nordover mot Storbekkhøa. Når den bratte sørøstveggen står rett imot deg går du et stykke lenger vest og opp gjennom skaret på 1313 moh, og videre i en halvsirkel over det slake terrenget til varden på 1504 moh. Der står kassa med gjesteboka.",
+   "trailhead": {
+    "name": "Storli",
+    "lat": 62.69264,
+    "lng": 9.09549,
+    "elevationM": 622.6,
+    "osmEvidence": "OSM way/233265745, amenity=parking, name=Storli, fee=yes, payment:cash=30, ski=yes, hiking=yes, senter 62.69264/9.09549, 622,6 moh. Storlidalsvegen fv6514 (OSM way/369162498) 130 m unna. Ut.no: «Fra Storli parkering spenner du på deg skia ved bilen»."
+   },
+   "waypoints": [
+    {
+     "name": "Storbekkdalen, ca 1000 moh",
+     "lat": 62.716,
+     "lng": 9.093,
+     "elevationM": 1000.2
+    },
+    {
+     "name": "Ryggen vest for Storbekken",
+     "lat": 62.72,
+     "lng": 9.079,
+     "elevationM": 1210.6
+    },
+    {
+     "name": "Skaret vest for sørøstveggen",
+     "lat": 62.728,
+     "lng": 9.072,
+     "elevationM": 1313.3
+    }
+   ],
+   "season": "des–mai",
+   "roadClosedInWinter": false,
+   "aspect": "S",
+   "grade": 2,
+   "gradeReason": "Fri Flyt fører bratteste punkt som under 30 grader og skriver at «hele oppstigningen til Storbekkhøa er i terreng under 30 grader», og klassifiserer turen som KAST 1 – enkelt. Ut.no graderer den «Krevende» på fysisk innsats: 900 høydemeter og sju kilometer én veg. Det som løfter den over en ren trimtur er sørøstveggen ved toppen og skavlene på den.",
+   "hazardNotes": "Fri Flyt: «Ett utløpsområde. Vær obs på den bratte sørøstsiden av toppen. Her kan det være skumle skavler.» Nedkjøring mot Storbekkdalen er brattere enn oppstigninga og kan være skredfarlig terreng; tryggeste rute følger samme veg ned.",
+   "teaserNo": "890 høydemeter fra Storli opp Storbekkdalen og gjennom skaret vest for den bratte sørøstveggen.",
+   "teaserEn": "890 m of climbing from Storli up Storbekkdalen and through the col west of the steep south-east face.",
+   "sources": [
+    "https://friflyt.no/topptur/oppdal/storbekkhoa",
+    "https://ut.no/turforslag/1110841"
+   ],
+   "confidence": "high",
+   "notes": "Fri Flyt gir toppunkt 1504, 6 km, 2,5 timer, himmelretning S-V, KAST 1 og startsted Storli i Storlidalen. Ut.no 1110841 gir toppunkt 1504, total stigning 900 hm, 7 km og 3 t én veg, «populær lett tilgjengelig tur fra Storli med fjellski eller på randonneski», og navngir både Veslebekken, Storbekken, skaret og alternativruta opp østryggen over høyde 1295 fra bandet mot Halsbekkhøa."
+  }
+ },
+ {
+  "slug": "okla",
+  "verdict": "corrected",
+  "corrections": [
+   "Fjellet turen går til heter Okla, men toppunktet heter Snydda, og det er der varden og turboka står. Registerpunktet for Okla ligger 2,4 km rett vest, på peiling 267, og måler 1458,8 moh; Snydda måler 1582,3. Summit-søket er kjørt på Snydda, og kortet bærer Okla som navn fordi det er navnet turen går under — ut.no sier det selv: «Merk deg at den høyeste toppen på dette fjellmassivet kalles Snydda. De fleste vil likevel si at man står på toppen av Okla når man har nådd varden på toppunktet.»",
+   "De to kildene publiserer to høyder: ut.no 1580 moh, Fri Flyt 1564. DTM1 gir 1582,3 på det høyeste punktet, altså 2,3 m over ut.nos tall og 18 over Fri Flyts. Kortet bærer målingen.",
+   "Startstedet er det samme i begge kildene, beskrevet på to måter: ut.no «parkeringen på høyre side ved garasjen nede ved Storlidalsveien» i Dalen, Fri Flyt «parkér ved brua mellom Dalsvatnet og Ångårdsvatnet». OSM way/233265746 (amenity=parking, name=Dalen, fee=yes, ski=yes) ligger 300 m fra brua Dalsbrua på fv6514, og måler 598,5 moh.",
+   "Waypointet «eggen over Mjølkskåla» er flyttet opp fra vatnet. Første utkast la det på 62.686/9.272, som DTM1 svarer 1277,0 moh og terrengklasse Innsjø på — det er selve Mjølkskåla. Ruta går over eggen med vatnet under seg, og punktet ligger nå 210 m nord for vatnet på 1324,2 moh.",
+   "Flankesveipet bekrefter at den alternative nedkjøringa mot Gjevilvatnet er det Fri Flyt kaller den, «svært bratt og seriøst»: nordvest måler 44,7 grader i snitt over 400 m med et 57,1-graders vindu 200–260 m ut, og nord 43,6 med 50,9. Sørvest, langs Okla-ryggen, måler 3,4 grader — det er den flate toppen beskrivelsene omtaler. Sør og søraust, der ruta kommer opp, måler 27,4 og 33,1.",
+   "Kortet fører nedkjøringsaspektet som S etter kildene — Fri Flyt beskriver hele sørsida og Sandbekken som nedkjøringa — mens route_metrics måler ruta til SØ. De to er ett kompasstrinn fra hverandre og beskriver hver sin ting: retninga linja peker øverst, og flanken du kjører ned."
+  ],
+  "rejectReason": "",
+  "corridor": {
+   "routeId": "dalen",
+   "routeName": "Fra Dalen over Korgtjønna og eggen ved Mjølkskåla",
+   "routeDescriptionFull": "Fra parkeringa i Dalen (599 moh), nede ved Storlidalsvegen mellom Dalsvatnet og Ångårdsvatnet, går du opp den forholdsvis bratte lia gjennom bjørkeskogen — den verste stigninga er unnagjort før skoggrensa. Videre slakt på skrå oppover mot Korgtjønna (1151 moh), og der terrenget flater ut dreier ruta vestover. Så runder du eggen med vatnet Mjølkskåla (1277 moh) under deg, på rundt 1324 moh, og tar fatt på den siste stigninga mot toppunktet Snydda, 1582 moh, der varden og turboka står.",
+   "trailhead": {
+    "name": "Dalen",
+    "lat": 62.65946,
+    "lng": 9.27791,
+    "elevationM": 598.5,
+    "osmEvidence": "OSM way/233265746, amenity=parking, name=Dalen, fee=yes, ski=yes, hiking=yes, senter 62.65946/9.27791, 598,5 moh. Gamle Storlidalsvegen (OSM way/896319987) 7 m unna, og Dalsbrua på fv6514 (way/309907330) 300 m — brua Fri Flyt oppgir som startsted. Ut.no: «Du finner parkeringen på høyre side ved garasjen nede ved Storlidalsveien. Husk å betale P-avgiften.»"
+   },
+   "waypoints": [
+    {
+     "name": "Korgtjønna",
+     "lat": 62.68181,
+     "lng": 9.29701,
+     "elevationM": 1151.0
+    },
+    {
+     "name": "Eggen over Mjølkskåla",
+     "lat": 62.688,
+     "lng": 9.27,
+     "elevationM": 1324.2
+    }
+   ],
+   "season": "des–apr",
+   "roadClosedInWinter": false,
+   "aspect": "S",
+   "grade": 2,
+   "gradeReason": "1050 høydemeter og 5,8 km én veg etter ut.no, og terrenget er ikke bratt — Fri Flyt skriver rett ut at «Okla er ikke en like bratt topptur som til Storhaugen». Det som gjør turen alvorlig er at hele sørsida samler snø: «Dette er en side der det legger seg mye snø, så vurdér skredfaren nøye.»",
+   "hazardNotes": "Fri Flyt om oppstigninga: «Dette er en side der det legger seg mye snø, så vurdér skredfaren nøye.» Bekkedalen som Sandbekken skjærer gir fristende kjøring med naturlige halfpipes, «men den bør bare kjøres under svært stabile forhold». Den alternative nedkjøringa på nordsida, mot Gjevilvatnet, er «svært bratt og seriøst» og ender langt fra bilen. Området rundt toppen er flatt, og i dårlig sikt er det navigeringa som er problemet.",
+   "teaserNo": "1030 høydemeter fra Dalen i Storlidalen opp til Snydda — varden på toppen av Okla-massivet.",
+   "teaserEn": "1030 m of climbing from Dalen in Storlidalen to Snydda — the cairn on the high point of the Okla massif.",
+   "sources": [
+    "https://friflyt.no/topptur/oppdal/okla",
+    "https://ut.no/turforslag/1110880/okla-pa-ski-fra-dalen",
+    "https://ut.no/turforslag/1112341/okla-snydda-1580-moh"
+   ],
+   "confidence": "high",
+   "notes": "Ut.no 1110880 er ruta fra Dalen (toppunkt 1580, total stigning 1050 hm, 5,8 km, 3,5 t én veg, randonee/fjellski, vinter/vår) og navngir Korgtjønna, det flate partiet, eggen og Mjølkskåla. Fri Flyt gir toppunkt 1564, 1000 høydemeter, startsted Stenbuenget i Storlidalen og beskriver oppstigninga gjennom hyttefeltet på nordøstsida av elva mellom Dalsvatnet og Ångårdsvatnet. Ut.no 1112341 beskriver den samme toppen fra Bårdsgarden og Vassendsetra (1129 hm, 10,4 km) og er den som slår fast at varden med kasse og bok står på Snydda 1580."
+  }
+ },
+ {
+  "slug": "snota",
+  "verdict": "ok",
+  "corrections": [
+   "Toppen måler 1668,1 moh på DTM1 mot publiserte 1668. Registerpunktet ligger 40 m fra det høyeste punktet.",
+   "Svartvatnet er kontrollmålet på at korridoren følger den beskrevne ruta: ut.no oppgir «over Svartvatnet (889 moh)», DTM1 leser 888,0. Det samme gjelder flata før breen — ut.no «på 1350 moh flater det ut et stykke», DTM1 leser 1352,1 på punktet i korridoren.",
+   "Starthøyda er 495,0 moh på DTM1 mot ut.nos oppgitte 490. Parkeringa (OSM way/236522760) ligger ved demninga på Gråsjøen, 1,3 km sør for Gråhaugen fjellstue, og det er den ut.no beskriver: «parkering rett på nedsida eller på høyde med dammen på Gråsjøen, tett ved Gråhaugen Fjellstue».",
+   "Første del av ruta er lagt på den merkede sommerstien mot Trollheimshytta (OSM way/236522753), som starter 140 m fra parkeringa og skrår opp lia — det er stien ut.no sier du skal vente på. Advarselen mot å skrå opp tidligere er ikke en detalj: «det kan gå skred fra fonna på Gråhaugfjellet. Enkelte år går disse helt ut på vannet.»",
+   "Breen ut.no oppgir er kontrollert i Kartverkets terrengklasser og finnes på selve linja: sju vertexer mellom 1364 og 1471 moh svarer SnøIsbre, og strekket måler 436 m — mot ut.nos «fra ca 1380 moh går ruta over bre i ca 500 m». Punktene rett før og etter, 1352,4 og 1473,8 moh, er ÅpentOmråde. Det er motsatt av Torvløysa, der en tilsvarende påstand ikke lot seg bekrefte.",
+   "Flankesveipet bekrefter «toppflanken er stupbratt mot Ø»: aust måler 48,1 grader i snitt over 400 m med et 57,9-graders vindu 130–190 m ut, sør og søraust har 71-graders vindu allerede 10–70 m ut, og nordaust 64,2. Vest og nordvest — der ruta kommer opp — måler 14,8 og 9,4.",
+   "Korridoren gir tilbake 43 høydemeter mellom platået øst for Midtveggen (931,3) og Svartvatnet (888,0), og den routede linja 95 i alt. Ut.no oppgir «tapte hm opp: ca 100», så det er ruta som beskrives, ikke en omveg routeren fant.",
+   "Adkomsten er kontrollert mot kilden: ut.no oppgir «Bomvei 15 km opp Folldalsveien til Gråhaugen, betaling med kort» fra avkjøringa på Kvammen ved fylkes- og kommunegrensa Rindal/Surnadal, og parkeringa (OSM way/236522760) ligger ved dammen på Gråsjøen, 1,3 km sør for Gråhaugen fjellstue som har sin egen plass."
+  ],
+  "rejectReason": "",
+  "corridor": {
+   "routeId": "grahaugen",
+   "routeName": "Fra Gråhaugen over Svartvatnet og Litj-Snota",
+   "routeDescriptionFull": "Fra parkeringa ved dammen på Gråsjøen (495 moh) følger du traséen for vegen langs vatnet til der sommerstien skrår opp lia — ikke tidligere, for det kan gå skred fra fonna på Gråhaugfjellet, og enkelte år går de helt ut på vatnet. Ruta går så sør–sørvest opp lia (686 moh), ut på platået øst for Midtveggen (931 moh) og over Svartvatnet (888 moh). Derfra kommer du til foten av Litj-Snota, som du runder i øst (1026 moh) og sør. På 1352 moh flater det ut, og du ser den bratte bakken rett imot i vest der breen begynner; ruta går bratt og skrått oppover mot høyre. Når breen er unnagjort drøye 100 høydemeter seinere (1516 moh) og du kommer opp på toppflanken, dreier ruta sørvest, sør og til slutt sør–sørøst til toppunktet på 1668 moh.",
+   "trailhead": {
+    "name": "Gråhaugen",
+    "lat": 62.91786,
+    "lng": 9.13063,
+    "elevationM": 495.0,
+    "osmEvidence": "OSM way/236522760, amenity=parking, senter 62.91786/9.13063, 495,0 moh, ved demninga på Gråsjøen. Gråhaugen fjellstue (OSM node/1288237038, tourism=chalet) ligger 1,3 km nord, med sin egen parkering (way/236522761). Ut.no: «Bomvei 15 km opp Folldalsveien til Gråhaugen, betaling med kort ... parkering rett på nedsida eller på høyde med dammen på Gråsjøen, tett ved Gråhaugen Fjellstue.»"
+   },
+   "waypoints": [
+    {
+     "name": "Opp lia over Gråsjøen",
+     "lat": 62.9054,
+     "lng": 9.12477,
+     "elevationM": 686.0
+    },
+    {
+     "name": "Platået øst for Midtveggen",
+     "lat": 62.88497,
+     "lng": 9.13177,
+     "elevationM": 931.3
+    },
+    {
+     "name": "Svartvatnet",
+     "lat": 62.87189,
+     "lng": 9.11349,
+     "elevationM": 888.0
+    },
+    {
+     "name": "Øst for Litj-Snota",
+     "lat": 62.86,
+     "lng": 9.114,
+     "elevationM": 1025.6
+    },
+    {
+     "name": "Flata på 1350 moh",
+     "lat": 62.8555,
+     "lng": 9.103,
+     "elevationM": 1352.1
+    },
+    {
+     "name": "Opp breen mot toppflanken",
+     "lat": 62.854,
+     "lng": 9.088,
+     "elevationM": 1515.5
+    }
+   ],
+   "season": "feb–mai",
+   "roadClosedInWinter": false,
+   "aspect": "Ø",
+   "grade": 3,
+   "gradeReason": "1250 høydemeter og tolv kilometer én veg, med en bre på ruta og lange strekk i utløpsområder. Ut.no fører den som «Krevende» fysisk og «Krevende, KAST-klasse 2, utfordrende terreng», og skriver rett ut at «ruta går i skredterreng, både løsneområder over 30 grader bratt og utløpsområder som det ikke er mulig å omgå».",
+   "hazardNotes": "Ut.no fører tre: ruta går i skredterreng med løsneområder over 30 grader og utløpsområder som ikke kan omgås; fra ca 1380 moh går den over bre i ca 500 m, «så sjekk med lokalkjente i forkant at det er nok snø på dette strekket»; og «toppflanken er stupbratt mot Ø, så hold god avstand her». I tillegg advarer beskrivelsen mot å skrå opp lia for tidlig på grunn av fonna på Gråhaugfjellet, og mot våte løssnøskred utover dagen på varme vårdager.",
+   "teaserNo": "1270 høydemeter fra Gråhaugen over Svartvatnet og rundt Litj-Snota til det høyeste fjellet nord i Trollheimen.",
+   "teaserEn": "1270 m of climbing from Gråhaugen across Svartvatnet and around Litj-Snota to the highest mountain in northern Trollheimen.",
+   "sources": [
+    "https://ut.no/turforslag/1112155422/snota-1668-fra-grahaugen-surnadal-topptur-ski",
+    "https://ut.no/turforslag/1112155423/snota-1668-fra-trollheimshytta-surnadal-topptur-ski",
+    "https://ut.no/turforslag/117381/topptur-til-snota-fra-trollheimshytta",
+    "https://ut.no/turforslag/119260/bestigning-av-snota-selve-symbolet-pa-trollheimen"
+   ],
+   "confidence": "high",
+   "notes": "Ut.no 1112155422 er skituren fra Gråhaugen (starthøyde 490, slutthøyde 1668, ca 100 tapte høydemeter opp, total stigning ca 1250, 12 km, 4:30 t opp, eksposisjon Ø, KAST-klasse 2), beskrevet av Håvard Engen og gjennomgått av Trondhjems Turistforening. De tre andre ut.no-turene dekker den samme toppen fra Trollheimshytta og Gråsjøen med andre forfattere og er tatt med som uavhengig dekning; ingen av dem starter ved en veg, og de er derfor ikke ruter i seg selv her."
+  }
  }
 ]

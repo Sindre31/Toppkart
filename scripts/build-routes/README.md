@@ -183,11 +183,11 @@ one line:
 | Bitihorn | Bygdin (549 m) and Båtskaret (454 m) |
 | Høgevarde | Tempelseter (598 m) and Norefjellstua (826 m) — opposite sides of Norefjell |
 
-Nine tours carry a second route; the table above is all of them. 77 routes over
-68 tours. The first route of a tour is the one its own `verticalM` and `duration`
+Nine tours carry a second route; the table above is all of them. 84 routes over
+75 tours. The first route of a tour is the one its own `verticalM` and `duration`
 describe. Alternatives are only added where a second route is actually documented
 — `ALTERNATES` in `build_corridors.py`, and the research output, are not places
-to invent one because the schema allows it. The other 59 tours have a single
+to invent one because the schema allows it. The other 66 tours have a single
 route, and the app renders no picker for them.
 
 `ALTERNATES` only reaches the first 24, because `build_corridors.py` is fed by a
@@ -1053,6 +1053,157 @@ pattern matched 44 of the 68 rows and reported clean on the 24 it could not see 
 which is exactly the failure mode this file exists to catch, one level up. The
 separator is `,\s*` now, and the row count is printed so a silent shortfall is
 visible.
+
+## The Trondheim round
+
+Seven peaks, on the fjells a car from Trondheim reaches in one to two hours. Two
+regions: **Trøndelag** for the three tops in Melhus and Trondheim kommune, and
+**Trollheimen** for the four in Oppdal and Surnadal. The app goes from 68 tours
+to 75.
+
+The conditions the earlier rounds were built on hold, with the primary source
+split by area. For the four Trollheimen tours it is **Fri Flyt**, which indexes
+Oppdal as `skiturer-oppdal` and publishes the same shape of route description as
+for Sunnmøre and Vestland — a facts block with toppunkt, høydemeter, kilometer,
+startsted, himmelretning, bratteste punkt and KAST class, and for two of them its
+own GPS coordinate for the summit. For the three near town it is **ut.no**, which
+is where the ski tours on Trondheim's local fjells are actually published: a
+series described by Håvard Engen and reviewed by Trondhjems Turistforening, each
+with a start elevation, a summit elevation, height lost on the way up, total
+climb, length, time, aspect, and a KAST terrain class. Every tour has a second,
+independent source; every trailhead has a mapped car park; every waypoint
+resolves in the place-name register and measures on DTM1.
+
+| tour | region | start | summit | gain | km | steepest 100 m band | steepest 30 m | grade |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Snota | Trollheimen | 495 | 1668 | 1268 | 10.2 | 15.7° | 28.9° | 3 |
+| Okla | Trollheimen | 598 | 1582 | 1028 | 5.6 | 20.6° | 25.1° | 2 |
+| Storhornet | Trollheimen | 653 | 1589 | 938 | 6.5 | 19.1° | 21.8° | 2 |
+| Storbekkhøa | Trollheimen | 623 | 1504 | 893 | 5.6 | 17.5° | 26.4° | 2 |
+| Rensfjellet | Trøndelag | 411 | 942 | 674 | 11.0 | 12.2° | 25.9° | 2 |
+| Vassfjellet | Trøndelag | 184 | 711 | 541 | 4.7 | 15.9° | 23.0° | 1 |
+| Kråkfjellet | Trøndelag | 411 | 815 | 430 | 9.3 | 5.8° | 18.6° | 2 |
+
+`check_new_corridors.py` re-queries all of it from scratch and comes back with
+one note across the seven — Snota's give-back, which the source states itself
+(«tapte hm opp: ca 100» against a routed 95). `check_routes.py` calls the 75
+tours and 84 routes clean, and `check_tours.py` the 75 cards.
+
+Two tours leave from the same car park at Håen, which is the Tempelseter shape
+again: one ploughed road in and two kommunetopper off the same track.
+
+### What the sources got right, and where they did not
+
+Five of the seven summits land within 2.1 m of their published height, and two of
+those are confirmed twice over. **Storhornet** reads 1589.0 m on DTM1 against a
+published 1589, and Fri Flyt's own GPS position for the top — 213151.854,
+6958824.056 in UTM33 — converts to 10 m from the cell the summit search climbed
+to. **Storbekkhøa** reads 1504.3 against 1504, with Fri Flyt's coordinate 27 m
+away. Rensfjellet reads 941.5 against 941 and Vassfjellet 710.9 against 710.
+
+**Kråkfjellet is the sixth, and it is 2 m short.** Trondheim's kommunetopp is
+published as 817 m everywhere; the highest cell within 300 m of the register
+point reads 814.9. The card carries 815, which is the rule Storehorn set: where
+the card and the terrain model disagree, the terrain model is the one that was
+measured.
+
+**Okla's summit is registered under another name, and the two sources publish two
+heights.** The mountain is Okla; its high point — where the cairn and the summit
+book are — is registered as **Snydda**, and the point registered as *Okla* lies
+2.4 km due west on 1458.8 m ground. Ut.no publishes 1580 m for the top and Fri
+Flyt 1564. DTM1 reads 1582.3, which settles it in ut.no's favour and puts Fri
+Flyt's figure 18 m low. The card carries the measurement and the name the tour
+goes under.
+
+**Storbekkhøa's two published climbs are 300 m apart.** Fri Flyt gives 600
+høydemeter, ut.no 900. The car park measures 622.6 m and the summit 1504.3 — 882
+m of pure difference — and the routed line climbs 893. Ut.no's figure is the one
+that matches the ground; Fri Flyt's fits no start on this side of the mountain.
+
+**Kråkfjellet's routed gain is 89 m below ut.no's.** The description says «følg
+rygg eller søkk i samme retning avhengig av snøen og skiføret», and the ridges
+here run north–south: a line that crosses them collects up-and-down that a line
+along them does not. The card carries the routed 430 m and the guide says why the
+published 519 is different.
+
+**Two waypoints are inferences, and both say so.** Rensfjellet's crossing of
+Oksdalen is not a named place — the valley's register point sits 3.95 km away on
+a bearing of 15 — so the crossing was read off the terrain model as the low line
+running south from it, 532.0 m. Storbekkhøa's «skaret du følger opp mot toppen»
+is named in neither source; the point in the corridor, 1313.3 m, is where both
+descriptions send you, west of the steep south-east face.
+
+### What the flank sweeps found
+
+All seven summits were swept on eight bearings with `flank_probe.py` before a word
+was written, and the sweeps are in `measurements.json`. Three of them changed the
+copy, and one changed the research.
+
+- **Storhornet's published hazard note points 3 km away from the hazard.** Fri
+  Flyt warns about «det bratte terrenget rundt Omnråa sør for toppen». Omnråa is
+  real — a cirque registered 3.02 km south of the cairn — but the south side
+  directly below the top measures 6.0° mean with an 8.2° steepest window, and the
+  southward radial does not reach 24.8° until 1450–1500 m out. What is steep where
+  you stand is **north-east**: 30.7° mean with 46.2° in the window 10–70 m out.
+  This is the Storehorn shape exactly, and the guide now names both and says which
+  is which.
+- **Vassfjellet's ski centre was on the wrong side of the mountain in the
+  research.** The note said Vassfjellet vinterpark lies north of the summit. The
+  alpine area is **east**: the skisenter's own polygon has its centre 1.3 km out on
+  a bearing of 86, the vinterpark 2.5 km on 80, and the nearest lift ends 893 m
+  from the cairn on 46. The route from Markavollen comes up from the west and
+  crosses none of it. The «anleggsveg mot toppen» ut.no puts you on is the service
+  road to **Melhus hovedsender**, a communications mast 131 m from the cairn.
+- **Snota's glacier is on the line, and it was checked rather than assumed.** Ut.no
+  says the route crosses a bre for about 500 m from around 1380 moh. Seven vertices
+  of the routed line between 1364 and 1471 m answer `SnøIsbre` in Kartverket's
+  terrain classes, and the stretch measures 436 m; the points either side of it are
+  `ÅpentOmråde`. That is the opposite of the Torvløysa case, where the same kind of
+  claim did not survive the query — and it is why the claim is worth querying
+  either way.
+- **Snota's summit flank confirms its own warning.** «Toppflanken er stupbratt mot
+  Ø» measures 48.1° mean with a 57.9° window 130–190 m out; south and south-east
+  carry 71.4° and 71.0° windows as little as 10–70 m from the top. West and
+  north-west — where the route comes up and goes back down — measure 14.8° and 9.4°.
+- **Two of the three tours near town have no steep side at all.** Kråkfjellet's
+  steepest 60 m window in any direction is 21.8°, and north measures 2.0° mean;
+  Rensfjellet's is 17.8°. Their guides are about distance, ice on a drawn-down
+  reservoir and cornices you can fall off in flat light, because that is what those
+  mountains are. Storbekkhøa is the other way: its south-east face measures 34.1°
+  mean with 46.9° 20–80 m out from the cairn, which is exactly the wall Fri Flyt
+  warns about, while the north-west half circle the route climbs measures 3.7°.
+
+### The first move off the summit
+
+Three of the seven do not ski back the way the card's aspect suggests, and the
+bearings are in `measurements.json` so the guides can say so:
+
+- **Storbekkhøa** leaves the cairn heading **west** (276° over the first 200 m,
+  236° over 500) even though the car park bears 170. That is Fri Flyt's half
+  circle, and it has to be finished before the line turns south.
+- **Okla** leaves heading **east** along the ridge (73°) with the car park at 167,
+  because north and north-west off that summit measure 43.6° and 44.7° mean with
+  50.9° and 57.1° windows — Fri Flyt's alternative descent to Gjevilvatnet, which
+  it calls «svært bratt og seriøst».
+- **Snota** leaves heading **north-west** (320°) with the car park at 13, running
+  back along the summit flank before it drops east down the glacier. Taking the
+  card's Ø literally at the cairn puts you on the 48.1° face.
+
+### The guides
+
+All seven have a guide in bokmål and English, written against `guide_brief.py`,
+the corridor research and the sweeps, and they pass `check_guides.py` clean — as
+do the other 68 after the run. The Norwegian and English versions were compared
+number by number and agree.
+
+The writing pass caught four errors in its own material, which is the argument for
+doing the measuring before the writing rather than after: Vassfjellet's ski centre
+(above), Storhornet's Omnråa note (above), the register point for Okla described
+as «vest-sørvest» when the bearing is 267, and Oksdalen's register point given as
+4.2 km from the crossing when it is 3.95. What has *not* happened is an
+independent adversarial read: the same pass that wrote these guides is the one
+that checked them. That is the gap to close first, and the method is the one in
+"The 22, read adversarially" above.
 
 ## Network
 

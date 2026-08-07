@@ -142,6 +142,83 @@
   "season": "jan–apr",
   "hasGuide": true
  },
+ "vassfjellet": {
+  "name": "Vassfjellet",
+  "region": "Trøndelag",
+  "summitM": 711,
+  "verticalM": 540,
+  "duration": "3–5 t",
+  "grade": 1,
+  "aspect": "V",
+  "season": "des–apr",
+  "hasGuide": false
+ },
+ "krakfjellet": {
+  "name": "Kråkfjellet",
+  "region": "Trøndelag",
+  "summitM": 815,
+  "verticalM": 430,
+  "duration": "4–6 t",
+  "grade": 2,
+  "aspect": "S",
+  "season": "des–apr",
+  "hasGuide": false
+ },
+ "rensfjellet": {
+  "name": "Rensfjellet",
+  "region": "Trøndelag",
+  "summitM": 942,
+  "verticalM": 670,
+  "duration": "5–7 t",
+  "grade": 2,
+  "aspect": "V",
+  "season": "des–apr",
+  "hasGuide": false
+ },
+ "snota": {
+  "name": "Snota",
+  "region": "Trollheimen",
+  "summitM": 1668,
+  "verticalM": 1270,
+  "duration": "6–8 t",
+  "grade": 3,
+  "aspect": "Ø",
+  "season": "feb–mai",
+  "hasGuide": false
+ },
+ "storbekkhoa": {
+  "name": "Storbekkhøa",
+  "region": "Trollheimen",
+  "summitM": 1504,
+  "verticalM": 890,
+  "duration": "4–6 t",
+  "grade": 2,
+  "aspect": "S",
+  "season": "des–mai",
+  "hasGuide": false
+ },
+ "okla": {
+  "name": "Okla",
+  "region": "Trollheimen",
+  "summitM": 1582,
+  "verticalM": 1030,
+  "duration": "4–6 t",
+  "grade": 2,
+  "aspect": "S",
+  "season": "des–apr",
+  "hasGuide": false
+ },
+ "storhornet": {
+  "name": "Storhornet",
+  "region": "Trollheimen",
+  "summitM": 1589,
+  "verticalM": 940,
+  "duration": "4–6 t",
+  "grade": 2,
+  "aspect": "SØ",
+  "season": "des–mai",
+  "hasGuide": false
+ },
  "kirketaket": {
   "name": "Kirketaket",
   "region": "Romsdal",

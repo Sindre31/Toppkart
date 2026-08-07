@@ -694,5 +694,53 @@
     "summit_dtm": 871.4,
     "claims": 871,
     "stored_off_km": 0.02
+  },
+  "vassfjellet": {
+    "name": "Vassfjellet",
+    "lat": 63.26205,
+    "lng": 10.35659,
+    "summit_dtm": 710.9,
+    "claims": 710,
+    "stored_off_km": 0.04
+  },
+  "krakfjellet": {
+    "name": "Kråkfjellet",
+    "lat": 63.16336,
+    "lng": 10.63219,
+    "summit_dtm": 814.9,
+    "claims": 817,
+    "stored_off_km": 0.02
+  },
+  "rensfjellet": {
+    "name": "Rensfjellet",
+    "lat": 63.14219,
+    "lng": 10.72186,
+    "summit_dtm": 941.5,
+    "claims": 941,
+    "stored_off_km": 0.01
+  },
+  "storhornet": {
+    "name": "Storhornet",
+    "lat": 62.64779,
+    "lng": 9.39918,
+    "summit_dtm": 1589.0,
+    "claims": 1589,
+    "stored_off_km": 0.04
+  },
+  "storbekkhoa": {
+    "name": "Storbekkhøa",
+    "lat": 62.73022,
+    "lng": 9.08038,
+    "summit_dtm": 1504.3,
+    "claims": 1504,
+    "stored_off_km": 0.01
+  },
+  "okla": {
+    "name": "Snydda",
+    "lat": 62.68955,
+    "lng": 9.26225,
+    "summit_dtm": 1582.3,
+    "claims": 1580,
+    "stored_off_km": 0.02
   }
 }
