@@ -111,8 +111,8 @@
   "grade": 4,
   "gradeReason": "977 høydemeter og fem kilometer fra sjøen, og en avslutning som ikke er skiterreng: sørvestryggen måler 45-52 grader i 100-metersvinduer over ca. 800 moh, og nordsida faller 53-70 grader rett under toppen. Selve skidelen opp vestflanken er 20-32 grader.",
   "roadClosedInWinter": false,
-  "teaserNo": "1020 høydemeter fra Svarthola via Svartholvatnet og Breitindvatnet; de siste 140 er klyving på sørvestryggen.",
-  "teaserEn": "1020 metres of ascent from Svarthola past Svartholvatnet and Breitindvatnet; the last 140 are a scramble on the summit ridge.",
+  "teaserNo": "1050 høydemeter fra Svarthola via Svartholvatnet og nordbredden av Breitindvatnet; de siste 244 er klyving på sørvestryggen.",
+  "teaserEn": "1050 metres of ascent from Svarthola past Svartholvatnet and the north shore of Breitindvatnet; the last 244 are a scramble on the summit ridge.",
   "hazardNotes": "Vestflanken opp fra Breitindvatnet er et sammenhengende heng på 25-32 grader med vatnet som terrengfelle nedenfor. Nord- og nordøstsida av toppen faller 53-70 grader rett under egget, så skavlene ligger der — hold deg på sørvestsida av ryggen. De siste 140 høydemeterne er utsatt klyving og gjøres uten ski på beina.",
   "sources": [
    "https://ut.no/turforslag/1112122/breidtind-1001-moh",
@@ -127,7 +127,8 @@
    "Checked the summit block before trusting the corridor to reach the top. 69.45030,17.65120 (762.9 m) to the summit is 44.4 degrees over 249 m, and the ridge steps above ~800 m measure 45-52 degrees in ~100 m windows (69.4503,17.6512 = 762.9 -> 69.4510,17.6535 = 827.9 -> 69.4514,17.6550 = 971.1). That is not a skin track, so the corridor stops below it and confidence is low.",
    "Cross-checked the summit rather than assuming it. The SSR point named Breitinden (69.45536,17.64851) reads 983.2 m in DTM1; the point in summits.json is 0.46 km south-east and reads 1007.0 m. That south-east top is what Peakbook lists as 'Breidtinden (SO)' 1008 m and is the real high point of Senja. summits.json unchanged.",
    "Verified the trailhead against the text rather than picking the nearest road. The route description says the start is 5-6 km east of Senjahopen; SSR Senjahopen (69.49686,17.48979) to the OSM parking at 69.45859,17.59591 is 5.9 km.",
-   "Adversarial pass on the written guide. (1) The scramble is 244 vertical metres, not 140: skis are left at the 762,9 m shoulder and the summit is 1007,0. (2) The west flank is not a uniform 25-32 degrees. Twenty-metre-smoothed slope within 60 m of the line: 480-550 moh median 23,6, 550-620 29,0, 620-680 35,6, 680-720 40,7, 720-770 35,6, and the fall line directly below the shoulder measures 50-59. (3) The crest above 800 moh measures 54 degrees in its steepest 100 m window and over 60 in the shortest steps; 45-52 corresponds to 150-200 m windows."
+   "Adversarial pass on the written guide. (1) The scramble is 244 vertical metres, not 140: skis are left at the 762,9 m shoulder and the summit is 1007,0. (2) The west flank is not a uniform 25-32 degrees. Twenty-metre-smoothed slope within 60 m of the line: 480-550 moh median 23,6, 550-620 29,0, 620-680 35,6, 680-720 40,7, 720-770 35,6, and the fall line directly below the shoulder measures 50-59. (3) The crest above 800 moh measures 54 degrees in its steepest 100 m window and over 60 in the shortest steps; 45-52 corresponds to 150-200 m windows.",
+   "Teaseren var ikkje oppdatert då linja flytta seg; emit_new_tours.py har meldt frå om usemja mellom teaser og kort sidan då. Retta no."
   ],
   "notes": "No ski-specific route description for Breitinden could be found, and that is the main reason confidence is low. Guided operators list Senja's highest peak as a ski-touring objective, but every line-by-line description found (ut.no, Peakbook, Utemagasinet) is the normal route in summer form: Svarthola parking -> Svartholvatnet -> east over the ridge -> Breitindvatnet -> along the north-east side of the lake -> the shelf south-west of the summit ridge -> the south-west ridge, called 'airy and steep, comparable to many Jotunheimen peaks' with several small exposed climbing sections. The approach valley is the same for ski and foot - there is no other feasible way in from Fv862 - so the corridor pins the valley, not the footpath's zig-zags. The corridor ends at the 762.9 m shoulder because the ridge above measures 45-52 degrees; treat everything above roughly 850 m as a boot-and-scramble finish. Note also that the summit used here (1007.0 m) is the south-east top, 0.46 km from the SSR point named Breitinden, which reads 983.2 m."
  },
@@ -137,8 +138,8 @@
   "grade": 3,
   "gradeReason": "Sjølve klatringa er ikkje teknisk, men turen er lang - nær 12 km og 920 høgdemeter kvar veg - og har eit kort, bratt trinn ut av Folarskardet som måler 36,7 grader over 41 m på den slakaste linja eg finn. Rutebeskrivinga tilrår stegjern og lett isøks når snøen er hard eller isete.",
   "roadClosedInWinter": false,
-  "teaserNo": "Nær 12 km inn frå Haugastøl og 950 høgdemeter, med eit kort 37-graders trinn opp frå Folarskardet.",
-  "teaserEn": "Nearly 12 km in from Haugastøl and 950 m of ascent, with one short 37-degree step up out of Folarskardet.",
+  "teaserNo": "Nær 12 km inn frå Haugastøl og 970 høgdemeter, med eit kort 37-graders trinn opp frå Folarskardet.",
+  "teaserEn": "Nearly 12 km in from Haugastøl and 970 m of ascent, with one short 37-degree step up out of Folarskardet.",
   "hazardNotes": "Trinnet opp frå Folarskardet er 35-40 grader og er det einaste verkelege skredterrenget på turen; det kan òg vera avblåst og isete, og då er det her ein treng stegjern. Toppplatået er ope og navigasjonskrevjande i dårleg sikt, og skavlane på nordsida av skarvet heng langt ut over Raggsteindalen. Den lange innmarsjen gjer vêrvindauget viktigare enn sjølve ruta.",
   "sources": [
    "https://www.tinderangel.no/pa-topptur-til-folarskardnuten/",
@@ -158,7 +159,8 @@
    "Descent aspect målt, ikkje gjetta: fallvekta gjennomsnittleg fallretning på nedkøyringa er 167,2 grader, altså S. Å føre denne turen som V hadde vore feil - vestsida er Hellevassfonn og Finse-traversen, ikkje normalruta.",
    "Adversarial pass on the written guide. (1) The route ends on a subsidiary top. dtm_point gives 1927,29 m at the route's endpoint 60.61336/7.79146 and 1932,12 m at 60.60743/7.78250, 821 m west-south-west - the 1933 m figure tinderangel, turtid and Peakbook all publish, and the same conflict summits.json already records as claims 1933 against summit_dtm 1927,3. Resolving it means moving the summit and re-routing, not editing prose. (2) The routed 25,5 degrees is computed on the router's downsampled grid; re-measuring the same polyline against DTM1 gives about 40 degrees over 30 m at the step out of Folarskardet. The line crosses the step; it does not avoid it. (3) The last hundred vertical metres average 11 degrees, not the 5 of the 1900-2000 band, which on this route covers only the last 27 metres.",
    "Descent aspect målt, ikkje gjetta: fallvekta gjennomsnittleg fallretning på nedkøyringa er 154,3 grader på linja til det flytta toppunktet (167,2 på den gamle), altså S. Å føre denne turen som V hadde vore feil - vestsida er Hellevassfonn og Finse-traversen, ikkje normalruta.",
-   "Toppunktet flytta. Ruta enda på 60,61336/7,79146, 1927,3 moh, medan Folarskardnuten er ført med 1933 moh. Høgaste punktet i DTM1 ligg på 60,60742/7,78252 og måler 1932,2 - 821 meter unna på peiling 216 grader, med eit skar på 1899,9 imellom. Feilen låg i resolve_summits.py, som stoppa på fyrste disk der maksimum var innanfor 15 meter av den førte høgda; 1927,3 er 5,7 meter unna 1933 og vann difor over den verkelege toppen 647 meter lenger ute. Frå skulderen på 1830 er den nye avslutninga 702 meter vest-sørvest (peiling 253) og stig jamt frå 0,5 til 17,5 grader - ikkje noko nytt bratt parti."
+   "Toppunktet flytta. Ruta enda på 60,61336/7,79146, 1927,3 moh, medan Folarskardnuten er ført med 1933 moh. Høgaste punktet i DTM1 ligg på 60,60742/7,78252 og måler 1932,2 - 821 meter unna på peiling 216 grader, med eit skar på 1899,9 imellom. Feilen låg i resolve_summits.py, som stoppa på fyrste disk der maksimum var innanfor 15 meter av den førte høgda; 1927,3 er 5,7 meter unna 1933 og vann difor over den verkelege toppen 647 meter lenger ute. Frå skulderen på 1830 er den nye avslutninga 702 meter vest-sørvest (peiling 253) og stig jamt frå 0,5 til 17,5 grader - ikkje noko nytt bratt parti.",
+   "Teaseren var ikkje oppdatert då linja flytta seg; emit_new_tours.py har meldt frå om usemja mellom teaser og kort sidan då. Retta no."
   ],
   "notes": "Ruta er godt dokumentert som vintertur: tinderangel.no skriv at Folarskardnuten 'normalt sett' blir gått som fjellskitur nettopp på grunn av den lange innmarsjen, 'fra Haugastøl er det en lang og jevn stigning på 600 høydemeter til foten av Folarskardnuten inne i Folarskardet', løypa inn er 'nesten 12 km', Lordehytta frå 1880 står i skardet på 1620 moh, og oppe på ryggen er det 'noen korte bratte partier som må forseres'. Peakbook: 'ved det vesle vatnet på ca 1600 moh forlèt ein den merkte stien' og følgjer varder. Korridoren er lagd på den kvista DNT-vinterruta i OSM (way/390078020 frå Haugastøl og way/400561355 vidare til Folarskardet, operator=DNT Oslo og Omegn, piste:type=nordic) - dei to midtre vegpunkta er noder på desse. Målt vertikal p-plass til topp er 925,1 m (1007,14 til 1932,22), straklinjelengd 11,3 km. Alle fem koordinatane er lesne tilbake frå ws.geonorge.no/hoydedata/v1/punkt; alle kjem ut som 'ÅpentOmråde'. Confidence er medium og ikkje high fordi det bratte trinnet ut av skardet ligg nær grensa for kva som er skibart - 36,7 grader målt, og fleire nærliggjande linjer måler 40-46 grader - så ruteren må treffe rampa, og i hard eller isete snø tek folk skia av her."
  },
@@ -1209,8 +1211,8 @@
   "grade": 2,
   "gradeReason": "Vel ti kilometer én veg og drøye 500 høydemeter i enkelt terreng — ut.no fører turen som «Middels» og terrengklassen for nabotoppen fra samme start som KAST 1. Vanskeligheten er lengden og orienteringa mellom ryggene, ikke bratthet.",
   "roadClosedInWinter": false,
-  "teaserNo": "Kommunetoppen i Trondheim: 430 høydemeter og ni kilometer fra Håen over Kråklivollen og Rundtjønnin.",
-  "teaserEn": "The highest point in Trondheim municipality: 430 m of climbing and nine kilometres from Håen past Kråklivollen and Rundtjønnin.",
+  "teaserNo": "Kommunetoppen i Trondheim: 470 høydemeter og ni kilometer fra Håen over Kråklivollen og Rundtjønnin.",
+  "teaserEn": "The highest point in Trondheim municipality: 470 m of climbing and nine kilometres from Håen past Kråklivollen and Rundtjønnin.",
   "hazardNotes": "Ut.no: «Håen er regulert og tappes ned hver vinter, sørg for ikke å komme ut på usikker is når du går langs kanten av vannet.» Og: «Vær obs på høye skavler i le-retningen i perioder det har vært mye vind når du går/kjører på tvers av ryggene i området. Hold avstand fra disse særlig i dårlig lys så du ikke risikerer å falle ned.»",
   "sources": [
    "https://ut.no/turforslag/1112157076/topptur-pa-ski-til-krakfjellet-817-moh-fra-haen-melhus",
@@ -1225,7 +1227,8 @@
    "Rundtjønnin er kontrollmålet på at korridoren følger den beskrevne løypa: ut.no oppgir «Rundtjønnin 525 moh», DTM1 leser 526,0. Kråklivollen måler 452,0.",
    "Ruta er lagt langs nordbredden av Håen slik beskrivelsen sier, ikke over vatnet. Håen er regulert og tappes ned hver vinter, og ut.no advarer eksplisitt mot usikker is langs kanten.",
    "Den routede linja stiger 430 høydemeter mot ut.nos oppgitte 519, og gir tilbake 26 mot deres «ca 140». Forskjellen er reell og ligger i linjevalget: beskrivelsen sier «følg rygg eller søkk i samme retning avhengig av snøen og skiføret», og ryggene her går nord–sør, så en linje som krysser dem samler opp og ned som en linje langs dem ikke gjør. Kortet fører den routede stigninga, som er den linja appen tegner.",
-   "Flankesveipet finner ingen bratt side på dette fjellet: brattaste 60-metersvindu i noen retning er 21,8 grader mot aust, og nord måler 2,0 grader i snitt. Skavlene ut.no advarer mot er et fallproblem i dårlig lys, ikke et skredproblem, og guiden skal si det slik."
+   "Flankesveipet finner ingen bratt side på dette fjellet: brattaste 60-metersvindu i noen retning er 21,8 grader mot aust, og nord måler 2,0 grader i snitt. Skavlene ut.no advarer mot er et fallproblem i dårlig lys, ikke et skredproblem, og guiden skal si det slik.",
+   "Teaseren var ikkje oppdatert då linja flytta seg; emit_new_tours.py har meldt frå om usemja mellom teaser og kort sidan då. Retta no."
   ],
   "notes": "Ut.no 1112157076 er skituren fra Håen (starthøyde 418, slutthøyde 817, 10,6 km, ca 140 tapte høydemeter opp, eksposisjon S, desember–april), beskrevet av Håvard Engen og gjennomgått av Trondhjems Turistforening. Den samme toppen er uavhengig beskrevet fra Brøttem i to andre ut.no-turer, og turartikkelen på Peakbook dekker Kråkfjellet og Rensfjellet i samme runde. Brøttem-starten er ikke tatt med som andre rute: den er 19,5 km én veg, godt over det korridorene i dette prosjektet strekker seg."
  },
@@ -1235,8 +1238,8 @@
   "grade": 2,
   "gradeReason": "Tretten kilometer én veg og 650 høydemeter, med rundt 130 av dem gitt tilbake underveis. Ut.no fører turen som «Middels» fysisk og «Middels, KAST-klasse 1, enkelt terreng». Det er lengden og orienteringa over vann, myr og rygger som er turen, ikke bratthet.",
   "roadClosedInWinter": false,
-  "teaserNo": "670 høydemeter og elleve kilometer fra Håen over Rundtjønnin og Oksdalen til Melhus' høyeste punkt.",
-  "teaserEn": "670 m of climbing and eleven kilometres from Håen past Rundtjønnin and Oksdalen to the highest point in Melhus.",
+  "teaserNo": "700 høydemeter og elleve kilometer fra Håen over Rundtjønnin og Oksdalen til Melhus' høyeste punkt.",
+  "teaserEn": "700 m of climbing and eleven kilometres from Håen past Rundtjønnin and Oksdalen to the highest point in Melhus.",
   "hazardNotes": "Ut.no: «Håen er regulert og tappes ned hver vinter, sørg for ikke å komme ut på usikker is når du går langs kanten av vannet.» Videre: «Det finnes bratte enkeltheng som er høye nok til at det kan gå skred, men de er mulige å unngå», og «det dannes skavler i området, hold avstand fra disse særlig i dårlig lys så du ikke risikerer å falle ned».",
   "sources": [
    "https://ut.no/turforslag/1112155230/rensfjellet-941-fra-haen-melhus-topptur-ski",
@@ -1250,7 +1253,8 @@
    "«Krysser Oksdalen» er ikke et navngitt punkt. Oksdalen er registrert som dal med representasjonspunkt 3,95 km frå kryssinga, på peiling 15, og lavlinja i dalen er lest ut av terrengmodellen: den følger lengdegrad 10,660 sørover fra registerpunktet, og på breddegrad 63,136 måler den 532,0 moh. Det er en utledning fra terrengmodellen, ikke et navngitt sted, og det er derfor det står her.",
    "Rensfjellet er grensetopp mellom Melhus, Midtre Gauldal og Selbu, og kommunetopp i Melhus — ikke i Trondheim. Ut.no sier det selv: den «mangler bare 2,1 km mot N-NV på å inkludere også Trondheim i den klubben». Kråkfjellet er Trondheims topp, og de to ligger 4 km fra hverandre med samme parkering.",
    "Den routede linja gir tilbake 143 høydemeter av 674 den stiger — ut.no oppgir «tapte hm opp: ca 130». Det er det samme terrenget: rygger og søkk mellom Håen og toppen som ruta må over.",
-   "Flankesveipet finner heller ikke her noen bratt side: brattaste 60-metersvindu er 17,8 grader mot aust, og søraust måler 3,4 grader i snitt. Ut.nos «bratte enkeltheng som er høye nok til at det kan gå skred» ligger utenfor de 400 metrene sveipet dekker, og guiden skal ikke plassere dem ved varden."
+   "Flankesveipet finner heller ikke her noen bratt side: brattaste 60-metersvindu er 17,8 grader mot aust, og søraust måler 3,4 grader i snitt. Ut.nos «bratte enkeltheng som er høye nok til at det kan gå skred» ligger utenfor de 400 metrene sveipet dekker, og guiden skal ikke plassere dem ved varden.",
+   "Teaseren var ikkje oppdatert då linja flytta seg; emit_new_tours.py har meldt frå om usemja mellom teaser og kort sidan då. Retta no."
   ],
   "notes": "Ut.no 1112155230 er skituren fra Håen (starthøyde 418, slutthøyde 941, ca 130 tapte høydemeter opp, total stigning ca 650, 13 km, 3 t, eksposisjon V, KAST-klasse 1), beskrevet av Håvard Engen og gjennomgått av Trondhjems Turistforening. Ut.no 1112155520 beskriver den samme toppen fra Brøttem (19,5 km, ca 950 hm) og 118204 dekker den fra Samsjøen med en annen forfatter. Brøttem-ruta er ikke tatt med som andre rute fordi den er 19,5 km én veg."
  },

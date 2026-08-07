@@ -128,20 +128,20 @@
   "cumdistM": 3349
  },
  "breitinden": {
-  "verticalM": 1030,
-  "gainM": 1031,
-  "distanceM": 4213,
+  "verticalM": 1050,
+  "gainM": 1049,
+  "distanceM": 4237,
   "startM": 30,
   "summitM": 1007,
   "duration": "4–6 t",
-  "steepestBandAngle": 23.4,
+  "steepestBandAngle": 22.2,
   "steepestBandFrom": 600,
   "steepestBandTo": 700,
-  "maxStepAngle": 37.8,
+  "maxStepAngle": 39.4,
   "grade": 2,
   "aspect": "V",
   "distanceKm": 4.2,
-  "cumdistM": 4213
+  "cumdistM": 4237
  },
  "rombakstotta": {
   "verticalM": 1100,
@@ -625,19 +625,19 @@
  },
  "rondslottet": {
   "verticalM": 1280,
-  "gainM": 1281,
-  "distanceM": 12320,
+  "gainM": 1283,
+  "distanceM": 12337,
   "startM": 1082,
   "summitM": 2178,
   "duration": "7–9 t",
-  "steepestBandAngle": 22.0,
+  "steepestBandAngle": 22.2,
   "steepestBandFrom": 1600,
   "steepestBandTo": 1700,
-  "maxStepAngle": 35.5,
+  "maxStepAngle": 34.9,
   "grade": 2,
   "aspect": "SV",
   "distanceKm": 12.3,
-  "cumdistM": 12321
+  "cumdistM": 12339
  },
  "glitregga": {
   "verticalM": 900,

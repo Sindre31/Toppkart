@@ -109,3 +109,44 @@ moysalen / vestryggen                   0      0  note: 90 m on water at 154 m, 
 saebyggjenuten / normalruta             0      0  note: 720 m on water at 1124 m, up to 55 m from the mapped shore — the guide names that height, which is not the same as saying it crosses it
 
 3 tours, 3 routes — clean
+
+--- The eleven remaining findings, worked ---------------------------------------
+Re-measured against DTM1 terrain class rather than only against OSM polygons,
+because Overpass was throttling and Kartverket is the authority the rest of the
+pipeline uses anyway. Two dissolved, two were rerouted, seven became prose.
+
+DISSOLVED — never water at all:
+  glittertinden/normalruta  the flat run at 1335 m is terrain class Myr, and firm
+                            ground lies 10 m to either side. Bog in Veodalen.
+  rondslottet               two of the three flat runs at 1167 m (63 and 135 m)
+                            are ÅpentOmråde.
+
+REROUTED — the line went where the guide said not to go:
+  rondslottet/normalruta    90 m on the ice at 1167 m, 50 m offshore, 60-128 m
+                            from Lonin — under the guide's own «Hold deg på land
+                            rundt vika ved Lonin ... i stedet for å ta snarveien
+                            over isen». Fanaråken's shape exactly. Waypoint on
+                            land west of the bay + Rondvassbu moved onto the hut.
+                            Now no vertex on water: 12.34 km, +1283, -187, 34.9°.
+  breitinden/normalruta     315 m straight across Breitindvatnet at 474 m, 40 m
+                            offshore, under the flank the guide itself calls a
+                            terrengfelle, with no published ski description to
+                            follow. Land is 80 m north. Two north-shore
+                            waypoints. Now no vertex on water: 4.24 km, +1049,
+                            -72, 39.4°. Card 1030 -> 1050 m.
+
+PROSE — natural tarns, none regulated, on lines the sources themselves follow:
+  hogevarde (both routes)   Høgevardtjenn 1378 m, 68 m and 45 m
+  juklavasstinden           Omnatjørnane 1066 m, 269 m, 100 m offshore. The
+                            register spells it Omnatjørnane, not Omnetjørnene.
+  rasletinden               two unnamed tarns, 1379 m and 1377 m
+  store-ble                 a second tarn at 1177 m, 10 m offshore
+  surloytenuten             1068 m, 45 m, 10 m offshore
+  vassdalstinden            946 m, 97 m, 40 m offshore
+
+NEW, found by this pass: hogevarde/tempelseter strays up to 573 m from the mapped
+track it calls «oppkjørt», with 1081 m of 4782 beyond 250 m. Not re-pinned: what
+is mapped there is unnamed piste:type=nordic loops, and a cross-country loop is
+not obliged to reach a summit, so the line leaves it correctly. Said out loud in
+the guide instead — and check_trail now softens to a note when the copy states
+the gap, which it could not do before.
