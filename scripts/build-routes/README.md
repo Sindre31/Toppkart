@@ -1590,12 +1590,47 @@ registered pass at **Tverrheiskaret, 1028 m, is terrain class `Skog`** — fores
 
 `treeline_scan` replaces it: walk vertices from the start, stop only once the
 line has been out of the forest for both 600 m of ground and 150 m of height,
-cache the classes to disk. **38 of the 78 guides quote a treeline figure and all
-38 are suspect.** Re-measuring them needs a complete run, and Kartverket's point
-API went down partway through this one — so Møysalen carries its measured 234 m,
-Sæbyggjenuten states only what is measured (forest at least to 1028 m, no
-figure), and the other 36 keep the numbers they have until the scan can finish.
-They are listed as owed in the root README.
+cache the classes to disk, and skip any vertex above 1300 m because no forest in
+Norway grows that high — without that ceiling the quiet rule never fires on a
+route that starts above the forest, and the scan walks all 300 vertices of every
+alpine tour for an answer it already has.
+
+Kartverket's point API went down partway through the first complete run; it came
+back and the run finished. **62 of the 78 treelines moved, every single one of
+them upward**, and five tours that the sampler said had no forest at all turned
+out to have some:
+
+| Tour | Sampled | Measured |
+|---|---|---|
+| Breitinden | 30 | **301** |
+| Kirketaket | 458 | **683** |
+| Lodalskåpa | 604 | **787** |
+| Skåla | 367 | **543** |
+| Hornindalsrokken | 521 | **673** |
+| Sæbyggjenuten | 904 | **1044** |
+| Juklavasstinden | 531 | **668** |
+| Møysalen | 162 | **234** |
+
+**34 guides quoted a figure that changed, and all 34 are corrected** in both
+languages. Two sentences needed rewriting rather than renumbering, because
+`first_open_m` changed meaning: it used to be the lowest *sample* above the last
+forest sample and is now the first non-forest vertex after the last forest one,
+so the two are usually only a few metres apart. Gyranfisen's «Ved 916 moh er du
+fortsatt i skog» inverted under that — 916 became the first *open* point — and
+Melshornet's «brattaste steget ligg ved skoggrensa» stopped being true once the
+treeline moved 35 m above the step.
+
+**The fix needed a fix.** The first attempt replaced the old numbers anywhere
+they appeared inside a sentence mentioning forest, and that corrupted Grafjell's
+«og på 950 moh går ruta ut på Istjenn» — 950 is Istjenn's elevation and merely
+happened to equal the old treeline. It was backed out. The replacement now
+matches only the eighteen phrasings that actually *state* a treeline
+(«Skogen slipper taket på», «Kartverket fører skog til», «the forest holds to»,
+«Bjørka held til», …) and the ten that state where open ground begins, captures
+the number from the construct itself, and refuses to substitute unless it is
+within 3 m of the stored old value. Under that rule 32 of the 34 matched
+automatically; Rana and Skogshorn used phrasings the list was missing, which is
+exactly what the report-what-you-did-not-match step is for.
 
 **The outage found the second bug, in the fix.** `_class_at` first returned
 `None` when a lookup failed, and `None` is not `"Skog"` — so an hour of

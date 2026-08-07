@@ -214,20 +214,22 @@ content and data quality that has to be settled before the site is sold to anyon
   ridge holds a 51 m notch over 27.3 m of ground; it was checked point by point at 2.3 m spacing
   before it went in the copy, because a drop that abrupt is usually a grid artefact and this one
   is not.
-- **36 guides still quote a treeline that is a sample rather than a measurement.**
-  `guide_facts.py` derived the treeline from a fourteen-point terrain-class table, so its
-  `last_forest_m` was the highest of fourteen points that happened to be forest — a lower bound,
-  never anything else, and wrong in the same direction every time. Møysalen sampled 162 m and
-  measures **234 m**; Sæbyggjenuten claimed forest to 904 m while the registered pass at
-  **1028 m is classed `Skog`**. `treeline_scan` now walks every vertex instead, but re-measuring
-  all 78 needs a complete run and Kartverket's point API went down partway through the first one.
-  Møysalen carries its measured figure, Sæbyggjenuten states only what is measured and no number,
-  and **the other 36 keep the numbers they have.** They are listed by
-  `python3 -c` over `guide_facts.json` in the pipeline README's "The three, read adversarially";
-  re-run `guide_facts.py` when the API is up, then fix the prose for whichever moved. Nothing
-  about this is dangerous — a treeline that reads low is a nuisance, not a hazard — but it is a
-  number in a product that says every number traces to a measurement, and right now 36 of them
-  trace to a sample.
+- **Every treeline was a sample, and all 78 have been re-measured.** `guide_facts.py` derived the
+  treeline from a fourteen-point terrain-class table, so `last_forest_m` was the highest of
+  fourteen points that *happened* to be forest — a lower bound, never anything else, and wrong in
+  the same direction every time. `treeline_scan` now walks every vertex, stopping only after 600 m
+  of ground *and* 150 m of height without forest, with a 1300 m ceiling so alpine routes cost
+  nothing. **62 of the 78 moved, every one of them upward**, and five tours that had no treeline at
+  all turned out to have one. The largest error was Breitinden at +271 m (30 → 301); Kirketaket
+  moved +225, Lodalskåpa +183, Skåla +176, Hornindalsrokken +152. **34 guides quoted a figure that
+  changed and all 34 are corrected** in both languages. Two sentences had to be rewritten rather
+  than renumbered, because the new `first_open_m` means the first non-forest vertex after the last
+  forest one rather than the lowest sample above it, and Gyranfisen's «Ved 916 moh er du fortsatt i
+  skog» inverted under it.
+  The fix needed a second pass of its own: a blind numeric replace inside forest sentences
+  corrupted Grafjell's «på 950 moh går ruta ut på Istjenn», which is a lake elevation that happened
+  to equal the old treeline. The replacement is scoped to the phrasings that actually *state* a
+  treeline, and every substitution is checked against the stored old value before it is made.
 - **The guide text has not been read by anyone who has skied these tours.** Every number in
   `lib/guides.ts` traces to Kartverket's terrain model, the route research or a cited source, and
   every number is matched mechanically by `check_guides.py` — which reads nynorsk verticals as well
