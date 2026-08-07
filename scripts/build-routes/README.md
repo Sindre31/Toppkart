@@ -116,6 +116,7 @@ python3 guide_brief.py <slug> # the writing brief one agent gets for one tour
 TOPPKART_WF=<transcripts> python3 harvest_guides.py  # -> guides.json
 python3 check_guides.py       # mechanical pass; must be read, not just run
 python3 test_check_guides.py  # pins the reassurance rule in both directions
+python3 check_ground.py       # the line against OSM: water it crosses, trails it claims
 python3 emit_guides.py [slug…]  # -> ../../lib/guides.ts, GUIDE_EN, seed.sql, hasGuide
 ```
 
@@ -1353,6 +1354,73 @@ What reproduced across all four, exactly: every one of the eight-bearing flank
 sweeps at 400 m, every band table, every steepest step, every bearing off the
 summit, every treeline, and full number parity between the Norwegian and English
 texts — no figure appears in one language and not the other.
+
+## check_ground.py — the line against mapped ground
+
+Three of the four errors that mattered in the Trondheim round had the same
+shape, and none of the three existing checks could see any of them. `check_routes`
+asks whether the geometry is sane: a line across a reservoir is perfectly sane
+geometry. `check_tours` asks whether the card's numbers are DTM1: they were.
+`check_guides` asks whether every figure in the prose traces to a measurement:
+every figure did. The copy that sent a reader onto drawn-down reservoir ice was
+factually correct in every number it contained.
+
+What the three shared was that they were checkable against something *outside*
+the terrain model — OpenStreetMap's water polygons and its winter routes — and
+nothing was doing that. `check_ground.py` does. It asks three questions:
+
+**Water.** Which vertices stand on a lake, how far the line runs on it, how far
+offshore it gets, and whether the guide names that height at all. A lake surface
+in DTM1 is exactly constant, so runs of identical stored elevation are where
+water can be, and only those are queried for a terrain class — which is what
+turns fifteen thousand lookups into a few hundred. `InnsjøRegulert` is called out
+separately: a regulated lake is drawn down every winter, so its ice is the least
+trustworthy surface in the product, and a crossing the guide never mentions is
+reported however short it is.
+
+**Trail.** For a tour whose own guide promises a løype, a vinterløype, a
+skogsbilveg or an anleggsveg, how far does the line stray from the nearest mapped
+one? The claim is only enforced where it can be — when a mapped trail reaches
+both the trailhead and the summit, the whole line is supposed to be on it.
+Where the trail covers part of the route only (Kråkfjellet's skogsbilveg runs
+three kilometres of nine, and the rest is open fjell with nothing mapped to
+follow) the worst gap says nothing, and it is printed as a note rather than a
+finding. «Utenfor oppkjørte løyper» is the opposite claim and is excluded by the
+same negation rule `check_guides` uses on its reassurance patterns.
+
+**Side.** Where the prose says the route runs to the right or left of a named
+stream, which side is it on? Which way is right depends on which way you are
+walking, so this is resolved from the trailhead-to-summit bearing, and a tour
+that runs east–west is reported as undecidable rather than answered with a coin
+flip.
+
+It exits non-zero on findings, and it prints the numbers behind each one, because
+the decision is not the script's to make. A frozen tarn a source deliberately
+routes you across is fine — Snota goes over Svartvatnet because ut.no says to.
+A drawn-down reservoir nobody mentioned is not. Only a reader can tell those
+apart, and the output is written to be read rather than merely passed.
+
+### Would it have caught them?
+
+Yes, and this was checked rather than assumed: the pre-fix `lib/routes.ts` was
+restored from the commit before the fixes, re-parsed, and run through the same
+functions.
+
+| tour, as it was | what the check says |
+| --- | --- |
+| Kråkfjellet | 1530 m and 191 m on water at 433 m, up to 251 m from the mapped shore — **REGULATED lake** |
+| Rensfjellet | 1496 m and 225 m on water at 433 m, up to 242 m from shore — **REGULATED lake**, plus a 795 m stray from a trail that reaches both ends |
+| Okla | 450 m on water at 1277 m and 631 m at 1151 m |
+| Storhornet | strays 588 m from a mapped trail that reaches the car park (5 m) and the cairn (25 m) |
+
+The offshore figures are the ones measured by hand during the read — 251 m and
+242 m — which is the check reproducing a result rather than inventing one.
+
+Two of those four print as **notes** rather than findings, because the guide did
+name the height: Okla's copy quoted 1277 in the course of claiming the line
+stayed *above* Mjølkskåla. That is the honest limit of a text search, and it is
+why the output says «the guide names that height, which is not the same as
+saying it crosses it» instead of clearing the tour. A note is a place to look.
 
 ## Network
 
