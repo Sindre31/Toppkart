@@ -1422,6 +1422,55 @@ stayed *above* Mjølkskåla. That is the honest limit of a text search, and it i
 why the output says «the guide names that height, which is not the same as
 saying it crosses it» instead of clearing the tour. A note is a place to look.
 
+### The first run over all 75
+
+`check_ground_run.txt` is the run, kept in the tree because the findings are a
+work list and not a pass/fail. It reports **21 things to look at across 16
+tours** — every one of them a place where the drawn line stands on water, and
+most of them on tours from the original 24 that had already been read
+adversarially twice.
+
+Overpass was refusing service while it ran (504 from the main instance, no route
+to two of the mirrors from this network), so it ran `--offline`: the water
+question is complete, because that comes from Kartverket, and the trail and
+stream-side questions are reported as **UNCHECKED** rather than clean. Re-running
+when Overpass recovers fills those in from cache.
+
+**Fanaråken was the one that had to be fixed immediately**, and it is the reason
+this check exists. Its guide contains the instruction in as many words:
+
+> «Hold land langs vestsida — **ikke skjær over isen**.»
+
+The line cut across the ice. 375 m of it read 1373.0 m — the tarn Silja — and
+136 m read 1356.0 m with terrain class `InnsjøRegulert`: Prestesteinsvatnet,
+OSM relation/4037643, `water=reservoir`, the magasin whose dam the guide's own
+next sentence names. A guide that tells the reader to stay off the ice, over a
+map line that crosses it.
+
+Six waypoints on firm ground along the west side fix it, threading between two
+small tarns at 1384 and 1381 m and running west of the reservoir down to the dam.
+The new line has no vertex on water at all. Going round costs what going round
+costs, and the guide now says so: **113 m given back** against the 54 a straight
+line to the dam would have given, because land undulates and ice does not.
+Length 6.03 → 6.70 km, gain 763 → 783 m. Re-solving the whole line also moved the
+steepest 30 m window from 42.7° to 27.1° (1859–1882 m), which the prose carried
+in two places and now carries correctly.
+
+**The rest of the list, for whoever takes it next.** One more sits on a
+regulated lake — Ytstevasshornet, 180 m at 526 m, unnamed in its guide — and that
+is the one to take first. Then Styggemann (four crossings totalling 776 m),
+Folarskardnuten (three), Breitinden (295 m at 474 m, 34 m offshore), Juklavasstinden
+(225 m), Rasletinden (two), Rondslottet, Glittertinden, Høgevarde on both routes,
+Store Ble, Surløytenuten and Vassdalstinden. Every one of them is a line standing
+on a lake under prose that never mentions it.
+
+Two came back as **notes** and are right to be there rather than fixed: Besshø
+crosses three and a half kilometres of Bessvatnet, and its guide describes that
+in detail and calls the ice normal winter travel; Snota crosses Svartvatnet
+because ut.no routes it that way and names the height. The check surfaces both
+and lets a reader confirm them, which is the intended behaviour — the difference
+between those and Fanaråken is not the crossing, it is whether anyone was told.
+
 ## Network
 
 Everything is public and unauthenticated:

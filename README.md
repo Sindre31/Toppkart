@@ -186,7 +186,14 @@ content and data quality that has to be settled before the site is sold to anyon
   polygons and its winter routes — and asks which vertices stand on a lake, whether the guide says
   so, and how far a tour that promises a løype strays from the mapped one. It was validated by
   restoring the pre-fix geometry and confirming it flags all four of the errors that were found by
-  hand; against the shipped lines it is clean.
+  hand. Its first run over all 75 came back with **21 things to look at across 16 tours**, most of
+  them on tours from the original 24 that had already been read adversarially twice — every one a
+  place where the drawn line stands on a lake under prose that never mentions it. One was fixed
+  straight away and is the reason the check exists: **Fanaråken's guide says «Hold land langs
+  vestsida — ikke skjær over isen», and the line cut across the ice** of Prestesteinsvatnet, a
+  reservoir whose dam the guide's own next sentence names. It now runs on firm ground the whole way.
+  The remaining twenty are a work list in `scripts/build-routes/check_ground_run.txt`; Ytstevasshornet,
+  the other one standing on a regulated lake, is the one to take next.
 - **The guide text has not been read by anyone who has skied these tours.** Every number in
   `lib/guides.ts` traces to Kartverket's terrain model, the route research or a cited source, and
   every number is matched mechanically by `check_guides.py` — which reads nynorsk verticals as well

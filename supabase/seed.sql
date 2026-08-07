@@ -71,7 +71,7 @@ values
   ('galdhopiggen',    'Galdhøpiggen',    'Jotunheimen',61.63644,  8.31243, 2469, 630, '6–8 t', 3, 'N',  'apr–jun', 'Norges tak på ski — bre, tau og stor høyde; vanligvis gått fra Juvasshytta.', true),
   ('steindalsnosi',   'Steindalsnosi',   'Sogn',       61.52696,  7.90076, 2025,  760, '3–5 t', 1, 'S',  'apr–jun', '2000-meter for de fleste: kort, slak og solvendt fra Sognefjellsveien.', true),
   ('besshoe', 'Besshø', 'Jotunheimen', 61.51791, 8.68712, 2257, 1300, '6–8 t', 3, 'Ø', 'mars–mai', '1305 høydemeter fra Bessheim: tre og en halv kilometer langs Bessvatnet før Grotådalen, og til slutt den slake austryggen over Brue.', true),
-  ('fanaraken',       'Fanaråken',       'Sogn',       61.51669,  7.90825, 2068,  760, '5–7 t', 2, 'N',  'apr–jun', 'Høyfjellstur fra Sognefjellet med breutsikt og pålitelig vårsnø.', true),
+  ('fanaraken',       'Fanaråken',       'Sogn',       61.51669,  7.90825, 2068,  780, '5–7 t', 2, 'N',  'apr–jun', 'Høyfjellstur fra Sognefjellet med breutsikt og pålitelig vårsnø.', true),
   ('kvamshesten', 'Kvamshesten', 'Sunnfjord', 61.40141, 5.62732, 1209, 840, '4–6 t', 3, 'N', 'des–mai', '840 høgdemeter frå Rytnavegen forbi Skaravatnet og Grunnevatnet, med ei 36-graders skål til slutt.', true),
   ('rasletinden', 'Rasletinden', 'Jotunheimen', 61.39514, 8.69944, 2104, 750, '4–6 t', 2, 'Ø', 'apr–mai', '750 høydemeter og 6 km fra Valdresflye: flatt de første 1,2 km, så en kneik til 1530 moh og slak rygg østfra mot toppen.', true),
   ('molden', 'Molden', 'Sogn', 61.34417, 7.31973, 1120, 620, '2–4 t', 1, 'SV', 'feb–apr', '620 høgdemeter frå Mollandsmarki opp sørvestryggen, med Lustrafjorden under seg heile vegen.', true),
@@ -1524,20 +1524,20 @@ Sørrennene brukes som nedkjøring av dem som kjenner fjellet. De holder 35 til 
 where slug = 'besshoe';
 
 update public.tk_tours set
-  description_up   = 'Du starter på Korpen, parkeringen på fv55 ved Prestesteinsvatnet, 1397 moh. Sognefjellsvegen er vinterstengt over høyfjellet og brøytes opp ved påsketider — i 2026 åpnet den 1. april — og de første ukene etter åpning er strekninga nattestengt fra 20 til 08. Åpningsdatoen setter sesongen, så sjekk vegstatus før du kjører. Første kilometeren og litt til går nedover: følg vestsida av vatnet ned til demninga ved utløpet på 1343 moh. Du gir fra deg 53 høydemeter før du har begynt å stige. Hold land langs vestsida — ikke skjær over isen.
+  description_up   = 'Du starter på Korpen, parkeringen på fv55 ved Prestesteinsvatnet, 1397 moh. Sognefjellsvegen er vinterstengt over høyfjellet og brøytes opp ved påsketider — i 2026 åpnet den 1. april — og de første ukene etter åpning er strekninga nattestengt fra 20 til 08. Åpningsdatoen setter sesongen, så sjekk vegstatus før du kjører. De første halvannen kilometerne går nedover og over land: linja følger vestsida forbi to små tjønner på 1384 og 1381 moh, videre vest for magasinet og ned til demninga ved utløpet på 1343 moh. Hold land langs vestsida — ikke skjær over isen. Prestesteinsvatnet er et magasin, og den flate snarvegen rett over er den ene flata på hele turen du ikke vet bæreevnen til.
 
-Forbi demninga trekker du opp i søkket øst for nordryggen til Steindalsnosi og inn på Fannaråkbreen rundt 1550 moh. Hold deg lavt og i den slake delen av breen. Den er oppsprukket, og du går den i tau.
+Å gå rundt koster: linja gir fra seg 113 høydemeter før den begynner å stige for alvor, mot de 54 en rett strek fra bilen til demninga ville gitt. Land bølger, is gjør det ikke. Forbi demninga trekker du opp i søkket øst for nordryggen til Steindalsnosi og inn på Fannaråkbreen rundt 1550 moh. Hold deg lavt og i den slake delen av breen. Den er oppsprukket, og du går den i tau.
 
-Sikt deg inn mot 1688-høgda øst for Fannaråknosi og rund den. Ikke hold høyde over breen: går du for høyt før du svinger opp, blir passasjen opp på austryggen vesentlig brattere. Den bratteste hundremeteren ligger mellom 1800 og 1900 moh og holder 19,7° i snitt, og det bratteste enkelttrinnet på linja måler 42,7°.
+Sikt deg inn mot 1688-høgda øst for Fannaråknosi og rund den. Ikke hold høyde over breen: går du for høyt før du svinger opp, blir passasjen opp på austryggen vesentlig brattere. Den bratteste hundremeteren ligger mellom 1800 og 1900 moh og holder 19,8° i snitt over 317 meter grunn, og det bratteste enkelttrinnet på linja måler 27,1° mellom 1859 og 1882 moh.
 
 Rundt knausen kommer du inn på søraustryggen og sommerstien fra Keisarpasset. Følg den over Fannaråknosi og videre langs austryggen til Fanaråken. Det henger store skavler på nordsida hele vegen, og nordsida faller 55–58° i de øverste 90 metrene under kammen — hold deg på sørsida, også når sikten er god.',
   description_down = 'Ned følger du samme linja — øst- og nordøstvendt, jevnt og slakt, med pålitelig vårsnø langt ut i sesongen. Den andre dokumenterte ruta, fra Turtagrø gjennom Helgedalen, gir 1196 høydemeter og er en annen dag.
 
-Vanligste feil: å holde høyde over breen på vei ned, slik at du havner for høyt vest for 1688-høgda og må ned der det er brattest. Slipp deg ned rundt knausen slik du kom opp. Og husk at siste strekket ikke er gratis: fra demninga stiger det 53 høydemeter tilbake til Korpen.',
+Vanligste feil: å holde høyde over breen på vei ned, slik at du havner for høyt vest for 1688-høgda og må ned der det er brattest. Slipp deg ned rundt knausen slik du kom opp. Og husk at siste strekket ikke er gratis: fra demninga på 1343 moh stiger det tilbake til Korpen på 1397, og vestsida bølger — 113 høydemeter til sammen på vegen inn, og de samme igjen på vegen ut.',
   avalanche_notes  = jsonb_build_array(
     jsonb_build_object(
       'title', 'Ruta',
-      'body',  'Normalvegen er slak — bratteste hundremeter holder 19,7° i snitt mellom 1800 og 1900 moh. Det bratteste enkelttrinnet på linja måler 42,7°, og det ligger i overgangen fra breen opp på austryggen rett øst for Fannaråknosi; går du for høyt over breen, blir den passasjen brattere enn den trenger å være. På Fannaråkbreen er sprekkene faren like mye som snøen.'
+      'body',  'Normalvegen er slak — bratteste hundremeter holder 19,8° i snitt mellom 1800 og 1900 moh, over 317 meter grunn, og det bratteste enkelttrinnet på linja måler 27,1° mellom 1859 og 1882 moh. På Fannaråkbreen er sprekkene faren like mye som snøen. Nede ved starten er faren en annen og enklere å beskrive: isen på et magasin som tappes ned, og ruta er lagt på land utenom den.'
     ),
     jsonb_build_object(
       'title', 'Terrenget rundt',

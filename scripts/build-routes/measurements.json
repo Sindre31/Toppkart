@@ -588,5 +588,12 @@
    "figure": "Svartvatnet på 888–889 moh: 870 m av linja, som er den kryssinga ut.no namngjev. I tillegg går 90 m av linja over eit lite unamngjeve vatn på 1024,0 moh (terrengklasse Innsjø) ved foten av Litj-Snota, rett før vegpunktet på 1026. Den kartlagde skitour-løypa i området (OSM way/344344060, 8,83 km, piste:grooming=backcountry) går utanom Svartvatnet — ho ligg 478 m frå linja der — og endar 1075 m frå toppen.",
    "how": "DTM1-terrengklasse på kvar vertex i routes.json, og Overpass-uttrekk av piste:type rundt ruta."
   }
+ ],
+ "fanaraken": [
+  {
+   "what": "Kva linja gjorde over Prestesteinsvatnet, og kva ho gjer no",
+   "figure": "Den fyrste routa linja gjekk på isen: 375 m av vertexane målte 1373,0 moh (terrengklasse Innsjø, tjørna Silja) og 136 m målte 1356,0 moh med terrengklasse InnsjøRegulert — Prestesteinsvatnet, OSM relation/4037643, water=reservoir. Guiden sa samstundes «Hold land langs vestsida — ikke skjær over isen». Seks vegpunkt på fast mark langs vestsida rettar det: 61.5470/7.8920 (1389,6), 61.5458/7.8940 (1384,0), 61.5458/7.8970 (1384,5), 61.5455/7.9020 (1386,3), 61.5455/7.9080 (1376,7) og 61.5448/7.9110 (1362,7). Dei tre fyrste trør mellom to tjørner på 1384 og 1381 moh. Den nye linja har ingen vertex på vatn. Lengda gjekk 6,03 → 6,70 km, stigninga 763 → 783 m og tapet 89 → 113 m: land bølgjer, is gjer det ikkje. Brattaste 30-metersvindauge gjekk 42,7 → 27,1 grader (1859–1882 moh) då heile linja blei løyst på nytt, og brattaste hundremetersband 19,7 → 19,8 grader (1800–1900, 317 m grunn).",
+   "how": "DTM1-terrengklasse på kvar vertex i routes.json, Overpass-uttrekk av natural=water rundt kryssingane, og generate_routes.py + resample_dtm1.py på nytt for fanaraken."
+  }
  ]
 }
