@@ -8,7 +8,7 @@ breitinden / normalruta                 1      0  295 m on water at 474 m, up to
 eidskyrkja / normalruta                 0      0  
 fanaraken / normalruta                  0      0  
 fanaraken / turtagro                    0      0  
-folarskardnuten / normalruta            3      0  135 m on water at 1098 m, offshore distance unknown (no water polygon returned) — and the guide never names that height; 45 m on water at 1098 m, offshore distance unknown (no water polygon returned) — and the guide never names that height; 45 m on water at 1230 m, offshore distance unknown (no water polygon returned) — and the guide never names that height; note: 270 m on water at 1603 m, offshore distance unknown (no water polygon returned) — the guide names that height, which is not the same as saying it crosses it
+folarskardnuten / normalruta            0      0  note: 135 m on water at 1098 m, offshore distance unknown (no water polygon returned) — the guide names that height, which is not the same as saying it crosses it; note: 45 m on water at 1098 m, offshore distance unknown (no water polygon returned) — the guide names that height, which is not the same as saying it crosses it; note: 45 m on water at 1230 m, offshore distance unknown (no water polygon returned) — the guide names that height, which is not the same as saying it crosses it; note: 270 m on water at 1603 m, offshore distance unknown (no water polygon returned) — the guide names that height, which is not the same as saying it crosses it
 galdhopiggen / normalruta               0      0  
 galdhopiggen / spiterstulen             0      0  
 gaustatoppen / normalruta               0      0  
@@ -85,11 +85,8 @@ vassfjellet / markavollen               0      0  note: says «skiløypene» —
 vesoldo / normalruta                    0      0  
 ytstevasshornet / normalruta            0      0  
 
-75 tours, 84 routes — 14 need a look
+75 tours, 84 routes — 11 need a look
   - breitinden/normalruta: 295 m on water at 474 m, up to 34 m from the mapped shore — and the guide never names that height
-  - folarskardnuten/normalruta: 135 m on water at 1098 m, offshore distance unknown (no water polygon returned) — and the guide never names that height
-  - folarskardnuten/normalruta: 45 m on water at 1098 m, offshore distance unknown (no water polygon returned) — and the guide never names that height
-  - folarskardnuten/normalruta: 45 m on water at 1230 m, offshore distance unknown (no water polygon returned) — and the guide never names that height
   - glittertinden/normalruta: 45 m on water at 1335 m, offshore distance unknown (no water polygon returned) — and the guide never names that height
   - hogevarde/tempelseter: 68 m on water at 1378 m, offshore distance unknown (no water polygon returned) — and the guide never names that height
   - hogevarde/norefjellstua: 45 m on water at 1378 m, offshore distance unknown (no water polygon returned) — and the guide never names that height
