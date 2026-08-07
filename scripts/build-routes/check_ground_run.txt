@@ -97,3 +97,15 @@ ytstevasshornet / normalruta            0      0
   - store-ble/sigridsbu: 45 m on water at 1177 m, offshore distance unknown (no water polygon returned) — and the guide never names that height
   - surloytenuten/sudstul: 45 m on water at 1068 m, offshore distance unknown (no water polygon returned) — and the guide never names that height
   - vassdalstinden/normalruta: 52 m on water at 946 m, offshore distance unknown (no water polygon returned) — and the guide never names that height
+
+--- Kjerag, Møysalen and Sæbyggjenuten, added after this run -------------------
+Run with network before their guides were written, not after. All six crossings
+are natural (DTM1 Innsjø, no reservoir tags in OSM), so all six went into the
+prose rather than into the router. Re-run after the guides went in:
+
+tour / route                        water  trail  findings
+kjerag / normalruta                     0      0  note: 225 m on water at 925 m, up to 24 m from the mapped shore — the guide names that height, which is not the same as saying it crosses it; note: 686 m on water at 1075 m, up to 32 m from the mapped shore — the guide names that height, which is not the same as saying it crosses it; note: says «anleggsvegen», but no mapped trail reaches both ends (trailhead 37 m, summit 398 m) — the claim covers part of the line only, so its 1037 m worst gap is not a verdict
+moysalen / vestryggen                   0      0  note: 90 m on water at 154 m, up to 14 m from the mapped shore — the guide names that height, which is not the same as saying it crosses it; note: 247 m on water at 391 m, up to 71 m from the mapped shore — the guide names that height, which is not the same as saying it crosses it; note: 225 m on water at 328 m, up to 86 m from the mapped shore — the guide names that height, which is not the same as saying it crosses it
+saebyggjenuten / normalruta             0      0  note: 720 m on water at 1124 m, up to 55 m from the mapped shore — the guide names that height, which is not the same as saying it crosses it
+
+3 tours, 3 routes — clean

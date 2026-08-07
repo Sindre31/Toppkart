@@ -617,5 +617,106 @@
    "figure": "Fire kryssingar, 495 m av 12 610. Tjørngravtjørni på 1098 moh to gonger — 135 m frå 746 m ut, maks 48 m frå land, og 45 m frå 971 m ut, maks 8 m — eit unamngjeve tjern på 1230 moh, 45 m frå 6101 m ut, maks 16 m, og tjørna ved Lordehytta på 1603 moh, 270 m frå 10 736 m ut, maks 84 m. Alle fire er naturlege (terrengklasse Innsjø, ikkje InnsjøRegulert). Berre den siste er nemnd i guiden frå før, og då som «vatn under snøen» — dei tre andre ligg på innmarsjen langs den kvista DNT-vinterruta. Namnet er henta frå SSR sitt punktsøk: Tjørngravtjørni, navneobjekttype Tjern, 206 m frå fyrste kryssinga.",
    "how": "DTM1-terrengklasse på kvar vertex i routes.json, Overpass natural=water rundt kvar kryssing, og ws.geonorge.no/stedsnavn/v1/punkt for namnet."
   }
+ ],
+ "kjerag": [
+  {
+   "what": "Vatna linja kryssar",
+   "figure": "Fem kryssingar, 1091 m av 7362. 225 m på 925 moh frå 2797 m ut, maks 24 m frå land; 45 m på 975 moh; 45 m på 1064 moh; 686 m på 1075 moh frå 5137 m ut, maks 32 m frå land; og 90 m på 1080 moh. Alle fem har DTM1-terrengklasse Innsjø, ikkje InnsjøRegulert. Dei to største er umerkte i OSM òg — way 1312542069 (ele=925, ref:nve:vann=195944) og relasjon 17994180 (ele=1075, ref:nve:vann=25702) — og ingen av dei ber water=reservoir eller landuse=reservoir. Dette er dei små platåvatna turskildringa nemner, ikkje eit magasin.",
+   "how": "DTM1-terrengklasse på kvar vertex i routes.json, Overpass natural=water innanfor 150 m av kvar kryssing, og ws.geonorge.no/stedsnavn/v1/punkt for namn (ingen treff)."
+  },
+  {
+   "what": "Flankane frå toppunktet",
+   "figure": "Sveip 1000 m ut i alle åtte retningane, steg 10 m: N 1,5° i snitt, NØ 2,4°, Ø 1,6°, SØ 0,6°, S 4,9°, SV 12,0°, V 3,4°, NV 3,0°. Brattaste 60-metersvindauge per retning: SV 54,8° 800–860 m ute, V 38,1° 90–150 m ute, NV 28,9°, SØ 26,4°, N 22,3°, Ø 22,1°, S 21,3°, NØ 20,4°. Innanfor 200 m ligg sju av åtte retningane under 13° i snitt, og S måler −0,4°: bakken 200 m sør for toppunktet er 1,5 m høgare enn toppunktet.",
+   "how": "flank_probe.py 59.01672 6.58762 --out 1000 --step 10, og same med --out 200 --step 20."
+  },
+  {
+   "what": "Kanten mot Lysefjorden",
+   "figure": "Rett nord frå toppunktet held platået seg på 1008–1016 moh heilt ut til 1850 m. Mellom 1850 og 1900 m ute fell det 71,4°, mellom 1900 og 1950 m 77,4°, og på 2000 m ute er bakken under 800 moh. Sjøen ligg om lag 2,6 km nord. Den teikna linja kjem aldri nærare enn 1675 m frå bakke under 800 moh, og det næraste punktet er sjølve toppunktet.",
+   "how": "ws.geonorge.no/hoydedata/v1/punkt kvar 50. meter langs peiling 0 frå toppunktet, og minste avstand frå kvar rutevertex over 1000 moh til nærmaste DTM-celle under 800 moh i ei WCS-flis over heile ruta."
+  },
+  {
+   "what": "Kjeragbolten mot toppunktet",
+   "figure": "Kjeragbolten (59.03375/6.59324) ligg 1921 m frå toppunktet på peiling 10°. Ruta går ikkje dit.",
+   "how": "Storsirkelavstand og peiling mellom dei to koordinatane."
+  },
+  {
+   "what": "Høgste mark på platået",
+   "figure": "Toppunktet i summits.json gjev 1123,7 moh i DTM1, men høgste celle innanfor 5 km er 1163,7 moh på 59.01952/6.61052, 1347 m aust-nordaust. Linja sjølv går over 1129 moh på 6640 m ut og gjev så frå seg 66 m ned til 1063 moh før ho stig tilbake til 1124 moh på toppunktet.",
+   "how": "WCS-flis 900×900 over ruta, nanargmax; høgdeprofilet i routes.json for stigning og fall."
+  },
+  {
+   "what": "Kor langt linja ligg frå vegen",
+   "figure": "Over dei fyrste 3,3 km — Lysevegen og Langvassvegen — ligg ingen vertex meir enn 100 m frå næraste kartlagde veg, og snittet er godt under 40 m. Det brattaste 30-meterssteget på heile turen, 24,4° mellom 673 og 687 moh på 367 m ut, ligg 86 m frå vegen: det er ein hårnålssving linja kuttar, ikkje ei stigning i vegbanen.",
+   "how": "Overpass highway=* innanfor 600 m av 59.03/6.653, punkt-til-linjestykke-avstand for kvar rutevertex under 3300 m ut."
+  },
+  {
+   "what": "Brattaste samanhengande parti",
+   "figure": "Brattaste 30 m 24,4° (673→687 moh), 60 m 21,2° (1077→1112 moh på 6980 m ut), 100 m 19,5°, 200 m 14,7°, 400 m 11,3° (975→1056 moh). Siste 500 m går på peiling 294° og stig 59 m. Fallvekta gjennomsnittsretning for nedkøyringa er 49°.",
+   "how": "Glidande vindauge over høgdeprofilet i routes.json."
+  },
+  {
+   "what": "Skredregion",
+   "figure": "Varsom-region Heiane (id 3037), A-region med dagleg varsel.",
+   "how": "api01.nve.no AvalancheWarningByCoordinates/Simple for 59.01672/6.58762."
+  }
+ ],
+ "moysalen": [
+  {
+   "what": "Vatna linja kryssar",
+   "figure": "Tre kryssingar. 90 m på 154 moh over Forkledalsvatnan, maks 14 m frå land; 247 m på 391 moh over Rundvatnet, maks 71 m frå land; og 225 m på 328 moh over Grønnvatnet, maks 86 m frå land. Alle tre har DTM1-terrengklasse Innsjø, og ingen av OSM-polygona (relasjon 7844276, 7844306 og 7844288) ber water=reservoir eller landuse=reservoir. SSR gjev namna 63, 45 og 14 m frå kryssingspunkta.",
+   "how": "DTM1-terrengklasse på kvar vertex i routes.json, Overpass natural=water innanfor 200 m av kvar kryssing, ws.geonorge.no/stedsnavn/v1/punkt radius 500 m."
+  },
+  {
+   "what": "Flankane frå toppen",
+   "figure": "Sveip 1000 m ut i alle åtte retningane, steg 10 m: N 30,8° i snitt, NØ 33,2°, Ø 40,2°, SØ 29,9°, S 24,5°, SV 30,3°, V 27,8°, NV 39,2°. Ingen retning ligg under 24°. Brattaste 60-metersvindauge: Ø 70,8° alt 10–70 m ute, N 67,6°, NV 64,4°, NØ 64,0°, S 63,2°, SV 63,2° frå 0 m, SØ 59,8°, V 55,9°.",
+   "how": "flank_probe.py 68.52598 15.45215 --out 1000 --step 10."
+  },
+  {
+   "what": "Hakket i toppryggen",
+   "figure": "Linja stig til 1170 moh 9332 m ute og fell så til 1119 moh over 27,3 m grunn. Tolv DTM1-punkt med 2,3 m mellomrom gjennom fallet gjev 1170,0 – 1163,3 – 1162,6 – 1160,6 – 1158,2 – 1153,3 – 1151,1 – 1148,6 – 1139,6 – 1133,5 – 1127,3 – 1123,8 – 1119,2: eit samanhengande fall, ikkje ein rutenettfeil. Eit rutenett på ±40 m langs og på tvers av ryggen rundt hakket gjev frå 1186 til 1055 moh, altså er nabolinjene ikkje slakare.",
+   "how": "ws.geonorge.no/hoydedata/v1/punkt, tolv punkt interpolerte mellom 68.52476/15.45436 og 68.5249/15.45381, og eit 5×5-rutenett med 20 m steg om 68.52483/15.45409."
+  },
+  {
+   "what": "Brattaste samanhengande parti",
+   "figure": "Brattaste 30 m oppover 41,9° (1036→1063 moh på 8500 m ut), 60 m 31,3° (1132→1170 moh), 100 m 24,8°, 200 m 24,3° (1189→1264 moh, sjølve toppryggen), 400 m 22,0° (774→939 moh). Største steg langs linja i det heile er 45,9°, og det er nedover inn i hakket. Siste 500 m går på peiling 333° og stig 124 m. Fallvekta gjennomsnittsretning for nedkøyringa er 193°.",
+   "how": "Glidande vindauge over høgdeprofilet i routes.json."
+  },
+  {
+   "what": "Fallet ned til Grønnvatnet",
+   "figure": "Største samanhengande fall på veg opp er 120 m, frå 448 moh til 328 moh, over 736 m grunn 4890 m ut.",
+   "how": "Samanhengande fallande sekvensar i høgdeprofilet i routes.json."
+  },
+  {
+   "what": "Skredregion",
+   "figure": "Varsom-region Lofoten og Vesterålen (id 3014), A-region med dagleg varsel.",
+   "how": "api01.nve.no AvalancheWarningByCoordinates/Simple for 68.52598/15.45215."
+  }
+ ],
+ "saebyggjenuten": [
+  {
+   "what": "Vatnet linja kryssar",
+   "figure": "Éi kryssing: 720 m på 1124 moh over Midtre Gjuvvatn, frå 7390 m ut, maks 55 m frå land. DTM1-terrengklasse Innsjø. OSM-relasjon 10478944 ber name=Midtre Gjuvvatn, ele=1124, ref:nve:vann=13750 og ingen reservoartaggar. SSR gjev Midtre Gjuvvatn på same polygon.",
+   "how": "DTM1-terrengklasse på kvar vertex i routes.json, Overpass natural=water innanfor 150 m, ws.geonorge.no/stedsnavn/v1/punkt."
+  },
+  {
+   "what": "Flankane frå toppen",
+   "figure": "Sveip 1000 m ut i alle åtte retningane, steg 10 m: N 15,0° i snitt, NØ 14,3°, Ø 7,1°, SØ 8,4°, S 9,2°, SV 9,2°, V 9,8°, NV 6,5°. Brattaste 60-metersvindauge: NØ 42,3° 930–990 m ute, N 41,9° 460–520 m ute, NV 34,7° 40–100 m ute, SØ 31,4°, S 30,4°, Ø 29,6°, SV 25,4°, V 24,7°. Eit finare sveip nord for toppen gjev 46,1° på peiling 10°, 430–490 m ute.",
+   "how": "flank_probe.py 59.46181 7.62568 --out 1000 --step 10, og --out 700 --step 10 for peilingane 350, 0 og 10."
+  },
+  {
+   "what": "Brattaste samanhengande parti",
+   "figure": "Brattaste 30 m 26,2° (1000→1022 moh på 2350 m ut, oppgangen i Tverrheiskaret), 60 m 19,6°, 100 m 18,1°, 200 m 16,1°, 400 m 13,7° (963→1062 moh). Siste 500 m går på peiling 78° og stig 115 m. Fallvekta gjennomsnittsretning for nedkøyringa er 258°.",
+   "how": "Glidande vindauge over høgdeprofilet i routes.json."
+  },
+  {
+   "what": "Falla undervegs",
+   "figure": "To fall som tel: 47 m frå 1202 moh til 1155 moh over 535 m grunn 6460 m ut, ned mot Tverrheiskardet, og 32 m frå 1156 moh til 1124 moh over 1080 m 7030 m ut, ned på Midtre Gjuvvatn. Til saman gjev linja frå seg 155 m av 851 stigne.",
+   "how": "Samanhengande fallande sekvensar i høgdeprofilet i routes.json."
+  },
+  {
+   "what": "Skredregion",
+   "figure": "Varsom-region Vest-Telemark (id 3035), A-region med dagleg varsel. Toppen ligg i Setesdal, men skredvarselet kjem frå Vest-Telemark-regionen.",
+   "how": "api01.nve.no AvalancheWarningByCoordinates/Simple for 59.46181/7.62568."
+  }
  ]
 }

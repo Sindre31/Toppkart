@@ -273,8 +273,8 @@
   "grade": 2,
   "gradeReason": "455 netto høgdemeter og 6,6 km korridor i slakt platåterreng; friflyt kallar det «slakt og passar for dei fleste». Graderinga blir ikkje lågare enn 2 fordi Kjeragplatået er orienteringsterreng utan merking, med korte kantar og djupe kløfter, og fordi nordsida er ei tusen meter høg vegg mot Lysefjorden.",
   "roadClosedInWinter": true,
-  "teaserNo": "455 høgdemeter frå Øygardstøl om Langavassvegen og Kjeragplatået; under 6° dei siste 800 m, men Lysevegen opnar først i mai.",
-  "teaserEn": "455 m of ascent from Øygardstøl via Langavassvegen and the Kjerag plateau; under 6° for the last 800 m, but Lysevegen only opens in May.",
+  "teaserNo": "620 høgdemeter frå Øygardstøl om Langavassvegen og Kjeragplatået; slakt heile vegen, men Lysevegen opnar først i mai.",
+  "teaserEn": "620 m of climbing from Øygardstøl via Langavassvegen and the Kjerag plateau; gentle throughout, but Lysevegen only opens in May.",
   "hazardNotes": "Nordsida av Kjerag er stupet mot Lysefjorden – hald godt sør for kanten, særleg i tåke og flatt lys. Platået er svaberg med små, brå skrentar mellom slake parti; fleire stader fell terrenget 25–30° på under seksti meter. Lysevegen er vinterstengd og blir normalt ikkje brøytt før veka før påske, med opning tidlegast 1. mai og ofte seinare, så turen er eit vårvindauge og ikkje ein vintertur.",
   "sources": [
    "https://friflyt.no/topptur/siste_toppturer",
@@ -289,7 +289,8 @@
    "Sette fyrst roadClosedInWinter=false ut frå at Øygardstøl er ein heilårs turistparkering. Det er feil: OSM-vegen Lysevegen (ref=4224, tidlegare 500) har motor_vehicle:conditional=no @ Nov-May og snowplowing=no, og Sirdal kommune vinterstengjer vegen. Sett til true, og sesongen flytta til eit vårvindauge (mai–juni) i staden for vinter.",
    "friflyt/Utemagasinet skriv at ein tek av frå Langavatn-vegen «mot nordvest til Kjerag». Målt peiling frå vegpunktet på Langavassvegen (59.0193/6.6477) til toppunktet i summits.json er 271°, altså rett vest; nordvest derfrå fører til Kjeragbolten (59.03375/6.59324), 1,8 km nord for toppen. Skildringa er teken med som vest/nordvest og ikkje kopiert ukritisk.",
    "Den rette linja Øygardstøl → avkjøringa skar eit 61° steg. Henta faktisk veggeometri frå OSM (way 40069909) – Lysevegen går sørover langs lng 6,651–6,658, ikkje austover – og la eit vegpunkt på 59.0389/6.65146 (735,43 m) på sjølve vegen, slik at korridoren følgjer vegen.",
-   "Kontroll av toppunktet: DTM1 gjev 1095,99 m på 59.01948/6.58514, men 1115,57 m 400 m aust-nordaust (59.0200/6.5900) og 1163 m to km aust. Toppunktet er ikkje endra – det er SSR-punktet for «Kjerag» og er låst i summits.json – men siste etappe kjem inn frå aust over litt høgare mark, så ruta gjev litt frå seg dei siste hundre metrane."
+   "Kontroll av toppunktet: DTM1 gjev 1095,99 m på 59.01948/6.58514, men 1115,57 m 400 m aust-nordaust (59.0200/6.5900) og 1163 m to km aust. Toppunktet er ikkje endra – det er SSR-punktet for «Kjerag» og er låst i summits.json – men siste etappe kjem inn frå aust over litt høgare mark, så ruta gjev litt frå seg dei siste hundre metrane.",
+   "Teaseren bar forskingstalet og ikkje kortet sitt. Same feil som Hornindalsrokken: «kjerag» sitt oppgjevne tal var netto stigning eller kjelda si eiga oppgåve, medan kortet ber den routa kumulative stigninga. Teaseren er skriven om til det routa talet."
   ],
   "notes": "Det finst ein dokumentert skitur til Kjerag, men berre som vårtur. Friflyt/Utemagasinet («Fine toppturer på slutten av våren») skriv at vegen inn til Lysebotn opnar i byrjinga av mai, at mange går på ski til Kjerag, at den enklaste måten er å følgje Lysevegen eit par kilometer frå Øygardstølen til der vegen inn til Langavatn startar, og så følgje den vegen eit stykke før ein tek av mot nordvest – «terrenget her er slakt og passer for de fleste». DNT-hytta ved Langavatn er overnattingsalternativet. Vinterturen frå Lysebotn eksisterer ikkje som ei brøytt bilrute: Lysevegen er stengd frå november til mai, og sommarstien Øygardstøl–Kjeragbolten over Stordalen og Trædalen er kjettingsikra bratt terreng som ikkje er skiterreng. Difor roadClosedInWinter=true og sesong mai–juni. Merk at det populære målet Kjeragbolten ligg 1,8 km nord for toppunktet i summits.json; korridoren går til toppunktet, ikkje til bolten."
  },
@@ -299,8 +300,8 @@
   "grade": 4,
   "gradeReason": "1364 høydemeter kumulativt fra sjøkanten og 11-18 timer tur-retur etter Friflyt, med bre og en eksponert toppryg som ofte er skare og is. Friflyt krever isøks og stegjern og setter turen til KAST 3 – komplekst.",
   "roadClosedInWinter": false,
-  "teaserNo": "1364 høydemeter fra E10 ved Litlvatnet, medregnet 123 meter tapt ned til Grønnvatnet 328.",
-  "teaserEn": "1364 cumulative metres of ascent from the E10 at Litlvatnet, including 123 given back on the drop to Grønnvatnet at 328 m.",
+  "teaserNo": "1600 høydemeter fra E10 ved Litlvatnet: 355 av dem gir du fra deg underveis, 123 av dem ned til Grønnvatnet på 328.",
+  "teaserEn": "1600 metres of climbing from the E10 at Litlvatnet: 355 of them given back along the way, 123 on the drop to Grønnvatnet at 328.",
   "hazardNotes": "Turen er lang — 1364 høydemeter kumulativt og 11-18 timer — så tidspunktet avgjør om du møter gjennomvåt eller gjennomfrossen snø i det bratte partiet under breen. Stigningen opp fra Grønnvatnet ligger over 20 grader på lang strekning og har brattere trinn opp mot breen. Toppryggen er eksponert og ofte hard; mange bærer skiene der, og isøks og stegjern hører med.",
   "sources": [
    "https://www.friflyt.no/topptur/skiturer-troms/turbeskrivelse-moeysalen",
@@ -313,7 +314,8 @@
    "Checked whether the normal line starts from a boat, because getting that backwards would have put the trailhead on a quay. Møysalen Nasjonalparksenter's guided ascents run late June-September and begin with a ~20 minute boat from Hennes into Lonkanfjorden. Friflyt's ski route does not: it starts from the large car park on E10 south of Litlvatnet. The corridor uses the road start, which is what people actually drive to.",
    "Identified 'Litlvatnet' rather than guessing it. OSM relation/7844287 natural=water name=Litlvatnet is centred 68.46728,15.44098, and OSM way/361322473 (plus node/1894346151) amenity=parking access=yes sits at 68.46535,15.44134 on its south shore, 40 m from E10. DTM1 reads 22.5 m there.",
    "Kept a 123 m height loss instead of smoothing it away. The line crosses a 450.7 m saddle at 68.50350,15.45450 and then drops to Grønnvatnet at 328.0 m (68.50774,15.45174, DTM terrain class Innsjø). That looked like an error until it explained Friflyt's stated 1400-1800 m of ascent against only 1241 m of net gain: the waypoint chain sums to 1363.7 m of cumulative climb, inside Friflyt's band.",
-   "Confirmed Grønnvatnet is the 'vann 328' the route text names - DTM1 returns exactly 328.0 m at the SSR point. Also checked the descent aspect: summit to the glacier waypoint bears 140 degrees, i.e. SØ, which agrees with Friflyt's 'sørvendte partier gir spennende nedkjøringer'. A west or north aspect would have been wrong."
+   "Confirmed Grønnvatnet is the 'vann 328' the route text names - DTM1 returns exactly 328.0 m at the SSR point. Also checked the descent aspect: summit to the glacier waypoint bears 140 degrees, i.e. SØ, which agrees with Friflyt's 'sørvendte partier gir spennende nedkjøringer'. A west or north aspect would have been wrong.",
+   "Teaseren bar forskingstalet og ikkje kortet sitt. Same feil som Hornindalsrokken: «moysalen» sitt oppgjevne tal var netto stigning eller kjelda si eiga oppgåve, medan kortet ber den routa kumulative stigninga. Teaseren er skriven om til det routa talet."
   ],
   "notes": "Møysalen is a national park summit with a long approach, so the start matters. Said plainly: the guided SUMMER ascents from Møysalen Nasjonalparksenter begin with a boat from Hennes into Lonkanfjorden, but the winter ski route does not - Friflyt starts it from the big car park on E10 south of Litlvatnet, and that is the trailhead used here. Friflyt: KAST 3 - komplekst, 1400-1800 m ascent, 11-18 hours, January-May, ice axe and crampons required; the glacier is described as crevasse-free and normally unroped. The corridor is pinned to the named features (Grønnvatnet 328, the glacier south-east of the summit). The final ridge is exposed and often ice, and many parties carry their skis on it, so the last stretch is not really a skin track. Confidence medium: the description is detailed but gives no coordinates, and the two waypoints below Grønnvatnet are my own reading of the drainage rather than named places."
  },
@@ -349,8 +351,8 @@
   "grade": 3,
   "gradeReason": "10,7 km kvar veg og 697 netto høgdemeter, men med fleire skar undervegs blir samla stigning vesentleg større. Sjølve terrenget er slakt – vestflanken ligg på 11° i snitt og sørvestsida på 9° – så det krevjande er lengda, orienteringa i høgfjell utan sti, og skavlen på nordkanten av toppen.",
   "roadClosedInWinter": false,
-  "teaserNo": "10,7 km og 697 høgdemeter inn frå Berdalen over Tverrheiskara og Gjuvvatna; nordsida av toppen fell 42° og er ofte skavla.",
-  "teaserEn": "10.7 km and 697 m of ascent in from Berdalen over the Tverrheiskar passes and the Gjuvvatn lakes; the north side falls 42° and is often corniced.",
+  "teaserNo": "850 høgdemeter og 11,3 km inn frå Berdalen over Tverrheiskara og Gjuvvatna; nordsida av toppen fell 42° og er ofte skavla.",
+  "teaserEn": "850 m of climbing and 11.3 km in from Berdalen over the Tverrheiskar passes and the Gjuvvatn lakes; the north side falls 42° and is often corniced.",
   "hazardNotes": "Toppen er skavlkanta mot nord: nordsida fell 41,9° i det brattaste 60-metersvindauget 460–520 m ute, medan vest og sørvest ligg på 9–11°. Kom opp og gå ned på vestsida, og hald deg unna kanten i dårleg sikt. Ruta er ti kilometer frå bilen utan sti eller merking, så vêrvindauge og navigasjon er den styrande faktoren.",
   "sources": [
    "https://ut.no/turforslag/1112156036/sbyggjenuten-1507-moh-agders-hyeste-topp-26-km-dagstur-fra-berdalen-hyttegrend",
@@ -364,7 +366,8 @@
    "Den rette linja frå Tverrheiskardet skar eit 44° fall ned mot vestsida av Gjuvvatn-bassenget. Med strandpunktet i staden er største steg langs korridoren 32,4°.",
    "Øvste vegpunkt låg først på det namnlause vatnet på 1234 m som ut.no nemner; lokalrelieffet der er 45,7° innanfor 50 m. Flytta 300 m vestover til 59.4575/7.5940 (1225,47 m), der lokalrelieffet er 18,4°.",
    "SSR har to skar med nesten same namn på ruta – Tverrheiskaret 59.45645/7.48044 og Tverrheiskardet 59.45764/7.51592. Begge er tekne med, i den rekkjefølgja turskildringane gjev dei (fyrste skaret, så Tverrheitjønni, så det andre skaret).",
-   "Retning trailhead → topp er 82° (aust), som stemmer med at Berdalen ligg vest for fjellet. Netto stigning frå DTM1 er 1506,49 − 809,81 = 697 m; ut.no oppgjev 879 m kumulativt over 26,3 km, som er same tur med bølgjene rekna med."
+   "Retning trailhead → topp er 82° (aust), som stemmer med at Berdalen ligg vest for fjellet. Netto stigning frå DTM1 er 1506,49 − 809,81 = 697 m; ut.no oppgjev 879 m kumulativt over 26,3 km, som er same tur med bølgjene rekna med.",
+   "Teaseren bar forskingstalet og ikkje kortet sitt. Same feil som Hornindalsrokken: «saebyggjenuten» sitt oppgjevne tal var netto stigning eller kjelda si eiga oppgåve, medan kortet ber den routa kumulative stigninga. Teaseren er skriven om til det routa talet."
   ],
   "notes": "Ruta er dokumentert både som sommartur (ut.no, to skildringar frå Berdalen) og som vintertur på ski: 19topper gjekk ho siste helga i februar 2020 på fjellski frå Berdalen hyttefelt, om lag 10 km kvar veg, med rekkjefølgja Berdalen – Langemyr – fyrste skar – Tverrheitjønni – Tverrheiskardet – Gjuvvatn – dei to små vatna – toppen frå høgre flanke. Same kjelde nemner ein markert skavl på dei siste 240 høgdemetrane; korridoren endar på toppunktet fordi flankane vest og sørvest ligg på 9–11° og er ski-terreng heilt opp, men kanten mot nord er ikkje det. Fyrste kilometeren ut frå hyttegrenda deler trasé med oppkøyrde løyper i Berdalen; korridoren er terrenglinja, ikkje løypa. Ei alternativ oppgang finst frå Strandstøylsdalen i aust (Tokke-sida), men utan kartlagd vinterparkering."
  },

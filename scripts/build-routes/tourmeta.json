@@ -98,6 +98,17 @@
   "season": "jan–apr",
   "hasGuide": true
  },
+ "moysalen": {
+  "name": "Møysalen",
+  "region": "Vesterålen",
+  "summitM": 1264,
+  "verticalM": 1600,
+  "duration": "7–9 t",
+  "grade": 4,
+  "aspect": "SØ",
+  "season": "jan–mai",
+  "hasGuide": false
+ },
  "rombakstotta": {
   "name": "Rombakstøtta",
   "region": "Narvik",
@@ -823,5 +834,27 @@
   "aspect": "SV",
   "season": "jan–mars",
   "hasGuide": true
+ },
+ "saebyggjenuten": {
+  "name": "Sæbyggjenuten",
+  "region": "Setesdal",
+  "summitM": 1506,
+  "verticalM": 850,
+  "duration": "6–8 t",
+  "grade": 3,
+  "aspect": "V",
+  "season": "feb–apr",
+  "hasGuide": false
+ },
+ "kjerag": {
+  "name": "Kjerag",
+  "region": "Rogaland",
+  "summitM": 1124,
+  "verticalM": 620,
+  "duration": "4–6 t",
+  "grade": 2,
+  "aspect": "Ø",
+  "season": "mai–juni",
+  "hasGuide": false
  }
 }

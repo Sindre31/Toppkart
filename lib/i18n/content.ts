@@ -188,6 +188,12 @@ export const TOUR_TEASER_EN: Record<string, string> = {
     "890 m of climbing from Storli up Storbekkdalen and through the col west of the steep south-east face.",
   okla:
     "1020 m of climbing from Dalen in Storlidalen to Snydda — the cairn on the high point of the Okla massif.",
+  moysalen:
+    "1600 metres of climbing from the E10 at Litlvatnet: 355 of them given back along the way, 123 on the drop to Grønnvatnet at 328.",
+  saebyggjenuten:
+    "850 m of climbing and 11.3 km in from Berdalen over the Tverrheiskar passes and the Gjuvvatn lakes; the north side falls 42° and is often corniced.",
+  kjerag:
+    "620 m of climbing from Øygardstøl via Langavassvegen and the Kjerag plateau; gentle throughout, but Lysevegen only opens in May.",
 
 };
 
@@ -559,6 +565,41 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       endLabel: "1007 m",
       distanceLabel: "4.2 km",
       caption: "1031 metres of climbing and 4.21 km from Svarthola; the skis stay at the shoulder at 763 m, 244 metres below the summit.",
+    },
+  },
+  moysalen: {
+    intro:
+      "From 23 m to 1264, and 1596 metres of climbing to get there — 355 of them given back along the way, and 120 in one stretch down to Grønnvatnet. Vesterålen's highest is one of the few tours in this app that starts at the sea and ends on a ridge where people take their skis off. Friflyt rates it KAST 3, 11 to 18 hours, and calls for an ice axe and crampons.",
+    ascent: [
+      "From the large car park on the E10 on the south side of Litlvatnet, 23 m, the route runs north up the drainage. The E10 is a year-round trunk road, and this is the start Friflyt uses — the guided summer ascents from Møysalen Nasjonalparksenter begin with a boat from Hennes into Lonkanfjorden, but that is a different tour. The first two kilometres are flat: the 100 to 200 m band averages 2.9 degrees over 2165 metres of ground. The treeline goes early — the last forest sample is at 162 m, the first open one at 285.",
+      "At 154 m the line runs 90 metres across Forkledalsvatnan, at most 14 metres from shore, and at 391 m it runs 247 metres across Rundvatnet, at most 71 metres out. Both are natural — DTM1 gives terrain class Innsjø and the OSM polygons carry no reservoir tags. At 328 m comes the third: 225 metres across Grønnvatnet, up to 86 metres from shore. It is the largest of the three, and it is also the water the route description names.",
+      "Reaching Grønnvatnet costs you 120 metres of height. The line crosses the saddle at 450.7 m and then falls from 448 to 328 over 736 metres of ground — the largest continuous drop on the way up. This is not an error in the line, it is the tour: the net gain from sea to summit is 1241 metres, but what you actually climb is 1596, and the difference is that saddle and the ridges after it.",
+      "From Grønnvatnet the route climbs steadily on the east side of point 450, up the stream bed toward the glacier south-east of the summit. This is the long working stretch: the 800 to 900 m band averages 21.0 degrees over 253 metres of ground and the 900 to 1000 m band 21.0 degrees over 242 metres, and the steepest 400-metre window of the whole tour is here, 22.0 degrees from 774 to 939 m. The steepest 30-metre step upward, 41.9 degrees from 1036 to 1063 m, sits 8500 metres in, right below the glacier.",
+      "From the glacier at about 1025 m the route runs north-west up the summit ridge. The ridge is not even. 9332 metres in, the line rises to 1170 m and then falls 51 metres to 1119 over 27.3 metres of ground — a notch, not a measurement artefact: twelve DTM1 points at 2.3-metre spacing through the drop give a continuous curve from 1170.0 to 1119.2, and a grid 40 metres to either side reads from 1186 to 1055 m, so the neighbouring lines are no gentler. This is why the largest step along the route measures 45.9 degrees, and it is where the axe and crampons belong. The last 500 metres run on a bearing of 333 degrees and rise 124 metres; the steepest 200-metre window of the tour, 24.3 degrees from 1189 to 1264 m, is the summit ridge itself.",
+    ],
+    descent: [
+      "Back the same way. The drop-weighted mean bearing is 193 degrees — south — but that figure is dominated by the long kilometres down in the valley. The summit ridge and the glacier below it face south-east, and that is the part Friflyt describes as good skiing. Over the notch in the ridge most parties walk.",
+      "The usual mistake is counting the tour in metres of vertical rather than in hours. 1596 metres and 9.75 kilometres each way, with a steep section under the glacier and a ridge that is often scoured and hard, is 11 to 18 hours by Friflyt's reckoning. Turn around at the glacier and you still have 120 metres to climb out of Grønnvatnet on the way home. The second mistake is assuming a south-facing 21-degree pitch holds its condition through the day: the hour decides whether you meet soaked snow or frozen snow there.",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "Two sections carry the risk. The climb from Grønnvatnet to the glacier averages 21.0 degrees across both bands between 800 and 1000 m and has steeper steps within it — 41.9 degrees over its steepest 30-metre window, 8500 metres in. The summit ridge is the other: 24.3 degrees over 200 metres, with a notch where the line falls 51 metres over 27.3 metres of ground. Friflyt rates the tour KAST 3 and requires ice axe and crampons; the glacier is described as crevasse-free and is normally travelled unroped.",
+      },
+      {
+        title: "The terrain around it",
+        body: "Møysalen has no gentle sides. A sweep 1000 metres out in all eight directions from the summit gives 24.5 degrees as the gentlest average — that is south — and 40.2 degrees as the steepest, to the east. The steepest 60-metre windows read 55.9 degrees west and 70.8 degrees east, the latter only 10 metres from the top. Step off the ridge and no direction catches you kindly. That is why the route stays on the ridge the whole way rather than looking for a shortcut down.",
+      },
+      {
+        title: "Before you go",
+        body: "Check today's avalanche forecast for Lofoten og Vesterålen at varsom.no. Bring a transceiver, probe and shovel, and an ice axe and crampons besides — on this tour they are not optional.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "23 m",
+      endLabel: "1264 m",
+      distanceLabel: "9.7 km",
+      caption: "1596 metres of climbing from the E10 at Litlvatnet to 1264 m, 355 of them given back along the way and a 51-metre notch in the summit ridge.",
     },
   },
   rombakstotta: {
@@ -2838,6 +2879,77 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       endLabel: "871 m",
       distanceLabel: "9.6 km",
       caption: "549 metres of climbing and 9.61 km from Ravalsjø by Skrimsetra, Fugleleikskarva and Sørmyrseter, with the treeline at 676 m and all the climbing above 700 m.",
+    },
+  },
+  saebyggjenuten: {
+    intro:
+      "Agder's highest, and a tour where the number that matters is 11.31 km rather than 851 metres of climbing. No path, no marking, three passes and a lake along the way, and terrain so gentle that the steepest 400-metre window measures 13.7 degrees. The only steep ground on the mountain faces north, and you are not going there.",
+    ascent: [
+      "From the car park at the barrier at the far end of Berdalen hyttegrend, 810 m, the route runs east. The bearing from the car park to the summit is 82 degrees — Berdalen lies west of the mountain, and you head toward it all day. Riksveg 9 between Bykle and Hovden is ploughed all winter, and ut.no is explicit that you do not drive the last kilometre past the barrier. The first kilometre shares ground with the groomed tracks in Berdalen; the line here is the terrain line, not the track.",
+      "Past Langemyr at 891 m it climbs steadily to Tverrheiskaret at 1028 m. This is the only rise on the tour that feels like one: the steepest 30 metres measures 26.2 degrees between 1000 and 1022 m, 2350 metres in, and the steepest 400 metres 13.7 degrees from 963 to 1062 m. The treeline is here — the last forest sample at 904 m, the first open one at 1052.",
+      "Across Tverrheii and the Tverrheitjønnane you hold east to Tverrheiskardet at 1156 m. Note that the place-name register has two passes with almost the same name on this route, Tverrheiskaret at 1028 and Tverrheiskardet at 1156, and the route descriptions pass through them in that order. The 1100 to 1200 m band averages 1.3 degrees over 4455 metres of ground — that is over four kilometres of nearly flat high country, and it is where a tour without a path becomes a navigation job.",
+      "From Tverrheiskardet the line drops 47 metres over 535 metres of ground into the Gjuvvatn basin, then 32 metres more, down onto Midtre Gjuvvatn. There it runs 720 metres across the lake at 1124 m, at most 55 metres from shore — the only ice crossing of the tour. The lake is natural: DTM1 gives terrain class Innsjø, and the OSM relation (name=Midtre Gjuvvatn, ele=1124, ref:nve:vann=13750) carries no reservoir tags. The route descriptions go the same way.",
+      "From the east end of the lake at 1137 m the route climbs steadily east past the waypoint at 1225 m — which sits on firm ground just west of the lower of the two small tarns, not on the tarn itself — and the last kilometre goes up the west flank. The 1400 to 1500 m band averages 11.9 degrees over 499 metres of ground, the steepest on the tour. The final 500 metres run on a bearing of 78 degrees and rise 115 metres to the summit at 1506 m.",
+    ],
+    descent: [
+      "Back the same way, and down the west side. The drop-weighted mean bearing is 258 degrees, west-south-west, which is the flank you came up. The sweep from the summit gives 9.8 degrees average to the west and 9.2 to the south-west out to 1000 metres — gentle enough that the descent is mostly transport, but also gentle enough that you do not need to look for anything better.",
+      "And that is the point. The only steep side of Sæbyggjenuten is the north side, and it is corniced: 15.0 degrees average northward against 9.8 westward, with a steepest 60-metre window of 41.9 degrees 460 to 520 metres out, 42.3 degrees to the north-east and 46.1 degrees on a bearing of 10 degrees. The cornice sits on the last metres of height, and in flat light the edge is there with nothing in the ground to announce it. Come up the west side and go down the west side.",
+      "The other mistake is the distance. Ten kilometres in without path or marking, with over four kilometres of flat high country between 1100 and 1200 m, means the weather window rather than the angle governs the day. Turn around at Gjuvvatn and you still have seven kilometres left.",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "The line holds little avalanche terrain. The steepest 30-metre step is 26.2 degrees on the climb into Tverrheiskaret, the steepest 60 metres 19.6 degrees, the steepest 200 metres 16.1 and the steepest 400 metres 13.7. The steepest full elevation band, 1400 to 1500 m, averages 11.9 degrees over 499 metres of ground. What can go wrong on the line itself is the ice on Midtre Gjuvvatn late in the season, and that 720 metres is a long way to be out on it.",
+      },
+      {
+        title: "The terrain around it",
+        body: "West, south-west, south and south-east all average between 6.5 and 9.2 degrees out to 1000 metres from the summit. North and north-east do not: 15.0 and 14.3 degrees average, with steepest 60-metre windows of 41.9 and 42.3 degrees, and 46.1 degrees on a bearing of 10 degrees 430 to 490 metres out. The cornice on the north edge is documented on the last metres of height. The summit is a simple gentle dome from three sides and something else entirely from the fourth.",
+      },
+      {
+        title: "Before you go",
+        body: "Check today's avalanche forecast for Vest-Telemark at varsom.no — the summit is in Setesdal, but the Varsom region covering it is called Vest-Telemark. Bring a transceiver, probe and shovel.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "810 m",
+      endLabel: "1506 m",
+      distanceLabel: "11.3 km",
+      caption: "851 metres of climbing and 11.31 km from Berdalen over the Tverrheiskar passes and Midtre Gjuvvatn, where everything steep faces north and the route stays west.",
+    },
+  },
+  kjerag: {
+    intro:
+      "A summit that is not a summit. Kjerag is a plateau and the high point is a spot on it: 200 metres to the south the ground stands 1.5 metres higher, and the line itself crosses 1129 m before giving back 66 metres and climbing again to 1124. 620 metres of ascent over 7.4 km, and the one serious thing on the tour lies two kilometres away and has nothing to do with the angle.",
+    ascent: [
+      "From the car park at Øygardstøl, 641 m, you follow Lysevegen south. The road is closed in winter — OSM carries motor_vehicle:conditional=no @ Nov-May and snowplowing=no on county road 4224, and Sirdal kommune confirms it — so this is a spring tour and not a winter one. The line here never runs more than 100 metres from mapped road, but it cuts the hairpins: the steepest 30-metre step on the whole route, 24.4 degrees between 673 and 687 m, sits 86 metres off the roadway and is a corner rather than a gradient.",
+      "At Stølsdalen bridge, 850 m, the construction road toward Langavatn branches off and you follow Langvassvegen south-west. At 925 m the line runs 225 metres across an unnamed lake beside the road, at most 24 metres from shore. The DTM1 terrain class is Innsjø and not InnsjøRegulert, and the OSM polygon (way 1312542069, ref:nve:vann 195944) carries no reservoir tags — a natural lake, not a drawn-down one. The road is the real travel line here; the water is where the line cuts the corner.",
+      "At 944 m you leave the road and hold west onto the Kjerag plateau. The bearing from the road point to the high point is 271 degrees — due west. The route descriptions say «toward the north-west», and north-west from there leads to Kjeragbolten, which sits 1921 metres from the high point on a bearing of 10 degrees. That is a different objective on a different line.",
+      "Across the plateau it is gentle throughout: the 900 to 1000 m band averages 4.2 degrees over 1441 metres of ground, the 1000 to 1100 m band 2.3 degrees over 2746 metres. The line crosses four more lakes: 45 metres at 975 m, 45 metres at 1064 m, 686 metres at 1075 m with at most 32 metres to shore, and 90 metres at 1080 m. All are natural. In total the route runs 1091 of its 7362 metres on water. What makes the plateau demanding is not the angle but that it is bare slab without marking, with short abrupt edges between the gentle parts — the steepest 60-metre window due west of the high point measures 38.1 degrees and lies only 90 metres out.",
+      "The last stretch comes in from the east over slightly higher ground. The line tops out at 1129 m 6640 metres in, drops 66 metres to 1063, then climbs at 21.2 degrees over 60 metres from 1077 to 1112 m — the steepest sustained section of the tour — before the final 500 metres run on a bearing of 294 degrees and rise 59 metres to the high point at 1124 m. The highest ground on the plateau is 1163.7 m and lies 1347 metres east-north-east; the point here is the registered Kjerag point, not the highest one.",
+    ],
+    descent: [
+      "Back the same way. The drop-weighted mean bearing for the descent is 49 degrees, north-east, and with only 620 metres of vertical spread over 7.4 kilometres this is transport rather than skiing. The good part is the two kilometres down Langvassvegen and Lysevegen, wide and even for as long as there is snow on it.",
+      "The usual mistake on the plateau: walking north to look down into Lysefjorden. Due north of the high point the plateau holds 1008 to 1016 m all the way out to 1850 metres — it is flat, it looks like more plateau, and nothing tells you otherwise. Then the ground falls 71.4 degrees over the next fifty metres and 77.4 degrees over the fifty after that, and 2000 metres out it is below 800 m. The sea is 2.6 kilometres north. The line as drawn never comes within 1675 metres of ground below 800 m, and its closest point is the high point itself. In fog and flat light the edge arrives without warning, and it is the one mistake here that cannot be undone.",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "Avalanche terrain in the ordinary sense barely exists on this line. The steepest 30-metre step is 24.4 degrees and sits on a road bend at 673 m; the steepest 60 metres is 21.2 degrees between 1077 and 1112 m; the steepest 100 metres is 19.5 degrees and the steepest 400 metres 11.3 degrees. None of the seven elevation bands above 700 m averages more than 5.8 degrees. What can actually go wrong here is putting a ski through the ice on one of the five lakes late in the season, and missing the northern edge.",
+      },
+      {
+        title: "The terrain around it",
+        body: "From the high point seven of the eight directions average under 13 degrees within 200 metres, and south reads minus 0.4 degrees. Further out two stand apart: west falls 38.1 degrees in its steepest 60-metre window only 90 metres from the high point, and south-west 54.8 degrees 800 metres out. Both are short steps in the slab rather than collecting terrain — but in flat light they look like the rest of the plateau until you are standing on them. The north side is another matter: a wall of over a thousand metres into Lysefjorden, beginning 1850 metres north of the high point with nothing in the ground to announce it.",
+      },
+      {
+        title: "Before you go",
+        body: "Check today's avalanche forecast for Heiane at varsom.no. Bring a transceiver, probe and shovel. Check as well whether Lysevegen is open: it is not normally ploughed until the week before Easter, opens on 1 May at the earliest and often later, and without an open road there is no tour.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "641 m",
+      endLabel: "1124 m",
+      distanceLabel: "7.4 km",
+      caption: "620 metres of ascent and 7.4 km across the Kjerag plateau, where the steepest 30 metres is 24.4 degrees on a road bend and the danger lies 1850 metres north of the high point.",
     },
   },
 };

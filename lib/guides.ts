@@ -358,6 +358,43 @@ export const GUIDES: Record<string, TourGuide> = {
       caption: "1031 høydemeter og 4,21 km fra Svarthola; skiene blir igjen på skulderen 763 moh, 244 høydemeter under toppen.",
     },
   },
+  moysalen: {
+    slug: "moysalen",
+    intro:
+      "Fra 23 moh til 1264, og 1596 høydemeter for å komme dit — 355 av dem gir du fra deg underveis, og 120 av dem på ett strekk ned til Grønnvatnet. Vesterålens høyeste er en av de få turene i denne appen som starter ved sjøen og ender på en rygg der folk tar av seg skiene. Friflyt setter den til KAST 3, 11 til 18 timer, og krever isøks og stegjern.",
+    ascent: [
+      "Fra den store parkeringa langs E10 på sørsida av Litlvatnet, 23 moh, går ruta nordover gjennom vassdraget. E10 er helårsveg, og dette er startpunktet Friflyt bruker — de guida sommerturene fra Møysalen Nasjonalparksenter begynner med båt fra Hennes inn i Lonkanfjorden, men det er en annen tur. De første to kilometrene er flate: bandet 100 til 200 moh måler 2,9 grader over 2165 meter grunn. Skoggrensa passeres tidlig — siste skogpunkt ligger på 162 moh, første åpne på 285.",
+      "På 154 moh går linja 90 meter over Forkledalsvatnan, høyst 14 meter fra land, og på 391 moh 247 meter over Rundvatnet, høyst 71 meter fra land. Begge er naturlige vann — DTM1 gir terrengklasse Innsjø, og OSM-polygonene bærer ingen reservoartagger. På 328 moh kommer den tredje: 225 meter over Grønnvatnet, opptil 86 meter fra land. Det er det største av de tre, og det er også vannet rutebeskrivelsen navngir.",
+      "Å komme til Grønnvatnet koster deg 120 høydemeter. Linja går over skardet på 450,7 moh og faller så 448 til 328 over 736 meter grunn — det største sammenhengende fallet på veg opp. Dette er ikke en feil i linja, det er turen: netto stigning fra sjøen til toppen er 1241 meter, men det du faktisk går er 1596, og differansen er skardet og ryggene etter det.",
+      "Fra Grønnvatnet stiger ruta jevnt på østsida av punkt 450, opp bekkedraget mot breen sørøst for toppen. Dette er den lange arbeidsstrekninga: bandet 800 til 900 moh måler 21,0 grader over 253 meter grunn og bandet 900 til 1000 moh 21,0 grader over 242, og det bratteste 400-metersvinduet på hele turen ligger her, 22,0 grader fra 774 til 939 moh. Det bratteste 30-meterssteget oppover, 41,9 grader fra 1036 til 1063 moh, ligger 8500 meter ute, rett under breen.",
+      "Fra breen på rundt 1025 moh går ruta nordvest opp toppryggen. Ryggen er ikke jevn. 9332 meter ute stiger linja til 1170 moh og faller så 51 meter til 1119 over 27,3 meter grunn — et hakk, ikke en målefeil: tolv DTM1-punkt med 2,3 meters mellomrom gjennom fallet gir en sammenhengende kurve fra 1170,0 til 1119,2, og et rutenett på 40 meter til hver side gir fra 1186 til 1055 moh, så nabolinjene er ikke slakere. Det er dette som gjør at største steg langs ruta måler 45,9 grader, og det er her isøksa og stegjerna hører hjemme. De siste 500 metrene går på peiling 333 grader og stiger 124 meter; det bratteste 200-metersvinduet på turen, 24,3 grader fra 1189 til 1264 moh, er selve toppryggen.",
+    ],
+    descent: [
+      "Ned samme vei. Fallvekta gjennomsnittsretning er 193 grader — sør — men det tallet er dominert av de lange kilometrene nede i dalen. Selve toppryggen og breen under den ligger sørøst, og det er den delen Friflyt beskriver som god nedkjøring. Over hakket i ryggen går de fleste til fots.",
+      "Vanligste feil er å regne turen i høydemeter i stedet for i timer. 1596 høydemeter og 9,75 kilometer hver veg, med et bratt parti under breen og en rygg som ofte er avblåst og hard, er 11 til 18 timer etter Friflyt. Snur du på breen, har du fortsatt 120 høydemeter opp fra Grønnvatnet igjen på hjemvegen. Den andre feilen er å tro at et sørvendt bratt parti på 21 grader over lang strekning holder seg stabilt gjennom dagen: tidspunktet avgjør om du møter gjennomvåt eller gjennomfrossen snø der.",
+    ],
+    avalanche: [
+      {
+        title: "Ruta",
+        body: "To partier bærer risikoen. Stigninga fra Grønnvatnet til breen ligger på 21,0 grader i snitt over begge bandene mellom 800 og 1000 moh og har brattere trinn i seg — 41,9 grader over det bratteste 30-metersvinduet, 8500 meter ute. Toppryggen er det andre: 24,3 grader over 200 meter, med et hakk der linja faller 51 meter over 27,3 meter grunn. Friflyt setter turen til KAST 3 og krever isøks og stegjern; breen beskrives som sprekkfri og går normalt uten tau.",
+      },
+      {
+        title: "Terrenget rundt",
+        body: "Møysalen har ingen slake sider. Et sveip 1000 meter ut i alle åtte retninger fra toppen gir 24,5 grader i snitt som det slakeste — det er sør — og 40,2 grader som det bratteste, mot øst. De bratteste 60-metersvinduene ligger på 55,9 grader i vest og 70,8 grader i øst, det siste allerede 10 meter fra toppen. Går du av ryggen, er det ingen retning som tar imot deg mildt. Det er derfor ruta følger ryggen hele veien og ikke leter etter en snarveg ned.",
+      },
+      {
+        title: "Før du går",
+        body: "Sjekk dagens skredvarsel for Lofoten og Vesterålen på varsom.no. Ta med sender/mottaker, søkestang og spade, og isøks og stegjern i tillegg — på denne turen er de ikke valgfrie.",
+      },
+    ],
+    elevationProfile: {
+      path: "M0,198 L25,195 L44,180 L69,179 L94,178 L119,182 L140,179 L163,175 L188,164 L211,158 L235,154 L260,145 L288,138 L308,140 L330,153 L357,152 L385,143 L407,133 L427,122 L446,105 L468,95 L493,76 L506,64 L523,51 L537,54 L554,43 L571,37 L587,30 L600,18",
+      startLabel: "23 moh",
+      endLabel: "1264 moh",
+      distanceLabel: "9,7 km",
+      caption: "1596 høydemeter fra E10 ved Litlvatnet til 1264 moh, 355 av dem gitt fra seg underveis og et 51 meters hakk i toppryggen.",
+    },
+  },
   rombakstotta: {
     slug: "rombakstotta",
     intro:
@@ -2767,6 +2804,81 @@ export const GUIDES: Record<string, TourGuide> = {
       endLabel: "871 moh",
       distanceLabel: "9,6 km",
       caption: "549 høydemeter og 9,61 km fra Ravalsjø om Skrimsetra, Fugleleikskarva og Sørmyrseter, med skoggrensa på 676 moh og all stigningen over 700 moh.",
+    },
+  },
+  saebyggjenuten: {
+    slug: "saebyggjenuten",
+    intro:
+      "Agders høgaste, og ein tur der talet som betyr noko er 11,31 km og ikkje 851 høgdemeter. Ingen sti, ingen merking, tre skar og eit vatn undervegs, og eit terreng så slakt at det brattaste 400-metersvindauget måler 13,7 grader. Det einaste bratte på fjellet vender nord, og du skal ikkje dit.",
+    ascent: [
+      "Frå parkeringa ved bommen innerst i Berdalen hyttegrend, 810 moh, går ruta austover. Peilinga frå parkeringa til toppen er 82 grader — Berdalen ligg vest for fjellet, og du går inn mot det heile dagen. Riksveg 9 mellom Bykle og Hovden er brøytt heile vinteren, og ut.no presiserer at du ikkje skal køyre den siste kilometeren etter bommen. Den fyrste kilometeren deler trasé med oppkøyrde løyper i Berdalen; linja her er terrenglinja og ikkje løypa.",
+      "Forbi Langemyr på 891 moh går det jamt oppover mot Tverrheiskaret på 1028 moh. Dette er den einaste stigninga på turen som kjennest som ei stigning: brattaste 30 meter måler 26,2 grader mellom 1000 og 1022 moh, 2350 meter ute, og brattaste 400 meter 13,7 grader frå 963 til 1062 moh. Skoggrensa ligg her — siste skogpunkt på 904 moh, fyrste opne på 1052.",
+      "Over Tverrheii og Tverrheitjønnane held du aust til Tverrheiskardet på 1156 moh. Merk at SSR har to skar med nesten same namn på ruta, Tverrheiskaret på 1028 og Tverrheiskardet på 1156, og turskildringane går gjennom dei i den rekkjefølgja. Bandet 1100 til 1200 moh måler 1,3 grader over 4455 meter grunn — det er over fire kilometer nesten flatt høgfjell, og det er her ein tur utan sti blir ein navigasjonsjobb.",
+      "Frå Tverrheiskardet fell linja 47 meter over 535 meter grunn ned i Gjuvvatn-bassenget, og så 32 meter til, ned på Midtre Gjuvvatn. Der går ho 720 meter over vatnet på 1124 moh, høgst 55 meter frå land — den einaste iskryssinga på turen. Vatnet er naturleg: DTM1 gjev terrengklasse Innsjø, og OSM-relasjonen (name=Midtre Gjuvvatn, ele=1124, ref:nve:vann=13750) ber ingen reservoartaggar. Turskildringane går same vegen.",
+      "Frå austenden av vatnet på 1137 moh stig ruta jamt austover forbi vegpunktet på 1225 moh — det ligg på fast mark like vest for det nedste av dei to små vatna, ikkje på vatnet sjølv — og siste kilometeren går opp vestflanken. Bandet 1400 til 1500 moh måler 11,9 grader over 499 meter grunn, det brattaste på heile turen. Dei siste 500 metrane går på peiling 78 grader og stig 115 meter til toppen på 1506 moh.",
+    ],
+    descent: [
+      "Ned same veg, og ned vestsida. Fallvekta gjennomsnittsretning er 258 grader, altså vest-sørvest, som er den flanken du kom opp. Sveipet frå toppen gjev 9,8 grader i snitt vestover og 9,2 sørvestover ut til 1000 meter — det er slakt nok til at nedkøyringa mest er transport, men òg slakt nok til at du ikkje treng leite etter noko betre.",
+      "Og det er poenget. Den einaste bratte sida på Sæbyggjenuten er nordsida, og ho er skavlkanta: 15,0 grader i snitt nordover mot 9,8 vestover, med eit brattaste 60-metersvindauge på 41,9 grader 460 til 520 meter ute, 42,3 grader nordaustover og 46,1 grader på peiling 10 grader. Skavlen står på dei siste høgdemetrane, og i flatt lys ligg kanten der utan at terrenget varslar. Kom opp vestsida og gå ned vestsida.",
+      "Den andre feilen er lengda. Ti kilometer inn utan sti eller merking, med over fire kilometer flatt høgfjell mellom 1100 og 1200 moh, betyr at vêrvindauget og ikkje hellinga styrer turen. Snur du på Gjuvvatn, har du framleis sju kilometer att.",
+    ],
+    avalanche: [
+      {
+        title: "Ruta",
+        body: "Linja har lite skredterreng i seg. Brattaste 30-meterssteg er 26,2 grader i oppgangen til Tverrheiskaret, brattaste 60 meter 19,6 grader, brattaste 200 meter 16,1 og brattaste 400 meter 13,7. Det brattaste heile høgdebandet, 1400 til 1500 moh, måler 11,9 grader over 499 meter grunn. Det som kan gå gale på sjølve linja er isen på Midtre Gjuvvatn seint i sesongen, og at 720 meter er langt å vere ute på han.",
+      },
+      {
+        title: "Terrenget rundt",
+        body: "Vest, sørvest, sør og søraust ligg alle mellom 6,5 og 9,2 grader i snitt ut til 1000 meter frå toppen. Nord og nordaust gjer ikkje det: 15,0 og 14,3 grader i snitt, med brattaste 60-metersvindauge på 41,9 og 42,3 grader, og 46,1 grader på peiling 10 grader 430 til 490 meter ute. Skavlen på nordkanten er dokumentert på dei siste høgdemetrane. Toppen er ei enkel, slak kuppel frå tre kantar og noko heilt anna frå den fjerde.",
+      },
+      {
+        title: "Før du går",
+        body: "Sjekk dagens skredvarsel for Vest-Telemark på varsom.no — toppen ligg i Setesdal, men Varsom-regionen som dekkjer han heiter Vest-Telemark. Ta med sendar/mottakar, søkjestang og spade.",
+      },
+    ],
+    elevationProfile: {
+      path: "M0,200 L22,189 L46,179 L70,179 L91,175 L117,158 L139,134 L158,133 L180,137 L201,132 L225,127 L248,107 L270,108 L297,107 L316,104 L343,97 L366,109 L387,115 L409,118 L431,117 L452,106 L471,98 L495,92 L519,76 L545,55 L564,50 L585,35 L600,18",
+      startLabel: "810 moh",
+      endLabel: "1506 moh",
+      distanceLabel: "11,3 km",
+      caption: "851 høgdemeter og 11,31 km frå Berdalen over Tverrheiskara og Midtre Gjuvvatn, der alt bratt vender nord og ruta held seg vest.",
+    },
+  },
+  kjerag: {
+    slug: "kjerag",
+    intro:
+      "Ein topp som ikkje er ein topp. Kjerag er eit platå, og toppunktet er ein flekk på det: 200 meter sør for det ligg bakken 1,5 meter høgare, og linja går sjølv over 1129 moh før ho gjev frå seg 66 høgdemeter og stig tilbake til 1124. 620 høgdemeter og 7,4 km, og det einaste som er alvorleg på turen ligg to kilometer unna og har ingenting med hellinga å gjere.",
+    ascent: [
+      "Frå parkeringa på Øygardstøl, 641 moh, følgjer du Lysevegen sørover. Vegen er vinterstengd — OSM har motor_vehicle:conditional=no @ Nov-May og snowplowing=no på fylkesveg 4224, og Sirdal kommune stadfestar det — så dette er ein vårtur og ikkje ein vintertur. Linja her ligg aldri meir enn 100 meter frå kartlagd veg, men ho kuttar hårnålssvingane: det brattaste 30-meterssteget på heile ruta, 24,4 grader mellom 673 og 687 moh, ligg 86 meter frå vegbanen og er ein sving og ikkje ei stigning.",
+      "Ved Stølsdalen bru på 850 moh tek anleggsvegen mot Langavatn av, og du følgjer Langvassvegen sørvestover. På 925 moh går linja 225 meter over eit umerkt vatn like ved vegen, høgst 24 meter frå land. Terrengklassen i DTM1 er Innsjø og ikkje InnsjøRegulert, og OSM-polygonet (way 1312542069, ref:nve:vann 195944) ber ingen reservoartaggar — det er eit naturleg vatn, ikkje eit magasin. Vegen er den eigentlege ferdselslinja her; vatnet ligg der linja skjer svingen.",
+      "På 944 moh forlèt du vegen og held vest inn på Kjeragplatået. Peilinga frå vegpunktet til toppunktet er 271 grader — rett vest. Turskildringane skriv «mot nordvest», og nordvest derfrå fører til Kjeragbolten, som ligg 1921 meter frå toppunktet på peiling 10 grader. Det er eit anna mål og ei anna rute.",
+      "Over platået er det slakt heile vegen: bandet 900 til 1000 moh måler 4,2 grader i snitt over 1441 meter grunn, bandet 1000 til 1100 moh 2,3 grader over 2746 meter. Linja går tvers over fire vatn til: 45 meter på 975 moh, 45 meter på 1064 moh, 686 meter på 1075 moh med høgst 32 meter til land, og 90 meter på 1080 moh. Alle er naturlege. Til saman går ruta 1091 av 7362 meter på vatn. Det som gjer platået krevjande er ikkje hellinga, men at det er svaberg utan merking, med korte brå kantar mellom slake parti — det brattaste 60-metersvindauget rett vest for toppunktet måler 38,1 grader og ligg berre 90 meter ute.",
+      "Siste etappe kjem inn frå aust over litt høgare mark. Linja toppar på 1129 moh 6640 meter ute, fell 66 meter til 1063, og stig så 21,2 grader over 60 meter frå 1077 til 1112 moh — det brattaste samanhengande partiet på turen — før dei siste 500 metrane går på peiling 294 grader og stig 59 meter til toppunktet på 1124 moh. Høgste mark på heile platået er 1163,7 moh og ligg 1347 meter aust-nordaust; toppunktet her er det registrerte Kjerag-punktet, ikkje det høgaste.",
+    ],
+    descent: [
+      "Same veg tilbake. Fallvekta gjennomsnittsretning for nedkøyringa er 49 grader, altså nordaust, og med berre 620 høgdemeter fordelte over 7,4 kilometer er dette meir transport enn nedkøyring. Det gode partiet er dei to kilometrane ned Langvassvegen og Lysevegen, som er brei og jamn så lenge det ligg snø på han.",
+      "Vanlegaste feil på platået: å gå nordover for å sjå ned i Lysefjorden. Rett nord frå toppunktet held platået seg på 1008 til 1016 moh heilt ut til 1850 meter — det er flatt, det ser ut som meir platå, og du merkar ingenting. Så fell terrenget 71,4 grader over dei neste femti metrane og 77,4 grader over dei femti etter det, og på 2000 meter ute er bakken under 800 moh. Sjøen ligg 2,6 kilometer nord. Den teikna linja kjem aldri nærare enn 1675 meter frå bakke under 800 moh, og det næraste punktet er sjølve toppunktet. Kanten kjem utan varsel i tåke og flatt lys, og det er den eine feilen som ikkje går an å rette opp.",
+    ],
+    avalanche: [
+      {
+        title: "Ruta",
+        body: "Skredterreng i vanleg meining finst nesten ikkje på denne linja. Brattaste 30-meterssteg er 24,4 grader og ligg på ein vegsving på 673 moh; brattaste 60 meter er 21,2 grader mellom 1077 og 1112 moh; brattaste 100 meter er 19,5 grader og brattaste 400 meter 11,3 grader. Ingen av dei sju høgdebanda over 700 moh måler meir enn 5,8 grader i snitt. Det som faktisk kan gå gale her er å tråkke gjennom is på eit av dei fem vatna seint i sesongen, og å bomme på kanten mot nord.",
+      },
+      {
+        title: "Terrenget rundt",
+        body: "Frå toppunktet ligg sju av åtte retningar under 13 grader i snitt innanfor 200 meter, og sør måler minus 0,4 grader. Lenger ut skil to seg ut: vest fell 38,1 grader i det brattaste 60-metersvindauget alt 90 meter frå toppunktet, og sørvest 54,8 grader 800 meter ute. Begge er korte skrentar i svaberget, ikkje samlefelt — men i flatt lys ser dei ut som resten av platået heilt til du står på dei. Nordsida er noko anna: det er ei vegg på over tusen meter ned i Lysefjorden, og ho byrjar 1850 meter nord for toppunktet utan at terrenget varslar.",
+      },
+      {
+        title: "Før du går",
+        body: "Sjekk dagens skredvarsel for Heiane på varsom.no. Ta med sendar/mottakar, søkjestang og spade. Sjekk òg om Lysevegen er open: han blir normalt ikkje brøytt før veka før påske, opnar tidlegast 1. mai og ofte seinare, og utan open veg er det ingen tur.",
+      },
+    ],
+    elevationProfile: {
+      path: "M0,200 L22,193 L41,171 L59,165 L83,157 L103,150 L125,135 L147,125 L167,117 L188,109 L213,95 L235,94 L257,89 L279,84 L298,72 L321,58 L345,41 L367,36 L390,36 L411,33 L433,38 L459,38 L481,34 L499,36 L521,24 L543,22 L569,37 L585,22 L600,20",
+      startLabel: "641 moh",
+      endLabel: "1124 moh",
+      distanceLabel: "7,4 km",
+      caption: "620 høgdemeter og 7,4 km over Kjeragplatået, der brattaste 30 meter er 24,4 grader på ein vegsving og det farlege ligg 1850 meter nord for toppunktet.",
     },
   },
 };

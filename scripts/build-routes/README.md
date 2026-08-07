@@ -184,11 +184,11 @@ one line:
 | Bitihorn | Bygdin (549 m) and Båtskaret (454 m) |
 | Høgevarde | Tempelseter (598 m) and Norefjellstua (826 m) — opposite sides of Norefjell |
 
-Nine tours carry a second route; the table above is all of them. 84 routes over
-75 tours. The first route of a tour is the one its own `verticalM` and `duration`
+Nine tours carry a second route; the table above is all of them. 87 routes over
+78 tours. The first route of a tour is the one its own `verticalM` and `duration`
 describe. Alternatives are only added where a second route is actually documented
 — `ALTERNATES` in `build_corridors.py`, and the research output, are not places
-to invent one because the schema allows it. The other 66 tours have a single
+to invent one because the schema allows it. The other 69 tours have a single
 route, and the app renders no picker for them.
 
 `ALTERNATES` only reaches the first 24, because `build_corridors.py` is fed by a
@@ -1507,6 +1507,64 @@ in detail and calls the ice normal winter travel; Snota crosses Svartvatnet
 because ut.no routes it that way and names the height. The check surfaces both
 and lets a reader confirm them, which is the intended behaviour — the difference
 between those and Fanaråken is not the crossing, it is whether anyone was told.
+
+## The three, written with the ground check first
+
+Kjerag, Møysalen and Sæbyggjenuten were added after the Trondheim round, and are
+the first three where `check_ground.py` ran **before** the guide was written
+rather than after it. That is a small change of order with a large effect on the
+copy: six water crossings went into the prose as measured facts instead of being
+found later as omissions.
+
+None of the six needed a reroute. All are DTM1 terrain class `Innsjø` rather than
+`InnsjøRegulert`, and none of the OSM polygons carries `water=reservoir` or
+`landuse=reservoir` — this is the Styggemann/Folarskardnuten call, not the
+Fanaråken one. What each guide now says is which lake, at what height, for how
+many metres, and how far offshore the line gets:
+
+| Tour | Crossings | On water | Named |
+|---|---|---|---|
+| Kjerag | five, at 925, 975, 1064, 1075 and 1080 m | 1091 of 7362 m | none — unnamed in SSR and OSM alike |
+| Møysalen | three | 562 of 9747 m | Forkledalsvatnan 154, Rundvatnet 391, Grønnvatnet 328 |
+| Sæbyggjenuten | one | 720 of 11 306 m | Midtre Gjuvvatn 1124 |
+
+Three findings came out of writing them that the sources do not carry.
+
+**Kjerag's high point is not the high point.** The registered summit reads
+1123.7 m in DTM1, but the highest cell within 5 km is 1163.7 m at 59.01952/6.61052,
+1347 m east-north-east — and 200 m due south of the registered point the ground
+stands 1.5 m higher than the point itself, which is why the eight-direction sweep
+returns −0.4° southward. The routed line makes the same joke: it crosses 1129 m
+at 6640 m out, gives back 66 m to 1063, and climbs 21.2° over 60 m to arrive at
+1124. All of that is in the guide, because a reader standing on a plateau
+deserves to know the summit is a registration and not a peak. The real hazard is
+elsewhere and was measured rather than repeated: due north the plateau holds
+1008–1016 m out to 1850 m and then falls 71.4° and 77.4° over the next hundred,
+reaching sea level about 2.6 km out. The drawn line never comes within 1675 m of
+ground below 800 m.
+
+**Møysalen's summit ridge has a 51 m notch, and it is real.** The line rises to
+1170 m at 9332 m out and drops to 1119 over 27.3 m of ground — the sort of figure
+that is almost always a resampling artefact. Twelve DTM1 point lookups at 2.3 m
+spacing through the drop return a continuous curve (1170.0, 1163.3, 1162.6,
+1160.6, 1158.2, 1153.3, 1151.1, 1148.6, 1139.6, 1133.5, 1127.3, 1123.8, 1119.2),
+and a 5×5 grid at 20 m spacing around it reads 1055 to 1186 m, so no neighbouring
+line is gentler. It is a notch. It is also why the route's largest step is 45.9°
+and why Friflyt has people carrying skis there. Møysalen is the steepest summit
+in the app by flank sweep: no direction averages under 24.5° out to a kilometre,
+and east reads 70.8° in its steepest 60 m window only 10 m from the top.
+
+**Sæbyggjenuten is forecast as Vest-Telemark.** The card says Setesdal, which is
+where the mountain is, but `AvalancheWarningByCoordinates` for 59.46181/7.62568
+returns region 3035, Vest-Telemark — an A-region with a daily forecast. The guide
+says both, because a reader who searches varsom.no for "Setesdal" finds nothing.
+All three tours are in A-regions: Heiane (3037), Lofoten og Vesterålen (3014) and
+Vest-Telemark (3035).
+
+The measurements behind every figure above are in `measurements.json` under the
+three slugs, which is what `check_guides.py` reads when deciding whether a number
+in the prose is sourced. `check_ground.py` re-run after the guides went in returns
+all six crossings as notes rather than findings, and the three tours as clean.
 
 ## Network
 
