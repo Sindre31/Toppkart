@@ -1,0 +1,106 @@
+--offline: the terrain model only; trails and stream sides go unchecked
+tour / route                        water  trail  findings
+auskjeret / normalruta                  0      0  
+besshoe / normalruta                    0      0  note: 3015 m on water at 1372 m, up to 260 m from the mapped shore — the guide names that height, which is not the same as saying it crosses it
+bitihorn / normalruta                   0      0  
+bitihorn / batskaret                    0      0  
+breitinden / normalruta                 1      0  295 m on water at 474 m, up to 34 m from the mapped shore — and the guide never names that height
+eidskyrkja / normalruta                 0      0  
+fanaraken / normalruta                  0      0  
+fanaraken / turtagro                    0      0  
+folarskardnuten / normalruta            3      0  135 m on water at 1098 m, offshore distance unknown (no water polygon returned) — and the guide never names that height; 45 m on water at 1098 m, offshore distance unknown (no water polygon returned) — and the guide never names that height; 45 m on water at 1230 m, offshore distance unknown (no water polygon returned) — and the guide never names that height; note: 270 m on water at 1603 m, offshore distance unknown (no water polygon returned) — the guide names that height, which is not the same as saying it crosses it
+galdhopiggen / normalruta               0      0  
+galdhopiggen / spiterstulen             0      0  
+gaustatoppen / normalruta               0      0  
+gaustatoppen / stavsro                  0      0  
+geitgaljen / normalruta                 0      0  
+glitregga / normalruta                  0      0  
+glittertinden / normalruta              1      0  45 m on water at 1335 m, offshore distance unknown (no water polygon returned) — and the guide never names that height; note: says «merkede» — UNCHECKED, Overpass would not answer
+grafjell / tempelseter                  0      0  note: 764 m on water at 950 m, offshore distance unknown (no water polygon returned) — the guide names that height, which is not the same as saying it crosses it; note: 225 m on water at 1095 m, offshore distance unknown (no water polygon returned) — the guide names that height, which is not the same as saying it crosses it; note: 45 m on water at 1152 m, offshore distance unknown (no water polygon returned) — the guide names that height, which is not the same as saying it crosses it; note: 399 m on water at 1156 m, offshore distance unknown (no water polygon returned) — the guide names that height, which is not the same as saying it crosses it; note: says «løypa» — UNCHECKED, Overpass would not answer
+gygrastolen / normalruta                0      0  note: 90 m on water at 492 m, offshore distance unknown (no water polygon returned) — the guide names that height, which is not the same as saying it crosses it; note: says «anleggsvegen» — UNCHECKED, Overpass would not answer
+gyranfisen / vikerkoia                  0      0  note: says «Løypene» — UNCHECKED, Overpass would not answer
+hamperokken / normalruta                0      0  
+hesten-segla / normalruta               0      0  note: says «merka» — UNCHECKED, Overpass would not answer
+himmeltindan / normalruta               0      0  note: says «merkede» — UNCHECKED, Overpass would not answer
+hogevarde / tempelseter                 1      0  68 m on water at 1378 m, offshore distance unknown (no water polygon returned) — and the guide never names that height; note: says «oppkjørt» — UNCHECKED, Overpass would not answer
+hogevarde / norefjellstua               1      0  45 m on water at 1378 m, offshore distance unknown (no water polygon returned) — and the guide never names that height; note: says «oppkjørt» — UNCHECKED, Overpass would not answer
+horndalsnuten / normalruta              0      0  
+hornindalsrokken / normalruta           0      0  
+jakta / normalruta                      0      0  
+jonshornet / normalruta                 0      0  
+juklavasstinden / normalruta            1      0  225 m on water at 1066 m, offshore distance unknown (no water polygon returned) — and the guide never names that height; note: 90 m on water at 755 m, offshore distance unknown (no water polygon returned) — the guide names that height, which is not the same as saying it crosses it
+kavringtinden / normalruta              0      0  
+keipen / normalruta                     0      0  
+kirketaket / normalruta                 0      0  note: says «oppkjørte» — UNCHECKED, Overpass would not answer
+kolastinden / normalruta                0      0  
+krakfjellet / haaen                     0      0  note: 135 m on water at 526 m, offshore distance unknown (no water polygon returned) — the guide names that height, which is not the same as saying it crosses it; note: says «skogsbilvegen» — UNCHECKED, Overpass would not answer
+kvamshesten / normalruta                0      0  note: 180 m on water at 715 m, offshore distance unknown (no water polygon returned) — the guide names that height, which is not the same as saying it crosses it; note: 270 m on water at 785 m, offshore distance unknown (no water polygon returned) — the guide names that height, which is not the same as saying it crosses it
+kvitegga / normalruta                   0      0  
+lodalskapa / normalruta                 0      0  note: 271 m on water at 606 m, offshore distance unknown (no water polygon returned) — the guide names that height, which is not the same as saying it crosses it; note: 1991 m on water at 1211 m, offshore distance unknown (no water polygon returned) — the guide names that height, which is not the same as saying it crosses it
+lonahorgi / normalruta                  0      0  note: says «skogsbilvegen» — UNCHECKED, Overpass would not answer
+melderskin / normalruta                 0      0  
+melshornet / normalruta                 0      0  note: says «preparert» — UNCHECKED, Overpass would not answer
+molden / normalruta                     0      0  
+okla / dalen                            0      0  note: 630 m on water at 1151 m, offshore distance unknown (no water polygon returned) — the guide names that height, which is not the same as saying it crosses it
+oksen / normalruta                      0      0  
+rana / normalruta                       0      0  
+ranten / tempelseter                    0      0  note: says «merkede» — UNCHECKED, Overpass would not answer
+rasletinden / normalruta                2      0  45 m on water at 1379 m, offshore distance unknown (no water polygon returned) — and the guide never names that height; 170 m on water at 1377 m, offshore distance unknown (no water polygon returned) — and the guide never names that height
+rensfjellet / haaen                     0      0  note: 74 m on water at 526 m, offshore distance unknown (no water polygon returned) — the guide names that height, which is not the same as saying it crosses it; note: says «løypa» — UNCHECKED, Overpass would not answer
+rombakstotta / normalruta               0      0  note: 180 m on water at 325 m, offshore distance unknown (no water polygon returned) — the guide names that height, which is not the same as saying it crosses it
+rondslottet / normalruta                1      0  90 m on water at 1167 m, offshore distance unknown (no water polygon returned) — and the guide never names that height
+rondslottet / doralseter                0      0  
+rornestinden / normalruta               0      0  
+saudehornet / normalruta                0      0  note: says «anleggsvegen» — UNCHECKED, Overpass would not answer
+skala / normalruta                      0      0  
+skarasalen / normalruta                 0      0  
+skarene / normalruta                    0      0  
+skarsteinfjellet / normalruta           0      0  
+skogshorn / normalruta                  0      0  note: says «preparerte» — UNCHECKED, Overpass would not answer
+slogen / normalruta                     0      0  
+slogen / oye-direkte                    0      0  
+snohetta / normalruta                   0      0  
+snohetta / reinheim                     0      0  
+snonipa / normalruta                    0      0  
+snota / grahaugen                       0      0  note: 674 m on water at 889 m, offshore distance unknown (no water polygon returned) — the guide names that height, which is not the same as saying it crosses it; note: 239 m on water at 888 m, offshore distance unknown (no water polygon returned) — the guide names that height, which is not the same as saying it crosses it; note: 90 m on water at 1024 m, offshore distance unknown (no water polygon returned) — the guide names that height, which is not the same as saying it crosses it
+steindalsnosi / normalruta              0      0  
+storanosi / normalruta                  0      0  
+storbekkhoa / storli                    0      0  note: names a right/left-of-stream side — UNCHECKED, Overpass would not answer
+store-blamann / normalruta              0      0  note: says «merka» — UNCHECKED, Overpass would not answer
+store-ble / sigridsbu                   1      0  note: 225 m on water at 746 m, offshore distance unknown (no water polygon returned) — the guide names that height, which is not the same as saying it crosses it; note: 90 m on water at 1162 m, offshore distance unknown (no water polygon returned) — the guide names that height, which is not the same as saying it crosses it; 45 m on water at 1177 m, offshore distance unknown (no water polygon returned) — and the guide never names that height
+storehorn / normalruta                  0      0  note: 315 m on water at 1191 m, offshore distance unknown (no water polygon returned) — the guide names that height, which is not the same as saying it crosses it; note: says «merkede» — UNCHECKED, Overpass would not answer
+storgalten / normalruta                 0      0  
+storhornet / bree                       0      0  
+stornappstinden / normalruta            0      0  
+storronden / normalruta                 0      0  
+styggemann / ravalsjo                   4      0  note: 540 m on water at 475 m, offshore distance unknown (no water polygon returned) — the guide names that height, which is not the same as saying it crosses it; 191 m on water at 575 m, offshore distance unknown (no water polygon returned) — and the guide never names that height; 270 m on water at 575 m, offshore distance unknown (no water polygon returned) — and the guide never names that height; 225 m on water at 594 m, offshore distance unknown (no water polygon returned) — and the guide never names that height; 90 m on water at 602 m, offshore distance unknown (no water polygon returned) — and the guide never names that height; note: says «oppkjørte» — UNCHECKED, Overpass would not answer
+sunndalsnipa / normalruta               0      0  
+surloytenuten / sudstul                 1      0  45 m on water at 1068 m, offshore distance unknown (no water polygon returned) — and the guide never names that height
+synshorn / normalruta                   0      0  
+torvloysa / normalruta                  0      0  
+tromsdalstinden / normalruta            0      0  note: says «skogsbilveg» — UNCHECKED, Overpass would not answer
+tromsdalstinden / sommerruta            0      0  note: says «skogsbilveg» — UNCHECKED, Overpass would not answer
+vassdalstinden / normalruta             1      0  52 m on water at 946 m, offshore distance unknown (no water polygon returned) — and the guide never names that height
+vassfjellet / markavollen               0      0  note: says «skiløypene» — UNCHECKED, Overpass would not answer
+vesoldo / normalruta                    0      0  
+ytstevasshornet / normalruta            0      0  
+
+75 tours, 84 routes — 18 need a look
+  - breitinden/normalruta: 295 m on water at 474 m, up to 34 m from the mapped shore — and the guide never names that height
+  - folarskardnuten/normalruta: 135 m on water at 1098 m, offshore distance unknown (no water polygon returned) — and the guide never names that height
+  - folarskardnuten/normalruta: 45 m on water at 1098 m, offshore distance unknown (no water polygon returned) — and the guide never names that height
+  - folarskardnuten/normalruta: 45 m on water at 1230 m, offshore distance unknown (no water polygon returned) — and the guide never names that height
+  - glittertinden/normalruta: 45 m on water at 1335 m, offshore distance unknown (no water polygon returned) — and the guide never names that height
+  - hogevarde/tempelseter: 68 m on water at 1378 m, offshore distance unknown (no water polygon returned) — and the guide never names that height
+  - hogevarde/norefjellstua: 45 m on water at 1378 m, offshore distance unknown (no water polygon returned) — and the guide never names that height
+  - juklavasstinden/normalruta: 225 m on water at 1066 m, offshore distance unknown (no water polygon returned) — and the guide never names that height
+  - rasletinden/normalruta: 45 m on water at 1379 m, offshore distance unknown (no water polygon returned) — and the guide never names that height
+  - rasletinden/normalruta: 170 m on water at 1377 m, offshore distance unknown (no water polygon returned) — and the guide never names that height
+  - rondslottet/normalruta: 90 m on water at 1167 m, offshore distance unknown (no water polygon returned) — and the guide never names that height
+  - store-ble/sigridsbu: 45 m on water at 1177 m, offshore distance unknown (no water polygon returned) — and the guide never names that height
+  - styggemann/ravalsjo: 191 m on water at 575 m, offshore distance unknown (no water polygon returned) — and the guide never names that height
+  - styggemann/ravalsjo: 270 m on water at 575 m, offshore distance unknown (no water polygon returned) — and the guide never names that height
+  - styggemann/ravalsjo: 225 m on water at 594 m, offshore distance unknown (no water polygon returned) — and the guide never names that height
+  - styggemann/ravalsjo: 90 m on water at 602 m, offshore distance unknown (no water polygon returned) — and the guide never names that height
+  - surloytenuten/sudstul: 45 m on water at 1068 m, offshore distance unknown (no water polygon returned) — and the guide never names that height
+  - vassdalstinden/normalruta: 52 m on water at 946 m, offshore distance unknown (no water polygon returned) — and the guide never names that height

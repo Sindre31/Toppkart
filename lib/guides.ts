@@ -910,12 +910,12 @@ export const GUIDES: Record<string, TourGuide> = {
   ytstevasshornet: {
     slug: "ytstevasshornet",
     intro:
-      "835 høgdemeter på 3,87 km frå Svartevatnet, bratt opp Vassdalen til vatna på 976 moh og så nordvest mot ein smal topprygg. Brattaste samanhengande parti måler 25,3 grader, og dei siste metrane blir gjerne gått utan ski.",
+      "833 høgdemeter på 3,93 km frå Svartevatnet, bratt opp Vassdalen til vatna på 976 moh og så nordvest mot ein smal topprygg. Brattaste samanhengande parti måler 26,9 grader, og dei siste metrane blir gjerne gått utan ski.",
     ascent: [
-      "Start på parkeringa ved Svartevatnet, 538 moh, ved hovudvegen mellom Sykkylven og Stranda. Dei fyrste 769 metrane grunn er flate langs vatnet — 4,9 grader — før dalen tek til.",
-      "Gå vestover, på venstre side av elva, opp Vassdalen. Her er den bratte delen av turen: 18,3 grader frå 600 til 700 moh, 21,2 frå 700 til 800 og 19,2 frå 800 til 900, med brattaste samanhengande parti på 25,3 grader mellom 785 og 813 moh. Skogen held til 663 moh.",
-      "Ved dei små fjellvatna på 976 moh flatar det ut igjen — bandet frå 900 til 1000 moh måler 6,3 grader over 855 meter grunn. Det er her du ser resten av ruta, og det er òg den naturlege staden å snu om vinden har bygd skavl på ryggen over.",
-      "Derfrå held du nordvestover mot toppryggen: 16,3 grader frå 1000 til 1100 moh og 19,7 frå 1100 til 1200. Dei siste metrane opp til 1331 moh blir gjerne gått utan ski.",
+      "Start på parkeringa ved Svartevatnet, 538 moh, ved hovudvegen mellom Sykkylven og Stranda. Dei fyrste 858 metrane grunn er flate — 4,3 grader — og dei går langs austbredden, ikkje over vatnet. Svartevatnet er eit magasin: vassflata måler 526 moh, tolv meter under parkeringa, og linja held land heile vegen rundt nordenden og ned til sørenden på 524.",
+      "Gå vestover, på venstre side av elva, opp Vassdalen. Her er den bratte delen av turen: 18,3 grader frå 600 til 700 moh, 22,5 frå 700 til 800 over berre 270 meter grunn, og 20,0 frå 800 til 900, med brattaste samanhengande parti på 26,9 grader mellom 795 og 818 moh. Skogen held til 624 moh, og frå 706 er du i ope terreng.",
+      "Ved dei små fjellvatna på 976 moh flatar det ut igjen — bandet frå 900 til 1000 moh måler 6,5 grader over 945 meter grunn. Det er her du ser resten av ruta, og det er òg den naturlege staden å snu om vinden har bygd skavl på ryggen over.",
+      "Derfrå held du nordvestover mot toppryggen: 19,0 grader frå 1000 til 1100 moh og 18,9 frå 1100 til 1200. Dei siste metrane opp til 1331 moh blir gjerne gått utan ski.",
     ],
     descent: [
       "Ned same vegen, austover gjennom Vassdalen til Svartevatnet. Fallretninga er aust, og Vassdalen er både det brattaste og det mest skredutsette på turen.",
@@ -924,7 +924,7 @@ export const GUIDES: Record<string, TourGuide> = {
     avalanche: [
       {
         title: "Ruta",
-        body: "Flat start, bratt midtdel og eit flatt parti før toppryggen: brattaste hundremeteren, 700 til 800 moh, måler 21,2 grader, og brattaste samanhengande parti 25,3 grader mellom 785 og 813 moh. Vassdalen er skredterreng frå 600 moh og opp.",
+        body: "Flat start, bratt midtdel og eit flatt parti før toppryggen: brattaste hundremeteren, 700 til 800 moh, måler 22,5 grader over 270 meter grunn, og brattaste samanhengande parti 26,9 grader mellom 795 og 818 moh. Vassdalen er skredterreng frå 600 moh og opp. Nede ved starten er faren ei anna: isen på eit magasin, og ruta er lagd på land utanom han.",
       },
       {
         title: "Terrenget rundt",
@@ -936,11 +936,11 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,197 L21,199 L49,200 L77,198 L93,192 L119,182 L137,174 L154,166 L168,159 L182,151 L196,144 L210,135 L227,126 L245,116 L259,110 L280,103 L302,100 L322,98 L336,102 L357,102 L378,95 L399,88 L417,81 L427,77 L448,64 L462,56 L483,47 L510,41 L531,36 L552,30 L573,23 L600,18",
+      path: "M0,197 L21,198 L42,198 L62,199 L76,200 L98,195 L124,185 L145,177 L158,169 L179,159 L200,146 L209,141 L227,131 L241,123 L261,112 L282,105 L310,100 L323,100 L344,103 L365,102 L385,94 L400,91 L420,80 L440,70 L454,62 L468,54 L482,48 L509,41 L536,34 L557,28 L578,21 L600,18",
       startLabel: "538 moh",
       endLabel: "1331 moh",
       distanceLabel: "3,9 km",
-      caption: "835 høgdemeter og 3,87 km frå Svartevatnet opp Vassdalen, med skoggrensa på 663 moh og vatna på 976 moh som det flate midtpunktet.",
+      caption: "833 høgdemeter og 3,93 km frå Svartevatnet langs austbredden og opp Vassdalen til vatna på 976 moh, med skogen som slepper taket på 624.",
     },
   },
   rana: {
@@ -1865,19 +1865,19 @@ export const GUIDES: Record<string, TourGuide> = {
     intro:
       "Høyfjellstur fra Sognefjellsvegen til 2068 moh, med Fannaråkhytta på selve toppunktet. Få høydemeter og slake vinkler — men ruta går over bre, og det bestemmer utstyret.",
     ascent: [
-      "Du starter på Korpen, parkeringen på fv55 ved Prestesteinsvatnet, 1397 moh. Sognefjellsvegen er vinterstengt over høyfjellet og brøytes opp ved påsketider — i 2026 åpnet den 1. april — og de første ukene etter åpning er strekninga nattestengt fra 20 til 08. Åpningsdatoen setter sesongen, så sjekk vegstatus før du kjører. Første kilometeren og litt til går nedover: følg vestsida av vatnet ned til demninga ved utløpet på 1343 moh. Du gir fra deg 53 høydemeter før du har begynt å stige. Hold land langs vestsida — ikke skjær over isen.",
-      "Forbi demninga trekker du opp i søkket øst for nordryggen til Steindalsnosi og inn på Fannaråkbreen rundt 1550 moh. Hold deg lavt og i den slake delen av breen. Den er oppsprukket, og du går den i tau.",
-      "Sikt deg inn mot 1688-høgda øst for Fannaråknosi og rund den. Ikke hold høyde over breen: går du for høyt før du svinger opp, blir passasjen opp på austryggen vesentlig brattere. Den bratteste hundremeteren ligger mellom 1800 og 1900 moh og holder 19,7° i snitt, og det bratteste enkelttrinnet på linja måler 42,7°.",
+      "Du starter på Korpen, parkeringen på fv55 ved Prestesteinsvatnet, 1397 moh. Sognefjellsvegen er vinterstengt over høyfjellet og brøytes opp ved påsketider — i 2026 åpnet den 1. april — og de første ukene etter åpning er strekninga nattestengt fra 20 til 08. Åpningsdatoen setter sesongen, så sjekk vegstatus før du kjører. De første halvannen kilometerne går nedover og over land: linja følger vestsida forbi to små tjønner på 1384 og 1381 moh, videre vest for magasinet og ned til demninga ved utløpet på 1343 moh. Hold land langs vestsida — ikke skjær over isen. Prestesteinsvatnet er et magasin, og den flate snarvegen rett over er den ene flata på hele turen du ikke vet bæreevnen til.",
+      "Å gå rundt koster: linja gir fra seg 113 høydemeter før den begynner å stige for alvor, mot de 54 en rett strek fra bilen til demninga ville gitt. Land bølger, is gjør det ikke. Forbi demninga trekker du opp i søkket øst for nordryggen til Steindalsnosi og inn på Fannaråkbreen rundt 1550 moh. Hold deg lavt og i den slake delen av breen. Den er oppsprukket, og du går den i tau.",
+      "Sikt deg inn mot 1688-høgda øst for Fannaråknosi og rund den. Ikke hold høyde over breen: går du for høyt før du svinger opp, blir passasjen opp på austryggen vesentlig brattere. Den bratteste hundremeteren ligger mellom 1800 og 1900 moh og holder 19,8° i snitt over 317 meter grunn, og det bratteste enkelttrinnet på linja måler 27,1° mellom 1859 og 1882 moh.",
       "Rundt knausen kommer du inn på søraustryggen og sommerstien fra Keisarpasset. Følg den over Fannaråknosi og videre langs austryggen til Fanaråken. Det henger store skavler på nordsida hele vegen, og nordsida faller 55–58° i de øverste 90 metrene under kammen — hold deg på sørsida, også når sikten er god.",
     ],
     descent: [
       "Ned følger du samme linja — øst- og nordøstvendt, jevnt og slakt, med pålitelig vårsnø langt ut i sesongen. Den andre dokumenterte ruta, fra Turtagrø gjennom Helgedalen, gir 1196 høydemeter og er en annen dag.",
-      "Vanligste feil: å holde høyde over breen på vei ned, slik at du havner for høyt vest for 1688-høgda og må ned der det er brattest. Slipp deg ned rundt knausen slik du kom opp. Og husk at siste strekket ikke er gratis: fra demninga stiger det 53 høydemeter tilbake til Korpen.",
+      "Vanligste feil: å holde høyde over breen på vei ned, slik at du havner for høyt vest for 1688-høgda og må ned der det er brattest. Slipp deg ned rundt knausen slik du kom opp. Og husk at siste strekket ikke er gratis: fra demninga på 1343 moh stiger det tilbake til Korpen på 1397, og vestsida bølger — 113 høydemeter til sammen på vegen inn, og de samme igjen på vegen ut.",
     ],
     avalanche: [
       {
         title: "Ruta",
-        body: "Normalvegen er slak — bratteste hundremeter holder 19,7° i snitt mellom 1800 og 1900 moh. Det bratteste enkelttrinnet på linja måler 42,7°, og det ligger i overgangen fra breen opp på austryggen rett øst for Fannaråknosi; går du for høyt over breen, blir den passasjen brattere enn den trenger å være. På Fannaråkbreen er sprekkene faren like mye som snøen.",
+        body: "Normalvegen er slak — bratteste hundremeter holder 19,8° i snitt mellom 1800 og 1900 moh, over 317 meter grunn, og det bratteste enkelttrinnet på linja måler 27,1° mellom 1859 og 1882 moh. På Fannaråkbreen er sprekkene faren like mye som snøen. Nede ved starten er faren en annen og enklere å beskrive: isen på et magasin som tappes ned, og ruta er lagt på land utenom den.",
       },
       {
         title: "Terrenget rundt",
@@ -1889,11 +1889,11 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,183 L21,187 L45,188 L70,188 L93,190 L114,193 L136,197 L158,199 L183,190 L199,185 L221,176 L240,172 L264,161 L286,156 L305,148 L325,142 L349,138 L378,135 L402,131 L422,117 L447,101 L468,81 L483,69 L500,51 L516,39 L536,37 L557,33 L581,26 L600,18",
+      path: "M0,183 L24,184 L44,185 L65,186 L81,185 L101,187 L125,192 L149,200 L177,193 L197,186 L214,182 L234,172 L258,164 L281,158 L298,152 L319,144 L343,139 L367,136 L391,134 L415,122 L436,109 L464,88 L476,75 L492,60 L510,44 L525,41 L548,35 L569,30 L597,20 L600,18",
       startLabel: "1397 moh",
       endLabel: "2068 moh",
-      distanceLabel: "6,6 km",
-      caption: "763 høydemeter fra Korpen til toppen — 89 av dem gir du fra deg, de fleste før stigningen begynner.",
+      distanceLabel: "6,7 km",
+      caption: "783 høydemeter og 6,70 km fra Korpen til toppen — 113 av dem gir du fra deg langs vestsida av magasinet, før stigningen begynner.",
     },
   },
   kvamshesten: {

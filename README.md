@@ -178,6 +178,23 @@ content and data quality that has to be settled before the site is sold to anyon
   same figures as `lib/tours.ts`. That last one was not true until it was checked: the seed had
   missed the summit corrections for Rørnestinden, Rombakstøtta and Himmeltindan, so production and
   demo mode would have shown different heights for three tours.
+  A fourth, `check_ground.py`, was added after the Trondheim round, because those three checks were
+  all clean on a line that ran two kilometres across a drawn-down reservoir and on another that was
+  sold as a marked winter route while sitting more than half a kilometre off it. Terrain-model
+  checks cannot see either: the geometry is sane, the numbers are DTM1, and the prose is sourced.
+  `check_ground.py` measures the line against **mapped ground** instead — OpenStreetMap's water
+  polygons and its winter routes — and asks which vertices stand on a lake, whether the guide says
+  so, and how far a tour that promises a løype strays from the mapped one. It was validated by
+  restoring the pre-fix geometry and confirming it flags all four of the errors that were found by
+  hand. Its first run over all 75 came back with **21 things to look at across 16 tours**, most of
+  them on tours from the original 24 that had already been read adversarially twice — every one a
+  place where the drawn line stands on a lake under prose that never mentions it. One was fixed
+  straight away and is the reason the check exists: **Fanaråken's guide says «Hold land langs
+  vestsida — ikke skjær over isen», and the line cut across the ice** of Prestesteinsvatnet, a
+  reservoir whose dam the guide's own next sentence names. It now runs on firm ground the whole way.
+  Ytstevasshornet was the second fix and the same shape — «flate langs vatnet» in the prose, 180 m
+  out on Svartevatnet's reservoir ice in the geometry — so no line stands on a regulated lake any
+  more. The remaining eighteen are a work list in `scripts/build-routes/check_ground_run.txt`.
 - **The guide text has not been read by anyone who has skied these tours.** Every number in
   `lib/guides.ts` traces to Kartverket's terrain model, the route research or a cited source, and
   every number is matched mechanically by `check_guides.py` — which reads nynorsk verticals as well

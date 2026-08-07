@@ -808,6 +808,42 @@
     },
     "waypoints": [
      {
+      "name": "Vestsida, vest for tjønna på 1384",
+      "lat": 61.547,
+      "lng": 7.892,
+      "elevation_m": 1389.6
+     },
+     {
+      "name": "Vestsida, mellom tjønnene",
+      "lat": 61.5458,
+      "lng": 7.894,
+      "elevation_m": 1384.0
+     },
+     {
+      "name": "Vestsida, nord for tjønna på 1381",
+      "lat": 61.5458,
+      "lng": 7.897,
+      "elevation_m": 1384.5
+     },
+     {
+      "name": "Vestsida, land mellom Silja og magasinet",
+      "lat": 61.5455,
+      "lng": 7.902,
+      "elevation_m": 1386.3
+     },
+     {
+      "name": "Vestsida av Prestesteinsvatnet",
+      "lat": 61.5455,
+      "lng": 7.908,
+      "elevation_m": 1376.7
+     },
+     {
+      "name": "Ned mot demninga",
+      "lat": 61.5448,
+      "lng": 7.911,
+      "elevation_m": 1362.7
+     },
+     {
       "name": "Demninga, utlopet av Prestesteinsvatnet",
       "lat": 61.5443,
       "lng": 7.9135,
@@ -838,7 +874,7 @@
       "elevation_m": 1984.24
      }
     ],
-    "source": "audited (ok)",
+    "source": "audited (ok), re-pinned onto the west shore off the reservoir ice",
     "notes": "",
     "implied_start_m": 1307.0,
     "start_vs_implied_m": 89.7
@@ -2705,13 +2741,37 @@
     },
     "waypoints": [
      {
+      "name": "Austbredden av Svartevatnet",
+      "lat": 62.2896,
+      "lng": 6.7712,
+      "elevation_m": 532.6
+     },
+     {
+      "name": "Austbredden, forbi bukta",
+      "lat": 62.2886,
+      "lng": 6.773,
+      "elevation_m": 533.0
+     },
+     {
+      "name": "Austbredden, myra",
+      "lat": 62.2876,
+      "lng": 6.7722,
+      "elevation_m": 527.8
+     },
+     {
+      "name": "Sørenden av vatnet",
+      "lat": 62.2871,
+      "lng": 6.7712,
+      "elevation_m": 524.4
+     },
+     {
       "name": "Vatna i Vassdalen, 976",
       "lat": 62.28449,
       "lng": 6.74978,
       "elevation_m": 976.08
      }
     ],
-    "source": "researched, verified (ok), no local audit",
+    "source": "researched, verified (ok), no local audit, re-pinned onto the east shore off the reservoir ice",
     "notes": "Skavlar langs toppryggen — det dannar seg normalt ei stor skavl mellom førtoppen og hovudtoppen, og ein skal køyre ned i sida når ein rundar henne. Skredterreng i sida ned frå hovudtoppen og ikkje minst i sjølve Vassdalen."
    }
   ]

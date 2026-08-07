@@ -116,6 +116,7 @@ python3 guide_brief.py <slug> # the writing brief one agent gets for one tour
 TOPPKART_WF=<transcripts> python3 harvest_guides.py  # -> guides.json
 python3 check_guides.py       # mechanical pass; must be read, not just run
 python3 test_check_guides.py  # pins the reassurance rule in both directions
+python3 check_ground.py       # the line against OSM: water it crosses, trails it claims
 python3 emit_guides.py [slug…]  # -> ../../lib/guides.ts, GUIDE_EN, seed.sql, hasGuide
 ```
 
@@ -1353,6 +1354,132 @@ What reproduced across all four, exactly: every one of the eight-bearing flank
 sweeps at 400 m, every band table, every steepest step, every bearing off the
 summit, every treeline, and full number parity between the Norwegian and English
 texts — no figure appears in one language and not the other.
+
+## check_ground.py — the line against mapped ground
+
+Three of the four errors that mattered in the Trondheim round had the same
+shape, and none of the three existing checks could see any of them. `check_routes`
+asks whether the geometry is sane: a line across a reservoir is perfectly sane
+geometry. `check_tours` asks whether the card's numbers are DTM1: they were.
+`check_guides` asks whether every figure in the prose traces to a measurement:
+every figure did. The copy that sent a reader onto drawn-down reservoir ice was
+factually correct in every number it contained.
+
+What the three shared was that they were checkable against something *outside*
+the terrain model — OpenStreetMap's water polygons and its winter routes — and
+nothing was doing that. `check_ground.py` does. It asks three questions:
+
+**Water.** Which vertices stand on a lake, how far the line runs on it, how far
+offshore it gets, and whether the guide names that height at all. A lake surface
+in DTM1 is exactly constant, so runs of identical stored elevation are where
+water can be, and only those are queried for a terrain class — which is what
+turns fifteen thousand lookups into a few hundred. `InnsjøRegulert` is called out
+separately: a regulated lake is drawn down every winter, so its ice is the least
+trustworthy surface in the product, and a crossing the guide never mentions is
+reported however short it is.
+
+**Trail.** For a tour whose own guide promises a løype, a vinterløype, a
+skogsbilveg or an anleggsveg, how far does the line stray from the nearest mapped
+one? The claim is only enforced where it can be — when a mapped trail reaches
+both the trailhead and the summit, the whole line is supposed to be on it.
+Where the trail covers part of the route only (Kråkfjellet's skogsbilveg runs
+three kilometres of nine, and the rest is open fjell with nothing mapped to
+follow) the worst gap says nothing, and it is printed as a note rather than a
+finding. «Utenfor oppkjørte løyper» is the opposite claim and is excluded by the
+same negation rule `check_guides` uses on its reassurance patterns.
+
+**Side.** Where the prose says the route runs to the right or left of a named
+stream, which side is it on? Which way is right depends on which way you are
+walking, so this is resolved from the trailhead-to-summit bearing, and a tour
+that runs east–west is reported as undecidable rather than answered with a coin
+flip.
+
+It exits non-zero on findings, and it prints the numbers behind each one, because
+the decision is not the script's to make. A frozen tarn a source deliberately
+routes you across is fine — Snota goes over Svartvatnet because ut.no says to.
+A drawn-down reservoir nobody mentioned is not. Only a reader can tell those
+apart, and the output is written to be read rather than merely passed.
+
+### Would it have caught them?
+
+Yes, and this was checked rather than assumed: the pre-fix `lib/routes.ts` was
+restored from the commit before the fixes, re-parsed, and run through the same
+functions.
+
+| tour, as it was | what the check says |
+| --- | --- |
+| Kråkfjellet | 1530 m and 191 m on water at 433 m, up to 251 m from the mapped shore — **REGULATED lake** |
+| Rensfjellet | 1496 m and 225 m on water at 433 m, up to 242 m from shore — **REGULATED lake**, plus a 795 m stray from a trail that reaches both ends |
+| Okla | 450 m on water at 1277 m and 631 m at 1151 m |
+| Storhornet | strays 588 m from a mapped trail that reaches the car park (5 m) and the cairn (25 m) |
+
+The offshore figures are the ones measured by hand during the read — 251 m and
+242 m — which is the check reproducing a result rather than inventing one.
+
+Two of those four print as **notes** rather than findings, because the guide did
+name the height: Okla's copy quoted 1277 in the course of claiming the line
+stayed *above* Mjølkskåla. That is the honest limit of a text search, and it is
+why the output says «the guide names that height, which is not the same as
+saying it crosses it» instead of clearing the tour. A note is a place to look.
+
+### The first run over all 75
+
+`check_ground_run.txt` is the run, kept in the tree because the findings are a
+work list and not a pass/fail. It reports **21 things to look at across 16
+tours** — every one of them a place where the drawn line stands on water, and
+most of them on tours from the original 24 that had already been read
+adversarially twice.
+
+Overpass was refusing service while it ran (504 from the main instance, no route
+to two of the mirrors from this network), so it ran `--offline`: the water
+question is complete, because that comes from Kartverket, and the trail and
+stream-side questions are reported as **UNCHECKED** rather than clean. Re-running
+when Overpass recovers fills those in from cache.
+
+**Fanaråken was the one that had to be fixed immediately**, and it is the reason
+this check exists. Its guide contains the instruction in as many words:
+
+> «Hold land langs vestsida — **ikke skjær over isen**.»
+
+The line cut across the ice. 375 m of it read 1373.0 m — the tarn Silja — and
+136 m read 1356.0 m with terrain class `InnsjøRegulert`: Prestesteinsvatnet,
+OSM relation/4037643, `water=reservoir`, the magasin whose dam the guide's own
+next sentence names. A guide that tells the reader to stay off the ice, over a
+map line that crosses it.
+
+Six waypoints on firm ground along the west side fix it, threading between two
+small tarns at 1384 and 1381 m and running west of the reservoir down to the dam.
+The new line has no vertex on water at all. Going round costs what going round
+costs, and the guide now says so: **113 m given back** against the 54 a straight
+line to the dam would have given, because land undulates and ice does not.
+Length 6.03 → 6.70 km, gain 763 → 783 m. Re-solving the whole line also moved the
+steepest 30 m window from 42.7° to 27.1° (1859–1882 m), which the prose carried
+in two places and now carries correctly.
+
+**Ytstevasshornet was the second fix, and the same shape.** Its guide says the
+first stretch is «flate langs vatnet» — flat along the lake. The line went
+straight out onto it: 180 m at 526.0 m, terrain class `InnsjøRegulert`.
+Svartevatnet is a reservoir and its surface sits twelve metres below the car
+park. Four waypoints on firm ground along the east shore fix it, and the line now
+holds land round the north end and down to the south end at 524 m. Length
+3.87 → 3.93 km, gain 835 → 833 m, loss 0 → 40 m — going round a lake costs
+height the ice does not. Re-solving moved the steepest 30 m window 25.3 → 26.9°
+(795–818 m), the steepest band 21.2 → 22.5° and the treeline 663 → 624 m, all of
+which the prose carried.
+
+**The rest of the list, for whoever takes it next.** No crossing on a regulated
+lake remains. Then Styggemann (four crossings totalling 776 m),
+Folarskardnuten (three), Breitinden (295 m at 474 m, 34 m offshore), Juklavasstinden
+(225 m), Rasletinden (two), Rondslottet, Glittertinden, Høgevarde on both routes,
+Store Ble, Surløytenuten and Vassdalstinden. Every one of them is a line standing
+on a lake under prose that never mentions it.
+
+Two came back as **notes** and are right to be there rather than fixed: Besshø
+crosses three and a half kilometres of Bessvatnet, and its guide describes that
+in detail and calls the ice normal winter travel; Snota crosses Svartvatnet
+because ut.no routes it that way and names the height. The check surfaces both
+and lets a reader confirm them, which is the intended behaviour — the difference
+between those and Fanaråken is not the crossing, it is whether anyone was told.
 
 ## Network
 
