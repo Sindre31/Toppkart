@@ -455,6 +455,16 @@
    "what": "Peilinger fra toppen langs den routede linja",
    "figure": "Første 200 m ned fra varden peiler 255 grader (vest, ned til 676 moh), 500 m ned 249 grader (599 moh). Parkeringa ligger på peiling 342 fra toppen, 3,6 km unna.",
    "how": "Storsirkelpeiling fra siste vertex i routes.json til vertexen 200 og 500 m tilbake langs linja, og til trailheaden."
+  },
+  {
+   "what": "Kvifor kilometersveipet ikkje er ei ny måling",
+   "figure": "400-metersveipet gjev NV 13,8° i snitt med 33,3° i vinduet 190–250 m ut, V 12,0° med 26,2° 230–290, SØ 13,9° med 26,7°, NØ 3,9°. Kilometersveipet gjev V 12,3° i snitt og NV 11,1° — snitta er stabile — men det brattaste NV-vinduet kjem ut som 34,3° 190–250 m ut, ikkje 32,9° 180–240 som ein tidlegare køyring oppgav. Snittet toler at rasteret blir grovare; det brattaste 60-metersvinduet gjer det ikkje. Guiden fører difor berre 400-metersvinduet, og snittet frå kilometersveipet.",
+   "how": "python3 flank_probe.py 63.26205 10.35659 --out 400 og --out 1000; tile-oppløysinga er 800×800 px over ±(out+300) m."
+  },
+  {
+   "what": "Linja mot løypenettet, og Lomtjønna",
+   "figure": "2205 m av dei 4744 ligg meir enn 50 m frå ei kartlagd trasé (piste:type eller highway), med største avvik 175 m ved 343 moh; 96 av 151 vertexar ligg innafor 100 m av ei kartlagd løype. Anleggsvegen er Vassfjellvegen (OSM way/429525197, highway=unclassified, 3,38 km), som ligg 16 m frå linja og 27 m frå toppen. Ein vertex på 445 moh svarar terrengklasse Innsjø — det er kanten av Lomtjønna (OSM way/331045789). Kurssekvensen målt per 500 m er S, S, SØ, S, S, S, SØ, SØ, Ø, N.",
+   "how": "Overpass rundt ruta og punktavstand frå kvar vertex; DTM1-terrengklasse på kvar vertex; storsirkelpeiling per 500 m."
   }
  ],
  "krakfjellet": [
@@ -498,14 +508,24 @@
    "how": "python3 flank_probe.py 62.64779 9.39918 — radial 400 m ut fra toppunktet, samplet hver 10 m på DTM1-rasteret, med bratteste 60-metersvindu per retning."
   },
   {
-   "what": "Sørsida ut til halvannen kilometer, mot Omnråa",
+   "what": "Sørsida ut til halvannen kilometer, mot Omnråa — OVERSTYRT, sjå radialen ut til 2 km",
    "figure": "SØ 11,1° i snitt med 19,3° i vinduet 625–675 m ut; S 4,2° med 24,8° først i vinduet 1450–1500 m; SV 5,8° med 12,9° i vinduet 800–850 m",
-   "how": "python3 flank_probe.py 62.64779 9.39918 135 180 225 --out 1500 --step 25. Omnråa er registrert som botn i SSR på 62.621/9.40927, 3,02 km fra toppen."
+   "how": "python3 flank_probe.py 62.64779 9.39918 135 180 225 --out 1500 --step 25. Omnråa er registrert som botn i SSR på 62.621/9.40927, 3,02 km fra toppen. OVERSTYRT: radialen stoppa på 1500 m, akkurat der terrenget byrjar å bryte av (fyrste bratte 10-metersteg ligg 1490 m ute), og --step 25 gjer «60-metersvindauget» til to steg = 50 m og glattar bruddet. Same punkt med --out 2000 --step 10 gjev 39,7° i vinduet 1610–1670 m ut og enkeltsteg på 48°. Tala i denne rada skal ikkje siterast."
   },
   {
    "what": "Peilinger fra toppen langs den routede linja",
-   "figure": "Første 200 m ned fra steinbua peiler 134 grader (1562 moh), 500 m ned 128 grader (1494 moh). Parkeringa ved Bree ligger på peiling 135 fra toppen, 4,7 km unna.",
+   "figure": "Første 200 m ned frå bua peiler 153 grader (1567 moh) og 500 m ned 145 grader (1484 moh). Parkeringa ved Bree ligg på peiling 135 frå toppen, 4,7 km unna.",
    "how": "Storsirkelpeiling fra siste vertex i routes.json til vertexen 200 og 500 m tilbake langs linja, og til trailheaden."
+  },
+  {
+   "what": "Den kartlagde vinterløypa Bree–toppen, og kva linja gjorde før",
+   "figure": "OSM piste:type=skitour frå parkeringa ved Bree til varden er ei samanhengande kjede — way/210842719, 309863265, 309863267, 309924475, 309924464, 309924476 og 309924473 — 5,13 km lang, med enden 25 m frå toppunktet. 131 bygningar ligg innafor 300 m av den kjeda. Den fyrste routa linja følgde ikkje løypa: ho var pinna til SSR-punktet Hornlia (62.63835/9.46726, 846,8 moh), som har 0 bygningar innafor 600 m, og avveik frå løypa med opptil 1423 m ved 847 moh. Den nye linja avvik med høgst 166 m og har 113 hytter innafor 300 m. Lengda gjekk 6,53 → 4,84 km og stigninga 938 → 936 m, mot ut.no sine 928 m / 5,2–5,5 km og Fri Flyt sine 900 m / 5,3 km.",
+   "how": "Overpass-uttrekk av piste:type og building rundt ruta, og punktavstand frå kvar vertex i routes.json."
+  },
+  {
+   "what": "Sørflanken mot Omnråa, radial ut til 2 km",
+   "figure": "Sørover frå varden er terrenget platå i om lag 1,45 km — 10-metersteg på 0–9° og eit snitt på 6,0° over dei fyrste 400 m. Så bryt det av: frå 1490 m ut går 10-metersstega i 48,0°, 38,4°, 40,6°, 37,0°, 41,6°, 40,3° og 40,5°, og det brattaste 60-metersvinduet på radialen er 39,7° 1610–1670 m ut. Ved 2 km er høgda 1249,5 moh mot 1588,4 på varden — eit fall på 339 høgdemeter. Det er kanten over Omnråa, som er registrert som botn 3,02 km sør for varden.",
+   "how": "python3 flank_probe.py 62.64779 9.39918 180 --out 2000 --step 10. Merk at eit tidlegare tal på «24,8° 1450–1500 m ut» kom frå ein sveip som stoppa på 1500 m: rasteret flank_probe hentar er skalert etter --out, så både oppløysinga og vindauget endrar seg med kor langt ein ser."
   }
  ],
  "storbekkhoa": [
@@ -518,6 +538,11 @@
    "what": "Peilinger fra toppen langs den routede linja",
    "figure": "Første 200 m ned fra varden peiler 276 grader (vest, 1458 moh) og 500 m ned 236 grader (1352 moh) — halvsirkelen Fri Flyt beskriver. Parkeringa ved Storli ligger på peiling 170 fra toppen, 4,2 km unna.",
    "how": "Storsirkelpeiling fra siste vertex i routes.json til vertexen 200 og 500 m tilbake langs linja, og til trailheaden."
+  },
+  {
+   "what": "Kva bekk linja følgjer, og kvar ho kryssar",
+   "figure": "OSM har Storbekken (way/248399532, lng 9,085–9,099) og Veslbekken (way/248399534, lng 9,097–9,113, lat 62,696–62,706). Linja ligg 14–112 m frå Storbekken heile vegen opp bjørkelia og 120–906 m VEST for Veslbekken — altså på venstre side av han på veg opp, ikkje høgre. Ho kryssar Storbekken fyrste gong ved 644 moh (222 m ut) og skiftar side åtte gonger til mellom 968 og 997 moh på den flate dalbotnen. Ut.no skriv «gjennom bjørkelia til høyre for Veslebekken» og «når du passerer skogbandet skal du gå mot vest og kryss over Storbekken»; Fri Flyt skriv «ruta følgjer Storbekken nordover frå Storli gjennom bjørkeskogen». Linja er Fri Flyt si.",
+   "how": "Overpass-uttrekk av namngjevne waterway-vegar, og teiknet på lengdegradsdifferansen mellom kvar vertex og næraste bekkenode."
   }
  ],
  "okla": [
@@ -557,6 +582,11 @@
    "what": "Bretrekket på linja, vertex for vertex på full oppløysing",
    "figure": "Elleve vertexar svarar SnøIsbre: 254–258 (1364, 1384, 1388, 1396, 1404 moh) og 261–266 (1434, 1435, 1444, 1451, 1457, 1463 moh), med to bare vertexar på 1414 og 1421 moh mellom dei. Frå den fyrste til den siste er strekket 404 m. Punkta rett før og etter — 1369 og 1471 moh — er ÅpentOmråde, så breen på linja toppar på 1463 moh. Ut.no oppgjev «frå ca 1380 moh ... i ca 500 m».",
    "how": "Terrengklasse frå DTM1-punkt-API-et på kvar vertex i routes.json mellom 1300 og 1520 moh, med kumulativ storsirkelavstand langs linja. Den fyrste målinga sampla berre kvart tredje punkt og kom ut med sju vertexar, 436 m og 1471 moh som topp — det var oppløysinga, ikkje breen."
+  },
+  {
+   "what": "Vatn linja kryssar",
+   "figure": "Svartvatnet på 888–889 moh: 870 m av linja, som er den kryssinga ut.no namngjev. I tillegg går 90 m av linja over eit lite unamngjeve vatn på 1024,0 moh (terrengklasse Innsjø) ved foten av Litj-Snota, rett før vegpunktet på 1026. Den kartlagde skitour-løypa i området (OSM way/344344060, 8,83 km, piste:grooming=backcountry) går utanom Svartvatnet — ho ligg 478 m frå linja der — og endar 1075 m frå toppen.",
+   "how": "DTM1-terrengklasse på kvar vertex i routes.json, og Overpass-uttrekk av piste:type rundt ruta."
   }
  ]
 }

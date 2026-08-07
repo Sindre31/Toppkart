@@ -190,7 +190,7 @@ content and data quality that has to be settled before the site is sold to anyon
   guide said they went around.** Kråkfjellet and Rensfjellet ran 1.9 km out on Håen — a reservoir
   drawn down every winter, and the one hazard their source names — while the copy said «følg
   strandlinja på nordsida», and Okla crossed Mjølkskåla while the copy said the lake stayed
-  «under deg». All three corridors were re-pinned onto the ground the sources describe (the
+  «under deg». All three of those corridors were re-pinned onto the ground the sources describe (the
   forest road ut.no offers along Håen, the rim north of Mjølkskåla), re-routed and re-measured,
   and their guides rewritten against the new lines. It earns its keep every
   time. It caught a descent sold on the wrong side of Kavringtinden, a cliff warning pointing away
@@ -199,10 +199,16 @@ content and data quality that has to be settled before the site is sold to anyon
   mountain whose trailhead is west, a crevasse warning on a Torvløysa glacier the route does not
   cross, and an Auskjeret warning about an east-facing slope that measures 7 to 9 degrees while
   the north-east side measures 36. Ten of those 22 needed a change; twelve were confirmed clean;
-  three of the seven Trondheim tours needed their line moved and four were confirmed clean.
+  four of the seven Trondheim tours needed their line moved. The remaining three were then read
+  a second time rather than trusted, which is where the fourth came from: **Storhornet was not on
+  the marked winter route it is sold as** — pinned to a register point with no cabin within 600 m
+  while the mapped `piste:type=skitour` trail it claims to follow runs 1.4 km away through 131 of
+  them — and its answer to Fri Flyt's one hazard note understated the south side by fifteen
+  degrees, because the probe that measured it stopped 10 m short of where the ground breaks.
   That makes the copy sourced and verified against the terrain model — but not against anyone's
   experience of the mountain. It still needs a local reader per tour before print. See "The 22,
-  read adversarially" in `scripts/build-routes/README.md` for the method and the findings.
+  read adversarially", "The seven, read adversarially" and "The other four, read as closely" in
+  `scripts/build-routes/README.md` for the method and the findings.
 - **`assets/kontur.png` is a placeholder.** It is a generated contour-map graphic standing in for
   real ski-touring photography. `assets/photo.jpg` is an unrelated reference photo from the design
   system and should also go. The contour graphic is now the only invented terrain left on a tour

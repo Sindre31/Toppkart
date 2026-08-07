@@ -705,13 +705,13 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
     intro:
       "541 metres of climbing and 4.74 km from Markavollen to the cairn at 711 m — the closest ski tour to Trondheim. Almost all the steep ground sits in one band: 15.9 degrees from 500 to 600 m, over just 405 metres of ground. The steepest sustained step is 23.0 degrees between 534 and 553 m, and that is also the steepest the whole line measures.",
     ascent: [
-      "Start at the car park at Markavollen, 184 m. Ut.no notes a parking charge, and the terrain model reads the plot at 184 m — exactly the start elevation the description gives. Follow the ski track south, then east and south again. The first half is flat for a ski tour: the band from 300 to 400 m measures 4.6 degrees over 1215 metres of ground, and 400 to 500 m 3.3 degrees over 1710.",
-      "Vassfjellhytta sits at 507 m, and the climbing starts right after it: 15.9 degrees from 500 to 600 m over 405 metres of ground, with a step of 23.0 degrees between 534 and 553 m. The forest lets go at 512 m, and from 597 the ground is open.",
-      "Above the treeline it eases to 11.6 degrees from 600 to 700 m, and you meet the service road ut.no puts you on. It runs up to Melhus hovedsender, the communications mast standing 131 metres from the cairn at 709 m. The cairn itself is at 711 m, and the terrain model measures it at 710.9.",
+      "Start at the car park at Markavollen, 184 m. Ut.no states a parking charge, and the terrain model reads the plot at 184 m — exactly the starting height the description gives. Ut.no sends you along the ski tracks «marked S, then Ø and S again»; the line on the map is the terrain line through that same network of tracks, not the track itself — 2205 of 4744 metres lie more than 50 metres from a mapped trail, with the largest gap 175 metres. The first half is flat for a summit tour: the band from 300 to 400 m measures 4.6 degrees over 1215 metres of ground, and 400 to 500 m 3.3 degrees over 1710.",
+      "At 445 m the line brushes the edge of Lomtjønna. Vassfjellhytta sits at 507 m, and right after it the climbing starts: 15.9 degrees from 500 to 600 m over 405 metres of ground, with a step of 23.0 degrees between 534 and 553 m. The forest lets go at 512 m, and from 597 the ground is open.",
+      "Above the treeline it eases to 11.6 degrees from 600 to 700 m, and you meet the service road ut.no puts you on — Vassfjellvegen, which lies 16 metres from the line and runs all the way up to Melhus hovedsender, the communications mast standing 131 metres from the cairn at 709 m. The last stretch turns north. The cairn itself stands at 711, and the terrain model measures it at 710.9.",
     ],
     descent: [
       "Back down the same way. The first 200 metres off the cairn bear 255 degrees — west — down to 676 m, and 500 metres down bears 249. That is the flank the card carries: the west side measures 12.0 degrees on average over 400 metres with a 26.2-degree window 230 to 290 metres out, and 12.3 degrees on average when the sweep runs out to a kilometre.",
-      "Ut.no warns of «assorted steep pitches both below and above the treeline», and the sweep says where they are. North-west is the steepest: 13.8 degrees on average with 33.3 degrees in the window 190 to 250 metres out, and 32.9 degrees 180 to 240 metres out when the sweep runs a kilometre. South-east measures 13.9 on average and 26.7 in its steepest window. North-east, toward the lifts, measures 3.9 — but what you end up in there is the piste at Vassfjellet skisenter, not the mountain.",
+      "Ut.no warns of «various steep pitches both below and above the treeline», and the sweep says where they are. North-west has the steepest single window: 33.3 degrees 190 to 250 metres out, against a mean of 13.8. South-east is the most consistently steep side at 13.9 degrees mean with 26.7 in its steepest window, and west measures 12.0 and 26.2. North-east, toward the lifts, measures 3.9 — but what you come down into there is the piste at Vassfjellet ski centre, not the mountain.",
     ],
     avalanche: [
       {
@@ -720,7 +720,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       },
       {
         title: "The terrain off it",
-        body: "The mountain has steep sides; they just are not where the track goes. North-west measures 33.3 degrees in its steepest 60-metre window within 400 metres and 32.9 degrees out to a kilometre, south-east 26.7 and west 26.2. That is high enough and steep enough for a single pitch to release, and those are exactly the lines that tempt when you are standing on top with skis on.",
+        body: "The mountain has steep sides; they just are not where the track goes. Within 400 metres of the cairn, north-west measures 33.3 degrees in its steepest 60-metre window, south-east 26.7 and west 26.2. That is high enough and steep enough for a single slope to go, and those are exactly the lines that tempt when you are standing on top with skis on.",
       },
       {
         title: "Before you go",
@@ -809,7 +809,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
     ascent: [
       "Start at the car park by the dam on Gråsjøen, 495 m — 15 km of toll road up Folldalsvegen, paid by card. Follow the line of the road along the lake until the summer path slants up the hillside, and not earlier: ut.no warns that avalanches run from the snowfield on Gråhaugfjellet, and that in some years they reach the water.",
       "Up the hillside south-south-west, through 686 m, with bands of 10.3, 6.3 and 7.0 degrees. Then it flattens onto the plateau east of Midtveggen, 931 m: the band from 800 to 900 m measures 3.2 degrees over 1979 metres of ground, and 900 to 1000 measures 2.2 over 2250. Here the route gives height back, from 931 down to Svartvatnet at 888 m — ut.no gives «about 100» metres lost on the way up, and the routed line gives back 95.",
-      "From Svartvatnet you reach the foot of Litj-Snota and round it to the east, 1026 m, and south. From here up you are in runout zones and, in shorter stretches, in start zones over 30 degrees, which ut.no says cannot be avoided. The bands rise to 7.1, 15.7 and 15.3 degrees.",
+      "From Svartvatnet you come to the foot of Litj-Snota and round it on the east, 1026 m — the last 90 metres in go across a small unnamed tarn at 1024. From here up you are in runout zones and, in shorter sections, in start zones over 30 degrees, which ut.no says cannot be avoided. The bands rise to 7.1, 15.7 and 15.3 degrees.",
       "At 1352 m it flattens, and the steep slope straight ahead to the west is the glacier. Kartverket classes eleven points on the line as glacier terrain, from 1364 to 1463 m, and the stretch measures 404 metres — with two bare points at 1414 and 1421 m in the middle of it, where the ice is broken. The points immediately before and after, 1369 and 1471 m, are open ground. Ut.no gives «from about 1380 m ... for about 500 m» and asks you to check with locals that there is enough snow. The steepest sustained step of the whole tour sits here: 28.9 degrees between 1414 and 1434 m.",
       "Above the glacier, at 1516 m, you come onto the summit flank, and the route turns south-west, south and finally south-south-east to the high point at 1668 m.",
     ],
@@ -842,8 +842,8 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
     intro:
       "893 metres of climbing and 5.57 km from Storli to the cairn at 1504 m. The ascent is gentle — the steepest hundred-metre band is 17.5 degrees — and the south-east face right by the top is not: it measures 34.1 degrees on average with a 46.9-degree window 20 to 80 metres out from the cairn.",
     ascent: [
-      "Start at the car park by Storli, 623 m — a paid plot, 30 kroner in the box, tagged for skiing. Ut.no: «From Storli parking you put your skis on at the car.» Head due north toward Storbekkdalen through the birch slope right of Veslebekken. The band from 700 to 800 m is the steepest on the whole tour, 17.5 degrees over 299 metres of ground.",
-      "The forest lets go at 822 m, and from 918 you are in open ground and bog. The valley floor at 1000 m is flat — the band from 900 to 1000 measures 3.4 degrees over 1621 metres of ground — and this is where the route crosses Storbekken and works west up toward the ridge.",
+      "Start at the car park by Storli, 623 m — pay and display, 30 kroner in the box, and tagged for skiing. Ut.no: «From Storli parking you put your skis on at the car.» Head straight north toward Storbekkdalen through the birch slope. Here the sources part company, and the map has to choose: ut.no sends you up «to the right of Veslebekken», while Fri Flyt writes that the route follows Storbekken north from Storli through the birch forest. The line is Fri Flyt's — it stays 14 to 112 metres from Storbekken the whole way up, and Veslebekken, coming in from the east, stays 120 to 906 metres to the left. The band from 700 to 800 m is the steepest below the treeline, 17.5 degrees over 299 metres of ground.",
+      "The forest lets go at 822 m, and from 918 you are in open ground and bog. The line crosses Storbekken for the first time already at 644 m, then braids back over it eight more times where the stream meanders across the flat valley floor between 968 and 997 m — the band from 900 to 1000 measures 3.4 degrees over 1621 metres of ground. This is where the route swings west up toward the ridge.",
       "The ridge west of the stream sits at 1211 m, and the steepest sustained step comes just below it: 26.4 degrees between 1082 and 1099 m. On north along the ridge until the steep south-east face stands in front of you — then you go a stretch further west and up through the col at 1313 m.",
       "From the col the route follows gentle ground in a half circle to the cairn at 1504 m, where the box with the summit book stands. The bands here measure 17.5 and 16.1 degrees. The sources disagree about the climb — Fri Flyt gives 600 metres, ut.no 900 — and the routed line climbs 893 from a car park the terrain model reads at 623 m. Fri Flyt's own GPS position for the high point lands 27 metres from the cell the summit search climbs to.",
     ],
@@ -854,7 +854,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
     avalanche: [
       {
         title: "The route",
-        body: "893 metres of climbing where the steepest hundred-metre band is 17.5 degrees from 700 to 800 m and the steepest sustained step 26.4 degrees between 1082 and 1099. Fri Flyt writes that the whole ascent runs in terrain under 30 degrees and classes the tour KAST 1. The route gives back 12 metres over 5.57 km.",
+        body: "893 metres of climbing where the steepest hundred-metre band is 17.5 degrees — and there are two of them, from 700 to 800 m and from 1300 to 1400 — and the steepest sustained step 26.4 degrees between 1082 and 1099. Fri Flyt writes that the whole ascent is in terrain under 30 degrees and files the tour as KAST 1. The route gives back 12 metres over 5.57 km.",
       },
       {
         title: "The terrain off it",
@@ -910,26 +910,26 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
   },
   storhornet: {
     intro:
-      "938 metres of climbing and 6.53 km on a marked winter route from Bree to the stone shelter at 1589 m. Even is the word: the steepest hundred-metre band is 19.1 degrees from 1100 to 1200 m, and the steepest sustained step 21.8 degrees between 1135 and 1153. The steep ground on this mountain is on the north-east side, behind the top.",
+      "936 metres of climbing and 4.84 km on the marked winter route from Bree to the stone shelter at 1589 m. Even is the word, and the measurement agrees: no hundred-metre band exceeds 13.4 degrees, the steepest sustained step is 19.6 degrees between 826 and 842 m, and the route gives back not a single metre. The steep ground on this mountain is on the north-east side, behind the summit.",
     ascent: [
-      "Start at the paid car park by Bree, 653 m — ten spaces, tagged for both skiing and hiking, and Fri Flyt sends you there with «follow the road to the left after the shop and drive about 1.3 kilometres». The track is cut through the forest; the point at 725 m is classed as cultivated land, the farm ground just above the car park.",
-      "Through the cabin area in Hornlia, 847 m, the track climbs evenly: 4.0 degrees from 700 to 800 m over 1485 metres of ground, 8.7 from 800 to 900 and 11.7 from 900 to 1000. The forest lets go at 933 m.",
-      "From 1021 m you are on open mountain, and the steepest part comes here: 19.1 degrees from 1100 to 1200 m over 277 metres of ground, with a step of 21.8 degrees between 1135 and 1153. Above that the bands measure 12.9, 8.3, 14.8 and 9.9 degrees toward the top.",
-      "At 1589 m stands the stone shelter from 1946, with a summit book. This is the best-confirmed summit of the round: the terrain model gives 1589.0 m against a published 1589, and Fri Flyt's own GPS position for the high point lands 10 metres from that cell.",
+      "Start at the paid car park by Bree, 653 m — ten spaces, tagged for both skiing and walking, and Fri Flyt sends you there with «follow the road that goes left after the shop and drive about 1.3 kilometres». From here to the cairn the line follows the mapped winter route, a continuous ski-touring trail of 5.13 km ending 25 metres from the summit; the largest gap between the line and the trail is 166 metres.",
+      "The trail is cut through the forest and winds up through the cabin field at Hornlia — 113 cabins lie within 300 metres of the line. The bands measure 9.5 and 10.3 degrees from 600 to 800 m, and the steepest sustained step of the whole tour sits here: 19.6 degrees between 826 and 842 m. The forest lets go at 867 m, and from 942 you are on open mountain.",
+      "Above the treeline the trail carries on north-west, and it holds that course the rest of the way. The bands measure 12.5, 11.5, 10.5, 10.1, 11.8 and 9.5 degrees going up, and the steepest of them all is 13.4 degrees from 1400 to 1500 m, over 450 metres of ground. It is a climb without a single kick.",
+      "At 1589 m stands the stone shelter from 1946, with a summit book. This is the best-checked summit of the round: the terrain model gives 1589.0 m against a published 1589, and Fri Flyt's own GPS position for the summit lands 10 metres from that point. The line climbs 936 metres against ut.no's stated 928 and Fri Flyt's 900, and measures 4.84 km against ut.no's 5.2 and Fri Flyt's 5.3.",
     ],
     descent: [
-      "Back down the same way — the line Fri Flyt recommends. The first 200 metres off the shelter bear 134 degrees, down to 1562 m, and 500 metres down 128. The car park lies 4.7 km away, on a bearing of 135 degrees, so the descent follows the ascent the whole way.",
-      "The steep ground on this mountain is behind you when you stand at the shelter. North-east measures 30.7 degrees on average over 400 metres, with a 46.2-degree window only 10 to 70 metres out; north 22.2 with 37.7 in the window 20 to 80, and east 23.1 with 34.4. South and south-west, where the track comes up, measure 6.0 and 0.4 degrees on average.",
-      "Fri Flyt's own hazard note points south: «If you choose to seek out the steep terrain around Omnråa south of the summit you have to account for both exposed terrain and avalanche danger.» That is true, but it is a long way off — Omnråa is a cirque 3.02 km south of the cairn, and the southward radial does not reach 24.8 degrees until the window 1450 to 1500 metres out. The edge you can walk out onto in flat light is the north-east one.",
+      "Back down the same way — it is the line Fri Flyt recommends. The first 200 metres off the shelter bear 153 degrees, down to 1567 m, and 500 metres down 145. The car park lies 4.7 km away, on a bearing of 135 degrees, so the descent follows the ascent the whole way.",
+      "The steep ground on this mountain is behind you when you stand at the shelter. North-east measures 30.7 degrees on average over 400 metres, with a 46.2-degree window only 10 to 70 metres out; north 22.2 with 37.7 in the window 20 to 80, and east 23.1 with 34.4. South and south-west, where the trail comes up, measure 6.0 and 0.4 degrees on average.",
+      "Fri Flyt's own hazard note points south: «If you choose to seek out the steep terrain around Omnråa south of the summit you must account for both exposed terrain and avalanche danger.» It is a real warning, and it sits further out than you can see from the shelter. Southward it is plateau for a kilometre and a half — under ten degrees the whole way — and then the ground breaks away: from about 1490 metres out the 60-metre windows measure 37 to 40 degrees, the steepest 39.7 degrees 1610 to 1670 metres out, and single ten-metre steps reach 48. By two kilometres you have lost 339 metres of height. That is the rim above Omnråa, and it is not gentle — it is only far away. The edge you can walk out onto without going far is north-east.",
     ],
     avalanche: [
       {
         title: "The route",
-        body: "938 metres of climbing where no part of the routed line measures more than 21.8 degrees, and the steepest hundred-metre band is 19.1 from 1100 to 1200 m. Fri Flyt gives the steepest point as under 25 degrees and classes the tour KAST 1, simple. The route gives back 2 metres over 6.53 km — it climbs almost without interruption from the car to the shelter.",
+        body: "936 metres of climbing where no part of the routed line measures more than 19.6 degrees, and the steepest hundred-metre band is 13.4 from 1400 to 1500 m. Fri Flyt gives the steepest point as under 25 degrees and classifies the tour as KAST 1, easy. The route gives back not a metre over 4.84 km — it climbs without interruption from the car to the shelter, on ground mapped as a winter route the whole way.",
       },
       {
         title: "The terrain off it",
-        body: "The north-east side is the one that counts: 30.7 degrees on average over 400 metres and 46.2 degrees in the window 10 to 70 metres out from the top, with north at 22.2 and east at 23.1. The south side, which Fri Flyt names in its hazard note, measures 6.0 degrees on average over the first 400 metres and does not reach 24.8 degrees until 1450 to 1500 metres out, at the cirque Omnråa. Two different things, and it is the north-east one that sits by the shelter.",
+        body: "The north-east side is the one that counts where you stand: 30.7 degrees on average over 400 metres and 46.2 degrees in the window 10 to 70 metres out from the summit, with north at 22.2 and east at 23.1. The south side, which Fri Flyt names in its hazard note, measures 6.0 degrees on average over the first 400 metres — but it is not harmless, it is merely far off: from about 1490 metres out it falls 37 to 40 degrees toward the Omnråa bowl. Two different things, and it is the north-east one that lies by the shelter.",
       },
       {
         title: "Before you go",
@@ -939,8 +939,8 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
     elevationProfile: {
       startLabel: "653 m",
       endLabel: "1589 m",
-      distanceLabel: "6.5 km",
-      caption: "938 metres of climbing and 6.53 km from Bree through the cabin area in Hornlia at 847 m, with the forest letting go at 933 and open mountain from 1021 m.",
+      distanceLabel: "4.8 km",
+      caption: "936 metres of climbing and 4.84 km on the mapped winter route from Bree through the cabin field at Hornlia, with the forest letting go at 867 m and open mountain from 942.",
     },
   },
   kirketaket: {

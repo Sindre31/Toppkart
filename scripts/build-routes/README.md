@@ -1275,6 +1275,85 @@ claim. Vassfjellet's mast is 131 m from the cairn at 709.4 m and the ski centre
 1.30 km out on bearing 86, both as written; Storhornet's 725 m vertex really is
 `DyrketMark`. Storbekkhøa and Storhornet needed no change at all.
 
+### The other four, read as closely
+
+The read above moved three lines. The four it left alone — Vassfjellet, Snota,
+Storbekkhøa and Storhornet — were then given the same treatment rather than a
+clean bill on the strength of having survived one pass. Two of them needed work,
+and one of those was the largest single geometry error in the round.
+
+**Storhornet was not on the marked winter route it is sold as.** The guide's own
+first sentence is «på merket vinterløype fra Bree», and OSM has that route: a
+continuous `piste:type=skitour` chain of seven ways from the Bree car park to a
+node 25 m from the cairn, 5.13 km long, with **131 cabins within 300 m of it** —
+the Hornlia hyttefelt the description walks you through. The routed line was not
+on it. It was pinned to the *register point* for Hornlia (62.63835/9.46726,
+846.8 m), which has **zero buildings within 600 m**, and to get there it ran
+north for two kilometres, doubled back south-west, and only then turned for the
+summit. Peak divergence from the mapped route: **1423 m**. The dogleg is also
+where the tour's extra kilometre came from — 6.53 km routed against Fri Flyt's
+5.3 and ut.no's 5.2.
+
+Six waypoints on the mapped chain fixed it. The line is now 4.84 km with a peak
+divergence of 166 m, 113 cabins within 300 m, and a heading that sits between
+300° and 325° from the treeline up — which is what both sources mean by
+«nordvest». Gain went 938 → 936 m, against ut.no's stated 928. Every band on the
+new line is between 9.5° and 13.4°, and it gives back nothing at all, so the
+guide's «jevn stigning» is now a measurement rather than a hope.
+
+**Storhornet's south side was understated by fifteen degrees.** Fri Flyt's single
+hazard note is the steep ground around Omnråa, south of the summit, and the guide
+answered it with «først 24,8 grader 1450 til 1500 meter ut» — far away and not
+very steep. Both halves were an artefact of how it was measured. The probe was
+run `--out 1500 --step 25`: the radial stopped at 1500 m, which is 10 m past
+where the ground actually begins to break, and a 25 m step turns the "60 m
+window" into two samples and smooths the break away. Re-run at `--out 2000
+--step 10`, the south radial is plateau under ten degrees for 1.45 km and then
+falls off: 60 m windows of **37 to 40°** from about 1490 m out, the steepest
+**39.7° at 1610–1670 m**, single ten-metre steps to **48°**, and 339 m of height
+gone by two kilometres. The guide now says that. The original figure is kept in
+`measurements.json`, marked superseded, because the way it was wrong is the
+useful part.
+
+**Storbekkhøa follows the wrong stream in one sentence.** Ut.no sends you up
+«gjennom bjørkelia til høyre for Veslebekken»; Fri Flyt says the route «følgjer
+Storbekken nordover frå Storli gjennom bjørkeskogen». The line is Fri Flyt's —
+14 to 112 m from Storbekken the whole way, and 120 to 906 m *west* of Veslbekken
+(OSM way/248399534), which is the left-hand side going up, not the right. The
+guide had quoted ut.no's phrase over Fri Flyt's line. It now says which source
+the line follows and where the other one goes. Its stream crossing was also
+wrong in detail: the first crossing of Storbekken is at 644 m, not at the valley
+floor, and the line braids back over it eight more times between 968 and 997 m.
+And «the steepest band on the whole tour» is two bands, not one — 700–800 m and
+1300–1400 m both measure 17.5°.
+
+**Vassfjellet quoted a steepest-window figure across two raster resolutions.**
+`flank_probe.py` sizes its DEM tile from `--out`, so a 400 m sweep and a 1 km
+sweep read the same ground at different resolutions. Means survive that; steepest
+60 m windows do not. The guide carried both — «33,3 grader … innafor 400 meter og
+32,9 grader ut til en kilometer» — as if they were two facts about the mountain,
+and the kilometre figure does not reproduce (34.3° at 190–250 m on a re-run).
+Only the 400 m windows are quoted now, alongside the kilometre *mean*, which is
+stable. Two smaller things went with it: north-west has the steepest window but
+south-east the higher mean, so «nordvest er brattast» needed a qualifier; and the
+line is a terrain line through the løype network rather than the løype itself —
+2205 of 4744 m sit more than 50 m from any mapped trail — which the guide now
+says outright. The anleggsveg it joins is real and mapped: Vassfjellvegen, OSM
+way/429525197, 16 m from the line.
+
+**Snota was clean, and gained one clause.** Every flank figure, band, bearing and
+the glacier stretch reproduced exactly. The one thing missing was that 90 m of
+the line crosses a small unnamed tarn at 1024 m at the foot of Litj-Snota, just
+below the waypoint the guide already names at 1026. Worth a clause in a guide
+that is otherwise precise about what the line crosses. Its Svartvatnet crossing
+is deliberate and sourced — ut.no routes «over Svartvatnet (889 moh)», while the
+mapped backcountry route in the area goes around it 478 m to the side.
+
+What reproduced across all four, exactly: every one of the eight-bearing flank
+sweeps at 400 m, every band table, every steepest step, every bearing off the
+summit, every treeline, and full number parity between the Norwegian and English
+texts — no figure appears in one language and not the other.
+
 ## Network
 
 Everything is public and unauthenticated:

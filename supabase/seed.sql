@@ -481,14 +481,14 @@ Femti meter fra varden tar du til venstre, rett sør, inn i renna: 40° og 400 m
 where slug = 'stornappstinden';
 
 update public.tk_tours set
-  description_up   = 'Start på parkeringa på Markavollen, 184 moh. Ut.no oppgir p-avgift, og terrengmodellen leser plassen til 184 moh — nøyaktig den starthøyda beskrivelsen oppgir. Følg skiløypa sørover, så østover og sørover igjen. Første halvdel er flat i en topptur å være: bandet fra 300 til 400 moh måler 4,6 grader over 1215 meter grunn, og 400 til 500 moh 3,3 grader over 1710.
+  description_up   = 'Start på parkeringa på Markavollen, 184 moh. Ut.no oppgir p-avgift, og terrengmodellen leser plassen til 184 moh — nøyaktig den starthøyda beskrivelsen oppgir. Ut.no sender deg langs skiløypene «merka S, deretter Ø og S igjen»; linja på kartet er terrenglinja gjennom det samme løypenettet og ikke løypa selv — 2205 av 4744 meter ligger mer enn 50 meter fra en kartlagt trasé, med største avvik 175 meter. Første halvdel er flat i en topptur å være: bandet fra 300 til 400 moh måler 4,6 grader over 1215 meter grunn, og 400 til 500 moh 3,3 grader over 1710.
 
-Vassfjellhytta ligger på 507 moh, og rett etter den kommer stigninga: 15,9 grader fra 500 til 600 moh over 405 meter grunn, med et steg på 23,0 grader mellom 534 og 553 moh. Skogen slipper taket på 512 moh, og fra 597 er terrenget åpent.
+På 445 moh streifer linja kanten av Lomtjønna. Vassfjellhytta ligger på 507 moh, og rett etter den kommer stigninga: 15,9 grader fra 500 til 600 moh over 405 meter grunn, med et steg på 23,0 grader mellom 534 og 553 moh. Skogen slipper taket på 512 moh, og fra 597 er terrenget åpent.
 
-Over skoggrensa slakner det til 11,6 grader fra 600 til 700 moh, og du treffer anleggsvegen ut.no sender deg inn på. Den går opp til Melhus hovedsender, kommunikasjonsmasta som står 131 meter fra varden på 709 moh. Varden selv står på 711, og terrengmodellen måler den til 710,9.',
+Over skoggrensa slakner det til 11,6 grader fra 600 til 700 moh, og du treffer anleggsvegen ut.no sender deg inn på — Vassfjellvegen, som ligger 16 meter fra linja og går helt opp til Melhus hovedsender, kommunikasjonsmasta som står 131 meter fra varden på 709 moh. De siste metrene dreier linja nordover. Varden selv står på 711, og terrengmodellen måler den til 710,9.',
   description_down = 'Ned samme vegen. Første 200 meter fra varden peiler 255 grader — vest — ned til 676 moh, og 500 meter ned peiler 249. Det er flanken kortet fører: vestsida måler 12,0 grader i snitt over 400 meter med et 26,2 graders vindu 230 til 290 meter ut, og 12,3 grader i snitt når sveipet går ut til en kilometer.
 
-Ut.no advarer mot «diverse brattheng både under og over tregrensa», og sveipet sier hvor de er. Nordvest er brattast: 13,8 grader i snitt med 33,3 grader i vinduet 190 til 250 meter ut, og 32,9 grader 180 til 240 meter ut når sveipet går en kilometer. Søraust måler 13,9 i snitt og 26,7 i brattaste vindu. Nordaust, mot heisene, måler 3,9 — men det du kommer ned i der er alpinbakken i Vassfjellet skisenter, ikke fjellet.',
+Ut.no advarer mot «diverse brattheng både under og over tregrensa», og sveipet sier hvor de er. Nordvest har det brattaste enkeltvinduet: 33,3 grader 190 til 250 meter ut, mot et snitt på 13,8. Søraust er den jamnast bratte sida med 13,9 grader i snitt og 26,7 i brattaste vindu, og vest måler 12,0 og 26,2. Nordaust, mot heisene, måler 3,9 — men det du kommer ned i der er alpinbakken i Vassfjellet skisenter, ikke fjellet.',
   avalanche_notes  = jsonb_build_array(
     jsonb_build_object(
       'title', 'Ruta',
@@ -496,7 +496,7 @@ Ut.no advarer mot «diverse brattheng både under og over tregrensa», og sveipe
     ),
     jsonb_build_object(
       'title', 'Terrenget utenfor',
-      'body',  'Fjellet har bratte sider; de ligger bare ikke der løypa går. Nordvest måler 33,3 grader i brattaste 60-metersvindu innafor 400 meter og 32,9 grader ut til en kilometer, søraust 26,7 og vest 26,2. Det er høyt og bratt nok til at et enkeltheng kan løsne, og det er akkurat de linjene som frister når du står på toppen med skiene på.'
+      'body',  'Fjellet har bratte sider; de ligger bare ikke der løypa går. Innafor 400 meter av varden måler nordvest 33,3 grader i brattaste 60-metersvindu, søraust 26,7 og vest 26,2. Det er høyt og bratt nok til at et enkeltheng kan løsne, og det er akkurat de linjene som frister når du står på toppen med skiene på.'
     ),
     jsonb_build_object(
       'title', 'Før du går',
@@ -566,7 +566,7 @@ update public.tk_tours set
 
 Opp lia sør–sørvest, gjennom 686 moh, med bandene 10,3, 6,3 og 7,0 grader. Så flater det ut på platået øst for Midtveggen, 931 moh: bandet fra 800 til 900 moh måler 3,2 grader over 1979 meter grunn, og 900 til 1000 måler 2,2 over 2250. Her gir ruta tilbake høyde, fra 931 ned til Svartvatnet på 888 moh — ut.no fører «ca 100» tapte høydemeter opp, og den routede linja gir tilbake 95.
 
-Fra Svartvatnet kommer du til foten av Litj-Snota og runder den i aust, 1026 moh, og sør. Herfra og opp er du i utløpsområder og i kortere partier i løsneområder over 30 grader, som ut.no skriver at det ikke er mulig å omgå. Bandene stiger til 7,1, 15,7 og 15,3 grader.
+Fra Svartvatnet kommer du til foten av Litj-Snota og runder den i aust, 1026 moh — de siste 90 metrene inn dit går over et lite unavngitt vatn på 1024. Herfra og opp er du i utløpsområder og i kortere partier i løsneområder over 30 grader, som ut.no skriver at det ikke er mulig å omgå. Bandene stiger til 7,1, 15,7 og 15,3 grader.
 
 På 1352 moh flater det ut, og den bratte bakken rett imot i vest er breen. Kartverket klasser elleve punkter på linja som breterreng, fra 1364 til 1463 moh, og strekket måler 404 meter — med to bare punkter på 1414 og 1421 moh midt i, der isen er brutt. Punktene rett før og etter, 1369 og 1471 moh, er åpent område. Ut.no oppgir «fra ca 1380 moh ... i ca 500 m» og ber deg sjekke med lokalkjente at det er nok snø. Brattaste sammenhengende steg på hele turen ligger her: 28,9 grader mellom 1414 og 1434 moh.
 
@@ -591,9 +591,9 @@ Det er verdt å vite hvorfor det første trekket går nordvest. Aust fra toppunk
 where slug = 'snota';
 
 update public.tk_tours set
-  description_up   = 'Start på parkeringa ved Storli, 623 moh — avgiftsbelagt, 30 kroner i kassa, og taggd for ski. Ut.no: «Fra Storli parkering spenner du på deg skia ved bilen.» Gå rett nordover mot Storbekkdalen gjennom bjørkelia til høyre for Veslebekken. Bandet fra 700 til 800 moh er det brattaste på hele turen, 17,5 grader over 299 meter grunn.
+  description_up   = 'Start på parkeringa ved Storli, 623 moh — avgiftsbelagt, 30 kroner i kassa, og taggd for ski. Ut.no: «Fra Storli parkering spenner du på deg skia ved bilen.» Gå rett nordover mot Storbekkdalen gjennom bjørkelia. Her spriker kildene, og kartet må velge: ut.no sender deg opp «til høyre for Veslebekken», mens Fri Flyt skriver at ruta følger Storbekken nordover fra Storli gjennom bjørkeskogen. Linja er Fri Flyts — den ligger 14 til 112 meter fra Storbekken hele vegen opp, og Veslebekken, som kommer inn fra aust, blir liggende 120 til 906 meter til venstre. Bandet fra 700 til 800 moh er det brattaste under skoggrensa, 17,5 grader over 299 meter grunn.
 
-Skogen slipper taket på 822 moh, og fra 918 er du i åpent terreng og myr. Dalbotnen på 1000 moh er flat — bandet fra 900 til 1000 måler 3,4 grader over 1621 meter grunn — og det er her ruta krysser Storbekken og legger seg vestover opp mot ryggen.
+Skogen slipper taket på 822 moh, og fra 918 er du i åpent terreng og myr. Linja krysser Storbekken første gang alt på 644 moh, og fletter seg så over bekken åtte ganger til der den slynger seg over den flate dalbotnen mellom 968 og 997 moh — bandet fra 900 til 1000 måler 3,4 grader over 1621 meter grunn. Det er her ruta legger seg vestover opp mot ryggen.
 
 Ryggen vest for bekken ligger på 1211 moh, og det brattaste sammenhengende steget kommer like under: 26,4 grader mellom 1082 og 1099 moh. Videre nordover langs ryggen til den bratte sørøstveggen står rett imot deg — da går du et stykke lenger vest og opp gjennom skaret på 1313 moh.
 
@@ -604,7 +604,7 @@ Sørøstveggen er den Fri Flyt advarer mot, og sveipet bekrefter den: 34,1 grade
   avalanche_notes  = jsonb_build_array(
     jsonb_build_object(
       'title', 'Ruta',
-      'body',  '893 høydemeter der brattaste hundremetersband er 17,5 grader fra 700 til 800 moh og brattaste sammenhengende steg 26,4 grader mellom 1082 og 1099. Fri Flyt skriver at hele oppstigninga går i terreng under 30 grader og fører turen som KAST 1. Ruta gir tilbake 12 høydemeter på 5,57 km.'
+      'body',  '893 høydemeter der brattaste hundremetersband er 17,5 grader — og det er to av dem, fra 700 til 800 moh og fra 1300 til 1400 — og brattaste sammenhengende steg 26,4 grader mellom 1082 og 1099. Fri Flyt skriver at hele oppstigninga går i terreng under 30 grader og fører turen som KAST 1. Ruta gir tilbake 12 høydemeter på 5,57 km.'
     ),
     jsonb_build_object(
       'title', 'Terrenget utenfor',
@@ -649,26 +649,26 @@ Sørsida er den kortet fører, og den er ikke slak heller: sør måler 27,4 grad
 where slug = 'okla';
 
 update public.tk_tours set
-  description_up   = 'Start på den avgiftsbelagte parkeringa ved Bree, 653 moh — ti plasser, taggd for både ski og fottur, og Fri Flyt sender deg dit med «følg veien som går til venstre etter butikken og kjør ca 1,3 kilometer». Løypa er hogd ut gjennom skogen; punktet på 725 moh er klassifisert som dyrket mark, altså gardsjorda like over parkeringa.
+  description_up   = 'Start på den avgiftsbelagte parkeringa ved Bree, 653 moh — ti plasser, taggd for både ski og fottur, og Fri Flyt sender deg dit med «følg veien som går til venstre etter butikken og kjør ca 1,3 kilometer». Herfra og til varden følger linja den kartlagte vinterløypa, en sammenhengende skitour-trasé på 5,13 km som ender 25 meter fra toppunktet; største avvik mellom linja og løypa er 166 meter.
 
-Gjennom hyttefeltet i Hornlia, 847 moh, stiger løypa jevnt: 4,0 grader fra 700 til 800 moh over 1485 meter grunn, 8,7 fra 800 til 900 og 11,7 fra 900 til 1000. Skogen slipper taket på 933 moh.
+Løypa er hogd ut gjennom skogen og svinger seg opp gjennom hyttefeltet i Hornlia — 113 hytter ligger innafor 300 meter av linja. Bandene måler 9,5 og 10,3 grader fra 600 til 800 moh, og det brattaste sammenhengende steget på hele turen ligger her: 19,6 grader mellom 826 og 842 moh. Skogen slipper taket på 867 moh, og fra 942 er du på åpent fjell.
 
-Fra 1021 moh er du på åpent fjell, og den brattaste delen kommer her: 19,1 grader fra 1100 til 1200 moh over 277 meter grunn, med et steg på 21,8 grader mellom 1135 og 1153. Videre måler bandene 12,9, 8,3, 14,8 og 9,9 grader mot toppen.
+Over tregrensa fortsetter løypa mot nordvest, og den holder kursen resten av vegen. Bandene måler 12,5, 11,5, 10,5, 10,1, 11,8 og 9,5 grader oppover, og det brattaste av dem alle er 13,4 grader fra 1400 til 1500 moh, over 450 meter grunn. Det er en stigning uten kneiker.
 
-På 1589 moh står steinbua fra 1946, med gjestebok. Dette er den best kontrollerte toppen i runden: terrengmodellen gir 1589,0 moh mot publiserte 1589, og Fri Flyts egen GPS-posisjon for toppunktet lander 10 meter fra det punktet.',
-  description_down = 'Ned samme vegen — det er linja Fri Flyt anbefaler. Første 200 meter fra bua peiler 134 grader, ned til 1562 moh, og 500 meter ned 128. Parkeringa ligger 4,7 km unna, på peiling 135 grader, så nedkjøringa følger oppstigninga hele vegen.
+På 1589 moh står steinbua fra 1946, med gjestebok. Dette er den best kontrollerte toppen i runden: terrengmodellen gir 1589,0 moh mot publiserte 1589, og Fri Flyts egen GPS-posisjon for toppunktet lander 10 meter fra det punktet. Linja stiger 936 høydemeter mot ut.nos oppgitte 928 og Fri Flyts 900, og måler 4,84 km mot ut.nos 5,2 og Fri Flyts 5,3.',
+  description_down = 'Ned samme vegen — det er linja Fri Flyt anbefaler. Første 200 meter fra bua peiler 153 grader, ned til 1567 moh, og 500 meter ned 145. Parkeringa ligger 4,7 km unna, på peiling 135 grader, så nedkjøringa følger oppstigninga hele vegen.
 
 Det bratte på dette fjellet ligger bak deg når du står ved bua. Nordaust måler 30,7 grader i snitt over 400 meter, med et 46,2 graders vindu bare 10 til 70 meter ut; nord 22,2 med 37,7 i vinduet 20 til 80, og aust 23,1 med 34,4. Sør og sørvest, der løypa kommer opp, måler 6,0 og 0,4 grader i snitt.
 
-Fri Flyts eget faremoment peker sørover: «Hvis du velger å oppsøke det bratte terrenget rundt Omnråa sør for toppen må du ta hensyn til både eksponert terreng og skredfare.» Det stemmer, men det er langt unna — Omnråa er en botn 3,02 km sør for varden, og radialen sørover treffer ikke 24,8 grader før i vinduet 1450 til 1500 meter ut. Kanten du kan gå ut på i dårlig sikt er nordaust.',
+Fri Flyts eget faremoment peker sørover: «Hvis du velger å oppsøke det bratte terrenget rundt Omnråa sør for toppen må du ta hensyn til både eksponert terreng og skredfare.» Det er en reell advarsel, og den ligger lenger ute enn du ser fra bua. Sørover er det platå i halvannen kilometer — under ti grader hele vegen — og så bryter terrenget av: fra rundt 1490 meter ut måler 60-metersvinduene 37 til 40 grader, det brattaste 39,7 grader 1610 til 1670 meter ut, og enkelttrinn på ti meter går opp i 48. Ved to kilometer har du mistet 339 høydemeter. Det er kanten over Omnråa, og den er ikke slak — den er bare langt unna. Kanten du kan gå ut på uten å ha gått langt, er nordaust.',
   avalanche_notes  = jsonb_build_array(
     jsonb_build_object(
       'title', 'Ruta',
-      'body',  '938 høydemeter der ingen del av den routede linja måler mer enn 21,8 grader, og brattaste hundremetersband er 19,1 fra 1100 til 1200 moh. Fri Flyt fører bratteste punkt som under 25 grader og klassifiserer turen som KAST 1, enkelt. Ruta gir tilbake 2 høydemeter på 6,53 km — den stiger praktisk talt uavbrutt fra bilen til bua.'
+      'body',  '936 høydemeter der ingen del av den routede linja måler mer enn 19,6 grader, og brattaste hundremetersband er 13,4 fra 1400 til 1500 moh. Fri Flyt fører bratteste punkt som under 25 grader og klassifiserer turen som KAST 1, enkelt. Ruta gir ikke tilbake en høydemeter på 4,84 km — den stiger uavbrutt fra bilen til bua, på en trasé som er kartlagt som vinterløype hele vegen.'
     ),
     jsonb_build_object(
       'title', 'Terrenget utenfor',
-      'body',  'Nordaustsida er den som teller: 30,7 grader i snitt over 400 meter og 46,2 grader i vinduet 10 til 70 meter ut fra toppen, med nord på 22,2 og aust på 23,1. Sørsida, som Fri Flyt navngir i faremomentet sitt, måler 6,0 grader i snitt de første 400 meterne og først 24,8 grader 1450 til 1500 meter ut, ved botnen Omnråa. To ulike ting, og det er nordaust som ligger ved bua.'
+      'body',  'Nordaustsida er den som teller der du står: 30,7 grader i snitt over 400 meter og 46,2 grader i vinduet 10 til 70 meter ut fra toppen, med nord på 22,2 og aust på 23,1. Sørsida, som Fri Flyt navngir i faremomentet sitt, måler 6,0 grader i snitt de første 400 meterne — men den er ikke ufarlig, den er bare langt unna: fra rundt 1490 meter ut faller den 37 til 40 grader ned mot botnen Omnråa. To ulike ting, og det er nordaust som ligger ved bua.'
     ),
     jsonb_build_object(
       'title', 'Før du går',
