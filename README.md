@@ -81,17 +81,17 @@ components/
 lib/
   config.ts              PRICE, TRIAL_DAYS, SITE, GRADE_COLORS, env, is*Configured
   types.ts               Tour, TourGuide, Viewer, Subscription, Invoice
-  tours.ts               The 75 tours, REGIONS, getTour(), routesFor(), routeById(),
+  tours.ts               The 78 tours, REGIONS, getTour(), routesFor(), routeById(),
                          routeFor(), routeProfile()
   routes.ts              Generated ascent routes per tour — see scripts/build-routes/
-  guides.ts              Editorial guide content — all 75 tours, generated
+  guides.ts              Editorial guide content — all 78 tours, generated
   access.ts              getViewer() / grantsAccess() — server-only access gate
   stripe.ts              Stripe client, null in demo mode
   demo-session.ts        Cookie-backed stand-ins for auth and subscription
   supabase/              Browser and server Supabase clients
 supabase/
   schema.sql             Tables, policies, RLS
-  seed.sql               The 75 tours and all 75 guides
+  seed.sql               The 78 tours and all 78 guides
 design-reference/        The HTML prototypes and the product/design handoff. Read-only ground
                          truth; not shipped.
 docs/
@@ -172,7 +172,7 @@ content and data quality that has to be settled before the site is sold to anyon
   none was made. Each of the ten guides says so in its own words, and every region was queried
   rather than assumed. The four Trollheimen tours are in an A-region and are forecast daily.
 - **The tour cards are checked, the guides are checked, the geometry is checked — by machine.**
-  `check_tours.py`, `check_guides.py` and `check_routes.py` come back clean on all 75 tours: every
+  `check_tours.py`, `check_guides.py` and `check_routes.py` come back clean on all 78 tours: every
   card height is DTM1 at the resolved summit, every vertical is its route's cumulative ascent to
   within 10 m, every number in the prose traces to a measurement, and `supabase/seed.sql` holds the
   same figures as `lib/tours.ts`. That last one was not true until it was checked: the seed had
@@ -200,14 +200,45 @@ content and data quality that has to be settled before the site is sold to anyon
   the defect, and Folarskardnuten the fourth on the same reasoning — four crossings, 495 of
   12 610 metres, on the marked DNT winter route. The remaining eleven are a work list in
   `scripts/build-routes/check_ground_run.txt`.
+- **Three peaks were added after the Trondheim round: Kjerag, Møysalen and Sæbyggjenuten.**
+  They bring three new regions with them — Rogaland, Vesterålen and Setesdal — and they were
+  routed, carded and written the same way as the rest, with `check_ground.py` run before the prose
+  rather than after it. That order changed what got written. All six water crossings the check
+  found are natural lakes rather than reservoirs, so none of them needed a reroute — but none of
+  them would have been mentioned either, and now each is named with its height, its length and how
+  far offshore the line gets. Two of the three carry a correction the sources do not:
+  **Kjerag's plateau high point is not the highest ground on the plateau** — DTM1 puts 1163.7 m
+  some 1347 m east-north-east of the registered point, and the drawn line itself crosses 1129 m
+  before giving back 66 m to reach the 1124 m summit — and **Sæbyggjenuten is forecast by Varsom
+  as Vest-Telemark, not Setesdal**, which is the region label the app shows. Møysalen's summit
+  ridge holds a 51 m notch over 27.3 m of ground; it was checked point by point at 2.3 m spacing
+  before it went in the copy, because a drop that abrupt is usually a grid artefact and this one
+  is not.
+- **Every treeline was a sample, and all 78 have been re-measured.** `guide_facts.py` derived the
+  treeline from a fourteen-point terrain-class table, so `last_forest_m` was the highest of
+  fourteen points that *happened* to be forest — a lower bound, never anything else, and wrong in
+  the same direction every time. `treeline_scan` now walks every vertex, stopping only after 600 m
+  of ground *and* 150 m of height without forest, with a 1300 m ceiling so alpine routes cost
+  nothing. **62 of the 78 moved, every one of them upward**, and five tours that had no treeline at
+  all turned out to have one. The largest error was Breitinden at +271 m (30 → 301); Kirketaket
+  moved +225, Lodalskåpa +183, Skåla +176, Hornindalsrokken +152. **34 guides quoted a figure that
+  changed and all 34 are corrected** in both languages. Two sentences had to be rewritten rather
+  than renumbered, because the new `first_open_m` means the first non-forest vertex after the last
+  forest one rather than the lowest sample above it, and Gyranfisen's «Ved 916 moh er du fortsatt i
+  skog» inverted under it.
+  The fix needed a second pass of its own: a blind numeric replace inside forest sentences
+  corrupted Grafjell's «på 950 moh går ruta ut på Istjenn», which is a lake elevation that happened
+  to equal the old treeline. The replacement is scoped to the phrasings that actually *state* a
+  treeline, and every substitution is checked against the stored old value before it is made.
 - **The guide text has not been read by anyone who has skied these tours.** Every number in
   `lib/guides.ts` traces to Kartverket's terrain model, the route research or a cited source, and
   every number is matched mechanically by `check_guides.py` — which reads nynorsk verticals as well
-  as bokmål ones, and comes back clean on all 75 guides.
-  On top of that, **all 75 guides have been through an adversarial second read**
+  as bokmål ones, and comes back clean on all 78 guides.
+  On top of that, **all 78 guides have been through an adversarial second read**
   whose only job is to break it — the 24 of the first round, the 15 of the second, the 7 of the
-  Oslo round, the 22 of the Sunnmøre and Vestland rounds, and finally the 7 of the Trondheim
-  round. That last read was the first one done by someone other than the pass that wrote the
+  Oslo round, the 22 of the Sunnmøre and Vestland rounds, the 7 of the Trondheim round, and
+  finally Kjerag, Møysalen and Sæbyggjenuten. That last read moved a card, rewrote half a guide,
+  and found the pipeline bug in the next bullet. That last read was the first one done by someone other than the pass that wrote the
   guides, and it found the worst class of error yet: **two routed lines that crossed water the
   guide said they went around.** Kråkfjellet and Rensfjellet ran 1.9 km out on Håen — a reservoir
   drawn down every winter, and the one hazard their source names — while the copy said «følg
@@ -234,8 +265,8 @@ content and data quality that has to be settled before the site is sold to anyon
 - **`assets/kontur.png` is a placeholder.** It is a generated contour-map graphic standing in for
   real ski-touring photography. `assets/photo.jpg` is an unrelated reference photo from the design
   system and should also go. The contour graphic is now the only invented terrain left on a tour
-  page: it carries a "1439 moh" label baked into the artwork and renders identically on all 75
-  tours, so on 74 of them it states a height that is not that peak's. The caption says it is
+  page: it carries a "1439 moh" label baked into the artwork and renders identically on all 78
+  tours, so on 77 of them it states a height that is not that peak's. The caption says it is
   schematic, but it sits beside real figures — replace it before print.
 - **Map tiles should move to a Norwegian topographic source.** OpenStreetMap is what the prototype
   used; Kartverket's WMTS or a MapTiler style with Norwegian topography is the intended
