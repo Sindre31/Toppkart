@@ -151,29 +151,29 @@
   "grade": 1,
   "aspect": "V",
   "season": "des–apr",
-  "hasGuide": false
+  "hasGuide": true
  },
  "krakfjellet": {
   "name": "Kråkfjellet",
   "region": "Trøndelag",
   "summitM": 815,
-  "verticalM": 430,
+  "verticalM": 470,
   "duration": "4–6 t",
   "grade": 2,
   "aspect": "S",
   "season": "des–apr",
-  "hasGuide": false
+  "hasGuide": true
  },
  "rensfjellet": {
   "name": "Rensfjellet",
   "region": "Trøndelag",
   "summitM": 942,
-  "verticalM": 670,
+  "verticalM": 700,
   "duration": "5–7 t",
   "grade": 2,
   "aspect": "V",
   "season": "des–apr",
-  "hasGuide": false
+  "hasGuide": true
  },
  "snota": {
   "name": "Snota",
@@ -184,7 +184,7 @@
   "grade": 3,
   "aspect": "Ø",
   "season": "feb–mai",
-  "hasGuide": false
+  "hasGuide": true
  },
  "storbekkhoa": {
   "name": "Storbekkhøa",
@@ -195,18 +195,18 @@
   "grade": 2,
   "aspect": "S",
   "season": "des–mai",
-  "hasGuide": false
+  "hasGuide": true
  },
  "okla": {
   "name": "Okla",
   "region": "Trollheimen",
   "summitM": 1582,
-  "verticalM": 1030,
+  "verticalM": 1020,
   "duration": "4–6 t",
   "grade": 2,
   "aspect": "S",
   "season": "des–apr",
-  "hasGuide": false
+  "hasGuide": true
  },
  "storhornet": {
   "name": "Storhornet",
@@ -217,7 +217,7 @@
   "grade": 2,
   "aspect": "SØ",
   "season": "des–mai",
-  "hasGuide": false
+  "hasGuide": true
  },
  "kirketaket": {
   "name": "Kirketaket",

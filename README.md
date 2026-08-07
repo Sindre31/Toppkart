@@ -182,19 +182,24 @@ content and data quality that has to be settled before the site is sold to anyon
   `lib/guides.ts` traces to Kartverket's terrain model, the route research or a cited source, and
   every number is matched mechanically by `check_guides.py` — which reads nynorsk verticals as well
   as bokmål ones, and comes back clean on all 75 guides.
-  On top of that, **68 of the 75 guides have been through an adversarial second read**
+  On top of that, **all 75 guides have been through an adversarial second read**
   whose only job is to break it — the 24 of the first round, the 15 of the second, the 7 of the
-  Oslo round, and finally the 22 of the Sunnmøre and Vestland rounds. The seven of the Trondheim
-  round have had the same checks run over them — every compass claim re-derived as a bearing from
-  the routed line, every summit swept on all eight bearings, terrain-class claims re-queried, and
-  the two languages compared number by number — but by the pass that wrote them rather than by an
-  independent reader, so they are the ones to point a second reader at first. It earns its keep every
+  Oslo round, the 22 of the Sunnmøre and Vestland rounds, and finally the 7 of the Trondheim
+  round. That last read was the first one done by someone other than the pass that wrote the
+  guides, and it found the worst class of error yet: **two routed lines that crossed water the
+  guide said they went around.** Kråkfjellet and Rensfjellet ran 1.9 km out on Håen — a reservoir
+  drawn down every winter, and the one hazard their source names — while the copy said «følg
+  strandlinja på nordsida», and Okla crossed Mjølkskåla while the copy said the lake stayed
+  «under deg». All three corridors were re-pinned onto the ground the sources describe (the
+  forest road ut.no offers along Håen, the rim north of Mjølkskåla), re-routed and re-measured,
+  and their guides rewritten against the new lines. It earns its keep every
   time. It caught a descent sold on the wrong side of Kavringtinden, a cliff warning pointing away
   from the cliff on Storehorn, a rock band on Synshorn that does not exist, a ski centre placed on
   the wrong side of Høgevarde, and — in the last pass — Skarsteinsfjellet sent *east* down a
   mountain whose trailhead is west, a crevasse warning on a Torvløysa glacier the route does not
   cross, and an Auskjeret warning about an east-facing slope that measures 7 to 9 degrees while
-  the north-east side measures 36. Ten of those 22 needed a change; twelve were confirmed clean.
+  the north-east side measures 36. Ten of those 22 needed a change; twelve were confirmed clean;
+  three of the seven Trondheim tours needed their line moved and four were confirmed clean.
   That makes the copy sourced and verified against the terrain model — but not against anyone's
   experience of the mountain. It still needs a local reader per tour before print. See "The 22,
   read adversarially" in `scripts/build-routes/README.md` for the method and the findings.

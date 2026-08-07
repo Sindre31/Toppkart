@@ -465,8 +465,13 @@
   },
   {
    "what": "Peilinger fra toppen langs den routede linja",
-   "figure": "Første 200 m ned fra toppen peiler 202 grader (789 moh), 500 m ned 199 grader (761 moh). Parkeringa ved Håen ligger på peiling 225 fra toppen, 7,4 km unna.",
+   "figure": "Første 200 m ned fra toppen peiler 202 grader (792 moh), 500 m ned 199 grader (758 moh). Parkeringa ved Håen ligger på peiling 225 fra toppen, 7,4 km unna.",
    "how": "Storsirkelpeiling fra siste vertex i routes.json til vertexen 200 og 500 m tilbake langs linja, og til trailheaden."
+  },
+  {
+   "what": "Håen: vassflate, brøytegrense og skogsbilvegen austover",
+   "figure": "Vassflata på Håen måler 433,0 moh på DTM1 med terrengklasse InnsjøRegulert. Parkeringa (OSM way/145361330) måler 411,1 moh, altså 22 m under det regulerte vatnet. Lundadalsvegen sluttar ikkje ved parkeringa: OSM way/617153815 (Lundadalsvegen, toll=yes) held fram 2,6 km austover langs nordsida av vatnet, frå 410,5 moh ved parkeringa til 434,8 moh ved austenden 290 m frå Kråklivollen. Det er skogsbilvegen ut.no nemner.",
+   "how": "DTM1-punktoppslag på vassflata og langs vegen, og Overpass-uttrekk av way/145361330, way/617154075, way/15054350 og way/617153815."
   }
  ],
  "rensfjellet": [
@@ -477,8 +482,13 @@
   },
   {
    "what": "Peilinger fra toppen langs den routede linja",
-   "figure": "Første 200 m ned fra toppen peiler 251 grader (915 moh), 500 m ned 254 grader (873 moh). Parkeringa ved Håen ligger på peiling 254 fra toppen, 10,2 km unna.",
+   "figure": "Første 200 m ned fra toppen peiler 253 grader (920 moh), 500 m ned 254 grader (873 moh). Parkeringa ved Håen ligger på peiling 254 fra toppen, 10,2 km unna.",
    "how": "Storsirkelpeiling fra siste vertex i routes.json til vertexen 200 og 500 m tilbake langs linja, og til trailheaden."
+  },
+  {
+   "what": "Håen: vassflate, brøytegrense og skogsbilvegen austover",
+   "figure": "Vassflata på Håen måler 433,0 moh på DTM1 med terrengklasse InnsjøRegulert. Parkeringa (OSM way/145361330) måler 411,1 moh, altså 22 m under det regulerte vatnet. Lundadalsvegen sluttar ikkje ved parkeringa: OSM way/617153815 (Lundadalsvegen, toll=yes) held fram 2,6 km austover langs nordsida av vatnet, frå 410,5 moh ved parkeringa til 434,8 moh ved austenden 290 m frå Kråklivollen. Det er skogsbilvegen ut.no nemner.",
+   "how": "DTM1-punktoppslag på vassflata og langs vegen, og Overpass-uttrekk av way/145361330, way/617154075, way/15054350 og way/617153815."
   }
  ],
  "storhornet": [
@@ -518,8 +528,13 @@
   },
   {
    "what": "Peilinger fra toppen langs den routede linja",
-   "figure": "Første 200 m ned fra varden peiler 73 grader (aust, 1522 moh) og 500 m ned 72 grader (1411 moh) — langs ryggen, ikke i fallinja. Parkeringa i Dalen ligger på peiling 167 fra toppen, 3,4 km unna.",
+   "figure": "Første 200 m ned fra varden peiler 73 grader (aust, 1509 moh) og 500 m ned 72 grader (1412 moh) — langs ryggen, ikke i fallinja. Parkeringa i Dalen ligger på peiling 167 fra toppen, 3,4 km unna.",
    "how": "Storsirkelpeiling fra siste vertex i routes.json til vertexen 200 og 500 m tilbake langs linja, og til trailheaden."
+  },
+  {
+   "what": "Mjølkskåla og Korgtjønna: kva linja faktisk kryssar",
+   "figure": "Mjølkskåla måler 1277,0 moh (Innsjø) og strekkjer seg om lag 62,684–62,687 N og 9,272–9,280 Ø. Eggen nord for vatnet måler 1284–1295 moh, og stig til 1345 moh 170 m lenger nord. Korgtjønna måler 1151,0 moh (Innsjø), og linja går 720 m over det.",
+   "how": "DTM1-punktoppslag i eit rutenett rundt vatnet, og terrengklasse på kvar 5. vertex i routes.json."
   }
  ],
  "snota": [
@@ -537,6 +552,11 @@
    "what": "Peilinger fra toppen langs den routede linja",
    "figure": "Første 200 m ned fra toppunktet peiler 320 grader (nordvest, 1653 moh) og 500 m ned 328 grader (1598 moh) — ruta går tilbake langs toppflanken før den faller austover ned breen. Parkeringa ved Gråhaugen ligger på peiling 13 fra toppen, 8,0 km unna.",
    "how": "Storsirkelpeiling fra siste vertex i routes.json til vertexen 200 og 500 m tilbake langs linja, og til trailheaden."
+  },
+  {
+   "what": "Bretrekket på linja, vertex for vertex på full oppløysing",
+   "figure": "Elleve vertexar svarar SnøIsbre: 254–258 (1364, 1384, 1388, 1396, 1404 moh) og 261–266 (1434, 1435, 1444, 1451, 1457, 1463 moh), med to bare vertexar på 1414 og 1421 moh mellom dei. Frå den fyrste til den siste er strekket 404 m. Punkta rett før og etter — 1369 og 1471 moh — er ÅpentOmråde, så breen på linja toppar på 1463 moh. Ut.no oppgjev «frå ca 1380 moh ... i ca 500 m».",
+   "how": "Terrengklasse frå DTM1-punkt-API-et på kvar vertex i routes.json mellom 1300 og 1520 moh, med kumulativ storsirkelavstand langs linja. Den fyrste målinga sampla berre kvart tredje punkt og kom ut med sju vertexar, 436 m og 1471 moh som topp — det var oppløysinga, ikkje breen."
   }
  ]
 }

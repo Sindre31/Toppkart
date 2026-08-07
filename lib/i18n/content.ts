@@ -179,15 +179,15 @@ export const TOUR_TEASER_EN: Record<string, string> = {
   vassfjellet:
     "540 m of climbing from Markavollen past Vassfjellhytta — the closest ski tour to Trondheim, on a marked track the whole way.",
   krakfjellet:
-    "The highest point in Trondheim municipality: 430 m of climbing and nine kilometres from Håen past Kråklivollen and Rundtjønnin.",
+    "The highest point in Trondheim municipality: 470 m of climbing and ten kilometres from Håen past Kråklivollen and Rundtjønnin.",
   rensfjellet:
-    "670 m of climbing and eleven kilometres from Håen past Rundtjønnin and Oksdalen to the highest point in Melhus.",
+    "700 m of climbing and eleven kilometres from Håen past Rundtjønnin and Oksdalen to the highest point in Melhus.",
   storhornet:
     "940 m of climbing on a marked winter route from Bree through Hornlia to the stone shelter on the most visited peak in Oppdal.",
   storbekkhoa:
     "890 m of climbing from Storli up Storbekkdalen and through the col west of the steep south-east face.",
   okla:
-    "1030 m of climbing from Dalen in Storlidalen to Snydda — the cairn on the high point of the Okla massif.",
+    "1020 m of climbing from Dalen in Storlidalen to Snydda — the cairn on the high point of the Okla massif.",
 
 };
 
@@ -716,7 +716,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
     avalanche: [
       {
         title: "The route",
-        body: "541 metres of climbing where the bands below 500 m measure 3.3 and 4.6 degrees, and the band from 500 to 600 measures 15.9 over 405 metres of ground. The steepest point on the whole routed line is 23.0 degrees, between 534 and 553 m, and the route gives back 14 metres over 4.74 km. It is a marked-track tour with one steep pitch in it, not a flank ascent.",
+        body: "541 metres of climbing where the bands below 500 m measure 3.3 and 4.6 degrees, and the band from 500 to 600 measures 15.9 over 405 metres of ground. The steepest point on the whole routed line is 23.0 degrees, between 534 and 553 m, and the route gives back 14 metres over 4.74 km. It is a marked-track tour with one steep pitch in it, not a flank ascent. The routed line climbs 541 metres over 4.74 km against ut.no's stated 526 and 6.7 km: the vertical agrees, the kilometres do not. The marked track winds south, east and south again, and the line on the map takes the shortest way through the same points.",
       },
       {
         title: "The terrain off it",
@@ -736,25 +736,26 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
   },
   krakfjellet: {
     intro:
-      "430 metres of climbing and 9.34 km from Håen to the highest point in Trondheim municipality. It is a long, gentle day: the band from 400 to 500 m measures 1.2 degrees over 4238 metres of ground, and the steepest place on the whole line is 18.6 degrees between 465 and 480 m.",
+      "468 metres of climbing and 9.63 km from Håen to the highest point in Trondheim municipality. It is a long, gentle day: the band from 400 to 500 m measures 1.2 degrees over 4505 metres of ground, and the steepest place on the whole line is 13.9 degrees between 659 and 670 m.",
     ascent: [
-      "Start at the car park by Håen, 411 m, where Lundadalsvegen ends — a toll road from Lundamo, normally ploughed the 18 kilometres in. Follow the shoreline on the north side of the lake due east. The water surface measures 433 m and is classed as a regulated lake: Håen is drawn down every winter, and ut.no tells you to keep off uncertain ice along its edge.",
-      "After barely three kilometres you reach Kråklivollen, 452 m, and from there the route climbs into the forest, up Kråklia and west of Samsjølia. The band from 400 to 500 m measures 1.2 degrees over 4238 metres of ground — here it is the distance, not the climbing, that is the tour.",
-      "Rundtjønnin sits at 526 m, and it is the check that the route runs where the description says: ut.no gives 525. On north and north-east you follow ridges or hollows in the same direction, depending on the snow, until the route turns north and north-west toward the summit. The bands above Rundtjønnin measure 2.4, 3.8 and 5.4 degrees.",
+      "Start at the car park by Håen, 411 m — a toll road from Lundamo, normally ploughed the 18 kilometres in. The ploughing stops here; the road does not. Lundadalsvegen carries on unploughed for 2.6 kilometres east along the north side of the lake, and that is the forest road ut.no sends you along — «the forest road or the shoreline N on Håen due E». The line on the map follows the road.",
+      "The reason it does is lying next to it. The water surface of Håen measures 433 m and is classed as a regulated lake: the reservoir is drawn down every winter, the car park sits 22 metres below a full surface, and ut.no tells you to keep off uncertain ice along the edge. The road stays on land the whole way, from 411 m at the car to 435 at its eastern end.",
+      "After barely three kilometres you reach Kråklivollen, 452 m, where the road ends and the route climbs into the forest, up Kråklia and west of Samsjølia. The forest lets go at 524 m, and from 529 you are in the open. The band from 400 to 500 m measures 1.2 degrees over 4505 metres of ground — here it is the distance, not the climbing, that is the tour.",
+      "Rundtjønnin sits at 526 m, and it is the check that the route runs where the description says: ut.no gives 525. On north and north-east you follow ridges or hollows in the same direction, depending on the snow, until the route turns north and north-west toward the summit. The bands above Rundtjønnin measure 2.4, 3.8, 5.3 and 5.8 degrees, and the last of them covers only 129 metres of ground.",
       "The cairn stands at 815 m. Kråkfjellet became the highest point in Trondheim municipality after the merger with Klæbu, and published figures say 817; the terrain model reads 814.9 at the high point, and the card carries the measurement.",
     ],
     descent: [
-      "Back down the same way. The first 200 metres off the top bear 202 degrees, down to 789 m, and 500 metres down bears 199. The car park lies 7.4 km away, on a bearing of 225 degrees, so most of the way back is walking rather than skiing.",
+      "Back down the same way. The first 200 metres off the top bear 202 degrees, down to 792 m, and 500 metres down bears 199. The car park lies 7.4 km away, on a bearing of 225 degrees, so most of the way back is walking rather than skiing — and the last three kilometres are the forest road again.",
       "The sweep finds no steep side on this mountain: the steepest 60-metre window in any direction is 21.8 degrees to the east, in the window 260 to 320 metres out, with north-east at 13.1 degrees on average and north at 2.0. What ut.no warns about is something other than avalanches — «high cornices on the lee side» that you can fall off in flat light when crossing the ridges here.",
     ],
     avalanche: [
       {
         title: "The route",
-        body: "Nine kilometres where the bands measure 1.2, 2.4, 3.8 and 5.4 degrees, and the steepest sustained step is 18.6 degrees between 465 and 480 m. The route gives back 26 metres. The routed line climbs 430 metres against ut.no's stated 519: the difference is in the choice of line between the ridges, which the description itself leaves to the snow and the going.",
+        body: "Nine and a half kilometres where the bands measure 1.2, 2.4, 3.8, 5.3 and 5.8 degrees, and the steepest sustained step is 13.9 degrees between 659 and 670 m. The route gives back 64 metres and climbs 468 against ut.no's stated 519 and «about 140» given back. The rest of the difference is in the choice of line between the ridges, which the description itself leaves to the snow and the going.",
       },
       {
         title: "The terrain off it",
-        body: "The steepest measurement around the summit is 21.8 degrees to the east. North is close to flat, 2.0 degrees on average over 400 metres. The two things that can go wrong here are therefore not avalanches as such: the cornices ut.no describes, which are a fall problem in flat light, and the ice on Håen, which is regulated and drawn down every winter.",
+        body: "The steepest measurement around the summit is 21.8 degrees to the east. North is close to flat, 2.0 degrees on average over 400 metres. The two things that can go wrong here are therefore not avalanches as such: the cornices ut.no describes, which are a fall problem in flat light, and the ice on Håen, which is regulated and drawn down every winter. The route is laid on the forest road rather than out on the reservoir, but the shoreline is right beside the line the whole way.",
       },
       {
         title: "Before you go",
@@ -764,31 +765,31 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
     elevationProfile: {
       startLabel: "411 m",
       endLabel: "815 m",
-      distanceLabel: "9.3 km",
-      caption: "430 metres of climbing and 9.34 km from Håen by Kråklivollen at 452 m and Rundtjønnin at 526, with the last 148 metres of ground above 800 m.",
+      distanceLabel: "9.6 km",
+      caption: "468 metres of climbing and 9.63 km from Håen by Kråklivollen at 452 m and Rundtjønnin at 526, with the last 129 metres of ground above 800 m.",
     },
   },
   rensfjellet: {
     intro:
-      "674 metres of climbing and 11.0 km from Håen to the highest point in Melhus, with 143 of those metres given back along the way. The climbing comes last: the steepest hundred-metre band is 12.2 degrees from 700 to 800 m, and the steepest sustained step 25.9 degrees between 660 and 682.",
+      "699 metres of climbing and 11.33 km from Håen to the highest point in Melhus, with 168 of those metres given back along the way. The climbing comes last: the steepest hundred-metre band is 11.6 degrees from 700 to 800 m, and the steepest sustained step 19.7 degrees between 663 and 679.",
     ascent: [
-      "Start at the car park by Håen, 411 m, and follow the north shore east — the same first three kilometres as Kråkfjellet, and the same regulated lake at 433 m to keep clear of the edge of. Kråklivollen sits at 452 m.",
-      "On up Kråklia and west of Samsjølia, past Rundtjønnin at 526 m. Ut.no gives 525 for this tarn and the terrain model reads 526 — that is the check that the corridor follows the described route. The bands to here measure 1.3 and 1.4 degrees, over 4147 and 4096 metres of ground.",
-      "Then the route crosses Oksdalen at 532 m. The point is not named in any source: the valley is registered with a representation point 3.95 km away on a bearing of 15, north-north-east, and the crossing is read off the terrain model as the low line running south from it. The forest lets go at 543 m.",
-      "After Oksdalen the last four kilometres begin. The band from 600 to 700 m measures 6.0 degrees, and this is where the steepest sustained step sits — 25.9 degrees between 660 and 682 m. Above it, 700 to 800 m measures 12.2 degrees over 450 metres of ground, then it eases to 5.8 and 6.3 toward the cairn at 942 m. Rensfjellet is a boundary summit between Melhus, Midtre Gauldal and Selbu; ut.no notes that it «is only 2.1 km short toward N-NW of including Trondheim in that club too».",
+      "Start at the car park by Håen, 411 m — the same first three kilometres as Kråkfjellet. The ploughing stops at the car, but Lundadalsvegen does not: it carries on unploughed for 2.6 kilometres east along the north side of the lake, and the line follows it. The water surface of Håen sits at 433 m, the reservoir is drawn down every winter, and ut.no tells you to keep off uncertain ice along the edge.",
+      "Kråklivollen sits at 452 m, where the road ends. On up Kråklia and west of Samsjølia, past Rundtjønnin at 526 m. Ut.no gives 525 for this tarn and the terrain model reads 526 — that is the check that the corridor follows the described route. The bands to here measure 1.2 and 1.4 degrees, over 4460 and 4096 metres of ground.",
+      "Then the route crosses Oksdalen at 532 m. The point is not named in any source: the valley is registered with a representation point 3.95 km away on a bearing of 15, north-north-east, and the crossing is read off the terrain model as the low line running south from it. The forest lets go at 549 m, and from 621 you are in the open.",
+      "After Oksdalen the last four kilometres begin. The band from 600 to 700 m measures 6.1 degrees, and this is where the steepest sustained step sits — 19.7 degrees between 663 and 679 m. Above it, 700 to 800 m measures 11.6 degrees over 495 metres of ground, then it eases to 5.7 and 6.5 toward the cairn at 942 m. Rensfjellet is a boundary summit between Melhus, Midtre Gauldal and Selbu; ut.no notes that it «is only 2.1 km short toward N-NW of including Trondheim in that club too».",
     ],
     descent: [
-      "Back down the same way, westward: the first 200 metres off the top bear 251 degrees down to 915 m, and 500 metres down 254. The car park lies 10.2 km away, on a bearing of 254 degrees. Ut.no gives one alternative — dropping toward Samsjøen after Oksdalen — and attaches two conditions: that the going outside the groomed tracks is good, or that you have a track to follow.",
+      "Back down the same way, westward: the first 200 metres off the top bear 253 degrees down to 920 m, and 500 metres down 254. The car park lies 10.2 km away, on a bearing of 254 degrees. Ut.no gives one alternative — dropping toward Samsjøen after Oksdalen — and attaches two conditions: that the going outside the groomed tracks is good, or that you have a track to follow.",
       "The sweep finds no steep side within 400 metres of the cairn: east measures 11.0 degrees on average with 17.8 in its steepest window, south-east 3.4 and north-west 2.5. Ut.no's «steep single pitches high enough to slide» sit further out than the sweep reaches, and the description itself says they can be avoided.",
     ],
     avalanche: [
       {
         title: "The route",
-        body: "Eleven kilometres where the two long bands measure 1.3 and 1.4 degrees over four kilometres of ground each, and all the climbing sits in the last four. The steepest sustained step is 25.9 degrees between 660 and 682 m, the steepest hundred-metre band 12.2 from 700 to 800. The route gives back 143 metres against ut.no's stated «about 130» — the same shape of ground, ridges and hollows that have to be crossed.",
+        body: "Eleven kilometres where the two long bands measure 1.2 and 1.4 degrees over four kilometres of ground each, and all the climbing sits in the last four. The steepest sustained step is 19.7 degrees between 663 and 679 m, the steepest hundred-metre band 11.6 from 700 to 800. The route gives back 168 metres against ut.no's stated «about 130» — the same shape of ground, ridges and hollows that have to be crossed.",
       },
       {
         title: "The terrain off it",
-        body: "Within 400 metres of the cairn the steepest measurement is 17.8 degrees to the east. What makes the tour demanding is the length and the navigation: eleven kilometres over lakes, bog and ridges, 143 metres given back on the way in and the same again on the way out. Ut.no warns of cornices on the lee side, which are a fall problem in flat light, and of single pitches that exist but can be gone around.",
+        body: "Within 400 metres of the cairn the steepest measurement is 17.8 degrees to the east. What makes the tour demanding is the length and the navigation: eleven kilometres over bog, forest road and ridges, 168 metres given back on the way in and the same again on the way out. Ut.no warns of cornices on the lee side, which are a fall problem in flat light, and of single pitches that exist but can be gone around. Down at the start the hazard is the ice on a drawn-down reservoir, and the route is laid on the forest road to stay off it.",
       },
       {
         title: "Before you go",
@@ -798,18 +799,18 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
     elevationProfile: {
       startLabel: "411 m",
       endLabel: "942 m",
-      distanceLabel: "11.0 km",
-      caption: "674 metres of climbing and 11.0 km from Håen by Kråklivollen at 452 m, Rundtjønnin at 526 and the crossing of Oksdalen at 532, with the forest letting go at 543 m.",
+      distanceLabel: "11.3 km",
+      caption: "699 metres of climbing and 11.33 km from Håen by Kråklivollen at 452 m, Rundtjønnin at 526 and the crossing of Oksdalen at 532, with the forest letting go at 549 m.",
     },
   },
   snota: {
     intro:
-      "1268 metres of climbing and 10.22 km from Gråhaugen to the highest mountain in northern Trollheimen. The route runs in avalanche terrain from Litj-Snota upward, crosses 436 metres of glacier between 1364 and 1471 m, and the summit flank falls 48.1 degrees to the east.",
+      "1268 metres of climbing and 10.22 km from Gråhaugen to the highest mountain in northern Trollheimen. The route runs in avalanche terrain from Litj-Snota up, crosses 404 metres of glacier between 1364 and 1463 m, and the summit flank falls 48.1 degrees to the east.",
     ascent: [
       "Start at the car park by the dam on Gråsjøen, 495 m — 15 km of toll road up Folldalsvegen, paid by card. Follow the line of the road along the lake until the summer path slants up the hillside, and not earlier: ut.no warns that avalanches run from the snowfield on Gråhaugfjellet, and that in some years they reach the water.",
       "Up the hillside south-south-west, through 686 m, with bands of 10.3, 6.3 and 7.0 degrees. Then it flattens onto the plateau east of Midtveggen, 931 m: the band from 800 to 900 m measures 3.2 degrees over 1979 metres of ground, and 900 to 1000 measures 2.2 over 2250. Here the route gives height back, from 931 down to Svartvatnet at 888 m — ut.no gives «about 100» metres lost on the way up, and the routed line gives back 95.",
       "From Svartvatnet you reach the foot of Litj-Snota and round it to the east, 1026 m, and south. From here up you are in runout zones and, in shorter stretches, in start zones over 30 degrees, which ut.no says cannot be avoided. The bands rise to 7.1, 15.7 and 15.3 degrees.",
-      "At 1352 m it flattens, and the steep slope facing you to the west is the glacier. Kartverket classes seven points on the line between 1364 and 1471 m as glacier terrain, and the stretch measures 436 metres — ut.no gives «from about 1380 m ... for about 500 m» and asks you to check with locals that there is enough snow. The steepest sustained step of the tour is here: 28.9 degrees between 1414 and 1434 m.",
+      "At 1352 m it flattens, and the steep slope straight ahead to the west is the glacier. Kartverket classes eleven points on the line as glacier terrain, from 1364 to 1463 m, and the stretch measures 404 metres — with two bare points at 1414 and 1421 m in the middle of it, where the ice is broken. The points immediately before and after, 1369 and 1471 m, are open ground. Ut.no gives «from about 1380 m ... for about 500 m» and asks you to check with locals that there is enough snow. The steepest sustained step of the whole tour sits here: 28.9 degrees between 1414 and 1434 m.",
       "Above the glacier, at 1516 m, you come onto the summit flank, and the route turns south-west, south and finally south-south-east to the high point at 1668 m.",
     ],
     descent: [
@@ -827,14 +828,14 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       },
       {
         title: "Before you go",
-        body: "Check today's avalanche forecast for Trollheimen at varsom.no. Trollheimen is an A region and is forecast every day in season. The glacier between 1364 and 1471 m needs enough snow, and ut.no asks you to check with locals beforehand. Carry a transceiver, probe and shovel.",
+        body: "Check today's avalanche forecast for Trollheimen at varsom.no. Trollheimen is an A region and is forecast every day in season. The glacier between 1364 and 1463 m needs enough snow, and ut.no asks you to check with locals beforehand. Carry a transceiver, probe and shovel.",
       },
     ],
     elevationProfile: {
       startLabel: "495 m",
       endLabel: "1668 m",
       distanceLabel: "10.2 km",
-      caption: "1268 metres of climbing and 10.22 km from Gråhaugen by the plateau east of Midtveggen at 931 m, Svartvatnet at 888 and the flat at 1352, with the glacier from 1364 to 1471 m.",
+      caption: "1268 metres of climbing and 10.22 km from Gråhaugen by the plateau east of Midtveggen at 931 m, Svartvatnet at 888 and the flat at 1352, with the glacier from 1364 to 1463 m.",
     },
   },
   storbekkhoa: {
@@ -873,22 +874,23 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
   },
   okla: {
     intro:
-      "1028 metres of climbing and 5.56 km from Dalen in Storlidalen to Snydda, 1582 m — the high point of the Okla massif, where the cairn and the summit book stand. The steepest hundred-metre band is 20.6 degrees from 1000 to 1100 m, and the steepest step 25.1 degrees between 1522 and 1543. The north side is another matter: 44.7 degrees on average to the north-west.",
+      "1024 metres of climbing and 5.69 km from Dalen in Storlidalen to Snydda, 1582 m — the high point of the Okla massif, where the cairn and the summit book stand. The steepest hundred-metre band is 20.6 degrees from 1000 to 1100 m, and the steepest step 25.3 degrees between 1481 and 1496. The north side is another matter: 44.7 degrees on average to the north-west.",
     ascent: [
       "Start at the car park in Dalen, 599 m — a paid plot tagged for skiing, down by Storlidalsvegen. Fri Flyt describes the same start as «the bridge between Dalsvatnet and Ångårdsvatnet»; the bridge is 300 metres away. It climbs from the first step: 12.3 degrees from 600 to 700 m and 19.8 from 700 to 800, through the birch forest that lets go at 814 m.",
       "On at a gentler angle toward Korgtjønna, 1151 m. The bands measure 16.4 and 15.8 degrees, and the steepest hundred-metre band on the tour sits here: 20.6 degrees from 1000 to 1100 m over 271 metres of ground.",
-      "From Korgtjønna it flattens — 3.2 degrees from 1100 to 1200 m over 1665 metres of ground — and the route turns west. Then you round the crest above Mjølkskåla: the tarn lies at 1277 m, and the line runs 1324 m above it.",
-      "The last climb measures 20.0 degrees from 1400 to 1500 m and 16.9 above that, with a step of 25.1 degrees between 1522 and 1543 m. The top is called Snydda in the place-name register and measures 1582.3 m; ut.no publishes 1580 and Fri Flyt 1564, and the card carries the measurement. The point registered as Okla lies 2.4 km due west, on a bearing of 267, and is 1458.8 m — the mountain is called Okla, but the cairn stands on Snydda.",
+      "Above Korgtjønna it flattens — 3.4 degrees from 1100 to 1200 m over 1710 metres of ground — and the route turns west. The line crosses the tarn itself, 720 metres at 1151 m; that is where ut.no sends you, but it is a lake, and it is to be judged as one.",
+      "Then you round Mjølkskåla. Ut.no puts it precisely — «round the rim with the lake Mjølkskåla below you» — and the line does that: over the shoulder east of the water at 1275 m, on over the rim north of it at 1290, and up to 1324 m before the final climb. The water sits at 1277 m and stays below you.",
+      "The last climb measures 19.7 degrees from 1400 to 1500 m and 16.9 above that, with a step of 25.3 degrees between 1481 and 1496 m. The summit is called Snydda in the place-name register and measures 1582.3 m; ut.no publishes 1580 and Fri Flyt 1564, and the card carries the measurement. The point registered as Okla lies 2.4 km due west, on a bearing of 267, and is 1458.8 m — the mountain is called Okla, but the cairn stands on Snydda.",
     ],
     descent: [
-      "Back down the same way, and the first move off the cairn runs east along the ridge, not down: the first 200 metres bear 73 degrees down to 1522 m, and 500 metres down 72. The car park lies 3.4 km away, on a bearing of 167 degrees.",
+      "Back down the same way, and the first move off the cairn goes east along the ridge, not down: the first 200 metres bear 73 degrees down to 1509 m, and 500 metres down 72. The car park lies 3.4 km away, on a bearing of 167 degrees.",
       "The reason that move matters is the north side. North-west measures 44.7 degrees on average over 400 metres with a 57.1-degree window 200 to 260 metres out, and north 43.6 with 50.9. That is where Fri Flyt's alternative descent toward Gjevilvatnet goes, and they call it «very steep and serious» — it also ends a long way from the car. South-west, along the Okla ridge, measures 3.4 degrees on average: that is the flat summit plateau the descriptions mention, and in flat light the navigation is the problem.",
       "The south side is the one the card carries, and it is not gentle either: south measures 27.4 degrees on average with 34.0 in its steepest window, south-east 33.1 with 39.4. Fri Flyt on the side you climb: «This is a side where a lot of snow collects, so assess the avalanche danger carefully», and on the gully along Sandbekken that it «should only be skied in very stable conditions».",
     ],
     avalanche: [
       {
         title: "The route",
-        body: "1028 metres of climbing where the steepest hundred-metre band is 20.6 degrees from 1000 to 1100 m and the steepest sustained step 25.1 degrees between 1522 and 1543. The route gives back 44 metres. Fri Flyt writes that Okla is not a steep ski tour, and the terrain measurement agrees — it is the amount of snow on the south side, not the angle, that is the problem here.",
+        body: "1024 metres of climbing where the steepest hundred-metre band is 20.6 degrees from 1000 to 1100 m and the steepest sustained step 25.3 degrees between 1481 and 1496. The route gives back 40 metres. Fri Flyt writes that Okla is not a steep ski tour, and the terrain measurement agrees — it is the amount of snow on the south side, not the angle, that is the problem here.",
       },
       {
         title: "The terrain off it",
@@ -902,8 +904,8 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
     elevationProfile: {
       startLabel: "598 m",
       endLabel: "1582 m",
-      distanceLabel: "5.6 km",
-      caption: "1028 metres of climbing and 5.56 km from Dalen by Korgtjønna at 1151 m and the crest above Mjølkskåla at 1324, with the forest letting go at 814 m.",
+      distanceLabel: "5.7 km",
+      caption: "1024 metres of climbing and 5.69 km from Dalen by Korgtjønna at 1151 m and the rim north of Mjølkskåla at 1290, with the forest letting go at 814 m.",
     },
   },
   storhornet: {

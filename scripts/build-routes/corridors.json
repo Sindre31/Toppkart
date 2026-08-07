@@ -3355,7 +3355,7 @@
    {
     "id": "haaen",
     "name": "Fra Håen over Kråklivollen og Rundtjønnin",
-    "description": "Fra parkeringa ved Håen (411 moh) følger du strandlinja på nordsida av vatnet rett østover. Etter knappe tre kilometer kommer du til Kråklivollen (452 moh), der ruta går opp i skogen og bukter seg fram opp Kråklia og vest for Samsjølia. Videre nord–nordøst forbi Rundtjønnin (526 moh), og så følger du rygger eller søkk i samme retning, avhengig av snø og skiføre, til du etter hvert dreier mot nord og nordvest opp mot toppen på 815 moh.",
+    "description": "Fra parkeringa ved Håen (411 moh) følger du skogsbilvegen — Lundadalsvegen fortsetter ubrøytet 2,6 km østover langs nordsida av vatnet — eller strandlinja like ved. Etter knappe tre kilometer kommer du til Kråklivollen (452 moh), der ruta går opp i skogen og bukter seg fram opp Kråklia og vest for Samsjølia. Videre nord–nordøst forbi Rundtjønnin (526 moh), og så følger du rygger eller søkk i samme retning, avhengig av snø og skiføre, til du etter hvert dreier mot nord og nordvest opp mot toppen på 815 moh.",
     "trailhead": {
      "name": "Håen",
      "lat": 63.11658,
@@ -3364,6 +3364,42 @@
      "fullName": "Håen"
     },
     "waypoints": [
+     {
+      "name": "Skogsbilvegen langs nordsida av Håen",
+      "lat": 63.11755,
+      "lng": 10.53545,
+      "elevation_m": 419.4
+     },
+     {
+      "name": "Skogsbilvegen ved Håbekken",
+      "lat": 63.11781,
+      "lng": 10.54446,
+      "elevation_m": 436.7
+     },
+     {
+      "name": "Skogsbilvegen forbi Håbekken",
+      "lat": 63.11763,
+      "lng": 10.54938,
+      "elevation_m": 446.9
+     },
+     {
+      "name": "Skogsbilvegen forbi bukta",
+      "lat": 63.11924,
+      "lng": 10.55988,
+      "elevation_m": 442.7
+     },
+     {
+      "name": "Skogsbilvegen over Samsjøhalsen",
+      "lat": 63.11908,
+      "lng": 10.57335,
+      "elevation_m": 438.3
+     },
+     {
+      "name": "Skogsbilvegen, austre ende",
+      "lat": 63.11703,
+      "lng": 10.57936,
+      "elevation_m": 434.8
+     },
      {
       "name": "Kråklivollen",
       "lat": 63.11635,
@@ -3377,7 +3413,7 @@
       "elevation_m": 526.0
      }
     ],
-    "source": "researched, verified (corrected), no local audit",
+    "source": "researched, verified (corrected), re-routed off Håen",
     "notes": "Ut.no: «Håen er regulert og tappes ned hver vinter, sørg for ikke å komme ut på usikker is når du går langs kanten av vannet.» Og: «Vær obs på høye skavler i le-retningen i perioder det har vært mye vind når du går/kjører på tvers av ryggene i området. Hold avstand fra disse særlig i dårlig lys så du ikke risikerer å falle ned.»"
    }
   ]
@@ -3387,7 +3423,7 @@
    {
     "id": "haaen",
     "name": "Fra Håen over Rundtjønnin og Oksdalen",
-    "description": "Fra parkeringa ved Håen (411 moh) følger du strandlinja på nordsida av vatnet rett østover til Kråklivollen (452 moh) etter knappe tre kilometer. Derfra går ruta opp i skogen og bukter seg fram opp Kråklia og vest for Samsjølia, videre forbi Rundtjønnin (526 moh) og krysser Oksdalen på rundt 532 moh. Så begynner de siste fire kilometerne med stigning: ruta følger terrenget østover og seinere nordøstover og unngår bratta, til den flater ut mot toppen på 941 moh.",
+    "description": "Fra parkeringa ved Håen (411 moh) følger du skogsbilvegen — Lundadalsvegen fortsetter ubrøytet 2,6 km østover langs nordsida av vatnet — eller strandlinja like ved, til Kråklivollen (452 moh) etter knappe tre kilometer. Derfra går ruta opp i skogen og bukter seg fram opp Kråklia og vest for Samsjølia, videre forbi Rundtjønnin (526 moh) og krysser Oksdalen på rundt 532 moh. Så begynner de siste fire kilometerne med stigning: ruta følger terrenget østover og seinere nordøstover og unngår bratta, til den flater ut mot toppen på 941 moh.",
     "trailhead": {
      "name": "Håen",
      "lat": 63.11658,
@@ -3396,6 +3432,42 @@
      "fullName": "Håen"
     },
     "waypoints": [
+     {
+      "name": "Skogsbilvegen langs nordsida av Håen",
+      "lat": 63.11755,
+      "lng": 10.53545,
+      "elevation_m": 419.4
+     },
+     {
+      "name": "Skogsbilvegen ved Håbekken",
+      "lat": 63.11781,
+      "lng": 10.54446,
+      "elevation_m": 436.7
+     },
+     {
+      "name": "Skogsbilvegen forbi Håbekken",
+      "lat": 63.11763,
+      "lng": 10.54938,
+      "elevation_m": 446.9
+     },
+     {
+      "name": "Skogsbilvegen forbi bukta",
+      "lat": 63.11924,
+      "lng": 10.55988,
+      "elevation_m": 442.7
+     },
+     {
+      "name": "Skogsbilvegen over Samsjøhalsen",
+      "lat": 63.11908,
+      "lng": 10.57335,
+      "elevation_m": 438.3
+     },
+     {
+      "name": "Skogsbilvegen, austre ende",
+      "lat": 63.11703,
+      "lng": 10.57936,
+      "elevation_m": 434.8
+     },
      {
       "name": "Kråklivollen",
       "lat": 63.11635,
@@ -3415,7 +3487,7 @@
       "elevation_m": 532.0
      }
     ],
-    "source": "researched, verified (ok), no local audit",
+    "source": "researched, verified (corrected), re-routed off Håen",
     "notes": "Ut.no: «Håen er regulert og tappes ned hver vinter, sørg for ikke å komme ut på usikker is når du går langs kanten av vannet.» Videre: «Det finnes bratte enkeltheng som er høye nok til at det kan gå skred, men de er mulige å unngå», og «det dannes skavler i området, hold avstand fra disse særlig i dårlig lys så du ikke risikerer å falle ned»."
    }
   ]
@@ -3509,6 +3581,18 @@
       "lat": 62.68181,
       "lng": 9.29701,
       "elevation_m": 1151.0
+     },
+     {
+      "name": "Skuldra aust for Mjølkskåla",
+      "lat": 62.688,
+      "lng": 9.285,
+      "elevation_m": 1275.2
+     },
+     {
+      "name": "Eggen nord for Mjølkskåla",
+      "lat": 62.6888,
+      "lng": 9.278,
+      "elevation_m": 1289.7
      },
      {
       "name": "Eggen over Mjølkskåla",
