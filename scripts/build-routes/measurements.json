@@ -610,5 +610,12 @@
    "figure": "Den fyrste routa linja gjekk på isen: 375 m av vertexane målte 1373,0 moh (terrengklasse Innsjø, tjørna Silja) og 136 m målte 1356,0 moh med terrengklasse InnsjøRegulert — Prestesteinsvatnet, OSM relation/4037643, water=reservoir. Guiden sa samstundes «Hold land langs vestsida — ikke skjær over isen». Seks vegpunkt på fast mark langs vestsida rettar det: 61.5470/7.8920 (1389,6), 61.5458/7.8940 (1384,0), 61.5458/7.8970 (1384,5), 61.5455/7.9020 (1386,3), 61.5455/7.9080 (1376,7) og 61.5448/7.9110 (1362,7). Dei tre fyrste trør mellom to tjørner på 1384 og 1381 moh. Den nye linja har ingen vertex på vatn. Lengda gjekk 6,03 → 6,70 km, stigninga 763 → 783 m og tapet 89 → 113 m: land bølgjer, is gjer det ikkje. Brattaste 30-metersvindauge gjekk 42,7 → 27,1 grader (1859–1882 moh) då heile linja blei løyst på nytt, og brattaste hundremetersband 19,7 → 19,8 grader (1800–1900, 317 m grunn).",
    "how": "DTM1-terrengklasse på kvar vertex i routes.json, Overpass-uttrekk av natural=water rundt kryssingane, og generate_routes.py + resample_dtm1.py på nytt for fanaraken."
   }
+ ],
+ "folarskardnuten": [
+  {
+   "what": "Vatna linja kryssar",
+   "figure": "Fire kryssingar, 495 m av 12 610. Tjørngravtjørni på 1098 moh to gonger — 135 m frå 746 m ut, maks 48 m frå land, og 45 m frå 971 m ut, maks 8 m — eit unamngjeve tjern på 1230 moh, 45 m frå 6101 m ut, maks 16 m, og tjørna ved Lordehytta på 1603 moh, 270 m frå 10 736 m ut, maks 84 m. Alle fire er naturlege (terrengklasse Innsjø, ikkje InnsjøRegulert). Berre den siste er nemnd i guiden frå før, og då som «vatn under snøen» — dei tre andre ligg på innmarsjen langs den kvista DNT-vinterruta. Namnet er henta frå SSR sitt punktsøk: Tjørngravtjørni, navneobjekttype Tjern, 206 m frå fyrste kryssinga.",
+   "how": "DTM1-terrengklasse på kvar vertex i routes.json, Overpass natural=water rundt kvar kryssing, og ws.geonorge.no/stedsnavn/v1/punkt for namnet."
+  }
  ]
 }

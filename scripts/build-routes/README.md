@@ -1485,8 +1485,17 @@ While there, one audit note was corrected: the research recorded «Urdstjerna
 finnes ikke i registeret». It does, as Nedre Urdstjerna and Midtre Urdstjerna —
 the name search had looked for the bare form.
 
+**Folarskardnuten was the fourth, and the same call as Styggemann.** Four
+crossings, 495 of 12 610 metres: Tjørngravtjørni at 1098 m twice (135 and 45 m),
+an unnamed tarn at 1230 m for 45, and the tarn by Lordehytta at 1603 m for 270.
+The last one the guide already handled well — it names the height and calls it
+«vatn under snøen» — but it did not say the line crosses it, and the three on the
+approach were not mentioned at all. All four are natural, none goes more than
+84 m from shore, and they sit on the marked DNT winter route. Prose again, no
+geometry.
+
 **The rest of the list, for whoever takes it next.** No crossing on a regulated
-lake remains, and 14 findings across 12 tours are left:
+lake remains, and 11 findings across 10 tours are left:
 Folarskardnuten (three), Breitinden (295 m at 474 m, 34 m offshore), Juklavasstinden
 (225 m), Rasletinden (two), Rondslottet, Glittertinden, Høgevarde on both routes,
 Store Ble, Surløytenuten and Vassdalstinden. Every one of them is a line standing

@@ -197,7 +197,8 @@ content and data quality that has to be settled before the site is sold to anyon
   more. Styggemann was the third and the first the prose fixed rather than the router: five
   natural waters, 1541 of 9608 metres, none of them named in the guide and none regulated — a
   groomed track over a narrow forest lake is ordinary winter travel, so the missing sentence was
-  the defect. The remaining fourteen are a work list in
+  the defect, and Folarskardnuten the fourth on the same reasoning — four crossings, 495 of
+  12 610 metres, on the marked DNT winter route. The remaining eleven are a work list in
   `scripts/build-routes/check_ground_run.txt`.
 - **The guide text has not been read by anyone who has skied these tours.** Every number in
   `lib/guides.ts` traces to Kartverket's terrain model, the route research or a cited source, and
