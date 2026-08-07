@@ -1202,8 +1202,78 @@ doing the measuring before the writing rather than after: Vassfjellet's ski cent
 as «vest-sørvest» when the bearing is 267, and Oksdalen's register point given as
 4.2 km from the crossing when it is 3.95. What has *not* happened is an
 independent adversarial read: the same pass that wrote these guides is the one
-that checked them. That is the gap to close first, and the method is the one in
+that checked them. That gap is closed below in "The seven, read adversarially",
+by a later pass whose only job was to break them; the method is the one in
 "The 22, read adversarially" above.
+
+### The seven, read adversarially
+
+The section above ends by naming the gap: the pass that wrote these seven guides
+was the pass that checked them. This is the independent read that closes it, and
+it is the round where the method paid for itself most bluntly — three of the seven
+had a **line that went somewhere the copy said it did not**.
+
+**Kråkfjellet and Rensfjellet crossed Håen.** Both guides said «følg strandlinja
+på nordsida av vatnet», and the corridor record claimed in as many words that the
+line was «lagt langs nordbredden av Håen ... ikke over vatnet». It was not. On
+both tours about 1.9 km of vertices read exactly 433.0 m with terrain class
+`InnsjøRegulert`, up to 251 m from the mapped north shore. Håen is a reservoir
+that is drawn down every winter, and unsafe ice on it is the single hazard ut.no
+names for both tours — so the map was taking a paying reader onto the one thing
+the guide told them to stay off.
+
+The fix was in the source all along. Ut.no's own line for Kråkfjellet is
+«skogsbilveien **eller** strandlinja N på Håen rett Ø», and that forest road is
+real and mapped: OSM way/617153815, `Lundadalsvegen`, `toll=yes`, running 2.6 km
+east from the car park along the north side, 410.5 m at the parking to 434.8 m at
+its eastern end 290 m short of Kråklivollen. Six waypoints on that road pin both
+corridors onto land. Kråkfjellet now has **no vertex on the water at all** and
+Rensfjellet 35 m of shoreline brush. The figures moved with the line, and moved
+*toward* the source: Kråkfjellet 430 → 470 m of gain over 9.3 → 9.6 km against
+ut.no's 519, Rensfjellet 670 → 700 m over 11.0 → 11.3 km against ut.no's «ca 650».
+
+**Okla crossed Mjølkskåla.** Ut.no could not be plainer — «rund eggen med vatnet
+Mjølkskåla under deg» — and the guide quoted the rim at 1324 m as the line's own
+height. The line ran 495 m at 1277.0 m, `Innsjø`, straight across the lake. Two
+waypoints on firm ground put it back on the rim: the shoulder east of the water
+at 62.6880/9.2850 (1275.2 m) and the rim north of it at 62.6888/9.2780
+(1289.7 m). Gain 1028 → 1024 m, distance 5.56 → 5.69 km, and the lake is below
+the line the whole way. Korgtjønna at 1151 m the line still crosses, for 720 m —
+that is where ut.no sends you, and the guide now says so instead of implying dry
+ground.
+
+**Kråkfjellet's road claim was wrong in the other direction too.** «Der
+Lundadalsvegen ender» — the road does not end at the car park; the *ploughing*
+does, and the road beyond it is the skogsbilveg the route follows. Corrected in
+both languages.
+
+**Snota's glacier was measured at the wrong resolution.** The guide said seven
+points classed as glacier terrain between 1364 and 1471 m over 436 m. Re-querying
+the terrain class on *every* vertex rather than every third gives eleven points
+from 1364 to 1463 m over 404 m, with two bare vertices at 1414 and 1421 m in the
+middle where the ice is broken — and 1471 m is open ground, not glacier. The
+sampled figure was the sampling, not the glacier. Ut.no's «frå ca 1380 moh ... i
+ca 500 m» still brackets it.
+
+**Vassfjellet's distance gap was undisclosed.** The routed 4.74 km against
+ut.no's 6.7 km is the marked track winding where the line does not; the vertical
+agrees to 15 m. Every other tour in the round discloses its gap against the
+published figures, and this one now does too.
+
+**What was confirmed clean.** Every summit height was re-queried from DTM1 at the
+card's own coordinate and all seven land within 0.15 m of the stored value —
+Vassfjellet 710.89, Kråkfjellet 814.89, Rensfjellet 941.55, Snota 1667.99,
+Storbekkhøa 1504.26, Snydda 1582.17, Storhornet 1588.98. So did every trailhead,
+waypoint and named elevation quoted in the prose: 27 points, none off by more than
+0.13 m. Every car park was re-fetched from OSM and every tag the guides lean on is
+there — `fee=yes` and `payment:cash=30` at Storli, `capacity=10` at Bree, no fee
+tag at Markavollen (where the guide correctly credits the charge to ut.no rather
+than to OSM). Every Varsom region was re-queried by coordinate: Vassfjellet,
+Kråkfjellet and Rensfjellet are Sør-Trøndelag, type **B**; Snota, Storbekkhøa,
+Okla and Storhornet are Trollheimen, type **A** — exactly what the ten guides
+claim. Vassfjellet's mast is 131 m from the cairn at 709.4 m and the ski centre
+1.30 km out on bearing 86, both as written; Storhornet's 725 m vertex really is
+`DyrketMark`. Storbekkhøa and Storhornet needed no change at all.
 
 ## Network
 

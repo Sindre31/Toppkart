@@ -2853,13 +2853,15 @@
    "Rundtjønnin er kontrollmålet på at korridoren følger den beskrevne løypa: ut.no oppgir «Rundtjønnin 525 moh», DTM1 leser 526,0. Kråklivollen måler 452,0.",
    "Ruta er lagt langs nordbredden av Håen slik beskrivelsen sier, ikke over vatnet. Håen er regulert og tappes ned hver vinter, og ut.no advarer eksplisitt mot usikker is langs kanten.",
    "Den routede linja stiger 430 høydemeter mot ut.nos oppgitte 519, og gir tilbake 26 mot deres «ca 140». Forskjellen er reell og ligger i linjevalget: beskrivelsen sier «følg rygg eller søkk i samme retning avhengig av snøen og skiføret», og ryggene her går nord–sør, så en linje som krysser dem samler opp og ned som en linje langs dem ikke gjør. Kortet fører den routede stigninga, som er den linja appen tegner.",
-   "Flankesveipet finner ingen bratt side på dette fjellet: brattaste 60-metersvindu i noen retning er 21,8 grader mot aust, og nord måler 2,0 grader i snitt. Skavlene ut.no advarer mot er et fallproblem i dårlig lys, ikke et skredproblem, og guiden skal si det slik."
+   "Flankesveipet finner ingen bratt side på dette fjellet: brattaste 60-metersvindu i noen retning er 21,8 grader mot aust, og nord måler 2,0 grader i snitt. Skavlene ut.no advarer mot er et fallproblem i dårlig lys, ikke et skredproblem, og guiden skal si det slik.",
+   "Ruta låg ikkje der korridoren sa. Den fyrste versjonen av denne linja gjekk ut på Håen: 1,9 km av vertexane målte nøyaktig 433,0 moh med terrengklasse InnsjøRegulert, opp til 251 m frå den kartlagde nordbredda — på eit magasin som blir tappa ned kvar vinter, og som er den eine faren ut.no namngjev. Korridoren er difor pinna til skogsbilvegen ut.no nemner («skogsbilveien eller strandlinja N på Håen rett Ø»), OSM way/617153815, med seks vegpunkt på vegen. Den nye linja har ingen vertex på vassflata. Stigninga gjekk 430 → 470 m og lengda 9,3 → 9,6 km for Kråkfjellet, 670 → 700 m og 11,0 → 11,3 km for Rensfjellet — begge nærare det kjelda oppgjev.",
+   "Setninga «der Lundadalsvegen ender» var feil og er retta. Lundadalsvegen sluttar ikkje ved parkeringa ved Håen: OSM way/617153815 (toll=yes) held fram 2,6 km austover langs nordsida av vatnet. Det er brøytinga som sluttar der, ikkje vegen — og vegen vidare er nettopp skogsbilvegen ut.no sender deg langs."
   ],
   "rejectReason": "",
   "corridor": {
    "routeId": "haaen",
    "routeName": "Fra Håen over Kråklivollen og Rundtjønnin",
-   "routeDescriptionFull": "Fra parkeringa ved Håen (411 moh) følger du strandlinja på nordsida av vatnet rett østover. Etter knappe tre kilometer kommer du til Kråklivollen (452 moh), der ruta går opp i skogen og bukter seg fram opp Kråklia og vest for Samsjølia. Videre nord–nordøst forbi Rundtjønnin (526 moh), og så følger du rygger eller søkk i samme retning, avhengig av snø og skiføre, til du etter hvert dreier mot nord og nordvest opp mot toppen på 815 moh.",
+   "routeDescriptionFull": "Fra parkeringa ved Håen (411 moh) følger du skogsbilvegen — Lundadalsvegen fortsetter ubrøytet 2,6 km østover langs nordsida av vatnet — eller strandlinja like ved. Etter knappe tre kilometer kommer du til Kråklivollen (452 moh), der ruta går opp i skogen og bukter seg fram opp Kråklia og vest for Samsjølia. Videre nord–nordøst forbi Rundtjønnin (526 moh), og så følger du rygger eller søkk i samme retning, avhengig av snø og skiføre, til du etter hvert dreier mot nord og nordvest opp mot toppen på 815 moh.",
    "trailhead": {
     "name": "Håen",
     "lat": 63.11658,
@@ -2901,20 +2903,21 @@
  },
  {
   "slug": "rensfjellet",
-  "verdict": "ok",
+  "verdict": "corrected",
   "corrections": [
    "Toppen måler 941,5 moh på DTM1 mot publiserte 941. Registerpunktet ligger 5 m fra det høyeste punktet.",
    "Rundtjønnin på 525 moh er kontrollmålet: DTM1 leser 526,0 der ut.no oppgir 525. Kråklivollen måler 452,0 og parkeringa 411,1 mot oppgitte 418.",
    "«Krysser Oksdalen» er ikke et navngitt punkt. Oksdalen er registrert som dal med representasjonspunkt 3,95 km frå kryssinga, på peiling 15, og lavlinja i dalen er lest ut av terrengmodellen: den følger lengdegrad 10,660 sørover fra registerpunktet, og på breddegrad 63,136 måler den 532,0 moh. Det er en utledning fra terrengmodellen, ikke et navngitt sted, og det er derfor det står her.",
    "Rensfjellet er grensetopp mellom Melhus, Midtre Gauldal og Selbu, og kommunetopp i Melhus — ikke i Trondheim. Ut.no sier det selv: den «mangler bare 2,1 km mot N-NV på å inkludere også Trondheim i den klubben». Kråkfjellet er Trondheims topp, og de to ligger 4 km fra hverandre med samme parkering.",
    "Den routede linja gir tilbake 143 høydemeter av 674 den stiger — ut.no oppgir «tapte hm opp: ca 130». Det er det samme terrenget: rygger og søkk mellom Håen og toppen som ruta må over.",
-   "Flankesveipet finner heller ikke her noen bratt side: brattaste 60-metersvindu er 17,8 grader mot aust, og søraust måler 3,4 grader i snitt. Ut.nos «bratte enkeltheng som er høye nok til at det kan gå skred» ligger utenfor de 400 metrene sveipet dekker, og guiden skal ikke plassere dem ved varden."
+   "Flankesveipet finner heller ikke her noen bratt side: brattaste 60-metersvindu er 17,8 grader mot aust, og søraust måler 3,4 grader i snitt. Ut.nos «bratte enkeltheng som er høye nok til at det kan gå skred» ligger utenfor de 400 metrene sveipet dekker, og guiden skal ikke plassere dem ved varden.",
+   "Ruta låg ikkje der korridoren sa. Den fyrste versjonen av denne linja gjekk ut på Håen: 1,9 km av vertexane målte nøyaktig 433,0 moh med terrengklasse InnsjøRegulert, opp til 251 m frå den kartlagde nordbredda — på eit magasin som blir tappa ned kvar vinter, og som er den eine faren ut.no namngjev. Korridoren er difor pinna til skogsbilvegen ut.no nemner («skogsbilveien eller strandlinja N på Håen rett Ø»), OSM way/617153815, med seks vegpunkt på vegen. Den nye linja har ingen vertex på vassflata. Stigninga gjekk 430 → 470 m og lengda 9,3 → 9,6 km for Kråkfjellet, 670 → 700 m og 11,0 → 11,3 km for Rensfjellet — begge nærare det kjelda oppgjev."
   ],
   "rejectReason": "",
   "corridor": {
    "routeId": "haaen",
    "routeName": "Fra Håen over Rundtjønnin og Oksdalen",
-   "routeDescriptionFull": "Fra parkeringa ved Håen (411 moh) følger du strandlinja på nordsida av vatnet rett østover til Kråklivollen (452 moh) etter knappe tre kilometer. Derfra går ruta opp i skogen og bukter seg fram opp Kråklia og vest for Samsjølia, videre forbi Rundtjønnin (526 moh) og krysser Oksdalen på rundt 532 moh. Så begynner de siste fire kilometerne med stigning: ruta følger terrenget østover og seinere nordøstover og unngår bratta, til den flater ut mot toppen på 941 moh.",
+   "routeDescriptionFull": "Fra parkeringa ved Håen (411 moh) følger du skogsbilvegen — Lundadalsvegen fortsetter ubrøytet 2,6 km østover langs nordsida av vatnet — eller strandlinja like ved, til Kråklivollen (452 moh) etter knappe tre kilometer. Derfra går ruta opp i skogen og bukter seg fram opp Kråklia og vest for Samsjølia, videre forbi Rundtjønnin (526 moh) og krysser Oksdalen på rundt 532 moh. Så begynner de siste fire kilometerne med stigning: ruta følger terrenget østover og seinere nordøstover og unngår bratta, til den flater ut mot toppen på 941 moh.",
    "trailhead": {
     "name": "Håen",
     "lat": 63.11658,
@@ -3080,7 +3083,8 @@
    "Startstedet er det samme i begge kildene, beskrevet på to måter: ut.no «parkeringen på høyre side ved garasjen nede ved Storlidalsveien» i Dalen, Fri Flyt «parkér ved brua mellom Dalsvatnet og Ångårdsvatnet». OSM way/233265746 (amenity=parking, name=Dalen, fee=yes, ski=yes) ligger 300 m fra brua Dalsbrua på fv6514, og måler 598,5 moh.",
    "Waypointet «eggen over Mjølkskåla» er flyttet opp fra vatnet. Første utkast la det på 62.686/9.272, som DTM1 svarer 1277,0 moh og terrengklasse Innsjø på — det er selve Mjølkskåla. Ruta går over eggen med vatnet under seg, og punktet ligger nå 210 m nord for vatnet på 1324,2 moh.",
    "Flankesveipet bekrefter at den alternative nedkjøringa mot Gjevilvatnet er det Fri Flyt kaller den, «svært bratt og seriøst»: nordvest måler 44,7 grader i snitt over 400 m med et 57,1-graders vindu 200–260 m ut, og nord 43,6 med 50,9. Sørvest, langs Okla-ryggen, måler 3,4 grader — det er den flate toppen beskrivelsene omtaler. Sør og søraust, der ruta kommer opp, måler 27,4 og 33,1.",
-   "Kortet fører nedkjøringsaspektet som S etter kildene — Fri Flyt beskriver hele sørsida og Sandbekken som nedkjøringa — mens route_metrics måler ruta til SØ. De to er ett kompasstrinn fra hverandre og beskriver hver sin ting: retninga linja peker øverst, og flanken du kjører ned."
+   "Kortet fører nedkjøringsaspektet som S etter kildene — Fri Flyt beskriver hele sørsida og Sandbekken som nedkjøringa — mens route_metrics måler ruta til SØ. De to er ett kompasstrinn fra hverandre og beskriver hver sin ting: retninga linja peker øverst, og flanken du kjører ned.",
+   "Linja gjekk over Mjølkskåla, ikkje over eggen. Fyrste versjonen av den routa linja hadde 495 m vertexar på 1277,0 moh med terrengklasse Innsjø — altså tvers over vatnet — medan både ut.no og guideteksten seier «rund eggen med vatnet Mjølkskåla under deg». To vegpunkt er lagde inn på fast mark på kanten, skuldra aust for vatnet (62.6880/9.2850, 1275,2 moh) og eggen nord for det (62.6888/9.2780, 1289,7 moh). Den nye linja har ingen vertex på Mjølkskåla. Stigninga gjekk 1028 → 1024 m og lengda 5,56 → 5,69 km. Korgtjønna (1151 moh) kryssar linja framleis, og det er det vatnet ut.no sender deg til; guiden seier no at linja går over det."
   ],
   "rejectReason": "",
   "corridor": {
