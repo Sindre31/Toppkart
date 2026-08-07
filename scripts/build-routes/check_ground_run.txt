@@ -73,7 +73,7 @@ storgalten / normalruta                 0      0
 storhornet / bree                       0      0  
 stornappstinden / normalruta            0      0  
 storronden / normalruta                 0      0  
-styggemann / ravalsjo                   4      0  note: 540 m on water at 475 m, offshore distance unknown (no water polygon returned) — the guide names that height, which is not the same as saying it crosses it; 191 m on water at 575 m, offshore distance unknown (no water polygon returned) — and the guide never names that height; 270 m on water at 575 m, offshore distance unknown (no water polygon returned) — and the guide never names that height; 225 m on water at 594 m, offshore distance unknown (no water polygon returned) — and the guide never names that height; 90 m on water at 602 m, offshore distance unknown (no water polygon returned) — and the guide never names that height; note: says «oppkjørte» — UNCHECKED, Overpass would not answer
+styggemann / ravalsjo                   0      0  note: 540 m on water at 475 m, offshore distance unknown (no water polygon returned) — the guide names that height, which is not the same as saying it crosses it; note: 191 m on water at 575 m, offshore distance unknown (no water polygon returned) — the guide names that height, which is not the same as saying it crosses it; note: 270 m on water at 575 m, offshore distance unknown (no water polygon returned) — the guide names that height, which is not the same as saying it crosses it; note: 225 m on water at 594 m, offshore distance unknown (no water polygon returned) — the guide names that height, which is not the same as saying it crosses it; note: 90 m on water at 602 m, offshore distance unknown (no water polygon returned) — the guide names that height, which is not the same as saying it crosses it; note: says «oppkjørte» — UNCHECKED, Overpass would not answer
 sunndalsnipa / normalruta               0      0  
 surloytenuten / sudstul                 1      0  45 m on water at 1068 m, offshore distance unknown (no water polygon returned) — and the guide never names that height
 synshorn / normalruta                   0      0  
@@ -85,7 +85,7 @@ vassfjellet / markavollen               0      0  note: says «skiløypene» —
 vesoldo / normalruta                    0      0  
 ytstevasshornet / normalruta            0      0  
 
-75 tours, 84 routes — 18 need a look
+75 tours, 84 routes — 14 need a look
   - breitinden/normalruta: 295 m on water at 474 m, up to 34 m from the mapped shore — and the guide never names that height
   - folarskardnuten/normalruta: 135 m on water at 1098 m, offshore distance unknown (no water polygon returned) — and the guide never names that height
   - folarskardnuten/normalruta: 45 m on water at 1098 m, offshore distance unknown (no water polygon returned) — and the guide never names that height
@@ -98,9 +98,5 @@ ytstevasshornet / normalruta            0      0
   - rasletinden/normalruta: 170 m on water at 1377 m, offshore distance unknown (no water polygon returned) — and the guide never names that height
   - rondslottet/normalruta: 90 m on water at 1167 m, offshore distance unknown (no water polygon returned) — and the guide never names that height
   - store-ble/sigridsbu: 45 m on water at 1177 m, offshore distance unknown (no water polygon returned) — and the guide never names that height
-  - styggemann/ravalsjo: 191 m on water at 575 m, offshore distance unknown (no water polygon returned) — and the guide never names that height
-  - styggemann/ravalsjo: 270 m on water at 575 m, offshore distance unknown (no water polygon returned) — and the guide never names that height
-  - styggemann/ravalsjo: 225 m on water at 594 m, offshore distance unknown (no water polygon returned) — and the guide never names that height
-  - styggemann/ravalsjo: 90 m on water at 602 m, offshore distance unknown (no water polygon returned) — and the guide never names that height
   - surloytenuten/sudstul: 45 m on water at 1068 m, offshore distance unknown (no water polygon returned) — and the guide never names that height
   - vassdalstinden/normalruta: 52 m on water at 946 m, offshore distance unknown (no water polygon returned) — and the guide never names that height
