@@ -194,7 +194,11 @@ content and data quality that has to be settled before the site is sold to anyon
   reservoir whose dam the guide's own next sentence names. It now runs on firm ground the whole way.
   Ytstevasshornet was the second fix and the same shape — «flate langs vatnet» in the prose, 180 m
   out on Svartevatnet's reservoir ice in the geometry — so no line stands on a regulated lake any
-  more. The remaining eighteen are a work list in `scripts/build-routes/check_ground_run.txt`.
+  more. Styggemann was the third and the first the prose fixed rather than the router: five
+  natural waters, 1541 of 9608 metres, none of them named in the guide and none regulated — a
+  groomed track over a narrow forest lake is ordinary winter travel, so the missing sentence was
+  the defect. The remaining fourteen are a work list in
+  `scripts/build-routes/check_ground_run.txt`.
 - **The guide text has not been read by anyone who has skied these tours.** Every number in
   `lib/guides.ts` traces to Kartverket's terrain model, the route research or a cited source, and
   every number is matched mechanically by `check_guides.py` — which reads nynorsk verticals as well

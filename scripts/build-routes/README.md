@@ -1467,8 +1467,26 @@ height the ice does not. Re-solving moved the steepest 30 m window 25.3 → 26.9
 (795–818 m), the steepest band 21.2 → 22.5° and the treeline 663 → 624 m, all of
 which the prose carried.
 
+**Styggemann was the third, and the first one the prose fixed rather than the
+router.** Its line crosses five natural waters — Ravalsjø at 475 m for 630 m past
+the islet Kjelen, Skrimsvannet at 575 m twice (191 and 270 m), Urdstjerna at
+594 m for 225 and Stulstjernet at 602 m for 225 — 1541 of 9608 metres, and the
+guide named none of them. None is regulated, none goes more than 99 m from
+shore, and DNT's own winter chain from Ravalsjø runs through the same ground: a
+groomed track over a narrow forest lake is ordinary winter travel, and routing
+it off ice the track itself uses would have made the line worse. So the fix is
+the sentence that was missing, not the geometry. The check also caught the
+crossing *this* reader had missed — the 630 m over Ravalsjø, which the first
+pass filed as a note because the guide names 476 m for Ormetangen, one metre
+from the water's 475. That is the documented limit of the mention test doing
+exactly what it says on the tin.
+
+While there, one audit note was corrected: the research recorded «Urdstjerna
+finnes ikke i registeret». It does, as Nedre Urdstjerna and Midtre Urdstjerna —
+the name search had looked for the bare form.
+
 **The rest of the list, for whoever takes it next.** No crossing on a regulated
-lake remains. Then Styggemann (four crossings totalling 776 m),
+lake remains, and 14 findings across 12 tours are left:
 Folarskardnuten (three), Breitinden (295 m at 474 m, 34 m offshore), Juklavasstinden
 (225 m), Rasletinden (two), Rondslottet, Glittertinden, Høgevarde on both routes,
 Store Ble, Surløytenuten and Vassdalstinden. Every one of them is a line standing

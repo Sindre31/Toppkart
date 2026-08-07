@@ -242,6 +242,16 @@
    "what": "Kvar det brattaste 30-metersvindauget på den routede linja ligg",
    "figure": "23,2° mellom 700 og 719 moh, på peiling 155 frå toppen og 0,52 km ut, altså 520 m langs bakken",
    "how": "router.steepest_span over routes.json-linja, og peiling/haversine frå toppkoordinaten i summits.json til det fyrste punktet i vindauget."
+  },
+  {
+   "what": "Vatna linja kryssar",
+   "figure": "Fem kryssingar, 1541 m av 9608. Ravalsjø på 475 moh er den lengste: 630 m frå 679 m ut, maks 99 m frå strandlinje eller holme — linja går forbi holmen Kjelen (SSR, Øy) og Skrimsøya. Så Skrimsvannet på 575 moh to gonger, 191 m frå 3558 m ut (maks 39 m frå land) og 270 m frå 4008 m ut (maks 75 m), Urdstjerna på 594 moh, 225 m frå 4773 m ut (maks 58 m), og Stulstjernet på 602 moh, 225 m frå 6889 m ut (maks 75 m). Alle fem er naturlege vatn — terrengklasse Innsjø, ikkje InnsjøRegulert — og ingen kryssing går meir enn 99 m frå land. Namna er henta frå SSR sitt punktsøk.",
+   "how": "DTM1-terrengklasse på kvar vertex i routes.json, Overpass natural=water rundt kvar kryssing, og ws.geonorge.no/stedsnavn/v1/punkt for namna."
+  },
+  {
+   "what": "Urdstjerna finst i registeret likevel",
+   "figure": "Korridor-notatet seier «Urdstjerna finnes ikke i registeret og er utelatt fra waypointene». Det stemmer ikkje: SSR har Nedre Urdstjerna og Midtre Urdstjerna, begge navneobjekttype Tjern, innanfor 400 m av det punktet linja kryssar på 594 moh. Namnesøket leita truleg på «Urdstjerna» aleine og fann ikkje Nedre/Midtre-variantane.",
+   "how": "ws.geonorge.no/stedsnavn/v1/punkt med radius 400 m på 59.50470/9.60903."
   }
  ],
  "rana": [
