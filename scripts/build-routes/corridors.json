@@ -3497,7 +3497,7 @@
    {
     "id": "bree",
     "name": "Fra Bree gjennom Hornlia",
-    "description": "Fra den avgiftsbelagte parkeringa ved gården Bree (653 moh) følger du den merkede vinterløypa som er hogd ut gjennom skogen og svinger seg opp gjennom hyttefeltet i Hornlia (847 moh). Over tregrensa fortsetter løypa i jevn stigning mot nordvest, over høyfjellet og opp til steinbua på toppen av Storhornet, 1589 moh. Retur samme veg — Fri Flyt kaller det den sikreste nedkjøringa.",
+    "description": "Fra den avgiftsbelagte parkeringa ved gården Bree (653 moh) følger du den merkede vinterløypa som er hogd ut gjennom skogen og svinger seg opp gjennom hyttefeltet i Hornlia. Over tregrensa fortsetter løypa i jevn stigning mot nordvest, over høyfjellet og opp til steinbua på toppen av Storhornet, 1589 moh. Retur samme veg — Fri Flyt kaller det den sikreste nedkjøringa.",
     "trailhead": {
      "name": "Bree",
      "lat": 62.61829,
@@ -3507,19 +3507,43 @@
     },
     "waypoints": [
      {
-      "name": "Hornlia",
-      "lat": 62.63835,
-      "lng": 9.46726,
-      "elevation_m": 846.8
+      "name": "Vinterløypa over Breeslia",
+      "lat": 62.62248,
+      "lng": 9.4577,
+      "elevation_m": 755.7
      },
      {
-      "name": "Over tregrensa, ca 1070 moh",
-      "lat": 62.636,
-      "lng": 9.438,
-      "elevation_m": 1072.3
+      "name": "Vinterløypa gjennom hyttefeltet i Hornlia",
+      "lat": 62.6283,
+      "lng": 9.44938,
+      "elevation_m": 914.0
+     },
+     {
+      "name": "Vinterløypa over tregrensa",
+      "lat": 62.6317,
+      "lng": 9.43918,
+      "elevation_m": 1040.4
+     },
+     {
+      "name": "Vinterløypa på høgfjellet",
+      "lat": 62.63353,
+      "lng": 9.42575,
+      "elevation_m": 1166.6
+     },
+     {
+      "name": "Vinterløypa mot nordvest",
+      "lat": 62.63761,
+      "lng": 9.41889,
+      "elevation_m": 1292.0
+     },
+     {
+      "name": "Vinterløypa under toppen",
+      "lat": 62.64189,
+      "lng": 9.40859,
+      "elevation_m": 1409.7
      }
     ],
-    "source": "researched, verified (ok), no local audit",
+    "source": "researched, verified (ok), re-pinned to the mapped skitour route",
     "notes": "Fri Flyt fører ett faremoment: «Hvis du velger å oppsøke det bratte terrenget rundt Omnråa sør for toppen må du ta hensyn til både eksponert terreng og skredfare.» Selve løypa ligger utenfor dette. Toppen er værhard; steinbua fra 1946 står der som krypinn."
    }
   ]
