@@ -910,12 +910,12 @@ export const GUIDES: Record<string, TourGuide> = {
   ytstevasshornet: {
     slug: "ytstevasshornet",
     intro:
-      "835 høgdemeter på 3,87 km frå Svartevatnet, bratt opp Vassdalen til vatna på 976 moh og så nordvest mot ein smal topprygg. Brattaste samanhengande parti måler 25,3 grader, og dei siste metrane blir gjerne gått utan ski.",
+      "833 høgdemeter på 3,93 km frå Svartevatnet, bratt opp Vassdalen til vatna på 976 moh og så nordvest mot ein smal topprygg. Brattaste samanhengande parti måler 26,9 grader, og dei siste metrane blir gjerne gått utan ski.",
     ascent: [
-      "Start på parkeringa ved Svartevatnet, 538 moh, ved hovudvegen mellom Sykkylven og Stranda. Dei fyrste 769 metrane grunn er flate langs vatnet — 4,9 grader — før dalen tek til.",
-      "Gå vestover, på venstre side av elva, opp Vassdalen. Her er den bratte delen av turen: 18,3 grader frå 600 til 700 moh, 21,2 frå 700 til 800 og 19,2 frå 800 til 900, med brattaste samanhengande parti på 25,3 grader mellom 785 og 813 moh. Skogen held til 663 moh.",
-      "Ved dei små fjellvatna på 976 moh flatar det ut igjen — bandet frå 900 til 1000 moh måler 6,3 grader over 855 meter grunn. Det er her du ser resten av ruta, og det er òg den naturlege staden å snu om vinden har bygd skavl på ryggen over.",
-      "Derfrå held du nordvestover mot toppryggen: 16,3 grader frå 1000 til 1100 moh og 19,7 frå 1100 til 1200. Dei siste metrane opp til 1331 moh blir gjerne gått utan ski.",
+      "Start på parkeringa ved Svartevatnet, 538 moh, ved hovudvegen mellom Sykkylven og Stranda. Dei fyrste 858 metrane grunn er flate — 4,3 grader — og dei går langs austbredden, ikkje over vatnet. Svartevatnet er eit magasin: vassflata måler 526 moh, tolv meter under parkeringa, og linja held land heile vegen rundt nordenden og ned til sørenden på 524.",
+      "Gå vestover, på venstre side av elva, opp Vassdalen. Her er den bratte delen av turen: 18,3 grader frå 600 til 700 moh, 22,5 frå 700 til 800 over berre 270 meter grunn, og 20,0 frå 800 til 900, med brattaste samanhengande parti på 26,9 grader mellom 795 og 818 moh. Skogen held til 624 moh, og frå 706 er du i ope terreng.",
+      "Ved dei små fjellvatna på 976 moh flatar det ut igjen — bandet frå 900 til 1000 moh måler 6,5 grader over 945 meter grunn. Det er her du ser resten av ruta, og det er òg den naturlege staden å snu om vinden har bygd skavl på ryggen over.",
+      "Derfrå held du nordvestover mot toppryggen: 19,0 grader frå 1000 til 1100 moh og 18,9 frå 1100 til 1200. Dei siste metrane opp til 1331 moh blir gjerne gått utan ski.",
     ],
     descent: [
       "Ned same vegen, austover gjennom Vassdalen til Svartevatnet. Fallretninga er aust, og Vassdalen er både det brattaste og det mest skredutsette på turen.",
@@ -924,7 +924,7 @@ export const GUIDES: Record<string, TourGuide> = {
     avalanche: [
       {
         title: "Ruta",
-        body: "Flat start, bratt midtdel og eit flatt parti før toppryggen: brattaste hundremeteren, 700 til 800 moh, måler 21,2 grader, og brattaste samanhengande parti 25,3 grader mellom 785 og 813 moh. Vassdalen er skredterreng frå 600 moh og opp.",
+        body: "Flat start, bratt midtdel og eit flatt parti før toppryggen: brattaste hundremeteren, 700 til 800 moh, måler 22,5 grader over 270 meter grunn, og brattaste samanhengande parti 26,9 grader mellom 795 og 818 moh. Vassdalen er skredterreng frå 600 moh og opp. Nede ved starten er faren ei anna: isen på eit magasin, og ruta er lagd på land utanom han.",
       },
       {
         title: "Terrenget rundt",
@@ -936,11 +936,11 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,197 L21,199 L49,200 L77,198 L93,192 L119,182 L137,174 L154,166 L168,159 L182,151 L196,144 L210,135 L227,126 L245,116 L259,110 L280,103 L302,100 L322,98 L336,102 L357,102 L378,95 L399,88 L417,81 L427,77 L448,64 L462,56 L483,47 L510,41 L531,36 L552,30 L573,23 L600,18",
+      path: "M0,197 L21,198 L42,198 L62,199 L76,200 L98,195 L124,185 L145,177 L158,169 L179,159 L200,146 L209,141 L227,131 L241,123 L261,112 L282,105 L310,100 L323,100 L344,103 L365,102 L385,94 L400,91 L420,80 L440,70 L454,62 L468,54 L482,48 L509,41 L536,34 L557,28 L578,21 L600,18",
       startLabel: "538 moh",
       endLabel: "1331 moh",
       distanceLabel: "3,9 km",
-      caption: "835 høgdemeter og 3,87 km frå Svartevatnet opp Vassdalen, med skoggrensa på 663 moh og vatna på 976 moh som det flate midtpunktet.",
+      caption: "833 høgdemeter og 3,93 km frå Svartevatnet langs austbredden og opp Vassdalen til vatna på 976 moh, med skogen som slepper taket på 624.",
     },
   },
   rana: {

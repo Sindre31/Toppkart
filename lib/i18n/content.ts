@@ -123,7 +123,7 @@ export const TOUR_TEASER_EN: Record<string, string> = {
   auskjeret:
     "870 m of ascent from Fausaskiftet in even climbing northward — a road open all year and moderate angles.",
   ytstevasshornet:
-    "840 m of ascent from Svartevatnet: steeply up Vassdalen to the tarns at 950 m, then north-west onto a narrow, corniced summit ridge.",
+    "830 m of ascent from Svartevatnet: steeply up Vassdalen to the tarns at 950 m, then north-west onto a narrow, corniced summit ridge.",
   rana:
     "1600 m of ascent from Urkegjerdet at the fjord: up the valley to Nordkopen, steeply onto the arête and north along the broad summit ridge.",
   vassdalstinden:
@@ -1082,12 +1082,12 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
   },
   ytstevasshornet: {
     intro:
-      "835 metres of climbing over 3.87 km from Svartevatnet, steeply up Vassdalen to the tarns at 976 m and then north-west onto a narrow summit ridge. The steepest sustained section measures 25.3 degrees, and the last metres are usually walked without skis.",
+      "833 metres of climbing over 3.93 km from Svartevatnet, steeply up Vassdalen to the tarns at 976 m and then north-west onto a narrow summit ridge. The steepest sustained section measures 26.9 degrees, and the last stretch is usually walked without skis.",
     ascent: [
-      "Start at the car park by Svartevatnet, 538 m, on the main road between Sykkylven and Stranda. The first 769 metres of ground are flat along the lake — 4.9 degrees — before the valley begins.",
-      "Head west, on the left bank of the river, up Vassdalen. This is the steep part of the tour: 18.3 degrees from 600 to 700 m, 21.2 from 700 to 800 and 19.2 from 800 to 900, with the steepest sustained section at 25.3 degrees between 785 and 813 m. The forest holds to 663 m.",
-      "At the small tarns at 976 m it flattens again — the band from 900 to 1000 m measures 6.3 degrees over 855 metres of ground. This is where you see the rest of the route, and it is also the natural place to turn around if the wind has built a cornice on the ridge above.",
-      "From there hold north-west toward the summit ridge: 16.3 degrees from 1000 to 1100 m and 19.7 from 1100 to 1200. The last metres to 1331 m are usually walked without skis.",
+      "Start at the car park by Svartevatnet, 538 m, on the main road between Sykkylven and Stranda. The first 858 metres of ground are flat — 4.3 degrees — and they run along the east shore, not across the water. Svartevatnet is a reservoir: the surface measures 526 m, twelve metres below the car park, and the line stays on land the whole way round the north end and down to the south end at 524.",
+      "Head west, on the left bank of the river, up Vassdalen. This is the steep part of the tour: 18.3 degrees from 600 to 700 m, 22.5 from 700 to 800 over only 270 metres of ground, and 20.0 from 800 to 900, with the steepest sustained section at 26.9 degrees between 795 and 818 m. The forest holds to 624 m, and from 706 you are in the open.",
+      "At the small mountain tarns at 976 m it flattens out again — the band from 900 to 1000 m measures 6.5 degrees over 945 metres of ground. This is where you see the rest of the route, and it is also the natural place to turn back if the wind has built a cornice on the ridge above.",
+      "From there you keep north-west toward the summit ridge: 19.0 degrees from 1000 to 1100 m and 18.9 from 1100 to 1200. The last stretch up to 1331 m is usually walked without skis.",
     ],
     descent: [
       "Back the same way, east through Vassdalen to Svartevatnet. The descent faces east, and Vassdalen is both the steepest and the most avalanche-prone part of the tour.",
@@ -1096,7 +1096,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
     avalanche: [
       {
         title: "The route",
-        body: "A flat start, a steep middle and a flat shelf before the summit ridge: the steepest hundred-metre band, 700 to 800 m, measures 21.2 degrees, and the steepest sustained section 25.3 degrees between 785 and 813 m. Vassdalen is avalanche terrain from 600 m upward.",
+        body: "A flat start, a steep middle and a flat section before the summit ridge: the steepest hundred metres, 700 to 800 m, measures 22.5 degrees over 270 metres of ground, and the steepest sustained section 26.9 degrees between 795 and 818 m. Vassdalen is avalanche terrain from 600 m up. Down at the start the hazard is a different one: the ice on a reservoir, and the route is laid on land to keep off it.",
       },
       {
         title: "The terrain around it",
@@ -1111,7 +1111,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       startLabel: "538 m",
       endLabel: "1331 m",
       distanceLabel: "3.9 km",
-      caption: "835 metres of climbing and 3.87 km from Svartevatnet up Vassdalen, with the treeline at 663 m and the tarns at 976 m as the flat midpoint.",
+      caption: "833 metres of climbing and 3.93 km from Svartevatnet along the east shore and up Vassdalen to the tarns at 976 m, with the forest letting go at 624.",
     },
   },
   rana: {

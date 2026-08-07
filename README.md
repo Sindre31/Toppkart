@@ -192,8 +192,9 @@ content and data quality that has to be settled before the site is sold to anyon
   straight away and is the reason the check exists: **Fanaråken's guide says «Hold land langs
   vestsida — ikke skjær over isen», and the line cut across the ice** of Prestesteinsvatnet, a
   reservoir whose dam the guide's own next sentence names. It now runs on firm ground the whole way.
-  The remaining twenty are a work list in `scripts/build-routes/check_ground_run.txt`; Ytstevasshornet,
-  the other one standing on a regulated lake, is the one to take next.
+  Ytstevasshornet was the second fix and the same shape — «flate langs vatnet» in the prose, 180 m
+  out on Svartevatnet's reservoir ice in the geometry — so no line stands on a regulated lake any
+  more. The remaining eighteen are a work list in `scripts/build-routes/check_ground_run.txt`.
 - **The guide text has not been read by anyone who has skied these tours.** Every number in
   `lib/guides.ts` traces to Kartverket's terrain model, the route research or a cited source, and
   every number is matched mechanically by `check_guides.py` — which reads nynorsk verticals as well

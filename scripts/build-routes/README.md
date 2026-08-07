@@ -1456,9 +1456,19 @@ Length 6.03 → 6.70 km, gain 763 → 783 m. Re-solving the whole line also move
 steepest 30 m window from 42.7° to 27.1° (1859–1882 m), which the prose carried
 in two places and now carries correctly.
 
-**The rest of the list, for whoever takes it next.** One more sits on a
-regulated lake — Ytstevasshornet, 180 m at 526 m, unnamed in its guide — and that
-is the one to take first. Then Styggemann (four crossings totalling 776 m),
+**Ytstevasshornet was the second fix, and the same shape.** Its guide says the
+first stretch is «flate langs vatnet» — flat along the lake. The line went
+straight out onto it: 180 m at 526.0 m, terrain class `InnsjøRegulert`.
+Svartevatnet is a reservoir and its surface sits twelve metres below the car
+park. Four waypoints on firm ground along the east shore fix it, and the line now
+holds land round the north end and down to the south end at 524 m. Length
+3.87 → 3.93 km, gain 835 → 833 m, loss 0 → 40 m — going round a lake costs
+height the ice does not. Re-solving moved the steepest 30 m window 25.3 → 26.9°
+(795–818 m), the steepest band 21.2 → 22.5° and the treeline 663 → 624 m, all of
+which the prose carried.
+
+**The rest of the list, for whoever takes it next.** No crossing on a regulated
+lake remains. Then Styggemann (four crossings totalling 776 m),
 Folarskardnuten (three), Breitinden (295 m at 474 m, 34 m offshore), Juklavasstinden
 (225 m), Rasletinden (two), Rondslottet, Glittertinden, Høgevarde on both routes,
 Store Ble, Surløytenuten and Vassdalstinden. Every one of them is a line standing

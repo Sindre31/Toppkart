@@ -2741,13 +2741,37 @@
     },
     "waypoints": [
      {
+      "name": "Austbredden av Svartevatnet",
+      "lat": 62.2896,
+      "lng": 6.7712,
+      "elevation_m": 532.6
+     },
+     {
+      "name": "Austbredden, forbi bukta",
+      "lat": 62.2886,
+      "lng": 6.773,
+      "elevation_m": 533.0
+     },
+     {
+      "name": "Austbredden, myra",
+      "lat": 62.2876,
+      "lng": 6.7722,
+      "elevation_m": 527.8
+     },
+     {
+      "name": "Sørenden av vatnet",
+      "lat": 62.2871,
+      "lng": 6.7712,
+      "elevation_m": 524.4
+     },
+     {
       "name": "Vatna i Vassdalen, 976",
       "lat": 62.28449,
       "lng": 6.74978,
       "elevation_m": 976.08
      }
     ],
-    "source": "researched, verified (ok), no local audit",
+    "source": "researched, verified (ok), no local audit, re-pinned onto the east shore off the reservoir ice",
     "notes": "Skavlar langs toppryggen — det dannar seg normalt ei stor skavl mellom førtoppen og hovudtoppen, og ein skal køyre ned i sida når ein rundar henne. Skredterreng i sida ned frå hovudtoppen og ikkje minst i sjølve Vassdalen."
    }
   ]

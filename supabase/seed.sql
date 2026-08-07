@@ -45,7 +45,7 @@ values
   ('auskjeret', 'Auskjeret', 'Sunnmøre', 62.37746, 6.77458, 1203, 870, '3–5 t', 2, 'SØ', 'des–apr', '870 høgdemeter frå Fausaskiftet i jamn stigning nordover — heilårsopen veg og moderate hellingar.', true),
   ('snohetta',        'Snøhetta',        'Dovrefjell', 62.31992,  9.26747, 2286,  820, '5–7 t', 2, 'Ø',  'apr–jun', 'Storslått og luftig, men overraskende snill — når Snøheimvegen åpner.', true),
   ('jonshornet', 'Jønshornet', 'Sunnmøre', 62.31695, 6.33395, 1417, 1430, '6–8 t', 4, 'N', 'feb–mai', '1430 høgdemeter frå Vollane over Rametinden, og dei siste hundre på smal egg til varden på Ramoen.', true),
-  ('ytstevasshornet', 'Ytstevasshornet', 'Sunnmøre', 62.28014, 6.73548, 1331, 840, '3–5 t', 3, 'Ø', 'jan–mai', '840 høgdemeter frå Svartevatnet: bratt opp Vassdalen til vatna på 950 moh, så nordvest mot ein smal og skavlete topprygg.', true),
+  ('ytstevasshornet', 'Ytstevasshornet', 'Sunnmøre', 62.28014, 6.73548, 1331, 830, '3–5 t', 3, 'Ø', 'jan–mai', '830 høgdemeter frå Svartevatnet: bratt opp Vassdalen til vatna på 950 moh, så nordvest mot ein smal og skavlete topprygg.', true),
   ('rana', 'Råna', 'Sunnmøre', 62.27554, 6.57479, 1587, 1600, '7–9 t', 3, 'SØ', 'mars–mai', '1600 høgdemeter frå Urkegjerdet ved fjorden: inn dalen til Nordkopen, bratt opp på egga og nordover den breie toppryggen.', true),
   ('kolastinden',     'Kolåstinden',     'Sunnmøre',   62.25886,  6.31102, 1432, 1120, '5–7 t', 3, 'N',  'feb–mai', 'Alpin klassiker fra Standaldalen med velkjent renne og storslått finish.', true),
   ('vassdalstinden', 'Vassdalstinden', 'Sunnmøre', 62.24405, 6.18966, 1278, 1210, '5–7 t', 3, 'Ø', 'feb–mai', '1210 høgdemeter frå Nupen: seterveg til Vallasætra, kneiken opp i Bukkedalen og ein lang flanke til topps.', true),
@@ -788,20 +788,20 @@ Vanlegaste feil: å ta Jønshornrenna ned i Molladalen utan å ha ordna transpor
 where slug = 'jonshornet';
 
 update public.tk_tours set
-  description_up   = 'Start på parkeringa ved Svartevatnet, 538 moh, ved hovudvegen mellom Sykkylven og Stranda. Dei fyrste 769 metrane grunn er flate langs vatnet — 4,9 grader — før dalen tek til.
+  description_up   = 'Start på parkeringa ved Svartevatnet, 538 moh, ved hovudvegen mellom Sykkylven og Stranda. Dei fyrste 858 metrane grunn er flate — 4,3 grader — og dei går langs austbredden, ikkje over vatnet. Svartevatnet er eit magasin: vassflata måler 526 moh, tolv meter under parkeringa, og linja held land heile vegen rundt nordenden og ned til sørenden på 524.
 
-Gå vestover, på venstre side av elva, opp Vassdalen. Her er den bratte delen av turen: 18,3 grader frå 600 til 700 moh, 21,2 frå 700 til 800 og 19,2 frå 800 til 900, med brattaste samanhengande parti på 25,3 grader mellom 785 og 813 moh. Skogen held til 663 moh.
+Gå vestover, på venstre side av elva, opp Vassdalen. Her er den bratte delen av turen: 18,3 grader frå 600 til 700 moh, 22,5 frå 700 til 800 over berre 270 meter grunn, og 20,0 frå 800 til 900, med brattaste samanhengande parti på 26,9 grader mellom 795 og 818 moh. Skogen held til 624 moh, og frå 706 er du i ope terreng.
 
-Ved dei små fjellvatna på 976 moh flatar det ut igjen — bandet frå 900 til 1000 moh måler 6,3 grader over 855 meter grunn. Det er her du ser resten av ruta, og det er òg den naturlege staden å snu om vinden har bygd skavl på ryggen over.
+Ved dei små fjellvatna på 976 moh flatar det ut igjen — bandet frå 900 til 1000 moh måler 6,5 grader over 945 meter grunn. Det er her du ser resten av ruta, og det er òg den naturlege staden å snu om vinden har bygd skavl på ryggen over.
 
-Derfrå held du nordvestover mot toppryggen: 16,3 grader frå 1000 til 1100 moh og 19,7 frå 1100 til 1200. Dei siste metrane opp til 1331 moh blir gjerne gått utan ski.',
+Derfrå held du nordvestover mot toppryggen: 19,0 grader frå 1000 til 1100 moh og 18,9 frå 1100 til 1200. Dei siste metrane opp til 1331 moh blir gjerne gått utan ski.',
   description_down = 'Ned same vegen, austover gjennom Vassdalen til Svartevatnet. Fallretninga er aust, og Vassdalen er både det brattaste og det mest skredutsette på turen.
 
 Vanlegaste feil: å runde skavlen mellom førtoppen og hovudtoppen på oversida. Det dannar seg normalt ei stor skavl der, og ein skal køyre ned i sida når ein rundar henne — ikkje følgje kanten.',
   avalanche_notes  = jsonb_build_array(
     jsonb_build_object(
       'title', 'Ruta',
-      'body',  'Flat start, bratt midtdel og eit flatt parti før toppryggen: brattaste hundremeteren, 700 til 800 moh, måler 21,2 grader, og brattaste samanhengande parti 25,3 grader mellom 785 og 813 moh. Vassdalen er skredterreng frå 600 moh og opp.'
+      'body',  'Flat start, bratt midtdel og eit flatt parti før toppryggen: brattaste hundremeteren, 700 til 800 moh, måler 22,5 grader over 270 meter grunn, og brattaste samanhengande parti 26,9 grader mellom 795 og 818 moh. Vassdalen er skredterreng frå 600 moh og opp. Nede ved starten er faren ei anna: isen på eit magasin, og ruta er lagd på land utanom han.'
     ),
     jsonb_build_object(
       'title', 'Terrenget rundt',

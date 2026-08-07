@@ -6,7 +6,7 @@ bitihorn / normalruta                   0      0
 bitihorn / batskaret                    0      0  
 breitinden / normalruta                 1      0  295 m on water at 474 m, up to 34 m from the mapped shore — and the guide never names that height
 eidskyrkja / normalruta                 0      0  
-fanaraken / normalruta                  2      0  375 m on water at 1373 m, offshore distance unknown (no water polygon returned) — and the guide never names that height; 136 m on water at 1356 m, offshore distance unknown (no water polygon returned) — REGULATED lake — and the guide never names that height
+fanaraken / normalruta                  0      0  
 fanaraken / turtagro                    0      0  
 folarskardnuten / normalruta            3      0  135 m on water at 1098 m, offshore distance unknown (no water polygon returned) — and the guide never names that height; 45 m on water at 1098 m, offshore distance unknown (no water polygon returned) — and the guide never names that height; 45 m on water at 1230 m, offshore distance unknown (no water polygon returned) — and the guide never names that height; note: 270 m on water at 1603 m, offshore distance unknown (no water polygon returned) — the guide names that height, which is not the same as saying it crosses it
 galdhopiggen / normalruta               0      0  
@@ -83,12 +83,10 @@ tromsdalstinden / sommerruta            0      0  note: says «skogsbilveg» —
 vassdalstinden / normalruta             1      0  52 m on water at 946 m, offshore distance unknown (no water polygon returned) — and the guide never names that height
 vassfjellet / markavollen               0      0  note: says «skiløypene» — UNCHECKED, Overpass would not answer
 vesoldo / normalruta                    0      0  
-ytstevasshornet / normalruta            1      0  180 m on water at 526 m, offshore distance unknown (no water polygon returned) — REGULATED lake — and the guide never names that height
+ytstevasshornet / normalruta            0      0  
 
-75 tours, 84 routes — 21 need a look
+75 tours, 84 routes — 18 need a look
   - breitinden/normalruta: 295 m on water at 474 m, up to 34 m from the mapped shore — and the guide never names that height
-  - fanaraken/normalruta: 375 m on water at 1373 m, offshore distance unknown (no water polygon returned) — and the guide never names that height
-  - fanaraken/normalruta: 136 m on water at 1356 m, offshore distance unknown (no water polygon returned) — REGULATED lake — and the guide never names that height
   - folarskardnuten/normalruta: 135 m on water at 1098 m, offshore distance unknown (no water polygon returned) — and the guide never names that height
   - folarskardnuten/normalruta: 45 m on water at 1098 m, offshore distance unknown (no water polygon returned) — and the guide never names that height
   - folarskardnuten/normalruta: 45 m on water at 1230 m, offshore distance unknown (no water polygon returned) — and the guide never names that height
@@ -106,4 +104,3 @@ ytstevasshornet / normalruta            1      0  180 m on water at 526 m, offsh
   - styggemann/ravalsjo: 90 m on water at 602 m, offshore distance unknown (no water polygon returned) — and the guide never names that height
   - surloytenuten/sudstul: 45 m on water at 1068 m, offshore distance unknown (no water polygon returned) — and the guide never names that height
   - vassdalstinden/normalruta: 52 m on water at 946 m, offshore distance unknown (no water polygon returned) — and the guide never names that height
-  - ytstevasshornet/normalruta: 180 m on water at 526 m, offshore distance unknown (no water polygon returned) — REGULATED lake — and the guide never names that height
