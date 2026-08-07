@@ -2276,7 +2276,7 @@ Den andre feilen er lengda. Elleve kilometer inn — 11,31 km måler linja — m
     ),
     jsonb_build_object(
       'title', 'Før du går',
-      'body',  'Sjekk dagens skredvarsel for Vest-Telemark på varsom.no — toppen ligg i Setesdal, men Varsom-regionen som dekkjer han heiter Vest-Telemark. Ta med sendar/mottakar, søkjestang og spade.'
+      'body',  'Sjekk dagens skredvarsel for Vest-Telemark på varsom.no. Kortet seier Setesdal, og det er dalen du startar i — parkeringa i Berdalen ligg i Bykle i Agder — men toppunktet ligg i Tokke i Telemark, så Varsom-regionen stemmer nøyaktig med koordinaten. Søkjer du på Setesdal, finn du ingenting. Ta med sendar/mottakar, søkjestang og spade.'
     )
   )
 where slug = 'saebyggjenuten';

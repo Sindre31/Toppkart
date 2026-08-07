@@ -832,6 +832,11 @@
    "what": "Skog over den oppgjevne skoggrensa",
    "figure": "Guiden oppgav siste skogpunkt 904 moh og fyrste opne 1052 moh. SSR-punktet for Tverrheiskaret, som er eit vegpunkt på sjølve linja, ligg på 1027,59 moh og har DTM1-terrengklasse Skog. Det er skog 124 m over den oppgjevne skoggrensa, midt i det oppgjevne «opne» intervallet. Talet kom frå eit fjortenpunkts utval og er difor eit minimum og ikkje ei måling. Nøyaktig kvar skogen sluttar på denne linja er ikkje målt: Kartverket sitt punkt-API svarte ikkje då gjennomlesinga vart gjord, og eit ufullstendig sveip kan ikkje utelukke skog. Guiden oppgjev difor det som er målt — skog minst til 1028 moh — og ikkje eit tal.",
    "how": "ws.geonorge.no/hoydedata/v1/punkt på 59.45645/7.48044."
+  },
+  {
+   "what": "Kva fylke toppen faktisk ligg i",
+   "figure": "Kartverket sitt kommune-API plasserer det registrerte toppunktet (59.46181/7.62568, 1506,49 moh) i Tokke kommune, Telemark. Fylkesgrensa kryssar mellom 5 og 10 meter vest for punktet: 5 m vest er framleis Telemark, 10 m vest er Bykle i Agder og les 1503,87 moh. Høgaste mark på Agder-sida er altså om lag 1504 moh, ti meter frå toppunktet, og det finst ikkje noko høgare i Agder — «Agders høgaste» held, men det registrerte punktet ligg 2,6 m høgare og på Telemark-sida av streken. Difor stemmer Varsom sin Vest-Telemark-region (3035) nøyaktig med koordinaten og er ikkje noko avvik. Parkeringa i Berdalen (59.44906/7.44172) ligg i Bykle, Agder, så turen startar i Setesdal og endar i Telemark.",
+   "how": "api.kartverket.no/kommuneinfo/v1/punkt for toppunktet, parkeringa og eit vestover-sveip med 5 m steg langs toppen sin breiddegrad, og ws.geonorge.no/hoydedata/v1/punkt for høgdene."
   }
  ],
  "rondslottet": [
