@@ -1554,10 +1554,20 @@ and why Friflyt has people carrying skis there. Møysalen is the steepest summit
 in the app by flank sweep: no direction averages under 24.5° out to a kilometre,
 and east reads 70.8° in its steepest 60 m window only 10 m from the top.
 
-**Sæbyggjenuten is forecast as Vest-Telemark.** The card says Setesdal, which is
-where the mountain is, but `AvalancheWarningByCoordinates` for 59.46181/7.62568
-returns region 3035, Vest-Telemark — an A-region with a daily forecast. The guide
-says both, because a reader who searches varsom.no for "Setesdal" finds nothing.
+**Sæbyggjenuten is forecast as Vest-Telemark**, and the reason is not the one
+this section first gave. `AvalancheWarningByCoordinates` for 59.46181/7.62568
+returns region 3035, Vest-Telemark — an A-region with a daily forecast — and the
+first write-up called that a mismatch against a summit «where the mountain is»,
+in Setesdal. It is not a mismatch. Kartverket's kommune API puts the registered
+high point in **Tokke, Telemark**, and the county line crosses the summit itself:
+5 m west of the point is still Telemark, 10 m west is Bykle in Agder and reads
+1503.87 m against the point's 1506.49. So Varsom matches the coordinate exactly.
+«Agders høgaste» still holds — nothing in Agder is higher than that ~1504 m ten
+metres away — but the registered point is 2.6 m higher and on the Telemark side
+of the line. The card's «Setesdal» describes the valley you start in, and that is
+right too: the Berdalen car park is in Bykle, Agder. The tour begins in one county
+and ends in another, which is worth a sentence rather than a shrug, and the guide
+now says so in both languages.
 All three tours are in A-regions: Heiane (3037), Lofoten og Vesterålen (3014) and
 Vest-Telemark (3035).
 

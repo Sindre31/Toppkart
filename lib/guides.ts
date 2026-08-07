@@ -2810,7 +2810,7 @@ export const GUIDES: Record<string, TourGuide> = {
   saebyggjenuten: {
     slug: "saebyggjenuten",
     intro:
-      "Agders høgaste, og ein tur der talet som betyr noko er 11,31 km og ikkje 851 høgdemeter. Ingen sti, ingen merking, tre skar og eit vatn undervegs, og eit terreng så slakt at det brattaste 400-metersvindauget måler 13,7 grader. Det einaste bratte på fjellet vender nord, og du skal ikkje dit.",
+      "Agders høgaste — så vidt det er: fylkesgrensa kryssar sjølve toppen, og det registrerte toppunktet på 1506 moh ligg i Tokke i Telemark, ti meter aust for Agder-sida, som når 1504. Ein tur der talet som betyr noko er 11,31 km og ikkje 851 høgdemeter. Ingen sti, ingen merking, tre skar og eit vatn undervegs, og eit terreng så slakt at det brattaste 400-metersvindauget måler 13,7 grader. Det einaste bratte på fjellet vender nord, og du skal ikkje dit.",
     ascent: [
       "Frå parkeringa ved bommen innerst i Berdalen hyttegrend, 810 moh, går ruta austover. Peilinga frå parkeringa til toppen er 82 grader — Berdalen ligg vest for fjellet, og du går inn mot det heile dagen. Riksveg 9 mellom Bykle og Hovden er brøytt heile vinteren, og ut.no presiserer at du ikkje skal køyre den siste kilometeren etter bommen: «Veien er privat.» Den fyrste kilometeren deler trasé med oppkøyrde løyper i Berdalen; linja her er terrenglinja og ikkje løypa.",
       "Forbi Langemyr på 891 moh går det jamt oppover mot Tverrheiskaret på 1028 moh. Dette er den einaste stigninga på turen som kjennest som ei stigning: brattaste 30 meter måler 26,2 grader mellom 1000 og 1022 moh, 2350 meter ute, og brattaste 400 meter 13,7 grader frå 963 til 1062 moh. Skogen står høgt her: DTM1 gjev terrengklasse Skog i sjølve Tverrheiskaret på 1028 moh. Kor høgt han går på denne linja er ikkje målt punkt for punkt — Kartverket sitt punkt-API låg nede då dette vart kontrollert — så guiden seier det som er målt og ikkje meir.",
@@ -2834,7 +2834,7 @@ export const GUIDES: Record<string, TourGuide> = {
       },
       {
         title: "Før du går",
-        body: "Sjekk dagens skredvarsel for Vest-Telemark på varsom.no — toppen ligg i Setesdal, men Varsom-regionen som dekkjer han heiter Vest-Telemark. Ta med sendar/mottakar, søkjestang og spade.",
+        body: "Sjekk dagens skredvarsel for Vest-Telemark på varsom.no. Kortet seier Setesdal, og det er dalen du startar i — parkeringa i Berdalen ligg i Bykle i Agder — men toppunktet ligg i Tokke i Telemark, så Varsom-regionen stemmer nøyaktig med koordinaten. Søkjer du på Setesdal, finn du ingenting. Ta med sendar/mottakar, søkjestang og spade.",
       },
     ],
     elevationProfile: {

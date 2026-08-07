@@ -2884,7 +2884,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
   },
   saebyggjenuten: {
     intro:
-      "Agder's highest, and a tour where the number that matters is 11.31 km rather than 851 metres of climbing. No path, no marking, three passes and a lake along the way, and terrain so gentle that the steepest 400-metre window measures 13.7 degrees. The only steep ground on the mountain faces north, and you are not going there.",
+      "Agder's highest — barely: the county line crosses the summit itself, and the registered high point at 1506 m lies in Tokke in Telemark, ten metres east of the Agder side, which reaches 1504. A tour where the number that matters is 11.31 km rather than 851 metres of climbing. No path, no marking, three passes and a lake along the way, and terrain so gentle that the steepest 400-metre window measures 13.7 degrees. The only steep ground on the mountain faces north, and you are not going there.",
     ascent: [
       "From the car park at the barrier at the far end of Berdalen hyttegrend, 810 m, the route runs east. The bearing from the car park to the summit is 82 degrees — Berdalen lies west of the mountain, and you head toward it all day. Riksveg 9 between Bykle and Hovden is ploughed all winter, and ut.no is explicit that you do not drive the last kilometre past the barrier: «Veien er privat.» The first kilometre shares ground with the groomed tracks in Berdalen; the line here is the terrain line, not the track.",
       "Past Langemyr at 891 m it climbs steadily to Tverrheiskaret at 1028 m. This is the only rise on the tour that feels like one: the steepest 30 metres measures 26.2 degrees between 1000 and 1022 m, 2350 metres in, and the steepest 400 metres 13.7 degrees from 963 to 1062 m. The forest stands high here: DTM1 gives terrain class Skog in Tverrheiskaret itself, at 1028 m. How much higher it goes on this line has not been measured point by point — Kartverket's point API was down when this was checked — so the guide states what is measured and no more.",
@@ -2908,7 +2908,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       },
       {
         title: "Before you go",
-        body: "Check today's avalanche forecast for Vest-Telemark at varsom.no — the summit is in Setesdal, but the Varsom region covering it is called Vest-Telemark. Bring a transceiver, probe and shovel.",
+        body: "Check today's avalanche forecast for Vest-Telemark at varsom.no. The card says Setesdal, which is the valley you start in — the Berdalen car park is in Bykle in Agder — but the high point is in Tokke in Telemark, so the Varsom region matches the coordinate exactly. Search for Setesdal and you will find nothing. Bring a transceiver, probe and shovel.",
       },
     ],
     elevationProfile: {
