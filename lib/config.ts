@@ -84,6 +84,23 @@ export const env = {
     (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "http://localhost:3000"),
 };
 
+/** `ADMIN_EMAILS` parsed into a list, lowercased and trimmed.
+ *
+ *  Lives here rather than in `lib/admin.ts` because two very different callers
+ *  need it: the page gate, and the feedback notice in `lib/email.ts`. Importing
+ *  the gate module from the mailer would pull `next/navigation` and the whole
+ *  session stack into a Stripe webhook's import graph to read one string.
+ *
+ *  Empty means nobody — see the fail-closed note in `lib/admin.ts`, which is
+ *  the reason this returns a list rather than a «matches anyone» predicate.
+ */
+export function adminEmails(): string[] {
+  return env.adminEmails
+    .split(",")
+    .map((entry) => entry.trim().toLowerCase())
+    .filter(Boolean);
+}
+
 export const isSupabaseConfigured = Boolean(env.supabaseUrl && env.supabaseAnonKey);
 export const isStripeConfigured = Boolean(env.stripeSecretKey);
 export const isResendConfigured = Boolean(env.resendApiKey);

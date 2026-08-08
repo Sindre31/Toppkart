@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 
 import { getIdentity } from "@/lib/access";
-import { env } from "@/lib/config";
+import { adminEmails } from "@/lib/config";
 
 /** Who may open `/admin/*`.
  *
@@ -16,16 +16,9 @@ import { env } from "@/lib/config";
  *  which is not.
  */
 
-function adminList(): string[] {
-  return env.adminEmails
-    .split(",")
-    .map((entry) => entry.trim().toLowerCase())
-    .filter(Boolean);
-}
-
 export function isAdminEmail(email: string | null | undefined): boolean {
   if (!email) return false;
-  const list = adminList();
+  const list = adminEmails();
   if (!list.length) return false;
   return list.includes(email.trim().toLowerCase());
 }
