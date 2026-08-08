@@ -68,6 +68,18 @@ MIN_GAIN_PP = 0.08
 MAX_DIST_GROWTH = 0.12
 MAX_DIST_GROWTH_M = 600.0
 MAX_GAIN_GROWTH = 0.12
+# …except when the longer line is also a markedly gentler one. Slogen is the
+# case the exception exists for: its normalruta reads 50.3° over the steepest
+# 30 m — above this pipeline's own 42° ceiling — and the line that follows the
+# mapped route reads 34.0° while running 705 m further. On a bare distance rule
+# that rejection stands, and the product keeps a 50° step on the most serious
+# tour in the set because the safer line is twelve percent longer.
+#
+# Going round rather than up is the trade a ski tourer makes on purpose, so the
+# distance bar is waived when the candidate takes a real bite out of the
+# steepest sustained gradient. Three degrees is well past what the grid
+# disagrees with itself about.
+DIST_WAIVED_BY_ANGLE_DROP_DEG = 3.0
 # Steepness is the one number in the product a reader might make a safety
 # decision on, so a candidate may not get meaningfully steeper — above the point
 # where the number means anything.
@@ -129,7 +141,12 @@ def verdict(base, cand, base_fit, cand_fit, probs):
     if gain_pp < MIN_GAIN_PP:
         why.append(f"trail fit +{gain_pp*100:.0f} pp, under the {MIN_GAIN_PP*100:.0f} pp bar")
     grew = cand["distanceM"] - base["distanceM"]
-    if grew > MAX_DIST_GROWTH * base["distanceM"] and grew > MAX_DIST_GROWTH_M:
+    gentler = base["maxAngle"] - cand["maxAngle"] >= DIST_WAIVED_BY_ANGLE_DROP_DEG
+    if (
+        grew > MAX_DIST_GROWTH * base["distanceM"]
+        and grew > MAX_DIST_GROWTH_M
+        and not gentler
+    ):
         why.append(f"{grew:+.0f} m longer ({grew/base['distanceM']*100:+.0f}%)")
     if cand["gainM"] > (1 + MAX_GAIN_GROWTH) * base["gainM"]:
         why.append(f"climbs {cand['gainM'] - base['gainM']:+.0f} m more")
