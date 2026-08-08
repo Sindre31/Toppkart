@@ -86,4 +86,19 @@ NEW_TOURS = {
     "storhornet": ("Storhornet", "Trollheimen"),
     "storbekkhoa": ("Storbekkhøa", "Trollheimen"),
     "okla": ("Okla", "Trollheimen"),
+    # — the alpine-resort round: the fjells you reach from Hemsedal, Trysil,
+    #   Kvitfjell, Hafjell and Geilo. Four new regions, and only one of them is
+    #   named after a resort, because the ski terrain is not in the lift system —
+    #   it is on Hemsedalsfjellet, on Hallingskarvet above Geilo, on the ridge
+    #   across the Lågen from Kvitfjell, on Øyerfjellet behind Hafjell, and in
+    #   the forest above Vestby in Trysil. Trysilfjellet itself was researched
+    #   and rejected: every published way up it goes in the alpine slopes. —
+    "nibbi": ("Nibbi", "Hemsedal"),
+    "slettind": ("Slettind", "Hemsedal"),
+    "kyrkjebonosi": ("Kyrkjebønosi", "Hemsedal"),
+    "prestholtskarvet": ("Prestholtskarvet", "Geilo"),
+    "ustetind": ("Ustetind", "Geilo"),
+    "banseterkampen": ("Bånsæterkampen", "Ringebufjellet"),
+    "nevelfjell": ("Nevelfjell", "Øyerfjellet"),
+    "ulvsjoberget": ("Ulvsjøberget", "Trysil"),
 }

@@ -75,17 +75,25 @@ values
   ('fanaraken',       'Fanaråken',       'Sogn',       61.51669,  7.90825, 2068,  780, '5–7 t', 2, 'N',  'apr–jun', 'Høyfjellstur fra Sognefjellet med breutsikt og pålitelig vårsnø.', true),
   ('kvamshesten', 'Kvamshesten', 'Sunnfjord', 61.40141, 5.62732, 1209, 840, '4–6 t', 3, 'N', 'des–mai', '840 høgdemeter frå Rytnavegen forbi Skaravatnet og Grunnevatnet, med ei 36-graders skål til slutt.', true),
   ('rasletinden', 'Rasletinden', 'Jotunheimen', 61.39514, 8.69944, 2104, 750, '4–6 t', 2, 'Ø', 'apr–mai', '750 høydemeter og 6 km fra Valdresflye: flatt de første 1,2 km, så en kneik til 1530 moh og slak rygg østfra mot toppen.', true),
+  ('banseterkampen', 'Bånsæterkampen', 'Ringebufjellet', 61.39144, 10.10642, 1196, 330, '2–4 t', 2, 'NØ', 'jan–apr', '330 høydemeter fra Bånsetra opp på en fjellrygg med stup mot sør — Kvitfjells nærmeste fjell, tvers over Lågen.', true),
   ('molden', 'Molden', 'Sogn', 61.34417, 7.31973, 1120, 620, '2–4 t', 1, 'SV', 'feb–apr', '620 høgdemeter frå Mollandsmarki opp sørvestryggen, med Lustrafjorden under seg heile vegen.', true),
   ('synshorn',        'Synshorn',        'Valdres',    61.34011,  8.79727, 1475,  420, '2–3 t', 1, 'Ø',  'feb–mai', 'Kort og trygg tur fra Valdresflye — perfekt førstetur og værvindu-tur.', true),
   ('bitihorn',        'Bitihorn',        'Valdres',    61.29435,  8.79947, 1607,  550, '2–4 t', 1, 'S',  'feb–mai', 'Markert horn med enkel normalrute og fin utsikt over Bygdin.', true),
+  ('ulvsjoberget', 'Ulvsjøberget', 'Trysil', 61.26561, 12.018, 854, 300, '1–3 t', 2, 'SØ', 'jan–apr', '300 høydemeter fra Vestby opp gjennom skogen til det åpne fjellet — den høyeste toppen i Trysil utenfor alpinanlegget.', true),
+  ('nevelfjell', 'Nevelfjell', 'Øyerfjellet', 61.20491, 10.56762, 1090, 270, '2–4 t', 1, 'Ø', 'des–apr', '270 høydemeter fra Nordseter over Nevelåsen til Lillehammerfjellets mest besøkte topp, med åpen bu og siktskive på 1089.', true),
+  ('slettind', 'Slettind', 'Hemsedal', 60.96896, 8.18399, 1592, 470, '2–4 t', 1, 'NV', 'jan–mai', '470 høgdemeter frå rv 52 ved Eldrevatn opp ei jamn 20–25-graders flanke — nybegynnartoppen på Hemsedalsfjellet.', true),
+  ('kyrkjebonosi', 'Kyrkjebønosi', 'Hemsedal', 60.90555, 8.55601, 1670, 1000, '4–6 t', 3, 'V', 'feb–mai', '1000 høgdemeter frå grustaket ved Kyrkjebøen over den første toppen på 1610 og nordover den lange, flate ryggen.', true),
+  ('nibbi', 'Nibbi', 'Hemsedal', 60.88661, 8.6501, 1740, 800, '3–5 t', 2, 'S', 'feb–mai', '800 høgdemeter frå Lykkjastølen vest for fossen og opp dalen — Hemsedals mest gåtte vårtopp.', true),
   ('skogshorn', 'Skogshorn', 'Hemsedal', 60.88148, 8.69482, 1729, 840, '3–5 t', 2, 'Ø', 'feb–mai', '836 høgdemeter frå Trefta opp den breie austryggen; brattaste måling er 28,5 grader.', true),
   ('storehorn',       'Storehorn',       'Hemsedal',   60.81506,  8.59566, 1482,  470, '3–4 t', 2, 'Ø',  'des–apr', 'Hemsedals husfjell for topptur — kort vei fra bilen, mange linjevalg.', true),
   ('storanosi', 'Storanosi', 'Voss', 60.7663, 6.62341, 1205, 740, '3–5 t', 2, 'NØ', 'jan–apr', '740 høgdemeter frå Ljosno gjennom open bjørkeskog og ut på platået over Brandsetdalen.', true),
   ('lonahorgi', 'Lønahorgi', 'Voss', 60.69383, 6.41489, 1412, 1300, '6–8 t', 2, 'NØ', 'feb–april', '1300 høgdemeter frå Høyland via Bergsstølen og Breiming, med dei siste 107 opp nordryggen frå punkt 1305.', true),
   ('horndalsnuten', 'Horndalsnuten', 'Voss', 60.64218, 6.67655, 1462, 1120, '5–7 t', 3, 'N', 'jan–apr', '1120 høgdemeter frå Skiple gjennom Horndalsbotnen, med den bratte kneika frå skuldra til slutt.', true),
   ('folarskardnuten', 'Folarskardnuten', 'Hallingdal', 60.60742, 7.78251, 1932, 970, '6–8 t', 3, 'S', 'mars–mai', 'Over 12 km inn frå Haugastøl og 970 høgdemeter, med eit kort 37-graders trinn opp frå Folarskardet.', true),
+  ('prestholtskarvet', 'Prestholtskarvet', 'Geilo', 60.55843, 8.0126, 1860, 960, '6–8 t', 3, 'S', 'jan–apr', 'Elleve kilometer og 960 høydemeter fra Havsdalen forbi Prestholtstølan og opp Prestholtskardet til Hallingskarvets sørskarv.', true),
   ('gyranfisen', 'Gyranfisen', 'Vikerfjell', 60.47203, 9.89027, 1127, 670, '3–5 t', 2, 'Ø', 'jan–apr', '670 høydemeter fra Vikerkoia over Svarttjernskollen, med 200 av dem gitt tilbake i søkket før Ringerikes høyeste punkt.', true),
   ('oksen',           'Oksen',           'Hardanger',  60.45983,  6.68301, 1241, 960, '4–6 t', 2, 'SV', 'jan–apr', 'Fjordutsikt i alle retninger og jevn stigning fra Tjoflot.', true),
+  ('ustetind', 'Ustetind', 'Geilo', 60.45856, 8.0902, 1376, 410, '2–4 t', 2, 'N', 'feb–mai', '410 høydemeter fra Ustaoset forbi Tindevatnet til varden fra 1899, med Hardangervidda i sør og Hallingskarvet i nord.', true),
   ('grafjell', 'Gråfjell', 'Norefjell', 60.31831, 9.39572, 1466, 580, '4–6 t', 2, 'S', 'des–mars', '580 høydemeter og 7,8 km fra Tempelsetra forbi Istjenn og Donkelitjenn til Norefjells høyeste topp.', true),
   ('vesoldo', 'Vesoldo', 'Hardanger', 60.31237, 6.09197, 1046, 840, '3–5 t', 2, 'SV', 'feb–apr', '838 høgdemeter frå Byrkjenes, skog opp til Fadnastølen og open sørvestrygg over; nord- og vestsida av toppen fell 48–55°.', true),
   ('ranten', 'Ranten', 'Norefjell', 60.30259, 9.41922, 1416, 530, '3–5 t', 2, 'S', 'jan–apr', '530 høydemeter fra Tempelseter om stikrysset på Raudmyra og vestover opp på den taggete ryggen Kittelsen malte som Soria Moria.', true),
@@ -105,7 +113,7 @@ values
 -- re-seeding can never overwrite editorial work.
 
 -- ============================================================================
--- Written guides — all 78 tours
+-- Written guides — all 86 tours
 -- ----------------------------------------------------------------------------
 -- Generated by scripts/build-routes/emit_guides.py alongside lib/guides.ts, so
 -- the database seed and the local fallback cannot drift apart. Paragraphs in
@@ -1641,6 +1649,35 @@ Waypointet på 1890 moh ligger på det terrengmodellen klassifiserer som snø og
 where slug = 'rasletinden';
 
 update public.tk_tours set
+  description_up   = 'Start på Bånsetra, 913 moh — setervollen der Bånsetervegen ender. Ut.no oppgir 914 for samme punkt. Vegen inn er skiltet fra fylkesveg 319 sør for brua over Lågen i Fåvang, og det er et setergrend- og hyttefelt med eget vegnett: Bånsetervegen, Svarttjønnvegen, Tutlidalsvegen og Årnesfeltet er alle kartlagt.
+
+Rett vestover og opp lia er det korteste bratte partiet på turen: 13,9 grader fra 900 til 1000 moh over 355 meter grunn, med et steg på 20,5 grader mellom 961 og 978. Skogen slipper taket allerede på 954 moh og terrenget er åpent fra 961 — dette er en tur som er over tregrensa etter tre hundre meter.
+
+Videre skrår linja sørvestover: 12,8 grader fra 1000 til 1100 moh over 449 meter grunn, forbi 1110 moh, og inn på selve ryggen på 1195. Der er det slutt på stigninga. Bandet fra 1100 til 1200 moh måler 2,7 grader over 1969 meter grunn — det er eggen, og den er nesten vannrett.
+
+Vestover langs kanten til høyeste punkt, 1196,1 moh. Ut.no fører 1202 for samme sted, og det er det største avviket mellom kort og terrengmodell i denne runden; kortet fører målinga. Utsikten går til Jotunheimen i vest og Rondane i nord, og ned på fem seterområder i sør.',
+  description_down = 'Ned samme vegen, nordøstover. Den sida måler 6,3 grader i snitt over 400 meter med et bratteste 60-metersvindu på 10,6 — det er den slake halvsirkelen ruta ligger i, og vest måler 3,9 med 12,8.
+
+Sørsida er en annen sak, og den er grunnen til at denne turen har en gradering i det hele tatt. Ut.no skriver om «bratte stup mot sør» og «fjellrygger som går stupbratt et par hundre meter ned», og sveipet setter tall på det: sørøst 25,5 grader i snitt med 45,2 i vinduet 30 til 90 meter ut, sør 23,0 med 39,8 i 40 til 100, øst 21,0 med 38,0 i 30 til 90, og sørvest 18,7 med 42,5 lenger ute, 180 til 240.
+
+Om sommeren går det tydelig sti langs kanten av fjellhamrene, og ut.no skriver at man går trygt der. Under snø er den kanten en skavlkant, og den er ikke til å se i flatt lys. Hold nordsida av ryggen.',
+  avalanche_notes  = jsonb_build_array(
+    jsonb_build_object(
+      'title', 'Ruta',
+      'body',  '331 høydemeter der brattaste band er 13,9 grader og brattaste steg 20,5. Ruta gir tilbake 48 høydemeter på 2,77 km, det meste av det på selve ryggen, som måler 2,7 grader over 1969 meter grunn. Oppstigninga i seg selv er ikke et skredproblem.'
+    ),
+    jsonb_build_object(
+      'title', 'Eggen',
+      'body',  'Hele graderinga ligger i kanten. Sørøst måler 45,2 grader i brattaste 60-metersvindu bare 30 til 90 meter fra toppen, sør 39,8 og øst 38,0. Det er ikke terreng du kommer tilbake fra hvis du går ut på skavlen, og på en rygg som ellers måler 2,7 grader er det ingenting som varsler deg om at kanten kommer.'
+    ),
+    jsonb_build_object(
+      'title', 'Før du går',
+      'body',  'Sjekk dagens skredvarsel for Oppland sør på varsom.no. Oppland sør er en B-region: den varsles bare når faregraden ventes å bli 4 eller 5, så de fleste vinterdager finnes det ingen vurdering å lese, og en tom side betyr ikke et trygt fjell. Begge ut.no-beskrivelsene er sommerbeskrivelser og fører sesong juni til september; sesongen på kortet er lest ut av at Bånsetra er et hyttefelt med brøytt vegnett. Ta med sender/mottaker, søkestang og spade.'
+    )
+  )
+where slug = 'banseterkampen';
+
+update public.tk_tours set
   description_up   = 'Start på den kartfeste parkeringa på Mollandsmarki, 501 moh, over Marifjøra i Luster. Dei fyrste hundre metrane grunn er flate — bandet frå 400 til 500 moh måler 0,5 grader — før vegen mot Garden tek til å stiga.
 
 Følg vegen og deretter sommarstien opp gjennom skogen. Stigninga er jamn og utan overraskingar: 10,7 grader frå 500 til 600 moh, 14,4 frå 600 til 700 og 14,2 frå 700 til 800. Brattaste samanhengande parti på heile turen ligg her nede, 24,8 grader over tretti meter mellom 725 og 746 moh.
@@ -1724,6 +1761,143 @@ Sørruta fra Båtskaret finnes — 454 høydemeter på halvannen kilometer — m
     )
   )
 where slug = 'bitihorn';
+
+update public.tk_tours set
+  description_up   = 'Start i Vestby, 559 moh, rett ved Misjonshuset. Ut.no oppgir 558 for samme punkt. Vegen inn er fylkesveg 2160 fra Trysil sentrum — ut.no skriver fv 563, som er det gamle nummeret — 17 km og tjue minutters kjøring, og det er skiltet til parkering.
+
+Det bratteste ligger med en gang: 12,4 grader fra 500 til 600 moh over 209 meter grunn, med turens eneste virkelige steg på 17,5 grader mellom 585 og 597 moh. Over det slakner det til 8,0 grader fra 600 til 700 og 8,4 fra 700 til 800, og linja passerer 676 og 801 moh. Alt dette går i skogsterreng.
+
+Skogen slipper ikke taket før på 826 moh, og terrenget er åpent fra 832. Ut.no beskriver overgangen slik: «På toppen åpner terrenget seg, og du har vid utsikt i alle himmelretninger.» De siste 20 høydemeterne måler 5,3 grader fra 800 til 900 moh over 563 meter grunn, og toppen ligger på 854,2 moh mot ut.nos oppgitte 851.',
+  description_down = 'Ned samme vegen, sørøstover. Den sida måler 5,0 grader i snitt over 400 meter med et bratteste 60-metersvindu på 9,3 — det slakeste av alle åtte retningene fra toppen, og det er den ruta går i.
+
+Det ene stedet fjellet er bratt ligger 400 meter unna og på motsatt kant. Sørvest måler 23,9 grader i snitt med et 49,2-graders vindu 330 til 390 meter ut, og vest 13,0 med 24,5 i 340 til 400. Det er Stygghammeren, og ut.no er tydelig: «Fra Ulvsjøberget er det gammel skilting ned til Stygghammeren, hvor du får flott utsikt over Ulvsjøen. Hit går du på eget ansvar, og vi anbefaler ikke at du tar med små barn hit, da det er en bratt, usikret fjellhylle.»
+
+Under snø er den hylla ikke til å se. Korridoren går ikke dit, og skiltinga som gjør det, er gammel.',
+  avalanche_notes  = jsonb_build_array(
+    jsonb_build_object(
+      'title', 'Ruta',
+      'body',  '295 høydemeter der brattaste band er 12,4 grader og brattaste steg 17,5. Ruta gir ikke tilbake en eneste høydemeter på 2,14 km. Ut.no fører turen som tough, og det er ikke terrenget som gjør den det — det er at hele stigninga går i skog uten sti å se under snøen.'
+    ),
+    jsonb_build_object(
+      'title', 'Stygghammeren',
+      'body',  'Sørvest for toppen måler flanken 49,2 grader i brattaste 60-metersvindu, 330 til 390 meter ut, med 23,9 grader i snitt hele veien. Det er den usikrede hylla ut.no advarer mot, og den ligger utenfor ruta — men den ligger nær nok til at en linje valgt på slump fra toppen kan finne den, og under snø er kanten ikke synlig.'
+    ),
+    jsonb_build_object(
+      'title', 'Før du går',
+      'body',  'Sjekk dagens skredvarsel for Hedmark på varsom.no. Hedmark er en B-region: den varsles bare når faregraden ventes å bli 4 eller 5, så de fleste vinterdager finnes det ingen vurdering å lese, og en tom side betyr ikke et trygt fjell. Ut.no fører turen som «Vandringsrute 47» i Trysil kommunes eget fjellturprogram og oppgir sesong mai til oktober; sesongen på kortet er lest ut av at fylkesveg 2160 til Vestby er brøytet hele året. Ta med sender/mottaker, søkestang og spade.'
+    )
+  )
+where slug = 'ulvsjoberget';
+
+update public.tk_tours set
+  description_up   = 'Start på parkeringa på Nordseter, 828 moh — avgiftsplass tagget for ski i OSM, 135 meter fra Nordseter Fjellstue. Ut.no: «På oppkjørte løyper nordover fra parkeringsplassen på Nordseter mot foten av toppen.» Nordsetervegen fra Lillehammer er brøytet hele vinteren, og bussen går dit.
+
+Første to kilometerne er flate — bandet fra 800 til 900 moh måler 2,5 grader over 1702 meter grunn — nordover forbi 897 moh. Så kommer Nevelvatnet, og her er det verdt å vite hvor løypa går: linja runder sørenden på 905 moh og går opp på vestsida på 915. Ut.nos egen løypelinje gjør det samme, og terrengmodellen gir Skog på begge punktene. Går du rett over vatnet, går du på is.
+
+Videre nordvestover over Nevelåsen, 992 moh, der terrenget åpner seg. Bandet fra 900 til 1000 moh måler 4,8 grader over 1215 meter grunn og er det brattaste på turen; det brattaste steget ligger her, 12,6 grader mellom 936 og 946 moh. Skogen slipper taket på 966 moh og terrenget er åpent fra 972.
+
+Siste kilometeren måler 4,4 grader fra 1000 til 1100 moh over 1151 meter grunn. Ut.no gir to linjevalg inn mot toppen: «Ta av rett opp mot toppen, som inntegnet eller gå løypa på toppens østside og følg ryggen vestover mot toppen.» På 1090 moh står Nevelhytta — Røde Kors'' åpne bu med ovn og plass til seks–åtte, sjelden låst, restaurert i 2021 — og en siktskive som navngir toppene fra Jotunheimen til Rondane.',
+  description_down = 'Ned samme vegen, østover. Den sida måler 3,8 grader i snitt over 400 meter med et bratteste 60-metersvindu på 8,5, og vest 3,4 med 8,2. Det er ikke en nedkjøring, det er en retur — og ut.no sier det selv: «det er ikke lenger opp enn at man kan trappe seg fram selv med smale langrennski».
+
+Det bratteste fjellet har å by på ligger mot nord: 11,1 grader i snitt med et 19,3-graders vindu 160 til 220 meter ut. Ingen retning fra toppen har et 60-metersvindu over 20 grader. Faren her er derfor ikke helningen, det er avstanden og likheten: fem kilometer over et løypenett som ser likt ut overalt, og en topp som er det eneste holdepunktet når lyset flater ut. Ut.no peker på at løypa opp til selve toppen ikke er kjørt opp — den siste kilometeren er du alene om sporet.',
+  avalanche_notes  = jsonb_build_array(
+    jsonb_build_object(
+      'title', 'Ruta',
+      'body',  '268 høydemeter der brattaste band er 4,8 grader og brattaste steg 12,6. Ruta gir tilbake 6 høydemeter på 4,07 km. Det finnes ikke et skredproblem på denne linja, og flankesveipet finner ikke noe rundt toppen heller — 19,3 grader er det brattaste 60-metersvinduet i noen retning.'
+    ),
+    jsonb_build_object(
+      'title', 'Vatnet og lyset',
+      'body',  'To ting er verdt å ta på alvor. Det ene er Nevelvatnet: linja går rundt det, sør og vest, fordi løypa gjør det — den første versjonen av den routede linja gikk 180 meter tvers over vatnet på 904 moh, og det er is, ikke mark. Det andre er sikten. Nevelhytta står åpen på toppen nettopp for de dagene, og det er ikke tilfeldig at den er der.'
+    ),
+    jsonb_build_object(
+      'title', 'Før du går',
+      'body',  'Sjekk dagens skredvarsel for Oppland sør på varsom.no. Oppland sør er en B-region: den varsles bare når faregraden ventes å bli 4 eller 5, så de fleste vinterdager finnes det ingen vurdering å lese. Ta med sender/mottaker, søkestang og spade — på denne turen mest fordi vanen er verdt noe, ikke fordi linja krever det.'
+    )
+  )
+where slug = 'nevelfjell';
+
+update public.tk_tours set
+  description_up   = 'Start på den opparbeidde plassen ved fylkesgrensa ved Eldrevatn, 1122 moh, rett ved rv 52 over Hemsedalsfjellet. Fri Flyt seier det så kort som det går an: «Parkér på parkeringsplassen like før Eldrevann og sett kursen mot sørøst. Herfra gir ruta seg selv til toppen av Slettind.»
+
+Den første kilometeren er flat — bandet frå 1100 til 1200 moh måler 4,1 grader over 1132 meter grunn — og så tek flanken til. Frå 1200 til 1300 moh måler han 13,5 grader over 405 meter grunn, frå 1300 til 1400 16,1 over 360, og linja passerer 1325 moh der stigninga er etablert. Ut.no skildrar det same: «terrenget er jevnt og passe bratt mellom 20-25 grader».
+
+Vidare opp held det fram med å bli litt brattare for kvart band: 17,0 grader frå 1400 til 1500 moh over 315 meter grunn, og 18,6 frå 1500 til 1600 over 270 — det brattaste på turen. Brattaste enkeltsteget er 20,6 grader mellom 1501 og 1518 moh. Toppen måler 1592,0 moh på terrengmodellen, som er nøyaktig det Fri Flyt publiserer; ut.no fører 1589.',
+  description_down = 'Ned nordvestflanken, same vegen. Fri Flyt: «Ta utgangspunkt i ruta opp og legg sporet i den brede fjellsida på vei ned.» Flanken måler 18,0 grader i snitt over 400 meter med eit 27,2-graders vindauge 110 til 170 meter ut, og han er brei nok til at du kan legge sporet der du vil i han.
+
+Faremomentet Fri Flyt fører opp peikar til høgre: «Skredterreng nord for toppen, så ikke dra for langt til skikjørers høyre i starten av nedkjøringen.» Nord måler 13,8 grader i snitt med eit 25,7-graders vindauge 100 til 160 meter ut, og 11,0 grader i snitt når sveipet går ut til ein kilometer — altså reelt skredterreng, akkurat som åtvaringa seier.
+
+Det brattaste på fjellet ligg likevel til den andre handa. Vest måler 23,9 grader i snitt ut til ein kilometer, med eit 52,5-graders vindauge 660 til 720 meter ut, og sørvest 23,6 med 49,5 i vindauget 360 til 420. Begge fell mot Mørkedalen, langt frå linja ned mot bilen — men dei er der, og dei er det du kjem inn i om du held for langt sør på det breie platået i dårleg sikt.',
+  avalanche_notes  = jsonb_build_array(
+    jsonb_build_object(
+      'title', 'Ruta',
+      'body',  '474 høgdemeter der brattaste band er 18,6 grader og brattaste steg 20,6. Fri Flyt fører KAST 1 – enkelt med bratteste punkt under 30 grader, ut.no fører easy, og ut.no legg til: «Ingen spesiell skredfare hvis man følger de slake partiene, men det er noen helninger som er over 30 grader.» Linja gir tilbake 4 høgdemeter på 2,48 km.'
+    ),
+    jsonb_build_object(
+      'title', 'Terrenget utanfor',
+      'body',  'Nord for toppen er det Fri Flyt åtvarar mot, og målinga gir dei rett: 25,7 grader i brattaste 60-metersvindauge 100 til 160 meter ut. Vest og sørvest er brattare igjen — 52,5 og 49,5 grader i vindauge nokre hundre meter ute — og fell mot Mørkedalen. Aust og nordaust er slake: 5,6 og 8,5 grader i snitt.'
+    ),
+    jsonb_build_object(
+      'title', 'Før du går',
+      'body',  'Sjekk dagens skredvarsel for Hallingdal på varsom.no. Hallingdal er ein A-region og blir varsla kvar dag i sesongen. Sjekk òg at rv 52 over Hemsedalsfjellet er open — det er ein fjellovergang som kan stengje eller gå i kolonne i uvêr, og på denne turen er det vêret som avlyser dagen, ikkje terrenget. Ta med sendar/mottakar, søkjestang og spade.'
+    )
+  )
+where slug = 'slettind';
+
+update public.tk_tours set
+  description_up   = 'Start i grustaket ovanfor garden Kyrkjebøen, 722 moh. Ut.no forklarer vegen dit: i sentrum følgjer du vegen til venstre for Skogstad Hotell, og etter 1,4 km står skiltet mot Kyrkjebønnøse på høgre side — vidare bak låven og opp til grustaket. Fri Flyt kallar staden sandtaket og oppgir parkering ved informasjonsskiltet.
+
+Frå grustaket går traktorvegen og sommarstien nordover gjennom skogen. Løypa er merkt og svingar bratt til venstre etter om lag ein kilometer, opp Gravarbakkane, der linja passerer 1010 moh. Bandtabellen for denne delen er jamn og moderat: 15,7 grader frå 700 til 800 moh over 302 meter grunn, 13,2 frå 800 til 900 over 416, 14,8 frå 900 til 1000 over 360, og 13,2 frå 1000 til 1100 over 443.
+
+Skogen slepper taket på 1107 moh og terrenget er ope frå 1121. Rett over skoggrensa ligg ein liten topp på 1299 moh, og Fri Flyt er tydeleg på kva du gjer med han: «gå på vestsiden av den lille toppen rett etter tregrensen. Derfra svinger du igjen østover og følger ryggen opp til toppen.» Linja går 1288 moh på vestsida av han. Her ligg òg det brattaste steget på turen, 26,8 grader mellom 1305 og 1322 moh.
+
+Vidare opp ryggen stig det jamt til det brattaste bandet, 20,6 grader frå 1400 til 1500 moh over 269 meter grunn, og linja passerer 1465 moh i det. Fortoppen kjem på 1608 moh — den ut.no fører som «den første på 1610 moh». Frå han fell ryggen 20 meter ned i skaret på 1589, og så er det flatt: bandet frå 1500 til 1600 moh måler 4,5 grader over 1328 meter grunn og 1600 til 1700 måler 6,8 over 549. «Den siste delen av ryggen mot toppen er lang og flat», skriv Fri Flyt, og det er 400 meter nordover til varden på 1670,5 moh — 1671 etter begge kjeldene.',
+  description_down = 'Standardnedkøyringa går ikkje tilbake same vegen frå toppen. Fri Flyt: «Den vanligste ruta går fra toppen på omlag 1600 moh og vestover ned den store hvite flanken. Skal du ned til bilen, tar du av sørover rett før tregrensen og kommer inn på den samme ruta som oppstigningen.» Vestflanken måler 11,3 grader i snitt over 400 meter og sørvest 12,3 — det er den store, opne flanken, og det er difor kortet fører V.
+
+Den alternative renna er ei anna sak, og sveipet forklarer kvifor. Aust frå toppen måler 28,9 grader i snitt med 46,0 i vindauget 10 til 70 meter ut, og nordaust 33,0 med 48,0 allereie frå kanten. Det er renna Fri Flyt gir «500 høydemeter med bratt og fin skikjøring» — og det er same kant som skavlen står på. Kjem du for langt ned mot elva i Trøimsbotn, seier Fri Flyt at det er «bratt og ulendt terreng for å komme tilbake til stien som leder ned til sandtaket».
+
+Nedst går det gjennom skogen. Fri Flyt skildrar den delen presist: open bjørkeskog først, tettare etter kvart, og då er det stien ned til parkeringsplassen som er det beste alternativet.',
+  avalanche_notes  = jsonb_build_array(
+    jsonb_build_object(
+      'title', 'Ruta',
+      'body',  '1002 høgdemeter der brattaste band er 20,6 grader og brattaste steg 26,8. Linja gir tilbake 54 høgdemeter, og 20 av dei er skaret mellom fortoppen på 1608 og toppryggen på 1589. Sjølve oppstigningsruta er ikkje bratt; det som gjer turen til ein treiar er lengda opp frå bygda og at toppryggen er skavla.'
+    ),
+    jsonb_build_object(
+      'title', 'Skavlen og renna',
+      'body',  'Fri Flyt fører to faremoment og dei ligg på same kant: «Toppskavl og skredfare på den alternative nedkjøringen.» Sveipet frå toppen måler nordaust til 33,0 grader i snitt med eit 48,0-graders vindauge 0 til 60 meter ut, og aust 28,9 med 46,0 i 10 til 70. Det vil seie at kanten fell bratt av med ein gong — det er der skavlen byggjer seg, og det er der renna mot Trøimsbotn startar. Nord måler 27,5 med 34,2 lenger ute. Vest og sørvest, der standardnedkøyringa går, måler 11,3 og 12,3.'
+    ),
+    jsonb_build_object(
+      'title', 'Før du går',
+      'body',  'Sjekk dagens skredvarsel for Hallingdal på varsom.no. Hallingdal er ein A-region og blir varsla kvar dag i sesongen. Ingen av kjeldene oppgir ein sesong for denne turen; kortet fører feb–mai etter naboturane på same fjellside. Ta med sendar/mottakar, søkjestang og spade.'
+    )
+  )
+where slug = 'kyrkjebonosi';
+
+update public.tk_tours set
+  description_up   = 'Start ved Lykkjastølen, 939 moh. Ut.no oppgir 941 for same punktet, og bomavgifta dekkjer parkeringa — betaling i postkassa ved Ulsåkstølen Fjellstue. Frå bilen ser du fossen eit stykke opp i lia, og både Fri Flyt og ut.no seier det same om han: hald vestsida. Fossen sjølv er ikkje kartlagd nokon stad; bekken han kjem i er Nordrestølbekken, som er den einaste namngitte bekken linja går forbi, så namnet er ei slutning frå bekken og ikkje frå fossen. Vegpunktet i korridoren ligg 60 meter vest for bekken, på 1075 moh.
+
+Opp langs fossen stig det jamt: bandet frå 900 til 1000 moh måler 12,9 grader over 311 meter grunn, 1000 til 1100 måler 14,3 over 360, og 1100 til 1200 måler 18,6 over 315. Det brattaste steget på heile linja ligg her, 23,7 grader mellom 1172 og 1192 moh. Skogen slepper taket på 1054 moh og terrenget er ope frå 1066.
+
+Vidare følgjer du dalen — «det faller seg naturlig å følge dalen oppover», skriv ut.no, og Fri Flyt kallar det den naturlege renneformasjonen du går i eller til høgre for. Bandet frå 1300 til 1400 moh er det brattaste på turen med 20,4 grader over 274 meter grunn, og linja passerer 1364 moh midt i det. Over det slaknar det til 18,3 og 15,4 grader.
+
+Dei siste 300 metrane går ikkje rett fram. Ut.no sin eigen linje kjem opp vest for toppen, på 1708 moh, og snur austover langs toppryggen — «så får man toppen i front/til høyre av traséen». Bandet frå 1700 til 1800 moh måler 4,7 grader over 411 meter grunn, som er det flate toppartiet. Varden står på 1741 etter kjeldene og 1740,3 etter terrengmodellen, og kortet fører målinga.',
+  description_down = 'Fri Flyt er kort: «Den enkleste nedkjøringen følger den samme ruta ned som oppstigningen.» Det er sørflanken, og han måler 20,7 grader i snitt over 400 meter med eit 25,8-graders vindauge 190 til 250 meter ut — same tal som bandtabellen gir oppstigninga.
+
+Ut.no seier at det finst brattare og meir krevjande nedkøyringar for dei erfarne, og sveipet seier kvar dei ligg. Aust måler 27,6 grader i snitt med 32,5 i vindauget 90 til 150 meter ut, og søraust 22,8 med 30,0 lenger ute, 240 til 300. Vest og nordvest er det motsette — 6,9 og 10,6 grader i snitt — og nord berre 4,5. Vil du ha den bratte linja, ligg ho på austsida, og ut.no sitt vilkår står ved lag: «riktig utstyr og erfaring i fjellet, og at forholdene er bra».',
+  avalanche_notes  = jsonb_build_array(
+    jsonb_build_object(
+      'title', 'Ruta',
+      'body',  '803 høgdemeter der brattaste hundremetersbandet er 20,4 grader og brattaste steg 23,7. Fri Flyt fører turen som KAST 1 – enkelt med bratteste punkt under 30 grader, og målinga er samd. Linja gir tilbake 2 høgdemeter på 2,97 km, så det er ei rein stigning frå bilen til varden.'
+    ),
+    jsonb_build_object(
+      'title', 'Terrengfellene nedst',
+      'body',  'Det einaste faremomentet Fri Flyt fører opp er «terrengfeller i den nedre delen av oppstigningen», og det er ikkje ein vinkel — det er forma. Renna og bekkedalen du følgjer opp frå 1075 moh samlar snø frå heile lia over, og har ingen veg ut til sidene. Bandet frå 1100 til 1200 moh måler 18,6 grader over 315 meter grunn: nok til at noko over deg kan losne, og med eit samletrau under.'
+    ),
+    jsonb_build_object(
+      'title', 'Før du går',
+      'body',  'Sjekk dagens skredvarsel for Hallingdal på varsom.no. Hallingdal er ein A-region og blir varsla kvar dag i sesongen, så her finst det ei vurdering å lese. Ta med sendar/mottakar, søkjestang og spade.'
+    )
+  )
+where slug = 'nibbi';
 
 update public.tk_tours set
   description_up   = 'Start på den store parkeringa ved Hyndra bru nedanfor Trefta på Lykkjavegen, 893 moh. Plassen er avgiftsbelagt og betalast med SMS eller Vipps etter skiltinga på staden. Dei fyrste sju hundre metrane deler grunn med preparerte langrennsspor; ruta forlèt løypetraseen så snart ho byrjar å stiga. Kryss elva og gå opp lia på vestsida.
@@ -1890,6 +2064,33 @@ Vanlegaste feil: å gå ut på nordsida av skarvet for å finne ei betre linje n
 where slug = 'folarskardnuten';
 
 update public.tk_tours set
+  description_up   = 'Start på parkeringa nederst i Havsdalen, 963 moh — tre avgiftsplasser ved siden av hverandre, alle med access=yes i OSM. Ut.no tegner turen sin fra toppen av skisenteret, 1070 moh, som er lettvint hvis heisen går; korridoren her starter der bilen står, og det er forskjellen mellom de to startpunktene som gjør at høydemeterne på kortet er større enn ut.nos oppgitte 855. Skogen slipper taket på 1048 moh og terrenget er åpent fra 1051.
+
+Fra 1058 moh er du inne på den merkede løypa vestover. Ut.no: «følg merket løype til Prestholtseter (åtte km). Løypa blir tråkket daglig og er følgelig i meget god standard med både klassisk- og skøytespor.» Det er en flat innmarsj i ordets rette forstand — bandet fra 1000 til 1100 moh måler 3,0 grader over 1710 meter grunn, 1100 til 1200 måler 4,6 over 1260, og 1200 til 1300 måler 1,2 over 5221. Linja passerer 1240 moh og holder det nivået i fem kilometer.
+
+Prestholtstølan ligger på 1243 moh, rett under sørsiden av skarvet. Herfra begynner turen på nytt: 17,3 grader fra 1300 til 1400 moh over 316 meter grunn, 18,8 fra 1400 til 1500 over 315, og 22,0 fra 1500 til 1600 over 225 — det brattaste bandet, med det brattaste steget på hele linja i seg, 25,2 grader mellom 1514 og 1535 moh. Det er Prestholtskardet, og registerpunktet for skardet måler 1640 moh.
+
+Oppe på skarvet slakner det brått: 10,5 grader fra 1600 til 1700 moh over 540 meter grunn, 7,2 fra 1700 til 1800 over 765, og 4,3 fra 1800 til 1900 over 775. De siste to kilometerne går vestover over vidt, åpent platå til det høyeste punktet, 1860,4 moh. Registerpunktet for Prestholtskarvet ligger 550 meter nordøst, mellom to topper som måler 1860,4 og 1857,5; ut.nos egen linje ender 20 meter fra den høyeste, og det er den kortet fører.',
+  description_down = 'Ned samme vegen: vestover platået, ned Prestholtskardet og ut løypa. Sørflanken er den kortet fører, og den er ikke slak — sør måler 18,1 grader i snitt ut til halvannen kilometer med et 51,1-graders vindu 925 til 975 meter ut, sørøst 14,7 med 66,0 i vinduet 1225 til 1275, og sørvest 11,2 med 49,3 i 475 til 525. Det er veggen over Prestholt, og Prestholtskardet er det ene stedet den brytes.
+
+Intuisjonen om at stupet må ligge på den andre siden er feil her. Nord måler 2,0 grader i snitt ut til halvannen kilometer med et bratteste 60-metersvindu på 6,6, og nordøst 4,3 med 12,0 — skarvet fortsetter bare. Innafor 400 meter av toppen er hver eneste peiling under 10 grader. Det er et platå, og faren på det er ikke helning, det er sikt: du står på 1860 moh med tolv kilometer hjem og ingen holdepunkter.',
+  avalanche_notes  = jsonb_build_array(
+    jsonb_build_object(
+      'title', 'Ruta',
+      'body',  '955 høydemeter der brattaste band er 22,0 grader og brattaste steg 25,2, begge i Prestholtskardet. Ruta gir tilbake 58 høydemeter på 11,40 km. Ut.no fører turen som krevende skitur og 21,6 km tur/retur fra heistoppen, og skriver at den «blir oftest gått utpå seinvinter/vår når snøen har satt seg» — det er skardet den setningen handler om.'
+    ),
+    jsonb_build_object(
+      'title', 'Terrenget utenfor',
+      'body',  'Sørveggen under skarvet måler 66,0 grader i brattaste 60-metersvindu mot sørøst, 51,1 mot sør og 49,3 mot sørvest. Du kommer opp gjennom det ene bruddet i den. Vest for toppen ligger et trinn på 30,1 grader 425 til 475 meter ut. Nordover er platået flatt så langt sveipet går, men kanten er der et sted, og i flatt lys finner du den før du ser den.'
+    ),
+    jsonb_build_object(
+      'title', 'Før du går',
+      'body',  'Sjekk dagens skredvarsel for Hallingdal på varsom.no. Hallingdal er en A-region og varsles hver dag i sesongen. Ut.no fører sesongen januar til april og kaller turen overkommelig i godvær for alle med noe langrennserfaring — «i godvær» er den delen som bærer setningen. Ta med sender/mottaker, søkestang og spade.'
+    )
+  )
+where slug = 'prestholtskarvet';
+
+update public.tk_tours set
   description_up   = 'Start på parkeringa ved Vikerkoia på Vikerseterveien, 661 moh — Kartverket klasser punktet som myr, og det er en presis beskrivelse av Vikerfjell. De første høydemeterne er slake, 5,1 grader fra 600 til 700 moh, før skogen tar over ved 698 moh.
 
 Stigningen opp mot Svarttjernskollen er den bratteste på turen: 15,4 grader fra 700 til 800 moh over 360 meter grunn, med bratteste sammenhengende parti 24,9 grader mellom 767 og 788 moh. Skogen holder helt til 946 moh, og fra 948 er du ute i åpent terreng.
@@ -1944,6 +2145,35 @@ Under Vindhovden er kjøringen over. Skoggrensa på 538 moh er der skiene går p
     )
   )
 where slug = 'oksen';
+
+update public.tk_tours set
+  description_up   = 'Start på parkeringa ved Ustaoset, 989 moh. Ut.no tegner turen sin fra et punkt 320 meter lenger nord, oppe i hyttefeltet på 1005 moh; plassen som er kartlagt i OSM ligger nede ved vegen, og det er den korridoren bruker. Rv 7 forbi Ustaoset er vinteråpen, og det går tog til stasjonen 692 meter nordvest.
+
+Første kilometeren er nesten flat — bandet fra 900 til 1000 moh måler 1,0 grad over 816 meter grunn — forbi setra Sisseldalen og sørover. Så tar det seg litt opp: 5,4 grader fra 1000 til 1100 moh over 1035 meter grunn. Linja passerer 1104 moh vest for Måfådalen. Skogen slipper taket på 1070 moh og terrenget er åpent fra 1078.
+
+Over tregrensa kommer den ene stigninga som fortjener navnet: 9,7 grader fra 1100 til 1200 moh over 585 meter grunn. Ut.no beskriver det samme fra den andre siden — «før Tindevatnet starter en jevn stigning». Linja passerer vatnet på østsida, 1317 moh, og over det slakner det igjen til 7,4 og 4,9 grader.
+
+Den siste kilometeren er slak rygg til varden på 1376 moh, med det brattaste steget på hele turen underveis: 20,5 grader mellom 1325 og 1340 moh. På toppen står to varder. Den lille har en metallplate med piler og stedsnavn; den store er fra 1899, verneverdig, og ble brukt som trigonometrisk punkt — ut.no ber deg uttrykkelig la være å legge på stein.',
+  description_down = 'Ned samme vegen mot nord. Nordflanken måler 9,9 grader i snitt over 400 meter med et 15,2-graders vindu 70 til 130 meter ut, og nordvest 10,8 med 22,2 i vinduet 90 til 150. Det er slakt nok til at nedkjøringa er en tur og ikke en linje, og det er også hele poenget med fjellet: bergen365 kaller det en topptur for tidlig og sein sesong, når snøen blir varm og våt lenger vest.
+
+Ingen retning fra toppen er bratt. Det brattaste 60-metersvinduet i hele sveipet er 28,9 grader mot sørøst, 110 til 170 meter ut, og sørvest måler 27,5 i vinduet 160 til 220. Snittet ligger mellom 8,8 og 13,0 grader i alle åtte retninger.
+
+Turen kan òg gjøres fra den private turisthytta Tuva i sør, som ut.no oppgir til halvannen time opp mot drøyt to fra Ustaoset. Bergen365 beskriver en tredje variant, fra dammen på Ustevatnet via Verpestølvegen, med rundt 400 høydemeter.',
+  avalanche_notes  = jsonb_build_array(
+    jsonb_build_object(
+      'title', 'Ruta',
+      'body',  '413 høydemeter der brattaste band er 9,7 grader og brattaste steg 20,5. Ruta gir tilbake 26 høydemeter på 4,09 km. Ut.no fører turen som moderate og barnevennlig. Det er ikke helningen som er problemet her.'
+    ),
+    jsonb_build_object(
+      'title', 'Det som faktisk er farlig',
+      'body',  'Bergen365 navngir tre ting på denne ruta, og ingen av dem er en vinkel: skjult vassdrag under snøen fra bekkene som krysser lia, ustabil vindtransportert snø over tregrensa, og terrengfeller. De skriver at skredvurdering hører hjemme her selv om hellingene er moderate, og at vær og vind skifter raskt på dette nivået. Ut.nos sommerbeskrivelse nevner tett vierkratt og myrete partier i lia — under snø er det samme sak: ujevnt underlag og åpne bekker.'
+    ),
+    jsonb_build_object(
+      'title', 'Før du går',
+      'body',  'Sjekk dagens skredvarsel for Hallingdal på varsom.no. Hallingdal er en A-region og varsles hver dag i sesongen. Ingen av ut.no-beskrivelsene er vinterbeskrivelser — begge fører sesong mai til oktober — så sesongen på kortet er lest ut av bergen365 og løypesesongen på vidda, ikke av en kilde for denne ruta. Ta med sender/mottaker, søkestang og spade.'
+    )
+  )
+where slug = 'ustetind';
 
 update public.tk_tours set
   description_up   = 'Start bak Tempelsetra kafè, 910 moh, og følg løypa mot Istjenn. Skogen slipper taket allerede ved 971 moh, og på 950 moh går ruta ut på Istjenn — Kartverket klasser punktet som innsjø, og det er det første av to vann ruta går ut på isen på — Donkelitjenn er det andre.

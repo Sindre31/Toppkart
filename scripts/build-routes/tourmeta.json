@@ -593,6 +593,17 @@
   "season": "apr–mai",
   "hasGuide": true
  },
+ "banseterkampen": {
+  "name": "Bånsæterkampen",
+  "region": "Ringebufjellet",
+  "summitM": 1196,
+  "verticalM": 330,
+  "duration": "2–4 t",
+  "grade": 2,
+  "aspect": "NØ",
+  "season": "jan–apr",
+  "hasGuide": false
+ },
  "molden": {
   "name": "Molden",
   "region": "Sogn",
@@ -625,6 +636,61 @@
   "aspect": "S",
   "season": "feb–mai",
   "hasGuide": true
+ },
+ "ulvsjoberget": {
+  "name": "Ulvsjøberget",
+  "region": "Trysil",
+  "summitM": 854,
+  "verticalM": 300,
+  "duration": "1–3 t",
+  "grade": 2,
+  "aspect": "SØ",
+  "season": "jan–apr",
+  "hasGuide": false
+ },
+ "nevelfjell": {
+  "name": "Nevelfjell",
+  "region": "Øyerfjellet",
+  "summitM": 1090,
+  "verticalM": 270,
+  "duration": "2–4 t",
+  "grade": 1,
+  "aspect": "Ø",
+  "season": "des–apr",
+  "hasGuide": false
+ },
+ "slettind": {
+  "name": "Slettind",
+  "region": "Hemsedal",
+  "summitM": 1592,
+  "verticalM": 470,
+  "duration": "2–4 t",
+  "grade": 1,
+  "aspect": "NV",
+  "season": "jan–mai",
+  "hasGuide": false
+ },
+ "kyrkjebonosi": {
+  "name": "Kyrkjebønosi",
+  "region": "Hemsedal",
+  "summitM": 1670,
+  "verticalM": 1000,
+  "duration": "4–6 t",
+  "grade": 3,
+  "aspect": "V",
+  "season": "feb–mai",
+  "hasGuide": false
+ },
+ "nibbi": {
+  "name": "Nibbi",
+  "region": "Hemsedal",
+  "summitM": 1740,
+  "verticalM": 800,
+  "duration": "3–5 t",
+  "grade": 2,
+  "aspect": "S",
+  "season": "feb–mai",
+  "hasGuide": false
  },
  "skogshorn": {
   "name": "Skogshorn",
@@ -692,6 +758,17 @@
   "season": "mars–mai",
   "hasGuide": true
  },
+ "prestholtskarvet": {
+  "name": "Prestholtskarvet",
+  "region": "Geilo",
+  "summitM": 1860,
+  "verticalM": 960,
+  "duration": "6–8 t",
+  "grade": 3,
+  "aspect": "S",
+  "season": "jan–apr",
+  "hasGuide": false
+ },
  "gyranfisen": {
   "name": "Gyranfisen",
   "region": "Vikerfjell",
@@ -713,6 +790,17 @@
   "aspect": "SV",
   "season": "jan–apr",
   "hasGuide": true
+ },
+ "ustetind": {
+  "name": "Ustetind",
+  "region": "Geilo",
+  "summitM": 1376,
+  "verticalM": 410,
+  "duration": "2–4 t",
+  "grade": 2,
+  "aspect": "N",
+  "season": "feb–mai",
+  "hasGuide": false
  },
  "grafjell": {
   "name": "Gråfjell",

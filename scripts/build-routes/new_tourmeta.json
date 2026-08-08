@@ -1358,5 +1358,198 @@
    "Adkomsten er kontrollert mot kilden: ut.no oppgir «Bomvei 15 km opp Folldalsveien til Gråhaugen, betaling med kort» fra avkjøringa på Kvammen ved fylkes- og kommunegrensa Rindal/Surnadal, og parkeringa (OSM way/236522760) ligger ved dammen på Gråsjøen, 1,3 km sør for Gråhaugen fjellstue som har sin egen plass."
   ],
   "notes": "Ut.no 1112155422 er skituren fra Gråhaugen (starthøyde 490, slutthøyde 1668, ca 100 tapte høydemeter opp, total stigning ca 1250, 12 km, 4:30 t opp, eksposisjon Ø, KAST-klasse 2), beskrevet av Håvard Engen og gjennomgått av Trondhjems Turistforening. De tre andre ut.no-turene dekker den samme toppen fra Trollheimshytta og Gråsjøen med andre forfattere og er tatt med som uavhengig dekning; ingen av dem starter ved en veg, og de er derfor ikke ruter i seg selv her."
+ },
+ "nibbi": {
+  "season": "feb–mai",
+  "aspect": "S",
+  "grade": 2,
+  "gradeReason": "800 høgdemeter på 3,1 km er bratt, men jamt: Fri Flyt fører turen som KAST 1 – enkelt med bratteste punkt under 30 grader, og ut.no som moderate. Det som gjer han til ein toar og ikkje ein einar er terrengfellene nedst i lia, som Fri Flyt nemner særskilt.",
+  "roadClosedInWinter": false,
+  "teaserNo": "800 høgdemeter frå Lykkjastølen vest for fossen og opp dalen — Hemsedals mest gåtte vårtopp.",
+  "teaserEn": "800 m of climbing from Lykkjastølen, west of the waterfall and up the valley — Hemsedal's most-skied spring summit.",
+  "hazardNotes": "Fri Flyt sitt einaste faremoment er terrengfeller i den nedste delen av oppstigninga — renna og bekkedalen du følgjer opp samlar snø og har ingen veg ut til sidene. Ut.no skriv at det finst brattare nedkøyringar for dei erfarne, «men dette krever såklart riktig utstyr og erfaring i fjellet, og at forholdene er bra».",
+  "sources": [
+   "https://www.friflyt.no/topptur/skiturer-hemsedal/topptur-nibbi",
+   "https://ut.no/turforslag/119917"
+  ],
+  "confidence": "high",
+  "corrections": [
+   "Toppen måler 1740,3 moh på DTM1 mot publiserte 1741 hjå både Fri Flyt og ut.no. Fri Flyt sin eigen GPS-posisjon for toppunktet, 155711.732/6766857.855 i UTM33, konverterer til 60.88668/8.65014 og ligg 8 m frå cella summit-søket klatra til.",
+   "Registerpunktet for Nibbi ligg ikkje på toppen. SSR har to fjell med namnet i Hemsedal; det sørlege, 60.87658/8.63950, måler 1647,7 moh på DTM1 — 93 m under den publiserte høgda og 1,2 km sør-sørvest for toppen. Det nordlege, 60.91897/8.64479, måler 1567,0. Difor er `near` i peaks.py Fri Flyt sin GPS-posisjon og ikkje registerpunktet.",
+   "Starthøgda er 939,2 moh på DTM1 mot ut.no sine oppgitte 941, og differansen mellom start og topp er 801 m — mot 800 høgdemeter i begge kjeldene.",
+   "Fossen ut.no seier du skal halde vestsida av, er fossen i Nordrestølbekken (SSR-punkt 60.87191/8.66346). Vegpunktet er lagt 60 m vest for bekken, på 1075,2 moh.",
+   "Ruta går ikkje rett på toppen til slutt. Ut.no sin eigen linje kjem opp vestom toppen og snur austover dei siste 300 metrane — «så får man toppen i front/til høyre av traséen» — og vegpunktet på 1708,3 moh er der linja snur.",
+   "Fossen ut.no og Fri Flyt seier du skal halde vestsida av, er ikkje kartlagd — korkje som foss i OSM eller som namn i SSR. Bekken er: Nordrestølbekken (SSR-punkt 60.87191/8.66346, OSM way/780402721) er den einaste namngitte bekken linja går forbi, og han renn ned lia frå den høgda Fri Flyt oppgir. Identifiseringa er difor ei slutning frå bekken, og guiden seier det. Vegpunktet er lagt 60 m vest for bekken, på 1075,2 moh."
+  ],
+  "notes": "Fri Flyt: toppunkt 1741, 800 høgdemeter, 2,3 km, startsted Lykkjastølen (stor parkeringsplass), himmelretning S, bratteste punkt under 30 grader, KAST 1 – enkelt, 3 timar opp/ned, GPS toppunkt 155711.732/6766857.855 (UTM33). Ut.no 119917 er ført som ski touring + topptur, 800 høgdemeter, 3,08 km, 3 timar, sesong februar–mai, og gir startpunktet 8.6623/60.8671 på 941 moh. Dei to kjeldene er samde om høgdemeterane og toppen, og skil seg berre i lengd — Fri Flyt måler i luftlinje, ut.no langs linja."
+ },
+ "slettind": {
+  "season": "jan–mai",
+  "aspect": "NV",
+  "grade": 1,
+  "gradeReason": "Fri Flyt fører turen som KAST 1 – enkelt med bratteste punkt under 30 grader, ut.no som easy, og ut.no si eiga skildring seier «terrenget er jevnt og passe bratt mellom 20-25 grader». 470 høgdemeter på 2,5 km frå ein vinteropen riksveg er så enkelt ein topptur blir.",
+  "roadClosedInWinter": false,
+  "teaserNo": "470 høgdemeter frå rv 52 ved Eldrevatn opp ei jamn 20–25-graders flanke — nybegynnartoppen på Hemsedalsfjellet.",
+  "teaserEn": "470 m of climbing from the rv 52 at Eldrevatn up an even 20–25° flank — the beginner's summit on Hemsedalsfjellet.",
+  "hazardNotes": "Ut.no: «Ingen spesiell skredfare hvis man følger de slake partiene, men det er noen helninger som er over 30 grader.» Fri Flyt namngir kva som er brattast: «skredterreng nord for toppen», og åtvarar mot å trekke for langt til høgre i starten av nedkøyringa. Turen ligg på Hemsedalsfjellet der rv 52 stengjer i uvêr, og det er vêret og ikkje terrenget som avlyser dagen.",
+  "sources": [
+   "https://www.friflyt.no/topptur/skiturer-hemsedal/slettind-hemsedal",
+   "https://ut.no/turforslag/118246"
+  ],
+  "confidence": "high",
+  "corrections": [
+   "Toppen måler 1592,0 moh på DTM1 mot Fri Flyt sine 1592 og ut.no sine 1589. Fri Flyt sin GPS-posisjon, 131451.552/6778528.313 i UTM33, konverterer til 60.96894/8.18398 og ligg 2 m frå registerpunktet og 3 m frå cella summit-søket klatra til — tre uavhengige kjelder på same celle.",
+   "Starthøgda er 1122,2 moh på DTM1, og 1592,0 − 1122,2 = 469,8 m. Ut.no oppgir 469 høgdemeter; Fri Flyt sine 500 er runda opp.",
+   "Fri Flyt fører himmelretninga som NV. Det er retninga flanken vender, ikkje retninga ruta går: linja frå Eldrevatn går søraust opp, og det er nordvestsida du kjem opp og køyrer ned. Kortet fører NV etter kjelda."
+  ],
+  "notes": "Fri Flyt: toppunkt 1592, 500 høgdemeter, 2,5 km, startsted Eldrevann på rv 52, himmelretning NV, bratteste punkt under 30 grader, KAST 1 – enkelt, 2,5 timar, GPS toppunkt 131451.552/6778528.313 (UTM33). Ut.no 118246 er ført som ski touring + topptur med KAST 1, 469 høgdemeter, 2,53 km, 2 timar, sesong januar–mai, startpunkt 8.15048/60.98339 på 1122 moh, og kallar fjellet «en knallfin nybegynnertopp» og «topp nr 2 på lange lyse vårdager»."
+ },
+ "kyrkjebonosi": {
+  "season": "feb–mai",
+  "aspect": "V",
+  "grade": 3,
+  "gradeReason": "950 høgdemeter frå bygda til 1671 moh, ut.no fører turen som very tough og Fri Flyt brukar 3–4 timar på han. Skavlen på toppen og den alternative nedkøyringa aust i Trøimsbotn er det som løftar han over ein toar; sjølve normalruta er ikkje bratt.",
+  "roadClosedInWinter": false,
+  "teaserNo": "1000 høgdemeter frå grustaket ved Kyrkjebøen over den første toppen på 1610 og nordover den lange, flate ryggen.",
+  "teaserEn": "1000 m of climbing from the sandpit at Kyrkjebøen over the first top at 1610 and north along the long, flat ridge.",
+  "hazardNotes": "Fri Flyt sine faremoment er «toppskavl og skredfare på den alternative nedkjøringen». Standardnedkøyringa går frå om lag 1600 moh vestover ned den store kvite flanken og svingar sør inn på oppstigningsruta før skoggrensa. Den alternative renna aust mot Trøimsbotn gir 500 meter bratt køyring og er den Fri Flyt åtvarar mot. Toppryggen er lang og flat, og i dårleg sikt er det navigeringa og skavlkanten mot aust som er problemet.",
+  "sources": [
+   "https://www.friflyt.no/topptur/skiturer-hemsedal/turbeskrivelse-kyrkjeboenosi",
+   "https://ut.no/turforslag/116994",
+   "https://hemsedal.com/topp-20/kyrkjeb%C3%B8nn%C3%B8se"
+  ],
+  "confidence": "high",
+  "corrections": [
+   "Fjellet heiter Kyrkjebønosi i turskildringane og er registrert som **Kyrkjebønøse** i SSR. Registerpunktet, 60.89983/8.55075, ligg 700 m sørvest for toppen på 1549,8 moh.",
+   "Toppen måler 1670,5 moh på DTM1 mot 1671 hjå både Fri Flyt og ut.no. Ut.no sin eigen linje endar 15 m frå cella, på 1661 moh i deira eigen høgdeprofil.",
+   "Ut.no seier fjellet har to toppar, «den første på 1610 moh og den høyeste toppen er den bakerste som ligger på 1671 moh». Den første måler 1608,2 moh på DTM1 og ligg 675 m sør for den høgste — det er vegpunktet på ryggen.",
+   "Ein tredje topp 940 m vest for toppunktet måler 1675,0 moh på DTM1 og er altså 4,5 m høgare enn den turen går til. Ingen av kjeldene nemner han, og ut.no sin linje går ikkje dit; kortet fører toppen turen faktisk går til.",
+   "Starthøgda er 722,0 moh på DTM1 mot ut.no sitt startpunkt. 1670,5 − 722,0 = 948,5 m i rein skilnad, mot ut.no sine 991 høgdemeter og Fri Flyt sine 900.",
+   "Ingen av kjeldene oppgir sesong for denne turen. Kortet fører feb–mai, som er det same bandet Nibbi (feb–mai) og Skogshorn (feb–mai) på same fjellside ligg i. Det er ei slutning frå naboturane, ikkje ei kjelde for denne.",
+   "Linja går på vestsida av den vesle toppen rett over skoggrensa, slik Fri Flyt skriv: «gå på vestsiden av den lille toppen rett etter tregrensen. Derfra svinger du igjen østover og følger ryggen opp til toppen». Toppen måler 1298,8 moh på DTM1 og vegpunktet vest for han 1287,9 — 60 m unna.",
+   "Mellom fortoppen på 1608,2 og toppunktet ligg eit skar på 1588,7 moh, som Fri Flyt namngir: «kan du snu på toppen før skaret til fortoppen på 1610 meter». Det er dei 20 metrane linja gir tilbake."
+  ],
+  "notes": "Fri Flyt: toppunkt 1671, 900 høgdemeter, startsted «Sandtaket ved Kyrkjebøn», 3–4 timar, ikkje KAST-klassifisert, faremoment toppskavl og skredfare på den alternative nedkjøringa, og skildrar både standardnedkøyringa vestover og renna aust mot Trøimsbotn. Ut.no 116994 er ført som fottur + topptur, very tough, 991 høgdemeter, 10,2 km, 4,5 timar, sesong juni–oktober, med startpunkt 8.5493/60.8722 på 724 moh, og er kjelda til at fjellet har to toppar. Hemsedal.com fører turen i Topp 20. Ingen av dei tre gir ei vinterskildring av ruta; det er sagt i teksten og er grunnen til at sesongen er ei slutning."
+ },
+ "prestholtskarvet": {
+  "season": "jan–apr",
+  "aspect": "S",
+  "grade": 3,
+  "gradeReason": "Ut.no fører turen som «krevende skitur», tough, 21,6 km tur/retur. Det er ikke bratt terreng som gjør den alvorlig — det er tolv kilometer hver vei og et høyfjellsplatå på 1860 moh der været skifter fortere enn du rekker ned igjen. Prestholtskardet er det eneste stedet ruta er bratt.",
+  "roadClosedInWinter": false,
+  "teaserNo": "Elleve kilometer og 960 høydemeter fra Havsdalen forbi Prestholtstølan og opp Prestholtskardet til Hallingskarvets sørskarv.",
+  "teaserEn": "Eleven kilometres and 960 m of climbing from Havsdalen past Prestholtstølan and up Prestholtskardet to the southern rim of Hallingskarvet.",
+  "hazardNotes": "Ut.no navngir ingen faremomenter ut over at turen «blir oftest gått utpå seinvinter/vår når snøen har satt seg og dagene er lengre», og at den er overkommelig i godvær for alle med noe langrennserfaring. Det er to ting å lese ut av den setningen: den er en godværstur, og «når snøen har satt seg» handler om Prestholtskardet, som er den ene bratte flanken på hele ruta. Oppe på skarvet er problemet vind og sikt — platået er flatt og eksponert, og kanten mot nord faller flere hundre meter.",
+  "sources": [
+   "https://ut.no/turforslag/114555/topptur-pa-ski-til-hallingskarvet",
+   "https://ut.no/turforslag/1111203852"
+  ],
+  "confidence": "high",
+  "corrections": [
+   "Registerpunktet for Prestholtskarvet ligg mellom to toppar på Hallingskarvet-platået. Dei klatrar til 1860,4 og 1857,5 moh og ligg 650 m frå kvarandre; mot ei publisert høgd på 1859 bommar dei med 1,4 og 1,5 m, som er uavgjort. Ut.no sin eigen skilinje endar 20 m frå den høgaste og 660 m frå den lågaste, og registeret kjenner ikkje noko anna Fjell- eller Topp-namn innanfor 2 km. Summit-søket er difor sådd frå siste vertex i ut.no-linja, ført opp i `SUMMIT_SEED` i resolve_summits.py.",
+   "Ut.no fører turen som «Skitur til Hallingskarvet» utan å namngi toppen. Kortet fører Prestholtskarvet, som er det einaste registrerte fjellnamnet på denne delen av skarvet og namnet på skardet ruta går opp.",
+   "Startpunktet i ut.no-linja, 60.54124/8.19270 på 1070 moh, har terrengklasse **Alpinbakke** — det er toppen av heisen i Havsdalen. Korridoren startar i staden på den kartlagde parkeringa nedst i Havsdalen (962,7 moh), som er der du set frå deg bilen. Det legg til 1,7 km og 107 høgdemeter på ut.no sine tal.",
+   "Kontrollmåla på at korridoren følgjer den skildra løypa: Prestholtstølan (SSR 60.54925/8.06494) måler 1242,8 moh på DTM1 og er setra ut.no kallar Prestholtseter, åtte kilometer inn i løypa. Prestholtskardet (SSR 60.55806/8.04504) måler 1639,9, og det er «det bratte Prestholtskaret» som tek deg opp på sjølve Hallingskarvet.",
+   "Avstandane frå registerpunktet til dei to toppane er 550 m til den høgste (1860,4 moh) og 198 m til den lågaste (1857,5). Det er den skilnaden som gjorde at uavgjort-regelen i resolve_top valde feil topp før SUMMIT_SEED blei lagt inn.",
+   "Parkeringa i Havsdalen og ut.no sitt startpunkt på heistoppen ligg 579 m frå kvarandre i luftlinje og 107 høgdemeter frå kvarandre. Den routede linja når 1070-nivået etter 1531 m."
+  ],
+  "notes": "Ut.no 114555 er ført som ski touring + topptur, tough, 855 høydemeter, 21,6 km, sesong januar–april, og navngir hele kjeden: skisenteret i Havsdalen, merket løype til Prestholtseter (åtte km, tråkket daglig, klassisk- og skøytespor), og «det bratte Prestholtskaret» opp på Hallingskarvet. Ut.no 1111203852 er en skitur-rundtur Hakkeset – Grønnebakken – Ustaoset – Prestholt – Geilo som bekrefter at Prestholt-løypa er en vinterløype og ikke en sommersti. Høydemeterne i korridoren er større enn ut.no sine fordi linja starter på parkeringa og ikke på heistoppen."
+ },
+ "ustetind": {
+  "season": "feb–mai",
+  "aspect": "N",
+  "grade": 2,
+  "gradeReason": "390 høydemeter fra parkeringa og fem kilometer i åpent, slakt fjellterreng. Ut.no fører turen som moderate og barnevennlig, bergen365 som en tur en erfaren randonéekjører gjør på en time. Det som gjør den til en toer og ikke en ener er at hele ruta ligger over tregrensa på Hardangervidda, der været kommer uten forvarsel.",
+  "roadClosedInWinter": false,
+  "teaserNo": "410 høydemeter fra Ustaoset forbi Tindevatnet til varden fra 1899, med Hardangervidda i sør og Hallingskarvet i nord.",
+  "teaserEn": "410 m of climbing from Ustaoset past Tindevatnet to the 1899 cairn, Hardangervidda to the south and Hallingskarvet to the north.",
+  "hazardNotes": "Bergen365 navngir tre ting på denne ruta: skjult vassdrag under snøen fra bekkene som krysser lia, ustabil vindtransportert snø over tregrensa, og terrengfeller — og skriver at skredvurdering hører hjemme her selv om hellingene er moderate. «Vær og vind skifter raskt» på dette nivået. Ut.no sin sommerskildring nevner tett vierkratt og myrete partier i lia, som under snøen er det samme som ujevnt underlag og åpne bekker.",
+  "sources": [
+   "https://ut.no/turforslag/116312",
+   "https://ut.no/turforslag/1112249805",
+   "https://bergen365.no/topptur-pa-ski-til-ustetind/"
+  ],
+  "confidence": "medium",
+  "corrections": [
+   "Toppen måler 1375,8 moh på DTM1 mot publiserte 1376, og registerpunktet ligg 15 m frå cella summit-søket klatra til. Ut.no sin linje endar 30 m frå toppen.",
+   "Starthøgda er 988,7 moh på den kartlagde parkeringa, mot 1005,6 på ut.no sitt eige startpunkt 320 m nord. Skilnaden er at ut.no startar oppe i hyttefeltet og parkeringa ligg nede ved vegen.",
+   "Tindevatnet, som ut.no oppgir til 1264 moh, er ikkje namngitt i registeret. Vegpunktet på 1317,4 moh er der linja passerer vatnet på austsida — «før Tindevatnet starter en jevn stigning» er det ut.no seier, og det er den stigninga vegpunktet står i.",
+   "Ingen av ut.no-skildringane er vinterskildringar; begge fører sesong mai–oktober. Bergen365 skildrar den same toppen på ski, men frå eit anna startpunkt — dammen på Ustevatnet via Verpestølvegen frå rv 7, med om lag 400 høgdemeter. Kortet fører ruta frå Ustaoset, som er den som er kartlagd, og sesongen feb–mai er ei slutning frå bergen365 sitt «tidlig eller sent i sesong» og løypesesongen på Hardangervidda."
+  ],
+  "notes": "Ut.no 116312 er ført som fottur + topptur, moderate, 452 høydemeter, 9,4 km tur/retur, sesong mai–oktober, startpunkt 8.0567/60.4935, og oppgir at Ustetind kan bestiges «enten direkte fra Ustaoset, eller fra den private turisthytta Tuva». Ut.no 1112249805 går den andre veien — fra Tuvavegen over toppen til Tuva turisthytte og ned til Ustaoset — og er kilden til at den store varden er fra 1899 og verneverdig. Bergen365 er den eneste kilden som beskriver toppen på ski, og gjør det fra et annet startpunkt; confidence er medium av den grunnen, på samme måte som Surløytenuten og Gyranfisen i Oslo-runden. Avstandane frå startpunktet: Ustaoset stasjon 692 m nordvest, setra Sisseldalen 209 m nordaust, og ut.no sitt eige startpunkt 320 m nord."
+ },
+ "banseterkampen": {
+  "season": "jan–apr",
+  "aspect": "NØ",
+  "grade": 2,
+  "gradeReason": "280 høydemeter i ren forskjell og drøyt fire kilometer inn, i terreng ut.no fører som moderate. Det som gjør den til en toer er eggen: turen går langs kanten av fjellhamrene, og på snø i flatt lys er kanten det eneste på hele ruta som kan gå galt.",
+  "roadClosedInWinter": false,
+  "teaserNo": "330 høydemeter fra Bånsetra opp på en fjellrygg med stup mot sør — Kvitfjells nærmeste fjell, tvers over Lågen.",
+  "teaserEn": "330 m of climbing from Bånsetra onto a ridge that drops away to the south — the nearest real mountain to Kvitfjell, straight across the Lågen.",
+  "hazardNotes": "Ut.no om ryggen: «en spektakulær fjellrygg på vel 1200 meters høyde, med bratte stup mot sør og formidabel utsikt», og «sørover ser vi fjellrygger som går stupbratt et par hundre meter ned». Om sommeren går du på tydelig sti langs kanten; under snø er kanten en skavlkant, og det er den ene tingen denne turen krever at du holder avstand fra. Ellers er problemet navigering — ryggen er lang, og hele returen ut.no beskriver går over åpent seterlandskap uten holdepunkter i tåke.",
+  "sources": [
+   "https://ut.no/turforslag/116712",
+   "https://ut.no/turforslag/1112157424",
+   "https://ut.no/turforslag/1112157457"
+  ],
+  "confidence": "medium",
+  "corrections": [
+   "Toppen måler 1196,1 moh på DTM1 mot ut.no sine 1202 for «høyeste punkt på Bånseterkampen». Registerpunktet ligg 150 m frå cella summit-søket klatra til, og avviket på 5,9 m er det største i denne runden.",
+   "Fjellet er registrert som **Bånsæterkampen** med æ; begge ut.no-skildringane skriv Bånseterkampen med e, og den eine legg til at lokalt talemål brukar fleirtal — Bånseterkampan.",
+   "Prestkampen, som ut.no oppgir til 1244 moh og fører som ein avstikkar frå denne ruta, er eit eige registrert Topp-punkt i Gausdal 2,6 km sørvest for Bånsæterkampen. Han er ikkje på linja, og kortet fører ikkje høgda hans.",
+   "Starthøgda er 913,2 moh på DTM1, terrengklasse DyrketMark — det er setervollen på Bånsetra. Ut.no oppgir 914 for same punkt.",
+   "Ingen av kjeldene er vinterskildringar. Begge fører sesong juni–september. Kortet fører jan–apr, som er ei slutning frå at Bånsetra er eit setergrend- og hyttefelt med brøytt vegnett — Bånsetervegen, Svarttjønnvegen, Tutlidalsvegen og Årnesfeltet er alle kartlagde i OSM — og ikkje ei kjelde for denne turen."
+  ],
+  "notes": "Ut.no 116712 er ruta fra Bånsetra (fottur + topptur, moderate, 518 høydemeter, 10,5 km rundtur, 4 timer) og er den som ligger nærmest Kvitfjell — 6,6 km i luftlinje. Ut.no 1112157424 beskriver samme rygg fra Gammeldalsetra på Gausdal-sida (486 høydemeter, 11,5 km) og er kilden til høyden 1202 for høyeste punkt, til flertallsformen Bånseterkampan og til at «vi går trygt på tydelig sti langs kanten av fjellhamrene». Ut.no 1112157457 er avstikkeren til Prestkampen 1244, «det høyeste fjellet i området rundt Skeikampen». Ingen av de tre er vinterskildringer; confidence er medium av den grunnen."
+ },
+ "nevelfjell": {
+  "season": "des–apr",
+  "aspect": "Ø",
+  "grade": 1,
+  "gradeReason": "260 høydemeter i ren forskjell, fem kilometer på oppkjørte løyper til foten av toppen, og ut.no skriver at «det er ikke lenger opp enn at man kan trappe seg fram selv med smale langrennski». Turen er en ener på terreng. Det som gjør den til en tur og ikke en spasertur er lengden og at siste stykke opp ikke er kjørt opp.",
+  "roadClosedInWinter": false,
+  "teaserNo": "270 høydemeter fra Nordseter over Nevelåsen til Lillehammerfjellets mest besøkte topp, med åpen bu og siktskive på 1089.",
+  "teaserEn": "270 m of climbing from Nordseter over Nevelåsen to the most-visited summit above Lillehammer, with an open hut and a view-finder at 1089.",
+  "hazardNotes": "Ingen av de fire ut.no-skildringene navngir et skredproblem, og terrenget gir dem rett — hele ruta ligger under 25 grader. Faren her er en annen: fem kilometer åpent høyfjell i et område der løypenettet er tett og likt seg selv, og der toppen er det eneste holdepunktet i flatt lys. Ut.no peker på at «løypa opp til selve toppen er ikke oppkjørt» — det er den siste kilometeren du er alene om sporet. Nevelhytta på toppen er sjelden låst og er der nettopp for de dagene.",
+  "sources": [
+   "https://ut.no/turforslag/116677",
+   "https://ut.no/turforslag/115397/topptur-pa-ski-til-nevelfjellet-1089-moh",
+   "https://ut.no/turforslag/114626/topptur-til-nevelfjellet-fra-nevelasen",
+   "https://ut.no/turforslag/1112175540"
+  ],
+  "confidence": "high",
+  "corrections": [
+   "Toppen måler 1090,1 moh på DTM1 mot publiserte 1089, og registerpunktet ligg 60 m frå cella summit-søket klatra til — registeret har namnet på toppen.",
+   "Fjellet er registrert som **Nevelfjell** i Lillehammer kommune; ut.no skriv Nevelfjellet i tre av fire skildringar og Nevelfjell i den fjerde. Toppen ligg på kommunegrensa Lillehammer/Øyer.",
+   "Ei av ut.no-skildringane fører toppen som 1092 moh. Det er 2 m over DTM1, og dei tre andre skriv 1089.",
+   "Starthøgda er 828,1 moh på den kartlagde parkeringa på Nordseter, og ut.no sitt eige startpunkt 45 m unna måler 828,5. 1090,1 − 828,1 = 262 m i rein skilnad, mot ut.no sine 300 høgdemeter for rundturen.",
+   "Nevelhytta, den opne bua med omn som ut.no oppgir at Raudekrossen har på toppen, er registrert som Fritidsbolig 60 m frå toppunktet (SSR 61.20396/10.56990).",
+   "Første versjonen av den routede linja gikk 180 m tvers over tjernet på 904 moh, opptil 94 m fra den kartlagte strandlinja, med terrengklasse Innsjø på fem vertekser. Ut.no sin egen løypelinje går sør for vannet — 61.19444/10.60069, 61.19522/10.59895, 61.19533/10.59739 og 61.19643/10.59393 svarer alle Skog — og et vegpunkt på sørsida (904,9 moh) legger linja tilbake på land. check_ground.py fant den.",
+   "Første versjonen av den routede linja gikk 180 m tvers over Nevelvatnet (904 moh), opptil 94 m fra den kartlagte strandlinja, med terrengklasse Innsjø på fem vertekser. Ut.no sin egen løypelinje går sør og vest om vatnet — 61.19444/10.60069, 61.19522/10.59895, 61.19533/10.59739 og 61.19643/10.59393 svarer alle Skog — og to vegpunkt der legger linja tilbake på land. check_ground.py fant den, og fant den igjen da bare det første vegpunktet var lagt inn (90 m på vatnet)."
+  ],
+  "notes": "Ut.no 116677 er ruta fra Nordseter (ski touring + topptur, moderate, 300 høydemeter, 9,7 km, sesong januar–april og oktober–desember) og gir begge linjevalgene på toppen. Ut.no 115397 er den samme toppen fra toppen av Hafjell, Gaistova eller Pellestova (ski touring + topptur, 203 høydemeter, 4,4 km) — «fra toppen av Hafjell ... er det bare 5-7 km til toppen av Nevelfjellet» — og er grunnen til at turen hører hjemme i en Hafjell-runde. Ut.no 114626 er sommerruta fra Nevelåsen med Nevelhytta og siktskiva, og 1112175540 er en skirundtur fra Nordseter over toppen. Fire uavhengige skildringer, to av dem vinterskildringer."
+ },
+ "ulvsjoberget": {
+  "season": "jan–apr",
+  "aspect": "SØ",
+  "grade": 2,
+  "gradeReason": "295 høgdemeter i rein skilnad og tre kilometer opp — lite på papiret, og ut.no fører likevel turen som tough. Grunnen er at heile stigninga ligg i skog utan sti å sjå under snøen, og at hylla på Stygghammeren vest for toppen er usikra.",
+  "roadClosedInWinter": false,
+  "teaserNo": "300 høydemeter fra Vestby opp gjennom skogen til det åpne fjellet — den høyeste toppen i Trysil utenfor alpinanlegget.",
+  "teaserEn": "300 m of climbing from Vestby up through the forest to open fell — the highest summit in Trysil outside the ski resort.",
+  "hazardNotes": "Ut.no om Stygghammeren: «Hit går du på eget ansvar, og vi anbefaler ikke at du tar med små barn hit, da det er en bratt, usikret fjellhylle.» Ho ligg vest for toppen og er utanfor oppstigningsruta, men er det næraste dette fjellet kjem eit stup, og under snø er kanten ikkje til å sjå. Elles er dette skogsterreng: problemet er å finne fram, ikkje å komme opp.",
+  "sources": [
+   "https://ut.no/turforslag/115128",
+   "https://www.trysil.com/fjelltur/turtilbudet-i-trysil/"
+  ],
+  "confidence": "medium",
+  "corrections": [
+   "Toppen måler 854,2 moh på DTM1 mot ut.no si oppgitte høgd på 851, og registerpunktet ligg 25 m frå cella summit-søket klatra til. Ut.no sin eigen linje har 851 som høgste punkt og passerer 20 m frå toppcella.",
+   "Starthøgda er 559,3 moh på DTM1 mot ut.no sine 558. 854,2 − 559,3 = 294,9 m i rein skilnad, mot ut.no sine 362 høgdemeter for turen tur/retur.",
+   "Stygghammeren, hylla ut.no åtvarar mot, ligg vest for toppen der linja deira held fram og fell til 774 moh. Ho er ikkje på oppstigningsruta, og korridoren går ikkje dit.",
+   "Ut.no fører sesong mai–oktober. Det finst ingen publisert vinterskildring av denne turen; kortet fører jan–apr, som er ei slutning frå at Vestby ligg på fylkesveg 2160 som er brøytt heile året, og ikkje ei kjelde for turen.",
+   "Trysilfjellet, som er kommunetoppen med 1132 moh, er vurdert og forkasta i same runden — sjå den eigne posten. Ulvsjøberget er den høgaste toppen i Trysil med ei publisert rutebeskriving som ikkje går i alpinanlegget."
+  ],
+  "notes": "Ut.no 115128 er ført som fottur + topptur, tough, 362 høgdemeter, 6,5 km tur/retur, 1 time, sesong mai–oktober, startpunkt 12.035/61.2493 på 558 moh, og er merkt «Vandringsrute 47» — det vil seie at ho er ein av dei femten turane i Trysil kommune sitt eige fjellturprogram, som trysil.com listar. Det er dei to kjeldene. Ingen av dei skildrar turen på ski; confidence er medium av den grunnen, på same måte som Surløytenuten og Gyranfisen i Oslo-runden. Ut.no si adkomstskildring: «Fra Trysil sentrum, kryss bro over Trysilelva og fortsett rett fram, opp vestbyvegen (fv 563) og videre til Vestby (17 km) hvor det er skiltet til høyre til parkering. 20 min kjøring fra Trysil sentrum.» OSM fører same veg som fylkesveg 2160."
  }
 }

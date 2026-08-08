@@ -861,5 +861,118 @@
    "figure": "Den fyrste check_ground-kjøringa melde 45 m på vatn på 1335 moh. Det er ikkje vatn: DTM1 gjev terrengklasse Myr på det flate partiet, som er 228 m langt, og fast mark ligg berre 10 m til kvar side. Det flate partiet er myr i Veodalen, og funnet fell bort.",
    "how": "DTM1-terrengklasse på midtpunktet av det flate partiet og perpendikulære profil til kvar side."
   }
+ ],
+ "nibbi": [
+  {
+   "what": "Flankesveip fra toppen, alle åtte peilinger",
+   "figure": "N 4,5° (15,9° 40–100 m ut), NØ 11,8° (18,7° 50–110), Ø 27,6° (32,5° 90–150), SØ 22,8° (30,0° 240–300), S 20,7° (25,8° 190–250), SV 9,6° (16,2° 30–90), V 6,9° (12,6° 300–360), NV 10,6° (15,9° 320–380)",
+   "how": "python3 flank_probe.py 60.88661 8.6501 — radial 400 m ut fra toppunktet, samplet hver 10 m på DTM1-rasteret, med bratteste 60-metersvindu per retning."
+  },
+  {
+   "what": "Varslingsregionen toppunktet ligger i",
+   "figure": "Hallingdal, region 3032, type A. A-region: varsles hver dag i sesongen.",
+   "how": "NVEs varsom-API, AvalancheWarningByCoordinates/Simple på toppunktets koordinat — samme kall lib/avalanche.ts gjør fra kartet."
+  }
+ ],
+ "slettind": [
+  {
+   "what": "Flankesveip fra toppen, alle åtte peilinger",
+   "figure": "N 13,8° (25,7° 100–160 m ut), NØ 8,5° (18,6° 10–70), Ø 5,6° (14,5° 0–60), SØ 10,4° (24,8° 250–310), S 9,7° (20,6° 180–240), SV 25,9° (49,2° 220–280), V 19,8° (29,1° 130–190), NV 18,0° (27,2° 110–170)",
+   "how": "python3 flank_probe.py 60.96896 8.18399 — radial 400 m ut fra toppunktet, samplet hver 10 m på DTM1-rasteret, med bratteste 60-metersvindu per retning."
+  },
+  {
+   "what": "Nordsida mot Mørkedalen og vestsida, ut til en kilometer",
+   "figure": "N 11,0° i snitt med 24,9° i vinduet 100–160 m ut; NV 18,4° med 26,6° i 100–160; V 23,9° med 52,5° i vinduet 660–720; SV 23,6° med 49,5° i 360–420.",
+   "how": "python3 flank_probe.py 60.96896 8.18399 --out 1000 --step 20."
+  },
+  {
+   "what": "Varslingsregionen toppunktet ligger i",
+   "figure": "Hallingdal, region 3032, type A. A-region: varsles hver dag i sesongen.",
+   "how": "NVEs varsom-API, AvalancheWarningByCoordinates/Simple på toppunktets koordinat — samme kall lib/avalanche.ts gjør fra kartet."
+  }
+ ],
+ "kyrkjebonosi": [
+  {
+   "what": "Flankesveip fra toppen, alle åtte peilinger",
+   "figure": "N 27,5° (34,2° 270–330 m ut), NØ 33,0° (48,0° 0–60), Ø 28,9° (46,0° 10–70), SØ 25,6° (36,8° 50–110), S 11,5° (22,9° 20–80), SV 12,3° (17,4° 170–230), V 11,3° (15,0° 210–270), NV 16,6° (23,2° 90–150)",
+   "how": "python3 flank_probe.py 60.90555 8.55601 — radial 400 m ut fra toppunktet, samplet hver 10 m på DTM1-rasteret, med bratteste 60-metersvindu per retning."
+  },
+  {
+   "what": "Varslingsregionen toppunktet ligger i",
+   "figure": "Hallingdal, region 3032, type A. A-region: varsles hver dag i sesongen.",
+   "how": "NVEs varsom-API, AvalancheWarningByCoordinates/Simple på toppunktets koordinat — samme kall lib/avalanche.ts gjør fra kartet."
+  }
+ ],
+ "prestholtskarvet": [
+  {
+   "what": "Flankesveip fra toppen, alle åtte peilinger",
+   "figure": "N 1,8° (2,6° 340–400 m ut), NØ 4,3° (6,6° 160–220), Ø 3,0° (8,5° 90–150), SØ 4,5° (6,1° 150–210), S 2,5° (6,2° 340–400), SV 7,0° (14,5° 340–400), V 9,1° (25,1° 340–400), NV 3,6° (8,1° 310–370)",
+   "how": "python3 flank_probe.py 60.55843 8.0126 — radial 400 m ut fra toppunktet, samplet hver 10 m på DTM1-rasteret, med bratteste 60-metersvindu per retning."
+  },
+  {
+   "what": "Sørveggen på Hallingskarvet, ut til halvannen kilometer",
+   "figure": "SØ 14,7° i snitt med 66,0° i vinduet 1225–1275 m ut; S 18,1° med 51,1° i vinduet 925–975; SV 11,2° med 49,3° i vinduet 475–525; V 1,0° med 30,1° i vinduet 425–475. Nord er flatt hele veien: 2,0° i snitt med et bratteste vindu på 6,6°, og NØ 4,3° med 12,0°.",
+   "how": "python3 flank_probe.py 60.55843 8.01260 --out 1500 --step 25."
+  },
+  {
+   "what": "Varslingsregionen toppunktet ligger i",
+   "figure": "Hallingdal, region 3032, type A. A-region: varsles hver dag i sesongen.",
+   "how": "NVEs varsom-API, AvalancheWarningByCoordinates/Simple på toppunktets koordinat — samme kall lib/avalanche.ts gjør fra kartet."
+  }
+ ],
+ "ustetind": [
+  {
+   "what": "Flankesveip fra toppen, alle åtte peilinger",
+   "figure": "N 9,9° (15,2° 70–130 m ut), NØ 8,8° (16,4° 50–110), Ø 9,3° (21,6° 340–400), SØ 13,0° (28,9° 110–170), S 12,4° (25,4° 20–80), SV 12,1° (27,5° 160–220), V 10,7° (19,3° 250–310), NV 10,8° (22,2° 90–150)",
+   "how": "python3 flank_probe.py 60.45856 8.0902 — radial 400 m ut fra toppunktet, samplet hver 10 m på DTM1-rasteret, med bratteste 60-metersvindu per retning."
+  },
+  {
+   "what": "Varslingsregionen toppunktet ligger i",
+   "figure": "Hallingdal, region 3032, type A. A-region: varsles hver dag i sesongen.",
+   "how": "NVEs varsom-API, AvalancheWarningByCoordinates/Simple på toppunktets koordinat — samme kall lib/avalanche.ts gjør fra kartet."
+  }
+ ],
+ "banseterkampen": [
+  {
+   "what": "Flankesveip fra toppen, alle åtte peilinger",
+   "figure": "N 9,0° (15,0° 60–120 m ut), NØ 6,3° (10,6° 140–200), Ø 21,0° (38,0° 30–90), SØ 25,5° (45,2° 30–90), S 23,0° (39,8° 40–100), SV 18,7° (42,5° 180–240), V 3,9° (12,8° 10–70), NV 8,5° (14,8° 30–90)",
+   "how": "python3 flank_probe.py 61.39144 10.10642 — radial 400 m ut fra toppunktet, samplet hver 10 m på DTM1-rasteret, med bratteste 60-metersvindu per retning."
+  },
+  {
+   "what": "Varslingsregionen toppunktet ligger i",
+   "figure": "Oppland sør, region 3042, type B. B-region: varsles bare når faregraden ventes å bli 4 eller 5, så de fleste vinterdager finnes det ingen vurdering å lese.",
+   "how": "NVEs varsom-API, AvalancheWarningByCoordinates/Simple på toppunktets koordinat — samme kall lib/avalanche.ts gjør fra kartet."
+  }
+ ],
+ "nevelfjell": [
+  {
+   "what": "Flankesveip fra toppen, alle åtte peilinger",
+   "figure": "N 11,1° (19,3° 160–220 m ut), NØ 10,5° (15,1° 340–400), Ø 3,8° (8,5° 320–380), SØ 5,9° (14,9° 180–240), S 8,7° (16,4° 330–390), SV 7,4° (14,4° 280–340), V 3,4° (8,2° 90–150), NV 8,8° (11,1° 70–130)",
+   "how": "python3 flank_probe.py 61.20491 10.56762 — radial 400 m ut fra toppunktet, samplet hver 10 m på DTM1-rasteret, med bratteste 60-metersvindu per retning."
+  },
+  {
+   "what": "Varslingsregionen toppunktet ligger i",
+   "figure": "Oppland sør, region 3042, type B. B-region: varsles bare når faregraden ventes å bli 4 eller 5, så de fleste vinterdager finnes det ingen vurdering å lese.",
+   "how": "NVEs varsom-API, AvalancheWarningByCoordinates/Simple på toppunktets koordinat — samme kall lib/avalanche.ts gjør fra kartet."
+  }
+ ],
+ "ulvsjoberget": [
+  {
+   "what": "Flankesveip fra toppen, alle åtte peilinger",
+   "figure": "N 4,9° (11,4° 10–70 m ut), NØ 4,6° (14,2° 10–70), Ø 8,0° (16,1° 20–80), SØ 5,0° (9,3° 70–130), S 13,0° (24,3° 340–400), SV 23,9° (49,2° 330–390), V 13,0° (24,5° 340–400), NV 6,2° (12,6° 150–210)",
+   "how": "python3 flank_probe.py 61.26561 12.018 — radial 400 m ut fra toppunktet, samplet hver 10 m på DTM1-rasteret, med bratteste 60-metersvindu per retning."
+  },
+  {
+   "what": "Varslingsregionen toppunktet ligger i",
+   "figure": "Hedmark, region 3043, type B. B-region: varsles bare når faregraden ventes å bli 4 eller 5, så de fleste vinterdager finnes det ingen vurdering å lese.",
+   "how": "NVEs varsom-API, AvalancheWarningByCoordinates/Simple på toppunktets koordinat — samme kall lib/avalanche.ts gjør fra kartet."
+  }
+ ],
+ "trysilfjellet": [
+  {
+   "what": "Terrengklassen langs ut.nos linje fra Fageråsen — grunnen til at turen ble forkastet",
+   "figure": "Seksten prøvepunkt jevnt fordelt langs sporet til turforslag 1112155777. Seks av dem svarer Alpinbakke: 938,6 / 956,6 / 981,5 / 1002,3 moh sammenhengende, og 1092,0 lenger opp. Resten er ÅpentOmråde eller uten klasse. Skihytta-ruta (1112155778) sier det selv: «Følg merket sti oppover i slalåmbakken.»",
+   "how": "Kartverkets punkt-API (hoydedata/v1/punkt) på hvert fjerde trackpunkt i ut.nos GPX for turen."
+  }
  ]
 }
