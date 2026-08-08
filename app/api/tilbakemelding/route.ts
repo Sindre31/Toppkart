@@ -1,7 +1,10 @@
 import { NextResponse } from "next/server";
 
 import { getViewer } from "@/lib/access";
+import { sendFeedbackNotice } from "@/lib/email";
+import type { Lang } from "@/lib/i18n";
 import { FEEDBACK_MAX_LENGTH } from "@/lib/i18n/feedback";
+import { requestOrigin } from "@/lib/origin";
 import { getSupabaseAdminClient } from "@/lib/supabase/server";
 
 /** «Gi tilbakemelding» — writes one row to `tk_feedback`.
@@ -58,17 +61,40 @@ export async function POST(request: Request) {
      has no row in auth.users, so it would fail the foreign key. */
   const userId = viewer.userId && !viewer.userId.startsWith("demo:") ? viewer.userId : null;
 
+  const path = str(payload.path).slice(0, 512) || null;
+  const lang: Lang = payload.lang === "en" ? "en" : "no";
+
   const { error } = await admin.from("tk_feedback").insert({
     user_id: userId,
     email: viewer.email,
     message,
-    path: str(payload.path).slice(0, 512) || null,
-    lang: payload.lang === "en" ? "en" : "no",
+    path,
+    lang,
   });
 
   if (error) {
     console.error("[tilbakemelding] kunne ikke lagre:", error.message);
     return NextResponse.json({ error: "unavailable" }, { status: 502 });
+  }
+
+  /* Tell whoever is in `ADMIN_EMAILS`. The row is already written, and the
+     reader's submission succeeded the moment it was — so a mail server having
+     a bad day must not turn their «takk» into an error. `sendFeedbackNotice`
+     never throws, and the `catch` is there for the case where that stops being
+     true rather than because it currently can.
+     Awaited rather than fired and forgotten: on a serverless runtime the
+     function can be frozen the instant the response is returned, and a promise
+     nobody is waiting on is a promise that may never run. */
+  try {
+    await sendFeedbackNotice({
+      message,
+      from: viewer.email,
+      path,
+      readerLang: lang,
+      origin: requestOrigin(request),
+    });
+  } catch (cause) {
+    console.error("[tilbakemelding] varsel feilet:", cause);
   }
 
   return NextResponse.json({ ok: true });

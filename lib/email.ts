@@ -1,15 +1,22 @@
 import { Resend } from "resend";
-import { PRICE, SITE, TRIAL_DAYS, env, isResendConfigured } from "@/lib/config";
+import { PRICE, SITE, TRIAL_DAYS, adminEmails, env, isResendConfigured } from "@/lib/config";
 import { htmlLang, type Lang } from "@/lib/i18n";
 import { siteMeta } from "@/lib/i18n/common";
 import { systemDict } from "@/lib/i18n/system";
 
 /** Transactional email via Resend.
  *
- *  Three messages, in the product's voice: calm, factual, no exclamation marks,
- *  no marketing. Each one is written in the reader's language — every send
- *  function takes an optional `lang`, defaulting to Norwegian so a caller that
- *  has no language to hand keeps sending exactly what it always sent.
+ *  Three messages to readers, in the product's voice: calm, factual, no
+ *  exclamation marks, no marketing. Each one is written in the reader's
+ *  language — every send function takes an optional `lang`, defaulting to
+ *  Norwegian so a caller that has no language to hand keeps sending exactly
+ *  what it always sent.
+ *
+ *  And one to the operator: `sendFeedbackNotice`. It is the odd one out on
+ *  purpose — always Norwegian, addressed off `ADMIN_EMAILS` rather than to a
+ *  subscriber, and the only message that carries text somebody else wrote.
+ *  That last part is why every string the layout renders goes through
+ *  `escapeHtml`; it did before, but now it matters.
  *
  *  When `RESEND_API_KEY` is absent (demo mode) every function logs what it would
  *  have sent and resolves successfully. Nothing here ever throws — a failed
@@ -124,6 +131,11 @@ interface LayoutOptions {
   paragraphs?: string[];
   cta?: { label: string; href: string };
   footnote?: string;
+  /** Overrides «Du får denne e-posten fordi du har et abonnement hos …» in the
+   *  footer. The default is true of the three messages that go to readers and
+   *  false of the one that goes to the operator, who gets it because the
+   *  address is in `ADMIN_EMAILS`. */
+  reason?: string;
 }
 
 function renderRows(rows: Row[]): string {
@@ -139,7 +151,7 @@ function renderRows(rows: Row[]): string {
 }
 
 function layout(options: LayoutOptions, lang: Lang): string {
-  const { kicker, heading, intro, rows = [], paragraphs = [], cta, footnote } = options;
+  const { kicker, heading, intro, rows = [], paragraphs = [], cta, footnote, reason } = options;
   const site = siteMeta(lang);
   const t = systemDict(lang);
 
@@ -185,7 +197,7 @@ function layout(options: LayoutOptions, lang: Lang): string {
     <tr>
       <td style="padding:20px 0 0;border-top:1px solid ${HAIRLINE};font-size:12px;line-height:20px;color:${MUTED};">
         ${escapeHtml(site.name)} — ${escapeHtml(site.tagline)}<br>
-        ${escapeHtml(t.emailFooterReason(site.name))}<br>
+        ${escapeHtml(reason ?? t.emailFooterReason(site.name))}<br>
         ${escapeHtml(t.emailFooterSupport)} <a href="mailto:${escapeHtml(SITE.supportEmail)}" style="color:${MUTED};">${escapeHtml(SITE.supportEmail)}</a>
       </td>
     </tr>
@@ -229,6 +241,10 @@ async function send(
   subject: string,
   options: LayoutOptions,
   lang: Lang,
+  /** Overrides the support mailbox. The feedback notice sets it to the reader
+   *  who wrote in, so «svar» goes to the person with the question rather than
+   *  to the shared box the operator is already reading. */
+  replyTo?: string,
 ): Promise<EmailResult> {
   const resend = getResend();
 
@@ -244,7 +260,7 @@ async function send(
       from: env.fromEmail,
       // Sent from a no-reply address, so point replies at the support mailbox
       // rather than letting them fall into a box nobody opens.
-      replyTo: SITE.supportEmail,
+      replyTo: replyTo || SITE.supportEmail,
       to,
       subject,
       html: layout(options, lang),
@@ -263,7 +279,7 @@ async function send(
 }
 
 // ---------------------------------------------------------------------------
-// The three messages
+// The three messages to readers
 // ---------------------------------------------------------------------------
 
 export interface WelcomeEmailInput {
@@ -402,4 +418,83 @@ export async function sendTrialEndingEmail(input: TrialEndingEmailInput): Promis
     },
     lang,
   );
+}
+
+// ---------------------------------------------------------------------------
+// The operator's notice
+// ---------------------------------------------------------------------------
+
+export interface FeedbackNoticeInput {
+  /** What the reader wrote. Passed through the layout's escaping like any other
+   *  string — see `escapeHtml` — so it may contain anything a text area can. */
+  message: string;
+  /** The reader's address, when there was a session. Feedback does not require
+   *  one, and the people worth hearing from are often the ones who never signed
+   *  up, so this is frequently null. */
+  from?: string | null;
+  /** Which page they were on when they wrote. */
+  path?: string | null;
+  /** The language *they* were reading in — a fact about the reader, not the
+   *  language this notice is written in. */
+  readerLang?: Lang;
+  /** Origin to build the admin link from, read off the request so a preview
+   *  deployment links to itself rather than to production. */
+  origin?: string;
+}
+
+/** Tell the operator that feedback landed.
+ *
+ *  Written in Norwegian regardless of the reader's language, because it is not
+ *  product copy: it goes to whoever is in `ADMIN_EMAILS`, and there is no
+ *  language preference stored for them to honour. The reader's own language is
+ *  a row in the table instead, since it decides which language to answer in.
+ *
+ *  Nothing here is allowed to matter to the reader. `/api/tilbakemelding` has
+ *  already written the row by the time this runs, and the submission is a
+ *  success whether or not the notice goes out — see the call site.
+ */
+export async function sendFeedbackNotice(input: FeedbackNoticeInput): Promise<EmailResult> {
+  const recipients = adminEmails();
+  if (!recipients.length) {
+    // Not a misconfiguration worth shouting about: a deployment with no admins
+    // listed is one where nobody asked to be told.
+    return { sent: false, skipped: true };
+  }
+
+  const origin = input.origin || env.siteUrl;
+  const rows: Row[] = [
+    { label: "Fra", value: input.from || "Ikke innlogget" },
+    { label: "Side", value: input.path || "Ukjent" },
+    { label: "Språk", value: input.readerLang === "en" ? "Engelsk" : "Norsk" },
+  ];
+
+  /* One send per admin rather than one with everybody in `to`: a single bad
+     address in the list would otherwise take the whole notice with it. */
+  const results = await Promise.all(
+    recipients.map((to) =>
+      send(
+        to,
+        "Ny tilbakemelding på Toppkart",
+        {
+          kicker: "Tilbakemelding",
+          heading: "Noen skrev inn",
+          intro: input.from
+            ? `${input.from} har sendt en tilbakemelding.`
+            : "En leser uten konto har sendt en tilbakemelding.",
+          rows,
+          paragraphs: [input.message],
+          cta: { label: "Åpne tilbakemeldingene", href: `${origin}/admin/tilbakemeldinger` },
+          reason: "Du får denne e-posten fordi adressen din står i ADMIN_EMAILS.",
+        },
+        "no",
+        // Reply goes to the reader when there is one to reply to.
+        input.from ?? undefined,
+      ),
+    ),
+  );
+
+  return {
+    sent: results.some((r) => r.sent),
+    skipped: results.every((r) => r.skipped),
+  };
 }
