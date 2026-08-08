@@ -492,6 +492,24 @@ def states_gap(text, worst_m, tol=15.0):
     return False
 
 
+def quoted_spans(text):
+    """Character ranges that sit inside «…».
+
+    The guides quote their sources with guillemets and nothing else uses them,
+    so this is a reliable way to tell «what ut.no says» from «what this guide
+    claims» — which are not the same sentence and must not be checked as if
+    they were.
+    """
+    spans, start = [], None
+    for i, ch in enumerate(text):
+        if ch == "«":
+            start = i
+        elif ch == "»" and start is not None:
+            spans.append((start, i))
+            start = None
+    return spans
+
+
 def check_side(slug, rec, text, stream_els):
     """«til høyre for Veslebekken» — measured rather than repeated.
 
@@ -499,10 +517,25 @@ def check_side(slug, rec, text, stream_els):
     that from the trailhead-to-summit bearing. That only works where the tour
     runs broadly north or south, so a route that runs east or west is reported
     as unmeasurable rather than answered with a coin flip.
+
+    A side named *inside* guillemets is a source being quoted, not a claim being
+    made. Storbekkhøa is the case: its guide sets ut.no's «til høyre for
+    Veslebekken» against Fri Flyt's line up Storbekken, says which of the two the
+    map follows, and then states its own measured relationship to both streams.
+    Measuring the line against the advice it explicitly did not take reported a
+    guide that had done everything right.
+
+    Those are reported as notes rather than findings — the same shape of rule
+    `check_guides` uses for negated reassurance and `check_trail` for «utenfor
+    oppkjørte løyper». Note rather than silence on purpose: a quoted side is
+    still worth a human glance, because a guide *may* quote a source and then
+    follow it, and this cannot tell those apart. What it can do is stop calling
+    it a defect.
     """
-    claims = SIDE_RE.findall(text)
+    claims = [(m, m.group(2), m.group(3)) for m in SIDE_RE.finditer(text)]
     if not claims:
         return []
+    quotes = quoted_spans(text)
     if stream_els is None:
         return ["note: names a right/left-of-stream side — UNCHECKED, Overpass would not answer"]
     pts = rec["points"]
@@ -514,7 +547,8 @@ def check_side(slug, rec, text, stream_els):
         ]
     ways = stream_els
     findings = []
-    for _, hand, name in claims:
+    for match, hand, name in claims:
+        quoted = any(a < match.start() < b for a, b in quotes)
         want_right = hand.lower().startswith("hø")
         base = name.rstrip(".,;:").lower()
         # The register and the guidebooks disagree about the joining vowel —
@@ -546,15 +580,19 @@ def check_side(slug, rec, text, stream_els):
         if not sides:
             continue
         on_right = sum(sides) / len(sides)
-        if want_right and on_right < 0.5:
-            findings.append(
-                f"says the line runs to the right of {name}, but {100 * (1 - on_right):.0f}% "
-                f"of the vertices beside it are on the left"
+        said = "right" if want_right else "left"
+        other = "left" if want_right else "right"
+        disagrees = (100 * (1 - on_right)) if want_right else (100 * on_right)
+        if (want_right and on_right < 0.5) or (not want_right and on_right > 0.5):
+            where = (
+                f"the {said} of {name}, but {disagrees:.0f}% of the vertices beside it "
+                f"are on the {other}"
             )
-        if not want_right and on_right > 0.5:
             findings.append(
-                f"says the line runs to the left of {name}, but {100 * on_right:.0f}% "
-                f"of the vertices beside it are on the right"
+                f"note: a quoted source puts the line on {where} — the guide is repeating "
+                f"a source here rather than making the claim itself"
+                if quoted
+                else f"says the line runs to {where}"
             )
     return findings
 

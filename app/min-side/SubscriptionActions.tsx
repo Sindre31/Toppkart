@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import type { Lang } from "@/lib/i18n";
@@ -9,12 +10,19 @@ import { accountDict } from "@/lib/i18n/account";
  *  Alt som endrer abonnementet går via /api/subscription, som slår opp
  *  abonnementet på nytt fra sesjonen. */
 export function SubscriptionActions({
-  cancelled,
+  mode,
   periodEnd,
   lang,
 }: {
-  /** True når abonnementet allerede er avsluttet / avsluttes ved periodeslutt. */
-  cancelled: boolean;
+  /** Hvilken av de tre veiene videre som finnes herfra.
+   *
+   *  Dette var en `cancelled`-boolean, og den slo sammen to tilstander som
+   *  trenger hver sin knapp. «Gjenoppta» skrur av `cancel_at_period_end` på et
+   *  levende abonnement — men er perioden ute, har Stripe slettet abonnementet,
+   *  og da finnes det ingenting å skru av: kallet svarer 502, og den som
+   *  faktisk har falt ut står i en blindvei med den ene knappen som ikke kan
+   *  virke for dem. Veien tilbake derfra går gjennom kassa. */
+  mode: "cancel" | "resume" | "restart";
   /** Ferdig formatert dato, f.eks. «12. august 2026» — already localised by the
    *  page, so the dialog only has to drop it into the sentence. */
   periodEnd: string;
@@ -110,10 +118,16 @@ export function SubscriptionActions({
         <button className="btn btn-secondary" type="button" disabled={busy} onClick={openPortal}>
           {t.changePaymentMethod}
         </button>
-        {cancelled ? (
+        {mode === "resume" ? (
           <button className="btn btn-primary" type="button" disabled={busy} onClick={() => submit("resume")}>
             {t.resumeSubscription}
           </button>
+        ) : mode === "restart" ? (
+          /* En lenke og ikke en knapp: det finnes ikke noe abonnement å endre
+             lenger, så dette er et nytt kjøp og går gjennom kassa. */
+          <Link className="btn btn-primary" href="/betaling">
+            {t.restartSubscription}
+          </Link>
         ) : (
           <button className="btn btn-ghost" type="button" disabled={busy} onClick={openDialog}>
             {t.cancelSubscription}
