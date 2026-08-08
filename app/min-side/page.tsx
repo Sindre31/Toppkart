@@ -5,7 +5,7 @@ import { Blueprint, SectionKicker } from "@/components/Blueprint";
 import { SiteFooter, SiteNav } from "@/components/SiteChrome";
 import { getViewer } from "@/lib/access";
 import { getInvoices } from "@/lib/invoices";
-import { formatDate } from "@/lib/dates";
+import { formatDate, toDate } from "@/lib/dates";
 import type { Lang } from "@/lib/i18n";
 import { getLang } from "@/lib/i18n/server";
 import { accountDict, type AccountDict } from "@/lib/i18n/account";
@@ -29,14 +29,30 @@ export async function generateMetadata(): Promise<Metadata> {
 const MUTED_70 = "color-mix(in srgb, var(--color-text) 70%, transparent)";
 const MUTED_60 = "color-mix(in srgb, var(--color-text) 60%, transparent)";
 
-/** The plate is a *view* of the subscription: `cancelled` folds together a
- *  canceled status and one that merely ends at period end. The underlying
- *  `Subscription["status"]` values are never rewritten. */
-type PlateState = "none" | "trialing" | "active" | "cancelled" | "past_due";
+/** The plate is a *view* of the subscription. The underlying
+ *  `Subscription["status"]` values are never rewritten.
+ *
+ *  `ending` and `cancelled` used to be one state, and that was wrong in the
+ *  place it is read fastest. Say opp midt i prøveperioden og merket sa
+ *  «Avsluttet» med fjorten dagers tilgang igjen. Notatet under sa riktig nok
+ *  «tilgang ut perioden», men et statusmerke leses for seg — det er hele
+ *  poenget med et merke — og «Avsluttet» ved siden av låste guider er den
+ *  naturlige slutninga.
+ *
+ *  Skillet går på om perioden faktisk er over, ikke på hvilket flagg Stripe
+ *  har satt: et abonnement med `cancelAtPeriodEnd` og to uker igjen er ikke
+ *  avsluttet, og et med status `canceled` og perioden bak seg er det. */
+type PlateState = "none" | "trialing" | "active" | "ending" | "cancelled" | "past_due";
 
 function stateOf(sub: Subscription | null): PlateState {
   if (!sub || sub.status === "none") return "none";
-  if (sub.status === "canceled" || sub.cancelAtPeriodEnd) return "cancelled";
+  if (sub.status === "canceled" || sub.cancelAtPeriodEnd) {
+    /* Samme dato `grantsAccess` dømmer etter, så merket og tilgangen ikke kan
+       si hver sin ting. `trialEnd` er reserven: i en oppsagt prøveperiode er
+       de to like, men raden kan mangle den ene. */
+    const endsAt = toDate(sub.currentPeriodEnd ?? sub.trialEnd);
+    return endsAt && endsAt.getTime() > Date.now() ? "ending" : "cancelled";
+  }
   if (sub.status === "trialing") return "trialing";
   if (sub.status === "past_due") return "past_due";
   return "active";
@@ -69,6 +85,9 @@ export default async function MinSidePage() {
   const trialDate = dateLabel(sub?.trialEnd ?? sub?.currentPeriodEnd, lang);
   const periodDate = dateLabel(sub?.currentPeriodEnd, lang);
   const dialogDate = (state === "trialing" ? trialDate : periodDate) ?? t.periodEndFallback;
+  /* Dagen tilgangen faktisk tar slutt, formatert for «Avsluttes …». Samme kilde
+     og samme rekkefølge som `stateOf` dømmer etter. */
+  const endDate = periodDate ?? trialDate;
 
   const plate: { label: string; tag: string; note: string } = {
     none: {
@@ -88,6 +107,14 @@ export default async function MinSidePage() {
       tag: "tag-accent",
       note: yearly ? t.noteRenewsYearly : t.noteRenewsMonthly,
     },
+    ending: {
+      label: endDate ? t.statusEnding(endDate) : t.statusEndingUndated,
+      /* Aksent, ikke nøytral: fargen skiller «du har tilgang» fra «du har det
+         ikke» på de fire andre tilstandene, og her har man det. Datoen i
+         etiketten er det som sier at den tar slutt. */
+      tag: "tag-accent",
+      note: t.noteEnding,
+    },
     cancelled: {
       label: t.statusCancelled,
       tag: "tag-neutral",
@@ -103,7 +130,9 @@ export default async function MinSidePage() {
   const nextCharge =
     state === "cancelled"
       ? t.nextChargeNone
-      : state === "trialing"
+      : state === "ending"
+        ? t.nextChargeEnding
+        : state === "trialing"
         ? trialDate
           ? t.nextChargeOn(priceLabel, trialDate)
           : t.nextChargeAfterTrial(priceLabel)
@@ -195,8 +224,11 @@ export default async function MinSidePage() {
                     ))}
                   </tbody>
                 </table>
+                {/* Begge de oppsagte tilstandene, så knapperaden er den samme
+                    som før splitten: «Gjenoppta» framfor «Avslutt» så snart
+                    abonnementet er sagt opp. */}
                 <SubscriptionActions
-                  cancelled={state === "cancelled"}
+                  cancelled={state === "ending" || state === "cancelled"}
                   periodEnd={dialogDate}
                   lang={lang}
                 />

@@ -52,6 +52,15 @@ export interface AccountDict {
   statusNone: string;
   statusTrialing: string;
   statusActive: string;
+  /** Oppsagt, men perioden løper enda: «Avsluttes 22. august 2026».
+   *
+   *  Egen tilstand fordi merket ellers sier «Avsluttet» i det sekundet noen
+   *  sier opp, med to uker igjen av tilgangen. Notatet under sa riktig nok
+   *  «tilgang ut perioden», men et merke leses for seg, og «Avsluttet» leses
+   *  som at guidene er stengt nå. */
+  statusEnding: (date: string) => string;
+  /** Samme tilstand uten dato — vi vet at den avsluttes, ikke når. */
+  statusEndingUndated: string;
   statusCancelled: string;
   statusPastDue: string;
   noteNone: string;
@@ -59,6 +68,7 @@ export interface AccountDict {
   noteTrial: (price: string) => string;
   noteRenewsMonthly: string;
   noteRenewsYearly: string;
+  noteEnding: string;
   noteCancelled: string;
   notePastDue: string;
   startTrial: string;
@@ -67,6 +77,10 @@ export interface AccountDict {
   rowPaymentMethod: string;
   rowMemberSince: string;
   nextChargeNone: string;
+  /** Oppsagt, men perioden løper: det kommer ingen trekk, og abonnementet er
+   *  ikke avsluttet ennå — så «Ingen — abonnementet er avsluttet» ville vært
+   *  feil på begge halvdeler. */
+  nextChargeEnding: string;
   nextChargeOn: (price: string, date: string) => string;
   nextChargeAfterTrial: (price: string) => string;
   nextChargeAtRenewal: (price: string) => string;
@@ -136,6 +150,8 @@ const ACCOUNT: Translated<AccountDict> = {
     statusNone: "Ingen abonnement",
     statusTrialing: "Prøveperiode",
     statusActive: "Aktiv",
+    statusEnding: (date) => `Avsluttes ${date}`,
+    statusEndingUndated: "Avsluttes ved periodeslutt",
     statusCancelled: "Avsluttet",
     statusPastDue: "Betaling mangler",
     noteNone:
@@ -144,13 +160,15 @@ const ACCOUNT: Translated<AccountDict> = {
     noteTrial: (price) => `Gratis prøveperiode — deretter ${price}.`,
     noteRenewsMonthly: "Fornyes automatisk hver måned.",
     noteRenewsYearly: "Fornyes automatisk hvert år.",
-    noteCancelled: "Tilgang ut perioden — ingen flere trekk.",
+    noteEnding: "Tilgang ut perioden — ingen flere trekk.",
+    noteCancelled: "Abonnementet er avsluttet, og turguidene er låst igjen.",
     notePastDue: "Vi fikk ikke trukket siste betaling — oppdater betalingsmetoden.",
     startTrial: "Start gratis prøveperiode",
     rowNextCharge: "Neste trekk",
     rowPaymentMethod: "Betalingsmetode",
     rowMemberSince: "Medlem siden",
     nextChargeNone: "Ingen — abonnementet er avsluttet",
+    nextChargeEnding: "Ingen flere trekk",
     nextChargeOn: (price, date) => `${price} den ${date}`,
     nextChargeAfterTrial: (price) => `${price} når prøveperioden er over`,
     nextChargeAtRenewal: (price) => `${price} ved neste fornyelse`,
@@ -216,6 +234,8 @@ const ACCOUNT: Translated<AccountDict> = {
     statusNone: "No subscription",
     statusTrialing: "Free trial",
     statusActive: "Active",
+    statusEnding: (date) => `Ends ${date}`,
+    statusEndingUndated: "Ends at the end of the period",
     statusCancelled: "Cancelled",
     statusPastDue: "Payment due",
     noteNone:
@@ -224,13 +244,15 @@ const ACCOUNT: Translated<AccountDict> = {
     noteTrial: (price) => `Free trial — then ${price}.`,
     noteRenewsMonthly: "Renews automatically every month.",
     noteRenewsYearly: "Renews automatically every year.",
-    noteCancelled: "Access runs to the end of the period — no further charges.",
+    noteEnding: "Access runs to the end of the period — no further charges.",
+    noteCancelled: "The subscription has ended, and the guides are locked again.",
     notePastDue: "The last payment did not go through — update your payment method.",
     startTrial: "Start free trial",
     rowNextCharge: "Next charge",
     rowPaymentMethod: "Payment method",
     rowMemberSince: "Member since",
     nextChargeNone: "None — the subscription has ended",
+    nextChargeEnding: "No further charges",
     nextChargeOn: (price, date) => `${price} on ${date}`,
     nextChargeAfterTrial: (price) => `${price} when the trial ends`,
     nextChargeAtRenewal: (price) => `${price} at the next renewal`,
