@@ -25,7 +25,7 @@
   "name": "Tromsdalstinden",
   "region": "Troms",
   "summitM": 1238,
-  "verticalM": 1200,
+  "verticalM": 1212,
   "duration": "5–7 t",
   "grade": 2,
   "aspect": "V",
@@ -36,7 +36,7 @@
   "name": "Rørnestinden",
   "region": "Lyngen",
   "summitM": 1030,
-  "verticalM": 1000,
+  "verticalM": 1018,
   "duration": "4–6 t",
   "grade": 2,
   "aspect": "V",
@@ -47,7 +47,7 @@
   "name": "Hamperokken",
   "region": "Troms",
   "summitM": 1397,
-  "verticalM": 1400,
+  "verticalM": 1389,
   "duration": "5–7 t",
   "grade": 4,
   "aspect": "NV",
@@ -113,7 +113,7 @@
   "name": "Rombakstøtta",
   "region": "Narvik",
   "summitM": 1231,
-  "verticalM": 1100,
+  "verticalM": 1129,
   "duration": "5–7 t",
   "grade": 3,
   "aspect": "SV",
@@ -157,7 +157,7 @@
   "name": "Vassfjellet",
   "region": "Trøndelag",
   "summitM": 711,
-  "verticalM": 540,
+  "verticalM": 560,
   "duration": "3–5 t",
   "grade": 1,
   "aspect": "V",
@@ -333,7 +333,7 @@
   "name": "Slogen",
   "region": "Sunnmøre",
   "summitM": 1564,
-  "verticalM": 1520,
+  "verticalM": 1535,
   "duration": "6–8 t",
   "grade": 4,
   "aspect": "V",
@@ -388,7 +388,7 @@
   "name": "Skårasalen",
   "region": "Sunnmøre",
   "summitM": 1542,
-  "verticalM": 1440,
+  "verticalM": 1452,
   "duration": "6–8 t",
   "grade": 3,
   "aspect": "V",
@@ -520,7 +520,7 @@
   "name": "Glittertinden",
   "region": "Jotunheimen",
   "summitM": 2451,
-  "verticalM": 1180,
+  "verticalM": 1228,
   "duration": "7–9 t",
   "grade": 3,
   "aspect": "SØ",
@@ -531,7 +531,7 @@
   "name": "Galdhøpiggen",
   "region": "Jotunheimen",
   "summitM": 2469,
-  "verticalM": 630,
+  "verticalM": 642,
   "duration": "6–8 t",
   "grade": 3,
   "aspect": "N",
@@ -553,7 +553,7 @@
   "name": "Besshø",
   "region": "Jotunheimen",
   "summitM": 2257,
-  "verticalM": 1300,
+  "verticalM": 1328,
   "duration": "6–8 t",
   "grade": 3,
   "aspect": "Ø",
@@ -586,7 +586,7 @@
   "name": "Rasletinden",
   "region": "Jotunheimen",
   "summitM": 2104,
-  "verticalM": 750,
+  "verticalM": 778,
   "duration": "4–6 t",
   "grade": 2,
   "aspect": "Ø",
@@ -597,12 +597,12 @@
   "name": "Bånsæterkampen",
   "region": "Ringebufjellet",
   "summitM": 1196,
-  "verticalM": 330,
+  "verticalM": 341,
   "duration": "2–4 t",
   "grade": 2,
   "aspect": "NØ",
   "season": "jan–apr",
-  "hasGuide": false
+  "hasGuide": true
  },
  "molden": {
   "name": "Molden",
@@ -646,7 +646,7 @@
   "grade": 2,
   "aspect": "SØ",
   "season": "jan–apr",
-  "hasGuide": false
+  "hasGuide": true
  },
  "nevelfjell": {
   "name": "Nevelfjell",
@@ -657,7 +657,7 @@
   "grade": 1,
   "aspect": "Ø",
   "season": "des–apr",
-  "hasGuide": false
+  "hasGuide": true
  },
  "slettind": {
   "name": "Slettind",
@@ -668,7 +668,7 @@
   "grade": 1,
   "aspect": "NV",
   "season": "jan–mai",
-  "hasGuide": false
+  "hasGuide": true
  },
  "kyrkjebonosi": {
   "name": "Kyrkjebønosi",
@@ -679,7 +679,7 @@
   "grade": 3,
   "aspect": "V",
   "season": "feb–mai",
-  "hasGuide": false
+  "hasGuide": true
  },
  "nibbi": {
   "name": "Nibbi",
@@ -690,7 +690,7 @@
   "grade": 2,
   "aspect": "S",
   "season": "feb–mai",
-  "hasGuide": false
+  "hasGuide": true
  },
  "skogshorn": {
   "name": "Skogshorn",
@@ -751,7 +751,7 @@
   "name": "Folarskardnuten",
   "region": "Hallingdal",
   "summitM": 1932,
-  "verticalM": 970,
+  "verticalM": 997,
   "duration": "6–8 t",
   "grade": 3,
   "aspect": "S",
@@ -767,7 +767,7 @@
   "grade": 3,
   "aspect": "S",
   "season": "jan–apr",
-  "hasGuide": false
+  "hasGuide": true
  },
  "gyranfisen": {
   "name": "Gyranfisen",
@@ -800,13 +800,13 @@
   "grade": 2,
   "aspect": "N",
   "season": "feb–mai",
-  "hasGuide": false
+  "hasGuide": true
  },
  "grafjell": {
   "name": "Gråfjell",
   "region": "Norefjell",
   "summitM": 1466,
-  "verticalM": 580,
+  "verticalM": 595,
   "duration": "4–6 t",
   "grade": 2,
   "aspect": "S",

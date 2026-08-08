@@ -9,6 +9,8 @@ prices the things that matter on the way up:
   * traversing a steep side-slope is penalised even when the step itself is flat,
     which is what keeps the line off cliff bands and out of terrain traps
   * sea is impassable; frozen lakes are not (this is a winter product)
+  * ground with a mapped trail on it is cheaper than identical ground without,
+    when `trails=` is passed — see `_trail_factor` below
 
 The corridor comes from route research; the geometry comes from here. Neither is
 much use without the other: the terrain model does not know which valley the
@@ -20,6 +22,7 @@ import json
 import math
 
 import numpy as np
+from scipy.ndimage import distance_transform_edt
 from scipy.sparse import coo_matrix
 from scipy.sparse.csgraph import dijkstra
 
@@ -39,6 +42,31 @@ OFFSETS = [
 MAX_ANGLE = 45.0      # steeper than this is not a skinning line
 SEA_LEVEL = 0.4       # DTM metres below which we call it sea
 TARGET_PX = 620       # long side of the routing grid
+
+# — the mapped trail, as a cost —
+#
+# The terrain model does not know that a path exists, and for most of a ski tour
+# that is correct: above the treeline there is nothing mapped, and the line
+# belongs where the slope angle puts it. Lower down it is not correct. A valley
+# with a track up it has that track because generations of people found it was
+# the way through, and a solver that runs 150 m to the side of it — through the
+# birch scrub, over the same contours, at the same cost — is wrong in the one
+# way a reader can check at a glance: by looking at an ordinary map.
+#
+# So mapped ground is discounted rather than mandated. A discount lets the
+# terrain overrule it: where the trail climbs a summer scramble, or ends at the
+# treeline, or crosses a slope the side-slope term prices out, the line leaves
+# it, which is what a skier does. A hard constraint would have followed it off
+# the end.
+#
+# 0.62 is chosen against the set rather than in the abstract. Weaker than ~0.75
+# and nothing moved that was not already nearly on the trail; stronger than
+# ~0.5 and lines started making detours *to* reach a path, which is the failure
+# this term must not have — a 400 m dogleg to touch a track is worse than the
+# straight line it replaced.
+TRAIL_FACTOR = 0.62
+TRAIL_NEAR_M = 20.0   # full discount within this of the mapped centreline
+TRAIL_FAR_M = 70.0    # no discount beyond this; a ramp between the two
 
 
 def _slope_deg(z, mx, my):
@@ -67,8 +95,29 @@ def _step_factor(theta):
     return f
 
 
+def _rasterise(dem, lines):
+    """Mark every grid cell a trail polyline passes through.
+
+    Bresenham-free: the lines are sampled finely enough that consecutive samples
+    land in the same or an adjacent cell. The grid is a few metres per cell and
+    OSM geometry is metres between vertices, so a 2 m step never skips one.
+    """
+    hit = np.zeros((dem.height, dem.width), dtype=bool)
+    for line in lines:
+        for (alat, alng), (blat, blng) in zip(line, line[1:]):
+            span = math.hypot((blat - alat) * 110540.0,
+                              (blng - alng) * 111320.0 * math.cos(math.radians(alat)))
+            steps = max(1, int(span / 2.0))
+            for s in range(steps + 1):
+                f = s / steps
+                r, c = dem.rc(alat + (blat - alat) * f, alng + (blng - alng) * f)
+                if 0 <= r < dem.height and 0 <= c < dem.width:
+                    hit[r, c] = True
+    return hit
+
+
 class Router:
-    def __init__(self, points, pad_m=900):
+    def __init__(self, points, pad_m=900, trails=None):
         lats = [p[0] for p in points]
         lngs = [p[1] for p in points]
         midlat = (min(lats) + max(lats)) / 2
@@ -90,7 +139,43 @@ class Router:
         self.z = np.where(np.isnan(d.z), -9999.0, d.z)
         self.blocked = np.isnan(d.z) | (d.z < SEA_LEVEL)
         self.slope = _slope_deg(np.where(np.isnan(d.z), 0.0, d.z), d.mx, d.my)
+        self.trail = self._trail_factor(trails)
         self._graph = None
+
+    def _trail_factor(self, trails):
+        """Per-cell cost multiplier for mapped ground: `TRAIL_FACTOR`…1.0.
+
+        `None` when no trails were passed, and the graph then skips the term
+        entirely — that is what makes a trail-less run bit-identical to the
+        router as it was before this existed, which is the only way to tell a
+        line that moved *because of a trail* from one that moved because the
+        cost model changed under it.
+        """
+        if not trails:
+            return None
+        d = self.dem
+        hit = _rasterise(d, trails)
+        if not hit.any():
+            return None
+        # Distance transform in cells, then to metres. The grid is very nearly
+        # square in metres (`mx` and `my` differ by well under a percent over a
+        # single tour), so one scale factor is honest here.
+        cell_m = (d.mx + d.my) / 2.0
+        dist_m = distance_transform_edt(~hit) * cell_m
+        ramp = np.clip((TRAIL_FAR_M - dist_m) / (TRAIL_FAR_M - TRAIL_NEAR_M), 0.0, 1.0)
+        return 1.0 - (1.0 - TRAIL_FACTOR) * ramp
+
+    def retrail(self, trails):
+        """Swap the trail term and drop the graph, keeping the loaded DEM.
+
+        Solving the same corridor twice — once blind to the trails, once not —
+        is the only honest way to attribute a difference, and the DEM tile is
+        the expensive half of a Router. This makes the second solve cost the
+        graph build rather than another few hundred metres of GeoTIFF.
+        """
+        self.trail = self._trail_factor(trails)
+        self._graph = None
+        return self
 
     def _build_graph(self):
         d = self.dem
@@ -101,6 +186,8 @@ class Router:
         # Traversing steep ground is costly even on a flat step: this is the term
         # that steers the line onto benches and ridges instead of across faces.
         side = 1.0 + (np.clip(self.slope, 0, None) / 28.0) ** 3
+        if self.trail is not None:
+            side = side * self.trail
 
         for dr, dc in OFFSETS:
             r0, r1 = max(0, -dr), min(H, H - dr)

@@ -128,7 +128,28 @@ export default async function TourGuidePage({ params }: { params: Promise<{ slug
           </p>
           <div style={{ display: "flex", gap: 10, flexWrap: "wrap", marginTop: 22 }}>
             {hasAccess ? (
-              <a className="btn btn-primary" href={`/api/gpx/${tour.slug}`} download={`${tour.slug}.gpx`}>
+              /* `target="_blank"` selv om `download` allerede sier at dette er
+                 en fil og ikke en side.
+
+                 På skrivebordet er det ingen forskjell: nettleseren laster ned
+                 og blir stående. På telefon er det ikke gitt. Mange
+                 mobilnettlesere — og hver eneste innebygde nettleser i en app —
+                 behandler `application/gpx+xml` som noe som skal *åpnes*, og
+                 gjør det ved å navigere dit. Da er guiden borte, og en fane som
+                 viser XML har verken tilbakeknapp eller navigasjon: eneste vei
+                 tilbake er å skrive adressa på nytt.
+
+                 Med `_blank` skjer det i en ny kontekst. Laster nettleseren ned
+                 fila, blir vi stående som før; åpner den den, står guiden urørt
+                 i fana bak. `rel="noopener"` fordi enhver `_blank` skal ha
+                 den. */
+              <a
+                className="btn btn-primary"
+                href={`/api/gpx/${tour.slug}`}
+                download={`${tour.slug}.gpx`}
+                target="_blank"
+                rel="noopener"
+              >
                 {t.downloadGpx}
               </a>
             ) : (

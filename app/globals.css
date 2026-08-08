@@ -333,6 +333,42 @@ textarea.input { min-height: 90px; resize: vertical; }
 }
 .table tbody tr:hover { background: color-mix(in srgb, var(--color-text) 4%, transparent); }
 
+/* Nøkkel/verdi-tabellen i abonnementsplata på /min-side. Stilen lå som inline
+   `style` på hver celle, og da fantes det ingen vei til å gi den et annet
+   oppsett på telefon: en inline-regel vinner over enhver mediespørring. */
+.table-kv .kv-l {
+  width: 34%; padding: 12px 0 12px 24px;
+  font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600;
+  color: color-mix(in srgb, var(--color-text) 60%, transparent);
+}
+.table-kv .kv-v { padding: 12px 24px 12px 0; font-size: 15px; }
+
+/* To kolonner side om side trenger mer enn en telefon har. «Betalingsmetode»
+   koster 130px satt med versaler og sperring, «Visa •••• 4242 (utløper 08/28)»
+   drøyt 210, og med cellepaddingen er det 390px innhold i en 320px skjerm —
+   altså skrenger hele kontosida sideveis, og kortet blir stående og klemme.
+
+   Nøkkelen over verdien i stedet. Da er den lengste linja i raden verdien
+   alene, som får hele bredden og kan brekke om den må. Samme grep som plata på
+   forsida gjør med bemerkningskolonnen sin, og av samme grunn. */
+@media (max-width: 620px) {
+  .table-kv, .table-kv tbody { display: block; }
+  .table-kv tr {
+    display: block; padding: 10px 16px;
+    border-bottom: 1px solid color-mix(in srgb, var(--color-text) 8%, transparent);
+  }
+  .table-kv td { display: block; width: auto; padding: 0; border-bottom: 0; }
+  .table-kv .kv-l { letter-spacing: 0.04em; }
+  /* Kortlinja er det lengste ordet i tabellen og har ingen naturlig brekkplass
+     mellom «••••» og sifrene. `anywhere` er siste utvei, ikke førstevalget:
+     mellomromma brukes først. */
+  .table-kv .kv-v { margin-top: 2px; overflow-wrap: anywhere; }
+}
+
+/* En tabell som er bredere enn telefonen skal skrenge inni sin egen ramme, ikke
+   dra hele sida med seg. Kvitteringene har fem kolonner og gjorde det siste. */
+.table-scroll { overflow-x: auto; }
+
 /* — dialog — */
 .dialog-backdrop {
   position: fixed; inset: 0; display: grid; place-items: center;

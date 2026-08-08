@@ -28,7 +28,6 @@ export async function generateMetadata(): Promise<Metadata> {
 
 const MUTED_70 = "color-mix(in srgb, var(--color-text) 70%, transparent)";
 const MUTED_60 = "color-mix(in srgb, var(--color-text) 60%, transparent)";
-const HAIRLINE = "1px solid color-mix(in srgb, var(--color-text) 8%, transparent)";
 
 /** The plate is a *view* of the subscription: `cancelled` folds together a
  *  canceled status and one that merely ends at period end. The underlying
@@ -183,27 +182,15 @@ export default async function MinSidePage() {
               </div>
             ) : (
               <>
-                <table className="table">
+                {/* Cellestilen ligger i `.table-kv` (globals) framfor i `style`
+                    her: på telefon skal nøkkelen stå over verdien, og en
+                    inline-regel kan ingen mediespørring nå. */}
+                <table className="table table-kv">
                   <tbody>
                     {subRows.map((row) => (
                       <tr key={row.l}>
-                        <td
-                          style={{
-                            width: "34%",
-                            padding: "12px 0 12px 24px",
-                            fontSize: 13,
-                            letterSpacing: "0.06em",
-                            textTransform: "uppercase",
-                            fontWeight: 600,
-                            color: MUTED_60,
-                            borderBottom: HAIRLINE,
-                          }}
-                        >
-                          {row.l}
-                        </td>
-                        <td style={{ padding: "12px 24px 12px 0", fontSize: 15, borderBottom: HAIRLINE }}>
-                          {row.v}
-                        </td>
+                        <td className="kv-l">{row.l}</td>
+                        <td className="kv-v">{row.v}</td>
                       </tr>
                     ))}
                   </tbody>
@@ -224,40 +211,45 @@ export default async function MinSidePage() {
         <section style={{ padding: "0 0 48px" }}>
           <SectionKicker>{t.kickerReceipts}</SectionKicker>
           {invoices.length > 0 ? (
-            <table className="table">
-              <thead>
-                <tr>
-                  <th>{t.receiptDate}</th>
-                  <th>{t.receiptDescription}</th>
-                  <th>{t.receiptAmount}</th>
-                  <th>{t.receiptStatus}</th>
-                  <th />
-                </tr>
-              </thead>
-              <tbody>
-                {invoices.map((invoice) => (
-                  <tr key={invoice.id}>
-                    <td style={{ whiteSpace: "nowrap" }}>{formatDate(invoice.date, lang)}</td>
-                    <td>{invoice.description}</td>
-                    <td style={{ fontFamily: "var(--font-heading)", fontWeight: 600, fontSize: 16 }}>
-                      {invoice.amount}
-                    </td>
-                    <td>
-                      <span className="tag tag-accent">{invoice.status}</span>
-                    </td>
-                    <td style={{ textAlign: "right" }}>
-                      {invoice.pdfUrl ? (
-                        <a href={invoice.pdfUrl} target="_blank" rel="noreferrer">
-                          {t.receiptPdf}
-                        </a>
-                      ) : (
-                        <span className="note">{t.receiptPdf}</span>
-                      )}
-                    </td>
+            /* Fem kolonner får ikke plass på en telefon uansett hva vi gjør med
+               dem, og valget står mellom å skrenge her eller å skrenge hele
+               sida. Her. */
+            <div className="table-scroll">
+              <table className="table">
+                <thead>
+                  <tr>
+                    <th>{t.receiptDate}</th>
+                    <th>{t.receiptDescription}</th>
+                    <th>{t.receiptAmount}</th>
+                    <th>{t.receiptStatus}</th>
+                    <th />
                   </tr>
-                ))}
-              </tbody>
-            </table>
+                </thead>
+                <tbody>
+                  {invoices.map((invoice) => (
+                    <tr key={invoice.id}>
+                      <td style={{ whiteSpace: "nowrap" }}>{formatDate(invoice.date, lang)}</td>
+                      <td>{invoice.description}</td>
+                      <td style={{ fontFamily: "var(--font-heading)", fontWeight: 600, fontSize: 16 }}>
+                        {invoice.amount}
+                      </td>
+                      <td>
+                        <span className="tag tag-accent">{invoice.status}</span>
+                      </td>
+                      <td style={{ textAlign: "right" }}>
+                        {invoice.pdfUrl ? (
+                          <a href={invoice.pdfUrl} target="_blank" rel="noreferrer">
+                            {t.receiptPdf}
+                          </a>
+                        ) : (
+                          <span className="note">{t.receiptPdf}</span>
+                        )}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
           ) : (
             <p style={{ fontSize: 14, color: MUTED_60, margin: 0 }}>{t.receiptsEmpty}</p>
           )}

@@ -62,6 +62,15 @@ export interface LandingDict {
   ctaTrial: string;
   ctaMap: string;
   priceNote: string;
+  /* — hero og abonnementsseksjon, sett av en som allerede abonnerer — */
+  /** Erstatter «Prøv gratis i 14 dager» når leseren har tilgang. */
+  ctaTours: string;
+  /** Erstatter «Deretter 29 kr/mnd» når leseren har tilgang. */
+  priceNoteActive: string;
+  /** Knappa som erstatter påmeldingsfeltet i «04 · Abonnement». */
+  planAccount: string;
+  /** Erstatter `planNote` — den handler om å begynne, og det er gjort. */
+  planNoteActive: string;
   /* — data plate — */
   plateLabel: string;
   plateSheet: string;
@@ -105,6 +114,11 @@ const LANDING: Translated<LandingDict> = {
     ctaTrial: "Prøv gratis i 14 dager",
     ctaMap: "Se kartet",
     priceNote: "Deretter 29 kr/mnd. Ingen binding.",
+    ctaTours: "Alle turene",
+    priceNoteActive: "Abonnementet ditt er aktivt — alle guidene er åpne.",
+    planAccount: "Min side",
+    planNoteActive:
+      "Du abonnerer allerede. Kvitteringer, kort og oppsigelse ligger på Min side.",
 
     plateLabel: "Toppkart — nøkkeldata",
     plateSheet: "Ark 01 av 04",
@@ -174,6 +188,11 @@ const LANDING: Translated<LandingDict> = {
     ctaTrial: "Try free for 14 days",
     ctaMap: "See the map",
     priceNote: "Then 29 kr/month. No lock-in.",
+    ctaTours: "Every tour",
+    priceNoteActive: "Your subscription is active — every guide is open.",
+    planAccount: "My account",
+    planNoteActive:
+      "You already subscribe. Receipts, card and cancellation live on your account page.",
 
     plateLabel: "Toppkart — key figures",
     plateSheet: "Sheet 01 of 04",
