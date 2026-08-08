@@ -91,6 +91,10 @@ export interface AccountDict {
   /* — account: billing actions and the cancel dialog — */
   changePaymentMethod: string;
   resumeSubscription: string;
+  /** For en som faktisk har falt ut. «Gjenoppta» kan ikke virke der — Stripe
+   *  har slettet abonnementet, og det finnes ikke noe å skru `cancel_at_period_end`
+   *  av på — så veien tilbake går gjennom kassa. */
+  restartSubscription: string;
   cancelSubscription: string;
   portalDemoNote: string;
   errPortalFailed: string;
@@ -178,6 +182,7 @@ const ACCOUNT: Translated<AccountDict> = {
       "Betaling og kort håndteres sikkert av Stripe. Kvittering sendes på e-post etter hvert trekk.",
     changePaymentMethod: "Endre betalingsmetode",
     resumeSubscription: "Gjenoppta abonnement",
+    restartSubscription: "Start abonnement på nytt",
     cancelSubscription: "Avslutt abonnement",
     portalDemoNote: "Stripe-portalen åpnes her når betalingsnøklene er satt opp.",
     errPortalFailed: "Vi fikk ikke åpnet betalingsportalen. Prøv igjen om litt.",
@@ -262,6 +267,7 @@ const ACCOUNT: Translated<AccountDict> = {
       "Payments and card details are handled securely by Stripe. A receipt is emailed after every charge.",
     changePaymentMethod: "Change payment method",
     resumeSubscription: "Resume subscription",
+    restartSubscription: "Start the subscription again",
     cancelSubscription: "Cancel subscription",
     portalDemoNote: "The Stripe portal opens here once the payment keys are set up.",
     errPortalFailed: "We could not open the billing portal. Try again in a moment.",

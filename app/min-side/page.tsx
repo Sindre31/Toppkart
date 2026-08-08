@@ -58,6 +58,21 @@ function stateOf(sub: Subscription | null): PlateState {
   return "active";
 }
 
+/** Hvilken vei videre knapperaden skal tilby.
+ *
+ *  Ikke det samme skillet som merket over, og det er poenget. Merket spør om
+ *  perioden er ute; denne spør om det finnes et abonnement hos Stripe å endre.
+ *  De faller fra hverandre i ett tilfelle: sier man opp med umiddelbar virkning
+ *  gjennom Stripes egen portal, blir status `canceled` mens tilgangen løper ut
+ *  perioden. Merket sier da riktig «Avsluttes 22. august», men abonnementet er
+ *  borte, og «Gjenoppta» ville ikke hatt noe å skru av.
+ */
+function actionOf(sub: Subscription | null, state: PlateState): "cancel" | "resume" | "restart" {
+  if (state === "cancelled") return "restart";
+  if (state === "ending") return sub?.status === "canceled" ? "restart" : "resume";
+  return "cancel";
+}
+
 function dateLabel(iso: string | null | undefined, lang: Lang): string | null {
   return iso ? formatDate(iso, lang) : null;
 }
@@ -224,11 +239,8 @@ export default async function MinSidePage() {
                     ))}
                   </tbody>
                 </table>
-                {/* Begge de oppsagte tilstandene, så knapperaden er den samme
-                    som før splitten: «Gjenoppta» framfor «Avslutt» så snart
-                    abonnementet er sagt opp. */}
                 <SubscriptionActions
-                  cancelled={state === "ending" || state === "cancelled"}
+                  mode={actionOf(sub, state)}
                   periodEnd={dialogDate}
                   lang={lang}
                 />
