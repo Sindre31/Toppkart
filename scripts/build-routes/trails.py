@@ -41,22 +41,27 @@ from concurrent.futures import ThreadPoolExecutor
 CACHE = os.path.join(os.path.dirname(__file__), "cache")
 os.makedirs(CACHE, exist_ok=True)
 
-# Kumi first, deliberately. The main instance answers these bboxes with a 504
-# under load about as often as it answers them at all — a whole-valley path
-# query is not a small ask — while kumi returns the same 95 kB in nine seconds.
-# Alternating between them evenly, which is what this list did first, spent half
-# the attempts and all of the backoff on the endpoint that was not going to
-# answer, and the fetch made three tours an hour.
+# Kumi first, and kumi again on the retry. The main instance answers these
+# bboxes with a 504 under load about as often as it answers them at all — a
+# whole-valley path query is not a small ask — while kumi returns the same 95 kB
+# in nine seconds and reports «Rate limit: 0», meaning it does not meter us.
+#
+# The list started as a plain alternation between the two, which sounds like
+# resilience and was the opposite: every other attempt went to the endpoint that
+# was not going to answer, and each of those cost its own backoff before the
+# next real try. The fallback is worth keeping for the day kumi is the one that
+# is down, so it stays — as the last resort rather than as every second turn.
 ENDPOINTS = [
+    "https://overpass.kumi.systems/api/interpreter",
     "https://overpass.kumi.systems/api/interpreter",
     "https://overpass-api.de/api/interpreter",
 ]
 
-# Three in flight. The work is entirely the remote instance's, so this is about
-# not leaving the link idle between answers rather than about local parallelism
-# — and three is a load a public endpoint can absorb without this becoming
-# somebody else's outage.
-WORKERS = 3
+# Six in flight. The work is entirely the remote instance's, so this is about
+# not leaving the link idle between answers rather than about local parallelism.
+# Six is what the endpoint's own status page says it will take without metering;
+# it is not a number to raise past what that page reports.
+WORKERS = 6
 
 # How far outside the route's own extent to look. A line that is 300 m off the
 # trail still has to *find* the trail, and 500 m is far enough to see it while
