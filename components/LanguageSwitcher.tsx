@@ -25,6 +25,21 @@ import { commonDict } from "@/lib/i18n/common";
  *  `prefetch={false}` is load-bearing either way. These hrefs have a side
  *  effect, and prefetching them set the language before anyone clicked — with
  *  one link per language, whichever prefetch landed last silently won.
+ *
+ *  `rel="nofollow"` er den samme innsikten sagt til søkeroboten. Denne
+ *  bryteren står i navigasjonen på hver eneste side, så hver side la ut to
+ *  lenker til seg selv med `?lang=` på — nær 170 adresser over nettstedet, og
+ *  alle svarer 307 tilbake til den reine URL-en. Google følger dem (den kjører
+ *  ikke `onClick`-en over), finner en viderekobling, og fører den opp som
+ *  «Side med viderekobling» i Søkeresultater. Det er ikke en feil i seg selv,
+ *  men det er ren støy: adressene skal aldri indekseres, de finnes bare for
+ *  lesere uten JavaScript. `nofollow` sier at lenka ikke er en anbefaling om å
+ *  krype videre, så roboten lar dem ligge — uten at bryteren merker noe.
+ *
+ *  Viderekoblinga blir bevisst værende 307. Den er midlertidig fordi den *er*
+ *  midlertidig: en 308 ville nettleseren huske permanent og hoppe rett til den
+ *  reine URL-en neste gang, uten å innom mellomvaren som setter kaka — altså
+ *  ville språkvalget slutte å virke for dem det er laget for.
  */
 function LangLink({ code, href, lang }: { code: Lang; href: string; lang: Lang }) {
   const router = useRouter();
@@ -44,6 +59,7 @@ function LangLink({ code, href, lang }: { code: Lang; href: string; lang: Lang }
     <Link
       href={href}
       prefetch={false}
+      rel="nofollow"
       onClick={onClick}
       className="seg-opt"
       hrefLang={code === "en" ? "en" : "no"}
