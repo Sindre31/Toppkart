@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SiteFooter, SiteNav } from "@/components/SiteChrome";
+import { getViewer } from "@/lib/access";
 import { getLang } from "@/lib/i18n/server";
 import { accountDict } from "@/lib/i18n/account";
 import LoginForm from "./LoginForm";
@@ -41,6 +42,12 @@ export default async function LoggInnPage({ searchParams }: { searchParams: Sear
   const lang = await getLang();
   const t = accountDict(lang);
 
+  /* «Ny her? Prøv gratis i 14 dager» er et tilbud, og et tilbud til en som
+     allerede abonnerer er en feil. Sida står åpen for dem uansett — den er
+     også veien inn igjen på en ny enhet, og veien til å bytte konto — så
+     skjemaet blir; det er bare linja under som ikke gjelder dem. */
+  const { hasAccess } = await getViewer();
+
   return (
     <div className="shell">
       <SiteNav lang={lang} />
@@ -48,9 +55,11 @@ export default async function LoggInnPage({ searchParams }: { searchParams: Sear
       <main style={{ display: "grid", placeItems: "center", padding: "48px 20px" }}>
         <div style={{ width: "min(420px, 100%)" }}>
           <LoginForm next={next} failure={failure} lang={lang} />
-          <p className="note" style={{ margin: "16px 0 0", textAlign: "center" }}>
-            {t.newHere} <Link href="/betaling">{t.newHereLink}</Link>
-          </p>
+          {hasAccess ? null : (
+            <p className="note" style={{ margin: "16px 0 0", textAlign: "center" }}>
+              {t.newHere} <Link href="/betaling">{t.newHereLink}</Link>
+            </p>
+          )}
         </div>
       </main>
 
