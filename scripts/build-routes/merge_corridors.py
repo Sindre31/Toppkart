@@ -20,10 +20,30 @@ it was researched with.
 
 A record with verdict "reject" is written to neither file: a peak with no
 defensible corridor does not go on the map.
+
+    python3 merge_corridors.py [slug …]
+
+**Name the slugs you are merging**, or rather: with no arguments this merges only
+the records whose slug is *not already in* `corridors.json`, and says which ones
+it left alone. Naming a slug forces it, which is what you want while iterating on
+a corridor you are still writing.
+
+The default used to be "merge everything", and that is a one-way door. Later
+passes revise a corridor in `corridors.json` directly — the adversarial reads and
+`check_ground.py` both do — and `new_corridors.json` is the *research* record, not
+the shipped one. Re-running the merge bare while adding this round silently
+reverted thirteen settled tours to their pre-audit geometry: Breitinden lost the
+two north-shore waypoints that had taken it off Breitindvatnet, Okla lost the two
+that had taken it off Mjølkskåla, Storhornet's waypoint went back from Hornlia to
+a point 1.4 km off the mapped winter route, and Kjerag's Langvassvegen was
+respelled wrong. Ten tours also had `aspect`, `hazardNotes` and `gradeReason`
+overwritten in `new_tourmeta.json` — Gyranfisen's went back to the «vestsida
+stuper mot Vidalen» sentence the flank probe had already refuted.
 """
 
 import json
 import os
+import sys
 
 CORRIDORS = "corridors.json"
 IN = "new_corridors.json"
@@ -65,9 +85,17 @@ def main():
     corridors = json.load(open(CORRIDORS)) if os.path.exists(CORRIDORS) else {}
     meta = json.load(open(META)) if os.path.exists(META) else {}
 
+    only = set(sys.argv[1:])
     kept = rejected = 0
+    skipped = []
     for rec in records:
         slug = rec["slug"]
+        if only:
+            if slug not in only:
+                continue
+        elif slug in corridors:
+            skipped.append(slug)
+            continue
         if rec.get("verdict") == "reject":
             print(f"  reject {slug}: {rec.get('rejectReason', '')[:110]}")
             rejected += 1
@@ -121,6 +149,9 @@ def main():
     with open(META, "w") as f:
         json.dump(meta, f, indent=1, ensure_ascii=False)
     print(f"\n{CORRIDORS}: {len(corridors)} tours ({kept} merged, {rejected} rejected)")
+    if skipped:
+        print(f"left alone (already in {CORRIDORS}; name a slug to force it):")
+        print("  " + ", ".join(skipped))
 
 
 if __name__ == "__main__":

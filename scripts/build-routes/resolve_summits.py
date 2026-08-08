@@ -47,6 +47,26 @@ TOL_M = 15
 TIE_M = 2.0
 SAME_TOP_M = 200.0
 
+# Peaks where the register point cannot say which top the tour goes to, and a
+# published route can. The seed replaces the SSR representation point for the
+# disc search and for the tie-break in `resolve_top` — nothing else changes, and
+# a peak not listed here is resolved exactly as before.
+#
+# This is a table rather than a rule because the rule it would replace is right
+# almost everywhere. `resolve_top` breaks a height tie by distance from the
+# register point, and that is the evidence that settled Ranten. It cannot settle
+# a mountain whose register point sits between two of its own tops.
+SUMMIT_SEED = {
+    # Two tops on the Hallingskarvet plateau, 650 m apart, climbing to 1860.4 and
+    # 1857.5 m. Against a published 1859 they land 1.4 and 1.5 m off, which is a
+    # tie by any reading, and the register point is 198 m from the lower one and
+    # 550 m from the higher — so the tie-break handed the tour to the lower top.
+    # Ut.no's ski line ends 20 m from the higher one and 660 m from the lower,
+    # and the register knows no other Fjell or Topp name within 2 km of either.
+    # The seed is that line's last vertex.
+    "prestholtskarvet": (60.55829, 8.01297),
+}
+
 
 def _seed_dem(lat, lng):
     half_lat = SPAN_M / 2 / 110540.0
@@ -215,7 +235,8 @@ def main():
         # The climbed height stands even where it is lower than the disc maximum
         # that seeded it: the climb reads a 1 m tile and the disc a 6 m one, so
         # the lower number is the better measurement, not a lost summit.
-        flat, flng, fz, radius = resolve_top(best["lat"], best["lng"], expect)
+        seed_lat, seed_lng = SUMMIT_SEED.get(slug, (best["lat"], best["lng"]))
+        flat, flng, fz, radius = resolve_top(seed_lat, seed_lng, expect)
         z_api, terr = dtm_point(flat, flng)
         drift = haversine(nlat, nlng, flat, flng)
         delta = fz - expect

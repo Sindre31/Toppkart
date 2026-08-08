@@ -742,5 +742,77 @@
     "summit_dtm": 1582.3,
     "claims": 1580,
     "stored_off_km": 0.02
+  },
+  "nibbi": {
+    "name": "Nibbi",
+    "lat": 60.88661,
+    "lng": 8.6501,
+    "summit_dtm": 1740.3,
+    "claims": 1741,
+    "stored_off_km": 0.01
+  },
+  "slettind": {
+    "name": "Slettind",
+    "lat": 60.96896,
+    "lng": 8.18399,
+    "summit_dtm": 1592.0,
+    "claims": 1592,
+    "stored_off_km": 0.0
+  },
+  "kyrkjebonosi": {
+    "name": "Kyrkjebønøse",
+    "lat": 60.90555,
+    "lng": 8.55601,
+    "summit_dtm": 1670.5,
+    "claims": 1671,
+    "stored_off_km": 0.7
+  },
+  "prestholtskarvet": {
+    "name": "Prestholtskarvet",
+    "lat": 60.55843,
+    "lng": 8.0126,
+    "summit_dtm": 1860.4,
+    "claims": 1859,
+    "stored_off_km": 0.03
+  },
+  "ustetind": {
+    "name": "Ustetind",
+    "lat": 60.45856,
+    "lng": 8.0902,
+    "summit_dtm": 1375.8,
+    "claims": 1376,
+    "stored_off_km": 0.02
+  },
+  "banseterkampen": {
+    "name": "Bånsæterkampen",
+    "lat": 61.39144,
+    "lng": 10.10642,
+    "summit_dtm": 1196.1,
+    "claims": 1202,
+    "stored_off_km": 0.15
+  },
+  "nevelfjell": {
+    "name": "Nevelfjell",
+    "lat": 61.20491,
+    "lng": 10.56762,
+    "summit_dtm": 1090.1,
+    "claims": 1089,
+    "stored_off_km": 0.06
+  },
+  "trysilfjellet": {
+    "name": "Trysilfjellet",
+    "lat": 61.30791,
+    "lng": 12.17287,
+    "summit_dtm": 1132.0,
+    "claims": 1132,
+    "stored_off_km": 0.02
+  },
+  "ulvsjoberget": {
+    "name": "Ulvsjøberget",
+    "lat": 61.26561,
+    "lng": 12.018,
+    "summit_dtm": 854.2,
+    "claims": 851,
+    "stored_off_km": 0.03
   }
 }

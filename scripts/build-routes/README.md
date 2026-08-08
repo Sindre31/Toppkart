@@ -1789,6 +1789,228 @@ must carry a metre unit — a bare number anywhere in the prose is not a
 disclosure. Seven cases cover the shapes that must not match: a degrees figure,
 a bare number, a *moh* height, and a wrong value behind a thousands separator.
 
+## The alpine-resort round
+
+Eight peaks, on the fjells you reach from the five places people actually book a
+week in: **Hemsedal, Trysil, Kvitfjell, Hafjell and Geilo.** The app goes from 78
+tours to 86. Four new regions, and only one of them is named after a resort,
+because — the Oslo round's finding again — the ski touring is not in the lift
+system. It is on Hemsedalsfjellet, on Hallingskarvet above Geilo, on the ridge
+across the Lågen from Kvitfjell, on Øyerfjellet behind Hafjell, and in the forest
+above Vestby in Trysil.
+
+The conditions are the ones the earlier rounds set, and the primary source is
+split by area again. **Fri Flyt indexes exactly one of the five**: `skiturer-hemsedal`
+holds seven route descriptions in the shape the Sunnmøre and Vestland rounds were
+built on — toppunkt, høydemeter, kilometer, startsted, himmelretning, bratteste
+punkt, KAST class, and for two of them a GPS position for the summit. For the
+other four areas it is **ut.no**, which publishes an activity type, a season, a
+grading, a stated distance and gain, a named chain of ground — and, through
+`/api/gpx/trip/<id>`, the line itself. That track is new material for this
+pipeline and it earned its keep four times below: it settles which of two tops a
+tour goes to where the place-name register cannot, twice; it puts Nevelfjell's line
+back on land; and it is what got Trysilfjellet rejected.
+
+| tour | region | start | summit | gain | km | steepest 100 m band | steepest 30 m | grade |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Prestholtskarvet | Geilo | 963 | 1860 | 955 | 11.4 | 22.0° | 25.2° | 3 |
+| Kyrkjebønosi | Hemsedal | 722 | 1670 | 1002 | 4.6 | 20.6° | 26.8° | 3 |
+| Nibbi | Hemsedal | 939 | 1740 | 803 | 3.0 | 20.4° | 23.7° | 2 |
+| Slettind | Hemsedal | 1122 | 1592 | 474 | 2.5 | 18.6° | 20.6° | 1 |
+| Ustetind | Geilo | 989 | 1376 | 413 | 4.1 | 9.7° | 20.5° | 2 |
+| Bånsæterkampen | Ringebufjellet | 913 | 1196 | 331 | 2.8 | 13.9° | 20.5° | 2 |
+| Ulvsjøberget | Trysil | 559 | 854 | 295 | 2.1 | 12.4° | 17.5° | 2 |
+| Nevelfjell | Øyerfjellet | 828 | 1090 | 268 | 4.1 | 4.4° | 12.6° | 1 |
+
+`check_new_corridors.py` re-queries all of it and comes back with one class of
+note across the eight: five trailheads have a mapped road under them and no
+mapped car park. That is what Eastern Norway looks like in OSM — a seterveg, a
+grustak, a lay-by at a fylkesgrense — and each record says which way is under it
+and quotes the source's own parking sentence. `check_routes.py` calls the 86
+tours and 95 routes clean, and `check_tours.py` the 86 cards.
+
+### Trysilfjellet was researched and rejected
+
+Trysil's kommunetopp is 1132 m and has two published route descriptions on ut.no
+— from Skihytta in the south (1112155778) and from Fageråsen in the north-west
+(1112155777). **Both go up the alpine slopes.** The Skihytta one says so itself:
+«Følg merket sti oppover i slalåmbakken». The Fageråsen one was checked against
+Kartverket's terrain classes point by point along its own GPX, and six of sixteen
+samples answer `Alpinbakke` — a continuous run from 938 to 1002 m, and again at
+1092. Those are groomed pistes in operation all season.
+
+Drawing a topptur line there sends a paying reader uphill into ski traffic in an
+area with no uphill route, and no source describes any other flank. Inventing one
+because the schema allows it is the thing this pipeline exists not to do. The
+record is in `new_corridors.json` with verdict `reject` and the measurement is in
+`measurements.json`; Trysil ships **Ulvsjøberget** instead, which is the highest
+summit in the kommune with a published description that stays out of the resort.
+
+### What the checks caught
+
+**Prestholtskarvet's register point sits between two of its own tops, and the
+tie-break gave the tour to the wrong one.** Hallingskarvet's plateau above
+Prestholt carries two summits 650 m apart that climb to 1860.4 and 1857.5 m.
+Against a published 1859 they miss by 1.4 and 1.5 m — a tie by any reading, and
+`resolve_top` breaks a tie inside 2 m by distance from the register point, which
+is 198 m from the lower one and 550 m from the higher. That rule is right; it is
+the rule that settled Ranten, where two *different mountains* competed for one
+name. It cannot settle a mountain whose register point sits between two of its
+own tops, and the register knows no other Fjell or Topp name within 2 km of
+either.
+
+What settles it is ut.no's own line: its last vertex is 20 m from the higher top
+and 660 m from the lower. `resolve_summits.py` now carries a `SUMMIT_SEED` table
+— one entry, with the reason beside it — that replaces the register point as the
+seed and the tie-breaker for a named peak. A peak not in the table resolves
+exactly as before, which is why this is a table and not a rule.
+
+**Nibbi's register point is 93 m below the mountain.** SSR has two Nibbi in
+Hemsedal; the southern one reads 1647.7 m on DTM1 against a published 1741 and
+sits 1.2 km south-south-west of the top, the northern 1567.0. Fri Flyt publishes
+a GPS position for the summit — 155711.732/6766857.855 in UTM33 — which converts
+to 8 m from the cell the summit search climbs to, so that is the `near`
+coordinate. The climbed top reads 1740.3 against 1741.
+
+**Kyrkjebønosi has a third top, and it is the highest.** The tour goes to 1670.5 m,
+which is what both sources publish as 1671 and where ut.no's line ends. A top
+940 m west measures 1675.0 — 4.5 m higher, named by nobody, and not on any
+published route. The card carries the top the tour goes to and the record says
+the other one is there.
+
+**Nevelfjell crossed Nevelvatnet twice.** `check_ground.py` found the first line
+180 m out on the lake at 904 m, up to 94 m from the mapped shore, with five
+vertices answering `Innsjø`. Ut.no's own løype goes south and west around it —
+61.19444/10.60069, 61.19522/10.59895, 61.19533/10.59739 and 61.19643/10.59393 all
+answer `Skog` — and a waypoint on the south shore cut it to 90 m and 38 m, which
+is not the same as fixing it. Two waypoints, south end and west side, took it to
+none. The line is now 4.07 km with +268, and the guide names the lake.
+
+**Bånsæterkampen is 5.9 m short, and it is the only card in this round that is.**
+Ut.no gives 1202 m for the ridge's high point; the climbed cell reads 1196.1. Five
+of the eight land within 1.5 m of their published height and two of those are
+confirmed twice over — Slettind reads 1592.0 against Fri Flyt's 1592, with Fri
+Flyt's own GPS position 2 m from the register point and 3 m from the climbed
+cell, and Nevelfjell 1090.1 against 1089 with the register point 60 m away.
+
+**And the merge reverted thirteen settled tours.** `merge_corridors.py` rewrote
+every record in `new_corridors.json` into `corridors.json`, including the ones
+later passes had revised downstream — Breitinden lost the two north-shore
+waypoints that took it off Breitindvatnet, Okla the two that took it off
+Mjølkskåla, Storhornet's waypoint went back 1.4 km off the mapped winter route,
+and Gyranfisen's `hazardNotes` reverted to the «vestsida stuper mot Vidalen»
+sentence its own flank probe had refuted. Caught in the diff, restored from HEAD,
+and the script now merges only slugs not already present unless you name them —
+the same `[slug …]` rule `generate_routes.py` and `emit_new_tours.py` already
+follow, and for the same reason.
+
+### What the flank sweeps found
+
+All eight summits were swept on eight bearings with `flank_probe.py` before a word
+was written, and two were swept again further out. The readings are in
+`measurements.json`.
+
+- **Prestholtskarvet's cliff is on the side you came up.** Every bearing is under
+  10° for the first 400 m — it is a plateau — and the intuition that the drop must
+  therefore be on the far side is wrong. North measures 2.0° mean out to a
+  kilometre and a half with a steepest 60 m window of 6.6°: the skarv just keeps
+  going. South-east reads 66.0° in the window 1225–1275 m out, south 51.1° at
+  925–975, south-west 49.3° at 475–525. That is the wall above Prestholt, and
+  Prestholtskardet is the one break in it.
+- **Slettind's published hazard note points at the gentler side.** Fri Flyt warns
+  «Skredterreng nord for toppen, så ikke dra for langt til skikjørers høyre i
+  starten av nedkjøringen» — and north does measure 24.9° in its steepest 60 m
+  window 100–160 m out, which is real. But the serious terrain on this mountain is
+  the other hand: west 23.9° mean with a 52.5° window 660–720 m out, south-west
+  23.6° with 49.5° at 360–420, both dropping into Mørkedalen. The guide gives the
+  warning as written and says what is on the other side of it.
+- **Kyrkjebønosi's cornice side and its alternative descent are the same side.**
+  North-east measures 33.0° mean with 48.0° in the window 0–60 m out, east 28.9°
+  with 46.0° at 10–70. That is the renne toward Trøimsbotn that Fri Flyt gives 500
+  metres of «bratt og fin skikjøring» and warns about in the same breath, and it
+  is where «toppskavl» means something. West and south-west measure 11.3° and
+  12.3° — the big white flank the standard descent uses.
+- **Bånsæterkampen's ridge is exactly as advertised.** South-east 25.5° mean with
+  45.2° in the window 30–90 m out, south 23.0° with 39.8° at 40–100, east 21.0°
+  with 38.0°. North-east, where the route comes up, measures 6.3°, and west 3.9°.
+  Ut.no's «bratte stup mot sør» is a measurement, not a flourish.
+- **Ulvsjøberget's one steep thing is 400 m from the route.** South-west measures
+  23.9° mean with a 49.2° window 330–390 m out — that is Stygghammeren, the
+  «bratt, usikret fjellhylle» ut.no tells you to visit at your own risk. The
+  ascent comes from the south-east, which measures 5.0°.
+- **Two mountains have no steep side at all.** Nevelfjell's steepest 60 m window
+  in any direction is 19.3° and its west side measures 3.4° mean; Ustetind's is
+  28.9° to the south-east and nothing else clears 28. Their guides are about
+  distance, flat light and open water under snow, because that is what those
+  mountains are.
+
+### The eight guides
+
+All eight have a guide in bokmål and English — nynorsk for the three Hemsedal
+tours, which is what the kommune writes and what Skogshorn's teaser already
+used — written against `guide_brief.py`, the corridor research and the sweeps.
+They pass `check_guides.py` clean, as do the other 78 after the run, and
+`test_check_guides.py` still pins the reassurance rule in both directions. The
+Norwegian and English versions were compared number by number and agree.
+
+The writing pass then read its own material adversarially, and corrected three
+things in it:
+
+- **Nibbi's waterfall is not mapped.** The guide said «det er fossen i
+  Nordrestølbekken» as a statement of fact. There is no waterfall node in OSM and
+  no fall in the register anywhere on that hillside; what is there is the stream,
+  named in both, and it is the only named stream the line passes. The
+  identification is an inference from the stream, and both languages now say so.
+- **Prestholtskarvet's two starts are 579 m apart, not 1.7 km.** The draft
+  explained the difference between the card's climb and ut.no's 855 m as «de 1,7
+  kilometerne og drøye hundre høydemeterne», and the straight-line distance from
+  the Havsdalen car park to the top of the lift is 579 m — 107 vertical metres,
+  and 1531 m along the routed line before it reaches that level. The sentence now
+  names the two starting points instead of a distance between them.
+- **Slettind's rv 52 sentence was written as a source's claim.** No source says
+  the road closes; it is a property of the pass. Reworded to «kan stengje eller gå
+  i kolonne i uvêr».
+
+Two guides are about mountains with nothing steep on them, and they say so rather
+than reaching for a hazard: Nevelfjell's steepest 60 m window in any direction is
+19.3°, and the copy is about Nevelvatnet under snow and about five kilometres of
+løypenett that looks the same everywhere. Ustetind's is 28.9°, and its copy is
+bergen365's three: hidden running water, wind slab above the treeline, and
+terrain traps.
+
+Three of the eight carry a season that no source states — Kyrkjebønosi,
+Bånsæterkampen and Ulvsjøberget — and in all three the guide's forecast paragraph
+says where the figure came from instead of leaving it to look sourced. That is
+the Surløytenuten rule from the Oslo round, applied three times in one round
+because four of the five areas have no published winter description at all.
+
+### What was left out
+
+**Storeskardnosene (1502 m)** would have been a fourth Hemsedal tour and has
+everything the others have — ut.no 116045 is a ski touring + topptur record with
+707 m of gain and two documented starts, Feten in the north and Storeskardvatnet
+in the south. It is left out only because three tours from one valley is already
+the most any area gets in this round, and it is the obvious first addition next
+time.
+
+**Svarthetta (1553 m), Harahorn (1532 m), Leinenøse and «1609»** are the rest of
+Fri Flyt's Hemsedal index. Svarthetta has a second source (ut.no 116746 and
+hemsedal.com's Topp 20) and is a real candidate; the other three have one.
+
+**Muen (1424 m) and Ramshøgda (1463 m)** are the good fjells on Ringebufjellet
+near Kvitfjell, and neither has a published ski description. Muen has none on
+ut.no at all. Ramshøgda has two, both barmark, both starting from a road on the
+Atna side 45 km from the resort. Bånsæterkampen is 6.6 km from Kvitfjell and has
+three descriptions; it wins on both counts and its own record says the
+descriptions are summer ones.
+
+**Skagsvola (932 m) and Fulufjellet's Brynflået** are the other two Trysil
+candidates. Skagsvola is the most topptur-shaped thing in the kommune — a 1.6 km
+ridge ending in a 600 m egg with 460 m down to Engersjøen — and its access is 7 km
+of gravel and 4 km of skogsbilveg that nothing says is ploughed. Brynflået tops
+out at 927 m on ut.no's own line, 120 m below Fulufjellet's Norwegian high point,
+and the tour is a sherpa staircase into a national park.
+
 ## Network
 
 Everything is public and unauthenticated:

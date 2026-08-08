@@ -3763,5 +3763,309 @@
     "notes": "Ut.no fører tre: ruta går i skredterreng med løsneområder over 30 grader og utløpsområder som ikke kan omgås; fra ca 1380 moh går den over bre i ca 500 m, «så sjekk med lokalkjente i forkant at det er nok snø på dette strekket»; og «toppflanken er stupbratt mot Ø, så hold god avstand her». I tillegg advarer beskrivelsen mot å skrå opp lia for tidlig på grunn av fonna på Gråhaugfjellet, og mot våte løssnøskred utover dagen på varme vårdager."
    }
   ]
+ },
+ "nibbi": {
+  "routes": [
+   {
+    "id": "lykkjastolen",
+    "name": "Frå Lykkjastølen vest for fossen",
+    "description": "Frå parkeringa ved Lykkjastølen (939 moh) ser du fossen i Nordrestølbekken eit stykke opp i lia. Hald vestsida av han og skrå opp langs fossen til du er over 1075 moh. Derfrå fell det seg naturleg å følgje dalen oppover — renna held seg til høgre for deg — og du får toppen i front eller på høgre hand heile vegen. Over 1364 moh flatar det av eit stykke før den siste, jamne stigninga. Linja kjem opp vest for toppen på 1708 moh og snur austover langs toppryggen dei siste 300 metrane til varden på 1741.",
+    "trailhead": {
+     "name": "Lykkjastølen",
+     "lat": 60.86706,
+     "lng": 8.66225,
+     "elevation_m": 939.2,
+     "fullName": "Lykkjastølen"
+    },
+    "waypoints": [
+     {
+      "name": "Vest for fossen i Nordrestølbekken",
+      "lat": 60.87175,
+      "lng": 8.663,
+      "elevation_m": 1075.2
+     },
+     {
+      "name": "Dalen opp mot toppryggen",
+      "lat": 60.87884,
+      "lng": 8.65796,
+      "elevation_m": 1364.3
+     },
+     {
+      "name": "Toppryggen frå vest",
+      "lat": 60.88553,
+      "lng": 8.64389,
+      "elevation_m": 1708.3
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt sitt einaste faremoment er terrengfeller i den nedste delen av oppstigninga — renna og bekkedalen du følgjer opp samlar snø og har ingen veg ut til sidene. Ut.no skriv at det finst brattare nedkøyringar for dei erfarne, «men dette krever såklart riktig utstyr og erfaring i fjellet, og at forholdene er bra»."
+   }
+  ]
+ },
+ "slettind": {
+  "routes": [
+   {
+    "id": "eldrevatn",
+    "name": "Frå Eldrevatn opp nordvestflanken",
+    "description": "Frå den opparbeidde parkeringa ved fylkesgrensa ved Eldrevatn (1122 moh) på rv 52 over Hemsedalsfjellet går du søraust. Ruta gir seg sjølv: ei brei, jamn nordvestflanke på 20–25 grader utan noko å navigere etter, over 1325 moh og vidare opp til varden på 1592. Ned same veg, med sporet lagt i den breie fjellsida.",
+    "trailhead": {
+     "name": "Eldrevatn",
+     "lat": 60.98339,
+     "lng": 8.15048,
+     "elevation_m": 1122.2,
+     "fullName": "Eldrevatn"
+    },
+    "waypoints": [
+     {
+      "name": "Nordvestflanken",
+      "lat": 60.97494,
+      "lng": 8.17451,
+      "elevation_m": 1324.9
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Ut.no: «Ingen spesiell skredfare hvis man følger de slake partiene, men det er noen helninger som er over 30 grader.» Fri Flyt namngir kva som er brattast: «skredterreng nord for toppen», og åtvarar mot å trekke for langt til høgre i starten av nedkøyringa. Turen ligg på Hemsedalsfjellet der rv 52 stengjer i uvêr, og det er vêret og ikkje terrenget som avlyser dagen."
+   }
+  ]
+ },
+ "kyrkjebonosi": {
+  "routes": [
+   {
+    "id": "kyrkjebon",
+    "name": "Frå grustaket ved Kyrkjebøen over den første toppen",
+    "description": "Frå sandtaket ovanfor garden Kyrkjebøen (722 moh) følgjer du traktorvegen og sommarstien gjennom skogen. Løypa er merkt og svingar bratt til venstre etter om lag ein kilometer, opp Gravarbakkane (1010 moh). Følg henne ut av tregrensa og gå på vestsida av den vesle toppen rett etter tregrensa (1288 moh) — sjølve toppen måler 1299. Derfrå svingar du austover igjen og følgjer ryggen opp (1465 moh) til fortoppen på 1610 moh. Den siste delen av ryggen mot toppen er lang og flat: du fell 20 meter ned i skaret (1589 moh) og går dei siste 400 metrane nordover til det høgste punktet på 1671. Skal du ned same vegen, kan du snu på fortoppen.",
+    "trailhead": {
+     "name": "Grustaket ved Kyrkjebøen",
+     "lat": 60.87223,
+     "lng": 8.54933,
+     "elevation_m": 722.0,
+     "fullName": "Grustaket ved Kyrkjebøen"
+    },
+    "waypoints": [
+     {
+      "name": "Gravarbakkane",
+      "lat": 60.87938,
+      "lng": 8.56223,
+      "elevation_m": 1009.8
+     },
+     {
+      "name": "Vest for den vesle toppen over skoggrensa",
+      "lat": 60.8865,
+      "lng": 8.552,
+      "elevation_m": 1287.9
+     },
+     {
+      "name": "Ryggen mot fortoppen",
+      "lat": 60.88872,
+      "lng": 8.55635,
+      "elevation_m": 1465.2
+     },
+     {
+      "name": "Fortoppen, 1610",
+      "lat": 60.89948,
+      "lng": 8.55635,
+      "elevation_m": 1608.2
+     },
+     {
+      "name": "Skaret før toppryggen",
+      "lat": 60.9018,
+      "lng": 8.556,
+      "elevation_m": 1588.7
+     }
+    ],
+    "source": "researched, verified (corrected), no local audit",
+    "notes": "Fri Flyt sine faremoment er «toppskavl og skredfare på den alternative nedkjøringen». Standardnedkøyringa går frå om lag 1600 moh vestover ned den store kvite flanken og svingar sør inn på oppstigningsruta før skoggrensa. Den alternative renna aust mot Trøimsbotn gir 500 meter bratt køyring og er den Fri Flyt åtvarar mot. Toppryggen er lang og flat, og i dårleg sikt er det navigeringa og skavlkanten mot aust som er problemet."
+   }
+  ]
+ },
+ "prestholtskarvet": {
+  "routes": [
+   {
+    "id": "havsdalen",
+    "name": "Fra Havsdalen over Prestholtstølan og Prestholtskardet",
+    "description": "Fra parkeringa nederst i Havsdalen (963 moh) går du opp dalen og inn på den merkede, daglig tråkkede løypa vestover. Løypa følger 1240-nivået innover fjellet i åtte kilometer til Prestholtstølan (1243 moh), som ligger rett under sørsiden av Hallingskarvet. Derfra stiger det bratt opp gjennom Prestholtskardet (1640 moh) — det er den eneste veien opp på selve skarvet på denne siden. Oppe på platået dreier ruta vestover og går de siste to kilometerne over vidt, åpent terreng til det høyeste punktet på 1860 moh, med Hardangervidda under seg i sør.",
+    "trailhead": {
+     "name": "Havsdalen",
+     "lat": 60.5455,
+     "lng": 8.19879,
+     "elevation_m": 962.7,
+     "fullName": "Havsdalen"
+    },
+    "waypoints": [
+     {
+      "name": "Inn på løypa vest for Havsdalen",
+      "lat": 60.54074,
+      "lng": 8.18515,
+      "elevation_m": 1058.0
+     },
+     {
+      "name": "Løypa på 1240-nivået",
+      "lat": 60.54116,
+      "lng": 8.12885,
+      "elevation_m": 1240.2
+     },
+     {
+      "name": "Prestholtstølan",
+      "lat": 60.54925,
+      "lng": 8.06494,
+      "elevation_m": 1242.8
+     },
+     {
+      "name": "Prestholtskardet",
+      "lat": 60.55806,
+      "lng": 8.04504,
+      "elevation_m": 1639.9
+     }
+    ],
+    "source": "researched, verified (corrected), no local audit",
+    "notes": "Ut.no navngir ingen faremomenter ut over at turen «blir oftest gått utpå seinvinter/vår når snøen har satt seg og dagene er lengre», og at den er overkommelig i godvær for alle med noe langrennserfaring. Det er to ting å lese ut av den setningen: den er en godværstur, og «når snøen har satt seg» handler om Prestholtskardet, som er den ene bratte flanken på hele ruta. Oppe på skarvet er problemet vind og sikt — platået er flatt og eksponert, og kanten mot nord faller flere hundre meter."
+   }
+  ]
+ },
+ "ustetind": {
+  "routes": [
+   {
+    "id": "ustaoset",
+    "name": "Fra Ustaoset over Sisseldalen og Tindevatnet",
+    "description": "Fra parkeringa ved Ustaoset (989 moh) går ruta sørover forbi Sisseldalen og videre opp i åpent, lett turterreng vest for Måfådalen. Over 1104 moh flater det ut et stykke før den jevne stigninga tar til, og linja passerer Tindevatnet på østsida på 1317 moh. Derfra er det en drøy kilometer opp den siste, slake ryggen til den store varden på 1376 — den er fra 1899, verneverdig, og var trigonometrisk punkt.",
+    "trailhead": {
+     "name": "Ustaoset",
+     "lat": 60.49082,
+     "lng": 8.05851,
+     "elevation_m": 988.7,
+     "fullName": "Ustaoset"
+    },
+    "waypoints": [
+     {
+      "name": "Vest for Måfådalen",
+      "lat": 60.4755,
+      "lng": 8.07004,
+      "elevation_m": 1104.1
+     },
+     {
+      "name": "Tindevatnet",
+      "lat": 60.46335,
+      "lng": 8.08386,
+      "elevation_m": 1317.4
+     }
+    ],
+    "source": "researched, verified (corrected), no local audit",
+    "notes": "Bergen365 navngir tre ting på denne ruta: skjult vassdrag under snøen fra bekkene som krysser lia, ustabil vindtransportert snø over tregrensa, og terrengfeller — og skriver at skredvurdering hører hjemme her selv om hellingene er moderate. «Vær og vind skifter raskt» på dette nivået. Ut.no sin sommerskildring nevner tett vierkratt og myrete partier i lia, som under snøen er det samme som ujevnt underlag og åpne bekker."
+   }
+  ]
+ },
+ "banseterkampen": {
+  "routes": [
+   {
+    "id": "bansetra",
+    "name": "Fra Bånsetra vestover langs eggen",
+    "description": "Fra Bånsetra (913 moh) går ruta vestover og opp lia — det bratteste er unnagjort før 1110 moh. Videre skrår linja sørvestover opp på selve fjellryggen (1195 moh), og derfra følger den kanten av fjellhamrene vestover til høyeste punkt på 1196. Det er på ryggen turen ligger: mot nord er terrenget slakt og åpent, mot sør faller det et par hundre meter rett ned, og utsikten går til Jotunheimen i vest og Rondane i nord.",
+    "trailhead": {
+     "name": "Bånsetra",
+     "lat": 61.40474,
+     "lng": 10.14319,
+     "elevation_m": 913.2,
+     "fullName": "Bånsetra"
+    },
+    "waypoints": [
+     {
+      "name": "Opp lia over Bånsetra",
+      "lat": 61.39826,
+      "lng": 10.13478,
+      "elevation_m": 1109.8
+     },
+     {
+      "name": "Inn på fjellryggen",
+      "lat": 61.39446,
+      "lng": 10.11989,
+      "elevation_m": 1194.6
+     }
+    ],
+    "source": "researched, verified (corrected), no local audit",
+    "notes": "Ut.no om ryggen: «en spektakulær fjellrygg på vel 1200 meters høyde, med bratte stup mot sør og formidabel utsikt», og «sørover ser vi fjellrygger som går stupbratt et par hundre meter ned». Om sommeren går du på tydelig sti langs kanten; under snø er kanten en skavlkant, og det er den ene tingen denne turen krever at du holder avstand fra. Ellers er problemet navigering — ryggen er lang, og hele returen ut.no beskriver går over åpent seterlandskap uten holdepunkter i tåke."
+   }
+  ]
+ },
+ "nevelfjell": {
+  "routes": [
+   {
+    "id": "nordseter",
+    "name": "Fra Nordseter over Nevelåsen",
+    "description": "Fra parkeringa på Nordseter (828 moh) følger du oppkjørte løyper nordover mot foten av toppen — først opp gjennom skogen til 897 moh, så rundt sørenden av Nevelvatnet (905 moh) og opp på vestsida av vatnet (915 moh). Videre nordvestover over Nevelåsen (992 moh), der terrenget åpner seg. Fra løypa på toppens østside tar du av rett opp, eller følger ryggen vestover mot toppen, som er de to måtene ut.no beskriver. På 1090 moh står Nevelhytta — en åpen bu med ovn og plass til seks–åtte — og en siktskive som navngir toppene fra Jotunheimen til Rondane.",
+    "trailhead": {
+     "name": "Nordseter",
+     "lat": 61.18255,
+     "lng": 10.61566,
+     "elevation_m": 828.1,
+     "fullName": "Nordseter"
+    },
+    "waypoints": [
+     {
+      "name": "Løypa nord for Nordseter",
+      "lat": 61.19307,
+      "lng": 10.60511,
+      "elevation_m": 897.2
+     },
+     {
+      "name": "Sørenden av Nevelvatnet",
+      "lat": 61.19533,
+      "lng": 10.59739,
+      "elevation_m": 904.9
+     },
+     {
+      "name": "Vest for Nevelvatnet",
+      "lat": 61.19643,
+      "lng": 10.59393,
+      "elevation_m": 914.9
+     },
+     {
+      "name": "Nevelåsen",
+      "lat": 61.20317,
+      "lng": 10.59097,
+      "elevation_m": 991.9
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Ingen av de fire ut.no-skildringene navngir et skredproblem, og terrenget gir dem rett — hele ruta ligger under 25 grader. Faren her er en annen: fem kilometer åpent høyfjell i et område der løypenettet er tett og likt seg selv, og der toppen er det eneste holdepunktet i flatt lys. Ut.no peker på at «løypa opp til selve toppen er ikke oppkjørt» — det er den siste kilometeren du er alene om sporet. Nevelhytta på toppen er sjelden låst og er der nettopp for de dagene."
+   }
+  ]
+ },
+ "ulvsjoberget": {
+  "routes": [
+   {
+    "id": "vestby",
+    "name": "Frå Vestby opp gjennom skogen",
+    "description": "Frå Vestby (559 moh), rett ved Misjonshuset, går ruta nordvest opp gjennom skogsterreng. Stigninga er jamn heile vegen — 675 moh etter ein kilometer, 801 moh etter to — og det er skog til godt over 800. På 838 moh opnar terrenget seg, og dei siste hundre metrane går i ope fjell til toppen på 854. Derfrå er utsikta vid i alle himmelretningar. Ned same veg.",
+    "trailhead": {
+     "name": "Vestby",
+     "lat": 61.24934,
+     "lng": 12.03497,
+     "elevation_m": 559.3,
+     "fullName": "Vestby"
+    },
+    "waypoints": [
+     {
+      "name": "Opp lia over Vestby",
+      "lat": 61.25482,
+      "lng": 12.03374,
+      "elevation_m": 675.8
+     },
+     {
+      "name": "Gjennom skogen mot 800",
+      "lat": 61.26155,
+      "lng": 12.02426,
+      "elevation_m": 801.2
+     },
+     {
+      "name": "Over skoggrensa",
+      "lat": 61.26471,
+      "lng": 12.01919,
+      "elevation_m": 838.0
+     }
+    ],
+    "source": "researched, verified (corrected), no local audit",
+    "notes": "Ut.no om Stygghammeren: «Hit går du på eget ansvar, og vi anbefaler ikke at du tar med små barn hit, da det er en bratt, usikret fjellhylle.» Ho ligg vest for toppen og er utanfor oppstigningsruta, men er det næraste dette fjellet kjem eit stup, og under snø er kanten ikkje til å sjå. Elles er dette skogsterreng: problemet er å finne fram, ikkje å komme opp."
+   }
+  ]
  }
 }

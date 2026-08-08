@@ -144,4 +144,33 @@ PEAKS = [
     ("storhornet", "Storhornet", ["Oppdal"], 1589, 62.64811, 9.39909),
     ("storbekkhoa", "Storbekkhøa", ["Oppdal"], 1504, 62.73018, 9.08053),
     ("okla", "Snydda", ["Oppdal"], 1580, 62.68968, 9.26195),
+    #
+    # — the alpine-resort round: the fjells you reach from Hemsedal, Trysil,
+    #   Kvitfjell, Hafjell and Geilo. Three of the names are spelled differently
+    #   in the register than in the route descriptions — Kyrkjebønosi is
+    #   **Kyrkjebønøse**, Bånsæterkampen is written with æ and the tour
+    #   descriptions with e, and Nevelfjell is registered without the definite
+    #   article the guidebooks give it. `near` is the SSR representation point
+    #   except on two, where the register point is too coarse to say which top
+    #   the tour goes to and a published route says it instead:
+    #
+    #   - **Nibbi** takes Fri Flyt's own GPS position for the summit. The
+    #     register point sits 1,2 km south-south-west of the top on 1648 m
+    #     ground, 93 m below the published height.
+    #   - **Prestholtskarvet** takes the last vertex of ut.no's ski line. Two
+    #     tops 650 m apart on the Hallingskarvet plateau read 1859.5 and 1857.5,
+    #     the register point sits between them 554 m from the higher one, and
+    #     against a published 1859 the tie rule in `resolve_top` handed the tour
+    #     to the *nearer* one. The route's own endpoint is 20 m from the higher
+    #     top and 660 m from the lower, and the register has no other Fjell name
+    #     within 2 km. —
+    ("nibbi", "Nibbi", ["Hemsedal"], 1741, 60.88668, 8.65014),
+    ("slettind", "Slettind", ["Hemsedal"], 1592, 60.96894, 8.18398),
+    ("kyrkjebonosi", "Kyrkjebønøse", ["Hemsedal"], 1671, 60.89983, 8.55075),
+    ("prestholtskarvet", "Prestholtskarvet", ["Hol"], 1859, 60.55829, 8.01297),
+    ("ustetind", "Ustetind", ["Hol"], 1376, 60.45843, 8.09028),
+    ("banseterkampen", "Bånsæterkampen", ["Ringebu", "Gausdal"], 1202, 61.39240, 10.10840),
+    ("nevelfjell", "Nevelfjell", ["Lillehammer", "Øyer"], 1089, 61.20445, 10.56701),
+    ("trysilfjellet", "Trysilfjellet", ["Trysil"], 1132, 61.30773, 12.17303),
+    ("ulvsjoberget", "Ulvsjøberget", ["Trysil"], 851, 61.26538, 12.01805),
 ]
