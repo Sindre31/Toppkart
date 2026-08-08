@@ -12,9 +12,19 @@ Also emits the elevation-profile SVG path the guide page draws, over the same
 import json
 import math
 import os
+from concurrent.futures import ThreadPoolExecutor
 
 from geo import dtm_point, haversine
 from router import steepest_span
+
+# In flight against Kartverket's point API. The same number `resample_dtm1.py`
+# uses against the same endpoint: it answers in about 1.3 s, so the job is
+# latency rather than work, and sixteen reads roughly nine a second.
+CLASS_WORKERS = 16
+
+# Distinct from `None`, which is a real answer meaning «Kartverket has no class
+# for this point». A failed lookup must never enter the cache as either.
+_MISSING = object()
 
 PROFILE_W = 600.0
 PROFILE_TOP = 18.0     # y of the summit
@@ -159,6 +169,51 @@ def _class_at(cache, lat, lng):
     return cache[key]
 
 
+def prefetch_classes(cache, points, elevations):
+    """Warm the class cache for every vertex the treeline scan could reach.
+
+    The scan itself has to be sequential — it walks until the forest has been
+    quiet for long enough, and it cannot know where that is without the answers
+    in order. But *which* vertices it might ask about is known up front: every
+    one below `TREELINE_CEILING_M`. Fetching those concurrently first turns the
+    scan into a walk over a warm dictionary.
+
+    It matters because the point API answers in about 1.3 seconds and a forested
+    Eastern Norway line has a few hundred vertices under the ceiling. Serially
+    that is a tour every several minutes, and a round that moved 53 lines is an
+    afternoon of waiting on one request at a time. Sixteen in flight is what
+    `resample_dtm1.py` settled on against the same endpoint.
+
+    Deliberately silent about failures: anything that does not come back is
+    simply left out of the cache, and `_class_at` will ask again in the scan and
+    raise `LookupFailed` there — which is where abstaining is already handled
+    correctly. Nothing here decides anything about the ground.
+    """
+    wanted = {}
+    for (lat, lng), z in zip(points, elevations):
+        if z > TREELINE_CEILING_M:
+            continue
+        key = f"{lat:.5f},{lng:.5f}"
+        if key not in cache:
+            wanted[key] = (lat, lng)
+    if not wanted:
+        return cache
+
+    def one(item):
+        key, (lat, lng) = item
+        try:
+            _, terr = dtm_point(lat, lng)
+            return key, terr
+        except Exception:  # noqa: BLE001
+            return key, _MISSING
+
+    with ThreadPoolExecutor(CLASS_WORKERS) as ex:
+        for key, terr in ex.map(one, list(wanted.items())):
+            if terr is not _MISSING:
+                cache[key] = terr
+    return cache
+
+
 def treeline_scan(points, elevations, cum):
     """Where the forest actually ends, from every vertex rather than from a sample.
 
@@ -181,7 +236,11 @@ def treeline_scan(points, elevations, cum):
     change between invocations.
     """
     cache = _class_cache()
+    # `before` is read ahead of the prefetch on purpose: the prefetched answers
+    # are exactly the ones worth writing back, and taking the count afterwards
+    # would make the save below think nothing had been learned.
     before = len(cache)
+    prefetch_classes(cache, points, elevations)
     last_i = None
     first_open_m = None
     scanned = 0
