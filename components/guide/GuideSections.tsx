@@ -35,6 +35,44 @@ function Paragraphs({ items }: { items: string[] }) {
   );
 }
 
+/** Hvor mange avsnitt av oppstigninga som står åpne for en leser uten
+ *  abonnement.
+ *
+ *  Ett. Det er nok til at sida sier noe ingen annen side sier — hvor turen
+ *  starter, hvilken dal den går i, hvor skogen slipper — og lite nok til at
+ *  ruta som helhet fortsatt er det man betaler for: guiden er åtte–ni avsnitt,
+ *  og de som avgjør turen (det bratte partiet, nedkjøringa, skredterrenget)
+ *  ligger alle bak muren.
+ *
+ *  Grunnen til at det ikke er null er at null var det som ikke virket. En
+ *  utlogget robot så navnet, innledningen og fem tall på samtlige 86 tursider,
+ *  altså den samme malen 86 ganger, og Google svarte med å la 54 av dem ligge
+ *  uindeksert. En side som ikke er indeksert selger ingen abonnementer. Dette
+ *  er ett tall å skru på: sett det til 0 for å stenge igjen, høyere for å åpne
+ *  mer.
+ */
+export const PREVIEW_PARAGRAPHS = 1;
+
+/** Åpningen av guiden, for den som ikke har abonnement.
+ *
+ *  Samme overskrift, samme `Paragraphs`, samme utseende som seksjon 01 under —
+ *  det er med vilje. Leseren skal se begynnelsen på det som er der, ikke en
+ *  egen «smakebit»-flate, og roboten skal se nøyaktig det leseren ser.
+ *  `LockedGuide` kommer rett under og sier hva som mangler; sammen leses de to
+ *  som én tekst som stopper. */
+export function GuidePreview({ guide, lang }: { guide: TourGuide; lang: Lang }) {
+  const t = guideDict(lang);
+  const preview = guide.ascent.slice(0, PREVIEW_PARAGRAPHS);
+  if (preview.length === 0) return null;
+
+  return (
+    <section style={{ padding: "0 0 24px" }}>
+      <SectionKicker>01 · {t.ascentTitle}</SectionKicker>
+      <Paragraphs items={preview} />
+    </section>
+  );
+}
+
 /** 01 Oppstigning · 02 Nedkjøring · 03 Skredterreng — hele den lukkede delen
  *  av guiden. Rendres bare for abonnenter (se `app/tur/[slug]/page.tsx`).
  *

@@ -1,24 +1,27 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Lock } from "lucide-react";
 
 import { Blueprint } from "@/components/Blueprint";
 import { CapsText } from "@/components/CapsText";
+import { JsonLd } from "@/components/JsonLd";
 import { SiteNav, SiteFooter } from "@/components/SiteChrome";
 import { ElevationProfile } from "@/components/guide/ElevationProfile";
-import { GuideSections } from "@/components/guide/GuideSections";
+import { GuidePreview, GuideSections } from "@/components/guide/GuideSections";
 import { LockedGuide } from "@/components/guide/LockedGuide";
+import { RouteMap } from "@/components/guide/RouteMap";
 import { getViewer } from "@/lib/access";
 import { SITE } from "@/lib/config";
 import { guideSlugs } from "@/lib/guides";
 import { OG_IMAGE } from "@/lib/seo";
+import { breadcrumbJsonLd, tourJsonLd } from "@/lib/structured-data";
 import { getLang } from "@/lib/i18n/server";
+import { commonDict } from "@/lib/i18n/common";
 import { getLocalizedGuide, localizeTour, localizeTours, teaserFor } from "@/lib/i18n/content";
 import { elevationLabel, gradeLabel } from "@/lib/i18n/format";
 import { guideDict } from "@/lib/i18n/guide";
-import { getTour, toursInRegion } from "@/lib/tours";
+import { getTour, regionAnchor, routeProfile, toursInRegion } from "@/lib/tours";
 import styles from "./guide.module.css";
 
 /** Turguiden. Kart, nøkkeltall og høydeprofil er åpne for alle; rute-
@@ -78,6 +81,9 @@ export default async function TourGuidePage({ params }: { params: Promise<{ slug
   const guide = getLocalizedGuide(slug, lang);
   const { hasAccess } = await getViewer();
   const t = guideDict(lang);
+  /* Rutas egen geometri — den samme linja `/kart` tegner. `RouteMap` bruker den
+     til figuren over høydeprofilen; hver av de 86 sidene får sin egen. */
+  const route = routeProfile(source);
   const mapHref = `/kart?tur=${tour.slug}`;
   const neighbours = localizeTours(toursInRegion(source.region, source.slug), lang);
 
@@ -91,6 +97,25 @@ export default async function TourGuidePage({ params }: { params: Promise<{ slug
 
   return (
     <div className="shell">
+      {/* Det samme sida viser, i den formen en søkerobot ikke trenger å tolke:
+          artikkelen, fjellet med koordinater og høyde, og — for den som ikke
+          har abonnement — hvor betalingsmuren står. Se `lib/structured-data.ts`.
+
+          Brødsmulene går innom regionen, fordi `/turer#lyngen` er en ekte
+          destinasjon lista allerede lenker til fra hoppmenyen sin, ikke et
+          mellomledd oppfunnet for anledningen. */}
+      <JsonLd
+        data={[
+          tourJsonLd({ tour, guide, lang, locked: !hasAccess }),
+          breadcrumbJsonLd([
+            { name: SITE.name, path: "/" },
+            { name: commonDict(lang).tours, path: "/turer" },
+            { name: tour.region, path: `/turer#${regionAnchor(source.region)}` },
+            { name: tour.name },
+          ]),
+        ]}
+      />
+
       <SiteNav lang={lang} />
 
       <main className="page page-narrow" style={{ paddingBottom: 64 }}>
@@ -203,20 +228,18 @@ export default async function TourGuidePage({ params }: { params: Promise<{ slug
         </section>
 
         <section className={styles.split}>
-          <Blueprint as="figure" className="duotone" style={{ margin: 0 }}>
-            <Image
-              src="/assets/kontur.png"
-              alt={t.mapImageAlt(tour.name)}
-              width={1500}
-              height={1000}
-              priority
-              style={{ width: "100%", height: "auto", aspectRatio: "3 / 2", objectFit: "cover" }}
-            />
-            <figcaption style={{ padding: "8px 2px 0" }}>
-              {t.figureCaption}
-              <Link href={mapHref}>{t.figureCaptionLink}</Link>.
-            </figcaption>
-          </Blueprint>
+          {route && (
+            <RouteMap
+              peak={tour.name}
+              points={route.points}
+              distanceM={route.distanceM}
+              gainM={route.gainM}
+              trailhead={route.trailhead}
+              lang={lang}
+            >
+              <Link href={mapHref}>{t.routeMapCaptionLink}</Link>.
+            </RouteMap>
+          )}
 
           {guide ? (
             <ElevationProfile profile={guide.elevationProfile} lang={lang} />
@@ -232,7 +255,15 @@ export default async function TourGuidePage({ params }: { params: Promise<{ slug
           )}
         </section>
 
-        {guide && (hasAccess ? <GuideSections guide={guide} lang={lang} /> : <LockedGuide lang={lang} />)}
+        {guide &&
+          (hasAccess ? (
+            <GuideSections guide={guide} lang={lang} />
+          ) : (
+            <>
+              <GuidePreview guide={guide} lang={lang} />
+              <LockedGuide lang={lang} />
+            </>
+          ))}
 
         {/* Naboturene. Regionen er den eneste slektskapen datasettet kjenner, og
             den er nok: den som leser om Slogen er som regel i ferd med å legge
@@ -263,9 +294,7 @@ export default async function TourGuidePage({ params }: { params: Promise<{ slug
           </section>
         )}
 
-        <SiteFooter lang={lang}>
-          <span className="push">{t.footerNote}</span>
-        </SiteFooter>
+        <SiteFooter lang={lang} />
       </main>
     </div>
   );
