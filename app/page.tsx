@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { Blueprint, SectionKicker } from "@/components/Blueprint";
+import { JsonLd } from "@/components/JsonLd";
 import { SiteFooter, SiteNav } from "@/components/SiteChrome";
 import { DataPlate } from "@/components/landing/DataPlate";
 import { TrialSignupRow } from "@/components/landing/TrialSignupRow";
@@ -10,6 +11,7 @@ import styles from "@/components/landing/landing.module.css";
 import { getViewer } from "@/lib/access";
 import { getLang } from "@/lib/i18n/server";
 import { landingDict } from "@/lib/i18n/landing";
+import { siteJsonLd } from "@/lib/structured-data";
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = landingDict(await getLang());
@@ -38,6 +40,11 @@ export default async function LandingPage() {
 
   return (
     <>
+      {/* Hvem nettstedet er. Står bare her: forsida er den ene sida som
+          representerer hele nettstedet, og `WebSite` gjentatt på 90 sider er
+          det samme utsagnet 90 ganger. */}
+      <JsonLd data={siteJsonLd(lang)} />
+
       <SiteNav lang={lang} />
 
       <div className="page">

@@ -6,19 +6,22 @@ import { Lock } from "lucide-react";
 
 import { Blueprint } from "@/components/Blueprint";
 import { CapsText } from "@/components/CapsText";
+import { JsonLd } from "@/components/JsonLd";
 import { SiteNav, SiteFooter } from "@/components/SiteChrome";
 import { ElevationProfile } from "@/components/guide/ElevationProfile";
-import { GuideSections } from "@/components/guide/GuideSections";
+import { GuidePreview, GuideSections } from "@/components/guide/GuideSections";
 import { LockedGuide } from "@/components/guide/LockedGuide";
 import { getViewer } from "@/lib/access";
 import { SITE } from "@/lib/config";
 import { guideSlugs } from "@/lib/guides";
 import { OG_IMAGE } from "@/lib/seo";
+import { breadcrumbJsonLd, tourJsonLd } from "@/lib/structured-data";
 import { getLang } from "@/lib/i18n/server";
+import { commonDict } from "@/lib/i18n/common";
 import { getLocalizedGuide, localizeTour, localizeTours, teaserFor } from "@/lib/i18n/content";
 import { elevationLabel, gradeLabel } from "@/lib/i18n/format";
 import { guideDict } from "@/lib/i18n/guide";
-import { getTour, toursInRegion } from "@/lib/tours";
+import { getTour, regionAnchor, toursInRegion } from "@/lib/tours";
 import styles from "./guide.module.css";
 
 /** Turguiden. Kart, nøkkeltall og høydeprofil er åpne for alle; rute-
@@ -91,6 +94,25 @@ export default async function TourGuidePage({ params }: { params: Promise<{ slug
 
   return (
     <div className="shell">
+      {/* Det samme sida viser, i den formen en søkerobot ikke trenger å tolke:
+          artikkelen, fjellet med koordinater og høyde, og — for den som ikke
+          har abonnement — hvor betalingsmuren står. Se `lib/structured-data.ts`.
+
+          Brødsmulene går innom regionen, fordi `/turer#lyngen` er en ekte
+          destinasjon lista allerede lenker til fra hoppmenyen sin, ikke et
+          mellomledd oppfunnet for anledningen. */}
+      <JsonLd
+        data={[
+          tourJsonLd({ tour, guide, lang, locked: !hasAccess }),
+          breadcrumbJsonLd([
+            { name: SITE.name, path: "/" },
+            { name: commonDict(lang).tours, path: "/turer" },
+            { name: tour.region, path: `/turer#${regionAnchor(source.region)}` },
+            { name: tour.name },
+          ]),
+        ]}
+      />
+
       <SiteNav lang={lang} />
 
       <main className="page page-narrow" style={{ paddingBottom: 64 }}>
@@ -232,7 +254,15 @@ export default async function TourGuidePage({ params }: { params: Promise<{ slug
           )}
         </section>
 
-        {guide && (hasAccess ? <GuideSections guide={guide} lang={lang} /> : <LockedGuide lang={lang} />)}
+        {guide &&
+          (hasAccess ? (
+            <GuideSections guide={guide} lang={lang} />
+          ) : (
+            <>
+              <GuidePreview guide={guide} lang={lang} />
+              <LockedGuide lang={lang} />
+            </>
+          ))}
 
         {/* Naboturene. Regionen er den eneste slektskapen datasettet kjenner, og
             den er nok: den som leser om Slogen er som regel i ferd med å legge

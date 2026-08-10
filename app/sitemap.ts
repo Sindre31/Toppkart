@@ -5,16 +5,17 @@ import { TOURS } from "@/lib/tours";
 
 /** `/sitemap.xml` — listen Search Console skal fôres med.
  *
- *  Bare sider en utlogget leser faktisk får se står her: forsiden, kartet, de
- *  75 tursidene og de to juridiske sidene. `/min-side`, `/betaling`,
- *  `/logg-inn` og `/admin/*` hører ikke hjemme i et sitemap — de er konto- og
- *  driftssider, og de er merket `noindex` der de defineres.
+ *  Bare sider en utlogget leser faktisk får se står her: forsiden, kartet,
+ *  turlista, de 86 tursidene og de to juridiske sidene. `/min-side`,
+ *  `/betaling`, `/logg-inn` og `/admin/*` hører ikke hjemme i et sitemap — de
+ *  er konto- og driftssider, og de er merket `noindex` der de defineres.
  *
- *  Guidene er halvt låst for utloggede (rutebeskrivelse og skredterreng ligger
- *  bak abonnement), men innledning, kart, nøkkeltall og høydeprofil er åpne.
- *  Det er ekte innhold på en åpen URL, og det er det Google indekserer. De
- *  turene som ennå ikke har en skriven guide står også her: sida deres har
- *  nøkkeltall, teaser og lenke inn i kartet, og sier selv at guiden kommer.
+ *  Guidene er halvt låst for utloggede (nedkjøring og skredterreng ligger bak
+ *  abonnement), men innledning, kart, nøkkeltall, høydeprofil og åpningen av
+ *  oppstigninga er åpne. Det er ekte innhold på en åpen URL, og det er det
+ *  Google indekserer — se `PREVIEW_PARAGRAPHS` i
+ *  `components/guide/GuideSections.tsx` for hvorfor den åpningen finnes, og
+ *  `lib/structured-data.ts` for hvordan muren meldes inn.
  *
  *  Ingen `lastModified`: sitemap-et bygges statisk, så feltet ville blitt
  *  byggetidspunktet — altså «alt endret seg» ved hver eneste deploy. En dato

@@ -4,11 +4,15 @@ import Link from "next/link";
 import { CapsText } from "@/components/CapsText";
 
 import { Blueprint } from "@/components/Blueprint";
+import { JsonLd } from "@/components/JsonLd";
 import { SiteFooter, SiteNav } from "@/components/SiteChrome";
+import { SITE } from "@/lib/config";
 import { getLang } from "@/lib/i18n/server";
+import { commonDict } from "@/lib/i18n/common";
 import { localizeTours } from "@/lib/i18n/content";
 import { durationLabel, elevationLabel, gradeLabel, seasonLabel } from "@/lib/i18n/format";
 import { toursDict } from "@/lib/i18n/tours";
+import { breadcrumbJsonLd, tourListJsonLd } from "@/lib/structured-data";
 import { regionAnchor, toursByRegion } from "@/lib/tours";
 import styles from "./turer.module.css";
 
@@ -51,6 +55,19 @@ export default async function TurerPage() {
 
   return (
     <div className="shell">
+      {/* Lista sagt en gang til som en liste. Hvert ledd peker til tursida som
+          har innholdet — det er den ene tingen denne sida er, og den eneste
+          siden som samler alle 86 lenkene på ett sted. */}
+      <JsonLd
+        data={[
+          tourListJsonLd(
+            groups.flatMap((group) => group.tours.map(({ slug, name }) => ({ slug, name }))),
+            lang,
+          ),
+          breadcrumbJsonLd([{ name: SITE.name, path: "/" }, { name: commonDict(lang).tours }]),
+        ]}
+      />
+
       <SiteNav lang={lang} current="/turer" />
 
       <main className="page" style={{ paddingBottom: 64 }}>
