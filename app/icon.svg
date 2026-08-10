@@ -1,5 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
   <rect width="32" height="32" fill="#f2f2f3"/>
-  <path d="M4 25 L13 9 L19 19 L22.5 13.5 L28 25 Z" fill="none" stroke="#416180" stroke-width="2" stroke-linejoin="round"/>
+  <!-- 3.2 av 32 er den samme streken som 16-ruta i favicon.ico, og den er valgt
+       for den ruta. En SVG kan ikke spørre hvor stor den tegnes, så den har én
+       strek til alle størrelser, og fanen er den minste av dem: 16 px på en
+       vanlig skjerm. Der ble 2 til 1,0 px, som ingen diagonal kan legge oppå en
+       pikselgrense — streken ble delt i to halvdekte kolonner og vasket ut til
+       lysegrått, og den høyre tinden forsvant. 3,2 gir 1,6 px, nok til å dekke
+       én piksel helt uansett hvor kanten faller. Over 32 px er den bare litt
+       fetere enn ikonene ved siden av; under 32 er den forskjellen på et fjell
+       og en grå flekk. -->
+  <path d="M4 25 L13 9 L19 19 L22.5 13.5 L28 25 Z" fill="none" stroke="#416180" stroke-width="3.2" stroke-linejoin="round"/>
   <path d="M10.2 14.5 L13 9 L15.8 14.5 Z" fill="#5980a6"/>
 </svg>
