@@ -26,10 +26,10 @@ export interface GuideDict {
   statTime: string;
   statGrade: string;
   statAspect: string;
-  /* — map figure — */
-  mapImageAlt: (peak: string) => string;
-  figureCaption: string;
-  figureCaptionLink: string;
+  /* — kartfiguren (`components/guide/RouteMap.tsx`) — */
+  routeMapAria: (peak: string, distance: string, gain: number) => string;
+  routeMapCaption: (trailhead: string, distance: string, gain: number) => string;
+  routeMapCaptionLink: string;
   /* — guide sections — */
   ascentTitle: string;
   descentTitle: string;
@@ -49,7 +49,6 @@ export interface GuideDict {
   moreInRegion: (region: string) => string;
   allTours: string;
   /* — page furniture — */
-  footerNote: string;
   notFoundTitle: string;
   /* — GPX file (served by `app/api/gpx/[slug]`, read in the user's GPS app) — */
   gpxNotFound: string;
@@ -71,9 +70,11 @@ const GUIDE: Translated<GuideDict> = {
     statTime: "Normaltid",
     statGrade: "Grad",
     statAspect: "Himmelretning",
-    mapImageAlt: (peak) => `Skjematisk kartutsnitt av ruta opp ${peak}`,
-    figureCaption: "Skjematisk kartutsnitt i prototypen — ",
-    figureCaptionLink: "se turen i kartet",
+    routeMapAria: (peak, distance, gain) =>
+      `Ruta opp ${peak} sett ovenfra: ${distance} og ${gain} høydemeter fra start til topp`,
+    routeMapCaption: (trailhead, distance, gain) =>
+      `Ruta opp fra ${trailhead} — ${distance}, ${gain} høydemeter. Linja er beregnet i Kartverkets terrengmodell, ikke et innspilt spor.`,
+    routeMapCaptionLink: "Se turen i kartet",
     ascentTitle: "Oppstigning",
     descentTitle: "Nedkjøring",
     avalancheTitle: "Skredterreng",
@@ -89,7 +90,6 @@ const GUIDE: Translated<GuideDict> = {
     lockedCta: "Start gratis prøveperiode",
     moreInRegion: (region) => `Flere turer i ${region}`,
     allTours: "Se alle turene",
-    footerNote: "Eksempelinnhold i prototypen — ikke en reell turbeskrivelse.",
     notFoundTitle: "Turen finnes ikke",
     gpxNotFound: "Fant ikke turen.",
     gpxDesc: (peak, region) =>
@@ -109,9 +109,11 @@ const GUIDE: Translated<GuideDict> = {
     statTime: "Typical time",
     statGrade: "Grade",
     statAspect: "Aspect",
-    mapImageAlt: (peak) => `Schematic map detail of the route up ${peak}`,
-    figureCaption: "Schematic map detail in this prototype — ",
-    figureCaptionLink: "see the tour on the map",
+    routeMapAria: (peak, distance, gain) =>
+      `The route up ${peak} seen from above: ${distance} and ${gain} metres of ascent from start to summit`,
+    routeMapCaption: (trailhead, distance, gain) =>
+      `The ascent from ${trailhead} — ${distance}, ${gain} metres of ascent. The line is solved over Kartverket's terrain model, not a recorded track.`,
+    routeMapCaptionLink: "See the tour on the map",
     ascentTitle: "Ascent",
     descentTitle: "Descent",
     avalancheTitle: "Avalanche terrain",
@@ -127,7 +129,6 @@ const GUIDE: Translated<GuideDict> = {
     lockedCta: "Start free trial",
     moreInRegion: (region) => `More tours in ${region}`,
     allTours: "See all the tours",
-    footerNote: "Sample content in this prototype — not a real tour description.",
     notFoundTitle: "Tour not found",
     gpxNotFound: "Tour not found.",
     gpxDesc: (peak, region) =>
