@@ -1,5 +1,6 @@
 import { cookies } from "next/headers";
 import { createServerClient } from "@supabase/ssr";
+import { createClient } from "@supabase/supabase-js";
 import { env, isSupabaseConfigured } from "@/lib/config";
 
 /** Request-scoped Supabase client for Server Components and Route Handlers.
@@ -23,10 +24,16 @@ export async function getSupabaseServerClient() {
   });
 }
 
-/** Service-role client for webhook handlers. Never expose to the browser. */
+/** Service-role client for webhook handlers. Never expose to the browser.
+ *
+ *  `createClient` sto som et `require()` inne i funksjonen, for å holde
+ *  `@supabase/supabase-js` utenfor bunter som ikke bruker den. Den jobben gjør
+ *  ikke et require lenger: denne modulen importerer `next/headers` øverst, som
+ *  gjør hele fila server-only, og bunteren tar den aldri med til nettleseren
+ *  uansett hvordan importen er skrevet. Igjen sto bare et krav som er unntatt
+ *  fra typesjekk og fra linting. */
 export function getSupabaseAdminClient() {
   if (!env.supabaseUrl || !env.supabaseServiceKey) return null;
-  const { createClient } = require("@supabase/supabase-js") as typeof import("@supabase/supabase-js");
   return createClient(env.supabaseUrl, env.supabaseServiceKey, {
     auth: { autoRefreshToken: false, persistSession: false },
   });

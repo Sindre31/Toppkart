@@ -106,6 +106,7 @@ export function RouteMap({
   gainM,
   trailhead,
   lang,
+  caption = true,
   children,
 }: {
   peak: string;
@@ -114,6 +115,14 @@ export function RouteMap({
   gainM: number;
   trailhead: string;
   lang: Lang;
+  /** Om figurteksten under kartet skal stå.
+   *
+   *  Den hører hjemme på en turside, der den er en opplysning om nettopp denne
+   *  ruta — utgangspunkt, lengde, stigning, og forbeholdet om at linja er
+   *  beregnet og ikke innspilt. På forsida er figuren et eksempel på hva en
+   *  guide inneholder, ikke en guide, og da blir de tallene noe leseren må ta
+   *  stilling til uten å ha spurt om dem. Der står lenka alene. */
+  caption?: boolean;
   /** Lenka inn i kartet, satt av sida som eier stien dit. */
   children?: React.ReactNode;
 }) {
@@ -203,9 +212,12 @@ export function RouteMap({
         </text>
       </svg>
 
-      <figcaption className="note" style={{ margin: "12px 0 0" }}>
-        {t.routeMapCaption(trailhead, distance, gainM)} {children}
-      </figcaption>
+      {caption || children ? (
+        <figcaption className="note" style={{ margin: "12px 0 0" }}>
+          {caption ? `${t.routeMapCaption(trailhead, distance, gainM)} ` : null}
+          {children}
+        </figcaption>
+      ) : null}
     </Blueprint>
   );
 }

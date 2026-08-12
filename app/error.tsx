@@ -26,7 +26,16 @@ export default function Error({ error, reset }: { error: Error & { digest?: stri
   const [lang, setLang] = useState<Lang>(DEFAULT_LANG);
   const t = systemDict(lang);
 
+  /* Regelen har rett i det generelle: å sette tilstand fra en effekt gir en
+     ekstra rendring. Her er den ekstra rendringa hele poenget. `document.cookie`
+     finnes ikke under prerendringa, så språket kan ikke leses før komponenten
+     står i nettleseren — og leses det i rendringa i stedet, spriker serverens
+     HTML og klientens første rendring, som er en hydreringsfeil på en side som
+     allerede vises fordi noe annet gikk galt.
+     Feilgrensa kan heller ikke få språket inn som en prop: Next kaller den med
+     `error` og `reset`, og ikke noe annet. */
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setLang(readLangCookie());
   }, []);
 

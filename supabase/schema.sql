@@ -150,6 +150,15 @@ create table if not exists public.tk_invoices (
 
 comment on table public.tk_invoices is 'Mirror of Stripe invoices for the receipts table on Min side. Optional — Stripe remains the source of truth.';
 
+-- The `on delete cascade` above is deliberate and worth spelling out, because it
+-- looks like it collides with the five-year retention the Bookkeeping Act
+-- requires and the privacy policy promises. It does not: this table is a mirror,
+-- kept so «02 · Kvitteringer» can render without a round trip. The accounting
+-- record is the invoice at Stripe, and that stays. When a reader deletes their
+-- account (app/api/konto), the mirror goes with them — there is no longer a
+-- Min side to render it on, and holding a copy of someone's payment history
+-- after they have asked to be forgotten needs a reason better than convenience.
+
 -- ----------------------------------------------------------------------------
 -- feedback — messages from the «Gi tilbakemelding» button.
 --
@@ -183,6 +192,36 @@ alter table public.tk_feedback add column if not exists handled_at timestamptz;
 comment on table public.tk_feedback is
   'Messages from the «Gi tilbakemelding» button. Written only by the service role (app/api/tilbakemelding); nobody reads it through the API — query it in the SQL editor.';
 
+-- ----------------------------------------------------------------------------
+-- Rate limit counters.
+--
+-- What it protects: `tk_feedback`, which is written by an endpoint that does not
+-- require signing in. That is a deliberate product decision — the people most
+-- likely to have something useful to say are the ones who have not signed up —
+-- and it leaves the table one loop away from being full of whatever a script
+-- feels like putting there. The honeypot in the route catches a naive form
+-- filler; it does nothing at all against someone who reads the request in the
+-- network tab and repeats it.
+--
+-- **`key` is a hash, never an address.** The route hashes the caller's IP with
+-- a salt before it gets here, so this table cannot say who visited, only that
+-- *something* did — and only for the length of one window. See `lib/rate-limit.ts`.
+--
+-- Counting in Postgres rather than in the app is the whole point: the app runs
+-- as however many lambdas Vercel felt like starting, and a counter in each of
+-- their memories is not a limit, it is a suggestion. `insert … on conflict do
+-- update` takes a row lock, so two requests arriving in the same millisecond
+-- come out as 1 and 2 rather than both as 1.
+-- ----------------------------------------------------------------------------
+create table if not exists public.tk_rate_limit (
+  key          text primary key,
+  window_start timestamptz not null default now(),
+  count        integer not null default 0
+);
+
+comment on table public.tk_rate_limit is
+  'Fixed-window request counters, keyed by a salted hash of the caller. Written only by public.tk_rate_limit_hit(); rows are disposable and swept after a day.';
+
 -- ============================================================================
 -- 2. Indexes
 -- ============================================================================
@@ -200,6 +239,10 @@ create index if not exists tk_invoices_user_id_idx on public.tk_invoices (user_i
 create index if not exists tk_feedback_created_at_idx on public.tk_feedback (created_at desc);
 create index if not exists tk_feedback_handled_at_idx on public.tk_feedback (handled_at);
 create index if not exists tk_profiles_email_idx   on public.tk_profiles (lower(email));
+
+-- Only the sweep in tk_rate_limit_hit() reads by this column; every other access
+-- is a primary-key lookup.
+create index if not exists tk_rate_limit_window_idx on public.tk_rate_limit (window_start);
 
 -- ============================================================================
 -- 3. updated_at trigger
@@ -267,6 +310,74 @@ revoke all on function public.tk_has_active_subscription(uuid) from public;
 grant execute on function public.tk_has_active_subscription(uuid) to anon, authenticated, service_role;
 
 -- ============================================================================
+-- 4b. The rate limiter
+-- ----------------------------------------------------------------------------
+-- One call, one answer: may this request proceed? Counts the hit and returns
+-- true while the caller is inside its allowance for the current window.
+--
+-- Fixed window, not sliding. A fixed window lets someone spend a full allowance
+-- at the end of one window and another at the start of the next, so the real
+-- worst case is twice the limit over a short stretch. That is a known and
+-- accepted property: this protects a feedback table from a loop, it is not a
+-- traffic shaper, and the sliding version costs a row per request to store the
+-- timestamps a slide needs.
+--
+-- The counter is incremented *before* the answer is given, so a caller already
+-- over the limit keeps pushing its own window's count up. That is intended —
+-- someone hammering the endpoint stays locked out until they stop for a full
+-- window, rather than being handed one free request per window boundary.
+-- ============================================================================
+
+create or replace function public.tk_rate_limit_hit(
+  p_key            text,
+  p_window_seconds integer,
+  p_limit          integer
+)
+returns boolean
+language plpgsql
+security definer
+set search_path = public
+as $$
+declare
+  v_count   integer;
+  v_expired boolean;
+begin
+  insert into public.tk_rate_limit as r (key, window_start, count)
+  values (p_key, now(), 1)
+  on conflict (key) do update
+    set count = case
+          when r.window_start < now() - make_interval(secs => p_window_seconds) then 1
+          else r.count + 1
+        end,
+        window_start = case
+          when r.window_start < now() - make_interval(secs => p_window_seconds) then now()
+          else r.window_start
+        end
+  returning count, count = 1 into v_count, v_expired;
+
+  -- Housekeeping, only when a window has just opened. Every row here is
+  -- disposable the moment its window is over, and nothing reads them back, so
+  -- the table would otherwise grow one row per distinct caller for ever.
+  -- Tying the sweep to a fresh window keeps it off the hot path without
+  -- needing a scheduled job in a project that has none.
+  if v_expired then
+    delete from public.tk_rate_limit where window_start < now() - interval '1 day';
+  end if;
+
+  return v_count <= p_limit;
+end;
+$$;
+
+comment on function public.tk_rate_limit_hit(text, integer, integer) is
+  'Counts one hit against a fixed window and returns true while the caller is within p_limit. Called by lib/rate-limit.ts with the service role.';
+
+-- The service role is the only caller, and it is the only one that should be:
+-- an anonymous visitor who could call this could also spend someone else''s
+-- allowance for them, given a key they can guess.
+revoke all on function public.tk_rate_limit_hit(text, integer, integer) from public;
+grant execute on function public.tk_rate_limit_hit(text, integer, integer) to service_role;
+
+-- ============================================================================
 -- 5. Row Level Security
 -- ============================================================================
 
@@ -275,6 +386,7 @@ alter table public.tk_profiles      enable row level security;
 alter table public.tk_subscriptions enable row level security;
 alter table public.tk_invoices      enable row level security;
 alter table public.tk_feedback      enable row level security;
+alter table public.tk_rate_limit    enable row level security;
 
 -- ---------------------------------------------------------------- tours -----
 
@@ -387,6 +499,13 @@ revoke insert, update, delete, truncate on public.tk_invoices from anon, authent
 -- refuses the writes on its own today — but a grant nobody should hold is one
 -- mistake away from mattering.
 revoke all on public.tk_feedback from anon, authenticated;
+
+-- tk_rate_limit --------------------------------------------------------------
+-- Same shape and the same reasoning: no policies, and the grant taken back.
+-- Only `tk_rate_limit_hit()` touches this table, and it runs as its owner, so
+-- nothing needs to reach the rows directly. A caller who could write here could
+-- also zero their own counter, which is the whole limit gone.
+revoke all on public.tk_rate_limit from anon, authenticated;
 
 -- ============================================================================
 -- 6. tours_public — the free columns, for everyone

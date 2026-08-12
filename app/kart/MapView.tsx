@@ -312,7 +312,10 @@ export default function MapView({
                   safety information about the mountain someone is looking at
                   right now; putting it behind the paywall would be the one
                   thing on this page it is not defensible to withhold. */}
-              <AvalanchePanel slug={selected.slug} lang={lang} />
+              {/* `key` er ikke pynt: den gjør at panelet lages på nytt når
+                  leseren bytter topp, slik at forrige topps faregrad aldri
+                  rekker å stå under det nye navnet. */}
+              <AvalanchePanel key={selected.slug} slug={selected.slug} lang={lang} />
 
               {selected.hasGuide ? (
                 <Link className={`btn btn-secondary ${s.guideLink}`} href={`/tur/${selected.slug}`}>

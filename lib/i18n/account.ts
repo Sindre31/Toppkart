@@ -12,6 +12,7 @@
  *  strings come from Stripe rather than from the page.
  */
 
+import { SITE } from "@/lib/config";
 import type { Lang, Translated } from "./index";
 import { pick } from "./index";
 
@@ -118,6 +119,24 @@ export interface AccountDict {
   signOutCardTitle: string;
   signOutCardNote: string;
   signOutCardAction: string;
+  /* — account: deleting the account, for good — */
+  deleteCardTitle: string;
+  deleteCardNote: string;
+  deleteCardAction: string;
+  deleteDialogTitle: string;
+  deleteDialogBody: string;
+  /** Hva som blir borte og hva som blir stående. Punktvis, fordi leseren som
+   *  åpner denne dialogen har ett bestemt spørsmål og skal finne svaret uten å
+   *  lese et avsnitt. */
+  deleteDialogPoints: readonly string[];
+  /** Ordet som må skrives. Holdt kort og på leserens eget språk — det skal være
+   *  et bevisst tastetrykk, ikke en staveprøve. */
+  deleteConfirmWord: string;
+  deleteConfirmLabel: (word: string) => string;
+  deleteDialogKeep: string;
+  deleteDialogConfirm: string;
+  deleteDialogBusy: string;
+  errDeleteFailed: string;
   /* — account: footer — */
   aboutSubscription: string;
 }
@@ -206,6 +225,25 @@ const ACCOUNT: Translated<AccountDict> = {
     signOutCardNote:
       "Logger deg ut på denne enheten. Abonnementet løper som før, og du kommer inn igjen med Google når du vil.",
     signOutCardAction: "Logg ut",
+    deleteCardTitle: "Slett kontoen",
+    deleteCardNote:
+      "Sletter kontoen din og alt vi har lagret om deg. Et løpende abonnement blir sagt opp med det samme. Dette kan ikke angres.",
+    deleteCardAction: "Slett kontoen",
+    deleteDialogTitle: "Slette kontoen?",
+    deleteDialogBody:
+      "Dette gjøres med det samme, og verken du eller vi kan hente den tilbake etterpå.",
+    deleteDialogPoints: [
+      "Abonnementet blir sagt opp nå. Du mister tilgangen til turguidene med det samme, også om du har betalt for resten av perioden.",
+      "Profilen, abonnementsdataene og tilbakemeldingene dine blir slettet.",
+      "Kvitteringene dine blir stående hos Stripe i fem år. Det er regnskapsmateriale, og bokføringsloven krever det.",
+      "Du kan lage en ny konto med den samme Google-kontoen når som helst. Den starter tom, uten prøveperiode.",
+    ],
+    deleteConfirmWord: "SLETT",
+    deleteConfirmLabel: (word) => `Skriv ${word} for å bekrefte`,
+    deleteDialogKeep: "Avbryt",
+    deleteDialogConfirm: "Slett kontoen",
+    deleteDialogBusy: "Sletter…",
+    errDeleteFailed: `Vi fikk ikke slettet kontoen, og ingenting er endret. Prøv igjen om litt, eller skriv til ${SITE.supportEmail}.`,
     aboutSubscription: "Om abonnementet",
   },
   en: {
@@ -291,6 +329,25 @@ const ACCOUNT: Translated<AccountDict> = {
     signOutCardNote:
       "Signs you out on this device. The subscription carries on as before, and Google lets you back in whenever you like.",
     signOutCardAction: "Log out",
+    deleteCardTitle: "Delete account",
+    deleteCardNote:
+      "Deletes your account and everything we hold about you. A running subscription is cancelled straight away. This cannot be undone.",
+    deleteCardAction: "Delete account",
+    deleteDialogTitle: "Delete the account?",
+    deleteDialogBody:
+      "This happens straight away, and neither you nor we can get it back afterwards.",
+    deleteDialogPoints: [
+      "The subscription is cancelled now. You lose access to the guides immediately, even if you have paid for the rest of the period.",
+      "Your profile, subscription data and feedback are deleted.",
+      "Your receipts stay at Stripe for five years. They are accounting material, and the Bookkeeping Act requires it.",
+      "You can create a new account with the same Google account whenever you like. It starts empty, with no trial.",
+    ],
+    deleteConfirmWord: "DELETE",
+    deleteConfirmLabel: (word) => `Type ${word} to confirm`,
+    deleteDialogKeep: "Cancel",
+    deleteDialogConfirm: "Delete account",
+    deleteDialogBusy: "Deleting…",
+    errDeleteFailed: `We could not delete the account, and nothing has changed. Try again in a moment, or write to ${SITE.supportEmail}.`,
     aboutSubscription: "About the subscription",
   },
 };

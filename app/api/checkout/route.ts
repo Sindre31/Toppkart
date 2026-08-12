@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 import type { CheckoutErrorCode } from "@/lib/i18n/checkout";
 
 import { getViewer } from "@/lib/access";
-import { TRIAL_DAYS, env, isStripeConfigured } from "@/lib/config";
+import { TRIAL_DAYS, isStripeConfigured } from "@/lib/config";
 import { getDemoEmail, setDemoEmail, startDemoSubscription } from "@/lib/demo-session";
 import { requestOrigin } from "@/lib/origin";
 import { getStripe, priceIdFor } from "@/lib/stripe";

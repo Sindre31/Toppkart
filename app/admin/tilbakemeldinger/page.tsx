@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 
 import { Blueprint, SectionKicker } from "@/components/Blueprint";
 import { SiteFooter, SiteNav } from "@/components/SiteChrome";
