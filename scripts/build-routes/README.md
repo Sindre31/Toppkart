@@ -2093,7 +2093,7 @@ place the tour.
 **And its two spot heights confirmed the corridor.** The route description
 navigates by numbers off the paper map — «ei slukt ved høyde 505», then «forbi
 høyde 570» — and those two points measure **509.6 m** and **570.3 m** on DTM1,
-120 m apart on the line the text describes. That is the independent check this
+234 m apart on the line the text describes. That is the independent check this
 corridor has instead of a GPX track, and it is why the record ships at
 confidence `medium` rather than `low`: the trailhead is a stretch of road and
 the bowl has no name in the register, but the two places the guidebook counts
