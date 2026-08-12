@@ -3822,13 +3822,14 @@
    "Fri Flyt fører turen under «Harstad / Tjeldsund». Toppen ligg i **Lødingen** kommune, og alle namna ruta går forbi — Heggedalen, Heggvatnet, Kvanntoa, Kvannto — er registrerte i Lødingen. Kortet fører regionen Harstad, som er der turen blir gått frå og korleis kjelda plasserer han.",
    "Dei to punkthøgdene i rutebeskrivinga stemmer med terrengmodellen: «ei slukt ved høyde 505» måler 509,6 moh på 68.51830/16.05050, og «høyde 570» måler 570,3 på 68.51620/16.05100. Det er dei to punkta som pinnar korridoren til den skildra linja.",
    "«Bollen» ruta held austsida av er søkket på 68.5150/16.0460, som måler 524,7 moh med 805,0 der det flatar ut i sørenden. Namnet står ikkje i registeret; vegpunktet er lese av terrengmodellen der skildringa plasserer det, og er ei slutning.",
-   "Startstaden er ikkje eit punkt i kjelda, men ei strekning: «Her er det flere muligheter langs E10, avhengig hvor mye som er brøytet.» Korridoren startar der E10 er nærast utløpet av Heggedalen, 68.52208/16.10030 på 21,1 moh. Ingen parkeringsplass er kartlagd der; dei to som finst i OSM (node/13096102226 og node/885198913) ligg 2,0 og 2,4 km sør, ved Kvannto, som er utgangspunktet for austnedkøyringa."
+   "Startstaden er ikkje eit punkt i kjelda, men ei strekning: «Her er det flere muligheter langs E10, avhengig hvor mye som er brøytet.» Korridoren startar der E10 er nærast utløpet av Heggedalen, 68.52208/16.10030 på 21,1 moh. Ingen parkeringsplass er kartlagd der; dei to som finst i OSM (node/13096102226 og node/885198913) ligg 2,0 og 2,4 km sør, ved Kvannto, som er utgangspunktet for austnedkøyringa.",
+   "Adversariell lesnad: korridoren tok toppen frå feil side. Med eitt vegpunkt på 901 moh (68.50800/16.04300) klatra den routa linja nordaustribba — dei siste 519 metrane peika 222 grader, og vegpunktet låg på peiling 60 frå toppen. Fri Flyt seier «hald høgre (vest) ... og bestig toppen via ryggen frå høgre (vest)», og om ribba linja faktisk gjekk i: «Det er helt klart mulig å gå opp på andre siden, men den er mer eksponert.» Guiden arva feilen og kalla vegpunktet vestryggen. Nordvestryggen finst og er tydeleg i terrengmodellen: målt med punkt-API-et 1039,8 moh 150 m ut på peiling 300, 1011,5 på 250, 969,3 på 350, 952,3 på 450, 956,8 på 550 og 886,0 på 650. Nordaustribba ved sida av måler 1010,2 / 956,2 / 908,5 på 150, 300 og 500 m. Fire vegpunkt tek linja vestover langs benken på 806 moh og opp ryggen."
   ],
   "rejectReason": "",
   "corridor": {
    "routeId": "heggedalen",
    "routeName": "Nordruta gjennom Heggedalen",
-   "routeDescriptionFull": "Fra E10 ved utløpet av Heggedalen (21 moh) går normalruta opp dalen på ryggen mellom de to elvene. Rundt 140 moh lønner det seg tidlig og sent på sesongen å følge den nordre elva videre opp til du passerer ei slukt ved høyde 505. Herfra svinger ruta sørover forbi høyde 570 og holder østsida av bollen til det flater ut rundt 805 moh. Derfra holder du mot vest og tar toppen via ryggen fra vest, på 1076.",
+   "routeDescriptionFull": "Fra E10 ved utløpet av Heggedalen (21 moh) går normalruta opp dalen på ryggen mellom de to elvene. Rundt 146 moh lønner det seg tidlig og sent på sesongen å følge den nordre elva videre opp til du passerer ei slukt ved høyde 505. Herfra svinger ruta sørover forbi høyde 570 og holder østsida av bollen til det flater ut rundt 805 moh. Derfra går ruta vestover langs benken til den kommer opp på nordvestryggen ved 886 moh, og følger ryggen over 952 og 1040 til toppen på 1076. Fri Flyt: «Letteste vei til toppen er å holde høyre (vest) fra nå og bestige toppen via ryggen fra høyre (vest). Det er helt klart mulig å gå opp på andre siden, men den er mer eksponert.»",
    "trailhead": {
     "name": "E10 ved Heggedalen",
     "lat": 68.52208,
@@ -3862,10 +3863,28 @@
      "elevationM": 804.96
     },
     {
-     "name": "Vestryggen mot toppen",
-     "lat": 68.508,
-     "lng": 16.043,
-     "elevationM": 901.39
+     "name": "Benken nord for toppen, vestover mot ryggen",
+     "lat": 68.5099,
+     "lng": 16.03186,
+     "elevationM": 806.21
+    },
+    {
+     "name": "Opp på nordvestryggen",
+     "lat": 68.50871,
+     "lng": 16.02314,
+     "elevationM": 886.02
+    },
+    {
+     "name": "Nordvestryggen",
+     "lat": 68.50717,
+     "lng": 16.02596,
+     "elevationM": 952.28
+    },
+    {
+     "name": "Ryggen rett vest for toppen",
+     "lat": 68.50523,
+     "lng": 16.03123,
+     "elevationM": 1039.76
     }
    ],
    "season": "jan–jun",

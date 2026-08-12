@@ -4155,7 +4155,7 @@
    {
     "id": "heggedalen",
     "name": "Nordruta gjennom Heggedalen",
-    "description": "Fra E10 ved utløpet av Heggedalen (21 moh) går normalruta opp dalen på ryggen mellom de to elvene. Rundt 140 moh lønner det seg tidlig og sent på sesongen å følge den nordre elva videre opp til du passerer ei slukt ved høyde 505. Herfra svinger ruta sørover forbi høyde 570 og holder østsida av bollen til det flater ut rundt 805 moh. Derfra holder du mot vest og tar toppen via ryggen fra vest, på 1076.",
+    "description": "Fra E10 ved utløpet av Heggedalen (21 moh) går normalruta opp dalen på ryggen mellom de to elvene. Rundt 146 moh lønner det seg tidlig og sent på sesongen å følge den nordre elva videre opp til du passerer ei slukt ved høyde 505. Herfra svinger ruta sørover forbi høyde 570 og holder østsida av bollen til det flater ut rundt 805 moh. Derfra går ruta vestover langs benken til den kommer opp på nordvestryggen ved 886 moh, og følger ryggen over 952 og 1040 til toppen på 1076. Fri Flyt: «Letteste vei til toppen er å holde høyre (vest) fra nå og bestige toppen via ryggen fra høyre (vest). Det er helt klart mulig å gå opp på andre siden, men den er mer eksponert.»",
     "trailhead": {
      "name": "E10 ved Heggedalen",
      "lat": 68.52208,
@@ -4189,10 +4189,28 @@
       "elevation_m": 804.96
      },
      {
-      "name": "Vestryggen mot toppen",
-      "lat": 68.508,
-      "lng": 16.043,
-      "elevation_m": 901.39
+      "name": "Benken nord for toppen, vestover mot ryggen",
+      "lat": 68.5099,
+      "lng": 16.03186,
+      "elevation_m": 806.21
+     },
+     {
+      "name": "Opp på nordvestryggen",
+      "lat": 68.50871,
+      "lng": 16.02314,
+      "elevation_m": 886.02
+     },
+     {
+      "name": "Nordvestryggen",
+      "lat": 68.50717,
+      "lng": 16.02596,
+      "elevation_m": 952.28
+     },
+     {
+      "name": "Ryggen rett vest for toppen",
+      "lat": 68.50523,
+      "lng": 16.03123,
+      "elevation_m": 1039.76
      }
     ],
     "source": "researched, verified (ok), no local audit",

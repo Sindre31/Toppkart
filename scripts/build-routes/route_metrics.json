@@ -1408,20 +1408,20 @@
   "cumdistM": 4112
  },
  "strandtinden": {
-  "verticalM": 1090,
-  "gainM": 1090,
-  "distanceM": 4770,
+  "verticalM": 1160,
+  "gainM": 1156,
+  "distanceM": 5864,
   "startM": 21,
   "summitM": 1076,
-  "duration": "4–6 t",
-  "steepestBandAngle": 19.0,
+  "duration": "5–7 t",
+  "steepestBandAngle": 19.8,
   "steepestBandFrom": 600,
   "steepestBandTo": 700,
-  "maxStepAngle": 28.7,
+  "maxStepAngle": 29.1,
   "grade": 2,
   "aspect": "NØ",
-  "distanceKm": 4.8,
-  "cumdistM": 4767
+  "distanceKm": 5.9,
+  "cumdistM": 5865
  },
  "raskarfjellet": {
   "verticalM": 680,

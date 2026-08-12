@@ -72,8 +72,15 @@ REGULATED = "InnsjøRegulert"
 # Words a guide uses when it promises the reader a prepared or mapped line. If
 # none of them appear, there is no trail claim to check and the tour is skipped
 # for that question rather than measured against a trail it never mentioned.
+#
+# The prefixes are the part that is easy to get wrong. `\bløypa` does not match
+# «lysløypa», because there is no word boundary inside a compound — so
+# Rødtinden's «følger lysløypa oppover Storelvdalen» was a trail claim the check
+# never tested, on a tour whose whole first kilometre is that claim. The same
+# hole swallowed «skiløypa» before `skiløype\w*` was added. A compound noun in
+# Norwegian is one word, and the pattern has to allow the first half of it.
 TRAIL_WORDS = re.compile(
-    r"\b(løype|løypa|løypene|vinterløype\w*|skiløype\w*|skogsbilveg\w*|skogsbilvei\w*|"
+    r"\b\w*?(løype|løypa|løypene|løyper|løypa\w*|skogsbilveg\w*|skogsbilvei\w*|"
     r"anleggsveg\w*|anleggsvei\w*|merket|merkede|merka|preparert\w*|oppkjørt\w*)\b",
     re.I,
 )
