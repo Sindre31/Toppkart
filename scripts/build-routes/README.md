@@ -2163,13 +2163,45 @@ publishes two tours on it with two summit heights, the register has one Togga,
 and the top its point sits on measures 1235.5 m — 30 m above one published figure
 and 105 below the other.
 
-### The guides
+### The four guides
 
-None of the four has a written guide yet. The research they were built from —
-route description, trailhead evidence, hazard notes, the sweeps and every
-correction above — is in `new_corridors.json`, `new_tourmeta.json` and
-`measurements.json`, which is what `guide_brief.py` reads. That is the same state
-the twelve Sunnmøre tours shipped in, and the same work list.
+All four have a guide in bokmål and English — nynorsk for Råskarfjellet, which is
+what the app's three other Hemsedal tours already use — written against
+`guide_brief.py`, the corridor research and the sweeps. They pass
+`check_guides.py` clean, as do the other 86 after the run, `test_check_guides.py`
+still pins the reassurance rule in both directions, and the two languages were
+compared number by number: 87, 74, 82 and 71 figures per tour, and every one of
+them appears in both.
+
+The treeline scan is where the writing pass learned something the research had
+not measured, and it says something different about each mountain:
+
+- **Rødtinden's forest is birch with bog in it.** Kartverket carries forest to
+  208 m and open ground from 218, but the class along the line alternates —
+  `Skog` at 35, 80, 113 and 204 m, `Myr` at 53, 156 and 241. That is the belt a
+  skier crosses in the first kilometre and a half, and it is why the guide says
+  the treeline is a band rather than a line.
+- **Kjølen is above the treeline from the car.** The last forest vertex is at
+  218 m, forty metres along the line, and every one of the fourteen samples above
+  it answers `ÅpentOmråde`.
+- **Strandtinden's last sample before the summit is glacier terrain.** The vertex
+  at 1023 m answers `SnøIsbre` — perennial snow on the side Fri Flyt says holds
+  its snow into June, and the same class an independent probe returned 991 m up
+  the north-west radial. The guide names it; nothing else on the line carries it.
+- **Råskardfjellet's forest stops at 1115 m** and open ground starts at 1133,
+  which brackets the 1130 the corridor research read off a straight-line probe.
+
+One figure had to be recorded before it could be written: Fri Flyt's «Følg RV52
+vestover fra Hemsedal sentrum i 19,5 km» lived only in the trailhead's OSM
+evidence, which is not one of the sources `check_guides.py` reads, so the drive
+distance came back unsourced on the first run. It is in the tour's `corrections`
+now, which is where a quoted published figure belongs.
+
+What has **not** happened is an independent adversarial read. The pass that wrote
+these four is the pass that checked them, and every round above says what that
+gap is worth — three of the seven Trondheim guides had a line that went somewhere
+the copy said it did not, and it took a second reader to find it. That is the
+next job on these four.
 
 ## Network
 
