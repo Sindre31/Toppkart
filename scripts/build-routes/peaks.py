@@ -173,4 +173,21 @@ PEAKS = [
     ("nevelfjell", "Nevelfjell", ["Lillehammer", "Øyer"], 1089, 61.20445, 10.56701),
     ("trysilfjellet", "Trysilfjellet", ["Trysil"], 1132, 61.30773, 12.17303),
     ("ulvsjoberget", "Ulvsjøberget", ["Trysil"], 851, 61.26538, 12.01805),
+    #
+    # — the popularity round: the mountains a published source calls the most
+    #   visited or most popular ski tour of its area. Two of the five are spelled
+    #   differently in the register than in the route descriptions — Strandtinden
+    #   is **Strandstinden** and it is registered in Lødingen rather than in the
+    #   Tjeldsund the guidebook files it under, and Råskarfjellet is
+    #   **Råskardfjellet**, which Fri Flyt indexes by its height, «1609». `near`
+    #   is Fri Flyt's own GPS position for the summit on the four it publishes
+    #   one for, and the SSR representation point for Strandtinden. On Kjølen the
+    #   two disagree by 700 m and 90 vertical metres: the register point sits on
+    #   a shoulder, and the disc search would have to grow that far to see the
+    #   top, so the published position is the seed. —
+    ("rodtinden", "Rødtinden", ["Tromsø"], 470, 69.70149, 18.75253),
+    ("kjolen", "Kjølen", ["Tromsø"], 790, 69.73368, 18.78696),
+    ("ullstinden", "Ullstinden", ["Tromsø"], 1078, 69.79580, 19.66870),
+    ("strandtinden", "Strandstinden", ["Lødingen"], 1076, 68.50435, 16.03420),
+    ("raskarfjellet", "Råskardfjellet", ["Hemsedal"], 1609, 60.88433, 8.20885),
 ]

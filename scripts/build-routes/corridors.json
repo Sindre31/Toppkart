@@ -4067,5 +4067,187 @@
     "notes": "Ut.no om Stygghammeren: «Hit går du på eget ansvar, og vi anbefaler ikke at du tar med små barn hit, da det er en bratt, usikret fjellhylle.» Ho ligg vest for toppen og er utanfor oppstigningsruta, men er det næraste dette fjellet kjem eit stup, og under snø er kanten ikkje til å sjå. Elles er dette skogsterreng: problemet er å finne fram, ikkje å komme opp."
    }
   ]
+ },
+ "rodtinden": {
+  "routes": [
+   {
+    "id": "storelva",
+    "name": "Fra Storelva skistadion",
+    "description": "Fra parkeringa ved Storelva skistadion (20 moh) følger du lysløypa oppover Storelvdalen et stykke før du tar av og begynner selve oppstigningen gjennom småskogen. Ruta forlater løypa i skogen rundt 96 moh, går ut av skogen på vel 200 og videre opp den åpne sørøstsida av fjellet. De siste hundre høydemeterne holder du godt mot vest der ryggen er slakest, og kommer opp på det runde toppunktet på 470.",
+    "trailhead": {
+     "name": "Storelva skistadion",
+     "lat": 69.68579,
+     "lng": 18.78806,
+     "elevation_m": 20.19,
+     "fullName": "Storelva skistadion"
+    },
+    "waypoints": [
+     {
+      "name": "Der ruta forlater lysløypa i Storelvdalen",
+      "lat": 69.69251,
+      "lng": 18.77594,
+      "elevation_m": 96.38
+     },
+     {
+      "name": "Over skoggrensa på sørøstsida",
+      "lat": 69.69745,
+      "lng": 18.761,
+      "elevation_m": 302.61
+     },
+     {
+      "name": "Vestsida av toppryggen",
+      "lat": 69.70067,
+      "lng": 18.75173,
+      "elevation_m": 430.84
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyts eneste faremoment: «Like før toppen mot SØ er det heng med bratthet opp mot 40 grader.» Ellers går ruta i terreng under 25 grader. Nordvestover fra toppen stiger ryggen videre mot Storbogtinden uten sadel, så i dårlig sikt er det lett å gå forbi toppunktet."
+   }
+  ]
+ },
+ "kjolen": {
+  "routes": [
+   {
+    "id": "finnvikdalen",
+    "name": "Fra Finnvikvatnet i Finnvikdalen",
+    "description": "Frå startpunktet sør for Finnvikvatnet (224 moh) går ruta vestover innover Finnvikdalen. Frå rundt 440 moh svingar linja sørvestover og stig jamt opp den lange austsida av Kjølen, forbi 570 og 700 moh, og kjem opp på toppflata med den store radaren og varmebua på 790. Ut.no: «Om snøen har begynt å smelte, følg stien så langt det lar seg gjøre. Legg deretter ruta opp mot den synlige radaren på toppen.»",
+    "trailhead": {
+     "name": "Sør for Finnvikvatnet",
+     "lat": 69.74864,
+     "lng": 18.87184,
+     "elevation_m": 224.22,
+     "fullName": "Sør for Finnvikvatnet"
+    },
+    "waypoints": [
+     {
+      "name": "Innover Finnvikdalen",
+      "lat": 69.74739,
+      "lng": 18.83099,
+      "elevation_m": 439.75
+     },
+     {
+      "name": "Austsida av Kjølen",
+      "lat": 69.73966,
+      "lng": 18.82017,
+      "elevation_m": 571.6
+     },
+     {
+      "name": "Opp mot toppflata",
+      "lat": 69.7364,
+      "lng": 18.80232,
+      "elevation_m": 702.59
+     },
+     {
+      "name": "Toppflata aust for radaren",
+      "lat": 69.73431,
+      "lng": 18.7891,
+      "elevation_m": 773.85
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Ingen av kjeldene oppgir eit faremoment på denne ruta. Ut.no åtvarar mot terrengfeller og bekkedalar på veg ned: «Snømengden avgjør mulighetene dine på vei ned. Følg snøfeltene så langt det lar seg gjøre, unngå åpenbare terrengfeller og bekkedaler.» Toppflata er brei og radaren er det einaste haldepunktet i dårleg sikt."
+   }
+  ]
+ },
+ "strandtinden": {
+  "routes": [
+   {
+    "id": "heggedalen",
+    "name": "Nordruta gjennom Heggedalen",
+    "description": "Fra E10 ved utløpet av Heggedalen (21 moh) går normalruta opp dalen på ryggen mellom de to elvene. Rundt 146 moh lønner det seg tidlig og sent på sesongen å følge den nordre elva videre opp til du passerer ei slukt ved høyde 505. Herfra svinger ruta sørover forbi høyde 570 og holder østsida av bollen til det flater ut rundt 805 moh. Derfra går ruta vestover langs benken til den kommer opp på nordvestryggen ved 886 moh, og følger ryggen over 952 og 1040 til toppen på 1076. Fri Flyt: «Letteste vei til toppen er å holde høyre (vest) fra nå og bestige toppen via ryggen fra høyre (vest). Det er helt klart mulig å gå opp på andre siden, men den er mer eksponert.»",
+    "trailhead": {
+     "name": "E10 ved Heggedalen",
+     "lat": 68.52208,
+     "lng": 16.1003,
+     "elevation_m": 21.12,
+     "fullName": "E10 ved Heggedalen"
+    },
+    "waypoints": [
+     {
+      "name": "Heggedalen, nordsida av elva",
+      "lat": 68.5235,
+      "lng": 16.0925,
+      "elevation_m": 146.16
+     },
+     {
+      "name": "Slukta ved høyde 505",
+      "lat": 68.5183,
+      "lng": 16.0505,
+      "elevation_m": 509.61
+     },
+     {
+      "name": "Høyde 570",
+      "lat": 68.5162,
+      "lng": 16.051,
+      "elevation_m": 570.33
+     },
+     {
+      "name": "Østsida av bollen, der det flater ut",
+      "lat": 68.51,
+      "lng": 16.047,
+      "elevation_m": 804.96
+     },
+     {
+      "name": "Benken nord for toppen, vestover mot ryggen",
+      "lat": 68.5099,
+      "lng": 16.03186,
+      "elevation_m": 806.21
+     },
+     {
+      "name": "Opp på nordvestryggen",
+      "lat": 68.50871,
+      "lng": 16.02314,
+      "elevation_m": 886.02
+     },
+     {
+      "name": "Nordvestryggen",
+      "lat": 68.50717,
+      "lng": 16.02596,
+      "elevation_m": 952.28
+     },
+     {
+      "name": "Ryggen rett vest for toppen",
+      "lat": 68.50523,
+      "lng": 16.03123,
+      "elevation_m": 1039.76
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: «I bollen er det flere ganger gått store skred, så velg dager med stabil snø.» Ruta opp holder venstresiden (øst) av bollen og tar toppen fra vest fordi østsida av toppen er mer eksponert. De to andre beskrevne linjene — Kvanntoa i nordøst og Kvannto i øst — har partier på 45 grader og rappellfeste, og er ikke ruta dette kortet beskriver."
+   }
+  ]
+ },
+ "raskarfjellet": {
+  "routes": [
+   {
+    "id": "sildegjerdet",
+    "name": "Frå Sildegjerdet ved rv 52",
+    "description": "Frå den brøytte parkeringslomma ved stølsområdet Sildegjerdet (938 moh) kryssar du elva og går sørvestover. Etter dei første 500 metrane byrjar sjølve oppstigninga gjennom glissen bjørkeskog og inn i den vide dalen til Rupebekken. Skogen slepper taket rundt 1130 moh, og derfrå går ruta i ope skredterreng opp mot 1400, der det flatar av eit stykke. Dei siste vel to hundre høgdemetrane stig jamt til varden på 1609.",
+    "trailhead": {
+     "name": "Sildegjerdet",
+     "lat": 60.89913,
+     "lng": 8.25262,
+     "elevation_m": 937.62,
+     "fullName": "Sildegjerdet"
+    },
+    "waypoints": [
+     {
+      "name": "Bekkedalen ved Rupebekken",
+      "lat": 60.89382,
+      "lng": 8.23705,
+      "elevation_m": 1050.52
+     },
+     {
+      "name": "Flata over skredterrenget",
+      "lat": 60.88958,
+      "lng": 8.22458,
+      "elevation_m": 1397.35
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: «Dersom det er dårlig sikt, er det lite terrengformasjoner å orientere etter. Du trenger god sikt. Mye skredterreng rundt deg.» Nedkøyringa går anten same veg eller i rennene du ser på veg opp, og dei er skredterreng."
+   }
+  ]
  }
 }

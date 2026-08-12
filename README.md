@@ -81,17 +81,17 @@ components/
 lib/
   config.ts              PRICE, TRIAL_DAYS, SITE, GRADE_COLORS, env, is*Configured
   types.ts               Tour, TourGuide, Viewer, Subscription, Invoice
-  tours.ts               The 78 tours, REGIONS, getTour(), routesFor(), routeById(),
+  tours.ts               The 90 tours, REGIONS, getTour(), routesFor(), routeById(),
                          routeFor(), routeProfile()
   routes.ts              Generated ascent routes per tour — see scripts/build-routes/
-  guides.ts              Editorial guide content — all 78 tours, generated
+  guides.ts              Editorial guide content — all 90 tours, generated
   access.ts              getViewer() / grantsAccess() — server-only access gate
   stripe.ts              Stripe client, null in demo mode
   demo-session.ts        Cookie-backed stand-ins for auth and subscription
   supabase/              Browser and server Supabase clients
 supabase/
   schema.sql             Tables, policies, RLS
-  seed.sql               The 78 tours and all 78 guides
+  seed.sql               The 90 tours and all 90 guides
 design-reference/        The HTML prototypes and the product/design handoff. Read-only ground
                          truth; not shipped.
 docs/
@@ -172,7 +172,7 @@ content and data quality that has to be settled before the site is sold to anyon
   none was made. Each of the ten guides says so in its own words, and every region was queried
   rather than assumed. The four Trollheimen tours are in an A-region and are forecast daily.
 - **The tour cards are checked, the guides are checked, the geometry is checked — by machine.**
-  `check_tours.py`, `check_guides.py` and `check_routes.py` come back clean on all 78 tours: every
+  `check_tours.py`, `check_guides.py` and `check_routes.py` come back clean on all 90 tours: every
   card height is DTM1 at the resolved summit, every vertical is its route's cumulative ascent to
   within 10 m, every number in the prose traces to a measurement, and `supabase/seed.sql` holds the
   same figures as `lib/tours.ts`. That last one was not true until it was checked: the seed had

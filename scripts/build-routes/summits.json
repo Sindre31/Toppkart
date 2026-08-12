@@ -814,5 +814,45 @@
     "summit_dtm": 854.2,
     "claims": 851,
     "stored_off_km": 0.03
+  },
+  "rodtinden": {
+    "name": "Rødtinden",
+    "lat": 69.70147,
+    "lng": 18.75254,
+    "summit_dtm": 469.6,
+    "claims": 470,
+    "stored_off_km": 0.0
+  },
+  "kjolen": {
+    "name": "Kjølen",
+    "lat": 69.73349,
+    "lng": 18.78773,
+    "summit_dtm": 790.0,
+    "claims": 790,
+    "stored_off_km": 0.04
+  },
+  "ullstinden": {
+    "name": "Ullstinden",
+    "lat": 69.79584,
+    "lng": 19.66893,
+    "summit_dtm": 1092.4,
+    "claims": 1078,
+    "stored_off_km": 0.01
+  },
+  "strandtinden": {
+    "name": "Strandstinden",
+    "lat": 68.50455,
+    "lng": 16.03441,
+    "summit_dtm": 1076.5,
+    "claims": 1076,
+    "stored_off_km": 0.02
+  },
+  "raskarfjellet": {
+    "name": "Råskardfjellet",
+    "lat": 60.88427,
+    "lng": 8.20901,
+    "summit_dtm": 1609.8,
+    "claims": 1609,
+    "stored_off_km": 0.01
   }
 }

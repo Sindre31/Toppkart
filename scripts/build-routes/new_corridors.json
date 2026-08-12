@@ -3690,5 +3690,282 @@
   ],
   "rejectReason": "Trysilfjellet er kommunetoppen i Trysil og har to publiserte rutebeskrivingar på ut.no — frå Skihytta i sør (1112155778, 310 høgdemeter, 3,8 km) og frå Fageråsen i nordvest (1112155777, 301 høgdemeter, 4,9 km). Begge går i alpinanlegget. Skihytta-ruta seier det sjølv: «Følg merket sti oppover i slalåmbakken.» Fageråsen-ruta blei kontrollert mot Kartverkets terrengklasser vertex for vertex: seks av seksten prøvepunkt langs linja svarer **Alpinbakke** — samanhengande frå 938 til 1002 moh, og igjen på 1092 — og det er prepererte nedfartar i drift heile sesongen. Ein topptur-linje teikna opp der sender ein betalande lesar opp mot skitrafikk i eit anlegg som ikkje har oppgåande trasé. Det finst inga publisert rutebeskriving på nokon annan flanke, og å konstruere ei ville vore å finne opp ei rute fordi skjemaet tillèt det. Turen står difor ikkje på kartet, og Trysil er representert med Ulvsjøberget.",
   "corridor": {}
+ },
+ {
+  "slug": "rodtinden",
+  "verdict": "ok",
+  "corrections": [
+   "Toppen måler 469,6 moh på DTM1 mot publiserte 470 hjå Fri Flyt, og Fri Flyt sin eigen GPS-posisjon for toppunktet — 645206.533/7737046.457 i UTM33 — konverterer til 69.70149/18.75253 og ligg 3 m frå registerpunktet. Ut.no si eiga linje endar 8 m frå det same punktet.",
+   "Rødtinden er ein namngjeven skulder, ikkje eit toppunkt i terrengmodellen. Bakken fell frå registerpunktet i sju av åtte retningar, men i 315 grader stig han utan sadel — 479,6 moh 200 m ut, 488,5 på 400 og 491,0 på 600 — og held fram mot Storbogtinden. Eit ubunde hill-climb frå registerpunktet stoppa på 488,2 moh 263 m ut, som ikkje er ein topp, men der ei 700 m rutefliseramme slutta. Summit-søket er difor kappa til 150 m for denne turen, og kappet står i `SUMMIT_CAP_M` med grunngjevinga.",
+   "Registeret fører toppen på to språk: Rødtinden (norsk) og Ruksesvárri (nordsamisk), begge vedtekne.",
+   "Startpunktet er Storelva skistadion, OSM node/12062704756 (leisure=sports_centre) på 20,1 moh, med kartlagd parkering way/129034321 25 m unna på 20,2 moh. Ut.no si linje startar 100 m sørvest for parkeringa, på vegen inn."
+  ],
+  "rejectReason": "",
+  "corridor": {
+   "routeId": "storelva",
+   "routeName": "Fra Storelva skistadion",
+   "routeDescriptionFull": "Fra parkeringa ved Storelva skistadion (20 moh) følger du lysløypa oppover Storelvdalen et stykke før du tar av og begynner selve oppstigningen gjennom småskogen. Ruta forlater løypa i skogen rundt 96 moh, går ut av skogen på vel 200 og videre opp den åpne sørøstsida av fjellet. De siste hundre høydemeterne holder du godt mot vest der ryggen er slakest, og kommer opp på det runde toppunktet på 470.",
+   "trailhead": {
+    "name": "Storelva skistadion",
+    "lat": 69.68579,
+    "lng": 18.78806,
+    "elevationM": 20.19,
+    "osmEvidence": "Kartlagd parkering OSM way/129034321 på 20,2 moh, 25 m fra skistadion-noden (OSM node/12062704756, leisure=sports_centre, name=Storelva skistadion). Rødtindhallen (SSR, Idrettshall) ligger 212 m unna og har navn etter fjellet. Ut.no sitt turforslag 111870464 starter 100 m sørvest, på 15,0 moh i Tettbebyggelse."
+   },
+   "waypoints": [
+    {
+     "name": "Der ruta forlater lysløypa i Storelvdalen",
+     "lat": 69.69251,
+     "lng": 18.77594,
+     "elevationM": 96.38
+    },
+    {
+     "name": "Over skoggrensa på sørøstsida",
+     "lat": 69.69745,
+     "lng": 18.761,
+     "elevationM": 302.61
+    },
+    {
+     "name": "Vestsida av toppryggen",
+     "lat": 69.70067,
+     "lng": 18.75173,
+     "elevationM": 430.84
+    }
+   ],
+   "season": "des–mai",
+   "roadClosedInWinter": false,
+   "aspect": "SØ",
+   "grade": 1,
+   "gradeReason": "Fri Flyt fører turen som KAST 1 – Enkelt med bratteste punkt under 25 grader, og skriver at «her kan man legge et 100% skredtrygt spor». 450 høydemeter på 2,5 km fra en brøytet skistadion midt i byen er en ener på appens skala. Det ene faremomentet ligger ved sida av ruta og ikke på den.",
+   "hazardNotes": "Fri Flyts eneste faremoment: «Like før toppen mot SØ er det heng med bratthet opp mot 40 grader.» Ellers går ruta i terreng under 25 grader. Nordvestover fra toppen stiger ryggen videre mot Storbogtinden uten sadel, så i dårlig sikt er det lett å gå forbi toppunktet.",
+   "teaserNo": "450 høydemeter fra Storelva skistadion opp den åpne sørøstsida — den mest besøkte toppen rundt Tromsø.",
+   "teaserEn": "450 m of climbing from the Storelva ski stadium up the open south-east side — the most-visited summit around Tromsø.",
+   "sources": [
+    "https://www.friflyt.no/topptur/tromso/turbeskrivelse-roedtinden",
+    "https://ut.no/turforslag/111870464",
+    "https://www.friflyt.no/randone/enkle-og-fine-toppturer-i-tromsoe"
+   ],
+   "confidence": "high",
+   "notes": "Fri Flyt: toppunkt 470, høydemeter 450, 2,8 km, startsted «Skistadion på Storelva», himmelretning SØ, bratteste punkt under 25 grader, KAST 1 – Enkelt, 2 timer opp/ned, GPS toppunkt 645206.533/7737046.457 (UTM33). Populariteten står i to av Fri Flyts egne tekster: turbeskrivelsen åpner «Vi våger påstanden. Dette er den mest besøkte toppen rundt Tromsø!!», og artikkelen «Enkle og fine toppturer i Tromsø» gjentar «Dette er den mest besøkte toppen rundt Tromsø.» Ut.no 111870464 er en barmarksregistrering («5 turer med Turbo») og teller her som en uavhengig andrekilde til *linja*, ikke til skisesongen: den starter på skistadion og ender på registerpunktet, 2,52 km. Ingen av kildene oppgir sesong; kortet setter des–mai, som er en slutning fra høyden (470 moh) og fra at Fri Flyt gir naboen Kjølen på 790 moh november–juni."
+  }
+ },
+ {
+  "slug": "kjolen",
+  "verdict": "ok",
+  "corrections": [
+   "Toppen måler 790,0 moh på DTM1 mot publiserte 790 hjå Fri Flyt. Fri Flyt sin GPS-posisjon 646314.96/7740712.52 (UTM33) konverterer til 69.73368/18.78696 og måler 787,6 — 32 m frå cella summit-søket klatra til.",
+   "Registerpunktet for Kjølen ligg ikkje på toppen: 69.72882/18.77273 måler 697,0 moh, 93 m under den publiserte høgda og 700 m sørvest for toppunktet. Difor er `near` i peaks.py Fri Flyt sin GPS-posisjon. Registeret har to fjell med namnet i Tromsø; det andre ligg på Ringvassøya.",
+   "Ut.no oppgir 563 høgdemeter for turen. Parkeringa ved Finnvikvatnet måler 231,6 moh og toppen 790,0 — differansen er 558 m, og det er den ut.no reknar. Fri Flyts 770 høgdemeter høyrer til ei anna av dei fire rutene deira, den frå Kvaløysletta nede ved fjorden.",
+   "Ut.no si linje startar 640 m søraust for den kartlagde parkeringa, på 224,2 moh sør for vatnet. Det punktet er teke med som første vegpunkt, slik at linja går rundt sørsida av Finnvikvatnet og ikkje over isen.",
+   "Startpunktet blei flytta etter `check_ground.py`. Med parkeringa ved austenden av Finnvikvatnet som start gjekk den routa linja 290 m ut på vatnet på 229 moh — DTM1 svarer Innsjø, og OSM har ingen reservoir-tagg, men ingen av kjeldene sender turen over isen. Ut.no sitt eige startpunkt ligg sør for vatnet på 224,2 moh, og derfrå rører linja ikkje vatn i det heile."
+  ],
+  "rejectReason": "",
+  "corridor": {
+   "routeId": "finnvikdalen",
+   "routeName": "Fra Finnvikvatnet i Finnvikdalen",
+   "routeDescriptionFull": "Frå startpunktet sør for Finnvikvatnet (224 moh) går ruta vestover innover Finnvikdalen. Frå rundt 440 moh svingar linja sørvestover og stig jamt opp den lange austsida av Kjølen, forbi 570 og 700 moh, og kjem opp på toppflata med den store radaren og varmebua på 790. Ut.no: «Om snøen har begynt å smelte, følg stien så langt det lar seg gjøre. Legg deretter ruta opp mot den synlige radaren på toppen.»",
+   "trailhead": {
+    "name": "Sør for Finnvikvatnet",
+    "lat": 69.74864,
+    "lng": 18.87184,
+    "elevationM": 224.22,
+    "osmEvidence": "Ut.no sitt eige startpunkt for turforslag 118113 — «Vi parkerte på sørsiden av Finvikvatnet, et av mange startpunkter» — på 224,2 moh i terrengklasse ÅpentOmråde. OSM way/1154427451 (highway=service) går forbi 128 m unna, og den kartlagde parkeringa way/688053336 (fee=no, 231,6 moh) ligg 640 m nord, ved austenden av vatnet."
+   },
+   "waypoints": [
+    {
+     "name": "Innover Finnvikdalen",
+     "lat": 69.74739,
+     "lng": 18.83099,
+     "elevationM": 439.75
+    },
+    {
+     "name": "Austsida av Kjølen",
+     "lat": 69.73966,
+     "lng": 18.82017,
+     "elevationM": 571.6
+    },
+    {
+     "name": "Opp mot toppflata",
+     "lat": 69.7364,
+     "lng": 18.80232,
+     "elevationM": 702.59
+    },
+    {
+     "name": "Toppflata aust for radaren",
+     "lat": 69.73431,
+     "lng": 18.7891,
+     "elevationM": 773.85
+    }
+   ],
+   "season": "nov–mai",
+   "roadClosedInWinter": false,
+   "aspect": "SØ",
+   "grade": 1,
+   "gradeReason": "Fri Flyt fører alle fire rutene på fjellet som KAST 1 – Enkelt med bratteste punkt under 27 grader, og ut.no som moderate. Ut.no skriv det sjølv: «Ikke en topp for deg som må ha kvasse egger og bratte nedkjøringer, men en fin topp som gir god skikjøring.»",
+   "hazardNotes": "Ingen av kjeldene oppgir eit faremoment på denne ruta. Ut.no åtvarar mot terrengfeller og bekkedalar på veg ned: «Snømengden avgjør mulighetene dine på vei ned. Følg snøfeltene så langt det lar seg gjøre, unngå åpenbare terrengfeller og bekkedaler.» Toppflata er brei og radaren er det einaste haldepunktet i dårleg sikt.",
+   "teaserNo": "560 høydemeter fra Finnvikvatnet innover dalen til radaren og varmebua — en av Kvaløyas mest besøkte topper.",
+   "teaserEn": "560 m of climbing from Finnvikvatnet up the valley to the radar and the warming hut — one of Kvaløya's most-visited summits.",
+   "sources": [
+    "https://ut.no/turforslag/118113",
+    "https://www.friflyt.no/topptur/skiturer-troms/turbeskrivelse-kjoelen"
+   ],
+   "confidence": "high",
+   "notes": "Ut.no 118113 er ført som ski touring + topptur, 563 høgdemeter, 4,08 km, 3 timar, sesong januar–mai, og opnar «En av Kvaløyas mest besøkte topper.» Fri Flyt: toppunkt 790, høgdemeter 770, himmelretning S-Ø, bratteste punkt under 27 grader, KAST 1, 3–5 timar, beste sesong november–juni, og fire startstader (Kvaløysletta, Slettaelva, Storelva og Finnvikdalen). Fri Flyts «FRA STORELVA» går over Rødtinden og Storbogstinden til Kjølen — dei to turane i denne runden deler altså fjellrygg. Sesongen på kortet er overlappet mellom dei to kjeldene, november til mai. På toppen står ei varmebu reist på dugnad av Troms Turlag i 2010. Første forsøk starta på den kartlagde parkeringa ved austenden av vatnet, og `check_ground.py` fann at linja då gjekk 290 m ut på Finnvikvatnet på 229 moh (terrengklasse Innsjø, ikkje regulert). Ingen kjelde sender nokon over det vatnet, og landet aust for det ligg 25–35 m høgare, så turen startar der ut.no startar han: sør for vatnet, der servicevegen endar."
+  }
+ },
+ {
+  "slug": "strandtinden",
+  "verdict": "ok",
+  "corrections": [
+   "Toppen måler 1076,5 moh på DTM1 mot publiserte 1076 hjå Fri Flyt.",
+   "Registeret kjenner ikkje namnet Strandtinden her. Toppen er ført som **Strandstinden** (Fjell, 68.50435/16.03420) og som **Djupfesttinden** (Topp, 68.50473/16.03440) — dei to punkta ligg 24 og 20 m frå cella summit-søket klatra til. Vegen forbi under fjellet, E10, heiter Strandstindvegen i registeret og i OSM (way/549021156).",
+   "Fri Flyt fører turen under «Harstad / Tjeldsund». Toppen ligg i **Lødingen** kommune, og alle namna ruta går forbi — Heggedalen, Heggvatnet, Kvanntoa, Kvannto — er registrerte i Lødingen. Kortet fører regionen Harstad, som er der turen blir gått frå og korleis kjelda plasserer han.",
+   "Dei to punkthøgdene i rutebeskrivinga stemmer med terrengmodellen: «ei slukt ved høyde 505» måler 509,6 moh på 68.51830/16.05050, og «høyde 570» måler 570,3 på 68.51620/16.05100. Det er dei to punkta som pinnar korridoren til den skildra linja.",
+   "«Bollen» ruta held austsida av er søkket på 68.5150/16.0460, som måler 524,7 moh med 805,0 der det flatar ut i sørenden. Namnet står ikkje i registeret; vegpunktet er lese av terrengmodellen der skildringa plasserer det, og er ei slutning.",
+   "Startstaden er ikkje eit punkt i kjelda, men ei strekning: «Her er det flere muligheter langs E10, avhengig hvor mye som er brøytet.» Korridoren startar der E10 er nærast utløpet av Heggedalen, 68.52208/16.10030 på 21,1 moh. Ingen parkeringsplass er kartlagd der; dei to som finst i OSM (node/13096102226 og node/885198913) ligg 2,0 og 2,4 km sør, ved Kvannto, som er utgangspunktet for austnedkøyringa.",
+   "Adversariell lesnad: korridoren tok toppen frå feil side. Med eitt vegpunkt på 901 moh (68.50800/16.04300) klatra den routa linja nordaustribba — dei siste 519 metrane peika 222 grader, og vegpunktet låg på peiling 60 frå toppen. Fri Flyt seier «hald høgre (vest) ... og bestig toppen via ryggen frå høgre (vest)», og om ribba linja faktisk gjekk i: «Det er helt klart mulig å gå opp på andre siden, men den er mer eksponert.» Guiden arva feilen og kalla vegpunktet vestryggen. Nordvestryggen finst og er tydeleg i terrengmodellen: målt med punkt-API-et 1039,8 moh 150 m ut på peiling 300, 1011,5 på 250, 969,3 på 350, 952,3 på 450, 956,8 på 550 og 886,0 på 650. Nordaustribba ved sida av måler 1010,2 / 956,2 / 908,5 på 150, 300 og 500 m. Fire vegpunkt tek linja vestover langs benken på 806 moh og opp ryggen."
+  ],
+  "rejectReason": "",
+  "corridor": {
+   "routeId": "heggedalen",
+   "routeName": "Nordruta gjennom Heggedalen",
+   "routeDescriptionFull": "Fra E10 ved utløpet av Heggedalen (21 moh) går normalruta opp dalen på ryggen mellom de to elvene. Rundt 146 moh lønner det seg tidlig og sent på sesongen å følge den nordre elva videre opp til du passerer ei slukt ved høyde 505. Herfra svinger ruta sørover forbi høyde 570 og holder østsida av bollen til det flater ut rundt 805 moh. Derfra går ruta vestover langs benken til den kommer opp på nordvestryggen ved 886 moh, og følger ryggen over 952 og 1040 til toppen på 1076. Fri Flyt: «Letteste vei til toppen er å holde høyre (vest) fra nå og bestige toppen via ryggen fra høyre (vest). Det er helt klart mulig å gå opp på andre siden, men den er mer eksponert.»",
+   "trailhead": {
+    "name": "E10 ved Heggedalen",
+    "lat": 68.52208,
+    "lng": 16.1003,
+    "elevationM": 21.12,
+    "osmEvidence": "Punktet på E10 (OSM way/549021156, name=Strandstindvegen, ref=E 10) som ligg nærast Heggedalen sitt registerpunkt — 1,29 km. DTM1 gir 21,1 moh, terrengklasse Skog. Ingen kartlagd parkering innanfor 2 km; Fri Flyt seier sjølv at ein parkerer langs vegen der det er brøytt, og åtvarar mot det: «dette er en høyt trafikkert vei med 80 km/t og få rette strekninger.»"
+   },
+   "waypoints": [
+    {
+     "name": "Heggedalen, nordsida av elva",
+     "lat": 68.5235,
+     "lng": 16.0925,
+     "elevationM": 146.16
+    },
+    {
+     "name": "Slukta ved høyde 505",
+     "lat": 68.5183,
+     "lng": 16.0505,
+     "elevationM": 509.61
+    },
+    {
+     "name": "Høyde 570",
+     "lat": 68.5162,
+     "lng": 16.051,
+     "elevationM": 570.33
+    },
+    {
+     "name": "Østsida av bollen, der det flater ut",
+     "lat": 68.51,
+     "lng": 16.047,
+     "elevationM": 804.96
+    },
+    {
+     "name": "Benken nord for toppen, vestover mot ryggen",
+     "lat": 68.5099,
+     "lng": 16.03186,
+     "elevationM": 806.21
+    },
+    {
+     "name": "Opp på nordvestryggen",
+     "lat": 68.50871,
+     "lng": 16.02314,
+     "elevationM": 886.02
+    },
+    {
+     "name": "Nordvestryggen",
+     "lat": 68.50717,
+     "lng": 16.02596,
+     "elevationM": 952.28
+    },
+    {
+     "name": "Ryggen rett vest for toppen",
+     "lat": 68.50523,
+     "lng": 16.03123,
+     "elevationM": 1039.76
+    }
+   ],
+   "season": "jan–jun",
+   "roadClosedInWinter": false,
+   "aspect": "N",
+   "grade": 3,
+   "gradeReason": "Fri Flyt fører turen som KAST 3 – Komplekst og lister alpinøks og stegjern som ekstra utstyr: «Det kan være greit med stegjern og alpinøks på dager med hard skare.» Bollen ruta går gjennom har gått store skred flere ganger. 1050 høydemeter fra havet på seks timer, med to av de tre beskrevne nedkjøringene i rappell- og 45-graders terreng, er en treer og ikke en firer fordi normalruta selv holder seg unna det bratteste.",
+   "hazardNotes": "Fri Flyt: «I bollen er det flere ganger gått store skred, så velg dager med stabil snø.» Ruta opp holder venstresiden (øst) av bollen og tar toppen fra vest fordi østsida av toppen er mer eksponert. De to andre beskrevne linjene — Kvanntoa i nordøst og Kvannto i øst — har partier på 45 grader og rappellfeste, og er ikke ruta dette kortet beskriver.",
+   "teaserNo": "1050 høydemeter fra E10 ved havet gjennom Heggedalen — Harstad-områdets store klassiker, og fjellet flest går der.",
+   "teaserEn": "1050 m from the E10 at sea level up through Heggedalen — the great classic of the Harstad area, and the peak most people there ski.",
+   "sources": [
+    "https://www.friflyt.no/topptur/skiturer-troms/turbeskrivelse-strandtinden",
+    "https://ut.no/utforsker/kommune/17262/l%C3%B8dingen/turforslag"
+   ],
+   "confidence": "medium",
+   "notes": "Fri Flyt: toppunkt 1076, høydemeter 1050, KAST 3 – Komplekst, 6 timer, beste sesong januar–juni, ekstra utstyr alpinøks og stegjern, tre beskrevne linjer (Nord, Nordøst/Kvanntoa, Øst/Kvannto). Populariteten står i ingressen: «Strandtinden er Harstadområdets store klassiker, sannsynligvis det mest populære og kjente fjellet for toppturfolk fra Harstad og utenfra.» Confidence er medium og ikke high av én grunn: den publiserte rutebeskrivelsen er én kilde, og andrekilden bekrefter fjellet og høyden, ikke linja. Punkthøydene 505 og 570 måler 509,6 og 570,3 på DTM1, og det er den uavhengige kontrollen korridoren faktisk har."
+  }
+ },
+ {
+  "slug": "raskarfjellet",
+  "verdict": "ok",
+  "corrections": [
+   "Toppen måler 1609,8 moh på DTM1 mot publiserte 1609 hjå Fri Flyt, og Fri Flyt sin eigen GPS-posisjon — 131815.747/6768999.925 i UTM33 — konverterer til 60.88433/8.20885 og ligg 8 m frå cella summit-søket klatra til.",
+   "Registeret skriv fjellet **Råskardfjellet**, ikkje Råskarfjellet, og Fri Flyt indekserer turen på høgda si: «1609». Registerpunktet ligg på toppen.",
+   "Startpunktet er kartlagd: OSM way/1489157738, amenity=parking, fee=no, på 937,6 moh, 120 m frå SSR-punktet Sildegjerdet (Seter/støl, 60.89991/8.25152). Rv 52 (OSM: Hemsedalsvegen, ref=52) går forbi. Differansen mellom parkeringa og toppen er 672 m mot Fri Flyts oppgitte 650 høgdemeter.",
+   "Den «vide bekkedalen» rutebeskrivinga sender deg inn i, er dalen til **Rupebekken** (SSR 60.89378/8.24121) — den einaste namngjevne bekken i lia. Vegpunktet på 1050,5 moh ligg 225 m vest for registerpunktet til bekken, og identifiseringa er ei slutning frå bekken.",
+   "Fri Flyt seier skredterrenget held fram «til 1300 moh» og at det så kjem «en kort flate» før dei siste ~300 metrane. På den routa linja ligg flata høgare: 1377,9 moh 1,65 km inne og 1397,4 moh 200 m lenger framme, med 212 høgdemeter att til toppen. Kortet fører den målte flata."
+  ],
+  "rejectReason": "",
+  "corridor": {
+   "routeId": "sildegjerdet",
+   "routeName": "Frå Sildegjerdet ved rv 52",
+   "routeDescriptionFull": "Frå den brøytte parkeringslomma ved stølsområdet Sildegjerdet (938 moh) kryssar du elva og går sørvestover. Etter dei første 500 metrane byrjar sjølve oppstigninga gjennom glissen bjørkeskog og inn i den vide dalen til Rupebekken. Skogen slepper taket rundt 1130 moh, og derfrå går ruta i ope skredterreng opp mot 1400, der det flatar av eit stykke. Dei siste vel to hundre høgdemetrane stig jamt til varden på 1609.",
+   "trailhead": {
+    "name": "Sildegjerdet",
+    "lat": 60.89913,
+    "lng": 8.25262,
+    "elevationM": 937.62,
+    "osmEvidence": "Kartlagd parkering OSM way/1489157738, amenity=parking, fee=no, på 937,6 moh i terrengklasse Skog, 120 m frå SSR-punktet Sildegjerdet (Seter/støl). Rv 52 Hemsedalsvegen (OSM way/605985634, highway=trunk, ref=52) går forbi. Fri Flyt: «Følg RV52 vestover fra Hemsedal sentrum i 19,5 km og parker i brøytet parkeringslomme på venstre side, 1,5 km etter brua på RV52.»"
+   },
+   "waypoints": [
+    {
+     "name": "Bekkedalen ved Rupebekken",
+     "lat": 60.89382,
+     "lng": 8.23705,
+     "elevationM": 1050.52
+    },
+    {
+     "name": "Flata over skredterrenget",
+     "lat": 60.88958,
+     "lng": 8.22458,
+     "elevationM": 1397.35
+    }
+   ],
+   "season": "feb–mai",
+   "roadClosedInWinter": false,
+   "aspect": "NØ",
+   "grade": 2,
+   "gradeReason": "Fri Flyt fører turen som KAST 1 – Enkelt med bratteste punkt under 30 grader, men skriv i same beskrivinga at du «beveger deg i skredterreng til du kommer opp på 1300 meter» og at det er «mye skredterreng rundt deg». Ein tur som går i skredterreng i halve oppstigninga og krev god sikt for å finne fram, er ein toar på appens skala sjølv om brattaste punkt er under 30 grader.",
+   "hazardNotes": "Fri Flyt: «Dersom det er dårlig sikt, er det lite terrengformasjoner å orientere etter. Du trenger god sikt. Mye skredterreng rundt deg.» Nedkøyringa går anten same veg eller i rennene du ser på veg opp, og dei er skredterreng.",
+   "teaserNo": "670 høgdemeter frå Sildegjerdet ved rv 52 opp bekkedalen — hemsedølenes eigen klassikar, kjend berre som «1609».",
+   "teaserEn": "670 m of climbing from Sildegjerdet on rv 52 up the stream valley — Hemsedal's own classic, known simply as «1609».",
+   "sources": [
+    "https://www.friflyt.no/topptur/skiturer-hemsedal/turbeskrivelse-1609",
+    "https://www.friflyt.no/randone/tre-anbefalte-toppturer-i-hemsedal"
+   ],
+   "confidence": "medium",
+   "notes": "Fri Flyt: toppunkt 1609, høgdemeter 650, 3,2 km, startsted «Brøytet parkeringslomme ved et stølsområde som heter Sildegjerdet», himmelretning Ø-NØ, bratteste punkt under 30 grader, KAST 1 – Enkelt, 3 timar opp/ned, GPS toppunkt 131815.747/6768999.925 (UTM33). Populariteten står i Fri Flyts eigen artikkel «Tre anbefalte toppturer i Hemsedal», der fjellguide og toppturforfattar Jørgen Aamot fører Råskarfjellet som «en av de mest populære toppturfjellene i Hemsedal» og skriv at det ofte berre blir omtalt med høgda si, «1609». Confidence er medium fordi begge kjeldene er Fri Flyt: rutebeskrivinga og artikkelen har same forfattar og same bok i botnen (Toppturer i Hemsedal, over 40 fjell). Ingen av dei oppgir sesong; kortet set feb–mai, som er vindauget dei tre andre Hemsedal-turane i appen ber, og det er ei slutning."
+  }
+ },
+ {
+  "slug": "ullstinden",
+  "verdict": "reject",
+  "corrections": [
+   "Turen blei først lagt bort fordi korridoren ikkje lét seg pinne: rutebeskrivinga hjå Fri Flyt seier «den breie ryggen sør for Hesjedalen», og registeret har ingen Hesjedalen i nærleiken av dette fjellet. Namnet er **Hestedalen** (nordsamisk Heastavággi, SSR 69.77591/19.58890) — Fri Flyt skriv det feil. Med det namnet på plass fell heile skildringa på plass, og ho blir stadfesta av ei anna Fri Flyt-tekst av ein annan forfattar: «Fra start går du nordøst over et myrområde mot Hestedalen, før du følger ryggen i retning av Svarthamartinden et stykke oppover. Når dalen flater ut, forlates ryggen og du går i retning av Ullstinden.»",
+   "Toppen måler 1092,4 moh på DTM1 mot publiserte 1078 hjå begge kjeldene. Registerpunktet ligg 11 m frå cella summit-søket klatra til, så det er same toppen — den publiserte høgda er 14 m for låg. Kortet ber målinga, same regelen som Storehorn og Kråkfjellet.",
+   "Startpunktet er kartlagt: OSM way/255323008, amenity=parking, hiking=yes, fee=yes, surface=gravel, om lag 2660 m² — «stor parkeringsplass på Snarbyeidet» hjå Fri Flyt. DTM1 gir 133,2 moh, og 1092,4 − 133,2 = 959 m mot dei publiserte «980» (skibeskrivinga) og «litt i underkant av 1000» (sommarbeskrivinga). Den andre kartlagde parkeringa på eidet, way/260847576, er 384 m² og ligg 330 m sør.",
+   "Myrområdet den andre kjelda sender deg nordaust over, er målt: 166,8 moh på 69.76938/19.56899 svarer terrengklasse Myr.",
+   "Ryggen sør for Hestedalen er samanhengande og stig jamt mot Svarthammartinden: eit tverrsøk vinkelrett på aksen frå parkeringa gir kryssrygg på 167 moh 500 m ut, 270 på 1000, 414 på 1500, 577 på 2000, 743 på 2500 og 851 på 3000. Vegpunkta på 412,6 og 576,8 moh ligg på den ryggen, og 576,8 er «ca. 600 moh» der skibeskrivinga seier ein går inn i øvre delar av dalen."
+  ],
+  "rejectReason": "Andrekjelda finst, og namnegåta er løyst — men bakken vil framleis ikkje stadfeste linja, og denne gongen med tal. Fri Flyt har to skildringar av same turen frå same startstad, av kvar sin forfattar: skiruta («Over skoggrensa følger du den breie ryggen sør for Hesjedalen. På ca. 600 moh. legges sporet inn i øvre deler av dalen og videre mer eller mindre rett opp mot toppen») og barmarksruta av Kent-Hugo Norheim («Fra start går du nordøst over et myrområde mot Hestedalen, før du følger ryggen i retning av Svarthamartinden et stykke oppover. Når dalen flater ut, forlates ryggen og du går i retning av Ullstinden»). Dalen Fri Flyt skriv «Hesjedalen» heiter **Hestedalen** i registeret, og med det namnet på plass resolverer kvart einaste punkt i skildringa: parkeringa (OSM way/255323008, 2660 m², hiking=yes), myrområdet (terrengklasse Myr på 166,8 moh), ryggen sør for dalen (kryssrygg målt til 167, 270, 414, 577, 743 og 851 moh på 500 til 3000 m ut), Svarthammartinden og Stortinden.\n\nDet som ikkje resolverer, er dei siste to kilometrane. Ullstinden er skild frå heile det ryggsystemet av eit skar, og veggen på nærsida blei sveipa i heile si lengd — 21 breiddegrader frå 69.7860 til 69.8060. Frå 69.7890 og nordover les han 31 til 54 grader på kvar einaste ein. Dei tre breiddegradene som les under 27 kryssar ikkje skaret i det heile, men går over Stortinden — og den slakaste av dei held ikkje: med 119 m mellom prøvepunkta les traversen 26,1°, med 22 m les same grunnen eit steg på 44,3°. Den einaste vegen rundt er over skuldra på Stortinden (1038,7 moh) og ned nordaustsida hennar, og det steget måler 40 grader over 160 m grunn (1012 → 878). Fire korridorvariantar blei routa: alle gir tilbake 192 til 345 høgdemeter, og alle har eit brattaste 30 m-steg på 35 til 39 grader.\n\nBegge kjeldene seier noko anna. Skibeskrivinga fører bratteste punkt som **20–25 grader** og kallar fjellet «et flott mål for nyfrelste toppturister, og for de som ønsker et 100 % skredtrygt fjell», og begge oppgir ei stigning — 980 og «litt i underkant av 1000» — som ikkje har rom for 200 meter attgjeven høgde (toppen minus starten er 959). Ei linje med eit 40-graders steg på eit fjell som blir seld som skredtrygt, er ikkje ein unøyaktigheit i eit tal; det er ei linje som fortel lesaren noko anna enn kjelda gjer. Anten går ruta ein stad korkje teksten eller terrengmodellen har vist oss, eller så er det ein tredje startstad. Turen ventar på den som veit kva av delane.\n\nStallvika, det opplagde alternativet, har ingen veg. Bukta ligg under den einaste slake flanken fjellet har — frå Stallvikskaret på 457,6 moh stig linja til toppen monotont utan å gi tilbake ein meter — men i ei rute på 19.560–19.700 aust og 69.780–69.840 nord har OSM ingen `highway` av nokon klasse nærare enn ein sti 2845 m unna, ingen `track` innanfor 3469 m og ingen kartlagd parkering i det heile. Linja opp frå fjøra er dessutan brattare enn turen ho skulle erstatte: 458 høgdemeter på 942 m, med eit steg på 45,6°. Fjellet si slake side vender mot ein fjord ingen køyrer til.",
+  "corridor": {}
  }
 ]

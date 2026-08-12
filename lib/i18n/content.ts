@@ -210,6 +210,14 @@ export const TOUR_TEASER_EN: Record<string, string> = {
     "270 m of climbing from Nordseter over Nevelåsen to the most-visited summit above Lillehammer, with an open hut and a view-finder at 1089.",
   ulvsjoberget:
     "300 m of climbing from Vestby up through the forest to open fell — the highest summit in Trysil outside the ski resort.",
+  rodtinden:
+    "450 m of climbing from the Storelva ski stadium up the open south-east side — the most-visited summit around Tromsø.",
+  kjolen:
+    "580 m of climbing from Finnvikvatnet up the valley to the radar and the warming hut — one of Kvaløya's most-visited summits.",
+  strandtinden:
+    "1160 m from the E10 at sea level up through Heggedalen and the west ridge — the great classic of the Harstad area, and the peak most people there ski.",
+  raskarfjellet:
+    "680 m of climbing from Sildegjerdet on rv 52 up the stream valley — Hemsedal's own classic, known simply as «1609».",
 
 };
 
@@ -339,6 +347,74 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       endLabel: "1044 m",
       distanceLabel: "3.4 km",
       caption: "3.4 km and 1035 vertical metres: the duckboards at Slettneset, the ridge above Steet, and the steep summit section.",
+    },
+  },
+  kjolen: {
+    intro:
+      "578 metres of climbing and 4.11 km from Finnvikvatnet to the radar at 790 m — one of Kvaløya's most-visited summits, and a mountain with no steep section on the route at all. The steepest hundred-metre band is 12.6 degrees between 300 and 400 m, and the steepest step 24.9 between 605 and 620. What is steep on Kjølen faces north, and the route goes east.",
+    ascent: [
+      "Start south of Finnvikvatnet, 224 m, which is where ut.no started: «we parked on the south side of Finvikvatnet, one of many starting points.» The mapped car park is 640 metres further north at the east end of the lake, and you can walk from there — but not across the ice: the water surface is 229 m and the land east of it 254 to 265, so the way is round rather than over. Fri Flyt describes four starting points for this mountain and calls this one «a slightly shorter alternative with less climbing».",
+      "The tour is above the treeline almost from the car: Kartverket puts the last forest at 218 m, 40 metres along the line, and open ground from 219 all the way to the top. The first 904 metres up Finnvikdalen climb 5.1 degrees. Then comes the steepest stretch of the tour, and it is not steep: 12.6 degrees from 300 to 400 m over 450 metres of ground. Above it the angle eases again — 8.4 degrees from 400 to 500, 6.9 from 500 to 600, 9.5 from 600 to 700 and 7.3 to the top — passing the corridor points at 440, 572 and 703 m.",
+      "The only place the line really stands up is between 605 and 620 m, where the steepest 30-metre window measures 24.9 degrees. Fri Flyt gives a steepest point under 27 degrees for all four of its routes on the mountain. The summit plateau is reached at 774 m, and from there it is flat across to the big radar and the warming hut Troms Turlag built by volunteer work in 2010. Both are on the map: the radar is the OSM node «Stor-Kjølen Radar», 46 metres from the summit cell, and the hut «Varmebua på Kjølen», 41 metres from it.",
+    ],
+    descent: [
+      "Back the same way, down Finnvikdalen. The bearing from the summit to the starting point is 62 degrees, between east and north-east, and those two radials measure 9.8 and 10.0 degrees mean out to a kilometre — that is the whole story of that side. Fri Flyt, for its part, puts the best skiing on the mountain somewhere else: the routes from Kvaløysletta and Slettaelva, «where the last stretch down Finnlandsfjellet is simply to be enjoyed in big, glorious turns». This is the short way up, not the finest way down.",
+      "Ut.no is clear about what the tour is and is not: «not a summit for anyone who needs sharp ridges and steep descents, but a fine top that gives good skiing.» Its warning is not about gradient but about what lies under the snow: «how much snow there is decides your options on the way down. Follow the snowfields as far as you can, and avoid the obvious terrain traps and stream gullies.»",
+      "North is a different matter. The north flank measures 20.9 degrees on average out to a kilometre with a 36.7-degree window 710 to 770 metres out — the only direction from this summit that holds over 20 degrees mean. The plateau is broad, the radar is the only landmark in poor visibility, and if you give in to the urge to take a fresh line down to the north, that flank is what you drop into.",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "578 metres of climbing where the steepest band is 12.6 degrees and the steepest step 24.9. Fri Flyt files all four of its routes on the mountain as KAST 1 – simple, and ut.no grades this one moderate. Neither names a hazard on the ascent.",
+      },
+      {
+        title: "The north side and the plateau",
+        body: "Seven of the eight directions from the summit measure under 12 degrees mean: north-east 10.0, east 9.8, south-east 9.9, south 11.3, south-west 7.9, west 4.8 and north-west 8.0. North measures 20.9 with 35.5 degrees in the window 720 to 780 metres out. That is the one edge worth knowing about, and it is easiest to find in poor visibility, when the plateau gives you nothing to navigate by and the radar disappears behind you.",
+      },
+      {
+        title: "Before you go",
+        body: "Read today's avalanche forecast for Tromsø on varsom.no — an A region, forecast every day in season. Ut.no gives January to May and Fri Flyt November to June; the card carries the overlap, November to May. The hut on top is unlocked, but it is a rest stop and an emergency shelter, not a reason to set out in weather you would otherwise turn back from. Carry a transceiver, probe and shovel.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "224 m",
+      endLabel: "790 m",
+      distanceLabel: "4.1 km",
+      caption: "578 metres of climbing and 4.11 km from south of Finnvikvatnet at 224 m, up the valley past 440 and the east side past 572 and 703 to the summit plateau at 774.",
+    },
+  },
+  rodtinden: {
+    intro:
+      "450 metres of climbing and 2.32 km from the Storelva ski stadium to the summit at 470 m — the most-visited top around Tromsø, and a tour for any occasion. The steepest hundred-metre band is 15.1 degrees between 300 and 400 m, and the steepest step 24.2 degrees between 429 and 447. The one genuinely steep thing on the mountain is south-east of the cairn, and the route does not go in it.",
+    ascent: [
+      "Start at the Storelva ski stadium on Kvaløysletta, 20 m, where there is mapped parking at the ski stadium. Fri Flyt gives 2.8 km for the tour and ut.no's own line measures 2.52; the line routed here is 2.32 km. The mountain is Rødtinden in Norwegian and Ruksesvárri in Northern Sami, and Kartverket's register carries both.",
+      "The first kilometre follows the lit trail up Storelvdalen — the line's first 942 metres climb 5.1 degrees on average — and at 96 m the route leaves the trail for the hillside, and from there the gradient is strikingly even: 14.5 degrees from 100 to 200 m, 15.0 from 200 to 300, 15.1 from 300 to 400 and 14.9 above that. The tour gives back not one metre of height on the way up.",
+      "Kartverket carries forest to 208 m and open ground from 218, but the forest here is birch with bog between it — the terrain class along the line alternates between Skog and Myr at 53, 156 and 241 m. Above it you pick your own track. Fri Flyt: «you soon come out above the forest and can lay the track as you please — though you would have to be unlucky not to find one to follow.» The last hundred metres of climbing hold well to the west where the ridge is gentlest, and the steepest step of the tour is here: 24.2 degrees between 429 and 447 m.",
+    ],
+    descent: [
+      "Back the same way, south-east towards the stadium. West of the cairn the flank measures 3.3 degrees on average out to a kilometre and south-west 15.1, so picking the wrong edge does not punish you with steepness — it puts you in the wrong valley.",
+      "The one steep thing on this mountain is south-east of the cairn, and it is close. The 135 radial, read off the point API every ten metres, runs 469.6 – 467.7 – 464.6 – 459.5 – 452.7 – 448.8 – 437.0 – 430.6 – 426.6 m over the first 80: the steepest 60-metre window is 32.3 degrees between 20 and 80 metres out, and the steepest single step 49.7 degrees between 50 and 60. Fri Flyt's «slopes of up to 40 degrees» is right, and over the twenty metres where it is steepest, conservative.",
+      "To the north-west the problem is the opposite one. The top is a rounded shoulder rather than a summit in the terrain model: the ground keeps rising without a saddle — 479.6 m at 200 metres out, 488.5 at 400 and 491.0 at 600 — and carries on to 567.0 m at the register point for Storbogtinden, 728 metres away. In flat light you walk past the cairn without noticing, onto a mountain with a different tour on it.",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "450 metres of climbing where no hundred-metre band measures over 15.1 degrees and the steepest step is 24.2. Fri Flyt files the tour as KAST 1 – simple, with the steepest point under 25 degrees, and writes that a track here can be laid entirely clear of avalanche terrain. That holds as long as it stays west of the summit ridge at the end.",
+      },
+      {
+        title: "The south-east slope",
+        body: "That slope is the tour's only hazard, and it is steeper than the figure Fri Flyt gives: 49.7 degrees over ten metres between 50 and 60 metres from the cairn, and 32.3 degrees across the whole window from 20 to 80. From the top it looks like the natural line back down to the stadium, and it is the shortest way home. The east side is the same story on a smaller scale: 15.0 degrees mean, with a 28.6-degree window sitting 50 to 110 metres out — further from the cairn than the south-east one, and so easier to wander into without having decided to.",
+      },
+      {
+        title: "Before you go",
+        body: "Read today's avalanche forecast for Tromsø on varsom.no. Tromsø is an A region and is forecast every day through the season, unlike many of the mountains further south in this app. No source gives a season for Rødtinden; the card's December to May is read off the height — the summit is 470 m — and off Fri Flyt giving Kjølen at 790 m November to June. Carry a transceiver, probe and shovel, even on the local hill.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "20 m",
+      endLabel: "470 m",
+      distanceLabel: "2.3 km",
+      caption: "450 metres of climbing and 2.32 km from the Storelva ski stadium at 20 m, off the lit trail at 96 m and up the open south-east side past 303 and 431.",
     },
   },
   tromsdalstinden: {
@@ -617,6 +693,40 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       endLabel: "1264 m",
       distanceLabel: "9.7 km",
       caption: "1596 metres of climbing from the E10 at Litlvatnet to 1264 m, 355 of them given back along the way and a 51-metre notch in the summit ridge.",
+    },
+  },
+  strandtinden: {
+    intro:
+      "1156 metres of climbing and 5.86 km from the E10 at sea level to the summit at 1076 m — the great classic of the Harstad area, and a mountain with no gentle side. The steepest hundred-metre band on the route is 19.8 degrees between 600 and 700 m and the steepest step 29.1 between 736 and 761, but the flanks around it measure 40 to 64 degrees in their steepest windows. The route takes the summit from the west because west is the one edge that does not.",
+    ascent: [
+      "Start along the E10 where the road comes closest to the mouth of Heggedalen, 21 m. The source gives a stretch rather than a point: «there are several options along the E10, depending on how much has been ploughed», with a warning worth carrying — «this is a busy road with an 80 km/h limit and few straight stretches, so take care along it and park a little further south and traverse above the road rather than create a dangerous situation on it». The road under the mountain is called Strandstindvegen, after the mountain.",
+      "The normal route follows Heggedalen on the ridge between the two rivers. At around 146 m it crosses to the north side of the river, and the two spot heights the description navigates by turn up where they should: the gully at «height 505» measures 509.6 m and «height 570» measures 570.3 — 234 metres apart. Kartverket puts the last forest at 143 m and open ground from 157, so most of the tour is on an open hillside. The first hundred metres of climbing are the steepest in the valley floor at 14.7 degrees, and then it eases to 8.0 and 10.6.",
+      "From 570 the route swings south and holds the east side of the bowl. The steepest band of the tour is here — 19.8 degrees from 600 to 700 m over 270 metres of ground — and the steepest step, 29.1 degrees between 736 and 761. The bowl flattens at around 805 m, and there the route does what Fri Flyt says: «the easiest way to the top is to keep right (west) from here and climb the summit by the ridge from the right (west).» The line runs west along the bench — 1092 metres of ground at 5.4 degrees between 700 and 800 m — gains the north-west ridge at 886 m and follows it over 952 and 1040 to the top. The last 600 metres bear 135 degrees: you come up from the north-west.",
+    ],
+    descent: [
+      "Back the same way: the ridge down to the bench, the bench east and the north side down Heggedalen. It is the line the mountain is known for — «the descent is the same route as the ascent, and it is the classic: you can let them run and get real flow and a broad grin» — and in season you ski all the way down to the road by the sea. The snow on the north side lies late enough that a midnight-sun tour in June is not unusual.",
+      "Going round costs what going round costs. The first corridor took the summit straight up the north-east rib, and that line was 4.77 km with 1090 metres of climbing; by the west ridge the tour is 5.86 km with 1156 and 101 metres given back on the way. Fri Flyt is clear about why: «it is certainly possible to climb the other side, but it is more exposed.» The rib measures 1010.2 m 150 metres from the summit to the north-east where the ridge measures 1039.8 to the north-west — it is steeper the whole way up.",
+      "Directly north of the cairn it is steep whatever you do: 40.9 degrees in the steepest 60-metre window only 20 to 80 metres out, with 24.8 degrees mean out to a kilometre. That is also where the snow stays — Kartverket carries the terrain class SnøIsbre on the north side from around 1050 m downwards, while the ridge the route uses is bare ground at all sixteen of its last vertices. The other three edges are serious: south measures 30.6 degrees mean with 63.9 degrees in the window 20 to 80 metres from the cairn, south-east 30.9 with 62.5, east 29.0 with 54.9, and south-west 24.1 with 56.0. Fri Flyt's two other lines — Kvanntoa to the north-east and Kvannto to the east — have sections at 45 degrees and a rappel anchor, and they are not the route this card describes.",
+    ],
+    avalanche: [
+      {
+        title: "The bowl",
+        body: "Fri Flyt gives one hazard on the normal route, and it is unambiguous: «large avalanches have run in the bowl several times, so pick days with stable snow.» The bowl is the hollow the route crosses between height 570 and the bench at 805 m, and it holds the steepest band of the tour — 19.8 degrees from 600 to 700 m. The description sends you along its east side, not through the middle.",
+      },
+      {
+        title: "The mountain has no gentle side",
+        body: "None of the eight directions from the summit measures under 17.0 degrees mean out to a kilometre, and four of them carry 60-metre windows over 50 degrees. West is the gentlest — 17.0 degrees mean, with 37.7 degrees in the window 120 to 180 metres out — and west is the ridge the route takes the summit from. Fri Flyt files the tour as KAST 3 – complex and lists an ice axe and crampons as extra equipment: «crampons and an axe can be worth having on days with a hard crust.»",
+      },
+      {
+        title: "Before you go",
+        body: "The forecast for this mountain is Lofoten og Vesterålen on varsom.no, not a Harstad region — the summit lies in Lødingen kommune, and Varsom answers on the coordinate. It is an A region, forecast every day in season. Fri Flyt gives January to June. The card carries Harstad as the region because that is where the day starts and how both sources place the tour; the register calls the top Strandstinden and Djupfesttinden, and neither of them Strandtinden. Carry a transceiver, probe and shovel, and an axe and crampons when the crust is hard.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "21 m",
+      endLabel: "1076 m",
+      distanceLabel: "5.9 km",
+      caption: "1156 metres of climbing and 5.86 km from the E10 at 21 m up through Heggedalen past 146, the gully at 510 and spot height 570, across the bowl to 805 and west along the bench to the north-west ridge at 886, 952 and 1040.",
     },
   },
   rombakstotta: {
@@ -2450,6 +2560,40 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       endLabel: "1740 m",
       distanceLabel: "2.9 km",
       caption: "803 metres of climbing and 2.97 km from Lykkjastølen west of the waterfall at 1075 m and up the valley to 1364, with the forest letting go at 1054 m.",
+    },
+  },
+  raskarfjellet: {
+    intro:
+      "685 metres of climbing and 3.26 km from Sildegjerdet on rv 52 to the cairn at 1610 m — one of the most popular ski-touring mountains in Hemsedal, known simply as «1609». The steepest hundred-metre band is 20.1 degrees between 1100 and 1200 m and the steepest step 24.0 between 1348 and 1368. The summit itself is a plateau, and the hazard here is finding your way.",
+    ascent: [
+      "Start at the ploughed lay-by at the summer-farm cluster called Sildegjerdet, 938 m. Fri Flyt: «follow RV52 west from Hemsedal centre for 19.5 km and park in a ploughed lay-by on the left, 1.5 km past the bridge on RV52.» The parking is mapped and free of charge. Rv 52 over Hemsedalsfjellet is open through the winter, but can go to convoy driving or close in bad weather.",
+      "The first 885 metres are flat — 4.1 degrees — and the line crosses the river 224 metres in, where the terrain model answers the class Elv at 926.1 m. Then the climb proper begins through open birch forest and into the wide valley of Rupebekken, with the corridor point at 1051 m. Kartverket puts the last forest at 1115 m and open ground from 1133. The steep part of the tour is here: 18.9 degrees from 1000 to 1100 m and 20.1 from 1100 to 1200, which is the steepest band.",
+      "Above it the angle eases to 14.5 degrees from 1200 to 1300 and stands up once more, 19.3 from 1300 to 1400, with the steepest step of 24.0 degrees between 1348 and 1368 m. The flat Fri Flyt promises arrives at 1397 m — a hundred metres higher than it writes — and the last 212 metres of climbing rise at 14.3 and then 7.8 degrees over 698 metres of ground to the cairn.",
+    ],
+    descent: [
+      "Back the same way, north-east. North-east measures 10.5 degrees on average out to a kilometre and east 14.5, so it is gentle the whole way back. Fri Flyt notes that «you can either go down the same way or in the gullies you saw on the way up», and those gullies are avalanche terrain.",
+      "The summit is a plateau, and that is the most important thing about this mountain. South-west measures −0.2 degrees mean out to a kilometre because the ground keeps rising, south-east 0.6 and south 3.8. From the cairn four directions look equally flat, and three of them lead nowhere you want to go.",
+      "What is steep is a long way from the route. The north flank has a 60-metre window of 41.1 degrees, but that is 940 to 1000 metres out — down where the mountain finally falls towards the valley. Closer to the cairn the steepest readings are 26.1 degrees to the east 60 to 120 metres out and 27.0 to the south 30 to 90 metres out.",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "Fri Flyt files the tour as KAST 1 – simple with the steepest point under 30 degrees, and still writes that «you are moving in avalanche terrain until you reach 1300 metres». Both are true: the steepest band on the line is 20.1 degrees and the steepest step 24.0, but the hillside around it is steeper than the line. That is why the card carries grade 2.",
+      },
+      {
+        title: "Visibility",
+        body: "Fri Flyt's other warning is not about snow: «in poor visibility there are few terrain features to navigate by. You need good visibility. There is a lot of avalanche terrain around you.» The flank sweep says the same thing in numbers — south-east 0.6 degrees mean, south-west −0.2, north-west 2.6 — a plateau with nothing for the eye to hold. The stream valley you came up is the only shape in the terrain that leads back to the car.",
+      },
+      {
+        title: "Before you go",
+        body: "Read today's avalanche forecast for Hallingdal on varsom.no, an A region forecast every day in season. Neither Fri Flyt's route description nor its article gives a season for this mountain; the card's February to May is the window the app's three other Hemsedal tours carry, and it is an inference. Carry a transceiver, probe and shovel.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "938 m",
+      endLabel: "1610 m",
+      distanceLabel: "3.3 km",
+      caption: "685 metres of climbing and 3.26 km from Sildegjerdet at 938 m, into the stream valley at 1051 and over the flat at 1397 to the cairn.",
     },
   },
   skogshorn: {

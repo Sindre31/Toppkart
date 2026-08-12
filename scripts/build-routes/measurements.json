@@ -979,5 +979,145 @@
    "figure": "Seksten prøvepunkt jevnt fordelt langs sporet til turforslag 1112155777. Seks av dem svarer Alpinbakke: 938,6 / 956,6 / 981,5 / 1002,3 moh sammenhengende, og 1092,0 lenger opp. Resten er ÅpentOmråde eller uten klasse. Skihytta-ruta (1112155778) sier det selv: «Følg merket sti oppover i slalåmbakken.»",
    "how": "Kartverkets punkt-API (hoydedata/v1/punkt) på hvert fjerde trackpunkt i ut.nos GPX for turen."
   }
+ ],
+ "rodtinden": [
+  {
+   "what": "Flankesveip frå toppen på åtte retningar",
+   "figure": "Middel og brattaste 60 m-vindauge ut til ein kilometer: N 8,7° (26,4° på 920–980 m), NØ 13,8° (27,0° på 490–550), Ø 15,0° (29,4° på 20–80), SØ 16,6° (32,1° på 10–70), S 19,8° (29,5° på 840–900), SV 15,1° (25,4° på 880–940), V 3,3° (17,9° på 250–310), NV −2,9° (4,4° på 810–870). Negativt middel mot nordvest fordi bakken stig: 518,9 moh ein kilometer ut.",
+   "how": "`flank_probe.py <lat> <lng> --out 1000 --step 10`, alle åtte retningane, mot DTM1-rasteret."
+  },
+  {
+   "what": "Henget sørøst for toppen, som Fri Flyt fører som einaste faremoment («heng med bratthet opp mot 40 grader»)",
+   "figure": "Radialen på 135° målt kvar femte meter: 22,2° på 20 m, 36,3° på 25, 39,3° på 40, 50,4° på 55, 45,9° på 60, 38,3° på 65, og under 25° frå 75 m og ut. Brattaste 60 m-vindauget er 33,1° mellom 15 og 75 m ut. Fri Flyts tal er altså rett og litt forsiktig: enkeltsteg på fem meter les opp mot 50 grader.",
+   "how": "`flank_probe.py 69.70147 18.75254 135 --out 300 --step 5`."
+  },
+  {
+   "what": "Ryggen nordvest mot Storbogtinden — kvifor toppen ikkje er eit toppunkt i terrengmodellen",
+   "figure": "Frå registerpunktet (469,5 moh) fell bakken i sju av åtte retningar, men på 315° stig han utan sadel: 469,8 moh 100 m ut, 479,6 på 200, 486,4 på 300, 488,5 på 400 og 491,0 på 600, og held fram til 567,0 ved registerpunktet for Storbogtinden 728 m unna.",
+   "how": "Punkt-API-et (hoydedata/v1/punkt) på 100 m-intervall langs 315°, og eit åtteretnings-profil på 100/200/300/400/600 m frå toppen."
+  },
+  {
+   "what": "Henget sørøst for toppen, målt på nytt med punkt-API-et (erstattar rastermålinga over)",
+   "figure": "Radialen på 135° kvar tiande meter frå varden: 469,6 / 467,7 / 464,6 / 459,5 / 452,7 / 448,8 / 437,0 / 430,6 / 426,6 / 425,1 / 422,7 moh på 0 til 100 m. Brattaste 60 m-vindauge er 32,3° mellom 20 og 80 m ut, og det brattaste enkeltsteget på ti meter er 49,7° mellom 50 og 60 m. Rastersveipet gav 33,1° over 15–75 m og enkeltsteg på fem meter som las 39,3° på 40 m og 50,4° på 55 — femtigradarssteget reproduserer, plasseringa av det gjer det ikkje. Talet «39,3 grader 40 meter frå varden» er difor teke ut av guiden.",
+   "how": "Kartverkets punkt-API (hoydedata/v1/punkt) langs radialen, ikkje DTM-rasteret `flank_probe.py` les."
+  },
+  {
+   "what": "Austflanken, målt på nytt med punkt-API-et (erstattar rastermålinga over)",
+   "figure": "Radialen på 90°: 469,6 / 468,6 / 465,3 / 459,6 / 455,0 / 452,3 / 445,4 / 440,2 / 433,7 / 427,9 / 422,7 moh på 0 til 100 m. Brattaste 60 m-vindauge er 28,6° mellom 50 og 110 m ut. Rastersveipet gav 29,4° mellom 20 og 80 — same bratthet, men vindauget ligg 30 m lenger ute enn sveipet sa.",
+   "how": "Kartverkets punkt-API (hoydedata/v1/punkt) langs radialen, ikkje DTM-rasteret `flank_probe.py` les."
+  },
+  {
+   "what": "Linja mot kartlagd løypenett — Fri Flyts «lysløypa»",
+   "figure": "OSM har 741 vegar innanfor korridoren, av dei 68 med `piste:type` (45 nordic). Kartlagd trasé ligg 6 m frå startpunktet og 1 m frå toppen, og linja går aldri lenger enn 56 m frå næraste kartlagde sti eller løype.",
+   "how": "`check_ground.py` sin eigen trail-test, køyrd etter at TRAIL_WORDS blei utvida til å sjå samansette ord: «lysløypa» matcha ikkje `\\bløypa`, så påstanden hadde aldri vore prøvd."
+  }
+ ],
+ "kjolen": [
+  {
+   "what": "Flankesveip frå toppen på åtte retningar",
+   "figure": "Middel og brattaste 60 m-vindauge ut til ein kilometer: N 20,9° (36,7° på 710–770 m), NØ 10,0° (20,5° på 690–750), Ø 9,8° (18,4° på 520–580), SØ 9,9° (22,9° på 160–220), S 11,3° (23,5° på 160–220), SV 7,9° (15,4° på 730–790), V 4,8° (25,1° på 900–960), NV 8,0° (17,8° på 540–600). Nord er den einaste retninga som held over 20° i middel; ruta opp og ned går aust, som måler 9,8°.",
+   "how": "`flank_probe.py <lat> <lng> --out 1000 --step 10`, alle åtte retningane, mot DTM1-rasteret."
+  },
+  {
+   "what": "Finnvikvatnet, og kvifor linja går sør for det",
+   "figure": "Vassflata måler 229,0 moh på DTM1 med terrengklasse Innsjø på alle prøvepunkta mellom parkeringa og startpunktet; landet aust for vatnet ligg 254–265 moh. Med parkeringa (231,6 moh) som start gjekk den routa linja 290 m ut på isen.",
+   "how": "Punkt-API-et på åtte punkt langs sørausthjørnet av vatnet, og `check_ground.py kjolen` på den første routa linja."
+  },
+  {
+   "what": "Nordflanken, målt på nytt med punkt-API-et",
+   "figure": "Radialen på 0° frå 680 til 800 m ut: 574,8 / 563,2 / 550,5 / 536,8 / 520,5 / 507,7 / 495,3 moh. Brattaste 60 m-vindauge er 35,5° mellom 720 og 780 m ut, mot rastersveipets 36,7° mellom 710 og 770.",
+   "how": "Kartverkets punkt-API (hoydedata/v1/punkt) langs radialen, ikkje DTM-rasteret `flank_probe.py` les."
+  },
+  {
+   "what": "Radaren og varmebua på toppen",
+   "figure": "OSM node/11190896274 heiter «Stor-Kjølen Radar» og ligg 46 m frå toppcella; OSM way/175567108 «Varmebua på Kjølen» (amenity=shelter) ligg 41 m frå henne. Begge ligg på toppflata, ikkje på veg opp.",
+   "how": "Overpass innanfor 250 m av toppunktet, henta 12. august 2026."
+  },
+  {
+   "what": "Fri Flyts «vatn 395», som ruta navigerer etter",
+   "figure": "Registeret har ikkje noko namn på vatn i Finnvikdalen mellom startpunktet og toppen; det einaste namngjevne er Finnvikvatnet sjølv. Linja passerer 395 moh på 69.74839/18.83912 i terrengklasse ÅpentOmråde, og det næraste kartlagde vatnet i OSM (way/300902106) ligg 294 m unna. Kva tjern Fri Flyt meiner, er difor ikkje avgjort — men linja går i den dalen skildringa sender deg opp.",
+   "how": "SSR punktsøk r=1200 m og Overpass natural=water r=500 m kring det punktet linja passerer 395 moh."
+  },
+  {
+   "what": "Retninga ned frå toppen",
+   "figure": "Peilinga frå toppcella til startpunktet sør for Finnvikvatnet er 62 grader — mellom aust (radial 9,8° i middel) og nordaust (10,0°) — og avstanden 3650 m. Dei siste 200 metrane av linja opp peikar 228 grader, så første trekket ned frå varden er 48.",
+   "how": "Storsirkelpeiling mellom toppcella i summits.json og trailhead-koordinaten i corridors.json, og mellom vertexane i routes.json."
+  }
+ ],
+ "strandtinden": [
+  {
+   "what": "Flankesveip frå toppen på åtte retningar",
+   "figure": "Middel og brattaste 60 m-vindauge ut til ein kilometer: N 24,8° (41,8° på 20–80 m), NØ 20,9° (32,4° på 770–830), Ø 29,0° (54,9° på 20–80), SØ 30,9° (62,5° på 610–670), S 30,6° (64,3° på 10–70), SV 24,1° (56,0° på 750–810), V 17,0° (37,0° på 140–200), NV 22,2° (46,5° på 660–720). Ingen retning måler under 17° i middel, og fire av åtte har vindauge over 50 grader. Vest er den slakaste, og det er den ryggen rutebeskrivinga tek toppen frå.",
+   "how": "`flank_probe.py <lat> <lng> --out 1000 --step 10`, alle åtte retningane, mot DTM1-rasteret."
+  },
+  {
+   "what": "Dei to punkthøgdene rutebeskrivinga navigerer etter",
+   "figure": "«Ei slukt ved høyde 505» måler 509,6 moh på 68.51830/16.05050, og «høyde 570» måler 570,3 moh på 68.51620/16.05100. Søkket mellom dei og toppen — «bollen» — botnar på 524,7 moh på 68.51500/16.04600 og flatar ut på 805,0 moh på 68.51000/16.04700.",
+   "how": "Punkt-API-et på kandidatpunkt lesne av eit DTM-raster over 68.492–68.528 N, 16.015–16.105 Ø."
+  },
+  {
+   "what": "Nordvestryggen og nordaustribba — kvifor linja blei lagt om",
+   "figure": "Målt med punkt-API-et frå toppen: nordvestryggen les 1039,8 moh 150 m ut på peiling 300, 1011,5 på 250, 969,3 på 350 (305°), 952,3 på 450 (310°), 956,8 på 550 og 886,0 på 650 (315°). Nordaustribba ved sida av les 1010,2 på 150 m (40°), 956,2 på 300 og 908,5 på 500. Den første korridoren hadde eitt vegpunkt på 901 moh på ribba, og linja kom opp på peiling 222 dei siste 519 metrane; etter omlegginga kjem ho opp langs ryggen på peiling 135 dei siste 600.",
+   "how": "Kartverkets punkt-API (hoydedata/v1/punkt) langs radialen, ikkje DTM-rasteret `flank_probe.py` les."
+  },
+  {
+   "what": "Flankane, målte på nytt med punkt-API-et",
+   "figure": "Nord: 40,9° i brattaste 60 m-vindauge mellom 20 og 80 m ut (rastersveipet: 41,8° same stad). Sør: 63,9° mellom 20 og 80 (sveipet: 64,3° mellom 10 og 70). Vest: 37,7° mellom 120 og 180 (sveipet: 37,0° mellom 140 og 200). Alle tre reproduserer innanfor ein grad.",
+   "how": "Kartverkets punkt-API (hoydedata/v1/punkt) langs radialen, ikkje DTM-rasteret `flank_probe.py` les."
+  },
+  {
+   "what": "Snøen på nordsida er ført som brefonn i terrengmodellen",
+   "figure": "Terrengklassen rett nord for toppen er SnøIsbre frå om lag 1050 moh og nedover: på peiling 340 frå 40 m ut (1051 moh), på 0 frå 60 m (1031) og på 20 frå 60 m (1034), samanhengande ut til minst 200 m. Ryggen linja går på er ÅpentOmråde heile vegen — alle 16 vertexane dei siste 500 metrane.",
+   "how": "Punkt-API-et på tre radialar frå toppen og på kvar vertex i dei siste 500 metrane av linja."
+  },
+  {
+   "what": "Kva omlegginga til vestryggen kosta",
+   "figure": "Den første linja, rett opp nordaustribba, målte 4,77 km med 1090 høgdemeter stigning, 35 m tap og eit brattaste 30 m-steg på 28,7°. Over nordvestryggen måler ho 5,86 km, 1156 m stigning, 101 m tap og 29,1°. Å gå rundt kostar 1,09 km, 66 høgdemeter og 66 meter tapt høgde.",
+   "how": "routes.json før og etter omlegginga, resampla mot DTM1 i begge tilfelle."
+  }
+ ],
+ "raskarfjellet": [
+  {
+   "what": "Flankesveip frå toppen på åtte retningar",
+   "figure": "Middel og brattaste 60 m-vindauge ut til ein kilometer: N 10,3° (41,7° på 930–990 m), NØ 10,5° (24,8° på 710–770), Ø 14,5° (27,0° på 60–120), SØ 0,6° (23,1° på 60–120), S 3,8° (27,0° på 30–90), SV −0,2° (20,3° på 80–140), V 6,7° (17,5° på 400–460), NV 2,6° (16,6° på 250–310). Sørvest måler negativt middel fordi platået stig vidare: 1612,5 moh ein kilometer ut. Det bratte ligg langt nede mot nord, ikkje ved varden.",
+   "how": "`flank_probe.py <lat> <lng> --out 1000 --step 10`, alle åtte retningane, mot DTM1-rasteret."
+  },
+  {
+   "what": "Elvekryssinga rett etter parkeringa",
+   "figure": "Linja svarer terrengklasse Elv på 926,1 moh, 224 m inne på ruta (60.89774/8.24965). Vertexane før og etter er ÅpentOmråde og Skog, så kryssinga er eitt punkt og ikkje ei strekning.",
+   "how": "Punkt-API-et på kvar av dei 16 første vertexane i `routes.json`."
+  },
+  {
+   "what": "Flankane, målte på nytt med punkt-API-et",
+   "figure": "Nord: 41,1° i brattaste 60 m-vindauge mellom 940 og 1000 m ut (rastersveipet: 41,7° mellom 930 og 990). Aust: 26,1° mellom 60 og 120 m (sveipet: 27,0° same stad). Begge reproduserer.",
+   "how": "Kartverkets punkt-API (hoydedata/v1/punkt) langs radialen, ikkje DTM-rasteret `flank_probe.py` les."
+  }
+ ],
+ "ullstinden": [
+  {
+   "what": "Vestveggen i skaret som skil Snarbyeidet-platået frå Ullstinden — heile lengda",
+   "figure": "Prøvd på 21 breiddegrader frå 69.7860 til 69.8060, åtte punkt aust-vest på kvar (119 m mellom punkta). Brattaste gradient per breiddegrad: 21,4° på 69.7860, 21,7 på 69.7870, 26,1 på 69.7880, 31,5 på 69.7890, 39,4 på 69.7900, 53,8 på 69.7910, 53,5 på 69.7920, 53,8 på 69.7930, 45,9 på 69.7940, 44,4 på 69.7950, 43,6 på 69.7960, 45,4 på 69.7970, 42,8 på 69.7980, 51,1 på 69.7990, 46,7 på 69.8000, 44,7 på 69.8010, 30,9 på 69.8020, 36,3 på 69.8030, 35,4 på 69.8040, 34,6 på 69.8050 og 31,0 på 69.8060. Dei tre breiddegradene som les under 27° er dei tre der ein ikkje kryssar skaret i det heile, men går over sjølve Stortinden.",
+   "how": "Kartverkets punkt-API (hoydedata/v1/punkt), 168 punkt."
+  },
+  {
+   "what": "Den gjennomgangen som såg slak ut, prøvd på nytt med finare steg",
+   "figure": "Traversen aust frå skuldra på Stortinden las 26,1° med 119 m mellom prøvepunkta. Med 22 m mellom dei les same strekninga 980, 987, 989, 996, 992, 983, 978, 980, 959, 947, 933, 916 moh — eit steg på **44,3°** mellom 980 og 959. Vidare mot skaret vest for Ullstinden, med 25 m mellom punkta: 916, 898, 878, 854, ... — endå eit steg på 44,3° mellom 878 og 854. Grovmålinga jamna veggen ut; det er same oppløysingsfella som Vassfjellet, berre den andre vegen.",
+   "how": "Punkt-API-et langs to strekningar, 22 og 25 m mellom prøvepunkta."
+  },
+  {
+   "what": "Oppstigninga til platået, som kjeldene skildrar rett",
+   "figure": "Frå øvre Hestedalen (657 moh) til nordskuldra på Stortinden (980) er brattaste steg 25,5° over 40 m grunn. Frå parkeringa til platåkanten på 755 moh, 4,5 km ut, er linja jamn heile vegen. Fri Flyts «bratteste punkt 20-25 grader» stemmer for alt fram til kanten.",
+   "how": "Punkt-API-et, 40 m mellom prøvepunkta."
+  },
+  {
+   "what": "Stallvika som alternativt startpunkt — vegtilkomst",
+   "figure": "Ingen veg. I ei rute på 19.560–19.700 aust og 69.780–69.840 nord finst det ingen `highway` av nokon klasse nærare Stallvika enn ein sti 2845 m unna; næraste `track` er 3469 m og næraste kartlagde parkering finst ikkje i ruta i det heile. Sjølve linja opp derfrå er dessutan brattare enn ruta frå Snarbyeidet: frå fjøra til Stallvikskaret stig ho 458 m på 942 m med eit steg på 45,6° mellom 114 og 210 moh.",
+   "how": "OSM sitt map-API (api.openstreetmap.org/api/0.6/map) over ruta, og punkt-API-et langs linja."
+  },
+  {
+   "what": "Ullstinden frå skaret, som er den slake sida",
+   "figure": "Frå Stallvikskaret (457,6 moh) til toppen: 458, 501, 549, 614, 687, 773, 859, 906, 979, 1056, 1092 moh over 1305 m — monotont, utan eit einaste tap av høgde, 26° i snitt. Fjellet har ei slak side; ho vender mot nordvest, og det står ingen veg på den sida.",
+   "how": "Punkt-API-et, 130 m mellom prøvepunkta."
+  }
  ]
 }
