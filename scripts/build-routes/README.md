@@ -2137,19 +2137,49 @@ the readings are in `measurements.json`.
 
 ### What was left out
 
-**Ullstinden (1078 m, Tromsø fastland)** is the round's near miss, and it was
-researched to the point of a resolved summit before it was dropped. Fri Flyt
-calls it «et utrolig populært toppturfjell» and «100 % skredtrygt», and its
-summit resolves cleanly — 1092.4 m on DTM1 against a published 1078, which would
-have been the Storehorn case and no obstacle. What stopped it is the corridor.
-The normal route «følger du den breie ryggen sør for Hesjedalen», and there is no
-Hesjedalen in the place-name register within fifty kilometres of that mountain;
-the straight line from the mapped parking on Snarbyeidet crosses a valley,
-dropping 934 → 765 m before it climbs again, so which side of it the route takes
-decides the whole line. No second source publishes the route either. That is
-Englafjell exactly: placeable only by guessing, and a guess is what this pipeline
-is built not to draw. It stays in `peaks.py` with its summit resolved, for
-whoever finds the second description.
+**Ullstinden (1078 m, Tromsø fastland)** is the round's near miss. It was
+researched twice — once to a resolved summit, and then again, harder, after the
+round shipped. Both attempts are worth writing down, because the second one
+answered every question but the one that matters.
+
+The first attempt stopped on a name. The normal route «følger du den breie
+ryggen sør for Hesjedalen», and there is no Hesjedalen in the place-name register
+anywhere near that mountain. The second attempt found it: the valley is
+**Hestedalen** (Northern Sami *Heastavággi*, SSR 69.77591/19.58890), and Fri Flyt
+spells it wrong. A second source confirms it and the line — a different Fri Flyt
+article by a different author, describing the same tour on bare ground: «Fra
+start går du nordøst over et myrområde mot Hestedalen, før du følger ryggen i
+retning av Svarthamartinden et stykke oppover. Når dalen flater ut, forlates
+ryggen og du går i retning av Ullstinden.»
+
+With the name in hand every landmark in both texts resolves. The car park is OSM
+way/255323008 — 2660 m², `hiking=yes`, the only big one on Snarbyeidet, 133.2 m.
+The bog the second source sends you across measures 166.8 m and answers terrain
+class `Myr`. The broad ridge south of Hestedalen is continuous and rises evenly:
+a perpendicular crest search from the car park reads 167 m at 500 m out, 270 at
+1000, 414 at 1500, 577 at 2000, 743 at 2500 and 851 at 3000. The summit resolves
+to 1092.4 m against a published 1078, which is the Storehorn case and no
+obstacle.
+
+**What does not resolve is the last two kilometres.** Ullstinden stands behind a
+pass, and the west wall of that pass measures **41 to 52 degrees over 60 m of
+ground at every latitude it was probed** — 47° at 69.790, 52° at 69.792, 41° at
+69.796, 44° at 69.798. The only way round it is over the shoulder of Stortinden
+at 1038.7 m and down its north-east step, which measures 40° over 160 m
+(1012 → 878). Four corridor variants were routed. All four give back 192 to 345
+metres of height, and all four carry a steepest 30 m step of 35 to 39 degrees.
+
+Both sources say something else. The ski description gives the steepest point as
+**20–25 degrees** and calls the mountain «et flott mål for nyfrelste toppturister,
+og for de som ønsker et 100 % skredtrygt fjell», and the two published climbs —
+980 m and «litt i underkant av 1000» — leave no room for 200 metres of give-back
+(summit minus trailhead is 959). A drawn line with a forty-degree step on a
+mountain sold as avalanche-safe is not an imprecise number; it is a line that
+tells the reader something its own source does not. Either the route goes
+somewhere neither the text nor the terrain model has shown us, or there is a
+third trailhead. The record is in `new_corridors.json` with verdict `reject`, the
+measurements with it, and the summit stays resolved in `peaks.py` — the next
+person starts two questions further along than this one did.
 
 **Storsylen (1762 m)** is «det mest populære toppturmålet i Sylan fra både norsk
 og svensk side» on ut.no's own page, and it fails the road condition the
