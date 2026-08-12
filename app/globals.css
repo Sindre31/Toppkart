@@ -730,8 +730,16 @@ a.btn-secondary, a.btn-secondary:hover { color: var(--color-text); }
 }
 
 /* Four columns need ~459px of content and will not shrink below it, so on a
-   phone the plate pushed the whole landing page into horizontal scroll. Drop
-   the remark onto its own line and the row fits any width. */
+   phone the plate pushed the whole landing page into horizontal scroll.
+
+   The remark used to drop onto its own line here, which fixed the width and
+   cost something else: on a phone the plate became four rows of two lines each,
+   and the second line was the one nobody came for. «Fra Lyngen i nord til
+   Rogaland i sør» is a nice sentence next to a number and a footnote under it.
+   On a narrow screen the plate is worth reading as four numbers, so the remark
+   is dropped rather than wrapped. It is still in the markup and still read
+   aloud — `display: none` on a table cell would take it from a screen reader
+   too, and the sentence is not the problem, the line break is. */
 @media (max-width: 620px) {
   .plate .table, .plate .table tbody { display: block; }
   .plate .table tr {
@@ -741,7 +749,10 @@ a.btn-secondary, a.btn-secondary:hover { color: var(--color-text); }
   }
   .plate .table td { display: block; width: auto; padding: 0; border-bottom: 0; }
   .plate-val { font-size: 19px; }
-  .plate-rem { grid-column: 1 / -1; padding-top: 4px; }
+  .plate-rem {
+    position: absolute; width: 1px; height: 1px;
+    padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap;
+  }
 }
 
 /* — stat cells (guide plate, map detail) — */

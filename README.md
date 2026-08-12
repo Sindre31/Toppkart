@@ -113,7 +113,8 @@ components/
   SiteChrome.tsx         <SiteNav>, <SiteFooter>
   Feedback.tsx           The floating «Gi tilbakemelding» dialog
   guide/                 Tour-page parts, incl. <RouteMap> — the route drawn from its
-                         own points, as inline SVG. Also used by the landing page
+                         own points, as inline SVG over Kartverket's topographic
+                         tiles. Colour on a tour page, greyscale on the landing page
 lib/
   config.ts              PRICE, TRIAL_DAYS, SITE, GRADE_COLORS, env, is*Configured
   types.ts               Tour, TourGuide, Viewer, Subscription, Invoice
@@ -188,6 +189,29 @@ the product behaviour, RLS is the backstop.
 say the same thing. `lib/access.test.ts` pins the TypeScript side case by case, written so it can
 be read against that function line by line — change one and the test is where you find out you
 have to change the other.
+
+### The route figure
+
+`<RouteMap>` draws the tour's own line over Kartverket's topographic tiles — the same map
+`/kart` renders, in the same grid, and the line is solved in the same terrain model those tiles
+are drawn from, so the contours under the line are the contours it followed.
+
+It went through three states, and the middle one is the interesting mistake. First a shared
+placeholder image, which was simply false. Then the route's real points in an empty frame over a
+drawn grid, which was true and still not much: the shape of a line and nothing about the ground
+it crosses. A route with no mountain around it is a graph.
+
+Putting a real map underneath raises the stakes on the projection. The frame version used
+equirectangular about the route's midpoint, which is fine when nothing has to line up with
+anything. Now the line has to sit in the right place on a picture someone else drew, so it is
+computed in spherical Mercator — exactly what the WMTS and Leaflet use. `RouteMap.test.ts` pins
+that against independently computed values and checks all 90 routes fit inside their figure,
+because a wrong projection throws nothing and renders beautifully.
+
+Zoom is an integer, so padding is expensive: every pixel of margin is half the scale the moment a
+route stops fitting. The north arrow and scale bar are therefore placed by counting route
+vertices per corner and taking the two quietest, rather than by widening the margin until the
+summit marker stops colliding with them.
 
 ### Deleting an account
 
@@ -338,18 +362,25 @@ content and data quality that has to be settled before the site is sold to anyon
   `lib/guides.ts` traces to Kartverket's terrain model, the route research or a cited source, and
   every number is matched mechanically by `check_guides.py` — which reads nynorsk verticals as well
   as bokmål ones, and comes back clean on all 90 guides.
-  On top of that, **82 of the 90 have been through an independent adversarial read** whose only
-  job is to break it — the 24 of the first round, the 15 of the second, the 7 of the Oslo round,
-  the 22 of the Sunnmøre and Vestland rounds, the 7 of the Trondheim round, Kjerag, Møysalen and
-  Sæbyggjenuten, and the 4 of the popularity round.
+  On top of that, **all 90 have now been through an independent adversarial read** whose only job
+  is to break it — the 24 of the first round, the 15 of the second, the 7 of the Oslo round, the
+  22 of the Sunnmøre and Vestland rounds, the 7 of the Trondheim round, Kjerag, Møysalen and
+  Sæbyggjenuten, the 4 of the popularity round, and finally the 8 of the alpine-resort round.
 
-  **The eight of the alpine-resort round — Hemsedal, Trysil, Kvitfjell, Hafjell and Geilo — have
-  not had one.** They were read adversarially by the pass that wrote them, which caught three
-  things (Nibbi's unmapped waterfall, Prestholtskarvet's two starts, Slettind's road), and that
-  is the weaker form of the check by exactly the margin this list keeps demonstrating: every time
-  a round has been re-read by someone other than its author, the second reader has found
-  something the first did not. Those eight are the open end of that pattern. See "The eight
-  guides" in `scripts/build-routes/README.md` for what the self-read did cover.
+  **The last of those closed a hole that was not about those eight at all.** The re-route in #62
+  moved twenty-odd lines, and the prose describing them was re-derived for some tours and not for
+  others. Measured against the lines the app ships, **27 opening figures** — the distance and the
+  climb in a guide's first sentence — described a line that no longer existed, Molden and
+  Melshornet by about 300 metres; so did the band and step tables of five of the eight.
+  Prestholtskarvet had drifted furthest and had begun contradicting itself, stating the same
+  band as 1,3° over 5130 m in its intro and 1,2° over 5221 m in its ascent. Nibbi named the wrong
+  band as the steepest on the tour, against its own intro. All of it is corrected.
+
+  `check_guides.py` could not see any of it: it accepts a distance if it lands within 150 m of
+  *any* sourced number, and with hundreds in scope that is nearly always true. The replacement
+  check is tied to the route's own length and runs in CI — see "Checks" above and "The eight,
+  read adversarially" in `scripts/build-routes/README.md`, which also lists the 15 band claims
+  outside those eight that the same scan flags and that have not been worked yet.
 
   The read of Kjerag, Møysalen and Sæbyggjenuten moved a card, rewrote half a guide,
   and found the pipeline bug two bullets up. It was the first read done by someone other than the

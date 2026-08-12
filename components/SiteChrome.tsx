@@ -165,7 +165,9 @@ export function SiteFooter({
   const t = commonDict(lang);
   return (
     <footer className={`site-footer ${className}`.trim()}>
-      <span>Toppkart</span>
+      {/* Ordmerket sto først i rada, som avsender. Det står allerede øverst på
+          hver side, og en bunnlinje som gjentar hvem nettstedet er, rett før
+          lenkene til vilkårene, er den ene tingen her ingen skal noe sted med. */}
       <Link href="/turer">{t.footerTours}</Link>
       <Link href="/kart">{t.footerMap}</Link>
       <Link href="/vilkar">{t.footerTerms}</Link>

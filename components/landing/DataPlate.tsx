@@ -33,9 +33,13 @@ export function DataPlate({ lang }: { lang: Lang }) {
   return (
     <section aria-label={t.plateLabel} style={{ padding: "24px 0 60px" }}>
       <Blueprint className="plate">
+        {/* Her sto det «TK-100» mellom tittelen og arknummeret. Det er et
+            tegningsnummer, og det er lånt: et blueprint har det fordi det finnes
+            en tegningsliste med hundre ark, og her er det ett ark og ingen
+            liste. Formspråket tåler å bli sitert, men ikke å påstå noe det ikke
+            finnes dekning for — resten av plata er tellinger fra katalogen. */}
         <header className="plate-head">
           <span>{t.plateLabel}</span>
-          <span>TK-100</span>
           <span>{t.plateSheet}</span>
         </header>
         <table className="table">

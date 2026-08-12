@@ -157,6 +157,14 @@ export default async function LandingPage() {
                 gainM={safetyRoute.gainM}
                 trailhead={safetyRoute.trailhead}
                 lang={lang}
+                /* Gråtone her. Forsida er tegnet i ett akkompagnement — hårfine
+                   streker, ett aksentfarge — og et fargelagt topografisk kart
+                   midt i den blir det eneste på sida som roper. Kartverket har
+                   en gråtoneserie som er tegnet for nettopp dette, så det er
+                   deres kart og ikke vårt filter over det. Ruta beholder
+                   aksentfargen og er da det eneste fargede i figuren, som er
+                   omtrent det man vil at øyet skal finne først. */
+                tone="grey"
                 caption={false}
               >
                 <Link href={`/kart?tur=${SAFETY_PEAK.slug}`}>{t.safetyFigureLink}</Link>
@@ -187,9 +195,18 @@ export default async function LandingPage() {
                 ) : (
                   <TrialSignupRow lang={lang} />
                 )}
-                <p className="note" style={{ margin: "12px 0 0" }}>
-                  {hasAccess ? t.planNoteActive : t.planNote}
-                </p>
+                {/* Bare for den som ennå ikke abonnerer. Merknaden forklarte
+                    prisen og bindingstida, og for en abonnent ble den byttet
+                    mot «Du abonnerer allerede. Kvitteringer, kort og oppsigelse
+                    ligger på Min side» — en beskjed om hvor kontosida er, på
+                    forsida, til noen som allerede har vært innom den. Knappen
+                    ved siden av sier «Min side» og gjør den samme jobben uten
+                    å bruke et avsnitt på det. */}
+                {hasAccess ? null : (
+                  <p className="note" style={{ margin: "12px 0 0" }}>
+                    {t.planNote}
+                  </p>
+                )}
               </div>
               <Blueprint style={{ padding: 24 }}>
                 <div style={{ display: "flex", alignItems: "baseline", gap: 10 }}>

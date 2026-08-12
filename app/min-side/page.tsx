@@ -315,9 +315,10 @@ export default async function MinSidePage() {
           </div>
         </section>
 
-        <SiteFooter lang={lang}>
-          <Link href="/">{t.aboutSubscription}</Link>
-        </SiteFooter>
+        {/* «Om abonnementet» pekte til forsida, som selger abonnementet til
+            noen som allerede har det — og navigasjonen øverst har uansett veien
+            dit. Bunnlinja er den samme som overalt ellers nå. */}
+        <SiteFooter lang={lang} />
       </main>
     </div>
   );

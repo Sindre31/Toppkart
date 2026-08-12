@@ -627,7 +627,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
   },
   breitinden: {
     intro:
-      "Senja's highest peak, 1031 metres of climbing from the lay-by at the fjord. The ski tour ends at the shoulder at 763 m; the last 244 metres are exposed scrambling on the south-west ridge, and that finish is what makes this a grade 4.",
+      "Senja's highest peak, 1049 metres of climbing from the lay-by at the fjord. The ski tour ends at the shoulder at 763 m; the last 244 metres are exposed scrambling on the south-west ridge, and that finish is what makes this a grade 4.",
     ascent: [
       "Start at the lay-by in Svarthola on Fv862, 30 m, just under six kilometres east of Senjahopen. The first two hundred metres of climbing go straight up to the north end of Svartholvatnet at 207 m, and from there east over the ridge between that lake and Breitindvatnet — a stretch around 400 m where the line flattens before rising again. At Breitindvatnet the line follows the north shore, over 467 m and 500 m, rather than going straight across the ice. It did the latter until recently: 315 metres on the lake at 474 m, up to 40 metres from shore, beneath the very flank this guide calls a terrain trap. The lake is natural and unregulated, but no ski description sends you out onto it, and here the lake is narrow enough that land is 80 metres away.",
       "From the north-east side of Breitindvatnet at 481 m the west flank begins. Low down it is gentle — about 24 degrees to 550 m and 29 on to 620 — but above that it steepens: a median 36 degrees between 620 and 680 m, 41 between 680 and 720, and directly below the shoulder the fall line measures 50 to 59 degrees. The summer description calls this same ground narrow, exposed rock ledges, and the lake sits below the whole slope. The steepest hundred-metre band on the route lies between 600 and 700 m and averages 23.4 degrees; the steepest sustained section on the line is 39.4 degrees, and it is in the summit block.",
@@ -766,7 +766,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
   },
   geitgaljen: {
     intro:
-      "1071 metres of climbing from the fjord in 3.82 km, and the entire line lies in avalanche terrain. Topptursentralen grades the tour KAST 4 — extreme — and the top 157 metres average 42 degrees and require crampons and an axe.",
+      "1071 metres of climbing from the fjord in 3.80 km, and the entire line lies in avalanche terrain. Topptursentralen grades the tour KAST 4 — extreme — and the top 157 metres average 42 degrees and require crampons and an axe.",
     ascent: [
       "Start at the road end in Geitgallien by Skinvollen at the head of Austnesfjorden, 20 m. Follow the floodlit trail for a stretch and on into Lilandsdalen through the birch forest. The first eight hundred metres barely climb — 6 degrees on average — and that is the only flat part of the tour.",
       "From around 250 m the valley steepens into a gully holding 35 degrees up to 360 m; the mapped path measures 34.8 degrees between 290 and 350 m. Above the gully it eases again, and you follow the valley upward at 17 to 20 degrees to about 620 m, where the stream bed steepens. The valley floor below the gully is a terrain trap: if something releases above you here, there is no way out to the side.",
@@ -871,7 +871,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
   },
   vassfjellet: {
     intro:
-      "541 metres of climbing and 4.74 km from Markavollen to the cairn at 711 m — the closest ski tour to Trondheim. Almost all the steep ground sits in one band: 15.9 degrees from 500 to 600 m, over just 405 metres of ground. The steepest sustained step is 23.0 degrees between 251 and 270 m, and that is also the steepest the whole line measures.",
+      "560 metres of climbing and 4.92 km from Markavollen to the cairn at 711 m — the closest ski tour to Trondheim. Almost all the steep ground sits in one band: 15.9 degrees from 500 to 600 m, over just 405 metres of ground. The steepest sustained step is 23.0 degrees between 251 and 270 m, and that is also the steepest the whole line measures.",
     ascent: [
       "Start at the car park at Markavollen, 184 m. Ut.no states a parking charge, and the terrain model reads the plot at 184 m — exactly the starting height the description gives. Ut.no sends you along the ski tracks «marked S, then Ø and S again»; the line on the map is the terrain line through that same network of tracks, not the track itself — 2205 of 4744 metres lie more than 50 metres from a mapped trail, with the largest gap 175 metres. The first half is flat for a summit tour: the band from 300 to 400 m measures 5.2 degrees over 1036 metres of ground, and 400 to 500 m 3.2 degrees over 1710.",
       "At 445 m the line brushes the edge of Lomtjønna. Vassfjellhytta sits at 507 m, and right after it the climbing starts: 11.5 degrees from 500 to 600 m over 495 metres of ground, and the line's steepest step measures 23.0 degrees between 251 and 270 m. The forest lets go at 586 m, and from 594 the ground is open.",
@@ -1078,7 +1078,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
   },
   storhornet: {
     intro:
-      "936 metres of climbing and 4.84 km on the marked winter route from Bree to the stone shelter at 1589 m. Even is the word, and the measurement agrees: no hundred-metre band exceeds 13.4 degrees, the steepest sustained step is 19.6 degrees between 826 and 842 m, and the route gives back not a single metre. The steep ground on this mountain is on the north-east side, behind the summit.",
+      "936 metres of climbing and 5.01 km on the marked winter route from Bree to the stone shelter at 1589 m. Even is the word, and the measurement agrees: no hundred-metre band exceeds 13.4 degrees, the steepest sustained step is 19.6 degrees between 826 and 842 m, and the route gives back not a single metre. The steep ground on this mountain is on the north-east side, behind the summit.",
     ascent: [
       "Start at the paid car park by Bree, 653 m — ten spaces, tagged for both skiing and walking, and Fri Flyt sends you there with «follow the road that goes left after the shop and drive about 1.3 kilometres». From here to the cairn the line follows the mapped winter route, a continuous ski-touring trail of 5.13 km ending 25 metres from the summit; the largest gap between the line and the trail is 166 metres.",
       "The trail is cut through the forest and winds up through the cabin field at Hornlia — 113 cabins lie within 300 metres of the line. The bands measure 9.5 and 10.3 degrees from 600 to 800 m, and the steepest sustained step of the whole tour sits here: 19.6 degrees between 826 and 842 m. The forest lets go at 921 m, and from 931 you are on open mountain.",
@@ -1250,7 +1250,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
   },
   ytstevasshornet: {
     intro:
-      "833 metres of climbing over 3.93 km from Svartevatnet, steeply up Vassdalen to the tarns at 976 m and then north-west onto a narrow summit ridge. The steepest sustained section measures 26.9 degrees, and the last stretch is usually walked without skis.",
+      "833 metres of climbing over 4.19 km from Svartevatnet, steeply up Vassdalen to the tarns at 976 m and then north-west onto a narrow summit ridge. The steepest sustained section measures 26.9 degrees, and the last stretch is usually walked without skis.",
     ascent: [
       "Start at the car park by Svartevatnet, 538 m, on the main road between Sykkylven and Stranda. The first 904 metres of ground are flat — 4.3 degrees — and they run along the east shore, not across the water. Svartevatnet is a reservoir: the surface measures 526 m, twelve metres below the car park, and the line stays on land the whole way round the north end and down to the south end at 524.",
       "Head west, on the left bank of the river, up Vassdalen. This is the steep part of the tour: 18.3 degrees from 600 to 700 m, 22.5 from 700 to 800 over only 270 metres of ground, and 20.0 from 800 to 900, with the steepest sustained section at 26.9 degrees between 795 and 818 m. The forest holds to 691 m, and from 706 you are in the open.",
@@ -1388,7 +1388,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
   },
   saudehornet: {
     intro:
-      "1157 metres of climbing straight up from the centre of Ørsta, and Fri Flyt grades the tour \"complex\" for a reason: the crest holds about 32 degrees on average over the last 170 metres with its steepest section at 37, and on hard snow a slip there has a long runout. Fri Flyt reckons many parties carry their skis for the last stretch.",
+      "1161 metres of climbing straight up from the centre of Ørsta, and Fri Flyt grades the tour \"complex\" for a reason: the crest holds about 32 degrees on average over the last 170 metres with its steepest section at 37, and on hard snow a slip there has a long runout. Fri Flyt reckons many parties carry their skis for the last stretch.",
     ascent: [
       "From the car park at the waterworks at the top of Vikegeila, 149 m, follow the service road up into Skåla. The forest ends around 339 m and the ground is open from 344. At about 395 m you leave the road where a mapped path branches off — the same place Fri Flyt describes as \"diagonally towards the Vikeelva, cross the river\".",
       "Across the river, aim for the lowest point on the ridge between Vallahornet and Saudehornet, 812 m. The col sits further east than a straight line between the two summits would suggest; the crest itself has its low point there, and a mapped path follows it some thirty metres away.",
@@ -1423,7 +1423,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
   },
   slogen: {
     intro:
-      "The queen of the Sunnmøre Alps, and one of the most serious tours in the region. 1520 vertical metres from Norangsdalen to a summit most people walk the last 350 metres to.",
+      "The queen of the Sunnmøre Alps, and one of the most serious tours in the region. 1535 vertical metres from Norangsdalen to a summit most people walk the last 350 metres to.",
     ascent: [
       "From the lay-by at Skylstad in Norangsdalen, 85 m, you climb straight up Brekkheida. Stay west of Brekkeelva the whole way through the forest — the river runs a couple of hundred metres east of the line, and you only meet the watercourse up on the flat around 700 m. This is the steepest part of the forest: the hundred metres between 100 and 200 m average 22.8°.",
       "The treeline lets go at 659 m. From there you follow the Patchellhytta trail onto the flat southwest of the hut, just over 795 m. Leave the hut track here. Turn west up the east ridge before you cross the 1000 m level — go further in toward Steinreset and you give the height back on the wrong side of the ridge.",
@@ -1493,7 +1493,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
   },
   skarene: {
     intro:
-      "1219 metres of climbing over 6.44 km from Korsmyra, with two kilometres of flat valley floor before the big snow flank begins. The flank holds 18 to 21 degrees band after band from 900 to 1700 m — and it is continuous avalanche terrain the whole way.",
+      "1226 metres of climbing over 6.59 km from Korsmyra, with two kilometres of flat valley floor before the big snow flank begins. The flank holds 18 to 21 degrees band after band from 900 to 1700 m — and it is continuous avalanche terrain the whole way.",
     ascent: [
       "Start at the car park on Korsmyra, 621 m, on the main road between Eidsdal and Geiranger. Fri Flyt describes the access under Eidshornet, and it is the same place.",
       "Follow the seter road in to Grandesætra at 648 m and on gently into and up Gråsteindalen, 721 m. The first two bands are almost flat: 3.7 degrees over 1268 metres of ground from 600 to 700 m and 3.6 over 1575 metres from 800 to 900.",
@@ -1527,7 +1527,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
   },
   melshornet: {
     intro:
-      "559 metres of climbing over 3.00 km from Helgatun, on a groomed and marked track that is skied after dark all winter. The steepest sustained section measures 21.7 degrees, and it sits just below the treeline at 476 m — not up under the cairn.",
+      "565 metres of climbing over 3.30 km from Helgatun, on a groomed and marked track that is skied after dark all winter. The steepest sustained section measures 21.7 degrees, and it sits just below the treeline at 476 m — not up under the cairn.",
     ascent: [
       "Start at the large car park by Helgatun on Krøvelseidet, 252 m, on fv5894 Vikebygdvegen between Volda and Åmdalen. The track leaves the car park straight into the forest. It is groomed with a snowcat at times, and the final slope is marked with snow poles.",
       "The first hundred and fifty metres of climbing are gentle: the band from 200 to 300 m averages 5.3 degrees over 580 metres of ground, and 300 to 400 m runs at 12.0. The forest lets go at 454 m, and the steepest step of the whole tour sits just below the treeline — 23.8 degrees over thirty metres, between 458 and 472 m.",
@@ -1596,7 +1596,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
   },
   skarasalen: {
     intro:
-      "1438 metres of climbing in one push from the toll barrier in Bondalen, and the main slope in the middle of the tour runs right alongside a gully that empties towards the summer-farm road every winter. The summit plateau is easy once you are on it — it is the way there, and the cornices over the east wall, that make this demanding.",
+      "1452 metres of climbing in one push from the toll barrier in Bondalen, and the main slope in the middle of the tour runs right alongside a gully that empties towards the summer-farm road every winter. The summit plateau is easy once you are on it — it is the way there, and the cornices over the east wall, that make this demanding.",
     ascent: [
       "From the barrier on Kvistadvegen above the Kvistad farms, 104 m, follow the winter-closed farm road some 3.7 kilometres south and inland up Kvistaddalen to the car park in front of Kvistadsætra and Årsetsætra, 509 m. Those 405 metres up the road are gentle — the bands from 100 to 500 m average 5 to 7 degrees — and if the barrier has opened in late April or early May you can drive them and cut both the kilometres and the height.",
       "From the farms the route climbs north-east through open birch forest. The forest holds to around 693 m and the ground is open from 696.",
@@ -1804,7 +1804,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
   },
   glitregga: {
     intro:
-      "901 metres of climbing over 4.38 km from the sports ground in Randabygd, south-facing and even the whole way. The steepest sustained section on the line measures 21.4 degrees — a full day in vertical metres and an easy one in angle.",
+      "906 metres of climbing over 4.45 km from the sports ground in Randabygd, south-facing and even the whole way. The steepest sustained section on the line measures 21.4 degrees — a full day in vertical metres and an easy one in angle.",
     ascent: [
       "Start at the car park by the sports ground in Randabygd, 398 m on Ålandsleite. Follow the gravel road north-east; the first kilometre is nearly flat, with the band from 400 to 500 m at 5.4 degrees over 1125 metres of ground.",
       "At Djupegrova, 487 m, the route turns north and north-west and stays on the west side of the gully throughout. The first steeper section comes here: 16.0 degrees on average from 500 to 600 m.",
@@ -2116,7 +2116,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
   },
   besshoe: {
     intro:
-      "1305 metres of climbing from Bessheim, and a good third of the tour is flat: three and a half kilometres lie on the ice of Bessvatnet. The climbing itself is gentle throughout, and what makes Besshø demanding is the length and a large, round summit plateau that does not show you where it ends.",
+      "1328 metres of climbing from Bessheim, and a good third of the tour is flat: three and a half kilometres lie on the ice of Bessvatnet. The climbing itself is gentle throughout, and what makes Besshø demanding is the length and a large, round summit plateau that does not show you where it ends.",
     ascent: [
       "From the car park at Bessheim fjellstue at 961 m, follow the marked route west and up the 413 metres to the north-east end of Bessvatnet at 1374 m. This is the tour's first pitch and it holds 10–14 degrees — steady, but this is where you do the climbing before the flat. Fv51 over Valdresflye is closed in winter south of Maurvangen, but Bessheim lies north of the closure and is reached all winter via Sjoa, Heidal and Randsverk.",
       "Out on Bessvatnet the tour stops climbing. The lake sits at 1372 m, and the next three and a half kilometres west rise and fall no more than a couple of metres in total — in the elevation profile it is the long flat middle. The ice is the normal winter route here, but the line on the map is drawn on land at both ends. At the far end, at Grotåosen at 1385 m, the mountain starts again.",
@@ -2289,7 +2289,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
   },
   molden: {
     intro:
-      "623 metres of climbing over 3.01 km from Mollandsmarki up the south-west ridge, the Lustrafjord below you the whole way. The steepest hundred-metre band measures 14.8 degrees, and the steepest sustained section 24.8 — and that one is down in the forest, not on the ridge.",
+      "623 metres of climbing over 3.31 km from Mollandsmarki up the south-west ridge, the Lustrafjord below you the whole way. The steepest hundred-metre band measures 14.8 degrees, and the steepest sustained section 24.8 — and that one is down in the forest, not on the ridge.",
     ascent: [
       "Start at the mapped car park on Mollandsmarki, 501 m, above Marifjøra in Luster. The first hundred metres of ground are flat — the band from 400 to 500 m measures 0.5 degrees — before the road toward Garden begins to climb.",
       "Follow the road and then the summer path up through the forest. The climbing is even and without surprises: 10.7 degrees from 500 to 600 m, 14.4 from 600 to 700 and 14.2 from 700 to 800. The steepest sustained section of the whole tour is down here, 23.3 degrees over thirty metres between 704 and 718 m.",
@@ -2393,11 +2393,11 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
   },
   ulvsjoberget: {
     intro:
-      "295 metres of climbing and 2.14 km from Vestby to the summit at 854 m — the highest top in Trysil with a published route description that stays out of the ski resort. The steepest hundred-metre band is 12.4 degrees from 500 to 600 m over 209 metres of ground, and the steepest step 17.5 degrees between 585 and 597. Nearly all of the climb is in forest.",
+      "295 metres of climbing and 2.17 km from Vestby to the summit at 854 m — the highest top in Trysil with a published route description that stays out of the ski resort. The steepest hundred-metre band is 12.3 degrees from 500 to 600 m over 193 metres of ground, and the steepest step 18.6 degrees between 582 and 597. Nearly all of the climb is in forest.",
     ascent: [
       "Start in Vestby, 559 m, right by the mission house. Ut.no gives 558 for the same point. The road in is county road 2160 from Trysil centre — ut.no writes fv 563, the old number — 17 km and twenty minutes' driving, and the parking is signed.",
-      "The steepest ground comes first: 12.4 degrees from 500 to 600 m over 209 metres of ground, with the tour's only real step of 17.5 degrees between 585 and 597 m. Above it the angle eases to 8.0 degrees from 600 to 700 and 8.4 from 700 to 800, and the line passes 676 and 801 m. All of this is forest.",
-      "The forest does not let go until 826 m, and the ground is open from 832. Ut.no describes the transition: «at the top the terrain opens and you have a wide view in every direction.» The last 20 metres measure 5.3 degrees from 800 to 900 m over 563 metres of ground, and the summit is 854.2 m against ut.no's published 851.",
+      "The steepest ground comes first: 12.3 degrees from 500 to 600 m over 193 metres of ground, with the tour's only real step of 18.6 degrees between 582 and 597 m. Above it the angle eases to 8.0 degrees from 600 to 700 and 8.4 from 700 to 800, and the line passes 676 and 801 m. All of this is forest.",
+      "The forest does not let go until 826 m, and the ground is open from 832. Ut.no describes the transition: «at the top the terrain opens and you have a wide view in every direction.» The last 20 metres measure 5.4 degrees from 800 to 900 m over 555 metres of ground, and the summit is 854.2 m against ut.no's published 851.",
     ],
     descent: [
       "Back the same way, south-east. That side measures 5.0 degrees on average over 400 metres with a steepest 60-metre window of 9.3 — the gentlest of all eight bearings off the summit, and the one the route uses.",
@@ -2427,7 +2427,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
   },
   nevelfjell: {
     intro:
-      "268 metres of climbing and 4.07 km from Nordseter to Nevelhytta at 1090 m. Nothing on this tour is steep: the steepest hundred-metre band is 4.3 degrees from 1000 to 1100 m over 1167 metres of ground, and the steepest sustained step 17.0 degrees between 966 and 988. The steepest 60-metre window in the whole flank sweep is 19.3 degrees.",
+      "268 metres of climbing and 4.22 km from Nordseter to Nevelhytta at 1090 m. Nothing on this tour is steep: the steepest hundred-metre band is 4.3 degrees from 1000 to 1100 m over 1167 metres of ground, and the steepest sustained step 17.0 degrees between 966 and 988. The steepest 60-metre window in the whole flank sweep is 19.3 degrees.",
     ascent: [
       "Start at the car park at Nordseter, 828 m — a paid plot tagged for skiing in OSM, 135 metres from Nordseter Fjellstue. Ut.no: «on groomed trails north from the car park at Nordseter toward the foot of the summit.» The Nordseter road from Lillehammer is ploughed all winter, and the bus runs there.",
       "The first two kilometres are flat — the band from 800 to 900 m measures 2.5 degrees over 1655 metres of ground — north past 897 m. Then comes Nevelvatnet, and here it is worth knowing where the trail runs: the line rounds the south end at 905 m and climbs the west side at 915. Ut.no's own trail line does the same, and the terrain model answers forest at both points. Go straight across the water and you are on ice.",
@@ -2461,10 +2461,10 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
   },
   slettind: {
     intro:
-      "474 metres of climbing and 2.48 km from the rv 52 at Eldrevatn to the cairn at 1592 m. The steepest hundred-metre band is the top one — 17.7 degrees from 1500 to 1600 m over 285 metres of ground — and the steepest sustained step is 22.5 degrees between 1527 and 1546. The route is above the treeline the whole way.",
+      "474 metres of climbing and 2.50 km from the rv 52 at Eldrevatn to the cairn at 1592 m. The steepest hundred-metre band is the top one — 17.7 degrees from 1500 to 1600 m over 285 metres of ground — and the steepest sustained step is 22.5 degrees between 1527 and 1546. The route is above the treeline the whole way.",
     ascent: [
       "Start on the made-up plot at the county boundary by Eldrevatn, 1122 m, right on the rv 52 over Hemsedalsfjellet. Fri Flyt puts it as briefly as it can be put: «park at the car park just before Eldrevann and set a course south-east. From here the route gives itself to the top of Slettind.»",
-      "The first kilometre is flat — the band from 1100 to 1200 m measures 4.1 degrees over 1132 metres of ground — and then the flank begins. From 1200 to 1300 m it measures 13.5 degrees over 405 metres of ground, from 1300 to 1400 16.1 over 360, and the line passes 1325 m where the climb is established. Ut.no describes the same: «the terrain is even and suitably steep, between 20 and 25 degrees».",
+      "The first kilometre is flat — the band from 1100 to 1200 m measures 4.1 degrees over 1132 metres of ground — and then the flank begins. From 1200 to 1300 m it measures 13.7 degrees over 405 metres of ground, from 1300 to 1400 16.6 over 360, and the line passes 1325 m where the climb is established. Ut.no describes the same: «the terrain is even and suitably steep, between 20 and 25 degrees».",
       "Above that each band is a little steeper than the last: 16.1 degrees from 1400 to 1500 m over 315 metres of ground, and 17.7 from 1500 to 1600 over 285 — the steepest on the tour. The steepest single step is 22.5 degrees between 1527 and 1546 m. The summit measures 1592.0 m on the terrain model, exactly what Fri Flyt publishes; ut.no gives 1589.",
     ],
     descent: [
@@ -2495,12 +2495,12 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
   },
   kyrkjebonosi: {
     intro:
-      "1002 metres of climbing and 4.62 km from the sandpit at Kyrkjebøen to the high point at 1670 m, with a fore-summit at 1608 and a col at 1589 in between. The steepest hundred-metre band is 20.9 degrees from 1400 to 1500 m, and the steepest step 24.1 degrees between 1422 and 1442. The north-east side is something else entirely: 33.0 degrees on average, with 48.0 in the window 0 to 60 metres out.",
+      "998 metres of climbing and 4.77 km from the sandpit at Kyrkjebøen to the high point at 1670 m, with a fore-summit at 1608 and a col at 1589 in between. The steepest hundred-metre band is 20.9 degrees from 1400 to 1500 m, and the steepest step 24.1 degrees between 1422 and 1442. The north-east side is something else entirely: 33.0 degrees on average, with 48.0 in the window 0 to 60 metres out.",
     ascent: [
       "Start in the sandpit above the farm at Kyrkjebøen, 722 m. Ut.no gives the way there: in the village follow the road to the left of Skogstad Hotell, and after 1.4 km the sign for Kyrkjebønnøse stands on the right — on behind the barn and up to the sandpit. Fri Flyt calls the place the sandtak and gives parking by the information board.",
       "From the pit the tractor road and summer path run north through the forest. The route is marked and swings steeply left after about a kilometre, up Gravarbakkane, where the line passes 1010 m. The band table for this stretch is even and moderate: 9.7 degrees from 700 to 800 m over 455 metres of ground, 14.6 from 800 to 900 over 396, 13.8 from 900 to 1000 over 414, and 14.0 from 1000 to 1100 over 393.",
       "The forest lets go at 1107 m and the ground is open from 1121. Just above the treeline sits a small top at 1299 m, and Fri Flyt is clear about what you do with it: «go on the west side of the little top just after the treeline. From there you swing east again and follow the ridge up to the summit.» The line runs 1288 m on its west side. The steepest step on the tour is here too, 24.1 degrees between 1422 and 1442 m.",
-      "On up the ridge it climbs evenly to the steepest band, 20.6 degrees from 1400 to 1500 m over 269 metres of ground, with the line passing 1465 m inside it. The fore-summit comes at 1608 m — the one ut.no calls «the first at 1610 m». From there the ridge drops 20 metres into the col at 1589, and then it is flat: the band from 1500 to 1600 m measures 4.4 degrees over 1306 metres of ground and 1600 to 1700 measures 6.5 over 535. «The last part of the ridge toward the summit is long and flat», Fri Flyt writes, and it is 400 metres north to the cairn at 1670.5 m — 1671 by both sources.",
+      "On up the ridge it climbs evenly to the steepest band, 20.9 degrees from 1400 to 1500 m over 272 metres of ground, with the line passing 1465 m inside it. The fore-summit comes at 1608 m — the one ut.no calls «the first at 1610 m». From there the ridge drops 20 metres into the col at 1589, and then it is flat: the band from 1500 to 1600 m measures 4.4 degrees over 1306 metres of ground and 1600 to 1700 measures 6.5 over 535. «The last part of the ridge toward the summit is long and flat», Fri Flyt writes, and it is 400 metres north to the cairn at 1670.5 m — 1671 by both sources.",
     ],
     descent: [
       "The standard descent does not go back the same way from the top. Fri Flyt: «the most common route goes from the summit at about 1600 m and west down the big white flank. To get down to the car you turn off south just before the treeline and come back onto the same route as the ascent.» The west flank measures 11.3 degrees on average over 400 metres and south-west 12.3 — that is the big open flank, and it is why the card carries V.",
@@ -2530,12 +2530,12 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
   },
   nibbi: {
     intro:
-      "803 metres of climbing and 2.97 km from Lykkjastølen to the cairn at 1740 m — nearly all of it inside three kilometres. The steepest hundred-metre band is 21.4 degrees from 1200 to 1300 m over 224 metres of ground, and the steepest sustained step 24.2 degrees between 1249 and 1269. The east side of the summit is another matter: 27.6 degrees on average, with 32.5 in its steepest window.",
+      "803 metres of climbing and 2.93 km from Lykkjastølen to the cairn at 1740 m — nearly all of it inside three kilometres. The steepest hundred-metre band is 21.4 degrees from 1200 to 1300 m over 224 metres of ground, and the steepest sustained step 24.2 degrees between 1249 and 1269. The east side of the summit is another matter: 27.6 degrees on average, with 32.5 in its steepest window.",
     ascent: [
       "Start at Lykkjastølen, 939 m. Ut.no gives 941 for the same point, and the toll covers the parking — paid into a postbox at Ulsåkstølen Fjellstue. From the car you can see the waterfall some way up the hillside, and Fri Flyt and ut.no say the same thing about it: keep to the west side. The fall itself is not mapped anywhere; the stream it runs in is Nordrestølbekken, the only named stream the line passes, so the name is an inference from the stream and not from the fall. The corridor's waypoint sits 60 metres west of it, at 1075 m.",
-      "Alongside the fall it climbs evenly: the band from 900 to 1000 m measures 12.9 degrees over 311 metres of ground, 1000 to 1100 measures 14.3 over 360, and 1100 to 1200 measures 18.6 over 315. The steepest step on the whole line is here, 24.2 degrees between 1249 and 1269 m. The forest lets go at 1054 m and the ground is open from 1066.",
-      "On up the valley — «it falls naturally to follow the valley upward», ut.no writes, and Fri Flyt calls it the natural gully formation you climb in or to the right of. The band from 1300 to 1400 m is the steepest on the tour at 20.4 degrees over 274 metres of ground, and the line passes 1364 m in the middle of it. Above that it eases to 18.3 and 15.4 degrees.",
-      "The last 300 metres do not go straight on. Ut.no's own line comes up west of the summit, at 1708 m, and turns east along the summit ridge — «so the top is in front of you or on your right». The band from 1700 to 1800 m measures 4.7 degrees over 411 metres of ground, which is the flat summit area. The cairn is 1741 by the sources and 1740.3 by the terrain model, and the card carries the measurement.",
+      "Alongside the fall it climbs evenly: the band from 900 to 1000 m measures 12.9 degrees over 311 metres of ground, 1000 to 1100 measures 13.6 over 405, and 1100 to 1200 measures 18.6 over 315. The steepest step on the whole line is here, 24.2 degrees between 1249 and 1269 m. The forest lets go at 1054 m and the ground is open from 1066.",
+      "On up the valley — «it falls naturally to follow the valley upward», ut.no writes, and Fri Flyt calls it the natural gully formation you climb in or to the right of. The band from 1300 to 1400 m measures 20.8 degrees over 271 metres of ground — the second steepest on the tour, after the one below it, and the line passes 1364 m in the middle of it. Above that it eases to 18.3 and 15.4 degrees.",
+      "The last 300 metres do not go straight on. Ut.no's own line comes up west of the summit, at 1708 m, and turns east along the summit ridge — «so the top is in front of you or on your right». The band from 1700 to 1800 m measures 5.4 degrees over 412 metres of ground, which is the flat summit area. The cairn is 1741 by the sources and 1740.3 by the terrain model, and the card carries the measurement.",
     ],
     descent: [
       "Fri Flyt is brief: «the easiest descent follows the same route down as the ascent». That is the south flank, and it measures 20.7 degrees on average over 400 metres with a 25.8-degree window 190 to 250 metres out — the same figures the band table gives the climb.",
@@ -2598,7 +2598,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
   },
   skogshorn: {
     intro:
-      "836 metres of climbing over 3.77 km from Trefta, even and broad the whole way: the steepest sustained section on the line measures 23.2 degrees. A good first ski-touring weekend in Hemsedal — as long as you do not confuse the normal route with Skogshornrenna.",
+      "836 metres of climbing over 3.93 km from Trefta, even and broad the whole way: the steepest sustained section on the line measures 23.2 degrees. A good first ski-touring weekend in Hemsedal — as long as you do not confuse the normal route with Skogshornrenna.",
     ascent: [
       "Start at the large car park by Hyndra bru below Trefta on Lykkjavegen, 893 m. The car park charges, paid by SMS or Vipps as signed on site. The first seven hundred metres share ground with groomed cross-country tracks; the route leaves the trail corridor as soon as it starts to climb. Cross the river and go up the slope on the west side.",
       "On north-west across the open belt at 1000 to 1100 m. The birch holds to around 996 m, and above 1003 everything is open. Both the mapped ski-touring line and the marked summer path run here, 200 to 400 metres north of the crest itself, on the broad north-east shoulder — that is the line drawn here, and it is gentler than the crest.",
@@ -2803,12 +2803,12 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
   },
   prestholtskarvet: {
     intro:
-      "963 metres of climbing and 11.63 km from Havsdalen to the high point at 1860 m, twelve kilometres onto Hallingskarvet. Eight of them are flat: the band from 1200 to 1300 m measures 1.3 degrees over 5130 metres of ground. All the climbing sits in Prestholtskardet — 22.0 degrees from 1500 to 1600 m over 225 metres of ground, with a step of 25.2 degrees between 1514 and 1535.",
+      "963 metres of climbing and 11.63 km from Havsdalen to the high point at 1860 m, twelve kilometres onto Hallingskarvet. Eight of them are flat: the band from 1200 to 1300 m measures 1.3 degrees over 5130 metres of ground. All the climbing sits in Prestholtskardet — 17.6 degrees from 1500 to 1600 m over 315 metres of ground, with a step of 24.8 degrees between 1323 and 1344.",
     ascent: [
       "Start at the car park at the bottom of Havsdalen, 963 m — three paid plots side by side, all tagged access=yes in OSM. Ut.no draws its tour from the top of the ski centre, 1070 m, which is convenient when the lift runs; the corridor here starts where the car stands, and the difference between the two starting points is why the climb on the card is larger than ut.no's published 855. The forest lets go at 1048 m and the ground is open from 1051.",
-      "From 1058 m you are on the marked trail west. Ut.no: «follow the marked trail to Prestholtseter (eight km). The trail is groomed daily and is accordingly in very good condition, with both classic and skating tracks.» It is a flat approach in the literal sense — the band from 1000 to 1100 m measures 3.3 degrees over 1711 metres of ground, 1100 to 1200 measures 4.6 over 1216, and 1200 to 1300 measures 1.2 over 5221. The line passes 1240 m and holds that level for five kilometres.",
-      "Prestholtstølan sits at 1243 m, directly under the south side of the skarv. From here the tour starts again: 17.3 degrees from 1300 to 1400 m over 316 metres of ground, 18.8 from 1400 to 1500 over 315, and 22.0 from 1500 to 1600 over 225 — the steepest band, holding the steepest step on the whole line, 25.2 degrees between 1514 and 1535 m. That is Prestholtskardet, and the register point for the pass measures 1640 m.",
-      "Up on the skarv it eases abruptly: 10.5 degrees from 1600 to 1700 m over 540 metres of ground, 7.2 from 1700 to 1800 over 765, and 4.3 from 1800 to 1900 over 775. The last two kilometres run west over a wide, open plateau to the high point, 1860.4 m. The register point for Prestholtskarvet lies 550 metres north-east, between two tops measuring 1860.4 and 1857.5; ut.no's own line ends 20 metres from the higher one, and that is the one the card carries.",
+      "From 1058 m you are on the marked trail west. Ut.no: «follow the marked trail to Prestholtseter (eight km). The trail is groomed daily and is accordingly in very good condition, with both classic and skating tracks.» It is a flat approach in the literal sense — the band from 1000 to 1100 m measures 3.3 degrees over 1711 metres of ground, 1100 to 1200 measures 4.6 over 1216, and 1200 to 1300 measures 1.3 over 5130. The line passes 1240 m and holds that level for five kilometres.",
+      "Prestholtstølan sits at 1243 m, directly under the south side of the skarv. From here the tour starts again: 16.3 degrees from 1300 to 1400 m over 315 metres of ground, 17.2 from 1400 to 1500 over 316, and 17.6 from 1500 to 1600 over 315 — the steepest band. The steepest step on the whole line sits lower, 24.8 degrees between 1323 and 1344 m. That is Prestholtskardet, and the register point for the pass measures 1640 m.",
+      "Up on the skarv it eases abruptly: 10.3 degrees from 1600 to 1700 m over 540 metres of ground, 7.1 from 1700 to 1800 over 855, and 4.2 from 1800 to 1900 over 742. The last two kilometres run west over a wide, open plateau to the high point, 1860.4 m. The register point for Prestholtskarvet lies 550 metres north-east, between two tops measuring 1860.4 and 1857.5; ut.no's own line ends 20 metres from the higher one, and that is the one the card carries.",
     ],
     descent: [
       "Back the same way: west across the plateau, down Prestholtskardet and out along the trail. The south flank is the one the card carries, and it is not gentle — south measures 18.1 degrees on average out to a kilometre and a half with a 51.1-degree window 925 to 975 metres out, south-east 14.7 with 66.0 in the window 1225 to 1275, and south-west 11.2 with 49.3 at 475 to 525. That is the wall above Prestholt, and Prestholtskardet is the one place it breaks.",
@@ -2941,7 +2941,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
   },
   grafjell: {
     intro:
-      "581 metres of climbing over 7.84 km from Tempelsetra to the highest point on Norefjell. The route is gentler than its neighbours — the steepest hundred-metre band, 1300 to 1400 m, measures 10.0 degrees — and longer than all of them. The difficulty is not the gradient but that the landmarks on the first five kilometres are tarns.",
+      "595 metres of climbing over 8.04 km from Tempelsetra to the highest point on Norefjell. The route is gentler than its neighbours — the steepest hundred-metre band, 1300 to 1400 m, measures 10.0 degrees — and longer than all of them. The difficulty is not the gradient but that the landmarks on the first five kilometres are tarns.",
     ascent: [
       "Start behind the Tempelsetra café, 910 m, and follow the track toward Istjenn. The forest lets go already at 971 m, and at 950 m the route goes out onto Istjenn — Kartverket classes the point as lake, and it is the first of two waters the route goes out onto the ice of — Donkelitjenn is the other.",
       "On north past Vesletjenn at 1095 m. This is the flat part: the band from 900 to 1000 m measures 2.3 degrees over 2517 metres of ground, 1000 to 1100 measures 3.7 over 1441, and 1100 to 1200 only 2.7 over 2070 metres. Five kilometres go by before you stand at 1156 m, and in poor visibility this is where the tour is actually demanding.",
@@ -3355,7 +3355,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
   },
   kjerag: {
     intro:
-      "A summit that is not a summit. Kjerag is a plateau and the high point is a spot on it: 200 metres to the south the ground stands 1.5 metres higher, and the line itself crosses 1129 m before giving back 66 metres and climbing again to 1124. 620 metres of ascent over 7.4 km, and the one serious thing on the tour lies two kilometres away and has nothing to do with the angle.",
+      "A summit that is not a summit. Kjerag is a plateau and the high point is a spot on it: 200 metres to the south the ground stands 1.5 metres higher, and the line itself crosses 1129 m before giving back 66 metres and climbing again to 1124. 620 metres of ascent over 7.36 km, and the one serious thing on the tour lies two kilometres away and has nothing to do with the angle.",
     ascent: [
       "From the car park at Øygardstøl, 641 m, you follow Lysevegen south. The road is closed in winter — OSM carries motor_vehicle:conditional=no @ Nov-May and snowplowing=no on county road 4224, and Sirdal kommune confirms it — so this is a spring tour and not a winter one. The line here never runs more than 100 metres from mapped road, but it cuts the hairpins: the steepest 30-metre step on the whole route, 24.4 degrees between 673 and 687 m, sits 86 metres off the roadway and is a corner rather than a gradient.",
       "At Stølsdalen bridge, 850 m, the construction road toward Langavatn branches off and you follow Langvassvegen south-west. At 925 m the line runs 225 metres across an unnamed lake beside the road, at most 24 metres from shore. The DTM1 terrain class is Innsjø and not InnsjøRegulert, and the OSM polygon (way 1312542069, ref:nve:vann 195944) carries no reservoir tags — a natural lake, not a drawn-down one. The road is the real travel line here; the water is where the line cuts the corner.",

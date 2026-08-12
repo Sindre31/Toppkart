@@ -149,7 +149,7 @@ const LANDING: Translated<LandingDict> = {
       },
       {
         title: "Sesong og forhold",
-        body: "Når på året turen er på sitt beste, hvor snøen legger seg, og alternative ruter når forholdene ikke spiller på lag. Skrevet av folk som går turene selv.",
+        body: "Når på året turen er på sitt beste, hvor snøen legger seg, og alternative ruter når forholdene ikke spiller på lag.",
       },
     ],
 
@@ -223,7 +223,7 @@ const LANDING: Translated<LandingDict> = {
       },
       {
         title: "Season and conditions",
-        body: "When the tour is at its best, where the snow settles, and alternative lines for when conditions won't play along. Written by people who ski these tours themselves.",
+        body: "When the tour is at its best, where the snow settles, and alternative lines for when conditions won't play along.",
       },
     ],
 
