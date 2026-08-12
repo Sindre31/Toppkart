@@ -1,0 +1,93 @@
+{
+  "round": "Bergen",
+  "status": "researched, not routed — no tour from this file ships yet",
+  "note": "Step 1 and step 2 of the pipeline for a Bergen round: candidates with a published ski-touring description, and every summit resolved against the place-name register and Kartverket's 1 m terrain model. Corridors, routing, measurement and the guides are still to do. Nothing here has been routed, so nothing here is in lib/tours.ts.",
+  "why": "Bergen is the largest hole in the map. The nearest tour in the app is Vesoldo, 43 km out in Hardanger, so a city of 290 000 people has nothing inside an hour's drive.",
+  "sources": {
+    "friflyt": "https://www.friflyt.no/topptur/skiturer-bergen — a per-area index in the same shape the Hemsedal round was built on: toppunkt, høydemeter, startsted, OPP/NED. It lists three tours.",
+    "utno": "Individual turforslag. Only the ones whose activity type is skitur are usable; the Kvamskogen hits for Såta and Fotasperrnuten are fottur, with a summer season, and describing a summer path as a ski route is the thing this pipeline exists not to do."
+  },
+  "candidates": [
+    {
+      "name": "Gullfjellstoppen",
+      "kommune": "Bergen",
+      "verdict": "ready to route",
+      "source": "friflyt.no/topptur/skiturer-bergen/turbeskrivelse-gullfjellet",
+      "published": { "summitM": 987, "gainM": 700, "start": "Osavatnet (305 moh) i enden av vegen i Bjørndalen frå rv. 580", "kast": "ikke klassifisert" },
+      "resolved": {
+        "summit": { "lat": 60.38756, "lng": 5.59037, "dtm1_raster_m": 987.37, "dtm1_point_m": 986.8, "terreng": "ÅpentOmråde" },
+        "trailhead": { "name": "Osavatnet", "lat": 60.38075, "lng": 5.52597, "dtm1_m": 307.0, "terreng": "Innsjø" },
+        "waypoints_identified": [
+          { "name": "Redningshytta", "lat": 60.36939, "lng": 5.55939, "dtm1_m": 597.49, "terreng": "ÅpentOmråde" },
+          { "name": "Middagsdalen", "lat": 60.38409, "lng": 5.58932, "dtm1_m": 935.08, "terreng": "ÅpentOmråde" }
+        ]
+      },
+      "findings": [
+        "The register's «Gullfjellet» (60.37313/5.58038) is not the summit. It reads 909,56 m against a published 987, and the highest ground within 700 m of it is 924,83. Gullfjellstoppen is 1,7 km north-north-east, at 60.38756/5.59037, where the raster reads 987,37 and the point API 986,8 — the published figure exactly. Anything that pins this tour to the register point would put the summit 62 m too low and 1,7 km from where it is.",
+        "Both intermediate heights Fri Flyt states reproduce: Osavatnet 307,0 against «305 moh», Redningshytta 597,49 against «600 moh».",
+        "The trailhead point resolves onto the lake itself (terreng Innsjø). The corridor needs a point on land at the road end before this can be routed."
+      ]
+    },
+    {
+      "name": "Såta",
+      "kommune": "Kvam",
+      "verdict": "ready to route",
+      "source": "friflyt.no/topptur/skiturer-bergen/turbeskrivelse-saata2",
+      "published": { "summitM": 1260, "gainM": 800, "start": "Den innerste parkeringsplassen ved Eikedalen Skisenter på Kvamskogen", "kast": "ikke klassifisert" },
+      "resolved": {
+        "summit": { "lat": 60.43136, "lng": 5.99001, "dtm1_raster_m": 1260.45, "terreng": "ÅpentOmråde" },
+        "trailhead": { "name": "Eikedalen Skisenter", "lat": 60.40599, "lng": 5.91657, "dtm1_m": 456.05, "terreng": "ÅpentOmråde" },
+        "waypoints_identified": [
+          { "name": "Skeiskvanndalen", "lat": 60.41624, "lng": 5.95375, "dtm1_m": 561.93, "terreng": "Skog" },
+          { "name": "Rosselandsbotnen", "lat": 60.4294, "lng": 5.96797, "dtm1_m": 661.75, "terreng": "Innsjø" }
+        ]
+      },
+      "findings": [
+        "The summit resolves to 1260,45 m against a published 1260 — exact.",
+        "The register carries «Iendefjell» at the same coordinate as «Såta», which corroborates Fri Flyt's «Såta, som mange kaller Iendafjellet» rather than leaving it as a claim about local usage.",
+        "Gain reproduces: 1260,45 − 456,05 = 804 m against a published 800.",
+        "Not to be confused with ut.no's Såta on Kvamskogen, which is a 404 m fottur from Mødalsvegen with a year-round season. Different start, different route, and not a ski description.",
+        "Rosselandsbotnen resolves onto water. The corridor needs a point on the shore."
+      ]
+    },
+    {
+      "name": "Skrott",
+      "kommune": "Kvam",
+      "verdict": "ready to route, description incomplete",
+      "source": "friflyt.no/topptur/skiturer-bergen/turbeskrivelse-skrott",
+      "published": { "summitM": 1320, "gainM": 1050, "start": "Støls-/hyttetunet i Fitjadalen, omtrent åtte kilometer frå Øystese", "kast": "ikke klassifisert" },
+      "resolved": {
+        "summit": { "lat": 60.45728, "lng": 6.14436, "dtm1_raster_m": 1320.17, "dtm1_point_m": 1319.99, "terreng": "ÅpentOmråde" },
+        "trailhead": { "name": "Fitjadalen, støls-/hyttetunet", "lat": 60.42827, "lng": 6.16119, "dtm1_m": 272.38, "terreng": "DyrketMark" },
+        "waypoints_identified": [
+          { "name": "Håsete", "lat": 60.44275, "lng": 6.15444, "dtm1_m": 754.93, "terreng": "ÅpentOmråde" }
+        ]
+      },
+      "findings": [
+        "Summit resolves to 1320,17 m against a published 1320 — exact.",
+        "Gain reproduces: 1320,17 − 272,38 = 1048 m against a published 1050.",
+        "The route description was only partially retrieved. The ascent via Håsete and a ski hut at about 1000 m is in hand; the descent variants are not, and the corridor should not be drawn from a half-read source."
+      ]
+    },
+    {
+      "name": "Tveitakvitingen",
+      "kommune": "Kvam/Samnanger/Bjørnafjorden",
+      "verdict": "hold",
+      "source": "ut.no/turforslag/1112154404 — «Skitur til Tveitakvitingen 1299 moh», svært krevende skitur, jan–apr, 9,0 km, 989 høydemeter",
+      "resolved": {
+        "summit": { "lat": 60.3254, "lng": 5.90858, "dtm1_raster_m": 1298.9, "dtm1_point_m": 1298.7, "terreng": "ÅpentOmråde" }
+      },
+      "findings": [
+        "Summit resolves to 1298,9 m against a published 1299 — exact.",
+        "Held rather than queued for two reasons. The route starts at Furudalen Alpinsenter and follows «preparerte løyper til Mødal»; that has to be checked against terrain class point by point along the line before anything is drawn, the way Trysilfjellet was, because a topptur line that runs in a piste sends a paying reader uphill into ski traffic. And the trailhead did not resolve — the register has no Furudalen on Kvamskogen, only Furedalen, and which of them the source means is not settled.",
+        "It also crosses the same massif as Såta — «opp mot Såta i bratte klyv og videre opp Stoveveggen» — so the two tours share ground and should be researched together."
+      ]
+    }
+  ],
+  "next": [
+    "Land points for the two trailheads/waypoints that resolved onto water.",
+    "Re-read Skrott's description in full, and settle Tveitakvitingen's trailhead and its piste question.",
+    "Corridors, routing with generate_routes.py, then the band/flank/treeline measurements.",
+    "Guides in both languages, cards, teasers, seed rows, and check_tours / check_guides / check_routes / check_ground."
+  ]
+}

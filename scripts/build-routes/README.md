@@ -2447,6 +2447,40 @@ apart takes the same sentence-by-sentence reading these eight got. Fixing them
 by pattern is exactly what turned Grafjell's lake elevation into a treeline the
 last time. They are the next round's work.
 
+## The Bergen round, researched
+
+Bergen is the largest hole in the map: the nearest tour is Vesoldo, 43 km out in
+Hardanger, so a city of 290 000 people has nothing inside an hour's drive.
+
+`bergen_research.json` holds step 1 and step 2 for closing it — candidates with a
+published ski-touring description, and every summit resolved against the
+place-name register and the terrain model. **Nothing from it ships.** No corridor
+is drawn and no line is routed, so no tour in `lib/tours.ts` comes from this file.
+
+Fri Flyt indexes Bergen the same way it indexes Hemsedal — `skiturer-bergen`,
+with toppunkt, høydemeter, startsted and an OPP/NED description — and lists
+**Gullfjellet, Såta and Skrott**. ut.no adds **Tveitakvitingen** as an explicit
+skitur. The other Kvamskogen hits are fottur with a summer season, and describing
+a summer path as a ski route is what this pipeline exists not to do.
+
+Three of the four summits resolve to their published height exactly, and two of
+those reproduce the published climb to within 2 m from the resolved trailhead.
+The fourth is the interesting one:
+
+**The register's «Gullfjellet» is not Gullfjellstoppen.** It sits at
+60.37313/5.58038 and reads 909,56 m against a published 987, and the highest
+ground within 700 m of it is 924,83. The summit is 1,7 km north-north-east, at
+60.38756/5.59037, where the raster reads 987,37 and the point API 986,8 — the
+published figure. A tour pinned to the register point would put Bergen's own
+mountain 62 m too low and 1,7 km from where it is. That is the Kjerag and
+Storhornet finding a third time, and it is worth stating plainly: on this
+evidence the register point is a name, not a measurement.
+
+What is left is the work that makes a tour: land points for the two features that
+resolved onto water, Skrott's description read in full, Tveitakvitingen's
+trailhead settled and its «preparerte løyper» checked against terrain class the
+way Trysilfjellet was, then corridors, routing, measurement, and two guides each.
+
 ## Network
 
 Everything is public and unauthenticated:
