@@ -199,8 +199,9 @@ const LEGAL_TEXT: Translated<LegalDict> = {
         {
           title: "Hvor lenge vi lagrer",
           body: [
-            `Konto og abonnementsdata beholdes så lenge du har konto hos oss. Det finnes ingen slett-knapp på Min side; be om sletting ved å skrive til ${CONTACT}, så fjerner vi profilen, abonnementsdataene og tilbakemeldingene dine.`,
-            "Fakturaer og annet regnskapsmateriale oppbevares i fem år etter regnskapsårets slutt, slik bokføringsloven krever. Det gjelder også etter at kontoen er slettet.",
+            "Konto og abonnementsdata beholdes så lenge du har konto hos oss. Du sletter kontoen selv under «Konto» på Min side: et løpende abonnement blir sagt opp med det samme, og profilen, abonnementsdataene og tilbakemeldingene dine blir borte. Det skjer med en gang og kan ikke angres.",
+            `Vil du heller be oss om å gjøre det, går det like bra — skriv til ${CONTACT}.`,
+            "Fakturaer og annet regnskapsmateriale oppbevares i fem år etter regnskapsårets slutt, slik bokføringsloven krever. Det gjelder også etter at kontoen er slettet, og de ligger da hos Stripe og ikke hos oss.",
           ],
         },
         {
@@ -364,8 +365,9 @@ const LEGAL_TEXT: Translated<LegalDict> = {
         {
           title: "How long we keep it",
           body: [
-            `Account and subscription data are kept for as long as you have an account with us. There is no delete button on My account; ask for deletion by writing to ${CONTACT}, and we will remove your profile, your subscription data and your feedback.`,
-            "Invoices and other accounting material are kept for five years after the end of the financial year, as the Bookkeeping Act requires. That applies after the account has been deleted too.",
+            "Account and subscription data are kept for as long as you have an account with us. You delete the account yourself under «Konto» on My account: a running subscription is cancelled straight away, and your profile, subscription data and feedback go with it. It happens immediately and cannot be undone.",
+            `If you would rather we did it, that works too — write to ${CONTACT}.`,
+            "Invoices and other accounting material are kept for five years after the end of the financial year, as the Bookkeeping Act requires. That applies after the account has been deleted too, and they then sit at Stripe rather than with us.",
           ],
         },
         {

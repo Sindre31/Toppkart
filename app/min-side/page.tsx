@@ -10,6 +10,7 @@ import type { Lang } from "@/lib/i18n";
 import { getLang } from "@/lib/i18n/server";
 import { accountDict, type AccountDict } from "@/lib/i18n/account";
 import type { Subscription } from "@/lib/types";
+import { DeleteAccountCard } from "./DeleteAccountCard";
 import { EmailCard } from "./EmailCard";
 import { SignOutCard } from "./SignOutCard";
 import { SubscriptionActions } from "./SubscriptionActions";
@@ -310,6 +311,7 @@ export default async function MinSidePage() {
           >
             <EmailCard email={viewer.email ?? ""} lang={lang} />
             <SignOutCard lang={lang} />
+            <DeleteAccountCard lang={lang} />
           </div>
         </section>
 

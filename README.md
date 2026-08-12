@@ -102,10 +102,10 @@ app/
   tur/[slug]/            /tur/[slug] — tour guide, gated below the key figures
   logg-inn/              /logg-inn — Google sign-in
   betaling/              /betaling — start-the-trial checkout
-  min-side/              /min-side — subscription, receipts, account
+  min-side/              /min-side — subscription, receipts, account, delete account
   vilkar/, personvern/   Terms and privacy, both languages, from lib/i18n/legal.ts
   admin/                 /admin/* — behind ADMIN_EMAILS, 404 for everyone else
-  api/                   Route handlers, incl. api/stripe/webhook
+  api/                   Route handlers, incl. api/stripe/webhook and api/konto (deletion)
   robots.ts, sitemap.ts  Production indexes; preview deploys say Disallow: /
 components/
   Blueprint.tsx          <Blueprint> registration-cross frame, <SectionKicker>
@@ -188,6 +188,25 @@ the product behaviour, RLS is the backstop.
 say the same thing. `lib/access.test.ts` pins the TypeScript side case by case, written so it can
 be read against that function line by line — change one and the test is where you find out you
 have to change the other.
+
+### Deleting an account
+
+`DELETE /api/konto`, behind the «Slett kontoen» card on Min side. The order is Stripe first,
+Postgres second, and it is not arbitrary: cancel the subscription and fail the delete, and the
+reader has an account with no subscription — annoying, visible, fixable. Delete first and fail at
+Stripe, and the account is gone while the card keeps being charged every month, with no account
+left to find the customer through. Only one of those two failures keeps costing money after it
+happens.
+
+One `auth.users` delete takes the profile, the subscription row, the invoice mirror and the
+feedback with it, through `on delete cascade`. What stays is the customer and the invoices at
+Stripe: that is the accounting record the Bookkeeping Act wants kept for five years, and
+`/personvern` says so in both languages. The invoice *mirror* is not that record — it exists so
+«02 · Kvitteringer» can render without a round trip — so it goes with the reader who asked to be
+forgotten.
+
+Confirmation is type-the-word rather than a second click. Cancelling a subscription can be undone
+by subscribing again; this cannot be undone by anyone, including us.
 
 ### The one endpoint that is open on purpose
 

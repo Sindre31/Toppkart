@@ -150,6 +150,15 @@ create table if not exists public.tk_invoices (
 
 comment on table public.tk_invoices is 'Mirror of Stripe invoices for the receipts table on Min side. Optional — Stripe remains the source of truth.';
 
+-- The `on delete cascade` above is deliberate and worth spelling out, because it
+-- looks like it collides with the five-year retention the Bookkeeping Act
+-- requires and the privacy policy promises. It does not: this table is a mirror,
+-- kept so «02 · Kvitteringer» can render without a round trip. The accounting
+-- record is the invoice at Stripe, and that stays. When a reader deletes their
+-- account (app/api/konto), the mirror goes with them — there is no longer a
+-- Min side to render it on, and holding a copy of someone's payment history
+-- after they have asked to be forgotten needs a reason better than convenience.
+
 -- ----------------------------------------------------------------------------
 -- feedback — messages from the «Gi tilbakemelding» button.
 --

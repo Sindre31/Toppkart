@@ -325,6 +325,15 @@ indistinguishable. Reading the table needs `SUPABASE_SERVICE_ROLE_KEY` as well �
 has row-level security on with no policies at all, so no other role can see it whoever is signed
 in.
 
+### Deleting accounts needs the service-role key
+
+The «Slett kontoen» card on Min side calls `DELETE /api/konto`, which cancels the Stripe
+subscription and then deletes the row in `auth.users`. Deleting an auth user is an admin
+operation, so it needs `SUPABASE_SERVICE_ROLE_KEY`; without it the endpoint answers 503 and
+nothing is deleted. If you run without that key, take the deletion promise out of `/personvern`
+too — a policy that describes a button that answers 503 is worse than one that tells people to
+write in.
+
 ### The same list gets the alerts
 
 `ADMIN_EMAILS` is also where `lib/alerts.ts` sends operational mail, and that is the more

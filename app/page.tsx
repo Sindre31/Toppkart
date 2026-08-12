@@ -157,8 +157,9 @@ export default async function LandingPage() {
                 gainM={safetyRoute.gainM}
                 trailhead={safetyRoute.trailhead}
                 lang={lang}
+                caption={false}
               >
-                <Link href={`/tur/${SAFETY_PEAK.slug}`}>{t.safetyFigureLink}</Link>
+                <Link href={`/kart?tur=${SAFETY_PEAK.slug}`}>{t.safetyFigureLink}</Link>
               </RouteMap>
             ) : null}
           </section>
