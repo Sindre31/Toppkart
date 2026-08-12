@@ -101,4 +101,13 @@ NEW_TOURS = {
     "banseterkampen": ("Bånsæterkampen", "Ringebufjellet"),
     "nevelfjell": ("Nevelfjell", "Øyerfjellet"),
     "ulvsjoberget": ("Ulvsjøberget", "Trysil"),
+    # — the popularity round: the peaks a published source calls the most
+    #   visited or most popular ski tour of its area. Harstad is the one new
+    #   region. Strandtinden's summit is registered in Lødingen, but the tour is
+    #   the Harstad classic and both its sources file it there, so the region is
+    #   where the day starts rather than which kommune the cairn falls in. —
+    "rodtinden": ("Rødtinden", "Troms"),
+    "kjolen": ("Kjølen", "Troms"),
+    "strandtinden": ("Strandtinden", "Harstad"),
+    "raskarfjellet": ("Råskarfjellet", "Hemsedal"),
 }

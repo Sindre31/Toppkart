@@ -67,6 +67,27 @@ SUMMIT_SEED = {
     "prestholtskarvet": (60.55829, 8.01297),
 }
 
+# Peaks whose named top is a shoulder on a ridge that keeps rising, where an
+# unconstrained climb walks off the mountain the tour goes to. The value is how
+# far from the seed the summit is allowed to sit, in metres.
+#
+# This is the opposite failure to SUMMIT_SEED's. There the register point could
+# not say which of two tops the name belongs to; here it says exactly that, and
+# the terrain model has no top to offer — the ground under the name is convex in
+# seven directions and rises in the eighth, all the way to the next mountain.
+# Hill-climbing has nothing to stop it, so it returns whatever the tile edge
+# happens to be. A cap says out loud that the summit is the named point rather
+# than pretending a local maximum was found.
+SUMMIT_CAP_M = {
+    # Rødtinden's register point reads 469.5 m and Fri Flyt publishes 470 with a
+    # GPS position 3 m away; ut.no's own line ends 8 m from it. The ground falls
+    # away on every bearing but 315, where it rises without a saddle to 491 m at
+    # 600 m out and on to Storbogtinden. The climb stopped at 488.2 m at 263 m
+    # out — not a summit, just where a 700 m tile ran out. Capped to 150 m, which
+    # keeps the rounded top the name and both published lines agree on.
+    "rodtinden": 150.0,
+}
+
 
 def _seed_dem(lat, lng):
     half_lat = SPAN_M / 2 / 110540.0
@@ -236,7 +257,15 @@ def main():
         # that seeded it: the climb reads a 1 m tile and the disc a 6 m one, so
         # the lower number is the better measurement, not a lost summit.
         seed_lat, seed_lng = SUMMIT_SEED.get(slug, (best["lat"], best["lng"]))
-        flat, flng, fz, radius = resolve_top(seed_lat, seed_lng, expect)
+        cap = SUMMIT_CAP_M.get(slug)
+        if cap:
+            # The tile *is* the cap: hill_climb never leaves the span it is given,
+            # so a 2·cap tile centred on the seed returns the highest ground
+            # within cap metres of the named point and nothing beyond it.
+            flat, flng, fz = hill_climb(seed_lat, seed_lng, span_m=2 * cap, px=int(2 * cap))
+            radius = int(cap)
+        else:
+            flat, flng, fz, radius = resolve_top(seed_lat, seed_lng, expect)
         z_api, terr = dtm_point(flat, flng)
         drift = haversine(nlat, nlng, flat, flng)
         delta = fz - expect

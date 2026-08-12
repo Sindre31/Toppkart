@@ -21,6 +21,28 @@
   "season": "feb–mai",
   "hasGuide": true
  },
+ "kjolen": {
+  "name": "Kjølen",
+  "region": "Troms",
+  "summitM": 790,
+  "verticalM": 580,
+  "duration": "3–5 t",
+  "grade": 1,
+  "aspect": "NØ",
+  "season": "nov–mai",
+  "hasGuide": false
+ },
+ "rodtinden": {
+  "name": "Rødtinden",
+  "region": "Troms",
+  "summitM": 470,
+  "verticalM": 450,
+  "duration": "2–4 t",
+  "grade": 1,
+  "aspect": "SØ",
+  "season": "des–mai",
+  "hasGuide": false
+ },
  "tromsdalstinden": {
   "name": "Tromsdalstinden",
   "region": "Troms",
@@ -108,6 +130,17 @@
   "aspect": "S",
   "season": "jan–mai",
   "hasGuide": true
+ },
+ "strandtinden": {
+  "name": "Strandtinden",
+  "region": "Harstad",
+  "summitM": 1076,
+  "verticalM": 1090,
+  "duration": "4–6 t",
+  "grade": 3,
+  "aspect": "N",
+  "season": "jan–jun",
+  "hasGuide": false
  },
  "rombakstotta": {
   "name": "Rombakstøtta",
@@ -691,6 +724,17 @@
   "aspect": "S",
   "season": "feb–mai",
   "hasGuide": true
+ },
+ "raskarfjellet": {
+  "name": "Råskarfjellet",
+  "region": "Hemsedal",
+  "summitM": 1610,
+  "verticalM": 680,
+  "duration": "3–5 t",
+  "grade": 2,
+  "aspect": "NØ",
+  "season": "feb–mai",
+  "hasGuide": false
  },
  "skogshorn": {
   "name": "Skogshorn",

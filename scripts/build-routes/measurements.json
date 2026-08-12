@@ -979,5 +979,53 @@
    "figure": "Seksten prøvepunkt jevnt fordelt langs sporet til turforslag 1112155777. Seks av dem svarer Alpinbakke: 938,6 / 956,6 / 981,5 / 1002,3 moh sammenhengende, og 1092,0 lenger opp. Resten er ÅpentOmråde eller uten klasse. Skihytta-ruta (1112155778) sier det selv: «Følg merket sti oppover i slalåmbakken.»",
    "how": "Kartverkets punkt-API (hoydedata/v1/punkt) på hvert fjerde trackpunkt i ut.nos GPX for turen."
   }
+ ],
+ "rodtinden": [
+  {
+   "what": "Flankesveip frå toppen på åtte retningar",
+   "figure": "Middel og brattaste 60 m-vindauge ut til ein kilometer: N 8,7° (26,4° på 920–980 m), NØ 13,8° (27,0° på 490–550), Ø 15,0° (29,4° på 20–80), SØ 16,6° (32,1° på 10–70), S 19,8° (29,5° på 840–900), SV 15,1° (25,4° på 880–940), V 3,3° (17,9° på 250–310), NV −2,9° (4,4° på 810–870). Negativt middel mot nordvest fordi bakken stig: 518,9 moh ein kilometer ut.",
+   "how": "`flank_probe.py <lat> <lng> --out 1000 --step 10`, alle åtte retningane, mot DTM1-rasteret."
+  },
+  {
+   "what": "Henget sørøst for toppen, som Fri Flyt fører som einaste faremoment («heng med bratthet opp mot 40 grader»)",
+   "figure": "Radialen på 135° målt kvar femte meter: 22,2° på 20 m, 36,3° på 25, 39,3° på 40, 50,4° på 55, 45,9° på 60, 38,3° på 65, og under 25° frå 75 m og ut. Brattaste 60 m-vindauget er 33,1° mellom 15 og 75 m ut. Fri Flyts tal er altså rett og litt forsiktig: enkeltsteg på fem meter les opp mot 50 grader.",
+   "how": "`flank_probe.py 69.70147 18.75254 135 --out 300 --step 5`."
+  },
+  {
+   "what": "Ryggen nordvest mot Storbogtinden — kvifor toppen ikkje er eit toppunkt i terrengmodellen",
+   "figure": "Frå registerpunktet (469,5 moh) fell bakken i sju av åtte retningar, men på 315° stig han utan sadel: 469,8 moh 100 m ut, 479,6 på 200, 486,4 på 300, 488,5 på 400 og 491,0 på 600, og held fram til 567,0 ved registerpunktet for Storbogtinden 728 m unna.",
+   "how": "Punkt-API-et (hoydedata/v1/punkt) på 100 m-intervall langs 315°, og eit åtteretnings-profil på 100/200/300/400/600 m frå toppen."
+  }
+ ],
+ "kjolen": [
+  {
+   "what": "Flankesveip frå toppen på åtte retningar",
+   "figure": "Middel og brattaste 60 m-vindauge ut til ein kilometer: N 20,9° (36,7° på 710–770 m), NØ 10,0° (20,5° på 690–750), Ø 9,8° (18,4° på 520–580), SØ 9,9° (22,9° på 160–220), S 11,3° (23,5° på 160–220), SV 7,9° (15,4° på 730–790), V 4,8° (25,1° på 900–960), NV 8,0° (17,8° på 540–600). Nord er den einaste retninga som held over 20° i middel; ruta opp og ned går aust, som måler 9,8°.",
+   "how": "`flank_probe.py <lat> <lng> --out 1000 --step 10`, alle åtte retningane, mot DTM1-rasteret."
+  },
+  {
+   "what": "Finnvikvatnet, og kvifor linja går sør for det",
+   "figure": "Vassflata måler 229,0 moh på DTM1 med terrengklasse Innsjø på alle prøvepunkta mellom parkeringa og startpunktet; landet aust for vatnet ligg 254–265 moh. Med parkeringa (231,6 moh) som start gjekk den routa linja 290 m ut på isen.",
+   "how": "Punkt-API-et på åtte punkt langs sørausthjørnet av vatnet, og `check_ground.py kjolen` på den første routa linja."
+  }
+ ],
+ "strandtinden": [
+  {
+   "what": "Flankesveip frå toppen på åtte retningar",
+   "figure": "Middel og brattaste 60 m-vindauge ut til ein kilometer: N 24,8° (41,8° på 20–80 m), NØ 20,9° (32,4° på 770–830), Ø 29,0° (54,9° på 20–80), SØ 30,9° (62,5° på 610–670), S 30,6° (64,3° på 10–70), SV 24,1° (56,0° på 750–810), V 17,0° (37,0° på 140–200), NV 22,2° (46,5° på 660–720). Ingen retning måler under 17° i middel, og fire av åtte har vindauge over 50 grader. Vest er den slakaste, og det er den ryggen rutebeskrivinga tek toppen frå.",
+   "how": "`flank_probe.py <lat> <lng> --out 1000 --step 10`, alle åtte retningane, mot DTM1-rasteret."
+  },
+  {
+   "what": "Dei to punkthøgdene rutebeskrivinga navigerer etter",
+   "figure": "«Ei slukt ved høyde 505» måler 509,6 moh på 68.51830/16.05050, og «høyde 570» måler 570,3 moh på 68.51620/16.05100. Søkket mellom dei og toppen — «bollen» — botnar på 524,7 moh på 68.51500/16.04600 og flatar ut på 805,0 moh på 68.51000/16.04700.",
+   "how": "Punkt-API-et på kandidatpunkt lesne av eit DTM-raster over 68.492–68.528 N, 16.015–16.105 Ø."
+  }
+ ],
+ "raskarfjellet": [
+  {
+   "what": "Flankesveip frå toppen på åtte retningar",
+   "figure": "Middel og brattaste 60 m-vindauge ut til ein kilometer: N 10,3° (41,7° på 930–990 m), NØ 10,5° (24,8° på 710–770), Ø 14,5° (27,0° på 60–120), SØ 0,6° (23,1° på 60–120), S 3,8° (27,0° på 30–90), SV −0,2° (20,3° på 80–140), V 6,7° (17,5° på 400–460), NV 2,6° (16,6° på 250–310). Sørvest måler negativt middel fordi platået stig vidare: 1612,5 moh ein kilometer ut. Det bratte ligg langt nede mot nord, ikkje ved varden.",
+   "how": "`flank_probe.py <lat> <lng> --out 1000 --step 10`, alle åtte retningane, mot DTM1-rasteret."
+  }
  ]
 }

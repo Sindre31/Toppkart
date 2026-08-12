@@ -2011,6 +2011,166 @@ of gravel and 4 km of skogsbilveg that nothing says is ploughed. Brynflået tops
 out at 927 m on ut.no's own line, 120 m below Fulufjellet's Norwegian high point,
 and the tour is a sherpa staircase into a national park.
 
+## The popularity round
+
+Four peaks, chosen by a question rather than by a map: **which are the most
+popular ski tours in Norway?** That is answerable — the guidebooks say it out
+loud — but only one area at a time, so the rule for this round is one sentence:
+
+> a published source calls it the most visited or the most popular ski tour of
+> its area, and the app does not already carry a tour on that mountain.
+
+The second half of the rule is what makes the round small, and it is the more
+interesting half. Run the question over the areas the app already covers and the
+answer is mostly *already here*: Kirketaket, whose own card has called it «Norges
+kanskje mest populære topptur» since the first 24; Nibbi, «Hemsedals mest gåtte
+vårtopp»; Storhornet, «Oppdals mest besøkte topp»; Gaustatoppen, Melderskin,
+Storgalten, Tromsdalstinden. The gap the popularity question exposes is **Troms**
+— the app had three tours in the country's busiest ski-touring region, and none
+of them was one of the two the Fri Flyt writers name as the most-visited.
+
+| tour | region | start | summit | gain | km | steepest 100 m band | steepest 30 m | grade |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Strandtinden | Harstad | 21 | 1076 | 1090 | 4.8 | 19.0° | 28.7° | 3 |
+| Råskarfjellet | Hemsedal | 938 | 1610 | 685 | 3.3 | 20.1° | 24.0° | 2 |
+| Kjølen | Troms | 224 | 790 | 578 | 4.1 | 12.6° | 24.9° | 1 |
+| Rødtinden | Troms | 20 | 470 | 450 | 2.3 | 15.1° | 24.2° | 1 |
+
+The sentences the round is built on, in the sources' own words:
+
+- **Rødtinden** — «Vi våger påstanden. Dette er den mest besøkte toppen rundt
+  Tromsø!!», Fri Flyt's route description, repeated in its «Enkle og fine
+  toppturer i Tromsø».
+- **Kjølen** — «En av Kvaløyas mest besøkte topper», ut.no 118113.
+- **Strandtinden** — «Harstadområdets store klassiker, sannsynligvis det mest
+  populære og kjente fjellet for toppturfolk fra Harstad og utenfra», Fri Flyt.
+- **Råskarfjellet** — «en av de mest populære toppturfjellene i Hemsedal», Fri
+  Flyt's «Tre anbefalte toppturer i Hemsedal», where mountain guide and
+  guidebook author Jørgen Aamot also notes that it is usually called by its
+  height alone, «1609».
+
+The four standing conditions hold: a full published route description, a start
+at a road, a second source, and every point resolving in the place-name register
+and measuring on DTM1. `check_new_corridors.py` returns one note across the four
+— Strandtinden's start, which is a stretch of E10 rather than a car park,
+because that is what the guidebook says it is. `check_routes.py` calls the 90
+tours and 99 routes clean, `check_tours.py` the 90 cards, and `check_ground.py`
+the four lines — the last one only after it had moved a trailhead, below.
+
+### What the checks caught
+
+**Rødtinden is a named shoulder, and hill-climbing walked off it.** The register
+point reads 469.5 m, Fri Flyt publishes 470 with a GPS position 3 m away, and
+ut.no's line ends 8 m from it. But the ground under the name falls away in seven
+directions and *rises* in the eighth: 479.6 m at 200 m out on a bearing of 315,
+488.5 at 400, 491.0 at 600, and on without a saddle to Storbogtinden. The
+unconstrained climb returned 488.2 m at 263 m out, which is not a summit — it is
+where a 700 m tile ran out. `resolve_summits.py` now carries `SUMMIT_CAP_M`, a
+table of how far from the seed a summit may sit, with Rødtinden's 150 m and the
+reason beside it. This is the opposite failure to the one `SUMMIT_SEED` exists
+for: there the register point could not say which top carried the name, here it
+says exactly that and the terrain model has no top to offer.
+
+**Kjølen's first line went 290 m out onto Finnvikvatnet.** The corridor started
+at the mapped car park at the lake's east end, 231.6 m, and the router took the
+short way across the ice at 229.0 m — terrain class `Innsjø`, no reservoir tag,
+but nobody sends anyone over it either: ut.no's own start is on the *south* side
+of the water, and the land east of it stands 25–35 m higher. The fix is the
+start, not a detour. The trailhead is now ut.no's point, 224.2 m, with OSM
+way/1154427451 (`highway=service`) 128 m away and the mapped car park recorded
+640 m north. The line has no vertex on water at all, and the gain moved 575 →
+578 m against ut.no's published 563.
+
+**Strandtinden is registered under two other names, and its road is named after
+it.** The register has no Strandtinden here: the top is **Strandstinden** (Fjell,
+24 m from the resolved cell) and **Djupfesttinden** (Topp, 20 m). Fri Flyt files
+the tour under «Harstad / Tjeldsund»; the summit and every name the route passes
+— Heggedalen, Heggvatnet, Kvanntoa, Kvannto — are registered in **Lødingen**. The
+E10 that runs under the mountain is `Strandstindvegen` in both the register and
+OSM. The card keeps Harstad, which is where the day starts and how both sources
+place the tour.
+
+**And its two spot heights confirmed the corridor.** The route description
+navigates by numbers off the paper map — «ei slukt ved høyde 505», then «forbi
+høyde 570» — and those two points measure **509.6 m** and **570.3 m** on DTM1,
+120 m apart on the line the text describes. That is the independent check this
+corridor has instead of a GPX track, and it is why the record ships at
+confidence `medium` rather than `low`: the trailhead is a stretch of road and
+the bowl has no name in the register, but the two places the guidebook counts
+from are exactly where it says they are.
+
+**Råskardfjellet's flat is a hundred metres higher than the guidebook's.** Fri
+Flyt puts the avalanche terrain «til 1300 moh» and a short flat above it. On the
+routed line the flat is at 1378 to 1397 m, with 212 vertical metres left to the
+cairn. The card carries the measurement. Its register spelling is
+**Råskardfjellet** with a d, its published summit 1609 measures 1609.8, and Fri
+Flyt's own GPS position lands 8 m from the climbed cell.
+
+### What the flank sweeps found
+
+All four summits were swept on eight bearings before anything was written, and
+the readings are in `measurements.json`.
+
+- **Rødtinden's one steep thing is exactly where Fri Flyt says it is, and it is
+  steeper than the number.** «Like før toppen mot SØ er det heng med bratthet
+  opp mot 40 grader» — the 135 radial, sampled every five metres, reads 36.3° at
+  25 m out, 39.3° at 40, **50.4° at 55** and 45.9° at 60, then under 25° from
+  75 m out. Over a 60 m window it is 33.1°. A tour whose whole route is under
+  25 degrees has a fifty-degree step seventy metres from the cairn.
+- **Kjølen is gentle in seven directions and not in the eighth.** North measures
+  20.9° mean with 36.7° in the window 710–770 m out; the east side the route
+  climbs and descends measures 9.8°. Ut.no's «ikke en topp for deg som må ha
+  kvasse egger og bratte nedkjøringer» is a measurement.
+- **Strandtinden has no gentle side.** No bearing measures under 17° mean out to
+  a kilometre, and four of the eight carry 60 m windows over 50°: south 64.3° at
+  10–70 m out, south-east 62.5°, east 54.9° at 20–80, south-west 56.0°. Even the
+  north side the tour is famous for reads 41.8° in the window 20–80 m below the
+  cairn. West is the flattest at 17.0°, and west is the ridge the route takes the
+  summit from — which is what Fri Flyt means by «letteste vei til toppen er å
+  holde høyre (vest)».
+- **Råskardfjellet is a plateau.** South-east measures 0.6° mean, south-west
+  −0.2° because the ground keeps rising, south 3.8°, north-west 2.6°. The only
+  steep reading is 41.7° in a window 930–990 m out to the north, nowhere near the
+  route. That is the mountain Fri Flyt describes when it says «dersom det er
+  dårlig sikt, er det lite terrengformasjoner å orientere etter» — the hazard
+  here is navigation, not slope angle.
+
+### What was left out
+
+**Ullstinden (1078 m, Tromsø fastland)** is the round's near miss, and it was
+researched to the point of a resolved summit before it was dropped. Fri Flyt
+calls it «et utrolig populært toppturfjell» and «100 % skredtrygt», and its
+summit resolves cleanly — 1092.4 m on DTM1 against a published 1078, which would
+have been the Storehorn case and no obstacle. What stopped it is the corridor.
+The normal route «følger du den breie ryggen sør for Hesjedalen», and there is no
+Hesjedalen in the place-name register within fifty kilometres of that mountain;
+the straight line from the mapped parking on Snarbyeidet crosses a valley,
+dropping 934 → 765 m before it climbs again, so which side of it the route takes
+decides the whole line. No second source publishes the route either. That is
+Englafjell exactly: placeable only by guessing, and a guess is what this pipeline
+is built not to draw. It stays in `peaks.py` with its summit resolved, for
+whoever finds the second description.
+
+**Storsylen (1762 m)** is «det mest populære toppturmålet i Sylan fra både norsk
+og svensk side» on ut.no's own page, and it fails the road condition the
+Patchellhytta pair failed: the described tour is nine hours round trip *from
+Nedalshytta*, and the road in is not a winter road. Its summit has been resolved
+in `peaks.py` since the second batch.
+
+**Togga (1340 m)**, «det mest populære turmålet i Sogndal», was researched and
+rejected in the Vestland round for a reason that has not changed: Fri Flyt
+publishes two tours on it with two summit heights, the register has one Togga,
+and the top its point sits on measures 1235.5 m — 30 m above one published figure
+and 105 below the other.
+
+### The guides
+
+None of the four has a written guide yet. The research they were built from —
+route description, trailhead evidence, hazard notes, the sweeps and every
+correction above — is in `new_corridors.json`, `new_tourmeta.json` and
+`measurements.json`, which is what `guide_brief.py` reads. That is the same state
+the twelve Sunnmøre tours shipped in, and the same work list.
+
 ## Network
 
 Everything is public and unauthenticated:

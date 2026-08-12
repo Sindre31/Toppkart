@@ -210,6 +210,14 @@ export const TOUR_TEASER_EN: Record<string, string> = {
     "270 m of climbing from Nordseter over Nevelåsen to the most-visited summit above Lillehammer, with an open hut and a view-finder at 1089.",
   ulvsjoberget:
     "300 m of climbing from Vestby up through the forest to open fell — the highest summit in Trysil outside the ski resort.",
+  rodtinden:
+    "450 m of climbing from the Storelva ski stadium up the open south-east side — the most-visited summit around Tromsø.",
+  kjolen:
+    "580 m of climbing from Finnvikvatnet up the valley to the radar and the warming hut — one of Kvaløya's most-visited summits.",
+  strandtinden:
+    "1090 m from the E10 at sea level up through Heggedalen — the great classic of the Harstad area, and the peak most people there ski.",
+  raskarfjellet:
+    "680 m of climbing from Sildegjerdet on rv 52 up the stream valley — Hemsedal's own classic, known simply as «1609».",
 
 };
 
