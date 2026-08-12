@@ -157,14 +157,13 @@ export default async function LandingPage() {
                 gainM={safetyRoute.gainM}
                 trailhead={safetyRoute.trailhead}
                 lang={lang}
-                /* Gråtone her. Forsida er tegnet i ett akkompagnement — hårfine
-                   streker, ett aksentfarge — og et fargelagt topografisk kart
-                   midt i den blir det eneste på sida som roper. Kartverket har
-                   en gråtoneserie som er tegnet for nettopp dette, så det er
-                   deres kart og ikke vårt filter over det. Ruta beholder
-                   aksentfargen og er da det eneste fargede i figuren, som er
-                   omtrent det man vil at øyet skal finne først. */
-                tone="grey"
+                /* Fargelagt, som på tursidene. Gråtonen holdt forsidas
+                   akkompagnement rent, men den gjorde også figuren til et
+                   stemningsbilde: et grått kart leses som bakgrunn. Poenget med
+                   seksjonen er at guidene er bygget rundt terrenget, og da må
+                   terrenget være lesbart — skog mot snaufjell, bre, myr, merkede
+                   løyper. Det er den samme figuren en abonnent får, som er
+                   akkurat det seksjonen påstår. */
                 caption={false}
               >
                 <Link href={`/kart?tur=${SAFETY_PEAK.slug}`}>{t.safetyFigureLink}</Link>
