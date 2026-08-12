@@ -84,6 +84,22 @@ export const env = {
     (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "http://localhost:3000"),
 };
 
+/** `ADMIN_EMAILS` as a normalised list. Empty when unset.
+ *
+ *  Two callers, and they want the same list for opposite reasons: `lib/admin.ts`
+ *  asks who may open `/admin/*`, and `lib/alerts.ts` asks who to wake when a
+ *  webhook fails. The parsing lived in the first of them until the second
+ *  needed it; splitting the string in two places is how a trailing space in one
+ *  of them becomes a lockout in one place and a lost alert in the other.
+ *
+ *  **Empty means nobody**, never everybody. Both callers depend on that. */
+export function adminEmailList(): string[] {
+  return env.adminEmails
+    .split(",")
+    .map((entry) => entry.trim().toLowerCase())
+    .filter(Boolean);
+}
+
 export const isSupabaseConfigured = Boolean(env.supabaseUrl && env.supabaseAnonKey);
 export const isStripeConfigured = Boolean(env.stripeSecretKey);
 export const isResendConfigured = Boolean(env.resendApiKey);

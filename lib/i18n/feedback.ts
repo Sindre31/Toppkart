@@ -27,6 +27,13 @@ export interface FeedbackDict {
   doneBody: string;
   errorEmpty: string;
   errorTooLong: string;
+  /** Too many messages from the same sender inside the hour.
+   *
+   *  Written for the person who hits it by accident rather than the one it is
+   *  aimed at, because those are the only two people who ever see it and only
+   *  one of them is reading. It says the text is not lost and names the address
+   *  that has no limit on it. */
+  errorTooMany: string;
   /** Resend not configured, or it rejected the message. */
   errorUnsent: string;
 }
@@ -49,6 +56,7 @@ const FEEDBACK: Translated<FeedbackDict> = {
     doneBody: "Den er mottatt, og den blir lest.",
     errorEmpty: "Skriv noe først.",
     errorTooLong: "Det ble litt langt. Kort det ned, eller send det på e-post.",
+    errorTooMany: `Du har sendt en del den siste timen. Teksten står igjen i feltet — vent litt, eller send den til ${SITE.supportEmail}.`,
     errorUnsent: `Vi fikk ikke sendt den. Teksten står igjen i feltet — kopier den og send til ${SITE.supportEmail}.`,
   },
   en: {
@@ -68,6 +76,7 @@ const FEEDBACK: Translated<FeedbackDict> = {
     doneBody: "It arrived, and it will be read.",
     errorEmpty: "Write something first.",
     errorTooLong: "That got a bit long. Shorten it, or send it by e-mail.",
+    errorTooMany: `You have sent a fair few in the last hour. Your text is still in the field — wait a while, or send it to ${SITE.supportEmail}.`,
     errorUnsent: `We could not send it. Your text is still in the field — copy it and send it to ${SITE.supportEmail}.`,
   },
 };

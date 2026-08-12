@@ -1,6 +1,15 @@
 import type Stripe from "stripe";
 import { NextResponse } from "next/server";
+import { alertOps } from "@/lib/alerts";
 import { env } from "@/lib/config";
+import {
+  idOf,
+  mapStatus,
+  periodEndFor,
+  planFor,
+  subscriptionIdFromInvoice,
+  toIso,
+} from "@/lib/stripe-mapping";
 import { getStripe } from "@/lib/stripe";
 import { getSupabaseAdminClient } from "@/lib/supabase/server";
 import { sendReceiptEmail, sendWelcomeEmail } from "@/lib/email";
@@ -37,69 +46,6 @@ interface SubscriptionRow {
   card_last4?: string | null;
   card_exp_month?: number | null;
   card_exp_year?: number | null;
-}
-
-// ---------------------------------------------------------------------------
-// Mapping helpers
-// ---------------------------------------------------------------------------
-
-/** Stripe has eight subscription statuses; the app has five. Anything that
- *  means "the customer paid or is trialing" grants access, anything terminal
- *  maps to `canceled`, and the half-finished states map to `none` so they never
- *  accidentally open the paywall. */
-function mapStatus(status: Stripe.Subscription.Status): SubscriptionStatus {
-  switch (status) {
-    case "trialing":
-      return "trialing";
-    case "active":
-      return "active";
-    case "past_due":
-      return "past_due";
-    case "canceled":
-    case "unpaid":
-    case "incomplete_expired":
-      return "canceled";
-    case "incomplete":
-    case "paused":
-    default:
-      return "none";
-  }
-}
-
-function planFromPriceId(priceId: string | null | undefined): "maned" | "ar" | null {
-  if (!priceId) return null;
-  if (env.stripePriceYearly && priceId === env.stripePriceYearly) return "ar";
-  if (env.stripePriceMonthly && priceId === env.stripePriceMonthly) return "maned";
-  return null;
-}
-
-/** Plan comes from the configured price ids; the billing interval is the
- *  fallback for test-mode prices that were created outside the env config. */
-function planFor(subscription: Stripe.Subscription): "maned" | "ar" {
-  const item = subscription.items.data[0];
-  const fromPrice = planFromPriceId(item?.price?.id);
-  if (fromPrice) return fromPrice;
-  return item?.price?.recurring?.interval === "year" ? "ar" : "maned";
-}
-
-function toIso(seconds: number | null | undefined): string | null {
-  if (typeof seconds !== "number") return null;
-  return new Date(seconds * 1000).toISOString();
-}
-
-/** As of the 2025 Stripe API versions `current_period_end` lives on the
- *  subscription *item*, not on the subscription. Take the furthest one out. */
-function periodEndFor(subscription: Stripe.Subscription): string | null {
-  const ends = subscription.items.data
-    .map((item) => item.current_period_end)
-    .filter((value): value is number => typeof value === "number");
-  if (!ends.length) return null;
-  return toIso(Math.max(...ends));
-}
-
-function idOf(value: string | { id: string } | null | undefined): string | null {
-  if (!value) return null;
-  return typeof value === "string" ? value : value.id;
 }
 
 /** Card details for «Betalingsmetode» on Min side. The default payment method
@@ -267,10 +213,6 @@ async function mirrorInvoice(
   if (error) console.warn("[stripe-webhook] kunne ikke speile faktura", invoice.id, error.message);
 }
 
-function subscriptionIdFromInvoice(invoice: Stripe.Invoice): string | null {
-  return idOf(invoice.parent?.subscription_details?.subscription ?? null);
-}
-
 // ---------------------------------------------------------------------------
 // Event handlers
 // ---------------------------------------------------------------------------
@@ -296,10 +238,26 @@ async function handleCheckoutCompleted(
     // a 4xx/5xx here would make Stripe retry this delivery for days without the
     // outcome ever changing. The event is logged so it can be replayed by hand
     // once the account exists.
-    console.error(
-      "[stripe-webhook] checkout.session.completed uten brukertreff",
-      JSON.stringify({ session: session.id, customerId, email }),
-    );
+    //
+    // This is the worst case in the whole system and the only one nobody sees:
+    // Checkout completed, so a card is on file and a trial is running at Stripe,
+    // while the account it belongs to has no subscription row and the reader
+    // gets the paywall. Nothing will fix it on its own — hence the alert.
+    await alertOps({
+      subject: "Checkout fullført uten brukertreff",
+      key: "checkout-no-user",
+      lines: [
+        "En Checkout-sesjon ble fullført, men den kunne ikke knyttes til noen konto.",
+        "Kunden har betalingskort registrert hos Stripe og får betalingsmur i appen.",
+        "",
+        `Sesjon:  ${session.id}`,
+        `Kunde:   ${customerId ?? "(ingen)"}`,
+        `E-post:  ${email ?? "(ingen)"}`,
+        "",
+        "Rett opp ved å opprette abonnementsraden for hånd, eller spill av",
+        "hendelsen på nytt fra Stripe når kontoen finnes.",
+      ],
+    });
     return;
   }
 
@@ -336,11 +294,19 @@ async function handleSubscriptionEvent(
   const userId = await resolveUserId(admin, stripe, { customerId });
 
   if (!userId) {
-    // Same reasoning as above: log and return 200 rather than retry forever.
-    console.error(
-      "[stripe-webhook] abonnementshendelse uten brukertreff",
-      JSON.stringify({ subscription: subscription.id, customerId }),
-    );
+    // Same reasoning as above: alert, log and return 200 rather than retry forever.
+    await alertOps({
+      subject: "Abonnementshendelse uten brukertreff",
+      key: "subscription-no-user",
+      lines: [
+        "En abonnementshendelse kunne ikke knyttes til noen konto, så statusen i",
+        "databasen står nå på det den sto på før hendelsen.",
+        "",
+        `Abonnement: ${subscription.id}`,
+        `Status:     ${subscription.status}`,
+        `Kunde:      ${customerId ?? "(ingen)"}`,
+      ],
+    });
     return;
   }
 
@@ -357,10 +323,18 @@ async function handleInvoicePaid(
   const userId = await resolveUserId(admin, stripe, { customerId, email });
 
   if (!userId) {
-    console.error(
-      "[stripe-webhook] invoice.paid uten brukertreff",
-      JSON.stringify({ invoice: invoice.id, customerId, email }),
-    );
+    await alertOps({
+      subject: "Betalt faktura uten brukertreff",
+      key: "invoice-no-user",
+      lines: [
+        "En faktura er betalt, men den kunne ikke knyttes til noen konto.",
+        "Pengene er trukket; abonnementsraden og kvitteringen mangler.",
+        "",
+        `Faktura: ${invoice.id ?? "(ingen id)"}`,
+        `Kunde:   ${customerId ?? "(ingen)"}`,
+        `E-post:  ${email ?? "(ingen)"}`,
+      ],
+    });
     return;
   }
 
@@ -471,8 +445,22 @@ export async function POST(request: Request): Promise<NextResponse> {
     // A genuine failure (Supabase down, Stripe unreachable). 500 lets Stripe
     // retry with backoff, which is what we want here — unlike an unresolvable
     // user, this will succeed on a later attempt.
+    //
+    // The alert goes out anyway, throttled per event type: Stripe gives up
+    // after roughly three days, and a subscription that never landed is not
+    // something to discover from a reader's e-mail.
     const message = error instanceof Error ? error.message : String(error);
-    console.error(`[stripe-webhook] ${event.type} feilet:`, message);
+    await alertOps({
+      subject: `Stripe-webhook feilet: ${event.type}`,
+      key: `webhook-error:${event.type}`,
+      lines: [
+        `Hendelsen ${event.type} feilet og fikk 500 tilbake, så Stripe prøver på nytt.`,
+        "Går alle forsøkene tapt, står abonnementsraden igjen med gammel status.",
+        "",
+        `Hendelse: ${event.id}`,
+        `Feil:     ${message}`,
+      ],
+    });
     return NextResponse.json({ error: message }, { status: 500 });
   }
 

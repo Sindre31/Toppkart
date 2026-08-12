@@ -8,10 +8,12 @@ import { SiteFooter, SiteNav } from "@/components/SiteChrome";
 import { DataPlate } from "@/components/landing/DataPlate";
 import { TrialSignupRow } from "@/components/landing/TrialSignupRow";
 import styles from "@/components/landing/landing.module.css";
+import { RouteMap } from "@/components/guide/RouteMap";
 import { getViewer } from "@/lib/access";
 import { getLang } from "@/lib/i18n/server";
 import { landingDict } from "@/lib/i18n/landing";
 import { siteJsonLd } from "@/lib/structured-data";
+import { getTour, routeProfile } from "@/lib/tours";
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = landingDict(await getLang());
@@ -20,6 +22,21 @@ export async function generateMetadata(): Promise<Metadata> {
 
 /** Årsprisen (290 kr/år — to måneder gratis) er skrudd av. Sett til true for å vise raden. */
 const SHOW_ANNUAL = false;
+
+/** Turen figuren i seksjon 03 tegner.
+ *
+ *  Her lå `/assets/kontur.png`, som var det siste oppdiktede terrenget på
+ *  nettstedet. Bildet var en generert konturgrafikk med «1439 moh» brent inn i
+ *  streken — og 1439 er Kirketaket, fordi prototypen tegnet den. Tursidene fikk
+ *  ekte kart i #67 og sluttet å bruke bildet; forsida ble stående igjen med det,
+ *  under en alternativ tekst som lovte «Toppturfoto — skiløper på vei opp».
+ *  Altså tre påstander som ikke stemte samtidig: ikke et foto, ikke en skiløper,
+ *  og en høyde uten et fjell under seg.
+ *
+ *  Nå tegner figuren Kirketakets faktiske normalrute med `RouteMap` — den samme
+ *  komponenten tursidene bruker, matet av de samme punktene `/kart` tegner. Tallet
+ *  1439 er sant igjen, fordi det nå er fjellet det alltid tilhørte. */
+const SAFETY_PEAK = { slug: "kirketaket", name: "Kirketaket" } as const;
 
 const muted = (percent: number) => `color-mix(in srgb, var(--color-text) ${percent}%, transparent)`;
 
@@ -37,6 +54,12 @@ export default async function LandingPage() {
      ikke spurte. Nå gjør den det. `hasAccess`, ikke bare «er innlogget»: en
      som er logget inn uten abonnement skal fortsatt få tilbudet. */
   const { hasAccess } = await getViewer();
+
+  /* Geometrien er fri — den står allerede på `/kart` for alle. Det er
+     ruteteksten, høydeprofilen og skredterrenget som er bak betalingsmuren, og
+     ingen av dem er her. */
+  const safetyPeak = getTour(SAFETY_PEAK.slug);
+  const safetyRoute = safetyPeak ? routeProfile(safetyPeak) : null;
 
   return (
     <>
@@ -126,15 +149,18 @@ export default async function LandingPage() {
                 {t.safetyBody}
               </p>
             </div>
-            <Blueprint as="figure" className="duotone" style={{ margin: 0 }}>
-              <Image
-                src="/assets/kontur.png"
-                alt={t.safetyPhotoAlt}
-                width={1500}
-                height={1000}
-                style={{ width: "100%", height: "auto", aspectRatio: "3 / 2", objectFit: "cover" }}
-              />
-            </Blueprint>
+            {safetyRoute ? (
+              <RouteMap
+                peak={SAFETY_PEAK.name}
+                points={safetyRoute.points}
+                distanceM={safetyRoute.distanceM}
+                gainM={safetyRoute.gainM}
+                trailhead={safetyRoute.trailhead}
+                lang={lang}
+              >
+                <Link href={`/tur/${SAFETY_PEAK.slug}`}>{t.safetyFigureLink}</Link>
+              </RouteMap>
+            ) : null}
           </section>
 
           {/* — 04 · Abonnement — */}

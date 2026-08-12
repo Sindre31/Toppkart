@@ -83,7 +83,10 @@ export interface LandingDict {
   safetyKicker: string;
   safetyHeading: string;
   safetyBody: string;
-  safetyPhotoAlt: string;
+  /** Lenka i figurteksten under kartet i seksjon 03. Erstatter `safetyPhotoAlt`,
+   *  som beskrev et fotografi siden aldri har vist — figuren er nå Kirketakets
+   *  rute, tegnet av `RouteMap`, som skriver sin egen alternative tekst. */
+  safetyFigureLink: string;
   /* — 04 · subscription — */
   planKicker: string;
   planHeading: string;
@@ -151,7 +154,7 @@ const LANDING: Translated<LandingDict> = {
     safetyHeading: "Skrevet for å komme hjem",
     safetyBody:
       "I snitt dør fem mennesker i snøskred i Norge hvert år — de fleste på topptur. Hver guide i Toppkart er derfor bygget rundt terrenget, ikke rundt bildene: bratthet, utløpssoner og trygge alternativer står først, pudderpratet sist.",
-    safetyPhotoAlt: "Toppturfoto — skiløper på vei opp",
+    safetyFigureLink: "Les turguiden til Kirketaket",
 
     planKicker: "04 · Abonnement",
     planHeading: "Hele kartet. Alle guidene.",
@@ -225,7 +228,7 @@ const LANDING: Translated<LandingDict> = {
     safetyHeading: "Written to get you home",
     safetyBody:
       "On average, five people die in avalanches in Norway every year — most of them ski touring. Every guide in Toppkart is therefore built around the terrain, not around the photos: steepness, runout zones and safer alternatives come first, the powder talk last.",
-    safetyPhotoAlt: "Ski touring photo — a skier on the way up",
+    safetyFigureLink: "Read the Kirketaket guide",
 
     planKicker: "04 · Subscription",
     planHeading: "The whole map. Every guide.",

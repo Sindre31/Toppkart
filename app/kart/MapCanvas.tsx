@@ -39,7 +39,34 @@ const MARKER_STROKE = "#f2f2f3";
 const ROUTE_ACCENT = "#416180"; // accent-700
 const ROUTE_ALT = "#8aa2b8"; // the peak's other routes, a step back
 
-const TILE_URL = "https://tile.openstreetmap.org/{z}/{x}/{y}.png";
+/** Kartverkets topografiske norgeskart, servert fra deres egen flis-cache.
+ *
+ *  Her lå OpenStreetMap fram til nå, fordi prototypen brukte det. Forskjellen
+ *  er ikke kosmetisk. Et toppturkart skal vise høydekurver, bre, myr og ur, og
+ *  det er nettopp det Kartverkets topografiske serie tegner og OSMs standardstil
+ *  ikke har — den er laget for veier og bebyggelse, ikke for terreng over
+ *  tregrensa. Rutelinja vår er dessuten regnet ut i Kartverkets egen
+ *  høydemodell, så kartet under streken og streken selv kommer nå fra samme
+ *  kilde.
+ *
+ *  Adressen er WMTS-en i `webmercator`-rutenettet, som er det samme rutenettet
+ *  Leaflet regner i, så flisene legger seg rett i rutenettet uten projeksjons-
+ *  arbeid. Rekkefølgen i stien er `{z}/{y}/{x}` — TileMatrix, TileRow, TileCol —
+ *  altså y foran x, motsatt av OSM. Bytt dem om, og kartet blir speilvendt om
+ *  diagonalen uten å feile på en eneste forespørsel.
+ *
+ *  Dekningen er Norge og bare Norge. Det er riktig for produktet — alle 90
+ *  turene ligger innenfor — men panorerer man ut av landet, blir det tomt der
+ *  OSM ville tegnet Sverige. Startutsnittet og `MAX_ZOOM` under holder oss
+ *  innenfor det tjenesten faktisk har.
+ *
+ *  Bruksvilkår: åpne data under Kartverkets lisens (CC BY 4.0), som krever at
+ *  opphavet står synlig. Det gjør det i `attribution` på `TileLayer` under. */
+const TILE_URL = "https://cache.kartverket.no/v1/wmts/1.0.0/topo/default/webmercator/{z}/{y}/{x}.png";
+/** Så langt cachen er tegnet. Nivå 19 svarer 400, ikke en tom flis, så dette er
+ *  en grense å holde seg innenfor og ikke en anbefaling. Leaflets egen standard
+ *  er tilfeldigvis den samme; den står her fordi den er Kartverkets. */
+const MAX_ZOOM = 18;
 /** Leaflets standard, og det `TileLayer` under kjører med. */
 const TILE_SIZE = 256;
 
@@ -374,7 +401,8 @@ export default function MapCanvas({
     <MapContainer bounds={NORWAY} zoomControl={false} style={{ height: "100%", width: "100%" }}>
       <TileLayer
         url={TILE_URL}
-        attribution="© OpenStreetMap contributors"
+        attribution="© Kartverket"
+        maxZoom={MAX_ZOOM}
         /* Ikke bygg rutenettet på nytt for hvert nivå flyturen passerer.
 
            Leaflet gjør det som standard: hver gang zoomen krysser et helt nivå

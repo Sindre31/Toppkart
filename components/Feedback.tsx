@@ -9,8 +9,8 @@ import { FEEDBACK_MAX_LENGTH, feedbackDict } from "@/lib/i18n/feedback";
 /** Floating «Gi tilbakemelding» button, bottom right, on every page but one.
  *
  *  `/kart` is excluded deliberately. Its map pane is fixed to the bottom-right
- *  corner, and Leaflet renders the OpenStreetMap attribution there — a credit
- *  the tile licence requires to stay visible. A button floating over it would
+ *  corner, and Leaflet renders the tile attribution there — «© Kartverket», a
+ *  credit the licence requires to stay visible. A button floating over it would
  *  cover the one thing on the page that is not ours to hide.
  *
  *  The email is passed down from the server layout rather than fetched here:
@@ -78,7 +78,15 @@ export function Feedback({ lang, email }: { lang: Lang; email: string | null }) 
         setState("idle");
         /* The text stays in the textarea on every failure. Someone has just
            written something; clearing it would be the worst possible response. */
-        setError(code === "too_long" ? t.errorTooLong : code === "empty" ? t.errorEmpty : t.errorUnsent);
+        setError(
+          code === "too_long"
+            ? t.errorTooLong
+            : code === "empty"
+              ? t.errorEmpty
+              : code === "rate_limited"
+                ? t.errorTooMany
+                : t.errorUnsent,
+        );
         return;
       }
       setState("done");

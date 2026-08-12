@@ -24,8 +24,13 @@ export function AvalanchePanel({ slug, lang }: { slug: string; lang: Lang }) {
   useEffect(() => {
     // Guard against a slow answer for a peak the reader has already left.
     let current = true;
-    setForecast(null);
 
+    /* Her sto det `setForecast(null)`, for å tømme forrige topps varsel før det
+       neste kom. Den jobben gjør `key={slug}` på kallstedet i `MapView` bedre:
+       React lager komponenten på nytt, og da *er* starttilstanden null. Å sette
+       den fra en effekt betyr at det gamle varselet rekker å bli tegnet under
+       den nye toppens navn — ett bilde, men det ene bildet sier feil
+       faregrad om riktig fjell. */
     const params = new URLSearchParams({ tur: slug, lang });
     fetch(`/api/skredvarsel?${params}`)
       .then((res) => (res.ok ? res.json() : null))

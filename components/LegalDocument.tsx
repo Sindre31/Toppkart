@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 import { Blueprint, SectionKicker } from "@/components/Blueprint";
 import { SiteFooter, SiteNav } from "@/components/SiteChrome";
 import { formatDate } from "@/lib/dates";

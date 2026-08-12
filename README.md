@@ -17,10 +17,14 @@ Norwegian; this README and the rest of `docs/` are in English for whoever mainta
   provisions a fresh Stripe account with the product, both prices, the portal configuration and
   the webhook endpoint, and prints the environment variables they produce.
 - **Resend** — transactional mail (receipts, "your trial is ending" notices) after a Stripe
-  checkout. Nothing to do with signing in: Google sends no mail, so auth needs no SMTP at all.
-  Optional — without the key those sends log and no-op.
-- **Leaflet + OpenStreetMap** — the full-screen map on `/kart`. See "Before launch" about moving
-  to a Norwegian topographic tile source.
+  checkout, and the operational alerts in `lib/alerts.ts` that go to `ADMIN_EMAILS` when a webhook
+  fails or completes a checkout it cannot attach to an account. Nothing to do with signing in:
+  Google sends no mail, so auth needs no SMTP at all. Optional — without the key those sends log
+  and no-op, which for the alerts means the log is the only place they appear.
+- **Leaflet + Kartverket** — the full-screen map on `/kart`, over Kartverket's topographic WMTS
+  (`cache.kartverket.no`, the `webmercator` grid, zoom 18 at the top). Open data under CC BY 4.0,
+  so «© Kartverket» stays visible in the corner. Coverage is Norway and only Norway, which is
+  right for the product and means the map is blank if you pan out of the country.
 - **Vercel** — hosting and deploys. See `docs/deploy.md`.
 
 ## Demo mode
@@ -54,8 +58,33 @@ server plus RLS in Postgres — see "Access model".
 npm install
 npm run dev        # http://localhost:3000, demo mode
 npm run typecheck  # tsc --noEmit
+npm run lint       # eslint
+npm test           # vitest run
 npm run build      # production build
 ```
+
+### Checks
+
+CI runs all four of those on every push and pull request, with no Supabase or Stripe keys set —
+which is deliberate, and is what proves a missing secret can never be the thing that breaks a
+deploy.
+
+The tests are pointed at one specific class of bug: **the pure functions that fail quietly.**
+`grantsAccess()` decides who may read a guide, `lib/stripe-mapping.ts` decides what a
+subscription row says, and `routeProfile()` decides where a line goes — and each of them returns
+a plausible wrong answer rather than throwing. Everything that talks to Supabase, Stripe or
+Resend is left alone on purpose: that code complains on its own when it breaks, and testing it
+would mean writing mocks that assert our own understanding of someone else's API. `periodEndFor`
+was once wrong because Stripe moved a field, and any mock written before that would have
+reproduced the mistake faithfully.
+
+The tour data gets the same treatment: `lib/tours.test.ts` re-checks the emitted TypeScript for
+the invariants a regeneration could break — every line ending on the summit it belongs to, every
+card vertical within 10 m of its route's ascent, every line stored as whole lat/lng/elevation
+triples. It is a tripwire on the pipeline's output, not a second opinion on the terrain. The
+real audit is the Python under `scripts/build-routes/`, which measures against Kartverket's
+terrain model and against mapped ground, and which cannot run in CI: it needs Geonorge and a few
+hundred megabytes of cached raster.
 
 To run against real services, copy `.env.example` to `.env.local` and fill in the values you have.
 The two modes are decided per integration, so a half-configured environment is fine: Supabase keys
@@ -66,18 +95,25 @@ without Stripe keys gives you real auth and a demo subscription.
 ```
 app/
   globals.css            The "Industry" design system — source of truth for every token
-  layout.tsx             Fonts, <SiteChrome>, metadata
+  layout.tsx             Fonts, <SiteChrome>, <Feedback>, metadata
   page.tsx               / — landing
   kart/                  /kart — full-screen Leaflet map, list panel, detail panel
+  turer/                 /turer — every tour, grouped by region. The indexable list
   tur/[slug]/            /tur/[slug] — tour guide, gated below the key figures
   logg-inn/              /logg-inn — Google sign-in
   betaling/              /betaling — start-the-trial checkout
   min-side/              /min-side — subscription, receipts, account
+  vilkar/, personvern/   Terms and privacy, both languages, from lib/i18n/legal.ts
+  admin/                 /admin/* — behind ADMIN_EMAILS, 404 for everyone else
   api/                   Route handlers, incl. api/stripe/webhook
+  robots.ts, sitemap.ts  Production indexes; preview deploys say Disallow: /
 components/
   Blueprint.tsx          <Blueprint> registration-cross frame, <SectionKicker>
   CapsText.tsx           Pulls back Barlow Condensed's over-wide uppercase Ø
   SiteChrome.tsx         <SiteNav>, <SiteFooter>
+  Feedback.tsx           The floating «Gi tilbakemelding» dialog
+  guide/                 Tour-page parts, incl. <RouteMap> — the route drawn from its
+                         own points, as inline SVG. Also used by the landing page
 lib/
   config.ts              PRICE, TRIAL_DAYS, SITE, GRADE_COLORS, env, is*Configured
   types.ts               Tour, TourGuide, Viewer, Subscription, Invoice
@@ -85,10 +121,16 @@ lib/
                          routeFor(), routeProfile()
   routes.ts              Generated ascent routes per tour — see scripts/build-routes/
   guides.ts              Editorial guide content — all 90 tours, generated
+  i18n/                  Every user-visible string, no/en. content.ts holds the guides
   access.ts              getViewer() / grantsAccess() — server-only access gate
   stripe.ts              Stripe client, null in demo mode
+  stripe-mapping.ts      Reading a Stripe object into a subscription row. Unit-tested
+  alerts.ts              Mails ADMIN_EMAILS when a webhook fails silently
+  rate-limit.ts          Fixed-window limiting, counted in Postgres
+  admin.ts               Who may open /admin/*. Fails closed
   demo-session.ts        Cookie-backed stand-ins for auth and subscription
   supabase/              Browser and server Supabase clients
+  *.test.ts              Unit tests, run by `npm test` — see "Checks" below
 supabase/
   schema.sql             Tables, policies, RLS
   seed.sql               The 90 tours and all 90 guides
@@ -104,10 +146,13 @@ docs/
 |---|---|---|
 | `/` | Landing page: hero, data plate, what a guide contains, subscription | `Landing.dc.html` |
 | `/kart` | The map — tour list, grade/region filters, detail panel with the route picker and the locked block. `?tur=<slug>` opens a tour, `&rute=<id>` a specific route | `kart.html` |
-| `/tur/[slug]` | Tour guide: stats, elevation profile, ascent/descent, avalanche terrain | `Turguide Kirketaket.dc.html` |
+| `/turer` | Every tour, grouped by region. Plain links, no map — the page a crawler can read | — |
+| `/tur/[slug]` | Tour guide: stats, route map, elevation profile, ascent/descent, avalanche terrain | `Turguide Kirketaket.dc.html` |
 | `/logg-inn` | Sign in with Google | `Logg inn.dc.html` |
 | `/betaling` | Start the trial — sign-in first, then 0 kr today, card required | `Betaling.dc.html` |
 | `/min-side` | Subscription status, receipts, account e-mail | `Min side.dc.html` |
+| `/vilkar`, `/personvern` | Terms and privacy. Copy lives in `lib/i18n/legal.ts`; bump `LEGAL_UPDATED` when you edit a paragraph | — |
+| `/admin/tilbakemeldinger` | What people wrote in the feedback dialog. `ADMIN_EMAILS` only; 404 for everyone else | — |
 
 Every «Prøv gratis» / «Start gratis prøveperiode» call to action anywhere in the app goes to
 `/betaling`.
@@ -139,6 +184,24 @@ must never reach the client for a viewer without access. Independently, RLS poli
 mistake in a route handler still cannot read them. Treat both as required — the server check is
 the product behaviour, RLS is the backstop.
 
+`grantsAccess()` is mirrored in SQL as `public.tk_has_active_subscription()`, and the two must
+say the same thing. `lib/access.test.ts` pins the TypeScript side case by case, written so it can
+be read against that function line by line — change one and the test is where you find out you
+have to change the other.
+
+### The one endpoint that is open on purpose
+
+`/api/tilbakemelding` takes a message without asking anyone to sign in, because the people most
+likely to have something useful to say are the ones who have not signed up. That decision is what
+makes `lib/rate-limit.ts` necessary: an open write endpoint is one loop away from a full table,
+and the honeypot in the route only catches a form filler, never someone repeating the request
+they saw in the network tab. The limit is ten an hour per caller, counted by
+`public.tk_rate_limit_hit()` in Postgres — in the app it would be one counter per lambda, which
+is not a limit — and keyed by a salted hash of the address, so the table can say that *someone*
+wrote twice and never who. It fails open: turning away a reader with something to say is the
+worse error here, which is the opposite of how `lib/admin.ts` is built and for the opposite
+reason.
+
 ## Before launch
 
 The design handoff flags this work as unfinished. None of it is a code defect; all of it is
@@ -151,11 +214,12 @@ content and data quality that has to be settled before the site is sold to anyon
   pipeline and what it verifies. What is still missing is ground truth: these lines show where a
   route goes, but nobody has skied them with a GPS. Surveyed GPX per route, served from Supabase
   Storage, is still the production plan.
-- **Only five peaks have their alternative routes entered.** The data model takes any number of
-  routes per tour and the map renders a picker when there is more than one, but `ALTERNATES` in
-  `scripts/build-routes/build_corridors.py` currently covers Galdhøpiggen, Tromsdalstinden,
-  Rondslottet, Snøhetta and Gaustatoppen. Other peaks in the list have well-known second routes
-  that nobody has researched yet — the gap is content, not capability.
+- **Nine peaks of ninety have their alternative routes entered.** The data model takes any number
+  of routes per tour and the map renders a picker when there is more than one, but only
+  Galdhøpiggen, Tromsdalstinden, Rondslottet, Snøhetta, Gaustatoppen, Slogen, Fanaråken, Bitihorn
+  and Høgevarde have a second line. The other eighty-one have exactly one route each, and many of
+  them have a well-known second way up that nobody has researched. The gap is content, not
+  capability.
 - **Three summit heights were settled against DTM1, and still disagree with the published
   figures.** Rørnestinden (1041 → **1030**), Rombakstøtta (1243 → **1231**) and Himmeltindan
   (962 → **956**) now carry Kartverket's 1 m terrain model, the same source as the other 21
@@ -226,7 +290,9 @@ content and data quality that has to be settled before the site is sold to anyon
   ridge holds a 51 m notch over 27.3 m of ground; it was checked point by point at 2.3 m spacing
   before it went in the copy, because a drop that abrupt is usually a grid artefact and this one
   is not.
-- **Every treeline was a sample, and all 78 have been re-measured.** `guide_facts.py` derived the
+- **Every treeline was a sample, and all 78 that existed then have been re-measured.** The 12
+  tours added since were written against the fixed `treeline_scan` from the start, so the numbers
+  below describe the repair, not the current set. `guide_facts.py` derived the
   treeline from a fourteen-point terrain-class table, so `last_forest_m` was the highest of
   fourteen points that *happened* to be forest — a lower bound, never anything else, and wrong in
   the same direction every time. `treeline_scan` now walks every vertex, stopping only after 600 m
@@ -252,14 +318,24 @@ content and data quality that has to be settled before the site is sold to anyon
 - **The guide text has not been read by anyone who has skied these tours.** Every number in
   `lib/guides.ts` traces to Kartverket's terrain model, the route research or a cited source, and
   every number is matched mechanically by `check_guides.py` — which reads nynorsk verticals as well
-  as bokmål ones, and comes back clean on all 78 guides.
-  On top of that, **all 78 guides have been through an adversarial second read**
-  whose only job is to break it — the 24 of the first round, the 15 of the second, the 7 of the
-  Oslo round, the 22 of the Sunnmøre and Vestland rounds, the 7 of the Trondheim round, and
-  finally Kjerag, Møysalen and Sæbyggjenuten. That last read moved a card, rewrote half a guide,
-  and found the pipeline bug in the next bullet. That last read was the first one done by someone other than the pass that wrote the
-  guides, and it found the worst class of error yet: **two routed lines that crossed water the
-  guide said they went around.** Kråkfjellet and Rensfjellet ran 1.9 km out on Håen — a reservoir
+  as bokmål ones, and comes back clean on all 90 guides.
+  On top of that, **82 of the 90 have been through an independent adversarial read** whose only
+  job is to break it — the 24 of the first round, the 15 of the second, the 7 of the Oslo round,
+  the 22 of the Sunnmøre and Vestland rounds, the 7 of the Trondheim round, Kjerag, Møysalen and
+  Sæbyggjenuten, and the 4 of the popularity round.
+
+  **The eight of the alpine-resort round — Hemsedal, Trysil, Kvitfjell, Hafjell and Geilo — have
+  not had one.** They were read adversarially by the pass that wrote them, which caught three
+  things (Nibbi's unmapped waterfall, Prestholtskarvet's two starts, Slettind's road), and that
+  is the weaker form of the check by exactly the margin this list keeps demonstrating: every time
+  a round has been re-read by someone other than its author, the second reader has found
+  something the first did not. Those eight are the open end of that pattern. See "The eight
+  guides" in `scripts/build-routes/README.md` for what the self-read did cover.
+
+  The read of Kjerag, Møysalen and Sæbyggjenuten moved a card, rewrote half a guide,
+  and found the pipeline bug two bullets up. It was the first read done by someone other than the
+  pass that wrote the guides, and it found the worst class of error yet: **two routed lines that
+  crossed water the guide said they went around.** Kråkfjellet and Rensfjellet ran 1.9 km out on Håen — a reservoir
   drawn down every winter, and the one hazard their source names — while the copy said «følg
   strandlinja på nordsida», and Okla crossed Mjølkskåla while the copy said the lake stayed
   «under deg». All three of those corridors were re-pinned onto the ground the sources describe (the
@@ -281,13 +357,14 @@ content and data quality that has to be settled before the site is sold to anyon
   experience of the mountain. It still needs a local reader per tour before print. See "The 22,
   read adversarially", "The seven, read adversarially" and "The other four, read as closely" in
   `scripts/build-routes/README.md` for the method and the findings.
-- **`assets/kontur.png` is a placeholder.** It is a generated contour-map graphic standing in for
-  real ski-touring photography. `assets/photo.jpg` is an unrelated reference photo from the design
-  system and should also go. The contour graphic is now the only invented terrain left on a tour
-  page: it carries a "1439 moh" label baked into the artwork and renders identically on all 78
-  tours, so on 77 of them it states a height that is not that peak's. The caption says it is
-  schematic, but it sits beside real figures — replace it before print.
-- **Map tiles should move to a Norwegian topographic source.** OpenStreetMap is what the prototype
-  used; Kartverket's WMTS or a MapTiler style with Norwegian topography is the intended
-  production source. Keep the OpenStreetMap attribution visible for exactly as long as OSM tiles
-  are being served.
+- **`assets/photo.jpg` is still a placeholder.** It is an unrelated reference photo from the
+  design system, and it is now used for one thing only: the Open Graph image in `lib/seo.ts`, the
+  picture that appears when someone shares a link. Replace it with something that is actually of
+  a Norwegian ski tour before the site is shared anywhere that matters.
+
+  `assets/kontur.png` is **gone**, and with it the last invented terrain on the site. It was a
+  generated contour graphic with «1439 moh» baked into the artwork — 1439 is Kirketaket, because
+  the prototype drew Kirketaket. The tour pages stopped using it when `<RouteMap>` landed and
+  started drawing each peak's own line; the landing page kept it until it was replaced by that
+  same component, drawing Kirketaket's real normal route. The number is true again, on the one
+  mountain it was always about.

@@ -71,11 +71,13 @@ site's URL.
 
 1. Create a project at <https://supabase.com/dashboard>. Pick a region close to your users
    (Frankfurt or Stockholm for Norwegian traffic).
-2. Open the **SQL Editor** and run `supabase/schema.sql`. This creates the `tk_tours`, `tk_profiles`
-   and `tk_subscriptions` tables, enables row-level security and installs the policies that keep
-   the gated tour columns away from non-subscribers.
-3. Run `supabase/seed.sql` in the same editor. This loads the 24 tours and the Kirketaket guide
-   content. Running it against a database without the schema will fail, so do not reorder these.
+2. Open the **SQL Editor** and run `supabase/schema.sql`. This creates the `tk_tours`,
+   `tk_profiles`, `tk_subscriptions`, `tk_invoices`, `tk_feedback` and `tk_rate_limit` tables,
+   enables row-level security, and installs the policies that keep the gated tour columns away
+   from non-subscribers. The file is idempotent — re-run it after any change to it, which is also
+   how an existing deployment picks up new tables and functions.
+3. Run `supabase/seed.sql` in the same editor. This loads all 90 tours and their guide content.
+   Running it against a database without the schema will fail, so do not reorder these.
 4. **Authentication → URL Configuration**: set **Site URL** to your `NEXT_PUBLIC_SITE_URL`, and
    add the sign-in callback to **Redirect URLs**:
 
@@ -322,6 +324,19 @@ Non-admins get the 404 rather than a «forbidden» page, so a mistyped URL and a
 indistinguishable. Reading the table needs `SUPABASE_SERVICE_ROLE_KEY` as well — `tk_feedback`
 has row-level security on with no policies at all, so no other role can see it whoever is signed
 in.
+
+### The same list gets the alerts
+
+`ADMIN_EMAILS` is also where `lib/alerts.ts` sends operational mail, and that is the more
+important of its two jobs. There is one failure in this system that is both expensive and
+invisible: the Stripe webhook completes a checkout it cannot match to an account. Stripe has the
+card and is running the trial; the app has no subscription row and shows the reader the paywall.
+It answers 200 deliberately — retrying cannot change the outcome — so without an alert the only
+trace is a line in the Vercel log.
+
+Set `ADMIN_EMAILS` **and** `RESEND_API_KEY` together, then. With the list unset, or Resend
+unconfigured, those alerts are written to the log and nowhere else. Repeats of the same alert are
+throttled to one per ten minutes per instance, so a failing dependency does not fill the inbox.
 
 ---
 

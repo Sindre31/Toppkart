@@ -28,7 +28,7 @@ import { pick } from "./index";
 
 /** Date the wording last changed. Bump it whenever you edit a paragraph — both
  *  pages print it, and a stale date on a changed policy is worse than none. */
-export const LEGAL_UPDATED = "2026-08-04";
+export const LEGAL_UPDATED = "2026-08-12";
 
 export interface LegalSection {
   /** Rendered through `SectionKicker`, numbered by the page. */
@@ -168,6 +168,7 @@ const LEGAL_TEXT: Translated<LegalDict> = {
             "Fra abonnementet: status, hvilken plan du har, når inneværende periode løper ut, når prøveperioden slutter, og kunde- og abonnementsnummeret ditt hos Stripe.",
             "Om betalingskortet lagrer vi korttype, de fire siste sifrene og utløpsmåned — nok til at du kjenner igjen kortet på Min side. Vi ser aldri det fulle kortnummeret. Kortet oppgis på Stripes egne sider, og opplysningene passerer aldri gjennom Toppkart.",
             "Kvitteringer: beløp, valuta, status og lenke til fakturaen hos Stripe, speilet hos oss så Min side kan vise historikken.",
+            "Skriver du i tilbakemeldingsboksen: teksten du sendte, hvilken side du sto på, og adressa di dersom du var innlogget. Sammen med den lagrer vi en teller for å hindre at noen sender tusen meldinger på rad. Telleren står på en kryptografisk omskriving av IP-adressen din — en enveisverdi vi ikke kan regne tilbake til en adresse — og den slettes etter et døgn. Selve IP-adressen lagres ikke.",
             "Vi lagrer ingen opplysninger om hvilke turer du ser på, og ingen posisjonsdata. Appen ber aldri om posisjonen din.",
           ],
         },
@@ -198,8 +199,8 @@ const LEGAL_TEXT: Translated<LegalDict> = {
         {
           title: "Hvor lenge vi lagrer",
           body: [
-            "Konto og abonnementsdata beholdes så lenge du har konto hos oss. Sletter du kontoen, fjernes profilen og abonnementsdataene.",
-            "Fakturaer og annet regnskapsmateriale oppbevares i fem år etter regnskapsårets slutt, slik bokføringsloven krever. Det gjelder også om du sletter kontoen.",
+            `Konto og abonnementsdata beholdes så lenge du har konto hos oss. Det finnes ingen slett-knapp på Min side; be om sletting ved å skrive til ${CONTACT}, så fjerner vi profilen, abonnementsdataene og tilbakemeldingene dine.`,
+            "Fakturaer og annet regnskapsmateriale oppbevares i fem år etter regnskapsårets slutt, slik bokføringsloven krever. Det gjelder også etter at kontoen er slettet.",
           ],
         },
         {
@@ -332,6 +333,7 @@ const LEGAL_TEXT: Translated<LegalDict> = {
             "From the subscription: its status, which plan you are on, when the current period ends, when the trial ends, and your customer and subscription identifiers at Stripe.",
             "About the payment card we store the card type, the last four digits and the expiry month — enough for you to recognise the card on My account. We never see the full card number. The card is entered on Stripe's own pages and the details never pass through Toppkart.",
             "Receipts: amount, currency, status and a link to the invoice at Stripe, mirrored on our side so My account can show the history.",
+            "If you write in the feedback box: the text you sent, the page you were on, and your address if you were signed in. Alongside it we keep a counter, so that nobody can send a thousand messages in a row. The counter is kept against a cryptographic rewriting of your IP address — a one-way value we cannot turn back into an address — and it is deleted after a day. The IP address itself is not stored.",
             "We store nothing about which tours you look at, and no location data. The app never asks for your position.",
           ],
         },
@@ -362,8 +364,8 @@ const LEGAL_TEXT: Translated<LegalDict> = {
         {
           title: "How long we keep it",
           body: [
-            "Account and subscription data are kept for as long as you have an account with us. Delete the account and the profile and subscription data go with it.",
-            "Invoices and other accounting material are kept for five years after the end of the financial year, as the Bookkeeping Act requires. That applies even if you delete your account.",
+            `Account and subscription data are kept for as long as you have an account with us. There is no delete button on My account; ask for deletion by writing to ${CONTACT}, and we will remove your profile, your subscription data and your feedback.`,
+            "Invoices and other accounting material are kept for five years after the end of the financial year, as the Bookkeeping Act requires. That applies after the account has been deleted too.",
           ],
         },
         {
