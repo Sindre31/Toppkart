@@ -113,7 +113,8 @@ components/
   SiteChrome.tsx         <SiteNav>, <SiteFooter>
   Feedback.tsx           The floating «Gi tilbakemelding» dialog
   guide/                 Tour-page parts, incl. <RouteMap> — the route drawn from its
-                         own points, as inline SVG. Also used by the landing page
+                         own points, as inline SVG over Kartverket's topographic
+                         tiles. Colour on a tour page, greyscale on the landing page
 lib/
   config.ts              PRICE, TRIAL_DAYS, SITE, GRADE_COLORS, env, is*Configured
   types.ts               Tour, TourGuide, Viewer, Subscription, Invoice
@@ -188,6 +189,29 @@ the product behaviour, RLS is the backstop.
 say the same thing. `lib/access.test.ts` pins the TypeScript side case by case, written so it can
 be read against that function line by line — change one and the test is where you find out you
 have to change the other.
+
+### The route figure
+
+`<RouteMap>` draws the tour's own line over Kartverket's topographic tiles — the same map
+`/kart` renders, in the same grid, and the line is solved in the same terrain model those tiles
+are drawn from, so the contours under the line are the contours it followed.
+
+It went through three states, and the middle one is the interesting mistake. First a shared
+placeholder image, which was simply false. Then the route's real points in an empty frame over a
+drawn grid, which was true and still not much: the shape of a line and nothing about the ground
+it crosses. A route with no mountain around it is a graph.
+
+Putting a real map underneath raises the stakes on the projection. The frame version used
+equirectangular about the route's midpoint, which is fine when nothing has to line up with
+anything. Now the line has to sit in the right place on a picture someone else drew, so it is
+computed in spherical Mercator — exactly what the WMTS and Leaflet use. `RouteMap.test.ts` pins
+that against independently computed values and checks all 90 routes fit inside their figure,
+because a wrong projection throws nothing and renders beautifully.
+
+Zoom is an integer, so padding is expensive: every pixel of margin is half the scale the moment a
+route stops fitting. The north arrow and scale bar are therefore placed by counting route
+vertices per corner and taking the two quietest, rather than by widening the margin until the
+summit marker stops colliding with them.
 
 ### Deleting an account
 

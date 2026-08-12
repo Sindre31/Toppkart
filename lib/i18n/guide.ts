@@ -30,6 +30,9 @@ export interface GuideDict {
   routeMapAria: (peak: string, distance: string, gain: number) => string;
   routeMapCaption: (trailhead: string, distance: string, gain: number) => string;
   routeMapCaptionLink: string;
+  /** Kartverkets lisens (CC BY 4.0) krever synlig kreditering på flisene
+   *  figuren tegner over. Står i figurteksten uansett om resten gjør det. */
+  routeMapCredit: string;
   /* — guide sections — */
   ascentTitle: string;
   descentTitle: string;
@@ -75,6 +78,7 @@ const GUIDE: Translated<GuideDict> = {
     routeMapCaption: (trailhead, distance, gain) =>
       `Ruta opp fra ${trailhead} — ${distance}, ${gain} høydemeter. Linja er beregnet i Kartverkets terrengmodell, ikke et innspilt spor.`,
     routeMapCaptionLink: "Se turen i kartet",
+    routeMapCredit: "Kartgrunnlag © Kartverket.",
     ascentTitle: "Oppstigning",
     descentTitle: "Nedkjøring",
     avalancheTitle: "Skredterreng",
@@ -114,6 +118,7 @@ const GUIDE: Translated<GuideDict> = {
     routeMapCaption: (trailhead, distance, gain) =>
       `The ascent from ${trailhead} — ${distance}, ${gain} metres of ascent. The line is solved over Kartverket's terrain model, not a recorded track.`,
     routeMapCaptionLink: "See the tour on the map",
+    routeMapCredit: "Map data © Kartverket.",
     ascentTitle: "Ascent",
     descentTitle: "Descent",
     avalancheTitle: "Avalanche terrain",

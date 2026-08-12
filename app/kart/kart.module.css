@@ -296,7 +296,17 @@
 }
 
 /* — leaflet overrides — */
-.map :global(.leaflet-container) { font-family: var(--font-body); }
+
+/* Kartverket tegner Norge og ikke noe annet, så flisene tar slutt ved
+   riksgrensa og ved kysten. Under dem lå Leaflets egen bakgrunn, en gråblå
+   flate (#ddd) som ga Sverige og Nordsjøen hver sin grå tone og fikk kartet til
+   å se ut som om resten holdt på å laste. Hvitt sier det ærligere: her har vi
+   ikke noe. Det er også den fargen Kartverkets egne fliser har i havet, så
+   overgangen ved kysten går fra å være en kant til å ikke være der. */
+.map :global(.leaflet-container) {
+  font-family: var(--font-body);
+  background: #fff;
+}
 .map :global(.leaflet-tooltip) {
   border-radius: 0;
   border: 1px solid var(--color-divider);
