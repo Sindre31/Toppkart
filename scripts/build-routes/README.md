@@ -2351,6 +2351,102 @@ in the corridor, 68 of them `piste:type`, a mapped trail reaches the trailhead a
 Geitgaljen came back `UNCHECKED` — Overpass would not answer for it — which is the
 right answer and the one the old pattern could not give.
 
+## The eight, read adversarially
+
+The alpine-resort round was written and checked by the same pass. That gap is
+closed here, run the way the Trondheim, Vestland and popularity rounds were:
+every band and step re-derived from the shipped line with the pipeline's own
+definition but an independent implementation, every flank figure re-taken from
+Kartverket's **point** API rather than the raster the sweeps used, the compass
+claims re-derived as bearings, and the two languages compared number by number.
+`adversarial_probe.py` is the tool; it prints measurements and knows nothing
+about what the guides say.
+
+**It found one thing, and the thing is not about these eight.** The figures in
+these guides were right when they were written and are not right now, because
+the line moved underneath them.
+
+### The re-route in #62 left the prose behind
+
+«Kontosida og forsida tåler en telefon, og ruteren kan se stien» taught the
+router to follow mapped trails. That moved twenty-odd lines. Some guides were
+re-derived against the new geometry and some were not, and nothing reported the
+ones that were not.
+
+The scale, measured against the lines the app currently ships:
+
+- **27 opening figures** — the distance and the climb in the first sentence of a
+  guide — disagreed with the route they describe. Molden and Melshornet were out
+  by about 300 metres, Besshø's climb by 23. Every one of them matched the value
+  the line had before #62 exactly, which is what identifies the cause rather
+  than guessing at it.
+- **Band and step figures** in five of the eight: Prestholtskarvet, Kyrkjebønosi,
+  Nibbi, Slettind and Ulvsjøberget.
+
+**Prestholtskarvet had drifted furthest.** Its whole band table was the old
+line's — 22,0° from 1500 to 1600 m over 225 metres of ground, where the line now
+gives 17,6° over 315 — and its steepest step, «25,2 grader mellom 1514 og 1535»,
+measures 19,7° on the line that is there now. The real steepest step moved down
+the mountain, to 24,8° between 1323 and 1344. The guide had also started
+contradicting itself: the intro said the 1200–1300 band is 1,3° over 5130 m and
+the ascent said 1,2° over 5221, which is the same band twice, because the intro
+had been updated and the ascent had not.
+
+**Nibbi said the wrong band was steepest.** «Bandet frå 1300 til 1400 moh er det
+brattaste på turen med 20,4 grader» — but that band measures 20,8°, and the
+1200–1300 band measures 21,4°, which the guide's own intro already said. Two
+sentences in one guide, disagreeing about which part of the mountain is steepest.
+
+**Slettind is the one that looks like nothing.** It quoted 16,1° for the
+1300–1400 band and 16,1° for the 1400–1500 band. The second is correct. The
+first is the old line's figure, and it survived a reading because it happened to
+round to the same number as its neighbour.
+
+All of the above is corrected against the shipped line, in both languages.
+
+### The check could not see it
+
+`check_guides.py` accepts a km figure if it lands within 150 m of **any** value
+in the facts or the notes. That tolerance is there for a reason — «1,4 km
+eksponert rygg» is a sourced distance that is not the route's length — but with
+several hundred numbers in scope, the set is dense enough that almost any
+plausible figure is within 150 m of something. The route's own length was, in
+practice, unchecked.
+
+The fix is not a tighter tolerance on the same test. It is a different test,
+tied to the one value the figure is a measurement of, and it lives in
+`lib/guides.test.ts` so it runs in CI rather than in a script somebody has to
+remember to run: the distance and the climb stated in each intro must match the
+route the app draws, and the two languages must state the same numbers.
+
+It is also visible to readers now. The figure on a tour page prints the line's
+real distance in its caption, directly under prose that used to state a
+different one.
+
+### Confirmed rather than corrected
+
+Slettind's flanks reproduce on the point API within a few tenths — west 23,9°
+average out to a kilometre against the guide's 23,9, north 11,1 against 11,0,
+south-west 23,7 against 23,6 — and its 22,5° step between 1527 and 1546 m is
+exact. Nibbi's 21,4° steepest band over 224 metres of ground is exact once
+measured with the pipeline's definition rather than a plausible substitute for
+it. Ustetind, Bånsæterkampen and Nevelfjell came through with nothing to change.
+
+Two of the round's compass claims were re-derived and hold: Slettind's route
+name says the north-west flank, and the line climbs on a bearing of 138–142,
+which is that flank; Ustetind's card says north, and the line climbs on 154.
+
+### Still open
+
+The same scan flags **15 further band claims outside these eight** — Okla,
+Folarskardnuten, Grafjell, Høgevarde, Kvamshesten, Kvitegga, Melshornet, Ranten,
+Storhornet, Torvløysa, Vassfjellet, Ytstevasshornet, Glitregga. They are not
+corrected here. Several look like the extractor pairing a ground figure with an
+angle from a neighbouring clause rather than a real defect, and telling those
+apart takes the same sentence-by-sentence reading these eight got. Fixing them
+by pattern is exactly what turned Grafjell's lake elevation into a treeline the
+last time. They are the next round's work.
+
 ## Network
 
 Everything is public and unauthenticated:
