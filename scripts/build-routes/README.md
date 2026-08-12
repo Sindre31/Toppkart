@@ -2162,12 +2162,40 @@ to 1092.4 m against a published 1078, which is the Storehorn case and no
 obstacle.
 
 **What does not resolve is the last two kilometres.** Ullstinden stands behind a
-pass, and the west wall of that pass measures **41 to 52 degrees over 60 m of
-ground at every latitude it was probed** — 47° at 69.790, 52° at 69.792, 41° at
-69.796, 44° at 69.798. The only way round it is over the shoulder of Stortinden
-at 1038.7 m and down its north-east step, which measures 40° over 160 m
-(1012 → 878). Four corridor variants were routed. All four give back 192 to 345
-metres of height, and all four carry a steepest 30 m step of 35 to 39 degrees.
+pass, and the wall on the near side of it was swept along its whole length — 21
+latitudes from 69.7860 to 69.8060, eight points across at each. The steepest
+gradient reads 31 to 54 degrees on every one of them from 69.7890 north to
+69.8060: 53.8° at 69.7910, 53.5 at 69.7920, 53.8 at 69.7930, 51.1 at 69.7990,
+46.7 at 69.8000. Four corridor variants were routed across it. All four give back
+192 to 345 metres of height, and all four carry a steepest 30 m step of 35 to 39
+degrees.
+
+Three latitudes read under 27°, and they are the trap. At 69.7860, 69.7870 and
+69.7880 the sweep says 21.4, 21.7 and 26.1 degrees — but those three do not cross
+the pass at all: they go over Stortinden. And the gentlest of them does not
+survive being measured properly. Sampled every 119 m the traverse east off
+Stortinden's north shoulder reads 26.1°; sampled every 22 m the same ground reads
+980, 987, 989, 996, 992, 983, 978, 980, 959, 947, 933, 916 m — a **44.3° step**
+between 980 and 959, and another 44.3° between 878 and 854 on the way down to the
+saddle. The coarse spacing was averaging the wall away. That is the Vassfjellet
+lesson pointing the other direction, and it is why the sweep was re-run before
+anything was drawn from it.
+
+Everything *below* the edge is exactly what the sources describe: from upper
+Hestedalen to the shoulder the steepest step is 25.5° over 40 m, and the line
+from the car park is even the whole 4.5 km to the plateau rim at 755 m. Fri Flyt's
+«bratteste punkt 20–25 grader» is true right up to the point where the mountain
+stops being reachable.
+
+**And Stallvika, the obvious alternative, has no road.** The bay on the Ullsfjord
+side sits below the one gentle flank Ullstinden has — from Stallvikskaret at
+457.6 m the climb to the summit is 458, 501, 549, 614, 687, 773, 859, 906, 979,
+1056, 1092 m over 1305 metres, monotonic, without giving back a metre. But in a
+box spanning 19.560–19.700 E and 69.780–69.840 N, OpenStreetMap has no `highway`
+of any class nearer the bay than a path 2845 m away, no `track` within 3469 m and
+no mapped parking at all. The line up from the shore is steeper than the tour it
+would replace, too: 458 m of climbing in 942, with a 45.6° step between 114 and
+210 m. The mountain's gentle side faces a fjord nobody drives to.
 
 Both sources say something else. The ski description gives the steepest point as
 **20–25 degrees** and calls the mountain «et flott mål for nyfrelste toppturister,

@@ -1092,5 +1092,32 @@
    "figure": "Nord: 41,1° i brattaste 60 m-vindauge mellom 940 og 1000 m ut (rastersveipet: 41,7° mellom 930 og 990). Aust: 26,1° mellom 60 og 120 m (sveipet: 27,0° same stad). Begge reproduserer.",
    "how": "Kartverkets punkt-API (hoydedata/v1/punkt) langs radialen, ikkje DTM-rasteret `flank_probe.py` les."
   }
+ ],
+ "ullstinden": [
+  {
+   "what": "Vestveggen i skaret som skil Snarbyeidet-platået frå Ullstinden — heile lengda",
+   "figure": "Prøvd på 21 breiddegrader frå 69.7860 til 69.8060, åtte punkt aust-vest på kvar (119 m mellom punkta). Brattaste gradient per breiddegrad: 21,4° på 69.7860, 21,7 på 69.7870, 26,1 på 69.7880, 31,5 på 69.7890, 39,4 på 69.7900, 53,8 på 69.7910, 53,5 på 69.7920, 53,8 på 69.7930, 45,9 på 69.7940, 44,4 på 69.7950, 43,6 på 69.7960, 45,4 på 69.7970, 42,8 på 69.7980, 51,1 på 69.7990, 46,7 på 69.8000, 44,7 på 69.8010, 30,9 på 69.8020, 36,3 på 69.8030, 35,4 på 69.8040, 34,6 på 69.8050 og 31,0 på 69.8060. Dei tre breiddegradene som les under 27° er dei tre der ein ikkje kryssar skaret i det heile, men går over sjølve Stortinden.",
+   "how": "Kartverkets punkt-API (hoydedata/v1/punkt), 168 punkt."
+  },
+  {
+   "what": "Den gjennomgangen som såg slak ut, prøvd på nytt med finare steg",
+   "figure": "Traversen aust frå skuldra på Stortinden las 26,1° med 119 m mellom prøvepunkta. Med 22 m mellom dei les same strekninga 980, 987, 989, 996, 992, 983, 978, 980, 959, 947, 933, 916 moh — eit steg på **44,3°** mellom 980 og 959. Vidare mot skaret vest for Ullstinden, med 25 m mellom punkta: 916, 898, 878, 854, ... — endå eit steg på 44,3° mellom 878 og 854. Grovmålinga jamna veggen ut; det er same oppløysingsfella som Vassfjellet, berre den andre vegen.",
+   "how": "Punkt-API-et langs to strekningar, 22 og 25 m mellom prøvepunkta."
+  },
+  {
+   "what": "Oppstigninga til platået, som kjeldene skildrar rett",
+   "figure": "Frå øvre Hestedalen (657 moh) til nordskuldra på Stortinden (980) er brattaste steg 25,5° over 40 m grunn. Frå parkeringa til platåkanten på 755 moh, 4,5 km ut, er linja jamn heile vegen. Fri Flyts «bratteste punkt 20-25 grader» stemmer for alt fram til kanten.",
+   "how": "Punkt-API-et, 40 m mellom prøvepunkta."
+  },
+  {
+   "what": "Stallvika som alternativt startpunkt — vegtilkomst",
+   "figure": "Ingen veg. I ei rute på 19.560–19.700 aust og 69.780–69.840 nord finst det ingen `highway` av nokon klasse nærare Stallvika enn ein sti 2845 m unna; næraste `track` er 3469 m og næraste kartlagde parkering finst ikkje i ruta i det heile. Sjølve linja opp derfrå er dessutan brattare enn ruta frå Snarbyeidet: frå fjøra til Stallvikskaret stig ho 458 m på 942 m med eit steg på 45,6° mellom 114 og 210 moh.",
+   "how": "OSM sitt map-API (api.openstreetmap.org/api/0.6/map) over ruta, og punkt-API-et langs linja."
+  },
+  {
+   "what": "Ullstinden frå skaret, som er den slake sida",
+   "figure": "Frå Stallvikskaret (457,6 moh) til toppen: 458, 501, 549, 614, 687, 773, 859, 906, 979, 1056, 1092 moh over 1305 m — monotont, utan eit einaste tap av høgde, 26° i snitt. Fjellet har ei slak side; ho vender mot nordvest, og det står ingen veg på den sida.",
+   "how": "Punkt-API-et, 130 m mellom prøvepunkta."
+  }
  ]
 }
