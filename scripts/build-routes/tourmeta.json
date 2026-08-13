@@ -846,6 +846,28 @@
   "season": "feb–mai",
   "hasGuide": true
  },
+ "skrott": {
+  "name": "Skrott",
+  "region": "Kvamskogen",
+  "summitM": 1320,
+  "verticalM": 1070,
+  "duration": "4–6 t",
+  "grade": 3,
+  "aspect": "S",
+  "season": "jan–apr",
+  "hasGuide": false
+ },
+ "sata": {
+  "name": "Såta",
+  "region": "Kvamskogen",
+  "summitM": 1260,
+  "verticalM": 900,
+  "duration": "4–6 t",
+  "grade": 3,
+  "aspect": "SV",
+  "season": "jan–apr",
+  "hasGuide": false
+ },
  "gullfjellstoppen": {
   "name": "Gullfjellstoppen",
   "region": "Bergen",
@@ -854,6 +876,17 @@
   "duration": "5–7 t",
   "grade": 2,
   "aspect": "SV",
+  "season": "jan–apr",
+  "hasGuide": false
+ },
+ "tveitakvitingen": {
+  "name": "Tveitakvitingen",
+  "region": "Kvamskogen",
+  "summitM": 1299,
+  "verticalM": 1000,
+  "duration": "5–7 t",
+  "grade": 3,
+  "aspect": "NØ",
   "season": "jan–apr",
   "hasGuide": false
  },

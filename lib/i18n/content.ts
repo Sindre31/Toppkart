@@ -220,6 +220,12 @@ export const TOUR_TEASER_EN: Record<string, string> = {
     "680 m of climbing from Sildegjerdet on rv 52 up the stream valley — Hemsedal's own classic, known simply as «1609».",
   gullfjellstoppen:
     "839 metres of ascent from the road end at Osavatnet, past Redningshytta and up Middagsdalen to the highest point in Bergen.",
+  sata:
+    "895 metres of ascent from the innermost car park at Eikedalen ski centre: a summer road, a flat approach into Skeiskvanndalen, and a steep flank into the notch north of the summit the register also calls Iendefjell.",
+  skrott:
+    "1068 metres of ascent from the cluster of summer farms in Fitjadalen: a footbridge over the Kjølo, a steep wooded hillside to Håsete, the ski hut at 1110 metres and the notch between Glynt and the summit.",
+  tveitakvitingen:
+    "995 metres of ascent over 8.6 km from the Furedalen alpine centre: the groomed tracks along Mødalsvegen to Mødal, steep steps past Gråskorvenuten and a long summit ridge to the cairn.",
 
 };
 

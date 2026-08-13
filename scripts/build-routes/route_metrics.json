@@ -1454,5 +1454,53 @@
   "aspect": "SV",
   "distanceKm": 7.8,
   "cumdistM": 7803
+ },
+ "sata": {
+  "verticalM": 900,
+  "gainM": 895,
+  "distanceM": 6602,
+  "startM": 459,
+  "summitM": 1260,
+  "duration": "4–6 t",
+  "steepestBandAngle": 18.4,
+  "steepestBandFrom": 1100,
+  "steepestBandTo": 1200,
+  "maxStepAngle": 32.5,
+  "grade": 2,
+  "aspect": "SV",
+  "distanceKm": 6.6,
+  "cumdistM": 6603
+ },
+ "skrott": {
+  "verticalM": 1070,
+  "gainM": 1068,
+  "distanceM": 5033,
+  "startM": 272,
+  "summitM": 1320,
+  "duration": "4–6 t",
+  "steepestBandAngle": 17.4,
+  "steepestBandFrom": 800,
+  "steepestBandTo": 900,
+  "maxStepAngle": 28.2,
+  "grade": 2,
+  "aspect": "S",
+  "distanceKm": 5.0,
+  "cumdistM": 5033
+ },
+ "tveitakvitingen": {
+  "verticalM": 1000,
+  "gainM": 995,
+  "distanceM": 8561,
+  "startM": 382,
+  "summitM": 1299,
+  "duration": "5–7 t",
+  "steepestBandAngle": 16.4,
+  "steepestBandFrom": 800,
+  "steepestBandTo": 900,
+  "maxStepAngle": 25.0,
+  "grade": 2,
+  "aspect": "NØ",
+  "distanceKm": 8.6,
+  "cumdistM": 8563
  }
 }
