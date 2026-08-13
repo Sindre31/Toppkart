@@ -2686,6 +2686,142 @@ has not been read in full. Tveitakvitingen's trailhead is unsettled and its
 «preparerte løyper» unchecked against terrain class the way Trysilfjellet's were.
 Each then wants a corridor, routing, measurement and two guides.
 
+## The Kvamskogen round
+
+The three candidates the Bergen round researched and left «ready to route» —
+Såta, Skrott and Tveitakvitingen — built the way Gullfjellstoppen was, in one
+new region: **Kvamskogen**, the massif all three stand on, an hour's drive from
+Bergen. The app goes from 91 tours to 94.
+
+| tour | start | summit | gain | km | steepest 100 m band | steepest 30 m | grade |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Skrott | 272 | 1320 | 1068 | 5.0 | 17.4° | 28.2° | 3 |
+| Tveitakvitingen | 382 | 1299 | 995 | 8.6 | 16.4° | 25.0° | 3 |
+| Såta | 459 | 1260 | 895 | 6.6 | 18.4° | 32.5° | 3 |
+
+The standing conditions hold with the same honesty rule the Oslo round set:
+**Såta ships at confidence `medium`**, because Fri Flyt is the only full
+description of the Eikedalen–Skeiskvanndalen line — westcoastpeaks and Peakbook
+corroborate the mountain, the name Iendafjellet, the height and the ski use,
+but from a different valley. Skrott is `high`: Fri Flyt's ski description and
+ut.no 116438 cover the same line, and the guide quotes ut.no's own caveat that
+the tour is primarily a hike. Tveitakvitingen is `medium` — ut.no is the only
+full description, but the corridor is traced off **ut.no's own GPX line**
+(api/gpx/trip/1112154404, 257 points, 8.86 km against a published 9.0), which
+ends 8 m from the resolved summit.
+
+### Tveitakvitingen's two hold reasons, settled
+
+The Bergen round held the tour on a trailhead that did not resolve and a route
+that «follows prepared pistes». Both dissolve under measurement. The register
+has no Furudalen on Kvamskogen — the place is **Furedalen**, and the mapped car
+park is «Furedalen alpin» (node/10261906575, 382.2 m). And the «preparerte
+løyper» are mapped `piste:type=nordic` with classic/skating grooming along
+Mødalsvegen the whole way to Mødal: sampled every 25 m along the GPX, only the
+first ~100 m at the car park read `Alpinbakke` — the flat by the base area, ut.no's
+own «gå ca 100 meter til Mødalsvegen» — and everything after is Skog and Myr.
+Not the Trysilfjellet shape, where the line climbed 938→1002 m inside a piste.
+
+One more thing worth writing down before someone conflates two tours: the
+«Såta» this route climbs toward («opp mot Såta i bratte klyv») is the local
+**802 m Såta south of fv. 7** (ut.no 1112771), not the app's 1260 m Såta on the
+north side of Kvamskogen. The guide says so.
+
+### What the register settled
+
+- **Såta is registered as Iendefjell too** — both names on the same coordinate,
+  which turns Fri Flyt's «som mange kaller Iendafjellet» from a claim about
+  local usage into a register fact.
+- **Skeiskvanndalen and Steinskvanndalen are two different valleys**, 3.4 km
+  apart, both registered. Fri Flyt's ski line uses the former; westcoastpeaks'
+  summer route («Steinkvanndalen», a spelling the register does not have) uses
+  the latter. Without that distinction the second source looks like it
+  contradicts the first.
+- **Rosselandsbotnen's register point sits on the water** — 661.75 m, class
+  Innsjø. The south shore reads Myr at 660.44, and that is the land point the
+  corridor uses.
+- **Håsete, not Høsete** (754.9 m, against Fri Flyt's «rundt 800 meter»), and
+  the ski hut above it measures **1109.8 m** against Fri Flyt's «omtrent 1000
+  moh» — westcoastpeaks' «the hut at 1100m» is the figure the terrain model
+  sides with.
+- **«Stoveveggen» and «Middagshola» are not in the register** near the route,
+  fuzzy search included; the guide carries them as the source's names. ut.no's
+  «Tjødnadalen» is registered **Tjørnadalen**.
+
+### The water, twice wrong in opposite directions
+
+The first solve ran both avoidWater corridors through the router's water cost,
+and the flatness mask — built to find lakes — read the flat **bog** in
+Skeiskvanndalen (551–557 m) as water: the line wove between mask cells, gave
+back 165 of 967 m in zigzag, and the off-water pass scattered 495 vertices into
+the wet legs. Bog is ordinary winter ground (the Styggemann rule), so both
+tours were re-solved without the water cost.
+
+Then `check_ground.py` caught the opposite error on the clean line: **360 m on
+water at 551 m**, up to 102 m offshore — the valley floor holds two natural
+lakes, one unnamed and one the register calls **Skeiskvanndalsvatnet**, and
+without the water cost the router took them. Neither is regulated, but they lie
+low and coastal an hour from Bergen, and Fri Flyt does not say which side the
+flat approach takes — so by the same ice argument the round set on
+Gullfjellstoppen, the corridor is pinned along the dry north-west side past
+both, probed point by point (the south side stands in the water). Going round
+costs what going round costs: +844/−43 became **+895/−94**, and the card
+carries 900 against Fri Flyt's 800, which is roughly summit minus start.
+`check_ground.py` now returns all three lines clean, 0 m on water.
+
+### What the flank sweeps found
+
+All three summits were swept on eight bearings before a word was written; the
+readings are in `measurements.json`.
+
+- **Såta's steep side is the one you climb.** The west flank measures 25.4°
+  mean with 53.0° in the window 740–800 m out, and the north-west 22.2°/53.6°.
+  Fri Flyt's «skred både opp og ned, og klipper» is a measurement. The
+  southwest couloir between Såterindane — Fri Flyt's alternative descent —
+  starts at 43.4° only 110–170 m from the cairn, and the guide carries the
+  source's own instruction to pull right before the bottom of it.
+- **Skrott's west side falls 49.0° only 10–70 m from the cairn**, and the
+  south-west 45.4° at 160–220 m, while the north-west shoulder the route uses
+  measures 7.0° mean. In flat light the two sides look alike from the cairn,
+  and the guide's descent section is built on that contrast. Fri Flyt's ledge
+  alternative from the ski hut gets its own warning quoted — hard snow,
+  west-facing cornices — and westcoastpeaks' ice-axe-and-crampons note with it.
+- **Tveitakvitingen has no steep side at all** — no bearing averages over
+  14.2°, and the steepest window anywhere is 37.5° 690–750 m out to the
+  south-west, off the route. Its guide is about the 17 km round trip, flat
+  light and navigation on a plateau with few forms, because that is what the
+  mountain is.
+
+### The grades
+
+`route_metrics.py` measures grade 2 on all three, and all three cards carry an
+editorial 3, each with its reason recorded in `new_tourmeta.json`: what a slope
+angle cannot see is Såta's wind-blasted skar (Fri Flyt mentions an ice axe),
+Skrott's cliffs in the forest and 49° summit-block edge, and Tveitakvitingen's
+17 km of weather exposure. The aspects are the measured ones (SV, S, NØ — no
+source names any). Seasons: **jan–apr is sourced only for Tveitakvitingen**
+(ut.no); Såta and Skrott borrow it from the same massif and their guides say so
+— the Surløytenuten rule, twice more.
+
+All three summits are in Varsom region **Voss (3031), an A region with a daily
+forecast** — queried per coordinate, and worth stating because the round's
+first tour went the other way: Gullfjellstoppen is in the B region
+Hordalandskysten, and its guide has to say there is no daily forecast. These
+three do not.
+
+The proof is the usual battery, and it all comes back clean: `check_routes.py`
+94 tours / 103 routes, `check_tours.py` 94 cards, `check_guides.py` 0 unsourced
+numbers and 0 reassurance claims across all 94 guides in both languages,
+`test_check_guides.py` 15 cases, `check_ground.py` clean on all three lines,
+and the CI suite including the intro-figure test.
+
+### Still open
+
+The guides are sourced and verified against the terrain model — not against
+anyone's experience of these mountains. A local reader per tour is still the
+missing check, here as everywhere. And **Fuglafjellet**, Kvamskogen's highest,
+has not been researched at all.
+
 ## Network
 
 Everything is public and unauthenticated:

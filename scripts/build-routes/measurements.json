@@ -1189,6 +1189,11 @@
    "what": "Toppsøket og research-punktet er to celler med same høgd",
    "figure": "resolve_summits klatra til 60.45804/6.14387 (1320,0); bergen_research hadde 60.45728/6.14436 (1319,99), 85 m unna. Publisert høgd 1320",
    "how": "resolve_summits.py og DTM1-punkt-API."
+  },
+  {
+   "what": "Køyreavstanden frå Øystese til Fitjadalen",
+   "figure": "Fri Flyt oppgir startstaden som «omtrent åtte kilometer» (8 km) frå Øystese; i luftline er det 5,1 km frå Øystese (60.38668/6.20074 i registeret) til parkeringa, og skilnaden er vegen opp Fitjadalsvegen",
+   "how": "SSR-punkt for Øystese, haversine mot trailheaden 60.42860/6.16390."
   }
  ],
  "tveitakvitingen": [
