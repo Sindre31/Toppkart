@@ -2476,10 +2476,53 @@ mountain 62 m too low and 1,7 km from where it is. That is the Kjerag and
 Storhornet finding a third time, and it is worth stating plainly: on this
 evidence the register point is a name, not a measurement.
 
-What is left is the work that makes a tour: land points for the two features that
-resolved onto water, Skrott's description read in full, Tveitakvitingen's
-trailhead settled and its «preparerte løyper» checked against terrain class the
-way Trysilfjellet was, then corridors, routing, measurement, and two guides each.
+### Gullfjellstoppen is routed, and held
+
+The corridor is traced off the mapped ways: trailhead to Redningshytta to the
+summit is connected on OSM at **7 750 m**, against ut.no's stated 8,2 km for the
+same route, and every element of Fri Flyt's description reproduces on it. The
+road passes 538 m south of Svartavatnet, so «til høyre for Svartavatnet» is
+right — the straight-line reading that made it look wrong was the reading, not
+the source. Redningshytta measures 596,5 m against «600 moh», and the «liten
+unnabakke» east of the hut is a real 25 m dip.
+
+The router solves it at 7,35 km, +783 m, max 25,8°, and the line is not
+publishable, because **it runs on water**: over Osavatnet at the start, over
+Svartavatnet, and over a tarn at 766 m.
+
+That is the router doing what it says it does. Its docstring: *«sea is
+impassable; frozen lakes are not (this is a winter product)»*. Flat water is the
+cheapest ground Dijkstra knows, so given a lake beside a road it takes the lake.
+Twenty-three waypoints pinned along the road at 180 m spacing did not clear it;
+the line cuts between them.
+
+**The assumption is an inland one.** Osavatnet is at 307 m on the coast at the
+latitude of Bergen — a city Fri Flyt itself calls «ikke den mest snøsikre byen» —
+and Svartavatnet is `InnsjøRegulert`, a regulated lake drawn down in winter,
+which is precisely the hazard that forced the Kråkfjellet and Rensfjellet
+re-routes. Ice cannot be assumed here the way it can on a February plateau in
+Jotunheimen.
+
+So there is a choice to make before this tour ships, and it is a real one:
+
+- **Give the router a water cost.** Correct, and contained if only new tours are
+  re-routed — but then this tour is the only one of 91 built by a different
+  router, and the other 90 keep lines that were hand-corrected for the same
+  problem after the fact.
+- **Trace the road section from the mapped ways** instead of solving it. More
+  accurate ground, and a different construction from every other tour.
+
+Neither should be picked quietly, which is why this is written down rather than
+decided in a commit.
+
+### Still to do
+
+Land points for the features that resolved onto water, Skrott's description read
+in full, Tveitakvitingen's trailhead settled and its «preparerte løyper» checked
+against terrain class the way Trysilfjellet was, then corridors, routing,
+measurement, and two guides each. Overpass timed out repeatedly on the Såta box
+during this round; its trailhead should be pinned to a mapped way the way
+Osavatnet's was, not read off a map tile.
 
 ## Network
 
