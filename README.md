@@ -379,8 +379,13 @@ content and data quality that has to be settled before the site is sold to anyon
   `check_guides.py` could not see any of it: it accepts a distance if it lands within 150 m of
   *any* sourced number, and with hundreds in scope that is nearly always true. The replacement
   check is tied to the route's own length and runs in CI — see "Checks" above and "The eight,
-  read adversarially" in `scripts/build-routes/README.md`, which also lists the 15 band claims
-  outside those eight that the same scan flags and that have not been worked yet.
+  read adversarially" in `scripts/build-routes/README.md`. The 15 band claims outside those
+  eight that the same scan flagged have since been worked, and the band-tied scan they came
+  from was rebuilt and run over all 91 guides in both languages: the #62 re-route had left
+  stale band and step figures in **30 guides**, every one verified against the pre-#62 line
+  before it was touched, and where a superlative's identity had moved — Okla's steepest band,
+  Tromsdalstinden's steepest step — the sentence was rewritten to say where the steep ground
+  actually is. See "The second reground" in `scripts/build-routes/README.md`.
 
   The read of Kjerag, Møysalen and Sæbyggjenuten moved a card, rewrote half a guide,
   and found the pipeline bug two bullets up. It was the first read done by someone other than the
