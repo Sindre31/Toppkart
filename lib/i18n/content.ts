@@ -218,6 +218,8 @@ export const TOUR_TEASER_EN: Record<string, string> = {
     "1160 m from the E10 at sea level up through Heggedalen and the west ridge — the great classic of the Harstad area, and the peak most people there ski.",
   raskarfjellet:
     "680 m of climbing from Sildegjerdet on rv 52 up the stream valley — Hemsedal's own classic, known simply as «1609».",
+  gullfjellstoppen:
+    "839 metres of ascent from the road end at Osavatnet, past Redningshytta and up Middagsdalen to the highest point in Bergen.",
 
 };
 
@@ -2937,6 +2939,46 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       endLabel: "1376 m",
       distanceLabel: "4.4 km",
       caption: "416 metres of climbing and 4.38 km from Ustaoset west of Måfådalen at 1104 m and past Tindevatnet at 1317, with the forest letting go at 1084 m.",
+    },
+  },
+  gullfjellstoppen: {
+    intro:
+      "839 metres of climbing and 7.8 km from the road end at Osavatnet to the highest point in Bergen. This is the gentlest tour in the collection: no hundred-metre band of the line averages more than 8.1 degrees, and the steepest sustained section is a single 27.4-degree step. The hazard is not in the route but in its last hundred metres — the summit dome is gentle, and the west side falls 59.0 degrees 200 to 260 metres from the cairn.",
+    ascent: [
+      "From the paid car park at the end of Gullfjellsvegen, 307 m, at the head of Bjørndalen. The first two kilometres follow a gravel road and are all but flat: the band from 300 to 400 m averages 2.5 degrees over 2.1 km of ground. The forest stops at 324 m, and everything above that is classed as open ground by Kartverket — this is a tour with no treeline to speak of.",
+      "At 2.47 km you reach the south end of Svartavatnet, 410 m. Fri Flyt describes the road as running «til høgre for Svartavatnet», to the right of the lake, and that is where the line goes: on land the whole way past. Svartavatnet is registered as a regulated lake. Fri Flyt gives 392 m, the terrain model reads the water surface at 408, and that difference is the drawdown.",
+      "Redningshytta sits 18 metres off the line, 4.23 km in, and measures 592 m against the «600 moh» the source gives. Just after it comes the small dip the descriptions mention, and it is real: the line loses 50 metres, from 605 to 555 m over 252 metres of ground, between 4.11 and 4.36 km. That is 50 of the 159 metres the tour gives back along the way.",
+      "From 555 m it climbs steadily again, and the steepest ground on the whole tour is here: a 27.4-degree step between 709 and 727 m. It is short, and it is the steepest thirty metres on the line.",
+      "Past the tarn at 769 m, 6.21 km in, the ground levels into what the source calls a broken ridge of high ground. The steepest hundred-metre band of the tour is here, between 800 and 900 m, and it averages 8.1 degrees over 720 metres of ground. Then through Middagsdalen at 939 m, 7.40 km in, and up to the cairn at 987.",
+    ],
+    descent: [
+      "Back down the same line: through Middagsdalen, over the high ground, past the tarn and down to Redningshytta. Below the hut the 50 metres you lost on the way up are waiting, this time as a climb. From Svartavatnet out it is gravel road at 2.5 degrees — you walk the last two kilometres.",
+      "The common mistake on this mountain is drifting west or north-west from the cairn. The summit dome is gentle enough that the transition is not felt underfoot: the north side falls 45.8 degrees only 30 to 90 metres from the cairn, the north-west 61.2 degrees 90 to 150 metres out, and the west 59.0 degrees 200 to 260 metres out. The south side, the one you came up, averages 4.9 degrees over the first 800 metres. In flat light the difference is invisible.",
+      "Fri Flyt also describes descents from the main summit by way of Gullfjellshalsen and Vossevardane to Svartavatnet. Those are different lines from this one, and they are not measured here.",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "The line is gentle throughout. The steepest hundred-metre band, 800 to 900 m, averages 8.1 degrees, and none of the other six bands exceeds 6.9. The steepest sustained section is the 27.4-degree step between 709 and 727 m. What changes with the weather here is not the angle but the snow: the tour starts at 307 m on the coast, and the snow line often sits above the car park.",
+      },
+      {
+        title: "The summit",
+        body: "The whole tour is a warm-up for the last hundred metres. From the cairn the north side falls 45.8 degrees 30 to 90 metres out, the north-west 61.2 degrees 90 to 150 metres out and the west 59.0 degrees 200 to 260 metres out; the east measures 41.3 degrees 740 to 800 metres out and the south-east 30.6 degrees 380 to 440 metres out. The south side, the ascent, averages 4.9 degrees. A gentle dome over steep sides is exactly the terrain where a bearing error in cloud costs the most.",
+      },
+      {
+        title: "The ice",
+        body: "Osavatnet sits at 307 m on the coast at the latitude of Bergen, and Svartavatnet is registered as regulated. The line is therefore laid on land the whole way: 0 metres of 7 803 stand on water, checked against Kartverket's terrain class every two metres along the whole line — 3 769 points — and against OSM's water polygons. A regulated lake is drawn down in winter, and ice left spanning the void carries nothing.",
+      },
+      {
+        title: "Before you go",
+        body: "Gullfjellstoppen lies in the Hordalandskysten warning region, which is a B region: no daily avalanche forecast is issued for this mountain. The nearest A region is Voss, and it covers a different, more inland range — read it as context, not as a forecast for Gullfjellet. Bring a transceiver, probe and shovel. An empty page does not mean a safe mountain.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "307 m",
+      endLabel: "987 m",
+      distanceLabel: "7.8 km",
+      caption: "839 metres of climbing and 7.8 km from Osavatnet, with the steepest ground — a 27.4-degree step between 709 and 727 m — halfway up.",
     },
   },
   grafjell: {

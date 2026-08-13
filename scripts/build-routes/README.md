@@ -2571,16 +2571,52 @@ Three details were each worth a run of their own:
 Confirmed three ways: the pass's own readout, an independent sweep of Kartverket's
 classes every 2 m (3 769 samples, 0 m), and `check_ground.py` against OSM's water
 polygons (0 m). `check_routes.py` is clean — endpoints on their marks, no step
-over 40°.
+over 40°. `resample_dtm1.py` then re-read every vertex at 1 m, as it does for
+every route, and the shipped figures are **+839 / −159 m, max 27,4°**.
+
+### Gullfjellstoppen ships
+
+The guide is written in both languages and the tour is live: 91 tours, 100
+routes, 91 guides. Four things about it are worth keeping.
+
+**The card's vertical is 839 m, not the 700 the source gives.** Fri Flyt's 700 is
+about summit minus start (987 − 307 = 680); the card carries cumulative ascent,
+and the line gives back 159 m along the way. ut.no states «800 høydemeter totalt»
+and 8,2 km for the same route, against 839 m and 7,80 km measured — which is the
+corroboration that matters, since it is the only other source that walks this
+start.
+
+**It is the gentlest tour in the corpus.** No 100 m band averages more than 8,1°,
+and the steepest sustained section is a single 27,4° step between 709 and 727 m.
+That is not a reason to relax about it: the summit dome is flat and the ground
+under it is not. Measured from the cairn, north falls 45,8° at 30–90 m out,
+north-west 61,2° at 90–150 m and west 59,0° at 200–260 m, while the south side —
+the ascent — averages 4,9°. A gentle dome over steep sides is the shape that
+punishes a bearing error in cloud, and that is what the guide's summit paragraph
+is about.
+
+**There is no avalanche forecast for this mountain.** NVE's
+`AvalancheWarningByCoordinates` puts the summit in **Hordalandskysten**, a B
+region: «Ikke vurdert». The nearest A region is **Voss**, a different and more
+inland range. The guide says so rather than pointing at a forecast that does not
+cover the ground — the first tour in the corpus where that had to be said.
+
+**The flank sweep went into `measurements.json`.** Five records: the eight-point
+sweep at 20 m, the fine three-bearing sweep at 10 m that found the edge closer to
+the cairn than the coarse one could see, the dip at Redningshytta, where the line
+passes the named features, and the 0-of-7 803 m water reading. That is what makes
+the guide's angles checkable — `check_guides.py` reports 0 unsourced numbers and 0
+reassurance claims across all 91.
 
 ### Still to do
 
-Land points for the features that resolved onto water, Skrott's description read
-in full, Tveitakvitingen's trailhead settled and its «preparerte løyper» checked
-against terrain class the way Trysilfjellet was, then corridors, routing,
-measurement, and two guides each. Overpass timed out repeatedly on the Såta box
-during this round; its trailhead should be pinned to a mapped way the way
-Osavatnet's was, not read off a map tile.
+Three of the four Bergen candidates are still unbuilt. Såta needs land points at
+Rosselandsbotnen and the innermost Eikedalen car park; Overpass timed out
+repeatedly on that box during this round, and its trailhead should be pinned to a
+mapped way the way Osavatnet's was, not read off a map tile. Skrott's description
+has not been read in full. Tveitakvitingen's trailhead is unsettled and its
+«preparerte løyper» unchecked against terrain class the way Trysilfjellet's were.
+Each then wants a corridor, routing, measurement and two guides.
 
 ## Network
 

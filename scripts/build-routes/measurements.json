@@ -1119,5 +1119,32 @@
    "figure": "Frå Stallvikskaret (457,6 moh) til toppen: 458, 501, 549, 614, 687, 773, 859, 906, 979, 1056, 1092 moh over 1305 m — monotont, utan eit einaste tap av høgde, 26° i snitt. Fjellet har ei slak side; ho vender mot nordvest, og det står ingen veg på den sida.",
    "how": "Punkt-API-et, 130 m mellom prøvepunkta."
   }
+ ],
+ "gullfjellstoppen": [
+  {
+   "what": "Fallet frå varden i åtte retningar",
+   "figure": "N 7,6° i snitt med 44,4° som brattaste 60 m 40–100 m ut; NØ 11,3° / 19,9°; Ø 21,7° / 41,3° 740–800 m ut; SØ 13,0° / 30,6° 380–440 m ut; S 4,9° / 18,9°; SV 8,0° / 33,0°; V 27,7° / 58,1° 200–260 m ut; NV 15,4° / 60,4° 80–140 m ut",
+   "how": "flank_probe.py frå 60.38756/5.59037, 800 m ut, prøvetatt kvar 20. m i DTM-en."
+  },
+  {
+   "what": "Fallet tett på varden mot nord, nordvest og vest",
+   "figure": "N 18,5° i snitt over 300 m med 45,8° som brattaste 60 m 30–90 m ut; NV 36,1° med 61,2° 90–150 m ut; V 43,5° med 59,0° 200–260 m ut",
+   "how": "flank_probe.py frå same punkt, 300 m ut, prøvetatt kvar 10. m — den fine lesinga, fordi kanten ligg nærare varden enn 20 m-steget kan sjå."
+  },
+  {
+   "what": "Unnabakken ved Redningshytta",
+   "figure": "50 høgdemeter tapt, frå 605 til 555 moh over 252 m grunn, mellom 4,11 og 4,36 km ute",
+   "how": "Summert langs den rutede linja i routes.json. Redningshytta (60.36939/5.55939) ligg 18 m frå linja, 4,23 km ute, der linja les 592 moh."
+  },
+  {
+   "what": "Kor linja passerer Svartavatnet og tjørna på 766",
+   "figure": "Sørstranda av Svartavatnet 2,47 km ute på 410 moh; tjørna 6,21 km ute på 769 moh; Middagsdalen 7,40 km ute på 939 moh",
+   "how": "Næraste vertex til kvart punkt i routes.json: 7 m frå sørstranda, 5 m frå tjørna, 71 m frå Middagsdalen-punktet i corridors.json."
+  },
+  {
+   "what": "Kor mykje av linja som står på vatn",
+   "figure": "0 m av 7 803",
+   "how": "Kartverkets terrengklasse lesen kvar 2. m langs den runda linja (3 769 punkt), og check_ground.py mot OSMs vasspolygon. Begge svarar 0."
+  }
  ]
 }

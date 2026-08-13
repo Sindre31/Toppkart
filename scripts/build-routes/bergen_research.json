@@ -1,7 +1,7 @@
 {
  "round": "Bergen",
- "status": "Router given an opt-in water cost, verified. Gullfjellstoppen routed down to 1,18% of its length on water, from a line that ran a kilometre along Osavatnet. Guide not written.",
- "note": "Gullfjellstoppen is researched, corridored and routed, and is held back by one decision recorded under its findings: the router puts the line on lake ice, by design, and that design does not transfer to a coastal tour starting at 307 m with a regulated lake on the way. Nothing from this file is in lib/tours.ts, lib/routes.ts or lib/guides.ts.",
+ "status": "Gullfjellstoppen is live: routed with the router's opt-in water cost plus the off-water pass in generate_routes.py, 0 m of 7 803 on water, guide written in both languages, card and seed row emitted. Såta, Skrott and Tveitakvitingen are still unbuilt.",
+ "note": "Gullfjellstoppen is in lib/tours.ts, lib/routes.ts and lib/guides.ts. The measured flank angles behind its summit paragraph are in measurements.json. Nothing for the other three candidates is in the app.",
  "why": "Bergen is the largest hole in the map. The nearest tour in the app is Vesoldo, 43 km out in Hardanger, so a city of 290 000 people has nothing inside an hour's drive.",
  "sources": {
   "friflyt": "https://www.friflyt.no/topptur/skiturer-bergen — a per-area index in the same shape the Hemsedal round was built on: toppunkt, høydemeter, startsted, OPP/NED. It lists three tours.",
@@ -11,7 +11,7 @@
   {
    "name": "Gullfjellstoppen",
    "kommune": "Bergen",
-   "verdict": "routed, 89 m still on water",
+   "verdict": "shipped — 7,80 km, +839 / −159 m, max 27,4°, 0 m on water",
    "source": "friflyt.no/topptur/skiturer-bergen/turbeskrivelse-gullfjellet",
    "published": {
     "summitM": 987,
@@ -63,7 +63,9 @@
     "Two ways forward, and they are a real choice rather than a detail. Either give the router a water cost — correct, contained if only new tours are re-routed, but it makes this tour the only one of 91 built by a different router — or trace the road section from the mapped ways instead of solving it, which is more accurate ground but a different construction from the other 90. Both need saying out loud in the README; neither should be picked quietly.",
     "The router now has an opt-in water cost and it did the job it was added for: the line came off Osavatnet entirely, where it had run for the best part of a kilometre. Length went 7,35 -> 7,51 km and the climb 783 -> 811 m, which is what going round costs.",
     "89 m of 7 514 m is still on water, and two added steering waypoints did not clear it. The Svartavatnet clip is a leg problem rather than a cost problem: the waypoint traced off the mapped road at 60.38561/5.54783 sits north of the lake's south shore, so the leg from it to a point south of the lake crosses the corner whatever the cost. Moving that waypoint, not adding more, is the fix — and it wants a careful read of the shore rather than another blind iteration.",
-    "The tour is not publishable at 89 m on water, and 41 m of that is the regulated lake. But it is 1,18% against a line that was previously on the ice for a kilometre, and the remaining fix is corridor geometry with no unknowns left in it."
+    "The tour is not publishable at 89 m on water, and 41 m of that is the regulated lake. But it is 1,18% against a line that was previously on the ice for a kilometre, and the remaining fix is corridor geometry with no unknowns left in it.",
+    "Waypoints alone did not finish it: a 60-point corridor at 50 m spacing along the two shoreline stretches still left 82 m on water. The fix was an off-water pass in generate_routes.py that moves vertices to clear ground and inserts dry vertices into wet legs, against Kartverket's terrain class. 0 m on water, confirmed by an independent 2 m sweep (3 769 samples) and by check_ground.py against OSM.",
+    "NVE puts the summit in the B region Hordalandskysten, «Ikke vurdert» — there is no daily avalanche forecast for this mountain. Nearest A region is Voss. The guide says so instead of pointing at a forecast that does not cover the ground."
    ],
    "routed": {
     "corridor": "28 waypoints: 23 traced off the mapped road at ~180 m spacing, two steering points, three on the upper mountain",
@@ -195,9 +197,8 @@
   }
  ],
  "next": [
-  "Decide the water question: a water cost in router.py, or the road section traced from mapped ways. Say which in the README either way.",
-  "Then re-route Gullfjellstoppen, re-measure, and write its guide in both languages.",
-  "Såta: a land point at Rosselandsbotnen and the innermost Eikedalen car park, then the same chain. Overpass was timing out on that box during this round; the trailhead should be pinned to a mapped way the way Osavatnet's was, not read off a tile.",
-  "Skrott: read the description in full. Tveitakvitingen: settle the trailhead and check «preparerte løyper» against terrain class."
+  "Såta: a land point at Rosselandsbotnen and the innermost Eikedalen car park, then corridor, routing, measurement and two guides. Overpass was timing out on that box; pin the trailhead to a mapped way the way Osavatnet's was.",
+  "Skrott: read the description in full.",
+  "Tveitakvitingen: settle the trailhead and check «preparerte løyper» against terrain class."
  ]
 }
