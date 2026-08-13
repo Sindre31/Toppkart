@@ -1146,5 +1146,76 @@
    "figure": "0 m av 7 803",
    "how": "Kartverkets terrengklasse lesen kvar 2. m langs den runda linja (3 769 punkt), og check_ground.py mot OSMs vasspolygon. Begge svarar 0."
   }
+ ],
+ "sata": [
+  {
+   "what": "Fallet frå varden i åtte retningar",
+   "figure": "N 17,6° i snitt med 30,6° som brattaste 60 m 470–530 m ut; NØ 13,7° / 22,1° 680–740 m ut; Ø 17,7° / 37,2° 720–780 m ut; SØ 19,9° / 35,7° 440–500 m ut; S 13,9° / 37,3° 740–800 m ut; SV 18,4° / 43,4° 110–170 m ut; V 25,4° / 53,0° 740–800 m ut; NV 22,2° / 53,6° 690–750 m ut",
+   "how": "flank_probe.py frå 60.43136/5.99001, 800 m ut, prøvetatt kvar 10. m i DTM-en."
+  },
+  {
+   "what": "Skaret nord for toppen — «skaret til venstre for selve toppen» hos Fri Flyt",
+   "figure": "1224,26 moh på 60.43300/5.98900, 190 m NNV for varden; toppryggen sørover derifrå les 1248,25 på 60.43200/5.98950",
+   "how": "DTM1-punkt-API på dei to punkta."
+  },
+  {
+   "what": "Rosselandsbotnen: registerpunktet står på vatnet",
+   "figure": "SSR-punktet 60.42940/5.96797 les 661,75 moh med klasse Innsjø; sørbredda 60.42780/5.96800 les 660,44 med klasse Myr — landpunktet korridoren brukar",
+   "how": "DTM1-punkt-API; SSR-oppslag på «Rosselandsbotnen»."
+  },
+  {
+   "what": "Skeiskvanndalen og Steinskvanndalen er to registrerte dalar",
+   "figure": "Skeiskvanndalen (Dal) 60.41624/5.95375 — dalen Fri Flyts line går inn; Steinskvanndalen (Dal) 60.40726/6.01708, 3,4 km lenger aust — dalen westcoastpeaks går sommarruta frå. «Steinkvanndalen» finst ikkje i registeret",
+   "how": "SSR-namnesøk på alle tre skrivemåtane."
+  }
+ ],
+ "skrott": [
+  {
+   "what": "Fallet frå varden i åtte retningar",
+   "figure": "N 14,2° i snitt med 30,0° som brattaste 60 m 300–360 m ut; NØ 16,7° / 42,9° 460–520 m ut; Ø 18,0° / 37,2° 320–380 m ut; SØ 18,1° / 38,9° 660–720 m ut; S 17,4° / 39,5° 580–640 m ut; SV 22,5° / 45,4° 160–220 m ut; V 14,4° / 49,0° 10–70 m ut; NV 7,0° / 36,6° 80–140 m ut",
+   "how": "flank_probe.py frå 60.45804/6.14387, 800 m ut, prøvetatt kvar 10. m i DTM-en."
+  },
+  {
+   "what": "Skihytta ligg på 1110 moh, ikkje «omtrent 1000»",
+   "figure": "OSM way/939488686 (bygning) på 60.45245/6.14070 les 1109,79 moh. Fri Flyt: «den vesle skihytta på omtrent 1000 moh»; westcoastpeaks: «the hut at 1100m»",
+   "how": "DTM1-punkt-API på OSM-bygningens midtpunkt."
+  },
+  {
+   "what": "Skaret mellom Glynt og toppen, og skuldra nord for varden",
+   "figure": "lågpunktlinja i skaret les 1166,08 på 60.45950/6.14000 og 1195,24 på 60.45920/6.14120; skuldra der sommarstien (way/953805990) kryssar les 1300,58 på 60.45880/6.14350, 85 m nord for varden — «gå de siste meterne til toppvarden i lett terreng»",
+   "how": "DTM1-punkt-API på fire punkt mellom Glynt (SSR 60.46240/6.13474, 1241,82) og toppen."
+  },
+  {
+   "what": "Toppsøket og research-punktet er to celler med same høgd",
+   "figure": "resolve_summits klatra til 60.45804/6.14387 (1320,0); bergen_research hadde 60.45728/6.14436 (1319,99), 85 m unna. Publisert høgd 1320",
+   "how": "resolve_summits.py og DTM1-punkt-API."
+  },
+  {
+   "what": "Køyreavstanden frå Øystese til Fitjadalen",
+   "figure": "Fri Flyt oppgir startstaden som «omtrent åtte kilometer» (8 km) frå Øystese; i luftline er det 5,1 km frå Øystese (60.38668/6.20074 i registeret) til parkeringa, og skilnaden er vegen opp Fitjadalsvegen",
+   "how": "SSR-punkt for Øystese, haversine mot trailheaden 60.42860/6.16390."
+  }
+ ],
+ "tveitakvitingen": [
+  {
+   "what": "Fallet frå varden i åtte retningar",
+   "figure": "N 11,2° i snitt med 29,3° som brattaste 60 m 730–790 m ut; NØ 13,7° / 32,8° 740–800 m ut; Ø 10,1° / 26,7° 740–800 m ut; SØ 5,5° / 20,0° 710–770 m ut; S 6,8° / 20,9° 550–610 m ut; SV 9,5° / 37,5° 690–750 m ut; V 14,2° / 25,3° 100–160 m ut; NV 11,4° / 22,8° 70–130 m ut",
+   "how": "flank_probe.py frå 60.32540/5.90858, 800 m ut, prøvetatt kvar 10. m i DTM-en."
+  },
+  {
+   "what": "Dei fyrste hundre metrane frå parkeringa les Alpinbakke; resten gjer det ikkje",
+   "figure": "prøvepunkt kvar 25. m langs ut.no si GPX-linje: 0, 25, 50 og 75 m les Alpinbakke (380–385 moh, flata ved anlegget); frå 100 m er det Skog og Myr heile vegen mot Mødal. Ikkje Trysilfjellet-forma, der lina klatra 938→1002 moh inne i bakken",
+   "how": "DTM1-punkt-API på 27 punkt langs GPX-linja frå parkeringa."
+  },
+  {
+   "what": "ut.no si GPX-linje mot den resolverte toppen",
+   "figure": "257 punkt, 8,86 km målt mot publiserte 9,0 km; siste GPX-punkt 60.325464/5.908462 ligg 8 m frå det resolverte toppunktet 60.32540/5.90858 (1298,9 mot publisert 1299)",
+   "how": "ut.no api/gpx/trip/1112154404, lengd med haversine, avstand mot summits.json."
+  },
+  {
+   "what": "«Stoveveggen», «Middagshola» og «Furudalen» finst ikkje i registeret",
+   "figure": "ingen treff nær ruta, heller ikkje fuzzy; registeret har Furedalen (Dal/Hyttefelt/Li, Kvam) der OSM-parkeringa heiter «Furedalen alpin» (node/10261906575, 382,18 moh). «Tjødnadalen» hos ut.no er registerført Tjørnadalen (60.34614/5.96794), og Svartatjørna (60.34204/5.96977) ligg ved linja",
+   "how": "SSR-namnesøk med og utan fuzzy på alle namna i skildringa."
+  }
  ]
 }

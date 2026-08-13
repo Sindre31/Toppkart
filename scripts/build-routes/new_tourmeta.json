@@ -1676,5 +1676,78 @@
    "Fri Flyt oppgir Svartavatnet til 392 moh; DTM-en les vassflata til 408. Skilnaden er venta på eit regulert vatn og er ein av grunnane til at linja ikkje går på isen."
   ],
   "notes": "Fri Flyt fører turen i Bergens-indeksen sin og skildrar OPP som «velmerket grusvei til høgre for Svartavatnet (392 moh) og opp til redningshytta (600 moh)», vidare om Korketrekkeren og eit kupert høgdedrag før det leier ned i Middagsdalen og til topps. Alt dette reproduserer på den kartlagde grunnen: vegen passerer 538 m sør for Svartavatnet, Redningshytta ligg 18 m frå linja på 4,23 km og måler 592 moh mot «600 moh», og linja går gjennom Middagsdalen på 939 moh 400 m før toppen. ut.no fører same utgangspunktet, men som fottur med sesong jun–okt; derfrå er berre lengd og stiging brukt. NED hos Fri Flyt skildrar Gullfjellshalsen og Vossevardane, altså ei anna linje enn den ruta går — kortet sin aspect gjeld ruta si eiga nedkøyring."
+ },
+ "sata": {
+  "season": "jan–apr",
+  "aspect": "SV",
+  "grade": 3,
+  "gradeReason": "Målinga seier 2 — brattaste hundremetersbeltet er 18,4 grader mellom 1100 og 1200 moh — men grad 3 er redaksjonell og grunngjeven: Fri Flyts faremoment er «Skred både opp og ned, og klipper», øvste delen av skaret er ofte avblåst og hard med isøks som føremon, og vestflanken lina går opp måler 25,4 grader i snitt frå varden med 53,0 grader som brattaste 60 m-vindauge. Det ei slope-vinkel-måling ikkje ser — avblåst hardt føre og klipper — er nett det som gjer denne turen tyngre enn tala.",
+  "roadClosedInWinter": false,
+  "teaserNo": "895 høgdemeter frå den innarste parkeringa ved Eikedalen skisenter: seterveg, flat anmarsj inn Skeiskvanndalen, og bratt flanke opp i skaret nord for toppen registeret òg kallar Iendefjell.",
+  "teaserEn": "895 metres of ascent from the innermost car park at Eikedalen ski centre: a summer road, a flat approach into Skeiskvanndalen, and a steep flank into the notch north of the summit the register also calls Iendefjell.",
+  "hazardNotes": "Fri Flyt: «Skred både opp og ned, og klipper». Vestflanken — den lina går opp — måler 25,4 grader i snitt med 53,0 grader som brattaste 60 m 740–800 m frå varden, og nordvestsida 22,2/53,6. Den sørvestvendte renna mellom Såterindane (alternativ nedkøyring hos Fri Flyt) har 43,4 grader berre 110–170 m frå varden. Øvste delen av skaret er ofte avblåst og hard; Fri Flyt nemner isøks. Dalbotnen ber to naturlege vatn på 551 moh (den namnlause tjørna og Skeiskvanndalsvatnet) — lina held den tørre nordvestsida forbi begge, målt til 0 m på vatn.",
+  "sources": [
+   "https://www.friflyt.no/topptur/skiturer-bergen/turbeskrivelse-saata2",
+   "https://www.westcoastpeaks.com/Peaks/iendafjellet.html",
+   "https://peakbook.org/no/peakbook-element/6328/no/Iendafjellet.html"
+  ],
+  "confidence": "medium",
+  "corrections": [
+   "Registeret ber «Iendefjell» og «Såta» på same koordinat (60.43158/5.98895) — Fri Flyts «Såta, som mange kaller Iendafjellet» er registerfesta, ikkje lokal munnleg bruk.",
+   "Registerpunktet «Rosselandsbotnen» (60.42940/5.96797) står på vatnet: 661,75 moh, klasse Innsjø. Sørbredda (60.42780/5.96800) les Myr 660,44 — landpunktet korridoren brukar.",
+   "Trailheaden er den innarste parkeringa, OSM way/544172419 på Kråvegen, 459,14 moh — ikkje plassen ved sjølve anlegget (456,05) som researchen fyrst hadde. 1260,45 − 459,14 = 801 mot Fri Flyts 800.",
+   "verticalM er 900 og ikkje 800: kortet ber kumulativ stiging på den rutte lina (895 m), som gjev tilbake 94 m — mest i den kuperte dalbotnen og i å halde land forbi vatna. Fri Flyts 800 er om lag topp minus start.",
+   "Skeiskvanndalen (60.41624/5.95375) og Steinskvanndalen (60.40726/6.01708) er to ulike registrerte dalar; westcoastpeaks' sommarrute («Steinkvanndalen», som ikkje finst i registeret) går den austlege og er ikkje denne lina.",
+   "Sesongen jan–apr er ikkje publisert for denne turen: han er lånt frå ut.nos Tveitakvitingen-skildring på same massivet, og guiden seier det."
+  ],
+  "notes": "Fri Flyt er einaste fulle skildringa av akkurat denne lina (Eikedalen–Skeiskvanndalen–Rosselandsbotnen–skaret), difor confidence medium. Westcoastpeaks (klasse 2 frå Steinskvanndalen over Gråurdi-passet) og Peakbook (71 registrerte bestigningar) korroborerer fjellet, namnet Iendafjellet, høgda 1260 og skibruken — frå ein annan dal. OPP hos Fri Flyt: seterveg/skispor dei fyrste 100 høgdemetrane (459→555 målt), lang flat anmarsj inn Skeiskvanndalen (555–562), ved Rosselandsbotnen til høgre og bratt mot toppen, skaret til venstre for — nord for — sjølve toppen (målt 1224 moh, 190 m NNV for varden). NED: same veg; alternativt den sørvestvendte renna mellom Såterindane med avtrekk til høgre før botnen av renna (Såtedalen), og vestflanken berre på svært stabilt snødekke. Varsom-region Voss (3031), A-region med dagleg varsel — målt per koordinat, i motsetnad til Gullfjellstoppen som ligg i B-regionen Hordalandskysten."
+ },
+ "skrott": {
+  "season": "jan–apr",
+  "aspect": "S",
+  "grade": 3,
+  "gradeReason": "Målinga seier 2 — brattaste beltet 17,4 grader mellom 800 og 900 moh — men grad 3 er redaksjonell: Fri Flyts faremoment er «Skredfare i øvre del. Stygge skrenter i skogen», ut.no skriv at turen som skitur «går nokre stader så bratt at kunnskap om skredfare er nødvendig», vestsida fell 49,0 grader berre 10–70 m frå varden og sørvestsida 45,4 grader 160–220 m ut. Skrentene i skogen og den bratte toppklossen er usynlege for ei bandmåling.",
+  "roadClosedInWinter": false,
+  "teaserNo": "1068 høgdemeter frå støls- og hyttetunet i Fitjadalen: gangbru over Kjølo, bratt skogsli til Håsete, skihytta på 1110 moh og skaret mellom Glynt og toppen.",
+  "teaserEn": "1068 metres of ascent from the cluster of summer farms in Fitjadalen: a footbridge over the Kjølo, a steep wooded hillside to Håsete, the ski hut at 1110 metres and the notch between Glynt and the summit.",
+  "hazardNotes": "Fri Flyt: «Skredfare i øvre del. Stygge skrenter i skogen.» Vestsida fell 49,0 grader berre 10–70 m frå varden og sørvestsida 45,4 grader 160–220 m ut; nordvestskuldra lina kjem opp måler 7,0 grader i snitt. Alternativ-oppstiginga frå skihytta på sommarstiens skråhyller åtvarar Fri Flyt sjølv mot ved hardt føre eller vestvende skavlar. Westcoastpeaks tilrår isøks og stegjern på hyllene vinterstid.",
+  "sources": [
+   "https://www.friflyt.no/topptur/skiturer-bergen/turbeskrivelse-skrott",
+   "https://ut.no/turforslag/116438/skrott",
+   "https://www.westcoastpeaks.com/Peaks/skrott.html"
+  ],
+  "confidence": "high",
+  "corrections": [
+   "Skihytta ligg på 1110 moh målt (OSM way/939488686, 1109,79) — Fri Flyt seier «omtrent 1000 moh», westcoastpeaks «the hut at 1100m». Kortet og guiden ber målinga.",
+   "Registeret har Håsete (Seter/støl 60.44275/6.15444, 754,93 moh); «Høsete» hos westcoastpeaks finst ikkje i registeret. Fri Flyts «rundt 800 meter» er 45 m for høgt.",
+   "Toppsøket klatra til 60.45804/6.14387 (1320,0) — 85 m nord for research-punktet 60.45728/6.14436 (1319,99). To celler, same høgd, publisert 1320; pipelinen ber søkets punkt.",
+   "ut.no startar ved øvre enden av Fitjadalsvatnet, Fri Flyt ved støls-/hyttetunet; den kartlagde parkeringa way/1189239633 (272,05 moh) ligg 155 m frå stølspunktet i registeret — same tun. 1320,17 − 272,38 = 1048 mot Fri Flyts 1050.",
+   "Sesongen jan–apr er ikkje publisert: lånt frå ut.nos Tveitakvitingen-skildring på same massivet, og guiden seier det. ut.nos eiga sesongfelt for Skrott gjeld fotturen (mai–jul og september)."
+  ],
+  "notes": "To uavhengige kjelder dekkjer same lina: Fri Flyts skiskildring og ut.no 116438 — som primært er ein fottur («Turen er primært ein fottur. Som skitur går nokre stader så bratt at kunnskap om skredfare er nødvendig»), det skal guiden seie. Lina ligg på den kartlagde stikjeda way/376310909 → 376310905 → 953805990 heile vegen frå gangbrua til skuldra. OPP: gangbru over Kjølo, granskog og skrentete li, dalføret til Håsete, nordvest mot skihytta, nordover opp i skaret mellom Glynt og toppen, siste meterane i lett terreng (skuldra der sommarstien kryssar måler 1300,6 moh 85 m nord for varden). NED: variasjonar over oppturen mot Håsete; seint på våren boller og ryggar litt austover frå varden. Frå Håsete: same veg — «lett å kjøre seg fast i kronglete terreng». Varsom-region Voss (3031), A-region med dagleg varsel."
+ },
+ "tveitakvitingen": {
+  "season": "jan–apr",
+  "aspect": "NØ",
+  "grade": 3,
+  "gradeReason": "Målinga seier 2 — brattaste beltet 16,4 grader mellom 800 og 900 moh, brattaste steget 25,0 — men ut.no graderer turen «svært krevende skitur», og det grada må bere er lengda og navigasjonen: 8,6 km og 995 høgdemeter éin veg, 17 km tur-retur, over eit platå der «enkelte parti kan være skredutsatt» og fjellski med stålkant er tilrådd. Grad 3 med terrenget målt slakt og sagt slakt.",
+  "roadClosedInWinter": false,
+  "teaserNo": "995 høgdemeter og 8,6 km frå Furedalen alpinsenter: langrennsspora på Mødalsvegen til Mødal, bratte kliv forbi Gråskorvenuten og ein langstrakt rygg til varden.",
+  "teaserEn": "995 metres of ascent over 8.6 km from the Furedalen alpine centre: the groomed tracks along Mødalsvegen to Mødal, steep steps past Gråskorvenuten and a long summit ridge to the cairn.",
+  "hazardNotes": "ut.no: «enkelte parti kan være skredutsatt», fjellski med stålkant tilrådd. Toppen er slak i alle retningar — brattaste 60 m-vindauge i sveipen er 37,5 grader 690–750 m ut mot sørvest — så faren er lengda, vêret og navigasjonen på platået, ikkje toppflanken. Dei bratte klivane ligg mellom 650 og 900 moh aust for Gråskorvenuten.",
+  "sources": [
+   "https://ut.no/turforslag/1112154404/skitur-til-tveitakvitingen-1299-moh-samnanger",
+   "https://ut.no/turforslag/1112771/sata",
+   "https://www.openstreetmap.org/way/219676761"
+  ],
+  "confidence": "medium",
+  "corrections": [
+   "«Furudalen Alpinsenter» finst ikkje i registeret: registeret har Furedalen (Dal/Hyttefelt/Li, Kvam), og den kartlagde parkeringa heiter «Furedalen alpin» (OSM node/10261906575, 382,18 moh).",
+   "«Stoveveggen» og «Middagshola» finst ikkje i registeret nær ruta, heller ikkje med fuzzy søk; søkket på lina mellom 996 og 985 moh er det kjelda kallar Middagshola. «Tjødnadalen» er registerført Tjørnadalen (60.34614/5.96794).",
+   "«Såta» i skildringa («opp mot Såta i bratte klyv») er den lokale Såta på 802 moh sør for fv. 7 (ut.no 1112771) — ikkje appens Såta/Iendefjell på 1260 på nordsida av Kvamskogen.",
+   "Dei fyrste ~100 m frå parkeringa les Alpinbakke (flata ved anlegget); frå 100 m er det Skog og Myr til Mødal. Mødalsvegen er kartlagd piste:type=nordic med grooming classic/skating — «preparerte løyper» er langrennsspor, ikkje alpinbakke, så Trysilfjellet-avvisinga gjeld ikkje.",
+   "verticalM er 1000 (rutt 995) mot ut.nos «989 høydemeter totalt», og lina måler 8,56 km mot publiserte 9,0 — ut.nos eiga GPX-linje måler 8,86."
+  ],
+  "notes": "ut.no er einaste fulle skildringa (difor confidence medium), men lina er ikkje ein rekonstruksjon: korridoren er trekt av ut.no si eiga GPX-linje (api/gpx/trip/1112154404, 257 punkt), som endar 8 m frå det resolverte toppunktet. ut.no 1112771 («Skitur til Såta 802», «Turen fylgjer same rute om vinteren») korroborerer Mødalsvegen-tilkomsten. Ruta: parkeringa ved Furedalen alpin, ~100 m til Mødalsvegen, langrennsspora sørover til Mødal, opp forbi Svartatjørna mot dei bratte klivane, sør for Gråskorvenuten, gjennom søkket og langs ryggen til varden på 1299. Retning enveis (A–B) hos ut.no er linja til toppen; retur same veg. Varsom-region Voss (3031), A-region med dagleg varsel."
  }
 }

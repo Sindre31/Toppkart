@@ -190,4 +190,14 @@ PEAKS = [
     ("ullstinden", "Ullstinden", ["Tromsø"], 1078, 69.79580, 19.66870),
     ("strandtinden", "Strandstinden", ["Lødingen"], 1076, 68.50435, 16.03420),
     ("raskarfjellet", "Råskardfjellet", ["Hemsedal"], 1609, 60.88433, 8.20885),
+    #
+    # — the Bergen round, continued: the Kvamskogen candidates bergen_research.json
+    #   left «ready to route». Såta is registered as **Iendefjell** at the same
+    #   coordinate — the register carries both names, which corroborates Fri
+    #   Flyt's «Såta, som mange kaller Iendafjellet» rather than leaving it as a
+    #   claim about local usage. Tveitakvitingen's register point is 8 m from
+    #   where ut.no's own GPX line ends. —
+    ("sata", "Såta", ["Kvam"], 1260, 60.43158, 5.98895),
+    ("skrott", "Skrott", ["Kvam"], 1320, 60.45728, 6.14436),
+    ("tveitakvitingen", "Tveitakvitingen", ["Kvam", "Samnanger", "Bjørnafjorden"], 1299, 60.32527, 5.90835),
 ]
