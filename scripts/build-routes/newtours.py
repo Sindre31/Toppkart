@@ -111,4 +111,12 @@ NEW_TOURS = {
     "strandtinden": ("Strandtinden", "Harstad"),
     "raskarfjellet": ("Råskarfjellet", "Hemsedal"),
     "gullfjellstoppen": ("Gullfjellstoppen", "Bergen"),
+    # — the Bergen round, continued: the three Kvamskogen candidates the round
+    #   researched and left unbuilt. One new region — Kvamskogen, the massif all
+    #   three stand on, an hour's drive from Bergen, which is how Fri Flyt files
+    #   two of them (its «skiturer-bergen» index) and where ut.no's third
+    #   starts. —
+    "sata": ("Såta", "Kvamskogen"),
+    "skrott": ("Skrott", "Kvamskogen"),
+    "tveitakvitingen": ("Tveitakvitingen", "Kvamskogen"),
 }
