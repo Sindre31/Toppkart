@@ -2476,7 +2476,7 @@ mountain 62 m too low and 1,7 km from where it is. That is the Kjerag and
 Storhornet finding a third time, and it is worth stating plainly: on this
 evidence the register point is a name, not a measurement.
 
-### Gullfjellstoppen is routed, and held
+### Gullfjellstoppen is routed, and the first line ran on water
 
 The corridor is traced off the mapped ways: trailhead to Redningshytta to the
 summit is connected on OSM at **7 750 m**, against ut.no's stated 8,2 km for the
@@ -2529,23 +2529,49 @@ With the flag off, the router is unchanged — verified rather than asserted: th
 run immediately after the patch, before the corridor set `avoidWater`, produced
 the pre-patch line to the metre (226 pts, 7,35 km, +783 / −103, max 25,8°).
 
-### Where Gullfjellstoppen stands
+### Cost is not enough: the line is taken off the water
 
 The line came off Osavatnet, where it had run for the best part of a kilometre.
-Going round costs what going round costs: 7,35 → 7,51 km, and the climb 783 →
-811 m.
+Going round costs what going round costs: 7,35 → 7,80 km, and the climb 783 →
+830 m.
 
-**89 m of 7 514 m is still on water** — 41 m clipping the south corner of
-Svartavatnet, 48 m over the tarn at 766 m. Two added steering waypoints did not
-clear it, and the reason is geometry rather than cost: the waypoint traced off
-the mapped road at 60.38561/5.54783 sits north of the lake's south shore, so the
-leg from it to a point south of the lake crosses the corner whatever that corner
-costs. Moving that waypoint is the fix, not adding more, and it wants a careful
-read of the shore rather than another blind iteration.
+Cost alone did not finish it. It left **89 m of 7 514 m on water**, and rebuilding
+the corridor at 50 m spacing along the two shoreline stretches only got that to
+82 m. The reason is not the price of water; it is the resolution of everything
+around it. The routing grid is about 9 m per cell, a road along a shore is
+narrower than that, smoothing rounds corners, and the line is resampled at 45 m —
+so a leg between two perfectly dry vertices cuts the inside of a bend and lands
+in the lake. Every remaining clip was a single vertex or a single leg with dry
+ground **five metres away**.
 
-So the tour still does not ship. 41 m of the 89 is the regulated lake, and that
-is the hazard this whole detour was about. But it is 1,18% against a line that
-was on the ice for a kilometre, and there are no unknowns left in the remainder.
+So the correction goes where corrections of that size already go. `build()`
+re-pins the trailhead and the summit after smoothing walks them off their marks;
+`avoidWater` now also re-pins the line off the water, asking Kartverket's terrain
+class rather than the router's flatness mask — the mask exists so Dijkstra can
+price water without a network round trip per cell, and this pass runs once per
+line, so it can afford to ask. Vertices on or against the shore move to clear
+ground; legs are read every 2,5 m and get a dry vertex inserted wherever they are
+wet; the two passes repeat until neither has anything left to do.
+
+Three details were each worth a run of their own:
+
+- **A failed lookup must not be cached.** An empty terrain class reads as dry, so
+  one timed-out request pinned a vertex in the tarn for the rest of the run.
+- **Dry is not enough; it has to be clear.** Coordinates are written to five
+  decimals, about a metre, and the class boundary is a raster edge. One vertex
+  read dry where the router put it and wet where the file recorded it. Four
+  metres of clearance survives the rounding — with dryness accepted as a fallback,
+  because between two tarns there may be no four metres to have.
+- **The measurement has to be finer than the fix.** At an 8 m leg scan a 10 m clip
+  survived; at 4 m a 9 m one did. The pass now reports what it could not clear,
+  sampled at half its own step and on the rounded coordinates, so the number is
+  measured rather than assumed.
+
+**The line is 275 points, 7,80 km, +830 / −150 m, max 25,4°, and 0 m on water.**
+Confirmed three ways: the pass's own readout, an independent sweep of Kartverket's
+classes every 2 m (3 769 samples, 0 m), and `check_ground.py` against OSM's water
+polygons (0 m). `check_routes.py` is clean — endpoints on their marks, no step
+over 40°.
 
 ### Still to do
 
