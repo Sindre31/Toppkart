@@ -110,4 +110,5 @@ NEW_TOURS = {
     "kjolen": ("Kjølen", "Troms"),
     "strandtinden": ("Strandtinden", "Harstad"),
     "raskarfjellet": ("Råskarfjellet", "Hemsedal"),
+    "gullfjellstoppen": ("Gullfjellstoppen", "Bergen"),
 }

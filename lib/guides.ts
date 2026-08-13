@@ -2842,6 +2842,48 @@ export const GUIDES: Record<string, TourGuide> = {
       caption: "416 høydemeter og 4,38 km fra Ustaoset vest for Måfådalen på 1104 moh og forbi Tindevatnet på 1317, med skogen som slipper taket på 1084 moh.",
     },
   },
+  gullfjellstoppen: {
+    slug: "gullfjellstoppen",
+    intro:
+      "839 høgdemeter og 7,8 km frå vegenden ved Osavatnet til Bergens høgaste punkt. Dette er den slakaste turen i samlinga: ingen hundremeter av linja held meir enn 8,1 grader i snitt, og det brattaste samanhengande partiet er eit einaste trinn på 27,4 grader. Faren ligg ikkje i ruta, men i dei siste hundre metrane av han — toppkuppelen er slak, og vestsida fell 59,0 grader 200 til 260 meter frå varden.",
+    ascent: [
+      "Frå avgiftsparkeringa ved vegenden på Gullfjellsvegen, 307 moh, innerst i Bjørndalen. Dei fyrste to kilometrane går på grusveg og er så godt som flate: beltet frå 300 til 400 moh måler 2,5 grader i snitt over 2,1 km grunn. Skogen sluttar alt på 324 moh, og alt over det klassar Kartverket som ope område — dette er ein tur utan tregrense å snakke om.",
+      "Ved 2,47 km står du ved sørenden av Svartavatnet, 410 moh. Fri Flyt skildrar vegen som «til høgre for Svartavatnet», og det er der linja går: på land, heile vegen forbi. Svartavatnet er registrert som regulert vatn. Fri Flyt oppgir 392 moh, terrengmodellen les vassflata til 408, og den skilnaden er nedtappinga.",
+      "Redningshytta ligg 18 meter frå linja, 4,23 km ute, og måler 592 moh mot dei «600 moh» kjelda oppgir. Rett etter kjem den vesle unnabakken kjeldene nemner, og han er reell: linja mistar 50 høgdemeter, frå 605 til 555 moh over 252 meter grunn, mellom 4,11 og 4,36 km. Det er 50 av dei 159 høgdemetrane turen gir tilbake undervegs.",
+      "Frå 555 moh stig det jamt att, og det brattaste på heile turen ligg her: eit trinn på 27,4 grader mellom 709 og 727 moh. Det er kort, og det er den brattaste tretti-metaren på linja.",
+      "Over tjørna på 769 moh, 6,21 km ute, flatar det ut i det kjelda kallar eit kupert høgdedrag. Det brattaste hundremeterbeltet på turen ligg her, mellom 800 og 900 moh, og det måler 8,1 grader i snitt over 720 meter grunn. Så gjennom Middagsdalen på 939 moh, 7,40 km ute, og opp til varden på 987.",
+    ],
+    descent: [
+      "Ned same linja: gjennom Middagsdalen, over høgdedraget, forbi tjørna og ned til Redningshytta. Under hytta ventar dei 50 høgdemetrane du mista på veg opp, denne gongen som stigning. Frå Svartavatnet og ut er det grusveg og 2,5 grader — dei siste to kilometrane går du.",
+      "Vanlegaste feilen på dette fjellet er å ta av vestover eller nordvestover frå varden. Toppkuppelen er så slak at overgangen ikkje kjennest på skia: nordsida fell 45,8 grader berre 30 til 90 meter frå varden, nordvestsida 61,2 grader 90 til 150 meter ut, og vestsida 59,0 grader 200 til 260 meter ut. Sørsida, som er den du kom opp, held 4,9 grader i snitt dei fyrste 800 metrane. I flatt lys er skilnaden usynleg.",
+      "Fri Flyt skildrar òg nedkøyringar frå hovudtoppen om Gullfjellshalsen og Vossevardane til Svartavatnet. Det er andre linjer enn denne, og dei er ikkje målte her.",
+    ],
+    avalanche: [
+      {
+        title: "Ruta",
+        body: "Linja er slak heile vegen. Det brattaste hundremeterbeltet, 800 til 900 moh, måler 8,1 grader i snitt, og ingen av dei seks andre belta held meir enn 6,9. Brattaste samanhengande parti er trinnet på 27,4 grader mellom 709 og 727 moh. Det som skifter med vêret her er ikkje bratthenget, men føret: turen startar på 307 moh ved kysten, og snøgrensa ligg ofte over parkeringa.",
+      },
+      {
+        title: "Toppen",
+        body: "Heile turen er ei oppvarming til dei siste hundre metrane. Frå varden fell nordsida 45,8 grader 30 til 90 meter ut, nordvestsida 61,2 grader 90 til 150 meter ut og vestsida 59,0 grader 200 til 260 meter ut; austsida måler 41,3 grader 740 til 800 meter ut og søraustsida 30,6 grader 380 til 440 meter ut. Sørsida, oppstiginga, held 4,9 grader i snitt. Ein slak kuppel over bratte sider er nettopp det terrenget der ei feilpeiling i skodde kostar mest.",
+      },
+      {
+        title: "Isen",
+        body: "Osavatnet ligg på 307 moh ved kysten på Bergens breiddegrad, og Svartavatnet er registrert som regulert. Linja er difor lagd på land heile vegen: 0 meter av 7 803 står på vatn, kontrollert mot Kartverkets terrengklasse kvar andre meter langs heile linja — 3 769 punkt — og mot OSMs vasspolygon. Eit regulert vatn blir tappa ned om vinteren, og is som blir liggjande att over tomrom ber ingenting.",
+      },
+      {
+        title: "Før du går",
+        body: "Gullfjellstoppen ligg i varslingsregionen Hordalandskysten, som er ein B-region: det blir ikkje laga dagleg skredvarsel for dette fjellet. Næraste A-region er Voss, og han dekkjer eit anna og meir innlandsprega fjellparti — les han som kontekst, ikkje som varsel for Gullfjellet. Ta med sender/mottakar, søkjestang og spade. Ei tom side betyr ikkje trygt fjell.",
+      },
+    ],
+    elevationProfile: {
+      path: "M0,200 L26,195 L48,199 L72,199 L97,194 L117,185 L142,186 L166,174 L191,173 L200,172 L225,160 L252,145 L277,137 L304,122 L327,129 L350,135 L372,126 L391,114 L412,97 L434,88 L457,76 L474,77 L477,76 L496,66 L520,61 L541,48 L565,31 L590,23 L600,18",
+      startLabel: "307 moh",
+      endLabel: "987 moh",
+      distanceLabel: "7,8 km",
+      caption: "839 høgdemeter og 7,8 km frå Osavatnet, med det brattaste — eit trinn på 27,4 grader mellom 709 og 727 moh — midtvegs opp.",
+    },
+  },
   grafjell: {
     slug: "grafjell",
     intro:

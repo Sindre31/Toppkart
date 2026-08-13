@@ -1652,5 +1652,29 @@
    "Fri Flyt om tilkomsten, ordrett: «Følg RV52 vestover fra Hemsedal sentrum i 19,5 km og parker i brøytet parkeringslomme på venstre side, 1,5 km etter brua på RV52.» Kartlagd parkering OSM way/1489157738 (fee=no) ligg på 937,6 moh, 120 m frå SSR-punktet Sildegjerdet."
   ],
   "notes": "Fri Flyt: toppunkt 1609, høgdemeter 650, 3,2 km, startsted «Brøytet parkeringslomme ved et stølsområde som heter Sildegjerdet», himmelretning Ø-NØ, bratteste punkt under 30 grader, KAST 1 – Enkelt, 3 timar opp/ned, GPS toppunkt 131815.747/6768999.925 (UTM33). Populariteten står i Fri Flyts eigen artikkel «Tre anbefalte toppturer i Hemsedal», der fjellguide og toppturforfattar Jørgen Aamot fører Råskarfjellet som «en av de mest populære toppturfjellene i Hemsedal» og skriv at det ofte berre blir omtalt med høgda si, «1609». Confidence er medium fordi begge kjeldene er Fri Flyt: rutebeskrivinga og artikkelen har same forfattar og same bok i botnen (Toppturer i Hemsedal, over 40 fjell). Ingen av dei oppgir sesong; kortet set feb–mai, som er vindauget dei tre andre Hemsedal-turane i appen ber, og det er ei slutning."
+ },
+ "gullfjellstoppen": {
+  "season": "jan–apr",
+  "aspect": "SV",
+  "grade": 2,
+  "gradeReason": "Slakaste ruta i heile korpuset. Ingen hundremeter av turen held meir enn 8,1 grader i snitt — det brattaste beltet ligg mellom 800 og 900 moh — og brattaste samanhengande parti på linja er eit einaste trinn på 27,4 grader mellom 709 og 727 moh. Grad 2 og ikkje 1 fordi toppkuppelen ligg rett over vestsida, som fell 59 grader 200 til 260 meter ut, og fordi turen startar på 307 moh ved kysten der føret sjeldan er stabilt.",
+  "roadClosedInWinter": false,
+  "teaserNo": "839 høgdemeter frå vegenden ved Osavatnet, forbi Redningshytta og opp Middagsdalen til Bergens høgaste punkt.",
+  "teaserEn": "839 metres of ascent from the road end at Osavatnet, past Redningshytta and up Middagsdalen to the highest point in Bergen.",
+  "hazardNotes": "Faren på denne turen ligg ikkje i ruta, men i toppen og i vatna. Toppkuppelen er slak, men nordsida fell 45,8 grader berre 30 til 90 meter frå varden, nordvestsida 61,2 grader 90 til 150 meter ut og vestsida 59,0 grader 200 til 260 meter ut; sørsida, som er den ruta kjem opp, held 4,9 grader i snitt dei fyrste 800 metrane. I flatt lys er skilnaden ikkje synleg. Vatna er den andre: Osavatnet ligg på 307 moh ved kysten på Bergens breiddegrad, og Svartavatnet er registrert som InnsjøRegulert — regulert og tappa ned om vinteren. Linja går på land heile vegen, målt til 0 meter på vatn, og det er meint.",
+  "sources": [
+   "https://www.friflyt.no/topptur/skiturer-bergen/turbeskrivelse-gullfjellet",
+   "https://ut.no/turforslag/117729758/gullfjellstoppen-fra-osavatnet",
+   "https://www.bergen.kommune.no/omkommunen/fakta-om-bergen/kuriosa/bergens-fjell-hvor-hoye-er-de"
+  ],
+  "confidence": "high",
+  "corrections": [
+   "Staden registeret kallar «Gullfjellet» (60.37313/5.58038) er ikkje toppen. Han les 909,56 moh mot ei publisert høgd på 987, og høgaste grunn innanfor 700 m av han er 924,83. Gullfjellstoppen ligg 1,7 km nord-nordaust, på 60.38756/5.59037, der rasteret les 987,37 og punkt-API-et 986,8 — nett den publiserte høgda.",
+   "Registerpunktet «Osavatnet» er sjølve vatnet. Utgangspunktet er vegenden på Gullfjellsvegen, 60.37821/5.51921, 307,48 moh, 29 m frå den kartlagde vegen. Fri Flyts «305 moh» stemmer innanfor 1,6 m.",
+   "Aspect er endra frå V til SV. SV er målt frå den lengste samanhengande nedkøyringa på den ferdige linja, ikkje vald.",
+   "verticalM er 839 og ikkje 700. Fri Flyt oppgir 700, som er om lag topp minus start (987 − 307 = 680); kortet ber kumulativ stiging, og linja gir tilbake 159 m undervegs. ut.no oppgir «800 høydemeter totalt» og 8,2 km for same ruta, mot 839 m og 7,80 km målt.",
+   "Fri Flyt oppgir Svartavatnet til 392 moh; DTM-en les vassflata til 408. Skilnaden er venta på eit regulert vatn og er ein av grunnane til at linja ikkje går på isen."
+  ],
+  "notes": "Fri Flyt fører turen i Bergens-indeksen sin og skildrar OPP som «velmerket grusvei til høgre for Svartavatnet (392 moh) og opp til redningshytta (600 moh)», vidare om Korketrekkeren og eit kupert høgdedrag før det leier ned i Middagsdalen og til topps. Alt dette reproduserer på den kartlagde grunnen: vegen passerer 538 m sør for Svartavatnet, Redningshytta ligg 18 m frå linja på 4,23 km og måler 592 moh mot «600 moh», og linja går gjennom Middagsdalen på 939 moh 400 m før toppen. ut.no fører same utgangspunktet, men som fottur med sesong jun–okt; derfrå er berre lengd og stiging brukt. NED hos Fri Flyt skildrar Gullfjellshalsen og Vossevardane, altså ei anna linje enn den ruta går — kortet sin aspect gjeld ruta si eiga nedkøyring."
  }
 }
