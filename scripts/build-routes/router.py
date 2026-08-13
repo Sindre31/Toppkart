@@ -8,7 +8,9 @@ prices the things that matter on the way up:
   * losing height on an ascent is penalised
   * traversing a steep side-slope is penalised even when the step itself is flat,
     which is what keeps the line off cliff bands and out of terrain traps
-  * sea is impassable; frozen lakes are not (this is a winter product)
+  * sea is impassable; frozen lakes are not (this is a winter product) — but a
+    corridor may pass `avoid_water=` to price still water, for a tour whose ice
+    cannot be assumed. See `WATER_FACTOR` below
   * ground with a mapped trail on it is cheaper than identical ground without,
     when `trails=` is passed — see `_trail_factor` below
 
@@ -22,6 +24,7 @@ import json
 import math
 
 import numpy as np
+from scipy import ndimage
 from scipy.ndimage import distance_transform_edt
 from scipy.sparse import coo_matrix
 from scipy.sparse.csgraph import dijkstra
@@ -64,6 +67,40 @@ TARGET_PX = 620       # long side of the routing grid
 # ~0.5 and lines started making detours *to* reach a path, which is the failure
 # this term must not have — a 400 m dogleg to touch a track is worse than the
 # straight line it replaced.
+# --- still water -------------------------------------------------------------
+#
+# The router's default is that a frozen lake is ground, and for an inland tour in
+# February that is right — Besshø spends three and a half kilometres on the ice
+# of Bessvatnet on purpose. But flat water is also the cheapest surface Dijkstra
+# can find, so given a lake lying beside the road that the route actually uses,
+# it takes the lake. On Gullfjellstoppen that put the line on Osavatnet at 307 m
+# on the coast at Bergen, and on Svartavatnet, which is regulated and drawn down
+# in winter — the same hazard that forced the Kråkfjellet and Rensfjellet
+# re-routes. Ice cannot be assumed there the way it can in Jotunheimen.
+#
+# So water is a *cost*, opt-in per corridor, and never a wall. A corridor that
+# genuinely wants the ice can still have it; a corridor that says `avoidWater`
+# gets a line that prefers any reasonable ground over the surface of a lake.
+#
+# Finding the water needs no new data source. A 1 m terrain model renders a lake
+# as the plane it is, and nothing else in Norwegian terrain is flat to within
+# five centimetres over a hectare — checked against Kartverket's own terrain
+# classes on the Gullfjell DEM, where the five largest flat regions came back
+# Innsjø, Innsjø, InnsjøRegulert, InnsjøRegulert and InnsjøRegulert, five for
+# five.
+# The thresholds are tuned against Kartverket's terrain classes on the Gullfjell
+# routing grid rather than in the abstract, because the routing DEM is ~9 m per
+# pixel and a lake's edge is blurred by the resampling. At the resolution the
+# router actually works at, a mask that only catches flat *cores* misses every
+# shore and every narrow arm — which is precisely the ground a shortcut clips.
+# At these values the mask catches 7 of 7 water vertices on the line that
+# prompted it, 29 of 30 randomly sampled masked cells come back Innsjø,
+# InnsjøRegulert or Elv, and the mask is 3% of the grid.
+WATER_FLAT_EPS_M = 0.30    # local relief that still counts as flat
+WATER_MIN_CELLS = 120      # smaller flat patches are benches and bogs, not lakes
+WATER_DILATE = 2           # grow by two cells, to cover the resampled shoreline
+WATER_FACTOR = 12.0        # cost multiplier on water when a corridor avoids it
+
 TRAIL_FACTOR = 0.62
 TRAIL_NEAR_M = 20.0   # full discount within this of the mapped centreline
 TRAIL_FAR_M = 70.0    # no discount beyond this; a ramp between the two
@@ -117,7 +154,7 @@ def _rasterise(dem, lines):
 
 
 class Router:
-    def __init__(self, points, pad_m=900, trails=None):
+    def __init__(self, points, pad_m=900, trails=None, avoid_water=False):
         lats = [p[0] for p in points]
         lngs = [p[1] for p in points]
         midlat = (min(lats) + max(lats)) / 2
@@ -140,7 +177,31 @@ class Router:
         self.blocked = np.isnan(d.z) | (d.z < SEA_LEVEL)
         self.slope = _slope_deg(np.where(np.isnan(d.z), 0.0, d.z), d.mx, d.my)
         self.trail = self._trail_factor(trails)
+        self.water = self._water_factor(avoid_water)
         self._graph = None
+
+    def _water_factor(self, avoid_water):
+        """Per-cell cost multiplier over still water, or `None` when off.
+
+        `None` rather than an array of ones, for the same reason `_trail_factor`
+        returns `None`: a run without it has to be bit-identical to the router as
+        it was before this existed, or a line that moved because of water cannot
+        be told from a line that moved because the cost model changed under it.
+        """
+        if not avoid_water:
+            return None
+        z = np.where(np.isnan(self.dem.z), 0.0, self.dem.z)
+        relief = ndimage.maximum_filter(z, size=3) - ndimage.minimum_filter(z, size=3)
+        lab, n = ndimage.label(relief < WATER_FLAT_EPS_M)
+        if n == 0:
+            return None
+        sizes = np.bincount(lab.ravel())
+        big = sizes >= WATER_MIN_CELLS
+        big[0] = False          # label 0 is everything that is not flat
+        water = ndimage.binary_dilation(big[lab], iterations=WATER_DILATE)
+        if not water.any():
+            return None
+        return np.where(water, WATER_FACTOR, 1.0)
 
     def _trail_factor(self, trails):
         """Per-cell cost multiplier for mapped ground: `TRAIL_FACTOR`…1.0.
@@ -188,6 +249,8 @@ class Router:
         side = 1.0 + (np.clip(self.slope, 0, None) / 28.0) ** 3
         if self.trail is not None:
             side = side * self.trail
+        if self.water is not None:
+            side = side * self.water
 
         for dr, dc in OFFSETS:
             r0, r1 = max(0, -dr), min(H, H - dr)

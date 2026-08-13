@@ -79,7 +79,11 @@ def build(route_rec, summit):
     corridor += [(w["lat"], w["lng"]) for w in route_rec.get("waypoints") or []]
     corridor.append((summit["lat"], summit["lng"]))
 
-    router = Router(corridor)
+    # `avoidWater` is a property of the corridor research, not of the router:
+    # it says «the ice on this tour cannot be assumed», which is a fact about the
+    # mountain and the season that only the research knows. Off by default, so
+    # every existing line is unaffected.
+    router = Router(corridor, avoid_water=bool(route_rec.get("avoidWater")))
     pts = cells_to_latlng(router.dem, router.route(corridor))
     # Smooth first, thin second. The other order thinned the grid staircase down
     # to ~40 m legs and then asked Chaikin to round corners that were now the
