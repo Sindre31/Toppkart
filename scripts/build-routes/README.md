@@ -2436,16 +2436,84 @@ Two of the round's compass claims were re-derived and hold: Slettind's route
 name says the north-west flank, and the line climbs on a bearing of 138–142,
 which is that flank; Ustetind's card says north, and the line climbs on 154.
 
-### Still open
+### Still open — and then worked
 
-The same scan flags **15 further band claims outside these eight** — Okla,
+The same scan flagged **15 further band claims outside these eight** — Okla,
 Folarskardnuten, Grafjell, Høgevarde, Kvamshesten, Kvitegga, Melshornet, Ranten,
-Storhornet, Torvløysa, Vassfjellet, Ytstevasshornet, Glitregga. They are not
-corrected here. Several look like the extractor pairing a ground figure with an
-angle from a neighbouring clause rather than a real defect, and telling those
-apart takes the same sentence-by-sentence reading these eight got. Fixing them
-by pattern is exactly what turned Grafjell's lake elevation into a treeline the
-last time. They are the next round's work.
+Storhornet, Torvløysa, Vassfjellet, Ytstevasshornet, Glitregga. Several looked
+like the extractor pairing a ground figure with an angle from a neighbouring
+clause rather than a real defect, and telling those apart takes the same
+sentence-by-sentence reading these eight got.
+
+The next round did that reading — see "The second reground" below. The scan
+itself was rebuilt band-tied (every «A° fra X til Y moh» claim re-derived
+against its own band with `bands()` and `steepest_span()`, the functions the
+guides were written from) and run over all 91 guides in both languages. Of the
+15, Kvamshesten and Kvitegga dissolved as extractor artefacts — their figures
+reproduce on the line — and the other 13 tours were genuinely stale. The full
+sweep found the same #62 drift in 17 more guides the original scan never
+reached, 30 in all, every one verified against the pre-#62 geometry before it
+was touched. All are corrected; the scan comes back with artefacts only.
+
+## The second reground: the variants the first round's strings missed
+
+`reground_guides.py` (this round's edit list replaces the first round's in the
+file; the first is in git) closed out the #62 drift the exact-string round left
+behind. Exact strings miss variants: the same stale figure often stood twice in
+one guide — once in the sentence #71 fixed and once in an intro or avalanche
+body phrased differently. Bånsæterkampen's intro still carried «brattaste steg
+20,5 grader mellom 961 og 978» while its ascent, three paragraphs down, had
+been corrected to 22,1 between 986 and 1000.
+
+Where a superlative's *identity* moved, the sentence was rewritten rather than
+renumbered, in both languages:
+
+- **Okla's steepest band is 700–800 m in the birch forest**, not 1000–1100 on
+  the shoulder (20,6° there became 15,1). The shoulder paragraph now states its
+  own band without the superlative, and the intro carries the identity.
+- **Tromsdalstinden's steepest single stretch is in the slope up to Salen**
+  (26,3° between 547 and 569 m), not on the upper ridge — which is the slope
+  its avalanche section already told the reader to respect, so the prose now
+  agrees with itself.
+- **Storhornet's steepest step moved from the forest at 826–842 m up to
+  1463–1480 m** below the shelter, and its whole band ladder shifted a tenth.
+- **Rana's steepest hundred is 1200–1300 m on the climb to the arête** (the old
+  claim of 21,0° for 1000–1100 measures 12,3 on the line that follows the
+  trail), and its summit-crest step reads 38,0 between 1530 and 1554.
+- **Glittertinden's steepest band moved from 1400–1500 to 1600–1700 m** with
+  the line's move onto the marked-path side of Steinbudalen's north flank, and
+  its max-angle claim of 19,6° measures 18,5.
+- **Kråkfjellet's steepest place is the forest-road pitch at 467–480 m**, not
+  659–670; **Storbekkhøa's step dropped from under the ridge to the birch
+  forest at 661–683 m**; **Store Bles 35,2° span kept its angle and moved 100
+  height-metres down the summit slope**; **Melshornet's steepest band is now
+  400–500 m**, below the treeline figure its caption had to correct too;
+  **Vassfjellet's «all the steep in one band» became two near-equal bands**;
+  **Skarenes top two bands now tie**, and the sentence names them both.
+
+Two things had to be true before any of it was edited. First, `guides.json`
+had drifted behind the shipped files — the #71 opening-figure fixes lived in
+`lib/guides.ts` and `content.ts` but not in the JSON — so the shipped prose was
+read back into `guides.json` first (54 fields), or re-emitting would have
+reverted those 27 corrections silently. Second, every stale claim was matched
+against the pre-#62 line and reproduced it exactly, which is what identifies
+drift rather than a wrong measurement.
+
+The same round ran `check_ground.py` over all 91, which came back with one
+finding: **Kvamshesten's line is on the ice of three natural tarns** —
+Skaravatnet ~244 m at 715 moh, an unnamed tarn 58 m at 726 in the pass,
+Grunnevatnet ~262 m at 785, measured against the point API's terrain classes
+at 3–4 m steps — while the prose read «held nordsida av vatnet ... rundar
+Grunnevatnet», as if the line stayed on land. None of the three is regulated,
+so by the same reasoning as Styggemann and Folarskardnuten the missing sentence
+was the defect: the guide now states the crossings with their lengths and how
+far offshore the line gets, in both languages.
+
+The proof is mechanical and it all comes back clean: the band-tied scan over
+91×2 guides (artefacts only — fall-line radials, flank sweeps, a reversed
+descent span), `check_guides.py` 0/0, `check_tours.py` clean, `check_routes.py`
+clean, `check_ground.py` clean, and the CI suite including the intro-figure
+test.
 
 ## The Bergen round, researched
 
