@@ -1,6 +1,6 @@
 {
  "round": "Bergen",
- "status": "Gullfjellstoppen routed and measured; blocked on a corridor decision. Såta not routed.",
+ "status": "Router given an opt-in water cost, verified. Gullfjellstoppen routed down to 1,18% of its length on water, from a line that ran a kilometre along Osavatnet. Guide not written.",
  "note": "Gullfjellstoppen is researched, corridored and routed, and is held back by one decision recorded under its findings: the router puts the line on lake ice, by design, and that design does not transfer to a coastal tour starting at 307 m with a regulated lake on the way. Nothing from this file is in lib/tours.ts, lib/routes.ts or lib/guides.ts.",
  "why": "Bergen is the largest hole in the map. The nearest tour in the app is Vesoldo, 43 km out in Hardanger, so a city of 290 000 people has nothing inside an hour's drive.",
  "sources": {
@@ -11,7 +11,7 @@
   {
    "name": "Gullfjellstoppen",
    "kommune": "Bergen",
-   "verdict": "routed, blocked",
+   "verdict": "routed, 89 m still on water",
    "source": "friflyt.no/topptur/skiturer-bergen/turbeskrivelse-gullfjellet",
    "published": {
     "summitM": 987,
@@ -60,16 +60,25 @@
     "The register's Osavatnet point is the lake surface; the trailhead is the road end at 60.37821/5.51921, 307,48 m, 29 m from the mapped Gullfjellsvegen. Fri Flyt's «305 moh» reproduces within 1,6 m.",
     "BLOCKED: the routed line runs over Osavatnet, over Svartavatnet and over a tarn at 766 m. That is the router working as designed — its docstring says «sea is impassable; frozen lakes are not (this is a winter product)» — and flat water is the cheapest ground it knows, so it takes the lake in preference to the road beside it. Twenty-three waypoints pinned along the road at 180 m spacing did not clear it; the line cuts between them.",
     "That assumption does not transfer to this tour. Osavatnet is at 307 m on the coast at the latitude of Bergen, which Fri Flyt itself calls «ikke den mest snøsikre byen», and Svartavatnet is InnsjøRegulert — a regulated lake, drawn down in winter, which is the exact hazard that made Kråkfjellet and Rensfjellet re-routes. A line that sends a paying reader onto that ice is not publishable, whatever the terrain model costs it at.",
-    "Two ways forward, and they are a real choice rather than a detail. Either give the router a water cost — correct, contained if only new tours are re-routed, but it makes this tour the only one of 91 built by a different router — or trace the road section from the mapped ways instead of solving it, which is more accurate ground but a different construction from the other 90. Both need saying out loud in the README; neither should be picked quietly."
+    "Two ways forward, and they are a real choice rather than a detail. Either give the router a water cost — correct, contained if only new tours are re-routed, but it makes this tour the only one of 91 built by a different router — or trace the road section from the mapped ways instead of solving it, which is more accurate ground but a different construction from the other 90. Both need saying out loud in the README; neither should be picked quietly.",
+    "The router now has an opt-in water cost and it did the job it was added for: the line came off Osavatnet entirely, where it had run for the best part of a kilometre. Length went 7,35 -> 7,51 km and the climb 783 -> 811 m, which is what going round costs.",
+    "89 m of 7 514 m is still on water, and two added steering waypoints did not clear it. The Svartavatnet clip is a leg problem rather than a cost problem: the waypoint traced off the mapped road at 60.38561/5.54783 sits north of the lake's south shore, so the leg from it to a point south of the lake crosses the corner whatever the cost. Moving that waypoint, not adding more, is the fix — and it wants a careful read of the shore rather than another blind iteration.",
+    "The tour is not publishable at 89 m on water, and 41 m of that is the regulated lake. But it is 1,18% against a line that was previously on the ice for a kilometre, and the remaining fix is corridor geometry with no unknowns left in it."
    ],
    "routed": {
-    "corridor": "26 waypoints, 23 of them traced off the mapped road at ~180 m spacing",
-    "distanceM": 7354,
-    "gainM": 783,
-    "lossM": 103,
-    "maxAngle": 25.8,
-    "mapped_ground_check": "trailhead -> Redningshytta -> summit is connected on OSM ways at 7 750 m, against ut.no's stated 8,2 km for the same route",
-    "blocked_on": "the line runs on water at six of seventy-six sampled vertices"
+    "corridor": "28 waypoints: 23 traced off the mapped road at ~180 m spacing, two steering points, three on the upper mountain",
+    "avoidWater": true,
+    "distanceM": 7514,
+    "gainM": 811,
+    "lossM": 131,
+    "maxAngle": 22.3,
+    "points": 230,
+    "on_water_m": 89,
+    "on_water_pct": 1.18,
+    "remaining": [
+     "41 m clipping the south corner of Svartavatnet (InnsjøRegulert) at vertex 78",
+     "48 m over a tarn at 766 m (Innsjø) at vertices 184-185"
+    ]
    }
   },
   {

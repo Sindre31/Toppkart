@@ -2503,17 +2503,49 @@ which is precisely the hazard that forced the Kråkfjellet and Rensfjellet
 re-routes. Ice cannot be assumed here the way it can on a February plateau in
 Jotunheimen.
 
-So there is a choice to make before this tour ships, and it is a real one:
+### The router got the water cost
 
-- **Give the router a water cost.** Correct, and contained if only new tours are
-  re-routed — but then this tour is the only one of 91 built by a different
-  router, and the other 90 keep lines that were hand-corrected for the same
-  problem after the fact.
-- **Trace the road section from the mapped ways** instead of solving it. More
-  accurate ground, and a different construction from every other tour.
+Of the two ways out, tracing the road only fixes the ground a road exists on —
+and this line also crossed a tarn at 766 m, where there is no road to trace. So
+the router got the fix, as `avoid_water=`, opt-in per corridor and never a wall.
+A corridor that genuinely wants the ice keeps it: Besshø spends three and a half
+kilometres on Bessvatnet on purpose, and nothing about that changes.
 
-Neither should be picked quietly, which is why this is written down rather than
-decided in a commit.
+**Finding the water needs no new data source.** A 1 m terrain model renders a
+lake as the plane it is, and nothing else in Norwegian terrain is flat to within
+a few centimetres over a hectare. On a 5 m grid the five largest flat regions
+around Gullfjellet came back Innsjø, Innsjø, InnsjøRegulert, InnsjøRegulert and
+InnsjøRegulert — five for five against Kartverket's own classes.
+
+The thresholds are tuned at the resolution the router actually works at, which
+is about 9 m per pixel, not at the resolution the idea was tested at. That
+mattered: a mask catching only flat *cores* missed every shore and every narrow
+arm, which is exactly the ground a shortcut clips, and it moved the line not at
+all. At `eps 0,30 m`, `min 120 cells`, dilated 2, the mask catches **7 of 7**
+water vertices on the offending line, **29 of 30** randomly sampled masked cells
+come back as water by Kartverket's class, and the mask is 3% of the grid.
+
+With the flag off, the router is unchanged — verified rather than asserted: the
+run immediately after the patch, before the corridor set `avoidWater`, produced
+the pre-patch line to the metre (226 pts, 7,35 km, +783 / −103, max 25,8°).
+
+### Where Gullfjellstoppen stands
+
+The line came off Osavatnet, where it had run for the best part of a kilometre.
+Going round costs what going round costs: 7,35 → 7,51 km, and the climb 783 →
+811 m.
+
+**89 m of 7 514 m is still on water** — 41 m clipping the south corner of
+Svartavatnet, 48 m over the tarn at 766 m. Two added steering waypoints did not
+clear it, and the reason is geometry rather than cost: the waypoint traced off
+the mapped road at 60.38561/5.54783 sits north of the lake's south shore, so the
+leg from it to a point south of the lake crosses the corner whatever that corner
+costs. Moving that waypoint is the fix, not adding more, and it wants a careful
+read of the shore rather than another blind iteration.
+
+So the tour still does not ship. 41 m of the 89 is the regulated lake, and that
+is the hazard this whole detour was about. But it is 1,18% against a line that
+was on the ice for a kilometre, and there are no unknowns left in the remainder.
 
 ### Still to do
 
