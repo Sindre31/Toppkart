@@ -45,7 +45,31 @@ export async function generateMetadata({
   const { slug } = await params;
   const lang = await getLang();
   const tour = getTour(slug);
-  if (!tour) return { title: guideDict(lang).notFoundTitle, robots: { index: false } };
+  /* Ukjent slug: `notFound()` her, ikke en tittel å rendre videre med.
+   *
+   *  `/tur/finnesikke` svarte `200 OK`. Riktig side kom fram — «Turen finnes
+   *  ikke», `noindex` og det hele — men statuslinja sa at alt var i orden, og
+   *  det er en myk 404. `/tur/*` er et ubegrenset URL-rom, så hver skrivefeil,
+   *  hver avkortede lenke og hvert bortkomne søkeord under `/tur/` var en
+   *  gyldig side å hente. Bing teller slikt som vår feil, og en katalog full
+   *  av dem er en katalog det ikke lønner seg å krype — som er nøyaktig det
+   *  «Discovered but not crawled» beskriver.
+   *
+   *  Grunnen til at `notFound()` i sidekomponenten ikke satte koden er
+   *  rot-`loading.tsx`: en `loading`-grense gjør ruta til en Suspense-grense,
+   *  og da strømmer Next svaret. Hodet er sendt — med `200` — før
+   *  sidekomponenten har rukket å slå opp slug-en, og kastet kan bare bytte
+   *  ut innholdet, ikke koden som allerede er ute.
+   *
+   *  `generateMetadata` kjører før strømmen åpnes, fordi `<head>` må være
+   *  ferdig før den første byten kan sendes. Kaster vi her, er ingenting
+   *  sendt ennå, og Next svarer 404 med `app/not-found.tsx` i kroppen.
+   *
+   *  Alternativet var å fjerne `app/loading.tsx`. Det virker også, og koster
+   *  prefetch på hver eneste dynamiske rute — se fila for hva det gjorde med
+   *  navigasjonen. `dynamicParams = false` virker ikke: ingen av sidene
+   *  prerendres (de leser cookies), så Next går til rendring uansett. */
+  if (!tour) notFound();
 
   // Peak and region are proper nouns — the title is identical in both.
   const title = `${tour.name}, ${tour.region}`;

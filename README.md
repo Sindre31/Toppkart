@@ -139,6 +139,7 @@ design-reference/        The HTML prototypes and the product/design handoff. Rea
                          truth; not shipped.
 docs/
   deploy.md              Vercel, Supabase and Stripe setup checklist
+  seo.md                 What crawlers get, and the caching fixes that were priced and declined
 ```
 
 ## Routes
