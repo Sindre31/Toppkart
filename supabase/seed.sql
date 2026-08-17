@@ -47,7 +47,7 @@ values
   ('stornappstinden', 'Stornappstinden', 'Lofoten',    68.1441, 13.41493,  740,  680, '3–5 t', 2, 'N',  'jan–apr', 'Lofot-klassiker i overkommelig format — mye fjell for høydemeterne.', true),
   ('midtitinden', 'Midtitinden', 'Bodø', 67.34238, 15.00416, 1060, 1050, '4–6 t', 2, 'SØ', 'jan–apr', '1050 høgdemeter frå havnivå ved Sagelva: gjennom hyttefeltet, rampene mot Innertinden, militærløypemerkinga vestover og ryggane til topps.', true),
   ('sandhornet', 'Sandhornet', 'Bodø', 67.11124, 14.06789, 993, 1020, '4–6 t', 2, 'S', 'jan–apr', '1020 høgdemeter frå fjæra på Horsdal: stien langs sjøen, trappene til Stjerndalen, og slake rygger til varden på øyfjellet over Saltfjorden.', true),
-  ('tortenviktinden', 'Tortenviktinden', 'Helgeland', 66.3421, 13.23387, 1028, 1020, '4–6 t', 2, 'SØ', 'feb–mai', '1018 høgdemeter frå Neset ved Flostrand: rett opp gjennom skogen, vestover på rabbane over det ulendte flatpartiet og opp den slake helninga til utsikta over Helgelandskysten.', true),
+  ('tortenviktinden', 'Tortenviktinden', 'Helgeland', 66.3421, 13.23387, 1028, 1020, '4–6 t', 2, 'SØ', 'feb–mai', '1023 høgdemeter frå Neset ved Flostrand: rett opp gjennom skogen, vestover på rabbane over det ulendte flatpartiet og opp den slake helninga til utsikta over Helgelandskysten.', true),
   ('tomskjevelen', 'Tomskjevelen', 'Helgeland', 66.27901, 12.84655, 922, 950, '4–6 t', 2, 'S', 'jan–apr', '950 høgdemeter frå åkeren ved Forsland på Tomma: stien til Forslandsvatnet, rundt tjernet på land, og den nordvestgåande ryggen heilt til topps på øyfjellet Fri Flyt kallar ein av dei finaste toppane på Helgelandskysten.', true),
   ('lukttinden', 'Lukttinden', 'Helgeland', 65.99015, 13.54443, 1348, 1130, '4–6 t', 2, 'NV', 'apr–jun', '1129 høgdemeter frå garden på Kammen: traktorvegen, skogen mot bekken mellom Nordtinden og Lukttinden, og den slake ryggen opp til Vefsns mest markerte topp.', true),
   ('vassfjellet', 'Vassfjellet', 'Trøndelag', 63.26205, 10.35659, 711, 560, '3–5 t', 1, 'V', 'des–apr', '540 høydemeter fra Markavollen forbi Vassfjellhytta — den nærmeste toppturen til Trondheim, i løype hele vegen.', true),
@@ -921,14 +921,14 @@ Ned trappene ber du skia att, og stien langs fjæra tek deg heim til Horsdal —
 where slug = 'sandhornet';
 
 update public.tk_tours set
-  description_up   = 'Frå garden Neset ved Flostrand, 15 moh, på E12 kystriksvegen. Registeret set Tortenviktinden i Lurøy, medan tilkomsten frå Flostrand ligg i Rana — fjellet og startstaden er i kvar sin kommune. Visit Helgeland fører same ruta med 5,2 km og 1 025 høgdemeter éin veg; lina måler 5,40 km og 1 018.
+  description_up   = 'Frå garden Neset ved Flostrand, 15 moh, på E12 kystriksvegen. Registeret set Tortenviktinden i Lurøy, medan tilkomsten frå Flostrand ligg i Rana — fjellet og startstaden er i kvar sin kommune. Visit Helgeland fører same ruta med 5,2 km og 1 025 høgdemeter éin veg; lina måler 5,57 km og 1 023.
 
 Fyrste kilometeren er nesten flat: beltet frå 0 til 100 moh måler 6,7 grader over 761 meter grunn og beltet frå 100 til 200 berre 4,5 over 1 233 meter. Skogen sluttar på 152 moh etter Kartverkets klassar, med ope område frå 158, og skoggrensa kjem 1,66 km ute. Fri Flyt seier «rett opp til du kommer over skogen i nord-nordvestlig retning», og det er den biten.
 
-Over skogen går lina vestover på rabbane, slik kjelda seier. Belta frå 200 til 500 moh ligg jamt mellom 12,3 og 13,2 grader. Så kjem det flatare partiet ho skildrar som «noe ulendt, med små bekkedaler på tvers av fjellet»: beltet frå 700 til 800 moh måler 7,8 grader over 674 meter grunn — det slakaste over skoggrensa, og det lengste. Det er her turen kjennest lang.
+Over skogen går lina vestover på rabbane, slik kjelda seier. Belta frå 200 til 500 moh ligg jamt mellom 12,3 og 13,2 grader. Så kjem det flatare partiet ho skildrar som «noe ulendt, med små bekkedaler på tvers av fjellet»: belta frå 700 til 900 moh måler 10,4 og 8,8 grader over til saman 1 170 meter grunn — det slakaste over skoggrensa, og det lengste. Det er her turen kjennest lang. Her ligg ei klynge tjern på 785 til 792 moh, og lina går sør om heile klynga: 0 meter på vatn, målt mot OSMs vasspolygon.
 
-«Herfra ser du ikke selve Tortenviktinden, men toppen ligger rett bak det høyeste punktet du ser», seier Fri Flyt. Bak det stig den siste helninga: beltet frå 900 til 1000 moh måler 18,5 grader, det brattaste på turen, og det brattaste samanhengande partiet ligg her — 24,8 grader mellom 971 og 990 moh, 5,22 km ute, altså under to hundre meter før varden. 1028 moh mot publiserte 1027.',
-  description_down = 'Ned same ruta. Det brattaste du køyrer er dei 24,8 gradene rett under toppen, og så blir det slakare heile vegen ut — noko som gjer at dei siste kilometrane er staking meir enn køyring.
+«Herfra ser du ikke selve Tortenviktinden, men toppen ligger rett bak det høyeste punktet du ser», seier Fri Flyt. Bak det stig den siste helninga: beltet frå 900 til 1000 moh måler 18,6 grader, det brattaste på turen, og det brattaste samanhengande partiet ligg her — 23,7 grader mellom 971 og 994 moh, 5,39 km ute, altså under to hundre meter før varden. 1028 moh mot publiserte 1027.',
+  description_down = 'Ned same ruta. Det brattaste du køyrer er dei 23,7 gradene rett under toppen, og så blir det slakare heile vegen ut — noko som gjer at dei siste kilometrane er staking meir enn køyring.
 
 Nordsida skal du ikkje bort i. Frå varden fell ho 43,3 grader i snitt med 62,2 grader som brattaste 60 meter 80 til 140 meter ut, og nordvestsida 35,2 med 60,0 grader 230 til 290 meter ut. Ruta kjem opp frå søraust, som måler 15,3 grader i snitt, og vestsida er 11,9 — kontrasten mellom dei to sidene av denne toppen er det einaste ein treng vite om han i dårleg sikt.
 
@@ -936,7 +936,7 @@ Fri Flyt nemner at fjellet gir «mulighet for bratt rennekjøring», og Visit He
   avalanche_notes  = jsonb_build_array(
     jsonb_build_object(
       'title', 'Ruta',
-      'body',  'Ingen av kjeldene gir eit bratthetsfelt, og Fri Flyt klassifiserer ikkje turen etter KAST. Målinga fyller hòlet: ingen hundremeter av lina held meir enn 18,5 grader i snitt, og brattaste samanhengande parti er 24,8 grader mellom 971 og 990 moh. Visit Helgeland graderer turen «Challenging, long», og det er lengda grada handlar om — 5,40 km og tusen høgdemeter frå havflata.'
+      'body',  'Ingen av kjeldene gir eit bratthetsfelt, og Fri Flyt klassifiserer ikkje turen etter KAST. Målinga fyller hòlet: ingen hundremeter av lina held meir enn 18,6 grader i snitt, og brattaste samanhengande parti er 23,7 grader mellom 971 og 994 moh. Visit Helgeland graderer turen «Challenging, long», og det er lengda grada handlar om — 5,57 km og tusen høgdemeter frå havflata.'
     ),
     jsonb_build_object(
       'title', 'Grøveldalen',

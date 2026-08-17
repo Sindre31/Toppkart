@@ -5956,7 +5956,7 @@
    {
     "id": "normalruta",
     "name": "Normalruta frå Neset",
-    "description": "Frå Neset ved Flostrand rett opp til over skoggrensa i nord-nordvestleg retning, så vestover på rabbane over det flate, ulendte partiet og opp den slake helninga til toppen",
+    "description": "Frå Neset ved Flostrand rett opp til over skoggrensa i nord-nordvestleg retning, så vestover på rabbane over det flate, ulendte partiet, sør om tjernklynga på 785–792 moh og opp den slake helninga til toppen",
     "trailhead": {
      "name": "Neset",
      "lat": 66.32307,
@@ -5996,13 +5996,37 @@
       "elevation_m": 646.6
      },
      {
+      "name": "sør for tjernklynga, aust",
+      "lat": 66.3364,
+      "lng": 13.254,
+      "elevation_m": 758.1
+     },
+     {
+      "name": "sør for tjernklynga, midt",
+      "lat": 66.3362,
+      "lng": 13.25,
+      "elevation_m": 777.7
+     },
+     {
+      "name": "sør for tjernklynga, vest",
+      "lat": 66.3363,
+      "lng": 13.246,
+      "elevation_m": 801.5
+     },
+     {
+      "name": "opp mot ryggen",
+      "lat": 66.337,
+      "lng": 13.243,
+      "elevation_m": 824.6
+     },
+     {
       "name": "siste slake helninga",
       "lat": 66.3402,
-      "lng": 13.24388,
-      "elevation_m": 839.3
+      "lng": 13.24,
+      "elevation_m": 896.2
      }
     ],
-    "source": "researched, verified, no local audit",
+    "source": "researched, verified, corridor taken south of the 785–792 m tarns, no local audit",
     "notes": "Fri Flyt: KAST ikkje klassifisert. Faremoment: «Grøveldalen har høye og bratte sva på begge sider som kan løsne, særlig om våren.» Ruta hans: frå parkeringa rett opp til over skogen i nord-nordvestleg retning, så vestover på rabbane til du naturleg svingar mot toppen; etter skogen kjem eit flatare parti som er noko ulendt med små bekkedalar på tvers; toppen ligg rett bak det høgaste punktet du ser. Visit Helgeland fører same ruta med 5,2 km, 1 025 høgdemeter og 3–4 timar éin veg, graden «Challenging, long», og ei alternativ rute på 4,3 km og 1 005 høgdemeter med brattare oppstigning."
    }
   ]

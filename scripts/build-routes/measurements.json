@@ -1651,7 +1651,7 @@
   },
   {
    "what": "Utgangspunktet og dei to kjeldene sine tal",
-   "figure": "garden Neset 66.32307/13.33398 les 15,0 moh, 4,94 km frå toppen i luftline. Lina måler 5,40 km og 1 018 høgdemeter; Fri Flyt oppgir 1000, Visit Helgeland 5,2 km og 1 025 m",
+   "figure": "garden Neset 66.32307/13.33398 les 15,0 moh, 4,94 km frå toppen i luftline. Lina måler 5,57 km og 1 023 høgdemeter; Fri Flyt oppgir 1000, Visit Helgeland 5,2 km og 1 025 m",
    "how": "OSM-oppslag på Neset, DTM1-punkt-API, kumulativ lengd langs routes.json."
   },
   {
@@ -1666,7 +1666,7 @@
   },
   {
    "what": "Kor det brattaste partiet ligg",
-   "figure": "24,8° mellom 971 og 990 moh, 5,22 km ute på ei linje på 5,40 km — altså under 200 m før varden. Det flate ulendte partiet kjelda skildrar er beltet 700–800 moh, som måler 7,8° over 674 m grunn",
+   "figure": "23,7° mellom 971 og 994 moh, 5,39 km ute på ei linje på 5,57 km — altså under 200 m før varden. Det flate ulendte partiet kjelda skildrar er belta 700–900 moh, som måler 10,4 og 8,8 grader over til saman 1 170 m grunn",
    "how": "steepestStep og bands() i guide_facts.json mot kumulativ lengd langs routes.json."
   },
   {
@@ -1678,6 +1678,11 @@
    "what": "Skoggrensa",
    "figure": "siste skogpunkt 152 moh, fyrste opne 158 moh, 1,66 km ute på ei linje på 5,40 km",
    "how": "guide_facts.py sin treeline-skann mot Kartverkets terrengklasse."
+  },
+  {
+   "what": "Tjernklynga på 785–792 moh, og kvifor korridoren går sør om henne",
+   "figure": "OSM har minst ti vasspolygon i beltet lat 66.3370–66.3396 / lon 13.2453–13.2516, mellom 785 og 792 moh. Den fyrste lina kryssa 140 m av dei, den andre 90 m; korridoren går no sør om heile klynga og har 0 meter på vatn. Omvegen kostar 0,17 km og senkar brattaste samanhengande parti frå 26,0 til 23,7 grader",
+   "how": "check_ground.py mot OSMs vasspolygon i cachen, punkt-i-polygon mot den ferdige lina, og DTM1-punkt-API på den sørlege omvegen (alle punkt ÅpentOmråde)."
   }
  ]
 }

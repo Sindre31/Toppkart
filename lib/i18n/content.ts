@@ -257,7 +257,7 @@ export const TOUR_TEASER_EN: Record<string, string> = {
   lukttinden:
     "1129 metres of ascent from the farm at Kammen: the tractor road, the forest toward the stream between Nordtinden and Lukttinden, and the gentler ridge to the most striking summit in Vefsn.",
   tortenviktinden:
-    "1018 metres of ascent from Neset by Flostrand: straight up through the forest, west along the ribs across the broken shelf, and up the gentle rise to the view over the Helgeland coast.",
+    "1023 metres of ascent from Neset by Flostrand: straight up through the forest, west along the ribs across the broken shelf, and up the gentle rise to the view over the Helgeland coast.",
 
 };
 
@@ -1256,22 +1256,22 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
   },
   tortenviktinden: {
     intro:
-      "1018 metres of ascent over 5.40 km from Neset by Flostrand to Tortenviktinden — from sea level to a thousand metres in a single line, with the whole Helgeland coast below. The tour is long rather than steep: the steepest hundred-metre band measures 18.5 degrees between 900 and 1000 m, and the steepest sustained stretch 24.8. It is the length and the unstable coastal season that decide the day.",
+      "1023 metres of ascent over 5.57 km from Neset by Flostrand to Tortenviktinden — from sea level to a thousand metres in a single line, with the whole Helgeland coast below. The tour is long rather than steep: the steepest hundred-metre band measures 18.6 degrees between 900 and 1000 m, and the steepest sustained stretch 23.7. It is the length and the unstable coastal season that decide the day.",
     ascent: [
-      "From the farm Neset by Flostrand, 15 m, on the E12 coastal road. The register places Tortenviktinden in Lurøy while the approach from Flostrand lies in Rana — the mountain and the trailhead are in different municipalities. Visit Helgeland carries the same route at 5.2 km and 1,025 metres of ascent one way; the line measures 5.40 km and 1,018.",
+      "From the farm Neset by Flostrand, 15 m, on the E12 coastal road. The register places Tortenviktinden in Lurøy while the approach from Flostrand lies in Rana — the mountain and the trailhead are in different municipalities. Visit Helgeland carries the same route at 5.2 km and 1,025 metres of ascent one way; the line measures 5.57 km and 1,023.",
       "The first kilometre is all but flat: the band from 0 to 100 m measures 6.7 degrees over 761 metres of ground and the band from 100 to 200 only 4.5 over 1,233 metres. The forest ends at 152 m by Kartverket's classes, with open ground from 158, and the treeline comes 1.66 km in. Fri Flyt says «rett opp til du kommer over skogen i nord-nordvestlig retning» — straight up until you clear the forest, heading north-north-west — and that is this stretch.",
-      "Above the forest the line runs west along the ribs, as the source says. The bands from 200 to 500 m sit evenly between 12.3 and 13.2 degrees. Then comes the flatter section it describes as «noe ulendt, med små bekkedaler på tvers av fjellet», somewhat broken with small stream valleys across the mountain: the band from 700 to 800 m measures 7.8 degrees over 674 metres of ground — the gentlest above the treeline, and the longest. This is where the tour feels long.",
-      "«Herfra ser du ikke selve Tortenviktinden, men toppen ligger rett bak det høyeste punktet du ser» — from here you cannot see Tortenviktinden itself, but the summit lies just behind the highest point you can see, says Fri Flyt. Behind it rises the last slope: the band from 900 to 1000 m measures 18.5 degrees, the steepest of the tour, and the steepest sustained stretch sits here — 24.8 degrees between 971 and 990 m, 5.22 km in, under two hundred metres before the cairn. 1028 m against a published 1027.",
+      "Above the forest the line runs west along the ribs, as the source says. The bands from 200 to 500 m sit evenly between 12.3 and 13.2 degrees. Then comes the flatter section it describes as «noe ulendt, med små bekkedaler på tvers av fjellet», somewhat broken with small stream valleys across the mountain: the bands from 700 to 900 m measure 10.4 and 8.8 degrees over 1,170 metres of ground between them — the gentlest above the treeline, and the longest. This is where the tour feels long. A cluster of tarns sits here between 785 and 792 m, and the line passes south of the whole group: 0 metres on water, measured against OSM's water polygons.",
+      "«Herfra ser du ikke selve Tortenviktinden, men toppen ligger rett bak det høyeste punktet du ser» — from here you cannot see Tortenviktinden itself, but the summit lies just behind the highest point you can see, says Fri Flyt. Behind it rises the last slope: the band from 900 to 1000 m measures 18.6 degrees, the steepest of the tour, and the steepest sustained stretch sits here — 23.7 degrees between 971 and 994 m, 5.39 km in, under two hundred metres before the cairn. 1028 m against a published 1027.",
     ],
     descent: [
-      "Back down the same route. The steepest thing you ski is the 24.8 degrees just below the summit, and it eases the whole way out — which makes the last kilometres poling more than skiing.",
+      "Back down the same route. The steepest thing you ski is the 23.7 degrees just below the summit, and it eases the whole way out — which makes the last kilometres poling more than skiing.",
       "The north side is not to be touched. From the cairn it falls 43.3 degrees on average with 62.2 degrees as its steepest 60 metres 80 to 140 metres out, and the north-west 35.2 with 60.0 degrees 230 to 290 metres out. The route comes up from the south-east, which measures 15.3 degrees on average, and the west side is 11.9 — the contrast between the two sides of this summit is the one thing worth knowing about it in poor visibility.",
       "Fri Flyt notes that the mountain offers «mulighet for bratt rennekjøring», the chance of steep couloir skiing, and Visit Helgeland carries an alternative route of 4.3 km and 1,005 metres with a steeper ascent and less traversing. Neither is measured as a route of its own here.",
     ],
     avalanche: [
       {
         title: "The route",
-        body: "Neither source gives a steepness field, and Fri Flyt does not grade the tour under KAST. The measurement fills the gap: no hundred metres of the line averages more than 18.5 degrees, and the steepest sustained stretch is 24.8 degrees between 971 and 990 m. Visit Helgeland grades the tour «Challenging, long», and it is the length the grade is about — 5.40 km and a thousand metres of ascent from sea level.",
+        body: "Neither source gives a steepness field, and Fri Flyt does not grade the tour under KAST. The measurement fills the gap: no hundred metres of the line averages more than 18.6 degrees, and the steepest sustained stretch is 23.7 degrees between 971 and 994 m. Visit Helgeland grades the tour «Challenging, long», and it is the length the grade is about — 5.57 km and a thousand metres of ascent from sea level.",
       },
       {
         title: "Grøveldalen",
@@ -1289,8 +1289,8 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
     elevationProfile: {
       startLabel: "15 m",
       endLabel: "1028 m",
-      distanceLabel: "5.4 km",
-      caption: "1018 metres of ascent over 5.40 km from Neset, with the steepest ground — 24.8 degrees between 971 and 990 m — in the final rise, barely 200 metres before the cairn.",
+      distanceLabel: "5.6 km",
+      caption: "1023 metres of ascent over 5.57 km from Neset, with the steepest ground — 23.7 degrees between 971 and 994 m — in the final rise, barely 200 metres before the cairn.",
     },
   },
   tomskjevelen: {

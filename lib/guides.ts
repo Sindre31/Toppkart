@@ -1018,22 +1018,22 @@ export const GUIDES: Record<string, TourGuide> = {
   tortenviktinden: {
     slug: "tortenviktinden",
     intro:
-      "1018 høgdemeter og 5,40 km frå Neset ved Flostrand til Tortenviktinden — frå havflata til tusen meter i ei einaste linje, med heile Helgelandskysten under seg. Turen er lang heller enn bratt: brattaste hundremetersbeltet måler 18,5 grader mellom 900 og 1000 moh, og brattaste samanhengande parti 24,8. Det er lengda og den ustabile kystsesongen som avgjer dagen.",
+      "1023 høgdemeter og 5,57 km frå Neset ved Flostrand til Tortenviktinden — frå havflata til tusen meter i ei einaste linje, med heile Helgelandskysten under seg. Turen er lang heller enn bratt: brattaste hundremetersbeltet måler 18,6 grader mellom 900 og 1000 moh, og brattaste samanhengande parti 23,7. Det er lengda og den ustabile kystsesongen som avgjer dagen.",
     ascent: [
-      "Frå garden Neset ved Flostrand, 15 moh, på E12 kystriksvegen. Registeret set Tortenviktinden i Lurøy, medan tilkomsten frå Flostrand ligg i Rana — fjellet og startstaden er i kvar sin kommune. Visit Helgeland fører same ruta med 5,2 km og 1 025 høgdemeter éin veg; lina måler 5,40 km og 1 018.",
+      "Frå garden Neset ved Flostrand, 15 moh, på E12 kystriksvegen. Registeret set Tortenviktinden i Lurøy, medan tilkomsten frå Flostrand ligg i Rana — fjellet og startstaden er i kvar sin kommune. Visit Helgeland fører same ruta med 5,2 km og 1 025 høgdemeter éin veg; lina måler 5,57 km og 1 023.",
       "Fyrste kilometeren er nesten flat: beltet frå 0 til 100 moh måler 6,7 grader over 761 meter grunn og beltet frå 100 til 200 berre 4,5 over 1 233 meter. Skogen sluttar på 152 moh etter Kartverkets klassar, med ope område frå 158, og skoggrensa kjem 1,66 km ute. Fri Flyt seier «rett opp til du kommer over skogen i nord-nordvestlig retning», og det er den biten.",
-      "Over skogen går lina vestover på rabbane, slik kjelda seier. Belta frå 200 til 500 moh ligg jamt mellom 12,3 og 13,2 grader. Så kjem det flatare partiet ho skildrar som «noe ulendt, med små bekkedaler på tvers av fjellet»: beltet frå 700 til 800 moh måler 7,8 grader over 674 meter grunn — det slakaste over skoggrensa, og det lengste. Det er her turen kjennest lang.",
-      "«Herfra ser du ikke selve Tortenviktinden, men toppen ligger rett bak det høyeste punktet du ser», seier Fri Flyt. Bak det stig den siste helninga: beltet frå 900 til 1000 moh måler 18,5 grader, det brattaste på turen, og det brattaste samanhengande partiet ligg her — 24,8 grader mellom 971 og 990 moh, 5,22 km ute, altså under to hundre meter før varden. 1028 moh mot publiserte 1027.",
+      "Over skogen går lina vestover på rabbane, slik kjelda seier. Belta frå 200 til 500 moh ligg jamt mellom 12,3 og 13,2 grader. Så kjem det flatare partiet ho skildrar som «noe ulendt, med små bekkedaler på tvers av fjellet»: belta frå 700 til 900 moh måler 10,4 og 8,8 grader over til saman 1 170 meter grunn — det slakaste over skoggrensa, og det lengste. Det er her turen kjennest lang. Her ligg ei klynge tjern på 785 til 792 moh, og lina går sør om heile klynga: 0 meter på vatn, målt mot OSMs vasspolygon.",
+      "«Herfra ser du ikke selve Tortenviktinden, men toppen ligger rett bak det høyeste punktet du ser», seier Fri Flyt. Bak det stig den siste helninga: beltet frå 900 til 1000 moh måler 18,6 grader, det brattaste på turen, og det brattaste samanhengande partiet ligg her — 23,7 grader mellom 971 og 994 moh, 5,39 km ute, altså under to hundre meter før varden. 1028 moh mot publiserte 1027.",
     ],
     descent: [
-      "Ned same ruta. Det brattaste du køyrer er dei 24,8 gradene rett under toppen, og så blir det slakare heile vegen ut — noko som gjer at dei siste kilometrane er staking meir enn køyring.",
+      "Ned same ruta. Det brattaste du køyrer er dei 23,7 gradene rett under toppen, og så blir det slakare heile vegen ut — noko som gjer at dei siste kilometrane er staking meir enn køyring.",
       "Nordsida skal du ikkje bort i. Frå varden fell ho 43,3 grader i snitt med 62,2 grader som brattaste 60 meter 80 til 140 meter ut, og nordvestsida 35,2 med 60,0 grader 230 til 290 meter ut. Ruta kjem opp frå søraust, som måler 15,3 grader i snitt, og vestsida er 11,9 — kontrasten mellom dei to sidene av denne toppen er det einaste ein treng vite om han i dårleg sikt.",
       "Fri Flyt nemner at fjellet gir «mulighet for bratt rennekjøring», og Visit Helgeland fører ei alternativrute på 4,3 km og 1 005 høgdemeter med brattare oppstigning og mindre traversering. Ingen av dei er målte som eigne ruter her.",
     ],
     avalanche: [
       {
         title: "Ruta",
-        body: "Ingen av kjeldene gir eit bratthetsfelt, og Fri Flyt klassifiserer ikkje turen etter KAST. Målinga fyller hòlet: ingen hundremeter av lina held meir enn 18,5 grader i snitt, og brattaste samanhengande parti er 24,8 grader mellom 971 og 990 moh. Visit Helgeland graderer turen «Challenging, long», og det er lengda grada handlar om — 5,40 km og tusen høgdemeter frå havflata.",
+        body: "Ingen av kjeldene gir eit bratthetsfelt, og Fri Flyt klassifiserer ikkje turen etter KAST. Målinga fyller hòlet: ingen hundremeter av lina held meir enn 18,6 grader i snitt, og brattaste samanhengande parti er 23,7 grader mellom 971 og 994 moh. Visit Helgeland graderer turen «Challenging, long», og det er lengda grada handlar om — 5,57 km og tusen høgdemeter frå havflata.",
       },
       {
         title: "Grøveldalen",
@@ -1049,11 +1049,11 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,200 L24,198 L49,191 L74,186 L99,182 L124,178 L148,178 L171,177 L196,173 L219,167 L239,159 L259,152 L279,145 L305,134 L331,127 L351,120 L370,112 L389,102 L409,91 L429,81 L454,68 L475,62 L494,60 L516,58 L539,49 L564,37 L584,25 L600,18",
+      path: "M0,200 L24,198 L48,191 L72,186 L96,182 L121,178 L144,178 L166,177 L190,173 L213,167 L232,159 L252,152 L271,145 L296,134 L321,127 L341,120 L359,112 L378,102 L397,91 L417,81 L441,73 L456,66 L475,63 L494,58 L516,55 L534,50 L554,42 L577,30 L596,19 L600,18",
       startLabel: "15 moh",
       endLabel: "1028 moh",
-      distanceLabel: "5,4 km",
-      caption: "1018 høgdemeter og 5,40 km frå Neset, med det brattaste — 24,8 grader mellom 971 og 990 moh — i den siste helninga, knappe 200 meter før varden.",
+      distanceLabel: "5,6 km",
+      caption: "1023 høgdemeter og 5,57 km frå Neset, med det brattaste — 23,7 grader mellom 971 og 994 moh — i den siste helninga, knappe 200 meter før varden.",
     },
   },
   tomskjevelen: {

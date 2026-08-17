@@ -3640,7 +3640,7 @@ the fifth had been routed for two rounds and could not ship.
 | Lonketinden | Senja | 784 m | 3,06 km | 30,0° | «30-35 grader (kort parti)» |
 | Skolpan | Senja | 607 m | 2,31 km | 27,1° | «27-30 grader» |
 | Lukttinden | Helgeland | 1129 m | 3,99 km | 28,1° | ut.no «opp i 30 grader» (alt. 2) |
-| Tortenviktinden | Helgeland | 1018 m | 5,40 km | 24,8° | — (ingen kjelde gir tal) |
+| Tortenviktinden | Helgeland | 1023 m | 5,57 km | 23,7° | — (ingen kjelde gir tal) |
 
 Every line lands inside the figure its own source publishes. That is the point
 of the table: three of the five sources state a steepness, and the router was
@@ -3702,13 +3702,24 @@ the honest move is to print both.
 
 ### Tortenviktinden: sea level to a thousand metres
 
-1018 m of ascent over 5,40 km from the farm Neset, against Visit Helgeland's
+1023 m of ascent over 5,57 km from the farm Neset, against Visit Helgeland's
 1 025 m over 5,2 km — the closest independent corroboration in the round. The
 register puts the summit in **Lurøy** while the approach from Flostrand is in
 **Rana**. Fri Flyt's only named hazard, Grøveldalen's «høye og bratte sva på
 begge sider», is a registered cirque 2,5 km south of the cairn and off the route;
-the guide says which. The flat broken shelf the source describes is the 700–800 m
-band at 7,8° over 674 m of ground.
+the guide says which. The flat broken shelf the source describes is the 700–900 m
+bands at 10,4° and 8,8° over 1 170 m of ground between them.
+
+**And that shelf is where `check_ground.py` earned its keep again.** The first
+routed line crossed **140 m of water at 792 moh**; a bypass south of the nearest
+tarn cut that to 90 m; the mapped picture turned out to be a *cluster* of at
+least ten polygons between 785 and 792 moh, sitting exactly where Fri Flyt writes
+«små bekkedaler på tvers av fjellet». The corridor now goes south of the whole
+group. It costs 0,17 km, brings the line to **0 m on water**, and drops the
+steepest sustained stretch from 26,0° to 23,7°. Every figure in the guide was
+rewritten twice as the line moved — the same lesson the Istind round recorded
+earlier on this branch, and the reason the band check runs after every re-route
+rather than before.
 
 ### What is declared rather than assumed
 

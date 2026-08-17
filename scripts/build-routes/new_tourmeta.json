@@ -2107,9 +2107,9 @@
   "aspect": "SØ",
   "grade": 2,
   "roadClosedInWinter": false,
-  "gradeReason": "Grad 2 på lengda, ikkje på henget: 1018 høgdemeter frå 15 moh over 5,40 km, med brattaste hundremetersbelte på 18,5 grader og brattaste samanhengande parti på 24,8. Ingen av kjeldene gir eit bratthetsfelt; Visit Helgeland graderer turen «Challenging, long», og det er lengda og den ustabile kystsesongen som ber grada.",
-  "teaserNo": "1018 høgdemeter frå Neset ved Flostrand: rett opp gjennom skogen, vestover på rabbane over det ulendte flatpartiet og opp den slake helninga til utsikta over Helgelandskysten.",
-  "teaserEn": "1018 metres of ascent from Neset by Flostrand: straight up through the forest, west along the ribs across the broken shelf, and up the gentle rise to the view over the Helgeland coast.",
+  "gradeReason": "Grad 2 på lengda, ikkje på henget: 1023 høgdemeter frå 15 moh over 5,57 km, med brattaste hundremetersbelte på 18,6 grader og brattaste samanhengande parti på 23,7. Ingen av kjeldene gir eit bratthetsfelt; Visit Helgeland graderer turen «Challenging, long», og det er lengda og den ustabile kystsesongen som ber grada.",
+  "teaserNo": "1023 høgdemeter frå Neset ved Flostrand: rett opp gjennom skogen, vestover på rabbane over det ulendte flatpartiet og opp den slake helninga til utsikta over Helgelandskysten.",
+  "teaserEn": "1023 metres of ascent from Neset by Flostrand: straight up through the forest, west along the ribs across the broken shelf, and up the gentle rise to the view over the Helgeland coast.",
   "hazardNotes": "Fri Flyts faremoment: «Grøveldalen har høye og bratte sva på begge sider som kan løsne, særlig om våren.» Grøveldalen er registerført som Botn på 66.31998/13.23767, 2,5 km sør for toppen, og ruta går ikkje der. Visit Helgeland ber deg sjekke både vêr- og skredvarsel, og peikar på at terrenget er «mostly free of trees», som gjer skredvurderinga viktigare.",
   "sources": [
    "https://www.friflyt.no/topptur/skiturer-helgeland/turbeskrivelse-tortenviktinden",
@@ -2120,7 +2120,8 @@
   "corrections": [
    "Registeret set **Tortenviktinden** (Fjell) i **Lurøy** på 66.34217/13.23361, medan tilkomsten frå Flostrand ligg i Rana. Toppsøket løyser 1028,5 mot publiserte 1027.",
    "Startstaden «Neset» løyser seg til garden Neset, 66.32307/13.33398, som les 15,0 moh — 4,94 km frå toppen i luftline. 1028 − 15 = 1013 mot Fri Flyts «1000 høydemeter» og Visit Helgelands «1025 m»; lina stig 1018 over 5,40 km mot Visit Helgelands 5,2 km.",
-   "Ingen kjelde publiserer sesongmånader. Fri Flyt skriv at «den kystnære beliggenheten … gjør også at sesongen er ustabil med varierende snøforhold», og Visit Helgeland fører hovudruta som vintertur med alternativruta tilgjengeleg «after Easter». Kortets feb–mai er difor redaksjonell, og guiden seier det."
+   "Ingen kjelde publiserer sesongmånader. Fri Flyt skriv at «den kystnære beliggenheten … gjør også at sesongen er ustabil med varierende snøforhold», og Visit Helgeland fører hovudruta som vintertur med alternativruta tilgjengeleg «after Easter». Kortets feb–mai er difor redaksjonell, og guiden seier det.",
+   "**Korridoren er lagd sør om tjernklynga på 785–792 moh.** Dei to fyrste linene kryssa høvesvis 140 og 90 meter vatn i eit belte med minst ti kartlagde tjern rett under toppryggen — nettopp det flate, ulendte partiet Fri Flyt skildrar med «små bekkedaler på tvers av fjellet». Omvegen sør om heile klynga kostar 0,17 km, gir 0 meter på vatn og senkar brattaste samanhengande parti frå 26,0 til 23,7 grader."
   ],
   "notes": "Fri Flyt: «Fra parkeringen går du rett opp til du kommer over skogen i nord-nordvestlig retning. Følg så vestover på rabbene til du naturlig svinger mer rett mot toppen. Etter at du har kommet igjennom skogen kommer du til et flatere parti som er noe ulendt, med små bekkedaler på tvers av fjellet. Herfra ser du ikke selve Tortenviktinden, men toppen ligger rett bak det høyeste punktet du ser. Gå rett mot dette, og følg deretter den slake helningen opp det siste stykket til toppen.» NED er same ruta. Visit Helgeland fører same turen med 5,2 km, 1 025 høgdemeter og 3–4 timar éin veg, og ei alternativrute på 4,3 km og 1 005 høgdemeter med brattare oppstigning og mindre traversering på nedturen."
  }
