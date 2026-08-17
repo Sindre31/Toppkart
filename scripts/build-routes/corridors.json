@@ -5634,5 +5634,111 @@
     "notes": "Fri Flyt: KAST 1 – Enkelt, brattaste punkt under 27 grader, faremoment «ingen spesielle». Sesongen desember–mai er kjeldas eiga, og han kallar turen «en flott mørketidstur» — desemberlys er si eiga vurdering. Nedfarten er same trasé med variasjonsrom."
    }
   ]
+ },
+ "istinden": {
+  "routes": [
+   {
+    "id": "normalvegen",
+    "name": "Normalvegen frå Tindelva",
+    "description": "Frå parkeringa der Tindelva kjem ned ved Iselvmoen på vegen mot Fjellstad, opp sørsida av elva gjennom den bratte bjørkelia, over skoggrensa innover i gryta mot nordveggen, og opp ryggen på vestsida av veggen til toppen",
+    "trailhead": {
+     "name": "Tindelva",
+     "lat": 68.97744,
+     "lng": 18.52065,
+     "elevation_m": 80.0,
+     "fullName": "Tindelva"
+    },
+    "waypoints": [
+     {
+      "name": "sørsida av Tindelva",
+      "lat": 68.974,
+      "lng": 18.53,
+      "elevation_m": 153.0
+     },
+     {
+      "name": "bjørkelia",
+      "lat": 68.969,
+      "lng": 18.54,
+      "elevation_m": 599.0
+     },
+     {
+      "name": "gryta under nordveggen",
+      "lat": 68.963,
+      "lng": 18.546,
+      "elevation_m": 789.0
+     },
+     {
+      "name": "ryggen vest for veggen",
+      "lat": 68.958,
+      "lng": 18.552,
+      "elevation_m": 970.0
+     },
+     {
+      "name": "ryggen ved 1020",
+      "lat": 68.954,
+      "lng": 18.558,
+      "elevation_m": 1023.0
+     },
+     {
+      "name": "ryggen ved 1300",
+      "lat": 68.951,
+      "lng": 18.562,
+      "elevation_m": 1304.0
+     }
+    ],
+    "source": "researched, verified (corrected), no local audit",
+    "notes": "Fri Flyt: KAST ikkje klassifisert. Faremomenta er hans eigne: «Skredfare må vurderes nøye på nedkjøringene i botnen mellom Søndre og Vestre Istind og ned fra Søndre Istind. Ryggen opp normalveien er relativt skredsikker. Hold god avstand fra hengeskavlene ut over Nordveggen.» Siste stykket mot toppen er ofte avblåse, så skia må kanskje berast. Nedkøyringsrenna sørvest frå toppen er 30–35 grader. Isøks og stegjern gjeld berre toppegg-varianten frå Søndre Istind."
+   }
+  ]
+ },
+ "husfjellet": {
+  "routes": [
+   {
+    "id": "skaland",
+    "name": "Normalruta frå Skaland",
+    "description": "Frå kyrkja på Skaland etter Dronningstien til Grillbua, vidare på rydda skogstrasé opp til Sommerdalen og forbi Sommerdalhaugen, og så jamt stigande langs ryggen til toppen",
+    "trailhead": {
+     "name": "Skaland",
+     "lat": 69.44455,
+     "lng": 17.2983,
+     "elevation_m": 3.0,
+     "fullName": "Skaland"
+    },
+    "waypoints": [
+     {
+      "name": "Dronningstien mot Grillbua",
+      "lat": 69.449,
+      "lng": 17.294,
+      "elevation_m": 38.0
+     },
+     {
+      "name": "skogstraséen",
+      "lat": 69.454,
+      "lng": 17.289,
+      "elevation_m": 239.0
+     },
+     {
+      "name": "Sommerdalen",
+      "lat": 69.459,
+      "lng": 17.284,
+      "elevation_m": 277.0
+     },
+     {
+      "name": "ryggen over Sommerdalhaugen",
+      "lat": 69.463,
+      "lng": 17.28,
+      "elevation_m": 417.0
+     },
+     {
+      "name": "ryggen mot toppen",
+      "lat": 69.467,
+      "lng": 17.276,
+      "elevation_m": 432.0
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: KAST 1 – Enkelt, brattaste punkt under 27 grader, faremoment «Skavler». Hans eigne åtvaringar: utløpsområde opp mot Litje Brusen og Store Brusen, siste egga mot toppunktet ofte avblåse med bratte sider på begge kantar, hengeskavler på ryggen mot nord, og «Ikke la deg friste å velge annen rute ned fra toppen. Utsatt terreng.» Læringspunktet hans er å leggja spor under 25–30 grader og lesa utløpsområda gjennom Sommerdalen."
+   }
+  ]
  }
 }

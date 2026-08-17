@@ -4863,5 +4863,149 @@
    ],
    "confidence": "medium"
   }
+ },
+ {
+  "slug": "istinden",
+  "verdict": "corrected",
+  "corrections": [
+   "**Registerfeil retta.** Oppføringa peikte på ein Istinden på 1459 moh i indre Sørdalen mot nordlandsgrensa — eit verkeleg fjell registeret kjenner, men ikkje turen: einaste skildringa av det er ein sommarfjelløpsrapport frå august. Fjellet alle meiner er **Vestre Istinden**, 1489 moh i Bardu, landemerket i Indre Troms, og Fri Flyt publiserer full skiskildring for det. Same slug, rett fjell, 50 km lenger nord. Toppsøket løyser 1488,6 mot publiserte 1489.",
+   "Startstaden er Fri Flyts eigen: «Stor parkeringsplass der Tindelva kommer ned ved Iselvmoen på vegen mot Fjellstad». Registeret har Iselvmoen (Bruk, 68.97744/18.52065) og Tindelva (Bekk, 68.97428/18.54491); parkeringspunktet les 80 moh, og 1489 − 1400 = 89 — Fri Flyts høgdemeter impliserer nett denne starten.",
+   "Ruta reproduserer: sørsida av Tindelva opp den bratte bjørkelia (153 → 599 moh), ut av skogen og innover i gryta mot nordveggen (789), og opp ryggen på vestsida av veggen (970 → 1023 → 1304) til toppen. Alt måler ÅpentOmråde over skoggrensa.",
+   "Isøks og stegjern gjeld ikkje normalvegen: Fri Flyt nemner dei berre for varianten over toppeggen frå Søndre Istind, og den er ikkje korridoren. Utmarsjen frå Tunebrua går på ein skogsbilveg som «som regel ikke [er] brøytet» — det er utgangen, ikkje starten, og guiden seier det."
+  ],
+  "rejectReason": "",
+  "corridor": {
+   "routeId": "normalvegen",
+   "routeName": "Normalvegen frå Tindelva",
+   "routeDescriptionFull": "Frå parkeringa der Tindelva kjem ned ved Iselvmoen på vegen mot Fjellstad, opp sørsida av elva gjennom den bratte bjørkelia, over skoggrensa innover i gryta mot nordveggen, og opp ryggen på vestsida av veggen til toppen",
+   "trailhead": {
+    "name": "Tindelva",
+    "lat": 68.97744,
+    "lng": 18.52065,
+    "elevationM": 80,
+    "osmEvidence": "Parkeringa ved Iselvmoen (registerets Bruk-punkt) på vegen mot Fjellstad, der Tindelva (Bekk, 68.97428/18.54491) kjem ned. Vegen er offentleg og brøytt."
+   },
+   "waypoints": [
+    {
+     "name": "sørsida av Tindelva",
+     "lat": 68.974,
+     "lng": 18.53,
+     "elevationM": 153
+    },
+    {
+     "name": "bjørkelia",
+     "lat": 68.969,
+     "lng": 18.54,
+     "elevationM": 599
+    },
+    {
+     "name": "gryta under nordveggen",
+     "lat": 68.963,
+     "lng": 18.546,
+     "elevationM": 789
+    },
+    {
+     "name": "ryggen vest for veggen",
+     "lat": 68.958,
+     "lng": 18.552,
+     "elevationM": 970
+    },
+    {
+     "name": "ryggen ved 1020",
+     "lat": 68.954,
+     "lng": 18.558,
+     "elevationM": 1023
+    },
+    {
+     "name": "ryggen ved 1300",
+     "lat": 68.951,
+     "lng": 18.562,
+     "elevationM": 1304
+    }
+   ],
+   "season": "feb–mai",
+   "aspect": "NV",
+   "grade": 3,
+   "gradeReason": "",
+   "roadClosedInWinter": false,
+   "hazardNotes": "Fri Flyt: KAST ikkje klassifisert. Faremomenta er hans eigne: «Skredfare må vurderes nøye på nedkjøringene i botnen mellom Søndre og Vestre Istind og ned fra Søndre Istind. Ryggen opp normalveien er relativt skredsikker. Hold god avstand fra hengeskavlene ut over Nordveggen.» Siste stykket mot toppen er ofte avblåse, så skia må kanskje berast. Nedkøyringsrenna sørvest frå toppen er 30–35 grader. Isøks og stegjern gjeld berre toppegg-varianten frå Søndre Istind.",
+   "teaserNo": "",
+   "teaserEn": "",
+   "sources": [
+    "https://www.friflyt.no/topptur/tromso/turbeskrivelse-istind",
+    "https://ut.no/turforslag/1110441/istind-1489-moh",
+    "https://peakbook.org/en/peakbook-element/830/en/Vestre+Istinden.html"
+   ],
+   "confidence": "medium"
+  }
+ },
+ {
+  "slug": "husfjellet",
+  "verdict": "ok",
+  "corrections": [
+   "Registerets Husfjellet (Fjell, 69.47024/17.27304) ligg på Fri Flyts publiserte GPS-punkt (UTM33 588943.76/7708450.43 → 69.47024/17.27299) — dei to fell saman på metern, og toppsøket løyser 631,9 mot publiserte 632.",
+   "Startstaden «Kirka på Skaland» løyser seg: Skaland (Bygdelag, 69.44455/17.29830) på fv. 862, som er livsnerven til Senjahopen og Mefjord og brøytt heile året. Startpunktet les 3 moh — turen går frå fjøra.",
+   "Ruta reproduserer på terrenget: 38 moh der Dronningstien tek av, 239 i skogstraséen, 277 i Sommerdalen, 417 på ryggen over Sommerdalhaugen og 632 på toppen. Fri Flyts «785 høgdemeter» er meir enn skilnaden frå havet til toppen — kortet ber den ruta gainen.",
+   "Fri Flyts eiga åtvaring er tydeleg og høyrer heime i guiden: «Ikke la deg friste å velge annen rute ned fra toppen. Utsatt terreng.» Og: hengeskavler på ryggen mot nord, utløpsområde opp mot Litje Brusen og Store Brusen (registeret har Storbrusen, Fjell, 69.45830/17.31328)."
+  ],
+  "rejectReason": "",
+  "corridor": {
+   "routeId": "skaland",
+   "routeName": "Normalruta frå Skaland",
+   "routeDescriptionFull": "Frå kyrkja på Skaland etter Dronningstien til Grillbua, vidare på rydda skogstrasé opp til Sommerdalen og forbi Sommerdalhaugen, og så jamt stigande langs ryggen til toppen",
+   "trailhead": {
+    "name": "Skaland",
+    "lat": 69.44455,
+    "lng": 17.2983,
+    "elevationM": 3,
+    "osmEvidence": "Kyrkja på Skaland ved fv. 862 — vegen til Senjahopen og Mefjord, brøytt heile året. Registerets Skaland (Bygdelag)."
+   },
+   "waypoints": [
+    {
+     "name": "Dronningstien mot Grillbua",
+     "lat": 69.449,
+     "lng": 17.294,
+     "elevationM": 38
+    },
+    {
+     "name": "skogstraséen",
+     "lat": 69.454,
+     "lng": 17.289,
+     "elevationM": 239
+    },
+    {
+     "name": "Sommerdalen",
+     "lat": 69.459,
+     "lng": 17.284,
+     "elevationM": 277
+    },
+    {
+     "name": "ryggen over Sommerdalhaugen",
+     "lat": 69.463,
+     "lng": 17.28,
+     "elevationM": 417
+    },
+    {
+     "name": "ryggen mot toppen",
+     "lat": 69.467,
+     "lng": 17.276,
+     "elevationM": 432
+    }
+   ],
+   "season": "feb–mai",
+   "aspect": "SØ",
+   "grade": 1,
+   "gradeReason": "",
+   "roadClosedInWinter": false,
+   "hazardNotes": "Fri Flyt: KAST 1 – Enkelt, brattaste punkt under 27 grader, faremoment «Skavler». Hans eigne åtvaringar: utløpsområde opp mot Litje Brusen og Store Brusen, siste egga mot toppunktet ofte avblåse med bratte sider på begge kantar, hengeskavler på ryggen mot nord, og «Ikke la deg friste å velge annen rute ned fra toppen. Utsatt terreng.» Læringspunktet hans er å leggja spor under 25–30 grader og lesa utløpsområda gjennom Sommerdalen.",
+   "teaserNo": "",
+   "teaserEn": "",
+   "sources": [
+    "https://www.friflyt.no/topptur/senja/husfjellet",
+    "https://ut.no/turforslag/1114032",
+    "https://www.friflyt.no/topptur/senja"
+   ],
+   "confidence": "high"
+  }
  }
 ]

@@ -3287,6 +3287,249 @@ cards, `check_guides.py` 0 unsourced numbers and 0 reassurance claims
 across 208 guide texts, `test_check_guides.py` 15, `check_ground.py` clean,
 and the CI suite.
 
+## The adversarial round: the standing gap, closed
+
+Every round since the first has ended with the same sentence — the guides are
+verified against the terrain model, not against anyone who has skied these
+mountains, and the independent read whose only job is to break them has not
+happened for the newest tours. This round is that read, plus the mechanical
+check that should have existed alongside it.
+
+Nothing new went on the map. What changed is that **22 band figures and about
+fifty prose claims across sixteen guides are now true where they were not**.
+
+### `check_bands.py` — the claim that carries its own address
+
+`check_guides.py` asks whether a number in the copy can be sourced at all.
+`check_bands.py` asks the narrower, harder question: when the prose ties an
+angle to a *named height band*, does that band measure that angle on the line
+the app draws today? The difference is where re-routes hide. A guide that said
+«20,6 grader mellom 1000 og 1100 moh» kept both numbers after #62 moved its
+line — 20.6 was a real measurement somewhere and 1000–1100 was a real band —
+so a number-sourcing pass walked straight past a sentence that had become
+false. That drift was found once by hand, in a round that re-read thirty
+guides. This is that read as a script, over both languages and all 104 tours.
+
+It found fifteen claims in six guides that the hand pass had missed, and two
+of them were the dangerous kind, where the *identity* of a superlative had
+moved rather than just its value:
+
+- **Snøhetta** called 1800–1900 m its steepest hundred. That band measures
+  13,8°; the steepest is 1700–1800 at 16,0°. Both the height and the angle
+  were wrong.
+- **Kirketaket**, **Melderskin** and **Skåla** each named a band one step
+  below the true steepest one, and **Slogen**'s steepest forest hundred is
+  200–300 m at 21,9°, not 100–200 m at 22,8°.
+
+`reground_bands.py` carries the twenty-two edits, each of which must match
+exactly once or the run refuses to write. Where only the figure had drifted the
+number was replaced; where the identity had moved the sentence was rewritten to
+say where the steep ground actually is.
+
+Two limits are worth writing down, because both were bugs in the check before
+they were features. The English guides write four-figure heights with a
+thousands separator — «between 1,700 and 1,800 m» — and a decimal-comma reader
+turns that into 1.7, which matches no band and silently drops half the corpus;
+the scan normalises it now. And the *sustained stretch* is deliberately not
+checked: a band claim carries its own address, but a sustained-stretch claim
+does not, and the corpus routinely puts the source's rating, the band, the step
+and sometimes a flank angle in one sentence. A check that guesses which figure
+the superlative owns reports defects that are only parsing, so that question is
+left to `check_guides.py` and to a reader.
+
+### The independent read
+
+Three agents took the fourteen newest tours with one instruction: refute. They
+re-fetched every source page, re-queried the register, re-ran the flank sweeps
+and recomputed the superlatives. Ten were read in the first wave and the
+Bergen/Kvamskogen four in the second, so the gap every previous round's
+write-up had to name is now closed on all 104 guides.
+
+The findings sorted into six shapes, and the first is the one that matters
+most:
+
+**Fabricated or altered quotations — four of them, inside quotation marks and
+attributed to Fri Flyt.** Finnbufjellet's guide had «Nordeggen har et par
+luftige partier hvor man må vurdere ferdighetene og skredfaren»; the page says
+«utsatte områder hvor ferdigheter og skredfare må vurderes». Fastdalstinden's
+had «Sørsiden har vært **skuddpunkt** for dødelige skredulykker» — the source
+says «åsted for et par tragiske skredulykker med dødelig utfall», and
+*skuddpunkt* (the release point) is a stronger and unsupported claim.
+Tomskjevelen's headline — «regnes av mange som Helgelands fineste skifjell» —
+is a promotion of «mange regner Tomskjevelen som en av de absolutt fineste
+toppene på hele Helgelandskysten», and it had ridden into the tour card's
+teaser. Vatnaknausen's KAST quote had been trimmed of «En del brattere», the
+two words that say the terrain is steeper.
+
+**Warnings the source gives for *this* route, dropped or moved onto a
+variant.** Fastdalstinden's fatal-accident sentence sits inside the normal
+route's own description, not the south-side variant the guide attached it to.
+Varden's page carries «Skredutsatte områder i øvre deler ned fra salen» — the
+saddle the line crosses — while the guide imported Kolbeindalen's warnings from
+the *other* page and then told the reader the danger was in a valley they were
+not going to. Midtitinden's source says «vær oppmerksom på den konvekse
+overgangen som begynner på 800 moh»; the guide called that ground «jamn», and
+the tour's steepest sustained stretch measures inside that rollover. Four more
+Midtitinden warnings — recorded slab avalanches on the east slope, ski one at
+a time in the gully, the cornice edge on the north-west ridge — reached
+neither language.
+
+**Superlatives placed where they are not.** `steepestStep` in
+`guide_facts.json` gives *elevations*, not position along the route, and three
+guides read it as a place. Sandhornet's 32,5° is the stair section at 26–51
+moh, 1,3 km into a 5 km route — the guide put it in the summit flank, three
+times, and so manufactured agreement with the source at a value steeper than
+the source's own. Englafjell's 30,1° is in the valley climb at 312–330 moh, not
+on the corniced summit ridge. Vatnaknausen's crux is *below* its treeline: the
+21,9° step sits at 738–756 m in the forest above Nyestølen, while the flank the
+guide called the steepest measures 11,2°.
+
+**Compass bearings a reader would act on in fog.** Sandhornet's guide said
+south-east was the only way home; the line bears 189° and the trailhead lies on
+200°. Tomskjevelen's said south along a north-west-trending ridge; the measured
+descent bears 134–147°.
+
+**Register claims, in both directions.** Finnbufjellet's descent named
+«Sendobotnen», which does not exist — the registered basin is Finnbugjuvet.
+Englafjell's guide said the register does not carry Hjorteklett; it carries
+**Hjortaklett**, 460 m north of Såta. Varden attributed «hold til høyre rundt»
+to Ørntinden when the source says «toppen av Aksla» — registered
+**Ørntindaksla**, 316 m, which makes the detour cost 24 m rather than 50. And
+Midtitinden's «registerpunktet er ikkje toppen» was half wrong: the point is
+294 m away, not 190, and the true summit *is* named in the register, as
+**Mjønestindan**, 15 m from the climbed cell.
+
+**Card fields that contradict the guide or the source.** Varden's teaser said
+820 höjdmeter where the line gains 825 and pointed at the **west** flank — the
+side the guide spends two paragraphs telling you not to ski — while the card's
+own aspect and the source both say east. Duration is longer than the source on
+every one of the six newest tours and was declared on none; the season
+convention («kortets jan–apr er lånt … og guiden seier det») now extends to it.
+
+### The Bergen/Kvamskogen four
+
+The second wave read the four the first had left, and found the same shapes
+again — plus one the earlier waves had not: a guide that shipped correct in
+Norwegian and wrong in English, because the two languages had been corrected
+separately.
+
+**A source's entire hazard note, dropped.** Fri Flyt's Faremomenter for
+Gullfjellet reads «Hele Glumragjelet, samt de to rennene, er veldig skredutsatt
+vinterstid, og på våren kommer det ofte is og stein ned fra de stupbratte
+fjellsidene», and none of it reached either language. It is not a warning about
+this line — which is the gentlest in the corpus, no band over 8,1° — and that
+is exactly why leaving it out was the wrong call: a reader who finds the page
+finds a hazard the guide never mentioned. The register has no *Glumragjelet*;
+the name is **Glamregjelet**, and the gully sits 663 m due west of the cairn at
+576 moh, straight below the west side the descent section already warns falls
+59,0°. Both languages now quote the note and place it. (There is a second
+Glamregjelet 4,37 km north, and Pilatusgjelet 624 m west-south-west at 793 moh
+— the register carries more gullies on that side than the source names, so the
+guide names the one it can place and stops there.)
+
+**The same superlative misplacement, in a tour the first wave had not reached.**
+Såta's guide said the south-west couloir between Såterindane «byrjar med 43,4
+grader berre 110 til 170 meter frå varden», in three places across two
+languages. The register puts **Såterindane 837 m south-west** of the cairn: the
+43,4° right below the summit is the shoulder, not the mouth of the couloir, and
+Fri Flyt's own text says to continue *past* the cairn to find it. Written as it
+stood, a reader in poor visibility would have dropped into the wrong thing 700 m
+early.
+
+**A safety-critical bearing that survived in one language only.** Skrott's
+Norwegian descent had been corrected to say the north-west side is not the way
+home — it falls 49,8° over the first twenty metres — and that the shoulder you
+came up lies due **north**. The English still read "the north-west shoulder you
+came up measures 7.0 degrees on average", naming the cliff as the gentle way
+down. The 7,0° is real and is the trap: it is an 800 m mean that averages the
+drop into the notch against the climb back up toward Glynt. The north shoulder
+measures 17,5° over its first 400 m, and both languages now say so. Skrott also
+paraphrased westcoastpeaks' axe-and-crampons line as being needed «for ei trygg
+nedstigning» / "for a safe descent" — the source states a requirement, and the
+guide had turned it into an assurance. `check_guides.py`'s reassurance rule
+caught that one.
+
+**A height read off the wrong feature.** Tveitakvitingen's English put the line
+past Svartatjørna "at the 598 m level". The nearest vertex is 86 m from the
+register point at 621 moh, and the tarn itself reads 618,2. Gullfjellstoppen
+had the mirror image: Norwegian gave Redningshytta 597,5 moh and English 592,
+and both figures are real — 597,5 is the hut point, 592 is the line 18 m away.
+Neither said which, so both now say both.
+
+**A written guide the app could not reach.** `varden-smaatindan`'s row in
+`lib/tours.ts` carried no `hasGuide` at all, so a finished guide in both
+languages was invisible in the app. Re-emitting from `guides.json` set it. The
+same card's `verticalM` said 820 where the line gains 825 — the teaser had
+already been corrected to 825, so the card was contradicting itself — and
+`lib/tours.ts`, `tourmeta.json` and `seed.sql` now all read 825.
+
+Making that guide visible is what surfaced the round's last finding, and it is
+worth writing down because it is the shape `check_ground.py` exists for.
+Varden's copy names «Lysløypa», and OSM has a path reaching both the trailhead
+(3 m) and the summit (94 m), so the trail check enforced the claim over the
+whole line and reported the line straying **367 m** from mapped ground. Traced,
+it is not the lysløype at all: the way that reaches the summit is
+`way/544369056`, a bare `highway=path` with no piste tag and no winter status —
+a summer footpath. The guide's only trail claim is the approach, and it already
+says the line leaves the løype before the lake.
+
+The line is nonetheless off mapped ground for 519 m of 5 046, between 3,87 and
+4,34 km out, rejoining the path 39 m away at 602 moh. That is not a defect —
+a ski line and a footpath are allowed to differ — but it is not nothing either,
+and the honest thing is the one the Høgevarde precedent established: say the
+number out loud. Both languages now state where the two part, by how much, and
+that through the 330–470 m band the footpath is the *gentler* of the two (its
+steepest thirty-metre step measures 20,8° against the line's 24,9°). The check
+reads that disclosure and downgrades the finding to a note, which is the
+mechanism working as designed rather than being worked around.
+
+Every finding above is fixed in both languages, with the research records
+corrected alongside, and `check_guides.py`, `check_bands.py`,
+`test_check_guides.py`, `check_ground.py` and the CI suite all come back clean.
+
+### What the research settled, without building anything
+
+- **The eight unbuilt registry names.** Seven are rejected with a specific
+  failing condition, recorded in `new_corridors.json`: Skjomtinden and
+  Storsteinsfjellet on ice axe and crampons — Storsteinsfjellet's own page says
+  «alle går delvis på bre»; Fongen, Trollhetta and Storskrymten on having no
+  ski description at all (every published start is a DNT hut or a summer toll
+  road); Blåhøa on a single private ut.no posting with no second source. The
+  eighth, **Grubbå**, is buildable and queued with its full description.
+- **A registry error, corrected.** The `istinden` entry pointed at a 1459 m
+  mountain in inner Sørdalen whose only description is a summer fell-running
+  report. The Istind everyone means is **Vestre Istinden**, 1489 m in Bardu,
+  the landmark of Indre Troms, with a full Fri Flyt ski description. `peaks.py`
+  now names the right mountain, and the summit resolves to 1488,6 against a
+  published 1489.
+- **Vesterålen has no qualifying claim.** The popularity rule wants a published
+  source calling a tour the most visited or most popular of its area. For
+  Vesterålen the only «mest»-claim found is for **Måtind** — «Vesterålens
+  desidert mest kjente topptur» — and it is a summer hike with 20 000 visitors
+  and no ski route. Stortinden, Forkledalstindan and Forselvtinden all demand
+  «alpinøks og stegjern»; Stor Snytindan starts at a DNT hut. Vesterålen stays
+  a one-tour region, and that is now a recorded answer rather than an open
+  question.
+- **Three regional indexes, inventoried.** Bodø has **79** turbeskrivelser, not
+  the handful the app had seen — most rejected on crampons or on access (the
+  thirteen Sjunkfjorden tours carry no adkomst text at all and Vassvika is
+  boat-access; the eighteen Beiarn starts are seter roads off FV813). Senja's
+  index is five, of which four are new to the app. Helgeland's is four, of
+  which Lukttinden and Tortenviktinden are buildable and Breitinden is rejected
+  («turen krever ofte stegjern»). The clean candidates are listed for the next
+  round.
+
+### Routed but unpublished
+
+**Vestre Istinden** and **Husfjellet** are researched, corridored and solved,
+and neither is on the map. Husfjellet is why: the routed line's steepest step
+measures 33,7° in the first kilometre, and Fri Flyt gives the tour «under 27
+grader» and KAST 1. That is a corridor that needs pinning along the real
+Dronningstien rather than a line the router found for itself, and a tour whose
+own numbers contradict its source is exactly what this pipeline exists not to
+publish. Both lines stay in `routes.json`, out of `tourmeta.json`, and
+`emit_ts.py` leaves them out by design.
+
 ## Network
 
 Everything is public and unauthenticated:

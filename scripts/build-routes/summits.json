@@ -200,12 +200,12 @@
     "stored_off_km": 0.03
   },
   "istinden": {
-    "name": "Istinden",
-    "lat": 68.57136,
-    "lng": 18.07995,
-    "summit_dtm": 1459.0,
-    "claims": 1459,
-    "stored_off_km": 0.2
+    "name": "Vestre Istinden",
+    "lat": 68.94986,
+    "lng": 18.5668,
+    "summit_dtm": 1488.6,
+    "claims": 1489,
+    "stored_off_km": 0.0
   },
   "fastdalstinden": {
     "name": "Fastdalstinden",
@@ -942,5 +942,13 @@
     "summit_dtm": 898.6,
     "claims": 898,
     "stored_off_km": 0.0
+  },
+  "husfjellet": {
+    "name": "Husfjellet",
+    "lat": 69.4696,
+    "lng": 17.27193,
+    "summit_dtm": 631.9,
+    "claims": 632,
+    "stored_off_km": 0.08
   }
 }

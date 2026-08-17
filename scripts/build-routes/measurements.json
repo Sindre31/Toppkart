@@ -1145,6 +1145,16 @@
    "what": "Kor mykje av linja som står på vatn",
    "figure": "0 m av 7 803",
    "how": "Kartverkets terrengklasse lesen kvar 2. m langs den runda linja (3 769 punkt), og check_ground.py mot OSMs vasspolygon. Begge svarar 0."
+  },
+  {
+   "what": "Glumragjelet — kjeldas eige faremoment — i registeret og i terrenget",
+   "figure": "Registeret har ingen «Glumragjelet»; namnet er skrive Glamregjelet (Juv, Bergen) på 60.38730/5.57832, 663 m frå varden i peiling 267,5°, og punktet les 575,91 moh. Eit andre Glamregjelet ligg 4,37 km nord (60.42555/5.61095). Pilatusgjelet, det andre registrerte juvet på same sida, ligg 624 m ut i peiling 248,2° på 792,9 moh",
+   "how": "SSR-namnesøk på Glumragjelet, Glumra* og *gjelet i Bergen og Samnanger; DTM1-punkt-API og haversine/peiling frå toppunktet 60.38756/5.59037."
+  },
+  {
+   "what": "Redningshytta: hyttepunktet og linja er to ulike høgder",
+   "figure": "hyttepunktet 60.36939/5.55939 les 597,49 moh (klasse ÅpentOmråde); linja 18 m unna les 592. Fri Flyt oppgir «600 moh»",
+   "how": "DTM1-punkt-API på registerpunktet, mot elevations i routes.json ved næraste vertex."
   }
  ],
  "sata": [
@@ -1167,6 +1177,16 @@
    "what": "Skeiskvanndalen og Steinskvanndalen er to registrerte dalar",
    "figure": "Skeiskvanndalen (Dal) 60.41624/5.95375 — dalen Fri Flyts line går inn; Steinskvanndalen (Dal) 60.40726/6.01708, 3,4 km lenger aust — dalen westcoastpeaks går sommarruta frå. «Steinkvanndalen» finst ikkje i registeret",
    "how": "SSR-namnesøk på alle tre skrivemåtane."
+  },
+  {
+   "what": "Kor langt Såterindane ligg frå varden, og kva sørvestsveipen rett under varden er",
+   "figure": "Såterindane (Rygg) 60.42540/5.98070 ligg 837 m frå varden i peiling 218°. Dei 43,4 gradene i sørvestsveipen ligg 110 til 170 m ut — altså på skuldra, ikkje i renna",
+   "how": "SSR-oppslag på Såterindane (to treff; det andre ligg 27 km aust i Kvam), haversine og peiling frå toppunktet; sveipen frå flank_probe.py."
+  },
+  {
+   "what": "Avstanden til Tveitakvitingen, som sesongen på kortet er lånt frå",
+   "figure": "12,60 km i peiling 201° frå Såta (60.43136/5.99001) til Tveitakvitingen (60.32540/5.90858)",
+   "how": "Haversine mellom dei to toppunkta i summits.json."
   }
  ],
  "skrott": [
@@ -1194,6 +1214,11 @@
    "what": "Køyreavstanden frå Øystese til Fitjadalen",
    "figure": "Fri Flyt oppgir startstaden som «omtrent åtte kilometer» (8 km) frå Øystese; i luftline er det 5,1 km frå Øystese (60.38668/6.20074 i registeret) til parkeringa, og skilnaden er vegen opp Fitjadalsvegen",
    "how": "SSR-punkt for Øystese, haversine mot trailheaden 60.42860/6.16390."
+  },
+  {
+   "what": "Nordvestsida og nordskuldra tett på varden",
+   "figure": "NV 49,8° i snitt over dei fyrste 20 m og 34,8° ut til 160 m, mot 7,0° i snitt over 800 m; N 17,5° i snitt over dei fyrste 400 m, mot 14,2° over 800 m",
+   "how": "flank_probe.py frå 60.45804/6.14387 på peiling 315 prøvetatt kvar 5. m ut til 200 m, og peiling 0 kvar 10. m ut til 400 m. Snittet over 800 m gøymer fallet: det er kanten ned i skaret jamna mot stiginga opp att mot Glynt."
   }
  ],
  "tveitakvitingen": [
@@ -1216,6 +1241,16 @@
    "what": "«Stoveveggen», «Middagshola» og «Furudalen» finst ikkje i registeret",
    "figure": "ingen treff nær ruta, heller ikkje fuzzy; registeret har Furedalen (Dal/Hyttefelt/Li, Kvam) der OSM-parkeringa heiter «Furedalen alpin» (node/10261906575, 382,18 moh). «Tjødnadalen» hos ut.no er registerført Tjørnadalen (60.34614/5.96794), og Svartatjørna (60.34204/5.96977) ligg ved linja",
    "how": "SSR-namnesøk med og utan fuzzy på alle namna i skildringa."
+  },
+  {
+   "what": "Kor linja passerer Svartatjørna, og kva tjørna sjølv les",
+   "figure": "næraste vertex 86 m frå registerpunktet 60.34204/5.96977, på 621,0 moh; registerpunktet sjølv les 618,2 moh med klasse Innsjø",
+   "how": "Haversine mot routes.json, DTM1-punkt-API på registerpunktet."
+  },
+  {
+   "what": "Kneiken over platået før ryggen",
+   "figure": "linja toppar på 1017,0 moh 6,06 km ute og gjev tilbake 36,0 m til 981,0 moh 6,29 km ute",
+   "how": "Lokale maksima og minima i elevations i routes.json, kumulativ lengd med haversine."
   }
  ],
  "finnbufjellet": [
@@ -1292,6 +1327,11 @@
    "what": "check_ground sitt løypefunn, lese og lagt til sides",
    "figure": "Funnet «says Lysløypa ... line strays 367 m from it (3958 m out), with 519 m of 5046 beyond 250 m» gjeld øvre flanken og eidet — der guiden ikkje hevdar noka løype. Løypepåstanden i guiden dekkjer berre den fyrste kilometeren langs Karlsvatnet, der lina ligg på den kartlagde Damveien (piste:type=nordic), og guiden seier eksplisitt at lina «forlèt løypa før vatnet». Midtitinden-varianten av same sjekk klassifiserer seg sjølv som note når stien ikkje når begge endane; her spenner ein sti-kjede tilfeldigvis profilen, og sjekken kan ikkje sjå at påstanden er delvis",
    "how": "check_ground.py over lina; lesen mot guideteksten og OSM-geometrien til Damveien."
+  },
+  {
+   "what": "Kor lina skil lag med den kartlagde stien til toppen",
+   "figure": "OSM way/544369056 (highway=path, ingen piste-tagg, ingen vinterstatus) når både utgangspunktet (3 m) og toppen (94 m). Lina held seg under 50 m frå kartlagd grunn det meste av dei fyrste 3,3 km, skil lag mellom 3,87 og 4,34 km ute med 367 m som største avstand, og er attende 39 m frå stien på 602 moh 4,81 km ute. 519 m av 5 046 ligg meir enn 250 m frå kartlagd sti. I sjiktet 330–470 moh måler stiens brattaste 30 m-steg 20,8 grader og linas 24,9",
+   "how": "check_ground.py mot Overpass; avstandane med haversine mot alle nodane i ground-cachen, høgdene langs stien lesne av same DTM-flisa som ruta."
   }
  ],
  "midtitinden": [
@@ -1336,6 +1376,11 @@
    "what": "check_ground sitt løypefunn, lese og lagt til sides",
    "figure": "Funnet «says anleggsveg ... strays 771 m (3598 m out)» gjeld fjellhalvdelen — flata, ryggen og toppen — der guiden ikkje hevdar nokon veg. Vegpåstanden dekkjer strekket vegende→dam, og der ligg lina på den kartlagde anleggsvegen (way/1008162591). Same delvis-påstand-forma som Varden (Småtindan); sjekken kan ikkje sjå at påstanden sluttar ved dammen",
    "how": "check_ground.py over lina; lesen mot guideteksten og OSM-geometrien."
+  },
+  {
+   "what": "Startpunktnamnet og peilinga ned",
+   "figure": "Registerets Varto (Høyde) står 1,8 km aust for korridorstarten på 187 moh; namnet som er registrert ved sjølve vegenden er Vardoveien (Adressenavn, 1 m unna). Lina peiler 169 til 180 grader dei fyrste kilometrane ned frå varden",
+   "how": "SSR-søk kring vegenden; peiling rekna frå routes.json."
   }
  ],
  "togga": [
@@ -1370,6 +1415,11 @@
    "what": "Dalkryssinga og attgjeven høgd",
    "figure": "Lina gjev att 185 m samla: dalbotnen mellom stien (166 moh) og Såta-flanken les 140–183, og ryggen mot Såta boljar (677→658, 662→646) før sjølve knausen på 651. Fyrste solveringa gav att 307 — 177 av dei over ein 313-kul eit eige waypoint hadde skapt; pinnet er fjerna og ruteren fann krysssinga sjølv",
    "how": "generate_routes.py før/etter ompinning; profilanalyse av routes.json."
+  },
+  {
+   "what": "Kvar det brattaste ligg, og kva registeret kallar skuldra",
+   "figure": "Det brattaste samanhengande partiet på lina, 30,1 grader, ligg mellom 312 og 330 moh — i flanken opp frå dalkryssinga, ikkje på sørryggen. På sjølve ryggen er det brattaste 30 m-vindauget 29,3 grader mellom 765 og 788 moh. Skuldra kjelda kallar Hjorteklett står i registeret som Hjortaklett (Ås, 59.91905/5.85858), 460 m nord for Såta",
+   "how": "steepest_span over lina avgrensa til høgdeintervalla; SSR-søk på båe skrivemåtane."
   }
  ],
  "sandhornet": [
