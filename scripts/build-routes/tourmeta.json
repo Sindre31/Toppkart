@@ -230,6 +230,17 @@
   "season": "jan–apr",
   "hasGuide": false
  },
+ "tomskjevelen": {
+  "name": "Tomskjevelen",
+  "region": "Helgeland",
+  "summitM": 922,
+  "verticalM": 950,
+  "duration": "4–6 t",
+  "grade": 2,
+  "aspect": "S",
+  "season": "jan–apr",
+  "hasGuide": false
+ },
  "vassfjellet": {
   "name": "Vassfjellet",
   "region": "Trøndelag",

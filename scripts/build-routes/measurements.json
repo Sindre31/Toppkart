@@ -1388,5 +1388,27 @@
    "figure": "Isvasstinden (Fjell) står på 67.09641/14.09665, rett aust for Stjerndalen-lina — V- og SV-flankane hans er dei kjelda åtvarar om at dalen går i utløpssonene til",
    "how": "SSR-oppslag; geometrisamanlikning mot lina."
   }
+ ],
+ "tomskjevelen": [
+  {
+   "what": "Fallet frå varden i åtte retningar",
+   "figure": "N 43,6° i snitt med 63,7° som brattaste 60 m 180–240 m ut; NØ 43,8° / 69,4° 200–260 m ut; Ø 34,4° / 64,1° 410–470 m ut; SØ 31,3° / 42,6° 440–500 m ut; S 35,6° / 58,2° 400–460 m ut; SV 38,6° / 57,9° 370–430 m ut; V 32,7° / 55,2° 330–390 m ut; NV 35,4° / 61,4° 370–430 m ut",
+   "how": "flank_probe.py frå 66.27901/12.84655, 800 m ut, prøvetatt kvar 10. m i DTM-en."
+  },
+  {
+   "what": "Registerpunktet står på vestknausen, ikkje toppen",
+   "figure": "Registerets Tommskjevelen (Fjell, 66.27965/12.83968) les 756 moh; toppen — 921,7 klatra, mot publisert 922 — ligg 330 m aust på 66.27901/12.84655. Registeret skriv Tommskjevelen med to m-ar, Fri Flyt Tomskjevelen med éin; appen ber Fri Flyts skrivemåte",
+   "how": "SSR-oppslag; DTM1-raster med lokalmaksima; toppsøkets veksande disk med claims-tiebreak."
+  },
+  {
+   "what": "Starten, stien og vatna, kartlagde",
+   "figure": "Forslandsvegen (asfalt, way/580211256) endar ved Forsland (Gard, 38,2 moh); jordet ved stistarten way/788059735 les 47,5 moh; stikjeda way/788059736 → way/1306863381 → way/1306863382 følgjer ruta mot vatnet og nordvestover. Forslandsvatnet (relasjon 14756581) er naturleg tjern på 148,0; nordbredde-pinnane les 161,2 / 177,4 / 150,2 på land",
+   "how": "OSM-geometri prøvetatt mot DTM1; SSR-oppslag på Forsland og Forslandsvatnet."
+  },
+  {
+   "what": "Ryggen, målt",
+   "figure": "155 → 283 → 492 → 656 → 768 → 843 → 884 → 920 langs den nordvestgåande ryggen; falllinja i midtpartiet held 32–33 grader, og sporet sikksakkar slakare",
+   "how": "DTM1-samplar langs ryggen; route_metrics.py på den løyste lina."
+  }
  ]
 }

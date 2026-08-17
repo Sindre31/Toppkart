@@ -4707,5 +4707,99 @@
    ],
    "confidence": "medium"
   }
+ },
+ {
+  "slug": "tomskjevelen",
+  "verdict": "corrected",
+  "corrections": [
+   "Registeret skriv **Tommskjevelen** (Fjell, 66.27965/12.83968) — Fri Flyt skriv Tomskjevelen — og registerpunktet står på ein vestknaus som les 756 moh. Sjølve toppen, 920,2 mot publisert 922, ligg 330 m aust på 66.27898/12.84673; den veksande disken med claims-tiebreak finn han (Gullfjellstoppen-mønsteret).",
+   "Starten løyser seg på kartlagd grunn: Forslandsvegen (asfalt, way/580211256) endar ved Forsland (Gard, 66.26764/12.88196, 38,2 moh), og «parker ved åkeren før Forslandsvatnet» er jordet ved stistarten way/788059735 (66.26566/12.87773, ~45 moh). Stinettet vidare er kartlagt: way/788059736 og way/1306863381 opp mot vatnet, way/1306863382 vidare nordvestover — den kartlagde stien går der Fri Flyts rute går.",
+   "Forslandsvatnet er ei naturleg tjern (Tjern i registeret, 148,0 moh, klasse Innsjø) — ikkje regulert — og lina passerer nordsida på land (164,7 på 66.26620/12.86300).",
+   "Den nordvestgåande ryggen reproduserer på DTM1: 155 → 283 → 492 → 656 → 768 → 843 → 884 → 920. Falllinja i midtpartiet held 32–33 grader; sporet sikksakkar slakare, og målinga avgjer kortet — Fri Flyt sjølv publiserer korkje KAST eller brattaste punkt for denne turen.",
+   "Tilkomsten er ferje frå Nesna til Tomma — offentleg bilferje heile året. Det er ein del av turen, ikkje eit brot på vegkravet: vegen startar att på øya, og guiden seier det i klartekst saman med kjeldas eiga setning om ustabil sesong og varierande snøtilhøve.",
+   "check_ground fann fyrste solveringa 135 m ute på Forslandsvatnet (148 moh) — Karlsvatnet-forma om att. Tjerna er naturleg, men 148 moh på ei øy i havet er ikkje is nokon skal føresetja; lina er ompinna langs nordbredda på land (161,2 / 177,4 / 150,2 moh, OSM-relasjon 14756581 som fasit) med vannkost på ruteren, og passerer òg nord for småtjerna og Tinnvatnet."
+  ],
+  "rejectReason": "",
+  "corridor": {
+   "routeId": "forsland",
+   "routeName": "Frå Forsland om Forslandsvatnet",
+   "routeDescriptionFull": "Frå åkeren ved Forsland etter den merkte stien vestover opp til høgda der Forslandsvatnet ligg, nordover forbi tjernet på land, og opp den nordvestgåande ryggen heilt til toppen",
+   "trailhead": {
+    "name": "Forsland",
+    "lat": 66.2657,
+    "lng": 12.8778,
+    "elevationM": 45,
+    "osmEvidence": "Jordet ved enden av Forslandsvegen (way/580211256, asfalt); stien way/788059735 startar her og kjeda way/788059736 → way/1306863381 → way/1306863382 følgjer ruta."
+   },
+   "waypoints": [
+    {
+     "name": "stien mot vatnet",
+     "lat": 66.264,
+     "lng": 12.869,
+     "elevationM": 150
+    },
+    {
+     "name": "nordaustbredda på land",
+     "lat": 66.2676,
+     "lng": 12.867,
+     "elevationM": 161.22
+    },
+    {
+     "name": "nordbredda på land",
+     "lat": 66.2672,
+     "lng": 12.864,
+     "elevationM": 177.4
+    },
+    {
+     "name": "myra nordvest for vatnet",
+     "lat": 66.2675,
+     "lng": 12.86,
+     "elevationM": 150.2
+    },
+    {
+     "name": "ryggfoten",
+     "lat": 66.2715,
+     "lng": 12.8555,
+     "elevationM": 282.5
+    },
+    {
+     "name": "ryggen ved 490",
+     "lat": 66.274,
+     "lng": 12.853,
+     "elevationM": 491.6
+    },
+    {
+     "name": "ryggen ved 655",
+     "lat": 66.2755,
+     "lng": 12.851,
+     "elevationM": 655.6
+    },
+    {
+     "name": "ryggen ved 770",
+     "lat": 66.277,
+     "lng": 12.8495,
+     "elevationM": 767.8
+    },
+    {
+     "name": "ryggen ved 885",
+     "lat": 66.2785,
+     "lng": 12.8475,
+     "elevationM": 884.2
+    }
+   ],
+   "season": "jan–apr",
+   "aspect": "S",
+   "grade": 2,
+   "gradeReason": "Målinga seier 2 og kortet ber 2 — brattaste hundremetersbeltet 21,8 grader mellom 800 og 900 moh, brattaste 30 m 27,9 — og Fri Flyt publiserer korkje KAST eller brattaste punkt. Alvoret ligg utanfor sporet: frå varden fell alle åtte sektorane 31–44 grader i snitt, med 69,4 som brattaste vindauge mot nordaust, og sesongen er «ustabil med varierende snøforhold».",
+   "roadClosedInWinter": false,
+   "hazardNotes": "Fri Flyt publiserer korkje KAST eller brattaste punkt; nedkøyringa er austvend, i eit søkk som samlar snø, og sesongen er «ustabil med varierende snøforhold» — kystfjell omgjeve av hav. Falllinja i midtpartiet av ryggen held 32–33 grader målt. Tilkomsten er ferje frå Nesna. Forslandsvatnet og småtjerna ved det er naturlege kysttjern på ~148 moh — lina går rundt på land, målt.",
+   "teaserNo": "950 høgdemeter frå åkeren ved Forsland på Tomma: stien til Forslandsvatnet, rundt tjernet på land, og den nordvestgåande ryggen heilt til topps på øyfjellet Fri Flyt kallar Helgelands finaste.",
+   "teaserEn": "950 metres of ascent from the field at Forsland on Tomma: the path to Forslandsvatnet, around the tarn on land, and the north-west ridge all the way up the island mountain Fri Flyt calls Helgeland's finest.",
+   "sources": [
+    "https://www.friflyt.no/topptur/helgeland/tomskjevelen",
+    "https://www.friflyt.no/topptur/helgeland"
+   ],
+   "confidence": "medium"
+  }
  }
 ]

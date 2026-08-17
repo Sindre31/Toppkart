@@ -242,6 +242,8 @@ export const TOUR_TEASER_EN: Record<string, string> = {
     "1240 metres of ascent from Musland in Uskedalen: tractor road and marked path, across the valley, up to Såta and south along the steep ridge — with the cornices over Limomnen for company to the top.",
   sandhornet:
     "1020 metres of ascent from the shore at Horsdal: the path along the sea, the stairs to Stjerndalen, and gentle ridges to the cairn on the island mountain above Saltfjorden.",
+  tomskjevelen:
+    "950 metres of ascent from the field at Forsland on Tomma: the path to Forslandsvatnet, around the tarn on land, and the north-west ridge all the way up the island mountain Fri Flyt calls Helgeland's finest.",
 
 };
 
@@ -1045,6 +1047,45 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       endLabel: "993 m",
       distanceLabel: "5.0 km",
       caption: "1021 metres of ascent and 5.01 km from the shore at Horsdal — the stairs to Stjerndalen, gentle ridges, and 32.5 degrees in the last fifty vertical metres.",
+    },
+  },
+  tomskjevelen: {
+    intro:
+      "951 metres of ascent and 3.86 km from the field at Forsland — on an island. Tomskjevelen stands in the middle of the sea on Tomma, with the ferry from Nesna as the only way to the start, and Fri Flyt writes that the mountain 'is considered by many to be Helgeland's finest ski mountain'. The register spells it Tommskjevelen and keeps its point on the west knoll at 756 metres; the top itself — 922 — lies 330 m east, and that is where the line goes. The track is kind — steepest 100-metre band 21.8 degrees between 800 and 900 metres, steepest sustained stretch 27.9 — but the mountain around it is not, and the season is unstable with varying snow conditions, as the source itself says.",
+    ascent: [
+      "Take the ferry from Nesna to Tomma and drive towards Forsland; Forslandsvegen ends at the farm, and you park at the field before Forslandsvatnet, as the source says — the field by the path start reads 47 metres. Check the timetable both ways: the ferry is part of the tour.",
+      "The path west is mapped and leads up to the shelf where Forslandsvatnet lies, at 148 metres. The tarn is natural, but it sits low on an island in the sea, and the ice cannot be assumed: the line goes around the north shore on land — 161, 177 and 150 metres at the pins — and also passes north of the small tarns and Tinnvatnet. It is measured: 0 metres of the line stand on water.",
+      "From the bog north-west of the lake the north-west-trending ridge begins, as the source says — all the way to the top. The ridge is even: 283 at the foot, 492, 656, 768, 843 and 884 metres on the way up, with the steepest 100-metre band — a mean 21.8 degrees — between 800 and 900. The fall line in the middle section holds 32–33 degrees; the track switchbacks gentler.",
+      "The cairn stands at 922 metres with sea on every side — the Atlantic to the west, the Svartisen ice cap to the east. And every side is real: from the top all eight sectors fall at a mean of 31 to 44 degrees, with 69.4 degrees as the steepest window to the north-east. The summit is a horn, and in fog the ridge you came up is the only way home.",
+    ],
+    descent: [
+      "The normal descent follows the same route as the ascent, as the source says — the ridge down, around the lake on land, and the path to the field. The tour gives back 74 vertical metres in total, most of it in the broken ground around the tarns.",
+      "Fri Flyt also mentions the east-facing descent in the hollow that collects snow — that is the direction its fact box carries. The hollow is the mountain's best snow store and its steepest ground at once: the east sector falls at a mean 34.4 degrees with 64.1 as the steepest window. Whoever chooses the hollow has chosen the snow assessment that comes with it.",
+      "Remember the ferry: it sets the day's timeframe, and it leaves from the shore — the whole descent aims at the sea, and this is the only tour in the app where 'all the way down' means all the way down to a ferry quay.",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "Fri Flyt publishes neither a KAST rating nor a steepest point for this tour, and the measurement stands alone: 27.9 degrees as the steepest sustained stretch, 21.8 as the steepest 100-metre band, between 800 and 900 metres. The fall line in the middle of the ridge holds 32–33 degrees — the track choice is gentler than the slope, and it should stay that way.",
+      },
+      {
+        title: "The horn",
+        body: "From the cairn all eight sectors fall at a mean of between 31 and 44 degrees: north-east 69.4 degrees in the steepest window, north 63.7, east 64.1, north-west 61.4. There is no gentle way off the top other than the ridge you came up — in fog the compass bearing south along the ridge is absolute.",
+      },
+      {
+        title: "The sea and the snow",
+        body: "The source's own season line is 'unstable with varying snow conditions', and it is the whole climate story: a 922-metre mountain surrounded by sea gets its snow in squalls and loses it in thaws, and the east-facing hollow that collects snow collects it from the wind — wind slab over coastal crust is the local combination. Assess the snowpack from the ferry: you can see the whole mountain from the sea.",
+      },
+      {
+        title: "Before you go",
+        body: "Tomskjevelen is in the Helgeland forecast region, an A region with a daily avalanche bulletin through the season — check varsom.no. No source publishes season months; the card's jan–apr is borrowed from the app's other Nordland tours, and the guide says so. The ferry from Nesna is the only access — check the timetable. Bring transceiver, probe and shovel. An empty forecast page does not mean a safe mountain.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "45 m",
+      endLabel: "922 m",
+      distanceLabel: "3.9 km",
+      caption: "951 metres of ascent and 3.86 km from Forsland on Tomma — around Forslandsvatnet on land, and the north-west ridge to the horn at 922.",
     },
   },
   vassfjellet: {

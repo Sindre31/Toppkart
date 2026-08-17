@@ -231,4 +231,11 @@ PEAKS = [
     #   in Gildeskål, the card keeps Fri Flyt's Bodø the way Strandtinden keeps
     #   Harstad. —
     ("sandhornet", "Sandhornet", ["Gildeskål"], 993, 67.11117, 14.06776),
+    #
+    # — round five: Helgeland, a new region, and the island tour Fri Flyt says
+    #   «regnes av mange som Helgelands fineste skifjell». The register spells
+    #   it **Tommskjevelen** and its point sits on a 756 m west knoll; the top
+    #   itself — 920,2 against a published 922 — is 330 m east, and the growing
+    #   disc with the claims tiebreak is what finds it. —
+    ("tomskjevelen", "Tommskjevelen", ["Nesna"], 922, 66.27898, 12.84673),
 ]

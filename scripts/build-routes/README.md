@@ -3196,6 +3196,54 @@ Nine backlog names remain, all for want of a published ski description. The
 adversarial-read gap counts twelve. Neither source publishes season months;
 both cards borrow jan–apr and both guides say so.
 
+## Round five: Tomskjevelen, and Helgeland on the map
+
+One tour, one new region, and the last empty stretch of coast between
+Trøndelag and Bodø filled. The app goes from 102 tours to 103.
+
+Fri Flyt's Helgeland index carries the sentence the round is built on:
+Tomskjevelen, 922 moh on the island of Tomma, «regnes av mange som
+Helgelands fineste skifjell». The access is a year-round public car ferry
+from Nesna — read as part of the tour, not a breach of the road-start
+condition: the road resumes on the island, Forslandsvegen ends at the farm,
+and the guide says «ferja er ein del av turen» in as many words. (Contrast
+Storsylen, where the rejection was 14 km of *unploughed road*, not scheduled
+public infrastructure.)
+
+| tour | region | start | summit | gain | km | steepest 100 m band | steepest 30 m | grade |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Tomskjevelen | Helgeland | 45 | 922 | 951 | 3.9 | 21.8° | 27.9° | 2 |
+
+Three findings, all of familiar shapes:
+
+- **The register point is not the top, and the spelling differs.** The
+  register writes **Tommskjevelen** and parks its point on a west knoll at
+  756 moh; the summit — 921,7 climbed, against a published 922 — stands
+  330 m east. The growing disc with the claims tiebreak finds it, and the
+  card carries Fri Flyt's single-m spelling the way Kirketaket carries its
+  guidebook name.
+- **`check_ground.py` caught the lake again.** The first solve ran 135 m
+  across Forslandsvatnet (a natural tarn at 148 moh — but 148 moh on an
+  island in the open sea is not ice anyone should assume). Re-pinned along
+  the north shore on land with the water cost on: 0 m on water, past the
+  small tarns and Tinnvatnet too.
+- **The summit is a horn.** The eight-direction sweep reads 31–44° mean in
+  every sector, with 69,4° as the steepest window (NE). The line itself
+  measures 27,9° max — and the guide's whole safety story is that
+  asymmetry: kind track, unkind everything else, «ustabil med varierende
+  snøforhold» as the source's own season sentence, and the east-facing
+  snow-collecting hollow named as the variant it is.
+
+Helgeland is region 3018, an A region — queried per coordinate. Fri Flyt
+publishes neither KAST nor a steepest point for this tour, so the measured
+figures stand alone on the card, and the season is borrowed jan–apr with
+the guide saying so.
+
+The proof: `check_routes.py` 103 tours / 112 routes, `check_tours.py` 103
+cards, `check_guides.py` 0 unsourced numbers and 0 reassurance claims
+across 206 guide texts, `test_check_guides.py` 15, `check_ground.py` 0 m
+on water, and the CI suite.
+
 ## Network
 
 Everything is public and unauthenticated:

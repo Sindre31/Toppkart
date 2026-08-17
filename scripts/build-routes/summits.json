@@ -926,5 +926,13 @@
     "summit_dtm": 993.4,
     "claims": 993,
     "stored_off_km": 0.01
+  },
+  "tomskjevelen": {
+    "name": "Tommskjevelen",
+    "lat": 66.27901,
+    "lng": 12.84655,
+    "summit_dtm": 921.7,
+    "claims": 922,
+    "stored_off_km": 0.01
   }
 }

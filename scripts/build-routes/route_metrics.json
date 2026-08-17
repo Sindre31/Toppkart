@@ -1630,5 +1630,21 @@
   "aspect": "S",
   "distanceKm": 5.0,
   "cumdistM": 5009
+ },
+ "tomskjevelen": {
+  "verticalM": 950,
+  "gainM": 951,
+  "distanceM": 3858,
+  "startM": 45,
+  "summitM": 922,
+  "duration": "4–6 t",
+  "steepestBandAngle": 21.8,
+  "steepestBandFrom": 800,
+  "steepestBandTo": 900,
+  "maxStepAngle": 27.9,
+  "grade": 2,
+  "aspect": "S",
+  "distanceKm": 3.9,
+  "cumdistM": 3861
  }
 }

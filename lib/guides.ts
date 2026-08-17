@@ -814,6 +814,47 @@ export const GUIDES: Record<string, TourGuide> = {
       caption: "1021 høgdemeter og 5,01 km frå fjæra på Horsdal — trappene til Stjerndalen, slake rygger, og 32,5 grader i dei siste femti høgdemetrane.",
     },
   },
+  tomskjevelen: {
+    slug: "tomskjevelen",
+    intro:
+      "951 høgdemeter og 3,86 km frå åkeren ved Forsland — på ei øy. Tomskjevelen står midt i havet på Tomma, med ferje frå Nesna som einaste veg til start, og Fri Flyt skriv at fjellet «regnes av mange som Helgelands fineste skifjell». Registeret skriv Tommskjevelen og har punktet sitt på vestknausen på 756 moh; sjølve toppen — 922 — ligg 330 m aust, og det er dit lina går. Sporet er snilt — brattaste hundremetersbeltet 21,8 grader mellom 800 og 900 moh, brattaste samanhengande parti 27,9 — men fjellet ikring er det ikkje, og sesongen er ustabil med varierande snøtilhøve, slik kjelda sjølv seier.",
+    ascent: [
+      "Ta ferja frå Nesna til Tomma og køyr mot Forsland; Forslandsvegen endar ved garden, og du parkerer ved åkeren før Forslandsvatnet, slik kjelda seier — jordet ved stistarten les 47 moh. Sjekk rutetidene begge vegar: ferja er ein del av turen.",
+      "Stien vestover er kartlagd og fører opp til høgda der Forslandsvatnet ligg, på 148 moh. Tjernet er naturleg, men det ligg lågt på ei øy i havet, og isen kan ikkje føresetjast: lina går rundt nordbredda på land — 161, 177 og 150 moh på pinnane — og passerer òg nord for småtjerna og Tinnvatnet. Det er målt: 0 meter av lina står på vatn.",
+      "Frå myra nordvest for vatnet tek den nordvestgåande ryggen til, slik kjelda seier — heilt til toppen. Ryggen er jamn: 283 ved foten, 492, 656, 768, 843 og 884 moh oppover, med det brattaste hundremetersbeltet — 21,8 grader i snitt — mellom 800 og 900. Falllinja i midtpartiet held 32–33 grader; sporet sikksakkar slakare.",
+      "Varden står på 922 moh med hav på alle kantar — Atlanterhavet i vest, Svartisen i aust. Og alle kantane er ekte: frå toppen fell alle åtte sektorane 31 til 44 grader i snitt, med 69,4 grader som brattaste vindauge mot nordaust. Toppen er eit horn, og i skodde er ryggen du kom opp einaste heimvegen.",
+    ],
+    descent: [
+      "Den normale nedkøyringa følgjer same ruta som oppstigninga, slik kjelda seier — ryggen ned, rundt vatnet på land, og stien til åkeren. 74 høgdemeter å gje att har turen samla, det meste i småkuperinga rundt tjerna.",
+      "Fri Flyt nemner òg den austvende nedkøyringa i søkket som samlar snø — det er den himmelretninga faktaboksen hans ber. Søkket er fjellet sitt beste snølager og samstundes bratteste terreng: austsektoren fell 34,4 grader i snitt med 64,1 som brattaste vindauge. Han som vel søkket, har valt snøvurderinga som følgjer med.",
+      "Hugs ferja: ho set tidsramma for dagen, og ho går frå fjæra — heile nedkøyringa har havet som mål, og det er den einaste turen i appen der «heilt ned» tyder heilt ned til ei ferjekai.",
+    ],
+    avalanche: [
+      {
+        title: "Ruta",
+        body: "Fri Flyt publiserer korkje KAST eller brattaste punkt for denne turen, og målinga får stå åleine: 27,9 grader som brattaste samanhengande parti, 21,8 som brattaste hundremetersbelte, mellom 800 og 900 moh. Falllinja i midtpartiet av ryggen held 32–33 grader — sporvalet er slakare enn henget, og det skal det halda fram med å vera.",
+      },
+      {
+        title: "Hornet",
+        body: "Frå varden fell alle åtte sektorane mellom 31 og 44 grader i snitt: nordaust 69,4 grader i brattaste vindauget, nord 63,7, aust 64,1, nordvest 61,4. Det finst ingen slak utveg frå toppen anna enn ryggen du kom opp — i skodde er kompasskursen sørover langs ryggen absolutt.",
+      },
+      {
+        title: "Havet og snøen",
+        body: "Kjeldas eiga sesongsetning er «ustabil med varierende snøforhold», og ho er heile klimahistoria: eit 922-metersfjell omgjeve av hav får snøen sin i byger og mister han i mildvêr, og det austvende søkket som samlar snø, samlar han av vinden — fokksnø over kystskare er den lokale kombinasjonen. Vurder snødekket frå ferja: du ser heile fjellet frå sjøen.",
+      },
+      {
+        title: "Før du går",
+        body: "Tomskjevelen ligg i varslingsregionen Helgeland, ein A-region med dagleg skredvarsel gjennom sesongen — sjekk varsom.no. Ingen kjelde publiserer sesongmånader; kortets jan–apr er lånt frå appens andre nordlandsturar, og guiden seier det. Ferja frå Nesna er einaste tilkomst — sjekk rutetidene. Ta med sender/mottakar, søkjestong og spade. Ei tom varselside er ikkje det same som eit trygt fjell.",
+      },
+    ],
+    elevationProfile: {
+      path: "M0,200 L34,194 L58,183 L83,172 L111,176 L137,179 L146,178 L163,177 L184,173 L208,177 L240,178 L275,171 L292,163 L314,150 L341,142 L369,132 L387,123 L403,115 L423,107 L441,98 L456,89 L478,79 L496,71 L513,62 L531,50 L555,41 L576,30 L591,22 L600,18",
+      startLabel: "45 moh",
+      endLabel: "922 moh",
+      distanceLabel: "3,9 km",
+      caption: "951 høgdemeter og 3,86 km frå Forsland på Tomma — rundt Forslandsvatnet på land, og den nordvestgåande ryggen til hornet på 922.",
+    },
+  },
   vassfjellet: {
     slug: "vassfjellet",
     intro:
