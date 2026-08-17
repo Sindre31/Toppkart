@@ -5640,7 +5640,7 @@
    {
     "id": "normalvegen",
     "name": "Normalvegen frå Tindelva",
-    "description": "Frå parkeringa der Tindelva kjem ned ved Iselvmoen på vegen mot Fjellstad, opp sørsida av elva gjennom den bratte bjørkelia, over skoggrensa innover i gryta mot nordveggen, og opp ryggen på vestsida av veggen til toppen",
+    "description": "Frå parkeringa der Tindelva kjem ned ved Iselvmoen på vegen mot Fjellstad, opp sørsida av elva gjennom den bratte bjørkelia, over skoggrensa innover i gryta mot nordveggen, og opp ryggen på vestsida av veggen — vest for breen i botnen, slik båe kjeldene seier — til toppen",
     "trailhead": {
      "name": "Tindelva",
      "lat": 68.97744,
@@ -5651,42 +5651,54 @@
     "waypoints": [
      {
       "name": "sørsida av Tindelva",
-      "lat": 68.974,
-      "lng": 18.53,
-      "elevation_m": 153.0
+      "lat": 68.97691,
+      "lng": 18.53416,
+      "elevation_m": 143.2
      },
      {
       "name": "bjørkelia",
-      "lat": 68.969,
-      "lng": 18.54,
-      "elevation_m": 599.0
+      "lat": 68.97417,
+      "lng": 18.5446,
+      "elevation_m": 413.4
+     },
+     {
+      "name": "over skoggrensa",
+      "lat": 68.97115,
+      "lng": 18.54943,
+      "elevation_m": 566.8
      },
      {
       "name": "gryta under nordveggen",
       "lat": 68.963,
       "lng": 18.546,
-      "elevation_m": 789.0
+      "elevation_m": 787.6
      },
      {
       "name": "ryggen vest for veggen",
-      "lat": 68.958,
-      "lng": 18.552,
-      "elevation_m": 970.0
+      "lat": 68.9575,
+      "lng": 18.5525,
+      "elevation_m": 991.6
      },
      {
-      "name": "ryggen ved 1020",
-      "lat": 68.954,
-      "lng": 18.558,
-      "elevation_m": 1023.0
+      "name": "ryggfoten vest for breen",
+      "lat": 68.955,
+      "lng": 18.5525,
+      "elevation_m": 1060.2
      },
      {
-      "name": "ryggen ved 1300",
-      "lat": 68.951,
-      "lng": 18.562,
-      "elevation_m": 1304.0
+      "name": "ryggen ved 1165",
+      "lat": 68.9525,
+      "lng": 18.555,
+      "elevation_m": 1164.3
+     },
+     {
+      "name": "ryggen ved 1360",
+      "lat": 68.95,
+      "lng": 18.56,
+      "elevation_m": 1359.7
      }
     ],
-    "source": "researched, verified (corrected), no local audit",
+    "source": "researched, verified (corrected), corridor re-pinned west of the glacier, no local audit",
     "notes": "Fri Flyt: KAST ikkje klassifisert. Faremomenta er hans eigne: «Skredfare må vurderes nøye på nedkjøringene i botnen mellom Søndre og Vestre Istind og ned fra Søndre Istind. Ryggen opp normalveien er relativt skredsikker. Hold god avstand fra hengeskavlene ut over Nordveggen.» Siste stykket mot toppen er ofte avblåse, så skia må kanskje berast. Nedkøyringsrenna sørvest frå toppen er 30–35 grader. Isøks og stegjern gjeld berre toppegg-varianten frå Søndre Istind."
    }
   ]

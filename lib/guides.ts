@@ -512,6 +512,48 @@ export const GUIDES: Record<string, TourGuide> = {
       caption: "664 høgdemeter og 2,85 km frå Kaperdalen — skaret nord for punkt 504, fortoppen på 870, og null høgdemeter å gje att.",
     },
   },
+  istinden: {
+    slug: "istinden",
+    intro:
+      "1432 høgdemeter og 5,24 km frå Tindelva ved Iselvmoen til Vestre Istinden, det høgaste av Istindan og landemerket i Indre Troms. Turen er lang og høg meir enn han er bratt: brattaste hundremetersbeltet måler 21,6 grader mellom 1400 og 1500 moh, og brattaste samanhengande parti 27,7 grader — men ruta går på ein rygg med Fri Flyts «nordveggen» på den eine sida og botnen med breen på den andre, og det er kantane, ikkje snitta, som avgjer dagen.",
+    ascent: [
+      "Frå den store parkeringa der Tindelva kjem ned ved Iselvmoen på vegen mot Fjellstad, 80 moh. Fjellstadvegen er kartlagd som offentleg veg med fast dekke, så starten er brøytt året rundt. Lina går på sørsida av elva, slik båe kjeldene seier, og følgjer den kartlagde stien opp den bratte bjørkelia — same sti ut.no kallar «tydelig og bra, men bratt», og som er skilta med grønt turskilt frå parkeringa. Belta måler 18,2 grader frå 100 til 200 moh, 21,0 frå 200 til 300 og 19,2 frå 300 til 400.",
+      "Skogen sluttar på 558 moh etter Kartverkets klassar, med ope område frå 568, og skoggrensa kjem 1,81 km ute. Her flatar det av: beltet frå 500 til 600 moh måler 13,9 grader og beltet frå 700 til 800 berre 8,4 over 650 meter grunn. Det er kvilesteget ut.no skildrar ved skuldra, og det er staden å sjå seg om — nordveggen står rett i front herfrå.",
+      "Frå 2,93 km og 788 moh går lina innover i gryta under veggen nokre hundre meter, slik Fri Flyt seier, før ho tek opp på ryggen. Ryggen går på vestsida av veggen, og han går òg vest for breen i botnen. Det er ikkje ein detalj: både Fri Flyt («ryggen som går opp på vestsiden av veggen») og ut.no («til høyre for bekken og breen») sender deg utanom isen, og brepolygonet ligg 898 til 1155 moh rett aust for lina. Næraste passering er 14 meter frå brekanten, på 4,27 km og 1152 moh. Lina har 0 meter på breen, kontrollert både mot Kartverkets terrengklasse og mot OSMs brepolygon.",
+      "Over 1200 moh reiser ryggen seg jamt — 17,5 grader frå 1200 til 1300, 21,2 frå 1300 til 1400 og 21,6 frå 1400 til 1500, det brattaste beltet på turen. Det brattaste samanhengande partiet ligg i same høgdelaget: 27,7 grader mellom 1286 og 1304 moh, 4,73 km ute, altså ein knapp halvkilometer før varden.",
+      "Fri Flyt åtvarar: «Hold god avstand fra hengeskavlene ut over Nordveggen», og målinga seier kvifor — nordsveipen frå varden held 34,8 grader i snitt og 60,9 som brattaste 60 meter berre 50 til 110 meter ut. Varden på 1489 moh, som registeret fører som Vestre Istinden. Siste stykket er ofte avblåst, og då må skia kanskje berast — det er kjeldas eiga formulering, og det er den vanlegaste grunnen til at dagen tek lengre tid enn tala tilseier.",
+    ],
+    descent: [
+      "Ned same ryggen. Merk retninga: dei fyrste hundre metrane frå varden går lina vestover, 262 til 276 grader, før ho svingar nordvestover ned ryggen — over heile fallet til skoggrensa peikar ho 344 grader. I skodde er det den fyrste vestlege biten som må sitje, for nordsida av kammen er nordveggen.",
+      "Frå varden til skoggrensa er det 931 høgdemeter, mot dei «omtrent 900 meter» Fri Flyt oppgir ned til skogen. Så er det bjørkelia att, den same du gjekk opp, og 23 høgdemeter er alt turen gjev tilbake undervegs.",
+      "Fri Flyt si vanlegaste nedkøyring er ei anna linje enn denne: renna på 30–35 grader mot sørvest frå toppen. Sørvestsveipen frå varden måler 30,6 grader i snitt over 800 meter, som stemmer med kjelda, men brattaste 60 meter i han held 40,0 grader 60 til 120 meter ut. Den renna er ikkje målt som eiga rute her, og kortets aspekt gjeld ruta si eiga nedkøyring. Toppegg-varianten frå Søre Istinden er heller ikkje denne ruta — det er berre for den Fri Flyt nemner isøks og stegjern.",
+    ],
+    avalanche: [
+      {
+        title: "Ruta",
+        body: "Fri Flyts eige faremoment er presist om kva som er kva: «Skredfare må vurderes nøye på nedkjøringene i botnen mellom Søndre og Vestre Istind og ned fra Søndre Istind. Ryggen opp normalveien er relativt skredsikker. Hold god avstand fra hengeskavlene ut over Nordveggen.» Ruta her er ryggen, altså den delen kjelda kallar relativt skredsikker — men «relativt» er kjeldas ord, ikkje ein garanti, og botnen han åtvarar mot ligg 14 meter frå lina på det næraste.",
+      },
+      {
+        title: "Nordveggen og skavlane",
+        body: "Nordsveipen frå varden held 34,8 grader i snitt dei fyrste 800 metrane, med 60,9 grader som brattaste 60 meter berre 50 til 110 meter ut; nordaustsida måler 30,5 i snitt og nordvestsida 28,0 med 65,1 grader 190 til 250 meter ut. Skavlane byggjer ut over denne kanten, og dei er det Fri Flyt ber deg halde god avstand frå. Ryggen er brei nok til å gå, men kanten er ikkje der augo trur når det er flatt lys.",
+      },
+      {
+        title: "Breen i botnen",
+        body: "Botnen mellom Vestre og Søre Istinden ber ein bre — Kartverket klassar han som SnøIsbre, OSM har polygonet way/375260442 mellom 898 og 1155 moh, og ut.no nemner han i vegskildringa. Lina går utanom, vest for han, med 14 meter som næraste passering. Ho er ikkje lagd for å krysse is, og ho skal ikkje brukast som om ho var det: nedkøyring i botnen er den eine staden Fri Flyt namngir som skredfarleg.",
+      },
+      {
+        title: "Før du går",
+        body: "Vestre Istinden ligg i varslingsregionen Indre Troms, ein A-region med dagleg skredvarsel gjennom sesongen — sjekk varsom.no. Ingen kjelde publiserer skisesong for denne turen: ut.nos jul–sep gjeld fotturen, og Fri Flyt har ikkje sesongfelt. Kortets feb–mai er difor redaksjonell. Kortets 5–7 t er pipelinens eiga utrekning; Fri Flyt oppgir 6–7 timer. Ta med sender/mottakar, søkjestong og spade. Ei tom varselside er ikkje det same som eit trygt fjell.",
+      },
+    ],
+    elevationProfile: {
+      path: "M0,200 L36,199 L64,191 L88,182 L109,173 L135,163 L150,157 L165,151 L186,144 L217,135 L243,128 L266,119 L289,115 L313,109 L336,108 L356,104 L376,99 L392,91 L413,84 L434,77 L459,71 L489,61 L506,57 L529,49 L546,42 L558,37 L581,27 L600,18",
+      startLabel: "80 moh",
+      endLabel: "1489 moh",
+      distanceLabel: "5,2 km",
+      caption: "1432 høgdemeter og 5,24 km frå Tindelva, med det brattaste — 27,7 grader mellom 1286 og 1304 moh — på ryggen ein knapp halvkilometer før varden.",
+    },
+  },
   moysalen: {
     slug: "moysalen",
     intro:

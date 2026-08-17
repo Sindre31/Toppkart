@@ -1985,10 +1985,10 @@
   "season": "feb–mai",
   "aspect": "NV",
   "grade": 3,
-  "gradeReason": "",
+  "gradeReason": "Grad 3 på lengda og høgda meir enn på henget: 1432 høgdemeter på 5,24 km, brattaste hundremetersbeltet 21,6 grader mellom 1400 og 1500 moh og brattaste samanhengande parti 27,7 grader — begge under grad 4. Det som ber grada er at ruta går på ein rygg med nordveggen på den eine sida (nordsveipen frå varden held 34,8 grader i snitt og 60,9 som brattaste 60 m) og botnen med breen på den andre, at siste stykket ofte er avblåst, og at turen er 6–7 timar etter kjelda.",
   "roadClosedInWinter": false,
-  "teaserNo": "",
-  "teaserEn": "",
+  "teaserNo": "1432 høgdemeter frå Tindelva ved Iselvmoen: den bratte bjørkelia, inn i gryta under nordveggen, og opp ryggen vest for breen til det høgaste av Istindan.",
+  "teaserEn": "1432 metres of ascent from Tindelva by Iselvmoen: the steep birch hillside, into the cirque below the north wall, and up the ridge west of the glacier to the highest of the Istindan tops.",
   "hazardNotes": "Fri Flyt: KAST ikkje klassifisert. Faremomenta er hans eigne: «Skredfare må vurderes nøye på nedkjøringene i botnen mellom Søndre og Vestre Istind og ned fra Søndre Istind. Ryggen opp normalveien er relativt skredsikker. Hold god avstand fra hengeskavlene ut over Nordveggen.» Siste stykket mot toppen er ofte avblåse, så skia må kanskje berast. Nedkøyringsrenna sørvest frå toppen er 30–35 grader. Isøks og stegjern gjeld berre toppegg-varianten frå Søndre Istind.",
   "sources": [
    "https://www.friflyt.no/topptur/tromso/turbeskrivelse-istind",
@@ -2000,9 +2000,15 @@
    "**Registerfeil retta.** Oppføringa peikte på ein Istinden på 1459 moh i indre Sørdalen mot nordlandsgrensa — eit verkeleg fjell registeret kjenner, men ikkje turen: einaste skildringa av det er ein sommarfjelløpsrapport frå august. Fjellet alle meiner er **Vestre Istinden**, 1489 moh i Bardu, landemerket i Indre Troms, og Fri Flyt publiserer full skiskildring for det. Same slug, rett fjell, 50 km lenger nord. Toppsøket løyser 1488,6 mot publiserte 1489.",
    "Startstaden er Fri Flyts eigen: «Stor parkeringsplass der Tindelva kommer ned ved Iselvmoen på vegen mot Fjellstad». Registeret har Iselvmoen (Bruk, 68.97744/18.52065) og Tindelva (Bekk, 68.97428/18.54491); parkeringspunktet les 80 moh, og 1489 − 1400 = 89 — Fri Flyts høgdemeter impliserer nett denne starten.",
    "Ruta reproduserer: sørsida av Tindelva opp den bratte bjørkelia (153 → 599 moh), ut av skogen og innover i gryta mot nordveggen (789), og opp ryggen på vestsida av veggen (970 → 1023 → 1304) til toppen. Alt måler ÅpentOmråde over skoggrensa.",
-   "Isøks og stegjern gjeld ikkje normalvegen: Fri Flyt nemner dei berre for varianten over toppeggen frå Søndre Istind, og den er ikkje korridoren. Utmarsjen frå Tunebrua går på ein skogsbilveg som «som regel ikke [er] brøytet» — det er utgangen, ikkje starten, og guiden seier det."
+   "Isøks og stegjern gjeld ikkje normalvegen: Fri Flyt nemner dei berre for varianten over toppeggen frå Søndre Istind, og den er ikkje korridoren. Utmarsjen frå Tunebrua går på ein skogsbilveg som «som regel ikke [er] brøytet» — det er utgangen, ikkje starten, og guiden seier det.",
+   "**Korridoren er flytta vest for breen.** Den fyrste ruta gjekk tvers over botnen mellom Vestre og Søre Istinden: seks prøvepunkt mellom 1017 og 1109 moh las SnøIsbre i Kartverkets terrengklasse, og OSM har brepolygonet way/375260442 (898–1155 moh) nett der. Båe kjeldene seier at ruta skal gå utanom — Fri Flyt «opp på ryggen som går opp på vestsiden av veggen», ut.no «til høyre for bekken og breen» — så dei to øvste vegpunkta er flytta ut på ryggkammen vest for botnen. Den nye lina har 0 meter på brepolygonet og ingen SnøIsbre-punkt; næraste passering er 14 meter frå brekanten.",
+   "Registeret skriv den sørlege toppen **Søre Istinden**, ikkje «Søndre Istind» som Fri Flyt. Istindan er registrert som fjellområde, og registeret har fem tindar i det: Vestre (1489, turmålet), Søre 2,0 km unna, Midtre 815 m unna, Austre 2,3 km og Indre 6,7 km. «Nordveggen» finst ikkje i registeret — det er Fri Flyts eige namn på nordsida.",
+   "Registeret set Vestre Istinden i **Bardu** åleine; ut.no skriv «på kommunegrensen mellom Bardu og Målselv».",
+   "Ingen kjelde publiserer skisesong. ut.nos jul–sep gjeld fotturen, og Fri Flyt har ikkje sesongfelt i det heile. Kortets feb–mai er difor redaksjonell, ikkje henta, og guiden seier det.",
+   "Kortets 5–7 t er pipelinens eiga utrekning; Fri Flyt oppgir 6–7 timer. Guiden seier begge.",
+   "**Skogdelen er festa til den skilta stien.** Routeren si eiga line gjennom bjørkelia låg opp til 577 m frå næraste kartlagde sti, med 1 393 m av 5 397 meir enn 250 m unna, sjølv om båe kjeldene skildrar stien. Dei tre skogvegpunkta er difor festa til OSM way/1084430679; den nye lina ligg i snitt 66 m frå kartlagd sti med 276 m som verste avvik. Over skoggrensa følgde lina alt way/527286327, den merkte sommarstien som når toppen 3 m frå varden."
   ],
-  "notes": ""
+  "notes": "Fri Flyt fører turen under Tromsø/Indre Troms og skildrar OPP som normalveien/sommerveien frå parkeringa der Tindelva kjem ned: sørsida av elva, opp ei bratt og tettvokst bjørkeli, over tregrensa med nordveggen rett i front, innover i gryta mot veggen nokre hundre meter, så opp ryggen på vestsida av veggen til toppen — «Det siste stykket opp mot toppen er ofte avblåst, så det kan hende du må bære skiene her». NED er vanlegvis renna på 30–35 grader mot sørvest frå toppen, med «Fallhøyde ned til skogen er omtrent 900 meter»; Alternativ 1 er normalveien ned ved ustabile forhold. Isøks og stegjern nemner kjelda berre for toppegg-varianten frå Søre Istinden, som ikkje er denne korridoren. ut.no fører same fjellet som fottur (VERY_TOUGH, 8 922 m, jul–sep) og skildrar same vegen: bratt sti gjennom skogen, kvile ved skoggrensa på skuldra, «Fortsett videre oppover til høyre for bekken og breen mot toppen av Istind», så ryggen til topps."
  },
  "husfjellet": {
   "season": "feb–mai",

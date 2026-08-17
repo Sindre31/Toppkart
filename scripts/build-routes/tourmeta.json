@@ -142,6 +142,17 @@
   "season": "des–mai",
   "hasGuide": true
  },
+ "istinden": {
+  "name": "Vestre Istinden",
+  "region": "Troms",
+  "summitM": 1489,
+  "verticalM": 1430,
+  "duration": "5–7 t",
+  "grade": 3,
+  "aspect": "NV",
+  "season": "feb–mai",
+  "hasGuide": false
+ },
  "moysalen": {
   "name": "Møysalen",
   "region": "Vesterålen",

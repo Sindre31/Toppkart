@@ -246,6 +246,8 @@ export const TOUR_TEASER_EN: Record<string, string> = {
     "950 metres of ascent from the field at Forsland on Tomma: the path to Forslandsvatnet, around the tarn on land, and the north-west ridge all the way up the island mountain Fri Flyt calls one of the finest peaks on the Helgeland coast.",
   "tredje-svanfjell":
     "660 metres of ascent straight from the lay-by in Kaperdalen: the notch north of point 504, steadily up to the foretop at 870, and the last 36 metres to the Senja classic.",
+  istinden:
+    "1432 metres of ascent from Tindelva by Iselvmoen: the steep birch hillside, into the cirque below the north wall, and up the ridge west of the glacier to the highest of the Istindan tops.",
 
 };
 
@@ -763,6 +765,46 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       endLabel: "899 m",
       distanceLabel: "2.8 km",
       caption: "664 metres of ascent and 2.85 km from Kaperdalen — the notch north of point 504, the foretop at 870, and zero vertical metres given back.",
+    },
+  },
+  istinden: {
+    intro:
+      "1432 metres of ascent over 5.24 km from Tindelva by Iselvmoen to Vestre Istinden, the highest of the Istindan tops and the landmark of Indre Troms. The tour is long and high rather than steep: the steepest hundred-metre band measures 21.6 degrees between 1400 and 1500 m, and the steepest sustained stretch 27.7 degrees — but the route runs along a ridge with what Fri Flyt calls «nordveggen», the north wall, on one side and the cirque holding the glacier on the other, and it is the edges rather than the averages that decide the day.",
+    ascent: [
+      "From the large car park where Tindelva comes down at Iselvmoen on the road toward Fjellstad, 80 m. Fjellstadveien is mapped as a public sealed road, so the start is ploughed year round. The line takes the south side of the river, as both sources say, and follows the mapped path up the steep birch hillside — the same path ut.no calls «tydelig og bra, men bratt», clear and good but steep, signposted with a green marker from the car park. The bands measure 18.2 degrees from 100 to 200 m, 21.0 from 200 to 300 and 19.2 from 300 to 400.",
+      "The forest ends at 558 m by Kartverket's classes, with open ground from 568, and the treeline comes 1.81 km in. Here the ground eases: the band from 500 to 600 m measures 13.9 degrees and the band from 700 to 800 only 8.4 over 650 metres of ground. This is the rest ut.no describes at the shoulder, and it is the place to look around — the north wall stands directly ahead from here.",
+      "From 2.93 km and 788 m the line runs into the cirque below the wall for a few hundred metres, as Fri Flyt says, before taking to the ridge. The ridge runs up the west side of the wall, and it also runs west of the glacier in the cirque. That is not a detail: both Fri Flyt («ryggen som går opp på vestsiden av veggen») and ut.no («til høyre for bekken og breen» — to the right of the stream and the glacier) send you around the ice, and the glacier polygon lies between 898 and 1155 m directly east of the line. The closest approach is 14 metres from its edge, at 4.27 km and 1152 m. The line has 0 metres on the glacier, checked against both Kartverket's terrain class and OSM's glacier polygon.",
+      "Above 1200 m the ridge rises steadily — 17.5 degrees from 1200 to 1300, 21.2 from 1300 to 1400 and 21.6 from 1400 to 1500, the steepest band of the tour. The steepest sustained stretch sits in the same height range: 27.7 degrees between 1286 and 1304 m, 4.73 km in, a little under half a kilometre before the cairn.",
+      "Fri Flyt warns: «Hold god avstand fra hengeskavlene ut over Nordveggen», keep well clear of the cornices out over the north wall, and the measurements say why — the north sweep from the cairn holds 34.8 degrees on average and 60.9 as its steepest 60 metres only 50 to 110 metres out. The cairn at 1489 m, which the register carries as Vestre Istinden. The last stretch is often wind-scoured, and then the skis may have to be carried — that is the source's own phrasing, and it is the commonest reason the day takes longer than the figures suggest.",
+    ],
+    descent: [
+      "Back down the same ridge. Note the bearing: for the first hundred metres from the cairn the line runs west, 262 to 276 degrees, before swinging north-west down the ridge — over the whole drop to the treeline it points 344 degrees. In cloud it is that first westward stretch that has to be right, because the north side of the crest is the north wall.",
+      "From the cairn to the treeline is 931 metres of vertical, against the «omtrent 900 meter» Fri Flyt gives down to the forest. Then the birch hillside again, the one you came up, and 23 metres is all the tour gives back along the way.",
+      "Fri Flyt's usual descent is a different line from this one: the couloir at 30–35 degrees running south-west from the summit. The south-west sweep from the cairn measures 30.6 degrees on average over 800 metres, which agrees with the source, but its steepest 60 metres hold 40.0 degrees 60 to 120 metres out. That couloir is not measured as a route of its own here, and the card's aspect describes the route's own descent. Nor is the summit-ridge traverse from Søre Istinden this route — it is only for that one that Fri Flyt mentions an ice axe and crampons.",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "Fri Flyt's own hazard note is precise about which ground is which: «Skredfare må vurderes nøye på nedkjøringene i botnen mellom Søndre og Vestre Istind og ned fra Søndre Istind. Ryggen opp normalveien er relativt skredsikker. Hold god avstand fra hengeskavlene ut over Nordveggen.» Avalanche danger must be weighed carefully on the descents in the cirque and off the southern top; the ridge up the normal route is relatively secure from avalanches; keep well clear of the cornices over the north wall. This route is that ridge — but «relatively» is the source's word, not a guarantee, and the cirque it warns about lies 14 metres from the line at the closest.",
+      },
+      {
+        title: "The north wall and the cornices",
+        body: "The north sweep from the cairn holds 34.8 degrees on average over the first 800 metres, with 60.9 degrees as its steepest 60 metres only 50 to 110 metres out; the north-east measures 30.5 on average and the north-west 28.0 with 65.1 degrees 190 to 250 metres out. The cornices build out over this edge, and they are what Fri Flyt tells you to keep well clear of. The ridge is broad enough to walk, but the edge is not where the eye puts it in flat light.",
+      },
+      {
+        title: "The glacier in the cirque",
+        body: "The cirque between Vestre and Søre Istinden holds a glacier — Kartverket classes it as SnøIsbre, OSM carries the polygon way/375260442 between 898 and 1155 m, and ut.no names it in the route description. The line goes around it, to the west, with 14 metres as its closest approach. It is not drawn to cross ice and should not be used as though it were: skiing down in the cirque is the one place Fri Flyt names as avalanche ground.",
+      },
+      {
+        title: "Before you go",
+        body: "Vestre Istinden lies in the Indre Troms forecast region, an A region with a daily avalanche bulletin through the season — check varsom.no. No source publishes a ski season for this tour: ut.no's July to September belongs to the hike, and Fri Flyt has no season field at all. The card's feb–mai is therefore editorial. The card's 5–7 t is the pipeline's own estimate; Fri Flyt gives 6–7 hours. Bring a transceiver, probe and shovel. An empty bulletin page is not the same as a safe mountain.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "80 m",
+      endLabel: "1489 m",
+      distanceLabel: "5.2 km",
+      caption: "1432 metres of ascent over 5.24 km from Tindelva, with the steepest ground — 27.7 degrees between 1286 and 1304 m — on the ridge a little under half a kilometre before the cairn.",
     },
   },
   moysalen: {

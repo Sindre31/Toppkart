@@ -3530,6 +3530,104 @@ own numbers contradict its source is exactly what this pipeline exists not to
 publish. Both lines stay in `routes.json`, out of `tourmeta.json`, and
 `emit_ts.py` leaves them out by design.
 
+## The Istind round: the backlog's last routed name, and a line moved off a glacier
+
+**Vestre Istinden, 1489 moh in Bardu — 104 → 105.** It was the one candidate the
+previous rounds had already researched, corridored and solved, and it shipped
+nothing: `routes.json` carried a line, `tourmeta.json` did not carry a card, and
+the write-up's only stated reason for holding it back was about Husfjellet, the
+tour it happened to be paired with in that paragraph. This round finished it,
+and finishing it turned up two things the earlier pass had not looked for.
+
+### The routed line crossed a glacier
+
+The standing conditions say no glacier. The line that had been sitting in
+`routes.json` ran straight across the cirque between Vestre and Søre Istinden:
+**six sample points between 1017 and 1109 moh read `SnøIsbre`** in Kartverket's
+terrain class, and OSM carries the glacier as `way/375260442` between 898 and
+1155 moh, exactly there. Two of the corridor's waypoints were inside it.
+
+Both sources say to go around. Fri Flyt: «ta opp på ryggen som går opp på
+vestsiden av veggen». ut.no: «Fortsett videre oppover til høyre for bekken og
+**breen**». The route had never been in doubt — the corridor had simply been
+pinned through the basin instead of onto the crest west of it, and nothing in
+the battery asks about ice.
+
+The two upper waypoints were moved onto the ridge, verified point by point
+against both the terrain class and the polygon before anything was re-routed.
+The line now has **0 metres on the glacier** and no `SnøIsbre` sample anywhere,
+and passes 14 metres from its edge at 4,27 km — close, which the guide says out
+loud rather than rounding away.
+
+### And then it left the signposted path
+
+`check_ground.py` fired on the new line, and its finding was worth reading twice
+because the *trigger* was wrong and the *substance* was right.
+
+The trigger: the guide calls the mountain «landemerket i Indre Troms», and
+`TRAIL_WORDS` matched **lande*merket*** as a claim to follow a marked trail. The
+pattern allowed any compound prefix in front of every trail word, which is
+correct for *lysløypa* and *skiløypa* — that prefix rule exists because it once
+missed exactly those — but wrong for *merket*, where a prefix changes the noun
+instead of narrowing it. The words are now split: the ones that take a Norwegian
+compound prefix, and the ones that must stand alone. A twelve-case table checks
+both directions, including *varemerket* and *kjennemerket*.
+
+The substance survived the fix: the line really was **577 m off the mapped path
+at its worst, with 1 393 m of 5 397 beyond 250 m**, all of it in the birch
+forest. Both sources describe that path — ut.no's «tydelig og bra, men bratt»,
+signposted with a green marker — and above the treeline the line was already on
+it, within tens of metres of `way/527286327`, the trailblazed summer path that
+reaches the summit 3 m from the cairn. Only the forest was the router's own
+invention.
+
+So the three forest waypoints were pinned to `way/1084430679`. The line now sits
+**66 m from mapped ground on average, 276 m at worst, with 49 m of 5 238 beyond
+250 m**. It is 160 m shorter, gains 4 m more, and its steepest step dropped from
+27,4° to 27,7° in a different place entirely — which is the part worth writing
+down.
+
+### The re-route moved every figure in the guide
+
+The first guide had been written against the pre-pinning line, and the pinning
+invalidated it wholesale: the treeline moved from 604 to 558 moh and from 2,16
+to 1,81 km, every band angle changed, and **the steepest sustained stretch moved
+from 946–966 moh to 1286–1304 moh** — from the step up onto the ridge to the
+upper ridge itself, half a kilometre below the cairn instead of 1,7 km. A guide
+that had correctly said "it is not the summit slope that is steepest but the
+step onto the ridge" became false the moment the line improved. Both languages
+were rewritten from the new facts, and `check_bands.py` agrees with all six band
+claims.
+
+### What the register and the sources actually say
+
+- The register spells the southern top **Søre Istinden**, not Fri Flyt's «Søndre
+  Istind». Istindan is a registered *fjellområde* holding five tinder: Vestre
+  (1489, the tour), Søre 2,0 km off, Midtre 815 m, Austre 2,3 km and Indre 6,7
+  km. **«Nordveggen» is not in the register at all** — it is Fri Flyt's own name
+  for the north face, and the guide attributes it.
+- The register puts Vestre Istinden in **Bardu alone**; ut.no writes «på
+  kommunegrensen mellom Bardu og Målselv».
+- **No source publishes a ski season.** ut.no's jul–sep belongs to the *fottur*
+  (it grades the hike VERY_TOUGH over 8 922 m), and Fri Flyt has no season field.
+  The card's feb–mai is therefore editorial, not borrowed, and the guide says so
+  — as it says that the card's 5–7 t is the pipeline's estimate against Fri
+  Flyt's «6-7 timer».
+- Fri Flyt's «Fallhøyde ned til skogen er omtrent 900 meter» measures **931 m**
+  on the line, and its «renna (30-35 grader)» measures **30,6° mean** in the
+  south-west sweep — both close enough to quote, and both quoted with the
+  measured figure beside them. That couloir is a different line from this one and
+  is not routed here.
+- Ice axe and crampons apply only to the toppegg variant from Søre Istinden,
+  which is not this corridor. The guide says which.
+
+### A pipeline bug the round exposed
+
+`guide_facts.py` iterated every slug in `routes.json` and read `tourmeta.json`
+blind, so the first run after a routed-but-unpublished tour exists died on a
+`KeyError` — Husfjellet, deliberately unpublished since the round that built it.
+`emit_ts.py` already skips those by design; this pass now agrees.
+
 ## Network
 
 Everything is public and unauthenticated:

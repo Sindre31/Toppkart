@@ -1477,5 +1477,57 @@
    "figure": "Fri Flyt skriv «parkering langs Fv.232»; vegen gjennom Kaperdalen er i dag fv. 7862 Kaperdalsveien i OSM (way/128414118), med fire kartlagde parkeringslommer langs dalen",
    "how": "OSM-oppslag på vegnettet i Kaperdalen."
   }
+ ],
+ "istinden": [
+  {
+   "what": "Fallet frå varden i åtte retningar",
+   "figure": "N 34,8° i snitt med 60,9° som brattaste 60 m 50–110 m ut; NØ 30,5° / 53,8° 150–210 m ut; Ø 24,3° / 58,3° 30–90 m ut; SØ 24,9° / 51,3° 30–90 m ut; S 19,1° / 36,1° 50–110 m ut; SV 30,6° / 40,0° 60–120 m ut; V 31,9° / 37,4° 540–600 m ut; NV 28,0° / 65,1° 190–250 m ut",
+   "how": "flank_probe.py frå 68.94986/18.56679, 800 m ut, prøvetatt kvar 10. m i DTM-en."
+  },
+  {
+   "what": "Istindan i registeret",
+   "figure": "Vestre Istinden (Fjell, Bardu) 68.94986/18.56679 — 0 m frå det resolverte toppunktet, DTM 1488,5 mot publiserte 1489. Registeret har òg Søre Istinden 1 997 m unna, Midtre Istinden 815 m, Austre Istinden 2 338 m og Indre Istinden 6 704 m, og Istindan som fjellområde 1 369 m unna. «Nordveggen» gir ingen treff",
+   "how": "SSR-namnesøk på alle skrivemåtane, haversine frå toppunktet."
+  },
+  {
+   "what": "Vegen fram til utgangspunktet",
+   "figure": "Fjellstadveien er OSM way/161577653, highway=unclassified med surface=asphalt — offentleg veg med fast dekke heilt fram til parkeringa på 80 moh. Skogsbilvegen frå Tunebrua, som Fri Flyt seier «som regel ikke [er] brøytet», er utgangen frå den alternative ruta og ikkje denne starten",
+   "how": "Overpass innanfor 250 m av trailheaden 68.97744/18.52065."
+  },
+  {
+   "what": "Varslingsregionen",
+   "figure": "Indre Troms, RegionId 3013, RegionType A — dagleg skredvarsel gjennom sesongen",
+   "how": "NVEs AvalancheWarningByCoordinates/Simple på toppunktet."
+  },
+  {
+   "what": "Breen i botnen, og kor nær lina kjem han",
+   "figure": "OSM way/375260442, brepolygon mellom 898 og 1155 moh aust for ryggen. Den ferdige lina har 0 m innanfor polygonet, målt ved å tettne lina til 5 m; næraste passering er 14 m frå brekanten, 4,27 km ute på 1152 moh. Den fyrste ruta hadde seks prøvepunkt med klasse SnøIsbre mellom 1017 og 1109 moh; den nye har ingen",
+   "how": "Overpass for polygonet, punkt-i-polygon mot den tettna lina, og Kartverkets terrengklasse via DTM1-punkt-API langs lina."
+  },
+  {
+   "what": "Skoggrensa og kvilesteget over henne",
+   "figure": "siste skogpunkt 558 moh, fyrste opne 568 moh, 1,81 km ute; beltet 500–600 moh måler 13,9° og 700–800 moh 8,4° over 650 m grunn",
+   "how": "guide_facts.py sin treeline-skann mot Kartverkets terrengklasse; banda frå bands() på den ferdige lina."
+  },
+  {
+   "what": "Kvar det brattaste samanhengande partiet ligg",
+   "figure": "27,7° mellom 1286 og 1304 moh, 4,73 km ute på ei linje på 5,24 km — altså oppe på ryggen, ein knapp halvkilometer før varden",
+   "how": "steepestStep i guide_facts.json mot kumulativ lengd langs routes.json."
+  },
+  {
+   "what": "Peilinga ut frå varden på veg ned",
+   "figure": "262° over dei fyrste 100 m og 276° over 200 m — altså vest — og 344° over heile fallet frå varden til skoggrensa (3,43 km)",
+   "how": "Haversine-peiling frå toppunktet til vertexen som ligg den oppgitte avstanden attende langs routes.json."
+  },
+  {
+   "what": "Fallhøgda frå varden ned til skogen",
+   "figure": "931 høgdemeter frå 1489 moh til siste skogpunkt på 558 moh; Fri Flyt oppgir «omtrent 900 meter»",
+   "how": "elevations i routes.json mot treeline-skannen."
+  },
+  {
+   "what": "Kor nær lina held seg den skilta stien",
+   "figure": "OSM way/1084430679 gjennom skogen og way/527286327 (trailblazed=yes, sac_scale=demanding_mountain_hiking) over skoggrensa, som når toppen 3 m frå varden. Lina ligg i snitt 66 m frå næraste kartlagde sti, med 276 m som største avstand og berre 49 m av 5 238 meir enn 250 m unna. Den fyrste korridoren låg opp til 577 m unna med 1 393 m over 250",
+   "how": "Haversine mot alle nodane i dei kartlagde stiane i ground-cachen, før og etter at dei tre skogvegpunkta blei festa til way/1084430679."
+  }
  ]
 }

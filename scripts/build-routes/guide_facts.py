@@ -319,6 +319,12 @@ def main():
 
     out = {}
     for slug, recs in routes.items():
+        # A tour can be routed and deliberately not published — Husfjellet is,
+        # because its line contradicts its source. `emit_ts.py` already leaves
+        # those out; this pass has to agree, or the first run after one is added
+        # dies on a KeyError against `tourmeta.json` instead of skipping it.
+        if slug not in tours:
+            continue
         by_id = {r["id"]: r for r in corridors[slug]["routes"]}
         entries = []
         for r in recs:

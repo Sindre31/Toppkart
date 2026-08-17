@@ -79,9 +79,19 @@ REGULATED = "InnsjøRegulert"
 # never tested, on a tour whose whole first kilometre is that claim. The same
 # hole swallowed «skiløypa» before `skiløype\w*` was added. A compound noun in
 # Norwegian is one word, and the pattern has to allow the first half of it.
+# The compound rule cuts both ways, though. `\w*?` in front of «merket» also
+# matches **lande**merket — a landmark, which is a claim about the skyline and
+# not about a trail — and Vestre Istinden's guide calls the mountain exactly
+# that. So the words split in two: the ones that really do take a Norwegian
+# compound prefix (a lysløype is a løype), and the ones that must stand alone,
+# where a prefix changes the meaning instead of narrowing it.
+TRAIL_COMPOUND = (
+    r"løype|løypa|løypene|løyper|løypa\w*|skogsbilveg\w*|skogsbilvei\w*|"
+    r"anleggsveg\w*|anleggsvei\w*"
+)
+TRAIL_BARE = r"merket|merkede|merka|preparert\w*|oppkjørt\w*"
 TRAIL_WORDS = re.compile(
-    r"\b\w*?(løype|løypa|løypene|løyper|løypa\w*|skogsbilveg\w*|skogsbilvei\w*|"
-    r"anleggsveg\w*|anleggsvei\w*|merket|merkede|merka|preparert\w*|oppkjørt\w*)\b",
+    r"\b(?:\w*?(?:" + TRAIL_COMPOUND + r")|(?:" + TRAIL_BARE + r"))\b",
     re.I,
 )
 # «utenfor oppkjørte løyper» is the opposite claim, and a word search cannot

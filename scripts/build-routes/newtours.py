@@ -11,7 +11,7 @@ Sirdal — which is why the front page's region count had to stop being a litera
 
 NEW_TOURS = {
     "hamperokken": ("Hamperokken", "Troms"),
-    "istinden": ("Istinden", "Troms"),
+    "istinden": ("Vestre Istinden", "Troms"),
     "fastdalstinden": ("Fastdalstinden", "Lyngen"),
     "store-kjostinden": ("Store Kjostinden", "Lyngen"),
     "breitinden": ("Breitinden", "Senja"),
