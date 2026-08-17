@@ -200,4 +200,13 @@ PEAKS = [
     ("sata", "Såta", ["Kvam"], 1260, 60.43158, 5.98895),
     ("skrott", "Skrott", ["Kvam"], 1320, 60.45728, 6.14436),
     ("tveitakvitingen", "Tveitakvitingen", ["Kvam", "Samnanger", "Bjørnafjorden"], 1299, 60.32527, 5.90835),
+    #
+    # — the Voss round: the two tours on Fri Flyt's skiturer-voss index the app
+    #   did not already carry. Fri Flyt calls the first one Finnbufjellet, but
+    #   the register's Finnbufjellet point (Fjell, 60.88774/6.44335) reads
+    #   1330,8 m against a published 1358, and the top itself is registered
+    #   **Finnbunuten** — 1357,0 m at 60.88067/6.44088, the Kirketaket pattern
+    #   again. The app bears Fri Flyt's name, the summit search the register's. —
+    ("finnbufjellet", "Finnbunuten", ["Voss"], 1358, 60.88067, 6.44088),
+    ("vatnaknausen", "Vatnaknausen", ["Voss"], 1303, 60.64957, 6.64765),
 ]

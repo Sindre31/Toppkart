@@ -226,6 +226,10 @@ export const TOUR_TEASER_EN: Record<string, string> = {
     "1068 metres of ascent from the cluster of summer farms in Fitjadalen: a footbridge over the Kjølo, a steep wooded hillside to Håsete, the ski hut at 1110 metres and the notch between Glynt and the summit.",
   tveitakvitingen:
     "995 metres of ascent over 8.6 km from the Furedalen alpine centre: the groomed tracks along Mødalsvegen to Mødal, steep steps past Gråskorvenuten and a long summit ridge to the cairn.",
+  finnbufjellet:
+    "620 metres of ascent from the camping ground at the top of the Halsabakkane hairpins: across the Sendo river and up the ridge east of Finnbujuvet, where the Voss ski season opens and closes.",
+  vatnaknausen:
+    "980 metres of ascent from Tverrberg: the toll road into Budalen to Nyestølen, up onto the ridge west of the Rjupetjørnane tarns, and east across the plateau to the view over Voss.",
 
 };
 
@@ -2639,6 +2643,46 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       caption: "836 metres of climbing and 3.77 km from Trefta, with the steepest hundred-metre band at 19.7 degrees between 1500 and 1600 m.",
     },
   },
+  finnbufjellet: {
+    intro:
+      "620 metres of ascent and 4.37 km from the camping ground at the top of the Halsabakkane hairpins — the mountain Fri Flyt's index calls the place where the Voss ski season opens and closes. The whole line runs on open ground above the treeline, and the numbers are kind: the steepest 100-metre band measures 13.2 degrees between 900 and 1000 metres, and the steepest sustained stretch 23.3 degrees. The names need a sentence: Fri Flyt calls the mountain Finnbufjellet and quotes 1358 metres, but the top itself is registered as Finnbunuten, and the terrain model reads 1357 — the same pattern as Kirketaket, where guidebook and register each carry their own name.",
+    ascent: [
+      "The start is the flat where highway 13 tops the Halsabakkane hairpins and meets the Sendo river — the camping ground at Sendo, 766–779 metres on open ground. The sources appear to contradict each other here, and the terrain settles it: Fri Flyt's fact box says '770 vertical metres', the Utemagasinet version of the same description says 588 metres of ascent from the same car park — and the road passes 770 metres exactly where the hairpins level out. 770 is the starting elevation, not the climb; the routed line collects 620 metres.",
+      "Cross the bridge over the Sendo river and head south. The river you cross runs east along the flat and then plunges through the waterfall into Kvassdalen, the valley highway 13 climbs out of — the valley floor down there reads 574 metres. West of you the Finnbu streams cut ravines down towards the river, with the Finnbuene summer farm on the west bank. The ridge between the ravine and Kvassdalen is the route: it is the one Fri Flyt points to as the soundest alternative, and it is the only ridge east of the ravine.",
+      "The ridge is even and open: 793 metres at its foot, 871 midway, 992 where it broadens. The steepest 100-metre band of the tour sits here — a mean 13.2 degrees between 900 and 1000 metres — and it is still gentle enough to skin straight up in most conditions.",
+      "On the shoulder at 1090 metres the alternative approach from the Myrkdalen ski resort comes up — 'after an hour's walking', says Fri Flyt, and the meeting point is where the ridge levels out. From there the line runs west on the broad flank: 1146, 1221 and 1302 metres on the ridge towards the summit, with the steepest sustained stretch of 23.3 degrees along the way.",
+      "The cairn stands at 1357 metres. The terrain model and the register agree this is Finnbunuten — the highest point of the massif, against a published 1358 — and that the register's own Finnbufjellet point further north reads 1331 and is not the top. Northwards the ridge lies almost flat — a mean 2.7 degrees for the first kilometre — and the west and north-west sides plunge: stay on the east side of the cairn when it blows.",
+    ],
+    descent: [
+      "The soundest way down is the way you came up, says the source, and the measurement agrees: the east flank you climbed holds a mean 6.9 degrees from the cairn towards the north-east, with 23.7 degrees as the steepest 60-metre window 650–710 m out. Fine cruising the whole ridge down to the shoulder, and the ridge on down towards Sendo.",
+      "Fri Flyt mentions 'a whole row of descent options' without describing them, and the measurements say why the line choice has to be awake off the route: the west side falls 50.3 degrees at its steepest 440–500 m from the cairn, and the north-west side 56.7 degrees 420–480 m out — down towards Sendobotnen and the ravines. The south-east side measures 28.1 degrees 690–750 m out and the east side 28.4 at the same distance, so even the gentler sectors carry slopes further out.",
+      "From the shoulder it is the ridge down to the bridge and the last metres across the river to the camping ground — the tour gives back 34 vertical metres in total, so the descent is clean.",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "Fri Flyt rates it KAST 1 – easy, and that applies to the ridge, not the flanks beside it: the line itself has 23.3 degrees as its steepest sustained stretch and 13.2 degrees as its steepest 100-metre band, between 900 and 1000 metres. It runs on open, wind-exposed ground from the first metre — there is no forest to shelter in.",
+      },
+      {
+        title: "The north ridge and the ravine",
+        body: "'The north ridge has a couple of exposed sections where you must judge your skills and the avalanche danger', writes Fri Flyt — the north ridge is not this route, and that needs saying, because it lies right beside it: from the cairn northwards the mean is only 2.7 degrees, and it is exactly that flatness that puts you there without choosing it. West of the ridge, Finnbujuvet collects wind-blown snow — which is why this mountain opens and closes the season — and the west and north-west sides below the summit fall 50.3 and 56.7 degrees at their steepest. In flat light, the edge above the ravine is the one thing to keep track of.",
+      },
+      {
+        title: "The road",
+        body: "The approach is its own factor: highway 13 over Vikafjellet is a weather-exposed mountain crossing, and the camping ground sits on the ploughed edge of it. Fri Flyt calls the access easy — and it is, when the road is open. Check the road reports the same day, and assume that what closes the road is also the weather that loads Finnbujuvet.",
+      },
+      {
+        title: "Before you go",
+        body: "Finnbufjellet is in the Voss forecast region, an A region with a daily avalanche bulletin through the season — check varsom.no. No source publishes season months for this tour; the card's jan–apr is borrowed from the app's other Voss tours, and Fri Flyt's index says the mountain opens and closes the Voss season — so it stretches at both ends when the snow is there. Bring transceiver, probe and shovel. An empty forecast page does not mean a safe mountain.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "772 m",
+      endLabel: "1357 m",
+      distanceLabel: "4.4 km",
+      caption: "620 metres of ascent and 4.37 km from the camping ground at Sendo — open ridge the whole way, with 23.3 degrees as the steepest sustained stretch.",
+    },
+  },
   storehorn: {
     intro:
       "A short walk from the car to a summit that looks out over the whole of Hemsedal. The tour starts above the treeline and the ground is open from the first step — a good first ski tour in the valley, and a quick morning summit once you know it.",
@@ -2739,6 +2783,46 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       endLabel: "1412 m",
       distanceLabel: "6.7 km",
       caption: "1307 metres of climbing and 6.71 km from Høyland, with the last 107 metres spread over 1.1 km of gentle north ridge.",
+    },
+  },
+  vatnaknausen: {
+    intro:
+      "980 metres of ascent and 7.48 km from Tverrberg, and nearly half of it on a road: the toll road from Selheim ends at the car park at 383 metres, and the road chain on into Budalen carries you past Øvraset to Nyestølen at 707 before the mountain takes over. The numbers on the line itself are kind — steepest 100-metre band 13.9 degrees between 700 and 800 metres, steepest sustained stretch 21.9 — but Fri Flyt rates it KAST 2 – challenging, and that is about route-finding in the broken ground above the treeline, not about any single steep slope. From the cairn: the panorama over Voss the tour is sold on.",
+    ascent: [
+      "Follow the road to Selheim farm, pay the toll and crawl steeply up to Tverrberg, as the source puts it — the car park is mapped and reads 383 metres. On foot from there: Tverrbergsvegen continues south to the junction at 475 metres, where the Øvraset road branches east.",
+      "The Øvraset road carries you into Budalen: 533 metres along the way, Øvraset at 639, and the valley floor at 670 — bog and thinning forest where the valley opens. The road ends and summer-farm country takes over up to Nyestølen at 707 metres. The register holds 27 Nyestølens; this is the one in Budalen.",
+      "From Nyestølen head straight north along the treeline, as the source says — the forest ends at 822 metres by Kartverket's classes. The flank up towards the ridge is the steepest part of the tour: the 100-metre band between 700 and 800 metres measures a mean 13.9 degrees, and this is also where the effort in the KAST rating lives — the broken ground demands that you set the track with care.",
+      "Up onto the ridge west of the Rjupetjørnane tarns, as the source advises: the line gains the ridge at 978 metres, follows it over 1031, and passes the tarns — they lie at 1089 — on their north side on open ground at 1103 metres. From there east: the plateau carries you over 1215 towards the top.",
+      "The cairn stands at 1302 metres, against a published 1303. The register holds two Vatnaknausen points — Topp and Berg, the latter at 1199 — and the summit search climbed the last metres from the Topp point. The view over Voss is the reason the tour exists.",
+    ],
+    descent: [
+      "The same way down, says the source, and it sells the sunset — the tour faces west, and the afternoon sun softens the snow the whole way home. Be clear about what that means: what is soft at four o'clock refreezes when the sun goes down, and west-facing slopes change fastest exactly then.",
+      "The descent starts westwards off the plateau, because right by the cairn the ground plunges in the other directions: the east side falls 40.6 degrees only 50–110 m out, the south-east side 46.7 degrees 40–100 m out, and the north-east side 43.8 degrees 340–400 m out. The 'knaus' in the name is real — hold west until you are back down on the ridge.",
+      "From the ridge the same way back: down the flank to Nyestølen, and the road chain out of Budalen to Tverrberg. The tour gives back 60 vertical metres in total, most of it in the broken ground on the plateau and the road's own dips.",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "Fri Flyt rates it KAST 2 – challenging, with the reasoning 'broken terrain, demanding effort to set the soundest possible track below 30 degrees'. The measurement of the chosen line says where that effort went: steepest 100-metre band 13.9 degrees between 700 and 800 metres, steepest sustained stretch 21.9 degrees, up in the flank between the treeline and the ridge. The route-finding, not the route, is the challenge — step off it and the broken ground offers 30-degree slopes quickly.",
+      },
+      {
+        title: "The summit knoll",
+        body: "From the cairn the ground drops abruptly in three directions: 40.6 degrees to the east only 50–110 m out, 46.7 to the south-east 40–100 m out, and 43.8 to the north-east 340–400 m out. In good visibility it is obvious; in fog the flat east sector — the mean eastwards is −0.3 degrees over the first 800 metres because the plateau continues — is a trap that walks you onto the edge. A compass bearing west from the cairn, always.",
+      },
+      {
+        title: "West-facing",
+        body: "The whole mountainside the tour climbs faces west and south-west. That gives sun-softened snow in the afternoon and the sunset the source sells the tour on — and it also gives daily soaking and refreezing as spring advances. Treat timing as part of the route choice: the flank between the treeline and the ridge is the steepest part, and it gets the sun last.",
+      },
+      {
+        title: "Before you go",
+        body: "Vatnaknausen is in the Voss forecast region, an A region with a daily avalanche bulletin through the season — check varsom.no. No source publishes season months for this tour; the card's jan–apr is borrowed from the app's other Voss tours, and the guide says so. The toll road to Tverrberg carries a fee. Bring transceiver, probe and shovel. An empty forecast page does not mean a safe mountain.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "383 m",
+      endLabel: "1302 m",
+      distanceLabel: "7.5 km",
+      caption: "980 metres of ascent and 7.48 km from Tverrberg — road into Budalen to Nyestølen, the ridge west of the Rjupetjørnane tarns, and 21.9 degrees as the steepest sustained stretch.",
     },
   },
   horndalsnuten: {

@@ -1217,5 +1217,54 @@
    "figure": "ingen treff nær ruta, heller ikkje fuzzy; registeret har Furedalen (Dal/Hyttefelt/Li, Kvam) der OSM-parkeringa heiter «Furedalen alpin» (node/10261906575, 382,18 moh). «Tjødnadalen» hos ut.no er registerført Tjørnadalen (60.34614/5.96794), og Svartatjørna (60.34204/5.96977) ligg ved linja",
    "how": "SSR-namnesøk med og utan fuzzy på alle namna i skildringa."
   }
+ ],
+ "finnbufjellet": [
+  {
+   "what": "Fallet frå varden i åtte retningar",
+   "figure": "N 2,7° i snitt med 12,0° som brattaste 60 m 70–130 m ut; NØ 6,9° / 23,7° 650–710 m ut; Ø 10,5° / 28,4° 660–720 m ut; SØ 14,3° / 28,1° 690–750 m ut; S 9,9° / 22,6° 50–110 m ut; SV 7,0° / 30,5° 50–110 m ut; V 21,1° / 50,3° 440–500 m ut; NV 17,6° / 56,7° 420–480 m ut",
+   "how": "flank_probe.py frå 60.88074/6.44081, 800 m ut, prøvetatt kvar 10. m i DTM-en."
+  },
+  {
+   "what": "Toppen er registeret sin Finnbunuten, ikkje Finnbufjellet-punktet",
+   "figure": "Registeret sitt Finnbufjellet (Fjell, 60.88774/6.44335) les 1330,8 moh; toppsøket klatra til 1357,3 på 60.88074/6.44081, 22 m frå registeret sin Finnbunuten (Topp, 60.88061/6.44069), mot publisert 1358",
+   "how": "SSR-oppslag på begge namna; DTM1-raster og punkt-API."
+  },
+  {
+   "what": "Starthøgda avgjer talkonflikten mellom kjeldene",
+   "figure": "rv13 passerer 770 moh på 60.90112/6.46437 der Halsabakkane flatar ut ved Sendo; flata ved leirplassen les 766–779 moh, og 1358 − 770 = 588 — Utemagasinet sine 588 høgdemeter frå «parkeringen på toppen av Halsabakkene». Fri Flyts faktaboks-«770» er starthøgda, ikkje stigninga; kortet ber den ruta gainen 620",
+   "how": "DTM1-samplar langs OSM-geometrien til rv13 (ref=13) gjennom hårnålssvingane; rutenett 5×8 punkt over flata."
+  },
+  {
+   "what": "Sendo-elva og fossen ned i Kvassdalen",
+   "figure": "Elva (OSM way/306601832) passerer leirplassen på 60.90111/6.46346, 768 moh, og fell gjennom fossen ved 60.90046/6.47611 (waterfall-node/3114513148) ned til dalbotnen i Kvassdalen på 574–581 moh",
+   "how": "OSM-geometri prøvetatt mot DTM1."
+  },
+  {
+   "what": "Ryggen aust for Finnbujuvet, målt",
+   "figure": "792,9 moh på 60.89900/6.46600, 870,5 på 60.89600/6.46900, 992,2 på 60.89400/6.47400, 1088,8 på skuldra 60.88850/6.47450 — og vidare 1146,4 / 1221,4 / 1302,3 vestover mot toppen. Finnbu-bekkene (way/306514915, way/306514882) skjer juva vest for ryggen; Finnbuene-stølen (Seter/støl) står på 60.90021/6.46077",
+   "how": "DTM1-punkt-API på kvart korridorpunkt; OSM-vassdragsgeometri; SSR-oppslag."
+  }
+ ],
+ "vatnaknausen": [
+  {
+   "what": "Fallet frå varden i åtte retningar",
+   "figure": "N 16,8° i snitt med 26,7° som brattaste 60 m 400–460 m ut; NØ 16,3° / 43,8° 340–400 m ut; Ø −0,3° / 40,6° 50–110 m ut; SØ 15,2° / 46,7° 40–100 m ut; S 19,2° / 38,7° 410–470 m ut; SV 12,8° / 29,5° 230–290 m ut; V 15,4° / 37,3° 580–640 m ut; NV 21,6° / 42,1° 700–760 m ut",
+   "how": "flank_probe.py frå 60.64948/6.64900, 800 m ut, prøvetatt kvar 10. m i DTM-en."
+  },
+  {
+   "what": "Vegkjeda frå Tverrberg inn Budalen, målt",
+   "figure": "«Tverberg car park» (node/7829590483) les 382,7 moh; Tverrbergsvegen (way/322409601, fee=yes) sørover til vegdelet på 475 moh (60.64113/6.55725); Øvraset-vegen (way/707342766) austover om 533 moh (60.64377/6.57231) til Øvraset 639 moh (60.64487/6.58671, parkering node/6643338669); Budalen-punktet (Dal) 669,6 og Nyestølen (Seter/støl) 706,9",
+   "how": "OSM-geometri prøvetatt mot DTM1; SSR-oppslag på Budalen og Nyestølen (27 treff, næraste valt)."
+  },
+  {
+   "what": "Eggi vest for Rjupetjørnane, målt",
+   "figure": "977,8 moh på 60.65100/6.61800, 1031,4 på 60.65150/6.62500 og 1102,7 på 60.65100/6.63200 — alle klasse ÅpentOmråde; Rjupetjørnane (Gruppe av tjern) står på 60.64934/6.63213, 1088,5 moh",
+   "how": "DTM1-punkt-API på korridorpunkta; SSR-oppslag."
+  },
+  {
+   "what": "Registeret ber to Vatnaknausen-punkt",
+   "figure": "Topp 60.64957/6.64765 (1298,6) og Berg 60.65215/6.64512 (1199,0); toppsøket klatra frå Topp-punktet til 1302,3 på 60.64948/6.64900 mot publisert 1303",
+   "how": "SSR-oppslag; DTM1-raster og punkt-API."
+  }
  ]
 }

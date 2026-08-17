@@ -2516,6 +2516,48 @@ export const GUIDES: Record<string, TourGuide> = {
       caption: "836 høgdemeter og 3,77 km frå Trefta, med brattaste hundremeteren på 19,7 grader mellom 1500 og 1600 moh.",
     },
   },
+  finnbufjellet: {
+    slug: "finnbufjellet",
+    intro:
+      "620 høgdemeter og 4,37 km frå leirplassen på toppen av Halsabakkane — fjellet Fri Flyt-indeksen kallar staden der skisesongen på Voss vert opna og avslutta. Heile lina går i ope terreng over skoggrensa, og tala er snille: brattaste hundremetersbeltet måler 13,2 grader mellom 900 og 1000 moh, og det brattaste samanhengande partiet 23,3 grader. Namna treng ei setning: Fri Flyt kallar fjellet Finnbufjellet og oppgjev 1358 moh, men toppen sjølv heiter Finnbunuten i registeret, og terrengmodellen les 1357 — same mønsteret som Kirketaket, der guidebok og register ber kvar sitt namn.",
+    ascent: [
+      "Starten er flata der rv13 toppar hårnålssvingane i Halsabakkane og møter Sendo-elva — leirplassen ved Sendo, 766–779 moh på open mark. Kjeldene ser ut til å motseia kvarandre her, og terrenget avgjer: Fri Flyts faktaboks seier «Høydemeter: 770», Utemagasinet-versjonen av same skildringa seier 588 høgdemeter frå same parkeringa — og vegen passerer 770 moh nøyaktig der bakkane flatar ut. 770 er starthøgda, ikkje stigninga; den ruta lina samlar 620 høgdemeter.",
+      "Kryss brua over Sendo-elva og hald sørover. Elva du kryssar renn austover langs flata og stuper så gjennom fossen ned i Kvassdalen, dalen rv13 kjem opp frå — dalbotnen der nede les 574 moh. Vest for deg skjer Finnbu-bekkene juv ned mot elva, med Finnbuene-stølen på vestbredda. Ryggen mellom juvet og Kvassdalen er ruta: det er han Fri Flyt peikar på som det sikraste alternativet, og han er den einaste ryggen aust for juvet.",
+      "Ryggen er jamn og open: 793 moh ved foten, 871 midtvegs, 992 der han breier seg ut. Det brattaste hundremetersbeltet på turen ligg her — 13,2 grader i snitt mellom 900 og 1000 moh — og det er framleis slakt nok til å gå beint opp i dei fleste føre.",
+      "På skuldra ved 1090 moh kjem alternativtilkomsten frå Myrkdalen skisenter opp — «etter en times gange», seier Fri Flyt, og møtepunktet er der ryggen flatar ut. Vidare går lina vestover på breie flanken: 1146, 1221 og 1302 moh på ryggen mot toppen, med brattaste samanhengande partiet på 23,3 grader undervegs.",
+      "Varden står på 1357 moh. Terrengmodellen og registeret er samde om at dette er Finnbunuten — det høgaste punktet i massivet, mot publiserte 1358 — og at registeret sitt eige Finnbufjellet-punkt lenger nord les 1331 og ikkje er toppen. Nordover ligg ryggen nesten flat — 2,7 grader i snitt den fyrste kilometeren — og vest- og nordvestsida stuper: hald deg på austsida av varden når det blæs.",
+    ],
+    descent: [
+      "Sikraste nedfarten er same veg som opp, seier kjelda, og målinga er samd: austflanken du kom opp held 6,9 grader i snitt frå varden mot nordaust, med 23,7 grader som brattaste 60 m-vindauge 650–710 m ut. Fin cruising heile ryggen ned til skuldra, og ryggen vidare ned mot Sendo.",
+      "Fri Flyt nemner «en rekke nedkjøringsalternativer» utan å skildra dei, og målingane seier kvifor linevalet må vera vake utanfor ruta: vestsida fell 50,3 grader på det brattaste 440–500 m frå varden, og nordvestsida 56,7 grader 420–480 m ut — ned mot Sendobotnen og juva. Søraustsida måler 28,1 grader 690–750 m ut og austsida 28,4 på same avstand, så òg dei slakare sektorane har heng i seg lenger ute.",
+      "Frå skuldra att er det ryggen ned til brua og dei siste metrane over elva til leirplassen — 34 høgdemeter å gje tilbake har turen samla, så nedfarten er rein.",
+    ],
+    avalanche: [
+      {
+        title: "Ruta",
+        body: "Fri Flyt set KAST 1 – Enkelt, og det gjeld ryggen, ikkje flankane ved sidan av: sjølve lina har 23,3 grader som brattaste samanhengande parti og 13,2 grader som brattaste hundremetersbelte, mellom 900 og 1000 moh. Ho går i ope, vindutsett terreng frå fyrste meter — her finst ingen skog å gå i le av.",
+      },
+      {
+        title: "Nordeggen og juvet",
+        body: "«Nordeggen har et par luftige partier hvor man må vurdere ferdighetene og skredfaren», skriv Fri Flyt — nordeggen er ikkje denne ruta, og det må seiast, for han ligg rett ved: frå varden mot nord er snittet berre 2,7 grader, og det er nettopp det flate som gjer at ein hamnar der utan å velja det. Vest for ryggen samlar Finnbujuvet fokksnø — det er difor fjellet opnar og avsluttar sesongen — og vest- og nordvestsida under toppen fell 50,3 og 56,7 grader på det brattaste. I flatt lys er kanten mot juvet den eine tingen å halda styr på.",
+      },
+      {
+        title: "Vegen",
+        body: "Tilkomsten er sin eigen faktor: rv13 over Vikafjellet er eit vêrutsett høgfjellssamband, og leirplassen ligg på brøytekanten av det. Fri Flyt kallar tilkomsten lett — og det er ho når vegen er open. Sjekk vegmeldingane same dag, og rekn med at det som stengjer vegen òg er vêret som lastar Finnbujuvet.",
+      },
+      {
+        title: "Før du går",
+        body: "Finnbufjellet ligg i varslingsregionen Voss, ein A-region med dagleg skredvarsel gjennom sesongen — sjekk varsom.no. Ingen kjelde publiserer sesongmånader for denne turen; kortets jan–apr er lånt frå dei andre Voss-turane i appen, og Fri Flyt-indeksen seier at fjellet opnar og avsluttar sesongen på Voss — han strekkjer seg altså i begge endar når snøen ligg. Ta med sender/mottakar, søkjestong og spade. Ei tom varselside er ikkje det same som eit trygt fjell.",
+      },
+    ],
+    elevationProfile: {
+      path: "M0,198 L19,198 L44,192 L62,185 L92,172 L105,162 L124,147 L145,135 L164,128 L186,126 L204,122 L223,111 L247,101 L266,98 L289,100 L308,100 L328,96 L347,89 L359,80 L375,68 L396,65 L415,64 L439,62 L458,61 L483,59 L507,52 L526,38 L545,36 L576,30 L600,18",
+      startLabel: "772 moh",
+      endLabel: "1357 moh",
+      distanceLabel: "4,4 km",
+      caption: "620 høgdemeter og 4,37 km frå leirplassen ved Sendo — open rygg heile vegen, med 23,3 grader som brattaste samanhengande parti.",
+    },
+  },
   storehorn: {
     slug: "storehorn",
     intro:
@@ -2622,6 +2664,48 @@ export const GUIDES: Record<string, TourGuide> = {
       endLabel: "1412 moh",
       distanceLabel: "6,7 km",
       caption: "1307 høgdemeter og 6,71 km frå Høyland, med dei siste 107 høgdemetrane fordelte på 1,1 km slak nordrygg.",
+    },
+  },
+  vatnaknausen: {
+    slug: "vatnaknausen",
+    intro:
+      "980 høgdemeter og 7,48 km frå Tverrberg, og nesten halve vegen på veg: bomvegen frå Selheim endar på parkeringa på 383 moh, og vegkjeda vidare inn Budalen ber deg om Øvraset til Nyestølen på 707 før fjellet tek over. Tala på sjølve lina er snille — brattaste hundremetersbeltet 13,9 grader mellom 700 og 800 moh, brattaste samanhengande parti 21,9 — men Fri Flyt set KAST 2 – Utfordrende, og det handlar om linevalet i det småkuperte terrenget over skoggrensa, ikkje om noko enkelt brattheng. Frå varden: panoramautsikta over Voss turen vert seld på.",
+    ascent: [
+      "Følg vegen til Selheim gard, betal bomavgifta og krabb bratt opp til Tverrberg, slik kjelda seier — parkeringa er kartlagd og les 383 moh. Til fots vidare: Tverrbergsvegen held fram sørover til vegdelet på 475 moh, der Øvraset-vegen tek av austover.",
+      "Øvraset-vegen ber deg inn Budalen: 533 moh undervegs, Øvraset på 639, og dalbotnen på 670 — myr og glissen skog der dalen opnar seg. Vegen sluttar og stølsterrenget tek over opp til Nyestølen på 707 moh. Registeret har 27 Nyestølen-ar; denne er den i Budalen.",
+      "Frå Nyestølen tek du rett nord etter skoggrensa, slik kjelda seier — skogen sluttar på 822 moh etter Kartverkets klassar. Flanken opp mot eggi er det brattaste på turen: hundremetersbeltet mellom 700 og 800 moh måler 13,9 grader i snitt, og her ligg òg innsatsen KAST-vurderinga handlar om — det småkuperte krev at du legg sporet med vit.",
+      "Opp på eggi vest for Rjupetjørnane, slik kjelda rår til: lina går opp på 978 moh, følgjer eggi over 1031, og passerer tjørnene — dei ligg på 1089 — på nordsida i ope terreng på 1103 moh. Derifrå austover: platået ber deg over 1215 mot toppen.",
+      "Varden står på 1302 moh, mot publiserte 1303. Registeret ber to Vatnaknausen-punkt — Topp og Berg, det siste på 1199 — og toppsøket klatra frå Topp-punktet dei siste metrane. Utsikta over Voss er grunnen til at turen finst.",
+    ],
+    descent: [
+      "Same veg ned, seier kjelda, og han sel solnedgangen — turen er vestvend, og ettermiddagssola mjuknar snøen heile vegen heim. Ver klar over kva det tyder: det som er mjukt klokka fire, gjenfrys når sola går ned, og vestvende heng endrar seg raskast akkurat då.",
+      "Nedkøyringa byrjar vestover av platået, for rett ved varden stuper det i dei andre retningane: austsida fell 40,6 grader berre 50–110 m ut, søraustsida 46,7 grader 40–100 m ut, og nordaustsida 43,8 grader 340–400 m ut. Knausen i namnet er reell — hald vest til du er nede på eggi att.",
+      "Frå eggi same veg attende: ned flanken til Nyestølen, og vegkjeda ut Budalen til Tverrberg. 60 høgdemeter å gje tilbake har turen samla, det meste i småkuperinga på platået og vegens eigne slakkar.",
+    ],
+    avalanche: [
+      {
+        title: "Ruta",
+        body: "Fri Flyt set KAST 2 – Utfordrende med grunngjevinga at det småkuperte terrenget krev innsats for å leggja sporet under 30 grader. Målinga av den valde lina seier kvar innsatsen er gjord: brattaste hundremetersbeltet 13,9 grader mellom 700 og 800 moh, brattaste samanhengande parti 21,9 grader, oppe i flanken mellom skoggrensa og eggi. Det er linevalet, ikkje lina, som er utfordringa — går du utanom, finn du fort 30-gradersheng i det småkuperte.",
+      },
+      {
+        title: "Toppknausen",
+        body: "Frå varden fell det brått i tre retningar: 40,6 grader mot aust berre 50–110 m ut, 46,7 mot søraust 40–100 m ut, og 43,8 mot nordaust 340–400 m ut. I godt sikt er det openbert; i skodde er den flate austsektoren — snittet mot aust er −0,3 grader dei fyrste 800 metrane fordi platået held fram — ei felle som leier deg utpå kanten. Kompasskurs vestover frå varden, alltid.",
+      },
+      {
+        title: "Vestvendt",
+        body: "Heile fjellsida turen går i vender mot vest og sørvest. Det gjev solmjuk snø om ettermiddagen og solnedgangen kjelda sel turen på — og det gjev òg dagleg gjennomvæting og gjenfrysing utover våren. Vurder tidspunktet som ein del av linevalet: flanken mellom skoggrensa og eggi er brattast, og han får sola sist.",
+      },
+      {
+        title: "Før du går",
+        body: "Vatnaknausen ligg i varslingsregionen Voss, ein A-region med dagleg skredvarsel gjennom sesongen — sjekk varsom.no. Ingen kjelde publiserer sesongmånader for denne turen; kortets jan–apr er lånt frå dei andre Voss-turane i appen, og guiden seier det. Bomvegen til Tverrberg har avgift. Ta med sender/mottakar, søkjestong og spade. Ei tom varselside er ikkje det same som eit trygt fjell.",
+      },
+    ],
+    elevationProfile: {
+      path: "M0,200 L23,195 L44,190 L63,192 L82,185 L102,180 L127,179 L152,183 L174,179 L199,174 L225,167 L250,158 L272,151 L293,149 L315,144 L344,140 L368,131 L387,116 L415,105 L441,88 L467,79 L488,71 L506,66 L528,53 L553,41 L579,28 L600,18",
+      startLabel: "383 moh",
+      endLabel: "1302 moh",
+      distanceLabel: "7,5 km",
+      caption: "980 høgdemeter og 7,48 km frå Tverrberg — veg inn Budalen til Nyestølen, eggi vest for Rjupetjørnane, og 21,9 grader som brattaste samanhengande parti.",
     },
   },
   horndalsnuten: {

@@ -747,6 +747,17 @@
   "season": "feb–mai",
   "hasGuide": true
  },
+ "finnbufjellet": {
+  "name": "Finnbufjellet",
+  "region": "Voss",
+  "summitM": 1357,
+  "verticalM": 620,
+  "duration": "3–5 t",
+  "grade": 2,
+  "aspect": "NØ",
+  "season": "jan–apr",
+  "hasGuide": false
+ },
  "storehorn": {
   "name": "Storehorn",
   "region": "Hemsedal",
@@ -779,6 +790,17 @@
   "aspect": "NØ",
   "season": "feb–april",
   "hasGuide": true
+ },
+ "vatnaknausen": {
+  "name": "Vatnaknausen",
+  "region": "Voss",
+  "summitM": 1302,
+  "verticalM": 980,
+  "duration": "5–7 t",
+  "grade": 2,
+  "aspect": "V",
+  "season": "jan–apr",
+  "hasGuide": false
  },
  "horndalsnuten": {
   "name": "Horndalsnuten",

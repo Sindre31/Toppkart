@@ -886,5 +886,21 @@
     "summit_dtm": 1298.9,
     "claims": 1299,
     "stored_off_km": 0.02
+  },
+  "finnbufjellet": {
+    "name": "Finnbunuten",
+    "lat": 60.88074,
+    "lng": 6.44081,
+    "summit_dtm": 1357.3,
+    "claims": 1358,
+    "stored_off_km": 0.01
+  },
+  "vatnaknausen": {
+    "name": "Vatnaknausen",
+    "lat": 60.64948,
+    "lng": 6.649,
+    "summit_dtm": 1302.3,
+    "claims": 1303,
+    "stored_off_km": 0.07
   }
 }

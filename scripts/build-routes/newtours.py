@@ -119,4 +119,6 @@ NEW_TOURS = {
     "sata": ("Såta", "Kvamskogen"),
     "skrott": ("Skrott", "Kvamskogen"),
     "tveitakvitingen": ("Tveitakvitingen", "Kvamskogen"),
+    "finnbufjellet": ("Finnbufjellet", "Voss"),
+    "vatnaknausen": ("Vatnaknausen", "Voss"),
 }

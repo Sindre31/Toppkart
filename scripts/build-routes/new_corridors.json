@@ -3967,5 +3967,197 @@
   ],
   "rejectReason": "Andrekjelda finst, og namnegåta er løyst — men bakken vil framleis ikkje stadfeste linja, og denne gongen med tal. Fri Flyt har to skildringar av same turen frå same startstad, av kvar sin forfattar: skiruta («Over skoggrensa følger du den breie ryggen sør for Hesjedalen. På ca. 600 moh. legges sporet inn i øvre deler av dalen og videre mer eller mindre rett opp mot toppen») og barmarksruta av Kent-Hugo Norheim («Fra start går du nordøst over et myrområde mot Hestedalen, før du følger ryggen i retning av Svarthamartinden et stykke oppover. Når dalen flater ut, forlates ryggen og du går i retning av Ullstinden»). Dalen Fri Flyt skriv «Hesjedalen» heiter **Hestedalen** i registeret, og med det namnet på plass resolverer kvart einaste punkt i skildringa: parkeringa (OSM way/255323008, 2660 m², hiking=yes), myrområdet (terrengklasse Myr på 166,8 moh), ryggen sør for dalen (kryssrygg målt til 167, 270, 414, 577, 743 og 851 moh på 500 til 3000 m ut), Svarthammartinden og Stortinden.\n\nDet som ikkje resolverer, er dei siste to kilometrane. Ullstinden er skild frå heile det ryggsystemet av eit skar, og veggen på nærsida blei sveipa i heile si lengd — 21 breiddegrader frå 69.7860 til 69.8060. Frå 69.7890 og nordover les han 31 til 54 grader på kvar einaste ein. Dei tre breiddegradene som les under 27 kryssar ikkje skaret i det heile, men går over Stortinden — og den slakaste av dei held ikkje: med 119 m mellom prøvepunkta les traversen 26,1°, med 22 m les same grunnen eit steg på 44,3°. Den einaste vegen rundt er over skuldra på Stortinden (1038,7 moh) og ned nordaustsida hennar, og det steget måler 40 grader over 160 m grunn (1012 → 878). Fire korridorvariantar blei routa: alle gir tilbake 192 til 345 høgdemeter, og alle har eit brattaste 30 m-steg på 35 til 39 grader.\n\nBegge kjeldene seier noko anna. Skibeskrivinga fører bratteste punkt som **20–25 grader** og kallar fjellet «et flott mål for nyfrelste toppturister, og for de som ønsker et 100 % skredtrygt fjell», og begge oppgir ei stigning — 980 og «litt i underkant av 1000» — som ikkje har rom for 200 meter attgjeven høgde (toppen minus starten er 959). Ei linje med eit 40-graders steg på eit fjell som blir seld som skredtrygt, er ikkje ein unøyaktigheit i eit tal; det er ei linje som fortel lesaren noko anna enn kjelda gjer. Anten går ruta ein stad korkje teksten eller terrengmodellen har vist oss, eller så er det ein tredje startstad. Turen ventar på den som veit kva av delane.\n\nStallvika, det opplagde alternativet, har ingen veg. Bukta ligg under den einaste slake flanken fjellet har — frå Stallvikskaret på 457,6 moh stig linja til toppen monotont utan å gi tilbake ein meter — men i ei rute på 19.560–19.700 aust og 69.780–69.840 nord har OSM ingen `highway` av nokon klasse nærare enn ein sti 2845 m unna, ingen `track` innanfor 3469 m og ingen kartlagd parkering i det heile. Linja opp frå fjøra er dessutan brattare enn turen ho skulle erstatte: 458 høgdemeter på 942 m, med eit steg på 45,6°. Fjellet si slake side vender mot ein fjord ingen køyrer til.",
   "corridor": {}
+ },
+ {
+  "slug": "finnbufjellet",
+  "verdict": "corrected",
+  "corrections": [
+   "Fri Flyt kallar fjellet Finnbufjellet og oppgjev 1358 moh, men registeret sitt Finnbufjellet-punkt (Fjell, 60.88774/6.44335) les 1330,8 i DTM1, og det høgaste punktet i massivet — 1357,0 — ligg på 60.88067/6.44088, 22 m frå registeret sin topp **Finnbunuten**. Same mønster som Kirketaket/Kyrkjetaket: appen ber Fri Flyt-namnet, toppsøket ber registernamnet Finnbunuten. prominent-mountains.no fører òg toppen som Finnbunuten 1358.",
+   "Fri Flyts faktaboks seier «Høydemeter: 770» og Utemagasinet-versjonen av same skildringa (Skifjell for nybegynnere) seier 588 høgdemeter frå parkeringa på toppen av Halsabakkane. Terrenget avgjer kven som har rett: rv13 passerer 770 moh nøyaktig der bakkane flatar ut ved Sendo (60.90112/6.46437, 771 i DTM1), og 1358 − 770 = 588. Fri Flyts «770» er starthøgda, ikkje stigninga.",
+   "«Halsabakkene» heiter **Halsabakkane** i registeret (Bakke, 60.90203/6.47716, 665 moh — midt i sjølve bakkane). Leirplassen på toppen av dei er flata på ~770 moh der rv13 og Sendo-elva møtest (elva way/306601832 passerer 60.90111/6.46346, 768 moh, og fell så gjennom fossen ved 60.90046/6.47611 ned i Kvassdalen).",
+   "«Ryggen på østsiden av Finnbujuvet og Kvassdalen» er lesen mot terrenget: Finnbu-bekkene (way/306514915, way/306514882) skjer juv ned mot Sendo-elva vest for ryggen, og Kvassdalen (Dal, 60.89636/6.494, 581 moh — dalen rv13 kjem opp frå) ligg djupt aust for han. Ryggen mellom dei — over Finnbuene-stølen (Seter/støl, 60.90021/6.46077) — er den einaste ryggen aust for juvet, og han møter skuldra på ~1090 moh der alternativtilkomsten frå Myrkdalen skisenter kjem opp."
+  ],
+  "rejectReason": "",
+  "corridor": {
+   "routeId": "halsabakkane",
+   "routeName": "Frå leirplassen på toppen av Halsabakkane",
+   "routeDescriptionFull": "Frå leirplassen ved Sendo på toppen av Halsabakkane (770 moh) over brua på Sendo-elva, sørover opp ryggen på austsida av Finnbujuvet, forbi møtepunktet med alternativtilkomsten frå Myrkdalen skisenter på skuldra ved 1090 moh, og vestover opp austryggen til toppen registeret kallar Finnbunuten",
+   "trailhead": {
+    "name": "Halsabakkane",
+    "lat": 60.9013,
+    "lng": 6.4645,
+    "elevationM": 772.34,
+    "osmEvidence": "Flata der rv13 (Vikafjellsvegen, way-kjeda med ref=13) toppar hårnålssvingane og møter Sendo-elva; vegen passerer 770 moh på 60.90112/6.46437. Open, flat mark (ÅpentOmråde, 766–779 moh) mellom vegen og elva."
+   },
+   "waypoints": [
+    {
+     "name": "brua over Sendo-elva",
+     "lat": 60.9006,
+     "lng": 6.4636,
+     "elevationM": 766.55
+    },
+    {
+     "name": "ryggfoten aust for Finnbujuvet",
+     "lat": 60.899,
+     "lng": 6.466,
+     "elevationM": 792.92
+    },
+    {
+     "name": "ryggen ved 870",
+     "lat": 60.896,
+     "lng": 6.469,
+     "elevationM": 870.53
+    },
+    {
+     "name": "ryggen ved 990",
+     "lat": 60.894,
+     "lng": 6.474,
+     "elevationM": 992.16
+    },
+    {
+     "name": "skuldra, møtet med Myrkdalen-ruta",
+     "lat": 60.8885,
+     "lng": 6.4745,
+     "elevationM": 1088.76
+    },
+    {
+     "name": "vestover på flanken",
+     "lat": 60.885,
+     "lng": 6.465,
+     "elevationM": 1146.43
+    },
+    {
+     "name": "ryggen ved 1220",
+     "lat": 60.884,
+     "lng": 6.455,
+     "elevationM": 1221.37
+    },
+    {
+     "name": "austryggen ved 1300",
+     "lat": 60.8825,
+     "lng": 6.448,
+     "elevationM": 1302.28
+    }
+   ],
+   "season": "jan–apr",
+   "aspect": "NØ",
+   "grade": 2,
+   "gradeReason": "Målinga seier 1 — brattaste hundremetersbeltet 13,2 grader mellom 900 og 1000 moh, brattaste 30 m 23,3 — men grad 2 er redaksjonell: Fri Flyt åtvarar om «et par luftige partier» på nordeggen rett ved ruta, og Finnbujuvet vest for ryggen samlar fokksnø. KAST 1 – Enkelt gjeld ryggen, ikkje flankane ved sidan av.",
+   "roadClosedInWinter": false,
+   "hazardNotes": "Fri Flyt: KAST 1 – Enkelt, og «det tryggeste alternativet er å følge ryggen på østsiden av Finnbujuvet og Kvassdalen»; sikraste nedfarten er same veg som opp. «Nordeggen har et par luftige partier hvor man må vurdere ferdighetene og skredfaren» — nordeggen er ikkje korridoren, og guiden må seia det. Finnbujuvet samlar fokksnø (Fri Flyt-indeksen: fjellet der skisesongen på Voss vert opna og avslutta).",
+   "teaserNo": "620 høgdemeter frå leirplassen på toppen av Halsabakkane: over Sendo-elva og opp ryggen aust for Finnbujuvet, dit skisesongen på Voss vert opna og avslutta.",
+   "teaserEn": "620 metres of ascent from the camping ground at the top of the Halsabakkane hairpins: across the Sendo river and up the ridge east of Finnbujuvet, where the Voss ski season opens and closes.",
+   "sources": [
+    "https://www.friflyt.no/topptur/skiturer-voss/turbeskrivelse-finnbufjellet",
+    "https://www.friflyt.no/topptur/skiturer-voss/skiturer-i-voss",
+    "https://www.utemagasinet.no/randonnee/skifjell-for-nybegynnere",
+    "https://www.prominent-mountains.no/mountains/1000mtn/finnbunuten.html"
+   ],
+   "confidence": "medium"
+  }
+ },
+ {
+  "slug": "vatnaknausen",
+  "verdict": "corrected",
+  "corrections": [
+   "Registeret ber to punkt: Vatnaknausen Topp (60.64957/6.64765, 1298,6 i DTM1) og Vatnaknausen Berg (60.65215/6.64512, 1199,0). Publisert høgd er 1303; Topp-punktet er seeden, og toppsøket får klatra dei siste metrane.",
+   "Heile tilkomsten står på kartlagd veg, men ikkje den fyrste antakinga om han: Grettestølen-vegen (way/598475037) endar ved stølen, og fyrste solveringa la 60 waypoint-frie meter for høgt og gav att 134 m over skuldra sør for Gretteggi. Den verkelege vegen inn Budalen er kjeda Tverrbergsvegen (way/322409601, fee=yes) frå parkeringa «Tverberg car park» (node/7829590483, 382,7 moh) sørover til vegdelet på 475 moh (60.64113/6.55725), og Øvraset-vegen (way/707342766) austover derifrå opp til Øvraset (60.64487/6.58671, 639 moh, parkering node/6643338669). Fri Flyts «900 høgdemeter» mot 1303 gjev start ~403; den kartlagde parkeringa les 382,7 — same startpunkt, målt.",
+   "Nyestølen finst 27 gonger i registeret; den i Budalen ligg på 60.64412/6.60230, 706,9 moh, 1,2 km frå registerpunktet til dalen (60.64534/6.59313, 669,6). Eggi vest for Rjupetjørnane (Gruppe av tjern, 60.64934/6.63213, 1088,5) er målt: linja opp frå skoggrensa held 6.618–6.625 og passerer tjørnene på nordsida i ope terreng (977,8 → 1031,4 → 1102,7 moh, alt ÅpentOmråde).",
+   "Alternativruta Fri Flyt nemner — frå Tverrberg rett aust til Grotveit (Bruk, 60.65438/6.57608, 662,3) og gjennom skogen til Gretteggi (Rygg, 60.65964/6.59067, 996,0) — løyser seg òg i registeret, men er ikkje korridoren; guiden nemner ho.",
+   "Fyrste solveringa (før vegkorrigeringa) toppa på 773 moh på 60.64978/6.57866 og fall så 134 m ned i Budalen — ruta hadde teke sommarstien way/973320189 sin rygg i staden for vegen. Etter ompinninga langs way/322409601 → way/707342766 er nedoverdelane att berre vegens eigne slakkar."
+  ],
+  "rejectReason": "",
+  "corridor": {
+   "routeId": "tverrberg",
+   "routeName": "Frå Tverrberg om Budalen og Nyestølen",
+   "routeDescriptionFull": "Frå parkeringa på Tverrberg (383 moh) etter Tverrbergsvegen sørover til vegdelet på 475 moh, Øvraset-vegen austover inn Budalen om Øvraset (639 moh) og opp til Nyestølen, rett nord etter skoggrensa, opp på eggi vest for Rjupetjørnane, og austover over platået til toppen",
+   "trailhead": {
+    "name": "Tverrberg",
+    "lat": 60.65243,
+    "lng": 6.55072,
+    "elevationM": 382.74,
+    "osmEvidence": "«Tverberg car park», OSM node/7829590483, enden av vinterbrøyta del av bomvegen Tverrbergsvegen (way/322409601, fee=yes, surface=gravel) frå Selheim."
+   },
+   "waypoints": [
+    {
+     "name": "Tverrbergsvegen sørover",
+     "lat": 60.6477,
+     "lng": 6.54686,
+     "elevationM": 438
+    },
+    {
+     "name": "vegdelet mot Øvraset",
+     "lat": 60.64113,
+     "lng": 6.55725,
+     "elevationM": 475
+    },
+    {
+     "name": "Øvraset-vegen ved 533",
+     "lat": 60.64377,
+     "lng": 6.57231,
+     "elevationM": 533
+    },
+    {
+     "name": "Øvraset",
+     "lat": 60.64487,
+     "lng": 6.58671,
+     "elevationM": 639
+    },
+    {
+     "name": "Budalen",
+     "lat": 60.64534,
+     "lng": 6.59313,
+     "elevationM": 669.58
+    },
+    {
+     "name": "Nyestølen",
+     "lat": 60.64412,
+     "lng": 6.6023,
+     "elevationM": 706.94
+    },
+    {
+     "name": "skoggrensa nordover",
+     "lat": 60.648,
+     "lng": 6.606,
+     "elevationM": 821.08
+    },
+    {
+     "name": "opp mot eggi",
+     "lat": 60.651,
+     "lng": 6.618,
+     "elevationM": 977.84
+    },
+    {
+     "name": "eggi vest for Rjupetjørnane",
+     "lat": 60.6515,
+     "lng": 6.625,
+     "elevationM": 1031.38
+    },
+    {
+     "name": "nord for Rjupetjørnane",
+     "lat": 60.651,
+     "lng": 6.632,
+     "elevationM": 1102.69
+    },
+    {
+     "name": "platået mot toppen",
+     "lat": 60.65,
+     "lng": 6.642,
+     "elevationM": 1215.4
+    }
+   ],
+   "season": "jan–apr",
+   "aspect": "V",
+   "grade": 2,
+   "gradeReason": "Målinga seier 2 og kortet ber 2 — brattaste hundremetersbeltet 13,9 grader mellom 700 og 800 moh, brattaste 30 m 21,9 — i samsvar med Fri Flyts KAST 2 – Utfordrende: småkupert terreng som krev innsats for å leggja sporet under 30 grader, men lina gjer det.",
+   "roadClosedInWinter": false,
+   "hazardNotes": "Fri Flyt: KAST 2 – Utfordrende. «Småkupert terreng, som krever innsats for å legge tryggest spor mulig under 30 grader» — det brattaste partiet er flanken opp mot eggi mellom skoggrensa og Rjupetjørnane. Nedfarten er same veg. Vestvendt: sola mjuknar snøen utover dagen, og Fri Flyt sel turen på solnedgangen — det er òg tidspunktet vestvende heng gjenfrys.",
+   "teaserNo": "980 høgdemeter frå Tverrberg: bomvegen inn Budalen til Nyestølen, opp på eggi vest for Rjupetjørnane, og austover platået til utsikta over Voss.",
+   "teaserEn": "980 metres of ascent from Tverrberg: the toll road into Budalen to Nyestølen, up onto the ridge west of the Rjupetjørnane tarns, and east across the plateau to the view over Voss.",
+   "sources": [
+    "https://www.friflyt.no/topptur/skiturer-voss/turbeskrivelse-vatnaknausen"
+   ],
+   "confidence": "medium"
+  }
  }
 ]

@@ -2822,6 +2822,121 @@ anyone's experience of these mountains. A local reader per tour is still the
 missing check, here as everywhere. And **Fuglafjellet**, Kvamskogen's highest,
 has not been researched at all.
 
+## The Voss round
+
+The Kvamskogen round left one name standing: **Fuglafjellet, Kvamskogen's
+highest, not researched at all.** This round researched it — and rejected it,
+which is the honest half of what a research pass is for. Both ut.no trip
+descriptions (116556 from Vending, 118830246 from Øvre Steinskvanndalen) are
+summer fotturer with summer seasons; westcoastpeaks describes four summer
+scrambling alternatives through the cliffbands and states outright that no
+winter/ski route is formally described; and the mountain's own character in
+every source — «mange stup», no public trails, crampons advised on autumn
+snow — is the reason. A described summer line through cliffbands is exactly
+what this pipeline exists not to draw skis over. Fuglafjellet stays off the
+map until someone publishes a ski description.
+
+What shipped instead is the rest of **Fri Flyt's skiturer-voss index** — the
+same per-area shape the Hemsedal and Bergen rounds were built on. The index
+lists five tours; the app already carried Storanosi, Lønahorgi and
+Horndalsnuten, and the two it lacked are now built, in the region with the
+largest ratio of published-to-shipped in the app. The app goes from 94 tours
+to 96.
+
+| tour | start | summit | gain | km | steepest 100 m band | steepest 30 m | grade |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Finnbufjellet | 772 | 1357 | 619 | 4.4 | 13.2° | 23.3° | 2 |
+| Vatnaknausen | 383 | 1302 | 979 | 7.5 | 13.9° | 21.9° | 2 |
+
+### Finnbunuten, and a number that meant the opposite of what it said
+
+Fri Flyt calls the mountain Finnbufjellet and quotes 1358 moh. The register's
+Finnbufjellet point (Fjell, 60.88774/6.44335) reads 1330,8 in DTM1 — 27 m
+short — and the highest ground in the massif, 1357,0 m, sits at
+60.88067/6.44088, 22 m from the register's **Finnbunuten** (Topp). The
+Kirketaket/Kyrkjetaket pattern again: the app bears Fri Flyt's name, the
+summit search the register's, recorded in `peaks.py` beside the seed.
+
+The fact box was wrong in a subtler way. Fri Flyt's «Høydemeter: 770» and the
+Utemagasinet version of the same description («Skifjell for nybegynnere»,
+588 høydemeter fra parkeringen på toppen av Halsabakkene) cannot both be
+gains. The terrain settles it: rv13 passes 770 moh exactly where the
+Halsabakkane hairpins level out at Sendo (60.90112/6.46437, 771 in DTM1), the
+camping flat beside the road reads 766–779, and 1358 − 770 = 588. **Fri
+Flyt's 770 is the starting elevation, not the climb** — the card carries the
+routed 620. «Halsabakkene» is registered **Halsabakkane**, and the guide says
+so.
+
+The corridor itself is the sentence «ryggen på østsiden av Finnbujuvet og
+Kvassdalen» read against the ground: the Finnbu streams (way/306514915,
+way/306514882) cut ravines west of the ridge past the Finnbuene støl, and
+Kvassdalen — the valley rv13 climbs out of, floor at 574–581 — lies deep to
+its east. The ridge between them is the only ridge east of the ravine, it
+meets the Myrkdalen-skisenter alternative on the shoulder at 1090 moh
+(Fri Flyt's «etter en times gange»), and the eight-direction sweep says why
+the sentence matters: N off the summit is a 2,7° plain, but W and NW fall
+50,3° and 56,7° at their steepest — the «luftige partier» on the nordegg
+that KAST 1 does not cover. The guide keeps the route and the warning in the
+same paragraph.
+
+### Vatnaknausen, and the road the first solve refused
+
+Vatnaknausen is Fri Flyt's «panoramautsikt over Voss»-tour: toll road from
+Selheim to the mapped «Tverberg car park» (node/7829590483, 382,7 moh), road
+into Budalen, Nyestølen (the register holds 27 of them; this is the one at
+60.64412/6.60230), straight north along the treeline (822 moh measured), onto
+the egg west of Rjupetjørnane, and east over the plateau.
+
+The first solve gave back 134 m: with a waypoint sitting 130 m off the
+mapped road it crested a 773 m shoulder on the line of summer path
+way/973320189 and dropped into Budalen. The actual road is the chain
+**Tverrbergsvegen (way/322409601, fee=yes) south to the junction at 475 moh,
+then the Øvraset road (way/707342766) east** — repinned along the mapped
+geometry, the line keeps 979 of its metres and gives back 58, the road's own
+dips. Same lesson as Gullfjellstoppen's lake, one layer up: the router
+solves terrain, and anything the prose promises — a road, a shore, a løype —
+has to be pinned from mapped ground, not gestured at.
+
+The summit is the knaus the name promises. East off the cairn the mean is
+−0,3° for 800 m — the plateau continues — but the steepest 60 m windows sit
+40,6° just 50–110 m out east, 46,7° at 40–100 m southeast, 43,8° at
+340–400 m northeast. In fog, flat-and-then-cliff is the dangerous shape, and
+the guide's summit section is built on exactly those five figures. West-facing
+the whole way (Fri Flyt sells the sunset descent), which the guide converts
+into the timing hazard it is: what softens at four refreezes at sundown.
+
+### The grades, the season, and the region
+
+`route_metrics.py` measures 1 for Finnbufjellet and 2 for Vatnaknausen; both
+cards carry 2. Finnbufjellet's is editorial with its reason in
+`new_tourmeta.json` — KAST 1 covers the ridge, not the nordegg beside it or
+the 50°+ west faces — and Vatnaknausen's measured 2 agrees with Fri Flyt's
+KAST 2. Neither source publishes season months, so **jan–apr is borrowed from
+the app's other Voss tours and both guides say so** — the Surløytenuten rule,
+twice more. Both summits are in Varsom region **Voss (3031), an A region with
+a daily forecast** — queried per coordinate.
+
+The proof is the usual battery, all clean: `check_routes.py` 96 tours / 105
+routes, `check_tours.py` 96 cards, `check_guides.py` 0 unsourced numbers and
+0 reassurance claims across all 96 guides in both languages (it caught one
+draft sentence quoting Fri Flyt's «tryggest spor mulig», which is a
+reassurance claim whoever says it — reworded), `test_check_guides.py` 15
+cases, `check_ground.py` 0 m on water and 0 trail findings on both lines, and
+the CI suite — whose intro-figure test rejected «4,4 km» against a 4,366 km
+line and got «4,37 km», working exactly as built.
+
+### Still open
+
+The guides are sourced and verified against the terrain model — not against
+anyone's experience of these mountains. The independent adversarial read that
+covers 90 of the 96 has not read these two (nor the four of the
+Bergen/Kvamskogen rounds). Vatnaknausen ships at confidence `medium` on a
+single full source; Finnbufjellet at `medium` with Fri Flyt corroborated by
+Utemagasinet and prominent-mountains. And the winter state of the roads —
+rv13 over Vikafjellet at the Finnbufjellet trailhead, the toll road's
+ploughed extent above Selheim — is stated as the weather-dependent thing it
+is, not asserted; a local reader would settle both in a sentence.
+
 ## Network
 
 Everything is public and unauthenticated:
