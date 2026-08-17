@@ -164,6 +164,17 @@
   "season": "feb–apr",
   "hasGuide": true
  },
+ "varden-smaatindan": {
+  "name": "Varden (Småtindan)",
+  "region": "Lofoten",
+  "summitM": 700,
+  "verticalM": 820,
+  "duration": "4–6 t",
+  "grade": 2,
+  "aspect": "Ø",
+  "season": "jan–apr",
+  "hasGuide": false
+ },
  "himmeltindan": {
   "name": "Himmeltindan",
   "region": "Lofoten",
@@ -185,6 +196,17 @@
   "aspect": "N",
   "season": "jan–apr",
   "hasGuide": true
+ },
+ "midtitinden": {
+  "name": "Midtitinden",
+  "region": "Bodø",
+  "summitM": 1060,
+  "verticalM": 1050,
+  "duration": "4–6 t",
+  "grade": 2,
+  "aspect": "SØ",
+  "season": "jan–apr",
+  "hasGuide": false
  },
  "vassfjellet": {
   "name": "Vassfjellet",

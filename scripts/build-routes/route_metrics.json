@@ -1534,5 +1534,37 @@
   "aspect": "V",
   "distanceKm": 7.5,
   "cumdistM": 7480
+ },
+ "varden-smaatindan": {
+  "verticalM": 820,
+  "gainM": 825,
+  "distanceM": 5045,
+  "startM": 2,
+  "summitM": 700,
+  "duration": "4–6 t",
+  "steepestBandAngle": 22.8,
+  "steepestBandFrom": 600,
+  "steepestBandTo": 700,
+  "maxStepAngle": 32.3,
+  "grade": 2,
+  "aspect": "Ø",
+  "distanceKm": 5.0,
+  "cumdistM": 5046
+ },
+ "midtitinden": {
+  "verticalM": 1050,
+  "gainM": 1051,
+  "distanceM": 4152,
+  "startM": 11,
+  "summitM": 1060,
+  "duration": "4–6 t",
+  "steepestBandAngle": 19.1,
+  "steepestBandFrom": 900,
+  "steepestBandTo": 1000,
+  "maxStepAngle": 26.9,
+  "grade": 2,
+  "aspect": "SØ",
+  "distanceKm": 4.2,
+  "cumdistM": 4148
  }
 }

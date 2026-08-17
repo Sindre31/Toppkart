@@ -2937,6 +2937,117 @@ rv13 over Vikafjellet at the Finnbufjellet trailhead, the toll road's
 ploughed extent above Selheim — is stated as the weather-dependent thing it
 is, not asserted; a local reader would settle both in a sentence.
 
+## The popularity round, continued
+
+The first popularity round's rule — *a published source calls it the most
+visited or the most popular ski tour of its area, and the app does not already
+carry that mountain* — run again over the areas the map now covers. Three
+candidates carried real claims and failed the standing conditions; two carried
+real claims and shipped. The app goes from 96 tours to 98.
+
+The three rejections first, because they are the rule working:
+
+- **Istinden (Lyngen, 1495)** — «en av de mest populære» in Lyngsalpene per
+  Fri Flyt, whose full description is also KAST 3 – Komplekst: crampons and
+  ice axe as required equipment, glacier travel up «brearmen øst for
+  Urdkjerringa», and a 35–45° summit chute where «skiene tas på sekken». The
+  router only solves skinnable ground under its step cap, and a generated
+  line has nothing honest to say about glaciers or booting a couloir. The
+  claim is real; the line is outside this product.
+- **Storsylen (Sylan, 1762)** — «det mest populære toppturmålet i Sylan både
+  fra norsk og svensk side» per ut.no 1112181, which is a summer fottur, and
+  the winter road ends in Stugudal, 14 km short of the winter-closed
+  Nedalshytta (self-service quarters only; Fri Flyt's Sylan piece points at
+  snowmobile transport). «A start at a road» fails.
+- **Storfjellet (Narvik, 1633)** — Fri Flyt's «det optimale toppturfjellet»
+  is praise, not a most-visited claim, and its description wants ice axe and
+  crampons besides. Not researched further.
+
+| tour | region | start | summit | gain | km | steepest 100 m band | steepest 30 m | grade |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Varden (Småtindan) | Lofoten | 2 | 700 | 825 | 5.0 | 22.8° | 32.3° | 2 |
+| Midtitinden | Bodø | 11 | 1060 | 1051 | 4.2 | 19.1° | 26.9° | 2 |
+
+The sentences the round is built on: Fri Flyt's second Småtindan description
+calls Varden «den mest populære toppturen på øygruppa», and its Midtitinden
+page opens with the mountain as one of the most visited ski peaks around
+Bodø. Bodø is a new region — the map previously had nothing between
+Trøndelag and Harstad.
+
+### Varden, and the lake the first solve skied across
+
+The summit is the Hesten (Segla) pattern: the register carries both **Varden
+(Ås)** and **Småtindan (Fjell)** within 30 m of the climbed cell — 700,5 moh
+against a published 700 — and the resolver seeds on Småtindan because a bare
+«Varden» never reaches Vågan inside SSR's first page. The massif's highest
+point is a *different* peak, 732 m, 600 m south-west; the claims-tiebreak in
+the summit search is what keeps the tour off it.
+
+`check_ground.py` earned its keep again: the first solve ran **450 m along
+Karlsvatnet at 12 moh** — an unnamed-on-the-line, coastal, sea-level lake
+filling the valley south of the *regulated* Stor-Kongsvatnet (OSM relations
+5312814 and 5312819). The land between them is a ~250 m neck at 68.226–68.228,
+and the line is repinned over it at 29 moh with the router's water cost on:
+0 m on water, and the guide names both lakes and the reason. The notch
+«til høyre rundt» Ørntinden is measured too — 293 moh against the 398 m
+knoll, about 50 vertical metres given back, which is most of why the tour's
+gain (825) exceeds its net height.
+
+The eight-direction sweep says what the summit is: NW 60,7° and W 53,8° at
+20–80 m, E 49,3° at 10–70 m — a tind, not a hei, and Fri Flyt's own «kjøringen
+begynner ca. 50 m under toppen» agrees with the measurement. Kolbeindalen,
+where Fri Flyt warns of avalanche danger and a shooting range, lies one ridge
+north of the line and stays there.
+
+### Midtitinden, sea to summit
+
+Every metre of the mountain is climbed: the mapped pull-off at Kleivberget on
+rv80 reads 11 moh, the top 1059,5 — and the register's own Midtitinden point
+reads 983,5, 75 m low and 190 m north-east of the summit, the Gullfjellstoppen
+pattern again. Fri Flyt's route numbers reproduce rung for rung on DTM1: the
+top cabin «Geilo, ca 50» reads 54,4; the military-route marking «ved 560» —
+the line passes 536; the south-east ridge «ca 720» reads 728; «ca 900» reads
+879; the turn onto the north-east ridge «ved 980» happens at 1026. The line
+gives back two metres total, and its steepest sustained stretch is 26,9° —
+Fri Flyt's «under 30 grader», confirmed rather than assumed.
+
+The descent variants Fri Flyt grades from easy to demanding are measured
+rather than waved at: NE towards Stordalen 69,2° at its steepest, S 56,7°
+at 70–130 m from the cairn, SW 60,8°. The guide carries the numbers and the
+sentence they add up to: choose by conditions, not appetite.
+
+### The grades, the season, and the regions
+
+Both measure grade 2 and ship at 2, in agreement with Fri Flyt's KAST 2 for
+Varden and «under 30 grader» for Midtitinden. Neither source publishes season
+months: both cards borrow jan–apr — Varden from the app's other Lofoten
+tours, Midtitinden from the same latitude — and both guides say so. The
+regions are queried per coordinate: **Lofoten og Vesterålen (3014)** and
+**Salten (3016)**, both A regions with daily forecasts.
+
+One `check_ground.py` finding is read and set aside rather than fixed: it
+reports the Varden line 367 m off a mapped trail under a guide that says
+«lysløypa» — but the guide's løype claim covers only the valley kilometre
+(which lies on the mapped Damveien), and the strayed metres are the neck and
+the upper flank, where no løype is claimed. The reasoning is in
+`measurements.json` next to the sweep.
+
+The proof: `check_routes.py` 98 tours / 107 routes, `check_tours.py` 98
+cards, `check_guides.py` 0 unsourced numbers and 0 reassurance claims across
+196 guide texts, `test_check_guides.py` 15 cases, `check_ground.py` 0 m on
+water on both lines, and the CI suite — whose intro-figure test rejected the
+card's rounded 820 against an 825 m line and got the measured figure, again
+working exactly as built.
+
+### Still open
+
+The independent adversarial read now trails by eight: Gullfjellstoppen, the
+three Kvamskogen tours, the two of the Voss round, and these two. Both ship
+at confidence `medium` on Fri Flyt descriptions with the register and the
+terrain model as the second witness. And the popularity question still has
+areas left to ask in — Vesterålen's and Helgeland's most-visited names were
+not settled this round.
+
 ## Network
 
 Everything is public and unauthenticated:

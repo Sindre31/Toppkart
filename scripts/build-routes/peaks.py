@@ -209,4 +209,20 @@ PEAKS = [
     #   again. The app bears Fri Flyt's name, the summit search the register's. —
     ("finnbufjellet", "Finnbunuten", ["Voss"], 1358, 60.88067, 6.44088),
     ("vatnaknausen", "Vatnaknausen", ["Voss"], 1303, 60.64957, 6.64765),
+    #
+    # — the popularity round, continued: two more mountains a published source
+    #   calls the most popular of their area. Fri Flyt's second Småtindan
+    #   description calls Varden «den mest populære toppturen på øygruppa», and
+    #   its Midtitinden page «en av de mest populære skitoppene rundt Bodø».
+    #   Varden is the Hesten (Segla) pattern — the register carries both Varden
+    #   (Ås) and Småtindan (Fjell) at the top, and a 732 m neighbour 600 m SW is
+    #   why the claim-tiebreak matters. Midtitinden's register point reads 983,5
+    #   against a published 1058; the top is 190 m SW at 1059,2 — the
+    #   Gullfjellstoppen pattern. —
+    #   The resolver searches by name, and a bare «Varden» never reaches Vågan
+    #   inside SSR's first page — the register's Fjell-name Småtindan (13 m from
+    #   the top cell) is the seed instead, exactly like Kyrkjetaket seeds
+    #   Kirketaket.
+    ("varden-smaatindan", "Småtindan", ["Vågan"], 700, 68.23324, 14.38798),
+    ("midtitinden", "Midtitinden", ["Bodø"], 1058, 67.34397, 15.00963),
 ]

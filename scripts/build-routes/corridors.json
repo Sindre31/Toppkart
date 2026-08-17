@@ -5097,5 +5097,161 @@
     "notes": "Fri Flyt: KAST 2 – Utfordrende. «Småkupert terreng, som krever innsats for å legge tryggest spor mulig under 30 grader» — det brattaste partiet er flanken opp mot eggi mellom skoggrensa og Rjupetjørnane. Nedfarten er same veg. Vestvendt: sola mjuknar snøen utover dagen, og Fri Flyt sel turen på solnedgangen — det er òg tidspunktet vestvende heng gjenfrys."
    }
   ]
+ },
+ "varden-smaatindan": {
+  "routes": [
+   {
+    "id": "kabelvagmarka",
+    "name": "Frå Eidet ved Kabelvåg over Aksla",
+    "description": "Frå Karlsvågen-parkeringa ved Eidet etter lysløypa (Damveien) langs austsida av Karlsvatnet, over eidet mellom Karlsvatnet og det regulerte Stor-Kongsvatnet, vestover til foten av Aksla, opp ryggen til rett under Ørntinden, til høgre gjennom skaret nord for toppen, og vestover flanken til Varden",
+    "trailhead": {
+     "name": "Eidet",
+     "lat": 68.2162,
+     "lng": 14.4418,
+     "elevation_m": 2.39,
+     "fullName": "Eidet"
+    },
+    "waypoints": [
+     {
+      "name": "Damveien, lysløypa",
+      "lat": 68.21695,
+      "lng": 14.4447,
+      "elevation_m": 5.1
+     },
+     {
+      "name": "lysløypa nordover",
+      "lat": 68.22214,
+      "lng": 14.44488,
+      "elevation_m": 18.82
+     },
+     {
+      "name": "eidet mellom Karlsvatnet og Kongsvatnet",
+      "lat": 68.2268,
+      "lng": 14.443,
+      "elevation_m": 28.54
+     },
+     {
+      "name": "myra vest for eidet",
+      "lat": 68.2272,
+      "lng": 14.436,
+      "elevation_m": 23.56
+     },
+     {
+      "name": "foten av Aksla",
+      "lat": 68.2265,
+      "lng": 14.43,
+      "elevation_m": 19.85
+     },
+     {
+      "name": "Aksla-ryggen",
+      "lat": 68.227,
+      "lng": 14.426,
+      "elevation_m": 140.83
+     },
+     {
+      "name": "rett under Ørntinden",
+      "lat": 68.2275,
+      "lng": 14.4225,
+      "elevation_m": 341.85
+     },
+     {
+      "name": "skaret nord for Ørntinden",
+      "lat": 68.2288,
+      "lng": 14.4195,
+      "elevation_m": 292.77
+     },
+     {
+      "name": "vestover flanken",
+      "lat": 68.2298,
+      "lng": 14.41,
+      "elevation_m": 340.77
+     },
+     {
+      "name": "flanken ved 440",
+      "lat": 68.2305,
+      "lng": 14.4,
+      "elevation_m": 440.96
+     },
+     {
+      "name": "øvre flanken ved 565",
+      "lat": 68.232,
+      "lng": 14.392,
+      "elevation_m": 564.6
+     }
+    ],
+    "source": "researched, verified (corrected), no local audit",
+    "notes": "Fri Flyt: KAST 2 – Utfordrende. «Skredfare i Kolbeindalen» og skytebane i botnen av dalen — Kolbeindalen er ikkje korridoren, og guiden må seia det. «I øvre deler stiger henget 35-40 grader bratt» — flankane kring den øvre lina. Nedfarten er same veg («samme rute ned for maksimal sikkerhet»); vestsidevarianten mot Lyngvær krev tilrettelagd transport og er ikkje korridoren. Stor-Kongsvatnet er regulert og Karlsvatnet ligg på 12 moh ved kysten — lina går over eidet mellom dei på land, med vannkost, og check_ground.py er dommaren.",
+    "avoidWater": true,
+    "waterNote": "Karlsvatnet (12 moh, OSM-relasjon 5312814) fyller dalbotnen og Stor-Kongsvatnet (35 moh, InnsjøRegulert, relasjon 5312819) ligg rett nord. Kystnært og lågt — isen kan ikkje føresetjast, og det eine vatnet er regulert. Lina går over eidet mellom dei, målt mot terrengklassane og OSM-polygona."
+   }
+  ]
+ },
+ "midtitinden": {
+  "routes": [
+   {
+    "id": "sagelva",
+    "name": "Frå Sagelva ved rv80 om militærløypa",
+    "description": "Frå avkøyringa ved Kleivberget nordaust for Sagelva-utløpet på rv80, nordover gjennom hyttefeltet forbi øvste hytta (Geilo, ca 50 moh), nordnordaust opp rampene mot Innertinden til militærløypemerkinga ved 560, vestover langs merkinga til søraustryggen frå Midtitinden ved ca 720, ryggen til ca 900, og nordover inn på nordaustryggen ved 980 til toppen",
+    "trailhead": {
+     "name": "Sagelva",
+     "lat": 67.32014,
+     "lng": 15.02767,
+     "elevation_m": 11.03,
+     "fullName": "Sagelva"
+    },
+    "waypoints": [
+     {
+      "name": "øvste hytta, Geilo",
+      "lat": 67.3225,
+      "lng": 15.0285,
+      "elevation_m": 54.37
+     },
+     {
+      "name": "rampene nordnordaust",
+      "lat": 67.327,
+      "lng": 15.031,
+      "elevation_m": 270.51
+     },
+     {
+      "name": "mot Innertinden",
+      "lat": 67.331,
+      "lng": 15.033,
+      "elevation_m": 420.3
+     },
+     {
+      "name": "militærløypa ved 560",
+      "lat": 67.3355,
+      "lng": 15.0335,
+      "elevation_m": 536.31
+     },
+     {
+      "name": "vestover langs merkinga",
+      "lat": 67.337,
+      "lng": 15.025,
+      "elevation_m": 644.99
+     },
+     {
+      "name": "søraustryggen ved 720",
+      "lat": 67.3375,
+      "lng": 15.015,
+      "elevation_m": 727.77
+     },
+     {
+      "name": "ryggen mot 900",
+      "lat": 67.3405,
+      "lng": 15.0075,
+      "elevation_m": 878.62
+     },
+     {
+      "name": "nordaustryggen ved 980",
+      "lat": 67.3425,
+      "lng": 15.006,
+      "elevation_m": 1026.11
+     }
+    ],
+    "source": "researched, verified (corrected), no local audit",
+    "notes": "Fri Flyt: brattaste punkt under 30 grader på normalvegen, S-SØ-vend. Sida er solvend — dagleg oppmjuking og gjenfrysing utover våren. Fri Flyt skildrar fleire nedfartsvariantar frå lett til krevjande (søraustflankane, austover mot 627-vatnet, nordover mot Stordalen på 450); normalvegen ned er same veg som opp, og variantane er ikkje korridoren."
+   }
+  ]
  }
 }

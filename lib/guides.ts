@@ -578,6 +578,48 @@ export const GUIDES: Record<string, TourGuide> = {
       caption: "1071 høydemeter og 3,82 km fra Liland; renna på 250–360 moh er 35 grader, og de øverste 174 metrene 42.",
     },
   },
+  "varden-smaatindan": {
+    slug: "varden-smaatindan",
+    intro:
+      "825 høgdemeter og 5,04 km frå Eidet ved Kabelvåg til toppen Fri Flyt kallar den mest populære toppturen på øygruppa. Kortet ber begge namna fjellet har i registeret — Varden og Småtindan — og tala er ærlege om kva turen er: brattaste hundremetersbeltet måler 22,8 grader mellom 600 og 700 moh, det brattaste samanhengande partiet 32,3, og lina gjev tilbake 127 høgdemeter undervegs, det meste av det i skaret rundt Ørntinden og på eidet mellom to vatn som ikkje kan føresetjast frosne.",
+    ascent: [
+      "Frå E10 vest for Kabelvåg tek du over brua med skilt mot Eidet; den kartlagde Karlsvågen-parkeringa ligg om lag 400 meter frå hovudvegen, på 2 moh. Lysløypa — Damveien — byrjar 120 m nordaust og går nordover dalen langs austsida av Karlsvatnet.",
+      "Vatna avgjer den fyrste kilometeren, og dei fortener kvar si setning: Karlsvatnet ligg på 12 moh ein snau kilometer frå havet, og Stor-Kongsvatnet innanfor er regulert — begge er målt, og lina står ikkje på nokon av dei. Ho forlèt løypa før vatnet og kryssar det tørre eidet mellom dei to på 29 moh, over myra vest for det på 24, og bort til foten av Aksla på 20 moh. 0 meter på vatn, målt mot Kartverkets klassar og OSM-polygona.",
+      "Aksla er ryggen opp: frå foten på 20 moh til 141, vidare til rett under Ørntinden på 342 — skogen sluttar alt på 219 moh etter Kartverkets klassar, så mesteparten av ryggen er open. Fri Flyt seier «til høyre rundt» Ørntinden, og målinga seier kva det kostar: skaret nord for toppen les 293 moh, om lag 50 høgdemeter å gje att mot å klyva over åsen på 398.",
+      "Frå skaret held lina vestover flanken: 341, 441 og 565 moh på veg mot toppen, med det brattaste hundremetersbeltet — 22,8 grader i snitt — mellom 600 og 700. Fri Flyt åtvarar om at henget kring den øvre lina stig 35–40 grader; sporet held seg slakare, men flankane ved sidan av gjer ikkje.",
+      "Varden på 700 moh — registeret har både Varden (Ås) og Småtindan (Fjell) på toppunktet, og den klatra cella les 700,5 mot publiserte 700. Massivets høgaste punkt er forresten ein annan tind, 732 moh 600 meter lenger sørvest; turmålet er Varden, og det er dit skisporet går.",
+    ],
+    descent: [
+      "«Samme rute ned for maksimal sikkerhet», seier kjelda, og nedkøyringa byrjar forsiktig: rett kring varden stuper det i nesten alle retningar — nordvest 60,7 grader og vest 53,8 berre 20–80 m ut, aust 49,3 grader 10–70 m ut. Fri Flyt seier sjølv at køyringa byrjar om lag 50 meter under toppen, og målingane er samde.",
+      "Frå flanken er det jamn køyring ned til skaret og rundt Ørntinden — beste partiet er frå toppen ned mot Aksla, seier kjelda — og så ryggen ned til eidet. Hugs att-stigninga: skaret og eidet gjev deg om lag 50 og 20 høgdemeter å ta att på heimvegen.",
+      "Vestsidevarianten mot Lyngvær, som kjelda nemner, krev tilrettelagd transport frå Olderfjorden og er ikkje denne lina. Frå eidet er det løypa langs Karlsvatnet attende til parkeringa — på land heile vegen.",
+    ],
+    avalanche: [
+      {
+        title: "Ruta",
+        body: "Fri Flyt set KAST 2 – Utfordrende, og målinga av lina seier 32,3 grader som brattaste samanhengande parti og 22,8 grader som brattaste hundremetersbelte, mellom 600 og 700 moh. Hans eiga åtvaring gjeld flankane: «i øvre deler stiger henget 35-40 grader bratt» — det er terrenget kring sporet, og linevalet på den øvre flanken er der dagen vert avgjord.",
+      },
+      {
+        title: "Kolbeindalen og skytebanen",
+        body: "Fri Flyt åtvarar om skredfare i Kolbeindalen og om skytebanen i botnen av dalen. Kolbeindalen ligg rett nord for Aksla-ryggen, og varianten «inn til Store Kongsvatnet» går inn i han — denne lina gjer det ikkje, og det er med vilje: ryggen er vegen, dalen er ikkje.",
+      },
+      {
+        title: "Toppen",
+        body: "Varden er ein tind, ikkje ei hei: nordvestsida fell 60,7 grader og vestsida 53,8 berre 20–80 m frå varden, austsida 49,3 grader 10–70 m ut, og sørsida 57,9 grader 220–280 m ut. I skodde er toppartiet ein stad å snu tidleg — det finst ingen slak sektor å rota seg ut i.",
+      },
+      {
+        title: "Vatna og vêret",
+        body: "Karlsvatnet ligg på 12 moh ved kysten og Stor-Kongsvatnet er regulert — isen på det fyrste kan ikkje føresetjast, og på det andre skal han ikkje brukast. Lina kryssar eidet mellom dei på land, målt punkt for punkt. Varden ligg i varslingsregionen Lofoten og Vesterålen, ein A-region med dagleg skredvarsel — sjekk varsom.no. Ingen kjelde publiserer sesongmånader; kortets jan–apr er lånt frå appens andre Lofoten-turar, og guiden seier det. Ta med sender/mottakar, søkjestong og spade. Ei tom varselside er ikkje det same som eit trygt fjell.",
+      },
+    ],
+    elevationProfile: {
+      path: "M0,200 L21,199 L46,196 L69,195 L92,195 L113,196 L139,195 L166,191 L192,194 L215,196 L235,192 L257,178 L275,165 L299,147 L319,132 L338,125 L358,114 L374,113 L394,122 L414,123 L439,119 L460,107 L480,96 L503,91 L530,73 L552,59 L572,44 L588,30 L600,18",
+      startLabel: "2 moh",
+      endLabel: "700 moh",
+      distanceLabel: "5,0 km",
+      caption: "825 høgdemeter og 5,04 km frå Eidet ved Kabelvåg — langs Karlsvatnet på land, rundt Ørntinden, og vestflanken til varden på 700.",
+    },
+  },
   himmeltindan: {
     slug: "himmeltindan",
     intro:
@@ -650,6 +692,48 @@ export const GUIDES: Record<string, TourGuide> = {
       endLabel: "740 moh",
       distanceLabel: "3,1 km",
       caption: "61 til 741 moh på 3,1 kilometer: jevn stigning gjennom dalen, ett bratt trinn, så flatt inn til varden.",
+    },
+  },
+  midtitinden: {
+    slug: "midtitinden",
+    intro:
+      "1050 høgdemeter og 4,15 km, kvar einaste meter av fjellet frå havnivå: parkeringa ved Sagelva på rv80 les 11 moh, og varden 1060. Fri Flyt kallar Midtitinden — eller Mjønestinden — ein av dei mest besøkte skitoppane rundt Bodø, og tala forklarar kvifor: brattaste hundremetersbeltet måler 19,1 grader mellom 900 og 1000 moh, det brattaste samanhengande partiet 26,9, og lina gjev tilbake to meter på heile turen. Registerpunktet for toppen les 983 moh og er ikkje toppen; det høgaste punktet ligg 190 m lenger sørvest, og det er dit lina går.",
+    ascent: [
+      "Start ved den store avkøyringa på rv80 ved Kleivberget, nordaust for utløpet av Sagelva — parkeringslomma er kartlagd og les 11 moh. Gå nordover gjennom hyttefeltet til den øvste hytta, den Fri Flyt kallar Geilo, på 54 moh — skogen her er den einaste på turen, og Kartverkets klassar seier han sluttar alt på 191 moh.",
+      "Frå hytta held du nordnordaust i om lag ein kilometer, slik kjelda seier, og følgjer dei naturlege rampene forbi brattpartia — lina passerer 270 og 420 moh på veg mot Innertinden. Ved 536 moh, på flanken mot Innertinden, kjem du inn på militærløypemerkinga kjelda plasserer ved 560.",
+      "Vestover langs merkinga til søraustryggen som kjem ned frå Midtitinden — kjelda seier omtrent 720, og ryggfoten les 728. Ryggen er jamn: 879 der kjelda seier omtrent 900, og det brattaste hundremetersbeltet på turen, 19,1 grader i snitt, ligg mellom 900 og 1000 moh her.",
+      "Ved 1026 moh — kjelda seier 980 — rundar lina mot nord og inn på nordaustryggen. Dei siste metrane til varden er slake, og du står på 1060 moh med heile Saltfjorden og tindane rundt deg.",
+      "Registeret fortener ei setning: Topp-punktet for Midtitinden står 190 m nordaust for det høgaste punktet og les 983 moh. Toppsøket klatra til 1059,5 — publisert 1058 — og kortet ber den målte cella.",
+    ],
+    descent: [
+      "Normalvegen ned er same veg som opp: nordaustryggen, søraustryggen og rampene attende til militærløypa og hyttefeltet. Med 26,9 grader som brattaste samanhengande parti er det jamn, open køyring frå topp til fjøre.",
+      "Fri Flyt skildrar fleire variantar frå lett til krevjande — søraustflankane, austover mot vatnet på 627, og nordover mot Stordalen på 450 med retur over skardet. Ingen av dei er denne lina, og målingane frå varden seier kvifor dei krev sitt: nordaustsida fell 69,2 grader på det brattaste 390–450 m ut, sørsida 56,7 grader 70–130 m ut og sørvestsida 60,8 grader 90–150 m ut. Vel variant i god sikt, ikkje i skodde.",
+      "Sida turen går i vender sør-søraust og får sol frå morgonen: det som er mjukt midt på dagen, kan vera skare att når du kjem ned att seint. To meter å gje tilbake har lina samla, så heimvegen er rein køyring.",
+    ],
+    avalanche: [
+      {
+        title: "Ruta",
+        body: "Fri Flyts eige tal for normalvegen er brattaste punkt under 30 grader, og målinga stadfestar det for denne lina: 26,9 grader som brattaste samanhengande parti, med det brattaste hundremetersbeltet 19,1 grader mellom 900 og 1000 moh. Men under-30 gjeld sporet, ikkje fjellet: rett aust for nordaustryggen og rett sør for toppen står det 39,5 til 56,7 grader berre 60–130 m frå varden.",
+      },
+      {
+        title: "Variantane",
+        body: "Nedfartsvariantane Fri Flyt graderer frå lett til krevjande går i terreng målinga har tal på: nordaustsida mot Stordalen fell 69,2 grader på det brattaste 390–450 m frå varden, sørvestsida 60,8 grader 90–150 m ut, vestsida 55,4 grader 140–200 m ut. Det er skredterreng med konsekvens, og det er nettopp valfridomen som gjer fjellet populært — vel etter forholda, ikkje etter lysta.",
+      },
+      {
+        title: "Solvendt frå havet",
+        body: "Heile turen står sør-søraust-vendt frå havnivå til 1060 moh. Det gjev tidleg sol og rask oppmjuking om våren — og dagleg gjenfrysing. På ein 1050-metersflanke rekk tilhøva å endra seg frå fjøra til varden; det som ber deg ved 300 moh om morgonen, kan vera våt snø ved 900 midt på dagen.",
+      },
+      {
+        title: "Før du går",
+        body: "Midtitinden ligg i varslingsregionen Salten, ein A-region med dagleg skredvarsel gjennom sesongen — sjekk varsom.no. Ingen kjelde publiserer sesongmånader for denne turen; kortets jan–apr er lånt frå appens Lofoten-turar på same breiddegrad, og guiden seier det. Ta med sender/mottakar, søkjestong og spade. Ei tom varselside er ikkje det same som eit trygt fjell.",
+      },
+    ],
+    elevationProfile: {
+      path: "M0,200 L26,196 L50,191 L65,186 L91,179 L117,172 L130,167 L143,163 L165,156 L182,150 L202,143 L227,134 L243,129 L267,122 L293,116 L306,111 L332,108 L356,101 L377,93 L403,85 L429,79 L449,76 L467,68 L488,60 L514,51 L527,47 L547,39 L566,32 L585,24 L600,18",
+      startLabel: "11 moh",
+      endLabel: "1060 moh",
+      distanceLabel: "4,2 km",
+      caption: "1050 høgdemeter og 4,15 km frå Sagelva på rv80 — havnivå til 1060 moh, med 26,9 grader som brattaste samanhengande parti.",
     },
   },
   vassfjellet: {

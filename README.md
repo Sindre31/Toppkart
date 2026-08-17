@@ -118,10 +118,10 @@ components/
 lib/
   config.ts              PRICE, TRIAL_DAYS, SITE, GRADE_COLORS, env, is*Configured
   types.ts               Tour, TourGuide, Viewer, Subscription, Invoice
-  tours.ts               The 96 tours, REGIONS, getTour(), routesFor(), routeById(),
+  tours.ts               The 98 tours, REGIONS, getTour(), routesFor(), routeById(),
                          routeFor(), routeProfile()
   routes.ts              Generated ascent routes per tour — see scripts/build-routes/
-  guides.ts              Editorial guide content — all 96 tours, generated
+  guides.ts              Editorial guide content — all 98 tours, generated
   i18n/                  Every user-visible string, no/en. content.ts holds the guides
   access.ts              getViewer() / grantsAccess() — server-only access gate
   stripe.ts              Stripe client, null in demo mode
@@ -134,7 +134,7 @@ lib/
   *.test.ts              Unit tests, run by `npm test` — see "Checks" below
 supabase/
   schema.sql             Tables, policies, RLS
-  seed.sql               The 96 tours and all 96 guides
+  seed.sql               The 98 tours and all 98 guides
 design-reference/        The HTML prototypes and the product/design handoff. Read-only ground
                          truth; not shipped.
 docs/
@@ -280,7 +280,7 @@ content and data quality that has to be settled before the site is sold to anyon
   none was made. Each of the ten guides says so in its own words, and every region was queried
   rather than assumed. The four Trollheimen tours are in an A-region and are forecast daily.
 - **The tour cards are checked, the guides are checked, the geometry is checked — by machine.**
-  `check_tours.py`, `check_guides.py` and `check_routes.py` come back clean on all 96 tours: every
+  `check_tours.py`, `check_guides.py` and `check_routes.py` come back clean on all 98 tours: every
   card height is DTM1 at the resolved summit, every vertical is its route's cumulative ascent to
   within 10 m, every number in the prose traces to a measurement, and `supabase/seed.sql` holds the
   same figures as `lib/tours.ts`. That last one was not true until it was checked: the seed had
@@ -362,14 +362,15 @@ content and data quality that has to be settled before the site is sold to anyon
 - **The guide text has not been read by anyone who has skied these tours.** Every number in
   `lib/guides.ts` traces to Kartverket's terrain model, the route research or a cited source, and
   every number is matched mechanically by `check_guides.py` — which reads nynorsk verticals as well
-  as bokmål ones, and comes back clean on all 96 guides.
-  On top of that, **90 of the 96 have been through an independent adversarial read** whose only job
+  as bokmål ones, and comes back clean on all 98 guides.
+  On top of that, **90 of the 98 have been through an independent adversarial read** whose only job
   is to break it — the 24 of the first round, the 15 of the second, the 7 of the Oslo round, the
   22 of the Sunnmøre and Vestland rounds, the 7 of the Trondheim round, Kjerag, Møysalen and
   Sæbyggjenuten, the 4 of the popularity round, and finally the 8 of the alpine-resort round.
-  The six that have not — Gullfjellstoppen, the three Kvamskogen tours (Såta, Skrott,
-  Tveitakvitingen) and the two of the Voss round (Finnbufjellet, Vatnaknausen) — were written
-  and checked by the same pass, which every earlier round's notes name as the gap an
+  The eight that have not — Gullfjellstoppen, the three Kvamskogen tours (Såta, Skrott,
+  Tveitakvitingen), the two of the Voss round (Finnbufjellet, Vatnaknausen) and the two of
+  the continued popularity round (Varden (Småtindan), Midtitinden) — were written and
+  checked by the same pass, which every earlier round's notes name as the gap an
   independent read exists to close.
 
   **The last of those closed a hole that was not about those eight at all.** The re-route in #62

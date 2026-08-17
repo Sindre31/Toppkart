@@ -902,5 +902,21 @@
     "summit_dtm": 1302.3,
     "claims": 1303,
     "stored_off_km": 0.07
+  },
+  "varden-smaatindan": {
+    "name": "Småtindan",
+    "lat": 68.23317,
+    "lng": 14.38794,
+    "summit_dtm": 700.5,
+    "claims": 700,
+    "stored_off_km": 0.01
+  },
+  "midtitinden": {
+    "name": "Midtitinden",
+    "lat": 67.34238,
+    "lng": 15.00416,
+    "summit_dtm": 1059.5,
+    "claims": 1058,
+    "stored_off_km": 0.29
   }
 }

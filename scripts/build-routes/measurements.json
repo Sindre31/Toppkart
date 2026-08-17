@@ -1266,5 +1266,54 @@
    "figure": "Topp 60.64957/6.64765 (1298,6) og Berg 60.65215/6.64512 (1199,0); toppsøket klatra frå Topp-punktet til 1302,3 på 60.64948/6.64900 mot publisert 1303",
    "how": "SSR-oppslag; DTM1-raster og punkt-API."
   }
+ ],
+ "varden-smaatindan": [
+  {
+   "what": "Fallet frå varden i åtte retningar",
+   "figure": "N 13,9° i snitt med 49,5° som brattaste 60 m 40–100 m ut; NØ 21,0° / 50,2° 20–80 m ut; Ø 23,6° / 49,3° 10–70 m ut; SØ 21,6° / 44,2° 20–80 m ut; S 28,8° / 57,9° 220–280 m ut; SV 12,1° / 54,2° 670–730 m ut; V 25,1° / 53,8° 20–80 m ut; NV 25,2° / 60,7° 20–80 m ut",
+   "how": "flank_probe.py frå 68.23317/14.38794, 800 m ut, prøvetatt kvar 10. m i DTM-en."
+  },
+  {
+   "what": "Toppen ber to namn i registeret, og massivet ein høgare granne",
+   "figure": "Varden (Ås, 68.23324/14.38798) og Småtindan (Fjell, 68.23343/14.38817) står 7 og 29 m frå den klatra cella på 700,5 moh (68.23317/14.38794), mot publisert 700. Massivets høgaste punkt er 732,1 moh på 68.22848/14.37915, 600 m sørvest — ein annan tind, ikkje turmålet",
+   "how": "SSR-søk med knr=1865; DTM1-raster med lokalmaksima-filter; toppsøkets claims-tiebreak."
+  },
+  {
+   "what": "Kongsvatnet er regulert, og lina held seg unna",
+   "figure": "Vatnet ved Damveien-enden les 35,0 moh med klasse InnsjøRegulert (68.2345/14.4400 og dammen 68.2375/14.4399). Lina forlèt lysløypa på 15,2 moh ved 68.22450/14.44300, sør for vatnet, og check_ground.py måler 0 m på vatn",
+   "how": "DTM1-punkt-API; OSM-geometrien til Damveien (way/71865261 → way/512659511)."
+  },
+  {
+   "what": "Skaret rundt Ørntinden, målt",
+   "figure": "Ørntinden (Ås) les 398,4 moh på 68.22746/14.42133; skaret nord for toppen 292,8 på 68.22880/14.41950 — omvegen «til høyre rundt» kostar om lag 50 høgdemeter att-gjeve. Vestover derifrå: 340,8 → 441,0 → 564,6 → 700,5",
+   "how": "DTM1-punkt-API på korridorpunkta."
+  },
+  {
+   "what": "check_ground sitt løypefunn, lese og lagt til sides",
+   "figure": "Funnet «says Lysløypa ... line strays 367 m from it (3958 m out), with 519 m of 5046 beyond 250 m» gjeld øvre flanken og eidet — der guiden ikkje hevdar noka løype. Løypepåstanden i guiden dekkjer berre den fyrste kilometeren langs Karlsvatnet, der lina ligg på den kartlagde Damveien (piste:type=nordic), og guiden seier eksplisitt at lina «forlèt løypa før vatnet». Midtitinden-varianten av same sjekk klassifiserer seg sjølv som note når stien ikkje når begge endane; her spenner ein sti-kjede tilfeldigvis profilen, og sjekken kan ikkje sjå at påstanden er delvis",
+   "how": "check_ground.py over lina; lesen mot guideteksten og OSM-geometrien til Damveien."
+  }
+ ],
+ "midtitinden": [
+  {
+   "what": "Fallet frå varden i åtte retningar",
+   "figure": "N 28,1° i snitt med 40,4° som brattaste 60 m 60–120 m ut; NØ 32,9° / 69,2° 390–450 m ut; Ø 24,6° / 33,7° 540–600 m ut; SØ 23,3° / 39,5° 60–120 m ut; S 28,8° / 56,7° 70–130 m ut; SV 21,3° / 60,8° 90–150 m ut; V 22,1° / 55,4° 140–200 m ut; NV 17,9° / 38,5° 20–80 m ut",
+   "how": "flank_probe.py frå 67.34238/15.00416, 800 m ut, prøvetatt kvar 10. m i DTM-en."
+  },
+  {
+   "what": "Registerpunktet er ikkje toppen",
+   "figure": "Midtitinden (Topp, 67.34397/15.00963) les 983,5 moh — 75 m under publisert 1058. Toppsøket klatra til 1059,5 på 67.34238/15.00416, 190 m sørvest, mot publisert 1058 (Δ +1,5)",
+   "how": "SSR-oppslag; DTM1-raster og punkt-API; veksande disk med claims-tiebreak."
+  },
+  {
+   "what": "Fri Flyts høgder langs ruta reproduserer",
+   "figure": "Øvste hytta («Geilo», ca 50 moh) les 54,4; militærløypemerkinga «ved 560» — lina passerer 536,3 på 67.33550/15.03350; søraustryggen «ca 720» les 727,8; «ca 900» les 878,6; nordaustryggen «ved 980» les 1026,1. Alle klasse ÅpentOmråde",
+   "how": "DTM1-punkt-API på kvart korridorpunkt."
+  },
+  {
+   "what": "Starten ved Sagelva, kartlagd",
+   "figure": "OSM-parkeringa node/3397435896 (67.32014/15.02767) les 11,0 moh, ved rv80 (Bodøveien way/784302844) nordaust for Sagelva-utløpet (way/519168913 kryssar rv80 ved 67.319/15.011); Kleivberget-punktet står på 67.32354/15.04705",
+   "how": "OSM-geometri prøvetatt mot DTM1; SSR-søk med knr=1804."
+  }
  ]
 }

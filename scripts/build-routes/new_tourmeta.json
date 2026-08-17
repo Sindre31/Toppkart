@@ -1796,5 +1796,53 @@
    "Fyrste solveringa (før vegkorrigeringa) toppa på 773 moh på 60.64978/6.57866 og fall så 134 m ned i Budalen — ruta hadde teke sommarstien way/973320189 sin rygg i staden for vegen. Etter ompinninga langs way/322409601 → way/707342766 er nedoverdelane att berre vegens eigne slakkar."
   ],
   "notes": ""
+ },
+ "varden-smaatindan": {
+  "season": "jan–apr",
+  "aspect": "Ø",
+  "grade": 2,
+  "gradeReason": "Målinga seier 2 og kortet ber 2 — brattaste hundremetersbeltet 22,2 grader mellom 600 og 700 moh, brattaste 30 m 31,3 — i samsvar med Fri Flyts KAST 2 – Utfordrende. Flankane kring den øvre lina stig 35–40 grader etter Fri Flyt, og skredfaren han åtvarar om i Kolbeindalen ligg rett nord for ryggen.",
+  "roadClosedInWinter": false,
+  "teaserNo": "820 høgdemeter frå Eidet ved Kabelvåg: lysløypa langs Karlsvatnet, over eidet mot Aksla, gjennom skaret rundt Ørntinden, og vestflanken til toppen av øygruppas mest gåtte skitur.",
+  "teaserEn": "820 metres of ascent from Eidet by Kabelvåg: the lit trail along Karlsvatnet, over the neck towards Aksla, through the notch around Ørntinden, and the west flank to the top of the archipelago's most skied tour.",
+  "hazardNotes": "Fri Flyt: KAST 2 – Utfordrende. «Skredfare i Kolbeindalen» og skytebane i botnen av dalen — Kolbeindalen er ikkje korridoren, og guiden må seia det. «I øvre deler stiger henget 35-40 grader bratt» — flankane kring den øvre lina. Nedfarten er same veg («samme rute ned for maksimal sikkerhet»); vestsidevarianten mot Lyngvær krev tilrettelagd transport og er ikkje korridoren. Stor-Kongsvatnet er regulert og Karlsvatnet ligg på 12 moh ved kysten — lina går over eidet mellom dei på land, med vannkost, og check_ground.py er dommaren.",
+  "sources": [
+   "https://www.friflyt.no/topptur/skiturer-lofoten/turbeskrivelse-varden-smaatindan",
+   "https://www.friflyt.no/topptur/skiturer-lofoten/turbeskrivelse-smaatindan2",
+   "https://www.utemagasinet.no/randonee/skiferie-i-lofoten"
+  ],
+  "confidence": "medium",
+  "corrections": [
+   "Fri Flyt fører turen som «Varden (Småtindan)» med toppunkt 700. Registeret ber begge namna: Småtindan (Fjell, 68.23343/14.38817) og **Varden (Ås, 68.23324/14.38798)** — 7 m frå den høgaste cella i massivet på 699,9 moh (68.23318/14.38805). Publisert 700 reproduserer på desimeteren. Same mønster som Hesten (Segla): appen ber begge namna. Merk at massivets høgaste punkt er ein annan tind på 732,1 moh 600 m lenger sørvest — toppsøket må ha claims-styringa (699,9 vinn på 700-kravet).",
+   "Startpunktet «lysløypa ved Kabelvågmarka ... skilt til Eidet, parkeringsplassen ca 200 m fra hovedveien» løyser seg på kartlagd grunn: registerets Eidet (Adressenavn, 68.21/14.43836), OSM-parkeringa «Karlsvågen» (way/1093254187, 68.21606/14.44188, 2,4 moh) og Damveien — lysløypa (piste:type=nordic, way/71865261 m.fl.) — som byrjar 120 m nordaust og går nordover dalen mot Kongsvatnet.",
+   "Vatnet lysløypa endar ved er **regulert** (InnsjøRegulert, 35,0 moh, dammen på 68.2375/14.4399 der Damveien endar). Fri Flyts variant «inn til Store Kongsvatnet» og heile Kolbeindalen — der han sjølv åtvarar om skredfare og skytebane — er difor ikkje korridoren: lina forlèt løypa ved ~19 moh sør for vatnet og tek Aksla-ryggen, slik den andre varianten hans seier.",
+   "«Holder til høyre rundt» Ørntinden (Ås, 68.22746/14.42133, 398,4 moh i DTM1) er målt: skaret nord for toppen les 292,8 på 68.22880/14.41950, så omvegen rundt kostar ~50 høgdemeter att-gjeve mot å klyva over. Vidare vestover er flanken jamn: 340,8 → 441,0 → 564,6 → 699,9.",
+   "Fri Flyts «i øvre deler stiger henget 35-40 grader bratt» er flankane ved lina, ikkje sporet: ruteren løyser under sitt eige steg-tak, og målinga avgjer kortet.",
+   "check_ground.py fann fyrste solveringa 450 m ute på vatn på 12 moh: **Karlsvatnet** (OSM-relasjon 5312814, 68.2177–68.2260/14.4288–14.4425) fyller dalbotnen sør for det regulerte Stor-Kongsvatnet (relasjon 5312819, reservoir), og lina hadde kryssa det på langs. Landstripa mellom dei to vatna er ~250 m brei (68.2260–68.2282); lina er pinna over eidet på 28,5 moh (68.22680/14.44300) og myra vest for det (23,6 moh), med vannkost på ruteren — same is-argumentet som Gullfjellstoppen: kystnært, lågt, og med eit regulert vatn som næraste granne."
+  ],
+  "notes": ""
+ },
+ "midtitinden": {
+  "season": "jan–apr",
+  "aspect": "SØ",
+  "grade": 2,
+  "gradeReason": "Målinga seier 2 og kortet ber 2 — brattaste hundremetersbeltet 19,1 grader mellom 900 og 1000 moh, brattaste 30 m 26,9, i samsvar med Fri Flyts «under 30 grader». Normalvegen er jamn, men 1050 høgdemeter frå havet og solvende SØ-flanker krev timing.",
+  "roadClosedInWinter": false,
+  "teaserNo": "1050 høgdemeter frå havnivå ved Sagelva: gjennom hyttefeltet, rampene mot Innertinden, militærløypemerkinga vestover og ryggane til topps.",
+  "teaserEn": "1050 metres of ascent from sea level at Sagelva: through the cabin field, the ramps towards Innertinden, the military route markers westwards and the ridges to the top.",
+  "hazardNotes": "Fri Flyt: brattaste punkt under 30 grader på normalvegen, S-SØ-vend. Sida er solvend — dagleg oppmjuking og gjenfrysing utover våren. Fri Flyt skildrar fleire nedfartsvariantar frå lett til krevjande (søraustflankane, austover mot 627-vatnet, nordover mot Stordalen på 450); normalvegen ned er same veg som opp, og variantane er ikkje korridoren.",
+  "sources": [
+   "https://www.friflyt.no/topptur/skiturer-bodoe/turbeskrivelse-midtitinden",
+   "https://www.friflyt.no/topptur/skiturer-bodoe/turbeskrivelse-yttertinden",
+   "https://www.friflyt.no/topptur/skiturer-bodoe"
+  ],
+  "confidence": "medium",
+  "corrections": [
+   "Registerpunktet (Topp, 67.34397/15.00963) les 983,5 moh — 75 m under publisert 1058. Den høgaste cella i massivet ligg 190 m sørvest: 1059,2 på 67.34232/15.00385, og toppsøket må vekse disken dit (Gullfjellstoppen-mønsteret: registerpunktet er ikkje toppen).",
+   "Startstaden er Yttertindens: «den store avkjøringen på venstre side av riksveien ved Kleivberget rett NØ for utløpet av Sagelva». Alt løyser seg: Sagelva (Elv, way/519168913) kryssar rv80 ved 67.319/15.011, Kleivberget (Fritidsbolig-punkt 67.32354/15.04705), og OSM-parkeringa node/3397435896 på 67.32014/15.02767 (11,0 moh) med hyttefeltet og stiane rett nord (way/784302849 m.fl., way/1356541082 vidare nordover).",
+   "Fri Flyts høgder reproduserer punkt for punkt: øvste hytta («Geilo», ca 50 moh) les 54,4; «militærløypemerkinga ved 560» — lina passerer 536,3 på 67.33550/15.03350 og stig mot merkehøgda; søraustryggen «ca 720» les 727,8; «ca 900» les 878,6 på ryggen; nordaustryggen «ved 980» les 1026,1 der lina rundar mot nord. Alle klasse ÅpentOmråde.",
+   "«Brattest punkt under 30 grader» er Fri Flyts eige tal for normalvegen; målinga av den løyste lina avgjer kortet."
+  ],
+  "notes": ""
  }
 }
