@@ -248,6 +248,16 @@ export const TOUR_TEASER_EN: Record<string, string> = {
     "660 metres of ascent straight from the lay-by in Kaperdalen: the notch north of point 504, steadily up to the foretop at 870, and the last 36 metres to the Senja classic.",
   istinden:
     "1432 metres of ascent from Tindelva by Iselvmoen: the steep birch hillside, into the cirque below the north wall, and up the ridge west of the glacier to the highest of the Istindan tops.",
+  husfjellet:
+    "640 metres of ascent from the church at Skaland: Dronningstien to Grillbua, the cleared forest track up Sommerdalen and the ridge over Sommerdalhaugen — the most view for the least effort, the source says.",
+  lonketind:
+    "784 metres of ascent from the water basin by Finnelva: the flat bog terrain, the ridge toward Lonketuva and the summit ridge that steepens by degrees to Senja's Lonketinden.",
+  skolpan:
+    "607 metres of ascent from Fv. 862 in Krokelvdalen: a steady climb through the scrub birch, across the shelf at 465 m and north-west onto the ridge to Skolpan.",
+  lukttinden:
+    "1129 metres of ascent from the farm at Kammen: the tractor road, the forest toward the stream between Nordtinden and Lukttinden, and the gentler ridge to the most striking summit in Vefsn.",
+  tortenviktinden:
+    "1018 metres of ascent from Neset by Flostrand: straight up through the forest, west along the ribs across the broken shelf, and up the gentle rise to the view over the Helgeland coast.",
 
 };
 
@@ -694,6 +704,44 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       caption: "840 metres of climbing and 3.35 km from Medfjordbotnvatnan; the route climbs diagonally out of the bowl and holds 28.1 degrees where the fall line beside it measures over 40.",
     },
   },
+  husfjellet: {
+    intro:
+      "640 metres of ascent over 3.29 km from the church at Skaland to Husfjellet, the mountain Fri Flyt calls «det fjellet i Norge som gir mest utsikt for minst innsats» — the mountain in Norway that gives the most view for the least effort. The tour starts at the shore at 3 m and stays gentle throughout: the steepest hundred-metre band measures 17.1 degrees between 100 and 200 m, and the steepest sustained stretch 19.6 — well inside Fri Flyt's «Bratteste punkt: Under 27 grader». The hazard is not in the route but in the final arête and the cornices.",
+    ascent: [
+      "From the church at Skaland, 3 m, on Fv. 862 — the main road to Senjahopen and Mefjord, ploughed year round. The line follows Dronningstien as the source says, and that path is mapped: the chain from the car park to the cairn is in OSM, and the corridor is pinned to it. The first hundred metres of height are the steepest the tour has — the band from 100 to 200 m measures 17.1 degrees over 335 metres of ground, and the steepest sustained stretch sits here: 19.6 degrees between 124 and 140 m, 0.63 km in. So the steep ground is in the forest, not on the mountain.",
+      "The forest ends at 209 m by Kartverket's classes, with open ground from 221, and the treeline comes just 0.9 km in. Above it the ground eases: the band from 200 to 300 m measures 11.0 degrees and the band from 300 to 400 only 6.0 over 1,035 metres of ground. This is the cleared forest track and Sommerdalen, and here the tour is a walk.",
+      "Sommerdalhaugen is the landmark the source gives, and it checks out: the sample point on the mapped chain reads 327.6 m against the «327 moh» Fri Flyt states. From here the ridge climbs steadily — 13.9 degrees from 400 to 500 m and 15.5 from 500 to 600 — toward the top.",
+      "The cairn at 632 m. Fri Flyt gives «785 høydemeter», which is more than the whole mountain is high; the card carries the routed gain of 640. The final arête out to the summit is often wind-scoured, and then it needs good conditions — the source says so plainly, and the measurements say why: the north-east side falls 36.8 degrees on average with 71.4 degrees as its steepest 60 metres only 50 to 110 metres out, and the east side 35.8 degrees with 67.9 degrees 20 to 80 metres out.",
+    ],
+    descent: [
+      "Back down the same track. Fri Flyt is unambiguous about the alternatives: «Ikke la deg friste å velge annen rute ned fra toppen. Utsatt terreng» — do not be tempted to pick another way down from the summit; exposed terrain. The measurements say what he means: from the cairn only south-west, south and west are gentle enough to call skiing, while north-east, east and north fall 36.8, 35.8 and 28.0 degrees on average with 71.4, 67.9 and 58.3 degrees as their steepest 60 metres.",
+      "The source names a single variation: straight down to the south from the resting stone for some extra vertical in open forest, then skins back up to the ridge at Sommerdalhaugen. The south sweep from the cairn measures 20.2 degrees on average, so it is real — but he warns himself that it becomes «mye knot tett skog», a lot of fighting through dense forest, if you carry on down.",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "Fri Flyt grades the tour KAST 1 – Enkelt and «Bratteste punkt: Under 27 grader», and the finished line stays inside that: no hundred metres averages more than 17.1 degrees, and the steepest sustained stretch is 19.6 degrees between 124 and 140 m. His learning point is to lay a track under 25–30 degrees and to read the runout zones through Sommerdalen, and this terrain is made for exactly that exercise.",
+      },
+      {
+        title: "The arête and the cornices",
+        body: "The hazard Fri Flyt lists is «Skavler», cornices, and he is precise about where: overhanging cornices on the ridge to the north, and «Siste egga ut mot toppunktet er ofte avblåst og krever gode forhold da begge sidene her er bratte» — the last arête out to the summit is often wind-scoured and needs good conditions, because both sides are steep. The measurements confirm both sides — north-east 36.8 degrees on average with 71.4 degrees as its steepest 60 metres 50 to 110 metres out, east 35.8 with 67.9 degrees 20 to 80 metres out, and north 28.0 with 58.3 degrees 60 to 120 metres out. An arête with that on either side is not the place to be when it is scoured bare.",
+      },
+      {
+        title: "The runout zones",
+        body: "The source names them: runout zones up toward Litje Brusen and Store Brusen. The register carries Storbrusen as a mountain 1.7 km east of the cairn, and they are not on the route — but they are part of the same mountainside system, and Fri Flyt asks you to observe them on the way up through Sommerdalen.",
+      },
+      {
+        title: "Before you go",
+        body: "Husfjellet lies in the Sør-Troms forecast region, an A region with a daily avalanche bulletin through the season — check varsom.no. The season of February to May is Fri Flyt's own. Bring a transceiver, probe and shovel. An empty bulletin page is not the same as a safe mountain.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "3 m",
+      endLabel: "632 m",
+      distanceLabel: "3.3 km",
+      caption: "640 metres of ascent over 3.29 km from Skaland, with the steepest ground — 19.6 degrees between 124 and 140 m — down in the forest, 0.63 km in.",
+    },
+  },
   breitinden: {
     intro:
       "Senja's highest peak, 1049 metres of climbing from the lay-by at the fjord. The ski tour ends at the shoulder at 763 m; the last 244 metres are exposed scrambling on the south-west ridge, and that finish is what makes this a grade 4.",
@@ -726,6 +774,44 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       endLabel: "1007 m",
       distanceLabel: "4.2 km",
       caption: "1031 metres of climbing and 4.21 km from Svarthola; the skis stay at the shoulder at 763 m, 244 metres below the summit.",
+    },
+  },
+  skolpan: {
+    intro:
+      "607 metres of ascent over 2.31 km from Fv. 862 in Krokelvdalen to Skolpan — the shortest tour in the collection's northern corner, and one of the gentlest. The steepest hundred-metre band measures 17.7 degrees and the steepest sustained stretch 27.1, just inside Fri Flyt's «Bratteste punkt: 27-30 grader». The hazard here is not the route but the slopes beside it.",
+    ascent: [
+      "From the parking along Fv. 862 in Krokelvdalen, 170 m. Fv. 862 is the main road on outer Senja and is ploughed year round; the register point for Krokelvdalen lies 494 metres away. Fri Flyt gives 580 metres of ascent, the routed line climbs 607 — 27 metres apart, and the card carries the routed figure.",
+      "The first stretch goes through the scrub birch the source mentions: the band from 100 to 200 m measures 11.6 degrees and the band from 200 to 300 13.2. The forest ends at just 317 m by Kartverket's classes, with open ground from 331, and the treeline comes 0.63 km in — a quarter of the tour.",
+      "Above the forest it climbs steadily: 17.7 degrees from 300 to 400 m and 12.3 from 400 to 500. At 465 m comes the shelf the source describes — «Fra 500 moh. flater det litt ut» — and here the line turns north-west onto the ridge, exactly as it says.",
+      "On the ridge sits the steepest ground of the tour: 27.1 degrees between 693 and 714 m, 2.03 km in. Fri Flyt writes «Mellom 600–740 moh. er det partier som er 27–30 grader», and this is that section. Then only the stroll across to the highest point — 777 m on the climbed cell against a published 779.",
+    ],
+    descent: [
+      "Back down the same track, «med mulige variasjoner etter ønsker og behov» — with variations as you please, as the source puts it. The steepest thing you ski is the same 27.1 degrees between 693 and 714 m, just below the ridge.",
+      "From the cairn the north-west is by far the gentlest sector at 6.0 degrees on average — that is the ridge you came up. The west side measures 32.2 degrees on average, the north 27.5 with 65.2 degrees as its steepest 60 metres only 30 to 90 metres out, and the north-east 24.1 with 69.2 degrees 20 to 80 metres out. The difference between the ridge and the north side is seventy degrees inside a hundred metres.",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "Fri Flyt grades it KAST 1 – Enkelt with «Bratteste punkt: 27-30 grader»; the line measures 27.1 degrees as its steepest sustained stretch, between 693 and 714 m, and no hundred metres averages more than 17.7 degrees. The hazard he lists is «Noen små litt bratte», a few small steepish bits, which is a precise description of a line that is gentle on average with a couple of short pitches.",
+      },
+      {
+        title: "The slopes to avoid",
+        body: "The source's own warning is not about the route but about the ground beside it: «Det finnes noen små heng oppover som er 30–40 grader, så les terrenget godt slik at du unngår disse» — there are small slopes on the way up at 30 to 40 degrees, so read the terrain well and avoid them. That is why line choice is the whole exercise on this mountain — his stated challenge is to lay the track in terrain under 30 degrees, and the steeper slopes sit right beside the track that stays under.",
+      },
+      {
+        title: "The summit",
+        body: "The ridge from the north-west averages 6.0 degrees, and directly north of the cairn the ground falls 27.5 degrees on average with 65.2 degrees as its steepest 60 metres 30 to 90 metres out; the north-east measures 24.1 with 69.2 degrees 20 to 80 metres out. The summit is small and gentle, and the edges are close.",
+      },
+      {
+        title: "Before you go",
+        body: "Skolpan lies in the Sør-Troms forecast region, an A region with a daily avalanche bulletin through the season — check varsom.no. The season of February to May is Fri Flyt's own. No independent source describes the route; Peakbook corroborates the height only. Bring a transceiver, probe and shovel. An empty bulletin page is not the same as a safe mountain.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "170 m",
+      endLabel: "777 m",
+      distanceLabel: "2.3 km",
+      caption: "607 metres of ascent over 2.31 km from Krokelvdalen, with the steepest ground — 27.1 degrees between 693 and 714 m — up on the ridge, 0.28 km before the top.",
     },
   },
   "tredje-svanfjell": {
@@ -765,6 +851,42 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       endLabel: "899 m",
       distanceLabel: "2.8 km",
       caption: "664 metres of ascent and 2.85 km from Kaperdalen — the notch north of point 504, the foretop at 870, and zero vertical metres given back.",
+    },
+  },
+  lonketind: {
+    intro:
+      "784 metres of ascent over 3.06 km from the water basin by Finnelva to Lonketinden, the highest mountain in its corner of southern Senja. The tour is short and steep rather than long: the steepest hundred-metre band measures 23.4 degrees between 500 and 600 m, and the steepest sustained stretch 30.0 — exactly what Fri Flyt gives as «Bratteste punkt: 30-35 grader (kort parti)», and exactly where the source says it lies.",
+    ascent: [
+      "From the road end at the water basin by Finnelva, 66 m. It is the highest road end in the valley, and it explains the source's figure: 848 minus 66 is 782, against the «785 høydemeter» Fri Flyt states. The register point for Finnelva lies 170 metres away.",
+      "The first kilometre is the flat bog terrain the source describes: the band from 0 to 100 m measures 8.8 degrees and the band from 100 to 200 only 8.2 over 720 metres of ground. The forest ends at 330 m by Kartverket's classes, with open ground from 341, and the treeline comes 1.3 km in.",
+      "Then the ridge toward Lonketuva begins. The register carries Lonketuva as a hill at 361 m, and that is the foot of the ridge. The band from 200 to 300 m measures 19.6 degrees and the band from 400 to 500 20.6 — the source calls this «småkupert med partier på 27–30 grader», rolling with sections of 27 to 30 degrees, and those sections are what the averages are made of.",
+      "The summit ridge steepens by degrees, just as the source says, and the short steep pitch it promises is real: 30.0 degrees between 564 and 588 m, 2.14 km in. Fri Flyt writes «Rundt 550 moh. er det et kort parti som er 30–35 grader» — the measurement and the source point at the same twenty metres of height.",
+      "Above it the ground flattens toward the cairn, as the source says: the band from 800 to 900 m measures 11.6 degrees, the gentlest above the treeline. 845 m on the climbed cell against a published 848.",
+    ],
+    descent: [
+      "Back down the same track. The 30.0-degree pitch between 564 and 588 m is the steepest thing you ski, and it comes early in the descent — 0.9 km before you are back on the bog.",
+      "Fri Flyt's only warning for the summit ridge is about cornices: «Vær obs på skavler på toppryggen.» From the cairn the north-west is the gentlest sector at 18.8 degrees on average, while the north-east measures 34.4, the south-west 33.9 and the south 30.2 — this is a summit that falls steeply in almost every direction, and the ridge is the one way that does not.",
+      "From the foot of the ridge at Lonketuva it is the bog again, and the tour gives back only 5 metres of height along the way.",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "Fri Flyt grades the tour KAST 1 – Enkelt while also giving «Bratteste punkt: 30-35 grader (kort parti)» — and that pitch is real: 30.0 degrees between 564 and 588 m, 2.14 km in. The rest of the line is gentler; the steepest hundred-metre band is 23.4 degrees between 500 and 600 m. The source's learning point is to lay the track under 30 degrees and to recognise simple terrain traps, and the short pitch is where you have to do it.",
+      },
+      {
+        title: "The summit ridge and the cornices",
+        body: "«Vær obs på skavler på toppryggen» — watch for cornices on the summit ridge — is the source's own warning, and the measurements say what lies under them: the north side falls 23.7 degrees on average with 56.5 degrees as its steepest 60 metres only 40 to 100 metres from the cairn, the east side 31.5 with 54.1 degrees, and the south side 30.2 with 54.0. The gentlest sector is the north-west at 18.8 degrees — but the route does not go that way.",
+      },
+      {
+        title: "Before you go",
+        body: "Lonketinden lies in the Sør-Troms forecast region, an A region with a daily avalanche bulletin through the season — check varsom.no. The season of February to May is Fri Flyt's own, and he notes that the snow settles a little later on this part of the island. No independent source describes the route: Fri Flyt publishes it at two addresses, and both rest on Espen Nordahl's «Toppturer i Troms». Bring a transceiver, probe and shovel. An empty bulletin page is not the same as a safe mountain.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "66 m",
+      endLabel: "845 m",
+      distanceLabel: "3.1 km",
+      caption: "784 metres of ascent over 3.06 km from Finnelva, with the steepest ground — 30.0 degrees between 564 and 588 m — exactly where the source says the short pitch lies.",
     },
   },
   istinden: {
@@ -1132,6 +1254,45 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       caption: "1021 metres of ascent and 5.01 km from the shore at Horsdal — the stairs to Stjerndalen, gentle ridges, and 32.5 degrees in the last fifty vertical metres.",
     },
   },
+  tortenviktinden: {
+    intro:
+      "1018 metres of ascent over 5.40 km from Neset by Flostrand to Tortenviktinden — from sea level to a thousand metres in a single line, with the whole Helgeland coast below. The tour is long rather than steep: the steepest hundred-metre band measures 18.5 degrees between 900 and 1000 m, and the steepest sustained stretch 24.8. It is the length and the unstable coastal season that decide the day.",
+    ascent: [
+      "From the farm Neset by Flostrand, 15 m, on the E12 coastal road. The register places Tortenviktinden in Lurøy while the approach from Flostrand lies in Rana — the mountain and the trailhead are in different municipalities. Visit Helgeland carries the same route at 5.2 km and 1,025 metres of ascent one way; the line measures 5.40 km and 1,018.",
+      "The first kilometre is all but flat: the band from 0 to 100 m measures 6.7 degrees over 761 metres of ground and the band from 100 to 200 only 4.5 over 1,233 metres. The forest ends at 152 m by Kartverket's classes, with open ground from 158, and the treeline comes 1.66 km in. Fri Flyt says «rett opp til du kommer over skogen i nord-nordvestlig retning» — straight up until you clear the forest, heading north-north-west — and that is this stretch.",
+      "Above the forest the line runs west along the ribs, as the source says. The bands from 200 to 500 m sit evenly between 12.3 and 13.2 degrees. Then comes the flatter section it describes as «noe ulendt, med små bekkedaler på tvers av fjellet», somewhat broken with small stream valleys across the mountain: the band from 700 to 800 m measures 7.8 degrees over 674 metres of ground — the gentlest above the treeline, and the longest. This is where the tour feels long.",
+      "«Herfra ser du ikke selve Tortenviktinden, men toppen ligger rett bak det høyeste punktet du ser» — from here you cannot see Tortenviktinden itself, but the summit lies just behind the highest point you can see, says Fri Flyt. Behind it rises the last slope: the band from 900 to 1000 m measures 18.5 degrees, the steepest of the tour, and the steepest sustained stretch sits here — 24.8 degrees between 971 and 990 m, 5.22 km in, under two hundred metres before the cairn. 1028 m against a published 1027.",
+    ],
+    descent: [
+      "Back down the same route. The steepest thing you ski is the 24.8 degrees just below the summit, and it eases the whole way out — which makes the last kilometres poling more than skiing.",
+      "The north side is not to be touched. From the cairn it falls 43.3 degrees on average with 62.2 degrees as its steepest 60 metres 80 to 140 metres out, and the north-west 35.2 with 60.0 degrees 230 to 290 metres out. The route comes up from the south-east, which measures 15.3 degrees on average, and the west side is 11.9 — the contrast between the two sides of this summit is the one thing worth knowing about it in poor visibility.",
+      "Fri Flyt notes that the mountain offers «mulighet for bratt rennekjøring», the chance of steep couloir skiing, and Visit Helgeland carries an alternative route of 4.3 km and 1,005 metres with a steeper ascent and less traversing. Neither is measured as a route of its own here.",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "Neither source gives a steepness field, and Fri Flyt does not grade the tour under KAST. The measurement fills the gap: no hundred metres of the line averages more than 18.5 degrees, and the steepest sustained stretch is 24.8 degrees between 971 and 990 m. Visit Helgeland grades the tour «Challenging, long», and it is the length the grade is about — 5.40 km and a thousand metres of ascent from sea level.",
+      },
+      {
+        title: "Grøveldalen",
+        body: "Fri Flyt's only named hazard is somewhere other than the route: «Grøveldalen har høye og bratte sva på begge sider som kan løsne, særlig om våren» — Grøveldalen has high, steep slabs on both sides that can release, especially in spring. The register carries Grøveldalen as a cirque 2.5 km south of the cairn, and the line does not go there. The warning stands here because it is the source's own and because the valley is part of the same mountainside — not because the route touches it.",
+      },
+      {
+        title: "The north side",
+        body: "From the cairn the north side falls 43.3 degrees on average over the first 800 metres, with 62.2 degrees as its steepest 60 metres 80 to 140 metres out; the north-east measures 33.3 with 68.3 degrees 50 to 110 metres out and the north-west 35.2 with 60.0 degrees. The ascent comes from the south-east at 15.3 degrees. Visit Helgeland points out that the terrain is «mostly free of trees», and on a summit where two sides differ by thirty degrees it is precisely the lack of reference points that makes the difference dangerous.",
+      },
+      {
+        title: "Before you go",
+        body: "Tortenviktinden lies in the Svartisen forecast region, an A region with a daily avalanche bulletin through the season — check varsom.no. No source publishes season months: Fri Flyt writes that «den kystnære beliggenheten … gjør også at sesongen er ustabil med varierende snøforhold», the coastal position makes the season unstable with varying snow conditions, and Visit Helgeland carries the main route as a winter tour with the alternative available after Easter. The card's feb–mai is therefore editorial. Bring a transceiver, probe and shovel. An empty bulletin page is not the same as a safe mountain.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "15 m",
+      endLabel: "1028 m",
+      distanceLabel: "5.4 km",
+      caption: "1018 metres of ascent over 5.40 km from Neset, with the steepest ground — 24.8 degrees between 971 and 990 m — in the final rise, barely 200 metres before the cairn.",
+    },
+  },
   tomskjevelen: {
     intro:
       "951 metres of ascent and 3.86 km from the field at Forsland — on an island. Tomskjevelen stands in the middle of the sea on Tomma, with the ferry from Nesna as the only way to the start, and Fri Flyt writes that 'many consider Tomskjevelen one of the very finest peaks on the whole Helgeland coast'. The register spells it Tommskjevelen and keeps its point on the west knoll at 756 metres; the top itself — 922 — lies 330 m east, and that is where the line goes. The track is kind — steepest 100-metre band 21.8 degrees between 800 and 900 metres, steepest sustained stretch 27.9 — but the mountain around it is not, and the season is unstable with varying snow conditions, as the source itself says.",
@@ -1169,6 +1330,46 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       endLabel: "922 m",
       distanceLabel: "3.9 km",
       caption: "951 metres of ascent and 3.86 km from Forsland on Tomma — around Forslandsvatnet on land, and the north-west ridge to the horn at 922.",
+    },
+  },
+  lukttinden: {
+    intro:
+      "1129 metres of ascent over 3.99 km from the farm at Kammen to Lukttinden — the biggest climb of this round, and a mountain ut.no calls «av mange ansett som den flotteste og mest spektakulære toppen i Vefsn», held by many to be the finest and most spectacular summit in Vefsn. The line climbs unusually evenly: every hundred-metre band from 500 m upward measures between 17.4 and 19.6 degrees, and the steepest sustained stretch is 28.1. The hazard lies in the edges, and in which way you take up onto the ridge.",
+    ascent: [
+      "From the road end at the farm at Kammen, 230 m. Fri Flyt says «Følg traktorveien videre fra parkeringen i omtrent 300-400 meter» — follow the tractor road on from the parking for some 300 to 400 metres — and ut.no the same: the track starts on the forest road by the farm. The band from 200 to 300 m measures 11.0 degrees and the band from 300 to 400 just as gently over 586 metres of ground.",
+      "The forest ends at 379 m by Kartverket's classes, with open ground from 386, and the treeline comes 0.82 km in. Above it the line runs into the valley toward the stream between Nordtinden and Lukttinden — ut.no puts it at «ca 400moh», and the line passes there.",
+      "Here the source divides, and it is the most important decision on the mountain. ut.no gives two ways onto the ridge: alternative 1 straight up the steep slope, «ganske bratt, med opptil 40 grader helning» — quite steep, with up to 40 degrees — and alternative 2 further into the valley to the south-east and then «den noe mindre bratte ryggen opp til høyre, som er en vanlig rute sommerstid… opp i 30 grader», the somewhat less steep ridge up to the right, a common summer route, up to 30 degrees. **This line takes alternative 2.** The steepest sustained stretch of the whole tour sits in that step: 28.1 degrees between 633 and 650 m, 1.88 km in — inside what ut.no gives for alternative 2, and well under the 40 degrees of alternative 1. He warns himself that alternative 2 carries «overhengende skavler med utløpsområde mot denne ryggen», overhanging cornices with a runout toward that ridge.",
+      "Up on the ridge — ut.no says «ca 720 moh» — the tour is simple and long. The bands from 700 m upward measure 18.3, 18.2, 18.8, 18.1, 19.6 and 18.0 degrees; the steepest is 19.6 between 1100 and 1200 m. ut.no describes the same evenness: «Det er jevnt bratt oppover, mellom ca 20-30 grader.»",
+      "The cairn at 1348 m. That is ut.no's figure, not Fri Flyt's — Fri Flyt gives 1342, and the summit search resolves 1347.8 on the register point. ut.no mentions a final steep slope «på ca 35 grader for å nå toppen», often «ganske isete»; the routed line finds 35 degrees nowhere, and the highest band, 1300 to 1400 m, measures 18.5. That is a real disagreement between source and line, and it stands here because it concerns the last few metres.",
+    ],
+    descent: [
+      "Back down the same ridge. ut.no is clear about what the descent is for: «I de svakt konkave helningene som følger nesten hele fjellsiden nedover kan det samles mye fin snø. Siden er også nordvendt, som betyr at du kan være heldig og nyte puddersnø godt ut i juni» — the faintly concave slopes running almost the whole mountainside can gather a lot of good snow, and the side is north-facing, so with luck there is powder well into June. The card's aspect is NW, measured from the line's own descent, which agrees that the side faces north.",
+      "Two edges are to be kept away from. On the way up: «Unngå å gå på kanten til høyre (SV), her er det stupbratt» — avoid the edge to the right, it is sheer. The west sweep from the cairn measures 32.2 degrees on average with 38.8 degrees as its steepest 60 metres 110 to 170 metres out. And at the top: «Vær obs på skavlen som dannes på nordøstsiden av varden. Skavler bryter 45 grader i snøen og kan dra deg med selv om du står på fast grunn. Det er stup på begge sider.» The north-east sweep measures 19.8 degrees on average — but 63.4 degrees as its steepest 60 metres only 60 to 120 metres out. The average is what deceives; the edge is what matters.",
+      "The gentlest sector from the cairn is the south-west at 9.7 degrees and the south at 13.3 — but that is not the way home, and the east and south-east fall 35.0 and 31.3 degrees on average with 65.5 and 68.8 degrees close in to the cairn.",
+    ],
+    avalanche: [
+      {
+        title: "The route and the two alternatives",
+        body: "Fri Flyt gives no steepness field for this tour and does not grade it under KAST; he says only that «Toppen av Lukttinden er ikke omkranset av bre og er dermed en teknisk enklere tur enn Okstindene» — the summit is not ringed by glacier and is therefore technically easier than Okstindene. ut.no is the strict source, and he is unambiguous: «På grunn av bratthet bør den ikke gåes ved skredfare» — because of the steepness it should not be done when there is avalanche danger. The corridor here follows his alternative 2, the gentler ridge — steepest sustained stretch 28.1 degrees between 633 and 650 m — and not alternative 1, which is his own drawn track and «up to 40 degrees».",
+      },
+      {
+        title: "The cornice at the cairn",
+        body: "«Vær obs på skavlen som dannes på nordøstsiden av varden. Skavler bryter 45 grader i snøen og kan dra deg med selv om du står på fast grunn. Det er stup på begge sider.» Those are ut.no's words — watch the cornice on the north-east side of the cairn; cornices fracture back at 45 degrees into the snow and can take you with them even standing on firm ground; there are cliffs on both sides. The measurement stands behind them: the north-east sweep holds 19.8 degrees on average over 800 metres, but 63.4 degrees in its steepest 60, 60 to 120 metres from the cairn. A cornice that fractures backward takes firm ground with it, and an average of nineteen degrees says nothing about that.",
+      },
+      {
+        title: "The ice at the end",
+        body: "ut.no describes a final slope «på ca 35 grader for å nå toppen» that is «often quite icy». The routed line does not measure 35 degrees anywhere — the highest band, 1300 to 1400 m, holds 18.5 degrees, and the steepest sustained stretch of the whole tour is 28.1 lower down. The disagreement is recorded rather than explained away: the source has walked the mountain and the line is computed, and the last stretch is where the two do not agree.",
+      },
+      {
+        title: "Before you go",
+        body: "Lukttinden lies in the Helgeland forecast region, an A region with a daily avalanche bulletin through the season — check varsom.no. The season of April to June is ut.no's own, and he files the tour as a ski tour; Fri Flyt has no season field for it. Bring a transceiver, probe and shovel. An empty bulletin page is not the same as a safe mountain.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "230 m",
+      endLabel: "1348 m",
+      distanceLabel: "4.0 km",
+      caption: "1129 metres of ascent over 3.99 km from Kammen, with the steepest ground — 28.1 degrees between 633 and 650 m — in the pull onto the ridge, 2.1 km before the cairn.",
     },
   },
   vassfjellet: {

@@ -120,6 +120,17 @@
   "season": "jan–mai",
   "hasGuide": true
  },
+ "husfjellet": {
+  "name": "Husfjellet",
+  "region": "Senja",
+  "summitM": 632,
+  "verticalM": 640,
+  "duration": "3–5 t",
+  "grade": 1,
+  "aspect": "SØ",
+  "season": "feb–mai",
+  "hasGuide": false
+ },
  "breitinden": {
   "name": "Breitinden",
   "region": "Senja",
@@ -131,6 +142,17 @@
   "season": "jan–apr",
   "hasGuide": true
  },
+ "skolpan": {
+  "name": "Skolpan",
+  "region": "Senja",
+  "summitM": 777,
+  "verticalM": 610,
+  "duration": "2–4 t",
+  "grade": 1,
+  "aspect": "S",
+  "season": "feb–mai",
+  "hasGuide": false
+ },
  "tredje-svanfjell": {
   "name": "Tredje Svanfjell",
   "region": "Senja",
@@ -141,6 +163,17 @@
   "aspect": "V",
   "season": "des–mai",
   "hasGuide": true
+ },
+ "lonketind": {
+  "name": "Lonketinden",
+  "region": "Senja",
+  "summitM": 845,
+  "verticalM": 780,
+  "duration": "3–5 t",
+  "grade": 2,
+  "aspect": "S",
+  "season": "feb–mai",
+  "hasGuide": false
  },
  "istinden": {
   "name": "Vestre Istinden",
@@ -252,6 +285,17 @@
   "season": "jan–apr",
   "hasGuide": true
  },
+ "tortenviktinden": {
+  "name": "Tortenviktinden",
+  "region": "Helgeland",
+  "summitM": 1028,
+  "verticalM": 1020,
+  "duration": "4–6 t",
+  "grade": 2,
+  "aspect": "SØ",
+  "season": "feb–mai",
+  "hasGuide": false
+ },
  "tomskjevelen": {
   "name": "Tomskjevelen",
   "region": "Helgeland",
@@ -262,6 +306,17 @@
   "aspect": "S",
   "season": "jan–apr",
   "hasGuide": true
+ },
+ "lukttinden": {
+  "name": "Lukttinden",
+  "region": "Helgeland",
+  "summitM": 1348,
+  "verticalM": 1130,
+  "duration": "4–6 t",
+  "grade": 2,
+  "aspect": "NV",
+  "season": "apr–jun",
+  "hasGuide": false
  },
  "vassfjellet": {
   "name": "Vassfjellet",

@@ -1529,5 +1529,155 @@
    "figure": "OSM way/1084430679 gjennom skogen og way/527286327 (trailblazed=yes, sac_scale=demanding_mountain_hiking) over skoggrensa, som når toppen 3 m frå varden. Lina ligg i snitt 66 m frå næraste kartlagde sti, med 276 m som største avstand og berre 49 m av 5 238 meir enn 250 m unna. Den fyrste korridoren låg opp til 577 m unna med 1 393 m over 250",
    "how": "Haversine mot alle nodane i dei kartlagde stiane i ground-cachen, før og etter at dei tre skogvegpunkta blei festa til way/1084430679."
   }
+ ],
+ "husfjellet": [
+  {
+   "what": "Fallet frå varden i åtte retningar",
+   "figure": "N 28,0° i snitt med 58,3° som brattaste 60 m 60–120 m ut; NØ 36,8° / 71,4° 50–110 m ut; Ø 35,8° / 67,9° 20–80 m ut; SØ 14,8° / 70,9° 70–130 m ut; S 20,2° / 42,9° 140–200 m ut; SV 26,9° / 42,8° 550–610 m ut; V 14,5° / 35,0° 0–60 m ut; NV 20,7° / 43,1° 20–80 m ut",
+   "how": "flank_probe.py frå 69.47024/17.27304, 800 m ut, prøvetatt kvar 10. m i DTM-en."
+  },
+  {
+   "what": "Kva den gamle korridoren målte, og kva den nye gjer",
+   "figure": "Den fyrste lina hadde eit 30 m-steg på 33,7° ved 624 m ute (77→106 moh) og eit fall på 38,1° ved 2 702 m ute (480→451 moh), mot Fri Flyts «Bratteste punkt: Under 27 grader». Den nye lina måler 19,6° som brattaste 30 m og har 640 m stiging over 3,29 km",
+   "how": "Segment- og 30 m-vindaugsskann over routes.json før og etter at vegpunkta blei festa til stikjeda."
+  },
+  {
+   "what": "Stikjeda frå kyrkja til varden i OSM",
+   "figure": "way/695989801 → way/1053948570 → way/865479337 dannar ei samanhengande kjede; næraste nodekjede-punkt til utgangspunktet ligg 59 m unna og til toppunktet 5 m. Prøvepunkt langs kjeda les 39,6 / 139,0 / 247,2 / 298,4 / 327,6 / 395,3 / 476,8 / 578,2 moh, og 327,6 er Sommerdalhaugen, som Fri Flyt oppgir til «327 moh»",
+   "how": "Overpass for stiane, Dijkstra gjennom nodegrafen frå trailhead til topp, DTM1-punkt-API kvar ~350 m langs kjeda."
+  },
+  {
+   "what": "Storbrusen i registeret",
+   "figure": "Storbrusen (Fjell) 69.45830/17.31328, 1,7 km aust for varden. Fri Flyt skriv «Litje Brusen og Store Brusen»",
+   "how": "SSR-namnesøk, haversine frå toppunktet."
+  },
+  {
+   "what": "Varslingsregionen",
+   "figure": "Sør-Troms, RegionId 3012, RegionType A",
+   "how": "NVEs AvalancheWarningByCoordinates/Simple på toppunktet."
+  }
+ ],
+ "lonketind": [
+  {
+   "what": "Fallet frå varden i åtte retningar",
+   "figure": "N 23,7° i snitt med 56,5° som brattaste 60 m 40–100 m ut; NØ 34,4° / 50,3° 270–330 m ut; Ø 31,5° / 54,1° 360–420 m ut; SØ 27,2° / 52,1° 740–800 m ut; S 30,2° / 54,0° 270–330 m ut; SV 33,9° / 48,2° 300–360 m ut; V 29,9° / 45,9° 350–410 m ut; NV 18,8° / 51,2° 740–800 m ut",
+   "how": "flank_probe.py frå 69.09398/16.91556, 800 m ut, prøvetatt kvar 10. m i DTM-en."
+  },
+  {
+   "what": "Utgangspunktet og den publiserte stiginga",
+   "figure": "Vegenden på OSM way/464201349 les 65,9 moh og er den høgaste vegenden i dalen; 848 − 66 = 782 mot Fri Flyts «785 høydemeter». Registerpunktet for Finnelva (Bekk) ligg 170 m unna",
+   "how": "Overpass for vegendane i dalen, DTM1-punkt-API på kvar ende, SSR for Finnelva."
+  },
+  {
+   "what": "Lonketuva",
+   "figure": "Lonketuva (Ås) 69.08151/16.92681 les 361,3 moh — ryggfoten kjelda sender deg opp",
+   "how": "SSR-oppslag og DTM1-punkt-API."
+  },
+  {
+   "what": "Kor det korte bratte partiet ligg",
+   "figure": "30,0° mellom 564 og 588 moh, 2,14 km ute på ei linje på 3,06 km. Fri Flyt: «Rundt 550 moh. er det et kort parti som er 30–35 grader»",
+   "how": "steepestStep i guide_facts.json mot kumulativ lengd langs routes.json."
+  },
+  {
+   "what": "Varslingsregionen",
+   "figure": "Sør-Troms, RegionId 3012, RegionType A",
+   "how": "NVEs AvalancheWarningByCoordinates/Simple på toppunktet."
+  },
+  {
+   "what": "Skoggrensa",
+   "figure": "siste skogpunkt 330 moh, fyrste opne 341 moh, 1,3 km ute på ei linje på 3,06 km",
+   "how": "guide_facts.py sin treeline-skann mot Kartverkets terrengklasse."
+  }
+ ],
+ "skolpan": [
+  {
+   "what": "Fallet frå varden i åtte retningar",
+   "figure": "N 27,5° i snitt med 65,2° som brattaste 60 m 30–90 m ut; NØ 24,1° / 69,2° 20–80 m ut; Ø 15,5° / 59,6° 40–100 m ut; SØ 16,6° / 25,6° 650–710 m ut; S 21,9° / 38,5° 30–90 m ut; SV 21,0° / 47,6° 40–100 m ut; V 32,2° / 52,0° 520–580 m ut; NV 6,0° / 35,1° 640–700 m ut",
+   "how": "flank_probe.py frå 69.40883/17.45355, 800 m ut, prøvetatt kvar 10. m i DTM-en."
+  },
+  {
+   "what": "Utgangspunktet",
+   "figure": "parkeringa langs fv. 862 (Bergsfjordvegen) på 69.39319/17.44401 les 170,1 moh og ligg 494 m frå registerpunktet for Krokelvdalen (Dal). Fri Flyt oppgir 580 høgdemeter; lina stig 607",
+   "how": "Trailhead-skanninga mot OSM, DTM1-punkt-API, SSR for Krokelvdalen."
+  },
+  {
+   "what": "Kor det brattaste partiet ligg",
+   "figure": "27,1° mellom 693 og 714 moh, 2,03 km ute på ei linje på 2,31 km — altså 0,28 km før toppen. Fri Flyt: «Mellom 600–740 moh. er det partier som er 27–30 grader»",
+   "how": "steepestStep i guide_facts.json mot kumulativ lengd langs routes.json."
+  },
+  {
+   "what": "Varslingsregionen",
+   "figure": "Sør-Troms, RegionId 3012, RegionType A",
+   "how": "NVEs AvalancheWarningByCoordinates/Simple på toppunktet."
+  }
+ ],
+ "lukttinden": [
+  {
+   "what": "Fallet frå varden i åtte retningar",
+   "figure": "N 25,6° i snitt med 37,2° som brattaste 60 m 70–130 m ut; NØ 19,8° / 63,4° 60–120 m ut; Ø 35,0° / 65,5° 30–90 m ut; SØ 31,3° / 68,8° 20–80 m ut; S 13,3° / 61,3° 50–110 m ut; SV 9,7° / 43,8° 360–420 m ut; V 32,2° / 38,8° 110–170 m ut; NV 22,8° / 33,5° 300–360 m ut",
+   "how": "flank_probe.py frå 65.99044/13.54468, 800 m ut, prøvetatt kvar 10. m i DTM-en."
+  },
+  {
+   "what": "Høgda: ut.no mot Fri Flyt",
+   "figure": "toppsøket løyser 1347,8 moh. ut.no oppgir 1348, Fri Flyt 1342. Kortet ber 1348",
+   "how": "resolve_summits.py på registerpunktet for Lukttinden (Fjell, Vefsn)."
+  },
+  {
+   "what": "Kva alternativ korridoren følgjer, og kva han måler",
+   "figure": "brattaste samanhengande parti 28,1° mellom 633 og 650 moh, 1,88 km ute. ut.nos alternativ 1 er «opptil 40 grader», alternativ 2 «opp i 30 grader»; lina ligg innanfor alternativ 2",
+   "how": "steepestStep i guide_facts.json mot kumulativ lengd langs routes.json."
+  },
+  {
+   "what": "Det siste henget: kjelda og lina er ikkje samde",
+   "figure": "ut.no skildrar «et nytt bratt heng på ca 35 grader for å nå toppen». Den rutede lina måler ingen stad 35°: høgaste beltet, 1300–1400 moh, held 18,5° og brattaste samanhengande parti på heile turen er 28,1° lenger nede",
+   "how": "bands() og steepestStep på den ferdige lina. Avviket er notert i guiden."
+  },
+  {
+   "what": "Utgangspunktet",
+   "figure": "vegenden på Kamvegen, 66.01680/13.51377, les 230,5 moh. ut.no: «Fra parkering ved gården på Kammen har du vel 1100 høydemeter foran deg»; lina stig 1129",
+   "how": "Trailhead-skanninga mot OSM og DTM1-punkt-API."
+  },
+  {
+   "what": "Varslingsregionen",
+   "figure": "Helgeland, RegionId 3018, RegionType A",
+   "how": "NVEs AvalancheWarningByCoordinates/Simple på toppunktet."
+  }
+ ],
+ "tortenviktinden": [
+  {
+   "what": "Fallet frå varden i åtte retningar",
+   "figure": "N 43,3° i snitt med 62,2° som brattaste 60 m 80–140 m ut; NØ 33,3° / 68,3° 50–110 m ut; Ø 22,2° / 49,2° 160–220 m ut; SØ 15,3° / 33,0° 40–100 m ut; S 24,6° / 43,7° 250–310 m ut; SV 19,2° / 56,0° 200–260 m ut; V 11,9° / 45,4° 130–190 m ut; NV 35,2° / 60,0° 230–290 m ut",
+   "how": "flank_probe.py frå 66.34217/13.23361, 800 m ut, prøvetatt kvar 10. m i DTM-en."
+  },
+  {
+   "what": "Utgangspunktet og dei to kjeldene sine tal",
+   "figure": "garden Neset 66.32307/13.33398 les 15,0 moh, 4,94 km frå toppen i luftline. Lina måler 5,40 km og 1 018 høgdemeter; Fri Flyt oppgir 1000, Visit Helgeland 5,2 km og 1 025 m",
+   "how": "OSM-oppslag på Neset, DTM1-punkt-API, kumulativ lengd langs routes.json."
+  },
+  {
+   "what": "Kommunane",
+   "figure": "registeret set Tortenviktinden (Fjell) i Lurøy; Flostrand og Neset ligg i Rana",
+   "how": "SSR-oppslag på begge namna."
+  },
+  {
+   "what": "Grøveldalen",
+   "figure": "Grøveldalen (Botn) 66.31998/13.23767, 2,5 km sør for varden — utanfor ruta. Fri Flyts faremoment gjeld denne dalen",
+   "how": "SSR-oppslag, haversine frå toppunktet."
+  },
+  {
+   "what": "Kor det brattaste partiet ligg",
+   "figure": "24,8° mellom 971 og 990 moh, 5,22 km ute på ei linje på 5,40 km — altså under 200 m før varden. Det flate ulendte partiet kjelda skildrar er beltet 700–800 moh, som måler 7,8° over 674 m grunn",
+   "how": "steepestStep og bands() i guide_facts.json mot kumulativ lengd langs routes.json."
+  },
+  {
+   "what": "Varslingsregionen",
+   "figure": "Svartisen, RegionId 3017, RegionType A",
+   "how": "NVEs AvalancheWarningByCoordinates/Simple på toppunktet."
+  },
+  {
+   "what": "Skoggrensa",
+   "figure": "siste skogpunkt 152 moh, fyrste opne 158 moh, 1,66 km ute på ei linje på 5,40 km",
+   "how": "guide_facts.py sin treeline-skann mot Kartverkets terrengklasse."
+  }
  ]
 }

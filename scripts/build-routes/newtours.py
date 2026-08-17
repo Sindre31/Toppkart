@@ -127,4 +127,10 @@ NEW_TOURS = {
     "tomskjevelen": ("Tomskjevelen", "Helgeland"),
     "tredje-svanfjell": ("Tredje Svanfjell", "Senja"),
     "husfjellet": ("Husfjellet", "Senja"),
+    # — fem-rute-runden: resten av Fri Flyts Senja-indeks og dei to byggbare
+    #   namna på Helgeland-indeksen. Ingen nye regionar. —
+    "lonketind": ("Lonketinden", "Senja"),
+    "skolpan": ("Skolpan", "Senja"),
+    "lukttinden": ("Lukttinden", "Helgeland"),
+    "tortenviktinden": ("Tortenviktinden", "Helgeland"),
 }

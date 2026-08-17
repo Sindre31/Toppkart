@@ -5719,37 +5719,291 @@
     "waypoints": [
      {
       "name": "Dronningstien mot Grillbua",
-      "lat": 69.449,
-      "lng": 17.294,
-      "elevation_m": 38.0
+      "lat": 69.44746,
+      "lng": 17.30093,
+      "elevation_m": 39.6
      },
      {
       "name": "skogstraséen",
-      "lat": 69.454,
-      "lng": 17.289,
-      "elevation_m": 239.0
+      "lat": 69.45006,
+      "lng": 17.30282,
+      "elevation_m": 139.0
+     },
+     {
+      "name": "over skoggrensa",
+      "lat": 69.45304,
+      "lng": 17.29772,
+      "elevation_m": 247.2
      },
      {
       "name": "Sommerdalen",
-      "lat": 69.459,
-      "lng": 17.284,
-      "elevation_m": 277.0
+      "lat": 69.45516,
+      "lng": 17.29428,
+      "elevation_m": 298.4
      },
      {
-      "name": "ryggen over Sommerdalhaugen",
-      "lat": 69.463,
-      "lng": 17.28,
-      "elevation_m": 417.0
+      "name": "Sommerdalhaugen",
+      "lat": 69.46062,
+      "lng": 17.28715,
+      "elevation_m": 327.6
+     },
+     {
+      "name": "ryggen ved 395",
+      "lat": 69.46248,
+      "lng": 17.28106,
+      "elevation_m": 395.3
+     },
+     {
+      "name": "ryggen ved 477",
+      "lat": 69.46519,
+      "lng": 17.2774,
+      "elevation_m": 476.8
      },
      {
       "name": "ryggen mot toppen",
-      "lat": 69.467,
-      "lng": 17.276,
-      "elevation_m": 432.0
+      "lat": 69.46765,
+      "lng": 17.27164,
+      "elevation_m": 578.2
      }
     ],
-    "source": "researched, verified (ok), no local audit",
+    "source": "researched, verified (ok), corridor pinned to the mapped Dronningstien chain, no local audit",
     "notes": "Fri Flyt: KAST 1 – Enkelt, brattaste punkt under 27 grader, faremoment «Skavler». Hans eigne åtvaringar: utløpsområde opp mot Litje Brusen og Store Brusen, siste egga mot toppunktet ofte avblåse med bratte sider på begge kantar, hengeskavler på ryggen mot nord, og «Ikke la deg friste å velge annen rute ned fra toppen. Utsatt terreng.» Læringspunktet hans er å leggja spor under 25–30 grader og lesa utløpsområda gjennom Sommerdalen."
+   }
+  ]
+ },
+ "lonketind": {
+  "routes": [
+   {
+    "id": "normalruta",
+    "name": "Normalruta frå Finnelva",
+    "description": "Frå vegenden ved vassbassenget ved Finnelva over det flate myrterrenget, opp ryggen mot Lonketuva og vidare nordover toppryggen som gradvis blir brattare, til varden",
+    "trailhead": {
+     "name": "Finnelva",
+     "lat": 69.08012,
+     "lng": 16.95414,
+     "elevation_m": 65.9,
+     "fullName": "Finnelva"
+    },
+    "waypoints": [
+     {
+      "name": "myra ved Finnelva",
+      "lat": 69.0806,
+      "lng": 16.946,
+      "elevation_m": 111.5
+     },
+     {
+      "name": "skogkanten",
+      "lat": 69.0811,
+      "lng": 16.938,
+      "elevation_m": 150.1
+     },
+     {
+      "name": "ryggfoten mot Lonketuva",
+      "lat": 69.08151,
+      "lng": 16.92681,
+      "elevation_m": 361.3
+     },
+     {
+      "name": "toppryggen ved 424",
+      "lat": 69.085,
+      "lng": 16.9245,
+      "elevation_m": 424.1
+     },
+     {
+      "name": "det korte bratte ved 565",
+      "lat": 69.088,
+      "lng": 16.9245,
+      "elevation_m": 565.6
+     },
+     {
+      "name": "toppryggen ved 686",
+      "lat": 69.091,
+      "lng": 16.9245,
+      "elevation_m": 686.8
+     },
+     {
+      "name": "toppryggen ved 756",
+      "lat": 69.0925,
+      "lng": 16.921,
+      "elevation_m": 756.7
+     },
+     {
+      "name": "siste flata",
+      "lat": 69.094,
+      "lng": 16.9175,
+      "elevation_m": 826.1
+     }
+    ],
+    "source": "researched, verified, no local audit",
+    "notes": "Fri Flyt: KAST 1 – Enkelt, brattaste punkt «30-35 grader (kort parti)», faremoment «Skavler», beste sesong februar–mai, 3–4 timar, himmelretning S-Ø. Ruta hans: flatt myrterreng, så oppstigninga langs ryggen mot Lonketuva med parti på 27–30 grader, deretter toppryggen som gradvis blir brattare, eit kort parti på 30–35 grader rundt 550 moh, og flatare mot toppen. «Vær obs på skavler på toppryggen.»"
+   }
+  ]
+ },
+ "skolpan": {
+  "routes": [
+   {
+    "id": "normalruta",
+    "name": "Normalruta frå Krokelvdalen",
+    "description": "Frå parkeringa langs fv. 862 i Krokelvdalen jamt stigande opp gjennom småskogen, over flata på 500 moh og så nordvestover inn på ryggen til toppen",
+    "trailhead": {
+     "name": "Krokelvdalen",
+     "lat": 69.39319,
+     "lng": 17.44401,
+     "elevation_m": 170.1,
+     "fullName": "Krokelvdalen"
+    },
+    "waypoints": [
+     {
+      "name": "småskogen",
+      "lat": 69.3962,
+      "lng": 17.447,
+      "elevation_m": 255.9
+     },
+     {
+      "name": "over skoggrensa",
+      "lat": 69.3995,
+      "lng": 17.4505,
+      "elevation_m": 397.6
+     },
+     {
+      "name": "flata ved 465",
+      "lat": 69.4025,
+      "lng": 17.454,
+      "elevation_m": 465.3
+     },
+     {
+      "name": "inn mot ryggen",
+      "lat": 69.405,
+      "lng": 17.457,
+      "elevation_m": 578.8
+     },
+     {
+      "name": "ryggen ved 686",
+      "lat": 69.407,
+      "lng": 17.4565,
+      "elevation_m": 685.5
+     }
+    ],
+    "source": "researched, verified, no local audit",
+    "notes": "Fri Flyt: KAST 1 – Enkelt, brattaste punkt 27-30 grader, faremoment «Noen små litt bratte», beste sesong februar–mai, 3–4 timar, himmelretning S-Ø. Ruta hans: jamt stigande småkupert terreng med litt småskog i byrjinga; «Det finnes noen små heng oppover som er 30–40 grader, så les terrenget godt slik at du unngår disse»; frå 500 moh flatar det ut og sporet dreier mot nordvest inn på ryggen; mellom 600–740 moh parti på 27–30 grader."
+   }
+  ]
+ },
+ "lukttinden": {
+  "routes": [
+   {
+    "id": "normalruta",
+    "name": "Normalruta frå Kammen",
+    "description": "Frå vegenden ved garden på Kammen, opp traktorvegen og vidare i sør-søraustleg retning opp dalen mot bekken, så den slakare ryggen frå aust opp på ryggkammen og rett opp til toppen",
+    "trailhead": {
+     "name": "Kammen",
+     "lat": 66.0168,
+     "lng": 13.51377,
+     "elevation_m": 230.5,
+     "fullName": "Kammen"
+    },
+    "waypoints": [
+     {
+      "name": "traktorvegen",
+      "lat": 66.01414,
+      "lng": 13.51684,
+      "elevation_m": 298.6
+     },
+     {
+      "name": "skogen mot bekken",
+      "lat": 66.01147,
+      "lng": 13.5199,
+      "elevation_m": 366.2
+     },
+     {
+      "name": "bekken ved 440",
+      "lat": 66.0088,
+      "lng": 13.52297,
+      "elevation_m": 441.5
+     },
+     {
+      "name": "ryggen frå søraust",
+      "lat": 66.00614,
+      "lng": 13.52603,
+      "elevation_m": 487.2
+     },
+     {
+      "name": "ryggkammen ved 720",
+      "lat": 66.00348,
+      "lng": 13.5291,
+      "elevation_m": 623.1
+     },
+     {
+      "name": "ryggen ved 910",
+      "lat": 65.99814,
+      "lng": 13.53523,
+      "elevation_m": 910.8
+     },
+     {
+      "name": "ryggen ved 1200",
+      "lat": 65.99282,
+      "lng": 13.54136,
+      "elevation_m": 1200.7
+     }
+    ],
+    "source": "researched, verified, no local audit",
+    "notes": "Fri Flyt: KAST ikkje klassifisert, ingen bratthetsfelt. «Toppen av Lukttinden er ikke omkranset av bre og er dermed en teknisk enklere tur enn Okstindene.» Ruta hans: traktorvegen 300–400 m frå parkeringa, så opp til venstre i retning sør-søraust rett mot toppen. ut.no fører same fjellet som skitur (TOUGH, 5 092 m, apr–jun) og er langt meir detaljert: frå bekken ca 400 moh mellom Nordtinden og Lukttinden er det to alternativ opp på ryggen — alternativ 1 rett opp det bratte henget «med opptil 40 grader helning», alternativ 2 «følge dalen litt videre inn mot sørøst og så følge den noe mindre bratte ryggen opp til høyre, som er en vanlig rute sommerstid… opp i 30 grader». Korridoren er lagd på alternativ 2. Vidare: «Vel oppe på ryggen er du på ca 720 moh… Følg ryggen rett opp. Unngå å gå på kanten til høyre (SV), her er det stupbratt. Det er jevnt bratt oppover, mellom ca 20-30 grader, før du på slutten må gjennom et nytt bratt heng på ca 35 grader for å nå toppen. Her er det ofte ganske isete.» Og: «Vær obs på skavlen som dannes på nordøstsiden av varden… Det er stup på begge sider.»"
+   }
+  ]
+ },
+ "tortenviktinden": {
+  "routes": [
+   {
+    "id": "normalruta",
+    "name": "Normalruta frå Neset",
+    "description": "Frå Neset ved Flostrand rett opp til over skoggrensa i nord-nordvestleg retning, så vestover på rabbane over det flate, ulendte partiet og opp den slake helninga til toppen",
+    "trailhead": {
+     "name": "Neset",
+     "lat": 66.32307,
+     "lng": 13.33398,
+     "elevation_m": 15.0,
+     "fullName": "Neset"
+    },
+    "waypoints": [
+     {
+      "name": "opp mot skoggrensa",
+      "lat": 66.32497,
+      "lng": 13.32397,
+      "elevation_m": 77.4
+     },
+     {
+      "name": "over skogen",
+      "lat": 66.32688,
+      "lng": 13.31396,
+      "elevation_m": 127.4
+     },
+     {
+      "name": "rabbane vestover",
+      "lat": 66.33068,
+      "lng": 13.29394,
+      "elevation_m": 214.7
+     },
+     {
+      "name": "det flate ulendte partiet",
+      "lat": 66.33258,
+      "lng": 13.28392,
+      "elevation_m": 325.4
+     },
+     {
+      "name": "mot det høgaste punktet du ser",
+      "lat": 66.33639,
+      "lng": 13.2639,
+      "elevation_m": 646.6
+     },
+     {
+      "name": "siste slake helninga",
+      "lat": 66.3402,
+      "lng": 13.24388,
+      "elevation_m": 839.3
+     }
+    ],
+    "source": "researched, verified, no local audit",
+    "notes": "Fri Flyt: KAST ikkje klassifisert. Faremoment: «Grøveldalen har høye og bratte sva på begge sider som kan løsne, særlig om våren.» Ruta hans: frå parkeringa rett opp til over skogen i nord-nordvestleg retning, så vestover på rabbane til du naturleg svingar mot toppen; etter skogen kjem eit flatare parti som er noko ulendt med små bekkedalar på tvers; toppen ligg rett bak det høgaste punktet du ser. Visit Helgeland fører same ruta med 5,2 km, 1 025 høgdemeter og 3–4 timar éin veg, graden «Challenging, long», og ei alternativ rute på 4,3 km og 1 005 høgdemeter med brattare oppstigning."
    }
   ]
  }

@@ -3628,6 +3628,118 @@ blind, so the first run after a routed-but-unpublished tour exists died on a
 `KeyError` — Husfjellet, deliberately unpublished since the round that built it.
 `emit_ts.py` already skips those by design; this pass now agrees.
 
+## The five-route round: Senja's index finished, Helgeland's opened, and a corridor unblocked
+
+**104 → 110.** Five tours, no new regions: the rest of Fri Flyt's Senja index and
+the two buildable names on its Helgeland index. Four are new to the pipeline;
+the fifth had been routed for two rounds and could not ship.
+
+| tour | region | gain | length | steepest step | source's own figure |
+|---|---|---|---|---|---|
+| Husfjellet | Senja | 640 m | 3,29 km | 19,6° | «Under 27 grader» |
+| Lonketinden | Senja | 784 m | 3,06 km | 30,0° | «30-35 grader (kort parti)» |
+| Skolpan | Senja | 607 m | 2,31 km | 27,1° | «27-30 grader» |
+| Lukttinden | Helgeland | 1129 m | 3,99 km | 28,1° | ut.no «opp i 30 grader» (alt. 2) |
+| Tortenviktinden | Helgeland | 1018 m | 5,40 km | 24,8° | — (ingen kjelde gir tal) |
+
+Every line lands inside the figure its own source publishes. That is the point
+of the table: three of the five sources state a steepness, and the router was
+not told any of them.
+
+### Husfjellet: the tour that contradicted its source for two rounds
+
+Husfjellet has been researched, corridored and routed since the Senja round, and
+`emit_ts.py` left it out by design, because the line disagreed with the page it
+was built from. Fri Flyt gives «Bratteste punkt: Under 27 grader»; the routed
+line had a 33,7° step at 624 m out and a **38,1° drop** at 2 702 m, where it cut
+across a gully instead of holding the ridge. The README's standing note said the
+corridor needed pinning along the real Dronningstien.
+
+It does exist in OSM, as a chain of three ways from the church at Skaland to the
+cairn, and a Dijkstra pass over the path-node graph reproduces the published
+route end to end: nearest node 59 m from the trailhead, 5 m from the summit, and
+a sample at **327,6 moh** where Fri Flyt names «Sommerdalhaugen 327 moh». The
+corridor is pinned to that chain. The line now measures **19,6°** as its
+steepest sustained stretch — inside the source at last — and the tour ships.
+
+### Lonketinden: the measurement landed on the sentence
+
+Fri Flyt writes «Rundt 550 moh. er det et kort parti som er 30–35 grader». The
+routed line's steepest sustained stretch is **30,0° between 564 and 588 moh**.
+Neither number was available to the other: the source is a guidebook author's
+prose and the line is a least-cost path over DTM1. Skolpan did the same thing —
+«Mellom 600–740 moh. er det partier som er 27–30 grader», measured 27,1° between
+693 and 714 moh.
+
+The trailhead corroborates too. «Vannbassenget ved Finnelva» resolves to the
+highest road end in the valley at 65,9 moh, and 848 − 66 = 782 against Fri Flyt's
+«785 høydemeter» — the published vertical points at exactly that start.
+
+### Lukttinden: two published ways up, and the corridor takes the gentler
+
+This is the one where the second source is much stricter than the first. Fri Flyt
+gives no steepness field at all and sells the tour as the easy alternative to
+Okstindene («ikke omkranset av bre»). ut.no publishes it as a **ski tour** with a
+logged track and says «På grunn av bratthet bør den ikke gåes ved skredfare»,
+then splits the ascent in two: alternative 1, his own drawn line, «ganske bratt,
+med opptil **40 grader** helning»; alternative 2, «den noe mindre bratte ryggen
+opp til høyre… opp i 30 grader».
+
+The corridor follows alternative 2, and the finished line measures 28,1° —
+inside the gentler alternative and well under the steeper one. Two further things
+from that page are in the guide because no other source carries them: the cornice
+«som dannes på nordøstsiden av varden… Skavler bryter 45 grader i snøen og kan
+dra deg med selv om du står på fast grunn», which the NE sweep confirms at 63,4°
+in its steepest 60 m only 60–120 m out behind a 19,8° mean; and the height, where
+**ut.no's 1348 beats Fri Flyt's 1342** — the summit search resolves 1347,8.
+
+**One disagreement is left standing rather than smoothed.** ut.no describes a
+final slope «på ca 35 grader for å nå toppen», often icy. The routed line finds
+35° nowhere: the top band measures 18,5° and the tour's steepest stretch is 28,1°
+lower down. The guide says so in both languages. A source that has walked the
+mountain and a line that is computed do not have to agree, and where they do not,
+the honest move is to print both.
+
+### Tortenviktinden: sea level to a thousand metres
+
+1018 m of ascent over 5,40 km from the farm Neset, against Visit Helgeland's
+1 025 m over 5,2 km — the closest independent corroboration in the round. The
+register puts the summit in **Lurøy** while the approach from Flostrand is in
+**Rana**. Fri Flyt's only named hazard, Grøveldalen's «høye og bratte sva på
+begge sider», is a registered cirque 2,5 km south of the cairn and off the route;
+the guide says which. The flat broken shelf the source describes is the 700–800 m
+band at 7,8° over 674 m of ground.
+
+### What is declared rather than assumed
+
+- **Seasons.** Three are published: Fri Flyt's «Februar - mai» for Husfjellet,
+  Lonketinden and Skolpan. Lukttinden's apr–jun is ut.no's own ski-tour season.
+  **Tortenviktinden has none** — Fri Flyt only notes that the coastal position
+  makes it unstable, and Visit Helgeland says winter with the alternative «after
+  Easter» — so its feb–mai is editorial and the guide says so.
+- **Second sources are uneven, and the records say so.** Lukttinden and
+  Tortenviktinden have genuinely independent ones (ut.no's ski tour; Visit
+  Helgeland's route with figures). Lonketinden and Skolpan do **not**: Fri Flyt
+  publishes Lonketinden at two addresses and both rest on Espen Nordahl's
+  *Toppturer i Troms*, and Peakbook corroborates only Skolpan's height. Both ship
+  at `confidence: medium` on the same footing as Tredje Svanfjell, and both
+  guides state the limitation.
+- **Verticals.** Fri Flyt's «785 høydemeter» for Husfjellet is more than the
+  mountain is tall; the card carries the routed 640. Skolpan's published 580
+  against a routed 607 is recorded too.
+
+### A false positive in `check_ground.py`, and a real finding under it
+
+The trail check fired on Vestre Istinden earlier this round because the guide
+calls the mountain «lande**merket** i Indre Troms» and `TRAIL_WORDS` allowed any
+compound prefix in front of every trail word. That prefix rule is correct for
+*lysløypa* and *skiløypa* — it exists because the check once missed exactly those
+— and wrong for *merket*, where a prefix replaces the noun rather than narrowing
+it. The words are now split into a compound-taking group and a stand-alone group,
+with a twelve-case table covering both directions including *varemerket* and
+*kjennemerket*. Rødtinden's genuine lysløype claim and Varden's disclosure note
+both still behave.
+
 ## Network
 
 Everything is public and unauthenticated:
