@@ -1327,6 +1327,11 @@
    "what": "check_ground sitt løypefunn, lese og lagt til sides",
    "figure": "Funnet «says Lysløypa ... line strays 367 m from it (3958 m out), with 519 m of 5046 beyond 250 m» gjeld øvre flanken og eidet — der guiden ikkje hevdar noka løype. Løypepåstanden i guiden dekkjer berre den fyrste kilometeren langs Karlsvatnet, der lina ligg på den kartlagde Damveien (piste:type=nordic), og guiden seier eksplisitt at lina «forlèt løypa før vatnet». Midtitinden-varianten av same sjekk klassifiserer seg sjølv som note når stien ikkje når begge endane; her spenner ein sti-kjede tilfeldigvis profilen, og sjekken kan ikkje sjå at påstanden er delvis",
    "how": "check_ground.py over lina; lesen mot guideteksten og OSM-geometrien til Damveien."
+  },
+  {
+   "what": "Kor lina skil lag med den kartlagde stien til toppen",
+   "figure": "OSM way/544369056 (highway=path, ingen piste-tagg, ingen vinterstatus) når både utgangspunktet (3 m) og toppen (94 m). Lina held seg under 50 m frå kartlagd grunn det meste av dei fyrste 3,3 km, skil lag mellom 3,87 og 4,34 km ute med 367 m som største avstand, og er attende 39 m frå stien på 602 moh 4,81 km ute. 519 m av 5 046 ligg meir enn 250 m frå kartlagd sti. I sjiktet 330–470 moh måler stiens brattaste 30 m-steg 20,8 grader og linas 24,9",
+   "how": "check_ground.py mot Overpass; avstandane med haversine mot alle nodane i ground-cachen, høgdene langs stien lesne av same DTM-flisa som ruta."
   }
  ],
  "midtitinden": [

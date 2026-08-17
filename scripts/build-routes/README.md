@@ -3463,6 +3463,26 @@ same card's `verticalM` said 820 where the line gains 825 — the teaser had
 already been corrected to 825, so the card was contradicting itself — and
 `lib/tours.ts`, `tourmeta.json` and `seed.sql` now all read 825.
 
+Making that guide visible is what surfaced the round's last finding, and it is
+worth writing down because it is the shape `check_ground.py` exists for.
+Varden's copy names «Lysløypa», and OSM has a path reaching both the trailhead
+(3 m) and the summit (94 m), so the trail check enforced the claim over the
+whole line and reported the line straying **367 m** from mapped ground. Traced,
+it is not the lysløype at all: the way that reaches the summit is
+`way/544369056`, a bare `highway=path` with no piste tag and no winter status —
+a summer footpath. The guide's only trail claim is the approach, and it already
+says the line leaves the løype before the lake.
+
+The line is nonetheless off mapped ground for 519 m of 5 046, between 3,87 and
+4,34 km out, rejoining the path 39 m away at 602 moh. That is not a defect —
+a ski line and a footpath are allowed to differ — but it is not nothing either,
+and the honest thing is the one the Høgevarde precedent established: say the
+number out loud. Both languages now state where the two part, by how much, and
+that through the 330–470 m band the footpath is the *gentler* of the two (its
+steepest thirty-metre step measures 20,8° against the line's 24,9°). The check
+reads that disclosure and downgrades the finding to a note, which is the
+mechanism working as designed rather than being worked around.
+
 Every finding above is fixed in both languages, with the research records
 corrected alongside, and `check_guides.py`, `check_bands.py`,
 `test_check_guides.py`, `check_ground.py` and the CI suite all come back clean.
