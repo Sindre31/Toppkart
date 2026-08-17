@@ -5253,5 +5253,137 @@
     "notes": "Fri Flyt: brattaste punkt under 30 grader på normalvegen, S-SØ-vend. Sida er solvend — dagleg oppmjuking og gjenfrysing utover våren. Fri Flyt skildrar fleire nedfartsvariantar frå lett til krevjande (søraustflankane, austover mot 627-vatnet, nordover mot Stordalen på 450); normalvegen ned er same veg som opp, og variantane er ikkje korridoren."
    }
   ]
+ },
+ "fastdalstinden": {
+  "routes": [
+   {
+    "id": "varto",
+    "name": "Normalruta I frå Varto",
+    "description": "Frå vegenden av Vardoveien på Varto (115 moh) etter anleggsvegen opp til dammen på Rottenvikvatnet, på land langs vest- og nordsida av magasinet, opp på flata på 650 moh, vestover nord for det vesle vatnet, opp den vesle ryggformasjonen og rett mot toppen",
+    "trailhead": {
+     "name": "Varto",
+     "lat": 69.60261,
+     "lng": 20.25868,
+     "elevation_m": 123.0,
+     "fullName": "Varto"
+    },
+    "waypoints": [
+     {
+      "name": "anleggsvegen",
+      "lat": 69.6052,
+      "lng": 20.235,
+      "elevation_m": 465.8
+     },
+     {
+      "name": "anleggsvegen øvre",
+      "lat": 69.6065,
+      "lng": 20.222,
+      "elevation_m": 534.2
+     },
+     {
+      "name": "dammen, austenden",
+      "lat": 69.6075,
+      "lng": 20.214,
+      "elevation_m": 516.7
+     },
+     {
+      "name": "sør for vatnet",
+      "lat": 69.6048,
+      "lng": 20.205,
+      "elevation_m": 530.9
+     },
+     {
+      "name": "vestbredda på land",
+      "lat": 69.609,
+      "lng": 20.188,
+      "elevation_m": 566.2
+     },
+     {
+      "name": "nordvestbredda",
+      "lat": 69.6135,
+      "lng": 20.189,
+      "elevation_m": 572.4
+     },
+     {
+      "name": "nordenden av vatnet",
+      "lat": 69.6165,
+      "lng": 20.194,
+      "elevation_m": 588.9
+     },
+     {
+      "name": "flata på 650",
+      "lat": 69.616,
+      "lng": 20.19,
+      "elevation_m": 649.7
+     },
+     {
+      "name": "nord for det vesle vatnet",
+      "lat": 69.6155,
+      "lng": 20.175,
+      "elevation_m": 696.8
+     },
+     {
+      "name": "ryggformasjonen",
+      "lat": 69.619,
+      "lng": 20.17,
+      "elevation_m": 814.8
+     },
+     {
+      "name": "ryggen ved 1070",
+      "lat": 69.624,
+      "lng": 20.168,
+      "elevation_m": 1069.7
+     }
+    ],
+    "source": "researched, verified (corrected), no local audit",
+    "notes": "Fri Flyt: KAST 2 – Utfordrende, brattaste punkt 25–30 grader på normalruta, faremoment «utløpsområder og skavler». Sørsida — nedfartsvarianten på 35–45 grader — «har vært skuddpunkt for dødelige skredulykker» og er ikkje korridoren. Normalruta II er eksponert for løysneområde ovanfrå mellom 700 og 900 moh. Rottenvikvatnet er eit magasin: lina held land rundt vest- og nordsida, og guiden må seia det.",
+    "avoidWater": true,
+    "waterNote": "Rottenvikvatnet er eit magasin (OSM-relasjon 8271819, water=reservoir; terrengklasse InnsjøRegulert, 513,0 moh). Lina ber vannkost og er pinna på land langs vest- og nordsida, slik Fri Flyts normalrute seier."
+   }
+  ]
+ },
+ "togga": {
+  "routes": [
+   {
+    "id": "brandhaugane",
+    "name": "Normalvegen frå Brandhaugane opp søraustryggen",
+    "description": "Frå toppturparkeringa ved rv5 på Brandhaugane (426 moh) opp søraustryggen gjennom skogen, gjennom det brattare partiet over skoggrensa, ut på flata ved Orraleiken (1042 moh), og siste stigninga til Togga",
+    "trailhead": {
+     "name": "Brandhaugane",
+     "lat": 61.3245,
+     "lng": 6.9265,
+     "elevation_m": 427.04,
+     "fullName": "Brandhaugane"
+    },
+    "waypoints": [
+     {
+      "name": "søraustryggen i skogen",
+      "lat": 61.328,
+      "lng": 6.918,
+      "elevation_m": 542.22
+     },
+     {
+      "name": "det brattare partiet",
+      "lat": 61.33,
+      "lng": 6.91,
+      "elevation_m": 743.67
+     },
+     {
+      "name": "Orraleiken",
+      "lat": 61.3321,
+      "lng": 6.90093,
+      "elevation_m": 1042.34
+     },
+     {
+      "name": "siste stigninga",
+      "lat": 61.334,
+      "lng": 6.896,
+      "elevation_m": 1155.36
+     }
+    ],
+    "source": "researched, verified (corrected), no local audit",
+    "notes": "Fri Flyt: brattaste punkt 33–35 grader, og skredåtvaringa gjeld normalvegen sjølv: skiløparar har løyst ut skred i det brattare partiet på søraustryggen under opptur i ustabile forhold. Seks nedfartar hos Fri Flyt (søraust, sør ×2, nord, aust ×2) — normalvegen opp og ned er korridoren."
+   }
+  ]
  }
 }

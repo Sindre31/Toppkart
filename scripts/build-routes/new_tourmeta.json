@@ -1844,5 +1844,50 @@
    "«Brattest punkt under 30 grader» er Fri Flyts eige tal for normalvegen; målinga av den løyste lina avgjer kortet."
   ],
   "notes": ""
+ },
+ "fastdalstinden": {
+  "season": "jan–mai",
+  "aspect": "SØ",
+  "grade": 2,
+  "gradeReason": "",
+  "roadClosedInWinter": false,
+  "teaserNo": "",
+  "teaserEn": "",
+  "hazardNotes": "Fri Flyt: KAST 2 – Utfordrende, brattaste punkt 25–30 grader på normalruta, faremoment «utløpsområder og skavler». Sørsida — nedfartsvarianten på 35–45 grader — «har vært skuddpunkt for dødelige skredulykker» og er ikkje korridoren. Normalruta II er eksponert for løysneområde ovanfrå mellom 700 og 900 moh. Rottenvikvatnet er eit magasin: lina held land rundt vest- og nordsida, og guiden må seia det.",
+  "sources": [
+   "https://www.friflyt.no/topptur/lyngsalpene/turbeskrivelse-fastdalstinden",
+   "https://www.friflyt.no/topptur/skiturer-lyngen"
+  ],
+  "confidence": "medium",
+  "corrections": [
+   "Startstaden «parkeringsplass på Varto» løyser seg gjennom vegnamnet: frå fv7920 Lyngsalpeveien ved Rottenvik tek **Vardoveien** (OSM way/412108701, unclassified, grus) av og klatrar ~1,3 km nordvest til vegenden på 123 moh — Fri Flyts «relativt smal vei ca. 1 km», og registerets Varto (Høyde, 69.61867/20.27861). 1275 − 1160 = 115: Fri Flyts høgdemeter impliserer nett denne starten.",
+   "Anleggsvegen Fri Flyt nemner er kartlagd (track way/1008162591, frå vegenden 69.60355/20.25911 på 127 moh vest til 69.60708/20.21226 på 515) — og han endar ved dammen, for **Rottenvikvatnet er eit magasin**: OSM-relasjon 8271819 ber water=reservoir, og terrengklassen les InnsjøRegulert på 513,0 moh. Lina ber vannkost frå fyrste solvering, og «langs vest- og senere nordsiden av vatnet» er pinna på land: vestbredda 566,2 moh (69.60900/20.18800), nordvestbredda 572,4, nordenden 588,9.",
+   "Resten av Normalruta I reproduserer på terrenget: flata «på 650 moh» les 649,7 på 69.61600/20.19000; det vesle vatnet vest for flata er kartlagd (way/1381316784, ~69.614/20.174) og lina passerer nord for det på 696,8; «en liten ryggformasjon hvor småbratte områder rundt 30 grader krever oppmerksomhet» måler 814,8 → 1069,7 på ryggen mot toppen.",
+   "Normalruta II — den svake ryggen nordover frå flata, eksponert for løysneområde ovanfrå mellom 700 og 900 — er ikkje korridoren; Fri Flyt fører henne som eige alternativ og korridoren følgjer Normalruta I. Sørsidenedfarten (35–45 grader, med kryssing av det regulerte vatnet) er heller ikkje korridoren: Fri Flyt skriv sjølv at «sørsiden har vært skuddpunkt for dødelige skredulykker»."
+  ],
+  "notes": ""
+ },
+ "togga": {
+  "season": "des–mars",
+  "aspect": "SØ",
+  "grade": 3,
+  "gradeReason": "",
+  "roadClosedInWinter": false,
+  "teaserNo": "",
+  "teaserEn": "",
+  "hazardNotes": "Fri Flyt: brattaste punkt 33–35 grader, og skredåtvaringa gjeld normalvegen sjølv: skiløparar har løyst ut skred i det brattare partiet på søraustryggen under opptur i ustabile forhold. Seks nedfartar hos Fri Flyt (søraust, sør ×2, nord, aust ×2) — normalvegen opp og ned er korridoren.",
+  "sources": [
+   "https://www.friflyt.no/topptur/skiturer-sogn/turbeskrivelse-togga-1205",
+   "https://ut.no/turforslag/116454",
+   "https://www.friflyt.no/topptur/skiturer-sogn/topptur-i-sogndal"
+  ],
+  "confidence": "medium",
+  "corrections": [
+   "Registerbolkens gamle toppløysing sto 280 m vest for namnet på 1235,5 moh — ein kul på ryggen som stig vidare vest-sørvest utan skar (1282,5 på 590 m, 1354,0 på 990 m, 1438,6 på 2,2 km). Togga er Rødtinden-forma: eit namngjeve punkt på ein samanhengande rygg, og resolve_summits ber no SUMMIT_CAP_M['togga']=150 med grunngjeving. Kappa løyser toppen til 1203,8 på 61.33505/6.89289 — registerpunktet les 1202,6, Fri Flyt publiserer 1205.",
+   "Startstaden «toppturparkering på Brandhaugadn» løyser seg: registeret har Brandhaugane (Haug, 61.32502/6.92702, 426,1 moh i skogen), rv5 Fjærlandsvegen (way/386115960) passerer rett aust, og 1205 − 785 = 420 — Fri Flyts høgdemeter impliserer nett denne starten.",
+   "Orraleiken, der «terrenget flater ut», er registerført (Haug, 61.33210/6.90093) og les 1042,3 moh i ope terreng. Søraustryggen frå parkeringa dit reproduserer: 542 i skogen, 744 i det brattare partiet, 1042 på flata, 1155 på siste stigninga.",
+   "Fri Flyts eiga skredåtvaring gjeld opptursruta: «på søraustryggen (normalvegen) er det eit brattare parti der skiløparar har utløyst snøskred under opptur når det er ustabile snøforhold» — det brattare partiet mellom skoggrensa og Orraleiken, og guiden må bera setninga. Nedfartsvariantane (sørsida, nordsida, austsida — seks i alt hos Fri Flyt) er ikkje korridoren."
+  ],
+  "notes": ""
  }
 }

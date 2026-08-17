@@ -593,11 +593,11 @@
   },
   "togga": {
     "name": "Togga",
-    "lat": 61.33446,
-    "lng": 6.88793,
-    "summit_dtm": 1235.5,
+    "lat": 61.33505,
+    "lng": 6.89289,
+    "summit_dtm": 1203.8,
     "claims": 1205,
-    "stored_off_km": 0.28
+    "stored_off_km": 0.0
   },
   "storanosi": {
     "name": "Storanosi",
