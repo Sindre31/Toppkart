@@ -3691,7 +3691,9 @@ from that page are in the guide because no other source carries them: the cornic
 «som dannes på nordøstsiden av varden… Skavler bryter 45 grader i snøen og kan
 dra deg med selv om du står på fast grunn», which the NE sweep confirms at 63,4°
 in its steepest 60 m only 60–120 m out behind a 19,8° mean; and the height, where
-**ut.no's 1348 beats Fri Flyt's 1342** — the summit search resolves 1347,8.
+**ut.no's 1348 beats Fri Flyt's 1342** — the summit search resolves 1347,8, and
+`peaks.py` carries 1348 as the expected height so the resolver stops reporting a
++5,8 m delta against the figure this round had already found to be the weaker.
 
 **One disagreement is left standing rather than smoothed.** ut.no describes a
 final slope «på ca 35 grader for å nå toppen», often icy. The routed line finds

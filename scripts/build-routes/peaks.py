@@ -261,6 +261,10 @@ PEAKS = [
     #   «Lunketind» once in the body. —
     ("lonketind", "Lonketinden", ["Senja"], 848, 69.09398, 16.91556),
     ("skolpan", "Skolpan", ["Senja"], 779, 69.40883, 17.45355),
-    ("lukttinden", "Lukttinden", ["Vefsn"], 1342, 65.99044, 13.54468),
+    # Lukttinden's expected height is ut.no's 1348, not Fri Flyt's 1342: the
+    # summit search resolves 1347,8 on the register point, and the card carries
+    # 1348. Leaving 1342 here made the resolver report a +5,8 m delta against a
+    # figure this round had already found to be the weaker of the two.
+    ("lukttinden", "Lukttinden", ["Vefsn"], 1348, 65.99044, 13.54468),
     ("tortenviktinden", "Tortenviktinden", ["Lurøy"], 1027, 66.34217, 13.23361),
 ]
