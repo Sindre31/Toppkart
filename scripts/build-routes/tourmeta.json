@@ -131,6 +131,17 @@
   "season": "jan–apr",
   "hasGuide": true
  },
+ "tredje-svanfjell": {
+  "name": "Tredje Svanfjell",
+  "region": "Senja",
+  "summitM": 899,
+  "verticalM": 660,
+  "duration": "3–5 t",
+  "grade": 2,
+  "aspect": "V",
+  "season": "des–mai",
+  "hasGuide": false
+ },
  "moysalen": {
   "name": "Møysalen",
   "region": "Vesterålen",
@@ -224,6 +235,17 @@
   "region": "Bodø",
   "summitM": 993,
   "verticalM": 1020,
+  "duration": "4–6 t",
+  "grade": 2,
+  "aspect": "S",
+  "season": "jan–apr",
+  "hasGuide": false
+ },
+ "tomskjevelen": {
+  "name": "Tomskjevelen",
+  "region": "Helgeland",
+  "summitM": 922,
+  "verticalM": 950,
   "duration": "4–6 t",
   "grade": 2,
   "aspect": "S",

@@ -1933,5 +1933,52 @@
    "Ravika-ruta (frå den grøne garasjen, way-nettet ved Ravika Gard 67.12181/14.14939) er skildra fullt hos Fri Flyt, men nedfarten hennar har eit 40-gradersparti (920–840 moh) og oppturen brukar «det eneste snøfeltet/rampen» — ho er ikkje korridoren, og guiden nemner ho som varianten ho er."
   ],
   "notes": ""
+ },
+ "tomskjevelen": {
+  "season": "jan–apr",
+  "aspect": "S",
+  "grade": 2,
+  "gradeReason": "Målinga seier 2 og kortet ber 2 — brattaste hundremetersbeltet 21,8 grader mellom 800 og 900 moh, brattaste 30 m 27,9 — og Fri Flyt publiserer korkje KAST eller brattaste punkt. Alvoret ligg utanfor sporet: frå varden fell alle åtte sektorane 31–44 grader i snitt, med 69,4 som brattaste vindauge mot nordaust, og sesongen er «ustabil med varierende snøforhold».",
+  "roadClosedInWinter": false,
+  "teaserNo": "950 høgdemeter frå åkeren ved Forsland på Tomma: stien til Forslandsvatnet, rundt tjernet på land, og den nordvestgåande ryggen heilt til topps på øyfjellet Fri Flyt kallar Helgelands finaste.",
+  "teaserEn": "950 metres of ascent from the field at Forsland on Tomma: the path to Forslandsvatnet, around the tarn on land, and the north-west ridge all the way up the island mountain Fri Flyt calls Helgeland's finest.",
+  "hazardNotes": "Fri Flyt publiserer korkje KAST eller brattaste punkt; nedkøyringa er austvend, i eit søkk som samlar snø, og sesongen er «ustabil med varierende snøforhold» — kystfjell omgjeve av hav. Falllinja i midtpartiet av ryggen held 32–33 grader målt. Tilkomsten er ferje frå Nesna. Forslandsvatnet og småtjerna ved det er naturlege kysttjern på ~148 moh — lina går rundt på land, målt.",
+  "sources": [
+   "https://www.friflyt.no/topptur/helgeland/tomskjevelen",
+   "https://www.friflyt.no/topptur/helgeland"
+  ],
+  "confidence": "medium",
+  "corrections": [
+   "Registeret skriv **Tommskjevelen** (Fjell, 66.27965/12.83968) — Fri Flyt skriv Tomskjevelen — og registerpunktet står på ein vestknaus som les 756 moh. Sjølve toppen, 920,2 mot publisert 922, ligg 330 m aust på 66.27898/12.84673; den veksande disken med claims-tiebreak finn han (Gullfjellstoppen-mønsteret).",
+   "Starten løyser seg på kartlagd grunn: Forslandsvegen (asfalt, way/580211256) endar ved Forsland (Gard, 66.26764/12.88196, 38,2 moh), og «parker ved åkeren før Forslandsvatnet» er jordet ved stistarten way/788059735 (66.26566/12.87773, ~45 moh). Stinettet vidare er kartlagt: way/788059736 og way/1306863381 opp mot vatnet, way/1306863382 vidare nordvestover — den kartlagde stien går der Fri Flyts rute går.",
+   "Forslandsvatnet er ei naturleg tjern (Tjern i registeret, 148,0 moh, klasse Innsjø) — ikkje regulert — og lina passerer nordsida på land (164,7 på 66.26620/12.86300).",
+   "Den nordvestgåande ryggen reproduserer på DTM1: 155 → 283 → 492 → 656 → 768 → 843 → 884 → 920. Falllinja i midtpartiet held 32–33 grader; sporet sikksakkar slakare, og målinga avgjer kortet — Fri Flyt sjølv publiserer korkje KAST eller brattaste punkt for denne turen.",
+   "Tilkomsten er ferje frå Nesna til Tomma — offentleg bilferje heile året. Det er ein del av turen, ikkje eit brot på vegkravet: vegen startar att på øya, og guiden seier det i klartekst saman med kjeldas eiga setning om ustabil sesong og varierande snøtilhøve.",
+   "check_ground fann fyrste solveringa 135 m ute på Forslandsvatnet (148 moh) — Karlsvatnet-forma om att. Tjerna er naturleg, men 148 moh på ei øy i havet er ikkje is nokon skal føresetja; lina er ompinna langs nordbredda på land (161,2 / 177,4 / 150,2 moh, OSM-relasjon 14756581 som fasit) med vannkost på ruteren, og passerer òg nord for småtjerna og Tinnvatnet."
+  ],
+  "notes": ""
+ },
+ "tredje-svanfjell": {
+  "season": "des–mai",
+  "aspect": "V",
+  "grade": 2,
+  "gradeReason": "Målinga seier 2 og kortet ber 2 — brattaste hundremetersbeltet 23,4 grader mellom 500 og 600 moh, brattaste 30 m 29,9 — i samsvar med Fri Flyts KAST 1 – Enkelt og «under 27 grader» på deira lesing; lina gjev att null høgdemeter. Faremomenta hos kjelda er «ingen spesielle», og alvoret som finst, ligg utanfor sporet: søraustsida fell 56,3 grader på det brattaste 180–240 m frå varden.",
+  "roadClosedInWinter": false,
+  "teaserNo": "660 høgdemeter rett frå parkeringslomma i Kaperdalen: skaret nord for punkt 504, jamt opp til fortoppen på 870, og dei siste 36 metrane til klassikaren på Senja.",
+  "teaserEn": "660 metres of ascent straight from the lay-by in Kaperdalen: the notch north of point 504, steadily up to the foretop at 870, and the last 36 metres to the Senja classic.",
+  "hazardNotes": "Fri Flyt: KAST 1 – Enkelt, brattaste punkt under 27 grader, faremoment «ingen spesielle». Sesongen desember–mai er kjeldas eiga, og han kallar turen «en flott mørketidstur» — desemberlys er si eiga vurdering. Nedfarten er same trasé med variasjonsrom.",
+  "sources": [
+   "https://www.friflyt.no/topptur/senja/tredje-svanfjell",
+   "https://www.friflyt.no/topptur/senja"
+  ],
+  "confidence": "medium",
+  "corrections": [
+   "«Tredje Svanfjell» finst ikkje i registeret — Svanfjella er uformelt nummererte, og registerets Svanfjellet (Fjell, 69.28118/17.431) står 2,2 km søraust på ein annan topp. Fri Flyt publiserer eigen GPS-posisjon for toppunktet (UTM33 594798.7/7689615.18 → 69.29947/17.40356), som les 897,8 i DTM1 mot publisert 898 — den posisjonen er seed i SUMMIT_SEED (Kjølen-regelen), og toppsøket klatra til 898,6.",
+   "Startstaden «parkering langs Fv.232» ber eit utgått vegnummer: vegen gjennom Kaperdalen er i dag fv. 7862 Kaperdalsveien (OSM way/128414118 m.fl.), med fire kartlagde parkeringslommer. Lomma way/655456020 (69.29168/17.34889) les 235,7 moh — og 898 − 660 = 238: Fri Flyts høgdemeter impliserer nett denne.",
+   "Rutas faste punkt reproduserer: «det lille skaret nord for punkt 504» — punktet les 478,7 på 69.29750/17.38000 og skaret 582,4 på 69.29900/17.37800; fortoppen «870 moh» les 862,9 på 69.30100/17.39850, og «cirka 30–40 høydemeter» att til toppen stemmer (898,6 − 862,9 = 36).",
+   "Fri Flyts faktaboks seier himmelretning S-SØ, men normalruta går opp frå Kaperdalen i vest og ned same trasé: køyringa vender vest, og målinga seier V. Kortet ber målinga.",
+   "Fri Flyts faktaboks seier himmelretning S-SØ, men normalruta hans — den einaste han skildrar — går opp frå Kaperdalen i vest og ned same trasé: køyringa vender vest, og målinga seier V. Kortet ber målinga; søraustsida (56,3 grader på det brattaste) er ikkje ei side nokon står på ski på."
+  ],
+  "notes": ""
  }
 }

@@ -3196,6 +3196,97 @@ Nine backlog names remain, all for want of a published ski description. The
 adversarial-read gap counts twelve. Neither source publishes season months;
 both cards borrow jan–apr and both guides say so.
 
+## Round five: Tomskjevelen, and Helgeland on the map
+
+One tour, one new region, and the last empty stretch of coast between
+Trøndelag and Bodø filled. The app goes from 102 tours to 103.
+
+Fri Flyt's Helgeland index carries the sentence the round is built on:
+Tomskjevelen, 922 moh on the island of Tomma, «regnes av mange som
+Helgelands fineste skifjell». The access is a year-round public car ferry
+from Nesna — read as part of the tour, not a breach of the road-start
+condition: the road resumes on the island, Forslandsvegen ends at the farm,
+and the guide says «ferja er ein del av turen» in as many words. (Contrast
+Storsylen, where the rejection was 14 km of *unploughed road*, not scheduled
+public infrastructure.)
+
+| tour | region | start | summit | gain | km | steepest 100 m band | steepest 30 m | grade |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Tomskjevelen | Helgeland | 45 | 922 | 951 | 3.9 | 21.8° | 27.9° | 2 |
+
+Three findings, all of familiar shapes:
+
+- **The register point is not the top, and the spelling differs.** The
+  register writes **Tommskjevelen** and parks its point on a west knoll at
+  756 moh; the summit — 921,7 climbed, against a published 922 — stands
+  330 m east. The growing disc with the claims tiebreak finds it, and the
+  card carries Fri Flyt's single-m spelling the way Kirketaket carries its
+  guidebook name.
+- **`check_ground.py` caught the lake again.** The first solve ran 135 m
+  across Forslandsvatnet (a natural tarn at 148 moh — but 148 moh on an
+  island in the open sea is not ice anyone should assume). Re-pinned along
+  the north shore on land with the water cost on: 0 m on water, past the
+  small tarns and Tinnvatnet too.
+- **The summit is a horn.** The eight-direction sweep reads 31–44° mean in
+  every sector, with 69,4° as the steepest window (NE). The line itself
+  measures 27,9° max — and the guide's whole safety story is that
+  asymmetry: kind track, unkind everything else, «ustabil med varierende
+  snøforhold» as the source's own season sentence, and the east-facing
+  snow-collecting hollow named as the variant it is.
+
+Helgeland is region 3018, an A region — queried per coordinate. Fri Flyt
+publishes neither KAST nor a steepest point for this tour, so the measured
+figures stand alone on the card, and the season is borrowed jan–apr with
+the guide saying so.
+
+The proof: `check_routes.py` 103 tours / 112 routes, `check_tours.py` 103
+cards, `check_guides.py` 0 unsourced numbers and 0 reassurance claims
+across 206 guide texts, `test_check_guides.py` 15, `check_ground.py` 0 m
+on water, and the CI suite.
+
+## Round six: Tredje Svanfjell
+
+One more, from Fri Flyt's Senja index: «Tredje Svanfjell er en klassiker i
+Kaperdalen. Fin tur for nyfrelste toppturister, som også er en flott
+mørketidstur.» The app goes from 103 tours to 104. Storriten in Narvik was
+checked first and rejected: its Fri Flyt description is a **summer-ski**
+tour (juni–august, «mest populære sommerski-toppen i området») behind a
+gravel road that opens when it is plowed in early summer — the Storsylen
+failure in a lighter coat.
+
+| tour | region | start | summit | gain | km | steepest 100 m band | steepest 30 m | grade |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Tredje Svanfjell | Senja | 236 | 899 | 664 | 2.8 | 23.4° | 29.9° | 2 |
+
+Three notes, two of them new shapes:
+
+- **The name is not in the register at all.** The Svanfjell peaks are
+  numbered informally, and the register's Svanfjellet (the massif) sits
+  2,2 km south-east on another top. Fri Flyt publishes its own GPS summit
+  position (UTM33), which reads 897,8 in DTM1 against a published 898 —
+  that position seeds `SUMMIT_SEED`, the Kjølen rule, and the climb lands
+  on 898,6.
+- **The road number is retired.** Fri Flyt's «parkering langs Fv.232» is
+  today fv. 7862 Kaperdalsveien, with four mapped lay-bys — and the one at
+  235,7 moh is the start the arithmetic picks (898 − 660 = 238).
+- **The fact-box aspect disagrees with the route.** Fri Flyt says S-SØ, but
+  its own normal route — the only one it describes — climbs from Kaperdalen
+  in the west and descends the same line: the skiing faces west, the
+  measurement says V, and the card carries the measured. The south-east
+  side (56,3° at its steepest 180–240 m out) is not a side anyone skis.
+
+Every fixed point in the description reproduces: point 504 reads 478,7, the
+notch north of it 582,4, the foretop «870» 862,9, and the source's «cirka
+30–40 høydemeter» to the top measures 36. The line gives back **zero**
+vertical metres, the season desember–mai is the source's own, and the
+region is Sør-Troms (3012), an A region. The guide takes the source's
+mørketidstur framing seriously as the assessment it is.
+
+The proof: `check_routes.py` 104 tours / 113 routes, `check_tours.py` 104
+cards, `check_guides.py` 0 unsourced numbers and 0 reassurance claims
+across 208 guide texts, `test_check_guides.py` 15, `check_ground.py` clean,
+and the CI suite.
+
 ## Network
 
 Everything is public and unauthenticated:

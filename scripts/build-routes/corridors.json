@@ -5514,5 +5514,125 @@
     "notes": "Fri Flyt: brattaste punkt 30 grader — heile lina held seg under 30 utanom dei siste 50 høgdemetrane — og faremerknaden er ordrett: turen i Stjerndalen går i utløpssoner for skredflanker, spesielt V- og SV-flankane under Isvasstinden, ver OBS på dagar med markert skredfare og om våren. Ravika-ruta med 40-graderspartiet er ikkje korridoren."
    }
   ]
+ },
+ "tomskjevelen": {
+  "routes": [
+   {
+    "id": "forsland",
+    "name": "Frå Forsland om Forslandsvatnet",
+    "description": "Frå åkeren ved Forsland etter den merkte stien vestover opp til høgda der Forslandsvatnet ligg, nordover forbi tjernet på land, og opp den nordvestgåande ryggen heilt til toppen",
+    "trailhead": {
+     "name": "Forsland",
+     "lat": 66.2657,
+     "lng": 12.8778,
+     "elevation_m": 45.0,
+     "fullName": "Forsland"
+    },
+    "waypoints": [
+     {
+      "name": "stien mot vatnet",
+      "lat": 66.264,
+      "lng": 12.869,
+      "elevation_m": 150.0
+     },
+     {
+      "name": "nordaustbredda på land",
+      "lat": 66.2676,
+      "lng": 12.867,
+      "elevation_m": 161.22
+     },
+     {
+      "name": "nordbredda på land",
+      "lat": 66.2672,
+      "lng": 12.864,
+      "elevation_m": 177.4
+     },
+     {
+      "name": "myra nordvest for vatnet",
+      "lat": 66.2675,
+      "lng": 12.86,
+      "elevation_m": 150.2
+     },
+     {
+      "name": "ryggfoten",
+      "lat": 66.2715,
+      "lng": 12.8555,
+      "elevation_m": 282.5
+     },
+     {
+      "name": "ryggen ved 490",
+      "lat": 66.274,
+      "lng": 12.853,
+      "elevation_m": 491.6
+     },
+     {
+      "name": "ryggen ved 655",
+      "lat": 66.2755,
+      "lng": 12.851,
+      "elevation_m": 655.6
+     },
+     {
+      "name": "ryggen ved 770",
+      "lat": 66.277,
+      "lng": 12.8495,
+      "elevation_m": 767.8
+     },
+     {
+      "name": "ryggen ved 885",
+      "lat": 66.2785,
+      "lng": 12.8475,
+      "elevation_m": 884.2
+     }
+    ],
+    "source": "researched, verified (corrected), no local audit",
+    "notes": "Fri Flyt publiserer korkje KAST eller brattaste punkt; nedkøyringa er austvend, i eit søkk som samlar snø, og sesongen er «ustabil med varierende snøforhold» — kystfjell omgjeve av hav. Falllinja i midtpartiet av ryggen held 32–33 grader målt. Tilkomsten er ferje frå Nesna. Forslandsvatnet og småtjerna ved det er naturlege kysttjern på ~148 moh — lina går rundt på land, målt.",
+    "avoidWater": true,
+    "waterNote": "Forslandsvatnet (OSM-relasjon 14756581, 148 moh, naturleg tjern) og småtjerna/Tinnvatnet vest for det ligg lågt på ei øy i havet — isen kan ikkje føresetjast. Lina held nordbredda på land, målt mot terrengklassane og OSM-polygona."
+   }
+  ]
+ },
+ "tredje-svanfjell": {
+  "routes": [
+   {
+    "id": "kaperdalen",
+    "name": "Normalruta frå Kaperdalen",
+    "description": "Frå parkeringslomma langs fv. 7862 i Kaperdalen opp mot det vesle skaret nord for punkt 504, jamt vidare mot fortoppen på 870, og dei siste høgdemetrane til toppen",
+    "trailhead": {
+     "name": "Kaperdalen",
+     "lat": 69.29168,
+     "lng": 17.34889,
+     "elevation_m": 235.65,
+     "fullName": "Kaperdalen"
+    },
+    "waypoints": [
+     {
+      "name": "lia austover",
+      "lat": 69.295,
+      "lng": 17.362,
+      "elevation_m": 419.1
+     },
+     {
+      "name": "skaret nord for punkt 504",
+      "lat": 69.299,
+      "lng": 17.378,
+      "elevation_m": 582.42
+     },
+     {
+      "name": "jamt mot fortoppen",
+      "lat": 69.3005,
+      "lng": 17.39,
+      "elevation_m": 720.0
+     },
+     {
+      "name": "fortoppen på 870",
+      "lat": 69.301,
+      "lng": 17.3985,
+      "elevation_m": 862.9
+     }
+    ],
+    "source": "researched, verified (corrected), no local audit",
+    "notes": "Fri Flyt: KAST 1 – Enkelt, brattaste punkt under 27 grader, faremoment «ingen spesielle». Sesongen desember–mai er kjeldas eiga, og han kallar turen «en flott mørketidstur» — desemberlys er si eiga vurdering. Nedfarten er same trasé med variasjonsrom."
+   }
+  ]
  }
 }

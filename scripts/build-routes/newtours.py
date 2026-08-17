@@ -124,4 +124,6 @@ NEW_TOURS = {
     "varden-smaatindan": ("Varden (Småtindan)", "Lofoten"),
     "midtitinden": ("Midtitinden", "Bodø"),
     "sandhornet": ("Sandhornet", "Bodø"),
+    "tomskjevelen": ("Tomskjevelen", "Helgeland"),
+    "tredje-svanfjell": ("Tredje Svanfjell", "Senja"),
 }
