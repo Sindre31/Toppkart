@@ -777,6 +777,43 @@ export const GUIDES: Record<string, TourGuide> = {
       caption: "1050 høgdemeter og 4,15 km frå Sagelva på rv80 — havnivå til 1060 moh, med 26,9 grader som brattaste samanhengande parti.",
     },
   },
+  sandhornet: {
+    slug: "sandhornet",
+    intro:
+      "1021 høgdemeter og 5,01 km frå fjæra på Horsdal — øyfjellet sørvest for Bodø som Fri Flyt kallar ein av dei vakraste kysttoppane i området. Fjellet står i Gildeskål; kortet ber Bodø slik Strandtinden ber Harstad, for det er derifrå dagen startar. Lina held seg under 30 grader så nær som dei siste femti høgdemetrane — målt 32,5 som brattaste samanhengande parti i toppflanken — og fareteksten hos kjelda gjeld ikkje brattleiken, men utløpssonene lina kryssar i Stjerndalen.",
+    ascent: [
+      "Frå garden på Horsdal, 10 moh, følgjer du den merkte stien langs fjæra søraustover om lag ein kilometer — 28 moh på det høgaste, med sjøen rett ved. Så dreier stien nordaust og stig bratt via trappene; her ber du skia. Der trappene endar flatar terrenget på om lag 190 moh — målt 189 — og skia kan på.",
+      "Strekket vidare inn Stjerndalen er turens faretekst, og kjelda er ordrett: dalen går i utløpssoner for skredflanker, spesielt vest- og sørvestflankane under Isvasstinden — fjellet rett aust, som registeret stadfester. Ver OBS på dagar med markert skredfare og utover våren; flata er ikkje faresonefri berre fordi ho er flat.",
+      "Frå dalen held du nordover mot 450 — lina les 463 — og så vestover i slakt terreng nord for punkt 592: 662 og 752 moh i jamn stigning. Skogen slutta alt på 267, så alt dette er open fjellside med utsyn over Saltfjorden.",
+      "Til slutt nordover opp toppflanken: dei siste femti høgdemetrane er dei brattaste på turen, med 32,5 grader som brattaste samanhengande parti og hundremetersbeltet 900–1000 på 21,3 i snitt. Varden står på 993 moh, med havet på tre kantar.",
+    ],
+    descent: [
+      "Same veg ned, med rom for austlege variantar som gjev brattare køyring i toppflanken — same 30-gradersklassa, seier kjelda. Frå flata i Stjerndalen gjeld faresona att: kryss utløpsområda kjapt og éin om gongen på dagar med markert fare.",
+      "Ravika-ruta på nordaustsida er fullt skildra hos Fri Flyt — skogsvegen frå den grøne garasjen, myrdraga langs Ravikelva, ramp til toppeggen — men nedfarten hennar har eit 40-gradersparti mellom 920 og 840 moh og skaret 300 m søraust for toppen som inngang. Ho er varianten, ikkje normalvegen, og han som vel ho, har valt ein annan tur.",
+      "Ned trappene ber du skia att, og stien langs fjæra tek deg heim til Horsdal — 38 høgdemeter å gje att har heile turen, så det meste av dagen er rein stigning og rein køyring.",
+    ],
+    avalanche: [
+      {
+        title: "Stjerndalen",
+        body: "Kjeldas faremerknad gjeld dalen, ikkje toppen: turen går i utløpssoner for skredflanker, spesielt vest- og sørvestflankane under Isvasstinden, og åtvaringa gjeld dagar med markert skredfare og våren. Utløpssoner er flate — det er heile poenget med dei — og einaste verktøyet er tempo, avstand og å velja ein annan dag når varselet seier det.",
+      },
+      {
+        title: "Toppflanken og kantane",
+        body: "Dei siste femti høgdemetrane måler 32,5 grader som brattaste parti — resten av lina held seg under 30. Men Sandhornet er eit øyfjell med vegger: vestsida fell 59,0 grader på det brattaste berre 110–170 m frå varden, nordvestsida 59,9 og nordsida 61,8 grader 70–130 m ut. Mot havet er kanten absolutt; i skodde er søraust einaste heimvegen.",
+      },
+      {
+        title: "Før du går",
+        body: "Sandhornet ligg i varslingsregionen Svartisen, ein A-region med dagleg skredvarsel gjennom sesongen — sjekk varsom.no. Ingen kjelde publiserer sesongmånader; kortets jan–apr er lånt frå appens andre nordlandsturar, og guiden seier det. Ta med sender/mottakar, søkjestong og spade. Ei tom varselside er ikkje det same som eit trygt fjell.",
+      },
+    ],
+    elevationProfile: {
+      path: "M0,199 L28,200 L49,197 L75,195 L98,196 L119,198 L141,198 L162,192 L177,184 L200,170 L222,163 L243,157 L270,152 L292,146 L313,138 L329,128 L351,119 L375,115 L397,108 L413,97 L437,89 L459,80 L483,70 L502,64 L524,59 L540,51 L561,40 L581,29 L600,18",
+      startLabel: "10 moh",
+      endLabel: "993 moh",
+      distanceLabel: "5,0 km",
+      caption: "1021 høgdemeter og 5,01 km frå fjæra på Horsdal — trappene til Stjerndalen, slake rygger, og 32,5 grader i dei siste femti høgdemetrane.",
+    },
+  },
   vassfjellet: {
     slug: "vassfjellet",
     intro:
@@ -3504,6 +3541,43 @@ export const GUIDES: Record<string, TourGuide> = {
       endLabel: "1426 moh",
       distanceLabel: "4,9 km",
       caption: "154 til 1426 moh på 4,9 km. Bratteste hundremeteren ligger mellom 900 og 1000, over Skarshaug.",
+    },
+  },
+  englafjell: {
+    slug: "englafjell",
+    intro:
+      "1237 høgdemeter og 8,64 km frå Musland i Uskedalen — eit skikkeleg vestlandsfjell der turen er større enn tala: Fri Flyt kallar han vanskeleg, med skredutsett terreng, vanskeleg navigering og utglidingsfare som faremoment, og 35 grader på enklaste vegen. Sjølve lina måler snillare — brattaste hundremetersbeltet 21,1 grader mellom 300 og 400 moh, brattaste samanhengande parti 30,1 — men ho gjev att 185 høgdemeter undervegs, ber skia i stykke av skogen, og toppryggen har skavlar ut over Limomnen. Grad 3 på kortet er summen.",
+    ascent: [
+      "Køyr til Uskedalen og ta av mot Musland; parker ved fyrste garden — tunet ligg på 148 moh, og ver varsam med traktortrafikken, slik kjelda ber om. Traktorvegen held fram nordvestover, og den merkte stien tek til venstre inn i skogen — vegen og stinettet er kartlagde, og fyrste stykket ber du gjerne skia på godt opptrakka sti.",
+      "Stien kryssar dalen — botnen les 140 til 183 moh — før flanken mot Såta tek til. Det er dalens pris: mesteparten av dei 185 attgjevne høgdemetrane ligg her og i bulkane på ryggen vidare. Skogen sluttar på 526 moh etter Kartverkets klassar, og flanken opp mot Såta held 507 og 625 på veg til knausen på 651.",
+      "Frå Såta går du sør opp den bratte ryggen, slik kjelda seier — og ryggen leverer: 869, 1032, 1126 og 1184 moh i jamn, bratt stigning, med det brattaste samanhengande partiet på 30,1 grader undervegs. Dette er navigasjonsstrekket i skodde: ryggen er logisk i godt vêr og diffus i flatt lys.",
+      "Toppen står på 1200 moh. Heile vegen langs toppryggen: hald avstand til austkanten — skavlane heng ut over Limomnen, botnen på 889 rett under, og nordaustflanken fell 55,5 grader på det brattaste berre 200–260 m frå varden.",
+    ],
+    descent: [
+      "Normalvegen ned er ryggen attende mot Såta, der dei bratte sidene byr på nedkøyring — same linevalsdisiplin som opp, med skavlkanten mot Limomnen som den faste regelen: køyr vest for kammen.",
+      "Frå Hjorteklett — kjeldas namn på skuldra, registeret har det ikkje — må skia vanlegvis berast eit stykke. Ved gode snøtilhøve nemner kjelda ei flott nedkøyring langs bekken aust for Såta; ho er variant, ikkje normalveg, og «ved gode snøforhold» er vilkåret som står ved.",
+      "Så dalen attende: kryssinga kostar deg dei siste motbakkane heim til stien og traktorvegen ned til Musland. Utglidingsfaren kjelda nemner høyrer dette strekket til — bratt, tett vestlandsskog med hard snø er sitt eige faremoment.",
+    ],
+    avalanche: [
+      {
+        title: "Ruta",
+        body: "Fri Flyts faremoment er «skredutsatt terreng, vanskelig navigering og utglidningsfare», og alle tre er målbare på denne lina: flanken mot Såta og sørryggen held 21 til 30 grader med brattare sider tett på, ryggen er diffus i flatt lys, og skogstykka ber hard snø over bratt botn. 35-gradarane på enklaste vegen ligg i flankeval nær toppen — sporet kan leggjast slakare, og målinga viser at det går.",
+      },
+      {
+        title: "Skavlane mot Limomnen",
+        body: "Toppryggen ber skavlar ut over austsida, der Limomnen ligg 300 høgdemeter under. Nordaustflanken fell 55,5 grader på det brattaste 200–260 m frå varden og nordflanken 49,7 berre 100–160 m ut. Kanten er lengre ute enn han ser ut til i fokk — hald vest for kammen heile toppstrekket.",
+      },
+      {
+        title: "Før du går",
+        body: "Englafjell ligg i varslingsregionen Hordalandskysten, ein B-region utan dagleg skredvarsel — næraste A-region med dagleg varsel er Hardanger, aust for Folgefonna. Det er ein grunn til meir varsemd, ikkje mindre: vurderinga er di. Ingen kjelde publiserer sesongmånader; kortets jan–apr er lånt frå appens andre Hardanger-turar, og guiden seier det. Ta med sender/mottakar, søkjestong og spade. Ei tom varselside er ikkje det same som eit trygt fjell.",
+      },
+    ],
+    elevationProfile: {
+      path: "M0,194 L25,197 L53,198 L78,198 L100,191 L123,195 L152,198 L178,199 L200,199 L221,197 L246,180 L262,166 L278,151 L293,139 L316,124 L341,114 L367,108 L387,112 L407,109 L428,96 L447,81 L465,66 L484,55 L512,41 L534,38 L559,31 L584,21 L600,18",
+      startLabel: "148 moh",
+      endLabel: "1200 moh",
+      distanceLabel: "8,6 km",
+      caption: "1237 høgdemeter og 8,64 km frå Musland — over dalen, opp til Såta, og den bratte sørryggen med skavlar mot Limomnen.",
     },
   },
   gaustatoppen: {

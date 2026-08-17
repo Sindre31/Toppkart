@@ -123,4 +123,5 @@ NEW_TOURS = {
     "vatnaknausen": ("Vatnaknausen", "Voss"),
     "varden-smaatindan": ("Varden (Småtindan)", "Lofoten"),
     "midtitinden": ("Midtitinden", "Bodø"),
+    "sandhornet": ("Sandhornet", "Bodø"),
 }

@@ -238,6 +238,10 @@ export const TOUR_TEASER_EN: Record<string, string> = {
     "1270 metres of ascent from the road end at Varto: the works road to the dam, on land around the regulated Rottenvikvatnet, the flat at 650 and the ridge straight at the summit.",
   togga:
     "780 metres of ascent straight from the ski-touring car park at Brandhaugane: the south-east ridge through the forest, the flat at Orraleiken, and the last climb to the cairn.",
+  englafjell:
+    "1240 metres of ascent from Musland in Uskedalen: tractor road and marked path, across the valley, up to Såta and south along the steep ridge — with the cornices over Limomnen for company to the top.",
+  sandhornet:
+    "1020 metres of ascent from the shore at Horsdal: the path along the sea, the stairs to Stjerndalen, and gentle ridges to the cairn on the island mountain above Saltfjorden.",
 
 };
 
@@ -1006,6 +1010,41 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       endLabel: "1060 m",
       distanceLabel: "4.2 km",
       caption: "1050 metres of ascent and 4.15 km from Sagelva on highway 80 — sea level to 1060 metres, with 26.9 degrees as the steepest sustained stretch.",
+    },
+  },
+  sandhornet: {
+    intro:
+      "1021 metres of ascent and 5.01 km from the shore at Horsdal — the island mountain south-west of Bodø that Fri Flyt calls one of the most beautiful coastal peaks in the area. The mountain stands in Gildeskål; the card carries Bodø the way Strandtinden carries Harstad, because that is where the day starts. The line stays under 30 degrees except for the last fifty vertical metres — measured 32.5 as the steepest sustained stretch in the summit flank — and the source's hazard text is not about steepness but about the runout zones the line crosses in Stjerndalen.",
+    ascent: [
+      "From the farm at Horsdal, 10 metres, follow the marked path along the shore south-east for about a kilometre — 28 metres at its highest, with the sea right beside you. Then the path turns north-east and climbs steeply via the stairs; here the skis go on the pack. Where the stairs end the ground levels at about 190 metres — measured 189 — and the skis go back on.",
+      "The stretch on into Stjerndalen is the tour's hazard text, and the source is verbatim: the valley runs in runout zones of avalanche flanks, especially the west and south-west flanks under Isvasstinden — the mountain just east, which the register confirms. Be alert on days with considerable danger and into spring; the flat is not outside the danger zone just because it is flat.",
+      "From the valley hold north towards 450 — the line reads 463 — and then west in gentle ground north of point 592: 662 and 752 metres in steady climbing. The forest ended already at 267, so all of this is open mountainside with the view over Saltfjorden.",
+      "Finally north up the summit flank: the last fifty vertical metres are the steepest of the tour, with 32.5 degrees as the steepest sustained stretch and the 900–1000 band at a mean 21.3. The cairn stands at 993 metres, with the sea on three sides.",
+    ],
+    descent: [
+      "The same way down, with room for easterly variants that give steeper skiing in the summit flank — the same 30-degree class, says the source. From the flat in Stjerndalen the danger zone applies again: cross the runout areas quickly and one at a time on days with considerable danger.",
+      "The Ravika route on the north-east side is fully described by Fri Flyt — the forest road from the green garage, the bog stretches along the Ravikelva, a ramp to the summit ridge — but its descent has a 40-degree section between 920 and 840 metres and enters via the notch 300 m south-east of the top. It is the variant, not the normal route, and whoever chooses it has chosen a different tour.",
+      "Down the stairs the skis go on the pack again, and the shore path takes you home to Horsdal — the whole tour gives back 38 vertical metres, so most of the day is clean climbing and clean skiing.",
+    ],
+    avalanche: [
+      {
+        title: "Stjerndalen",
+        body: "The source's hazard note concerns the valley, not the summit: the tour runs in runout zones of avalanche flanks, especially the west and south-west flanks under Isvasstinden, and the warning applies to days with considerable danger and to spring. Runout zones are flat — that is the whole point of them — and the only tools are pace, spacing and choosing another day when the bulletin says so.",
+      },
+      {
+        title: "The summit flank and the edges",
+        body: "The last fifty vertical metres measure 32.5 degrees at their steepest — the rest of the line stays under 30. But Sandhornet is an island mountain with walls: the west side falls 59.0 degrees at its steepest only 110–170 m from the cairn, the north-west side 59.9 and the north side 61.8 degrees 70–130 m out. Towards the sea the edge is absolute; in fog, south-east is the only way home.",
+      },
+      {
+        title: "Before you go",
+        body: "Sandhornet is in the Svartisen forecast region, an A region with a daily avalanche bulletin through the season — check varsom.no. No source publishes season months; the card's jan–apr is borrowed from the app's other Nordland tours, and the guide says so. Bring transceiver, probe and shovel. An empty forecast page does not mean a safe mountain.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "10 m",
+      endLabel: "993 m",
+      distanceLabel: "5.0 km",
+      caption: "1021 metres of ascent and 5.01 km from the shore at Horsdal — the stairs to Stjerndalen, gentle ridges, and 32.5 degrees in the last fifty vertical metres.",
     },
   },
   vassfjellet: {
@@ -3587,6 +3626,41 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       endLabel: "1426 m",
       distanceLabel: "4.9 km",
       caption: "154 to 1426 m over 4.9 km. The steepest hundred metres lies between 900 and 1000, above Skarshaug.",
+    },
+  },
+  englafjell: {
+    intro:
+      "1237 metres of ascent and 8.64 km from Musland in Uskedalen — a proper west-coast mountain where the tour is bigger than its numbers: Fri Flyt calls it difficult, lists avalanche-prone terrain, hard navigation and slip-fall danger as its hazards, and gives 35 degrees on the easiest way. The line itself measures kinder — steepest 100-metre band 21.1 degrees between 300 and 400 metres, steepest sustained stretch 30.1 — but it gives back 185 vertical metres along the way, carries skis through stretches of the forest, and the summit ridge is corniced over Limomnen. The card's grade 3 is the sum.",
+    ascent: [
+      "Drive to Uskedalen and turn off towards Musland; park at the first farm — the yard sits at 148 metres, and mind the tractor traffic, as the source asks. The tractor road continues north-west, and the marked path turns left into the forest — road and path network are mapped, and the first stretch is usually walked with skis on the pack along a well-trodden path.",
+      "The path crosses the valley — the floor reads 140 to 183 metres — before the flank towards Såta begins. That is the valley's price: most of the 185 metres given back sit here and in the bumps on the ridge beyond. The forest ends at 526 metres by Kartverket's classes, and the flank towards Såta holds 507 and 625 on the way to the knoll at 651.",
+      "From Såta you head south up the steep ridge, as the source says — and the ridge delivers: 869, 1032, 1126 and 1184 metres in steady, steep climbing, with the steepest sustained stretch of 30.1 degrees along the way. This is the navigation stretch in fog: logical in clear weather, diffuse in flat light.",
+      "The summit stands at 1200 metres. All along the summit ridge: keep your distance from the east edge — the cornices overhang Limomnen, the bowl at 889 directly below, and the north-east flank falls 55.5 degrees at its steepest only 200–260 m from the cairn.",
+    ],
+    descent: [
+      "The normal way down is the ridge back towards Såta, where the steep sides offer the skiing — the same line discipline as on the ascent, with the cornice edge over Limomnen as the standing rule: ski west of the crest.",
+      "From Hjorteklett — the source's name for the shoulder; the register does not carry it — skis usually go on the pack for a stretch. In good snow conditions the source mentions a fine descent along the stream east of Såta; it is a variant, not the normal route, and 'in good snow conditions' is the condition that stands.",
+      "Then the valley again: the crossing costs you the final uphills home to the path and the tractor road down to Musland. The slip-fall danger the source names belongs to this stretch — steep, dense west-coast forest with hard snow is its own hazard.",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "Fri Flyt's hazards are 'avalanche-prone terrain, hard navigation and slip-fall danger', and all three are measurable on this line: the flank towards Såta and the south ridge hold 21 to 30 degrees with steeper sides close by, the ridge is diffuse in flat light, and the forest stretches carry hard snow over steep ground. The 35-degree ground on the easiest way sits in flank choices near the top — the track can be laid gentler, and the measurement shows it works.",
+      },
+      {
+        title: "The cornices over Limomnen",
+        body: "The summit ridge is corniced over its east side, where Limomnen lies 300 vertical metres below. The north-east flank falls 55.5 degrees at its steepest 200–260 m from the cairn and the north flank 49.7 only 100–160 m out. The edge is further out than it looks in drifting snow — stay west of the crest for the whole summit stretch.",
+      },
+      {
+        title: "Before you go",
+        body: "Englafjell is in the Hordalandskysten forecast region, a B region with no daily avalanche bulletin — the nearest A region with a daily forecast is Hardanger, east of the Folgefonna. That is a reason for more caution, not less: the assessment is yours. No source publishes season months; the card's jan–apr is borrowed from the app's other Hardanger tours, and the guide says so. Bring transceiver, probe and shovel. An empty forecast page does not mean a safe mountain.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "148 m",
+      endLabel: "1200 m",
+      distanceLabel: "8.6 km",
+      caption: "1237 metres of ascent and 8.64 km from Musland — across the valley, up to Såta, and the steep south ridge with cornices over Limomnen.",
     },
   },
   gaustatoppen: {

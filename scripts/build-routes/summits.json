@@ -918,5 +918,13 @@
     "summit_dtm": 1059.5,
     "claims": 1058,
     "stored_off_km": 0.29
+  },
+  "sandhornet": {
+    "name": "Sandhornet",
+    "lat": 67.11124,
+    "lng": 14.06789,
+    "summit_dtm": 993.4,
+    "claims": 993,
+    "stored_off_km": 0.01
   }
 }

@@ -5384,5 +5384,135 @@
     "notes": "Fri Flyt: brattaste punkt 33–35 grader, og skredåtvaringa gjeld normalvegen sjølv: skiløparar har løyst ut skred i det brattare partiet på søraustryggen under opptur i ustabile forhold. Seks nedfartar hos Fri Flyt (søraust, sør ×2, nord, aust ×2) — normalvegen opp og ned er korridoren."
    }
   ]
+ },
+ "englafjell": {
+  "routes": [
+   {
+    "id": "musland",
+    "name": "Frå Musland om Såta",
+    "description": "Frå fyrste garden på Musland etter traktorvegen og den merkte stien vestover, over dalen, opp flanken til Såta (651 moh), og sørover den bratte ryggen til toppen",
+    "trailhead": {
+     "name": "Musland",
+     "lat": 59.8985,
+     "lng": 5.9465,
+     "elevation_m": 148.0,
+     "fullName": "Musland"
+    },
+    "waypoints": [
+     {
+      "name": "traktorvegen",
+      "lat": 59.902,
+      "lng": 5.937,
+      "elevation_m": 122.0
+     },
+     {
+      "name": "stien inn i skogen",
+      "lat": 59.9035,
+      "lng": 5.925,
+      "elevation_m": 166.0
+     },
+     {
+      "name": "over dalen",
+      "lat": 59.909,
+      "lng": 5.895,
+      "elevation_m": 183.0
+     },
+     {
+      "name": "flanken mot Såta",
+      "lat": 59.911,
+      "lng": 5.886,
+      "elevation_m": 507.0
+     },
+     {
+      "name": "ryggen mot Såta",
+      "lat": 59.913,
+      "lng": 5.875,
+      "elevation_m": 625.0
+     },
+     {
+      "name": "Såta",
+      "lat": 59.91508,
+      "lng": 5.86098,
+      "elevation_m": 651.0
+     },
+     {
+      "name": "sørryggen ved 870",
+      "lat": 59.911,
+      "lng": 5.864,
+      "elevation_m": 869.0
+     },
+     {
+      "name": "sørryggen ved 1030",
+      "lat": 59.906,
+      "lng": 5.868,
+      "elevation_m": 1032.0
+     },
+     {
+      "name": "sørryggen ved 1130",
+      "lat": 59.901,
+      "lng": 5.871,
+      "elevation_m": 1126.0
+     }
+    ],
+    "source": "researched, verified (corrected), no local audit",
+    "notes": "Fri Flyt: vanskeleg, brattaste punkt 35 grader på enklaste vegen, faremoment «skredutsatt terreng, vanskelig navigering og utglidningsfare». Skavlar mot Limomnen på toppryggen. Fyrste stykket ber skia på godt opptrakka sti; frå Hjorteklett ber ein vanlegvis skia òg. Nedkøyringa langs bekken aust for Såta berre ved gode snøtilhøve."
+   }
+  ]
+ },
+ "sandhornet": {
+  "routes": [
+   {
+    "id": "horsdal",
+    "name": "Frå Horsdal om Stjerndalen",
+    "description": "Frå garden på Horsdal etter den merkte stien langs fjæra, opp trappene til flata i Stjerndalen på ~190 moh, nordover mot 450, vestover i slakt terreng nord for punkt 592, og nordover toppflanken til varden",
+    "trailhead": {
+     "name": "Horsdal",
+     "lat": 67.094,
+     "lng": 14.05,
+     "elevation_m": 10.01,
+     "fullName": "Horsdal"
+    },
+    "waypoints": [
+     {
+      "name": "stien langs fjæra",
+      "lat": 67.0895,
+      "lng": 14.0605,
+      "elevation_m": 27.9
+     },
+     {
+      "name": "trappene, flata på 190",
+      "lat": 67.09,
+      "lng": 14.07,
+      "elevation_m": 189.0
+     },
+     {
+      "name": "Stjerndalen",
+      "lat": 67.0915,
+      "lng": 14.075,
+      "elevation_m": 267.59
+     },
+     {
+      "name": "nordover mot 450",
+      "lat": 67.098,
+      "lng": 14.075,
+      "elevation_m": 463.0
+     },
+     {
+      "name": "nord for punkt 592",
+      "lat": 67.103,
+      "lng": 14.072,
+      "elevation_m": 662.0
+     },
+     {
+      "name": "slakt terreng",
+      "lat": 67.106,
+      "lng": 14.066,
+      "elevation_m": 752.0
+     }
+    ],
+    "source": "researched, verified (corrected), no local audit",
+    "notes": "Fri Flyt: brattaste punkt 30 grader — heile lina held seg under 30 utanom dei siste 50 høgdemetrane — og faremerknaden er ordrett: turen i Stjerndalen går i utløpssoner for skredflanker, spesielt V- og SV-flankane under Isvasstinden, ver OBS på dagar med markert skredfare og om våren. Ravika-ruta med 40-graderspartiet er ikkje korridoren."
+   }
+  ]
  }
 }

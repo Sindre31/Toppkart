@@ -225,4 +225,10 @@ PEAKS = [
     #   Kirketaket.
     ("varden-smaatindan", "Småtindan", ["Vågan"], 700, 68.23324, 14.38798),
     ("midtitinden", "Midtitinden", ["Bodø"], 1058, 67.34397, 15.00963),
+    #
+    # — round 4: a backlog name with a full description (Englafjell was already
+    #   here), and Sandhornet from Fri Flyt's Bodø index — the mountain stands
+    #   in Gildeskål, the card keeps Fri Flyt's Bodø the way Strandtinden keeps
+    #   Harstad. —
+    ("sandhornet", "Sandhornet", ["Gildeskål"], 993, 67.11117, 14.06776),
 ]

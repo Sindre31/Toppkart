@@ -3130,6 +3130,72 @@ description rather than research effort: istinden (Narvik), skjomtinden,
 storsteinsfjellet, storsylen (rejected), fongen, trollhetta, blahoa,
 storskrymten, englafjell, grubba. The adversarial-read gap now counts ten.
 
+## Round four: Englafjell and Sandhornet
+
+Two threads pulled at once: the last backlog name with a full published ski
+description, and the Bodø region the popularity round opened with a single
+tour. The app goes from 100 tours to 102.
+
+| tour | region | start | summit | gain | km | steepest 100 m band | steepest 30 m | grade |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Englafjell | Hardanger | 148 | 1200 | 1237 | 8.6 | 21.1° | 30.1° | 3 |
+| Sandhornet | Bodø | 10 | 993 | 1021 | 5.0 | 21.3° | 32.5° | 2 |
+
+**Trollhetta was checked and stays unbuilt**: ut.no's crossing over «hettene»
+is a summer fottur and no ski turbeskrivelse was found — the same
+missing-description reason that holds most of the remaining backlog.
+
+### Englafjell, and the waypoint that was the corridor author's
+
+Fri Flyt's Rosendal description resolved cleanly — Musland and its mapped
+tractor road and path network, Såta (Ås, 651 moh — the north-west knoll, not
+either of the two Såta tops further north in the kommune), the south ridge
+651 → 869 → 1032 → 1126 → 1184 → 1199,9, monotonic, and Limomnen (Li, 889,2)
+as the bowl the summit cornices overhang. The first solve gave back 307 m,
+and 177 of them were self-inflicted: a «lia vestover» waypoint had pinned the
+line over a 313 m knoll the source never mentions. The pin was removed, the
+router found the natural valley crossing itself, and the give-back fell to
+the terrain's own 185 — the correction is in the research record, because a
+corridor author inventing ground is exactly what the audit trail exists to
+catch.
+
+The card's grade 3 over a measured 2 carries Fri Flyt's own framing:
+«vanskelig», 35° on the easiest way, «skredutsatt terreng, vanskelig
+navigering og utglidningsfare», skis on the pack in the forest, and a
+NE flank falling 55,5° under the corniced summit ridge. And the region
+matters: **Englafjell sits in Hordalandskysten (3033), a B region with no
+daily forecast** — the Gullfjellstoppen situation, and the guide says so
+instead of pointing at a bulletin that does not cover the ground.
+
+### Sandhornet, sea to summit again
+
+Fri Flyt's Horsdal route reproduces rung for rung: the farm at 13 moh, the
+shore path at 0–28, the stairs ending where the ground levels at a measured
+189 against the source's «190 moh», 463 against «450», 662 and 752 north of
+point 592, and the top at 993,4 against a published 993. The mountain stands
+in Gildeskål; the card keeps Fri Flyt's Bodø the way Strandtinden keeps
+Harstad. The hazard is the interesting part: the source's warning is about
+**runout zones in Stjerndalen** — the W and SV flanks under Isvasstinden,
+which the register confirms stands just east of the line — not about the
+track's own steepness (under 30° except a measured 32,5° in the last fifty
+metres). The guide gives the runout crossing its own section, and the
+eight-direction sweep explains the island-mountain edges: W 59,0°, NW 59,9°,
+N 61,8° within 170 m of the cairn. The fully described Ravika route (a 40°
+section between 920 and 840) is named as the variant it is and not drawn.
+
+The proof: `check_routes.py` 102 tours / 111 routes, `check_tours.py` 102
+cards, `check_guides.py` 0 unsourced numbers and 0 reassurance claims across
+204 guide texts — after it crashed on a comma-separated elevation list and
+got the corpus convention («869, 1032, 1126 og 1184 moh») instead —
+`test_check_guides.py` 15, `check_ground.py` clean on both lines including
+the trail claims, and the CI suite.
+
+### Still open
+
+Nine backlog names remain, all for want of a published ski description. The
+adversarial-read gap counts twelve. Neither source publishes season months;
+both cards borrow jan–apr and both guides say so.
+
 ## Network
 
 Everything is public and unauthenticated:

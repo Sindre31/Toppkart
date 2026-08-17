@@ -1354,5 +1354,39 @@
    "figure": "Brandhaugane (Haug) les 426,1 moh og 1205 − 785 = 420; Orraleiken (Haug, 61.33210/6.90093) les 1042,3 der «terrenget flater ut»; ruta måler 2,64 km mot publiserte 2,7",
    "how": "SSR-oppslag; DTM1-punkt-API; route_metrics.py."
   }
+ ],
+ "englafjell": [
+  {
+   "what": "Fallet frå varden i åtte retningar",
+   "figure": "N 10,8° i snitt med 49,7° som brattaste 60 m 100–160 m ut; NØ 31,9° / 55,5° 200–260 m ut; Ø 15,5° / 48,0° 160–220 m ut; SØ 13,4° / 27,5° 530–590 m ut; S 18,5° / 38,9° 20–80 m ut; SV 15,2° / 37,1° 0–60 m ut; V 17,3° / 31,5° 270–330 m ut; NV 16,9° / 27,6° 370–430 m ut",
+   "how": "flank_probe.py frå 59.89637/5.87533, 800 m ut, prøvetatt kvar 10. m i DTM-en."
+  },
+  {
+   "what": "Såta og sørryggen, målt",
+   "figure": "Såta (Ås, 59.91508/5.86098) les 651 moh; sørryggen derifrå 869 → 1032 → 1126 → 1184 → 1199,9. Limomnen (Li, 59.89929/5.88159) les 889,2 i austbotnen under toppryggen — skavl-sida",
+   "how": "SSR-søk med knr=4617; DTM1-punkt-API og raster."
+  },
+  {
+   "what": "Dalkryssinga og attgjeven høgd",
+   "figure": "Lina gjev att 185 m samla: dalbotnen mellom stien (166 moh) og Såta-flanken les 140–183, og ryggen mot Såta boljar (677→658, 662→646) før sjølve knausen på 651. Fyrste solveringa gav att 307 — 177 av dei over ein 313-kul eit eige waypoint hadde skapt; pinnet er fjerna og ruteren fann krysssinga sjølv",
+   "how": "generate_routes.py før/etter ompinning; profilanalyse av routes.json."
+  }
+ ],
+ "sandhornet": [
+  {
+   "what": "Fallet frå varden i åtte retningar",
+   "figure": "N 32,4° i snitt med 61,8° som brattaste 60 m 70–130 m ut; NØ 34,8° / 54,6° 20–80 m ut; Ø 24,8° / 49,6° 80–140 m ut; SØ 10,0° / 31,4° 320–380 m ut; S 21,7° / 32,8° 70–130 m ut; SV 32,1° / 46,9° 320–380 m ut; V 45,6° / 59,0° 110–170 m ut; NV 47,8° / 59,9° 270–330 m ut",
+   "how": "flank_probe.py frå 67.11124/14.06789, 800 m ut, prøvetatt kvar 10. m i DTM-en."
+  },
+  {
+   "what": "Horsdal-rutas høgder reproduserer",
+   "figure": "Garden les 13,0 moh (parkeringspunktet 10,0), fjærastien 27,9, flata over trappene 189 mot kjeldas «190 moh», vidare 463 mot «450», 662 og 752 nord for punkt 592, og toppen 993,4 mot publisert 993",
+   "how": "DTM1-punkt-API på kvart korridorpunkt; SSR-oppslag på Horsdal, Stjerndalen, Isvasstinden."
+  },
+  {
+   "what": "Isvasstinden og utløpseksponeringa",
+   "figure": "Isvasstinden (Fjell) står på 67.09641/14.09665, rett aust for Stjerndalen-lina — V- og SV-flankane hans er dei kjelda åtvarar om at dalen går i utløpssonene til",
+   "how": "SSR-oppslag; geometrisamanlikning mot lina."
+  }
  ]
 }

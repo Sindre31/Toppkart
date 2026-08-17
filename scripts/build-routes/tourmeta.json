@@ -219,6 +219,17 @@
   "season": "jan–apr",
   "hasGuide": false
  },
+ "sandhornet": {
+  "name": "Sandhornet",
+  "region": "Bodø",
+  "summitM": 993,
+  "verticalM": 1020,
+  "duration": "4–6 t",
+  "grade": 2,
+  "aspect": "S",
+  "season": "jan–apr",
+  "hasGuide": false
+ },
  "vassfjellet": {
   "name": "Vassfjellet",
   "region": "Trøndelag",
@@ -1032,6 +1043,17 @@
   "aspect": "V",
   "season": "feb–mai",
   "hasGuide": true
+ },
+ "englafjell": {
+  "name": "Englafjell",
+  "region": "Hardanger",
+  "summitM": 1200,
+  "verticalM": 1240,
+  "duration": "6–8 t",
+  "grade": 3,
+  "aspect": "N",
+  "season": "jan–apr",
+  "hasGuide": false
  },
  "gaustatoppen": {
   "name": "Gaustatoppen",

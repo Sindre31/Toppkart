@@ -4541,5 +4541,171 @@
   "corridor": null,
   "rejectReason": "Fri Flyts skildring (1488 moh) har hovudoppstiging med samanhengande 35–45 grader mellom 1080 og 1340 moh, og austalternativet går opp Rottenvikbreen — bre. Ruteren løyser berre gåbar stigning under steg-taket, og korkje ei 40-gradersflanke eller ein bre kan ei generert line teikna ærleg. Same konklusjonen som Istinden i Lyngen; registeroppføringa i NEW_TOURS står som ubygd.",
   "corrections": []
+ },
+ {
+  "slug": "englafjell",
+  "verdict": "corrected",
+  "corrections": [
+   "Startstaden løyser seg: Musland (Navnegard, 59.89758/5.94887, 157,9 moh) med Muslandsvegen (OSM way/1489527056) og traktorvegane (way/779700807, way/967830738) vidare nordvestover; «parkering ved første gård» er tunet ved vegenden på ~148 moh. Stinettet vidare er kartlagt (way/1076430811 m.fl., surface=ground).",
+   "Såta i skildringa er registerets Såta (Ås, 59.91508/5.86098, 651 moh) — nordvestknausen på ryggsystemet, ikkje nokon av dei to Såta-toppane lenger nord i kommunen. Sørryggen derifrå til toppen er målt og monoton: 651 → 869 → 1032 → 1126 → 1184 → 1199,9, og «bratt rygg» stemmer — fyrste steget 651→869 held ~23° i fallinja.",
+   "Lina må over dalen: mellom lia på 313 moh (59.90500/5.91500) og foten av Såta-flanken ligg dalbotnen på 183 (59.90900/5.89500) — om lag 130 høgdemeter å gje att på veg inn, terrenget sitt eige val. Fri Flyts «Høydemeter: 1200» er toppunkthøgda; den ruta gainen vert høgare på grunn av dalkryssinga, og kortet ber målinga.",
+   "«Vær oppmerksom på skavler mot Limomnen»: Limomnen (Li, 59.89929/5.88159, 889,2 moh) er austbotnen rett under toppryggen — skavlane på ryggen heng ut over han, og guiden ber åtvaringa. Hjorteklett i nedfartsomtalen finst ikkje i registeret (heller ikkje som Hjortaklett); guiden brukar kjeldas namn og seier det.",
+   "Fyrste solveringa gav att 307 m, 177 av dei over ein 313-kul eit eige waypoint («lia vestover») hadde pinna lina over før dalkryssinga. Kulen var korridorforfattarens, ikkje kjeldas — pinnet er fjerna, og ruteren finn den naturlege kryssinga sjølv."
+  ],
+  "rejectReason": "",
+  "corridor": {
+   "routeId": "musland",
+   "routeName": "Frå Musland om Såta",
+   "routeDescriptionFull": "Frå fyrste garden på Musland etter traktorvegen og den merkte stien vestover, over dalen, opp flanken til Såta (651 moh), og sørover den bratte ryggen til toppen",
+   "trailhead": {
+    "name": "Musland",
+    "lat": 59.8985,
+    "lng": 5.9465,
+    "elevationM": 148,
+    "osmEvidence": "Tunet ved Muslandsvegen (way/1489527056) og traktorvegen way/779700807; registerets Musland (Navnegard) 160 m søraust."
+   },
+   "waypoints": [
+    {
+     "name": "traktorvegen",
+     "lat": 59.902,
+     "lng": 5.937,
+     "elevationM": 122
+    },
+    {
+     "name": "stien inn i skogen",
+     "lat": 59.9035,
+     "lng": 5.925,
+     "elevationM": 166
+    },
+    {
+     "name": "over dalen",
+     "lat": 59.909,
+     "lng": 5.895,
+     "elevationM": 183
+    },
+    {
+     "name": "flanken mot Såta",
+     "lat": 59.911,
+     "lng": 5.886,
+     "elevationM": 507
+    },
+    {
+     "name": "ryggen mot Såta",
+     "lat": 59.913,
+     "lng": 5.875,
+     "elevationM": 625
+    },
+    {
+     "name": "Såta",
+     "lat": 59.91508,
+     "lng": 5.86098,
+     "elevationM": 651
+    },
+    {
+     "name": "sørryggen ved 870",
+     "lat": 59.911,
+     "lng": 5.864,
+     "elevationM": 869
+    },
+    {
+     "name": "sørryggen ved 1030",
+     "lat": 59.906,
+     "lng": 5.868,
+     "elevationM": 1032
+    },
+    {
+     "name": "sørryggen ved 1130",
+     "lat": 59.901,
+     "lng": 5.871,
+     "elevationM": 1126
+    }
+   ],
+   "season": "jan–apr",
+   "aspect": "N",
+   "grade": 3,
+   "gradeReason": "Målinga seier 2 — brattaste hundremetersbeltet 21,1 grader mellom 300 og 400 moh, brattaste 30 m 30,1 — men grad 3 er redaksjonell: Fri Flyt kallar turen vanskeleg med 35 grader på enklaste vegen, faremomenta er «skredutsatt terreng, vanskelig navigering og utglidningsfare», toppryggen ber skavlar mot Limomnen (NØ-flanken fell 55,5 grader på det brattaste), og turen er på Sæbyggjenuten-skalaen med 1240 høgdemeter og 6–8 timar.",
+   "roadClosedInWinter": false,
+   "hazardNotes": "Fri Flyt: vanskeleg, brattaste punkt 35 grader på enklaste vegen, faremoment «skredutsatt terreng, vanskelig navigering og utglidningsfare». Skavlar mot Limomnen på toppryggen. Fyrste stykket ber skia på godt opptrakka sti; frå Hjorteklett ber ein vanlegvis skia òg. Nedkøyringa langs bekken aust for Såta berre ved gode snøtilhøve.",
+   "teaserNo": "1240 høgdemeter frå Musland i Uskedalen: traktorveg og merkt sti, over dalen, opp til Såta og sørover den bratte ryggen — med skavlane mot Limomnen som følgje til topps.",
+   "teaserEn": "1240 metres of ascent from Musland in Uskedalen: tractor road and marked path, across the valley, up to Såta and south along the steep ridge — with the cornices over Limomnen for company to the top.",
+   "sources": [
+    "https://www.friflyt.no/topptur/skiturer-rosendal/turbeskrivelse-englafjell"
+   ],
+   "confidence": "medium"
+  }
+ },
+ {
+  "slug": "sandhornet",
+  "verdict": "corrected",
+  "corrections": [
+   "Fjellet står i Gildeskål (registerets Sandhornet, Fjell, 67.11117/14.06776); Fri Flyt fører turen under Bodø-området, og kortet ber Bodø slik Strandtinden ber Harstad. SSR-punktet les 989,3 mot publisert 993; toppsøket klatrar resten.",
+   "Horsdal-ruta reproduserer trinn for trinn: garden (Gard, 67.09426/14.05183) ligg på 13 moh, den merkte stien langs fjæra held ~0–28 moh, trappene opp mot Stjerndalen endar der terrenget flatar på ~190 (målt 189 på 67.09000/14.07000), og vidare nordover les lina 463 der kjelda seier 450, 662 og 752 i det slake partiet nord for punkt 592, før toppflanken.",
+   "Utløpseksponeringa kjelda åtvarar om er verifiserbar i registeret: Isvasstinden (Fjell, 67.09641/14.09665) står rett aust for Stjerndalen, og V- og SV-flankane hans heng over dalen lina går i. Guiden ber setninga ordrett omsett.",
+   "Ravika-ruta (frå den grøne garasjen, way-nettet ved Ravika Gard 67.12181/14.14939) er skildra fullt hos Fri Flyt, men nedfarten hennar har eit 40-gradersparti (920–840 moh) og oppturen brukar «det eneste snøfeltet/rampen» — ho er ikkje korridoren, og guiden nemner ho som varianten ho er."
+  ],
+  "rejectReason": "",
+  "corridor": {
+   "routeId": "horsdal",
+   "routeName": "Frå Horsdal om Stjerndalen",
+   "routeDescriptionFull": "Frå garden på Horsdal etter den merkte stien langs fjæra, opp trappene til flata i Stjerndalen på ~190 moh, nordover mot 450, vestover i slakt terreng nord for punkt 592, og nordover toppflanken til varden",
+   "trailhead": {
+    "name": "Horsdal",
+    "lat": 67.094,
+    "lng": 14.05,
+    "elevationM": 10.01,
+    "osmEvidence": "Ved registerets Horsdal (Gard, 67.09426/14.05183); den merkte stien langs fjæra går søraustover herifrå slik Fri Flyt seier."
+   },
+   "waypoints": [
+    {
+     "name": "stien langs fjæra",
+     "lat": 67.0895,
+     "lng": 14.0605,
+     "elevationM": 27.9
+    },
+    {
+     "name": "trappene, flata på 190",
+     "lat": 67.09,
+     "lng": 14.07,
+     "elevationM": 189
+    },
+    {
+     "name": "Stjerndalen",
+     "lat": 67.0915,
+     "lng": 14.075,
+     "elevationM": 267.59
+    },
+    {
+     "name": "nordover mot 450",
+     "lat": 67.098,
+     "lng": 14.075,
+     "elevationM": 463
+    },
+    {
+     "name": "nord for punkt 592",
+     "lat": 67.103,
+     "lng": 14.072,
+     "elevationM": 662
+    },
+    {
+     "name": "slakt terreng",
+     "lat": 67.106,
+     "lng": 14.066,
+     "elevationM": 752
+    }
+   ],
+   "season": "jan–apr",
+   "aspect": "S",
+   "grade": 2,
+   "gradeReason": "Målinga seier 2 og kortet ber 2 — brattaste hundremetersbeltet 21,3 grader mellom 900 og 1000 moh, brattaste 30 m 32,5 i toppflanken — i samsvar med Fri Flyts «under 30 grader bortsett fra de siste 50 høydemeterne». Utløpseksponeringa i Stjerndalen er fareteksten, ikkje brattleiken på sporet.",
+   "roadClosedInWinter": false,
+   "hazardNotes": "Fri Flyt: brattaste punkt 30 grader — heile lina held seg under 30 utanom dei siste 50 høgdemetrane — og faremerknaden er ordrett: turen i Stjerndalen går i utløpssoner for skredflanker, spesielt V- og SV-flankane under Isvasstinden, ver OBS på dagar med markert skredfare og om våren. Ravika-ruta med 40-graderspartiet er ikkje korridoren.",
+   "teaserNo": "1020 høgdemeter frå fjæra på Horsdal: stien langs sjøen, trappene til Stjerndalen, og slake rygger til varden på øyfjellet over Saltfjorden.",
+   "teaserEn": "1020 metres of ascent from the shore at Horsdal: the path along the sea, the stairs to Stjerndalen, and gentle ridges to the cairn on the island mountain above Saltfjorden.",
+   "sources": [
+    "https://www.friflyt.no/topptur/skiturer-bodoe/turbeskrivelse-sandhornet",
+    "https://www.friflyt.no/topptur/skiturer-bodoe"
+   ],
+   "confidence": "medium"
+  }
  }
 ]
