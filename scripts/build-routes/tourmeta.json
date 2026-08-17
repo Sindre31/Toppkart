@@ -43,6 +43,17 @@
   "season": "des–mai",
   "hasGuide": false
  },
+ "fastdalstinden": {
+  "name": "Fastdalstinden",
+  "region": "Lyngen",
+  "summitM": 1275,
+  "verticalM": 1270,
+  "duration": "6–8 t",
+  "grade": 3,
+  "aspect": "SØ",
+  "season": "jan–mai",
+  "hasGuide": false
+ },
  "tromsdalstinden": {
   "name": "Tromsdalstinden",
   "region": "Troms",
@@ -680,6 +691,17 @@
   "aspect": "Ø",
   "season": "feb–mai",
   "hasGuide": true
+ },
+ "togga": {
+  "name": "Togga",
+  "region": "Sogn",
+  "summitM": 1204,
+  "verticalM": 780,
+  "duration": "3–5 t",
+  "grade": 3,
+  "aspect": "SØ",
+  "season": "des–mars",
+  "hasGuide": false
  },
  "bitihorn": {
   "name": "Bitihorn",

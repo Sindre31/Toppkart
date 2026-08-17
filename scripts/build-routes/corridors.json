@@ -5337,8 +5337,7 @@
     ],
     "source": "researched, verified (corrected), no local audit",
     "notes": "Fri Flyt: KAST 2 – Utfordrende, brattaste punkt 25–30 grader på normalruta, faremoment «utløpsområder og skavler». Sørsida — nedfartsvarianten på 35–45 grader — «har vært skuddpunkt for dødelige skredulykker» og er ikkje korridoren. Normalruta II er eksponert for løysneområde ovanfrå mellom 700 og 900 moh. Rottenvikvatnet er eit magasin: lina held land rundt vest- og nordsida, og guiden må seia det.",
-    "avoidWater": true,
-    "waterNote": "Rottenvikvatnet er eit magasin (OSM-relasjon 8271819, water=reservoir; terrengklasse InnsjøRegulert, 513,0 moh). Lina ber vannkost og er pinna på land langs vest- og nordsida, slik Fri Flyts normalrute seier."
+    "avoidWater": true
    }
   ]
  },

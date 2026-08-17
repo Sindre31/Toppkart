@@ -174,6 +174,47 @@ export const GUIDES: Record<string, TourGuide> = {
       caption: "450 høydemeter og 2,32 km fra Storelva skistadion på 20 moh, ut av lysløypa på 96 moh og opp den åpne sørøstsida over 303 og 431.",
     },
   },
+  fastdalstinden: {
+    slug: "fastdalstinden",
+    intro:
+      "1271 høgdemeter og 7,32 km frå vegenden på Varto — ein Lyngen-klassikar med lang anmarsj og eit magasin midt i turen. Fri Flyt gjev normalruta KAST 2 og brattaste punkt 25–30 grader, og målinga av lina er snillare enn ryktet: brattaste hundremetersbeltet 19,5 grader mellom 200 og 300 moh, brattaste samanhengande parti 25,5. Grad 3 på kortet er skalaen, ikkje bratthenget: dette er ein 6–8-timarstur der terrenget ikring — skavlar, utløpsområde og ei sørside med dødsulukker i historikken — er ein annan klasse enn sporet.",
+    ascent: [
+      "Frå fv7920 ved Rottenvik tek Vardoveien av og klatrar om lag ein kilometer til vegenden på 123 moh — Fri Flyts «parkeringsplass på Varto», og registeret sitt Varto. Anleggsvegen held fram vestover og oppover: han er kartlagd heile vegen til dammen på 515 moh, og dei fyrste fire hundre høgdemetrane er unnagjort på veg. Skogen sluttar alt på 363 moh etter Kartverkets klassar.",
+      "Dammen fortener si eiga setning: Rottenvikvatnet er eit magasin — regulert, med terrengklasse deretter — og isen på eit regulert vatn skal ikkje brukast. Lina går difor slik kjelda seier, langs vest- og seinare nordsida av vatnet, på land heile vegen: vestbredda på 566, nordvestbredda på 572, nordenden på 589 moh. Det er målt mot både terrengklassane og OSM-polygonet: 0 meter på vatn.",
+      "Frå nordenden av vatnet stig terrenget til flata Fri Flyt set på 650 moh — målt 650 på metern. Vidare vestover passerer lina nord for det vesle vatnet på 697, og så kjem ryggformasjonen kjelda ber deg vera vaken på: «småbratte områder rundt 30 grader krever oppmerksomhet på veivalg». Lina held 815 → 1070 på ryggen, med linevalet som verktøyet.",
+      "Frå ryggen er det rett mot toppen, slik kjelda seier. Varden står på 1275 moh, og søraustsida du kom opp er den slakaste sektoren fjellet har: 16,0 grader i snitt og 28,4 som brattaste 60 m-vindauge dei fyrste hundre metrane.",
+    ],
+    descent: [
+      "Same trasé ned som opp er kjeldas råd, og tala er med han: søraust frå varden er den einaste sektoren utan 30-gradersvindauge nær toppen. Ned ryggen, forbi det vesle vatnet, ned på flata og rundt magasinet på land att — 119 høgdemeter å gje tilbake har turen samla, det meste rundt vatnet og på anleggsvegen.",
+      "Sørsidenedfarten Fri Flyt nemner — 35–45 grader ned mot Rottenvikvatnet — er ikkje denne lina, og han seier sjølv kvifor med uvanleg tunge ord: sørsida har vore skotpunkt for dødelege skredulukker, steinparti kring 1000 moh må identifiserast på veg opp, og utkøyringa krev sikker is på eit vatn som er regulert. Denne guiden teiknar henne ikkje.",
+      "Ver òg vaken vest og sørvest for varden: sveipa måler 34,3 og 32,5 grader i snitt der, med 46,6 og 51,6 som brattaste vindauge — fjordsida er alpin, og i flatt lys er kanten lett å koma for nær.",
+    ],
+    avalanche: [
+      {
+        title: "Ruta",
+        body: "Fri Flyts faremoment er «utløpsområder og skavler», og det er presist: sjølve lina held 25,5 grader som brattaste samanhengande parti, men ho kryssar under brattare flanker — ryggformasjonen har småbratte parti kring 30 grader, og Normalruta II lenger nord er eksponert for løysneområde ovanfrå mellom 700 og 900 moh. Vel ryggen med augo oppover, ikkje berre nedover.",
+      },
+      {
+        title: "Sørsida",
+        body: "«Sørsiden har vært skuddpunkt for dødelige skredulykker», skriv Fri Flyt, og han meiner nedfartsvarianten på 35–45 grader mot Rottenvikvatnet. Han ligg rett ved normalruta og freistar på veg ned. Målingane frå varden seier at alt vest om sør er alpint: SV 51,6 grader som brattaste vindauge, V 46,6, NV 41,0.",
+      },
+      {
+        title: "Magasinet",
+        body: "Rottenvikvatnet er regulert, og regulert is skal ikkje brukast — trekt ned vinterstid legg han seg i sprekker og holrom langs land. Lina går rundt vatnet på land i begge retningar, målt punkt for punkt, og den einaste grunnen til å vera på isen er å ha valt feil. Anleggsvegen og dammen er der fordi dette er eit kraftmagasin; les landskapet deretter.",
+      },
+      {
+        title: "Før du går",
+        body: "Fastdalstinden ligg i varslingsregionen Lyngen, ein A-region med dagleg skredvarsel gjennom sesongen — sjekk varsom.no. Sesongen januar–mai er Fri Flyts eigen. Ta med sender/mottakar, søkjestong og spade. Ei tom varselside er ikkje det same som eit trygt fjell.",
+      },
+    ],
+    elevationProfile: {
+      path: "M0,200 L22,187 L55,165 L77,151 L99,144 L125,137 L151,136 L181,137 L214,138 L225,138 L229,138 L233,138 L235,138 L252,138 L278,135 L304,138 L317,134 L344,130 L365,129 L381,119 L411,114 L433,111 L463,102 L488,86 L509,73 L530,59 L555,45 L585,27 L600,18",
+      startLabel: "123 moh",
+      endLabel: "1275 moh",
+      distanceLabel: "7,3 km",
+      caption: "1271 høgdemeter og 7,32 km frå Varto — anleggsveg, magasin rundt på land, og ryggen rett mot toppen på 1275.",
+    },
+  },
   tromsdalstinden: {
     slug: "tromsdalstinden",
     intro:
@@ -2307,6 +2348,47 @@ export const GUIDES: Record<string, TourGuide> = {
       endLabel: "1475 moh",
       distanceLabel: "2,1 km",
       caption: "1060 til 1475 moh på knapt to kilometer — jevn stigning i åpent terreng, brattest de siste hundre høydemeterne.",
+    },
+  },
+  togga: {
+    slug: "togga",
+    intro:
+      "780 høgdemeter og 2,64 km — Togga er ein av dei kortaste vegane til ein topp i Sogndalsdalen, og det er nett difor fjellet er så mykje brukt: null anmarsj frå toppturparkeringa på Brandhaugane ved rv5, skogskøyring og ope terreng i same tur, og seks nedfartar hos Fri Flyt. Kortet ber grad 3, og grunnen står i kjeldas eiga åtvaring: på søraustryggen — normalvegen — har skiløparar løyst ut skred under opptur i ustabile forhold. Lina målar 27,5 grader som brattaste samanhengande parti; henget ho går i, gjev Fri Flyt 33–35.",
+    ascent: [
+      "Start på toppturparkeringa på Brandhaugane, 427 moh ved rv5 nokre kilometer før skisenteret — registeret har Brandhaugane som haug i skogen rett ved, og Fri Flyts 785 høgdemeter impliserer nøyaktig denne starten. Gå mot søraustryggen og følg han oppover gjennom skogen; lina passerer 542 moh i skogen, som etter Kartverkets klassar sluttar på 765.",
+      "Over skoggrensa kjem det brattare partiet — 744 moh på veg inn i det, og det brattaste hundremetersbeltet på turen, 22,5 grader i snitt mellom 800 og 900 moh. Dette er staden kjeldas skredåtvaring gjeld: her har skiløparar løyst ut skred på veg OPP. Sikksakk med vit, og snu her om snøen seier frå.",
+      "Ved Orraleiken flatar terrenget ut, slik kjelda seier — registerpunktet les 1042 moh i ope terreng. Pusterom, og så den siste stigninga: lina passerer 1155 og varden står på 1204 moh, målt mot registerets 1203 og Fri Flyts publiserte 1205.",
+      "Registeret fortener ei setning her òg: utan styring klatrar toppsøket forbi namnet og vidare vestover, for ryggen stig utan skar mot høgare fjell — 1236 berre 280 meter vest, 1354 knapt kilometeren ute. Togga er det namngjevne punktet, ikkje det høgaste på ryggen, og kortet ber det namngjevne.",
+    ],
+    descent: [
+      "Normalvegen ned er same veg som opp: siste stigninga, Orraleiken, og det brattare partiet ned i skogen. Det brattare partiet er same henget som på veg opp — det som kan løysast ut under opptur, kan løysast ut under nedkøyring, og linevalet frå oppturen er fasiten.",
+      "Fri Flyt skildrar seks nedfartar — søraustryggen, to på sørsida, ei på nordsida og to austover, med utgangar mot Laugadalen, Gunvordalen og Vatnasete. Ingen av dei er denne lina, og målingane frå varden seier kva dei krev: nordsida fell 44,8 grader på det brattaste berre 210–270 m ut, nordaustsida 50,5 og austsida 51,1 lenger ute, sørsida 41,9 grader 220–280 m ut. Det er ekte alpine alternativ på eit fjell med kort veg heim — vel etter snøen, ikkje etter lista.",
+      "Vestover skal ingen: ryggen stig vidare mot høgare fjell, og i skodde er det den vegen ein hamnar om ein berre «følgjer ryggen». Kompasskurs søraust frå varden.",
+    ],
+    avalanche: [
+      {
+        title: "Normalvegen",
+        body: "Fri Flyts eiga åtvaring er uvanleg konkret, og han skal sitera nesten ordrett: på søraustryggen er det eit brattare parti der skiløparar har løyst ut snøskred under opptur når det er ustabile snøforhold. Det partiet ligg mellom skoggrensa på 765 og Orraleiken på 1042, med beltet 800–900 moh som det brattaste målte. Kjeldas brattaste punkt er 33–35 grader; lina sikksakkar slakare, men henget er det same.",
+      },
+      {
+        title: "Variantane",
+        body: "Seks nedfartar gjev seks måtar å auka innsatsen på: nord-, nordaust- og austsida måler 44,8 til 51,1 grader i sine brattaste 60 m-vindauge, sørsida 41,9. Kort veg til bilen gjer det freistande å ta ein variant til — det er nett då snøvurderinga frå i stad skal gjelda enno.",
+      },
+      {
+        title: "Ryggen som stig",
+        body: "Vest for varden stig ryggen vidare utan skar — snittet vestover er negativt fordi terrenget går opp. I godt vêr er det openbert; i skodde er det felle: den som følgjer ryggen vidare, går inn i brattare og villare fjell, ikkje ned. Søraust er heimvegen, alltid.",
+      },
+      {
+        title: "Før du går",
+        body: "Togga ligg i varslingsregionen Indre Sogn, ein A-region med dagleg skredvarsel gjennom sesongen — sjekk varsom.no. Sesongen desember–mars er Fri Flyts eigen. Ta med sender/mottakar, søkjestong og spade. Ei tom varselside er ikkje det same som eit trygt fjell.",
+      },
+    ],
+    elevationProfile: {
+      path: "M0,200 L21,200 L50,200 L80,194 L103,188 L121,181 L138,177 L152,173 L172,165 L183,161 L203,154 L223,146 L238,141 L264,130 L285,125 L305,117 L326,108 L342,101 L356,95 L377,87 L391,82 L416,73 L428,68 L449,58 L464,52 L488,47 L506,42 L520,37 L532,33 L551,28 L571,23 L590,20 L600,18",
+      startLabel: "427 moh",
+      endLabel: "1204 moh",
+      distanceLabel: "2,6 km",
+      caption: "780 høgdemeter og 2,64 km frå Brandhaugane — søraustryggen med det skredutsette brattpartiet, Orraleiken, og varden på 1204.",
     },
   },
   bitihorn: {

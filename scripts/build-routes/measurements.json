@@ -1315,5 +1315,44 @@
    "figure": "OSM-parkeringa node/3397435896 (67.32014/15.02767) les 11,0 moh, ved rv80 (Bodøveien way/784302844) nordaust for Sagelva-utløpet (way/519168913 kryssar rv80 ved 67.319/15.011); Kleivberget-punktet står på 67.32354/15.04705",
    "how": "OSM-geometri prøvetatt mot DTM1; SSR-søk med knr=1804."
   }
+ ],
+ "fastdalstinden": [
+  {
+   "what": "Fallet frå varden i åtte retningar",
+   "figure": "N 24,9° i snitt med 46,5° som brattaste 60 m 550–610 m ut; NØ 23,8° / 38,2° 20–80 m ut; Ø 24,6° / 34,7° 20–80 m ut; SØ 16,0° / 28,4° 40–100 m ut; S 21,1° / 28,2° 710–770 m ut; SV 32,5° / 51,6° 230–290 m ut; V 34,3° / 46,6° 390–450 m ut; NV 32,4° / 41,0° 550–610 m ut",
+   "how": "flank_probe.py frå 69.62935/20.16792, 800 m ut, prøvetatt kvar 10. m i DTM-en."
+  },
+  {
+   "what": "Rottenvikvatnet er eit magasin, og lina held land",
+   "figure": "OSM-relasjon 8271819 ber water=reservoir; terrengklassen les InnsjøRegulert på 513,0 moh. Off-water-passet i ruteren melde 9 m att på vatn mot terrengklassane — strandlinjestøy ved magasinkanten — medan check_ground.py mot OSM-polygonet måler 0 m på vatn. Vest- og nordbredda er pinna på land: 566,2 / 572,4 / 588,9 moh",
+   "how": "generate_routes.py med avoidWater; check_ground.py mot OSM; DTM1-punkt-API på pinnane."
+  },
+  {
+   "what": "Vegkjeda og Fri Flyts høgder reproduserer",
+   "figure": "Vardoveien (way/412108701, grus) endar på 123 moh — 1275 − 1160 = 115 hos Fri Flyt; anleggsvegen (way/1008162591) endar ved dammen på 515; flata «på 650 moh» les 649,7; det vesle vatnet er kartlagd (way/1381316784) og lina passerer nord for det på 696,8; ryggformasjonen les 814,8 → 1069,7",
+   "how": "OSM-geometri prøvetatt mot DTM1; SSR-oppslag på Varto (Høyde) og Rottenvikvatnet."
+  },
+  {
+   "what": "check_ground sitt løypefunn, lese og lagt til sides",
+   "figure": "Funnet «says anleggsveg ... strays 771 m (3598 m out)» gjeld fjellhalvdelen — flata, ryggen og toppen — der guiden ikkje hevdar nokon veg. Vegpåstanden dekkjer strekket vegende→dam, og der ligg lina på den kartlagde anleggsvegen (way/1008162591). Same delvis-påstand-forma som Varden (Småtindan); sjekken kan ikkje sjå at påstanden sluttar ved dammen",
+   "how": "check_ground.py over lina; lesen mot guideteksten og OSM-geometrien."
+  }
+ ],
+ "togga": [
+  {
+   "what": "Fallet frå varden i åtte retningar",
+   "figure": "N 33,5° i snitt med 44,8° som brattaste 60 m 210–270 m ut; NØ 34,9° / 50,5° 460–520 m ut; Ø 31,6° / 51,1° 320–380 m ut; SØ 19,7° / 30,4° 230–290 m ut; S 30,6° / 41,9° 220–280 m ut; SV 20,7° / 37,7° 410–470 m ut; V −7,4° i snitt (ryggen stig vidare) / 11,9° 250–310 m ut; NV 25,4° / 51,5° 200–260 m ut",
+   "how": "flank_probe.py frå 61.33505/6.89289, 800 m ut, prøvetatt kvar 10. m i DTM-en."
+  },
+  {
+   "what": "Toppen er eit namngjeve punkt på ein stigande rygg",
+   "figure": "Utan kapp klatra toppsøket til 1235,5 moh 280 m vest for namnet, og ryggen stig vidare utan skar (1282,5 på 590 m, 1354,0 på 990 m, 1438,6 på 2,2 km). SUMMIT_CAP_M['togga']=150 løyser toppen til 1203,8 på 61.33505/6.89289 — registerpunktet les 1202,6, publisert 1205",
+   "how": "resolve_summits.py med og utan kapp; DTM1-raster."
+  },
+  {
+   "what": "Fri Flyts tal reproduserer",
+   "figure": "Brandhaugane (Haug) les 426,1 moh og 1205 − 785 = 420; Orraleiken (Haug, 61.33210/6.90093) les 1042,3 der «terrenget flater ut»; ruta måler 2,64 km mot publiserte 2,7",
+   "how": "SSR-oppslag; DTM1-punkt-API; route_metrics.py."
+  }
  ]
 }

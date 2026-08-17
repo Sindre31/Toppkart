@@ -1566,5 +1566,37 @@
   "aspect": "SØ",
   "distanceKm": 4.2,
   "cumdistM": 4148
+ },
+ "fastdalstinden": {
+  "verticalM": 1270,
+  "gainM": 1271,
+  "distanceM": 7315,
+  "startM": 123,
+  "summitM": 1275,
+  "duration": "6–8 t",
+  "steepestBandAngle": 19.5,
+  "steepestBandFrom": 200,
+  "steepestBandTo": 300,
+  "maxStepAngle": 25.5,
+  "grade": 2,
+  "aspect": "S",
+  "distanceKm": 7.3,
+  "cumdistM": 7318
+ },
+ "togga": {
+  "verticalM": 780,
+  "gainM": 780,
+  "distanceM": 2640,
+  "startM": 427,
+  "summitM": 1204,
+  "duration": "3–5 t",
+  "steepestBandAngle": 22.5,
+  "steepestBandFrom": 800,
+  "steepestBandTo": 900,
+  "maxStepAngle": 27.5,
+  "grade": 2,
+  "aspect": "SØ",
+  "distanceKm": 2.6,
+  "cumdistM": 2644
  }
 }

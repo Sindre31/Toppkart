@@ -234,6 +234,10 @@ export const TOUR_TEASER_EN: Record<string, string> = {
     "820 metres of ascent from Eidet by Kabelvåg: the lit trail along Karlsvatnet, over the neck towards Aksla, through the notch around Ørntinden, and the west flank to the top of the archipelago's most skied tour.",
   midtitinden:
     "1050 metres of ascent from sea level at Sagelva: through the cabin field, the ramps towards Innertinden, the military route markers westwards and the ridges to the top.",
+  fastdalstinden:
+    "1270 metres of ascent from the road end at Varto: the works road to the dam, on land around the regulated Rottenvikvatnet, the flat at 650 and the ridge straight at the summit.",
+  togga:
+    "780 metres of ascent straight from the ski-touring car park at Brandhaugane: the south-east ridge through the forest, the flat at Orraleiken, and the last climb to the cairn.",
 
 };
 
@@ -431,6 +435,45 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       endLabel: "470 m",
       distanceLabel: "2.3 km",
       caption: "450 metres of climbing and 2.32 km from the Storelva ski stadium at 20 m, off the lit trail at 96 m and up the open south-east side past 303 and 431.",
+    },
+  },
+  fastdalstinden: {
+    intro:
+      "1271 metres of ascent and 7.32 km from the road end at Varto — a Lyngen classic with a long approach and a reservoir in the middle of the tour. Fri Flyt rates the normal route KAST 2 with a steepest point of 25–30 degrees, and the measured line is kinder than the reputation: steepest 100-metre band 19.5 degrees between 200 and 300 metres, steepest sustained stretch 25.5. The card's grade 3 is the scale, not the steepness: this is a 6–8 hour tour where the surrounding terrain — cornices, runout zones and a south side with fatal accidents in its history — is a different class from the track.",
+    ascent: [
+      "From road 7920 at Rottenvik, Vardoveien branches off and climbs about a kilometre to the road end at 123 metres — Fri Flyt's 'car park at Varto', and the register's Varto. The works road continues west and upwards: it is mapped all the way to the dam at 515 metres, and the first four hundred vertical metres are done on a road. The forest ends already at 363 metres by Kartverket's classes.",
+      "The dam deserves its own sentence: Rottenvikvatnet is a reservoir — regulated, with the terrain class to match — and the ice on a regulated lake is not to be used. The line therefore goes as the source says, along the west and later the north side of the lake, on land the whole way: the west shore at 566, the north-west shore at 572, the north end at 589 metres. That is measured against both the terrain classes and the OSM polygon: 0 metres on water.",
+      "From the north end of the lake the ground rises to the flat Fri Flyt puts at 650 metres — measured 650 to the metre. Continuing west, the line passes north of the little lake at 697, and then comes the ridge formation the source tells you to stay awake on: 'slightly steep areas around 30 degrees demand attention to line choice'. The line holds 815 → 1070 on the ridge, with line choice as the tool.",
+      "From the ridge it is straight at the summit, as the source says. The cairn stands at 1275 metres, and the south-east side you came up is the gentlest sector the mountain has: a mean 16.0 degrees, with 28.4 as the steepest 60-metre window in the first hundred metres.",
+    ],
+    descent: [
+      "The same line down as up is the source's advice, and the numbers side with it: south-east off the cairn is the only sector without 30-degree windows near the top. Down the ridge, past the little lake, onto the flat and around the reservoir on land again — the tour gives back 119 vertical metres in total, most of it around the lake and on the works road.",
+      "The south-side descent Fri Flyt mentions — 35–45 degrees down towards Rottenvikvatnet — is not this line, and the source itself says why in unusually heavy words: the south side has been the trigger point of fatal avalanche accidents, rock sections around 1000 metres must be identified on the way up, and the runout demands solid ice on a lake that is regulated. This guide does not draw it.",
+      "Stay awake west and south-west of the cairn too: the sweeps measure a mean 34.3 and 32.5 degrees there, with 46.6 and 51.6 as the steepest windows — the fjord side is alpine, and in flat light the edge is easy to get too close to.",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "Fri Flyt's stated hazards are 'runout zones and cornices', and that is precise: the line itself holds 25.5 degrees as its steepest sustained stretch, but it crosses beneath steeper flanks — the ridge formation has slightly steep sections around 30 degrees, and Normal Route II further north is exposed to release zones from above between 700 and 900 metres. Choose the ridge with your eyes uphill, not only downhill.",
+      },
+      {
+        title: "The south side",
+        body: "'The south side has been the trigger point of fatal avalanche accidents', writes Fri Flyt, meaning the 35–45 degree descent variant towards Rottenvikvatnet. It lies right beside the normal route and tempts on the way down. The measurements from the cairn say that everything west of south is alpine: SW 51.6 degrees as the steepest window, W 46.6, NW 41.0.",
+      },
+      {
+        title: "The reservoir",
+        body: "Rottenvikvatnet is regulated, and regulated ice is not to be used — drawn down in winter it settles into cracks and voids along the shore. The line goes around the lake on land in both directions, measured point by point, and the only reason to be on the ice is to have chosen wrong. The works road and the dam are there because this is a power reservoir; read the landscape accordingly.",
+      },
+      {
+        title: "Before you go",
+        body: "Fastdalstinden is in the Lyngen forecast region, an A region with a daily avalanche bulletin through the season — check varsom.no. The season January–May is Fri Flyt's own. Bring transceiver, probe and shovel. An empty forecast page does not mean a safe mountain.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "123 m",
+      endLabel: "1275 m",
+      distanceLabel: "7.3 km",
+      caption: "1271 metres of ascent and 7.32 km from Varto — a works road, a reservoir rounded on land, and the ridge straight at the 1275-metre summit.",
     },
   },
   tromsdalstinden: {
@@ -2450,6 +2493,45 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       endLabel: "1475 m",
       distanceLabel: "2.1 km",
       caption: "1060 to 1475 m in barely two kilometres — an even climb in open terrain, steepest over the last hundred metres.",
+    },
+  },
+  togga: {
+    intro:
+      "780 metres of ascent and 2.64 km — Togga is one of the shortest ways to a summit in Sogndalsdalen, and that is exactly why the mountain sees so much use: zero approach from the ski-touring car park at Brandhaugane on highway 5, forest skiing and open ground in the same tour, and six descents in Fri Flyt's book. The card carries grade 3, and the reason stands in the source's own warning: on the south-east ridge — the normal route — skiers have triggered avalanches on the way up in unstable conditions. The line measures 27.5 degrees as its steepest sustained stretch; the slope it climbs, Fri Flyt gives 33–35.",
+    ascent: [
+      "Start at the ski-touring car park at Brandhaugane, 427 metres by highway 5 a few kilometres before the ski centre — the register has Brandhaugane as a knoll in the forest right beside it, and Fri Flyt's 785 vertical metres imply exactly this start. Head for the south-east ridge and follow it up through the forest; the line passes 542 metres in forest, which by Kartverket's classes ends at 765.",
+      "Above the treeline comes the steeper section — 744 metres on the way into it, and the steepest 100-metre band of the tour, a mean 22.5 degrees between 800 and 900 metres. This is where the source's avalanche warning applies: here skiers have triggered avalanches on the way UP. Switchback with care, and turn around here if the snow says so.",
+      "At Orraleiken the ground levels out, as the source says — the register point reads 1042 metres on open ground. A breather, and then the last climb: the line passes 1155 and the cairn stands at 1204 metres, measured against the register's 1203 and Fri Flyt's published 1205.",
+      "The register deserves a sentence here too: unguided, the summit search climbs past the name and on westwards, because the ridge rises without a saddle towards higher mountains — 1236 only 280 metres west, 1354 barely a kilometre out. Togga is the named point, not the highest on the ridge, and the card carries the named one.",
+    ],
+    descent: [
+      "The normal way down is the way up: the last climb, Orraleiken, and the steeper section down into the forest. The steeper section is the same slope as on the ascent — what can be triggered on the way up can be triggered on the way down, and the line choice from the ascent is the answer key.",
+      "Fri Flyt describes six descents — the south-east ridge, two on the south side, one on the north side and two eastwards, with exits towards Laugadalen, Gunvordalen and Vatnasete. None of them is this line, and the measurements from the cairn say what they demand: the north side falls 44.8 degrees at its steepest only 210–270 m out, the north-east 50.5 and the east side 51.1 further out, the south side 41.9 degrees 220–280 m out. These are genuinely alpine options on a mountain with a short way home — choose by the snow, not by the list.",
+      "Nobody should go west: the ridge rises on towards higher mountains, and in fog that is where you end up if you just 'follow the ridge'. A compass bearing south-east from the cairn.",
+    ],
+    avalanche: [
+      {
+        title: "The normal route",
+        body: "Fri Flyt's own warning is unusually concrete, and it deserves near-verbatim quoting: on the south-east ridge there is a steeper section where skiers have triggered avalanches during the ascent in unstable snow conditions. That section lies between the treeline at 765 and Orraleiken at 1042, with the 800–900 metre band as the steepest measured. The source's steepest point is 33–35 degrees; the line switchbacks gentler, but the slope is the same.",
+      },
+      {
+        title: "The variants",
+        body: "Six descents give six ways to raise the stakes: the north, north-east and east sides measure 44.8 to 51.1 degrees in their steepest 60-metre windows, the south side 41.9. A short way to the car makes one more lap tempting — which is exactly when the snow assessment from earlier still has to hold.",
+      },
+      {
+        title: "The rising ridge",
+        body: "West of the cairn the ridge keeps rising without a saddle — the mean westwards is negative because the ground goes up. In clear weather that is obvious; in fog it is a trap: whoever follows the ridge onwards walks into steeper, wilder mountains, not down. South-east is the way home, always.",
+      },
+      {
+        title: "Before you go",
+        body: "Togga is in the Indre Sogn forecast region, an A region with a daily avalanche bulletin through the season — check varsom.no. The season December–March is Fri Flyt's own. Bring transceiver, probe and shovel. An empty forecast page does not mean a safe mountain.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "427 m",
+      endLabel: "1204 m",
+      distanceLabel: "2.6 km",
+      caption: "780 metres of ascent and 2.64 km from Brandhaugane — the south-east ridge with its avalanche-prone steep section, Orraleiken, and the cairn at 1204.",
     },
   },
   bitihorn: {

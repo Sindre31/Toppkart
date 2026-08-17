@@ -3048,6 +3048,88 @@ terrain model as the second witness. And the popularity question still has
 areas left to ask in — Vesterålen's and Helgeland's most-visited names were
 not settled this round.
 
+## The backlog round
+
+`newtours.py` has carried a registry of names since the second batch, and
+eleven of them never got a corridor. This round asked which of the backlog
+have full published ski descriptions and skinnable lines — and shipped the
+two that do. The app goes from 98 tours to **100**.
+
+One more name left the backlog by rejection: **Store Kjostinden (1488)**,
+whose Fri Flyt description has a main ascent holding 35–45° between 1080 and
+1340 moh and an east alternative up Rottenvikbreen — the Istinden conclusion
+again, recorded in `new_corridors.json`.
+
+| tour | region | start | summit | gain | km | steepest 100 m band | steepest 30 m | grade |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Fastdalstinden | Lyngen | 123 | 1275 | 1271 | 7.3 | 19.5° | 25.5° | 3 |
+| Togga | Sogn | 427 | 1204 | 780 | 2.6 | 22.5° | 27.5° | 3 |
+
+Both seasons are published for once — Fri Flyt's own januar–mai and
+desember–mars — so no borrowing rule was needed. Both summits sit in
+A regions, queried per coordinate: Lyngen (3010) and Indre Sogn (3029).
+
+### Fastdalstinden, and the reservoir in the middle of the tour
+
+The start «parkeringsplass på Varto» resolved through a road name:
+**Vardoveien** (gravel, `way/412108701`) leaves fv7920 at Rottenvik and ends
+at 123 moh — Fri Flyt's «relativt smal vei ca. 1 km», beside the register's
+Varto, and 1275 − 1160 = 115 confirms the start. The anleggsvei it becomes
+is mapped to the dam at 515, and the dam is the finding: **Rottenvikvatnet
+is a reservoir** (`relation/8271819`, water=reservoir; InnsjøRegulert,
+513,0 moh). The corridor carried the water cost from the first solve, the
+west-and-north-shore instruction is pinned on land (566 / 572 / 589 moh),
+and the two water judges disagree by a hair worth recording: the router's
+off-water pass reported 9 m left on water against Kartverket's terrain
+classes — shoreline noise at the reservoir edge — while `check_ground.py`
+against the OSM polygon measures 0 m.
+
+The rest of Normalruta I reproduces: the flat «på 650 moh» measures 650 to
+the metre, the little lake west of it is mapped, and the «liten
+ryggformasjon» with its 30° spots holds 815 → 1070 on the line. The grade-3
+card over a measured 2 is editorial with its reason recorded: 1270 hm and
+6–8 hours is the Sæbyggjenuten scale, the stated hazards are «utløpsområder
+og skavler», and Fri Flyt says of the south-side descent variant — in
+unusually heavy words for a guidebook — that it «har vært skuddpunkt for
+dødelige skredulykker». The guide quotes that sentence and does not draw
+the variant; the eight-direction sweep (SW 51,6°, W 46,6° at their
+steepest) backs it.
+
+### Togga, and the summit search that walked off the name
+
+The old registry resolution for Togga stood 280 m west of the name at
+1235,5 moh — a bump on a ridge that keeps rising west-south-west without a
+saddle (1282,5 at 590 m, 1354,0 at 990 m, 1438,6 at 2,2 km). That is the
+Rødtinden shape: a named point on connected rising ground, where
+hill-climbing has nothing to stop it. `SUMMIT_CAP_M` now carries
+`togga: 150` with the reason beside it, and the capped search resolves
+1203,8 at the register point (1202,6) against a published 1205. The guide
+turns the same fact into the navigation hazard it is: west of the cairn the
+mean is *negative* because the ridge climbs on — in fog, «following the
+ridge» walks into bigger mountains, not down.
+
+Everything else reproduces exactly: Brandhaugane (Haug, 426,1 — and
+1205 − 785 = 420), Orraleiken «flater ut» at a measured 1042,3, the route
+2,64 km against a published 2,7. The card's grade 3 over a measured 2 is
+Fri Flyt's own warning made editorial: «på søraustryggen (normalvegen) er
+det eit brattare parti der skiløparar har utløyst snøskred under opptur» —
+the 800–900 band, measured 22,5° with the line switchbacking gentler than
+the 33–35° fall line. Both guides carry that asymmetry explicitly: the
+line's numbers are the track's, not the slope's.
+
+The proof: `check_routes.py` 100 tours / 109 routes, `check_tours.py` 100
+cards, `check_guides.py` 0 unsourced numbers and 0 reassurance claims
+across 200 guide texts, `test_check_guides.py` 15 cases, `check_ground.py`
+0 m on water on both lines (one partial-claim trail note read and set aside
+in `measurements.json`, the Varden shape again), and the CI suite.
+
+### Still open
+
+Ten backlog names remain unbuilt, most for want of a published ski
+description rather than research effort: istinden (Narvik), skjomtinden,
+storsteinsfjellet, storsylen (rejected), fongen, trollhetta, blahoa,
+storskrymten, englafjell, grubba. The adversarial-read gap now counts ten.
+
 ## Network
 
 Everything is public and unauthenticated:
