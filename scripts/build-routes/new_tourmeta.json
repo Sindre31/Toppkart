@@ -1801,10 +1801,10 @@
   "season": "jan–apr",
   "aspect": "Ø",
   "grade": 2,
-  "gradeReason": "Målinga seier 2 og kortet ber 2 — brattaste hundremetersbeltet 22,2 grader mellom 600 og 700 moh, brattaste 30 m 31,3 — i samsvar med Fri Flyts KAST 2 – Utfordrende. Flankane kring den øvre lina stig 35–40 grader etter Fri Flyt, og skredfaren han åtvarar om i Kolbeindalen ligg rett nord for ryggen.",
+  "gradeReason": "Målinga seier 2 og kortet ber 2 — brattaste hundremetersbeltet 22,8 grader mellom 600 og 700 moh, brattaste 30 m 32,3 — i samsvar med Fri Flyts KAST 2 – Utfordrende. Flankane kring den øvre lina stig 35–40 grader etter Fri Flyt, og skredfaren han åtvarar om i Kolbeindalen ligg rett nord for ryggen.",
   "roadClosedInWinter": false,
-  "teaserNo": "820 høgdemeter frå Eidet ved Kabelvåg: lysløypa langs Karlsvatnet, over eidet mot Aksla, gjennom skaret rundt Ørntinden, og vestflanken til toppen av øygruppas mest gåtte skitur.",
-  "teaserEn": "820 metres of ascent from Eidet by Kabelvåg: the lit trail along Karlsvatnet, over the neck towards Aksla, through the notch around Ørntinden, and the west flank to the top of the archipelago's most skied tour.",
+  "teaserNo": "825 høgdemeter frå Eidet ved Kabelvåg: lysløypa langs Karlsvatnet, over eidet mot Ørntindaksla og gjennom skaret vest for han, og austflanken til toppen av øygruppas mest gåtte skitur.",
+  "teaserEn": "825 metres of ascent from Eidet by Kabelvåg: the lit trail along Karlsvatnet, over the neck towards Ørntindaksla and through the notch west of it, and the east flank to the top of the archipelago's most skied tour.",
   "hazardNotes": "Fri Flyt: KAST 2 – Utfordrende. «Skredfare i Kolbeindalen» og skytebane i botnen av dalen — Kolbeindalen er ikkje korridoren, og guiden må seia det. «I øvre deler stiger henget 35-40 grader bratt» — flankane kring den øvre lina. Nedfarten er same veg («samme rute ned for maksimal sikkerhet»); vestsidevarianten mot Lyngvær krev tilrettelagd transport og er ikkje korridoren. Stor-Kongsvatnet er regulert og Karlsvatnet ligg på 12 moh ved kysten — lina går over eidet mellom dei på land, med vannkost, og check_ground.py er dommaren.",
   "sources": [
    "https://www.friflyt.no/topptur/skiturer-lofoten/turbeskrivelse-varden-smaatindan",
@@ -1849,11 +1849,11 @@
   "season": "jan–mai",
   "aspect": "SØ",
   "grade": 3,
-  "gradeReason": "Målinga seier 2 — brattaste hundremetersbeltet 19,5 grader mellom 200 og 300 moh, brattaste 30 m 25,5 — men grad 3 er redaksjonell: 1270 høgdemeter og 6–8 timar er Sæbyggjenuten-skalaen, Fri Flyts faremoment er «utløpsområder og skavler», og sørsida rett ved nedfarten «har vært skuddpunkt for dødelige skredulykker». KAST 2 gjeld normalruta; fjellet ikring er ein annan klasse.",
+  "gradeReason": "Målinga seier 2 — brattaste hundremetersbeltet 19,5 grader mellom 200 og 300 moh, brattaste 30 m 25,5 — men grad 3 er redaksjonell: 1270 høgdemeter og 6–8 timar er Sæbyggjenuten-skalaen, Fri Flyts faremoment er «utløpsområder og skavler», og sørsida rett ved nedfarten «har vært åsted for et par tragiske skredulykker med dødelig utfall». KAST 2 gjeld normalruta; fjellet ikring er ein annan klasse.",
   "roadClosedInWinter": false,
   "teaserNo": "1270 høgdemeter frå vegenden på Varto: anleggsvegen til dammen, på land rundt det regulerte Rottenvikvatnet, flata på 650 og ryggen rett mot toppen.",
   "teaserEn": "1270 metres of ascent from the road end at Varto: the works road to the dam, on land around the regulated Rottenvikvatnet, the flat at 650 and the ridge straight at the summit.",
-  "hazardNotes": "Fri Flyt: KAST 2 – Utfordrende, brattaste punkt 25–30 grader på normalruta, faremoment «utløpsområder og skavler». Sørsida — nedfartsvarianten på 35–45 grader — «har vært skuddpunkt for dødelige skredulykker» og er ikkje korridoren. Normalruta II er eksponert for løysneområde ovanfrå mellom 700 og 900 moh. Rottenvikvatnet er eit magasin: lina held land rundt vest- og nordsida, og guiden må seia det.",
+  "hazardNotes": "Fri Flyt: KAST 2 – Utfordrende, brattaste punkt 25–30 grader på normalruta, faremoment «utløpsområder og skavler». Sørsida — nedfartsvarianten på 35–45 grader — «har vært åsted for et par tragiske skredulykker med dødelig utfall» og er ikkje korridoren. Normalruta II er eksponert for løysneområde ovanfrå mellom 700 og 900 moh. Rottenvikvatnet er eit magasin: lina held land rundt vest- og nordsida, og guiden må seia det.",
   "sources": [
    "https://www.friflyt.no/topptur/lyngsalpene/turbeskrivelse-fastdalstinden",
    "https://www.friflyt.no/topptur/skiturer-lyngen"
@@ -1875,7 +1875,7 @@
   "roadClosedInWinter": false,
   "teaserNo": "780 høgdemeter rett frå toppturparkeringa på Brandhaugane: søraustryggen gjennom skogen, flata ved Orraleiken, og siste stigninga til varden.",
   "teaserEn": "780 metres of ascent straight from the ski-touring car park at Brandhaugane: the south-east ridge through the forest, the flat at Orraleiken, and the last climb to the cairn.",
-  "hazardNotes": "Fri Flyt: brattaste punkt 33–35 grader, og skredåtvaringa gjeld normalvegen sjølv: skiløparar har løyst ut skred i det brattare partiet på søraustryggen under opptur i ustabile forhold. Seks nedfartar hos Fri Flyt (søraust, sør ×2, nord, aust ×2) — normalvegen opp og ned er korridoren.",
+  "hazardNotes": "Fri Flyt: brattaste punkt 33–35 grader, og skredåtvaringa gjeld normalvegen sjølv: skiløparar har løyst ut skred i det brattare partiet på søraustryggen under opptur i ustabile forhold. Fem nedfartar hos Fri Flyt (søraust, sør ×2, aust ×2 — ingen på nordsida) — normalvegen opp og ned er korridoren.",
   "sources": [
    "https://www.friflyt.no/topptur/skiturer-sogn/turbeskrivelse-togga-1205",
    "https://ut.no/turforslag/116454",
@@ -1916,7 +1916,7 @@
   "season": "jan–apr",
   "aspect": "S",
   "grade": 2,
-  "gradeReason": "Målinga seier 2 og kortet ber 2 — brattaste hundremetersbeltet 21,3 grader mellom 900 og 1000 moh, brattaste 30 m 32,5 i toppflanken — i samsvar med Fri Flyts «under 30 grader bortsett fra de siste 50 høydemeterne». Utløpseksponeringa i Stjerndalen er fareteksten, ikkje brattleiken på sporet.",
+  "gradeReason": "Målinga seier 2 og kortet ber 2 — brattaste hundremetersbeltet 21,3 grader mellom 900 og 1000 moh, brattaste 30 m 32,5 nede i trappene, medan toppflanken måler 22,9 — i samsvar med Fri Flyts «under 30 grader bortsett fra de siste 50 høydemeterne». Utløpseksponeringa i Stjerndalen er fareteksten, ikkje brattleiken på sporet.",
   "roadClosedInWinter": false,
   "teaserNo": "1020 høgdemeter frå fjæra på Horsdal: stien langs sjøen, trappene til Stjerndalen, og slake rygger til varden på øyfjellet over Saltfjorden.",
   "teaserEn": "1020 metres of ascent from the shore at Horsdal: the path along the sea, the stairs to Stjerndalen, and gentle ridges to the cairn on the island mountain above Saltfjorden.",
@@ -1940,8 +1940,8 @@
   "grade": 2,
   "gradeReason": "Målinga seier 2 og kortet ber 2 — brattaste hundremetersbeltet 21,8 grader mellom 800 og 900 moh, brattaste 30 m 27,9 — og Fri Flyt publiserer korkje KAST eller brattaste punkt. Alvoret ligg utanfor sporet: frå varden fell alle åtte sektorane 31–44 grader i snitt, med 69,4 som brattaste vindauge mot nordaust, og sesongen er «ustabil med varierende snøforhold».",
   "roadClosedInWinter": false,
-  "teaserNo": "950 høgdemeter frå åkeren ved Forsland på Tomma: stien til Forslandsvatnet, rundt tjernet på land, og den nordvestgåande ryggen heilt til topps på øyfjellet Fri Flyt kallar Helgelands finaste.",
-  "teaserEn": "950 metres of ascent from the field at Forsland on Tomma: the path to Forslandsvatnet, around the tarn on land, and the north-west ridge all the way up the island mountain Fri Flyt calls Helgeland's finest.",
+  "teaserNo": "950 høgdemeter frå åkeren ved Forsland på Tomma: stien til Forslandsvatnet, rundt tjernet på land, og den nordvestgåande ryggen heilt til topps på øyfjellet Fri Flyt kallar ein av dei finaste toppane på Helgelandskysten.",
+  "teaserEn": "950 metres of ascent from the field at Forsland on Tomma: the path to Forslandsvatnet, around the tarn on land, and the north-west ridge all the way up the island mountain Fri Flyt calls one of the finest peaks on the Helgeland coast.",
   "hazardNotes": "Fri Flyt publiserer korkje KAST eller brattaste punkt; nedkøyringa er austvend, i eit søkk som samlar snø, og sesongen er «ustabil med varierende snøforhold» — kystfjell omgjeve av hav. Falllinja i midtpartiet av ryggen held 32–33 grader målt. Tilkomsten er ferje frå Nesna. Forslandsvatnet og småtjerna ved det er naturlege kysttjern på ~148 moh — lina går rundt på land, målt.",
   "sources": [
    "https://www.friflyt.no/topptur/helgeland/tomskjevelen",
@@ -1977,7 +1977,53 @@
    "Startstaden «parkering langs Fv.232» ber eit utgått vegnummer: vegen gjennom Kaperdalen er i dag fv. 7862 Kaperdalsveien (OSM way/128414118 m.fl.), med fire kartlagde parkeringslommer. Lomma way/655456020 (69.29168/17.34889) les 235,7 moh — og 898 − 660 = 238: Fri Flyts høgdemeter impliserer nett denne.",
    "Rutas faste punkt reproduserer: «det lille skaret nord for punkt 504» — punktet les 478,7 på 69.29750/17.38000 og skaret 582,4 på 69.29900/17.37800; fortoppen «870 moh» les 862,9 på 69.30100/17.39850, og «cirka 30–40 høydemeter» att til toppen stemmer (898,6 − 862,9 = 36).",
    "Fri Flyts faktaboks seier himmelretning S-SØ, men normalruta går opp frå Kaperdalen i vest og ned same trasé: køyringa vender vest, og målinga seier V. Kortet ber målinga.",
-   "Fri Flyts faktaboks seier himmelretning S-SØ, men normalruta hans — den einaste han skildrar — går opp frå Kaperdalen i vest og ned same trasé: køyringa vender vest, og målinga seier V. Kortet ber målinga; søraustsida (56,3 grader på det brattaste) er ikkje ei side nokon står på ski på."
+   "Fri Flyts faktaboks seier himmelretning S-SØ, men normalruta hans (han skildrar òg ein brattare sørvend variant ned i gryta sørvest, som faktaboksens S-SØ passar til) går opp frå Kaperdalen i vest og ned same trasé: køyringa vender vest, og målinga seier V. Kortet ber målinga; søraustsida (56,3 grader på det brattaste) er ikkje ei side nokon står på ski på."
+  ],
+  "notes": ""
+ },
+ "istinden": {
+  "season": "feb–mai",
+  "aspect": "NV",
+  "grade": 3,
+  "gradeReason": "",
+  "roadClosedInWinter": false,
+  "teaserNo": "",
+  "teaserEn": "",
+  "hazardNotes": "Fri Flyt: KAST ikkje klassifisert. Faremomenta er hans eigne: «Skredfare må vurderes nøye på nedkjøringene i botnen mellom Søndre og Vestre Istind og ned fra Søndre Istind. Ryggen opp normalveien er relativt skredsikker. Hold god avstand fra hengeskavlene ut over Nordveggen.» Siste stykket mot toppen er ofte avblåse, så skia må kanskje berast. Nedkøyringsrenna sørvest frå toppen er 30–35 grader. Isøks og stegjern gjeld berre toppegg-varianten frå Søndre Istind.",
+  "sources": [
+   "https://www.friflyt.no/topptur/tromso/turbeskrivelse-istind",
+   "https://ut.no/turforslag/1110441/istind-1489-moh",
+   "https://peakbook.org/en/peakbook-element/830/en/Vestre+Istinden.html"
+  ],
+  "confidence": "medium",
+  "corrections": [
+   "**Registerfeil retta.** Oppføringa peikte på ein Istinden på 1459 moh i indre Sørdalen mot nordlandsgrensa — eit verkeleg fjell registeret kjenner, men ikkje turen: einaste skildringa av det er ein sommarfjelløpsrapport frå august. Fjellet alle meiner er **Vestre Istinden**, 1489 moh i Bardu, landemerket i Indre Troms, og Fri Flyt publiserer full skiskildring for det. Same slug, rett fjell, 50 km lenger nord. Toppsøket løyser 1488,6 mot publiserte 1489.",
+   "Startstaden er Fri Flyts eigen: «Stor parkeringsplass der Tindelva kommer ned ved Iselvmoen på vegen mot Fjellstad». Registeret har Iselvmoen (Bruk, 68.97744/18.52065) og Tindelva (Bekk, 68.97428/18.54491); parkeringspunktet les 80 moh, og 1489 − 1400 = 89 — Fri Flyts høgdemeter impliserer nett denne starten.",
+   "Ruta reproduserer: sørsida av Tindelva opp den bratte bjørkelia (153 → 599 moh), ut av skogen og innover i gryta mot nordveggen (789), og opp ryggen på vestsida av veggen (970 → 1023 → 1304) til toppen. Alt måler ÅpentOmråde over skoggrensa.",
+   "Isøks og stegjern gjeld ikkje normalvegen: Fri Flyt nemner dei berre for varianten over toppeggen frå Søndre Istind, og den er ikkje korridoren. Utmarsjen frå Tunebrua går på ein skogsbilveg som «som regel ikke [er] brøytet» — det er utgangen, ikkje starten, og guiden seier det."
+  ],
+  "notes": ""
+ },
+ "husfjellet": {
+  "season": "feb–mai",
+  "aspect": "SØ",
+  "grade": 1,
+  "gradeReason": "",
+  "roadClosedInWinter": false,
+  "teaserNo": "",
+  "teaserEn": "",
+  "hazardNotes": "Fri Flyt: KAST 1 – Enkelt, brattaste punkt under 27 grader, faremoment «Skavler». Hans eigne åtvaringar: utløpsområde opp mot Litje Brusen og Store Brusen, siste egga mot toppunktet ofte avblåse med bratte sider på begge kantar, hengeskavler på ryggen mot nord, og «Ikke la deg friste å velge annen rute ned fra toppen. Utsatt terreng.» Læringspunktet hans er å leggja spor under 25–30 grader og lesa utløpsområda gjennom Sommerdalen.",
+  "sources": [
+   "https://www.friflyt.no/topptur/senja/husfjellet",
+   "https://ut.no/turforslag/1114032",
+   "https://www.friflyt.no/topptur/senja"
+  ],
+  "confidence": "high",
+  "corrections": [
+   "Registerets Husfjellet (Fjell, 69.47024/17.27304) ligg på Fri Flyts publiserte GPS-punkt (UTM33 588943.76/7708450.43 → 69.47024/17.27299) — dei to fell saman på metern, og toppsøket løyser 631,9 mot publiserte 632.",
+   "Startstaden «Kirka på Skaland» løyser seg: Skaland (Bygdelag, 69.44455/17.29830) på fv. 862, som er livsnerven til Senjahopen og Mefjord og brøytt heile året. Startpunktet les 3 moh — turen går frå fjøra.",
+   "Ruta reproduserer på terrenget: 38 moh der Dronningstien tek av, 239 i skogstraséen, 277 i Sommerdalen, 417 på ryggen over Sommerdalhaugen og 632 på toppen. Fri Flyts «785 høgdemeter» er meir enn skilnaden frå havet til toppen — kortet ber den ruta gainen.",
+   "Fri Flyts eiga åtvaring er tydeleg og høyrer heime i guiden: «Ikke la deg friste å velge annen rute ned fra toppen. Utsatt terreng.» Og: hengeskavler på ryggen mot nord, utløpsområde opp mot Litje Brusen og Store Brusen (registeret har Storbrusen, Fjell, 69.45830/17.31328)."
   ],
   "notes": ""
  }

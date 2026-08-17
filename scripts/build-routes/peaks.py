@@ -48,7 +48,13 @@ PEAKS = [
     #   trailhead rather than an audited route description, and no guide is
     #   written yet. See README, «The second batch». —
     ("hamperokken", "Hamperokken", ["Tromsø"], 1404, 69.562, 19.358),
-    ("istinden", "Istinden", ["Bardu"], 1459, 68.573, 18.082),
+    # Corrected in the sixth round. The registry pointed at a 1459 m Istinden in
+    # inner Sørdalen on the Nordland border — a real mountain the register knows,
+    # but not the tour: the only description of it is a summer fell-running
+    # report. The Istind everyone means is **Vestre Istinden**, 1489 m, the
+    # landmark of Indre Troms, and Fri Flyt publishes a full ski description for
+    # it. Same slug, right mountain, 50 km north.
+    ("istinden", "Vestre Istinden", ["Bardu"], 1489, 68.94986, 18.56679),
     ("fastdalstinden", "Fastdalstinden", ["Lyngen"], 1275, 69.629, 20.169),
     ("store-kjostinden", "Store Kjostinden", ["Lyngen"], 1488, 69.606, 20.130),
     ("breitinden", "Breitinden", ["Senja"], 1001, 69.455, 17.649),
@@ -244,4 +250,5 @@ PEAKS = [
     #   GPS position via SUMMIT_SEED, and the register's Svanfjellet (the
     #   massif, 2,2 km SE) supplies the searchable name. —
     ("tredje-svanfjell", "Svanfjellet", ["Senja"], 898, 69.29947, 17.40356),
+    ("husfjellet", "Husfjellet", ["Senja"], 632, 69.47024, 17.27304),
 ]

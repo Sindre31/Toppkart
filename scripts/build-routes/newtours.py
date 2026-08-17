@@ -126,4 +126,5 @@ NEW_TOURS = {
     "sandhornet": ("Sandhornet", "Bodø"),
     "tomskjevelen": ("Tomskjevelen", "Helgeland"),
     "tredje-svanfjell": ("Tredje Svanfjell", "Senja"),
+    "husfjellet": ("Husfjellet", "Senja"),
 }

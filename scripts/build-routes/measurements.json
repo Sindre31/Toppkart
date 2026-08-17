@@ -1336,6 +1336,11 @@
    "what": "check_ground sitt løypefunn, lese og lagt til sides",
    "figure": "Funnet «says anleggsveg ... strays 771 m (3598 m out)» gjeld fjellhalvdelen — flata, ryggen og toppen — der guiden ikkje hevdar nokon veg. Vegpåstanden dekkjer strekket vegende→dam, og der ligg lina på den kartlagde anleggsvegen (way/1008162591). Same delvis-påstand-forma som Varden (Småtindan); sjekken kan ikkje sjå at påstanden sluttar ved dammen",
    "how": "check_ground.py over lina; lesen mot guideteksten og OSM-geometrien."
+  },
+  {
+   "what": "Startpunktnamnet og peilinga ned",
+   "figure": "Registerets Varto (Høyde) står 1,8 km aust for korridorstarten på 187 moh; namnet som er registrert ved sjølve vegenden er Vardoveien (Adressenavn, 1 m unna). Lina peiler 169 til 180 grader dei fyrste kilometrane ned frå varden",
+   "how": "SSR-søk kring vegenden; peiling rekna frå routes.json."
   }
  ],
  "togga": [
@@ -1370,6 +1375,11 @@
    "what": "Dalkryssinga og attgjeven høgd",
    "figure": "Lina gjev att 185 m samla: dalbotnen mellom stien (166 moh) og Såta-flanken les 140–183, og ryggen mot Såta boljar (677→658, 662→646) før sjølve knausen på 651. Fyrste solveringa gav att 307 — 177 av dei over ein 313-kul eit eige waypoint hadde skapt; pinnet er fjerna og ruteren fann krysssinga sjølv",
    "how": "generate_routes.py før/etter ompinning; profilanalyse av routes.json."
+  },
+  {
+   "what": "Kvar det brattaste ligg, og kva registeret kallar skuldra",
+   "figure": "Det brattaste samanhengande partiet på lina, 30,1 grader, ligg mellom 312 og 330 moh — i flanken opp frå dalkryssinga, ikkje på sørryggen. På sjølve ryggen er det brattaste 30 m-vindauget 29,3 grader mellom 765 og 788 moh. Skuldra kjelda kallar Hjorteklett står i registeret som Hjortaklett (Ås, 59.91905/5.85858), 460 m nord for Såta",
+   "how": "steepest_span over lina avgrensa til høgdeintervalla; SSR-søk på båe skrivemåtane."
   }
  ],
  "sandhornet": [

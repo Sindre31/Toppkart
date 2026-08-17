@@ -363,16 +363,17 @@ content and data quality that has to be settled before the site is sold to anyon
   `lib/guides.ts` traces to Kartverket's terrain model, the route research or a cited source, and
   every number is matched mechanically by `check_guides.py` — which reads nynorsk verticals as well
   as bokmål ones, and comes back clean on all 104 guides.
-  On top of that, **90 of the 104 have been through an independent adversarial read** whose only job
+  On top of that, **100 of the 104 have been through an independent adversarial read** whose only job
   is to break it — the 24 of the first round, the 15 of the second, the 7 of the Oslo round, the
   22 of the Sunnmøre and Vestland rounds, the 7 of the Trondheim round, Kjerag, Møysalen and
   Sæbyggjenuten, the 4 of the popularity round, and finally the 8 of the alpine-resort round.
-  The fourteen that have not — Gullfjellstoppen, the three Kvamskogen tours (Såta, Skrott,
-  Tveitakvitingen), the two of the Voss round (Finnbufjellet, Vatnaknausen), the two of
-  the continued popularity round (Varden (Småtindan), Midtitinden), the two of the
-  backlog round (Fastdalstinden, Togga), the two of round four (Englafjell, Sandhornet)
-  and Tomskjevelen and Tredje Svanfjell — were written and checked by the same pass,
-  which every earlier round's notes name as the gap an independent read exists to close.
+  The four that have not — Gullfjellstoppen and the three Kvamskogen tours (Såta,
+  Skrott, Tveitakvitingen) — are the last of the gap; the other ten were read in the
+  adversarial round, which is written up in `scripts/build-routes/README.md`. That read
+  found four fabricated quotations, six dropped or misplaced source warnings, three
+  superlatives stated in the wrong place on the mountain, two fog bearings pointing the
+  wrong way and a teaser naming the flank its own guide says not to ski — all fixed, in
+  both languages.
 
   **The last of those closed a hole that was not about those eight at all.** The re-route in #62
   moved twenty-odd lines, and the prose describing them was re-derived for some tours and not for
