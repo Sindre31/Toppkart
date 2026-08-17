@@ -471,6 +471,47 @@ export const GUIDES: Record<string, TourGuide> = {
       caption: "1031 høydemeter og 4,21 km fra Svarthola; skiene blir igjen på skulderen 763 moh, 244 høydemeter under toppen.",
     },
   },
+  "tredje-svanfjell": {
+    slug: "tredje-svanfjell",
+    intro:
+      "664 høgdemeter og 2,85 km rett frå parkeringslomma i Kaperdalen — «Tredje Svanfjell er en klassiker i Kaperdalen. Fin tur for nyfrelste toppturister, som også er en flott mørketidstur», skriv Fri Flyt, og tala er samde: brattaste hundremetersbeltet 23,4 grader mellom 500 og 600 moh, brattaste samanhengande parti 29,9, og lina gjev att null høgdemeter. Namnet finst ikkje i registeret — Svanfjella er uformelt nummererte — men Fri Flyt publiserer sin eigen GPS-posisjon for toppen, og han les 898 i terrengmodellen på metern.",
+    ascent: [
+      "Parker i lomma langs vegen gjennom Kaperdalen — Fri Flyt skriv «Fv.232», men vegen heiter i dag fv. 7862 Kaperdalsveien; lomma les 236 moh, og kjeldas 660 høgdemeter impliserer nøyaktig denne starten. Skogen sluttar tidleg, og terrenget opnar seg mot aust.",
+      "Fyrste delen går opp mot det vesle skaret nord for punkt 504, slik kjelda seier — punktet les 479 og skaret 582 i terrengmodellen. Lia opp dit ber det brattaste hundremetersbeltet på turen, 23,4 grader i snitt mellom 500 og 600 moh.",
+      "Frå skaret stig terrenget jamt mot fortoppen — småkupert, med stigning under 30 grader heile vegen, og målinga stadfester det: 29,9 som brattaste samanhengande parti. Fortoppen kjelda set på 870 les 862,9.",
+      "Frå fortoppen står att om lag 30–40 høgdemeter, seier kjelda — målt 36 — og varden på 899 har Senjas ytterkyst på den eine sida og Ånderdalen på den andre. I desember er dette mørketidsturen kjelda lovar: kort, open og med heimveg det ikkje går an å rota vekk.",
+    ],
+    descent: [
+      "Ned same trasé som opp, med variasjonsrom etter ønske, slik kjelda seier. Køyringa vender vest, heim mot Kaperdalen — Fri Flyts faktaboks seier S-SØ, men normalruta hans går opp frå vest og ned same veg, og kortet ber det målte.",
+      "Variasjonsrommet har ein kant: søraustsida fell 56,3 grader på det brattaste berre 180–240 m frå varden, og austsida 43,3 på same avstand. Dei høyrer ikkje til denne turen — vestflanken du kom opp er køyringa, og ho er open og jamn heile vegen ned til lomma.",
+      "Null høgdemeter å gje att og under tre kilometer kvar veg: dette er turen der heile dagen er stigning og køyring, og difor klassikaren for fyrstegongs toppturistar — og for desemberdagar med to timar lys.",
+    ],
+    avalanche: [
+      {
+        title: "Ruta",
+        body: "Fri Flyt set KAST 1 – Enkelt med faremoment «ingen spesielle», og målinga er samd for sjølve lina: 29,9 grader som brattaste samanhengande parti, 23,4 som brattaste hundremetersbelte mellom 500 og 600 moh. Det er så snilt som ein 660-meterstur får vorte — men KAST 1 er ei linevurdering, ikkje eit fripass: lia opp mot skaret er bratt nok til å gli i hardt føre.",
+      },
+      {
+        title: "Kantane",
+        body: "Alvoret ligg utanfor sporet: søraustsida fell 56,3 grader på det brattaste 180–240 m frå varden og austsida 43,3 grader på same avstand. I mørketid og flatt lys er kantane poenget med kompasset — vestflanken du kom opp er einaste køyresida, og ho er grei å finna att: ned mot dalen, ikkje mot havet.",
+      },
+      {
+        title: "Mørketidsturen",
+        body: "Kjelda kallar turen «en flott mørketidstur», og desember–mai er hans eigen publiserte sesong. Mørketid er si eiga vurdering: to timar dagslys gjev lite margin for feil, og eit fjell utan spesielle faremoment i mars kan vera eit navigasjonsfjell i desember. Kort tur og null attgjeven høgd er nettopp det som gjer han rett for dei mørke vekene — med hovudlykt i sekken likevel.",
+      },
+      {
+        title: "Før du går",
+        body: "Tredje Svanfjell ligg i varslingsregionen Sør-Troms, ein A-region med dagleg skredvarsel gjennom sesongen — sjekk varsom.no. Sesongen desember–mai er Fri Flyts eiga. Ta med sender/mottakar, søkjestong og spade. Ei tom varselside er ikkje det same som eit trygt fjell.",
+      },
+    ],
+    elevationProfile: {
+      path: "M0,200 L19,197 L48,186 L67,176 L95,168 L114,160 L142,148 L161,145 L180,143 L209,137 L228,134 L256,133 L275,131 L294,124 L306,117 L323,107 L335,102 L358,91 L378,88 L389,88 L408,83 L427,77 L437,74 L456,65 L477,55 L503,42 L522,34 L541,28 L556,26 L579,22 L598,18 L600,18",
+      startLabel: "236 moh",
+      endLabel: "899 moh",
+      distanceLabel: "2,8 km",
+      caption: "664 høgdemeter og 2,85 km frå Kaperdalen — skaret nord for punkt 504, fortoppen på 870, og null høgdemeter å gje att.",
+    },
+  },
   moysalen: {
     slug: "moysalen",
     intro:

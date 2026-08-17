@@ -934,5 +934,13 @@
     "summit_dtm": 921.7,
     "claims": 922,
     "stored_off_km": 0.01
+  },
+  "tredje-svanfjell": {
+    "name": "Svanfjellet",
+    "lat": 69.29949,
+    "lng": 17.40362,
+    "summit_dtm": 898.6,
+    "claims": 898,
+    "stored_off_km": 0.0
   }
 }

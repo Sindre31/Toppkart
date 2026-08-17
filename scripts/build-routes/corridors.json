@@ -5590,5 +5590,49 @@
     "waterNote": "Forslandsvatnet (OSM-relasjon 14756581, 148 moh, naturleg tjern) og småtjerna/Tinnvatnet vest for det ligg lågt på ei øy i havet — isen kan ikkje føresetjast. Lina held nordbredda på land, målt mot terrengklassane og OSM-polygona."
    }
   ]
+ },
+ "tredje-svanfjell": {
+  "routes": [
+   {
+    "id": "kaperdalen",
+    "name": "Normalruta frå Kaperdalen",
+    "description": "Frå parkeringslomma langs fv. 7862 i Kaperdalen opp mot det vesle skaret nord for punkt 504, jamt vidare mot fortoppen på 870, og dei siste høgdemetrane til toppen",
+    "trailhead": {
+     "name": "Kaperdalen",
+     "lat": 69.29168,
+     "lng": 17.34889,
+     "elevation_m": 235.65,
+     "fullName": "Kaperdalen"
+    },
+    "waypoints": [
+     {
+      "name": "lia austover",
+      "lat": 69.295,
+      "lng": 17.362,
+      "elevation_m": 419.1
+     },
+     {
+      "name": "skaret nord for punkt 504",
+      "lat": 69.299,
+      "lng": 17.378,
+      "elevation_m": 582.42
+     },
+     {
+      "name": "jamt mot fortoppen",
+      "lat": 69.3005,
+      "lng": 17.39,
+      "elevation_m": 720.0
+     },
+     {
+      "name": "fortoppen på 870",
+      "lat": 69.301,
+      "lng": 17.3985,
+      "elevation_m": 862.9
+     }
+    ],
+    "source": "researched, verified (corrected), no local audit",
+    "notes": "Fri Flyt: KAST 1 – Enkelt, brattaste punkt under 27 grader, faremoment «ingen spesielle». Sesongen desember–mai er kjeldas eiga, og han kallar turen «en flott mørketidstur» — desemberlys er si eiga vurdering. Nedfarten er same trasé med variasjonsrom."
+   }
+  ]
  }
 }

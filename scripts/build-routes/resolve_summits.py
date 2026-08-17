@@ -65,6 +65,12 @@ SUMMIT_SEED = {
     # and the register knows no other Fjell or Topp name within 2 km of either.
     # The seed is that line's last vertex.
     "prestholtskarvet": (60.55829, 8.01297),
+    # «Tredje Svanfjell» is not a register name at all — the Svanfjella are
+    # numbered informally, and the register's Svanfjellet (Fjell) sits 2,2 km
+    # south-east on another top. Fri Flyt publishes a GPS summit position
+    # (UTM33 594798.7/7689615.18) that reads 897,8 in DTM1 against a published
+    # 898; that position is the seed, the Kjølen rule again.
+    "tredje-svanfjell": (69.29947, 17.40356),
 }
 
 # Peaks whose named top is a shoulder on a ridge that keeps rising, where an

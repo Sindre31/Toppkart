@@ -238,4 +238,10 @@ PEAKS = [
     #   itself — 920,2 against a published 922 — is 330 m east, and the growing
     #   disc with the claims tiebreak is what finds it. —
     ("tomskjevelen", "Tommskjevelen", ["Nesna"], 922, 66.27898, 12.84673),
+    #
+    # — round six: the Kaperdalen classic on Senja. «Tredje Svanfjell» has no
+    #   register name of its own; the resolver seeds on Fri Flyt's published
+    #   GPS position via SUMMIT_SEED, and the register's Svanfjellet (the
+    #   massif, 2,2 km SE) supplies the searchable name. —
+    ("tredje-svanfjell", "Svanfjellet", ["Senja"], 898, 69.29947, 17.40356),
 ]

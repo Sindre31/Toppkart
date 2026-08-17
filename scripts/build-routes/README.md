@@ -3244,6 +3244,49 @@ cards, `check_guides.py` 0 unsourced numbers and 0 reassurance claims
 across 206 guide texts, `test_check_guides.py` 15, `check_ground.py` 0 m
 on water, and the CI suite.
 
+## Round six: Tredje Svanfjell
+
+One more, from Fri Flyt's Senja index: «Tredje Svanfjell er en klassiker i
+Kaperdalen. Fin tur for nyfrelste toppturister, som også er en flott
+mørketidstur.» The app goes from 103 tours to 104. Storriten in Narvik was
+checked first and rejected: its Fri Flyt description is a **summer-ski**
+tour (juni–august, «mest populære sommerski-toppen i området») behind a
+gravel road that opens when it is plowed in early summer — the Storsylen
+failure in a lighter coat.
+
+| tour | region | start | summit | gain | km | steepest 100 m band | steepest 30 m | grade |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Tredje Svanfjell | Senja | 236 | 899 | 664 | 2.8 | 23.4° | 29.9° | 2 |
+
+Three notes, two of them new shapes:
+
+- **The name is not in the register at all.** The Svanfjell peaks are
+  numbered informally, and the register's Svanfjellet (the massif) sits
+  2,2 km south-east on another top. Fri Flyt publishes its own GPS summit
+  position (UTM33), which reads 897,8 in DTM1 against a published 898 —
+  that position seeds `SUMMIT_SEED`, the Kjølen rule, and the climb lands
+  on 898,6.
+- **The road number is retired.** Fri Flyt's «parkering langs Fv.232» is
+  today fv. 7862 Kaperdalsveien, with four mapped lay-bys — and the one at
+  235,7 moh is the start the arithmetic picks (898 − 660 = 238).
+- **The fact-box aspect disagrees with the route.** Fri Flyt says S-SØ, but
+  its own normal route — the only one it describes — climbs from Kaperdalen
+  in the west and descends the same line: the skiing faces west, the
+  measurement says V, and the card carries the measured. The south-east
+  side (56,3° at its steepest 180–240 m out) is not a side anyone skis.
+
+Every fixed point in the description reproduces: point 504 reads 478,7, the
+notch north of it 582,4, the foretop «870» 862,9, and the source's «cirka
+30–40 høydemeter» to the top measures 36. The line gives back **zero**
+vertical metres, the season desember–mai is the source's own, and the
+region is Sør-Troms (3012), an A region. The guide takes the source's
+mørketidstur framing seriously as the assessment it is.
+
+The proof: `check_routes.py` 104 tours / 113 routes, `check_tours.py` 104
+cards, `check_guides.py` 0 unsourced numbers and 0 reassurance claims
+across 208 guide texts, `test_check_guides.py` 15, `check_ground.py` clean,
+and the CI suite.
+
 ## Network
 
 Everything is public and unauthenticated:

@@ -244,6 +244,8 @@ export const TOUR_TEASER_EN: Record<string, string> = {
     "1020 metres of ascent from the shore at Horsdal: the path along the sea, the stairs to Stjerndalen, and gentle ridges to the cairn on the island mountain above Saltfjorden.",
   tomskjevelen:
     "950 metres of ascent from the field at Forsland on Tomma: the path to Forslandsvatnet, around the tarn on land, and the north-west ridge all the way up the island mountain Fri Flyt calls Helgeland's finest.",
+  "tredje-svanfjell":
+    "660 metres of ascent straight from the lay-by in Kaperdalen: the notch north of point 504, steadily up to the foretop at 870, and the last 36 metres to the Senja classic.",
 
 };
 
@@ -722,6 +724,45 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       endLabel: "1007 m",
       distanceLabel: "4.2 km",
       caption: "1031 metres of climbing and 4.21 km from Svarthola; the skis stay at the shoulder at 763 m, 244 metres below the summit.",
+    },
+  },
+  "tredje-svanfjell": {
+    intro:
+      "664 metres of ascent and 2.85 km straight from the lay-by in Kaperdalen — 'Tredje Svanfjell is a classic in Kaperdalen. A fine tour for newly converted ski tourers, and a splendid polar-night tour too', writes Fri Flyt, and the numbers agree: steepest 100-metre band 23.4 degrees between 500 and 600 metres, steepest sustained stretch 29.9, and the line gives back zero vertical metres. The name is not in the register — the Svanfjell peaks are numbered informally — but Fri Flyt publishes its own GPS position for the summit, and it reads 898 in the terrain model to the metre.",
+    ascent: [
+      "Park in the lay-by along the road through Kaperdalen — Fri Flyt writes 'Fv.232', but the road is today fv. 7862 Kaperdalsveien; the lay-by reads 236 metres, and the source's 660 vertical metres imply exactly this start. The forest ends early, and the ground opens eastwards.",
+      "The first part climbs towards the little notch north of point 504, as the source says — the point reads 479 and the notch 582 in the terrain model. The hillside up to it carries the steepest 100-metre band of the tour, a mean 23.4 degrees between 500 and 600 metres.",
+      "From the notch the ground rises steadily towards the foretop — gently broken, with the climbing under 30 degrees the whole way, and the measurement confirms it: 29.9 as the steepest sustained stretch. The foretop the source puts at 870 reads 862.9.",
+      "From the foretop about 30–40 vertical metres remain, says the source — measured 36 — and the cairn at 899 has Senja's outer coast on one side and Ånderdalen on the other. In December this is the polar-night tour the source promises: short, open, and with a way home that cannot be misplaced.",
+    ],
+    descent: [
+      "Down the same line as up, with room for variation as you wish, as the source says. The skiing faces west, home towards Kaperdalen — Fri Flyt's fact box says S-SE, but its normal route climbs from the west and descends the same way, and the card carries the measured.",
+      "The room for variation has an edge: the south-east side falls 56.3 degrees at its steepest only 180–240 m from the cairn, and the east side 43.3 at the same distance. They do not belong to this tour — the west flank you came up is the skiing, and it is open and even all the way down to the lay-by.",
+      "Zero vertical metres to give back and under three kilometres each way: this is the tour where the whole day is climbing and skiing, and that is why it is the classic for first-time ski tourers — and for December days with two hours of light.",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "Fri Flyt rates it KAST 1 – easy with 'no particular hazards', and the measurement agrees for the line itself: 29.9 degrees as the steepest sustained stretch, 23.4 as the steepest 100-metre band between 500 and 600 metres. That is as kind as a 660-metre tour gets — but KAST 1 is a line rating, not a free pass: the hillside up to the notch is steep enough to slide on in hard conditions.",
+      },
+      {
+        title: "The edges",
+        body: "The seriousness lies off the track: the south-east side falls 56.3 degrees at its steepest 180–240 m from the cairn and the east side 43.3 degrees at the same distance. They do not belong to this tour — in the polar night and in flat light the edges are what the compass is for: the west flank you came up is the only skiing side, and it is easy to find again — down towards the valley, not towards the sea.",
+      },
+      {
+        title: "The polar-night tour",
+        body: "The source calls it 'a splendid polar-night tour', and December–May is its own published season. The polar night is its own assessment: two hours of daylight leave little margin for error, and a mountain with no particular hazards in March can be a navigation mountain in December. A short tour with zero height given back is exactly what makes it right for the dark weeks — with a headlamp in the pack all the same.",
+      },
+      {
+        title: "Before you go",
+        body: "Tredje Svanfjell is in the Sør-Troms forecast region, an A region with a daily avalanche bulletin through the season — check varsom.no. The season December–May is Fri Flyt's own. Bring transceiver, probe and shovel. An empty forecast page does not mean a safe mountain.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "236 m",
+      endLabel: "899 m",
+      distanceLabel: "2.8 km",
+      caption: "664 metres of ascent and 2.85 km from Kaperdalen — the notch north of point 504, the foretop at 870, and zero vertical metres given back.",
     },
   },
   moysalen: {

@@ -1410,5 +1410,22 @@
    "figure": "155 → 283 → 492 → 656 → 768 → 843 → 884 → 920 langs den nordvestgåande ryggen; falllinja i midtpartiet held 32–33 grader, og sporet sikksakkar slakare",
    "how": "DTM1-samplar langs ryggen; route_metrics.py på den løyste lina."
   }
+ ],
+ "tredje-svanfjell": [
+  {
+   "what": "Fallet frå varden i åtte retningar",
+   "figure": "N 16,1° i snitt med 28,1° som brattaste 60 m 570–630 m ut; NØ 17,9° / 22,7° 70–130 m ut; Ø 15,5° / 43,3° 180–240 m ut; SØ 30,2° / 56,3° 180–240 m ut; S 15,2° / 28,7° 30–90 m ut; SV 26,7° / 37,0° 480–540 m ut; V 21,6° / 30,1° 640–700 m ut; NV 3,3° / 15,2° 320–380 m ut",
+   "how": "flank_probe.py frå 69.29949/17.40362, 800 m ut, prøvetatt kvar 10. m i DTM-en."
+  },
+  {
+   "what": "Fri Flyts GPS-punkt og rutas faste punkt reproduserer",
+   "figure": "UTM33 594798.7/7689615.18 → 69.29947/17.40356 les 897,8 mot publisert 898, og toppsøket klatra til 898,6. Punkt 504 les 478,7; skaret nord for det 582,4; fortoppen «870» 862,9 — og 898,6 − 862,9 = 36 mot kjeldas «cirka 30–40 høydemeter». Parkeringslomma way/655456020 les 235,7, og 898 − 660 = 238",
+   "how": "pyproj-konvertering av kjeldas UTM; DTM1-punkt-API; SSR-oppslag (Svanfjellet-massivet 2,2 km SØ)."
+  },
+  {
+   "what": "Vegnummeret er utgått",
+   "figure": "Fri Flyt skriv «parkering langs Fv.232»; vegen gjennom Kaperdalen er i dag fv. 7862 Kaperdalsveien i OSM (way/128414118), med fire kartlagde parkeringslommer langs dalen",
+   "how": "OSM-oppslag på vegnettet i Kaperdalen."
+  }
  ]
 }

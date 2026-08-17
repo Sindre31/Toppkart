@@ -1646,5 +1646,21 @@
   "aspect": "S",
   "distanceKm": 3.9,
   "cumdistM": 3861
+ },
+ "tredje-svanfjell": {
+  "verticalM": 660,
+  "gainM": 664,
+  "distanceM": 2846,
+  "startM": 236,
+  "summitM": 899,
+  "duration": "3–5 t",
+  "steepestBandAngle": 23.4,
+  "steepestBandFrom": 500,
+  "steepestBandTo": 600,
+  "maxStepAngle": 29.9,
+  "grade": 2,
+  "aspect": "V",
+  "distanceKm": 2.8,
+  "cumdistM": 2848
  }
 }

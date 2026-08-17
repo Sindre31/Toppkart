@@ -4801,5 +4801,67 @@
    ],
    "confidence": "medium"
   }
+ },
+ {
+  "slug": "tredje-svanfjell",
+  "verdict": "corrected",
+  "corrections": [
+   "«Tredje Svanfjell» finst ikkje i registeret — Svanfjella er uformelt nummererte, og registerets Svanfjellet (Fjell, 69.28118/17.431) står 2,2 km søraust på ein annan topp. Fri Flyt publiserer eigen GPS-posisjon for toppunktet (UTM33 594798.7/7689615.18 → 69.29947/17.40356), som les 897,8 i DTM1 mot publisert 898 — den posisjonen er seed i SUMMIT_SEED (Kjølen-regelen), og toppsøket klatra til 898,6.",
+   "Startstaden «parkering langs Fv.232» ber eit utgått vegnummer: vegen gjennom Kaperdalen er i dag fv. 7862 Kaperdalsveien (OSM way/128414118 m.fl.), med fire kartlagde parkeringslommer. Lomma way/655456020 (69.29168/17.34889) les 235,7 moh — og 898 − 660 = 238: Fri Flyts høgdemeter impliserer nett denne.",
+   "Rutas faste punkt reproduserer: «det lille skaret nord for punkt 504» — punktet les 478,7 på 69.29750/17.38000 og skaret 582,4 på 69.29900/17.37800; fortoppen «870 moh» les 862,9 på 69.30100/17.39850, og «cirka 30–40 høydemeter» att til toppen stemmer (898,6 − 862,9 = 36).",
+   "Fri Flyts faktaboks seier himmelretning S-SØ, men normalruta hans — den einaste han skildrar — går opp frå Kaperdalen i vest og ned same trasé: køyringa vender vest, og målinga seier V. Kortet ber målinga; søraustsida (56,3 grader på det brattaste) er ikkje ei side nokon står på ski på."
+  ],
+  "rejectReason": "",
+  "corridor": {
+   "routeId": "kaperdalen",
+   "routeName": "Normalruta frå Kaperdalen",
+   "routeDescriptionFull": "Frå parkeringslomma langs fv. 7862 i Kaperdalen opp mot det vesle skaret nord for punkt 504, jamt vidare mot fortoppen på 870, og dei siste høgdemetrane til toppen",
+   "trailhead": {
+    "name": "Kaperdalen",
+    "lat": 69.29168,
+    "lng": 17.34889,
+    "elevationM": 235.65,
+    "osmEvidence": "Parkeringslomme way/655456020 langs fv. 7862 Kaperdalsveien (way/128414118) — Fri Flyts «Fv.232» er det utgåtte nummeret på same vegen."
+   },
+   "waypoints": [
+    {
+     "name": "lia austover",
+     "lat": 69.295,
+     "lng": 17.362,
+     "elevationM": 419.1
+    },
+    {
+     "name": "skaret nord for punkt 504",
+     "lat": 69.299,
+     "lng": 17.378,
+     "elevationM": 582.42
+    },
+    {
+     "name": "jamt mot fortoppen",
+     "lat": 69.3005,
+     "lng": 17.39,
+     "elevationM": 720.0
+    },
+    {
+     "name": "fortoppen på 870",
+     "lat": 69.301,
+     "lng": 17.3985,
+     "elevationM": 862.9
+    }
+   ],
+   "season": "des–mai",
+   "aspect": "V",
+   "grade": 2,
+   "gradeReason": "Målinga seier 2 og kortet ber 2 — brattaste hundremetersbeltet 23,4 grader mellom 500 og 600 moh, brattaste 30 m 29,9 — i samsvar med Fri Flyts KAST 1 – Enkelt og «under 27 grader» på deira lesing; lina gjev att null høgdemeter. Faremomenta hos kjelda er «ingen spesielle», og alvoret som finst, ligg utanfor sporet: søraustsida fell 56,3 grader på det brattaste 180–240 m frå varden.",
+   "roadClosedInWinter": false,
+   "hazardNotes": "Fri Flyt: KAST 1 – Enkelt, brattaste punkt under 27 grader, faremoment «ingen spesielle». Sesongen desember–mai er kjeldas eiga, og han kallar turen «en flott mørketidstur» — desemberlys er si eiga vurdering. Nedfarten er same trasé med variasjonsrom.",
+   "teaserNo": "660 høgdemeter rett frå parkeringslomma i Kaperdalen: skaret nord for punkt 504, jamt opp til fortoppen på 870, og dei siste 36 metrane til klassikaren på Senja.",
+   "teaserEn": "660 metres of ascent straight from the lay-by in Kaperdalen: the notch north of point 504, steadily up to the foretop at 870, and the last 36 metres to the Senja classic.",
+   "sources": [
+    "https://www.friflyt.no/topptur/senja/tredje-svanfjell",
+    "https://www.friflyt.no/topptur/senja"
+   ],
+   "confidence": "medium"
+  }
  }
 ]
