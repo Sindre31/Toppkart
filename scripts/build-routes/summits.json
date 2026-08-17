@@ -593,11 +593,11 @@
   },
   "togga": {
     "name": "Togga",
-    "lat": 61.33446,
-    "lng": 6.88793,
-    "summit_dtm": 1235.5,
+    "lat": 61.33505,
+    "lng": 6.89289,
+    "summit_dtm": 1203.8,
     "claims": 1205,
-    "stored_off_km": 0.28
+    "stored_off_km": 0.0
   },
   "storanosi": {
     "name": "Storanosi",
@@ -886,5 +886,45 @@
     "summit_dtm": 1298.9,
     "claims": 1299,
     "stored_off_km": 0.02
+  },
+  "finnbufjellet": {
+    "name": "Finnbunuten",
+    "lat": 60.88074,
+    "lng": 6.44081,
+    "summit_dtm": 1357.3,
+    "claims": 1358,
+    "stored_off_km": 0.01
+  },
+  "vatnaknausen": {
+    "name": "Vatnaknausen",
+    "lat": 60.64948,
+    "lng": 6.649,
+    "summit_dtm": 1302.3,
+    "claims": 1303,
+    "stored_off_km": 0.07
+  },
+  "varden-smaatindan": {
+    "name": "Småtindan",
+    "lat": 68.23317,
+    "lng": 14.38794,
+    "summit_dtm": 700.5,
+    "claims": 700,
+    "stored_off_km": 0.01
+  },
+  "midtitinden": {
+    "name": "Midtitinden",
+    "lat": 67.34238,
+    "lng": 15.00416,
+    "summit_dtm": 1059.5,
+    "claims": 1058,
+    "stored_off_km": 0.29
+  },
+  "sandhornet": {
+    "name": "Sandhornet",
+    "lat": 67.11124,
+    "lng": 14.06789,
+    "summit_dtm": 993.4,
+    "claims": 993,
+    "stored_off_km": 0.01
   }
 }

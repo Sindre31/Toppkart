@@ -86,6 +86,12 @@ SUMMIT_CAP_M = {
     # out — not a summit, just where a 700 m tile ran out. Capped to 150 m, which
     # keeps the rounded top the name and both published lines agree on.
     "rodtinden": 150.0,
+    # Togga is the same shape at 1205 m: the register point reads 1202.6 against
+    # Fri Flyt's published 1205, and the ridge rises west-south-west without a
+    # saddle — 1235.5 at 280 m, 1282.5 at 590 m, 1354.0 at 990 m and on toward
+    # the higher massif. The uncapped climb stored 1235.5, which is a bump on
+    # the connected ridge, not the named top the tour goes to. Capped to 150 m.
+    "togga": 150.0,
 }
 
 

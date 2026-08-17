@@ -43,6 +43,17 @@
   "season": "des–mai",
   "hasGuide": false
  },
+ "fastdalstinden": {
+  "name": "Fastdalstinden",
+  "region": "Lyngen",
+  "summitM": 1275,
+  "verticalM": 1270,
+  "duration": "6–8 t",
+  "grade": 3,
+  "aspect": "SØ",
+  "season": "jan–mai",
+  "hasGuide": false
+ },
  "tromsdalstinden": {
   "name": "Tromsdalstinden",
   "region": "Troms",
@@ -164,6 +175,17 @@
   "season": "feb–apr",
   "hasGuide": true
  },
+ "varden-smaatindan": {
+  "name": "Varden (Småtindan)",
+  "region": "Lofoten",
+  "summitM": 700,
+  "verticalM": 820,
+  "duration": "4–6 t",
+  "grade": 2,
+  "aspect": "Ø",
+  "season": "jan–apr",
+  "hasGuide": false
+ },
  "himmeltindan": {
   "name": "Himmeltindan",
   "region": "Lofoten",
@@ -185,6 +207,28 @@
   "aspect": "N",
   "season": "jan–apr",
   "hasGuide": true
+ },
+ "midtitinden": {
+  "name": "Midtitinden",
+  "region": "Bodø",
+  "summitM": 1060,
+  "verticalM": 1050,
+  "duration": "4–6 t",
+  "grade": 2,
+  "aspect": "SØ",
+  "season": "jan–apr",
+  "hasGuide": false
+ },
+ "sandhornet": {
+  "name": "Sandhornet",
+  "region": "Bodø",
+  "summitM": 993,
+  "verticalM": 1020,
+  "duration": "4–6 t",
+  "grade": 2,
+  "aspect": "S",
+  "season": "jan–apr",
+  "hasGuide": false
  },
  "vassfjellet": {
   "name": "Vassfjellet",
@@ -659,6 +703,17 @@
   "season": "feb–mai",
   "hasGuide": true
  },
+ "togga": {
+  "name": "Togga",
+  "region": "Sogn",
+  "summitM": 1204,
+  "verticalM": 780,
+  "duration": "3–5 t",
+  "grade": 3,
+  "aspect": "SØ",
+  "season": "des–mars",
+  "hasGuide": false
+ },
  "bitihorn": {
   "name": "Bitihorn",
   "region": "Valdres",
@@ -747,6 +802,17 @@
   "season": "feb–mai",
   "hasGuide": true
  },
+ "finnbufjellet": {
+  "name": "Finnbufjellet",
+  "region": "Voss",
+  "summitM": 1357,
+  "verticalM": 620,
+  "duration": "3–5 t",
+  "grade": 2,
+  "aspect": "NØ",
+  "season": "jan–apr",
+  "hasGuide": false
+ },
  "storehorn": {
   "name": "Storehorn",
   "region": "Hemsedal",
@@ -779,6 +845,17 @@
   "aspect": "NØ",
   "season": "feb–april",
   "hasGuide": true
+ },
+ "vatnaknausen": {
+  "name": "Vatnaknausen",
+  "region": "Voss",
+  "summitM": 1302,
+  "verticalM": 980,
+  "duration": "5–7 t",
+  "grade": 2,
+  "aspect": "V",
+  "season": "jan–apr",
+  "hasGuide": false
  },
  "horndalsnuten": {
   "name": "Horndalsnuten",
@@ -966,6 +1043,17 @@
   "aspect": "V",
   "season": "feb–mai",
   "hasGuide": true
+ },
+ "englafjell": {
+  "name": "Englafjell",
+  "region": "Hardanger",
+  "summitM": 1200,
+  "verticalM": 1240,
+  "duration": "6–8 t",
+  "grade": 3,
+  "aspect": "N",
+  "season": "jan–apr",
+  "hasGuide": false
  },
  "gaustatoppen": {
   "name": "Gaustatoppen",

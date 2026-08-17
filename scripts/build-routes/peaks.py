@@ -200,4 +200,35 @@ PEAKS = [
     ("sata", "Såta", ["Kvam"], 1260, 60.43158, 5.98895),
     ("skrott", "Skrott", ["Kvam"], 1320, 60.45728, 6.14436),
     ("tveitakvitingen", "Tveitakvitingen", ["Kvam", "Samnanger", "Bjørnafjorden"], 1299, 60.32527, 5.90835),
+    #
+    # — the Voss round: the two tours on Fri Flyt's skiturer-voss index the app
+    #   did not already carry. Fri Flyt calls the first one Finnbufjellet, but
+    #   the register's Finnbufjellet point (Fjell, 60.88774/6.44335) reads
+    #   1330,8 m against a published 1358, and the top itself is registered
+    #   **Finnbunuten** — 1357,0 m at 60.88067/6.44088, the Kirketaket pattern
+    #   again. The app bears Fri Flyt's name, the summit search the register's. —
+    ("finnbufjellet", "Finnbunuten", ["Voss"], 1358, 60.88067, 6.44088),
+    ("vatnaknausen", "Vatnaknausen", ["Voss"], 1303, 60.64957, 6.64765),
+    #
+    # — the popularity round, continued: two more mountains a published source
+    #   calls the most popular of their area. Fri Flyt's second Småtindan
+    #   description calls Varden «den mest populære toppturen på øygruppa», and
+    #   its Midtitinden page «en av de mest populære skitoppene rundt Bodø».
+    #   Varden is the Hesten (Segla) pattern — the register carries both Varden
+    #   (Ås) and Småtindan (Fjell) at the top, and a 732 m neighbour 600 m SW is
+    #   why the claim-tiebreak matters. Midtitinden's register point reads 983,5
+    #   against a published 1058; the top is 190 m SW at 1059,2 — the
+    #   Gullfjellstoppen pattern. —
+    #   The resolver searches by name, and a bare «Varden» never reaches Vågan
+    #   inside SSR's first page — the register's Fjell-name Småtindan (13 m from
+    #   the top cell) is the seed instead, exactly like Kyrkjetaket seeds
+    #   Kirketaket.
+    ("varden-smaatindan", "Småtindan", ["Vågan"], 700, 68.23324, 14.38798),
+    ("midtitinden", "Midtitinden", ["Bodø"], 1058, 67.34397, 15.00963),
+    #
+    # — round 4: a backlog name with a full description (Englafjell was already
+    #   here), and Sandhornet from Fri Flyt's Bodø index — the mountain stands
+    #   in Gildeskål, the card keeps Fri Flyt's Bodø the way Strandtinden keeps
+    #   Harstad. —
+    ("sandhornet", "Sandhornet", ["Gildeskål"], 993, 67.11117, 14.06776),
 ]

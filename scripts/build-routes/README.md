@@ -2822,6 +2822,380 @@ anyone's experience of these mountains. A local reader per tour is still the
 missing check, here as everywhere. And **Fuglafjellet**, Kvamskogen's highest,
 has not been researched at all.
 
+## The Voss round
+
+The Kvamskogen round left one name standing: **Fuglafjellet, Kvamskogen's
+highest, not researched at all.** This round researched it — and rejected it,
+which is the honest half of what a research pass is for. Both ut.no trip
+descriptions (116556 from Vending, 118830246 from Øvre Steinskvanndalen) are
+summer fotturer with summer seasons; westcoastpeaks describes four summer
+scrambling alternatives through the cliffbands and states outright that no
+winter/ski route is formally described; and the mountain's own character in
+every source — «mange stup», no public trails, crampons advised on autumn
+snow — is the reason. A described summer line through cliffbands is exactly
+what this pipeline exists not to draw skis over. Fuglafjellet stays off the
+map until someone publishes a ski description.
+
+What shipped instead is the rest of **Fri Flyt's skiturer-voss index** — the
+same per-area shape the Hemsedal and Bergen rounds were built on. The index
+lists five tours; the app already carried Storanosi, Lønahorgi and
+Horndalsnuten, and the two it lacked are now built, in the region with the
+largest ratio of published-to-shipped in the app. The app goes from 94 tours
+to 96.
+
+| tour | start | summit | gain | km | steepest 100 m band | steepest 30 m | grade |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Finnbufjellet | 772 | 1357 | 619 | 4.4 | 13.2° | 23.3° | 2 |
+| Vatnaknausen | 383 | 1302 | 979 | 7.5 | 13.9° | 21.9° | 2 |
+
+### Finnbunuten, and a number that meant the opposite of what it said
+
+Fri Flyt calls the mountain Finnbufjellet and quotes 1358 moh. The register's
+Finnbufjellet point (Fjell, 60.88774/6.44335) reads 1330,8 in DTM1 — 27 m
+short — and the highest ground in the massif, 1357,0 m, sits at
+60.88067/6.44088, 22 m from the register's **Finnbunuten** (Topp). The
+Kirketaket/Kyrkjetaket pattern again: the app bears Fri Flyt's name, the
+summit search the register's, recorded in `peaks.py` beside the seed.
+
+The fact box was wrong in a subtler way. Fri Flyt's «Høydemeter: 770» and the
+Utemagasinet version of the same description («Skifjell for nybegynnere»,
+588 høydemeter fra parkeringen på toppen av Halsabakkene) cannot both be
+gains. The terrain settles it: rv13 passes 770 moh exactly where the
+Halsabakkane hairpins level out at Sendo (60.90112/6.46437, 771 in DTM1), the
+camping flat beside the road reads 766–779, and 1358 − 770 = 588. **Fri
+Flyt's 770 is the starting elevation, not the climb** — the card carries the
+routed 620. «Halsabakkene» is registered **Halsabakkane**, and the guide says
+so.
+
+The corridor itself is the sentence «ryggen på østsiden av Finnbujuvet og
+Kvassdalen» read against the ground: the Finnbu streams (way/306514915,
+way/306514882) cut ravines west of the ridge past the Finnbuene støl, and
+Kvassdalen — the valley rv13 climbs out of, floor at 574–581 — lies deep to
+its east. The ridge between them is the only ridge east of the ravine, it
+meets the Myrkdalen-skisenter alternative on the shoulder at 1090 moh
+(Fri Flyt's «etter en times gange»), and the eight-direction sweep says why
+the sentence matters: N off the summit is a 2,7° plain, but W and NW fall
+50,3° and 56,7° at their steepest — the «luftige partier» on the nordegg
+that KAST 1 does not cover. The guide keeps the route and the warning in the
+same paragraph.
+
+### Vatnaknausen, and the road the first solve refused
+
+Vatnaknausen is Fri Flyt's «panoramautsikt over Voss»-tour: toll road from
+Selheim to the mapped «Tverberg car park» (node/7829590483, 382,7 moh), road
+into Budalen, Nyestølen (the register holds 27 of them; this is the one at
+60.64412/6.60230), straight north along the treeline (822 moh measured), onto
+the egg west of Rjupetjørnane, and east over the plateau.
+
+The first solve gave back 134 m: with a waypoint sitting 130 m off the
+mapped road it crested a 773 m shoulder on the line of summer path
+way/973320189 and dropped into Budalen. The actual road is the chain
+**Tverrbergsvegen (way/322409601, fee=yes) south to the junction at 475 moh,
+then the Øvraset road (way/707342766) east** — repinned along the mapped
+geometry, the line keeps 979 of its metres and gives back 58, the road's own
+dips. Same lesson as Gullfjellstoppen's lake, one layer up: the router
+solves terrain, and anything the prose promises — a road, a shore, a løype —
+has to be pinned from mapped ground, not gestured at.
+
+The summit is the knaus the name promises. East off the cairn the mean is
+−0,3° for 800 m — the plateau continues — but the steepest 60 m windows sit
+40,6° just 50–110 m out east, 46,7° at 40–100 m southeast, 43,8° at
+340–400 m northeast. In fog, flat-and-then-cliff is the dangerous shape, and
+the guide's summit section is built on exactly those five figures. West-facing
+the whole way (Fri Flyt sells the sunset descent), which the guide converts
+into the timing hazard it is: what softens at four refreezes at sundown.
+
+### The grades, the season, and the region
+
+`route_metrics.py` measures 1 for Finnbufjellet and 2 for Vatnaknausen; both
+cards carry 2. Finnbufjellet's is editorial with its reason in
+`new_tourmeta.json` — KAST 1 covers the ridge, not the nordegg beside it or
+the 50°+ west faces — and Vatnaknausen's measured 2 agrees with Fri Flyt's
+KAST 2. Neither source publishes season months, so **jan–apr is borrowed from
+the app's other Voss tours and both guides say so** — the Surløytenuten rule,
+twice more. Both summits are in Varsom region **Voss (3031), an A region with
+a daily forecast** — queried per coordinate.
+
+The proof is the usual battery, all clean: `check_routes.py` 96 tours / 105
+routes, `check_tours.py` 96 cards, `check_guides.py` 0 unsourced numbers and
+0 reassurance claims across all 96 guides in both languages (it caught one
+draft sentence quoting Fri Flyt's «tryggest spor mulig», which is a
+reassurance claim whoever says it — reworded), `test_check_guides.py` 15
+cases, `check_ground.py` 0 m on water and 0 trail findings on both lines, and
+the CI suite — whose intro-figure test rejected «4,4 km» against a 4,366 km
+line and got «4,37 km», working exactly as built.
+
+### Still open
+
+The guides are sourced and verified against the terrain model — not against
+anyone's experience of these mountains. The independent adversarial read that
+covers 90 of the 96 has not read these two (nor the four of the
+Bergen/Kvamskogen rounds). Vatnaknausen ships at confidence `medium` on a
+single full source; Finnbufjellet at `medium` with Fri Flyt corroborated by
+Utemagasinet and prominent-mountains. And the winter state of the roads —
+rv13 over Vikafjellet at the Finnbufjellet trailhead, the toll road's
+ploughed extent above Selheim — is stated as the weather-dependent thing it
+is, not asserted; a local reader would settle both in a sentence.
+
+## The popularity round, continued
+
+The first popularity round's rule — *a published source calls it the most
+visited or the most popular ski tour of its area, and the app does not already
+carry that mountain* — run again over the areas the map now covers. Three
+candidates carried real claims and failed the standing conditions; two carried
+real claims and shipped. The app goes from 96 tours to 98.
+
+The three rejections first, because they are the rule working:
+
+- **Istinden (Lyngen, 1495)** — «en av de mest populære» in Lyngsalpene per
+  Fri Flyt, whose full description is also KAST 3 – Komplekst: crampons and
+  ice axe as required equipment, glacier travel up «brearmen øst for
+  Urdkjerringa», and a 35–45° summit chute where «skiene tas på sekken». The
+  router only solves skinnable ground under its step cap, and a generated
+  line has nothing honest to say about glaciers or booting a couloir. The
+  claim is real; the line is outside this product.
+- **Storsylen (Sylan, 1762)** — «det mest populære toppturmålet i Sylan både
+  fra norsk og svensk side» per ut.no 1112181, which is a summer fottur, and
+  the winter road ends in Stugudal, 14 km short of the winter-closed
+  Nedalshytta (self-service quarters only; Fri Flyt's Sylan piece points at
+  snowmobile transport). «A start at a road» fails.
+- **Storfjellet (Narvik, 1633)** — Fri Flyt's «det optimale toppturfjellet»
+  is praise, not a most-visited claim, and its description wants ice axe and
+  crampons besides. Not researched further.
+
+| tour | region | start | summit | gain | km | steepest 100 m band | steepest 30 m | grade |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Varden (Småtindan) | Lofoten | 2 | 700 | 825 | 5.0 | 22.8° | 32.3° | 2 |
+| Midtitinden | Bodø | 11 | 1060 | 1051 | 4.2 | 19.1° | 26.9° | 2 |
+
+The sentences the round is built on: Fri Flyt's second Småtindan description
+calls Varden «den mest populære toppturen på øygruppa», and its Midtitinden
+page opens with the mountain as one of the most visited ski peaks around
+Bodø. Bodø is a new region — the map previously had nothing between
+Trøndelag and Harstad.
+
+### Varden, and the lake the first solve skied across
+
+The summit is the Hesten (Segla) pattern: the register carries both **Varden
+(Ås)** and **Småtindan (Fjell)** within 30 m of the climbed cell — 700,5 moh
+against a published 700 — and the resolver seeds on Småtindan because a bare
+«Varden» never reaches Vågan inside SSR's first page. The massif's highest
+point is a *different* peak, 732 m, 600 m south-west; the claims-tiebreak in
+the summit search is what keeps the tour off it.
+
+`check_ground.py` earned its keep again: the first solve ran **450 m along
+Karlsvatnet at 12 moh** — an unnamed-on-the-line, coastal, sea-level lake
+filling the valley south of the *regulated* Stor-Kongsvatnet (OSM relations
+5312814 and 5312819). The land between them is a ~250 m neck at 68.226–68.228,
+and the line is repinned over it at 29 moh with the router's water cost on:
+0 m on water, and the guide names both lakes and the reason. The notch
+«til høyre rundt» Ørntinden is measured too — 293 moh against the 398 m
+knoll, about 50 vertical metres given back, which is most of why the tour's
+gain (825) exceeds its net height.
+
+The eight-direction sweep says what the summit is: NW 60,7° and W 53,8° at
+20–80 m, E 49,3° at 10–70 m — a tind, not a hei, and Fri Flyt's own «kjøringen
+begynner ca. 50 m under toppen» agrees with the measurement. Kolbeindalen,
+where Fri Flyt warns of avalanche danger and a shooting range, lies one ridge
+north of the line and stays there.
+
+### Midtitinden, sea to summit
+
+Every metre of the mountain is climbed: the mapped pull-off at Kleivberget on
+rv80 reads 11 moh, the top 1059,5 — and the register's own Midtitinden point
+reads 983,5, 75 m low and 190 m north-east of the summit, the Gullfjellstoppen
+pattern again. Fri Flyt's route numbers reproduce rung for rung on DTM1: the
+top cabin «Geilo, ca 50» reads 54,4; the military-route marking «ved 560» —
+the line passes 536; the south-east ridge «ca 720» reads 728; «ca 900» reads
+879; the turn onto the north-east ridge «ved 980» happens at 1026. The line
+gives back two metres total, and its steepest sustained stretch is 26,9° —
+Fri Flyt's «under 30 grader», confirmed rather than assumed.
+
+The descent variants Fri Flyt grades from easy to demanding are measured
+rather than waved at: NE towards Stordalen 69,2° at its steepest, S 56,7°
+at 70–130 m from the cairn, SW 60,8°. The guide carries the numbers and the
+sentence they add up to: choose by conditions, not appetite.
+
+### The grades, the season, and the regions
+
+Both measure grade 2 and ship at 2, in agreement with Fri Flyt's KAST 2 for
+Varden and «under 30 grader» for Midtitinden. Neither source publishes season
+months: both cards borrow jan–apr — Varden from the app's other Lofoten
+tours, Midtitinden from the same latitude — and both guides say so. The
+regions are queried per coordinate: **Lofoten og Vesterålen (3014)** and
+**Salten (3016)**, both A regions with daily forecasts.
+
+One `check_ground.py` finding is read and set aside rather than fixed: it
+reports the Varden line 367 m off a mapped trail under a guide that says
+«lysløypa» — but the guide's løype claim covers only the valley kilometre
+(which lies on the mapped Damveien), and the strayed metres are the neck and
+the upper flank, where no løype is claimed. The reasoning is in
+`measurements.json` next to the sweep.
+
+The proof: `check_routes.py` 98 tours / 107 routes, `check_tours.py` 98
+cards, `check_guides.py` 0 unsourced numbers and 0 reassurance claims across
+196 guide texts, `test_check_guides.py` 15 cases, `check_ground.py` 0 m on
+water on both lines, and the CI suite — whose intro-figure test rejected the
+card's rounded 820 against an 825 m line and got the measured figure, again
+working exactly as built.
+
+### Still open
+
+The independent adversarial read now trails by eight: Gullfjellstoppen, the
+three Kvamskogen tours, the two of the Voss round, and these two. Both ship
+at confidence `medium` on Fri Flyt descriptions with the register and the
+terrain model as the second witness. And the popularity question still has
+areas left to ask in — Vesterålen's and Helgeland's most-visited names were
+not settled this round.
+
+## The backlog round
+
+`newtours.py` has carried a registry of names since the second batch, and
+eleven of them never got a corridor. This round asked which of the backlog
+have full published ski descriptions and skinnable lines — and shipped the
+two that do. The app goes from 98 tours to **100**.
+
+One more name left the backlog by rejection: **Store Kjostinden (1488)**,
+whose Fri Flyt description has a main ascent holding 35–45° between 1080 and
+1340 moh and an east alternative up Rottenvikbreen — the Istinden conclusion
+again, recorded in `new_corridors.json`.
+
+| tour | region | start | summit | gain | km | steepest 100 m band | steepest 30 m | grade |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Fastdalstinden | Lyngen | 123 | 1275 | 1271 | 7.3 | 19.5° | 25.5° | 3 |
+| Togga | Sogn | 427 | 1204 | 780 | 2.6 | 22.5° | 27.5° | 3 |
+
+Both seasons are published for once — Fri Flyt's own januar–mai and
+desember–mars — so no borrowing rule was needed. Both summits sit in
+A regions, queried per coordinate: Lyngen (3010) and Indre Sogn (3029).
+
+### Fastdalstinden, and the reservoir in the middle of the tour
+
+The start «parkeringsplass på Varto» resolved through a road name:
+**Vardoveien** (gravel, `way/412108701`) leaves fv7920 at Rottenvik and ends
+at 123 moh — Fri Flyt's «relativt smal vei ca. 1 km», beside the register's
+Varto, and 1275 − 1160 = 115 confirms the start. The anleggsvei it becomes
+is mapped to the dam at 515, and the dam is the finding: **Rottenvikvatnet
+is a reservoir** (`relation/8271819`, water=reservoir; InnsjøRegulert,
+513,0 moh). The corridor carried the water cost from the first solve, the
+west-and-north-shore instruction is pinned on land (566 / 572 / 589 moh),
+and the two water judges disagree by a hair worth recording: the router's
+off-water pass reported 9 m left on water against Kartverket's terrain
+classes — shoreline noise at the reservoir edge — while `check_ground.py`
+against the OSM polygon measures 0 m.
+
+The rest of Normalruta I reproduces: the flat «på 650 moh» measures 650 to
+the metre, the little lake west of it is mapped, and the «liten
+ryggformasjon» with its 30° spots holds 815 → 1070 on the line. The grade-3
+card over a measured 2 is editorial with its reason recorded: 1270 hm and
+6–8 hours is the Sæbyggjenuten scale, the stated hazards are «utløpsområder
+og skavler», and Fri Flyt says of the south-side descent variant — in
+unusually heavy words for a guidebook — that it «har vært skuddpunkt for
+dødelige skredulykker». The guide quotes that sentence and does not draw
+the variant; the eight-direction sweep (SW 51,6°, W 46,6° at their
+steepest) backs it.
+
+### Togga, and the summit search that walked off the name
+
+The old registry resolution for Togga stood 280 m west of the name at
+1235,5 moh — a bump on a ridge that keeps rising west-south-west without a
+saddle (1282,5 at 590 m, 1354,0 at 990 m, 1438,6 at 2,2 km). That is the
+Rødtinden shape: a named point on connected rising ground, where
+hill-climbing has nothing to stop it. `SUMMIT_CAP_M` now carries
+`togga: 150` with the reason beside it, and the capped search resolves
+1203,8 at the register point (1202,6) against a published 1205. The guide
+turns the same fact into the navigation hazard it is: west of the cairn the
+mean is *negative* because the ridge climbs on — in fog, «following the
+ridge» walks into bigger mountains, not down.
+
+Everything else reproduces exactly: Brandhaugane (Haug, 426,1 — and
+1205 − 785 = 420), Orraleiken «flater ut» at a measured 1042,3, the route
+2,64 km against a published 2,7. The card's grade 3 over a measured 2 is
+Fri Flyt's own warning made editorial: «på søraustryggen (normalvegen) er
+det eit brattare parti der skiløparar har utløyst snøskred under opptur» —
+the 800–900 band, measured 22,5° with the line switchbacking gentler than
+the 33–35° fall line. Both guides carry that asymmetry explicitly: the
+line's numbers are the track's, not the slope's.
+
+The proof: `check_routes.py` 100 tours / 109 routes, `check_tours.py` 100
+cards, `check_guides.py` 0 unsourced numbers and 0 reassurance claims
+across 200 guide texts, `test_check_guides.py` 15 cases, `check_ground.py`
+0 m on water on both lines (one partial-claim trail note read and set aside
+in `measurements.json`, the Varden shape again), and the CI suite.
+
+### Still open
+
+Ten backlog names remain unbuilt, most for want of a published ski
+description rather than research effort: istinden (Narvik), skjomtinden,
+storsteinsfjellet, storsylen (rejected), fongen, trollhetta, blahoa,
+storskrymten, englafjell, grubba. The adversarial-read gap now counts ten.
+
+## Round four: Englafjell and Sandhornet
+
+Two threads pulled at once: the last backlog name with a full published ski
+description, and the Bodø region the popularity round opened with a single
+tour. The app goes from 100 tours to 102.
+
+| tour | region | start | summit | gain | km | steepest 100 m band | steepest 30 m | grade |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Englafjell | Hardanger | 148 | 1200 | 1237 | 8.6 | 21.1° | 30.1° | 3 |
+| Sandhornet | Bodø | 10 | 993 | 1021 | 5.0 | 21.3° | 32.5° | 2 |
+
+**Trollhetta was checked and stays unbuilt**: ut.no's crossing over «hettene»
+is a summer fottur and no ski turbeskrivelse was found — the same
+missing-description reason that holds most of the remaining backlog.
+
+### Englafjell, and the waypoint that was the corridor author's
+
+Fri Flyt's Rosendal description resolved cleanly — Musland and its mapped
+tractor road and path network, Såta (Ås, 651 moh — the north-west knoll, not
+either of the two Såta tops further north in the kommune), the south ridge
+651 → 869 → 1032 → 1126 → 1184 → 1199,9, monotonic, and Limomnen (Li, 889,2)
+as the bowl the summit cornices overhang. The first solve gave back 307 m,
+and 177 of them were self-inflicted: a «lia vestover» waypoint had pinned the
+line over a 313 m knoll the source never mentions. The pin was removed, the
+router found the natural valley crossing itself, and the give-back fell to
+the terrain's own 185 — the correction is in the research record, because a
+corridor author inventing ground is exactly what the audit trail exists to
+catch.
+
+The card's grade 3 over a measured 2 carries Fri Flyt's own framing:
+«vanskelig», 35° on the easiest way, «skredutsatt terreng, vanskelig
+navigering og utglidningsfare», skis on the pack in the forest, and a
+NE flank falling 55,5° under the corniced summit ridge. And the region
+matters: **Englafjell sits in Hordalandskysten (3033), a B region with no
+daily forecast** — the Gullfjellstoppen situation, and the guide says so
+instead of pointing at a bulletin that does not cover the ground.
+
+### Sandhornet, sea to summit again
+
+Fri Flyt's Horsdal route reproduces rung for rung: the farm at 13 moh, the
+shore path at 0–28, the stairs ending where the ground levels at a measured
+189 against the source's «190 moh», 463 against «450», 662 and 752 north of
+point 592, and the top at 993,4 against a published 993. The mountain stands
+in Gildeskål; the card keeps Fri Flyt's Bodø the way Strandtinden keeps
+Harstad. The hazard is the interesting part: the source's warning is about
+**runout zones in Stjerndalen** — the W and SV flanks under Isvasstinden,
+which the register confirms stands just east of the line — not about the
+track's own steepness (under 30° except a measured 32,5° in the last fifty
+metres). The guide gives the runout crossing its own section, and the
+eight-direction sweep explains the island-mountain edges: W 59,0°, NW 59,9°,
+N 61,8° within 170 m of the cairn. The fully described Ravika route (a 40°
+section between 920 and 840) is named as the variant it is and not drawn.
+
+The proof: `check_routes.py` 102 tours / 111 routes, `check_tours.py` 102
+cards, `check_guides.py` 0 unsourced numbers and 0 reassurance claims across
+204 guide texts — after it crashed on a comma-separated elevation list and
+got the corpus convention («869, 1032, 1126 og 1184 moh») instead —
+`test_check_guides.py` 15, `check_ground.py` clean on both lines including
+the trail claims, and the CI suite.
+
+### Still open
+
+Nine backlog names remain, all for want of a published ski description. The
+adversarial-read gap counts twelve. Neither source publishes season months;
+both cards borrow jan–apr and both guides say so.
+
 ## Network
 
 Everything is public and unauthenticated:

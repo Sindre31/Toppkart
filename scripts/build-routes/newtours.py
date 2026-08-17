@@ -119,4 +119,9 @@ NEW_TOURS = {
     "sata": ("Såta", "Kvamskogen"),
     "skrott": ("Skrott", "Kvamskogen"),
     "tveitakvitingen": ("Tveitakvitingen", "Kvamskogen"),
+    "finnbufjellet": ("Finnbufjellet", "Voss"),
+    "vatnaknausen": ("Vatnaknausen", "Voss"),
+    "varden-smaatindan": ("Varden (Småtindan)", "Lofoten"),
+    "midtitinden": ("Midtitinden", "Bodø"),
+    "sandhornet": ("Sandhornet", "Bodø"),
 }

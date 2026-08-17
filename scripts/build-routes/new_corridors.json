@@ -3967,5 +3967,745 @@
   ],
   "rejectReason": "Andrekjelda finst, og namnegåta er løyst — men bakken vil framleis ikkje stadfeste linja, og denne gongen med tal. Fri Flyt har to skildringar av same turen frå same startstad, av kvar sin forfattar: skiruta («Over skoggrensa følger du den breie ryggen sør for Hesjedalen. På ca. 600 moh. legges sporet inn i øvre deler av dalen og videre mer eller mindre rett opp mot toppen») og barmarksruta av Kent-Hugo Norheim («Fra start går du nordøst over et myrområde mot Hestedalen, før du følger ryggen i retning av Svarthamartinden et stykke oppover. Når dalen flater ut, forlates ryggen og du går i retning av Ullstinden»). Dalen Fri Flyt skriv «Hesjedalen» heiter **Hestedalen** i registeret, og med det namnet på plass resolverer kvart einaste punkt i skildringa: parkeringa (OSM way/255323008, 2660 m², hiking=yes), myrområdet (terrengklasse Myr på 166,8 moh), ryggen sør for dalen (kryssrygg målt til 167, 270, 414, 577, 743 og 851 moh på 500 til 3000 m ut), Svarthammartinden og Stortinden.\n\nDet som ikkje resolverer, er dei siste to kilometrane. Ullstinden er skild frå heile det ryggsystemet av eit skar, og veggen på nærsida blei sveipa i heile si lengd — 21 breiddegrader frå 69.7860 til 69.8060. Frå 69.7890 og nordover les han 31 til 54 grader på kvar einaste ein. Dei tre breiddegradene som les under 27 kryssar ikkje skaret i det heile, men går over Stortinden — og den slakaste av dei held ikkje: med 119 m mellom prøvepunkta les traversen 26,1°, med 22 m les same grunnen eit steg på 44,3°. Den einaste vegen rundt er over skuldra på Stortinden (1038,7 moh) og ned nordaustsida hennar, og det steget måler 40 grader over 160 m grunn (1012 → 878). Fire korridorvariantar blei routa: alle gir tilbake 192 til 345 høgdemeter, og alle har eit brattaste 30 m-steg på 35 til 39 grader.\n\nBegge kjeldene seier noko anna. Skibeskrivinga fører bratteste punkt som **20–25 grader** og kallar fjellet «et flott mål for nyfrelste toppturister, og for de som ønsker et 100 % skredtrygt fjell», og begge oppgir ei stigning — 980 og «litt i underkant av 1000» — som ikkje har rom for 200 meter attgjeven høgde (toppen minus starten er 959). Ei linje med eit 40-graders steg på eit fjell som blir seld som skredtrygt, er ikkje ein unøyaktigheit i eit tal; det er ei linje som fortel lesaren noko anna enn kjelda gjer. Anten går ruta ein stad korkje teksten eller terrengmodellen har vist oss, eller så er det ein tredje startstad. Turen ventar på den som veit kva av delane.\n\nStallvika, det opplagde alternativet, har ingen veg. Bukta ligg under den einaste slake flanken fjellet har — frå Stallvikskaret på 457,6 moh stig linja til toppen monotont utan å gi tilbake ein meter — men i ei rute på 19.560–19.700 aust og 69.780–69.840 nord har OSM ingen `highway` av nokon klasse nærare enn ein sti 2845 m unna, ingen `track` innanfor 3469 m og ingen kartlagd parkering i det heile. Linja opp frå fjøra er dessutan brattare enn turen ho skulle erstatte: 458 høgdemeter på 942 m, med eit steg på 45,6°. Fjellet si slake side vender mot ein fjord ingen køyrer til.",
   "corridor": {}
+ },
+ {
+  "slug": "finnbufjellet",
+  "verdict": "corrected",
+  "corrections": [
+   "Fri Flyt kallar fjellet Finnbufjellet og oppgjev 1358 moh, men registeret sitt Finnbufjellet-punkt (Fjell, 60.88774/6.44335) les 1330,8 i DTM1, og det høgaste punktet i massivet — 1357,0 — ligg på 60.88067/6.44088, 22 m frå registeret sin topp **Finnbunuten**. Same mønster som Kirketaket/Kyrkjetaket: appen ber Fri Flyt-namnet, toppsøket ber registernamnet Finnbunuten. prominent-mountains.no fører òg toppen som Finnbunuten 1358.",
+   "Fri Flyts faktaboks seier «Høydemeter: 770» og Utemagasinet-versjonen av same skildringa (Skifjell for nybegynnere) seier 588 høgdemeter frå parkeringa på toppen av Halsabakkane. Terrenget avgjer kven som har rett: rv13 passerer 770 moh nøyaktig der bakkane flatar ut ved Sendo (60.90112/6.46437, 771 i DTM1), og 1358 − 770 = 588. Fri Flyts «770» er starthøgda, ikkje stigninga.",
+   "«Halsabakkene» heiter **Halsabakkane** i registeret (Bakke, 60.90203/6.47716, 665 moh — midt i sjølve bakkane). Leirplassen på toppen av dei er flata på ~770 moh der rv13 og Sendo-elva møtest (elva way/306601832 passerer 60.90111/6.46346, 768 moh, og fell så gjennom fossen ved 60.90046/6.47611 ned i Kvassdalen).",
+   "«Ryggen på østsiden av Finnbujuvet og Kvassdalen» er lesen mot terrenget: Finnbu-bekkene (way/306514915, way/306514882) skjer juv ned mot Sendo-elva vest for ryggen, og Kvassdalen (Dal, 60.89636/6.494, 581 moh — dalen rv13 kjem opp frå) ligg djupt aust for han. Ryggen mellom dei — over Finnbuene-stølen (Seter/støl, 60.90021/6.46077) — er den einaste ryggen aust for juvet, og han møter skuldra på ~1090 moh der alternativtilkomsten frå Myrkdalen skisenter kjem opp."
+  ],
+  "rejectReason": "",
+  "corridor": {
+   "routeId": "halsabakkane",
+   "routeName": "Frå leirplassen på toppen av Halsabakkane",
+   "routeDescriptionFull": "Frå leirplassen ved Sendo på toppen av Halsabakkane (770 moh) over brua på Sendo-elva, sørover opp ryggen på austsida av Finnbujuvet, forbi møtepunktet med alternativtilkomsten frå Myrkdalen skisenter på skuldra ved 1090 moh, og vestover opp austryggen til toppen registeret kallar Finnbunuten",
+   "trailhead": {
+    "name": "Halsabakkane",
+    "lat": 60.9013,
+    "lng": 6.4645,
+    "elevationM": 772.34,
+    "osmEvidence": "Flata der rv13 (Vikafjellsvegen, way-kjeda med ref=13) toppar hårnålssvingane og møter Sendo-elva; vegen passerer 770 moh på 60.90112/6.46437. Open, flat mark (ÅpentOmråde, 766–779 moh) mellom vegen og elva."
+   },
+   "waypoints": [
+    {
+     "name": "brua over Sendo-elva",
+     "lat": 60.9006,
+     "lng": 6.4636,
+     "elevationM": 766.55
+    },
+    {
+     "name": "ryggfoten aust for Finnbujuvet",
+     "lat": 60.899,
+     "lng": 6.466,
+     "elevationM": 792.92
+    },
+    {
+     "name": "ryggen ved 870",
+     "lat": 60.896,
+     "lng": 6.469,
+     "elevationM": 870.53
+    },
+    {
+     "name": "ryggen ved 990",
+     "lat": 60.894,
+     "lng": 6.474,
+     "elevationM": 992.16
+    },
+    {
+     "name": "skuldra, møtet med Myrkdalen-ruta",
+     "lat": 60.8885,
+     "lng": 6.4745,
+     "elevationM": 1088.76
+    },
+    {
+     "name": "vestover på flanken",
+     "lat": 60.885,
+     "lng": 6.465,
+     "elevationM": 1146.43
+    },
+    {
+     "name": "ryggen ved 1220",
+     "lat": 60.884,
+     "lng": 6.455,
+     "elevationM": 1221.37
+    },
+    {
+     "name": "austryggen ved 1300",
+     "lat": 60.8825,
+     "lng": 6.448,
+     "elevationM": 1302.28
+    }
+   ],
+   "season": "jan–apr",
+   "aspect": "NØ",
+   "grade": 2,
+   "gradeReason": "Målinga seier 1 — brattaste hundremetersbeltet 13,2 grader mellom 900 og 1000 moh, brattaste 30 m 23,3 — men grad 2 er redaksjonell: Fri Flyt åtvarar om «et par luftige partier» på nordeggen rett ved ruta, og Finnbujuvet vest for ryggen samlar fokksnø. KAST 1 – Enkelt gjeld ryggen, ikkje flankane ved sidan av.",
+   "roadClosedInWinter": false,
+   "hazardNotes": "Fri Flyt: KAST 1 – Enkelt, og «det tryggeste alternativet er å følge ryggen på østsiden av Finnbujuvet og Kvassdalen»; sikraste nedfarten er same veg som opp. «Nordeggen har et par luftige partier hvor man må vurdere ferdighetene og skredfaren» — nordeggen er ikkje korridoren, og guiden må seia det. Finnbujuvet samlar fokksnø (Fri Flyt-indeksen: fjellet der skisesongen på Voss vert opna og avslutta).",
+   "teaserNo": "620 høgdemeter frå leirplassen på toppen av Halsabakkane: over Sendo-elva og opp ryggen aust for Finnbujuvet, dit skisesongen på Voss vert opna og avslutta.",
+   "teaserEn": "620 metres of ascent from the camping ground at the top of the Halsabakkane hairpins: across the Sendo river and up the ridge east of Finnbujuvet, where the Voss ski season opens and closes.",
+   "sources": [
+    "https://www.friflyt.no/topptur/skiturer-voss/turbeskrivelse-finnbufjellet",
+    "https://www.friflyt.no/topptur/skiturer-voss/skiturer-i-voss",
+    "https://www.utemagasinet.no/randonnee/skifjell-for-nybegynnere",
+    "https://www.prominent-mountains.no/mountains/1000mtn/finnbunuten.html"
+   ],
+   "confidence": "medium"
+  }
+ },
+ {
+  "slug": "vatnaknausen",
+  "verdict": "corrected",
+  "corrections": [
+   "Registeret ber to punkt: Vatnaknausen Topp (60.64957/6.64765, 1298,6 i DTM1) og Vatnaknausen Berg (60.65215/6.64512, 1199,0). Publisert høgd er 1303; Topp-punktet er seeden, og toppsøket får klatra dei siste metrane.",
+   "Heile tilkomsten står på kartlagd veg, men ikkje den fyrste antakinga om han: Grettestølen-vegen (way/598475037) endar ved stølen, og fyrste solveringa la 60 waypoint-frie meter for høgt og gav att 134 m over skuldra sør for Gretteggi. Den verkelege vegen inn Budalen er kjeda Tverrbergsvegen (way/322409601, fee=yes) frå parkeringa «Tverberg car park» (node/7829590483, 382,7 moh) sørover til vegdelet på 475 moh (60.64113/6.55725), og Øvraset-vegen (way/707342766) austover derifrå opp til Øvraset (60.64487/6.58671, 639 moh, parkering node/6643338669). Fri Flyts «900 høgdemeter» mot 1303 gjev start ~403; den kartlagde parkeringa les 382,7 — same startpunkt, målt.",
+   "Nyestølen finst 27 gonger i registeret; den i Budalen ligg på 60.64412/6.60230, 706,9 moh, 1,2 km frå registerpunktet til dalen (60.64534/6.59313, 669,6). Eggi vest for Rjupetjørnane (Gruppe av tjern, 60.64934/6.63213, 1088,5) er målt: linja opp frå skoggrensa held 6.618–6.625 og passerer tjørnene på nordsida i ope terreng (977,8 → 1031,4 → 1102,7 moh, alt ÅpentOmråde).",
+   "Alternativruta Fri Flyt nemner — frå Tverrberg rett aust til Grotveit (Bruk, 60.65438/6.57608, 662,3) og gjennom skogen til Gretteggi (Rygg, 60.65964/6.59067, 996,0) — løyser seg òg i registeret, men er ikkje korridoren; guiden nemner ho.",
+   "Fyrste solveringa (før vegkorrigeringa) toppa på 773 moh på 60.64978/6.57866 og fall så 134 m ned i Budalen — ruta hadde teke sommarstien way/973320189 sin rygg i staden for vegen. Etter ompinninga langs way/322409601 → way/707342766 er nedoverdelane att berre vegens eigne slakkar."
+  ],
+  "rejectReason": "",
+  "corridor": {
+   "routeId": "tverrberg",
+   "routeName": "Frå Tverrberg om Budalen og Nyestølen",
+   "routeDescriptionFull": "Frå parkeringa på Tverrberg (383 moh) etter Tverrbergsvegen sørover til vegdelet på 475 moh, Øvraset-vegen austover inn Budalen om Øvraset (639 moh) og opp til Nyestølen, rett nord etter skoggrensa, opp på eggi vest for Rjupetjørnane, og austover over platået til toppen",
+   "trailhead": {
+    "name": "Tverrberg",
+    "lat": 60.65243,
+    "lng": 6.55072,
+    "elevationM": 382.74,
+    "osmEvidence": "«Tverberg car park», OSM node/7829590483, enden av vinterbrøyta del av bomvegen Tverrbergsvegen (way/322409601, fee=yes, surface=gravel) frå Selheim."
+   },
+   "waypoints": [
+    {
+     "name": "Tverrbergsvegen sørover",
+     "lat": 60.6477,
+     "lng": 6.54686,
+     "elevationM": 438
+    },
+    {
+     "name": "vegdelet mot Øvraset",
+     "lat": 60.64113,
+     "lng": 6.55725,
+     "elevationM": 475
+    },
+    {
+     "name": "Øvraset-vegen ved 533",
+     "lat": 60.64377,
+     "lng": 6.57231,
+     "elevationM": 533
+    },
+    {
+     "name": "Øvraset",
+     "lat": 60.64487,
+     "lng": 6.58671,
+     "elevationM": 639
+    },
+    {
+     "name": "Budalen",
+     "lat": 60.64534,
+     "lng": 6.59313,
+     "elevationM": 669.58
+    },
+    {
+     "name": "Nyestølen",
+     "lat": 60.64412,
+     "lng": 6.6023,
+     "elevationM": 706.94
+    },
+    {
+     "name": "skoggrensa nordover",
+     "lat": 60.648,
+     "lng": 6.606,
+     "elevationM": 821.08
+    },
+    {
+     "name": "opp mot eggi",
+     "lat": 60.651,
+     "lng": 6.618,
+     "elevationM": 977.84
+    },
+    {
+     "name": "eggi vest for Rjupetjørnane",
+     "lat": 60.6515,
+     "lng": 6.625,
+     "elevationM": 1031.38
+    },
+    {
+     "name": "nord for Rjupetjørnane",
+     "lat": 60.651,
+     "lng": 6.632,
+     "elevationM": 1102.69
+    },
+    {
+     "name": "platået mot toppen",
+     "lat": 60.65,
+     "lng": 6.642,
+     "elevationM": 1215.4
+    }
+   ],
+   "season": "jan–apr",
+   "aspect": "V",
+   "grade": 2,
+   "gradeReason": "Målinga seier 2 og kortet ber 2 — brattaste hundremetersbeltet 13,9 grader mellom 700 og 800 moh, brattaste 30 m 21,9 — i samsvar med Fri Flyts KAST 2 – Utfordrende: småkupert terreng som krev innsats for å leggja sporet under 30 grader, men lina gjer det.",
+   "roadClosedInWinter": false,
+   "hazardNotes": "Fri Flyt: KAST 2 – Utfordrende. «Småkupert terreng, som krever innsats for å legge tryggest spor mulig under 30 grader» — det brattaste partiet er flanken opp mot eggi mellom skoggrensa og Rjupetjørnane. Nedfarten er same veg. Vestvendt: sola mjuknar snøen utover dagen, og Fri Flyt sel turen på solnedgangen — det er òg tidspunktet vestvende heng gjenfrys.",
+   "teaserNo": "980 høgdemeter frå Tverrberg: bomvegen inn Budalen til Nyestølen, opp på eggi vest for Rjupetjørnane, og austover platået til utsikta over Voss.",
+   "teaserEn": "980 metres of ascent from Tverrberg: the toll road into Budalen to Nyestølen, up onto the ridge west of the Rjupetjørnane tarns, and east across the plateau to the view over Voss.",
+   "sources": [
+    "https://www.friflyt.no/topptur/skiturer-voss/turbeskrivelse-vatnaknausen"
+   ],
+   "confidence": "medium"
+  }
+ },
+ {
+  "slug": "varden-smaatindan",
+  "verdict": "corrected",
+  "corrections": [
+   "Fri Flyt fører turen som «Varden (Småtindan)» med toppunkt 700. Registeret ber begge namna: Småtindan (Fjell, 68.23343/14.38817) og **Varden (Ås, 68.23324/14.38798)** — 7 m frå den høgaste cella i massivet på 699,9 moh (68.23318/14.38805). Publisert 700 reproduserer på desimeteren. Same mønster som Hesten (Segla): appen ber begge namna. Merk at massivets høgaste punkt er ein annan tind på 732,1 moh 600 m lenger sørvest — toppsøket må ha claims-styringa (699,9 vinn på 700-kravet).",
+   "Startpunktet «lysløypa ved Kabelvågmarka ... skilt til Eidet, parkeringsplassen ca 200 m fra hovedveien» løyser seg på kartlagd grunn: registerets Eidet (Adressenavn, 68.21/14.43836), OSM-parkeringa «Karlsvågen» (way/1093254187, 68.21606/14.44188, 2,4 moh) og Damveien — lysløypa (piste:type=nordic, way/71865261 m.fl.) — som byrjar 120 m nordaust og går nordover dalen mot Kongsvatnet.",
+   "Vatnet lysløypa endar ved er **regulert** (InnsjøRegulert, 35,0 moh, dammen på 68.2375/14.4399 der Damveien endar). Fri Flyts variant «inn til Store Kongsvatnet» og heile Kolbeindalen — der han sjølv åtvarar om skredfare og skytebane — er difor ikkje korridoren: lina forlèt løypa ved ~19 moh sør for vatnet og tek Aksla-ryggen, slik den andre varianten hans seier.",
+   "«Holder til høyre rundt» Ørntinden (Ås, 68.22746/14.42133, 398,4 moh i DTM1) er målt: skaret nord for toppen les 292,8 på 68.22880/14.41950, så omvegen rundt kostar ~50 høgdemeter att-gjeve mot å klyva over. Vidare vestover er flanken jamn: 340,8 → 441,0 → 564,6 → 699,9.",
+   "Fri Flyts «i øvre deler stiger henget 35-40 grader bratt» er flankane ved lina, ikkje sporet: ruteren løyser under sitt eige steg-tak, og målinga avgjer kortet.",
+   "check_ground.py fann fyrste solveringa 450 m ute på vatn på 12 moh: **Karlsvatnet** (OSM-relasjon 5312814, 68.2177–68.2260/14.4288–14.4425) fyller dalbotnen sør for det regulerte Stor-Kongsvatnet (relasjon 5312819, reservoir), og lina hadde kryssa det på langs. Landstripa mellom dei to vatna er ~250 m brei (68.2260–68.2282); lina er pinna over eidet på 28,5 moh (68.22680/14.44300) og myra vest for det (23,6 moh), med vannkost på ruteren — same is-argumentet som Gullfjellstoppen: kystnært, lågt, og med eit regulert vatn som næraste granne."
+  ],
+  "rejectReason": "",
+  "corridor": {
+   "routeId": "kabelvagmarka",
+   "routeName": "Frå Eidet ved Kabelvåg over Aksla",
+   "routeDescriptionFull": "Frå Karlsvågen-parkeringa ved Eidet etter lysløypa (Damveien) langs austsida av Karlsvatnet, over eidet mellom Karlsvatnet og det regulerte Stor-Kongsvatnet, vestover til foten av Aksla, opp ryggen til rett under Ørntinden, til høgre gjennom skaret nord for toppen, og vestover flanken til Varden",
+   "trailhead": {
+    "name": "Eidet",
+    "lat": 68.2162,
+    "lng": 14.4418,
+    "elevationM": 2.39,
+    "osmEvidence": "Parkeringa «Karlsvågen» (OSM way/1093254187), ~400 m frå E10 over brua, ved registerets Eidet (Adressenavn 68.21/14.43836). Lysløypa Damveien (way/71865261, piste:type=nordic) byrjar 120 m nordaust, på 3,9 moh."
+   },
+   "waypoints": [
+    {
+     "name": "Damveien, lysløypa",
+     "lat": 68.21695,
+     "lng": 14.4447,
+     "elevationM": 5.1
+    },
+    {
+     "name": "lysløypa nordover",
+     "lat": 68.22214,
+     "lng": 14.44488,
+     "elevationM": 18.82
+    },
+    {
+     "name": "eidet mellom Karlsvatnet og Kongsvatnet",
+     "lat": 68.2268,
+     "lng": 14.443,
+     "elevationM": 28.54
+    },
+    {
+     "name": "myra vest for eidet",
+     "lat": 68.2272,
+     "lng": 14.436,
+     "elevationM": 23.56
+    },
+    {
+     "name": "foten av Aksla",
+     "lat": 68.2265,
+     "lng": 14.43,
+     "elevationM": 19.85
+    },
+    {
+     "name": "Aksla-ryggen",
+     "lat": 68.227,
+     "lng": 14.426,
+     "elevationM": 140.83
+    },
+    {
+     "name": "rett under Ørntinden",
+     "lat": 68.2275,
+     "lng": 14.4225,
+     "elevationM": 341.85
+    },
+    {
+     "name": "skaret nord for Ørntinden",
+     "lat": 68.2288,
+     "lng": 14.4195,
+     "elevationM": 292.77
+    },
+    {
+     "name": "vestover flanken",
+     "lat": 68.2298,
+     "lng": 14.41,
+     "elevationM": 340.77
+    },
+    {
+     "name": "flanken ved 440",
+     "lat": 68.2305,
+     "lng": 14.4,
+     "elevationM": 440.96
+    },
+    {
+     "name": "øvre flanken ved 565",
+     "lat": 68.232,
+     "lng": 14.392,
+     "elevationM": 564.6
+    }
+   ],
+   "season": "jan–apr",
+   "aspect": "Ø",
+   "grade": 2,
+   "gradeReason": "Målinga seier 2 og kortet ber 2 — brattaste hundremetersbeltet 22,2 grader mellom 600 og 700 moh, brattaste 30 m 31,3 — i samsvar med Fri Flyts KAST 2 – Utfordrende. Flankane kring den øvre lina stig 35–40 grader etter Fri Flyt, og skredfaren han åtvarar om i Kolbeindalen ligg rett nord for ryggen.",
+   "roadClosedInWinter": false,
+   "hazardNotes": "Fri Flyt: KAST 2 – Utfordrende. «Skredfare i Kolbeindalen» og skytebane i botnen av dalen — Kolbeindalen er ikkje korridoren, og guiden må seia det. «I øvre deler stiger henget 35-40 grader bratt» — flankane kring den øvre lina. Nedfarten er same veg («samme rute ned for maksimal sikkerhet»); vestsidevarianten mot Lyngvær krev tilrettelagd transport og er ikkje korridoren. Stor-Kongsvatnet er regulert og Karlsvatnet ligg på 12 moh ved kysten — lina går over eidet mellom dei på land, med vannkost, og check_ground.py er dommaren.",
+   "teaserNo": "820 høgdemeter frå Eidet ved Kabelvåg: lysløypa langs Karlsvatnet, over eidet mot Aksla, gjennom skaret rundt Ørntinden, og vestflanken til toppen av øygruppas mest gåtte skitur.",
+   "teaserEn": "820 metres of ascent from Eidet by Kabelvåg: the lit trail along Karlsvatnet, over the neck towards Aksla, through the notch around Ørntinden, and the west flank to the top of the archipelago's most skied tour.",
+   "sources": [
+    "https://www.friflyt.no/topptur/skiturer-lofoten/turbeskrivelse-varden-smaatindan",
+    "https://www.friflyt.no/topptur/skiturer-lofoten/turbeskrivelse-smaatindan2",
+    "https://www.utemagasinet.no/randonee/skiferie-i-lofoten"
+   ],
+   "confidence": "medium"
+  }
+ },
+ {
+  "slug": "midtitinden",
+  "verdict": "corrected",
+  "corrections": [
+   "Registerpunktet (Topp, 67.34397/15.00963) les 983,5 moh — 75 m under publisert 1058. Den høgaste cella i massivet ligg 190 m sørvest: 1059,2 på 67.34232/15.00385, og toppsøket må vekse disken dit (Gullfjellstoppen-mønsteret: registerpunktet er ikkje toppen).",
+   "Startstaden er Yttertindens: «den store avkjøringen på venstre side av riksveien ved Kleivberget rett NØ for utløpet av Sagelva». Alt løyser seg: Sagelva (Elv, way/519168913) kryssar rv80 ved 67.319/15.011, Kleivberget (Fritidsbolig-punkt 67.32354/15.04705), og OSM-parkeringa node/3397435896 på 67.32014/15.02767 (11,0 moh) med hyttefeltet og stiane rett nord (way/784302849 m.fl., way/1356541082 vidare nordover).",
+   "Fri Flyts høgder reproduserer punkt for punkt: øvste hytta («Geilo», ca 50 moh) les 54,4; «militærløypemerkinga ved 560» — lina passerer 536,3 på 67.33550/15.03350 og stig mot merkehøgda; søraustryggen «ca 720» les 727,8; «ca 900» les 878,6 på ryggen; nordaustryggen «ved 980» les 1026,1 der lina rundar mot nord. Alle klasse ÅpentOmråde.",
+   "«Brattest punkt under 30 grader» er Fri Flyts eige tal for normalvegen; målinga av den løyste lina avgjer kortet."
+  ],
+  "rejectReason": "",
+  "corridor": {
+   "routeId": "sagelva",
+   "routeName": "Frå Sagelva ved rv80 om militærløypa",
+   "routeDescriptionFull": "Frå avkøyringa ved Kleivberget nordaust for Sagelva-utløpet på rv80, nordover gjennom hyttefeltet forbi øvste hytta (Geilo, ca 50 moh), nordnordaust opp rampene mot Innertinden til militærløypemerkinga ved 560, vestover langs merkinga til søraustryggen frå Midtitinden ved ca 720, ryggen til ca 900, og nordover inn på nordaustryggen ved 980 til toppen",
+   "trailhead": {
+    "name": "Sagelva",
+    "lat": 67.32014,
+    "lng": 15.02767,
+    "elevationM": 11.03,
+    "osmEvidence": "OSM-parkering node/3397435896 ved rv80 (Bodøveien, way/784302844), den store avkøyringa ved Kleivberget nordaust for Sagelva-utløpet. Hyttefeltets tilkomstveg (way/784302864) går nord frå lomma."
+   },
+   "waypoints": [
+    {
+     "name": "øvste hytta, Geilo",
+     "lat": 67.3225,
+     "lng": 15.0285,
+     "elevationM": 54.37
+    },
+    {
+     "name": "rampene nordnordaust",
+     "lat": 67.327,
+     "lng": 15.031,
+     "elevationM": 270.51
+    },
+    {
+     "name": "mot Innertinden",
+     "lat": 67.331,
+     "lng": 15.033,
+     "elevationM": 420.3
+    },
+    {
+     "name": "militærløypa ved 560",
+     "lat": 67.3355,
+     "lng": 15.0335,
+     "elevationM": 536.31
+    },
+    {
+     "name": "vestover langs merkinga",
+     "lat": 67.337,
+     "lng": 15.025,
+     "elevationM": 644.99
+    },
+    {
+     "name": "søraustryggen ved 720",
+     "lat": 67.3375,
+     "lng": 15.015,
+     "elevationM": 727.77
+    },
+    {
+     "name": "ryggen mot 900",
+     "lat": 67.3405,
+     "lng": 15.0075,
+     "elevationM": 878.62
+    },
+    {
+     "name": "nordaustryggen ved 980",
+     "lat": 67.3425,
+     "lng": 15.006,
+     "elevationM": 1026.11
+    }
+   ],
+   "season": "jan–apr",
+   "aspect": "SØ",
+   "grade": 2,
+   "gradeReason": "Målinga seier 2 og kortet ber 2 — brattaste hundremetersbeltet 19,1 grader mellom 900 og 1000 moh, brattaste 30 m 26,9, i samsvar med Fri Flyts «under 30 grader». Normalvegen er jamn, men 1050 høgdemeter frå havet og solvende SØ-flanker krev timing.",
+   "roadClosedInWinter": false,
+   "hazardNotes": "Fri Flyt: brattaste punkt under 30 grader på normalvegen, S-SØ-vend. Sida er solvend — dagleg oppmjuking og gjenfrysing utover våren. Fri Flyt skildrar fleire nedfartsvariantar frå lett til krevjande (søraustflankane, austover mot 627-vatnet, nordover mot Stordalen på 450); normalvegen ned er same veg som opp, og variantane er ikkje korridoren.",
+   "teaserNo": "1050 høgdemeter frå havnivå ved Sagelva: gjennom hyttefeltet, rampene mot Innertinden, militærløypemerkinga vestover og ryggane til topps.",
+   "teaserEn": "1050 metres of ascent from sea level at Sagelva: through the cabin field, the ramps towards Innertinden, the military route markers westwards and the ridges to the top.",
+   "sources": [
+    "https://www.friflyt.no/topptur/skiturer-bodoe/turbeskrivelse-midtitinden",
+    "https://www.friflyt.no/topptur/skiturer-bodoe/turbeskrivelse-yttertinden",
+    "https://www.friflyt.no/topptur/skiturer-bodoe"
+   ],
+   "confidence": "medium"
+  }
+ },
+ {
+  "slug": "istinden-lyngen",
+  "verdict": "reject",
+  "corridor": null,
+  "rejectReason": "Fri Flyts fulle skildring (turbeskrivelse-istinden-i-troms, 1495 moh) er KAST 3 – Komplekst med stegjern og isøks som påkravd utstyr, brefart («brearmen øst for Urdkjerringa»), parti på 35–40 grader og ei smal, bratt renne på 35–45 grader til toppen der «skiene tas på sekken». Ruteren løyser berre gåbar stigning under steg-taket sitt, og ei generert line har ikkje noko å seia om brear eller buldring i renne — fjellet er utanfor det produktet ærleg kan teikna. Kravet («en av Lyngsalpenes mest populære») er reelt; lina er det ikkje, for denne pipelinen.",
+  "corrections": []
+ },
+ {
+  "slug": "storsylen",
+  "verdict": "reject",
+  "corridor": null,
+  "rejectReason": "ut.no 1112181 («det mest populære toppturmålet i Sylan både fra norsk og svensk side») er ein sommarfottur (jun–sep, luftig sisterygg), og vinterstart finst ikkje ved veg: brøyta veg endar i Stugudal, 14 km frå Nedalshytta, som er vinterstengd utanom sjølvbetjeninga (ut.no/hytte/10679; Fri Flyts Sylan-artikkel nemner snøskutertransport). Standing condition «a start at a road» feilar. NEW_TOURS-oppføringa storsylen frå den andre bolken står uendra som ubygd.",
+  "corrections": []
+ },
+ {
+  "slug": "fastdalstinden",
+  "verdict": "corrected",
+  "corrections": [
+   "Startstaden «parkeringsplass på Varto» løyser seg gjennom vegnamnet: frå fv7920 Lyngsalpeveien ved Rottenvik tek **Vardoveien** (OSM way/412108701, unclassified, grus) av og klatrar ~1,3 km nordvest til vegenden på 123 moh — Fri Flyts «relativt smal vei ca. 1 km», og registerets Varto (Høyde, 69.61867/20.27861). 1275 − 1160 = 115: Fri Flyts høgdemeter impliserer nett denne starten.",
+   "Anleggsvegen Fri Flyt nemner er kartlagd (track way/1008162591, frå vegenden 69.60355/20.25911 på 127 moh vest til 69.60708/20.21226 på 515) — og han endar ved dammen, for **Rottenvikvatnet er eit magasin**: OSM-relasjon 8271819 ber water=reservoir, og terrengklassen les InnsjøRegulert på 513,0 moh. Lina ber vannkost frå fyrste solvering, og «langs vest- og senere nordsiden av vatnet» er pinna på land: vestbredda 566,2 moh (69.60900/20.18800), nordvestbredda 572,4, nordenden 588,9.",
+   "Resten av Normalruta I reproduserer på terrenget: flata «på 650 moh» les 649,7 på 69.61600/20.19000; det vesle vatnet vest for flata er kartlagd (way/1381316784, ~69.614/20.174) og lina passerer nord for det på 696,8; «en liten ryggformasjon hvor småbratte områder rundt 30 grader krever oppmerksomhet» måler 814,8 → 1069,7 på ryggen mot toppen.",
+   "Normalruta II — den svake ryggen nordover frå flata, eksponert for løysneområde ovanfrå mellom 700 og 900 — er ikkje korridoren; Fri Flyt fører henne som eige alternativ og korridoren følgjer Normalruta I. Sørsidenedfarten (35–45 grader, med kryssing av det regulerte vatnet) er heller ikkje korridoren: Fri Flyt skriv sjølv at «sørsiden har vært skuddpunkt for dødelige skredulykker»."
+  ],
+  "rejectReason": "",
+  "corridor": {
+   "routeId": "varto",
+   "routeName": "Normalruta I frå Varto",
+   "routeDescriptionFull": "Frå vegenden av Vardoveien på Varto (115 moh) etter anleggsvegen opp til dammen på Rottenvikvatnet, på land langs vest- og nordsida av magasinet, opp på flata på 650 moh, vestover nord for det vesle vatnet, opp den vesle ryggformasjonen og rett mot toppen",
+   "trailhead": {
+    "name": "Varto",
+    "lat": 69.60261,
+    "lng": 20.25868,
+    "elevationM": 123,
+    "osmEvidence": "Enden av Vardoveien (OSM way/412108701 → way/554081547, unclassified, surface=gravel) frå fv7920 ved Rottenvik; anleggsvegen (track way/1008162591) held fram vestover mot dammen."
+   },
+   "waypoints": [
+    {
+     "name": "anleggsvegen",
+     "lat": 69.6052,
+     "lng": 20.235,
+     "elevationM": 465.8
+    },
+    {
+     "name": "anleggsvegen øvre",
+     "lat": 69.6065,
+     "lng": 20.222,
+     "elevationM": 534.2
+    },
+    {
+     "name": "dammen, austenden",
+     "lat": 69.6075,
+     "lng": 20.214,
+     "elevationM": 516.7
+    },
+    {
+     "name": "sør for vatnet",
+     "lat": 69.6048,
+     "lng": 20.205,
+     "elevationM": 530.9
+    },
+    {
+     "name": "vestbredda på land",
+     "lat": 69.609,
+     "lng": 20.188,
+     "elevationM": 566.2
+    },
+    {
+     "name": "nordvestbredda",
+     "lat": 69.6135,
+     "lng": 20.189,
+     "elevationM": 572.4
+    },
+    {
+     "name": "nordenden av vatnet",
+     "lat": 69.6165,
+     "lng": 20.194,
+     "elevationM": 588.9
+    },
+    {
+     "name": "flata på 650",
+     "lat": 69.616,
+     "lng": 20.19,
+     "elevationM": 649.7
+    },
+    {
+     "name": "nord for det vesle vatnet",
+     "lat": 69.6155,
+     "lng": 20.175,
+     "elevationM": 696.8
+    },
+    {
+     "name": "ryggformasjonen",
+     "lat": 69.619,
+     "lng": 20.17,
+     "elevationM": 814.8
+    },
+    {
+     "name": "ryggen ved 1070",
+     "lat": 69.624,
+     "lng": 20.168,
+     "elevationM": 1069.7
+    }
+   ],
+   "season": "jan–mai",
+   "aspect": "SØ",
+   "grade": 3,
+   "gradeReason": "Målinga seier 2 — brattaste hundremetersbeltet 19,5 grader mellom 200 og 300 moh, brattaste 30 m 25,5 — men grad 3 er redaksjonell: 1270 høgdemeter og 6–8 timar er Sæbyggjenuten-skalaen, Fri Flyts faremoment er «utløpsområder og skavler», og sørsida rett ved nedfarten «har vært skuddpunkt for dødelige skredulykker». KAST 2 gjeld normalruta; fjellet ikring er ein annan klasse.",
+   "roadClosedInWinter": false,
+   "hazardNotes": "Fri Flyt: KAST 2 – Utfordrende, brattaste punkt 25–30 grader på normalruta, faremoment «utløpsområder og skavler». Sørsida — nedfartsvarianten på 35–45 grader — «har vært skuddpunkt for dødelige skredulykker» og er ikkje korridoren. Normalruta II er eksponert for løysneområde ovanfrå mellom 700 og 900 moh. Rottenvikvatnet er eit magasin: lina held land rundt vest- og nordsida, og guiden må seia det.",
+   "teaserNo": "1270 høgdemeter frå vegenden på Varto: anleggsvegen til dammen, på land rundt det regulerte Rottenvikvatnet, flata på 650 og ryggen rett mot toppen.",
+   "teaserEn": "1270 metres of ascent from the road end at Varto: the works road to the dam, on land around the regulated Rottenvikvatnet, the flat at 650 and the ridge straight at the summit.",
+   "sources": [
+    "https://www.friflyt.no/topptur/lyngsalpene/turbeskrivelse-fastdalstinden",
+    "https://www.friflyt.no/topptur/skiturer-lyngen"
+   ],
+   "confidence": "medium"
+  }
+ },
+ {
+  "slug": "togga",
+  "verdict": "corrected",
+  "corrections": [
+   "Registerbolkens gamle toppløysing sto 280 m vest for namnet på 1235,5 moh — ein kul på ryggen som stig vidare vest-sørvest utan skar (1282,5 på 590 m, 1354,0 på 990 m, 1438,6 på 2,2 km). Togga er Rødtinden-forma: eit namngjeve punkt på ein samanhengande rygg, og resolve_summits ber no SUMMIT_CAP_M['togga']=150 med grunngjeving. Kappa løyser toppen til 1203,8 på 61.33505/6.89289 — registerpunktet les 1202,6, Fri Flyt publiserer 1205.",
+   "Startstaden «toppturparkering på Brandhaugadn» løyser seg: registeret har Brandhaugane (Haug, 61.32502/6.92702, 426,1 moh i skogen), rv5 Fjærlandsvegen (way/386115960) passerer rett aust, og 1205 − 785 = 420 — Fri Flyts høgdemeter impliserer nett denne starten.",
+   "Orraleiken, der «terrenget flater ut», er registerført (Haug, 61.33210/6.90093) og les 1042,3 moh i ope terreng. Søraustryggen frå parkeringa dit reproduserer: 542 i skogen, 744 i det brattare partiet, 1042 på flata, 1155 på siste stigninga.",
+   "Fri Flyts eiga skredåtvaring gjeld opptursruta: «på søraustryggen (normalvegen) er det eit brattare parti der skiløparar har utløyst snøskred under opptur når det er ustabile snøforhold» — det brattare partiet mellom skoggrensa og Orraleiken, og guiden må bera setninga. Nedfartsvariantane (sørsida, nordsida, austsida — seks i alt hos Fri Flyt) er ikkje korridoren."
+  ],
+  "rejectReason": "",
+  "corridor": {
+   "routeId": "brandhaugane",
+   "routeName": "Normalvegen frå Brandhaugane opp søraustryggen",
+   "routeDescriptionFull": "Frå toppturparkeringa ved rv5 på Brandhaugane (426 moh) opp søraustryggen gjennom skogen, gjennom det brattare partiet over skoggrensa, ut på flata ved Orraleiken (1042 moh), og siste stigninga til Togga",
+   "trailhead": {
+    "name": "Brandhaugane",
+    "lat": 61.3245,
+    "lng": 6.9265,
+    "elevationM": 427.04,
+    "osmEvidence": "Toppturparkeringa ved rv5 Fjærlandsvegen (way/386115960) ved registerets Brandhaugane (Haug, 61.32502/6.92702)."
+   },
+   "waypoints": [
+    {
+     "name": "søraustryggen i skogen",
+     "lat": 61.328,
+     "lng": 6.918,
+     "elevationM": 542.22
+    },
+    {
+     "name": "det brattare partiet",
+     "lat": 61.33,
+     "lng": 6.91,
+     "elevationM": 743.67
+    },
+    {
+     "name": "Orraleiken",
+     "lat": 61.3321,
+     "lng": 6.90093,
+     "elevationM": 1042.34
+    },
+    {
+     "name": "siste stigninga",
+     "lat": 61.334,
+     "lng": 6.896,
+     "elevationM": 1155.36
+    }
+   ],
+   "season": "des–mars",
+   "aspect": "SØ",
+   "grade": 3,
+   "gradeReason": "Målinga seier 2 — brattaste hundremetersbeltet 22,5 grader mellom 800 og 900 moh, brattaste 30 m 27,5 — men grad 3 er redaksjonell: Fri Flyt gjev normalvegen 33–35 grader som brattaste punkt og skriv at skiløparar har løyst ut skred i det brattare partiet på søraustryggen under opptur. Lina sikksakkar slakare enn fallinja, men henget ho går i gjer ikkje.",
+   "roadClosedInWinter": false,
+   "hazardNotes": "Fri Flyt: brattaste punkt 33–35 grader, og skredåtvaringa gjeld normalvegen sjølv: skiløparar har løyst ut skred i det brattare partiet på søraustryggen under opptur i ustabile forhold. Seks nedfartar hos Fri Flyt (søraust, sør ×2, nord, aust ×2) — normalvegen opp og ned er korridoren.",
+   "teaserNo": "780 høgdemeter rett frå toppturparkeringa på Brandhaugane: søraustryggen gjennom skogen, flata ved Orraleiken, og siste stigninga til varden.",
+   "teaserEn": "780 metres of ascent straight from the ski-touring car park at Brandhaugane: the south-east ridge through the forest, the flat at Orraleiken, and the last climb to the cairn.",
+   "sources": [
+    "https://www.friflyt.no/topptur/skiturer-sogn/turbeskrivelse-togga-1205",
+    "https://ut.no/turforslag/116454",
+    "https://www.friflyt.no/topptur/skiturer-sogn/topptur-i-sogndal"
+   ],
+   "confidence": "medium"
+  }
+ },
+ {
+  "slug": "store-kjostinden",
+  "verdict": "reject",
+  "corridor": null,
+  "rejectReason": "Fri Flyts skildring (1488 moh) har hovudoppstiging med samanhengande 35–45 grader mellom 1080 og 1340 moh, og austalternativet går opp Rottenvikbreen — bre. Ruteren løyser berre gåbar stigning under steg-taket, og korkje ei 40-gradersflanke eller ein bre kan ei generert line teikna ærleg. Same konklusjonen som Istinden i Lyngen; registeroppføringa i NEW_TOURS står som ubygd.",
+  "corrections": []
+ },
+ {
+  "slug": "englafjell",
+  "verdict": "corrected",
+  "corrections": [
+   "Startstaden løyser seg: Musland (Navnegard, 59.89758/5.94887, 157,9 moh) med Muslandsvegen (OSM way/1489527056) og traktorvegane (way/779700807, way/967830738) vidare nordvestover; «parkering ved første gård» er tunet ved vegenden på ~148 moh. Stinettet vidare er kartlagt (way/1076430811 m.fl., surface=ground).",
+   "Såta i skildringa er registerets Såta (Ås, 59.91508/5.86098, 651 moh) — nordvestknausen på ryggsystemet, ikkje nokon av dei to Såta-toppane lenger nord i kommunen. Sørryggen derifrå til toppen er målt og monoton: 651 → 869 → 1032 → 1126 → 1184 → 1199,9, og «bratt rygg» stemmer — fyrste steget 651→869 held ~23° i fallinja.",
+   "Lina må over dalen: mellom lia på 313 moh (59.90500/5.91500) og foten av Såta-flanken ligg dalbotnen på 183 (59.90900/5.89500) — om lag 130 høgdemeter å gje att på veg inn, terrenget sitt eige val. Fri Flyts «Høydemeter: 1200» er toppunkthøgda; den ruta gainen vert høgare på grunn av dalkryssinga, og kortet ber målinga.",
+   "«Vær oppmerksom på skavler mot Limomnen»: Limomnen (Li, 59.89929/5.88159, 889,2 moh) er austbotnen rett under toppryggen — skavlane på ryggen heng ut over han, og guiden ber åtvaringa. Hjorteklett i nedfartsomtalen finst ikkje i registeret (heller ikkje som Hjortaklett); guiden brukar kjeldas namn og seier det.",
+   "Fyrste solveringa gav att 307 m, 177 av dei over ein 313-kul eit eige waypoint («lia vestover») hadde pinna lina over før dalkryssinga. Kulen var korridorforfattarens, ikkje kjeldas — pinnet er fjerna, og ruteren finn den naturlege kryssinga sjølv."
+  ],
+  "rejectReason": "",
+  "corridor": {
+   "routeId": "musland",
+   "routeName": "Frå Musland om Såta",
+   "routeDescriptionFull": "Frå fyrste garden på Musland etter traktorvegen og den merkte stien vestover, over dalen, opp flanken til Såta (651 moh), og sørover den bratte ryggen til toppen",
+   "trailhead": {
+    "name": "Musland",
+    "lat": 59.8985,
+    "lng": 5.9465,
+    "elevationM": 148,
+    "osmEvidence": "Tunet ved Muslandsvegen (way/1489527056) og traktorvegen way/779700807; registerets Musland (Navnegard) 160 m søraust."
+   },
+   "waypoints": [
+    {
+     "name": "traktorvegen",
+     "lat": 59.902,
+     "lng": 5.937,
+     "elevationM": 122
+    },
+    {
+     "name": "stien inn i skogen",
+     "lat": 59.9035,
+     "lng": 5.925,
+     "elevationM": 166
+    },
+    {
+     "name": "over dalen",
+     "lat": 59.909,
+     "lng": 5.895,
+     "elevationM": 183
+    },
+    {
+     "name": "flanken mot Såta",
+     "lat": 59.911,
+     "lng": 5.886,
+     "elevationM": 507
+    },
+    {
+     "name": "ryggen mot Såta",
+     "lat": 59.913,
+     "lng": 5.875,
+     "elevationM": 625
+    },
+    {
+     "name": "Såta",
+     "lat": 59.91508,
+     "lng": 5.86098,
+     "elevationM": 651
+    },
+    {
+     "name": "sørryggen ved 870",
+     "lat": 59.911,
+     "lng": 5.864,
+     "elevationM": 869
+    },
+    {
+     "name": "sørryggen ved 1030",
+     "lat": 59.906,
+     "lng": 5.868,
+     "elevationM": 1032
+    },
+    {
+     "name": "sørryggen ved 1130",
+     "lat": 59.901,
+     "lng": 5.871,
+     "elevationM": 1126
+    }
+   ],
+   "season": "jan–apr",
+   "aspect": "N",
+   "grade": 3,
+   "gradeReason": "Målinga seier 2 — brattaste hundremetersbeltet 21,1 grader mellom 300 og 400 moh, brattaste 30 m 30,1 — men grad 3 er redaksjonell: Fri Flyt kallar turen vanskeleg med 35 grader på enklaste vegen, faremomenta er «skredutsatt terreng, vanskelig navigering og utglidningsfare», toppryggen ber skavlar mot Limomnen (NØ-flanken fell 55,5 grader på det brattaste), og turen er på Sæbyggjenuten-skalaen med 1240 høgdemeter og 6–8 timar.",
+   "roadClosedInWinter": false,
+   "hazardNotes": "Fri Flyt: vanskeleg, brattaste punkt 35 grader på enklaste vegen, faremoment «skredutsatt terreng, vanskelig navigering og utglidningsfare». Skavlar mot Limomnen på toppryggen. Fyrste stykket ber skia på godt opptrakka sti; frå Hjorteklett ber ein vanlegvis skia òg. Nedkøyringa langs bekken aust for Såta berre ved gode snøtilhøve.",
+   "teaserNo": "1240 høgdemeter frå Musland i Uskedalen: traktorveg og merkt sti, over dalen, opp til Såta og sørover den bratte ryggen — med skavlane mot Limomnen som følgje til topps.",
+   "teaserEn": "1240 metres of ascent from Musland in Uskedalen: tractor road and marked path, across the valley, up to Såta and south along the steep ridge — with the cornices over Limomnen for company to the top.",
+   "sources": [
+    "https://www.friflyt.no/topptur/skiturer-rosendal/turbeskrivelse-englafjell"
+   ],
+   "confidence": "medium"
+  }
+ },
+ {
+  "slug": "sandhornet",
+  "verdict": "corrected",
+  "corrections": [
+   "Fjellet står i Gildeskål (registerets Sandhornet, Fjell, 67.11117/14.06776); Fri Flyt fører turen under Bodø-området, og kortet ber Bodø slik Strandtinden ber Harstad. SSR-punktet les 989,3 mot publisert 993; toppsøket klatrar resten.",
+   "Horsdal-ruta reproduserer trinn for trinn: garden (Gard, 67.09426/14.05183) ligg på 13 moh, den merkte stien langs fjæra held ~0–28 moh, trappene opp mot Stjerndalen endar der terrenget flatar på ~190 (målt 189 på 67.09000/14.07000), og vidare nordover les lina 463 der kjelda seier 450, 662 og 752 i det slake partiet nord for punkt 592, før toppflanken.",
+   "Utløpseksponeringa kjelda åtvarar om er verifiserbar i registeret: Isvasstinden (Fjell, 67.09641/14.09665) står rett aust for Stjerndalen, og V- og SV-flankane hans heng over dalen lina går i. Guiden ber setninga ordrett omsett.",
+   "Ravika-ruta (frå den grøne garasjen, way-nettet ved Ravika Gard 67.12181/14.14939) er skildra fullt hos Fri Flyt, men nedfarten hennar har eit 40-gradersparti (920–840 moh) og oppturen brukar «det eneste snøfeltet/rampen» — ho er ikkje korridoren, og guiden nemner ho som varianten ho er."
+  ],
+  "rejectReason": "",
+  "corridor": {
+   "routeId": "horsdal",
+   "routeName": "Frå Horsdal om Stjerndalen",
+   "routeDescriptionFull": "Frå garden på Horsdal etter den merkte stien langs fjæra, opp trappene til flata i Stjerndalen på ~190 moh, nordover mot 450, vestover i slakt terreng nord for punkt 592, og nordover toppflanken til varden",
+   "trailhead": {
+    "name": "Horsdal",
+    "lat": 67.094,
+    "lng": 14.05,
+    "elevationM": 10.01,
+    "osmEvidence": "Ved registerets Horsdal (Gard, 67.09426/14.05183); den merkte stien langs fjæra går søraustover herifrå slik Fri Flyt seier."
+   },
+   "waypoints": [
+    {
+     "name": "stien langs fjæra",
+     "lat": 67.0895,
+     "lng": 14.0605,
+     "elevationM": 27.9
+    },
+    {
+     "name": "trappene, flata på 190",
+     "lat": 67.09,
+     "lng": 14.07,
+     "elevationM": 189
+    },
+    {
+     "name": "Stjerndalen",
+     "lat": 67.0915,
+     "lng": 14.075,
+     "elevationM": 267.59
+    },
+    {
+     "name": "nordover mot 450",
+     "lat": 67.098,
+     "lng": 14.075,
+     "elevationM": 463
+    },
+    {
+     "name": "nord for punkt 592",
+     "lat": 67.103,
+     "lng": 14.072,
+     "elevationM": 662
+    },
+    {
+     "name": "slakt terreng",
+     "lat": 67.106,
+     "lng": 14.066,
+     "elevationM": 752
+    }
+   ],
+   "season": "jan–apr",
+   "aspect": "S",
+   "grade": 2,
+   "gradeReason": "Målinga seier 2 og kortet ber 2 — brattaste hundremetersbeltet 21,3 grader mellom 900 og 1000 moh, brattaste 30 m 32,5 i toppflanken — i samsvar med Fri Flyts «under 30 grader bortsett fra de siste 50 høydemeterne». Utløpseksponeringa i Stjerndalen er fareteksten, ikkje brattleiken på sporet.",
+   "roadClosedInWinter": false,
+   "hazardNotes": "Fri Flyt: brattaste punkt 30 grader — heile lina held seg under 30 utanom dei siste 50 høgdemetrane — og faremerknaden er ordrett: turen i Stjerndalen går i utløpssoner for skredflanker, spesielt V- og SV-flankane under Isvasstinden, ver OBS på dagar med markert skredfare og om våren. Ravika-ruta med 40-graderspartiet er ikkje korridoren.",
+   "teaserNo": "1020 høgdemeter frå fjæra på Horsdal: stien langs sjøen, trappene til Stjerndalen, og slake rygger til varden på øyfjellet over Saltfjorden.",
+   "teaserEn": "1020 metres of ascent from the shore at Horsdal: the path along the sea, the stairs to Stjerndalen, and gentle ridges to the cairn on the island mountain above Saltfjorden.",
+   "sources": [
+    "https://www.friflyt.no/topptur/skiturer-bodoe/turbeskrivelse-sandhornet",
+    "https://www.friflyt.no/topptur/skiturer-bodoe"
+   ],
+   "confidence": "medium"
+  }
  }
 ]
