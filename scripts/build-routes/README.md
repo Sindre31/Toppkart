@@ -3287,7 +3287,7 @@ cards, `check_guides.py` 0 unsourced numbers and 0 reassurance claims
 across 208 guide texts, `test_check_guides.py` 15, `check_ground.py` clean,
 and the CI suite.
 
-## The adversarial round: the standing gap, closed on ten of fourteen
+## The adversarial round: the standing gap, closed
 
 Every round since the first has ended with the same sentence — the guides are
 verified against the terrain model, not against anyone who has skied these
@@ -3341,8 +3341,9 @@ left to `check_guides.py` and to a reader.
 
 Three agents took the fourteen newest tours with one instruction: refute. They
 re-fetched every source page, re-queried the register, re-ran the flank sweeps
-and recomputed the superlatives. Ten tours were read; the Bergen/Kvamskogen
-four are still outstanding.
+and recomputed the superlatives. Ten were read in the first wave and the
+Bergen/Kvamskogen four in the second, so the gap every previous round's
+write-up had to name is now closed on all 104 guides.
 
 The findings sorted into six shapes, and the first is the one that matters
 most:
@@ -3404,6 +3405,63 @@ side the guide spends two paragraphs telling you not to ski — while the card's
 own aspect and the source both say east. Duration is longer than the source on
 every one of the six newest tours and was declared on none; the season
 convention («kortets jan–apr er lånt … og guiden seier det») now extends to it.
+
+### The Bergen/Kvamskogen four
+
+The second wave read the four the first had left, and found the same shapes
+again — plus one the earlier waves had not: a guide that shipped correct in
+Norwegian and wrong in English, because the two languages had been corrected
+separately.
+
+**A source's entire hazard note, dropped.** Fri Flyt's Faremomenter for
+Gullfjellet reads «Hele Glumragjelet, samt de to rennene, er veldig skredutsatt
+vinterstid, og på våren kommer det ofte is og stein ned fra de stupbratte
+fjellsidene», and none of it reached either language. It is not a warning about
+this line — which is the gentlest in the corpus, no band over 8,1° — and that
+is exactly why leaving it out was the wrong call: a reader who finds the page
+finds a hazard the guide never mentioned. The register has no *Glumragjelet*;
+the name is **Glamregjelet**, and the gully sits 663 m due west of the cairn at
+576 moh, straight below the west side the descent section already warns falls
+59,0°. Both languages now quote the note and place it. (There is a second
+Glamregjelet 4,37 km north, and Pilatusgjelet 624 m west-south-west at 793 moh
+— the register carries more gullies on that side than the source names, so the
+guide names the one it can place and stops there.)
+
+**The same superlative misplacement, in a tour the first wave had not reached.**
+Såta's guide said the south-west couloir between Såterindane «byrjar med 43,4
+grader berre 110 til 170 meter frå varden», in three places across two
+languages. The register puts **Såterindane 837 m south-west** of the cairn: the
+43,4° right below the summit is the shoulder, not the mouth of the couloir, and
+Fri Flyt's own text says to continue *past* the cairn to find it. Written as it
+stood, a reader in poor visibility would have dropped into the wrong thing 700 m
+early.
+
+**A safety-critical bearing that survived in one language only.** Skrott's
+Norwegian descent had been corrected to say the north-west side is not the way
+home — it falls 49,8° over the first twenty metres — and that the shoulder you
+came up lies due **north**. The English still read "the north-west shoulder you
+came up measures 7.0 degrees on average", naming the cliff as the gentle way
+down. The 7,0° is real and is the trap: it is an 800 m mean that averages the
+drop into the notch against the climb back up toward Glynt. The north shoulder
+measures 17,5° over its first 400 m, and both languages now say so. Skrott also
+paraphrased westcoastpeaks' axe-and-crampons line as being needed «for ei trygg
+nedstigning» / "for a safe descent" — the source states a requirement, and the
+guide had turned it into an assurance. `check_guides.py`'s reassurance rule
+caught that one.
+
+**A height read off the wrong feature.** Tveitakvitingen's English put the line
+past Svartatjørna "at the 598 m level". The nearest vertex is 86 m from the
+register point at 621 moh, and the tarn itself reads 618,2. Gullfjellstoppen
+had the mirror image: Norwegian gave Redningshytta 597,5 moh and English 592,
+and both figures are real — 597,5 is the hut point, 592 is the line 18 m away.
+Neither said which, so both now say both.
+
+**A written guide the app could not reach.** `varden-smaatindan`'s row in
+`lib/tours.ts` carried no `hasGuide` at all, so a finished guide in both
+languages was invisible in the app. Re-emitting from `guides.json` set it. The
+same card's `verticalM` said 820 where the line gains 825 — the teaser had
+already been corrected to 825, so the card was contradicting itself — and
+`lib/tours.ts`, `tourmeta.json` and `seed.sql` now all read 825.
 
 Every finding above is fixed in both languages, with the research records
 corrected alongside, and `check_guides.py`, `check_bands.py`,

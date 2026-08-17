@@ -3219,13 +3219,13 @@ export const GUIDES: Record<string, TourGuide> = {
       "Frå parkeringa ved støls- og hyttetunet i Fitjadalen, 272 moh, om lag åtte kilometer frå Øystese. Oppstigninga byrjar ved gangbrua over elva Kjølo og følgjer i hovudsak sommarstien — fyrst gjennom granskog i knotete terreng, så over ei flate, og opp ei li der Fri Flyts eiga åtvaring gjeld: «stygge skrenter i skogen». Belta måler 14,9 grader frå 300 til 400 moh og 17,0 frå 500 til 600, og stien er der av ein grunn — han går utanom skrentene.",
       "Skogen sluttar på 676 moh etter Kartverkets klassar, med ope område frå 686, og like over kjem du inn i dalføret som leier til Håsete — stølen ligg på 754 moh der registeret har han, mot dei «rundt 800 meter» kjelda oppgir. Herfrå held du nordvestover med jamn stigning: beltet frå 800 til 900 moh er turens brattaste med 17,4 grader i snitt over 348 meter grunn.",
       "Den vesle skihytta står på 1109,8 moh målt — Fri Flyt kallar henne «omtrent 1000 moh», westcoastpeaks «the hut at 1100 m», og terrengmodellen avgjer. Frå hytta går normalvegen nordover opp i skaret mellom Glynt og sjølve toppen. Det brattaste samanhengande partiet på lina ligg her, 28,2 grader mellom 1158 og 1182 moh, før skaret slepper deg opp på skuldra.",
-      "Fri Flyt nemner òg ei alternativ oppstigning frå skihytta: sommarstien på eit system av skråhyller og opp ein liten kneik over kanten. Kjelda åtvarar sjølv mot henne ved hardt føre eller vestvende skavlar, og westcoastpeaks tilrår isøks og stegjern på dei same hyllene vinterstid — korridoren her er skaret, ikkje hyllene.",
-      "Skuldra der sommarstien kryssar, 85 meter nord for varden, måler 1300,6 moh, og dei siste meterane sørover til varden er lett terreng, nett slik kjelda seier — beltet frå 1300 til 1400 måler 6,4 grader. 1320 moh, og Hardangerfjorden 1300 meter rett ned.",
+      "Fri Flyt nemner òg ei alternativ oppstigning frå skihytta: sommarstien på eit system av skråhyller og opp ein liten kneik over kanten. Kjelda åtvarar sjølv mot henne ved hardt føre eller vestvende skavlar, og Westcoastpeaks tilrår isøks og stegjern på dei same hyllene vinterstid, og legg til at i isete forhold trengst isøks og stegjern òg for å kome ned frå sjølve toppen. Korridoren her er skaret, ikkje hyllene, men isøksa gjeld toppen like fullt.",
+      "Skuldra der sommarstien kryssar, 85 meter nord for varden, måler 1300,6 moh, og dei siste meterane sørover til varden er lett terreng, nett slik kjelda seier — beltet frå 1300 til 1400 måler 6,4 grader. 1320 moh, med Hardangerfjorden framfor deg — Fri Flyt skriv at fjellet «stuper rett i Hardangerfjorden», men næraste fjordvatn ligg 8 km unna ved Øystese, og terrenget 3 km vest og sørvest for varden står framleis i 550 til 800 moh.",
     ],
     descent: [
       "Terrenget frå toppen ned mot Håsete innbyr til variasjonar over oppturen — det er Fri Flyts eigne ord, og søraust- og sørsveipa frå varden måler 38,9 og 39,5 grader i sine brattaste 60 m-vindauge 580 til 720 meter ut, så det finst bratt skikøyring å hente. Seint på våren nemner kjelda bollane og ryggane litt austover frå varden, fremst på kanten og derfrå mot Håsete.",
-      "Det som ikkje skal køyrast, er vest og sørvest frå varden: vestsida fell 49,0 grader berre 10 til 70 meter ut, og sørvestsida 45,4 grader 160 til 220 meter ut. Nordvestskuldra du kom opp måler 7,0 grader i snitt — frå varden ser dei to sidene like ut i flatt lys, og dei er det ikkje.",
-      "Frå Håsete er rådet frå kjelda å følgje omtrent same vegen som opp: «lett å kjøre seg fast i kronglete terreng» er ut.nos formulering om skogslia, og skrentene som forma opphavsvegen finst framleis under deg.",
+      "Det som ikkje skal køyrast, er vest og sørvest frå varden: vestsida fell 49,0 grader berre 10 til 70 meter ut, og sørvestsida 45,4 grader 160 til 220 meter ut. Nordvest er heller ikkje vegen heim — ho fell 49,8 grader i snitt dei fyrste tjue metrane og 34,8 ut til 160, og dei 7,0 gradene over 800 meter er berre fallet ned i skaret jamna mot stiginga opp att mot Glynt. Skuldra du kom opp ligg rett nord, og måler 17,5 grader i snitt dei fyrste 400 metrane — frå varden ser dei to sidene like ut i flatt lys, og dei er det ikkje.",
+      "Frå Håsete er rådet frå kjelda å følgje omtrent same vegen som opp: «lett å kjøre seg fast i kronglete terreng» er Fri Flyts formulering om skogslia, og skrentene som forma opphavsvegen finst framleis under deg.",
     ],
     avalanche: [
       {
@@ -3234,11 +3234,11 @@ export const GUIDES: Record<string, TourGuide> = {
       },
       {
         title: "Toppklossen",
-        body: "Vestsida fell 49,0 grader berre 10 til 70 meter frå varden og sørvestsida 45,4 grader 160 til 220 meter ut, medan nordvestskuldra lina brukar måler 7,0 grader i snitt. Skråhyllene på alternativvegen er kjeldas eiga åtvaring ved hardt føre eller vestvende skavlar, og westcoastpeaks tilrår isøks og stegjern der vinterstid. På denne toppen er det ikkje snittbrattheita som er faren, men kantane.",
+        body: "Vestsida fell 49,0 grader berre 10 til 70 meter frå varden og sørvestsida 45,4 grader 160 til 220 meter ut, medan nordskuldra lina brukar måler 17,5 grader i snitt dei fyrste 400 metrane. Skråhyllene på alternativvegen er kjeldas eiga åtvaring ved hardt føre eller vestvende skavlar, og westcoastpeaks tilrår isøks og stegjern der vinterstid. På denne toppen er det ikkje snittbrattheita som er faren, men kantane.",
       },
       {
         title: "Før du går",
-        body: "Skrott ligg i varslingsregionen Voss, ein A-region med dagleg skredvarsel gjennom sesongen — sjekk varsom.no. Ingen kjelde publiserer skisesong for denne turen: ut.nos sesongfelt gjeld fotturen (mai til juli og september), og kortets jan–apr er lånt frå Tveitakvitingen på same massivet. Ta med sender/mottakar, søkjestong og spade. Ei tom varselside er ikkje det same som eit trygt fjell.",
+        body: "Skrott ligg i varslingsregionen Voss, ein A-region med dagleg skredvarsel gjennom sesongen — sjekk varsom.no. Ingen kjelde publiserer skisesong for denne turen: ut.nos sesongfelt gjeld fotturen (mai til juli og september), og kortets jan–apr er lånt frå ut.nos Tveitakvitingen-skildring på same massivet. Ta med sender/mottakar, søkjestong og spade. Ei tom varselside er ikkje det same som eit trygt fjell.",
       },
     ],
     elevationProfile: {
@@ -3262,17 +3262,17 @@ export const GUIDES: Record<string, TourGuide> = {
     ],
     descent: [
       "Vanlegaste nedkøyringa er same vegen: nordover av toppryggen, ned gjennom skaret, og vestflanken ned mot Rosselandsbotnen. Flanken du køyrer er den same du gjekk opp — 25,4 grader i snitt frå varden mot vest, med 53,0 grader som brattaste 60 m-vindauge 740 til 800 meter ut — så line-vala på veg opp er line-vala på veg ned.",
-      "Fri Flyt skildrar òg den sørvestvendte renna mellom Såterindane. Ho ligg nær varden — sørvestsveipen måler 43,4 grader berre 110 til 170 meter ut — og kjelda er tydeleg på avslutninga: ta til høgre før botnen av renna, før Såtedalen, og køyr tilbake mot oppstigningsruta. Vestflanken rett ned frå toppen nemner kjelda berre for dagar med svært stabilt snødekke.",
+      "Fri Flyt skildrar òg den sørvestvendte renna mellom Såterindane. Kjelda seier du skal fortsetje forbi toppvarden for å finne henne, og registeret set Såterindane 837 meter sørvest for varden; det bratte rett under varden — 43,4 grader 110 til 170 meter ut i sørvestsveipen — er skuldra på toppen, ikkje inngangen til renna. Kjelda er tydeleg på avslutninga: ta til høgre før botnen av renna, før Såtedalen, og køyr tilbake mot oppstigningsruta. Vestflanken rett ned frå toppen nemner kjelda berre for dagar med svært stabilt snødekke.",
       "Frå Rosselandsbotnen att er det dei 3 km flate ut dalen og setervegen ned til parkeringa — 94 høgdemeter å gje tilbake har turen samla, det meste av det i den kuperte dalbotnen.",
     ],
     avalanche: [
       {
         title: "Ruta",
-        body: "Fri Flyts eige faremoment er «Skred både opp og ned, og klipper», og målingane seier kvar: belta frå 700 moh og opp held 16 til 18 grader i snitt, det brattaste samanhengande partiet er 32,5 grader mellom 1139 og 1168 moh, og fallet held fram forbi varden — vestsida 53,0 grader på det brattaste 740 til 800 meter ut, nordvestsida 53,6 grader 690 til 750 meter ut. Flanken frå Rosselandsbotnen til skaret er skredterreng i begge retningar, og han er einaste vegen på denne ruta.",
+        body: "Fri Flyts eige faremoment er «Skred både opp og ned, og klipper», og målingane seier kvar: belta frå 700 moh og opp vekslar mellom 9,1 og 18,4 grader i snitt, med 16,1 frå 700 til 800, 17,7 frå 900 til 1000 og 18,4 frå 1100 til 1200 som dei brattaste, det brattaste samanhengande partiet er 32,5 grader mellom 1139 og 1168 moh, og fallet held fram forbi varden — vestsida 53,0 grader på det brattaste 740 til 800 meter ut, nordvestsida 53,6 grader 690 til 750 meter ut. Flanken frå Rosselandsbotnen til skaret er skredterreng i begge retningar, og han er einaste vegen på denne ruta.",
       },
       {
         title: "Toppen og skaret",
-        body: "Øvste delen av skaret og toppryggen er ofte avblåsen og hard — Fri Flyt nemner isøks, og det er her han meiner. Sørvestrenna mellom Såterindane byrjar med 43,4 grader berre 110 til 170 meter frå varden; søraustsida måler 35,7 grader 440 til 500 meter ut og sørsida 37,3 grader 740 til 800 meter ut. Den slakaste sektoren frå varden er nordaust, 13,7 grader i snitt — men det er ikkje den vegen ruta går.",
+        body: "Øvste delen av skaret og toppryggen er ofte avblåsen og hard — Fri Flyt nemner isøks, og det er her han meiner. Sørvestsveipen frå varden måler 43,4 grader på det brattaste 110 til 170 meter ut, og det er skuldra på toppen — renna mellom Såterindane ligg 837 meter lenger sørvest; søraustsida måler 35,7 grader 440 til 500 meter ut og sørsida 37,3 grader 740 til 800 meter ut. Den slakaste sektoren frå varden er nordaust, 13,7 grader i snitt — men det er ikkje den vegen ruta går.",
       },
       {
         title: "Vatna",
@@ -3280,7 +3280,7 @@ export const GUIDES: Record<string, TourGuide> = {
       },
       {
         title: "Før du går",
-        body: "Såta ligg i varslingsregionen Voss, ein A-region med dagleg skredvarsel gjennom sesongen — sjekk varsom.no. Ingen kjelde publiserer sesong for denne turen; kortets jan–apr er lånt frå ut.nos skildring av Tveitakvitingen på same massivet. Ta med sender/mottakar, søkjestong og spade, og isøks til skaret når det er avblåse. Ei tom varselside er ikkje det same som eit trygt fjell.",
+        body: "Såta ligg i varslingsregionen Voss, ein A-region med dagleg skredvarsel gjennom sesongen — sjekk varsom.no. Ingen kjelde publiserer sesong for denne turen; kortets jan–apr er lånt frå ut.nos skildring av Tveitakvitingen 12,6 km sør, på andre sida av Kvamskogen. Ta med sender/mottakar, søkjestong og spade, og isøks til skaret når det er avblåse. Ei tom varselside er ikkje det same som eit trygt fjell.",
       },
     ],
     elevationProfile: {
@@ -3297,8 +3297,8 @@ export const GUIDES: Record<string, TourGuide> = {
       "839 høgdemeter og 7,8 km frå vegenden ved Osavatnet til Bergens høgaste punkt. Dette er den slakaste turen i samlinga: ingen hundremeter av linja held meir enn 8,1 grader i snitt, og det brattaste samanhengande partiet er eit einaste trinn på 27,4 grader. Faren ligg ikkje i ruta, men i dei siste hundre metrane av han — toppkuppelen er slak, og vestsida fell 59,0 grader 200 til 260 meter frå varden.",
     ascent: [
       "Frå avgiftsparkeringa ved vegenden på Gullfjellsvegen, 307 moh, innerst i Bjørndalen. Dei fyrste to kilometrane går på grusveg og er så godt som flate: beltet frå 300 til 400 moh måler 2,5 grader i snitt over 2,1 km grunn. Skogen sluttar alt på 324 moh, og alt over det klassar Kartverket som ope område — dette er ein tur utan tregrense å snakke om.",
-      "Ved 2,47 km står du ved sørenden av Svartavatnet, 410 moh. Fri Flyt skildrar vegen som «til høgre for Svartavatnet», og det er der linja går: på land, heile vegen forbi. Svartavatnet er registrert som regulert vatn. Fri Flyt oppgir 392 moh, terrengmodellen les vassflata til 408, og den skilnaden er nedtappinga.",
-      "Redningshytta ligg 18 meter frå linja, 4,23 km ute, og måler 592 moh mot dei «600 moh» kjelda oppgir. Rett etter kjem den vesle unnabakken kjeldene nemner, og han er reell: linja mistar 50 høgdemeter, frå 605 til 555 moh over 252 meter grunn, mellom 4,11 og 4,36 km. Det er 50 av dei 159 høgdemetrane turen gir tilbake undervegs.",
+      "Ved 2,47 km står du ved sørenden av Svartavatnet, 410 moh. Fri Flyt skildrar vegen som «til høyre for Svartavatnet», og det er der linja går: på land, heile vegen forbi. Svartavatnet er registrert som regulert vatn. Fri Flyt oppgir 392 moh, terrengmodellen les vassflata til 408, og skilnaden er ikkje nedtapping — ho er den nye dammen: Bergen kommune bygde dam nedstraums i 2012–2014 og heva høgste regulerte vasstand med 20 meter.",
+      "Redningshytta ligg 18 meter frå linja, 4,23 km ute; sjølve hyttepunktet måler 597,5 moh og linja der ho passerer 592, mot dei «600 moh» kjelda oppgir. Rett etter kjem den vesle unnabakken kjeldene nemner, og han er reell: linja mistar 50 høgdemeter, frå 605 til 555 moh over 252 meter grunn, mellom 4,11 og 4,36 km. Det er 50 av dei 159 høgdemetrane turen gir tilbake undervegs.",
       "Frå 555 moh stig det jamt att, og det brattaste på heile turen ligg her: eit trinn på 27,4 grader mellom 709 og 727 moh. Det er kort, og det er den brattaste tretti-metaren på linja.",
       "Over tjørna på 769 moh, 6,21 km ute, flatar det ut i det kjelda kallar eit kupert høgdedrag. Det brattaste hundremeterbeltet på turen ligg her, mellom 800 og 900 moh, og det måler 8,1 grader i snitt over 720 meter grunn. Så gjennom Middagsdalen på 939 moh, 7,40 km ute, og opp til varden på 987.",
     ],
@@ -3310,7 +3310,7 @@ export const GUIDES: Record<string, TourGuide> = {
     avalanche: [
       {
         title: "Ruta",
-        body: "Linja er slak heile vegen. Det brattaste hundremeterbeltet, 800 til 900 moh, måler 8,1 grader i snitt, og ingen av dei seks andre belta held meir enn 6,9. Brattaste samanhengande parti er trinnet på 27,4 grader mellom 709 og 727 moh. Det som skifter med vêret her er ikkje bratthenget, men føret: turen startar på 307 moh ved kysten, og snøgrensa ligg ofte over parkeringa.",
+        body: "Linja er slak heile vegen. Det brattaste hundremeterbeltet, 800 til 900 moh, måler 8,1 grader i snitt, og ingen av dei seks andre belta held meir enn 6,9. Brattaste samanhengande parti er trinnet på 27,4 grader mellom 709 og 727 moh. Det som skifter med vêret her er ikkje bratthenget, men føret: turen startar på 307 moh ved kysten, og snøgrensa ligg ofte over parkeringa. Fri Flyts eige faremoment gjeld ikkje denne linja, men gjela i massivet: «Hele Glumragjelet, samt de to rennene, er veldig skredutsatt vinterstid, og på våren kommer det ofte is og stein ned fra de stupbratte fjellsidene.» Registeret skriv namnet Glamregjelet og set juvet 663 meter rett vest for varden, på 576 moh — under den vestsida ruta ikkje køyrer, men står rett over.",
       },
       {
         title: "Toppen",
@@ -3339,10 +3339,10 @@ export const GUIDES: Record<string, TourGuide> = {
       "995 høgdemeter og 8,56 km éin veg frå Furedalen alpinsenter til Tveitakvitingen — den lengste av dei fire Kvamskogen-turane, og den slakaste: brattaste hundremetersbeltet er 16,4 grader mellom 800 og 900 moh, og brattaste samanhengande parti 25,0 grader mellom 817 og 838. ut.no graderer turen svært krevjande likevel, og det er lengda og platået som ber grada — 17 km tur-retur over vidt fjell der vêret og navigasjonen er vanskegraden, ikkje henga. Lina her er trekt av ut.no si eiga GPX-linje, som endar 8 meter frå det målte toppunktet.",
     ascent: [
       "Frå parkeringa ved Furedalen alpinsenter, 382 moh. Namnet i kjelda — «Furudalen» — finst ikkje i registeret; staden heiter Furedalen, og parkeringa er kartlagd som «Furedalen alpin». Dei fyrste hundre metrane kryssar flata ved anlegget, så er du på Mødalsvegen: dei preparerte løypene kjelda nemner er langrennsspor, kartlagde med klassisk og skøyting heile vegen til Mødal, og alpintraséane ligg vest for lina.",
-      "Mødalsvegen sørover er nesten flat — belta frå 400 til 600 moh måler 3,5 grader i snitt — og forbi dei innarste sela i Mødalen tek stigninga til. Lina passerer Svartatjørna på 598-nivået, og skogen sluttar på 586 moh etter Kartverkets klassar, med ope område frå 587.",
+      "Mødalsvegen sørover er nesten flat — belta frå 400 til 600 moh måler 3,5 grader i snitt — og forbi dei innarste sela i Mødalen tek stigninga til. Lina passerer Svartatjørna på 86 meters avstand og 621 moh; sjølve tjørna les 618 moh, og skogen sluttar på 586 moh etter Kartverkets klassar, med ope område frå 587.",
       "Så kjem dei bratte kliva kjelda skildrar, opp mot fjellet ho kallar Såta — den lokale Såta på 802 moh sør for fylkesvegen, ikkje appens Såta på 1260 på nordsida av Kvamskogen. Beltet frå 800 til 900 moh er turens brattaste med 16,4 grader i snitt, og det brattaste samanhengande partiet ligg her: 25,0 grader mellom 817 og 838 moh, opp det kjelda kallar Stoveveggen — eit namn korkje registeret eller kartet ber, så det står her som kjeldas.",
-      "Over veggen flatar platået ut — beltet frå 900 til 1000 moh måler 4,7 grader over 1,3 km grunn — og lina går sør for Gråskorvenuten, gjennom søkket kjelda kallar Middagshola (heller ikkje det i registeret): lina toppar på 996 moh og gjev tilbake til 985 før ryggen tek til. Turen gjev tilbake 78 høgdemeter samla, det meste her.",
-      "Siste biten går langs ryggen — beltet frå 1100 til 1200 moh måler 14,8 grader — og så slakare til varden på 1299. Toppen er slak i alle retningar: ingen av dei åtte sveipa frå varden held meir enn 14,2 grader i snitt den fyrste kilometeren.",
+      "Over veggen flatar platået ut — beltet frå 900 til 1000 moh måler 4,7 grader over 1,3 km grunn — og lina går sør for Gråskorvenuten, gjennom søkket kjelda kallar Middagshola (heller ikkje det i registeret): lina toppar på 1017 moh og gjev tilbake 36 meter til 981 før ryggen tek til. Turen gjev tilbake 78 høgdemeter samla, det meste her.",
+      "Siste biten går langs ryggen — beltet frå 1100 til 1200 moh måler 14,8 grader — og så slakare til varden på 1299. Toppen er slak i alle retningar: ingen av dei åtte sveipa frå varden held meir enn 14,2 grader i snitt dei fyrste 800 metrane.",
     ],
     descent: [
       "Retur same vegen. Ryggen og platået fyrst — og det er her dagen skal planleggjast: i skodde eller snøfokk er det navigasjonen over det vide platået mellom Middagshola og kliva som er vanskegraden, for terrengformene å styre etter er få og like. Kliva ned frå 838 til 817 er det brattaste du køyrer.",

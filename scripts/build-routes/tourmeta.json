@@ -30,7 +30,7 @@
   "grade": 1,
   "aspect": "NØ",
   "season": "nov–mai",
-  "hasGuide": false
+  "hasGuide": true
  },
  "rodtinden": {
   "name": "Rødtinden",
@@ -41,7 +41,7 @@
   "grade": 1,
   "aspect": "SØ",
   "season": "des–mai",
-  "hasGuide": false
+  "hasGuide": true
  },
  "fastdalstinden": {
   "name": "Fastdalstinden",
@@ -52,7 +52,7 @@
   "grade": 3,
   "aspect": "SØ",
   "season": "jan–mai",
-  "hasGuide": false
+  "hasGuide": true
  },
  "tromsdalstinden": {
   "name": "Tromsdalstinden",
@@ -140,7 +140,7 @@
   "grade": 2,
   "aspect": "V",
   "season": "des–mai",
-  "hasGuide": false
+  "hasGuide": true
  },
  "moysalen": {
   "name": "Møysalen",
@@ -162,7 +162,7 @@
   "grade": 3,
   "aspect": "N",
   "season": "jan–jun",
-  "hasGuide": false
+  "hasGuide": true
  },
  "rombakstotta": {
   "name": "Rombakstøtta",
@@ -190,12 +190,12 @@
   "name": "Varden (Småtindan)",
   "region": "Lofoten",
   "summitM": 700,
-  "verticalM": 820,
+  "verticalM": 825,
   "duration": "4–6 t",
   "grade": 2,
   "aspect": "Ø",
   "season": "jan–apr",
-  "hasGuide": false
+  "hasGuide": true
  },
  "himmeltindan": {
   "name": "Himmeltindan",
@@ -228,7 +228,7 @@
   "grade": 2,
   "aspect": "SØ",
   "season": "jan–apr",
-  "hasGuide": false
+  "hasGuide": true
  },
  "sandhornet": {
   "name": "Sandhornet",
@@ -239,7 +239,7 @@
   "grade": 2,
   "aspect": "S",
   "season": "jan–apr",
-  "hasGuide": false
+  "hasGuide": true
  },
  "tomskjevelen": {
   "name": "Tomskjevelen",
@@ -250,7 +250,7 @@
   "grade": 2,
   "aspect": "S",
   "season": "jan–apr",
-  "hasGuide": false
+  "hasGuide": true
  },
  "vassfjellet": {
   "name": "Vassfjellet",
@@ -734,7 +734,7 @@
   "grade": 3,
   "aspect": "SØ",
   "season": "des–mars",
-  "hasGuide": false
+  "hasGuide": true
  },
  "bitihorn": {
   "name": "Bitihorn",
@@ -811,7 +811,7 @@
   "grade": 2,
   "aspect": "NØ",
   "season": "feb–mai",
-  "hasGuide": false
+  "hasGuide": true
  },
  "skogshorn": {
   "name": "Skogshorn",
@@ -833,7 +833,7 @@
   "grade": 2,
   "aspect": "NØ",
   "season": "jan–apr",
-  "hasGuide": false
+  "hasGuide": true
  },
  "storehorn": {
   "name": "Storehorn",
@@ -877,7 +877,7 @@
   "grade": 2,
   "aspect": "V",
   "season": "jan–apr",
-  "hasGuide": false
+  "hasGuide": true
  },
  "horndalsnuten": {
   "name": "Horndalsnuten",
@@ -954,7 +954,7 @@
   "grade": 3,
   "aspect": "S",
   "season": "jan–apr",
-  "hasGuide": false
+  "hasGuide": true
  },
  "sata": {
   "name": "Såta",
@@ -965,7 +965,7 @@
   "grade": 3,
   "aspect": "SV",
   "season": "jan–apr",
-  "hasGuide": false
+  "hasGuide": true
  },
  "gullfjellstoppen": {
   "name": "Gullfjellstoppen",
@@ -976,7 +976,7 @@
   "grade": 2,
   "aspect": "SV",
   "season": "jan–apr",
-  "hasGuide": false
+  "hasGuide": true
  },
  "tveitakvitingen": {
   "name": "Tveitakvitingen",
@@ -987,7 +987,7 @@
   "grade": 3,
   "aspect": "NØ",
   "season": "jan–apr",
-  "hasGuide": false
+  "hasGuide": true
  },
  "grafjell": {
   "name": "Gråfjell",
@@ -1075,7 +1075,7 @@
   "grade": 3,
   "aspect": "N",
   "season": "jan–apr",
-  "hasGuide": false
+  "hasGuide": true
  },
  "gaustatoppen": {
   "name": "Gaustatoppen",
