@@ -133,4 +133,11 @@ NEW_TOURS = {
     "skolpan": ("Skolpan", "Senja"),
     "lukttinden": ("Lukttinden", "Helgeland"),
     "tortenviktinden": ("Tortenviktinden", "Helgeland"),
+    # — Romsdal-runden: fem klassikarar rundt Isfjorden, Skorgedalen, Måndalen
+    #   og Innfjorden. Ingen nye regionar — Kirketaket har halde Romsdal aleine. —
+    "skarven": ("Skarven", "Romsdal"),
+    "blanebba": ("Blånebba", "Romsdal"),
+    "mjolvafjellet": ("Mjølvafjellet", "Romsdal"),
+    "ospetinden": ("Øspetinden", "Romsdal"),
+    "middagstinden": ("Middagstinden", "Romsdal"),
 }

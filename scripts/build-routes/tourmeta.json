@@ -129,7 +129,7 @@
   "grade": 1,
   "aspect": "SØ",
   "season": "feb–mai",
-  "hasGuide": false
+  "hasGuide": true
  },
  "breitinden": {
   "name": "Breitinden",
@@ -151,7 +151,7 @@
   "grade": 1,
   "aspect": "S",
   "season": "feb–mai",
-  "hasGuide": false
+  "hasGuide": true
  },
  "tredje-svanfjell": {
   "name": "Tredje Svanfjell",
@@ -173,7 +173,7 @@
   "grade": 2,
   "aspect": "S",
   "season": "feb–mai",
-  "hasGuide": false
+  "hasGuide": true
  },
  "istinden": {
   "name": "Vestre Istinden",
@@ -184,7 +184,7 @@
   "grade": 3,
   "aspect": "NV",
   "season": "feb–mai",
-  "hasGuide": false
+  "hasGuide": true
  },
  "moysalen": {
   "name": "Møysalen",
@@ -294,7 +294,7 @@
   "grade": 2,
   "aspect": "SØ",
   "season": "feb–mai",
-  "hasGuide": false
+  "hasGuide": true
  },
  "tomskjevelen": {
   "name": "Tomskjevelen",
@@ -316,7 +316,7 @@
   "grade": 2,
   "aspect": "NV",
   "season": "apr–jun",
-  "hasGuide": false
+  "hasGuide": true
  },
  "vassfjellet": {
   "name": "Vassfjellet",
@@ -404,6 +404,61 @@
   "grade": 2,
   "aspect": "SV",
   "season": "des–mai",
+  "hasGuide": true
+ },
+ "skarven": {
+  "name": "Skarven",
+  "region": "Romsdal",
+  "summitM": 1048,
+  "verticalM": 740,
+  "duration": "3–5 t",
+  "grade": 2,
+  "aspect": "SØ",
+  "season": "des–apr",
+  "hasGuide": true
+ },
+ "mjolvafjellet": {
+  "name": "Mjølvafjellet",
+  "region": "Romsdal",
+  "summitM": 1215,
+  "verticalM": 1220,
+  "duration": "5–7 t",
+  "grade": 2,
+  "aspect": "N",
+  "season": "jan–apr",
+  "hasGuide": true
+ },
+ "blanebba": {
+  "name": "Blånebba",
+  "region": "Romsdal",
+  "summitM": 1317,
+  "verticalM": 930,
+  "duration": "4–6 t",
+  "grade": 3,
+  "aspect": "NØ",
+  "season": "mar–mai",
+  "hasGuide": true
+ },
+ "ospetinden": {
+  "name": "Øspetinden",
+  "region": "Romsdal",
+  "summitM": 1228,
+  "verticalM": 1060,
+  "duration": "5–7 t",
+  "grade": 3,
+  "aspect": "Ø",
+  "season": "des–mai",
+  "hasGuide": true
+ },
+ "middagstinden": {
+  "name": "Middagstinden",
+  "region": "Romsdal",
+  "summitM": 1568,
+  "verticalM": 1310,
+  "duration": "5–7 t",
+  "grade": 4,
+  "aspect": "V",
+  "season": "jan–apr",
   "hasGuide": true
  },
  "auskjeret": {

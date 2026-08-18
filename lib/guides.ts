@@ -1432,6 +1432,202 @@ export const GUIDES: Record<string, TourGuide> = {
       caption: "185 til 1439 moh på 6,2 kilometer: bomvei, bjørkeskog til 421, så rygg hele veien — 1277 høydemeter medregnet søkket nord for Steinberget.",
     },
   },
+  skarven: {
+    slug: "skarven",
+    intro:
+      "744 høydemeter og 3,34 km fra parkeringsplassen i Skorgedalen til en av Romsdalens store klassikere — turen ut.no kaller en av de korteste i området og likevel en av de store. Fri Flyt gir den KAST 1 – Enkelt med bratteste punkt under 30 grader, og den ferdige linja holder seg innenfor: bratteste hundremetersbelte måler 20,5 grader mellom 400 og 500 moh, og bratteste sammenhengende parti 27,7. Det som krever hodet er ikke linja opp, men østflanken under fortoppen — den kilden selv sier du ikke skal krysse.",
+    ascent: [
+      "Fra parkeringsplassen i Skorgedalen, 307 moh på bomvegen fra Skorga på E136 — vinteråpen, og kartlagt som parkeringsplass i OSM. Fra plassens nordvestre hjørne går du over flata — myr etter Kartverkets klasser, 350 moh der linja krysser — nord for Kjerringhaugen og DNT-hytta Skorgedalsbu. Så opp bjørkeskogen: beltet fra 400 til 500 moh er turens bratteste, 20,5 grader over 295 meter grunn, og skogen slutter på 556 moh etter 1,35 km, med åpent område fra 557.",
+      "Over skoggrensa runder du sør for topp 588 og følger en svak ryggformasjon — 572 moh der linja tar den — mot Skarvens sørlige fortopp på 788. Beltene her måler 16,4 grader fra 600 til 700 moh og 15,7 fra 700 til 800: jevn skinning på åpen rygg, med utsikten østover mot Romsdalen og vestover mot Romsdalsfjorden og Molde voksende for hvert belte.",
+      "Fra fortoppen følger ryggen videre over 892 moh til varden. Det bratteste sammenhengende partiet på hele turen ligger her — 27,7 grader mellom 937 og 960 moh — og beltet fra 900 til 1000 måler 19,3 grader. Varden står på 1048 moh: Fri Flyts publiserte GPS-punkt, registerets fjellnavn og terrengmodellens 1048,1 faller sammen på meteren.",
+    ],
+    descent: [
+      "Normalveien ned er sporet ditt opp, og sørøstflanken den følger er den slakeste sektoren på toppen: 19,6 grader i snitt mot sør og 26,3 mot sørøst, med 35,9 og 34,4 grader som bratteste 60-metersvinduer 90 til 180 meter ut fra varden. God, jevn kjøring som svært ofte har god snø, sier ut.no.",
+      "Alternativene er brattere og hører til i god stabilitet: NM-løypa fra 1940 ned sørøstflanken mot Skarvebotn måler 33 grader over hundre høydemeter mellom 1020 og 920 moh, og Vasslia direkte mot Selsetervatnet 40–42 grader med passasjer på 45. Hold deg unna nordvestsiden — den måler 43,3 grader i snitt med 55,0 grader som bratteste 60 meter bare 80 til 140 meter ut.",
+    ],
+    avalanche: [
+      {
+        title: "Ruta",
+        body: "Fri Flyt gir turen KAST 1 – Enkelt og bratteste punkt under 30 grader, og linja måler 20,5 grader i bratteste belte og 27,7 i bratteste parti. Kortet bærer likevel grad 2: tallene ligger over det grad 1-turene i appen måler, og fjellet har sider der feil koster.",
+      },
+      {
+        title: "Østflanken",
+        body: "Fri Flyt er direkte: «Ikke kryss østflanken under Skarvens fortopp. Dette er et av få områder på denne siden av fjellet som kan være skredutsatt.» Målingen sier hvorfor — østsiden faller 34,4 grader i snitt med 49,7 grader som bratteste 60-metersvindu 220 til 280 meter ut fra varden. Normalveien holder ryggen og har ikke noe der å gjøre.",
+      },
+      {
+        title: "Vind og sol",
+        body: "Kilden peker på skredfare i de øvre delene etter vind fra nordvest, og på at sørøstflanken er soleksponert — på vårdager løsner det her når sola har stått på. Tidlig start er svaret begge steder.",
+      },
+      {
+        title: "Før du går",
+        body: "Skarven ligger i varslingsregionen Romsdal, en A-region med daglig skredvarsel gjennom sesongen — sjekk varsom.no. Sesongen desember–april er Fri Flyts. Ta med sender/mottaker, søkestang og spade, og les terrenget selv: et varsel beskriver regionen, ikke flanken du står i.",
+      },
+    ],
+    elevationProfile: {
+      path: "M0,200 L24,198 L56,196 L81,192 L113,186 L137,178 L153,169 L177,157 L193,149 L218,145 L234,140 L250,139 L274,137 L304,135 L331,129 L355,124 L379,115 L395,105 L417,95 L429,88 L452,83 L475,72 L492,65 L517,55 L541,45 L553,38 L570,29 L589,19 L600,18",
+      startLabel: "307 moh",
+      endLabel: "1048 moh",
+      distanceLabel: "3,3 km",
+      caption: "744 høydemeter og 3,34 km fra Skorgedalen om Kjerringhaugen og den sørlige fortoppen, med skoggrensa på 556 moh og det bratteste — 27,7 grader mellom 937 og 960 moh — oppe på ryggen.",
+    },
+  },
+  mjolvafjellet: {
+    slug: "mjolvafjellet",
+    intro:
+      "1220 høydemeter og 5,15 km fra fjorden til toppen som henger over Romsdalen — turen starter på idrettsplassen i Isfjorden, 6 moh, og slutter på 1215. Fri Flyt gir den KAST 2 – Utfordrende med bratteste punkt 28 grader på normalveien; den ferdige linja måler 21,0 grader i bratteste hundremetersbelte og 31,5 i det bratteste sammenhengende partiet, som ligger nede i lia mellom 279 og 300 moh. Det er en lang tur der lengden er vanskelighetsgraden — og der rutefinningen i dårlig sikt er det kilden advarer mest om.",
+    ascent: [
+      "Fra Isfjorden stadion — OSM har banen kartlagt, og terrengmodellen svarer 5,7 moh med klassen SportIdrettPlass, samme sjeldne treklang av guidebok, kartobjekt og terrengmodell som Glitreggas idrettsanlegg. Traktorvegen tar deg opp søraustlia forbi fotballbanen: beltet fra 0 til 100 moh måler 7,9 grader, og så bratner det til — 21,0 grader fra 200 til 300 moh over 261 meter grunn, med turens bratteste sammenhengende parti, 31,5 grader, mellom 279 og 300 moh. Det bratteste på hele turen ligger altså i skogen.",
+      "Skogen åpner seg mot sørvest under Litlehestens bratte vegg — 454 moh der linja passerer foten — og du krysser Steinselva på 536. Skogen slutter på 673 moh etter 2,75 km, med åpent område fra 683. Så sikter du mot den slakeste ryggformasjonen mot Høgnosa: beltet fra 800 til 900 moh måler 12,7 grader, og fra 900 til 1000 14,0.",
+      "Fra Høgnosa går ryggen sørover mot toppen — 1060 moh der linja tar den, og beltene over 1000 måler 12,3 og 8,0 grader før den siste kneiken på 14,1. Varden står på 1215 moh med Romsdalseggen mot Blånebba og Store Venjetinden i sør og Romsdalsfjorden i nord. Registeret leser 1206 på representasjonspunktet; toppsøket klatrer til 1215,3 mot publiserte 1216.",
+    ],
+    descent: [
+      "Normalveien ned er sporet ditt opp, og retningen av toppen er nord — ryggen mot Høgnosa er den eneste slake sektoren der oppe, 4,2 grader i snitt over 500 meter med 21,1 grader som bratteste 60-metersvindu. Alt annet er bratt: sør og sørvest faller 43,7 og 42,4 grader i snitt med vinduer på 61,0 og 58,5, og nordøstsiden rett under toppen har et 60-metersvindu på 61,7 grader bare 30 til 90 meter ut.",
+      "Fri Flyt dokumenterer brattere nedfarter mot Jamnåbotn og Storhestvatnet, 30 til 45 grader med aspekt nord til øst-nordøst. De hører til i god stabilitet og med sporvalget lagt før du står i henget.",
+    ],
+    avalanche: [
+      {
+        title: "Ruta",
+        body: "KAST 2 – Utfordrende hos Fri Flyt, bratteste punkt 28 grader på normalveien — og den ferdige linja måler 31,5 grader i det bratteste partiet, nede i skogen mellom 279 og 300 moh. Over skoggrensa holder ryggen seg slak: ingen belte over 900 måler mer enn 14,1 grader.",
+      },
+      {
+        title: "Leheng og skavler",
+        body: "Kilden peker på skredfare i leheng etter vind fra sør og vest, og på skavler på de østvendte hengene. Ryggen du følger har det bratte tett inntil seg — nordøstsiden under toppen måler 61,7 grader i bratteste vindu — så linja er god fordi den holder seg der den er, ikke fordi terrenget rundt er snilt.",
+      },
+      {
+        title: "Sikten",
+        body: "Rutefinningen er kildens eget varsku: i dårlig sikt er det krevende å holde ryggformasjonen, og feil retning av toppen setter deg over heng på 45 grader eller mer. Retningen ned fra varden er nord, mot Høgnosa — det er verdt å merke seg før skodda kommer, ikke etter.",
+      },
+      {
+        title: "Før du går",
+        body: "Mjølvafjellet ligger i varslingsregionen Romsdal, en A-region med daglig skredvarsel gjennom sesongen — sjekk varsom.no. Sesongen januar–april er Fri Flyts. Ta med sender/mottaker, søkestang og spade. Merk at ut.no beskriver fjellet fra Venjesdalen — en annen start enn denne; linja her er Fri Flyts, og andrekilden dekker fjellet, ikke linja.",
+      },
+    ],
+    elevationProfile: {
+      path: "M0,200 L32,199 L53,194 L71,187 L90,182 L111,178 L138,172 L158,163 L179,153 L195,145 L214,135 L231,130 L258,123 L277,116 L300,108 L317,101 L331,94 L348,85 L368,77 L384,72 L407,67 L436,58 L461,49 L483,43 L499,38 L520,32 L538,27 L565,24 L588,22 L600,18",
+      startLabel: "6 moh",
+      endLabel: "1215 moh",
+      distanceLabel: "5,1 km",
+      caption: "1220 høydemeter og 5,15 km fra Isfjorden stadion om Steinselva og ryggen ved Høgnosa, med skoggrensa på 673 moh og det bratteste — 31,5 grader mellom 279 og 300 moh — nede i skogen.",
+    },
+  },
+  blanebba: {
+    slug: "blanebba",
+    intro:
+      "934 høydemeter og 4,04 km fra Venjesdalssetra til kanten som ser rett ned i Romsdalen — fra varden har du Trollveggen, Romsdalshorn og Vengetindene på første rad. Fri Flyt gir turen KAST 2 – Utfordrende med bratteste punkt 40 grader i toppryggen; linja her tar det slakere alternativet kilden selv beskriver, om skaret på 1245 moh, og måler 22,2 grader i bratteste hundremetersbelte og 27,4 i bratteste sammenhengende parti. Kanten du står på til slutt faller 71 grader — den er utsikten, og den er faren.",
+    ascent: [
+      "Fra parkeringa der bomvegen opp Venjesdalen ender, ved Venjesdalssetra — OSM har setra som eget punkt, og DTM1 leser 418 moh der Fri Flyt oppgir 380. Du går sørover etter Romsdalseggen-merkinga gjennom rydda skoggater på nordsida av Tverrelva: beltet fra 400 til 500 moh måler bare 7,3 grader, og skogen slutter allerede på 553 moh etter 1,2 km, med åpent område fra 559.",
+      "Over skoggrensa åpner flata mellom Blånebba og Storhesten seg — 681 moh der linja krysser. Herfra holder du vestover i slak stigning til du finner nordøstflanken som leder opp mot det laveste punktet på ryggen mellom Blånebba og punkt 1178. Flanken er turens bratteste del: beltet fra 800 til 900 moh måler 22,2 grader over 269 meter grunn, og det bratteste sammenhengende partiet ligger her, 27,4 grader mellom 972 og 999 moh.",
+      "Skaret leser 1245 moh på terrengmodellen, 230 meter vest-nordvest for toppen, og hovedryggen følges østover derfra til varden på 1317 — beltet fra 1200 til 1300 måler 17,2 grader. Fri Flyts direkteveg gjennom toppryggen er den andre muligheten, rundt 40 grader ifølge kilden; linja her er traversen han beskriver som det slakere valget rundt 1000 moh. Registeret leser 1272 på representasjonspunktet, toppsøket klatrer til 1317,0 mot publiserte 1320 — et skarpt topp-punkt der laserskannet leser tre meter under den publiserte høyden, samme klasse som Rørnestinden.",
+    ],
+    descent: [
+      "Normalnedfarten er nordøstflanken du kom opp — 35 til 40 grader ifølge Fri Flyt, og målt 36,2 grader i snitt over 500 meter med 43,6 grader som bratteste 60-metersvindu 140 til 200 meter ut. Ryggen mot nordvest, tilbake mot skaret, er den eneste slake sektoren på toppen: 16,5 grader i snitt.",
+      "Nordryggen er kildens avanserte alternativ — 38 til 43 grader med passasjer på 45, aspekt nord til øst. Og hold varden mellom deg og Romsdalen når du snur: sør- og sørvestsiden faller 71,4 og 72,0 grader i de første 60 metrene fra toppen. Det er kanten du kom for å se utover, ikke utfor.",
+    ],
+    avalanche: [
+      {
+        title: "Ruta",
+        body: "KAST 2 – Utfordrende hos Fri Flyt, faremomenter skred og skavl. Linja måler 22,2 grader i bratteste belte og 27,4 i bratteste parti — under de 30 der de store skredene løsner, men flanken du krysser mellom 800 og 1000 moh ligger i le for nordvestlig vind, og terrenget rundt er omkranset av steinheng med store konsekvensområder.",
+      },
+      {
+        title: "Skavlene",
+        body: "Skavleksponeringen er mot nord, og ut.no legger til at partiene nær toppen er smale med store skavler. På ryggen fra skaret østover til varden går du med nordsiden under skavl og sørsiden 71 grader ned mot Romsdalen — hold deg på linja, særlig i flatt lys.",
+      },
+      {
+        title: "Sesongen",
+        body: "Fri Flyt gir mars–mai, ut.no desember–april. Kortet bærer Fri Flyts, som er primærkilden for linja — uenigheten står her heller enn å midles bort. Bomvegen opp Venjesdalen brøytes; setra er vinterstart for både Blånebba og naboturene.",
+      },
+      {
+        title: "Før du går",
+        body: "Blånebba ligger i varslingsregionen Romsdal, en A-region med daglig skredvarsel gjennom sesongen — sjekk varsom.no. Ta med sender/mottaker, søkestang og spade, og les terrenget selv: et varsel beskriver regionen, ikke flanken du står i.",
+      },
+    ],
+    elevationProfile: {
+      path: "M0,195 L27,199 L52,199 L80,197 L109,193 L139,185 L158,176 L178,168 L200,157 L220,149 L247,141 L267,133 L294,123 L314,112 L330,104 L353,93 L369,83 L383,78 L401,73 L434,69 L458,64 L483,60 L503,51 L534,41 L561,32 L581,23 L600,18",
+      startLabel: "418 moh",
+      endLabel: "1317 moh",
+      distanceLabel: "4,0 km",
+      caption: "934 høydemeter og 4,04 km fra Venjesdalssetra om flata under Storhesten og skaret på 1245 moh, med skoggrensa på 553 moh og det bratteste — 27,4 grader mellom 972 og 999 moh — i nordøstflanken.",
+    },
+  },
+  ospetinden: {
+    slug: "ospetinden",
+    intro:
+      "1061 høydemeter og 6,88 km fra bomkassa på Venås til pyramiden innerst i Måndalen — fjellet du ser reise seg foran deg fra første steg, sier morotur. Fri Flyt gir turen KAST 2 – Utfordrende med bratteste punkt rundt 35 grader øverst i botnen; linja her trekker ut på nordøstryggen fra flata på rundt 900 moh, slik kilden anbefaler for skred, og måler 22,4 grader i bratteste hundremetersbelte og 25,6 i bratteste sammenhengende parti. Toppen er ofte snøfri — skiene settes vanligvis igjen noen meter under den.",
+    ascent: [
+      "Fra bomkassa ved gården Venås innerst i Måndalen, 201 moh, følger du bomveien til Venåssetra — beltene fra 200 til 400 moh måler 3,0 og 3,7 grader over nesten tre og en halv kilometer veg, jevn og fin stigning innover dalen. Setra er et godt hvilepunkt på finværsdager, sier morotur. Terrengmodellen leser 393 moh der; Fri Flyts «ca 700» for setra er feil, registeret og terrengmodellen er enige.",
+      "Fra setra går du rett vest over myra — 414 moh — og krysser Stavvasselva, så sikter du mot den store østvendte botnen. Skogen slutter på 668 moh etter 4,68 km, med åpent område fra 681, og botnen har jevnt stigende bratthet: 15,4 grader fra 600 til 700 moh, og så turens bratteste belte, 22,4 grader fra 700 til 800 over 225 meter grunn, med det bratteste sammenhengende partiet — 25,6 grader — mellom 764 og 779 moh.",
+      "Fra flata på rundt 900 moh — 948 der linja tar den — er det vanlig å trekke ut mot nordøstryggen, og det er det linja gjør: beltet fra 900 til 1000 måler bare 8,5 grader på traversen ut. Ryggen tar deg vestover mot varden — 19,0 grader fra 1100 til 1200 — med utsikten over fjordene mot Molde og havet bak deg. Registeret leser 1203 på representasjonspunktet; toppsøket klatrer til 1227,5 mot publiserte 1228. Selve toppen er ofte avblåst med bart berg og hardpakke — det første 60-metersvinduet ned nordøstryggen måler 45,3 grader, så skiene blir stående der du satte dem.",
+    ],
+    descent: [
+      "Normalnedfarten er østflanken: rett ned gir jevnt 30 grader ifølge Fri Flyt, og målingen er enig — østsiden måler 27,5 grader i snitt over 500 meter med 31,9 grader som bratteste 60-metersvindu 70 til 130 meter ut. Fra flata på rundt 900 moh følger du vanligvis sporene fra turen opp.",
+      "Sørflanken er alternativet: 400 høydemeter jevnt bratt ned mot Øspevatnet, 33 til 40 grader ifølge kilden — og målt 33,9 grader i snitt med 37,3 som bratteste vindu rett under toppen. Den hører til i god stabilitet, og den ender et annet sted enn bilen.",
+    ],
+    avalanche: [
+      {
+        title: "Ruta",
+        body: "KAST 2 – Utfordrende hos Fri Flyt, bratteste punkt rundt 35 grader øverst i botnen der kildens direktelinje går. Linja her går ut på nordøstryggen fra flata i stedet — det er sporvalget kilden selv legger med tanke på skred etter vind og snø fra nord — og måler 25,6 grader der den er brattest.",
+      },
+      {
+        title: "Lehengene",
+        body: "Kilden er konkret om vinden: sørøst- og nordøstryggene danner leheng i henholdsvis sørlig og nordlig vind. Botnen du krysser er østvendt og samler snø etter vestavær — les hengene over deg gjennom hele stigningen fra 700 til 900.",
+      },
+      {
+        title: "Toppen",
+        body: "Toppen er ofte snøfri med bart berg og hardpakke, og glifare er kildens eget ord. Det første 60-metersvinduet ned nordøstryggen måler 45,3 grader — skiene settes igjen noen meter under toppen, og de siste metrene går til fots.",
+      },
+      {
+        title: "Før du går",
+        body: "Øspetinden ligger i varslingsregionen Romsdal, en A-region med daglig skredvarsel gjennom sesongen — sjekk varsom.no. Sesongen desember–mai er Fri Flyts. Ta med sender/mottaker, søkestang og spade, og les terrenget selv: et varsel beskriver regionen, ikke flanken du står i.",
+      },
+    ],
+    elevationProfile: {
+      path: "M0,200 L24,199 L43,198 L75,195 L98,191 L126,188 L146,185 L173,181 L197,177 L228,172 L251,166 L275,168 L299,165 L326,158 L346,146 L369,133 L393,126 L412,115 L436,97 L460,78 L477,68 L499,66 L522,58 L542,55 L562,44 L577,34 L597,19 L600,18",
+      startLabel: "201 moh",
+      endLabel: "1228 moh",
+      distanceLabel: "6,9 km",
+      caption: "1061 høydemeter og 6,88 km fra Venås om Venåssetra og den østvendte botnen, med skoggrensa på 668 moh og det bratteste — 25,6 grader mellom 764 og 779 moh — i botnen.",
+    },
+  },
+  middagstinden: {
+    slug: "middagstinden",
+    intro:
+      "1306 høydemeter og 6,20 km fra Herdslan i Innfjorden til en alpin topp som er bratt på alle kanter — Fri Flyt gir turen KAST 3 – Komplekst med bratteste punkt 39 grader, og normalveien kjennes luftig og eksponert. Linja måler 25,1 grader i bratteste hundremetersbelte og 30,0 i det bratteste sammenhengende partiet, som er de siste metrene opp den vestvendte toppflanken. Eggen dit er ofte avblåst: ski på sekken, og stegjern og isøks kan trengs. Dette er rundens alvorligste tur, og den sier det selv.",
+    ascent: [
+      "Fra Herdslan på bomvegen mot Bøstølen — registerets Herdslan er ei slette ved vegen, og myrflata der bilene står leser 348,7 moh mot Fri Flyts oppgitte 360. Vegen følges vestover på sørsiden av Berillvatnet, som er regulert: linja runder hele vannet på land, om vestenden på 403 moh, og krysser elva vest for vatnet på egnet sted slik kilden sier — 390 moh der linja tar den. Beltet fra 300 til 400 moh måler 3,4 grader over halvannen kilometer veg.",
+      "Fra skogen vest for vatnet — 410 moh — går det opp bekkedalen mot skaret øst for punkt 943, ved Tindevatnet. Skogen slutter på 740 moh etter 3,33 km, med åpent område fra 759, og dalen bratner jevnt: 21,0 grader fra 500 til 600 moh, 19,2 fra 600 til 700 og turens bratteste belte, 25,1 grader over 170 meter grunn, fra 700 til 800. Øvre del av bekkedalen er bratt og skredutsatt — det er kildens egen formulering, og det er her turen krever sin stabilitet.",
+      "Skaret leser 937 moh der linja tar det, med Tindevatnet på 804 under deg i vest. Herfra travereres ryggen østover mot toppen — 17,3 grader fra 1000 til 1100, 21,3 fra 1200 til 1300 — og den er lite skredutsatt, men ofte avblåst: skiene på sekken, og stegjern og isøks kan trengs. Når ryggen flater ut nordover kan skiene ofte på igjen langs vestsiden.",
+      "Den siste vestvendte flanken før toppen er bratt — 37 grader ifølge Fri Flyt, ofte avblåst, og med liten plass. Linja måler 30,0 grader i det bratteste sammenhengende partiet mellom 1549 og 1568 moh, og beltet fra 1500 til 1600 måler 23,8. Varden står på 1568 moh; registeret leser 1547 på representasjonspunktet, og toppsøket klatrer til 1568,3 mot publiserte 1569. Landet har 49 fjell som heter Middagstinden — dette er Raumas.",
+    ],
+    descent: [
+      "Normalnedfarten er den store vestvendte flanken fra toppen, først mellom steinutslag — kilden peker særlig på de øverste hundre metrene — og med en travers sørover før kjøringen begynner. Rundt 700 meter bratt kjøring ned mot skaret, så 500 meter skogskjøring. Vestsiden måler 31,6 grader i snitt over 500 meter med 38,3 grader som bratteste 60-metersvindu 10 til 70 meter ut — det stemmer med kildens 37.",
+      "Gullkoppen-variantene er kildens avanserte alternativer: en travers på snørampa øst for Gullkoppens bratte vegg fra rundt 1360 moh med heng opptil 45 grader, og en direkte 50-graders flanke på sørsiden av undertoppen rundt 1300. Begge hører til seint på vinteren med gjennomfrossen snø — og ingen av dem er linja på kartet her.",
+    ],
+    avalanche: [
+      {
+        title: "Ruta",
+        body: "KAST 3 – Komplekst hos Fri Flyt, bratteste punkt 39 grader. Terrenget gir ikke rom for feil på de eksponerte partiene, sier kilden — øvre del av bekkedalen er bratt og skredutsatt, og skredterreng i heng over 30 grader står i selve rutebeskrivelsen. Dette er en tur for tørr, stabil vintersnø eller gjennomfrossen vårsnø med kalde netter.",
+      },
+      {
+        title: "Eggen og flanken",
+        body: "Ryggen fra skaret er lite skredutsatt men ofte avblåst — ski på sekken, stegjern og isøks kan trengs, og den siste vestvendte flanken har liten plass. Målingen sier hvor smal marginen er: fra varden faller sør, sørvest og sørøst 75,7, 73,4 og 71,5 grader i de første 60 metrene, og bare vest er kjørbar — 31,6 grader i snitt.",
+      },
+      {
+        title: "Steinutslag",
+        body: "Kilden peker på stein særlig i de øverste hundre metrene av vestflanken, og seint i sesongen tar sola de lavere delene. Tidlig start og en plan for hvor du snur er del av utstyret her.",
+      },
+      {
+        title: "Før du går",
+        body: "Middagstinden ligger i varslingsregionen Romsdal, en A-region med daglig skredvarsel gjennom sesongen — sjekk varsom.no. Sesongen januar–april er Fri Flyts. Ta med sender/mottaker, søkestang og spade i tillegg til stegjern og isøks — og les terrenget selv: et varsel beskriver regionen, ikke flanken du står i.",
+      },
+    ],
+    elevationProfile: {
+      path: "M0,200 L26,197 L44,192 L70,191 L91,191 L113,191 L139,190 L162,192 L184,194 L209,197 L233,189 L248,182 L274,168 L290,161 L305,152 L319,144 L335,132 L357,123 L380,116 L401,108 L418,111 L435,105 L457,95 L479,85 L497,76 L514,65 L540,49 L560,40 L579,31 L595,23 L600,18",
+      startLabel: "349 moh",
+      endLabel: "1568 moh",
+      distanceLabel: "6,2 km",
+      caption: "1306 høydemeter og 6,20 km fra Herdslan rundt Berillvatnet og opp bekkedalen til skaret ved Tindevatnet, med skoggrensa på 740 moh og det bratteste — 30,0 grader mellom 1549 og 1568 moh — i den vestvendte toppflanken.",
+    },
+  },
   auskjeret: {
     slug: "auskjeret",
     intro:
