@@ -6304,5 +6304,255 @@
     "notes": "Fri Flyt: KAST 3 – Komplekst, bratteste punkt 39 grader. Øvre del av bekkedalen mot skaret er bratt og skredutsatt. Ryggen er lite skredutsatt men ofte avblåst — ski på sekken, stegjern og isøks kan trengs. Steinutslag særlig de øverste 100 metrene av vestflanken; skredterreng i heng over 30 grader; nedfartsalternativene ved Gullkoppen måler 45–50 grader. Berillvatnet er regulert — hold vegen på sørsiden."
    }
   ]
+ },
+ "skarlitinden": {
+  "routes": [
+   {
+    "id": "normalruta",
+    "name": "Normalruta fra Sandeggen",
+    "description": "Fra skogsvegen ved Sandeggen på Breivikeidet, langs nordsida av Russevankelva opp gjennom storsteinet terreng, inn i Russevankskaret der det flater på rundt 400 moh, ved punkt 511 mot sør-søraust, og jevnt opp på toppplatået forbi 847 til varden",
+    "trailhead": {
+     "name": "Sandeggen",
+     "lat": 69.6315,
+     "lng": 19.4181,
+     "elevation_m": 31.0,
+     "fullName": "Sandeggen"
+    },
+    "waypoints": [
+     {
+      "name": "skogsvegen",
+      "lat": 69.633,
+      "lng": 19.405,
+      "elevation_m": 52.0
+     },
+     {
+      "name": "nordsida av Russevankelva",
+      "lat": 69.636,
+      "lng": 19.38,
+      "elevation_m": 101.0
+     },
+     {
+      "name": "inn i Russevankskaret",
+      "lat": 69.644,
+      "lng": 19.34,
+      "elevation_m": 452.0
+     },
+     {
+      "name": "ved punkt 511",
+      "lat": 69.645,
+      "lng": 19.333,
+      "elevation_m": 448.0
+     },
+     {
+      "name": "svingen mot sør-søraust",
+      "lat": 69.64,
+      "lng": 19.333,
+      "elevation_m": 550.0
+     },
+     {
+      "name": "platået",
+      "lat": 69.636,
+      "lng": 19.3345,
+      "elevation_m": 812.0
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: KAST 1 – Enkelt, bratteste punkt under 27 grader, faremoment «Terrengfelle. Skavler». Elvedalen langs Russevankelva kan fungere som terrengfelle ved skred fra hengene i nord. Østerenna, nedfartsalternativet mot øst, er KAST 3 – Komplekst og måler 30–45 grader mellom 760 og 380 moh — skikjøring i skredterreng."
+   }
+  ]
+ },
+ "storfjellet": {
+  "routes": [
+   {
+    "id": "normalruta",
+    "name": "Normalruta fra Breivikeidet",
+    "description": "Fra Fv.91 der den krysser Storelva, mot Russevankskardet langs nordaustsida av elvedalen, på rundt 400 moh mot nord og aust opp på sørryggen som kommer ned fra toppen, og ryggen til topps",
+    "trailhead": {
+     "name": "Fv.91 ved Storelva",
+     "lat": 69.64,
+     "lng": 19.442,
+     "elevation_m": 41.0,
+     "fullName": "Fv.91 ved Storelva"
+    },
+    "waypoints": [
+     {
+      "name": "dalsida nordaust for elva",
+      "lat": 69.642,
+      "lng": 19.42,
+      "elevation_m": 147.0
+     },
+     {
+      "name": "ca. 400, mot sørryggen",
+      "lat": 69.643,
+      "lng": 19.408,
+      "elevation_m": 351.0
+     },
+     {
+      "name": "sørryggen",
+      "lat": 69.6455,
+      "lng": 19.3945,
+      "elevation_m": 842.0
+     },
+     {
+      "name": "ryggen mot 950",
+      "lat": 69.6475,
+      "lng": 19.3935,
+      "elevation_m": 991.0
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: KAST 2 – Utfordrende, bratteste parti 30–40 grader mellom 950 og 1040 moh. Renna i dalen fungerer som samletrakt for skred fra hengene omkring — terrengfelle. Østhenget fra Krokenga er KAST 3 – Komplekst med lang eksponering i løsne- og utløpsområder, 30–40 grader fra 240 moh, og en skredulykke i 1997 som tok to liv."
+   }
+  ]
+ },
+ "gabrielfjellet": {
+  "routes": [
+   {
+    "id": "normalruta",
+    "name": "Normalruta fra Stormo",
+    "description": "Fra den nordligste Stormo-gården ved fv. 91 sørover gjennom glissen skog, forbi de åpne partiene og videre austover; mellom 400 og 850 moh rullende rygger med flate parti imellom, så det bratteste partiet på 30–35 grader, og over 850 slakere mot toppen",
+    "trailhead": {
+     "name": "Stormo",
+     "lat": 69.60922,
+     "lng": 19.35488,
+     "elevation_m": 76.0,
+     "fullName": "Stormo"
+    },
+    "waypoints": [
+     {
+      "name": "skogen sørover",
+      "lat": 69.6,
+      "lng": 19.36,
+      "elevation_m": 308.0
+     },
+     {
+      "name": "de åpne partiene",
+      "lat": 69.592,
+      "lng": 19.37,
+      "elevation_m": 764.0
+     },
+     {
+      "name": "ryggformasjonene",
+      "lat": 69.586,
+      "lng": 19.376,
+      "elevation_m": 980.0
+     },
+     {
+      "name": "det bratteste partiet",
+      "lat": 69.582,
+      "lng": 19.379,
+      "elevation_m": 1096.0
+     },
+     {
+      "name": "flaket mot toppen",
+      "lat": 69.58,
+      "lng": 19.38,
+      "elevation_m": 1162.0
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: KAST 2 – Utfordrende, bratteste parti 30–35 grader, faremoment løsneområder og utløpsområder. Vestsiden (alternativruta) er KAST 3 – Komplekst med parti på 40–45 grader."
+   }
+  ]
+ },
+ "fagerfjellet": {
+  "routes": [
+   {
+    "id": "normalruta",
+    "name": "Normalruta fra Fagernes",
+    "description": "Fra skolen på Fagernes rundt skoleområdet og opp den dyrka marka, gjennom skogen med kurs for punkt 459, så austover langs en naturlig forsenkning mot varden på 871 der de fleste snur, og videre over småkupert terreng mot 912 på vestsida og opp den siste stigningen til toppen",
+    "trailhead": {
+     "name": "Fagernes",
+     "lat": 69.5605,
+     "lng": 19.1855,
+     "elevation_m": 21.0,
+     "fullName": "Fagernes"
+    },
+    "waypoints": [
+     {
+      "name": "den dyrka marka og skogen",
+      "lat": 69.558,
+      "lng": 19.2,
+      "elevation_m": 162.0
+     },
+     {
+      "name": "punkt 459",
+      "lat": 69.553,
+      "lng": 19.225,
+      "elevation_m": 444.0
+     },
+     {
+      "name": "søkket austover",
+      "lat": 69.549,
+      "lng": 19.25,
+      "elevation_m": 744.0
+     },
+     {
+      "name": "mot varden på 871",
+      "lat": 69.547,
+      "lng": 19.265,
+      "elevation_m": 846.0
+     },
+     {
+      "name": "mot punkt 912",
+      "lat": 69.546,
+      "lng": 19.272,
+      "elevation_m": 875.0
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: KAST 1 – Enkelt, bratteste punkt under 27 grader, faremoment «Skavler» — de bygger seg ut mot nordaust langs ruta. Henrikskaret (alternativruta fra Fagerelvas utløp) er KAST 3 – Komplekst med 30–35 grader mellom 660 og 740 moh."
+   }
+  ]
+ },
+ "store-skalltinden": {
+  "routes": [
+   {
+    "id": "normalruta",
+    "name": "Normalruta fra Glimbukta",
+    "description": "Fra det gamle grustaket i Glimbukta ved fv. 863 opp mot vatnet på 100, videre til Skallvatnet på 320; fra sørenden av vatnet opp ryggen vestover, den kuperte ryggen videre, sikte nord-nordvest fra vatnet sørvest for punkt 695, og de siste 800 metrene med parti på 30–40 grader til topps",
+    "trailhead": {
+     "name": "Glimbukta",
+     "lat": 69.83503,
+     "lng": 19.35483,
+     "elevation_m": 11.0,
+     "fullName": "Glimbukta"
+    },
+    "waypoints": [
+     {
+      "name": "grustaket og lia over",
+      "lat": 69.838,
+      "lng": 19.345,
+      "elevation_m": 154.0
+     },
+     {
+      "name": "sørenden av Skallvatnet",
+      "lat": 69.8415,
+      "lng": 19.316,
+      "elevation_m": 318.0
+     },
+     {
+      "name": "ryggen vest for vatnet",
+      "lat": 69.848,
+      "lng": 19.305,
+      "elevation_m": 429.0
+     },
+     {
+      "name": "flata sørvest for punkt 695",
+      "lat": 69.856,
+      "lng": 19.298,
+      "elevation_m": 534.0
+     },
+     {
+      "name": "ryggen",
+      "lat": 69.863,
+      "lng": 19.295,
+      "elevation_m": 587.0
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: KAST 2 – Utfordrende, faremoment «Løsneområder. Utløpsområder. Skavler». Mellom 230 og 300 moh små bratte parti som navigeres med omhu; mellom 600 og 800 bratt terreng på begge sider av linja; de siste 800 metrene mot toppen har parti på 30–40 grader som krever terrengvurdering. Bjørnskardalen (alternativet) er KAST 3 – Komplekst."
+   }
+  ]
  }
 }

@@ -10,6 +10,17 @@
   "season": "feb–mai",
   "hasGuide": true
  },
+ "store-skalltinden": {
+  "name": "Store Skalltinden",
+  "region": "Troms",
+  "summitM": 901,
+  "verticalM": 980,
+  "duration": "4–6 t",
+  "grade": 3,
+  "aspect": "SØ",
+  "season": "jan–mai",
+  "hasGuide": true
+ },
  "store-blamann": {
   "name": "Store Blåmann",
   "region": "Troms",
@@ -43,6 +54,28 @@
   "season": "des–mai",
   "hasGuide": true
  },
+ "storfjellet": {
+  "name": "Storfjellet",
+  "region": "Troms",
+  "summitM": 1088,
+  "verticalM": 1050,
+  "duration": "4–6 t",
+  "grade": 3,
+  "aspect": "SØ",
+  "season": "jan–mai",
+  "hasGuide": true
+ },
+ "skarlitinden": {
+  "name": "Skarlitinden",
+  "region": "Troms",
+  "summitM": 858,
+  "verticalM": 940,
+  "duration": "4–6 t",
+  "grade": 2,
+  "aspect": "N",
+  "season": "jan–mai",
+  "hasGuide": true
+ },
  "fastdalstinden": {
   "name": "Fastdalstinden",
   "region": "Lyngen",
@@ -62,6 +95,17 @@
   "duration": "5–7 t",
   "grade": 2,
   "aspect": "V",
+  "season": "des–mai",
+  "hasGuide": true
+ },
+ "gabrielfjellet": {
+  "name": "Gabrielfjellet",
+  "region": "Troms",
+  "summitM": 1214,
+  "verticalM": 1140,
+  "duration": "4–6 t",
+  "grade": 3,
+  "aspect": "N",
   "season": "des–mai",
   "hasGuide": true
  },
@@ -96,6 +140,17 @@
   "grade": 3,
   "aspect": "N",
   "season": "mar–mai",
+  "hasGuide": true
+ },
+ "fagerfjellet": {
+  "name": "Fagerfjellet",
+  "region": "Troms",
+  "summitM": 957,
+  "verticalM": 950,
+  "duration": "4–6 t",
+  "grade": 2,
+  "aspect": "V",
+  "season": "nov–mai",
   "hasGuide": true
  },
  "hesten-segla": {

@@ -279,4 +279,18 @@ PEAKS = [
     ("mjolvafjellet", "Mjølvafjellet", ["Rauma"], 1216, 62.54165, 7.76342),
     ("ospetinden", "Øspetinden", ["Rauma"], 1228, 62.51559, 7.25049),
     ("middagstinden", "Middagstinden", ["Rauma"], 1569, 62.46028, 7.44046),
+    #
+    # — the Troms round: five around Tromsø — Breivikeidet, Ramfjord and
+    #   Ringvassøya — from Fri Flyt's Troms index (Espen Nordahl's book behind
+    #   most of it). Gabrielfjellet is the Kirketaket case: the mountain skiers
+    #   name is registered as Iverfjellet (47 m from Fri Flyt's published GPS
+    #   point), while SSR's own «Gabrielfjellet» is a shoulder 3,2 km northeast.
+    #   Storfjellet's register row exists but sits beyond the SSR API's default
+    #   page — queried directly with knr=5501 it lands 46 m from the published
+    #   point. —
+    ("skarlitinden", "Skarlitinden", ["Tromsø"], 857, 69.63314, 19.33569),
+    ("storfjellet", "Storfjellet", ["Tromsø"], 1089, 69.64913, 19.39432),
+    ("gabrielfjellet", "Iverfjellet", ["Tromsø"], 1213, 69.57798, 19.37878),
+    ("fagerfjellet", "Fagerfjellet", ["Tromsø"], 957, 69.55065, 19.26398),
+    ("store-skalltinden", "Store Skalltinden", ["Karlsøy"], 900, 69.87098, 19.29279),
 ]

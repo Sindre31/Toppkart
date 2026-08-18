@@ -1022,5 +1022,45 @@
     "summit_dtm": 1568.3,
     "claims": 1569,
     "stored_off_km": 0.03
+  },
+  "skarlitinden": {
+    "name": "Skarlitinden",
+    "lat": 69.63305,
+    "lng": 19.33467,
+    "summit_dtm": 857.5,
+    "claims": 857,
+    "stored_off_km": 0.04
+  },
+  "storfjellet": {
+    "name": "Storfjellet",
+    "lat": 69.6491,
+    "lng": 19.39317,
+    "summit_dtm": 1088.2,
+    "claims": 1089,
+    "stored_off_km": 0.04
+  },
+  "gabrielfjellet": {
+    "name": "Iverfjellet",
+    "lat": 69.57821,
+    "lng": 19.37987,
+    "summit_dtm": 1213.7,
+    "claims": 1213,
+    "stored_off_km": 0.05
+  },
+  "fagerfjellet": {
+    "name": "Fagerfjellet",
+    "lat": 69.54528,
+    "lng": 19.27811,
+    "summit_dtm": 957.3,
+    "claims": 957,
+    "stored_off_km": 0.81
+  },
+  "store-skalltinden": {
+    "name": "Store Skalltinden",
+    "lat": 69.87096,
+    "lng": 19.29283,
+    "summit_dtm": 901.1,
+    "claims": 900,
+    "stored_off_km": 0.0
   }
 }

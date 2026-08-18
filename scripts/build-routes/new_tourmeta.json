@@ -2245,5 +2245,125 @@
    "Tredje og siste omruting: krysningen satt igjen ved vestarmen/elveosen; et bredere sving vest for vatnet (403/390/410 moh) tok linja helt av vannet — check_ground svarer 0 m på vann, og kortet bærer den ferdige linjas 1310."
   ],
   "notes": ""
+ },
+ "skarlitinden": {
+  "season": "jan–mai",
+  "aspect": "N",
+  "grade": 2,
+  "gradeReason": "KAST 1 – Enkelt hos Fri Flyt, bratteste punkt under 27 grader på normalruta. Det som holder graden oppe er terrengfella i elvedalen — utløp for skred fra hengene i nord — og skavlene; Østerenna (alternativet ned) er KAST 3 med 30–45 grader.",
+  "roadClosedInWinter": false,
+  "teaserNo": "940 høydemeter fra Sandeggen på Breivikeidet: langs Russevankelva inn i Russevankskaret, sving mot sør-søraust ved punkt 511 — og et langt toppplatå til varden med rennene under.",
+  "teaserEn": "940 metres of ascent from Sandeggen on Breivikeidet: along Russevankelva into Russevankskaret, a turn south-southeast at point 511 — and a long summit plateau to the cairn with the couloirs below.",
+  "hazardNotes": "Fri Flyt: KAST 1 – Enkelt, bratteste punkt under 27 grader, faremoment «Terrengfelle. Skavler». Elvedalen langs Russevankelva kan fungere som terrengfelle ved skred fra hengene i nord. Østerenna, nedfartsalternativet mot øst, er KAST 3 – Komplekst og måler 30–45 grader mellom 760 og 380 moh — skikjøring i skredterreng.",
+  "sources": [
+   "https://www.friflyt.no/topptur/tromso/skarlitinden",
+   "http://toppturmania.blogspot.com/2012/01/skardlitinden-857moh-breivikeidets.html"
+  ],
+  "confidence": "medium",
+  "corrections": [
+   "Fri Flyts publiserte GPS-punkt (UTM33 668309.15/7730950.67 → 69.63326/19.33640) leser 857,2 på DTM1 mot publiserte 857; registeret har både Skarlitinden og Skardlitinden (Ås, Tromsø) på samme punkt 31 m unna, og toppsøket løser 857,5.",
+   "Starten er skogsvegen ved Sandeggen på Breivikeidet — registerets Sandeggen (Bruk, 69.63151/19.41808) ligger på Breivikeidvegen (fv. 91), og DTM1 leser 31,2 moh der. 857 − 31 = 826, som forliker Fri Flyts 835 høydemeter.",
+   "Ruta reproduserer på terrenget: skogsvegen (52 moh), nordsida av Russevankelva (101), inn i Russevankskaret der det flater på ca. 400 (452 der linja går, registerets Russevankskaret leser 446), ved punkt 511, svingen mot sør-søraust (550) og platået (812) forbi 847 til varden.",
+   "Fri Flyts faremoment er «Terrengfelle. Skavler»: elvedalen kan fungere som terrengfelle for skred fra hengene i nord, og Østerenna — nedfartsalternativet — måler 30–45 grader mellom 760 og 380 moh.",
+   "Aspekt N fra route_metrics — Fri Flyts «SE-NW» er et spenn, ikke en navngitt nedfartsretning, og linja forlater varden nordover langs platået før den dreier øst. Der ingenting entydig er navngitt, bestemmer målingen.",
+   "Den rutede linja samler 937 m stigning mot Fri Flyts 835: skaret og platået gir tilbake 110 m på veien — Hornindalsrokken-tilfellet, og kortet bærer linjas eget tall.",
+   "check_new_corridors: ingen amenity=parking ved Sandeggen, men OSM har primary- og service-veg innenfor 250 m — parkeringa er langs fv. 91, slik kilden beskriver."
+  ],
+  "notes": ""
+ },
+ "storfjellet": {
+  "season": "jan–mai",
+  "aspect": "SØ",
+  "grade": 3,
+  "gradeReason": "KAST 2 – Utfordrende hos Fri Flyt, med 30–40 grader mellom 950 og 1040 moh på normalruta og ei renne som fungerer som terrengfelle i dalen. Østhenget er KAST 3 og ikke linja her.",
+  "roadClosedInWinter": false,
+  "teaserNo": "1050 høydemeter rett opp fra Breivikeidet: langs elvedalen mot Russevankskardet, opp på sørryggen på rundt 400 — og ryggen til topps med det bratteste mellom 950 og 1040.",
+  "teaserEn": "1050 metres of ascent straight up from Breivikeidet: along the river valley toward Russevankskardet, onto the south ridge at about 400 — and the ridge to the top with the steepest ground between 950 and 1040.",
+  "hazardNotes": "Fri Flyt: KAST 2 – Utfordrende, bratteste parti 30–40 grader mellom 950 og 1040 moh. Renna i dalen fungerer som samletrakt for skred fra hengene omkring — terrengfelle. Østhenget fra Krokenga er KAST 3 – Komplekst med lang eksponering i løsne- og utløpsområder, 30–40 grader fra 240 moh, og en skredulykke i 1997 som tok to liv.",
+  "sources": [
+   "https://www.friflyt.no/topptur/tromso/storfjellet",
+   "https://www.tinderogtopper.no/post/finnheimfjellet-1148-moh-storfjellet-1089-moh"
+  ],
+  "confidence": "medium",
+  "corrections": [
+   "Registerets Storfjellet ved Breivikeidet ligger utenfor stedsnavn-APIets første side — søket måtte pagineres (knr 5501) før raden dukket opp, 46 m fra Fri Flyts publiserte GPS-punkt (UTM33 670380.62/7732879.25 → 69.64918/19.39314, DTM1 1085,8). Uten pagineringen løste toppsøket på 1424-metersnavnebroren 24 km unna ved Lakselvbukt; geo.stedsnavn leser nå alle sidene.",
+   "Starten «i området der Fv.91 krysser Storelva» løser seg på Breivikeidvegen: punktet 69.6400/19.4420 leser 40,9 moh, og 1089 − 41 = 1048 forliker Fri Flyts 1050 høydemeter.",
+   "Ruta reproduserer: dalsida nordaust for elva (147 moh), ca. 400-punktet der man svinger mot sørryggen (351), sørryggen (842) og ryggen mot 950 (991); Fri Flyt gir 30–40 grader mellom 950 og 1040.",
+   "Fri Flyts eget faremoment: rennene fungerer som samletrakt for skred fra hengene omkring — terrengfelle. Østhenget fra Krokenga er KAST 3, med lang eksponering i både løsne- og utløpsområder og en skredulykke i 1997 som tok to liv; det er ikke linja her.",
+   "check_new_corridors: ingen amenity=parking ved Storelva-kryssinga, men fv. 91 (primary) ligger på punktet — kilden sier «i området der Fv.91 krysser Storelva», og parkeringa er langs vegen."
+  ],
+  "notes": ""
+ },
+ "gabrielfjellet": {
+  "season": "des–mai",
+  "aspect": "N",
+  "grade": 3,
+  "gradeReason": "KAST 2 – Utfordrende hos Fri Flyt, bratteste parti 30–35 grader med krav til linjevalg. Vestsiden er KAST 3 med parti på 40–45 og er ikke linja her.",
+  "roadClosedInWinter": false,
+  "teaserNo": "1140 høydemeter fra Stormo ved fv. 91: glissen skog sørover, rullende rygger fra 400 til 850 — og store flak helt til varden på fjellet registeret kaller Iverfjellet.",
+  "teaserEn": "1140 metres of ascent from Stormo on the fv. 91: sparse forest south, rolling ridges from 400 to 850 — and broad fields all the way to the cairn on the mountain the register calls Iverfjellet.",
+  "hazardNotes": "Fri Flyt: KAST 2 – Utfordrende, bratteste parti 30–35 grader, faremoment løsneområder og utløpsområder. Vestsiden (alternativruta) er KAST 3 – Komplekst med parti på 40–45 grader.",
+  "sources": [
+   "https://www.friflyt.no/topptur/tromso/gabrielfjellet",
+   "https://peakbook.org/no/tour/35327/Gabrielfjellet+-+fin+skitopp.html",
+   "https://www.outdooractive.com/en/route/ski-touring/tromso/iverfjellet-gabrielfjellet-from-foss/110156215/",
+   "https://www.pudderpiken.no/bloggen/2019/5/21/gabrielfjellet-1213-moh"
+  ],
+  "confidence": "medium",
+  "corrections": [
+   "Fjellet skifolket kaller Gabrielfjellet er registrert som **Iverfjellet** (Fjell, 69.57798/19.37878, 47 m fra Fri Flyts publiserte GPS-punkt) — Kirketaket/Kyrkjetaket-tilfellet. Registerets eget «Gabrielfjellet» er en skulder 3,2 km nordaust, og toppsøket fra den raden ville aldri nådd 1213-toppen. Outdooractive fører turen som «Iverfjellet/Gabrielfjellet», så begge navnene er i bruk.",
+   "Toppsøket løser 1213,7 mot publiserte 1213 på Iverfjellet-raden.",
+   "Starten er den nordligste av de to Stormo-gårdene langs fv. 91 (registerets Stormo, Bruk, 69.60922/19.35488, DTM1 75,9 moh) — teleskiers og pudderpiken beskriver samme start. 1213 − 76 = 1137 mot Fri Flyts 1160; differansen er undulasjonen og er ført som den er.",
+   "Ruta reproduserer: skogen sørover (308 moh), de åpne partiene (764), ryggformasjonene (980), det bratteste partiet (1096, Fri Flyt gir 30–35 grader) og flaket mot toppen (1162).",
+   "check_new_corridors: ingen amenity=parking ved Stormo, men OSM har primary-, service- og track-veg innenfor 250 m — «parkering langs Fv.91» er kildens egen formulering."
+  ],
+  "notes": ""
+ },
+ "fagerfjellet": {
+  "season": "nov–mai",
+  "aspect": "V",
+  "grade": 2,
+  "gradeReason": "KAST 1 – Enkelt hos Fri Flyt, bratteste punkt under 27 grader — en populær og lett tilgjengelig topp med tidlig snø. Skavlene mot nordaust er det som krever hodet.",
+  "roadClosedInWinter": false,
+  "teaserNo": "950 høydemeter fra skolen på Fagernes: dyrka mark, skogen mot punkt 459 og søkket austover til varden på 871 der de fleste snur — toppen ligger et småkupert stykke lenger inn.",
+  "teaserEn": "950 metres of ascent from the school at Fagernes: farmland, the forest toward point 459 and the hollow east to the cairn at 871 where most people turn — the summit lies a rolling stretch further in.",
+  "hazardNotes": "Fri Flyt: KAST 1 – Enkelt, bratteste punkt under 27 grader, faremoment «Skavler» — de bygger seg ut mot nordaust langs ruta. Henrikskaret (alternativruta fra Fagerelvas utløp) er KAST 3 – Komplekst med 30–35 grader mellom 660 og 740 moh.",
+  "sources": [
+   "https://www.friflyt.no/topptur/tromso/fagerfjellet",
+   "https://www.alltrails.com/nb-no/sti/norway/troms-og-finnmark/topptur-pa-ski-fagerfjellet",
+   "https://biaton.com/no-no/service/toppturfavoritter-m-guide/856"
+  ],
+  "confidence": "high",
+  "corrections": [
+   "Fri Flyts publiserte GPS-punkt (UTM33 666725.42/7720993.33 → 69.54522/19.27782) leser 956,1 på DTM1 mot publiserte 957, og toppsøket løser 957,3 — registerets Fagerfjellet (Fjell, Tromsø) ligger 809 m unna som representasjonspunkt.",
+   "Starten «parkering på vestsida av skolen» på Fagernes løser seg: flata ved skolen (69.5605/19.1855) leser 20,7 moh med åpen terrengklasse. 957 − 21 = 936, som forliker Fri Flyts 930 høydemeter.",
+   "Ruta reproduserer: den dyrka marka og skogen (162 moh), punkt 459 (444 der linja går), søkket austover (744), mot varden på 871 (846) og partiet mot punkt 912 (875).",
+   "Fri Flyts faremoment er «Skavler», særlig utover mot nordaust langs ruta — og han sier selv at de fleste snur ved varden på 871."
+  ],
+  "notes": ""
+ },
+ "store-skalltinden": {
+  "season": "jan–mai",
+  "aspect": "SØ",
+  "grade": 3,
+  "gradeReason": "KAST 2 – Utfordrende hos Fri Flyt, med 30–40 grader i de siste 800 metrene mot toppen og bratte parti på begge sider av linja mellom 600 og 800. Sjø-til-topp med faremomentene løsneområder, utløpsområder og skavler.",
+  "roadClosedInWinter": false,
+  "teaserNo": "980 høydemeter fra havet i Glimbukta: opp forbi Skallvatnet på 320, den kuperte ryggen vestover — og de siste 800 metrene mot toppen med bratt terreng på begge sider.",
+  "teaserEn": "980 metres of ascent from the sea at Glimbukta: up past Skallvatnet at 320, the undulating ridge west — and the last 800 metres toward the summit with steep ground on both sides.",
+  "hazardNotes": "Fri Flyt: KAST 2 – Utfordrende, faremoment «Løsneområder. Utløpsområder. Skavler». Mellom 230 og 300 moh små bratte parti som navigeres med omhu; mellom 600 og 800 bratt terreng på begge sider av linja; de siste 800 metrene mot toppen har parti på 30–40 grader som krever terrengvurdering. Bjørnskardalen (alternativet) er KAST 3 – Komplekst.",
+  "sources": [
+   "https://www.friflyt.no/topptur/tromso/turbeskrivelse-store-skalltinden",
+   "https://www.visittromso.no/top-8-places-explore-foot-skiing-snowshoeing"
+  ],
+  "confidence": "medium",
+  "corrections": [
+   "Fri Flyts publiserte GPS-punkt (UTM33 664759.68/7757314.18 → 69.87125/19.29294) ligger 31 m fra registerets Store Skalltinden (Topp, Karlsøy), og toppsøket løser 901,1 mot publiserte 900.",
+   "Starten er Glimbukta ved fv. 863 på austsida av Ringvassøya — registerets Glimbukta (Bruk, 69.83503/19.35483) leser 11,0 moh. Turen går fra havet: 900 høydemeter er hele fjellet.",
+   "Ruta reproduserer: grustaket og lia over (154 moh), sørenden av Skallvatnet (318 — vannet selv leser 320 som Innsjø, og linja holder land ved sørenden slik kilden sier), ryggen vest for vatnet (429), flata sørvest for punkt 695 (534) og ryggen (587) mot det siste bratte.",
+   "Fri Flyts faremoment: løsneområder, utløpsområder og skavler; mellom 230 og 300 moh små bratte parti som skal navigeres med omhu, og de siste 800 metrene mot toppen har parti på 30–40 grader som krever terrengvurdering.",
+   "Den rutede linja samler 981 m mot Fri Flyts 900: den kuperte ryggen gir tilbake 91 m — kortet bærer linjas eget tall. Grad 3 står mot målingens 2: sjø-til-topp, bratt terreng på begge sider av linja mellom 600 og 800, og KAST 2 med tre faremomenter er mer enn en helningsvinkel ser — Gråfjell-regelen.",
+   "check_ground: linja kryssar 103 m av det naturlege vatnet på 543 moh sørvest for punkt 695 — vatnet kilden sjølv siktar frå — aldri meir enn 18 m frå land. Naturleg vatn på ei linje kjelda sjølv legg der: namngitt i prosaen med høgd, lengd og avstand frå land, ikkje ruta om — sju-blei-prosa-regelen."
+  ],
+  "notes": ""
  }
 }
