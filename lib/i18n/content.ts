@@ -258,6 +258,16 @@ export const TOUR_TEASER_EN: Record<string, string> = {
     "1129 metres of ascent from the farm at Kammen: the tractor road, the forest toward the stream between Nordtinden and Lukttinden, and the gentler ridge to the most striking summit in Vefsn.",
   tortenviktinden:
     "1023 metres of ascent from Neset by Flostrand: straight up through the forest, west along the ribs across the broken shelf, and up the gentle rise to the view over the Helgeland coast.",
+  skarven:
+    "740 metres of ascent from the toll road in Skorgedalen to one of Romsdalen's great classics: the bog at Kjerringhaugen and the Skorgedalsbu hut, south of point 588, and the ridge over the southern fore-summit to the fjord view at the cairn.",
+  blanebba:
+    "930 metres of ascent from Venjesdalssetra to the edge that looks straight down into Romsdalen: the Romsdalseggen markers along Tverrelva, the flat below Storhesten, the northeast flank to the 1245 m col — and the main ridge east to the cairn.",
+  mjolvafjellet:
+    "1220 metres of ascent from the fjord: the tractor road from Isfjorden stadium, the forest below Litlehesten, across Steinselva and the gentle ridge past Høgnosa — then south to the summit hanging over Romsdalen.",
+  ospetinden:
+    "1060 metres of ascent from the toll booth at Venås: the summer-farm road to Venåssetra, the bog across Stavvasselva, the big east-facing bowl — and the northeast ridge to the pyramid at the head of Måndalen.",
+  middagstinden:
+    "1310 metres of ascent from Herdslan in Innfjorden: the road along Berillvatnet, the stream gully to the col at Tindevatnet — and an often wind-scoured ridge, skis on the pack, before the west-facing summit flank.",
 
 };
 
@@ -1647,6 +1657,192 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       endLabel: "1439 m",
       distanceLabel: "6.4 km",
       caption: "185 to 1439 m over 6.2 kilometres: toll road, birch forest to 421, then ridge all the way — 1277 vertical metres including the notch north of Steinberget.",
+    },
+  },
+  skarven: {
+    intro:
+      "744 metres of ascent over 3.34 km from the car park in Skorgedalen to one of Romsdalen's great classics — the tour ut.no calls one of the shortest in the area and still one of the big ones. Fri Flyt rates it KAST 1 – Simple with the steepest point under 30 degrees, and the finished line stays inside that: the steepest 100 m band measures 20.5 degrees between 400 and 500 m, the steepest sustained stretch 27.7. What needs your head is not the line up but the east flank below the fore-summit — the one the source itself tells you not to cross.",
+    ascent: [
+      "From the car park in Skorgedalen, 307 m on the toll road from Skorga on the E136 — open in winter, and mapped as a car park in OSM. From its northwest corner you cross the flat — bog in Kartverket's classes, 350 m where the line takes it — north of Kjerringhaugen and the DNT hut Skorgedalsbu. Then up through the birch forest: the band from 400 to 500 m is the steepest of the tour, 20.5 degrees over 295 metres of ground, and the forest ends at 556 m after 1.35 km, with open ground from 557.",
+      "Above the treeline you round the south side of point 588 and follow a faint ridge formation — 572 m where the line takes it — toward Skarven's southern fore-summit at 788. The bands here measure 16.4 degrees from 600 to 700 m and 15.7 from 700 to 800: even skinning on an open ridge, with the view growing east into Romsdalen and west over Romsdalsfjorden toward Molde.",
+      "From the fore-summit the ridge continues over 892 m to the cairn. The steepest sustained stretch of the whole tour is here — 27.7 degrees between 937 and 960 m — and the band from 900 to 1000 measures 19.3 degrees. The cairn stands at 1048 m: Fri Flyt's published GPS point, the name register's mountain and the terrain model's 1048.1 coincide to the metre.",
+    ],
+    descent: [
+      "The normal way down is your own track, and the southeast flank it follows is the gentlest sector of the summit: 19.6 degrees mean to the south and 26.3 to the southeast, with 35.9 and 34.4 degrees as the steepest 60 m windows 90 to 180 metres out from the cairn. Good, even skiing that very often holds good snow, says ut.no.",
+      "The alternatives are steeper and belong to stable days: the NM course from 1940 down the southeast flank toward Skarvebotn measures 33 degrees over a hundred vertical metres between 1020 and 920 m, and Vasslia direct toward Selsetervatnet 40–42 degrees with passages of 45. Stay off the northwest side — it measures 43.3 degrees mean with 55.0 degrees as the steepest 60 metres only 80 to 140 metres out.",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "Fri Flyt rates the tour KAST 1 – Simple with the steepest point under 30 degrees, and the line measures 20.5 degrees in its steepest band and 27.7 in its steepest stretch. The card still carries grade 2: the numbers sit above what the app's grade 1 tours measure, and the mountain has sides where mistakes cost.",
+      },
+      {
+        title: "The east flank",
+        body: "Fri Flyt is direct: «Ikke kryss østflanken under Skarvens fortopp» — do not cross the east flank below Skarven's fore-summit; it is one of the few avalanche-prone areas on this side of the mountain. The measurement says why — the east side falls 34.4 degrees mean with 49.7 degrees as the steepest 60 m window 220 to 280 metres out from the cairn. The normal route keeps to the ridge and has no business there.",
+      },
+      {
+        title: "Wind and sun",
+        body: "The source points to avalanche danger in the upper sections after wind from the northwest, and to the sun-exposed southeast flank — on spring days it releases here once the sun has worked it. An early start is the answer in both cases.",
+      },
+      {
+        title: "Before you go",
+        body: "Skarven lies in the Romsdal forecast region, an A-region with a daily avalanche bulletin through the season — check varsom.no. The December–April season is Fri Flyt's. Carry transceiver, probe and shovel, and read the terrain yourself: a bulletin describes the region, not the flank you are standing in.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "307 m",
+      endLabel: "1048 m",
+      distanceLabel: "3.3 km",
+      caption: "744 metres of ascent and 3.34 km from Skorgedalen past Kjerringhaugen and the southern fore-summit, with the treeline at 556 m and the steepest ground — 27.7 degrees between 937 and 960 m — up on the ridge.",
+    },
+  },
+  mjolvafjellet: {
+    intro:
+      "1220 metres of ascent over 5.15 km from the fjord to the summit hanging over Romsdalen — the tour starts at the sports ground in Isfjorden, 6 m above the sea, and ends at 1215. Fri Flyt rates it KAST 2 – Challenging with a steepest point of 28 degrees on the normal route; the finished line measures 21.0 degrees in its steepest 100 m band and 31.5 in its steepest sustained stretch, which sits low on the hillside between 279 and 300 m. It is a long tour where the length is the difficulty — and where route-finding in poor visibility is what the source warns most about.",
+    ascent: [
+      "From Isfjorden stadium — OSM maps the pitch, and the terrain model answers 5.7 m with the class SportIdrettPlass, the same rare three-way agreement of guidebook, map object and terrain model as Glitregga's sports ground. The tractor road takes you up the southeast hillside past the football pitch: the band from 0 to 100 m measures 7.9 degrees, then it steepens — 21.0 degrees from 200 to 300 m over 261 metres of ground, with the tour's steepest sustained stretch, 31.5 degrees, between 279 and 300 m. The steepest ground of the whole tour is in the forest.",
+      "The forest opens toward the southwest below Litlehesten's steep wall — 454 m where the line passes its foot — and you cross Steinselva at 536. The forest ends at 673 m after 2.75 km, with open ground from 683. Then you aim for the gentlest ridge formation toward Høgnosa: the band from 800 to 900 m measures 12.7 degrees, and from 900 to 1000, 14.0.",
+      "From Høgnosa the ridge runs south toward the summit — 1060 m where the line takes it, and the bands above 1000 measure 12.3 and 8.0 degrees before the final rise at 14.1. The cairn stands at 1215 m with Romsdalseggen toward Blånebba and Store Venjetinden to the south and Romsdalsfjorden to the north. The register point reads 1206; the summit search climbs to 1215.3 against a published 1216.",
+    ],
+    descent: [
+      "The normal way down is your own track, and the direction off the summit is north — the ridge toward Høgnosa is the only gentle sector up there, 4.2 degrees mean over 500 metres with 21.1 degrees as the steepest 60 m window. Everything else is steep: south and southwest fall 43.7 and 42.4 degrees mean with windows of 61.0 and 58.5, and the northeast side directly below the top has a 60 m window of 61.7 degrees only 30 to 90 metres out.",
+      "Fri Flyt documents steeper descents toward Jamnåbotn and Storhestvatnet, 30 to 45 degrees with aspects north to east-northeast. They belong to stable days, with the line chosen before you are standing in the slope.",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "KAST 2 – Challenging by Fri Flyt, steepest point 28 degrees on the normal route — and the finished line measures 31.5 degrees in its steepest stretch, down in the forest between 279 and 300 m. Above the treeline the ridge stays gentle: no band above 900 measures more than 14.1 degrees.",
+      },
+      {
+        title: "Lee slopes and cornices",
+        body: "The source points to avalanche danger on lee slopes after wind from the south and west, and to cornices on the east-facing slopes. The ridge you follow has the steep ground close beside it — the northeast side below the summit measures 61.7 degrees in its steepest window — so the line is good because it stays where it is, not because the surrounding terrain is kind.",
+      },
+      {
+        title: "Visibility",
+        body: "Route-finding is the source's own warning: in poor visibility holding the ridge formation is demanding, and the wrong direction off the summit puts you above slopes of 45 degrees or more. The direction down from the cairn is north, toward Høgnosa — worth fixing in your head before the fog arrives, not after.",
+      },
+      {
+        title: "Before you go",
+        body: "Mjølvafjellet lies in the Romsdal forecast region, an A-region with a daily avalanche bulletin through the season — check varsom.no. The January–April season is Fri Flyt's. Carry transceiver, probe and shovel. Note that ut.no describes the mountain from Venjesdalen — a different start from this one; the line here is Fri Flyt's, and the second source covers the mountain, not the line.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "6 m",
+      endLabel: "1215 m",
+      distanceLabel: "5.1 km",
+      caption: "1220 metres of ascent and 5.15 km from Isfjorden stadium via Steinselva and the ridge at Høgnosa, with the treeline at 673 m and the steepest ground — 31.5 degrees between 279 and 300 m — down in the forest.",
+    },
+  },
+  blanebba: {
+    intro:
+      "934 metres of ascent over 4.04 km from Venjesdalssetra to the edge that looks straight down into Romsdalen — from the cairn you have Trollveggen, Romsdalshorn and the Vengetind peaks in the front row. Fri Flyt rates the tour KAST 2 – Challenging with a steepest point of 40 degrees in the summit ridge; the line here takes the gentler alternative the source itself describes, via the col at 1245 m, and measures 22.2 degrees in its steepest hundred-metre band and 27.4 in its steepest sustained stretch. The edge you finally stand on falls 71 degrees — it is the view, and it is the hazard.",
+    ascent: [
+      "From the parking where the toll road up Venjesdalen ends, at Venjesdalssetra — OSM maps the setra as its own node, and DTM1 reads 418 m where Fri Flyt gives 380. You head south following the Romsdalseggen markers through cleared forest lanes on the north side of Tverrelva: the band from 400 to 500 m measures only 7.3 degrees, and the forest ends already at 553 m after 1.2 km, with open ground from 559.",
+      "Above the treeline the flat between Blånebba and Storhesten opens up — 681 m where the line crosses. From here you hold west in gentle climbing until you find the northeast flank leading up toward the lowest point on the ridge between Blånebba and point 1178. The flank is the steepest part of the tour: the band from 800 to 900 m measures 22.2 degrees over 269 metres of ground, and the steepest sustained stretch is here, 27.4 degrees between 972 and 999 m.",
+      "The col reads 1245 m on the terrain model, 230 metres west-northwest of the summit, and the main ridge is followed east from there to the cairn at 1317 — the band from 1200 to 1300 measures 17.2 degrees. Fri Flyt's direct line through the summit ridge is the other option, around 40 degrees by the source; the line here is the traverse he describes as the gentler choice around 1000 m. The register point reads 1272; the summit search climbs to 1317.0 against a published 1320 — a sharp top where the laser scan reads three metres below the published height, the same class as Rørnestinden.",
+    ],
+    descent: [
+      "The normal descent is the northeast flank you came up — 35 to 40 degrees by Fri Flyt, and measured at 36.2 degrees mean over 500 metres with 43.6 degrees as the steepest 60 m window 140 to 200 metres out. The ridge back northwest toward the col is the only gentle sector of the summit: 16.5 degrees mean.",
+      "The north ridge is the source's advanced alternative — 38 to 43 degrees with passages of 45, aspect north to east. And keep the cairn between you and Romsdalen when you turn: the south and southwest sides fall 71.4 and 72.0 degrees in the first 60 metres from the top. That edge is what you came to look over, not down.",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "KAST 2 – Challenging by Fri Flyt, hazards avalanche and cornice. The line measures 22.2 degrees in its steepest band and 27.4 in its steepest stretch — under the 30 where the big releases start, but the flank you cross between 800 and 1000 m sits in the lee of northwest wind, and the surrounding terrain is rimmed by rock bands with large consequence zones.",
+      },
+      {
+        title: "The cornices",
+        body: "The cornice exposure is to the north, and ut.no adds that the sections near the summit are narrow with large cornices. On the ridge from the col east to the cairn you walk with the north side corniced and the south side falling 71 degrees toward Romsdalen — stay on the line, especially in flat light.",
+      },
+      {
+        title: "The season",
+        body: "Fri Flyt gives March–May, ut.no December–April. The card carries Fri Flyt's, the primary source for the line — the disagreement is stated here rather than averaged away. The toll road up Venjesdalen is ploughed; the setra is the winter start for Blånebba and its neighbours.",
+      },
+      {
+        title: "Before you go",
+        body: "Blånebba lies in the Romsdal forecast region, an A-region with a daily avalanche bulletin through the season — check varsom.no. Carry transceiver, probe and shovel, and read the terrain yourself: a bulletin describes the region, not the flank you are standing in.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "418 m",
+      endLabel: "1317 m",
+      distanceLabel: "4.0 km",
+      caption: "934 metres of ascent and 4.04 km from Venjesdalssetra via the flat below Storhesten and the col at 1245 m, with the treeline at 553 m and the steepest ground — 27.4 degrees between 972 and 999 m — in the northeast flank.",
+    },
+  },
+  ospetinden: {
+    intro:
+      "1061 metres of ascent over 6.88 km from the toll booth at Venås to the pyramid at the head of Måndalen — the mountain you see rising ahead of you from the first step, says morotur. Fri Flyt rates the tour KAST 2 – Challenging with a steepest point around 35 degrees at the top of the bowl; the line here pulls out onto the northeast ridge from the flat at about 900 m, as the source recommends with avalanches in mind, and measures 22.4 degrees in its steepest 100 m band and 25.6 in its steepest sustained stretch. The summit itself is often snow-free — skis are usually left a few metres below it.",
+    ascent: [
+      "From the toll booth at the Venås farm at the head of Måndalen, 201 m, you follow the toll road to Venåssetra — the bands from 200 to 400 m measure 3.0 and 3.7 degrees over nearly three and a half kilometres of road, an even, easy climb up the valley. The setra is a good resting place on fine days, says morotur. The terrain model reads 393 m there; Fri Flyt's «ca 700» for the setra is wrong, and the register and the terrain model agree.",
+      "From the setra you head due west across the bog — 414 m — and cross Stavvasselva, then aim for the big east-facing bowl. The forest ends at 668 m after 4.68 km, with open ground from 681, and the bowl steepens evenly: 15.4 degrees from 600 to 700 m, then the tour's steepest band, 22.4 degrees from 700 to 800 over 225 metres of ground, with the steepest sustained stretch — 25.6 degrees — between 764 and 779 m.",
+      "From the flat at about 900 m — 948 where the line takes it — the usual move is out onto the northeast ridge, and that is what the line does: the band from 900 to 1000 measures only 8.5 degrees on the traverse out. The ridge takes you west toward the cairn — 19.0 degrees from 1100 to 1200 — with the view over the fjords toward Molde and the sea at your back. The register point reads 1203; the summit search climbs to 1227.5 against a published 1228. The top itself is often wind-scoured, bare rock and hardpack — the first 60 m window down the northeast ridge measures 45.3 degrees, so the skis stay where you left them.",
+    ],
+    descent: [
+      "The normal descent is the east flank: straight down gives an even 30 degrees according to Fri Flyt, and the measurement agrees — the east side measures 27.5 degrees mean over 500 metres with 31.9 degrees as the steepest 60 m window 70 to 130 metres out. From the flat at about 900 m you usually follow your own skin track.",
+      "The south flank is the alternative: 400 vertical metres of evenly steep skiing down toward Øspevatnet, 33 to 40 degrees by the source — and measured at 33.9 degrees mean with 37.3 as the steepest window directly below the summit. It belongs to stable days, and it ends somewhere other than your car.",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "KAST 2 – Challenging by Fri Flyt, steepest point around 35 degrees at the top of the bowl where the source's direct line goes. The line here takes the northeast ridge from the flat instead — the track the source itself sets with avalanches in mind after wind and snow from the north — and measures 25.6 degrees at its steepest.",
+      },
+      {
+        title: "The lee slopes",
+        body: "The source is concrete about the wind: the southeast and northeast ridges form lee slopes in southerly and northerly winds respectively. The bowl you cross faces east and loads after westerly weather — read the slopes above you through the whole climb from 700 to 900.",
+      },
+      {
+        title: "The summit",
+        body: "The top is often snow-free, bare rock and hardpack, and slipping is the source's own word for the hazard. The first 60 m window down the northeast ridge measures 45.3 degrees — skis are left a few metres below the summit, and the last metres go on foot.",
+      },
+      {
+        title: "Before you go",
+        body: "Øspetinden lies in the Romsdal forecast region, an A-region with a daily avalanche bulletin through the season — check varsom.no. The December–May season is Fri Flyt's. Carry transceiver, probe and shovel, and read the terrain yourself: a bulletin describes the region, not the flank you are standing in.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "201 m",
+      endLabel: "1228 m",
+      distanceLabel: "6.9 km",
+      caption: "1061 metres of ascent and 6.88 km from Venås via Venåssetra and the east-facing bowl, with the treeline at 668 m and the steepest ground — 25.6 degrees between 764 and 779 m — in the bowl.",
+    },
+  },
+  middagstinden: {
+    intro:
+      "1306 metres of ascent over 6.20 km from Herdslan in Innfjorden to an alpine summit that is steep on every side — Fri Flyt rates the tour KAST 3 – Complex with a steepest point of 39 degrees, and the normal route feels airy and exposed. The line measures 25.1 degrees in its steepest 100 m band and 30.0 in its steepest sustained stretch, which is the last metres up the west-facing summit flank. The ridge to it is often wind-scoured: skis on the pack, and crampons and ice axe may be needed. This is the most serious tour of the round, and it says so itself.",
+    ascent: [
+      "From Herdslan on the toll road toward Bøstølen — the register's Herdslan is a clearing by the road, and the bog flat where the cars stand reads 348.7 m against Fri Flyt's stated 360. The road is followed west along the south side of Berillvatnet, which is a regulated reservoir: the line rounds the whole lake on land, past its west end at 403 m, and crosses the river west of the lake at a suitable spot as the source says — 390 m where the line takes it. The band from 300 to 400 m measures 3.4 degrees over a kilometre and a half of road.",
+      "From the forest west of the lake — 410 m — the route climbs the stream gully toward the col east of point 943, at Tindevatnet. The forest ends at 740 m after 3.33 km, with open ground from 759, and the gully steepens evenly: 21.0 degrees from 500 to 600 m, 19.2 from 600 to 700 and the tour's steepest band, 25.1 degrees over 170 metres of ground, from 700 to 800. The upper part of the gully is steep and avalanche-prone — the source's own words, and this is where the tour demands its stability.",
+      "The col reads 937 m where the line takes it, with Tindevatnet at 804 below you to the west. From here the ridge is traversed east toward the summit — 17.3 degrees from 1000 to 1100, 21.3 from 1200 to 1300 — and it is not avalanche terrain to speak of, but often wind-scoured: skis on the pack, and crampons and ice axe may be needed. Where the ridge flattens northward the skis can often go back on along the west side.",
+      "The final west-facing flank before the summit is steep — 37 degrees by Fri Flyt, often wind-scoured, and short of space. The line measures 30.0 degrees in its steepest sustained stretch between 1549 and 1568 m, and the band from 1500 to 1600 measures 23.8. The cairn stands at 1568 m; the register point reads 1547, and the summit search climbs to 1568.3 against a published 1569. Norway has 49 mountains called Middagstinden — this is Rauma's.",
+    ],
+    descent: [
+      "The normal descent is the big west-facing flank from the summit, first between rock outcrops — the source points especially at the top hundred metres — with a traverse south before the skiing begins. About 700 metres of steep skiing down toward the col, then 500 metres through forest. The west side measures 31.6 degrees mean over 500 metres with 38.3 degrees as the steepest 60 m window 10 to 70 metres out — which agrees with the source's 37.",
+      "The Gullkoppen variants are the source's advanced alternatives: a traverse on the snow ramp east of Gullkoppen's steep face from about 1360 m with slopes up to 45 degrees, and a direct 50-degree flank on the south side of the sub-peak around 1300. Both belong to late winter with refrozen snow — and neither is the line on this map.",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "KAST 3 – Complex by Fri Flyt, steepest point 39 degrees. The terrain leaves no room for error on the exposed sections, says the source — the upper gully is steep and avalanche-prone, and avalanche terrain on slopes over 30 degrees is written into the route description itself. This is a tour for dry, stable winter snow or refrozen spring snow with cold nights.",
+      },
+      {
+        title: "The ridge and the flank",
+        body: "The ridge from the col is not avalanche terrain to speak of but often wind-scoured — skis on the pack, crampons and ice axe may be needed, and the final west-facing flank is short of space. The measurement says how narrow the margin is: from the cairn the south, southwest and southeast sides fall 75.7, 73.4 and 71.5 degrees in the first 60 metres, and only west is skiable — 31.6 degrees mean.",
+      },
+      {
+        title: "Rockfall",
+        body: "The source points at rock especially in the top hundred metres of the west flank, and late in the season the sun works the lower sections. An early start and a plan for where you turn around are part of the equipment here.",
+      },
+      {
+        title: "Before you go",
+        body: "Middagstinden lies in the Romsdal forecast region, an A-region with a daily avalanche bulletin through the season — check varsom.no. The January–April season is Fri Flyt's. Carry transceiver, probe and shovel in addition to crampons and ice axe — and read the terrain yourself: a bulletin describes the region, not the flank you are standing in.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "349 m",
+      endLabel: "1568 m",
+      distanceLabel: "6.2 km",
+      caption: "1306 metres of ascent and 6.20 km from Herdslan around Berillvatnet and up the stream gully to the col at Tindevatnet, with the treeline at 740 m and the steepest ground — 30.0 degrees between 1549 and 1568 m — in the west-facing summit flank.",
     },
   },
   auskjeret: {

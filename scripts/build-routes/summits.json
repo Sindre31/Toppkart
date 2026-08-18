@@ -982,5 +982,45 @@
     "summit_dtm": 1028.5,
     "claims": 1027,
     "stored_off_km": 0.01
+  },
+  "skarven": {
+    "name": "Skarven",
+    "lat": 62.60775,
+    "lng": 7.60201,
+    "summit_dtm": 1048.1,
+    "claims": 1048,
+    "stored_off_km": 0.04
+  },
+  "blanebba": {
+    "name": "Blånebba",
+    "lat": 62.52627,
+    "lng": 7.79275,
+    "summit_dtm": 1317.0,
+    "claims": 1320,
+    "stored_off_km": 0.03
+  },
+  "mjolvafjellet": {
+    "name": "Mjølvafjellet",
+    "lat": 62.54172,
+    "lng": 7.76405,
+    "summit_dtm": 1215.3,
+    "claims": 1216,
+    "stored_off_km": 0.03
+  },
+  "ospetinden": {
+    "name": "Øspetinden",
+    "lat": 62.51586,
+    "lng": 7.25081,
+    "summit_dtm": 1227.5,
+    "claims": 1228,
+    "stored_off_km": 0.03
+  },
+  "middagstinden": {
+    "name": "Middagstinden",
+    "lat": 62.46024,
+    "lng": 7.44099,
+    "summit_dtm": 1568.3,
+    "claims": 1569,
+    "stored_off_km": 0.03
   }
 }

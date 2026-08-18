@@ -2124,5 +2124,126 @@
    "**Korridoren er lagd sør om tjernklynga på 785–792 moh.** Dei to fyrste linene kryssa høvesvis 140 og 90 meter vatn i eit belte med minst ti kartlagde tjern rett under toppryggen — nettopp det flate, ulendte partiet Fri Flyt skildrar med «små bekkedaler på tvers av fjellet». Omvegen sør om heile klynga kostar 0,17 km, gir 0 meter på vatn og senkar brattaste samanhengande parti frå 26,0 til 23,7 grader."
   ],
   "notes": "Fri Flyt: «Fra parkeringen går du rett opp til du kommer over skogen i nord-nordvestlig retning. Følg så vestover på rabbene til du naturlig svinger mer rett mot toppen. Etter at du har kommet igjennom skogen kommer du til et flatere parti som er noe ulendt, med små bekkedaler på tvers av fjellet. Herfra ser du ikke selve Tortenviktinden, men toppen ligger rett bak det høyeste punktet du ser. Gå rett mot dette, og følg deretter den slake helningen opp det siste stykket til toppen.» NED er same ruta. Visit Helgeland fører same turen med 5,2 km, 1 025 høgdemeter og 3–4 timar éin veg, og ei alternativrute på 4,3 km og 1 005 høgdemeter med brattare oppstigning og mindre traversering på nedturen."
+ },
+ "skarven": {
+  "season": "des–apr",
+  "aspect": "SØ",
+  "grade": 2,
+  "gradeReason": "Grad 2. Fri Flyt gir turen KAST 1 – Enkelt med bratteste punkt under 30 grader, og ut.no kaller den en klassiker også for nybegynnere — men den ferdige linja måler 20,5 grader i det bratteste hundremetersbeltet og 27,7 i det bratteste sammenhengende partiet, over det grad 1-turene i appen måler (Husfjellet 17,1/19,6, Melshornet 17,8/21,7), og østflanken under fortoppen er skredutsatt i kildens egne ord. Grad 2, med KAST-en notert — Ranten-regelen andre veien.",
+  "roadClosedInWinter": false,
+  "teaserNo": "740 høydemeter fra bomvegen i Skorgedalen til en av Romsdalens store klassikere: myra ved Kjerringhaugen og Skorgedalsbu, sør for topp 588, og ryggen over den sørlige fortoppen til fjordutsikten på varden.",
+  "teaserEn": "740 metres of ascent from the toll road in Skorgedalen to one of Romsdalen's great classics: the bog at Kjerringhaugen and the Skorgedalsbu hut, south of point 588, and the ridge over the southern fore-summit to the fjord view at the cairn.",
+  "hazardNotes": "Fri Flyt: KAST 1 – Enkelt, bratteste punkt under 30 grader. Egen advarsel: «Ikke kryss østflanken under Skarvens fortopp. Dette er et av få områder på denne siden av fjellet som kan være skredutsatt.» Skredfare i de øvre delene etter vind fra nordvest; soleksponert på vårdager. Nedfartene utenom normalveien er brattere: NM-løypa fra 1940 måler 33 grader over 100 m (1020–920 moh), Vasslia direkte 40–42 grader med passasjer på 45.",
+  "sources": [
+   "https://www.friflyt.no/topptur/skiturer-romsdalen/skarven-skorgedalen",
+   "https://ut.no/turforslag/115288/skarven-topptur-med-fjordutsikt",
+   "https://peakbook.org/no/peakbook-element/2888/no/Skarven.html"
+  ],
+  "confidence": "high",
+  "corrections": [
+   "Fri Flyts publiserte GPS-punkt (UTM33 120841.846/6963637.103 → 62.60750/7.60164) ligger 13 m fra registerets Skarven (Fjell, Rauma, 62.60740/7.60177) — navn og publisert posisjon faller sammen, og toppsøket løser 1048,1 mot publiserte 1048.",
+   "Startstedet er den kartlagte parkeringsplassen i Skorgedalen (OSM amenity=parking på Skorgedalsveien, 62.59699/7.64468), bomveg fra Skorga på E136. DTM1 leser 307,2 moh der — 1048 − 307 = 741, som forliker Fri Flyts 750 høydemeter og ut.no sine 732 på én gang.",
+   "Ruta reproduserer på terrenget: myra ved Kjerringhaugen og Skorgedalsbu (DNT-hytta, 62.59683/7.63527), sør for topp 588, svak ryggformasjon på 572 moh, den sørlige fortoppen på 788 og ryggen videre på 892 til topps.",
+   "Fri Flyts egen advarsel hører hjemme i guiden: «Ikke kryss østflanken under Skarvens fortopp. Dette er et av få områder på denne siden av fjellet som kan være skredutsatt.»",
+   "Forsket som grad 1 på Fri Flyts KAST 1 – Enkelt; skipper som grad 2 fordi den målte linja (20,5° bratteste band, 27,7° bratteste parti) ligger over appens grad 1-turer. Målingen er sjekken for graden, som i Oslo-runden."
+  ],
+  "notes": ""
+ },
+ "blanebba": {
+  "season": "mar–mai",
+  "aspect": "NØ",
+  "grade": 3,
+  "gradeReason": "KAST 2 – Utfordrende hos Fri Flyt, bratteste punkt 40 grader i toppryggen — med et slakere alternativ ved å traversere nordover rundt 1000 moh. Nedfarten på nordøstflanken måler 35–40 grader. Skavler på nordsiden og heng med steinutslag under gjør at feil koster mye her.",
+  "roadClosedInWinter": false,
+  "teaserNo": "930 høydemeter fra Venjesdalssetra til kanten som ser rett ned i Romsdalen: Romsdalseggen-merkinga langs Tverrelva, flata under Storhesten, nordøstflanken til skaret på 1245 — og hovedryggen østover til varden.",
+  "teaserEn": "930 metres of ascent from Venjesdalssetra to the edge that looks straight down into Romsdalen: the Romsdalseggen markers along Tverrelva, the flat below Storhesten, the northeast flank to the 1245 m col — and the main ridge east to the cairn.",
+  "hazardNotes": "Fri Flyt: KAST 2 – Utfordrende, faremomenter skred og skavl, bratteste punkt 40 grader. Skredterreng i toppryggen og flankene; skavleksponering mot nord; terrenget er omkranset av steinheng med store konsekvensområder. Nordryggen (den avanserte nedfarten) måler 38–43 grader med passasjer på 45.",
+  "sources": [
+   "https://www.friflyt.no/topptur/skiturer-romsdalen/blanebba",
+   "https://ut.no/turforslag/112781/blanebba-1300-meter-rett-ned-i-romsdalen",
+   "https://www.randofolk.no/artikler/topptur-til-blanebba-i-isfjorden/"
+  ],
+  "confidence": "high",
+  "corrections": [
+   "Registerets Blånebba (Fjell, Rauma, 62.52646/7.79221) leser 1272 på DTM1; toppsøket klatrer til 1317,0 på 62.52627/7.79275 mot publiserte 1320 — et skarpt topp-punkt der laserskannet leser 3 m under den publiserte høyden, samme klasse som Rørnestinden og Rombakstøtta.",
+   "Startstedet «Venjedalssetra (380 moh)» løser seg som registerets Venjesdalssetra (Seter/støl, 62.53610/7.83054); parkeringsflata like nord for setra leser 391 moh på DTM1. Bomveg fra Isfjorden («ta av opp mot Liabygda og hold høgre oppover dalen», ut.no).",
+   "Fri Flyt gir sesongen mars–mai, ut.no desember–april. Kortet bærer Fri Flyts, som er primærkilden — uenigheten er notert her heller enn midlet.",
+   "Skaret mellom Blånebba og punkt 1178 leser 1245 moh på DTM1, 230 m VNV for toppen — «det laveste punktet på ryggen» i Fri Flyts tekst — og hovedryggen følges østover derfra til topps, slik teksten sier.",
+   "Fri Flyts to nedfarter er begge dokumentert: nordøstflanken (normalveien, 35–40 grader) og nordryggen (38–43 med passasjer på 45). Kortet bærer normalveien."
+  ],
+  "notes": ""
+ },
+ "mjolvafjellet": {
+  "season": "jan–apr",
+  "aspect": "N",
+  "grade": 2,
+  "gradeReason": "KAST 2 – Utfordrende hos Fri Flyt, men oppturen måler bare 28 grader på det bratteste — det som holder graden er lengden (1200 høydemeter fra fjorden) og de bratte nedfartsalternativene (30–45 grader) på begge sider av normalveien.",
+  "roadClosedInWinter": false,
+  "teaserNo": "1220 høydemeter fra fjorden: traktorvegen fra Isfjorden stadion, skogen under Litlehesten, over Steinselva og den slake ryggen om Høgnosa — så sørover til toppen som henger over Romsdalen.",
+  "teaserEn": "1220 metres of ascent from the fjord: the tractor road from Isfjorden stadium, the forest below Litlehesten, across Steinselva and the gentle ridge past Høgnosa — then south to the summit hanging over Romsdalen.",
+  "hazardNotes": "Fri Flyt: KAST 2 – Utfordrende, bratteste punkt 28 grader på normalveien. Skredfare i leheng etter vind fra sør og vest; skavler på østvendte heng; bratt terreng tett inntil den trygge linja, og rutefinning krevende i dårlig sikt. Nedfartsalternativene mot Jamnåbotn og Storhestvatnet måler 30–45 grader.",
+  "sources": [
+   "https://www.friflyt.no/topptur/skiturer-romsdalen/mjolvafjellet",
+   "https://peakbook.org/no/peakbook-element/6995/no/Mj%C3%B8lvafjellet.html",
+   "https://ut.no/turforslag/1112155762"
+  ],
+  "confidence": "medium",
+  "corrections": [
+   "Registerets Mjølvafjellet (Fjell, Rauma, 62.54165/7.76342) leser 1206 på DTM1; toppsøket klatrer til 1215,3 på 62.54172/7.76405 mot publiserte 1216.",
+   "Startstedet «Isfjorden stadion» er kartlagt i OSM (leisure=pitch, 62.57236/7.80148) og leser 5,7 moh med terrengklassen SportIdrettPlass — Glitregga-tilfellet igjen, der guidebok, kartobjekt og terrengmodell er enige. 1215 − 6 = 1209 forliker Fri Flyts 1200 høydemeter.",
+   "ut.no beskriver Mjølvafjellet fra Venjesdalen — en annen start enn Fri Flyts. Fri Flyts linje fra stadion er den kortet bærer; ut.no bekrefter toppen og utsikten, Peakbook høyden. Andrekilden dekker altså fjellet, ikke linja, og turen skipper på confidence medium med den begrensningen sagt høyt.",
+   "Ruta reproduserer på terrenget: traktorvegen i søraustlia (112 moh), foten av Litlehesten (454), Steinselva-kryssingen (536 — registerets Steinselva, Bekk, 62.55994/7.78013), ryggen mot Høgnosa (842 — registerets Høgnosa, Haug, 62.55890/7.76328) og ryggen sørover (1060) til topps.",
+   "Aspekt N fra route_metrics — normalveien forlater toppen nordover mot Høgnosa, og Fri Flyt navngir ingen enkelt himmelretning for normalnedfarten (alternativene spenner N–ØNØ). Der ingenting er navngitt, bestemmer målingen."
+  ],
+  "notes": ""
+ },
+ "ospetinden": {
+  "season": "des–mai",
+  "aspect": "Ø",
+  "grade": 3,
+  "gradeReason": "KAST 2 – Utfordrende hos Fri Flyt, bratteste punkt ca. 35 grader øverst i botnen. Østflanken gir jevnt 30 grader nedkjøring; toppen er ofte snøfri med bart berg og hardpakke, og nordøstryggen er den trygge linja etter vind og snø fra nord.",
+  "roadClosedInWinter": false,
+  "teaserNo": "1060 høydemeter fra bomkassa på Venås: setervegen til Venåssetra, myra over Stavvasselva, den store østvendte botnen — og nordøstryggen til pyramiden innerst i Måndalen.",
+  "teaserEn": "1060 metres of ascent from the toll booth at Venås: the summer-farm road to Venåssetra, the bog across Stavvasselva, the big east-facing bowl — and the northeast ridge to the pyramid at the head of Måndalen.",
+  "hazardNotes": "Fri Flyt: KAST 2 – Utfordrende, bratteste punkt ca. 35 grader ved toppen av botnen. Nordøstryggen er den tryggeste linja i forhold til skred; sørøst- og nordøstryggene danner leheng i henholdsvis sørlig og nordlig vind. Toppen er ofte snøfri — bart berg og hardpakke, glifare, skiene settes vanligvis igjen noen meter under toppen. Sørflanken (nedfartsalternativet mot Øspevatnet) er jevnt bratt, 33–40 grader.",
+  "sources": [
+   "https://www.friflyt.no/topptur/skiturer-romsdalen/turbeskrivelse-oespetinden",
+   "https://morotur.no/tur/OEspetinden"
+  ],
+  "confidence": "high",
+  "corrections": [
+   "Registerets Øspetinden (Topp, Rauma, 62.51559/7.25049) leser 1203 på DTM1; toppsøket klatrer til 1227,5 på 62.51586/7.25081 mot publiserte 1228.",
+   "Startstedet er bomkassa ved gården Venås innerst i Måndalen (Nominatim: Venås, hamlet, 62.51025/7.35844, 173 moh på dyrket mark; bomvegen opp leser 201 moh der parkeringa ligger). 1228 − 201 = 1027 forliker Fri Flyts 1030 høydemeter.",
+   "Morotur (Møre og Romsdal fylkes turportal) beskriver samme linje med samme kjede av navn: Venås, bomvegen til Venåssetra, myra og elvekryssinga, den østvendte botnen, og nordøstryggen til varden — en genuint uavhengig andrekilde på selve linja.",
+   "Ruta reproduserer på terrenget: Venåssetra (registeret: Seter/støl, 62.50809/7.30469, DTM1 393 mot Fri Flyts «ca 700» — Fri Flyts setertall er feil, terrengmodellen og registeret er enige), myra og Stavvasselva (414), østbotnen (692), flata på ca. 900 (948 der linja går) og nordøstryggen (1035).",
+   "Fri Flyts eget sikkerhetsråd bæres videre: fra flata ved ca. 900 moh trekker man ut mot nordøstryggen for den tryggeste linja i forhold til skred, og selve toppen er ofte snøfri — skiene settes igjen noen meter under toppen."
+  ],
+  "notes": ""
+ },
+ "middagstinden": {
+  "season": "jan–apr",
+  "aspect": "V",
+  "grade": 4,
+  "gradeReason": "KAST 3 – Komplekst hos Fri Flyt, bratteste punkt 39 grader. En alpin topp som er bratt på alle kanter; normalveien kjennes luftig og eksponert, ryggen er ofte avblåst med ski på sekken, og stegjern og isøks kan trengs. Den vestvendte toppflanken måler 37 grader med liten plass.",
+  "roadClosedInWinter": false,
+  "teaserNo": "1310 høydemeter fra Herdslan i Innfjorden: vegen langs Berillvatnet, bekkedalen til skaret ved Tindevatnet — og en ofte avblåst egg med ski på sekken før den vestvendte toppflanken.",
+  "teaserEn": "1310 metres of ascent from Herdslan in Innfjorden: the road along Berillvatnet, the stream gully to the col at Tindevatnet — and an often wind-scoured ridge, skis on the pack, before the west-facing summit flank.",
+  "hazardNotes": "Fri Flyt: KAST 3 – Komplekst, bratteste punkt 39 grader. Øvre del av bekkedalen mot skaret er bratt og skredutsatt. Ryggen er lite skredutsatt men ofte avblåst — ski på sekken, stegjern og isøks kan trengs. Steinutslag særlig de øverste 100 metrene av vestflanken; skredterreng i heng over 30 grader; nedfartsalternativene ved Gullkoppen måler 45–50 grader, med rampa øst for Gullkoppens vegg fra rundt 1360 moh. Berillvatnet er regulert — hold vegen på sørsiden.",
+  "sources": [
+   "https://www.friflyt.no/topptur/skiturer-romsdalen/turbeskrivelse-middagstinden-1569",
+   "https://peakbook.org/no/tour/155370/Middagstinden.html",
+   "http://geirmhafs.blogspot.com/2019/07/middagstinden-1569-innfjorden-i-romsdal.html"
+  ],
+  "confidence": "medium",
+  "corrections": [
+   "Registerets Middagstinden (Fjell, Rauma, 62.46028/7.44046) leser 1547 på DTM1; toppsøket klatrer til 1568,3 på 62.46024/7.44099 mot publiserte 1569. 49 fjell i landet bærer navnet; kommunen skiller dem.",
+   "Startstedet «Herdslan (360 moh)» på bomvegen mot Bøstølen løser seg: registerets Herdslan (Slette, 62.44149/7.46942) leser 290 i skog, men myrflata der bilene står, 400 m lenger sørvest på vegen (62.4405/7.4590), leser 348,7 — innenfor 11 m av Fri Flyts 360, og 1569 − 349 = 1220 forliker Fri Flyts 1200 høydemeter.",
+   "Berillvatnet er regulert (DTM1-terrengklasse InnsjøRegulert på 371 moh). Ruta følger vegen på sørsiden av vannet — på land — og guiden må si det, for det er nøyaktig klassen feil check_ground er bygget for å finne.",
+   "Andrekilden er tynnere enn primærkilden: Peakbook bærer turartikler på normalveien og bekrefter høyden, og to turblogger (geirmhafs, carinastokke) beskriver samme linje fra Berill/Bøstølen-siden — men ingen publiserer en fullstendig rutebeskrivelse uavhengig av Fri Flyt. Turen skipper på confidence medium med den begrensningen sagt høyt.",
+   "Fri Flyts egne krav bæres videre: øvre del av bekkedalen er bratt og skredutsatt; ryggen er ofte avblåst — skiene på sekken, stegjern og isøks kan trengs; den siste vestvendte flanken før toppen er bratt (37 grader), ofte avblåst, og har liten plass.",
+   "check_ground: den første løste linja krysset 180 m av det regulerte Berillvatnet inntil 87 m fra land; korridoren ble pinnet på sørbredden og løst på nytt — ingen verteks på vann.",
+   "Tredje og siste omruting: krysningen satt igjen ved vestarmen/elveosen; et bredere sving vest for vatnet (403/390/410 moh) tok linja helt av vannet — check_ground svarer 0 m på vann, og kortet bærer den ferdige linjas 1310."
+  ],
+  "notes": ""
  }
 }

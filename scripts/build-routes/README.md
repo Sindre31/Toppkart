@@ -3753,6 +3753,85 @@ with a twelve-case table covering both directions including *varemerket* and
 *kjennemerket*. Rødtinden's genuine lysløype claim and Varden's disclosure note
 both still behave.
 
+## The Romsdal round
+
+Five classics around Isfjorden, Skorgedalen, Måndalen and Innfjorden, all from
+Fri Flyt's Romsdalen index — the region that held one tour, Kirketaket, in an
+area with forty-plus published route descriptions. The four conditions of the
+Sunnmøre round hold: a full Fri Flyt route description, a start at a road, an
+independent second source, and every point resolving in the place-name register
+and measuring on DTM1. All five summits resolve within 3 m of their published
+heights, and all five sit in Varsom's **Romsdal** region — an A-region with a
+daily forecast, queried per summit coordinate rather than assumed.
+
+| tour | start | summit | gain | km | steepest 100 m band | steepest 30 m | grade |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Middagstinden | 349 | 1568 | 1306 | 6.2 | 25.1° | 30.0° | 4 |
+| Mjølvafjellet | 6 | 1215 | 1220 | 5.1 | 21.0° | 31.5° | 2 |
+| Øspetinden | 201 | 1228 | 1061 | 6.9 | 22.4° | 25.6° | 3 |
+| Blånebba | 418 | 1317 | 934 | 4.0 | 22.2° | 27.4° | 3 |
+| Skarven | 307 | 1048 | 744 | 3.3 | 20.5° | 27.7° | 2 |
+
+### What the checks caught
+
+**Blånebba's trailhead was 350 m off the road.** The corridor first pinned the
+Venjesdalen parking at a DTM-probed flat at 391 moh; `check_new_corridors` found
+no mapped road or car park within 250 m of it. OSM's Venjesdalssetra node
+(3726780487) is where the toll road actually ends — 418 moh on DTM1 against Fri
+Flyt's stated 380, a difference recorded rather than smoothed — and the route
+was re-solved from the mapped point. The routed gain moved 942 → 934.
+
+**Middagstinden crossed the regulated Berillvatnet three times before it
+didn't.** The route follows the road along the lake's south side, and
+Berillvatnet reads `InnsjøRegulert` on DTM1 — the exact class of water
+`check_ground` exists for. The first solve cut 180 m across the ice up to 87 m
+from shore; two south-shore waypoints cut that to 45 m at the west arm, where
+the line clipped the inlet delta; a wider berth west of the lake (403, 390 and
+410 moh, with the river crossing where the source puts it) took it to **0 m on
+water**. Every band figure in the guide was rewritten as the line moved — the
+same lesson the Senja round recorded, and `check_bands` caught the two figures
+that had drifted between reroutes.
+
+**Skarven was researched as grade 1 and ships as grade 2.** Fri Flyt gives
+KAST 1 – Enkelt and ut.no calls it a beginners' classic, but the finished line
+measures 20.5° in its steepest band and 27.7° in its steepest stretch — above
+what the app's grade 1 tours measure (Husfjellet 17.1/19.6, Melshornet
+17.8/21.7) — and the east flank below the fore-summit is avalanche-prone in the
+source's own words. The measurement is the check for the grade, the Ranten rule
+in the other direction.
+
+**Fri Flyt's «ca 700 moh» for Venåssetra is wrong.** The register's Venåssetra
+(62.50809/7.30469) reads 393 moh on DTM1, and the routed profile agrees — the
+setra sits 2.7 km up the toll road from Venås at 201, not halfway up the
+mountain. The guide states the measured height and says the source's figure is
+wrong, which is what `corrections` is for.
+
+**Two second sources are thinner than the rule wants, and the records say so.**
+ut.no describes Mjølvafjellet from Venjesdalen — a different start from Fri
+Flyt's Isfjorden stadion — so the second source covers the mountain, not the
+line, and Peakbook corroborates the height. Middagstinden has Peakbook tour
+articles and two trip blogs on the same line but no independent full route
+description. Both ship at `confidence: medium` on the Lonketinden footing, and
+both guides state the limitation.
+
+**Blånebba's season is published twice and differently.** Fri Flyt gives
+March–May, ut.no December–April. The card carries the primary source's and the
+guide records the disagreement instead of averaging it.
+
+### What was left out
+
+**Storgrovfjellet** (1629) is a spring tour from the Trollstigen plateau at
+700 moh — a road that opens in late May at best and spent two recent seasons
+closed for rockfall securing. A start nobody can drive to for most of the ski
+season is not a start; it waits for the road's schedule to settle.
+**Kvitfjellet** (1381) starts on Vistdalsheia, where neither source says
+whether the road over the pass is ploughed in the December–April season the
+tour claims; a trailhead whose winter access cannot be confirmed fails the
+road condition. **Svartvasstinden** (1259) needs crampons, ice axe and belay
+gear for an exposed ridge and a short climbing step to reach its main summit —
+Fri Flyt's own description — and a line whose last move is a belayed scramble
+is not a ski card.
+
 ## Network
 
 Everything is public and unauthenticated:

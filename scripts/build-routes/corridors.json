@@ -6030,5 +6030,279 @@
     "notes": "Fri Flyt: KAST ikkje klassifisert. Faremoment: «Grøveldalen har høye og bratte sva på begge sider som kan løsne, særlig om våren.» Ruta hans: frå parkeringa rett opp til over skogen i nord-nordvestleg retning, så vestover på rabbane til du naturleg svingar mot toppen; etter skogen kjem eit flatare parti som er noko ulendt med små bekkedalar på tvers; toppen ligg rett bak det høgaste punktet du ser. Visit Helgeland fører same ruta med 5,2 km, 1 025 høgdemeter og 3–4 timar éin veg, graden «Challenging, long», og ei alternativ rute på 4,3 km og 1 005 høgdemeter med brattare oppstigning."
    }
   ]
+ },
+ "skarven": {
+  "routes": [
+   {
+    "id": "normalveien",
+    "name": "Normalveien fra Skorgedalen",
+    "description": "Fra parkeringsplassens nordvestre hjørne over flata (myr) nord for Kjerringhaugen, opp bjørkeskogen og rundt på sørsiden av topp 588, så langs svak ryggformasjon til Skarvens sørlige fortopp og videre langs ryggen til topps",
+    "trailhead": {
+     "name": "Skorgedalen",
+     "lat": 62.59699,
+     "lng": 7.64468,
+     "elevation_m": 307.0,
+     "fullName": "Skorgedalen"
+    },
+    "waypoints": [
+     {
+      "name": "myra nord for Kjerringhaugen",
+      "lat": 62.5982,
+      "lng": 7.635,
+      "elevation_m": 350.52
+     },
+     {
+      "name": "sør for topp 588",
+      "lat": 62.601,
+      "lng": 7.625,
+      "elevation_m": 535.0
+     },
+     {
+      "name": "ryggformasjonen",
+      "lat": 62.6,
+      "lng": 7.618,
+      "elevation_m": 572.0
+     },
+     {
+      "name": "den sørlige fortoppen",
+      "lat": 62.6035,
+      "lng": 7.607,
+      "elevation_m": 788.0
+     },
+     {
+      "name": "ryggen mot toppen",
+      "lat": 62.6055,
+      "lng": 7.6045,
+      "elevation_m": 892.0
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: KAST 1 – Enkelt, bratteste punkt under 30 grader. Egen advarsel: «Ikke kryss østflanken under Skarvens fortopp. Dette er et av få områder på denne siden av fjellet som kan være skredutsatt.» Skredfare i de øvre delene etter vind fra nordvest; soleksponert på vårdager. Nedfartene utenom normalveien er brattere: NM-løypa fra 1940 måler 33 grader over 100 m (1020–920 moh), Vasslia direkte 40–42 grader med passasjer på 45."
+   }
+  ]
+ },
+ "blanebba": {
+  "routes": [
+   {
+    "id": "normalveien",
+    "name": "Normalveien fra Venjesdalssetra",
+    "description": "Fra parkeringa ved Venjesdalssetra sørover etter Romsdalseggen-merkinga gjennom rydda skoggater på nordsida av Tverrelva, over flata mellom Blånebba og Storhesten, vestover i slak stigning til nordøstflanken som leder opp til det laveste punktet på ryggen mellom Blånebba og punkt 1178, og hovedryggen østover til topps",
+    "trailhead": {
+     "name": "Venjesdalssetra",
+     "lat": 62.5361,
+     "lng": 7.83054,
+     "elevation_m": 418.2,
+     "fullName": "Venjesdalssetra (parkeringa ved setra)"
+    },
+    "waypoints": [
+     {
+      "name": "Romsdalseggen-merkinga, nordsida av Tverrelva",
+      "lat": 62.531,
+      "lng": 7.822,
+      "elevation_m": 427.0
+     },
+     {
+      "name": "flata mellom Blånebba og Storhesten",
+      "lat": 62.532,
+      "lng": 7.808,
+      "elevation_m": 681.0
+     },
+     {
+      "name": "nordøstflanken",
+      "lat": 62.529,
+      "lng": 7.799,
+      "elevation_m": 997.0
+     },
+     {
+      "name": "skaret mellom Blånebba og punkt 1178",
+      "lat": 62.528,
+      "lng": 7.789,
+      "elevation_m": 1245.0
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: KAST 2 – Utfordrende, faremomenter skred og skavl, bratteste punkt 40 grader. Skredterreng i toppryggen og flankene; skavleksponering mot nord; terrenget er omkranset av steinheng med store konsekvensområder. Nordryggen (den avanserte nedfarten) måler 38–43 grader med passasjer på 45."
+   }
+  ]
+ },
+ "mjolvafjellet": {
+  "routes": [
+   {
+    "id": "normalveien",
+    "name": "Normalveien fra Isfjorden stadion",
+    "description": "Fra parkeringa ved Isfjorden stadion opp traktorvegen i søraustlia forbi fotballbanen, gjennom skogen som åpner seg mot sørvest under Litlehestens bratte vegg, over Steinselva, så mot den slakeste ryggformasjonen mot Høgnosa og sørover langs ryggen til Mjølvafjellets topp",
+    "trailhead": {
+     "name": "Isfjorden stadion",
+     "lat": 62.57236,
+     "lng": 7.80148,
+     "elevation_m": 6.0,
+     "fullName": "Isfjorden stadion"
+    },
+    "waypoints": [
+     {
+      "name": "traktorvegen i søraustlia",
+      "lat": 62.568,
+      "lng": 7.792,
+      "elevation_m": 112.0
+     },
+     {
+      "name": "under Litlehesten",
+      "lat": 62.562,
+      "lng": 7.786,
+      "elevation_m": 454.0
+     },
+     {
+      "name": "Steinselva",
+      "lat": 62.55994,
+      "lng": 7.78013,
+      "elevation_m": 536.0
+     },
+     {
+      "name": "ryggen mot Høgnosa",
+      "lat": 62.557,
+      "lng": 7.766,
+      "elevation_m": 842.0
+     },
+     {
+      "name": "ryggen sørover",
+      "lat": 62.549,
+      "lng": 7.762,
+      "elevation_m": 1060.0
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: KAST 2 – Utfordrende, bratteste punkt 28 grader på normalveien. Skredfare i leheng etter vind fra sør og vest; skavler på østvendte heng; bratt terreng tett inntil den trygge linja, og rutefinning krevende i dårlig sikt. Nedfartsalternativene mot Jamnåbotn og Storhestvatnet måler 30–45 grader."
+   }
+  ]
+ },
+ "ospetinden": {
+  "routes": [
+   {
+    "id": "ostflanken",
+    "name": "Østflanken fra Venås",
+    "description": "Fra bomkassa ved gården Venås etter bomveien til Venåssetra, rett vest over myra og over Stavvasselva, opp den store østvendte botnen med jevnt stigende bratthet, fra flata på ca. 900 moh ut mot nordøstryggen, og ryggen til topps",
+    "trailhead": {
+     "name": "Venås",
+     "lat": 62.5095,
+     "lng": 7.352,
+     "elevation_m": 201.0,
+     "fullName": "Venås"
+    },
+    "waypoints": [
+     {
+      "name": "Venåssetra",
+      "lat": 62.50809,
+      "lng": 7.30469,
+      "elevation_m": 393.0
+     },
+     {
+      "name": "myra og Stavvasselva",
+      "lat": 62.508,
+      "lng": 7.292,
+      "elevation_m": 414.0
+     },
+     {
+      "name": "østbotnen",
+      "lat": 62.512,
+      "lng": 7.272,
+      "elevation_m": 692.0
+     },
+     {
+      "name": "flata på ca. 900 moh",
+      "lat": 62.514,
+      "lng": 7.262,
+      "elevation_m": 948.0
+     },
+     {
+      "name": "nordøstryggen",
+      "lat": 62.5175,
+      "lng": 7.256,
+      "elevation_m": 1035.0
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: KAST 2 – Utfordrende, bratteste punkt ca. 35 grader ved toppen av botnen. Nordøstryggen er den tryggeste linja i forhold til skred; sørøst- og nordøstryggene danner leheng i henholdsvis sørlig og nordlig vind. Toppen er ofte snøfri — bart berg og hardpakke, glifare, skiene settes vanligvis igjen noen meter under toppen. Sørflanken (nedfartsalternativet mot Øspevatnet) er jevnt bratt, 33–40 grader."
+   }
+  ]
+ },
+ "middagstinden": {
+  "routes": [
+   {
+    "id": "normalveien",
+    "name": "Normalveien fra Herdslan",
+    "description": "Fra Herdslan etter vegen på sørsiden av Berillvatnet, over elva på egnet sted og opp bekkedalen mot skaret øst for punkt 943 ved Tindevatnet, så østover langs ryggen — ofte avblåst, ski på sekken — og opp den vestvendte flanken til topps",
+    "trailhead": {
+     "name": "Herdslan",
+     "lat": 62.4405,
+     "lng": 7.459,
+     "elevation_m": 349.0,
+     "fullName": "Herdslan"
+    },
+    "waypoints": [
+     {
+      "name": "sørbredden av Berillvatnet, austenden",
+      "lat": 62.439,
+      "lng": 7.455,
+      "elevation_m": 369.7
+     },
+     {
+      "name": "vegen inn langs Berillvatnet",
+      "lat": 62.4382,
+      "lng": 7.452,
+      "elevation_m": 401.8
+     },
+     {
+      "name": "vegen på sørsiden av Berillvatnet",
+      "lat": 62.438,
+      "lng": 7.44,
+      "elevation_m": 411.0
+     },
+     {
+      "name": "vestenden av Berillvatnet",
+      "lat": 62.437,
+      "lng": 7.427,
+      "elevation_m": 403.1
+     },
+     {
+      "name": "over elva vest for vatnet",
+      "lat": 62.4372,
+      "lng": 7.4245,
+      "elevation_m": 389.7
+     },
+     {
+      "name": "skogen vest for vatnet",
+      "lat": 62.4412,
+      "lng": 7.423,
+      "elevation_m": 409.6
+     },
+     {
+      "name": "bekkedalen mot skaret",
+      "lat": 62.446,
+      "lng": 7.423,
+      "elevation_m": 662.0
+     },
+     {
+      "name": "skaret øst for punkt 943, ved Tindevatnet",
+      "lat": 62.4545,
+      "lng": 7.42,
+      "elevation_m": 937.0
+     },
+     {
+      "name": "ryggen østover",
+      "lat": 62.457,
+      "lng": 7.43,
+      "elevation_m": 1214.0
+     },
+     {
+      "name": "vestflanken under toppen",
+      "lat": 62.4595,
+      "lng": 7.437,
+      "elevation_m": 1444.0
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: KAST 3 – Komplekst, bratteste punkt 39 grader. Øvre del av bekkedalen mot skaret er bratt og skredutsatt. Ryggen er lite skredutsatt men ofte avblåst — ski på sekken, stegjern og isøks kan trengs. Steinutslag særlig de øverste 100 metrene av vestflanken; skredterreng i heng over 30 grader; nedfartsalternativene ved Gullkoppen måler 45–50 grader. Berillvatnet er regulert — hold vegen på sørsiden."
+   }
+  ]
  }
 }

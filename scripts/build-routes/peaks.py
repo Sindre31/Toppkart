@@ -267,4 +267,16 @@ PEAKS = [
     # figure this round had already found to be the weaker of the two.
     ("lukttinden", "Lukttinden", ["Vefsn"], 1348, 65.99044, 13.54468),
     ("tortenviktinden", "Tortenviktinden", ["Lurøy"], 1027, 66.34217, 13.23361),
+    #
+    # — the Romsdal round: five classics around Isfjorden, Skorgedalen, Måndalen
+    #   and Innfjorden, all from Fri Flyt's Romsdalen index. The register point
+    #   for Skarven falls within 13 m of Fri Flyt's published UTM33 GPS point.
+    #   Blånebba's and Øspetinden's register points read 48 and 25 m below the
+    #   published heights — both are representation points a hillclimb has to
+    #   walk uphill from, like most of this file. —
+    ("skarven", "Skarven", ["Rauma"], 1048, 62.60740, 7.60177),
+    ("blanebba", "Blånebba", ["Rauma"], 1320, 62.52646, 7.79221),
+    ("mjolvafjellet", "Mjølvafjellet", ["Rauma"], 1216, 62.54165, 7.76342),
+    ("ospetinden", "Øspetinden", ["Rauma"], 1228, 62.51559, 7.25049),
+    ("middagstinden", "Middagstinden", ["Rauma"], 1569, 62.46028, 7.44046),
 ]
