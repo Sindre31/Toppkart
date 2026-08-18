@@ -32,8 +32,12 @@ values
   ('kavringtinden',   'Kavringtinden',   'Lyngen',     69.54704, 20.12428, 1289, 1250, '5–7 t', 3, 'N',  'mar–mai', 'Indre Lyngen-perle med nordvendt snø som holder seg langt ut i mai.', true),
   ('hesten-segla',    'Hesten (Segla)',  'Senja',      69.51388, 17.58462,  556,  510, '2–4 t', 2, 'S',  'jan–apr', 'Kort tur, stort postkort: nedkjøring med Segla i fanget og havet under.', true),
   ('keipen', 'Keipen', 'Senja', 69.4953, 17.72324, 938, 840, '3–5 t', 3, 'S', 'jan–mai', '840 høydemeter fra Medfjordbotnvatnan gjennom skåla sør for toppen; ruta skrår opp, mens fallinja ved sida av måler 38–52 grader.', true),
+  ('husfjellet', 'Husfjellet', 'Senja', 69.4696, 17.27193, 632, 640, '3–5 t', 1, 'SØ', 'feb–mai', '640 høgdemeter frå kyrkja på Skaland: Dronningstien til Grillbua, skogstraséen opp Sommerdalen og ryggen over Sommerdalhaugen — mest utsikt for minst innsats, seier kjelda.', true),
   ('breitinden', 'Breitinden', 'Senja', 69.45168, 17.65623, 1007, 1050, '4–6 t', 4, 'SV', 'jan–apr', '1050 høydemeter fra Svarthola via Svartholvatnet og nordbredden av Breitindvatnet; de siste 244 er klyving på sørvestryggen.', true),
+  ('skolpan', 'Skolpan', 'Senja', 69.40894, 17.45379, 777, 610, '2–4 t', 1, 'S', 'feb–mai', '607 høgdemeter frå fv. 862 i Krokelvdalen: jamt stigande gjennom småskogen, over flata på 465 moh og nordvestover inn på ryggen til Skolpan.', true),
   ('tredje-svanfjell', 'Tredje Svanfjell', 'Senja', 69.29949, 17.40362, 899, 660, '3–5 t', 2, 'V', 'des–mai', '660 høgdemeter rett frå parkeringslomma i Kaperdalen: skaret nord for punkt 504, jamt opp til fortoppen på 870, og dei siste 36 metrane til klassikaren på Senja.', true),
+  ('lonketind', 'Lonketinden', 'Senja', 69.09401, 16.9161, 845, 780, '3–5 t', 2, 'S', 'feb–mai', '784 høgdemeter frå vassbassenget ved Finnelva: det flate myrterrenget, ryggen mot Lonketuva og toppryggen som gradvis blir brattare til Senjas Lonketinden.', true),
+  ('istinden', 'Vestre Istinden', 'Troms', 68.94986, 18.5668, 1489, 1430, '5–7 t', 3, 'NV', 'feb–mai', '1432 høgdemeter frå Tindelva ved Iselvmoen: den bratte bjørkelia, inn i gryta under nordveggen, og opp ryggen vest for breen til det høgaste av Istindan.', true),
   ('moysalen', 'Møysalen', 'Vesterålen', 68.52598, 15.45215, 1264, 1600, '7–9 t', 4, 'S', 'jan–mai', '1600 høydemeter fra E10 ved Litlvatnet: 355 av dem gir du fra deg underveis, 120 av dem ned til Grønnvatnet på 328.', true),
   ('strandtinden', 'Strandtinden', 'Harstad', 68.50455, 16.03441, 1076, 1160, '5–7 t', 3, 'N', 'jan–jun', '1160 høydemeter fra E10 ved havet gjennom Heggedalen og opp vestryggen — Harstad-områdets store klassiker, og fjellet flest går der.', true),
   ('rombakstotta',    'Rombakstøtta',    'Narvik',     68.43312, 17.58324, 1231, 1129, '5–7 t', 3, 'SV', 'feb–mai', 'Narviks spisse landemerke — variert oppstigning og fin, vedvarende nedkjøring.', true),
@@ -43,7 +47,9 @@ values
   ('stornappstinden', 'Stornappstinden', 'Lofoten',    68.1441, 13.41493,  740,  680, '3–5 t', 2, 'N',  'jan–apr', 'Lofot-klassiker i overkommelig format — mye fjell for høydemeterne.', true),
   ('midtitinden', 'Midtitinden', 'Bodø', 67.34238, 15.00416, 1060, 1050, '4–6 t', 2, 'SØ', 'jan–apr', '1050 høgdemeter frå havnivå ved Sagelva: gjennom hyttefeltet, rampene mot Innertinden, militærløypemerkinga vestover og ryggane til topps.', true),
   ('sandhornet', 'Sandhornet', 'Bodø', 67.11124, 14.06789, 993, 1020, '4–6 t', 2, 'S', 'jan–apr', '1020 høgdemeter frå fjæra på Horsdal: stien langs sjøen, trappene til Stjerndalen, og slake rygger til varden på øyfjellet over Saltfjorden.', true),
+  ('tortenviktinden', 'Tortenviktinden', 'Helgeland', 66.3421, 13.23387, 1028, 1020, '4–6 t', 2, 'SØ', 'feb–mai', '1023 høgdemeter frå Neset ved Flostrand: rett opp gjennom skogen, vestover på rabbane over det ulendte flatpartiet og opp den slake helninga til utsikta over Helgelandskysten.', true),
   ('tomskjevelen', 'Tomskjevelen', 'Helgeland', 66.27901, 12.84655, 922, 950, '4–6 t', 2, 'S', 'jan–apr', '950 høgdemeter frå åkeren ved Forsland på Tomma: stien til Forslandsvatnet, rundt tjernet på land, og den nordvestgåande ryggen heilt til topps på øyfjellet Fri Flyt kallar ein av dei finaste toppane på Helgelandskysten.', true),
+  ('lukttinden', 'Lukttinden', 'Helgeland', 65.99015, 13.54443, 1348, 1130, '4–6 t', 2, 'NV', 'apr–jun', '1129 høgdemeter frå garden på Kammen: traktorvegen, skogen mot bekken mellom Nordtinden og Lukttinden, og den slake ryggen opp til Vefsns mest markerte topp.', true),
   ('vassfjellet', 'Vassfjellet', 'Trøndelag', 63.26205, 10.35659, 711, 560, '3–5 t', 1, 'V', 'des–apr', '540 høydemeter fra Markavollen forbi Vassfjellhytta — den nærmeste toppturen til Trondheim, i løype hele vegen.', true),
   ('krakfjellet', 'Kråkfjellet', 'Trøndelag', 63.16336, 10.63219, 815, 470, '4–6 t', 2, 'S', 'des–apr', 'Kommunetoppen i Trondheim: 470 høydemeter og ti kilometer fra Håen over Kråklivollen og Rundtjønnin.', true),
   ('rensfjellet', 'Rensfjellet', 'Trøndelag', 63.14219, 10.72186, 942, 700, '5–7 t', 2, 'V', 'des–apr', '700 høydemeter og elleve kilometer fra Håen over Rundtjønnin og Oksdalen til Melhus'' høyeste punkt.', true),
@@ -131,7 +137,7 @@ values
 -- re-seeding can never overwrite editorial work.
 
 -- ============================================================================
--- Written guides — all 104 tours
+-- Written guides — all 110 tours
 -- ----------------------------------------------------------------------------
 -- Generated by scripts/build-routes/emit_guides.py alongside lib/guides.ts, so
 -- the database seed and the local fallback cannot drift apart. Paragraphs in
@@ -454,6 +460,37 @@ Friflyt nevner også en litt brattere variant ned en liten dalformasjon fra rygg
 where slug = 'keipen';
 
 update public.tk_tours set
+  description_up   = 'Frå kyrkja på Skaland, 3 moh, på fv. 862 — hovudvegen til Senjahopen og Mefjord, brøytt heile året. Lina følgjer Dronningstien slik kjelda seier, og ho er kartlagd: stikjeda frå parkeringa til varden ligg i OSM, og korridoren er festa til henne. Dei fyrste hundre høgdemetrane er det brattaste turen har — beltet frå 100 til 200 moh måler 17,1 grader over 335 meter grunn, og det brattaste samanhengande partiet ligg her: 19,6 grader mellom 124 og 140 moh, 0,63 km ute. Det er altså i skogen, ikkje på fjellet, at det bratte er.
+
+Skogen sluttar på 209 moh etter Kartverkets klassar, med ope område frå 221, og skoggrensa kjem alt 0,9 km ute. Over henne slakkar det av: beltet frå 200 til 300 moh måler 11,0 grader og beltet frå 300 til 400 berre 6,0 over 1 035 meter grunn. Det er den rydda skogstraséen og Sommerdalen, og det er her turen er ein spasertur.
+
+Sommerdalhaugen er haldepunktet kjelda gir, og han stemmer: prøvepunktet på stikjeda les 327,6 moh mot dei «327 moh» Fri Flyt oppgir. Herfrå går ryggen jamt stigande — 13,9 grader frå 400 til 500 moh og 15,5 frå 500 til 600 — mot toppen.
+
+Varden på 632 moh. Fri Flyt oppgir «785 høydemeter», som er meir enn heile fjellet er høgt; kortet ber den rutede stiginga på 640. Den siste egga ut mot toppunktet er ofte avblåsen, og då krev ho gode forhold — kjelda seier det rett ut, og målinga seier kvifor: nordaustsida fell 36,8 grader i snitt med 71,4 grader som brattaste 60 meter berre 50 til 110 meter ut, og austsida 35,8 grader med 67,9 grader 20 til 80 meter ut.',
+  description_down = 'Ned same traséen. Fri Flyt er utvitydig om alternativa: «Ikke la deg friste å velge annen rute ned fra toppen. Utsatt terreng.» Målingane seier kva han meiner — frå varden er berre sørvest, sør og vest slake nok til å kallast køyring, og nordaust, aust og nord fell 36,8, 35,8 og 28,0 grader i snitt med 71,4, 67,9 og 58,3 grader som brattaste 60 meter.
+
+Kjelda nemner ei einaste variasjon: rett ned mot sør frå pausesteinen for nokre ekstra høgdemeter i open skog, og så fell på att opp til ryggen på Sommerdalhaugen. Sørsveipen frå varden måler 20,2 grader i snitt, så det er reelt — men han åtvarar sjølv om at det blir «mye knot tett skog» om du held fram nedover.',
+  avalanche_notes  = jsonb_build_array(
+    jsonb_build_object(
+      'title', 'Ruta',
+      'body',  'Fri Flyt gir turen KAST 1 – Enkelt og «Bratteste punkt: Under 27 grader», og den ferdige lina held seg innanfor: ingen hundremeter måler meir enn 17,1 grader i snitt, og brattaste samanhengande parti er 19,6 grader mellom 124 og 140 moh. Læringspunktet hans er å leggja spor under 25–30 grader og lesa utløpsområda gjennom Sommerdalen, og det er nettopp den øvinga terrenget her er laga for.'
+    ),
+    jsonb_build_object(
+      'title', 'Egga og skavlane',
+      'body',  'Faremomentet Fri Flyt oppgir er «Skavler», og han er presis om kvar: hengeskavler på ryggen mot nord, og «Siste egga ut mot toppunktet er ofte avblåst og krever gode forhold da begge sidene her er bratte.» Målinga stadfester begge sider — nordaust 36,8 grader i snitt med 71,4 grader som brattaste 60 meter 50 til 110 meter ut, aust 35,8 med 67,9 grader 20 til 80 meter ut, og nord 28,0 med 58,3 grader 60 til 120 meter ut. Ei egg med det på begge kantar er ikkje staden å vere når ho er avblåsen.'
+    ),
+    jsonb_build_object(
+      'title', 'Utløpsområda',
+      'body',  'Kjelda namngir dei: utløpsområde opp mot Litje Brusen og Store Brusen. Registeret har Storbrusen som fjell 1,7 km aust for varden, og dei ligg ikkje på ruta — men dei ligg i det same fjellsida-systemet, og Fri Flyt ber deg observere dei på veg opp gjennom Sommerdalen.'
+    ),
+    jsonb_build_object(
+      'title', 'Før du går',
+      'body',  'Husfjellet ligg i varslingsregionen Sør-Troms, ein A-region med dagleg skredvarsel gjennom sesongen — sjekk varsom.no. Sesongen februar–mai er Fri Flyts eiga. Ta med sender/mottakar, søkjestong og spade. Ei tom varselside er ikkje det same som eit trygt fjell.'
+    )
+  )
+where slug = 'husfjellet';
+
+update public.tk_tours set
   description_up   = 'Start på rasteplassen i Svarthola langs Fv862, 30 moh, knappe seks kilometer øst for Senjahopen. De første to hundre høydemeterne går rett opp til nordenden av Svartholvatnet på 207 moh, og derfra østover over ryggen mellom vatnet og Breitindvatnet — et parti på rundt 400 moh der linja legger seg flatt før den stiger igjen. Ved Breitindvatnet følger linja nordbredden, over 467 moh og 500 moh, i stedet for å gå rett over isen. Den gjorde det siste inntil nylig: 315 meter på vatnet på 474 moh, opptil 40 meter fra land, under den flanken guiden selv kaller en terrengfelle. Vatnet er naturlig og uregulert, men det finnes ingen skirutebeskrivelse som sender deg ut på det, og her er vatnet så smalt at land ligger 80 meter unna.
 
 Fra nordøstsida av Breitindvatnet på 481 moh begynner vestflanken. Nederst er den slak — rundt 24 grader opp til 550 moh og 29 videre til 620 — men over det bratner den: 36 grader i snitt mellom 620 og 680 moh, 41 mellom 680 og 720, og rett under skulderen måler fallinja 50 til 59 grader. Sommerbeskrivelsen kaller det samme partiet smale og utsatte berghyller, og vatnet ligger under hele henget. Den bratteste hundremeteren på ruta ligger mellom 600 og 700 moh og måler 22,2 grader i snitt; bratteste sammenhengende parti på linja er 39,4 grader, og det ligger i toppblokka.
@@ -479,6 +516,37 @@ Vanligste feil: å tro at nordsida er en veg ned fordi den ser kortere ut fra to
     )
   )
 where slug = 'breitinden';
+
+update public.tk_tours set
+  description_up   = 'Frå parkeringa langs fv. 862 i Krokelvdalen, 170 moh. Fv. 862 er hovudvegen på ytre Senja og er brøytt heile året; registerpunktet for Krokelvdalen ligg 494 meter unna. Fri Flyt oppgir 580 høgdemeter, den ruta lina stig 607 — 27 meter i skilnad, og kortet ber den rutede.
+
+Fyrste biten går gjennom småskogen kjelda nemner: beltet frå 100 til 200 moh måler 11,6 grader og beltet frå 200 til 300 13,2. Skogen sluttar alt på 317 moh etter Kartverkets klassar, med ope område frå 331, og skoggrensa kjem 0,63 km ute — ein fjerdedel av turen.
+
+Over skogen stig det jamt: 17,7 grader frå 300 til 400 moh og 12,3 frå 400 til 500. Ved 465 moh kjem flata kjelda skildrar — «Fra 500 moh. flater det litt ut» — og her dreier lina nordvestover inn på ryggen, akkurat slik ho seier.
+
+På ryggen ligg det brattaste turen har: 27,1 grader mellom 693 og 714 moh, 2,03 km ute. Fri Flyt skriv «Mellom 600–740 moh. er det partier som er 27–30 grader», og det er dette partiet. Så er det berre sjarmøretappen bort til høgaste punktet — 777 moh på den klatra cella mot publiserte 779.',
+  description_down = 'Ned same traséen, «med mulige variasjoner etter ønsker og behov», som kjelda seier. Det brattaste du køyrer er dei same 27,1 gradene mellom 693 og 714 moh, rett under ryggen.
+
+Frå varden er nordvest den klart slakaste sektoren med 6,0 grader i snitt — det er ryggen du kom opp. Vestsida måler 32,2 grader i snitt, nordsida 27,5 med 65,2 grader som brattaste 60 meter berre 30 til 90 meter ut, og nordaustsida 24,1 med 69,2 grader 20 til 80 meter ut. Skiljet mellom ryggen og nordsida er sytti gradar på under hundre meter.',
+  avalanche_notes  = jsonb_build_array(
+    jsonb_build_object(
+      'title', 'Ruta',
+      'body',  'Fri Flyt gir KAST 1 – Enkelt og «Bratteste punkt: 27-30 grader»; lina måler 27,1 grader som brattaste samanhengande parti, mellom 693 og 714 moh, og ingen hundremeter held meir enn 17,7 grader i snitt. Faremomentet han oppgir er «Noen små litt bratte», og det er ei presis skildring av ei linje som er slak i snitt og har eit par korte kast.'
+    ),
+    jsonb_build_object(
+      'title', 'Henga du skal unngå',
+      'body',  'Kjeldas eiga åtvaring gjeld ikkje ruta, men terrenget ved sida av henne: «Det finnes noen små heng oppover som er 30–40 grader, så les terrenget godt slik at du unngår disse.» Det er difor linevalet er heile øvinga på dette fjellet — utfordringa hans er «å kunne legge sporet i terreng under 30 grader», og henga finst rett ved sporet som held seg under.'
+    ),
+    jsonb_build_object(
+      'title', 'Toppen',
+      'body',  'Ryggen frå nordvest er 6,0 grader i snitt, og rett nord for varden fell det 27,5 grader i snitt med 65,2 grader som brattaste 60 meter 30 til 90 meter ut; nordaust måler 24,1 med 69,2 grader 20 til 80 meter ut. Toppen er liten og slak, og kantane er nære.'
+    ),
+    jsonb_build_object(
+      'title', 'Før du går',
+      'body',  'Skolpan ligg i varslingsregionen Sør-Troms, ein A-region med dagleg skredvarsel gjennom sesongen — sjekk varsom.no. Sesongen februar–mai er Fri Flyts eiga. Ingen uavhengig kjelde skildrar ruta; Peakbook stadfester berre høgda. Ta med sender/mottakar, søkjestong og spade. Ei tom varselside er ikkje det same som eit trygt fjell.'
+    )
+  )
+where slug = 'skolpan';
 
 update public.tk_tours set
   description_up   = 'Parker i lomma langs vegen gjennom Kaperdalen — Fri Flyt skriv «Fv.232», men vegen heiter i dag fv. 7862 Kaperdalsveien; lomma les 236 moh, og kjeldas 660 høgdemeter impliserer nøyaktig denne starten. Skogen sluttar tidleg, og terrenget opnar seg mot aust.
@@ -512,6 +580,72 @@ Null høgdemeter å gje att og under tre kilometer kvar veg: dette er turen der 
     )
   )
 where slug = 'tredje-svanfjell';
+
+update public.tk_tours set
+  description_up   = 'Frå vegenden ved vassbassenget ved Finnelva, 66 moh. Det er den høgaste vegenden i dalen, og han forklarar kjeldas tal: 848 minus 66 er 782, mot dei «785 høydemeter» Fri Flyt oppgir. Registerpunktet for Finnelva ligg 170 meter unna.
+
+Fyrste kilometeren er det flate myrterrenget kjelda skildrar: beltet frå 0 til 100 moh måler 8,8 grader og beltet frå 100 til 200 berre 8,2 over 720 meter grunn. Skogen sluttar på 330 moh etter Kartverkets klassar, med ope område frå 341, og skoggrensa kjem 1,3 km ute.
+
+Så tek ryggen mot Lonketuva til. Registeret fører Lonketuva som ås på 361 moh, og det er ryggfoten. Beltet frå 200 til 300 moh måler 19,6 grader og beltet frå 400 til 500 20,6 — kjelda kallar dette «småkupert med partier på 27–30 grader», og det er dei partia snittet er sett saman av.
+
+Toppryggen blir gradvis brattare, akkurat som kjelda seier, og det korte bratte partiet ho lovar finst: 30,0 grader mellom 564 og 588 moh, 2,14 km ute. Fri Flyt skriv «Rundt 550 moh. er det et kort parti som er 30–35 grader» — målinga og kjelda peikar på same tjue høgdemetrane.
+
+Over det flatar det ut mot varden, slik kjelda seier: beltet frå 800 til 900 moh måler 11,6 grader, det slakaste over skoggrensa. 845 moh på den klatra cella mot publiserte 848.',
+  description_down = 'Ned same traséen. Det bratte partiet på 30,0 grader mellom 564 og 588 moh er det brattaste du køyrer, og det kjem tidleg i nedturen — 0,9 km før du er attende på myra.
+
+Fri Flyts einaste åtvaring for toppryggen gjeld skavlar: «Vær obs på skavler på toppryggen.» Frå varden er nordvest den slakaste sektoren med 18,8 grader i snitt, medan nordaust måler 34,4, sørvest 33,9 og sør 30,2 — dette er ein topp som fell bratt i nesten alle retningar, og ryggen er den eine vegen som ikkje gjer det.
+
+Frå ryggfoten ved Lonketuva er det myra ut att, og turen gjev berre 5 høgdemeter tilbake undervegs.',
+  avalanche_notes  = jsonb_build_array(
+    jsonb_build_object(
+      'title', 'Ruta',
+      'body',  'Fri Flyt gir turen KAST 1 – Enkelt, men oppgir samtidig «Bratteste punkt: 30-35 grader (kort parti)» — og det partiet er reelt: 30,0 grader mellom 564 og 588 moh, 2,14 km ute. Resten av lina er slakare; brattaste hundremetersbeltet er 23,4 grader mellom 500 og 600 moh. Læringspunktet kjelda gir er å leggja sporet under 30 grader og kjenne att enkle terrengfeller, og det korte partiet er der du må gjere det.'
+    ),
+    jsonb_build_object(
+      'title', 'Toppryggen og skavlane',
+      'body',  '«Vær obs på skavler på toppryggen» er kjeldas eiga åtvaring, og målingane seier kva som ligg under dei: nordsida fell 23,7 grader i snitt med 56,5 grader som brattaste 60 meter berre 40 til 100 meter frå varden, austsida 31,5 med 54,1 grader, og sørsida 30,2 med 54,0. Den slakaste sektoren er nordvest med 18,8 grader — men ruta går ikkje den vegen.'
+    ),
+    jsonb_build_object(
+      'title', 'Før du går',
+      'body',  'Lonketinden ligg i varslingsregionen Sør-Troms, ein A-region med dagleg skredvarsel gjennom sesongen — sjekk varsom.no. Sesongen februar–mai er Fri Flyts eiga, og han skriv at snøen legg seg litt seinare på denne delen av øya. Ingen uavhengig kjelde skildrar ruta: Fri Flyt publiserer henne på to adresser, og begge byggjer på Espen Nordahls «Toppturer i Troms». Ta med sender/mottakar, søkjestong og spade. Ei tom varselside er ikkje det same som eit trygt fjell.'
+    )
+  )
+where slug = 'lonketind';
+
+update public.tk_tours set
+  description_up   = 'Frå den store parkeringa der Tindelva kjem ned ved Iselvmoen på vegen mot Fjellstad, 80 moh. Fjellstadvegen er kartlagd som offentleg veg med fast dekke, så starten er brøytt året rundt. Lina går på sørsida av elva, slik båe kjeldene seier, og følgjer den kartlagde stien opp den bratte bjørkelia — same sti ut.no kallar «tydelig og bra, men bratt», og som er skilta med grønt turskilt frå parkeringa. Belta måler 18,2 grader frå 100 til 200 moh, 21,0 frå 200 til 300 og 19,2 frå 300 til 400.
+
+Skogen sluttar på 558 moh etter Kartverkets klassar, med ope område frå 568, og skoggrensa kjem 1,81 km ute. Her flatar det av: beltet frå 500 til 600 moh måler 13,9 grader og beltet frå 700 til 800 berre 8,4 over 650 meter grunn. Det er kvilesteget ut.no skildrar ved skuldra, og det er staden å sjå seg om — nordveggen står rett i front herfrå.
+
+Frå 2,93 km og 788 moh går lina innover i gryta under veggen nokre hundre meter, slik Fri Flyt seier, før ho tek opp på ryggen. Ryggen går på vestsida av veggen, og han går òg vest for breen i botnen. Det er ikkje ein detalj: både Fri Flyt («ryggen som går opp på vestsiden av veggen») og ut.no («til høyre for bekken og breen») sender deg utanom isen, og brepolygonet ligg 898 til 1155 moh rett aust for lina. Næraste passering er 14 meter frå brekanten, på 4,27 km og 1152 moh. Lina har 0 meter på breen, kontrollert både mot Kartverkets terrengklasse og mot OSMs brepolygon.
+
+Over 1200 moh reiser ryggen seg jamt — 17,5 grader frå 1200 til 1300, 21,2 frå 1300 til 1400 og 21,6 frå 1400 til 1500, det brattaste beltet på turen. Det brattaste samanhengande partiet ligg i same høgdelaget: 27,7 grader mellom 1286 og 1304 moh, 4,73 km ute, altså ein knapp halvkilometer før varden.
+
+Fri Flyt åtvarar: «Hold god avstand fra hengeskavlene ut over Nordveggen», og målinga seier kvifor — nordsveipen frå varden held 34,8 grader i snitt og 60,9 som brattaste 60 meter berre 50 til 110 meter ut. Varden på 1489 moh, som registeret fører som Vestre Istinden. Siste stykket er ofte avblåst, og då må skia kanskje berast — det er kjeldas eiga formulering, og det er den vanlegaste grunnen til at dagen tek lengre tid enn tala tilseier.',
+  description_down = 'Ned same ryggen. Merk retninga: dei fyrste hundre metrane frå varden går lina vestover, 262 til 276 grader, før ho svingar nordvestover ned ryggen — over heile fallet til skoggrensa peikar ho 344 grader. I skodde er det den fyrste vestlege biten som må sitje, for nordsida av kammen er nordveggen.
+
+Frå varden til skoggrensa er det 931 høgdemeter, mot dei «omtrent 900 meter» Fri Flyt oppgir ned til skogen. Så er det bjørkelia att, den same du gjekk opp, og 23 høgdemeter er alt turen gjev tilbake undervegs.
+
+Fri Flyt si vanlegaste nedkøyring er ei anna linje enn denne: renna på 30–35 grader mot sørvest frå toppen. Sørvestsveipen frå varden måler 30,6 grader i snitt over 800 meter, som stemmer med kjelda, men brattaste 60 meter i han held 40,0 grader 60 til 120 meter ut. Den renna er ikkje målt som eiga rute her, og kortets aspekt gjeld ruta si eiga nedkøyring. Toppegg-varianten frå Søre Istinden er heller ikkje denne ruta — det er berre for den Fri Flyt nemner isøks og stegjern.',
+  avalanche_notes  = jsonb_build_array(
+    jsonb_build_object(
+      'title', 'Ruta',
+      'body',  'Fri Flyts eige faremoment er presist om kva som er kva: «Skredfare må vurderes nøye på nedkjøringene i botnen mellom Søndre og Vestre Istind og ned fra Søndre Istind. Ryggen opp normalveien er relativt skredsikker. Hold god avstand fra hengeskavlene ut over Nordveggen.» Ruta her er ryggen, altså den delen kjelda kallar relativt skredsikker — men «relativt» er kjeldas ord, ikkje ein garanti, og botnen han åtvarar mot ligg 14 meter frå lina på det næraste.'
+    ),
+    jsonb_build_object(
+      'title', 'Nordveggen og skavlane',
+      'body',  'Nordsveipen frå varden held 34,8 grader i snitt dei fyrste 800 metrane, med 60,9 grader som brattaste 60 meter berre 50 til 110 meter ut; nordaustsida måler 30,5 i snitt og nordvestsida 28,0 med 65,1 grader 190 til 250 meter ut. Skavlane byggjer ut over denne kanten, og dei er det Fri Flyt ber deg halde god avstand frå. Ryggen er brei nok til å gå, men kanten er ikkje der augo trur når det er flatt lys.'
+    ),
+    jsonb_build_object(
+      'title', 'Breen i botnen',
+      'body',  'Botnen mellom Vestre og Søre Istinden ber ein bre — Kartverket klassar han som SnøIsbre, OSM har polygonet way/375260442 mellom 898 og 1155 moh, og ut.no nemner han i vegskildringa. Lina går utanom, vest for han, med 14 meter som næraste passering. Ho er ikkje lagd for å krysse is, og ho skal ikkje brukast som om ho var det: nedkøyring i botnen er den eine staden Fri Flyt namngir som skredfarleg.'
+    ),
+    jsonb_build_object(
+      'title', 'Før du går',
+      'body',  'Vestre Istinden ligg i varslingsregionen Indre Troms, ein A-region med dagleg skredvarsel gjennom sesongen — sjekk varsom.no. Ingen kjelde publiserer skisesong for denne turen: ut.nos jul–sep gjeld fotturen, og Fri Flyt har ikkje sesongfelt. Kortets feb–mai er difor redaksjonell. Kortets 5–7 t er pipelinens eiga utrekning; Fri Flyt oppgir 6–7 timer. Ta med sender/mottakar, søkjestong og spade. Ei tom varselside er ikkje det same som eit trygt fjell.'
+    )
+  )
+where slug = 'istinden';
 
 update public.tk_tours set
   description_up   = 'Fra den store parkeringa langs E10 på sørsida av Litlvatnet, 23 moh, går ruta nordover gjennom vassdraget. E10 er helårsveg, og dette er startpunktet Friflyt bruker — de guida sommerturene fra Møysalen Nasjonalparksenter begynner med båt fra Hennes inn i Lonkanfjorden, men det er en annen tur. De første to kilometrene er flate: bandet 100 til 200 moh måler 2,9 grader over 2165 meter grunn. Skogen slipper taket sent for å være Vesterålen: siste vertex med terrengklasse Skog ligger på 234 moh, 2900 meter ute, og neste vertex, 240 moh, er myr. Bjørka nede i dalen står i lag med myra, så du går inn og ut av den hele veien opp — 55 av rutas 333 punkter er skog, fra 12 til 234 moh.
@@ -787,6 +921,39 @@ Ned trappene ber du skia att, og stien langs fjæra tek deg heim til Horsdal —
 where slug = 'sandhornet';
 
 update public.tk_tours set
+  description_up   = 'Frå garden Neset ved Flostrand, 15 moh, på E12 kystriksvegen. Registeret set Tortenviktinden i Lurøy, medan tilkomsten frå Flostrand ligg i Rana — fjellet og startstaden er i kvar sin kommune. Visit Helgeland fører same ruta med 5,2 km og 1 025 høgdemeter éin veg; lina måler 5,57 km og 1 023.
+
+Fyrste kilometeren er nesten flat: beltet frå 0 til 100 moh måler 6,7 grader over 761 meter grunn og beltet frå 100 til 200 berre 4,5 over 1 233 meter. Skogen sluttar på 152 moh etter Kartverkets klassar, med ope område frå 158, og skoggrensa kjem 1,66 km ute. Fri Flyt seier «rett opp til du kommer over skogen i nord-nordvestlig retning», og det er den biten.
+
+Over skogen går lina vestover på rabbane, slik kjelda seier. Belta frå 200 til 500 moh ligg jamt mellom 12,3 og 13,2 grader. Så kjem det flatare partiet ho skildrar som «noe ulendt, med små bekkedaler på tvers av fjellet»: belta frå 700 til 900 moh måler 10,4 og 8,8 grader over til saman 1 170 meter grunn — det slakaste over skoggrensa, og det lengste. Det er her turen kjennest lang. Her ligg ei klynge tjern på 785 til 792 moh, og lina går sør om heile klynga: 0 meter på vatn, målt mot OSMs vasspolygon.
+
+«Herfra ser du ikke selve Tortenviktinden, men toppen ligger rett bak det høyeste punktet du ser», seier Fri Flyt. Bak det stig den siste helninga: beltet frå 900 til 1000 moh måler 18,6 grader, det brattaste på turen, og det brattaste samanhengande partiet ligg her — 23,7 grader mellom 971 og 994 moh, 5,39 km ute, altså under to hundre meter før varden. 1028 moh mot publiserte 1027.',
+  description_down = 'Ned same ruta. Det brattaste du køyrer er dei 23,7 gradene rett under toppen, og så blir det slakare heile vegen ut — noko som gjer at dei siste kilometrane er staking meir enn køyring.
+
+Nordsida skal du ikkje bort i. Frå varden fell ho 43,3 grader i snitt med 62,2 grader som brattaste 60 meter 80 til 140 meter ut, og nordvestsida 35,2 med 60,0 grader 230 til 290 meter ut. Ruta kjem opp frå søraust, som måler 15,3 grader i snitt, og vestsida er 11,9 — kontrasten mellom dei to sidene av denne toppen er det einaste ein treng vite om han i dårleg sikt.
+
+Fri Flyt nemner at fjellet gir «mulighet for bratt rennekjøring», og Visit Helgeland fører ei alternativrute på 4,3 km og 1 005 høgdemeter med brattare oppstigning og mindre traversering. Ingen av dei er målte som eigne ruter her.',
+  avalanche_notes  = jsonb_build_array(
+    jsonb_build_object(
+      'title', 'Ruta',
+      'body',  'Ingen av kjeldene gir eit bratthetsfelt, og Fri Flyt klassifiserer ikkje turen etter KAST. Målinga fyller hòlet: ingen hundremeter av lina held meir enn 18,6 grader i snitt, og brattaste samanhengande parti er 23,7 grader mellom 971 og 994 moh. Visit Helgeland graderer turen «Challenging, long», og det er lengda grada handlar om — 5,57 km og tusen høgdemeter frå havflata.'
+    ),
+    jsonb_build_object(
+      'title', 'Grøveldalen',
+      'body',  'Fri Flyts einaste namngitte faremoment er ein annan stad enn ruta: «Grøveldalen har høye og bratte sva på begge sider som kan løsne, særlig om våren.» Registeret fører Grøveldalen som botn 2,5 km sør for varden, og lina går ikkje der. Åtvaringa står her fordi ho er kjeldas eiga og fordi dalen ligg i same fjellsida — ikkje fordi ruta rører han.'
+    ),
+    jsonb_build_object(
+      'title', 'Nordsida',
+      'body',  'Frå varden fell nordsida 43,3 grader i snitt over dei fyrste 800 metrane, med 62,2 grader som brattaste 60 meter 80 til 140 meter ut; nordaust måler 33,3 med 68,3 grader 50 til 110 meter ut og nordvest 35,2 med 60,0 grader. Oppstiginga kjem frå søraust på 15,3 grader. Visit Helgeland peikar på at terrenget er «mostly free of trees», og på ein topp der to sider skil seg med tretti grader er det nettopp mangelen på haldepunkt som gjer skilnaden farleg.'
+    ),
+    jsonb_build_object(
+      'title', 'Før du går',
+      'body',  'Tortenviktinden ligg i varslingsregionen Svartisen, ein A-region med dagleg skredvarsel gjennom sesongen — sjekk varsom.no. Ingen kjelde publiserer sesongmånader: Fri Flyt skriv at «den kystnære beliggenheten … gjør også at sesongen er ustabil med varierende snøforhold», og Visit Helgeland fører hovudruta som vintertur med alternativruta tilgjengeleg etter påske. Kortets feb–mai er difor redaksjonell. Ta med sender/mottakar, søkjestong og spade. Ei tom varselside er ikkje det same som eit trygt fjell.'
+    )
+  )
+where slug = 'tortenviktinden';
+
+update public.tk_tours set
   description_up   = 'Ta ferja frå Nesna til Tomma og køyr mot Forsland; Forslandsvegen endar ved garden, og du parkerer ved åkeren før Forslandsvatnet, slik kjelda seier — jordet ved stistarten les 47 moh. Sjekk rutetidene begge vegar: ferja er ein del av turen.
 
 Stien vestover er kartlagd og fører opp til høgda der Forslandsvatnet ligg, på 148 moh. Tjernet er naturleg, men det ligg lågt på ei øy i havet, og isen kan ikkje føresetjast: lina går rundt nordbredda på land — 161, 177 og 150 moh på pinnane — og passerer òg nord for småtjerna og Tinnvatnet. Det er målt: 0 meter av lina står på vatn.
@@ -818,6 +985,41 @@ Hugs ferja: ho set tidsramma for dagen, og ho går frå fjæra — heile nedkøy
     )
   )
 where slug = 'tomskjevelen';
+
+update public.tk_tours set
+  description_up   = 'Frå vegenden ved garden på Kammen, 230 moh. Fri Flyt seier «Følg traktorveien videre fra parkeringen i omtrent 300-400 meter», og ut.no det same: sporet startar på skogsvegen ved garden. Beltet frå 200 til 300 moh måler 11,0 grader og beltet frå 300 til 400 like slakt over 586 meter grunn.
+
+Skogen sluttar på 379 moh etter Kartverkets klassar, med ope område frå 386, og skoggrensa kjem 0,82 km ute. Over henne går lina inn i dalen mot bekken mellom Nordtinden og Lukttinden — ut.no set han til «ca 400moh», og lina passerer der.
+
+Her deler kjelda seg, og det er den viktigaste avgjerda på fjellet. ut.no gir to vegar opp på ryggen: alternativ 1 rett opp det bratte henget, «ganske bratt, med opptil 40 grader helning», og alternativ 2 vidare inn i dalen mot søraust og så «den noe mindre bratte ryggen opp til høyre, som er en vanlig rute sommerstid… opp i 30 grader». **Denne lina går alternativ 2.** Brattaste samanhengande parti på heile turen ligg i det steget: 28,1 grader mellom 633 og 650 moh, 1,88 km ute — innanfor det ut.no oppgir for alternativ 2, og godt under dei 40 gradene i alternativ 1. Han åtvarar sjølv om at alternativ 2 har «overhengende skavler med utløpsområde mot denne ryggen».
+
+Oppe på ryggen — ut.no seier «ca 720 moh» — er turen enkel og lang. Belta frå 700 moh og opp måler 18,3, 18,2, 18,8, 18,1, 19,6 og 18,0 grader; det brattaste er 19,6 mellom 1100 og 1200 moh. ut.no skildrar same jamnheita: «Det er jevnt bratt oppover, mellom ca 20-30 grader.»
+
+Varden på 1348 moh. Det er ut.nos tal, ikkje Fri Flyts — Fri Flyt oppgir 1342, og toppsøket løyser 1347,8 på registerpunktet. ut.no nemner eit siste bratt heng «på ca 35 grader for å nå toppen», som «ofte ganske isete»; den rutede lina finn ikkje 35 grader nokon stad, og det høgaste beltet, 1300 til 1400 moh, måler 18,5. Det er eit reelt avvik mellom kjelda og lina, og det står her fordi det gjeld dei siste metrane.',
+  description_down = 'Ned same ryggen. ut.no er tydeleg på kva som er nedkøyringa sitt poeng: «I de svakt konkave helningene som følger nesten hele fjellsiden nedover kan det samles mye fin snø. Siden er også nordvendt, som betyr at du kan være heldig og nyte puddersnø godt ut i juni.» Kortets aspekt er NV, målt frå lina si eiga nedkøyring, og det stemmer med at sida er nordvend.
+
+To kantar skal haldast unna. På veg opp: «Unngå å gå på kanten til høyre (SV), her er det stupbratt» — vestsveipen frå varden måler 32,2 grader i snitt med 38,8 grader som brattaste 60 meter 110 til 170 meter ut. Og på toppen: «Vær obs på skavlen som dannes på nordøstsiden av varden. Skavler bryter 45 grader i snøen og kan dra deg med selv om du står på fast grunn. Det er stup på begge sider.» Nordaustsveipen måler 19,8 grader i snitt — men 63,4 grader som brattaste 60 meter berre 60 til 120 meter ut. Snittet er det som lurar; kanten er det som gjeld.
+
+Den slakaste sektoren frå varden er sørvest med 9,7 grader og sør med 13,3 — men det er ikkje vegen heim, og aust og søraust fell 35,0 og 31,3 grader i snitt med 65,5 og 68,8 grader tett på varden.',
+  avalanche_notes  = jsonb_build_array(
+    jsonb_build_object(
+      'title', 'Ruta og dei to alternativa',
+      'body',  'Fri Flyt gir ikkje noko bratthetsfelt for denne turen og klassifiserer henne ikkje etter KAST; han seier berre at «Toppen av Lukttinden er ikke omkranset av bre og er dermed en teknisk enklere tur enn Okstindene.» ut.no er den strenge kjelda, og han er utvitydig: «På grunn av bratthet bør den ikke gåes ved skredfare.» Korridoren her er lagd på hans alternativ 2, den slakare ryggen — brattaste samanhengande parti måler 28,1 grader mellom 633 og 650 moh — og ikkje på alternativ 1, som er hans eige inntegna spor og «opptil 40 grader».'
+    ),
+    jsonb_build_object(
+      'title', 'Skavlen på varden',
+      'body',  '«Vær obs på skavlen som dannes på nordøstsiden av varden. Skavler bryter 45 grader i snøen og kan dra deg med selv om du står på fast grunn. Det er stup på begge sider.» Det er ut.nos ord, og målinga står bak dei: nordaustsveipen held 19,8 grader i snitt over 800 meter, men 63,4 grader i sine brattaste 60 meter, 60 til 120 meter frå varden. Ein skavl som bryt bakover tek med seg fast grunn, og eit snitt på nitten grader seier ingenting om det.'
+    ),
+    jsonb_build_object(
+      'title', 'Isen på slutten',
+      'body',  'ut.no skildrar eit siste heng «på ca 35 grader for å nå toppen» og at det «ofte er ganske isete». Den rutede lina måler ikkje 35 grader — det høgaste beltet, 1300 til 1400 moh, held 18,5 grader, og brattaste samanhengande parti på heile turen er 28,1 lenger nede. Avviket er notert heller enn bortforklart: kjelda har gått fjellet og lina er rekna, og det siste stykket er der dei to ikkje er samde.'
+    ),
+    jsonb_build_object(
+      'title', 'Før du går',
+      'body',  'Lukttinden ligg i varslingsregionen Helgeland, ein A-region med dagleg skredvarsel gjennom sesongen — sjekk varsom.no. Sesongen april–juni er ut.nos eiga, og han fører turen som skitur; Fri Flyt har ikkje sesongfelt for henne. Ta med sender/mottakar, søkjestong og spade. Ei tom varselside er ikkje det same som eit trygt fjell.'
+    )
+  )
+where slug = 'lukttinden';
 
 update public.tk_tours set
   description_up   = 'Start på parkeringa på Markavollen, 184 moh. Ut.no oppgir p-avgift, og terrengmodellen leser plassen til 184 moh — nøyaktig den starthøyda beskrivelsen oppgir. Ut.no sender deg langs skiløypene «merka S, deretter Ø og S igjen»; linja på kartet er terrenglinja gjennom det samme løypenettet og ikke løypa selv — 2205 av 4744 meter ligger mer enn 50 meter fra en kartlagt trasé, med største avvik 175 meter. Første halvdel er flat i en topptur å være: bandet fra 300 til 400 moh måler 5,2 grader over 1036 meter grunn, og 400 til 500 moh 3,2 grader over 1710.

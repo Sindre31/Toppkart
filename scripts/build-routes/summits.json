@@ -950,5 +950,37 @@
     "summit_dtm": 631.9,
     "claims": 632,
     "stored_off_km": 0.08
+  },
+  "lonketind": {
+    "name": "Lonketinden",
+    "lat": 69.09401,
+    "lng": 16.9161,
+    "summit_dtm": 844.6,
+    "claims": 848,
+    "stored_off_km": 0.02
+  },
+  "skolpan": {
+    "name": "Skolpan",
+    "lat": 69.40894,
+    "lng": 17.45379,
+    "summit_dtm": 776.8,
+    "claims": 779,
+    "stored_off_km": 0.02
+  },
+  "lukttinden": {
+    "name": "Lukttinden",
+    "lat": 65.99015,
+    "lng": 13.54443,
+    "summit_dtm": 1347.8,
+    "claims": 1348,
+    "stored_off_km": 0.03
+  },
+  "tortenviktinden": {
+    "name": "Tortenviktinden",
+    "lat": 66.3421,
+    "lng": 13.23387,
+    "summit_dtm": 1028.5,
+    "claims": 1027,
+    "stored_off_km": 0.01
   }
 }

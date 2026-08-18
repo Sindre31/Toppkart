@@ -2840,5 +2840,465 @@
     "score": 3.13
    }
   ]
+ },
+ "lonketind": {
+  "summit_m": 844.6,
+  "candidates": [
+   {
+    "lat": 69.1230344,
+    "lng": 17.0424356,
+    "kind": "P",
+    "name": "",
+    "z": 83.1,
+    "terreng": "Skog",
+    "dist_km": 5.96,
+    "gain_m": 762,
+    "score": 2.39
+   },
+   {
+    "lat": 69.0780245,
+    "lng": 16.9579219,
+    "kind": "track",
+    "name": "",
+    "z": 34.7,
+    "terreng": "Skog",
+    "dist_km": 2.43,
+    "gain_m": 810,
+    "score": 2.81
+   },
+   {
+    "lat": 69.0841828,
+    "lng": 17.0079273,
+    "kind": "residential",
+    "name": "Raveien",
+    "z": 8.5,
+    "terreng": "DyrketMark",
+    "dist_km": 3.8,
+    "gain_m": 836,
+    "score": 2.87
+   },
+   {
+    "lat": 69.0597977,
+    "lng": 16.9069312,
+    "kind": "service",
+    "name": "Skrolsvikveien",
+    "z": 11.3,
+    "terreng": "Skog",
+    "dist_km": 3.82,
+    "gain_m": 833,
+    "score": 2.87
+   },
+   {
+    "lat": 69.0721722,
+    "lng": 16.9526177,
+    "kind": "service",
+    "name": "",
+    "z": 5.0,
+    "terreng": "DyrketMark",
+    "dist_km": 2.83,
+    "gain_m": 840,
+    "score": 2.94
+   },
+   {
+    "lat": 69.0932904,
+    "lng": 17.021522,
+    "kind": "unclassified",
+    "name": "Nymoveien",
+    "z": 5.6,
+    "terreng": "Myr",
+    "dist_km": 4.18,
+    "gain_m": 839,
+    "score": 2.99
+   },
+   {
+    "lat": 69.0780991,
+    "lng": 16.9768317,
+    "kind": "service",
+    "name": "",
+    "z": 22.2,
+    "terreng": "Skog",
+    "dist_km": 2.99,
+    "gain_m": 822,
+    "score": 3.0
+   },
+   {
+    "lat": 69.0997226,
+    "lng": 17.0236543,
+    "kind": "secondary",
+    "name": "Rødsandveien",
+    "z": 17.1,
+    "terreng": "Myr",
+    "dist_km": 4.31,
+    "gain_m": 827,
+    "score": 3.04
+   },
+   {
+    "lat": 69.0653904,
+    "lng": 16.9164927,
+    "kind": "track",
+    "name": "",
+    "z": 22.5,
+    "terreng": "DyrketMark",
+    "dist_km": 3.18,
+    "gain_m": 822,
+    "score": 3.06
+   },
+   {
+    "lat": 69.0665031,
+    "lng": 16.9426902,
+    "kind": "service",
+    "name": "",
+    "z": 12.4,
+    "terreng": "Skog",
+    "dist_km": 3.24,
+    "gain_m": 832,
+    "score": 3.08
+   }
+  ]
+ },
+ "skolpan": {
+  "summit_m": 776.8,
+  "candidates": [
+   {
+    "lat": 69.3954898,
+    "lng": 17.4810499,
+    "kind": "P",
+    "name": "",
+    "z": 283.1,
+    "terreng": "Skog",
+    "dist_km": 1.84,
+    "gain_m": 494,
+    "score": 1.01
+   },
+   {
+    "lat": 69.4043808,
+    "lng": 17.3188258,
+    "kind": "P",
+    "name": "",
+    "z": 4.1,
+    "terreng": "Skog",
+    "dist_km": 5.3,
+    "gain_m": 773,
+    "score": 2.17
+   },
+   {
+    "lat": 69.3931944,
+    "lng": 17.4440148,
+    "kind": "primary",
+    "name": "Bergsfjordveien",
+    "z": 170.2,
+    "terreng": "Skog",
+    "dist_km": 1.79,
+    "gain_m": 607,
+    "score": 2.2
+   },
+   {
+    "lat": 69.4047485,
+    "lng": 17.50627,
+    "kind": "primary",
+    "name": "Skalandtunnelen",
+    "z": 651.8,
+    "terreng": "ÅpentOmråde",
+    "dist_km": 2.1,
+    "gain_m": 125,
+    "score": 2.3
+   },
+   {
+    "lat": 69.4240287,
+    "lng": 17.4965946,
+    "kind": "primary",
+    "name": "Bergsfjordveien",
+    "z": -6.7,
+    "terreng": "Havflate",
+    "dist_km": 2.37,
+    "gain_m": 784,
+    "score": 2.39
+   },
+   {
+    "lat": 69.4121453,
+    "lng": 17.5176204,
+    "kind": "primary",
+    "name": "Bergsfjordveien",
+    "z": 174.7,
+    "terreng": "ÅpentOmråde",
+    "dist_km": 2.52,
+    "gain_m": 602,
+    "score": 2.44
+   },
+   {
+    "lat": 69.3913315,
+    "lng": 17.3843405,
+    "kind": "primary",
+    "name": "Hamnveien",
+    "z": 38.3,
+    "terreng": "ÅpentOmråde",
+    "dist_km": 3.35,
+    "gain_m": 738,
+    "score": 2.72
+   },
+   {
+    "lat": 69.4421254,
+    "lng": 17.4373593,
+    "kind": "primary",
+    "name": "Bergsfjordveien",
+    "z": 1.8,
+    "terreng": "Skog",
+    "dist_km": 3.75,
+    "gain_m": 775,
+    "score": 2.85
+   },
+   {
+    "lat": 69.3938705,
+    "lng": 17.368109,
+    "kind": "primary",
+    "name": "Hamnveien",
+    "z": 4.7,
+    "terreng": "Steinbrudd",
+    "dist_km": 3.75,
+    "gain_m": 772,
+    "score": 2.85
+   },
+   {
+    "lat": 69.4387268,
+    "lng": 17.4082888,
+    "kind": "primary",
+    "name": "Bergsfjordveien",
+    "z": 0.4,
+    "terreng": "ÅpentOmråde",
+    "dist_km": 3.76,
+    "gain_m": 776,
+    "score": 2.85
+   }
+  ]
+ },
+ "lukttinden": {
+  "summit_m": 1347.8,
+  "candidates": [
+   {
+    "lat": 66.0167984,
+    "lng": 13.5137661,
+    "kind": "service",
+    "name": "Kamvegen",
+    "z": 230.5,
+    "terreng": "Skog",
+    "dist_km": 3.27,
+    "gain_m": 1117,
+    "score": 2.69
+   },
+   {
+    "lat": 66.0179546,
+    "lng": 13.5814463,
+    "kind": "unclassified",
+    "name": "Vasshøvvegen",
+    "z": 216.6,
+    "terreng": "Skog",
+    "dist_km": 3.52,
+    "gain_m": 1131,
+    "score": 2.77
+   },
+   {
+    "lat": 66.0065663,
+    "lng": 13.5097116,
+    "kind": "track",
+    "name": "",
+    "z": 347.3,
+    "terreng": "Skog",
+    "dist_km": 2.41,
+    "gain_m": 1000,
+    "score": 2.8
+   },
+   {
+    "lat": 66.0092988,
+    "lng": 13.6154746,
+    "kind": "unclassified",
+    "name": "Brennvollengvegen",
+    "z": 234.0,
+    "terreng": "Skog",
+    "dist_km": 3.85,
+    "gain_m": 1114,
+    "score": 2.88
+   },
+   {
+    "lat": 66.0147192,
+    "lng": 13.6071401,
+    "kind": "service",
+    "name": "Brennvollengvegen",
+    "z": 142.0,
+    "terreng": "Skog",
+    "dist_km": 3.94,
+    "gain_m": 1206,
+    "score": 2.91
+   },
+   {
+    "lat": 65.989627,
+    "lng": 13.4727519,
+    "kind": "track",
+    "name": "",
+    "z": 271.0,
+    "terreng": "Skog",
+    "dist_km": 3.24,
+    "gain_m": 1077,
+    "score": 3.08
+   },
+   {
+    "lat": 66.0282043,
+    "lng": 13.5911381,
+    "kind": "unclassified",
+    "name": "Brennvollengvegen",
+    "z": 137.2,
+    "terreng": "?",
+    "dist_km": 4.73,
+    "gain_m": 1211,
+    "score": 3.18
+   },
+   {
+    "lat": 66.018504,
+    "lng": 13.4537455,
+    "kind": "trunk",
+    "name": "Luktvassvegen",
+    "z": 84.7,
+    "terreng": "Skog",
+    "dist_km": 5.17,
+    "gain_m": 1263,
+    "score": 3.32
+   },
+   {
+    "lat": 65.9899261,
+    "lng": 13.4561035,
+    "kind": "track",
+    "name": "",
+    "z": 166.7,
+    "terreng": "Skog",
+    "dist_km": 4.0,
+    "gain_m": 1181,
+    "score": 3.33
+   },
+   {
+    "lat": 66.0200837,
+    "lng": 13.5937535,
+    "kind": "service",
+    "name": "",
+    "z": 140.1,
+    "terreng": "Skog",
+    "dist_km": 4.01,
+    "gain_m": 1208,
+    "score": 3.34
+   }
+  ]
+ },
+ "tortenviktinden": {
+  "summit_m": 1028.5,
+  "candidates": [
+   {
+    "lat": 66.3057212,
+    "lng": 13.2080971,
+    "kind": "P",
+    "name": "",
+    "z": 16.9,
+    "terreng": "Skog",
+    "dist_km": 4.21,
+    "gain_m": 1012,
+    "score": 1.8
+   },
+   {
+    "lat": 66.313945,
+    "lng": 13.279735,
+    "kind": "primary",
+    "name": "Flostrandveien",
+    "z": 34.8,
+    "terreng": "ÅpentOmråde",
+    "dist_km": 3.74,
+    "gain_m": 994,
+    "score": 2.85
+   },
+   {
+    "lat": 66.3151815,
+    "lng": 13.1834665,
+    "kind": "primary",
+    "name": "Silatunnelen",
+    "z": 598.7,
+    "terreng": "ÅpentOmråde",
+    "dist_km": 3.74,
+    "gain_m": 430,
+    "score": 2.85
+   },
+   {
+    "lat": 66.3089505,
+    "lng": 13.249196,
+    "kind": "primary",
+    "name": "Grøvdalsåga bru",
+    "z": 7.5,
+    "terreng": "ÅpentOmråde",
+    "dist_km": 3.75,
+    "gain_m": 1021,
+    "score": 2.85
+   },
+   {
+    "lat": 66.3072695,
+    "lng": 13.2271335,
+    "kind": "primary",
+    "name": "Flostrandveien",
+    "z": 42.5,
+    "terreng": "Skog",
+    "dist_km": 3.88,
+    "gain_m": 986,
+    "score": 2.89
+   },
+   {
+    "lat": 66.330085,
+    "lng": 13.165323,
+    "kind": "service",
+    "name": "",
+    "z": 30.3,
+    "terreng": "ÅpentOmråde",
+    "dist_km": 3.34,
+    "gain_m": 998,
+    "score": 3.11
+   },
+   {
+    "lat": 66.322848,
+    "lng": 13.3282975,
+    "kind": "service",
+    "name": "Flostrandveien",
+    "z": 29.6,
+    "terreng": "ÅpentOmråde",
+    "dist_km": 4.73,
+    "gain_m": 999,
+    "score": 3.18
+   },
+   {
+    "lat": 66.3461156,
+    "lng": 13.1534108,
+    "kind": "service",
+    "name": "",
+    "z": 36.0,
+    "terreng": "DyrketMark",
+    "dist_km": 3.62,
+    "gain_m": 992,
+    "score": 3.21
+   },
+   {
+    "lat": 66.3393694,
+    "lng": 13.1508995,
+    "kind": "service",
+    "name": "",
+    "z": 37.8,
+    "terreng": "Skog",
+    "dist_km": 3.71,
+    "gain_m": 991,
+    "score": 3.24
+   },
+   {
+    "lat": 66.3190174,
+    "lng": 13.3083616,
+    "kind": "service",
+    "name": "",
+    "z": 22.0,
+    "terreng": "Skog",
+    "dist_km": 4.2,
+    "gain_m": 1007,
+    "score": 3.4
+   }
+  ]
  }
 }

@@ -1985,10 +1985,10 @@
   "season": "feb–mai",
   "aspect": "NV",
   "grade": 3,
-  "gradeReason": "",
+  "gradeReason": "Grad 3 på lengda og høgda meir enn på henget: 1432 høgdemeter på 5,24 km, brattaste hundremetersbeltet 21,6 grader mellom 1400 og 1500 moh og brattaste samanhengande parti 27,7 grader — begge under grad 4. Det som ber grada er at ruta går på ein rygg med nordveggen på den eine sida (nordsveipen frå varden held 34,8 grader i snitt og 60,9 som brattaste 60 m) og botnen med breen på den andre, at siste stykket ofte er avblåst, og at turen er 6–7 timar etter kjelda.",
   "roadClosedInWinter": false,
-  "teaserNo": "",
-  "teaserEn": "",
+  "teaserNo": "1432 høgdemeter frå Tindelva ved Iselvmoen: den bratte bjørkelia, inn i gryta under nordveggen, og opp ryggen vest for breen til det høgaste av Istindan.",
+  "teaserEn": "1432 metres of ascent from Tindelva by Iselvmoen: the steep birch hillside, into the cirque below the north wall, and up the ridge west of the glacier to the highest of the Istindan tops.",
   "hazardNotes": "Fri Flyt: KAST ikkje klassifisert. Faremomenta er hans eigne: «Skredfare må vurderes nøye på nedkjøringene i botnen mellom Søndre og Vestre Istind og ned fra Søndre Istind. Ryggen opp normalveien er relativt skredsikker. Hold god avstand fra hengeskavlene ut over Nordveggen.» Siste stykket mot toppen er ofte avblåse, så skia må kanskje berast. Nedkøyringsrenna sørvest frå toppen er 30–35 grader. Isøks og stegjern gjeld berre toppegg-varianten frå Søndre Istind.",
   "sources": [
    "https://www.friflyt.no/topptur/tromso/turbeskrivelse-istind",
@@ -2000,18 +2000,24 @@
    "**Registerfeil retta.** Oppføringa peikte på ein Istinden på 1459 moh i indre Sørdalen mot nordlandsgrensa — eit verkeleg fjell registeret kjenner, men ikkje turen: einaste skildringa av det er ein sommarfjelløpsrapport frå august. Fjellet alle meiner er **Vestre Istinden**, 1489 moh i Bardu, landemerket i Indre Troms, og Fri Flyt publiserer full skiskildring for det. Same slug, rett fjell, 50 km lenger nord. Toppsøket løyser 1488,6 mot publiserte 1489.",
    "Startstaden er Fri Flyts eigen: «Stor parkeringsplass der Tindelva kommer ned ved Iselvmoen på vegen mot Fjellstad». Registeret har Iselvmoen (Bruk, 68.97744/18.52065) og Tindelva (Bekk, 68.97428/18.54491); parkeringspunktet les 80 moh, og 1489 − 1400 = 89 — Fri Flyts høgdemeter impliserer nett denne starten.",
    "Ruta reproduserer: sørsida av Tindelva opp den bratte bjørkelia (153 → 599 moh), ut av skogen og innover i gryta mot nordveggen (789), og opp ryggen på vestsida av veggen (970 → 1023 → 1304) til toppen. Alt måler ÅpentOmråde over skoggrensa.",
-   "Isøks og stegjern gjeld ikkje normalvegen: Fri Flyt nemner dei berre for varianten over toppeggen frå Søndre Istind, og den er ikkje korridoren. Utmarsjen frå Tunebrua går på ein skogsbilveg som «som regel ikke [er] brøytet» — det er utgangen, ikkje starten, og guiden seier det."
+   "Isøks og stegjern gjeld ikkje normalvegen: Fri Flyt nemner dei berre for varianten over toppeggen frå Søndre Istind, og den er ikkje korridoren. Utmarsjen frå Tunebrua går på ein skogsbilveg som «som regel ikke [er] brøytet» — det er utgangen, ikkje starten, og guiden seier det.",
+   "**Korridoren er flytta vest for breen.** Den fyrste ruta gjekk tvers over botnen mellom Vestre og Søre Istinden: seks prøvepunkt mellom 1017 og 1109 moh las SnøIsbre i Kartverkets terrengklasse, og OSM har brepolygonet way/375260442 (898–1155 moh) nett der. Båe kjeldene seier at ruta skal gå utanom — Fri Flyt «opp på ryggen som går opp på vestsiden av veggen», ut.no «til høyre for bekken og breen» — så dei to øvste vegpunkta er flytta ut på ryggkammen vest for botnen. Den nye lina har 0 meter på brepolygonet og ingen SnøIsbre-punkt; næraste passering er 14 meter frå brekanten.",
+   "Registeret skriv den sørlege toppen **Søre Istinden**, ikkje «Søndre Istind» som Fri Flyt. Istindan er registrert som fjellområde, og registeret har fem tindar i det: Vestre (1489, turmålet), Søre 2,0 km unna, Midtre 815 m unna, Austre 2,3 km og Indre 6,7 km. «Nordveggen» finst ikkje i registeret — det er Fri Flyts eige namn på nordsida.",
+   "Registeret set Vestre Istinden i **Bardu** åleine; ut.no skriv «på kommunegrensen mellom Bardu og Målselv».",
+   "Ingen kjelde publiserer skisesong. ut.nos jul–sep gjeld fotturen, og Fri Flyt har ikkje sesongfelt i det heile. Kortets feb–mai er difor redaksjonell, ikkje henta, og guiden seier det.",
+   "Kortets 5–7 t er pipelinens eiga utrekning; Fri Flyt oppgir 6–7 timer. Guiden seier begge.",
+   "**Skogdelen er festa til den skilta stien.** Routeren si eiga line gjennom bjørkelia låg opp til 577 m frå næraste kartlagde sti, med 1 393 m av 5 397 meir enn 250 m unna, sjølv om båe kjeldene skildrar stien. Dei tre skogvegpunkta er difor festa til OSM way/1084430679; den nye lina ligg i snitt 66 m frå kartlagd sti med 276 m som verste avvik. Over skoggrensa følgde lina alt way/527286327, den merkte sommarstien som når toppen 3 m frå varden."
   ],
-  "notes": ""
+  "notes": "Fri Flyt fører turen under Tromsø/Indre Troms og skildrar OPP som normalveien/sommerveien frå parkeringa der Tindelva kjem ned: sørsida av elva, opp ei bratt og tettvokst bjørkeli, over tregrensa med nordveggen rett i front, innover i gryta mot veggen nokre hundre meter, så opp ryggen på vestsida av veggen til toppen — «Det siste stykket opp mot toppen er ofte avblåst, så det kan hende du må bære skiene her». NED er vanlegvis renna på 30–35 grader mot sørvest frå toppen, med «Fallhøyde ned til skogen er omtrent 900 meter»; Alternativ 1 er normalveien ned ved ustabile forhold. Isøks og stegjern nemner kjelda berre for toppegg-varianten frå Søre Istinden, som ikkje er denne korridoren. ut.no fører same fjellet som fottur (VERY_TOUGH, 8 922 m, jul–sep) og skildrar same vegen: bratt sti gjennom skogen, kvile ved skoggrensa på skuldra, «Fortsett videre oppover til høyre for bekken og breen mot toppen av Istind», så ryggen til topps."
  },
  "husfjellet": {
   "season": "feb–mai",
   "aspect": "SØ",
   "grade": 1,
-  "gradeReason": "",
+  "gradeReason": "Grad 1. Fri Flyt gir turen KAST 1 – Enkelt og «Bratteste punkt: Under 27 grader», og den ferdige lina held seg innanfor: brattaste hundremetersbeltet måler 17,1 grader og brattaste samanhengande parti 19,6. 640 høgdemeter frå fjøra på 3,3 km. Det som held grada oppe frå 0 er skavlane kjelda åtvarar om og den siste egga, som ofte er avblåsen med bratte sider på begge kantar.",
   "roadClosedInWinter": false,
-  "teaserNo": "",
-  "teaserEn": "",
+  "teaserNo": "640 høgdemeter frå kyrkja på Skaland: Dronningstien til Grillbua, skogstraséen opp Sommerdalen og ryggen over Sommerdalhaugen — mest utsikt for minst innsats, seier kjelda.",
+  "teaserEn": "640 metres of ascent from the church at Skaland: Dronningstien to Grillbua, the cleared forest track up Sommerdalen and the ridge over Sommerdalhaugen — the most view for the least effort, the source says.",
   "hazardNotes": "Fri Flyt: KAST 1 – Enkelt, brattaste punkt under 27 grader, faremoment «Skavler». Hans eigne åtvaringar: utløpsområde opp mot Litje Brusen og Store Brusen, siste egga mot toppunktet ofte avblåse med bratte sider på begge kantar, hengeskavler på ryggen mot nord, og «Ikke la deg friste å velge annen rute ned fra toppen. Utsatt terreng.» Læringspunktet hans er å leggja spor under 25–30 grader og lesa utløpsområda gjennom Sommerdalen.",
   "sources": [
    "https://www.friflyt.no/topptur/senja/husfjellet",
@@ -2023,8 +2029,100 @@
    "Registerets Husfjellet (Fjell, 69.47024/17.27304) ligg på Fri Flyts publiserte GPS-punkt (UTM33 588943.76/7708450.43 → 69.47024/17.27299) — dei to fell saman på metern, og toppsøket løyser 631,9 mot publiserte 632.",
    "Startstaden «Kirka på Skaland» løyser seg: Skaland (Bygdelag, 69.44455/17.29830) på fv. 862, som er livsnerven til Senjahopen og Mefjord og brøytt heile året. Startpunktet les 3 moh — turen går frå fjøra.",
    "Ruta reproduserer på terrenget: 38 moh der Dronningstien tek av, 239 i skogstraséen, 277 i Sommerdalen, 417 på ryggen over Sommerdalhaugen og 632 på toppen. Fri Flyts «785 høgdemeter» er meir enn skilnaden frå havet til toppen — kortet ber den ruta gainen.",
-   "Fri Flyts eiga åtvaring er tydeleg og høyrer heime i guiden: «Ikke la deg friste å velge annen rute ned fra toppen. Utsatt terreng.» Og: hengeskavler på ryggen mot nord, utløpsområde opp mot Litje Brusen og Store Brusen (registeret har Storbrusen, Fjell, 69.45830/17.31328)."
+   "Fri Flyts eiga åtvaring er tydeleg og høyrer heime i guiden: «Ikke la deg friste å velge annen rute ned fra toppen. Utsatt terreng.» Og: hengeskavler på ryggen mot nord, utløpsområde opp mot Litje Brusen og Store Brusen (registeret har Storbrusen, Fjell, 69.45830/17.31328).",
+   "**Korridoren er festa til den kartlagde Dronningstien.** Den fyrste lina hadde eit steg på 33,7 grader i den fyrste kilometeren og eit fall på 38,1 grader ned i eit søkk 2,7 km ute, mot Fri Flyts «Bratteste punkt: Under 27 grader» — ein tur som motsa si eiga kjelde, og difor rutet men ikkje publisert. Vegpunkta er no lagde på stikjeda OSM kartfester frå kyrkja til varden (way/695989801 → way/1053948570 → way/865479337), som når toppen 5 m frå varden. Prøvepunkt langs kjeda les 327,6 moh der Fri Flyt oppgir «Sommerdalhaugen 327 moh» — kjeda reproduserer den publiserte ruta. Den nye lina måler 19,6 grader som brattaste samanhengande parti."
   ],
   "notes": ""
+ },
+ "lonketind": {
+  "season": "feb–mai",
+  "aspect": "S",
+  "grade": 2,
+  "roadClosedInWinter": false,
+  "gradeReason": "Grad 2. Fri Flyt gir KAST 1 – Enkelt, men oppgir «Bratteste punkt: 30-35 grader (kort parti)», og lina finn nett det: brattaste samanhengande parti måler 30,0 grader, og brattaste hundremetersbeltet 23,4. 784 høgdemeter på 3,06 km er kort og bratt heller enn langt.",
+  "teaserNo": "784 høgdemeter frå vassbassenget ved Finnelva: det flate myrterrenget, ryggen mot Lonketuva og toppryggen som gradvis blir brattare til Senjas Lonketinden.",
+  "teaserEn": "784 metres of ascent from the water basin by Finnelva: the flat bog terrain, the ridge toward Lonketuva and the summit ridge that steepens by degrees to Senja's Lonketinden.",
+  "hazardNotes": "Fri Flyt: KAST 1 – Enkelt, faremoment «Skavler», og «Vær obs på skavler på toppryggen.» Brattaste punkt 30-35 grader i eit kort parti rundt 550 moh. Beste sesong februar–mai, 3–4 timar, himmelretning S-Ø.",
+  "sources": [
+   "https://www.friflyt.no/topptur/senja/lonketind",
+   "https://www.friflyt.no/topptur/skiturer-senja/lonketind-troms",
+   "https://www.friflyt.no/topptur/senja"
+  ],
+  "confidence": "medium",
+  "corrections": [
+   "Registeret skriv fjellet **Lonketinden** (Fjell, Senja, 69.09398/16.91556). Fri Flyt skriv «Lonketind» i tittelen og «Lunketind» éin gong i brødteksten. Fri Flyts publiserte GPS-punkt (UTM33 576283.04/7666033.7 → 69.09399/16.91580) ligg 10 m frå registerpunktet, og toppsøket løyser 844,6 mot publiserte 848.",
+   "Startstaden «Vannbassenget ved Finnelva» løyser seg til vegenden på OSM-traktorvegen way/464201349, 69.08012/16.95414, som les 65,9 moh — den høgaste vegenden i dalen. 848 − 66 = 782 mot Fri Flyts «785 høydemeter», så den publiserte stiginga peikar på nett denne starten. Registerpunktet for Finnelva (Bekk) ligg 170 m unna.",
+   "Lonketuva, ryggen kjelda sender deg opp, er registerført som Ås på 69.08151/16.92681 og les 361,3 moh.",
+   "Ingen uavhengig rutebeskriving finst for Lonketinden utanom Fri Flyt, som publiserer henne på to adresser («/senja/lonketind» og «/skiturer-senja/lonketind-troms»). Sida krediterer Espen Nordahls «Toppturer i Troms», som er kjelda bak teksten og ikkje ei uavhengig stadfesting. Turen ligg difor på same kjeldegrunnlaget som Tredje Svanfjell, og confidence er «medium»."
+  ],
+  "notes": "Fri Flyt fører turen i Senja-indeksen sin og skildrar normalruta: «Første del av ruta går over lett flatt myrterreng før du starter oppstigningen langs ryggen mot Lonketuva. Terrenget er småkupert med partier på 27–30 grader og er ypperlig for å trene på gode sporvalg. Deretter fortsetter du oppover toppryggen som gradvis blir litt brattere. Rundt 550 moh. er det et kort parti som er 30–35 grader. Når du nærmer deg toppunktet, flater det litt ut. Vær obs på skavler på toppryggen.» NED følgjer same traséen."
+ },
+ "skolpan": {
+  "season": "feb–mai",
+  "aspect": "S",
+  "grade": 1,
+  "roadClosedInWinter": false,
+  "gradeReason": "Grad 1. Fri Flyt gir KAST 1 – Enkelt og «Bratteste punkt: 27-30 grader»; lina måler 27,1 grader som brattaste samanhengande parti og 17,7 som brattaste hundremetersbelte. 607 høgdemeter på 2,31 km er den kortaste turen i denne runden.",
+  "teaserNo": "607 høgdemeter frå fv. 862 i Krokelvdalen: jamt stigande gjennom småskogen, over flata på 465 moh og nordvestover inn på ryggen til Skolpan.",
+  "teaserEn": "607 metres of ascent from Fv. 862 in Krokelvdalen: a steady climb through the scrub birch, across the shelf at 465 m and north-west onto the ridge to Skolpan.",
+  "hazardNotes": "Fri Flyt: KAST 1 – Enkelt, brattaste punkt 27-30 grader, faremoment «Noen små litt bratte». Hans eiga åtvaring om terrenget ved sida av ruta: «Det finnes noen små heng oppover som er 30–40 grader, så les terrenget godt slik at du unngår disse.» Beste sesong februar–mai, 3–4 timar, himmelretning S-Ø.",
+  "sources": [
+   "https://www.friflyt.no/topptur/senja/skolpan",
+   "https://www.friflyt.no/topptur/senja",
+   "https://peakbook.org/en/peakbook-element/10201/en/Skolpan.html"
+  ],
+  "confidence": "medium",
+  "corrections": [
+   "Registeret har **Skolpan** (Fjell, Senja, 69.40883/17.45355). Fri Flyts publiserte GPS-punkt (UTM33 596284.5/7701888.98 → 69.40891/17.45366) ligg 10 m unna, og toppsøket løyser 776,8 mot publiserte 779.",
+   "Startstaden «Krokelvdalen. Parkering langs Fv.862» løyser seg til Bergsfjordvegen (fv. 862) på 69.39319/17.44401, som les 170,1 moh og ligg 494 m frå registerpunktet for Krokelvdalen (Dal, 69.39526/17.43283). Fv. 862 er hovudvegen på ytre Senja og er brøytt heile året.",
+   "Fri Flyt oppgir 580 høgdemeter; den ruta lina stig 607. Skilnaden er 27 m og kortet ber den rutede gainen."
+  ],
+  "notes": "Fri Flyt fører turen i Senja-indeksen sin: «Ruta følger jevnt stigende småkupert terreng oppover med litt småskog i begynnelsen. Det finnes noen små heng oppover som er 30–40 grader, så les terrenget godt slik at du unngår disse. Fra 500 moh. flater det litt ut, og du dreier sakte, men sikkert sporet mer mot nordvest og kommer inn på ryggen opp mot toppen. Mellom 600–740 moh. er det partier som er 27–30 grader.» NED er same traséen «med mulige variasjoner etter ønsker og behov»."
+ },
+ "lukttinden": {
+  "season": "apr–jun",
+  "aspect": "NV",
+  "grade": 2,
+  "roadClosedInWinter": false,
+  "gradeReason": "Grad 2. Ingen av kjeldene gir eit bratthetsfelt, men ut.no skildrar to vegar opp på ryggen og korridoren er lagd på den slakaste: lina måler 28,1 grader som brattaste samanhengande parti og 19,6 som brattaste hundremetersbelte, mot ut.nos «opp i 30 grader» for det alternativet. 1129 høgdemeter er den største stiginga i runden. Grad 3 er ikkje sett fordi lina held seg under 30 heile vegen; det som ber grada opp frå 1 er lengda på fallet og skavlen på nordaustsida av varden.",
+  "teaserNo": "1129 høgdemeter frå garden på Kammen: traktorvegen, skogen mot bekken mellom Nordtinden og Lukttinden, og den slake ryggen opp til Vefsns mest markerte topp.",
+  "teaserEn": "1129 metres of ascent from the farm at Kammen: the tractor road, the forest toward the stream between Nordtinden and Lukttinden, and the gentler ridge to the most striking summit in Vefsn.",
+  "hazardNotes": "Fri Flyt: KAST ikkje klassifisert, ingen bratthetsfelt, men «Toppen av Lukttinden er ikke omkranset av bre og er dermed en teknisk enklere tur enn Okstindene.» ut.no er den strenge kjelda: «På grunn av bratthet bør den ikke gåes ved skredfare», alternativ 1 opp på ryggen er «ganske bratt, med opptil 40 grader helning», alternativ 2 «opp i 30 grader» men med «overhengende skavler med utløpsområde mot denne ryggen», og på slutten «et nytt bratt heng på ca 35 grader for å nå toppen. Her er det ofte ganske isete.» Og: «Vær obs på skavlen som dannes på nordøstsiden av varden. Skavler bryter 45 grader i snøen og kan dra deg med selv om du står på fast grunn. Det er stup på begge sider.»",
+  "sources": [
+   "https://www.friflyt.no/topptur/skiturer-helgeland/turbeskrivelse-lukttinden",
+   "https://ut.no/turforslag/1112744/topptur-til-lukttinden-1348",
+   "https://www.friflyt.no/topptur/helgeland"
+  ],
+  "confidence": "medium",
+  "corrections": [
+   "**Høgda er ut.nos, ikkje Fri Flyts.** Fri Flyt oppgir 1342 moh; ut.no skriv 1348, og toppsøket løyser **1347,8** på registerpunktet for Lukttinden (Fjell, Vefsn, 65.99044/13.54468). Kortet ber 1348.",
+   "**Korridoren er lagd på ut.nos alternativ 2, ikkje alternativ 1.** Alternativ 1 er det inntegna sporet hans og «ganske bratt, med opptil 40 grader helning»; alternativ 2 følgjer dalen lenger inn mot søraust og «den noe mindre bratte ryggen opp til høyre, som er en vanlig rute sommerstid». Den ferdige lina måler 28,1 grader som brattaste samanhengande parti, altså innanfor alternativ 2 og godt under alternativ 1.",
+   "Startstaden «Kammen gård … Parker ved enden av veien» løyser seg til vegenden på Kamvegen, 66.01680/13.51377, som les 230,5 moh. ut.no oppgir «vel 1100 høydemeter» frå denne parkeringa; lina stig 1129.",
+   "Sesongen apr–jun er ut.nos eiga (sesongfeltet hans er april, mai, juni), og han fører turen som **skitur**. Fri Flyt har ikkje sesongfelt for henne."
+  ],
+  "notes": "Fri Flyt: «Følg traktorveien videre fra parkeringen i omtrent 300-400 meter. Ta deretter opp til venstre i retning sør-sørøst. Ruta følger rett oppover mot toppen, og den enkleste veien opp er å krysse seg oppover i denne himmelretningen hele veien opp til toppen.» ut.no er mykje meir detaljert og er den kjelda korridoren følgjer: sporet startar på skogsvegen ved garden, opp gjennom skogen mot bekken i dalen mellom Nordtinden og Lukttinden (ca 400 moh), så to alternativ opp på ryggen (720 moh), og derfrå «Følg ryggen rett opp. Unngå å gå på kanten til høyre (SV), her er det stupbratt. Det er jevnt bratt oppover, mellom ca 20-30 grader.» Nedkøyringa er nordvend: «I de svakt konkave helningene som følger nesten hele fjellsiden nedover kan det samles mye fin snø… du kan være heldig og nyte puddersnø godt ut i juni.»"
+ },
+ "tortenviktinden": {
+  "season": "feb–mai",
+  "aspect": "SØ",
+  "grade": 2,
+  "roadClosedInWinter": false,
+  "gradeReason": "Grad 2 på lengda, ikkje på henget: 1023 høgdemeter frå 15 moh over 5,57 km, med brattaste hundremetersbelte på 18,6 grader og brattaste samanhengande parti på 23,7. Ingen av kjeldene gir eit bratthetsfelt; Visit Helgeland graderer turen «Challenging, long», og det er lengda og den ustabile kystsesongen som ber grada.",
+  "teaserNo": "1023 høgdemeter frå Neset ved Flostrand: rett opp gjennom skogen, vestover på rabbane over det ulendte flatpartiet og opp den slake helninga til utsikta over Helgelandskysten.",
+  "teaserEn": "1023 metres of ascent from Neset by Flostrand: straight up through the forest, west along the ribs across the broken shelf, and up the gentle rise to the view over the Helgeland coast.",
+  "hazardNotes": "Fri Flyts faremoment: «Grøveldalen har høye og bratte sva på begge sider som kan løsne, særlig om våren.» Grøveldalen er registerført som Botn på 66.31998/13.23767, 2,5 km sør for toppen, og ruta går ikkje der. Visit Helgeland ber deg sjekke både vêr- og skredvarsel, og peikar på at terrenget er «mostly free of trees», som gjer skredvurderinga viktigare.",
+  "sources": [
+   "https://www.friflyt.no/topptur/skiturer-helgeland/turbeskrivelse-tortenviktinden",
+   "https://visithelgeland.com/en/trip/ski-touring-tortenviktinden-1027-m/",
+   "https://www.friflyt.no/topptur/helgeland"
+  ],
+  "confidence": "medium",
+  "corrections": [
+   "Registeret set **Tortenviktinden** (Fjell) i **Lurøy** på 66.34217/13.23361, medan tilkomsten frå Flostrand ligg i Rana. Toppsøket løyser 1028,5 mot publiserte 1027.",
+   "Startstaden «Neset» løyser seg til garden Neset, 66.32307/13.33398, som les 15,0 moh — 4,94 km frå toppen i luftline. 1028 − 15 = 1013 mot Fri Flyts «1000 høydemeter» og Visit Helgelands «1025 m»; lina stig 1018 over 5,40 km mot Visit Helgelands 5,2 km.",
+   "Ingen kjelde publiserer sesongmånader. Fri Flyt skriv at «den kystnære beliggenheten … gjør også at sesongen er ustabil med varierende snøforhold», og Visit Helgeland fører hovudruta som vintertur med alternativruta tilgjengeleg «after Easter». Kortets feb–mai er difor redaksjonell, og guiden seier det.",
+   "**Korridoren er lagd sør om tjernklynga på 785–792 moh.** Dei to fyrste linene kryssa høvesvis 140 og 90 meter vatn i eit belte med minst ti kartlagde tjern rett under toppryggen — nettopp det flate, ulendte partiet Fri Flyt skildrar med «små bekkedaler på tvers av fjellet». Omvegen sør om heile klynga kostar 0,17 km, gir 0 meter på vatn og senkar brattaste samanhengande parti frå 26,0 til 23,7 grader."
+  ],
+  "notes": "Fri Flyt: «Fra parkeringen går du rett opp til du kommer over skogen i nord-nordvestlig retning. Følg så vestover på rabbene til du naturlig svinger mer rett mot toppen. Etter at du har kommet igjennom skogen kommer du til et flatere parti som er noe ulendt, med små bekkedaler på tvers av fjellet. Herfra ser du ikke selve Tortenviktinden, men toppen ligger rett bak det høyeste punktet du ser. Gå rett mot dette, og følg deretter den slake helningen opp det siste stykket til toppen.» NED er same ruta. Visit Helgeland fører same turen med 5,2 km, 1 025 høgdemeter og 3–4 timar éin veg, og ei alternativrute på 4,3 km og 1 005 høgdemeter med brattare oppstigning og mindre traversering på nedturen."
  }
 }
