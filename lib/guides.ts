@@ -65,6 +65,45 @@ export const GUIDES: Record<string, TourGuide> = {
       caption: "Fra 14 moh ved Galtelvas utløp til 1219 på toppen — 1215 høydemeter på 4,2 kilometer, med det bratteste mellom 800 og 860.",
     },
   },
+  "store-skalltinden": {
+    slug: "store-skalltinden",
+    intro:
+      "981 høydemeter og 6,04 km fra havet i Glimbukta til Store Skalltinden på 901 — hele fjellet fra fjæra, på austsida av Ringvassøya. Fri Flyt gir KAST 2 – Utfordrende med parti på 30–40 grader i de siste 800 metrene mot toppen; linja måler 21,6 grader i bratteste hundremetersbelte og 27,0 i bratteste sammenhengende parti, og den kuperte ryggen gir tilbake 91 høydemeter på veien — det er derfor kortet bærer 980 der kilden regner 900.",
+    ascent: [
+      "Fra det gamle grustaket i Glimbukta ved fv. 863 — 11,0 moh, vinteråpen fylkesveg. Du går opp lia mot vatnet på 100: skogen slutter allerede på 185 moh etter 1,39 km, med åpent område fra 199. Videre mot Skallvatnet på 320 er det småbratte parti mellom 230 og 300 moh som kilden ber deg navigere med omhu — beltet fra 300 til 400 måler 11,0 grader.",
+      "Linja holder land ved sørenden av Skallvatnet, slik kilden legger den, og går opp ryggen vestover. Ryggen er kupert — 91 høydemeter gis tilbake underveis — og fra flata sørvest for punkt 695 sikter du nord-nordvest. Vatnet på 543 moh der er en del av linja: den krysser 103 meter av det, aldri mer enn 18 meter fra land — et naturlig vatn, ikke regulert, og på vinterisen er det ordinær vinterferdsel.",
+      "De siste 800 metrene mot toppen er turens alvor: beltet fra 700 til 800 moh måler 21,6 grader over 225 meter grunn med det bratteste sammenhengende partiet på 27,0 mellom 763 og 785, og kilden gir parti på 30–40 grader som krever terrengvurdering — med bratt terreng på begge sider av linja. Varden på 901; registerets Store Skalltinden ligger 31 m fra Fri Flyts publiserte punkt, og toppsøket løser 901,1 mot publiserte 900.",
+    ],
+    descent: [
+      "Ned samme vei, med varianter etter forholdene. Sørøstsektoren linja følger er den slakeste på toppen — 16,5 grader i snitt over 500 meter med 33,7 som bratteste 60-metersvindu 240 til 300 meter ut.",
+      "Resten av toppen er en annen historie: nordaust, aust og sørvest faller 40,2, 41,6 og 40,8 grader i snitt. Bjørnskardalen er kildens KAST 3-alternativ og hører til stabile dager. Fjordutsikten fra varden — Lyngsalpene over Ullsfjorden — er den samme uansett hvilken dag du velger; linja ned bør ikke være det.",
+    ],
+    avalanche: [
+      {
+        title: "Ruta",
+        body: "KAST 2 – Utfordrende hos Fri Flyt, faremomenter løsneområder, utløpsområder og skavler. Linja måler 27,0 grader der den er brattest, men kilden gir parti på 30–40 i de siste 800 metrene — og mellom 600 og 800 står bratt terreng på begge sider av linja. Grad 3 står av samme grunn: sjø til topp med tre faremomenter er mer enn en helningsvinkel.",
+      },
+      {
+        title: "De småbratte partiene",
+        body: "Mellom 230 og 300 moh, over Skallvatnet-trinnet, ligger de små bratte partiene kilden ber deg navigere med omhu. De er korte — og de er tidlig på turen, før dagens stabilitet har vist seg. Les dem som en prøve på resten.",
+      },
+      {
+        title: "Vatnet på 543",
+        body: "Linja krysser 103 meter av det naturlige vatnet sørvest for punkt 695, aldri mer enn 18 meter fra land. Vinteris på et lite fjellvatn er ordinær vinterferdsel — men det er verdt å vite at det er et vatn du står på, særlig tidlig og seint i sesongen.",
+      },
+      {
+        title: "Før du går",
+        body: "Store Skalltinden ligger i varslingsregionen Tromsø, en A-region med daglig skredvarsel gjennom sesongen — sjekk varsom.no. Sesongen januar–mai er Fri Flyts. Ta med sender/mottaker, søkestang og spade, og les terrenget selv: et varsel beskriver regionen, ikke flanken du står i.",
+      },
+    ],
+    elevationProfile: {
+      path: "M0,200 L25,193 L43,180 L62,173 L78,177 L103,174 L125,169 L152,156 L174,147 L192,145 L214,137 L234,129 L250,123 L273,118 L295,115 L313,112 L335,108 L355,99 L379,89 L401,91 L418,91 L439,91 L463,82 L487,81 L510,75 L532,62 L553,46 L568,35 L582,24 L600,18",
+      startLabel: "11 moh",
+      endLabel: "901 moh",
+      distanceLabel: "6,0 km",
+      caption: "981 høydemeter og 6,04 km fra Glimbukta om Skallvatnet og den kuperte ryggen, med skoggrensa på 185 moh og det bratteste — 27,0 grader mellom 763 og 785 moh — i de siste 800 metrene.",
+    },
+  },
   "store-blamann": {
     slug: "store-blamann",
     intro:
@@ -174,6 +213,84 @@ export const GUIDES: Record<string, TourGuide> = {
       caption: "450 høydemeter og 2,32 km fra Storelva skistadion på 20 moh, ut av lysløypa på 96 moh og opp den åpne sørøstsida over 303 og 431.",
     },
   },
+  storfjellet: {
+    slug: "storfjellet",
+    intro:
+      "1053 høydemeter på bare 3,27 km — Storfjellet reiser seg rett opp fra Breivikeidet, og linja er deretter: jevnt bratt fra skogen og opp, med beltet fra 500 til 600 moh på 29,7 grader og det bratteste sammenhengende partiet på 36,5. Fri Flyt gir KAST 2 – Utfordrende med 30–40 grader mellom 950 og 1040, en renne som fungerer som terrengfelle i dalen — og et østheng med en skredulykke fra 1997 som tok to liv. Et anonymt fjell, sier andrekilden, med varierte nedkjøringer og fin utsikt.",
+    ascent: [
+      "Fra fv. 91 i området der den krysser Storelva — 41 moh på Breivikeidvegen, og 1089 minus 41 forliker kildens 1050 høydemeter. Du går mot Russevankskardet langs nordaustsida av elvedalen: beltet fra 200 til 300 moh måler 21,1 grader, og renna i dalen er kildens eget faremoment — den fungerer som samletrakt for skred fra hengene omkring, så linja holder seg på dalsida, ikke i botnen. Skogen slutter på 455 moh etter 1,8 km, med åpent område fra 463.",
+      "På rundt 400 svinger du mot nord og aust, opp på sørryggen som kommer ned fra toppen. Overgangen er turens bratteste: beltet fra 500 til 600 moh måler 29,7 grader over bare 198 meter grunn, med det bratteste sammenhengende partiet — 36,5 grader — mellom 531 og 554 moh.",
+      "Ryggen tar deg til topps: 24,9 grader fra 800 til 900 moh og 23,7 fra 900 til 1000, som er linjas svar på kildens «30–40 grader mellom 950 og 1040» — ryggen skrår der flanken står. Varden på 1088; registerets Storfjellet ligger 46 m fra Fri Flyts publiserte punkt, og toppsøket løser 1088,2 mot publiserte 1089.",
+    ],
+    descent: [
+      "Normalen følger ruta opp — sørvestsektoren er den slakeste på toppen, 26,2 grader i snitt med 37,0 som bratteste 60-metersvindu, og det er den eneste: sørøst faller 34,8 i snitt med et vindu på 59,9, sør 36,3 med 53,1, og nordsiden har 53,9 grader bare 100 til 160 meter ut.",
+      "Østhenget fra Krokenga er kildens KAST 3-alternativ, med lang eksponering i både løsne- og utløpsområder og 30–40 grader fra 240 moh og opp. Skredulykken i 1997, som tok to liv, gikk her. Det er ikke linja på dette kortet, og det er ikke en vei ned man tar på følelsen.",
+    ],
+    avalanche: [
+      {
+        title: "Ruta",
+        body: "KAST 2 – Utfordrende hos Fri Flyt, med 30–40 grader mellom 950 og 1040 på flanken og linjas eget bratteste på 36,5 grader i overgangen opp på ryggen. Nesten hele turen ligger i eller inntil terreng over 30 grader — dette er en tur for stabile forhold.",
+      },
+      {
+        title: "Renna i dalen",
+        body: "Kildens eget faremoment: renna fungerer som samletrakt for skred fra hengene omkring. Dalen inn mot skardet er mottakerterreng — hold linja på dalsida og avstanden til hengene som en del av sporvalget.",
+      },
+      {
+        title: "Østhenget",
+        body: "KAST 3 – Komplekst, lang eksponering i løsne- og utløpsområder, 30–40 grader fra 240 moh — og en skredulykke i 1997 som tok to liv. Historien er en del av fjellet, og den er grunnen til at normalruta går på ryggen.",
+      },
+      {
+        title: "Før du går",
+        body: "Storfjellet ligger i varslingsregionen Lyngen, en A-region med daglig skredvarsel gjennom sesongen — sjekk varsom.no. Sesongen januar–mai er Fri Flyts. Ta med sender/mottaker, søkestang og spade, og les terrenget selv: et varsel beskriver regionen, ikke flanken du står i.",
+      },
+    ],
+    elevationProfile: {
+      path: "M0,200 L32,196 L65,195 L98,193 L131,189 L172,179 L193,171 L213,162 L230,156 L258,150 L285,141 L305,137 L315,133 L338,127 L359,120 L376,111 L392,103 L407,95 L425,87 L437,82 L453,74 L478,67 L497,60 L515,51 L536,43 L551,36 L569,29 L587,23 L600,18",
+      startLabel: "41 moh",
+      endLabel: "1088 moh",
+      distanceLabel: "3,3 km",
+      caption: "1053 høydemeter og 3,27 km fra Breivikeidet opp sørryggen, med skoggrensa på 455 moh og det bratteste — 36,5 grader mellom 531 og 554 moh — i overgangen opp på ryggen.",
+    },
+  },
+  skarlitinden: {
+    slug: "skarlitinden",
+    intro:
+      "937 høydemeter og 6,34 km fra Sandeggen på Breivikeidet til varden på 857 — en KAST 1-tur med bratteste punkt under 27 grader på selve ruta, der terrenget rundt er historien: elvedalen du følger kan fungere som terrengfelle for skred fra hengene i nord, og rennene på sørøstsiden faller 41 grader i snitt mot dalen du kom fra. Linja samler et hundretall høydemeter mer enn kildens 835, fordi skaret og platået gir tilbake 110 på veien.",
+    ascent: [
+      "Fra skogsvegen ved Sandeggen — 31 moh på Breivikeidvegen, fv. 91, vinteråpen hovedveg — følger du vegen inn og tar av langs nordsida av Russevankelva, opp gjennom storsteinet terreng. Beltet fra 100 til 200 moh måler 14,7 grader; skogen slutter allerede på 318 moh etter 2,42 km, med åpent område fra 327.",
+      "På rundt 400 flater det ut inn i Russevankskaret — 452 moh der linja går, og registerets Russevankskaret leser 446. Her er kildens terrengfelle: dalen samler utløp fra hengene i nord, så avstanden til dem er en del av sporvalget. Ved punkt 511 svinger du mot sør-søraust, og linja gir tilbake det bratteste partiet sitt her — 30,5 grader ned mellom 539 og 516 moh, dippen etter skaret som er grunnen til at turen samler 937 høydemeter der kilden regner 835.",
+      "Fra svingen stiger det jevnt mot toppplatået: beltet fra 600 til 700 moh er turens bratteste oppover, 21,1 grader over 269 meter grunn, og over 700 slakner det til 13,1 og 8,1. Platået passerer 847 før varden på 857 — Fri Flyts publiserte GPS-punkt, registerets punkt (som har både Skarlitinden og Skardlitinden) og terrengmodellens 857,5 faller sammen.",
+    ],
+    descent: [
+      "Normalen er sporet ditt opp, og platåsiden er slak: nordvest måler 3,3 grader i snitt og vest 11,0. Hold igjen mot kanten i sørøst — den faller 41,4 grader i snitt med 52,5 som bratteste 60-metersvindu 120 til 180 meter ut fra varden, og sørsiden 36,1 med 48,8 bare 50 til 110 meter ut.",
+      "Østerenna er kildens alternativ ned mot øst: KAST 3 – Komplekst, 30–45 grader mellom 760 og 380 moh. Østsiden måler 21,5 grader i snitt med 45,2 som bratteste vindu 340 til 400 meter ut — skikjøring i skredterreng, og et valg som tas på stabilitet, ikke på fristelse.",
+    ],
+    avalanche: [
+      {
+        title: "Ruta",
+        body: "KAST 1 – Enkelt hos Fri Flyt, bratteste punkt under 27 grader på oppturen — og linjas eget bratteste parti er faktisk en nedoverbakke, 30,5 grader i dippen etter punkt 511. Kortet bærer grad 2: terrenget rundt linja er det som krever hodet.",
+      },
+      {
+        title: "Terrengfella",
+        body: "Fri Flyts faremoment er «Terrengfelle. Skavler». Elvedalen langs Russevankelva samler utløp fra hengene i nord — du går i mottakerterreng, og avstanden til hengene er en del av sporvalget hele veien inn skaret.",
+      },
+      {
+        title: "Kanten og rennene",
+        body: "Sørøst- og sørsiden av platået faller 41,4 og 36,1 grader i snitt mot Breivikeidet, med vinduer på 52,5 og 48,8 grader nær varden — og skavlene bygger ut over kanten. I flatt lys er platåkanten stedet å ha tenkt gjennom før du står der.",
+      },
+      {
+        title: "Før du går",
+        body: "Skarlitinden ligger i varslingsregionen Lyngen, en A-region med daglig skredvarsel gjennom sesongen — sjekk varsom.no. Sesongen januar–mai er Fri Flyts. Ta med sender/mottaker, søkestang og spade, og les terrenget selv: et varsel beskriver regionen, ikke flanken du står i.",
+      },
+    ],
+    elevationProfile: {
+      path: "M0,199 L25,197 L46,195 L67,199 L93,198 L118,193 L140,188 L161,175 L182,163 L208,147 L233,134 L255,128 L280,116 L306,112 L328,107 L351,107 L373,104 L392,98 L405,86 L421,98 L446,100 L468,97 L488,83 L506,69 L519,57 L536,44 L557,33 L574,27 L600,18 L600,18",
+      startLabel: "31 moh",
+      endLabel: "858 moh",
+      distanceLabel: "6,3 km",
+      caption: "937 høydemeter og 6,34 km fra Sandeggen gjennom Russevankskaret, med skoggrensa på 318 moh og det bratteste — 30,5 grader — i dippen etter punkt 511.",
+    },
+  },
   fastdalstinden: {
     slug: "fastdalstinden",
     intro:
@@ -249,6 +366,45 @@ export const GUIDES: Record<string, TourGuide> = {
       endLabel: "1238 moh",
       distanceLabel: "8,3 km",
       caption: "8,2 km og 1209 høydemeter: skogsbilveg til Dalbotnvatnet, bakken opp til Salen, sørryggen til varden.",
+    },
+  },
+  gabrielfjellet: {
+    slug: "gabrielfjellet",
+    intro:
+      "1139 høydemeter og 4,39 km fra Stormo ved fv. 91 til toppen skifolket kaller Gabrielfjellet — og registeret kaller Iverfjellet. Fri Flyt gir KAST 2 – Utfordrende med bratteste parti 30–35 grader; linja måler 24,9 grader i bratteste hundremetersbelte og 29,2 i bratteste sammenhengende parti, og over det bratte venter store flak: beltet fra 900 til 1000 moh måler 9,0 grader over 631 meter grunn. Én lang stigning, sier andrekilden, med den bratteste delen på midten — og det stemmer på tallene.",
+    ascent: [
+      "Fra den nordligste av de to Stormo-gårdene langs fv. 91 — registerets Stormo leser 75,9 moh, og parkeringa er langs vegen slik kilden sier. Du går sørover gjennom glissen skog: beltet fra 100 til 200 moh måler 13,0 grader, og skogen slutter allerede på 420 moh etter 1,4 km, med åpent område fra 437.",
+      "Fra de åpne partiene dreier ruta mer mot aust, og mellom 400 og 850 moh er terrenget rullende rygger med flate parti imellom — 17,3 grader fra 400 til 500, 14,3 fra 500 til 600. Så kommer det bratteste: beltet fra 600 til 700 moh måler 24,9 grader over 226 meter grunn, med det bratteste sammenhengende partiet på 29,2 mellom 663 og 680. Kilden gir 30–35 grader her og ber om bevisst linjevalg — flanken står brattere enn diagonalene linja skjærer den i.",
+      "Over 850 slakner det mot toppen, og de store flakene tar over: 9,0 grader fra 900 til 1000 moh over 631 meter grunn, så 15,6 og 14,7 opp de siste ryggene til varden på 1214. Fri Flyts publiserte GPS-punkt ligger 47 m fra registerets Iverfjellet, og toppsøket løser 1213,7 mot publiserte 1213 — registerets eget «Gabrielfjellet» er en skulder 3,2 km nordaust, og outdooractive fører turen under begge navnene.",
+    ],
+    descent: [
+      "Nedfarten er nordover, samme vei som opp — og nordsiden er den slake sektoren på toppen: 13,5 grader i snitt over 500 meter med 17,8 som bratteste 60-metersvindu. Med stabilitet i orden gir det bratteste partiet fin kjøring med variantmuligheter; uten den kjører du flakene over og traverserer forbi.",
+      "Hold igjen mot aust og sørøst fra varden: 40,8 og 38,8 grader i snitt, med 50,3 og 48,1 som bratteste vinduer rett under toppen. Vestsiden — kildens KAST 3-alternativ — måler 31,2 i snitt med parti på 40–45 i kildens egen beskrivelse.",
+    ],
+    avalanche: [
+      {
+        title: "Ruta",
+        body: "KAST 2 – Utfordrende hos Fri Flyt, bratteste parti 30–35 grader med krav til linjevalg. Linja måler 29,2 grader der den er brattest, mellom 663 og 680 moh — det er partiet som avgjør om dagen har stabiliteten turen trenger, og det kan traverseres slakere enn fallinja.",
+      },
+      {
+        title: "Løsne- og utløpsområder",
+        body: "Kildens faremomenter. Det bratte beltet mellom 600 og 700 ligger midt i linja, så utløpet ditt er terrenget du selv skal videre opp i — les flanken over deg før du går inn i den, og ta de flate partiene mellom ryggene som lesepunkter.",
+      },
+      {
+        title: "Østkanten",
+        body: "Aust- og sørøstsiden av toppen faller 40,8 og 38,8 grader i snitt med vinduer over 48 rett under varden. Flakene mot toppen er store og oversiktlige — kanten der de slutter er det ikke. I flatt lys er det verdt å vite hvor den er før du står på den.",
+      },
+      {
+        title: "Før du går",
+        body: "Gabrielfjellet ligger i varslingsregionen Lyngen, en A-region med daglig skredvarsel gjennom sesongen — sjekk varsom.no. Sesongen desember–mai er Fri Flyts. Ta med sender/mottaker, søkestang og spade, og les terrenget selv: et varsel beskriver regionen, ikke flanken du står i.",
+      },
+    ],
+    elevationProfile: {
+      path: "M0,200 L21,193 L50,186 L75,179 L99,172 L124,167 L149,162 L166,155 L183,147 L204,140 L216,135 L234,128 L253,122 L278,116 L293,108 L308,99 L321,95 L337,88 L351,86 L370,81 L384,75 L407,68 L438,60 L460,57 L481,54 L505,48 L531,39 L549,35 L579,24 L600,18",
+      startLabel: "76 moh",
+      endLabel: "1214 moh",
+      distanceLabel: "4,4 km",
+      caption: "1139 høydemeter og 4,39 km fra Stormo, med skoggrensa på 420 moh, det bratteste — 29,2 grader mellom 663 og 680 moh — på midten, og store flak mot toppen.",
     },
   },
   rornestinden: {
@@ -360,6 +516,41 @@ export const GUIDES: Record<string, TourGuide> = {
       endLabel: "1289 moh",
       distanceLabel: "5,6 km",
       caption: "1252 høydemeter fra Eidebakken til varden; bratteste hundremeteren ligger mellom 800 og 900 moh, 24,5 grader i snitt.",
+    },
+  },
+  fagerfjellet: {
+    slug: "fagerfjellet",
+    intro:
+      "947 høydemeter og 4,30 km fra skolen på Fagernes til toppen på 957 — en populær og lett tilgjengelig KAST 1-tur med tidlig snø, der ingen hundremeter måler mer enn 17,2 grader og det bratteste sammenhengende partiet er 25,6, nede i skogen. Faren står på én side: skavlene mot nordaust bygger ut over vegger som måler over 70 grader i de bratteste vinduene. De fleste snur ved varden på 871, sier kilden selv — toppen ligger et småkupert stykke lenger inn.",
+    ascent: [
+      "Fra parkeringa på vestsida av skolen på Fagernes — 20,7 moh på flata, ved E8/fv. 91 i Ramfjorden. Du runder skoleområdet, opp den dyrka marka og inn i skogen med kurs for punkt 459. Beltet fra 100 til 200 moh er turens bratteste, 17,2 grader over 361 meter grunn, og det bratteste sammenhengende partiet ligger her: 25,6 grader mellom 193 og 215 moh. Skogen slutter på 519 moh etter 2,16 km, med åpent område fra 528.",
+      "Over skoggrensa svinger du austover langs den naturlige forsenkningen: 16,4 grader fra 500 til 600 moh og 16,3 fra 600 til 700, så flater det ut — 8,5 og 8,4 grader over beltene fra 700 til 900, den brede ryggen andrekildene beskriver. Varden på 871 er der de fleste snur, og utsikten over Ramfjorden er allerede hel.",
+      "Vil du videre går det i småkupert terreng mot 912 på vestsida og opp den siste stigningen — 12,8 grader i beltet over 900 — til toppen på 957. Fri Flyts publiserte GPS-punkt leser 956,1 på DTM1, og toppsøket løser 957,3 mot publiserte 957.",
+    ],
+    descent: [
+      "Ned samme vei. Vestsiden er målt slak — 14,6 grader i snitt over 500 meter med 17,8 som bratteste 60-metersvindu — og forsenkningen og skogen gir jevn kjøring hele veien til den dyrka marka.",
+      "Henrikskaret er kildens KAST 3-alternativ fra Fagerelvas utløp, med 30–35 grader mellom 660 og 740 moh gjennom tett skog inn i skardet. Det hører til stabile dager — og det er ikke linja på dette kortet.",
+    ],
+    avalanche: [
+      {
+        title: "Ruta",
+        body: "KAST 1 – Enkelt hos Fri Flyt, bratteste punkt under 27 grader — og linja holder det: 25,6 grader på det bratteste, i skogen. Over skoggrensa er ryggen bred og slak. Dette er turen for dager da varselet sier at bratt terreng ikke er stedet å være.",
+      },
+      {
+        title: "Skavlene",
+        body: "Kildens faremoment, og målingen sier hvor alvorlig det er: nordaust- og austsiden faller 53,2 og 48,6 grader i snitt, med 71,2 og 70,4 grader som bratteste 60-metersvinduer 60 til 140 meter ut fra toppunktet. Skavlene bygger ut over den kanten. Hold avstand til kanten mot nordaust hele veien langs ryggen — i flatt lys er det den ene regelen turen har.",
+      },
+      {
+        title: "Før du går",
+        body: "Fagerfjellet ligger i varslingsregionen Lyngen, en A-region med daglig skredvarsel gjennom sesongen — sjekk varsom.no. Sesongen november–mai er Fri Flyts, og tidlig snø er en del av fjellets rykte. Ta med sender/mottaker, søkestang og spade, og les terrenget selv: et varsel beskriver regionen, ikke flanken du står i.",
+      },
+    ],
+    elevationProfile: {
+      path: "M0,200 L28,196 L50,189 L76,179 L94,170 L113,162 L126,159 L145,150 L170,142 L201,133 L220,127 L234,122 L258,118 L282,107 L301,103 L320,94 L339,85 L353,77 L377,69 L396,63 L420,60 L446,54 L476,47 L498,41 L521,39 L540,35 L559,32 L572,26 L596,19 L600,18",
+      startLabel: "21 moh",
+      endLabel: "957 moh",
+      distanceLabel: "4,3 km",
+      caption: "947 høydemeter og 4,30 km fra Fagernes om punkt 459 og varden på 871, med skoggrensa på 519 moh og det bratteste — 25,6 grader mellom 193 og 215 moh — nede i skogen.",
     },
   },
   "hesten-segla": {

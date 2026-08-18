@@ -140,4 +140,10 @@ NEW_TOURS = {
     "mjolvafjellet": ("Mjølvafjellet", "Romsdal"),
     "ospetinden": ("Øspetinden", "Romsdal"),
     "middagstinden": ("Middagstinden", "Romsdal"),
+    # — Troms-runden: fem rundt Tromsø — Breivikeidet, Ramfjord og Ringvassøya. —
+    "skarlitinden": ("Skarlitinden", "Troms"),
+    "storfjellet": ("Storfjellet", "Troms"),
+    "gabrielfjellet": ("Gabrielfjellet", "Troms"),
+    "fagerfjellet": ("Fagerfjellet", "Troms"),
+    "store-skalltinden": ("Store Skalltinden", "Troms"),
 }

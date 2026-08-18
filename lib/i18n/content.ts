@@ -268,6 +268,16 @@ export const TOUR_TEASER_EN: Record<string, string> = {
     "1060 metres of ascent from the toll booth at Venås: the summer-farm road to Venåssetra, the bog across Stavvasselva, the big east-facing bowl — and the northeast ridge to the pyramid at the head of Måndalen.",
   middagstinden:
     "1310 metres of ascent from Herdslan in Innfjorden: the road along Berillvatnet, the stream gully to the col at Tindevatnet — and an often wind-scoured ridge, skis on the pack, before the west-facing summit flank.",
+  skarlitinden:
+    "940 metres of ascent from Sandeggen on Breivikeidet: along Russevankelva into Russevankskaret, a turn south-southeast at point 511 — and a long summit plateau to the cairn with the couloirs below.",
+  storfjellet:
+    "1050 metres of ascent straight up from Breivikeidet: along the river valley toward Russevankskardet, onto the south ridge at about 400 — and the ridge to the top with the steepest ground between 950 and 1040.",
+  gabrielfjellet:
+    "1140 metres of ascent from Stormo on the fv. 91: sparse forest south, rolling ridges from 400 to 850 — and broad fields all the way to the cairn on the mountain the register calls Iverfjellet.",
+  fagerfjellet:
+    "950 metres of ascent from the school at Fagernes: farmland, the forest toward point 459 and the hollow east to the cairn at 871 where most people turn — the summit lies a rolling stretch further in.",
+  "store-skalltinden":
+    "980 metres of ascent from the sea at Glimbukta: up past Skallvatnet at 320, the undulating ridge west — and the last 800 metres toward the summit with steep ground on both sides.",
 
 };
 
@@ -362,6 +372,43 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       endLabel: "1219 m",
       distanceLabel: "4.2 km",
       caption: "From 14 m at Galtelva's mouth to 1219 at the top — 1215 metres of climbing over 4.2 kilometres, with the steepest ground between 800 and 860.",
+    },
+  },
+  "store-skalltinden": {
+    intro:
+      "981 metres of ascent over 6.04 km from the sea at Glimbukta to Store Skalltinden at 901 — the whole mountain from the shore, on the east side of Ringvassøya. Fri Flyt rates it KAST 2 – Challenging with sections of 30–40 degrees in the last 800 metres toward the summit; the line measures 21.6 degrees in its steepest 100 m band and 27.0 in its steepest sustained stretch, and the undulating ridge gives back 91 vertical metres along the way — which is why the card carries 980 where the source counts 900.",
+    ascent: [
+      "From the old gravel pit at Glimbukta on the fv. 863 — 11.0 m, a winter-open county road. You climb the hillside toward the lake at 100: the forest ends already at 185 m after 1.39 km, with open ground from 199. On toward Skallvatnet at 320 come the small steep sections between 230 and 300 m the source asks you to navigate with care — the band from 300 to 400 measures 11.0 degrees.",
+      "The line keeps to land at the south end of Skallvatnet, as the source puts it, and climbs the ridge westward. The ridge undulates — 91 vertical metres are given back along the way — and from the flat southwest of point 695 you aim north-northwest. The lake at 543 m there is part of the line: it crosses 103 metres of it, never more than 18 metres from shore — a natural lake, not regulated, and on winter ice that is ordinary winter travel.",
+      "The last 800 metres toward the summit are the serious part: the band from 700 to 800 m measures 21.6 degrees over 225 metres of ground with the steepest sustained stretch at 27.0 between 763 and 785, and the source gives sections of 30–40 degrees requiring terrain assessment — with steep ground on both sides of the line. The cairn at 901; the register's Store Skalltinden lies 31 m from Fri Flyt's published point, and the summit search resolves 901.1 against a published 900.",
+    ],
+    descent: [
+      "Down the same way, with variants by conditions. The southeast sector the line follows is the gentlest on the summit — 16.5 degrees mean over 500 metres with 33.7 as the steepest 60 m window 240 to 300 metres out.",
+      "The rest of the summit is another story: northeast, east and southwest fall 40.2, 41.6 and 40.8 degrees mean. Bjørnskardalen is the source's KAST 3 alternative and belongs to stable days. The fjord view from the cairn — the Lyngen Alps across Ullsfjorden — is the same whichever day you choose; the line down should not be.",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "KAST 2 – Challenging by Fri Flyt, hazards release zones, runout zones and cornices. The line measures 27.0 degrees at its steepest, but the source gives sections of 30–40 in the last 800 metres — and between 600 and 800 steep ground stands on both sides of the line. Grade 3 stands for the same reason: sea to summit with three named hazards is more than a slope angle.",
+      },
+      {
+        title: "The small steep sections",
+        body: "Between 230 and 300 m, above the Skallvatnet step, sit the small steep sections the source asks you to navigate with care. They are short — and they come early in the tour, before the day's stability has shown itself. Read them as a test of the rest.",
+      },
+      {
+        title: "The lake at 543",
+        body: "The line crosses 103 metres of the natural lake southwest of point 695, never more than 18 metres from shore. Winter ice on a small mountain lake is ordinary winter travel — but it is worth knowing there is a lake under you, especially early and late in the season.",
+      },
+      {
+        title: "Before you go",
+        body: "Store Skalltinden lies in the Tromsø forecast region, an A-region with a daily avalanche bulletin through the season — check varsom.no. The January–May season is Fri Flyt's. Carry transceiver, probe and shovel, and read the terrain yourself: a bulletin describes the region, not the flank you are standing in.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "11 m",
+      endLabel: "901 m",
+      distanceLabel: "6.0 km",
+      caption: "981 metres of ascent and 6.04 km from Glimbukta via Skallvatnet and the undulating ridge, with the treeline at 185 m and the steepest ground — 27.0 degrees between 763 and 785 m — in the last 800 metres.",
     },
   },
   "store-blamann": {
@@ -467,6 +514,80 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       caption: "450 metres of climbing and 2.32 km from the Storelva ski stadium at 20 m, off the lit trail at 96 m and up the open south-east side past 303 and 431.",
     },
   },
+  storfjellet: {
+    intro:
+      "1053 metres of ascent over only 3.27 km — Storfjellet rises straight out of Breivikeidet, and the line matches: evenly steep from the forest up, with the band from 500 to 600 m at 29.7 degrees and the steepest sustained stretch at 36.5. Fri Flyt rates it KAST 2 – Challenging with 30–40 degrees between 950 and 1040, a gully acting as a terrain trap in the valley — and an east face with a 1997 avalanche that took two lives. An anonymous mountain, says the second source, with varied descents and a fine view.",
+    ascent: [
+      "From the fv. 91 in the area where it crosses Storelva — 41 m on Breivikeidvegen, and 1089 minus 41 reconciles the source's 1050 vertical metres. You head toward Russevankskardet along the northeast side of the river valley: the band from 200 to 300 m measures 21.1 degrees, and the gully in the valley is the source's own hazard — it acts as a collecting funnel for avalanches off the surrounding slopes, so the line keeps to the valley side, not the floor. The forest ends at 455 m after 1.8 km, with open ground from 463.",
+      "At about 400 you swing north and east, onto the south ridge coming down from the summit. The transition is the steepest of the tour: the band from 500 to 600 m measures 29.7 degrees over only 198 metres of ground, with the steepest sustained stretch — 36.5 degrees — between 531 and 554 m.",
+      "The ridge takes you to the top: 24.9 degrees from 800 to 900 m and 23.7 from 900 to 1000, which is the line's answer to the source's «30–40 degrees between 950 and 1040» — the ridge slants where the flank stands. The cairn at 1088; the register's Storfjellet lies 46 m from Fri Flyt's published point, and the summit search resolves 1088.2 against a published 1089.",
+    ],
+    descent: [
+      "The normal descent follows the route up — the southwest sector is the gentlest on the summit, 26.2 degrees mean with 37.0 as the steepest 60 m window, and it is the only one: southeast falls 34.8 mean with a window of 59.9, south 36.3 with 53.1, and the north side has 53.9 degrees only 100 to 160 metres out.",
+      "The east face from Krokenga is the source's KAST 3 alternative, with long exposure in both release and runout zones and 30–40 degrees from 240 m up. The 1997 avalanche that took two lives ran here. It is not the line on this card, and not a way down you take on a feeling.",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "KAST 2 – Challenging by Fri Flyt, with 30–40 degrees between 950 and 1040 on the flank and the line's own steepest at 36.5 degrees in the transition onto the ridge. Nearly the whole tour sits in or beside terrain over 30 degrees — this is a tour for stable conditions.",
+      },
+      {
+        title: "The gully in the valley",
+        body: "The source's own hazard: the gully acts as a collecting funnel for avalanches off the surrounding slopes. The valley toward the col is receiving terrain — keep the line on the valley side and your distance from the slopes as part of the track.",
+      },
+      {
+        title: "The east face",
+        body: "KAST 3 – Complex, long exposure in release and runout zones, 30–40 degrees from 240 m — and a 1997 avalanche that took two lives. The history is part of the mountain, and it is why the normal route takes the ridge.",
+      },
+      {
+        title: "Before you go",
+        body: "Storfjellet lies in the Lyngen forecast region, an A-region with a daily avalanche bulletin through the season — check varsom.no. The January–May season is Fri Flyt's. Carry transceiver, probe and shovel, and read the terrain yourself: a bulletin describes the region, not the flank you are standing in.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "41 m",
+      endLabel: "1088 m",
+      distanceLabel: "3.3 km",
+      caption: "1053 metres of ascent and 3.27 km from Breivikeidet up the south ridge, with the treeline at 455 m and the steepest ground — 36.5 degrees between 531 and 554 m — in the transition onto the ridge.",
+    },
+  },
+  skarlitinden: {
+    intro:
+      "937 metres of ascent over 6.34 km from Sandeggen on Breivikeidet to the cairn at 857 — a KAST 1 tour with the steepest point under 27 degrees on the route itself, where the surrounding terrain is the story: the river valley you follow can act as a terrain trap for avalanches off the slopes to the north, and the couloirs on the southeast side fall 41 degrees mean toward the valley you came from. The line collects a hundred-odd vertical metres more than the source's 835, because the col and the plateau give back 110 along the way.",
+    ascent: [
+      "From the forest road at Sandeggen — 31 m on Breivikeidvegen, the fv. 91, a winter-open main road — you follow the road in and branch off along the north side of Russevankelva, up through bouldery ground. The band from 100 to 200 m measures 14.7 degrees; the forest ends already at 318 m after 2.42 km, with open ground from 327.",
+      "At about 400 it flattens into Russevankskaret — 452 m where the line runs, and the register's Russevankskaret reads 446. Here is the source's terrain trap: the valley collects runouts from the slopes to the north, so your distance from them is part of the track the whole way in. At point 511 you swing south-southeast, and the line gives back its steepest stretch here — 30.5 degrees down between 539 and 516 m, the dip after the col that is why the tour collects 937 vertical metres where the source counts 835.",
+      "From the turn it climbs evenly onto the summit plateau: the band from 600 to 700 m is the tour's steepest upward, 21.1 degrees over 269 metres of ground, easing to 13.1 and 8.1 above 700. The plateau passes 847 before the cairn at 857 — Fri Flyt's published GPS point, the register point (which carries both Skarlitinden and Skardlitinden) and the terrain model's 857.5 coincide.",
+    ],
+    descent: [
+      "The normal way down is your own track, and the plateau side is gentle: northwest measures 3.3 degrees mean and west 11.0. Hold back from the southeast edge — it falls 41.4 degrees mean with 52.5 as the steepest 60 m window 120 to 180 metres out from the cairn, and the south side 36.1 with 48.8 only 50 to 110 metres out.",
+      "Østerenna is the source's alternative down to the east: KAST 3 – Complex, 30–45 degrees between 760 and 380 m. The east side measures 21.5 degrees mean with 45.2 as the steepest window 340 to 400 metres out — skiing in avalanche terrain, a choice made on stability, not on temptation.",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "KAST 1 – Simple by Fri Flyt, steepest point under 27 degrees on the ascent — and the line's own steepest stretch is in fact downhill, 30.5 degrees in the dip after point 511. The card carries grade 2: the terrain beside the line is what needs your head.",
+      },
+      {
+        title: "The terrain trap",
+        body: "Fri Flyt's hazards are «Terrengfelle. Skavler» — terrain trap and cornices. The river valley along Russevankelva collects runouts from the slopes to the north — you are travelling in receiving terrain, and your distance from those slopes is part of the track all the way into the col.",
+      },
+      {
+        title: "The edge and the couloirs",
+        body: "The southeast and south sides of the plateau fall 41.4 and 36.1 degrees mean toward Breivikeidet, with windows of 52.5 and 48.8 degrees near the cairn — and the cornices build out over the edge. In flat light the plateau rim is something to have thought through before you are standing on it.",
+      },
+      {
+        title: "Before you go",
+        body: "Skarlitinden lies in the Lyngen forecast region, an A-region with a daily avalanche bulletin through the season — check varsom.no. The January–May season is Fri Flyt's. Carry transceiver, probe and shovel, and read the terrain yourself: a bulletin describes the region, not the flank you are standing in.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "31 m",
+      endLabel: "858 m",
+      distanceLabel: "6.3 km",
+      caption: "937 metres of ascent and 6.34 km from Sandeggen through Russevankskaret, with the treeline at 318 m and the steepest ground — 30.5 degrees — in the dip after point 511.",
+    },
+  },
   fastdalstinden: {
     intro:
       "1271 metres of ascent and 7.32 km from the road end at Varto — a Lyngen classic with a long approach and a reservoir in the middle of the tour. Fri Flyt rates the normal route KAST 2 with a steepest point of 25–30 degrees, and the measured line is kinder than the reputation: steepest 100-metre band 19.5 degrees between 200 and 300 metres, steepest sustained stretch 25.5. The card's grade 3 is the scale, not the steepness: this is a 6–8 hour tour where the surrounding terrain — cornices, runout zones and a south side with fatal accidents in its history — is a different class from the track.",
@@ -538,6 +659,43 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       endLabel: "1238 m",
       distanceLabel: "8.3 km",
       caption: "8.2 km and 1209 vertical metres: forest road to Dalbotnvatnet, the slope up to Salen, the south ridge to the cairn.",
+    },
+  },
+  gabrielfjellet: {
+    intro:
+      "1139 metres of ascent over 4.39 km from Stormo on the fv. 91 to the summit skiers call Gabrielfjellet — and the register calls Iverfjellet. Fri Flyt rates it KAST 2 – Challenging with the steepest section at 30–35 degrees; the line measures 24.9 degrees in its steepest 100 m band and 29.2 in its steepest sustained stretch, and above the steep ground wait broad fields: the band from 900 to 1000 m measures 9.0 degrees over 631 metres of ground. One long climb, says the second source, steepest in the middle — and the numbers agree.",
+    ascent: [
+      "From the northernmost of the two Stormo farms along the fv. 91 — the register's Stormo reads 75.9 m, and the parking is along the road as the source says. You head south through sparse forest: the band from 100 to 200 m measures 13.0 degrees, and the forest ends already at 420 m after 1.4 km, with open ground from 437.",
+      "From the open sections the route turns more east, and between 400 and 850 m the terrain is rolling ridges with flats between — 17.3 degrees from 400 to 500, 14.3 from 500 to 600. Then the steepest part: the band from 600 to 700 m measures 24.9 degrees over 226 metres of ground, with the steepest sustained stretch at 29.2 between 663 and 680. The source gives 30–35 degrees here and asks for deliberate line choice — the flank stands steeper than the diagonals the line cuts it in.",
+      "Above 850 it eases toward the summit and the big fields take over: 9.0 degrees from 900 to 1000 m over 631 metres of ground, then 15.6 and 14.7 up the last ridges to the cairn at 1214. Fri Flyt's published GPS point lies 47 m from the register's Iverfjellet, and the summit search resolves 1213.7 against a published 1213 — the register's own «Gabrielfjellet» is a shoulder 3.2 km northeast, and outdooractive lists the tour under both names.",
+    ],
+    descent: [
+      "The descent is north, the way you came — and the north side is the gentle sector of the summit: 13.5 degrees mean over 500 metres with 17.8 as the steepest 60 m window. With stability in order the steepest section gives fine skiing with variants; without it you ski the fields above and traverse past.",
+      "Hold back from east and southeast off the cairn: 40.8 and 38.8 degrees mean, with 50.3 and 48.1 as the steepest windows directly below the top. The west side — the source's KAST 3 alternative — measures 31.2 mean with sections of 40–45 in the source's own description.",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "KAST 2 – Challenging by Fri Flyt, steepest section 30–35 degrees with line choice required. The line measures 29.2 degrees at its steepest, between 663 and 680 m — that stretch decides whether the day has the stability the tour needs, and it can be traversed at a gentler angle than the fall line.",
+      },
+      {
+        title: "Release and runout zones",
+        body: "The source's hazards. The steep band between 600 and 700 sits in the middle of the line, so your runout is the very terrain you are about to climb — read the flank above you before entering it, and use the flats between the ridges as reading points.",
+      },
+      {
+        title: "The east edge",
+        body: "The east and southeast sides of the summit fall 40.8 and 38.8 degrees mean with windows over 48 directly below the cairn. The fields toward the top are broad and readable — the edge where they end is not. In flat light it is worth knowing where it is before you are on it.",
+      },
+      {
+        title: "Before you go",
+        body: "Gabrielfjellet lies in the Lyngen forecast region, an A-region with a daily avalanche bulletin through the season — check varsom.no. The December–May season is Fri Flyt's. Carry transceiver, probe and shovel, and read the terrain yourself: a bulletin describes the region, not the flank you are standing in.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "76 m",
+      endLabel: "1214 m",
+      distanceLabel: "4.4 km",
+      caption: "1139 metres of ascent and 4.39 km from Stormo, with the treeline at 420 m, the steepest ground — 29.2 degrees between 663 and 680 m — in the middle, and broad fields toward the summit.",
     },
   },
   rornestinden: {
@@ -643,6 +801,39 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       endLabel: "1289 m",
       distanceLabel: "5.6 km",
       caption: "1252 metres from Eidebakken to the cairn; the steepest hundred lies between 800 and 900 m, at 24.5 degrees on average.",
+    },
+  },
+  fagerfjellet: {
+    intro:
+      "947 metres of ascent over 4.30 km from the school at Fagernes to the summit at 957 — a popular, accessible KAST 1 tour with early snow, where no hundred-metre band measures more than 17.2 degrees and the steepest sustained stretch is 25.6, down in the forest. The hazard stands on one side: the cornices toward the northeast build out over walls measuring above 70 degrees in their steepest windows. Most people turn at the cairn at 871, the source says itself — the summit lies a rolling stretch further in.",
+    ascent: [
+      "From the parking on the west side of the school at Fagernes — 20.7 m on the flat, by the E8/fv. 91 in Ramfjorden. You round the school grounds, climb the farmland and enter the forest aiming for point 459. The band from 100 to 200 m is the tour's steepest, 17.2 degrees over 361 metres of ground, and the steepest sustained stretch is here: 25.6 degrees between 193 and 215 m. The forest ends at 519 m after 2.16 km, with open ground from 528.",
+      "Above the treeline you swing east along the natural hollow: 16.4 degrees from 500 to 600 m and 16.3 from 600 to 700, then it flattens — 8.5 and 8.4 degrees over the bands from 700 to 900, the broad ridge the second sources describe. The cairn at 871 is where most people turn, and the view over Ramfjorden is already complete.",
+      "If you continue, it is rolling ground toward 912 on the west side and up the last climb — 12.8 degrees in the band above 900 — to the summit at 957. Fri Flyt's published GPS point reads 956.1 on DTM1, and the summit search resolves 957.3 against a published 957.",
+    ],
+    descent: [
+      "Down the same way. The west side measures gentle — 14.6 degrees mean over 500 metres with 17.8 as the steepest 60 m window — and the hollow and the forest give even skiing all the way to the farmland.",
+      "Henrikskaret is the source's KAST 3 alternative from the mouth of Fagerelva, with 30–35 degrees between 660 and 740 m through dense forest into the col. It belongs to stable days — and it is not the line on this card.",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "KAST 1 – Simple by Fri Flyt, steepest point under 27 degrees — and the line keeps it: 25.6 degrees at its steepest, in the forest. Above the treeline the ridge is broad and gentle. This is the tour for days when the bulletin says steep terrain is not the place to be.",
+      },
+      {
+        title: "The cornices",
+        body: "The source's hazard, and the measurement says how serious it is: the northeast and east sides fall 53.2 and 48.6 degrees mean, with 71.2 and 70.4 degrees as the steepest 60 m windows 60 to 140 metres out from the summit. The cornices build out over that edge. Keep your distance from the northeast edge all along the ridge — in flat light it is the one rule this tour has.",
+      },
+      {
+        title: "Before you go",
+        body: "Fagerfjellet lies in the Lyngen forecast region, an A-region with a daily avalanche bulletin through the season — check varsom.no. The November–May season is Fri Flyt's, and early snow is part of the mountain's reputation. Carry transceiver, probe and shovel, and read the terrain yourself: a bulletin describes the region, not the flank you are standing in.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "21 m",
+      endLabel: "957 m",
+      distanceLabel: "4.3 km",
+      caption: "947 metres of ascent and 4.30 km from Fagernes via point 459 and the cairn at 871, with the treeline at 519 m and the steepest ground — 25.6 degrees between 193 and 215 m — down in the forest.",
     },
   },
   "hesten-segla": {

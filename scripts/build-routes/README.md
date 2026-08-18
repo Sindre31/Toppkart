@@ -3832,6 +3832,71 @@ gear for an exposed ridge and a short climbing step to reach its main summit —
 Fri Flyt's own description — and a line whose last move is a belayed scramble
 is not a ski card.
 
+## The Troms round
+
+Five around Tromsø — Breivikeidet, Ramfjorden and Ringvassøya — from Fri Flyt's
+Troms index, most of it Espen Nordahl's *Toppturer i Troms* republished. The
+four conditions hold, with the second-source caveat that book creates: where the
+only independent coverage is a trip blog or a tourist listing, the record ships
+at `confidence: medium` and says so. All five summits resolve within 1,1 m of
+their published heights — and the forecast query earned its keep again: **four
+of the five lie in Varsom's Lyngen region, not Tromsø's** — only Store
+Skalltinden on Ringvassøya is forecast as Tromsø. Both are A-regions with a
+daily bulletin, and every guide names the region its summit actually answered.
+
+| tour | start | summit | gain | km | steepest 100 m band | steepest 30 m | grade |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Gabrielfjellet | 76 | 1214 | 1139 | 4.4 | 24.9° | 29.2° | 3 |
+| Storfjellet | 41 | 1088 | 1053 | 3.3 | 29.7° | 36.5° | 3 |
+| Store Skalltinden | 11 | 901 | 981 | 6.0 | 21.6° | 27.0° | 3 |
+| Fagerfjellet | 21 | 957 | 947 | 4.3 | 17.2° | 25.6° | 2 |
+| Skarlitinden | 31 | 858 | 937 | 6.3 | 21.1° | 30.5° | 2 |
+
+### What the checks caught
+
+**Storfjellet resolved onto a 1424 m namesake 24 km away, and the fix was in
+`geo.py`.** The place-name helper read one page of 50 rows, and «Storfjellet»
+alone has hundreds — the Breivikeidet row sat beyond page 1, so the resolver
+seeded from the only Tromsø row it could see, at Lakselvbukt. `stedsnavn` now
+pages through the register (bounded at eight pages), and the row lands 46 m
+from Fri Flyt's published GPS point.
+
+**The mountain skiers call Gabrielfjellet is registered as Iverfjellet.** SSR's
+own «Gabrielfjellet» is a shoulder 3,2 km northeast of the 1213 m top; the
+summit search from that row could never have reached it. Fri Flyt's published
+point sits 47 m from the register's Iverfjellet, outdooractive lists the tour
+under both names, and the guide tells the reader which name the map will show.
+The Kirketaket/Kyrkjetaket case, one round later.
+
+**Skarlitinden's steepest sustained stretch is downhill.** The line collects
+937 m of gain against Fri Flyt's 835 because the col and plateau give back
+110 m — and the steepest 30 m window, 30,5°, is the dip after point 511, ridden
+downward on the way up. The guide says so rather than leaving the reader to
+wonder how a KAST 1 tour carries a 30-degree figure.
+
+**Store Skalltinden crosses a tarn, and it became prose, not a reroute.**
+`check_ground` found 103 m on the natural lake at 543 moh southwest of point
+695 — the very lake Fri Flyt's own description aims from — never more than 18 m
+from shore. Natural water on a line the source itself puts there is the
+seven-became-prose rule: named with height, length and offshore distance. The
+line already held land at Skallvatnet's south end, where the source keeps it.
+
+**Grade moved in both directions.** Store Skalltinden measures grade 2 and
+ships as 3 — sea to summit, steep ground on both sides of the line between 600
+and 800, and three named hazards are more than a slope angle sees (the Gråfjell
+rule). Skarlitinden was scored 2 for the terrain trap and the plateau edge,
+and the measurement agrees.
+
+### What was left out
+
+**Stortuva** (1109, above Ullsfjorden) has a full Fri Flyt description and no
+independent second source anywhere — not ut.no, not morotur, not a blog naming
+the line. One-source tours do not ship. **Kvaløya's Middagstinden** would
+collide with the Romsdal round's Middagstinden on the map's own terms and
+waits for a naming decision. The Lyngen heavyweights the index leads with —
+Istinden, Store Kjostinden — were researched in earlier rounds and rejected on
+steepness that belongs to a different product; those records stand.
+
 ## Network
 
 Everything is public and unauthenticated:

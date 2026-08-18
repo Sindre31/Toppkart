@@ -26,13 +26,29 @@ def _get(url, timeout=120, retries=4):
 
 
 def stedsnavn(name, objtype=None, fuzzy=False):
-    q = {"sok": name, "fuzzy": "true" if fuzzy else "false", "treffPerSide": 50, "utkoordsys": 4258}
-    if objtype:
-        q["navneobjekttype"] = objtype
-    url = "https://ws.geonorge.no/stedsnavn/v1/navn?" + urllib.parse.urlencode(q)
-    d = json.loads(_get(url, timeout=60))
+    # One page of 50 is not the register: «Storfjellet» alone has hundreds of
+    # rows, and the Breivikeidet one this pipeline needed sat beyond page 1 —
+    # which is how storfjellet resolved onto a 1424 m namesake 24 km away.
+    # Page through the result, bounded so a fuzzy search cannot run away.
     out = []
-    for x in d.get("navn", []):
+    rows = []
+    for side in range(1, 9):
+        q = {
+            "sok": name,
+            "fuzzy": "true" if fuzzy else "false",
+            "treffPerSide": 100,
+            "side": side,
+            "utkoordsys": 4258,
+        }
+        if objtype:
+            q["navneobjekttype"] = objtype
+        url = "https://ws.geonorge.no/stedsnavn/v1/navn?" + urllib.parse.urlencode(q)
+        d = json.loads(_get(url, timeout=60))
+        page = d.get("navn", [])
+        rows.extend(page)
+        if len(page) < 100:
+            break
+    for x in rows:
         p = x.get("representasjonspunkt") or {}
         if p.get("nord") is None:
             continue
