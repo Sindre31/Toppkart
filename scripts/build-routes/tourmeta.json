@@ -274,6 +274,17 @@
   "season": "feb–mai",
   "hasGuide": true
  },
+ "pilan": {
+  "name": "Pilan",
+  "region": "Lofoten",
+  "summitM": 826,
+  "verticalM": 850,
+  "duration": "3–5 t",
+  "grade": 3,
+  "aspect": "SØ",
+  "season": "feb–apr",
+  "hasGuide": true
+ },
  "geitgaljen": {
   "name": "Geitgaljen",
   "region": "Lofoten",
@@ -283,6 +294,39 @@
   "grade": 4,
   "aspect": "NV",
   "season": "feb–apr",
+  "hasGuide": true
+ },
+ "torskmannen": {
+  "name": "Torskmannen",
+  "region": "Lofoten",
+  "summitM": 755,
+  "verticalM": 750,
+  "duration": "3–5 t",
+  "grade": 3,
+  "aspect": "SØ",
+  "season": "jan–apr",
+  "hasGuide": true
+ },
+ "rundfjellet": {
+  "name": "Rundfjellet",
+  "region": "Lofoten",
+  "summitM": 803,
+  "verticalM": 890,
+  "duration": "4–6 t",
+  "grade": 2,
+  "aspect": "S",
+  "season": "jan–apr",
+  "hasGuide": true
+ },
+ "kleppstadheia": {
+  "name": "Kleppstadheia",
+  "region": "Lofoten",
+  "summitM": 534,
+  "verticalM": 520,
+  "duration": "2–4 t",
+  "grade": 1,
+  "aspect": "SV",
+  "season": "jan–apr",
   "hasGuide": true
  },
  "varden-smaatindan": {
@@ -305,6 +349,17 @@
   "grade": 3,
   "aspect": "Ø",
   "season": "feb–apr",
+  "hasGuide": true
+ },
+ "justadtinden": {
+  "name": "Justadtinden",
+  "region": "Lofoten",
+  "summitM": 736,
+  "verticalM": 730,
+  "duration": "3–5 t",
+  "grade": 2,
+  "aspect": "S",
+  "season": "jan–apr",
   "hasGuide": true
  },
  "stornappstinden": {

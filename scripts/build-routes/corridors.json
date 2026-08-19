@@ -6554,5 +6554,207 @@
     "notes": "Fri Flyt: KAST 2 – Utfordrende, faremoment «Løsneområder. Utløpsområder. Skavler». Mellom 230 og 300 moh små bratte parti som navigeres med omhu; mellom 600 og 800 bratt terreng på begge sider av linja; de siste 800 metrene mot toppen har parti på 30–40 grader som krever terrengvurdering. Bjørnskardalen (alternativet) er KAST 3 – Komplekst."
    }
   ]
+ },
+ "justadtinden": {
+  "routes": [
+   {
+    "id": "normalruta",
+    "name": "Normalruta fra Justad",
+    "description": "Fra gården Justad ved fv. 815 opp lia og nordover langs ryggformasjonen over Skjærheia, med jevn stigning mot toppartiet og den siste kneika til varden",
+    "trailhead": {
+     "name": "Justad",
+     "lat": 68.16635,
+     "lng": 13.79337,
+     "elevation_m": 14.0,
+     "fullName": "Justad"
+    },
+    "waypoints": [
+     {
+      "name": "lia over gården",
+      "lat": 68.172,
+      "lng": 13.798,
+      "elevation_m": 179.0
+     },
+     {
+      "name": "ryggen",
+      "lat": 68.176,
+      "lng": 13.801,
+      "elevation_m": 300.0
+     },
+     {
+      "name": "toppartiet",
+      "lat": 68.179,
+      "lng": 13.803,
+      "elevation_m": 482.0
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: hengskavler mot de brattere partiene mot nordøst; tidvis bratte partier som krever vurdering av skredfare; de større skredene går på sørnedfarten. Oktoberflanken er nedfartsalternativet midt på ryggen."
+   }
+  ]
+ },
+ "rundfjellet": {
+  "routes": [
+   {
+    "id": "normalruta",
+    "name": "Normalruta fra Vatterfjordpollen",
+    "description": "Fra parkeringa ved Vatterfjordpollen langs E10 over den lille brua over strømmen, langs høyresida av pollen og innover marka mot fjellfoten, opp på sørryggen og ryggen nordover til den dreier vest, og ryggtoppen til varden",
+    "trailhead": {
+     "name": "Vatterfjordpollen",
+     "lat": 68.2825,
+     "lng": 14.65,
+     "elevation_m": 5.8,
+     "fullName": "Vatterfjordpollen (vest for brua over strømmen)"
+    },
+    "waypoints": [
+     {
+      "name": "nordsida av pollen, vestover",
+      "lat": 68.2842,
+      "lng": 14.638,
+      "elevation_m": 7.0
+     },
+     {
+      "name": "marka innover mot fjellfoten",
+      "lat": 68.283,
+      "lng": 14.62,
+      "elevation_m": 20.0
+     },
+     {
+      "name": "fjellfoten",
+      "lat": 68.284,
+      "lng": 14.61,
+      "elevation_m": 160.0
+     },
+     {
+      "name": "sørryggen",
+      "lat": 68.283,
+      "lng": 14.59,
+      "elevation_m": 442.0
+     },
+     {
+      "name": "ryggen der den dreier vest",
+      "lat": 68.286,
+      "lng": 14.575,
+      "elevation_m": 604.0
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: hold deg på toppen av ryggen — området rundt er skredutsatt. Nedkjøringen mot Vatterfjordpollen kan være skredutsatt, brattest der man tar tidlig av ryggen mot venstre på sørsida. Fra Kudalen på nordsida ligger det ofte hard is mot slutten; ta med stegjern og isøks om du skal den veien."
+   }
+  ]
+ },
+ "torskmannen": {
+  "routes": [
+   {
+    "id": "normalruta",
+    "name": "Normalruta fra Kvitfossen",
+    "description": "Fra kraftstasjonen mot nordvest inn marka mot dalbunnen, så tidlig som mulig inn i dalen og langs venstresida opp mot vannet i forsenkinga, videre mot skaret til høyre for toppen, og ryggen den siste biten til topps",
+    "trailhead": {
+     "name": "Kvitfossen",
+     "lat": 68.3268,
+     "lng": 14.6523,
+     "elevation_m": 5.0,
+     "fullName": "Kvitfossen"
+    },
+    "waypoints": [
+     {
+      "name": "dalbunnen",
+      "lat": 68.33,
+      "lng": 14.635,
+      "elevation_m": 73.0
+     },
+     {
+      "name": "venstresida av dalen",
+      "lat": 68.333,
+      "lng": 14.625,
+      "elevation_m": 260.0
+     },
+     {
+      "name": "vannet i forsenkinga",
+      "lat": 68.3335,
+      "lng": 14.622,
+      "elevation_m": 353.0
+     },
+     {
+      "name": "skaret til høyre for toppen",
+      "lat": 68.336,
+      "lng": 14.612,
+      "elevation_m": 568.0
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: KAST 2 – Utfordrende, bratteste punkt 35 grader. Skredterreng i nedfartsalternativene fra ryggen; bratte parti ved vannet; siste metrene mot toppen ofte avblåst og harde. Snøen ligger ofte skjermet i dalen når det er vindherjet andre steder."
+   }
+  ]
+ },
+ "pilan": {
+  "routes": [
+   {
+    "id": "normalruta",
+    "name": "Normalruta fra Laupstad",
+    "description": "Fra Laupstad forbi bebyggelsen og opp dalen til vannet på 289 moh, videre mot høyre mot Morfjordskaret til den brede flanken som går opp mot Pilan, og flanken til topps",
+    "trailhead": {
+     "name": "Laupstad",
+     "lat": 68.35736,
+     "lng": 14.72327,
+     "elevation_m": 5.0,
+     "fullName": "Laupstad"
+    },
+    "waypoints": [
+     {
+      "name": "dalen mot vannet på 289",
+      "lat": 68.363,
+      "lng": 14.69,
+      "elevation_m": 314.0
+     },
+     {
+      "name": "mot Morfjordskaret",
+      "lat": 68.3665,
+      "lng": 14.685,
+      "elevation_m": 464.0
+     },
+     {
+      "name": "den brede flanken",
+      "lat": 68.369,
+      "lng": 14.675,
+      "elevation_m": 647.0
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: KAST 1 – Enkelt, bratteste punkt under 30 grader. Brattere terreng ned mot Morfjorddalen — hold flanken mot sør-øst. Trygge, brede linjer fra begge toppene ifølge kilden; camptocamp beskriver samme linje fra Laupstad."
+   }
+  ]
+ },
+ "kleppstadheia": {
+  "routes": [
+   {
+    "id": "normalruta",
+    "name": "Normalruta fra Kleppstad",
+    "description": "Fra parkeringa langs Kleppstadveien sør for Gimsøybrua opp langs ryggen mot punkt 156, og videre opp den slake og breie flata mot toppen",
+    "trailhead": {
+     "name": "Kleppstad",
+     "lat": 68.257,
+     "lng": 14.276,
+     "elevation_m": 16.0,
+     "fullName": "Kleppstad"
+    },
+    "waypoints": [
+     {
+      "name": "ryggen mot punkt 156",
+      "lat": 68.261,
+      "lng": 14.29,
+      "elevation_m": 101.0
+     },
+     {
+      "name": "den slake, breie flata",
+      "lat": 68.265,
+      "lng": 14.302,
+      "elevation_m": 405.0
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: noen partier langs sørsiden av ryggen med bratt terreng — hold sporet på ryggen og flata. Ellers enkel: bratteste punkt under 30 grader."
+   }
+  ]
  }
 }

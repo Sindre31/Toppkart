@@ -2365,5 +2365,122 @@
    "check_ground: linja kryssar 103 m av det naturlege vatnet på 543 moh sørvest for punkt 695 — vatnet kilden sjølv siktar frå — aldri meir enn 18 m frå land. Naturleg vatn på ei linje kjelda sjølv legg der: namngitt i prosaen med høgd, lengd og avstand frå land, ikkje ruta om — sju-blei-prosa-regelen."
   ],
   "notes": ""
+ },
+ "justadtinden": {
+  "season": "jan–apr",
+  "aspect": "S",
+  "grade": 2,
+  "gradeReason": "Ingen KAST hos Fri Flyt (eldre sideformat). Slakt og lekent terreng ifølge kildene, men med hengskavler mot nordøst og større skred på sørnedfarten — grad 2, som naboklassikerne.",
+  "roadClosedInWinter": false,
+  "teaserNo": "730 høydemeter fra gården Justad ved fv. 815: lia, ryggen over Skjærheia og det leikne toppartiet — Vestvågøys høyeste østside, med Vågakallen og Henningsvær under deg.",
+  "teaserEn": "730 metres of ascent from the Justad farm on the fv. 815: the hillside, the ridge over Skjærheia and the playful summit ground — the highest on Vestvågøy's east side, with Vågakallen and Henningsvær below.",
+  "hazardNotes": "Fri Flyt: hengskavler mot de brattere partiene mot nordøst; tidvis bratte partier som krever vurdering av skredfare; de større skredene går på sørnedfarten. Oktoberflanken er nedfartsalternativet midt på ryggen.",
+  "sources": [
+   "https://www.friflyt.no/topptur/skiturer-lofoten/turbeskrivelse-justadtinden",
+   "https://ut.no/turforslag/116288/topptur-til-justatinden-738-moh",
+   "https://peakbook.org/no/peakbook-element/2804/no/Justadtinden.html",
+   "https://www.68north.com/outdoors/hiking-justadtinden/"
+  ],
+  "confidence": "high",
+  "corrections": [
+   "Registerets Justadtinden (Fjell, Vestvågøy, 68.18215/13.80365) løser 735,7 på DTM1 mot publiserte 738 — et smalt topparti der terrengmodellen leser et par meter under det publiserte tallet.",
+   "Starten er gården Justad ved fv. 815 på østsida av Vestvågøy (registerets Justad, Gard, 68.16635/13.79337, DTM1 14,4 moh på dyrket mark). 738 − 14 = 724, som forliker Fri Flyts 725 høydemeter.",
+   "Fri Flyt oppgir ingen KAST og ingen sesong for Lofoten-sidene (eldre format); sesongen jan–apr er redaksjonell og hentet fra naboturene Stornappstinden og Varden, og posten sier det.",
+   "Fri Flyts egne farepunkter: hengskavler mot de brattere partiene mot nordøst, og de større skredene går på sørnedfarten."
+  ],
+  "notes": ""
+ },
+ "rundfjellet": {
+  "season": "jan–apr",
+  "aspect": "S",
+  "grade": 2,
+  "gradeReason": "Ingen KAST hos Fri Flyt (eldre format). En enkel topp med mange varianter ifølge utemagasinet, men nedkjøringen mot pollen kan være skredutsatt og nordsida krever ofte stegjern — grad 2 på normalruta langs ryggen.",
+  "roadClosedInWinter": false,
+  "teaserNo": "890 høydemeter fra havet ved Vatterfjordpollen: langs nordsida av pollen, opp på sørryggen og ryggtoppen hele veien — Svolværs nærmeste klassiker, med varianter til alle kanter.",
+  "teaserEn": "890 metres of ascent from the sea at Vatterfjordpollen: along the north side of the poll, onto the south ridge and the ridge-top all the way — Svolvær's nearest classic, with variants on every side.",
+  "hazardNotes": "Fri Flyt: hold deg på toppen av ryggen — området rundt er skredutsatt. Nedkjøringen mot Vatterfjordpollen kan være skredutsatt, brattest der man tar tidlig av ryggen mot venstre på sørsida. Fra Kudalen på nordsida ligger det ofte hard is mot slutten; ta med stegjern og isøks om du skal den veien.",
+  "sources": [
+   "https://www.friflyt.no/topptur/skiturer-lofoten/turbeskrivelse-rundfjellet2",
+   "https://peakbook.org/no/peakbook-element/2897/no/Rundfjellet.html",
+   "https://www.utemagasinet.no/randonee/skiferie-i-lofoten"
+  ],
+  "confidence": "medium",
+  "corrections": [
+   "Registerets Rundfjellet (Fjell, Vågan, 68.28943/14.56506) løser 802,6 mot publiserte 803.",
+   "Starten «parkeringsplassen ved Vatterfjordpollen» løser seg på land ved adressepunktet Vatterfjordpollen (68.2812/14.6560, DTM1 3,2 moh) — registerets eget representasjonspunkt for pollen står i sjøen. 803 − 3 = 800, nøyaktig Fri Flyts 800 høydemeter: turen går fra havet.",
+   "Fri Flyt oppgir ingen KAST (eldre format); sesongen jan–apr er redaksjonell fra naboturene, og posten sier det.",
+   "Fri Flyts egne farepunkter: nedkjøringen mot Vatterfjordpollen kan være skredutsatt, særlig om du tar tidlig av ryggen mot venstre på sørsida der det er brattest; fra Kudalen på nordsida ligger det ofte hard is mot slutten — stegjern og isøks."
+  ],
+  "notes": ""
+ },
+ "torskmannen": {
+  "season": "jan–apr",
+  "aspect": "SØ",
+  "grade": 3,
+  "gradeReason": "KAST 2 – Utfordrende hos Fri Flyt, bratteste punkt 35 grader, med skredterreng i nedfartsalternativene og ofte avblåste, harde toppmeter. Sesongen jan–apr er redaksjonell fra naboturene; kilden sier at snøen ofte ligger skjermet her når det er avblåst andre steder.",
+  "roadClosedInWinter": false,
+  "teaserNo": "750 høydemeter fra Kvitfossen kraftstasjon i Vestpollen: dalen der snøen ligger skjermet, vannet i forsenkinga og skaret til høyre for toppen — og ryggen den siste biten.",
+  "teaserEn": "750 metres of ascent from the Kvitfossen power station in Vestpollen: the valley where the snow lies sheltered, the lake in the hollow and the col right of the summit — and the ridge for the last stretch.",
+  "hazardNotes": "Fri Flyt: KAST 2 – Utfordrende, bratteste punkt 35 grader. Skredterreng i nedfartsalternativene fra ryggen; bratte parti ved vannet; siste metrene mot toppen ofte avblåst og harde. Snøen ligger ofte skjermet i dalen når det er vindherjet andre steder.",
+  "sources": [
+   "https://www.friflyt.no/topptur/skiturer-lofoten/turbeskrivelse-torskmannen",
+   "https://peakbook.org/no/peakbook-element/11742/no/Torskmannen.html",
+   "https://www.svinoya.no/en/ski-lofoten-lokale-favoritter/"
+  ],
+  "confidence": "medium",
+  "corrections": [
+   "Registerets Torskmannen (Fjell, Vågan, 68.33678/14.60382) løser 755,2 mot publiserte 755. Vågan har to Torskmannen i registeret; den andre (68.28638/14.48325) leser 717,6 og er ikke denne.",
+   "Starten «Kvitfossen kraftstasjon i Vestpollen» er kartlagt i OSM: Kvitfossen kraftverk (industrial) på Midnattsolveien/E10, 68.32680/14.65230 — DTM1 leser 5 moh ved fjorden. 755 − 5 = 750, som forliker Fri Flyts 740 høydemeter.",
+   "Vannet «halvveis oppe» i forsenkinga: linjas prøvepunkt ved 68.3335/14.6220 leser 352,9 — Fri Flyts «lite vann» ligger i den forsenkinga, og skaret til høyre for toppen leser 568 der linja tar det.",
+   "Fri Flyt: KAST 2 – Utfordrende, bratteste punkt 35 grader; siste metrene mot toppen ofte avblåst og hardt."
+  ],
+  "notes": ""
+ },
+ "pilan": {
+  "season": "feb–apr",
+  "aspect": "SØ",
+  "grade": 3,
+  "gradeReason": "Grad 3. Fri Flyt gir KAST 1 – Enkelt og bratteste punkt under 30 grader, men den ferdige linja måler 39,4 grader i det bratteste 30-metersvinduet, mellom 753 og 786 moh i toppkjegla — målingen er sjekken for graden (Ranten-regelen), og et slikt steg rett under toppen er grad 3 i appens skala. Resten av linja er bred og slak: bratteste hundremetersbelte 21,9 grader.",
+  "roadClosedInWinter": false,
+  "teaserNo": "850 høydemeter fra Laupstad på nordsida av Austvågøya: dalen til vannet på 289, mot Morfjordskaret og den brede flanken — med et målt steg på 39 grader i toppkjegla.",
+  "teaserEn": "850 metres of ascent from Laupstad on the north side of Austvågøya: the valley to the lake at 289, toward Morfjordskaret and the broad flank — with a measured 39-degree step in the summit cone.",
+  "hazardNotes": "Fri Flyt: KAST 1 – Enkelt, bratteste punkt under 30 grader. Brattere terreng ned mot Morfjorddalen — hold flanken mot sør-øst. Trygge, brede linjer fra begge toppene ifølge kilden; camptocamp beskriver samme linje fra Laupstad.",
+  "sources": [
+   "https://www.friflyt.no/topptur/skiturer-lofoten/turbeskrivelse-pilan-sautinden",
+   "https://www.camptocamp.org/routes/125592",
+   "https://www.alltrails.com/trail/norway/nordland/topptur-til-pilan"
+  ],
+  "confidence": "high",
+  "corrections": [
+   "Registerets Pilan (Fjell, Vågan/Hadsel, 68.36880/14.66378) løser 826,0 mot publiserte 828 — endå eit smalt topparti der laserskannet les eit par meter under det publiserte talet.",
+   "Starten er Laupstad ved fylkesvegen på nordsida av Austvågøya (registerets Laupstad, Bygdelag, 68.35736/14.72327, DTM1 4,8 moh). 828 − 5 = 823, mot Fri Flyts 800 høydemeter — turen går fra fjorden.",
+   "Ruta reproduserer: dalen vestover mot vannet på 289, mot Morfjordskaret (registerets Morfjordskaret, Skar, Hadsel, 68.37164/14.70613), og den brede flanken opp mot Pilan — prøvepunkta leser 314, 464 og 647 der linja går.",
+   "Fri Flyt: KAST 1 – Enkelt, bratteste punkt under 30 grader; brattere terreng ned mot Morfjorddalen er farepunktet. Sautinden er tvillingtoppen samme tur kan kombinere; kortet bærer Pilan.",
+   "Forsket som grad 2 på Fri Flyts KAST 1; skipper som grad 3 fordi toppkjegla måler 39,4 grader i bratteste 30-metersvindu (753–786 moh) — sonderingene rundt kjegla (27–45 grader fra ulike kanter) sier at steget er terreng, ikke ruting."
+  ],
+  "notes": ""
+ },
+ "kleppstadheia": {
+  "season": "jan–apr",
+  "aspect": "SV",
+  "grade": 1,
+  "gradeReason": "Enkel hos Fri Flyt, bratteste punkt under 30 grader, 530 høydemeter på slak, brei rygg — en tur kilden selv bruker som øving i sporvalg. Farepunktet er de bratte partiene langs sørsida av ryggen, som normalsporet holder seg unna. Sesongen jan–apr er redaksjonell fra naboturene.",
+  "roadClosedInWinter": false,
+  "teaserNo": "520 høydemeter fra Kleppstadveien sør for Gimsøybrua: ryggen mot punkt 156 og den slake, breie flata til topps — turen kilden selv bruker som øving i sporvalg.",
+  "teaserEn": "520 metres of ascent from Kleppstadveien south of the Gimsøy bridge: the ridge toward point 156 and the gentle, broad field to the top — the tour the source itself uses to practise track-setting.",
+  "hazardNotes": "Fri Flyt: noen partier langs sørsiden av ryggen med bratt terreng — hold sporet på ryggen og flata. Ellers enkel: bratteste punkt under 30 grader.",
+  "sources": [
+   "https://www.friflyt.no/topptur/skiturer-lofoten/turbeskrivelse-kleppstadheia",
+   "https://peakbook.org/en/peakbook-element/11577/en/Kleppstadheia.html",
+   "https://thatadventurer.co.uk/kleppstadheia-lofoten-hiking-guide/"
+  ],
+  "confidence": "medium",
+  "corrections": [
+   "Fri Flyts publiserte GPS-punkt (UTM33 471558.142/7572905.274 → 68.26802/14.31167) er registerets Kleppstadheia (Ås, Vågan) på meteren, og toppsøket løser 533,9 mot publiserte 534.",
+   "Starten er parkering langs Kleppstadveien sør for Gimsøybrua (registerets Kleppstad, Gard, 68.25578/14.27071; flata ved vegen leser 16,4 moh). 534 − 16 = 518, som forliker Fri Flyts 530 høydemeter.",
+   "Ruta reproduserer: ryggen mot punkt 156 (prøvepunkt 101 i skogen under) og den slake, breie flata mot toppen (405 der linja går).",
+   "Fri Flyt klassifiserer turen som enkel med bratteste punkt under 30 grader, og læringspunktet hans er sporvalg: «Bruk av terrenget for å legge fornuftig og godt spor». Farepunktet er noen bratte parti langs sørsida av ryggen."
+  ],
+  "notes": ""
  }
 }

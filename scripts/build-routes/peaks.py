@@ -293,4 +293,14 @@ PEAKS = [
     ("gabrielfjellet", "Iverfjellet", ["Tromsø"], 1213, 69.57798, 19.37878),
     ("fagerfjellet", "Fagerfjellet", ["Tromsø"], 957, 69.55065, 19.26398),
     ("store-skalltinden", "Store Skalltinden", ["Karlsøy"], 900, 69.87098, 19.29279),
+    #
+    # — the Lofoten round: five on Austvågøya and Vestvågøy from Fri Flyt's
+    #   Lofoten index — an older page format with no KAST field and no GPS
+    #   point on most tours, so the register and the terrain model carry more
+    #   of the verification than usual. —
+    ("justadtinden", "Justadtinden", ["Vestvågøy"], 738, 68.18215, 13.80365),
+    ("rundfjellet", "Rundfjellet", ["Vågan"], 803, 68.28943, 14.56506),
+    ("torskmannen", "Torskmannen", ["Vågan"], 755, 68.33678, 14.60382),
+    ("pilan", "Pilan", ["Vågan", "Hadsel"], 828, 68.36880, 14.66378),
+    ("kleppstadheia", "Kleppstadheia", ["Vågan"], 534, 68.26802, 14.31167),
 ]

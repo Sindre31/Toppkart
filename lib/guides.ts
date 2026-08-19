@@ -974,6 +974,45 @@ export const GUIDES: Record<string, TourGuide> = {
       caption: "5,83 km og 1129 høydemeter fra steinbruddet i Forselvveien; bratteste hundremeteren ligger mellom 500 og 600 moh.",
     },
   },
+  pilan: {
+    slug: "pilan",
+    intro:
+      "847 høydemeter og 4,16 km fra Laupstad på den stille nordsida av Austvågøya, med utsikten inn i Vesterålen fra varden. Fri Flyt gir KAST 1 – Enkelt med bratteste punkt under 30 grader, og det meste av linja holder det — bratteste hundremetersbelte 21,9 grader. Men toppkjegla måler 39,4 grader i det bratteste 30-metersvinduet, mellom 753 og 786 moh, og målingen er sjekken for graden: kortet bærer 3, ikke kildens tall. Ryggen gir tilbake 26 høydemeter, og turen går fra fjorden.",
+    ascent: [
+      "Fra Laupstad ved fylkesvegen — 5 moh, forbi bebyggelsen og opp dalen mot vest. Skogen slutter på 233 moh etter 1,66 km, og dalen tar deg til vannet på 289: beltet fra 100 til 200 moh måler 14,4 grader, og fra 200 til 300 bare 8,8.",
+      "Fra vannet fortsetter du mot høyre mot Morfjordskaret — registerets Morfjordskaret ligger i Hadsel, for her går kommunegrensa over fjellet — til den brede flanken som går opp mot Pilan. Beltet fra 400 til 500 måler 18,9 grader, så flater det av: 9,6 og 7,5 over de neste to hundre.",
+      "Toppkjegla er turens alvor: beltet fra 700 til 800 moh måler 21,9 grader over 274 meter grunn, og det bratteste sammenhengende partiet — 39,4 grader mellom 753 og 786 — sitter her. Sonderingene rundt kjegla sier at steget er terreng og ikke ruting: sør og sørvest måler 22,7 og 20,9 grader i snitt, nord og vest 42,3 og 46,5. Varden på 826; registeret leser 826,0 mot publiserte 828 — endå et smalt topparti der laserskannet leser et par meter lavt. Sautinden er tvillingtoppen samme tur kan kombinere.",
+    ],
+    descent: [
+      "Ned samme vei — den brede flanken mot sør-øst er store, oversiktlige linjer, og fra flata under kjegla er det slak kjøring tilbake til vannet og dalen. Steget i kjegla tas der du gikk opp, mens snøen ennå er der du leste den.",
+      "Hold flanken: nordsida mot Morfjorddalen er kildens eget farepunkt, og den måler 42,3 grader i snitt med 57,7 som bratteste vindu. Vest er samme historie — 46,5 i snitt. Det brede og snille terrenget har kanter, og de er alle på den andre sida.",
+    ],
+    avalanche: [
+      {
+        title: "Ruta",
+        body: "KAST 1 – Enkelt hos Fri Flyt, bratteste punkt under 30 grader — og det stemmer for det meste av linja, men ikke for toppkjegla: 39,4 grader i det bratteste 30-metersvinduet mellom 753 og 786 moh. Kortet bærer grad 3 på den målingen. Under 700 er dette en av de snilleste linjene i rundelen.",
+      },
+      {
+        title: "Kjegla",
+        body: "Steget sitter rett under toppen, der snøen enten er innblåst eller avblåst. Med innblåst snø er det et lite, bratt heng med utløp mot flata; avblåst er det et par harde takter. Begge deler leses på ti sekunder fra flata under — gjør det før du står i det.",
+      },
+      {
+        title: "Mot Morfjorddalen",
+        body: "Brattere terreng ned mot Morfjorddalen, sier kilden, og målingen gir 42,3 grader i snitt mot nord. Fra varden i flatt lys er flanken du kom opp og nordsida lette å forveksle de første metrene — retningen ned er sør-øst, og det er verdt å ha kompasskursen klar før skodda tar utsikten.",
+      },
+      {
+        title: "Før du går",
+        body: "Pilan ligger i varslingsregionen Lofoten og Vesterålen, en A-region med daglig skredvarsel gjennom sesongen — sjekk varsom.no. Fri Flyt oppgir ingen sesong; feb–apr på kortet er redaksjonell fra naboturene. Ta med sender/mottaker, søkestang og spade.",
+      },
+    ],
+    elevationProfile: {
+      path: "M0,200 L26,199 L58,196 L91,193 L116,183 L136,172 L149,165 L172,159 L194,155 L214,151 L246,146 L266,138 L279,130 L304,118 L318,113 L339,102 L363,90 L389,83 L409,84 L428,80 L444,69 L461,60 L480,60 L500,58 L526,54 L550,49 L567,42 L579,35 L597,21 L600,18",
+      startLabel: "5 moh",
+      endLabel: "826 moh",
+      distanceLabel: "4,2 km",
+      caption: "847 høydemeter og 4,16 km fra Laupstad om vannet på 289 og Morfjordskaret, med skoggrensa på 233 moh og det bratteste — 39,4 grader mellom 753 og 786 moh — i toppkjegla.",
+    },
+  },
   geitgaljen: {
     slug: "geitgaljen",
     intro:
@@ -1009,6 +1048,119 @@ export const GUIDES: Record<string, TourGuide> = {
       endLabel: "1085 moh",
       distanceLabel: "3,8 km",
       caption: "1071 høydemeter og 3,82 km fra Liland; renna på 250–360 moh er 35 grader, og de øverste 174 metrene 42.",
+    },
+  },
+  torskmannen: {
+    slug: "torskmannen",
+    intro:
+      "754 høydemeter og 3,00 km fra Kvitfossen kraftstasjon i Vestpollen — en lokal favoritt der snøen ofte ligger skjermet i dalen når det er vindherjet andre steder. Fri Flyt gir KAST 2 – Utfordrende med bratteste punkt 35 grader; linja opp dalen og ut i skaret til høyre for toppen måler 21,6 grader i bratteste hundremetersbelte og 28,1 i bratteste sammenhengende parti, som er de siste metrene mot varden. Toppen er ofte avblåst og hard.",
+    ascent: [
+      "Fra kraftstasjonen ved E10 — OSM har Kvitfossen kraftverk kartlagt på Midnattsolveien, med busstopp ved vegen, og fjorden leser 5 moh. Du sikter mot toppen i retning nordvest og går inn marka mot dalbunnen: beltet fra 0 til 100 moh måler 5,5 grader over den første kilometeren, og skogen slutter på 262 moh etter 1,54 km.",
+      "Så tidlig som mulig inn i dalen og opp langs venstresida mot vannet i forsenkinga — prøvepunktet ved linja leser 352,9 moh der kildens «lite vann» ligger. Beltene er jevne: 19,6 grader fra 100 til 200, 20,4 fra 300 til 400, 19,4 fra 400 til 500 — dalen er en trapp, og den er grunnen til at snøen ligger her.",
+      "Fra vannet krysser du mot skaret til høyre for toppen — 568 moh der linja tar det — og følger ryggen den siste biten. Beltet fra 700 til 800 er turens bratteste, 21,6 grader, med det bratteste sammenhengende partiet på 28,1 mellom 721 og 745 moh. Varden på 755; registeret har to Torskmannen i Vågan, og denne — toppsøket løser 755,2 — er den kilden beskriver; navnebroren lenger sørvest leser 717,6.",
+    ],
+    descent: [
+      "Normalen er dalen tilbake — sporene fra turen opp, sier kilden. Nedfartsaspektet er sørøst: flanken måler 30,8 grader i snitt med 49,2 som bratteste vindu 40 til 100 meter ut, så de første svingene fra ryggen tas med høyde for hvor du slipper deg ut.",
+      "Sørvest- og vestsida er en annen verden: 40,7 og 40,0 grader i snitt med vinduer på 67,4 og 62,7 rett under toppen. Nedfartsalternativene fra ryggen ligger i skredterreng, sier kilden — de er der for dager som tåler dem.",
+    ],
+    avalanche: [
+      {
+        title: "Ruta",
+        body: "KAST 2 – Utfordrende hos Fri Flyt, bratteste punkt 35 grader — og linja måler 28,1 der den er brattest, fordi den tar skaret og ryggen i stedet for flanken direkte. Dalen er skjermet for vind, og det betyr også at den samler snøen vinden flytter: les innlastingen i hengene over deg på veien opp.",
+      },
+      {
+        title: "Toppen",
+        body: "De siste metrene mot varden er ofte avblåste og harde — glatt berg og hardpakke, ikke skredproblem men skliproblem. Nordøstsektoren linja kommer fra er den slake (12,7 grader i snitt); alt vest og sør for varden faller 40 grader eller mer i snitt.",
+      },
+      {
+        title: "Nedfartsalternativene",
+        body: "Fra ryggen finnes brattere varianter rett ned — kilden kaller det skredterreng, og sørøstflanken under toppen har et vindu på 49,2 grader. Normalturen har ikke noe der å gjøre; variantene hører til stabilitet du har målt, ikke håpet på.",
+      },
+      {
+        title: "Før du går",
+        body: "Torskmannen ligger i varslingsregionen Lofoten og Vesterålen, en A-region med daglig skredvarsel gjennom sesongen — sjekk varsom.no. Fri Flyt oppgir ingen sesong; jan–apr på kortet er redaksjonell fra naboturene. Ta med sender/mottaker, søkestang og spade.",
+      },
+    ],
+    elevationProfile: {
+      path: "M0,200 L26,199 L53,198 L89,195 L125,193 L158,184 L179,182 L206,176 L224,168 L241,159 L260,153 L287,144 L305,139 L323,132 L341,123 L359,117 L380,106 L404,94 L422,88 L446,77 L467,68 L485,65 L509,56 L530,49 L552,39 L566,34 L593,20 L600,18",
+      startLabel: "5 moh",
+      endLabel: "755 moh",
+      distanceLabel: "3,0 km",
+      caption: "754 høydemeter og 3,00 km fra Kvitfossen opp dalen og skaret til høyre for toppen, med skoggrensa på 262 moh og det bratteste — 28,1 grader mellom 721 og 745 moh — på ryggen mot varden.",
+    },
+  },
+  rundfjellet: {
+    slug: "rundfjellet",
+    intro:
+      "890 høydemeter og 5,28 km fra havet ved Vatterfjordpollen til Svolværs nærmeste klassiker — en enkel topp med mange varianter ifølge utemagasinet, der linja langs ryggen er poenget: hold deg på toppen av den, sier Fri Flyt, for området rundt er skredutsatt, og målingen er enig — sørsektoren ryggen bruker måler 13,7 grader i snitt der alle de andre kantene av toppen har vinduer på 40 til 65. Ryggen gir tilbake 93 høydemeter på veien, og det er derfor kortet bærer 890 der kilden regner 800.",
+    ascent: [
+      "Fra parkeringsplassen ved Vatterfjordpollen på E10, ti kilometer fra Svolvær mot Fiskebøl. Linja på kartet begynner på vestsida av den lille brua over strømmen — terrengmodellen fører sundet som sjø, og brua finnes ikke i den, så spaserturen over brua fra parkeringa står her i stedet for i geometrien. Så langs høyresida av pollen og innover marka mot fjellfoten: beltet fra 0 til 100 moh måler 3,0 grader over nesten to kilometer, og skogen slutter allerede på 94 moh etter 1,93 km.",
+      "Fra fjellfoten opp på sørryggen — beltet fra 100 til 200 moh er turens bratteste, 18,4 grader over 271 meter grunn — og så nordover langs ryggen til den dreier vest. Ryggen er kupert: 93 høydemeter gis tilbake underveis, og beltene ligger på 10 til 12,5 grader — jevn, lesbar skinning med Austnesfjorden på den ene sida og Higravstindan i synsranda.",
+      "Der ryggen dreier vest — 604 moh der linja tar svingen — venter det siste: 15,1 grader i beltet fra 700 til 800, med det bratteste sammenhengende partiet, 31,2 grader, mellom 624 og 644 moh. Varden på 803; registeret og toppsøket løser 802,6.",
+    ],
+    descent: [
+      "Normalen er ryggen tilbake — sørsektoren måler 13,7 grader i snitt over 500 meter, og de mange variantene er grunnen til at turen tåler å gås igjen. Hold igjen der ryggen slutter: nedkjøringen mot Vatterfjordpollen kan være skredutsatt, brattest om du tar tidlig av ryggen mot venstre på sørsida, sier kilden.",
+      "Fra Kudalen på nordsida ligger det ofte hard is mot slutten — kilden ber deg ta med stegjern og isøks om du skal den veien. Nordvestsida har et 60-metersvindu på 64,8 grader; det er ikke en side man improviserer på.",
+    ],
+    avalanche: [
+      {
+        title: "Ruta",
+        body: "Ingen KAST hos Fri Flyt (eldre sideformat), men regelen hans er presis: hold deg på toppen av ryggen, for området rundt er skredutsatt. Målingen sier det samme — sørsektoren 13,7 grader i snitt, alle andre kanter med vinduer på 40 til 65.",
+      },
+      {
+        title: "Nedkjøringen mot pollen",
+        body: "Kildens eget farepunkt: brattest der man tar tidlig av ryggen mot venstre på sørsida. Sørsidas bratteste vindu ligger 350 til 410 meter ut fra toppen og måler 38,2 grader — det er dit den fristende snarveien fører. Ryggen hele veien ned koster ti minutter og ingenting annet.",
+      },
+      {
+        title: "Isen fra Kudalen",
+        body: "Nordsida bærer ofte hard is mot slutten — stegjern og isøks om du skal den veien, sier kilden. Det er variantterreng, ikke normalveien, og det står her fordi den som leser dette i Svolvær kommer til å høre om den.",
+      },
+      {
+        title: "Før du går",
+        body: "Rundfjellet ligger i varslingsregionen Lofoten og Vesterålen, en A-region med daglig skredvarsel gjennom sesongen — sjekk varsom.no. Fri Flyt oppgir ingen sesong; jan–apr på kortet er redaksjonell fra naboturene. Ta med sender/mottaker, søkestang og spade.",
+      },
+    ],
+    elevationProfile: {
+      path: "M0,199 L19,200 L45,199 L67,199 L92,199 L111,199 L137,198 L157,198 L178,198 L203,188 L219,179 L240,164 L260,154 L280,151 L301,137 L321,126 L342,119 L367,112 L382,102 L403,98 L423,96 L444,84 L468,76 L485,65 L505,61 L521,64 L541,49 L562,37 L582,28 L600,18",
+      startLabel: "6 moh",
+      endLabel: "803 moh",
+      distanceLabel: "5,3 km",
+      caption: "890 høydemeter og 5,28 km fra Vatterfjordpollen opp sørryggen og ryggtoppen hele veien, med skoggrensa på 94 moh og det bratteste — 31,2 grader mellom 624 og 644 moh — der ryggen dreier vest.",
+    },
+  },
+  kleppstadheia: {
+    slug: "kleppstadheia",
+    intro:
+      "525 høydemeter og 2,19 km fra Kleppstadveien sør for Gimsøybrua — turen Fri Flyt selv bruker som øving i sporvalg: «Bruk av terrenget for å legge fornuftig og godt spor.» Den slake, breie flata mot toppen holder det den lover — 20,9 grader i bratteste hundremetersbelte — og det bratteste sammenhengende partiet, 32,9 grader mellom 111 og 136 moh, ligger nede i skogbrattet. Fra varden ser du Gimsøya, Vestfjorden og Himmeltindan i vest.",
+    ascent: [
+      "Fra parkeringa langs Kleppstadveien på sørsida før Gimsøybrua — 16 moh, med registerets Kleppstad et par hundre meter unna. Du legger sporet opp langs ryggen mot punkt 156: her sitter turens bratteste parti, 32,9 grader mellom 111 og 136 moh, i skogen — beltet fra 100 til 200 måler 20,2 grader, og skogen slutter på 232 moh etter 1,17 km.",
+      "Over skogen er det flata som eier turen: 20,9 grader fra 200 til 300 moh, 19,1 fra 300 til 400, og så slaker det av mot toppen — 7,9 grader i det siste beltet. Brei rygg, valgfritt spor, og terrenget som læremester: hver kul og hvert søkk er en beslutning om hvor sporet skal ligge.",
+      "Varden på 534 — Fri Flyts publiserte GPS-punkt er registerets Kleppstadheia på meteren, og toppsøket løser 533,9. Prominensen er beskjeden, utsikten er det ikke.",
+    ],
+    descent: [
+      "Ned samme vei, med sporvalget i revers: flata tåler alt, og skogbrattet nederst er den ene plassen svingene skal sitte. Sørvest er nedfartsaspektet, og sektoren måler 12,8 grader i snitt.",
+      "Kildens farepunkt er partiene med bratt terreng langs sørsida av ryggen lenger nede — og ved toppen er det nord-, nordøst- og østsida som er kantene: 34,6 til 37,9 grader i snitt med vinduer på 45 til 56. Normalsporet på ryggen og flata er unna alt sammen.",
+    ],
+    avalanche: [
+      {
+        title: "Ruta",
+        body: "Enkel hos Fri Flyt, bratteste punkt under 30 grader på flata — linjas 32,9-graderssteg ligger i skogen nederst, kort og lesbart. Dette er turen for dager da varselet fraråder bratt terreng, og øvingsturen for alle andre dager.",
+      },
+      {
+        title: "Kantene",
+        body: "Kilden peker på bratte parti langs sørsida av ryggen; målingen ved toppen legger til at nord-, nordøst- og østsida faller 34,6 til 37,9 grader i snitt med vinduer opp mot 56. Flata er romslig — bruk rommet, og hold kantene på armlengdes avstand i flatt lys.",
+      },
+      {
+        title: "Før du går",
+        body: "Kleppstadheia ligger i varslingsregionen Lofoten og Vesterålen, en A-region med daglig skredvarsel gjennom sesongen — sjekk varsom.no. Fri Flyt oppgir ingen sesong; jan–apr på kortet er redaksjonell fra naboturene. Ta med sender/mottaker, søkestang og spade — også på øvingsturen.",
+      },
+    ],
+    elevationProfile: {
+      path: "M0,199 L25,197 L38,194 L62,191 L75,190 L90,188 L112,185 L136,178 L149,176 L173,172 L185,172 L198,172 L223,169 L235,166 L245,157 L260,150 L272,144 L284,138 L297,134 L308,129 L321,123 L334,118 L350,108 L358,104 L383,92 L395,88 L407,82 L420,78 L444,66 L469,55 L494,45 L518,35 L543,28 L565,23 L580,20 L595,19 L600,18",
+      startLabel: "16 moh",
+      endLabel: "534 moh",
+      distanceLabel: "2,2 km",
+      caption: "525 høydemeter og 2,19 km fra Kleppstadveien opp ryggen mot punkt 156 og den breie flata, med skoggrensa på 232 moh og det bratteste — 32,9 grader mellom 111 og 136 moh — nede i skogen.",
     },
   },
   "varden-smaatindan": {
@@ -1088,6 +1240,45 @@ export const GUIDES: Record<string, TourGuide> = {
       endLabel: "956 moh",
       distanceLabel: "3,9 km",
       caption: "988 høydemeter fra fjæra på Haukland på 3,89 km; det bratteste ligger mellom 500 og 600 moh.",
+    },
+  },
+  justadtinden: {
+    slug: "justadtinden",
+    intro:
+      "733 høydemeter og 2,88 km fra gården Justad til den høyeste toppen på østsida av Vestvågøy — slakt og lekent skiterreng ifølge kildene, med Vågakallen og Henningsvær under deg fra varden. Ingen hundremeter måler mer enn 22,6 grader, og det bratteste sammenhengende partiet er 29,8. Fri Flyts Lofoten-sider er eldre og bærer ingen KAST; det de bærer er farepunktene, og de er målbare: hengskavlene mot nordøst henger over en side som faller 41 grader i snitt.",
+    ascent: [
+      "Fra gården Justad ved fv. 815 — 14 moh på dyrket mark, med parkering langs vegen slik kilden sier. Lia over gården er åpen praktisk talt fra fjæra: terrengklassene langs linja har ingen sammenhengende skog i det hele tatt, så hele turen er lesbar fra bilen. Beltet fra 0 til 100 moh måler 11,7 grader.",
+      "Linja følger ryggformasjonen nordover over Skjærheia: beltet fra 300 til 400 moh er turens bratteste, 22,6 grader over 250 meter grunn, med det bratteste sammenhengende partiet — 29,8 grader — mellom 363 og 389 moh. Over 400 slakner det til 11,0 før de øvre beltene legger seg på 17–20 grader.",
+      "Toppartiet er lekent: småformasjoner og valgfrie linjer opp mot varden på 736 — registeret leser 735,7 der Fri Flyt og kartet skriver 738, et smalt topparti der laserskannet leser et par meter under det publiserte tallet. Hold deg vest for kanten: nordøstsida under varden faller 41,0 grader i snitt med 64,9 grader som bratteste 60-metersvindu bare 10 til 70 meter ut.",
+    ],
+    descent: [
+      "Normalen er sporet ditt opp, og vestsida er den slakeste sektoren — 21,7 grader i snitt med 30,1 som bratteste vindu. Oktoberflanken midt på ryggen er kildens nedfartsvariant for mer fall per sving.",
+      "Sørnedfarten er der kilden sier de større skredene går, og målingen er enig: 34,8 grader i snitt med 50,0 grader som bratteste vindu 110 til 170 meter ut. Den hører til stabile dager — og hengskavlene mot nordøst gjør kanten til noe du holder avstand fra uansett føre.",
+    ],
+    avalanche: [
+      {
+        title: "Ruta",
+        body: "Ingen KAST hos Fri Flyt — Lofoten-sidene er eldre enn klassifiseringen — men linjas egne tall er snille: 22,6 grader i bratteste belte, 29,8 i bratteste parti. Terrenget rundt er det som krever hodet, og det er grunnen til at kortet bærer grad 2.",
+      },
+      {
+        title: "Skavlene mot nordøst",
+        body: "Kildens eget farepunkt: hengskavler mot de brattere partiene mot nordøst. Nordøstsida faller 41,0 grader i snitt med 64,9 som bratteste vindu rett under varden — en skavl som losner der har vegg under seg. I flatt lys går sporet et par svingemonner vest for kanten.",
+      },
+      {
+        title: "Sørsida",
+        body: "De større skredene går på sørnedfarten, sier kilden — 34,8 grader i snitt, bratteste vindu 50,0. Etter pålagring fra nord og vest er sørsida lesida, og da er oppsporet langs ryggen den eneste linja turen trenger.",
+      },
+      {
+        title: "Før du går",
+        body: "Justadtinden ligger i varslingsregionen Lofoten og Vesterålen, en A-region med daglig skredvarsel gjennom sesongen — sjekk varsom.no. Fri Flyt oppgir ingen sesong; jan–apr på kortet er redaksjonell og hentet fra naboturene, og det står her. Ta med sender/mottaker, søkestang og spade.",
+      },
+    ],
+    elevationProfile: {
+      path: "M0,200 L36,197 L56,189 L75,181 L93,176 L112,169 L140,159 L159,158 L183,154 L216,153 L244,150 L259,144 L275,137 L292,131 L317,121 L332,114 L351,103 L375,94 L403,85 L431,83 L450,78 L461,74 L488,64 L507,56 L526,46 L544,40 L573,30 L591,21 L600,18",
+      startLabel: "14 moh",
+      endLabel: "736 moh",
+      distanceLabel: "2,9 km",
+      caption: "733 høydemeter og 2,88 km fra Justad over Skjærheia, uten skog å snakke om langs linja, med det bratteste — 29,8 grader mellom 363 og 389 moh — midt på ryggen.",
     },
   },
   stornappstinden: {

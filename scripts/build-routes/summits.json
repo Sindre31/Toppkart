@@ -1062,5 +1062,45 @@
     "summit_dtm": 901.1,
     "claims": 900,
     "stored_off_km": 0.0
+  },
+  "justadtinden": {
+    "name": "Justadtinden",
+    "lat": 68.18216,
+    "lng": 13.80369,
+    "summit_dtm": 735.7,
+    "claims": 738,
+    "stored_off_km": 0.0
+  },
+  "rundfjellet": {
+    "name": "Rundfjellet",
+    "lat": 68.2894,
+    "lng": 14.56524,
+    "summit_dtm": 802.6,
+    "claims": 803,
+    "stored_off_km": 0.01
+  },
+  "torskmannen": {
+    "name": "Torskmannen",
+    "lat": 68.3368,
+    "lng": 14.60386,
+    "summit_dtm": 755.2,
+    "claims": 755,
+    "stored_off_km": 0.0
+  },
+  "pilan": {
+    "name": "Pilan",
+    "lat": 68.3688,
+    "lng": 14.66384,
+    "summit_dtm": 826.0,
+    "claims": 828,
+    "stored_off_km": 0.0
+  },
+  "kleppstadheia": {
+    "name": "Kleppstadheia",
+    "lat": 68.26826,
+    "lng": 14.31161,
+    "summit_dtm": 533.9,
+    "claims": 534,
+    "stored_off_km": 0.03
   }
 }

@@ -1894,5 +1894,95 @@
    "figure": "linja kryssar 103 m av det, aldri meir enn 18 m frå kartlagd strand",
    "how": "check_ground.py mot OSMs vasspolygon; naturleg vatn, ikkje regulert."
   }
+ ],
+ "justadtinden": [
+  {
+   "what": "Nordøstsiden, der skavlene henger",
+   "figure": "41,0° i snitt med 64,9° som bratteste 60-metersvindu 10–70 m ute — kildens «hengskavler mot de brattere partiene mot nordøst» står på målbart bratt vegg",
+   "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+  },
+  {
+   "what": "Sørsiden (der de større skredene går)",
+   "figure": "34,8° i snitt, 50,0° som bratteste vindu 110–170 m ute",
+   "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+  },
+  {
+   "what": "Vestsiden",
+   "figure": "21,7° i snitt, 30,1° som bratteste vindu — den slakeste sektoren",
+   "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+  }
+ ],
+ "rundfjellet": [
+  {
+   "what": "Sørsiden (normalnedfartens sektor)",
+   "figure": "13,7° i snitt over 500 m, 38,2° som bratteste vindu langt ute (350–410 m)",
+   "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+  },
+  {
+   "what": "Alle andre sektorer",
+   "figure": "21–29° i snitt med vinduer på 40–65° — «hold deg på toppen av ryggen» er målbart riktig",
+   "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+  },
+  {
+   "what": "Skoggrensa langs linja",
+   "figure": "1,93 km ute",
+   "how": "treeline_scan i guide_facts.py: siste skogsverteks langs linja, med 600 m grunn og 150 m høgd utan skog som stoppkrav."
+  }
+ ],
+ "torskmannen": [
+  {
+   "what": "Sørvest- og vestsiden",
+   "figure": "40,7° og 40,0° i snitt med 67,4° og 62,7° som bratteste vinduer rett under toppen",
+   "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+  },
+  {
+   "what": "Nordøstsiden (dit skaret og ryggen leder)",
+   "figure": "12,7° i snitt — den slake sektoren, og den linja følger",
+   "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+  },
+  {
+   "what": "Sørøstflanken (nedfartsaspektet)",
+   "figure": "30,8° i snitt, 49,2° som bratteste vindu 40–100 m ute",
+   "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+  },
+  {
+   "what": "Skoggrensa langs linja",
+   "figure": "1,54 km ute",
+   "how": "treeline_scan i guide_facts.py: siste skogsverteks langs linja, med 600 m grunn og 150 m høgd utan skog som stoppkrav."
+  }
+ ],
+ "pilan": [
+  {
+   "what": "Toppkjegla rundt",
+   "figure": "20,9–46,5° i snitt etter kant; sør 22,7° og sørvest 20,9° er de slakeste, nord 42,3° og vest 46,5° de bratteste — det målte 39,4-gradssteget mellom 753 og 786 moh er terreng, ikke ruting",
+   "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+  },
+  {
+   "what": "Nordsiden mot Morfjorddalen",
+   "figure": "42,3° i snitt med 57,7° som bratteste vindu — kildens «brattere terreng ned mot Morfjorddalen» står seg",
+   "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+  },
+  {
+   "what": "Skoggrensa langs linja",
+   "figure": "1,66 km ute",
+   "how": "treeline_scan i guide_facts.py: siste skogsverteks langs linja, med 600 m grunn og 150 m høgd utan skog som stoppkrav."
+  }
+ ],
+ "kleppstadheia": [
+  {
+   "what": "Nord-, nordøst- og østsiden av toppen",
+   "figure": "34,6–37,9° i snitt med vinduer på 45,6–55,9° — de bratte kantene ligger mot nord og øst ved toppen; kildens advarsel om bratt terreng langs sørsida gjelder partiene lavere på ryggen",
+   "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+  },
+  {
+   "what": "Sørflata ved toppen",
+   "figure": "4,0° i snitt over 500 m — flata normalsporet bruker",
+   "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+  },
+  {
+   "what": "Skoggrensa langs linja",
+   "figure": "1,17 km ute",
+   "how": "treeline_scan i guide_facts.py: siste skogsverteks langs linja, med 600 m grunn og 150 m høgd utan skog som stoppkrav."
+  }
  ]
 }
