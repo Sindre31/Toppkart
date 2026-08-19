@@ -61,7 +61,6 @@ PEAKS = [
     ("keipen", "Keipen", ["Senja"], 938, 69.495, 17.723),
     ("moysalen", "Møysalen", ["Lødingen", "Sortland - Suortá"], 1262, 68.526, 15.452),
     ("geitgaljen", "Geitgallien", ["Vågan"], 1085, 68.344, 14.813),
-    ("skjomtinden", "Skjomtinden", ["Narvik"], 1575, 68.344, 17.355),
     ("storsteinsfjellet", "Storsteinsfjellet", ["Narvik"], 1894, 68.232, 17.877),
     ("storsylen", "Storsylen", ["Tydal"], 1762, 63.020, 12.199),
     ("fongen", "Fongen", ["Selbu", "Tydal", "Meråker"], 1441, 63.181, 11.631),
@@ -303,4 +302,13 @@ PEAKS = [
     ("torskmannen", "Torskmannen", ["Vågan"], 755, 68.33678, 14.60382),
     ("pilan", "Pilan", ["Vågan", "Hadsel"], 828, 68.36880, 14.66378),
     ("kleppstadheia", "Kleppstadheia", ["Vågan"], 534, 68.26802, 14.31167),
+    #
+    # — the Narvik round: five from Fri Flyt's Narvik chapter — Håkvikdalen,
+    #   Beisfjord/Djupvik, Skjomen and Gratangsfjellet. Skjomtinden is the
+    #   Sovende dronning; Litletind is registered Litletinden. —
+    ("skjomtinden", "Skjomtinden", ["Narvik"], 1575, 68.34352, 17.35470),
+    ("litletind", "Litletinden", ["Narvik"], 1096, 68.36063, 17.33620),
+    ("beisfjordtotta", "Beisfjordtøtta", ["Narvik"], 1448, 68.40588, 17.57398),
+    ("spanstinden", "Spanstinden", ["Loabák - Lavangen", "Lavangen"], 1457, 68.69988, 17.86830),
+    ("gangnesaksla", "Gangnesaksla", ["Narvik"], 1318, 68.19956, 17.26234),
 ]

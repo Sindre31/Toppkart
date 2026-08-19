@@ -863,6 +863,45 @@ export const GUIDES: Record<string, TourGuide> = {
       caption: "1432 høgdemeter og 5,24 km frå Tindelva, med det brattaste — 27,7 grader mellom 1286 og 1304 moh — på ryggen ein knapp halvkilometer før varden.",
     },
   },
+  spanstinden: {
+    slug: "spanstinden",
+    intro:
+      "1047 høydemeter og 5,24 km fra Bukkemyrvatnet på Gratangsfjellet — en klassiker så populær at du på soldager nesten kan regne med folk på fjellet, sier ut.no. Fri Flyt gir KAST 1 – Enkel, og linja holder det: bratteste hundremetersbelte 18,8 grader og bratteste sammenhengende parti 25,0. Toppen og de siste meterne fram til den er veldig spektakulære, sier kilden — og målingen forklarer hvorfor: alt annet enn fonna du kommer opp er 42 til 47 grader i snitt.",
+    ascent: [
+      "Fra parkeringa ved Bukkemyrvatnet på E6, høyeste punkt på Gratangsfjellet — 424 moh, med Lapphaugen turiststasjon som kildens alternative start lenger nord. Linja krysser 90 meter av Bukkemyrvatnet, aldri mer enn 25 meter fra land: et naturlig vann på 418 moh som kildens egen rute går over — ordinær vinterferdsel, og sagt her fordi det er et vann du står på. Skogen slutter allerede på 476 moh etter 1,03 km.",
+      "Nordover mot det bratte og klippete Sølvfjellet går det i småkuler og terrasser: 10,2 grader fra 500 til 600 moh, 14,3 og 16,4 i de neste beltene — følg gamle spor når de finnes, sier kilden, for terrassene skjuler linja i flatt lys. Mellom Sølvfjellet og Spanstinden — 851 moh der linja passerer — åpner den store fonna sørøst for toppen seg.",
+      "Fonna tas med den slakeste stigninga til høyre (aust), slik kilden sier: beltet fra 1300 til 1400 måler 18,8 grader, turens bratteste, og det bratteste sammenhengende partiet er 25,0 grader nede mellom 947 og 968. Så de spektakulære siste meterne: varden på 1457 — registeret løser 1457,4 — med fallene på alle andre kanter som kulisse.",
+    ],
+    descent: [
+      "Ned fonna igjen — sørøstsektoren måler 14,1 grader i snitt over 500 meter med 28,9 i det første vinduet, stor og lesbar kjøring tilbake mot terrassene. Kilden beskriver fire nedfartsvarianter fra lett terrassekjøring til middels krevende via Tjuvhola-botnen mot Moen.",
+      "Hold fonna til du er av toppen: nord, nordøst og sørvest faller 44,1, 47,5 og 42,0 grader i snitt, med et vindu på 71,4 grader på nordøstsiden. Det spektakulære og det farlige er samme kant her.",
+    ],
+    avalanche: [
+      {
+        title: "Ruta",
+        body: "KAST 1 – Enkel hos Fri Flyt, og linja måler deretter: 18,8 grader i bratteste belte, 25,0 i bratteste parti. Skredterrenget ligger i de brattere partiene over skoggrensa ved siden av linja — vær varsom der de flate partiene går over i bratte heng, sier kilden.",
+      },
+      {
+        title: "Toppkanten",
+        body: "Alt annet enn fonna er bratt: 42 til 47 grader i snitt mot nord, nordøst og sørvest. De siste meterne er spektakulære fordi kantene er nære — i flatt lys går sporet midt på fonna, og varden besøkes med respekt for hva som er under snøen på kanten.",
+      },
+      {
+        title: "Bukkemyrvatnet",
+        body: "Linja krysser 90 meter av vannet, aldri mer enn 25 meter fra land. Naturlig vann, vinteris, ordinær ferdsel — men et vann er et vann, særlig først og sist i sesongen.",
+      },
+      {
+        title: "Før du går",
+        body: "Spanstinden ligger i varslingsregionen Sør-Troms, en A-region med daglig skredvarsel gjennom sesongen — sjekk varsom.no; fjellet står i Narvik-kapittelet hos kilden, men varslet det svarer til er Sør-Troms. Sesongen februar–juni er Fri Flyts. Ta med sender/mottaker, søkestang og spade.",
+      },
+    ],
+    elevationProfile: {
+      path: "M0,199 L31,200 L56,200 L82,199 L98,198 L118,190 L143,184 L159,179 L180,173 L201,167 L221,158 L242,152 L257,144 L278,136 L299,129 L317,125 L329,119 L345,111 L371,100 L396,90 L420,81 L443,73 L466,69 L484,62 L510,54 L536,43 L556,32 L582,21 L600,18",
+      startLabel: "424 moh",
+      endLabel: "1457 moh",
+      distanceLabel: "5,2 km",
+      caption: "1047 høydemeter og 5,24 km fra Bukkemyrvatnet om terrassene mot Sølvfjellet og fonna sørøst for toppen, med skoggrensa på 476 moh og det bratteste beltet — 18,8 grader — mellom 1300 og 1400 moh.",
+    },
+  },
   moysalen: {
     slug: "moysalen",
     intro:
@@ -974,6 +1013,45 @@ export const GUIDES: Record<string, TourGuide> = {
       caption: "5,83 km og 1129 høydemeter fra steinbruddet i Forselvveien; bratteste hundremeteren ligger mellom 500 og 600 moh.",
     },
   },
+  beisfjordtotta: {
+    slug: "beisfjordtotta",
+    intro:
+      "1428 høydemeter og 7,19 km fra bommen over Djupvik til fjellet Fri Flyt kaller et fjell med mange hemmeligheter. Normalruta over skaret er den tålmodige veien inn i dem: bratteste hundremetersbelte 22,7 grader, og det bratteste sammenhengende partiet — 38,4 grader mellom 1414 og 1445 moh — er selve toppblokka. KAST 2 – Utfordrende hos kilden; alternativene (Isvannsrenna, Isbreen på ~45 grader) er en annen liga, og de er ikke linja her. Både Forsnesvatnet og Isvatnet er regulerte, og linja holder land hele veien.",
+    ascent: [
+      "Fra veibommen på Forselvveien over Djupvik — 60 moh, parkering ved bommen slik kilden sier — går du veien til veienden på 141 og opp den bratte skogen til vannverksveien. Skogen slutter på 502 moh etter 2,94 km. De fire første vegpunktene deler geometri med Rombakstøttas reviderte linje: dette er audited grunn.",
+      "Forbi Pumpvatnet på nordsida — vannet er naturlig tross navnet, 325 moh, og linja runder det på land etter tre omrutinger som står i forskningsposten — og opp bekkedalen mot Forsnesvatnet: 18,1 grader i beltet fra 500 til 600. Fri Flyts rute krysser Forsnesvatn på isen; vannet er regulert, så linja her tar austsida på land — beltene fra 800 til 1100 måler 18,4, 20,8 og 22,7 grader, turens jevnt bratteste strekk.",
+      "Fra flaten på 1200-nivået — beltet måler 4,2 grader over 1,3 kilometer — går det opp mot skaret mellom Moskočohkka og Tøtta, 1257 moh der linja tar det, og ryggen sørover til toppblokka: 38,4 grader mellom 1414 og 1445, de meterne som avgjør dagen. Varden på 1448; registeret løser 1447,8.",
+    ],
+    descent: [
+      "Ned samme vei — ryggen fra nordvest er den slake sektoren på toppen, 12,7 grader i snitt over 500 meter. Toppblokka tas i samme spor som opp, og flaten under skaret gir pusterom før de lange beltene ned mot Forsnesvatnet.",
+      "Sørøst-, sør- og østsiden faller 34,6 til 44,8 grader i snitt med 72 til 76 grader i de første 60-metersvinduene fra varden — kanten mot Beisfjorden er vegg. Isvannsrenna mot Straumsnes og Isbreen-nedfarten (~45 grader, med bre og kløfter) er kildens alternativer for stabile dager med følge som kan terrenget.",
+    ],
+    avalanche: [
+      {
+        title: "Ruta",
+        body: "KAST 2 – Utfordrende hos Fri Flyt. Normalruta er den tålmodige linja på et fjell der alternativene har renner, is og bre — 22,7 grader i bratteste belte, og toppblokkas 38,4-graderssteg som eneste alvor. Skredfaren i rennene og ispartiene hører til variantene; les dem som grenser, ikke muligheter.",
+      },
+      {
+        title: "De regulerte vannene",
+        body: "Forsnesvatnet og Isvatnet er begge regulerte. Fri Flyts rute krysser Forsnesvatn på isen — linja her går austsida på land, og det koster noen minutter og null risiko. Regulert is får sprekker langs land når magasinet tappes; det er ikke is å lære seg å kjenne.",
+      },
+      {
+        title: "Kanten mot Beisfjorden",
+        body: "Fra varden faller sørøst 76 grader i det første 60-metersvinduet. I flatt lys er kanten og flaten like hvite — retningen ned er nordvest, tilbake mot skaret, og den er verdt å ha i kompasset før toppen.",
+      },
+      {
+        title: "Før du går",
+        body: "Beisfjordtøtta ligger i varslingsregionen Ofoten, en A-region med daglig skredvarsel gjennom sesongen — sjekk varsom.no. Sesongen februar–juni er Fri Flyts. Ta med sender/mottaker, søkestang og spade.",
+      },
+    ],
+    elevationProfile: {
+      path: "M0,200 L24,193 L44,188 L63,179 L87,169 L107,167 L132,165 L159,164 L183,161 L207,153 L233,146 L254,138 L278,125 L297,121 L323,111 L345,100 L365,89 L386,76 L403,65 L425,54 L451,48 L474,46 L500,46 L527,41 L553,34 L579,22 L600,18",
+      startLabel: "60 moh",
+      endLabel: "1448 moh",
+      distanceLabel: "7,2 km",
+      caption: "1428 høydemeter og 7,19 km fra bommen over Djupvik om Pumpvatnet og austsida av Forsnesvatnet, med skoggrensa på 502 moh og det bratteste — 38,4 grader mellom 1414 og 1445 moh — i toppblokka.",
+    },
+  },
   pilan: {
     slug: "pilan",
     intro:
@@ -1013,6 +1091,45 @@ export const GUIDES: Record<string, TourGuide> = {
       caption: "847 høydemeter og 4,16 km fra Laupstad om vannet på 289 og Morfjordskaret, med skoggrensa på 233 moh og det bratteste — 39,4 grader mellom 753 og 786 moh — i toppkjegla.",
     },
   },
+  litletind: {
+    slug: "litletind",
+    intro:
+      "916 høydemeter og 5,21 km fra Nervatnet til fortoppen med byutsikten — Litletind er forfjellet til Sovende dronning og en av Narviks mest populære lokalturer, med Narvik og Rombaksfjorden under varden. Fri Flyt gir KAST 2 – Utfordrende; linja måler 19,9 grader i bratteste hundremetersbelte og 26,2 i bratteste sammenhengende parti, oppe i toppartiet. Registeret skriver Litletinden, og toppsøket løser 1099,6 mot kildens 1096.",
+    ascent: [
+      "Samme start som dronninga: parkeringa etter brua ved Nervatnet, 223 moh. Nervatnet er regulert — linja holder stien langs vannkanten på land, over myra sør for vannet og opp gjennom den glisne skogen. Skogen slutter på 532 moh etter 2,93 km, og de to første stigningsbeltene måler 14,9 og 16,4 grader.",
+      "Like etter tregrensa dreier du til høyre (nordvest) opp ryggen som leder til Litletind. Beltene fra 700 til 1000 måler 19,5, 17,9 og 19,9 grader — jevn skinning på åpen rygg med utsikten voksende bak deg.",
+      "Toppartiet er kildens ene forbehold: ryggen mot toppen er ofte avblåst og steinete, så den siste biten kan være kronglete. Det bratteste sammenhengende partiet måler 26,2 grader mellom 1043 og 1064 moh, og på hardpakke er det de meterne du merker. Varden på 1100 med Narvik, Rombaksfjorden og dronningprofilen bak deg.",
+    ],
+    descent: [
+      "Ned samme vei — sør- og sørvestsektoren linja bruker er den slakeste på toppen, 16,8 og 20,6 grader i snitt over 500 meter. Fri Flyts nedfart er oppstykkede fonner i lett varierende terreng.",
+      "Hold igjen mot øst og nordøst: 37,4 og 36,9 grader i snitt med vinduer på 57,7 og 49,0 rett under toppen — kanten mot Håkvikdalen. Sløret, den bratte fonna mellom Litletind og Dronninga, er skredterreng med stein i bunnen og hører til variantene, ikke normalturen.",
+    ],
+    avalanche: [
+      {
+        title: "Ruta",
+        body: "KAST 2 – Utfordrende hos Fri Flyt. Linja selv er snill — 19,9 grader i bratteste belte, 26,2 i bratteste parti — og det som krever hodet er kantene: øst- og nordøstsiden faller 37 grader i snitt med vinduer over 49 rett under varden.",
+      },
+      {
+        title: "Toppartiet",
+        body: "Ofte avblåst og steinete — skliproblem, ikke skredproblem. På hard vestavindsskare kan de siste 60 meterne være stedet skiene står igjen.",
+      },
+      {
+        title: "Reindrifta og vannet",
+        body: "Området brukes i reindriftsnæringen — hold avstand og band på hunden. Og Nervatnet er regulert: stien langs land begge veier, uansett hvor fin isen ser ut.",
+      },
+      {
+        title: "Før du går",
+        body: "Litletind ligger i varslingsregionen Ofoten, en A-region med daglig skredvarsel gjennom sesongen — sjekk varsom.no. Sesongen februar–mai er Fri Flyts. Ta med sender/mottaker, søkestang og spade.",
+      },
+    ],
+    elevationProfile: {
+      path: "M0,199 L26,200 L47,199 L72,198 L93,197 L119,199 L140,200 L166,199 L192,195 L223,188 L249,179 L275,168 L301,153 L319,144 L342,132 L368,124 L394,119 L410,111 L432,108 L455,100 L467,94 L486,80 L500,72 L519,61 L534,51 L554,39 L570,25 L586,18 L600,18",
+      startLabel: "223 moh",
+      endLabel: "1100 moh",
+      distanceLabel: "5,2 km",
+      caption: "916 høydemeter og 5,21 km fra Nervatnet opp ryggen fra tregrensa, med skoggrensa på 532 moh og det bratteste — 26,2 grader mellom 1043 og 1064 moh — i det avblåste toppartiet.",
+    },
+  },
   geitgaljen: {
     slug: "geitgaljen",
     intro:
@@ -1048,6 +1165,45 @@ export const GUIDES: Record<string, TourGuide> = {
       endLabel: "1085 moh",
       distanceLabel: "3,8 km",
       caption: "1071 høydemeter og 3,82 km fra Liland; renna på 250–360 moh er 35 grader, og de øverste 174 metrene 42.",
+    },
+  },
+  skjomtinden: {
+    slug: "skjomtinden",
+    intro:
+      "1487 høydemeter og 7,64 km fra Nervatnet i Håkvikdalen til Den sovende dronning — profilen alle i Narvik kjenner fra Bjerkvik-siden, og en av områdets fineste turer. Fri Flyt gir KAST 2 – Utfordrende, men utstyrslista sier isøks og stegjern, vestsidene er tidvis bare og steinete, og linja gir tilbake 134 høydemeter på traversen — kortet bærer grad 4. Bratteste hundremetersbelte måler 20,3 grader; det bratteste sammenhengende partiet, 33,7 grader, sitter i renna mellom 1439 og 1462 moh.",
+    ascent: [
+      "Fra parkeringa etter brua ved Nervatnet — 223 moh, E6 sørover fra Narvik og inn Håkvikdalen; lokalbussen til brua er kildens eget alternativ. Nervatnet er regulert, så linja holder stien langs vannkanten på land — kilden tilbyr isen «om den er stabil», og det tilbudet takker dette produktet alltid nei til. Over myra sør for vannet og opp gjennom den glisne skogen: skogen slutter på 546 moh etter 2,96 km.",
+      "Like etter tregrensa dreier du til høyre opp ryggen mot Litletind, følger forsenkningen rundt den og traverserer på skrå opp til ryggen mellom Litletind og Dronninga — 945 moh der linja tar den. Beltene er tålmodige: 12–13 grader fra 600 til 900, så turens bratteste hundremeter, 20,3 grader fra 1000 til 1100.",
+      "Fra rundt 1200 traverseres det inn på vestsidene. Her er terrenget tidvis bart og steinete — regn med å gå til fots i partier, og det er her isøksa og stegjerna i sekken slutter å være pynt. Snørenna leder opp til ryggen nordvest for hovedtoppen: det bratteste sammenhengende partiet måler 33,7 grader mellom 1439 og 1462 moh, og beltet fra 1400 er ellers slakt fordi traversen skrår. Varden på 1576 — registeret løser 1575,8 mot publiserte 1575 — med Ofoten, Frostisen og havet rundt deg.",
+    ],
+    descent: [
+      "Ned samme vei: renna, traversen, ryggen. Ryggen nordvest for toppen er den eneste slake sektoren på fjellet — 13,2 grader i snitt over 500 meter — og alt annet faller 23 til 45 grader i snitt med vinduer på 43 til 68. Traversen tas i samme spor som opp, mens du fortsatt vet hvor steinene var.",
+      "«Øyet» er kildens alternative nedfart: en trang snørenne på 45–50 grader med is og eksponerte klipper, der rutevalget er kritisk. Den står her fordi den finnes — ikke fordi den anbefales fra dette kortet.",
+    ],
+    avalanche: [
+      {
+        title: "Ruta",
+        body: "KAST 2 – Utfordrende hos Fri Flyt, men graden på kortet er 4: bare, steinete vestsider med gange til fots, isøks og stegjern i utstyrslista, 134 høydemeter gitt tilbake på traversen, og en snørenne på 33,7 grader som siste nøkkel. Dette er Slogen-klassen — en fjelltur på ski, ikke en skitur med topp.",
+      },
+      {
+        title: "Renna og vestsidene",
+        body: "Renna mellom 1439 og 1462 moh er bratt nok til å skride, og vestsidene samler snøen etter østavind. Bart berg og is veksler med fonner — vurder hver overgang, og snu der føret sier snu; dronninga ligger der neste helg også.",
+      },
+      {
+        title: "Nervatnet",
+        body: "Vannet er regulert, og regulert is er upålitelig is: linja holder stien langs land, og det bør sporet ditt også — begge veier, også når isen «ser fin ut» i mars.",
+      },
+      {
+        title: "Før du går",
+        body: "Skjomtinden ligger i varslingsregionen Ofoten, en A-region med daglig skredvarsel gjennom sesongen — sjekk varsom.no. Sesongen februar–mai er Fri Flyts. Sender/mottaker, søkestang, spade — og isøks og stegjern, som kilden selv krever.",
+      },
+    ],
+    elevationProfile: {
+      path: "M0,199 L22,200 L43,199 L68,199 L92,200 L121,198 L145,195 L177,185 L198,174 L216,165 L241,153 L265,148 L287,140 L311,132 L336,120 L360,115 L379,105 L400,98 L417,88 L432,80 L449,71 L467,61 L484,51 L502,47 L520,41 L535,33 L556,24 L570,35 L587,23 L600,18",
+      startLabel: "223 moh",
+      endLabel: "1576 moh",
+      distanceLabel: "7,6 km",
+      caption: "1487 høydemeter og 7,64 km fra Nervatnet om ryggen mellom Litletind og Dronninga og traversen på vestsidene, med skoggrensa på 546 moh og det bratteste — 33,7 grader mellom 1439 og 1462 moh — i renna.",
     },
   },
   torskmannen: {
@@ -1240,6 +1396,41 @@ export const GUIDES: Record<string, TourGuide> = {
       endLabel: "956 moh",
       distanceLabel: "3,9 km",
       caption: "988 høydemeter fra fjæra på Haukland på 3,89 km; det bratteste ligger mellom 500 og 600 moh.",
+    },
+  },
+  gangnesaksla: {
+    slug: "gangnesaksla",
+    intro:
+      "1306 høydemeter og 4,90 km fra kraftstasjonen i Sørskjomen — nesten hele fjellet fra fjorden, med Frostisens 25 kvadratkilometer i utsikten og renna lokalavisa kaller Norges lengste under kanten i nordaust. Fri Flyt gir KAST 2 – Utfordrende; normalruta på sørsida måler 20,0 grader i bratteste hundremetersbelte og 26,0 i bratteste sammenhengende parti. Renna er variantterreng med egen utstyrsliste, og den er ikke linja på kortet.",
+    ascent: [
+      "Fra parkeringa utenfor kraftstasjonen — OSM har Skarelva kraftverk kartlagt, stasjonen med glass- og natursteinsfasaden kilden beskriver, 20 moh. Anleggsveien følger Vesterskarelva opp dalen: beltet fra 100 til 200 moh måler 18,8 grader, og du følger bekken til den lille dammen ved tregrensa på 539. Skogen slutter på 600 moh etter 2,56 km.",
+      "Fra dammen dreier du til høyre gjennom skogen mot nordvest, og over tregrensa går det diagonalt til den tydelige hylla på rundt 800 moh — prøvepunktet over hylla leser 1067. Beltene fra 700 til 1000 måler 19,2, 19,6 og 20,0 grader: jevnt, aldri bratt, alltid oppover.",
+      "Fra hylla holder du samme retning på de slakeste bakkene og tar toppen via nordaustryggen. Det bratteste sammenhengende partiet måler 26,0 grader mellom 1155 og 1174 moh. Varden på 1318 — registeret løser 1318,5, koordinaten flyttet 200 meter fra representasjonspunktet til toppunktet — med Frostisen i sør og Skjomen under deg.",
+    ],
+    descent: [
+      "Normalruta ned er sporet ditt opp — en fin rute med god plass ovenfor tregrensa, sier kilden, og sørvestsektoren måler 9,6 grader i snitt. Se opp for skred sør for toppen og hull i bekken seint i sesongen — kildens egne ord, og bekkedalen er der begge bor.",
+      "Gangnesrenna er kapittelet for seg: rundt 40 grader i starten, ispartier fra bekkeløpet og skredaktivitet lenger nede, isøks, stegjern og eventuelt tau i kildens utstyrsliste, og en labyrintisk utgang langs fjordkanten til Skjombotn. Kanten mot renna måler 59,9 grader i det første 60-metersvinduet. Tusen meter rett ned mot fjorden — for dager og folk som har målt seg mot mindre først.",
+    ],
+    avalanche: [
+      {
+        title: "Ruta",
+        body: "KAST 2 – Utfordrende hos Fri Flyt. Normalruta på sørsida er jevn — 20,0 grader i bratteste belte, 26,0 i bratteste parti — og farene kilden navngir er skred sør for toppen og hull i bekken seint i sesongen. Bekkedalen er både oppspor og utløp; les hengene over den.",
+      },
+      {
+        title: "Gangnesrenna",
+        body: "Rundt 40 grader øverst, is fra bekkeløpet, skredaktivitet nederst — og 59,9 grader i det første vinduet fra kanten. Renna har egen utstyrsliste hos kilden (isøks, stegjern, eventuelt tau) og eget alvor. Fra normalruta er den en utsikt, ikke en snarvei.",
+      },
+      {
+        title: "Før du går",
+        body: "Gangnesaksla ligger i varslingsregionen Ofoten, en A-region med daglig skredvarsel gjennom sesongen — sjekk varsom.no. Sesongen februar–mai er Fri Flyts. Ta med sender/mottaker, søkestang og spade.",
+      },
+    ],
+    elevationProfile: {
+      path: "M0,200 L33,197 L60,193 L88,185 L116,174 L137,165 L154,163 L182,161 L204,154 L231,143 L253,136 L281,128 L303,121 L326,115 L353,107 L375,98 L392,92 L410,84 L430,76 L452,67 L469,60 L496,52 L521,46 L535,41 L556,32 L578,24 L589,20 L600,18",
+      startLabel: "20 moh",
+      endLabel: "1318 moh",
+      distanceLabel: "4,9 km",
+      caption: "1306 høydemeter og 4,90 km fra kraftstasjonen i Sørskjomen om dammen ved tregrensa og hylla på 800, med skoggrensa på 600 moh og det bratteste — 26,0 grader mellom 1155 og 1174 moh — under nordaustryggen.",
     },
   },
   justadtinden: {
