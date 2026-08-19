@@ -311,4 +311,14 @@ PEAKS = [
     ("beisfjordtotta", "Beisfjordtøtta", ["Narvik"], 1448, 68.40588, 17.57398),
     ("spanstinden", "Spanstinden", ["Loabák - Lavangen", "Lavangen"], 1457, 68.69988, 17.86830),
     ("gangnesaksla", "Gangnesaksla", ["Narvik"], 1318, 68.19956, 17.26234),
+    #
+    # — the Sør-Troms round: Kvæfjord and Ibestad (Andørja and Rolla) from Fri
+    #   Flyt's Harstad section — a chapter where nearly everything is KAST 3
+    #   with ice axe and crampons on the list, which is why the region held one
+    #   tour. Snytindan is the register spelling of Fri Flyt's Snøtindan. —
+    ("snotinden", "Snøtinden", ["Ibestad"], 1215, 68.83674, 17.30609),
+    ("stortinden-rolla", "Stortinden", ["Ibestad"], 1021, 68.79232, 17.03672),
+    ("reinspalen", "Reinspælen", ["Kvæfjord"], 1118, 68.59348, 15.69887),
+    ("snotindan", "Snytindan", ["Kvæfjord"], 996, 68.54323, 15.61677),
+    ("storhornet-kvafjord", "Storhornet", ["Kvæfjord"], 722, 68.82460, 16.21305),
 ]

@@ -241,6 +241,39 @@
   "season": "feb–mai",
   "hasGuide": true
  },
+ "snotinden": {
+  "name": "Snøtinden",
+  "region": "Harstad",
+  "summitM": 1215,
+  "verticalM": 1240,
+  "duration": "5–7 t",
+  "grade": 4,
+  "aspect": "V",
+  "season": "feb–apr",
+  "hasGuide": true
+ },
+ "storhornet-kvafjord": {
+  "name": "Storhornet i Kvæfjord",
+  "region": "Harstad",
+  "summitM": 722,
+  "verticalM": 660,
+  "duration": "4–6 t",
+  "grade": 1,
+  "aspect": "S",
+  "season": "nov–apr",
+  "hasGuide": true
+ },
+ "stortinden-rolla": {
+  "name": "Stortinden på Rolla",
+  "region": "Harstad",
+  "summitM": 1020,
+  "verticalM": 980,
+  "duration": "5–7 t",
+  "grade": 4,
+  "aspect": "V",
+  "season": "feb–apr",
+  "hasGuide": true
+ },
  "spanstinden": {
   "name": "Spanstinden",
   "region": "Narvik",
@@ -250,6 +283,28 @@
   "grade": 2,
   "aspect": "SØ",
   "season": "feb–jun",
+  "hasGuide": true
+ },
+ "reinspalen": {
+  "name": "Reinspælen",
+  "region": "Harstad",
+  "summitM": 1117,
+  "verticalM": 1400,
+  "duration": "6–8 t",
+  "grade": 4,
+  "aspect": "S",
+  "season": "jan–apr",
+  "hasGuide": true
+ },
+ "snotindan": {
+  "name": "Snøtindan",
+  "region": "Harstad",
+  "summitM": 996,
+  "verticalM": 1550,
+  "duration": "7–9 t",
+  "grade": 4,
+  "aspect": "Ø",
+  "season": "jan–apr",
   "hasGuide": true
  },
  "moysalen": {

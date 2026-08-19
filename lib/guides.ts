@@ -863,6 +863,119 @@ export const GUIDES: Record<string, TourGuide> = {
       caption: "1432 høgdemeter og 5,24 km frå Tindelva, med det brattaste — 27,7 grader mellom 1286 og 1304 moh — på ryggen ein knapp halvkilometer før varden.",
     },
   },
+  snotinden: {
+    slug: "snotinden",
+    intro:
+      "1242 høydemeter og 6,76 km fra Ånstad til den store klassikeren på Andørja — øya Fri Flyt kaller tettpakket med fjelltopper. Kilden gir KAST 3 – Komplekst med alpinøks og stegjern i utstyrslista og fem navngitte nedfarter der flere holder 45 grader; Vestsiden, linja på dette kortet, er den mildeste av dem, og selve oppturen måler 22,7 grader i bratteste hundremetersbelte og 28,1 i bratteste sammenhengende parti. Kortet bærer grad 4: fjellet rundt linja er grunnen.",
+    ascent: [
+      "Fra idrettsanlegget ved skolen på Ånstad — 9 moh på dyrket mark ved fylkesvegen. Du følger vegen mot Kvantobotn (91 moh der linja tar av), krysser Kvantoelva og går opp skogen aust for Snøfjellelva: beltene fra 100 til 400 moh måler 7 grader over vegen og myrene, så bratner det — 20,9 grader fra 400 til 500 og turens bratteste belte, 22,7 grader over 253 meter grunn, fra 500 til 600, med det bratteste sammenhengende partiet på 28,1 mellom 630 og 648 moh. Skogen slutter på 402 moh etter 4,27 km.",
+      "Over skogen passerer linja sør og søraust for Snøfjellvatnet — på land hele veien; den første løsningen krysset 90 meter av vannet, og omrutingen står i forskningsposten — og tar vestflanken derfra: 15–18 grader i beltene fra 700 til 1000.",
+      "De siste tre hundre høydemetrene holder 18–20 grader opp til varden på 1215. Registeret løser 1214,8, og rundt deg står Andørja-traversens tinder — Stortinden, Botntinden, Langlitinden — med fjorden på alle kanter.",
+    ],
+    descent: [
+      "Vestsiden ned er sporet ditt opp — 20 til 35 grader mot Snøfjellvatnet ifølge kilden, og sørvestsektoren er målt til 15,8 grader i snitt, den slakeste på toppen. Lenger nede venter 30–40 grader med 45-graders parti der linja fra vannet faller mot skogen.",
+      "De fire andre navngitte nedfartene — Bananene og Skreddalen, Sydsiden, Nordøstrenna (45–50 grader), Østbratta — henger i kanter som måler 31 til 41 grader i snitt med vinduer på 54 til 63 rett under varden. De er dokumenterte ekspertlinjer med dokumentert skredhistorikk, og de velges dagen etter stabiliteten, ikke omvendt.",
+    ],
+    avalanche: [
+      {
+        title: "Ruta",
+        body: "KAST 3 – Komplekst hos Fri Flyt, alpinøks og stegjern i utstyrslista — og grad 4 på kortet selv om Vestsiden måler 28,1 på det bratteste: nedfarten passerer terreng på 30–40 grader med 45-graders parti, og alt rundt linja er brattere enn linja.",
+      },
+      {
+        title: "Skredhistorikken",
+        body: "Kilden dokumenterer skredhistorikk på de sørvendte hengene og vest for høgde 1018 — på selve normalveiens side av fjellet. Isingen nær tregrensa kommer i tillegg. Dette er en tur der varselet leses før bilen starter.",
+      },
+      {
+        title: "Snøfjellvatnet",
+        body: "Linja holder land sør for vannet. Naturlig vann og vinteris er ordinær ferdsel, men med 1215 meter fjell over deg er bredden det eneste stedet å stå når noe losner høyere oppe.",
+      },
+      {
+        title: "Før du går",
+        body: "Snøtinden ligger i varslingsregionen Sør-Troms, en A-region med daglig skredvarsel gjennom sesongen — sjekk varsom.no. Sesongen februar–april er Fri Flyts. Sender/mottaker, søkestang, spade — og alpinøks og stegjern, som kilden selv krever.",
+      },
+    ],
+    elevationProfile: {
+      path: "M0,200 L28,198 L55,197 L76,193 L103,189 L123,191 L147,191 L175,185 L203,181 L227,176 L259,166 L279,162 L307,156 L339,152 L367,147 L389,134 L403,125 L420,114 L439,101 L451,95 L467,85 L487,78 L503,70 L527,61 L546,49 L565,38 L582,26 L600,18",
+      startLabel: "9 moh",
+      endLabel: "1215 moh",
+      distanceLabel: "6,8 km",
+      caption: "1242 høydemeter og 6,76 km fra Ånstad aust for Snøfjellelva og sør for Snøfjellvatnet, med skoggrensa på 402 moh og det bratteste — 28,1 grader mellom 630 og 648 moh — i skoglia.",
+    },
+  },
+  "storhornet-kvafjord": {
+    slug: "storhornet-kvafjord",
+    intro:
+      "658 høydemeter og 8,22 km fra Kvæfjordeidet — solturen i rundelen, etter det kilden kaller Harstads alltid best preparerte løype opp til Koven og en slak, sørvendt rygg videre. Ingen hundremeter måler mer enn 9,5 grader, det bratteste sammenhengende partiet er 25,8, og toppen har ingen bratt side: alle åtte kanter måler 6 til 18 grader i snitt. Det bratte i turen finnes — sidene langs Vikelandselva — og løypa går ikke i dem.",
+    ascent: [
+      "Fra den store parkeringsplassen ved starten av Kvæfjordløypene, vest for Bjørklund — 175 moh. Løypa, preparert av entusiastene i Kvæfjordløyper, tar deg innover: beltene fra 200 til 400 moh måler 2 til 6 grader over kilometervis, og skogen slutter på 417 moh etter 6,11 km — mesteparten av turen er løypetur.",
+      "Koven passeres på 415 moh — ut.no beskriver samme løype fra Kvæfjordeidet — og ryggen videre mot Storhornet er turens eneste stigning å snakke om: 9,5 grader i beltet fra 500 til 600, med det bratteste sammenhengende partiet på 25,8 mellom 476 og 494 moh der ryggen setter i gang.",
+      "Varden på 722 — registeret løser 722,2 — med Kvæfjorden og Gullesfjorden under deg og appelsinen og kvikklunsjen kilden foreskriver på Koven. Ryggen gir tilbake 111 meter underveis, så hjemturen har sine egne små motbakker.",
+    ],
+    descent: [
+      "Ned ryggen og løypa igjen — sørvendt og solfylt, og med 26,8 grader som det bratteste 60-metersvinduet på hele toppen er dette kjøring for alle føreforhold og de fleste bein.",
+      "Kildens ene regel: ikke gå opp i de bratte fjellsidene langs Vikelandselva — det er skredterreng, og løypa holder seg unna dem. Følg den.",
+    ],
+    avalanche: [
+      {
+        title: "Ruta",
+        body: "Enkelt hos Fri Flyt, og målingen er enig: 9,5 grader i bratteste belte, 25,8 i bratteste parti, og ingen bratt side på toppen. Dette er turen for dager da varselet sier at bratt terreng ikke er stedet å være — og øvingsturen for alle andre dager.",
+      },
+      {
+        title: "Vikelandselva",
+        body: "Kildens navngitte farepunkt: de bratte sidene langs elva er skredterreng. Løypa går ikke i dem, og sporet ditt trenger ikke gjøre det heller — snarveier her sparer minutter og satser resten.",
+      },
+      {
+        title: "Før du går",
+        body: "Storhornet ligger i varslingsregionen Sør-Troms, en A-region med daglig skredvarsel gjennom sesongen — sjekk varsom.no. Sesongen november–april er Fri Flyts, med tidlig løypestart som en del av fjellets rykte. Sender/mottaker, søkestang og spade — også på løypetur.",
+      },
+    ],
+    elevationProfile: {
+      path: "M0,200 L25,194 L48,183 L71,171 L94,171 L114,159 L134,157 L154,160 L173,162 L196,164 L219,160 L239,159 L262,155 L282,150 L298,134 L318,125 L337,135 L357,137 L377,136 L403,131 L423,126 L445,121 L465,105 L483,79 L502,63 L521,54 L544,47 L564,45 L587,25 L600,18",
+      startLabel: "175 moh",
+      endLabel: "722 moh",
+      distanceLabel: "8,2 km",
+      caption: "658 høydemeter og 8,22 km fra Kvæfjordeidet etter løypa til Koven og ryggen til varden, med skoggrensa på 417 moh og det bratteste — 25,8 grader mellom 476 og 494 moh — der ryggen setter i gang.",
+    },
+  },
+  "stortinden-rolla": {
+    slug: "stortinden-rolla",
+    intro:
+      "984 høydemeter og 7,26 km fra Indre Forså til Rollas høyeste — Fri Flyt gir KAST 3 – Komplekst med alpinøks og stegjern, ofte skavlet topp, og ei renne på jevnt 30–40 grader som normalvei. Linja måler 21,4 grader i bratteste hundremetersbelte og 27,8 i bratteste sammenhengende parti, rett under toppen. Kildens oppgitte stigning, 1021, er toppens høyde duplisert inn i gain-feltet — kortet bærer linjas egne 980. Mevatnet er regulert, og linja runder det på land.",
+    ascent: [
+      "Fra Indre Forså ved fv. 848 på vestsida av Rolla — 85 moh, med begrenset parkering som krever grunneiers samtykke ifølge kilden; spør først, det er en del av turen. Innover myrene er det flatt: beltene fra 100 til 400 moh måler 2 til 5 grader, og skogen slutter først på 485 moh etter 5,67 km — en lang, stille inngang.",
+      "Linja passerer sørenden av Mevatnet i skogen på austsida og følger så austbredden på land — vannet er regulert, og de to omrutingene som skulle til står i forskningsposten. Fra 500 bratner det: 14,8, 20,3 og 21,4 grader i beltene opp mot renna.",
+      "Renna sør for toppen er nøkkelen: jevnt 30–40 grader ifølge kilden, og linjas bratteste sammenhengende parti måler 27,8 grader mellom 967 og 991 moh der den skrår inn. Toppen er ofte skavlet — varden på 1020 med Andørja i nord og havet i vest. Registeret løser 1020,0.",
+    ],
+    descent: [
+      "Ned renna igjen når snøen er stabil — bratt, flott kjøring i terreng som er jevnt mellom 30 og 40 grader, sier kilden, og så de lange, slake myrene hjem. Sørøst- og nordvestsektoren er målt til 24 grader i snitt; renna i vest er 39,9.",
+      "Drangen på austsida er den bratteste nedkjøringen uten tvil, sier kilden: starten er over 50 grader — målt 46,6 i snitt med 62,6 som bratteste vindu — og dagen for å kjøre her velges med omhu. Fra denne linja er den en annen tur.",
+    ],
+    avalanche: [
+      {
+        title: "Ruta",
+        body: "KAST 3 – Komplekst hos Fri Flyt, alpinøks og stegjern, og ei renne på 30–40 grader som normalvei — grad 4 på kortet selv om linjas skrålinje måler 27,8: renna krever stabil snø, og det finnes ingen slak vei opp det siste.",
+      },
+      {
+        title: "Skavlen",
+        body: "Toppen er ofte skavlet, sier kilden. Kanten henger mot aust — mot Drangen-sida, der det måler 62,6 grader i det første vinduet. Varden besøkes fra vest, og i flatt lys med god margin.",
+      },
+      {
+        title: "Mevatnet",
+        body: "Regulert vann — linja holder austbredden på land, og det bør sporet ditt også. Regulert is sprekker langs land når magasinet tappes, og myrene rundt gir tørt land hele veien.",
+      },
+      {
+        title: "Før du går",
+        body: "Stortinden ligger i varslingsregionen Sør-Troms, en A-region med daglig skredvarsel gjennom sesongen — sjekk varsom.no. Sesongen februar–april er Fri Flyts. Sender/mottaker, søkestang, spade — og alpinøks og stegjern.",
+      },
+    ],
+    elevationProfile: {
+      path: "M0,200 L23,194 L44,190 L68,186 L89,178 L119,171 L141,167 L161,173 L186,164 L204,163 L230,161 L256,162 L281,163 L305,162 L331,160 L357,155 L379,152 L401,149 L423,143 L450,135 L464,123 L487,110 L509,96 L523,84 L539,69 L556,52 L571,41 L587,28 L598,19 L600,18",
+      startLabel: "85 moh",
+      endLabel: "1020 moh",
+      distanceLabel: "7,3 km",
+      caption: "984 høydemeter og 7,26 km fra Indre Forså over myrene og langs austsida av Mevatnet, med skoggrensa på 485 moh og det bratteste — 27,8 grader mellom 967 og 991 moh — i renna sør for toppen.",
+    },
+  },
   spanstinden: {
     slug: "spanstinden",
     intro:
@@ -900,6 +1013,84 @@ export const GUIDES: Record<string, TourGuide> = {
       endLabel: "1457 moh",
       distanceLabel: "5,2 km",
       caption: "1047 høydemeter og 5,24 km fra Bukkemyrvatnet om terrassene mot Sølvfjellet og fonna sørøst for toppen, med skoggrensa på 476 moh og det bratteste beltet — 18,8 grader — mellom 1300 og 1400 moh.",
+    },
+  },
+  reinspalen: {
+    slug: "reinspalen",
+    intro:
+      "1404 høydemeter og 8,44 km for en 1118-topp — Reinspælen er Kvæfjords høyeste, og ryggene dit samler 292 meter gitt tilbake underveis: mye opp og ned, som både kilden og turrapportene sier. KAST 3 – Komplekst med isøks og stegjern; linja måler 21,0 grader i bratteste hundremetersbelte, og det bratteste sammenhengende partiet — 41,7 grader mellom 1073 og 1104 moh — sitter i overgangen til den eksponerte toppryggen, der rapportene beskriver klyving.",
+    ascent: [
+      "Fra Våtvoll ved fv. 85 langs Gullesfjorden — 5 moh, parkering i lommene langs vegen slik kilden sier. Opp Kobberyggen: beltet fra 0 til 100 måler 8,9 grader og skogen slutter på 378 moh etter 2,31 km, før ryggen gir tilbake det første søkket — 86 meter ned til 335 før Geitryggen tar over.",
+      "Geitryggen er turens rygg: 20,5 grader i beltet fra 500 til 600, flatt over 600, og så jevn stigning — 21,0 grader fra 800 til 900, turens bratteste belte — mot toppryggen. Undulasjonen er grunnen til at kortet bærer 1400 høydemeter for en 1118-topp.",
+      "Toppryggen er alvoret: eksponert travers med skavler og skredterreng mot Litjedalen, og linjas bratteste parti — 41,7 grader mellom 1073 og 1104 moh — der ryggen reiser seg mot varden. Isøksa og stegjerna er for disse meterne; turrapportene kaller det klyving. Registeret løser 1117,4 mot publiserte 1118.",
+    ],
+    descent: [
+      "Ned samme vei — ryggene tilbake med motbakkene i revers; sørsektoren fra toppen måler 18,9 grader i snitt, men med et 60-metersvindu på 60,5 grader bare 20 til 80 meter ut: traversen har vegg på begge sider, og sporet ned er sporet opp.",
+      "Vestrennene (30–50 grader) er terrengfeller ved ustabilitet, sier kilden, og Norddalen på nordaustruta krever egen stabilitetsvurdering. Ingen av dem er linja her.",
+    ],
+    avalanche: [
+      {
+        title: "Ruta",
+        body: "KAST 3 – Komplekst hos Fri Flyt. Ryggene er snille — 21 grader på det bratteste beltet — og alt alvor er samlet i toppryggen: 41,7 grader i overgangen, skavler, og vegg på begge sider av traversen. Grad 4 på kortet.",
+      },
+      {
+        title: "Toppryggen",
+        body: "Skavlene og skredterrenget mot Litjedalen er kildens egne ord. Sidene måler 60,5 (S) og 64,1 (SØ) grader i de første vinduene fra varden — traversen gås med isøks i hånd og god margin til kanten, og i flatt lys venter den på bedre sikt.",
+      },
+      {
+        title: "Opp-og-ned-regnskapet",
+        body: "292 meter gis tilbake på ryggene — det er 292 meter som skal klatres igjen på hjemveien. Regn timene deretter: kilden gir 6–7, og de er ærlige.",
+      },
+      {
+        title: "Før du går",
+        body: "Reinspælen ligger i varslingsregionen Lofoten og Vesterålen, en A-region med daglig skredvarsel — Kvæfjord-fjella svarer til det varselet, ikke til Sør-Troms. Sjekk varsom.no. Sesongen januar–april er Fri Flyts. Sender/mottaker, søkestang, spade — og isøks og stegjern.",
+      },
+    ],
+    elevationProfile: {
+      path: "M0,200 L29,194 L54,182 L80,178 L111,172 L134,166 L148,154 L164,139 L179,134 L205,125 L224,126 L246,138 L266,151 L288,153 L317,154 L342,149 L365,135 L378,124 L390,113 L407,98 L429,91 L450,93 L474,89 L496,83 L514,76 L533,57 L553,41 L573,26 L595,25 L600,18",
+      startLabel: "5 moh",
+      endLabel: "1117 moh",
+      distanceLabel: "8,4 km",
+      caption: "1404 høydemeter og 8,44 km fra Våtvoll over Kobberyggen og Geitryggen, med skoggrensa på 378 moh og det bratteste — 41,7 grader mellom 1073 og 1104 moh — i overgangen til toppryggen.",
+    },
+  },
+  snotindan: {
+    slug: "snotindan",
+    intro:
+      "1548 høydemeter og 9,04 km for en 996-topp — Snøtindan er turen der skaret koster mer enn toppen: 565 meter gis tilbake underveis, over Løbergskaret og tjernshyllene, og linja holder land forbi alle vatna der kilden krysser på isen. KAST 3 – Komplekst med alpinøks og stegjern, 8–9 timer hos kilden, og et toppheng på 30–40 grader til slutt. Registeret skriver Snytindan; ut.no skriver Stor Snytindan; kortet følger Fri Flyt.",
+    ascent: [
+      "Fra parkeringa langs fv. 85 ved Løbergsbukta — 13 moh der vegen runder bukta. Løbergsdalen har utløpssoner på begge sider, og kildens regel er presis: gå midt i dalen. Beltene fra 100 til 400 måler 20 til 22 grader — turens bratteste hundremetersbelte, 22,1, ligger her — og skogen slutter allerede på 287 moh etter 1,3 km.",
+      "Linja passerer sør for det øvre tjernet i dalen og går over Løbergskaret på 746 — så gis høyden tilbake: ned forbi tjernet på 573 (på land, sør for det; omrutingene står i forskningsposten) til hyllene på 560-nivået. Beltene her måler 2 til 4 grader over kilometervis av flate — det er langt, og det er poenget med 8–9-timersanslaget.",
+      "Fra hyllene tar toppflanken over: 13,9 og 18,1 grader i beltene fra 800, og det bratteste sammenhengende partiet — 33,8 grader mellom 947 og 974 moh — i topphenget kilden gir 30–40 grader med mulig toppskavl. Varden på 996 står på trippelpunktet der Kvæfjord, Lødingen og Sortland møtes; registeret løser 996,2.",
+    ],
+    descent: [
+      "Ned samme vei — topphenget først, mens du vet hva snøen gjorde på veien opp, så hyllene og motbakken opp igjen til Løbergskaret: 185 av de 565 tilbakegitte metrene skal klatres på hjemveien. Nordsektoren fra toppen måler 13,6 grader i snitt — veien linja kom.",
+      "Sør- og austsida er en annen historie: 39,1 og 38,6 grader i snitt med vinduer på 59,7 og 52,8. Og i dalen gjelder samme regel ned som opp: midt i, mellom utløpssonene.",
+    ],
+    avalanche: [
+      {
+        title: "Ruta",
+        body: "KAST 3 – Komplekst hos Fri Flyt, alpinøks og stegjern. Linja er lang før den er bratt: alt over 30 grader er samlet i topphenget (33,8 målt, 30–40 hos kilden, mulig toppskavl) — og Løbergsdalen med utløpssoner på begge sider er inngangsbilletten begge veier. Grad 4.",
+      },
+      {
+        title: "Dalen",
+        body: "Gå midt i dalen — kildens egne ord, og terrenget forklarer dem: sidene er utløpssoner, og midten er marginen. På dager med dårlig stabilitet er dalen stengt, og da er turen det også.",
+      },
+      {
+        title: "Vatna",
+        body: "Linja holder land forbi alle tre vatna — tjernet i dalen, tjernet på 573 og vatna ved hyllene — der kilden krysser på isen. Det koster høydemeter (kortet bærer 1550 mot kildens 1250–1350), og det er derfor tallet er større enn fjellet.",
+      },
+      {
+        title: "Før du går",
+        body: "Snøtindan ligger i varslingsregionen Lofoten og Vesterålen, en A-region med daglig skredvarsel — trippelpunkt-fjellet svarer til det varselet. Sjekk varsom.no. Sesongen januar–april er Fri Flyts. Sender/mottaker, søkestang, spade — og alpinøks og stegjern.",
+      },
+    ],
+    elevationProfile: {
+      path: "M0,200 L28,194 L53,184 L79,157 L98,136 L119,119 L136,105 L154,112 L179,112 L194,96 L217,82 L238,78 L259,84 L282,82 L307,63 L328,69 L352,65 L370,63 L394,79 L416,95 L438,95 L461,100 L483,92 L504,101 L525,81 L543,70 L563,52 L579,37 L598,19 L600,18",
+      startLabel: "13 moh",
+      endLabel: "996 moh",
+      distanceLabel: "9,0 km",
+      caption: "1548 høydemeter og 9,04 km fra Løbergsbukta midt i Løbergsdalen, over Løbergskaret og forbi vatna på land, med skoggrensa på 287 moh og det bratteste — 33,8 grader mellom 947 og 974 moh — i topphenget.",
     },
   },
   moysalen: {
