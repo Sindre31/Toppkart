@@ -261,7 +261,7 @@
     "lng": 17.35491,
     "summit_dtm": 1575.8,
     "claims": 1575,
-    "stored_off_km": 0.07
+    "stored_off_km": 0.02
   },
   "storsteinsfjellet": {
     "name": "Storsteinsfjellet",
@@ -1102,5 +1102,37 @@
     "summit_dtm": 533.9,
     "claims": 534,
     "stored_off_km": 0.03
+  },
+  "litletind": {
+    "name": "Litletinden",
+    "lat": 68.35964,
+    "lng": 17.33611,
+    "summit_dtm": 1099.6,
+    "claims": 1096,
+    "stored_off_km": 0.11
+  },
+  "beisfjordtotta": {
+    "name": "Beisfjordtøtta",
+    "lat": 68.40588,
+    "lng": 17.57409,
+    "summit_dtm": 1447.8,
+    "claims": 1448,
+    "stored_off_km": 0.0
+  },
+  "spanstinden": {
+    "name": "Spanstinden",
+    "lat": 68.69987,
+    "lng": 17.86829,
+    "summit_dtm": 1457.4,
+    "claims": 1457,
+    "stored_off_km": 0.0
+  },
+  "gangnesaksla": {
+    "name": "Gangnesaksla",
+    "lat": 68.20105,
+    "lng": 17.26504,
+    "summit_dtm": 1318.5,
+    "claims": 1318,
+    "stored_off_km": 0.2
   }
 }

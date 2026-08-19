@@ -241,6 +241,17 @@
   "season": "feb–mai",
   "hasGuide": true
  },
+ "spanstinden": {
+  "name": "Spanstinden",
+  "region": "Narvik",
+  "summitM": 1457,
+  "verticalM": 1050,
+  "duration": "4–6 t",
+  "grade": 2,
+  "aspect": "SØ",
+  "season": "feb–jun",
+  "hasGuide": true
+ },
  "moysalen": {
   "name": "Møysalen",
   "region": "Vesterålen",
@@ -274,6 +285,17 @@
   "season": "feb–mai",
   "hasGuide": true
  },
+ "beisfjordtotta": {
+  "name": "Beisfjordtøtta",
+  "region": "Narvik",
+  "summitM": 1448,
+  "verticalM": 1430,
+  "duration": "6–8 t",
+  "grade": 3,
+  "aspect": "N",
+  "season": "feb–jun",
+  "hasGuide": true
+ },
  "pilan": {
   "name": "Pilan",
   "region": "Lofoten",
@@ -285,6 +307,17 @@
   "season": "feb–apr",
   "hasGuide": true
  },
+ "litletind": {
+  "name": "Litletind",
+  "region": "Narvik",
+  "summitM": 1100,
+  "verticalM": 920,
+  "duration": "4–6 t",
+  "grade": 2,
+  "aspect": "NØ",
+  "season": "feb–mai",
+  "hasGuide": true
+ },
  "geitgaljen": {
   "name": "Geitgaljen",
   "region": "Lofoten",
@@ -294,6 +327,17 @@
   "grade": 4,
   "aspect": "NV",
   "season": "feb–apr",
+  "hasGuide": true
+ },
+ "skjomtinden": {
+  "name": "Skjomtinden",
+  "region": "Narvik",
+  "summitM": 1576,
+  "verticalM": 1490,
+  "duration": "6–8 t",
+  "grade": 4,
+  "aspect": "N",
+  "season": "feb–mai",
   "hasGuide": true
  },
  "torskmannen": {
@@ -349,6 +393,17 @@
   "grade": 3,
   "aspect": "Ø",
   "season": "feb–apr",
+  "hasGuide": true
+ },
+ "gangnesaksla": {
+  "name": "Gangnesaksla",
+  "region": "Narvik",
+  "summitM": 1318,
+  "verticalM": 1310,
+  "duration": "5–7 t",
+  "grade": 3,
+  "aspect": "S",
+  "season": "feb–mai",
   "hasGuide": true
  },
  "justadtinden": {

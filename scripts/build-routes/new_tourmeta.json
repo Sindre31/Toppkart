@@ -2482,5 +2482,126 @@
    "Fri Flyt klassifiserer turen som enkel med bratteste punkt under 30 grader, og læringspunktet hans er sporvalg: «Bruk av terrenget for å legge fornuftig og godt spor». Farepunktet er noen bratte parti langs sørsida av ryggen."
   ],
   "notes": ""
+ },
+ "skjomtinden": {
+  "season": "feb–mai",
+  "aspect": "N",
+  "grade": 4,
+  "gradeReason": "KAST 2 – Utfordrende hos Fri Flyt, men vestsidene er bare og steinete med tidvis gange til fots, isøks og stegjern står i utstyrslista, og den siste renna leder opp på en egg. Grad 4 — Slogen-klassen, ikke Skarven-klassen.",
+  "roadClosedInWinter": false,
+  "teaserNo": "1490 høydemeter fra Nervatnet i Håkvikdalen til Den sovende dronning: forsenkningen rundt Litletind, ryggen mot Dronninga, traversen på vestsidene — og snørenna opp på eggen. Isøks og stegjern i sekken.",
+  "teaserEn": "1490 metres of ascent from Nervatnet in Håkvikdalen to the Sleeping Queen: the hollow around Litletind, the ridge toward Dronninga, the traverse on the west sides — and the snow gully onto the crest. Ice axe and crampons in the pack.",
+  "hazardNotes": "Fri Flyt: KAST 2 – Utfordrende. Bart og steinete terreng på vestsidene; isøks og stegjern i utstyrslista. Nedfartsalternativet «Øyet» er en trang snørenne på 45–50 grader med is og eksponerte klipper der rutevalget er kritisk. Nervatnet er regulert — hold stien på land.",
+  "sources": [
+   "https://www.friflyt.no/topptur/skiturer-narvik/turbeskrivelse-sovende-dronning-skjomtinden",
+   "https://peakbook.org/no/tour/321192/Sovende+dronning.html",
+   "https://snl.no/Sovande_dronning"
+  ],
+  "confidence": "medium",
+  "corrections": [
+   "Registerets Skjomtinden (Fjell, Narvik) løser 1575,8 mot publiserte 1575 — Sovande dronning i Store norske leksikon, dronningprofilen sett fra Bjerkvik.",
+   "Starten er parkeringa etter brua ved Nervatnet i Håkvikdalen (E6 sørover fra Narvik); flata ved brua leser 223 moh på dyrket mark. 1575 − 223 = 1352, som forliker Fri Flyts 1300 høydemeter.",
+   "Nervatnet er regulert (DTM1: InnsjøRegulert, 221 moh). Fri Flyt tilbyr isen «om den er stabil»; linja her holder stien langs vannkanten på land hele veien — regulerte vann krysses ikke i dette produktet.",
+   "Fri Flyt: KAST 2 – Utfordrende, men med bart, steinete terreng på vestsidene der det tidvis må gås til fots, og isøks og stegjern i utstyrslista — turen skipper som grad 4. Nedfartsalternativet «Øyet» (45–50 grader, trang renne med is og klipper) er ikke linja her.",
+   "Aspekt N fra route_metrics — normalruta forlater toppen nordover mot ryggen og renna, og Fri Flyt navngir ingen enkelt himmelretning. Der ingenting entydig er navngitt, bestemmer målingen.",
+   "check_new_corridors: ingen amenity=parking, men OSM har veg (service/tertiary/secondary) på punktet — parkeringa er langs vegen slik kilden beskriver."
+  ],
+  "notes": ""
+ },
+ "litletind": {
+  "season": "feb–mai",
+  "aspect": "NØ",
+  "grade": 2,
+  "gradeReason": "KAST 2 – Utfordrende hos Fri Flyt — fortopp til Sovende dronning og en svært populær lokaltur, med avblåst og steinete topparti som eneste kronglete bit. Sløret (den bratte fonna mot Dronninga) er variantterreng og ikke linja her.",
+  "roadClosedInWinter": false,
+  "teaserNo": "920 høydemeter fra Nervatnet til fortoppen med byutsikten: myra sør for vannet, den glisne skogen og ryggen — Narvik og Rombaksfjorden under deg fra varden.",
+  "teaserEn": "920 metres of ascent from Nervatnet to the fore-summit with the city view: the bog south of the lake, the sparse forest and the ridge — Narvik and Rombaksfjorden below the cairn.",
+  "hazardNotes": "Fri Flyt: KAST 2 – Utfordrende. Ryggen mot toppen ofte avblåst og steinete. Sløret — den bratte fonna mellom Litletind og Dronninga — er skredterreng med stein i bunnen. Området brukes i reindriftsnæringen. Nervatnet er regulert — hold stien på land.",
+  "sources": [
+   "https://www.friflyt.no/topptur/skiturer-narvik/turbeskrivelse-litletind",
+   "https://peakbook.org/no/tour/325687/Litletinden+og+Skittendalstinden.html"
+  ],
+  "confidence": "medium",
+  "corrections": [
+   "Registeret skriver Litletinden (Topp, Narvik); toppsøket løser 1099,6 mot Fri Flyts 1096 — koordinaten flyttet 110 m fra representasjonspunktet til det klimte toppunktet.",
+   "Samme start som Skjomtinden: parkeringa etter brua ved Nervatnet, 223 moh. 1096 − 223 = 873, som forliker Fri Flyts 850 høydemeter.",
+   "Nervatnet er regulert; linja holder land langs vannkanten, som for Skjomtinden.",
+   "Fri Flyts egne merknader: ryggen mot toppen er ofte avblåst og steinete, så den siste biten kan være kronglete; området brukes i reindriftsnæringen — ta hensyn.",
+   "check_new_corridors: ingen amenity=parking, men OSM har veg (service/tertiary/secondary) på punktet — parkeringa er langs vegen slik kilden beskriver."
+  ],
+  "notes": ""
+ },
+ "beisfjordtotta": {
+  "season": "feb–jun",
+  "aspect": "N",
+  "grade": 3,
+  "gradeReason": "KAST 2 – Utfordrende hos Fri Flyt, 1400 høydemeter fra bommen og et fjell med bratte renner og isbre på alternativene (Isvannsrenna, Isbreen ~45 grader). Normalruta over skaret er linja her; alternativene er ikke.",
+  "roadClosedInWinter": false,
+  "teaserNo": "1430 høydemeter fra bommen over Djupvik: vannverksveien forbi Pumpvatnet, austsida av Forsnesvatnet på land — og skaret før ryggen sørover til fjellet med de mange hemmelighetene.",
+  "teaserEn": "1430 metres of ascent from the gate above Djupvik: the waterworks road past Pumpvatnet, the east side of Forsnesvatnet on dry land — and the col before the ridge south to the mountain of many secrets.",
+  "hazardNotes": "Fri Flyt: KAST 2 – Utfordrende. Skredfare i snørennene; ispartier; klippeband; eksponert terreng uten retrettmuligheter på alternativrutene — Isvannsrenna mot Straumsnes og Isbreen-nedfarten (~45 grader) hører til stabile dager og er ikke linja på kortet. Forsnesvatnet og Isvatnet er regulerte — linja holder land.",
+  "sources": [
+   "https://www.friflyt.no/topptur/skiturer-narvik/turbeskrivelse-beisfjordtoetta",
+   "https://www.tiltoppsinord.no/beisfjordtotta-1448-moh/",
+   "https://www.narvikfjellet.no/en/guidet-topptur-narvikfjellet"
+  ],
+  "confidence": "medium",
+  "corrections": [
+   "Registerets Beisfjordtøtta (Fjell, Narvik) løser 1447,8 mot publiserte 1448.",
+   "Starten er veibommen på Forselvveien over Djupvik (E6 nordover fra Narvik, andre avkjøring til høyre) — 60 moh der bilene står. 1448 − 60 = 1388, mot Fri Flyts 1350; differansen er ført.",
+   "Fri Flyts rute krysser Forsnesvatn på isen. Både Forsnesvatnet (646 moh) og Isvatnet (820) er regulerte i terrengmodellen — Rombakstøtta-lærdommen fra #62/#74 — så linja her runder Forsnesvatnet på austsida, på land hele veien, og guiden sier hvorfor.",
+   "Korridoren deler de fire første vegpunktene med Rombakstøttas reviderte linje (vannverksveien, Pumpvatnet, bekkedalen) — de er allerede audited geometri, og gjenbruket er ført her.",
+   "check_new_corridors: ingen amenity=parking, men OSM har veg (service/tertiary/secondary) på punktet — parkeringa er langs vegen slik kilden beskriver.",
+   "check_ground: 182 m på Pumpvatnet i første løsning; rutet om på nordsida — 0 m på vann."
+  ],
+  "notes": ""
+ },
+ "spanstinden": {
+  "season": "feb–jun",
+  "aspect": "SØ",
+  "grade": 2,
+  "gradeReason": "KAST 1 – Enkel hos Fri Flyt, en klassiker og svært populær tur der du nesten kan regne med folk på fjellet i sol. 1033 høydemeter over terrasser og fonner, med skredterreng i de brattere partiene over skoggrensa som det som holder graden oppe.",
+  "roadClosedInWinter": false,
+  "teaserNo": "1050 høydemeter fra Bukkemyrvatnet på Gratangsfjellet: terrassene mot Sølvfjellet, fonna sørøst for toppen — og de spektakulære siste meterne til varden.",
+  "teaserEn": "1050 metres of ascent from Bukkemyrvatnet on Gratangsfjellet: the terraces toward Sølvfjellet, the snowfield southeast of the summit — and the spectacular last metres to the cairn.",
+  "hazardNotes": "Fri Flyt: KAST 1 – Enkel. Skredterreng i de brattere partiene over skoggrensa; vær varsom der de flate partiene går over i bratte heng. Fire nedfartsalternativer fra lett terrassekjøring til middels krevende (Tjuvhola-botnen mot Moen).",
+  "sources": [
+   "https://www.friflyt.no/topptur/skiturer-narvik/turbeskrivelse-spanstinden-rungugaisa",
+   "https://ut.no/turforslag/113196/topptur-pa-ski-til-spanstinden-1457-moh",
+   "https://peakbook.org/no/tour/33782/Spanstind.html"
+  ],
+  "confidence": "high",
+  "corrections": [
+   "Registerets Spanstinden (Fjell, Loabák–Lavangen) løser 1457,4 mot publiserte 1457. Kommunefeltet i stedsnavn-APIet kan være null for grensenære navn (Bukkemyrvatnet) — geo.stedsnavn tåler nå det.",
+   "Starten er parkeringa ved Bukkemyrvatnet på E6, høyeste punkt på Gratangsfjellet — flata ved vannet leser 424 moh, og ut.no sier «starter på litt over 400». 1457 − 424 = 1033, som forliker Fri Flyts 1050 høydemeter.",
+   "Bukkemyrvatnet er et naturlig vann (Innsjø, 418 moh). Fri Flyts «gå over Bukkemyrvatnet» er ordinær vinterferdsel på et naturlig vann; linja legges om myra på austsida (420 moh), og krysser den vannet, navngis det i prosaen — sju-ble-prosa-regelen.",
+   "Fri Flyt: KAST 1 – Enkel, og toppen «og de siste meterne frem til den er veldig spektakulære». Skredterreng i de brattere partiene over skoggrensa; fonna sørøst for toppen tas til høyre (aust) for slakest stigning.",
+   "check_ground: linja krysser 90 m av Bukkemyrvatnet (naturlig, 418 moh), aldri mer enn 25 m fra land — vannet Fri Flyt selv sier du går over. Navngitt i prosaen etter sju-ble-prosa-regelen, ikke rutet om."
+  ],
+  "notes": ""
+ },
+ "gangnesaksla": {
+  "season": "feb–mai",
+  "aspect": "S",
+  "grade": 3,
+  "gradeReason": "KAST 2 – Utfordrende hos Fri Flyt, 1300 høydemeter fra fjorden med skredterreng sør for toppen og hull i bekken seint i sesongen. Gangnesrenna (ca. 40 grader, is) er variantterreng og ikke linja her.",
+  "roadClosedInWinter": false,
+  "teaserNo": "1310 høydemeter fra kraftstasjonen i Sørskjomen: anleggsveien langs Vesterskarelva, dammen ved tregrensa og hylla på 800 — med Frostisen i utsikten og Gangnesrenna under kanten.",
+  "teaserEn": "1310 metres of ascent from the power station in Sørskjomen: the works road along Vesterskarelva, the dam at the treeline and the shelf at 800 — with the Frostisen glacier in view and the Gangnesrenna below the edge.",
+  "hazardNotes": "Fri Flyt: KAST 2 – Utfordrende. Se opp for skred sør for toppen og hull i bekken seint i sesongen. Gangnesrenna mot nordaust er relativt bratt i starten, rundt 40 grader, med ispartier fra bekkeløpet og skredaktivitet lenger nede — isøks, stegjern og eventuelt tau i kildens egen utstyrsliste for renna.",
+  "sources": [
+   "https://www.friflyt.no/topptur/skiturer-narvik/turbeskrivelse-gangnesaksla",
+   "https://fatmap.com/discover/route/norway/nordland/ski-touring/gagnesaksla-1318-m/976430",
+   "https://www.fjellforum.no/topic/40560-gangnesaksla/"
+  ],
+  "confidence": "medium",
+  "corrections": [
+   "Registerets Gangnesaksla (Fjell, Narvik) løser 1318,5 mot publiserte 1318 — koordinaten flyttet 200 m fra representasjonspunktet til toppunktet.",
+   "Starten er Skjomen kraftstasjon i Sørskjomen (OSM: Skarelva kraftverk, industrial, 68.18395/17.30594) — parkering utenfor stasjonen, og DTM1 leser 19,5 moh. 1318 − 20 = 1298, som forliker Fri Flyts 1300 høydemeter: nesten hele fjellet fra fjorden.",
+   "Ruta reproduserer: anleggsveien langs Vesterskarelva (registerets Vesterskarelva, Bekk — prøvepunkt 291 moh), dammen ved tregrensa (539), skrått nordvest over tregrensa (808) og flanken over hylla (1067) til toppen.",
+   "Gangnesrenna — nedfartsalternativet nordaust — kalles Norges lengste renne i lokalavisa: rundt 40 grader øverst, ispartier fra bekken og skredaktivitet nederst, og isøks, stegjern og tau i kildens utstyrsliste for renna. Den er ikke linja på kortet.",
+   "check_new_corridors: ingen amenity=parking, men OSM har veg (service/tertiary/secondary) på punktet — parkeringa er langs vegen slik kilden beskriver."
+  ],
+  "notes": ""
  }
 }

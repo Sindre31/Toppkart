@@ -152,4 +152,11 @@ NEW_TOURS = {
     "torskmannen": ("Torskmannen", "Lofoten"),
     "pilan": ("Pilan", "Lofoten"),
     "kleppstadheia": ("Kleppstadheia", "Lofoten"),
+    # — Narvik-runden: Håkvikdalen, Beisfjord, Skjomen og Gratangsfjellet.
+    #   skjomtinden står også lenger oppe som plassholder frå ein tidlegare
+    #   runde; denne blokka er den som gjeld. —
+    "litletind": ("Litletind", "Narvik"),
+    "beisfjordtotta": ("Beisfjordtøtta", "Narvik"),
+    "spanstinden": ("Spanstinden", "Narvik"),
+    "gangnesaksla": ("Gangnesaksla", "Narvik"),
 }

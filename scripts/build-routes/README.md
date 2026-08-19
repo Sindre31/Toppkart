@@ -3949,6 +3949,55 @@ true lower down — while at the summit the north, northeast and east sides are
 the edges (34.6–37.9° mean, windows to 55.9) and south is a 4.0° flat. The
 guide carries both, each at the elevation it belongs to.
 
+## The Narvik round
+
+Five from Fri Flyt's Narvik chapter — Håkvikdalen, Beisfjord/Djupvik, Skjomen
+and Gratangsfjellet. The chapter is modern and KAST-classified, and it is also
+regulated-reservoir country: three of the five corridors touch water NVE has a
+number for, and none of the shipped lines stands on any of it. Varsom answered
+**Ofoten** for four summits and **Sør-Troms** for Spanstinden — the mountain
+sits in the source's Narvik chapter, but the bulletin it answers to does not.
+
+| tour | start | summit | gain | km | steepest 100 m band | steepest 30 m | grade |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Skjomtinden | 223 | 1576 | 1487 | 7.6 | 20.3° | 33.7° | 4 |
+| Beisfjordtøtta | 60 | 1448 | 1428 | 7.2 | 22.7° | 38.4° | 3 |
+| Gangnesaksla | 20 | 1318 | 1306 | 4.9 | 20.0° | 26.0° | 3 |
+| Spanstinden | 424 | 1457 | 1047 | 5.2 | 18.8° | 25.0° | 2 |
+| Litletind | 223 | 1100 | 916 | 5.2 | 19.9° | 26.2° | 2 |
+
+### What the checks caught
+
+**Beisfjordtøtta took three reroutes to get around a lake called Pumpvatnet —
+which turned out not to be the regulated one.** Fri Flyt's route crosses
+Forsnesvatn on the ice; both Forsnesvatnet and Isvatnet read `InnsjøRegulert`,
+so the corridor was planned around them from the start, on the east shore. The
+lake the router actually crossed was Pumpvatnet — `Innsjø`, natural despite
+the name — 182 m of it, then 90 m, then 181 m as single waypoints pushed the
+line into different lobes. The full north-shore chain (two points in sequence
+around the outlet) took it to 0 m. The remaining 38,4° step is the summit
+block itself, and the guide says so.
+
+**Skjomtinden is KAST 2 in the source and grade 4 on the card.** The gear list
+says ice axe and crampons, the west sides are bare and rocky with travel on
+foot, and the line gives back 134 m on the traverse. A classification about
+avalanche exposure and a grade about what the day demands are different
+statements — Slogen's class, and the guide is written that way.
+
+**Nervatnet is regulated, and the source offers the ice «om den er stabil».**
+Both Håkvikdalen tours keep the shoreline path on land instead, both ways, and
+say why: regulated ice cracks along the shore as the reservoir draws down.
+
+**Spanstinden crosses Bukkemyrvatnet because the source's own route does.**
+90 m, never more than 25 m from shore, on a natural lake at 418 moh — the
+seven-became-prose rule, stated with height, length and offshore distance.
+
+**Niingen and Storriten were researched and left out.** Niingen starts at
+Blåvatnhyttene — huts a ski-in away, not a road — which is the Patchellhytta
+condition. Storriten is a June–August summer-ski tour up a seasonal
+anleggsvei toward Sitasjaure; a card whose season is the road's maintenance
+window is not this product's card. Both records stand for a later decision.
+
 ## Network
 
 Everything is public and unauthenticated:

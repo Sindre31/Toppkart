@@ -288,6 +288,16 @@ export const TOUR_TEASER_EN: Record<string, string> = {
     "850 metres of ascent from Laupstad on the north side of Austvågøya: the valley to the lake at 289, toward Morfjordskaret and the broad flank — with a measured 39-degree step in the summit cone.",
   kleppstadheia:
     "520 metres of ascent from Kleppstadveien south of the Gimsøy bridge: the ridge toward point 156 and the gentle, broad field to the top — the tour the source itself uses to practise track-setting.",
+  skjomtinden:
+    "1490 metres of ascent from Nervatnet in Håkvikdalen to the Sleeping Queen: the hollow around Litletind, the ridge toward Dronninga, the traverse on the west sides — and the snow gully onto the crest. Ice axe and crampons in the pack.",
+  litletind:
+    "920 metres of ascent from Nervatnet to the fore-summit with the city view: the bog south of the lake, the sparse forest and the ridge — Narvik and Rombaksfjorden below the cairn.",
+  beisfjordtotta:
+    "1430 metres of ascent from the gate above Djupvik: the waterworks road past Pumpvatnet, the east side of Forsnesvatnet on dry land — and the col before the ridge south to the mountain of many secrets.",
+  spanstinden:
+    "1050 metres of ascent from Bukkemyrvatnet on Gratangsfjellet: the terraces toward Sølvfjellet, the snowfield southeast of the summit — and the spectacular last metres to the cairn.",
+  gangnesaksla:
+    "1310 metres of ascent from the power station in Sørskjomen: the works road along Vesterskarelva, the dam at the treeline and the shelf at 800 — with the Frostisen glacier in view and the Gangnesrenna below the edge.",
 
 };
 
@@ -1140,6 +1150,43 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       caption: "1432 metres of ascent over 5.24 km from Tindelva, with the steepest ground — 27.7 degrees between 1286 and 1304 m — on the ridge a little under half a kilometre before the cairn.",
     },
   },
+  spanstinden: {
+    intro:
+      "1047 metres of ascent over 5.24 km from Bukkemyrvatnet on Gratangsfjellet — a classic so popular that on sunny days you can almost count on company, says ut.no. Fri Flyt rates it KAST 1 – Easy, and the line keeps it: steepest hundred-metre band 18.8 degrees and steepest sustained stretch 25.0. The summit and the last metres to it are very spectacular, says the source — and the measurement explains why: everything except the snowfield you arrive by is 42 to 47 degrees mean.",
+    ascent: [
+      "From the parking at Bukkemyrvatnet on the E6, the highest point of Gratangsfjellet — 424 m, with Lapphaugen tourist station as the source's alternative start further north. The line crosses 90 metres of Bukkemyrvatnet, never more than 25 metres from shore: a natural lake at 418 m the source's own route walks across — ordinary winter travel, said here because it is a lake you are standing on. The forest ends already at 476 m after 1.03 km.",
+      "North toward the steep, rocky Sølvfjellet it goes in knolls and terraces: 10.2 degrees from 500 to 600 m, 14.3 and 16.4 in the next bands — follow old tracks where they exist, says the source, for the terraces hide the line in flat light. Between Sølvfjellet and Spanstinden — 851 m where the line passes — the big snowfield southeast of the summit opens.",
+      "Take the snowfield with the gentlest gradient to the right (east), as the source says: the band from 1300 to 1400 measures 18.8 degrees, the tour's steepest, and the steepest sustained stretch is 25.0 degrees down between 947 and 968. Then the spectacular last metres: the cairn at 1457 — the register resolves 1457.4 — with the drops on every other side as the backdrop.",
+    ],
+    descent: [
+      "Down the snowfield again — the southeast sector measures 14.1 degrees mean over 500 metres with 28.9 in the first window, big readable skiing back toward the terraces. The source describes four descent variants from easy terraced skiing to moderately demanding via the Tjuvhola basin toward Moen.",
+      "Keep the snowfield until you are off the summit: north, northeast and southwest fall 44.1, 47.5 and 42.0 degrees mean, with a 71.4-degree window on the northeast side. The spectacular and the dangerous are the same edge here.",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "KAST 1 – Easy by Fri Flyt, and the line measures accordingly: 18.8 degrees in the steepest band, 25.0 in the steepest stretch. The avalanche terrain sits in the steeper ground beside the line above the treeline — take care where the flats roll over into steep slopes, says the source.",
+      },
+      {
+        title: "The summit edge",
+        body: "Everything except the snowfield is steep: 42 to 47 degrees mean to the north, northeast and southwest. The last metres are spectacular because the edges are close — in flat light the track keeps to the middle of the snowfield, and the cairn is visited with respect for what is under the snow at the rim.",
+      },
+      {
+        title: "Bukkemyrvatnet",
+        body: "The line crosses 90 metres of the lake, never more than 25 metres from shore. Natural lake, winter ice, ordinary travel — but a lake is a lake, especially early and late in the season.",
+      },
+      {
+        title: "Before you go",
+        body: "Spanstinden lies in the Sør-Troms forecast region, an A-region with a daily avalanche bulletin through the season — check varsom.no; the mountain sits in the source's Narvik chapter, but the bulletin it answers to is Sør-Troms. The February–June season is Fri Flyt's. Carry transceiver, probe and shovel.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "424 m",
+      endLabel: "1457 m",
+      distanceLabel: "5.2 km",
+      caption: "1047 metres of ascent and 5.24 km from Bukkemyrvatnet via the terraces toward Sølvfjellet and the snowfield southeast of the summit, with the treeline at 476 m and the steepest band — 18.8 degrees — between 1300 and 1400 m.",
+    },
+  },
   moysalen: {
     intro:
       "From 23 m to 1264, and 1596 metres of climbing to get there — 355 of them given back along the way, and 120 in one stretch down to Grønnvatnet. Vesterålen's highest is one of the few tours in this app that starts at the sea and ends on a ridge where people take their skis off. Friflyt rates it KAST 3, 11 to 18 hours, and calls for an ice axe and crampons.",
@@ -1245,6 +1292,43 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       caption: "5.83 km and 1129 m of climbing from the quarry in Forselvveien; the steepest hundred metres sit between 500 and 600 m.",
     },
   },
+  beisfjordtotta: {
+    intro:
+      "1428 metres of ascent over 7.19 km from the gate above Djupvik to the mountain Fri Flyt calls a mountain of many secrets. The normal route over the col is the patient way into them: steepest hundred-metre band 22.7 degrees, and the steepest sustained stretch — 38.4 degrees between 1414 and 1445 m — is the summit block itself. KAST 2 – Challenging by the source; the alternatives (Isvannsrenna, the ~45-degree glacier descent) are another league, and they are not this line. Both Forsnesvatnet and Isvatnet are regulated reservoirs, and the line keeps to land the whole way.",
+    ascent: [
+      "From the road gate on Forselvveien above Djupvik — 60 m, parking at the gate as the source says — you walk the road to its end at 141 and climb the steep forest to the waterworks road. The trees end at 502 m after 2.94 km. The first four waypoints share geometry with Rombakstøtta's revised line: this is audited ground.",
+      "Past Pumpvatnet on its north side — a natural lake despite the name, 325 m, and the line rounds it on land after three reroutes recorded in the research — then up the stream valley toward Forsnesvatnet: 18.1 degrees in the band from 500 to 600. Fri Flyt's route crosses Forsnesvatn on the ice; the lake is regulated, so this line takes the east side on land — the bands from 800 to 1100 measure 18.4, 20.8 and 22.7 degrees, the tour's steadily steepest stretch.",
+      "From the flat at the 1200 level — 4.2 degrees over 1.3 kilometres — it climbs toward the col between Moskočohkka and Tøtta, 1257 m where the line takes it, and the ridge south to the summit block: 38.4 degrees between 1414 and 1445, the metres that decide the day. The cairn at 1448; the register resolves 1447.8.",
+    ],
+    descent: [
+      "Down the same way — the ridge from the northwest is the summit's gentle sector, 12.7 degrees mean over 500 metres. Take the summit block in your own track, and the flat below the col gives breathing room before the long bands down toward Forsnesvatnet.",
+      "The southeast, south and east sides fall 34.6 to 44.8 degrees mean with 72 to 76 degrees in the first 60 m windows from the cairn — the edge above Beisfjorden is a wall. Isvannsrenna toward Straumsnes and the glacier descent (~45 degrees, with glacier and ravines) are the source's alternatives for stable days with a party that knows the ground.",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "KAST 2 – Challenging by Fri Flyt. The normal route is the patient line on a mountain whose alternatives hold gullies, ice and a glacier — 22.7 degrees in the steepest band, and the summit block's 38.4-degree step as the only serious move. The avalanche hazard in the gullies and ice sections belongs to the variants; read them as limits, not options.",
+      },
+      {
+        title: "The regulated lakes",
+        body: "Forsnesvatnet and Isvatnet are both regulated. Fri Flyt's route crosses Forsnesvatn on the ice — this line takes the east side on land, which costs minutes and no risk. Regulated ice cracks along the shore as the reservoir is drawn down; it is not ice to get acquainted with.",
+      },
+      {
+        title: "The edge above Beisfjorden",
+        body: "From the cairn the southeast falls 76 degrees in the first 60 m window. In flat light the edge and the flat are the same white — the way down is northwest, back toward the col, worth setting on the compass before the summit.",
+      },
+      {
+        title: "Before you go",
+        body: "Beisfjordtøtta lies in the Ofoten forecast region, an A-region with a daily avalanche bulletin through the season — check varsom.no. The February–June season is Fri Flyt's. Carry transceiver, probe and shovel.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "60 m",
+      endLabel: "1448 m",
+      distanceLabel: "7.2 km",
+      caption: "1428 metres of ascent and 7.19 km from the gate above Djupvik via Pumpvatnet and the east side of Forsnesvatnet, with the treeline at 502 m and the steepest ground — 38.4 degrees between 1414 and 1445 m — in the summit block.",
+    },
+  },
   pilan: {
     intro:
       "847 metres of ascent over 4.16 km from Laupstad on Austvågøya's quiet north side, with the view into Vesterålen from the cairn. Fri Flyt rates it KAST 1 – Simple with the steepest point under 30 degrees, and most of the line keeps that — steepest 100 m band 21.9 degrees. But the summit cone measures 39.4 degrees in its steepest 30 m window, between 753 and 786 m, and the measurement is the check for the grade: the card carries 3, not the source's number. The ridge gives back 26 vertical metres, and the tour runs from the fjord.",
@@ -1282,6 +1366,43 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       caption: "847 metres of ascent and 4.16 km from Laupstad via the lake at 289 and Morfjordskaret, with the treeline at 233 m and the steepest ground — 39.4 degrees between 753 and 786 m — in the summit cone.",
     },
   },
+  litletind: {
+    intro:
+      "916 metres of ascent over 5.21 km from Nervatnet to the fore-summit with the city view — Litletind is the Sleeping Queen's foothill and one of Narvik's most popular local tours, with Narvik and Rombaksfjorden below the cairn. Fri Flyt rates it KAST 2 – Challenging; the line measures 19.9 degrees in its steepest hundred-metre band and 26.2 in its steepest sustained stretch, up in the summit ground. The register writes Litletinden, and the summit search resolves 1099.6 against the source's 1096.",
+    ascent: [
+      "The same start as the queen: the parking after the bridge at Nervatnet, 223 m. Nervatnet is regulated — the line keeps the shoreline path on land, crosses the bog south of the lake and climbs through the sparse forest. The trees end at 532 m after 2.93 km, and the two first climbing bands measure 14.9 and 16.4 degrees.",
+      "Just above the treeline you turn right (northwest) up the ridge leading to Litletind. The bands from 700 to 1000 measure 19.5, 17.9 and 19.9 degrees — even skinning on an open ridge with the view growing behind you.",
+      "The summit ground is the source's one reservation: the ridge to the top is often wind-scoured and rocky, so the last stretch can be awkward. The steepest sustained stretch measures 26.2 degrees between 1043 and 1064 m, and on hardpack those are the metres you notice. The cairn at 1100 with Narvik, Rombaksfjorden and the queen's profile behind you.",
+    ],
+    descent: [
+      "Down the same way — the south and southwest sector the line uses is the gentlest on the summit, 16.8 and 20.6 degrees mean over 500 metres. Fri Flyt's descent is broken snowfields in easy, varied ground.",
+      "Hold back from east and northeast: 37.4 and 36.9 degrees mean with windows of 57.7 and 49.0 directly below the top — the edge above Håkvikdalen. Sløret, the steep snowfield between Litletind and Dronninga, is avalanche terrain with rocks at its base and belongs to the variants, not the normal tour.",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "KAST 2 – Challenging by Fri Flyt. The line itself is kind — 19.9 degrees in the steepest band, 26.2 in the steepest stretch — and what needs your head is the edges: the east and northeast sides fall 37 degrees mean with windows over 49 directly below the cairn.",
+      },
+      {
+        title: "The summit ground",
+        body: "Often wind-scoured and rocky — a slipping problem, not an avalanche problem. On hard westerly crust the last 60 metres can be where the skis stay behind.",
+      },
+      {
+        title: "Reindeer and the lake",
+        body: "The area is used for reindeer herding — keep your distance and your dog on a leash. And Nervatnet is regulated: the path on land both ways, however good the ice looks.",
+      },
+      {
+        title: "Before you go",
+        body: "Litletind lies in the Ofoten forecast region, an A-region with a daily avalanche bulletin through the season — check varsom.no. The February–May season is Fri Flyt's. Carry transceiver, probe and shovel.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "223 m",
+      endLabel: "1100 m",
+      distanceLabel: "5.2 km",
+      caption: "916 metres of ascent and 5.21 km from Nervatnet up the ridge from the treeline, with the forest limit at 532 m and the steepest ground — 26.2 degrees between 1043 and 1064 m — in the wind-scoured summit ground.",
+    },
+  },
   geitgaljen: {
     intro:
       "1071 metres of climbing from the fjord in 3.80 km, and the entire line lies in avalanche terrain. Topptursentralen grades the tour KAST 4 — extreme — and the top 157 metres average 42 degrees and require crampons and an axe.",
@@ -1315,6 +1436,43 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       endLabel: "1085 m",
       distanceLabel: "3.8 km",
       caption: "1071 metres of climbing and 3.82 km from Liland; the gully at 250–360 m is 35 degrees, and the top 174 metres 42.",
+    },
+  },
+  skjomtinden: {
+    intro:
+      "1487 metres of ascent over 7.64 km from Nervatnet in Håkvikdalen to the Sleeping Queen — the profile everyone in Narvik knows from the Bjerkvik side, and one of the area's finest tours. Fri Flyt rates it KAST 2 – Challenging, but the gear list says ice axe and crampons, the west sides are at times bare and rocky, and the line gives back 134 vertical metres on the traverse — the card carries grade 4. The steepest hundred-metre band measures 20.3 degrees; the steepest sustained stretch, 33.7 degrees, sits in the gully between 1439 and 1462 m.",
+    ascent: [
+      "From the parking after the bridge at Nervatnet — 223 m, E6 south from Narvik and into Håkvikdalen; the local bus to the bridge is the source's own alternative. Nervatnet is a regulated reservoir, so the line keeps the shoreline path on land — the source offers the ice «if it is stable», an offer this product always declines. Across the bog south of the lake and up through the sparse forest: the trees end at 546 m after 2.96 km.",
+      "Just above the treeline you turn right up the ridge toward Litletind, follow the hollow around it and traverse diagonally up to the ridge between Litletind and Dronninga — 945 m where the line takes it. The bands are patient: 12–13 degrees from 600 to 900, then the tour's steepest hundred, 20.3 degrees from 1000 to 1100.",
+      "From about 1200 you traverse onto the west sides. Here the ground is at times bare and rocky — expect stretches on foot, and this is where the axe and crampons in the pack stop being decoration. The snow gully leads up to the ridge northwest of the main summit: the steepest sustained stretch measures 33.7 degrees between 1439 and 1462 m, and the band above 1400 is otherwise gentle because the traverse slants. The cairn at 1576 — the register resolves 1575.8 against a published 1575 — with Ofoten, the Frostisen glacier and the sea around you.",
+    ],
+    descent: [
+      "Down the same way: the gully, the traverse, the ridge. The ridge northwest of the summit is the mountain's only gentle sector — 13.2 degrees mean over 500 metres — and everything else falls 23 to 45 degrees mean with windows of 43 to 68. Take the traverse in your own track, while you still know where the rocks were.",
+      "«Øyet» — the Eye — is the source's alternative descent: a narrow snow gully of 45–50 degrees with ice and exposed cliffs, where route-finding is critical. It is here because it exists — not because this card recommends it.",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "KAST 2 – Challenging by Fri Flyt, but the card's grade is 4: bare, rocky west sides with travel on foot, ice axe and crampons on the gear list, 134 vertical metres given back on the traverse, and a 33.7-degree snow gully as the final key. This is the Slogen class — a mountaineering day on skis, not a ski tour with a summit.",
+      },
+      {
+        title: "The gully and the west sides",
+        body: "The gully between 1439 and 1462 m is steep enough to slide, and the west sides load after easterly wind. Bare rock and ice alternate with snowfields — judge every transition, and turn where the conditions say turn; the queen will still be there next weekend.",
+      },
+      {
+        title: "Nervatnet",
+        body: "The lake is regulated, and regulated ice is unreliable ice: the line keeps the path on land, and so should your track — both ways, even when the ice «looks fine» in March.",
+      },
+      {
+        title: "Before you go",
+        body: "Skjomtinden lies in the Ofoten forecast region, an A-region with a daily avalanche bulletin through the season — check varsom.no. The February–May season is Fri Flyt's. Transceiver, probe, shovel — and the ice axe and crampons the source itself requires.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "223 m",
+      endLabel: "1576 m",
+      distanceLabel: "7.6 km",
+      caption: "1487 metres of ascent and 7.64 km from Nervatnet via the ridge between Litletind and Dronninga and the traverse on the west sides, with the treeline at 546 m and the steepest ground — 33.7 degrees between 1439 and 1462 m — in the gully.",
     },
   },
   torskmannen: {
@@ -1497,6 +1655,39 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       endLabel: "956 m",
       distanceLabel: "3.9 km",
       caption: "988 m of climbing from the shore at Haukland over 3.89 km; the steep ground sits between 500 and 600 m.",
+    },
+  },
+  gangnesaksla: {
+    intro:
+      "1306 metres of ascent over 4.90 km from the power station in Sørskjomen — nearly the whole mountain from the fjord, with the 25 square kilometres of the Frostisen glacier in view and the couloir the local paper calls Norway's longest below the northeast edge. Fri Flyt rates it KAST 2 – Challenging; the normal route on the south side measures 20.0 degrees in its steepest hundred-metre band and 26.0 in its steepest sustained stretch. The couloir is variant terrain with its own gear list, and it is not the line on this card.",
+    ascent: [
+      "From the parking outside the power station — OSM maps Skarelva kraftverk, the station with the glass-and-stone facade the source describes, 20 m. The works road follows Vesterskarelva up the valley: the band from 100 to 200 m measures 18.8 degrees, and you follow the stream to the small dam at the treeline at 539. The forest ends at 600 m after 2.56 km.",
+      "From the dam you turn right through the forest heading northwest, and above the treeline it runs diagonally to the distinct shelf at about 800 m — the probe above the shelf reads 1067. The bands from 700 to 1000 measure 19.2, 19.6 and 20.0 degrees: even, never steep, always up.",
+      "From the shelf you hold the same bearing on the gentlest slopes and take the summit via the northeast ridge. The steepest sustained stretch measures 26.0 degrees between 1155 and 1174 m. The cairn at 1318 — the register resolves 1318.5, the coordinate moved 200 metres from the representation point to the top — with Frostisen to the south and Skjomen below.",
+    ],
+    descent: [
+      "The normal way down is your own track — a fine route with plenty of room above the treeline, says the source, and the southwest sector measures 9.6 degrees mean. Watch for avalanches south of the summit and holes in the stream late in the season — the source's own words, and the stream valley is where both live.",
+      "The Gangnesrenna is its own chapter: about 40 degrees at the top, ice from the watercourse, avalanche activity lower down, ice axe, crampons and possibly a rope on the source's gear list, and a labyrinthine exit along the fjord edge to Skjombotn. The rim above the couloir measures 59.9 degrees in the first 60 m window. A thousand metres straight to the fjord — for days and parties that have measured themselves against less first.",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "KAST 2 – Challenging by Fri Flyt. The normal route on the south side is even — 20.0 degrees in the steepest band, 26.0 in the steepest stretch — and the hazards the source names are avalanches south of the summit and holes in the stream late in the season. The stream valley is both your skin track and a runout; read the slopes above it.",
+      },
+      {
+        title: "The Gangnesrenna",
+        body: "About 40 degrees at the top, ice from the watercourse, avalanche activity at the bottom — and 59.9 degrees in the first window off the rim. The couloir has its own gear list in the source (axe, crampons, possibly a rope) and its own seriousness. From the normal route it is a view, not a shortcut.",
+      },
+      {
+        title: "Before you go",
+        body: "Gangnesaksla lies in the Ofoten forecast region, an A-region with a daily avalanche bulletin through the season — check varsom.no. The February–May season is Fri Flyt's. Carry transceiver, probe and shovel.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "20 m",
+      endLabel: "1318 m",
+      distanceLabel: "4.9 km",
+      caption: "1306 metres of ascent and 4.90 km from the power station in Sørskjomen via the dam at the treeline and the shelf at 800, with the forest limit at 600 m and the steepest ground — 26.0 degrees between 1155 and 1174 m — below the northeast ridge.",
     },
   },
   justadtinden: {

@@ -1984,5 +1984,95 @@
    "figure": "1,17 km ute",
    "how": "treeline_scan i guide_facts.py: siste skogsverteks langs linja, med 600 m grunn og 150 m høgd utan skog som stoppkrav."
   }
+ ],
+ "skjomtinden": [
+  {
+   "what": "Ryggen nordvest for toppen (dit renna leder)",
+   "figure": "13,2° i snitt over 500 m — den eneste slake sektoren; alle andre kanter måler 22,9–45,3° i snitt med vinduer på 43–68°",
+   "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+  },
+  {
+   "what": "Nordøst- og nordsiden",
+   "figure": "45,3° og 43,7° i snitt, med 67,8° og 56,7° som bratteste 60-metersvinduer — dronninga er bratt på alle profilsidene",
+   "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+  },
+  {
+   "what": "Skoggrensa langs linja",
+   "figure": "2,96 km ute",
+   "how": "treeline_scan i guide_facts.py: siste skogsverteks langs linja, med 600 m grunn og 150 m høgd utan skog som stoppkrav."
+  }
+ ],
+ "litletind": [
+  {
+   "what": "Sør- og sørvestsiden (normalveien og nedfarten)",
+   "figure": "16,8° og 20,6° i snitt over 500 m",
+   "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+  },
+  {
+   "what": "Øst- og nordøstsiden",
+   "figure": "37,4° og 36,9° i snitt, med 57,7° og 49,0° som bratteste vinduer rett under toppen — kanten mot Håkvikdalen",
+   "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+  },
+  {
+   "what": "Skoggrensa langs linja",
+   "figure": "2,93 km ute",
+   "how": "treeline_scan i guide_facts.py: siste skogsverteks langs linja, med 600 m grunn og 150 m høgd utan skog som stoppkrav."
+  }
+ ],
+ "beisfjordtotta": [
+  {
+   "what": "Ryggen fra nordvest (dit normalruta kommer opp)",
+   "figure": "12,7° i snitt over 500 m — den slake sektoren",
+   "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+  },
+  {
+   "what": "Sørøst-, sør- og østsiden",
+   "figure": "38,0°, 34,6° og 44,8° i snitt, med 76,3°, 72,2° og 72,5° i de første 60-metersvinduene fra varden — kanten mot Beisfjorden er vegg",
+   "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+  },
+  {
+   "what": "Skoggrensa langs linja",
+   "figure": "2,94 km ute",
+   "how": "treeline_scan i guide_facts.py: siste skogsverteks langs linja, med 600 m grunn og 150 m høgd utan skog som stoppkrav."
+  }
+ ],
+ "spanstinden": [
+  {
+   "what": "Fonna sørøst for toppen (normalveien)",
+   "figure": "14,1° i snitt over 500 m med 28,9° i det første vinduet — kildens «slakest til høyre» står seg",
+   "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+  },
+  {
+   "what": "Nord-, nordøst- og sørvestsiden",
+   "figure": "44,1°, 47,5° og 42,0° i snitt, med 71,4° som bratteste 60-metersvindu på nordaustsida — toppen er spektakulær fordi alt annet enn fonna er bratt",
+   "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+  },
+  {
+   "what": "Bukkemyrvatnet",
+   "figure": "linja kryssar 90 m av det naturlege vatnet på 418 moh, aldri meir enn 25 m frå kartlagd strand",
+   "how": "check_ground.py mot OSMs vasspolygon; naturleg vatn, ikkje regulert — kilden si eiga linje går over vatnet."
+  },
+  {
+   "what": "Skoggrensa langs linja",
+   "figure": "1,03 km ute",
+   "how": "treeline_scan i guide_facts.py: siste skogsverteks langs linja, med 600 m grunn og 150 m høgd utan skog som stoppkrav."
+  }
+ ],
+ "gangnesaksla": [
+  {
+   "what": "Sør- og sørvestsiden (normalruta)",
+   "figure": "19,6° og 9,6° i snitt over 500 m",
+   "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+  },
+  {
+   "what": "Nordøstsiden (Gangnesrenna)",
+   "figure": "21,9° i snitt med 59,9° i det første 60-metersvinduet fra kanten — inngangen til renna lokalavisa kaller Norges lengste",
+   "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+  },
+  {
+   "what": "Skoggrensa langs linja",
+   "figure": "2,56 km ute",
+   "how": "treeline_scan i guide_facts.py: siste skogsverteks langs linja, med 600 m grunn og 150 m høgd utan skog som stoppkrav."
+  }
  ]
 }

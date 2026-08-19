@@ -58,7 +58,9 @@ def stedsnavn(name, objtype=None, fuzzy=False):
                 "type": x.get("navneobjekttype"),
                 "lat": p["nord"],
                 "lng": p["øst"],
-                "kommune": [k.get("kommunenavn") for k in x.get("kommuner", [])],
+                # `kommuner` can be null, not just absent — a Sweden-border name
+                # (Bukkemyrvatnet on Gratangsfjellet) returned exactly that.
+                "kommune": [k.get("kommunenavn") for k in (x.get("kommuner") or [])],
             }
         )
     return out
