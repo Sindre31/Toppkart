@@ -6413,5 +6413,374 @@
    ],
    "confidence": "medium"
   }
+ },
+ {
+  "slug": "snotinden",
+  "verdict": "ok",
+  "corrections": [
+   "Registerets Snøtinden (Fjell, Ibestad) løser 1214,8 mot publiserte 1215 — den store klassikeren på Andørja, øya Fri Flyt kaller tettpakket med fjelltopper.",
+   "Starten er idrettsanlegget/skolen på Ånstad (registerets Ånstad, Grend, 68.82376/17.17762, DTM1 9,0 moh på dyrket mark). 1215 − 9 = 1206, som forliker Fri Flyts 1200 høydemeter.",
+   "Ruta reproduserer: vegen mot Kvantobotn (91 moh der linja tar av), skogen aust for Snøfjellelva (214 og 302), Snøfjellvatnet-nivået (727 — registerets Snøfjellvatnet, Tjern, 68.83599/17.28440) og vestflanken (932).",
+   "Fri Flyt: KAST 3 – Komplekst med alpinøks og stegjern i utstyrslista, og fem navngitte nedfarter der fleire held 45 grader — turen skipper som grad 4. Dokumentert skredhistorikk på sørvendte heng og vest for høgde 1018.",
+   "check_ground: linja kryssa 90 m av Snøfjellvatnet (naturleg, 769 moh); vegpunktet på vasskanten er bytt med eit på sørbredda (779,3 moh) — linja held land forbi vatnet.",
+   "Andre omruting ved Snøfjellvatnet: austkanten vart framleis kryssa (90 m); eit punkt søraust for vatnet (869,0 moh) rundar det heilt."
+  ],
+  "rejectReason": "",
+  "corridor": {
+   "routeId": "vestsiden",
+   "routeName": "Vestsiden fra Ånstad",
+   "routeDescriptionFull": "Fra idrettsanlegget på Ånstad langs vegen mot Kvantobotn, over Kvantoelva og opp skogen aust for Snøfjellelva, forbi Snøfjellvatnet og opp vestflanken til toppen",
+   "trailhead": {
+    "name": "Ånstad",
+    "lat": 68.82376,
+    "lng": 17.17762,
+    "elevationM": 9,
+    "osmEvidence": "Idrettsanlegget/skolen på Ånstad ved fylkesvegen på Andørja — registerets Ånstad (Grend). DTM1 leser 9,0 moh."
+   },
+   "waypoints": [
+    {
+     "name": "vegen mot Kvantobotn",
+     "lat": 68.825,
+     "lng": 17.2,
+     "elevationM": 91
+    },
+    {
+     "name": "skogen aust for Snøfjellelva",
+     "lat": 68.83,
+     "lng": 17.235,
+     "elevationM": 214
+    },
+    {
+     "name": "øvre skogen",
+     "lat": 68.832,
+     "lng": 17.25,
+     "elevationM": 302
+    },
+    {
+     "name": "sør for Snøfjellvatnet",
+     "lat": 68.8345,
+     "lng": 17.283,
+     "elevationM": 779
+    },
+    {
+     "name": "søraust for Snøfjellvatnet",
+     "lat": 68.8348,
+     "lng": 17.29,
+     "elevationM": 869
+    },
+    {
+     "name": "vestflanken",
+     "lat": 68.836,
+     "lng": 17.295,
+     "elevationM": 932
+    }
+   ],
+   "season": "feb–apr",
+   "aspect": "V",
+   "grade": 4,
+   "gradeReason": "KAST 3 – Komplekst hos Fri Flyt, alpinøks og stegjern i utstyrslista, og nedfarter med parti på 45 grader. Vestsiden er den mildeste av de fem navngitte linjene, med 20–35 grader ned mot Snøfjellvatnet og 30–40 med 45-graders parti lenger nede. Grad 4.",
+   "roadClosedInWinter": false,
+   "hazardNotes": "Fri Flyt: KAST 3 – Komplekst. Alpinøks og stegjern. Dokumentert skredhistorikk på sørvendte heng og vest for høgde 1018; ising nær tregrensa; Nordøstrenna (45–50 grader) og Østbratta er ekspertlinjer som krever kontrollerte former. Hold aust for Skjellelva ved nedkjøring mot Juliusvatnet på grunn av ising.",
+   "teaserNo": "",
+   "teaserEn": "",
+   "sources": [
+    "https://www.friflyt.no/topptur/tromso/snotinden-1215-flere-rutealternativer",
+    "https://ut.no/turforslag/1112148/sntinden-1215-moh",
+    "https://www.friflyt.no/randone/turomraade-andoerja"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "slug": "stortinden-rolla",
+  "verdict": "ok",
+  "corrections": [
+   "Registerets Stortinden (Fjell, Ibestad, Rolla) løser 1020,0 mot publiserte 1021 — øyas høyeste.",
+   "Fri Flyts oppgitte stigning 1021 er toppens høyde duplisert inn i gain-feltet (Oksen-klassen); starten ved Indre Forså langs fv. 848 leser 85 moh, og kortet bærer den rutede stigningen.",
+   "Mevatnet er regulert (InnsjøRegulert, 240 moh) — linja runder det på austsida på land, og guiden sier hvorfor.",
+   "Parkeringa er begrenset og krever grunneiers samtykke ifølge kilden — det står i guiden, for det er en del av turen.",
+   "Fri Flyt: KAST 3 – Komplekst, alpinøks og stegjern; austsida (Drangen) startar over 50 grader og er ikkje linja her.",
+   "check_ground: linja kryssa 315 m av det regulerte Mevatnet ved sørenden; eit vegpunkt aust for sørenden (269,7 moh, myr) legg linja på land — regulerte vatn kryssast ikkje.",
+   "Andre omruting rundt Mevatnet: sørspissen vart framleis klipt (45 m); eit punkt i skogen aust for sørenden (224,7 moh) tek linja rundt spissen på land."
+  ],
+  "rejectReason": "",
+  "corridor": {
+   "routeId": "vestruta",
+   "routeName": "Vestruta fra Indre Forså",
+   "routeDescriptionFull": "Fra Indre Forså ved fv. 848 nordover over myrene, austsida av Mevatnet på land, og opp renna sør for toppen til Stortinden",
+   "trailhead": {
+    "name": "Indre Forså",
+    "lat": 68.742,
+    "lng": 16.975,
+    "elevationM": 85,
+    "osmEvidence": "Indre Forså ved fv. 848 på vestsida av Rolla — begrenset parkering, grunneiers samtykke ifølge kilden. DTM1 leser 84,9 moh."
+   },
+   "waypoints": [
+    {
+     "name": "myrene",
+     "lat": 68.755,
+     "lng": 16.99,
+     "elevationM": 256
+    },
+    {
+     "name": "skogen aust for sørenden",
+     "lat": 68.7548,
+     "lng": 16.997,
+     "elevationM": 225
+    },
+    {
+     "name": "aust for sørenden av Mevatnet",
+     "lat": 68.757,
+     "lng": 17.005,
+     "elevationM": 270
+    },
+    {
+     "name": "austsida av Mevatnet",
+     "lat": 68.77,
+     "lng": 17.02,
+     "elevationM": 287
+    },
+    {
+     "name": "over vatnet",
+     "lat": 68.783,
+     "lng": 17.025,
+     "elevationM": 465
+    },
+    {
+     "name": "renna sør for toppen",
+     "lat": 68.788,
+     "lng": 17.03,
+     "elevationM": 647
+    }
+   ],
+   "season": "feb–apr",
+   "aspect": "V",
+   "grade": 4,
+   "gradeReason": "KAST 3 – Komplekst hos Fri Flyt, alpinøks og stegjern, ofte skavlet topp, og ei renne på jevnt 30–40 grader som normalvei. Drangen på austsida (over 50 grader) er ekspertlinja og ikke denne. Grad 4.",
+   "roadClosedInWinter": false,
+   "hazardNotes": "Fri Flyt: KAST 3 – Komplekst. Renna sør for toppen er jevnt 30–40 grader og krever stabil snø; toppen er ofte skavlet; austsida (Drangen) startar over 50 grader og dagen for den velges med omhu. Mevatnet er regulert — hold land på austsida.",
+   "teaserNo": "",
+   "teaserEn": "",
+   "sources": [
+    "https://www.friflyt.no/topptur/tromso/turbeskrivelse-stortinden-paa-rolla",
+    "https://friflyt.no/topptur/skiturer-troms/turomraade-rolla",
+    "https://peakery.com/stortinden-norway-1021m/"
+   ],
+   "confidence": "medium"
+  }
+ },
+ {
+  "slug": "reinspalen",
+  "verdict": "ok",
+  "corrections": [
+   "Registerets Reinspælen (Fjell, Kvæfjord) løser 1117,4 mot publiserte 1118 — Kvæfjords høyeste.",
+   "Starten er Våtvoll ved fv. 85 langs Gullesfjorden (registerets Våtvoll, Gard, DTM1 5,2 moh) — «lommer langs R85» er kildens egen parkering.",
+   "Ruta reproduserer det kilden kaller mye opp og ned: Kobberyggen (421 moh), søkket (335), Geitryggen (682 — registerets Geitryggen, Fjell), ryggen (768) og den eksponerte toppryggen (1053 der linja tar den).",
+   "Fri Flyt: KAST 3 – Komplekst, isøks og stegjern, skavler og skredterreng mot Litjedalen — turen skipper som grad 4. Andrekilden (tinderogtopper) beskriver samme linje fra Våtvoll med klyving mot toppen."
+  ],
+  "rejectReason": "",
+  "corridor": {
+   "routeId": "geitryggen",
+   "routeName": "Geitryggen fra Våtvoll",
+   "routeDescriptionFull": "Fra Våtvoll ved fv. 85 opp Kobberyggen og videre Geitryggen med mye opp og ned, bratnende til 30–40 grader før den flater ut i en eksponert ryggtravers til toppen",
+   "trailhead": {
+    "name": "Våtvoll",
+    "lat": 68.57091,
+    "lng": 15.79577,
+    "elevationM": 5,
+    "osmEvidence": "Våtvoll ved fv. 85 langs Gullesfjorden — parkering i lommene langs vegen, slik kilden sier. DTM1 leser 5,2 moh."
+   },
+   "waypoints": [
+    {
+     "name": "Kobberyggen",
+     "lat": 68.56773,
+     "lng": 15.7487,
+     "elevationM": 421
+    },
+    {
+     "name": "søkket",
+     "lat": 68.573,
+     "lng": 15.725,
+     "elevationM": 335
+    },
+    {
+     "name": "Geitryggen",
+     "lat": 68.57754,
+     "lng": 15.69559,
+     "elevationM": 682
+    },
+    {
+     "name": "ryggen videre",
+     "lat": 68.585,
+     "lng": 15.695,
+     "elevationM": 768
+    },
+    {
+     "name": "toppryggen",
+     "lat": 68.59,
+     "lng": 15.697,
+     "elevationM": 1053
+    }
+   ],
+   "season": "jan–apr",
+   "aspect": "S",
+   "grade": 4,
+   "gradeReason": "KAST 3 – Komplekst hos Fri Flyt, isøks og stegjern, eksponert ryggtravers med skavler og skredterreng mot Litjedalen. Vestrennene (30–50 grader) er terrengfeller ved ustabilitet. Grad 4.",
+   "roadClosedInWinter": false,
+   "hazardNotes": "Fri Flyt: KAST 3 – Komplekst. Skavler og skredterreng nær Litjedalen på toppryggen; vestrennene måler 30–50 grader og er terrengfeller ved ustabil snø; Norddalen (nordaustruta frå Bømark) krever stabilitetsvurdering. Isøks og stegjern.",
+   "teaserNo": "",
+   "teaserEn": "",
+   "sources": [
+    "https://www.friflyt.no/topptur/tromso/turbeskrivelse-reinspaelen",
+    "https://www.tinderogtopper.no/post/reinsp%C3%A6len-1118-moh",
+    "https://peakbook.org/no/tour/515530/Reinsp%C3%A6len+fra+V%C3%A5tvoll-mye+opp+og+ned+og+klyving+mot+toppen!.html"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "slug": "snotindan",
+  "verdict": "ok",
+  "corrections": [
+   "Registeret skriver Snytindan (Fjell, Kvæfjord/Lødingen/Sortland — trippelpunktet); Fri Flyt skriver Snøtindan og ut.no «Stor Snytindan». Toppsøket løser 996,2 mot publiserte 996.",
+   "Starten er parkeringa langs fv. 85 ved Løbergsbukta — registerets eget punkt for bukta står i sjøen; vegen leser 13,1 moh på 68.5600/15.7450, og det er der bilene står.",
+   "Ruta reproduserer: Løbergsdalen (442 moh der linja går, med utløpssoner på begge sider — gå midt i dalen, sier kilden), Løbergskaret (746), vatna på 497-nivået (linja held land) og toppflanken.",
+   "Fri Flyts stigning 1250–1350 for ein 996-topp er undulasjonen over skaret — kortet ber den ruta stigninga. KAST 3 – Komplekst med alpinøks og stegjern; topphenget måler 30–40 grader.",
+   "check_ground: linja kryssa tjernet i Løbergsdalen (496 moh) og 360 m av vatnet på 497 vest for skaret; vegpunkt nord for tjernet (538,9) og på landet mellom vatna (580,4) legg linja der kilden legg den — «mellom vatna», på land.",
+   "Andre omruting: linja kryssa òg det øvre tjernet i Løbergsdalen (571 moh) og tjernet på 573 aust for skardet; punkt sør for det øvre tjernet (476,9) og nord for 573-tjernet (691,8) held linja på land heile vegen.",
+   "Tredje justering: nordsida av 573-tjernet tvinga linja over ein knaus og la 100 m ekstra stigning på turen; sørsida (591,8 moh) held land utan knausen."
+  ],
+  "rejectReason": "",
+  "corridor": {
+   "routeId": "lobergsdalen",
+   "routeName": "Løbergsdalen fra fv. 85",
+   "routeDescriptionFull": "Fra parkeringa ved Løbergsbukta inn og opp gjennom hele Løbergsdalen midt i dalen, over Løbergskaret forbi Snytindhytta, sørøstover mellom vatna og opp det slakeste terrenget til toppen",
+   "trailhead": {
+    "name": "Løbergsbukta",
+    "lat": 68.56,
+    "lng": 15.745,
+    "elevationM": 13,
+    "osmEvidence": "Parkering langs fv. 85 (Gullesfjordbotn–Skájeaggi) ved Løbergsbukta; Nominatim bekrefter vegen på punktet. DTM1 leser 13,1 moh."
+   },
+   "waypoints": [
+    {
+     "name": "Løbergsdalen",
+     "lat": 68.553,
+     "lng": 15.72,
+     "elevationM": 442
+    },
+    {
+     "name": "sør for øvre tjernet",
+     "lat": 68.5487,
+     "lng": 15.716,
+     "elevationM": 477
+    },
+    {
+     "name": "Løbergskaret",
+     "lat": 68.548,
+     "lng": 15.67,
+     "elevationM": 746
+    },
+    {
+     "name": "sør for tjernet på 573",
+     "lat": 68.545,
+     "lng": 15.648,
+     "elevationM": 592
+    },
+    {
+     "name": "landet mellom vatna",
+     "lat": 68.546,
+     "lng": 15.639,
+     "elevationM": 580
+    },
+    {
+     "name": "ved vatna",
+     "lat": 68.5445,
+     "lng": 15.63,
+     "elevationM": 561
+    },
+    {
+     "name": "toppflanken",
+     "lat": 68.5435,
+     "lng": 15.625,
+     "elevationM": 738
+    }
+   ],
+   "season": "jan–apr",
+   "aspect": "SØ",
+   "grade": 4,
+   "gradeReason": "KAST 3 – Komplekst hos Fri Flyt, alpinøks og stegjern, topphenget 30–40 grader og heile Løbergsdalen med utløpssoner på begge sider. Grad 4 — og ein lang dag: kilden gir 8–9 timar.",
+   "roadClosedInWinter": false,
+   "hazardNotes": "Fri Flyt: KAST 3 – Komplekst. Løbergsdalen har utløpssoner på begge sider — gå midt i dalen. Topphenget måler 30–40 grader med mogleg toppskavl; parti opp mot 45 grader i terrenget rundt. Alpinøks og stegjern.",
+   "teaserNo": "",
+   "teaserEn": "",
+   "sources": [
+    "https://www.friflyt.no/topptur/tromso/turbeskrivelse-snoetindan",
+    "https://ut.no/turforslag/116142/topptur-pa-ski-til-stor-snytindan-996-moh"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "slug": "storhornet-kvafjord",
+  "verdict": "ok",
+  "corrections": [
+   "Registerets Storhornet (Fjell, Kvæfjord) løser 722,2 mot publiserte 722. Appen har allerede et Storhornet i Trollheimen; kortet heter Storhornet i Kvæfjord, og det er første gang et navn trengte kvalifikator av den grunnen.",
+   "Starten er den store parkeringsplassen ved starten av Kvæfjordløypene, vest for Bjørklund på Kvæfjordeidet — DTM1 leser 175,2 moh. 722 − 175 = 547, som forliker Fri Flyts 550 høydemeter.",
+   "Ruta følger det kilden kaller Harstads alltid best preparerte løype opp til Koven (registerets Koven, 415 moh der linja passerer), og videre opp ryggen (608) til toppen — check_trails har ei kartlagd løype å måle mot her.",
+   "Fri Flyt: Enkelt, sørvendt og solfylt, sesong november–april — men med eit navngitt farepunkt: gå ikkje opp i dei bratte fjellsidene langs Vikelandselva, det er skredterreng."
+  ],
+  "rejectReason": "",
+  "corridor": {
+   "routeId": "koven",
+   "routeName": "Via Koven fra Kvæfjordeidet",
+   "routeDescriptionFull": "Fra den store parkeringsplassen vest for Bjørklund etter den preparerte løypa opp til Koven, og videre opp ryggen til Storhornet",
+   "trailhead": {
+    "name": "Kvæfjordeidet",
+    "lat": 68.7809,
+    "lng": 16.348,
+    "elevationM": 175,
+    "osmEvidence": "Den store parkeringsplassen ved starten av Kvæfjordløypene, vest for Bjørklund (registerets Bjørklund, Bruk, 68.78086/16.34985). DTM1 leser 175,2 moh."
+   },
+   "waypoints": [
+    {
+     "name": "løypa",
+     "lat": 68.79,
+     "lng": 16.31,
+     "elevationM": 301
+    },
+    {
+     "name": "mot Koven",
+     "lat": 68.8,
+     "lng": 16.27,
+     "elevationM": 422
+    },
+    {
+     "name": "Koven",
+     "lat": 68.80732,
+     "lng": 16.2298,
+     "elevationM": 415
+    },
+    {
+     "name": "ryggen",
+     "lat": 68.815,
+     "lng": 16.22,
+     "elevationM": 608
+    }
+   ],
+   "season": "nov–apr",
+   "aspect": "S",
+   "grade": 1,
+   "gradeReason": "Enkelt hos Fri Flyt — den preparerte løypa til Koven og ein slak, sørvendt rygg vidare. Farepunktet er sidene langs Vikelandselva, som normalsporet ikkje er i nærleiken av. Grad 1.",
+   "roadClosedInWinter": false,
+   "hazardNotes": "Fri Flyt: Enkelt. Ikkje gå opp i dei bratte fjellsidene langs Vikelandselva — skredterreng. Elles solfylt og skjerma, med Kvæfjordløypene preparert av Kvæfjordløyper-entusiastane.",
+   "teaserNo": "",
+   "teaserEn": "",
+   "sources": [
+    "https://www.friflyt.no/topptur/tromso/turbeskrivelse-storhornet-via-koven",
+    "https://ut.no/turforslag/1112154824/koven-fra-kvfjordeidet"
+   ],
+   "confidence": "high"
+  }
  }
 ]

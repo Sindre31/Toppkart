@@ -7042,5 +7042,273 @@
     "notes": "Fri Flyt: KAST 2 – Utfordrende. Se opp for skred sør for toppen og hull i bekken seint i sesongen. Gangnesrenna mot nordaust er relativt bratt i starten, rundt 40 grader, med ispartier fra bekkeløpet og skredaktivitet lenger nede — isøks, stegjern og eventuelt tau i kildens egen utstyrsliste for renna."
    }
   ]
+ },
+ "snotinden": {
+  "routes": [
+   {
+    "id": "vestsiden",
+    "name": "Vestsiden fra Ånstad",
+    "description": "Fra idrettsanlegget på Ånstad langs vegen mot Kvantobotn, over Kvantoelva og opp skogen aust for Snøfjellelva, forbi Snøfjellvatnet og opp vestflanken til toppen",
+    "trailhead": {
+     "name": "Ånstad",
+     "lat": 68.82376,
+     "lng": 17.17762,
+     "elevation_m": 9.0,
+     "fullName": "Ånstad"
+    },
+    "waypoints": [
+     {
+      "name": "vegen mot Kvantobotn",
+      "lat": 68.825,
+      "lng": 17.2,
+      "elevation_m": 91.0
+     },
+     {
+      "name": "skogen aust for Snøfjellelva",
+      "lat": 68.83,
+      "lng": 17.235,
+      "elevation_m": 214.0
+     },
+     {
+      "name": "øvre skogen",
+      "lat": 68.832,
+      "lng": 17.25,
+      "elevation_m": 302.0
+     },
+     {
+      "name": "sør for Snøfjellvatnet",
+      "lat": 68.8345,
+      "lng": 17.283,
+      "elevation_m": 779.3
+     },
+     {
+      "name": "søraust for Snøfjellvatnet",
+      "lat": 68.8348,
+      "lng": 17.29,
+      "elevation_m": 869.0
+     },
+     {
+      "name": "vestflanken",
+      "lat": 68.836,
+      "lng": 17.295,
+      "elevation_m": 932.0
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: KAST 3 – Komplekst. Alpinøks og stegjern. Dokumentert skredhistorikk på sørvendte heng og vest for høgde 1018; ising nær tregrensa; Nordøstrenna (45–50 grader) og Østbratta er ekspertlinjer som krever kontrollerte former. Hold aust for Skjellelva ved nedkjøring mot Juliusvatnet på grunn av ising."
+   }
+  ]
+ },
+ "stortinden-rolla": {
+  "routes": [
+   {
+    "id": "vestruta",
+    "name": "Vestruta fra Indre Forså",
+    "description": "Fra Indre Forså ved fv. 848 nordover over myrene, austsida av Mevatnet på land, og opp renna sør for toppen til Stortinden",
+    "trailhead": {
+     "name": "Indre Forså",
+     "lat": 68.742,
+     "lng": 16.975,
+     "elevation_m": 85.0,
+     "fullName": "Indre Forså"
+    },
+    "waypoints": [
+     {
+      "name": "myrene",
+      "lat": 68.755,
+      "lng": 16.99,
+      "elevation_m": 256.0
+     },
+     {
+      "name": "skogen aust for sørenden",
+      "lat": 68.7548,
+      "lng": 16.997,
+      "elevation_m": 224.7
+     },
+     {
+      "name": "aust for sørenden av Mevatnet",
+      "lat": 68.757,
+      "lng": 17.005,
+      "elevation_m": 269.7
+     },
+     {
+      "name": "austsida av Mevatnet",
+      "lat": 68.77,
+      "lng": 17.02,
+      "elevation_m": 287.0
+     },
+     {
+      "name": "over vatnet",
+      "lat": 68.783,
+      "lng": 17.025,
+      "elevation_m": 465.0
+     },
+     {
+      "name": "renna sør for toppen",
+      "lat": 68.788,
+      "lng": 17.03,
+      "elevation_m": 647.0
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: KAST 3 – Komplekst. Renna sør for toppen er jevnt 30–40 grader og krever stabil snø; toppen er ofte skavlet; austsida (Drangen) startar over 50 grader og dagen for den velges med omhu. Mevatnet er regulert — hold land på austsida."
+   }
+  ]
+ },
+ "reinspalen": {
+  "routes": [
+   {
+    "id": "geitryggen",
+    "name": "Geitryggen fra Våtvoll",
+    "description": "Fra Våtvoll ved fv. 85 opp Kobberyggen og videre Geitryggen med mye opp og ned, bratnende til 30–40 grader før den flater ut i en eksponert ryggtravers til toppen",
+    "trailhead": {
+     "name": "Våtvoll",
+     "lat": 68.57091,
+     "lng": 15.79577,
+     "elevation_m": 5.0,
+     "fullName": "Våtvoll"
+    },
+    "waypoints": [
+     {
+      "name": "Kobberyggen",
+      "lat": 68.56773,
+      "lng": 15.7487,
+      "elevation_m": 421.0
+     },
+     {
+      "name": "søkket",
+      "lat": 68.573,
+      "lng": 15.725,
+      "elevation_m": 335.0
+     },
+     {
+      "name": "Geitryggen",
+      "lat": 68.57754,
+      "lng": 15.69559,
+      "elevation_m": 682.0
+     },
+     {
+      "name": "ryggen videre",
+      "lat": 68.585,
+      "lng": 15.695,
+      "elevation_m": 768.0
+     },
+     {
+      "name": "toppryggen",
+      "lat": 68.59,
+      "lng": 15.697,
+      "elevation_m": 1053.0
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: KAST 3 – Komplekst. Skavler og skredterreng nær Litjedalen på toppryggen; vestrennene måler 30–50 grader og er terrengfeller ved ustabil snø; Norddalen (nordaustruta frå Bømark) krever stabilitetsvurdering. Isøks og stegjern."
+   }
+  ]
+ },
+ "snotindan": {
+  "routes": [
+   {
+    "id": "lobergsdalen",
+    "name": "Løbergsdalen fra fv. 85",
+    "description": "Fra parkeringa ved Løbergsbukta inn og opp gjennom hele Løbergsdalen midt i dalen, over Løbergskaret forbi Snytindhytta, sørøstover mellom vatna og opp det slakeste terrenget til toppen",
+    "trailhead": {
+     "name": "Løbergsbukta",
+     "lat": 68.56,
+     "lng": 15.745,
+     "elevation_m": 13.0,
+     "fullName": "Løbergsbukta"
+    },
+    "waypoints": [
+     {
+      "name": "Løbergsdalen",
+      "lat": 68.553,
+      "lng": 15.72,
+      "elevation_m": 442.0
+     },
+     {
+      "name": "sør for øvre tjernet",
+      "lat": 68.5487,
+      "lng": 15.716,
+      "elevation_m": 476.9
+     },
+     {
+      "name": "Løbergskaret",
+      "lat": 68.548,
+      "lng": 15.67,
+      "elevation_m": 746.0
+     },
+     {
+      "name": "sør for tjernet på 573",
+      "lat": 68.545,
+      "lng": 15.648,
+      "elevation_m": 591.8
+     },
+     {
+      "name": "landet mellom vatna",
+      "lat": 68.546,
+      "lng": 15.639,
+      "elevation_m": 580.4
+     },
+     {
+      "name": "ved vatna",
+      "lat": 68.5445,
+      "lng": 15.63,
+      "elevation_m": 561.0
+     },
+     {
+      "name": "toppflanken",
+      "lat": 68.5435,
+      "lng": 15.625,
+      "elevation_m": 738.0
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: KAST 3 – Komplekst. Løbergsdalen har utløpssoner på begge sider — gå midt i dalen. Topphenget måler 30–40 grader med mogleg toppskavl; parti opp mot 45 grader i terrenget rundt. Alpinøks og stegjern."
+   }
+  ]
+ },
+ "storhornet-kvafjord": {
+  "routes": [
+   {
+    "id": "koven",
+    "name": "Via Koven fra Kvæfjordeidet",
+    "description": "Fra den store parkeringsplassen vest for Bjørklund etter den preparerte løypa opp til Koven, og videre opp ryggen til Storhornet",
+    "trailhead": {
+     "name": "Kvæfjordeidet",
+     "lat": 68.7809,
+     "lng": 16.348,
+     "elevation_m": 175.0,
+     "fullName": "Kvæfjordeidet"
+    },
+    "waypoints": [
+     {
+      "name": "løypa",
+      "lat": 68.79,
+      "lng": 16.31,
+      "elevation_m": 301.0
+     },
+     {
+      "name": "mot Koven",
+      "lat": 68.8,
+      "lng": 16.27,
+      "elevation_m": 422.0
+     },
+     {
+      "name": "Koven",
+      "lat": 68.80732,
+      "lng": 16.2298,
+      "elevation_m": 415.0
+     },
+     {
+      "name": "ryggen",
+      "lat": 68.815,
+      "lng": 16.22,
+      "elevation_m": 608.0
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: Enkelt. Ikkje gå opp i dei bratte fjellsidene langs Vikelandselva — skredterreng. Elles solfylt og skjerma, med Kvæfjordløypene preparert av Kvæfjordløyper-entusiastane."
+   }
+  ]
  }
 }

@@ -298,6 +298,16 @@ export const TOUR_TEASER_EN: Record<string, string> = {
     "1050 metres of ascent from Bukkemyrvatnet on Gratangsfjellet: the terraces toward Sølvfjellet, the snowfield southeast of the summit — and the spectacular last metres to the cairn.",
   gangnesaksla:
     "1310 metres of ascent from the power station in Sørskjomen: the works road along Vesterskarelva, the dam at the treeline and the shelf at 800 — with the Frostisen glacier in view and the Gangnesrenna below the edge.",
+  snotinden:
+    "1240 metres of ascent from Ånstad to Andørja's great classic: the forest east of Snøfjellelva, Snøfjellvatnet and the west flank — five named descents, with axe and crampons in the pack.",
+  "stortinden-rolla":
+    "980 metres of ascent from Indre Forså to Rolla's highest: the moors, the east side of Mevatnet on land — and the couloir south of the summit, an even 30–40 degrees, with Drangen as the expert backdrop.",
+  reinspalen:
+    "1400 metres of ascent from Våtvoll to Kvæfjord's highest — Kobberyggen and Geitryggen with plenty of up and down, and an exposed ridge traverse with walls on both sides at the end.",
+  snotindan:
+    "1550 metres of ascent from Løbergsbukta for a 996 summit: mid-valley between the runout zones of Løbergsdalen, over Løbergskaret, between the lakes — and the 30–40 degree summit slope at the end.",
+  "storhornet-kvafjord":
+    "660 metres of ascent from Kvæfjordeidet along Harstad's ever-best-groomed trail to Koven — and a gentle, south-facing ridge on to the cairn. The sun tour of the round.",
 
 };
 
@@ -1150,6 +1160,113 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       caption: "1432 metres of ascent over 5.24 km from Tindelva, with the steepest ground — 27.7 degrees between 1286 and 1304 m — on the ridge a little under half a kilometre before the cairn.",
     },
   },
+  snotinden: {
+    intro:
+      "1242 metres of ascent over 6.76 km from Ånstad to the great classic of Andørja — the island Fri Flyt calls packed with summits. The source rates it KAST 3 – Complex with ice axe and crampons on the gear list and five named descents, several holding 45 degrees; Vestsiden, the line on this card, is the mildest of them, and the climb itself measures 22.7 degrees in its steepest hundred-metre band and 28.1 in its steepest sustained stretch. The card carries grade 4: the mountain around the line is why.",
+    ascent: [
+      "From the sports ground by the school at Ånstad — 9 m on farmland by the county road. You follow the road toward Kvantobotn (91 m where the line branches off), cross Kvantoelva and climb the forest east of Snøfjellelva: the bands from 100 to 400 m measure 7 degrees over road and moor, then it steepens — 20.9 degrees from 400 to 500 and the tour's steepest band, 22.7 degrees over 253 metres of ground, from 500 to 600, with the steepest sustained stretch at 28.1 between 630 and 648 m. The forest ends at 402 m after 4.27 km.",
+      "Above the forest the line passes south and southeast of Snøfjellvatnet — on land the whole way; the first solve crossed 90 metres of the lake, and the reroute is in the research record — and takes the west flank from there: 15–18 degrees in the bands from 700 to 1000.",
+      "The last three hundred vertical metres hold 18–20 degrees up to the cairn at 1215. The register resolves 1214.8, and around you stand the peaks of the Andørja traverse — Stortinden, Botntinden, Langlitinden — with the fjord on every side.",
+    ],
+    descent: [
+      "Vestsiden down is your own track — 20 to 35 degrees toward Snøfjellvatnet by the source, and the southwest sector measures 15.8 degrees mean, the gentlest on the summit. Lower down wait 30–40 degrees with 45-degree sections where the line from the lake drops toward the forest.",
+      "The four other named descents — Bananene and Skreddalen, Sydsiden, Nordøstrenna (45–50 degrees), Østbratta — hang in edges measuring 31 to 41 degrees mean with windows of 54 to 63 directly below the cairn. They are documented expert lines with documented avalanche history, and they are chosen after the stability, not before it.",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "KAST 3 – Complex by Fri Flyt, ice axe and crampons on the gear list — and grade 4 on the card even though Vestsiden measures 28.1 at its steepest: the descent passes terrain of 30–40 degrees with 45-degree sections, and everything around the line is steeper than the line.",
+      },
+      {
+        title: "The avalanche history",
+        body: "The source documents avalanche history on the south-facing slopes and west of point 1018 — on the normal route's own side of the mountain. The icing near the treeline comes on top. This is a tour where the bulletin is read before the car starts.",
+      },
+      {
+        title: "Snøfjellvatnet",
+        body: "The line keeps to land south of the lake. A natural lake and winter ice are ordinary travel, but with 1215 metres of mountain above you, the shore is the only place to stand if something releases higher up.",
+      },
+      {
+        title: "Before you go",
+        body: "Snøtinden lies in the Sør-Troms forecast region, an A-region with a daily avalanche bulletin through the season — check varsom.no. The February–April season is Fri Flyt's. Transceiver, probe, shovel — and the ice axe and crampons the source itself requires.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "9 m",
+      endLabel: "1215 m",
+      distanceLabel: "6.8 km",
+      caption: "1242 metres of ascent and 6.76 km from Ånstad east of Snøfjellelva and south of Snøfjellvatnet, with the treeline at 402 m and the steepest ground — 28.1 degrees between 630 and 648 m — in the forest slope.",
+    },
+  },
+  "storhornet-kvafjord": {
+    intro:
+      "658 metres of ascent over 8.22 km from Kvæfjordeidet — the sun tour of the round, along what the source calls Harstad's ever-best-groomed trail up to Koven and a gentle, south-facing ridge beyond. No hundred-metre band measures more than 9.5 degrees, the steepest sustained stretch is 25.8, and the summit has no steep side: all eight sectors measure 6 to 18 degrees mean. The steep ground on this tour exists — the flanks along Vikelandselva — and the trail does not go in it.",
+    ascent: [
+      "From the big car park at the start of the Kvæfjord trails, west of Bjørklund — 175 m. The trail, groomed by the enthusiasts of Kvæfjordløyper, takes you in: the bands from 200 to 400 m measure 2 to 6 degrees over kilometres, and the forest ends at 417 m after 6.11 km — most of this tour is trail touring.",
+      "Koven is passed at 415 m — ut.no describes the same trail from Kvæfjordeidet — and the ridge on toward Storhornet is the tour's only climb to speak of: 9.5 degrees in the band from 500 to 600, with the steepest sustained stretch at 25.8 between 476 and 494 m where the ridge gets going.",
+      "The cairn at 722 — the register resolves 722.2 — with Kvæfjorden and Gullesfjorden below you and the orange and Kvikk Lunsj the source prescribes at Koven. The ridge gives back 111 metres along the way, so the trip home has its own small climbs.",
+    ],
+    descent: [
+      "Down the ridge and the trail again — south-facing and sunny, and with 26.8 degrees as the steepest 60 m window anywhere on the summit this is skiing for all conditions and most legs.",
+      "The source's one rule: do not climb into the steep flanks along Vikelandselva — avalanche terrain, and the trail stays out of it. Follow it.",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "Easy by Fri Flyt, and the measurement agrees: 9.5 degrees in the steepest band, 25.8 in the steepest stretch, and no steep side on the summit. This is the tour for days when the bulletin says steep terrain is not the place to be — and the practice tour for every other day.",
+      },
+      {
+        title: "Vikelandselva",
+        body: "The source's named hazard: the steep flanks along the river are avalanche terrain. The trail does not go in them, and neither does your track need to — shortcuts here save minutes and stake the rest.",
+      },
+      {
+        title: "Before you go",
+        body: "Storhornet lies in the Sør-Troms forecast region, an A-region with a daily avalanche bulletin through the season — check varsom.no. The November–April season is Fri Flyt's, with the early trail start part of the mountain's reputation. Transceiver, probe and shovel — on a trail tour too.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "175 m",
+      endLabel: "722 m",
+      distanceLabel: "8.2 km",
+      caption: "658 metres of ascent and 8.22 km from Kvæfjordeidet along the trail to Koven and the ridge to the cairn, with the treeline at 417 m and the steepest ground — 25.8 degrees between 476 and 494 m — where the ridge begins.",
+    },
+  },
+  "stortinden-rolla": {
+    intro:
+      "984 metres of ascent over 7.26 km from Indre Forså to Rolla's highest — Fri Flyt rates it KAST 3 – Complex with ice axe and crampons, an often-corniced summit, and a couloir of an even 30–40 degrees as the normal way. The line measures 21.4 degrees in its steepest hundred-metre band and 27.8 in its steepest sustained stretch, directly below the top. The source's stated gain, 1021, is the summit height duplicated into the gain field — the card carries the line's own 980. Mevatnet is regulated, and the line rounds it on land.",
+    ascent: [
+      "From Indre Forså on the fv. 848 on Rolla's west side — 85 m, with limited parking requiring the landowner's consent according to the source; ask first, it is part of the tour. The moors inland are flat: the bands from 100 to 400 m measure 2 to 5 degrees, and the forest ends only at 485 m after 5.67 km — a long, quiet approach.",
+      "The line passes the south end of Mevatnet in the forest on the east side and then follows the east shore on land — the lake is regulated, and the two reroutes it took are in the research record. From 500 it steepens: 14.8, 20.3 and 21.4 degrees in the bands up toward the couloir.",
+      "The couloir south of the summit is the key: an even 30–40 degrees by the source, and the line's steepest sustained stretch measures 27.8 degrees between 967 and 991 m where it slants in. The top is often corniced — the cairn at 1020 with Andørja to the north and the sea to the west. The register resolves 1020.0.",
+    ],
+    descent: [
+      "Down the couloir again when the snow is stable — steep, fine skiing in ground of an even 30 to 40 degrees, says the source, then the long gentle moors home. The southeast and northwest sectors measure 24 degrees mean; the couloir to the west is 39.9.",
+      "Drangen on the east side is without doubt the steepest descent, says the source: the start is over 50 degrees — measured 46.6 mean with 62.6 as the steepest window — and the day for it is chosen with care. From this line it is another tour.",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "KAST 3 – Complex by Fri Flyt, ice axe and crampons, and a 30–40 degree couloir as the normal way — grade 4 on the card even though the line's slanting track measures 27.8: the couloir demands stable snow, and there is no gentle way up the last part.",
+      },
+      {
+        title: "The cornice",
+        body: "The summit is often corniced, says the source. The lip hangs east — toward the Drangen side, where the first window measures 62.6 degrees. Visit the cairn from the west, and in flat light with a wide margin.",
+      },
+      {
+        title: "Mevatnet",
+        body: "A regulated lake — the line keeps the east shore on land, and so should your track. Regulated ice cracks along the shore as the reservoir draws down, and the moors give dry land the whole way.",
+      },
+      {
+        title: "Before you go",
+        body: "Stortinden lies in the Sør-Troms forecast region, an A-region with a daily avalanche bulletin through the season — check varsom.no. The February–April season is Fri Flyt's. Transceiver, probe, shovel — and ice axe and crampons.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "85 m",
+      endLabel: "1020 m",
+      distanceLabel: "7.3 km",
+      caption: "984 metres of ascent and 7.26 km from Indre Forså across the moors and along Mevatnet's east side, with the treeline at 485 m and the steepest ground — 27.8 degrees between 967 and 991 m — in the couloir south of the summit.",
+    },
+  },
   spanstinden: {
     intro:
       "1047 metres of ascent over 5.24 km from Bukkemyrvatnet on Gratangsfjellet — a classic so popular that on sunny days you can almost count on company, says ut.no. Fri Flyt rates it KAST 1 – Easy, and the line keeps it: steepest hundred-metre band 18.8 degrees and steepest sustained stretch 25.0. The summit and the last metres to it are very spectacular, says the source — and the measurement explains why: everything except the snowfield you arrive by is 42 to 47 degrees mean.",
@@ -1185,6 +1302,80 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       endLabel: "1457 m",
       distanceLabel: "5.2 km",
       caption: "1047 metres of ascent and 5.24 km from Bukkemyrvatnet via the terraces toward Sølvfjellet and the snowfield southeast of the summit, with the treeline at 476 m and the steepest band — 18.8 degrees — between 1300 and 1400 m.",
+    },
+  },
+  reinspalen: {
+    intro:
+      "1404 metres of ascent over 8.44 km for a 1118 summit — Reinspælen is Kvæfjord's highest, and the ridges there collect 292 metres given back along the way: plenty of up and down, as both the source and the trip reports say. KAST 3 – Complex with ice axe and crampons; the line measures 21.0 degrees in its steepest hundred-metre band, and the steepest sustained stretch — 41.7 degrees between 1073 and 1104 m — sits in the transition to the exposed summit ridge, where the reports describe scrambling.",
+    ascent: [
+      "From Våtvoll on the fv. 85 along Gullesfjorden — 5 m, parking in the pockets along the road as the source says. Up Kobberyggen: the band from 0 to 100 measures 8.9 degrees and the forest ends at 378 m after 2.31 km, before the ridge gives back its first notch — 86 metres down to 335 before Geitryggen takes over.",
+      "Geitryggen is the tour's spine: 20.5 degrees in the band from 500 to 600, flat above 600, then even climbing — 21.0 degrees from 800 to 900, the tour's steepest band — toward the summit ridge. The undulation is why the card carries 1400 vertical metres for an 1118 summit.",
+      "The summit ridge is the serious part: an exposed traverse with cornices and avalanche terrain toward Litjedalen, and the line's steepest stretch — 41.7 degrees between 1073 and 1104 m — where the ridge rears toward the cairn. The axe and crampons are for these metres; the trip reports call it scrambling. The register resolves 1117.4 against a published 1118.",
+    ],
+    descent: [
+      "Down the same way — the ridges back with the climbs in reverse; the south sector from the summit measures 18.9 degrees mean, but with a 60 m window of 60.5 degrees only 20 to 80 metres out: the traverse has walls on both sides, and the track down is the track up.",
+      "The west gullies (30–50 degrees) are terrain traps in instability, says the source, and Norddalen on the northeast route needs its own stability assessment. Neither is this line.",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "KAST 3 – Complex by Fri Flyt. The ridges are kind — 21 degrees in the steepest band — and all the seriousness is gathered in the summit ridge: 41.7 degrees in the transition, cornices, and walls on both sides of the traverse. Grade 4 on the card.",
+      },
+      {
+        title: "The summit ridge",
+        body: "The cornices and the avalanche terrain toward Litjedalen are the source's own words. The sides measure 60.5 (S) and 64.1 (SE) degrees in the first windows from the cairn — the traverse is walked with the axe in hand and a wide margin to the edge, and in flat light it waits for better visibility.",
+      },
+      {
+        title: "The up-and-down ledger",
+        body: "292 metres are given back on the ridges — 292 metres to be climbed again on the way home. Count the hours accordingly: the source gives 6–7, and they are honest.",
+      },
+      {
+        title: "Before you go",
+        body: "Reinspælen lies in the Lofoten og Vesterålen forecast region, an A-region with a daily bulletin — the Kvæfjord mountains answer to that forecast, not Sør-Troms. Check varsom.no. The January–April season is Fri Flyt's. Transceiver, probe, shovel — and ice axe and crampons.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "5 m",
+      endLabel: "1117 m",
+      distanceLabel: "8.4 km",
+      caption: "1404 metres of ascent and 8.44 km from Våtvoll over Kobberyggen and Geitryggen, with the treeline at 378 m and the steepest ground — 41.7 degrees between 1073 and 1104 m — in the transition to the summit ridge.",
+    },
+  },
+  snotindan: {
+    intro:
+      "1548 metres of ascent over 9.04 km for a 996 summit — Snøtindan is the tour where the col costs more than the top: 565 metres are given back along the way, over Løbergskaret and the tarn shelves, and the line keeps to land past all the lakes where the source crosses on ice. KAST 3 – Complex with ice axe and crampons, 8–9 hours by the source, and a 30–40 degree summit slope at the end. The register writes Snytindan; ut.no writes Stor Snytindan; the card follows Fri Flyt.",
+    ascent: [
+      "From the parking along the fv. 85 at Løbergsbukta — 13 m where the road rounds the bay. Løbergsdalen has runout zones on both sides, and the source's rule is precise: walk the middle of the valley. The bands from 100 to 400 measure 20 to 22 degrees — the tour's steepest hundred-metre band, 22.1, is here — and the forest ends already at 287 m after 1.3 km.",
+      "The line passes south of the upper tarn in the valley and crosses Løbergskaret at 746 — then the height is given back: down past the tarn at 573 (on land, south of it; the reroutes are in the research record) to the shelves at the 560 level. The bands here measure 2 to 4 degrees over kilometres of flat — it is long, and that is the point of the 8–9 hour estimate.",
+      "From the shelves the summit flank takes over: 13.9 and 18.1 degrees in the bands from 800, and the steepest sustained stretch — 33.8 degrees between 947 and 974 m — in the summit slope the source gives 30–40 degrees with a possible cornice. The cairn at 996 stands on the triple point where Kvæfjord, Lødingen and Sortland meet; the register resolves 996.2.",
+    ],
+    descent: [
+      "Down the same way — the summit slope first, while you know what the snow did on the way up, then the shelves and the climb back over Løbergskaret: 185 of the 565 given-back metres must be climbed again on the way home. The north sector from the summit measures 13.6 degrees mean — the way the line came.",
+      "The south and east sides are another story: 39.1 and 38.6 degrees mean with windows of 59.7 and 52.8. And in the valley the same rule holds down as up: the middle, between the runout zones.",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "KAST 3 – Complex by Fri Flyt, ice axe and crampons. The line is long before it is steep: everything over 30 degrees is gathered in the summit slope (33.8 measured, 30–40 by the source, possible cornice) — and Løbergsdalen with runout zones on both sides is the entry ticket both ways. Grade 4.",
+      },
+      {
+        title: "The valley",
+        body: "Walk the middle of the valley — the source's own words, and the terrain explains them: the sides are runout zones, and the middle is the margin. On days with poor stability the valley is closed, and then so is the tour.",
+      },
+      {
+        title: "The lakes",
+        body: "The line keeps to land past all three lakes — the valley tarn, the tarn at 573 and the shelf lakes — where the source crosses on ice. It costs vertical metres (the card carries 1550 against the source's 1250–1350), and that is why the number is bigger than the mountain.",
+      },
+      {
+        title: "Before you go",
+        body: "Snøtindan lies in the Lofoten og Vesterålen forecast region, an A-region with a daily bulletin — the triple-point mountain answers to that forecast. Check varsom.no. The January–April season is Fri Flyt's. Transceiver, probe, shovel — and ice axe and crampons.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "13 m",
+      endLabel: "996 m",
+      distanceLabel: "9.0 km",
+      caption: "1548 metres of ascent and 9.04 km from Løbergsbukta up the middle of Løbergsdalen, over Løbergskaret and past the lakes on land, with the treeline at 287 m and the steepest ground — 33.8 degrees between 947 and 974 m — in the summit slope.",
     },
   },
   moysalen: {

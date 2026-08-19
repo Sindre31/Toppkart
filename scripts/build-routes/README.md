@@ -3998,6 +3998,57 @@ condition. Storriten is a June–August summer-ski tour up a seasonal
 anleggsvei toward Sitasjaure; a card whose season is the road's maintenance
 window is not this product's card. Both records stand for a later decision.
 
+## The Sør-Troms round
+
+Five from Fri Flyt's Harstad section — Kvæfjord, and the islands Andørja and
+Rolla in Ibestad. The chapter is why the region held one tour: nearly
+everything in it is KAST 3 – Komplekst with ice axe and crampons on the gear
+list, so four of the five ship as grade 4 and the fifth is the round's one
+grade 1. Varsom split the five again: the Ibestad and Kvæfjordeidet summits
+answer to **Sør-Troms**, while Reinspælen and Snøtindan on the Kvæfjord/
+Vesterålen border answer to **Lofoten og Vesterålen** — queried per summit,
+as always.
+
+| tour | start | summit | gain | km | steepest 100 m band | steepest 30 m | grade |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Snøtindan | 13 | 996 | 1548 | 9.0 | 22.1° | 33.8° | 4 |
+| Reinspælen | 5 | 1117 | 1404 | 8.4 | 21.0° | 41.7° | 4 |
+| Snøtinden | 9 | 1215 | 1242 | 6.8 | 22.7° | 28.1° | 4 |
+| Stortinden på Rolla | 85 | 1020 | 984 | 7.3 | 21.4° | 27.8° | 4 |
+| Storhornet i Kvæfjord | 175 | 722 | 658 | 8.2 | 9.5° | 25.8° | 1 |
+
+### What the checks caught
+
+**Three of five lines crossed water on the first solve, and one of the lakes
+was regulated.** Stortinden's corridor clipped 315 m of Mevatnet
+(`InnsjøRegulert`) at its south tip and took two reroutes to reach 0 m — the
+second because a single east-shore point still let the router cut the tip.
+Snøtinden crossed 90 m of Snøfjellvatnet and needed its lake-edge waypoint
+replaced with two shore points. Snøtindan crossed three separate tarns —
+the source's route crosses them on ice — and holds land past all of them
+after three passes; the north-side bypass of the 573 tarn was itself revised
+when it forced 100 m of extra climb over a knoll the south side avoids.
+
+**Snøtindan's card carries 1550 vertical metres for a 996 summit.** The
+source gives 1250–1350 crossing the lakes on ice; the land-only line collects
+1548, giving back 565 over Løbergskaret and the tarn shelves. The guide
+carries the ledger — the number is bigger than the mountain, and it says why.
+
+**Stortinden's published gain is its summit height.** 1021 for a 1021 m top —
+the altitude-duplicated-into-gain bug this pipeline has met since Oksen. The
+card carries the routed 980, and `verticalM` still never infers a trailhead.
+
+**Grade 4 stands against measured 2s and 3s on four tours.** The slope
+numbers alone would grade Snøtinden and Stortinden a 2 — but KAST 3, ice axe
+and crampons on the source's own list, corniced summits and exposed ridge
+traverses are what the day demands, and that is the Gråfjell rule. The
+measured figures are all in the guides, so the reader sees both statements.
+
+**Storhornet i Kvæfjord is the app's first qualified duplicate name.** The
+register's Storhornet in Kvæfjord collides with the Trollheimen tour already
+on the map, so the card carries the qualifier — the decision the Troms round
+deferred on Kvaløya's Middagstinden now has a precedent.
+
 ## Network
 
 Everything is public and unauthenticated:

@@ -2074,5 +2074,80 @@
    "figure": "2,56 km ute",
    "how": "treeline_scan i guide_facts.py: siste skogsverteks langs linja, med 600 m grunn og 150 m høgd utan skog som stoppkrav."
   }
+ ],
+ "snotinden": [
+  {
+   "what": "Sørvestsektoren (der Vestsiden kjem opp)",
+   "figure": "15,8° i snitt over 500 m — den slakaste sektoren på toppen",
+   "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+  },
+  {
+   "what": "Nord- til søraustsida",
+   "figure": "31,3–41,2° i snitt med 54–63° i dei fyrste 60-metersvindauga frå varden — Bananene, Nordøstrenna og Østbratta heng i desse kantane",
+   "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+  },
+  {
+   "what": "Skoggrensa langs linja",
+   "figure": "4,27 km ute",
+   "how": "treeline_scan i guide_facts.py: siste skogsverteks langs linja, med 600 m grunn og 150 m høgd utan skog som stoppkrav."
+  }
+ ],
+ "stortinden-rolla": [
+  {
+   "what": "Nordaustsida (Drangen)",
+   "figure": "46,6° i snitt med 62,6° som brattaste vindauge 10–70 m ute — kilden si «over 50 grader i starten» står seg",
+   "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+  },
+  {
+   "what": "Søraust- og nordvestsektoren",
+   "figure": "24,1° og 23,3° i snitt — dei slakaste kantane; renna i vest måler 39,9° i snitt",
+   "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+  },
+  {
+   "what": "Skoggrensa langs linja",
+   "figure": "5,67 km ute",
+   "how": "treeline_scan i guide_facts.py: siste skogsverteks langs linja, med 600 m grunn og 150 m høgd utan skog som stoppkrav."
+  }
+ ],
+ "reinspalen": [
+  {
+   "what": "Toppryggen rundt",
+   "figure": "alle kantar 18,9–39,5° i snitt, med 60,5° (S) og 64,1° (SØ) i dei fyrste vindauga — den eksponerte traversen har vegg på begge sider",
+   "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+  },
+  {
+   "what": "Skoggrensa langs linja",
+   "figure": "2,31 km ute",
+   "how": "treeline_scan i guide_facts.py: siste skogsverteks langs linja, med 600 m grunn og 150 m høgd utan skog som stoppkrav."
+  }
+ ],
+ "snotindan": [
+  {
+   "what": "Nordsektoren (frå skaret)",
+   "figure": "13,6° i snitt over 500 m — vegen linja kjem",
+   "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+  },
+  {
+   "what": "Sør- og austsida",
+   "figure": "39,1° og 38,6° i snitt med vindauge på 59,7° og 52,8° — topphenget kilden gir 30–40 grader",
+   "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+  },
+  {
+   "what": "Skoggrensa langs linja",
+   "figure": "1,3 km ute",
+   "how": "treeline_scan i guide_facts.py: siste skogsverteks langs linja, med 600 m grunn og 150 m høgd utan skog som stoppkrav."
+  }
+ ],
+ "storhornet-kvafjord": [
+  {
+   "what": "Alle kantar ved toppen",
+   "figure": "6,1–17,8° i snitt over 500 m, brattaste 60-metersvindauge 26,8° — ein topp utan bratt side; det bratte i turen er Vikelandselva-sidene lenger nede, som løypa ikkje går i",
+   "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+  },
+  {
+   "what": "Skoggrensa langs linja",
+   "figure": "6,11 km ute",
+   "how": "treeline_scan i guide_facts.py: siste skogsverteks langs linja, med 600 m grunn og 150 m høgd utan skog som stoppkrav."
+  }
  ]
 }

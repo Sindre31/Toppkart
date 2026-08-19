@@ -1134,5 +1134,45 @@
     "summit_dtm": 1318.5,
     "claims": 1318,
     "stored_off_km": 0.2
+  },
+  "snotinden": {
+    "name": "Snøtinden",
+    "lat": 68.83669,
+    "lng": 17.30588,
+    "summit_dtm": 1214.8,
+    "claims": 1215,
+    "stored_off_km": 0.01
+  },
+  "stortinden-rolla": {
+    "name": "Stortinden",
+    "lat": 68.79234,
+    "lng": 17.03681,
+    "summit_dtm": 1020.0,
+    "claims": 1021,
+    "stored_off_km": 0.0
+  },
+  "reinspalen": {
+    "name": "Reinspælen",
+    "lat": 68.59341,
+    "lng": 15.69923,
+    "summit_dtm": 1117.4,
+    "claims": 1118,
+    "stored_off_km": 0.02
+  },
+  "snotindan": {
+    "name": "Snytindan",
+    "lat": 68.54343,
+    "lng": 15.61609,
+    "summit_dtm": 996.2,
+    "claims": 996,
+    "stored_off_km": 0.04
+  },
+  "storhornet-kvafjord": {
+    "name": "Storhornet",
+    "lat": 68.8246,
+    "lng": 16.21309,
+    "summit_dtm": 722.2,
+    "claims": 722,
+    "stored_off_km": 0.0
   }
 }

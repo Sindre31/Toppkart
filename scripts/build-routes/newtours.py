@@ -159,4 +159,10 @@ NEW_TOURS = {
     "beisfjordtotta": ("Beisfjordtøtta", "Narvik"),
     "spanstinden": ("Spanstinden", "Narvik"),
     "gangnesaksla": ("Gangnesaksla", "Narvik"),
+    # — Sør-Troms-runden: Kvæfjord og Ibestad, Fri Flyts Harstad-seksjon. —
+    "snotinden": ("Snøtinden", "Harstad"),
+    "stortinden-rolla": ("Stortinden på Rolla", "Harstad"),
+    "reinspalen": ("Reinspælen", "Harstad"),
+    "snotindan": ("Snøtindan", "Harstad"),
+    "storhornet-kvafjord": ("Storhornet i Kvæfjord", "Harstad"),
 }
