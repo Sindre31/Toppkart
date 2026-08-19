@@ -146,4 +146,10 @@ NEW_TOURS = {
     "gabrielfjellet": ("Gabrielfjellet", "Troms"),
     "fagerfjellet": ("Fagerfjellet", "Troms"),
     "store-skalltinden": ("Store Skalltinden", "Troms"),
+    # — Lofoten-runden: fem på Austvågøya og Vestvågøy. —
+    "justadtinden": ("Justadtinden", "Lofoten"),
+    "rundfjellet": ("Rundfjellet", "Lofoten"),
+    "torskmannen": ("Torskmannen", "Lofoten"),
+    "pilan": ("Pilan", "Lofoten"),
+    "kleppstadheia": ("Kleppstadheia", "Lofoten"),
 }

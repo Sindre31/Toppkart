@@ -3897,6 +3897,58 @@ waits for a naming decision. The Lyngen heavyweights the index leads with —
 Istinden, Store Kjostinden — were researched in earlier rounds and rejected on
 steepness that belongs to a different product; those records stand.
 
+## The Lofoten round
+
+Five on Austvågøya and Vestvågøy from Fri Flyt's Lofoten index — an older page
+format than the KAST-classified regions: most tours carry no KAST, no season
+and no GPS point, so the register, the terrain model and the second sources
+carry more of the verification than usual, and every season on these cards is
+editorial from the neighbouring tours, said out loud in each record. All five
+sit in Varsom's **Lofoten og Vesterålen** A-region, queried per summit.
+
+| tour | start | summit | gain | km | steepest 100 m band | steepest 30 m | grade |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Rundfjellet | 6 | 803 | 890 | 5.3 | 18.4° | 31.2° | 2 |
+| Pilan | 5 | 826 | 847 | 4.2 | 21.9° | 39.4° | 3 |
+| Torskmannen | 5 | 755 | 754 | 3.0 | 21.6° | 28.1° | 3 |
+| Justadtinden | 14 | 736 | 733 | 2.9 | 22.6° | 29.8° | 2 |
+| Kleppstadheia | 16 | 534 | 525 | 2.2 | 20.9° | 32.9° | 1 |
+
+### What the checks caught
+
+**Rundfjellet could not be routed from its own car park, and the reason is a
+bridge.** The parking at Vatterfjordpollen sits east of the tidal strait the
+E10 crosses on a small bridge; the DTM records the strait as sea, sea is
+impassable in the cost model, and the bridge does not exist in a terrain
+model. Two shore waypoints were not enough — the router failed twice — so the
+drawn line starts on the west side of the bridge and the guide carries the
+walk across in prose. A line can only start where the terrain model has
+ground.
+
+**Pilan was researched as grade 2 on Fri Flyt's KAST 1 and ships as grade 3.**
+The summit cone measures 39.4° in its steepest 30 m window, between 753 and
+786 moh, and the flank probes around the cone (20.9–46.5° mean by sector) say
+the step is terrain, not routing. The measurement is the check for the grade —
+the Ranten rule — and the guide tells the reader exactly where the step sits
+and how to read it.
+
+**Vågan has two registered Torskmannen.** The one the source describes
+resolves 755.2 against a published 755 at the head of Vestpollen; the namesake
+6 km southwest reads 717.6. The kommune could not separate them — the `near`
+coordinate did.
+
+**Justadtinden has no treeline at all.** The terrain classes along the line
+hold no continuous forest from the farm to the cairn — `treeline_scan`
+returned nothing, the first tour outside the alpine spring rounds to do so —
+and the guide says the whole tour reads from the car instead of quoting a
+forest limit that does not exist.
+
+**Kleppstadheia's steep warning pointed one way; the summit measures the
+other.** Fri Flyt warns about steep ground along the south side of the ridge —
+true lower down — while at the summit the north, northeast and east sides are
+the edges (34.6–37.9° mean, windows to 55.9) and south is a 4.0° flat. The
+guide carries both, each at the elevation it belongs to.
+
 ## Network
 
 Everything is public and unauthenticated:

@@ -278,6 +278,16 @@ export const TOUR_TEASER_EN: Record<string, string> = {
     "950 metres of ascent from the school at Fagernes: farmland, the forest toward point 459 and the hollow east to the cairn at 871 where most people turn — the summit lies a rolling stretch further in.",
   "store-skalltinden":
     "980 metres of ascent from the sea at Glimbukta: up past Skallvatnet at 320, the undulating ridge west — and the last 800 metres toward the summit with steep ground on both sides.",
+  justadtinden:
+    "730 metres of ascent from the Justad farm on the fv. 815: the hillside, the ridge over Skjærheia and the playful summit ground — the highest on Vestvågøy's east side, with Vågakallen and Henningsvær below.",
+  rundfjellet:
+    "890 metres of ascent from the sea at Vatterfjordpollen: along the north side of the poll, onto the south ridge and the ridge-top all the way — Svolvær's nearest classic, with variants on every side.",
+  torskmannen:
+    "750 metres of ascent from the Kvitfossen power station in Vestpollen: the valley where the snow lies sheltered, the lake in the hollow and the col right of the summit — and the ridge for the last stretch.",
+  pilan:
+    "850 metres of ascent from Laupstad on the north side of Austvågøya: the valley to the lake at 289, toward Morfjordskaret and the broad flank — with a measured 39-degree step in the summit cone.",
+  kleppstadheia:
+    "520 metres of ascent from Kleppstadveien south of the Gimsøy bridge: the ridge toward point 156 and the gentle, broad field to the top — the tour the source itself uses to practise track-setting.",
 
 };
 
@@ -1235,6 +1245,43 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       caption: "5.83 km and 1129 m of climbing from the quarry in Forselvveien; the steepest hundred metres sit between 500 and 600 m.",
     },
   },
+  pilan: {
+    intro:
+      "847 metres of ascent over 4.16 km from Laupstad on Austvågøya's quiet north side, with the view into Vesterålen from the cairn. Fri Flyt rates it KAST 1 – Simple with the steepest point under 30 degrees, and most of the line keeps that — steepest 100 m band 21.9 degrees. But the summit cone measures 39.4 degrees in its steepest 30 m window, between 753 and 786 m, and the measurement is the check for the grade: the card carries 3, not the source's number. The ridge gives back 26 vertical metres, and the tour runs from the fjord.",
+    ascent: [
+      "From Laupstad on the county road — 5 m, past the houses and up the valley heading west. The forest ends at 233 m after 1.66 km, and the valley takes you to the lake at 289: the band from 100 to 200 m measures 14.4 degrees, and from 200 to 300 only 8.8.",
+      "From the lake you continue right toward Morfjordskaret — the register's Morfjordskaret lies in Hadsel, because the municipal boundary runs over this mountain — to the broad flank rising toward Pilan. The band from 400 to 500 measures 18.9 degrees, then it flattens: 9.6 and 7.5 over the next two hundred.",
+      "The summit cone is the serious part: the band from 700 to 800 m measures 21.9 degrees over 274 metres of ground, and the steepest sustained stretch — 39.4 degrees between 753 and 786 — sits here. The soundings around the cone say the step is terrain, not routing: south and southwest measure 22.7 and 20.9 degrees mean, north and west 42.3 and 46.5. The cairn at 826; the register reads 826.0 against a published 828 — another narrow top where the laser scan reads a couple of metres low. Sautinden is the twin summit the same tour can combine.",
+    ],
+    descent: [
+      "Down the same way — the broad flank to the south-east is big, readable skiing, and from the flat below the cone it is gentle running back to the lake and the valley. Take the step in the cone where you climbed it, while the snow is still what you read on the way up.",
+      "Hold the flank: the north side toward Morfjorddalen is the source's own hazard, and it measures 42.3 degrees mean with 57.7 as the steepest window. West is the same story — 46.5 mean. The broad, kind terrain has edges, and they are all on the other side.",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "KAST 1 – Simple by Fri Flyt, steepest point under 30 degrees — true for most of the line, but not for the summit cone: 39.4 degrees in the steepest 30 m window between 753 and 786 m. The card carries grade 3 on that measurement. Below 700 this is one of the kindest lines of the round.",
+      },
+      {
+        title: "The cone",
+        body: "The step sits directly below the summit, where the snow is either wind-loaded or scoured. Loaded, it is a small steep slope with a runout onto the flat; scoured, it is a few hard moves. Either reads in ten seconds from the flat below — do that before you are standing in it.",
+      },
+      {
+        title: "Toward Morfjorddalen",
+        body: "Steeper terrain down toward Morfjorddalen, says the source, and the measurement gives 42.3 degrees mean to the north. From the cairn in flat light the flank you climbed and the north side are easy to confuse for the first metres — the direction down is south-east, worth fixing before the fog takes the view.",
+      },
+      {
+        title: "Before you go",
+        body: "Pilan lies in the Lofoten og Vesterålen forecast region, an A-region with a daily avalanche bulletin through the season — check varsom.no. Fri Flyt gives no season; the feb–apr on the card is editorial from the neighbouring tours. Carry transceiver, probe and shovel.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "5 m",
+      endLabel: "826 m",
+      distanceLabel: "4.2 km",
+      caption: "847 metres of ascent and 4.16 km from Laupstad via the lake at 289 and Morfjordskaret, with the treeline at 233 m and the steepest ground — 39.4 degrees between 753 and 786 m — in the summit cone.",
+    },
+  },
   geitgaljen: {
     intro:
       "1071 metres of climbing from the fjord in 3.80 km, and the entire line lies in avalanche terrain. Topptursentralen grades the tour KAST 4 — extreme — and the top 157 metres average 42 degrees and require crampons and an axe.",
@@ -1268,6 +1315,113 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       endLabel: "1085 m",
       distanceLabel: "3.8 km",
       caption: "1071 metres of climbing and 3.82 km from Liland; the gully at 250–360 m is 35 degrees, and the top 174 metres 42.",
+    },
+  },
+  torskmannen: {
+    intro:
+      "754 metres of ascent over 3.00 km from the Kvitfossen power station in Vestpollen — a local favourite where the snow often lies sheltered in the valley when everywhere else is wind-hammered. Fri Flyt rates it KAST 2 – Challenging with a steepest point of 35 degrees; the line up the valley and out through the col right of the summit measures 21.6 degrees in its steepest 100 m band and 28.1 in its steepest sustained stretch, which is the last metres to the cairn. The top is often wind-scoured and hard.",
+    ascent: [
+      "From the power station on the E10 — OSM maps Kvitfossen kraftverk on Midnattsolveien, with a bus stop by the road, and the fjord reads 5 m. You aim northwest toward the summit and cross the moor to the valley floor: the band from 0 to 100 m measures 5.5 degrees over the first kilometre, and the forest ends at 262 m after 1.54 km.",
+      "As early as possible into the valley and up its left side toward the lake in the hollow — the probe point by the line reads 352.9 m where the source's «lite vann» lies. The bands are even: 19.6 degrees from 100 to 200, 20.4 from 300 to 400, 19.4 from 400 to 500 — the valley is a staircase, and it is why the snow stays here.",
+      "From the lake you cross toward the col right of the summit — 568 m where the line takes it — and follow the ridge the last stretch. The band from 700 to 800 is the tour's steepest, 21.6 degrees, with the steepest sustained stretch at 28.1 between 721 and 745 m. The cairn at 755; the register holds two Torskmannen in Vågan, and this one — the summit search resolves 755.2 — is the one the source describes; the namesake further southwest reads 717.6.",
+    ],
+    descent: [
+      "The normal descent is the valley back — your own skin track, says the source. The descent aspect is southeast: the flank measures 30.8 degrees mean with 49.2 as the steepest window 40 to 100 metres out, so the first turns off the ridge are taken with some thought about where you drop in.",
+      "The southwest and west sides are another world: 40.7 and 40.0 degrees mean with windows of 67.4 and 62.7 directly below the summit. The steeper descent options off the ridge sit in avalanche terrain, says the source — they are there for days that can carry them.",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "KAST 2 – Challenging by Fri Flyt, steepest point 35 degrees — and the line measures 28.1 at its steepest, because it takes the col and the ridge instead of the flank direct. The valley is sheltered from the wind, which also means it collects the snow the wind moves: read the loading in the slopes above you on the way up.",
+      },
+      {
+        title: "The summit",
+        body: "The last metres to the cairn are often wind-scoured and hard — bare rock and hardpack, a slipping problem rather than an avalanche problem. The northeast sector the line arrives from is the gentle one (12.7 degrees mean); everything west and south of the cairn falls 40 degrees or more on average.",
+      },
+      {
+        title: "The descent variants",
+        body: "Steeper lines drop straight off the ridge — the source calls it avalanche terrain, and the southeast flank below the summit has a 49.2-degree window. The normal tour has no business there; the variants belong to stability you have measured, not hoped for.",
+      },
+      {
+        title: "Before you go",
+        body: "Torskmannen lies in the Lofoten og Vesterålen forecast region, an A-region with a daily avalanche bulletin through the season — check varsom.no. Fri Flyt gives no season; the jan–apr on the card is editorial from the neighbouring tours. Carry transceiver, probe and shovel.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "5 m",
+      endLabel: "755 m",
+      distanceLabel: "3.0 km",
+      caption: "754 metres of ascent and 3.00 km from Kvitfossen up the valley and the col right of the summit, with the treeline at 262 m and the steepest ground — 28.1 degrees between 721 and 745 m — on the ridge to the cairn.",
+    },
+  },
+  rundfjellet: {
+    intro:
+      "890 metres of ascent over 5.28 km from the sea at Vatterfjordpollen to Svolvær's nearest classic — a simple summit with many variants according to utemagasinet, where the line along the ridge is the point: stay on top of it, says Fri Flyt, because the surrounding terrain is avalanche-prone, and the measurement agrees — the south sector the ridge uses measures 13.7 degrees mean while every other side of the summit has windows of 40 to 65. The ridge gives back 93 vertical metres along the way, which is why the card carries 890 where the source counts 800.",
+    ascent: [
+      "From the car park at Vatterfjordpollen on the E10, ten kilometres from Svolvær toward Fiskebøl. The line on the map begins on the west side of the small bridge over the tidal stream — the terrain model records the strait as sea and the bridge does not exist in it, so the walk across from the car park lives here rather than in the geometry. Then along the right side of the poll and in across the moor to the mountain's foot: the band from 0 to 100 m measures 3.0 degrees over nearly two kilometres, and the forest ends already at 94 m after 1.93 km.",
+      "From the foot up onto the south ridge — the band from 100 to 200 m is the tour's steepest, 18.4 degrees over 271 metres of ground — then north along the ridge until it turns west. The ridge undulates: 93 vertical metres are given back, and the bands sit at 10 to 12.5 degrees — even, readable skinning with Austnesfjorden on one side and the Higravstindan skyline ahead.",
+      "Where the ridge turns west — 604 m where the line takes the bend — the last part waits: 15.1 degrees in the band from 700 to 800, with the steepest sustained stretch, 31.2 degrees, between 624 and 644 m. The cairn at 803; the register and the summit search resolve 802.6.",
+    ],
+    descent: [
+      "The normal descent is the ridge back — the south sector measures 13.7 degrees mean over 500 metres, and the many variants are why this tour bears repeating. Hold back where the ridge ends: the descent toward Vatterfjordpollen can be avalanche-prone, steepest if you cut left off the ridge early on the south side, says the source.",
+      "From Kudalen on the north side there is often hard ice near the end — the source asks for crampons and ice axe if you go that way. The northwest side has a 60 m window of 64.8 degrees; not a side to improvise on.",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "No KAST from Fri Flyt (older page format), but his rule is precise: stay on top of the ridge, because the surrounding terrain is avalanche-prone. The measurement says the same — the south sector 13.7 degrees mean, every other side with windows of 40 to 65.",
+      },
+      {
+        title: "The descent toward the poll",
+        body: "The source's own hazard: steepest where you cut left off the ridge early on the south side. The south side's steepest window sits 350 to 410 metres out from the summit and measures 38.2 degrees — that is where the tempting shortcut leads. The ridge all the way down costs ten minutes and nothing else.",
+      },
+      {
+        title: "The ice from Kudalen",
+        body: "The north side often carries hard ice near the top — crampons and ice axe if you go that way, says the source. It is variant terrain, not the normal route, and it is here because anyone reading this in Svolvær will hear about it.",
+      },
+      {
+        title: "Before you go",
+        body: "Rundfjellet lies in the Lofoten og Vesterålen forecast region, an A-region with a daily avalanche bulletin through the season — check varsom.no. Fri Flyt gives no season; the jan–apr on the card is editorial from the neighbouring tours. Carry transceiver, probe and shovel.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "6 m",
+      endLabel: "803 m",
+      distanceLabel: "5.3 km",
+      caption: "890 metres of ascent and 5.28 km from Vatterfjordpollen up the south ridge and along the ridge-top, with the treeline at 94 m and the steepest ground — 31.2 degrees between 624 and 644 m — where the ridge turns west.",
+    },
+  },
+  kleppstadheia: {
+    intro:
+      "525 metres of ascent over 2.19 km from Kleppstadveien south of the Gimsøy bridge — the tour Fri Flyt itself uses to practise track-setting: «using the terrain to set a sensible, good track.» The gentle, broad field toward the summit keeps that promise — 20.9 degrees in the steepest 100 m band — and the steepest sustained stretch, 32.9 degrees between 111 and 136 m, sits down in the forest step. From the cairn you see Gimsøya, Vestfjorden and Himmeltindan to the west.",
+    ascent: [
+      "From the parking along Kleppstadveien on the south side before the Gimsøy bridge — 16 m, with the register's Kleppstad a couple of hundred metres away. You set the track up the ridge toward point 156: the tour's steepest stretch sits here, 32.9 degrees between 111 and 136 m, in the forest — the band from 100 to 200 measures 20.2 degrees, and the forest ends at 232 m after 1.17 km.",
+      "Above the forest the field owns the tour: 20.9 degrees from 200 to 300 m, 19.1 from 300 to 400, then it eases toward the top — 7.9 degrees in the last band. Broad ridge, track wherever you choose, and the terrain as the teacher: every knoll and hollow is a decision about where the track should lie.",
+      "The cairn at 534 — Fri Flyt's published GPS point is the register's Kleppstadheia to the metre, and the summit search resolves 533.9. The prominence is modest; the view is not.",
+    ],
+    descent: [
+      "Down the same way, with the track-craft in reverse: the field takes anything, and the forest step at the bottom is the one place the turns have to sit. Southwest is the descent aspect, and that sector measures 12.8 degrees mean.",
+      "The source's hazard is the steep ground along the south side of the ridge lower down — and at the summit it is the north, northeast and east sides that are the edges: 34.6 to 37.9 degrees mean with windows of 45 to 56. The normal track on the ridge and the field stays clear of all of it.",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "Simple by Fri Flyt, steepest point under 30 degrees on the field — the line's 32.9-degree step sits in the forest at the bottom, short and readable. This is the tour for days when the bulletin advises against steep terrain, and the practice tour for every other day.",
+      },
+      {
+        title: "The edges",
+        body: "The source points at steep ground along the ridge's south side; the measurement at the summit adds that the north, northeast and east sides fall 34.6 to 37.9 degrees mean with windows up to 56. The field is roomy — use the room, and keep the edges at arm's length in flat light.",
+      },
+      {
+        title: "Before you go",
+        body: "Kleppstadheia lies in the Lofoten og Vesterålen forecast region, an A-region with a daily avalanche bulletin through the season — check varsom.no. Fri Flyt gives no season; the jan–apr on the card is editorial from the neighbouring tours. Carry transceiver, probe and shovel — on the practice tour too.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "16 m",
+      endLabel: "534 m",
+      distanceLabel: "2.2 km",
+      caption: "525 metres of ascent and 2.19 km from Kleppstadveien up the ridge toward point 156 and the broad field, with the treeline at 232 m and the steepest ground — 32.9 degrees between 111 and 136 m — down in the forest.",
     },
   },
   "varden-smaatindan": {
@@ -1343,6 +1497,43 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       endLabel: "956 m",
       distanceLabel: "3.9 km",
       caption: "988 m of climbing from the shore at Haukland over 3.89 km; the steep ground sits between 500 and 600 m.",
+    },
+  },
+  justadtinden: {
+    intro:
+      "733 metres of ascent over 2.88 km from the Justad farm to the highest summit on Vestvågøy's east side — gentle, playful ski terrain by the sources, with Vågakallen and Henningsvær below the cairn. No hundred-metre band measures more than 22.6 degrees, and the steepest sustained stretch is 29.8. Fri Flyt's Lofoten pages are older and carry no KAST; what they carry is the hazards, and they are measurable: the cornices toward the northeast hang over a side falling 41 degrees mean.",
+    ascent: [
+      "From the Justad farm on the fv. 815 — 14 m on farmland, parking along the road as the source says. The hillside above the farm is open practically from the shore: the terrain classes along the line hold no continuous forest at all, so the whole tour reads from the car. The band from 0 to 100 m measures 11.7 degrees.",
+      "The line follows the ridge formation north over Skjærheia: the band from 300 to 400 m is the tour's steepest, 22.6 degrees over 250 metres of ground, with the steepest sustained stretch — 29.8 degrees — between 363 and 389 m. Above 400 it eases to 11.0 before the upper bands settle at 17–20 degrees.",
+      "The summit ground is playful: small features and optional lines up to the cairn at 736 — the register reads 735.7 where Fri Flyt and the map write 738, a narrow top where the laser scan reads a couple of metres under the published figure. Stay west of the edge: the northeast side below the cairn falls 41.0 degrees mean with 64.9 degrees as the steepest 60 m window only 10 to 70 metres out.",
+    ],
+    descent: [
+      "The normal descent is your own track, and the west side is the gentlest sector — 21.7 degrees mean with 30.1 as the steepest window. The Oktoberflanken mid-ridge is the source's variant for more fall per turn.",
+      "The south descent is where the source says the bigger avalanches run, and the measurement agrees: 34.8 degrees mean with 50.0 degrees as the steepest window 110 to 170 metres out. It belongs to stable days — and the cornices toward the northeast make that edge something you keep your distance from in any conditions.",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "No KAST from Fri Flyt — the Lofoten pages predate the classification — but the line's own numbers are kind: 22.6 degrees in the steepest band, 29.8 in the steepest stretch. The surrounding terrain is what needs your head, and it is why the card carries grade 2.",
+      },
+      {
+        title: "The cornices to the northeast",
+        body: "The source's own hazard: cornices toward the steeper ground to the northeast. The northeast side falls 41.0 degrees mean with 64.9 as the steepest window directly below the cairn — a cornice that releases there has a wall under it. In flat light the track runs a few turns' width west of the edge.",
+      },
+      {
+        title: "The south side",
+        body: "The bigger avalanches run on the south descent, says the source — 34.8 degrees mean, steepest window 50.0. After loading from north and west the south side is the lee — and then the skin track along the ridge is the only line the tour needs.",
+      },
+      {
+        title: "Before you go",
+        body: "Justadtinden lies in the Lofoten og Vesterålen forecast region, an A-region with a daily avalanche bulletin through the season — check varsom.no. Fri Flyt gives no season; the jan–apr on the card is editorial, taken from the neighbouring tours, and it says so here. Carry transceiver, probe and shovel.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "14 m",
+      endLabel: "736 m",
+      distanceLabel: "2.9 km",
+      caption: "733 metres of ascent and 2.88 km from Justad over Skjærheia, with no forest to speak of along the line, and the steepest ground — 29.8 degrees between 363 and 389 m — mid-ridge.",
     },
   },
   stornappstinden: {
