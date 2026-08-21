@@ -165,4 +165,10 @@ NEW_TOURS = {
     "reinspalen": ("Reinspælen", "Harstad"),
     "snotindan": ("Snøtindan", "Harstad"),
     "storhornet-kvafjord": ("Storhornet i Kvæfjord", "Harstad"),
+    # — Tjeldsund-runden: fem rundt Tjeldsundet frå Fri Flyts Tjeldsund-kapittel. —
+    "satertinden": ("Sætertinden", "Harstad"),
+    "haukebotinden": ("Haukebøtinden", "Harstad"),
+    "kongsviktinden": ("Kongsviktinden", "Harstad"),
+    "jakobstinden": ("Jakobstinden", "Harstad"),
+    "taraldsviktinden": ("Taraldsviktinden", "Harstad"),
 }

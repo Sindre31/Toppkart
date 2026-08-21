@@ -285,6 +285,28 @@
   "season": "feb–jun",
   "hasGuide": true
  },
+ "jakobstinden": {
+  "name": "Jakobstinden",
+  "region": "Harstad",
+  "summitM": 976,
+  "verticalM": 1060,
+  "duration": "5–7 t",
+  "grade": 3,
+  "aspect": "SØ",
+  "season": "jan–apr",
+  "hasGuide": false
+ },
+ "haukebotinden": {
+  "name": "Haukebøtinden",
+  "region": "Harstad",
+  "summitM": 905,
+  "verticalM": 860,
+  "duration": "4–6 t",
+  "grade": 2,
+  "aspect": "Ø",
+  "season": "des–apr",
+  "hasGuide": false
+ },
  "reinspalen": {
   "name": "Reinspælen",
   "region": "Harstad",
@@ -295,6 +317,39 @@
   "aspect": "S",
   "season": "jan–apr",
   "hasGuide": true
+ },
+ "satertinden": {
+  "name": "Sætertinden",
+  "region": "Harstad",
+  "summitM": 1095,
+  "verticalM": 1110,
+  "duration": "5–7 t",
+  "grade": 2,
+  "aspect": "Ø",
+  "season": "feb–apr",
+  "hasGuide": false
+ },
+ "kongsviktinden": {
+  "name": "Kongsviktinden",
+  "region": "Harstad",
+  "summitM": 980,
+  "verticalM": 1090,
+  "duration": "6–8 t",
+  "grade": 3,
+  "aspect": "N",
+  "season": "jan–apr",
+  "hasGuide": false
+ },
+ "taraldsviktinden": {
+  "name": "Taraldsviktinden",
+  "region": "Harstad",
+  "summitM": 776,
+  "verticalM": 780,
+  "duration": "3–5 t",
+  "grade": 3,
+  "aspect": "N",
+  "season": "feb–apr",
+  "hasGuide": false
  },
  "snotindan": {
   "name": "Snøtindan",

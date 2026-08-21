@@ -118,10 +118,10 @@ components/
 lib/
   config.ts              PRICE, TRIAL_DAYS, SITE, GRADE_COLORS, env, is*Configured
   types.ts               Tour, TourGuide, Viewer, Subscription, Invoice
-  tours.ts               The 135 tours, REGIONS, getTour(), routesFor(), routeById(),
+  tours.ts               The 140 tours, REGIONS, getTour(), routesFor(), routeById(),
                          routeFor(), routeProfile()
   routes.ts              Generated ascent routes per tour — see scripts/build-routes/
-  guides.ts              Editorial guide content — all 135 tours, generated
+  guides.ts              Editorial guide content — all 140 tours, generated
   i18n/                  Every user-visible string, no/en. content.ts holds the guides
   access.ts              getViewer() / grantsAccess() — server-only access gate
   stripe.ts              Stripe client, null in demo mode
@@ -134,7 +134,7 @@ lib/
   *.test.ts              Unit tests, run by `npm test` — see "Checks" below
 supabase/
   schema.sql             Tables, policies, RLS
-  seed.sql               The 135 tours and all 135 guides
+  seed.sql               The 140 tours and all 140 guides
 design-reference/        The HTML prototypes and the product/design handoff. Read-only ground
                          truth; not shipped.
 docs/
@@ -368,7 +368,7 @@ content and data quality that has to be settled before the site is sold to anyon
   22 of the Sunnmøre and Vestland rounds, the 7 of the Trondheim round, Kjerag, Møysalen and
   Sæbyggjenuten, the 4 of the popularity round, the 8 of the alpine-resort round and, last, the
   14 newest — the gap every previous round's write-up had to name. That read is written up in
-  `scripts/build-routes/README.md`. The thirty of the six newest rounds — Senja/Helgeland, Romsdal, Troms, Lofoten, Narvik and Sør-Troms — are the current gap. It found four fabricated quotations, seven dropped or
+  `scripts/build-routes/README.md`. The thirty-five of the seven newest rounds — Senja/Helgeland, Romsdal, Troms, Lofoten, Narvik, Sør-Troms and Tjeldsund — are the current gap. It found four fabricated quotations, seven dropped or
   misplaced source warnings, four superlatives stated in the wrong place on the mountain, three
   bearings pointing the wrong way in fog, a fjord depth measured against water 8 km away, and a
   teaser naming the flank its own guide says not to ski — all fixed, in both languages.

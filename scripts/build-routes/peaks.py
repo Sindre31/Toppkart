@@ -321,4 +321,16 @@ PEAKS = [
     ("reinspalen", "Reinspælen", ["Kvæfjord"], 1118, 68.59348, 15.69887),
     ("snotindan", "Snytindan", ["Kvæfjord"], 996, 68.54323, 15.61677),
     ("storhornet-kvafjord", "Storhornet", ["Kvæfjord"], 722, 68.82460, 16.21305),
+    #
+    # — the Tjeldsund round: five from Fri Flyt's Tjeldsund chapter, on both
+    #   sides of Tjeldsundet where Strandtinden has stood alone since the
+    #   backlog round. Two KAST 1 ridges (Sætertinden, Haukebøtinden) and the
+    #   three KAST 2 summits around Kongsvikdalen and Fiskefjorden. Jakobstinden
+    #   sits on the Kvæfjord/Tjeldsund border; the rest answer to Harstad and
+    #   Tjeldsund kommune. —
+    ("satertinden", "Sætertinden", ["Harstad - Hárstták", "Harstad"], 1095, 68.58672, 16.36231),
+    ("haukebotinden", "Haukebøtinden", ["Harstad - Hárstták", "Harstad"], 906, 68.59658, 16.39742),
+    ("kongsviktinden", "Kongsviktinden", ["Dielddanuorri - Tjeldsund", "Tjeldsund"], 977, 68.58263, 16.26399),
+    ("jakobstinden", "Jakobstinden", ["Kvæfjord", "Dielddanuorri - Tjeldsund"], 975, 68.61630, 16.18078),
+    ("taraldsviktinden", "Taraldsviktinden", ["Dielddanuorri - Tjeldsund", "Tjeldsund"], 777, 68.54904, 16.16311),
 ]

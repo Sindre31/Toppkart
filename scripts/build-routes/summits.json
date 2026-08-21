@@ -1174,5 +1174,45 @@
     "summit_dtm": 722.2,
     "claims": 722,
     "stored_off_km": 0.0
+  },
+  "satertinden": {
+    "name": "Sætertinden",
+    "lat": 68.58656,
+    "lng": 16.36195,
+    "summit_dtm": 1094.9,
+    "claims": 1095,
+    "stored_off_km": 0.02
+  },
+  "haukebotinden": {
+    "name": "Haukebøtinden",
+    "lat": 68.59662,
+    "lng": 16.39746,
+    "summit_dtm": 905.1,
+    "claims": 906,
+    "stored_off_km": 0.0
+  },
+  "kongsviktinden": {
+    "name": "Kongsviktinden",
+    "lat": 68.58291,
+    "lng": 16.26536,
+    "summit_dtm": 980.1,
+    "claims": 977,
+    "stored_off_km": 0.06
+  },
+  "jakobstinden": {
+    "name": "Jakobstinden",
+    "lat": 68.61628,
+    "lng": 16.18072,
+    "summit_dtm": 976.0,
+    "claims": 975,
+    "stored_off_km": 0.0
+  },
+  "taraldsviktinden": {
+    "name": "Taraldsviktinden",
+    "lat": 68.55162,
+    "lng": 16.16806,
+    "summit_dtm": 775.8,
+    "claims": 777,
+    "stored_off_km": 0.35
   }
 }

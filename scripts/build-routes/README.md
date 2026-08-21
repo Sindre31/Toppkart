@@ -4049,6 +4049,75 @@ register's Storhornet in Kvæfjord collides with the Trollheimen tour already
 on the map, so the card carries the qualifier — the decision the Troms round
 deferred on Kvaløya's Middagstinden now has a precedent.
 
+## The Tjeldsund round
+
+Five from Fri Flyt's Tjeldsund chapter, on both sides of Tjeldsundet where
+Strandtinden has stood alone since the backlog round: Sætertinden and
+Haukebøtinden above the Sandtorg–Gausvik shore, Kongsviktinden and
+Jakobstinden sharing a trailhead in Kongsvikdalen, and Taraldsviktinden over
+Fiskefjorden. A different chapter from the Sør-Troms round's: two of the
+five are KAST 1 ridges — Sætertinden staked from 500 m with telephone poles
+above that, the app's first stakes-and-poles tour — and the three KAST 2
+summits carry ice axe and crampons on the source's own list, which is the
+Gråfjell rule again and grades them 3 against measured 2s.
+
+| tour | start | summit | gain | km | steepest 100 m band | steepest 30 m | grade |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Sætertinden | 15 | 1095 | 1113 | 6.1 | 21.2° | 26.9° | 2 |
+| Haukebøtinden | 46 | 905 | 863 | 4.4 | 18.0° | 24.8° | 2 |
+| Kongsviktinden | 25 | 980 | 1092 | 9.1 | 17.9° | 31.6° | 3 |
+| Jakobstinden | 25 | 976 | 1062 | 8.5 | 18.0° | 31.0° | 3 |
+| Taraldsviktinden | 5 | 776 | 779 | 4.5 | 19.0° | 22.9° | 3 |
+
+### What the checks caught
+
+**The water the OSM check could not see.** `check_ground.py` measured 0 m of
+mapped water under all five lines on the first solve — and the terrain-class
+samples in `guide_facts.py` still showed Elv and Innsjø under the two
+Kongsvikdalen tours, because the braided Kongsvikelva and the tarn at 324 m
+east of Sætran are in Kartverket's classes and not in OSM. Both corridors
+were re-solved with `avoidWater`. Kongsviktinden's took two re-pins beyond
+that: the nudge pass answered the tarn with a 1.2 km detour over a 465 m
+knoll that gave back 52 m, so the corridor was moved onto the south contour
+— and the first placement of «sør for tjernet» sat on a 318 m knoll of its
+own, so it moved 350 m east into the contour at 278. Final line: 1092 m
+gained, 137 given back across the rolling plateau, zero vertices on water.
+What remains under the measure is where Kongsvikdalveien crosses the braided
+river on its bridges, stated in the guides — the Spanstinden rule.
+
+**Overpass had to be re-mirrored before anything could be checked.** The
+three mirrors in the rotation are unreachable from this environment, and the
+first replacement tried — overpass.osm.ch — is a Switzerland-only extract
+that answers fast and empty, exactly the failure `check_ground.py`'s
+timestamp guard exists for (its `timestamp_osm_base` is a build number, not
+a date, and the guard rejects it). maps.mail.ru's Overpass carries the full
+planet with an ISO timestamp and current data, and now leads all three
+rotations.
+
+**The round splits across the forecast border, and not the way the map
+suggests.** Queried per summit as always: Sætertinden, Kongsviktinden,
+Jakobstinden and Taraldsviktinden answer to Lofoten og Vesterålen —
+Sætertinden with its feet in Troms — while Haukebøtinden, one Sagtind
+traverse from Sætertinden, answers to Sør-Troms alone. Both A-regions with
+daily bulletins; each guide names its own.
+
+**Sætertinden's published vertical is exact.** 1095 − 15 = 1080 is Fri
+Flyt's stated figure to the metre, and the routed line collects 1113 giving
+back 33 — the cleanest reconciliation in the round. Jakobstinden's 975 − 25
+= 950 forliker its published 960 the same way. No Oksen-class
+altitude-into-gain bug anywhere in this chapter.
+
+**Taraldsviktinden's summit walked 350 m off the register point.** The SSR
+representation point reads 773.9 m; the climb found 775.8 at
+68.55162/16.16806 against the published 777, and the 774 cairn the source
+mentions stands on the west side. The guide carries all three numbers.
+
+**Two burials on Sætertinden's north side, and the guide points at them.**
+The source records people dug out in 2017 and 2019, both on descents left
+(north) of the staked ridge. The flank probe puts the gentle sides N/NW/W
+and 60.1° in the south-east, where the expert couloirs live — the route is
+staked because it is the line, and the avalanche panel says exactly that.
+
 ## Network
 
 Everything is public and unauthenticated:

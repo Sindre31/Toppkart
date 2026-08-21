@@ -7310,5 +7310,287 @@
     "notes": "Fri Flyt: Enkelt. Ikkje gå opp i dei bratte fjellsidene langs Vikelandselva — skredterreng. Elles solfylt og skjerma, med Kvæfjordløypene preparert av Kvæfjordløyper-entusiastane."
    }
   ]
+ },
+ "satertinden": {
+  "routes": [
+   {
+    "id": "ostryggen",
+    "name": "Østryggen fra Årbogen",
+    "description": "Fra parkeringa ved Sandtorg idrettsanlegg langs traktorveien på sørsida av Årbogelva, sør for Årbogvatnet på land, og opp østryggen forbi nødbua til toppen",
+    "trailhead": {
+     "name": "Årbogen",
+     "lat": 68.5796,
+     "lng": 16.4898,
+     "elevation_m": 15.0,
+     "fullName": "Årbogen"
+    },
+    "waypoints": [
+     {
+      "name": "traktorveien sør for Årbogelva",
+      "lat": 68.581,
+      "lng": 16.472,
+      "elevation_m": 63.0
+     },
+     {
+      "name": "sør for Årbogvatnet",
+      "lat": 68.5862,
+      "lng": 16.439,
+      "elevation_m": 297.0
+     },
+     {
+      "name": "vest for vatnet",
+      "lat": 68.5872,
+      "lng": 16.433,
+      "elevation_m": 277.0
+     },
+     {
+      "name": "østryggen",
+      "lat": 68.5875,
+      "lng": 16.415,
+      "elevation_m": 522.0
+     },
+     {
+      "name": "ryggen ved nødbua",
+      "lat": 68.5878,
+      "lng": 16.395,
+      "elevation_m": 653.0
+     },
+     {
+      "name": "ryggen",
+      "lat": 68.5872,
+      "lng": 16.38,
+      "elevation_m": 785.0
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: KAST 1 – Enkelt på normalruta, men hold ryggen: ved nedkjøring til venstre (nord) er to personer gravd fram av skred (2017 og 2019). Vindutsett; små vasspeil i søkka om våren. Sørrenna og vestrennene er komplekse ekspertlinjer og ikkje denne ruta."
+   }
+  ]
+ },
+ "haukebotinden": {
+  "routes": [
+   {
+    "id": "ostsiden",
+    "name": "Østsiden fra Gausvik",
+    "description": "Fra parkeringa ved Gausvik kirke mot demningen, over elva og opp langs austsida av Heimetverrelva, gjennom grinda ved den store furua og det minst krevjande terrenget rett mot toppen",
+    "trailhead": {
+     "name": "Gausvik",
+     "lat": 68.61117,
+     "lng": 16.49228,
+     "elevation_m": 46.0,
+     "fullName": "Gausvik"
+    },
+    "waypoints": [
+     {
+      "name": "demningen",
+      "lat": 68.61073,
+      "lng": 16.48301,
+      "elevation_m": 65.0
+     },
+     {
+      "name": "austsida av Heimetverrelva",
+      "lat": 68.6068,
+      "lng": 16.466,
+      "elevation_m": 208.0
+     },
+     {
+      "name": "lia",
+      "lat": 68.604,
+      "lng": 16.448,
+      "elevation_m": 410.0
+     },
+     {
+      "name": "mot toppen",
+      "lat": 68.601,
+      "lng": 16.425,
+      "elevation_m": 613.0
+     },
+     {
+      "name": "toppflanken",
+      "lat": 68.599,
+      "lng": 16.41,
+      "elevation_m": 725.0
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: KAST 1 – Enkelt på austruta; unngå heng brattare enn 30 grader. Nordaustvarianten mot Storlægda held 30–45 grader og krev øks og stegjern; nordsida (35–50 grader, skavl, rappellfeste) er den mest krevjande. Sagtind-traversen mot Sætertinden er eksponert og krev øks, stegjern og tau."
+   }
+  ]
+ },
+ "kongsviktinden": {
+  "routes": [
+   {
+    "id": "nordsiden",
+    "name": "Nordsiden fra Kongsvikdalen",
+    "description": "Fra Y-krysset før bommen langs vegen innover Kongsvikdalen, østover via sommerstien ved Sætran og det slakeste terrenget mot den sørøstlige toppen",
+    "trailhead": {
+     "name": "Kongsvikdalen",
+     "lat": 68.5708,
+     "lng": 16.2365,
+     "elevation_m": 25.0,
+     "fullName": "Kongsvikdalen"
+    },
+    "waypoints": [
+     {
+      "name": "Kongsvikdalen",
+      "lat": 68.58251,
+      "lng": 16.20194,
+      "elevation_m": 57.0
+     },
+     {
+      "name": "Sætran",
+      "lat": 68.592,
+      "lng": 16.197,
+      "elevation_m": 57.0
+     },
+     {
+      "name": "sommerstien østover",
+      "lat": 68.5895,
+      "lng": 16.206,
+      "elevation_m": 186.0
+     },
+     {
+      "name": "lia søraustover",
+      "lat": 68.587,
+      "lng": 16.214,
+      "elevation_m": 282.0
+     },
+     {
+      "name": "sør for tjernet",
+      "lat": 68.5855,
+      "lng": 16.226,
+      "elevation_m": 278.0
+     },
+     {
+      "name": "senkninga",
+      "lat": 68.5856,
+      "lng": 16.236,
+      "elevation_m": 387.0
+     },
+     {
+      "name": "toppflanken",
+      "lat": 68.5845,
+      "lng": 16.25,
+      "elevation_m": 763.0
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: KAST 2 – Utfordrende. Alpinøks og stegjern — hard fokksnø og ising nær toppen. Søraustsida er skredsida med fleire store skred årleg (30–40 grader) og skal ikkje køyrast; Vestrenna krev stabil snø og øks/stegjern. Nordsida gir skjerma pudder når andre himmelretningar er avblåste.",
+    "avoidWater": true
+   }
+  ]
+ },
+ "jakobstinden": {
+  "routes": [
+   {
+    "id": "sorostsiden",
+    "name": "Sørøstsiden fra Kongsvikdalen",
+    "description": "Fra Y-krysset før bommen ca. 4 km innover Kongsvikdalen, til høyre over myrene ved Sætran, opp den brede rampa mot ryggen — hold sør der skavlen kan stå — og det brede platået til topps",
+    "trailhead": {
+     "name": "Kongsvikdalen",
+     "lat": 68.5708,
+     "lng": 16.2365,
+     "elevation_m": 25.0,
+     "fullName": "Kongsvikdalen"
+    },
+    "waypoints": [
+     {
+      "name": "Kongsvikdalen",
+      "lat": 68.58251,
+      "lng": 16.20194,
+      "elevation_m": 57.0
+     },
+     {
+      "name": "Sætran",
+      "lat": 68.592,
+      "lng": 16.197,
+      "elevation_m": 57.0
+     },
+     {
+      "name": "myrene nordøstover",
+      "lat": 68.598,
+      "lng": 16.188,
+      "elevation_m": 262.0
+     },
+     {
+      "name": "rampa",
+      "lat": 68.604,
+      "lng": 16.185,
+      "elevation_m": 394.0
+     },
+     {
+      "name": "øvre rampa",
+      "lat": 68.609,
+      "lng": 16.183,
+      "elevation_m": 502.0
+     },
+     {
+      "name": "platået",
+      "lat": 68.613,
+      "lng": 16.1815,
+      "elevation_m": 720.0
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: KAST 2 – Utfordrende. Alpinøks og stegjern. Skavl kan danne seg over rampa mot ryggen — hold venstre (sør) gjennom partiet. Pinakkelen nord for toppen er M3-klyving med rappell og er ikkje turen. Lite trafikkert fjell.",
+    "avoidWater": true
+   }
+  ]
+ },
+ "taraldsviktinden": {
+  "routes": [
+   {
+    "id": "nordryggen",
+    "name": "Nordryggen fra Fiskefjorden",
+    "description": "Fra parkeringa innerst i Fiskefjorden langs traktorveien øst for Gårdselva, av veien før kraftlinja, mot Mølnskaret og ryggen sørover til toppen",
+    "trailhead": {
+     "name": "Fiskefjorden",
+     "lat": 68.5554,
+     "lng": 16.0834,
+     "elevation_m": 5.0,
+     "fullName": "Fiskefjorden"
+    },
+    "waypoints": [
+     {
+      "name": "traktorveien øst for Gårdselva",
+      "lat": 68.559,
+      "lng": 16.1,
+      "elevation_m": 56.0
+     },
+     {
+      "name": "traktorveien",
+      "lat": 68.5625,
+      "lng": 16.115,
+      "elevation_m": 107.0
+     },
+     {
+      "name": "mellom vegetasjonen",
+      "lat": 68.5605,
+      "lng": 16.133,
+      "elevation_m": 241.0
+     },
+     {
+      "name": "mot Mølnskaret",
+      "lat": 68.5595,
+      "lng": 16.145,
+      "elevation_m": 360.0
+     },
+     {
+      "name": "Mølnskaret",
+      "lat": 68.557,
+      "lng": 16.163,
+      "elevation_m": 538.0
+     },
+     {
+      "name": "ryggen sørover",
+      "lat": 68.554,
+      "lng": 16.164,
+      "elevation_m": 669.0
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: KAST 2 – Utfordrende. Isøks og stegjern. Ryggpartiet held 30 grader; austsida med Tunellen startar på 30–40 grader og krev stabil snø. Parkering ved Sjøvoll krev grunneigars samtykke — bruk plassen ved Dalelva."
+   }
+  ]
  }
 }

@@ -2728,5 +2728,124 @@
    "check_new_corridors: ingen amenity=parking, men veg (primary/secondary/service) på punktet — parkeringa er langs vegen slik kilden beskriver."
   ],
   "notes": ""
+ },
+ "satertinden": {
+  "season": "feb–apr",
+  "aspect": "Ø",
+  "grade": 2,
+  "gradeReason": "KAST 1 – Enkelt hos Fri Flyt, nedkjøring i hovudsak 15–25 grader, staka frå 500 moh og telefonstolper siste 200 høgdemetrane. Men vindutsett rygg, stegjern kjekt å ha, og to gravd-fram-hendingar (2017, 2019) ved å svinge nord for normalruta. Grad 2.",
+  "roadClosedInWinter": false,
+  "teaserNo": "1110 høydemeter fra Sandtorg idrettsanlegg på Årbogen: traktorveien langs Årbogelva, sør for Årbogvatnet — og den staka østryggen forbi nødbua, med telefonstolpene som los mot toppen.",
+  "teaserEn": "1110 metres of ascent from the Sandtorg sports ground at Årbogen: the tractor road along Årbogelva, south of Årbogvatnet — and the staked east ridge past the emergency shelter, with the telephone poles as pilot to the summit.",
+  "hazardNotes": "Fri Flyt: KAST 1 – Enkelt på normalruta, men hold ryggen: ved nedkjøring til venstre (nord) er to personer gravd fram av skred (2017 og 2019). Vindutsett; små vasspeil i søkka om våren. Sørrenna og vestrennene er komplekse ekspertlinjer og ikkje denne ruta.",
+  "sources": [
+   "https://www.friflyt.no/topptur/harstad/saetertinden",
+   "https://www.friflyt.no/randonee/turomraade-tjeldsund"
+  ],
+  "confidence": "high",
+  "corrections": [
+   "Registerets Sætertinden (Fjell, Harstad/Tjeldsund) løser 1094,9 mot publiserte 1095 — grensetoppen over Tjeldsundet, med nødbu på ca. 700 moh og samband og låste bygg på toppen.",
+   "Starten er den store parkeringsplassen ved Sandtorg idrettsanlegg (Årbogen) — OSM har amenity=parking (w1193526734) ved banen Sandtorg Idrettspark (w1193526733). DTM1 leser 14,9 moh; 1095 − 15 = 1080, nøyaktig Fri Flyts oppgitte stigning.",
+   "Ruta reproduserer kilden: traktorveien på sørsida av Årbogelva (63 moh der linja går), sør for Årbogvatnet (vatnet ligger på 258 moh og er Innsjø i terrengmodellen — linja held sørbreidda på land), og østryggen forbi nødbua til platået. Frå 500 moh er ruta staka, siste 200 høgdemetrane langs telefonstolpene.",
+   "Fri Flyt: KAST 1 – Enkelt, nedkjøring i hovudsak 15–25 grader og fin for ferske toppturfolk — men to gravd-fram-hendingar (2017 og 2019) ved nedkjøring til venstre (nord), og vind på ryggen. Stegjern kjekt å ha. Grad 2.",
+   "Dronefoto er forbode på toppen (NSM) — sambandsanlegget. Det står i guiden, for det er ein del av turen.",
+   "check_new_corridors: amenity=parking er kartlagt i OSM (w1193526734) ved Sandtorg Idrettspark — den eneste av rundens fem startplasser med kartlagt parkering."
+  ],
+  "notes": ""
+ },
+ "haukebotinden": {
+  "season": "des–apr",
+  "aspect": "Ø",
+  "grade": 2,
+  "gradeReason": "KAST 1 – Enkelt hos Fri Flyt, nedkjøring som passar ferske så lenge heng brattare enn 30 grader blir unngått. Nordaust- og nordvariantane (30–50 grader, skavl, rappellfeste) er ekspertlinjer og ikkje denne. Grad 2.",
+  "roadClosedInWinter": false,
+  "teaserNo": "860 høydemeter fra Gausvik kirke: over demningen, opp austsida av Heimetverrelva — og det minst krevjande terrenget rett mot toppen. Rundens korteste dag, med sesong fra desember.",
+  "teaserEn": "860 metres of ascent from Gausvik church: past the dam, up the east side of Heimetverrelva — and the least demanding ground straight for the summit. The round's shortest day, with a season from December.",
+  "hazardNotes": "Fri Flyt: KAST 1 – Enkelt på austruta; unngå heng brattare enn 30 grader. Nordaustvarianten mot Storlægda held 30–45 grader og krev øks og stegjern; nordsida (35–50 grader, skavl, rappellfeste) er den mest krevjande. Sagtind-traversen mot Sætertinden er eksponert og krev øks, stegjern og tau.",
+  "sources": [
+   "https://www.friflyt.no/topptur/harstad/haukebotinden",
+   "https://www.friflyt.no/randonee/turomraade-tjeldsund"
+  ],
+  "confidence": "high",
+  "corrections": [
+   "Registerets Haukebøtinden (Fjell, Harstad) løser 905,1 mot publiserte 906.",
+   "Starten er den store parkeringa ved Gausvik kirke (OSM place_of_worship w999960603, 68.61117/16.49228). DTM1 leser 46,5 moh; 906 − 47 = 859, som forliker Fri Flyts 880 høydemeter.",
+   "Ruta reproduserer kilden: mot demningen (OSM waterway=dam w1243290901, 68.61073/16.48301, 65 moh), over elva der forholda tillèt det, austsida av Heimetverrelva (registerets Heimetverrelva, Bekk, 68.60740/16.46838) forbi grinda ved den store furua, og det minst krevjande terrenget rett mot toppen.",
+   "Fri Flyt: KAST 1 – Enkelt, nedkjøring som passar ferske så lenge ein unngår heng brattare enn 30 grader. Nordaust- og nordvarianten (30–50 grader, skavl, rappellfeste) er ekspertlinjer og ikkje denne ruta. Grad 2.",
+   "Sesongen er desember–april hos kilden — den lengste i runden saman med Storhornet-klassen: lågt fjell, kort anmarsj.",
+   "check_new_corridors: ingen amenity=parking, men veg (service/unclassified) på punktet — parkeringa er ved kirka slik kilden beskriver."
+  ],
+  "notes": ""
+ },
+ "kongsviktinden": {
+  "season": "jan–apr",
+  "aspect": "N",
+  "grade": 3,
+  "gradeReason": "KAST 2 – Utfordrende hos Fri Flyt, alpinøks og stegjern i utstyrslista på grunn av hard fokksnø og ising nær toppen. Nedkjøring 20–25 grader med to parti på 30. Grad 3.",
+  "roadClosedInWinter": false,
+  "teaserNo": "1090 høydemeter fra Y-krysset før bommen: den vinterstengte veien innover Kongsvikdalen, sommerstien ved Sætran og sørkonturen over platået — det slakeste terrenget mot den sørøstlige toppen, med øks og stegjern i sekken.",
+  "teaserEn": "1090 metres of ascent from the Y-junction before the barrier: the winter-closed road into Kongsvikdalen, the summer trail at Sætran and the south contour across the plateau — the gentlest ground toward the south-east summit, with axe and crampons in the pack.",
+  "hazardNotes": "Fri Flyt: KAST 2 – Utfordrende. Alpinøks og stegjern — hard fokksnø og ising nær toppen. Søraustsida er skredsida med fleire store skred årleg (30–40 grader) og skal ikkje køyrast; Vestrenna krev stabil snø og øks/stegjern. Nordsida gir skjerma pudder når andre himmelretningar er avblåste.",
+  "sources": [
+   "https://www.friflyt.no/topptur/harstad/kongsviktinden",
+   "https://www.friflyt.no/randonee/turomraade-tjeldsund"
+  ],
+  "confidence": "high",
+  "corrections": [
+   "Registerets Kongsviktinden (Fjell, Tjeldsund) løser 980,1 mot publiserte 977 — toppsøket klatra 60 m frå SSR-punktet til den høgste cella.",
+   "Starten er den store Y-krysset ca. 150 m før bommen på Kongsvikdalveien (OSM w363815335/w363815334, nvdb 412869994). Bommen er ikkje kartlagt i OSM; krysspunktet mellom dei to vegsegmenta les 24,8 moh på DTM1, og 977 − 25 = 952, som forliker Fri Flyts 960 høydemeter.",
+   "Ruta reproduserer kilden: vegen innover Kongsvikdalen (57 moh der linja følgjer han), austover via sommarstien ved Sætran (registerets Sætran, Setervoll, 68.59292/16.19176), og det slakaste terrenget mot den søraustlege toppen.",
+   "Fri Flyt: KAST 2 – Utfordrende, alpinøks og stegjern på grunn av mogleg hard fokksnø og ising nær toppen. Nedkjøringa held 20–25 grader med to brattare parti på 30. Søraustsida er skredsida — fleire store skred årleg — og er ikkje linja her. Grad 3.",
+   "check_new_corridors: ingen amenity=parking eller barrier i OSM, men veg (residential/service/track) på punktet — parkeringa er i Y-krysset før bommen slik kilden beskriver.",
+   "Første løsning krysset tjernet på 324 moh (68.5910/16.2170, Innsjø i terrengmodellen) og tok 465-kulen nord i senkninga med 52 m tilbakegitt. Korridoren ble flyttet til sørkonturen — sør for tjernet, gjennom senkninga på 387 — og linja holder land. Kongsvikelva krysses der veien gjør det, på bruene.",
+   "Andre løsning klatret en 318-kul rett før sørkonturens søkk og ga tilbake 51 m — «sør for tjernet» ble flyttet 350 m øst, inn i konturen på 278 moh."
+  ],
+  "notes": ""
+ },
+ "jakobstinden": {
+  "season": "jan–apr",
+  "aspect": "SØ",
+  "grade": 3,
+  "gradeReason": "KAST 2 – Utfordrende hos Fri Flyt, alpinøks og stegjern, og ein skavl som kan stå over rampa — hold venstre (sør). Nedkjøring 15–30 grader. Grad 3 — og ein lang dag: kilden gir 7 timar.",
+  "roadClosedInWinter": false,
+  "teaserNo": "1060 høydemeter fra samme Y-kryss som Kongsviktinden: fire kilometer innover Kongsvikdalen, myrene ved Sætran, den brede rampa — hold sør for skavlen — og det brede platået til toppen med pinakkelen.",
+  "teaserEn": "1060 metres of ascent from the same Y-junction as Kongsviktinden: four kilometres into Kongsvikdalen, the moors at Sætran, the broad ramp — stay south of the cornice — and the wide plateau to the summit with the pinnacle.",
+  "hazardNotes": "Fri Flyt: KAST 2 – Utfordrende. Alpinøks og stegjern. Skavl kan danne seg over rampa mot ryggen — hold venstre (sør) gjennom partiet. Pinakkelen nord for toppen er M3-klyving med rappell og er ikkje turen. Lite trafikkert fjell.",
+  "sources": [
+   "https://www.friflyt.no/topptur/harstad/jakobstinden",
+   "https://www.friflyt.no/randonee/turomraade-tjeldsund"
+  ],
+  "confidence": "high",
+  "corrections": [
+   "Registerets Jakobstinden (Topp, Kvæfjord/Tjeldsund) løser 976,0 mot publiserte 975 — grensetoppen med pinakkelen på sida (M3 for den som vil klyve, med 25 m tau til rappell — det står i guiden, men er ikkje turen).",
+   "Same start som Kongsviktinden: Y-krysset ca. 150 m før bommen på Kongsvikdalveien, 24,8 moh på DTM1. Kilden gir 960 høydemeter og 7 timar — 975 − 25 = 950, som forliker.",
+   "Ruta reproduserer kilden: ca. 4 km innover Kongsvikdalen, til høgre (aust… nordaust) over myrene ved Sætran, opp den breie rampa mot ryggen — der skavl kan danne seg, hold venstre (sør) — og det breie platået til topps.",
+   "Fri Flyt: KAST 2 – Utfordrende, alpinøks og stegjern. Lite trafikkert — urørt snø sannsynleg. Nedkjøring 15–30 grader tilbake til Kongsvikdalen. Grad 3.",
+   "check_new_corridors: ingen amenity=parking eller barrier i OSM, men veg (residential/service/track) på punktet — parkeringa er i Y-krysset før bommen slik kilden beskriver.",
+   "Linja står 0 vertekser på vann; restmålene på vann er der Kongsvikdalveien krysser den flettede Kongsvikelva på bruene (68.572–68.575) — Spanstinden-regelen: det står i prosaen, med høyde og sted."
+  ],
+  "notes": ""
+ },
+ "taraldsviktinden": {
+  "season": "feb–apr",
+  "aspect": "N",
+  "grade": 3,
+  "gradeReason": "KAST 2 – Utfordrende hos Fri Flyt, isøks og stegjern i utstyrslista. Nedkjøring i hovudsak 15–25 grader, to parti på 30 og eit ryggparti på 30. Grad 3.",
+  "roadClosedInWinter": false,
+  "teaserNo": "780 høydemeter fra fjæra innerst i Fiskefjorden: traktorveien øst for Gårdselva, mot Mølnskaret — og nordryggen til topps, med isøks og stegjern for ryggpartiet på 30 grader.",
+  "teaserEn": "780 metres of ascent from the shore at the head of Fiskefjorden: the tractor road east of Gårdselva, toward Mølnskaret — and the north ridge to the top, with ice axe and crampons for the 30-degree ridge section.",
+  "hazardNotes": "Fri Flyt: KAST 2 – Utfordrende. Isøks og stegjern. Ryggpartiet held 30 grader; austsida med Tunellen startar på 30–40 grader og krev stabil snø. Parkering ved Sjøvoll krev grunneigars samtykke — bruk plassen ved Dalelva.",
+  "sources": [
+   "https://www.friflyt.no/topptur/harstad/taraldsviktinden",
+   "https://www.friflyt.no/randonee/turomraade-tjeldsund"
+  ],
+  "confidence": "high",
+  "corrections": [
+   "Registerets Taraldsviktinden (Fjell, Tjeldsund) løser 775,8 mot publiserte 777 — toppsøket klatra 350 m frå SSR-punktet til den høgste cella (68.55162/16.16806). Varden på 774 som kilden nemner, står på vestsida.",
+   "Starten er den store parkeringa innerst i Fiskefjorden like ved utløpet av Dalelva — E10 kryssar elva på Dalelvbrua (OSM w330621131). DTM1 leser 4,5 moh; 777 − 5 = 772, som forliker Fri Flyts 770 høydemeter. Alternativet hos kilden (Sjøvoll) krev grunneigars samtykke.",
+   "Ruta reproduserer kilden: traktorveien aust for Gårdselva (registerets Gårdselva, Elv, 68.56227/16.10681; OSM-track w1195541799 ligg aust for elva), av vegen før kraftlina, mot Mølnskaret (registerets Mølnskaret, Skar, 68.55864/16.16383, 521 moh) og ryggen sørover til toppen.",
+   "Fri Flyt: KAST 2 – Utfordrende, isøks og stegjern. Nedkjøring i hovudsak 15–25 grader med to parti på 30 og eit ryggparti på 30. Austsida med Tunellen (30–40 grader) er ekspertlinja og ikkje denne. Grad 3."
+  ],
+  "notes": ""
  }
 }
