@@ -274,6 +274,17 @@
   "season": "feb–apr",
   "hasGuide": true
  },
+ "tverrfjellet": {
+  "name": "Tverrfjellet",
+  "region": "Harstad",
+  "summitM": 889,
+  "verticalM": 880,
+  "duration": "4–6 t",
+  "grade": 2,
+  "aspect": "S",
+  "season": "feb–apr",
+  "hasGuide": false
+ },
  "spanstinden": {
   "name": "Spanstinden",
   "region": "Narvik",
@@ -284,6 +295,28 @@
   "aspect": "SØ",
   "season": "feb–jun",
   "hasGuide": true
+ },
+ "jakobstinden": {
+  "name": "Jakobstinden",
+  "region": "Harstad",
+  "summitM": 976,
+  "verticalM": 1060,
+  "duration": "5–7 t",
+  "grade": 3,
+  "aspect": "SØ",
+  "season": "jan–apr",
+  "hasGuide": false
+ },
+ "haukebotinden": {
+  "name": "Haukebøtinden",
+  "region": "Harstad",
+  "summitM": 905,
+  "verticalM": 860,
+  "duration": "4–6 t",
+  "grade": 2,
+  "aspect": "Ø",
+  "season": "des–apr",
+  "hasGuide": false
  },
  "reinspalen": {
   "name": "Reinspælen",
@@ -296,6 +329,61 @@
   "season": "jan–apr",
   "hasGuide": true
  },
+ "satertinden": {
+  "name": "Sætertinden",
+  "region": "Harstad",
+  "summitM": 1095,
+  "verticalM": 1110,
+  "duration": "5–7 t",
+  "grade": 2,
+  "aspect": "Ø",
+  "season": "feb–apr",
+  "hasGuide": false
+ },
+ "kongsviktinden": {
+  "name": "Kongsviktinden",
+  "region": "Harstad",
+  "summitM": 980,
+  "verticalM": 1090,
+  "duration": "6–8 t",
+  "grade": 3,
+  "aspect": "N",
+  "season": "jan–apr",
+  "hasGuide": false
+ },
+ "snotinden-tjeldsund": {
+  "name": "Snøtinden i Tjeldsund",
+  "region": "Harstad",
+  "summitM": 980,
+  "verticalM": 1020,
+  "duration": "4–6 t",
+  "grade": 2,
+  "aspect": "NØ",
+  "season": "feb–apr",
+  "hasGuide": false
+ },
+ "taraldsviktinden": {
+  "name": "Taraldsviktinden",
+  "region": "Harstad",
+  "summitM": 776,
+  "verticalM": 780,
+  "duration": "3–5 t",
+  "grade": 3,
+  "aspect": "N",
+  "season": "feb–apr",
+  "hasGuide": false
+ },
+ "nonstinden": {
+  "name": "Nonstinden",
+  "region": "Harstad",
+  "summitM": 930,
+  "verticalM": 980,
+  "duration": "4–6 t",
+  "grade": 4,
+  "aspect": "Ø",
+  "season": "jan–apr",
+  "hasGuide": false
+ },
  "snotindan": {
   "name": "Snøtindan",
   "region": "Harstad",
@@ -307,6 +395,17 @@
   "season": "jan–apr",
   "hasGuide": true
  },
+ "fiskefjordtindan": {
+  "name": "Fiskefjordtindan",
+  "region": "Harstad",
+  "summitM": 965,
+  "verticalM": 1080,
+  "duration": "5–7 t",
+  "grade": 3,
+  "aspect": "SV",
+  "season": "jan–apr",
+  "hasGuide": false
+ },
  "moysalen": {
   "name": "Møysalen",
   "region": "Vesterålen",
@@ -317,6 +416,17 @@
   "aspect": "S",
   "season": "jan–mai",
   "hasGuide": true
+ },
+ "middagsfjellet": {
+  "name": "Middagsfjellet",
+  "region": "Harstad",
+  "summitM": 810,
+  "verticalM": 760,
+  "duration": "3–5 t",
+  "grade": 3,
+  "aspect": "N",
+  "season": "des–apr",
+  "hasGuide": false
  },
  "strandtinden": {
   "name": "Strandtinden",

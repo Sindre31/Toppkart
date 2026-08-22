@@ -194,6 +194,7 @@ def dtm_class(lat, lng):
 OVERPASS_TIMEOUT_S = 45
 OFFLINE = [False]
 OVERPASS_ENDPOINTS = (
+    "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
     "https://overpass-api.de/api/interpreter",
     "https://overpass.kumi.systems/api/interpreter",
     "https://overpass.private.coffee/api/interpreter",

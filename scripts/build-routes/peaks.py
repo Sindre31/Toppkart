@@ -321,4 +321,29 @@ PEAKS = [
     ("reinspalen", "Reinspælen", ["Kvæfjord"], 1118, 68.59348, 15.69887),
     ("snotindan", "Snytindan", ["Kvæfjord"], 996, 68.54323, 15.61677),
     ("storhornet-kvafjord", "Storhornet", ["Kvæfjord"], 722, 68.82460, 16.21305),
+    #
+    # — the Tjeldsund round: five from Fri Flyt's Tjeldsund chapter, on both
+    #   sides of Tjeldsundet where Strandtinden has stood alone since the
+    #   backlog round. Two KAST 1 ridges (Sætertinden, Haukebøtinden) and the
+    #   three KAST 2 summits around Kongsvikdalen and Fiskefjorden. Jakobstinden
+    #   sits on the Kvæfjord/Tjeldsund border; the rest answer to Harstad and
+    #   Tjeldsund kommune. —
+    ("satertinden", "Sætertinden", ["Harstad - Hárstták", "Harstad"], 1095, 68.58672, 16.36231),
+    ("haukebotinden", "Haukebøtinden", ["Harstad - Hárstták", "Harstad"], 906, 68.59658, 16.39742),
+    ("kongsviktinden", "Kongsviktinden", ["Dielddanuorri - Tjeldsund", "Tjeldsund"], 977, 68.58263, 16.26399),
+    ("jakobstinden", "Jakobstinden", ["Kvæfjord", "Dielddanuorri - Tjeldsund"], 975, 68.61630, 16.18078),
+    ("taraldsviktinden", "Taraldsviktinden", ["Dielddanuorri - Tjeldsund", "Tjeldsund"], 777, 68.54904, 16.16311),
+    #
+    # — the Lofast round: five more from the Harstad book, around Gullesfjorden
+    #   and west of Fiskefjorden — four of the five start on the E10 (Lofast).
+    #   Snytinden is the register spelling of Fri Flyt's Snøtinden, the app's
+    #   second qualified duplicate name (i Tjeldsund). Tverrfjellet above Melåa
+    #   carries no register name on its summit — see SUMMIT_SEED in
+    #   resolve_summits.py. Fiskefjordtindan's published 967 sits ~29 m under
+    #   the laser scan's top. —
+    ("snotinden-tjeldsund", "Snytinden", ["Dielddanuorri - Tjeldsund", "Tjeldsund", "Lødingen"], 980, 68.56794, 16.03015),
+    ("fiskefjordtindan", "Fiskefjordtindan", ["Lødingen"], 967, 68.53225, 16.01086),
+    ("nonstinden", "Nonstinden", ["Kvæfjord"], 930, 68.54891, 15.68146),
+    ("tverrfjellet", "Tverrfjellet", ["Kvæfjord"], 899, 68.70180, 16.13526),
+    ("middagsfjellet", "Middagsfjellet", ["Lødingen", "Kvæfjord"], 811, 68.50876, 15.78226),
 ]

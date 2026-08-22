@@ -1174,5 +1174,85 @@
     "summit_dtm": 722.2,
     "claims": 722,
     "stored_off_km": 0.0
+  },
+  "satertinden": {
+    "name": "Sætertinden",
+    "lat": 68.58656,
+    "lng": 16.36195,
+    "summit_dtm": 1094.9,
+    "claims": 1095,
+    "stored_off_km": 0.02
+  },
+  "haukebotinden": {
+    "name": "Haukebøtinden",
+    "lat": 68.59662,
+    "lng": 16.39746,
+    "summit_dtm": 905.1,
+    "claims": 906,
+    "stored_off_km": 0.0
+  },
+  "kongsviktinden": {
+    "name": "Kongsviktinden",
+    "lat": 68.58291,
+    "lng": 16.26536,
+    "summit_dtm": 980.1,
+    "claims": 977,
+    "stored_off_km": 0.06
+  },
+  "jakobstinden": {
+    "name": "Jakobstinden",
+    "lat": 68.61628,
+    "lng": 16.18072,
+    "summit_dtm": 976.0,
+    "claims": 975,
+    "stored_off_km": 0.0
+  },
+  "taraldsviktinden": {
+    "name": "Taraldsviktinden",
+    "lat": 68.55162,
+    "lng": 16.16806,
+    "summit_dtm": 775.8,
+    "claims": 777,
+    "stored_off_km": 0.35
+  },
+  "snotinden-tjeldsund": {
+    "name": "Snytinden",
+    "lat": 68.56784,
+    "lng": 16.02992,
+    "summit_dtm": 979.7,
+    "claims": 980,
+    "stored_off_km": 0.01
+  },
+  "fiskefjordtindan": {
+    "name": "Fiskefjordtindan",
+    "lat": 68.53218,
+    "lng": 16.01129,
+    "summit_dtm": 964.7,
+    "claims": 967,
+    "stored_off_km": 0.02
+  },
+  "nonstinden": {
+    "name": "Nonstinden",
+    "lat": 68.54904,
+    "lng": 15.68189,
+    "summit_dtm": 929.9,
+    "claims": 930,
+    "stored_off_km": 0.02
+  },
+  "tverrfjellet": {
+    "name": "Tverrfjellet",
+    "lat": 68.70181,
+    "lng": 16.13535,
+    "summit_dtm": 888.9,
+    "claims": 899,
+    "stored_off_km": 0.0
+  },
+  "middagsfjellet": {
+    "name": "Middagsfjellet",
+    "lat": 68.50879,
+    "lng": 15.78279,
+    "summit_dtm": 809.8,
+    "claims": 811,
+    "stored_off_km": 0.02
   }
 }

@@ -65,6 +65,24 @@ SUMMIT_SEED = {
     # and the register knows no other Fjell or Topp name within 2 km of either.
     # The seed is that line's last vertex.
     "prestholtskarvet": (60.55829, 8.01297),
+    # Tverrfjellet above Melåa in Kvæfjord carries no register name on its
+    # summit: SSR's nearest Tverrfjellet entries sit in Sortland, Lødingen and
+    # Tjeldsund, 12–20 km away on other mountains. The name is the source's and
+    # the neighbourhood's — Tverrfjellelva drains the mountain and Tverrelvfoten
+    # (the 581 m Ås the route passes west of) sits under it. Two tops answer:
+    # a 921.9 m knoll 2.9 km north-east of Tverrelvfoten, and this 888.8 m top
+    # 1.6 km due north of it — separated by a col the DTM reads at ~576 m, so
+    # they are separate mountains, not shoulder and summit. The route says
+    # «rett opp mot toppen» from west of Tverrelvfoten, and straight up is this
+    # one; the published 899 is its pre-scan figure (the Rørnestinden class).
+    "tverrfjellet": (68.70180, 16.13526),
+    # Fiskefjordtindan is a ridge with two tops 876 m apart: the register point
+    # sits on the northern one, which the scan reads at 998.9, while Fri Flyt
+    # publishes 967 — and the southern top climbs to 964.2, within 3 m of the
+    # published figure. The route from Kanstadbotn reaches the southern top
+    # first and its «ridge east to the summit» finishes there; the register
+    # point names the massif, not the tour.
+    "fiskefjordtindan": (68.53225, 16.01086),
     # «Tredje Svanfjell» is not a register name at all — the Svanfjella are
     # numbered informally, and the register's Svanfjellet (Fjell) sits 2,2 km
     # south-east on another top. Fri Flyt publishes a GPS summit position

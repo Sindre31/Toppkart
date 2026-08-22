@@ -4049,6 +4049,135 @@ register's Storhornet in Kvæfjord collides with the Trollheimen tour already
 on the map, so the card carries the qualifier — the decision the Troms round
 deferred on Kvaløya's Middagstinden now has a precedent.
 
+## The Tjeldsund round
+
+Five from Fri Flyt's Tjeldsund chapter, on both sides of Tjeldsundet where
+Strandtinden has stood alone since the backlog round: Sætertinden and
+Haukebøtinden above the Sandtorg–Gausvik shore, Kongsviktinden and
+Jakobstinden sharing a trailhead in Kongsvikdalen, and Taraldsviktinden over
+Fiskefjorden. A different chapter from the Sør-Troms round's: two of the
+five are KAST 1 ridges — Sætertinden staked from 500 m with telephone poles
+above that, the app's first stakes-and-poles tour — and the three KAST 2
+summits carry ice axe and crampons on the source's own list, which is the
+Gråfjell rule again and grades them 3 against measured 2s.
+
+| tour | start | summit | gain | km | steepest 100 m band | steepest 30 m | grade |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Sætertinden | 15 | 1095 | 1113 | 6.1 | 21.2° | 26.9° | 2 |
+| Haukebøtinden | 46 | 905 | 863 | 4.4 | 18.0° | 24.8° | 2 |
+| Kongsviktinden | 25 | 980 | 1092 | 9.1 | 17.9° | 31.6° | 3 |
+| Jakobstinden | 25 | 976 | 1062 | 8.5 | 18.0° | 31.0° | 3 |
+| Taraldsviktinden | 5 | 776 | 779 | 4.5 | 19.0° | 22.9° | 3 |
+
+### What the checks caught
+
+**The water the OSM check could not see.** `check_ground.py` measured 0 m of
+mapped water under all five lines on the first solve — and the terrain-class
+samples in `guide_facts.py` still showed Elv and Innsjø under the two
+Kongsvikdalen tours, because the braided Kongsvikelva and the tarn at 324 m
+east of Sætran are in Kartverket's classes and not in OSM. Both corridors
+were re-solved with `avoidWater`. Kongsviktinden's took two re-pins beyond
+that: the nudge pass answered the tarn with a 1.2 km detour over a 465 m
+knoll that gave back 52 m, so the corridor was moved onto the south contour
+— and the first placement of «sør for tjernet» sat on a 318 m knoll of its
+own, so it moved 350 m east into the contour at 278. Final line: 1092 m
+gained, 137 given back across the rolling plateau, zero vertices on water.
+What remains under the measure is where Kongsvikdalveien crosses the braided
+river on its bridges, stated in the guides — the Spanstinden rule.
+
+**Overpass had to be re-mirrored before anything could be checked.** The
+three mirrors in the rotation are unreachable from this environment, and the
+first replacement tried — overpass.osm.ch — is a Switzerland-only extract
+that answers fast and empty, exactly the failure `check_ground.py`'s
+timestamp guard exists for (its `timestamp_osm_base` is a build number, not
+a date, and the guard rejects it). maps.mail.ru's Overpass carries the full
+planet with an ISO timestamp and current data, and now leads all three
+rotations.
+
+**The round splits across the forecast border, and not the way the map
+suggests.** Queried per summit as always: Sætertinden, Kongsviktinden,
+Jakobstinden and Taraldsviktinden answer to Lofoten og Vesterålen —
+Sætertinden with its feet in Troms — while Haukebøtinden, one Sagtind
+traverse from Sætertinden, answers to Sør-Troms alone. Both A-regions with
+daily bulletins; each guide names its own.
+
+**Sætertinden's published vertical is exact.** 1095 − 15 = 1080 is Fri
+Flyt's stated figure to the metre, and the routed line collects 1113 giving
+back 33 — the cleanest reconciliation in the round. Jakobstinden's 975 − 25
+= 950 forliker its published 960 the same way. No Oksen-class
+altitude-into-gain bug anywhere in this chapter.
+
+**Taraldsviktinden's summit walked 350 m off the register point.** The SSR
+representation point reads 773.9 m; the climb found 775.8 at
+68.55162/16.16806 against the published 777, and the 774 cairn the source
+mentions stands on the west side. The guide carries all three numbers.
+
+**Two burials on Sætertinden's north side, and the guide points at them.**
+The source records people dug out in 2017 and 2019, both on descents left
+(north) of the staked ridge. The flank probe puts the gentle sides N/NW/W
+and 60.1° in the south-east, where the expert couloirs live — the route is
+staked because it is the line, and the avalanche panel says exactly that.
+
+## The Lofast round
+
+Five more from the Harstad book, around Gullesfjorden and west of
+Fiskefjorden — four of the five start on the E10 (Lofast): the Fiskefjorden
+car park Taraldsviktinden already uses, the parking bay at Kobbedalselv bru
+in Kanstadbotn, and the big car park at the Gullesfjordbotn roundabout,
+which serves two of them. Only Melåa, on fv. 7784 along Gullesfjorden's
+east shore, is off it. Two KAST 1 ridges, a KAST 1 with an exposed finish
+that grades 3 by the Gråfjell rule, a Complex tour whose whole point is the
+gentlest line through steeper ground, and the round's one grade 4.
+
+| tour | start | summit | gain | km | steepest 100 m band | steepest 30 m | grade |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Snøtinden i Tjeldsund | 5 | 980 | 1018 | 4.4 | 21.7° | 29.0° | 2 |
+| Fiskefjordtindan | 15 | 965 | 1076 | 7.6 | 15.2° | 32.8° | 3 |
+| Nonstinden | 49 | 930 | 983 | 5.6 | 24.1° | 31.1° | 4 |
+| Tverrfjellet | 12 | 889 | 885 | 5.5 | 14.0° | 23.9° | 2 |
+| Middagsfjellet | 49 | 810 | 762 | 2.9 | 20.6° | 27.3° | 3 |
+
+### What the checks caught
+
+**Two summits were not where the first read put them, and the register could
+not settle either.** Fiskefjordtindan is a ridge with two tops 876 m apart:
+the register point sits on the northern one, which the scan reads at 998.9 —
+but Fri Flyt publishes 967, the southern top climbs to 964.2, and the route
+from Kanstadbotn finishes there. Tverrfjellet above Melåa carries no
+register name at all — SSR's nearest Tverrfjellet entries are 12–20 km away
+on other mountains — and the massif answered with two candidates: a 921.9 m
+knoll and an 888.9 m top separated by a col the DTM reads at ~576, so they
+are separate mountains. «Rett opp mot toppen» from west of Tverrelvfoten is
+the 888.9 one, its published 899 a pre-scan figure of the Rørnestinden
+class. Both went into `SUMMIT_SEED`, which existed for exactly this.
+
+**Nonstinden's first ridge was in the sea.** The corridor draft put «ryggen
+nordover fra 155» east of the fjord head, and DTM1 answered Havflate −5.5:
+Gullesfjordbotn cuts in between the roundabout parking and the mountain.
+The ridge is west of the botn, past the west-side car park, and the line
+gives back 43 m around the shore before it starts — stated in the guide.
+
+**The forecast border splits this round too, and the other way.** Queried
+per summit: four of five answer to Lofoten og Vesterålen, while
+Tverrfjellet — the only summit whose route starts in Kvæfjord's
+Austerfjorden — answers to Sør-Troms alone, mirroring Haukebøtinden in the
+Tjeldsund round.
+
+**No water anywhere.** After the Tjeldsund round's three re-solves, every
+corridor here was probed against the terrain classes before routing —
+around Øvre Kobbedalsvatnet, past Revskarvatnet, along the myrene — and the
+first solve came back with zero wet vertices on all five lines and
+`check_ground.py` at 0 m. The probing is cheaper than the re-route.
+
+**KAST and the card disagree in both directions, and the guides carry
+both.** Fiskefjordtindan is KAST 1 – Enkelt with ice axe and crampons on
+the gear list and an east face the probe measures at 67.2° under the summit
+ridge — grade 3 by the Gråfjell rule. Middagsfjellet is KAST 3 – Komplekst
+with a normal line that never passes 27.3° — grade 3 because the
+classification describes the surroundings, not the line. Nonstinden's
+«four steep descents» measure 21.5–38.9° mean on all eight bearings — the
+round's grade 4.
+
 ## Network
 
 Everything is public and unauthenticated:
