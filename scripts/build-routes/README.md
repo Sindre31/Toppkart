@@ -4118,6 +4118,66 @@ The source records people dug out in 2017 and 2019, both on descents left
 and 60.1° in the south-east, where the expert couloirs live — the route is
 staked because it is the line, and the avalanche panel says exactly that.
 
+## The Lofast round
+
+Five more from the Harstad book, around Gullesfjorden and west of
+Fiskefjorden — four of the five start on the E10 (Lofast): the Fiskefjorden
+car park Taraldsviktinden already uses, the parking bay at Kobbedalselv bru
+in Kanstadbotn, and the big car park at the Gullesfjordbotn roundabout,
+which serves two of them. Only Melåa, on fv. 7784 along Gullesfjorden's
+east shore, is off it. Two KAST 1 ridges, a KAST 1 with an exposed finish
+that grades 3 by the Gråfjell rule, a Complex tour whose whole point is the
+gentlest line through steeper ground, and the round's one grade 4.
+
+| tour | start | summit | gain | km | steepest 100 m band | steepest 30 m | grade |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Snøtinden i Tjeldsund | 5 | 980 | 1018 | 4.4 | 21.7° | 29.0° | 2 |
+| Fiskefjordtindan | 15 | 965 | 1076 | 7.6 | 15.2° | 32.8° | 3 |
+| Nonstinden | 49 | 930 | 983 | 5.6 | 24.1° | 31.1° | 4 |
+| Tverrfjellet | 12 | 889 | 885 | 5.5 | 14.0° | 23.9° | 2 |
+| Middagsfjellet | 49 | 810 | 762 | 2.9 | 20.6° | 27.3° | 3 |
+
+### What the checks caught
+
+**Two summits were not where the first read put them, and the register could
+not settle either.** Fiskefjordtindan is a ridge with two tops 876 m apart:
+the register point sits on the northern one, which the scan reads at 998.9 —
+but Fri Flyt publishes 967, the southern top climbs to 964.2, and the route
+from Kanstadbotn finishes there. Tverrfjellet above Melåa carries no
+register name at all — SSR's nearest Tverrfjellet entries are 12–20 km away
+on other mountains — and the massif answered with two candidates: a 921.9 m
+knoll and an 888.9 m top separated by a col the DTM reads at ~576, so they
+are separate mountains. «Rett opp mot toppen» from west of Tverrelvfoten is
+the 888.9 one, its published 899 a pre-scan figure of the Rørnestinden
+class. Both went into `SUMMIT_SEED`, which existed for exactly this.
+
+**Nonstinden's first ridge was in the sea.** The corridor draft put «ryggen
+nordover fra 155» east of the fjord head, and DTM1 answered Havflate −5.5:
+Gullesfjordbotn cuts in between the roundabout parking and the mountain.
+The ridge is west of the botn, past the west-side car park, and the line
+gives back 43 m around the shore before it starts — stated in the guide.
+
+**The forecast border splits this round too, and the other way.** Queried
+per summit: four of five answer to Lofoten og Vesterålen, while
+Tverrfjellet — the only summit whose route starts in Kvæfjord's
+Austerfjorden — answers to Sør-Troms alone, mirroring Haukebøtinden in the
+Tjeldsund round.
+
+**No water anywhere.** After the Tjeldsund round's three re-solves, every
+corridor here was probed against the terrain classes before routing —
+around Øvre Kobbedalsvatnet, past Revskarvatnet, along the myrene — and the
+first solve came back with zero wet vertices on all five lines and
+`check_ground.py` at 0 m. The probing is cheaper than the re-route.
+
+**KAST and the card disagree in both directions, and the guides carry
+both.** Fiskefjordtindan is KAST 1 – Enkelt with ice axe and crampons on
+the gear list and an east face the probe measures at 67.2° under the summit
+ridge — grade 3 by the Gråfjell rule. Middagsfjellet is KAST 3 – Komplekst
+with a normal line that never passes 27.3° — grade 3 because the
+classification describes the surroundings, not the line. Nonstinden's
+«four steep descents» measure 21.5–38.9° mean on all eight bearings — the
+round's grade 4.
+
 ## Network
 
 Everything is public and unauthenticated:

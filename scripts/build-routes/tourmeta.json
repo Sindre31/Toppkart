@@ -274,6 +274,17 @@
   "season": "feb–apr",
   "hasGuide": true
  },
+ "tverrfjellet": {
+  "name": "Tverrfjellet",
+  "region": "Harstad",
+  "summitM": 889,
+  "verticalM": 880,
+  "duration": "4–6 t",
+  "grade": 2,
+  "aspect": "S",
+  "season": "feb–apr",
+  "hasGuide": false
+ },
  "spanstinden": {
   "name": "Spanstinden",
   "region": "Narvik",
@@ -340,6 +351,17 @@
   "season": "jan–apr",
   "hasGuide": false
  },
+ "snotinden-tjeldsund": {
+  "name": "Snøtinden i Tjeldsund",
+  "region": "Harstad",
+  "summitM": 980,
+  "verticalM": 1020,
+  "duration": "4–6 t",
+  "grade": 2,
+  "aspect": "NØ",
+  "season": "feb–apr",
+  "hasGuide": false
+ },
  "taraldsviktinden": {
   "name": "Taraldsviktinden",
   "region": "Harstad",
@@ -349,6 +371,17 @@
   "grade": 3,
   "aspect": "N",
   "season": "feb–apr",
+  "hasGuide": false
+ },
+ "nonstinden": {
+  "name": "Nonstinden",
+  "region": "Harstad",
+  "summitM": 930,
+  "verticalM": 980,
+  "duration": "4–6 t",
+  "grade": 4,
+  "aspect": "Ø",
+  "season": "jan–apr",
   "hasGuide": false
  },
  "snotindan": {
@@ -362,6 +395,17 @@
   "season": "jan–apr",
   "hasGuide": true
  },
+ "fiskefjordtindan": {
+  "name": "Fiskefjordtindan",
+  "region": "Harstad",
+  "summitM": 965,
+  "verticalM": 1080,
+  "duration": "5–7 t",
+  "grade": 3,
+  "aspect": "SV",
+  "season": "jan–apr",
+  "hasGuide": false
+ },
  "moysalen": {
   "name": "Møysalen",
   "region": "Vesterålen",
@@ -372,6 +416,17 @@
   "aspect": "S",
   "season": "jan–mai",
   "hasGuide": true
+ },
+ "middagsfjellet": {
+  "name": "Middagsfjellet",
+  "region": "Harstad",
+  "summitM": 810,
+  "verticalM": 760,
+  "duration": "3–5 t",
+  "grade": 3,
+  "aspect": "N",
+  "season": "des–apr",
+  "hasGuide": false
  },
  "strandtinden": {
   "name": "Strandtinden",

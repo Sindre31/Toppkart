@@ -171,4 +171,10 @@ NEW_TOURS = {
     "kongsviktinden": ("Kongsviktinden", "Harstad"),
     "jakobstinden": ("Jakobstinden", "Harstad"),
     "taraldsviktinden": ("Taraldsviktinden", "Harstad"),
+    # — Lofast-runden: fem til rundt Gullesfjorden og Fiskefjorden. —
+    "snotinden-tjeldsund": ("Snøtinden i Tjeldsund", "Harstad"),
+    "fiskefjordtindan": ("Fiskefjordtindan", "Harstad"),
+    "nonstinden": ("Nonstinden", "Harstad"),
+    "tverrfjellet": ("Tverrfjellet", "Harstad"),
+    "middagsfjellet": ("Middagsfjellet", "Harstad"),
 }

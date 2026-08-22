@@ -1214,5 +1214,45 @@
     "summit_dtm": 775.8,
     "claims": 777,
     "stored_off_km": 0.35
+  },
+  "snotinden-tjeldsund": {
+    "name": "Snytinden",
+    "lat": 68.56784,
+    "lng": 16.02992,
+    "summit_dtm": 979.7,
+    "claims": 980,
+    "stored_off_km": 0.01
+  },
+  "fiskefjordtindan": {
+    "name": "Fiskefjordtindan",
+    "lat": 68.53218,
+    "lng": 16.01129,
+    "summit_dtm": 964.7,
+    "claims": 967,
+    "stored_off_km": 0.02
+  },
+  "nonstinden": {
+    "name": "Nonstinden",
+    "lat": 68.54904,
+    "lng": 15.68189,
+    "summit_dtm": 929.9,
+    "claims": 930,
+    "stored_off_km": 0.02
+  },
+  "tverrfjellet": {
+    "name": "Tverrfjellet",
+    "lat": 68.70181,
+    "lng": 16.13535,
+    "summit_dtm": 888.9,
+    "claims": 899,
+    "stored_off_km": 0.0
+  },
+  "middagsfjellet": {
+    "name": "Middagsfjellet",
+    "lat": 68.50879,
+    "lng": 15.78279,
+    "summit_dtm": 809.8,
+    "claims": 811,
+    "stored_off_km": 0.02
   }
 }

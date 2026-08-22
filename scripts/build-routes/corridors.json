@@ -7592,5 +7592,267 @@
     "notes": "Fri Flyt: KAST 2 – Utfordrende. Isøks og stegjern. Ryggpartiet held 30 grader; austsida med Tunellen startar på 30–40 grader og krev stabil snø. Parkering ved Sjøvoll krev grunneigars samtykke — bruk plassen ved Dalelva."
    }
   ]
+ },
+ "snotinden-tjeldsund": {
+  "routes": [
+   {
+    "id": "nordostsiden",
+    "name": "Nordøstsiden fra Fiskefjorden",
+    "description": "Fra parkeringa ved Dalelvas utløp først som mot Taraldsviktinden, så traktorveien opp Norddalen, over det langstrakte Marsslottfjellet og ryggen sørvestover til toppen",
+    "trailhead": {
+     "name": "Fiskefjorden",
+     "lat": 68.5554,
+     "lng": 16.0834,
+     "elevation_m": 5.0,
+     "fullName": "Fiskefjorden"
+    },
+    "waypoints": [
+     {
+      "name": "Norddalen",
+      "lat": 68.562,
+      "lng": 16.07,
+      "elevation_m": 219.0
+     },
+     {
+      "name": "øvre Norddalen",
+      "lat": 68.564,
+      "lng": 16.065,
+      "elevation_m": 412.0
+     },
+     {
+      "name": "Marsslottfjellet",
+      "lat": 68.569,
+      "lng": 16.053,
+      "elevation_m": 632.0
+     },
+     {
+      "name": "ryggen sørvestover",
+      "lat": 68.57,
+      "lng": 16.047,
+      "elevation_m": 798.0
+     },
+     {
+      "name": "mot toppen",
+      "lat": 68.569,
+      "lng": 16.04,
+      "elevation_m": 855.0
+     },
+     {
+      "name": "toppflanken",
+      "lat": 68.568,
+      "lng": 16.034,
+      "elevation_m": 938.0
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: KAST 1 – Enkelt. Tre heng på rundt 25 grader; hard skare kan kreve stegjern. Sørvestsiden om Snytindlemman mot Revskarvatnet og over Bollfjellet er den krevende varianten og ikke denne ruta."
+   }
+  ]
+ },
+ "fiskefjordtindan": {
+  "routes": [
+   {
+    "id": "sorvestsiden",
+    "name": "Sørvestsiden fra Kanstadbotn",
+    "description": "Fra parkeringslomma ved Kanstadbotn etter sommerstien, ryggen mellom vatna, vest for toppvatnet og den eksponerte ryggen østover til toppen",
+    "trailhead": {
+     "name": "Kanstadbotn",
+     "lat": 68.49984,
+     "lng": 15.88378,
+     "elevation_m": 15.0,
+     "fullName": "Kanstadbotn"
+    },
+    "waypoints": [
+     {
+      "name": "sommerstien",
+      "lat": 68.506,
+      "lng": 15.91,
+      "elevation_m": 176.0
+     },
+     {
+      "name": "lia",
+      "lat": 68.513,
+      "lng": 15.935,
+      "elevation_m": 369.0
+     },
+     {
+      "name": "ryggen mellom vatna",
+      "lat": 68.522,
+      "lng": 15.96,
+      "elevation_m": 578.0
+     },
+     {
+      "name": "ryggen",
+      "lat": 68.528,
+      "lng": 15.98,
+      "elevation_m": 702.0
+     },
+     {
+      "name": "vestflanken",
+      "lat": 68.53,
+      "lng": 15.997,
+      "elevation_m": 856.0
+     },
+     {
+      "name": "ryggen austover",
+      "lat": 68.5318,
+      "lng": 16.007,
+      "elevation_m": 856.0
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: KAST 1 – Enkelt på sørvestruta, med alpinøks og stegjern for den eksponerte austryggen mot toppen. Nordøstruta ned austsida går i ei fin renne på opptil 40 grader med mye utløpssoner — den krever stabil snø og er ikke denne linja."
+   }
+  ]
+ },
+ "nonstinden": {
+  "routes": [
+   {
+    "id": "ostsiden",
+    "name": "Østsiden fra Gullesfjordbotn",
+    "description": "Fra parkeringa ved rundkjøringa i Gullesfjordbotn vest for botn, opp ryggen nordover fra 155, vest inn i den bratte renna til platået vest for 685-høgda og traversen til toppen",
+    "trailhead": {
+     "name": "Gullesfjordbotn",
+     "lat": 68.52959,
+     "lng": 15.76334,
+     "elevation_m": 49.0,
+     "fullName": "Gullesfjordbotn"
+    },
+    "waypoints": [
+     {
+      "name": "vest for botn",
+      "lat": 68.5353,
+      "lng": 15.7229,
+      "elevation_m": 6.0
+     },
+     {
+      "name": "ryggfoten",
+      "lat": 68.539,
+      "lng": 15.719,
+      "elevation_m": 75.0
+     },
+     {
+      "name": "ryggen",
+      "lat": 68.542,
+      "lng": 15.715,
+      "elevation_m": 289.0
+     },
+     {
+      "name": "inn i renna",
+      "lat": 68.545,
+      "lng": 15.706,
+      "elevation_m": 376.0
+     },
+     {
+      "name": "platået vest for 685-høgda",
+      "lat": 68.5465,
+      "lng": 15.698,
+      "elevation_m": 475.0
+     },
+     {
+      "name": "traversen",
+      "lat": 68.548,
+      "lng": 15.687,
+      "elevation_m": 793.0
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: Komplekst. Alpinøks og stegjern. Nedkjøringen holder 25–40 grader; Karirenna mot nordøst er 45–50 grader med stort steinsprangfare i øvre del og krever stabil snø; vestsida mot Løbergsdalen måler 30–40. Fire bratte nedkjøringer — velg etter snøen."
+   }
+  ]
+ },
+ "tverrfjellet": {
+  "routes": [
+   {
+    "id": "sorsiden",
+    "name": "Sørsiden fra Melåa",
+    "description": "Fra lommene langs Austerfjordveien ved Melåa etter traktorveien på nordsida av Melåelva, over myrene ved kraftlinja, vest for Tverrelvfoten og det åpne området rett opp mot toppen",
+    "trailhead": {
+     "name": "Melåa",
+     "lat": 68.6634,
+     "lng": 16.0812,
+     "elevation_m": 12.0,
+     "fullName": "Melåa"
+    },
+    "waypoints": [
+     {
+      "name": "traktorveien",
+      "lat": 68.666,
+      "lng": 16.095,
+      "elevation_m": 23.0
+     },
+     {
+      "name": "kraftlinja på myrene",
+      "lat": 68.672,
+      "lng": 16.115,
+      "elevation_m": 171.0
+     },
+     {
+      "name": "vest for Tverrelvfoten",
+      "lat": 68.686,
+      "lng": 16.138,
+      "elevation_m": 507.0
+     },
+     {
+      "name": "det åpne området",
+      "lat": 68.692,
+      "lng": 16.136,
+      "elevation_m": 650.0
+     },
+     {
+      "name": "mot toppen",
+      "lat": 68.697,
+      "lng": 16.135,
+      "elevation_m": 766.0
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: KAST 1 – Enkelt. Sørvendt og oversiktlig; hold den slake linja over det åpne området — terrenget øst for Tverrelvfoten er brattere. Lang tur for graden: nesten 900 høydemeter fra fjorden."
+   }
+  ]
+ },
+ "middagsfjellet": {
+  "routes": [
+   {
+    "id": "nordsiden",
+    "name": "Nordsiden fra Gullesfjordbotn",
+    "description": "Fra parkeringa ved rundkjøringa i Gullesfjordbotn opp den snødekte lia vest for Tverrelva, over Blåberget og den slakeste traseen til toppen",
+    "trailhead": {
+     "name": "Gullesfjordbotn",
+     "lat": 68.52959,
+     "lng": 15.76334,
+     "elevation_m": 49.0,
+     "fullName": "Gullesfjordbotn"
+    },
+    "waypoints": [
+     {
+      "name": "lia vest for Tverrelva",
+      "lat": 68.523,
+      "lng": 15.77,
+      "elevation_m": 194.0
+     },
+     {
+      "name": "over skoggrensa",
+      "lat": 68.518,
+      "lng": 15.775,
+      "elevation_m": 461.0
+     },
+     {
+      "name": "Blåberget",
+      "lat": 68.514,
+      "lng": 15.779,
+      "elevation_m": 708.0
+     },
+     {
+      "name": "toppflanken",
+      "lat": 68.511,
+      "lng": 15.781,
+      "elevation_m": 767.0
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: KAST 3 – Komplekst. Velg den slakeste traseen — ruten er omgitt av mer skredfarlig terreng, med partier på 30–40 grader rundt normallinja. Mulig ising over tregrensa; vurder stegjern. Vestsida mot Storskardet er brattere og krever egen snøvurdering."
+   }
+  ]
  }
 }
