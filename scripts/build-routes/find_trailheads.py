@@ -18,6 +18,7 @@ from geo import dtm_point, haversine
 
 # The main instance throws 504s under load; rotate mirrors rather than give up.
 MIRRORS = [
+    "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
     "https://overpass-api.de/api/interpreter",
     "https://overpass.kumi.systems/api/interpreter",
     "https://overpass.private.coffee/api/interpreter",

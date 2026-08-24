@@ -6782,5 +6782,739 @@
    ],
    "confidence": "high"
   }
+ },
+ {
+  "slug": "satertinden",
+  "verdict": "ok",
+  "corrections": [
+   "Registerets Sætertinden (Fjell, Harstad/Tjeldsund) løser 1094,9 mot publiserte 1095 — grensetoppen over Tjeldsundet, med nødbu på ca. 700 moh og samband og låste bygg på toppen.",
+   "Starten er den store parkeringsplassen ved Sandtorg idrettsanlegg (Årbogen) — OSM har amenity=parking (w1193526734) ved banen Sandtorg Idrettspark (w1193526733). DTM1 leser 14,9 moh; 1095 − 15 = 1080, nøyaktig Fri Flyts oppgitte stigning.",
+   "Ruta reproduserer kilden: traktorveien på sørsida av Årbogelva (63 moh der linja går), sør for Årbogvatnet (vatnet ligger på 258 moh og er Innsjø i terrengmodellen — linja held sørbreidda på land), og østryggen forbi nødbua til platået. Frå 500 moh er ruta staka, siste 200 høgdemetrane langs telefonstolpene.",
+   "Fri Flyt: KAST 1 – Enkelt, nedkjøring i hovudsak 15–25 grader og fin for ferske toppturfolk — men to gravd-fram-hendingar (2017 og 2019) ved nedkjøring til venstre (nord), og vind på ryggen. Stegjern kjekt å ha. Grad 2.",
+   "Dronefoto er forbode på toppen (NSM) — sambandsanlegget. Det står i guiden, for det er ein del av turen.",
+   "check_new_corridors: amenity=parking er kartlagt i OSM (w1193526734) ved Sandtorg Idrettspark — den eneste av rundens fem startplasser med kartlagt parkering."
+  ],
+  "rejectReason": "",
+  "corridor": {
+   "routeId": "ostryggen",
+   "routeName": "Østryggen fra Årbogen",
+   "routeDescriptionFull": "Fra parkeringa ved Sandtorg idrettsanlegg langs traktorveien på sørsida av Årbogelva, sør for Årbogvatnet på land, og opp østryggen forbi nødbua til toppen",
+   "trailhead": {
+    "name": "Årbogen",
+    "lat": 68.5796,
+    "lng": 16.4898,
+    "elevationM": 15,
+    "osmEvidence": "Stor parkeringsplass ved Sandtorg idrettsanlegg: OSM amenity=parking (w1193526734) inntil banen Sandtorg Idrettspark (w1193526733). DTM1 leser 14,9 moh."
+   },
+   "waypoints": [
+    {
+     "name": "traktorveien sør for Årbogelva",
+     "lat": 68.581,
+     "lng": 16.472,
+     "elevationM": 63
+    },
+    {
+     "name": "sør for Årbogvatnet",
+     "lat": 68.5862,
+     "lng": 16.439,
+     "elevationM": 297
+    },
+    {
+     "name": "vest for vatnet",
+     "lat": 68.5872,
+     "lng": 16.433,
+     "elevationM": 277
+    },
+    {
+     "name": "østryggen",
+     "lat": 68.5875,
+     "lng": 16.415,
+     "elevationM": 522
+    },
+    {
+     "name": "ryggen ved nødbua",
+     "lat": 68.5878,
+     "lng": 16.395,
+     "elevationM": 653
+    },
+    {
+     "name": "ryggen",
+     "lat": 68.5872,
+     "lng": 16.38,
+     "elevationM": 785
+    }
+   ],
+   "season": "feb–apr",
+   "aspect": "Ø",
+   "grade": 2,
+   "gradeReason": "KAST 1 – Enkelt hos Fri Flyt, nedkjøring i hovudsak 15–25 grader, staka frå 500 moh og telefonstolper siste 200 høgdemetrane. Men vindutsett rygg, stegjern kjekt å ha, og to gravd-fram-hendingar (2017, 2019) ved å svinge nord for normalruta. Grad 2.",
+   "roadClosedInWinter": false,
+   "hazardNotes": "Fri Flyt: KAST 1 – Enkelt på normalruta, men hold ryggen: ved nedkjøring til venstre (nord) er to personer gravd fram av skred (2017 og 2019). Vindutsett; små vasspeil i søkka om våren. Sørrenna og vestrennene er komplekse ekspertlinjer og ikkje denne ruta.",
+   "teaserNo": "1110 høydemeter fra Sandtorg idrettsanlegg på Årbogen: traktorveien langs Årbogelva, sør for Årbogvatnet — og den staka østryggen forbi nødbua, med telefonstolpene som los mot toppen.",
+   "teaserEn": "1110 metres of ascent from the Sandtorg sports ground at Årbogen: the tractor road along Årbogelva, south of Årbogvatnet — and the staked east ridge past the emergency shelter, with the telephone poles as pilot to the summit.",
+   "sources": [
+    "https://www.friflyt.no/topptur/harstad/saetertinden",
+    "https://www.friflyt.no/randonee/turomraade-tjeldsund"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "slug": "haukebotinden",
+  "verdict": "ok",
+  "corrections": [
+   "Registerets Haukebøtinden (Fjell, Harstad) løser 905,1 mot publiserte 906.",
+   "Starten er den store parkeringa ved Gausvik kirke (OSM place_of_worship w999960603, 68.61117/16.49228). DTM1 leser 46,5 moh; 906 − 47 = 859, som forliker Fri Flyts 880 høydemeter.",
+   "Ruta reproduserer kilden: mot demningen (OSM waterway=dam w1243290901, 68.61073/16.48301, 65 moh), over elva der forholda tillèt det, austsida av Heimetverrelva (registerets Heimetverrelva, Bekk, 68.60740/16.46838) forbi grinda ved den store furua, og det minst krevjande terrenget rett mot toppen.",
+   "Fri Flyt: KAST 1 – Enkelt, nedkjøring som passar ferske så lenge ein unngår heng brattare enn 30 grader. Nordaust- og nordvarianten (30–50 grader, skavl, rappellfeste) er ekspertlinjer og ikkje denne ruta. Grad 2.",
+   "Sesongen er desember–april hos kilden — den lengste i runden saman med Storhornet-klassen: lågt fjell, kort anmarsj.",
+   "check_new_corridors: ingen amenity=parking, men veg (service/unclassified) på punktet — parkeringa er ved kirka slik kilden beskriver."
+  ],
+  "rejectReason": "",
+  "corridor": {
+   "routeId": "ostsiden",
+   "routeName": "Østsiden fra Gausvik",
+   "routeDescriptionFull": "Fra parkeringa ved Gausvik kirke mot demningen, over elva og opp langs austsida av Heimetverrelva, gjennom grinda ved den store furua og det minst krevjande terrenget rett mot toppen",
+   "trailhead": {
+    "name": "Gausvik",
+    "lat": 68.61117,
+    "lng": 16.49228,
+    "elevationM": 46,
+    "osmEvidence": "Stor parkeringsplass ved Gausvik kirke (OSM place_of_worship w999960603). Ingen amenity=parking i OSM, men veg på punktet — parkeringa er ved kirka slik kilden beskriver. DTM1 leser 46,5 moh."
+   },
+   "waypoints": [
+    {
+     "name": "demningen",
+     "lat": 68.61073,
+     "lng": 16.48301,
+     "elevationM": 65
+    },
+    {
+     "name": "austsida av Heimetverrelva",
+     "lat": 68.6068,
+     "lng": 16.466,
+     "elevationM": 208
+    },
+    {
+     "name": "lia",
+     "lat": 68.604,
+     "lng": 16.448,
+     "elevationM": 410
+    },
+    {
+     "name": "mot toppen",
+     "lat": 68.601,
+     "lng": 16.425,
+     "elevationM": 613
+    },
+    {
+     "name": "toppflanken",
+     "lat": 68.599,
+     "lng": 16.41,
+     "elevationM": 725
+    }
+   ],
+   "season": "des–apr",
+   "aspect": "Ø",
+   "grade": 2,
+   "gradeReason": "KAST 1 – Enkelt hos Fri Flyt, nedkjøring som passar ferske så lenge heng brattare enn 30 grader blir unngått. Nordaust- og nordvariantane (30–50 grader, skavl, rappellfeste) er ekspertlinjer og ikkje denne. Grad 2.",
+   "roadClosedInWinter": false,
+   "hazardNotes": "Fri Flyt: KAST 1 – Enkelt på austruta; unngå heng brattare enn 30 grader. Nordaustvarianten mot Storlægda held 30–45 grader og krev øks og stegjern; nordsida (35–50 grader, skavl, rappellfeste) er den mest krevjande. Sagtind-traversen mot Sætertinden er eksponert og krev øks, stegjern og tau.",
+   "teaserNo": "860 høydemeter fra Gausvik kirke: over demningen, opp austsida av Heimetverrelva — og det minst krevjande terrenget rett mot toppen. Rundens korteste dag, med sesong fra desember.",
+   "teaserEn": "860 metres of ascent from Gausvik church: past the dam, up the east side of Heimetverrelva — and the least demanding ground straight for the summit. The round's shortest day, with a season from December.",
+   "sources": [
+    "https://www.friflyt.no/topptur/harstad/haukebotinden",
+    "https://www.friflyt.no/randonee/turomraade-tjeldsund"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "slug": "kongsviktinden",
+  "verdict": "ok",
+  "corrections": [
+   "Registerets Kongsviktinden (Fjell, Tjeldsund) løser 980,1 mot publiserte 977 — toppsøket klatra 60 m frå SSR-punktet til den høgste cella.",
+   "Starten er den store Y-krysset ca. 150 m før bommen på Kongsvikdalveien (OSM w363815335/w363815334, nvdb 412869994). Bommen er ikkje kartlagt i OSM; krysspunktet mellom dei to vegsegmenta les 24,8 moh på DTM1, og 977 − 25 = 952, som forliker Fri Flyts 960 høydemeter.",
+   "Ruta reproduserer kilden: vegen innover Kongsvikdalen (57 moh der linja følgjer han), austover via sommarstien ved Sætran (registerets Sætran, Setervoll, 68.59292/16.19176), og det slakaste terrenget mot den søraustlege toppen.",
+   "Fri Flyt: KAST 2 – Utfordrende, alpinøks og stegjern på grunn av mogleg hard fokksnø og ising nær toppen. Nedkjøringa held 20–25 grader med to brattare parti på 30. Søraustsida er skredsida — fleire store skred årleg — og er ikkje linja her. Grad 3.",
+   "check_new_corridors: ingen amenity=parking eller barrier i OSM, men veg (residential/service/track) på punktet — parkeringa er i Y-krysset før bommen slik kilden beskriver.",
+   "Første løsning krysset tjernet på 324 moh (68.5910/16.2170, Innsjø i terrengmodellen) og tok 465-kulen nord i senkninga med 52 m tilbakegitt. Korridoren ble flyttet til sørkonturen — sør for tjernet, gjennom senkninga på 387 — og linja holder land med bare småbølgene igjen. Kongsvikelva krysses der veien gjør det, på bruene i den flettede strekninga.",
+   "Andre løsning klatret en 318-kul rett før sørkonturens søkk og ga tilbake 51 m — «sør for tjernet» ble flyttet 350 m øst, inn i selve konturen på 278 moh, så linja går gjennom søkket i stedet for over kulen."
+  ],
+  "rejectReason": "",
+  "corridor": {
+   "routeId": "nordsiden",
+   "routeName": "Nordsiden fra Kongsvikdalen",
+   "routeDescriptionFull": "Fra Y-krysset før bommen langs vegen innover Kongsvikdalen, østover via sommerstien ved Sætran og det slakeste terrenget mot den sørøstlige toppen",
+   "trailhead": {
+    "name": "Kongsvikdalen",
+    "lat": 68.5708,
+    "lng": 16.2365,
+    "elevationM": 25,
+    "osmEvidence": "Stort Y-kryss ca. 150 m før bommen på Kongsvikdalveien (OSM w363815335 møter w363815334, nvdb:id 412869994). Ingen amenity=parking eller barrier i OSM, men veg på punktet — parkeringa er i krysset slik kilden beskriver. DTM1 leser 24,8 moh."
+   },
+   "waypoints": [
+    {
+     "name": "Kongsvikdalen",
+     "lat": 68.58251,
+     "lng": 16.20194,
+     "elevationM": 57
+    },
+    {
+     "name": "Sætran",
+     "lat": 68.592,
+     "lng": 16.197,
+     "elevationM": 57
+    },
+    {
+     "name": "sommerstien østover",
+     "lat": 68.5895,
+     "lng": 16.206,
+     "elevationM": 186
+    },
+    {
+     "name": "lia søraustover",
+     "lat": 68.587,
+     "lng": 16.214,
+     "elevationM": 282
+    },
+    {
+     "name": "sør for tjernet",
+     "lat": 68.5855,
+     "lng": 16.226,
+     "elevationM": 278
+    },
+    {
+     "name": "senkninga",
+     "lat": 68.5856,
+     "lng": 16.236,
+     "elevationM": 387
+    },
+    {
+     "name": "toppflanken",
+     "lat": 68.5845,
+     "lng": 16.25,
+     "elevationM": 763
+    }
+   ],
+   "season": "jan–apr",
+   "aspect": "N",
+   "grade": 3,
+   "gradeReason": "KAST 2 – Utfordrende hos Fri Flyt, alpinøks og stegjern i utstyrslista på grunn av hard fokksnø og ising nær toppen. Nedkjøring 20–25 grader med to parti på 30. Grad 3.",
+   "roadClosedInWinter": false,
+   "hazardNotes": "Fri Flyt: KAST 2 – Utfordrende. Alpinøks og stegjern — hard fokksnø og ising nær toppen. Søraustsida er skredsida med fleire store skred årleg (30–40 grader) og skal ikkje køyrast; Vestrenna krev stabil snø og øks/stegjern. Nordsida gir skjerma pudder når andre himmelretningar er avblåste.",
+   "teaserNo": "1090 høydemeter fra Y-krysset før bommen: den vinterstengte veien innover Kongsvikdalen, sommerstien ved Sætran og sørkonturen over platået — det slakeste terrenget mot den sørøstlige toppen, med øks og stegjern i sekken.",
+   "teaserEn": "1090 metres of ascent from the Y-junction before the barrier: the winter-closed road into Kongsvikdalen, the summer trail at Sætran and the south contour across the plateau — the gentlest ground toward the south-east summit, with axe and crampons in the pack.",
+   "sources": [
+    "https://www.friflyt.no/topptur/harstad/kongsviktinden",
+    "https://www.friflyt.no/randonee/turomraade-tjeldsund"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "slug": "jakobstinden",
+  "verdict": "ok",
+  "corrections": [
+   "Registerets Jakobstinden (Topp, Kvæfjord/Tjeldsund) løser 976,0 mot publiserte 975 — grensetoppen med pinakkelen på sida (M3 for den som vil klyve, med 25 m tau til rappell — det står i guiden, men er ikkje turen).",
+   "Same start som Kongsviktinden: Y-krysset ca. 150 m før bommen på Kongsvikdalveien, 24,8 moh på DTM1. Kilden gir 960 høydemeter og 7 timar — 975 − 25 = 950, som forliker.",
+   "Ruta reproduserer kilden: ca. 4 km innover Kongsvikdalen, til høgre (aust… nordaust) over myrene ved Sætran, opp den breie rampa mot ryggen — der skavl kan danne seg, hold venstre (sør) — og det breie platået til topps.",
+   "Fri Flyt: KAST 2 – Utfordrende, alpinøks og stegjern. Lite trafikkert — urørt snø sannsynleg. Nedkjøring 15–30 grader tilbake til Kongsvikdalen. Grad 3.",
+   "check_new_corridors: ingen amenity=parking eller barrier i OSM, men veg (residential/service/track) på punktet — parkeringa er i Y-krysset før bommen slik kilden beskriver."
+  ],
+  "rejectReason": "",
+  "corridor": {
+   "routeId": "sorostsiden",
+   "routeName": "Sørøstsiden fra Kongsvikdalen",
+   "routeDescriptionFull": "Fra Y-krysset før bommen ca. 4 km innover Kongsvikdalen, til høyre over myrene ved Sætran, opp den brede rampa mot ryggen — hold sør der skavlen kan stå — og det brede platået til topps",
+   "trailhead": {
+    "name": "Kongsvikdalen",
+    "lat": 68.5708,
+    "lng": 16.2365,
+    "elevationM": 25,
+    "osmEvidence": "Stort Y-kryss ca. 150 m før bommen på Kongsvikdalveien (OSM w363815335 møter w363815334, nvdb:id 412869994). Ingen amenity=parking eller barrier i OSM, men veg på punktet — parkeringa er i krysset slik kilden beskriver. DTM1 leser 24,8 moh."
+   },
+   "waypoints": [
+    {
+     "name": "Kongsvikdalen",
+     "lat": 68.58251,
+     "lng": 16.20194,
+     "elevationM": 57
+    },
+    {
+     "name": "Sætran",
+     "lat": 68.592,
+     "lng": 16.197,
+     "elevationM": 57
+    },
+    {
+     "name": "myrene nordøstover",
+     "lat": 68.598,
+     "lng": 16.188,
+     "elevationM": 262
+    },
+    {
+     "name": "rampa",
+     "lat": 68.604,
+     "lng": 16.185,
+     "elevationM": 394
+    },
+    {
+     "name": "øvre rampa",
+     "lat": 68.609,
+     "lng": 16.183,
+     "elevationM": 502
+    },
+    {
+     "name": "platået",
+     "lat": 68.613,
+     "lng": 16.1815,
+     "elevationM": 720
+    }
+   ],
+   "season": "jan–apr",
+   "aspect": "SØ",
+   "grade": 3,
+   "gradeReason": "KAST 2 – Utfordrende hos Fri Flyt, alpinøks og stegjern, og ein skavl som kan stå over rampa — hold venstre (sør). Nedkjøring 15–30 grader. Grad 3 — og ein lang dag: kilden gir 7 timar.",
+   "roadClosedInWinter": false,
+   "hazardNotes": "Fri Flyt: KAST 2 – Utfordrende. Alpinøks og stegjern. Skavl kan danne seg over rampa mot ryggen — hold venstre (sør) gjennom partiet. Pinakkelen nord for toppen er M3-klyving med rappell og er ikkje turen. Lite trafikkert fjell.",
+   "teaserNo": "1060 høydemeter fra samme Y-kryss som Kongsviktinden: fire kilometer innover Kongsvikdalen, myrene ved Sætran, den brede rampa — hold sør for skavlen — og det brede platået til toppen med pinakkelen.",
+   "teaserEn": "1060 metres of ascent from the same Y-junction as Kongsviktinden: four kilometres into Kongsvikdalen, the moors at Sætran, the broad ramp — stay south of the cornice — and the wide plateau to the summit with the pinnacle.",
+   "sources": [
+    "https://www.friflyt.no/topptur/harstad/jakobstinden",
+    "https://www.friflyt.no/randonee/turomraade-tjeldsund"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "slug": "taraldsviktinden",
+  "verdict": "ok",
+  "corrections": [
+   "Registerets Taraldsviktinden (Fjell, Tjeldsund) løser 775,8 mot publiserte 777 — toppsøket klatra 350 m frå SSR-punktet til den høgste cella (68.55162/16.16806). Varden på 774 som kilden nemner, står på vestsida.",
+   "Starten er den store parkeringa innerst i Fiskefjorden like ved utløpet av Dalelva — E10 kryssar elva på Dalelvbrua (OSM w330621131). DTM1 leser 4,5 moh; 777 − 5 = 772, som forliker Fri Flyts 770 høydemeter. Alternativet hos kilden (Sjøvoll) krev grunneigars samtykke.",
+   "Ruta reproduserer kilden: traktorveien aust for Gårdselva (registerets Gårdselva, Elv, 68.56227/16.10681; OSM-track w1195541799 ligg aust for elva), av vegen før kraftlina, mot Mølnskaret (registerets Mølnskaret, Skar, 68.55864/16.16383, 521 moh) og ryggen sørover til toppen.",
+   "Fri Flyt: KAST 2 – Utfordrende, isøks og stegjern. Nedkjøring i hovudsak 15–25 grader med to parti på 30 og eit ryggparti på 30. Austsida med Tunellen (30–40 grader) er ekspertlinja og ikkje denne. Grad 3."
+  ],
+  "rejectReason": "",
+  "corridor": {
+   "routeId": "nordryggen",
+   "routeName": "Nordryggen fra Fiskefjorden",
+   "routeDescriptionFull": "Fra parkeringa innerst i Fiskefjorden langs traktorveien øst for Gårdselva, av veien før kraftlinja, mot Mølnskaret og ryggen sørover til toppen",
+   "trailhead": {
+    "name": "Fiskefjorden",
+    "lat": 68.5554,
+    "lng": 16.0834,
+    "elevationM": 5,
+    "osmEvidence": "Stor parkeringsplass innerst i Fiskefjorden ved utløpet av Dalelva; E10 (Kong Olavs vei) kryssar elva på Dalelvbrua (OSM w330621131). Ingen amenity=parking i OSM, men veg på punktet — parkeringa er langs vegen slik kilden beskriver. DTM1 leser 4,5 moh."
+   },
+   "waypoints": [
+    {
+     "name": "traktorveien øst for Gårdselva",
+     "lat": 68.559,
+     "lng": 16.1,
+     "elevationM": 56
+    },
+    {
+     "name": "traktorveien",
+     "lat": 68.5625,
+     "lng": 16.115,
+     "elevationM": 107
+    },
+    {
+     "name": "mellom vegetasjonen",
+     "lat": 68.5605,
+     "lng": 16.133,
+     "elevationM": 241
+    },
+    {
+     "name": "mot Mølnskaret",
+     "lat": 68.5595,
+     "lng": 16.145,
+     "elevationM": 360
+    },
+    {
+     "name": "Mølnskaret",
+     "lat": 68.557,
+     "lng": 16.163,
+     "elevationM": 538
+    },
+    {
+     "name": "ryggen sørover",
+     "lat": 68.554,
+     "lng": 16.164,
+     "elevationM": 669
+    }
+   ],
+   "season": "feb–apr",
+   "aspect": "N",
+   "grade": 3,
+   "gradeReason": "KAST 2 – Utfordrende hos Fri Flyt, isøks og stegjern i utstyrslista. Nedkjøring i hovudsak 15–25 grader, to parti på 30 og eit ryggparti på 30. Grad 3.",
+   "roadClosedInWinter": false,
+   "hazardNotes": "Fri Flyt: KAST 2 – Utfordrende. Isøks og stegjern. Ryggpartiet held 30 grader; austsida med Tunellen startar på 30–40 grader og krev stabil snø. Parkering ved Sjøvoll krev grunneigars samtykke — bruk plassen ved Dalelva.",
+   "teaserNo": "780 høydemeter fra fjæra innerst i Fiskefjorden: traktorveien øst for Gårdselva, mot Mølnskaret — og nordryggen til topps, med isøks og stegjern for ryggpartiet på 30 grader.",
+   "teaserEn": "780 metres of ascent from the shore at the head of Fiskefjorden: the tractor road east of Gårdselva, toward Mølnskaret — and the north ridge to the top, with ice axe and crampons for the 30-degree ridge section.",
+   "sources": [
+    "https://www.friflyt.no/topptur/harstad/taraldsviktinden",
+    "https://www.friflyt.no/randonee/turomraade-tjeldsund"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "slug": "snotinden-tjeldsund",
+  "verdict": "ok",
+  "corrections": [
+   "Registeret skriver Snytinden (Fjell, Tjeldsund/Lødingen); Fri Flyt skriver Snøtinden. Toppsøket løser 979,7 mot publiserte 980. Appen har allerede Snøtinden på Andørja — kortet heter Snøtinden i Tjeldsund, den andre kvalifiserte navnedubletten etter Storhornet i Kvæfjord.",
+   "Samme start som Taraldsviktinden: den store parkeringa innerst i Fiskefjorden ved utløpet av Dalelva (E10 krysser på Dalelvbrua, OSM w330621131). DTM1 leser 4,5 moh; 980 − 5 = 975, som forliker Fri Flyts 980 høydemeter.",
+   "Ruta reproduserer kilden: først sporet mot Taraldsviktinden, så traktorveien opp Norddalen (412 moh der linja står øverst i dalen), det langstrakte Marsslottfjellet (registerets skrivemåte, med to s-er; 632 og 798 moh der linja følger det) og ryggen sørvestover til toppen.",
+   "Fri Flyt: KAST 1 – Enkelt, men 7–8 timer — rundens lengste dag. Nedkjøringen har bare tre heng på rundt 25 grader; stegjern kjekt å ha på skaredager. Grad 2.",
+   "Sørvestvarianten (Snytindlemman–Revskarvatnet–Bollfjellet, registerets navn alle tre) er den krevende linja og ikke denne."
+  ],
+  "rejectReason": "",
+  "corridor": {
+   "routeId": "nordostsiden",
+   "routeName": "Nordøstsiden fra Fiskefjorden",
+   "routeDescriptionFull": "Fra parkeringa ved Dalelvas utløp først som mot Taraldsviktinden, så traktorveien opp Norddalen, over det langstrakte Marsslottfjellet og ryggen sørvestover til toppen",
+   "trailhead": {
+    "name": "Fiskefjorden",
+    "lat": 68.5554,
+    "lng": 16.0834,
+    "elevationM": 5,
+    "osmEvidence": "Samme startplass som Taraldsviktinden: stor parkeringsplass innerst i Fiskefjorden ved utløpet av Dalelva; E10 (Kong Olavs vei) krysser elva på Dalelvbrua (OSM w330621131). DTM1 leser 4,5 moh."
+   },
+   "waypoints": [
+    {
+     "name": "Norddalen",
+     "lat": 68.562,
+     "lng": 16.07,
+     "elevationM": 219
+    },
+    {
+     "name": "øvre Norddalen",
+     "lat": 68.564,
+     "lng": 16.065,
+     "elevationM": 412
+    },
+    {
+     "name": "Marsslottfjellet",
+     "lat": 68.569,
+     "lng": 16.053,
+     "elevationM": 632
+    },
+    {
+     "name": "ryggen sørvestover",
+     "lat": 68.57,
+     "lng": 16.047,
+     "elevationM": 798
+    },
+    {
+     "name": "mot toppen",
+     "lat": 68.569,
+     "lng": 16.04,
+     "elevationM": 855
+    },
+    {
+     "name": "toppflanken",
+     "lat": 68.568,
+     "lng": 16.034,
+     "elevationM": 938
+    }
+   ],
+   "season": "feb–apr",
+   "aspect": "NØ",
+   "grade": 2,
+   "gradeReason": "KAST 1 – Enkelt hos Fri Flyt, med bare tre heng på rundt 25 grader i nedkjøringen — men 7–8 timer og stegjern kjekt å ha på skaredager. Grad 2, og rundens lengste dag.",
+   "roadClosedInWinter": false,
+   "hazardNotes": "Fri Flyt: KAST 1 – Enkelt. Tre heng på rundt 25 grader; hard skare kan kreve stegjern. Sørvestsiden om Snytindlemman mot Revskarvatnet og over Bollfjellet er den krevende varianten og ikke denne ruta.",
+   "teaserNo": "1020 høydemeter fra Dalelvas utløp i Fiskefjorden: traktorveien opp Norddalen, det langstrakte Marsslottfjellet — og ryggen sørvestover til toppen, med bare tre heng på rundt 25 grader i hele nedkjøringen.",
+   "teaserEn": "1020 metres of ascent from Dalelva's outlet in Fiskefjorden: the tractor road up Norddalen, the long Marsslottfjellet — and the ridge south-west to the summit, with only three slopes of about 25 degrees in the whole descent.",
+   "sources": [
+    "https://www.friflyt.no/topptur/harstad/snotinden",
+    "https://www.friflyt.no/randonee/turomraade-tjeldsund"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "slug": "fiskefjordtindan",
+  "verdict": "ok",
+  "corrections": [
+   "Fiskefjordtindan (Fjell, Lødingen) er en rygg med to topper 876 m fra hverandre: registerpunktet står på den nordlige, som laserskannet leser 998,9 — men Fri Flyt publiserer 967, og den sørlige toppen klatrer til 964,7. Ruta fra Kanstadbotn når den sørlige først, og «følg ryggen østover» ender der: turens topp er den sørlige, se SUMMIT_SEED i resolve_summits.py.",
+   "Starten er parkeringslomma langs E10 ved Kanstadbotn — OSM har amenity=parking (n3376227868) rett nord for Kobbedalselv bru. DTM1 leser 15,0 moh; 967 − 15 = 952, som forliker Fri Flyts 1000 høydemeter med undulasjonen på ryggen.",
+   "Ruta reproduserer kilden: sommerstien fra Kanstadbotn, ryggen mellom vatna (Øvre Kobbedalsvatnet, registerets Tjern på 526 moh, passeres på ryggen vest for — linja holder land), vest for toppvatnet og ryggen austover til toppen.",
+   "Fri Flyt: KAST 1 – Enkelt, men alpinøks og stegjern i utstyrslista og en eksponert austrygg mot toppen — Gråfjell-regelen gir grad 3 mot målte lavere tall. Austsida (renna på 40 grader mot nordøst) er ekspertlinja med utløpssoner og ikke denne."
+  ],
+  "rejectReason": "",
+  "corridor": {
+   "routeId": "sorvestsiden",
+   "routeName": "Sørvestsiden fra Kanstadbotn",
+   "routeDescriptionFull": "Fra parkeringslomma ved Kanstadbotn etter sommerstien, ryggen mellom vatna, vest for toppvatnet og den eksponerte ryggen østover til toppen",
+   "trailhead": {
+    "name": "Kanstadbotn",
+    "lat": 68.49984,
+    "lng": 15.88378,
+    "elevationM": 15,
+    "osmEvidence": "Parkeringslomme langs E10 (Kanstadvegen) ved Kanstadbotn: OSM amenity=parking (n3376227868), rett nord for Kobbedalselv bru (w200877449). DTM1 leser 15,0 moh."
+   },
+   "waypoints": [
+    {
+     "name": "sommerstien",
+     "lat": 68.506,
+     "lng": 15.91,
+     "elevationM": 176
+    },
+    {
+     "name": "lia",
+     "lat": 68.513,
+     "lng": 15.935,
+     "elevationM": 369
+    },
+    {
+     "name": "ryggen mellom vatna",
+     "lat": 68.522,
+     "lng": 15.96,
+     "elevationM": 578
+    },
+    {
+     "name": "ryggen",
+     "lat": 68.528,
+     "lng": 15.98,
+     "elevationM": 702
+    },
+    {
+     "name": "vestflanken",
+     "lat": 68.53,
+     "lng": 15.997,
+     "elevationM": 856
+    },
+    {
+     "name": "ryggen austover",
+     "lat": 68.5318,
+     "lng": 16.007,
+     "elevationM": 856
+    }
+   ],
+   "season": "jan–apr",
+   "aspect": "SV",
+   "grade": 3,
+   "gradeReason": "KAST 1 – Enkelt hos Fri Flyt, men alpinøks og stegjern i utstyrslista og en eksponert austrygg til slutt — Gråfjell-regelen. Nedkjøringen samme vei er behagelige 20–25 grader. Grad 3.",
+   "roadClosedInWinter": false,
+   "hazardNotes": "Fri Flyt: KAST 1 – Enkelt på sørvestruta, med alpinøks og stegjern for den eksponerte austryggen mot toppen. Nordøstruta ned austsida går i ei fin renne på opptil 40 grader med mye utløpssoner — den krever stabil snø og er ikke denne linja.",
+   "teaserNo": "1080 høydemeter fra Kanstadbotn: sommerstien, ryggen mellom Kobbedalsvatna — og den eksponerte austryggen til slutt, med øks og stegjern i sekken og en austside som måler 67 grader der den er brattest.",
+   "teaserEn": "1080 metres of ascent from Kanstadbotn: the summer trail, the ridge between the Kobbedal lakes — and the exposed east ridge to finish, with axe and crampons in the pack and an east face measuring 67 degrees at its steepest.",
+   "sources": [
+    "https://www.friflyt.no/topptur/harstad/fiskefjordtindan",
+    "https://www.friflyt.no/randonee/turomraade-tjeldsund"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "slug": "nonstinden",
+  "verdict": "ok",
+  "corrections": [
+   "Registerets Nonstinden (Fjell, Kvæfjord) løser 929,9 mot publiserte 930.",
+   "Starten er den store parkeringsplassen ved rundkjøringa i Gullesfjordbotn (E10/fv. 85) — OSM har amenity=parking (w179056383) inntil rundkjøringa (w1064506321, junction=roundabout). DTM1 leser 48,6 moh.",
+   "Første utkast la ryggen nordover på austsida av botn — DTM1 svarte Havflate −5,5 på 68.5355/15.7250: Gullesfjordbotn skjærer inn mellom parkeringa og fjellet. Ruta går vest for botn (forbi OSM-parkeringa w706047902 på vestsida), og «ryggen nordover fra 155» er ryggen vest for fjorden.",
+   "Ruta reproduserer kilden: ryggfoten (75 moh der linja tar den), ryggen (289), vest inn i den bratte renna før det brattere partiet (376 der linja svinger inn), platået vest for 685-høgda (475) og traversen vestover (793) til toppen.",
+   "Fri Flyt: Komplekst, alpinøks og stegjern, nedkjøring 25–40 grader — turen skipper som grad 4. Karirenna (45–50 grader, steinsprang i øvre del) og vestsida mot Løbergsdalen (30–40) er de andre linjene og ikke denne."
+  ],
+  "rejectReason": "",
+  "corridor": {
+   "routeId": "ostsiden",
+   "routeName": "Østsiden fra Gullesfjordbotn",
+   "routeDescriptionFull": "Fra parkeringa ved rundkjøringa i Gullesfjordbotn vest for botn, opp ryggen nordover fra 155, vest inn i den bratte renna til platået vest for 685-høgda og traversen til toppen",
+   "trailhead": {
+    "name": "Gullesfjordbotn",
+    "lat": 68.52959,
+    "lng": 15.76334,
+    "elevationM": 49,
+    "osmEvidence": "Stor parkeringsplass ved rundkjøringa i Gullesfjordbotn: OSM amenity=parking (w179056383) inntil rundkjøringa E10/fv. 85 (w1064506321, junction=roundabout). DTM1 leser 48,6 moh."
+   },
+   "waypoints": [
+    {
+     "name": "vest for botn",
+     "lat": 68.5353,
+     "lng": 15.7229,
+     "elevationM": 6
+    },
+    {
+     "name": "ryggfoten",
+     "lat": 68.539,
+     "lng": 15.719,
+     "elevationM": 75
+    },
+    {
+     "name": "ryggen",
+     "lat": 68.542,
+     "lng": 15.715,
+     "elevationM": 289
+    },
+    {
+     "name": "inn i renna",
+     "lat": 68.545,
+     "lng": 15.706,
+     "elevationM": 376
+    },
+    {
+     "name": "platået vest for 685-høgda",
+     "lat": 68.5465,
+     "lng": 15.698,
+     "elevationM": 475
+    },
+    {
+     "name": "traversen",
+     "lat": 68.548,
+     "lng": 15.687,
+     "elevationM": 793
+    }
+   ],
+   "season": "jan–apr",
+   "aspect": "Ø",
+   "grade": 4,
+   "gradeReason": "Komplekst hos Fri Flyt, alpinøks og stegjern i utstyrslista, nedkjøring 25–40 grader og ei bratt renne i normalruta. Grad 4.",
+   "roadClosedInWinter": false,
+   "hazardNotes": "Fri Flyt: Komplekst. Alpinøks og stegjern. Nedkjøringen holder 25–40 grader; Karirenna mot nordøst er 45–50 grader med stort steinsprangfare i øvre del og krever stabil snø; vestsida mot Løbergsdalen måler 30–40. Fire bratte nedkjøringer — velg etter snøen.",
+   "teaserNo": "980 høydemeter fra rundkjøringa i Gullesfjordbotn: ryggen nordover vest for botn, den bratte renna til platået — og traversen til en topp uten én slak side: fire bratte nedkjøringer, og øks og stegjern i sekken.",
+   "teaserEn": "980 metres of ascent from the Gullesfjordbotn roundabout: the ridge north on the west side of the fjord head, the steep gully to the plateau — and the traverse to a summit without one gentle side: four steep descents, with axe and crampons in the pack.",
+   "sources": [
+    "https://www.friflyt.no/topptur/tromso/turbeskrivelse-nonstinden",
+    "https://friflyt.no/topptur/tromso/turomraade-kvaefjord-og-sortland"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "slug": "tverrfjellet",
+  "verdict": "ok",
+  "corrections": [
+   "Tverrfjellet over Melåa har ikke noe registernavn på toppen: SSRs nærmeste Tverrfjellet-oppslag står i Sortland, Lødingen og Tjeldsund, 12–20 km unna på andre fjell. Navnet er kildens og nabolagets — Tverrfjellelva drenerer fjellet og Tverrelvfoten (registerets Ås på 577 moh) står under det.",
+   "To topper svarte i søket: en 921,9-kul 2,9 km nordøst for Tverrelvfoten og denne 888,9-toppen rett nord for den — skilt av et skar terrengmodellen leser på ~576, altså to fjell. Kilden sier «rett opp mot toppen» fra vest for Tverrelvfoten, og rett opp er denne; publiserte 899 er før-skann-tallet (Rørnestinden-klassen, Δ −10).",
+   "Starten er lommene langs fylkesveien ved Melåa — kilden skriver F104, i dag fv. 7784 Austerfjordveien (OSM w621238984). DTM1 leser 12,2 moh; 899 − 12 = 887, som forliker Fri Flyts 880 høydemeter.",
+   "Ruta reproduserer kilden: traktorveien på nordsida av Melåelva (OSM-track w621238975; 23 moh der linja står i den), kraftlinja på myrene (171), vest for Tverrelvfoten (507) og det åpne området rett opp mot toppen.",
+   "Fri Flyt: KAST 1 – Enkelt, sørvendt nedkjøring 15–25 grader — enkel men morsom skikjøring, fin for ferske. Grad 2."
+  ],
+  "rejectReason": "",
+  "corridor": {
+   "routeId": "sorsiden",
+   "routeName": "Sørsiden fra Melåa",
+   "routeDescriptionFull": "Fra lommene langs Austerfjordveien ved Melåa etter traktorveien på nordsida av Melåelva, over myrene ved kraftlinja, vest for Tverrelvfoten og det åpne området rett opp mot toppen",
+   "trailhead": {
+    "name": "Melåa",
+    "lat": 68.6634,
+    "lng": 16.0812,
+    "elevationM": 12,
+    "osmEvidence": "Lommer langs fylkesveien ved Melåa — kildens F104 er i dag fv. 7784 Austerfjordveien (OSM w621238984). Ingen amenity=parking i OSM, men veg på punktet — parkeringa er langs vegen slik kilden beskriver. DTM1 leser 12,2 moh."
+   },
+   "waypoints": [
+    {
+     "name": "traktorveien",
+     "lat": 68.666,
+     "lng": 16.095,
+     "elevationM": 23
+    },
+    {
+     "name": "kraftlinja på myrene",
+     "lat": 68.672,
+     "lng": 16.115,
+     "elevationM": 171
+    },
+    {
+     "name": "vest for Tverrelvfoten",
+     "lat": 68.686,
+     "lng": 16.138,
+     "elevationM": 507
+    },
+    {
+     "name": "det åpne området",
+     "lat": 68.692,
+     "lng": 16.136,
+     "elevationM": 650
+    },
+    {
+     "name": "mot toppen",
+     "lat": 68.697,
+     "lng": 16.135,
+     "elevationM": 766
+    }
+   ],
+   "season": "feb–apr",
+   "aspect": "S",
+   "grade": 2,
+   "gradeReason": "KAST 1 – Enkelt hos Fri Flyt, sørvendt nedkjøring på 15–25 grader — enkel men morsom skikjøring som passer ferske med litt lengde i beina. Grad 2.",
+   "roadClosedInWinter": false,
+   "hazardNotes": "Fri Flyt: KAST 1 – Enkelt. Sørvendt og oversiktlig; hold den slake linja over det åpne området — terrenget øst for Tverrelvfoten er brattere. Lang tur for graden: nesten 900 høydemeter fra fjorden.",
+   "teaserNo": "880 høydemeter fra fjorden ved Melåa: traktorveien langs Melåelva, myrene ved kraftlinja, vest for Tverrelvfoten — og det åpne området rett opp mot toppen, med sørvendt kjøring på 15–25 grader hjem.",
+   "teaserEn": "880 metres of ascent from the fjord at Melåa: the tractor road along Melåelva, the moors at the power line, west of Tverrelvfoten — and the open ground straight up to the summit, with south-facing skiing at 15–25 degrees home.",
+   "sources": [
+    "https://www.friflyt.no/topptur/harstad/tverrfjellet-899",
+    "https://friflyt.no/topptur/tromso/turomraade-kvaefjord-og-sortland"
+   ],
+   "confidence": "medium"
+  }
+ },
+ {
+  "slug": "middagsfjellet",
+  "verdict": "ok",
+  "corrections": [
+   "Registerets Middagsfjellet (Fjell, Lødingen/Kvæfjord) løser 809,8 mot publiserte 811.",
+   "Samme start som Nonstinden: den store parkeringsplassen ved rundkjøringa i Gullesfjordbotn (OSM w179056383). DTM1 leser 48,6 moh; 811 − 49 = 762, som forliker Fri Flyts 760 høydemeter.",
+   "Ruta reproduserer kilden: den snødekte lia vest for Tverrelva (194 moh der linja går), over skoggrensa (461), Blåberget (708 — kildens navn; registeret har ikke navnet her) og toppflanken (767).",
+   "Fri Flyt: KAST 3 – Komplekst — «viktig at slakeste trasé velges siden ruten er omgitt av mer skredfarlig terreng» — med mulig ising over tregrensa og stegjern å vurdere. Ingen øks i utstyrslista og normallinja under 30 grader: grad 3, med kildens egne 30–40-partier i terrenget rundt.",
+   "Sesongen er desember–april hos kilden — Haukebøtinden-klassen: lavt fjell, kort anmarsj, lang sesong."
+  ],
+  "rejectReason": "",
+  "corridor": {
+   "routeId": "nordsiden",
+   "routeName": "Nordsiden fra Gullesfjordbotn",
+   "routeDescriptionFull": "Fra parkeringa ved rundkjøringa i Gullesfjordbotn opp den snødekte lia vest for Tverrelva, over Blåberget og den slakeste traseen til toppen",
+   "trailhead": {
+    "name": "Gullesfjordbotn",
+    "lat": 68.52959,
+    "lng": 15.76334,
+    "elevationM": 49,
+    "osmEvidence": "Stor parkeringsplass ved rundkjøringa i Gullesfjordbotn: OSM amenity=parking (w179056383) inntil rundkjøringa E10/fv. 85 (w1064506321, junction=roundabout). DTM1 leser 48,6 moh."
+   },
+   "waypoints": [
+    {
+     "name": "lia vest for Tverrelva",
+     "lat": 68.523,
+     "lng": 15.77,
+     "elevationM": 194
+    },
+    {
+     "name": "over skoggrensa",
+     "lat": 68.518,
+     "lng": 15.775,
+     "elevationM": 461
+    },
+    {
+     "name": "Blåberget",
+     "lat": 68.514,
+     "lng": 15.779,
+     "elevationM": 708
+    },
+    {
+     "name": "toppflanken",
+     "lat": 68.511,
+     "lng": 15.781,
+     "elevationM": 767
+    }
+   ],
+   "season": "des–apr",
+   "aspect": "N",
+   "grade": 3,
+   "gradeReason": "KAST 3 – Komplekst hos Fri Flyt: normallinja holder seg under 30 grader, men er omgitt av skredfarlig terreng og kan ise over tregrensa — stegjern å vurdere. Ingen øks i utstyrslista. Grad 3.",
+   "roadClosedInWinter": false,
+   "hazardNotes": "Fri Flyt: KAST 3 – Komplekst. Velg den slakeste traseen — ruten er omgitt av mer skredfarlig terreng, med partier på 30–40 grader rundt normallinja. Mulig ising over tregrensa; vurder stegjern. Vestsida mot Storskardet er brattere og krever egen snøvurdering.",
+   "teaserNo": "760 høydemeter fra rundkjøringa i Gullesfjordbotn — rundens korteste tur, og den slakeste traseen er hele poenget: lia vest for Tverrelva og Blåberget, med brattere skredterreng på alle kanter.",
+   "teaserEn": "760 metres of ascent from the Gullesfjordbotn roundabout — the round's shortest tour, and the gentlest line is the whole point: the hillside west of Tverrelva and Blåberget, with steeper avalanche terrain on every side.",
+   "sources": [
+    "https://www.friflyt.no/topptur/harstad/middagsfjellet-811",
+    "https://friflyt.no/topptur/tromso/turomraade-kvaefjord-og-sortland"
+   ],
+   "confidence": "high"
+  }
  }
 ]

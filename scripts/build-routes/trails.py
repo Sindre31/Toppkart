@@ -52,7 +52,7 @@ os.makedirs(CACHE, exist_ok=True)
 # next real try. The fallback is worth keeping for the day kumi is the one that
 # is down, so it stays — as the last resort rather than as every second turn.
 ENDPOINTS = [
-    "https://overpass.kumi.systems/api/interpreter",
+    "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
     "https://overpass.kumi.systems/api/interpreter",
     "https://overpass-api.de/api/interpreter",
 ]

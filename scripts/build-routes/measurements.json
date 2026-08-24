@@ -2149,5 +2149,75 @@
    "figure": "6,11 km ute",
    "how": "treeline_scan i guide_facts.py: siste skogsverteks langs linja, med 600 m grunn og 150 m høgd utan skog som stoppkrav."
   }
+ ],
+ "satertinden": [
+  {
+   "what": "Alle kantar ved toppen (Sætertinden)",
+   "figure": "N/NV/V er dei slake sidene: 15,1–19,2° i snitt over 500 m, brattaste vindauge 22,3–34,7°. SE-flanken måler 60,1° i vindauget 160–220 m ut og S 49,6° — sørrenna og vestrennene er ekspertlinjer, og målinga er samd",
+   "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+  }
+ ],
+ "haukebotinden": [
+  {
+   "what": "Alle kantar ved toppen (Haukebøtinden)",
+   "figure": "Austsida er den slake: 8,6° i snitt over 500 m, brattaste vindauge 15,4°. Sør måler 56,6° i vindauget 70–130 m ut og SV 49,8° — dei bratte variantane ligg sør og nord for normalruta",
+   "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+  }
+ ],
+ "kongsviktinden": [
+  {
+   "what": "Alle kantar ved toppen (Kongsviktinden)",
+   "figure": "SE-flanken (skredsida hos kilden) måler 51,0° i det fyrste vindauget frå toppen og 39,5° i snitt; N 44,8° 90–150 m ut. Slakast er NV (19,1° snitt) — det er den vegen linja kjem opp",
+   "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+  }
+ ],
+ "jakobstinden": [
+  {
+   "what": "Alle kantar ved toppen (Jakobstinden)",
+   "figure": "SE-sida linja brukar måler 20,2° i snitt med brattaste vindauge 29,6° 290–350 m ut; aust 12,6° i snitt. S og SV måler 54,1° og 52,3° — platået sluttar brått mot sør",
+   "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+  }
+ ],
+ "taraldsviktinden": [
+  {
+   "what": "Alle kantar ved toppen (Taraldsviktinden)",
+   "figure": "SV er den slake sida (5,5° i snitt); aust og søraust måler 53,3° og 60,5° — Tunellen-sida. Nord 48,5° i vindauget 90–150 m ut, så nordryggen linja følgjer vel sine sving",
+   "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+  }
+ ],
+ "snotinden-tjeldsund": [
+  {
+   "what": "Alle kantar ved toppen (Snøtinden i Tjeldsund)",
+   "figure": "N og NV er dei slake sidene (11,6–12,1° i snitt) — det er den vegen ryggen frå Marsslottfjellet kjem. SE måler 49,8° i vindauget 200–260 m ut og SV 42,7° nær toppen; sør mot Snytindlemman er den krevjande varianten, og målinga er samd",
+   "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+  }
+ ],
+ "fiskefjordtindan": [
+  {
+   "what": "Alle kantar ved toppen (Fiskefjordtindan, sørtoppen)",
+   "figure": "Vest er den slake sida (10,3° i snitt) — ruta kjem den vegen. Austsida måler 67,2° i vindauget 320–380 m ut, sør 62,7° og søraust 58,9° frå fyrste meter — austryggen er eksponert slik kilden seier, og nordaustrenna (40° hos kilden) ligg i den flanken",
+   "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+  }
+ ],
+ "nonstinden": [
+  {
+   "what": "Alle kantar ved toppen (Nonstinden)",
+   "figure": "Ingen slak side: alle åtte peilingar måler 21,5–38,9° i snitt, med 50,3° mot NE (Karirenna-sida), 54,0° mot sør og 45–49° mot V/NV/SV. Fire bratte nedkjøringar er kildens ord, og målinga er samd",
+   "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+  }
+ ],
+ "tverrfjellet": [
+  {
+   "what": "Alle kantar ved toppen (Tverrfjellet)",
+   "figure": "SE og SV er dei slake sidene (5,6–5,8° i snitt) og sør 13,0° — den sørvendte nedkjøringa. Nord måler 49,7° i vindauget 80–140 m ut mot skaret — ikkje skyt over toppen mot 921-kulen",
+   "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+  }
+ ],
+ "middagsfjellet": [
+  {
+   "what": "Alle kantar ved toppen (Middagsfjellet)",
+   "figure": "Nord er den slake sida (9,5° i snitt) — normalruta. Vest mot Storskardet måler 54,4° i vindauget 60–120 m ut, SV 49,3 og NV 46,7 — kildens «omgitt av mer skredfarlig terreng», målt",
+   "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+  }
  ]
 }
