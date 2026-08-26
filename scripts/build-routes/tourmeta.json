@@ -307,6 +307,50 @@
   "season": "jan–apr",
   "hasGuide": false
  },
+ "skartinden": {
+  "name": "Skartinden",
+  "region": "Harstad",
+  "summitM": 1149,
+  "verticalM": 1290,
+  "duration": "5–7 t",
+  "grade": 4,
+  "aspect": "V",
+  "season": "jan–apr",
+  "hasGuide": false
+ },
+ "langlitinden": {
+  "name": "Langlitinden",
+  "region": "Harstad",
+  "summitM": 1276,
+  "verticalM": 1300,
+  "duration": "5–7 t",
+  "grade": 4,
+  "aspect": "V",
+  "season": "jan–apr",
+  "hasGuide": false
+ },
+ "krakrotinden": {
+  "name": "Kråkrøtinden",
+  "region": "Harstad",
+  "summitM": 1186,
+  "verticalM": 1190,
+  "duration": "5–7 t",
+  "grade": 4,
+  "aspect": "N",
+  "season": "feb–apr",
+  "hasGuide": false
+ },
+ "ristinden": {
+  "name": "Ristinden",
+  "region": "Harstad",
+  "summitM": 1056,
+  "verticalM": 1050,
+  "duration": "4–6 t",
+  "grade": 4,
+  "aspect": "SV",
+  "season": "feb–apr",
+  "hasGuide": false
+ },
  "snotinden": {
   "name": "Snøtinden",
   "region": "Harstad",
@@ -339,6 +383,17 @@
   "aspect": "V",
   "season": "feb–apr",
   "hasGuide": true
+ },
+ "sula": {
+  "name": "Sula",
+  "region": "Harstad",
+  "summitM": 848,
+  "verticalM": 830,
+  "duration": "3–5 t",
+  "grade": 2,
+  "aspect": "SØ",
+  "season": "feb–apr",
+  "hasGuide": false
  },
  "hemmestadfjellet": {
   "name": "Hemmestadfjellet",

@@ -3194,5 +3194,120 @@
    "check_new_corridors: ingen amenity=parking, men veg (secondary fv. 7784/service/track) på punktet — lommene er langs vegen slik kilden beskriver."
   ],
   "notes": ""
+ },
+ "langlitinden": {
+  "season": "jan–apr",
+  "aspect": "V",
+  "grade": 4,
+  "gradeReason": "KAST 3 – Komplekst hos Fri Flyt, alpinøks og stegjern, og en travers på 800–900 moh med skredhistorikk. Grad 4 — Nordens høyeste øytopp krever stabile dager.",
+  "roadClosedInWinter": false,
+  "teaserNo": "1300 høydemeter fra snuplassen ved Vang til Nordens høyeste øytopp: sommerruta langs Bjørndalselva, flata med vatnet på land — og traversen på 800–900, partiet med skredhistorikk, før toppflanken.",
+  "teaserEn": "1300 metres of ascent from the road end at Vang to the Nordic countries' highest island summit: the summer route along Bjørndalselva, the flat with the lake on dry land — and the traverse at 800–900, the section with avalanche history, before the summit flank.",
+  "hazardNotes": "Fri Flyt: KAST 3 – Komplekst. Alpinøks og stegjern. Nedkjøringa holder 20–25 grader med parti på 35; traversen på 800–900 er mest utsatt, med historikk for store skred. Storeflaska på nordsiden er vedvarende bratt med parti på 45 grader og en annen linje.",
+  "sources": [
+   "https://www.friflyt.no/topptur/harstad/langlitinden",
+   "https://www.friflyt.no/randone/turomraade-andoerja"
+  ],
+  "confidence": "researched, verified (ok), no local avalanche bulletin read",
+  "corrections": [
+   "Registerets Langlitinden (Fjell, Ibestad) løser 1275,5 mot publiserte 1276 — Andørjas høyeste, og ifølge kilden Nordens høyeste topp på en øy: primærfaktoren er hele fjellets høyde.",
+   "Starten er snuplassen ved Vang der Straumbotnveien ender — OSM-stien (247 punkter) austover langs Bjørndalselva starter på 68.86157/17.30511, DTM1 leser 7,7 moh. 1276 − 8 = 1268, som forliker Fri Flyts 1270 høydemeter.",
+   "Ruta reproduserer kilden: vestsida av Bjørndalselva, over elva og bratt opp sommerruta til flata med det vesle vatnet, høyredreining sørover på 800–900 — partiet med skredhistorikk — traversen opp mot 1033-høgda (DTM1 leser 1036,2 der linja er festet), og venstre nordover mot toppen. De siste 20 metrene kan være avblåst.",
+   "Fri Flyt: KAST 3 – Komplekst, alpinøks og stegjern — grad 4. Nedkjøringa holder for det meste 20–25 grader med parti på 35. Østsiden (Blåisen og Langlia), nordsiden med Storeflaska (vedvarende bratt, parti på 45), Lilleflaska, Rytteran, Rytterrenna og Rytterkløfta er variantene og ikke denne.",
+   "check_new_corridors: snuplassen ved Vang er vegenden — Straumbotnveien (OSM unclassified/service) ender på punktet."
+  ],
+  "notes": ""
+ },
+ "skartinden": {
+  "season": "jan–apr",
+  "aspect": "V",
+  "grade": 4,
+  "gradeReason": "KAST 3 – Komplekst hos Fri Flyt, alpinøks og stegjern, og ei nedkjøring på 30–40 grader med 60-graders klipper rundt Ytterholla. Grad 4.",
+  "roadClosedInWinter": false,
+  "teaserNo": "1290 høydemeter fra Vang: elvedalen til Ytterholla, skardet mellom Vasskartinden og Skartinden — og flata austover til toppen, med 60-graders klipper å styre unna i nedkjøringa.",
+  "teaserEn": "1290 metres of ascent from Vang: the river valley to Ytterholla, the col between Vasskartinden and Skartinden — and the flat east to the summit, with 60-degree cliffs to steer clear of on the descent.",
+  "hazardNotes": "Fri Flyt: KAST 3 – Komplekst. Alpinøks og stegjern. Nedkjøringa er 30–40 grader øverst og 35–40 grader over Ytterholla, omkranset av 60-graders klipper — presis veivalg, særlig i flatt lys.",
+  "sources": [
+   "https://www.friflyt.no/topptur/harstad/skartinden",
+   "https://www.friflyt.no/randone/turomraade-andoerja"
+  ],
+  "confidence": "researched, verified (ok), no local avalanche bulletin read",
+  "corrections": [
+   "Registerets Skartinden (Fjell, Ibestad) løser 1148,9 mot publiserte 1150.",
+   "Starten er samme snuplass ved Vang som Langlitinden — 68.86157/17.30511, DTM1 7,7 moh. 1150 − 8 = 1142, som forliker Fri Flyts 1140 høydemeter.",
+   "Ruta reproduserer kilden: opp elvedalen mot Ytterholla (registerets Ytterholla, Søkk, 68.87256/17.31242), opp holla om snøen tillater det, til skardet mellom Vasskartinden og Skartinden (DTM1 leser 795,2 der linja er festet) — og ryggen eller den store flata austover til toppen.",
+   "Fri Flyt: KAST 3 – Komplekst, alpinøks og stegjern — grad 4. Nedkjøringa er 30–40 grader øverst og 35–40 over Ytterholla, med 60-graders klipper omkring — presis veivalg kreves.",
+   "check_new_corridors: samme vegende som Langlitinden — snuplassen ved Vang."
+  ],
+  "notes": ""
+ },
+ "krakrotinden": {
+  "season": "feb–apr",
+  "aspect": "N",
+  "grade": 4,
+  "gradeReason": "KAST 3 – Komplekst hos Fri Flyt, alpinøks og stegjern, og en passasje på 40 grader rett under toppen. Grad 4.",
+  "roadClosedInWinter": false,
+  "teaserNo": "1190 høydemeter fra Fornes: dalen mot Blåisen, morenen sør for isen — og 40-graderspassasjen til toppen, med øks og stegjern i sekken.",
+  "teaserEn": "1190 metres of ascent from Fornes: the valley towards Blåisen, the moraine south of the ice — and the 40-degree passage to the summit, with axe and crampons in the pack.",
+  "hazardNotes": "Fri Flyt: KAST 3 – Komplekst. Alpinøks og stegjern. Nordruta går gjennom en 40-graderspassasje under toppen; sørruta (30–40 grader) er mer skredutsatt. Blåisen er en isbre — linja holder morenen sør for isen.",
+  "sources": [
+   "https://www.friflyt.no/topptur/harstad/krakrotinden",
+   "https://www.friflyt.no/randone/turomraade-andoerja"
+  ],
+  "confidence": "researched, verified (ok), no local avalanche bulletin read",
+  "corrections": [
+   "Registerets Kråkrøtinden (Topp, Ibestad) løser 1186,5 mot publiserte 1187.",
+   "Starten er den lille asfaltparkeringa ved Fornes på vestsida av Storelva — 68.86870/17.47187, DTM1 leser 16,3 moh; OSM-stien opp dalen starter 400 m nordvest. 1187 − 16 = 1171; Fri Flyts 1270 høydemeter bærer undulasjonen i dalen.",
+   "Ruta reproduserer kilden: nordruta — samme veg som Langlitindens austside opp dalen mot Blåisen (registerets Blåisen, Isbre, 68.86894/17.39566 — linja held moreneterrenget sør for isen), så sørover i brattere terreng gjennom 40-graderspassasjen til toppen.",
+   "Fri Flyt: KAST 3 – Komplekst, alpinøks og stegjern — grad 4. Sørruta er brattere (30–40 grader) og mer skredutsatt; varianten mot Reintinden (587) fra Blåisen er en annen linje.",
+   "check_new_corridors: parkering ved Fornes — servicevegen fra Ibestadveien på punktet, kilden beskriver liten asfaltplass vest for Storelva."
+  ],
+  "notes": ""
+ },
+ "ristinden": {
+  "season": "feb–apr",
+  "aspect": "SV",
+  "grade": 4,
+  "gradeReason": "KAST 3 – Komplekst hos Fri Flyt, alpinøks og stegjern, og ei nedkjøring på 30–40 grader før skrårenna på opp mot 45. Grad 4.",
+  "roadClosedInWinter": false,
+  "teaserNo": "1050 høydemeter fra skolen på Ånstad: lia og myrene til Breilifatet — og rampa på sørvestsiden til toppen, der Johammarrenna og Risenrenna venter på stabile dager.",
+  "teaserEn": "1050 metres of ascent from the school at Ånstad: the hillside and the moors to Breilifatet — and the ramp on the south-west side to the summit, where Johammarrenna and Risenrenna wait for stable days.",
+  "hazardNotes": "Fri Flyt: KAST 3 – Komplekst. Alpinøks og stegjern. Nedkjøringa er ca. 30–40 grader før skrårenna på opp mot 45; Johammarrenna (rundt 45 grader) og Risenrenna på nordsiden krever stabil snø.",
+  "sources": [
+   "https://www.friflyt.no/topptur/harstad/ristinden",
+   "https://www.friflyt.no/randone/turomraade-andoerja"
+  ],
+  "confidence": "researched, verified (ok), no local avalanche bulletin read",
+  "corrections": [
+   "Registerets Ristinden (Fjell, Ibestad) løser 1055,9 mot publiserte 1055.",
+   "Starten er parkeringa ved idrettsanlegget/skolen på Ånstad (OSM-parkeringen «Ånstad skole», 68.82804/17.19265, DTM1 43,5 moh). 1055 − 44 = 1011, som forliker Fri Flyts 1040 høydemeter.",
+   "Ruta reproduserer kilden: sørsiden om Breilifatet — opp lia fra skolen, myrene, og rampa/traversen på sørvestsiden av toppen (registerets Breilifatet, Berg, 68.83922/17.24864). Johammarrenna (rundt 45 grader, registerets Johammaren, Berg, 68.83738/17.25476) og Risenrenna på nordsiden er variantene.",
+   "Fri Flyt: KAST 3 – Komplekst, alpinøks og stegjern — grad 4. Nedkjøringa er ca. 30–40 grader bratt før skrårenna som er opp mot 45.",
+   "check_new_corridors: amenity=parking «Ånstad skole» på punktet."
+  ],
+  "notes": ""
+ },
+ "sula": {
+  "season": "feb–apr",
+  "aspect": "SØ",
+  "grade": 2,
+  "gradeReason": "KAST 1 – Enkelt hos Fri Flyt med heng på litt over 20 grader — men 830 høydemeter og skogskjøring gjør dette til grad 2 i den lette enden, Ibestads innsteg.",
+  "roadClosedInWinter": false,
+  "teaserNo": "830 høydemeter fra Breivoll: den jevne traktorveien, opp Skogsheia der skogen tynnes — og nesten rett linje til M-fjellets topp, på heng som måler litt over 20 grader.",
+  "teaserEn": "830 metres of ascent from Breivoll: the even tractor road, up Skogsheia where the forest thins — and a nearly straight line to the top of the M mountain, on slopes measuring just over 20 degrees.",
+  "hazardNotes": "Fri Flyt: KAST 1 – Enkelt. Hengene måler litt over 20 grader; tidlig på sesongen kan det være lite snø i skogen. Åpen flankekjøring og lett skogskjøring på nedturen.",
+  "sources": [
+   "https://www.friflyt.no/topptur/harstad/sula",
+   "https://www.friflyt.no/randonee/turomraade-rolla"
+  ],
+  "confidence": "researched, verified (ok), no local avalanche bulletin read",
+  "corrections": [
+   "Registerets Sula (Fjell, Ibestad) løser 847,7 mot publiserte 848 — M-formasjonen med naboen Sæta (68.76926/17.05721) kjennes igjen fra Harstad.",
+   "Starten er den lille parkeringa ved starten av skogsveien nær Breivoll småbåthavn — traktorveien (OSM-track) tar av fra Ibestadveien på 68.75531/17.13825, DTM1 leser 21,6 moh. 848 − 22 = 826; Fri Flyts 760 høydemeter regner trolig fra krysset lenger opp.",
+   "Ruta reproduserer kilden: den jevne fine traktorveien fra Breivoll til krysset (DTM1 68,4 moh), veien videre oppover, og av opp Skogsheia (registerets Skogsheia, Hei, 68.76052/17.08034) der skogen tynnes — litt til venstre for bratt terreng rett fram, så nesten rett linje til toppen.",
+   "Fri Flyt: KAST 1 – Enkelt, heng på litt over 20 grader — populær fordi fjellski også kan brukes. Kildens «trygg når skredfaren truer andre topper» står som kildesitat, ikke som vår påstand.",
+   "check_new_corridors: traktorveien (OSM-track) på punktet ved Ibestadveien."
+  ],
+  "notes": ""
  }
 }

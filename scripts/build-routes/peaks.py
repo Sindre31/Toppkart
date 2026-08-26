@@ -366,4 +366,11 @@ PEAKS = [
     ("horntindan", "Horntindan", ["Kvæfjord"], 910, 68.70284, 16.09521),
     ("hemmestadfjellet", "Hemmestadfjellet", ["Kvæfjord"], 687, 68.71780, 16.10741),
     ("melaaksla", "Melåaksla", ["Kvæfjord"], 915, 68.63268, 16.13913),
+    # — Ibestad-runden: Andørja og Rolla. Langlitinden er Nordens høyeste
+    #   øytopp; Sula på Rolla er rundens KAST 1-inngang. —
+    ("langlitinden", "Langlitinden", ["Ibestad"], 1276, 68.86787, 17.38736),
+    ("skartinden", "Skartinden", ["Ibestad"], 1150, 68.87759, 17.33604),
+    ("krakrotinden", "Kråkrøtinden", ["Ibestad"], 1187, 68.86263, 17.40069),
+    ("ristinden", "Ristinden", ["Ibestad"], 1055, 68.84254, 17.25275),
+    ("sula", "Sula", ["Ibestad"], 848, 68.76811, 17.05898),
 ]

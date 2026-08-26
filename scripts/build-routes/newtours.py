@@ -189,4 +189,10 @@ NEW_TOURS = {
     "horntindan": ("Horntindan", "Harstad"),
     "hemmestadfjellet": ("Hemmestadfjellet", "Harstad"),
     "melaaksla": ("Melåaksla", "Harstad"),
+    # — Ibestad-runden —
+    "langlitinden": ("Langlitinden", "Harstad"),
+    "skartinden": ("Skartinden", "Harstad"),
+    "krakrotinden": ("Kråkrøtinden", "Harstad"),
+    "ristinden": ("Ristinden", "Harstad"),
+    "sula": ("Sula", "Harstad"),
 }
