@@ -1254,5 +1254,85 @@
     "summit_dtm": 809.8,
     "claims": 811,
     "stored_off_km": 0.02
+  },
+  "nona": {
+    "name": "Nona",
+    "lat": 68.92158,
+    "lng": 16.45062,
+    "summit_dtm": 1008.9,
+    "claims": 1012,
+    "stored_off_km": 0.0
+  },
+  "trolltinden": {
+    "name": "Trolltinden",
+    "lat": 68.91391,
+    "lng": 16.48921,
+    "summit_dtm": 917.9,
+    "claims": 919,
+    "stored_off_km": 0.01
+  },
+  "stortussen": {
+    "name": "Stortussen",
+    "lat": 68.97434,
+    "lng": 16.36664,
+    "summit_dtm": 944.8,
+    "claims": 941,
+    "stored_off_km": 0.0
+  },
+  "litletussen": {
+    "name": "Litjetussen",
+    "lat": 68.96367,
+    "lng": 16.40377,
+    "summit_dtm": 795.0,
+    "claims": 796,
+    "stored_off_km": 0.01
+  },
+  "hattfjellet": {
+    "name": "Hattfjellet",
+    "lat": 68.97467,
+    "lng": 16.32649,
+    "summit_dtm": 857.2,
+    "claims": 856,
+    "stored_off_km": 0.02
+  },
+  "slattheia": {
+    "name": "Slåttheia",
+    "lat": 68.95164,
+    "lng": 16.3404,
+    "summit_dtm": 694.0,
+    "claims": 690,
+    "stored_off_km": 0.01
+  },
+  "middagstinden-kvafjord": {
+    "name": "Middagstinden",
+    "lat": 68.71035,
+    "lng": 16.15845,
+    "summit_dtm": 921.9,
+    "claims": 923,
+    "stored_off_km": 0.19
+  },
+  "horntindan": {
+    "name": "Horntindan",
+    "lat": 68.70296,
+    "lng": 16.09495,
+    "summit_dtm": 910.9,
+    "claims": 910,
+    "stored_off_km": 0.02
+  },
+  "hemmestadfjellet": {
+    "name": "Hemmestadfjellet",
+    "lat": 68.71739,
+    "lng": 16.10727,
+    "summit_dtm": 686.5,
+    "claims": 687,
+    "stored_off_km": 0.05
+  },
+  "melaaksla": {
+    "name": "Melåaksla",
+    "lat": 68.63266,
+    "lng": 16.13919,
+    "summit_dtm": 916.2,
+    "claims": 915,
+    "stored_off_km": 0.0
   }
 }

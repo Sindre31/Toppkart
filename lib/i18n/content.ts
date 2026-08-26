@@ -328,6 +328,26 @@ export const TOUR_TEASER_EN: Record<string, string> = {
     "880 metres of ascent from the fjord at Melåa: the tractor road along Melåelva, the moors at the power line, west of Tverrelvfoten — and the open ground straight up to the summit, with south-facing skiing at 15–25 degrees home.",
   middagsfjellet:
     "760 metres of ascent from the Gullesfjordbotn roundabout — the round's shortest tour, and the gentlest line is the whole point: the hillside west of Tverrelva and Blåberget, with steeper avalanche terrain on every side.",
+  nona:
+    "1020 metres of ascent from Dale: the ski track into Dalsdalen, across Dalselva — and the broadest gully to Grytøya's highest, 30–45 degrees sustained with axe and crampons in the pack.",
+  trolltinden:
+    "940 metres of ascent from the Bjørnerå ferry quay: gentle Bjørnrådalen between steep walls, the ridge to the shoulder — and the final step on foot, with cornices to mind.",
+  stortussen:
+    "1020 metres of ascent from Dale: the summer trail to Storvatnet and Trollvatnet, the gentlest ground up — and the ridge north to the summit, where the skis can wait below the final step.",
+  litletussen:
+    "760 metres of ascent from Dale: the summer trail towards Storvatnet, around the lake on dry land — and open forest north-east to the south ridge, the gentlest way onto the summit.",
+  hattfjellet:
+    "830 metres of ascent from Grøtavær: the tractor road up Bjørndalen, left where it levels — and the south side to the top, with Andøya on the horizon from the island's outermost tour.",
+  slattheia:
+    "640 metres of ascent from Dale: the summer trail towards Storvatnet, past the 342 knoll — and the broad south-east slope to the top, clear of most avalanche terrain. Grytøya's easiest way in.",
+  "middagstinden-kvafjord":
+    "910 metres of ascent from Hundstadsætran: the tractor road to Vebbestadvatnet, east past the big boulder — and a 45–50 degree summit section, often hard crust, with axe and crampons.",
+  horntindan:
+    "930 metres of ascent from Skommesvik: up towards Hemmestadfjellet and the ridge south to Horntindan — with the normal descent over Hornflata at 35–40 degrees, for stable days.",
+  hemmestadfjellet:
+    "680 metres of ascent from Vebbestadsætran: the tractor road through the spruce plantation — and the ridge west of Vebbestadvatnet to the top, even, easy skiing that suits newcomers.",
+  melaaksla:
+    "960 metres of ascent from Melå: the tractor road to Dalbotnen, past the hut at the 505 knoll — and the long ridge south to the summit, with 15–25 degree skiing home above Austerfjorden.",
 
 };
 
@@ -1140,6 +1160,138 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       caption: "784 metres of ascent over 3.06 km from Finnelva, with the steepest ground — 30.0 degrees between 564 and 588 m — exactly where the source says the short pitch lies.",
     },
   },
+  hattfjellet: {
+    intro:
+      "829 metres of ascent over 3.97 km from Grøtavær — farthest from the ferry, with Andøya on the horizon — to Hattfjellet: the summit resolves 857.2 against the published 856. The tractor road up Bjørndalen, left where it levels, and the south side to the top; the source gives the south side 30–35 degrees on the descent. KAST 2 – Challenging with ice axe and crampons. Grade 3.",
+    ascent: [
+      "From the road to the shooting range at Grøtavær — 81 m where the line begins — it is steep from the first metre: the band from 0 to 100 measures 26.0 degrees over the short rise, before the tractor road in Bjørndalen takes over at 121 m.",
+      "The tractor road up Bjørndalen to upper Bjørndalen at 339 — the treeline sits at 378 after 2.12 km — then left where the ground levels, at 706 m as the corridor stands.",
+      "The south side to the top from 800: the steepest single step on the line, 31.4 degrees, sits already between 351 and 371 m low in the hillside, and the band from 500 to 600 is the steepest on average at 21.6. The cairn at 857 has Andøya on the horizon.",
+    ],
+    descent: [
+      "The south side is the source's descent: 30–35 degrees. Sydrenna (35–40), the east side with its narrow passage, and the north lines Goldfishrenna and Frogman — 45–50 degrees with an abseil off the cornice — are the variants for other days and other people.",
+      "The flank probe is clear about where not to go: the east flank measures 66.6 degrees and the SE 69.3 in their steepest windows, while W and NW are the gentle sides at 9.1–10.7 on average — and the south side the route uses, 12.0.",
+    ],
+    avalanche: [
+      {
+        title: "The south side",
+        body: "The source gives the descent 30–35 degrees — avalanche terrain when the snow is unstable. The steepest single step on the model's line sits low, 31.4 degrees between 351 and 371 m in the forest — slopes to judge on the way up as well.",
+      },
+      {
+        title: "North and east",
+        body: "Goldfishrenna and Frogman in the north measure 45–50 degrees and demand an abseil off the cornice; the east flank reads 66.6 and the SE 69.3 in their steepest windows. The normal route has no reason to go near either.",
+      },
+      {
+        title: "Before you go",
+        body: "Hattfjellet sits in the Sør-Troms forecasting region, an A-region with a daily avalanche bulletin — the first round where all ten summits answer to the same region. Check varsom.no. The February–April season is Fri Flyt's. Transceiver, probe and shovel — and ice axe and crampons where the source demands them.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "81 m",
+      endLabel: "857 m",
+      distanceLabel: "4.0 km",
+      caption: "829 metres of ascent over 3.97 km from Grøtavær: the tractor road up Bjørndalen from 121, left where it levels at 706 — and the south side to the cairn at 857, with Andøya on the horizon.",
+    },
+  },
+  stortussen: {
+    intro:
+      "1024 metres of ascent over 5.54 km from Dale to Stortussen: the summit search resolves 944.8 where the source writes 941. The summer trail to Storvatnet and Trollvatnet, the gentlest ground up and the ridge north — and a summit section that demands extra focus: the skis can be left behind, and 30 m of rope is mentioned for difficult conditions. KAST 2 – Challenging with ice axe and crampons. Grade 3, at the heavy end.",
+    ascent: [
+      "From Dale at 58 m follow the summer trail north — 294 m where the line stands in it — and pass Trollvatnet on dry land along the east shore, 337 m. The treeline arrives already at 311 after 1.67 km, and the band from 300 to 400 measures 4.1 degrees across nearly a kilometre and a half of lakes and moors.",
+      "Up where the ground is gentlest, between the knolls at 406, and onto the ridge from 587: the steepest single step, 36.2 degrees between 593 and 627 m, sits where the ridge rears up.",
+      "The ridge north — 740 m where the corridor points at the cairn — and the final section that demands extra focus: the skis can be left behind, and the source mentions 30 m of rope and some gear for difficult conditions. The band from 800 to 900 is the steepest on average at 18.9 degrees; the cairn stands at 945.",
+    ],
+    descent: [
+      "South is the gentle side: the flank probe gives 20.0 degrees on average where the south ridge arrives, against 46.1 in the north — with a 66.5 window 30–90 m out — and 69.3 to the north-east. The descent variants measure 35–40 degrees (the north couloir and the east side) and up towards 50 at the top of the west side: judge the snow before choosing.",
+      "The line gives back 137 of the 1024 metres it wins — the undulation along the lakes and the ridge, which also carries Fri Flyt's 1080 metres. Count the way home as rolling: skins off and on along Trollvatnet and Storvatnet before the track down to Dale.",
+    ],
+    avalanche: [
+      {
+        title: "The summit section",
+        body: "The summit push demands extra focus, says the source — skis can be left behind, and 30 m of rope with some gear is mentioned for difficult conditions. The north flank averages 46.1 and the north-east holds a 69.3 window: come from the south, and stay there.",
+      },
+      {
+        title: "The variants",
+        body: "The north couloir and the east side measure 35–40 degrees and the west side up towards 50 at the top — avalanche terrain that demands a deliberate choice of day. The south ridge, at 20.0 on average from the cairn, is the line with the least exposure up and down.",
+      },
+      {
+        title: "Before you go",
+        body: "Stortussen sits in the Sør-Troms forecasting region, an A-region with a daily avalanche bulletin — the first round where all ten summits answer to the same region. Check varsom.no. The February–April season is Fri Flyt's. Transceiver, probe and shovel — and ice axe and crampons where the source demands them.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "58 m",
+      endLabel: "945 m",
+      distanceLabel: "5.5 km",
+      caption: "1024 metres of ascent over 5.54 km from Dale: the summer trail to 294, Trollvatnet on dry land at 337 — and the ridge north from 587, with the steepest single step, 36.2 degrees, between 593 and 627 m.",
+    },
+  },
+  litletussen: {
+    intro:
+      "765 metres of ascent over 4.04 km from Dale to Litletussen — the register writes Litjetussen, the source Litletussen, and the summit resolves 795.0 against the published 796. The summer trail towards Storvatnet, around the lake on dry land, open forest north-east and the south ridge as the gentlest way in. KAST 2 – Challenging with ice axe and crampons; the first slope of the descent is steeper than 30 degrees. Grade 3.",
+    ascent: [
+      "From Dale at 58 m the summer trail heads for Storvatnet, and the line rounds the lake on dry land at 274 m — the source crosses the ice, the line keeps to land. The moors to the north-east sit at 262, and the band from 200 to 300 measures 3.2 degrees across a kilometre and a half of nearly flat ground.",
+      "North-east through open forest — the treeline at 347 after 2.57 km — and clear of the avalanche terrain in the south flank as the source asks: the band from 300 to 400 is the steepest on average at 18.9 degrees, up towards the hillside at 461.",
+      "The south ridge from 689 is the gentlest way onto the summit at 795: the steepest single step on the whole line measures 22.4 degrees, between 679 and 692 m — right below the ridge, and that is all of it.",
+    ],
+    descent: [
+      "The first slope of the descent is steeper than 30 degrees, says the source — the exception on a line where 20–30 ground otherwise takes over. SE/S/SW from the summit, where the route runs, average 16.6–27.2 degrees.",
+      "The west side — 30–40 degrees sustained — is classed Complex by the source and is another line. And the NE flank measures 67.3 degrees in the window 400–460 m out: the south flank's avalanche terrain has a twin to the north-east. Hold the ridge and the forest you came up.",
+    ],
+    avalanche: [
+      {
+        title: "The south flank",
+        body: "The source asks you to avoid the avalanche terrain in the south flank on the way up — the line lies north-east in open forest instead. The first slope of the descent is steeper than 30 degrees; the rest of the line measures 22.4 at its steepest single step.",
+      },
+      {
+        title: "North-east",
+        body: "The NE flank measures 67.3 degrees in the window 400–460 m out from the summit — a twin every bit as serious as the south flank. The route touches neither: SE/S/SW, where the line runs, average 16.6–27.2.",
+      },
+      {
+        title: "Before you go",
+        body: "Litletussen sits in the Sør-Troms forecasting region, an A-region with a daily avalanche bulletin — the first round where all ten summits answer to the same region. Check varsom.no. The February–April season is Fri Flyt's. Transceiver, probe and shovel — and ice axe and crampons where the source demands them.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "58 m",
+      endLabel: "795 m",
+      distanceLabel: "4.0 km",
+      caption: "765 metres of ascent over 4.04 km from Dale: the summer trail, around Storvatnet on dry land at 274 — the source crosses the ice, the line keeps to land — and the south ridge from 689 to the summit at 795.",
+    },
+  },
+  slattheia: {
+    intro:
+      "638 metres of ascent over 2.47 km from Dale to Slåttheia — 694.0 on screen against the published 690, and an incredibly fine summit for beginners, says the source. The summer trail towards Storvatnet, left where it levels, past the 342 knoll and up the broad south-east slope; the descent runs at 20–30 degrees, and the route stays clear of most of the avalanche terrain. KAST 2 with Fri Flyt, but Grytøya's way in: grade 2.",
+    ascent: [
+      "From Dale at 58 m along the summer trail, then left (west) where the ground levels at 340 m — the treeline sits at 364 after 1.44 km, and the band from 100 to 200 measures 14.3 degrees through the forest.",
+      "Past the 342 knoll and into the broad south-east slope from 593: the band from 500 to 600 is the steepest on average at 21.8 degrees, and the steepest single step, 25.0 degrees, sits between 603 and 624 m.",
+      "Then it eases towards the cairn at 694 — the band above 600 averages 14.5. The line gives back two metres on the whole tour: up is up.",
+    ],
+    descent: [
+      "The same slope home: 20–30 degrees with the source, 20.7 on average on the SE probe — skiing for newcomers in good weather. Crampons can be useful on crust.",
+      "The beginner's summit has grown-up edges: SW and NE measure 35–38 degrees on average, and the route stays clear of them as the source says. Stay in the broad slope — the flanks around it are steeper.",
+    ],
+    avalanche: [
+      {
+        title: "The slope",
+        body: "The route stays clear of most of the avalanche terrain, says the source, and the model agrees: 21.8 degrees in the steepest band and 25.0 in the steepest single step. But south-east snow gets the sun early — start early on warm days.",
+      },
+      {
+        title: "The edges",
+        body: "SW and NE measure 35–38 degrees on average — grown-up edges on a beginner's summit. In fog it is the flanks you need to know about: hold your bearing on the slope and the 342 knoll.",
+      },
+      {
+        title: "Before you go",
+        body: "Slåttheia sits in the Sør-Troms forecasting region, an A-region with a daily avalanche bulletin — the first round where all ten summits answer to the same region. Check varsom.no. The February–April season is Fri Flyt's. Transceiver, probe and shovel.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "58 m",
+      endLabel: "694 m",
+      distanceLabel: "2.5 km",
+      caption: "638 metres of ascent over 2.47 km from Dale: the summer trail to 340, past the 342 knoll — and the broad south-east slope from 593 to the cairn at 694 — 25.0 degrees at its steepest.",
+    },
+  },
   istinden: {
     intro:
       "1432 metres of ascent over 5.24 km from Tindelva by Iselvmoen to Vestre Istinden, the highest of the Istindan tops and the landmark of Indre Troms. The tour is long and high rather than steep: the steepest hundred-metre band measures 21.6 degrees between 1400 and 1500 m, and the steepest sustained stretch 27.7 degrees — but the route runs along a ridge with what Fri Flyt calls «nordveggen», the north wall, on one side and the cirque holding the glacier on the other, and it is the edges rather than the averages that decide the day.",
@@ -1178,6 +1330,72 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       endLabel: "1489 m",
       distanceLabel: "5.2 km",
       caption: "1432 metres of ascent over 5.24 km from Tindelva, with the steepest ground — 27.7 degrees between 1286 and 1304 m — on the ridge a little under half a kilometre before the cairn.",
+    },
+  },
+  nona: {
+    intro:
+      "1024 metres of ascent over 5.41 km from Dale to Grytøya's highest: Nona reads 1008.9 on screen against the source's 1012, and was Olav Solberg's favourite mountain according to Fri Flyt. The line follows the ski track into Dalsdalen and takes the broadest gully to the summit — the source gives the gully 30–45 degrees sustained, KAST 3 – Complex, with ice axe and crampons on the list. Grade 4 — the king of Grytøya, for stable days.",
+    ascent: [
+      "From Dale on the west side of the island — 58 m, just before the forest road begins — follow the ski track into Dalsdalen: the forest road at 97, the valley floor at 137, and the treeline already at 287 m after 3.21 km of gentle approach. The first two hundred-metre bands measure 1.9 and 3.7 degrees: this is transport, not climbing.",
+      "Through upper Dalsdalen at 280 and into the gully at 453 m. The source gives the gully 30–45 degrees sustained down to lake 428; on the model's line the steepest single step, 36.2 degrees, sits between 590 and 612 m, and the band from 700 to 800 averages 22.7.",
+      "The gully lets you out at 843 m, and the last hundred metres to the cairn at 1009 ease off — the band above 1000 measures 13.0 degrees. The screen's 1008.9 against the source's 1012 is the usual gap between register and book on a summit surveyed before the laser scan.",
+    ],
+    descent: [
+      "Back down the way you came — and only there: the flank probes around the summit give N/NE/E 45.7–49.1 degrees on average with windows of 57–66, and SW, the kindest, 27.8. The west-route gully and Syd direkte sit in flanks averaging 37.9 and 34.7; the source gives Syd direkte 35–50 degrees, for stable snow and precise route-finding.",
+      "Assess the snowpack before descending — the terrain is avalanche terrain in every variant, says the source. The gully skis all the way down towards Dalsdalen; below the treeline at 287 the track leads home to Dale.",
+    ],
+    avalanche: [
+      {
+        title: "The gully",
+        body: "The source gives the gully 30–45 degrees sustained down to lake 428 — KAST 3 – Complex, with ice axe and crampons on the list. The model's line measures 36.2 at its steepest, but a gully collects everything that releases above you: here the snow decides the day.",
+      },
+      {
+        title: "The summit flanks",
+        body: "No gentle side on Grytøya's king: N/NE/E average 45.7–49.1 degrees with windows of 57–66, and SW 27.8. Avalanche terrain in every variant — and Syd direkte (35–50) is the expert line, not this one.",
+      },
+      {
+        title: "Before you go",
+        body: "Nona sits in the Sør-Troms forecasting region, an A-region with a daily avalanche bulletin — the first round where all ten summits answer to the same region. Check varsom.no. The February–April season is Fri Flyt's. Transceiver, probe and shovel — and ice axe and crampons where the source demands them.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "58 m",
+      endLabel: "1009 m",
+      distanceLabel: "5.4 km",
+      caption: "1024 metres of ascent over 5.41 km from Dale: the ski track into Dalsdalen to the treeline at 287, the gully from 453 to 843 m — and the steepest single step, 36.2 degrees between 590 and 612 m, in the middle of the gully.",
+    },
+  },
+  trolltinden: {
+    intro:
+      "940 metres of ascent over 4.7 km from the ferry quay at Bjørnerå — 2 m above the sea, a free ferry from Stornes, and the source recommends leaving the car behind — to the prince against Nona's king: Trolltinden reads 917.9 against the published 919. Gentle Bjørnrådalen between steep walls, the ridge to the shoulder, and the summit push on foot with cornices to mind. KAST 2 – Challenging, with ice axe and crampons for hard crust on the ridges. Grade 3.",
+    ascent: [
+      "From the ferry quay the line runs west into Bjørnrådalen — 190 m where the corridor stands in the valley — through gentle ground flanked by steep walls: the band from 0 to 100 measures 5.5 degrees, and the treeline sits at 410 m after 2.45 km.",
+      "Through the upper valley at 450 and onto the ridge from 650: the band from 300 to 400 is the steepest on average at 21.0 degrees, and the ridges are often hard crust — this is where the axe and crampons on the list belong.",
+      "From the shoulder at 757 the summit push is on foot: the steepest single step on the line, 36.4 degrees, sits between 875 and 908 m right below the cairn at 918. Never exposed and steep, says the source — but the cornices must be minded.",
+    ],
+    descent: [
+      "The same way down: the SW flank from the summit, where the ridge route arrives, averages 13.4 degrees, while E/SE/S measure 33–36 and NW 35.8. The S-couloir (45 degrees at the top), the Bowl (30–40) and the East couloir (30–45) are the variants for stable snow — not the normal route.",
+      "The source documents a fatal avalanche on 10 March 2019 in the couloir east of Storelva on Storfjellet: avoid the innermost north-west bowl, where large slides have run before. Hold the ridge and the valley floor home to the ferry quay.",
+    ],
+    avalanche: [
+      {
+        title: "The ridges",
+        body: "KAST 2 – Challenging with Fri Flyt: ice axe and crampons for hard crust on the ridges, and cornices at the summit push. The steepest single step measures 36.4 degrees between 875 and 908 m — on foot, skis on the pack.",
+      },
+      {
+        title: "The north-west bowl",
+        body: "The fatal avalanche of 10 March 2019 ran in the couloir east of Storelva on Storfjellet, and the source asks you to avoid the innermost north-west bowl where large slides have run. The variants — the S-couloir, the Bowl and the East couloir (30–45 degrees) — demand stable snow.",
+      },
+      {
+        title: "Before you go",
+        body: "Trolltinden sits in the Sør-Troms forecasting region, an A-region with a daily avalanche bulletin — the first round where all ten summits answer to the same region. Check varsom.no. The January–April season is Fri Flyt's. Transceiver, probe and shovel — and ice axe and crampons where the source demands them.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "2 m",
+      endLabel: "918 m",
+      distanceLabel: "4.7 km",
+      caption: "940 metres of ascent over 4.7 km from the Bjørnerå ferry quay: Bjørnrådalen to 450, the ridge over the shoulder at 757 — and the summit push on foot, 36.4 degrees at its steepest between 875 and 908 m.",
     },
   },
   snotinden: {
@@ -1287,6 +1505,105 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       caption: "984 metres of ascent and 7.26 km from Indre Forså across the moors and along Mevatnet's east side, with the treeline at 485 m and the steepest ground — 27.8 degrees between 967 and 991 m — in the couloir south of the summit.",
     },
   },
+  hemmestadfjellet: {
+    intro:
+      "679 metres of ascent over 3.88 km from Vebbestadsætran to Hemmestadfjellet — 686.5 on screen against the published 687, and KAST 1 – Simple with Fri Flyt on the north route: even, easy skiing with sections of 20 degrees, good for newcomers. The tractor road through the spruce plantation and the ridge west of Vebbestadvatnet to the top. Grade 2 — the west route from Skommesvik is KAST 3 and another line.",
+    ascent: [
+      "From the lay-by at Vebbestadsætran on the fv. 850 — 38 m — the tractor road runs through the spruce plantation: 359 m where the line stands in it, and the treeline sits at 412 after 2.39 km. The bands from 100 to 300 measure 18.4 and 20.3 degrees through the forest.",
+      "The ridge west of Vebbestadvatnet from 418: the band from 300 to 400 measures 5.2 degrees across a good kilometre — choose the ground with the best snow cover above the treeline, says the source.",
+      "The final slope: the band from 500 to 600 is the steepest on average at 25.2 degrees, and the steepest single step, 34.9, sits between 570 and 592 m — right below the summit plateau at 686.",
+    ],
+    descent: [
+      "The north route home is even, easy skiing with sections of 20 degrees — good for newcomers, says the source, and the W/NW flanks average 7.8–9.7. SW towards Horntindan is flat: 0.5 degrees on average along the ridge.",
+      "The east side towards Vebbestadvatnet averages 30.5, and the north side holds a 52.7 window — the west route from Skommesvik runs above 30 degrees and is classed Complex. The grade 2 tour is the north route, and only that.",
+    ],
+    avalanche: [
+      {
+        title: "The final slope",
+        body: "The steepest of the line sits collected between 500 and 600: 25.2 degrees on average and 34.9 in the steepest single step. Short, but steep enough to carry slab — judge the slope before entering it, and take the ridge around if the snow feels uncertain.",
+      },
+      {
+        title: "The east side",
+        body: "The east side towards Vebbestadvatnet averages 30.5 degrees, and the north side holds a 52.7 window. The north route lies west of the lake — the eastern edge is why the KAST 1 class belongs to the route, not the mountain.",
+      },
+      {
+        title: "Before you go",
+        body: "Hemmestadfjellet sits in the Sør-Troms forecasting region, an A-region with a daily avalanche bulletin — the first round where all ten summits answer to the same region. Check varsom.no. The January–April season is Fri Flyt's. Transceiver, probe and shovel.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "38 m",
+      endLabel: "686 m",
+      distanceLabel: "3.9 km",
+      caption: "679 metres of ascent over 3.88 km from Vebbestadsætran: the tractor road through the spruce plantation, the ridge west of Vebbestadvatnet — and the final slope, 34.9 degrees at its steepest between 570 and 592 m.",
+    },
+  },
+  "middagstinden-kvafjord": {
+    intro:
+      "910 metres of ascent over 4.1 km from Hundstadsætran to Middagstinden i Kvæfjord — 921.9 on screen against the published 923, and the 922 knoll from last round's Tverrfjellet work: two candidate summits split by a col at about 576 turned out to be two mountains, and now each has its own tour, from its own fjord. KAST 3 – Complex with ice axe and crampons; the section above the big boulder holds 45–50 degrees and is often hard crust. Grade 4.",
+    ascent: [
+      "From the car park at Hundstadsætran — 20 m along the fv. 850 Revsnesveien; the source's F83 is today's county road — slant towards Vebbestadelva at 207 and onto the tractor road: the treeline sits at 346 already after 1.39 km.",
+      "The tractor road up to Vebbestadvatnet — the line keeps to land at the north end, 400 m — and east from 617: the band from 400 to 500 measures 7.3 degrees across the lake plateau, before the mountain rears up.",
+      "The summit flank from 854: above the big boulder it steepens — often hard crust, and the source gives the section 45–50 degrees. The steepest single step in the model sits between 650 and 675 m at 31.4; the source's 45–50 lives in the NW window, which measures 41.9.",
+    ],
+    descent: [
+      "The west side is the favourite when south- and east-facing mountains are wind-stripped, says the source: 30–50 degrees down towards the tractor road west of Salelva. West, where the route arrives, is gentlest on the flank probe at 24.0 on average.",
+      "The east lines Mellomrenna, Varderenna and Håvards Drøm (30–50 degrees) demand stable snow; NE and E average 38–39 with a 55.9 window right below the cairn. Down the way you came up is the line with the fewest questions.",
+    ],
+    avalanche: [
+      {
+        title: "The boulder",
+        body: "The section above the big boulder holds 45–50 degrees and is often hard crust — KAST 3 – Complex, ice axe and crampons. A fall here does not stop by itself: wait for the day the crust has softened, or turn around at the boulder.",
+      },
+      {
+        title: "The east lines",
+        body: "Mellomrenna, Varderenna and Håvards Drøm measure 30–50 degrees, and the NE/E flank reads 38–39 on average with a 55.9 window right below the cairn. The cairn stands on their edge — go no further east than you must.",
+      },
+      {
+        title: "Before you go",
+        body: "Middagstinden sits in the Sør-Troms forecasting region, an A-region with a daily avalanche bulletin — the first round where all ten summits answer to the same region. Check varsom.no. The February–April season is Fri Flyt's. Transceiver, probe and shovel — and ice axe and crampons where the source demands them.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "20 m",
+      endLabel: "922 m",
+      distanceLabel: "4.1 km",
+      caption: "910 metres of ascent over 4.1 km from Hundstadsætran: the tractor road to Vebbestadvatnet on land at the north end, east from 617 — and the section above the big boulder, 45–50 degrees with the source, to the summit at 922.",
+    },
+  },
+  horntindan: {
+    intro:
+      "934 metres of ascent over 3.9 km from Skommesvik to Horntindan — 910.9 on screen against the published 910, and the horns that named the mountain measure 61.8–64.0 degrees in their first windows to the north and north-east. Up towards Hemmestadfjellet and the ridge south, the same ridge the Hemmestadfjellet tour uses. KAST 3 – Complex with ice axe and crampons; the normal descent over Hornflata measures 35–40 degrees. Grade 4.",
+    ascent: [
+      "The start is the service road off the fv. 850 Revsnesveien at Skommesvik — 22 m; the register point for the farm sat more than 250 m from any mapped road, and the source also mentions parking at Gammelgårdsbukta. Up the hillside to 469: the band from 400 to 500 is the steepest on average at 21.8 degrees, and the treeline sits at 396 after 1.28 km.",
+      "South of Hemmestadfjellet at 673 and onto the ridge south from 699 — the band from 600 to 700 measures 6.3 degrees across nearly a kilometre: the ridge is the transport leg between the two mountains.",
+      "The summit push: the steepest single step on the line, 29.4 degrees, sits between 870 and 889 m right below the cairn at 911. The SE flank where the ridge arrives averages 10.1 — the way in is kinder than the name.",
+    ],
+    descent: [
+      "The normal descent runs north-west over Hornflata and down the couloir — 35–40 degrees, and it ends in a stream formation at the treeline, says the source. The NW flank averages 12.8, but with a 49.4 window near the summit: ski Hornflata on stable snow, or take the ridge back.",
+      "Vestrenna is the steepest descent in the area — for the experienced only, on stable snow. The N/NE flanks measure 61.8–64.0 degrees in their first windows: the horns are for looking at, not skiing.",
+    ],
+    avalanche: [
+      {
+        title: "Hornflata",
+        body: "The normal descent over Hornflata and down the couloir measures 35–40 degrees and ends in a stream formation at the treeline — the terrain trap the source itself points at. KAST 3 – Complex: the flat and the couloir are connected, and snow that releases above the flat collects in the couloir.",
+      },
+      {
+        title: "The horns",
+        body: "The N/NE flanks measure 61.8–64.0 degrees in their first windows — these are the horns that named the mountain. The ridge from Hemmestadfjellet, at 10.1 on average from the SE, is the way in that keeps you away from both.",
+      },
+      {
+        title: "Before you go",
+        body: "Horntindan sits in the Sør-Troms forecasting region, an A-region with a daily avalanche bulletin — the first round where all ten summits answer to the same region. Check varsom.no. The February–April season is Fri Flyt's. Transceiver, probe and shovel — and ice axe and crampons where the source demands them.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "22 m",
+      endLabel: "911 m",
+      distanceLabel: "3.9 km",
+      caption: "934 metres of ascent over 3.9 km from Skommesvik: up the hillside to the treeline at 396, south of Hemmestadfjellet at 673 — and the ridge south to the summit push, 29.4 degrees between 870 and 889 m.",
+    },
+  },
   tverrfjellet: {
     intro:
       "885 metres of ascent over 5.53 km from the fjord at Melåa to a mountain the register has no name for: Tverrfjellet is the source's and the neighbourhood's name — Tverrfjellelva drains it and Tverrelvfoten stands beneath it — and the summit reads 888.9 against the book's 899. No hundred-metre band measures more than 14.0 degrees, the steepest single stretch is 23.9, and the line gives back eight metres on the whole tour. KAST 1, south-facing — simple but fun skiing, exactly as the source says.",
@@ -1355,6 +1672,39 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       endLabel: "1457 m",
       distanceLabel: "5.2 km",
       caption: "1047 metres of ascent and 5.24 km from Bukkemyrvatnet via the terraces toward Sølvfjellet and the snowfield southeast of the summit, with the treeline at 476 m and the steepest band — 18.8 degrees — between 1300 and 1400 m.",
+    },
+  },
+  melaaksla: {
+    intro:
+      "964 metres of ascent over 5.92 km from Melå to Melåaksla — a summit that took three candidates to find: the register's name stands on the 747 shoulder in the north, the first seed landed on the 959.6 top to the south-east, and the published 915 is the top at 915.7 midway between them. The tractor road on the south side of the river to Dalbotnen, past the hut and the long ridge south. A descent of 15–25 degrees with some sections of 30 — splendid varied ground, says the source. Grade 2.",
+    ascent: [
+      "From the lay-bys at Melå — 11 m; the tractor road runs on the south side of Melåelva, opposite to the Tverrfjellet tour's north side — and steep through the forest first: the band from 100 to 200 is the line's steepest on average at 23.7 degrees. The treeline sits at 355 after 2.58 km.",
+      "The tractor road stands in the line at 230 and Dalbotnen at 296 — the band from 200 to 300 measures 3.7 degrees across a kilometre and a half — then right (south) towards the 505 knoll and past the small worn hut.",
+      "The ridge south from 590, west of the tarn at 717 — and up to the cairn at 916: the band from 800 to 900 measures 22.1 degrees, and the steepest single step, 35.5, sits between 872 and 901 m. The SE flank keeps rising: the ridge continues towards the 959 top, the next mountain in the chain.",
+    ],
+    descent: [
+      "15–25 degrees with some sections of 30 on the way home, and the ridge is clean skiing, says the source — with Austerfjorden, Jonsheimen and Gullesfjorden in view the whole way.",
+      "Hold the ridge: the east side above Austerfjorden is steeper, and the ridge homeward averages 27.9 degrees for the first 500 m from the summit, with a 47 window 110–170 m out. The tarn at 717 is passed on its west side, as on the way up.",
+    ],
+    avalanche: [
+      {
+        title: "The ridge",
+        body: "The descent runs at 15–25 degrees with sections of 30 in the source, but nearest the summit the ridge averages 27.9 with a 47 window 110–170 m out — the steepest metres come first, and the east side above Austerfjorden is steeper than the ridge.",
+      },
+      {
+        title: "The forest",
+        body: "The band from 100 to 200 measures 23.7 degrees — the line's steepest average sits at the bottom, in the forest above Melå. On days with a slab warning at low elevations it is this hillside that needs judging, not just the summit.",
+      },
+      {
+        title: "Before you go",
+        body: "Melåaksla sits in the Sør-Troms forecasting region, an A-region with a daily avalanche bulletin — the first round where all ten summits answer to the same region. Check varsom.no. The February–April season is Fri Flyt's. Transceiver, probe and shovel.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "11 m",
+      endLabel: "916 m",
+      distanceLabel: "5.9 km",
+      caption: "964 metres of ascent over 5.92 km from Melå: the tractor road to Dalbotnen, past the hut towards the 505 knoll — and the long ridge south to the cairn at 916, west of the tarn at 717.",
     },
   },
   jakobstinden: {

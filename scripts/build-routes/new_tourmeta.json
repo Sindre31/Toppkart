@@ -2961,5 +2961,238 @@
    "Sesongen er desember–april hos kilden — Haukebøtinden-klassen: lavt fjell, kort anmarsj, lang sesong."
   ],
   "notes": ""
+ },
+ "nona": {
+  "season": "feb–apr",
+  "aspect": "V",
+  "grade": 4,
+  "gradeReason": "KAST 3 – Komplekst hos Fri Flyt, alpinøks og stegjern, og ei renne som holder 30–45 grader sammenhengende ned til vann 428. Grad 4 — kongen på Grytøya, for stabile dager.",
+  "roadClosedInWinter": false,
+  "teaserNo": "1020 høydemeter fra Dale: skitursporet innover Dalsdalen, over Dalselva — og den breieste renna til Grytøyas høyeste, 30–45 grader sammenhengende med øks og stegjern i sekken.",
+  "teaserEn": "1020 metres of ascent from Dale: the ski track into Dalsdalen, across Dalselva — and the broadest gully to Grytøya's highest, 30–45 degrees sustained with axe and crampons in the pack.",
+  "hazardNotes": "Fri Flyt: KAST 3 – Komplekst. Alpinøks og stegjern. Renna holder 30–45 grader sammenhengende; Syd direkte måler 35–50 og krever stabil snø og presis veivalg. Vurder snødekket før nedkjøring — terrenget er skredterreng i alle varianter.",
+  "sources": [
+   "https://www.friflyt.no/topptur/harstad/nona",
+   "https://www.friflyt.no/topptur/tromso/turomraade-grytoeya"
+  ],
+  "confidence": "high",
+  "corrections": [
+   "Registerets Nona (Fjell, Harstad) løser 1008,9 mot publiserte 1012 — Grytøyas høyeste, og yndlingsfjellet til Olav Solberg ifølge kilden.",
+   "Starten er Dale på vestsida, like før skogsveien starter — 1012 − 58 = 954, som forliker Fri Flyts 1000 høydemeter. Kilden nevner også Vaskinn på østsida som alternativ start.",
+   "Ruta reproduserer kilden: skitursporet fra Dale innover Dalsdalen (registerets Dalsdalen, Dal, 68.93261/16.42206), over Dalselva og opp den breieste renna mot toppen. Renna er grunnen til graden: kilden gir 30–45 grader sammenhengende ned til vann 428.",
+   "Fri Flyt: KAST 3 – Komplekst, alpinøks og stegjern — turen skipper som grad 4. Sørsida mot Vadskinndalsvatnet er alternativet; Syd direkte (35–50 grader) er ekspertlinja og ikke denne.",
+   "check_new_corridors: ingen amenity=parking, men veg (service, «Dale») på punktet — parkeringa er slik kilden beskriver, med grunneigars samtykke om vegen ikkje er brøyta."
+  ],
+  "notes": ""
+ },
+ "trolltinden": {
+  "season": "jan–apr",
+  "aspect": "S",
+  "grade": 3,
+  "gradeReason": "KAST 2 – Utfordrende hos Fri Flyt, alpinøks og stegjern for hard skare på ryggene, og toppstøt til fots med skavler å passe — aldri eksponert og bratt, sier kilden. Grad 3.",
+  "roadClosedInWinter": false,
+  "teaserNo": "940 høydemeter fra ferjeleiet på Bjørnerå: slake Bjørnrådalen mellom bratte vegger, ryggen til skulderen — og toppstøtet til fots, med skavler å passe.",
+  "teaserEn": "940 metres of ascent from the Bjørnerå ferry quay: gentle Bjørnrådalen between steep walls, the ridge to the shoulder — and the final step on foot, with cornices to mind.",
+  "hazardNotes": "Fri Flyt: KAST 2 – Utfordrende. Alpinøks og stegjern — ofte hard skare på ryggene. Skavler ved toppstøtet. Dødsulykke 10. mars 2019 i renna øst for Storelva på Storfjellet; unngå den innerste nordvestbollen der store skred har gått. S-renna og Østrenna krever stabil snø.",
+  "sources": [
+   "https://www.friflyt.no/topptur/harstad/trolltinden-flere-rutebeskrivelser",
+   "https://www.friflyt.no/topptur/tromso/turomraade-grytoeya"
+  ],
+  "confidence": "high",
+  "corrections": [
+   "Registerets Trolltinden (Fjell, Harstad) løser 917,9 mot publiserte 919 — prinsen mot Nonas konge, sier kilden.",
+   "Starten er ferjeleiet på Bjørnerå — gratisferge fra Stornes, og kilden anbefaler å la bilen stå igjen. OSM har Bjørnerå ferjekai (n2001930001); parkeringa leser 2,3 moh på DTM1. 919 − 2 = 917, som forliker Fri Flyts 1000 høydemeter med undulasjonen på ryggen.",
+   "Ruta reproduserer kilden: vestover inn Bjørnrådalen (registerets Bjørnrådalen, Dal, 68.89782/16.50603) i slakt terreng flankert av bratte vegger, så ryggen mot skulderen og toppstøtet til fots — aldri eksponert og bratt, sier kilden, men med skavler å passe.",
+   "Fri Flyt: KAST 2 – Utfordrende, alpinøks og stegjern for hard skare på ryggene — grad 3. S-renna (45 grader øverst), Bollen (30–40) og Østrenna (30–45) er variantene og ikke denne.",
+   "Kilden dokumenterer en dødsulykke 10. mars 2019 i renna øst for Storelva på Storfjellet — unngå den innerste nordvestbollen, der store skred har gått før. Det står i guiden.",
+   "check_new_corridors: parkering ved ferjekaia (OSM ferry_terminal n2001930001) — kilden anbefaler å la bilen stå på Stornes og ta gratisferga."
+  ],
+  "notes": ""
+ },
+ "stortussen": {
+  "season": "feb–apr",
+  "aspect": "S",
+  "grade": 3,
+  "gradeReason": "KAST 2 – Utfordrende hos Fri Flyt, alpinøks og stegjern, og et toppstøt som krever ekstra fokus — 30 m tau og litt utstyr nevnes for vanskelige forhold. Grad 3, i den tunge enden av graden.",
+  "roadClosedInWinter": false,
+  "teaserNo": "1020 høydemeter fra Dale: sommerstien til Storvatnet og Trollvatnet, det slakeste terrenget opp — og ryggen nordover til toppen, der ski kan settes igjen før det siste støtet.",
+  "teaserEn": "1020 metres of ascent from Dale: the summer trail to Storvatnet and Trollvatnet, the gentlest ground up — and the ridge north to the summit, where the skis can wait below the final step.",
+  "hazardNotes": "Fri Flyt: KAST 2 – Utfordrende. Alpinøks og stegjern; toppartiet krever ekstra fokus og ski kan hensettes. Nedkjøringsvariantene måler 35–40 grader (nordrenna og austsida) og opp mot 50 øverst på vestsida — terrenget er skredterreng, vurder snøen før valg.",
+  "sources": [
+   "https://www.friflyt.no/topptur/harstad/stortussen",
+   "https://www.friflyt.no/topptur/tromso/turomraade-grytoeya"
+  ],
+  "confidence": "high",
+  "corrections": [
+   "Registerets Stortussen (Fjell, Harstad) løser 944,8 mot publiserte 941 — toppsøket klatra 4 m over kravet; kilden og skjermen er samde innafor Rørnestinden-marginen.",
+   "Starten er Dale, like før skogsveien starter — sommerstien mot Storvatnet er OSM-stien w1018548530 nordover. 941 − 58 = 883; Fri Flyts 1080 høydemeter bærer undulasjonen langs vatna og ryggen.",
+   "Ruta reproduserer kilden: sommerstien til Storvatnet, Trollvatnet (registerets Trollvatnet, Vann, 68.95486/16.35067 — linja holder land på austbreidda), opp der terrenget er slakest og ryggen nordover mot toppen.",
+   "Fri Flyt: KAST 2 – Utfordrende med alpinøks og stegjern, og et sluttparti som krever ekstra fokus — ski kan hensettes, og 30 m tau med litt utstyr nevnes for vanskelige forhold. Grad 3, i den tunge enden.",
+   "check_new_corridors: ingen amenity=parking, men veg (service, «Dale») på punktet. Vegpunkt-høgdene på ryggen er korrigerte mot DTM1 (587 og 740)."
+  ],
+  "notes": ""
+ },
+ "litletussen": {
+  "season": "feb–apr",
+  "aspect": "SØ",
+  "grade": 3,
+  "gradeReason": "KAST 2 – Utfordrende hos Fri Flyt, alpinøks og stegjern, og eit fyrste heng over 30 grader i nedkjøringa før 20–30-terrenget tek over. Grad 3.",
+  "roadClosedInWinter": false,
+  "teaserNo": "760 høydemeter fra Dale: sommerstien mot Storvatnet, rundt vatnet på land — og glissen skog nordaust til sørryggen, den slakeste inngangen til toppen.",
+  "teaserEn": "760 metres of ascent from Dale: the summer trail towards Storvatnet, around the lake on dry land — and open forest north-east to the south ridge, the gentlest way onto the summit.",
+  "hazardNotes": "Fri Flyt: KAST 2 – Utfordrende. Alpinøks og stegjern. Unngå skredterrenget i sørflanken på veg opp; fyrste henget i nedkjøringa er brattare enn 30 grader. Vestsida (30–40 samanhengande) er Komplekst og ei anna linje.",
+  "sources": [
+   "https://www.friflyt.no/topptur/harstad/litletussen",
+   "https://www.friflyt.no/topptur/tromso/turomraade-grytoeya"
+  ],
+  "confidence": "high",
+  "corrections": [
+   "Registeret skriver Litjetussen (Fjell, Harstad); Fri Flyt skriver Litletussen. Toppsøket løser 795,0 mot publiserte 796.",
+   "Starten er Dale — 796 − 58 = 738, som forliker Fri Flyts 780 høydemeter.",
+   "Ruta reproduserer kilden: sommerstien mot Storvatnet, rundt vatnet på land — kilden kryssar isen, linja held land, Snøtindan-regelen — nordaust gjennom glissen skog utanom skredterrenget i sørflanken, og nordvest opp mot toppen med sørryggen som slakeste inngang.",
+   "Fri Flyt: KAST 2 – Utfordrende, alpinøks og stegjern — grad 3. Vestsida (30–40 grader samanhengande) er klassa Komplekst hos kilden og er ikkje denne ruta.",
+   "check_new_corridors: ingen amenity=parking, men veg (service, «Dale») på punktet. Vegpunkt-høgdene i lia er korrigerte mot DTM1 (262 og 461)."
+  ],
+  "notes": ""
+ },
+ "hattfjellet": {
+  "season": "feb–apr",
+  "aspect": "S",
+  "grade": 3,
+  "gradeReason": "KAST 2 – Utfordrende hos Fri Flyt, alpinøks og stegjern, nedkjøring 30–35 grader på sørsida. Grad 3.",
+  "roadClosedInWinter": false,
+  "teaserNo": "830 høydemeter fra Grøtavær: traktorveien opp Bjørndalen, venstre der det flater — og sørsida til topps, med utsikt mot Andøya fra øyas ytterste tur.",
+  "teaserEn": "830 metres of ascent from Grøtavær: the tractor road up Bjørndalen, left where it levels — and the south side to the top, with Andøya on the horizon from the island's outermost tour.",
+  "hazardNotes": "Fri Flyt: KAST 2 – Utfordrende. Alpinøks og stegjern. Sørsida held 30–35 grader; Sydrenna 35–40. Nordlinjene Goldfishrenna og Frogman (45–50 grader) krev rappell frå skavlen og er ekspertlinjer. Varsom.no for snø- og skredvarsel.",
+  "sources": [
+   "https://www.friflyt.no/topptur/harstad/hattfjellet",
+   "https://www.friflyt.no/topptur/tromso/turomraade-grytoeya"
+  ],
+  "confidence": "high",
+  "corrections": [
+   "Registerets Hattfjellet (Fjell, Harstad) løser 857,2 mot publiserte 856 — lengst frå ferja, med utsikt mot Andøya.",
+   "Starten er langs vegen til skytebanen på Grøtavær (registerets Grøtavær, Bygdelag, 68.96443/16.26206; OSM-track w609491482 går austover frå banen). DTM1 leser 81,1 moh der linja tek til; 856 − 81 = 775, som forliker Fri Flyts 850 høydemeter.",
+   "Ruta reproduserer kilden: traktorveien opp Bjørndalen, venstre der terrenget flatar, og sørsida mot toppen.",
+   "Fri Flyt: KAST 2 – Utfordrende, alpinøks og stegjern — grad 3. Sydrenna (35–40), austsida med det tronge partiet, og nordlinjene Goldfishrenna og Frogman (45–50, rappell frå skavlen) er variantane og ikkje denne.",
+   "check_new_corridors: ingen amenity=parking, men veg (secondary/service/unclassified) på punktet. Vegpunkt-høgdene i Bjørndalen er korrigerte mot DTM1 (121 og 339)."
+  ],
+  "notes": ""
+ },
+ "slattheia": {
+  "season": "feb–apr",
+  "aspect": "SØ",
+  "grade": 2,
+  "gradeReason": "KAST 2 – Utfordrende hos Fri Flyt, men ruta går utanom det meste av skredterreng og nedkjøringa held 20–30 grader — ein utruleg flott topp for nybegynnarar, seier kilden. Stegjern kan vere nyttig. Grad 2.",
+  "roadClosedInWinter": false,
+  "teaserNo": "640 høydemeter fra Dale: sommerstien mot Storvatnet, forbi 342-høgda — og den store søraustvendte lia til topps, utenom det meste av skredterrenget. Grytøyas innsteg.",
+  "teaserEn": "640 metres of ascent from Dale: the summer trail towards Storvatnet, past the 342 knoll — and the broad south-east slope to the top, clear of most avalanche terrain. Grytøya's easiest way in.",
+  "hazardNotes": "Fri Flyt: KAST 2 – Utfordrende, men normalruta unngår det meste av skredterrenget. Stegjern kan vere nyttig på skare. Hald deg til den store søraustvendte lia — flankane ikring er brattare.",
+  "sources": [
+   "https://www.friflyt.no/topptur/harstad/slaattheia",
+   "https://www.friflyt.no/topptur/tromso/turomraade-grytoeya"
+  ],
+  "confidence": "high",
+  "corrections": [
+   "Registerets Slåttheia (Ås, Harstad) løser 694,0 mot publiserte 690.",
+   "Starten er Dale — 690 − 58 = 632, som forliker Fri Flyts 650 høydemeter.",
+   "Ruta reproduserer kilden: sommerstien mot Storvatnet, venstre (vest) der terrenget flatar, forbi 342-høgda og opp den store søraustvendte lia.",
+   "Fri Flyt: KAST 2 – Utfordrende, men ein utruleg flott topp for nybegynnarar — ein går utanom det meste av skredterreng, og nedkjøringa held 20–30 grader. Stegjern kan vere nyttig. Grad 2 — øyas innsteg.",
+   "check_new_corridors: ingen amenity=parking, men veg (service, «Dale») på punktet."
+  ],
+  "notes": ""
+ },
+ "middagstinden-kvafjord": {
+  "season": "feb–apr",
+  "aspect": "V",
+  "grade": 4,
+  "gradeReason": "KAST 3 – Komplekst hos Fri Flyt, alpinøks og stegjern for skara over den store steinen, og parti på 45–50 grader mot toppen. Grad 4.",
+  "roadClosedInWinter": false,
+  "teaserNo": "910 høydemeter fra Hundstadsætran: traktorveien til Vebbestadvatnet, austover forbi den store steinen — og et toppparti på 45–50 grader, ofte hard skare, med øks og stegjern.",
+  "teaserEn": "910 metres of ascent from Hundstadsætran: the tractor road to Vebbestadvatnet, east past the big boulder — and a 45–50 degree summit section, often hard crust, with axe and crampons.",
+  "hazardNotes": "Fri Flyt: KAST 3 – Komplekst. Alpinøks og stegjern — partiet over den store steinen er ofte hard skare, og held 45–50 grader. Vestsida ned måler 30–50 grader; austlinjene Mellomrenna, Varderenna og Håvards Drøm (30–50) krev stabil snø.",
+  "sources": [
+   "https://www.friflyt.no/topptur/harstad/middagstinden-923",
+   "https://www.friflyt.no/randone/turomraade-kvaefjord-og-sortland"
+  ],
+  "confidence": "high",
+  "corrections": [
+   "Registerets Middagstinden (Fjell, Kvæfjord) løser 921,9 mot publiserte 923. Appen har allereie Middagstinden i Romsdal — kortet heiter Middagstinden i Kvæfjord, den tredje kvalifiserte namnedubletten.",
+   "Dette er 922-kulen frå Lofast-rundens Tverrfjellet-arbeid: to kandidat-toppar skilde av eit skar på ~576 viste seg å vere to fjell — Tverrfjellet (889) og denne (922). No har begge kvar sin tur, frå kvar sin fjord.",
+   "Starten er parkeringsplassen langs fylkesvegen ved Hundstadsætran (registerets Hundstadsætran, Seter/støl, 68.73507/16.14850). DTM1 leser 20,4 moh; 923 − 20 = 903, som forliker Fri Flyts 920 høydemeter.",
+   "Ruta reproduserer kilden: skrått mot Vebbestadelva til traktorveien, opp til Vebbestadvatnet (registerets Vann på 391 — linja held land i nordenden) og austover mot toppen. Etter den store steinen blir det brattare — ofte hard skare, og parti på 45–50 grader.",
+   "Fri Flyt: KAST 3 – Komplekst, alpinøks og stegjern — grad 4. Vestsida er favoritten når sør- og austvendte fjell er avblåste, seier kilden: 30–50 grader ned mot traktorveien vest for Salelva. Austlinjene Mellomrenna, Varderenna og Håvards Drøm er variantane.",
+   "check_new_corridors: Overpass svarte 502 på sjølve sjekken, men eiga spørjing viser serviceveg (w621239264) ved sætra og fv. 850 Revsnesveien like ved — kildens «F83» er dagens fv. 850."
+  ],
+  "notes": ""
+ },
+ "horntindan": {
+  "season": "feb–apr",
+  "aspect": "NV",
+  "grade": 4,
+  "gradeReason": "KAST 3 – Komplekst hos Fri Flyt, alpinøks og stegjern, og ei normalnedkjøring over Hornflata som måler 35–40 grader. Grad 4.",
+  "roadClosedInWinter": false,
+  "teaserNo": "930 høydemeter fra Skommesvik: opp mot Hemmestadfjellet og ryggen sørover til Horntindan — med normalnedkjøringa over Hornflata på 35–40 grader for stabile dager.",
+  "teaserEn": "930 metres of ascent from Skommesvik: up towards Hemmestadfjellet and the ridge south to Horntindan — with the normal descent over Hornflata at 35–40 degrees, for stable days.",
+  "hazardNotes": "Fri Flyt: KAST 3 – Komplekst. Alpinøks og stegjern. Nedkjøringa nordvest over Hornflata og ned renna held 35–40 grader og endar i bekkeformasjon ved tregrensa; Vestrenna er den brattaste nedkjøringa i området — berre for røynde, på stabil snø.",
+  "sources": [
+   "https://www.friflyt.no/topptur/harstad/horntindan",
+   "https://www.friflyt.no/randone/turomraade-kvaefjord-og-sortland"
+  ],
+  "confidence": "high",
+  "corrections": [
+   "Registerets Horntindan (Fjell, Kvæfjord) løser 910,9 mot publiserte 910.",
+   "Starten er Skommesvik (registerets Skommesvik, Gard, 68.71811/16.06108) — kilden nemner òg parkering langs fylkesvegen ved Gammelgårdsbukta. DTM1 leser 74,1 moh; 910 − 74 = 836, som forliker Fri Flyts 850 høydemeter.",
+   "Ruta reproduserer kilden: opp mot Hemmestadfjellet og ryggen sørover til Horntindan — same rygg som Hemmestadfjellet-turen brukar, vidare sør.",
+   "Fri Flyt: KAST 3 – Komplekst, alpinøks og stegjern — grad 4. Normalnedkjøringa nordvest over Hornflata og ned renna måler 35–40 grader; Vestrenna er den brattaste nedkjøringa i området og berre for røynde på stabile dagar.",
+   "Starten flytta ned på servicevegen frå fv. 850 Revsnesveien (22,4 moh) — registerpunktet for garden låg over 250 m frå kartlagt veg. Kildens «F83» er dagens fv. 850.",
+   "check_new_corridors: registerpunktet for Skommesvik gard (74 moh) låg over 250 m frå kartlagt veg — starten er flytta ned på servicevegen frå fv. 850 Revsnesveien (22,4 moh). Kildens «F83» er dagens fv. 850. 910 − 22 = 888, som framleis forliker kildens 850 med undulasjonen på ryggen."
+  ],
+  "notes": ""
+ },
+ "hemmestadfjellet": {
+  "season": "jan–apr",
+  "aspect": "N",
+  "grade": 2,
+  "gradeReason": "KAST 1 – Enkelt hos Fri Flyt på nordruta: jamn og lett kjøring med parti på 20 grader, fin for ferske. Grad 2. Vestruta er KAST 3 og ei anna linje.",
+  "roadClosedInWinter": false,
+  "teaserNo": "680 høydemeter fra Vebbestadsætran: traktorveien gjennom granfeltet — og ryggen vest for Vebbestadvatnet til topps, jevn og lett kjøring som er fin for ferske.",
+  "teaserEn": "680 metres of ascent from Vebbestadsætran: the tractor road through the spruce plantation — and the ridge west of Vebbestadvatnet to the top, even, easy skiing that suits newcomers.",
+  "hazardNotes": "Fri Flyt: KAST 1 – Enkelt på nordruta. Vel terrenget med best snødekke over tregrensa. Vestruta frå Skommesvik held over 30 grader og er klassa Komplekst — den er ikkje denne turen.",
+  "sources": [
+   "https://www.friflyt.no/topptur/harstad/hemmestadfjellet",
+   "https://www.friflyt.no/randone/turomraade-kvaefjord-og-sortland"
+  ],
+  "confidence": "high",
+  "corrections": [
+   "Registerets Hemmestadfjellet (Fjell, Kvæfjord) løser 686,5 mot publiserte 687.",
+   "Starten er lomma ved Vebbestadsætran langs fylkesvegen (registerets Vebbestadsætran, Seter/støl, 68.73958/16.11238). DTM1 leser 37,5 moh; 687 − 38 = 649, som forliker Fri Flyts 680 høydemeter.",
+   "Ruta reproduserer kilden: traktorveien gjennom granfeltet, og ryggen vest for Vebbestadvatnet til topps — vel terrenget med best snødekke over tregrensa.",
+   "Fri Flyt: KAST 1 – Enkelt på nordruta, jamn og lett kjøring med parti på 20 grader — fin for ferske. Grad 2. Vestruta frå Skommesvik (over 30 grader) er KAST 3 og ikkje denne.",
+   "check_new_corridors: ingen amenity=parking, men veg (primary fv. 850/track) på punktet — lomma er langs vegen slik kilden beskriver."
+  ],
+  "notes": ""
+ },
+ "melaaksla": {
+  "season": "feb–apr",
+  "aspect": "N",
+  "grade": 2,
+  "gradeReason": "Nedkjøring på 15–25 grader med nokre parti på 30 hos Fri Flyt — flott variert terreng, og ryggen heim er rein kjøring. Grad 2.",
+  "roadClosedInWinter": false,
+  "teaserNo": "960 høydemeter fra Melå: traktorveien til Dalbotnen, forbi hytta ved 505-høgda — og den lange ryggen sørover til toppen, med 15–25 graders kjøring hjem mot Austerfjorden.",
+  "teaserEn": "960 metres of ascent from Melå: the tractor road to Dalbotnen, past the hut at the 505 knoll — and the long ridge south to the summit, with 15–25 degree skiing home above Austerfjorden.",
+  "hazardNotes": "Fri Flyt: 15–25 grader med parti på 30. Hald ryggen — austsida mot Austerfjorden er brattare, og tjernet på 717 passerast på vestsida. Utsikt over Austerfjorden, Jonsheimen og Gullesfjorden.",
+  "sources": [
+   "https://www.friflyt.no/topptur/harstad/melaaksla",
+   "https://www.friflyt.no/randone/turomraade-kvaefjord-og-sortland"
+  ],
+  "confidence": "medium",
+  "corrections": [
+   "Registerets Melåaksla (Fjell, Kvæfjord) står på 747-skuldra i nord — men ryggen klatrar vidare, og publiserte 915 er toppen på 915,7 ved 68.63268/16.13913, 1 km sør (sjå SUMMIT_SEED). Fyrste såkorn gjekk på 959,6-toppen endå lenger søraust — det er neste fjell i kjeda, ikkje turen.",
+   "Starten er Melå — traktorveien på sørsida av elva, i motsetnad til Tverrfjellet-turens nordside. DTM1 leser 11,1 moh ved lomma; 915 − 11 = 904, som forliker.",
+   "Ruta reproduserer kilden: traktorveien til Dalbotnen (registerets Dalbotnen, Botn, 68.66006/16.13183), til høgre (sør) mot 505-høgda, forbi den vesle slitne hytta og ryggen sørover til toppen — vest for tjernet på 717.",
+   "Fri Flyt: nedkjøring 15–25 grader med nokre parti på 30 — flott variert terreng med utsikt over Austerfjorden, Jonsheimen og Gullesfjorden. Grad 2.",
+   "check_new_corridors: ingen amenity=parking, men veg (secondary fv. 7784/service/track) på punktet — lommene er langs vegen slik kilden beskriver."
+  ],
+  "notes": ""
  }
 }

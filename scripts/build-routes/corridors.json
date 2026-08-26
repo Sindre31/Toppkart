@@ -7854,5 +7854,440 @@
     "notes": "Fri Flyt: KAST 3 – Komplekst. Velg den slakeste traseen — ruten er omgitt av mer skredfarlig terreng, med partier på 30–40 grader rundt normallinja. Mulig ising over tregrensa; vurder stegjern. Vestsida mot Storskardet er brattere og krever egen snøvurdering."
    }
   ]
+ },
+ "nona": {
+  "routes": [
+   {
+    "id": "vestsiden",
+    "name": "Vestsiden fra Dale",
+    "description": "Fra Dale innover Dalsdalen på skitursporet, over Dalselva og opp den breieste renna til Grytøyas høyeste",
+    "trailhead": {
+     "name": "Dale",
+     "lat": 68.9385,
+     "lng": 16.364,
+     "elevation_m": 58.0,
+     "fullName": "Dale"
+    },
+    "waypoints": [
+     {
+      "name": "skogsveien",
+      "lat": 68.936,
+      "lng": 16.383,
+      "elevation_m": 97.0
+     },
+     {
+      "name": "Dalsdalen",
+      "lat": 68.933,
+      "lng": 16.41,
+      "elevation_m": 137.0
+     },
+     {
+      "name": "øvre Dalsdalen",
+      "lat": 68.928,
+      "lng": 16.435,
+      "elevation_m": 280.0
+     },
+     {
+      "name": "renna",
+      "lat": 68.926,
+      "lng": 16.44,
+      "elevation_m": 453.0
+     },
+     {
+      "name": "øvre renna",
+      "lat": 68.9235,
+      "lng": 16.445,
+      "elevation_m": 843.0
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: KAST 3 – Komplekst. Alpinøks og stegjern. Renna holder 30–45 grader sammenhengende; Syd direkte måler 35–50 og krever stabil snø og presis veivalg. Vurder snødekket før nedkjøring — terrenget er skredterreng i alle varianter."
+   }
+  ]
+ },
+ "trolltinden": {
+  "routes": [
+   {
+    "id": "ryggruta",
+    "name": "Ryggruta fra Bjørnerå",
+    "description": "Fra ferjeleiet på Bjørnerå vestover inn Bjørnrådalen, opp ryggen mot skulderen og toppstøtet til fots",
+    "trailhead": {
+     "name": "Bjørnerå",
+     "lat": 68.8825,
+     "lng": 16.503,
+     "elevation_m": 2.0,
+     "fullName": "Bjørnerå"
+    },
+    "waypoints": [
+     {
+      "name": "Bjørnrådalen",
+      "lat": 68.896,
+      "lng": 16.495,
+      "elevation_m": 190.0
+     },
+     {
+      "name": "øvre dalen",
+      "lat": 68.9,
+      "lng": 16.48,
+      "elevation_m": 450.0
+     },
+     {
+      "name": "ryggen",
+      "lat": 68.905,
+      "lng": 16.485,
+      "elevation_m": 650.0
+     },
+     {
+      "name": "skulderen",
+      "lat": 68.908,
+      "lng": 16.483,
+      "elevation_m": 757.0
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: KAST 2 – Utfordrende. Alpinøks og stegjern — ofte hard skare på ryggene. Skavler ved toppstøtet. Dødsulykke 10. mars 2019 i renna øst for Storelva på Storfjellet; unngå den innerste nordvestbollen der store skred har gått. S-renna og Østrenna krever stabil snø."
+   }
+  ]
+ },
+ "stortussen": {
+  "routes": [
+   {
+    "id": "sydryggen",
+    "name": "Sydryggen fra Dale",
+    "description": "Fra Dale etter sommerstien til Storvatnet og Trollvatnet, opp det slakeste terrenget og ryggen nordover til toppen",
+    "trailhead": {
+     "name": "Dale",
+     "lat": 68.9385,
+     "lng": 16.364,
+     "elevation_m": 58.0,
+     "fullName": "Dale"
+    },
+    "waypoints": [
+     {
+      "name": "sommerstien",
+      "lat": 68.949,
+      "lng": 16.372,
+      "elevation_m": 294.0
+     },
+     {
+      "name": "Trollvatnet på land",
+      "lat": 68.955,
+      "lng": 16.358,
+      "elevation_m": 337.0
+     },
+     {
+      "name": "mellom høgdene",
+      "lat": 68.96,
+      "lng": 16.355,
+      "elevation_m": 406.0
+     },
+     {
+      "name": "ryggen",
+      "lat": 68.966,
+      "lng": 16.36,
+      "elevation_m": 587.0
+     },
+     {
+      "name": "mot toppen",
+      "lat": 68.971,
+      "lng": 16.363,
+      "elevation_m": 740.0
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: KAST 2 – Utfordrende. Alpinøks og stegjern; toppartiet krever ekstra fokus og ski kan hensettes. Nedkjøringsvariantene måler 35–40 grader (nordrenna og austsida) og opp mot 50 øverst på vestsida — terrenget er skredterreng, vurder snøen før valg."
+   }
+  ]
+ },
+ "litletussen": {
+  "routes": [
+   {
+    "id": "sorostsiden",
+    "name": "Sørøstsiden fra Dale",
+    "description": "Fra Dale etter sommerstien til Storvatnet, rundt vatnet på land, nordaust gjennom skogen og opp mot toppen med sørryggen som slakeste inngang",
+    "trailhead": {
+     "name": "Dale",
+     "lat": 68.9385,
+     "lng": 16.364,
+     "elevation_m": 58.0,
+     "fullName": "Dale"
+    },
+    "waypoints": [
+     {
+      "name": "Storvatnet på land",
+      "lat": 68.9495,
+      "lng": 16.374,
+      "elevation_m": 274.0
+     },
+     {
+      "name": "myrene nordaust",
+      "lat": 68.953,
+      "lng": 16.385,
+      "elevation_m": 262.0
+     },
+     {
+      "name": "lia",
+      "lat": 68.958,
+      "lng": 16.395,
+      "elevation_m": 461.0
+     },
+     {
+      "name": "sørryggen",
+      "lat": 68.961,
+      "lng": 16.4,
+      "elevation_m": 689.0
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: KAST 2 – Utfordrende. Alpinøks og stegjern. Unngå skredterrenget i sørflanken på veg opp; fyrste henget i nedkjøringa er brattare enn 30 grader. Vestsida (30–40 samanhengande) er Komplekst og ei anna linje.",
+    "avoidWater": true
+   }
+  ]
+ },
+ "hattfjellet": {
+  "routes": [
+   {
+    "id": "sorsiden",
+    "name": "Sørsiden fra Grøtavær",
+    "description": "Fra vegen til skytebanen på Grøtavær etter traktorveien opp Bjørndalen, venstre der det flater og sørsida til topps",
+    "trailhead": {
+     "name": "Grøtavær",
+     "lat": 68.968,
+     "lng": 16.27,
+     "elevation_m": 81.0,
+     "fullName": "Grøtavær"
+    },
+    "waypoints": [
+     {
+      "name": "traktorveien i Bjørndalen",
+      "lat": 68.974,
+      "lng": 16.28,
+      "elevation_m": 121.0
+     },
+     {
+      "name": "øvre Bjørndalen",
+      "lat": 68.9745,
+      "lng": 16.295,
+      "elevation_m": 339.0
+     },
+     {
+      "name": "venstre der det flater",
+      "lat": 68.976,
+      "lng": 16.308,
+      "elevation_m": 706.0
+     },
+     {
+      "name": "mot toppen",
+      "lat": 68.9752,
+      "lng": 16.318,
+      "elevation_m": 800.0
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: KAST 2 – Utfordrende. Alpinøks og stegjern. Sørsida held 30–35 grader; Sydrenna 35–40. Nordlinjene Goldfishrenna og Frogman (45–50 grader) krev rappell frå skavlen og er ekspertlinjer. Varsom.no for snø- og skredvarsel."
+   }
+  ]
+ },
+ "slattheia": {
+  "routes": [
+   {
+    "id": "sorostsiden",
+    "name": "Sørøstsiden fra Dale",
+    "description": "Fra Dale etter sommerstien mot Storvatnet, venstre der det flater, forbi 342-høgda og opp den store søraustvendte lia",
+    "trailhead": {
+     "name": "Dale",
+     "lat": 68.9385,
+     "lng": 16.364,
+     "elevation_m": 58.0,
+     "fullName": "Dale"
+    },
+    "waypoints": [
+     {
+      "name": "venstre der det flater",
+      "lat": 68.948,
+      "lng": 16.36,
+      "elevation_m": 340.0
+     },
+     {
+      "name": "lia søraust",
+      "lat": 68.95,
+      "lng": 16.348,
+      "elevation_m": 593.0
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: KAST 2 – Utfordrende, men normalruta unngår det meste av skredterrenget. Stegjern kan vere nyttig på skare. Hald deg til den store søraustvendte lia — flankane ikring er brattare."
+   }
+  ]
+ },
+ "middagstinden-kvafjord": {
+  "routes": [
+   {
+    "id": "vestsiden",
+    "name": "Vestsiden fra Hundstadsætran",
+    "description": "Fra parkeringa ved Hundstadsætran skrått mot Vebbestadelva, traktorveien opp til Vebbestadvatnet og austover forbi den store steinen til toppen",
+    "trailhead": {
+     "name": "Hundstadsætran",
+     "lat": 68.7351,
+     "lng": 16.1485,
+     "elevation_m": 20.0,
+     "fullName": "Hundstadsætran"
+    },
+    "waypoints": [
+     {
+      "name": "skrått mot Vebbestadelva",
+      "lat": 68.73,
+      "lng": 16.138,
+      "elevation_m": 207.0
+     },
+     {
+      "name": "nordenden av Vebbestadvatnet",
+      "lat": 68.7197,
+      "lng": 16.1295,
+      "elevation_m": 400.0
+     },
+     {
+      "name": "austover",
+      "lat": 68.714,
+      "lng": 16.145,
+      "elevation_m": 617.0
+     },
+     {
+      "name": "toppflanken",
+      "lat": 68.7125,
+      "lng": 16.152,
+      "elevation_m": 854.0
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: KAST 3 – Komplekst. Alpinøks og stegjern — partiet over den store steinen er ofte hard skare, og held 45–50 grader. Vestsida ned måler 30–50 grader; austlinjene Mellomrenna, Varderenna og Håvards Drøm (30–50) krev stabil snø."
+   }
+  ]
+ },
+ "horntindan": {
+  "routes": [
+   {
+    "id": "via-hemmestadfjellet",
+    "name": "Via Hemmestadfjellet fra Skommesvik",
+    "description": "Fra Skommesvik opp mot Hemmestadfjellet og ryggen sørover til Horntindan",
+    "trailhead": {
+     "name": "Skommesvik",
+     "lat": 68.718,
+     "lng": 16.055,
+     "elevation_m": 22.0,
+     "fullName": "Skommesvik"
+    },
+    "waypoints": [
+     {
+      "name": "opp lia",
+      "lat": 68.718,
+      "lng": 16.085,
+      "elevation_m": 469.0
+     },
+     {
+      "name": "sør for Hemmestadfjellet",
+      "lat": 68.715,
+      "lng": 16.098,
+      "elevation_m": 673.0
+     },
+     {
+      "name": "ryggen sørover",
+      "lat": 68.71,
+      "lng": 16.096,
+      "elevation_m": 699.0
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: KAST 3 – Komplekst. Alpinøks og stegjern. Nedkjøringa nordvest over Hornflata og ned renna held 35–40 grader og endar i bekkeformasjon ved tregrensa; Vestrenna er den brattaste nedkjøringa i området — berre for røynde, på stabil snø."
+   }
+  ]
+ },
+ "hemmestadfjellet": {
+  "routes": [
+   {
+    "id": "nordruta",
+    "name": "Nordruta fra Vebbestadsætran",
+    "description": "Fra lomma ved Vebbestadsætran etter traktorveien gjennom granfeltet og ryggen vest for Vebbestadvatnet til topps",
+    "trailhead": {
+     "name": "Vebbestadsætran",
+     "lat": 68.73958,
+     "lng": 16.11238,
+     "elevation_m": 38.0,
+     "fullName": "Vebbestadsætran"
+    },
+    "waypoints": [
+     {
+      "name": "traktorveien i granfeltet",
+      "lat": 68.733,
+      "lng": 16.113,
+      "elevation_m": 359.0
+     },
+     {
+      "name": "ryggen vest for vatnet",
+      "lat": 68.726,
+      "lng": 16.112,
+      "elevation_m": 418.0
+     },
+     {
+      "name": "ryggen",
+      "lat": 68.7215,
+      "lng": 16.109,
+      "elevation_m": 436.0
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: KAST 1 – Enkelt på nordruta. Vel terrenget med best snødekke over tregrensa. Vestruta frå Skommesvik held over 30 grader og er klassa Komplekst — den er ikkje denne turen."
+   }
+  ]
+ },
+ "melaaksla": {
+  "routes": [
+   {
+    "id": "ryggen",
+    "name": "Ryggen fra Melå",
+    "description": "Fra Melå etter traktorveien på sørsida av elva til Dalbotnen, sør mot 505-høgda, forbi hytta og ryggen sørover til toppen",
+    "trailhead": {
+     "name": "Melå",
+     "lat": 68.662,
+     "lng": 16.083,
+     "elevation_m": 11.0,
+     "fullName": "Melå"
+    },
+    "waypoints": [
+     {
+      "name": "traktorveien sørsida",
+      "lat": 68.66,
+      "lng": 16.1,
+      "elevation_m": 230.0
+     },
+     {
+      "name": "Dalbotnen",
+      "lat": 68.6601,
+      "lng": 16.1318,
+      "elevation_m": 296.0
+     },
+     {
+      "name": "mot 505-høgda",
+      "lat": 68.652,
+      "lng": 16.137,
+      "elevation_m": 493.0
+     },
+     {
+      "name": "ryggen",
+      "lat": 68.645,
+      "lng": 16.145,
+      "elevation_m": 590.0
+     },
+     {
+      "name": "vest for tjernet",
+      "lat": 68.6355,
+      "lng": 16.143,
+      "elevation_m": 751.0
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: 15–25 grader med parti på 30. Hald ryggen — austsida mot Austerfjorden er brattare, og tjernet på 717 passerast på vestsida. Utsikt over Austerfjorden, Jonsheimen og Gullesfjorden."
+   }
+  ]
  }
 }
