@@ -4178,6 +4178,81 @@ classification describes the surroundings, not the line. Nonstinden's
 «four steep descents» measure 21.5–38.9° mean on all eight bearings — the
 round's grade 4.
 
+## The Grytøya and Kvæfjord-vest round
+
+Ten more from the Harstad book, in two clusters: six on Grytøya — four of
+them from the same Dale trailhead, plus the free ferry quay at Bjørnerå and
+the road to the shooting range at Grøtavær — and four in western Kvæfjord,
+from Hundstadsætran, Skommesvik, Vebbestadsætran and Melå. Two grade 2
+ridges, four grade 3s, and three tours the KAST 3 / axe-and-crampons
+classes push to grade 4 by the Gråfjell rule. For the first time every
+summit in a round answers to a single forecasting region: NVE resolves all
+ten to Sør-Troms (3012), an A-region with a daily bulletin — the previous
+two rounds each split 4/1 across regions.
+
+| tour | start | summit | gain | km | steepest 100 m band | steepest 30 m | grade |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Nona | 58 | 1009 | 1024 | 5.4 | 22.7° | 36.2° | 4 |
+| Trolltinden | 2 | 918 | 942 | 4.7 | 21.0° | 36.4° | 3 |
+| Stortussen | 58 | 945 | 1024 | 5.5 | 18.9° | 36.2° | 3 |
+| Litletussen | 58 | 795 | 765 | 4.0 | 18.9° | 22.4° | 3 |
+| Hattfjellet | 81 | 857 | 829 | 4.0 | 21.6° | 31.4° | 3 |
+| Slåttheia | 58 | 694 | 638 | 2.5 | 21.8° | 25.0° | 2 |
+| Middagstinden i Kvæfjord | 20 | 922 | 908 | 4.1 | 19.2° | 31.4° | 4 |
+| Horntindan | 22 | 911 | 934 | 3.9 | 21.8° | 29.4° | 4 |
+| Hemmestadfjellet | 38 | 686 | 679 | 3.9 | 25.2° | 34.9° | 2 |
+| Melåaksla | 11 | 916 | 964 | 5.9 | 23.7° | 35.5° | 2 |
+
+**The 922 knoll from the Lofast round is a mountain, and now it has its
+own tour.** Tverrfjellet's summit forensics last round found two candidate
+tops split by a ~576 m col and concluded they were two mountains —
+Tverrfjellet (889) and an unnamed 922. The Harstad book's Middagstinden
+923 in Kvæfjord is that 922: the summit search resolves 921.9 exactly
+where the col analysis put it. The two now carry tours from opposite
+fjords — Tverrfjellet from Melåa on Gullesfjorden, Middagstinden from
+Hundstadsætran on Kvæfjorden — and the card is the third qualified name
+duplicate, *Middagstinden i Kvæfjord*, against the Romsdal one.
+
+**Melåaksla took three candidates.** The register's name stands on the
+747 shoulder in the north; the first `SUMMIT_SEED` walked uphill onto a
+959.6 top a kilometre south-east of the book's mountain. Published height
+names the top: 915 matches the 915.7 summit at 68.63268/16.13913 between
+them, so the seed was moved there and the guide tells the story — the
+ridge past the cairn keeps rising, because the next mountain in the chain
+has already begun.
+
+**A trailhead is where the plough turns, not where the register puts the
+farm.** `check_new_corridors.py` found no mapped road within 250 m of the
+Skommesvik register point (74 m) that Horntindan's source names as the
+start. The corridor was re-anchored on the service road off fv. 850
+Revsnesveien at 22 m — the source's «F83» is that road's pre-renumbering
+name, worth a line in the corrections because the next researcher will hit
+the same stale reference.
+
+**The router cut a lake the research had already walked around.**
+Litletussen's corridor says «rundt vatnet på land» — the source crosses
+Storvatnet's ice, the line keeps to land, the Snøtindan rule — but the
+least-cost solve found 225 m of frozen lake cheaper than the shore.
+`check_ground.py` caught it; the fix was declaring `avoidWater` on the
+corridor, which is where that intent belongs, and the re-solve came back
+41 m longer and dry. With that, all ten lines carry zero wet vertices —
+the terrain-class pre-probing from the Lofast round again did the work the
+re-route pass used to do.
+
+**Stortussen keeps its 137 m of give-back.** The line loses 137 of the
+1024 m it gains — over the 60/123 advisory line — because the source's
+route rolls along Storvatnet, Trollvatnet and an undulating summit ridge.
+As with Reinspælen, the undulation is the tour: Fri Flyt's own 1080
+høydemeter figure carries it, and the guide states the skins-off,
+skins-on rhythm instead of flattening the route to please a threshold.
+
+**One transient and one memorial.** Nona's first solve failed on a WCS
+GetCoverage 404 from Geonorge — a plain retry succeeded, nothing to fix.
+And Trolltinden's source documents a fatal avalanche on 10 March 2019 in
+the couloir east of Storelva on Storfjellet; the guide carries it, with
+the source's instruction to avoid the innermost north-west bowl where
+large slides have run before.
+
 ## Network
 
 Everything is public and unauthenticated:

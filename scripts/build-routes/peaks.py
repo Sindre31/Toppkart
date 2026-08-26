@@ -346,4 +346,24 @@ PEAKS = [
     ("nonstinden", "Nonstinden", ["Kvæfjord"], 930, 68.54891, 15.68146),
     ("tverrfjellet", "Tverrfjellet", ["Kvæfjord"], 899, 68.70180, 16.13526),
     ("middagsfjellet", "Middagsfjellet", ["Lødingen", "Kvæfjord"], 811, 68.50876, 15.78226),
+    #
+    # — the Grytøya and Kvæfjord-vest round: ten from the Harstad book — the
+    #   island chapter reached by the free Stornes–Bjørnerå ferry, and the
+    #   summits ringing Vebbestadvatnet plus Melåaksla above Austerfjorden.
+    #   Litjetussen is the register spelling of Fri Flyt's Litletussen; the
+    #   923 Middagstinden is the app's third qualified duplicate name; and
+    #   Melåaksla's register point sits on a 747 m shoulder while the tour's
+    #   915 top is 1.3 km south-east — see SUMMIT_SEED. Middagstinden i
+    #   Kvæfjord is the 922-knoll the Lofast round's Tverrfjellet work proved
+    #   to be a separate mountain across the 576 m col. —
+    ("nona", "Nona", ["Harstad - Hárstták", "Harstad"], 1012, 68.92155, 16.45066),
+    ("trolltinden", "Trolltinden", ["Harstad - Hárstták", "Harstad"], 919, 68.91393, 16.48952),
+    ("stortussen", "Stortussen", ["Harstad - Hárstták", "Harstad"], 941, 68.97430, 16.36663),
+    ("litletussen", "Litjetussen", ["Harstad - Hárstták", "Harstad"], 796, 68.96361, 16.40396),
+    ("hattfjellet", "Hattfjellet", ["Harstad - Hárstták", "Harstad"], 856, 68.97455, 16.32605),
+    ("slattheia", "Slåttheia", ["Harstad - Hárstták", "Harstad"], 690, 68.95156, 16.34051),
+    ("middagstinden-kvafjord", "Middagstinden", ["Kvæfjord"], 923, 68.71173, 16.15584),
+    ("horntindan", "Horntindan", ["Kvæfjord"], 910, 68.70284, 16.09521),
+    ("hemmestadfjellet", "Hemmestadfjellet", ["Kvæfjord"], 687, 68.71780, 16.10741),
+    ("melaaksla", "Melåaksla", ["Kvæfjord"], 915, 68.63268, 16.13913),
 ]

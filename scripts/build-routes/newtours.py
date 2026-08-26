@@ -177,4 +177,16 @@ NEW_TOURS = {
     "nonstinden": ("Nonstinden", "Harstad"),
     "tverrfjellet": ("Tverrfjellet", "Harstad"),
     "middagsfjellet": ("Middagsfjellet", "Harstad"),
+    # — Grytøya- og Kvæfjord-runden: øya med gratisferga, og toppene rundt
+    #   Vebbestadvatnet. —
+    "nona": ("Nona", "Harstad"),
+    "trolltinden": ("Trolltinden", "Harstad"),
+    "stortussen": ("Stortussen", "Harstad"),
+    "litletussen": ("Litletussen", "Harstad"),
+    "hattfjellet": ("Hattfjellet", "Harstad"),
+    "slattheia": ("Slåttheia", "Harstad"),
+    "middagstinden-kvafjord": ("Middagstinden i Kvæfjord", "Harstad"),
+    "horntindan": ("Horntindan", "Harstad"),
+    "hemmestadfjellet": ("Hemmestadfjellet", "Harstad"),
+    "melaaksla": ("Melåaksla", "Harstad"),
 }

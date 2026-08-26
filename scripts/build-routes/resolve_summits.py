@@ -83,6 +83,15 @@ SUMMIT_SEED = {
     # first and its «ridge east to the summit» finishes there; the register
     # point names the massif, not the tour.
     "fiskefjordtindan": (68.53225, 16.01086),
+    # Melåaksla's register point sits on the 747 m north shoulder of a ridge
+    # that keeps climbing: the first seed south of it walked onto a 959.6 m
+    # top at 68.62895/16.14784 — but Fri Flyt publishes 915, and the ridge's
+    # 915.7 m top at this point matches it to 0.7 m. Coming south from
+    # Dalbotnen the 915.7 top is the one «ryggen sørover mot toppen» reaches
+    # first; the 959.6 ground beyond it is the next mountain in the chain,
+    # not the tour. Same doctrine as Fiskefjordtindan: the published height
+    # names the top.
+    "melaaksla": (68.63268, 16.13913),
     # «Tredje Svanfjell» is not a register name at all — the Svanfjella are
     # numbered informally, and the register's Svanfjellet (Fjell) sits 2,2 km
     # south-east on another top. Fri Flyt publishes a GPS summit position

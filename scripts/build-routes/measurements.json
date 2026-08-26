@@ -2219,5 +2219,75 @@
    "figure": "Nord er den slake sida (9,5° i snitt) — normalruta. Vest mot Storskardet måler 54,4° i vindauget 60–120 m ut, SV 49,3 og NV 46,7 — kildens «omgitt av mer skredfarlig terreng», målt",
    "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
   }
+ ],
+ "nona": [
+  {
+   "what": "Alle kantar ved toppen (Nona)",
+   "figure": "Ingen slak side på Grytøyas konge: N/NE/E måler 45,7–49,1° i snitt med vindu på 57–66°, og SV — den snillaste — 27,8°. Renna i vestruta og Syd direkte ligg i flankar som måler 37,9 og 34,7 i snitt",
+   "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+  }
+ ],
+ "trolltinden": [
+  {
+   "what": "Alle kantar ved toppen (Trolltinden)",
+   "figure": "SV er den slake sida (13,4° i snitt) — ryggruta kjem den vegen. E/SE/S måler 33–36° i snitt (S-renna og Bollen), NV 35,8 — prinsens bratte sider finst, dei vender berre bort frå ryggen",
+   "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+  }
+ ],
+ "stortussen": [
+  {
+   "what": "Alle kantar ved toppen (Stortussen)",
+   "figure": "Alle åtte peilingar måler 20,0–46,1° i snitt; N 46,1 med 66,5°-vindu 30–90 m ut og NE 69,3° — toppstøtet som krev ekstra fokus har målingane med seg. Sør, der sydryggen kjem, er slakast med 20,0",
+   "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+  }
+ ],
+ "litletussen": [
+  {
+   "what": "Alle kantar ved toppen (Litletussen)",
+   "figure": "NE-flanken måler 67,3° i vindauget 400–460 m ut — sørflankens skredterreng kilden ber deg unngå har ein like alvorleg tvilling mot nordaust. SE/S/SV, der ruta går, måler 16,6–27,2° i snitt",
+   "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+  }
+ ],
+ "hattfjellet": [
+  {
+   "what": "Alle kantar ved toppen (Hattfjellet)",
+   "figure": "V og NV er dei slake sidene (9,1–10,7° i snitt); austflanken måler 66,6° og SE 69,3° i sine brattaste vindu — Goldfishrenna og Frogman bur der. Sørsida ruta brukar måler 12,0 i snitt",
+   "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+  }
+ ],
+ "slattheia": [
+  {
+   "what": "Alle kantar ved toppen (Slåttheia)",
+   "figure": "NV er den slake sida (7,7° i snitt) og SE-lia ruta brukar 20,7 — men SV og NE måler 35–38° i snitt: nybegynnartoppen har vaksne kantar, og ruta går utanom dei slik kilden seier",
+   "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+  }
+ ],
+ "middagstinden-kvafjord": [
+  {
+   "what": "Alle kantar ved toppen (Middagstinden i Kvæfjord)",
+   "figure": "NE og E måler 38–39° i snitt med 55,9°-vindu rett under varden — austlinjene Mellomrenna, Varderenna og Håvards Drøm. Vest, der ruta kjem, er slakast med 24,0 — og 45–50-partiet ved steinen ligg i NV-vindauget på 41,9",
+   "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+  }
+ ],
+ "horntindan": [
+  {
+   "what": "Alle kantar ved toppen (Horntindan)",
+   "figure": "N/NE-flankane måler 61,8–64,0° i sine fyrste vindu — horna som gav fjellet namn. SE, der ryggen frå Hemmestadfjellet kjem, måler 10,1 i snitt; NV over Hornflata (normalnedkjøringa) 12,8 i snitt med 49,4°-vindu nær toppen",
+   "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+  }
+ ],
+ "hemmestadfjellet": [
+  {
+   "what": "Alle kantar ved toppen (Hemmestadfjellet)",
+   "figure": "SV er flat (0,5° i snitt — ryggen mot Horntindan), V/NV 7,8–9,7 — nordruta si side. Austsida mot Vebbestadvatnet måler 30,5 i snitt og nordsida har eit 52,7°-vindu — vestruta frå Skommesvik er KAST 3 med god grunn",
+   "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+  }
+ ],
+ "melaaksla": [
+  {
+   "what": "Alle kantar ved toppen (Melåaksla)",
+   "figure": "SE stig (−2,0° i snitt — ryggen held fram mot 959-toppen, neste fjell i kjeda). Ryggen heim mot nord måler 27,9 i snitt dei fyrste 500 m med 47°-vindu 110–170 m ut — hald ryggen, aust mot Austerfjorden er brattare",
+   "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+  }
  ]
 }
