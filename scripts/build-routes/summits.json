@@ -1334,5 +1334,45 @@
     "summit_dtm": 916.2,
     "claims": 915,
     "stored_off_km": 0.0
+  },
+  "langlitinden": {
+    "name": "Langlitinden",
+    "lat": 68.86785,
+    "lng": 17.38742,
+    "summit_dtm": 1275.5,
+    "claims": 1276,
+    "stored_off_km": 0.0
+  },
+  "skartinden": {
+    "name": "Skartinden",
+    "lat": 68.87745,
+    "lng": 17.33598,
+    "summit_dtm": 1148.9,
+    "claims": 1150,
+    "stored_off_km": 0.02
+  },
+  "krakrotinden": {
+    "name": "Kråkrøtinden",
+    "lat": 68.86266,
+    "lng": 17.40083,
+    "summit_dtm": 1186.5,
+    "claims": 1187,
+    "stored_off_km": 0.01
+  },
+  "ristinden": {
+    "name": "Ristinden",
+    "lat": 68.84241,
+    "lng": 17.25256,
+    "summit_dtm": 1055.9,
+    "claims": 1055,
+    "stored_off_km": 0.02
+  },
+  "sula": {
+    "name": "Sula",
+    "lat": 68.76819,
+    "lng": 17.05909,
+    "summit_dtm": 847.7,
+    "claims": 848,
+    "stored_off_km": 0.01
   }
 }

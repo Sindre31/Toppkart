@@ -4253,6 +4253,59 @@ the couloir east of Storelva on Storfjellet; the guide carries it, with
 the source's instruction to avoid the innermost north-west bowl where
 large slides have run before.
 
+## The Ibestad round
+
+Five from the Harstad book on Ibestad's two islands: four on Andørja —
+Northern Europe's most mountain-rich island, twenty summits over 1000 m —
+and Sula on Rolla as the round's KAST 1 entry. Langlitinden is the
+headline: the Nordic countries' highest summit on an island, 1276 m with
+1276 m of prominence, fjord to cairn. Two tours share the road end at
+Vang; the KAST 3 / axe-and-crampons classes push four of the five to
+grade 4 by the Gråfjell rule. For the second round running, every summit
+resolves to a single forecasting region — Sør-Troms (3012).
+
+| tour | start | summit | gain | km | steepest 100 m band | steepest 30 m | grade |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Langlitinden | 8 | 1276 | 1305 | 5.5 | 21.5° | 33.5° | 4 |
+| Skartinden | 8 | 1149 | 1287 | 4.4 | 24.8° | 38.8° | 4 |
+| Kråkrøtinden | 16 | 1186 | 1193 | 5.2 | 21.6° | 27.2° | 4 |
+| Ristinden | 44 | 1056 | 1052 | 4.1 | 23.9° | 38.3° | 4 |
+| Sula | 22 | 848 | 827 | 3.8 | 17.0° | 21.9° | 2 |
+
+**The summit search went five for five within 1.1 m.** Every SSR register
+point resolved onto the DTM1 top at the published height on the first
+try — no seeds, no forensics, the cleanest round yet. The corridors
+needed one correction: Ytterholla's waypoint elevation (497, not the
+442 first written down).
+
+**The lake on Langlitinden's flat got the round's one re-route.** The
+source's west route passes "the flat with the small lake"; the first
+solve found 251 m of the (unnamed, per SSR) tarn at 575 m cheaper than
+its shore. `check_ground.py` caught it, `avoidWater` on the corridor
+fixed it — five moved vertices, fourteen inserted, zero metres still on
+water — and all five lines ship dry.
+
+**The router and the source describe the same passage differently, and
+the guide carries both.** Kråkrøtinden's 40-degree passage is real — the
+flank probe puts 42.5–48.0° windows right under the summit in the NW/W
+bearings the north route uses — but the model's own line never exceeds
+27.2° in a single step, because the track crosses the passage at a
+slant. Fall line versus skin track: the guide states both numbers and
+why they differ.
+
+**Ristinden has no gentle side.** All eight flank probes average
+26.4–42.3° — the only summit in ten rounds where every bearing exceeds
+26°. The Breilifatet ramp works because its steep window (52.3°) sits
+270–330 m out from the cairn; the guide says stable snow is the ticket
+in, not a wish.
+
+**Sula's KAST 1 is the route's, not the mountain's.** The SE flank the
+route uses probes 14.7° mean with a 20.5° steepest window — the source's
+"slopes just over 20 degrees" confirmed on the line (max step 21.9°) —
+but every other bearing holds 50–69° windows tight on the cairn. The
+same route-not-mountain pattern as Hemmestadfjellet last round, from the
+other end of the KAST scale.
+
 ## Network
 
 Everything is public and unauthenticated:

@@ -1073,6 +1073,146 @@ export const GUIDES: Record<string, TourGuide> = {
       caption: "940 høydemeter og 4,7 km fra ferjeleiet på Bjørnerå: Bjørnrådalen til 450, ryggen over skulderen på 757 — og toppstøtet til fots, 36,4 grader på det bratteste mellom 875 og 908 moh.",
     },
   },
+  skartinden: {
+    slug: "skartinden",
+    intro:
+      "1287 høydemeter og 4,44 km fra Vang til Skartinden på 1149 — samme snuplass som Langlitinden, motsatt retning: opp elvedalen til Ytterholla, skardet mellom Vasskartinden og Skartinden, og ryggen eller den store flata austover til toppen. KAST 3 – Komplekst med alpinøks og stegjern; nedkjøringa er 30–40 grader øverst med 60-graders klipper rundt Ytterholla. Grad 4.",
+    ascent: [
+      "Fra snuplassen ved Vang — 8 moh — går linja nordover opp elvedalen: 195 moh der korridoren står i dalen, og skoggrensa allerede på 492 etter 1,62 km. Beltet fra 300 til 400 måler 20,9 grader gjennom lia.",
+      "Ytterholla — søkket på 497 — og opp holla om snøen tillater det, til skardet mellom Vasskartinden og Skartinden på 795. Beltet fra 800 til 900 måler 4,9 grader over den store flata bak skardet: en drøy kilometer pust før sluttstøtet.",
+      "Ryggen eller flata austover fra 844: beltet fra 1000 til 1100 er det bratteste i snitt med 24,8 grader, og det bratteste enkeltpartiet, 38,8 grader mellom 843 og 874 moh, ligger der flata reiser seg mot toppartiet. Varden står på 1149.",
+    ],
+    descent: [
+      "Nedkjøringa er 30–40 grader øverst og 35–40 over Ytterholla — omkranset av 60-graders klipper, sier kilden, og målingen bekrefter dem: NV faller 48,8 grader i snitt med 69,8-vindu, N 45,4 med 63,0. Presis veivalg, særlig i flatt lys.",
+      "Linja gir tilbake 146 av de 1287 meterne den vinner — skardet og flata skal krysses begge veier. Vest, der ruta ligger, er den slakeste målingen med 30,8 i snitt, og det bratte vinduet (35,0) kommer først 330–390 m ut fra varden.",
+    ],
+    avalanche: [
+      {
+        title: "Ytterholla",
+        body: "Holla er rutas nålöye: 30–40 grader øverst, 35–40 over Ytterholla, og 60-graders klipper på begge sider — terreng der et lite flak får store konsekvenser. KAST 3 – Komplekst: opp holla bare om snøen tillater det, som kilden selv sier, og samme dom gjelder ned.",
+      },
+      {
+        title: "Nord og nordvest",
+        body: "NV-flanka faller 48,8 grader i snitt med et 69,8-vindu, og N 45,4 med 63,0 — klippene ligger tett på varden. I skodde er skardet på 795 retningspunktet: derfra fører elvedalen hjem uten kanter.",
+      },
+      {
+        title: "Før du går",
+        body: "Skartinden ligger i varslingsregionen Sør-Troms, en A-region med daglig skredvarsel — som forrige runde svarer alle toppene i runden til samme region. Sjekk varsom.no. Sesongen januar–april er Fri Flyts. Sender/mottaker, søkestang og spade — og alpinøks og stegjern der kilden krever det.",
+      },
+    ],
+    elevationProfile: {
+      path: "M0,200 L20,197 L47,190 L73,183 L98,173 L128,163 L146,155 L163,147 L182,139 L201,132 L214,125 L242,116 L274,105 L292,98 L310,90 L339,85 L365,76 L383,69 L401,64 L426,71 L440,63 L462,69 L481,62 L505,66 L524,57 L535,51 L554,42 L565,36 L584,25 L598,19 L600,18",
+      startLabel: "8 moh",
+      endLabel: "1149 moh",
+      distanceLabel: "4,4 km",
+      caption: "1287 høydemeter og 4,44 km fra Vang: elvedalen til Ytterholla på 497, skardet på 795 — og flata austover til varden på 1149, med det bratteste enkeltpartiet, 38,8 grader, mellom 843 og 874 moh.",
+    },
+  },
+  langlitinden: {
+    slug: "langlitinden",
+    intro:
+      "1305 høydemeter og 5,53 km fra snuplassen ved Vang til Nordens høyeste øytopp: Langlitinden er Andørjas høyeste, og hele fjellet — fjord til varde — er primærfaktoren. Sommerruta langs Bjørndalselva, flata med vatnet, og traversen på 800–900 der kilden gir skredhistorikk. KAST 3 – Komplekst med alpinøks og stegjern. Grad 4 — for stabile dager.",
+    ascent: [
+      "Fra snuplassen der Straumbotnveien ender ved Vang — 8 moh — følger du vestsida av Bjørndalselva innover: stien står i linja på 267, og skoggrensa ligger på 435 etter 2,0 km. Beltet fra 400 til 500 er det bratteste i snitt med 21,5 grader, og det bratteste enkeltpartiet, 33,5 grader mellom 496 og 517 moh, ligger i sommerruta opp mot flata.",
+      "Over elva og opp sommerruta til flata med det vesle vatnet — 666 moh der linja er festet; vatnet passeres på land. Beltet fra 500 til 600 måler 6,2 grader over den lange flata: pusterommet mellom skogslia og traversen.",
+      "Så høyredreining sørover på 800–900 — partiet kilden gir skredhistorikk, og vestflanka måler 39,4 grader i snitt med det bratteste vinduet (52,9) 300–360 m ut fra varden — traversen opp mot 1033-høgda (DTM1 leser 1036,2), og venstre nordover på den store siden til toppen på 1276. De siste 20 metrene kan være avblåst.",
+    ],
+    descent: [
+      "For det meste 20–25 grader hjem, med parti på 35, sier kilden — samme vei som opp, og sørflanka fra varden er den snilleste målingen med 20,5 i snitt. Traversen på 800–900 er stedet der nedturen krever samme fokus som oppturen.",
+      "NE og E måler 30,7–31,1 grader i snitt med vindu på 59,6–66,0 rett under varden — Blåisen- og Langlia-linjene bor der. Storeflaska på nordsiden er vedvarende bratt med parti på 45 grader; Lilleflaska, Rytteran, Rytterrenna og Rytterkløfta er de andre variantene. Alt dette er andre turer enn denne.",
+    ],
+    avalanche: [
+      {
+        title: "Traversen",
+        body: "Partiet på 800–900 moh er rutas mest utsatte, med historikk for store skred — kilden sier det, og målingen er enig: vestflanka holder 39,4 grader i snitt med et 52,9-vindu. KAST 3 – Komplekst. Traversen tas én og én på dager med usikker snø, og droppes når varselet peker mot vestvendte heng.",
+      },
+      {
+        title: "Kantene",
+        body: "NE og E faller 59,6–66,0 grader i sine bratteste vindu rett under varden, og toppen kan være avblåst is de siste 20 metrene — øksa og stegjerna i lista er til toppstøtet, ikke pynt. Hold vestsiden og flata på vei ned.",
+      },
+      {
+        title: "Før du går",
+        body: "Langlitinden ligger i varslingsregionen Sør-Troms, en A-region med daglig skredvarsel — som forrige runde svarer alle toppene i runden til samme region. Sjekk varsom.no. Sesongen januar–april er Fri Flyts. Sender/mottaker, søkestang og spade — og alpinøks og stegjern der kilden krever det.",
+      },
+    ],
+    elevationProfile: {
+      path: "M0,200 L25,194 L49,184 L72,178 L103,170 L125,164 L147,161 L171,156 L200,146 L220,137 L234,130 L254,120 L284,118 L308,118 L312,118 L315,118 L329,112 L350,105 L371,97 L389,89 L413,80 L438,72 L467,65 L496,62 L516,56 L535,48 L557,40 L574,32 L599,19 L600,18",
+      startLabel: "8 moh",
+      endLabel: "1276 moh",
+      distanceLabel: "5,5 km",
+      caption: "1305 høydemeter og 5,53 km fra snuplassen ved Vang: sommerruta langs Bjørndalselva, flata med vatnet på 666 — og traversen på 800–900 mot 1033-høgda, før den store siden til varden på 1276.",
+    },
+  },
+  krakrotinden: {
+    slug: "krakrotinden",
+    intro:
+      "1193 høydemeter og 5,23 km fra Fornes til Kråkrøtinden — 1186,5 på skjermen mot publiserte 1187. Nordruta går opp dalen mot Blåisen, holder morenen sør for isen og tar 40-graderspassasjen til toppen. KAST 3 – Komplekst med alpinøks og stegjern; kildens eget tall — 1270 — bærer undulasjonen i dalen. Grad 4.",
+    ascent: [
+      "Fra den lille asfaltparkeringa ved Fornes, vest for Storelva — 16 moh — går linja opp dalen: 325 moh der korridoren står i den, og skoggrensa på 374 etter 1,66 km. Beltet fra 200 til 300 er det bratteste i snitt med 21,6 grader, i skogslia.",
+      "Mot Blåisen fra 659: Blåisen er en isbre, og linja holder moreneterrenget sør for isen — 997 moh der korridoren svinger sørover. Beltet fra 900 til 1000 måler 8,5 grader over morenen.",
+      "Passasjen fra 1059: kilden gir den 40 grader, og målingen legger den i NV/V-vinduene på 42,5–48,0 rett under toppen — mens modellens egen linje gjennom aldri måler mer enn 27,2 i noe enkeltparti. Det er forskjellen på fallinja og sporet: passasjen krysses skrått. Varden står på 1186.",
+    ],
+    descent: [
+      "Samme vei ned: NV og V, der nordruta ligger, måler 14,0 og 11,4 grader i snitt — men med de bratte vinduene rett under toppen, så passasjen tas kontrollert før terrenget åpner seg. Austflanka faller 63,9 grader i vinduet 30–90 m ut: hold vest.",
+      "Sørruta er brattere — 30–40 grader og mer skredutsatt, sier kilden — og varianten mot Reintinden på 587 fra Blåisen er en annen linje. Fra morenen er dalen hjem til Fornes ren transport.",
+    ],
+    avalanche: [
+      {
+        title: "Passasjen",
+        body: "Kilden gir passasjen 40 grader, og den ligger i NV/V-vinduene på 42,5–48,0 rett under toppen — kort, men bratt nok til å bære flak, og med øks og stegjern i lista for skare. KAST 3 – Komplekst: passasjen er stedet der dagen avgjøres.",
+      },
+      {
+        title: "Austsida og sørruta",
+        body: "Austflanka faller 63,9 grader i sitt bratteste vindu, og sørruta (30–40 grader) er mer skredutsatt enn nordruta, sier kilden. Blåisen er en isbre — linja holder morenen sør for isen, og det gjør du også i skodde.",
+      },
+      {
+        title: "Før du går",
+        body: "Kråkrøtinden ligger i varslingsregionen Sør-Troms, en A-region med daglig skredvarsel — som forrige runde svarer alle toppene i runden til samme region. Sjekk varsom.no. Sesongen februar–april er Fri Flyts. Sender/mottaker, søkestang og spade — og alpinøks og stegjern der kilden krever det.",
+      },
+    ],
+    elevationProfile: {
+      path: "M0,200 L30,195 L55,191 L73,184 L97,172 L113,165 L130,154 L149,145 L175,146 L201,142 L231,136 L252,128 L273,120 L289,115 L315,107 L334,101 L356,95 L376,87 L402,81 L420,73 L441,64 L459,59 L479,58 L505,51 L521,47 L541,44 L562,34 L583,25 L598,19 L600,18",
+      startLabel: "16 moh",
+      endLabel: "1186 moh",
+      distanceLabel: "5,2 km",
+      caption: "1193 høydemeter og 5,23 km fra Fornes: dalen til skoggrensa på 374, morenen sør for Blåisen på 997 — og passasjen fra 1059 til varden på 1186.",
+    },
+  },
+  ristinden: {
+    slug: "ristinden",
+    intro:
+      "1052 høydemeter og 4,11 km fra skolen på Ånstad til Ristinden — 1055,9 på skjermen mot publiserte 1055, og et fjell uten slak side: alle åtte flankemålingene gir 26,4–42,3 grader i snitt. Sørsiden om Breilifatet, med rampa på sørvestsiden til toppen. KAST 3 – Komplekst med alpinøks og stegjern; nedkjøringa er 30–40 grader før skrårenna på opp mot 45. Grad 4.",
+    ascent: [
+      "Fra parkeringa ved idrettsanlegget og skolen på Ånstad — 44 moh — går linja nordaust over lia på 87 og opp mot myrene på 296. Beltet fra 0 til 100 måler 3,2 grader over den første drøye kilometeren: rolig start på et fjell som ikke er det.",
+      "Fra myrene mot Breilifatet — berget på 724 — og skoggrensa på 425 etter 2,4 km. Beltene fra 500 og oppover ligger jevnt på 19,8–23,9 grader: lia opp mot fatet er jevnt bratt hele veien.",
+      "Rampa på sørvestsiden fra Breilifatet: det bratteste enkeltpartiet, 38,3 grader mellom 646 og 670 moh, ligger i inngangen til rampa, og beltet fra 800 til 900 er det bratteste i snitt med 23,9. SV-flanka måler 38,4 i snitt — men det bratteste vinduet (52,3) kommer først 270–330 m ut: rampa treffer terrenget der det gir etter. Varden står på 1056.",
+    ],
+    descent: [
+      "Nedkjøringa er ca. 30–40 grader før skrårenna, som er opp mot 45, sier kilden — Breilifatet-linja krever stabil snø fra første sving. Johammarrenna, renna mellom Ristinden og naboen, holder rundt 45 og er reservevalget; Risenrenna på nordsiden måler også rundt 45.",
+      "Austflanka faller 69,3 grader i vinduet 50–110 m ut og NE 60,1 rett under varden — det er dit du ikke skal. Ned samme rampe som opp, og fra myrene er det slake lia hjem til skolen.",
+    ],
+    avalanche: [
+      {
+        title: "Rampa og skrårenna",
+        body: "30–40 grader før skrårenna på opp mot 45 — hele nedkjøringa ligger i skredterreng, og KAST 3 – Komplekst med alpinøks og stegjern er kildens dom. Et fjell uten slak side: alle åtte peilingene måler 26,4–42,3 i snitt. Stabil snø er inngangsbilletten, ikke et ønske.",
+      },
+      {
+        title: "Rennene",
+        body: "Johammarrenna og Risenrenna holder rundt 45 grader, og austflanka faller 69,3 i sitt bratteste vindu — variantene er for erfarne på utvalgte dager. I flatt lys er Breilifatet på 724 retningspunktet ned mot myrene.",
+      },
+      {
+        title: "Før du går",
+        body: "Ristinden ligger i varslingsregionen Sør-Troms, en A-region med daglig skredvarsel — som forrige runde svarer alle toppene i runden til samme region. Sjekk varsom.no. Sesongen februar–april er Fri Flyts. Sender/mottaker, søkestang og spade — og alpinøks og stegjern der kilden krever det.",
+      },
+    ],
+    elevationProfile: {
+      path: "M0,197 L27,197 L54,199 L80,195 L113,194 L139,193 L165,190 L186,183 L211,173 L236,164 L257,156 L277,151 L304,144 L331,137 L344,132 L363,125 L382,118 L399,110 L412,104 L427,94 L437,91 L455,84 L465,80 L488,68 L501,61 L521,50 L539,41 L553,36 L564,30 L580,23 L600,18",
+      startLabel: "44 moh",
+      endLabel: "1056 moh",
+      distanceLabel: "4,1 km",
+      caption: "1052 høydemeter og 4,11 km fra skolen på Ånstad: lia og myrene til Breilifatet på 724 — og rampa på sørvestsiden, med det bratteste enkeltpartiet, 38,3 grader, mellom 646 og 670 moh.",
+    },
+  },
   snotinden: {
     slug: "snotinden",
     intro:
@@ -1184,6 +1324,41 @@ export const GUIDES: Record<string, TourGuide> = {
       endLabel: "1020 moh",
       distanceLabel: "7,3 km",
       caption: "984 høydemeter og 7,26 km fra Indre Forså over myrene og langs austsida av Mevatnet, med skoggrensa på 485 moh og det bratteste — 27,8 grader mellom 967 og 991 moh — i renna sør for toppen.",
+    },
+  },
+  sula: {
+    slug: "sula",
+    intro:
+      "827 høydemeter og 3,82 km fra Breivoll til Sula på Rolla — M-fjellet, som sammen med naboen Sæta tegner formasjonen du ser fra Harstad. Den jevne traktorveien, opp Skogsheia der skogen tynnes, og nesten rett linje til toppen på 848. KAST 1 – Enkelt hos Fri Flyt, med heng på litt over 20 grader — og modellen er enig: 21,9 på det bratteste enkeltpartiet. Grad 2, i den lette enden — og populær fordi fjellski også duger.",
+    ascent: [
+      "Fra den lille parkeringa der skogsveien tar av fra Ibestadveien nær Breivoll småbåthavn — 22 moh — følger du den jevne, fine traktorveien: 48 moh der linja står i den, og krysset på 68 der veien videre velges. Beltet fra 0 til 100 måler 6,1 grader over den første snaue kilometeren.",
+      "Der veien begynner å bikke nedover tar du av oppover Skogsheia — 514 moh der linja er festet — og skogen tynnes: skoggrensa ligger på 458 etter 2,11 km. Hold litt til venstre for det bratte terrenget rett fram, som kilden sier.",
+      "Så er det nesten rett linje til toppen: lia fra 668, beltet fra 700 til 800 som det bratteste i snitt med 17,0 grader — og det bratteste enkeltpartiet på hele turen, 21,9 grader mellom 771 og 789 moh, rett under varden på 848.",
+    ],
+    descent: [
+      "Et stort område å boltre seg på, sier kilden — åpen flankekjøring og lett skogskjøring, mye langs samme vei som opp. SE-flanka fra varden, der ruta ligger, måler 14,7 grader i snitt, og det bratteste vinduet (20,5) kommer først 180–240 m ut.",
+      "Men M-fjellet har stup rundt hele toppen utenom ruta: de andre kantene måler 24,1–36,4 grader i snitt med vindu på 50–69 tett på varden. Gå ned dit du kom opp — sørøst — før du slipper skiene.",
+    ],
+    avalanche: [
+      {
+        title: "Ruta",
+        body: "KAST 1 – Enkelt hos Fri Flyt, heng på litt over 20 grader — og modellen er enig: 17,0 i det bratteste beltet, 21,9 i det bratteste enkeltpartiet. Kildens ord om at Sula brukes når skredfaren truer andre topper står som kildens vurdering — varselet leses uansett.",
+      },
+      {
+        title: "Kantene",
+        body: "Utenom ruta har toppen vindu på 50–69 grader tett på varden — NE, SV og V faller bratt fra første meter. I skodde er retningen alt: sørøst fra varden, mot Skogsheia, og traktorveien tar imot.",
+      },
+      {
+        title: "Før du går",
+        body: "Sula ligger i varslingsregionen Sør-Troms, en A-region med daglig skredvarsel — som forrige runde svarer alle toppene i runden til samme region. Sjekk varsom.no. Sesongen februar–april er Fri Flyts. Sender/mottaker, søkestang og spade.",
+      },
+    ],
+    elevationProfile: {
+      path: "M0,200 L25,197 L49,195 L70,193 L89,190 L112,184 L134,178 L155,170 L177,161 L198,152 L212,147 L234,142 L254,135 L273,128 L293,120 L315,112 L329,105 L353,96 L374,92 L395,88 L417,82 L445,75 L467,68 L493,58 L513,53 L530,46 L551,38 L572,28 L596,19 L600,18",
+      startLabel: "22 moh",
+      endLabel: "848 moh",
+      distanceLabel: "3,8 km",
+      caption: "827 høydemeter og 3,82 km fra Breivoll: traktorveien til krysset på 68, opp Skogsheia fra 514 — og nesten rett linje til varden på 848, med 21,9 grader som det bratteste enkeltpartiet.",
     },
   },
   hemmestadfjellet: {

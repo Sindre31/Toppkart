@@ -8289,5 +8289,220 @@
     "notes": "Fri Flyt: 15–25 grader med parti på 30. Hald ryggen — austsida mot Austerfjorden er brattare, og tjernet på 717 passerast på vestsida. Utsikt over Austerfjorden, Jonsheimen og Gullesfjorden."
    }
   ]
+ },
+ "langlitinden": {
+  "routes": [
+   {
+    "id": "vestsiden",
+    "name": "Vestsiden fra Vang",
+    "description": "Fra snuplassen ved Vang langs vestsida av Bjørndalselva, over elva og sommerruta opp til flata med vatnet, sørover på 800–900, traversen mot 1033-høgda og nordover til toppen",
+    "trailhead": {
+     "name": "Vang",
+     "lat": 68.86157,
+     "lng": 17.30511,
+     "elevation_m": 8.0,
+     "fullName": "Vang"
+    },
+    "waypoints": [
+     {
+      "name": "langs Bjørndalselva",
+      "lat": 68.862,
+      "lng": 17.33,
+      "elevation_m": 267.0
+     },
+     {
+      "name": "sommerruta",
+      "lat": 68.8612,
+      "lng": 17.352,
+      "elevation_m": 511.0
+     },
+     {
+      "name": "flata med vatnet",
+      "lat": 68.8608,
+      "lng": 17.368,
+      "elevation_m": 666.0
+     },
+     {
+      "name": "mot 1033-høgda",
+      "lat": 68.8645,
+      "lng": 17.38,
+      "elevation_m": 1036.0
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: KAST 3 – Komplekst. Alpinøks og stegjern. Nedkjøringa holder 20–25 grader med parti på 35; traversen på 800–900 er mest utsatt, med historikk for store skred. Storeflaska på nordsiden er vedvarende bratt med parti på 45 grader og en annen linje.",
+    "avoidWater": true
+   }
+  ]
+ },
+ "skartinden": {
+  "routes": [
+   {
+    "id": "via-ytterholla",
+    "name": "Via Ytterholla fra Vang",
+    "description": "Fra snuplassen ved Vang opp elvedalen til Ytterholla, skardet mellom Vasskartinden og Skartinden, og ryggen eller flata austover til toppen",
+    "trailhead": {
+     "name": "Vang",
+     "lat": 68.86157,
+     "lng": 17.30511,
+     "elevation_m": 8.0,
+     "fullName": "Vang"
+    },
+    "waypoints": [
+     {
+      "name": "elvedalen",
+      "lat": 68.868,
+      "lng": 17.308,
+      "elevation_m": 195.0
+     },
+     {
+      "name": "Ytterholla",
+      "lat": 68.87256,
+      "lng": 17.31242,
+      "elevation_m": 497.0
+     },
+     {
+      "name": "skardet",
+      "lat": 68.8795,
+      "lng": 17.318,
+      "elevation_m": 795.0
+     },
+     {
+      "name": "flata austover",
+      "lat": 68.8785,
+      "lng": 17.327,
+      "elevation_m": 844.0
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: KAST 3 – Komplekst. Alpinøks og stegjern. Nedkjøringa er 30–40 grader øverst og 35–40 grader over Ytterholla, omkranset av 60-graders klipper — presis veivalg, særlig i flatt lys."
+   }
+  ]
+ },
+ "krakrotinden": {
+  "routes": [
+   {
+    "id": "nordruta",
+    "name": "Nordruta fra Fornes",
+    "description": "Fra Fornes vest for Storelva opp dalen mot Blåisen, sør for isen og gjennom 40-graderspassasjen til toppen",
+    "trailhead": {
+     "name": "Fornes",
+     "lat": 68.8687,
+     "lng": 17.47187,
+     "elevation_m": 16.0,
+     "fullName": "Fornes"
+    },
+    "waypoints": [
+     {
+      "name": "opp dalen",
+      "lat": 68.872,
+      "lng": 17.45,
+      "elevation_m": 325.0
+     },
+     {
+      "name": "mot Blåisen",
+      "lat": 68.8695,
+      "lng": 17.42,
+      "elevation_m": 659.0
+     },
+     {
+      "name": "sør for isen",
+      "lat": 68.8665,
+      "lng": 17.405,
+      "elevation_m": 997.0
+     },
+     {
+      "name": "passasjen",
+      "lat": 68.8645,
+      "lng": 17.402,
+      "elevation_m": 1059.0
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: KAST 3 – Komplekst. Alpinøks og stegjern. Nordruta går gjennom en 40-graderspassasje under toppen; sørruta (30–40 grader) er mer skredutsatt. Blåisen er en isbre — linja holder morenen sør for isen."
+   }
+  ]
+ },
+ "ristinden": {
+  "routes": [
+   {
+    "id": "breilifatet",
+    "name": "Breilifatet fra Ånstad",
+    "description": "Fra skolen på Ånstad opp lia og myrene til Breilifatet, og rampa på sørvestsiden til toppen",
+    "trailhead": {
+     "name": "Ånstad",
+     "lat": 68.82804,
+     "lng": 17.19265,
+     "elevation_m": 44.0,
+     "fullName": "Ånstad"
+    },
+    "waypoints": [
+     {
+      "name": "lia",
+      "lat": 68.833,
+      "lng": 17.215,
+      "elevation_m": 87.0
+     },
+     {
+      "name": "myrene",
+      "lat": 68.836,
+      "lng": 17.228,
+      "elevation_m": 296.0
+     },
+     {
+      "name": "Breilifatet",
+      "lat": 68.83922,
+      "lng": 17.24864,
+      "elevation_m": 724.0
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: KAST 3 – Komplekst. Alpinøks og stegjern. Nedkjøringa er ca. 30–40 grader før skrårenna på opp mot 45; Johammarrenna (rundt 45 grader) og Risenrenna på nordsiden krever stabil snø."
+   }
+  ]
+ },
+ "sula": {
+  "routes": [
+   {
+    "id": "fra-breivoll",
+    "name": "Fra Breivoll",
+    "description": "Fra Breivoll etter traktorveien til krysset, opp Skogsheia der skogen tynnes, og nesten rett linje til toppen",
+    "trailhead": {
+     "name": "Breivoll",
+     "lat": 68.75531,
+     "lng": 17.13825,
+     "elevation_m": 22.0,
+     "fullName": "Breivoll"
+    },
+    "waypoints": [
+     {
+      "name": "traktorveien",
+      "lat": 68.7549,
+      "lng": 17.13,
+      "elevation_m": 48.0
+     },
+     {
+      "name": "krysset",
+      "lat": 68.7543,
+      "lng": 17.1251,
+      "elevation_m": 68.0
+     },
+     {
+      "name": "Skogsheia",
+      "lat": 68.7605,
+      "lng": 17.085,
+      "elevation_m": 514.0
+     },
+     {
+      "name": "lia mot toppen",
+      "lat": 68.764,
+      "lng": 17.07,
+      "elevation_m": 668.0
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: KAST 1 – Enkelt. Hengene måler litt over 20 grader; tidlig på sesongen kan det være lite snø i skogen. Åpen flankekjøring og lett skogskjøring på nedturen."
+   }
+  ]
  }
 }

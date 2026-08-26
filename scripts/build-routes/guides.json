@@ -10481,5 +10481,326 @@
    ],
    "caption": "964 metres of ascent over 5.92 km from Melå: the tractor road to Dalbotnen, past the hut towards the 505 knoll — and the long ridge south to the cairn at 916, west of the tarn at 717."
   }
+ },
+ "langlitinden": {
+  "source": "friflyt",
+  "sources": [
+   "https://www.friflyt.no/topptur/harstad/langlitinden",
+   "https://www.friflyt.no/randone/turomraade-andoerja"
+  ],
+  "problems": [
+   "Skoggrensa: 435 moh etter 2,0 km — guide_facts treeline.last_forest_km."
+  ],
+  "no": {
+   "intro": "1305 høydemeter og 5,53 km fra snuplassen ved Vang til Nordens høyeste øytopp: Langlitinden er Andørjas høyeste, og hele fjellet — fjord til varde — er primærfaktoren. Sommerruta langs Bjørndalselva, flata med vatnet, og traversen på 800–900 der kilden gir skredhistorikk. KAST 3 – Komplekst med alpinøks og stegjern. Grad 4 — for stabile dager.",
+   "ascent": [
+    "Fra snuplassen der Straumbotnveien ender ved Vang — 8 moh — følger du vestsida av Bjørndalselva innover: stien står i linja på 267, og skoggrensa ligger på 435 etter 2,0 km. Beltet fra 400 til 500 er det bratteste i snitt med 21,5 grader, og det bratteste enkeltpartiet, 33,5 grader mellom 496 og 517 moh, ligger i sommerruta opp mot flata.",
+    "Over elva og opp sommerruta til flata med det vesle vatnet — 666 moh der linja er festet; vatnet passeres på land. Beltet fra 500 til 600 måler 6,2 grader over den lange flata: pusterommet mellom skogslia og traversen.",
+    "Så høyredreining sørover på 800–900 — partiet kilden gir skredhistorikk, og vestflanka måler 39,4 grader i snitt med det bratteste vinduet (52,9) 300–360 m ut fra varden — traversen opp mot 1033-høgda (DTM1 leser 1036,2), og venstre nordover på den store siden til toppen på 1276. De siste 20 metrene kan være avblåst."
+   ],
+   "descent": [
+    "For det meste 20–25 grader hjem, med parti på 35, sier kilden — samme vei som opp, og sørflanka fra varden er den snilleste målingen med 20,5 i snitt. Traversen på 800–900 er stedet der nedturen krever samme fokus som oppturen.",
+    "NE og E måler 30,7–31,1 grader i snitt med vindu på 59,6–66,0 rett under varden — Blåisen- og Langlia-linjene bor der. Storeflaska på nordsiden er vedvarende bratt med parti på 45 grader; Lilleflaska, Rytteran, Rytterrenna og Rytterkløfta er de andre variantene. Alt dette er andre turer enn denne."
+   ],
+   "avalanche": [
+    {
+     "title": "Traversen",
+     "body": "Partiet på 800–900 moh er rutas mest utsatte, med historikk for store skred — kilden sier det, og målingen er enig: vestflanka holder 39,4 grader i snitt med et 52,9-vindu. KAST 3 – Komplekst. Traversen tas én og én på dager med usikker snø, og droppes når varselet peker mot vestvendte heng."
+    },
+    {
+     "title": "Kantene",
+     "body": "NE og E faller 59,6–66,0 grader i sine bratteste vindu rett under varden, og toppen kan være avblåst is de siste 20 metrene — øksa og stegjerna i lista er til toppstøtet, ikke pynt. Hold vestsiden og flata på vei ned."
+    },
+    {
+     "title": "Før du går",
+     "body": "Langlitinden ligger i varslingsregionen Sør-Troms, en A-region med daglig skredvarsel — som forrige runde svarer alle toppene i runden til samme region. Sjekk varsom.no. Sesongen januar–april er Fri Flyts. Sender/mottaker, søkestang og spade — og alpinøks og stegjern der kilden krever det."
+    }
+   ],
+   "caption": "1305 høydemeter og 5,53 km fra snuplassen ved Vang: sommerruta langs Bjørndalselva, flata med vatnet på 666 — og traversen på 800–900 mot 1033-høgda, før den store siden til varden på 1276."
+  },
+  "en": {
+   "intro": "1305 metres of ascent over 5.53 km from the road end at Vang to the Nordic countries' highest island summit: Langlitinden is Andørja's highest, and the whole mountain — fjord to cairn — is its prominence. The summer route along Bjørndalselva, the flat with the lake, and the traverse at 800–900 where the source records avalanche history. KAST 3 – Complex with ice axe and crampons. Grade 4 — for stable days.",
+   "ascent": [
+    "From the turnaround where Straumbotnveien ends at Vang — 8 m — follow the west side of Bjørndalselva inward: the path stands in the line at 267, and the treeline sits at 435 after 2.0 km. The band from 400 to 500 is the steepest on average at 21.5 degrees, and the steepest single step, 33.5 degrees between 496 and 517 m, sits in the summer route up towards the flat.",
+    "Across the river and up the summer route to the flat with the little lake — 666 m where the line is anchored; the lake is passed on dry land. The band from 500 to 600 measures 6.2 degrees across the long flat: the breather between the forest and the traverse.",
+    "Then bear right, south, at 800–900 — the section the source gives avalanche history, and the west flank averages 39.4 degrees with its steepest window (52.9) 300–360 m out from the cairn — the traverse up towards the 1033 knoll (DTM1 reads 1036.2), and left, north, up the broad side to the summit at 1276. The last 20 metres can be wind-stripped."
+   ],
+   "descent": [
+    "Mostly 20–25 degrees home, with sections of 35, says the source — the same way as up, and the south flank off the cairn is the kindest probe at 20.5 on average. The traverse at 800–900 is where the descent demands the same focus as the climb.",
+    "NE and E average 30.7–31.1 degrees with windows of 59.6–66.0 right below the cairn — the Blåisen and Langlia lines live there. Storeflaska on the north side is sustained steep with sections of 45 degrees; Lilleflaska, Rytteran, Rytterrenna and Rytterkløfta are the other variants. All of them are other tours than this one."
+   ],
+   "avalanche": [
+    {
+     "title": "The traverse",
+     "body": "The section at 800–900 m is the route's most exposed, with a history of large avalanches — the source says so, and the probe agrees: the west flank holds 39.4 degrees on average with a 52.9 window. KAST 3 – Complex. Take the traverse one at a time on days with uncertain snow, and drop it when the bulletin points at west-facing slopes."
+    },
+    {
+     "title": "The edges",
+     "body": "NE and E fall 59.6–66.0 degrees in their steepest windows right below the cairn, and the top can be wind-scoured ice for the last 20 metres — the axe and crampons on the list are for the summit push, not decoration. Hold the west side and the flat on the way down."
+    },
+    {
+     "title": "Before you go",
+     "body": "Langlitinden sits in the Sør-Troms forecasting region, an A-region with a daily avalanche bulletin — like last round, every summit in the round answers to the same region. Check varsom.no. The January–April season is Fri Flyt's. Transceiver, probe and shovel — and ice axe and crampons where the source demands them."
+    }
+   ],
+   "caption": "1305 metres of ascent over 5.53 km from the road end at Vang: the summer route along Bjørndalselva, the flat with the lake at 666 — and the traverse at 800–900 towards the 1033 knoll, before the broad side to the cairn at 1276."
+  }
+ },
+ "skartinden": {
+  "source": "friflyt",
+  "sources": [
+   "https://www.friflyt.no/topptur/harstad/skartinden",
+   "https://www.friflyt.no/randone/turomraade-andoerja"
+  ],
+  "problems": [
+   "Skoggrensa: 492 moh etter 1,62 km — guide_facts treeline.last_forest_km.",
+   "Linja gir tilbake 146 av 1287 m — undulasjonen over skardet og flata; under terskelen, dokumentert her."
+  ],
+  "no": {
+   "intro": "1287 høydemeter og 4,44 km fra Vang til Skartinden på 1149 — samme snuplass som Langlitinden, motsatt retning: opp elvedalen til Ytterholla, skardet mellom Vasskartinden og Skartinden, og ryggen eller den store flata austover til toppen. KAST 3 – Komplekst med alpinøks og stegjern; nedkjøringa er 30–40 grader øverst med 60-graders klipper rundt Ytterholla. Grad 4.",
+   "ascent": [
+    "Fra snuplassen ved Vang — 8 moh — går linja nordover opp elvedalen: 195 moh der korridoren står i dalen, og skoggrensa allerede på 492 etter 1,62 km. Beltet fra 300 til 400 måler 20,9 grader gjennom lia.",
+    "Ytterholla — søkket på 497 — og opp holla om snøen tillater det, til skardet mellom Vasskartinden og Skartinden på 795. Beltet fra 800 til 900 måler 4,9 grader over den store flata bak skardet: en drøy kilometer pust før sluttstøtet.",
+    "Ryggen eller flata austover fra 844: beltet fra 1000 til 1100 er det bratteste i snitt med 24,8 grader, og det bratteste enkeltpartiet, 38,8 grader mellom 843 og 874 moh, ligger der flata reiser seg mot toppartiet. Varden står på 1149."
+   ],
+   "descent": [
+    "Nedkjøringa er 30–40 grader øverst og 35–40 over Ytterholla — omkranset av 60-graders klipper, sier kilden, og målingen bekrefter dem: NV faller 48,8 grader i snitt med 69,8-vindu, N 45,4 med 63,0. Presis veivalg, særlig i flatt lys.",
+    "Linja gir tilbake 146 av de 1287 meterne den vinner — skardet og flata skal krysses begge veier. Vest, der ruta ligger, er den slakeste målingen med 30,8 i snitt, og det bratte vinduet (35,0) kommer først 330–390 m ut fra varden."
+   ],
+   "avalanche": [
+    {
+     "title": "Ytterholla",
+     "body": "Holla er rutas nålöye: 30–40 grader øverst, 35–40 over Ytterholla, og 60-graders klipper på begge sider — terreng der et lite flak får store konsekvenser. KAST 3 – Komplekst: opp holla bare om snøen tillater det, som kilden selv sier, og samme dom gjelder ned."
+    },
+    {
+     "title": "Nord og nordvest",
+     "body": "NV-flanka faller 48,8 grader i snitt med et 69,8-vindu, og N 45,4 med 63,0 — klippene ligger tett på varden. I skodde er skardet på 795 retningspunktet: derfra fører elvedalen hjem uten kanter."
+    },
+    {
+     "title": "Før du går",
+     "body": "Skartinden ligger i varslingsregionen Sør-Troms, en A-region med daglig skredvarsel — som forrige runde svarer alle toppene i runden til samme region. Sjekk varsom.no. Sesongen januar–april er Fri Flyts. Sender/mottaker, søkestang og spade — og alpinøks og stegjern der kilden krever det."
+    }
+   ],
+   "caption": "1287 høydemeter og 4,44 km fra Vang: elvedalen til Ytterholla på 497, skardet på 795 — og flata austover til varden på 1149, med det bratteste enkeltpartiet, 38,8 grader, mellom 843 og 874 moh."
+  },
+  "en": {
+   "intro": "1287 metres of ascent over 4.44 km from Vang to Skartinden at 1149 — the same turnaround as Langlitinden, the opposite direction: up the river valley to Ytterholla, the col between Vasskartinden and Skartinden, and the ridge or the broad flat east to the summit. KAST 3 – Complex with ice axe and crampons; the descent is 30–40 degrees at the top with 60-degree cliffs around Ytterholla. Grade 4.",
+   "ascent": [
+    "From the turnaround at Vang — 8 m — the line runs north up the river valley: 195 m where the corridor stands in the valley, and the treeline already at 492 after 1.62 km. The band from 300 to 400 measures 20.9 degrees through the hillside.",
+    "Ytterholla — the hollow at 497 — and up it if the snow allows, to the col between Vasskartinden and Skartinden at 795. The band from 800 to 900 measures 4.9 degrees across the broad flat behind the col: a good kilometre of breathing room before the final push.",
+    "The ridge or the flat east from 844: the band from 1000 to 1100 is the steepest on average at 24.8 degrees, and the steepest single step, 38.8 degrees between 843 and 874 m, sits where the flat rears towards the summit section. The cairn stands at 1149."
+   ],
+   "descent": [
+    "The descent is 30–40 degrees at the top and 35–40 above Ytterholla — ringed by 60-degree cliffs, says the source, and the probe confirms them: NW falls 48.8 degrees on average with a 69.8 window, N 45.4 with 63.0. Precise route-finding, especially in flat light.",
+    "The line gives back 146 of the 1287 metres it wins — the col and the flat are crossed both ways. West, where the route lies, is the gentlest probe at 30.8 on average, and the steep window (35.0) comes only 330–390 m out from the cairn."
+   ],
+   "avalanche": [
+    {
+     "title": "Ytterholla",
+     "body": "The hollow is the route's needle's eye: 30–40 degrees at the top, 35–40 above Ytterholla, and 60-degree cliffs on both sides — terrain where a small slab has large consequences. KAST 3 – Complex: up the hollow only if the snow allows, as the source itself says, and the same verdict holds going down."
+    },
+    {
+     "title": "North and north-west",
+     "body": "The NW flank falls 48.8 degrees on average with a 69.8 window, and N 45.4 with 63.0 — the cliffs sit close to the cairn. In fog the col at 795 is the waypoint: from there the river valley leads home without edges."
+    },
+    {
+     "title": "Before you go",
+     "body": "Skartinden sits in the Sør-Troms forecasting region, an A-region with a daily avalanche bulletin — like last round, every summit in the round answers to the same region. Check varsom.no. The January–April season is Fri Flyt's. Transceiver, probe and shovel — and ice axe and crampons where the source demands them."
+    }
+   ],
+   "caption": "1287 metres of ascent over 4.44 km from Vang: the river valley to Ytterholla at 497, the col at 795 — and the flat east to the cairn at 1149, with the steepest single step, 38.8 degrees, between 843 and 874 m."
+  }
+ },
+ "krakrotinden": {
+  "source": "friflyt",
+  "sources": [
+   "https://www.friflyt.no/topptur/harstad/krakrotinden",
+   "https://www.friflyt.no/randone/turomraade-andoerja"
+  ],
+  "problems": [
+   "Skoggrensa: 374 moh etter 1,66 km — guide_facts treeline.last_forest_km."
+  ],
+  "no": {
+   "intro": "1193 høydemeter og 5,23 km fra Fornes til Kråkrøtinden — 1186,5 på skjermen mot publiserte 1187. Nordruta går opp dalen mot Blåisen, holder morenen sør for isen og tar 40-graderspassasjen til toppen. KAST 3 – Komplekst med alpinøks og stegjern; kildens eget tall — 1270 — bærer undulasjonen i dalen. Grad 4.",
+   "ascent": [
+    "Fra den lille asfaltparkeringa ved Fornes, vest for Storelva — 16 moh — går linja opp dalen: 325 moh der korridoren står i den, og skoggrensa på 374 etter 1,66 km. Beltet fra 200 til 300 er det bratteste i snitt med 21,6 grader, i skogslia.",
+    "Mot Blåisen fra 659: Blåisen er en isbre, og linja holder moreneterrenget sør for isen — 997 moh der korridoren svinger sørover. Beltet fra 900 til 1000 måler 8,5 grader over morenen.",
+    "Passasjen fra 1059: kilden gir den 40 grader, og målingen legger den i NV/V-vinduene på 42,5–48,0 rett under toppen — mens modellens egen linje gjennom aldri måler mer enn 27,2 i noe enkeltparti. Det er forskjellen på fallinja og sporet: passasjen krysses skrått. Varden står på 1186."
+   ],
+   "descent": [
+    "Samme vei ned: NV og V, der nordruta ligger, måler 14,0 og 11,4 grader i snitt — men med de bratte vinduene rett under toppen, så passasjen tas kontrollert før terrenget åpner seg. Austflanka faller 63,9 grader i vinduet 30–90 m ut: hold vest.",
+    "Sørruta er brattere — 30–40 grader og mer skredutsatt, sier kilden — og varianten mot Reintinden på 587 fra Blåisen er en annen linje. Fra morenen er dalen hjem til Fornes ren transport."
+   ],
+   "avalanche": [
+    {
+     "title": "Passasjen",
+     "body": "Kilden gir passasjen 40 grader, og den ligger i NV/V-vinduene på 42,5–48,0 rett under toppen — kort, men bratt nok til å bære flak, og med øks og stegjern i lista for skare. KAST 3 – Komplekst: passasjen er stedet der dagen avgjøres."
+    },
+    {
+     "title": "Austsida og sørruta",
+     "body": "Austflanka faller 63,9 grader i sitt bratteste vindu, og sørruta (30–40 grader) er mer skredutsatt enn nordruta, sier kilden. Blåisen er en isbre — linja holder morenen sør for isen, og det gjør du også i skodde."
+    },
+    {
+     "title": "Før du går",
+     "body": "Kråkrøtinden ligger i varslingsregionen Sør-Troms, en A-region med daglig skredvarsel — som forrige runde svarer alle toppene i runden til samme region. Sjekk varsom.no. Sesongen februar–april er Fri Flyts. Sender/mottaker, søkestang og spade — og alpinøks og stegjern der kilden krever det."
+    }
+   ],
+   "caption": "1193 høydemeter og 5,23 km fra Fornes: dalen til skoggrensa på 374, morenen sør for Blåisen på 997 — og passasjen fra 1059 til varden på 1186."
+  },
+  "en": {
+   "intro": "1193 metres of ascent over 5.23 km from Fornes to Kråkrøtinden — 1186.5 on screen against the published 1187. The north route climbs the valley towards Blåisen, keeps to the moraine south of the ice and takes the 40-degree passage to the summit. KAST 3 – Complex with ice axe and crampons; the source's own figure — 1270 — carries the valley's undulation. Grade 4.",
+   "ascent": [
+    "From the small tarmac car park at Fornes, west of Storelva — 16 m — the line climbs the valley: 325 m where the corridor stands in it, and the treeline at 374 after 1.66 km. The band from 200 to 300 is the steepest on average at 21.6 degrees, in the forest.",
+    "Towards Blåisen from 659: Blåisen is a glacier, and the line keeps to the moraine ground south of the ice — 997 m where the corridor swings south. The band from 900 to 1000 measures 8.5 degrees across the moraine.",
+    "The passage from 1059: the source gives it 40 degrees, and the probe puts it in the NW/W windows of 42.5–48.0 right below the summit — while the model's own line through it never measures more than 27.2 in any single step. That is the difference between the fall line and the track: the passage is crossed at a slant. The cairn stands at 1186."
+   ],
+   "descent": [
+    "The same way down: NW and W, where the north route lies, average 14.0 and 11.4 degrees — but with the steep windows right below the summit, so the passage is taken under control before the ground opens. The east flank falls 63.9 degrees in the window 30–90 m out: hold west.",
+    "The south route is steeper — 30–40 degrees and more exposed to avalanches, says the source — and the variant towards Reintinden at 587 from Blåisen is another line. From the moraine the valley home to Fornes is pure transport."
+   ],
+   "avalanche": [
+    {
+     "title": "The passage",
+     "body": "The source gives the passage 40 degrees, and it sits in the NW/W windows of 42.5–48.0 right below the summit — short, but steep enough to carry slab, with axe and crampons on the list for crust. KAST 3 – Complex: the passage is where the day is decided."
+    },
+    {
+     "title": "The east side and the south route",
+     "body": "The east flank falls 63.9 degrees in its steepest window, and the south route (30–40 degrees) is more avalanche-exposed than the north route, says the source. Blåisen is a glacier — the line keeps to the moraine south of the ice, and so do you in fog."
+    },
+    {
+     "title": "Before you go",
+     "body": "Kråkrøtinden sits in the Sør-Troms forecasting region, an A-region with a daily avalanche bulletin — like last round, every summit in the round answers to the same region. Check varsom.no. The February–April season is Fri Flyt's. Transceiver, probe and shovel — and ice axe and crampons where the source demands them."
+    }
+   ],
+   "caption": "1193 metres of ascent over 5.23 km from Fornes: the valley to the treeline at 374, the moraine south of Blåisen at 997 — and the passage from 1059 to the cairn at 1186."
+  }
+ },
+ "ristinden": {
+  "source": "friflyt",
+  "sources": [
+   "https://www.friflyt.no/topptur/harstad/ristinden",
+   "https://www.friflyt.no/randone/turomraade-andoerja"
+  ],
+  "problems": [
+   "Skoggrensa: 425 moh etter 2,4 km — guide_facts treeline.last_forest_km."
+  ],
+  "no": {
+   "intro": "1052 høydemeter og 4,11 km fra skolen på Ånstad til Ristinden — 1055,9 på skjermen mot publiserte 1055, og et fjell uten slak side: alle åtte flankemålingene gir 26,4–42,3 grader i snitt. Sørsiden om Breilifatet, med rampa på sørvestsiden til toppen. KAST 3 – Komplekst med alpinøks og stegjern; nedkjøringa er 30–40 grader før skrårenna på opp mot 45. Grad 4.",
+   "ascent": [
+    "Fra parkeringa ved idrettsanlegget og skolen på Ånstad — 44 moh — går linja nordaust over lia på 87 og opp mot myrene på 296. Beltet fra 0 til 100 måler 3,2 grader over den første drøye kilometeren: rolig start på et fjell som ikke er det.",
+    "Fra myrene mot Breilifatet — berget på 724 — og skoggrensa på 425 etter 2,4 km. Beltene fra 500 og oppover ligger jevnt på 19,8–23,9 grader: lia opp mot fatet er jevnt bratt hele veien.",
+    "Rampa på sørvestsiden fra Breilifatet: det bratteste enkeltpartiet, 38,3 grader mellom 646 og 670 moh, ligger i inngangen til rampa, og beltet fra 800 til 900 er det bratteste i snitt med 23,9. SV-flanka måler 38,4 i snitt — men det bratteste vinduet (52,3) kommer først 270–330 m ut: rampa treffer terrenget der det gir etter. Varden står på 1056."
+   ],
+   "descent": [
+    "Nedkjøringa er ca. 30–40 grader før skrårenna, som er opp mot 45, sier kilden — Breilifatet-linja krever stabil snø fra første sving. Johammarrenna, renna mellom Ristinden og naboen, holder rundt 45 og er reservevalget; Risenrenna på nordsiden måler også rundt 45.",
+    "Austflanka faller 69,3 grader i vinduet 50–110 m ut og NE 60,1 rett under varden — det er dit du ikke skal. Ned samme rampe som opp, og fra myrene er det slake lia hjem til skolen."
+   ],
+   "avalanche": [
+    {
+     "title": "Rampa og skrårenna",
+     "body": "30–40 grader før skrårenna på opp mot 45 — hele nedkjøringa ligger i skredterreng, og KAST 3 – Komplekst med alpinøks og stegjern er kildens dom. Et fjell uten slak side: alle åtte peilingene måler 26,4–42,3 i snitt. Stabil snø er inngangsbilletten, ikke et ønske."
+    },
+    {
+     "title": "Rennene",
+     "body": "Johammarrenna og Risenrenna holder rundt 45 grader, og austflanka faller 69,3 i sitt bratteste vindu — variantene er for erfarne på utvalgte dager. I flatt lys er Breilifatet på 724 retningspunktet ned mot myrene."
+    },
+    {
+     "title": "Før du går",
+     "body": "Ristinden ligger i varslingsregionen Sør-Troms, en A-region med daglig skredvarsel — som forrige runde svarer alle toppene i runden til samme region. Sjekk varsom.no. Sesongen februar–april er Fri Flyts. Sender/mottaker, søkestang og spade — og alpinøks og stegjern der kilden krever det."
+    }
+   ],
+   "caption": "1052 høydemeter og 4,11 km fra skolen på Ånstad: lia og myrene til Breilifatet på 724 — og rampa på sørvestsiden, med det bratteste enkeltpartiet, 38,3 grader, mellom 646 og 670 moh."
+  },
+  "en": {
+   "intro": "1052 metres of ascent over 4.11 km from the school at Ånstad to Ristinden — 1055.9 on screen against the published 1055, and a mountain with no gentle side: all eight flank probes average 26.4–42.3 degrees. The south side via Breilifatet, with the ramp on the south-west side to the summit. KAST 3 – Complex with ice axe and crampons; the descent is 30–40 degrees before the slanting couloir at up to 45. Grade 4.",
+   "ascent": [
+    "From the car park at the sports ground and school at Ånstad — 44 m — the line runs north-east over the hillside at 87 and up towards the moors at 296. The band from 0 to 100 measures 3.2 degrees over the first good kilometre: a calm start on a mountain that is not.",
+    "From the moors towards Breilifatet — the crag at 724 — and the treeline at 425 after 2.4 km. The bands from 500 upward run evenly at 19.8–23.9 degrees: the hillside up to the bowl is steadily steep the whole way.",
+    "The ramp on the south-west side from Breilifatet: the steepest single step, 38.3 degrees between 646 and 670 m, sits at the entrance to the ramp, and the band from 800 to 900 is the steepest on average at 23.9. The SW flank averages 38.4 — but its steepest window (52.3) comes only 270–330 m out: the ramp meets the terrain where it relents. The cairn stands at 1056."
+   ],
+   "descent": [
+    "The descent is about 30–40 degrees before the slanting couloir, which runs up to 45, says the source — the Breilifatet line demands stable snow from the first turn. Johammarrenna, the couloir between Ristinden and its neighbour, holds around 45 and is the reserve choice; Risenrenna on the north side also measures around 45.",
+    "The east flank falls 69.3 degrees in the window 50–110 m out and the NE 60.1 right below the cairn — that is where you do not go. Down the same ramp as up, and from the moors it is the gentle hillside home to the school."
+   ],
+   "avalanche": [
+    {
+     "title": "The ramp and the couloir",
+     "body": "30–40 degrees before the slanting couloir at up to 45 — the whole descent lies in avalanche terrain, and KAST 3 – Complex with ice axe and crampons is the source's verdict. A mountain with no gentle side: all eight probes average 26.4–42.3. Stable snow is the ticket in, not a wish."
+    },
+    {
+     "title": "The couloirs",
+     "body": "Johammarrenna and Risenrenna hold around 45 degrees, and the east flank falls 69.3 in its steepest window — the variants are for the experienced on chosen days. In flat light Breilifatet at 724 is the waypoint down towards the moors."
+    },
+    {
+     "title": "Before you go",
+     "body": "Ristinden sits in the Sør-Troms forecasting region, an A-region with a daily avalanche bulletin — like last round, every summit in the round answers to the same region. Check varsom.no. The February–April season is Fri Flyt's. Transceiver, probe and shovel — and ice axe and crampons where the source demands them."
+    }
+   ],
+   "caption": "1052 metres of ascent over 4.11 km from the school at Ånstad: the hillside and the moors to Breilifatet at 724 — and the ramp on the south-west side, with the steepest single step, 38.3 degrees, between 646 and 670 m."
+  }
+ },
+ "sula": {
+  "source": "friflyt",
+  "sources": [
+   "https://www.friflyt.no/topptur/harstad/sula",
+   "https://www.friflyt.no/randonee/turomraade-rolla"
+  ],
+  "problems": [
+   "Skoggrensa: 458 moh etter 2,11 km — guide_facts treeline.last_forest_km."
+  ],
+  "no": {
+   "intro": "827 høydemeter og 3,82 km fra Breivoll til Sula på Rolla — M-fjellet, som sammen med naboen Sæta tegner formasjonen du ser fra Harstad. Den jevne traktorveien, opp Skogsheia der skogen tynnes, og nesten rett linje til toppen på 848. KAST 1 – Enkelt hos Fri Flyt, med heng på litt over 20 grader — og modellen er enig: 21,9 på det bratteste enkeltpartiet. Grad 2, i den lette enden — og populær fordi fjellski også duger.",
+   "ascent": [
+    "Fra den lille parkeringa der skogsveien tar av fra Ibestadveien nær Breivoll småbåthavn — 22 moh — følger du den jevne, fine traktorveien: 48 moh der linja står i den, og krysset på 68 der veien videre velges. Beltet fra 0 til 100 måler 6,1 grader over den første snaue kilometeren.",
+    "Der veien begynner å bikke nedover tar du av oppover Skogsheia — 514 moh der linja er festet — og skogen tynnes: skoggrensa ligger på 458 etter 2,11 km. Hold litt til venstre for det bratte terrenget rett fram, som kilden sier.",
+    "Så er det nesten rett linje til toppen: lia fra 668, beltet fra 700 til 800 som det bratteste i snitt med 17,0 grader — og det bratteste enkeltpartiet på hele turen, 21,9 grader mellom 771 og 789 moh, rett under varden på 848."
+   ],
+   "descent": [
+    "Et stort område å boltre seg på, sier kilden — åpen flankekjøring og lett skogskjøring, mye langs samme vei som opp. SE-flanka fra varden, der ruta ligger, måler 14,7 grader i snitt, og det bratteste vinduet (20,5) kommer først 180–240 m ut.",
+    "Men M-fjellet har stup rundt hele toppen utenom ruta: de andre kantene måler 24,1–36,4 grader i snitt med vindu på 50–69 tett på varden. Gå ned dit du kom opp — sørøst — før du slipper skiene."
+   ],
+   "avalanche": [
+    {
+     "title": "Ruta",
+     "body": "KAST 1 – Enkelt hos Fri Flyt, heng på litt over 20 grader — og modellen er enig: 17,0 i det bratteste beltet, 21,9 i det bratteste enkeltpartiet. Kildens ord om at Sula brukes når skredfaren truer andre topper står som kildens vurdering — varselet leses uansett."
+    },
+    {
+     "title": "Kantene",
+     "body": "Utenom ruta har toppen vindu på 50–69 grader tett på varden — NE, SV og V faller bratt fra første meter. I skodde er retningen alt: sørøst fra varden, mot Skogsheia, og traktorveien tar imot."
+    },
+    {
+     "title": "Før du går",
+     "body": "Sula ligger i varslingsregionen Sør-Troms, en A-region med daglig skredvarsel — som forrige runde svarer alle toppene i runden til samme region. Sjekk varsom.no. Sesongen februar–april er Fri Flyts. Sender/mottaker, søkestang og spade."
+    }
+   ],
+   "caption": "827 høydemeter og 3,82 km fra Breivoll: traktorveien til krysset på 68, opp Skogsheia fra 514 — og nesten rett linje til varden på 848, med 21,9 grader som det bratteste enkeltpartiet."
+  },
+  "en": {
+   "intro": "827 metres of ascent over 3.82 km from Breivoll to Sula on Rolla — the M mountain, which together with its neighbour Sæta draws the formation you see from Harstad. The even tractor road, up Skogsheia where the forest thins, and a nearly straight line to the summit at 848. KAST 1 – Simple with Fri Flyt, with slopes just over 20 degrees — and the model agrees: 21.9 at the steepest single step. Grade 2, at the light end — and popular because mountain skis will do.",
+   "ascent": [
+    "From the small car park where the forest road leaves Ibestadveien near the Breivoll boat harbour — 22 m — follow the even, fine tractor road: 48 m where the line stands in it, and the junction at 68 where the onward road is chosen. The band from 0 to 100 measures 6.1 degrees over the first short kilometre.",
+    "Where the road starts to tip downhill, break off up Skogsheia — 514 m where the line is anchored — and the forest thins: the treeline sits at 458 after 2.11 km. Keep slightly left of the steep ground straight ahead, as the source says.",
+    "Then it is a nearly straight line to the top: the hillside from 668, the band from 700 to 800 as the steepest on average at 17.0 degrees — and the steepest single step of the whole tour, 21.9 degrees between 771 and 789 m, right below the cairn at 848."
+   ],
+   "descent": [
+    "A big area to play in, says the source — open flank skiing and easy forest skiing, much of it along the way you came up. The SE flank off the cairn, where the route lies, averages 14.7 degrees, and its steepest window (20.5) comes only 180–240 m out.",
+    "But the M mountain has drops all around the summit apart from the route: the other edges average 24.1–36.4 degrees with windows of 50–69 close to the cairn. Go down where you came up — south-east — before letting the skis run."
+   ],
+   "avalanche": [
+    {
+     "title": "The route",
+     "body": "KAST 1 – Simple with Fri Flyt, slopes just over 20 degrees — and the model agrees: 17.0 in the steepest band, 21.9 in the steepest single step. The source's remark that Sula is used when avalanche danger threatens other summits stands as the source's judgement — the bulletin gets read regardless."
+    },
+    {
+     "title": "The edges",
+     "body": "Beyond the route the summit holds windows of 50–69 degrees close to the cairn — NE, SW and W fall steeply from the first metre. In fog, direction is everything: south-east from the cairn, towards Skogsheia, and the tractor road catches you."
+    },
+    {
+     "title": "Before you go",
+     "body": "Sula sits in the Sør-Troms forecasting region, an A-region with a daily avalanche bulletin — like last round, every summit in the round answers to the same region. Check varsom.no. The February–April season is Fri Flyt's. Transceiver, probe and shovel."
+    }
+   ],
+   "caption": "827 metres of ascent over 3.82 km from Breivoll: the tractor road to the junction at 68, up Skogsheia from 514 — and a nearly straight line to the cairn at 848, with 21.9 degrees as the steepest single step."
+  }
  }
 }

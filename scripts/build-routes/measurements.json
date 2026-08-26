@@ -2289,5 +2289,40 @@
    "figure": "SE stig (−2,0° i snitt — ryggen held fram mot 959-toppen, neste fjell i kjeda). Ryggen heim mot nord måler 27,9 i snitt dei fyrste 500 m med 47°-vindu 110–170 m ut — hald ryggen, aust mot Austerfjorden er brattare",
    "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
   }
+ ],
+ "langlitinden": [
+  {
+   "what": "Alle kantar ved toppen (Langlitinden)",
+   "figure": "NE/E måler 30,7–31,1° i snitt med vindu på 59,6–66,0 rett under varden; V — der vestruta kjem — 39,4 i snitt, men det bratte vinduet (52,9°) ligg 300–360 m ut, i traversen på 800–900 kilden gir skredhistorikk. S er snillast med 20,5 i snitt",
+   "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+  }
+ ],
+ "skartinden": [
+  {
+   "what": "Alle kantar ved toppen (Skartinden)",
+   "figure": "NV måler 48,8° i snitt med 69,8-vindu — klippene kilden set til 60 grader rundt Ytterholla er reelle. N 45,4 med 63,0-vindu. V, der flata og skardet ligg, er slakast med 30,8 i snitt og 35,0-vindu fyrst 330–390 m ut",
+   "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+  }
+ ],
+ "krakrotinden": [
+  {
+   "what": "Alle kantar ved toppen (Kråkrøtinden)",
+   "figure": "E fell 37,5° i snitt med 63,9-vindu 30–90 m ut; NV og V — der nordruta og passasjen kjem — måler 14,0 og 11,4 i snitt med 42,5–48,0-vindu: 40-graderspassasjen bur i dei fyrste vindauga. S mot sørruta 33,7 i snitt",
+   "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+  }
+ ],
+ "ristinden": [
+  {
+   "what": "Alle kantar ved toppen (Ristinden)",
+   "figure": "Ingen slak side: alle åtte peilingar måler 26,4–42,3° i snitt. E fell 69,3° i vindauget 50–110 m ut og NE 60,1 rett under varden — Johammarrenna og Risenrenna bur der. SV, der rampa frå Breilifatet kjem, måler 38,4 i snitt med 52,3-vindu fyrst 270–330 m ut",
+   "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+  }
+ ],
+ "sula": [
+  {
+   "what": "Alle kantar ved toppen (Sula)",
+   "figure": "SE er den eine slake sida: 14,7° i snitt, og det brattaste vinduet (20,5) ligg 180–240 m ut — ruta kjem den vegen, og kildens «litt over 20 grader» stemmer på linja. Alle andre kantar måler 24,1–36,4 i snitt med vindu på 50–69 rett ved varden — M-fjellet har stup rundt heile toppen utanom ruta",
+   "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+  }
  ]
 }
