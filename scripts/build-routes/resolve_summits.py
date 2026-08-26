@@ -92,6 +92,11 @@ SUMMIT_SEED = {
     # not the tour. Same doctrine as Fiskefjordtindan: the published height
     # names the top.
     "melaaksla": (68.63268, 16.13913),
+    # Tjeldøya has two register entries named Trollfjellet: a 660-hill in the
+    # north-east and the island's 1010-summit east of Kjerstadtinden. The
+    # ssr-nearest search latched onto the northern namesake; the seed is the
+    # southern entry's point, which the disc-grow walks to the 1010 top.
+    "trollfjellet": (68.47701, 16.27419),
     # «Tredje Svanfjell» is not a register name at all — the Svanfjella are
     # numbered informally, and the register's Svanfjellet (Fjell) sits 2,2 km
     # south-east on another top. Fri Flyt publishes a GPS summit position

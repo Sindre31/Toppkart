@@ -2324,5 +2324,40 @@
    "figure": "SE er den eine slake sida: 14,7° i snitt, og det brattaste vinduet (20,5) ligg 180–240 m ut — ruta kjem den vegen, og kildens «litt over 20 grader» stemmer på linja. Alle andre kantar måler 24,1–36,4 i snitt med vindu på 50–69 rett ved varden — M-fjellet har stup rundt heile toppen utanom ruta",
    "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
   }
+ ],
+ "trollfjellet": [
+  {
+   "what": "Alle kantar ved toppen (Trollfjellet)",
+   "figure": "SV og V er dei slake sidene (4,9 og 14,1° i snitt) — vestruta kjem den vegen, og partiet på 30 på ryggen ligg i N-vinduet på 39,1. SE fell 31,4 i snitt med 58,3-vindu — nordvestvarianten (30–40 hos kilden) og austsida er dei vaksne kantane",
+   "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+  }
+ ],
+ "jotind": [
+  {
+   "what": "Alle kantar ved toppen (Jotind)",
+   "figure": "SV — der sommarruta rundar den smale toppryggen — er einaste slake peiling med 6,1° i snitt; N/NE/E har 46,4–54,3-vindu i dei fyrste 60 metrane: den smale ryggen kilden vil ha tau på er reell. NV fell 33,1 i snitt",
+   "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+  }
+ ],
+ "helligtinden": [
+  {
+   "what": "Alle kantar ved toppen (Helligtinden)",
+   "figure": "N mot Litletind-ryggen er den slake sida (5,5° i snitt) — nordryggen kjem den vegen. Austsida (Østskåla-varianten) måler 28,4 i snitt med 57,2-vindu 100–160 m ut; kildens 31–35 for skåla sjølv ligg mellom snittet og vinduet",
+   "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+  }
+ ],
+ "siriskolten": [
+  {
+   "what": "Alle kantar ved toppen (Siriskolten)",
+   "figure": "NE og V er dei slake sidene (7,9–9,2° i snitt) og N 18,1 — sommarruta frå grustaket kjem over dei. S/SE fell 26,9–27,7 i snitt med 47–49-vindu: sjølv nybegynnartoppen på Tjeldøya har kantar mot sør",
+   "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+  }
+ ],
+ "sebortinden": [
+  {
+   "what": "Alle kantar ved toppen (Sebortinden)",
+   "figure": "SV fell 47,8° i snitt med 69,0-vindu (Sebortindrenna — skred kvart år, seier kilden) og E 43,2 med 61,8-vindu (Forkleet forbi granittveggen). V mot ruta er slakast med 20,3 i snitt; sluttstøtet på rundt 30 ligg i N-vinduet på 46,1",
+   "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+  }
  ]
 }

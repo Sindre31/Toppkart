@@ -2042,6 +2042,181 @@ export const GUIDES: Record<string, TourGuide> = {
       caption: "1156 høydemeter og 5,86 km fra E10 på 21 moh gjennom Heggedalen over 146, forbi slukta på 510 og høyde 570, over bollen til 805 og vestover benken til nordvestryggen på 886, 952 og 1040.",
     },
   },
+  jotind: {
+    slug: "jotind",
+    intro:
+      "1048 høydemeter og 6,31 km fra Mølnneset til Jotind — registerets Jotinden løser 979,4 mot publiserte 980. Østryggen: ryggen over Spannbogen, henget rett før 600 der skiene gjerne bæres, og en topprygg som smalner så mye at kilden anbefaler sommerruta på sørsida — eller tau. KAST 3 – Komplekst med alpinøks og stegjern. Grad 4.",
+    ascent: [
+      "Fra lomma på fv. 7548 Tjeldøyveien ved Mølnneset — 10 moh; kildens F711 — går linja opp fra neset og på ryggen over Spannbogen, 246 moh der korridoren står. Skoggrensa kommer allerede på 111 etter 0,45 km: dette er en rygg i havgapet, ikke en skogstur.",
+      "Henget rett før 600 er stedet skiene gjerne bæres — kilden gir det 40 grader i fallinja, og modellens linje krysser det med 31,9 grader som bratteste enkeltparti, mellom 621 og 649 moh. Beltet fra 600 til 700 er det bratteste i snitt med 17,1.",
+      "Østryggen fra 605 mot toppen: rett under varden smalner ryggen — sommerruta på sørsida er utveien, eller tau og litt utstyr på selve ryggen, sier kilden. SV-målinga, der sommerruta runder, er den eneste slake med 6,1 grader i snitt; N/NE/E har 46,4–54,3-vindu i de første 60 metrene.",
+    ],
+    descent: [
+      "Samme vei ned, og vindutsatt: ett parti på 40 grader, resten 15–20, sier kilden. Linja gir tilbake 79 av de 1048 meterne den vinner — ryggen bølger, og fellene kan på igjen før Spannbogen.",
+      "Nordsida via Svartvasshompen mot Trollvatnet og Storforrdalen er KAST 2-varianten — utenom skredterrenget langs scooterløypene, men en annen tur. NV-flanka fra varden faller 33,1 grader i snitt: østryggen er linja, ikke fallinjene rundt den.",
+    ],
+    avalanche: [
+      {
+        title: "Henget og toppryggen",
+        body: "Henget før 600 er 40 grader hos kilden — skiene bæres, og øksa og stegjerna er for skare på ryggen. Toppryggen smalner: N/NE/E har 46,4–54,3-vindu i de første 60 metrene fra varden, og sommerruta på sørsida er utveien kilden selv anbefaler.",
+      },
+      {
+        title: "Vinden",
+        body: "Ryggen er vindutsatt hele veien, sier kilden — skavler og avblåst skare hører til, og tau nevnes for toppryggen på vanskelige dager. Snu ved henget om skaren ikke gir feste: resten av ryggen blir ikke lettere.",
+      },
+      {
+        title: "Før du går",
+        body: "Jotind ligger i varslingsregionen Ofoten, en A-region med daglig skredvarsel — ny i appen med denne runden: Tjeldøyas fire topper er de første som svarer hit. Sjekk varsom.no. Sesongen februar–april er Fri Flyts. Sender/mottaker, søkestang og spade — og alpinøks og stegjern der kilden krever det.",
+      },
+    ],
+    elevationProfile: {
+      path: "M0,200 L30,188 L51,177 L76,178 L94,175 L115,171 L133,168 L154,165 L180,160 L197,155 L214,145 L232,135 L254,123 L282,112 L304,108 L318,106 L342,100 L361,96 L383,95 L406,90 L430,93 L452,79 L471,68 L492,63 L511,58 L529,46 L548,39 L569,32 L591,19 L600,18",
+      startLabel: "10 moh",
+      endLabel: "979 moh",
+      distanceLabel: "6,3 km",
+      caption: "1048 høydemeter og 6,31 km fra Mølnneset: ryggen over Spannbogen på 246, henget før 600 — og østryggen fra 605 til den smale toppen på 979, med sommerruta på sørsida som utveien.",
+    },
+  },
+  siriskolten: {
+    slug: "siriskolten",
+    intro:
+      "669 høydemeter og 3,27 km fra grustaket til Siriskolten — 659,2 på skjermen mot publiserte 658, og Tjeldøyas innsteg: KAST 1 – Enkelt, 10–15 grader øverst og et parti på 20–25, ideell for ferske, sier kilden. Sommerruta fra nordsida gjennom slakt, kupert terreng med glissen skog. Grad 1.",
+    ascent: [
+      "Fra lomma ved grustaket på fv. 7548 Myklebostadveien — 7 moh; kildens F711 — følger du sommerruta sørvestover: OSM-stien starter på punktet, og skoggrensa ligger på 110 etter 0,4 km. Beltet fra 0 til 100 måler 14,7 grader i den korte skogslia.",
+      "Gjennom det slake, kuperte terrenget — 411 moh der linja står i sommerruta — og bekken sør for 414-høgda: beltet fra 300 til 400 er det bratteste i snitt med 18,6 grader, kildens parti på 20–25.",
+      "Vestover mot toppen fra 631: beltet over 600 måler 7,2 grader, og hele turens bratteste enkeltparti, 23,5 grader, ligger helt nederst mellom 23 og 41 moh — over skoggrensa er dette fjellet aldri bratt. Varden står på 659.",
+    ],
+    descent: [
+      "10–15 grader øverst, 20–25 forbi 414-høgda, og så det slake kuperte terrenget hjem — kjøring for ferske, og for dager da varselet stenger de store fjellene. NE og V fra varden måler 7,9–9,2 grader i snitt.",
+      "Kilden krever én ting: navigasjon og god sikt. Terrenget er kupert med glissen skog, og S/SE-flankene faller 26,9–27,7 grader i snitt med 47–49-vindu — kantene mot sør er de eneste å vite om, og i skodde er de nære.",
+    ],
+    avalanche: [
+      {
+        title: "Ruta",
+        body: "KAST 1 – Enkelt hos Fri Flyt, og modellen er enig: 18,6 grader i det bratteste beltet, 23,5 i det bratteste enkeltpartiet — nederst i skogen. Kildens ord om at toppen brukes når skredfaren truer andre fjell står som kildens vurdering; varselet leses uansett.",
+      },
+      {
+        title: "Sørkantene",
+        body: "S og SE faller 26,9–27,7 grader i snitt med vindu på 47–49 — også nybegynnertoppen har kanter. Ruta kommer fra nord og har ingen grunn til å nærme seg dem; i skodde er kompasskursen hjem nordaust, mot grustaket.",
+      },
+      {
+        title: "Før du går",
+        body: "Siriskolten ligger i varslingsregionen Ofoten, en A-region med daglig skredvarsel — ny i appen med denne runden: Tjeldøyas fire topper er de første som svarer hit. Sjekk varsom.no. Sesongen februar–april er Fri Flyts. Sender/mottaker, søkestang og spade.",
+      },
+    ],
+    elevationProfile: {
+      path: "M0,200 L16,196 L32,187 L49,181 L65,174 L90,165 L106,159 L131,151 L156,141 L172,134 L182,130 L194,125 L213,115 L224,109 L240,101 L252,94 L271,87 L288,90 L304,89 L329,89 L348,86 L366,79 L387,70 L403,64 L428,58 L444,55 L466,50 L486,45 L502,40 L524,31 L543,28 L558,27 L571,22 L584,20 L600,18",
+      startLabel: "7 moh",
+      endLabel: "659 moh",
+      distanceLabel: "3,3 km",
+      caption: "669 høydemeter og 3,27 km fra grustaket på fv. 7548: sommerruta gjennom det kuperte terrenget, bekken sør for 414-høgda — og vestover fra 631 til varden på 659.",
+    },
+  },
+  trollfjellet: {
+    slug: "trollfjellet",
+    intro:
+      "1028 høydemeter og 6,62 km fra Valvågen til Tjeldøyas eneste topp over 1000 — og til en navnefelle: øya har to registerførte Trollfjellet, en 660-kolle i nordaust og denne, som løser 1008,9 mot publiserte 1010. Vestbredden av Forsdalselva mellom furuene, aust for Kjerstadtinden og ryggen til topps. KAST 1 – Enkelt hos Fri Flyt: 10–15 grader med parti på 30 på ryggen. Grad 2 — sol og slak fin kjøring, ettermiddagsturen på øya.",
+    ascent: [
+      "Fra lomma på fv. 7548 Tjeldøyveien ved Valvågpollen — 3 moh; kildens F711 er dagens fylkesveg — går linja over elva og opp mellom furuene på vestbredden av Forsdalselva, 109 moh der korridoren står i lia. Skoggrensa ligger på 204 etter 2,43 km, og beltet fra 0 til 100 måler 3,9 grader over den lange innmarsjen.",
+      "Mellom skredterrenget mot austsida av Kjerstadtinden — 651 moh der linja er festet — og forbi vatnet på 672 i bollen under ryggen. Beltet fra 400 til 500 er det bratteste i snitt med 17,9 grader, og det bratteste enkeltpartiet, 26,1 grader mellom 326 og 348 moh, ligger i lia over skogen.",
+      "Ryggen fra 981 til varden på 1009: beltet over 1000 måler 1,8 grader — toppen er ei vidde. Kildens parti på 30 på ryggen bor i N-vinduet, som måler 39,1 på flankemålinga.",
+    ],
+    descent: [
+      "Sol og slak fin kjøring, sier kilden — 10–15 grader med parti på 30, samme vei som opp. SV og V fra varden er de slakeste målingene med 4,9 og 14,1 grader i snitt: vestsiden er fjellets snille akse.",
+      "SE faller 31,4 grader i snitt med 58,3-vindu, og varianten på nordvestsida (30–40 grader) er KAST 2 og en annen linje. Hold vestaksen hjem — og hold igjen ved vatnet, så slipper du å felle om for de siste metrene opp fra bollen.",
+    ],
+    avalanche: [
+      {
+        title: "Ruta",
+        body: "KAST 1 – Enkelt hos Fri Flyt, og modellen er enig: 17,9 grader i det bratteste beltet, 26,1 i det bratteste enkeltpartiet. Linja er lagt mellom skredterrenget mot austsida av Kjerstadtinden — den passasjen er grunnen til at ruta går der den går, også i skodde.",
+      },
+      {
+        title: "Kantene",
+        body: "SE-flanka faller 31,4 grader i snitt med et 58,3-vindu, og austsida måler 22,8 med 54,9-vindu — øyas snilleste tusenmeter har voksne kanter mot aust og søraust. Nordvestvarianten (30–40 grader) er for stabile dager.",
+      },
+      {
+        title: "Før du går",
+        body: "Trollfjellet ligger i varslingsregionen Ofoten, en A-region med daglig skredvarsel — ny i appen med denne runden: Tjeldøyas fire topper er de første som svarer hit. Sjekk varsom.no. Sesongen februar–april er Fri Flyts. Sender/mottaker, søkestang og spade.",
+      },
+    ],
+    elevationProfile: {
+      path: "M0,199 L20,199 L43,200 L61,199 L90,198 L110,191 L130,183 L151,175 L175,167 L198,166 L220,163 L240,155 L262,146 L279,137 L302,126 L314,118 L338,102 L359,90 L375,81 L400,81 L424,78 L445,69 L465,56 L485,49 L506,42 L526,32 L546,28 L569,22 L591,19 L600,18",
+      startLabel: "3 moh",
+      endLabel: "1009 moh",
+      distanceLabel: "6,6 km",
+      caption: "1028 høydemeter og 6,62 km fra Valvågen: vestbredden av Forsdalselva, aust for Kjerstadtinden på 651 — og ryggen fra 981 til varden på 1009, Tjeldøyas eneste topp over 1000.",
+    },
+  },
+  sebortinden: {
+    slug: "sebortinden",
+    intro:
+      "894 høydemeter og 3,99 km fra parkeringa langs E10 sør for Litlvatnet — samme plass som Møysalen — til Sebortinden: 830,8 på skjermen mot publiserte 834. Nordsida: opp Forkledalen, sørsida av bekken langs ryggen, og traversen på austryggens flanke mot framtoppen aust for punkt 799. KAST 3 – Komplekst med alpinøks og stegjern; sluttstøtet er rundt 30 grader. Grad 4.",
+    ascent: [
+      "Fra den store parkeringa langs E10 — 23 moh, Møysalens plass — går linja opp Forkledalen, 136 moh der korridoren står i dalen. Skoggrensa ligger på 195 etter 2,07 km, og beltet fra 100 til 200 måler 3,8 grader over den lange dalbotnen.",
+      "Der renna med bekken tar av til venstre følger du sørsida av bekken langs ryggen — 194 moh — og før 400 legger linja seg på det slakeste av austryggens flanke: beltet fra 300 til 400 er det bratteste i snitt med 24,2 grader, og det bratteste enkeltpartiet, 31,7 grader, ligger mellom 312 og 338 moh.",
+      "Traversen mot framtoppen aust for punkt 799 — 619 moh der linja er festet — og sluttstøtet på rundt 30 grader, der stegjern og øks avgjør på hard skare. Varden står på 831.",
+    ],
+    descent: [
+      "Samme vei ned — fin cruising, sier kilden, men nedturen krysser skredterreng, og linja gir tilbake 87 av de 894 meterne den vinner på ryggens bølger.",
+      "Variantene er alvorlige: Sebortindrenna i sørvest — 47,8 grader i snitt på flankemålinga, med 69,0-vindu — går med skred hvert eneste år, sier kilden. Forkleet på austsida når opp mot 45 forbi granittveggen på 120 meter, og Vinkelrenna holder 30–45 med svært utsatt topparti. Alt dette er andre turer.",
+    ],
+    avalanche: [
+      {
+        title: "Nordsida",
+        body: "Normalruta krysser skredterreng, sier kilden — KAST 3 – Komplekst, med alpinøks og stegjern for sluttstøtet på rundt 30 grader. N-flanka leser 46,1 i sitt bratteste vindu: framtoppen er stedet å vurdere resten av dagen fra.",
+      },
+      {
+        title: "Rennene",
+        body: "Sebortindrenna går med skred hvert eneste år — kildens egne ord, og målinga er enig: 47,8 grader i snitt, 69,0 i vinduet. Forkleet (opp mot 45) og Vinkelrenna (30–45, svært utsatt øverst) er for erfarne på utvalgte dager, og et fall øverst i Vinkelrenna er ikke til å overleve, sier kilden.",
+      },
+      {
+        title: "Før du går",
+        body: "Sebortinden ligger i varslingsregionen Lofoten og Vesterålen, en A-region med daglig skredvarsel — samme region som Møysalen, som deler parkeringa. Sjekk varsom.no. Sesongen februar–april er Fri Flyts. Sender/mottaker, søkestang og spade — og alpinøks og stegjern der kilden krever det.",
+      },
+    ],
+    elevationProfile: {
+      path: "M0,198 L27,200 L59,194 L78,185 L95,175 L127,163 L151,165 L175,169 L196,168 L228,166 L250,172 L275,171 L297,163 L318,162 L343,152 L357,144 L372,133 L385,123 L400,114 L417,104 L432,96 L446,88 L466,80 L487,68 L507,66 L527,59 L548,47 L561,40 L579,28 L600,18",
+      startLabel: "23 moh",
+      endLabel: "831 moh",
+      distanceLabel: "4,0 km",
+      caption: "894 høydemeter og 3,99 km fra Møysalens parkering på E10: Forkledalen, sørsida av bekken — og traversen på austryggens flanke mot framtoppen aust for 799, før sluttstøtet til varden på 831.",
+    },
+  },
+  helligtinden: {
+    slug: "helligtinden",
+    intro:
+      "1029 høydemeter og 5,44 km fra Breivikbotn til Helligtinden — 948,0 på skjermen mot publiserte 948, på desimeteren. Nordryggen: hyttefeltet ved Krokelva, Finnvatnet, sørvest utenom skredterrenget, og nordaustryggen av Litletinden med en liten nedkjøring før det siste støtet. KAST 2 – Utfordrende, med stegjern og øks for hard skare — grad 3.",
+    ascent: [
+      "Fra lomma på fv. 7548 Myklebostadveien i Breivikbotn — 9 moh; kildens F711 — går servicevegen til hyttefeltet ved Krokelva på 59. Skoggrensa ligger allerede på 57 etter 0,4 km, og beltet fra 0 til 100 måler 9,3 grader: åpent terreng nesten fra bilen.",
+      "Opp til Finnvatnet på 282, og sørvest for å unngå skredterrenget slik kilden ber om — 479 moh der linja svinger. Beltet fra 600 til 700 måler 4,7 grader over den store flata mot ryggen.",
+      "Nordaustryggen av Litletinden fra 576, ryggen sørover med en liten nedkjøring — og det siste støtet: beltet fra 800 til 900 er det bratteste i snitt med 19,9 grader, og det bratteste enkeltpartiet, 33,3 grader mellom 626 og 650 moh, er det ene av kildens to parti over 30 langs ryggen. Varden står på 948.",
+    ],
+    descent: [
+      "For det meste 10–20 grader hjem, med to parti over 30 langs Litletind-ryggen, sier kilden — jevn kjøring, fin for ferske på stabile dager. N-målinga fra varden er den slake sida med 5,5 grader i snitt: ryggen er hjemveien.",
+      "Østskåla mellom Helligtinden og Litletinden er varianten: 31–35 grader ned mot slakere terreng langs sørsida av Tverrelva. Austflanka måler 28,4 i snitt med 57,2-vindu 100–160 m ut — skåla krever stabil snø, og linja gir uansett tilbake 90 av de 1029 meterne på ryggens bølger.",
+    ],
+    avalanche: [
+      {
+        title: "Ryggen",
+        body: "To parti over 30 grader langs Litletind-ryggen, og stegjern og øks kan trengs på hard skare — KAST 2 – Utfordrende, grad 3 etter utstyrslista. Linja legger seg sørvest etter Finnvatnet nettopp for å gå utenom skredterrenget over vatnet.",
+      },
+      {
+        title: "Østskåla",
+        body: "Skåla mellom Helligtinden og Litletinden holder 31–35 grader, og austflanka leser 57,2 i sitt bratteste vindu — varianten er for stabile dager, ikke for skare. Nordryggen er linja som alltid går.",
+      },
+      {
+        title: "Før du går",
+        body: "Helligtinden ligger i varslingsregionen Ofoten, en A-region med daglig skredvarsel — ny i appen med denne runden: Tjeldøyas fire topper er de første som svarer hit. Sjekk varsom.no. Sesongen februar–april er Fri Flyts. Sender/mottaker, søkestang og spade — og alpinøks og stegjern der kilden krever det.",
+      },
+    ],
+    elevationProfile: {
+      path: "M0,200 L23,197 L45,191 L70,180 L99,168 L119,162 L139,158 L164,152 L179,146 L200,141 L223,134 L243,127 L263,120 L288,111 L304,106 L328,100 L352,89 L372,82 L397,77 L422,80 L440,81 L452,76 L467,70 L488,65 L516,63 L541,55 L561,43 L578,31 L598,18 L600,18",
+      startLabel: "9 moh",
+      endLabel: "948 moh",
+      distanceLabel: "5,4 km",
+      caption: "1029 høydemeter og 5,44 km fra Breivikbotn: Krokelva-hyttene, Finnvatnet på 282, sørvest utenom skredterrenget — og Litletind-ryggen fra 576 til varden på 948.",
+    },
+  },
   rombakstotta: {
     slug: "rombakstotta",
     intro:

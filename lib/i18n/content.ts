@@ -358,6 +358,16 @@ export const TOUR_TEASER_EN: Record<string, string> = {
     "1050 metres of ascent from the school at Ånstad: the hillside and the moors to Breilifatet — and the ramp on the south-west side to the summit, where Johammarrenna and Risenrenna wait for stable days.",
   sula:
     "830 metres of ascent from Breivoll: the even tractor road, up Skogsheia where the forest thins — and a nearly straight line to the top of the M mountain, on slopes measuring just over 20 degrees.",
+  trollfjellet:
+    "1030 metres of ascent from Valvågen to Tjeldøya's only summit over 1000: the west bank of Forsdalselva between the pines, east of Kjerstadtinden — and the ridge to the top, with sun and gentle, fine skiing all the way home.",
+  jotind:
+    "1050 metres of ascent from Mølnneset: the ridge above Spannbogen, the slope before 600 where the skis are usually carried — and the narrow summit ridge, with the summer route on the south side as the way past.",
+  helligtinden:
+    "1030 metres of ascent from Breivikbotn: the cabin field at Krokelva, Finnvatnet — and the north-east ridge of Litletinden to Helligtinden, with even 10–20 degree skiing home.",
+  siriskolten:
+    "670 metres of ascent from the gravel pit on the fv. 7548: the summer route through gentle terrain, the stream south of the 414 knoll — and west to the summit. Tjeldøya's way in, ideal for newcomers, says the source.",
+  sebortinden:
+    "890 metres of ascent from Møysalen's car park on the E10: up Forkledalen, the south side of the stream — and the traverse on the east ridge's flank towards the fore-summit, with axe and crampons for the final push.",
 
 };
 
@@ -2321,6 +2331,171 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       endLabel: "1076 m",
       distanceLabel: "5.9 km",
       caption: "1156 metres of climbing and 5.86 km from the E10 at 21 m up through Heggedalen past 146, the gully at 510 and spot height 570, across the bowl to 805 and west along the bench to the north-west ridge at 886, 952 and 1040.",
+    },
+  },
+  jotind: {
+    intro:
+      "1048 metres of ascent over 6.31 km from Mølnneset to Jotind — the register's Jotinden resolves 979.4 against the published 980. The east ridge: the ridge above Spannbogen, the slope just before 600 where the skis are usually carried, and a summit ridge that narrows so much the source recommends the summer route on the south side — or a rope. KAST 3 – Complex with ice axe and crampons. Grade 4.",
+    ascent: [
+      "From the lay-by on the fv. 7548 Tjeldøyveien at Mølnneset — 10 m; the source's F711 — the line climbs from the point and onto the ridge above Spannbogen, 246 m where the corridor stands. The treeline arrives already at 111 after 0.45 km: this is a ridge in the sea gap, not a forest tour.",
+      "The slope just before 600 is where the skis are usually carried — the source gives it 40 degrees in the fall line, and the model's line crosses it with 31.9 degrees as the steepest single step, between 621 and 649 m. The band from 600 to 700 is the steepest on average at 17.1.",
+      "The east ridge from 605 towards the top: right below the cairn the ridge narrows — the summer route on the south side is the way past, or a rope and some gear on the ridge itself, says the source. The SW probe, where the summer route rounds, is the only gentle one at 6.1 degrees on average; N/NE/E hold 46.4–54.3 windows in the first 60 metres.",
+    ],
+    descent: [
+      "The same way down, and wind-exposed: one section of 40 degrees, the rest 15–20, says the source. The line gives back 79 of the 1048 metres it wins — the ridge rolls, and the skins may go back on before Spannbogen.",
+      "The north side via Svartvasshompen towards Trollvatnet and Storforrdalen is the KAST 2 variant — clear of avalanche terrain along the scooter tracks, but another tour. The NW flank off the cairn falls 33.1 degrees on average: the east ridge is the line, not the fall lines around it.",
+    ],
+    avalanche: [
+      {
+        title: "The slope and the summit ridge",
+        body: "The slope before 600 is 40 degrees with the source — skis are carried, and the axe and crampons are for crust on the ridge. The summit ridge narrows: N/NE/E hold 46.4–54.3 windows in the first 60 metres from the cairn, and the summer route on the south side is the way past the source itself recommends.",
+      },
+      {
+        title: "The wind",
+        body: "The ridge is wind-exposed the whole way, says the source — cornices and stripped crust belong here, and a rope is mentioned for the summit ridge on difficult days. Turn around at the slope if the crust gives no purchase: the rest of the ridge does not get easier.",
+      },
+      {
+        title: "Before you go",
+        body: "Jotind sits in the Ofoten forecasting region, an A-region with a daily avalanche bulletin — new to the app with this round: Tjeldøya's four summits are the first to answer to it. Check varsom.no. The February–April season is Fri Flyt's. Transceiver, probe and shovel — and ice axe and crampons where the source demands them.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "10 m",
+      endLabel: "979 m",
+      distanceLabel: "6.3 km",
+      caption: "1048 metres of ascent over 6.31 km from Mølnneset: the ridge above Spannbogen at 246, the slope before 600 — and the east ridge from 605 to the narrow summit at 979, with the summer route on the south side as the way past.",
+    },
+  },
+  siriskolten: {
+    intro:
+      "669 metres of ascent over 3.27 km from the gravel pit to Siriskolten — 659.2 on screen against the published 658, and Tjeldøya's way in: KAST 1 – Simple, 10–15 degrees up top and one section of 20–25, ideal for newcomers, says the source. The summer route from the north side through gentle, rolling terrain with sparse forest. Grade 1.",
+    ascent: [
+      "From the lay-by at the gravel pit on the fv. 7548 Myklebostadveien — 7 m; the source's F711 — follow the summer route south-west: the OSM path starts at the point, and the treeline sits at 110 after 0.4 km. The band from 0 to 100 measures 14.7 degrees in the short forest slope.",
+      "Through the gentle, rolling ground — 411 m where the line stands in the summer route — and the stream south of the 414 knoll: the band from 300 to 400 is the steepest on average at 18.6 degrees, the source's 20–25 section.",
+      "West towards the top from 631: the band above 600 measures 7.2 degrees, and the whole tour's steepest single step, 23.5 degrees, sits right at the bottom between 23 and 41 m — above the treeline this mountain is never steep. The cairn stands at 659.",
+    ],
+    descent: [
+      "10–15 degrees up top, 20–25 past the 414 knoll, then the gentle rolling ground home — skiing for newcomers, and for days when the bulletin closes the big mountains. NE and W off the cairn average 7.9–9.2 degrees.",
+      "The source demands one thing: navigation and good visibility. The terrain rolls, the forest is sparse, and the S/SE flanks fall 26.9–27.7 degrees on average with 47–49 windows — the southern edges are the only ones to know about, and in fog they are close.",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "KAST 1 – Simple with Fri Flyt, and the model agrees: 18.6 degrees in the steepest band, 23.5 in the steepest single step — at the bottom, in the forest. The source's remark that the summit is used when avalanche danger threatens other mountains stands as the source's judgement; the bulletin gets read regardless.",
+      },
+      {
+        title: "The southern edges",
+        body: "S and SE fall 26.9–27.7 degrees on average with windows of 47–49 — even the beginner's summit has edges. The route comes from the north and has no reason to go near them; in fog the bearing home is north-east, towards the gravel pit.",
+      },
+      {
+        title: "Before you go",
+        body: "Siriskolten sits in the Ofoten forecasting region, an A-region with a daily avalanche bulletin — new to the app with this round: Tjeldøya's four summits are the first to answer to it. Check varsom.no. The February–April season is Fri Flyt's. Transceiver, probe and shovel.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "7 m",
+      endLabel: "659 m",
+      distanceLabel: "3.3 km",
+      caption: "669 metres of ascent over 3.27 km from the gravel pit on the fv. 7548: the summer route through the rolling ground, the stream south of the 414 knoll — and west from 631 to the cairn at 659.",
+    },
+  },
+  trollfjellet: {
+    intro:
+      "1028 metres of ascent over 6.62 km from Valvågen to Tjeldøya's only summit over 1000 — and to a namesake: the island has two registered Trollfjellet, a 660 knoll in the north-east and this one, which resolves 1008.9 against the published 1010. The west bank of Forsdalselva between the pines, east of Kjerstadtinden and the ridge to the top. KAST 1 – Simple with Fri Flyt: 10–15 degrees with sections of 30 on the ridge. Grade 2 — sun and gentle, fine skiing, the island's afternoon tour.",
+    ascent: [
+      "From the lay-by on the fv. 7548 Tjeldøyveien at Valvågpollen — 3 m; the source's F711 is today's county road — the line crosses the river and climbs between the pines on the west bank of Forsdalselva, 109 m where the corridor stands in the hillside. The treeline sits at 204 after 2.43 km, and the band from 0 to 100 measures 3.9 degrees over the long approach.",
+      "Between the avalanche terrain towards the east side of Kjerstadtinden — 651 m where the line is anchored — and past the lake at 672 in the bowl below the ridge. The band from 400 to 500 is the steepest on average at 17.9 degrees, and the steepest single step, 26.1 degrees between 326 and 348 m, sits in the hillside above the forest.",
+      "The ridge from 981 to the cairn at 1009: the band above 1000 measures 1.8 degrees — the top is a plateau. The source's sections of 30 on the ridge live in the N window, which the flank probe reads at 39.1.",
+    ],
+    descent: [
+      "Sun and gentle, fine skiing, says the source — 10–15 degrees with sections of 30, the same way as up. SW and W off the cairn are the gentlest probes at 4.9 and 14.1 degrees on average: the west side is the mountain's kind axis.",
+      "SE falls 31.4 degrees on average with a 58.3 window, and the north-west variant (30–40 degrees) is KAST 2 and another line. Hold the west axis home — and hold back at the lake, to spare yourself re-skinning for the last metres out of the bowl.",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "KAST 1 – Simple with Fri Flyt, and the model agrees: 17.9 degrees in the steepest band, 26.1 in the steepest single step. The line is laid between the avalanche terrain towards Kjerstadtinden's east side — that passage is why the route runs where it runs, in fog too.",
+      },
+      {
+        title: "The edges",
+        body: "The SE flank falls 31.4 degrees on average with a 58.3 window, and the east side reads 22.8 with a 54.9 window — the island's kindest thousand-metre summit has grown-up edges to the east and south-east. The north-west variant (30–40 degrees) is for stable days.",
+      },
+      {
+        title: "Before you go",
+        body: "Trollfjellet sits in the Ofoten forecasting region, an A-region with a daily avalanche bulletin — new to the app with this round: Tjeldøya's four summits are the first to answer to it. Check varsom.no. The February–April season is Fri Flyt's. Transceiver, probe and shovel.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "3 m",
+      endLabel: "1009 m",
+      distanceLabel: "6.6 km",
+      caption: "1028 metres of ascent over 6.62 km from Valvågen: the west bank of Forsdalselva, east of Kjerstadtinden at 651 — and the ridge from 981 to the cairn at 1009, Tjeldøya's only summit over 1000.",
+    },
+  },
+  sebortinden: {
+    intro:
+      "894 metres of ascent over 3.99 km from the car park on the E10 south of Litlvatnet — the same one as Møysalen — to Sebortinden: 830.8 on screen against the published 834. The north side: up Forkledalen, the south side of the stream along the ridge, and the traverse on the east ridge's flank towards the fore-summit east of point 799. KAST 3 – Complex with ice axe and crampons; the final push is around 30 degrees. Grade 4.",
+    ascent: [
+      "From the big car park on the E10 — 23 m, Møysalen's spot — the line climbs Forkledalen, 136 m where the corridor stands in the valley. The treeline sits at 195 after 2.07 km, and the band from 100 to 200 measures 3.8 degrees along the long valley floor.",
+      "Where the gully with the stream breaks off left, follow the south side of the stream along the ridge — 194 m — and before 400 the line settles on the gentlest of the east ridge's flank: the band from 300 to 400 is the steepest on average at 24.2 degrees, and the steepest single step, 31.7 degrees, sits between 312 and 338 m.",
+      "The traverse towards the fore-summit east of point 799 — 619 m where the line is anchored — and the final push at around 30 degrees, where crampons and axe decide on hard crust. The cairn stands at 831.",
+    ],
+    descent: [
+      "The same way down — fine cruising, says the source, but the descent crosses avalanche terrain, and the line gives back 87 of the 894 metres it wins on the ridge's rolls.",
+      "The variants are serious: Sebortindrenna in the south-west — 47.8 degrees on average on the flank probe, with a 69.0 window — avalanches every single year, says the source. Forkleet on the east side reaches up to 45 past the 120-metre granite wall, and Vinkelrenna holds 30–45 with a highly exposed upper section. All of these are other tours.",
+    ],
+    avalanche: [
+      {
+        title: "The north side",
+        body: "The normal route crosses avalanche terrain, says the source — KAST 3 – Complex, with ice axe and crampons for the final push at around 30 degrees. The N flank reads 46.1 in its steepest window: the fore-summit is the place to judge the rest of the day from.",
+      },
+      {
+        title: "The couloirs",
+        body: "Sebortindrenna avalanches every single year — the source's own words, and the probe agrees: 47.8 degrees on average, 69.0 in the window. Forkleet (up to 45) and Vinkelrenna (30–45, highly exposed at the top) are for the experienced on chosen days, and a fall at the top of Vinkelrenna is not survivable, says the source.",
+      },
+      {
+        title: "Before you go",
+        body: "Sebortinden sits in the Lofoten og Vesterålen forecasting region, an A-region with a daily avalanche bulletin — the same region as Møysalen, which shares the car park. Check varsom.no. The February–April season is Fri Flyt's. Transceiver, probe and shovel — and ice axe and crampons where the source demands them.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "23 m",
+      endLabel: "831 m",
+      distanceLabel: "4.0 km",
+      caption: "894 metres of ascent over 3.99 km from Møysalen's car park on the E10: Forkledalen, the south side of the stream — and the traverse on the east ridge's flank towards the fore-summit east of 799, before the final push to the cairn at 831.",
+    },
+  },
+  helligtinden: {
+    intro:
+      "1029 metres of ascent over 5.44 km from Breivikbotn to Helligtinden — 948.0 on screen against the published 948, to the decimetre. The north ridge: the cabin field at Krokelva, Finnvatnet, south-west around the avalanche terrain, and Litletinden's north-east ridge with a small descent before the final push. KAST 2 – Challenging, with crampons and axe for hard crust — grade 3.",
+    ascent: [
+      "From the lay-by on the fv. 7548 Myklebostadveien in Breivikbotn — 9 m; the source's F711 — the service road leads to the cabin field at Krokelva at 59. The treeline sits already at 57 after 0.4 km, and the band from 0 to 100 measures 9.3 degrees: open ground almost from the car.",
+      "Up to Finnvatnet at 282, and south-west to avoid the avalanche terrain as the source asks — 479 m where the line swings. The band from 600 to 700 measures 4.7 degrees across the broad flat towards the ridge.",
+      "Litletinden's north-east ridge from 576, the ridge south with a small descent — and the final push: the band from 800 to 900 is the steepest on average at 19.9 degrees, and the steepest single step, 33.3 degrees between 626 and 650 m, is one of the source's two sections over 30 along the ridge. The cairn stands at 948.",
+    ],
+    descent: [
+      "Mostly 10–20 degrees home, with two sections over 30 along the Litletind ridge, says the source — even skiing, good for newcomers on stable days. The N probe off the cairn is the gentle side at 5.5 degrees on average: the ridge is the way home.",
+      "Østskåla between Helligtinden and Litletinden is the variant: 31–35 degrees down to gentler ground along the south side of Tverrelva. The east flank averages 28.4 with a 57.2 window 100–160 m out — the bowl demands stable snow, and the line in any case gives back 90 of the 1029 metres on the ridge's rolls.",
+    ],
+    avalanche: [
+      {
+        title: "The ridge",
+        body: "Two sections over 30 degrees along the Litletind ridge, and crampons and axe can be needed on hard crust — KAST 2 – Challenging, grade 3 by the gear list. The line lies south-west after Finnvatnet precisely to stay clear of the avalanche terrain above the lake.",
+      },
+      {
+        title: "Østskåla",
+        body: "The bowl between Helligtinden and Litletinden holds 31–35 degrees, and the east flank reads 57.2 in its steepest window — the variant is for stable days, not for crust. The north ridge is the line that always goes.",
+      },
+      {
+        title: "Before you go",
+        body: "Helligtinden sits in the Ofoten forecasting region, an A-region with a daily avalanche bulletin — new to the app with this round: Tjeldøya's four summits are the first to answer to it. Check varsom.no. The February–April season is Fri Flyt's. Transceiver, probe and shovel — and ice axe and crampons where the source demands them.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "9 m",
+      endLabel: "948 m",
+      distanceLabel: "5.4 km",
+      caption: "1029 metres of ascent over 5.44 km from Breivikbotn: the Krokelva cabins, Finnvatnet at 282, south-west around the avalanche terrain — and the Litletind ridge from 576 to the cairn at 948.",
     },
   },
   rombakstotta: {

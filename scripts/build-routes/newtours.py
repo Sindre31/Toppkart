@@ -195,4 +195,10 @@ NEW_TOURS = {
     "krakrotinden": ("Kråkrøtinden", "Harstad"),
     "ristinden": ("Ristinden", "Harstad"),
     "sula": ("Sula", "Harstad"),
+    # — Tjeldøya-runden —
+    "trollfjellet": ("Trollfjellet", "Harstad"),
+    "jotind": ("Jotind", "Harstad"),
+    "helligtinden": ("Helligtinden", "Harstad"),
+    "siriskolten": ("Siriskolten", "Harstad"),
+    "sebortinden": ("Sebortinden", "Vesterålen"),
 }

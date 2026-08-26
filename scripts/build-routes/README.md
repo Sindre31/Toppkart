@@ -4306,6 +4306,57 @@ but every other bearing holds 50–69° windows tight on the cairn. The
 same route-not-mountain pattern as Hemmestadfjellet last round, from the
 other end of the KAST scale.
 
+## The Tjeldøya round
+
+Five from the Harstad book: Tjeldøya's four tours — Trollfjellet (the
+island's only summit over 1000), Jotind, Helligtinden and Siriskolten —
+plus Sebortinden by the Lofast, which starts from the same E10 car park
+as Møysalen. The island's four are the app's first tours in the
+**Ofoten** forecasting region (3015); Sebortinden answers to Lofoten og
+Vesterålen, so after two single-region rounds this one splits 4/1 the
+way the first two Harstad-book rounds did. The source's «F711» is
+today's fv. 7548 (Tjeldøyveien/Myklebostadveien) — the same
+road-renumbering note as F83/fv. 850 and F104/fv. 7784 before it.
+
+| tour | start | summit | gain | km | steepest 100 m band | steepest 30 m | grade |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Trollfjellet | 3 | 1009 | 1028 | 6.6 | 17.9° | 26.1° | 2 |
+| Jotind | 10 | 979 | 1048 | 6.3 | 17.1° | 31.9° | 4 |
+| Helligtinden | 9 | 948 | 1029 | 5.4 | 19.9° | 33.3° | 3 |
+| Siriskolten | 7 | 659 | 669 | 3.3 | 18.6° | 23.5° | 1 |
+| Sebortinden | 23 | 831 | 894 | 4.0 | 24.2° | 31.7° | 4 |
+
+**Tjeldøya has two registered Trollfjellet, and the search found the
+wrong one first.** The ssr-nearest pass latched onto a 660 knoll in the
+island's north-east; the 1010 summit is the southern register entry east
+of Kjerstadtinden, and a `SUMMIT_SEED` on that point walks the disc-grow
+to 1008.9. The guide tells the reader the island has a namesake pair —
+the same trap Melåaksla and Middagstinden documented from other angles.
+
+**A trailhead can sit on the sea.** `check_new_corridors.py` flagged the
+first Valvågen lay-by point as on the water surface — the pocket sits
+between road and shore. The start moved to the road's own vertex by the
+pollen, and the 672-lake waypoint (a 60 m dip below the shoulder) moved
+out of the corridor and into the prose, where undulation belongs.
+
+**Every line dry on the first solve, no re-routes.** Five for five with
+zero wet vertices and `check_ground.py` clean — the second round (after
+Lofast) where the terrain-class pre-probing left nothing for the
+avoidWater pass to do.
+
+**The narrow summit ridge is measured, not just quoted.** Jotind's
+source asks for a rope or the summer route around the top; the flank
+probe puts 46.4–54.3° windows in the first 60 m on N/NE/E and a lone
+6.1° mean on SW — exactly where the summer route rounds. Sebortinden's
+Sebortindrenna («avalanches every single year») probes 47.8° mean with a
+69.0° window: the guide carries the source's sentence and the number
+that backs it.
+
+**Møysalen's car park now serves two tours.** Sebortinden reuses the
+moysalen corridor's trailhead verbatim — same coordinates, same OSM
+evidence — the first shared trailhead across rounds since the four
+Dale tours on Grytøya.
+
 ## Network
 
 Everything is public and unauthenticated:
