@@ -1374,5 +1374,45 @@
     "summit_dtm": 847.7,
     "claims": 848,
     "stored_off_km": 0.01
+  },
+  "trollfjellet": {
+    "name": "Trollfjellet",
+    "lat": 68.47689,
+    "lng": 16.27383,
+    "summit_dtm": 1008.9,
+    "claims": 1010,
+    "stored_off_km": 0.02
+  },
+  "jotind": {
+    "name": "Jotinden",
+    "lat": 68.50087,
+    "lng": 16.32663,
+    "summit_dtm": 979.4,
+    "claims": 980,
+    "stored_off_km": 0.02
+  },
+  "helligtinden": {
+    "name": "Helligtinden",
+    "lat": 68.46412,
+    "lng": 16.33452,
+    "summit_dtm": 948.0,
+    "claims": 948,
+    "stored_off_km": 0.0
+  },
+  "siriskolten": {
+    "name": "Siriskolten",
+    "lat": 68.47962,
+    "lng": 16.42142,
+    "summit_dtm": 659.2,
+    "claims": 658,
+    "stored_off_km": 0.1
+  },
+  "sebortinden": {
+    "name": "Sebortinden",
+    "lat": 68.47522,
+    "lng": 15.42604,
+    "summit_dtm": 830.8,
+    "claims": 834,
+    "stored_off_km": 0.01
   }
 }

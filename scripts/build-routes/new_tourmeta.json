@@ -3309,5 +3309,115 @@
    "check_new_corridors: traktorveien (OSM-track) på punktet ved Ibestadveien."
   ],
   "notes": ""
+ },
+ "trollfjellet": {
+  "season": "feb–apr",
+  "aspect": "V",
+  "grade": 2,
+  "gradeReason": "KAST 1 – Enkelt hos Fri Flyt på vestsiden: 10–15 grader med parti på 30 på ryggen — sol og slak fin kjøring på øyas eneste tusenmeter. Grad 2.",
+  "roadClosedInWinter": false,
+  "teaserNo": "1030 høydemeter fra Valvågen til Tjeldøyas eneste topp over 1000: vestbredden av Forsdalselva mellom furuene, aust for Kjerstadtinden — og ryggen til topps, med sol og slak fin kjøring hele veien hjem.",
+  "teaserEn": "1030 metres of ascent from Valvågen to Tjeldøya's only summit over 1000: the west bank of Forsdalselva between the pines, east of Kjerstadtinden — and the ridge to the top, with sun and gentle, fine skiing all the way home.",
+  "hazardNotes": "Fri Flyt: KAST 1 – Enkelt på vestsiden. Linja går mellom skredterreng mot austsida av Kjerstadtinden; parti på 30 grader på ryggen. Varianten på nordvestsida (30–40 grader) er KAST 2 og en annen linje.",
+  "sources": [
+   "https://www.friflyt.no/topptur/harstad/trollfjellet"
+  ],
+  "confidence": "researched, verified (ok), no local avalanche bulletin read",
+  "corrections": [
+   "Tjeldøya har to registerførte Trollfjellet: en 660-kolle i nordaust og øyas 1010-topp aust for Kjerstadtinden. Toppsøket låste seg først på kollen — såkornet (sjå SUMMIT_SEED) er den sørlige registerinnførselen, og disc-growen går til toppen: 1008,9 mot publiserte 1010. Øyas eneste topp over 1000.",
+   "Starten er lomma på nedsida av vegen langs kildens F711, rett på sørsida av Valvågpollen — dagens fv. 7548 Tjeldøyveien. DTM1 leser 7,1 moh; 1010 − 7 = 1003, som forliker Fri Flyts 1010 høydemeter. Grunneigars samtykke anbefales, sier kilden.",
+   "Ruta reproduserer kilden: over elva og opp mellom furuene på vestbredden av Forsdalselva (registerets Forsdalselva, Elv, 68.47166/16.17872), mellom skredterrenget mot austsida av Kjerstadtinden (68.46508/16.22446), forbi vatnet på 672 og ryggen til topps.",
+   "Fri Flyt: KAST 1 – Enkelt på vestsiden — 10–15 grader med parti på 30 på ryggen, sol og slak fin kjøring, ettermiddagsturen på øya. Grad 2. Varianten på nordvestsida (30–40 grader) er KAST 2 og en annen linje.",
+   "check_new_corridors: lomme langs fv. 7548 (secondary) på punktet."
+  ],
+  "notes": ""
+ },
+ "jotind": {
+  "season": "feb–apr",
+  "aspect": "Ø",
+  "grade": 4,
+  "gradeReason": "KAST 3 – Komplekst hos Fri Flyt, alpinøks og stegjern, eit heng på 40 grader før 600 og ein smal topprygg der kilden nemner tau. Grad 4.",
+  "roadClosedInWinter": false,
+  "teaserNo": "1050 høydemeter fra Mølnneset: ryggen over Spannbogen, henget før 600 der skiene gjerne bæres — og den smale toppryggen, med sommerruta på sørsida som utveien.",
+  "teaserEn": "1050 metres of ascent from Mølnneset: the ridge above Spannbogen, the slope before 600 where the skis are usually carried — and the narrow summit ridge, with the summer route on the south side as the way past.",
+  "hazardNotes": "Fri Flyt: KAST 3 – Komplekst. Alpinøks og stegjern. Henget før 600 er 40 grader og skiene bæres gjerne; toppryggen smalner — sommerruta på sørsida eller tau. Vindutsatt. Nordsida via Svartvasshompen (KAST 2) er en annen linje.",
+  "sources": [
+   "https://www.friflyt.no/topptur/harstad/jotind"
+  ],
+  "confidence": "researched, verified (ok), no local avalanche bulletin read",
+  "corrections": [
+   "Registerets Jotinden (Fjell, Tjeldsund) løser 979,4 mot publiserte 980; kilden skriver Jotind.",
+   "Starten er lomma langs kildens F711 ved Mølnneset — dagens fv. 7548 Tjeldøyveien; OSM-stien sørvestover starter på punktet (DTM1 9,5 moh). 980 − 10 = 970, som forliker Fri Flyts 980 høydemeter. Nordsida vest for Sandselva er kildens alternative start.",
+   "Ruta reproduserer kilden: østryggen — fra Mølnneset opp ryggen over Spannbogen (registerets Spannbogen, Vik i sjø, 68.50877/16.43836), det bratte henget rett før 600 der ski gjerne bæres, og ryggen til topps. Rett under toppen smalner ryggen: kilden anbefaler sommerruta på sørsida, eller tau og litt utstyr på selve ryggen.",
+   "Fri Flyt: KAST 3 – Komplekst, alpinøks og stegjern — grad 4. Ett parti på 40 grader, resten 15–20; vindutsatt. Nordsida via Svartvasshompen mot Trollvatnet og Storforrdalen er KAST 2-varianten og en annen linje.",
+   "check_new_corridors: lomme langs fv. 7548 (secondary) på punktet."
+  ],
+  "notes": ""
+ },
+ "helligtinden": {
+  "season": "feb–apr",
+  "aspect": "N",
+  "grade": 3,
+  "gradeReason": "KAST 2 – Utfordrende hos Fri Flyt, og stegjern og øks kan trengs på hard skare — grad 3 etter Gråfjell-regelen, med to parti over 30 grader langs Litletind-ryggen.",
+  "roadClosedInWinter": false,
+  "teaserNo": "1030 høydemeter fra Breivikbotn: hyttefeltet ved Krokelva, Finnvatnet — og nordaustryggen av Litletinden til Helligtinden, med jevn kjøring på 10–20 grader hjem.",
+  "teaserEn": "1030 metres of ascent from Breivikbotn: the cabin field at Krokelva, Finnvatnet — and the north-east ridge of Litletinden to Helligtinden, with even 10–20 degree skiing home.",
+  "hazardNotes": "Fri Flyt: KAST 2 – Utfordrende. Stegjern og øks kan trengs på skare. Nedkjøringa er for det meste 10–20 grader med to parti over 30 langs ryggen; Østskåla (31–35 grader) er varianten. Linja legger seg sørvest for å unngå skredterrenget over Finnvatnet.",
+  "sources": [
+   "https://www.friflyt.no/topptur/harstad/helligtinden"
+  ],
+  "confidence": "researched, verified (ok), no local avalanche bulletin read",
+  "corrections": [
+   "Registerets Helligtinden (Fjell, Tjeldsund) løser 948,0 mot publiserte 948 — på desimeteren.",
+   "Starten er lomma langs kildens F711 i Breivikbotn — dagens fv. 7548 Myklebostadveien; servicevegen mot hyttefeltet ved Krokelva starter på punktet (DTM1 8,7 moh). 948 − 9 = 939, som forliker Fri Flyts 950 høydemeter.",
+   "Ruta reproduserer kilden: fra hyttefeltet ved Krokelva opp til Finnvatnet, sørvest for å unngå skredterrenget, og nordaustryggen av Litletinden (registerets Litletinden, Topp, 68.46915/16.33546) — ryggen følges, med en liten nedkjøring sørover før det siste støtet mot Helligtinden.",
+   "Fri Flyt: KAST 2 – Utfordrende; stegjern og øks kan trengs på hard skare — grad 3 etter Gråfjell-regelen. Nedkjøringa er for det meste 10–20 grader med to parti over 30 langs Litletind-ryggen. Østskåla (31–35 grader) mellom Helligtinden og Litletinden er varianten.",
+   "check_new_corridors: lomme langs fv. 7548 (secondary/service) på punktet."
+  ],
+  "notes": ""
+ },
+ "siriskolten": {
+  "season": "feb–apr",
+  "aspect": "N",
+  "grade": 1,
+  "gradeReason": "KAST 1 – Enkelt hos Fri Flyt: 10–15 grader øverst og eit parti på 20–25 — skredfritt slakt terreng for ferske. Grad 1, rundens innsteg.",
+  "roadClosedInWinter": false,
+  "teaserNo": "670 høydemeter fra grustaket ved fv. 7548: sommerruta gjennom slakt terreng, bekken sør for 414-høgda — og vestover til toppen. Tjeldøyas innsteg, ideell for ferske, sier kilden.",
+  "teaserEn": "670 metres of ascent from the gravel pit on the fv. 7548: the summer route through gentle terrain, the stream south of the 414 knoll — and west to the summit. Tjeldøya's way in, ideal for newcomers, says the source.",
+  "hazardNotes": "Fri Flyt: KAST 1 – Enkelt. 10–15 grader øverst, 20–25 ved 414-høgda. Kupert terreng med glissen skog — navigasjon og god sikt kreves i skodde.",
+  "sources": [
+   "https://www.friflyt.no/topptur/harstad/siriskolten"
+  ],
+  "confidence": "researched, verified (ok), no local avalanche bulletin read",
+  "corrections": [
+   "Registerets Siriskolten (Fjell, Tjeldsund) løser 659,2 mot publiserte 658.",
+   "Starten er lomma langs kildens F711 ved grustaket — dagens fv. 7548 Myklebostadveien; OSM-stien (sommerruta) sørvestover mot toppen starter på punktet (DTM1 6,6 moh). 658 − 7 = 651, som forliker Fri Flyts 650 høydemeter. Lomma sør for Ramsundbrua er kildens alternativ.",
+   "Ruta reproduserer kilden: sommerruta fra nordsida gjennom slakt terreng, bekken sør for 414-høgda, og vestover mot toppen. Kilden krever navigasjon og god sikt — terrenget er kupert med glissen skog.",
+   "Fri Flyt: KAST 1 – Enkelt — grad 1: 10–15 grader øverst, et parti på 20–25 ved 414-høgda, ellers slakt. Ideell for ferske og for dager med skredfare på andre topper, sier kilden — det står som kildesitat.",
+   "check_new_corridors: lomme langs fv. 7548 (secondary) på punktet."
+  ],
+  "notes": ""
+ },
+ "sebortinden": {
+  "season": "feb–apr",
+  "aspect": "N",
+  "grade": 4,
+  "gradeReason": "KAST 3 – Komplekst hos Fri Flyt, alpinøks og stegjern, og eit sluttstøt på rundt 30 grader der skare gjør utstyret nødvendig. Grad 4.",
+  "roadClosedInWinter": false,
+  "teaserNo": "890 høydemeter fra Møysalens parkering på E10: opp Forkledalen, sørsida av bekken — og traversen på austryggens flanke mot framtoppen, med øks og stegjern til sluttstøtet.",
+  "teaserEn": "890 metres of ascent from Møysalen's car park on the E10: up Forkledalen, the south side of the stream — and the traverse on the east ridge's flank towards the fore-summit, with axe and crampons for the final push.",
+  "hazardNotes": "Fri Flyt: KAST 3 – Komplekst. Alpinøks og stegjern. Nedturen krysser skredterreng; Sebortindrenna går med skred hvert eneste år, Forkleet når opp mot 45 grader og Vinkelrenna 30–45 med svært utsatt topparti — alle er varianter, ikke normalruta.",
+  "sources": [
+   "https://www.friflyt.no/topptur/harstad/sebortinden"
+  ],
+  "confidence": "researched, verified (ok), no local avalanche bulletin read",
+  "corrections": [
+   "Registerets Sebortinden (Fjell, Lødingen) løser 830,8 mot publiserte 834.",
+   "Starten er den store parkeringa langs E10 sør for Litlvatnet — samme plass som Møysalen-turen bruker (DTM1 22,5 moh). 834 − 23 = 811; Fri Flyts 700–850 høydemeter spenner over startvalgene.",
+   "Ruta reproduserer kilden: nordsida — fra Lofast opp Forkledalen (registerets Forkledalen, Dal, 68.48148/15.46145) til renna med bekken tar av til venstre, sørsida av bekken langs ryggen, og før 400 traversen på det slakeste av austryggens flanke mot framtoppen aust for punkt 799 — sluttstøtet er rundt 30 grader, med stegjern og øks på hard skare.",
+   "Fri Flyt: KAST 3 – Komplekst, alpinøks og stegjern — grad 4. Forkleet på austsida (opp mot 45 grader forbi granittveggen på 120 meter), Sebortindrenna i vest (45 øverst, 30–40 under — skred hvert eneste år, sier kilden) og Vinkelrenna (30–45, svært utsatt øverst) er variantene og ikke denne.",
+   "check_new_corridors: parkeringsplass langs E10 på punktet — samme evidens som moysalen-korridoren."
+  ],
+  "notes": ""
  }
 }

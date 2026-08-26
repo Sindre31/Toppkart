@@ -373,4 +373,11 @@ PEAKS = [
     ("krakrotinden", "Kråkrøtinden", ["Ibestad"], 1187, 68.86263, 17.40069),
     ("ristinden", "Ristinden", ["Ibestad"], 1055, 68.84254, 17.25275),
     ("sula", "Sula", ["Ibestad"], 848, 68.76811, 17.05898),
+    # — Tjeldøya-runden: fire på Tjeldøya (Ofoten-regionen, ny i appen) og
+    #   Sebortinden ved Lofast, som deler parkering med Møysalen. —
+    ("trollfjellet", "Trollfjellet", ["Dielddanuorri - Tjeldsund", "Tjeldsund"], 1010, 68.47701, 16.27419),
+    ("jotind", "Jotinden", ["Dielddanuorri - Tjeldsund", "Tjeldsund"], 980, 68.50073, 16.32669),
+    ("helligtinden", "Helligtinden", ["Dielddanuorri - Tjeldsund", "Tjeldsund"], 948, 68.46410, 16.33448),
+    ("siriskolten", "Siriskolten", ["Dielddanuorri - Tjeldsund", "Tjeldsund"], 658, 68.48050, 16.42229),
+    ("sebortinden", "Sebortinden", ["Lødingen"], 834, 68.47520, 15.42635),
 ]

@@ -8504,5 +8504,213 @@
     "notes": "Fri Flyt: KAST 1 – Enkelt. Hengene måler litt over 20 grader; tidlig på sesongen kan det være lite snø i skogen. Åpen flankekjøring og lett skogskjøring på nedturen."
    }
   ]
+ },
+ "trollfjellet": {
+  "routes": [
+   {
+    "id": "vestsiden",
+    "name": "Vestsiden fra Valvågen",
+    "description": "Fra lomma sør for Valvågpollen over elva, opp vestbredden av Forsdalselva mellom furuene, aust for Kjerstadtinden, forbi vatnet på 672 og ryggen til topps",
+    "trailhead": {
+     "name": "Valvågen",
+     "lat": 68.47905,
+     "lng": 16.15164,
+     "elevation_m": 3.06,
+     "fullName": "Valvågen"
+    },
+    "waypoints": [
+     {
+      "name": "vestbredden av Forsdalselva",
+      "lat": 68.472,
+      "lng": 16.18,
+      "elevation_m": 109.0
+     },
+     {
+      "name": "aust for Kjerstadtinden",
+      "lat": 68.468,
+      "lng": 16.22,
+      "elevation_m": 651.0
+     },
+     {
+      "name": "ryggen",
+      "lat": 68.474,
+      "lng": 16.265,
+      "elevation_m": 981.0
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: KAST 1 – Enkelt på vestsiden. Linja går mellom skredterreng mot austsida av Kjerstadtinden; parti på 30 grader på ryggen. Varianten på nordvestsida (30–40 grader) er KAST 2 og en annen linje."
+   }
+  ]
+ },
+ "jotind": {
+  "routes": [
+   {
+    "id": "ostryggen",
+    "name": "Østryggen fra Mølnneset",
+    "description": "Fra Mølnneset opp ryggen over Spannbogen, det bratte henget før 600, og østryggen til topps — sommerruta på sørsida rundt den smale toppryggen",
+    "trailhead": {
+     "name": "Mølnneset",
+     "lat": 68.51768,
+     "lng": 16.45234,
+     "elevation_m": 10.0,
+     "fullName": "Mølnneset"
+    },
+    "waypoints": [
+     {
+      "name": "opp fra Mølnneset",
+      "lat": 68.513,
+      "lng": 16.438,
+      "elevation_m": 120.0
+     },
+     {
+      "name": "ryggen over Spannbogen",
+      "lat": 68.509,
+      "lng": 16.415,
+      "elevation_m": 246.0
+     },
+     {
+      "name": "henget før 600",
+      "lat": 68.506,
+      "lng": 16.39,
+      "elevation_m": 515.0
+     },
+     {
+      "name": "østryggen",
+      "lat": 68.503,
+      "lng": 16.36,
+      "elevation_m": 605.0
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: KAST 3 – Komplekst. Alpinøks og stegjern. Henget før 600 er 40 grader og skiene bæres gjerne; toppryggen smalner — sommerruta på sørsida eller tau. Vindutsatt. Nordsida via Svartvasshompen (KAST 2) er en annen linje."
+   }
+  ]
+ },
+ "helligtinden": {
+  "routes": [
+   {
+    "id": "nordryggen",
+    "name": "Nordryggen fra Breivikbotn",
+    "description": "Fra Breivikbotn via hyttefeltet ved Krokelva til Finnvatnet, sørvest utenom skredterrenget, og nordaustryggen av Litletinden til Helligtinden",
+    "trailhead": {
+     "name": "Breivikbotn",
+     "lat": 68.46399,
+     "lng": 16.42484,
+     "elevation_m": 9.0,
+     "fullName": "Breivikbotn"
+    },
+    "waypoints": [
+     {
+      "name": "hyttefeltet ved Krokelva",
+      "lat": 68.464,
+      "lng": 16.415,
+      "elevation_m": 59.0
+     },
+     {
+      "name": "Finnvatnet",
+      "lat": 68.463,
+      "lng": 16.39,
+      "elevation_m": 282.0
+     },
+     {
+      "name": "sørvest utenom skredterrenget",
+      "lat": 68.465,
+      "lng": 16.365,
+      "elevation_m": 479.0
+     },
+     {
+      "name": "Litletind-ryggen",
+      "lat": 68.472,
+      "lng": 16.345,
+      "elevation_m": 576.0
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: KAST 2 – Utfordrende. Stegjern og øks kan trengs på skare. Nedkjøringa er for det meste 10–20 grader med to parti over 30 langs ryggen; Østskåla (31–35 grader) er varianten. Linja legger seg sørvest for å unngå skredterrenget over Finnvatnet."
+   }
+  ]
+ },
+ "siriskolten": {
+  "routes": [
+   {
+    "id": "sommerruta",
+    "name": "Sommerruta fra grustaket",
+    "description": "Fra grustaket langs fv. 7548 etter sommerruta gjennom slakt terreng, bekken sør for 414-høgda og vestover til toppen",
+    "trailhead": {
+     "name": "Grustaket",
+     "lat": 68.50302,
+     "lng": 16.44941,
+     "elevation_m": 7.0,
+     "fullName": "Grustaket"
+    },
+    "waypoints": [
+     {
+      "name": "sommerruta",
+      "lat": 68.493,
+      "lng": 16.437,
+      "elevation_m": 411.0
+     },
+     {
+      "name": "heia",
+      "lat": 68.485,
+      "lng": 16.43,
+      "elevation_m": 542.0
+     },
+     {
+      "name": "vestover mot toppen",
+      "lat": 68.481,
+      "lng": 16.425,
+      "elevation_m": 631.0
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: KAST 1 – Enkelt. 10–15 grader øverst, 20–25 ved 414-høgda. Kupert terreng med glissen skog — navigasjon og god sikt kreves i skodde."
+   }
+  ]
+ },
+ "sebortinden": {
+  "routes": [
+   {
+    "id": "nordsiden",
+    "name": "Nordsiden fra Lofast",
+    "description": "Fra parkeringa langs E10 sør for Litlvatnet opp Forkledalen, sørsida av bekken langs ryggen, og traversen på austryggens flanke mot framtoppen aust for punkt 799 til toppen",
+    "trailhead": {
+     "name": "Parkeringa langs E10 sør for Litlvatnet",
+     "lat": 68.46535,
+     "lng": 15.44134,
+     "elevation_m": 23.0,
+     "fullName": "Parkeringa langs E10 sør for Litlvatnet"
+    },
+    "waypoints": [
+     {
+      "name": "Forkledalen",
+      "lat": 68.478,
+      "lng": 15.456,
+      "elevation_m": 136.0
+     },
+     {
+      "name": "sørsida av bekken",
+      "lat": 68.48,
+      "lng": 15.448,
+      "elevation_m": 194.0
+     },
+     {
+      "name": "austryggens flanke",
+      "lat": 68.479,
+      "lng": 15.438,
+      "elevation_m": 446.0
+     },
+     {
+      "name": "framtoppen aust for 799",
+      "lat": 68.477,
+      "lng": 15.432,
+      "elevation_m": 619.0
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: KAST 3 – Komplekst. Alpinøks og stegjern. Nedturen krysser skredterreng; Sebortindrenna går med skred hvert eneste år, Forkleet når opp mot 45 grader og Vinkelrenna 30–45 med svært utsatt topparti — alle er varianter, ikke normalruta."
+   }
+  ]
  }
 }

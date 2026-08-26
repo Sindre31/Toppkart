@@ -604,6 +604,61 @@
   "season": "jan–jun",
   "hasGuide": true
  },
+ "jotind": {
+  "name": "Jotind",
+  "region": "Harstad",
+  "summitM": 979,
+  "verticalM": 1050,
+  "duration": "5–7 t",
+  "grade": 4,
+  "aspect": "Ø",
+  "season": "feb–apr",
+  "hasGuide": false
+ },
+ "siriskolten": {
+  "name": "Siriskolten",
+  "region": "Harstad",
+  "summitM": 659,
+  "verticalM": 670,
+  "duration": "3–5 t",
+  "grade": 1,
+  "aspect": "N",
+  "season": "feb–apr",
+  "hasGuide": false
+ },
+ "trollfjellet": {
+  "name": "Trollfjellet",
+  "region": "Harstad",
+  "summitM": 1009,
+  "verticalM": 1030,
+  "duration": "5–7 t",
+  "grade": 2,
+  "aspect": "V",
+  "season": "feb–apr",
+  "hasGuide": false
+ },
+ "sebortinden": {
+  "name": "Sebortinden",
+  "region": "Vesterålen",
+  "summitM": 831,
+  "verticalM": 890,
+  "duration": "4–6 t",
+  "grade": 4,
+  "aspect": "N",
+  "season": "feb–apr",
+  "hasGuide": false
+ },
+ "helligtinden": {
+  "name": "Helligtinden",
+  "region": "Harstad",
+  "summitM": 948,
+  "verticalM": 1030,
+  "duration": "4–6 t",
+  "grade": 3,
+  "aspect": "N",
+  "season": "feb–apr",
+  "hasGuide": false
+ },
  "rombakstotta": {
   "name": "Rombakstøtta",
   "region": "Narvik",
