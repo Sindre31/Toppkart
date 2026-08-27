@@ -285,6 +285,17 @@
   "season": "feb–mai",
   "hasGuide": true
  },
+ "skjellesvikgalten": {
+  "name": "Skjellesvikgalten",
+  "region": "Harstad",
+  "summitM": 987,
+  "verticalM": 1020,
+  "duration": "4–6 t",
+  "grade": 4,
+  "aspect": "Ø",
+  "season": "feb–apr",
+  "hasGuide": false
+ },
  "nona": {
   "name": "Nona",
   "region": "Harstad",
@@ -305,6 +316,39 @@
   "grade": 3,
   "aspect": "S",
   "season": "jan–apr",
+  "hasGuide": false
+ },
+ "klaptinden": {
+  "name": "Klåptinden",
+  "region": "Harstad",
+  "summitM": 998,
+  "verticalM": 840,
+  "duration": "3–5 t",
+  "grade": 3,
+  "aspect": "V",
+  "season": "feb–apr",
+  "hasGuide": false
+ },
+ "toppen": {
+  "name": "Toppen",
+  "region": "Harstad",
+  "summitM": 759,
+  "verticalM": 720,
+  "duration": "3–5 t",
+  "grade": 4,
+  "aspect": "Ø",
+  "season": "feb–apr",
+  "hasGuide": false
+ },
+ "middagstinden-andorja": {
+  "name": "Middagstinden på Andørja",
+  "region": "Harstad",
+  "summitM": 630,
+  "verticalM": 620,
+  "duration": "2–4 t",
+  "grade": 2,
+  "aspect": "NØ",
+  "season": "feb–apr",
   "hasGuide": false
  },
  "skartinden": {
@@ -392,6 +436,17 @@
   "duration": "3–5 t",
   "grade": 2,
   "aspect": "SØ",
+  "season": "feb–apr",
+  "hasGuide": false
+ },
+ "lasselitinden": {
+  "name": "Lasselitinden",
+  "region": "Harstad",
+  "summitM": 896,
+  "verticalM": 860,
+  "duration": "3–5 t",
+  "grade": 3,
+  "aspect": "S",
   "season": "feb–apr",
   "hasGuide": false
  },

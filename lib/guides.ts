@@ -1003,6 +1003,41 @@ export const GUIDES: Record<string, TourGuide> = {
       caption: "1432 høgdemeter og 5,24 km frå Tindelva, med det brattaste — 27,7 grader mellom 1286 og 1304 moh — på ryggen ein knapp halvkilometer før varden.",
     },
   },
+  skjellesvikgalten: {
+    slug: "skjellesvikgalten",
+    intro:
+      "1019 høydemeter og 4,11 km fra Skjellesvika til Skjellesvikgalten — og et fjell kilden og registeret måler ulikt: Fri Flyt skriver 800 moh, men registerets Skjellesvikgalten, med Storgalten som undernavn, er 987-toppen, og DTM1 er enig på desimeteren. Ingen egen topp på 800 finnes på austryggen — bare ei skulder. Kortet bærer registerhøyden. KAST 3 – Komplekst med alpinøks og stegjern. Grad 4.",
+    ascent: [
+      "Fra lomma på fv. 8670 Grytøyveien ved Skjellesvika småbåthavn — 6 moh — følger du traktorvegen vestover fra havna: 33 moh der linja står i den, og skoggrensa på 298 etter 1,53 km.",
+      "Opp ryggen fra 151 og den store slake austryggen vestover — 617 moh der korridoren er festet. Beltet fra 500 til 600 er det bratteste i snitt med 21,5 grader, og det bratteste enkeltpartiet, 32,8 grader, ligger mellom 557 og 583 moh.",
+      "Ryggen fortsetter til varden på 987 — skuldra på rundt 800 underveis er høyden kilden navngir, men terrenget stiger videre uten søkk: NE-målinga, der ryggen kommer, er den slake sida med 15,3 grader i snitt.",
+    ],
+    descent: [
+      "Samme rygg hjem: hard vindpakket snø er normalen, sier kilden — det er den øksa og stegjerna er for. Store skavler bygger seg over rygglinjene og kan kollapse: gå der du gikk opp, ikke der utsikten er best.",
+      "Sydrennene (30–45 grader) er variantene for stabil snø — E har 54,6-vindu 30–90 m ut og S 48,7, det er dit rennene hører. Nordsida mot Skipsdalen er utveien når sørsnøen er usikker.",
+    ],
+    avalanche: [
+      {
+        title: "Sydrennene",
+        body: "Kilden dokumenterer en dødsulykke i februar 2008 i sydrennene — ett menneske omkom. Rennene holder 30–45 grader og bor i vinduene på 48,7–54,6 fra varden: de krever stabil snø, og nordsida mot Skipsdalen er utveien kilden selv peker på.",
+      },
+      {
+        title: "Skavlene",
+        body: "Store skavler bygger seg over rygglinjene og kan kollapse, sier kilden — på en rygg der hard vindpakket snø er normalen. Hold sporet fra oppturen og avstand til austkanten, som leser 54,6 i sitt bratteste vindu.",
+      },
+      {
+        title: "Før du går",
+        body: "Skjellesvikgalten ligger i varslingsregionen Sør-Troms, en A-region med daglig skredvarsel — tredje runde på rad der alle toppene svarer til samme region. Sjekk varsom.no. Sesongen februar–april er Fri Flyts. Sender/mottaker, søkestang og spade — og alpinøks og stegjern der kilden krever det.",
+      },
+    ],
+    elevationProfile: {
+      path: "M0,200 L33,197 L59,195 L92,188 L118,181 L144,173 L164,170 L190,158 L204,153 L221,147 L250,143 L268,134 L289,125 L309,118 L329,111 L355,101 L380,88 L394,82 L420,72 L440,64 L460,56 L480,53 L493,55 L507,52 L525,45 L546,34 L566,30 L592,19 L600,18",
+      startLabel: "6 moh",
+      endLabel: "987 moh",
+      distanceLabel: "4,1 km",
+      caption: "1019 høydemeter og 4,11 km fra Skjellesvika: traktorvegen fra havna, den store slake austryggen — og varden på 987, toppen kilden kaller 800 og registeret måler høyere.",
+    },
+  },
   nona: {
     slug: "nona",
     intro:
@@ -1071,6 +1106,111 @@ export const GUIDES: Record<string, TourGuide> = {
       endLabel: "918 moh",
       distanceLabel: "4,7 km",
       caption: "940 høydemeter og 4,7 km fra ferjeleiet på Bjørnerå: Bjørnrådalen til 450, ryggen over skulderen på 757 — og toppstøtet til fots, 36,4 grader på det bratteste mellom 875 og 908 moh.",
+    },
+  },
+  klaptinden: {
+    slug: "klaptinden",
+    intro:
+      "839 høydemeter og 3,83 km fra Himmelberget til Klåptinden — 997,6 på skjermen mot publiserte 998, og en start som allerede ligger på 175 moh: fv. 7804 går høyt langs nordkysten av Andørja. Opp fra Klåpvatnet og mer eller mindre sommerruta til topps, steinete under skoggrensa og avblåst over. KAST 2 – Utfordrende, med parti i skogen rundt 40 grader. Grad 3.",
+    ascent: [
+      "Fra lomma langs fv. 7804 Andørjaveien ved Himmelberget — 175 moh, og kilden oppgir selv vegnummeret — runder linja sør for Klåpvatnet på 177: vatnet passeres på land, og skoggrensa ligger på 359 etter 1,04 km. Kilden advarer: steinete her nede når snøen er tynn — hold til høyre (sør) om dekket ikke bærer.",
+      "Sommerruta står i linja på 375, og beltet fra 400 til 500 måler 18,3 grader gjennom den øvre skogslia — det er her kildens parti rundt 40 grader bor i fallinja, mens sporet krysser slakere.",
+      "Ryggen fra 674 og opp: beltet fra 800 til 900 er det bratteste i snitt med 21,3 grader, og det bratteste enkeltpartiet, 26,0 grader mellom 806 og 828 moh, ligger rett under den ofte avblåste toppen på 998.",
+    ],
+    descent: [
+      "Ryggen hjem på 20–30 grader, sier kilden — NV-flanka, der ruta ligger, er den slake målingen med 14,3 grader i snitt. Flott skikjøring og veldig bra utsikt i gode snøvintre, lover kilden.",
+      "Sørsida mot Vassmyran ved Vasskarvatnet er varianten: 30–40 grader, brattere og oftest bedre snø. NE og E fra varden faller 47,2 og 37,1 i snitt med vindu på 68,6 og 71,1 — de kantene er ikke til å kjøre, og i skodde skal du vite hvor de er.",
+    ],
+    avalanche: [
+      {
+        title: "Skogslia",
+        body: "Kildens parti rundt 40 grader ligger i skogen — bratt nok til å bære flak, og med steinete underlag som gjør tynt dekke til et føre- og skadeproblem, ikke bare et skredproblem. Hold til høyre (sør) når snøen er tynn, som kilden sier.",
+      },
+      {
+        title: "Kantene",
+        body: "NE-flanka faller 47,2 grader i snitt med et 68,6-vindu og austsida 37,1 med 71,1 rett under varden — toppen er ofte avblåst, og skare mot de kantene er stedet å være våken. Sørsida-varianten (30–40 grader) krever stabil snø.",
+      },
+      {
+        title: "Før du går",
+        body: "Klåptinden ligger i varslingsregionen Sør-Troms, en A-region med daglig skredvarsel — tredje runde på rad der alle toppene svarer til samme region. Sjekk varsom.no. Sesongen februar–april er Fri Flyts. Sender/mottaker, søkestang og spade.",
+      },
+    ],
+    elevationProfile: {
+      path: "M0,200 L25,200 L49,199 L71,192 L100,181 L123,171 L142,163 L170,158 L192,153 L207,153 L222,145 L243,135 L268,125 L290,116 L319,107 L347,100 L368,94 L396,90 L425,87 L453,82 L481,73 L495,67 L519,59 L538,48 L559,37 L580,29 L600,18",
+      startLabel: "175 moh",
+      endLabel: "998 moh",
+      distanceLabel: "3,8 km",
+      caption: "839 høydemeter og 3,83 km fra Himmelberget: sør for Klåpvatnet på land, sommerruta fra 375 — og ryggen fra 674 til den avblåste toppen på 998.",
+    },
+  },
+  toppen: {
+    slug: "toppen",
+    intro:
+      "721 høydemeter og 2,64 km fra Toppentunnelen til Toppen — 758,6 på skjermen mot publiserte 759, og Grytøyas sjuende tur i appen: øya som begynte med Nona er nå komplett fra Dale til Skjellesvika. Austsida av Hallevikelva, sør for Toppskarvatnet på land, og ryggen sørover. KAST 3 – Komplekst med alpinøks og stegjern; ruta krysser skredterreng. Grad 4.",
+    ascent: [
+      "Fra lomma på fv. 7756 Toppsundveien rett før Toppentunnelen — 40 moh; kildens F15 er dagens fylkesveg, fjerde vegnummer-notat i arkivet — går linja opp austsida av Hallevikelva: skoggrensa allerede på 278 etter 0,68 km, og det bratteste enkeltpartiet, 29,2 grader mellom 154 og 179 moh, ligger i den første lia.",
+      "Beltet fra 200 til 300 er det bratteste i snitt med 21,1 grader, opp mot 336 der korridoren står i dalsida. Kilden er ærlig om dalen: terrengfeller i Hallevikelva — varianten om Dale og Nonskarvatnan har lavere eksponering.",
+      "Sør for Toppskarvatnet på land — 516 moh, tjernet ligger på 489 — og ryggen sørover fra 611 til varden på 759. Beltet over 700 måler 19,9 grader i sluttbakken.",
+    ],
+    descent: [
+      "Samme vei ned — og hold nord: N-flanka mot Toppskarvatnet er den eneste slake målinga med 12,7 grader i snitt. S, SV og V faller 50,8–56,5 grader i snitt med vindu på 70,4–76,7 — Rakkrenna og sjøklippene, og SV-radialen når helt til havet.",
+      "Rakkrenna i sørvest er ekspertlinja: 40–50 grader til havnivå når snøen tillater det, med rappell inn på rundt 500. Det er en annen tur, for andre dager — normalruta går tilbake om Toppskarvatnet.",
+    ],
+    avalanche: [
+      {
+        title: "Hallevikelva-dalen",
+        body: "Ruta krysser skredterreng, og dalen har terrengfeller — kildens egne ord, og grunnen til KAST 3 – Komplekst. Varianten om Dale og Nonskarvatnan har lavere eksponering og er svaret på dager med usikker snø.",
+      },
+      {
+        title: "Sørkantene",
+        body: "S/SV/V faller 50,8–56,5 grader i snitt med vindu opp mot 76,7 — fjellet stuper i sjøen på tre sider. I skodde er kompasskursen fra varden nord, mot Toppskarvatnet: alt annet ender i Rakkrenna-terrenget.",
+      },
+      {
+        title: "Før du går",
+        body: "Toppen ligger i varslingsregionen Sør-Troms, en A-region med daglig skredvarsel — tredje runde på rad der alle toppene svarer til samme region. Sjekk varsom.no. Sesongen februar–april er Fri Flyts. Sender/mottaker, søkestang og spade — og alpinøks og stegjern der kilden krever det.",
+      },
+    ],
+    elevationProfile: {
+      path: "M0,200 L21,195 L41,189 L62,179 L82,171 L98,163 L113,159 L125,153 L146,144 L174,132 L185,129 L205,124 L225,123 L251,120 L277,117 L297,114 L328,110 L348,104 L368,96 L379,93 L399,86 L419,80 L432,76 L451,69 L461,63 L482,58 L501,55 L512,51 L533,43 L553,36 L572,30 L594,21 L600,18",
+      startLabel: "40 moh",
+      endLabel: "759 moh",
+      distanceLabel: "2,6 km",
+      caption: "721 høydemeter og 2,64 km fra Toppentunnelen: austsida av Hallevikelva, sør for Toppskarvatnet på 516 — og ryggen sørover fra 611 til varden på 759.",
+    },
+  },
+  "middagstinden-andorja": {
+    slug: "middagstinden-andorja",
+    intro:
+      "618 høydemeter og 2,95 km fra Slettneset til Middagstinden på Andørja — 630,3 på skjermen mot publiserte 629, og den fjerde kvalifiserte navnedubletten i appen, etter Romsdal, Kvæfjord og Tjeldsund-området. Kort tur, KAST 1 – Enkelt på normalruta — men kilden er uvanlig tydelig: det har gått skred på alle nedkjøringene som beskrives. Grad 2, og varselet veier tyngst.",
+    ascent: [
+      "Fra vegenden på Langnesveien ved Slettneset — 12 moh — går sommerruta sørover: 93 moh der linja står i den, og skoggrensa på 377 etter 1,84 km. Beltet fra 0 til 100 måler 6,0 grader over den første snaue kilometeren.",
+      "Høyre (vest) og opp langs Mølnelva utenom de bratte partiene, slik kilden ber om — 380 moh der linja er festet. Beltene fra 100 til 400 ligger jevnt på 15,4–16,4 grader: jevn skinnegang i åpen li.",
+      "Ryggen som tar til nord for toppen fra 508: beltet fra 500 til 600 er det bratteste i snitt med 18,5 grader, og det bratteste enkeltpartiet, 28,2 grader mellom 514 og 538 moh, ligger der ryggen reiser seg. Varden står på 630 — og SE-målinga stiger svakt videre: ryggen fortsetter mot Middagsaksla.",
+    ],
+    descent: [
+      "Normalnedkjøringa går nordaust ned fra toppen og vest for Remmelbergan langs Mølnelva tilbake til Slettneset — heng på 30 grader hører med, og N/NV-flankene måler 17,5–18,0 grader i snitt.",
+      "Bjørndalen-varianten — sørvest langs ryggen til Middagsaksla og nord ned — er KAST 3: 30–40 grader først, med utsatt 40-gradersterreng og dokumentert skredaktivitet. SV og V fra varden faller 35–36 i snitt med 58,9-vindu: Mølnelva-sidas kanter.",
+    ],
+    avalanche: [
+      {
+        title: "Alle nedkjøringene",
+        body: "Det har gått skred på alle nedkjøringene som beskrives her, sier kilden rett ut — naturlig utløste og skiløperutløste, de siste årene. KAST 1-klassa gjelder terrengformen på normalruta; historikken gjelder fjellet. Les varselet som om turen var gradert hardere.",
+      },
+      {
+        title: "Vindtransporten",
+        body: "Sørvest–nordaust-orienteringa gjør at vind fra sørvest laster nordaustsida — nettopp der normalnedkjøringa går. Etter vind er det ferske flaket i nedkjøringa problemet, ikke bratthet: 28,2 grader er det bratteste enkeltpartiet på hele linja.",
+      },
+      {
+        title: "Før du går",
+        body: "Middagstinden ligger i varslingsregionen Sør-Troms, en A-region med daglig skredvarsel — tredje runde på rad der alle toppene svarer til samme region. Sjekk varsom.no. Sesongen februar–april er Fri Flyts. Sender/mottaker, søkestang og spade.",
+      },
+    ],
+    elevationProfile: {
+      path: "M0,200 L28,195 L55,191 L81,188 L101,186 L125,182 L147,178 L168,177 L192,167 L211,159 L229,151 L247,142 L261,135 L281,129 L293,126 L309,118 L320,113 L339,108 L352,104 L366,96 L377,92 L393,84 L412,80 L434,74 L450,71 L476,62 L494,57 L512,45 L523,40 L540,31 L558,26 L586,19 L600,18",
+      startLabel: "12 moh",
+      endLabel: "630 moh",
+      distanceLabel: "3,0 km",
+      caption: "618 høydemeter og 2,95 km fra Slettneset: sommerruta sørover, opp langs Mølnelva fra 380 — og ryggen nord for toppen fra 508 til varden på 630.",
     },
   },
   skartinden: {
@@ -1359,6 +1499,41 @@ export const GUIDES: Record<string, TourGuide> = {
       endLabel: "848 moh",
       distanceLabel: "3,8 km",
       caption: "827 høydemeter og 3,82 km fra Breivoll: traktorveien til krysset på 68, opp Skogsheia fra 514 — og nesten rett linje til varden på 848, med 21,9 grader som det bratteste enkeltpartiet.",
+    },
+  },
+  lasselitinden: {
+    slug: "lasselitinden",
+    intro:
+      "863 høydemeter og 3,62 km fra Storelvas utløp til Lasselitinden vest på Rolla — 895,8 på skjermen mot publiserte 896. Rollryggen: opp lia fra fv. 848 og sørryggen til topps på 20–30 grader. KAST 2 – Utfordrende med alpinøks og stegjern — grad 3 etter Gråfjell-regelen, og skavlene i Djupedalen er grunnen til å holde sporet.",
+    ascent: [
+      "Fra den vesle parkeringa på nedsida av fv. 848 der Storelva renner ut i havet — 39 moh — går linja opp lia austover: skoggrensa ligger på 327 etter 1,62 km, og beltet fra 0 til 100 måler 4,4 grader langs elva før lia tar til.",
+      "Opp lia til 435 og inn på Rollryggen fra 682: beltet fra 500 til 600 er det bratteste i snitt med 24,2 grader, og det bratteste enkeltpartiet, 31,3 grader mellom 565 og 597 moh, ligger i innsteget til ryggen.",
+      "Sørryggen mot toppen fra 798 — kjøring for ferske på stabile dager, sier kilden om ryggen, og målinga er enig: Rollryggen fra sør leser 15,0 grader i snitt. Varden står på 896, og N/NV stiger svakt videre — ryggen fortsetter.",
+    ],
+    descent: [
+      "Samme rygg hjem: 20–30 grader hos kilden. Vestsida mot Brustindvatnet på 629 er den slake varianten; Heimerdalen (30–40) krever mer, og Djupedalen (45–50, ofte skavl som må hoppes) er for erfarne på utvalgte dager.",
+      "NE-flanka faller 29,7 grader i snitt med 51,7-vindu 190–250 m ut — det er dit Djupedalen og skavlene hører. Hold ryggen i skodde: kantene mot nordaust kommer før du ser dem.",
+    ],
+    avalanche: [
+      {
+        title: "Skavlene",
+        body: "Skavler er gjennomgangstemaet på Lasselitinden — Djupedalen-variantene starter ofte med skavlhopp, og NE-flanka leser 51,7 i sitt bratteste vindu. Øksa og stegjerna i lista er for skare på ryggen; avstanden til kanten er din egen.",
+      },
+      {
+        title: "Variantene",
+        body: "Heimerdalen (30–40 grader) og Djupedalen (45–50) er skredterreng som krever stabil snø — Rollryggen på 20–30 er linja som alltid går, og vestsida mot Brustindvatnet er utveien når været stenger ryggen.",
+      },
+      {
+        title: "Før du går",
+        body: "Lasselitinden ligger i varslingsregionen Sør-Troms, en A-region med daglig skredvarsel — tredje runde på rad der alle toppene svarer til samme region. Sjekk varsom.no. Sesongen februar–april er Fri Flyts. Sender/mottaker, søkestang og spade — og alpinøks og stegjern der kilden krever det.",
+      },
+    ],
+    elevationProfile: {
+      path: "M0,200 L22,198 L45,197 L60,197 L82,195 L97,191 L112,189 L129,188 L149,184 L172,177 L191,170 L209,161 L231,150 L247,146 L268,139 L284,132 L306,125 L330,119 L350,115 L365,109 L380,104 L400,96 L411,90 L422,81 L433,77 L455,68 L471,64 L485,56 L515,50 L545,42 L567,33 L585,25 L600,18",
+      startLabel: "39 moh",
+      endLabel: "896 moh",
+      distanceLabel: "3,6 km",
+      caption: "863 høydemeter og 3,62 km fra Storelvas utløp på fv. 848: opp lia til 435, Rollryggen fra 682 — og sørryggen til varden på 896, med det bratteste enkeltpartiet, 31,3 grader, i innsteget.",
     },
   },
   hemmestadfjellet: {

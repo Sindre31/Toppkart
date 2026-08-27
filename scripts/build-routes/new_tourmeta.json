@@ -3419,5 +3419,121 @@
    "check_new_corridors: parkeringsplass langs E10 på punktet — samme evidens som moysalen-korridoren."
   ],
   "notes": ""
+ },
+ "klaptinden": {
+  "season": "feb–apr",
+  "aspect": "V",
+  "grade": 3,
+  "gradeReason": "KAST 2 – Utfordrende hos Fri Flyt: rygg på 20–30 grader, men parti i skogen når rundt 40, og toppen er ofte avblåst. Grad 3.",
+  "roadClosedInWinter": false,
+  "teaserNo": "840 høydemeter fra Himmelberget: opp fra Klåpvatnet på sommerruta — steinete under skogen, avblåst over — og ryggen til topps, med kjøring på 20–30 grader hjem.",
+  "teaserEn": "840 metres of ascent from Himmelberget: up from Klåpvatnet on the summer route — rocky below the forest, wind-scoured above — and the ridge to the top, with 20–30 degree skiing home.",
+  "hazardNotes": "Fri Flyt: KAST 2 – Utfordrende. Steinete under skoggrensa, avblåst over; parti i skogen rundt 40 grader. Sørsida (30–40 grader) er brattare og varianten — hald til høgre om snøen er tynn.",
+  "sources": [
+   "https://www.friflyt.no/topptur/harstad/klaptinden",
+   "https://www.friflyt.no/randone/turomraade-andoerja"
+  ],
+  "confidence": "researched, verified (ok), no local avalanche bulletin read",
+  "corrections": [
+   "Registerets Klåptinden (Fjell, Ibestad) løser 997,6 mot publiserte 998 — toppsøket gjekk 450 m frå registerpunktet til toppen.",
+   "Starten er lomma langs fv. 7804 Andørjaveien ved Himmelberget — kilden oppgir sjølv 7804, fyrste runde utan vegnummer-arkeologi. OSM-stien (sommarruta) mot Klåpvatnet startar på punktet; DTM1 leser 175,0 moh — vegen ligg høgt her. 998 − 175 = 823, som forliker Fri Flyts 780 høydemeter.",
+   "Ruta reproduserer kilden: vestsida — opp frå Klåpvatnet (registerets Klåpvatnet, Tjern, 68.92233/17.22237) og meir eller mindre sommarruta til topps. Steinete under skoggrensa og avblåst over; hald til høgre (sør) om snødekket er tynt.",
+   "Fri Flyt: KAST 2 – Utfordrende — grad 3: nedkjøringa følgjer ryggen på 20–30 grader, men parti i skogen når rundt 40. Sørsida (30–40 grader mot Vassmyran ved Vasskarvatnet) er brattare, har oftast betre snø, og er varianten.",
+   "check_new_corridors: serviceveg frå fv. 7804 på punktet."
+  ],
+  "notes": ""
+ },
+ "middagstinden-andorja": {
+  "season": "feb–apr",
+  "aspect": "NØ",
+  "grade": 2,
+  "gradeReason": "KAST 1 – Enkelt hos Fri Flyt på normalruta — men det har gått skred på alle nedkjøringane kilden beskriv, og heng på 30 grader høyrer med. Grad 2.",
+  "roadClosedInWinter": false,
+  "teaserNo": "620 høydemeter fra Slettneset: sommerruta sørover, opp langs Mølnelva utenom de bratte partiene — og ryggen nord for toppen. Kort tur, men kilden er tydelig: det har gått skred på alle nedkjøringene.",
+  "teaserEn": "620 metres of ascent from Slettneset: the summer route south, up along Mølnelva clear of the steep sections — and the ridge north of the summit. A short tour, but the source is blunt: avalanches have run on every descent.",
+  "hazardNotes": "Fri Flyt: KAST 1 – Enkelt på normalruta, men det har gått skred på alle nedkjøringane som er beskrivne — naturleg og skiløyparutløyste. Vindtransport frå sørvest mot nordaust byggjer ustabile lag. Bjørndalen (30–40 grader, KAST 3, med utsett 40-gradersterreng) er ei anna linje.",
+  "sources": [
+   "https://www.friflyt.no/topptur/harstad/middagstinden-629",
+   "https://www.friflyt.no/randone/turomraade-andoerja"
+  ],
+  "confidence": "researched, verified (ok), no local avalanche bulletin read",
+  "corrections": [
+   "Registerets Middagstinden (Topp, Ibestad) løser 630,3 mot publiserte 629. Appen har Middagstinden i Romsdal og Middagstinden i Kvæfjord frå før — kortet heiter Middagstinden på Andørja, den fjerde kvalifiserte namnedubletten.",
+   "Starten er vegenden på Langnesveien ved Slettneset (registerets Slettneset, Nes i sjø, 68.90048/17.18021) — OSM-stien (sommarruta) sørover startar på punktet, DTM1 leser 12,2 moh. 629 − 12 = 617, som forliker Fri Flyts 600 høydemeter.",
+   "Ruta reproduserer kilden: frå Slettneset sørover etter sommarruta, høgre (vest) og opp langs Mølnelva utanom dei bratte partia, og ryggen som tek til nord for Middagstinden til topps der snøen tillèt det.",
+   "Fri Flyt: KAST 1 – Enkelt på normalnedkjøringa (nordaust ned og vest for Remmelbergan langs Mølnelva) — men kilden er uvanleg tydeleg: det har gått skred på alle nedkjøringane som er beskrivne, både naturleg utløyste og skiløyparutløyste, og sørvest–nordaust-vindtransport byggjer ustabile lag. Grad 2, og varselet veg tyngre enn KAST-klassa her. Bjørndalen-varianten (30–40 grader, KAST 3) er ei anna linje.",
+   "check_new_corridors: vegende (service, Langnesveien) på punktet."
+  ],
+  "notes": ""
+ },
+ "lasselitinden": {
+  "season": "feb–apr",
+  "aspect": "S",
+  "grade": 3,
+  "gradeReason": "KAST 2 – Utfordrende hos Fri Flyt med alpinøks og stegjern — grad 3 etter Gråfjell-regelen, sjølv om Rollryggen held 20–30 grader.",
+  "roadClosedInWinter": false,
+  "teaserNo": "860 høydemeter fra Storelvas utløp på fv. 848: opp lia til Rollryggen — og sørryggen til topps på 20–30 grader, med Djupedalens skavler som naboer du holder avstand til.",
+  "teaserEn": "860 metres of ascent from Storelva's outlet on the fv. 848: up the hillside to Rollryggen — and the south ridge to the top at 20–30 degrees, with Djupedalen's cornices as neighbours you keep your distance from.",
+  "hazardNotes": "Fri Flyt: KAST 2 – Utfordrende. Alpinøks og stegjern. Rollryggen held 20–30 grader; Heimerdalen (30–40), Djupedalen (45–50, ofte skavlhopp) og vestsida mot Brustindvatnet er variantane. Skavlar langs toppryggen.",
+  "sources": [
+   "https://www.friflyt.no/topptur/harstad/lasselitinden",
+   "https://www.friflyt.no/randonee/turomraade-rolla"
+  ],
+  "confidence": "researched, verified (ok), no local avalanche bulletin read",
+  "corrections": [
+   "Registerets Lasselitinden (Fjell, Ibestad) løser 895,8 mot publiserte 896.",
+   "Starten er den vesle parkeringa på nedsida av fv. 848 der Storelva renn ut i havet, vest på Rolla — OSM-tracken frå vegen startar på punktet, DTM1 leser 38,9 moh. 896 − 39 = 857, som forliker Fri Flyts 890 høydemeter.",
+   "Ruta reproduserer kilden: Rollryggen — opp lia frå Storelva og sørryggen til topps, 20–30 grader og fin for ferske, seier kilden — men KAST 2 med alpinøks og stegjern gir grad 3 etter Gråfjell-regelen.",
+   "Fri Flyt: KAST 2 – Utfordrende, alpinøks og stegjern. Variantane er alvorlege: Heimerdalen (30–40), Djupedalen (45–50, ofte skavl som må hoppast) og vestsida mot Brustindvatnet på 629. Skavlar er gjennomgangstemaet.",
+   "check_new_corridors: track frå fv. 848 på punktet."
+  ],
+  "notes": ""
+ },
+ "toppen": {
+  "season": "feb–apr",
+  "aspect": "Ø",
+  "grade": 4,
+  "gradeReason": "KAST 3 – Komplekst hos Fri Flyt, alpinøks og stegjern, og ei rute som kryssar skredterreng i Hallevikelva-dalen. Grad 4.",
+  "roadClosedInWinter": false,
+  "teaserNo": "720 høydemeter fra Toppentunnelen: austsida av Hallevikelva, sør for Toppskarvatnet på land — og ryggen sørover til Toppen, fjellet som ga tunnelen navn.",
+  "teaserEn": "720 metres of ascent from Toppentunnelen: the east side of Hallevikelva, south of Toppskarvatnet on dry land — and the ridge south to Toppen, the mountain the tunnel is named after.",
+  "hazardNotes": "Fri Flyt: KAST 3 – Komplekst. Alpinøks og stegjern. Ruta kryssar skredterreng med terrengfeller i Hallevikelva-dalen; varianten om Dale og Nonskarvatnan har lågare eksponering. Rakkrenna (40–50 grader, rappell inn på rundt 500) er ekspertlinja.",
+  "sources": [
+   "https://www.friflyt.no/topptur/harstad/toppen",
+   "https://www.friflyt.no/topptur/tromso/turomraade-grytoeya"
+  ],
+  "confidence": "researched, verified (ok), no local avalanche bulletin read",
+  "corrections": [
+   "Registerets Toppen (Fjell, Harstad) løser 758,6 mot publiserte 759 — Grytøyas sjuande tur i appen.",
+   "Starten er den vesle parkeringa langs kildens F15 rett før Toppentunnelen på austsida — dagens fv. 7756 Toppsundveien; DTM1 leser 40,0 moh ved lomma. Fjerde vegnummer-notatet i arkivet.",
+   "Ruta reproduserer kilden: austsida — bratt terreng på austsida av Hallevikelva opp mot Toppskarvatnet (registerets Toppskarvatnet, Tjern, 68.91465/16.41377, DTM1 489), og ryggen sørover til toppen. Ruta kryssar skredterreng; varianten om Dale og Nonskarvatnan har lågare eksponering.",
+   "Fri Flyt: KAST 3 – Komplekst, alpinøks og stegjern — grad 4. Rakkrenna i sørvest (40–50 grader til havet, rappell inn på rundt 500) er ekspertlinja og ikkje denne. Terrengfeller i Hallevikelva-dalen.",
+   "check_new_corridors: lomme langs fv. 7756 (secondary) på punktet."
+  ],
+  "notes": ""
+ },
+ "skjellesvikgalten": {
+  "season": "feb–apr",
+  "aspect": "Ø",
+  "grade": 4,
+  "gradeReason": "KAST 3 – Komplekst hos Fri Flyt, alpinøks og stegjern for hard vindpakka snø, og store skavlar over rygglinene. Grad 4.",
+  "roadClosedInWinter": false,
+  "teaserNo": "1020 høydemeter fra Skjellesvika: traktorvegen fra havna og den store slake austryggen vestover — til toppen kilden kaller 800 og registeret måler 987.",
+  "teaserEn": "1020 metres of ascent from Skjellesvika: the tractor road from the harbour and the broad, gentle east ridge west — to the summit the source calls 800 and the register measures at 987.",
+  "hazardNotes": "Fri Flyt: KAST 3 – Komplekst. Alpinøks og stegjern. Hard vindpakka snø; store skavlar som kan kollapse over rygglinene. Sydrennene (30–45 grader) krev stabil snø — dødsulykke i februar 2008 — og nordsida mot Skipsdalen er utvegen.",
+  "sources": [
+   "https://www.friflyt.no/topptur/harstad/skjellesvikgalten",
+   "https://www.friflyt.no/topptur/tromso/turomraade-grytoeya"
+  ],
+  "confidence": "researched, verified (ok), no local avalanche bulletin read",
+  "corrections": [
+   "Kilden skriver Skjellesvikgalten 800 moh — men registerets Skjellesvikgalten (hovudnamn, med Storgalten som undernamn) er 987-toppen på 68.92499/16.54687, og DTM1 er samd: 987,0. Inga eiga topp på ~800 finst på austryggen — berre ei skulder på ~798. Motsetninga til Melåaksla-saka: der peikte publisert høgd på ein reell topp; her peiker ho på ingenting. Kortet ber register- og DTM-høgda 987, og guiden seier det.",
+   "Starten er lomma langs fv. 8670 Grytøyveien ved Skjellesvika småbåthamn (registerets Skjellesvika, Gard, 68.91296/16.60643) — DTM1 leser 6,3 moh. 987 − 6 = 981; kildens 800 høydemeter høyrer til den lågare toppforståinga.",
+   "Ruta reproduserer kilden: austryggen — traktorvegen frå hamna og den store slake ryggen vestover til topps.",
+   "Fri Flyt: KAST 3 – Komplekst, alpinøks og stegjern — grad 4: hard vindpakka snø, og store skavlar som kan kollapse over rygglinene. Sydrennene (30–45 grader) er variantane; nordsida mot Skipsdalen er utvegen når sørsnøen er usikker.",
+   "Kilden dokumenterer ei dødsulykke i februar 2008 i sydrennene — eitt menneske omkom. Det står i guiden, som Trolltinden- og Sebortinden-notata før.",
+   "check_new_corridors: lomme/serviceveg langs fv. 8670 ved hamna på punktet."
+  ],
+  "notes": ""
  }
 }

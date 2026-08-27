@@ -368,6 +368,16 @@ export const TOUR_TEASER_EN: Record<string, string> = {
     "670 metres of ascent from the gravel pit on the fv. 7548: the summer route through gentle terrain, the stream south of the 414 knoll — and west to the summit. Tjeldøya's way in, ideal for newcomers, says the source.",
   sebortinden:
     "890 metres of ascent from Møysalen's car park on the E10: up Forkledalen, the south side of the stream — and the traverse on the east ridge's flank towards the fore-summit, with axe and crampons for the final push.",
+  klaptinden:
+    "840 metres of ascent from Himmelberget: up from Klåpvatnet on the summer route — rocky below the forest, wind-scoured above — and the ridge to the top, with 20–30 degree skiing home.",
+  "middagstinden-andorja":
+    "620 metres of ascent from Slettneset: the summer route south, up along Mølnelva clear of the steep sections — and the ridge north of the summit. A short tour, but the source is blunt: avalanches have run on every descent.",
+  lasselitinden:
+    "860 metres of ascent from Storelva's outlet on the fv. 848: up the hillside to Rollryggen — and the south ridge to the top at 20–30 degrees, with Djupedalen's cornices as neighbours you keep your distance from.",
+  toppen:
+    "720 metres of ascent from Toppentunnelen: the east side of Hallevikelva, south of Toppskarvatnet on dry land — and the ridge south to Toppen, the mountain the tunnel is named after.",
+  skjellesvikgalten:
+    "1020 metres of ascent from Skjellesvika: the tractor road from the harbour and the broad, gentle east ridge west — to the summit the source calls 800 and the register measures at 987.",
 
 };
 
@@ -1352,6 +1362,39 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       caption: "1432 metres of ascent over 5.24 km from Tindelva, with the steepest ground — 27.7 degrees between 1286 and 1304 m — on the ridge a little under half a kilometre before the cairn.",
     },
   },
+  skjellesvikgalten: {
+    intro:
+      "1019 metres of ascent over 4.11 km from Skjellesvika to Skjellesvikgalten — a mountain the source and the register measure differently: Fri Flyt writes 800 m, but the register's Skjellesvikgalten, with Storgalten as a secondary name, is the 987 summit, and DTM1 agrees to the decimetre. No separate 800 top exists on the east ridge — only a shoulder. The card carries the register height. KAST 3 – Complex with ice axe and crampons. Grade 4.",
+    ascent: [
+      "From the lay-by on the fv. 8670 Grytøyveien at the Skjellesvika boat harbour — 6 m — follow the tractor road west from the harbour: 33 m where the line stands in it, and the treeline at 298 after 1.53 km.",
+      "Up the ridge from 151 and the broad, gentle east ridge westward — 617 m where the corridor is anchored. The band from 500 to 600 is the steepest on average at 21.5 degrees, and the steepest single step, 32.8 degrees, sits between 557 and 583 m.",
+      "The ridge continues to the cairn at 987 — the shoulder at around 800 along the way is the height the source names, but the ground keeps rising with no dip: the NE probe, where the ridge arrives, is the gentle side at 15.3 degrees on average.",
+    ],
+    descent: [
+      "The same ridge home: hard wind-packed snow is the norm, says the source — that is what the axe and crampons are for. Large cornices build over the ridgelines and can collapse: ski where you climbed, not where the view is best.",
+      "The south couloirs (30–45 degrees) are the variants for stable snow — E holds a 54.6 window 30–90 m out and S 48.7, which is where the couloirs belong. The north side towards Skipsdalen is the way out when the southern snow is uncertain.",
+    ],
+    avalanche: [
+      {
+        title: "The south couloirs",
+        body: "The source documents a fatal avalanche in February 2008 in the south couloirs — one person died. The couloirs hold 30–45 degrees and live in the 48.7–54.6 windows off the cairn: they demand stable snow, and the north side towards Skipsdalen is the way out the source itself points to.",
+      },
+      {
+        title: "The cornices",
+        body: "Large cornices build over the ridgelines and can collapse, says the source — on a ridge where hard wind-packed snow is the norm. Hold the track from the ascent and keep distance from the east edge, which reads 54.6 in its steepest window.",
+      },
+      {
+        title: "Before you go",
+        body: "Skjellesvikgalten sits in the Sør-Troms forecasting region, an A-region with a daily avalanche bulletin — the third round running where every summit answers to the same region. Check varsom.no. The February–April season is Fri Flyt's. Transceiver, probe and shovel — and ice axe and crampons where the source demands them.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "6 m",
+      endLabel: "987 m",
+      distanceLabel: "4.1 km",
+      caption: "1019 metres of ascent over 4.11 km from Skjellesvika: the tractor road from the harbour, the broad, gentle east ridge — and the cairn at 987, the summit the source calls 800 and the register measures higher.",
+    },
+  },
   nona: {
     intro:
       "1024 metres of ascent over 5.41 km from Dale to Grytøya's highest: Nona reads 1008.9 on screen against the source's 1012, and was Olav Solberg's favourite mountain according to Fri Flyt. The line follows the ski track into Dalsdalen and takes the broadest gully to the summit — the source gives the gully 30–45 degrees sustained, KAST 3 – Complex, with ice axe and crampons on the list. Grade 4 — the king of Grytøya, for stable days.",
@@ -1416,6 +1459,105 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       endLabel: "918 m",
       distanceLabel: "4.7 km",
       caption: "940 metres of ascent over 4.7 km from the Bjørnerå ferry quay: Bjørnrådalen to 450, the ridge over the shoulder at 757 — and the summit push on foot, 36.4 degrees at its steepest between 875 and 908 m.",
+    },
+  },
+  klaptinden: {
+    intro:
+      "839 metres of ascent over 3.83 km from Himmelberget to Klåptinden — 997.6 on screen against the published 998, and a start that already sits at 175 m: the fv. 7804 runs high along Andørja's north coast. Up from Klåpvatnet and more or less the summer route to the top, rocky below the treeline and wind-scoured above. KAST 2 – Challenging, with forest sections around 40 degrees. Grade 3.",
+    ascent: [
+      "From the lay-by on the fv. 7804 Andørjaveien at Himmelberget — 175 m, and the source quotes the road number itself — the line rounds south of Klåpvatnet at 177: the lake is passed on dry land, and the treeline sits at 359 after 1.04 km. The source warns: rocky down here when the snow is thin — keep right (south) if the cover does not carry.",
+      "The summer route stands in the line at 375, and the band from 400 to 500 measures 18.3 degrees through the upper forest — this is where the source's sections around 40 degrees live in the fall line, while the track crosses more gently.",
+      "The ridge from 674 and up: the band from 800 to 900 is the steepest on average at 21.3 degrees, and the steepest single step, 26.0 degrees between 806 and 828 m, sits right below the often wind-scoured summit at 998.",
+    ],
+    descent: [
+      "The ridge home at 20–30 degrees, says the source — the NW flank, where the route lies, is the gentle probe at 14.3 degrees on average. Splendid skiing and a very fine view in good snow winters, the source promises.",
+      "The south side towards Vassmyran at Vasskarvatnet is the variant: 30–40 degrees, steeper and usually better snow. NE and E off the cairn fall 47.2 and 37.1 on average with windows of 68.6 and 71.1 — those edges are not for skiing, and in fog you need to know where they are.",
+    ],
+    avalanche: [
+      {
+        title: "The forest slope",
+        body: "The source's sections around 40 degrees sit in the forest — steep enough to carry slab, with rocky ground that makes thin cover a surface-and-injury problem, not just an avalanche problem. Keep right (south) when the snow is thin, as the source says.",
+      },
+      {
+        title: "The edges",
+        body: "The NE flank falls 47.2 degrees on average with a 68.6 window and the east side 37.1 with 71.1 right below the cairn — the summit is often wind-stripped, and crust towards those edges is where to stay awake. The south-side variant (30–40 degrees) demands stable snow.",
+      },
+      {
+        title: "Before you go",
+        body: "Klåptinden sits in the Sør-Troms forecasting region, an A-region with a daily avalanche bulletin — the third round running where every summit answers to the same region. Check varsom.no. The February–April season is Fri Flyt's. Transceiver, probe and shovel.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "175 m",
+      endLabel: "998 m",
+      distanceLabel: "3.8 km",
+      caption: "839 metres of ascent over 3.83 km from Himmelberget: south of Klåpvatnet on dry land, the summer route from 375 — and the ridge from 674 to the wind-scoured summit at 998.",
+    },
+  },
+  toppen: {
+    intro:
+      "721 metres of ascent over 2.64 km from Toppentunnelen to Toppen — 758.6 on screen against the published 759, and Grytøya's seventh tour in the app: the island that began with Nona is now complete from Dale to Skjellesvika. The east side of Hallevikelva, south of Toppskarvatnet on dry land, and the ridge south. KAST 3 – Complex with ice axe and crampons; the route crosses avalanche terrain. Grade 4.",
+    ascent: [
+      "From the lay-by on the fv. 7756 Toppsundveien just before Toppentunnelen — 40 m; the source's F15 is today's county road, the archive's fourth road-renumbering note — the line climbs the east side of Hallevikelva: the treeline already at 278 after 0.68 km, and the steepest single step, 29.2 degrees between 154 and 179 m, sits in the first slope.",
+      "The band from 200 to 300 is the steepest on average at 21.1 degrees, up towards 336 where the corridor stands in the valley side. The source is honest about the valley: terrain traps in Hallevikelva — the variant via Dale and Nonskarvatnan carries lower exposure.",
+      "South of Toppskarvatnet on dry land — 516 m, the tarn lies at 489 — and the ridge south from 611 to the cairn at 759. The band above 700 measures 19.9 degrees in the final slope.",
+    ],
+    descent: [
+      "The same way down — and hold north: the N flank towards Toppskarvatnet is the only gentle probe at 12.7 degrees on average. S, SW and W fall 50.8–56.5 degrees on average with windows of 70.4–76.7 — Rakkrenna and the sea cliffs, and the SW radial reaches the sea itself.",
+      "Rakkrenna in the south-west is the expert line: 40–50 degrees to sea level when the snow allows, with an abseil in at around 500. That is another tour, for other days — the normal route goes back via Toppskarvatnet.",
+    ],
+    avalanche: [
+      {
+        title: "The Hallevikelva valley",
+        body: "The route crosses avalanche terrain, and the valley holds terrain traps — the source's own words, and the reason for KAST 3 – Complex. The variant via Dale and Nonskarvatnan carries lower exposure and is the answer on days with uncertain snow.",
+      },
+      {
+        title: "The southern edges",
+        body: "S/SW/W fall 50.8–56.5 degrees on average with windows up to 76.7 — the mountain plunges into the sea on three sides. In fog the bearing from the cairn is north, towards Toppskarvatnet: everything else ends in Rakkrenna ground.",
+      },
+      {
+        title: "Before you go",
+        body: "Toppen sits in the Sør-Troms forecasting region, an A-region with a daily avalanche bulletin — the third round running where every summit answers to the same region. Check varsom.no. The February–April season is Fri Flyt's. Transceiver, probe and shovel — and ice axe and crampons where the source demands them.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "40 m",
+      endLabel: "759 m",
+      distanceLabel: "2.6 km",
+      caption: "721 metres of ascent over 2.64 km from Toppentunnelen: the east side of Hallevikelva, south of Toppskarvatnet at 516 — and the ridge south from 611 to the cairn at 759.",
+    },
+  },
+  "middagstinden-andorja": {
+    intro:
+      "618 metres of ascent over 2.95 km from Slettneset to Middagstinden på Andørja — 630.3 on screen against the published 629, and the app's fourth qualified name duplicate, after Romsdal, Kvæfjord and the Tjeldsund area. A short tour, KAST 1 – Simple on the normal route — but the source is unusually blunt: avalanches have run on every descent it describes. Grade 2, and the bulletin weighs heaviest.",
+    ascent: [
+      "From the road end on Langnesveien at Slettneset — 12 m — the summer route heads south: 93 m where the line stands in it, and the treeline at 377 after 1.84 km. The band from 0 to 100 measures 6.0 degrees over the first short kilometre.",
+      "Right (west) and up along Mølnelva clear of the steep sections, as the source asks — 380 m where the line is anchored. The bands from 100 to 400 run evenly at 15.4–16.4 degrees: steady skinning in open hillside.",
+      "The ridge that begins north of the summit from 508: the band from 500 to 600 is the steepest on average at 18.5 degrees, and the steepest single step, 28.2 degrees between 514 and 538 m, sits where the ridge rears. The cairn stands at 630 — and the SE probe keeps rising gently: the ridge continues towards Middagsaksla.",
+    ],
+    descent: [
+      "The normal descent runs north-east off the summit and west of Remmelbergan along Mølnelva back to Slettneset — slopes of 30 degrees belong to it, and the N/NW flanks average 17.5–18.0 degrees.",
+      "The Bjørndalen variant — south-west along the ridge to Middagsaksla and north down — is KAST 3: 30–40 degrees at first, with exposed 40-degree ground and documented avalanche activity. SW and W off the cairn fall 35–36 on average with a 58.9 window: the Mølnelva side's edges.",
+    ],
+    avalanche: [
+      {
+        title: "Every descent",
+        body: "Avalanches have run on every descent described here, the source says outright — naturally triggered and skier-triggered, in recent years. The KAST 1 class covers the terrain shape of the normal route; the history covers the mountain. Read the bulletin as if the tour were graded harder.",
+      },
+      {
+        title: "The wind transport",
+        body: "The south-west to north-east orientation means south-west wind loads the north-east side — exactly where the normal descent runs. After wind, the fresh slab in the descent is the problem, not steepness: 28.2 degrees is the steepest single step on the whole line.",
+      },
+      {
+        title: "Before you go",
+        body: "Middagstinden sits in the Sør-Troms forecasting region, an A-region with a daily avalanche bulletin — the third round running where every summit answers to the same region. Check varsom.no. The February–April season is Fri Flyt's. Transceiver, probe and shovel.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "12 m",
+      endLabel: "630 m",
+      distanceLabel: "3.0 km",
+      caption: "618 metres of ascent over 2.95 km from Slettneset: the summer route south, up along Mølnelva from 380 — and the ridge north of the summit from 508 to the cairn at 630.",
     },
   },
   skartinden: {
@@ -1688,6 +1830,39 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       endLabel: "848 m",
       distanceLabel: "3.8 km",
       caption: "827 metres of ascent over 3.82 km from Breivoll: the tractor road to the junction at 68, up Skogsheia from 514 — and a nearly straight line to the cairn at 848, with 21.9 degrees as the steepest single step.",
+    },
+  },
+  lasselitinden: {
+    intro:
+      "863 metres of ascent over 3.62 km from Storelva's outlet to Lasselitinden on western Rolla — 895.8 on screen against the published 896. Rollryggen: up the hillside from the fv. 848 and the south ridge to the top at 20–30 degrees. KAST 2 – Challenging with ice axe and crampons — grade 3 by the Gråfjell rule, and Djupedalen's cornices are the reason to hold the track.",
+    ascent: [
+      "From the small car park below the fv. 848 where Storelva runs into the sea — 39 m — the line climbs the hillside eastward: the treeline sits at 327 after 1.62 km, and the band from 0 to 100 measures 4.4 degrees along the river before the slope begins.",
+      "Up the hillside to 435 and onto Rollryggen from 682: the band from 500 to 600 is the steepest on average at 24.2 degrees, and the steepest single step, 31.3 degrees between 565 and 597 m, sits in the entry to the ridge.",
+      "The south ridge towards the top from 798 — skiing for newcomers on stable days, says the source about the ridge, and the probe agrees: Rollryggen from the south reads 15.0 degrees on average. The cairn stands at 896, and N/NW keep rising gently — the ridge continues.",
+    ],
+    descent: [
+      "The same ridge home: 20–30 degrees with the source. The west side towards Brustindvatnet at 629 is the gentle variant; Heimerdalen (30–40) asks more, and Djupedalen (45–50, often a cornice to jump) is for the experienced on chosen days.",
+      "The NE flank falls 29.7 degrees on average with a 51.7 window 190–250 m out — that is where Djupedalen and the cornices belong. Hold the ridge in fog: the north-east edges arrive before you see them.",
+    ],
+    avalanche: [
+      {
+        title: "The cornices",
+        body: "Cornices are the recurring theme on Lasselitinden — the Djupedalen variants often start with a cornice drop, and the NE flank reads 51.7 in its steepest window. The axe and crampons on the list are for crust on the ridge; the distance to the edge is your own.",
+      },
+      {
+        title: "The variants",
+        body: "Heimerdalen (30–40 degrees) and Djupedalen (45–50) are avalanche terrain that demands stable snow — Rollryggen at 20–30 is the line that always goes, and the west side towards Brustindvatnet is the way out when weather closes the ridge.",
+      },
+      {
+        title: "Before you go",
+        body: "Lasselitinden sits in the Sør-Troms forecasting region, an A-region with a daily avalanche bulletin — the third round running where every summit answers to the same region. Check varsom.no. The February–April season is Fri Flyt's. Transceiver, probe and shovel — and ice axe and crampons where the source demands them.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "39 m",
+      endLabel: "896 m",
+      distanceLabel: "3.6 km",
+      caption: "863 metres of ascent over 3.62 km from Storelva's outlet on the fv. 848: up the hillside to 435, Rollryggen from 682 — and the south ridge to the cairn at 896, with the steepest single step, 31.3 degrees, in the entry.",
     },
   },
   hemmestadfjellet: {

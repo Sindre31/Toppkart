@@ -1414,5 +1414,45 @@
     "summit_dtm": 830.8,
     "claims": 834,
     "stored_off_km": 0.01
+  },
+  "klaptinden": {
+    "name": "Klåptinden",
+    "lat": 68.9085,
+    "lng": 17.27856,
+    "summit_dtm": 997.6,
+    "claims": 998,
+    "stored_off_km": 0.45
+  },
+  "middagstinden-andorja": {
+    "name": "Middagstinden",
+    "lat": 68.88625,
+    "lng": 17.15247,
+    "summit_dtm": 630.3,
+    "claims": 629,
+    "stored_off_km": 0.04
+  },
+  "lasselitinden": {
+    "name": "Lasselitinden",
+    "lat": 68.74548,
+    "lng": 16.90057,
+    "summit_dtm": 895.8,
+    "claims": 896,
+    "stored_off_km": 0.01
+  },
+  "toppen": {
+    "name": "Toppen",
+    "lat": 68.90812,
+    "lng": 16.40556,
+    "summit_dtm": 758.6,
+    "claims": 759,
+    "stored_off_km": 0.0
+  },
+  "skjellesvikgalten": {
+    "name": "Skjellesvikgalten",
+    "lat": 68.92499,
+    "lng": 16.54688,
+    "summit_dtm": 987.0,
+    "claims": 987,
+    "stored_off_km": 0.0
   }
 }

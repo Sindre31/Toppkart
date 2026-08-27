@@ -201,4 +201,10 @@ NEW_TOURS = {
     "helligtinden": ("Helligtinden", "Harstad"),
     "siriskolten": ("Siriskolten", "Harstad"),
     "sebortinden": ("Sebortinden", "Vesterålen"),
+    # — Øyrest-runden —
+    "klaptinden": ("Klåptinden", "Harstad"),
+    "middagstinden-andorja": ("Middagstinden på Andørja", "Harstad"),
+    "lasselitinden": ("Lasselitinden", "Harstad"),
+    "toppen": ("Toppen", "Harstad"),
+    "skjellesvikgalten": ("Skjellesvikgalten", "Harstad"),
 }
