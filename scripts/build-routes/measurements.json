@@ -2419,7 +2419,7 @@
   "kvasstinden": [
     {
       "what": "Alle kantar ved toppen (Kvasstinden)",
-      "figure": "E er slakast med 15,9° i snitt, så V og NE på 21,2–21,3 — vestryggen ruta går. SV er brattast med 38,7 i snitt, og SE har 56,9 400–460 m ute. V sitt brattaste vindauge, 44,6 90–150 m ute, er dei siste høgdemetrane kjelda seier ein går",
+      "figure": "E er slakast med 15,9° i snitt, så V og NE på 21,2–21,3 — vestryggen ruta går. SV er brattast med 38,7° i snitt og eit 53,8-vindu 60–120 m ute, og SE har 56,9 400–460 m ute. V sitt brattaste vindauge, 44,6 90–150 m ute, er dei siste høgdemetrane kjelda seier ein går",
       "how": "flank_probe.py <lat> <lng> --out 500 --step 10 (600 for Årbostadtinden) frå toppkoordinaten i summits.json, åtte peilingar over DTM1. Snittet er heile radialen; vindauget er det brattaste 60-metersvinduet langs den."
     }
   ],

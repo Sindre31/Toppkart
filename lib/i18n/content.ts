@@ -379,11 +379,11 @@ export const TOUR_TEASER_EN: Record<string, string> = {
   skjellesvikgalten:
     "1020 metres of ascent from Skjellesvika: the tractor road from the harbour and the broad, gentle east ridge west — to the summit the source calls 800 and the register measures at 987.",
   lakselvtindan:
-    "810 metres of ascent from the Møysalen car park on the E10: the north shore of Storvatnet, up between Tverrelva and Lakselva, past spot height 258 — and the ridge east of Lakselva to the top, the gentlest summit of the round.",
+    "820 metres of ascent from the Møysalen car park on the E10: the north shore of Storvatnet, up between Tverrelva and Lakselva, past spot height 258 — and the ridge east of Lakselva to the top, the gentlest summit of the round.",
   forkledalstindan:
-    "1010 metres of ascent from the E10 at Litlvatnet: the north side of spot height 462 and the mountainside up to the 700 m top where the source's ski tour turns — and the traverse on over the fore-summit, with the east side as the way round the hard climbing.",
+    "1020 metres of ascent from the E10 at Litlvatnet: the north side of spot height 462 and the mountainside up to the 700 m top where the source's ski tour turns — and the traverse on over the fore-summit, with the east side as the way round the hard climbing.",
   forselvtinden:
-    "1170 metres of ascent and 8.5 km from the Lofast, over the summit of another tour in the catalogue: up Lakselvtindan first, west to due north of spot height 790 — and the south ridge at the end, with 284 metres given back along the way.",
+    "1180 metres of ascent and 8.3 km from the Lofast, over the summit of another tour in the catalogue: up Lakselvtindan first, west to due north of spot height 790 — and the south ridge at the end, with 296 metres given back along the way.",
   kvasstinden:
     "930 metres of ascent from the E10 at Austerstraumen: the bogs south, down into Trolldalen north of spot height 146 — and the west ridge to an airy summit, where 20–25 degrees is the rule and the axe is for the last few metres.",
   arbostadtinden:
@@ -1471,6 +1471,39 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       caption: "940 metres of ascent over 4.7 km from the Bjørnerå ferry quay: Bjørnrådalen to 450, the ridge over the shoulder at 757 — and the summit push on foot, 36.4 degrees at its steepest between 875 and 908 m.",
     },
   },
+  arbostadtinden: {
+    intro:
+      "1171 metres of ascent in 3.98 km from the fv. 7804 to Årbostadtinden — and a single metre given back on the whole line. The slanting couloir to the top is the landmark here, the one many have skied both early and late in the season, and Fri Flyt holds it «mostly between 30 and 40 degrees». KAST 3 – Complex with ice axe and crampons: grade 4.",
+    ascent: [
+      "From the lay-by on the fv. 7804 where Storelva reaches the sea — 9 m — the line follows the tractor road winding south from the old school: 52 m where the corridor stands in it. The whole route is mapped as a path in OpenStreetMap, from the road to 40 metres from the cairn, and the terrain model along it gives exactly the 1170 metres of ascent the source states.",
+      "On upward on the right-hand — western — side of Storelva: 327 m, and the forest lets go at 386 after 1.12 km. Past the treeline at 593 and up onto the flat by the cabin, 689 m, where the mountain finally shows itself. The band from 600 to 700 is the gentlest on the whole line at 8.4 degrees over 674 metres of ground — that is the flat, and that is where you see what is left.",
+      "Then the couloir: 978 m where the corridor is anchored, and the band from 900 to 1000 is the steepest on average at 23.5 degrees over 244 metres of ground. The steepest single step, 29.0 degrees, sits between 901 and 924 m — inside the couloir. The cairn is 1179, and the view runs to Senja and Dyrøy.",
+    ],
+    descent: [
+      "Down the couloir the same way. The source tells of a freerider who skied the whole couloir straight down during one of Andørja's freeride competitions; for most people it is 30–40 degrees steadily from the top, and spring snow lies in the couloir into May and June.",
+      "The south side is the other way down: on the flat before Rundtinden you find the easiest descent southward, in steep ground of 30–45 degrees, to the road that ends at Vasskaret. North and north-east are not a way back — the flank sweep measures 49.2 to 50.3 degrees on average there, with windows of 66.8 and 74.7.",
+    ],
+    avalanche: [
+      {
+        title: "The couloir",
+        body: "The couloir is the tour, and it is also what makes it KAST 3 – Complex. It holds 30–40 degrees most of the way, it collects whatever comes from above, and it offers no way off to the side: if it goes, it goes where you are standing. The snow has to be stable, and ice axe and crampons are on the source's list for the same reason.",
+      },
+      {
+        title: "The rest of the mountain",
+        body: "Only the south-west is mild: 22.1 degrees on average with 29.6 as its steepest window, and west 30.7 with 37.1 — the source's large west-facing flank at the top of the mountain. North and north-east measure 49.2 and 50.3 on average with windows of 66.8 and 74.7, and east 62.4 only 20 to 80 metres out. There is one way up and down from here.",
+      },
+      {
+        title: "Before you go",
+        body: "Årbostadtinden sits in the Sør-Troms forecasting region, an A-region with a daily avalanche bulletin through the season. Check varsom.no. The February–April season is Fri Flyt's, but the couloir holds spring snow long after that. Transceiver, probe and shovel — and ice axe and crampons. An empty page does not mean a safe mountain.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "9 m",
+      endLabel: "1179 m",
+      distanceLabel: "4.0 km",
+      caption: "1171 metres of ascent in 3.98 km from Årbostad: the tractor road from the old school, west of Storelva to the flat by the cabin — and the slanting couloir to the cairn at 1179.",
+    },
+  },
   klaptinden: {
     intro:
       "839 metres of ascent over 3.83 km from Himmelberget to Klåptinden — 997.6 on screen against the published 998, and a start that already sits at 175 m: the fv. 7804 runs high along Andørja's north coast. Up from Klåpvatnet and more or less the summer route to the top, rocky below the treeline and wind-scoured above. KAST 2 – Challenging, with forest sections around 40 degrees. Grade 3.",
@@ -2451,6 +2484,39 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       caption: "1596 metres of climbing from the E10 at Litlvatnet to 1264 m, 355 of them given back along the way and a 51-metre notch in the summit ridge.",
     },
   },
+  forselvtinden: {
+    intro:
+      "1180 metres of ascent over 8.29 km from the Møysalen car park on the E10 to Forselvtinden — the longest tour of the round, and the only route in the app that crosses the summit of another tour on the way. The source's own description opens with «follow the route up Lakselvtindan», and it is 747 m you stand on before carrying on west. 296 of those metres you give back. Fri Flyt gives KAST 2 – Challenging, but asks you to consider whether the skis should come up: grade 4.",
+    ascent: [
+      "From the car park — 23 m — as on Lakselvtindan: the north shore of Storvatnet at 85, north of spot height 258, and 217 m where Lakselva is crossed eastward. The forest lets go at 220 m after 2.48 km, and the band from 300 to 400 is the steepest on average at 19.0 degrees over 313 metres of ground.",
+      "Up onto Lakselvtindan, 747 m, and then west along the ridge until you stand due north of spot height 790 — DTM1 measures 790.6, and the corridor stands at 754 just north of it. Between 700 and 800 m lie two kilometres of near-flat high ground: the band measures 2.1 degrees on average over 1955 metres of ground.",
+      "Carrying on north the route keeps to the lower — western — side of the ridge, 668 m where the corridor is anchored, because there are steep sections just before the climb begins. Then the south ridge: the steepest step on the whole line, 39.0 degrees, sits between 843 and 879 m, right under the cairn at 907.",
+    ],
+    descent: [
+      "The same way home, mostly under 20 degrees with a couple of sections at 25–30, says the source. But the way home is a second ascent too: the 296 metres you gave back have to be taken again, and Lakselvtindan stands in the way once more.",
+      "The flank sweep explains why the south ridge is the only way up and down. S measures 22.5 degrees on average with a 40.8 window 70 to 130 metres out — the steep section the source names. N, NE, W and NW run 46.9 to 48.6 on average with windows from 60.6 to 75.9, and east holds 76.8 only 30 to 90 metres out.",
+    ],
+    avalanche: [
+      {
+        title: "The section before the summit",
+        body: "The source calls the south ridge a fine airy stretch with one steep section before the top, and asks you to consider whether the skis should come up. The measurement agrees: 40.8 degrees in the window 70 to 130 metres out, and 39.0 degrees in the steepest single step the line actually takes, between 843 and 879. Crampons and an ice axe are recommended, and many carry the skis for the last part.",
+      },
+      {
+        title: "The west side of the ridge",
+        body: "Going north along the ridge you keep to the lower side, which is the west. The source is explicit about why: there are steep sections just before the climb onto the ridge towards Forselvtinden begins, and the line goes round them rather than over. East of the ridge the ground falls at 76.8 degrees in its steepest window.",
+      },
+      {
+        title: "Before you go",
+        body: "Forselvtinden sits in the Lofoten og Vesterålen forecasting region, an A-region with a daily avalanche bulletin through the season. Check varsom.no. The February–April season is Fri Flyt's, and 8.29 km with 296 metres to regain makes this a tour where the hour of the day decides what snow you meet on the way back. An empty page does not mean a safe mountain.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "23 m",
+      endLabel: "907 m",
+      distanceLabel: "8.3 km",
+      caption: "1180 metres of ascent over 8.29 km from the Lofast: over Lakselvtindan at 747, west to north of spot height 790 — and the south ridge to the cairn at 907.",
+    },
+  },
   middagsfjellet: {
     intro:
       "762 metres of ascent over 2.91 km from the Gullesfjordbotn roundabout — the round's shortest tour, and an exercise in choosing right: the normal route stays under 30 degrees the whole way, with 20.6 as its steepest band and 27.3 as its steepest stretch, while the surrounding ground measures 30–40 and the west side toward Storskardet 54.4 at its steepest. KAST 3 – Complex by Fri Flyt, precisely because the gentlest line is surrounded by steeper.",
@@ -2549,6 +2615,72 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       endLabel: "979 m",
       distanceLabel: "6.3 km",
       caption: "1048 metres of ascent over 6.31 km from Mølnneset: the ridge above Spannbogen at 246, the slope before 600 — and the east ridge from 605 to the narrow summit at 979, with the summer route on the south side as the way past.",
+    },
+  },
+  forkledalstindan: {
+    intro:
+      "1024 metres of ascent over 5.59 km from the E10 at Litlvatnet to Forkledalstindan — a tour that changes character halfway. Fri Flyt gives the south side KAST 2 – Challenging up to the 700 m top, where many turn round and ski down; the traverse on to the main summit at 901 is KAST 3 – Complex, with downclimbing on snow or rock depending on conditions. The source's «700 metres of ascent» is the ski tour, not the mountain. Grade 4.",
+    ascent: [
+      "From the car park at Ingelsfjordeidet — 23 m — the same start as Lakselvtindan: the north shore of Storvatnet at 85, and up to north of spot height 258. The line keeps to land where the source crosses the ice, as the book's own Forkledalen route from this car park does.",
+      "From there the climb goes west through the gentlest ground, over the north side of spot height 462 — DTM1 measures 461.1 — at 400 m where the corridor stands, and on up the mountainside at 509. The forest lets go at 226 m after 2.44 km, and the band from 400 to 500 is the steepest on average at 18.6 degrees over 279 metres of ground.",
+      "The 700 m top — 707 m on the line — is where the source's ski tour ends. The traverse on over the fore-summit is the alpine part: the steepest single step on the route, 39.9 degrees, sits between 702 and 728 m, just after the ridge begins. The last stretch to the cairn at 901 is best taken on the east side to begin with, says the source — that is where you avoid the hard climbing.",
+    ],
+    descent: [
+      "146 of the 1024 metres you give back along the way. Many start the descent from the 700 m top already, in gentle ground with one steep pitch that can be skirted, and that is the tour the source's ascent figure describes.",
+      "From the main summit the north-west side is the line: it starts between 902 and the south top and is 20–25 degrees with 30–40 degree pitches lower down. The north-east side is 30–40 degrees and eventually joins the west route to Lakselvtindan down into Forkledalen. Both run exposed to avalanches from higher ground almost the whole way.",
+    ],
+    avalanche: [
+      {
+        title: "The traverse",
+        body: "From 700 to 901 the rating is KAST 3 – Complex. Depending on the snow you may have to downclimb a little on snow or rock to get through, and the last part is very steep and exposed: the steepest step measures 39.9 degrees between 702 and 728. The source shows a photograph of a slab avalanche close under the summit, and writes that a great deal of snow is set in motion and it is easy to be buried.",
+      },
+      {
+        title: "Every side is steep",
+        body: "The flank sweep finds a window between 37.7 and 60.0 degrees within the first 100 metres of the cairn on all eight bearings. North-east is the mildest at 37.7 and 23.5 on average; south-west is gentle for the first 340 metres and then holds 46.4. The pitch down from spot height 790 to lake 355 on the north side is KAST 3 in the source's own assessment.",
+      },
+      {
+        title: "Before you go",
+        body: "Forkledalstindan sits in the Lofoten og Vesterålen forecasting region, an A-region with a daily avalanche bulletin through the season. Check varsom.no. The February–April season is Fri Flyt's. Transceiver, probe and shovel, and ice axe and crampons — here they are not a recommendation but what the traverse requires. An empty page does not mean a safe mountain.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "23 m",
+      endLabel: "901 m",
+      distanceLabel: "5.6 km",
+      caption: "1024 metres of ascent over 5.59 km from Litlvatnet: the north side of spot height 462, the mountainside to the 700 m top — and the traverse on to the cairn at 901.",
+    },
+  },
+  lakselvtindan: {
+    intro:
+      "819 metres of ascent over 5.46 km from the Møysalen car park on the E10 to Lakselvtindan — the gentlest summit of this round. The flank sweep measures 5.4 degrees on average to the north-west and 17.7 to the south-west, where the ridge arrives, and no bearing holds a window steeper than 50.4. Fri Flyt gives KAST 2 – Challenging and puts ice axe and crampons on the kit list; grade 3 comes from that kit and the crust the source warns about, not from steepness.",
+    ascent: [
+      "From the large car park at Ingelsfjordeidet — 23 m — the line runs along the north shore of Storvatnet: 85 m where the corridor is anchored. The source writes «cross Storvatnet», but the same book's own Forkledalen route from this car park says «follow the north side of Storvatnet». The map carries the land line; the ice is not a premise.",
+      "Up between Tverrelva and Lakselva — 158 m — and north of spot height 258, which DTM1 measures at 258.3. The forest lets go at 220 m after 2.53 km, and the band from 300 to 400 is the steepest on average at 20.0 degrees over 261 metres of ground.",
+      "Then it flattens out inland: 217 m where Lakselva is crossed eastward, and from there the ridge — 481 m where the corridor stands in it — all the way to the cairn at 747. The steepest single step on the whole line, 26.2 degrees, sits low down between 43 and 65 m, in the hillside above the car park.",
+    ],
+    descent: [
+      "The same ridge home. 95 of the 819 metres you give back on the way up, most of it in the flat stretch before Lakselva, and no band on the line averages more than 20.0 degrees. The source mentions crust, and ski crampons belong in the pack alongside the axe and the boot crampons.",
+      "The variants are a different matter from the normal route. Rødhammarrenna on the east side is KAST 3: the bowl west of the normal route is 30–40 degrees, then a 45-degree pitch down into the couloir, and avalanche terrain the whole way through. The west side down to lake 355 between Forselvtinden and Forkledalstinden holds a steep section of 30–40 degrees.",
+    ],
+    avalanche: [
+      {
+        title: "Rødhammarrenna",
+        body: "The east side is not the normal route. The source rates it KAST 3 and describes a 45-degree pitch down into the couloir, with avalanche terrain the whole way through because the walls around it can carry a great deal of snow. The couloir itself is 15–20 degrees with a few sections at 25–30 — it is the entry and what hangs above it, not the runout, that decides whether it slides.",
+      },
+      {
+        title: "Crust and wind",
+        body: "This is a tour where the problem is as often hard ground as unstable snow. The source asks you to bring ski crampons, and from 481 m upward the ridge is scoured and wind-packed — that is where the ice axe and crampons on the kit list belong.",
+      },
+      {
+        title: "Before you go",
+        body: "Lakselvtindan sits in the Lofoten og Vesterålen forecasting region, an A-region with a daily avalanche bulletin through the season. Check varsom.no. The February–April season is Fri Flyt's own. Transceiver, probe and shovel — and ice axe and crampons where the source demands them. An empty page does not mean a safe mountain.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "23 m",
+      endLabel: "747 m",
+      distanceLabel: "5.5 km",
+      caption: "819 metres of ascent over 5.46 km from the Lofast: the north shore of Storvatnet, up between the rivers past spot height 258 — and the ridge east of Lakselva to the cairn at 747.",
     },
   },
   siriskolten: {
@@ -2681,6 +2813,39 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       endLabel: "948 m",
       distanceLabel: "5.4 km",
       caption: "1029 metres of ascent over 5.44 km from Breivikbotn: the Krokelva cabins, Finnvatnet at 282, south-west around the avalanche terrain — and the Litletind ridge from 576 to the cairn at 948.",
+    },
+  },
+  kvasstinden: {
+    intro:
+      "933 metres of ascent over 4.08 km from the E10 at Austerstraumen to Kvasstinden — and a name Lødingen has two of. The south-eastern Kvasstinden measures 913 m in the terrain model; this one, the north-western, climbs to 831.6 against Fri Flyt's 831. The published height names the summit. KAST 1 – Simple, but with ice axe and crampons on the kit list and an airy top: grade 2.",
+    ascent: [
+      "From the large car park east of the Austerstraumen bridge — 3 m — south along the bogs on a steady rise: 146 m where the corridor stands. The book also writes «from the car park on Husjordøya», but Husjordøya lies between Vesterstraumen and Austerstraumen, and the mapped car park is east of the bridge. It is the parking line that can be checked.",
+      "The crossing into Trolldalen goes just north of spot height 146 — the terrain model measures 148.4 — at 144 m, and then the line drops into the valley to 96. 104 of the 933 metres you give back there, and those are what the source's 910 metres of ascent include that the difference between sea and summit does not. The forest lets go at 242 m after 2.17 km.",
+      "Up the valley to the south-east and onto the west ridge — 554 m where the corridor is anchored. The band from 700 to 800 is the steepest on average at 22.3 degrees over 244 metres of ground, while the steepest single step, 28.5 degrees, sits right down between 113 and 131 m. The last metres to the 832 summit are walked on the ridge from the west.",
+    ],
+    descent: [
+      "Down the same way: some sections over 30 degrees, but the great majority around 20–25, says the source. A lot of wind- and sun-affected snow is the norm, and in good conditions — especially in the afternoon in late winter, in evening light — this is the run the source praises most.",
+      "The summit itself is airy, and the source asks you to decide whether the skis are left below or carried up. The flank sweep shows why that is a question: west, where the ridge arrives, holds a 44.6 degree window 90 to 150 metres out, and south-west measures 38.7 on average. East is the gentle side at 15.9.",
+    ],
+    avalanche: [
+      {
+        title: "The north side",
+        body: "The steeper variant down from the summit is KAST 3 in the source's own assessment, with a 30–40 degree pitch off the top. It gives fine skiing in good conditions, but it is not the way you came, and it is not a choice to make on the summit without having read the snow on the way up.",
+      },
+      {
+        title: "Wind, sun and ploughing",
+        body: "A lot of wind- and sun-affected snow is the norm on this ridge, and the south-west flank below it measures 38.7 degrees on average with a 53.8 window 60 to 120 metres out. The car park is also not always ploughed early in the season — worth knowing before you drive all the way out here.",
+      },
+      {
+        title: "Before you go",
+        body: "Kvasstinden sits in the Lofoten og Vesterålen forecasting region, an A-region with a daily avalanche bulletin through the season. Check varsom.no. The February–April season is Fri Flyt's. Transceiver, probe and shovel — and ice axe and crampons, which are on the source's list even though the tour is KAST 1. An empty page does not mean a safe mountain.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "3 m",
+      endLabel: "832 m",
+      distanceLabel: "4.1 km",
+      caption: "933 metres of ascent over 4.08 km from Austerstraumen: the bogs south, down into Trolldalen north of spot height 146 — and the west ridge to the airy 832 summit.",
     },
   },
   rombakstotta: {

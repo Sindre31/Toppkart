@@ -4412,6 +4412,174 @@ tours — the gitignored working file had vanished with the container.
 `lib/routes.ts` and the five were merged back over it; the emitted
 files, not the cache, are the source of truth.
 
+## The Møysalen round
+
+Five more, and for the first time the round is a *chapter* rather than a
+district: chapter 9 of the Harstad book, «Møysalen nasjonalpark og omegn»,
+the last unopened stretch of the Lofast corridor. Lakselvtindan,
+Forkledalstindan and Forselvtinden all start from the big E10 car park
+south of Litlvatnet — the one Møysalen and Sebortinden already use, which
+now serves five tours, the largest trailhead in the app. Kvasstinden comes
+off the car park east of the Austerstraumen bridge. The fifth,
+Årbostadtinden, is not in the chapter: it is Andørja's landmark couloir,
+and it is here because three of the chapter's own candidates could not
+ship. The four Lofast summits answer to **Lofoten og Vesterålen** (3014)
+and Årbostadtinden to **Sør-Troms** (3012), both A-regions — a 4/1 split,
+like the Tjeldøya round.
+
+| tour | start | summit | gain | km | steepest 100 m band | steepest 30 m | grade |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Lakselvtindan | 23 | 747 | 819 | 5.5 | 20.0° | 26.2° | 3 |
+| Forkledalstindan | 23 | 901 | 1024 | 5.6 | 18.6° | 39.9° | 4 |
+| Forselvtinden | 23 | 907 | 1180 | 8.3 | 19.0° | 39.0° | 4 |
+| Kvasstinden | 3 | 832 | 933 | 4.1 | 22.3° | 28.5° | 2 |
+| Årbostadtinden | 9 | 1179 | 1171 | 4.0 | 23.5° | 29.0° | 4 |
+
+**The summit search went five for five within 3.3 m** — 747.0 against 748,
+900.7 against 902, 906.7 against 906, 831.6 against 831 and 1179.4 against
+1179. No `SUMMIT_SEED`, no forensics, the cleanest round since Ibestad.
+
+### `avoidWater` did not survive the merge, and never had
+
+The round's real finding is a bug the pipeline had been carrying since the
+flag existed. `merge_corridors.route_rec()` builds the shipped corridor by
+listing the keys it copies — id, name, description, trailhead, waypoints,
+source, notes — and `avoidWater` was not among them. So the flag could be
+declared in `new_corridors.json`, which is where the *research* records
+«the source crosses the ice, the line keeps to land», and be silently
+dropped on the way to `corridors.json`.
+
+It was never noticed because it was always repaired by hand. Ten corridors
+carried the flag before this round; every one of them got it typed into
+`corridors.json` after `check_ground.py` had already reported the line
+skiing a lake. The manual fix looked like the workflow.
+
+This round declared it on four corridors and produced the same failure
+twice: **Lakselvtindan came back with 665 m of Storvatnet under it and
+Forkledalstindan with 710 m**, both at 10 moh — up to 76 m and 62 m from
+the mapped shore respectively, so not a clipped corner but the lake. The
+fix belongs in the builder, and is there now. The re-solve gave
+0 m on water on all four, with 3 + 2 + 5 vertices moved and 11 inserted
+between them — and Kvasstinden, which declared the flag and never needed
+it, moved nothing.
+
+**The book settles its own contradiction about that lake.** Fri Flyt's
+Lakselvtindan says «kryss Storvatnet». The same book's Forkledalen route
+(9.11.1), from the same car park, says «følger man Nordsiden av
+Storvatnet». The land line is not our invention — it is the other page.
+
+### Two Kvasstinden, and the published height names the right one
+
+Lødingen has two register entries called Kvasstinden 4.3 km apart. The
+north-western climbs to 831.6 in DTM1; the south-eastern to 913. Fri Flyt
+publishes 831, so the tour is the north-western one, and the search
+resolves it to within 0.6 m without a seed. This is the Melåaksla
+mechanism — published height picking one real top out of several — and the
+exact inverse of Skjellesvikgalten, where the published height named no
+top at all.
+
+**Its trailhead is one the book gets wrong twice over.** The Startsted
+line reads «stor parkeringsplass langs E10 på østsiden av brua over
+Austerstraumen» and the route text opens «fra parkeringa på Husjordøya».
+Both cannot hold: Husjordøya sits *between* Vesterstraumen and
+Austerstraumen, and the mapped car park (OSM way/179095783, DTM1 3.0 moh)
+is east of the Austerstraumen bridge, on the mainland shore. The corridor
+follows the parking line, because that is the one that can be checked.
+
+### A published vertical that belongs to a shorter tour
+
+Fri Flyt gives Forkledalstindan «Høydemeter: 700», and the routed line
+climbs 1024. Both are right about different tours. Route 9.6.1 is KAST 2
+up to «topp som er på 700 meter» — 706.7 in DTM1, and «mange starter
+nedkjøringen herfra». Reaching the 901 summit means 9.6.3 Traversen, KAST
+3, with downclimbing on snow or rock. The card carries the mountain; the
+guide says in its first sentence that the source's figure is the ski tour.
+
+The flank sweep is why it grades 4 rather than 2: **all eight bearings off
+Forkledalstindan hold a 37.7–60.0° window inside the first 100 m of the
+cairn**. Ristinden was the previous worst case and had every *mean* above
+26°; this one has no gentle first hundred metres in any direction at
+all. The router still solved it — 39.9° in the steepest 30 m window,
+under the 45° wall — because the line crosses the ridge at a slant where
+the fall line does not, the Kråkrøtinden pattern again.
+
+### The first route that summits another tour
+
+Forselvtinden's own description begins «følg ruta opp på Lakselvtindan»,
+so the line goes over a summit that is itself a card in this app — the
+first time that has happened. It is also the round's longest at 8.29 km
+and gives back 296 m of the 1180 it climbs, which is what Fri Flyt's 1050
+against 884 m of net height was always describing. Møysalen, from the same
+car park, gives back 355; undulation is the neighbourhood.
+
+Between 700 and 800 moh the line crosses **1955 m of ground at 2.1°** —
+two kilometres of near-flat plateau, and the gentlest 100 m band on any of
+this round's five lines.
+
+### Årbostadtinden, mapped end to end
+
+The fifth is the one tour of the round whose whole route is already in
+OpenStreetMap: path way/227135840 runs from fv. 7804 at Storelva's outlet
+to 40 m from the cairn. DTM1 along it reads 9 → 44 → 327 → 531 → 593 →
+630 → 689 → 726 → 813 → 978 → 1174, monotonic, and 1170 m of gain —
+*exactly* Fri Flyt's published figure. The routed line gives 1171 m with
+**one metre of give-back over 3.98 km**: six tours in the app climb with no
+give-back at all, but none of them climbs this much.
+The source's «hold til høyre for Storelva» checks out too: the mapped path
+runs west of the stream (OSM way/374887831) the whole way.
+
+Its flanks say there is one way up: SW 22.1° mean, W 30.7°, and then N
+49.2°, NE 50.3° with 66.8 and 74.7° windows. The couloir is the tour.
+
+### Three turned away
+
+- **Durmålstinden (1005)** and **Svartskardtindan (833)**, both in the
+  chapter. Durmålstinden's only line is Sydrenna, KAST 3, whose narrowest
+  part is «50 + grader» and usually iced, with a 60 m rope, a rack and
+  snow anchors on the list. Svartskardtindan asks for ~50° climbing with
+  rope and possible rappel. Same answer as Åtinden last round: outside the
+  app's route envelope, and the honest reply is to say so.
+- **Viktindan (825)**, which failed for a different reason and is worth
+  recording because the evidence looked good. The book gives it **no
+  Startsted at all** — the only tour in the chapter without one. Three
+  independent sources filled that gap: the E10 lay-by is mapped (OSM
+  way/179095787), it sits 660 m from Trolldalen's own register point, and
+  the DTM shows the valley bending east exactly where the source says
+  «følg denne til den dreier østover». The flank sweep even settles the
+  side — N 4.8° mean over 500 m against S 44.7° and SW 49.5°. What none of
+  them settle is the three kilometres between that bend and the summit,
+  which the source does not describe in any way. A corridor there would be
+  drawn, not read, and this pipeline's rule is that only documented routes
+  get a line.
+
+### A number that outlived its source
+
+`check_guides.py` was clean on the five new guides on the first run, and
+red on fourteen numbers across seven older ones — none of them touched
+this round. The cause was not a regression in the prose but in what the
+checker could see.
+
+Twelve of the fourteen were the same figure in different guides: the
+distance at which the forest lets go. `guide_facts.py` measures and prints
+both halves of the treeline — «419 moh etter 3,24 km» — but
+`allowed_values()` listed only the metres. Forty-four guides had a hand-written
+`problems` note carrying the kilometres and seven did not, and the
+difference was who was writing that week, not whether the figure was
+measured. `last_forest_km` is listed now, and those twelve are sourced by
+the table that produced them.
+
+The last two are one number and are left standing: Taraldsviktinden's
+guide puts a stone tunnel «på rundt 450 moh». Its source was an agent
+transcript under `/root/.claude/projects/…`, which `enrich_facts.py` reads
+and which does not exist in a fresh container — so the figure is
+unverifiable here rather than wrong. Overpass knows no tunnel on that
+flank at that height; the nearest is Norddalstunnelen, 1.7 km north-west
+at 362 m. Deleting a possibly-correct sentence on the strength of a
+missing cache would be worse than reporting it, so it is reported: **175
+guides, one number outstanding, on a tour from the Tjeldsund round.** The
+general lesson is the same one `measurements.json` was created for — a
+figure whose only home is a transcript has no home.
+
 ## Network
 
 Everything is public and unauthenticated:
