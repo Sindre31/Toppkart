@@ -4357,6 +4357,61 @@ moysalen corridor's trailhead verbatim — same coordinates, same OSM
 evidence — the first shared trailhead across rounds since the four
 Dale tours on Grytøya.
 
+## The island-completion round
+
+Five from the Harstad book that close out three islands: Klåptinden and
+Middagstinden på Andørja (the app's fourth qualified name duplicate),
+Lasselitinden on western Rolla, and Toppen and Skjellesvikgalten, which
+make Grytøya complete — seven tours from Dale to Skjellesvika on the
+island that began with Nona. Third consecutive round where every summit
+answers to Sør-Troms. One candidate was researched and turned away:
+**Åtinden (1108)** has no normal route — both of the source's lines are
+45–50° expert couloirs, outside the app's route envelope, and the honest
+answer is to say so rather than draw a line the source never described.
+
+| tour | start | summit | gain | km | steepest 100 m band | steepest 30 m | grade |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Klåptinden | 175 | 998 | 839 | 3.8 | 21.3° | 26.0° | 3 |
+| Middagstinden på Andørja | 12 | 630 | 618 | 3.0 | 18.5° | 28.2° | 2 |
+| Lasselitinden | 39 | 896 | 863 | 3.6 | 24.2° | 31.3° | 3 |
+| Toppen | 40 | 759 | 721 | 2.6 | 21.1° | 29.2° | 4 |
+| Skjellesvikgalten | 6 | 987 | 1019 | 4.1 | 21.5° | 32.8° | 4 |
+
+**A published height can name no top at all.** Fri Flyt's
+Skjellesvikgalten is «800 moh», but the register's Skjellesvikgalten
+(hovudnamn, with Storgalten as undernavn) is the 987 summit, DTM1
+agrees to the decimetre, and the east ridge holds no separate ~800 top —
+only a shoulder at ~798 on a slope that keeps rising. The inverse of the
+Melåaksla case, where the published height picked the right top out of
+three: here it picks nothing, so the card carries the register height
+and the guide says so in its first sentence.
+
+**Two lakes, two different mistakes.** The first solve clipped 51 m of
+Klåpvatnet because the corridor waypoint sat beside the lake, and
+crossed 270 m of Toppskarvatnet because the waypoint *was* the lake —
+its SSR representasjonspunkt. Both fixed the same way: waypoint moved
+ashore, `avoidWater` declared, lines re-solved dry. A tarn's register
+point is the middle of the water; a corridor should never pin it.
+
+**KAST 1 with the bluntest hazard text in the book.** Middagstinden på
+Andørja's normal route is KAST 1 – Enkelt, and the same page says
+avalanches have run on every descent it describes, naturally and
+skier-triggered. The guide gives the history more weight than the
+class — grade 2, with the wind-loading mechanism (SW wind loads the NE
+descent) spelled out.
+
+**A second memorial.** Skjellesvikgalten's south couloirs killed one
+person in February 2008; the guide carries it beside the probe numbers
+(48.7–54.6° windows), as the Trolltinden 2019 and Sebortindrenna notes
+do.
+
+**The container recycle bit once.** After an environment restart,
+`generate_routes.py` wrote a routes.json holding only the five new
+tours — the gitignored working file had vanished with the container.
+`routes_from_ts.py` rebuilt the other 165 from the emitted
+`lib/routes.ts` and the five were merged back over it; the emitted
+files, not the cache, are the source of truth.
+
 ## Network
 
 Everything is public and unauthenticated:

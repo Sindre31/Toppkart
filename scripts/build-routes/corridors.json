@@ -8712,5 +8712,197 @@
     "notes": "Fri Flyt: KAST 3 – Komplekst. Alpinøks og stegjern. Nedturen krysser skredterreng; Sebortindrenna går med skred hvert eneste år, Forkleet når opp mot 45 grader og Vinkelrenna 30–45 med svært utsatt topparti — alle er varianter, ikke normalruta."
    }
   ]
+ },
+ "klaptinden": {
+  "routes": [
+   {
+    "id": "vestsiden",
+    "name": "Vestsiden fra Klåpvatnet",
+    "description": "Fra lomma langs fv. 7804 ved Himmelberget opp fra Klåpvatnet og mer eller mindre sommerruta til topps",
+    "trailhead": {
+     "name": "Himmelberget",
+     "lat": 68.92224,
+     "lng": 17.21771,
+     "elevation_m": 175.0,
+     "fullName": "Himmelberget"
+    },
+    "waypoints": [
+     {
+      "name": "sør for Klåpvatnet",
+      "lat": 68.9218,
+      "lng": 17.2235,
+      "elevation_m": 177.1
+     },
+     {
+      "name": "sommerruta",
+      "lat": 68.919,
+      "lng": 17.24,
+      "elevation_m": 375.0
+     },
+     {
+      "name": "ryggen",
+      "lat": 68.913,
+      "lng": 17.26,
+      "elevation_m": 674.0
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: KAST 2 – Utfordrende. Steinete under skoggrensa, avblåst over; parti i skogen rundt 40 grader. Sørsida (30–40 grader) er brattare og varianten — hald til høgre om snøen er tynn.",
+    "avoidWater": true
+   }
+  ]
+ },
+ "middagstinden-andorja": {
+  "routes": [
+   {
+    "id": "fra-slettneset",
+    "name": "Fra Slettneset",
+    "description": "Fra vegenden ved Slettneset sørover etter sommerruta, opp langs Mølnelva utenom de bratte partiene, og ryggen nord for Middagstinden til topps",
+    "trailhead": {
+     "name": "Slettneset",
+     "lat": 68.90331,
+     "lng": 17.17533,
+     "elevation_m": 12.0,
+     "fullName": "Slettneset"
+    },
+    "waypoints": [
+     {
+      "name": "sommerruta",
+      "lat": 68.896,
+      "lng": 17.177,
+      "elevation_m": 93.0
+     },
+     {
+      "name": "langs Mølnelva",
+      "lat": 68.892,
+      "lng": 17.165,
+      "elevation_m": 380.0
+     },
+     {
+      "name": "ryggen nord for toppen",
+      "lat": 68.89,
+      "lng": 17.152,
+      "elevation_m": 508.0
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: KAST 1 – Enkelt på normalruta, men det har gått skred på alle nedkjøringane som er beskrivne — naturleg og skiløyparutløyste. Vindtransport frå sørvest mot nordaust byggjer ustabile lag. Bjørndalen (30–40 grader, KAST 3, med utsett 40-gradersterreng) er ei anna linje."
+   }
+  ]
+ },
+ "lasselitinden": {
+  "routes": [
+   {
+    "id": "rollryggen",
+    "name": "Rollryggen fra Storelva",
+    "description": "Fra parkeringa ved Storelvas utløp på fv. 848 opp lia og Rollryggen — sørryggen — til topps",
+    "trailhead": {
+     "name": "Storelva",
+     "lat": 68.74601,
+     "lng": 16.85079,
+     "elevation_m": 39.0,
+     "fullName": "Storelva"
+    },
+    "waypoints": [
+     {
+      "name": "opp lia",
+      "lat": 68.744,
+      "lng": 16.87,
+      "elevation_m": 435.0
+     },
+     {
+      "name": "Rollryggen",
+      "lat": 68.742,
+      "lng": 16.885,
+      "elevation_m": 682.0
+     },
+     {
+      "name": "ryggen mot toppen",
+      "lat": 68.744,
+      "lng": 16.895,
+      "elevation_m": 798.0
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: KAST 2 – Utfordrende. Alpinøks og stegjern. Rollryggen held 20–30 grader; Heimerdalen (30–40), Djupedalen (45–50, ofte skavlhopp) og vestsida mot Brustindvatnet er variantane. Skavlar langs toppryggen."
+   }
+  ]
+ },
+ "toppen": {
+  "routes": [
+   {
+    "id": "ostsiden",
+    "name": "Østsiden fra Toppentunnelen",
+    "description": "Fra lomma på fv. 7756 før Toppentunnelen opp austsida av Hallevikelva mot Toppskarvatnet, og ryggen sørover til toppen",
+    "trailhead": {
+     "name": "Toppentunnelen",
+     "lat": 68.8999,
+     "lng": 16.4199,
+     "elevation_m": 40.0,
+     "fullName": "Toppentunnelen"
+    },
+    "waypoints": [
+     {
+      "name": "austsida av Hallevikelva",
+      "lat": 68.905,
+      "lng": 16.419,
+      "elevation_m": 336.0
+     },
+     {
+      "name": "sør for Toppskarvatnet",
+      "lat": 68.9125,
+      "lng": 16.4135,
+      "elevation_m": 516.0
+     },
+     {
+      "name": "ryggen sørover",
+      "lat": 68.911,
+      "lng": 16.409,
+      "elevation_m": 611.0
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: KAST 3 – Komplekst. Alpinøks og stegjern. Ruta kryssar skredterreng med terrengfeller i Hallevikelva-dalen; varianten om Dale og Nonskarvatnan har lågare eksponering. Rakkrenna (40–50 grader, rappell inn på rundt 500) er ekspertlinja.",
+    "avoidWater": true
+   }
+  ]
+ },
+ "skjellesvikgalten": {
+  "routes": [
+   {
+    "id": "ostryggen",
+    "name": "Østryggen fra Skjellesvika",
+    "description": "Fra Skjellesvika småbåthavn etter traktorvegen og den store slake austryggen vestover til topps",
+    "trailhead": {
+     "name": "Skjellesvika",
+     "lat": 68.91348,
+     "lng": 16.61275,
+     "elevation_m": 6.0,
+     "fullName": "Skjellesvika"
+    },
+    "waypoints": [
+     {
+      "name": "traktorvegen",
+      "lat": 68.91204,
+      "lng": 16.60417,
+      "elevation_m": 33.0
+     },
+     {
+      "name": "opp ryggen",
+      "lat": 68.914,
+      "lng": 16.59,
+      "elevation_m": 151.0
+     },
+     {
+      "name": "austryggen",
+      "lat": 68.92,
+      "lng": 16.57,
+      "elevation_m": 617.0
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: KAST 3 – Komplekst. Alpinøks og stegjern. Hard vindpakka snø; store skavlar som kan kollapse over rygglinene. Sydrennene (30–45 grader) krev stabil snø — dødsulykke i februar 2008 — og nordsida mot Skipsdalen er utvegen."
+   }
+  ]
  }
 }

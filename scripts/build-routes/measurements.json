@@ -2359,5 +2359,40 @@
    "figure": "SV fell 47,8° i snitt med 69,0-vindu (Sebortindrenna — skred kvart år, seier kilden) og E 43,2 med 61,8-vindu (Forkleet forbi granittveggen). V mot ruta er slakast med 20,3 i snitt; sluttstøtet på rundt 30 ligg i N-vinduet på 46,1",
    "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
   }
+ ],
+ "klaptinden": [
+  {
+   "what": "Alle kantar ved toppen (Klåptinden)",
+   "figure": "NV er den slake sida (14,3° i snitt) — vestruta og ryggen kjem den vegen. NE fell 47,2 i snitt med 68,6-vindu og E 37,1 med 71,1-vindu rett under varden; S mot Vasskaret-varianten måler 39,6 i snitt med 46,4-vindu",
+   "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+  }
+ ],
+ "middagstinden-andorja": [
+  {
+   "what": "Alle kantar ved toppen (Middagstinden på Andørja)",
+   "figure": "SE stig svakt (−1,2° i snitt — ryggen held fram mot Middagsaksla og Bjørndalen-varianten). N og NV, der normalruta og nedkjøringa ligg, måler 17,5–18,0 i snitt; SV og V fell 35–36 med 58,9-vindu — kantane mot Mølnelva-sida",
+   "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+  }
+ ],
+ "lasselitinden": [
+  {
+   "what": "Alle kantar ved toppen (Lasselitinden)",
+   "figure": "N og NV er slake (4,8–7,9° i snitt — ryggen vidare); Rollryggen frå sør måler 15,0 i snitt. NE fell 29,7 i snitt med 51,7-vindu 190–250 m ut — Djupedalen og skavlane bur der",
+   "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+  }
+ ],
+ "toppen": [
+  {
+   "what": "Alle kantar ved toppen (Toppen)",
+   "figure": "S/SV/V fell 50,8–56,5° i snitt med vindu på 70,4–76,7 — Rakkrenna og sjøklippene; SV-radialen når heilt til havet. N mot Toppskarvatnet er den slake sida med 12,7 i snitt — ruta kjem og går den vegen",
+   "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+  }
+ ],
+ "skjellesvikgalten": [
+  {
+   "what": "Alle kantar ved toppen (Skjellesvikgalten)",
+   "figure": "NE — der austryggen frå Skjellesvika kjem — er den slake sida med 15,3° i snitt; alle andre peilingar måler 22,4–32,6 i snitt. E har 54,6-vindu 30–90 m ut og S 48,7 — sydrennene frå 2008-ulykka bur i dei vindauga",
+   "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+  }
  ]
 }

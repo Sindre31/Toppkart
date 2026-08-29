@@ -380,4 +380,17 @@ PEAKS = [
     ("helligtinden", "Helligtinden", ["Dielddanuorri - Tjeldsund", "Tjeldsund"], 948, 68.46410, 16.33448),
     ("siriskolten", "Siriskolten", ["Dielddanuorri - Tjeldsund", "Tjeldsund"], 658, 68.48050, 16.42229),
     ("sebortinden", "Sebortinden", ["Lødingen"], 834, 68.47520, 15.42635),
+    # — Øyrest-runden: Klåptinden og Middagstinden på Andørja (namnedublett
+    #   nr. fire), Lasselitinden på Rolla, og Toppen og Skjellesvikgalten som
+    #   fullfører Grytøya. Åtinden (1108) står over: begge kildens liner er
+    #   45–50-graders ekspertrenner, utanfor appens rutenett. —
+    ("klaptinden", "Klåptinden", ["Ibestad"], 998, 68.91221, 17.27388),
+    ("middagstinden-andorja", "Middagstinden", ["Ibestad"], 629, 68.88656, 17.15201),
+    ("lasselitinden", "Lasselitinden", ["Ibestad"], 896, 68.74551, 16.90036),
+    ("toppen", "Toppen", ["Harstad - Hárstták", "Harstad"], 759, 68.90816, 16.40555),
+    ("skjellesvikgalten", "Skjellesvikgalten", ["Harstad - Hárstták", "Harstad"], 987, 68.92499, 16.54687),
+    #   ^ kilden skriver 800 moh, men registerets Skjellesvikgalten (hovednavn,
+    #     med Storgalten som undernavn) er 987-toppen, og ingen egen topp på
+    #     ~800 finnes på austryggen — bare ei skulder. Kortet bærer register-
+    #     og DTM-høyden; avviket er dokumentert i guiden og runde-notatet.
 ]
