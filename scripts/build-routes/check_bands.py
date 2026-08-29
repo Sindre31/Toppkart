@@ -79,6 +79,29 @@ BAND_FIRST = re.compile(
     re.I,
 )
 
+# «Beltet frå 500 til 600 er det bratteste i snitt med 21,5 grader» — the band
+# named without a unit after it. `BAND_FIRST` requires «moh» or «metres» there,
+# and this idiom simply does not write one, so twenty guides across the corpus
+# stated a band claim that no pass ever read: Skjellesvikgalten, Sebortinden,
+# Jotind, Melåaksla, Kråkrøtinden and the five of the Møysalen round among them.
+# A band claim is the one sentence shape a re-route falsifies silently, which is
+# why this check exists at all — so the unit is optional here, and the «beltet»
+# lead-in is what keeps the pattern from pairing two unrelated numbers.
+BAND_NOUN_LEAD = r"(?:beltet|belte|bandet|sjiktet|the\s+band)"
+BAND_FIRST_NO_UNIT = re.compile(
+    BAND_NOUN_LEAD
+    + r"\s+(?:frå|fra|from)\s+"
+    + NUM
+    + r"\s*(?:og|and|til|to|–|-)\s*"
+    + NUM
+    + r"\s*(?:moh|m\.o\.h|metres|meters|m\b)?\s*"
+    + GAP
+    + r"{0,40}?"
+    + NUM
+    + r"\s*(?:grader|degrees|°)",
+    re.I,
+)
+
 # Seven guides are written in nynorsk and the rest in bokmål, and the corpus
 # names the hundred-metre band six different ways — belte, band, sjikt, spenn,
 # «hundremeteren», «hundremeterspennet». A pattern that knows only one spelling
@@ -211,6 +234,17 @@ def main():
                     if (lo, hi) in claimed:
                         continue
                     found.append((num(m.group(3)), lo, hi, m.start()))
+                    claimed.add((lo, hi))
+                # Last, the unitless «beltet frå X til Y … A grader» idiom, and
+                # only for bands neither pass above has already read — the three
+                # patterns overlap by design, and a band counted twice would be
+                # measured twice and reported twice.
+                for m in BAND_FIRST_NO_UNIT.finditer(sentence):
+                    lo, hi = num(m.group(1)), num(m.group(2))
+                    if (lo, hi) in claimed:
+                        continue
+                    found.append((num(m.group(3)), lo, hi, m.start()))
+                    claimed.add((lo, hi))
                 for angle, lo, hi, at in found:
                     # A superlative belongs to the clause it stands in — or to
                     # the one introducing it. A guide that lists three rising

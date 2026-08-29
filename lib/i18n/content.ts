@@ -388,6 +388,16 @@ export const TOUR_TEASER_EN: Record<string, string> = {
     "930 metres of ascent from the E10 at Austerstraumen: the bogs south, down into Trolldalen north of spot height 146 — and the west ridge to an airy summit, where 20–25 degrees is the rule and the axe is for the last few metres.",
   arbostadtinden:
     "1170 metres of ascent in four kilometres from fv. 7804: the tractor road south from the old school, west of Storelva to the flat by the cabin — and the slanting couloir that is the landmark, 30–40 degrees all the way to the cairn.",
+  "rundfjellet-harstad":
+    "770 metres of ascent and nearly seven kilometres from the DNT hut at Bjørnhaugen: the west shore of Storvatnet, the stream valley north of spot height 339 with avalanche terrain on both sides — and the north-east ridge to the top through cruising country.",
+  heia:
+    "470 metres of ascent from the football pitch by Krafthallen up the old ski hill: the bog, the open field and Maistua at 321 — and the ridge above the treeline. Harstad's after-work tour, with lights on the hill on weekday evenings.",
+  nattmalsfjellet:
+    "480 metres of ascent from the Kilkam sports ground: the ski track past the kindergarten, off it southward on the ridge — and the gully for the last hundred metres. It looks easy, but avalanches have run here.",
+  hinnstein:
+    "510 metres of ascent from Breivikhaugen: the forest road the landowners built in 2016, past the shelter and up the old ski jump between Litle Hinnstein and Hinnstein — and the path up the south-west side, the gentle flank of a mountain cut away to the north-west.",
+  sorvikfjellet:
+    "560 metres of ascent from the Kilbotnveien: the junction at Nordvikmyra and straight in towards the summit cairn, through the easiest ground just south of the top — clear of the north-east face where avalanches run every year.",
 
 };
 
@@ -1875,6 +1885,72 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       caption: "827 metres of ascent over 3.82 km from Breivoll: the tractor road to the junction at 68, up Skogsheia from 514 — and a nearly straight line to the cairn at 848, with 21.9 degrees as the steepest single step.",
     },
   },
+  heia: {
+    intro:
+      "466 metres of ascent over 2.19 km from the football pitch by Krafthallen to Heia — Harstad's old downhill hill, and the tour the town actually skis. The source notes that there are usually lights on the hill in the evening when there is snow, and that the mountain gives efficient vertical and a hut on the way worth more than a visit. KAST 1 – Simple. Grade 1.",
+    ascent: [
+      "From the car park by the football pitch — 63 m — the route runs along the left-hand side of the bog on a path through the forest: 113 m where the corridor stands. Then out of the trees and up the open field the summer path follows, 205 m.",
+      "Maistua sits halfway, at 321 m. It was a radio link before, was renovated in the autumn of 2018 and needs a DNT key; the source calls the view fantastic and the place a modern retreat without equal. The steepest 100 m band measures a mean 20.2 degrees between 200 and 300 metres, over 263 metres of ground, and the steepest single step on the whole line, 25.0 degrees, sits between 260 and 281 m — just below the hut.",
+      "Past the flat by Maistua the route slants up a little to the south, and the forest lets go at 375 m after 1.35 km. Above the treeline you follow the ridge — 481 m where the corridor is anchored — to the cairn at 527. The ridge can be scoured and bare or wind-affected, and the source says most people therefore stop a little north of the top.",
+    ],
+    descent: [
+      "The same way down, but all the way along the open field, over the fence under the power line and through the forest to the football pitch. Many do several laps — the source describes training sessions of three laps in an evening, skins on and off, and 1200 metres of ascent in total. The source gives two more variants: the east side of the summit, where the snow is best, down the old lift line; and a line to the south-east down the cleared summer path in Blåbæråsen to the kindergarten at Høgholtet.",
+      "All three are KAST 1 and mostly 20–30 degrees. But the source is just as clear about what lies outside them: there you can «easily seek out 40-degree slopes». The flank sweep finds them — north of the cairn a 40.6 window 170–230 metres out, and north-west 46.0 at 160–220.",
+    ],
+    avalanche: [
+      {
+        title: "Forty degrees, one turn away",
+        body: "Heia is a KAST 1 mountain with KAST 3 terrain beside it. The source states plainly that outside the three described routes you can easily find 40-degree slopes, and that this should only be done when the snow is stable. The measurement confirms it: 40.6 degrees north of the top and 46.0 to the north-west. The three routes stay at 20–30.",
+      },
+      {
+        title: "The summit ridge",
+        body: "The last stretch is often scoured, bare or wind-affected, and the source says most people stop a little north of the top. That is not an avalanche warning but an explanation of why the track ends where it does — and on a clear day the cairn is worth the last few metres on foot.",
+      },
+      {
+        title: "Before you go",
+        body: "Heia sits in the Sør-Troms forecasting region, an A-region with a daily avalanche bulletin through the season. Check varsom.no. The December–April season is Fri Flyt's, and the longest in the round — this is the hill that holds snow when the town does not. Transceiver, probe and shovel, even on an evening lap ten minutes from the car. An empty page does not mean a safe mountain.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "63 m",
+      endLabel: "527 m",
+      distanceLabel: "2.2 km",
+      caption: "466 metres of ascent over 2.19 km from Krafthallen: the bog, the open field and Maistua at 321 — and the ridge above the treeline to the cairn at 527.",
+    },
+  },
+  hinnstein: {
+    intro:
+      "510 metres of ascent over 2.90 km from Breivikhaugen to Hinnstein — one of the most-used tour areas in Harstad, on a par with Heia, and a mountain with steep sides. The source is short and serious about the most popular of them: «the south-east side attracts the most skiers, but be aware that several have been caught in avalanches there.» KAST 3 – Complex. Grade 3.",
+    ascent: [
+      "From the small car park at the top of Breivikhaugen — 51 m, and do not block the turning circle — the route follows the forest road the landowners built in 2016: 154 m where the corridor stands in it. Past the shelter at 220.",
+      "From there you aim for the slope between Litle Hinnstein and Hinnstein — 457 m — which in the old days was used as a ski jump. Litle Hinnstein is a registered point of its own and measures 502 m; it is the lower of the two.",
+      "Then the path up the south-west side of Hinnstein, 531 m where the corridor is anchored, to the cairn at 560. The forest does not let go until 496 m after 2.51 km — almost the whole tour is in trees. The steepest 100 m band measures a mean 13.6 degrees between 400 and 500 metres, over 426 metres of ground, and the steepest single step, 23.7 degrees, sits between 394 and 408.",
+    ],
+    descent: [
+      "The source is honest about the start: the descent from Hinnstein gives little flow at first because of scrub, thin snow and stones, and many leave the skis and walk back down the way they came. After that it is gentle cruising in ground no steeper than 30 degrees.",
+      "The front face is another matter. Sørøst 2 holds 35–45 degrees, with the easiest line furthest south on the mountain and straight down to the forest road. The flank sweep places the rest: north-west falls at 50.5 degrees only 10–70 metres from the cairn, north 44.3 at 30–90 and west 42.8 at 20–80. South-west, where the route goes, is the gentle side at 12.6 degrees on average.",
+    ],
+    avalanche: [
+      {
+        title: "The south-east side",
+        body: "This is the side most people ski, and the source's own sentence about it is that several have been caught in avalanches there. It measures 26.9 degrees on average with a 40.4 window 180–240 metres out, and Sørøst 2 on the front face holds 35–45. None of those numbers is extreme; the history is the point, and it belongs to a hill fifteen minutes from town.",
+      },
+      {
+        title: "The north-west side is cut away",
+        body: "The summit has a side that is not a route: north-west falls at 50.5 degrees within the first 70 metres of the cairn, and north and west at 44.3 and 42.8 just as close in. The route comes up the south-west side, which is gentle — but on a summit this small the edge is nearer than it looks.",
+      },
+      {
+        title: "Before you go",
+        body: "Hinnstein sits in the Sør-Troms forecasting region, an A-region with a daily avalanche bulletin through the season. Check varsom.no. The January–April season is Fri Flyt's. Transceiver, probe and shovel. The 2016 forest road is the landowners' gift to walkers — park where you should, and leave the turning circle clear. An empty page does not mean a safe mountain.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "51 m",
+      endLabel: "560 m",
+      distanceLabel: "2.9 km",
+      caption: "510 metres of ascent over 2.90 km from Breivikhaugen: the 2016 forest road, the shelter and the old ski jump — and the south-west side to the cairn at 560.",
+    },
+  },
   lasselitinden: {
     intro:
       "863 metres of ascent over 3.62 km from Storelva's outlet to Lasselitinden on western Rolla — 895.8 on screen against the published 896. Rollryggen: up the hillside from the fv. 848 and the south ridge to the top at 20–30 degrees. KAST 2 – Challenging with ice axe and crampons — grade 3 by the Gråfjell rule, and Djupedalen's cornices are the reason to hold the track.",
@@ -1972,6 +2048,39 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       endLabel: "922 m",
       distanceLabel: "4.1 km",
       caption: "910 metres of ascent over 4.1 km from Hundstadsætran: the tractor road to Vebbestadvatnet on land at the north end, east from 617 — and the section above the big boulder, 45–50 degrees with the source, to the summit at 922.",
+    },
+  },
+  nattmalsfjellet: {
+    intro:
+      "479 metres of ascent over 2.69 km from the Kilkam sports ground to Nattmålsfjellet — the closest ski hill in Kilbotn, and the one in this round where the source is clearest that appearances lie. «Even though Nattmålsfjellet looks easy, there are several places where avalanches can run, and they have run here.» KAST 2 – Challenging on the normal route; every other ascent on the north side is KAST 3. Grade 3.",
+    ascent: [
+      "From the large car park by the sports ground — 85 m — you follow the ski track past the kindergarten: 89 m where the corridor stands, almost flat. The band from 0 to 100 m measures a mean 1.7 degrees, over 673 metres of ground.",
+      "Then off the track southward where the mountain is closest, on the ridge before Nattmålsfjellvatnet — 237 m. The forest lets go at 284 after 1.68 km. Nearer the treeline you keep to the right-hand — western — side of a small knoll: 279 m where the corridor is anchored.",
+      "From there the large open area leads up towards the top. The last hundred metres of ascent go up a gully that is the continuation of the stream running down to the south side of Nattmålsfjellvatnet — 393 m where the corridor stands in it. The steepest 100 m band measures a mean 15.1 degrees between 300 and 400 metres, over 392 metres of ground, and the steepest single step, 22.0 degrees, sits between 422 and 441. The cairn is 546.",
+    ],
+    descent: [
+      "Down the same way. The descent is no steeper than 30 degrees, says the source — but it is surrounded by steeper ground, and you are at times standing in runout zones. That is a different sentence from «gentle», and it is worth reading twice.",
+      "The flank sweep shows the same picture: the summit itself is gentle on every bearing — 3.3 degrees on average to the south-east, 5.1 to the south-west, 5.3 to the south — while the steepest windows sit far out, 34.5 degrees 300–360 metres to the north-east and 35.3 at 440–500 to the south-east. Those are the ones you can end up beneath, not the ones you stand on.",
+    ],
+    avalanche: [
+      {
+        title: "The runout zones",
+        body: "This is the mountain where the terrain trap is not under your skis but above them. The descent stays below 30 degrees and the summit is gentle, but steeper ground surrounds it, and the source says you are at times in runout zones. The measurement finds the steepest sections 300 to 500 metres out on the north-east and south-east sides. Judge what hangs over the track, not only what you are standing on.",
+      },
+      {
+        title: "Nord 2 and the rest of the north side",
+        body: "Every ascent on the north side other than Nord 1 is KAST 3, says the source. Nord 2 descends steep gullies and hollows towards the open area above the floodlit trail. On that area lies Okshola, a cave some 300 metres long with a river running through it and an exit usually filled with water — worth a visit, but not a way out.",
+      },
+      {
+        title: "Before you go",
+        body: "Nattmålsfjellet sits in the Sør-Troms forecasting region, an A-region with a daily avalanche bulletin through the season. Check varsom.no. The February–April season is Fri Flyt's. Transceiver, probe and shovel — and on this hill especially: avalanches have run here, and it does not look like it. An empty page does not mean a safe mountain.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "85 m",
+      endLabel: "546 m",
+      distanceLabel: "2.7 km",
+      caption: "479 metres of ascent over 2.69 km from Kilkam: the ski track past the kindergarten, the ridge southward — and the gully south of Nattmålsfjellvatnet to the cairn at 546.",
     },
   },
   horntindan: {
@@ -2077,6 +2186,39 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       caption: "1047 metres of ascent and 5.24 km from Bukkemyrvatnet via the terraces toward Sølvfjellet and the snowfield southeast of the summit, with the treeline at 476 m and the steepest band — 18.8 degrees — between 1300 and 1400 m.",
     },
   },
+  sorvikfjellet: {
+    intro:
+      "560 metres of ascent over 3.60 km from the Kilbotnveien to Sørvikfjellet — a steep ski hill close to town with several lines and high speed, and with the source's plainest avalanche sentence of the round: «be aware that avalanches run on the steepest slope every year.» KAST 3 – Complex, ice axe and crampons on the list. Grade 4.",
+    ascent: [
+      "From the lay-by on the Kilbotnveien — 61 m — to the junction at Nordvikmyra towards Kilbotn, 57 m. From there the instruction is the source's own: aim at the summit cairn and follow the easiest ground a little south of the top. The band from 0 to 100 m measures a mean 1.5 degrees, over 1595 metres of ground — the bog takes the first kilometre almost flat.",
+      "In late winter Nordvikelva right by the road can be wide, and the source suggests rubber boots for the first hundred metres and a change into ski boots after that. On through the hillside towards the mountain, 63 m, and up above the forest at 201.",
+      "The forest lets go at 362 m after 2.61 km. The steepest 100 m band measures a mean 20.6 degrees between 400 and 500 metres, over 266 metres of ground, and the steepest single step, 26.1 degrees, sits between 487 and 512. The cairn is 607 — the register and the source do not quite agree here, since Fri Flyt writes 600, and the card carries the DTM1 height as it does everywhere else.",
+    ],
+    descent: [
+      "The descent follows roughly the same way as the ascent. Ski a few hundred metres to the south and you find a steep couloir of some 150 vertical metres that the source thinks is genuinely worth it — but that is a line, not the way back.",
+      "The reason the route goes in a little south of the top is in the measurement: south is the gentle side at 5.4 degrees on average, south-west 6.6 and north-west 8.6. North-east measures 33.9 on average with a 45.3 window 180–240 metres out, and east 32.4 with 44.7 at 350–410.",
+    ],
+    avalanche: [
+      {
+        title: "The slope that runs every year",
+        body: "The source writes that avalanches run on the steepest slope every year. The measurement finds it: the north-east side holds 33.9 degrees on average with a 45.3 window 180 to 240 metres out — right in the band where slabs release most often. The route comes in from the east and rounds south of the summit precisely to stay clear, and that is not a detail to improvise away on the way down.",
+      },
+      {
+        title: "The couloir south of the route",
+        body: "A few hundred metres south of the ascent lies a couloir of some 150 vertical metres that the source calls really worth skiing. It is a couloir: it collects whatever comes from above and offers no way off to the side. Ice axe and crampons are on the source's list for this mountain, and this is where they belong.",
+      },
+      {
+        title: "Before you go",
+        body: "Sørvikfjellet sits in the Sør-Troms forecasting region, an A-region with a daily avalanche bulletin through the season. Check varsom.no. The January–April season is Fri Flyt's. Transceiver, probe and shovel — and ice axe and crampons where the source demands them. An empty page does not mean a safe mountain.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "61 m",
+      endLabel: "607 m",
+      distanceLabel: "3.6 km",
+      caption: "560 metres of ascent over 3.60 km from the Kilbotnveien: the junction at Nordvikmyra, the bog and the hillside — and in to the cairn at 607 a little south of the top.",
+    },
+  },
   melaaksla: {
     intro:
       "964 metres of ascent over 5.92 km from Melå to Melåaksla — a summit that took three candidates to find: the register's name stands on the 747 shoulder in the north, the first seed landed on the 959.6 top to the south-east, and the published 915 is the top at 915.7 midway between them. The tractor road on the south side of the river to Dalbotnen, past the hut and the long ridge south. A descent of 15–25 degrees with some sections of 30 — splendid varied ground, says the source. Grade 2.",
@@ -2108,6 +2250,39 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       endLabel: "916 m",
       distanceLabel: "5.9 km",
       caption: "964 metres of ascent over 5.92 km from Melå: the tractor road to Dalbotnen, past the hut towards the 505 knoll — and the long ridge south to the cairn at 916, west of the tarn at 717.",
+    },
+  },
+  "rundfjellet-harstad": {
+    intro:
+      "774 metres of ascent over 6.86 km from the DNT hut at Bjørnhaugen to Rundfjellet — the round's longest tour and chapter 1's biggest mountain. The source calls it «some approach and fine skiing in cruising country», and the terrain model agrees: the steepest band on the whole line measures 18.5 degrees. The name is qualified because the app already has a Rundfjellet, the 803 m one in Vågan. KAST 1 – Simple. Grade 2.",
+    ascent: [
+      "From the large car park by the DNT hut — 212 m — the line drops towards Storvatnet and follows its west shore south: 155, 145 and 140 m where the corridor is anchored. The lake is large, and the 118 metres you give back here are half the reason the source states 800 for a mountain that stands 656 metres above the hut.",
+      "The source writes «cross Rundfjellvatnet», but the line stays on land north of the tarn — the same rule as everywhere else in the app. From the south-west end of Storvatnet the route climbs the stream valley on the north side of spot height 339, which the terrain model measures at 337.7. Keeping to the middle of the valley is not a casual phrase: there is avalanche terrain on both sides, and it is the only hazard instruction the source gives.",
+      "Past Rundfjellvatnet at 300 m and onto the north-east ridge — 602 where the corridor stands in it. The forest does not let go until 344 m after 4.98 km, the longest walk through trees in the round. The steepest 100 m band measures a mean 18.5 degrees between 700 and 800 metres, over 325 metres of ground, and the steepest single step, 23.9 degrees, sits between 509 and 529 m.",
+    ],
+    descent: [
+      "The same ridge home. The source promises «mostly 20–25 degree skiing, but some sections are 30», and the line stays under that the whole way: no band averages more than 18.5 degrees.",
+      "The flank sweep puts the steep ground where the source does not send you: south of the cairn there is a 54.6 window 20–80 metres out, and south-east 50.3 only 10–70 metres out. South-west is the gentle side at 8.8 degrees on average. The ridge to the north-east is the route, and it measures 20.2.",
+    ],
+    avalanche: [
+      {
+        title: "The stream valley",
+        body: "The source tells you to keep to the middle of the stream valley north of spot height 339 to avoid avalanche terrain on both sides. That is an instruction about placement, not about angle: the valley floor itself is gentle, but it lies between two flanks that can deliver. Hold the middle, and read the snow on the sides before you go in.",
+      },
+      {
+        title: "The summit has a steep side",
+        body: "The north-east ridge is gentle — 20.2 degrees on average — but south and south-east of the cairn the mountain falls at 54.6 and 50.3 degrees in its steepest windows, the south-east one only 10 to 70 metres from the top. On a mountain the source calls cruising country, it is worth knowing where the edge runs.",
+      },
+      {
+        title: "Before you go",
+        body: "Rundfjellet sits in the Sør-Troms forecasting region, an A-region with a daily avalanche bulletin through the season. Check varsom.no. The February–April season is Fri Flyt's. Transceiver, probe and shovel. The tour is long for its grade — nearly seven kilometres in — so the hour of the day decides what snow you meet on the way back. An empty page does not mean a safe mountain.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "212 m",
+      endLabel: "868 m",
+      distanceLabel: "6.9 km",
+      caption: "774 metres of ascent over 6.86 km from Bjørnhaugen: the west shore of Storvatnet, the stream valley north of spot height 339 — and the north-east ridge to the cairn at 868.",
     },
   },
   jakobstinden: {

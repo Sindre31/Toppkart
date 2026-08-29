@@ -4580,6 +4580,131 @@ guides, one number outstanding, on a tour from the Tjeldsund round.** The
 general lesson is the same one `measurements.json` was created for — a
 figure whose only home is a transcript has no home.
 
+## The town round
+
+Chapter 1 of the Harstad book — «Harstad», the town's own hills. Heia is
+the old downhill hill with Maistua halfway up and lights on it on weekday
+evenings; Nattmålsfjellet and
+Hinnstein are the after-work hills of Kilbotn and Breivikhaugen;
+Sørvikfjellet is the steep one above the Kilbotnveien; and Rundfjellet, out
+at the DNT hut on Bjørnhaugen, is the chapter's biggest. Every summit
+answers to **Sør-Troms** (3012), an A-region — the fourth single-region
+round.
+
+| tour | start | summit | gain | km | steepest 100 m band | steepest 30 m | grade |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Rundfjellet i Harstad | 212 | 868 | 774 | 6.9 | 18.5° | 23.9° | 2 |
+| Heia | 63 | 527 | 466 | 2.2 | 20.2° | 25.0° | 1 |
+| Nattmålsfjellet | 85 | 546 | 479 | 2.7 | 15.1° | 22.0° | 3 |
+| Hinnstein | 51 | 560 | 510 | 2.9 | 13.6° | 23.7° | 3 |
+| Sørvikfjellet | 61 | 607 | 560 | 3.6 | 20.6° | 26.1° | 4 |
+
+**Every line in the round stays under 26.2° in its steepest 30 m window**,
+and only Sørvikfjellet carries an ice axe on the source's list. Heia is the
+app's seventeenth grade 1 and its third-shortest line at 2.19 km, and Heia,
+Nattmålsfjellet and Hinnstein are three of the fifteen smallest ascents in
+the catalogue. The summit search went five for five within 7 m, four of
+them inside a metre.
+
+Which is the round's real argument: a 500-metre hill twenty minutes from a
+front door is not a lesser object than a 1200-metre one, and three of these
+five have put people in avalanches.
+
+### Three of the five carry avalanche history in the source's own words
+
+That is the point of the round, and the reason a cluster of 500-metre town
+hills is worth publishing at all. Fri Flyt writes, without hedging:
+
+- **Nattmålsfjellet** — «Selv om Nattmålsfjellet ser enkelt ut er det flere
+  plasser det kan gå skred, og det har også gått skred der.» Every ascent
+  on the north side other than Nord 1 is KAST 3. The measurement says why
+  the appearance lies: the summit is gentle on every bearing — 3.3° SE,
+  5.1° SW, 5.3° S — and the steep ground sits 300 to 500 m out, 34.5° NE
+  and 35.3° SE. The hazard is what hangs over the track, not what is under
+  it, and the guide says so in those words.
+- **Hinnstein** — «det er sørøstsiden som tiltrekker flest skikjørere, men
+  vær obs på at flere er tatt av skred der.» The side most people ski,
+  fifteen minutes from town.
+- **Sørvikfjellet** — «vær obs på at det går skred på det bratteste henget
+  hvert år.» The flank probe finds it: NE 33.9° mean with a 45.3° window
+  180–240 m out, dead in the slab band. The route goes in from the east
+  and rounds *south* of the summit to stay clear, which is the source's
+  own «det enkleste terrenget litt sør for toppen» — and the guide
+  explains that the detour is the safety margin, not a shortcut.
+
+Heia is the counterpart: KAST 1 on all three routes, and the source
+volunteering that outside them «kan du enkelt oppsøke heng på 40 grader».
+The probe finds those too — 40.6° north of the cairn, 46.0° north-west.
+
+### A fifth qualified duplicate name
+
+`rundfjellet` was already taken by Lofoten's Rundfjellet (803 m, Vågan,
+above Vatterfjordpollen), and the collision was not caught by inspection —
+it was caught by `resolve_summits.py` printing two lines for one slug and
+`summits.json` ending up with one of them. The Harstad one ships as
+`rundfjellet-harstad` / **Rundfjellet i Harstad**, the app's fifth
+qualified duplicate after Storhornet, Middagstinden twice and Stortinden.
+Worth noting for the next round: nothing in the pipeline refuses a
+duplicate slug, and the failure is silent in the direction that loses data.
+
+### `avoidWater`, second outing
+
+The Møysalen round fixed the flag's path through `merge_corridors`; this
+round is the first to declare it on a fresh corridor and have it simply
+work. Fri Flyt's Rundfjellet says «Gå over Rundfjellvannet», the corridor
+says otherwise, and the line came back **0 m on water on the first solve** —
+one vertex moved and seven inserted. Storvatnet is the harder half: OSM
+relation/4035561 spans 3.8 km north to south with its surface at 134.8 m,
+and the first draft corridor ran two and a half kilometres straight down
+the middle of it before the west shore was traced latitude by latitude out
+of the DTM.
+
+### The band check was reading two thirds of the corpus
+
+`check_bands.py` measures «A grader mellom X og Y moh» claims against the
+band they name — the one sentence shape a re-route falsifies silently. It
+reported 522 claims over 175 tours and «all agree», and the five guides of
+the Møysalen round contributed **none of them**.
+
+The corpus writes the claim two ways. `BAND_FIRST` requires a unit after
+the band — «beltet frå 500 til 600 **moh** måler 1,8 grader» — and a large
+part of the corpus simply does not write one: «Beltet frå 500 til 600 er
+det bratteste i snitt med 21,5 grader». Twenty guides stated a band claim
+that no pass had ever read, Skjellesvikgalten, Sebortinden, Jotind,
+Melåaksla and Kråkrøtinden among them, and all five of the Møysalen round.
+
+The unit is optional now, with the «beltet» lead-in doing the work of
+keeping the pattern from pairing two unrelated numbers, and the three
+patterns de-duplicate by band so nothing is measured twice. **690 claims
+over 180 tours, all agreeing with the line** — the 168 that had been
+invisible were all correct, which is the good version of this news, and
+they are checked from here on. Seven guides still parse no claim at all,
+down from twenty.
+
+### A number the guide tests caught before CI did
+
+Heia's intro quoted the source's training figure — three laps in an
+evening for 1200 høgdemeter — and `lib/guides.test.ts` fails an intro
+whose largest vertical figure is not the line's own climb. It is right:
+an intro states this tour's ascent, and a lap total belongs to the
+descent, where the lap culture is. The sentence moved; the test passes.
+
+### A checker gap measured and left open
+
+`check_guides.py`'s number pattern lists `metres|meters|m` but not the
+Norwegian **`meter`**, so `\b` fails against the following `e` and every
+«656 meter» in the corpus goes unread. It is not small: **701 occurrences
+across 136 of the 180 guides**, none of them currently checked.
+
+It is left open deliberately. Adding the word alone is not the fix —
+the surrounding number pattern `(\d[\d\s.,]*)` is loose enough to run
+across a sentence boundary, and the first attempt produced
+`'929.9.102'` from «929. 9.102 meter» before it produced a single finding.
+Doing it properly means tightening the number token and then reading
+whatever 701 newly-visible figures turn up across 136 guides, which is a
+round of its own and would bury this one. The measurement is here so the
+next round can start from it rather than rediscover it.
+
 ## Network
 
 Everything is public and unauthenticated:

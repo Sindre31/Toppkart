@@ -9404,5 +9404,330 @@
       ],
       "confidence": "researched, verified (ok), no local avalanche bulletin read"
     }
+  },
+  {
+    "slug": "rundfjellet-harstad",
+    "verdict": "ok",
+    "corrections": [
+      "Slug og namn er kvalifiserte: «rundfjellet» var alt teke av Lofotens Rundfjellet (803 moh, Vågan, over Vatterfjordpollen). Dette er appens femte kvalifiserte namnedublett, etter Storhornet, Middagstinden (to gonger) og Stortinden.",
+      "Ruta er Fri Flyts 1.13.1 Nordøstryggen: vestsida av Storvatnet, opp på nordsida av høyde 339 midt i bekkedalen, over Rundfjellvatnet og ryggen til topps.",
+      "Høyde 339 er funnen i DTM1: 337,7 moh på 68.63637/16.33439, 400 m aust for Rundfjellvatnet. Korridoren går nord for han, som kilden seier.",
+      "Storvatnet er stort — OSM relation/4035561 spenner 68.62268–68.65689 og 16.35663–16.44156, med vassflate på 134,8 moh. Vestbredda er sporet i DTM1 latitude for latitude; korridorpunkta ligg 140–155 moh på land vest for henne.",
+      "Kilden skriv «Gå over Rundfjellvannet» (OSM relation/17085129, 288 moh). Linja går på land nord for tjernet, med avoidWater sett — same regel som på Litletussen og Lakselvtindan.",
+      "Toppen løyser til 867,5 mot publiserte 868 — 0,5 m, ingen SUMMIT_SEED.",
+      "Bjørnhaugen er òg startstaden for Melåplatået og Austerfjorden i same boka; dette er den første turen appen byggjer derfrå.",
+      "Netto stigning frå hytta til toppen er 868 − 212 = 656 m; linjas 774 høgdemeter er dei 656 pluss dei 118 ho gir frå seg ned til Storvatnet og undervegs. Det forklarer kildens 750–800."
+    ],
+    "rejectReason": null,
+    "corridor": {
+      "routeId": "nordostryggen",
+      "routeName": "Nordøstryggen fra Bjørnhaugen",
+      "routeDescriptionFull": "Frå parkeringa ved DNT-hytta på Bjørnhaugen sørover langs vestsida av Storvatnet, opp bekkedalen på nordsida av høyde 339 der det er skredterreng på begge sider, over Rundfjellvatnet — på land — og nordaustryggen til topps.",
+      "trailhead": {
+        "name": "Bjørnhaugen",
+        "lat": 68.65848,
+        "lng": 16.39103,
+        "elevationM": 212,
+        "osmEvidence": "Kartlagd parkering (OSM node/1890362149, amenity=parking, namn «Bjørnhaugen») ved DNT-hytta Bjørnhaugen (OSM node/339595790, tourism=wilderness_hut) på Storjordveien. DTM1 leser 211,7 moh."
+      },
+      "waypoints": [
+        {
+          "name": "nordenden av Storvatnet",
+          "lat": 68.6524,
+          "lng": 16.3912,
+          "elevationM": 155
+        },
+        {
+          "name": "vestsida av Storvatnet",
+          "lat": 68.6452,
+          "lng": 16.3858,
+          "elevationM": 145
+        },
+        {
+          "name": "sørvestenden av Storvatnet",
+          "lat": 68.6398,
+          "lng": 16.3651,
+          "elevationM": 140
+        },
+        {
+          "name": "bekkedalen nord for høyde 339",
+          "lat": 68.6398,
+          "lng": 16.343,
+          "elevationM": 261
+        },
+        {
+          "name": "nordsida av Rundfjellvatnet",
+          "lat": 68.639,
+          "lng": 16.324,
+          "elevationM": 300
+        },
+        {
+          "name": "nordaustryggen",
+          "lat": 68.634,
+          "lng": 16.295,
+          "elevationM": 602
+        }
+      ],
+      "avoidWater": true,
+      "season": "feb–apr",
+      "aspect": "NØ",
+      "grade": 2,
+      "gradeReason": "Fri Flyt gir KAST 1 – Enkelt, og nedkjøringa er «for det meste 20-25 graders kjøring, men noen partier er 30 grader». Ingen øks eller stegjern på lista. Grad 2, ikkje 1: turen er lang, ryggen er høgfjell, og bekkedalen har skredterreng på begge sider.",
+      "roadClosedInWinter": false,
+      "hazardNotes": "Fri Flyt: KAST 1 – Enkelt. Oppstigninga skal gå midt i bekkedalen nord for høyde 339 nettopp for å unngå skredterreng på begge sider — det er kildens eiga formulering, og den einaste hazard-instruksen ho gir. Nedkjøringa er stort sett 20–25 grader med parti på 30.",
+      "teaserNo": "770 høgdemeter og nesten sju kilometer frå DNT-hytta på Bjørnhaugen: vestsida av Storvatnet, bekkedalen nord for høyde 339 med skredterreng på begge sider — og nordaustryggen til topps i cruiseterreng.",
+      "teaserEn": "770 metres of ascent and nearly seven kilometres from the DNT hut at Bjørnhaugen: the west shore of Storvatnet, the stream valley north of spot height 339 with avalanche terrain on both sides — and the north-east ridge to the top through cruising country.",
+      "sources": [
+        "https://www.friflyt.no/topptur/harstad/rundfjellet",
+        "https://www.friflyt.no/topptur/harstad/turomraade-harstad"
+      ],
+      "confidence": "researched, verified (ok), no local avalanche bulletin read"
+    }
+  },
+  {
+    "slug": "heia",
+    "verdict": "ok",
+    "corrections": [
+      "Ruta er Fri Flyts 1.9.1 Øst 1: frå nordsida av fotballbanen ved Krafthallen, venstresida av myra langs sti i skog, ut på det opne feltet, forbi Maistua, og ryggen til topps.",
+      "Maistua er registerført (SSR, Turisthytte, 68.76156/16.51962) og ligg på 320,7 moh i DTM1 — halvvegs, som kilden seier. Ho var radiolink før, blei pussa opp hausten 2018, og krev DNT-medlemskap for nøkkel.",
+      "Toppen løyser til 526,7 mot publiserte 526 — 0,7 m, ingen SUMMIT_SEED. Registeret fører henne som Ås, ikkje Fjell.",
+      "Heia er ein av dei gamle alpinbakkane i Harstad; kilden nemner heistraseen i variant 1.9.2 og at folk går tre turar på ein kveld for 1200 høgdemeter.",
+      "Grunneigarane har godkjent busk- og kvistrydding, og DNT Fjellsport Harstad held trasear opne med dugnad kvart år."
+    ],
+    "rejectReason": null,
+    "corridor": {
+      "routeId": "ost-1",
+      "routeName": "Øst 1 fra Krafthallen",
+      "routeDescriptionFull": "Frå parkeringa ved fotballbanen ved Krafthallen: venstresida av myra langs stien i skogen, ut på det opne feltet der sommarstien går, forbi Maistua og opp den naturlege traseen litt sørover — og over tregrensa langs ryggen til toppen.",
+      "trailhead": {
+        "name": "Fotballbanen ved Krafthallen",
+        "lat": 68.7636,
+        "lng": 16.54315,
+        "elevationM": 63,
+        "osmEvidence": "Kartlagd parkering (OSM way/731541114, amenity=parking) ved Krafthallen (OSM way/731541113, leisure=sports_centre), på nordsida av Medkila kunstgressbane (OSM way/103069488). DTM1 leser 63,3 moh."
+      },
+      "waypoints": [
+        {
+          "name": "venstresida av myra",
+          "lat": 68.7615,
+          "lng": 16.534,
+          "elevationM": 113
+        },
+        {
+          "name": "det opne feltet",
+          "lat": 68.761,
+          "lng": 16.526,
+          "elevationM": 205
+        },
+        {
+          "name": "Maistua",
+          "lat": 68.76156,
+          "lng": 16.51962,
+          "elevationM": 321
+        },
+        {
+          "name": "ryggen over tregrensa",
+          "lat": 68.7585,
+          "lng": 16.509,
+          "elevationM": 481
+        }
+      ],
+      "season": "des–apr",
+      "aspect": "Ø",
+      "grade": 1,
+      "gradeReason": "Fri Flyt gir KAST 1 – Enkelt på alle tre rutene, og kallar Heia «en fantastisk tur for alle aldre og alle nivåer så lenge man har kjørt litt utenfor slalombakke». Nedkjøringane er stort sett 20–30 grader. Grad 1.",
+      "roadClosedInWinter": false,
+      "hazardNotes": "Fri Flyt: KAST 1 – Enkelt. Nedkjøringane på dei tre skildra rutene er for det meste 20–30 grader, men kilden er tydeleg på at ein utanfor dei lett kan oppsøkje heng på 40 grader — og at det berre skal gjerast når snøen er stabil. Toppryggen kan vera avblåst og bar eller vindpåverka, og dei fleste stoppar eit stykke nord for toppen.",
+      "teaserNo": "470 høgdemeter frå fotballbanen ved Krafthallen opp den gamle alpinbakken: myra, det opne feltet og Maistua på 321 — og ryggen over tregrensa. Harstads ettermiddagstur, med lys i bakken på kvardagskveldar.",
+      "teaserEn": "470 metres of ascent from the football pitch by Krafthallen up the old ski hill: the bog, the open field and Maistua at 321 — and the ridge above the treeline. Harstad's after-work tour, with lights on the hill on weekday evenings.",
+      "sources": [
+        "https://www.friflyt.no/topptur/harstad/heia",
+        "https://www.friflyt.no/topptur/harstad/turomraade-harstad"
+      ],
+      "confidence": "researched, verified (ok), no local avalanche bulletin read"
+    }
+  },
+  {
+    "slug": "nattmalsfjellet",
+    "verdict": "ok",
+    "corrections": [
+      "Ruta er Fri Flyts 1.11.1 Nord 1: skisporet forbi barnehagen, av sporet sørover på åsryggen før Nattmålsfjellvatnet, vestsida av den vesle kollen, det store opne området — og slukta dei siste 100 høgdemetrane.",
+      "Nattmålsnuten (SSR, Haug, 68.70699/16.46463) klatrar til 566,4 moh og er 21 m høgare enn Nattmålsfjellet sjølv. Toppsøket gjekk likevel rett: publisert høgd 545 mot DTM1 545,6 på 68.70959/16.45710, og ingen SUMMIT_SEED trengdest. Kilden nemner paret sjølv — «man ender da opp mellom Nattmålsnuten og Nattmålsfjellet».",
+      "Nattmålsfjellvatnet (SSR, Tjern, 68.71744/16.46033) ligg nord for toppen; slukta dei siste 100 høgdemetrane er forlenginga av elva som renn ned mot sørsida av det.",
+      "Kilkam idrettsanlegg er kartlagt som Kilbotn fotballhall og kunstgressbane; parkeringa 260 m aust langs Kilkamveien er den mapped store plassen kilden meiner.",
+      "Okshola, ei ca. 300 m lang grotte med ei elv gjennom, ligg på det opne området ved Nord 2-varianten. Utgangen er som regel fylt med vatn."
+    ],
+    "rejectReason": null,
+    "corridor": {
+      "routeId": "nord-1",
+      "routeName": "Nord 1 fra Kilkam",
+      "routeDescriptionFull": "Frå den store parkeringa ved Kilkam idrettsanlegg opp skisporet forbi barnehagen, av sporet sørover på åsryggen før Nattmålsfjellvatnet, på høgresida (vestsida) av den vesle kollen — og det store opne området opp mot toppen, med dei siste 100 høgdemetrane i slukta som er forlenginga av elva ned mot sørsida av Nattmålsfjellvatnet.",
+      "trailhead": {
+        "name": "Kilkam idrettsanlegg",
+        "lat": 68.71411,
+        "lng": 16.50172,
+        "elevationM": 85,
+        "osmEvidence": "Kartlagd parkering (OSM node/1435595204, amenity=parking) langs Kilkamveien (OSM way/130304069) ved Kilbotn fotballhall (OSM way/1028474926) og Kilbotn kunstgressbane (OSM way/130304072). DTM1 leser 84,6 moh."
+      },
+      "waypoints": [
+        {
+          "name": "skisporet forbi barnehagen",
+          "lat": 68.7155,
+          "lng": 16.488,
+          "elevationM": 89
+        },
+        {
+          "name": "åsryggen før Nattmålsfjellvatnet",
+          "lat": 68.7165,
+          "lng": 16.473,
+          "elevationM": 237
+        },
+        {
+          "name": "vestsida av den vesle kollen",
+          "lat": 68.7155,
+          "lng": 16.464,
+          "elevationM": 279
+        },
+        {
+          "name": "slukta sør for Nattmålsfjellvatnet",
+          "lat": 68.7135,
+          "lng": 16.459,
+          "elevationM": 393
+        }
+      ],
+      "season": "feb–apr",
+      "aspect": "N",
+      "grade": 3,
+      "gradeReason": "Fri Flyt gir KAST 2 – Utfordrende, og normalruta Nord 1 er «Utfordrende 2». Men kilden skriv rett ut at alle andre ruter opp på nordsida er KAST 3, at det har gått skred her, og at nedkjøringa — sjølv om ho ikkje er brattare enn 30 grader — er omgitt av brattare område og av og til ligg i utløpssoner. Grad 3: historikken og utløpssonene veg tyngre enn vinkelen.",
+      "roadClosedInWinter": false,
+      "hazardNotes": "Fri Flyt: KAST 2 – Utfordrende på Nord 1; alle andre oppstigningar på nordsida er KAST 3. «Selv om Nattmålsfjellet ser enkelt ut er det flere plasser det kan gå skred, og det har også gått skred der.» Nedkjøringa er ikkje brattare enn 30 grader, men er omgitt av brattare område, og ein er av og til i utløpssoner. Nord 2 går ned bratte slukter og søkk og er KAST 3.",
+      "teaserNo": "480 høgdemeter frå Kilkam idrettsanlegg: skisporet forbi barnehagen, av sporet sørover på åsryggen — og slukta dei siste hundre metrane. Ser enkelt ut, men det har gått skred her.",
+      "teaserEn": "480 metres of ascent from the Kilkam sports ground: the ski track past the kindergarten, off it southward on the ridge — and the gully for the last hundred metres. It looks easy, but avalanches have run here.",
+      "sources": [
+        "https://www.friflyt.no/topptur/harstad/nattmaalsfjellet",
+        "https://www.friflyt.no/topptur/harstad/turomraade-harstad"
+      ],
+      "confidence": "researched, verified (ok), no local avalanche bulletin read"
+    }
+  },
+  {
+    "slug": "hinnstein",
+    "verdict": "ok",
+    "corrections": [
+      "Ruta er Fri Flyts 1.10.1 Sørøst: skogsvegen frå Breivikhaugen, forbi gapahuken, skråninga mellom Litle Hinnstein og Hinnstein — som i gamle dagar var hoppbakke — og stien opp på sørvestsida.",
+      "Litle Hinnstein er registerført (SSR, Ås, 68.74064/16.48844) og måler 502,4 moh i DTM1; Hinnstein 559,5 mot publiserte 560. Skråninga mellom dei er korridorens punkt på 457.",
+      "Toppen løyser til 559,5 mot 560 — 0,5 m, ingen SUMMIT_SEED.",
+      "Skogsvegen blei etablert i 2016 av grunneigarane; kilden takkar dei ved namns nemning av tiltaket.",
+      "Kilden dokumenterer at fleire er tekne av skred på sørøstsida. Det står i guiden."
+    ],
+    "rejectReason": null,
+    "corridor": {
+      "routeId": "sorost",
+      "routeName": "Sørøst fra Breivikhaugen",
+      "routeDescriptionFull": "Frå den vesle parkeringa øvst i Breivikhaugen etter skogsvegen som grunneigarane etablerte i 2016, forbi gapahuken, opp skråninga mellom Litle Hinnstein og Hinnstein — den gamle hoppbakken — og stien opp på sørvestsida av Hinnstein.",
+      "trailhead": {
+        "name": "Breivikhaugen",
+        "lat": 68.74936,
+        "lng": 16.54959,
+        "elevationM": 51,
+        "osmEvidence": "Kartlagd parkering (OSM node/10031026086, amenity=parking, namn «Breivikhaugen») øvst i bustadfeltet, ved enden av Hinnsteinveien (OSM way/125267494). DTM1 leser 50,8 moh. Kilden ber deg ikkje stenge snuplassen."
+      },
+      "waypoints": [
+        {
+          "name": "skogsvegen fra 2016",
+          "lat": 68.7485,
+          "lng": 16.535,
+          "elevationM": 154
+        },
+        {
+          "name": "gapahuken",
+          "lat": 68.747,
+          "lng": 16.525,
+          "elevationM": 220
+        },
+        {
+          "name": "skråninga mellom Litle Hinnstein og Hinnstein",
+          "lat": 68.744,
+          "lng": 16.497,
+          "elevationM": 457
+        },
+        {
+          "name": "sørvestsida",
+          "lat": 68.7455,
+          "lng": 16.499,
+          "elevationM": 531
+        }
+      ],
+      "season": "jan–apr",
+      "aspect": "SØ",
+      "grade": 3,
+      "gradeReason": "Fri Flyt gir KAST 3 – Komplekst. Normalruta sjølv er ikkje brattare enn 30 grader i nedkjøringa, men fjellet har bratte sider, framsida held 35–45 grader, og kilden skriv at fleire er tekne av skred der. Grad 3.",
+      "roadClosedInWinter": false,
+      "hazardNotes": "Fri Flyt: KAST 3 – Komplekst. «Hinnstein har bratte sider og det er sørøstsiden som tiltrekker flest skikjørere, men vær obs på at flere er tatt av skred der.» Sørøst 2, på framsida, er 35–45 grader. Normalruta si eiga nedkjøring er ikkje brattare enn 30 grader, men startar med kratt, lite snø og steinar, og mange set skia igjen og går ned same vegen.",
+      "teaserNo": "510 høgdemeter frå Breivikhaugen: skogsvegen grunneigarane bygde i 2016, forbi gapahuken og opp den gamle hoppbakken mellom Litle Hinnstein og Hinnstein — og stien opp sørvestsida, den slake sida av eit fjell som er avskore mot nordvest.",
+      "teaserEn": "510 metres of ascent from Breivikhaugen: the forest road the landowners built in 2016, past the shelter and up the old ski jump between Litle Hinnstein and Hinnstein — and the path up the south-west side, the gentle flank of a mountain cut away to the north-west.",
+      "sources": [
+        "https://www.friflyt.no/topptur/harstad/hinnstein",
+        "https://www.friflyt.no/topptur/harstad/turomraade-harstad"
+      ],
+      "confidence": "researched, verified (ok), no local avalanche bulletin read"
+    }
+  },
+  {
+    "slug": "sorvikfjellet",
+    "verdict": "ok",
+    "corrections": [
+      "Ruta er Fri Flyts 1.12.1 Øst: frå avkjøringa på Nordvikmyra mot Kilbotn og rett inn mot toppvarden, i det enklaste terrenget litt sør for toppen.",
+      "Nordvikmyran er registerført (SSR, Myr, 68.70957/16.50659), og Hinnøyveien (OSM way/115109143) passerer 145 m frå henne på 68.71019/16.50976 — det er avkjøringa kilden nemner. Startsted-linja peikar derimot på ei lomme ved Blomgjoten, 400 m aust; korridoren startar der ein parkerer og har avkjøringa som første punkt.",
+      "Toppen løyser til 607,0 mot publiserte 600 — +7,0 m. Innanfor toleransen, men det største avviket i runden; kortet ber DTM1-høgda, som overalt elles.",
+      "Kilden dokumenterer årviss skredaktivitet i det brattaste henget. Det står i guiden.",
+      "Nordvikelva ved vegen kan vera brei på seinvinteren; kilden føreslår gummistøvlar dei første hundre metrane."
+    ],
+    "rejectReason": null,
+    "corridor": {
+      "routeId": "ost",
+      "routeName": "Øst fra Nordvikmyra",
+      "routeDescriptionFull": "Frå lomma langs Kilbotnveien ved Blomgjoten til avkjøringa på Nordvikmyra mot Kilbotn, og derfrå rett inn mot toppvarden i det enklaste terrenget litt sør for toppen.",
+      "trailhead": {
+        "name": "Kilbotnveien ved Blomgjoten",
+        "lat": 68.70869,
+        "lng": 16.52017,
+        "elevationM": 61,
+        "osmEvidence": "Vegvertex på Kilbotnveien (OSM way/115151558, highway=secondary) 270 m søraust for registerets Blomgjoten (SSR, Haug, 68.71097/16.51777). DTM1 leser 61,0 moh."
+      },
+      "waypoints": [
+        {
+          "name": "avkjøringa på Nordvikmyra",
+          "lat": 68.71019,
+          "lng": 16.50976,
+          "elevationM": 57
+        },
+        {
+          "name": "lia mot fjellet",
+          "lat": 68.705,
+          "lng": 16.498,
+          "elevationM": 63
+        },
+        {
+          "name": "over skogen",
+          "lat": 68.7,
+          "lng": 16.488,
+          "elevationM": 201
+        }
+      ],
+      "season": "jan–apr",
+      "aspect": "Ø",
+      "grade": 4,
+      "gradeReason": "Fri Flyt gir KAST 3 – Komplekst og set alpinøks og stegjern på utstyrslista, og skriv at det går skred på det brattaste henget kvart år. Grad 4 etter Gråfjell-regelen — utstyret og den årvisse skredhistorikken, ikkje vinkelen på normalruta.",
+      "roadClosedInWinter": false,
+      "hazardNotes": "Fri Flyt: KAST 3 – Komplekst. Alpinøks og stegjern. «Vær obs på at det går skred på det bratteste henget hvert år.» Renna nokre hundre meter sør for oppstigninga er om lag 150 høgdemeter og bratt. På seinvinteren kan Nordvikelva like ved vegen vera brei — kilden føreslår gummistøvlar dei første hundre metrane.",
+      "teaserNo": "560 høgdemeter frå Kilbotnveien: avkjøringa på Nordvikmyra og rett inn mot toppvarden, i det enklaste terrenget litt sør for toppen — utanom henget nordaust der det går skred kvart år.",
+      "teaserEn": "560 metres of ascent from the Kilbotnveien: the junction at Nordvikmyra and straight in towards the summit cairn, through the easiest ground just south of the top — clear of the north-east face where avalanches run every year.",
+      "sources": [
+        "https://www.friflyt.no/topptur/harstad/sorvikfjellet",
+        "https://www.friflyt.no/topptur/harstad/turomraade-harstad"
+      ],
+      "confidence": "researched, verified (ok), no local avalanche bulletin read"
+    }
   }
 ]

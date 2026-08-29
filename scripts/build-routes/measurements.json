@@ -2429,5 +2429,40 @@
       "figure": "SV er den einaste milde sida med 22,1° i snitt og 29,6 som brattaste vindauge, så V med 30,7 og 37,1 — kjeldas «store vestvendte flanke». N og NE måler 49,2–50,3 i snitt med vindauge på 66,8 og 74,7, E 62,4 berre 20–80 m ute",
       "how": "flank_probe.py <lat> <lng> --out 500 --step 10 (600 for Årbostadtinden) frå toppkoordinaten i summits.json, åtte peilingar over DTM1. Snittet er heile radialen; vindauget er det brattaste 60-metersvinduet langs den."
     }
+  ],
+  "rundfjellet-harstad": [
+    {
+      "what": "Alle kantar ved toppen (Rundfjellet i Harstad)",
+      "figure": "SV er slakast med 8,8° i snitt, så S 17,6 og E 18,8 — nordaustryggen ruta går måler 20,2. Brattast er NV og SE med 29,8 og 29,7 i snitt; S har eit 54,6-vindu 20–80 m ute og SE 50,3 berre 10–70 m ute, som er sørsida av toppen",
+      "how": "flank_probe.py <lat> <lng> --out 500 --step 10 frå toppkoordinaten i summits.json, åtte peilingar over DTM1. Snittet er heile radialen; vindauget er det brattaste 60-metersvinduet langs den."
+    }
+  ],
+  "heia": [
+    {
+      "what": "Alle kantar ved toppen (Heia)",
+      "figure": "SV er slakast med 6,1° i snitt og NØ 6,6 — ryggen ruta kjem opp. N måler 20,4 i snitt med 40,6-vindu 170–230 m ute og NV 18,9 med 46,0 160–220 m ute: det er dei 40-graders henga kjelda seier ligg utanfor dei tre skildra rutene",
+      "how": "flank_probe.py <lat> <lng> --out 500 --step 10 frå toppkoordinaten i summits.json, åtte peilingar over DTM1. Snittet er heile radialen; vindauget er det brattaste 60-metersvinduet langs den."
+    }
+  ],
+  "nattmalsfjellet": [
+    {
+      "what": "Alle kantar ved toppen (Nattmålsfjellet)",
+      "figure": "Toppen sjølv er slak til alle kantar — SE 3,3°, SV 5,1 og S 5,3 i snitt, N og NE 18,9 og 18,8. Dei brattaste vindauga ligg langt ute: NE 34,5 på 300–360 m, SE 35,3 på 440–500 og NV 31,9 på 420–480. Det er utløpssonene kjelda åtvarar mot, ikkje toppen",
+      "how": "flank_probe.py <lat> <lng> --out 500 --step 10 frå toppkoordinaten i summits.json, åtte peilingar over DTM1. Snittet er heile radialen; vindauget er det brattaste 60-metersvinduet langs den."
+    }
+  ],
+  "hinnstein": [
+    {
+      "what": "Alle kantar ved toppen (Hinnstein)",
+      "figure": "SV er slakast med 12,6° i snitt og V 12,0 — sørvestsida ruta går opp. SE, som er sida flest kjører, måler 26,9 i snitt med eit 40,4-vindu 180–240 m ute. NV har 50,5 berre 10–70 m ute, N 44,3 på 30–90 og V 42,8 på 20–80: toppen er avskoren på nordvestsida",
+      "how": "flank_probe.py <lat> <lng> --out 500 --step 10 frå toppkoordinaten i summits.json, åtte peilingar over DTM1. Snittet er heile radialen; vindauget er det brattaste 60-metersvinduet langs den."
+    }
+  ],
+  "sorvikfjellet": [
+    {
+      "what": "Alle kantar ved toppen (Sørvikfjellet)",
+      "figure": "S er slakast med 5,4° i snitt, så SV 6,6 og NV 8,6 — ruta går inn «litt sør for toppen» og det er difor. NE måler 33,9 i snitt med eit 45,3-vindu 180–240 m ute og E 32,4 med 44,7 på 350–410: det er det brattaste henget kjelda seier det går skred i kvart år",
+      "how": "flank_probe.py <lat> <lng> --out 500 --step 10 frå toppkoordinaten i summits.json, åtte peilingar over DTM1. Snittet er heile radialen; vindauget er det brattaste 60-metersvinduet langs den."
+    }
   ]
 }

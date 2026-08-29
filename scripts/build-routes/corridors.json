@@ -9158,5 +9158,232 @@
     "notes": "Fri Flyt: KAST 3 – Komplekst. Alpinøks og stegjern. Renna held 30–40 grader mesteparten av vegen og er terrengfelle-lik i botn; ho må berre gåast når snøen er stabil. Vårsnø ligg i renna til mai/juni. Sørsidevarianten fell 30–45 grader ned mot vegen ved Vasskaret, og fjellsida mot nord og nordaust er 49–50 grader i snitt — ikkje ein retur."
    }
   ]
+ },
+ "rundfjellet-harstad": {
+  "routes": [
+   {
+    "id": "nordostryggen",
+    "name": "Nordøstryggen fra Bjørnhaugen",
+    "description": "Frå parkeringa ved DNT-hytta på Bjørnhaugen sørover langs vestsida av Storvatnet, opp bekkedalen på nordsida av høyde 339 der det er skredterreng på begge sider, over Rundfjellvatnet — på land — og nordaustryggen til topps.",
+    "trailhead": {
+     "name": "Bjørnhaugen",
+     "lat": 68.65848,
+     "lng": 16.39103,
+     "elevation_m": 212.0,
+     "fullName": "Bjørnhaugen"
+    },
+    "waypoints": [
+     {
+      "name": "nordenden av Storvatnet",
+      "lat": 68.6524,
+      "lng": 16.3912,
+      "elevation_m": 155.0
+     },
+     {
+      "name": "vestsida av Storvatnet",
+      "lat": 68.6452,
+      "lng": 16.3858,
+      "elevation_m": 145.0
+     },
+     {
+      "name": "sørvestenden av Storvatnet",
+      "lat": 68.6398,
+      "lng": 16.3651,
+      "elevation_m": 140.0
+     },
+     {
+      "name": "bekkedalen nord for høyde 339",
+      "lat": 68.6398,
+      "lng": 16.343,
+      "elevation_m": 261.0
+     },
+     {
+      "name": "nordsida av Rundfjellvatnet",
+      "lat": 68.639,
+      "lng": 16.324,
+      "elevation_m": 300.0
+     },
+     {
+      "name": "nordaustryggen",
+      "lat": 68.634,
+      "lng": 16.295,
+      "elevation_m": 602.0
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: KAST 1 – Enkelt. Oppstigninga skal gå midt i bekkedalen nord for høyde 339 nettopp for å unngå skredterreng på begge sider — det er kildens eiga formulering, og den einaste hazard-instruksen ho gir. Nedkjøringa er stort sett 20–25 grader med parti på 30.",
+    "avoidWater": true
+   }
+  ]
+ },
+ "heia": {
+  "routes": [
+   {
+    "id": "ost-1",
+    "name": "Øst 1 fra Krafthallen",
+    "description": "Frå parkeringa ved fotballbanen ved Krafthallen: venstresida av myra langs stien i skogen, ut på det opne feltet der sommarstien går, forbi Maistua og opp den naturlege traseen litt sørover — og over tregrensa langs ryggen til toppen.",
+    "trailhead": {
+     "name": "Fotballbanen ved Krafthallen",
+     "lat": 68.7636,
+     "lng": 16.54315,
+     "elevation_m": 63.0,
+     "fullName": "Fotballbanen ved Krafthallen"
+    },
+    "waypoints": [
+     {
+      "name": "venstresida av myra",
+      "lat": 68.7615,
+      "lng": 16.534,
+      "elevation_m": 113.0
+     },
+     {
+      "name": "det opne feltet",
+      "lat": 68.761,
+      "lng": 16.526,
+      "elevation_m": 205.0
+     },
+     {
+      "name": "Maistua",
+      "lat": 68.76156,
+      "lng": 16.51962,
+      "elevation_m": 321.0
+     },
+     {
+      "name": "ryggen over tregrensa",
+      "lat": 68.7585,
+      "lng": 16.509,
+      "elevation_m": 481.0
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: KAST 1 – Enkelt. Nedkjøringane på dei tre skildra rutene er for det meste 20–30 grader, men kilden er tydeleg på at ein utanfor dei lett kan oppsøkje heng på 40 grader — og at det berre skal gjerast når snøen er stabil. Toppryggen kan vera avblåst og bar eller vindpåverka, og dei fleste stoppar eit stykke nord for toppen."
+   }
+  ]
+ },
+ "nattmalsfjellet": {
+  "routes": [
+   {
+    "id": "nord-1",
+    "name": "Nord 1 fra Kilkam",
+    "description": "Frå den store parkeringa ved Kilkam idrettsanlegg opp skisporet forbi barnehagen, av sporet sørover på åsryggen før Nattmålsfjellvatnet, på høgresida (vestsida) av den vesle kollen — og det store opne området opp mot toppen, med dei siste 100 høgdemetrane i slukta som er forlenginga av elva ned mot sørsida av Nattmålsfjellvatnet.",
+    "trailhead": {
+     "name": "Kilkam idrettsanlegg",
+     "lat": 68.71411,
+     "lng": 16.50172,
+     "elevation_m": 85.0,
+     "fullName": "Kilkam idrettsanlegg"
+    },
+    "waypoints": [
+     {
+      "name": "skisporet forbi barnehagen",
+      "lat": 68.7155,
+      "lng": 16.488,
+      "elevation_m": 89.0
+     },
+     {
+      "name": "åsryggen før Nattmålsfjellvatnet",
+      "lat": 68.7165,
+      "lng": 16.473,
+      "elevation_m": 237.0
+     },
+     {
+      "name": "vestsida av den vesle kollen",
+      "lat": 68.7155,
+      "lng": 16.464,
+      "elevation_m": 279.0
+     },
+     {
+      "name": "slukta sør for Nattmålsfjellvatnet",
+      "lat": 68.7135,
+      "lng": 16.459,
+      "elevation_m": 393.0
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: KAST 2 – Utfordrende på Nord 1; alle andre oppstigningar på nordsida er KAST 3. «Selv om Nattmålsfjellet ser enkelt ut er det flere plasser det kan gå skred, og det har også gått skred der.» Nedkjøringa er ikkje brattare enn 30 grader, men er omgitt av brattare område, og ein er av og til i utløpssoner. Nord 2 går ned bratte slukter og søkk og er KAST 3."
+   }
+  ]
+ },
+ "hinnstein": {
+  "routes": [
+   {
+    "id": "sorost",
+    "name": "Sørøst fra Breivikhaugen",
+    "description": "Frå den vesle parkeringa øvst i Breivikhaugen etter skogsvegen som grunneigarane etablerte i 2016, forbi gapahuken, opp skråninga mellom Litle Hinnstein og Hinnstein — den gamle hoppbakken — og stien opp på sørvestsida av Hinnstein.",
+    "trailhead": {
+     "name": "Breivikhaugen",
+     "lat": 68.74936,
+     "lng": 16.54959,
+     "elevation_m": 51.0,
+     "fullName": "Breivikhaugen"
+    },
+    "waypoints": [
+     {
+      "name": "skogsvegen fra 2016",
+      "lat": 68.7485,
+      "lng": 16.535,
+      "elevation_m": 154.0
+     },
+     {
+      "name": "gapahuken",
+      "lat": 68.747,
+      "lng": 16.525,
+      "elevation_m": 220.0
+     },
+     {
+      "name": "skråninga mellom Litle Hinnstein og Hinnstein",
+      "lat": 68.744,
+      "lng": 16.497,
+      "elevation_m": 457.0
+     },
+     {
+      "name": "sørvestsida",
+      "lat": 68.7455,
+      "lng": 16.499,
+      "elevation_m": 531.0
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: KAST 3 – Komplekst. «Hinnstein har bratte sider og det er sørøstsiden som tiltrekker flest skikjørere, men vær obs på at flere er tatt av skred der.» Sørøst 2, på framsida, er 35–45 grader. Normalruta si eiga nedkjøring er ikkje brattare enn 30 grader, men startar med kratt, lite snø og steinar, og mange set skia igjen og går ned same vegen."
+   }
+  ]
+ },
+ "sorvikfjellet": {
+  "routes": [
+   {
+    "id": "ost",
+    "name": "Øst fra Nordvikmyra",
+    "description": "Frå lomma langs Kilbotnveien ved Blomgjoten til avkjøringa på Nordvikmyra mot Kilbotn, og derfrå rett inn mot toppvarden i det enklaste terrenget litt sør for toppen.",
+    "trailhead": {
+     "name": "Kilbotnveien ved Blomgjoten",
+     "lat": 68.70869,
+     "lng": 16.52017,
+     "elevation_m": 61.0,
+     "fullName": "Kilbotnveien ved Blomgjoten"
+    },
+    "waypoints": [
+     {
+      "name": "avkjøringa på Nordvikmyra",
+      "lat": 68.71019,
+      "lng": 16.50976,
+      "elevation_m": 57.0
+     },
+     {
+      "name": "lia mot fjellet",
+      "lat": 68.705,
+      "lng": 16.498,
+      "elevation_m": 63.0
+     },
+     {
+      "name": "over skogen",
+      "lat": 68.7,
+      "lng": 16.488,
+      "elevation_m": 201.0
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: KAST 3 – Komplekst. Alpinøks og stegjern. «Vær obs på at det går skred på det bratteste henget hvert år.» Renna nokre hundre meter sør for oppstigninga er om lag 150 høgdemeter og bratt. På seinvinteren kan Nordvikelva like ved vegen vera brei — kilden føreslår gummistøvlar dei første hundre metrane."
+   }
+  ]
  }
 }
