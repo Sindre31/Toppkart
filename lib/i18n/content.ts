@@ -378,6 +378,16 @@ export const TOUR_TEASER_EN: Record<string, string> = {
     "720 metres of ascent from Toppentunnelen: the east side of Hallevikelva, south of Toppskarvatnet on dry land — and the ridge south to Toppen, the mountain the tunnel is named after.",
   skjellesvikgalten:
     "1020 metres of ascent from Skjellesvika: the tractor road from the harbour and the broad, gentle east ridge west — to the summit the source calls 800 and the register measures at 987.",
+  lakselvtindan:
+    "810 metres of ascent from the Møysalen car park on the E10: the north shore of Storvatnet, up between Tverrelva and Lakselva, past spot height 258 — and the ridge east of Lakselva to the top, the gentlest summit of the round.",
+  forkledalstindan:
+    "1010 metres of ascent from the E10 at Litlvatnet: the north side of spot height 462 and the mountainside up to the 700 m top where the source's ski tour turns — and the traverse on over the fore-summit, with the east side as the way round the hard climbing.",
+  forselvtinden:
+    "1170 metres of ascent and 8.5 km from the Lofast, over the summit of another tour in the catalogue: up Lakselvtindan first, west to due north of spot height 790 — and the south ridge at the end, with 284 metres given back along the way.",
+  kvasstinden:
+    "930 metres of ascent from the E10 at Austerstraumen: the bogs south, down into Trolldalen north of spot height 146 — and the west ridge to an airy summit, where 20–25 degrees is the rule and the axe is for the last few metres.",
+  arbostadtinden:
+    "1170 metres of ascent in four kilometres from fv. 7804: the tractor road south from the old school, west of Storelva to the flat by the cabin — and the slanting couloir that is the landmark, 30–40 degrees all the way to the cairn.",
 
 };
 

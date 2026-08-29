@@ -1454,5 +1454,45 @@
     "summit_dtm": 987.0,
     "claims": 987,
     "stored_off_km": 0.0
+  },
+  "lakselvtindan": {
+    "name": "Lakselvtindan",
+    "lat": 68.4926,
+    "lng": 15.53235,
+    "summit_dtm": 747.0,
+    "claims": 748,
+    "stored_off_km": 0.03
+  },
+  "forkledalstindan": {
+    "name": "Forkledalstindan",
+    "lat": 68.49422,
+    "lng": 15.49073,
+    "summit_dtm": 900.7,
+    "claims": 902,
+    "stored_off_km": 0.02
+  },
+  "forselvtinden": {
+    "name": "Forselvtinden",
+    "lat": 68.50934,
+    "lng": 15.50105,
+    "summit_dtm": 906.7,
+    "claims": 906,
+    "stored_off_km": 0.02
+  },
+  "kvasstinden": {
+    "name": "Kvasstinden",
+    "lat": 68.43483,
+    "lng": 15.55651,
+    "summit_dtm": 831.6,
+    "claims": 831,
+    "stored_off_km": 0.01
+  },
+  "arbostadtinden": {
+    "name": "Årbostadtinden",
+    "lat": 68.90861,
+    "lng": 17.3481,
+    "summit_dtm": 1179.4,
+    "claims": 1179,
+    "stored_off_km": 0.01
   }
 }

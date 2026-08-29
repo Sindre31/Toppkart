@@ -3535,5 +3535,129 @@
    "check_new_corridors: lomme/serviceveg langs fv. 8670 ved hamna på punktet."
   ],
   "notes": ""
+ },
+ "lakselvtindan": {
+  "season": "feb–apr",
+  "aspect": "SV",
+  "grade": 3,
+  "gradeReason": "Fri Flyt gir KAST 2 – Utfordrende og set alpinøks og stegjern på utstyrslista. Terrenget på ruta er mildt — flankesveipet måler 17,7° snitt på SV og 5,4° på NV — så grad 3 kjem av utstyrskravet og skarelaget kilden åtvarar mot, ikkje av bratthet. Gråfjell-regelen.",
+  "roadClosedInWinter": false,
+  "teaserNo": "810 høgdemeter frå Møysalens parkering på E10: nordsida av Storvatnet, opp mellom Tverrelva og Lakselva, forbi høyde 258 — og ryggen aust for Lakselva til topps, det mildaste toppartiet i runden.",
+  "teaserEn": "810 metres of ascent from the Møysalen car park on the E10: the north shore of Storvatnet, up between Tverrelva and Lakselva, past spot height 258 — and the ridge east of Lakselva to the top, the gentlest summit of the round.",
+  "hazardNotes": "Fri Flyt: KAST 2 – Utfordrende. Alpinøks og stegjern; kilden nemner at det kan vera skare, så skarejern er tilrådd. Variantane er brattare enn normalruta: Rødhammarrenna på austsida er KAST 3 med eit 45-graders brattheng inn og skredterreng heile renna gjennom, og vestsida ned mot vann 355 mellom Forselvtinden og Forkledalstinden har eit parti på 30–40 grader.",
+  "sources": [
+   "https://www.friflyt.no/topptur/harstad/lakselvtindan",
+   "https://www.friflyt.no/topptur/harstad/forkledalen",
+   "https://www.friflyt.no/topptur/harstad/turomraade-harstad"
+  ],
+  "confidence": "researched, verified (ok), no local avalanche bulletin read",
+  "corrections": [
+   "Ruta er Fri Flyts 9.4.1 Sørsiden: frå Lofast-parkeringa over Storvatnet, oppstigning nordover midt mellom Tverrelva og Lakselva, forbi høyde 258, flatt terreng innover og kryssing av Lakselva mot aust før ryggen til topps.",
+   "Høyde 258 er funnen i DTM1: 258,3 moh på 68.47657/15.48063, midt mellom Tverrelva (SSR 68.47226/15.46580) og Lakselva (SSR 68.47945/15.49226). Korridoren går nord for den, som kilden seier.",
+   "Kilden skriv «kryss Storvatnet» — appen legg linja på land. Same bok, same parkering: rutebeskrivinga for Forkledalen (9.11.1) frå denne parkeringa seier «følger man Nordsiden av Storvatnet». Landlinja er bokas eiga alternativ, ikkje ei oppfinning. avoidWater er sett.",
+   "Toppen løyser til 747,0 mot publiserte 748 — 1,0 m, ingen SUMMIT_SEED.",
+   "Fri Flyt: KAST 2 – Utfordrende, alpinøks og stegjern. Flankesveipet gir det mildaste toppartiet i runden: NV 5,4° snitt, SV 17,7°, N 16,0°. Grad 3 etter Gråfjell-regelen — utstyrslista, ikkje bratthet.",
+   "check_new_corridors: parkeringa er kartlagt i OSM (way/361322473) og alt i bruk av to turar."
+  ],
+  "notes": ""
+ },
+ "forkledalstindan": {
+  "season": "feb–apr",
+  "aspect": "S",
+  "grade": 4,
+  "gradeReason": "9.6.1 er KAST 2 opp til 700, men traversen vidare til toppen er KAST 3 – Komplekst med mogleg nedklatring, og flankesveipet finn 37–60-graders vindauge i alle åtte retningar innanfor 100 m av varden. Alpinøks og stegjern på kildens liste. Grad 4.",
+  "roadClosedInWinter": false,
+  "teaserNo": "1010 høgdemeter frå E10 ved Litlvatnet: nordsida av høyde 462 og fjellsida opp til toppen på 700, der kildens skitur snur — og traversen vidare over fortoppen, med austsida som utvegen frå den vanskelege klatringa.",
+  "teaserEn": "1010 metres of ascent from the E10 at Litlvatnet: the north side of spot height 462 and the mountainside up to the 700 m top where the source's ski tour turns — and the traverse on over the fore-summit, with the east side as the way round the hard climbing.",
+  "hazardNotes": "Fri Flyt: KAST 2 opp til 700-toppen, KAST 3 – Komplekst på traversen vidare. Alpinøks og stegjern. Siste del opp til toppen bør takast på austsida i starten for å sleppe vanskeleg klatring, og det må vera stabile forhold — partiet er svært bratt og eksponert, og kilden viser flakskred tett under toppen. Henget ned frå høyde 790 til vann 355 på nordsida er KAST 3, og vestsida ned i Forkledalen er skredutsett frå overliggande terreng nesten heile vegen.",
+  "sources": [
+   "https://www.friflyt.no/topptur/harstad/forkledalstindan",
+   "https://www.friflyt.no/topptur/harstad/lakselvtindan",
+   "https://www.friflyt.no/topptur/harstad/turomraade-harstad"
+  ],
+  "confidence": "researched, verified (ok), no local avalanche bulletin read",
+  "corrections": [
+   "Ruta er Fri Flyts 9.6.1 Sydsiden opp til 700-toppen og 9.6.3 Traversen vidare til hovudtoppen: same tilnærming som Lakselvtindan til nord for høyde 258, så oppstigning i det slakaste terrenget mot vest, nordsida av høyde 462, fjellsida nordover og nordaustover til toppen på 700 — og derfrå ryggen.",
+   "Høyde 462 er funnen i DTM1: 461,1 moh på 68.47884/15.47186. 700-toppen er 706,7 moh på 68.48642/15.48695. Begge på ein desimeter av kildens tal.",
+   "Toppen løyser til 900,7 mot publiserte 902 — 1,3 m, ingen SUMMIT_SEED.",
+   "Fri Flyt: KAST 2 på 9.6.1, men KAST 3 – Komplekst på traversen frå 700 til toppen, med moglegheit for nedklatring på snø eller berg. Flankesveipet forklarer kvifor: alle åtte retningar har eit 37–60-graders vindauge innanfor dei første 100 m av varden. Grad 4.",
+   "Kilden er tydeleg på at siste del til toppen bør takast på austsida i starten «siden man slipper vanskelig klatring» — det står i guiden.",
+   "Kilden viser eit bilete av flakskred tett under toppen. Det står i guiden."
+  ],
+  "notes": ""
+ },
+ "forselvtinden": {
+  "season": "feb–apr",
+  "aspect": "S",
+  "grade": 4,
+  "gradeReason": "Fri Flyt gir KAST 2 – Utfordrende, men ber deg vurdere om skia skal vera med opp og set alpinøks og stegjern på lista. Toppartiet er luftig: flankesveipet måler 40,8° i det brattaste 60-metersvindauget på sydryggen, og over 60° på N, NV og V. Grad 4.",
+  "roadClosedInWinter": false,
+  "teaserNo": "1170 høgdemeter og 8,5 kilometer frå Lofast, over toppen av ein annan tur i katalogen: opp Lakselvtindan først, vestover til rett nord av høyde 790 — og sydryggen til slutt, med 284 høgdemeter gitt frå deg undervegs.",
+  "teaserEn": "1170 metres of ascent and 8.5 km from the Lofast, over the summit of another tour in the catalogue: up Lakselvtindan first, west to due north of spot height 790 — and the south ridge at the end, with 284 metres given back along the way.",
+  "hazardNotes": "Fri Flyt: KAST 2 – Utfordrende. Alpinøks og stegjern tilrådd, og eit bratt parti rett før toppen der mange ber skia. Nordover langs høgdedraget skal ein halde seg på vestsida — det er bratte parti rett før oppstigninga tek til. Nedkjøringa går same veg, for det meste under 20 grader med eit par parti på 25–30. Toppen sjølv fell 45–48 grader i snitt mot nord, nordvest og vest.",
+  "sources": [
+   "https://www.friflyt.no/topptur/harstad/forselvtinden",
+   "https://www.friflyt.no/topptur/harstad/lakselvtindan",
+   "https://www.friflyt.no/topptur/harstad/turomraade-harstad"
+  ],
+  "confidence": "researched, verified (ok), no local avalanche bulletin read",
+  "corrections": [
+   "Ruta er Fri Flyts 9.5.1 Sydryggen: opp på Lakselvtindan først, så vestover til ein står rett nord av høyde 790, vidare nordover på nedsida (vestsida) av høgdedraget, og til slutt ryggen mot Forselvtinden.",
+   "Høyde 790 er funnen i DTM1: 790,6 moh på 68.49646/15.50730. Korridoren har vendepunktet rett nord av den, på 68.49850/15.50730 (754 moh).",
+   "Toppen løyser til 906,7 mot publiserte 906 — 0,7 m, ingen SUMMIT_SEED.",
+   "Dette er appens første rute som går over toppen av ein annan tur i katalogen: Lakselvtindan (747) ligg på linja. Kildens 1050 høydemeter mot 883 netto frå parkeringa er nettopp opp-og-ned-en over Lakselvtindan og høgdedraget vidare.",
+   "Fri Flyt: KAST 2 – Utfordrende, alpinøks og stegjern, «flott luftig parti som har ett bratt parti før toppen» og «vurder om skiene skal være med opp». Flankesveipet på toppen måler 22,5° snitt på S med eit 40,8-graders vindauge 70–130 m ute — det bratte partiet, målt. Grad 4."
+  ],
+  "notes": ""
+ },
+ "kvasstinden": {
+  "season": "feb–apr",
+  "aspect": "V",
+  "grade": 2,
+  "gradeReason": "Fri Flyt gir KAST 1 – Enkelt, og nedkjøringa er «det aller meste rundt 20–25 grader» med nokre parti over 30. Men alpinøks og stegjern står på utstyrslista og toppen er luftig — grad 2 etter Gråfjell-regelen, ikkje 1.",
+  "roadClosedInWinter": false,
+  "teaserNo": "930 høgdemeter frå E10 ved Austerstraumen: myrene sørover, ned i Trolldalen nord for høyde 146 — og vestryggen til den luftige toppen, der 20–25 grader er regelen og øksa er for dei siste metrane.",
+  "teaserEn": "930 metres of ascent from the E10 at Austerstraumen: the bogs south, down into Trolldalen north of spot height 146 — and the west ridge to an airy summit, where 20–25 degrees is the rule and the axe is for the last few metres.",
+  "hazardNotes": "Fri Flyt: KAST 1 – Enkelt. Parkeringa er ikkje alltid brøytt tidleg i sesongen. Toppen er luftig, og kilden ber deg vurdere om skia skal setjast igjen eller takast med opp for nedkjøring på nordsida. Nordsida er den brattare varianten, KAST 3, med toppheng på 30–40 grader. Mykje vind- og solpåverka snø.",
+  "sources": [
+   "https://www.friflyt.no/topptur/harstad/kvasstinden",
+   "https://www.friflyt.no/topptur/harstad/turomraade-harstad"
+  ],
+  "confidence": "researched, verified (ok), no local avalanche bulletin read",
+  "corrections": [
+   "Lødingen har to registerførte Kvasstinden 4,3 km frå kvarandre. Den nordvestre (SSR 68.43483/15.55682) klatrar til 831,6 i DTM1 mot bokas 831; den søraustre (68.42418/15.60518) måler 913. Publisert høgd namngir toppen — same mekanismen som på Melåaksla, og motsetninga til Skjellesvikgalten.",
+   "Ruta er Fri Flyts 9.9.1 Vestsiden: frå parkeringa følgjer ein myrene sørover, overgang til Trolldalen rett nord av høyde 146, og siste høgdemetrane på ryggen frå vestsida.",
+   "Høyde 146 er funnen i DTM1: 148,4 moh på 68.44652/15.52014. Korridorens overgangspunkt ligg rett nord av den, på 68.44780/15.52050 (144 moh).",
+   "Boka skriv både «Stor parkeringsplass langs E10 på østsiden av brua over Austerstraumen» og «Fra parkeringa på Husjordøya». Dei to kan ikkje begge stemme: Husjordøya (SSR 68.45699/15.50829) ligg mellom Vesterstraumen og Austerstraumen, og den kartlagde parkeringa (OSM way/179095783, 68.45746/15.51881, DTM1 3,0 moh) ligg aust for Austerstraumen bru — altså på fastlandssida, ikkje på øya. Korridoren følgjer parkeringsteksten, som er den som let seg etterprøve.",
+   "Fri Flyt: KAST 1 – Enkelt både i hovudet og på 9.9.1, men alpinøks og stegjern står på utstyrslista og kilden kallar toppen luftig. Grad 2 etter Gråfjell-regelen.",
+   "Kildens 910 høydemeter mot 828 netto frå sjøen er dei ~80 metrane ruta gir tilbake når ho fell frå myrryggen ned i Trolldalen."
+  ],
+  "notes": ""
+ },
+ "arbostadtinden": {
+  "season": "feb–apr",
+  "aspect": "V",
+  "grade": 4,
+  "gradeReason": "Fri Flyt gir KAST 3 – Komplekst med alpinøks og stegjern, og skrårenna er «mesteparten mellom 30-40 grader» heile vegen til varden. Grad 4.",
+  "roadClosedInWinter": false,
+  "teaserNo": "1170 høgdemeter på fire kilometer frå fv. 7804: traktorvegen sørover frå den gamle skolen, vest for Storelva til flata ved hytta — og skrårenna som er landemerket, 30–40 grader heilt til varden.",
+  "teaserEn": "1170 metres of ascent in four kilometres from fv. 7804: the tractor road south from the old school, west of Storelva to the flat by the cabin — and the slanting couloir that is the landmark, 30–40 degrees all the way to the cairn.",
+  "hazardNotes": "Fri Flyt: KAST 3 – Komplekst. Alpinøks og stegjern. Renna held 30–40 grader mesteparten av vegen og er terrengfelle-lik i botn; ho må berre gåast når snøen er stabil. Vårsnø ligg i renna til mai/juni. Sørsidevarianten fell 30–45 grader ned mot vegen ved Vasskaret, og fjellsida mot nord og nordaust er 49–50 grader i snitt — ikkje ein retur.",
+  "sources": [
+   "https://www.friflyt.no/topptur/harstad/arbostadtinden",
+   "https://www.friflyt.no/topptur/harstad/turomraade-harstad"
+  ],
+  "confidence": "researched, verified (ok), no local avalanche bulletin read",
+  "corrections": [
+   "Ruta er Fri Flyts hovudbeskriving: traktorvegen som snirklar seg sørover frå den gamle skolen, opp mot det lågaste punktet men til høgre (vest) for Storelva, flata der hytta ved foten kjem til syne — og renna forbi hytta til topps.",
+   "Startsted er «liten lomme på nedsiden av 7804 der Storelva renner ut». Fv. 7804 er OSM-vegen Andørjaveien (way/37310076); Storelvas utløp ligg ved Klemmesteinvika, og vegvertexen på 68.92368/17.31954 leser 9,1 moh i DTM1. Traktorvegen sørover er kartlagt som OSM way/568726169.",
+   "Heile ruta er kartlagt i OSM som sti (way/227135840), frå vegen ved Storelva til 40 m frå varden. DTM1 langs den stien gir 9 → 44 → 327 → 531 → 593 → 630 → 689 → 726 → 813 → 978 → 1174 moh — monotont, og 1170 m brutto, nøyaktig kildens «Høydemeter: 1170».",
+   "«Hold til høyre for Storelva» er stadfesta: Storelva (OSM way/374887831) ligg aust for stien heile vegen opp.",
+   "Toppen løyser til 1179,4 mot publiserte 1179 — 0,4 m, ingen SUMMIT_SEED.",
+   "Flankesveipet forklarer kvifor ruta kjem sørvestfrå: SV måler 22,1° snitt med 29,6° som brattaste vindauge, V 30,7°, medan N og NØ ligg på 49–50° snitt med 67–75-graders vindauge. Nordsida er ein vegg, ikkje ein veg.",
+   "Fri Flyt: KAST 3 – Komplekst, alpinøks og stegjern, og renna sjølv er «mesteparten mellom 30-40 grader». Grad 4.",
+   "Aspekt V, ikkje SV: kilden kallar sjølv det øvste partiet «den store vestvendte flanken øverst på Årbostadtinden», og route_metrics måler V på den øvre halvdelen av linja."
+  ],
+  "notes": ""
  }
 }

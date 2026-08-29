@@ -318,6 +318,17 @@
   "season": "jan–apr",
   "hasGuide": false
  },
+ "arbostadtinden": {
+  "name": "Årbostadtinden",
+  "region": "Harstad",
+  "summitM": 1179,
+  "verticalM": 1170,
+  "duration": "4–6 t",
+  "grade": 4,
+  "aspect": "V",
+  "season": "feb–apr",
+  "hasGuide": false
+ },
  "klaptinden": {
   "name": "Klåptinden",
   "region": "Harstad",
@@ -637,6 +648,17 @@
   "season": "jan–mai",
   "hasGuide": true
  },
+ "forselvtinden": {
+  "name": "Forselvtinden",
+  "region": "Vesterålen",
+  "summitM": 907,
+  "verticalM": 1170,
+  "duration": "6–8 t",
+  "grade": 4,
+  "aspect": "S",
+  "season": "feb–apr",
+  "hasGuide": false
+ },
  "middagsfjellet": {
   "name": "Middagsfjellet",
   "region": "Harstad",
@@ -667,6 +689,28 @@
   "duration": "5–7 t",
   "grade": 4,
   "aspect": "Ø",
+  "season": "feb–apr",
+  "hasGuide": false
+ },
+ "forkledalstindan": {
+  "name": "Forkledalstindan",
+  "region": "Vesterålen",
+  "summitM": 901,
+  "verticalM": 1010,
+  "duration": "4–6 t",
+  "grade": 4,
+  "aspect": "S",
+  "season": "feb–apr",
+  "hasGuide": false
+ },
+ "lakselvtindan": {
+  "name": "Lakselvtindan",
+  "region": "Vesterålen",
+  "summitM": 747,
+  "verticalM": 810,
+  "duration": "4–6 t",
+  "grade": 3,
+  "aspect": "SV",
   "season": "feb–apr",
   "hasGuide": false
  },
@@ -711,6 +755,17 @@
   "duration": "4–6 t",
   "grade": 3,
   "aspect": "N",
+  "season": "feb–apr",
+  "hasGuide": false
+ },
+ "kvasstinden": {
+  "name": "Kvasstinden",
+  "region": "Vesterålen",
+  "summitM": 832,
+  "verticalM": 930,
+  "duration": "4–6 t",
+  "grade": 2,
+  "aspect": "V",
   "season": "feb–apr",
   "hasGuide": false
  },

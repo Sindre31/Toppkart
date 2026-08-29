@@ -8904,5 +8904,259 @@
     "notes": "Fri Flyt: KAST 3 – Komplekst. Alpinøks og stegjern. Hard vindpakka snø; store skavlar som kan kollapse over rygglinene. Sydrennene (30–45 grader) krev stabil snø — dødsulykke i februar 2008 — og nordsida mot Skipsdalen er utvegen."
    }
   ]
+ },
+ "lakselvtindan": {
+  "routes": [
+   {
+    "id": "sorsiden",
+    "name": "Sørsiden fra Lofast",
+    "description": "Frå den store E10-parkeringa sør for Litlvatnet langs nordsida av Storvatnet, opp nordover midt mellom Tverrelva og Lakselva, nord for høyde 258, over det flate partiet innover til det brattnar, kryssing av Lakselva mot aust — og ryggen heilt opp til toppen.",
+    "trailhead": {
+     "name": "Parkeringa langs E10 sør for Litlvatnet",
+     "lat": 68.46535,
+     "lng": 15.44134,
+     "elevation_m": 23.0,
+     "fullName": "Parkeringa langs E10 sør for Litlvatnet"
+    },
+    "waypoints": [
+     {
+      "name": "nordsida av Storvatnet",
+      "lat": 68.471,
+      "lng": 15.46,
+      "elevation_m": 85.0
+     },
+     {
+      "name": "mellom Tverrelva og Lakselva",
+      "lat": 68.475,
+      "lng": 15.475,
+      "elevation_m": 158.0
+     },
+     {
+      "name": "nord for høyde 258",
+      "lat": 68.4772,
+      "lng": 15.4818,
+      "elevation_m": 231.0
+     },
+     {
+      "name": "Lakselva kryssast mot aust",
+      "lat": 68.4805,
+      "lng": 15.495,
+      "elevation_m": 217.0
+     },
+     {
+      "name": "ryggen mot toppen",
+      "lat": 68.487,
+      "lng": 15.513,
+      "elevation_m": 481.0
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: KAST 2 – Utfordrende. Alpinøks og stegjern; kilden nemner at det kan vera skare, så skarejern er tilrådd. Variantane er brattare enn normalruta: Rødhammarrenna på austsida er KAST 3 med eit 45-graders brattheng inn og skredterreng heile renna gjennom, og vestsida ned mot vann 355 mellom Forselvtinden og Forkledalstinden har eit parti på 30–40 grader.",
+    "avoidWater": true
+   }
+  ]
+ },
+ "forkledalstindan": {
+  "routes": [
+   {
+    "id": "sydsiden",
+    "name": "Sydsiden og traversen fra Lofast",
+    "description": "Frå E10-parkeringa sør for Litlvatnet langs nordsida av Storvatnet og opp mot høyde 258 som på Lakselvtindan, så oppstigning i det slakaste terrenget mot vest, over nordsida av høyde 462, fjellsida nordover og deretter nordaustover til toppen på 700 — og ryggen vidare over fortoppen til Forkledalstinden.",
+    "trailhead": {
+     "name": "Parkeringa langs E10 sør for Litlvatnet",
+     "lat": 68.46535,
+     "lng": 15.44134,
+     "elevation_m": 23.0,
+     "fullName": "Parkeringa langs E10 sør for Litlvatnet"
+    },
+    "waypoints": [
+     {
+      "name": "nordsida av Storvatnet",
+      "lat": 68.471,
+      "lng": 15.46,
+      "elevation_m": 85.0
+     },
+     {
+      "name": "nord for høyde 258",
+      "lat": 68.4772,
+      "lng": 15.4818,
+      "elevation_m": 231.0
+     },
+     {
+      "name": "nordsida av høyde 462",
+      "lat": 68.48,
+      "lng": 15.472,
+      "elevation_m": 400.0
+     },
+     {
+      "name": "fjellsida mot nord",
+      "lat": 68.484,
+      "lng": 15.477,
+      "elevation_m": 509.0
+     },
+     {
+      "name": "toppen på 700",
+      "lat": 68.48642,
+      "lng": 15.48695,
+      "elevation_m": 707.0
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: KAST 2 opp til 700-toppen, KAST 3 – Komplekst på traversen vidare. Alpinøks og stegjern. Siste del opp til toppen bør takast på austsida i starten for å sleppe vanskeleg klatring, og det må vera stabile forhold — partiet er svært bratt og eksponert, og kilden viser flakskred tett under toppen. Henget ned frå høyde 790 til vann 355 på nordsida er KAST 3, og vestsida ned i Forkledalen er skredutsett frå overliggande terreng nesten heile vegen.",
+    "avoidWater": true
+   }
+  ]
+ },
+ "forselvtinden": {
+  "routes": [
+   {
+    "id": "sydryggen",
+    "name": "Sydryggen over Lakselvtindan",
+    "description": "Frå E10-parkeringa sør for Litlvatnet opp ruta til Lakselvtindan, så vestover langs høgdedraget til ein står rett nord av høyde 790, vidare nordover på nedsida (vestsida) av draget der det er nokre bratte parti — og sydryggen opp til Forselvtinden.",
+    "trailhead": {
+     "name": "Parkeringa langs E10 sør for Litlvatnet",
+     "lat": 68.46535,
+     "lng": 15.44134,
+     "elevation_m": 23.0,
+     "fullName": "Parkeringa langs E10 sør for Litlvatnet"
+    },
+    "waypoints": [
+     {
+      "name": "nordsida av Storvatnet",
+      "lat": 68.471,
+      "lng": 15.46,
+      "elevation_m": 85.0
+     },
+     {
+      "name": "nord for høyde 258",
+      "lat": 68.4772,
+      "lng": 15.4818,
+      "elevation_m": 231.0
+     },
+     {
+      "name": "Lakselva kryssast mot aust",
+      "lat": 68.4805,
+      "lng": 15.495,
+      "elevation_m": 217.0
+     },
+     {
+      "name": "Lakselvtindan 747",
+      "lat": 68.4926,
+      "lng": 15.53235,
+      "elevation_m": 747.0
+     },
+     {
+      "name": "rett nord av høyde 790",
+      "lat": 68.4985,
+      "lng": 15.5073,
+      "elevation_m": 754.0
+     },
+     {
+      "name": "vestsida av høgdedraget",
+      "lat": 68.503,
+      "lng": 15.5035,
+      "elevation_m": 668.0
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: KAST 2 – Utfordrende. Alpinøks og stegjern tilrådd, og eit bratt parti rett før toppen der mange ber skia. Nordover langs høgdedraget skal ein halde seg på vestsida — det er bratte parti rett før oppstigninga tek til. Nedkjøringa går same veg, for det meste under 20 grader med eit par parti på 25–30. Toppen sjølv fell 45–48 grader i snitt mot nord, nordvest og vest.",
+    "avoidWater": true
+   }
+  ]
+ },
+ "kvasstinden": {
+  "routes": [
+   {
+    "id": "vestsiden",
+    "name": "Vestsiden fra Austerstraumen",
+    "description": "Frå den store E10-parkeringa aust for brua over Austerstraumen sørover langs myrene med jamn stigning, overgang til Trolldalen rett nord av høyde 146, opp dalen mot søraust — og dei siste høgdemetrane på ryggen frå vestsida.",
+    "trailhead": {
+     "name": "Parkeringa ved Austerstraumen bru",
+     "lat": 68.45746,
+     "lng": 15.51881,
+     "elevation_m": 3.0,
+     "fullName": "Parkeringa ved Austerstraumen bru"
+    },
+    "waypoints": [
+     {
+      "name": "myrene sørover",
+      "lat": 68.4505,
+      "lng": 15.5215,
+      "elevation_m": 146.0
+     },
+     {
+      "name": "overgang til Trolldalen, nord for høyde 146",
+      "lat": 68.4478,
+      "lng": 15.5205,
+      "elevation_m": 144.0
+     },
+     {
+      "name": "Trolldalen",
+      "lat": 68.4438,
+      "lng": 15.528,
+      "elevation_m": 96.0
+     },
+     {
+      "name": "vestryggen",
+      "lat": 68.438,
+      "lng": 15.548,
+      "elevation_m": 554.0
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: KAST 1 – Enkelt. Parkeringa er ikkje alltid brøytt tidleg i sesongen. Toppen er luftig, og kilden ber deg vurdere om skia skal setjast igjen eller takast med opp for nedkjøring på nordsida. Nordsida er den brattare varianten, KAST 3, med toppheng på 30–40 grader. Mykje vind- og solpåverka snø.",
+    "avoidWater": true
+   }
+  ]
+ },
+ "arbostadtinden": {
+  "routes": [
+   {
+    "id": "renna",
+    "name": "Renna fra Årbostad",
+    "description": "Frå lomma langs fv. 7804 der Storelva renn ut: traktorvegen som snirklar seg sørover frå den gamle skolen, vidare oppover mot det lågaste punktet men på høgresida (vest) av Storelva, over skoggrensa og opp på flata der hytta ved foten av fjellet kjem til syne — og forbi hytta opp skrårenna til toppen.",
+    "trailhead": {
+     "name": "Lomma ved Storelva på fv. 7804",
+     "lat": 68.92368,
+     "lng": 17.31954,
+     "elevation_m": 9.0,
+     "fullName": "Lomma ved Storelva på fv. 7804"
+    },
+    "waypoints": [
+     {
+      "name": "traktorvegen frå den gamle skolen",
+      "lat": 68.92216,
+      "lng": 17.31959,
+      "elevation_m": 52.0
+     },
+     {
+      "name": "vest for Storelva",
+      "lat": 68.91674,
+      "lng": 17.31762,
+      "elevation_m": 327.0
+     },
+     {
+      "name": "over skoggrensa",
+      "lat": 68.91082,
+      "lng": 17.32078,
+      "elevation_m": 593.0
+     },
+     {
+      "name": "flata ved hytta",
+      "lat": 68.90413,
+      "lng": 17.32452,
+      "elevation_m": 689.0
+     },
+     {
+      "name": "renna",
+      "lat": 68.90528,
+      "lng": 17.33918,
+      "elevation_m": 978.0
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: KAST 3 – Komplekst. Alpinøks og stegjern. Renna held 30–40 grader mesteparten av vegen og er terrengfelle-lik i botn; ho må berre gåast når snøen er stabil. Vårsnø ligg i renna til mai/juni. Sørsidevarianten fell 30–45 grader ned mot vegen ved Vasskaret, og fjellsida mot nord og nordaust er 49–50 grader i snitt — ikkje ein retur."
+   }
+  ]
  }
 }
