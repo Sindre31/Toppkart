@@ -207,4 +207,16 @@ NEW_TOURS = {
     "lasselitinden": ("Lasselitinden", "Harstad"),
     "toppen": ("Toppen", "Harstad"),
     "skjellesvikgalten": ("Skjellesvikgalten", "Harstad"),
+    # — Møysalen-runden —
+    "lakselvtindan": ("Lakselvtindan", "Vesterålen"),
+    "forkledalstindan": ("Forkledalstindan", "Vesterålen"),
+    "forselvtinden": ("Forselvtinden", "Vesterålen"),
+    "kvasstinden": ("Kvasstinden", "Vesterålen"),
+    "arbostadtinden": ("Årbostadtinden", "Harstad"),
+    # — Byrunden: kapittel 1, Harstads eigne ettermiddagsfjell —
+    "rundfjellet-harstad": ("Rundfjellet i Harstad", "Harstad"),
+    "heia": ("Heia", "Harstad"),
+    "nattmalsfjellet": ("Nattmålsfjellet", "Harstad"),
+    "hinnstein": ("Hinnstein", "Harstad"),
+    "sorvikfjellet": ("Sørvikfjellet", "Harstad"),
 }

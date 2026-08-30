@@ -113,6 +113,15 @@ def allowed_values(t):
         vals.add(float(tl["last_forest_m"]))
         if tl.get("first_open_m"):
             vals.add(float(tl["first_open_m"]))
+        # How far in the forest lets go, as well as how high. `guide_facts.py`
+        # measures and prints both, and a guide that says "the forest ends at
+        # 419 m after 3.24 km" is quoting one line of one table — but only the
+        # metres were listed here, so the kilometres read as invented unless
+        # somebody hand-wrote a `problems` note for that tour. Seven guides
+        # carried such a note and seven did not, and the difference was who was
+        # writing that week, not whether the figure was measured.
+        if tl.get("last_forest_km"):
+            vals.add(float(tl["last_forest_km"]))
     for s in p.get("terrainSamples") or []:
         vals.add(float(s["z"]))
     for alt in t["routes"][1:]:

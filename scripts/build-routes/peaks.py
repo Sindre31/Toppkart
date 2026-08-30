@@ -393,4 +393,38 @@ PEAKS = [
     #     med Storgalten som undernavn) er 987-toppen, og ingen egen topp på
     #     ~800 finnes på austryggen — bare ei skulder. Kortet bærer register-
     #     og DTM-høyden; avviket er dokumentert i guiden og runde-notatet.
+    # — Møysalen-runden: kapittel 9 i Harstad-boka, den siste uåpna delen av
+    #   Lofast-korridoren. Tre frå den store E10-parkeringa sør for Litlvatnet
+    #   (same trailhead som Møysalen og Sebortinden), Kvasstinden frå parkeringa
+    #   aust for Austerstraumen bru — og Årbostadtinden på Andørja, som ikkje
+    #   høyrer til kapitlet, men til runden. Tre kandidatar står over:
+    #   Durmålstinden (1005) og Svartskardtindan (833), der kildens einaste
+    #   liner er 50-graders is- og klatrerenner med tau, rack og snøanker, og
+    #   Viktindan (825), der boka ikkje oppgir startsted i det heile og dei tre
+    #   kilometrane frå Trolldalens sving til toppen ikkje er skildra —
+    #   korridoren måtte ha vore dikta, ikkje lesen. —
+    ("lakselvtindan", "Lakselvtindan", ["Lødingen"], 748, 68.49238, 15.53256),
+    ("forkledalstindan", "Forkledalstindan", ["Lødingen"], 902, 68.49437, 15.49099),
+    ("forselvtinden", "Forselvtinden", ["Lødingen"], 906, 68.50926, 15.50153),
+    ("kvasstinden", "Kvasstinden", ["Lødingen"], 831, 68.43483, 15.55682),
+    #   ^ Lødingen har to registerførte Kvasstinden 4,3 km frå kvarandre. Den
+    #     nordvestre (68.43483/15.55682) måler 826 mot bokas 831; den søraustre
+    #     (68.42418/15.60518) måler 913. Høgda namngir toppen, som på Melåaksla.
+    ("arbostadtinden", "Årbostadtinden", ["Ibestad"], 1179, 68.90866, 17.34826),
+    # — Byrunden: kapittel 1 i Harstad-boka, «Harstad» — ettermiddagsfjella i og
+    #   rundt byen, og det mildaste laget i katalogen. Heia er den gamle
+    #   alpinbakken med Maistua halvvegs, Nattmålsfjellet og Hinnstein ligg i
+    #   Kilbotn og Breivikhaugen, Sørvikfjellet over Kilbotnveien, og
+    #   Rundfjellet er kapitlets største, frå DNT-hytta på Bjørnhaugen. —
+    #   Slug og namn er kvalifiserte: «rundfjellet» er alt teke av Lofotens
+    #   Rundfjellet (803, Vågan) over Vatterfjordpollen. Femte kvalifiserte
+    #   namnedublett i appen, etter Storhornet, Middagstinden × 2 og Stortinden.
+    ("rundfjellet-harstad", "Rundfjellet", ["Harstad - Hárstták", "Harstad", "Kvæfjord"], 868, 68.63242, 16.27377),
+    ("heia", "Heia", ["Harstad - Hárstták", "Harstad"], 526, 68.75622, 16.50129),
+    ("nattmalsfjellet", "Nattmålsfjellet", ["Harstad - Hárstták", "Harstad"], 545, 68.71073, 16.45597),
+    #   ^ Nattmålsnuten, 1,1 km sør, klatrar til 566,4 og er høgare enn fjellet
+    #     som ber namnet. Publisert høgd (545) skal skilje dei to; sjå runde-
+    #     notatet om det trengst ein SUMMIT_SEED.
+    ("hinnstein", "Hinnstein", ["Harstad - Hárstták", "Harstad"], 560, 68.74718, 16.50305),
+    ("sorvikfjellet", "Sørvikfjellet", ["Harstad - Hárstták", "Harstad"], 600, 68.69458, 16.47896),
 ]

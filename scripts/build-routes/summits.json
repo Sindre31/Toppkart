@@ -1454,5 +1454,85 @@
     "summit_dtm": 987.0,
     "claims": 987,
     "stored_off_km": 0.0
+  },
+  "lakselvtindan": {
+    "name": "Lakselvtindan",
+    "lat": 68.4926,
+    "lng": 15.53235,
+    "summit_dtm": 747.0,
+    "claims": 748,
+    "stored_off_km": 0.03
+  },
+  "forkledalstindan": {
+    "name": "Forkledalstindan",
+    "lat": 68.49422,
+    "lng": 15.49073,
+    "summit_dtm": 900.7,
+    "claims": 902,
+    "stored_off_km": 0.02
+  },
+  "forselvtinden": {
+    "name": "Forselvtinden",
+    "lat": 68.50934,
+    "lng": 15.50105,
+    "summit_dtm": 906.7,
+    "claims": 906,
+    "stored_off_km": 0.02
+  },
+  "kvasstinden": {
+    "name": "Kvasstinden",
+    "lat": 68.43483,
+    "lng": 15.55651,
+    "summit_dtm": 831.6,
+    "claims": 831,
+    "stored_off_km": 0.01
+  },
+  "arbostadtinden": {
+    "name": "Årbostadtinden",
+    "lat": 68.90861,
+    "lng": 17.3481,
+    "summit_dtm": 1179.4,
+    "claims": 1179,
+    "stored_off_km": 0.01
+  },
+  "heia": {
+    "name": "Heia",
+    "lat": 68.75594,
+    "lng": 16.50177,
+    "summit_dtm": 526.7,
+    "claims": 526,
+    "stored_off_km": 0.04
+  },
+  "nattmalsfjellet": {
+    "name": "Nattmålsfjellet",
+    "lat": 68.70959,
+    "lng": 16.4571,
+    "summit_dtm": 545.6,
+    "claims": 545,
+    "stored_off_km": 0.14
+  },
+  "hinnstein": {
+    "name": "Hinnstein",
+    "lat": 68.74726,
+    "lng": 16.50311,
+    "summit_dtm": 559.5,
+    "claims": 560,
+    "stored_off_km": 0.01
+  },
+  "sorvikfjellet": {
+    "name": "Sørvikfjellet",
+    "lat": 68.69461,
+    "lng": 16.47892,
+    "summit_dtm": 607.0,
+    "claims": 600,
+    "stored_off_km": 0.0
+  },
+  "rundfjellet-harstad": {
+    "name": "Rundfjellet",
+    "lat": 68.63249,
+    "lng": 16.27351,
+    "summit_dtm": 867.5,
+    "claims": 868,
+    "stored_off_km": 0.01
   }
 }

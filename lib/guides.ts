@@ -1108,6 +1108,41 @@ export const GUIDES: Record<string, TourGuide> = {
       caption: "940 høydemeter og 4,7 km fra ferjeleiet på Bjørnerå: Bjørnrådalen til 450, ryggen over skulderen på 757 — og toppstøtet til fots, 36,4 grader på det bratteste mellom 875 og 908 moh.",
     },
   },
+  arbostadtinden: {
+    slug: "arbostadtinden",
+    intro:
+      "1171 høgdemeter på 3,98 km frå fv. 7804 til Årbostadtinden — og éin einaste høgdemeter gitt frå deg på heile linja. Skrårenna til topps er landemerket her, den mange har stått på ski ned både tidleg og seint i sesongen, og Fri Flyt held henne «mesteparten mellom 30-40 grader». KAST 3 – Komplekst med alpinøks og stegjern: grad 4.",
+    ascent: [
+      "Frå lomma langs fv. 7804 der Storelva renn ut — 9 moh — følgjer linja traktorvegen som snirklar seg sørover frå den gamle skolen: 52 moh der korridoren står i han. Heile ruta er kartlagd som sti i OpenStreetMap, frå vegen til 40 meter frå varden, og terrengmodellen langs han gir nøyaktig dei 1170 høgdemetrane kilden oppgir.",
+      "Vidare oppover på høgresida — vest — for Storelva: 327 moh, og skogen slepper på 386 etter 1,12 km. Over skoggrensa på 593 og opp på flata ved hytta, 689 moh, der fjellet endeleg viser seg. Beltet frå 600 til 700 er det slakaste på heile linja med 8,4 grader over 674 meter grunn — det er flata, og det er der du ser kva du har att.",
+      "Så renna: 978 moh der korridoren er festa, og beltet frå 900 til 1000 er det brattaste i snitt med 23,5 grader over 244 meter grunn. Det brattaste enkeltsteget, 29,0 grader, ligg mellom 901 og 924 moh — inne i renna. Varden er 1179, og utsikten går til Senja og Dyrøy.",
+    ],
+    descent: [
+      "Ned renna same vegen. Kilden fortel om ein frikøyrar som køyrde heile renna rett ned under ein av Andørjas Freeride-konkurransar; for dei fleste er det 30–40 grader jamt frå toppen, og det ligg vårsnø i renna til mai og juni.",
+      "Sørsida er den andre vegen ned: nede på flata før Rundtinden finn ein den enklaste nedkøyringa sørover, i bratt terreng på 30–45 grader, til vegen som stoppar ved Vasskaret. Nord og nordaust er ikkje ein retur — flankesveipet måler 49,2 til 50,3 grader i snitt der, med vindauge på 66,8 og 74,7.",
+    ],
+    avalanche: [
+      {
+        title: "Renna",
+        body: "Renna er turen, og ho er òg det som gjer han KAST 3 – Komplekst. Ho held 30–40 grader mesteparten av vegen, ho samlar det som kjem ovanfrå, og ho har inga sideflukt: går det, går det der du står. Snøen må vera stabil, og alpinøks og stegjern står på kildens liste av same grunn.",
+      },
+      {
+        title: "Fjellsida rundt",
+        body: "Berre sørvest er mild: 22,1 grader i snitt med 29,6 som brattaste vindauge, og vest 30,7 med 37,1 — kildens store vestvendte flanke øvst på fjellet. Nord og nordaust måler 49,2 og 50,3 i snitt med vindauge på 66,8 og 74,7, og aust 62,4 berre 20 til 80 meter ute. Det er éin veg opp og ned herfrå.",
+      },
+      {
+        title: "Før du går",
+        body: "Årbostadtinden ligg i varslingsregionen Sør-Troms, ein A-region med dagleg skredvarsel gjennom sesongen. Sjekk varsom.no. Sesongen februar–april er Fri Flyts, men renna held vårsnø lenge etter det. Sendar/mottakar, søkjestang og spade — og alpinøks og stegjern. Ei tom side betyr ikkje trygt fjell.",
+      },
+    ],
+    elevationProfile: {
+      path: "M0,200 L21,195 L41,189 L61,182 L75,177 L95,169 L109,165 L129,157 L145,150 L163,143 L173,140 L189,133 L211,127 L231,118 L258,111 L279,108 L306,107 L333,103 L366,100 L387,94 L407,91 L428,83 L442,79 L462,70 L483,61 L500,53 L516,46 L534,39 L554,31 L570,25 L597,18 L600,18",
+      startLabel: "9 moh",
+      endLabel: "1179 moh",
+      distanceLabel: "4,0 km",
+      caption: "1171 høgdemeter på 3,98 km frå Årbostad: traktorvegen frå den gamle skolen, vest for Storelva til flata ved hytta — og skrårenna til varden på 1179.",
+    },
+  },
   klaptinden: {
     slug: "klaptinden",
     intro:
@@ -1501,6 +1536,76 @@ export const GUIDES: Record<string, TourGuide> = {
       caption: "827 høydemeter og 3,82 km fra Breivoll: traktorveien til krysset på 68, opp Skogsheia fra 514 — og nesten rett linje til varden på 848, med 21,9 grader som det bratteste enkeltpartiet.",
     },
   },
+  heia: {
+    slug: "heia",
+    intro:
+      "466 høgdemeter og 2,19 km frå fotballbanen ved Krafthallen til Heia — den gamle alpinbakken i Harstad, og den turen byen faktisk går. Kilden skriv at det som regel står lys i bakken om kvelden når det er snø, og at fjellet har effektive høgdemeter og ei hytte undervegs som er verdt meir enn eit besøk. KAST 1 – Enkelt. Grad 1.",
+    ascent: [
+      "Frå parkeringa ved fotballbanen — 63 moh — går ruta langs venstresida av myra på sti i skogen: 113 moh der korridoren står. Så ut av skogen og opp det opne feltet der sommarstien går, 205 moh.",
+      "Maistua ligg halvvegs, på 321 moh. Ho var radiolink før, blei pussa opp hausten 2018, og krev DNT-nøkkel; kilden kallar utsikta fantastisk og staden eit moderne avslapningssted uten sidestykke. Det brattaste hundremetersbeltet måler 20,2 grader mellom 200 og 300 moh, over 263 meter grunn, og det brattaste enkeltsteget på heile linja, 25,0 grader, ligg mellom 260 og 281 moh — altså rett under hytta.",
+      "Etter det flate partiet ved Maistua skrår ruta opp litt sørover, og skogen slepper på 375 moh etter 1,35 km. Over tregrensa følgjer ein ryggen — 481 moh der korridoren er festa — til varden på 527. Ryggen kan vera avblåst og bar eller vindpåverka, og kilden seier at dei fleste difor stoppar eit stykke nord for toppen.",
+    ],
+    descent: [
+      "Same veg ned, men heilt ned langs det opne feltet, over gjerdet under kraftlinja og gjennom skogen til fotballbanen. Mange går fleire rundar — kilden skildrar treningsøkter med tre turar på ein kveld, feller på og av, og 1200 høgdemeter til saman. Kilden gir to variantar til: austsida av toppen, der snøen er best, ned heistraseen; og ei linje søraustover ned den rydda sommarstien i Blåbæråsen til barnehagen ved Høgholtet.",
+      "Alle tre er KAST 1 og for det meste 20–30 grader. Men kilden er like tydeleg på det som ligg utanfor dei: der kan du «enkelt oppsøke heng på 40 grader». Flankesveipet finn dei — nord for varden ligg eit 40,6-vindu 170–230 meter ute og nordvest 46,0 på 160–220.",
+    ],
+    avalanche: [
+      {
+        title: "Førti grader, ein sving unna",
+        body: "Heia er eit KAST 1-fjell med KAST 3-terreng ved sida av seg. Kilden skriv rett ut at utanfor dei tre skildra rutene kan du lett finne heng på 40 grader, og at det berre skal gjerast når snøen er stabil. Målinga stadfestar det: 40,6 grader nord for toppen og 46,0 nordvest. Dei tre rutene held seg på 20–30.",
+      },
+      {
+        title: "Toppryggen",
+        body: "Dei siste metrane er ofte avblåste, bare eller vindpåverka, og kilden seier at dei fleste stoppar eit stykke nord for toppen. Det er ikkje ei skredåtvaring, men ei forklaring på kvifor sporet stoppar der det gjer — og på godværsdagar er varden verdt dei siste metrane til fots.",
+      },
+      {
+        title: "Før du går",
+        body: "Heia ligg i varslingsregionen Sør-Troms, ein A-region med dagleg skredvarsel gjennom sesongen. Sjekk varsom.no. Sesongen desember–april er Fri Flyts, og den lengste i runden — dette er fjellet som held snø når byen ikkje gjer det. Sendar/mottakar, søkjestang og spade, òg på ein kveldstur ti minutt frå bilen. Ei tom side betyr ikkje trygt fjell.",
+      },
+    ],
+    elevationProfile: {
+      path: "M0,200 L25,195 L37,195 L62,192 L87,188 L99,185 L111,185 L126,180 L148,171 L161,166 L185,154 L208,149 L217,145 L226,141 L242,133 L259,123 L284,109 L296,104 L309,99 L318,99 L333,96 L345,91 L364,81 L382,73 L395,69 L407,62 L419,58 L432,53 L444,47 L456,42 L481,36 L495,34 L518,31 L542,27 L565,22 L577,22 L592,20 L600,18",
+      startLabel: "63 moh",
+      endLabel: "527 moh",
+      distanceLabel: "2,2 km",
+      caption: "466 høgdemeter og 2,19 km frå Krafthallen: myra, det opne feltet og Maistua på 321 — og ryggen over tregrensa til varden på 527.",
+    },
+  },
+  hinnstein: {
+    slug: "hinnstein",
+    intro:
+      "510 høgdemeter og 2,90 km frå Breivikhaugen til Hinnstein — eit av dei mest brukte turområda i Harstad, på line med Heia, og eit fjell med bratte sider. Kilden er kort og alvorleg om den mest populære av dei: «det er sørøstsiden som tiltrekker flest skikjørere, men vær obs på at flere er tatt av skred der.» KAST 3 – Komplekst. Grad 3.",
+    ascent: [
+      "Frå den vesle parkeringa øvst i Breivikhaugen — 51 moh, og ikkje steng snuplassen — følgjer ruta skogsvegen som grunneigarane etablerte i 2016: 154 moh der korridoren står i han. Forbi gapahuken på 220.",
+      "Derfrå siktar ein på skråninga mellom Litle Hinnstein og Hinnstein — 457 moh — som i gamle dagar blei brukt til hoppbakke. Litle Hinnstein er eit eige registerført punkt og måler 502 moh; det er den lågare av dei to.",
+      "Så stien opp på sørvestsida av Hinnstein, 531 moh der korridoren er festa, til varden på 560. Skogen slepper først på 496 moh etter 2,51 km — nesten heile turen går i skog. Det brattaste hundremetersbeltet måler 13,6 grader mellom 400 og 500 moh, over 426 meter grunn, og det brattaste enkeltsteget, 23,7 grader, ligg mellom 394 og 408.",
+    ],
+    descent: [
+      "Kilden er ærleg om starten: nedkjøringa frå Hinnstein gir lite flyt i byrjinga på grunn av kratt, lite snø og steinar, og mange set skia igjen og går ned same vegen. Etter det er det slak cruising i terreng som ikkje er brattare enn 30 grader.",
+      "Framsida er ei anna sak. Sørøst 2 held 35–45 grader, med det enklaste lengst sør på fjellet og rett ned mot skogsvegen. Flankesveipet plasserer resten: nordvest fell 50,5 grader berre 10–70 meter frå varden, nord 44,3 på 30–90 og vest 42,8 på 20–80. Sørvest, der ruta går, er den slake sida med 12,6 grader i snitt.",
+    ],
+    avalanche: [
+      {
+        title: "Sørøstsida",
+        body: "Dette er sida flest kjører, og kilden si eiga setning om henne er at fleire er tekne av skred der. Ho måler 26,9 grader i snitt med eit 40,4-vindu 180–240 meter ute, og Sørøst 2 på framsida held 35–45. Ingen av tala er ekstreme; historikken er poenget, og han høyrer til eit fjell femten minutt frå byen.",
+      },
+      {
+        title: "Nordvestsida er avskoren",
+        body: "Toppen har ei side som ikkje er ein veg: nordvest fell 50,5 grader innanfor dei første 70 metrane frå varden, og nord og vest 44,3 og 42,8 like tett på. Ruta kjem opp sørvestsida, som er slak — men på ein topp så liten er kanten nærmare enn ho ser ut.",
+      },
+      {
+        title: "Før du går",
+        body: "Hinnstein ligg i varslingsregionen Sør-Troms, ein A-region med dagleg skredvarsel gjennom sesongen. Sjekk varsom.no. Sesongen januar–april er Fri Flyts. Sendar/mottakar, søkjestang og spade. Skogsvegen frå 2016 er grunneigarane sin gåve til turfolket — parker der du skal, og la snuplassen vera open. Ei tom side betyr ikkje trygt fjell.",
+      },
+    ],
+    elevationProfile: {
+      path: "M0,200 L18,199 L45,192 L64,190 L84,184 L101,174 L127,165 L139,159 L159,154 L185,149 L206,145 L232,139 L260,131 L278,124 L297,120 L315,113 L334,107 L362,100 L381,98 L409,94 L423,85 L437,76 L455,64 L481,57 L493,55 L508,48 L521,41 L536,32 L551,27 L567,22 L595,19 L600,18",
+      startLabel: "51 moh",
+      endLabel: "560 moh",
+      distanceLabel: "2,9 km",
+      caption: "510 høgdemeter og 2,90 km frå Breivikhaugen: skogsvegen frå 2016, gapahuken og den gamle hoppbakken — og sørvestsida til varden på 560.",
+    },
+  },
   lasselitinden: {
     slug: "lasselitinden",
     intro:
@@ -1604,6 +1709,41 @@ export const GUIDES: Record<string, TourGuide> = {
       endLabel: "922 moh",
       distanceLabel: "4,1 km",
       caption: "910 høydemeter og 4,1 km fra Hundstadsætran: traktorveien til Vebbestadvatnet på land i nordenden, austover fra 617 — og partiet over den store steinen, 45–50 grader hos kilden, mot toppen på 922.",
+    },
+  },
+  nattmalsfjellet: {
+    slug: "nattmalsfjellet",
+    intro:
+      "479 høgdemeter og 2,69 km frå Kilkam idrettsanlegg til Nattmålsfjellet — det næraste skifjellet i Kilbotn, og det i runden der kilden er tydelegast om at inntrykket lyg. «Selv om Nattmålsfjellet ser enkelt ut er det flere plasser det kan gå skred, og det har også gått skred der.» KAST 2 – Utfordrende på normalruta; alle andre oppstigningar på nordsida er KAST 3. Grad 3.",
+    ascent: [
+      "Frå den store parkeringa ved idrettsanlegget — 85 moh — følgjer ein skisporet forbi barnehagen: 89 moh der korridoren står, nesten flatt. Beltet frå 0 til 100 moh måler 1,7 grader, over 673 meter grunn.",
+      "Så av sporet sørover der fjellet er nærmast, på åsryggen før Nattmålsfjellvatnet — 237 moh. Skogen slepper på 284 etter 1,68 km. Nærmare tregrensa held ein på høgresida, vestsida, av ein liten kolle: 279 moh der korridoren er festa.",
+      "Derfrå det store opne området opp mot toppen. Dei siste hundre høgdemetrane går i ei slukt som er forlenginga av elva ned mot sørsida av Nattmålsfjellvatnet — 393 moh der korridoren står i henne. Det brattaste hundremetersbeltet måler 15,1 grader mellom 300 og 400 moh, over 392 meter grunn, og det brattaste enkeltsteget, 22,0 grader, ligg mellom 422 og 441. Varden er 546.",
+    ],
+    descent: [
+      "Ned same vegen. Nedkjøringa er ikkje brattare enn 30 grader, seier kilden — men ho er omgitt av brattare område, og ein befinn seg av og til i utløpssoner. Det er ein annan setning enn «slak», og han er verdt å lese to gonger.",
+      "Flankesveipet viser same biletet: sjølve toppen er slak til alle kantar — 3,3 grader i snitt mot søraust, 5,1 mot sørvest, 5,3 mot sør — medan dei brattaste vindauga ligg langt ute, 34,5 grader 300–360 meter mot nordaust og 35,3 på 440–500 mot søraust. Det er dei du kan hamne under, ikkje dei du står i.",
+    ],
+    avalanche: [
+      {
+        title: "Utløpssonene",
+        body: "Dette er fjellet der terrengfella ikkje er under skia dine, men over dei. Nedkjøringa held seg under 30 grader og toppen er slak, men rundt ligg brattare område, og kilden seier at ein av og til er i utløpssoner. Målinga finn dei brattaste partia 300 til 500 meter ute på nordaust- og søraustsida. Vurder kva som heng over sporet, ikkje berre kva du står på.",
+      },
+      {
+        title: "Nord 2 og resten av nordsida",
+        body: "Alle andre ruter opp på nordsida enn Nord 1 er KAST 3, seier kilden. Nord 2 går ned bratte slukter og søkk mot det opne området over lysløypa. På det området ligg Okshola, ei om lag 300 meter lang grotte med ei elv gjennom seg og ein utgang som til vanleg er fylt med vatn — verdt eit besøk, men ikkje ein utveg.",
+      },
+      {
+        title: "Før du går",
+        body: "Nattmålsfjellet ligg i varslingsregionen Sør-Troms, ein A-region med dagleg skredvarsel gjennom sesongen. Sjekk varsom.no. Sesongen februar–april er Fri Flyts. Sendar/mottakar, søkjestang og spade — og på dette fjellet særleg: det har gått skred her, og det ser ikkje slik ut. Ei tom side betyr ikkje trygt fjell.",
+      },
+    ],
+    elevationProfile: {
+      path: "M0,198 L20,198 L40,200 L60,200 L90,198 L114,198 L140,193 L160,188 L180,184 L200,178 L215,170 L234,157 L252,148 L281,138 L301,129 L331,119 L351,117 L371,121 L384,114 L401,105 L421,95 L441,88 L462,78 L482,72 L502,70 L518,59 L527,53 L542,45 L562,34 L592,20 L600,18",
+      startLabel: "85 moh",
+      endLabel: "546 moh",
+      distanceLabel: "2,7 km",
+      caption: "479 høgdemeter og 2,69 km frå Kilkam: skisporet forbi barnehagen, åsryggen sørover — og slukta sør for Nattmålsfjellvatnet til varden på 546.",
     },
   },
   horntindan: {
@@ -1715,6 +1855,41 @@ export const GUIDES: Record<string, TourGuide> = {
       caption: "1047 høydemeter og 5,24 km fra Bukkemyrvatnet om terrassene mot Sølvfjellet og fonna sørøst for toppen, med skoggrensa på 476 moh og det bratteste beltet — 18,8 grader — mellom 1300 og 1400 moh.",
     },
   },
+  sorvikfjellet: {
+    slug: "sorvikfjellet",
+    intro:
+      "560 høgdemeter og 3,60 km frå Kilbotnveien til Sørvikfjellet — eit bratt skifjell nær byen med fleire linjer og høg fart, og med kildens klaraste skredsetning i runden: «vær obs på at det går skred på det bratteste henget hvert år.» KAST 3 – Komplekst, alpinøks og stegjern på lista. Grad 4.",
+    ascent: [
+      "Frå lomma langs Kilbotnveien — 61 moh — til avkjøringa på Nordvikmyra mot Kilbotn, 57 moh. Derfrå er instruksen kildens eiga: sikt inn mot toppvarden og følg det enklaste terrenget litt sør for toppen. Beltet frå 0 til 100 moh måler 1,5 grader, over 1595 meter grunn — myra tek den første kilometeren nesten flatt.",
+      "På seinvinteren kan Nordvikelva like ved vegen vera brei, og kilden føreslår gummistøvlar dei første hundre metrane og skifte til skisko etter det. Vidare gjennom lia mot fjellet, 63 moh, og opp over skogen på 201.",
+      "Skogen slepper på 362 moh etter 2,61 km. Det brattaste hundremetersbeltet måler 20,6 grader mellom 400 og 500 moh, over 266 meter grunn, og det brattaste enkeltsteget, 26,1 grader, ligg mellom 487 og 512. Varden er 607 — registeret og kilden er ikkje heilt samde her, for Fri Flyt skriv 600, og kortet ber DTM1-høgda som overalt elles.",
+    ],
+    descent: [
+      "Nedkjøringa følgjer om lag same veg som opp. Kjører du nokre hundre meter sørover finn du ei bratt renne på om lag 150 høgdemeter som kilden meiner er verdt turen — men det er ei linje, ikkje returen.",
+      "Grunnen til at ruta går inn litt sør for toppen står i målinga: sør er den slake sida med 5,4 grader i snitt, sørvest 6,6 og nordvest 8,6. Nordaust måler 33,9 i snitt med eit 45,3-vindu 180–240 meter ute, og aust 32,4 med 44,7 på 350–410.",
+    ],
+    avalanche: [
+      {
+        title: "Henget som går kvart år",
+        body: "Kilden skriv at det går skred på det brattaste henget kvart år. Målinga finn det: nordaustsida held 33,9 grader i snitt med eit 45,3-vindu 180 til 240 meter ute — midt i det spennet der flakskred løysnar oftast. Ruta går inn frå aust og rundar sør for toppen nettopp for å halde seg unna, og det er ikkje ein detalj å improvisere bort på veg ned.",
+      },
+      {
+        title: "Renna sør for ruta",
+        body: "Nokre hundre meter sør for oppstigninga ligg ei renne på om lag 150 høgdemeter som kilden kallar verkeleg verdt å kjøre. Ho er ei renne: ho samlar det som kjem ovanfrå og har inga sideflukt. Alpinøks og stegjern står på kildens liste for dette fjellet, og det er her dei høyrer heime.",
+      },
+      {
+        title: "Før du går",
+        body: "Sørvikfjellet ligg i varslingsregionen Sør-Troms, ein A-region med dagleg skredvarsel gjennom sesongen. Sjekk varsom.no. Sesongen januar–april er Fri Flyts. Sendar/mottakar, søkjestang og spade — og alpinøks og stegjern der kilden krev det. Ei tom side betyr ikkje trygt fjell.",
+      },
+    ],
+    elevationProfile: {
+      path: "M0,197 L23,199 L45,199 L67,199 L90,199 L120,200 L149,200 L172,200 L202,197 L225,195 L240,189 L262,185 L279,177 L307,166 L330,158 L352,150 L374,136 L396,127 L412,116 L427,103 L449,89 L472,81 L482,73 L498,61 L509,52 L524,43 L547,40 L573,32 L592,21 L600,18",
+      startLabel: "61 moh",
+      endLabel: "607 moh",
+      distanceLabel: "3,6 km",
+      caption: "560 høgdemeter og 3,60 km frå Kilbotnveien: avkjøringa på Nordvikmyra, myra og lia — og inn mot varden på 607 litt sør for toppen.",
+    },
+  },
   melaaksla: {
     slug: "melaaksla",
     intro:
@@ -1748,6 +1923,41 @@ export const GUIDES: Record<string, TourGuide> = {
       endLabel: "916 moh",
       distanceLabel: "5,9 km",
       caption: "964 høydemeter og 5,92 km fra Melå: traktorveien til Dalbotnen, forbi hytta mot 505-høgda — og den lange ryggen sørover til varden på 916, vest for tjernet på 717.",
+    },
+  },
+  "rundfjellet-harstad": {
+    slug: "rundfjellet-harstad",
+    intro:
+      "774 høgdemeter og 6,86 km frå DNT-hytta på Bjørnhaugen til Rundfjellet — rundens lengste tur og kapittel 1s største fjell. Kilden kallar det «noe anmarsj og fin kjøring i cruiseterreng», og terrengmodellen er samd: det brattaste beltet på heile linja måler 18,5 grader. Namnet er kvalifisert fordi appen alt har eit Rundfjellet, det 803 meter høge i Vågan. KAST 1 – Enkelt. Grad 2.",
+    ascent: [
+      "Frå den store parkeringa ved DNT-hytta — 212 moh — fell linja mot Storvatnet og følgjer vestsida sørover: 155, 145 og 140 moh der korridoren er festa. Vatnet er stort, og dei 118 høgdemetrane du gir frå deg her er halve forklaringa på at kilden oppgir 800 for eit fjell som ligg 656 meter over hytta.",
+      "Kilden skriv «Gå over Rundfjellvannet», men linja går på land nord for tjernet — same regel som elles i appen. Frå sørvestenden av Storvatnet stig ruta opp bekkedalen på nordsida av høyde 339, som terrengmodellen måler til 337,7. Midt i dalen er ikkje ei tilfeldig formulering: det er skredterreng på begge sider, og det er den einaste hazard-instruksen kilden gir.",
+      "Over Rundfjellvatnet på 300 moh og opp på nordaustryggen — 602 der korridoren står i han. Skogen slepper først på 344 moh etter 4,98 km, den lengste skogsmarsjen i runden. Det brattaste hundremetersbeltet måler 18,5 grader mellom 700 og 800 moh, over 325 meter grunn, og det brattaste enkeltsteget, 23,9 grader, ligg mellom 509 og 529 moh.",
+    ],
+    descent: [
+      "Same ryggen heim. Kilden lovar «for det meste 20-25 graders kjøring, men noen partier er 30 grader», og linja held seg under det heile vegen: ingen av beltene måler over 18,5 grader i snitt.",
+      "Flankesveipet plasserer det bratte der kilden ikkje sender deg: sør for varden ligg eit 54,6-vindu 20–80 meter ute og søraust 50,3 berre 10–70 meter ute. Sørvest er den slake sida med 8,8 grader i snitt. Ryggen nordaustover er ruta, og han måler 20,2.",
+    ],
+    avalanche: [
+      {
+        title: "Bekkedalen",
+        body: "Kilden ber deg gå midt i bekkedalen nord for høyde 339 for å unngå skredterreng på begge sider. Det er ei instruks om plassering, ikkje om vinkel: sjølve dalbotnen er slak, men han ligg mellom to sider som kan levere. Hald midten, og les snøen i sidene før du går inn.",
+      },
+      {
+        title: "Toppen har ei bratt side",
+        body: "Nordaustryggen er slak — 20,2 grader i snitt — men sør og søraust for varden fell fjellet 54,6 og 50,3 grader i sine brattaste vindauge, og søraust berre 10 til 70 meter frå toppen. På eit fjell kilden kallar cruiseterreng er det verdt å vite kvar kanten går.",
+      },
+      {
+        title: "Før du går",
+        body: "Rundfjellet ligg i varslingsregionen Sør-Troms, ein A-region med dagleg skredvarsel gjennom sesongen. Sjekk varsom.no. Sesongen februar–april er Fri Flyts. Sendar/mottakar, søkjestang og spade. Turen er lang for graden — nesten sju kilometer inn — så tidspunktet avgjer kva snø du møter på returen. Ei tom side betyr ikkje trygt fjell.",
+      },
+    ],
+    elevationProfile: {
+      path: "M0,181 L28,186 L52,195 L71,197 L96,198 L122,197 L144,198 L166,199 L189,200 L213,199 L233,199 L256,198 L280,189 L304,175 L327,163 L351,159 L362,159 L384,157 L411,159 L433,150 L453,132 L471,116 L494,107 L514,88 L537,66 L553,49 L577,28 L600,18",
+      startLabel: "212 moh",
+      endLabel: "868 moh",
+      distanceLabel: "6,9 km",
+      caption: "774 høgdemeter og 6,86 km frå Bjørnhaugen: vestsida av Storvatnet, bekkedalen nord for høyde 339 — og nordaustryggen til varden på 868.",
     },
   },
   jakobstinden: {
@@ -2146,6 +2356,41 @@ export const GUIDES: Record<string, TourGuide> = {
       caption: "1596 høydemeter fra E10 ved Litlvatnet til 1264 moh, 355 av dem gitt fra seg underveis og et 51 meters hakk i toppryggen.",
     },
   },
+  forselvtinden: {
+    slug: "forselvtinden",
+    intro:
+      "1180 høgdemeter og 8,29 km frå Møysalens parkering på E10 til Forselvtinden — den lengste turen i runden, og den einaste ruta i appen som går over toppen av ein annan tur på vegen. Kildens eiga skildring startar med «følg ruta opp på Lakselvtindan», og det er 747 moh du står på før du går vidare vestover. 296 av høgdemetrane gir du frå deg. Fri Flyt gir KAST 2 – Utfordrende, men ber deg vurdere om skia skal vera med opp: grad 4.",
+    ascent: [
+      "Frå parkeringa — 23 moh — som på Lakselvtindan: nordsida av Storvatnet på 85, nord for høyde 258, og 217 moh der Lakselva kryssast mot aust. Skogen slepper på 220 moh etter 2,48 km, og beltet frå 300 til 400 er det brattaste i snitt med 19,0 grader over 313 meter grunn.",
+      "Opp på Lakselvtindan, 747 moh, og så vestover langs høgdedraget til du står rett nord av høyde 790 — DTM1 måler 790,6, og korridoren står på 754 rett nord av han. Mellom 700 og 800 moh ligg to kilometer nesten flatt høgfjell: beltet måler 2,1 grader i snitt over 1955 meter grunn.",
+      "Vidare nordover held ruta seg på nedsida — vestsida — av draget, 668 moh der korridoren er festa, fordi det er bratte parti rett før oppstigninga tek til. Så sydryggen: det brattaste steget på heile linja, 39,0 grader, ligg mellom 843 og 879 moh, rett under varden på 907.",
+    ],
+    descent: [
+      "Same vegen heim, for det meste under 20 grader med eit par parti på 25–30, seier kilden. Men heimvegen er òg ei ny oppstigning: dei 296 høgdemetrane du gav frå deg skal takast att, og Lakselvtindan står i vegen ein gong til.",
+      "Flankesveipet forklarer kvifor sydryggen er den einaste vegen opp og ned. S måler 22,5 grader i snitt med eit 40,8-vindu 70 til 130 meter ute — det bratte partiet kilden nemner. N, NE, V og NV ligg på 46,9 til 48,6 i snitt med vindauge frå 60,6 til 75,9, og aust har 76,8 berre 30 til 90 meter ute.",
+    ],
+    avalanche: [
+      {
+        title: "Partiet før toppen",
+        body: "Kilden kallar sydryggen eit flott luftig parti med eitt bratt parti før toppen, og ber deg vurdere om skia skal vera med opp. Målinga er samd: 40,8 grader i vinduet 70 til 130 meter ute, og 39,0 grader i det brattaste enkeltsteget linja faktisk går, mellom 843 og 879. Stegjern og alpinøks er tilrådd, og mange ber skia den siste biten.",
+      },
+      {
+        title: "Vestsida av høgdedraget",
+        body: "Nordover langs draget skal du halde deg på nedsida, altså vestsida. Kilden er tydeleg på kvifor: det er bratte parti rett før oppstigninga på ryggen mot Forselvtinden tek til, og linja går rundt dei og ikkje over. Aust for draget fell terrenget 76,8 grader i sitt brattaste vindauge.",
+      },
+      {
+        title: "Før du går",
+        body: "Forselvtinden ligg i varslingsregionen Lofoten og Vesterålen, ein A-region med dagleg skredvarsel gjennom sesongen. Sjekk varsom.no. Sesongen februar–april er Fri Flyts, og 8,29 km med 296 høgdemeter attende gjer dette til ein tur der tidspunktet på dagen avgjer kva snø du møter på returen. Ei tom side betyr ikkje trygt fjell.",
+      },
+    ],
+    elevationProfile: {
+      path: "M0,198 L23,200 L48,199 L72,192 L96,185 L117,179 L141,171 L164,156 L186,158 L209,160 L238,148 L256,132 L274,119 L297,103 L317,92 L343,80 L365,58 L382,51 L402,57 L419,62 L437,59 L463,59 L486,49 L505,61 L528,66 L551,50 L577,36 L597,21 L600,18",
+      startLabel: "23 moh",
+      endLabel: "907 moh",
+      distanceLabel: "8,3 km",
+      caption: "1180 høgdemeter og 8,29 km frå Lofast: over Lakselvtindan på 747, vestover til nord for høyde 790 — og sydryggen til varden på 907.",
+    },
+  },
   middagsfjellet: {
     slug: "middagsfjellet",
     intro:
@@ -2250,6 +2495,76 @@ export const GUIDES: Record<string, TourGuide> = {
       endLabel: "979 moh",
       distanceLabel: "6,3 km",
       caption: "1048 høydemeter og 6,31 km fra Mølnneset: ryggen over Spannbogen på 246, henget før 600 — og østryggen fra 605 til den smale toppen på 979, med sommerruta på sørsida som utveien.",
+    },
+  },
+  forkledalstindan: {
+    slug: "forkledalstindan",
+    intro:
+      "1024 høgdemeter og 5,59 km frå E10 ved Litlvatnet til Forkledalstindan — ein tur som skiftar karakter midtvegs. Fri Flyt gir sydsida KAST 2 – Utfordrende opp til toppen på 700, og der snur mange og køyrer ned; traversen vidare til hovudtoppen på 901 er KAST 3 – Komplekst, med nedklatring på snø eller berg avhengig av forholda. Kildens «700 høydemeter» er skituren, ikkje fjellet. Grad 4.",
+    ascent: [
+      "Frå parkeringa på Ingelsfjordeidet — 23 moh — same start som Lakselvtindan: nordsida av Storvatnet på 85, og opp til nord for høyde 258. Linja held seg på land der kilden kryssar isen, slik bokas eiga Forkledalen-rute frå same parkering gjer.",
+      "Derfrå går oppstigninga vestover i det slakaste terrenget, over nordsida av høyde 462 — DTM1 måler 461,1 — på 400 moh der korridoren står, og vidare opp fjellsida på 509. Skogen slepper på 226 moh etter 2,44 km, og beltet frå 400 til 500 er det brattaste i snitt med 18,6 grader over 279 meter grunn.",
+      "Toppen på 700 — 707 moh på linja — er der kildens skitur endar. Traversen vidare over fortoppen er den alpine delen: det brattaste enkeltsteget på ruta, 39,9 grader, ligg mellom 702 og 728 moh, rett etter at ryggen tek til. Siste stykket opp til varden på 901 tek du med fordel på austsida i starten, seier kilden — der slepp du den vanskelege klatringa.",
+    ],
+    descent: [
+      "146 av dei 1024 høgdemetrane gir du frå deg undervegs. Mange startar nedkøyringa allereie frå 700-toppen, i slakt terreng med eit brattheng som kan gåast utanom, og det er den turen kildens høgdemetertal beskriv.",
+      "Frå hovudtoppen er nordvestsida linja: ho startar mellom 902 og sørtoppen og er 20–25 grader med brattheng på 30–40 i nedre del. Nordaustsida er 30–40 grader og følgjer etter kvart vestruta til Lakselvtindan ned i Forkledalen. Begge går eksponert for skred frå høgareliggande terreng nesten heile vegen.",
+    ],
+    avalanche: [
+      {
+        title: "Traversen",
+        body: "Frå 700 til 901 er graderinga KAST 3 – Komplekst. Avhengig av snøforholda må du kanskje klatre litt ned på snø eller berg for å kome vidare, og siste delen er svært bratt og eksponert: det brattaste steget måler 39,9 grader mellom 702 og 728. Kilden viser eit bilete av flakskred tett under toppen, og skriv at mykje snø blir sett i rørsle og at det er lett å bli begravd.",
+      },
+      {
+        title: "Alle sider er bratte",
+        body: "Flankesveipet finn eit vindauge mellom 37,7 og 60,0 grader innanfor dei første 100 metrane av varden i alle åtte retningar. Nordaust er mildast med 37,7 og 23,5 i snitt; sørvest er slak dei første 340 metrane og har så 46,4. Henget ned frå høyde 790 til vann 355 på nordsida er KAST 3 i kildens eiga vurdering.",
+      },
+      {
+        title: "Før du går",
+        body: "Forkledalstindan ligg i varslingsregionen Lofoten og Vesterålen, ein A-region med dagleg skredvarsel gjennom sesongen. Sjekk varsom.no. Sesongen februar–april er Fri Flyts. Sendar/mottakar, søkjestang og spade, og alpinøks og stegjern — her er dei ikkje ei tilråding, men det traversen krev. Ei tom side betyr ikkje trygt fjell.",
+      },
+    ],
+    elevationProfile: {
+      path: "M0,198 L25,199 L54,200 L73,199 L97,198 L122,185 L146,186 L165,185 L184,180 L209,174 L238,160 L259,155 L281,156 L300,150 L315,139 L344,125 L365,124 L383,122 L406,103 L421,94 L440,83 L458,71 L474,63 L488,59 L508,54 L528,43 L549,34 L566,32 L593,25 L600,18",
+      startLabel: "23 moh",
+      endLabel: "901 moh",
+      distanceLabel: "5,6 km",
+      caption: "1024 høgdemeter og 5,59 km frå Litlvatnet: nordsida av høyde 462, fjellsida til toppen på 700 — og traversen vidare til varden på 901.",
+    },
+  },
+  lakselvtindan: {
+    slug: "lakselvtindan",
+    intro:
+      "819 høgdemeter og 5,46 km frå Møysalens parkering på E10 til Lakselvtindan — den mildaste toppen i denne runden. Flankesveipet måler 5,4 grader i snitt mot nordvest og 17,7 mot sørvest, der ryggen kjem, og ingen av peilingane har eit brattare vindauge enn 50,4. Fri Flyt gir KAST 2 – Utfordrende og set alpinøks og stegjern på utstyrslista; grad 3 kjem av utstyret og skaren kilden åtvarar mot, ikkje av bratthet.",
+    ascent: [
+      "Frå den store parkeringa på Ingelsfjordeidet — 23 moh — går linja langs nordsida av Storvatnet: 85 moh der korridoren er festa. Kilden skriv «kryss Storvatnet», men bokas eiga rutebeskriving for Forkledalen frå same parkering seier «følger man Nordsiden av Storvatnet». Kartet ber landlinja; isen er ikkje ein føresetnad.",
+      "Opp mellom Tverrelva og Lakselva — 158 moh — og nord for høyde 258, som DTM1 måler til 258,3. Skogen slepper på 220 moh etter 2,53 km, og beltet frå 300 til 400 er det brattaste i snitt med 20,0 grader over 261 meter grunn.",
+      "Så flatar det ut innover: 217 moh der Lakselva kryssast mot aust, og derfrå ryggen — 481 moh der korridoren står i han — heilt opp til varden på 747. Det brattaste enkeltsteget på heile linja, 26,2 grader, ligg nede mellom 43 og 65 moh, i lia over parkeringa.",
+    ],
+    descent: [
+      "Same ryggen heim. 95 av dei 819 høgdemetrane gir du frå deg på veg opp, det meste i det flate partiet før Lakselva, og ingen av beltene på linja måler over 20,0 grader i snitt. Kilden nemner skare, og skarejern høyrer med i sekken saman med øksa og stegjerna.",
+      "Variantane er ei anna sak enn normalruta. Rødhammarrenna på austsida er KAST 3: skåla vest for normalruta er 30–40 grader, så eit brattheng på 45 ned mot renna, og skredterreng heile vegen gjennom. Vestsida ned til vann 355 mellom Forselvtinden og Forkledalstinden har eit bratt parti på 30–40 grader.",
+    ],
+    avalanche: [
+      {
+        title: "Rødhammarrenna",
+        body: "Austsida er ikkje normalruta. Kilden gir henne KAST 3 og skildrar eit brattheng på 45 grader ned mot renna, med skredterreng heile renna gjennom fordi sidene omkring kan bere mykje snø. Sjølve renna er 15–20 grader med nokre parti på 25–30 — det er innsteget og det som heng over, ikkje utløpet, som avgjer om ho går.",
+      },
+      {
+        title: "Skare og vind",
+        body: "Dette er ein tur der problemet like ofte er hardt underlag som ustabil snø. Kilden ber deg ha skarejern med, og frå 481 moh og opp er ryggen avblåst og vindpakka — det er der alpinøksa og stegjerna på utstyrslista høyrer heime.",
+      },
+      {
+        title: "Før du går",
+        body: "Lakselvtindan ligg i varslingsregionen Lofoten og Vesterålen, ein A-region med dagleg skredvarsel gjennom sesongen. Sjekk varsom.no. Sesongen februar–april er Fri Flyts eiga. Sendar/mottakar, søkjestang og spade — og alpinøks og stegjern der kilden krev det. Ei tom side betyr ikkje trygt fjell.",
+      },
+    ],
+    elevationProfile: {
+      path: "M0,197 L20,199 L44,198 L73,199 L88,200 L105,198 L129,182 L159,187 L180,174 L207,172 L228,158 L253,146 L274,148 L303,149 L327,151 L347,146 L372,136 L398,117 L416,102 L441,89 L461,84 L472,83 L496,75 L521,63 L547,47 L565,34 L588,19 L600,18",
+      startLabel: "23 moh",
+      endLabel: "747 moh",
+      distanceLabel: "5,5 km",
+      caption: "819 høgdemeter og 5,46 km frå Lofast: nordsida av Storvatnet, opp mellom elvane forbi høyde 258 — og ryggen aust for Lakselva til varden på 747.",
     },
   },
   siriskolten: {
@@ -2390,6 +2705,41 @@ export const GUIDES: Record<string, TourGuide> = {
       endLabel: "948 moh",
       distanceLabel: "5,4 km",
       caption: "1029 høydemeter og 5,44 km fra Breivikbotn: Krokelva-hyttene, Finnvatnet på 282, sørvest utenom skredterrenget — og Litletind-ryggen fra 576 til varden på 948.",
+    },
+  },
+  kvasstinden: {
+    slug: "kvasstinden",
+    intro:
+      "933 høgdemeter og 4,08 km frå E10 ved Austerstraumen til Kvasstinden — og eit namn Lødingen har to av. Den søraustre Kvasstinden måler 913 moh i terrengmodellen; denne, den nordvestre, klatrar til 831,6 mot Fri Flyts 831. Publisert høgd namngir toppen. KAST 1 – Enkelt, men med alpinøks og stegjern på utstyrslista og ein luftig topp: grad 2.",
+    ascent: [
+      "Frå den store parkeringa aust for Austerstraumen bru — 3 moh — sørover langs myrene med jamn stigning: 146 moh der korridoren står. Boka skriv òg «fra parkeringa på Husjordøya», men Husjordøya ligg mellom Vesterstraumen og Austerstraumen, og den kartlagde parkeringa ligg aust for brua. Det er parkeringsteksten som let seg etterprøve.",
+      "Overgangen til Trolldalen går rett nord av høyde 146 — terrengmodellen måler 148,4 — på 144 moh, og så fell linja ned i dalen til 96. 104 av dei 933 høgdemetrane gir du frå deg der, og det er dei kildens 910 høydemeter har med som differansen mellom sjø og topp ikkje har. Skogen slepper på 242 moh etter 2,17 km.",
+      "Opp dalen mot søraust og inn på vestryggen — 554 moh der korridoren er festa. Beltet frå 700 til 800 er det brattaste i snitt med 22,3 grader over 244 meter grunn, medan det brattaste enkeltsteget, 28,5 grader, ligg heilt nede mellom 113 og 131 moh. Dei siste høgdemetrane til toppen på 832 går ein på ryggen frå vestsida.",
+    ],
+    descent: [
+      "Ned same vegen: nokre parti over 30 grader, men det aller meste rundt 20–25, seier kilden. Mykje vind- og solpåverka snø er normalen, og under gode forhold — særleg på ettermiddagen seinvinters, i kveldssol — er dette turen kilden skryt mest av.",
+      "Toppen sjølv er luftig, og kilden ber deg vurdere om skia skal setjast igjen eller takast med opp. Flankesveipet viser kvifor det er eit spørsmål: vest, der ryggen kjem, har eit vindauge på 44,6 grader 90 til 150 meter ute, og sørvest måler 38,7 i snitt. Aust er den slake sida med 15,9.",
+    ],
+    avalanche: [
+      {
+        title: "Nordsida",
+        body: "Den brattare varianten ned frå toppen er KAST 3 i kildens eiga vurdering, med toppheng på 30–40 grader. Han gir flott køyring under gode forhold, men han er ikkje vegen du kom, og han er ikkje eit val du tek på toppen utan å ha lese snøen på veg opp.",
+      },
+      {
+        title: "Vind, sol og brøyting",
+        body: "Mykje vind- og solpåverka snø er normalen på denne ryggen, og sørvestflanken under han måler 38,7 grader i snitt med eit 53,8-vindu 60 til 120 meter ute. Parkeringa er heller ikkje alltid brøytt tidleg i sesongen — det er verdt å vite før du køyrer heilt hit.",
+      },
+      {
+        title: "Før du går",
+        body: "Kvasstinden ligg i varslingsregionen Lofoten og Vesterålen, ein A-region med dagleg skredvarsel gjennom sesongen. Sjekk varsom.no. Sesongen februar–april er Fri Flyts. Sendar/mottakar, søkjestang og spade — og alpinøks og stegjern, som står på kildens liste sjølv om turen er KAST 1. Ei tom side betyr ikkje trygt fjell.",
+      },
+    ],
+    elevationProfile: {
+      path: "M0,200 L27,197 L47,193 L72,187 L93,180 L113,173 L137,168 L160,170 L183,171 L206,181 L233,189 L253,183 L266,177 L284,165 L302,157 L319,148 L339,137 L359,129 L378,121 L405,109 L423,100 L445,88 L460,80 L485,73 L504,62 L524,53 L547,45 L564,34 L579,25 L600,18",
+      startLabel: "3 moh",
+      endLabel: "832 moh",
+      distanceLabel: "4,1 km",
+      caption: "933 høgdemeter og 4,08 km frå Austerstraumen: myrene sørover, ned i Trolldalen nord for høyde 146 — og vestryggen til den luftige toppen på 832.",
     },
   },
   rombakstotta: {

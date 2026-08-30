@@ -53,7 +53,7 @@ META = "new_tourmeta.json"
 def route_rec(c, source, note=""):
     """One corridor route in the shape generate_routes.py reads."""
     th = c["trailhead"]
-    return {
+    rec = {
         "id": c.get("routeId") or "normalruta",
         "name": c["routeName"],
         "description": c.get("routeDescriptionFull", c["routeName"]),
@@ -78,6 +78,16 @@ def route_rec(c, source, note=""):
         "source": source,
         "notes": note or c.get("hazardNotes", ""),
     }
+    # `avoidWater` is a finding of the research — "the source crosses the ice,
+    # the line keeps to land" — so it belongs in the record the research writes
+    # and has to survive the merge. It did not: this builder listed the keys it
+    # copied and `avoidWater` was not among them, so every corridor that ever
+    # needed it had the flag typed into corridors.json by hand after the router
+    # had already skied a lake. Lakselvtindan and Forkledalstindan declared it,
+    # lost it here, and came back with 665 m and 710 m of Storvatnet under them.
+    if c.get("avoidWater"):
+        rec["avoidWater"] = True
+    return rec
 
 
 def main():
