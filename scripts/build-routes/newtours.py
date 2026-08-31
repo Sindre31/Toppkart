@@ -219,4 +219,10 @@ NEW_TOURS = {
     "nattmalsfjellet": ("Nattmålsfjellet", "Harstad"),
     "hinnstein": ("Hinnstein", "Harstad"),
     "sorvikfjellet": ("Sørvikfjellet", "Harstad"),
+    # — Oppsamlingsrunden: dei siste dagsturane i Harstad-boka —
+    "lundenesgalten": ("Lundenesgalten", "Harstad"),
+    "rundtind": ("Rundtinden", "Harstad"),
+    "stortinden-sortland": ("Stortinden i Sortland", "Vesterålen"),
+    "storlitinden": ("Storlitinden", "Harstad"),
+    "vetefjellet": ("Vetefjellet", "Harstad"),
 }

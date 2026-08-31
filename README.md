@@ -118,10 +118,10 @@ components/
 lib/
   config.ts              PRICE, TRIAL_DAYS, SITE, GRADE_COLORS, env, is*Configured
   types.ts               Tour, TourGuide, Viewer, Subscription, Invoice
-  tours.ts               The 180 tours, REGIONS, getTour(), routesFor(), routeById(),
+  tours.ts               The 185 tours, REGIONS, getTour(), routesFor(), routeById(),
                          routeFor(), routeProfile()
   routes.ts              Generated ascent routes per tour — see scripts/build-routes/
-  guides.ts              Editorial guide content — all 180 tours, generated
+  guides.ts              Editorial guide content — all 185 tours, generated
   i18n/                  Every user-visible string, no/en. content.ts holds the guides
   access.ts              getViewer() / grantsAccess() — server-only access gate
   stripe.ts              Stripe client, null in demo mode
@@ -134,7 +134,7 @@ lib/
   *.test.ts              Unit tests, run by `npm test` — see "Checks" below
 supabase/
   schema.sql             Tables, policies, RLS
-  seed.sql               The 180 tours and all 180 guides
+  seed.sql               The 185 tours and all 185 guides
 design-reference/        The HTML prototypes and the product/design handoff. Read-only ground
                          truth; not shipped.
 docs/
@@ -280,8 +280,8 @@ content and data quality that has to be settled before the site is sold to anyon
   none was made. Each of the ten guides says so in its own words, and every region was queried
   rather than assumed. The four Trollheimen tours are in an A-region and are forecast daily.
 - **The tour cards are checked, the guides are checked, the geometry is checked — by machine.**
-  `check_tours.py` and `check_routes.py` come back clean on all 180 tours and `check_guides.py` on
-  every number in all 180 guides: every card height is DTM1 at the resolved summit, every vertical is
+  `check_tours.py` and `check_routes.py` come back clean on all 185 tours and `check_guides.py` on
+  every number in all 185 guides: every card height is DTM1 at the resolved summit, every vertical is
   its route's cumulative ascent to within 10 m, every number in the prose traces to a measurement, and
   `supabase/seed.sql` holds the same figures as `lib/tours.ts`. The last figure without a tracked
   source — a stone tunnel's altitude in Taraldsviktinden's guide — was settled by researching that
@@ -361,11 +361,17 @@ content and data quality that has to be settled before the site is sold to anyon
   caught it and it was reverted. The four teasers in `new_tourmeta.json` that were genuinely stale —
   Breitinden, Kråkfjellet, Rensfjellet and Folarskardnuten, all disagreeing with their cards since
   the reroutes of earlier rounds — are fixed at source so the next run agrees.
+- **And it must be run *before* `emit_guides.py`, never after.** The `TOURS` row it writes has no
+  `hasGuide` field — that flag is `emit_guides.py`'s — so a later `emit_new_tours.py` run erases it.
+  Vetefjellet shipped one commit without it after a teaser figure was corrected, and nothing caught
+  it: `check_tours.py` does not read the flag, and `lib/guides.test.ts` only checks that every tour
+  *claiming* a guide has one, which is the safe direction. A tour that has a guide and does not claim
+  it passes every check and shows the reader nothing.
 - **The guide text has not been read by anyone who has skied these tours.** Every number in
   `lib/guides.ts` traces to Kartverket's terrain model, the route research or a cited source, and
   every number is matched mechanically by `check_guides.py` — which reads nynorsk verticals as well
-  as bokmål ones, and comes back clean on all 180 guides with no unsourced number left.
-  On top of that, **105 of the 180 have been through an independent adversarial read** whose only job
+  as bokmål ones, and comes back clean on all 185 guides with no unsourced number left.
+  On top of that, **105 of the 185 have been through an independent adversarial read** whose only job
   is to break it — the 24 of the first round, the 15 of the second, the 7 of the Oslo round, the
   22 of the Sunnmøre and Vestland rounds, the 7 of the Trondheim round, Kjerag, Møysalen and
   Sæbyggjenuten, the 4 of the popularity round, the 8 of the alpine-resort round and, last, the
