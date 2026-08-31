@@ -4968,6 +4968,140 @@ without conditions.
 
 The book still has day tours left in it after this round.
 
+## The ten-route round
+
+Ten more ways up peaks the app already carries, all from the northern
+Fri Flyt books — Tromsø, Troms, Lofoten, Bodø and Harstad. 185 tours,
+**209 routes**, and 22 tours with more than one line. Kjølen and
+Strandtinden are the first two to carry three.
+
+| tour | new route | start | gain | km | steepest 30 m | primary for comparison |
+| --- | --- | --- | --- | --- | --- | --- |
+| Kjølen | Fra Kvaløysletta | Kvaløysletta sykehjem, 26 | 805 | 6.76 | 23.1° | 578 m / 4.11 km / 24.9° |
+| Kjølen | Fra Slettaelva | Slettaelva, 59 | 809 | 6.26 | 34.7° | ″ |
+| Fagerfjellet | Henrikskaret | Fagerelva, 32 | 929 | 3.09 | 30.0° | 947 m / 4.30 km / 25.6° |
+| Store Skalltinden | Bjørnskardalen | Bjørnskar, 10 | 966 | 6.13 | 32.1° | 981 m / 6.04 km / 27.0° |
+| Storfjellet | Østhenget | Krokenga, 15 | 1074 | 3.66 | 30.7° | 1053 m / 3.27 km / 36.5° |
+| Strandtinden | Kåringen | E10 ved Kåringen, 159 | 1063 | 8.18 | 22.8° | 1156 m / 5.86 km / 29.1° |
+| Strandtinden | Kanstadbotn | E10 i Kanstadbotn, 15 | 1140 | 7.68 | 30.8° | ″ |
+| Rundfjellet | Kudalsheia | avkjørselen mot Kudalsheia, 39 | 797 | 3.29 | 28.1° | 890 m / 5.28 km / 31.2° |
+| Sandhornet | Nordøstsiden | Ravika, 4 | 1018 | 5.28 | 36.1° | 1021 m / 5.01 km / 32.5° |
+| Hemmestadfjellet | Vestsiden | Gammelgårdsbukta, 18 | 668 | 2.44 | 26.2° | 679 m / 3.88 km / 34.9° |
+
+The eight tours were re-routed in full, primaries included, and every
+shipped primary reproduced its geometry exactly — same vertex count, same
+length, same gain and same steepest step after resampling. That is the
+check that matters when adding a route to a tour that already has one.
+
+### The Tromsø book writes the bar into its own headings
+
+The second-route round had to argue, case by case, whether a numbered
+line was a *way up* or a *way down*. The northern books settle it
+typographically. Tromsø, Ringvassøya and Senja print **`OPP:`** and
+**`NED:`** inside each numbered route, so «4.11.2 HENRIKSKARET … OPP: Det
+er mulig å velge startsted ved utløpet av Fagerelva» is a sanctioned
+ascent from a designated start in one sentence, and «8.5.2 SØRVESTSIDEN»
+with no `OPP:` block is a descent line and nothing else. Lofoten and Bodø
+use the same idea with a heading — `ALTERNATIV OPPSTIGNING`, `Opp
+(nordøstsiden)`.
+
+Scanning the 95 Fri Flyt pages fetched for this round — one per shipped
+tour outside the Harstad book — for that shape, together with the Harstad
+pages already on disk, produced fifteen candidates; ten survived a read.
+
+### Two of them are second *starts* the source names in its own facts line
+
+- **Kjølen** publishes four. Its Startsted line reads «Kvaløysletta /
+  (OPP 1 og OPP 2), Storelva / (OPP 3) og Finnvikdalen (OPP 4). Ulike
+  parkeringer», and each of 2.4.1–2.4.4 is a separate walk-up with its
+  own car park and its own bus stop. The app had OPP 4; it now has OPP 1
+  and OPP 2 as well.
+- **Rundfjellet** names Kudalsheia first and calls the app's shipped
+  start the alternative: «Alternativ startsted er Vatterfjordpollen.» The
+  north side is two kilometres shorter and gentler in its steepest step —
+  28.1° against 31.2° — and the source's warning for it is the surface,
+  not the angle: «Fra Kudalen på nordsiden er det ofte steinhard skare
+  siste kneika, ta med stegjern og isøks.»
+
+### One of the new lines is steeper than the book's own «steepest point»
+
+Kjølen's facts block says **«Bratteste punkt: Under 27 grader»**, and
+that holds for the routes it was written about: Finnvikdalen measures
+24.9° in its steepest 30 m window and Kvaløysletta 23.1°. The Slettaelva
+line measures **34.7°, between 350 and 371 moh**, on the pull out of
+Svarthammardalen. It is the same mountain and the same book page, and the
+number in the facts block is not true of all four of its own routes. The
+guide says so in those words rather than repeating the book.
+
+### A lake the source sends you across, and one it does not
+
+Store Skalltinden's Bjørnskardalen route is written «opp til og over
+Bjørnskardvatnan», so the ice is the route. `check_ground` found the
+solved line on water at three heights, and the three are not the same
+kind of thing:
+
+- **220 moh** — Nedre Bjørnskarvatnet (`relation/9929007`, ssr 534110)
+  and **250 moh** — the main lake. Both are members of Bjørnskarvatnan,
+  both read `Innsjø` rather than `InnsjøRegulert`, and both are what the
+  source means.
+- **480 moh** — an unnamed tarn (`way/714508198`, NVE vann 66673) on the
+  broad ridge above the col, which nothing sanctions.
+
+Two corridor edits — moving «ryggen» to 69.871/19.304 and inserting «sør
+for tjernet» at 69.872/19.309 — took the high crossing from 135 m to 89 m
+and no further: the broad ridge the source tells you to follow runs over
+that tarn. So the guide names all three heights, which is what
+`check_ground` asks for and what a reader needs, and the record says which
+of the three the source actually chose.
+
+### `emit_new_tours.py` silently dropped a `hasGuide`
+
+Found while emitting this round: **Vetefjellet shipped in the previous
+commit without `hasGuide: true`**. The cause is a re-run. `emit_new_tours.py`
+rebuilds a tour's `TOURS` row from `route_metrics.json` and `tourmeta.json`,
+and `hasGuide` lives in neither — it is written by `emit_guides.py`. Running
+the tour emitter *after* the guide emitter therefore erases the flag, and
+the previous round did exactly that when a teaser figure was corrected.
+
+Nothing caught it. `check_tours.py` does not read the flag, and
+`lib/guides.test.ts` checks that every tour claiming a guide has one —
+`TOURS.filter(t => t.hasGuide)` — which is the safe direction only. A tour
+that *has* a guide and does not claim it passes every check and shows the
+reader nothing. The root README already warns that `emit_new_tours.py`
+must be given slugs; the sharper rule is **run `emit_guides.py` last**.
+
+### What was turned away
+
+Five candidates read like second routes and are not, and the reasons are
+worth keeping so the next round does not re-research them:
+
+- **Snøtindan 2.7.2 Østruta** from Gullesfjordbotn camping — a designated
+  start and a described line, but it traverses Vestbotntinden and drops to
+  Øvre Storelvvatnet before the final climb. A two-summit day, not one
+  ascent.
+- **Kjølen 2.4.3 Fra Storelva** — the ski stadium is mapped, but the line
+  «opp til Rødtinden og videre over Storbogstinden, forbi pkt. 530 moh.»
+  crosses a col that DTM1 reads at 230–270 m between two tops at 470 and
+  567. That is a 300 m re-climb, and the book's 530 does not resolve on the
+  ground between them.
+- **Istinden, from Tunebrua** — a designated alternative start, but the
+  middle is «finn den beste veien gjennom skogen», and the round that
+  shipped Istinden had already established that the forest road there «som
+  regel ikke [er] brøytet». It is the exit, not the start.
+- **Reinspalen 2.10.3/2.10.4 from Bømarka** — the summer route, from a
+  named start, but the source says of both that «om du kommer til selve
+  toppen ved å følge ryggen er ikke alltid sikkert». A line that may not
+  reach the summit is not a route to it.
+- **Skogshornrenna, from Lykkjastølen** — a designated start and an
+  explicit «bør du gå denne ruta opp», but the couloir averages 40° with
+  steeper passages and two rock steps to drop, and the source calls it
+  «forbeholdt eksperter».
+
+Beyond those, the usual: Nonstinden's three other lines, Trolltinden's
+Bollen and Østrenna, Helligtinden's Østskåla, Snøtinden's Sørvestsiden and
+Trollfjellet's Vestsiden 2 are descent variants from the same car park,
+and Strandtinden's Kvannto needs a rappel off the summit.
+
 ## Network
 
 Everything is public and unauthenticated:

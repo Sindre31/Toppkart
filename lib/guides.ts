@@ -77,6 +77,7 @@ export const GUIDES: Record<string, TourGuide> = {
     descent: [
       "Ned samme vei, med varianter etter forholdene. Sørøstsektoren linja følger er den slakeste på toppen — 16,5 grader i snitt over 500 meter med 33,7 som bratteste 60-metersvindu 240 til 300 meter ut.",
       "Resten av toppen er en annen historie: nordaust, aust og sørvest faller 40,2, 41,6 og 40,8 grader i snitt. Bjørnskardalen er kildens KAST 3-alternativ og hører til stabile dager. Fjordutsikten fra varden — Lyngsalpene over Ullsfjorden — er den samme uansett hvilken dag du velger; linja ned bør ikke være det.",
+      "Den andre ruta kjem frå baksida av fjellet: Bjørnskardalen frå Bjørnskar, 966 høgdemeter på 6,13 km, opp til og over Bjørnskarvatnan — Nedre Bjørnskarvatnet på 220 moh og det store vatnet på 250 — og gjennom skardet vest for punkt 621, og vidare opp den breie ryggformasjonen som kryssar eit namnlaust tjern på 480. Kilden kallar henne «et lengre og mer utfordrende rutevalg med et alpint tilsnitt» og reknar med ski på sekken frå skardet, med stegjern vurdert etter forholda. Brattaste steget måler 32,1 grader mellom 701 og 726 moh mot normalrutas 27,0. Vatna er ikkje regulerte — DTM1 les dei som Innsjø på 250 — og det er kilden sjølv som sender deg over isen.",
     ],
     avalanche: [
       {
@@ -154,6 +155,7 @@ export const GUIDES: Record<string, TourGuide> = {
       "Ned samme vegen, ned Finnvikdalen. Retninga fra toppen til startpunktet er 62 grader, mellom øst og nordøst, og de to radialene måler 9,8 og 10,0 grader i snitt ut til en kilometer — det er hele historien om den sida. Fri Flyt mener for øvrig at den beste skikjøringa på fjellet ligger et annet sted: rutene fra Kvaløysletta og Slettaelva, «der siste del nedover Finnlandsfjellet bare er å nyte i store og herlige svinger». Dette er den korte vegen opp, ikke den fineste vegen ned.",
       "Ut.no er tydelig på hva turen er og ikke er: «Ikke en topp for deg som må ha kvasse egger og bratte nedkjøringer, men en fin topp som gir god skikjøring.» Advarselen deres gjelder ikke bratthet, men det som ligger under snøen: «Snømengden avgjør mulighetene dine på vei ned. Følg snøfeltene så langt det lar seg gjøre, unngå åpenbare terrengfeller og bekkedaler.»",
       "Nordover er det en annen sak. Nordflanken måler 20,9 grader i snitt ut til en kilometer med et 36,7-graders vindu 710 til 770 meter ut — den eneste retninga fra denne toppen som holder over 20 grader i snitt. Toppflata er bred, radaren er det eneste haldepunktet i dårlig sikt, og faller du for fristelsen til å ta en ny linje nedover nordover, er det den flanken du kommer inn i.",
+      "Fri Flyt gir fire startstader for Kjølen, og kortet ber no tre av dei. Frå Kvaløysletta sykehjem er det 805 høgdemeter og 6,76 km opp gjennom byggefeltet til det vesle alpinanlegget, over Slaktarhaugen på 220 moh og Finnlandsfjellet på 494, forbi Litje-Kjølen på 652 — den slakaste av dei tre, med brattaste steg 23,1 grader mellom 130 og 149 moh. Frå Slettaelva er det 809 høgdemeter og 6,26 km etter anleggsvegen opp Svarthammardalen, 376 moh, og vest for Amundvatnet. Den linja har eit steg på 34,7 grader mellom 350 og 371 moh — godt over «Bratteste punkt: Under 27 grader», som er tala kilden oppgir for fjellet og som normalruta frå Finnvikdalen held seg innanfor.",
     ],
     avalanche: [
       {
@@ -225,6 +227,7 @@ export const GUIDES: Record<string, TourGuide> = {
     descent: [
       "Normalen følger ruta opp — sørvestsektoren er den slakeste på toppen, 26,2 grader i snitt med 37,0 som bratteste 60-metersvindu, og det er den eneste: sørøst faller 34,8 i snitt med et vindu på 59,9, sør 36,3 med 53,1, og nordsiden har 53,9 grader bare 100 til 160 meter ut.",
       "Østhenget fra Krokenga er kildens KAST 3-alternativ, med lang eksponering i både løsne- og utløpsområder og 30–40 grader fra 240 moh og opp. Skredulykken i 1997, som tok to liv, gikk her. Det er ikke linja på dette kortet, og det er ikke en vei ned man tar på følelsen.",
+      "Den andre ruta går opp austsida frå Krokenga: 1074 høgdemeter på 3,66 km, langs sørvestsida av Sauskarbekken til 578 moh og så vestover mot toppen. Kilden skriv henne med utropsteikn — «Denne oppstigningen krever sikre snøforhold!!!» og «Fra 240 moh. og helt opp er terrenget i store områder 30–40 grader!!» — og daterer eit skred: i 1997 gjekk eit sjølvutløyst skred langt oppe i fjellet over fv. 91 og tok livet av to personar i eit hus på Krokenga. Brattaste steget på linja måler 30,7 grader mellom 350 og 368 moh; normalruta frå Storelva er brattare i eit enkeltsteg, 36,5, men ligg kortare tid i skredterreng.",
     ],
     avalanche: [
       {
@@ -530,6 +533,7 @@ export const GUIDES: Record<string, TourGuide> = {
     descent: [
       "Ned samme vei. Vestsiden er målt slak — 14,6 grader i snitt over 500 meter med 17,8 som bratteste 60-metersvindu — og forsenkningen og skogen gir jevn kjøring hele veien til den dyrka marka.",
       "Henrikskaret er kildens KAST 3-alternativ fra Fagerelvas utløp, med 30–35 grader mellom 660 og 740 moh gjennom tett skog inn i skardet. Det hører til stabile dager — og det er ikke linja på dette kortet.",
+      "Den andre dokumenterte ruta går inn Henrikskaret frå utløpet av Fagerelva: 929 høgdemeter på 3,09 km, mot normalrutas 947 på 4,30 — same fjell på to tredelar av lengda. Skaret sjølv er registerført og les 596 moh der linja passerer. Fri Flyt set ruta til KAST 3 – Komplekst mot normalrutas KAST 1, og skriv at det er parti på 30–35 grader mellom 660 og 740 moh; brattaste steget på linja måler 30,0 grader mellom 340 og 360.",
     ],
     avalanche: [
       {
@@ -1796,6 +1800,7 @@ export const GUIDES: Record<string, TourGuide> = {
     descent: [
       "Nordruta hjem er jevn og lett kjøring med parti på 20 grader — fin for ferske, sier kilden, og V/NV-flankene måler 7,8–9,7 i snitt. SV mot Horntindan er flat: 0,5 grader i snitt langs ryggen.",
       "Austsida mot Vebbestadvatnet måler 30,5 i snitt, og nordsida har et 52,7-vindu — vestruta fra Skommesvik holder over 30 grader og er klassa Komplekst. Grad 2-turen er nordruta, og bare den.",
+      "Vestsida er den andre ruta: 668 høgdemeter på 2,44 km frå lomma ved Gammelgårdsbukta, forbi Skommesvik på 74 moh og opp gjennom lia til T-krysset på kraftlinja, 341. Kilden kallar henne «en mye brattere variant enn nordsiden» der «over 30 grader er normalt»; linja her måler 26,2 grader i det brattaste steget mellom 450 og 470 moh og 23,0 i det brattaste hundremetersbeltet mellom 400 og 500. At ho blir gått opp og ikkje berre ned, står i nabofjellets tekst: Horntindan-ruta opnar «Parker ved Skommesvik, gå opp mot Hemmestadfjellet og deretter ryggen sørover til Horntindan.»",
     ],
     avalanche: [
       {
@@ -2619,6 +2624,7 @@ export const GUIDES: Record<string, TourGuide> = {
       "Ned samme vegen: ryggen ned til benken, benken østover og nordsida ned Heggedalen. Det er linja fjellet er kjent for — «nedkjøringen er samme rute som opp og er klassikeren der du kan dundre på og oppnå virkelig fri flyt og brede glis» — og i sesongen kjører man helt ned til veien ved havet. Snøen på nordsida ligger lenge nok til at midnattssol i juni ikke er uvanlig.",
       "Å gå rundt koster det å gå rundt koster. Den første korridoren tok toppen rett opp nordaustribba, og den linja var 4,77 km med 1090 høydemeter; over vestryggen er turen 5,86 km med 1156 og 101 meter gitt tilbake underveis. Fri Flyt er tydelig på hvorfor: «Det er helt klart mulig å gå opp på andre siden, men den er mer eksponert.» Ribba måler 1010,2 moh 150 meter fra toppen mot nordøst der ryggen måler 1039,8 mot nordvest — den er brattere hele vegen opp.",
       "Rett nord for varden er det uansett bratt: 40,9 grader i brattaste 60-metersvindu bare 20 til 80 meter ut, med 24,8 grader i snitt ut til en kilometer. Der ligger også snøen som blir liggende — Kartverket fører terrengklassen SnøIsbre på nordsida fra rundt 1050 moh og nedover, mens ryggen ruta går på er bar mark i alle de seksten siste vertexene. De tre andre kantene er alvorlige: sør måler 30,6 grader i snitt med 63,9 grader i vinduet 20 til 80 meter fra varden, sørøst 30,9 med 62,5, øst 29,0 med 54,9, og sørvest 24,1 med 56,0. Fri Flyts to andre linjer — Kvanntoa i nordøst og Kvannto i øst — har partier på 45 grader og rappellfeste, og de er ikke ruta dette kortet beskriver.",
+      "To av kildens sju linjer er eigne oppstigningar med eiga parkering, og begge møter turen først på høyde 779 — 787 moh der linja passerer — der dei siste 300 høgdemeterane nordaustover er felles. Frå Kåringen er det 1063 høgdemeter og 8,18 km over Nordfjellaksla på 344 moh: den lengste og slakaste av dei tre, med brattaste steg 22,8 grader mellom 976 og 995 moh, og kilden kallar henne «en meget populær skitur med fjellski» der ein oftast kan følgje skispor frå vegen. Frå Kanstadbotn er det 1140 høgdemeter og 7,68 km, nord for høyde 519 og sør for Trollvatnan på 418 — kildens «sprekere variant», med eit steg på 30,8 grader mellom 776 og 799.",
     ],
     avalanche: [
       {
@@ -3203,6 +3209,7 @@ export const GUIDES: Record<string, TourGuide> = {
     descent: [
       "Normalen er ryggen tilbake — sørsektoren måler 13,7 grader i snitt over 500 meter, og de mange variantene er grunnen til at turen tåler å gås igjen. Hold igjen der ryggen slutter: nedkjøringen mot Vatterfjordpollen kan være skredutsatt, brattest om du tar tidlig av ryggen mot venstre på sørsida, sier kilden.",
       "Fra Kudalen på nordsida ligger det ofte hard is mot slutten — kilden ber deg ta med stegjern og isøks om du skal den veien. Nordvestsida har et 60-metersvindu på 64,8 grader; det er ikke en side man improviserer på.",
+      "Kildens startsted-linje namngir Kudalsheia først og set Vatterfjordpollen — ruta over — som «alternativ startsted». Frå avkjørselen mot Kudalsheia er det 797 høgdemeter og 3,29 km: opp på heia, 406 moh, langs ryggen til han forsvinn inn i fjellet, opp dalen og gjennom skaret på 716 til siste ryggen mot toppen. Det er to kilometer kortare enn ruta frå Vatterfjordpollen, og brattaste steget måler 28,1 grader mellom 664 og 680 moh mot 31,2 på hovudruta. Faremomentet kilden nemner for denne sida er føret: «Fra Kudalen på nordsiden er det ofte steinhard skare siste kneika, ta med stegjern og isøks.»",
     ],
     avalanche: [
       {
@@ -3511,6 +3518,7 @@ export const GUIDES: Record<string, TourGuide> = {
       "Same veg ned, med rom for austlege variantar som gjev brattare køyring i toppflanken — same 30-gradersklassa, seier kjelda. Frå flata i Stjerndalen gjeld faresona att: kryss utløpsområda kjapt og éin om gongen på dagar med markert fare.",
       "Ravika-ruta på nordaustsida er fullt skildra hos Fri Flyt — skogsvegen frå den grøne garasjen, myrdraga langs Ravikelva, ramp til toppeggen — men nedfarten hennar har eit 40-gradersparti mellom 920 og 840 moh og skaret 300 m søraust for toppen som inngang. Ho er varianten, ikkje normalvegen, og han som vel ho, har valt ein annan tur.",
       "Ned trappene ber du skia att, og stien langs fjæra tek deg heim til Horsdal — 38 høgdemeter å gje att har heile turen, så det meste av dagen er rein stigning og rein køyring.",
+      "Kilden gir nordaustsida eiga adkomstskildring og eiga parkering i Ravika, og seier rett ut at ein kan velje å gå opp frå den sida. Det er 1018 høgdemeter og 5,28 km: skogsvegen sørvest langs vestsida av Ravikelva, myrene ved Hornkroken på 252 moh, punkt 385 og det slakare området sør for punkt 580 — og til slutt det eine snøfeltet som når heilt opp på toppeggen. Brattaste steget måler 36,1 grader mellom 806 og 830 moh mot 32,5 på ruta frå Horsdal. Kilden oppgir 40 grader mellom 840 og 920 og legg til stegjern og isøks på hardt føre, innblåst snø i utsteget av rampa og skavlar langs toppeggen.",
     ],
     avalanche: [
       {

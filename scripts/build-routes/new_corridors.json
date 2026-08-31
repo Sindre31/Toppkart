@@ -3810,7 +3810,93 @@
         "https://www.friflyt.no/topptur/skiturer-troms/turbeskrivelse-kjoelen"
       ],
       "confidence": "high",
-      "notes": "Ut.no 118113 er ført som ski touring + topptur, 563 høgdemeter, 4,08 km, 3 timar, sesong januar–mai, og opnar «En av Kvaløyas mest besøkte topper.» Fri Flyt: toppunkt 790, høgdemeter 770, himmelretning S-Ø, bratteste punkt under 27 grader, KAST 1, 3–5 timar, beste sesong november–juni, og fire startstader (Kvaløysletta, Slettaelva, Storelva og Finnvikdalen). Fri Flyts «FRA STORELVA» går over Rødtinden og Storbogstinden til Kjølen — dei to turane i denne runden deler altså fjellrygg. Sesongen på kortet er overlappet mellom dei to kjeldene, november til mai. På toppen står ei varmebu reist på dugnad av Troms Turlag i 2010. Første forsøk starta på den kartlagde parkeringa ved austenden av vatnet, og `check_ground.py` fann at linja då gjekk 290 m ut på Finnvikvatnet på 229 moh (terrengklasse Innsjø, ikkje regulert). Ingen kjelde sender nokon over det vatnet, og landet aust for det ligg 25–35 m høgare, så turen startar der ut.no startar han: sør for vatnet, der servicevegen endar."
+      "notes": "Ut.no 118113 er ført som ski touring + topptur, 563 høgdemeter, 4,08 km, 3 timar, sesong januar–mai, og opnar «En av Kvaløyas mest besøkte topper.» Fri Flyt: toppunkt 790, høgdemeter 770, himmelretning S-Ø, bratteste punkt under 27 grader, KAST 1, 3–5 timar, beste sesong november–juni, og fire startstader (Kvaløysletta, Slettaelva, Storelva og Finnvikdalen). Fri Flyts «FRA STORELVA» går over Rødtinden og Storbogstinden til Kjølen — dei to turane i denne runden deler altså fjellrygg. Sesongen på kortet er overlappet mellom dei to kjeldene, november til mai. På toppen står ei varmebu reist på dugnad av Troms Turlag i 2010. Første forsøk starta på den kartlagde parkeringa ved austenden av vatnet, og `check_ground.py` fann at linja då gjekk 290 m ut på Finnvikvatnet på 229 moh (terrengklasse Innsjø, ikkje regulert). Ingen kjelde sender nokon over det vatnet, og landet aust for det ligg 25–35 m høgare, så turen startar der ut.no startar han: sør for vatnet, der servicevegen endar.",
+      "alternates": [
+        {
+          "routeId": "kvaloysletta",
+          "routeName": "Fra Kvaløysletta",
+          "routeDescriptionFull": "Fra parkeringa ved Kvaløysletta sykehjem opp gjennom byggefeltet til det lille alpinanlegget, videre over Slaktarhaugen og Finnlandsfjellet, forbi Litje-Kjølen og opp til radaren på toppen",
+          "trailhead": {
+            "name": "Kvaløysletta",
+            "lat": 69.69217,
+            "lng": 18.86334,
+            "elevationM": 26,
+            "osmEvidence": "Parkeringa ved Kvaløysletta sykehjem (OSM way/131443462, amenity=parking; sjukeheimen er node/430035579). Kilden: «Kommer du for eksempel med buss til Kvaløysletta sykehjem, kan du fortsette oppover i byggefeltet.» DTM1 les 25,9 moh."
+          },
+          "waypoints": [
+            {
+              "name": "alpinanlegget",
+              "lat": 69.697,
+              "lng": 18.86,
+              "elevationM": 123
+            },
+            {
+              "name": "Slaktarhaugen",
+              "lat": 69.70248,
+              "lng": 18.8607,
+              "elevationM": 220
+            },
+            {
+              "name": "Finnlandsfjellet",
+              "lat": 69.70576,
+              "lng": 18.81876,
+              "elevationM": 494
+            },
+            {
+              "name": "Litje-Kjølen",
+              "lat": 69.72031,
+              "lng": 18.77973,
+              "elevationM": 652
+            }
+          ],
+          "note": "Fri Flyts 2.4.1 FRA KVALØYSLETTA, KAST 1. Startsted-linja på turen namngir alle fire startstadene kilden skildrar: «Kvaløysletta / (OPP 1 og OPP 2), Storelva / (OPP 3) og Finnvikdalen (OPP 4). Ulike parkeringer.» Appen hadde Finnvikdalen; dette er OPP 1. Alle tre stadnamna ruta nemner er registerførte og ligg på linja: Slaktarhaugen (Haug, 220 moh), Finnlandsfjellet (Fjell, 494) og Litje-Kjølen (Fjell, 652). Bratteste punkt for heile fjellet er «Under 27 grader»."
+        },
+        {
+          "routeId": "slettaelva",
+          "routeName": "Fra Slettaelva",
+          "routeDescriptionFull": "Fra parkeringa øverst i Slettaelva etter anleggsveien opp Svarthammardalen, og videre vest for Amundvatnet i en mer eller mindre direkte linje mot toppen",
+          "trailhead": {
+            "name": "Slettaelva",
+            "lat": 69.70095,
+            "lng": 18.87958,
+            "elevationM": 59,
+            "osmEvidence": "Den øvste parkeringa i Slettaelva (OSM way/132928930, amenity=parking), ovanfor Slettaelva dam (OSM way/98034686). Kilden gir Slettaelva som eige startsted for 2.4.2. DTM1 les 58,6 moh."
+          },
+          "waypoints": [
+            {
+              "name": "anleggsvegen",
+              "lat": 69.704,
+              "lng": 18.865,
+              "elevationM": 165
+            },
+            {
+              "name": "Svarthammardalen",
+              "lat": 69.70691,
+              "lng": 18.83696,
+              "elevationM": 376
+            },
+            {
+              "name": "opp dalen",
+              "lat": 69.715,
+              "lng": 18.842,
+              "elevationM": 375
+            },
+            {
+              "name": "vest for Amundvatnet",
+              "lat": 69.725,
+              "lng": 18.82,
+              "elevationM": 510
+            },
+            {
+              "name": "mot toppen",
+              "lat": 69.73,
+              "lng": 18.805,
+              "elevationM": 616
+            }
+          ],
+          "note": "Fri Flyts 2.4.2 FRA SLETTAELVA, KAST 1: «følge den markerte anleggsveien på kartet opp Svarthammardalen til Storvatnet. Herfra er det merking opp langs nordsiden av vatnet og vest for Amundvatnet i ei mer eller mindre direkte linje mot toppen.» Svarthammardalen (Dal) og Amundvatnet (Tjern) er registerførte og ligg på linja; Amundvatnet les InnsjøRegulert på 453 moh og korridoren går vest for han, slik kilden ber om. Kildens «Storvatnet» løyser ikkje til noko vatn på linja — registerets Storvatnet i Tromsø ligg 4 km nordaust, i eit anna vassdrag — så korridoren er festa til dei to punkta som lét seg måle."
+        }
+      ]
     }
   },
   {
@@ -3900,7 +3986,93 @@
         "https://ut.no/utforsker/kommune/17262/l%C3%B8dingen/turforslag"
       ],
       "confidence": "medium",
-      "notes": "Fri Flyt: toppunkt 1076, høydemeter 1050, KAST 3 – Komplekst, 6 timer, beste sesong januar–juni, ekstra utstyr alpinøks og stegjern, tre beskrevne linjer (Nord, Nordøst/Kvanntoa, Øst/Kvannto). Populariteten står i ingressen: «Strandtinden er Harstadområdets store klassiker, sannsynligvis det mest populære og kjente fjellet for toppturfolk fra Harstad og utenfra.» Confidence er medium og ikke high av én grunn: den publiserte rutebeskrivelsen er én kilde, og andrekilden bekrefter fjellet og høyden, ikke linja. Punkthøydene 505 og 570 måler 509,6 og 570,3 på DTM1, og det er den uavhengige kontrollen korridoren faktisk har."
+      "notes": "Fri Flyt: toppunkt 1076, høydemeter 1050, KAST 3 – Komplekst, 6 timer, beste sesong januar–juni, ekstra utstyr alpinøks og stegjern, tre beskrevne linjer (Nord, Nordøst/Kvanntoa, Øst/Kvannto). Populariteten står i ingressen: «Strandtinden er Harstadområdets store klassiker, sannsynligvis det mest populære og kjente fjellet for toppturfolk fra Harstad og utenfra.» Confidence er medium og ikke high av én grunn: den publiserte rutebeskrivelsen er én kilde, og andrekilden bekrefter fjellet og høyden, ikke linja. Punkthøydene 505 og 570 måler 509,6 og 570,3 på DTM1, og det er den uavhengige kontrollen korridoren faktisk har.",
+      "alternates": [
+        {
+          "routeId": "karingen",
+          "routeName": "Kåringen over Nordfjellaksla",
+          "routeDescriptionFull": "Fra parkeringslomma på E10 like nord for Ørnstolen opp sommerruta til Nordfjellaksla, videre langs det høyeste høydedraget mot Skjerdingan og postkassa på høyde 779, og derfra toppstøtet nordøstover til Strandtinden",
+          "trailhead": {
+            "name": "Kåringen",
+            "lat": 68.45078,
+            "lng": 15.93829,
+            "elevationM": 159,
+            "osmEvidence": "Parkering langs E10 (OSM node/3376184659, amenity=parking). Kilden: «Like nord for Ørnstolen (189 moh.) ligger det en stor parkeringslomme. Dette er ca. 100 m nordvest av høyeste punkt på E10 over Kåringen.» E10s høgste punkt her måler 166,3 moh på 68.44961/15.94047, og parkeringa ligg 145 m nordvest for det; registerets Ørnstolen (Haug) les 187,0 mot kildens 189. DTM1 les 158,7 moh."
+          },
+          "waypoints": [
+            {
+              "name": "Nordfjellaksla",
+              "lat": 68.4581,
+              "lng": 15.9542,
+              "elevationM": 344
+            },
+            {
+              "name": "høgdedraget",
+              "lat": 68.47,
+              "lng": 15.97,
+              "elevationM": 309
+            },
+            {
+              "name": "mot Skjerdingan",
+              "lat": 68.482,
+              "lng": 15.985,
+              "elevationM": 521
+            },
+            {
+              "name": "høyde 779",
+              "lat": 68.502,
+              "lng": 16.02,
+              "elevationM": 787
+            }
+          ],
+          "note": "Fri Flyts 3.8.5 Kåringen (770 høgdemeter, 6,9 km) fram til høyde 779, sett saman med 3.8.7 Toppstøtet, som er kildens eiga framhald: «Fra høyde 779 er det 300 høydemeter mot nordøst til toppen av Strandtinden.» Nordfjellaksla (Fjell, 68.45810/15.95420) les 344 moh. Fallet frå 344 til 309 er kildens eige «Deretter litt ned før du følger det høyeste høydedraget». Kilden kallar dette «en meget populær skitur med fjellski» der ein oftast kan følgje skispor frå vegen. Normalruta går frå E10 ved Heggedalen på nordsida."
+        },
+        {
+          "routeId": "kanstadbotn",
+          "routeName": "Kanstadbotn sør for Trollvatnan",
+          "routeDescriptionFull": "Fra den store parkeringsplassen på E10 i Kanstadbotn rett opp østover, nord for høyde 519 og videre langs ryggen sør for Trollvatnan til høyde 779 og toppstøtet",
+          "trailhead": {
+            "name": "Kanstadbotn",
+            "lat": 68.49984,
+            "lng": 15.88378,
+            "elevationM": 15,
+            "osmEvidence": "Stor parkeringsplass langs E10 (OSM node/3376227868, amenity=parking) i Kanstadbotn (registerets Kanstadbotn, Vik i sjø, 68.50447/15.87248). Kilden kallar han kjettingplassen midt i Kanstadfjorden. DTM1 les 15,0 moh."
+          },
+          "waypoints": [
+            {
+              "name": "opp austover",
+              "lat": 68.506,
+              "lng": 15.9,
+              "elevationM": 162
+            },
+            {
+              "name": "nord for høyde 519",
+              "lat": 68.509,
+              "lng": 15.92,
+              "elevationM": 284
+            },
+            {
+              "name": "sør for Trollvatnan",
+              "lat": 68.506,
+              "lng": 15.96,
+              "elevationM": 353
+            },
+            {
+              "name": "ryggen",
+              "lat": 68.505,
+              "lng": 15.97,
+              "elevationM": 421
+            },
+            {
+              "name": "høyde 779",
+              "lat": 68.502,
+              "lng": 16.02,
+              "elevationM": 787
+            }
+          ],
+          "note": "Fri Flyts 3.8.6 Kanstadbotn (800 høgdemeter, 5,3 km) — «Sprekere variant enn ruta som starter fra Kåringen» — sett saman med 3.8.7 Toppstøtet. Trollvatnan er registerført (Gruppe av vann, 68.50417/15.97299) og les Innsjø på 418 moh; korridoren held seg sør for han, slik kilden ber om, og går ikkje på isen. Dei to rutene møtest på høyde 779 og deler dei siste 300 høgdemeterane."
+        }
+      ]
     }
   },
   {
@@ -4705,7 +4877,66 @@
         "https://www.friflyt.no/topptur/skiturer-bodoe/turbeskrivelse-sandhornet",
         "https://www.friflyt.no/topptur/skiturer-bodoe"
       ],
-      "confidence": "medium"
+      "confidence": "medium",
+      "alternates": [
+        {
+          "routeId": "nordostsiden",
+          "routeName": "Nordøstsiden fra Ravika",
+          "routeDescriptionFull": "Fra parkeringen i Ravika etter skogsveien sørvest langs vestsiden av Ravikelva inn til myrene ved Hornkroken, videre nordvest mot p385 og inn i det slakere området sør for p580, og opp rampen til toppeggen",
+          "trailhead": {
+            "name": "Ravika",
+            "lat": 67.122,
+            "lng": 14.15565,
+            "elevationM": 4,
+            "osmEvidence": "Parkering i Ravika (OSM way/687759960, amenity=parking); registerets Ravika (Gard, Gildeskål, 67.12181/14.14939) ligg 260 m vest. Kilden: «kjører du til Ravika, 16,2 km etter brua og tar til venstre ved det første huset. Følg veien 200 meter og parkér ved grønn garasje.» DTM1 les 3,9 moh."
+          },
+          "waypoints": [
+            {
+              "name": "skogsvegen",
+              "lat": 67.1195,
+              "lng": 14.146,
+              "elevationM": 25
+            },
+            {
+              "name": "myrane",
+              "lat": 67.1162,
+              "lng": 14.133,
+              "elevationM": 110
+            },
+            {
+              "name": "Hornkroken",
+              "lat": 67.114,
+              "lng": 14.122,
+              "elevationM": 252
+            },
+            {
+              "name": "p385",
+              "lat": 67.115,
+              "lng": 14.108,
+              "elevationM": 381
+            },
+            {
+              "name": "400 moh",
+              "lat": 67.116,
+              "lng": 14.09,
+              "elevationM": 552
+            },
+            {
+              "name": "sør for p580",
+              "lat": 67.1135,
+              "lng": 14.082,
+              "elevationM": 593
+            },
+            {
+              "name": "rampa",
+              "lat": 67.112,
+              "lng": 14.074,
+              "elevationM": 771
+            }
+          ],
+          "note": "Fri Flyts «Opp (nordøstsiden)» med eiga adkomstskildring og eige parkeringspunkt (UTM 58900 42150, grøn garasje) — kilden seier sjølv at ein «kan velge å gå opp fra denne siden (Ravika)». Hornkroken er registerført (Dal, Gildeskål) og p385 les 380,8 moh der linja passerer. Kilden gir bratthetene: 29 grader 480–600 moh, 30 grader 750–840 og 40 grader 840–920, «siste biten opp i skaret kan være brattere avhengig av sesong». Utstyr: stegjern og isøks på hardt føre. Faremoment: mogleg innblåst snø i utsteget av rampa, og skavlar langs toppeggen. Normalruta går frå Horsdal på sørsida."
+        }
+      ]
     }
   },
   {
@@ -5520,7 +5751,54 @@
         "https://www.friflyt.no/topptur/tromso/storfjellet",
         "https://www.tinderogtopper.no/post/finnheimfjellet-1148-moh-storfjellet-1089-moh"
       ],
-      "confidence": "medium"
+      "confidence": "medium",
+      "alternates": [
+        {
+          "routeId": "ostenget",
+          "routeName": "Østhenget fra Krokenga",
+          "routeDescriptionFull": "Fra Krokenga langs sørvestsiden av Sauskarbekken til ca. 500 moh og derfra i vestlig retning opp mot toppen",
+          "trailhead": {
+            "name": "Krokenga",
+            "lat": 69.63637,
+            "lng": 19.43782,
+            "elevationM": 15,
+            "osmEvidence": "Fv. 91 Breivikeidvegen (OSM way/172660140) ved Krokenga (registerets Krokenga, Bruk, 69.63536/19.43409, 183 m unna). Ingen amenity=parking i OSM. DTM1 les 14,9 moh."
+          },
+          "waypoints": [
+            {
+              "name": "lia",
+              "lat": 69.642,
+              "lng": 19.432,
+              "elevationM": 93
+            },
+            {
+              "name": "Sauskarbekken",
+              "lat": 69.6478,
+              "lng": 19.42483,
+              "elevationM": 374
+            },
+            {
+              "name": "500 moh",
+              "lat": 69.649,
+              "lng": 19.418,
+              "elevationM": 578
+            },
+            {
+              "name": "vestover",
+              "lat": 69.649,
+              "lng": 19.408,
+              "elevationM": 828
+            },
+            {
+              "name": "toppflanken",
+              "lat": 69.6491,
+              "lng": 19.399,
+              "elevationM": 1038
+            }
+          ],
+          "note": "Fri Flyts 4.3.2 «ØSTHENGET», KAST 3 mot normalrutas KAST 2. «Denne oppstigningen krever sikre snøforhold!!! Ruta går opp på østsiden av toppen og starter fra Krokenga. Sporet legges opp langs sørvestsiden av Sauskardbekken til ca. 500 moh.» Bekken er registerført (Sauskarbekken, 69.64780/19.42483) og les 374 moh der linja kryssar. Kilden: «Fra 240 moh. og helt opp er terrenget i store områder 30–40 grader!!» og daterer ei skredulykke: i 1997 omkom to personar i eit hus på Krokenga i eit sjølvutløyst skred som gjekk over fv. 91. Normalruta startar der fv. 91 kryssar Storelva, 3 km nord."
+        }
+      ]
     }
   },
   {
@@ -5660,7 +5938,54 @@
         "https://www.alltrails.com/nb-no/sti/norway/troms-og-finnmark/topptur-pa-ski-fagerfjellet",
         "https://biaton.com/no-no/service/toppturfavoritter-m-guide/856"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "alternates": [
+        {
+          "routeId": "henrikskaret",
+          "routeName": "Henrikskaret fra Fagerelva",
+          "routeDescriptionFull": "Fra Fagerelvas utløp etter østsiden av elva oppover gjennom delvis tett skog og inn i Henrikskardet, og videre opp mot toppen av Fagerfjellet",
+          "trailhead": {
+            "name": "Fagerelva",
+            "lat": 69.53907,
+            "lng": 19.21695,
+            "elevationM": 32,
+            "osmEvidence": "Serviceveg (OSM way/624198637) ved utløpet av Fagerelva (registerets Fagerelva, Bekk, 69.54048/19.22732). Kilden: «Det er mulig å velge startsted ved utløpet av Fagerelva.» Ingen amenity=parking i OSM her. DTM1 les 32,1 moh."
+          },
+          "waypoints": [
+            {
+              "name": "elveosen",
+              "lat": 69.54,
+              "lng": 19.219,
+              "elevationM": 56
+            },
+            {
+              "name": "austsida av elva",
+              "lat": 69.541,
+              "lng": 19.235,
+              "elevationM": 295
+            },
+            {
+              "name": "inn mot skaret",
+              "lat": 69.5418,
+              "lng": 19.246,
+              "elevationM": 477
+            },
+            {
+              "name": "Henrikskaret",
+              "lat": 69.54199,
+              "lng": 19.25548,
+              "elevationM": 596
+            },
+            {
+              "name": "mot toppen",
+              "lat": 69.544,
+              "lng": 19.267,
+              "elevationM": 810
+            }
+          ],
+          "note": "Fri Flyts 4.11.2 HENRIKSKARET, KAST 3 – Komplekst mot normalrutas KAST 1. Skaret er registerført (Henrikskaret, Skar, 69.54199/19.25548) og les 596 moh der linja passerer. Kilden: «Mellom ca. 660 til 740 moh. er partier som er 30–35 grader.» 957 − 32 = 925, som forliker Fri Flyts 930 høgdemeter. Normalruta frå Fagernes startar 2,4 km lenger nord."
+        }
+      ]
     }
   },
   {
@@ -5670,7 +5995,8 @@
       "Fri Flyts publiserte GPS-punkt (UTM33 664759.68/7757314.18 → 69.87125/19.29294) ligger 31 m fra registerets Store Skalltinden (Topp, Karlsøy), og toppsøket løser 901,1 mot publiserte 900.",
       "Starten er Glimbukta ved fv. 863 på austsida av Ringvassøya — registerets Glimbukta (Bruk, 69.83503/19.35483) leser 11,0 moh. Turen går fra havet: 900 høydemeter er hele fjellet.",
       "Ruta reproduserer: grustaket og lia over (154 moh), sørenden av Skallvatnet (318 — vannet selv leser 320 som Innsjø, og linja holder land ved sørenden slik kilden sier), ryggen vest for vatnet (429), flata sørvest for punkt 695 (534) og ryggen (587) mot det siste bratte.",
-      "Fri Flyts faremoment: løsneområder, utløpsområder og skavler; mellom 230 og 300 moh små bratte parti som skal navigeres med omhu, og de siste 800 metrene mot toppen har parti på 30–40 grader som krever terrengvurdering."
+      "Fri Flyts faremoment: løsneområder, utløpsområder og skavler; mellom 230 og 300 moh små bratte parti som skal navigeres med omhu, og de siste 800 metrene mot toppen har parti på 30–40 grader som krever terrengvurdering.",
+      "check_ground: linja kryssar tre vatn. Det på 220 moh er Nedre Bjørnskarvatnet (OSM relation/9929007, ssr 534110) og det på 250 er hovudvatnet — begge del av Bjørnskarvatnan, som kilden sender deg over, og begge les Innsjø, ikkje regulert. Det tredje, eit namnlaust tjern på 480 moh (OSM way/714508198, NVE vann 66673), ligg på den breie ryggformasjonen kilden ber deg følgje. To omrutingar — «ryggen» flytta til 69.871/19.304 og eit punkt «sør for tjernet» (69.872/19.309) sett inn — tok kryssinga frå 135 til om lag 90 meter, men ryggen går der. Guiden namngir alle tre høgdene."
     ],
     "rejectReason": "",
     "corridor": {
@@ -5728,7 +6054,54 @@
         "https://www.friflyt.no/topptur/tromso/turbeskrivelse-store-skalltinden",
         "https://www.visittromso.no/top-8-places-explore-foot-skiing-snowshoeing"
       ],
-      "confidence": "medium"
+      "confidence": "medium",
+      "alternates": [
+        {
+          "routeId": "bjornskardalen",
+          "routeName": "Bjørnskardalen fra Bjørnskar",
+          "routeDescriptionFull": "Fra Bjørnskar opp til og over Bjørnskarvatnan, videre opp til skardet vest for pkt. 621 og den brede ryggformasjonen til toppen",
+          "trailhead": {
+            "name": "Bjørnskar",
+            "lat": 69.85085,
+            "lng": 19.37653,
+            "elevationM": 10,
+            "osmEvidence": "Parkering ved Bjørnskar (OSM way/680611911, amenity=parking); registerets Bjørnskar (Bruk, Karlsøy, 69.84887/19.37133) ligg 200 m sørvest. DTM1 les 10,1 moh."
+          },
+          "waypoints": [
+            {
+              "name": "opp mot vatna",
+              "lat": 69.86,
+              "lng": 19.36,
+              "elevationM": 259
+            },
+            {
+              "name": "Bjørnskarvatnan",
+              "lat": 69.86739,
+              "lng": 19.33697,
+              "elevationM": 250
+            },
+            {
+              "name": "skardet vest for 621",
+              "lat": 69.873,
+              "lng": 19.315,
+              "elevationM": 323
+            },
+            {
+              "name": "sør for tjernet",
+              "lat": 69.872,
+              "lng": 19.309,
+              "elevationM": 425
+            },
+            {
+              "name": "ryggen",
+              "lat": 69.871,
+              "lng": 19.304,
+              "elevationM": 502
+            }
+          ],
+          "note": "Fri Flyts 3.6.2 BJØRNSKARDALEN, KAST 3 mot normalrutas KAST 2: «Du starter i Bjørnskar og legger sporet opp til og over Bjørnskardvatnan.» Vatna er registerførte (Bjørnskarvatnan, Gruppe av vann) og les Innsjø — ikkje regulert — på 250 moh, så isen er den kilden sjølv sender deg over. «Ryggen har partier på 27–35 grader», og stegjern bør vurderast etter forholda. Normalruta går frå Glimbukta på andre sida av fjellet. check_ground: linja klipte to vatn kilden ikkje nemner. Det på 220 moh er Nedre Bjørnskarvatnet (OSM relation/9929007, ssr 534110) — del av Bjørnskarvatnan, som kilden sender deg over, så det står. Det på 480 moh (OSM way/714508198, NVE vann 66673, namnlaust) er ikkje sanksjonert: «ryggen» er flytta til 69.871/19.304 (501,9 moh) og eit punkt «sør for tjernet» (69.872/19.309, 425,1 moh) er sett inn mellom skardet og ryggen, så linja går sør for tjernet i staden for over det."
+        }
+      ]
     }
   },
   {
@@ -5857,7 +6230,54 @@
         "https://peakbook.org/no/peakbook-element/2897/no/Rundfjellet.html",
         "https://www.utemagasinet.no/randonee/skiferie-i-lofoten"
       ],
-      "confidence": "medium"
+      "confidence": "medium",
+      "alternates": [
+        {
+          "routeId": "kudalsheia",
+          "routeName": "Kudalsheia fra nord",
+          "routeDescriptionFull": "Fra avkjørselen mot Kudalsheia opp til toppen av heia, videre langs ryggen til den forsvinner inn i fjellet, opp dalen og gjennom skaret til siste ryggen mot toppen",
+          "trailhead": {
+            "name": "Kudalsheia",
+            "lat": 68.31281,
+            "lng": 14.57498,
+            "elevationM": 39,
+            "osmEvidence": "Parkering (OSM way/1537953801, amenity=parking) ved avkjørselen på vegen mot Laukvik, 1,3 km nord for registerets Kudalsheia (Ås, 68.30104/14.56294). Kilden skildrar nett denne avkjørselen: «100 meter etter bakketoppen (venstre side). Her vil du se Kudalsheia som peker opp mot Rundfjell.» DTM1 les 39,1 moh."
+          },
+          "waypoints": [
+            {
+              "name": "opp mot heia",
+              "lat": 68.307,
+              "lng": 14.57,
+              "elevationM": 145
+            },
+            {
+              "name": "Kudalsheia",
+              "lat": 68.30104,
+              "lng": 14.56294,
+              "elevationM": 406
+            },
+            {
+              "name": "ryggen",
+              "lat": 68.297,
+              "lng": 14.566,
+              "elevationM": 466
+            },
+            {
+              "name": "opp dalen",
+              "lat": 68.2935,
+              "lng": 14.568,
+              "elevationM": 620
+            },
+            {
+              "name": "skaret",
+              "lat": 68.291,
+              "lng": 14.567,
+              "elevationM": 716
+            }
+          ],
+          "note": "Fri Flyts ALTERNATIV OPPSTIGNING: «Et populært alternativ starter med å gå til toppen av Kudalsheia. Fra toppen følger du ryggen helt til den forsvinner inn i fjellet. Herfra krysser du opp dalen som fører til toppen. Omtrent 100 meter under toppen vil du komme til et skar hvor du skrår til høyre og går opp siste ryggen mot toppen.» Startsted-linja namngir Kudalsheia-avkjørselen først og set Vatterfjordpollen — appens normalrute — som «alternativ startsted». Faremoment frå kilden: «Fra Kudalen på nordsiden er det ofte steinhard skare siste kneika, ta med stegjern og isøks.»"
+        }
+      ]
     }
   },
   {
@@ -8188,7 +8608,48 @@
         "https://www.friflyt.no/topptur/harstad/hemmestadfjellet",
         "https://www.friflyt.no/randone/turomraade-kvaefjord-og-sortland"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "alternates": [
+        {
+          "routeId": "vestsiden",
+          "routeName": "Vestsiden fra Skommesvik",
+          "routeDescriptionFull": "Fra lomma ved Gammelgårdsbukta opp forbi Skommesvik og gjennom lia, over traktorveien nord for T-krysset på kraftledningen og opp den brattere vestsiden til toppen",
+          "trailhead": {
+            "name": "Gammelgårdsbukta",
+            "lat": 68.71689,
+            "lng": 16.05413,
+            "elevationM": 18,
+            "osmEvidence": "Serviceveg (OSM way/621239443) ved Gammelgårdsbukta (registerets Gammelgårdsbukta, Vik i sjø, 68.71707/16.05143); fv. 850 Revsnesveien (OSM way/178021519) går like ovanfor. Kildens startsted-linje: «På vestsiden av fjellet er det også liten lomme ved Gammelgårdsbukta.» DTM1 les 17,9 moh."
+          },
+          "waypoints": [
+            {
+              "name": "Skommesvik",
+              "lat": 68.71811,
+              "lng": 16.06108,
+              "elevationM": 74
+            },
+            {
+              "name": "opp lia",
+              "lat": 68.7185,
+              "lng": 16.072,
+              "elevationM": 213
+            },
+            {
+              "name": "T-krysset på kraftlinja",
+              "lat": 68.7185,
+              "lng": 16.08,
+              "elevationM": 341
+            },
+            {
+              "name": "over skogen",
+              "lat": 68.718,
+              "lng": 16.092,
+              "elevationM": 582
+            }
+          ],
+          "note": "Fri Flyts 2.1.2 Vestsiden: «Dette er en mye brattere variant enn nordsiden. Man kan velge selv hvor bratt terreng man vil ha, men over 30 grader er normalt. Sikt på Skommesvik, og det er en fordel å treffe traktorveien som går ned over på nordsiden av T-krysset på kraftledningen.» At linja går opp, ikkje berre ned, står i nabofjellets tekst: Horntindan 2.3.1 opnar «Parker ved Skommesvik, gå opp mot Hemmestadfjellet og deretter ryggen sørover til Horntindan». Skommesvik er registerført (Gard, Kvæfjord, 68.71811/16.06108) og les 74,1 moh på linja. 687 − 18 = 669, som forliker Fri Flyts 680 høgdemeter. Normalruta går frå Vebbestadsætran på nordsida."
+        }
+      ]
     }
   },
   {

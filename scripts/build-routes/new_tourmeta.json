@@ -1916,7 +1916,7 @@
   "season": "jan–apr",
   "aspect": "S",
   "grade": 2,
-  "gradeReason": "Målinga seier 2 og kortet ber 2 — brattaste hundremetersbeltet 21,3 grader mellom 900 og 1000 moh, brattaste 30 m 32,5 nede i trappene, medan toppflanken måler 22,9 — i samsvar med Fri Flyts «under 30 grader bortsett fra de siste 50 høydemeterne». Utløpseksponeringa i Stjerndalen er fareteksten, ikkje brattleiken på sporet.",
+  "gradeReason": "Målinga seier 2 og kortet ber 2 — brattaste hundremetersbeltet 21,3 grader mellom 900 og 1000 moh, brattaste 30 m 32,5 i toppflanken — i samsvar med Fri Flyts «under 30 grader bortsett fra de siste 50 høydemeterne». Utløpseksponeringa i Stjerndalen er fareteksten, ikkje brattleiken på sporet.",
   "roadClosedInWinter": false,
   "teaserNo": "1020 høgdemeter frå fjæra på Horsdal: stien langs sjøen, trappene til Stjerndalen, og slake rygger til varden på øyfjellet over Saltfjorden.",
   "teaserEn": "1020 metres of ascent from the shore at Horsdal: the path along the sea, the stairs to Stjerndalen, and gentle ridges to the cairn on the island mountain above Saltfjorden.",
@@ -2362,7 +2362,8 @@
    "Ruta reproduserer: grustaket og lia over (154 moh), sørenden av Skallvatnet (318 — vannet selv leser 320 som Innsjø, og linja holder land ved sørenden slik kilden sier), ryggen vest for vatnet (429), flata sørvest for punkt 695 (534) og ryggen (587) mot det siste bratte.",
    "Fri Flyts faremoment: løsneområder, utløpsområder og skavler; mellom 230 og 300 moh små bratte parti som skal navigeres med omhu, og de siste 800 metrene mot toppen har parti på 30–40 grader som krever terrengvurdering.",
    "Den rutede linja samler 981 m mot Fri Flyts 900: den kuperte ryggen gir tilbake 91 m — kortet bærer linjas eget tall. Grad 3 står mot målingens 2: sjø-til-topp, bratt terreng på begge sider av linja mellom 600 og 800, og KAST 2 med tre faremomenter er mer enn en helningsvinkel ser — Gråfjell-regelen.",
-   "check_ground: linja kryssar 103 m av det naturlege vatnet på 543 moh sørvest for punkt 695 — vatnet kilden sjølv siktar frå — aldri meir enn 18 m frå land. Naturleg vatn på ei linje kjelda sjølv legg der: namngitt i prosaen med høgd, lengd og avstand frå land, ikkje ruta om — sju-blei-prosa-regelen."
+   "check_ground: linja kryssar 103 m av det naturlege vatnet på 543 moh sørvest for punkt 695 — vatnet kilden sjølv siktar frå — aldri meir enn 18 m frå land. Naturleg vatn på ei linje kjelda sjølv legg der: namngitt i prosaen med høgd, lengd og avstand frå land, ikkje ruta om — sju-blei-prosa-regelen.",
+   "check_ground: linja kryssar tre vatn. Det på 220 moh er Nedre Bjørnskarvatnet (OSM relation/9929007, ssr 534110) og det på 250 er hovudvatnet — begge del av Bjørnskarvatnan, som kilden sender deg over, og begge les Innsjø, ikkje regulert. Det tredje, eit namnlaust tjern på 480 moh (OSM way/714508198, NVE vann 66673), ligg på den breie ryggformasjonen kilden ber deg følgje. To omrutingar — «ryggen» flytta til 69.871/19.304 og eit punkt «sør for tjernet» (69.872/19.309) sett inn — tok kryssinga frå 135 til om lag 90 meter, men ryggen går der. Guiden namngir alle tre høgdene."
   ],
   "notes": ""
  },
@@ -2409,7 +2410,9 @@
    "Registerets Rundfjellet (Fjell, Vågan, 68.28943/14.56506) løser 802,6 mot publiserte 803.",
    "Starten «parkeringsplassen ved Vatterfjordpollen» løser seg på land ved adressepunktet Vatterfjordpollen (68.2812/14.6560, DTM1 3,2 moh) — registerets eget representasjonspunkt for pollen står i sjøen. 803 − 3 = 800, nøyaktig Fri Flyts 800 høydemeter: turen går fra havet.",
    "Fri Flyt oppgir ingen KAST (eldre format); sesongen jan–apr er redaksjonell fra naboturene, og posten sier det.",
-   "Fri Flyts egne farepunkter: nedkjøringen mot Vatterfjordpollen kan være skredutsatt, særlig om du tar tidlig av ryggen mot venstre på sørsida der det er brattest; fra Kudalen på nordsida ligger det ofte hard is mot slutten — stegjern og isøks."
+   "Fri Flyts egne farepunkter: nedkjøringen mot Vatterfjordpollen kan være skredutsatt, særlig om du tar tidlig av ryggen mot venstre på sørsida der det er brattest; fra Kudalen på nordsida ligger det ofte hard is mot slutten — stegjern og isøks.",
+   "Ruteren fant ingen vei fra parkeringa til marka: pollen (sjø, ufremkommelig i kostmodellen) lå tvers over den rette korridoren. To vegpunkter langs nordsida av pollen (5,8 og 7,0 moh) pinner linja på land «langs høyresida av pollen», slik kilden beskriver.",
+   "Andre festing av starten: sundet («strømmen») ved parkeringa føres som sjø i DTM-en og brua finnes ikke i den, så ruteren fant ingen vei over. Linja tegnes fra vestsida av brua (5,8 moh) — spaserturen over brua fra parkeringsplassen står i prosaen i stedet for i geometrien."
   ],
   "notes": ""
  },

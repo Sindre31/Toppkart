@@ -361,6 +361,12 @@ content and data quality that has to be settled before the site is sold to anyon
   caught it and it was reverted. The four teasers in `new_tourmeta.json` that were genuinely stale —
   Breitinden, Kråkfjellet, Rensfjellet and Folarskardnuten, all disagreeing with their cards since
   the reroutes of earlier rounds — are fixed at source so the next run agrees.
+- **And it must be run *before* `emit_guides.py`, never after.** The `TOURS` row it writes has no
+  `hasGuide` field — that flag is `emit_guides.py`'s — so a later `emit_new_tours.py` run erases it.
+  Vetefjellet shipped one commit without it after a teaser figure was corrected, and nothing caught
+  it: `check_tours.py` does not read the flag, and `lib/guides.test.ts` only checks that every tour
+  *claiming* a guide has one, which is the safe direction. A tour that has a guide and does not claim
+  it passes every check and shows the reader nothing.
 - **The guide text has not been read by anyone who has skied these tours.** Every number in
   `lib/guides.ts` traces to Kartverket's terrain model, the route research or a cited source, and
   every number is matched mechanically by `check_guides.py` — which reads nynorsk verticals as well
