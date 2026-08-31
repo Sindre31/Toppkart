@@ -1426,6 +1426,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
     descent: [
       "Back down the way you came — and only there: the flank probes around the summit give N/NE/E 45.7–49.1 degrees on average with windows of 57–66, and SW, the kindest, 27.8. The west-route gully and Syd direkte sit in flanks averaging 37.9 and 34.7; the source gives Syd direkte 35–50 degrees, for stable snow and precise route-finding.",
       "Assess the snowpack before descending — the terrain is avalanche terrain in every variant, says the source. The gully skis all the way down towards Dalsdalen; below the treeline at 287 the track leads home to Dale.",
+      "The second documented route climbs the south side from Vaskinn — 996 metres of ascent over 4.55 km, and the gentlest way on the mountain: the steepest step measures 27.1 degrees against the west side's 36.2. It follows the summer path up through the forest along Vaskinnelva and past Vadskinndalsvatnet into the southern bowl. The source says the line is easier to find if you climb the same route you ski down.",
     ],
     avalanche: [
       {
@@ -1492,6 +1493,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
     descent: [
       "Down the couloir the same way. The source tells of a freerider who skied the whole couloir straight down during one of Andørja's freeride competitions; for most people it is 30–40 degrees steadily from the top, and spring snow lies in the couloir into May and June.",
       "The south side is the other way down: on the flat before Rundtinden you find the easiest descent southward, in steep ground of 30–45 degrees, to the road that ends at Vasskaret. North and north-east are not a way back — the flank sweep measures 49.2 to 50.3 degrees on average there, with windows of 66.8 and 74.7.",
+      "The second documented route comes from the south, from the road end at Holte in Vasskaret — 998 metres of ascent over 3.86 km, and 173 less to climb than the couloir because the road end sits at 204 m rather than 9. It goes up to the flat before Rundtinden and then east along the south side of the big west-facing flank; the steepest step is 26.7 degrees against the couloir's 29.0.",
     ],
     avalanche: [
       {
@@ -1525,6 +1527,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
     descent: [
       "The ridge home at 20–30 degrees, says the source — the NW flank, where the route lies, is the gentle probe at 14.3 degrees on average. Splendid skiing and a very fine view in good snow winters, the source promises.",
       "The south side towards Vassmyran at Vasskarvatnet is the variant: 30–40 degrees, steeper and usually better snow. NE and E off the cairn fall 47.2 and 37.1 on average with windows of 68.6 and 71.1 — those edges are not for skiing, and in fog you need to know where they are.",
+      "The second documented route comes from the south, from the lay-by on the Vasskarveien at Vassmyran — 808 metres of ascent over 3.09 km, the shortest line to this summit. The source points to it when the west side is bare: «if you can see from a distance that there is too little snow on the west side, go up from the south instead». Steeper too — 31.7 degrees against the west side's 26.0.",
     ],
     avalanche: [
       {
@@ -2432,6 +2435,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
     descent: [
       "The north side down is the reason to come: mostly 20–25 degrees by Fri Flyt, with two steeper sections at 30 — and sheltered powder when the other aspects are scoured, which are exactly the days the axe and crampons in the pack earn their place on the hard flank up.",
       "The south-east side is the avalanche side: several large avalanches a year on 30–40 degrees, and the source is unambiguous — it is not to be skied, there is steeper-but-sounder ground nearby. The flank probe agrees: 51.0 degrees in the first window from the summit toward the south-east. The west gully is the expert line for stable days, with axe and crampons and a descent by the north side.",
+      "The second documented route climbs the Østsia from the petrol station in Kongsvik — 923 metres of ascent over 4.37 km, under half the normal route's length, up the scooter track in Håkadalen and the big slanting ramp. The source describes it as a descent and adds that you can of course climb it too; most of it is 20–30 degrees, with a steepest step of 30.9.",
     ],
     avalanche: [
       {
@@ -2498,6 +2502,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
     descent: [
       "The same way down: mostly 15–25 degrees by Fri Flyt, with two sections at 30 and a ridge section at 30 — those are what put ice axe and crampons in the pack, because on hard wind-packed snow the ridge is a different mountain than in soft. The line along the ridge never measures more than 22.9, so the steep is optional, not obligatory.",
       "The east side with Tunellen — 30–40 degrees down toward the rock tunnel at about 450 m — is the expert line with runout zones to reckon with, and the west side past the 774 cairn has its own section over 30. Both are another day and another snowpack than the normal route.",
+      "The second documented route takes the east side from the boat harbour in Kongsvik — 798 metres of ascent over 4.93 km, past the Tunnel at 453 m, which the source puts at «about 450». It is steeper than the north ridge: 33.5 degrees in the steepest step against 22.9, and above the Tunnel it holds 30–40 degrees. The source itself says you can climb it to see the Tunnel.",
     ],
     avalanche: [
       {

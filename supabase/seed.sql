@@ -991,7 +991,9 @@ Gjennom øvre Dalsdalen på 280 og inn i renna på 453 moh. Kilden gir renna 30�
 Renna slipper deg ut på 843 moh, og de siste hundremeterne mot varden på 1009 flater ut — beltet over 1000 måler 13,0 grader. Skjermens 1008,9 mot kildens 1012 er registerets og bokas vanlige avstand på en topp målt før laserskanninga.',
   description_down = 'Ned igjen der du kom opp — og bare der: flankemålingene rundt toppen gir N/NE/E 45,7–49,1 grader i snitt med vindu på 57–66, og SV, den snilleste, 27,8. Renna i vestruta og Syd direkte ligger i flanker som måler 37,9 og 34,7 i snitt; Syd direkte gir kilden 35–50 grader, for stabil snø og presis veivalg.
 
-Vurder snødekket før nedkjøring — terrenget er skredterreng i alle varianter, sier kilden. Renna gir kjøring hele veien ned mot Dalsdalen; under skoggrensa på 287 er det sporet hjem til Dale.',
+Vurder snødekket før nedkjøring — terrenget er skredterreng i alle varianter, sier kilden. Renna gir kjøring hele veien ned mot Dalsdalen; under skoggrensa på 287 er det sporet hjem til Dale.
+
+Den andre dokumenterte ruta går opp sørsida frå Vaskinn — 996 høgdemeter på 4,55 km, og den mildaste vegen på fjellet: brattaste steget måler 27,1 grader mot vestsidas 36,2. Ho følgjer sommarstien opp gjennom skogen langs Vaskinnelva og forbi Vadskinndalsvatnet inn i den søndre bollen. Kilden seier det er lettare å finne linja om ein går opp same ruta som ein kjører ned.',
   avalanche_notes  = jsonb_build_array(
     jsonb_build_object(
       'title', 'Renna',
@@ -1041,7 +1043,9 @@ Vidare oppover på høgresida — vest — for Storelva: 327 moh, og skogen slep
 Så renna: 978 moh der korridoren er festa, og beltet frå 900 til 1000 er det brattaste i snitt med 23,5 grader over 244 meter grunn. Det brattaste enkeltsteget, 29,0 grader, ligg mellom 901 og 924 moh — inne i renna. Varden er 1179, og utsikten går til Senja og Dyrøy.',
   description_down = 'Ned renna same vegen. Kilden fortel om ein frikøyrar som køyrde heile renna rett ned under ein av Andørjas Freeride-konkurransar; for dei fleste er det 30–40 grader jamt frå toppen, og det ligg vårsnø i renna til mai og juni.
 
-Sørsida er den andre vegen ned: nede på flata før Rundtinden finn ein den enklaste nedkøyringa sørover, i bratt terreng på 30–45 grader, til vegen som stoppar ved Vasskaret. Nord og nordaust er ikkje ein retur — flankesveipet måler 49,2 til 50,3 grader i snitt der, med vindauge på 66,8 og 74,7.',
+Sørsida er den andre vegen ned: nede på flata før Rundtinden finn ein den enklaste nedkøyringa sørover, i bratt terreng på 30–45 grader, til vegen som stoppar ved Vasskaret. Nord og nordaust er ikkje ein retur — flankesveipet måler 49,2 til 50,3 grader i snitt der, med vindauge på 66,8 og 74,7.
+
+Den andre dokumenterte ruta kjem sørfrå, frå vegenden ved Holte i Vasskaret — 998 høgdemeter på 3,86 km, og 173 mindre å stige enn renna fordi vegenden ligg på 204 moh og ikkje på 9. Ho går opp til flata før Rundtinden og deretter austover langs sørsida av den store vestvendte flanken; brattaste steget er 26,7 grader mot rennas 29,0.',
   avalanche_notes  = jsonb_build_array(
     jsonb_build_object(
       'title', 'Renna',
@@ -1066,7 +1070,9 @@ Sommerruta står i linja på 375, og beltet fra 400 til 500 måler 18,3 grader g
 Ryggen fra 674 og opp: beltet fra 800 til 900 er det bratteste i snitt med 21,3 grader, og det bratteste enkeltpartiet, 26,0 grader mellom 806 og 828 moh, ligger rett under den ofte avblåste toppen på 998.',
   description_down = 'Ryggen hjem på 20–30 grader, sier kilden — NV-flanka, der ruta ligger, er den slake målingen med 14,3 grader i snitt. Flott skikjøring og veldig bra utsikt i gode snøvintre, lover kilden.
 
-Sørsida mot Vassmyran ved Vasskarvatnet er varianten: 30–40 grader, brattere og oftest bedre snø. NE og E fra varden faller 47,2 og 37,1 i snitt med vindu på 68,6 og 71,1 — de kantene er ikke til å kjøre, og i skodde skal du vite hvor de er.',
+Sørsida mot Vassmyran ved Vasskarvatnet er varianten: 30–40 grader, brattere og oftest bedre snø. NE og E fra varden faller 47,2 og 37,1 i snitt med vindu på 68,6 og 71,1 — de kantene er ikke til å kjøre, og i skodde skal du vite hvor de er.
+
+Den andre dokumenterte ruta kjem sørfrå, frå lomma på Vasskarveien ved Vassmyran — 808 høgdemeter på 3,09 km, den kortaste linja til denne toppen. Kilden peikar på henne når vestsida er snau: «hvis man ser på avstand at det er for lite snø på vestsiden, går man heller opp fra sørsiden». Brattare òg — 31,7 grader mot vestsidas 26,0.',
   avalanche_notes  = jsonb_build_array(
     jsonb_build_object(
       'title', 'Skogslia',
@@ -1757,7 +1763,9 @@ Lia sørøstover er turens bratteste enkeltparti — 31,6 grader mellom 291 og 3
 Fra senkninga reiser toppflanken seg: 763 moh der ruta står i den, med beltet fra 500 til 600 som turens bratteste hundremeter på 17,9 grader. Toppen løser 980,1 — toppsøket klatret 60 meter fra registerpunktet til den høyeste cella — og under deg ligger hele Tjeldsundet, med Sætertinden rett over sundet.',
   description_down = 'Nordsiden ned er grunnen til å gå her: 20–25 grader i hovedsak hos Fri Flyt, med to brattere partier på 30 — og skjermet pudder når de andre himmelretningene er avblåst, som er akkurat de dagene øksa og stegjerna i sekken gjør nytte for seg på den harde flanken opp.
 
-Sørøstsida er skredsida: flere store skred årlig på 30–40 grader, og kilden er utvetydig — den skal ikke kjøres, det finnes tryggere bratt i nærheten. Flankemålingen er enig: 51,0 grader i det første vinduet fra toppen mot sørøst. Vestrenna er ekspertlinja for stabile dager, med øks og stegjern og nedkjøring nordsiden.',
+Sørøstsida er skredsida: flere store skred årlig på 30–40 grader, og kilden er utvetydig — den skal ikke kjøres, det finnes tryggere bratt i nærheten. Flankemålingen er enig: 51,0 grader i det første vinduet fra toppen mot sørøst. Vestrenna er ekspertlinja for stabile dager, med øks og stegjern og nedkjøring nordsiden.
+
+Den andre dokumenterte ruta går opp Østsia frå bensinstasjonen i Kongsvik — 923 høgdemeter på 4,37 km, under halve normalrutas lengde, opp scootersporet i Håkadalen og den store skrårampa. Kilden skildrar ho nedover og legg til at ein sjølvsagt kan gå opp henne òg; det meste er 20–30 grader, med brattaste steg 30,9.',
   avalanche_notes  = jsonb_build_array(
     jsonb_build_object(
       'title', 'Ruta',
@@ -1807,7 +1815,9 @@ Så bærer det til høyre og opp: mellom vegetasjonen på 241, mot Mølnskaret p
 Nordryggen sørover er turens finale: 669 moh der linja står på den, beltet fra 600 til 700 er turens bratteste med 19,0 grader i snitt, og det bratteste enkeltpartiet — 22,9 grader — ligger mellom 624 og 643 moh. Toppen løser 775,8 mot publiserte 777; varden på 774 som kilden nevner står på vestsida.',
   description_down = 'Samme vei ned: i hovedsak 15–25 grader hos Fri Flyt, med to partier på 30 og et ryggparti på 30 — det er de partiene som setter isøks og stegjern i sekken, for på hard fokksnø er ryggen et annet fjell enn i løssnø. Linja langs ryggen måler aldri mer enn 22,9, så det bratte er valgfritt, ikke obligatorisk.
 
-Østsiden med Tunellen — 30–40 grader ned mot steintunnelen på rundt 450 moh — er ekspertlinja med utløpssoner å regne med, og vestsiden forbi 774-varden har sitt eget parti over 30. Begge er en annen dag og en annen snø enn normalruta.',
+Østsiden med Tunellen — 30–40 grader ned mot steintunnelen på rundt 450 moh — er ekspertlinja med utløpssoner å regne med, og vestsiden forbi 774-varden har sitt eget parti over 30. Begge er en annen dag og en annen snø enn normalruta.
+
+Den andre dokumenterte ruta tek austsida frå båthamna i Kongsvik — 798 høgdemeter på 4,93 km, forbi Tunellen på 453 moh, den kilden set til «ca. 450». Ho er brattare enn nordryggen: 33,5 grader i brattaste steget mot 22,9, og over Tunellen ligg 30–40 grader. Kilden seier sjølv at ein kan gå opp henne for å sjå Tunellen.',
   avalanche_notes  = jsonb_build_array(
     jsonb_build_object(
       'title', 'Ruta',

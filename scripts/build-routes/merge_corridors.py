@@ -121,6 +121,19 @@ def main():
         routes = [route_rec(c, source)]
         for alt in c.get("alternates") or []:
             routes.append(route_rec(alt, source, note=alt.get("note", "")))
+        # `avoidWater` set by hand on a shipped corridor has to survive a
+        # re-merge. The builder above copies the flag out of the *research*
+        # record, and for every corridor that predates that field being written
+        # there the flag exists only in corridors.json — put on by hand after
+        # `check_ground.py` caught the line on a lake. Re-merging Kongsviktinden
+        # to add a second route dropped its flag, and the primary silently
+        # re-solved 1.2 km shorter straight across the water it had been taken
+        # off. Anything already shipped with the flag keeps it.
+        prev_routes = (corridors.get(slug) or {}).get("routes") or []
+        kept_water = {r["id"] for r in prev_routes if r.get("avoidWater")}
+        for r in routes:
+            if r["id"] in kept_water:
+                r["avoidWater"] = True
         corridors[slug] = {"routes": routes}
         # Three fields are revised downstream and must survive a re-merge.
         #
