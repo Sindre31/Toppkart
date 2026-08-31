@@ -9561,5 +9561,256 @@
     "notes": "Fri Flyt: KAST 3 – Komplekst. Alpinøks og stegjern. «Vær obs på at det går skred på det bratteste henget hvert år.» Renna nokre hundre meter sør for oppstigninga er om lag 150 høgdemeter og bratt. På seinvinteren kan Nordvikelva like ved vegen vera brei — kilden føreslår gummistøvlar dei første hundre metrane."
    }
   ]
+ },
+ "lundenesgalten": {
+  "routes": [
+   {
+    "id": "sydsiden",
+    "name": "Sydsiden fra Lundenes kirke",
+    "description": "Fra parkeringa ved Lundenes kirke etter traktorveien langs Forselva opp til Storskogbakkan, videre på høyresiden (øst) og gradvis mot venstre (vest) til topps",
+    "trailhead": {
+     "name": "Lundenes kirke",
+     "lat": 68.87607,
+     "lng": 16.56656,
+     "elevation_m": 5.0,
+     "fullName": "Lundenes kirke"
+    },
+    "waypoints": [
+     {
+      "name": "traktorvegen langs Forselva",
+      "lat": 68.8811,
+      "lng": 16.553,
+      "elevation_m": 47.0
+     },
+     {
+      "name": "Storskogbakkan",
+      "lat": 68.89731,
+      "lng": 16.56149,
+      "elevation_m": 212.0
+     },
+     {
+      "name": "austsida",
+      "lat": 68.899,
+      "lng": 16.552,
+      "elevation_m": 364.0
+     },
+     {
+      "name": "gradvis vestover",
+      "lat": 68.9,
+      "lng": 16.547,
+      "elevation_m": 502.0
+     },
+     {
+      "name": "øvre skråninga",
+      "lat": 68.9,
+      "lng": 16.537,
+      "elevation_m": 621.0
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: KAST 2 – Utfordrende. Alpinøks og stegjern. Sørsida er kontinuerleg mellom 25 og 35 grader. «I påsken 1969 gikk det skred på vestsiden av Galten sin sydside, to ble tatt av skredet og en mann omkom.» Den alpine varianten over Nordtinden (610) held 45–50 grader og krev tau, øks, stegjern og eit lite rack — det er ei anna rute enn denne."
+   }
+  ]
+ },
+ "rundtind": {
+  "routes": [
+   {
+    "id": "vest",
+    "name": "Vestsiden fra Holtet",
+    "description": "Fra Holtet etter traktorveien opp til hyttefeltet ved Sandvatnet, innover myrene til oppstigningen nordøst for Skavbakkan, og over skoggrensen mellom Rundtind og Mellatinden til topps",
+    "trailhead": {
+     "name": "Holtet",
+     "lat": 68.74391,
+     "lng": 17.00893,
+     "elevation_m": 30.0,
+     "fullName": "Holtet"
+    },
+    "waypoints": [
+     {
+      "name": "Mevassveien",
+      "lat": 68.74705,
+      "lng": 17.00239,
+      "elevation_m": 161.0
+     },
+     {
+      "name": "Drangenveien",
+      "lat": 68.75375,
+      "lng": 17.00098,
+      "elevation_m": 225.0
+     },
+     {
+      "name": "vegenden ved hyttefeltet",
+      "lat": 68.76781,
+      "lng": 17.00879,
+      "elevation_m": 246.0
+     },
+     {
+      "name": "myrane nordaust for Skavbakkan",
+      "lat": 68.7725,
+      "lng": 17.0235,
+      "elevation_m": 317.0
+     },
+     {
+      "name": "over skoggrensa",
+      "lat": 68.778,
+      "lng": 17.036,
+      "elevation_m": 475.0
+     },
+     {
+      "name": "ryggen mot Mellatinden",
+      "lat": 68.783,
+      "lng": 17.046,
+      "elevation_m": 732.0
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: KAST 3 – Komplekst. «Nedkjøringen har noen få heng som er brattere enn 30 grader, men man tilbringer noe tid i utløpssone for skred.» Start oppstiginga nordaust for Skavbakkan, der det ikkje er skrentar. Få parkeringsplassar ved Holtet — kilden ber deg ha ein plan, og få godkjenning frå grunneigar. Sandvatnet ved vegenden er eit regulert magasin (NVE-magasin 743, 240 moh med lågaste regulerte vasstand 231) — isen der kan ikkje reknast med, og ruta går utanom han, over myrene.",
+    "avoidWater": true
+   }
+  ]
+ },
+ "stortinden-sortland": {
+  "routes": [
+   {
+    "id": "vestsiden",
+    "name": "Vestsiden med ryggen fra Vangpollen",
+    "description": "Fra parkeringa ved Vangpollen kraftstasjon opp den bratte dalen, til høyre (sørover) under båndet på ca. 600 moh og opp ryggen til toppen",
+    "trailhead": {
+     "name": "Vangpollen",
+     "lat": 68.61166,
+     "lng": 15.58616,
+     "elevation_m": 13.0,
+     "fullName": "Vangpollen"
+    },
+    "waypoints": [
+     {
+      "name": "dalmunnen",
+      "lat": 68.6101,
+      "lng": 15.594,
+      "elevation_m": 92.0
+     },
+     {
+      "name": "dalen",
+      "lat": 68.6086,
+      "lng": 15.601,
+      "elevation_m": 274.0
+     },
+     {
+      "name": "under bandet",
+      "lat": 68.607,
+      "lng": 15.61,
+      "elevation_m": 530.0
+     },
+     {
+      "name": "opp på ryggen",
+      "lat": 68.604,
+      "lng": 15.616,
+      "elevation_m": 617.0
+     },
+     {
+      "name": "ryggen",
+      "lat": 68.603,
+      "lng": 15.622,
+      "elevation_m": 811.0
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: KAST 3 – Komplekst. Alpinøks og stegjern. «Følg den bratte dalen som blir brattere og brattere. Sjekk jevnlig snøen og om den er stabil, forholdene kan endre seg oppover.» På ca. 600 moh ligg eit brattare parti, nesten som eit band over heile sida — skift retning til høgre (sørover) for å koma lettare opp på ryggen. Nedkjøringa på vestsida er stort sett 30–40 grader."
+   }
+  ]
+ },
+ "storlitinden": {
+  "routes": [
+   {
+    "id": "sorsiden",
+    "name": "Sørsiden fra Kvæfjordeidet",
+    "description": "Fra den store kommunale parkeringsplassen ved Kvæfjordløypene etter traktorveien forbi Kvilheim, nordover over dyrket mark og på vestsiden av Reingjerdhågen opp den jevne skråningen til topps",
+    "trailhead": {
+     "name": "Kvæfjordeidet",
+     "lat": 68.77815,
+     "lng": 16.33605,
+     "elevation_m": 167.0,
+     "fullName": "Kvæfjordeidet"
+    },
+    "waypoints": [
+     {
+      "name": "traktorvegen forbi Kvilheim",
+      "lat": 68.78338,
+      "lng": 16.33343,
+      "elevation_m": 214.0
+     },
+     {
+      "name": "dyrka mark",
+      "lat": 68.7865,
+      "lng": 16.334,
+      "elevation_m": 251.0
+     },
+     {
+      "name": "vest for Reingjerdhågen",
+      "lat": 68.7896,
+      "lng": 16.3295,
+      "elevation_m": 285.0
+     },
+     {
+      "name": "mellom granfelta",
+      "lat": 68.7925,
+      "lng": 16.323,
+      "elevation_m": 413.0
+     },
+     {
+      "name": "den jamne skråninga",
+      "lat": 68.7955,
+      "lng": 16.316,
+      "elevation_m": 543.0
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: KAST 1 – Enkelt. Farepunktet er sida ved sida av ruta: «Området til venstre (vest) er atskillig brattere og må ikke kjøres.» Eit par gjerdekryssingar over dyrka mark på veg nordover frå Kvilheim."
+   }
+  ]
+ },
+ "vetefjellet": {
+  "routes": [
+   {
+    "id": "sor",
+    "name": "Sør 1 over Olaåsen",
+    "description": "Fra den brøytede parkeringsplassen ved skiløypene etter skogsveien over Olaåsen til traktorveien, og ved Helgevallan mot høyde 361 og videre til topps",
+    "trailhead": {
+     "name": "Kvæfjordeidet",
+     "lat": 68.77815,
+     "lng": 16.33605,
+     "elevation_m": 167.0,
+     "fullName": "Kvæfjordeidet"
+    },
+    "waypoints": [
+     {
+      "name": "Olaåsen",
+      "lat": 68.78474,
+      "lng": 16.33744,
+      "elevation_m": 221.0
+     },
+     {
+      "name": "Helgevallan",
+      "lat": 68.79177,
+      "lng": 16.34217,
+      "elevation_m": 297.0
+     },
+     {
+      "name": "høgde 361",
+      "lat": 68.79387,
+      "lng": 16.3501,
+      "elevation_m": 362.0
+     },
+     {
+      "name": "flanken",
+      "lat": 68.797,
+      "lng": 16.345,
+      "elevation_m": 445.0
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: KAST 1 – Enkelt på ruta over Helgevallan og høgde 361 — «trygt og enkelt terreng». Åtvaringa gjeld sidene: «På siden av denne ruten er det skrenter og partier som er skredutsatt så ruta må følges når det er skredfare.» Parkeringa ved hyttefeltet er lita og på privat grunn; kilden ber om godkjenning frå grunneigar, eller at du tek den brøyta plassen ved skiløypene 1,5 km lenger vest."
+   }
+  ]
  }
 }

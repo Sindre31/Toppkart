@@ -427,4 +427,21 @@ PEAKS = [
     #     notatet om det trengst ein SUMMIT_SEED.
     ("hinnstein", "Hinnstein", ["Harstad - Hárstták", "Harstad"], 560, 68.74718, 16.50305),
     ("sorvikfjellet", "Sørvikfjellet", ["Harstad - Hárstták", "Harstad"], 600, 68.69458, 16.47896),
+    # — Oppsamlingsrunden: fem dagsturar frå fire ulike kapittel i Harstad-boka,
+    #   kvar med full rutebeskriving og eit kartfesta startsted. Lundenesgalten
+    #   på Grytøya, Rundtind på Drangen-ryggen (Rolla), Stortinden i Sortland,
+    #   og Storlitinden og Vetefjellet på Kvæfjordeidet. Kapittel 8, Evenes og
+    #   Skånland, står over: fire av dei fem toppane der går via Blåvatnhytta,
+    #   som sjølv er fem timar og 560 høgdemeter inn frå Bogen over eit regulert
+    #   vatn kilden kallar «noen plasser utrygg is» — hyttetur, ikkje dagstur —
+    #   og den femte, Nøvatinden, er M2 med to isøkser, 60 m tau og eit
+    #   sikringsrack. Boka har framleis dagsturar igjen etter denne runden. —
+    ("lundenesgalten", "Lundenesgalten", ["Harstad - Hárstták", "Harstad"], 782, 68.90345, 16.53670),
+    ("rundtind", "Rundtinden", ["Ibestad"], 872, 68.77867, 17.05261),
+    #   Slug og namn kvalifiserte: appen har alt Stortinden på Rolla (1020).
+    #   Sjuande kvalifiserte namnedublett, etter Storhornet, Stortinden,
+    #   Middagstinden × 2, Snøtinden og Rundfjellet.
+    ("stortinden-sortland", "Stortinden", ["Sortland - Suortá", "Sortland"], 1021, 68.60301, 15.62939),
+    ("storlitinden", "Storlitinden", ["Kvæfjord"], 614, 68.79798, 16.31025),
+    ("vetefjellet", "Vetefjellet", ["Harstad - Hárstták", "Harstad"], 546, 68.80011, 16.34058),
 ]

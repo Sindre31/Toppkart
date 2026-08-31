@@ -2464,5 +2464,40 @@
       "figure": "S er slakast med 5,4° i snitt, så SV 6,6 og NV 8,6 — ruta går inn «litt sør for toppen» og det er difor. NE måler 33,9 i snitt med eit 45,3-vindu 180–240 m ute og E 32,4 med 44,7 på 350–410: det er det brattaste henget kjelda seier det går skred i kvart år",
       "how": "flank_probe.py <lat> <lng> --out 500 --step 10 frå toppkoordinaten i summits.json, åtte peilingar over DTM1. Snittet er heile radialen; vindauget er det brattaste 60-metersvinduet langs den."
     }
+  ],
+  "lundenesgalten": [
+    {
+      "what": "Alle kantar ved toppen (Lundenesgalten)",
+      "figure": "SE er slakast med 16,5° i snitt og SV 17,7 — den store sørsida ruta går opp og ned, med brattaste 60-metersvindu 27,7 og 42,3 heilt ute på 420–480 m. NE måler 34,3 i snitt med eit 60,8-vindu berre 100–160 m ute, W 39,6 med 52,6 på 200–260 og NV 36,6 med 51,1 på 160–220: eggen mot Nordtinden og vestsida er ei anna sak enn sørsida",
+      "how": "flank_probe.py <lat> <lng> --out 500 --step 10 frå toppkoordinaten i summits.json, åtte peilingar over DTM1. Snittet er heile radialen; vindauget er det brattaste 60-metersvinduet langs den."
+    }
+  ],
+  "rundtind": [
+    {
+      "what": "Alle kantar ved toppen (Rundtinden)",
+      "figure": "N er nesten flat, 1,0° i snitt over 500 m — toppryggen mot Mellatinden. Vestsida ruta kjem opp måler 31,2 i snitt med eit 38,8-vindu 20–80 m ute, SV 28,7 med 35,2 på 50–110. E er brattast med 33,5 i snitt og 56,3 dei første seksti metrane: det er sida pinakkelen Tottålen står på",
+      "how": "flank_probe.py <lat> <lng> --out 500 --step 10 frå toppkoordinaten i summits.json, åtte peilingar over DTM1. Snittet er heile radialen; vindauget er det brattaste 60-metersvinduet langs den."
+    }
+  ],
+  "stortinden-sortland": [
+    {
+      "what": "Alle kantar ved toppen (Stortinden i Sortland)",
+      "figure": "S er slakast med 21,1° i snitt, deretter SE 28,2. Vestsida ruta går opp måler 32,5 i snitt med eit 38,7-vindu 400–460 m ute — nett dei 30–40 grader kjelda oppgir for hovudnedkjøringa. N er brattast med 39,9 i snitt og 62,6 på 150–210, E 36,3 med 64,4 på 100–160: toppen er avskoren mot nord og aust",
+      "how": "flank_probe.py <lat> <lng> --out 500 --step 10 frå toppkoordinaten i summits.json, åtte peilingar over DTM1. Snittet er heile radialen; vindauget er det brattaste 60-metersvinduet langs den."
+    }
+  ],
+  "storlitinden": [
+    {
+      "what": "Alle kantar ved toppen (Storlitinden)",
+      "figure": "NE er slakast med 5,0° i snitt og N 6,7, E 9,0 og SE 10,9 — ruta kjem opp sørausthellinga. S måler 17,6 i snitt med eit 32,5-vindu 370–430 m ute og SV 14,8 med 33,6 på 250–310: det er området kjelda seier ligg «til venstre (vest)» av ruta og ikkje må kjørast",
+      "how": "flank_probe.py <lat> <lng> --out 500 --step 10 frå toppkoordinaten i summits.json, åtte peilingar over DTM1. Snittet er heile radialen; vindauget er det brattaste 60-metersvinduet langs den."
+    }
+  ],
+  "vetefjellet": [
+    {
+      "what": "Alle kantar ved toppen (Vetefjellet)",
+      "figure": "NV og W er nesten flate, 1,9° og 3,8° i snitt — toppflata. S måler 14,4 i snitt med eit 29,5-vindu 260–320 m ute og NE 10,4 med 27,6 på 250–310. Ingen radial ut frå toppen når 30 grader i snitt: skrentane kjelda åtvarar mot ligg ved sida av ruta lenger nede, ikkje under toppen",
+      "how": "flank_probe.py <lat> <lng> --out 500 --step 10 frå toppkoordinaten i summits.json, åtte peilingar over DTM1. Snittet er heile radialen; vindauget er det brattaste 60-metersvinduet langs den."
+    }
   ]
 }

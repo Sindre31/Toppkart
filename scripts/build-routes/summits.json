@@ -1534,5 +1534,45 @@
     "summit_dtm": 867.5,
     "claims": 868,
     "stored_off_km": 0.01
+  },
+  "lundenesgalten": {
+    "name": "Lundenesgalten",
+    "lat": 68.90377,
+    "lng": 16.53122,
+    "summit_dtm": 787.2,
+    "claims": 782,
+    "stored_off_km": 0.22
+  },
+  "rundtind": {
+    "name": "Rundtinden",
+    "lat": 68.77916,
+    "lng": 17.05198,
+    "summit_dtm": 871.6,
+    "claims": 872,
+    "stored_off_km": 0.06
+  },
+  "stortinden-sortland": {
+    "name": "Stortinden",
+    "lat": 68.60306,
+    "lng": 15.62987,
+    "summit_dtm": 1020.3,
+    "claims": 1021,
+    "stored_off_km": 0.02
+  },
+  "storlitinden": {
+    "name": "Storlitinden",
+    "lat": 68.79801,
+    "lng": 16.31034,
+    "summit_dtm": 612.9,
+    "claims": 614,
+    "stored_off_km": 0.0
+  },
+  "vetefjellet": {
+    "name": "Vetefjellet",
+    "lat": 68.80013,
+    "lng": 16.34039,
+    "summit_dtm": 547.0,
+    "claims": 546,
+    "stored_off_km": 0.01
   }
 }

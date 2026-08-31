@@ -4642,14 +4642,16 @@ Heia is the counterpart: KAST 1 on all three routes, and the source
 volunteering that outside them «kan du enkelt oppsøke heng på 40 grader».
 The probe finds those too — 40.6° north of the cairn, 46.0° north-west.
 
-### A fifth qualified duplicate name
+### A sixth qualified duplicate name
 
 `rundfjellet` was already taken by Lofoten's Rundfjellet (803 m, Vågan,
 above Vatterfjordpollen), and the collision was not caught by inspection —
 it was caught by `resolve_summits.py` printing two lines for one slug and
 `summits.json` ending up with one of them. The Harstad one ships as
-`rundfjellet-harstad` / **Rundfjellet i Harstad**, the app's fifth
-qualified duplicate after Storhornet, Middagstinden twice and Stortinden.
+`rundfjellet-harstad` / **Rundfjellet i Harstad**, the app's sixth
+qualified duplicate after Storhornet, Stortinden, Middagstinden twice
+and Snøtinden i Tjeldsund — *sixth*, not fifth: this paragraph originally
+said fifth and had forgotten Snøtinden. Corrected in the round after.
 Worth noting for the next round: nothing in the pipeline refuses a
 duplicate slug, and the failure is silent in the direction that loses data.
 
@@ -4815,6 +4817,156 @@ wrong. Researching the east route settled it from the source itself — Fri
 Flyt's 3.5.3 puts the Tunnel at «ca. 450 moh», and DTM1 reads **452,8** at
 the corridor point. Both numbers are in the research record and both are
 in the guide. The corpus now has no unsourced figure anywhere.
+
+## The gathering-up round
+
+Five more from *Toppturer rundt Harstad*, one from each of four chapters
+and two from the same car park: Lundenesgalten on Grytøya, Rundtind on the
+Drangen ridge on Rolla, Stortinden in Sortland, and Storlitinden and
+Vetefjellet on Kvæfjordeidet. 185 tours, 199 routes.
+
+| tour | start | summit | gain | km | steepest 100 m band | steepest 30 m | grade |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Lundenesgalten | 5 | 787 | 788 | 4.65 | 20.5° | 26.2° | 3 |
+| Rundtind | 30 | 872 | 880 | 5.97 | 19.2° | 24.8° | 3 |
+| Stortinden i Sortland | 13 | 1020 | 1008 | 3.35 | 21.4° | 28.9° | 4 |
+| Storlitinden | 167 | 613 | 446 | 2.69 | 16.9° | 19.8° | 1 |
+| Vetefjellet | 167 | 547 | 392 | 2.85 | 15.3° | 19.8° | 2 |
+
+The summit search went five for five inside 5.2 m — +5.2, −0.4, −0.7, −1.1
+and +1.0 against the published heights — and four of the five answer to
+**Sør-Troms** (3012). Stortinden is the exception on both counts: it is in
+Sortland, forecast under **Lofoten og Vesterålen** (3014), and its line is
+the app's fourth-steepest by average gradient, 1008 m of climbing inside
+3.35 km. At the other end, Vetefjellet's 390 m card vertical is the
+fourth-smallest in the catalogue, and Storlitinden is the eighteenth
+grade 1.
+
+### Sandvatnet is a reservoir, and the first line went straight over it
+
+`check_ground` is the pass that reads the finished line against OSM's
+water, and on the first Rundtind solve it returned **900 m on the ice at
+240 moh, up to 87 m from the mapped shore, on a REGULATED lake**. The lake
+is `relation/5577731` — Sandvatnet, also called Mevatnet, `water=reservoir`,
+NVE reservoir 743, `ele` 240 with `ele:min` **231**. Nine metres of
+drawdown.
+
+The source never asked for it. Fri Flyt's 5.3.1 says «gå innover myrene» —
+go inland across the bogs — and the router took the flat lake instead
+because flat is cheap. Two things were wrong and both were fixed:
+
+- The corridor's «vegenden» waypoint sat at 68.76819/17.00879, which DTM1
+  answers at 240.1 m **with no terrain class at all** — the giveaway that
+  the point is on a water surface rather than on ground. It moved to the
+  last road vertex on land, 68.76781/17.00879, 245.7 m, classed `Skog`.
+- The route got `avoidWater` — the flag the Møysalen round had to repair a
+  path for through `merge_corridors`, and the town round then exercised on
+  a corridor that declared it from the start.
+
+The lake was not new to the pipeline. The Sør-Troms round had already
+routed Stortinden på Rolla around its east shore — under its other name,
+Mevatnet — and had to do it **twice**, first adding a waypoint east of the south end
+when `check_ground` found 315 m of ice, then another when the second solve
+still clipped the southern tip by 45 m. That fix was geometry: two hand-placed
+waypoints on one corridor. `avoidWater` is the same fix stated as a property
+of the route, and it took one pass on Rundtind. A corridor that touches a
+regulated lake should reach for the flag before it reaches for waypoints.
+
+The re-solve came back **0 m on water**, and the terrain samples along the
+line changed from `InnsjøRegulert, InnsjøRegulert, InnsjøRegulert` to
+`Myr, Myr, Myr`. That is the source's own sentence, in Kartverket's
+vocabulary. The tour went from 6.07 km / +857 m to 5.97 km / +880 m and
+its steepest 30 m window from 22.5° to 24.8°: going round the magazine
+costs a hundred metres of distance and twenty of climbing.
+
+### A waypoint beside the road reads nothing like the road
+
+The same corridor had an earlier defect that `check_new_corridors` would
+have reported as *«gives back 33 m»*: a point called «traktorvegen» at
+68.75600/17.00600 read **272.6 m**, higher than the road end 1.3 km
+further on at 240.1 m. The point was not on the road. It was on the
+hillside beside it, and a tractor road that switchbacks up a forest slope
+has a hundred metres of relief within a hundred metres of itself.
+
+The fix was to stop guessing where a road is and fetch it: `way/1024678361`
+Drangenveien has 99 vertices, and reading DTM1 at every third one shows the
+road itself rolling between 224.8 and 267.7 m across those samples before
+dropping to its end.
+Both waypoints now sit on real vertices — 68.75375/17.00098 at 224.8 and
+the road end — and the corridor climbs monotonically from 30 to 872.
+
+### Where the book measures its vertical from
+
+Storlitinden and Vetefjellet start from the same car park, the mapped
+`way/428852981` «Kvæfjordeidet» at 167.2 m, and both come out about 45 m
+above Fri Flyt's stated climb: 446 against 400, and 392 against 350. Two
+tours off by the same amount from the same point is not rounding, and it
+is not the router either. It is the book measuring from somewhere else,
+and in both cases the somewhere else is findable:
+
+- **Storlitinden.** 613 − 400 = 213, and Kvilheim, the fritidsbolig where
+  the tractor road starts, reads **213.5** on DTM1.
+- **Vetefjellet.** 547 − 350 = 197, and the source's own preferred start is
+  a small car park at a cabin field, which it places «1,5 km lengre vest»
+  of nothing in particular — measured the other way, the cabin-field roads
+  east of Kvæfjordeidet sit **1488 m** from the plowed car park, twelve
+  metres off the stated figure, and read **185 to 203 m** on DTM1.
+
+Neither start is in OpenStreetMap; the plowed municipal car park at the
+Kvæfjord ski trails is, and the source names it for both tours — for
+Vetefjellet explicitly as the alternative, «følge skogsvei over Olaåsen»,
+which is the way the corridor goes. So the cards carry the measured
+climb from the mapped start, and both guides say in their own prose where
+the book's smaller number comes from.
+
+### One `check_ground` finding that is the check misreading a car park
+
+Vetefjellet came back with a trail note: the guide «says «skiløypene» and a
+mapped trail runs the whole way … but the line strays 536 m from it». It is
+a false positive, and a useful one to have on record. The word is in the
+guide because the *car park* is called that — the source's own «stor brøytet
+parkeringsplass ved skiløypene» — not because the route follows a piste.
+Kvæfjordløypene run west towards Koven, which is Storhornet i Kvæfjord's
+tour; Vetefjellet goes east over Olaåsen and off the trail network
+immediately, exactly as the source describes it. The note is written into
+the guide's `problems` so the next reader does not re-open it.
+
+### A seventh qualified duplicate name, and a miscount in the round before
+
+`stortinden` was already Rolla's (1020 m, Ibestad), so Sortland's ships as
+`stortinden-sortland` / **Stortinden i Sortland**. Writing that up meant
+counting the qualified names, and the count in «A sixth qualified duplicate
+name» above was wrong when it was written: it listed Storhornet,
+Middagstinden twice and Stortinden, and forgot **Snøtinden i Tjeldsund**.
+Rundfjellet i Harstad was the sixth, not the fifth, and this one is the
+seventh. That paragraph now says so.
+
+### What was turned away
+
+Chapter 8, *Evenes og Skånland*, is the one chapter of the book that
+contributes nothing to the app, and it is worth writing down why so the
+next round does not re-research it:
+
+- Four of its five summits — Grindalstind, Pungdalstinden,
+  Skittendalstinden, Villdalsfjellet — are approached from Blåvatnhytta,
+  which is itself KAST 2, five hours and 560 høgdemeter in from Bogen,
+  past a regulated lake the source calls «noen plasser utrygg is». That is
+  a hut trip, not a day tour.
+- The fifth, **Nøvatinden**, is graded M2 and asks for «stegjern, to
+  isøkser, 60 m tau, lite sikringsrack med normale størrelser og en stor
+  tricam», with 45–50° of rotten rock and a rappel off the top. Rope and
+  rack are outside what this app carries, the same bar that turned away
+  Åtinden, Durmålstinden and Svartskardtindan.
+
+Two more lines were turned away inside tours that did ship. Lundenesgalten's
+4.8.2 **Nordtind – Galten** is an alpine variant needing 30 m of rope, axe,
+crampons and a small rack for a 45–50° step. Stortinden's 2.6.1 **Sørøst**
+starts at a farm on the west side of Langvatnet where the source requires
+the landowner's consent and no parking is mapped, so the tour ships from
+Vangpollen instead — which is also the start the source designates
+without conditions.
+
+The book still has day tours left in it after this round.
 
 ## Network
 

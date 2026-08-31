@@ -53,6 +53,7 @@ values
   ('arbostadtinden', 'Årbostadtinden', 'Harstad', 68.90861, 17.3481, 1179, 1170, '4–6 t', 4, 'V', 'feb–apr', '1170 høgdemeter på fire kilometer frå fv. 7804: traktorvegen sørover frå den gamle skolen, vest for Storelva til flata ved hytta — og skrårenna som er landemerket, 30–40 grader heilt til varden.', true),
   ('klaptinden', 'Klåptinden', 'Harstad', 68.9085, 17.27856, 998, 840, '3–5 t', 3, 'V', 'feb–apr', '840 høydemeter fra Himmelberget: opp fra Klåpvatnet på sommerruta — steinete under skogen, avblåst over — og ryggen til topps, med kjøring på 20–30 grader hjem.', true),
   ('toppen', 'Toppen', 'Harstad', 68.90812, 16.40556, 759, 720, '3–5 t', 4, 'Ø', 'feb–apr', '720 høydemeter fra Toppentunnelen: austsida av Hallevikelva, sør for Toppskarvatnet på land — og ryggen sørover til Toppen, fjellet som ga tunnelen navn.', true),
+  ('lundenesgalten', 'Lundenesgalten', 'Harstad', 68.90377, 16.53122, 787, 790, '3–5 t', 3, 'S', 'jan–apr', '790 høgdemeter frå Lundenes kirke: traktorvegen langs Forselva til Storskogbakkan, og så heile den store sørsida — samanhengande 25–35 grader, fjellet halve Harstad ser på.', true),
   ('middagstinden-andorja', 'Middagstinden på Andørja', 'Harstad', 68.88625, 17.15247, 630, 620, '2–4 t', 2, 'NØ', 'feb–apr', '620 høydemeter fra Slettneset: sommerruta sørover, opp langs Mølnelva utenom de bratte partiene — og ryggen nord for toppen. Kort tur, men kilden er tydelig: det har gått skred på alle nedkjøringene.', true),
   ('skartinden', 'Skartinden', 'Harstad', 68.87745, 17.33598, 1149, 1290, '5–7 t', 4, 'V', 'jan–apr', '1290 høydemeter fra Vang: elvedalen til Ytterholla, skardet mellom Vasskartinden og Skartinden — og flata austover til toppen, med 60-graders klipper å styre unna i nedkjøringa.', true),
   ('langlitinden', 'Langlitinden', 'Harstad', 68.86785, 17.38742, 1276, 1300, '5–7 t', 4, 'V', 'jan–apr', '1300 høydemeter fra snuplassen ved Vang til Nordens høyeste øytopp: sommerruta langs Bjørndalselva, flata med vatnet på land — og traversen på 800–900, partiet med skredhistorikk, før toppflanken.', true),
@@ -60,7 +61,10 @@ values
   ('ristinden', 'Ristinden', 'Harstad', 68.84241, 17.25256, 1056, 1050, '4–6 t', 4, 'SV', 'feb–apr', '1050 høydemeter fra skolen på Ånstad: lia og myrene til Breilifatet — og rampa på sørvestsiden til toppen, der Johammarrenna og Risenrenna venter på stabile dager.', true),
   ('snotinden', 'Snøtinden', 'Harstad', 68.83669, 17.30588, 1215, 1240, '5–7 t', 4, 'V', 'feb–apr', '1240 høydemeter fra Ånstad til Andørjas store klassiker: skogen aust for Snøfjellelva, Snøfjellvatnet og vestflanken — fem navngitte nedfarter, og øks og stegjern i sekken.', true),
   ('storhornet-kvafjord', 'Storhornet i Kvæfjord', 'Harstad', 68.8246, 16.21309, 722, 660, '4–6 t', 1, 'S', 'nov–apr', '660 høydemeter fra Kvæfjordeidet etter Harstads alltid best preparerte løype til Koven — og en slak, sørvendt rygg videre til varden. Solturen i rundelen.', true),
+  ('vetefjellet', 'Vetefjellet', 'Harstad', 68.80013, 16.34039, 547, 390, '2–4 t', 2, 'S', 'feb–apr', '390 høgdemeter over Olaåsen: skogsvegen inn til traktorvegen, Helgevallan og høgde 361 i lett terreng — eit leikent skifjell med kort anmarsj og fin skogskjøring.', true),
+  ('storlitinden', 'Storlitinden', 'Harstad', 68.79801, 16.31034, 613, 450, '2–4 t', 1, 'S', 'des–apr', '450 høgdemeter frå den brøyta parkeringa ved Kvæfjordløypene: traktorvegen forbi Kvilheim, vest for Reingjerdhågen og opp den jamne skråninga som òg er sommarruta — lett og sikker heile vegen.', true),
   ('stortinden-rolla', 'Stortinden på Rolla', 'Harstad', 68.79234, 17.03681, 1020, 980, '5–7 t', 4, 'V', 'feb–apr', '980 høydemeter fra Indre Forså til Rollas høyeste: myrene, austsida av Mevatnet på land — og renna sør for toppen, jevnt 30–40 grader, med Drangen som ekspertkulisse.', true),
+  ('rundtind', 'Rundtinden', 'Harstad', 68.77916, 17.05198, 872, 880, '4–6 t', 3, 'V', 'feb–apr', '880 høgdemeter frå Holtet: traktorvegen opp til hyttefeltet ved Sandvatnet, rundt magasinet og over myrene til oppstigninga nordaust for Skavbakkan — den enklaste vegen opp på ein av Drangens toppar, med pinakkelen Tottålen på austsida.', true),
   ('sula', 'Sula', 'Harstad', 68.76819, 17.05909, 848, 830, '3–5 t', 2, 'SØ', 'feb–apr', '830 høydemeter fra Breivoll: den jevne traktorveien, opp Skogsheia der skogen tynnes — og nesten rett linje til M-fjellets topp, på heng som måler litt over 20 grader.', true),
   ('heia', 'Heia', 'Harstad', 68.75594, 16.50177, 527, 470, '2–4 t', 1, 'Ø', 'des–apr', '470 høgdemeter frå fotballbanen ved Krafthallen opp den gamle alpinbakken: myra, det opne feltet og Maistua på 321 — og ryggen over tregrensa. Harstads ettermiddagstur, med lys i bakken på kvardagskveldar.', true),
   ('hinnstein', 'Hinnstein', 'Harstad', 68.74726, 16.50311, 560, 510, '2–4 t', 3, 'SØ', 'jan–apr', '510 høgdemeter frå Breivikhaugen: skogsvegen grunneigarane bygde i 2016, forbi gapahuken og opp den gamle hoppbakken mellom Litle Hinnstein og Hinnstein — og stien opp sørvestsida, den slake sida av eit fjell som er avskore mot nordvest.', true),
@@ -75,6 +79,7 @@ values
   ('melaaksla', 'Melåaksla', 'Harstad', 68.63266, 16.13919, 916, 960, '4–6 t', 2, 'N', 'feb–apr', '960 høydemeter fra Melå: traktorveien til Dalbotnen, forbi hytta ved 505-høgda — og den lange ryggen sørover til toppen, med 15–25 graders kjøring hjem mot Austerfjorden.', true),
   ('rundfjellet-harstad', 'Rundfjellet i Harstad', 'Harstad', 68.63249, 16.27351, 868, 770, '4–6 t', 2, 'NØ', 'feb–apr', '770 høgdemeter og nesten sju kilometer frå DNT-hytta på Bjørnhaugen: vestsida av Storvatnet, bekkedalen nord for høyde 339 med skredterreng på begge sider — og nordaustryggen til topps i cruiseterreng.', true),
   ('jakobstinden', 'Jakobstinden', 'Harstad', 68.61628, 16.18072, 976, 1060, '5–7 t', 3, 'SØ', 'jan–apr', '1060 høydemeter fra samme Y-kryss som Kongsviktinden: fire kilometer innover Kongsvikdalen, myrene ved Sætran, den brede rampa — hold sør for skavlen — og det brede platået til toppen med pinakkelen.', true),
+  ('stortinden-sortland', 'Stortinden i Sortland', 'Vesterålen', 68.60306, 15.62987, 1020, 1010, '4–6 t', 4, 'V', 'jan–apr', '1010 høgdemeter frå Vangpollen kraftstasjon: den bratte dalen som blir brattare og brattare, til høgre under bandet på 600 moh og opp ryggen — ein av Hinnøyas tusenmetringar, med bratt kjøring heilt ned til havet.', true),
   ('haukebotinden', 'Haukebøtinden', 'Harstad', 68.59662, 16.39746, 905, 860, '4–6 t', 2, 'Ø', 'des–apr', '860 høydemeter fra Gausvik kirke: over demningen, opp austsida av Heimetverrelva — og det minst krevjande terrenget rett mot toppen. Rundens korteste dag, med sesong fra desember.', true),
   ('reinspalen', 'Reinspælen', 'Harstad', 68.59341, 15.69923, 1117, 1400, '6–8 t', 4, 'S', 'jan–apr', '1400 høydemeter fra Våtvoll til Kvæfjords høyeste — Kobberyggen og Geitryggen med mye opp og ned, og en eksponert ryggtravers med vegg på begge sider til slutt.', true),
   ('satertinden', 'Sætertinden', 'Harstad', 68.58656, 16.36195, 1095, 1110, '5–7 t', 2, 'Ø', 'feb–apr', '1110 høydemeter fra Sandtorg idrettsanlegg på Årbogen: traktorveien langs Årbogelva, sør for Årbogvatnet — og den staka østryggen forbi nødbua, med telefonstolpene som los mot toppen.', true),
@@ -207,7 +212,7 @@ values
 -- re-seeding can never overwrite editorial work.
 
 -- ============================================================================
--- Written guides — all 180 tours
+-- Written guides — all 185 tours
 -- ----------------------------------------------------------------------------
 -- Generated by scripts/build-routes/emit_guides.py alongside lib/guides.ts, so
 -- the database seed and the local fallback cannot drift apart. Paragraphs in
@@ -1115,6 +1120,31 @@ Rakkrenna i sørvest er ekspertlinja: 40–50 grader til havnivå når snøen ti
 where slug = 'toppen';
 
 update public.tk_tours set
+  description_up   = 'Frå den vesle parkeringsplassen ved Lundenes kirke — 5 moh — går traktorvegen langs Forselva innover, og han er kartlagd: linja ligg på veg frå 13 til 184 moh. Beltet frå 0 til 100 moh måler 3,7 grader over 1572 meter grunn, og frå 100 til 200 er det 5,1 over 1080. Den første halvtimen er innmarsj, ikkje stigning.
+
+Traktorvegen ved Forselva er 47 moh, Storskogbakkan 212. Der tek den verkelege oppstigninga til, og kilden lovar at du ikkje treng ta ned hælstøtten på lenge. Over det held du høgresida — austsida, 364 moh — og trekkjer gradvis mot venstre, vestover, over 502 og 621. Skogen slepper på 287 moh etter 3,01 km.
+
+Det brattaste hundremetersbeltet måler 20,5 grader mellom 400 og 500 moh, over 246 meter grunn, og det brattaste enkeltsteget, 26,2 grader, ligg mellom 675 og 692. Toppen er 787 på DTM1. Fri Flyt skriv 782, og kortet ber terrengmodellens tal som overalt elles.',
+  description_down = 'Ned same sida. Kilden kallar ho kontinuerleg mellom 25 og 35 grader, og gir deg valet: øv på store svingar og høg fart, eller ta det roleg og bli lenger. Langs linja måler beltet frå 500 til 600 moh 15,2 grader, 600 til 700 måler 16,0 og 700 til 800 måler 16,5 — sporet sjølv held seg slakare enn sida rundt det.
+
+Radialane frå toppen seier kvifor det er sørsida ein kjører. Søraust måler 16,5 grader i snitt og sørvest 17,7. Nordaust måler 34,3 med eit 60,8-vindu berre 100 til 160 meter ute, vest 39,6 med 52,6 på 200 til 260, og nordvest 36,6 med 51,1 på 160 til 220. Den alpine varianten over Nordtinden går der.',
+  avalanche_notes  = jsonb_build_array(
+    jsonb_build_object(
+      'title', 'Påska 1969',
+      'body',  'Fri Flyt daterer skredet: «I påsken 1969 gikk det skred på vestsiden av Galten sin sydside, to ble tatt av skredet og en mann omkom.» Det er den vestre kanten av den same sida turen går opp og ned. Vestradialen frå toppen måler 39,6 grader i snitt med eit 52,6-vindu 200 til 260 meter ute: sida blir brattare jo lenger vest du kjem, og det er den grensa setninga handlar om.'
+    ),
+    jsonb_build_object(
+      'title', 'Ei samanhengande flate',
+      'body',  'Kilden skriv at nedkjøringa er kontinuerleg mellom 25 og 35 grader. Det er ei stor, samanhengande flate utan rygg eller rabbe til å bryte eit flak på, og lengda gjer at det som løysnar høgt har heile sida å gå på. Alpinøks og stegjern står på kildens utstyrsliste for dette fjellet, og hard skare på ei slik side er grunnen.'
+    ),
+    jsonb_build_object(
+      'title', 'Før du går',
+      'body',  'Lundenesgalten ligg i varslingsregionen Sør-Troms, ein A-region med dagleg skredvarsel gjennom sesongen. Sjekk varsom.no. Sesongen januar–april er Fri Flyts. Sendar/mottakar, søkjestang og spade — og alpinøks og stegjern der kilden krev det. Den alpine ruta over Nordtinden krev 30 meter tau og eit lite sikringsrack i tillegg, og er ikkje ruta dette kortet skildrar. Ei tom side betyr ikkje trygt fjell.'
+    )
+  )
+where slug = 'lundenesgalten';
+
+update public.tk_tours set
   description_up   = 'Fra vegenden på Langnesveien ved Slettneset — 12 moh — går sommerruta sørover: 93 moh der linja står i den, og skoggrensa på 377 etter 1,84 km. Beltet fra 0 til 100 måler 6,0 grader over den første snaue kilometeren.
 
 Høyre (vest) og opp langs Mølnelva utenom de bratte partiene, slik kilden ber om — 380 moh der linja er festet. Beltene fra 100 til 400 ligger jevnt på 15,4–16,4 grader: jevn skinnegang i åpen li.
@@ -1294,6 +1324,56 @@ Kildens ene regel: ikke gå opp i de bratte fjellsidene langs Vikelandselva — 
 where slug = 'storhornet-kvafjord';
 
 update public.tk_tours set
+  description_up   = 'Kilden gir to startstader. Den næraste er ei lita parkering ved hyttefeltet, på privat grunn, der ho ber om godkjenning frå grunneigar. Den andre er den store brøyta plassen ved skiløypene 1,5 kilometer lenger vest, med skogsveg over Olaåsen. Linja går derfrå — 167 moh — fordi det er den av dei to som finst på kartet. Hyttefeltet ligg 1488 meter unna, som er dei 1,5 kilometerane kilden oppgir, og vegane der les 185 til 203 moh: Fri Flyts 350 høgdemeter er rekna derfrå, ikkje herifrå.
+
+Olaåsen er 221 moh, Helgevallan 297. Beltet frå 200 til 300 moh måler 4,9 grader over 1170 meter grunn: over ein kilometer nesten flatt gjennom skogen, og det er den skogskjøringa kilden rosar på veg ned. Frå Helgevallan går du mot høgde 361, som DTM1 les til 362.
+
+Skogen slepper først på 419 moh etter 2,33 km, seint på ein tur som er 2,85 kilometer lang. Flanken over er 445 moh. Det brattaste hundremetersbeltet måler 15,3 grader mellom 400 og 500 moh, over 344 meter grunn, og det brattaste enkeltsteget, 19,8 grader, ligg mellom 459 og 475. Toppen er 547.',
+  description_down = 'Ned same vegen: «fint åpent terreng i starten og det er mulig å holde høy fart i skogen også», skriv kilden. Over skoggrensa ligg dei henga ho kallar morosame å leike seg med — dei ligg ved sida av linja, ikkje på henne, og kilden set eit vilkår om forholda før du oppsøkjer dei.
+
+Toppflata er flat. Nordvest måler 1,9 grader i snitt over 500 meter og vest 3,8. Den brattaste radialen ut frå toppen er sør med 14,4 grader i snitt og eit 29,5-vindu 260 til 320 meter ute, og nordaust 10,4 med 27,6 på 250 til 310.',
+  avalanche_notes  = jsonb_build_array(
+    jsonb_build_object(
+      'title', 'Sidene, ikkje ruta',
+      'body',  '«På siden av denne ruten er det skrenter og partier som er skredutsatt så ruta må følges når det er skredfare», skriv Fri Flyt. Det er ei instruks om å halde linja, ikkje eit råd. Målinga viser kvifor det er lett å bomme: toppflata er nesten vassrett — 1,9 grader nordvest, 3,8 vest — så det finst inga helling som styrer deg tilbake på ruta i dårleg sikt.'
+    ),
+    jsonb_build_object(
+      'title', 'To grader på det same fjellet',
+      'body',  'Rute 1.8.1 over Helgevallan og høgde 361 er KAST 1 – Enkelt. Rute 1.8.2, den jamnare nedfarten via den same høgda, er KAST 2 – Utfordrende og held 20 til 25 grader heile vegen. Same fjell, same høgde, ulik line — og det er den andre kilden heng skrent-åtvaringa på. Kortet skildrar den første.'
+    ),
+    jsonb_build_object(
+      'title', 'Før du går',
+      'body',  'Vetefjellet ligg i varslingsregionen Sør-Troms, ein A-region med dagleg skredvarsel gjennom sesongen. Sjekk varsom.no. Sesongen februar–april er Fri Flyts. Sendar/mottakar, søkjestang og spade. Ei tom side betyr ikkje trygt fjell.'
+    )
+  )
+where slug = 'vetefjellet';
+
+update public.tk_tours set
+  description_up   = 'Frå den store, alltid brøyta kommunale parkeringsplassen ved starten av Kvæfjordløypene — 167 moh — følgjer du traktorvegen forbi Kvilheim, 214 moh, og går nordover over dyrka mark. Det er eit par gjerdekryssingar undervegs. Fri Flyt oppgir 400 høgdemeter for turen, og det er frå Kvilheim: 613 minus 400 er 213, og Kvilheim les 214. Beltet frå 100 til 200 moh måler 4,3 grader, og frå 200 til 300 er det 6,2 over 990 meter grunn: den første kilometeren er nesten flat.
+
+På 285 moh går du på vestsida av Reingjerdhågen og svingar så til høgre, mellom granfelta. Skogen slepper på 406 moh etter 1,81 km, like under punktet på 413. Over det følgjer linja den jamne skråninga som òg er sommarruta — 543 moh — til toppen på 613.
+
+Det brattaste hundremetersbeltet måler 16,9 grader mellom 400 og 500 moh, over 360 meter grunn. Det brattaste enkeltsteget på heile linja er 19,8 grader mellom 454 og 470, og beltet frå 500 til 600 moh måler 10,5 grader over 496 meter grunn: toppartiet er ei flate.',
+  description_down = 'Ned same vegen, og kildens eiga åtvaring gjeld sida: «Området til venstre (vest) er atskillig brattere og må ikke kjøres.» Målt frå toppen er sørvest 14,8 grader i snitt, men med eit 33,6-vindu 250 til 310 meter ute, og sør 17,6 med 32,5 på 370 til 430. Det blir bratt der ute, ikkje der linja går.
+
+Rutas eiga side er den slake: nordaust måler 5,0 grader i snitt, nord 6,7, aust 9,0 og søraust 10,9. Kilden er ærleg om kva slag topp dette er — «selv om det ikke er en skikkelig tind» — og målinga er samd.',
+  avalanche_notes  = jsonb_build_array(
+    jsonb_build_object(
+      'title', 'Sida som ikkje skal kjørast',
+      'body',  '«Området til venstre (vest) er atskillig brattere og må ikke kjøres», skriv Fri Flyt, og målinga finn det. Sørvest held 33,6 grader i eit 60-metersvindu 250 til 310 meter ute frå toppen, og sør 32,5 på 370 til 430 — inne i det spennet der flakskred løysnar oftast. Ruta held seg aust for det heile vegen, og det er heile skilnaden mellom denne turen og den ved sida av.'
+    ),
+    jsonb_build_object(
+      'title', 'Grad 1 er eit val om kvar du går',
+      'body',  'Linjas brattaste enkeltsteg er 19,8 grader, og ingen del av ruta er brattare. Det tek ikkje bort at du har ei 33-graders side vest for deg når du kjem opp i beltet mellom 400 og 500 moh. Ein grad 1 er ein eigenskap ved sporet, ikkje ved fjellet, og han held berre så lenge du blir på det.'
+    ),
+    jsonb_build_object(
+      'title', 'Før du går',
+      'body',  'Storlitinden ligg i varslingsregionen Sør-Troms, ein A-region med dagleg skredvarsel gjennom sesongen. Sjekk varsom.no. Sesongen desember–april er Fri Flyts, og den lengste av dei fem i denne runden. Sendar/mottakar, søkjestang og spade. Ei tom side betyr ikkje trygt fjell.'
+    )
+  )
+where slug = 'storlitinden';
+
+update public.tk_tours set
   description_up   = 'Fra Indre Forså ved fv. 848 på vestsida av Rolla — 85 moh, med begrenset parkering som krever grunneiers samtykke ifølge kilden; spør først, det er en del av turen. Innover myrene er det flatt: beltene fra 100 til 400 moh måler 2 til 5 grader, og skogen slutter først på 485 moh etter 5,67 km — en lang, stille inngang.
 
 Linja passerer sørenden av Mevatnet i skogen på austsida og følger så austbredden på land — vannet er regulert, og de to omrutingene som skulle til står i forskningsposten. Fra 500 bratner det: 14,8, 20,3 og 21,4 grader i beltene opp mot renna.
@@ -1321,6 +1401,31 @@ Drangen på austsida er den bratteste nedkjøringen uten tvil, sier kilden: star
     )
   )
 where slug = 'stortinden-rolla';
+
+update public.tk_tours set
+  description_up   = 'Frå Holtet, der traktorvegen tek av og går opp til hyttefeltet — 30 moh. Kilden er tydeleg på parkeringa: det er få plassar her, så ha ein plan, og få godkjenning frå grunneigaren. Beltet frå 0 til 100 moh måler 18,8 grader over 214 meter grunn — svingane opp frå fjorden er det brattaste på heile den nedre halvdelen.
+
+Vegen er Mevassveien opp til 161 moh og Drangenveien vidare frå 225 til vegenden på 246, ved Sandvatnet. Beltet frå 200 til 300 moh måler 2,2 grader over 2654 meter grunn: to og ein halv kilometer nesten vassrett, først veg og så myr. Ruta går rundt magasinet, ikkje over, og så innover myrene til 317 moh nordaust for Skavbakkan.
+
+Derfrå tek oppstigninga til, over skoggrensa på 475 moh. Skogen slepper på 426 moh etter 4,36 km. Det brattaste hundremetersbeltet måler 19,2 grader mellom 500 og 600 moh, over 278 meter grunn, og det brattaste enkeltsteget, 24,8 grader, ligg mellom 615 og 635. Så er det ryggen mot Mellatinden — 732 moh — og toppen på 872.',
+  description_down = 'Ned same vegen. Kilden lovar «flott cruising ned der man kan få høy fart og virkelig nyte sola», og seier i same andedrag at nedkjøringa har nokre få heng brattare enn 30 grader. Målt langs linja er beltet frå 600 til 700 moh 16,4 grader, 700 til 800 er 17,6 og 800 til 900 er 14,2.
+
+Frå toppryggen kan du halde fram til Mellatinden og vidare til Stortinden, seier kilden. Radialen nordover frå varden måler 1,0 grader i snitt over 500 meter, som er kvifor det er mogleg. Aust er den bratte sida: 33,5 grader i snitt med eit 56,3-vindu på dei første seksti metrane, og det er der Tottålen står.',
+  avalanche_notes  = jsonb_build_array(
+    jsonb_build_object(
+      'title', 'Tida i utløpssona',
+      'body',  '«Man tilbringer noe tid i utløpssone for skred», skriv Fri Flyt om denne ruta, og det er heile grunngivinga for KAST 3 – Komplekst på eit fjell utan øks og stegjern på lista. Linja sjølv er slak — 19,2 grader i det brattaste hundremetersbeltet — men vestsida over henne måler 31,2 grader i snitt med eit 38,8-vindu tjue til åtti meter frå varden. Det er ikkje kor bratt du står som avgjer her, det er kva som heng over deg.'
+    ),
+    jsonb_build_object(
+      'title', 'Sandvatnet er eit magasin',
+      'body',  'Vegenden ved hyttefeltet ligg ved Sandvatnet, som NVE fører som magasin 743: høgaste regulerte vasstand 240 moh, lågaste 231. Ni meter regulering betyr at isen kan vera hol, oppbrukken eller borte, og han ser lik ut ovanfrå uansett. Kilden går ikkje over vatnet — ho seier «gå innover myrene» — og linja her gjer det same, med null meter på is.'
+    ),
+    jsonb_build_object(
+      'title', 'Før du går',
+      'body',  'Rundtind ligg i varslingsregionen Sør-Troms, ein A-region med dagleg skredvarsel gjennom sesongen. Sjekk varsom.no. Sesongen februar–april er Fri Flyts. Sendar/mottakar, søkjestang og spade. Austruta frå Selset er ikkje skildra med ei linje i kilden, berre med «bare å velge og vrake» — ho er ikkje denne. Ei tom side betyr ikkje trygt fjell.'
+    )
+  )
+where slug = 'rundtind';
 
 update public.tk_tours set
   description_up   = 'Fra den lille parkeringa der skogsveien tar av fra Ibestadveien nær Breivoll småbåthavn — 22 moh — følger du den jevne, fine traktorveien: 48 moh der linja står i den, og krysset på 68 der veien videre velges. Beltet fra 0 til 100 måler 6,1 grader over den første snaue kilometeren.
@@ -1675,6 +1780,31 @@ Sørkanten av platået er grensen å respektere: flankemålingen gir 54,1 grader
     )
   )
 where slug = 'jakobstinden';
+
+update public.tk_tours set
+  description_up   = 'Frå parkeringa ved kraftstasjonen — 13 moh — og rett inn i dalen. Kildens skildring er kort: «følg den bratte dalen som blir brattere og brattere.» Beltet frå 0 til 100 moh måler 13,0 grader over 408 meter grunn, og frå 100 til 200 er det 20,4 over 266. Dalmunnen er 92 moh, dalen 274.
+
+Skogen slepper alt på 333 moh etter 1,13 km, ein tredel inn på ein tur som er 3,35 kilometer lang. På 530 moh flatar dalen ut: beltet frå 500 til 600 moh måler 9,6 grader over 542 meter grunn, og det er hylla under det kilden kallar «et brattere parti, nesten som et bånd som går over hele siden».
+
+Her skiftar du retning til høgre, sørover, og går opp på ryggen — 617 moh. Derfrå følgjer linja ryggen over 811 til toppen på 1020. Det brattaste hundremetersbeltet måler 21,4 grader mellom 300 og 400 moh, over 267 meter grunn, og det brattaste enkeltsteget, 28,9 grader, ligg mellom 933 og 958.',
+  description_down = 'Kildens hovudveg ned er vestsida: «bratt og sammenhengende skikjøring i fantastisk område», det meste mellom 30 og 40 grader. Radialen vestover frå toppen måler 32,5 grader i snitt med eit 38,7-vindu 400 til 460 meter ute — kildens eigne tal, målte.
+
+Sørsida er den slake med 21,1 grader i snitt, og søraust 28,2. Nord måler 39,9 med eit 62,6-vindu 150 til 210 meter ute, aust 36,3 med 64,4 på 100 til 160, og nordaust 34,9 med 62,2 på 50 til 110. Toppen er avskoren mot nord og aust, og ryggen du kom opp er kanten mellom dei.',
+  avalanche_notes  = jsonb_build_array(
+    jsonb_build_object(
+      'title', 'Bandet på 600',
+      'body',  'Kilden seier det rett ut: «På ca 600 moh kommer man til et brattere parti, nesten som et bånd som går over hele siden.» Instruksen er å skifte retning til høgre, sørover, for å koma lettare opp på ryggen — ikkje å gå rett på. Linja gjer det, og difor måler beltet frå 500 til 600 moh berre 9,6 grader: ruta går rundt bandet, ikkje gjennom det.'
+    ),
+    jsonb_build_object(
+      'title', 'Ein dal som blir brattare',
+      'body',  '«Sjekk jevnlig snøen og om den er stabil, forholdene kan endre seg oppover», skriv kilden om oppstigninga. Ein dal som blir brattare og brattare er eit samleområde med veksande fangstflate over deg: det som løysnar har éin veg ned, og du står i han. Alpinøks og stegjern er på lista, og den harde skara i eit slikt trong er grunnen.'
+    ),
+    jsonb_build_object(
+      'title', 'Før du går',
+      'body',  'Stortinden i Sortland ligg i varslingsregionen Lofoten og Vesterålen, ein A-region med dagleg skredvarsel gjennom sesongen. Sjekk varsom.no. Sesongen januar–april er Fri Flyts. Sendar/mottakar, søkjestang og spade. Sørøstruta frå Langvatnet startar ved eit gardsbruk og krev godkjenning frå grunneigar — ho er ikkje denne. Ei tom side betyr ikkje trygt fjell.'
+    )
+  )
+where slug = 'stortinden-sortland';
 
 update public.tk_tours set
   description_up   = 'Fra den store parkeringsplassen ved Gausvik kirke — 46 moh — går du mot demningen på 65, krysser elva der forholdene tillater det, og følger austsida av Heimetverrelva oppover, gjennom grinda ved den store furua. Beltet fra 100 til 200 moh måler 14,1 grader, og på 199 moh er skogen allerede bak deg.
