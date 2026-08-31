@@ -84,49 +84,65 @@ def norm(tok):
 
 def allowed_values(t):
     """Every number a guide for this tour is entitled to state."""
-    p = t["routes"][0]
-    vals = {
-        float(p["startM"]), float(p["summitM"]), float(t["summitClaimM"]),
-        float(t["summitDtmM"]), float(p["gainM"]), float(p["maxAngle"]),
-        float(t["verticalM"]), round(p["distanceM"] / 1000.0, 1),
-        float(p["distanceM"]), float(p["lossM"]),
-    }
-    for b in p.get("bands") or []:
-        # Every 100 m band: its edges, its mean angle and the ground it covers.
-        # A guide that says "the first pitch runs at fourteen degrees" is quoting
-        # this table, and it should not have to round to the single steepest band
-        # to be checkable.
-        vals |= {float(b["fromM"]), float(b["toM"]), float(b["angle"]), float(b["groundM"])}
-    if p.get("steepestStep"):
-        # The steepest 30 m window and the two elevations it runs between: a
-        # guide that says where the step is should not read as unsourced for it.
-        ss = p["steepestStep"]
-        vals |= {float(ss["fromM"]), float(ss["toM"]), float(ss["angle"])}
-    if p.get("steepestBand"):
-        sb = p["steepestBand"]
-        vals |= {float(sb["fromM"]), float(sb["toM"]), float(sb["angle"])}
-    # The elevations the corridor research pinned the line to — a route
-    # description names them, and they are measurements, not prose.
-    vals |= {float(w["m"]) for w in p.get("waypoints") or []}
-    if p.get("treeline"):
-        tl = p["treeline"]
-        vals.add(float(tl["last_forest_m"]))
-        if tl.get("first_open_m"):
-            vals.add(float(tl["first_open_m"]))
-        # How far in the forest lets go, as well as how high. `guide_facts.py`
-        # measures and prints both, and a guide that says "the forest ends at
-        # 419 m after 3.24 km" is quoting one line of one table — but only the
-        # metres were listed here, so the kilometres read as invented unless
-        # somebody hand-wrote a `problems` note for that tour. Seven guides
-        # carried such a note and seven did not, and the difference was who was
-        # writing that week, not whether the figure was measured.
-        if tl.get("last_forest_km"):
-            vals.add(float(tl["last_forest_km"]))
-    for s in p.get("terrainSamples") or []:
-        vals.add(float(s["z"]))
-    for alt in t["routes"][1:]:
-        vals |= {float(alt["gainM"]), round(alt["distanceM"] / 1000.0, 1),
-                 float(alt["startM"]), float(alt["summitM"])}
+
+    def route_vals(r):
+        """Every measured figure one route contributes.
+
+        Applied to *every* route on the tour, not only the first. A second
+        documented way up carries the same fact set as the primary — bands,
+        steepest step, treeline, terrain samples, pinned waypoint elevations —
+        and `guide_facts.py` computes all of it for both. Only four scalars per
+        alternate were listed here, so a guide that quoted the second route's
+        steepest step, its band table or its treeline read as unsourced for it.
+        Eight of the nine multi-route guides in the corpus discuss their
+        alternate in the prose, which is what made this a real gap rather than a
+        theoretical one: Taraldsviktinden's «33,5 grader» and Klåptindens «31,7»
+        are the alternates' own measured maxima and were reported as invented.
+        Widening only ever adds allowed values, so no guide that passed before
+        can fail because of it.
+        """
+        v = {
+            float(r["startM"]), float(r["summitM"]), float(r["gainM"]),
+            float(r["maxAngle"]), round(r["distanceM"] / 1000.0, 1),
+            float(r["distanceM"]), float(r["lossM"]),
+        }
+        for b in r.get("bands") or []:
+            # Every 100 m band: its edges, its mean angle and the ground it
+            # covers. A guide that says "the first pitch runs at fourteen
+            # degrees" is quoting this table, and it should not have to round to
+            # the single steepest band to be checkable.
+            v |= {float(b["fromM"]), float(b["toM"]), float(b["angle"]), float(b["groundM"])}
+        for key in ("steepestStep", "steepestBand"):
+            # The steepest 30 m window and the steepest 100 m band, each with
+            # the two elevations it runs between: a guide that says where the
+            # step is should not read as unsourced for it.
+            if r.get(key):
+                x = r[key]
+                v |= {float(x["fromM"]), float(x["toM"]), float(x["angle"])}
+        # The elevations the corridor research pinned the line to — a route
+        # description names them, and they are measurements, not prose.
+        v |= {float(w["m"]) for w in r.get("waypoints") or []}
+        if r.get("treeline"):
+            tl = r["treeline"]
+            v.add(float(tl["last_forest_m"]))
+            if tl.get("first_open_m"):
+                v.add(float(tl["first_open_m"]))
+            # How far in the forest lets go, as well as how high. `guide_facts.py`
+            # measures and prints both, and a guide that says "the forest ends at
+            # 419 m after 3.24 km" is quoting one line of one table — but only the
+            # metres were listed here, so the kilometres read as invented unless
+            # somebody hand-wrote a `problems` note for that tour. Seven guides
+            # carried such a note and seven did not, and the difference was who was
+            # writing that week, not whether the figure was measured.
+            if tl.get("last_forest_km"):
+                v.add(float(tl["last_forest_km"]))
+        for smp in r.get("terrainSamples") or []:
+            v.add(float(smp["z"]))
+        return v
+
+    vals = {float(t["summitClaimM"]), float(t["summitDtmM"]), float(t["verticalM"])}
+    for r in t["routes"]:
+        vals |= route_vals(r)
     return vals
 
 

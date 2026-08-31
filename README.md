@@ -281,11 +281,11 @@ content and data quality that has to be settled before the site is sold to anyon
   rather than assumed. The four Trollheimen tours are in an A-region and are forecast daily.
 - **The tour cards are checked, the guides are checked, the geometry is checked — by machine.**
   `check_tours.py` and `check_routes.py` come back clean on all 180 tours and `check_guides.py` on
-  all but one number: every card height is DTM1 at the resolved summit, every vertical is its route's
-  cumulative ascent to within 10 m, every number in the prose traces to a measurement, and
-  `supabase/seed.sql` holds the same figures as `lib/tours.ts`. The exception is a stone tunnel's
-  altitude in Taraldsviktinden's guide, whose source was an agent transcript rather than a tracked
-  file — see «A number that outlived its source» in `scripts/build-routes/README.md`. That last one was not true until it was checked: the seed had
+  every number in all 180 guides: every card height is DTM1 at the resolved summit, every vertical is
+  its route's cumulative ascent to within 10 m, every number in the prose traces to a measurement, and
+  `supabase/seed.sql` holds the same figures as `lib/tours.ts`. The last figure without a tracked
+  source — a stone tunnel's altitude in Taraldsviktinden's guide — was settled by researching that
+  mountain's second route; see «The second-route round» in `scripts/build-routes/README.md`. That last one was not true until it was checked: the seed had
   missed the summit corrections for Rørnestinden, Rombakstøtta and Himmeltindan, so production and
   demo mode would have shown different heights for three tours.
   A fourth, `check_ground.py`, was added after the Trondheim round, because those three checks were
@@ -364,7 +364,7 @@ content and data quality that has to be settled before the site is sold to anyon
 - **The guide text has not been read by anyone who has skied these tours.** Every number in
   `lib/guides.ts` traces to Kartverket's terrain model, the route research or a cited source, and
   every number is matched mechanically by `check_guides.py` — which reads nynorsk verticals as well
-  as bokmål ones, and comes back clean on all 180 guides but one number.
+  as bokmål ones, and comes back clean on all 180 guides with no unsourced number left.
   On top of that, **105 of the 180 have been through an independent adversarial read** whose only job
   is to break it — the 24 of the first round, the 15 of the second, the 7 of the Oslo round, the
   22 of the Sunnmøre and Vestland rounds, the 7 of the Trondheim round, Kjerag, Møysalen and

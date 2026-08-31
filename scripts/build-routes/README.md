@@ -4580,6 +4580,12 @@ guides, one number outstanding, on a tour from the Tjeldsund round.** The
 general lesson is the same one `measurements.json` was created for — a
 figure whose only home is a transcript has no home.
 
+**Closed two rounds later**, and not by argument: researching
+Taraldsviktinden's second route put the figure back on a tracked source.
+Fri Flyt's 3.5.3 states the Tunnel at «ca. 450 moh» and DTM1 reads 452,8
+at the corridor point, both now in the research record. See «The
+second-route round».
+
 ## The town round
 
 Chapter 1 of the Harstad book — «Harstad», the town's own hills. Heia is
@@ -4704,6 +4710,111 @@ Doing it properly means tightening the number token and then reading
 whatever 701 newly-visible figures turn up across 136 guides, which is a
 round of its own and would bury this one. The measurement is here so the
 next round can start from it rather than rediscover it.
+
+## The second-route round
+
+Five more ways up peaks that are already on the map. Nine tours carried a
+second route before this round, and eight of them are southern —
+Galdhøpiggen, Fanaråken, Rondslottet, Snøhetta, Gaustatoppen, Bitihorn,
+Slogen and Høgevarde. **Tromsdalstinden was the only one of the 89
+northern tours with more than one line**, and its two share a car park.
+These five are the first northern peaks to get a second route from a
+second trailhead. 180 tours, 194 routes.
+
+| tour | new route | start | gain | km | steepest 30 m | primary for comparison |
+| --- | --- | --- | --- | --- | --- | --- |
+| Kongsviktinden | Østsia | bensinstasjonen i Kongsvik, 59 | 923 | 4.37 | 30.9° | 1092 m / 9.12 km / 31.6° |
+| Taraldsviktinden | Østsiden med Tunellen | båthavna i Kongsvik, 3 | 798 | 4.93 | 33.5° | 779 m / 4.53 km / 22.9° |
+| Klåptinden | Sørsiden | Vasskarveien v/Vassmyran, 192 | 808 | 3.09 | 31.7° | 839 m / 3.83 km / 26.0° |
+| Nona | Sørsiden | Vaskinn, 17 | 996 | 4.55 | 27.1° | 1024 m / 5.41 km / 36.2° |
+| Årbostadtinden | Sørsiden | Holte i Vasskaret, 204 | 998 | 3.86 | 26.7° | 1171 m / 3.98 km / 29.0° |
+
+### What counts as a second route
+
+Fri Flyt lists three to eight numbered lines on most of these mountains,
+and nearly all of them are *descents from the same ascent* — variants, not
+ways up. `corridors.json` holds a list of routes per tour precisely
+because they are **not** variants of one line, so the bar here was two
+things at once: a start the source designates separately, and the source
+saying in its own words that the line is climbed.
+
+All five clear both. The parking lines carry «for østsiden parkeres det
+ved bensinstasjonen i Kongsvik», «for sørsiden parkeres det på liten
+lomme i Vasskaret», «for sørsiden parkeres det ... ved Holte»; and the
+route texts add «man kan selvsagt gå opp denne ruta også» (Kongsviktinden),
+«kan man selvsagt gå opp denne ruten» (Taraldsviktinden), «går man heller
+opp fra sørsiden» (Klåptinden) and «lettere å finne hvis man går opp samme
+rute som man kjører ned» (Nona).
+
+Two of the five open **Vasskaret** as a trailhead serving two Andørja
+peaks from the south, and two open **Kongsvik** — the petrol station and
+the boat harbour, 1,8 km apart on the same shore, each the start of a
+different mountain's east side.
+
+**Langlitinden was researched and turned away.** Its east side has a
+designated parking at Fornes — the one Kråkrøtinden already uses — and the
+source sanctions climbing one side and skiing another. But the line runs
+off **Blåisen** (SSR, Isbre, 68.86894/17.39566, 350 m from the cairn), and
+the standing conditions say no glacier. The Istind round moved a line off
+ice rather than ship it; this one is not drawn at all.
+
+### A merge that reverted a hand-set flag
+
+`avoidWater` is copied out of the *research* record by
+`merge_corridors.route_rec()` — that was last round's fix. What that fix
+did not cover is a corridor whose flag exists **only in corridors.json**,
+put there by hand in an earlier round after `check_ground.py` caught the
+line on water. Kongsviktinden was one: its research record never carried
+the field.
+
+So re-merging it to add a second route dropped the flag, and the primary
+re-solved **9.12 km / +1092 m → 7.93 km / +1046 m** — 1.2 km shorter,
+straight back across the tarn at 324 moh it had once been taken off. The
+tour card's vertical, the guide's numbers and the drawn line would all
+have moved, on a route nobody had touched.
+
+It was caught by diffing the re-solved primary against the emitted
+geometry in `lib/routes.ts` rather than trusting a merge to be idempotent.
+The builder now carries forward any `avoidWater` already on a shipped
+route, the research record is backfilled so the flag cannot fall out
+again, and the check was run over the whole file: **zero regressions
+across all 180 tours and 189 previously shipped routes.**
+
+The re-solve with the flag restored still did not reproduce the shipped
+line exactly — 9.12 km but +1080 m against +1092, and 90 m left on water
+against zero — which is its own small lesson: an `avoidWater` solve is not
+deterministic enough to re-derive a settled line from. So the five
+primaries were restored from `lib/routes.ts` with `routes_from_ts.py` and
+only the five new alternates spliced in. After resampling, every primary
+came back byte-identical: 1092, 779, 839, 1024, 1171.
+
+### `check_guides.py` was reading one route in two
+
+`allowed_values` took the full fact set from `routes[0]` — bands, steepest
+step, steepest band, treeline, terrain samples, pinned waypoint
+elevations — and from every *other* route exactly four scalars: gain,
+distance, start, summit. `guide_facts.py` computes the whole set for every
+route.
+
+So any sentence quoting a second route's measured angle was reported as
+invented. This round produced two immediately — Taraldsviktinden's «33,5
+grader» and Klåptinden's «31,7», both the alternates' own resampled
+maxima — and the gap was not new: eight of the nine multi-route guides
+already discuss their alternate in the prose.
+
+The per-route collection is now a function applied to every route. Widening
+only ever adds allowed values, so nothing that passed before can fail:
+**180 guides, 0 unsourced numbers.**
+
+### The Taraldsviktinden tunnel, closed
+
+Two rounds carried an outstanding finding: the stone tunnel's «rundt 450
+moh» in Taraldsviktinden's guide came from an agent transcript that does
+not exist in a fresh container, so the figure was unverifiable rather than
+wrong. Researching the east route settled it from the source itself — Fri
+Flyt's 3.5.3 puts the Tunnel at «ca. 450 moh», and DTM1 reads **452,8** at
+the corridor point. Both numbers are in the research record and both are
+in the guide. The corpus now has no unsourced figure anywhere.
 
 ## Network
 
