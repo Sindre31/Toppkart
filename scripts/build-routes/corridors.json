@@ -7477,6 +7477,40 @@
     "source": "researched, verified (ok), no local audit",
     "notes": "Fri Flyt: KAST 2 – Utfordrende. Alpinøks og stegjern — hard fokksnø og ising nær toppen. Søraustsida er skredsida med fleire store skred årleg (30–40 grader) og skal ikkje køyrast; Vestrenna krev stabil snø og øks/stegjern. Nordsida gir skjerma pudder når andre himmelretningar er avblåste.",
     "avoidWater": true
+   },
+   {
+    "id": "austsia",
+    "name": "Østsia fra Kongsvik",
+    "description": "Frå bensinstasjonen i Kongsvik etter scootersporet nordaustover inn i Håkadalen, og opp den store skrårampa nordvestover til toppen — same linja kilden skildrar nedover, gått andre vegen.",
+    "trailhead": {
+     "name": "Bensinstasjonen i Kongsvik",
+     "lat": 68.56461,
+     "lng": 16.27546,
+     "elevation_m": 59.0,
+     "fullName": "Bensinstasjonen i Kongsvik"
+    },
+    "waypoints": [
+     {
+      "name": "scootersporet",
+      "lat": 68.573,
+      "lng": 16.288,
+      "elevation_m": 111.0
+     },
+     {
+      "name": "Håkadalen",
+      "lat": 68.583,
+      "lng": 16.301,
+      "elevation_m": 300.0
+     },
+     {
+      "name": "skrårampa",
+      "lat": 68.5845,
+      "lng": 16.281,
+      "elevation_m": 642.0
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyts 3.3.2 Østsia, gått motsett veg. Kilden skildrar ho nedover — «fra toppen kjører man ned den store skrårampen som går ned mot Håkadalen ... vel nede i dalen følger man scootersporet ut mot bensinstasjonen i Kongsvik» — og legg til at «man kan selvsagt gå opp denne ruta også». Eigen parkering: kildens startsted-linje seier «for østsiden parkeres det ved bensinstasjonen i Kongsvik». Det aller meste er 20–30 grader, nokre parti over 30. KAST 3 – Komplekst mot normalrutas KAST 2."
    }
   ]
  },
@@ -7590,6 +7624,40 @@
     ],
     "source": "researched, verified (ok), no local audit",
     "notes": "Fri Flyt: KAST 2 – Utfordrende. Isøks og stegjern. Ryggpartiet held 30 grader; austsida med Tunellen startar på 30–40 grader og krev stabil snø. Parkering ved Sjøvoll krev grunneigars samtykke — bruk plassen ved Dalelva."
+   },
+   {
+    "id": "austsida",
+    "name": "Østsiden med Tunellen fra Kongsvik",
+    "description": "Frå båthamna i Kongsvik langs grøfta på E10 sørvestover, opp austsida av fjellet forbi Tunellen på om lag 450 moh — og siste bakken til toppen.",
+    "trailhead": {
+     "name": "Båthavna i Kongsvik",
+     "lat": 68.56088,
+     "lng": 16.23242,
+     "elevation_m": 3.0,
+     "fullName": "Båthavna i Kongsvik"
+    },
+    "waypoints": [
+     {
+      "name": "grøfta langs Kong Olavs vei",
+      "lat": 68.54681,
+      "lng": 16.19486,
+      "elevation_m": 13.0
+     },
+     {
+      "name": "austsida",
+      "lat": 68.55,
+      "lng": 16.186,
+      "elevation_m": 251.0
+     },
+     {
+      "name": "Tunellen",
+      "lat": 68.553,
+      "lng": 16.179,
+      "elevation_m": 453.0
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyts 3.5.3 Østsiden med Tunellen, gått motsett veg: «hvis man ønsker å se Tunellen, kan man selvsagt gå opp denne ruten». Eigen parkering: «for Østsiden parkeres det ved båthavna i Kongsvik, gå en drøy kilometer i grøfta på ski». Tunellen ligg på «ca. 450 moh» hos kilden; DTM1 leser 452,8 på korridorpunktet. Mellom 30 og 40 grader over Tunellen, 20–30 under. KAST 3 – Komplekst mot normalrutas KAST 2. Rappell for å brekke ut skavlar høyrer til nedkjøringa, ikkje oppstigninga."
    }
   ]
  },
@@ -7902,6 +7970,46 @@
     ],
     "source": "researched, verified (ok), no local audit",
     "notes": "Fri Flyt: KAST 3 – Komplekst. Alpinøks og stegjern. Renna holder 30–45 grader sammenhengende; Syd direkte måler 35–50 og krever stabil snø og presis veivalg. Vurder snødekket før nedkjøring — terrenget er skredterreng i alle varianter."
+   },
+   {
+    "id": "sorsida",
+    "name": "Sørsiden fra Vaskinn",
+    "description": "Frå skogsvegen aust for Vaskinn etter sommarstien opp gjennom skogen, langs Vaskinnelva og forbi Vadskinndalsvatnet — og inn i den søndre bollen til toppen.",
+    "trailhead": {
+     "name": "Vaskinn",
+     "lat": 68.88949,
+     "lng": 16.4467,
+     "elevation_m": 17.0,
+     "fullName": "Vaskinn"
+    },
+    "waypoints": [
+     {
+      "name": "sommarstien gjennom skogen",
+      "lat": 68.8975,
+      "lng": 16.448,
+      "elevation_m": 219.0
+     },
+     {
+      "name": "Vaskinnelva",
+      "lat": 68.9035,
+      "lng": 16.449,
+      "elevation_m": 326.0
+     },
+     {
+      "name": "nord for Vadskinndalsvatnet",
+      "lat": 68.913,
+      "lng": 16.45,
+      "elevation_m": 445.0
+     },
+     {
+      "name": "den søndre bollen",
+      "lat": 68.9175,
+      "lng": 16.45,
+      "elevation_m": 691.0
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyts 4.6.2 Sørsiden, gått motsett veg: «selvsagt lettere å finne hvis man går opp samme rute som man kjører ned». Eigen parkering — og kildens primære: «ved start skogsvei på østsiden av Vaskinn er det en liten parkeringsplass», medan appens vestrute brukar Dale. Ruta går ned til Vadskinndalsvatnet (SSR 68.91088/16.44968) og vidare ned Vaskinnelva (SSR 68.89926/16.44994). Den brattaste sørlina, 4.6.3 Sørsiden direkte på 35–50 grader, er ein annan line og ikkje denne."
    }
   ]
  },
@@ -8731,7 +8839,7 @@
       "name": "sør for Klåpvatnet",
       "lat": 68.9218,
       "lng": 17.2235,
-      "elevation_m": 177.1
+      "elevation_m": 177.0
      },
      {
       "name": "sommerruta",
@@ -8749,6 +8857,40 @@
     "source": "researched, verified (ok), no local audit",
     "notes": "Fri Flyt: KAST 2 – Utfordrende. Steinete under skoggrensa, avblåst over; parti i skogen rundt 40 grader. Sørsida (30–40 grader) er brattare og varianten — hald til høgre om snøen er tynn.",
     "avoidWater": true
+   },
+   {
+    "id": "sorsida",
+    "name": "Sørsiden fra Vasskaret",
+    "description": "Frå lomma på Vasskarveien ved Vassmyran nordover opp sørsida, gjennom partiet på 30–40 grader og opp på kammen — og vestover til toppen.",
+    "trailhead": {
+     "name": "Vasskarveien ved Vassmyran",
+     "lat": 68.8909,
+     "lng": 17.26283,
+     "elevation_m": 192.0,
+     "fullName": "Vasskarveien ved Vassmyran"
+    },
+    "waypoints": [
+     {
+      "name": "opp frå myrane",
+      "lat": 68.8965,
+      "lng": 17.268,
+      "elevation_m": 260.0
+     },
+     {
+      "name": "partiet på 30–40 grader",
+      "lat": 68.902,
+      "lng": 17.273,
+      "elevation_m": 453.0
+     },
+     {
+      "name": "kammen",
+      "lat": 68.906,
+      "lng": 17.277,
+      "elevation_m": 769.0
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyts 6.1.2 Sørsiden, gått motsett veg. Kilden sanksjonerer oppstigninga eksplisitt i vestrute-teksten: «hvis man ser på avstand at det er for lite snø på vestsiden, går man heller opp fra sørsiden» — og kallar sørsida «brattere variant enn vestsiden og som regel mer snø». Eigen parkering: «for sørsiden parkeres det på liten lomme i Vasskaret». Ruta kjem ned ved Vassmyran, «litt sør for Vasskarvatnet» (SSR 68.89342/17.27656). Eit parti på 30–40 grader."
    }
   ]
  },
@@ -9156,6 +9298,40 @@
     ],
     "source": "researched, verified (ok), no local audit",
     "notes": "Fri Flyt: KAST 3 – Komplekst. Alpinøks og stegjern. Renna held 30–40 grader mesteparten av vegen og er terrengfelle-lik i botn; ho må berre gåast når snøen er stabil. Vårsnø ligg i renna til mai/juni. Sørsidevarianten fell 30–45 grader ned mot vegen ved Vasskaret, og fjellsida mot nord og nordaust er 49–50 grader i snitt — ikkje ein retur."
+   },
+   {
+    "id": "sorsida",
+    "name": "Sørsiden fra Holte",
+    "description": "Frå vegenden ved Holte i Vasskaret opp til flata før Rundtinden, og vidare austover langs sørsida av den store vestvendte flanken til toppen.",
+    "trailhead": {
+     "name": "Holte i Vasskaret",
+     "lat": 68.89498,
+     "lng": 17.29612,
+     "elevation_m": 204.0,
+     "fullName": "Holte i Vasskaret"
+    },
+    "waypoints": [
+     {
+      "name": "opp frå vegenden",
+      "lat": 68.9,
+      "lng": 17.3,
+      "elevation_m": 402.0
+     },
+     {
+      "name": "flata før Rundtinden",
+      "lat": 68.905,
+      "lng": 17.306,
+      "elevation_m": 646.0
+     },
+     {
+      "name": "sørsida av den vestvendte flanken",
+      "lat": 68.906,
+      "lng": 17.33,
+      "elevation_m": 753.0
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyts 6.2.2 Sørsiden, gått motsett veg. Eigen parkering: «for sørsiden parkeres det på liten parkeringsplass ved veis ende ved Holte. Ikke steng snuplassen» — same vegenden Langlitinden-sida kallar «veis ende ved Holte i Vasskaret». Kilden fører linja «nede på flata før Rundtinden» (SSR, Topp, 68.90738/17.29714) og ned bratt terreng på 30–45 grader til vegen ved Vasskaret; oppstigninga tek den slakare sørvestsida, som flankesveipet måler til 22,1 grader i snitt."
    }
   ]
  },
