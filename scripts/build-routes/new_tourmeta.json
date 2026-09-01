@@ -724,7 +724,7 @@
   "roadClosedInWinter": false,
   "teaserNo": "1460 høgdemeter og ti kilometer frå Hatlestad over Rellingsætra og Daurmålsfjellet, mest slak rygg.",
   "teaserEn": "1460 m of ascent and ten kilometres from Hatlestad over Rellingsætra and Daurmålsfjellet, mostly gentle ridge.",
-  "hazardNotes": "Kneika frå Rellingsætra opp på Daurmålsfjellet er den bratte delen. Ryggen vidare er slak, men lang og utan ly, og breterrenget kring 1400 moh har sprekker seinvinters. Vending må avgjerast tidleg.",
+  "hazardNotes": "Kneika frå Rellingsætra opp på Daurmålsfjellet er den bratte delen. Ryggen vidare er slak, men lang og utan ly, og sidene av han er ikkje slake: vest 40,9 grader i snitt frå varden, sørvest 36,2 og søraust 35,2, mot 9 grader nord og aust. Vending må avgjerast tidleg.",
   "sources": [
    "https://www.friflyt.no/topptur/skiturer-sunnmoere/turbeskrivelse-torvloeysa",
    "https://ut.no/turforslag/1112886/torvlysa1851m-fra-herdalen",
@@ -736,7 +736,8 @@
    "Starten er den kartfeste p-plassen på Hatlestad, OSM node/10219240171, 453,2 m. Fri Flyt skriv «parker ved Hatlestad-gardane på 350 moh»; SSR-punktet for Hatlestad les 412,5 m og p-plassen 453,2 m, så den publiserte 350-metaren er avrunda ned. Difor blir vertikalen om lag 1400 m og ikkje dei 1500 Fri Flyt oppgjev.",
    "Vegpunkta er SSR-namn lesne av DTM1: Rellingsætra 557,1 m og Daurmålsfjellet 824,6 m. Profilen frå Daurmålsfjellet til toppen stig jamt 825 → 1851 m over fem kilometer, med breterreng registrert på 1437 m — som svarar til «følg ryggen i slakt terreng heile vegen til toppen».",
    "Toppen les 1850,7 m på DTM1 mot publiserte 1850 (lokalt òg skrive 1851).",
-   "Lagt inn eit ryggpunkt mellom Daurmålsfjellet og toppen. Fem kilometer utan noko som held linja er for langt for ein korridor; DTM1 les 62.20269,7.27324 til 1186.2 m, midt på ryggen, og korridoren blir to strekk på 2,9 og 2,2 km."
+   "Lagt inn eit ryggpunkt mellom Daurmålsfjellet og toppen. Fem kilometer utan noko som held linja er for langt for ein korridor; DTM1 les 62.20269,7.27324 til 1186.2 m, midt på ryggen, og korridoren blir to strekk på 2,9 og 2,2 km.",
+   "Refutert av den fiendtlege andrelesinga: notatet sa at «breterrenget kring 1400 moh har sprekker seinvinters», og guiden gjentok det som ei Kartverket-registrering på 1437 moh. Ruta kryssar ikkje breterreng i det heile: kvart punkt på linja mellom 1380 og 1520 moh er klassa ÅpentOmråde, og næraste SnøIsbre-celle ligg om lag 300 m frå linja på 1482 moh."
   ],
   "notes": "Fri Flyt: 1850 moh, 1500 høgdemeter, 8 km, 6 timar. «Frå Hatlestad-gardane … gå slakt inn i munninga av Dyrdalen. Frå Rellingssætra tek du deg brattare opp på Daurmålsfjellet. Herifrå følgjer du ryggen i slakt terreng heile vegen til toppen av Torvløysa.» Tilkomst med ferje Linge–Eidsdal."
  },
@@ -3223,7 +3224,8 @@
    "Starten er snuplassen ved Vang der Straumbotnveien ender — OSM-stien (247 punkter) austover langs Bjørndalselva starter på 68.86157/17.30511, DTM1 leser 7,7 moh. 1276 − 8 = 1268, som forliker Fri Flyts 1270 høydemeter.",
    "Ruta reproduserer kilden: vestsida av Bjørndalselva, over elva og bratt opp sommerruta til flata med det vesle vatnet, høyredreining sørover på 800–900 — partiet med skredhistorikk — traversen opp mot 1033-høgda (DTM1 leser 1036,2 der linja er festet), og venstre nordover mot toppen. De siste 20 metrene kan være avblåst.",
    "Fri Flyt: KAST 3 – Komplekst, alpinøks og stegjern — grad 4. Nedkjøringa holder for det meste 20–25 grader med parti på 35. Østsiden (Blåisen og Langlia), nordsiden med Storeflaska (vedvarende bratt, parti på 45), Lilleflaska, Rytteran, Rytterrenna og Rytterkløfta er variantene og ikke denne.",
-   "check_new_corridors: snuplassen ved Vang er vegenden — Straumbotnveien (OSM unclassified/service) ender på punktet."
+   "check_new_corridors: snuplassen ved Vang er vegenden — Straumbotnveien (OSM unclassified/service) ender på punktet.",
+   "Ruteren kutta vatnet på flata (575 moh) — sommarruta går på land, avoidWater sett, linja held breidda. Snøtindan-regelen."
   ],
   "notes": ""
  },

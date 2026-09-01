@@ -5102,6 +5102,113 @@ Bollen and Østrenna, Helligtinden's Østskåla, Snøtinden's Sørvestsiden and
 Trollfjellet's Vestsiden 2 are descent variants from the same car park,
 and Strandtinden's Kvannto needs a rappel off the summit.
 
+## The southern second-route round
+
+Five more ways up peaks the app already carries — and the first round of
+second routes to leave the north. Jotunheimen, Rondane, Sogn, Trollheimen
+and Andørja. 185 tours, **214 routes**, 26 tours with more than one line.
+Rondslottet becomes the third with three.
+
+| tour | new route | start | gain | km | steepest 30 m | primary for comparison |
+| --- | --- | --- | --- | --- | --- | --- |
+| Glittertinden | Fra Spiterstulen | Spiterstulen, 1103 | 1390 | 10.24 | 25.2° | 1228 m / 13.33 km / 18.5° |
+| Rondslottet | Fra Bjørnhollia | Bjørnhollia, 913 | 1538 | 12.31 | 33.7° | 1283 m / 12.34 km / 34.9° |
+| Molden | Frå Marifjøra | kaia i Marifjøra, 1 | 1131 | 5.28 | 36.3° | 626 m / 3.31 km / 23.3° |
+| Snota | Frå Trollheimshytta | Trollheimshytta, 533 | 1356 | 11.61 | 28.5° | 1268 m / 10.22 km / 28.9° |
+| Langlitinden | Rytterkløfta frå Vasskaret | Vasskaret, 210 | 1170 | 6.78 | 37.5° | 1305 m / 5.53 km / 33.5° |
+
+### When Fri Flyt runs out, ut.no starts
+
+The ten-route round scanned every Fri Flyt page behind a shipped tour and
+took the ten that met the bar. There is no
+eleventh: the remaining numbered lines are descent variants from the same
+car park, couloirs at 40–50°, or lines the source itself says may not reach
+the summit.
+
+ut.no is the other half of the corpus, and it is shaped differently. Fri
+Flyt writes one page per mountain with numbered routes inside it; ut.no
+writes **one turforslag per route**, and the title normally names the start:
+«Topptur til Glittertinden fra Spiterstulen», «Snota 1668 fra
+Trollheimshytta», «Fottur til Molden frå Marifjøra». Where Fri Flyt makes
+you decide whether a numbered heading is a way up, ut.no's page *is* a way
+up, with its own distance, gain, duration, season and grading. Four of this
+round's five came from there; the fifth is a Fri Flyt line that had been
+read past twice.
+
+The trip data sits in the page's `__NEXT_DATA__` blob rather than the HTML,
+so the description comes out verbatim rather than through a summariser —
+which matters when the guide has to quote it.
+
+### Four candidates that were the shipped route wearing another name
+
+The expensive failure mode in this round was not a bad route, it was a
+route that turns out to be the one already on the card. Four got far enough
+to be worth writing down:
+
+- **Torvløysa frå Hatlestad-gardane.** Fri Flyt describes it, ut.no is the
+  app's source, and the two looked like different mountains' worth of
+  approach — until `generate_routes.py` printed the trailhead name and it
+  read `Hatlestad i Norddal`. The corridor had already been written,
+  measured and merged. **The router's own output was the check that caught
+  it**, which is an argument for reading that column rather than skipping to
+  the totals.
+- **Molden frå Krossen.** 1116 − 620 = 496; the shipped Mollandsmarki start
+  reads 501. Same place, different name on the sign.
+- **Snota frå Gråsjøen.** ut.no's «P-plass ved enden av veien» is
+  `way/236522760` — which is the mapped parking the shipped Gråhaugen route
+  already starts from, to the metre.
+- **Kvamshesten frå Stølshaugane i Bygstad.** A different car park, but the
+  line passes Kårstadstølen and Grunnevatnet exactly as the shipped one
+  does. A nearer parking on the same route is not a second route.
+
+The rule these four sharpen: **check the shipped trailhead's coordinate, not
+its name**, before researching a corridor.
+
+### A steepest step that is a descent
+
+Rondslottet from Bjørnhollia has its steepest 30 m window at **33.7 degrees
+between 926 and 896 moh** — the numbers run downhill. The route leaves the
+hut at 913, climbs onto the shoulder north of it, and drops back into the
+mouth of Langglupdalen before the real climb starts; that dip is steeper
+than anything above it. `guide_facts.steepestStep` records the window's two
+elevations rather than assuming the first is the lower, so the fact survives
+into the guide intact, and the guide says plainly that the steepest ground
+on the line is not in the climb at all.
+
+It is also why this line gives back 273 m against Dørålseter's 143 and
+Spranget's 187, and why it is the biggest ascent on the mountain — 1538 m
+from the lowest of the three starts.
+
+### Re-routing a tour can move its other lines
+
+The ten-route round re-solved eight tours in full and every shipped primary
+came back with identical geometry. This round re-solved six and **four
+primaries moved**: Glittertinden 13 325 → 12 878 m, Molden 3308 → 3016,
+Torvløysa 11 130 → 10 612 and Rondslottet's Dørålseter line 12 455 →
+11 406. Same corridors, same code, different lines — a few hundred metres
+of route, and up to 47 m of stated gain.
+
+The likeliest cause is the DTM tile cache: `router.py` solves on a
+downsampled grid, and a tile re-fetched at a slightly different extent
+shifts every cell boundary, which is enough for Dijkstra to prefer a
+different equally-cheap path. The cache directory is gitignored and was
+rebuilt between the two rounds.
+
+What matters is that this is *recoverable and must be recovered*. The
+Møysalen round's procedure is now the standing one for adding a route to an
+existing tour:
+
+1. `generate_routes.py` and `resample_dtm1.py` for the affected tours.
+2. Keep the new routes out of `routes.json` for a moment.
+3. `git checkout -- lib/routes.ts && python3 routes_from_ts.py` — this
+   restores every shipped line from the committed artefact.
+4. Splice the new routes back in, and check that each primary reports its
+   committed distance, gain and steepest step.
+
+After that the five primaries here report exactly what they reported before
+the round: 1228/13 325/18.5, 1283/12 337/34.9, 626/3308/23.3,
+1268/10 221/28.9 and 1305/5528/33.5.
+
 ## Network
 
 Everything is public and unauthenticated:
