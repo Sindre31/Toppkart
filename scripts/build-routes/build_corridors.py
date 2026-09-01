@@ -149,6 +149,62 @@ ALTERNATES = {
                     "people walk in summer.",
         }
     ],
+    "melderskin": [
+        {
+            "id": "myrdalsvatnet",
+            "name": "Frå Myrdalsvatnet over Omnen",
+            "trailhead": (60.02300, 6.06094, "Myrdalsvatnet"),  # 367 m
+            "waypoints": [
+                (60.02500, 6.07300, "traktorvegen"),               # 430 m
+                (60.02731, 6.08584, "Nipeelva"),                   # 525 m
+                (60.02350, 6.08700, "opp langs elva"),             # 750 m
+                (60.01910, 6.08444, "ryggen over Omnetjørnene"),   # 1033 m
+                (60.01449, 6.08235, "Omnen"),                      # 1155 m
+                (60.01000, 6.08200, "toppryggen"),                 # 1204 m
+            ],
+            "note": "Fri Flyts eige startsted for Melderskin er Myrdalsvannet, ikkje "
+                    "Kletta: «Fra Myrdalsvannet, følg grusveien litt tilbake til du "
+                    "kommer til en traktorvei. Følg veien til Nipelva dukker opp. Følg "
+                    "elva oppover til det blir naturlig å svinge av mot Omnen (1158). "
+                    "Da ligger Omnetjørnene til venstre for deg. Følg den tydelige "
+                    "ryggen opp til toppen.» 1054 høydemeter, 5 timar, NØ, 45 grader "
+                    "på det brattaste, «Ta med stegjern og øks». Omnen er "
+                    "registerført (Topp, Kvinnherad, 60,01449/6,08235) og DTM1 les "
+                    "1155,5 mot boka sine 1158. Omnetjørnene ligg på 1066 moh aust "
+                    "for ryggen, altså til venstre når ein går sørover — linja "
+                    "kryssar dei ikkje. Startsteda er 2,0 km og 213 høgdemeter frå "
+                    "kvarandre; Myrdalsvatnet er alt eit kartfesta startsted i "
+                    "appen, det Juklavasstinden går frå, og dei to rutene deler den "
+                    "same nedre tilkomsten langs Nipeelva.",
+        }
+    ],
+    "gullfjellstoppen": [
+        {
+            "id": "gullbotn",
+            "name": "Frå Gullbotn over Gullfjellhalsen",
+            "trailhead": (60.40767, 5.63913, "Gullbotn"),  # 244 m
+            "waypoints": [
+                (60.40533, 5.62955, "der merkestien tek av"),          # 293 m
+                (60.40280, 5.61426, "Gullbotn nord for Mannaleitnipa"),  # 447 m
+                (60.39611, 5.60660, "merkestien over 700"),            # 699 m
+                (60.38955, 5.59276, "Gullfjellhalsen"),                # 941 m
+            ],
+            "note": "Fri Flyt fører tre startsted for Gullfjellet — «Osevann i "
+                    "Bjørndalen, Gullbotn ved Trengereid eller Bontveit» — og gir "
+                    "nordruta si eiga skildring: «Alternativ 2: Fra nord er det "
+                    "mulig å starte ved den nedlagte Gullbotn Turistheim. Følg "
+                    "merkingen opp i selve Gullbotn nord for Mannaleitnipa (593 "
+                    "moh) og videre til Gullfjellshalsen.» Turistheimen er OSM way "
+                    "923743081, old_name «Gullbotn th;Gullbotten Turistheim», og "
+                    "parkeringa 170 m unna er OSM way 961372245 (name=Gullbotn, "
+                    "hiking=yes, ski=yes). Merkinga er kartlagd: OSM way 1118672845 "
+                    "og 61938702, 3,45 km frå der stien tek av til varden. Han går "
+                    "gjennom Gullbotn på 447 moh, nord for Mannaleitnipa, og over "
+                    "Gullfjellhalsen — registerført som Rygg på 60,38955/5,59276, "
+                    "941 moh. Appens rute går frå Osavatnet på vestsida, 9,6 km "
+                    "unna langs vegen og 63 høgdemeter høgare.",
+        }
+    ],
 }
 
 
