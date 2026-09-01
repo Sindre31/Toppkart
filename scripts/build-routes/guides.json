@@ -1880,8 +1880,9 @@
    ],
    "descent": [
     "Ned går du samme veg, vestover. Den store skålforma under ryggen er det morsomste på turen: 25 til 30 grader jevnt, korte partier over 30, og det bratteste steget på linja — 30,3 grader — rett under ryggen. Derfra er det slakt ned dalsøkket til Gjuvvatnet.",
-    "Vanligste feil: å la seg dra sørover fra toppen, ned Steindalen. Det er fin skikjøring, men det er en annen tur — 1025 høydemeter ned til Helgedalen, og bilen din står på Sognefjellsvegen. Hold vestryggen til du ser vatnet.",
-    "Vestsida er hard om morgenen i april og mai, og sola trenger noen timer på den. Går du tidlig, tar du med stegjern; det bratte partiet ved 1840 moh er ikke morsomt på blank skare, verken opp eller ned."
+    "Vanligste feil: å la seg dra sørover fra toppen, ned Steindalen, uten å ha planlagt for det. Det er fin skikjøring, og den linja ligger på dette kortet som egen rute, men det er en annen tur — 1025 høydemeter ned til Helgedalen, og bilen din står på Sognefjellsvegen. Hold vestryggen til du ser vatnet.",
+    "Vestsida er hard om morgenen i april og mai, og sola trenger noen timer på den. Går du tidlig, tar du med stegjern; det bratte partiet ved 1840 moh er ikke morsomt på blank skare, verken opp eller ned.",
+    "Sørsida er nå en egen rute på kartet, og den er ikke bare en variant: «Før Sognefjellet opnar er det best å gå sørsida opp frå Helgedalen», skriver kilden i sin egen når-linje. Normalruta starter ved Gjuvvatnet på Sognefjellsvegen, som er vinterstengt — så fram til vegen åpner er dette veien opp. Fra Turtagrø på 884 moh går linja inn Helgedalen forbi 910 og 1026, opp mot Steindøla på 1202 og 1338, langs vestsida av elva på 1434 og 1520, inn i Steindalen på 1704, og over inngangen til sørsida på 1893 til vestkanten av topplatået på 1931 — det punktet normalruta også kommer opp på. 1172 høydemeter på 7,83 km mot 764 på 3,99 km fra Gjuvvatnet: nesten dobbelt så mye klatring og nesten dobbelt så langt, fordi turen starter 390 meter lavere. Skogen slipper på 1037 moh etter 3,92 km. Beltet fra 1700 til 1800 moh måler 21,3 grader, turens bratteste, og det bratteste 30-metersvinduet er 28,4 mellom 1658 og 1675. Kilden advarer om Steindøla: elva åpner seg en gang i mai."
    ],
    "avalanche": [
     {
@@ -1909,8 +1910,9 @@
    ],
    "descent": [
     "You go down the way you came, westward. The big bowl below the ridge is the best of the tour: a steady 25 to 30 degrees, short pitches over 30, and the steepest step on the line — 30.3 degrees — right below the ridge. From there it is gentle down the hollow to Gjuvvatnet.",
-    "The common mistake: letting yourself be drawn south off the summit, down Steindalen. It is good skiing, but it is a different tour — 1025 metres down to Helgedalen, and your car is on Sognefjellsvegen. Hold the west ridge until you can see the lake.",
-    "The west side is hard in the morning through April and May, and the sun needs a few hours on it. Start early and you bring crampons; the steep section at 1840 m is no fun on bare crust, going up or coming down."
+    "The common mistake: letting yourself be drawn south off the summit, down Steindalen, without having planned for it. It is good skiing, and that line is on this map as its own route, but it is a different tour — 1025 metres down to Helgedalen, and your car is on Sognefjellsvegen. Hold the west ridge until you can see the lake.",
+    "The west side is hard in the morning through April and May, and the sun needs a few hours on it. Start early and you bring crampons; the steep section at 1840 m is no fun on bare crust, going up or coming down.",
+    "The south side is now its own route on the map, and it is not merely a variant: «Before the Sognefjell road opens it is best to climb the south side from Helgedalen», says the source in its own when-line. The normal route starts at Gjuvvatnet on Sognefjellsvegen, which is closed in winter — so until the road opens this is the way up. From Turtagrø at 884 m the line goes into Helgedalen past 910 and 1026, up toward Steindøla at 1202 and 1338, along the west side of the river at 1434 and 1520, into Steindalen at 1704, and over the entrance to the south side at 1893 to the western edge of the summit plateau at 1931 — the same point the normal route arrives at. 1172 metres of climbing over 7.83 km against 764 over 3.99 km from Gjuvvatnet: nearly twice the ascent and nearly twice the distance, because the tour starts 390 metres lower. The forest lets go at 1037 m after 3.92 km. The band from 1700 to 1800 m measures 21.3 degrees, the tour's steepest, and the steepest 30 m window is 28.4 between 1658 and 1675. The source warns about Steindøla: the river opens up some time in May."
    ],
    "avalanche": [
     {
@@ -1948,7 +1950,8 @@
    "CHECKED AND CORRECT: the west bowl. Probe west from the crux gives 28.1 deg mean over 400 m with a 39.7 deg top window; '25 til 30 grader jevnt, korte partier over 30' is right, and matches Friflyt 1.2's '25-30 grader'.",
    "PLACE NAMES ALL VERIFIED IN SSR: Gjuvvatnet (Vann, Luster, 61.52791/7.83903), Galgebergstjornane (Gruppe av tjern, Luster, 61.53513/7.84835), Steindalen (Dal, Luster, 61.51209/7.88480), Helgedalen (Dal, Luster, 61.50355/7.83709), Steindalsnosi (Fjell, Luster). Sognefjellsvegen confirmed: the trailhead 61.52503/7.83797 is 0.44 m from a node of OSM way 1185195479, highway=primary, ref=55.",
    "VARSOM: NVE AvalancheWarningByCoordinates for 61.52696/7.90076 returns RegionId 3028, RegionName Jotunheimen. Correct region, and the literal 'varsom.no' is present in both languages.",
-   "No claim that anyone skied or recorded the line. NO and EN arrays are 1/4/3/3 in both languages and say the same thing paragraph for paragraph. Register is second person, present tense, unhedged."
+   "No claim that anyone skied or recorded the line. NO and EN arrays are 1/4/3/3 in both languages and say the same thing paragraph for paragraph. Register is second person, present tense, unhedged.",
+   "ANDRE RUTE LAGT INN: Steindalsnosi sørsida frå Turtagrø. Fri Flyt «Turbeskrivelse Steindalsnosi», rute 1.4 Ned sørsida via Steindalen og Helgedalen, med kjelda si eiga sanksjonering av å gå henne opp: «Når: Mars–midten av mai. (Før Sognefjellet opnar er det best å gå sørsida opp frå Helgedalen.)» Linja: «Køyr vestover frå toppunktet, langs ryggen mot vesttoppen 1936. Når du er nede på 1900 moh og ryggen smalnar, står du ved inngangen til sørsida. Herfrå følgjer du lågaste punktet sørover til Steindøla og vidare på vestsida av denne ned i Helgedalsbotnen. Om det ligg snø ut Helgedalen, stakar du tilbake til Turtagrø ut Helgedalen.» Fanaråken-sida i same boka: «Frå Turtagrø inn Helgedalen og opp langs Steindøla og gjennom Steindalen (sjå skildring Steindalsnosi sørside).» Kjelda sine tal for sørsida: 1025 høgdemeter, «32 grader jamt. Passasjar på 34–36 grader (1380–1260 moh langs Steindøla)», faren «Steindøla opnar seg ein gong i mai». Turtagrø er alt eit kartfesta startsted i appen — Fanaråken går derifrå — og dei to rutene deler dei to fyrste vegpunkta inn Helgedalen."
   ]
  },
  "besshoe": {
@@ -2469,7 +2472,8 @@
    "descent": [
     "Ned same linja: nordryggen til punkt 1305, austover over Svartahorgi og ned til Breiming og Bergsstølen, og til slutt skogsbilvegen ned til Høyland. Fallretninga på nedkøyringa er nordaust. Nedste delen er tynn: snødekket ved Høyland og Bergsstølen er kortvarig, og utpå våren er det verdt å gå av tidleg heller enn å skrapa dei siste hundre høgdemetrane.",
     "Vanlegaste feil: å tru at Bodegaen er nedkøyringa på denne turen. Den kjende frikøyringssida ligg søraust på fjellet og matar tilbake i heissystemet i Bavallen — ho endar ikkje ved bilen din på Høyland. Den dokumenterte varianten frå denne ruta er å ta seg ned i Årdalen frå punkt 1307 ved stabile forhold, og Årdalen er austsida, den bratte delen av fjellet.",
-    "Den andre feilen er å bruka det trange dalføret ved Breiming som nedkøyringslinje utan å tenkja på kva som ligg over. Store svaskred losnar seint på våren her og går langt."
+    "Den andre feilen er å bruka det trange dalføret ved Breiming som nedkøyringslinje utan å tenkja på kva som ligg over. Store svaskred losnar seint på våren her og går langt.",
+    "Appens rute er den kjelda kallar den andre. Faktaboksen fører to startsted — «Voss Fjellheiser, øverst i Horgaletten, eller den nedlagte gården Høyland sør for Tvinne» — med kvar sin tid, «2 timer fra Horgaletten, 4 timer fra Høyland», og OPP-teksten er tydeleg på kva folk faktisk gjer: «De aller fleste besøkende velger å benytte seg av heissystemet. Øverst i Horgaletten-heisen, ved rundt 920 meters høyde, er det bare å feste feller under skiene. Deretter labbe i vei langs de tydelige stakene som leder langs Vådalseggi til topps.» Den ruta ligg no på kortet. Startstaden er toppstasjonen på Horgaletten-trekket, 948 moh — ikkje ein parkeringsplass, men eit startsted du kjem til med heis, slik Reinheim, Bjørnhollia og Trollheimshytta er startsted du kjem til på ski. Derfrå 506 høgdemeter på 3,66 km: opp frå heisen på 979, over Vådalseggi på 1051, inn på den merkte ruta på 1088 og vidare langs stakane på 1164, 1284, 1344 og 1378 til varden. Mot normalrutas 1307 høgdemeter på 6,71 km er det under halve turen, og det brattaste 30-metersvindauget er 24,4 grader mellom 1025 og 1041 mot 28,9. Ruta gjev tilbake 42 høgdemeter der ryggen dukkar."
    ],
    "avalanche": [
     {
@@ -2498,7 +2502,8 @@
    "descent": [
     "Down the same line: the north ridge to point 1305, east over Svartahorgi and down to Breiming and Bergsstølen, and finally the forest track down to Høyland. The descent faces north-east. The bottom section is thin: the snow cover at Høyland and Bergsstølen is short-lived, and later in spring it is worth taking the skis off early rather than scraping the last hundred metres.",
     "The usual mistake: assuming Bodegaen is the descent on this tour. That well-known freeride face lies on the south-east side of the mountain and feeds back into the Bavallen lift system — it does not end at your car at Høyland. The documented variant from this route is to drop into Årdalen from point 1307 in stable conditions, and Årdalen is the east side, the steep part of the mountain.",
-    "The second mistake is using the narrow valley at Breiming as a descent line without thinking about what lies above it. Large full-depth avalanches release here late in spring and run a long way."
+    "The second mistake is using the narrow valley at Breiming as a descent line without thinking about what lies above it. Large full-depth avalanches release here late in spring and run a long way.",
+    "The app's route is the one the source calls the second. The fact box lists two starts — «Voss Fjellheiser, at the top of Horgaletten, or the abandoned farm Høyland south of Tvinne» — each with its own time, «2 hours from Horgaletten, 4 hours from Høyland», and the OPP text is plain about what people actually do: «The great majority of visitors choose to use the lift system. At the top of the Horgaletten lift, at around 920 metres, you simply put the skins on. Then off you go along the clear marker poles that lead along Vådalseggi to the top.» That route is now on the map. The start is the top station of the Horgaletten tow, 948 m — not a car park, but a start you reach by lift, the way Reinheim, Bjørnhollia and Trollheimshytta are starts you reach on skis. From there 506 metres of climbing over 3.66 km: up from the lift at 979, over Vådalseggi at 1051, onto the marked route at 1088 and on along the poles at 1164, 1284, 1344 and 1378 to the cairn. Against the normal route's 1307 metres over 6.71 km it is under half the tour, and the steepest 30 m window is 24.4 degrees between 1025 and 1041 against 28.9. The line gives back 42 metres where the ridge dips."
    ],
    "avalanche": [
     {
@@ -2521,6 +2526,9 @@
    "https://www.friflyt.no/topptur/skiturer-voss/turbeskrivelse-loenahorgi",
    "https://ut.no/kart/rutebeskrivelse/136536",
    "https://www.westcoastpeaks.com/Peaks/lonahorgi.html"
+  ],
+  "problems": [
+   "ANDRE RUTE LAGT INN: Lønahorgi frå toppen av Horgaletten. Fri Flyt «Turbeskrivelse Lønahorgi», faktaboksen: «Startsted: Voss Fjellheiser, øverst i Horgaletten, eller den nedlagte gården Høyland sør for Tvinne» og «Tid opp/ned: 2 timer fra Horgaletten, 4 timer fra Høyland». OPP: «De aller fleste besøkende velger å benytte seg av heissystemet. Øverst i Horgaletten-heisen, ved rundt 920 meters høyde, er det bare å feste feller under skiene. Deretter labbe i vei langs de tydelige stakene som leder langs Vådalseggi til topps. Dersom du ikke vil ha drahjelp fra skiheisen, bør du starte ved Høyland sør for Tvinne.» Kjelda sine tal for fjellet: toppunkt 1410, 1330 høgdemeter, «Potensiell skredfare. Store svaskred løsner seint på våren!». Toppstasjonen er OSM way 30743181 (aerialway=drag_lift, name=Horgaletten); botnstasjonen ligg på 791 moh. Stakane frå Vådalseggi til varden er OSM way 72667449, 184 punkt, som endar i toppunktet. Mellom heistoppen og Vådalseggi finst ingen kartlagd sti, slik kjelda òg seier."
   ]
  },
  "folarskardnuten": {
@@ -3361,7 +3369,8 @@
    ],
    "descent": [
     "Ned same vegen, nordover gjennom Horndalsbotnen og ut den flate innmarsjen til Skiple. Fallretninga er nord, og fjellet held difor kaldt føre lenge — det er også grunnen til at det sjeldan er vårføre å hente her.",
-    "Vanlegaste feil: å legge nedkøyringa i den øvre lia mot Bjørnsetstølen fordi ho ser open ut. Der er det skredbaner. Den andre er å undervurdere innmarsjen: 1490 meter tilnærma flat grunn er tungt å gå attende i mjuk snø, og turen er lengre enn høgdemetrane tilseier."
+    "Vanlegaste feil: å legge nedkøyringa i den øvre lia mot Bjørnsetstølen fordi ho ser open ut. Der er det skredbaner. Den andre er å undervurdere innmarsjen: 1490 meter tilnærma flat grunn er tungt å gå attende i mjuk snø, og turen er lengre enn høgdemetrane tilseier.",
+    "Kjelda fører to startsted, eitt på kvar side av fjellet: «Oppstigningen fra nord starter ved Skiple i Raundalen, snaut tjue kilometer øst fra Voss. Oppstigningen fra sør starter i Skaftedalen.» Og ho seier kvifor: «Det er to gode utgangspunkt for denne turen, et på den skyggefulle nordsiden, og et som ligger solvendt mot sør.» Appens rute er nordruta; sørruta ligg no ved sida av henne. Frå enden av Skaftedalsvegen på 486 moh går linja i slakt terreng nordaustover opp dalen forbi 662 og 724 til stølen Skytjeset på 882 — kjelda sine «omtrent 890 moh» — og derfrå på ryggformasjonen over 1063, flanken på 1249 og 1368 til topps. 1007 høgdemeter på 5,76 km mot 1121 på 5,93 km frå Skiple: nesten same tur, motsett sol. Skogen slepper på 758 moh etter 2,84 km, mot 781 på nordruta. Brattaste hundremetersbeltet er 19,5 grader frå 900 til 1000 moh, og brattaste 30-metersvindauget 27,7 mellom 1210 og 1234, mot 31,4 på nordruta. Kjelda gjev eit val øvst — anten det bratte, markerte dalsøkket eller ryggformasjonen og flanken; linja her er ryggen, som er den kjelda skildrar heilt til topps."
    ],
    "avalanche": [
     {
@@ -3389,7 +3398,8 @@
    ],
    "descent": [
     "Back the same way, north through Horndalsbotnen and out along the flat approach to Skiple. The descent faces north, so the mountain holds cold snow for a long time — which is also why there is rarely spring corn to be had here.",
-    "The usual mistake: putting the descent into the upper slope toward Bjørnsetstølen because it looks open. That ground is avalanche paths. The second is underestimating the approach: 1490 metres of near-flat ground is hard work on the way back in soft snow, and the tour is longer than its vertical suggests."
+    "The usual mistake: putting the descent into the upper slope toward Bjørnsetstølen because it looks open. That ground is avalanche paths. The second is underestimating the approach: 1490 metres of near-flat ground is hard work on the way back in soft snow, and the tour is longer than its vertical suggests.",
+    "The source lists two starts, one on each side of the mountain: «The ascent from the north starts at Skiple in Raundalen, a little under twenty kilometres east of Voss. The ascent from the south starts in Skaftedalen.» And it says why: «There are two good starting points for this tour, one on the shady north side, and one facing the sun to the south.» The app's route is the northern one; the southern now sits beside it. From the end of Skaftedalsvegen at 486 m the line goes in gentle terrain north-east up the valley past 662 and 724 to the summer farm Skytjeset at 882 — the source's «about 890 m» — and from there on the ridge formation over 1063, the flank at 1249 and 1368 to the top. 1007 metres of climbing over 5.76 km against 1121 over 5.93 km from Skiple: nearly the same tour, the opposite sun. The forest lets go at 758 m after 2.84 km, against 781 on the north route. The steepest hundred-metre band is 19.5 degrees from 900 to 1000 m, and the steepest 30 m window 27.7 between 1210 and 1234, against 31.4 on the north route. The source offers a choice up high — either the steep, marked gully or the ridge formation and the flank; the line here is the ridge, which is the one the source describes all the way to the top."
    ],
    "avalanche": [
     {
@@ -3410,7 +3420,10 @@
    "https://www.friflyt.no/topptur/skiturer-voss/turbeskrivelse-horndalsnuten",
    "https://www.openstreetmap.org/node/4792386725"
   ],
-  "source": "written against corridors.json and the routed line"
+  "source": "written against corridors.json and the routed line",
+  "problems": [
+   "ANDRE RUTE LAGT INN: Horndalsnuten sørruta frå Skaftedalen. Fri Flyt «Turbeskrivelse Horndalsnuten», faktaboksen: «Startsted: Oppstigningen fra nord starter ved Skiple i Raundalen, snaut tjue kilometer øst fra Voss. Oppstigningen fra sør starter i Skaftedalen. Avkjørsel ved Mo — som ligger før Skjerjefossen på veien til Granvin, drøyt femten kilometer sør for Voss.» Innleiinga: «Det er to gode utgangspunkt for denne turen, et på den skyggefulle nordsiden, og et som ligger solvendt mot sør.» (FRA SØR): «Det finnes også et flott alternativ på solsiden. Fra Skaftedalen går du i slakt terreng til stølen Skytjeset (omtrent 890 moh). Herfra må du vurdere snøforholdene. Enten går du inn i et bratt, markert dalsøkk som leder til toppen, eller krysser ut til venstre og følger en ryggformasjon, og deretter flanken til topps.» Kjelda sine tal for fjellet: toppunkt 1461, 1000 høgdemeter, 3 timar. Skytjeset er registerført (Seter/støl, Voss, 60,62519/6,65564); vegpunktet ligg 260 m nord for registerpunktet, på 882 moh. Startstaden er enden av OSM way 568505817 (highway=service, name=Skaftedalsvegen) ved garden Skaftedal, OSM node 2623658385."
+  ]
  },
  "gygrastolen": {
   "no": {
@@ -9179,7 +9192,8 @@
    ],
    "descent": [
     "Ned samme vei — topphenget først, mens du vet hva snøen gjorde på veien opp, så hyllene og motbakken opp igjen til Løbergskaret: 185 av de 565 tilbakegitte metrene skal klatres på hjemveien. Nordsektoren fra toppen måler 13,6 grader i snitt — veien linja kom.",
-    "Sør- og austsida er en annen historie: 39,1 og 38,6 grader i snitt med vinduer på 59,7 og 52,8. Og i dalen gjelder samme regel ned som opp: midt i, mellom utløpssonene."
+    "Sør- og austsida er en annen historie: 39,1 og 38,6 grader i snitt med vinduer på 59,7 og 52,8. Og i dalen gjelder samme regel ned som opp: midt i, mellom utløpssonene.",
+    "Kilden gir to startsteder, ikke ett: «Egen parkeringsplass langs R85, rett på sørsiden av elveutløpet. For østruta parkeres det på Gullesfjordbotn camping.» Østruta er den andre, og den kommer inn fra motsatt side av fjellet. Fra campingen på 3 moh holder linja nordsiden av Vesterelva forbi 86 og 91, over vatnet på 76 — 121 der linja går — og videre mellom vatna på 167 til vatnet på 113, som krysses vestover på 278. Så den bratte traseen kilden setter til 30–40 grader, opp forbi 293 og 326 til vatnet på 289 på 332, og sørover langs den slake ryggen på 440 til høgda 667. Derfra over Vestbotntinden på 935 og ned 330 høydemeter til Øvre Storelvvatnet på 605, over vatnet, og opp igjen på 652 og 803 inn på ruta fra Snytindhytta som runder toppen på vestsiden. 1439 høydemeter på 9,13 km mot 1548 på 9,04 km fra Løbergsbukta: nesten samme lengde, litt mindre klatring, 446 meter tilbake mot 565 — det er to traverser av samme fjell fra hver sin fjord. Linja står på is fire steder, og alle fire er kildens egne: 135 meter over vatnet på 76, 90 meter over vatnet på 115 — kildens «vann 113» — 191 meter over vatnet på 274, og 150 meter over Øvre Storelvvatnet på 590. «Krysset vann 76», «vann 113 krysses vestover», «stak over vannet», skriver den. Skogen slipper på 212 moh etter 2,46 km. Beltet fra 400 til 500 moh måler 21,1 grader og det bratteste 30-metersvinduet 36,5 mellom 973 og 996, i topphenget. Alpinøks og stegjern står i faktaboksen for begge rutene."
    ],
    "avalanche": [
     {
@@ -9210,7 +9224,8 @@
    ],
    "descent": [
     "Down the same way — the summit slope first, while you know what the snow did on the way up, then the shelves and the climb back over Løbergskaret: 185 of the 565 given-back metres must be climbed again on the way home. The north sector from the summit measures 13.6 degrees mean — the way the line came.",
-    "The south and east sides are another story: 39.1 and 38.6 degrees mean with windows of 59.7 and 52.8. And in the valley the same rule holds down as up: the middle, between the runout zones."
+    "The south and east sides are another story: 39.1 and 38.6 degrees mean with windows of 59.7 and 52.8. And in the valley the same rule holds down as up: the middle, between the runout zones.",
+    "The source gives two starts, not one: «A parking of its own along the R85, right on the south side of the river mouth. For the east route you park at Gullesfjordbotn campsite.» The east route is the second, and it comes in from the opposite side of the mountain. From the campsite at 3 m the line keeps the north side of Vesterelva past 86 and 91, over the lake at 76 — 121 where the line runs — and on between the lakes at 167 to the lake at 113, crossed westward at 278. Then the steep line the source puts at 30–40 degrees, up past 293 and 326 to the lake at 289 at 332, and south along the gentle ridge at 440 to the 667 top. From there over Vestbotntinden at 935 and down 330 metres to Øvre Storelvvatnet at 605, across the lake, and back up at 652 and 803 onto the route from Snytindhytta that rounds the summit on the west. 1439 metres of climbing over 9.13 km against 1548 over 9.04 km from Løbergsbukta: almost the same length, a little less ascent, 446 metres given back against 565 — two traverses of the same mountain, each from its own fjord. The line stands on ice in four places, and all four are the source's own: 135 metres over the lake at 76, 90 metres over the lake at 115 — the source's «vann 113» — 191 metres over the lake at 274, and 150 metres over Øvre Storelvvatnet at 590. «Having crossed vann 76», «vann 113 is crossed westward», «pole across the lake», it writes. The forest lets go at 212 m after 2.46 km. The band from 400 to 500 m measures 21.1 degrees and the steepest 30 m window 36.5 between 973 and 996, in the summit slope. Ice axe and crampons are in the fact box for both routes."
    ],
    "avalanche": [
     {
@@ -9231,7 +9246,11 @@
     }
    ],
    "caption": "1548 metres of ascent and 9.04 km from Løbergsbukta up the middle of Løbergsdalen, over Løbergskaret and past the lakes on land, with the treeline at 287 m and the steepest ground — 33.8 degrees between 947 and 974 m — in the summit slope."
-  }
+  },
+  "problems": [
+   "ANDRE RUTE LAGT INN: Snøtindan østruta frå Gullesfjordbotn. Fri Flyt «Turbeskrivelse Snøtindan», rute 2.7.2 Østruta: «Fra Gullesfjord Camping holder man høyresiden (nord) av Vesterelva og følger andre siden etter å ha krysset vann 76. Vann 113 krysses vestover og finn bratt trase (30-40 grader) opp mot vann 289 og deretter sørover langs slak rygg mot høyde 667. … Området er opp mot 45 grader bratt så her må det være stabil sne. … Nedkjøringen til Øvre Storelvvatnet er for det meste slakt men nedre del har et brattheng på 30-40 grader. Stak over vannet og start oppstigningen litt før enden av vannet. Det meste er under 30 grader og man kommer etterhvert inn på ruta fra Snytindhytta. Derfra runder man toppen på vestsiden og bestiger toppen fra sør opp en et toppheng på ca 30-40 grader.» Startsteda er dei to faktaboksen fører. Kjelda sine tal for fjellet: KAST 3 – Komplekst, toppunkt 996, 1250–1350 høgdemeter, 8–9 timar, januar–april, alpinøks og stegjern. Vestbotntinden er registerført (Fjell, Lødingen, 68,52815/15,63119). Kryssingane av vatna på 76, 113 og Øvre Storelvvatnet er sanksjonerte i kjelda sin eigen tekst; check_ground melder 0 m på vatn fordi vegpunkta ligg på strendene.",
+   "check_ground: linja står på is fire stader, alle fire sanksjonerte av kjelda: 135 m over vatnet på 76 moh, 90 m over vatnet på 115 moh (kjelda sitt «vann 113»), 191 m over vatnet på 274 moh (kjelda sitt «vann 289») og 150 m over Øvre Storelvvatnet på 590 moh. Kjelda: «følger andre siden etter å ha krysset vann 76», «Vann 113 krysses vestover», «Stak over vannet og start oppstigningen litt før enden av vannet». Alle fire høgdene er DTM1-lesingar av vassflatene der linja går, og dei står i guiden."
+  ]
  },
  "storhornet-kvafjord": {
   "source": "friflyt+utno",

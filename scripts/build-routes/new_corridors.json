@@ -774,7 +774,66 @@
         "https://www.openstreetmap.org/way/1393187888"
       ],
       "confidence": "medium",
-      "notes": "Fri Flyt (Lønahorgi, 1410 moh., 1330 høgdemeter) gjev to startstader. Den som kan brukast her er 'den nedlagte gården Høyland sør for Tvinne. Ta av til venstre ved Grotlandsbrua omtrent en kilometer nord for innløpet av Lønavatnet. Følg bilveg og så traktorveg', 3-4 timar opp, og rutelinja 'Følg skogsbilvei sørover til du kommer til Bergstølen. Herfra tar du deg opp det trange dalføret ved Breiming. Følg slakeste vei mot Svartahorge (1037) til venstre for det trigonometriske punktet 835. Følg rundt til høyre for selve Svartahorge, og følg ryggen mot selve toppen.' Alle namna er stadfesta: Bergsstølen (SSR, 60.69687,6.45979) 379,7 m, Breiming (SSR Li, 60.69543,6.44614) 609,8 m, trigpunktet 834,3 m ved 60.70200,6.44400, Svartahorgi (SSR, 60.70634,6.43978) 1029,0 m mot dei publiserte 1037, og punkt 1305 på 1305,2 m. Straklinja start-topp er 3496 m med retning 253 grader (VSV) og korridoren er 6,9 km. Confidence er medium av to grunnar: dei fleste går faktisk turen frå toppen av Horgaletten-heisen på om lag 920 moh. og korta ned til 490 høgdemeter, og det er ikkje dokumentert at Høylandsvegen blir brøytt fram til den nedlagde garden om vinteren. Alle koordinatar er lesne tilbake frå ws.geonorge.no/hoydedata/v1/punkt."
+      "notes": "Fri Flyt (Lønahorgi, 1410 moh., 1330 høgdemeter) gjev to startstader. Den som kan brukast her er 'den nedlagte gården Høyland sør for Tvinne. Ta av til venstre ved Grotlandsbrua omtrent en kilometer nord for innløpet av Lønavatnet. Følg bilveg og så traktorveg', 3-4 timar opp, og rutelinja 'Følg skogsbilvei sørover til du kommer til Bergstølen. Herfra tar du deg opp det trange dalføret ved Breiming. Følg slakeste vei mot Svartahorge (1037) til venstre for det trigonometriske punktet 835. Følg rundt til høyre for selve Svartahorge, og følg ryggen mot selve toppen.' Alle namna er stadfesta: Bergsstølen (SSR, 60.69687,6.45979) 379,7 m, Breiming (SSR Li, 60.69543,6.44614) 609,8 m, trigpunktet 834,3 m ved 60.70200,6.44400, Svartahorgi (SSR, 60.70634,6.43978) 1029,0 m mot dei publiserte 1037, og punkt 1305 på 1305,2 m. Straklinja start-topp er 3496 m med retning 253 grader (VSV) og korridoren er 6,9 km. Confidence er medium av to grunnar: dei fleste går faktisk turen frå toppen av Horgaletten-heisen på om lag 920 moh. og korta ned til 490 høgdemeter, og det er ikkje dokumentert at Høylandsvegen blir brøytt fram til den nedlagde garden om vinteren. Alle koordinatar er lesne tilbake frå ws.geonorge.no/hoydedata/v1/punkt.",
+      "alternates": [
+        {
+          "routeId": "horgaletten",
+          "routeName": "Frå toppen av Horgaletten over Vådalseggi",
+          "routeDescriptionFull": "Frå toppen av Horgaletten-heisen i Voss Fjellheiser, der ein festar fellene, og vidare langs dei tydelege stakane som leier nordaustover langs Vådalseggi og den lange ryggen til toppen av Lønahorgi.",
+          "trailhead": {
+            "name": "Toppen av Horgaletten",
+            "lat": 60.67,
+            "lng": 6.38706,
+            "elevationM": 948.2,
+            "osmEvidence": "Toppstasjonen på OSM way 30743181, aerialway=drag_lift, name=Horgaletten; botnstasjonen ligg på 791 moh i alpinbakken. Kjelda skriv «Øverst i Horgaletten-heisen, ved rundt 920 meters høyde»; DTM1 les 948,2 på toppnoden. Den merkte ruta vidare er OSM relation 18102072, «Voss Resort - Hiking path 5 - Lønahorgi»."
+          },
+          "waypoints": [
+            {
+              "name": "opp frå heisen",
+              "lat": 60.673,
+              "lng": 6.389,
+              "elevationM": 979.04
+            },
+            {
+              "name": "Vådalseggi",
+              "lat": 60.67623,
+              "lng": 6.39385,
+              "elevationM": 1051.41
+            },
+            {
+              "name": "inn på den merkte ruta",
+              "lat": 60.67628,
+              "lng": 6.39884,
+              "elevationM": 1088.29
+            },
+            {
+              "name": "stakane ved 1164",
+              "lat": 60.68018,
+              "lng": 6.40524,
+              "elevationM": 1164.04
+            },
+            {
+              "name": "stakane ved 1284",
+              "lat": 60.68478,
+              "lng": 6.40586,
+              "elevationM": 1283.73
+            },
+            {
+              "name": "stakane ved 1344",
+              "lat": 60.68977,
+              "lng": 6.4049,
+              "elevationM": 1343.82
+            },
+            {
+              "name": "siste stakane",
+              "lat": 60.69353,
+              "lng": 6.41117,
+              "elevationM": 1378.12
+            }
+          ],
+          "note": "Fri Flyt, «Turbeskrivelse Lønahorgi», OPP: «De aller fleste besøkende velger å benytte seg av heissystemet. Øverst i Horgaletten-heisen, ved rundt 920 meters høyde, er det bare å feste feller under skiene. Deretter labbe i vei langs de tydelige stakene som leder langs Vådalseggi til topps. Dersom du ikke vil ha drahjelp fra skiheisen, bør du starte ved Høyland sør for Tvinne.» Faktaboksen fører begge startsteda — «Voss Fjellheiser, øverst i Horgaletten, eller den nedlagte gården Høyland sør for Tvinne» — og gir kvar sin tid: «2 timer fra Horgaletten, 4 timer fra Høyland». Appens rute er Høyland; dette er den kjelda seier dei aller fleste går. Startstaden er ein toppstasjon og ikkje ein parkeringsplass; det er same slaget startsted som Reinheim, Bjørnhollia og Trollheimshytta alt er i denne samlinga, og guiden seier det rett ut. Vådalseggi er registerført (Fjell, Voss, 60,67623/6,39385). Kjelda sine tal for fjellet: toppunkt 1410, 1330 høgdemeter frå Høyland, «Potensiell skredfare. Store svaskred løsner seint på våren!» Frå Vådalseggi og opp følgjer korridoren OSM way 72667449, den kartlagde stien som endar i toppvarden — det er dei «tydelege stakane» kjelda skildrar. Mellom heistoppen og Vådalseggi finst ingen kartlagd sti, som kjelda òg seier: der er det berre å feste fellene og gå."
+        }
+      ]
     }
   },
   {
@@ -2437,7 +2496,60 @@
         "https://ws.geonorge.no/stedsnavn/v1/navn (Horndalsnuten, Skiple, Horndalsbotnen)"
       ],
       "confidence": "medium",
-      "notes": "Fri Flyt: 1461 moh, 1000 høgdemeter, 3 timar. Nordstart: «broen som går over Raundalselvi ved Skiple». Sørstart frå Skaftedalen via Skytjeset (890 moh) er ei anna rute og er ikkje lagd inn."
+      "notes": "Fri Flyt: 1461 moh, 1000 høgdemeter, 3 timar. Nordstart: «broen som går over Raundalselvi ved Skiple». Sørstart frå Skaftedalen via Skytjeset (890 moh) er ei anna rute og er ikkje lagd inn.",
+      "alternates": [
+        {
+          "routeId": "skaftedalen",
+          "routeName": "Frå sør, opp frå Skaftedalen over Skytjeset",
+          "routeDescriptionFull": "Frå enden av Skaftedalsvegen i slakt terreng nordaustover opp til stølen Skytjeset på om lag 890 moh, og derfrå anten inn i det bratte, markerte dalsøkket som leier til toppen eller ut til venstre på ryggformasjonen og vidare opp flanken til topps.",
+          "trailhead": {
+            "name": "Skaftedalen",
+            "lat": 60.59931,
+            "lng": 6.64557,
+            "elevationM": 486.22,
+            "osmEvidence": "Enden av OSM way 568505817, highway=service, name=Skaftedalsvegen, ved garden Skaftedal (OSM node 2623658385). Kjelda skildrar avkøyrsla: «Avkjørsel ved Mo — som ligger før Skjerjefossen på veien til Granvin, drøyt femten kilometer sør for Voss.» DTM1 les 486,2 moh."
+          },
+          "waypoints": [
+            {
+              "name": "opp dalen",
+              "lat": 60.608,
+              "lng": 6.65,
+              "elevationM": 661.58
+            },
+            {
+              "name": "slakt terreng mot stølen",
+              "lat": 60.617,
+              "lng": 6.653,
+              "elevationM": 724.29
+            },
+            {
+              "name": "Skytjeset",
+              "lat": 60.6275,
+              "lng": 6.6556,
+              "elevationM": 882.0
+            },
+            {
+              "name": "ryggformasjonen",
+              "lat": 60.632,
+              "lng": 6.665,
+              "elevationM": 1063.0
+            },
+            {
+              "name": "flanken",
+              "lat": 60.636,
+              "lng": 6.67,
+              "elevationM": 1249.0
+            },
+            {
+              "name": "opp mot toppen",
+              "lat": 60.64,
+              "lng": 6.676,
+              "elevationM": 1368.0
+            }
+          ],
+          "note": "Fri Flyt, «Turbeskrivelse Horndalsnuten», (FRA SØR): «Det finnes også et flott alternativ på solsiden. Fra Skaftedalen går du i slakt terreng til stølen Skytjeset (omtrent 890 moh). Herfra må du vurdere snøforholdene. Enten går du inn i et bratt, markert dalsøkk som leder til toppen, eller krysser ut til venstre og følger en ryggformasjon, og deretter flanken til topps.» Faktaboksen fører begge startsteda: «Oppstigningen fra nord starter ved Skiple i Raundalen, snaut tjue kilometer øst fra Voss. Oppstigningen fra sør starter i Skaftedalen.» Og innleiinga seier det same: «Det er to gode utgangspunkt for denne turen, et på den skyggefulle nordsiden, og et som ligger solvendt mot sør.» Appens rute er nordruta frå Skiple; dette er sørruta. Skytjeset er registerført (Seter/støl, Voss, 60,62519/6,65564) — vegpunktet her ligg 260 m nord for registerpunktet, på 882 moh, som er kjelda sine «omtrent 890». Ruta her følgjer ryggformasjonen og flanken, ikkje det bratte dalsøkket: kjelda gjer valet avhengig av snøforhold, og ryggen er den linja som er skildra heile vegen til topps."
+        }
+      ]
     }
   },
   {
@@ -7540,7 +7652,114 @@
         "https://www.friflyt.no/topptur/tromso/turbeskrivelse-snoetindan",
         "https://ut.no/turforslag/116142/topptur-pa-ski-til-stor-snytindan-996-moh"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "alternates": [
+        {
+          "routeId": "gullesfjordbotn",
+          "routeName": "Østruta frå Gullesfjordbotn",
+          "routeDescriptionFull": "Frå Gullesfjordbotn camping på nordsida (høgre) av Vesterelva, over vatnet på 76 og vidare på andre sida, vestover over vatnet på 113 og opp den bratte traseen mot vatnet på 289, sørover langs den slake ryggen mot høgda 667 og opp på Vestbotntinden, ned til Øvre Storelvvatnet og over vatnet, og opp att inn på ruta frå Snytindhytta som rundar toppen på vestsida og går opp frå sør.",
+          "trailhead": {
+            "name": "Gullesfjordbotn camping",
+            "lat": 68.53232,
+            "lng": 15.72996,
+            "elevationM": 3.4,
+            "osmEvidence": "OSM way 330638854, tourism=camp_site, name=Gullesfjordbotn Camping. Kjelda fører han som eige startsted: «For østruta parkeres det på Gullesfjordbotn camping», og «Ta kontakt med alltid positiv eier av campingen». Gullesfjordbotn er alt eit kartfesta startsted i appen — Nonstinden går frå same staden. DTM1 les 3,4 moh."
+          },
+          "waypoints": [
+            {
+              "name": "nord for Vesterelva",
+              "lat": 68.5345,
+              "lng": 15.718,
+              "elevationM": 85.5
+            },
+            {
+              "name": "langs elva",
+              "lat": 68.537,
+              "lng": 15.703,
+              "elevationM": 91.27
+            },
+            {
+              "name": "ved vatnet på 76",
+              "lat": 68.5385,
+              "lng": 15.692,
+              "elevationM": 120.76
+            },
+            {
+              "name": "mellom vatna",
+              "lat": 68.54,
+              "lng": 15.682,
+              "elevationM": 166.94
+            },
+            {
+              "name": "ved vatnet på 113",
+              "lat": 68.5415,
+              "lng": 15.672,
+              "elevationM": 277.62
+            },
+            {
+              "name": "den bratte traseen",
+              "lat": 68.5405,
+              "lng": 15.663,
+              "elevationM": 292.63
+            },
+            {
+              "name": "opp mot vatnet på 289",
+              "lat": 68.5385,
+              "lng": 15.653,
+              "elevationM": 326.12
+            },
+            {
+              "name": "ved vatnet på 289",
+              "lat": 68.536,
+              "lng": 15.645,
+              "elevationM": 332.27
+            },
+            {
+              "name": "den slake ryggen",
+              "lat": 68.5335,
+              "lng": 15.64,
+              "elevationM": 440.39
+            },
+            {
+              "name": "høgda 667",
+              "lat": 68.531,
+              "lng": 15.638,
+              "elevationM": 668.98
+            },
+            {
+              "name": "Vestbotntinden",
+              "lat": 68.52815,
+              "lng": 15.63119,
+              "elevationM": 935.29
+            },
+            {
+              "name": "ned mot Øvre Storelvvatnet",
+              "lat": 68.533,
+              "lng": 15.627,
+              "elevationM": 766.8
+            },
+            {
+              "name": "Øvre Storelvvatnet",
+              "lat": 68.537,
+              "lng": 15.623,
+              "elevationM": 604.81
+            },
+            {
+              "name": "inn på ruta frå Snytindhytta",
+              "lat": 68.5405,
+              "lng": 15.619,
+              "elevationM": 651.71
+            },
+            {
+              "name": "vestsida av toppen",
+              "lat": 68.543,
+              "lng": 15.61,
+              "elevationM": 802.81
+            }
+          ],
+          "note": "Fri Flyt, «Turbeskrivelse Snøtindan», rute 2.7.2 Østruta: «Fra Gullesfjord Camping holder man høyresiden (nord) av Vesterelva og følger andre siden etter å ha krysset vann 76. Vann 113 krysses vestover og finn bratt trase (30-40 grader) opp mot vann 289 og deretter sørover langs slak rygg mot høyde 667. Når det gjelder videre rute mot Vestbotntinden så kan det dannes en toppskavel som kan være strevsom å passere på nordsiden så alternativt kan sydsiden av ryggen velges. Stegjern og alpinøks kan være påkrevet hvis det er mye skare. Området er opp mot 45 grader bratt så her må det være stabil sne. Bestig toppen fra vest … Nedkjøringen til Øvre Storelvvatnet er for det meste slakt men nedre del har et brattheng på 30-40 grader. Stak over vannet og start oppstigningen litt før enden av vannet. Det meste er under 30 grader og man kommer etterhvert inn på ruta fra Snytindhytta. Derfra runder man toppen på vestsiden og bestiger toppen fra sør opp en et toppheng på ca 30-40 grader.» Startsteda er dei to kjelda sjølv fører: «Egen parkeringsplass langs R85, rett på sørsiden av elveutløpet. For østruta parkeres det på Gullesfjordbotn camping.» Appens rute er den fyrste; dette er den andre. Kjelda sine tal for fjellet: KAST 3, toppunkt 996, 1250–1350 høgdemeter, 8–9 timar, januar–april, alpinøks og stegjern. Ruta går over Vestbotntinden (registerført, Lødingen, 68,52815/15,63119) og gjev tilbake 330 høgdemeter ned til Øvre Storelvvatnet før ho stig att — det er traversen kjelda skildrar, ikkje ein feil i linja. Kryssingane av vatna på 76, 113 og Øvre Storelvvatnet er sanksjonerte i kjelda sin eigen tekst. Vegpunktet «vestsida av toppen» (803 moh) er sett inn fordi kjelda seier ein rundar toppen på vestsida og går opp frå sør: utan det gjekk siste etappen rett på toppblokka i 45 grader."
+        }
+      ]
     }
   },
   {

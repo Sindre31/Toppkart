@@ -5411,6 +5411,160 @@ Twelve candidates were read in full and rejected:
   is signposted to Eidet, Vallasætra is up the Nupen road past the barrier, and
   Bree is where the shipped Storhornet already starts.
 
+## The index round
+
+Four more ways up peaks the app already carries — and the round that stopped
+guessing which page to read. 185 tours, **223 routes**, 35 tours with more
+than one line.
+
+| tour | new route | start | gain | km | steepest 30 m | primary for comparison |
+| --- | --- | --- | --- | --- | --- | --- |
+| Snøtindan | Østruta frå Gullesfjordbotn | Gullesfjordbotn camping, 3 | 1439 | 9.13 | 36.5° | 1548 m / 9.04 km / 33.8° |
+| Lønahorgi | Frå toppen av Horgaletten | toppstasjonen, 948 | 506 | 3.66 | 24.4° | 1307 m / 6.71 km / 28.9° |
+| Steindalsnosi | Sørsida frå Turtagrø | Turtagrø, 884 | 1172 | 7.83 | 28.4° | 764 m / 3.99 km / 30.3° |
+| Horndalsnuten | Sørruta frå Skaftedalen | Skaftedalen, 486 | 1007 | 5.76 | 27.7° | 1121 m / 5.93 km / 31.4° |
+
+It is four and not five, and the reason is the point of the round.
+
+### The corpus, indexed
+
+Five rounds have looked for second routes by reading the Fri Flyt page behind
+each shipped tour. That works while there are unread pages, and every round
+has ended by declaring the seam thin and then finding more the next time —
+which is the signature of a search with no index rather than a corpus with no
+routes.
+
+So this round built the index. `friflyt.no/topptur` lists 25 region pages, and
+each region page lists its route pages: **580 pages in all**. Every one was
+fetched. That turns "have we read everything?" from a judgement into a query.
+
+Against that index, four scans:
+
+1. **`multistart.py`** — the fact box's `Startsted:` / `Veibeskrivelse:` line
+   naming more than one start (`eller`, `A:`/`B:`, `alternativ`).
+2. **`altstart.py`** — prose anywhere on the page that sanctions starting
+   somewhere else («man kan også starte turen fra …», «Alternativt startsted
+   ved …»). This is the idiom Beisfjordtøtta's Narvik start is written in, and
+   no heading-based scan sees it.
+3. **`headscan.py`** — two or more ascent headings on a page belonging to one
+   of my tours, or an ascent heading naming a place («Opp frå X»).
+4. **`sanction.py`** — a line the page files under `NED` that the source
+   nonetheless says to climb («Før Sognefjellet opnar er det best å gå sørsida
+   opp frå Helgedalen»).
+
+Plus a full-text pass over all 580 pages for the name of every single-route
+tour in an ascent context, to catch a peak described from a neighbour's page.
+
+Everything the four scans found is in this round or was turned away below.
+**There is no fifth.** That is now a fact about the corpus rather than a
+report on how hard somebody looked, and the root README says so.
+
+### What the index found that five rounds of reading had missed
+
+- **Steindalsnosi's south side.** The page files it as `1.4 Ned sørsida`, a
+  descent — and then adds, in the when-line, «Før Sognefjellet opnar er det
+  best å gå sørsida opp frå Helgedalen». The Fanaråken page in the same book
+  says it outright: «Frå Turtagrø inn Helgedalen og opp langs Steindøla og
+  gjennom Steindalen (sjå skildring Steindalsnosi sørside).» Only a scan that
+  reads `NED` sections for ascent sanction finds this, and it is the best
+  route of the round: the shipped line starts at Gjuvvatnet on
+  Sognefjellsvegen, which is closed in winter, so until the road opens this is
+  the *only* way up. Turtagrø is already a mapped trailhead — Fanaråken starts
+  there — and the two lines share their first two waypoints up Helgedalen.
+- **Horndalsnuten from the south.** The fact box carries both starts in one
+  sentence and the intro explains the choice — «Det er to gode utgangspunkt
+  for denne turen, et på den skyggefulle nordsiden, og et som ligger solvendt
+  mot sør» — but the page has only one heading, `OPP (FRA NORD):`, with the
+  south route under a bare `(FRA SØR):`. A heading scan that requires the word
+  «Opp» walks past it.
+
+### A start you reach by lift
+
+Lønahorgi's fact box lists two starts with a time for each — «2 timer fra
+Horgaletten, 4 timer fra Høyland» — and the ascent text is unambiguous about
+which one people use: «De aller fleste besøkende velger å benytte seg av
+heissystemet. Øverst i Horgaletten-heisen, ved rundt 920 meters høyde, er det
+bare å feste feller under skiene.» The app shipped the other one.
+
+The first instinct was to reject it, because a trailhead in this collection is
+a place you drive to and park. That instinct is wrong on its own evidence:
+**Reinheim, Bjørnhollia and Trollheimshytta are already trailheads here**, and
+none of them has a road. The contract is that a start is a real, locatable
+place where the tour begins, not that a car can reach it. The top station of
+the Horgaletten tow is OSM way 30743181 and reads 948 moh; the guide says
+plainly that you get there by lift.
+
+`check_ground.py` then earned its keep. The first line took its own way up the
+ridge and the check reported that a mapped trail runs the whole way while the
+line strayed 286 m from it. That trail is OSM way 72667449, 184 points ending
+in the summit cairn — the «tydelige staker» the source describes. The corridor
+now follows it from Vådalseggi up, and between the lift and Vådalseggi it does
+not, because there is no mapped path there and the source says as much: there
+you just put the skins on and go.
+
+### A traverse that gives back a third of what it climbs
+
+Snøtindan's east route crosses the mountain rather than climbing one side of
+it: up from Gullesfjordbotn to Vestbotntinden at 935, **down 330 metres** to
+Øvre Storelvvatnet at 605, across the lake, and up again onto the route from
+Snytindhytta. The routed line gives back 446 m of 1439 gained.
+
+That is not a routing fault, and the tour's own shipped line settles it: from
+Løbergsbukta it gives back 565 m of 1548. This is a mountain you traverse.
+Both figures are in the guide.
+
+The three lake crossings — the lakes at 76 and 113 on the way in, and Øvre
+Storelvvatnet in the middle — are each sanctioned in the source's own words
+(«etter å ha krysset vann 76», «Vann 113 krysses vestover», «Stak over
+vannet»), so the corridor is pinned to their shores and `check_ground` reports
+0 m on water. The one edit the line needed was a waypoint on the west side of
+the summit at 803 moh: without it the last leg went straight at the summit
+block at 45 degrees, and the source says to round the top on the west and come
+up from the south.
+
+### What was turned away
+
+Everything the scans surfaced and this round did not take, with the reason:
+
+- **Møysalen frå Fiskefjord** (`9.1.2 Oppstigning fra Fiskefjord`). A real
+  second start with a titled section — and one sentence of route: «Ruta følger
+  mer eller mindre kommunegrensen mellom Sortland og Hadsel til rutene møtes
+  på ryggen over breen.» The Sortland–Hadsel boundary runs two kilometres
+  along Fiskfjordvatnet, a regulated reservoir the source never mentions, and
+  drawing eight kilometres of line around it on a KAST 3 peak would be my
+  geometry, not theirs. The nearest thing to a fifth route in the corpus, and
+  the reason there is no fifth.
+- **Istinden frå Tunebrua** and **Gullfjellstoppen frå Bontveit.** Both name a
+  start in the fact box and both then decline to describe a line: «Finn den
+  beste veien gjennom skogen og ta sikte på enten Vestre eller Søndre Istind»,
+  «gå enten den tradisjonelle ryggruten via Livarden/Austlirinden eller inn i
+  Brekkedalen». The previous round's rule stands — a start without a route is
+  not a route — and it has to apply to both or neither.
+- **Finnbufjellet frå Myrkdalen skisenter.** The fact box names it and the
+  ascent text says where it joins («Etter en times gange vil du møte på
+  alternativ tilkomst fra Myrkdalen skisenter»), which is the Beisfjordtøtta
+  shape — except Beisfjordtøtta named the connecting path and this names
+  nothing between the resort and the junction.
+- **Skårasalen frå Kvistadsætra**, **Melshornet frå Volda skisenter**,
+  **Skårene frå Hesjedalen**, **Okla**, **Midtitinden**, **Skarven**,
+  **Snøtinden (Andørja)**, **Eidskyrkja**, **Hornindalsrokken**, **Englafjell**
+  — a start named without a route, a second parking on the shipped road, or a
+  page whose numbered lines are all descents.
+- **Mjølvafjellet frå Vengedalen** and **Skogshornrenna**, again: a 45-degree
+  ridge with the skis on your back, and a 40-degree couloir.
+
+### ut.no has no public index
+
+The natural next corpus is ut.no, which the southern round used. It has no
+enumerable index available here: `sitemap.xml` returns a 500, the area and
+search listings render client-side, and the GraphQL API at
+`api.ut.no/v1/graphql` answers `search` and `tripsNear` with 403 without a
+client credential — so those are not routes to work around. What is left is
+one search per peak, which was done for the likeliest dozen and produced
+nothing: every ut.no ski trip found for a shipped peak starts where the app
+already starts. A future round wanting a fifth route starts there, with more
+patience, or with a guidebook.
+
 ## Network
 
 Everything is public and unauthenticated:

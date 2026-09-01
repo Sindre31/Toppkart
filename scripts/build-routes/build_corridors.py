@@ -178,6 +178,44 @@ ALTERNATES = {
                     "same nedre tilkomsten langs Nipeelva.",
         }
     ],
+    "steindalsnosi": [
+        {
+            "id": "helgedalen",
+            "name": "Sørsida frå Turtagrø gjennom Helgedalen og Steindalen",
+            "trailhead": (61.50457, 7.80159, "Turtagrø"),  # 884 m
+            "waypoints": [
+                (61.50420, 7.82947, "Helgedalen, dalbotnen"),      # 910 m
+                (61.50600, 7.86500, "indre Helgedalen"),           # 1026 m
+                (61.50800, 7.87500, "opp mot Steindøla"),          # 1202 m
+                (61.51034, 7.87990, "Steindøla"),                  # 1338 m
+                (61.51400, 7.88300, "vestsida av Steindøla"),      # 1434 m
+                (61.51800, 7.88700, "opp mot Steindalen"),         # 1520 m
+                (61.52200, 7.89000, "Steindalen"),                 # 1704 m
+                (61.52500, 7.89200, "inngangen til sørsida"),      # 1893 m
+                (61.52790, 7.89400, "vestkanten av topplatået"),   # 1931 m
+            ],
+            "note": "Fri Flyt, «Turbeskrivelse Steindalsnosi», rute 1.4 Ned sørsida "
+                    "via Steindalen og Helgedalen, med kjelda si eiga sanksjonering av "
+                    "å gå henne opp: «Når: Mars–midten av mai. (Før Sognefjellet opnar "
+                    "er det best å gå sørsida opp frå Helgedalen.)» Linja, lesen "
+                    "andre vegen: «Køyr vestover frå toppunktet, langs ryggen mot "
+                    "vesttoppen 1936. Når du er nede på 1900 moh og ryggen smalnar, "
+                    "står du ved inngangen til sørsida. Herfrå følgjer du lågaste "
+                    "punktet sørover til Steindøla og vidare på vestsida av denne ned "
+                    "i Helgedalsbotnen. Om det ligg snø ut Helgedalen, stakar du "
+                    "tilbake til Turtagrø ut Helgedalen.» Fanaråken-sida i same boka "
+                    "seier det same rett fram: «Frå Turtagrø inn Helgedalen og opp "
+                    "langs Steindøla og gjennom Steindalen (sjå skildring "
+                    "Steindalsnosi sørside).» Kjelda sine tal for sørsida: 1025 "
+                    "høgdemeter nedkøyring, «32 grader jamt. Passasjar på 34–36 grader "
+                    "(1380–1260 moh langs Steindøla)», og faren «Steindøla opnar seg "
+                    "ein gong i mai». Dette er den einaste vegen opp før Sognefjellet "
+                    "opnar: appens normalrute startar ved Gjuvvatnet på "
+                    "Sognefjellsvegen, som er vinterstengd. Turtagrø er alt eit "
+                    "kartfesta startsted i appen — Fanaråken går derifrå — og dei to "
+                    "rutene deler dei to fyrste vegpunkta inn Helgedalen.",
+        }
+    ],
     "gullfjellstoppen": [
         {
             "id": "gullbotn",
