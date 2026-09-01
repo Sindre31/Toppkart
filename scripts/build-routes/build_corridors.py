@@ -108,6 +108,26 @@ ALTERNATES = {
             "trailhead": (61.99784, 9.80650, "Nedre Dørålseter"),  # 1043 m
             "waypoints": [],
             "note": "The northern approach, from the Dørålen side.",
+        },
+        {
+            "id": "bjornhollia",
+            "name": "Fra Bjørnhollia gjennom Langglupdalen",
+            "trailhead": (61.88408, 10.01196, "Bjørnhollia"),  # 913 m
+            "waypoints": [
+                (61.89500, 10.01500, "nordover langs dalen"),   # 931 m
+                (61.90600, 10.00200, "dalmunnen"),              # 914 m
+                (61.91300, 9.96500, "inn i Langglupdalen"),     # 1030 m
+                (61.91900, 9.93000, "opp dalen"),               # 1260 m
+                (61.92400, 9.89500, "øvre Langglupdalen"),      # 1272 m
+                (61.92000, 9.86500, "stiskillet"),              # 1764 m
+                (61.91700, 9.85800, "toppflanken"),             # 1969 m
+            ],
+            "note": "ut.no 1112154771: from the hut doorstep, the marked route "
+                    "up Langglupdalen towards Dørålseter, past the bridge over "
+                    "Langglupå and the Høgronden junction, then west from the "
+                    "Rondeslottet junction. 22.4 km, 1433 m, at least five hours "
+                    "up. The third start on this summit: Spranget south, Nedre "
+                    "Dørålseter north, Bjørnhollia east.",
         }
     ],
     "snohetta": [

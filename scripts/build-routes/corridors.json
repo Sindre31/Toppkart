@@ -1271,6 +1271,64 @@
     "note": "The northern approach, from the Dørålen side.",
     "implied_start_m": null,
     "start_vs_implied_m": null
+   },
+   {
+    "id": "bjornhollia",
+    "name": "Fra Bjørnhollia gjennom Langglupdalen",
+    "trailhead": {
+     "lat": 61.88408,
+     "lng": 10.01196,
+     "name": "Bjørnhollia",
+     "elevation_m": 912.81
+    },
+    "waypoints": [
+     {
+      "name": "nordover langs dalen",
+      "lat": 61.895,
+      "lng": 10.015,
+      "elevation_m": 930.66
+     },
+     {
+      "name": "dalmunnen",
+      "lat": 61.906,
+      "lng": 10.002,
+      "elevation_m": 913.85
+     },
+     {
+      "name": "inn i Langglupdalen",
+      "lat": 61.913,
+      "lng": 9.965,
+      "elevation_m": 1030.04
+     },
+     {
+      "name": "opp dalen",
+      "lat": 61.919,
+      "lng": 9.93,
+      "elevation_m": 1260.19
+     },
+     {
+      "name": "øvre Langglupdalen",
+      "lat": 61.924,
+      "lng": 9.895,
+      "elevation_m": 1271.52
+     },
+     {
+      "name": "stiskillet",
+      "lat": 61.92,
+      "lng": 9.865,
+      "elevation_m": 1763.84
+     },
+     {
+      "name": "toppflanken",
+      "lat": 61.917,
+      "lng": 9.858,
+      "elevation_m": 1968.54
+     }
+    ],
+    "source": "documented alternative route",
+    "note": "ut.no 1112154771, «Topptur til Rondeslottet (2178moh) fra Bjørnhollia»: «turen starter fra dørterskelen på hytta. Følg merket rute gjennom Lagglupdalen mot Dørålseter. I Langglupdalen passerer du brua over Langglupå og stiskillet til Høgronden. Ved stiskillet til Rondeslottet følger du merket rute vestover til toppen.» 22,4 km, 1433 høgdemeter, 8 timar, juni–september, VERY_TOUGH. Langglupdalen er registerført (Dal, Folldal). Tredje startstaden på toppen: Spranget i sør, Nedre Dørålseter i nord, Bjørnhollia i aust.",
+    "implied_start_m": null,
+    "start_vs_implied_m": null
    }
   ]
  },
@@ -1881,6 +1939,58 @@
     ],
     "source": "researched, verified (ok), no local audit",
     "notes": "Glitterbrean er en bre: sprekker og snøbroer er reelle, og turen bør gås med bresikring når snødekket er tynt. Toppen har bare tre slake sider — nord, nordøst, vest og nordvest faller 52–70° ned mot Grjotbrean og Glitterholet, og i dårlig sikt er det lett å dra for langt nord på det brede topplatået. Det er ingen brøytet veg inn: kommer du i mars–mai må du enten gå de 24 km fra Randsverk på ski eller forhåndsbestille beltebil hos Glitterheim."
+   },
+   {
+    "id": "spiterstulen",
+    "name": "Fra Spiterstulen over Skautkampan",
+    "description": "Fra Spiterstulen nordøst over Skautkampan, over Skauta og videre langs Steindalselve og ryggen østover til toppen",
+    "trailhead": {
+     "name": "Spiterstulen",
+     "lat": 61.62446,
+     "lng": 8.40477,
+     "elevation_m": 1103.0,
+     "fullName": "Spiterstulen"
+    },
+    "waypoints": [
+     {
+      "name": "Skautkampan",
+      "lat": 61.64516,
+      "lng": 8.44029,
+      "elevation_m": 1440.0
+     },
+     {
+      "name": "Skauta",
+      "lat": 61.63798,
+      "lng": 8.47458,
+      "elevation_m": 1477.0
+     },
+     {
+      "name": "Steindalselve",
+      "lat": 61.64372,
+      "lng": 8.48358,
+      "elevation_m": 1547.0
+     },
+     {
+      "name": "over 1680",
+      "lat": 61.647,
+      "lng": 8.505,
+      "elevation_m": 1683.0
+     },
+     {
+      "name": "opp mot ryggen",
+      "lat": 61.649,
+      "lng": 8.525,
+      "elevation_m": 2120.0
+     },
+     {
+      "name": "austryggen",
+      "lat": 61.65,
+      "lng": 8.54,
+      "elevation_m": 2335.0
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "ut.no 112630, «Topptur til Glittertinden fra Spiterstulen»: «Med startsted på Spiterstulen kan du gå nordøst over Skautkampan, over Skauta og videre langs Steindalselve og ryggen østover til toppen. Retur samme vei, eller ned til Glitterheim.» 19,0 km, 1378 høgdemeter, 9 timar, sesong juni–september, gradering TOUGH. Alle tre stadnamna er registerførte og ligg på linja: Skautkampan (Haug, 1440), Skauta (Elv, 1477) og Steindalselve (Bekk, 1547). 2451 − 1103 = 1348 mot ut.nos 1378. Faremoment frå kilden: «Tidvis overhengende toppskavl.» Appens normalrute går frå Veodalen på austsida, ei heilt anna side av fjellet, og krev bomvegen som opnar i midten av juni."
    }
   ]
  },
@@ -2702,7 +2812,7 @@
      }
     ],
     "source": "researched, verified (corrected), no local audit",
-    "notes": "Kneika frå Rellingsætra opp på Daurmålsfjellet er den bratte delen. Ryggen vidare er slak, men lang og utan ly, og breterrenget kring 1400 moh har sprekker seinvinters. Vending må avgjerast tidleg."
+    "notes": "Kneika frå Rellingsætra opp på Daurmålsfjellet er den bratte delen. Ryggen vidare er slak, men lang og utan ly, og sidene av han er ikkje slake: vest 40,9 grader i snitt frå varden, sørvest 36,2 og søraust 35,2, mot 9 grader nord og aust. Vending må avgjerast tidleg."
    }
   ]
  },
@@ -2995,6 +3105,52 @@
     ],
     "source": "researched, verified (ok), no local audit",
     "notes": "Eit par brattare punkt opp den siste ryggen, elles slakt. Køyrer ein rett vestover frå toppen i staden for å følgje ryggen, endar ein i tett skog."
+   },
+   {
+    "id": "marifjora",
+    "name": "Frå Marifjøra over Svolsete",
+    "description": "Frå kaia i Marifjøra på traktorveg/grusveg, bratt opp i skogen til Steinkveane og vidare til den nedlagde stølen Svolsete, og derfrå i fjellterreng til toppen",
+    "trailhead": {
+     "name": "Marifjøra",
+     "lat": 61.38142,
+     "lng": 7.30741,
+     "elevation_m": 1.0,
+     "fullName": "Marifjøra"
+    },
+    "waypoints": [
+     {
+      "name": "grusvegen",
+      "lat": 61.378,
+      "lng": 7.312,
+      "elevation_m": 107.0
+     },
+     {
+      "name": "etter 1,5 km",
+      "lat": 61.372,
+      "lng": 7.315,
+      "elevation_m": 346.0
+     },
+     {
+      "name": "Steinkveane",
+      "lat": 61.368,
+      "lng": 7.308,
+      "elevation_m": 555.0
+     },
+     {
+      "name": "Svolsete",
+      "lat": 61.35745,
+      "lng": 7.30467,
+      "elevation_m": 724.0
+     },
+     {
+      "name": "fjellterreng",
+      "lat": 61.35,
+      "lng": 7.312,
+      "elevation_m": 943.0
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "ut.no 118393, «Fottur til Molden frå Marifjøra»: «Stien startar på traktorveg/grusveg før den etter 1,5 km går bratt oppover i skogen til Steinkveane, der det er bord og benkar … Derifrå går stien i varierande skogsterreng til den nedlagde stølen Svolsete … Etter Svolsete er det fjellterreng med nokre bratte bakkar opp til toppen.» 12,5 km, 1106 høgdemeter, 5 timar, juni–oktober, VERY_TOUGH. Svolsete er registerført (Seter/støl, Luster, 61.35745/7.30467) og les 723,9 moh. Steinkveane finst ikkje i registeret; punktet er sett der linja passerer 555 moh, mellom den bratte skogen og Svolsete. 1120 − 1 = 1119 mot ut.nos 1106. Appens normalrute går frå Mollandsmarki på 501 moh, ei femtedel av stigninga."
    }
   ]
  },
@@ -3761,6 +3917,82 @@
     ],
     "source": "researched, verified (ok), no local audit",
     "notes": "Ut.no fører tre: ruta går i skredterreng med løsneområder over 30 grader og utløpsområder som ikke kan omgås; fra ca 1380 moh går den over bre i ca 500 m, «så sjekk med lokalkjente i forkant at det er nok snø på dette strekket»; og «toppflanken er stupbratt mot Ø, så hold god avstand her». I tillegg advarer beskrivelsen mot å skrå opp lia for tidlig på grunn av fonna på Gråhaugfjellet, og mot våte løssnøskred utover dagen på varme vårdager."
+   },
+   {
+    "id": "trollheimshytta",
+    "name": "Frå Trollheimshytta under Litj-Snota",
+    "description": "Frå Trollheimshytta etter merka sommarløype over bruene på Slettåa og Folda, forbi Bossvasshøgda og opp i botnen vest for henne, inn på vinterruta frå Gråhaugen og under Litj-Snota, over breen og opp på toppflanken",
+    "trailhead": {
+     "name": "Trollheimshytta",
+     "lat": 62.829,
+     "lng": 9.23982,
+     "elevation_m": 533.0,
+     "fullName": "Trollheimshytta"
+    },
+    "waypoints": [
+     {
+      "name": "bruene over Slettåa og Folda",
+      "lat": 62.832,
+      "lng": 9.23,
+      "elevation_m": 522.0
+     },
+     {
+      "name": "mot Bossvasshøgda",
+      "lat": 62.84,
+      "lng": 9.215,
+      "elevation_m": 638.0
+     },
+     {
+      "name": "Bossvasshøgda",
+      "lat": 62.84339,
+      "lng": 9.20069,
+      "elevation_m": 811.0
+     },
+     {
+      "name": "der sommarrutene deler seg",
+      "lat": 62.846,
+      "lng": 9.175,
+      "elevation_m": 788.0
+     },
+     {
+      "name": "opp mot botnen",
+      "lat": 62.852,
+      "lng": 9.14,
+      "elevation_m": 893.0
+     },
+     {
+      "name": "inn på vinterruta frå Gråhaugen",
+      "lat": 62.854,
+      "lng": 9.125,
+      "elevation_m": 1054.0
+     },
+     {
+      "name": "hylla under Litj-Snota",
+      "lat": 62.856,
+      "lng": 9.105,
+      "elevation_m": 1343.0
+     },
+     {
+      "name": "breen",
+      "lat": 62.852,
+      "lng": 9.096,
+      "elevation_m": 1426.0
+     },
+     {
+      "name": "opp av breen",
+      "lat": 62.851,
+      "lng": 9.094,
+      "elevation_m": 1460.0
+     },
+     {
+      "name": "toppflanken mot sørvest",
+      "lat": 62.8495,
+      "lng": 9.088,
+      "elevation_m": 1616.0
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "ut.no 1112155423, «Snota 1668 fra Trollheimshytta, Surnadal. Topptur, ski.», skriven av Håvard Engen og gjennomgått av Trondhjems Turistforening — same forfattar som appens Gråhaugen-rute. 11,5 km, 1249 høgdemeter, 4:30 opp, KAST-klasse 2, eksposisjon Ø. Kilden: «Følg merka sommerløype ut fra hytta og over bruer over Slettåa og Folda … forbi Bossvasshøgda … tar av til høyre fra denne i retning NV før du passerer 1000 moh … til du kommer inn på vinterruta fra Gråhaugen på ca 1070 moh.» Bossvasshøgda (Haug, 810,6) og Litj-Snota (Fjell, 1551,4) er registerførte. Punktet «breen» les SnøIsbre på DTM1, som er den same breen appens normalrute kryssar på 1515 moh. Åtvaringa er kildens eiga: «Ruta går i skredterreng, både løsneområder over 30 grader bratt og utløpsområder som det ikke er mulig å omgå», og «Toppflanken er stupbratt mot Ø.» Dei to siste punkta følgjer kildens eiga svingjing: «Når du er ferdig med breen på ca 1470 moh og kommer opp på toppflanken dreier ruta SV, S og til slutt S-SØ til toppunktet» — første forsøk gjekk rett på toppen frå nordaust og fekk eit steg på 42,7 grader."
    }
   ]
  },
@@ -8894,6 +9126,52 @@
     "source": "researched, verified (ok), no local audit",
     "notes": "Fri Flyt: KAST 3 – Komplekst. Alpinøks og stegjern. Nedkjøringa holder 20–25 grader med parti på 35; traversen på 800–900 er mest utsatt, med historikk for store skred. Storeflaska på nordsiden er vedvarende bratt med parti på 45 grader og en annen linje.",
     "avoidWater": true
+   },
+   {
+    "id": "rytterklofta",
+    "name": "Rytterkløfta frå Vasskaret",
+    "description": "Fra enden av veien i Vasskaret østover langs bred sti mot Mørkevatnet, og etter Strupen rett sørover opp Rytterkløfta og videre til høyde 1152 og toppen",
+    "trailhead": {
+     "name": "Vasskaret",
+     "lat": 68.89348,
+     "lng": 17.31953,
+     "elevation_m": 210.0,
+     "fullName": "Vasskaret"
+    },
+    "waypoints": [
+     {
+      "name": "stien austover",
+      "lat": 68.8925,
+      "lng": 17.335,
+      "elevation_m": 237.0
+     },
+     {
+      "name": "sør for Mørkevatnet",
+      "lat": 68.889,
+      "lng": 17.352,
+      "elevation_m": 310.0
+     },
+     {
+      "name": "opp Rytterkløfta",
+      "lat": 68.883,
+      "lng": 17.358,
+      "elevation_m": 718.0
+     },
+     {
+      "name": "900 moh",
+      "lat": 68.877,
+      "lng": 17.365,
+      "elevation_m": 926.0
+     },
+     {
+      "name": "høgde 1152",
+      "lat": 68.872,
+      "lng": 17.375,
+      "elevation_m": 1123.0
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyts 6.5.8 Rytterkløfta: «Start fra enden av veien i Vasskaret og gå østover langs bred sti mot Mørkevatnet. Når du har passert Strupen starter du oppstigningen rett sørover. … Kan være mye is første delen så stegjern og øks må tidlig frem men ta med skiene på sekken. Fortsett opp slakere terreng på ca 30-35 grader til du er på ca 900 moh. Det er mulig å komme opp på høyde 1152 … Hvis snøen er stabil også her kan du fortsette opp til topps.» Mørkevatnet er registerført (Tjern, Ibestad, 68.89037/17.35014) og les 299,0 moh mot kildens 301. Åtvaringa er kildens eiga: «Sørg for at det er stabile snøforhold når du går opp her siden dette er skredterreng og terrengfelle.» Normalruta går frå Vang på fjorden, på den andre sida av fjellet."
    }
   ]
  },

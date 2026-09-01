@@ -1337,6 +1337,7 @@ export const GUIDES: Record<string, TourGuide> = {
     descent: [
       "For det meste 20–25 grader hjem, med parti på 35, sier kilden — samme vei som opp, og sørflanka fra varden er den snilleste målingen med 20,5 i snitt. Traversen på 800–900 er stedet der nedturen krever samme fokus som oppturen.",
       "NE og E måler 30,7–31,1 grader i snitt med vindu på 59,6–66,0 rett under varden — Blåisen- og Langlia-linjene bor der. Storeflaska på nordsiden er vedvarende bratt med parti på 45 grader; Lilleflaska, Rytteran, Rytterrenna og Rytterkløfta er de andre variantene. Alt dette er andre turer enn denne.",
+      "Den andre ruta går inn frå Vasskaret i sør: 1170 høgdemeter på 6,78 km frå enden av traktorvegen, austover mot Mørkevatnet — registerets tjern les 299 moh der kilden skriv 301, og linja klipper 90 meter av isen på sørenden — og så rett sørover opp Rytterkløfta. Kilden er tydeleg på kva det kostar: «Kan være mye is første delen så stegjern og øks må tidlig frem men ta med skiene på sekken», og «Sørg for at det er stabile snøforhold når du går opp her siden dette er skredterreng og terrengfelle.» Over kløfta blir det slakare, 30 til 35 grader, til du er på 900 moh; det brattaste 30-metersvindauget på linja er sjølve sluttstøtet, 37,5 grader mellom 1251 og 1276. Normalruta frå Vang er 1305 høgdemeter på 5,53 km med brattaste steg 33,5.",
     ],
     avalanche: [
       {
@@ -3788,6 +3789,7 @@ export const GUIDES: Record<string, TourGuide> = {
     descent: [
       "Ned samme sporet — ut.no kaller det det beste valget i de fleste tilfeller, og legger til at faren for våte løssnøskred øker utover dagen på varme vårdager. Første 200 meter fra toppen peiler 320 grader, altså nordvest, ned til 1653 moh, og 500 meter ned 328: ruta går tilbake langs toppflanken før den faller austover ned breen. Parkeringa ligger 8,0 km unna, på peiling 13 grader.",
       "Det er verdt å vite hvorfor det første trekket går nordvest. Aust fra toppunktet måler 48,1 grader i snitt over 400 meter med et 57,9 graders vindu 130 til 190 meter ut — det er «toppflanken er stupbratt mot Ø» i tall. Sør og søraust måler 42,0 og 36,5 i snitt, med vindu på 71,4 og 71,0 grader bare 10 til 70 meter ut, og nordaust 42,0 med 64,2. Vest og nordvest, der ruta kommer opp og går ned, måler 14,8 og 9,4.",
+      "Den andre ruta kjem frå aust, frå Trollheimshytta: 1356 høgdemeter på 11,61 km, over bruene på Slettåa og Folda, forbi Bossvasshøgda på 811 moh og opp i botnen vest for henne. På 1054 moh kjem ho inn på den same vinterruta frå Gråhaugen som resten av dette kortet skildrar, og derfrå deler dei to hylla under Litj-Snota, breen og toppflanken. Kilden er den same forfattaren, og åtvaringa står uendra: ruta går i skredterreng, «både løsneområder over 30 grader bratt og utløpsområder som det ikke er mulig å omgå», og toppflanken er stupbratt mot aust. Linja frå Trollheimshytta gir frå seg 221 høgdemeter undervegs mot 95 frå Gråhaugen, og brattaste steget måler 28,5 grader mellom 1409 og 1435 moh.",
     ],
     avalanche: [
       {
@@ -4826,6 +4828,7 @@ export const GUIDES: Record<string, TourGuide> = {
     descent: [
       "Samme vei tilbake — over eggen, ned i Slottsbrue, opp igjen de hundre høydemeterne til Vinjeronden. Den gjenstigningen kommer sent på dagen og tar lengre tid enn den ser ut til; legg inn tida før du bestemmer deg for hvor lenge du blir på toppen.",
       "Vanligste feil: å slippe seg vestover fra eggen for å slippe unna gjenstigningen over Vinjeronden. Vestsida av eggen mellom Slottsbrue og toppen faller 33–38° i nesten tre hundre høydemeter, ned i Styggebotn og videre mot Rondvatnet. Det slakner ikke før under 1700 moh, og til da henger du i én sammenhengende bratt flanke under en egg. Det er ingen snarvei — hold eggen til du er tilbake i skaret.",
+      "Bjørnhollia er den tredje startstaden på Rondslottet og den einaste i aust: 1538 høgdemeter på 12,31 km frå hyttedøra, nordover langs dalen og inn i Langglupdalen mot Dørålseter, forbi brua over Langglupå og stiskillet til Høgronden, og vestover frå stiskillet på 1764 moh. ut.no gir henne 22,4 km tur/retur og minst fem timar opp. Ho startar lågast av dei tre — 913 moh mot Sprangets 1082 og Nedre Dørålseters 1043 — og gir frå seg 273 høgdemeter undervegs. Det brattaste 30-metersvindauget ligg difor ikkje i stigninga i det heile: 33,7 grader mellom 926 og 896 moh, i søkket ned mot dalmunnen den første kilometeren.",
     ],
     avalanche: [
       {
@@ -5082,6 +5085,7 @@ export const GUIDES: Record<string, TourGuide> = {
       "Ned samme vei: østryggen og breen ned til rundt 2010 moh, nordsida av Steinbudalen ned til Glitterheim, og så de sju kilometerne ut Veodalen. De siste sju er ikke nedkjøring. I juni og juli er Veodalen bar, så skiene bæres de sju kilometerne ut — regn med halvannen time til fots, eller tre kvarter om du har sykkel stående ved bommen.",
       "Vanligste feil: å dra for langt nord på det brede topplatået i dårlig sikt. Toppen har bare én slak side. Nord, nordøst, vest og nordvest faller 52 til 70 grader ned mot Grjotbrean og Glitterholet, og sør og sørvest — peilinger mellom 165 og 230 grader — faller 42 til 64 ned i Steinbudalen. Bare sektoren mellom 105 og 160 grader er slak, og det er den vegen du kom. Ta ut kursen på toppen. Kanten er dessuten skavlet: ut.no melder dokumenterte overhengende skavler mot nordvest, så kanten du ser er ikke kanten som bærer.",
       "Glitterbrean er en bre. Sprekker og snøbroer er reelle, og i juni og juli — den eneste perioden denne ruta er beskrevet for — er snøbroene på sitt tynneste. Turen hører hjemme i tau og bresele hele sesongen. Det er en annen vurdering enn skredvurderingen, og den gjøres før du går ut på breen, ikke når du står midt på den.",
+      "Den andre dokumenterte ruta kjem frå den andre sida av fjellet. Frå Spiterstulen er det 1390 høgdemeter på 10,24 km — tre kilometer kortare enn normalruta og 162 høgdemeter lengre — nordaust over Skautkampan på 1440 moh, over Skauta på 1477 og langs Steindalselve på 1547, alle tre registerførte og alle tre på linja. ut.no gir henne 19,0 km tur/retur, 1378 høgdemeter og ni timar, sesong juni–september. Brattaste steget måler 25,2 grader mellom 1755 og 1771 moh mot normalrutas 18,5, og det brattaste hundremetersbeltet 21,2 mellom 1900 og 2000. Faremomentet er det same frå begge sider, og kilden seier det med tre ord: «Tidvis overhengende toppskavl.»",
     ],
     avalanche: [
       {
@@ -5375,6 +5379,7 @@ export const GUIDES: Record<string, TourGuide> = {
     descent: [
       "Ned same ryggen, sørvestover. Ryggen er brei, og på stabile dagar kan ein òg køyre rett vestover frå toppen.",
       "Vanlegaste feil: å velje den vestlege linja utan å tenkje på kvar ho endar. Går du vestover i staden for å følgje ryggen ned, hamnar du i den tette skogen under 851 moh, og det er ein lang og lite triveleg måte å komme attende til bilen på.",
+      "Frå kaia i Marifjøra får du heile fjellet: 1131 høgdemeter på 5,28 km mot normalrutas 626 på 3,31 km — Molden frå fjorden i staden for frå Mollandsmarki på 501 moh. Kildens skildring er kort og treffer: traktorveg og grusveg, «etter 1,5 km går bratt oppover i skogen til Steinkveane», vidare til den nedlagde stølen Svolsete på 724 moh og så fjellterreng med nokre bratte bakkar til topps. Det brattaste steget ligg nett der, 36,3 grader mellom 108 og 140 moh, rett over vegen; høgare oppe måler det brattaste hundremetersbeltet 21,0 mellom 300 og 400. ut.no: 12,5 km, 1106 høgdemeter, fem timar, juni–oktober.",
     ],
     avalanche: [
       {
