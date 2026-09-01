@@ -258,13 +258,16 @@ content and data quality that has to be settled before the site is sold to anyon
   pipeline and what it verifies. What is still missing is ground truth: these lines show where a
   route goes, but nobody has skied them with a GPS. Surveyed GPX per route, served from Supabase
   Storage, is still the production plan.
-- **Thirty-one peaks of 185 have their alternative routes entered.** The data model takes any
-  number of routes per tour and the map renders a picker when there is more than one; 219 routes
-  now cover 185 tours, and Kjølen, Strandtinden and Rondslottet carry three lines each. The other
-  154 tours have exactly one route, and many of them have a well-known second way up that nobody
-  has researched. The gap is content, not capability — and it is narrowing one documented start at
-  a time; see the second-route rounds in `scripts/build-routes/README.md` for what counts as a
-  second route and what gets turned away.
+- **Thirty-five peaks of 185 have their alternative routes entered, and the Fri Flyt corpus is
+  now exhausted.** The data model takes any number of routes per tour and the map renders a picker
+  when there is more than one; 223 routes now cover 185 tours, and Kjølen, Strandtinden and
+  Rondslottet carry three lines each. The remaining 150 tours have exactly one route. That is no
+  longer a research backlog against the source this collection was built from: every one of Fri
+  Flyt's 580 published route pages has been indexed and read, and the four documented second
+  starts left in it went in with the round that indexed them. Further second routes have to come
+  from a different corpus — ut.no, the guidebooks, or a surveyed track. See the second-route
+  rounds in `scripts/build-routes/README.md` for what counts as a second route, what gets turned
+  away, and how the index was built.
 - **Three summit heights were settled against DTM1, and still disagree with the published
   figures.** Rørnestinden (1041 → **1030**), Rombakstøtta (1243 → **1231**) and Himmeltindan
   (962 → **956**) now carry Kartverket's 1 m terrain model, the same source as the other 21

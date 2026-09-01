@@ -2690,7 +2690,7 @@
  },
  "snotindan": {
   "season": "jan–apr",
-  "aspect": "Ø",
+  "aspect": "SØ",
   "grade": 4,
   "gradeReason": "KAST 3 – Komplekst hos Fri Flyt, alpinøks og stegjern, topphenget 30–40 grader og heile Løbergsdalen med utløpssoner på begge sider. Grad 4 — og ein lang dag: kilden gir 8–9 timar.",
   "roadClosedInWinter": false,
@@ -2709,7 +2709,10 @@
    "Fri Flyts stigning 1250–1350 for ein 996-topp er undulasjonen over skaret — kortet ber den ruta stigninga. KAST 3 – Komplekst med alpinøks og stegjern; topphenget måler 30–40 grader.",
    "Aspekt Ø fra route_metrics — kilden navngir ingen enkelt himmelretning for normalnedfarten; der ingenting er navngitt, bestemmer målingen.",
    "check_new_corridors: ingen amenity=parking, men veg (primary/secondary/service) på punktet — parkeringa er langs vegen slik kilden beskriver.",
-   "check_new_corridors: Løbergskaret → vatna gir tilbake 185 m — skaret er grunnen til at kilden gir 1250–1350 høydemeter for en 996-topp; linja måler 1429."
+   "check_new_corridors: Løbergskaret → vatna gir tilbake 185 m — skaret er grunnen til at kilden gir 1250–1350 høydemeter for en 996-topp; linja måler 1429.",
+   "check_ground: linja kryssa tjernet i Løbergsdalen (496 moh) og 360 m av vatnet på 497 vest for skaret; vegpunkt nord for tjernet (538,9) og på landet mellom vatna (580,4) legg linja der kilden legg den — «mellom vatna», på land.",
+   "Andre omruting: linja kryssa òg det øvre tjernet i Løbergsdalen (571 moh) og tjernet på 573 aust for skardet; punkt sør for det øvre tjernet (476,9) og nord for 573-tjernet (691,8) held linja på land heile vegen.",
+   "Tredje justering: nordsida av 573-tjernet tvinga linja over ein knaus og la 100 m ekstra stigning på turen; sørsida (591,8 moh) held land utan knausen."
   ],
   "notes": ""
  },
