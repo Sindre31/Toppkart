@@ -2556,7 +2556,10 @@
    "Fri Flyts rute krysser Forsnesvatn på isen. Både Forsnesvatnet (646 moh) og Isvatnet (820) er regulerte i terrengmodellen — Rombakstøtta-lærdommen fra #62/#74 — så linja her runder Forsnesvatnet på austsida, på land hele veien, og guiden sier hvorfor.",
    "Korridoren deler de fire første vegpunktene med Rombakstøttas reviderte linje (vannverksveien, Pumpvatnet, bekkedalen) — de er allerede audited geometri, og gjenbruket er ført her.",
    "check_new_corridors: ingen amenity=parking, men OSM har veg (service/tertiary/secondary) på punktet — parkeringa er langs vegen slik kilden beskriver.",
-   "check_ground: 182 m på Pumpvatnet i første løsning; rutet om på nordsida — 0 m på vann."
+   "check_ground: 182 m på Pumpvatnet i første løsning; rutet om på nordsida — 0 m på vann.",
+   "check_ground: linja krysset 182 m av Pumpvatnet (Innsjø, 325 moh — naturlig tross navnet). Et vegpunkt på nordsida (333,5 moh, skog) legger linja rundt vannet på land, samme side som vannverksveien og Rombakstøttas reviderte linje.",
+   "Andre omruting rundt Pumpvatnet: nordsidepunktet lot fortsatt linja klippe austlobben (90 m); punktet flyttet til nordaustenden (324,9 moh, skog) — rundt utløpet på land.",
+   "Tredje festing rundt Pumpvatnet: begge strandpunktene (nordsida 333,5 og nordaustenden 324,9) i rekkefølge etter skogtoppen — linja følger nordbredden rundt utløpet, som vannverksveien."
   ],
   "notes": ""
  },

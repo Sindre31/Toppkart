@@ -2104,7 +2104,90 @@
         "https://ws.geonorge.no/stedsnavn/v1/navn (Snønipa, Haugastøylen, Haugabreen, Klakegg)"
       ],
       "confidence": "medium",
-      "notes": "Fri Flyt: 1827 moh, 1500 høgdemeter via Haugabreen (1540 via Veitebergsdalen), 5–10 timar, E1/E2 Utfordrande, sesong februar–mai."
+      "notes": "Fri Flyt: 1827 moh, 1500 høgdemeter via Haugabreen (1540 via Veitebergsdalen), 5–10 timar, E1/E2 Utfordrande, sesong februar–mai.",
+      "alternates": [
+        {
+          "routeId": "veitebergsdalen",
+          "routeName": "Opp via Veitebergsdalen over Sollirinden",
+          "routeDescriptionFull": "Frå skogsvegen opp Veitebergsdalen til vegenden, skrått opp skogen mot moreneryggen Sollirinden, opp ryggen til Sollibotnen, nordaust mot brevatnet og opp første del av brefallet, kryssande opp det bratte brefallet til breplatået, og flatt innover breen aust for høgda 1687 moh og vindgryta rundt denne til topps.",
+          "trailhead": {
+            "name": "Skogsvegen opp Veitebergsdalen",
+            "lat": 61.61944,
+            "lng": 6.65087,
+            "elevationM": 290.21,
+            "osmEvidence": "OSM way 183125876, highway=service, den einaste kartlagde vegen som går inn i Veitebergsdalen; noden ligg 60 m inn frå avkøyrsla og DTM1 les 290,2 moh, som er akkurat Fri Flyts «Starthøgde: 290 moh.»"
+          },
+          "waypoints": [
+            {
+              "name": "skogsvegen ved 405",
+              "lat": 61.62281,
+              "lng": 6.63758,
+              "elevationM": 405.15
+            },
+            {
+              "name": "vegenden i Veitebergsdalen",
+              "lat": 61.6358,
+              "lng": 6.63618,
+              "elevationM": 520.57
+            },
+            {
+              "name": "opp på Sollirinden",
+              "lat": 61.64,
+              "lng": 6.6445,
+              "elevationM": 687.39
+            },
+            {
+              "name": "Sollibotnen",
+              "lat": 61.6426,
+              "lng": 6.65029,
+              "elevationM": 893.79
+            },
+            {
+              "name": "sør for brevatnet",
+              "lat": 61.6475,
+              "lng": 6.666,
+              "elevationM": 1117.07
+            },
+            {
+              "name": "aust for brevatnet",
+              "lat": 61.6485,
+              "lng": 6.669,
+              "elevationM": 1147.44
+            },
+            {
+              "name": "nordaust for brevatnet",
+              "lat": 61.6525,
+              "lng": 6.672,
+              "elevationM": 1187.54
+            },
+            {
+              "name": "inn på brefallet",
+              "lat": 61.652,
+              "lng": 6.675,
+              "elevationM": 1181.0
+            },
+            {
+              "name": "opp det bratte brefallet",
+              "lat": 61.658,
+              "lng": 6.678,
+              "elevationM": 1488.0
+            },
+            {
+              "name": "breplatået",
+              "lat": 61.662,
+              "lng": 6.682,
+              "elevationM": 1556.0
+            },
+            {
+              "name": "aust for høgda 1687",
+              "lat": 61.667,
+              "lng": 6.694,
+              "elevationM": 1633.0
+            }
+          ],
+          "note": "Fri Flyt, «Turbeskrivelse Snønipa», rute 4.8.2 OPP VIA VEITEBERGSDALEN (UTFORDRANDE, E2, V): «Du følgjer skogsvegen opp Veitebergsdalen til endes. Her skrår du deg opp skogen, og siktar deg inn mot den markerte moreneryggen kalla Sollirinden som går opp mot Sollibotnen. Det tryggaste rutevalet er å gå opp morene-ryggen. I Sollibotnen svingar du nordaust mot brevatnet og fortset opp første del av brefallet. Du dreiar gradvis nordover i det flate partiet, og kryssar deg opp det bratte brefallet til du kjem opp på breplatået. Du går vidare flatt innover breen og passerer aust for høgda 1687 moh. og vindgryta rundt denne, som lokalt blir kalla Djevelens dansesal. Hald fram nordover til toppen.» Tilkomsten er eit eige startsted i same boka: «Om du vil gå turen opp via Veitebergsdalen startar du turen på Veiteberg. Nokre hundre meter etter at du har passert brua over Veitebergselva, kjem du til ein skogsveg som går opp i Veitebergsdalen. Her er det mogleg å finne parkering.» Kjelda fører 1540 høgdemeter, starthøgde 290 moh, 5–10 timar, sesong februar–mai, himmelretning sør og vest, brattaste punkt 30–35 grader (700–860 moh) med eit kort parti på 35–40 grader øvst på moreneryggen og 30–34 grader (1260–1500 moh), utstyr breutstyr. Appens normalrute går opp Haugadalen og Haugabreen frå Høyseth i Stardalen, på den andre sida av fjellet. Brevatnet på 1103 moh ligg i linja si retning — kjelda sanksjonerer ikkje ei kryssing, så korridoren har eit vegpunkt aust for vatnet og går utanom det. Fyrste løysinga gjekk 541 m over brevatnet, opptil 119 m frå den kartlagde stranda: eit einskilt vegpunkt aust for vatnet held ikkje, for Dijkstra skjer hjørnet på den 1,4 km lange etappen frå Sollibotnen. Tre punkt langs sør- og austbreidda (1117, 1147 og 1188 moh) legg linja rundt vatnet på land; eit fjerde på 1110 midt på austbreidda vart teke ut att, fordi det kosta 37 høgdemeter tilbake utan å flytte linja."
+        }
+      ]
     }
   },
   {
@@ -6882,7 +6965,102 @@
         "https://www.tiltoppsinord.no/beisfjordtotta-1448-moh/",
         "https://www.narvikfjellet.no/en/guidet-topptur-narvikfjellet"
       ],
-      "confidence": "medium"
+      "confidence": "medium",
+      "alternates": [
+        {
+          "routeId": "narvik",
+          "routeName": "Frå Narvik gjennom Tøttadalen",
+          "routeDescriptionFull": "Frå parkeringa ved minikraftverket i Taraldsvikfossen nordaust for skiheisene i Narvikfjellet, langs den merkte turstien inn i Tøttadalen til Pumpvatnet, og derfrå som normalruta: bekkedalen mot Forsnesvatnet, austsida av vatnet på land, opp mot skaret mellom Moskočohkka og Tøtta, og ryggen sørover til toppen.",
+          "trailhead": {
+            "name": "Taraldsvikfossen",
+            "lat": 68.4403,
+            "lng": 17.46931,
+            "elevationM": 205.41,
+            "osmEvidence": "OSM way 106956043, amenity=parking, name=Taraldsvikfossen, hiking=yes, ski=yes, fee=no. Minikraftverket kjelda peikar på er OSM node 6567818391 (power=generator, hydro, 1,5 MW) 25 m unna, og skiheisene (Byheisen, Puddertransporten, Nordlysheisen) ligg 0,9–1,7 km sørvest — «nordøst for skiheisene» stemmer. DTM1 les 205,4 moh."
+          },
+          "waypoints": [
+            {
+              "name": "stien opp i Tøttadalen",
+              "lat": 68.4441,
+              "lng": 17.47518,
+              "elevationM": 252.33
+            },
+            {
+              "name": "Tøttadalen",
+              "lat": 68.44808,
+              "lng": 17.48412,
+              "elevationM": 264.34
+            },
+            {
+              "name": "vidare inn dalen",
+              "lat": 68.44713,
+              "lng": 17.5014,
+              "elevationM": 305.66
+            },
+            {
+              "name": "der stien når Pumpvatnet",
+              "lat": 68.44379,
+              "lng": 17.52957,
+              "elevationM": 331.14
+            },
+            {
+              "name": "nordaustenden av Pumpvatnet",
+              "lat": 68.4428,
+              "lng": 17.532,
+              "elevationM": 324.9
+            },
+            {
+              "name": "sørøstenden av Pumpvatnet",
+              "lat": 68.44175,
+              "lng": 17.53073,
+              "elevationM": 329.0
+            },
+            {
+              "name": "bekkedalen mot Forsnesvatnet",
+              "lat": 68.4365,
+              "lng": 17.543,
+              "elevationM": 449.0
+            },
+            {
+              "name": "nordenden av Forsnesvatnet",
+              "lat": 68.43,
+              "lng": 17.5435,
+              "elevationM": 655.0
+            },
+            {
+              "name": "austsida av Forsnesvatnet",
+              "lat": 68.4265,
+              "lng": 17.553,
+              "elevationM": 858.0
+            },
+            {
+              "name": "opp mot skaret",
+              "lat": 68.4225,
+              "lng": 17.556,
+              "elevationM": 1135.0
+            },
+            {
+              "name": "skaret",
+              "lat": 68.413,
+              "lng": 17.569,
+              "elevationM": 1257.0
+            },
+            {
+              "name": "ryggen sør for skaret",
+              "lat": 68.4095,
+              "lng": 17.56604,
+              "elevationM": 1317.07
+            },
+            {
+              "name": "toppryggen",
+              "lat": 68.40717,
+              "lng": 17.5714,
+              "elevationM": 1418.14
+            }
+          ],
+          "note": "Fri Flyt, «Turbeskrivelse Beisfjordtøtta»: «Turbeskrivelsene tar utgangspunkt i Djupvik som startpunkt, men man kan også starte turen fra Narvik og følge den populære turstien som leder inn i Tøttdalen fra minikraftverket nordøst for skiheisene. Stien fører fram til Pumpvatn. Herfra kan du følge turbeskrivelsen videre mot Beirfjordtøtta.» Stien er kartlagd heile vegen: OSM way 103977371 → 103977458 → 1095555870 → 1095555869 → 1095555880 → 1095555886 → 1095555858 → 1095555883 → 1095555881 → 1095555888 → 1095555867 → 769899824 → 1095555865 → 1095555864 → 1095555890 → 1095555891 → 1095555889, 3,8 km frå parkeringa til nordaustenden av Pumpvatnet. Frå Pumpvatnet fell ruta saman med normalruta frå Djupvik, som kjelda seier ho skal. Startsteda er 3,7 km og 145 høgdemeter frå kvarandre: Djupvik ligg på 60 moh ved fjorden, Taraldsvikfossen på 205 moh i byen. Boka fører KAST 2 – Utfordrende, 1350 høgdemeter, 6,5 timar, sesong februar–juni, «Isøks og stegjern kan også behøves om det er harde snøforhold». Forsnesvatnet og Isvatnet er regulerte — linja held land, som på normalruta. Dei to andre oppstigningane i boka, 1.2.2 og 1.2.3, står ikkje her: begge opnar med «Start turen på samme måte som 1.2.1», altså same startsted. Dei to siste vegpunkta — ryggen sør for skaret (1317 moh) og toppryggen (1418 moh) — står berre på denne ruta. Routeren løyste ikkje siste etappen frå skaret til varden på denne korridoren sitt rutenett (bboksen er 4,3 km breiare enn normalruta sin, så cellene ligg annleis og toppblokka kom over 45-gradersgrensa), og dei to punkta er lesne av normalruta si eiga linje mellom dei same to endane, ikkje gjetta. Fyrste løysinga klipte 90 m av Pumpvatnet (325 moh) i nordaustre hjørnet. Vegpunktet normalruta har der — nordaustenden på 68,4428/17,532, 324,9 moh — er sett inn, og linja går rundt utløpet på land slik normalruta gjer."
+        }
+      ]
     }
   },
   {
@@ -6945,7 +7123,54 @@
         "https://ut.no/turforslag/113196/topptur-pa-ski-til-spanstinden-1457-moh",
         "https://peakbook.org/no/tour/33782/Spanstind.html"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "alternates": [
+        {
+          "routeId": "lapphaugen",
+          "routeName": "Opp frå Lapphaugen turiststasjon",
+          "routeDescriptionFull": "Frå parkeringa ved Lapphaugen turiststasjon forbi husvognene og opp gjennom skogen ved toppen av campingen, skrått mot høgre til over tregrensa, opp og litt til venstre på fleire bratte bakker til platået under toppen, og opp snøfeltet ovanfor platået inn på normalruta og toppen.",
+          "trailhead": {
+            "name": "Lapphaugen turiststasjon",
+            "lat": 68.67888,
+            "lng": 17.91413,
+            "elevationM": 349.67,
+            "osmEvidence": "OSM node 805837077, amenity=parking, name=Lapphaugen, hiking=yes, ski=yes, rett ved OSM way 164080669 «Lapphaugen Turiststasjon» (tourism=camp_site) og node 4211018689 (tourism=caravan_site) — husvognene rutebeskrivinga går forbi. DTM1 les 349,7 moh."
+          },
+          "waypoints": [
+            {
+              "name": "over campingen",
+              "lat": 68.682,
+              "lng": 17.906,
+              "elevationM": 382.56
+            },
+            {
+              "name": "opp gjennom skogen",
+              "lat": 68.685,
+              "lng": 17.896,
+              "elevationM": 524.69
+            },
+            {
+              "name": "over tregrensa",
+              "lat": 68.688,
+              "lng": 17.886,
+              "elevationM": 851.55
+            },
+            {
+              "name": "dei bratte bakkane",
+              "lat": 68.69,
+              "lng": 17.876,
+              "elevationM": 1003.88
+            },
+            {
+              "name": "platået under toppen",
+              "lat": 68.693,
+              "lng": 17.862,
+              "elevationM": 1159.24
+            }
+          ],
+          "note": "Fri Flyt, «Turbeskrivelse Spanstinden (Rungugáisá)», rute 6.8.2: «Gå forbi husvognene på campingen og opp gjennom skogen ved toppen av campingen. Området der det flatere terrenget over campingen går over til brattere bakker er utsatt for skred, så vær forsiktig her. Etter hvert går du litt på skrå til høyre til du kommer over tregrensen. Fra området over tregrensen kan du gå opp og litt til venstre på flere bratte bakker. Snart kommer du opp til et platå under toppen. Gå opp snøfeltet ovenfor platået for å komme til 6.8.1, og toppen.» Vanskegrad «Middels vanskelig», mot «Enkel» på 6.8.1. Startsteda er dei to boka sjølv fører opp: «A: Bil langs E6 nordover fra Narvik. Parker der veien når sitt høyeste punkt, inntil Bukkemyrvatnet. B: Start som i A, men fortsett noen kilometer og parker ved Lapphaugen turiststasjon.» Appens normalrute er A; dette er B. Dei ligg 3,4 km frå kvarandre, og Lapphaugen er 74 høgdemeter lågare enn Bukkemyrvatnet, så ruta herifrå er lengre og brattare enn normalruta."
+        }
+      ]
     }
   },
   {

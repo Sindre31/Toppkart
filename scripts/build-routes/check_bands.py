@@ -2,8 +2,15 @@
 
 `check_guides.py` asks whether a number in the copy can be sourced at all. This
 asks a narrower and harder question: when the prose ties an angle to a *named
-height band*, does that band actually measure that angle on the line the app
+height band*, does that band actually measure that angle on a line the app
 draws today?
+
+«A line», not «the line»: a tour has one or more routes, and a multi-route guide
+gives its second route a paragraph with that route's own figures in it. A claim
+is therefore measured against every route of the tour and reported only when it
+matches none — and one that matched a route other than the first is listed
+separately at the end, because a second-route figure in an `intro` or a
+`caption` is a sentence written about the wrong line.
 
 The two are not the same check, and the difference is where re-routes hide. A
 guide that said «20,6 grader mellom 1000 og 1100 moh» kept both its numbers
@@ -88,6 +95,9 @@ BAND_FIRST = re.compile(
 # why this check exists at all — so the unit is optional here, and the «beltet»
 # lead-in is what keeps the pattern from pairing two unrelated numbers.
 BAND_NOUN_LEAD = r"(?:beltet|belte|bandet|sjiktet|the\s+band)"
+# The same lead-in, widened to the compound nouns the corpus also uses for a
+# hundred-metre band, for the angle-first pattern below.
+BAND_NOUN_LEAD_WORDS = r"(?:hundremeter\w*|hundremetersband|belte\w*|bandet|sjikt\w*|spenn\w*|100[\s-]?m\w*|the\s+band|hundred[\s-]metre\s+band)"
 BAND_FIRST_NO_UNIT = re.compile(
     BAND_NOUN_LEAD
     + r"\s+(?:frå|fra|from)\s+"
@@ -99,6 +109,29 @@ BAND_FIRST_NO_UNIT = re.compile(
     + r"{0,40}?"
     + NUM
     + r"\s*(?:grader|degrees|°)",
+    re.I,
+)
+
+# «det brattaste hundremetersbeltet 21,2 mellom 1900 og 2000» — the angle first
+# and neither «grader» nor «moh» written anywhere. None of the three patterns
+# above reads it: `ANGLE_FIRST` needs the unit on the angle, `BAND_FIRST` needs
+# it on the range, and `BAND_FIRST_NO_UNIT` needs the range before the angle.
+# Glittertinden's second-route paragraph is written exactly this way, and its
+# claim went unread for four rounds. The band noun has to lead, and the angle
+# has to sit between it and the range, which is what keeps this from pairing two
+# unrelated numbers in a sentence that merely mentions a belt.
+BAND_NOUN_ANGLE_FIRST = re.compile(
+    BAND_NOUN_LEAD_WORDS
+    + GAP
+    + r"{0,25}?"
+    + NUM
+    + r"\s*"
+    + GAP
+    + r"{0,10}?(?:mellom|between|frå|fra|from)\s+"
+    + NUM
+    + r"\s*(?:og|and|til|to|–|-)\s*"
+    + NUM
+    + r"\s*(?:moh|m\.o\.h|metres|meters|m\b)?",
     re.I,
 )
 
@@ -199,6 +232,7 @@ def main():
     only = set(sys.argv[1:])
 
     problems = []
+    matched_alt = []
     claims = 0
     scanned = 0
 
@@ -209,15 +243,32 @@ def main():
         if not recs:
             continue
         scanned += 1
-        # The tour's own route is the first one: the figures on the card and in
-        # the prose describe that line, not an alternate.
-        r = recs[0]
-        pts = [tuple(p) for p in r["points"]]
-        zs = r["elevations"]
-        table = bands(pts, zs)
-        if not table:
+        # Every route of the tour, the first one first.
+        #
+        # This used to measure `recs[0]` alone, on the reasoning that the card's
+        # figures describe the tour's own line. That is true of the intro and the
+        # caption and false of the paragraph a multi-route guide gives its second
+        # route, and the corpus had already gone both ways on it: Molden's and
+        # Glittertinden's second-route paragraphs each quote the *alternate's*
+        # band, and both passed — Molden's because the primary has no vertices
+        # between 300 and 400 moh so the claim was skipped, Glittertinden's
+        # because its phrasing matched none of the patterns. Neither was checked;
+        # both happen to be right.
+        #
+        # So a claim is measured against every line the app draws for that tour
+        # and reported only when it matches none of them. That keeps what the
+        # check is for — a re-route silently falsifying a sentence, which now
+        # leaves the figure matching no route at all — and stops reporting a
+        # correct measurement of the second route as a defect.
+        tables = []
+        for r in recs:
+            t = bands([tuple(p) for p in r["points"]], r["elevations"])
+            if t:
+                tables.append((r["id"], t))
+        if not tables:
             continue
-        top = max(table, key=lambda b: b["angle"])
+        table = tables[0][1]
+        primary_top = max(table, key=lambda b: b["angle"])
 
         for lang, where, text in guide_texts(guide):
             for sentence in sentences(text):
@@ -245,6 +296,13 @@ def main():
                         continue
                     found.append((num(m.group(3)), lo, hi, m.start()))
                     claimed.add((lo, hi))
+                # And the band noun, angle, range order, with no unit on either.
+                for m in BAND_NOUN_ANGLE_FIRST.finditer(sentence):
+                    lo, hi = num(m.group(2)), num(m.group(3))
+                    if (lo, hi) in claimed:
+                        continue
+                    found.append((num(m.group(1)), lo, hi, m.start()))
+                    claimed.add((lo, hi))
                 for angle, lo, hi, at in found:
                     # A superlative belongs to the clause it stands in — or to
                     # the one introducing it. A guide that lists three rising
@@ -255,18 +313,42 @@ def main():
                     if hi - lo != 100 or lo % 100 or hi % 100:
                         continue
                     claims += 1
+                    # The primary decides the verdict when it agrees; any other
+                    # route of the tour can rescue a claim it does not.
                     measured = band_angle(table, int(lo), int(hi))
+                    matched_id = tables[0][0]
+                    if measured is None or abs(measured - angle) > ANGLE_TOL:
+                        for rid, t in tables[1:]:
+                            alt = band_angle(t, int(lo), int(hi))
+                            if alt is not None and abs(alt - angle) <= ANGLE_TOL:
+                                measured, matched_id = alt, rid
+                                break
                     if measured is None:
                         problems.append(
                             (slug, lang, where, f"claims {angle}° for {lo:.0f}–{hi:.0f} moh, "
-                             f"but the line has no vertices in that band", sentence)
+                             f"but no route of this tour has vertices in that band", sentence)
                         )
                         continue
                     if abs(measured - angle) > ANGLE_TOL:
                         problems.append(
                             (slug, lang, where, f"claims {angle}° for {lo:.0f}–{hi:.0f} moh; "
-                             f"the band measures {measured}°", sentence)
+                             f"the band measures {measured}° on {matched_id} and no other route "
+                             f"of this tour measures it either", sentence)
                         )
+                        continue
+                    # A claim measured against a second route is judged
+                    # against *that* route's steepest band, not the primary's —
+                    # a superlative is a claim about identity, and the identity
+                    # it claims is on the line the sentence is describing.
+                    if matched_id != tables[0][0]:
+                        matched_alt.append((slug, lang, where, lo, hi, angle, matched_id))
+                        top = next(
+                            max(t, key=lambda b: b["angle"])
+                            for rid, t in tables
+                            if rid == matched_id
+                        )
+                    else:
+                        top = primary_top
                     # A superlative belongs to the claim it stands next to, not
                     # to every claim in the sentence. Sunndalsnipa's guide lists
                     # three rising bands and calls the *last* one the steepest;
@@ -276,7 +358,7 @@ def main():
                     # frå 1100 til 1200, som er det brattaste beltet» is a
                     # correct sentence, and the superlative belongs to the
                     # second claim however the clauses fall out.
-                    elif (
+                    if (
                         STEEPEST_BAND_WORDS.search(near)
                         and not any(
                             (lo2, hi2) == (top["fromM"], top["toM"]) for _, lo2, hi2, _ in found
@@ -303,6 +385,14 @@ def main():
     for slug, lang, where, what, sentence in problems:
         print(f"{slug} [{lang}] {where}: {what}")
         print(f"    … {sentence[:160]}")
+    # Not a defect, but worth seeing: these are the claims that describe a second
+    # route rather than the tour's own line. If one of them turns up in an
+    # `intro` or a `caption` — fields that describe the tour, not a route — it is
+    # a sentence written about the wrong line and needs a human.
+    if matched_alt:
+        print("\nmeasured against a second route, not the tour's own line:")
+        for slug, lang, where, lo, hi, angle, rid in matched_alt:
+            print(f"  {slug} [{lang}] {where}: {angle}° for {lo:.0f}–{hi:.0f} moh — matches {rid}")
     print(
         f"\n{scanned} tours, {claims} band claims measured — "
         + (f"{len(problems)} disagree" if problems else "all agree with the line")

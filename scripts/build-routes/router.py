@@ -299,6 +299,44 @@ class Router:
                 return r0 + int(rr), c0 + int(cc)
         raise RuntimeError(f"no routable cell near {lat},{lng}")
 
+    def _reachable_near(self, row, col, pred, src, max_px=6):
+        """The nearest cell to (row, col) that the search actually reached.
+
+        `snap` only steps around cells that are *blocked* — nodata and sea. It
+        does not know about a cell that is fine in itself and has no passable
+        step into it, and on a summit with a wall on one side that is exactly
+        what the grid can produce: Beisfjordtøtta's cairn landed in a 1394 m
+        cell on the lip of the drop to Beisfjorden, with 1436 to 1447 m plateau
+        one cell away in every direction the route comes from — 42 to 53 m over
+        a 10 m cell, so every edge into it failed the 45-degree test and the
+        target was an island. The same coordinate on the Djupvik line's grid
+        falls on the 1447 m cell and routes; only the bounding box, and so the
+        cell alignment, differ.
+
+        This runs only after a leg has already failed, so no line that routes
+        today can move because of it. Among equally near candidates it prefers
+        the highest, because the endpoint that could not be reached is a summit
+        or a waypoint on the way to one, and `build()` re-pins the finish to the
+        true summit coordinate and re-reads the last 400 m off a 1 m tile
+        afterwards.
+        """
+        d = self.dem
+        best = None
+        for rad in range(1, max_px + 1):
+            for rr in range(max(0, row - rad), min(d.height, row + rad + 1)):
+                for cc in range(max(0, col - rad), min(d.width, col + rad + 1)):
+                    if max(abs(rr - row), abs(cc - col)) != rad:
+                        continue
+                    node = rr * d.width + cc
+                    if node != src and pred[node] == -9999:
+                        continue
+                    z = float(self.z[rr, cc])
+                    if best is None or z > best[0]:
+                        best = (z, node)
+            if best is not None:
+                return best[1]
+        return None
+
     def leg(self, a, b):
         """Cell path between two coordinates, inclusive of both ends."""
         if self._graph is None:
@@ -310,7 +348,9 @@ class Router:
         tgt = rb * d.width + cb
         _, pred = dijkstra(self._graph, indices=src, return_predecessors=True)
         if pred[tgt] == -9999 and tgt != src:
-            raise RuntimeError(f"no route {a} -> {b}")
+            tgt = self._reachable_near(rb, cb, pred, src)
+            if tgt is None:
+                raise RuntimeError(f"no route {a} -> {b}")
         path = [tgt]
         while path[-1] != src:
             nxt = pred[path[-1]]

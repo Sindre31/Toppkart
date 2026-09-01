@@ -5209,6 +5209,208 @@ After that the five primaries here report exactly what they reported before
 the round: 1228/13 325/18.5, 1283/12 337/34.9, 626/3308/23.3,
 1268/10 221/28.9 and 1305/5528/33.5.
 
+## The second-start round
+
+Five more ways up peaks the app already carries, and the first round where
+every one of the five is a start the source **names in its own facts line**
+rather than a line buried in a route description. 185 tours, **219 routes**,
+31 tours with more than one line. Bergen, Sunnfjord, Rosendal and two in
+Narvik — the widest spread of any round so far.
+
+| tour | new route | start | gain | km | steepest 30 m | primary for comparison |
+| --- | --- | --- | --- | --- | --- | --- |
+| Melderskin | Frå Myrdalsvatnet over Omnen | Myrdalsvatnet, 367 | 1101 | 5.10 | 33.8° | 1273 m / 4.90 km / 30.6° |
+| Gullfjellstoppen | Frå Gullbotn over Gullfjellhalsen | Gullbotn, 244 | 753 | 3.96 | 26.1° | 839 m / 7.80 km / 27.4° |
+| Snønipa | Opp via Veitebergsdalen | skogsvegen, 290 | 1673 | 9.27 | 30.3° | 1494 m / 8.45 km / 27.6° |
+| Beisfjordtøtta | Frå Narvik gjennom Tøttadalen | Taraldsvikfossen, 205 | 1351 | 9.03 | 27.0° | 1428 m / 7.19 km / 38.4° |
+| Spanstinden | Opp frå Lapphaugen turiststasjon | Lapphaugen, 350 | 1111 | 4.80 | 28.5° | 1047 m / 5.24 km / 25.0° |
+
+### The `Startsted:` line is a better index than the route numbering
+
+The ten-route round scanned Fri Flyt's *numbered routes* and declared the
+corpus exhausted; the southern round went to ut.no because of it. Both were
+reading the wrong field. Fri Flyt's fact box has a `Startsted:` line, and on a
+mountain with more than one start it lists them all:
+
+    Startsted: Osevann i Bjørndalen, Gullbotn ved Trengereid eller Bontveit
+    Veibeskrivelse: A: … inntil Bukkemyrvatnet. B: … parker ved Lapphaugen turiststasjon.
+
+Comparing that line against the trailhead each tour actually ships is one
+`grep` over the cached pages, and it produced about thirty leads where the two
+disagreed. Three of this round's five came from it directly (Melderskin,
+Gullfjellstoppen, Spanstinden), and the scan is cheap enough to re-run whenever
+the corpus grows.
+
+Melderskin is the sharpest case. The app climbs it from **Kletta, 154 moh**,
+which is ut.no's summer path. Fri Flyt has never described that line: its
+`Startsted:` is **Myrdalsvannet**, and its «Opp» paragraph goes up Nipelva to
+Omnen and along the ridge. Myrdalsvatnet was *already a mapped trailhead in the
+app* — Juklavasstinden starts there — so the two routes share their lower
+approach and the second one cost nothing but the reading.
+
+### Two of the five are the same route with a longer approach, and that is fine
+
+Beisfjordtøtta from Narvik and Spanstinden from Lapphaugen both rejoin the
+shipped line partway up. The bar does not ask for a different mountain; it asks
+for *a start the source designates separately* and *an explicit sanction that
+the line is climbed*. Both clear it in the source's own words — Fri Flyt writes
+«man kan også starte turen fra Narvik og følge den populære turstien … Herfra
+kan du følge turbeskrivelsen videre», and lists Lapphaugen as start **B** — and
+both are different enough on the ground to be worth drawing: the Narvik line is
+1.8 km longer with 4.8 km of forest instead of 300 m of steep hillside, and
+Lapphaugen is 74 m lower than Bukkemyrvatnet and gains 1111 m in 4.80 km rather
+than 1047 in 5.24.
+
+What was turned away, by contrast, is the case where the source's *second*
+description opens with «Start turen på samme måte som 1.2.1» — Beisfjordtøtta's
+own 1.2.2 and 1.2.3, Skjomtinden 1.11.2, Litletind 1.12.2. Same car park, same
+first hour: a variant, not a route.
+
+### A summit cell can be an island
+
+Beisfjordtøtta's alternate would not route at all. The last leg — the col at
+1257 to the cairn at 1448 — failed with «no route», on a corridor whose primary
+solves the identical stretch every time.
+
+The cause is the routing grid. `Router` sizes its DEM from the corridor's
+bounding box, and the Narvik start is 4.3 km further west, so the cells land
+differently. On that grid the summit coordinate falls in a cell reading
+**1394 m, on the lip of the drop to Beisfjorden**, with 1436 to 1447 m of
+plateau one cell away in every direction the route arrives from. Forty-two to
+fifty-three metres over a 10.4 m cell is 76 to 79 degrees, so every edge into
+the target failed the 45-degree test and the destination was unreachable —
+not blocked, not sea, just an island.
+
+`snap()` did not catch it because `snap()` only steps around cells that are
+*blocked*: nodata and sea. A cell that is fine in itself and has no passable
+step into it is a different failure, and it had never been hit before because
+no shipped corridor put a cliff-side summit on an unlucky alignment.
+
+`Router._reachable_near()` is the fix: after a leg has already failed, search
+outwards from the target for the nearest cell the Dijkstra pass actually
+reached, preferring the highest among equally near candidates. It runs **only
+on a leg that would otherwise raise**, so no line that routes today can move
+because of it — and Beisfjordtøtta's own primary re-solved to the metre
+(7188 m, +1428, −40, 38.4°) after the change, which is the check that matters.
+`build()` then re-pins the finish to the true summit coordinate and re-reads
+the last 400 m off a 1 m tile, as it already did.
+
+### `avoidWater` does not scale to a nine-kilometre line
+
+Snønipa's Veitebergsdalen line passes a glacier lake at 1103 moh that the
+source sends you *towards* and never says to cross, so the first attempt set
+`avoidWater: true`.
+
+It ran for twenty-five minutes on that one line without finishing, at zero CPU
+the whole time. `_off_water()` reads each leg every 2.5 m and asks Kartverket
+for the terrain class at every sample, up to eight passes. On a 9.3 km line
+that is on the order of twenty thousand HTTP round trips at about 0.7 s each —
+hours, not minutes. Every corridor that had needed the flag before was two to
+five kilometres, so the cost had never shown.
+
+The flag came off and the geometry did the work instead. `check_ground.py`
+caught the first line crossing **541 m of the lake, up to 119 m from the mapped
+shore**: a single waypoint east of the water is not enough, because Dijkstra
+cuts the corner on the 1.4 km leg up from Sollibotnen. Three points along the
+south and east shores — 1117, 1147 and 1188 moh, all read from DTM1 — put the
+line round it on land, and `check_ground` came back clean. A fourth at 1110 in
+the middle of the east shore was tried and taken out again: it cost 37 m of
+give-back without moving the line.
+
+That leaves a real limitation written down rather than hidden: **`avoidWater`
+is affordable up to about five kilometres of line, and past that the corridor
+has to route around the water itself.** The check that would have caught a
+mistake either way is `check_ground.py`, which is cheap because it runs once
+per finished line rather than eight times per leg.
+
+### `check_bands.py` was measuring every claim against the wrong line
+
+`check_bands.py` measured every «A grader mellom X og Y moh» claim against
+`routes[0]` — the tour's own line — and said so in its docstring. That is right
+for the intro and the caption, which describe the tour, and wrong for the
+paragraph a multi-route guide gives its *second* route. This round's first
+draft walked into it: six claims were reported as disagreeing when each was a
+correct measurement of the alternate, compared against the primary's bands.
+
+Chasing that down turned up two shipped sentences doing the same thing and
+never being read at all:
+
+- **Molden**, «det brattaste hundremetersbeltet 21,0 mellom 300 og 400» — the
+  primary starts at 501 moh and has no vertices in that band, so `band_angle`
+  returned `None`, and the claim was skipped rather than checked. 21.0 is
+  Marifjøra's figure, and correct.
+- **Glittertinden**, «det brattaste hundremetersbeltet 21,2 mellom 1900 og
+  2000» — written with neither «grader» on the angle nor «moh» on the range, a
+  shape none of the three patterns read. The primary measures 12.4 there. 21.2
+  is Spiterstulen's, and correct.
+
+Both sentences were right and neither was verified, for four rounds. So the
+check changed rather than the prose:
+
+1. A fourth pattern, `BAND_NOUN_ANGLE_FIRST`, reads the band-noun → angle →
+   range order with the unit optional on both. It reads 18 claims no other
+   pattern does, 16 of them written in earlier rounds and never measured.
+2. A claim is measured against **every route of the tour**, and reported only
+   when it matches none of them. That is still exactly the drift the check
+   exists for — a line that moves leaves its sentence matching no route at all
+   — and it stops reporting a correct second-route measurement as a defect.
+3. A claim that matched a second route is listed separately, and its
+   *superlative* is judged against that route's own table rather than the
+   primary's. A «brattaste beltet» claim about the alternate is now a checked
+   claim, not an unread one.
+
+The corpus goes from 722 measured claims to 750 — the new pattern and this
+round's five paragraphs between them — all agreeing, with fourteen now labelled
+as describing a second route. That label is the thing to watch: a
+second-route claim appearing in an `intro` or a `caption` would be a sentence
+written about the wrong line.
+
+### Re-routing moved three primaries again
+
+Same as the southern round, and by now expected: re-solving these five tours
+moved Melderskin (4897 → 5080 m), Gullfjellstoppen (7802 → 7799) and Snønipa
+(8450 → 8294), while Beisfjordtøtta and Spanstinden came back identical. The
+standing recovery procedure was followed — `git checkout -- lib/routes.ts &&
+python3 routes_from_ts.py`, then splice only the new routes in — and all five
+primaries report their committed distance, gain and steepest step:
+1273/4897/30.6, 839/7802/27.4, 1494/8450/27.6, 1428/7188/38.4 and
+1047/5242/25.0.
+
+### What was turned away
+
+Twelve candidates were read in full and rejected:
+
+- **Englafjell frå Musland** — Fri Flyt's «Opp» says «ta av mot Musland», which
+  is the shipped trailhead's own name.
+- **Hornindalsrokken** — one «Opp», from Langøylia, which is the shipped start.
+  The other two numbered lines are descents.
+- **Gullfjellstoppen frå Bontveit/Hausdalen** — a real third start, but the
+  source names three possible lines from it and describes none: «gå enten den
+  tradisjonelle ryggruten via Livarden/Austlirinden eller inn i Brekkedalen».
+  A start without a route is not a route.
+- **Gygrastolen, «Opp (alternativ 2)»** — starts from Gygrastølvannet, on the
+  shipped approach, and ends «i en luftig egg hvor tau og sikringer kreves».
+  Fails the start test and the no-rope rule.
+- **Skrott, «ALTERNATIV OPPSTIGNING»** — a shortcut from the ski hut on the
+  shipped line. Same start.
+- **Skogshorn, «ALTERNATIV OPPSTIGNING»** — Skogshornrenna, a 40-degree
+  couloir the source says «må kun gås under stabile snøforhold»; already turned
+  away in an earlier round and turned away again.
+- **Beisfjordtøtta 1.2.2 and 1.2.3**, **Skjomtinden 1.11.2**, **Litletind
+  1.12.2** — all four open by sending you up the shipped route. Variants.
+- **Mjølvafjellet 2.28.4, frå Vengedalen over Halsaskaret** — a genuinely
+  separate start with a full description, but it is «Komplekst», needs
+  «Stegjern og Isøks», gives back 70 m onto a knife-edge and has «45 graders
+  passasje på ryggen» with the skis on your back. At 45 degrees the router's
+  own limit is the honest answer: this is not a skinning line.
+- **Finnbufjellet frå Myrkdalen skisenter** — named as an «alternativ
+  tilkomst» you *meet* after an hour, not a start that is described.
+- **Varden/Småtindan, Vassdalstinden, Storhornet** — the failure mode the
+  southern round wrote up, again: a `Startsted:` whose *name* differs from the
+  shipped trailhead's but whose *coordinate* is the same place. Kabelvågmarka
+  is signposted to Eidet, Vallasætra is up the Nupen road past the barrier, and
+  Bree is where the shipped Storhornet already starts.
+
 ## Network
 
 Everything is public and unauthenticated:

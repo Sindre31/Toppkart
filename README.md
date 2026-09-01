@@ -258,12 +258,13 @@ content and data quality that has to be settled before the site is sold to anyon
   pipeline and what it verifies. What is still missing is ground truth: these lines show where a
   route goes, but nobody has skied them with a GPS. Surveyed GPX per route, served from Supabase
   Storage, is still the production plan.
-- **Nine peaks of ninety have their alternative routes entered.** The data model takes any number
-  of routes per tour and the map renders a picker when there is more than one, but only
-  Galdhøpiggen, Tromsdalstinden, Rondslottet, Snøhetta, Gaustatoppen, Slogen, Fanaråken, Bitihorn
-  and Høgevarde have a second line. The other eighty-one have exactly one route each, and many of
-  them have a well-known second way up that nobody has researched. The gap is content, not
-  capability.
+- **Thirty-one peaks of 185 have their alternative routes entered.** The data model takes any
+  number of routes per tour and the map renders a picker when there is more than one; 219 routes
+  now cover 185 tours, and Kjølen, Strandtinden and Rondslottet carry three lines each. The other
+  154 tours have exactly one route, and many of them have a well-known second way up that nobody
+  has researched. The gap is content, not capability — and it is narrowing one documented start at
+  a time; see the second-route rounds in `scripts/build-routes/README.md` for what counts as a
+  second route and what gets turned away.
 - **Three summit heights were settled against DTM1, and still disagree with the published
   figures.** Rørnestinden (1041 → **1030**), Rombakstøtta (1243 → **1231**) and Himmeltindan
   (962 → **956**) now carry Kartverket's 1 m terrain model, the same source as the other 21
