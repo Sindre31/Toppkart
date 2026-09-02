@@ -5583,9 +5583,9 @@ What ran, and what it said:
 | `check_tours.py` | 185 cards, 185 profiles, 185 seed rows | clean on the four numbers it compared — see below for the columns it did not |
 | `check_routes.py` | 223 routes, one DTM1 re-read each | clean: every line ends on its summit, every midpoint within 12 m |
 | `check_bands.py` | 756 band claims in 185 guides | all agree with a line the app draws |
-| `check_guides.py` | 185 guides, both languages | PENDING_GUIDES |
-| `check_ground.py` | PENDING_GROUND_SCOPE | PENDING_GROUND |
-| a denser DTM1 re-read | PENDING_DENSE_SCOPE | PENDING_DENSE |
+| `check_guides.py` | 185 guides, both languages | `guide_facts.json` rebuilt from scratch first (one DTM1 read per vertex, hours); result in the commit after this one |
+| `check_ground.py` | 48 routes in alphabetical order, plus the four the re-read below questioned | one trail finding that is the reservoir, one tarn the guide says it passes on land — both below |
+| a denser DTM1 re-read | every 8th vertex of every route, 5382 points | 5381 within 5 m of the stored elevation; one stretch of Fanaråken's Turtagrø line reads up to 27 m low — below |
 | `check_geometry.py` (new) | 223 routes, offline | 46 things to look at in 34 tours — every one of them below |
 
 ### Five cards whose seed row and English teaser were two corrections behind
@@ -5710,6 +5710,33 @@ guide already describes. And the elevation profile's end label is the card's
 summit while the line's last vertex is DTM1 rounded down, so thirteen profiles
 say 1219 over a line that ends at 1218 — a metre of rounding that
 `check_tours.py` allows on purpose.
+
+### Every eighth vertex, re-read
+
+`check_routes.py` re-reads one point per route from Kartverket. This round
+re-read every eighth vertex of every route — 5382 points — and compared the
+stored elevation and terrain class with the answer. **5381 are within 5 m**,
+and the terrain classes are what the lines claim: 3621 open ground, 1301
+forest, 173 bog, 69 glacier, 61 lake, none sea (the two sea lines above stand
+on the water between the sampled vertices). The one exception is
+`fanaraken/turtagro` between vertices 158 and 162, at 1308–1314 m stored
+against 1322–1341 m on the ground: five vertices 14–27 m low on a moraine
+bump the resample did not read, so that route's gain is understated by
+roughly 25 m. It does not touch the card — the primary is the Fannaråkhytta
+line — and the fix is `resample_dtm1.py` on that one route.
+
+The 61 lake samples fall on 30 routes, and 27 of them name the lake's height
+in the guide, as `check_ground` has required since the Trondheim round. The
+three that do not were measured vertex by vertex: Haukebøtinden's east side
+clips a tarn at 690 m for one vertex (45 m, under the 60 m floor the check
+reports at), Rondslottet's Bjørnhollia line stands 90 m on a tarn at 942 m in
+the forest above the hut, and **Snøtindan's Løbergsdalen line stands 91 m on a
+tarn at 641 m and 45 m on the tarn at 573 m** — under a guide that says «linja
+holder land forbi alle vatna der kilden krysser på isen» and names 573 as
+passed «på land, sør for det». `check_ground` run on the tour agrees about
+641 m and cannot see 573 m at the length it clips. Both are natural tarns on
+the shelf the guide already describes as «tjernshyllene»; the sentence is
+what needs to move, or the two vertices.
 
 ### One `check_ground` trail finding that is the reservoir, not the road
 
