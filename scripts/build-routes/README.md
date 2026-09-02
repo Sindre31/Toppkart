@@ -5772,6 +5772,12 @@ with the line it ships.
 | `skjomtinden/normalruta` | 383 m spur, 91 m loop | 7.64 km, +1487 | 7.17 km, +1386 | 1490 → 1390 |
 | `fiskefjordtindan/sorvestsiden` | 300 m spur | 7.56 km, +1076 | 7.27 km, +1044 | 1080 → 1040 |
 | `storronden/normalruta` | 3 vertices inside 30 m of the cairn | 10.26 km, +1145 | 10.23 km, +1108 | 1140 → 1110 |
+| `rana/normalruta` | east-face hook → 4 crest vertices | 8.61 km, +1602 | 8.59 km, +1559 | 1600 → 1560 |
+| `hamperokken/normalruta` | 1 vertex inside 30 m | 5.64 km, +1389 | 5.64 km, +1383 | 1390 |
+| `vassdalstinden/normalruta` | 2 vertices inside 30 m | 6.50 km, +1212 | 6.47 km, +1210 | 1210 |
+| `kolastinden/normalruta` | 3 vertices inside 30 m | 5.70 km, +1120 | 5.67 km, +1120 | 1120 |
+| `breitinden/normalruta` | 3 vertices inside 30 m | 4.24 km, +1049 | 4.21 km, +1049 | 1050 |
+| `forkledalstindan/sydsiden` | 3 vertices inside 30 m | 5.59 km, +1024 | 5.56 km, +1016 | 1020 |
 
 Two of the cuts changed what a guide said, not just its numbers.
 Helligtinden's «bratteste enkeltpartiet, 33,3 grader mellom 626 og 650 moh»
@@ -5793,11 +5799,40 @@ the summit is pinned, `build()` now drops whatever the smoothing left inside
 30 m of it (`SUMMIT_LEG_MIN_M`), so the last leg comes in straight from the
 side the line climbed. 164 of the 223 shipped lines carry such a leftover
 vertex; for 158 of them it sits a metre or two below the cairn and changes
-nothing. The other six are Storrønden's shape and are left for their own
-round, because each moves a steepest-step figure the guide quotes: Rana
-(−60 m inside 22 m), Hamperøkken (−37 m, stated in its guide as the
-«siste trinn over 45»), Vassdalstinden (−32), Kolåstinden (−31), Breitinden
-(−28) and Forkledalstindan (−21).
+nothing. The other six were Storrønden's shape — Rana (−60 m inside 22 m),
+Hamperøkken (−37 m), Vassdalstinden (−32), Kolåstinden (−31), Breitinden
+(−28) and Forkledalstindan (−21) — and were done the same way, with one
+exception that the 30 m rule could not have fixed.
+
+Five of them drop cleanly to a last leg of 30–43 m at 37–46° from the side
+the line already climbed, and DTM1 read along each new leg agrees it is a
+summit block, not an artefact: Hamperøkken 1364 → 1389 over 41 m from the
+south, Vassdalstinden 1258 → 1275 over 34 m, Kolåstinden 1402 → 1425 over
+36 m, Breitinden flat at 980 and then the block, Forkledalstindan 868 → 884.
+What changed in their guides is the *steepest 30 m* figure, and it went up
+on four of them — Hamperøkken 33,3 → 38,0, Vassdalstinden 36,2 → 41,3,
+Kolåstinden 38,0 → 43,1, Breitinden 39,4 → 45,9 — because the old window
+averaged a 6 m cliff with the flat ground beside it, and the new one is the
+block itself. Hamperøkken's «siste trinn lokalt over 45» was the +37 m over
+12 m artefact and now reads as the 38° summit step it is; Kolåstinden's
+guide already stated a 47° summit pitch from the flank probe. Breitinden's
+steepest hundred moved from 600–700 to the summit block's 900–1000 and the
+sentence says so.
+
+**Rana is the exception.** The cairn is a spire: DTM1 at 30 m out reads
+1520–1554 on every bearing but one, and 1586 on the south-west crest — the
+guide's own «kammen». The shipped line climbed the flank at 200°, hooked
+round onto the east face and finished +57 m over 18 m; dropping its last
+vertices would have left a 43 m leg at 57° up that face. So the hook after
+v275 (1552 m, 128 m out) was replaced by four vertices on the crest — 1572,
+1579, 1580, 1586 m at 120, 90, 60, 30 m on bearing 225° — and «toppkammen
+frå sørvest» was added to the corridor so a re-solve approaches the same
+way. The steepest 30 m on Rana is no longer the summit at all: 28,4° on the
+arête between 1210 and 1232, against the 38,0° the guide had placed on the
+crest, and the gain drops 1602 → 1559 (card 1600 → 1560). The English guide
+had also been saying the descent was «1595 metres in one run» against a
+Norwegian 1602 — one more figure that had drifted between the languages and
+now reads 1559 in both.
 
 ### What `check_ground` said about the whole catalogue
 

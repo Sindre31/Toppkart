@@ -345,9 +345,10 @@ content and data quality that has to be settled before the site is sold to anyon
   last 24 m before the cairn**, a notch DTM1 confirms point by point. The spurs and the notch
   are fixed in the same round by cutting the loops out of the shipped lines — seven cards moved
   by 10 to 100 m and two guides changed what they said — and `generate_routes.py` now drops the
-  leftover vertices that made the notch. Six more summits carry the same leftover (Rana,
-  Hamperøkken, Vassdalstinden, Kolåstinden, Breitinden, Forkledalstindan) and are listed for
-  their own round. The scribbles and the sea lines are re-solved with the off-water pass fixed;
+  leftover vertices that made the notch. The six summits with the same leftover — Rana,
+  Hamperøkken, Vassdalstinden, Kolåstinden, Breitinden, Forkledalstindan — got the same edit, and
+  Rana's line, which had hooked onto the east face of a spire, now follows the south-west crest
+  the guide calls «kammen» (card 1600 → 1560). The scribbles and the sea lines are re-solved with the off-water pass fixed;
   see «The shape round» in `scripts/build-routes/README.md` for all of it.
   What the same round did fix: **five `seed.sql` rows and five English teasers were two
   corrections behind their cards** — Glittertinden's said «1180 høydemeter» beside a

@@ -2733,10 +2733,17 @@
       "lat": 62.27523,
       "lng": 6.57453,
       "elevation_m": 1562.37
+     },
+     {
+      "name": "toppkammen frå sørvest",
+      "lat": 62.27496,
+      "lng": 6.57356,
+      "elevation_m": 1578.7
      }
     ],
     "source": "researched, verified (corrected), no local audit",
-    "notes": "Skredterreng inn mot Nordkopen og i sida opp frå kopen til egga. Store skavlar på austsida av den breie toppryggen — hald deg vest for kammen. Ekstra varsemd i vårsnø utover ettermiddagen."
+    "notes": "Skredterreng inn mot Nordkopen og i sida opp frå kopen til egga. Store skavlar på austsida av den breie toppryggen — hald deg vest for kammen. Ekstra varsemd i vårsnø utover ettermiddagen.",
+    "corridorNote": "«toppkammen frå sørvest» added in the shape round: the cairn is a spire whose only gentle side is the south-west crest (DTM1 1572/1579/1580/1586 m at 120/90/60/30 m out on bearing 225°, against 1520–1554 at 30 m on every other side); the shipped line hooked round onto the east face and finished +57 m over 18 m. The crest is the guide's own «kammen»."
    }
   ]
  },

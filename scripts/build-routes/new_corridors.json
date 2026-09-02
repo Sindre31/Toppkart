@@ -1415,6 +1415,12 @@
           "lat": 62.27523,
           "lng": 6.57453,
           "elevationM": 1562.37
+        },
+        {
+          "name": "toppkammen frå sørvest",
+          "lat": 62.27496,
+          "lng": 6.57356,
+          "elevationM": 1579
         }
       ],
       "season": "mars–mai",
