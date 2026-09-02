@@ -93,17 +93,17 @@ export const TOUR_TEASER_EN: Record<string, string> = {
   saudehornet:
     "1157 metres of ascent from the waterworks in Ørsta, and the crest holds about 32° on average for the last 170, steepest at 37.",
   glittertinden:
-    "12.6 km and 1180 m of climbing from Veodalen: 7 km of flat approach to Glitterheim, then a steady rise east of Glitterbrean.",
+    "13.3 km and 1228 m of climbing from Veodalen: 7 km of flat approach to Glitterheim, then a steady rise east of Glitterbrean.",
   besshoe:
-    "1305 m of climbing from Bessheim: three and a half kilometres along Bessvatnet before Grotådalen, then the gentle east ridge over Brue.",
+    "1328 m of climbing from Bessheim: three and a half kilometres along Bessvatnet before Grotådalen, then the gentle east ridge over Brue.",
   rasletinden:
-    "750 m and 6 km from Valdresflye: flat for the first 1.2 km, then a step to 1530 m and a gentle ridge from the east.",
+    "778 m and 7.2 km from Valdresflye: flat for the first 2.2 km, then a step to 1530 m and a gentle ridge from the east.",
   storronden:
     "1140 m of climbing from Spranget: six kilometres of approach to Rondvassbu, then 2.6 km of steady west ridge from the 1440 m junction.",
   skogshorn:
     "836 m of ascent from Trefta up the broad east ridge of Skogshorn; steepest measured step 28.5 degrees.",
   folarskardnuten:
-    "More than 12 km in from Haugastøl and 970 m of ascent, with one short 37-degree step up out of Folarskardet.",
+    "More than 13 km in from Haugastøl and 997 m of ascent, with one short 29-degree step up out of Folarskardet.",
   lonahorgi:
     "1300 m of ascent from Høyland via Bergsstølen and Breiming, the last 107 up the north ridge from point 1305.",
   vesoldo:
@@ -177,7 +177,7 @@ export const TOUR_TEASER_EN: Record<string, string> = {
   snota:
     "1270 m of climbing from Gråhaugen across Svartvatnet and around Litj-Snota to the highest mountain in northern Trollheimen.",
   vassfjellet:
-    "540 m of climbing from Markavollen past Vassfjellhytta — the closest ski tour to Trondheim, on a marked track the whole way.",
+    "560 m of climbing from Markavollen past Vassfjellhytta — the closest ski tour to Trondheim, on a marked track the whole way.",
   krakfjellet:
     "The highest point in Trondheim municipality: 470 m of climbing and ten kilometres from Håen past Kråklivollen and Rundtjønnin.",
   rensfjellet:

@@ -97,6 +97,7 @@ python3 resample_dtm1.py      # every vertex re-read from DTM1        (~15 min)
 python3 emit_ts.py            # routes.json         -> ../../lib/routes.ts
 python3 check_routes.py       # independent sanity pass over the geometry
 python3 check_tours.py        # the card figures: summit, vertical, coordinate, seed
+python3 check_geometry.py     # the shape of every line: scribbles, spurs, sea, notches — offline
 
 # only when re-running the research itself:
 python3 find_trailheads.py            # OSM roads/parking -> trailhead_candidates.json
@@ -5564,6 +5565,161 @@ one search per peak, which was done for the likeliest dozen and produced
 nothing: every ut.no ski trip found for a shipped peak starts where the app
 already starts. A future round wanting a fifth route starts there, with more
 patience, or with a guidebook.
+
+## The shape round: every summit, every line, in one sitting
+
+No new tour and no new route. 185 tours, 223 routes, and the first time every
+check the pipeline owns has been run over the whole catalogue in one container,
+with the answers written down side by side. Most of it came back clean. What
+did not falls into two kinds: figures that had drifted between copies of the
+same row, which are fixed, and shapes in the drawn lines that no existing check
+looks at, which are now checked and are listed here for the next round to work.
+
+What ran, and what it said:
+
+| check | scope | result |
+| --- | --- | --- |
+| `npm test`, `typecheck`, `lint` | the app | green, 68 tests |
+| `check_tours.py` | 185 cards, 185 profiles, 185 seed rows | clean on the four numbers it compared — see below for the columns it did not |
+| `check_routes.py` | 223 routes, one DTM1 re-read each | clean: every line ends on its summit, every midpoint within 12 m |
+| `check_bands.py` | 756 band claims in 185 guides | all agree with a line the app draws |
+| `check_guides.py` | 185 guides, both languages | PENDING_GUIDES |
+| `check_ground.py` | PENDING_GROUND_SCOPE | PENDING_GROUND |
+| a denser DTM1 re-read | PENDING_DENSE_SCOPE | PENDING_DENSE |
+| `check_geometry.py` (new) | 223 routes, offline | 46 things to look at in 34 tours — every one of them below |
+
+### Five cards whose seed row and English teaser were two corrections behind
+
+`check_tours.py` compared four columns of each `seed.sql` row — lat, lng,
+summit, vertical — and said the seed was the same rows again. It was not.
+Five teasers in the seed carried figures from before their tour's line was
+last corrected, and the English teaser in `lib/i18n/content.ts` for the same
+five had never been updated either. Production and the English site would
+have shown a reader one number on the card and another in the sentence under
+it:
+
+| tour | the seed and the English teaser said | the card says |
+| --- | --- | --- |
+| Vassfjellet | 540 høydemeter | 560 |
+| Glittertinden | 12,6 km og 1180 høydemeter | 13,3 km og 1228 |
+| Besshø | 1305 høydemeter | 1328 |
+| Rasletinden | 750 høydemeter og 6 km, flatt de første 1,2 km | 778, 7,2 km, 2,2 km |
+| Folarskardnuten | 12 km, 970 høgdemeter, eit 37-graders trinn | 13 km, 997, 29 grader |
+
+All five are the Jotunheimen, Hallingdal and Trondheim re-routes of earlier
+rounds, where `lib/tours.ts` was corrected by hand and the seed was not
+re-emitted. Both copies now match, and `check_tours.py` compares **every**
+column of the seed row, the multiset of numbers in the English teaser against
+the Norwegian one, and `tourmeta.json` against the app — which is how the
+next item was found.
+
+### Fifty `hasGuide` flags stale in `tourmeta.json`
+
+The pipeline's copy of the tour list said `hasGuide: false` for fifty tours
+the app ships guides for — every tour from the Grytøya round onward. Nothing
+the app renders reads that file, so no reader saw it, but `emit_new_tours.py`
+does, and the ten-route round already recorded what happens when a stale
+copy is re-emitted over a good one. `sync_tourmeta.py` fixes it and
+`check_tours.py` now fails when it drifts.
+
+### `check_geometry.py` — the shape of a line
+
+Every existing check compares numbers: a height against DTM1, a distance
+against the emitter, a claim against a band. A line can pass all of them and
+still be the wrong shape, because the numbers describe a line that goes
+somewhere silly in a way that leaves every number true. This round wrote the
+check that looks at the shape — self-crossings, tight loops, out-and-backs,
+vertices on the sea, notches — and ran it over all 223 lines. It needs no
+network and no raster, so it runs anywhere `routes_from_ts.py` does. What it
+found, none of it fixed in this round, all of it listed so the next one can:
+
+**Two lines that go in circles on a closed road.** `jakobstinden/sorostsiden`
+spends **924 m of its 8468 m** in five patches of tight loops, and
+`kongsviktinden/nordsiden` **964 m of 9116 m** in five more — both on the
+flat, forested, winter-closed road out of Kongsvikdalen that the two tours
+share for their first four kilometres, at 21–25 moh, with the line's first
+300 vertices covering 1987 m of path for 725 m of ground. Every vertex is on
+ground DTM1 agrees with (it reads `Skog` at 22–24 m throughout), the line
+just circles there. Both are `avoidWater` solves, and the second-route round
+already noted that an `avoidWater` solve of Kongsviktinden was not
+reproducible. The consequence is in the prose: the guides' «8,47 km» and
+«9,12 km», and Kongsviktinden's «1,1 grader over 4682 meter grunn» for the
+band under 100 moh, are a tenth too long. The fix that fits the evidence is
+the one Lønahorgi got in the index round — pin the corridor to the mapped
+road for the road section and re-solve — and then re-derive both guides.
+
+**Seven out-and-backs to a corridor waypoint.** Each of these lines walks
+out to a waypoint that sits 130–300 m off the line it would otherwise take,
+turns round and comes back along its own track:
+
+| route | out and back | ground | height | the waypoint at the tip |
+| --- | --- | --- | --- | --- |
+| `snotindan/gullesfjordbotn` | 295 m | 599 m | 862 → 934 → 864 | Vestbotntinden |
+| `reinspalen/geitryggen` | 244 m | 540 m | 654 → 681 → 653 | Geitryggen |
+| `ytstevasshornet/normalruta` | 199 m | 405 m | 955 → 969 → 958 | Vatna i Vassdalen, 976 |
+| `helligtinden/nordryggen` | 180 m | 401 m | 654 → 588 → 645 | Litletind-ryggen |
+| `skartinden/via-ytterholla` | 157 m | 360 m | 867 → 800 → 863 | skardet |
+| `skjomtinden/normalruta` | 134 m | 383 m | 1532 → 1444 → 1533 | renna mot ryggen nordvest for toppen |
+| `fiskefjordtindan/sorvestsiden` | 132 m | 300 m | 885 → 853 → 891 | ryggen austover |
+
+The first is the one that matters for the prose: the index round wrote
+Snøtindan's east route as going «over Vestbotntinden», and the geometry
+visits the top and retraces. The rest are a waypoint placed on a feature the
+router would rather pass beside — a col, a ridge shoulder, a lake — and each
+adds twice the spur to the distance and, on Skjomtinden and Helligtinden, a
+descent and re-climb the tour need not make. Moving the waypoint onto the
+line, or dropping it where the description does not need it, is a corridor
+edit and a re-solve per route.
+
+**Two lines on the sea.** `taraldsviktinden/austsida` leaves the boat
+harbour along the shore and puts three vertices on `Havflate` at −2 m over
+its first 500 m — about 135 m of line on the water in three places, between
+vertices 20 and 30. `nonstinden/ostsiden` crosses a tidal inlet north of
+Gullesfjordbotn with one vertex at −5 m, 90 m of line over the water at
+vertex 63. `check_ground.py` cannot see either: it asks about `Innsjø` and
+`InnsjøRegulert` and never about the sea. `generate_routes.py` is supposed to
+refuse a point at sea level; both lines are resampled after it validates.
+
+**A notch at Storrønden's cairn, and three summit steps to look at.** The
+line up Storrønden arrives along the ridge from the north-west, and its last
+three vertices go 2126 → **2097** → 2139 m over 24 m of ground: 14 m to a
+point 29 m lower, then 10 m and 42 m up to the cairn. DTM1 confirms the
+notch point by point, so the geometry is a real feature — the east face —
+and the line crosses it because the last vertex was snapped to the summit
+cell from the wrong side. The guide's «bratteste sammenhengende parti 25,7
+grader» is a 30 m window and smooths it away. Three other lines end with a
+single step no skinning line takes: Rana +57 m over 18 m to the cairn (the
+guide says 38,0 over 30 m), Vassdalstinden +32 m over 19 m at 1246 moh, and
+Hornindalsrokken +32 m over 30 m at 1476 moh. Hamperøkken's +37 m over 12 m
+is the «siste trinn lokalt over 45 grader» its guide already states.
+
+**Seven resample notches.** Single vertices 12–31 m above or below both
+neighbours within 60 m of ground — Langlitinden's Rytterkløfta at 1130,
+Snøtinden i Tjeldsund at 409, Snøtindan's Løbergsdalen at 800, Forkledalstindan
+at 702, Varden at 333 and 341, Kolåstinden at 1419. A boulder, a stream bank
+or a cornice edge read by a 1 m model at a point the coarse solve stepped
+over. They put a spike in the profile and a metre or two into the gain; they
+do not move the line.
+
+**Noted, not defects.** Fifteen tours carry an editorial grade two steps
+above what the steepest 100 m band measures — all of them Harstad-book
+KAST 4 peaks where the grade is exposure and a scramble, not angle — which is
+what `route_metrics.py` says a terrain grade is for. Ten alternates give back
+between 84 and 349 m on the way up; every one is a traverse or a col the
+guide already describes. And the elevation profile's end label is the card's
+summit while the line's last vertex is DTM1 rounded down, so thirteen profiles
+say 1219 over a line that ends at 1218 — a metre of rounding that
+`check_tours.py` allows on purpose.
+
+### One `check_ground` trail finding that is the reservoir, not the road
+
+`fastdalstinden/varto` came back saying the guide promises an «anleggsveg»
+and the line strays 771 m from the mapped one. The guide says the road is
+followed to the dam at 515 moh and no further, and the 771 m is measured on
+the far shore of Rottenvikvatnet, which the line rounds on land because the
+lake is a reservoir — the same guide's own «rundt magasinet på land». Below
+the dam the line is within 160 m of the road throughout. A false positive of
+the Vetefjellet kind, recorded here so it is not re-opened.
 
 ## Network
 
