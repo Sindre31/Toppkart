@@ -5586,7 +5586,7 @@ What ran, and what it said:
 | `check_guides.py` | 185 guides, both languages, on `guide_facts.json` rebuilt from scratch (one DTM1 read per vertex, three hours) | 0 unsourced numbers, 0 reassurance claims |
 | `check_ground.py` | all 223 routes, three hours against maps.mail.ru's Overpass | 9 findings: four trail claims never measured before, one that is the reservoir, four one-vertex tarn clips — below |
 | a denser DTM1 re-read | every 8th vertex of every route, 5382 points | 5381 within 5 m of the stored elevation; one stretch of Fanaråken's Turtagrø line reads up to 27 m low — below |
-| `check_geometry.py` (new) | 223 routes, offline | 46 things to look at in 34 tours — every one of them below |
+| `check_geometry.py` (new) | 223 routes, offline | 46 things to look at in 34 tours as found, every one of them below; 29 in 23 after the fixes, all of them mid-route resample notches and steps |
 
 ### Five cards whose seed row and English teaser were two corrections behind
 
@@ -5739,6 +5739,33 @@ passed «på land, sør for det». `check_ground` run on the tour agrees about
 641 m and cannot see 573 m at the length it clips. Both are natural tarns on
 the shelf the guide already describes as «tjernshyllene»; the sentence is
 what needs to move, or the two vertices.
+
+### The scribbles and the sea, re-solved
+
+The scribbles were not the solver's: a shortest path cannot loop. They were
+the off-water pass. `_lift_legs` read each leg every 2.5 m and appended a
+nudged vertex for *every* wet sample, so a 45 m leg over a 20 m arm of the
+braided Kongsvikelva grew eight new vertices, each pushed to the nearest dry
+ground in whichever of twelve bearings answered first. It now inserts one
+dry vertex per wet run, from the run's middle. And the sea lines survived
+the same pass because it looked for a class named `Hav` while Kartverket
+answers `Havflate`; the class is added, the two corridors carry
+`avoidWater` in `corridors.json` and the research record, and all four
+routes were re-solved through their unchanged corridors — same grid, so the
+other routes of those tours reproduced their shipped lines to within 2 m of
+gain and were restored from `lib/routes.ts` as usual.
+
+| route | before | after | on water | card |
+| --- | --- | --- | --- | --- |
+| `jakobstinden/sorostsiden` | 8.47 km, +1062, 529 vertices | 7.40 km, +1017, 257 | 77 m, the bridge crossings | 1060 → 1020 |
+| `kongsviktinden/nordsiden` | 9.12 km, +1092, 574 vertices | 8.05 km, +1051, 291 | 80 m, the bridge crossings | 1090 → 1050 |
+| `taraldsviktinden/austsida` | 4.93 km, +798, 3 vertices at −2 m | 4.94 km, +792 | 0 m | alternate |
+| `nonstinden/ostsiden` | 5.64 km, +983, 1 vertex at −5 m | 5.72 km, +973 | 0 m; the inlet is rounded on land | 980 |
+
+The guides' opening figures, the band under 100 moh on the two Kongsvik
+tours («1,1 grader over 4682 meter grunn» → 1,4 over 3625), the treeline
+distances and the height given back are re-derived in both languages, and
+`check_ground` comes back clean on all six routes of the four tours.
 
 ### The spurs and the notch, fixed in place
 

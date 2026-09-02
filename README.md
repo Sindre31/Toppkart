@@ -348,8 +348,11 @@ content and data quality that has to be settled before the site is sold to anyon
   leftover vertices that made the notch. The six summits with the same leftover — Rana,
   Hamperøkken, Vassdalstinden, Kolåstinden, Breitinden, Forkledalstindan — got the same edit, and
   Rana's line, which had hooked onto the east face of a spire, now follows the south-west crest
-  the guide calls «kammen» (card 1600 → 1560). The scribbles and the sea lines are re-solved with the off-water pass fixed;
-  see «The shape round» in `scripts/build-routes/README.md` for all of it.
+  the guide calls «kammen» (card 1600 → 1560). The scribbles and the sea lines are re-solved with the off-water pass fixed (one dry
+  vertex per wet run, and `Havflate` counted as water): Jakobstinden and Kongsviktinden lost a
+  kilometre of loops each and their cards move 1060 → 1020 and 1090 → 1050, and the two sea routes
+  stand on land. The four tarn clips are nudged onto the shore and the four trail claims state
+  their measured gap. See «The shape round» in `scripts/build-routes/README.md` for all of it.
   What the same round did fix: **five `seed.sql` rows and five English teasers were two
   corrections behind their cards** — Glittertinden's said «1180 høydemeter» beside a
   `vertical_m` of 1228 — because `check_tours.py` compared four numeric columns and no text;

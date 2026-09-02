@@ -881,8 +881,8 @@
  },
  "melaaksla": {
   "verticalM": 960,
-  "gainM": 964,
-  "distanceM": 5919,
+  "gainM": 965,
+  "distanceM": 5989,
   "startM": 11,
   "summitM": 916,
   "duration": "4–6 t",
@@ -892,8 +892,8 @@
   "maxStepAngle": 35.5,
   "grade": 2,
   "aspect": "N",
-  "distanceKm": 5.9,
-  "cumdistM": 5921
+  "distanceKm": 6.0,
+  "cumdistM": 5989
  },
  "rundfjellet-harstad": {
   "verticalM": 770,
@@ -912,9 +912,9 @@
   "cumdistM": 6862
  },
  "jakobstinden": {
-  "verticalM": 1060,
-  "gainM": 1062,
-  "distanceM": 8468,
+  "verticalM": 1020,
+  "gainM": 1017,
+  "distanceM": 7401,
   "startM": 25,
   "summitM": 976,
   "duration": "5–7 t",
@@ -924,8 +924,8 @@
   "maxStepAngle": 31.0,
   "grade": 2,
   "aspect": "S",
-  "distanceKm": 8.5,
-  "cumdistM": 8464
+  "distanceKm": 7.4,
+  "cumdistM": 7404
  },
  "stortinden-sortland": {
   "verticalM": 1010,
@@ -961,8 +961,8 @@
  },
  "reinspalen": {
   "verticalM": 1370,
-  "gainM": 1369,
-  "distanceM": 7802,
+  "gainM": 1370,
+  "distanceM": 7859,
   "startM": 5,
   "summitM": 1117,
   "duration": "6–8 t",
@@ -972,8 +972,8 @@
   "maxStepAngle": 41.7,
   "grade": 3,
   "aspect": "S",
-  "distanceKm": 7.8,
-  "cumdistM": 7802
+  "distanceKm": 7.9,
+  "cumdistM": 7859
  },
  "satertinden": {
   "verticalM": 1110,
@@ -992,20 +992,20 @@
   "cumdistM": 6053
  },
  "kongsviktinden": {
-  "verticalM": 1090,
-  "gainM": 1092,
-  "distanceM": 9116,
+  "verticalM": 1050,
+  "gainM": 1051,
+  "distanceM": 8047,
   "startM": 25,
   "summitM": 980,
-  "duration": "6–8 t",
+  "duration": "5–7 t",
   "steepestBandAngle": 17.9,
   "steepestBandFrom": 500,
   "steepestBandTo": 600,
   "maxStepAngle": 31.6,
   "grade": 2,
-  "aspect": "SV",
-  "distanceKm": 9.1,
-  "cumdistM": 9105
+  "aspect": "V",
+  "distanceKm": 8.0,
+  "cumdistM": 8048
  },
  "snotinden-tjeldsund": {
   "verticalM": 1020,
@@ -1040,9 +1040,9 @@
   "cumdistM": 4533
  },
  "nonstinden": {
-  "verticalM": 980,
-  "gainM": 983,
-  "distanceM": 5638,
+  "verticalM": 970,
+  "gainM": 973,
+  "distanceM": 5716,
   "startM": 49,
   "summitM": 930,
   "duration": "4–6 t",
@@ -1052,13 +1052,13 @@
   "maxStepAngle": 31.1,
   "grade": 3,
   "aspect": "SØ",
-  "distanceKm": 5.6,
-  "cumdistM": 5640
+  "distanceKm": 5.7,
+  "cumdistM": 5719
  },
  "snotindan": {
   "verticalM": 1550,
-  "gainM": 1548,
-  "distanceM": 9043,
+  "gainM": 1554,
+  "distanceM": 9041,
   "startM": 13,
   "summitM": 996,
   "duration": "7–9 t",
@@ -1069,7 +1069,7 @@
   "grade": 3,
   "aspect": "Ø",
   "distanceKm": 9.0,
-  "cumdistM": 9047
+  "cumdistM": 9041
  },
  "fiskefjordtindan": {
   "verticalM": 1040,
