@@ -5584,7 +5584,7 @@ What ran, and what it said:
 | `check_routes.py` | 223 routes, one DTM1 re-read each | clean: every line ends on its summit, every midpoint within 12 m |
 | `check_bands.py` | 756 band claims in 185 guides | all agree with a line the app draws |
 | `check_guides.py` | 185 guides, both languages, on `guide_facts.json` rebuilt from scratch (one DTM1 read per vertex, three hours) | 0 unsourced numbers, 0 reassurance claims |
-| `check_ground.py` | 48 routes in alphabetical order, plus the four the re-read below questioned | one trail finding that is the reservoir, one tarn the guide says it passes on land — both below |
+| `check_ground.py` | all 223 routes, three hours against maps.mail.ru's Overpass | 9 findings: four trail claims never measured before, one that is the reservoir, four one-vertex tarn clips — below |
 | a denser DTM1 re-read | every 8th vertex of every route, 5382 points | 5381 within 5 m of the stored elevation; one stretch of Fanaråken's Turtagrø line reads up to 27 m low — below |
 | `check_geometry.py` (new) | 223 routes, offline | 46 things to look at in 34 tours — every one of them below |
 
@@ -5798,6 +5798,36 @@ round, because each moves a steepest-step figure the guide quotes: Rana
 (−60 m inside 22 m), Hamperøkken (−37 m, stated in its guide as the
 «siste trinn over 45»), Vassdalstinden (−32), Kolåstinden (−31), Breitinden
 (−28) and Forkledalstindan (−21).
+
+### What `check_ground` said about the whole catalogue
+
+The first run over all 223 routes from one container came back with nine
+things to look at, and the record in `check_ground_run.txt` shows why four
+of them are new: when the ground check last ran over these tours, Overpass
+would not answer for them and their trail claims were marked UNCHECKED. It
+answers now, and four guides promise a mapped line the drawn one leaves:
+
+| route | the guide says | the line strays | where |
+| --- | --- | --- | --- |
+| `gygrastolen/normalruta` | «anleggsvegen» | 526 m, 1205 m of 5966 beyond 250 m | 2.9 km out, at 566 m |
+| `gyranfisen/vikerkoia` | «Løypene» | 443 m, 450 m of 5360 beyond 250 m | 4.9 km out, at 1039 m |
+| `hogevarde/norefjellstua` | «oppkjørt» | 427 m, 1949 m of 11668 beyond 250 m | 3.3 km out, at 1102 m |
+| `grafjell/tempelseter` | «løypa» | 292 m, 300 m of 8044 beyond 250 m | 7.1 km out, at 1351 m |
+
+None of the four is settled here. Høgevarde's Tempelseter line already has
+the precedent — its guide states the gap and says the mapped loops are
+`piste:type=nordic` that need not reach a summit — and the same reading may
+hold for its Norefjellstua line; the other three want the map and the guide
+side by side, which is a round of its own. The fifth trail finding,
+Fastdalstinden's Varto route, is the reservoir and is closed below.
+
+The other four are water: one vertex each, 45–46 m of line, on a tarn the
+guide does not name — Kjølen's Slettaelva route at 126 m, Melåaksla's ridge
+route at 600 m, Reinspalen's Geitryggen route at 287 m and Snøtindan's
+Løbergsdalen route at 641 m. Below the 60 m the check normally reports at,
+surfaced only because Overpass returned no polygon to measure the shore
+against; a sentence naming each height is what the Trondheim-round rule
+asks for, and it is not written yet.
 
 ### One `check_ground` trail finding that is the reservoir, not the road
 

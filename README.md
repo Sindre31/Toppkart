@@ -325,7 +325,9 @@ content and data quality that has to be settled before the site is sold to anyon
   is mapped there is unnamed `piste:type=nordic` loops, and a cross-country loop need not reach a
   summit. The guide states the number instead, and `check_trail` learned to soften to a note when
   the copy states the gap, which is what the water check has always done. The record of all eleven
-  is in `scripts/build-routes/check_ground_run.txt`. **No check_ground finding is outstanding.**
+  is in `scripts/build-routes/check_ground_run.txt`. The shape round then ran it over all 223 routes
+  from one container and found nine more — four trail claims that Overpass had never answered for
+  before, and four one-vertex tarn clips — which are listed under «The shape round» and are outstanding.
 - **Every line has now been checked for its shape, and 34 tours have something to look at.**
   The shape round ran every check the pipeline owns over all 185 tours and 223 routes in one
   sitting and added the one that was missing: `check_geometry.py`, which reads the emitted
