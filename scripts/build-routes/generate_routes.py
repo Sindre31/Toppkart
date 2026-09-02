@@ -103,7 +103,14 @@ def dtm_class(lat, lng):
     return "Innsjø"
 
 
-WATER_CLASSES = ("Innsjø", "InnsjøRegulert", "Elv", "Hav")
+# «Havflate», not «Hav»: that is the class Kartverket actually answers for the
+# sea, and with the wrong name in this tuple the pass read the fjord as dry —
+# Taraldsviktinden's east route shipped three vertices on the harbour at −2 m
+# and Nonstinden's one on a tidal inlet at −5 m, under a corridor that never
+# asked to avoid water and a check (`check_ground.py`) that only asks about
+# lakes. The router already treats the sea as impassable, but at nine metres a
+# cell a shoreline is a blur, and this pass is what makes it a line.
+WATER_CLASSES = ("Innsjø", "InnsjøRegulert", "Elv", "Hav", "Havflate")
 NUDGE_STEP_M = 5.0
 NUDGE_MAX_M = 40.0
 SCAN_M = 2.5       # how finely a leg is read between its ends
@@ -212,16 +219,28 @@ def _lift_legs(pts):
         )
     _warm([p for leg in legs for p in leg])
 
+    # One vertex per wet *run*, not per wet sample. The first version of this
+    # appended a nudged vertex for every wet 2.5 m sample, so a 45 m leg over
+    # a 20 m river arm grew eight new vertices, each pushed to the nearest dry
+    # ground in whichever of twelve bearings answered first — a scribble. Two
+    # tours out of Kongsvikdalen shipped with a tenth of their length in such
+    # loops beside the braided Kongsvikelva (924 m of 8468, 964 m of 9116),
+    # every vertex on ground the DTM agreed with, the line going in circles.
+    # A wet run is one crossing and wants one dry point, taken from its middle.
     out = [pts[0]]
     added = 0
     for leg, end in zip(legs, pts[1:]):
-        for p in leg:
-            if not _wet(*p):
+        run = []
+        for p in leg + [None]:
+            if p is not None and _wet(*p):
+                run.append(p)
                 continue
-            dry = _dry_near(*p)
-            if dry:
-                out.append(dry)
-                added += 1
+            if run:
+                dry = _dry_near(*run[len(run) // 2])
+                if dry:
+                    out.append(dry)
+                    added += 1
+                run = []
         out.append(end)
     return out, added
 

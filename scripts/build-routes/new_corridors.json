@@ -8271,7 +8271,8 @@
               "elevationM": 453
             }
           ],
-          "note": "Fri Flyts 3.5.3 Østsiden med Tunellen, gått motsett veg: «hvis man ønsker å se Tunellen, kan man selvsagt gå opp denne ruten». Eigen parkering: «for Østsiden parkeres det ved båthavna i Kongsvik, gå en drøy kilometer i grøfta på ski». Tunellen ligg på «ca. 450 moh» hos kilden; DTM1 leser 452,8 på korridorpunktet. Mellom 30 og 40 grader over Tunellen, 20–30 under. KAST 3 – Komplekst mot normalrutas KAST 2. Rappell for å brekke ut skavlar høyrer til nedkjøringa, ikkje oppstigninga."
+          "note": "Fri Flyts 3.5.3 Østsiden med Tunellen, gått motsett veg: «hvis man ønsker å se Tunellen, kan man selvsagt gå opp denne ruten». Eigen parkering: «for Østsiden parkeres det ved båthavna i Kongsvik, gå en drøy kilometer i grøfta på ski». Tunellen ligg på «ca. 450 moh» hos kilden; DTM1 leser 452,8 på korridorpunktet. Mellom 30 og 40 grader over Tunellen, 20–30 under. KAST 3 – Komplekst mot normalrutas KAST 2. Rappell for å brekke ut skavlar høyrer til nedkjøringa, ikkje oppstigninga.",
+          "avoidWater": true
         }
       ]
     }
@@ -8497,7 +8498,8 @@
         "https://www.friflyt.no/topptur/tromso/turbeskrivelse-nonstinden",
         "https://friflyt.no/topptur/tromso/turomraade-kvaefjord-og-sortland"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "avoidWater": true
     }
   },
   {
