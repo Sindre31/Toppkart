@@ -325,7 +325,41 @@ content and data quality that has to be settled before the site is sold to anyon
   is mapped there is unnamed `piste:type=nordic` loops, and a cross-country loop need not reach a
   summit. The guide states the number instead, and `check_trail` learned to soften to a note when
   the copy states the gap, which is what the water check has always done. The record of all eleven
-  is in `scripts/build-routes/check_ground_run.txt`. **No check_ground finding is outstanding.**
+  is in `scripts/build-routes/check_ground_run.txt`. The shape round then ran it over all 223 routes
+  from one container and found nine more — four trail claims that Overpass had never answered for
+  before, and four one-vertex tarn clips — which are listed under «The shape round» and are outstanding.
+- **Every line has now been checked for its shape, and 34 tours have something to look at.**
+  The shape round ran every check the pipeline owns over all 185 tours and 223 routes in one
+  sitting and added the one that was missing: `check_geometry.py`, which reads the emitted
+  TypeScript offline and asks whether a line crosses itself, goes in circles, walks out to a
+  waypoint and back, stands on the sea or steps through a notch. The number checks were clean
+  and the shape check was not. **Two lines go in circles on the closed road out of
+  Kongsvikdalen** — `jakobstinden/sorostsiden` for 924 of its 8468 m and
+  `kongsviktinden/nordsiden` for 964 of 9116 — so the «8,47 km» and «9,12 km» their guides quote
+  are a tenth too long. **Seven routes walk out to a corridor waypoint and retrace**, 130–300 m
+  each way; the one that reaches the prose is Snøtindan's east route, written as going «over
+  Vestbotntinden» while the line visits the top and comes back. **Two lines stand on the sea**:
+  Taraldsviktinden's east route along the harbour shore at −2 m and Nonstinden's east route
+  across a tidal inlet at −5 m, which `check_ground.py` cannot see because it only asks about
+  lakes. And **Storrønden's line drops 29 m into the east face and climbs 42 m out of it in the
+  last 24 m before the cairn**, a notch DTM1 confirms point by point. The spurs and the notch
+  are fixed in the same round by cutting the loops out of the shipped lines — seven cards moved
+  by 10 to 100 m and two guides changed what they said — and `generate_routes.py` now drops the
+  leftover vertices that made the notch. The six summits with the same leftover — Rana,
+  Hamperøkken, Vassdalstinden, Kolåstinden, Breitinden, Forkledalstindan — got the same edit, and
+  Rana's line, which had hooked onto the east face of a spire, now follows the south-west crest
+  the guide calls «kammen» (card 1600 → 1560). The scribbles and the sea lines are re-solved with the off-water pass fixed (one dry
+  vertex per wet run, and `Havflate` counted as water): Jakobstinden and Kongsviktinden lost a
+  kilometre of loops each and their cards move 1060 → 1020 and 1090 → 1050, and the two sea routes
+  stand on land. The four tarn clips are nudged onto the shore, the four trail claims state
+  their measured gap, and the 29 mid-route notches are gone: ten were small out-and-backs and were
+  cut, twenty vertices moved 5–20 m onto ground that reads like their neighbours, and six real
+  steps stand and are the only shape findings left. See «The shape round» in `scripts/build-routes/README.md` for all of it.
+  What the same round did fix: **five `seed.sql` rows and five English teasers were two
+  corrections behind their cards** — Glittertinden's said «1180 høydemeter» beside a
+  `vertical_m` of 1228 — because `check_tours.py` compared four numeric columns and no text;
+  it now compares every column, the English teaser's figures, and `tourmeta.json`, where fifty
+  `hasGuide` flags had gone stale.
 - **Three peaks were added after the Trondheim round: Kjerag, Møysalen and Sæbyggjenuten.**
   They bring three new regions with them — Rogaland, Vesterålen and Setesdal — and they were
   routed, carded and written the same way as the rest, with `check_ground.py` run before the prose

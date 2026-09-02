@@ -97,6 +97,7 @@ python3 resample_dtm1.py      # every vertex re-read from DTM1        (~15 min)
 python3 emit_ts.py            # routes.json         -> ../../lib/routes.ts
 python3 check_routes.py       # independent sanity pass over the geometry
 python3 check_tours.py        # the card figures: summit, vertical, coordinate, seed
+python3 check_geometry.py     # the shape of every line: scribbles, spurs, sea, notches — offline
 
 # only when re-running the research itself:
 python3 find_trailheads.py            # OSM roads/parking -> trailhead_candidates.json
@@ -5564,6 +5565,396 @@ one search per peak, which was done for the likeliest dozen and produced
 nothing: every ut.no ski trip found for a shipped peak starts where the app
 already starts. A future round wanting a fifth route starts there, with more
 patience, or with a guidebook.
+
+## The shape round: every summit, every line, in one sitting
+
+No new tour and no new route. 185 tours, 223 routes, and the first time every
+check the pipeline owns has been run over the whole catalogue in one container,
+with the answers written down side by side. Most of it came back clean. What
+did not falls into two kinds: figures that had drifted between copies of the
+same row, which are fixed, and shapes in the drawn lines that no existing check
+looks at, which are now checked and are listed here for the next round to work.
+
+What ran, and what it said:
+
+| check | scope | result |
+| --- | --- | --- |
+| `npm test`, `typecheck`, `lint` | the app | green, 68 tests |
+| `check_tours.py` | 185 cards, 185 profiles, 185 seed rows | clean on the four numbers it compared — see below for the columns it did not |
+| `check_routes.py` | 223 routes, one DTM1 re-read each | clean: every line ends on its summit, every midpoint within 12 m |
+| `check_bands.py` | 756 band claims in 185 guides | all agree with a line the app draws |
+| `check_guides.py` | 185 guides, both languages, on `guide_facts.json` rebuilt from scratch (one DTM1 read per vertex, three hours) | 0 unsourced numbers, 0 reassurance claims |
+| `check_ground.py` | all 223 routes, three hours against maps.mail.ru's Overpass | 9 findings: four trail claims never measured before, one that is the reservoir, four one-vertex tarn clips — below |
+| a denser DTM1 re-read | every 8th vertex of every route, 5382 points | 5381 within 5 m of the stored elevation; one stretch of Fanaråken's Turtagrø line reads up to 27 m low — below |
+| `check_geometry.py` (new) | 223 routes, offline | 46 things to look at in 34 tours as found, every one of them below; 8 in 6 after the fixes, all of them real steps the guides describe |
+
+### Five cards whose seed row and English teaser were two corrections behind
+
+`check_tours.py` compared four columns of each `seed.sql` row — lat, lng,
+summit, vertical — and said the seed was the same rows again. It was not.
+Five teasers in the seed carried figures from before their tour's line was
+last corrected, and the English teaser in `lib/i18n/content.ts` for the same
+five had never been updated either. Production and the English site would
+have shown a reader one number on the card and another in the sentence under
+it:
+
+| tour | the seed and the English teaser said | the card says |
+| --- | --- | --- |
+| Vassfjellet | 540 høydemeter | 560 |
+| Glittertinden | 12,6 km og 1180 høydemeter | 13,3 km og 1228 |
+| Besshø | 1305 høydemeter | 1328 |
+| Rasletinden | 750 høydemeter og 6 km, flatt de første 1,2 km | 778, 7,2 km, 2,2 km |
+| Folarskardnuten | 12 km, 970 høgdemeter, eit 37-graders trinn | 13 km, 997, 29 grader |
+
+All five are the Jotunheimen, Hallingdal and Trondheim re-routes of earlier
+rounds, where `lib/tours.ts` was corrected by hand and the seed was not
+re-emitted. Both copies now match, and `check_tours.py` compares **every**
+column of the seed row, the multiset of numbers in the English teaser against
+the Norwegian one, and `tourmeta.json` against the app — which is how the
+next item was found.
+
+### Fifty `hasGuide` flags stale in `tourmeta.json`
+
+The pipeline's copy of the tour list said `hasGuide: false` for fifty tours
+the app ships guides for — every tour from the Grytøya round onward. Nothing
+the app renders reads that file, so no reader saw it, but `emit_new_tours.py`
+does, and the ten-route round already recorded what happens when a stale
+copy is re-emitted over a good one. `sync_tourmeta.py` fixes it and
+`check_tours.py` now fails when it drifts.
+
+### `check_geometry.py` — the shape of a line
+
+Every existing check compares numbers: a height against DTM1, a distance
+against the emitter, a claim against a band. A line can pass all of them and
+still be the wrong shape, because the numbers describe a line that goes
+somewhere silly in a way that leaves every number true. This round wrote the
+check that looks at the shape — self-crossings, tight loops, out-and-backs,
+vertices on the sea, notches — and ran it over all 223 lines. It needs no
+network and no raster, so it runs anywhere `routes_from_ts.py` does. What it
+found — and then, on request, fixed in the same round: the spurs and the notch
+by editing the shipped lines, the scribbles and the sea by fixing the pass that
+made them and re-solving. The findings first, as found; the fixes follow.
+
+**Two lines that go in circles on a closed road.** `jakobstinden/sorostsiden`
+spends **924 m of its 8468 m** in five patches of tight loops, and
+`kongsviktinden/nordsiden` **964 m of 9116 m** in five more — both on the
+flat, forested, winter-closed road out of Kongsvikdalen that the two tours
+share for their first four kilometres, at 21–25 moh, with the line's first
+300 vertices covering 1987 m of path for 725 m of ground. Every vertex is on
+ground DTM1 agrees with (it reads `Skog` at 22–24 m throughout), the line
+just circles there. Both are `avoidWater` solves, and the second-route round
+already noted that an `avoidWater` solve of Kongsviktinden was not
+reproducible. The consequence is in the prose: the guides' «8,47 km» and
+«9,12 km», and Kongsviktinden's «1,1 grader over 4682 meter grunn» for the
+band under 100 moh, are a tenth too long. The fix that fits the evidence is
+the one Lønahorgi got in the index round — pin the corridor to the mapped
+road for the road section and re-solve — and then re-derive both guides.
+
+**Seven out-and-backs to a corridor waypoint.** Each of these lines walks
+out to a waypoint that sits 130–300 m off the line it would otherwise take,
+turns round and comes back along its own track:
+
+| route | out and back | ground | height | the waypoint at the tip |
+| --- | --- | --- | --- | --- |
+| `snotindan/gullesfjordbotn` | 295 m | 599 m | 862 → 934 → 864 | Vestbotntinden |
+| `reinspalen/geitryggen` | 244 m | 540 m | 654 → 681 → 653 | Geitryggen |
+| `ytstevasshornet/normalruta` | 199 m | 405 m | 955 → 969 → 958 | Vatna i Vassdalen, 976 |
+| `helligtinden/nordryggen` | 180 m | 401 m | 654 → 588 → 645 | Litletind-ryggen |
+| `skartinden/via-ytterholla` | 157 m | 360 m | 867 → 800 → 863 | skardet |
+| `skjomtinden/normalruta` | 134 m | 383 m | 1532 → 1444 → 1533 | renna mot ryggen nordvest for toppen |
+| `fiskefjordtindan/sorvestsiden` | 132 m | 300 m | 885 → 853 → 891 | ryggen austover |
+
+The first is the one that matters for the prose: the index round wrote
+Snøtindan's east route as going «over Vestbotntinden», and the geometry
+visits the top and retraces. The rest are a waypoint placed on a feature the
+router would rather pass beside — a col, a ridge shoulder, a lake — and each
+adds twice the spur to the distance and, on Skjomtinden and Helligtinden, a
+descent and re-climb the tour need not make. Moving the waypoint onto the
+line, or dropping it where the description does not need it, is a corridor
+edit and a re-solve per route.
+
+**Two lines on the sea.** `taraldsviktinden/austsida` leaves the boat
+harbour along the shore and puts three vertices on `Havflate` at −2 m over
+its first 500 m — about 135 m of line on the water in three places, between
+vertices 20 and 30. `nonstinden/ostsiden` crosses a tidal inlet north of
+Gullesfjordbotn with one vertex at −5 m, 90 m of line over the water at
+vertex 63. `check_ground.py` cannot see either: it asks about `Innsjø` and
+`InnsjøRegulert` and never about the sea. `generate_routes.py` is supposed to
+refuse a point at sea level; both lines are resampled after it validates.
+
+**A notch at Storrønden's cairn, and three summit steps to look at.** The
+line up Storrønden arrives along the ridge from the north-west, and its last
+three vertices go 2126 → **2097** → 2139 m over 24 m of ground: 14 m to a
+point 29 m lower, then 10 m and 42 m up to the cairn. DTM1 confirms the
+notch point by point, so the geometry is a real feature — the east face —
+and the line crosses it because the last vertex was snapped to the summit
+cell from the wrong side. The guide's «bratteste sammenhengende parti 25,7
+grader» is a 30 m window and smooths it away. Three other lines end with a
+single step no skinning line takes: Rana +57 m over 18 m to the cairn (the
+guide says 38,0 over 30 m), Vassdalstinden +32 m over 19 m at 1246 moh, and
+Hornindalsrokken +32 m over 30 m at 1476 moh. Hamperøkken's +37 m over 12 m
+is the «siste trinn lokalt over 45 grader» its guide already states.
+
+**Seven resample notches.** Single vertices 12–31 m above or below both
+neighbours within 60 m of ground — Langlitinden's Rytterkløfta at 1130,
+Snøtinden i Tjeldsund at 409, Snøtindan's Løbergsdalen at 800, Forkledalstindan
+at 702, Varden at 333 and 341, Kolåstinden at 1419. A boulder, a stream bank
+or a cornice edge read by a 1 m model at a point the coarse solve stepped
+over. They put a spike in the profile and a metre or two into the gain; they
+do not move the line.
+
+**Noted, not defects.** Fifteen tours carry an editorial grade two steps
+above what the steepest 100 m band measures — all of them Harstad-book
+KAST 4 peaks where the grade is exposure and a scramble, not angle — which is
+what `route_metrics.py` says a terrain grade is for. Ten alternates give back
+between 84 and 349 m on the way up; every one is a traverse or a col the
+guide already describes. And the elevation profile's end label is the card's
+summit while the line's last vertex is DTM1 rounded down, so thirteen profiles
+say 1219 over a line that ends at 1218 — a metre of rounding that
+`check_tours.py` allows on purpose.
+
+### Every eighth vertex, re-read
+
+`check_routes.py` re-reads one point per route from Kartverket. This round
+re-read every eighth vertex of every route — 5382 points — and compared the
+stored elevation and terrain class with the answer. **5381 are within 5 m**,
+and the terrain classes are what the lines claim: 3621 open ground, 1301
+forest, 173 bog, 69 glacier, 61 lake, none sea (the two sea lines above stand
+on the water between the sampled vertices). The one exception is
+`fanaraken/turtagro` between vertices 158 and 162, at 1308–1314 m stored
+against 1322–1341 m on the ground: five vertices 14–27 m low on a moraine
+bump the resample did not read, so that route's gain is understated by
+roughly 25 m. It does not touch the card — the primary is the Fannaråkhytta
+line — and the fix is `resample_dtm1.py` on that one route.
+
+The 61 lake samples fall on 30 routes, and 27 of them name the lake's height
+in the guide, as `check_ground` has required since the Trondheim round. The
+three that do not were measured vertex by vertex: Haukebøtinden's east side
+clips a tarn at 690 m for one vertex (45 m, under the 60 m floor the check
+reports at), Rondslottet's Bjørnhollia line stands 90 m on a tarn at 942 m in
+the forest above the hut, and **Snøtindan's Løbergsdalen line stands 91 m on a
+tarn at 641 m and 45 m on the tarn at 573 m** — under a guide that says «linja
+holder land forbi alle vatna der kilden krysser på isen» and names 573 as
+passed «på land, sør for det». `check_ground` run on the tour agrees about
+641 m and cannot see 573 m at the length it clips. Both are natural tarns on
+the shelf the guide already describes as «tjernshyllene»; the sentence is
+what needs to move, or the two vertices.
+
+### The scribbles and the sea, re-solved
+
+The scribbles were not the solver's: a shortest path cannot loop. They were
+the off-water pass. `_lift_legs` read each leg every 2.5 m and appended a
+nudged vertex for *every* wet sample, so a 45 m leg over a 20 m arm of the
+braided Kongsvikelva grew eight new vertices, each pushed to the nearest dry
+ground in whichever of twelve bearings answered first. It now inserts one
+dry vertex per wet run, from the run's middle. And the sea lines survived
+the same pass because it looked for a class named `Hav` while Kartverket
+answers `Havflate`; the class is added, the two corridors carry
+`avoidWater` in `corridors.json` and the research record, and all four
+routes were re-solved through their unchanged corridors — same grid, so the
+other routes of those tours reproduced their shipped lines to within 2 m of
+gain and were restored from `lib/routes.ts` as usual.
+
+| route | before | after | on water | card |
+| --- | --- | --- | --- | --- |
+| `jakobstinden/sorostsiden` | 8.47 km, +1062, 529 vertices | 7.40 km, +1017, 257 | 77 m, the bridge crossings | 1060 → 1020 |
+| `kongsviktinden/nordsiden` | 9.12 km, +1092, 574 vertices | 8.05 km, +1051, 291 | 80 m, the bridge crossings | 1090 → 1050 |
+| `taraldsviktinden/austsida` | 4.93 km, +798, 3 vertices at −2 m | 4.94 km, +792 | 0 m | alternate |
+| `nonstinden/ostsiden` | 5.64 km, +983, 1 vertex at −5 m | 5.72 km, +973 | 0 m; the inlet is rounded on land | 980 |
+
+The guides' opening figures, the band under 100 moh on the two Kongsvik
+tours («1,1 grader over 4682 meter grunn» → 1,4 over 3625), the treeline
+distances and the height given back are re-derived in both languages, and
+`check_ground` comes back clean on all six routes of the four tours.
+
+### The spurs and the notch, fixed in place
+
+A re-solve was the first instinct and the wrong one. Moving a waypoint moves
+the corridor's bounding box, the routing grid is cut to that box, and a grid
+cut differently discretises the whole line differently — Reinspalen re-solved
+through its moved waypoint came back with the spur gone and 84 m *more*
+climbing, dipping to 222 m where the reviewed line had dipped to 287. Every
+one of the seven came back changed end to end, not at the spur. That is not a
+fix; it throws away seven lines that earlier rounds read adversarially to
+repair 130–300 m of each.
+
+The spur itself needs none of that. Each one leaves the line at a vertex and
+comes back within 12 m of it, so the loop between those two vertices is cut
+and the line continues — exact, local, and reviewable. The same rule at a
+smaller scale (a loop of 60 m or more returning within 12 m at the same
+height, which a switchback never does) found three more that the 300 m rule
+had walked past: 91 m on Reinspalen's Kobberyggen at 414 m, 175 m on
+Skartinden's flat at 869 m, 91 m on Skjomtinden at 1356 m. The seven
+waypoints were moved onto the line in `corridors.json` and the research
+record, each with a note saying where it came from, so the corridor agrees
+with the line it ships.
+
+| route | cut | before | after | card |
+| --- | --- | --- | --- | --- |
+| `snotindan/gullesfjordbotn` | 599 m spur to Vestbotntinden | 9.13 km, +1439 | 8.52 km, +1360 | alternate |
+| `reinspalen/geitryggen` | 540 m spur, 91 m loop | 8.44 km, +1404 | 7.80 km, +1369 | 1400 → 1370 |
+| `ytstevasshornet/normalruta` | 405 m spur | 4.19 km, +833 | 3.79 km, +816 | 830 → 820 |
+| `helligtinden/nordryggen` | 401 m spur | 5.44 km, +1029 | 5.04 km, +954 | 1030 → 950 |
+| `skartinden/via-ytterholla` | 360 m spur, 175 m loop | 4.44 km, +1287 | 3.92 km, +1193 | 1290 → 1190 |
+| `skjomtinden/normalruta` | 383 m spur, 91 m loop | 7.64 km, +1487 | 7.17 km, +1386 | 1490 → 1390 |
+| `fiskefjordtindan/sorvestsiden` | 300 m spur | 7.56 km, +1076 | 7.27 km, +1044 | 1080 → 1040 |
+| `storronden/normalruta` | 3 vertices inside 30 m of the cairn | 10.26 km, +1145 | 10.23 km, +1108 | 1140 → 1110 |
+| `rana/normalruta` | east-face hook → 4 crest vertices | 8.61 km, +1602 | 8.59 km, +1559 | 1600 → 1560 |
+| `hamperokken/normalruta` | 1 vertex inside 30 m | 5.64 km, +1389 | 5.64 km, +1383 | 1390 |
+| `vassdalstinden/normalruta` | 2 vertices inside 30 m | 6.50 km, +1212 | 6.47 km, +1210 | 1210 |
+| `kolastinden/normalruta` | 3 vertices inside 30 m | 5.70 km, +1120 | 5.67 km, +1120 | 1120 |
+| `breitinden/normalruta` | 3 vertices inside 30 m | 4.24 km, +1049 | 4.21 km, +1049 | 1050 |
+| `forkledalstindan/sydsiden` | 3 vertices inside 30 m | 5.59 km, +1024 | 5.56 km, +1016 | 1020 |
+
+Two of the cuts changed what a guide said, not just its numbers.
+Helligtinden's «bratteste enkeltpartiet, 33,3 grader mellom 626 og 650 moh»
+was the climb back out of the spur; the steepest step on the line is now
+28,2° between 646 and 665, and the sentence that called it one of the
+source's two sections over 30 has been rewritten to say the line lies
+gentler than the crest. Snøtindan's east route no longer goes «over
+Vestbotntinden på 935»: it crosses the shoulder at 864 and the guide says
+so, with the drop to Øvre Storelvvatnet re-measured from there. Skartinden's
+guide now distinguishes the col's floor at 795 from the shoulder at 867 the
+line crosses, and Ytstevasshornet's caption had quoted 3,93 km for a 4,19 km
+line since some earlier edit — both now read 3,79. Every other change is a
+figure replaced by the same figure measured on the shipped line, in both
+languages, with the round recorded in each guide's `problems`.
+`check_guides.py` and `check_bands.py` come back clean on all eight.
+
+Storrønden's fix is a rule in `generate_routes.py` as well as an edit. After
+the summit is pinned, `build()` now drops whatever the smoothing left inside
+30 m of it (`SUMMIT_LEG_MIN_M`), so the last leg comes in straight from the
+side the line climbed. 164 of the 223 shipped lines carry such a leftover
+vertex; for 158 of them it sits a metre or two below the cairn and changes
+nothing. The other six were Storrønden's shape — Rana (−60 m inside 22 m),
+Hamperøkken (−37 m), Vassdalstinden (−32), Kolåstinden (−31), Breitinden
+(−28) and Forkledalstindan (−21) — and were done the same way, with one
+exception that the 30 m rule could not have fixed.
+
+Five of them drop cleanly to a last leg of 30–43 m at 37–46° from the side
+the line already climbed, and DTM1 read along each new leg agrees it is a
+summit block, not an artefact: Hamperøkken 1364 → 1389 over 41 m from the
+south, Vassdalstinden 1258 → 1275 over 34 m, Kolåstinden 1402 → 1425 over
+36 m, Breitinden flat at 980 and then the block, Forkledalstindan 868 → 884.
+What changed in their guides is the *steepest 30 m* figure, and it went up
+on four of them — Hamperøkken 33,3 → 38,0, Vassdalstinden 36,2 → 41,3,
+Kolåstinden 38,0 → 43,1, Breitinden 39,4 → 45,9 — because the old window
+averaged a 6 m cliff with the flat ground beside it, and the new one is the
+block itself. Hamperøkken's «siste trinn lokalt over 45» was the +37 m over
+12 m artefact and now reads as the 38° summit step it is; Kolåstinden's
+guide already stated a 47° summit pitch from the flank probe. Breitinden's
+steepest hundred moved from 600–700 to the summit block's 900–1000 and the
+sentence says so.
+
+**Rana is the exception.** The cairn is a spire: DTM1 at 30 m out reads
+1520–1554 on every bearing but one, and 1586 on the south-west crest — the
+guide's own «kammen». The shipped line climbed the flank at 200°, hooked
+round onto the east face and finished +57 m over 18 m; dropping its last
+vertices would have left a 43 m leg at 57° up that face. So the hook after
+v275 (1552 m, 128 m out) was replaced by four vertices on the crest — 1572,
+1579, 1580, 1586 m at 120, 90, 60, 30 m on bearing 225° — and «toppkammen
+frå sørvest» was added to the corridor so a re-solve approaches the same
+way. The steepest 30 m on Rana is no longer the summit at all: 28,4° on the
+arête between 1210 and 1232, against the 38,0° the guide had placed on the
+crest, and the gain drops 1602 → 1559 (card 1600 → 1560). The English guide
+had also been saying the descent was «1595 metres in one run» against a
+Norwegian 1602 — one more figure that had drifted between the languages and
+now reads 1559 in both.
+
+### What `check_ground` said about the whole catalogue
+
+The first run over all 223 routes from one container came back with nine
+things to look at, and the record in `check_ground_run.txt` shows why four
+of them are new: when the ground check last ran over these tours, Overpass
+would not answer for them and their trail claims were marked UNCHECKED. It
+answers now, and four guides promise a mapped line the drawn one leaves:
+
+| route | the guide says | the line strays | where |
+| --- | --- | --- | --- |
+| `gygrastolen/normalruta` | «anleggsvegen» | 526 m, 1205 m of 5966 beyond 250 m | 2.9 km out, at 566 m |
+| `gyranfisen/vikerkoia` | «Løypene» | 443 m, 450 m of 5360 beyond 250 m | 4.9 km out, at 1039 m |
+| `hogevarde/norefjellstua` | «oppkjørt» | 427 m, 1949 m of 11668 beyond 250 m | 3.3 km out, at 1102 m |
+| `grafjell/tempelseter` | «løypa» | 292 m, 300 m of 8044 beyond 250 m | 7.1 km out, at 1351 m |
+
+All four were then read with the map and the guide side by side, and all
+four are the Tempelseter shape rather than a line beside a path it should be
+on. Gygrastølen's guide names the anleggsveg at the start and on the way
+down; the road ends at Gygrastølvatnet, the line above it is on a ridge above
+the treeline, and the mapped way `check_trail` measured against is a summer
+path 526 m away — the check measured the whole line because another path
+reaches the cairn. Gyranfisen's «Løypene» is a caveat about grooming, and the
+line's own way over the ridge from Svarttjernskollen is 443 m from a nordic
+loop that goes round it. Høgevarde's Norefjellstua line leaves the network in
+three places along Norefjellsryggen, all of them nordic loops or a summer
+path. Gråfjell's line leaves the track for its last three hundred metres
+below a summit the guide already says the track does not reach directly. In
+each case the copy now states the measured gap and where it is, in both
+languages, which is what `check_trail` softens on; the four come back as
+notes. The fifth trail finding, Fastdalstinden's Varto route, is the
+reservoir and is closed below.
+
+The other four are water: one vertex each, 45–46 m of line, on a tarn the
+guide does not name — Kjølen's Slettaelva route at 126 m, Melåaksla's ridge
+route at 600 m, Reinspalen's Geitryggen route at 287 m and Snøtindan's
+Løbergsdalen route at 641 m. Below the 60 m the check normally reports at,
+surfaced only because Overpass returned no polygon to measure the shore
+against.
+
+All four were taken off the water rather than named, with the pipeline's
+own pass applied locally: the wet vertices moved to the nearest dry ground
+(10–25 m away in every case), the legs either side read every 2.5 m and
+lifted where wet, and the moved vertices given DTM1 elevations. Read that
+closely, the clips were more than one vertex each — three on Kjølen's
+Slettaelva line (127, 131 and a third at 357 m the check had not reported),
+three on Melåaksla's (480, 586, 591), two on Reinspalen's (288) and five on
+Snøtindan's Løbergsdalen line (571–646, the two tarns its guide says it
+passes on land, which is now true). `check_ground` comes back with 0 m on
+water for all seven routes of the four tours.
+
+### The mid-route notches
+
+The 29 items the shape check still listed after everything above were the
+sampling notches: a segment over 45° with ten metres or more of rise, or a
+vertex 12 m above or below both neighbours within 60 m of ground, in the
+middle of a line rather than at its summit. Read closely they were two
+things. **Ten were small out-and-backs** of 60–230 m the spike rule had
+caught by their shape — Snøtinden i Tjeldsund's line walked 161 m out and
+back at 371 m and read as a 39 m climb, Varden's 233 m at 313 m — and were
+cut by the same-height-loop rule. **The rest were single vertices the
+coarse solve had put on a boulder, a stream bank or the lip of a step**, and
+those were moved the way the water clips were: DTM1 read in a disc of 5–25 m
+around the vertex, the vertex moved to the nearest dry point at which both
+adjacent segments come in at 40° or less. Twenty moved, by 5–20 m, well
+inside the 9–15 m cell of the grid they were solved on. **Six had no such
+ground within 25 m and stand**, because they are real: Breitinden's and
+Kolåstinden's summit blocks, Nona's two summit steps, Kongsviktinden's east
+side under the cairn, and Møysalen's 51 m notch, which its guide measured at
+2.3 m spacing and calls what it is. Fastdalstinden's Varto line had a 124 m
+zigzag on the flat bog at 513 m that no loop rule fits, and was straightened
+between the patch's entry and exit vertices.
+
+Every touched line's figures were re-derived and moved into both languages
+by the same substitutions as before; where the steepest thirty metres moved
+*place* — Reinspalen's from the summit-ridge transition to the step onto
+Kobberyggen, Forkledalstindan's from the start of the ridge to the last
+stretch under the cairn, Lodalskåpa's from the summit ridge to the slopes
+below the glacier, Snøtinden i Tjeldsund's out of the loop it had been in —
+the sentence was rewritten to say where the steep ground is. Six cards move
+by 10–65 m (Snøtinden i Tjeldsund 1020 → 980, Strandtinden 1160 → 1140,
+Forkledalstindan 1020 → 980, Varden 825 → 760, Middagstinden 1310 → 1290,
+Kvitegga 1480 → 1460); the guide, band, card and shape checks and the test
+suite are clean, and what `check_geometry.py` lists now is the six real
+steps.
+
+### One `check_ground` trail finding that is the reservoir, not the road
+
+`fastdalstinden/varto` came back saying the guide promises an «anleggsveg»
+and the line strays 771 m from the mapped one. The guide says the road is
+followed to the dam at 515 moh and no further, and the 771 m is measured on
+the far shore of Rottenvikvatnet, which the line rounds on land because the
+lake is a reservoir — the same guide's own «rundt magasinet på land». Below
+the dam the line is within 160 m of the road throughout. A false positive of
+the Vetefjellet kind, recorded here so it is not re-opened.
 
 ## Network
 

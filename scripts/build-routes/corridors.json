@@ -2733,10 +2733,17 @@
       "lat": 62.27523,
       "lng": 6.57453,
       "elevation_m": 1562.37
+     },
+     {
+      "name": "toppkammen frå sørvest",
+      "lat": 62.27496,
+      "lng": 6.57356,
+      "elevation_m": 1578.7
      }
     ],
     "source": "researched, verified (corrected), no local audit",
-    "notes": "Skredterreng inn mot Nordkopen og i sida opp frå kopen til egga. Store skavlar på austsida av den breie toppryggen — hald deg vest for kammen. Ekstra varsemd i vårsnø utover ettermiddagen."
+    "notes": "Skredterreng inn mot Nordkopen og i sida opp frå kopen til egga. Store skavlar på austsida av den breie toppryggen — hald deg vest for kammen. Ekstra varsemd i vårsnø utover ettermiddagen.",
+    "corridorNote": "«toppkammen frå sørvest» added in the shape round: the cairn is a spire whose only gentle side is the south-west crest (DTM1 1572/1579/1580/1586 m at 120/90/60/30 m out on bearing 225°, against 1520–1554 at 30 m on every other side); the shipped line hooked round onto the east face and finished +57 m over 18 m. The crest is the guide's own «kammen»."
    }
   ]
  },
@@ -3074,13 +3081,14 @@
      },
      {
       "name": "Vatna i Vassdalen, 976",
-      "lat": 62.28449,
-      "lng": 6.74978,
-      "elevation_m": 976.08
+      "lat": 62.28372,
+      "lng": 6.75335,
+      "elevation_m": 955.0
      }
     ],
     "source": "researched, verified (ok), no local audit, re-pinned onto the east shore off the reservoir ice",
-    "notes": "Skavlar langs toppryggen — det dannar seg normalt ei stor skavl mellom førtoppen og hovudtoppen, og ein skal køyre ned i sida når ein rundar henne. Skredterreng i sida ned frå hovudtoppen og ikkje minst i sjølve Vassdalen."
+    "notes": "Skavlar langs toppryggen — det dannar seg normalt ei stor skavl mellom førtoppen og hovudtoppen, og ein skal køyre ned i sida når ein rundar henne. Skredterreng i sida ned frå hovudtoppen og ikkje minst i sjølve Vassdalen.",
+    "corridorNote": "«Vatna i Vassdalen, 976» moved onto the line in the shape round: the solved line passed 204 m beside the researched point and walked out to it and back (62.28449/6.74978, 976 m); the waypoint now sits where the line already ran, at DTM1 955 m."
    }
   ]
  },
@@ -7815,13 +7823,14 @@
      },
      {
       "name": "renna mot ryggen nordvest for toppen",
-      "lat": 68.3455,
-      "lng": 17.351,
-      "elevation_m": 1437.0
+      "lat": 68.34438,
+      "lng": 17.35195,
+      "elevation_m": 1533.0
      }
     ],
     "source": "researched, verified (ok), no local audit",
-    "notes": "Fri Flyt: KAST 2 – Utfordrende. Bart og steinete terreng på vestsidene; isøks og stegjern i utstyrslista. Nedfartsalternativet «Øyet» er en trang snørenne på 45–50 grader med is og eksponerte klipper der rutevalget er kritisk. Nervatnet er regulert — hold stien på land."
+    "notes": "Fri Flyt: KAST 2 – Utfordrende. Bart og steinete terreng på vestsidene; isøks og stegjern i utstyrslista. Nedfartsalternativet «Øyet» er en trang snørenne på 45–50 grader med is og eksponerte klipper der rutevalget er kritisk. Nervatnet er regulert — hold stien på land.",
+    "corridorNote": "«renna mot ryggen nordvest for toppen» moved onto the line in the shape round: the solved line passed 130 m beside the researched point and walked out to it and back (68.3455/17.351, 1437 m); the waypoint now sits where the line already ran, at DTM1 1533 m."
    }
   ]
  },
@@ -8323,9 +8332,9 @@
      },
      {
       "name": "Geitryggen",
-      "lat": 68.57754,
-      "lng": 15.69559,
-      "elevation_m": 682.0
+      "lat": 68.5794,
+      "lng": 15.69257,
+      "elevation_m": 654.0
      },
      {
       "name": "ryggen videre",
@@ -8341,7 +8350,8 @@
      }
     ],
     "source": "researched, verified (ok), no local audit",
-    "notes": "Fri Flyt: KAST 3 – Komplekst. Skavler og skredterreng nær Litjedalen på toppryggen; vestrennene måler 30–50 grader og er terrengfeller ved ustabil snø; Norddalen (nordaustruta frå Bømark) krever stabilitetsvurdering. Isøks og stegjern."
+    "notes": "Fri Flyt: KAST 3 – Komplekst. Skavler og skredterreng nær Litjedalen på toppryggen; vestrennene måler 30–50 grader og er terrengfeller ved ustabil snø; Norddalen (nordaustruta frå Bømark) krever stabilitetsvurdering. Isøks og stegjern.",
+    "corridorNote": "«Geitryggen» moved onto the line in the shape round: the solved line passed 240 m beside the researched point and walked out to it and back (68.57754/15.69559, 682 m); the waypoint now sits where the line already ran, at DTM1 654 m."
    }
   ]
  },
@@ -8479,9 +8489,9 @@
      },
      {
       "name": "Vestbotntinden",
-      "lat": 68.52815,
-      "lng": 15.63119,
-      "elevation_m": 935.29
+      "lat": 68.53039,
+      "lng": 15.62765,
+      "elevation_m": 864.0
      },
      {
       "name": "ned mot Øvre Storelvvatnet",
@@ -8509,7 +8519,8 @@
      }
     ],
     "source": "researched, verified (ok), no local audit",
-    "notes": "Fri Flyt, «Turbeskrivelse Snøtindan», rute 2.7.2 Østruta: «Fra Gullesfjord Camping holder man høyresiden (nord) av Vesterelva og følger andre siden etter å ha krysset vann 76. Vann 113 krysses vestover og finn bratt trase (30-40 grader) opp mot vann 289 og deretter sørover langs slak rygg mot høyde 667. Når det gjelder videre rute mot Vestbotntinden så kan det dannes en toppskavel som kan være strevsom å passere på nordsiden så alternativt kan sydsiden av ryggen velges. Stegjern og alpinøks kan være påkrevet hvis det er mye skare. Området er opp mot 45 grader bratt så her må det være stabil sne. Bestig toppen fra vest … Nedkjøringen til Øvre Storelvvatnet er for det meste slakt men nedre del har et brattheng på 30-40 grader. Stak over vannet og start oppstigningen litt før enden av vannet. Det meste er under 30 grader og man kommer etterhvert inn på ruta fra Snytindhytta. Derfra runder man toppen på vestsiden og bestiger toppen fra sør opp en et toppheng på ca 30-40 grader.» Startsteda er dei to kjelda sjølv fører: «Egen parkeringsplass langs R85, rett på sørsiden av elveutløpet. For østruta parkeres det på Gullesfjordbotn camping.» Appens rute er den fyrste; dette er den andre. Kjelda sine tal for fjellet: KAST 3, toppunkt 996, 1250–1350 høgdemeter, 8–9 timar, januar–april, alpinøks og stegjern. Ruta går over Vestbotntinden (registerført, Lødingen, 68,52815/15,63119) og gjev tilbake 330 høgdemeter ned til Øvre Storelvvatnet før ho stig att — det er traversen kjelda skildrar, ikkje ein feil i linja. Kryssingane av vatna på 76, 113 og Øvre Storelvvatnet er sanksjonerte i kjelda sin eigen tekst. Vegpunktet «vestsida av toppen» (803 moh) er sett inn fordi kjelda seier ein rundar toppen på vestsida og går opp frå sør: utan det gjekk siste etappen rett på toppblokka i 45 grader."
+    "notes": "Fri Flyt, «Turbeskrivelse Snøtindan», rute 2.7.2 Østruta: «Fra Gullesfjord Camping holder man høyresiden (nord) av Vesterelva og følger andre siden etter å ha krysset vann 76. Vann 113 krysses vestover og finn bratt trase (30-40 grader) opp mot vann 289 og deretter sørover langs slak rygg mot høyde 667. Når det gjelder videre rute mot Vestbotntinden så kan det dannes en toppskavel som kan være strevsom å passere på nordsiden så alternativt kan sydsiden av ryggen velges. Stegjern og alpinøks kan være påkrevet hvis det er mye skare. Området er opp mot 45 grader bratt så her må det være stabil sne. Bestig toppen fra vest … Nedkjøringen til Øvre Storelvvatnet er for det meste slakt men nedre del har et brattheng på 30-40 grader. Stak over vannet og start oppstigningen litt før enden av vannet. Det meste er under 30 grader og man kommer etterhvert inn på ruta fra Snytindhytta. Derfra runder man toppen på vestsiden og bestiger toppen fra sør opp en et toppheng på ca 30-40 grader.» Startsteda er dei to kjelda sjølv fører: «Egen parkeringsplass langs R85, rett på sørsiden av elveutløpet. For østruta parkeres det på Gullesfjordbotn camping.» Appens rute er den fyrste; dette er den andre. Kjelda sine tal for fjellet: KAST 3, toppunkt 996, 1250–1350 høgdemeter, 8–9 timar, januar–april, alpinøks og stegjern. Ruta går over Vestbotntinden (registerført, Lødingen, 68,52815/15,63119) og gjev tilbake 330 høgdemeter ned til Øvre Storelvvatnet før ho stig att — det er traversen kjelda skildrar, ikkje ein feil i linja. Kryssingane av vatna på 76, 113 og Øvre Storelvvatnet er sanksjonerte i kjelda sin eigen tekst. Vegpunktet «vestsida av toppen» (803 moh) er sett inn fordi kjelda seier ein rundar toppen på vestsida og går opp frå sør: utan det gjekk siste etappen rett på toppblokka i 45 grader.",
+    "corridorNote": "«Vestbotntinden» moved onto the line in the shape round: the solved line passed 288 m beside the researched point and walked out to it and back (68.52815/15.63119, 935 m); the waypoint now sits where the line already ran, at DTM1 864 m."
    }
   ]
  },
@@ -8903,7 +8914,9 @@
      }
     ],
     "source": "researched, verified (ok), no local audit",
-    "notes": "Fri Flyts 3.5.3 Østsiden med Tunellen, gått motsett veg: «hvis man ønsker å se Tunellen, kan man selvsagt gå opp denne ruten». Eigen parkering: «for Østsiden parkeres det ved båthavna i Kongsvik, gå en drøy kilometer i grøfta på ski». Tunellen ligg på «ca. 450 moh» hos kilden; DTM1 leser 452,8 på korridorpunktet. Mellom 30 og 40 grader over Tunellen, 20–30 under. KAST 3 – Komplekst mot normalrutas KAST 2. Rappell for å brekke ut skavlar høyrer til nedkjøringa, ikkje oppstigninga."
+    "notes": "Fri Flyts 3.5.3 Østsiden med Tunellen, gått motsett veg: «hvis man ønsker å se Tunellen, kan man selvsagt gå opp denne ruten». Eigen parkering: «for Østsiden parkeres det ved båthavna i Kongsvik, gå en drøy kilometer i grøfta på ski». Tunellen ligg på «ca. 450 moh» hos kilden; DTM1 leser 452,8 på korridorpunktet. Mellom 30 og 40 grader over Tunellen, 20–30 under. KAST 3 – Komplekst mot normalrutas KAST 2. Rappell for å brekke ut skavlar høyrer til nedkjøringa, ikkje oppstigninga.",
+    "avoidWater": true,
+    "waterNote": "avoidWater set in the shape round: the line shipped on Havflate (the harbour shore / the tidal inlet), which is not ice and never will be."
    }
   ]
  },
@@ -9009,13 +9022,14 @@
      },
      {
       "name": "ryggen austover",
-      "lat": 68.5318,
-      "lng": 16.007,
-      "elevation_m": 856.0
+      "lat": 68.53172,
+      "lng": 16.00395,
+      "elevation_m": 885.0
      }
     ],
     "source": "researched, verified (ok), no local audit",
-    "notes": "Fri Flyt: KAST 1 – Enkelt på sørvestruta, med alpinøks og stegjern for den eksponerte austryggen mot toppen. Nordøstruta ned austsida går i ei fin renne på opptil 40 grader med mye utløpssoner — den krever stabil snø og er ikke denne linja."
+    "notes": "Fri Flyt: KAST 1 – Enkelt på sørvestruta, med alpinøks og stegjern for den eksponerte austryggen mot toppen. Nordøstruta ned austsida går i ei fin renne på opptil 40 grader med mye utløpssoner — den krever stabil snø og er ikke denne linja.",
+    "corridorNote": "«ryggen austover» moved onto the line in the shape round: the solved line passed 124 m beside the researched point and walked out to it and back (68.5318/16.007, 856 m); the waypoint now sits where the line already ran, at DTM1 885 m."
    }
   ]
  },
@@ -9071,7 +9085,9 @@
      }
     ],
     "source": "researched, verified (ok), no local audit",
-    "notes": "Fri Flyt: Komplekst. Alpinøks og stegjern. Nedkjøringen holder 25–40 grader; Karirenna mot nordøst er 45–50 grader med stort steinsprangfare i øvre del og krever stabil snø; vestsida mot Løbergsdalen måler 30–40. Fire bratte nedkjøringer — velg etter snøen."
+    "notes": "Fri Flyt: Komplekst. Alpinøks og stegjern. Nedkjøringen holder 25–40 grader; Karirenna mot nordøst er 45–50 grader med stort steinsprangfare i øvre del og krever stabil snø; vestsida mot Løbergsdalen måler 30–40. Fire bratte nedkjøringer — velg etter snøen.",
+    "avoidWater": true,
+    "waterNote": "avoidWater set in the shape round: the line shipped on Havflate (the harbour shore / the tidal inlet), which is not ice and never will be."
    }
   ]
  },
@@ -9803,9 +9819,9 @@
      },
      {
       "name": "skardet",
-      "lat": 68.8795,
-      "lng": 17.318,
-      "elevation_m": 795.0
+      "lat": 68.87807,
+      "lng": 17.3187,
+      "elevation_m": 867.0
      },
      {
       "name": "flata austover",
@@ -9815,7 +9831,8 @@
      }
     ],
     "source": "researched, verified (ok), no local audit",
-    "notes": "Fri Flyt: KAST 3 – Komplekst. Alpinøks og stegjern. Nedkjøringa er 30–40 grader øverst og 35–40 grader over Ytterholla, omkranset av 60-graders klipper — presis veivalg, særlig i flatt lys."
+    "notes": "Fri Flyt: KAST 3 – Komplekst. Alpinøks og stegjern. Nedkjøringa er 30–40 grader øverst og 35–40 grader over Ytterholla, omkranset av 60-graders klipper — presis veivalg, særlig i flatt lys.",
+    "corridorNote": "«skardet» moved onto the line in the shape round: the solved line passed 161 m beside the researched point and walked out to it and back (68.8795/17.318, 795 m); the waypoint now sits where the line already ran, at DTM1 867 m."
    }
   ]
  },
@@ -10061,13 +10078,14 @@
      },
      {
       "name": "Litletind-ryggen",
-      "lat": 68.472,
-      "lng": 16.345,
-      "elevation_m": 576.0
+      "lat": 68.47218,
+      "lng": 16.34923,
+      "elevation_m": 645.0
      }
     ],
     "source": "researched, verified (ok), no local audit",
-    "notes": "Fri Flyt: KAST 2 – Utfordrende. Stegjern og øks kan trengs på skare. Nedkjøringa er for det meste 10–20 grader med to parti over 30 langs ryggen; Østskåla (31–35 grader) er varianten. Linja legger seg sørvest for å unngå skredterrenget over Finnvatnet."
+    "notes": "Fri Flyt: KAST 2 – Utfordrende. Stegjern og øks kan trengs på skare. Nedkjøringa er for det meste 10–20 grader med to parti over 30 langs ryggen; Østskåla (31–35 grader) er varianten. Linja legger seg sørvest for å unngå skredterrenget over Finnvatnet.",
+    "corridorNote": "«Litletind-ryggen» moved onto the line in the shape round: the solved line passed 174 m beside the researched point and walked out to it and back (68.472/16.345, 576 m); the waypoint now sits where the line already ran, at DTM1 645 m."
    }
   ]
  },

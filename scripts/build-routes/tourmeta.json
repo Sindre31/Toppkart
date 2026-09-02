@@ -239,7 +239,7 @@
   "grade": 3,
   "aspect": "S",
   "season": "feb–apr",
-  "hasGuide": false
+  "hasGuide": true
  },
  "stortussen": {
   "name": "Stortussen",
@@ -250,7 +250,7 @@
   "grade": 3,
   "aspect": "S",
   "season": "feb–apr",
-  "hasGuide": false
+  "hasGuide": true
  },
  "litletussen": {
   "name": "Litletussen",
@@ -261,7 +261,7 @@
   "grade": 3,
   "aspect": "SØ",
   "season": "feb–apr",
-  "hasGuide": false
+  "hasGuide": true
  },
  "slattheia": {
   "name": "Slåttheia",
@@ -272,7 +272,7 @@
   "grade": 2,
   "aspect": "SØ",
   "season": "feb–apr",
-  "hasGuide": false
+  "hasGuide": true
  },
  "istinden": {
   "name": "Vestre Istinden",
@@ -294,7 +294,7 @@
   "grade": 4,
   "aspect": "Ø",
   "season": "feb–apr",
-  "hasGuide": false
+  "hasGuide": true
  },
  "nona": {
   "name": "Nona",
@@ -305,7 +305,7 @@
   "grade": 4,
   "aspect": "V",
   "season": "feb–apr",
-  "hasGuide": false
+  "hasGuide": true
  },
  "trolltinden": {
   "name": "Trolltinden",
@@ -316,7 +316,7 @@
   "grade": 3,
   "aspect": "S",
   "season": "jan–apr",
-  "hasGuide": false
+  "hasGuide": true
  },
  "arbostadtinden": {
   "name": "Årbostadtinden",
@@ -327,7 +327,7 @@
   "grade": 4,
   "aspect": "V",
   "season": "feb–apr",
-  "hasGuide": false
+  "hasGuide": true
  },
  "klaptinden": {
   "name": "Klåptinden",
@@ -338,7 +338,7 @@
   "grade": 3,
   "aspect": "V",
   "season": "feb–apr",
-  "hasGuide": false
+  "hasGuide": true
  },
  "toppen": {
   "name": "Toppen",
@@ -349,7 +349,7 @@
   "grade": 4,
   "aspect": "Ø",
   "season": "feb–apr",
-  "hasGuide": false
+  "hasGuide": true
  },
  "lundenesgalten": {
   "name": "Lundenesgalten",
@@ -360,7 +360,7 @@
   "grade": 3,
   "aspect": "S",
   "season": "jan–apr",
-  "hasGuide": false
+  "hasGuide": true
  },
  "middagstinden-andorja": {
   "name": "Middagstinden på Andørja",
@@ -371,18 +371,18 @@
   "grade": 2,
   "aspect": "NØ",
   "season": "feb–apr",
-  "hasGuide": false
+  "hasGuide": true
  },
  "skartinden": {
   "name": "Skartinden",
   "region": "Harstad",
   "summitM": 1149,
-  "verticalM": 1290,
+  "verticalM": 1190,
   "duration": "5–7 t",
   "grade": 4,
   "aspect": "V",
   "season": "jan–apr",
-  "hasGuide": false
+  "hasGuide": true
  },
  "langlitinden": {
   "name": "Langlitinden",
@@ -393,7 +393,7 @@
   "grade": 4,
   "aspect": "V",
   "season": "jan–apr",
-  "hasGuide": false
+  "hasGuide": true
  },
  "krakrotinden": {
   "name": "Kråkrøtinden",
@@ -404,7 +404,7 @@
   "grade": 4,
   "aspect": "N",
   "season": "feb–apr",
-  "hasGuide": false
+  "hasGuide": true
  },
  "ristinden": {
   "name": "Ristinden",
@@ -415,7 +415,7 @@
   "grade": 4,
   "aspect": "SV",
   "season": "feb–apr",
-  "hasGuide": false
+  "hasGuide": true
  },
  "snotinden": {
   "name": "Snøtinden",
@@ -448,7 +448,7 @@
   "grade": 2,
   "aspect": "S",
   "season": "feb–apr",
-  "hasGuide": false
+  "hasGuide": true
  },
  "storlitinden": {
   "name": "Storlitinden",
@@ -459,7 +459,7 @@
   "grade": 1,
   "aspect": "S",
   "season": "des–apr",
-  "hasGuide": false
+  "hasGuide": true
  },
  "stortinden-rolla": {
   "name": "Stortinden på Rolla",
@@ -481,7 +481,7 @@
   "grade": 3,
   "aspect": "V",
   "season": "feb–apr",
-  "hasGuide": false
+  "hasGuide": true
  },
  "sula": {
   "name": "Sula",
@@ -492,7 +492,7 @@
   "grade": 2,
   "aspect": "SØ",
   "season": "feb–apr",
-  "hasGuide": false
+  "hasGuide": true
  },
  "heia": {
   "name": "Heia",
@@ -503,7 +503,7 @@
   "grade": 1,
   "aspect": "Ø",
   "season": "des–apr",
-  "hasGuide": false
+  "hasGuide": true
  },
  "hinnstein": {
   "name": "Hinnstein",
@@ -514,7 +514,7 @@
   "grade": 3,
   "aspect": "SØ",
   "season": "jan–apr",
-  "hasGuide": false
+  "hasGuide": true
  },
  "lasselitinden": {
   "name": "Lasselitinden",
@@ -525,7 +525,7 @@
   "grade": 3,
   "aspect": "S",
   "season": "feb–apr",
-  "hasGuide": false
+  "hasGuide": true
  },
  "hemmestadfjellet": {
   "name": "Hemmestadfjellet",
@@ -536,7 +536,7 @@
   "grade": 2,
   "aspect": "N",
   "season": "jan–apr",
-  "hasGuide": false
+  "hasGuide": true
  },
  "middagstinden-kvafjord": {
   "name": "Middagstinden i Kvæfjord",
@@ -547,7 +547,7 @@
   "grade": 4,
   "aspect": "V",
   "season": "feb–apr",
-  "hasGuide": false
+  "hasGuide": true
  },
  "nattmalsfjellet": {
   "name": "Nattmålsfjellet",
@@ -558,7 +558,7 @@
   "grade": 3,
   "aspect": "N",
   "season": "feb–apr",
-  "hasGuide": false
+  "hasGuide": true
  },
  "horntindan": {
   "name": "Horntindan",
@@ -569,7 +569,7 @@
   "grade": 4,
   "aspect": "NV",
   "season": "feb–apr",
-  "hasGuide": false
+  "hasGuide": true
  },
  "tverrfjellet": {
   "name": "Tverrfjellet",
@@ -580,7 +580,7 @@
   "grade": 2,
   "aspect": "S",
   "season": "feb–apr",
-  "hasGuide": false
+  "hasGuide": true
  },
  "spanstinden": {
   "name": "Spanstinden",
@@ -602,7 +602,7 @@
   "grade": 4,
   "aspect": "Ø",
   "season": "jan–apr",
-  "hasGuide": false
+  "hasGuide": true
  },
  "melaaksla": {
   "name": "Melåaksla",
@@ -613,7 +613,7 @@
   "grade": 2,
   "aspect": "N",
   "season": "feb–apr",
-  "hasGuide": false
+  "hasGuide": true
  },
  "rundfjellet-harstad": {
   "name": "Rundfjellet i Harstad",
@@ -624,18 +624,18 @@
   "grade": 2,
   "aspect": "NØ",
   "season": "feb–apr",
-  "hasGuide": false
+  "hasGuide": true
  },
  "jakobstinden": {
   "name": "Jakobstinden",
   "region": "Harstad",
   "summitM": 976,
-  "verticalM": 1060,
+  "verticalM": 1020,
   "duration": "5–7 t",
   "grade": 3,
   "aspect": "SØ",
   "season": "jan–apr",
-  "hasGuide": false
+  "hasGuide": true
  },
  "stortinden-sortland": {
   "name": "Stortinden i Sortland",
@@ -646,7 +646,7 @@
   "grade": 4,
   "aspect": "V",
   "season": "jan–apr",
-  "hasGuide": false
+  "hasGuide": true
  },
  "haukebotinden": {
   "name": "Haukebøtinden",
@@ -657,13 +657,13 @@
   "grade": 2,
   "aspect": "Ø",
   "season": "des–apr",
-  "hasGuide": false
+  "hasGuide": true
  },
  "reinspalen": {
   "name": "Reinspælen",
   "region": "Harstad",
   "summitM": 1117,
-  "verticalM": 1400,
+  "verticalM": 1370,
   "duration": "6–8 t",
   "grade": 4,
   "aspect": "S",
@@ -679,29 +679,29 @@
   "grade": 2,
   "aspect": "Ø",
   "season": "feb–apr",
-  "hasGuide": false
+  "hasGuide": true
  },
  "kongsviktinden": {
   "name": "Kongsviktinden",
   "region": "Harstad",
   "summitM": 980,
-  "verticalM": 1090,
+  "verticalM": 1050,
   "duration": "6–8 t",
   "grade": 3,
   "aspect": "N",
   "season": "jan–apr",
-  "hasGuide": false
+  "hasGuide": true
  },
  "snotinden-tjeldsund": {
   "name": "Snøtinden i Tjeldsund",
   "region": "Harstad",
   "summitM": 980,
-  "verticalM": 1020,
+  "verticalM": 980,
   "duration": "4–6 t",
   "grade": 2,
   "aspect": "NØ",
   "season": "feb–apr",
-  "hasGuide": false
+  "hasGuide": true
  },
  "taraldsviktinden": {
   "name": "Taraldsviktinden",
@@ -712,7 +712,7 @@
   "grade": 3,
   "aspect": "N",
   "season": "feb–apr",
-  "hasGuide": false
+  "hasGuide": true
  },
  "nonstinden": {
   "name": "Nonstinden",
@@ -723,7 +723,7 @@
   "grade": 4,
   "aspect": "Ø",
   "season": "jan–apr",
-  "hasGuide": false
+  "hasGuide": true
  },
  "snotindan": {
   "name": "Snøtindan",
@@ -740,12 +740,12 @@
   "name": "Fiskefjordtindan",
   "region": "Harstad",
   "summitM": 965,
-  "verticalM": 1080,
+  "verticalM": 1040,
   "duration": "5–7 t",
   "grade": 3,
   "aspect": "SV",
   "season": "jan–apr",
-  "hasGuide": false
+  "hasGuide": true
  },
  "moysalen": {
   "name": "Møysalen",
@@ -767,7 +767,7 @@
   "grade": 4,
   "aspect": "S",
   "season": "feb–apr",
-  "hasGuide": false
+  "hasGuide": true
  },
  "middagsfjellet": {
   "name": "Middagsfjellet",
@@ -778,13 +778,13 @@
   "grade": 3,
   "aspect": "N",
   "season": "des–apr",
-  "hasGuide": false
+  "hasGuide": true
  },
  "strandtinden": {
   "name": "Strandtinden",
   "region": "Harstad",
   "summitM": 1076,
-  "verticalM": 1160,
+  "verticalM": 1140,
   "duration": "5–7 t",
   "grade": 3,
   "aspect": "N",
@@ -800,18 +800,18 @@
   "grade": 4,
   "aspect": "Ø",
   "season": "feb–apr",
-  "hasGuide": false
+  "hasGuide": true
  },
  "forkledalstindan": {
   "name": "Forkledalstindan",
   "region": "Vesterålen",
   "summitM": 901,
-  "verticalM": 1020,
+  "verticalM": 980,
   "duration": "4–6 t",
   "grade": 4,
   "aspect": "S",
   "season": "feb–apr",
-  "hasGuide": false
+  "hasGuide": true
  },
  "lakselvtindan": {
   "name": "Lakselvtindan",
@@ -822,7 +822,7 @@
   "grade": 3,
   "aspect": "SV",
   "season": "feb–apr",
-  "hasGuide": false
+  "hasGuide": true
  },
  "siriskolten": {
   "name": "Siriskolten",
@@ -833,7 +833,7 @@
   "grade": 1,
   "aspect": "N",
   "season": "feb–apr",
-  "hasGuide": false
+  "hasGuide": true
  },
  "trollfjellet": {
   "name": "Trollfjellet",
@@ -844,7 +844,7 @@
   "grade": 2,
   "aspect": "V",
   "season": "feb–apr",
-  "hasGuide": false
+  "hasGuide": true
  },
  "sebortinden": {
   "name": "Sebortinden",
@@ -855,18 +855,18 @@
   "grade": 4,
   "aspect": "N",
   "season": "feb–apr",
-  "hasGuide": false
+  "hasGuide": true
  },
  "helligtinden": {
   "name": "Helligtinden",
   "region": "Harstad",
   "summitM": 948,
-  "verticalM": 1030,
+  "verticalM": 950,
   "duration": "4–6 t",
   "grade": 3,
   "aspect": "N",
   "season": "feb–apr",
-  "hasGuide": false
+  "hasGuide": true
  },
  "kvasstinden": {
   "name": "Kvasstinden",
@@ -877,7 +877,7 @@
   "grade": 2,
   "aspect": "V",
   "season": "feb–apr",
-  "hasGuide": false
+  "hasGuide": true
  },
  "rombakstotta": {
   "name": "Rombakstøtta",
@@ -938,7 +938,7 @@
   "name": "Skjomtinden",
   "region": "Narvik",
   "summitM": 1576,
-  "verticalM": 1490,
+  "verticalM": 1390,
   "duration": "6–8 t",
   "grade": 4,
   "aspect": "N",
@@ -982,7 +982,7 @@
   "name": "Varden (Småtindan)",
   "region": "Lofoten",
   "summitM": 700,
-  "verticalM": 825,
+  "verticalM": 760,
   "duration": "4–6 t",
   "grade": 2,
   "aspect": "Ø",
@@ -1224,7 +1224,7 @@
   "name": "Middagstinden",
   "region": "Romsdal",
   "summitM": 1568,
-  "verticalM": 1310,
+  "verticalM": 1290,
   "duration": "5–7 t",
   "grade": 4,
   "aspect": "V",
@@ -1268,7 +1268,7 @@
   "name": "Ytstevasshornet",
   "region": "Sunnmøre",
   "summitM": 1331,
-  "verticalM": 830,
+  "verticalM": 820,
   "duration": "3–5 t",
   "grade": 3,
   "aspect": "Ø",
@@ -1279,7 +1279,7 @@
   "name": "Råna",
   "region": "Sunnmøre",
   "summitM": 1587,
-  "verticalM": 1600,
+  "verticalM": 1560,
   "duration": "7–9 t",
   "grade": 3,
   "aspect": "SØ",
@@ -1389,7 +1389,7 @@
   "name": "Kvitegga",
   "region": "Sunnmøre",
   "summitM": 1700,
-  "verticalM": 1480,
+  "verticalM": 1460,
   "duration": "6–8 t",
   "grade": 3,
   "aspect": "Ø",
@@ -1455,7 +1455,7 @@
   "name": "Storronden",
   "region": "Rondane",
   "summitM": 2139,
-  "verticalM": 1140,
+  "verticalM": 1110,
   "duration": "6–8 t",
   "grade": 2,
   "aspect": "SV",

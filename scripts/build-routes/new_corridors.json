@@ -1415,6 +1415,12 @@
           "lat": 62.27523,
           "lng": 6.57453,
           "elevationM": 1562.37
+        },
+        {
+          "name": "toppkammen frå sørvest",
+          "lat": 62.27496,
+          "lng": 6.57356,
+          "elevationM": 1579
         }
       ],
       "season": "mars–mai",
@@ -1931,9 +1937,9 @@
       "waypoints": [
         {
           "name": "Vatna i Vassdalen, 976",
-          "lat": 62.28449,
-          "lng": 6.74978,
-          "elevationM": 976.08
+          "lat": 62.28372,
+          "lng": 6.75335,
+          "elevationM": 955
         }
       ],
       "season": "jan–mai",
@@ -6889,9 +6895,9 @@
         },
         {
           "name": "renna mot ryggen nordvest for toppen",
-          "lat": 68.3455,
-          "lng": 17.351,
-          "elevationM": 1437
+          "lat": 68.34438,
+          "lng": 17.35195,
+          "elevationM": 1533
         }
       ],
       "season": "feb–mai",
@@ -7539,9 +7545,9 @@
         },
         {
           "name": "Geitryggen",
-          "lat": 68.57754,
-          "lng": 15.69559,
-          "elevationM": 682
+          "lat": 68.5794,
+          "lng": 15.69257,
+          "elevationM": 654
         },
         {
           "name": "ryggen videre",
@@ -7728,9 +7734,9 @@
             },
             {
               "name": "Vestbotntinden",
-              "lat": 68.52815,
-              "lng": 15.63119,
-              "elevationM": 935.29
+              "lat": 68.53039,
+              "lng": 15.62765,
+              "elevationM": 864
             },
             {
               "name": "ned mot Øvre Storelvvatnet",
@@ -8271,7 +8277,8 @@
               "elevationM": 453
             }
           ],
-          "note": "Fri Flyts 3.5.3 Østsiden med Tunellen, gått motsett veg: «hvis man ønsker å se Tunellen, kan man selvsagt gå opp denne ruten». Eigen parkering: «for Østsiden parkeres det ved båthavna i Kongsvik, gå en drøy kilometer i grøfta på ski». Tunellen ligg på «ca. 450 moh» hos kilden; DTM1 leser 452,8 på korridorpunktet. Mellom 30 og 40 grader over Tunellen, 20–30 under. KAST 3 – Komplekst mot normalrutas KAST 2. Rappell for å brekke ut skavlar høyrer til nedkjøringa, ikkje oppstigninga."
+          "note": "Fri Flyts 3.5.3 Østsiden med Tunellen, gått motsett veg: «hvis man ønsker å se Tunellen, kan man selvsagt gå opp denne ruten». Eigen parkering: «for Østsiden parkeres det ved båthavna i Kongsvik, gå en drøy kilometer i grøfta på ski». Tunellen ligg på «ca. 450 moh» hos kilden; DTM1 leser 452,8 på korridorpunktet. Mellom 30 og 40 grader over Tunellen, 20–30 under. KAST 3 – Komplekst mot normalrutas KAST 2. Rappell for å brekke ut skavlar høyrer til nedkjøringa, ikkje oppstigninga.",
+          "avoidWater": true
         }
       ]
     }
@@ -8405,9 +8412,9 @@
         },
         {
           "name": "ryggen austover",
-          "lat": 68.5318,
-          "lng": 16.007,
-          "elevationM": 856
+          "lat": 68.53172,
+          "lng": 16.00395,
+          "elevationM": 885
         }
       ],
       "season": "jan–apr",
@@ -8497,7 +8504,8 @@
         "https://www.friflyt.no/topptur/tromso/turbeskrivelse-nonstinden",
         "https://friflyt.no/topptur/tromso/turomraade-kvaefjord-og-sortland"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "avoidWater": true
     }
   },
   {
@@ -9492,9 +9500,9 @@
         },
         {
           "name": "skardet",
-          "lat": 68.8795,
-          "lng": 17.318,
-          "elevationM": 795
+          "lat": 68.87807,
+          "lng": 17.3187,
+          "elevationM": 867
         },
         {
           "name": "flata austover",
@@ -9863,9 +9871,9 @@
         },
         {
           "name": "Litletind-ryggen",
-          "lat": 68.472,
-          "lng": 16.345,
-          "elevationM": 576
+          "lat": 68.47218,
+          "lng": 16.34923,
+          "elevationM": 645
         }
       ],
       "season": "feb–apr",

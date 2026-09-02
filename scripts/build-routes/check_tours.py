@@ -21,7 +21,16 @@ Five assertions, all of them things that have gone wrong at least once:
                come from different files and can drift apart — Folarskardnuten's
                label said 1927 for a while after its summit moved.
   seed.sql     holds the same rows again for the database. Two copies of a number
-               is one copy too many unless something checks them.
+               is one copy too many unless something checks them. Every column
+               is compared, not just the four numeric ones: five teasers drifted
+               — Glittertinden's seed row said «1180 høydemeter» beside a
+               vertical_m of 1228 — and a check of lat/lng/summit/vertical
+               walked past all five.
+  content.ts   the English teaser quotes the same figures as the Norwegian one.
+               The same five tours had an English teaser two corrections behind.
+  tourmeta.json  the pipeline's copy of the row, which `guide_facts.py` and
+               `emit_guides.py` read. Fifty tours carried `hasGuide: false`
+               there against `true` in the app; `sync_tourmeta.py` fixes it.
 
     python3 check_tours.py
 
@@ -54,8 +63,17 @@ TEASER_NUM = re.compile(r"(?<![\d,])(\d{3,4})(?=\s*(?:høydemeter|høgdemeter))"
 # nothing about the other 24 — which is how a check comes back clean on the half
 # of the file it can see.
 SEED_ROW = re.compile(
-    r"\('([a-z0-9-]+)',\s*'[^']*',\s*'[^']*',\s*([\d.]+),\s*([\d.]+),\s*(\d+),\s*(\d+),"
+    r"\('([a-z0-9-]+)',\s*'((?:[^']|'')*)',\s*'((?:[^']|'')*)',\s*([\d.]+),\s*([\d.]+),\s*(\d+),\s*(\d+),"
+    r"\s*'([^']*)',\s*(\d),\s*'([^']*)',\s*'([^']*)',\s*'((?:[^']|'')*)',\s*(true|false)\)"
 )
+FULL_ROW = re.compile(
+    r'\{ slug: "([^"]+)", name: "([^"]+)", region: "([^"]+)", lat: ([\d.]+), lng: ([\d.]+), '
+    r'summitM: (\d+), verticalM: (\d+), duration: "([^"]+)", grade: (\d), aspect: "([^"]+)", '
+    r'season: "([^"]+)", (?:hasGuide: (true|false), )?teaser: "((?:[^"\\]|\\.)*)"'
+)
+# An English teaser in lib/i18n/content.ts: `slug: "…",` or `"slug-with-dash": "…",`.
+EN_TEASER = re.compile(r'^\s*"?([a-z0-9-]+)"?:\s*\n?\s*"((?:[^"\\]|\\.)*)",', re.M)
+NUMBER = re.compile(r"\d+(?:[.,]\d+)?")
 PROFILE = re.compile(
     r'slug: "([^"]+)",(?:.|\n)*?startLabel: "(\d+) moh",\n\s*endLabel: "(\d+) moh"'
 )
@@ -125,25 +143,68 @@ def main():
         if abs(end - rec["elevations"][-1]) > 1:
             problems.append(f"{slug}: profile ends at {end} m, the line at {rec['elevations'][-1]}")
 
-    # seed.sql is the same rows again.
+    # seed.sql is the same rows again — every column of them.
+    src = open(os.path.join(REPO, "lib", "tours.ts")).read()
+    full = {}
+    for m in FULL_ROW.finditer(src):
+        full[m.group(1)] = {
+            "name": m.group(2), "region": m.group(3), "lat": float(m.group(4)), "lng": float(m.group(5)),
+            "summitM": int(m.group(6)), "verticalM": int(m.group(7)), "duration": m.group(8),
+            "grade": int(m.group(9)), "aspect": m.group(10), "season": m.group(11),
+            "hasGuide": m.group(12) == "true", "teaser": m.group(13).replace('\\"', '"'),
+        }
+    if set(full) != set(rows):
+        problems.append("the full-row pattern does not match every tour row — has the row format changed?")
     seed = open(os.path.join(REPO, "supabase", "seed.sql")).read()
     n_seed = 0
     for m in SEED_ROW.finditer(seed):
         slug = m.group(1)
         n_seed += 1
-        r = rows.get(slug)
+        r = full.get(slug)
         if not r:
             problems.append(f"{slug}: in seed.sql but not in lib/tours.ts")
             continue
-        got = (float(m.group(2)), float(m.group(3)), int(m.group(4)), int(m.group(5)))
-        want = (r["lat"], r["lng"], r["summitM"], r["verticalM"])
-        if got != want:
-            problems.append(f"{slug}: seed.sql has {got}, lib/tours.ts has {want}")
+        got = {
+            "name": m.group(2).replace("''", "'"), "region": m.group(3).replace("''", "'"),
+            "lat": float(m.group(4)), "lng": float(m.group(5)), "summitM": int(m.group(6)),
+            "verticalM": int(m.group(7)), "duration": m.group(8), "grade": int(m.group(9)),
+            "aspect": m.group(10), "season": m.group(11), "teaser": m.group(12).replace("''", "'"),
+        }
+        for key, value in got.items():
+            if value != r[key]:
+                problems.append(f"{slug}: seed.sql {key} is {value!r}, lib/tours.ts has {r[key]!r}")
     missing = set(rows) - {m.group(1) for m in SEED_ROW.finditer(seed)}
     if missing:
         problems.append(f"in lib/tours.ts but not in seed.sql: {', '.join(sorted(missing))}")
 
-    print(f"\n{len(rows)} tours, {n_profiles} elevation profiles, {n_seed} seed rows")
+    # The English teaser states the same figures as the Norwegian one. Compared
+    # as the multiset of numbers, decimal comma read as decimal point, so a
+    # translation is free to reorder a sentence but not to quote an older card.
+    content = open(os.path.join(REPO, "lib", "i18n", "content.ts")).read()
+    en = {}
+    for m in EN_TEASER.finditer(content):
+        en.setdefault(m.group(1), m.group(2))
+    for slug, r in full.items():
+        if slug not in en:
+            problems.append(f"{slug}: no English teaser in lib/i18n/content.ts")
+            continue
+        want = sorted(x.replace(",", ".") for x in NUMBER.findall(r["teaser"]))
+        got = sorted(x.replace(",", ".") for x in NUMBER.findall(en[slug]))
+        if want != got:
+            problems.append(f"{slug}: English teaser quotes {got}, the Norwegian one {want}")
+
+    # tourmeta.json is the pipeline's copy of the same row.
+    meta = json.load(open("tourmeta.json"))
+    for slug, r in full.items():
+        tm = meta.get(slug)
+        if not tm:
+            problems.append(f"{slug}: not in tourmeta.json — run sync_tourmeta.py")
+            continue
+        for key in ("name", "region", "summitM", "verticalM", "duration", "grade", "aspect", "season", "hasGuide"):
+            if tm.get(key) != r[key]:
+                problems.append(f"{slug}: tourmeta.json {key} is {tm.get(key)!r}, lib/tours.ts has {r[key]!r} — run sync_tourmeta.py")
+
+    print(f"\n{len(rows)} tours, {n_profiles} elevation profiles, {n_seed} seed rows, {len(en)} English teasers")
     if problems:
         print("\nneeds a look:")
         for p in problems:
