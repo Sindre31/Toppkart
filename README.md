@@ -340,9 +340,13 @@ content and data quality that has to be settled before the site is sold to anyon
   Taraldsviktinden's east route along the harbour shore at −2 m and Nonstinden's east route
   across a tidal inlet at −5 m, which `check_ground.py` cannot see because it only asks about
   lakes. And **Storrønden's line drops 29 m into the east face and climbs 42 m out of it in the
-  last 24 m before the cairn**, a notch DTM1 confirms point by point. None of these is fixed
-  here; each is a corridor edit and a re-solve, and the fix, the numbers and the prose it will
-  move are written up under «The shape round» in `scripts/build-routes/README.md`.
+  last 24 m before the cairn**, a notch DTM1 confirms point by point. The spurs and the notch
+  are fixed in the same round by cutting the loops out of the shipped lines — seven cards moved
+  by 10 to 100 m and two guides changed what they said — and `generate_routes.py` now drops the
+  leftover vertices that made the notch. Six more summits carry the same leftover (Rana,
+  Hamperøkken, Vassdalstinden, Kolåstinden, Breitinden, Forkledalstindan) and are listed for
+  their own round. The scribbles and the sea lines are re-solved with the off-water pass fixed;
+  see «The shape round» in `scripts/build-routes/README.md` for all of it.
   What the same round did fix: **five `seed.sql` rows and five English teasers were two
   corrections behind their cards** — Glittertinden's said «1180 høydemeter» beside a
   `vertical_m` of 1228 — because `check_tours.py` compared four numeric columns and no text;

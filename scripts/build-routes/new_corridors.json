@@ -1931,9 +1931,9 @@
       "waypoints": [
         {
           "name": "Vatna i Vassdalen, 976",
-          "lat": 62.28449,
-          "lng": 6.74978,
-          "elevationM": 976.08
+          "lat": 62.28372,
+          "lng": 6.75335,
+          "elevationM": 955
         }
       ],
       "season": "jan–mai",
@@ -6889,9 +6889,9 @@
         },
         {
           "name": "renna mot ryggen nordvest for toppen",
-          "lat": 68.3455,
-          "lng": 17.351,
-          "elevationM": 1437
+          "lat": 68.34438,
+          "lng": 17.35195,
+          "elevationM": 1533
         }
       ],
       "season": "feb–mai",
@@ -7539,9 +7539,9 @@
         },
         {
           "name": "Geitryggen",
-          "lat": 68.57754,
-          "lng": 15.69559,
-          "elevationM": 682
+          "lat": 68.5794,
+          "lng": 15.69257,
+          "elevationM": 654
         },
         {
           "name": "ryggen videre",
@@ -7728,9 +7728,9 @@
             },
             {
               "name": "Vestbotntinden",
-              "lat": 68.52815,
-              "lng": 15.63119,
-              "elevationM": 935.29
+              "lat": 68.53039,
+              "lng": 15.62765,
+              "elevationM": 864
             },
             {
               "name": "ned mot Øvre Storelvvatnet",
@@ -8406,9 +8406,9 @@
         },
         {
           "name": "ryggen austover",
-          "lat": 68.5318,
-          "lng": 16.007,
-          "elevationM": 856
+          "lat": 68.53172,
+          "lng": 16.00395,
+          "elevationM": 885
         }
       ],
       "season": "jan–apr",
@@ -9494,9 +9494,9 @@
         },
         {
           "name": "skardet",
-          "lat": 68.8795,
-          "lng": 17.318,
-          "elevationM": 795
+          "lat": 68.87807,
+          "lng": 17.3187,
+          "elevationM": 867
         },
         {
           "name": "flata austover",
@@ -9865,9 +9865,9 @@
         },
         {
           "name": "Litletind-ryggen",
-          "lat": 68.472,
-          "lng": 16.345,
-          "elevationM": 576
+          "lat": 68.47218,
+          "lng": 16.34923,
+          "elevationM": 645
         }
       ],
       "season": "feb–apr",

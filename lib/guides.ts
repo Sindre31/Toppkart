@@ -1293,15 +1293,15 @@ export const GUIDES: Record<string, TourGuide> = {
   skartinden: {
     slug: "skartinden",
     intro:
-      "1287 høydemeter og 4,44 km fra Vang til Skartinden på 1149 — samme snuplass som Langlitinden, motsatt retning: opp elvedalen til Ytterholla, skardet mellom Vasskartinden og Skartinden, og ryggen eller den store flata austover til toppen. KAST 3 – Komplekst med alpinøks og stegjern; nedkjøringa er 30–40 grader øverst med 60-graders klipper rundt Ytterholla. Grad 4.",
+      "1193 høydemeter og 3,92 km fra Vang til Skartinden på 1149 — samme snuplass som Langlitinden, motsatt retning: opp elvedalen til Ytterholla, skardet mellom Vasskartinden og Skartinden, og ryggen eller den store flata austover til toppen. KAST 3 – Komplekst med alpinøks og stegjern; nedkjøringa er 30–40 grader øverst med 60-graders klipper rundt Ytterholla. Grad 4.",
     ascent: [
       "Fra snuplassen ved Vang — 8 moh — går linja nordover opp elvedalen: 195 moh der korridoren står i dalen, og skoggrensa allerede på 492 etter 1,62 km. Beltet fra 300 til 400 måler 20,9 grader gjennom lia.",
-      "Ytterholla — søkket på 497 — og opp holla om snøen tillater det, til skardet mellom Vasskartinden og Skartinden på 795. Beltet fra 800 til 900 måler 4,9 grader over den store flata bak skardet: en drøy kilometer pust før sluttstøtet.",
-      "Ryggen eller flata austover fra 844: beltet fra 1000 til 1100 er det bratteste i snitt med 24,8 grader, og det bratteste enkeltpartiet, 38,8 grader mellom 843 og 874 moh, ligger der flata reiser seg mot toppartiet. Varden står på 1149.",
+      "Ytterholla — søkket på 497 — og opp holla om snøen tillater det, opp mot skardet mellom Vasskartinden og Skartinden — botnen ligger på 795, linja går over skuldra på 867 uten å gå ned i det. Beltet fra 800 til 900 måler 9,4 grader over flata bak skardet: en halv kilometer pust før sluttstøtet.",
+      "Ryggen eller flata austover fra 844: beltet fra 1000 til 1100 er det bratteste i snitt med 24,8 grader, og det bratteste enkeltpartiet, 38,1 grader mellom 869 og 895 moh, ligger der flata reiser seg mot toppartiet. Varden står på 1149.",
     ],
     descent: [
       "Nedkjøringa er 30–40 grader øverst og 35–40 over Ytterholla — omkranset av 60-graders klipper, sier kilden, og målingen bekrefter dem: NV faller 48,8 grader i snitt med 69,8-vindu, N 45,4 med 63,0. Presis veivalg, særlig i flatt lys.",
-      "Linja gir tilbake 146 av de 1287 meterne den vinner — skardet og flata skal krysses begge veier. Vest, der ruta ligger, er den slakeste målingen med 30,8 i snitt, og det bratte vinduet (35,0) kommer først 330–390 m ut fra varden.",
+      "Linja gir tilbake 52 av de 1193 meterne den vinner — skardet og flata skal krysses begge veier. Vest, der ruta ligger, er den slakeste målingen med 30,8 i snitt, og det bratte vinduet (35,0) kommer først 330–390 m ut fra varden.",
     ],
     avalanche: [
       {
@@ -1318,11 +1318,11 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,200 L20,197 L47,190 L73,183 L98,173 L128,163 L146,155 L163,147 L182,139 L201,132 L214,125 L242,116 L274,105 L292,98 L310,90 L339,85 L365,76 L383,69 L401,64 L426,71 L440,63 L462,69 L481,62 L505,66 L524,57 L535,51 L554,42 L565,36 L584,25 L598,19 L600,18",
+      path: "M0,200 L22,197 L54,190 L83,183 L111,173 L145,163 L165,155 L185,147 L207,139 L227,132 L242,125 L274,116 L310,105 L331,98 L351,90 L384,85 L413,76 L434,69 L456,67 L484,66 L504,63 L519,54 L536,47 L553,39 L565,34 L587,23 L600,18",
       startLabel: "8 moh",
       endLabel: "1149 moh",
-      distanceLabel: "4,4 km",
-      caption: "1287 høydemeter og 4,44 km fra Vang: elvedalen til Ytterholla på 497, skardet på 795 — og flata austover til varden på 1149, med det bratteste enkeltpartiet, 38,8 grader, mellom 843 og 874 moh.",
+      distanceLabel: "3,9 km",
+      caption: "1193 høydemeter og 3,92 km fra Vang: elvedalen til Ytterholla på 497, over skardet — linja på 867, botnen på 795 — og flata austover til varden på 1149, med det bratteste enkeltpartiet, 38,1 grader, mellom 869 og 895 moh.",
     },
   },
   langlitinden: {
@@ -2218,7 +2218,7 @@ export const GUIDES: Record<string, TourGuide> = {
   reinspalen: {
     slug: "reinspalen",
     intro:
-      "1404 høydemeter og 8,44 km for en 1118-topp — Reinspælen er Kvæfjords høyeste, og ryggene dit samler 292 meter gitt tilbake underveis: mye opp og ned, som både kilden og turrapportene sier. KAST 3 – Komplekst med isøks og stegjern; linja måler 21,0 grader i bratteste hundremetersbelte, og det bratteste sammenhengende partiet — 41,7 grader mellom 1073 og 1104 moh — sitter i overgangen til den eksponerte toppryggen, der rapportene beskriver klyving.",
+      "1369 høydemeter og 7,80 km for en 1118-topp — Reinspælen er Kvæfjords høyeste, og ryggene dit samler 257 meter gitt tilbake underveis: mye opp og ned, som både kilden og turrapportene sier. KAST 3 – Komplekst med isøks og stegjern; linja måler 21,0 grader i bratteste hundremetersbelte, og det bratteste sammenhengende partiet — 41,7 grader mellom 1073 og 1104 moh — sitter i overgangen til den eksponerte toppryggen, der rapportene beskriver klyving.",
     ascent: [
       "Fra Våtvoll ved fv. 85 langs Gullesfjorden — 5 moh, parkering i lommene langs vegen slik kilden sier. Opp Kobberyggen: beltet fra 0 til 100 måler 8,9 grader og skogen slutter på 378 moh etter 2,31 km, før ryggen gir tilbake det første søkket — 86 meter ned til 335 før Geitryggen tar over.",
       "Geitryggen er turens rygg: 20,5 grader i beltet fra 500 til 600, flatt over 600, og så jevn stigning — 21,0 grader fra 800 til 900, turens bratteste belte — mot toppryggen. Undulasjonen er grunnen til at kortet bærer 1400 høydemeter for en 1118-topp.",
@@ -2239,7 +2239,7 @@ export const GUIDES: Record<string, TourGuide> = {
       },
       {
         title: "Opp-og-ned-regnskapet",
-        body: "292 meter gis tilbake på ryggene — det er 292 meter som skal klatres igjen på hjemveien. Regn timene deretter: kilden gir 6–7, og de er ærlige.",
+        body: "257 meter gis tilbake på ryggene — det er 257 meter som skal klatres igjen på hjemveien. Regn timene deretter: kilden gir 6–7, og de er ærlige.",
       },
       {
         title: "Før du går",
@@ -2247,11 +2247,11 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,200 L29,194 L54,182 L80,178 L111,172 L134,166 L148,154 L164,139 L179,134 L205,125 L224,126 L246,138 L266,151 L288,153 L317,154 L342,149 L365,135 L378,124 L390,113 L407,98 L429,91 L450,93 L474,89 L496,83 L514,76 L533,57 L553,41 L573,26 L595,25 L600,18",
+      path: "M0,200 L31,194 L59,182 L86,178 L119,172 L145,166 L160,154 L178,139 L197,129 L225,125 L245,133 L266,146 L287,153 L318,154 L346,153 L374,146 L393,131 L404,121 L422,108 L439,94 L467,88 L491,83 L508,73 L529,54 L550,40 L571,26 L595,21 L600,18",
       startLabel: "5 moh",
       endLabel: "1117 moh",
-      distanceLabel: "8,4 km",
-      caption: "1404 høydemeter og 8,44 km fra Våtvoll over Kobberyggen og Geitryggen, med skoggrensa på 378 moh og det bratteste — 41,7 grader mellom 1073 og 1104 moh — i overgangen til toppryggen.",
+      distanceLabel: "7,8 km",
+      caption: "1369 høydemeter og 7,80 km fra Våtvoll over Kobberyggen og Geitryggen, med skoggrensa på 378 moh og det bratteste — 41,7 grader mellom 1073 og 1104 moh — i overgangen til toppryggen.",
     },
   },
   satertinden: {
@@ -2443,7 +2443,7 @@ export const GUIDES: Record<string, TourGuide> = {
     descent: [
       "Ned samme vei — topphenget først, mens du vet hva snøen gjorde på veien opp, så hyllene og motbakken opp igjen til Løbergskaret: 185 av de 565 tilbakegitte metrene skal klatres på hjemveien. Nordsektoren fra toppen måler 13,6 grader i snitt — veien linja kom.",
       "Sør- og austsida er en annen historie: 39,1 og 38,6 grader i snitt med vinduer på 59,7 og 52,8. Og i dalen gjelder samme regel ned som opp: midt i, mellom utløpssonene.",
-      "Kilden gir to startsteder, ikke ett: «Egen parkeringsplass langs R85, rett på sørsiden av elveutløpet. For østruta parkeres det på Gullesfjordbotn camping.» Østruta er den andre, og den kommer inn fra motsatt side av fjellet. Fra campingen på 3 moh holder linja nordsiden av Vesterelva forbi 86 og 91, over vatnet på 76 — 121 der linja går — og videre mellom vatna på 167 til vatnet på 113, som krysses vestover på 278. Så den bratte traseen kilden setter til 30–40 grader, opp forbi 293 og 326 til vatnet på 289 på 332, og sørover langs den slake ryggen på 440 til høgda 667. Derfra over Vestbotntinden på 935 og ned 330 høydemeter til Øvre Storelvvatnet på 605, over vatnet, og opp igjen på 652 og 803 inn på ruta fra Snytindhytta som runder toppen på vestsiden. 1439 høydemeter på 9,13 km mot 1548 på 9,04 km fra Løbergsbukta: nesten samme lengde, litt mindre klatring, 446 meter tilbake mot 565 — det er to traverser av samme fjell fra hver sin fjord. Linja står på is fire steder, og alle fire er kildens egne: 135 meter over vatnet på 76, 90 meter over vatnet på 115 — kildens «vann 113» — 191 meter over vatnet på 274, og 150 meter over Øvre Storelvvatnet på 590. «Krysset vann 76», «vann 113 krysses vestover», «stak over vannet», skriver den. Skogen slipper på 212 moh etter 2,46 km. Beltet fra 400 til 500 moh måler 21,1 grader og det bratteste 30-metersvinduet 36,5 mellom 973 og 996, i topphenget. Alpinøks og stegjern står i faktaboksen for begge rutene.",
+      "Kilden gir to startsteder, ikke ett: «Egen parkeringsplass langs R85, rett på sørsiden av elveutløpet. For østruta parkeres det på Gullesfjordbotn camping.» Østruta er den andre, og den kommer inn fra motsatt side av fjellet. Fra campingen på 3 moh holder linja nordsiden av Vesterelva forbi 86 og 91, over vatnet på 76 — 121 der linja går — og videre mellom vatna på 167 til vatnet på 113, som krysses vestover på 278. Så den bratte traseen kilden setter til 30–40 grader, opp forbi 293 og 326 til vatnet på 289 på 332, og sørover langs den slake ryggen på 440 til høgda 667. Derfra under toppen av Vestbotntinden — linja går over skuldra på 864, ikke over toppen på 935 — og ned 259 høydemeter til Øvre Storelvvatnet på 605, over vatnet, og opp igjen på 652 og 803 inn på ruta fra Snytindhytta som runder toppen på vestsiden. 1360 høydemeter på 8,52 km mot 1548 på 9,04 km fra Løbergsbukta: litt kortere, mindre klatring, 367 meter tilbake mot 565 — det er to traverser av samme fjell fra hver sin fjord. Linja står på is fire steder, og alle fire er kildens egne: 135 meter over vatnet på 76, 90 meter over vatnet på 115 — kildens «vann 113» — 191 meter over vatnet på 274, og 150 meter over Øvre Storelvvatnet på 590. «Krysset vann 76», «vann 113 krysses vestover», «stak over vannet», skriver den. Skogen slipper på 212 moh etter 2,46 km. Beltet fra 400 til 500 moh måler 21,1 grader og det bratteste 30-metersvinduet 36,5 mellom 973 og 996, i topphenget. Alpinøks og stegjern står i faktaboksen for begge rutene.",
     ],
     avalanche: [
       {
@@ -2474,10 +2474,10 @@ export const GUIDES: Record<string, TourGuide> = {
   fiskefjordtindan: {
     slug: "fiskefjordtindan",
     intro:
-      "1076 høydemeter og 7,56 km fra Kanstadbotn til en topp med to sannheter: registerpunktet står på nordtoppen, som terrengmodellen leser 998,9 — men Fri Flyts 967 er sørtoppen, som klatrer til 964,7, og det er dit ruta går. Sørvestsiden er snill — beltet fra 500 til 600 måler 4,0 grader — men austryggen til slutt er eksponert, med turens bratteste parti på 32,8 grader like under varden og en austside som måler 67,2 der den er brattest. Øks og stegjern i sekken.",
+      "1044 høydemeter og 7,27 km fra Kanstadbotn til en topp med to sannheter: registerpunktet står på nordtoppen, som terrengmodellen leser 998,9 — men Fri Flyts 967 er sørtoppen, som klatrer til 964,7, og det er dit ruta går. Sørvestsiden er snill — beltet fra 500 til 600 måler 4,0 grader — men austryggen til slutt er eksponert, med turens bratteste parti på 32,8 grader like under varden og en austside som måler 67,2 der den er brattest. Øks og stegjern i sekken.",
     ascent: [
       "Fra parkeringslomma ved Kobbedalselv bru i Kanstadbotn — 15 moh — følger du sommerstien nordøstover: 176 moh der linja tar den, skoggrensa allerede på 225 etter 1,58 km, og lia på 369. Beltet fra 300 til 400 måler 5,9 grader — dette er slak, åpen skinning.",
-      "Ryggen mellom vatna er turens midtparti: 578 moh der linja står mellom Kobbedalsvatna, 702 videre oppover, og beltet fra 500 til 600 er turens slakeste med 4,0 grader over 1582 meter grunn. Undulasjonen her er grunnen til at turen samler 1076 meter for en 965-topp — 126 gir du tilbake.",
+      "Ryggen mellom vatna er turens midtparti: 578 moh der linja står mellom Kobbedalsvatna, 702 videre oppover, og beltet fra 500 til 600 er turens slakeste med 4,0 grader over 1582 meter grunn. Undulasjonen her er grunnen til at turen samler 1044 meter for en 965-topp — 94 gir du tilbake.",
       "Vestflanken på 856 leverer deg til finalen: ryggen austover, eksponert slik kilden sier, med det bratteste enkeltpartiet — 32,8 grader mellom 885 og 907 moh — like under toppen. Varden står på 965; nordtoppen med registerpunktet og sine 998,9 ligger 900 meter lenger nord, på andre sida av et skar, og er ikke turen.",
     ],
     descent: [
@@ -2499,11 +2499,11 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,200 L26,197 L54,191 L76,178 L98,171 L118,162 L151,149 L176,138 L204,135 L229,127 L254,124 L278,114 L297,101 L318,90 L338,90 L358,90 L383,93 L408,92 L429,76 L443,66 L468,55 L493,53 L511,39 L536,29 L554,39 L571,27 L593,20 L600,18",
+      path: "M0,200 L23,197 L49,193 L71,183 L90,176 L112,169 L134,159 L164,146 L186,138 L212,135 L235,128 L257,125 L283,119 L301,106 L319,94 L339,90 L356,93 L376,90 L398,93 L422,94 L439,79 L458,68 L479,58 L498,55 L521,48 L536,37 L558,29 L578,23 L599,19 L600,18",
       startLabel: "15 moh",
       endLabel: "965 moh",
-      distanceLabel: "7,6 km",
-      caption: "1076 høydemeter og 7,56 km fra Kanstadbotn over ryggen mellom Kobbedalsvatna til sørtoppen på 965 — skoggrensa på 225 moh, og det bratteste, 32,8 grader mellom 885 og 907 moh, på den eksponerte austryggen.",
+      distanceLabel: "7,3 km",
+      caption: "1044 høydemeter og 7,27 km fra Kanstadbotn over ryggen mellom Kobbedalsvatna til sørtoppen på 965 — skoggrensa på 225 moh, og det bratteste, 32,8 grader mellom 885 og 907 moh, på den eksponerte austryggen.",
     },
   },
   moysalen: {
@@ -2864,15 +2864,15 @@ export const GUIDES: Record<string, TourGuide> = {
   helligtinden: {
     slug: "helligtinden",
     intro:
-      "1029 høydemeter og 5,44 km fra Breivikbotn til Helligtinden — 948,0 på skjermen mot publiserte 948, på desimeteren. Nordryggen: hyttefeltet ved Krokelva, Finnvatnet, sørvest utenom skredterrenget, og nordaustryggen av Litletinden med en liten nedkjøring før det siste støtet. KAST 2 – Utfordrende, med stegjern og øks for hard skare — grad 3.",
+      "954 høydemeter og 5,04 km fra Breivikbotn til Helligtinden — 948,0 på skjermen mot publiserte 948, på desimeteren. Nordryggen: hyttefeltet ved Krokelva, Finnvatnet, sørvest utenom skredterrenget, og nordaustryggen av Litletinden med en liten nedkjøring før det siste støtet. KAST 2 – Utfordrende, med stegjern og øks for hard skare — grad 3.",
     ascent: [
       "Fra lomma på fv. 7548 Myklebostadveien i Breivikbotn — 9 moh; kildens F711 — går servicevegen til hyttefeltet ved Krokelva på 59. Skoggrensa ligger allerede på 57 etter 0,4 km, og beltet fra 0 til 100 måler 9,3 grader: åpent terreng nesten fra bilen.",
-      "Opp til Finnvatnet på 282, og sørvest for å unngå skredterrenget slik kilden ber om — 479 moh der linja svinger. Beltet fra 600 til 700 måler 4,7 grader over den store flata mot ryggen.",
-      "Nordaustryggen av Litletinden fra 576, ryggen sørover med en liten nedkjøring — og det siste støtet: beltet fra 800 til 900 er det bratteste i snitt med 19,9 grader, og det bratteste enkeltpartiet, 33,3 grader mellom 626 og 650 moh, er det ene av kildens to parti over 30 langs ryggen. Varden står på 948.",
+      "Opp til Finnvatnet på 282, og sørvest for å unngå skredterrenget slik kilden ber om — 479 moh der linja svinger. Beltet fra 600 til 700 måler 8,3 grader opp mot ryggen.",
+      "Nordaustryggen av Litletinden fra 645, ryggen sørover med en liten nedkjøring — og det siste støtet: beltet fra 800 til 900 er det bratteste i snitt med 19,9 grader, og det bratteste enkeltpartiet på linja, 28,2 grader mellom 646 og 665 moh, ligger under de 30 kilden gir ryggens to bratteste parti — linja legger seg slakere enn ryggkammen der. Varden står på 948.",
     ],
     descent: [
       "For det meste 10–20 grader hjem, med to parti over 30 langs Litletind-ryggen, sier kilden — jevn kjøring, fin for ferske på stabile dager. N-målinga fra varden er den slake sida med 5,5 grader i snitt: ryggen er hjemveien.",
-      "Østskåla mellom Helligtinden og Litletinden er varianten: 31–35 grader ned mot slakere terreng langs sørsida av Tverrelva. Austflanka måler 28,4 i snitt med 57,2-vindu 100–160 m ut — skåla krever stabil snø, og linja gir uansett tilbake 90 av de 1029 meterne på ryggens bølger.",
+      "Østskåla mellom Helligtinden og Litletinden er varianten: 31–35 grader ned mot slakere terreng langs sørsida av Tverrelva. Austflanka måler 28,4 i snitt med 57,2-vindu 100–160 m ut — skåla krever stabil snø, og linja gir uansett tilbake 15 av de 954 meterne på ryggens bølger.",
     ],
     avalanche: [
       {
@@ -2889,11 +2889,11 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,200 L23,197 L45,191 L70,180 L99,168 L119,162 L139,158 L164,152 L179,146 L200,141 L223,134 L243,127 L263,120 L288,111 L304,106 L328,100 L352,89 L372,82 L397,77 L422,80 L440,81 L452,76 L467,70 L488,65 L516,63 L541,55 L561,43 L578,31 L598,18 L600,18",
+      path: "M0,200 L21,198 L37,195 L64,184 L86,177 L108,168 L129,162 L148,158 L171,154 L187,147 L204,143 L220,140 L241,134 L257,128 L275,123 L295,117 L315,109 L332,105 L354,100 L375,91 L396,83 L418,78 L437,76 L451,72 L472,66 L494,62 L520,61 L542,52 L558,43 L574,32 L592,22 L600,18",
       startLabel: "9 moh",
       endLabel: "948 moh",
-      distanceLabel: "5,4 km",
-      caption: "1029 høydemeter og 5,44 km fra Breivikbotn: Krokelva-hyttene, Finnvatnet på 282, sørvest utenom skredterrenget — og Litletind-ryggen fra 576 til varden på 948.",
+      distanceLabel: "5,0 km",
+      caption: "954 høydemeter og 5,04 km fra Breivikbotn: Krokelva-hyttene, Finnvatnet på 282, sørvest utenom skredterrenget — og Litletind-ryggen fra 645 til varden på 948.",
     },
   },
   kvasstinden: {
@@ -3126,7 +3126,7 @@ export const GUIDES: Record<string, TourGuide> = {
   skjomtinden: {
     slug: "skjomtinden",
     intro:
-      "1487 høydemeter og 7,64 km fra Nervatnet i Håkvikdalen til Den sovende dronning — profilen alle i Narvik kjenner fra Bjerkvik-siden, og en av områdets fineste turer. Fri Flyt gir KAST 2 – Utfordrende, men utstyrslista sier isøks og stegjern, vestsidene er tidvis bare og steinete, og linja gir tilbake 134 høydemeter på traversen — kortet bærer grad 4. Bratteste hundremetersbelte måler 20,3 grader; det bratteste sammenhengende partiet, 33,7 grader, sitter i renna mellom 1439 og 1462 moh.",
+      "1386 høydemeter og 7,17 km fra Nervatnet i Håkvikdalen til Den sovende dronning — profilen alle i Narvik kjenner fra Bjerkvik-siden, og en av områdets fineste turer. Fri Flyt gir KAST 2 – Utfordrende, men utstyrslista sier isøks og stegjern, vestsidene er tidvis bare og steinete, og linja gir tilbake 33 høydemeter på traversen — kortet bærer grad 4. Bratteste hundremetersbelte måler 20,3 grader; det bratteste sammenhengende partiet, 33,7 grader, sitter i renna mellom 1439 og 1462 moh.",
     ascent: [
       "Fra parkeringa etter brua ved Nervatnet — 223 moh, E6 sørover fra Narvik og inn Håkvikdalen; lokalbussen til brua er kildens eget alternativ. Nervatnet er regulert, så linja holder stien langs vannkanten på land — kilden tilbyr isen «om den er stabil», og det tilbudet takker dette produktet alltid nei til. Over myra sør for vannet og opp gjennom den glisne skogen: skogen slutter på 546 moh etter 2,96 km.",
       "Like etter tregrensa dreier du til høyre opp ryggen mot Litletind, følger forsenkningen rundt den og traverserer på skrå opp til ryggen mellom Litletind og Dronninga — 945 moh der linja tar den. Beltene er tålmodige: 12–13 grader fra 600 til 900, så turens bratteste hundremeter, 20,3 grader fra 1000 til 1100.",
@@ -3139,7 +3139,7 @@ export const GUIDES: Record<string, TourGuide> = {
     avalanche: [
       {
         title: "Ruta",
-        body: "KAST 2 – Utfordrende hos Fri Flyt, men graden på kortet er 4: bare, steinete vestsider med gange til fots, isøks og stegjern i utstyrslista, 134 høydemeter gitt tilbake på traversen, og en snørenne på 33,7 grader som siste nøkkel. Dette er Slogen-klassen — en fjelltur på ski, ikke en skitur med topp.",
+        body: "KAST 2 – Utfordrende hos Fri Flyt, men graden på kortet er 4: bare, steinete vestsider med gange til fots, isøks og stegjern i utstyrslista, 33 høydemeter gitt tilbake på traversen, og en snørenne på 33,7 grader som siste nøkkel. Dette er Slogen-klassen — en fjelltur på ski, ikke en skitur med topp.",
       },
       {
         title: "Renna og vestsidene",
@@ -3155,11 +3155,11 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,199 L22,200 L43,199 L68,199 L92,200 L121,198 L145,195 L177,185 L198,174 L216,165 L241,153 L265,148 L287,140 L311,132 L336,120 L360,115 L379,105 L400,98 L417,88 L432,80 L449,71 L467,61 L484,51 L502,47 L520,41 L535,33 L556,24 L570,35 L587,23 L600,18",
+      path: "M0,199 L24,200 L46,199 L72,199 L98,200 L129,198 L155,195 L189,185 L212,174 L230,165 L257,153 L282,148 L306,140 L332,132 L358,120 L384,115 L404,105 L426,98 L445,88 L460,80 L479,71 L498,61 L516,51 L534,44 L551,39 L574,29 L590,21 L600,18",
       startLabel: "223 moh",
       endLabel: "1576 moh",
-      distanceLabel: "7,6 km",
-      caption: "1487 høydemeter og 7,64 km fra Nervatnet om ryggen mellom Litletind og Dronninga og traversen på vestsidene, med skoggrensa på 546 moh og det bratteste — 33,7 grader mellom 1439 og 1462 moh — i renna.",
+      distanceLabel: "7,2 km",
+      caption: "1386 høydemeter og 7,17 km fra Nervatnet om ryggen mellom Litletind og Dronninga og traversen på vestsidene, med skoggrensa på 546 moh og det bratteste — 33,7 grader mellom 1439 og 1462 moh — i renna.",
     },
   },
   torskmannen: {
@@ -4271,11 +4271,11 @@ export const GUIDES: Record<string, TourGuide> = {
   ytstevasshornet: {
     slug: "ytstevasshornet",
     intro:
-      "833 høgdemeter på 4,19 km frå Svartevatnet, bratt opp Vassdalen til vatna på 976 moh og så nordvest mot ein smal topprygg. Brattaste samanhengande parti måler 25,0 grader, og dei siste metrane blir gjerne gått utan ski.",
+      "816 høgdemeter på 3,79 km frå Svartevatnet, bratt opp Vassdalen forbi vatna på 976 moh og så nordvest mot ein smal topprygg. Brattaste samanhengande parti måler 25,0 grader, og dei siste metrane blir gjerne gått utan ski.",
     ascent: [
       "Start på parkeringa ved Svartevatnet, 538 moh, ved hovudvegen mellom Sykkylven og Stranda. Dei fyrste 904 metrane grunn er flate — 4,3 grader — og dei går langs austbredden, ikkje over vatnet. Svartevatnet er eit magasin: vassflata måler 526 moh, tolv meter under parkeringa, og linja held land heile vegen rundt nordenden og ned til sørenden på 524.",
       "Gå vestover, på venstre side av elva, opp Vassdalen. Her er den bratte delen av turen: 18,2 grader frå 600 til 700 moh, 22,4 frå 700 til 800 over berre 225 meter grunn, og 20,5 frå 800 til 900, med brattaste samanhengande parti på 25,0 grader mellom 728 og 749 moh. Skogen held til 691 moh, og frå 706 er du i ope terreng.",
-      "Ved dei små fjellvatna på 976 moh flatar det ut igjen — bandet frå 900 til 1000 moh måler 6,3 grader over 945 meter grunn. Det er her du ser resten av ruta, og det er òg den naturlege staden å snu om vinden har bygd skavl på ryggen over.",
+      "Ved dei små fjellvatna — dei ligg på 976 moh, linja passerer dei på 955 — flatar det ut igjen: bandet frå 900 til 1000 moh måler 10,8 grader over 546 meter grunn. Det er her du ser resten av ruta, og det er òg den naturlege staden å snu om vinden har bygd skavl på ryggen over.",
       "Derfrå held du nordvestover mot toppryggen: 11,8 grader frå 1000 til 1100 moh og 18,0 frå 1100 til 1200. Dei siste metrane opp til 1331 moh blir gjerne gått utan ski.",
     ],
     descent: [
@@ -4297,11 +4297,11 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,197 L21,198 L46,198 L65,199 L91,197 L111,189 L136,179 L151,170 L174,158 L194,145 L207,137 L226,126 L252,112 L278,103 L303,100 L326,102 L349,102 L372,94 L394,86 L413,80 L439,72 L461,62 L483,49 L510,43 L536,36 L568,25 L594,20 L600,18",
+      path: "M0,197 L22,198 L36,198 L58,198 L79,200 L100,197 L122,190 L143,182 L157,175 L172,168 L193,158 L214,145 L222,141 L241,131 L256,123 L278,112 L300,104 L322,102 L344,94 L365,89 L379,83 L401,80 L422,72 L443,63 L461,53 L479,47 L507,41 L529,36 L557,28 L580,20 L600,18",
       startLabel: "538 moh",
       endLabel: "1331 moh",
-      distanceLabel: "4,2 km",
-      caption: "833 høgdemeter og 3,93 km frå Svartevatnet langs austbredden og opp Vassdalen til vatna på 976 moh, med skogen som slepper taket på 691.",
+      distanceLabel: "3,8 km",
+      caption: "816 høgdemeter og 3,79 km frå Svartevatnet langs austbredden og opp Vassdalen forbi vatna på 976 moh, med skogen som slepper taket på 691.",
     },
   },
   rana: {
@@ -4894,7 +4894,7 @@ export const GUIDES: Record<string, TourGuide> = {
   storronden: {
     slug: "storronden",
     intro:
-      "1145 høydemeter fra Spranget, men fjellet begynner først etter seks kilometer: innmarsjen til Rondvassbu stiger 132 høydemeter, og resten kommer på 2,6 kilometer opp vestryggen. Enklere enn Rondslottet fra samme parkering — ingen egg, ingen gjenstigning.",
+      "1108 høydemeter fra Spranget, men fjellet begynner først etter seks kilometer: innmarsjen til Rondvassbu stiger 132 høydemeter, og resten kommer på 2,6 kilometer opp vestryggen. Enklere enn Rondslottet fra samme parkering — ingen egg, ingen gjenstigning.",
     ascent: [
       "Fra Spranget p-plass, 1082 moh, følger du Rondvassbu-vegen seks kilometer nordøstover: over 1137 moh, gjennom dalen sørvest for hytta og fram til Rondvassbu på 1214 moh. Bandet mellom 1100 og 1200 moh måler 1,3 grader i snitt over fire og en halv kilometer. Rundt vika ved Lonin i sørenden av Rondvatnet holder du deg på land i stedet for å ta snarvegen over isen.",
       "Merk startpunktet: bomvegen til Spranget brøytes ikke, og parkeringa er offisielt åpen fra midten av juni. I mars–mai er Mysusæter siste brøytepunkt — det er 4,5 kilometer og hundre høydemeter lenger ned, og de kommer i tillegg til alt som står her.",
@@ -4921,11 +4921,11 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,199 L26,200 L50,198 L76,196 L100,195 L123,191 L149,190 L171,189 L194,187 L221,188 L242,187 L263,186 L289,185 L313,184 L339,178 L362,173 L386,166 L410,155 L431,140 L452,121 L478,107 L497,91 L520,82 L543,66 L563,42 L581,28 L599,25 L600,18",
+      path: "M0,199 L26,200 L45,199 L71,197 L92,195 L113,194 L137,191 L157,189 L179,188 L198,187 L223,188 L242,187 L261,186 L285,184 L308,185 L332,182 L353,175 L372,171 L395,161 L417,152 L435,137 L456,119 L480,107 L497,92 L517,84 L538,71 L557,52 L572,34 L593,21 L600,18",
       startLabel: "1082 moh",
       endLabel: "2139 moh",
-      distanceLabel: "10,3 km",
-      caption: "1145 høydemeter og 10,26 km fra Spranget, der 698 av høydemetrene kommer på de siste 2,85 kilometerne opp vestryggen.",
+      distanceLabel: "10,2 km",
+      caption: "1108 høydemeter og 10,23 km fra Spranget, der 698 av høydemetrene kommer på de siste 2,85 kilometerne opp vestryggen.",
     },
   },
   skala: {

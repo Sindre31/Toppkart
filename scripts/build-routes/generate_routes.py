@@ -31,6 +31,7 @@ from router import (
 SIMPLIFY_EPS_M = 10.0
 RESAMPLE_M = 45.0
 MAX_OK_ANGLE = 42.0
+SUMMIT_LEG_MIN_M = 30.0  # the final leg to the pinned summit is at least this long
 
 SUMMIT_FINE_M = 400      # how much of the finish is re-read at 1 m
 SUMMIT_TILE_M = 1000     # tile side, so the disc above fits with room to spare
@@ -322,6 +323,18 @@ def build(route_rec, summit):
     # them a few metres and those two points are the ones users recognise.
     pts[0] = (th["lat"], th["lng"])
     pts[-1] = (summit["lat"], summit["lng"])
+    # …and drop whatever the smoothing left inside the last leg. The router
+    # stops on the grid cell nearest the summit, Chaikin rounds the corner it
+    # made getting there, and the resample can leave one or two vertices a
+    # dozen metres from the cairn on whichever side the grid happened to
+    # approach from. Pinning the last point onto the true summit then draws a
+    # jog through that side. On Storrønden it drew the line 2126 → 2097 → 2139
+    # over the final 24 m: down into the notch south of the cairn, across the
+    # east face, up to the top — while v284, 29 m due west, sits on the gentle
+    # side the line had climbed all along. A vertex closer to the summit than
+    # this is the grid's idea of where the top was, not the ridge.
+    while len(pts) > 2 and haversine(*pts[-2], *pts[-1]) < SUMMIT_LEG_MIN_M:
+        del pts[-2]
 
     # A corridor that says the ice cannot be assumed gets its line taken off the
     # water for real, not merely priced away from it.
