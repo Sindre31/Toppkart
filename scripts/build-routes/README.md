@@ -5586,7 +5586,7 @@ What ran, and what it said:
 | `check_guides.py` | 185 guides, both languages, on `guide_facts.json` rebuilt from scratch (one DTM1 read per vertex, three hours) | 0 unsourced numbers, 0 reassurance claims |
 | `check_ground.py` | all 223 routes, three hours against maps.mail.ru's Overpass | 9 findings: four trail claims never measured before, one that is the reservoir, four one-vertex tarn clips — below |
 | a denser DTM1 re-read | every 8th vertex of every route, 5382 points | 5381 within 5 m of the stored elevation; one stretch of Fanaråken's Turtagrø line reads up to 27 m low — below |
-| `check_geometry.py` (new) | 223 routes, offline | 46 things to look at in 34 tours as found, every one of them below; 29 in 23 after the fixes, all of them mid-route resample notches and steps |
+| `check_geometry.py` (new) | 223 routes, offline | 46 things to look at in 34 tours as found, every one of them below; 8 in 6 after the fixes, all of them real steps the guides describe |
 
 ### Five cards whose seed row and English teaser were two corrections behind
 
@@ -5910,6 +5910,41 @@ three on Melåaksla's (480, 586, 591), two on Reinspalen's (288) and five on
 Snøtindan's Løbergsdalen line (571–646, the two tarns its guide says it
 passes on land, which is now true). `check_ground` comes back with 0 m on
 water for all seven routes of the four tours.
+
+### The mid-route notches
+
+The 29 items the shape check still listed after everything above were the
+sampling notches: a segment over 45° with ten metres or more of rise, or a
+vertex 12 m above or below both neighbours within 60 m of ground, in the
+middle of a line rather than at its summit. Read closely they were two
+things. **Ten were small out-and-backs** of 60–230 m the spike rule had
+caught by their shape — Snøtinden i Tjeldsund's line walked 161 m out and
+back at 371 m and read as a 39 m climb, Varden's 233 m at 313 m — and were
+cut by the same-height-loop rule. **The rest were single vertices the
+coarse solve had put on a boulder, a stream bank or the lip of a step**, and
+those were moved the way the water clips were: DTM1 read in a disc of 5–25 m
+around the vertex, the vertex moved to the nearest dry point at which both
+adjacent segments come in at 40° or less. Twenty moved, by 5–20 m, well
+inside the 9–15 m cell of the grid they were solved on. **Six had no such
+ground within 25 m and stand**, because they are real: Breitinden's and
+Kolåstinden's summit blocks, Nona's two summit steps, Kongsviktinden's east
+side under the cairn, and Møysalen's 51 m notch, which its guide measured at
+2.3 m spacing and calls what it is. Fastdalstinden's Varto line had a 124 m
+zigzag on the flat bog at 513 m that no loop rule fits, and was straightened
+between the patch's entry and exit vertices.
+
+Every touched line's figures were re-derived and moved into both languages
+by the same substitutions as before; where the steepest thirty metres moved
+*place* — Reinspalen's from the summit-ridge transition to the step onto
+Kobberyggen, Forkledalstindan's from the start of the ridge to the last
+stretch under the cairn, Lodalskåpa's from the summit ridge to the slopes
+below the glacier, Snøtinden i Tjeldsund's out of the loop it had been in —
+the sentence was rewritten to say where the steep ground is. Six cards move
+by 10–65 m (Snøtinden i Tjeldsund 1020 → 980, Strandtinden 1160 → 1140,
+Forkledalstindan 1020 → 980, Varden 825 → 760, Middagstinden 1310 → 1290,
+Kvitegga 1480 → 1460); the guide, band, card and shape checks and the test
+suite are clean, and what `check_geometry.py` lists now is the six real
+steps.
 
 ### One `check_ground` trail finding that is the reservoir, not the road
 

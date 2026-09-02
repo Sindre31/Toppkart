@@ -351,8 +351,10 @@ content and data quality that has to be settled before the site is sold to anyon
   the guide calls «kammen» (card 1600 → 1560). The scribbles and the sea lines are re-solved with the off-water pass fixed (one dry
   vertex per wet run, and `Havflate` counted as water): Jakobstinden and Kongsviktinden lost a
   kilometre of loops each and their cards move 1060 → 1020 and 1090 → 1050, and the two sea routes
-  stand on land. The four tarn clips are nudged onto the shore and the four trail claims state
-  their measured gap. See «The shape round» in `scripts/build-routes/README.md` for all of it.
+  stand on land. The four tarn clips are nudged onto the shore, the four trail claims state
+  their measured gap, and the 29 mid-route notches are gone: ten were small out-and-backs and were
+  cut, twenty vertices moved 5–20 m onto ground that reads like their neighbours, and six real
+  steps stand and are the only shape findings left. See «The shape round» in `scripts/build-routes/README.md` for all of it.
   What the same round did fix: **five `seed.sql` rows and five English teasers were two
   corrections behind their cards** — Glittertinden's said «1180 høydemeter» beside a
   `vertical_m` of 1228 — because `check_tours.py` compared four numeric columns and no text;
