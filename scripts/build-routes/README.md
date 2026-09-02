@@ -5871,8 +5871,18 @@ guide does not name — Kjølen's Slettaelva route at 126 m, Melåaksla's ridge
 route at 600 m, Reinspalen's Geitryggen route at 287 m and Snøtindan's
 Løbergsdalen route at 641 m. Below the 60 m the check normally reports at,
 surfaced only because Overpass returned no polygon to measure the shore
-against; a sentence naming each height is what the Trondheim-round rule
-asks for, and it is not written yet.
+against.
+
+All four were taken off the water rather than named, with the pipeline's
+own pass applied locally: the wet vertices moved to the nearest dry ground
+(10–25 m away in every case), the legs either side read every 2.5 m and
+lifted where wet, and the moved vertices given DTM1 elevations. Read that
+closely, the clips were more than one vertex each — three on Kjølen's
+Slettaelva line (127, 131 and a third at 357 m the check had not reported),
+three on Melåaksla's (480, 586, 591), two on Reinspalen's (288) and five on
+Snøtindan's Løbergsdalen line (571–646, the two tarns its guide says it
+passes on land, which is now true). `check_ground` comes back with 0 m on
+water for all seven routes of the four tours.
 
 ### One `check_ground` trail finding that is the reservoir, not the road
 
