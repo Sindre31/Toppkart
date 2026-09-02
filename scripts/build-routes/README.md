@@ -5849,12 +5849,22 @@ answers now, and four guides promise a mapped line the drawn one leaves:
 | `hogevarde/norefjellstua` | «oppkjørt» | 427 m, 1949 m of 11668 beyond 250 m | 3.3 km out, at 1102 m |
 | `grafjell/tempelseter` | «løypa» | 292 m, 300 m of 8044 beyond 250 m | 7.1 km out, at 1351 m |
 
-None of the four is settled here. Høgevarde's Tempelseter line already has
-the precedent — its guide states the gap and says the mapped loops are
-`piste:type=nordic` that need not reach a summit — and the same reading may
-hold for its Norefjellstua line; the other three want the map and the guide
-side by side, which is a round of its own. The fifth trail finding,
-Fastdalstinden's Varto route, is the reservoir and is closed below.
+All four were then read with the map and the guide side by side, and all
+four are the Tempelseter shape rather than a line beside a path it should be
+on. Gygrastølen's guide names the anleggsveg at the start and on the way
+down; the road ends at Gygrastølvatnet, the line above it is on a ridge above
+the treeline, and the mapped way `check_trail` measured against is a summer
+path 526 m away — the check measured the whole line because another path
+reaches the cairn. Gyranfisen's «Løypene» is a caveat about grooming, and the
+line's own way over the ridge from Svarttjernskollen is 443 m from a nordic
+loop that goes round it. Høgevarde's Norefjellstua line leaves the network in
+three places along Norefjellsryggen, all of them nordic loops or a summer
+path. Gråfjell's line leaves the track for its last three hundred metres
+below a summit the guide already says the track does not reach directly. In
+each case the copy now states the measured gap and where it is, in both
+languages, which is what `check_trail` softens on; the four come back as
+notes. The fifth trail finding, Fastdalstinden's Varto route, is the
+reservoir and is closed below.
 
 The other four are water: one vertex each, 45–46 m of line, on a tarn the
 guide does not name — Kjølen's Slettaelva route at 126 m, Melåaksla's ridge

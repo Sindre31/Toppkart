@@ -4823,7 +4823,7 @@ Fjellet er slakt i alle retninger. Radialmålinger fra varden gir 4,8 til 12,6 g
     ),
     jsonb_build_object(
       'title', 'Terrenget utenfor',
-      'body',  'Ingen retning fra varden måler over 12,6 grader i snitt de første 500 meterne. Ryggen fra Svarttjernskollen er avblåst i vind, og søkket mot Fjelldalen og Steintjern må krysses begge veger. Løypene til Gyranfisen og Treknatten blir kjørt bare når forholdene tillater det og prioriteres i vinter- og påskeferien — utenom det er ruta usporet myr og fjell. Deler av området ligger i Vikerfjell naturreservat.'
+      'body',  'Ingen retning fra varden måler over 12,6 grader i snitt de første 500 meterne. Ryggen fra Svarttjernskollen er avblåst i vind, og søkket mot Fjelldalen og Steintjern må krysses begge veger. Løypene til Gyranfisen og Treknatten blir kjørt bare når forholdene tillater det og prioriteres i vinter- og påskeferien — utenom det er ruta usporet myr og fjell. Deler av området ligger i Vikerfjell naturreservat. Over ryggen fra Svarttjernskollen går linja sin egen veg, opptil 443 meter fra den kartlagte løypa ved 1039 moh — der er løypa ikke noe å navigere etter.'
     ),
     jsonb_build_object(
       'title', 'Før du går',
@@ -5031,7 +5031,7 @@ Videre nordover forbi Vesletjenn på 1095 moh. Dette er den flate delen: bandet 
 
 Ved Donkelitjenn, 1156 moh, kaller ut.no turen halvgått, og oppgir at det er 313 høydemeter igjen. Det er deres løype som er halv der; den routede linja her er kortere og har vannet på to tredeler. Uansett er det herfra det stiger: 6,3 grader fra 1200 til 1300 moh, og et sted mellom 1283 og 1302 moh ligger bratteste sammenhengende parti på turen, 22,9 grader.
 
-Løypa fortsetter nordover til den deler seg rundt 1282 moh, og grenen som dreier østover går opp på Gråfjell. Bandet fra 1300 til 1400 moh er det bratteste, 10,0 grader over 585 meter grunn, og det siste bandet, over 1400 moh, måler 6,4 grader. Varden står på 1466 moh, 4,5 km nordvest for Høgevarde.',
+Løypa fortsetter nordover til den deler seg rundt 1282 moh, og grenen som dreier østover går opp på Gråfjell. Bandet fra 1300 til 1400 moh er det bratteste, 10,0 grader over 585 meter grunn, og det siste bandet, over 1400 moh, måler 6,4 grader. Varden står på 1466 moh, 4,5 km nordvest for Høgevarde. De siste tre hundre meterne under toppen, fra 1328 til 1378 moh, går linja opptil 292 meter fra den kartlagte løypa.',
   description_down = 'Ned samme vegen — men ikke sørover fra varden. Ruta kommer inn på toppen fra nordvest, så den første kilometeren ned går tilbake dit løypa delte seg på 1282 moh, og først derfra svinger du sørover mot Donkelitjenn. Toppen er rund og flat, og det er verdt å vite hvor rund: radialmålinger fra varden gir 5,2 til 18,3 grader i snitt over 500 meter i alle åtte retninger, og det bratteste 60-metersvinduet på hele fjellet måler 30,2 grader.
 
 Det er derfor Gråfjell er en navigasjonstur og ikke en skredtur. Går du feil ned fra et rundt topplatå i skodde, ender du ikke i en henging — du ender i feil dal, med fem kilometer myr og tjern mellom deg og bilen. Ta peiling på toppen mens du kan se, og hold løypa tilbake over Donkelitjenn.',
@@ -5115,7 +5115,7 @@ Over anlegget stiger det jevnt — 8,8 grader fra 1000 til 1100 moh og 7,8 fra 1
 Fra ryggen på rundt 1190 moh svinger ruta nordøstover mot hytta. Bandet fra 1200 til 1300 moh er det bratteste på turen, 11,8 grader over 496 meter grunn, og over det flater det ut igjen: 7,7 grader fra 1300 til 1400.
 
 DNT-hytta Høgevarde ligger på 1397 moh, og toppen 560 meter lenger nordøst, på 1461. Det siste bandet, over 1400 moh, måler 3,5 grader over 810 meter grunn — flatt, og samtidig den mest værutsatte delen av turen. Gamle Høgevarde turisthytte har kafé i vinterferiene og påsken, og skilt nederst i bakken sier om den er åpen. Merk at linja går over Høgevardtjenn på 1378 moh på veg mot toppen — 68 meter på Tempelseter-ruta, opptil 60 meter fra land, og 45 meter på Norefjellstua-ruta, opptil 20 meter fra land. Det er et lite tjern, naturlig og uregulert, og begge linjene skjærer et hjørne av det.',
-  description_down = 'Ned samme vegen, sørvestover. Det er den slake sida av fjellet, og målingene sier hvor slak: 7,1 grader i snitt mot vest og 8,6 mot sørvest over 500 meter, med bratteste 60-metersvindu på 25,6 og 23,8 grader. Den andre dokumenterte ruta, høyfjellsruta fra Norefjellstua over Norefjellsryggen, gir 826 høydemeter på 11,67 km og er en annen dag.
+  description_down = 'Ned samme vegen, sørvestover. Det er den slake sida av fjellet, og målingene sier hvor slak: 7,1 grader i snitt mot vest og 8,6 mot sørvest over 500 meter, med bratteste 60-metersvindu på 25,6 og 23,8 grader. Den andre dokumenterte ruta, høyfjellsruta fra Norefjellstua over Norefjellsryggen, gir 826 høydemeter på 11,67 km og er en annen dag. Den følger løypenettet i endene, men går sin egen veg tre steder — verst 427 meter fra nærmeste kartlagte spor ved 1119 moh, og 317 og 364 meter unna over Norefjellsryggen ved 1315 og 1340 moh.
 
 Fristelsen er å ta av mot øst, mot Norefjell skisenter som er godt synlig fra varden. Det er ikke rett nedenfor: anlegget ligger 9,85 kilometer unna på peiling 148, altså sørøst. Å sette kursen dit fra toppen er å velge den bratteste sektoren på fjellet — øst måler 25 grader i snitt og bryter av i 41,5 grader 70 til 130 meter ut fra varden, nordøst gir 41,3, og sørøst, som er retningen mot anlegget, 51,2 grader i vinduet 420 til 480 meter ut. Toppryggen er ofte avblåst mens snøen ligger fin 200 meter lenger nede, og det er nettopp da linjevalget flyttes uten at noen bestemmer seg for det.',
   avalanche_notes  = jsonb_build_array(
@@ -5137,7 +5137,7 @@ where slug = 'hogevarde';
 update public.tk_tours set
   description_up   = 'Start der anleggsvegen tek av oppover frå Ænes, 90 moh; kyrkja som rutebeskrivinga nemner ligg på 41 moh nede ved fjorden. Dei fyrste hundre høgdemetrane går på 6,3 grader, og så tek vegen fatt: 11,3 grader frå 100 til 200 moh og 12,9 frå 200 til 300.
 
-Følg stien vidare mot Gygrastølvatnet på 492 moh. Bandet frå 400 til 500 moh er det slakaste på turen, 5,6 grader over 1035 meter grunn — det er flata rundt vatnet.
+Følg stien vidare mot Gygrastølvatnet på 492 moh. Bandet frå 400 til 500 moh er det slakaste på turen, 5,6 grader over 1035 meter grunn — det er flata rundt vatnet. Anleggsvegen endar ved vatnet, og over det finst det ingen kartlagd sti der linja går: den nærmaste ligg opptil 526 meter unna, ved 566 moh, så ryggen er ditt eige vegval.
 
 Frå vatnet går du opp på sjølve ryggen og følgjer han. Skogen held til 590 moh; over det er alt ope. Stigninga er jamn og aukar gradvis: 16,8 grader frå 600 til 700 moh, 19,4 frå 800 til 900 og 19,8 frå 1000 til 1100, som er brattaste hundremeteren. Brattaste samanhengande parti måler 25,4 grader mellom 1042 og 1063 moh.
 
