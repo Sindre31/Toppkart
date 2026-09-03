@@ -5394,7 +5394,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       "Round the knoll you come onto the southeast ridge and the summer path from Keisarpasset. Follow it over Fannaråknosi and on along the east ridge to Fanaråken. Large cornices hang on the north side the whole way, and the north side falls 55–58° in the top 90 metres below the crest — keep to the south of it, also when the visibility is good.",
     ],
     descent: [
-      "You follow the same line down — east and northeast facing, even and gentle, with reliable spring snow well into the season. The other documented route, from Turtagrø through Helgedalen, gives 1196 vertical metres and is a different day.",
+      "You follow the same line down — east and northeast facing, even and gentle, with reliable spring snow well into the season. The other documented route, from Turtagrø through Helgedalen, gives 1228 vertical metres and is a different day.",
       "The commonest mistake: holding height above the glacier on the way down, so you end up too high west of the 1688 knoll and have to come down where it is steepest. Drop round the knoll the way you came up. And remember the last stretch is not free: from the dam at 1343 m it climbs back to Korpen at 1397, and the west side undulates — 113 metres in total on the way in, and the same again on the way out.",
     ],
     avalanche: [

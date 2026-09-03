@@ -5725,7 +5725,12 @@ on the water between the sampled vertices). The one exception is
 against 1322–1341 m on the ground: five vertices 14–27 m low on a moraine
 bump the resample did not read, so that route's gain is understated by
 roughly 25 m. It does not touch the card — the primary is the Fannaråkhytta
-line — and the fix is `resample_dtm1.py` on that one route.
+line — and the fix was `resample_dtm1.py` on the tour, run after the round
+merged: the Turtagrø line's gain came out 1228 against a stored 1226 (the
+loss absorbs most of the bump), its steepest thirty metres moved from 28,5°
+at 1314–1337 to 37,1° at 1299–1322 where the moraine rises, and the guide's
+«1196 høydemeter» for that route — a figure from before its last re-solve —
+now reads 1228. The primary moved by a metre.
 
 The 61 lake samples fall on 30 routes, and 27 of them name the lake's height
 in the guide, as `check_ground` has required since the Trondheim round. The
