@@ -15,7 +15,7 @@ import {
 } from "lucide-react";
 
 import type { Lang } from "@/lib/i18n";
-import { mapDict } from "@/lib/i18n/map";
+import { weatherDict } from "@/lib/i18n/weather";
 import {
   compassFrom,
   describeSymbol,
@@ -23,14 +23,20 @@ import {
   type SymbolInfo,
   type WeatherForecast,
 } from "@/lib/weather";
-import s from "./kart.module.css";
+import s from "./weather.module.css";
 
 /** Været på toppen de neste tre dagene, fra MET Norway.
  *
- *  Hentes i nettleseren av samme grunn som skredvarselet (`AvalanchePanel`):
- *  toppen byttes uten navigasjon, og en rundtur til serveren per trykk ville
- *  gjort at panelet hang etter valget. Og som skredvarselet er det åpent for
- *  alle — vær er sikkerhetsinformasjon om fjellet man ser på.
+ *  Står i turpanelet på `/kart` og på turguiden, og er åpent for alle begge
+ *  steder — vær er sikkerhetsinformasjon om fjellet man ser på, som
+ *  skredvarselet.
+ *
+ *  Hentes i nettleseren, også på guiden der sida ellers rendres på serveren.
+ *  På kartet byttes toppen uten navigasjon, og en rundtur per trykk ville
+ *  gjort at panelet hang etter valget. På guiden ville et varsel i HTML-en
+ *  gjort at sida ventet på MET før den første byten — og en guide lagret med
+ *  «Lagre offline» ville vist et varsel fra den dagen den ble lagret, som om
+ *  det var dagens.
  *
  *  Panelet sier hva tallene er. Temperaturen er regnet for toppens høyde;
  *  vinden er modellens og ikke ryggens. Det står under tallene, ikke i en
@@ -67,13 +73,20 @@ export function WeatherPanel({
   lat,
   lng,
   lang,
+  heading: Heading = "h3",
+  className,
 }: {
   slug: string;
   lat: number;
   lng: number;
   lang: Lang;
+  /** Overskriftsnivået der panelet står: `h3` i kartets turpanel, `h2` som
+   *  egen del av turguiden. */
+  heading?: "h2" | "h3";
+  /** Rammen rundt kommer fra stedet panelet står, ikke fra panelet. */
+  className?: string;
 }) {
-  const t = mapDict(lang);
+  const t = weatherDict(lang);
   const [forecast, setForecast] = useState<WeatherForecast | null>(null);
 
   useEffect(() => {
@@ -97,8 +110,8 @@ export function WeatherPanel({
   const num = (v: number, digits = 0) =>
     v.toLocaleString(locale, { maximumFractionDigits: digits, minimumFractionDigits: 0 });
   const dayLabel = (date: string, i: number) => {
-    if (i === 0) return t.weatherToday;
-    if (i === 1) return t.weatherTomorrow;
+    if (i === 0) return t.today;
+    if (i === 1) return t.tomorrow;
     /* Middag UTC er samme kalenderdag i Norge året rundt. */
     const name = new Date(`${date}T12:00:00Z`).toLocaleDateString(locale, {
       weekday: "long",
@@ -108,18 +121,18 @@ export function WeatherPanel({
   };
 
   return (
-    <section className={s.avalanche}>
-      <h3 className={s.avalancheHead}>
-        {t.weatherTitle}
+    <section className={className ? `${s.panel} ${className}` : s.panel}>
+      <Heading className={s.head}>
+        {t.title}
         {forecast?.state === "ok" ? (
-          <span className={s.avalancheRegion}>{t.weatherAltitude(forecast.altitude)}</span>
+          <span className={s.headAside}>{t.altitude(forecast.altitude)}</span>
         ) : null}
-      </h3>
+      </Heading>
 
       {forecast === null ? (
-        <p className={s.avalancheNote}>{t.weatherLoading}</p>
+        <p className={s.note}>{t.loading}</p>
       ) : forecast.state !== "ok" ? (
-        <p className={s.avalancheNote}>{t.weatherUnavailable}</p>
+        <p className={s.note}>{t.unavailable}</p>
       ) : (
         <>
           {(() => {
@@ -129,9 +142,9 @@ export function WeatherPanel({
                 <SymbolIcon info={info} />
                 <span className={s.weatherTemp}>{num(forecast.now.temperature)} °C</span>
                 <span className={s.weatherNowText}>
-                  <span className={s.weatherDay}>{t.weatherNow}</span>
+                  <span className={s.weatherDay}>{t.now}</span>
                   {info ? `${info.text}, ` : ""}
-                  {t.weatherWindNow(num(forecast.now.windSpeed), compassFrom(forecast.now.windFrom, lang))}
+                  {t.windNow(num(forecast.now.windSpeed), compassFrom(forecast.now.windFrom, lang))}
                 </span>
               </div>
             );
@@ -149,8 +162,8 @@ export function WeatherPanel({
                       {info ? <span>{info.text}</span> : null}
                     </div>
                     <div className={s.weatherRowFacts}>
-                      {t.weatherTempRange(num(day.minTemp), num(day.maxTemp))} ·{" "}
-                      {t.weatherWindMax(num(day.maxWind), compassFrom(day.maxWindFrom, lang))} ·{" "}
+                      {t.tempRange(num(day.minTemp), num(day.maxTemp))} ·{" "}
+                      {t.windMax(num(day.maxWind), compassFrom(day.maxWindFrom, lang))} ·{" "}
                       {num(day.precipitation, 1)} mm
                     </div>
                   </div>
@@ -159,17 +172,17 @@ export function WeatherPanel({
             })}
           </ul>
 
-          <p className={s.avalancheNote}>{t.weatherNote}</p>
+          <p className={s.note}>{t.note}</p>
         </>
       )}
 
       <a
-        className={s.avalancheSource}
+        className={s.source}
         href={yrUrl(lat, lng, lang)}
         target="_blank"
         rel="noreferrer"
       >
-        {t.weatherSource}
+        {t.source}
       </a>
     </section>
   );

@@ -32,8 +32,8 @@ import {
   type VerticalBand,
 } from "@/lib/map-filters";
 import { CapsText } from "@/components/CapsText";
+import { WeatherPanel } from "@/components/weather/WeatherPanel";
 import { AvalanchePanel } from "./AvalanchePanel";
-import { WeatherPanel } from "./WeatherPanel";
 import { useGeolocation, type GeoState } from "./useGeolocation";
 import s from "./kart.module.css";
 
@@ -471,6 +471,7 @@ export default function MapView({
                 lat={selected.lat}
                 lng={selected.lng}
                 lang={lang}
+                className={s.avalanche}
               />
 
               {selected.hasGuide ? (

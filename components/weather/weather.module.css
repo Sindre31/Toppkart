@@ -1,0 +1,91 @@
+/* Værpanelet (`WeatherPanel`). Overskrift, merknad og kildelenke har samme
+   form som skredpanelet på kartet, så de to står som ett par der; rammen rundt
+   kommer fra stedet panelet står. */
+
+.panel {
+  margin: 0;
+}
+.head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 0 0 10px;
+  font-family: var(--font-heading);
+  font-weight: var(--font-heading-weight);
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--color-text) 70%, transparent);
+}
+.headAside {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0;
+  text-transform: none;
+}
+.note {
+  margin: 0;
+  font-size: 13px;
+  line-height: 20px;
+  color: color-mix(in srgb, var(--color-text) 60%, transparent);
+}
+.source {
+  display: inline-block;
+  margin: 10px 0 0;
+  font-size: 12px;
+  color: var(--color-accent-700);
+}
+
+.weatherIcon {
+  flex: none;
+  color: var(--color-accent-700);
+}
+.weatherNow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 0 12px;
+  border-bottom: 1px solid var(--color-divider);
+}
+.weatherTemp {
+  flex: none;
+  font-family: var(--font-heading);
+  font-weight: var(--font-heading-weight);
+  font-size: 22px;
+  line-height: 1;
+}
+.weatherNowText {
+  font-size: 13px;
+  line-height: 18px;
+}
+.weatherDay {
+  font-family: var(--font-heading);
+  font-weight: var(--font-heading-weight);
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-right: 8px;
+}
+.weatherDays {
+  list-style: none;
+  margin: 0 0 10px;
+  padding: 0;
+}
+.weatherRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--color-divider);
+}
+.weatherRowHead {
+  font-size: 13px;
+  line-height: 18px;
+}
+.weatherRowFacts {
+  font-size: 12px;
+  line-height: 18px;
+  color: color-mix(in srgb, var(--color-text) 70%, transparent);
+}
