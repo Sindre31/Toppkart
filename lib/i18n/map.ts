@@ -13,6 +13,7 @@
 import { gradeLabel } from "./format";
 import type { Lang, Translated } from "./index";
 import { pick } from "./index";
+import type { AspectSector, VerticalBand } from "../map-filters";
 
 /** Grade names indexed 1…4 — index 0 is unused, matching the prototype. */
 export type GradeNames = readonly [string, string, string, string, string];
@@ -104,6 +105,30 @@ export interface Dict {
   unlockedTitle: string;
   unlockedBody: string;
   guidePending: string;
+
+  /* — aspect and vertical filters — */
+  aspectFilterLabel: string;
+  allAspects: string;
+  aspectSectors: Record<AspectSector, string>;
+  verticalFilterLabel: string;
+  allVertical: string;
+  verticalBands: Record<VerticalBand, string>;
+  resetFilters: string;
+  /* — the reader's position — */
+  /** The toggle beside the search box: sort by distance, and show the dot. */
+  nearMe: string;
+  /** Map button, off and on. */
+  locate: string;
+  locateStop: string;
+  /** Replaces `approx` under the filters while the list is sorted by distance. */
+  sortedByDistance: string;
+  /** «12 km unna» on a card. Straight-line distance to the summit. */
+  distanceAway: (distance: string) => string;
+  youAreHere: string;
+  locating: string;
+  geoDenied: string;
+  geoUnavailable: string;
+  geoUnsupported: string;
 }
 
 const MAP: Translated<Dict> = {
@@ -171,6 +196,29 @@ const MAP: Translated<Dict> = {
     unlockedTitle: "Du har full tilgang",
     unlockedBody: "Rutebeskrivelse, høydeprofil, GPX og skredterreng er åpne for deg.",
     guidePending: "Full turguide for denne toppen er under arbeid.",
+    aspectFilterLabel: "Himmelretning",
+    allAspects: "Alle retninger",
+    aspectSectors: { N: "Nordvendt", E: "Østvendt", S: "Sørvendt", W: "Vestvendt" },
+    verticalFilterLabel: "Høydemeter",
+    allVertical: "Alle høydemeter",
+    verticalBands: {
+      lt700: "Under 700 m",
+      "700-1000": "700–1000 m",
+      "1000-1300": "1000–1300 m",
+      gte1300: "1300 m og mer",
+    },
+    resetFilters: "Nullstill",
+    nearMe: "Nær meg",
+    locate: "Vis posisjonen min",
+    locateStop: "Skjul posisjonen min",
+    sortedByDistance: "Nærmest først, i luftlinje til toppen.",
+    distanceAway: (d) => `${d} unna`,
+    youAreHere: "Du er her",
+    locating: "Finner posisjonen din …",
+    geoDenied:
+      "Nettleseren har ikke lov til å dele posisjonen. Slå det på i innstillingene for nettstedet og prøv igjen.",
+    geoUnavailable: "Fant ikke posisjonen din akkurat nå. Prøv igjen om litt.",
+    geoUnsupported: "Nettleseren din kan ikke dele posisjon.",
   },
   en: {
     metaTitle: "The map",
@@ -243,6 +291,29 @@ const MAP: Translated<Dict> = {
     unlockedTitle: "You have full access",
     unlockedBody: "Route description, elevation profile, GPX and avalanche terrain are open to you.",
     guidePending: "The full guide for this peak is still being written.",
+    aspectFilterLabel: "Aspect",
+    allAspects: "All aspects",
+    aspectSectors: { N: "North-facing", E: "East-facing", S: "South-facing", W: "West-facing" },
+    verticalFilterLabel: "Vertical gain",
+    allVertical: "Any vertical",
+    verticalBands: {
+      lt700: "Under 700 m",
+      "700-1000": "700–1000 m",
+      "1000-1300": "1000–1300 m",
+      gte1300: "1300 m and up",
+    },
+    resetFilters: "Clear",
+    nearMe: "Near me",
+    locate: "Show my location",
+    locateStop: "Hide my location",
+    sortedByDistance: "Nearest first, straight-line distance to the summit.",
+    distanceAway: (d) => `${d} away`,
+    youAreHere: "You are here",
+    locating: "Finding your location …",
+    geoDenied:
+      "The browser is not allowed to share your location. Turn it on in the site settings and try again.",
+    geoUnavailable: "Could not find your location right now. Try again in a moment.",
+    geoUnsupported: "Your browser cannot share its location.",
   },
 };
 

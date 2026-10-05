@@ -147,7 +147,7 @@ docs/
 | Route | What it is | Prototype |
 |---|---|---|
 | `/` | Landing page: hero, data plate, what a guide contains, subscription | `Landing.dc.html` |
-| `/kart` | The map — tour list, grade/region filters, detail panel with the route picker and the locked block. `?tur=<slug>` opens a tour, `&rute=<id>` a specific route | `kart.html` |
+| `/kart` | The map — tour list, grade/region/aspect/vertical filters, «Nær meg» (the reader's position on the map and the list sorted by distance, never sent to the server), detail panel with the route picker and the locked block. `?tur=<slug>` opens a tour, `&rute=<id>` a specific route | `kart.html` |
 | `/turer` | Every tour, grouped by region. Plain links, no map — the page a crawler can read | — |
 | `/tur/[slug]` | Tour guide: stats, route map, elevation profile, ascent/descent, avalanche terrain | `Turguide Kirketaket.dc.html` |
 | `/logg-inn` | Sign in with Google | `Logg inn.dc.html` |

@@ -3,8 +3,9 @@
 /** The Leaflet half of the map page. Loaded through `next/dynamic` with
  *  `ssr: false` from MapView — Leaflet touches `window` at import time. */
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import {
+  Circle,
   CircleMarker,
   MapContainer,
   Polyline,
@@ -28,6 +29,7 @@ import type { Lang } from "@/lib/i18n";
 import { mapDict } from "@/lib/i18n/map";
 import type { TourRoute } from "@/lib/routes";
 import type { Tour } from "@/lib/types";
+import type { Position } from "./useGeolocation";
 
 /** Initial view — mainland Norway, as in the prototype. */
 const NORWAY: LatLngBoundsExpression = [
@@ -38,6 +40,15 @@ const NORWAY: LatLngBoundsExpression = [
 const MARKER_STROKE = "#f2f2f3";
 const ROUTE_ACCENT = "#416180"; // accent-700
 const ROUTE_ALT = "#8aa2b8"; // the peak's other routes, a step back
+/** Leserens prikk. Ikke en gradfarge og ikke rutefargen — den skal ikke kunne
+ *  forveksles med en topp eller en linje. Kartverkets topo bruker blått for
+ *  vann, så det er en dyp oransje, som ingenting annet på kartet har. */
+const POSITION = "#d9480f";
+
+/** Zoomen kartet flyr til når posisjonen kommer: nok til å se dalen man står i
+ *  og toppene rundt, ikke så tett at man mister dem. Står man allerede tettere,
+ *  blir man der. */
+const POSITION_ZOOM = 11;
 
 /** Kartverkets topografiske norgeskart, servert fra deres egen flis-cache.
  *
@@ -232,6 +243,44 @@ function useRouteTable(): RouteTable | null {
   return routes;
 }
 
+/** Prikken for der leseren står, med en ring for hvor sikker posisjonen er.
+ *
+ *  Monteres når posisjonen kommer og fjernes når den skrus av, så flyturen
+ *  under skjer én gang per gang knappen trykkes — ikke for hver ny posisjon
+ *  mens man går. Da ville kartet rykke tilbake hver gang leseren panorerte bort
+ *  for å se på noe. */
+function PositionLayer({ position, label }: { position: Position; label: string }) {
+  const map = useMap();
+  const flown = useRef(false);
+
+  useEffect(() => {
+    if (flown.current) return;
+    flown.current = true;
+    flyToView(map, [position.lat, position.lng], Math.max(map.getZoom(), POSITION_ZOOM));
+  }, [map, position]);
+
+  const center: LatLngTuple = [position.lat, position.lng];
+  return (
+    <>
+      <Circle
+        center={center}
+        radius={position.accuracy}
+        interactive={false}
+        pathOptions={{ color: POSITION, weight: 1, opacity: 0.5, fillColor: POSITION, fillOpacity: 0.08 }}
+      />
+      <CircleMarker
+        center={center}
+        radius={7}
+        pathOptions={{ color: MARKER_STROKE, weight: 2.5, fillColor: POSITION, fillOpacity: 1 }}
+      >
+        <Tooltip direction="top" offset={[0, -8]}>
+          {label}
+        </Tooltip>
+      </CircleMarker>
+    </>
+  );
+}
+
 export interface MapCanvasProps {
   tours: readonly Tour[];
   /** Slugs surviving the sidebar filters — everything else dims. */
@@ -241,6 +290,8 @@ export interface MapCanvasProps {
   selectedRouteId: string | null;
   onSelect: (slug: string) => void;
   onSelectRoute: (routeId: string) => void;
+  /** Leserens posisjon, når hen har delt den. */
+  position: Position | null;
   /** Language for the tooltips and Leaflet's own controls. Peak names are
    *  proper nouns and are rendered as they come. */
   lang: Lang;
@@ -391,6 +442,7 @@ export default function MapCanvas({
   selectedRouteId,
   onSelect,
   onSelectRoute,
+  position,
   lang,
 }: MapCanvasProps) {
   const t = mapDict(lang);
@@ -460,6 +512,7 @@ export default function MapCanvas({
         />
       ) : null}
       {selected && !routeTable ? <PeakFocus key={selected.slug} tour={selected} /> : null}
+      {position ? <PositionLayer position={position} label={t.youAreHere} /> : null}
     </MapContainer>
   );
 }

@@ -11,7 +11,7 @@
 import { Suspense, useCallback, useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import dynamic from "next/dynamic";
 import Link from "next/link";
-import { Check, Lock, Unlock } from "lucide-react";
+import { Check, Locate, LocateFixed, Lock, Unlock } from "lucide-react";
 
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { NavMenu } from "@/components/NavMenu";
@@ -21,8 +21,19 @@ import type { Lang } from "@/lib/i18n";
 import { commonDict } from "@/lib/i18n/common";
 import { mapDict, type Dict } from "@/lib/i18n/map";
 import type { Grade, Tour } from "@/lib/types";
+import {
+  ASPECT_SECTORS,
+  VERTICAL_BANDS,
+  distanceM,
+  formatDistance,
+  inVerticalBand,
+  matchesAspect,
+  type AspectSector,
+  type VerticalBand,
+} from "@/lib/map-filters";
 import { CapsText } from "@/components/CapsText";
 import { AvalanchePanel } from "./AvalanchePanel";
+import { useGeolocation, type GeoState } from "./useGeolocation";
 import s from "./kart.module.css";
 
 /* One lazy wrapper, created once at module scope. A wrapper per language would
@@ -48,7 +59,18 @@ function GradeDot({ grade, t }: { grade: Grade; t: Dict }) {
   );
 }
 
-function TourMeta({ tour, t, showSummit }: { tour: Tour; t: Dict; showSummit?: boolean }) {
+function TourMeta({
+  tour,
+  t,
+  showSummit,
+  distance,
+}: {
+  tour: Tour;
+  t: Dict;
+  showSummit?: boolean;
+  /** Ferdig formatert avstand, når leseren har delt posisjonen. */
+  distance?: string;
+}) {
   return (
     <div className={s.meta}>
       <GradeDot grade={tour.grade} t={t} />
@@ -61,7 +83,52 @@ function TourMeta({ tour, t, showSummit }: { tour: Tour; t: Dict; showSummit?: b
         <span>↑ {tour.verticalM} m</span>
       )}
       {showSummit ? null : <span>{tour.duration}</span>}
+      {distance ? <span className={s.distance}>{t.distanceAway(distance)}</span> : null}
     </div>
+  );
+}
+
+/** Det som skal stå om posisjonen akkurat nå, eller null når det ikke er noe å
+ *  si. */
+function geoMessage(state: GeoState, t: Dict): string | null {
+  if (state.status === "locating") return t.locating;
+  if (state.status !== "error") return null;
+  if (state.error === "denied") return t.geoDenied;
+  if (state.error === "unsupported") return t.geoUnsupported;
+  return t.geoUnavailable;
+}
+
+/** Posisjonsknappen. Den samme tilstanden har to knapper: «Nær meg» ved søket,
+ *  der den sorterer lista, og en ikonknapp på kartet, der den tegner prikken.
+ *  På telefon ser man bare én rute av gangen, og begge stedene er et naturlig
+ *  sted å lete. */
+function LocateToggle({
+  state,
+  onToggle,
+  t,
+  variant,
+}: {
+  state: GeoState;
+  onToggle: () => void;
+  t: Dict;
+  variant: "side" | "map";
+}) {
+  const active = state.status === "on" || state.status === "locating";
+  const Icon = state.status === "on" ? LocateFixed : Locate;
+  const label = active ? t.locateStop : t.locate;
+  return (
+    <button
+      type="button"
+      className={variant === "map" ? s.locateBtn : s.nearBtn}
+      aria-pressed={active}
+      aria-label={variant === "map" ? label : undefined}
+      title={label}
+      data-status={state.status}
+      onClick={onToggle}
+    >
+      <Icon size={variant === "map" ? 18 : 16} strokeWidth={1.5} aria-hidden="true" />
+      {variant === "side" ? t.nearMe : null}
+    </button>
   );
 }
 
@@ -110,6 +177,10 @@ export default function MapView({
   const [query, setQuery] = useState("");
   const [grade, setGrade] = useState(0);
   const [region, setRegion] = useState("");
+  const [aspect, setAspect] = useState<AspectSector | "">("");
+  const [vertical, setVertical] = useState<VerticalBand | "">("");
+  const geo = useGeolocation();
+  const position = geo.state.status === "on" ? geo.state.position : null;
   const [selectedSlug, setSelectedSlug] = useState<string | null>(initialSlug);
   /** Narrow screens show one pane at a time. The panel is opaque and nearly
    *  full width there, so side-by-side just means the map is permanently
@@ -144,9 +215,37 @@ export default function MapView({
           tour.name.toLowerCase().includes(q) ||
           tour.region.toLowerCase().includes(q)) &&
         (!grade || tour.grade === grade) &&
-        (!region || tour.region === region),
+        (!region || tour.region === region) &&
+        (!aspect || matchesAspect(tour.aspect, aspect)) &&
+        (!vertical || inVerticalBand(tour.verticalM, vertical)),
     );
-  }, [tours, query, grade, region]);
+  }, [tours, query, grade, region, aspect, vertical]);
+
+  /* Avstanden til hver topp, og lista sortert etter den, så lenge leseren har
+     delt posisjonen. Uten posisjon står lista i redaksjonell rekkefølge som før.
+     Kartet får den usorterte `rows` gjennom `visible` — rekkefølgen betyr ingen
+     ting der. */
+  const distances = useMemo(() => {
+    if (!position) return null;
+    return new Map(tours.map((tour) => [tour.slug, distanceM(position, tour)]));
+  }, [tours, position]);
+
+  const listed = useMemo(
+    () =>
+      distances
+        ? [...rows].sort((a, b) => distances.get(a.slug)! - distances.get(b.slug)!)
+        : rows,
+    [rows, distances],
+  );
+
+  const filtered = Boolean(query.trim() || grade || region || aspect || vertical);
+  const resetFilters = useCallback(() => {
+    setQuery("");
+    setGrade(0);
+    setRegion("");
+    setAspect("");
+    setVertical("");
+  }, []);
 
   const visible = useMemo(() => new Set(rows.map((tour) => tour.slug)), [rows]);
 
@@ -210,14 +309,17 @@ export default function MapView({
 
       <aside className={s.side} data-mode={selected ? "detail" : "list"}>
         <div className={s.sideHead}>
-          <input
-            className="input"
-            type="search"
-            placeholder={t.search}
-            aria-label={t.searchLabel}
-            value={query}
-            onChange={(e) => setQuery(e.target.value)}
-          />
+          <div className={s.searchRow}>
+            <input
+              className="input"
+              type="search"
+              placeholder={t.search}
+              aria-label={t.searchLabel}
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+            />
+            <LocateToggle state={geo.state} onToggle={geo.toggle} t={t} variant="side" />
+          </div>
           <div className={s.filters}>
             <div className="seg" role="group" aria-label={t.gradeGroup}>
               <label className="seg-opt">
@@ -263,13 +365,55 @@ export default function MapView({
               ))}
             </select>
           </div>
+          <div className={s.filters}>
+            <label className={s.srOnly} htmlFor="kart-aspect">
+              {t.aspectFilterLabel}
+            </label>
+            <select
+              id="kart-aspect"
+              className={`input ${s.filterSelect}`}
+              value={aspect}
+              onChange={(e) => setAspect(e.target.value as AspectSector | "")}
+            >
+              <option value="">{t.allAspects}</option>
+              {ASPECT_SECTORS.map((a) => (
+                <option key={a} value={a}>
+                  {t.aspectSectors[a]}
+                </option>
+              ))}
+            </select>
+            <label className={s.srOnly} htmlFor="kart-vertical">
+              {t.verticalFilterLabel}
+            </label>
+            <select
+              id="kart-vertical"
+              className={`input ${s.filterSelect}`}
+              value={vertical}
+              onChange={(e) => setVertical(e.target.value as VerticalBand | "")}
+            >
+              <option value="">{t.allVertical}</option>
+              {VERTICAL_BANDS.map((b) => (
+                <option key={b.id} value={b.id}>
+                  {t.verticalBands[b.id]}
+                </option>
+              ))}
+            </select>
+          </div>
           <div className={s.count}>
-            {rows.length} {rows.length === 1 ? t.tour : t.tours} · {t.approx}
+            <span>
+              {rows.length} {rows.length === 1 ? t.tour : t.tours} ·{" "}
+              {geoMessage(geo.state, t) ?? (distances ? t.sortedByDistance : t.approx)}
+            </span>
+            {filtered ? (
+              <button type="button" className={s.reset} onClick={resetFilters}>
+                {t.resetFilters}
+              </button>
+            ) : null}
           </div>
         </div>
 
         <div className={s.list}>
-          {rows.map((tour) => (
+          {listed.map((tour) => (
             <button
               type="button"
               key={tour.slug}
@@ -284,7 +428,11 @@ export default function MapView({
                   {tour.summitM} {t.moh}
                 </span>
               </h3>
-              <TourMeta tour={tour} t={t} />
+              <TourMeta
+                tour={tour}
+                t={t}
+                distance={distances ? formatDistance(distances.get(tour.slug)!, lang) : undefined}
+              />
             </button>
           ))}
         </div>
@@ -461,9 +609,18 @@ export default function MapView({
             selectedRouteId={activeRouteId}
             onSelect={openTour}
             onSelectRoute={setSelectedRouteId}
+            position={position}
             lang={lang}
           />
         </Suspense>
+        <div className={s.locateBox}>
+          <LocateToggle state={geo.state} onToggle={geo.toggle} t={t} variant="map" />
+          {geoMessage(geo.state, t) ? (
+            <p className={s.locateMsg} role="status">
+              {geoMessage(geo.state, t)}
+            </p>
+          ) : null}
+        </div>
       </div>
 
       {/* Phone only — hidden by CSS above the breakpoint, where both panes are
