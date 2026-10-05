@@ -28,7 +28,10 @@ over forest), when `belt` is more than `PATCH_M` below `dense` (a patch above a
 gap, the Vassdalstinden shape), or when a stated number matches none of the
 three.
 
-Classes are cached in cache/treeline_dense.json, so a re-run is free.
+Only the stretch from `WINDOW_BELOW_M` under the vertex treeline to the quiet
+margin above it is read densely — about 40 000 lookups for the catalogue rather
+than 115 000 — because that is the only stretch where the two scans can
+disagree. Classes are cached in cache/treeline_dense.json, so a re-run is free.
 
     python3 check_treeline.py [slug …]
 """
@@ -45,6 +48,7 @@ from guide_facts import TREELINE_CEILING_M, TREELINE_QUIET_M, TREELINE_QUIET_UP
 
 STEP_M = 5.0
 BELT_MIN_M = 60.0 # a forest run this long is belt; shorter ones above it are clips
+WINDOW_BELOW_M = 300.0  # how far under the vertex treeline the dense read starts
 TOL_M = 10.0      # dense above vertex by more than this: the scan missed forest
 PATCH_M = 30.0    # belt below dense by more than this: a patch above a gap
 WORKERS = 16
@@ -89,16 +93,18 @@ def classify(cache, pts):
     return [cache.get(k) for k in keys]
 
 
-def samples(points, elevations, upto_m):
-    """(ground, lat, lng, z) every STEP_M along the line, to `upto_m` of ground."""
+def samples(points, elevations, upto_m, from_m=0.0):
+    """(ground, lat, lng, z) every STEP_M along the line, between `from_m` and `upto_m`."""
     out, cum = [], 0.0
     for (a, b), za, zb in zip(zip(points, points[1:]), elevations, elevations[1:]):
         d = haversine(a[0], a[1], b[0], b[1])
-        n = max(1, int(d // STEP_M))
-        for k in range(n):
-            t = k / n
-            out.append((cum + d * t, a[0] + (b[0] - a[0]) * t, a[1] + (b[1] - a[1]) * t,
-                        za + (zb - za) * t))
+        if cum + d >= from_m:
+            n = max(1, int(d // STEP_M))
+            for k in range(n):
+                t = k / n
+                if cum + d * t >= from_m:
+                    out.append((cum + d * t, a[0] + (b[0] - a[0]) * t, a[1] + (b[1] - a[1]) * t,
+                                za + (zb - za) * t))
         cum += d
         if cum > upto_m:
             break
@@ -165,9 +171,12 @@ def main():
         for r, fr in zip(recs, facts[slug]["routes"]):
             tl = fr.get("treeline") or {}
             vertex = tl.get("last_forest_m")
-            # Walk as far as the vertex scan did, plus its quiet margin.
-            reach = (tl.get("last_forest_km") or 0) * 1000 + TREELINE_QUIET_M + 200
-            sm = samples(r["points"], r["elevations"], reach)
+            # The vertex scan is right below its own treeline to within a vertex;
+            # what it can miss is above it. Read densely from WINDOW_BELOW_M
+            # under its last forest vertex to the quiet margin past it.
+            edge = (tl.get("last_forest_km") or 0) * 1000
+            sm = samples(r["points"], r["elevations"], edge + TREELINE_QUIET_M + 200,
+                         max(0.0, edge - WINDOW_BELOW_M))
             got = classify(cache, [(a, b) for _, a, b, _ in sm])
             rows = [(g, (c[0] if c and c[0] is not None else z), c[1] if c else None)
                     for (g, _, _, z), c in zip(sm, got)]
