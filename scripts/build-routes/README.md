@@ -6020,8 +6020,11 @@ the Langedalen option of the two the source gives, and the guide says so.
 The tarn crossings the guide described there went with the spur too — 45 m at 1177 m and 90 m at 1162 m — and the guide no longer claims them; `check_ground` on the cut line reports water only at the Sønstevatn outlet, 746 m.
 
 The shape round's durations were left alone when cards moved by up to
-100 m, and so are these: Kvitegga and Lønahorgi model one band shorter, but
-the card's band is the source's.
+100 m. These were not, in a follow-up: `route_metrics.duration_band` puts
+three of the re-derived lines one band shorter, and the cards now carry it —
+Kvitegga 6–8 → 5–7 t (5.33 km, +1391), Lønahorgi 6–8 → 5–7 t (6.45 km,
++1298) and Bånsæterkampen 2–4 → 1–3 t (1.83 km, +301). Lønahorgi's guide
+still quotes the source's «4 timer fra Høyland», as a quotation.
 
 ### Bånsæterkampen's summit was on the line
 
