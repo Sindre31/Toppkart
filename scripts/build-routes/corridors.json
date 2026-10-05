@@ -677,15 +677,16 @@
      },
      {
       "name": "Ryggmøtet, høgde 1204",
-      "lat": 62.20612,
-      "lng": 6.68698,
-      "elevation_m": 1203.64
+      "lat": 62.20546,
+      "lng": 6.68423,
+      "elevation_m": 1188.0
      }
     ],
     "source": "audited (corrected)",
     "notes": "",
     "implied_start_m": null,
-    "start_vs_implied_m": null
+    "start_vs_implied_m": null,
+    "corridorNote": "«Ryggmøtet, høgde 1204» moved onto the line in the review round: the solved line passed 160 m beside the researched point and walked out to it and back (62.20612/6.68698, 1204 m); the waypoint now sits where the line already ran, at DTM1 1188 m."
    }
   ]
  },
@@ -2610,9 +2611,9 @@
      },
      {
       "name": "Ryggen nordvest for Svartahorgi",
-      "lat": 60.708,
-      "lng": 6.4355,
-      "elevation_m": 1003.2
+      "lat": 60.70672,
+      "lng": 6.43498,
+      "elevation_m": 1011.0
      },
      {
       "name": "Punkt 1305 nord for toppen",
@@ -2622,7 +2623,8 @@
      }
     ],
     "source": "researched, verified (ok), no local audit",
-    "notes": "Skredfare i det trange dalføret ved Breiming og i austsida ned mot Årdalen, som er den bratte delen av fjellet; store svaskred losnar seint på våren og går langt. Ryggen frå punkt 1305 og opp er brei og slak, men vindutsett og ofte avblåst og hard. Snødekket nede ved Høyland og Bergsstølen er tynt og kortvarig - vurder å gå av tidleg om våren."
+    "notes": "Skredfare i det trange dalføret ved Breiming og i austsida ned mot Årdalen, som er den bratte delen av fjellet; store svaskred losnar seint på våren og går langt. Ryggen frå punkt 1305 og opp er brei og slak, men vindutsett og ofte avblåst og hard. Snødekket nede ved Høyland og Bergsstølen er tynt og kortvarig - vurder å gå av tidleg om våren.",
+    "corridorNote": "«Ryggen nordvest for Svartahorgi» moved onto the line in the review round: the solved line passed 145 m beside the researched point and walked out to it and back (60.708/6.4355, 1003 m); the waypoint now sits where the line already ran, at DTM1 1011 m."
    },
    {
     "id": "horgaletten",
@@ -2769,19 +2771,20 @@
      },
      {
       "name": "Brattbakken, 1316",
-      "lat": 62.0885,
-      "lng": 6.7209,
-      "elevation_m": 1316.43
+      "lat": 62.08944,
+      "lng": 6.72027,
+      "elevation_m": 1241.0
      },
      {
       "name": "Høgda 1583",
-      "lat": 62.08607,
-      "lng": 6.71162,
-      "elevation_m": 1582.37
+      "lat": 62.08674,
+      "lng": 6.71034,
+      "elevation_m": 1534.0
      }
     ],
     "source": "researched, verified (corrected), no local audit",
-    "notes": "Brattbakken er skredterreng og målt til om lag 35 grader. Sprekker i breen seinvinters og utover våren. Store skavlar langs toppryggen — hald avstand til kantane, særleg i dårleg sikt."
+    "notes": "Brattbakken er skredterreng og målt til om lag 35 grader. Sprekker i breen seinvinters og utover våren. Store skavlar langs toppryggen — hald avstand til kantane, særleg i dårleg sikt.",
+    "corridorNote": "«Brattbakken, 1316» moved onto the line in the review round: the solved line passed 110 m beside the researched point and walked out to it and back (62.0885/6.7209, 1316 m); the waypoint now sits where the line already ran, at DTM1 1241 m. «Høgda 1583» moved onto the line in the review round: the solved line passed 100 m beside the researched point and walked out to it and back (62.08607/6.71162, 1582 m); the waypoint now sits where the line already ran, at DTM1 1534 m."
    }
   ]
  },
@@ -3750,13 +3753,14 @@
      },
      {
       "name": "Sigridsbu turisthytte",
-      "lat": 59.79453,
-      "lng": 9.15568,
-      "elevation_m": 1174.88
+      "lat": 59.79605,
+      "lng": 9.15679,
+      "elevation_m": 1184.0
      }
     ],
     "source": "researched, verified (ok), no local audit",
-    "notes": "Langedalen er den ene plassen på Blefjell der skred faktisk teller: randofolk.no skriver «vær oppmerksom på utløpssoner!» både for oppstigningen og for nedkjøringa den vegen. Selve toppen tas enten fra sørsida, som er brattest og steinete i lite snø, eller langs fjellet og opp fra nordsida, som er den slake. Skogpartiet ned mot Nordstulvatnet er brattere enn resten av ruta. Blefjell er høyfjell med tynt jordlag og lys kvartsitt — vinden pakker snøen hardt over tregrensa, og orienteringspunktene er få i skodde."
+    "notes": "Langedalen er den ene plassen på Blefjell der skred faktisk teller: randofolk.no skriver «vær oppmerksom på utløpssoner!» både for oppstigningen og for nedkjøringa den vegen. Selve toppen tas enten fra sørsida, som er brattest og steinete i lite snø, eller langs fjellet og opp fra nordsida, som er den slake. Skogpartiet ned mot Nordstulvatnet er brattere enn resten av ruta. Blefjell er høyfjell med tynt jordlag og lys kvartsitt — vinden pakker snøen hardt over tregrensa, og orienteringspunktene er få i skodde.",
+    "corridorNote": "«Sigridsbu turisthytte» moved onto the line in the review round: the solved line passed 180 m beside the researched point and walked out to it and back (59.79453/9.15568, 1175 m); the waypoint now sits where the line already ran, at DTM1 1184 m."
    }
   ]
  },
@@ -3870,13 +3874,14 @@
      },
      {
       "name": "Sørmyrseter",
-      "lat": 59.50372,
-      "lng": 9.64855,
-      "elevation_m": 620.45
+      "lat": 59.50396,
+      "lng": 9.64762,
+      "elevation_m": 610.0
      }
     ],
     "source": "researched, verified (corrected), no local audit",
-    "notes": "Toppen ligger over tregrensa og er den eneste plassen på turen der helninga teller: 240 høydemeter opp fra Sørmyrseter på rundt en og en halv kilometer, brattest de siste hundre. Ellers er ruta skogsterreng og myr, og faren er å bomme på løypa i skodde snarere enn skred. Skrim ligger lavt nok til at snøen kommer og går — ut.no fører skisesongen som januar til mars — og løypene mellom Ravalsjø og Sørmyrseter er det som gjør turen gjennomførbar på en dag."
+    "notes": "Toppen ligger over tregrensa og er den eneste plassen på turen der helninga teller: 240 høydemeter opp fra Sørmyrseter på rundt en og en halv kilometer, brattest de siste hundre. Ellers er ruta skogsterreng og myr, og faren er å bomme på løypa i skodde snarere enn skred. Skrim ligger lavt nok til at snøen kommer og går — ut.no fører skisesongen som januar til mars — og løypene mellom Ravalsjø og Sørmyrseter er det som gjør turen gjennomførbar på en dag.",
+    "corridorNote": "«Sørmyrseter» moved onto the line in the review round: the solved line passed 59 m beside the researched point and walked out to it and back (59.50372/9.64855, 620 m); the waypoint now sits where the line already ran, at DTM1 610 m."
    }
   ]
  },
@@ -4284,9 +4289,9 @@
      },
      {
       "name": "inn på vinterruta frå Gråhaugen",
-      "lat": 62.854,
-      "lng": 9.125,
-      "elevation_m": 1054.0
+      "lat": 62.85434,
+      "lng": 9.12594,
+      "elevation_m": 993.0
      },
      {
       "name": "hylla under Litj-Snota",
@@ -4314,7 +4319,8 @@
      }
     ],
     "source": "researched, verified (ok), no local audit",
-    "notes": "ut.no 1112155423, «Snota 1668 fra Trollheimshytta, Surnadal. Topptur, ski.», skriven av Håvard Engen og gjennomgått av Trondhjems Turistforening — same forfattar som appens Gråhaugen-rute. 11,5 km, 1249 høgdemeter, 4:30 opp, KAST-klasse 2, eksposisjon Ø. Kilden: «Følg merka sommerløype ut fra hytta og over bruer over Slettåa og Folda … forbi Bossvasshøgda … tar av til høyre fra denne i retning NV før du passerer 1000 moh … til du kommer inn på vinterruta fra Gråhaugen på ca 1070 moh.» Bossvasshøgda (Haug, 810,6) og Litj-Snota (Fjell, 1551,4) er registerførte. Punktet «breen» les SnøIsbre på DTM1, som er den same breen appens normalrute kryssar på 1515 moh. Åtvaringa er kildens eiga: «Ruta går i skredterreng, både løsneområder over 30 grader bratt og utløpsområder som det ikke er mulig å omgå», og «Toppflanken er stupbratt mot Ø.» Dei to siste punkta følgjer kildens eiga svingjing: «Når du er ferdig med breen på ca 1470 moh og kommer opp på toppflanken dreier ruta SV, S og til slutt S-SØ til toppunktet» — første forsøk gjekk rett på toppen frå nordaust og fekk eit steg på 42,7 grader."
+    "notes": "ut.no 1112155423, «Snota 1668 fra Trollheimshytta, Surnadal. Topptur, ski.», skriven av Håvard Engen og gjennomgått av Trondhjems Turistforening — same forfattar som appens Gråhaugen-rute. 11,5 km, 1249 høgdemeter, 4:30 opp, KAST-klasse 2, eksposisjon Ø. Kilden: «Følg merka sommerløype ut fra hytta og over bruer over Slettåa og Folda … forbi Bossvasshøgda … tar av til høyre fra denne i retning NV før du passerer 1000 moh … til du kommer inn på vinterruta fra Gråhaugen på ca 1070 moh.» Bossvasshøgda (Haug, 810,6) og Litj-Snota (Fjell, 1551,4) er registerførte. Punktet «breen» les SnøIsbre på DTM1, som er den same breen appens normalrute kryssar på 1515 moh. Åtvaringa er kildens eiga: «Ruta går i skredterreng, både løsneområder over 30 grader bratt og utløpsområder som det ikke er mulig å omgå», og «Toppflanken er stupbratt mot Ø.» Dei to siste punkta følgjer kildens eiga svingjing: «Når du er ferdig med breen på ca 1470 moh og kommer opp på toppflanken dreier ruta SV, S og til slutt S-SØ til toppunktet» — første forsøk gjekk rett på toppen frå nordaust og fekk eit steg på 42,7 grader.",
+    "corridorNote": "«inn på vinterruta frå Gråhaugen» moved onto the line in the review round: the solved line passed 61 m beside the researched point and walked out to it and back (62.854/9.125, 1054 m); the waypoint now sits where the line already ran, at DTM1 993 m."
    }
   ]
  },
@@ -7589,19 +7595,20 @@
      },
      {
       "name": "sørryggen",
-      "lat": 68.283,
-      "lng": 14.59,
-      "elevation_m": 442.0
+      "lat": 68.28203,
+      "lng": 14.58925,
+      "elevation_m": 368.0
      },
      {
       "name": "ryggen der den dreier vest",
-      "lat": 68.286,
-      "lng": 14.575,
-      "elevation_m": 604.0
+      "lat": 68.28591,
+      "lng": 14.57333,
+      "elevation_m": 641.0
      }
     ],
     "source": "researched, verified (ok), no local audit",
-    "notes": "Fri Flyt: hold deg på toppen av ryggen — området rundt er skredutsatt. Nedkjøringen mot Vatterfjordpollen kan være skredutsatt, brattest der man tar tidlig av ryggen mot venstre på sørsida. Fra Kudalen på nordsida ligger det ofte hard is mot slutten; ta med stegjern og isøks om du skal den veien."
+    "notes": "Fri Flyt: hold deg på toppen av ryggen — området rundt er skredutsatt. Nedkjøringen mot Vatterfjordpollen kan være skredutsatt, brattest der man tar tidlig av ryggen mot venstre på sørsida. Fra Kudalen på nordsida ligger det ofte hard is mot slutten; ta med stegjern og isøks om du skal den veien.",
+    "corridorNote": "«sørryggen» moved onto the line in the review round: the solved line passed 112 m beside the researched point and walked out to it and back (68.283/14.59, 442 m); the waypoint now sits where the line already ran, at DTM1 368 m. «ryggen der den dreier vest» moved onto the line in the review round: the solved line passed 69 m beside the researched point and walked out to it and back (68.286/14.575, 604 m); the waypoint now sits where the line already ran, at DTM1 641 m."
    },
    {
     "id": "kudalsheia",

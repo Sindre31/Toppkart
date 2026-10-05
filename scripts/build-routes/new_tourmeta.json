@@ -567,8 +567,8 @@
   "grade": 3,
   "gradeReason": "1400 høgdemeter og bre. Brattbakken er om lag 35 grader over ei kort strekning, og resten av turen er slakt platå- og ryggterreng; det er breen og lengda som gjer turen kompleks, ikkje hellinga.",
   "roadClosedInWinter": false,
-  "teaserNo": "1480 høgdemeter frå Nibbedalen gjennom Snødalen og over Brattbakken til det høgste fjellet i midtre Sunnmørsalpane.",
-  "teaserEn": "1480 m of climbing from Nibbedalen through Snødalen and over Brattbakken to the highest mountain in the central Sunnmøre Alps.",
+  "teaserNo": "1390 høgdemeter frå Nibbedalen gjennom Snødalen og over Brattbakken til det høgste fjellet i midtre Sunnmørsalpane.",
+  "teaserEn": "1390 m of climbing from Nibbedalen through Snødalen and over Brattbakken to the highest mountain in the central Sunnmøre Alps.",
   "hazardNotes": "Brattbakken er skredterreng og målt til om lag 35 grader. Sprekker i breen seinvinters og utover våren. Store skavlar langs toppryggen — hald avstand til kantane, særleg i dårleg sikt.",
   "sources": [
    "https://www.friflyt.no/topptur/skiturer-sunnmoere/turbeskrivelse-kvitegga-raanahalvoeya",
@@ -1485,8 +1485,8 @@
   "grade": 2,
   "gradeReason": "280 høydemeter i ren forskjell og drøyt fire kilometer inn, i terreng ut.no fører som moderate. Det som gjør den til en toer er eggen: turen går langs kanten av fjellhamrene, og på snø i flatt lys er kanten det eneste på hele ruta som kan gå galt.",
   "roadClosedInWinter": false,
-  "teaserNo": "330 høydemeter fra Bånsetra opp på en fjellrygg med stup mot sør — Kvitfjells nærmeste fjell, tvers over Lågen.",
-  "teaserEn": "330 m of climbing from Bånsetra onto a ridge that drops away to the south — the nearest real mountain to Kvitfjell, straight across the Lågen.",
+  "teaserNo": "300 høydemeter fra Bånsetra opp på en fjellrygg med stup mot sør — Kvitfjells nærmeste fjell, tvers over Lågen.",
+  "teaserEn": "300 m of climbing from Bånsetra onto a ridge that drops away to the south — the nearest real mountain to Kvitfjell, straight across the Lågen.",
   "hazardNotes": "Ut.no om ryggen: «en spektakulær fjellrygg på vel 1200 meters høyde, med bratte stup mot sør og formidabel utsikt», og «sørover ser vi fjellrygger som går stupbratt et par hundre meter ned». Om sommeren går du på tydelig sti langs kanten; under snø er kanten en skavlkant, og det er den ene tingen denne turen krever at du holder avstand fra. Ellers er problemet navigering — ryggen er lang, og hele returen ut.no beskriver går over åpent seterlandskap uten holdepunkter i tåke.",
   "sources": [
    "https://ut.no/turforslag/116712",
@@ -1499,7 +1499,8 @@
    "Fjellet er registrert som **Bånsæterkampen** med æ; begge ut.no-skildringane skriv Bånseterkampen med e, og den eine legg til at lokalt talemål brukar fleirtal — Bånseterkampan.",
    "Prestkampen, som ut.no oppgir til 1244 moh og fører som ein avstikkar frå denne ruta, er eit eige registrert Topp-punkt i Gausdal 2,6 km sørvest for Bånsæterkampen. Han er ikkje på linja, og kortet fører ikkje høgda hans.",
    "Starthøgda er 913,2 moh på DTM1, terrengklasse DyrketMark — det er setervollen på Bånsetra. Ut.no oppgir 914 for same punkt.",
-   "Ingen av kjeldene er vinterskildringar. Begge fører sesong juni–september. Kortet fører jan–apr, som er ei slutning frå at Bånsetra er eit setergrend- og hyttefelt med brøytt vegnett — Bånsetervegen, Svarttjønnvegen, Tutlidalsvegen og Årnesfeltet er alle kartlagde i OSM — og ikkje ei kjelde for denne turen."
+   "Ingen av kjeldene er vinterskildringar. Begge fører sesong juni–september. Kortet fører jan–apr, som er ei slutning frå at Bånsetra er eit setergrend- og hyttefelt med brøytt vegnett — Bånsetervegen, Svarttjønnvegen, Tutlidalsvegen og Årnesfeltet er alle kartlagde i OSM — og ikkje ei kjelde for denne turen.",
+   "Gjennomgangsrunden: toppen flyttet til 1202,4 moh (61.39470/10.12085), kuppelen linja allerede gikk over 890 m før 1196,1-toppen. Ut.no sine 1202 for «høyeste punkt på Bånseterkampen» stemmer med den på 0,4 m, og registerets Fjell-geometri for Bånsæterkampen går 3 m fra den og 150 m fra 1196,1-toppen. Mellom dem ligger et søkk på 1152 moh; vest for 1196,1 stiger terrenget igjen over et skar på 1140 mot Prestkampen."
   ],
   "notes": "Ut.no 116712 er ruta fra Bånsetra (fottur + topptur, moderate, 518 høydemeter, 10,5 km rundtur, 4 timer) og er den som ligger nærmest Kvitfjell — 6,6 km i luftlinje. Ut.no 1112157424 beskriver samme rygg fra Gammeldalsetra på Gausdal-sida (486 høydemeter, 11,5 km) og er kilden til høyden 1202 for høyeste punkt, til flertallsformen Bånseterkampan og til at «vi går trygt på tydelig sti langs kanten av fjellhamrene». Ut.no 1112157457 er avstikkeren til Prestkampen 1244, «det høyeste fjellet i området rundt Skeikampen». Ingen av de tre er vinterskildringer; confidence er medium av den grunnen."
  },
@@ -2398,8 +2399,8 @@
   "grade": 2,
   "gradeReason": "Ingen KAST hos Fri Flyt (eldre format). En enkel topp med mange varianter ifølge utemagasinet, men nedkjøringen mot pollen kan være skredutsatt og nordsida krever ofte stegjern — grad 2 på normalruta langs ryggen.",
   "roadClosedInWinter": false,
-  "teaserNo": "890 høydemeter fra havet ved Vatterfjordpollen: langs nordsida av pollen, opp på sørryggen og ryggtoppen hele veien — Svolværs nærmeste klassiker, med varianter til alle kanter.",
-  "teaserEn": "890 metres of ascent from the sea at Vatterfjordpollen: along the north side of the poll, onto the south ridge and the ridge-top all the way — Svolvær's nearest classic, with variants on every side.",
+  "teaserNo": "840 høydemeter fra havet ved Vatterfjordpollen: langs nordsida av pollen, opp på sørryggen og ryggtoppen hele veien — Svolværs nærmeste klassiker, med varianter til alle kanter.",
+  "teaserEn": "840 metres of ascent from the sea at Vatterfjordpollen: along the north side of the poll, onto the south ridge and the ridge-top all the way — Svolvær's nearest classic, with variants on every side.",
   "hazardNotes": "Fri Flyt: hold deg på toppen av ryggen — området rundt er skredutsatt. Nedkjøringen mot Vatterfjordpollen kan være skredutsatt, brattest der man tar tidlig av ryggen mot venstre på sørsida. Fra Kudalen på nordsida ligger det ofte hard is mot slutten; ta med stegjern og isøks om du skal den veien.",
   "sources": [
    "https://www.friflyt.no/topptur/skiturer-lofoten/turbeskrivelse-rundfjellet2",

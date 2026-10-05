@@ -1887,7 +1887,7 @@ answer `Skog` — and a waypoint on the south shore cut it to 90 m and 38 m, whi
 is not the same as fixing it. Two waypoints, south end and west side, took it to
 none. The line is now 4.07 km with +268, and the guide names the lake.
 
-**Bånsæterkampen is 5.9 m short, and it is the only card in this round that is.**
+**Bånsæterkampen is 5.9 m short, and it is the only card in this round that is.** (Superseded: the review round found the 1202 m top on the line itself — see «The review round».)
 Ut.no gives 1202 m for the ridge's high point; the climbed cell reads 1196.1. Five
 of the eight land within 1.5 m of their published height and two of those are
 confirmed twice over — Slettind reads 1592.0 against Fri Flyt's 1592, with Fri
@@ -5960,6 +5960,111 @@ the far shore of Rottenvikvatnet, which the line rounds on land because the
 lake is a reservoir — the same guide's own «rundt magasinet på land». Below
 the dam the line is within 160 m of the road throughout. A false positive of
 the Vetefjellet kind, recorded here so it is not re-opened.
+
+## The review round: every line drawn on the map
+
+No new tour. The shape round ran every check the pipeline owns; this round
+drew every one of the 223 lines on Kartverket's topographic map — the same
+tiles the app shows — and looked at them, because a line can pass every
+numeric check and still look wrong to anyone who knows the mountain. Five
+reviewers took 31 sheets of six tours each; every shape they flagged was
+then measured rather than believed.
+
+Most of what they flagged was the route doing what its source says.
+Surløytenuten goes north past the summit to Vassholet and comes back along
+the ridge because the description does exactly that. Torvløysa's 800 m
+excursion north climbs the whole way, to the corridor's own Daurmålsfjellet.
+Ranten's corner on Raudmyra is the trail junction the source tells you to
+turn at. Kjerag's «higher than the summit» is already in its guide. What was
+left was two things.
+
+### Ten out-and-backs under the shape round's bar
+
+`check_geometry.py` cut spurs of 300 m or more and loops that came back
+within 12 m. Two detectors written for this round found the ones beneath
+that: a stretch of 200 m+ that returns to roughly where and how high it
+left, and a turnaround with two 120 m+ legs whose tip sits above or below
+both ends (a switchback climbs steadily through its tip; a spur does not).
+Ten turned up on eight routes, and **every tip sat within 50 m of a corridor
+waypoint** — the same cause as the shape round's seven.
+
+`cut_spurs.py` cuts them in place. Within 30 vertices of the tip it picks
+the pair that removes the most line for the shortest straight leg — at most
+60 m, no steeper than 35° — reads the leg from DTM1 every 15 m, refuses a
+leg that touches water, and re-derives gain, loss and the steepest 30 m from
+the ground. One spur needed more: Rundfjellet's at «ryggen der den dreier
+vest» starts by dropping 27 m off the ridge it rejoins 76 m on, so a 60 m
+leg removed the tip and left the dip, and that one may use 80 m. Each
+waypoint was then moved onto the line in `corridors.json` and the research
+record, with a `corridorNote`.
+
+| route | spur to | cut | before | after | card |
+| --- | --- | --- | --- | --- | --- |
+| `styggemann/ravalsjo` | Sørmyrseter | 58 m leg | 9.61 km, +549 | 9.48 km, +541 | 550 |
+| `store-ble/sigridsbu` | Sigridsbu turisthytte | 42 m leg | 6.69 km, +672 | 6.33 km, +664 | 670 |
+| `lonahorgi/normalruta` | Ryggen nordvest for Svartahorgi | 51 m leg | 6.71 km, +1307 | 6.45 km, +1298 | 1300 |
+| `kvitegga/normalruta` | Brattbakken, 1316 · Høgda 1583 | 46 m · 53 m | 5.93 km, +1457 | 5.33 km, +1391 | 1460 → 1390 |
+| `snota/trollheimshytta` | inn på vinterruta frå Gråhaugen | 50 m leg | 11.61 km, +1356 | 11.36 km, +1320 | alternate |
+| `rundfjellet/normalruta` | sørryggen · ryggen der den dreier vest | 53 m · 76 m | 5.28 km, +890 | 4.82 km, +841 | 890 → 840 |
+| `slogen/oye-direkte` | Ryggmøtet, høgde 1204 | 45 m leg | 4.40 km, +1537 | 4.09 km, +1523 | alternate |
+
+Two of them changed what a guide said, not just its numbers. **Kvitegga's**
+headline — «brattaste samanhengande parti 38,7 grader, det er Brattbakken»
+— was the spur's way *back down* from the waypoint, 1296 → 1265 m; the line
+now crosses the bakke at 29.9° in its steepest 30 m, the tour's steepest
+30 m (33.5°) is lower down in Snødalen, the line passes under the 1583 m top
+rather than over it, and glacier terrain on the line starts at 1224 m, not
+the 1290 the guide had. **Store Ble's** line climbed Langedalen, went down to
+Sigridsbu and came back up; it now passes 180 m north of the hut, which is
+the Langedalen option of the two the source gives, and the guide says so.
+The tarn crossings the guide described there went with the spur too — 45 m at 1177 m and 90 m at 1162 m — and the guide no longer claims them; `check_ground` on the cut line reports water only at the Sønstevatn outlet, 746 m.
+
+The shape round's durations were left alone when cards moved by up to
+100 m, and so are these: Kvitegga and Lønahorgi model one band shorter, but
+the card's band is the source's.
+
+### Bånsæterkampen's summit was on the line
+
+Every round since this tour was added has said Bånsæterkampen is 5.9 m short
+of its published 1202. The line said otherwise: it crossed a broad 1202.4 m
+top 890 m east-north-east of the 1196.1 m one the card named, gave back 44 m
+into a saddle (1152 m on a straight DTM1 profile), and climbed to the lower
+top. The place-name register settles which one is the mountain's: its
+`Fjell` geometry for Bånsæterkampen passes 3 m from the 1202.4 top and 150 m
+from the 1196.1 one. A third top, 1205.8 m to the west across a 1140 m
+saddle, is the flank of Prestkampen (1243), which is a `Topp` of its own.
+
+`SUMMIT_SEED` in `resolve_summits.py` now names the 1202 top — the
+Fiskefjordtindan doctrine, the published height names the top — and
+`end_at_summit.py` ends the shipped line there with the generator's own
+`SUMMIT_LEG_MIN_M` rule rather than re-solving a reviewed line to reproduce
+its first two kilometres. 2.73 km +341 became 1.83 km +301, the card reads
+1202 m and 300 m, and the flank sweep was re-measured from the new top: the
+south side is steeper than the guide had it, 54.6° and 54.1° (S and SE) in
+the steepest 60 m window 40–110 m out, against 39.8° and 45.2° from the old
+top. The guide is rewritten around the new summit in both languages, and
+`measurements.json` carries the new sweep with the old one quoted.
+
+### Two treelines the full guide check caught
+
+`check_guides.py` over all 185 guides, on a `guide_facts.json` rebuilt from scratch, reported two
+figures on lines this round did not touch. Hornindalsrokken's guide said the forest holds to
+673 m; DTM1 classes every vertex from 655 to 798 m as `Skog` and the first open one at 810, so
+the prose now says 798 in both languages. Vassdalstinden's scan reads 637 m, but that is one
+isolated `Skog` vertex above 50 m of open ground — the belt ends at 581, as the guide says, and
+the reading is recorded in the guide's `problems` rather than written into the prose.
+
+### What ran
+
+| check | result |
+| --- | --- |
+| `npm test`, `typecheck`, `lint` | green |
+| `check_tours.py` | clean |
+| `check_geometry.py` | the six real steps the shape round listed, and nothing else; three self-crossings and Bånsæterkampen's «gives back 4 m» are gone from the notes |
+| `check_bands.py` | 760 band claims, all agree with the line |
+| `check_guides.py`, all 185 guides | 0 unsourced numbers, 0 reassurance claims |
+| `check_ground.py` on the eight tours | 12 routes clean; Lønahorgi's «skogsbilvegen» and Store Ble's «utsiktsløypa» still UNCHECKED because Overpass would not answer |
+| `check_routes.py` | clean |
 
 ## Network
 

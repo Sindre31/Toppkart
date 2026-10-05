@@ -746,9 +746,9 @@
         },
         {
           "name": "Ryggen nordvest for Svartahorgi",
-          "lat": 60.708,
-          "lng": 6.4355,
-          "elevationM": 1003.2
+          "lat": 60.70672,
+          "lng": 6.43498,
+          "elevationM": 1011.0
         },
         {
           "name": "Punkt 1305 nord for toppen",
@@ -1472,15 +1472,15 @@
         },
         {
           "name": "Brattbakken, 1316",
-          "lat": 62.0885,
-          "lng": 6.7209,
-          "elevationM": 1316.43
+          "lat": 62.08944,
+          "lng": 6.72027,
+          "elevationM": 1241.0
         },
         {
           "name": "Høgda 1583",
-          "lat": 62.08607,
-          "lng": 6.71162,
-          "elevationM": 1582.37
+          "lat": 62.08674,
+          "lng": 6.71034,
+          "elevationM": 1534.0
         }
       ],
       "season": "mars–mai",
@@ -2888,9 +2888,9 @@
         },
         {
           "name": "Sigridsbu turisthytte",
-          "lat": 59.79453,
-          "lng": 9.15568,
-          "elevationM": 1174.88
+          "lat": 59.79605,
+          "lng": 9.15679,
+          "elevationM": 1184.0
         }
       ],
       "season": "jan–apr",
@@ -3076,9 +3076,9 @@
         },
         {
           "name": "Sørmyrseter",
-          "lat": 59.50372,
-          "lng": 9.64855,
-          "elevationM": 620.45
+          "lat": 59.50396,
+          "lng": 9.64762,
+          "elevationM": 610.0
         }
       ],
       "season": "jan–mars",
@@ -3555,9 +3555,9 @@
             },
             {
               "name": "inn på vinterruta frå Gråhaugen",
-              "lat": 62.854,
-              "lng": 9.125,
-              "elevationM": 1054
+              "lat": 62.85434,
+              "lng": 9.12594,
+              "elevationM": 993.0
             },
             {
               "name": "hylla under Litj-Snota",
@@ -6584,15 +6584,15 @@
         },
         {
           "name": "sørryggen",
-          "lat": 68.283,
-          "lng": 14.59,
-          "elevationM": 442
+          "lat": 68.28203,
+          "lng": 14.58925,
+          "elevationM": 368.0
         },
         {
           "name": "ryggen der den dreier vest",
-          "lat": 68.286,
-          "lng": 14.575,
-          "elevationM": 604
+          "lat": 68.28591,
+          "lng": 14.57333,
+          "elevationM": 641.0
         }
       ],
       "season": "jan–apr",
