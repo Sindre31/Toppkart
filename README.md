@@ -181,6 +181,27 @@ above a 1px rule, and there is exactly one accent — steel blue `#5980a6` with 
 which `.btn-primary` is the only filled object on the site. Icons are `lucide-react` at stroke
 width 1.5; there are no emoji.
 
+## Favourites and done tours
+
+A signed-in reader can mark any tour as a favourite and as done («Favoritt», «Har gått») on its
+guide and in the map panel, filter the map by them («Mine turer»), and see both lists — with the
+tours and vertical metres done — under «03 · Mine turer» on Min side. Any account can use it;
+it is not part of the subscription.
+
+- **`tk_tour_marks`**, one row per reader and tour: `favorite` and `done_on`. A row with neither
+  is deleted rather than kept, and a check constraint makes one impossible to write. Written
+  through the reader's own Supabase session, never the service role, so the RLS policies in
+  `supabase/schema.sql` (read, insert, update, delete — all `auth.uid() = user_id`) are the
+  boundary. `user_id` cascades on account deletion.
+- **`app/api/turmerker`** — `GET` the reader's marks, `POST { slug, favorite?, done? }` one change
+  at a time. Only slugs from `lib/tours.ts`; `private, no-store`; `503` when the database will
+  not take it, so the button rolls back and says so rather than showing a mark that was not
+  saved.
+- **`lib/tour-marks.ts`** holds the rules both sides share and is what the tests pin: marking a
+  done tour as done again keeps its date, and clearing both fields means no row.
+- In demo mode the marks live in a third cookie, `tk_demo_marks`, cleared with the others.
+- `/personvern` says what is stored and that only the reader sees it.
+
 ## Access model
 
 The map and the key figures are open to everyone: tour name, position, summit elevation, vertical

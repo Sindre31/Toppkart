@@ -11,6 +11,7 @@ import { ElevationProfile } from "@/components/guide/ElevationProfile";
 import { GuidePreview, GuideSections } from "@/components/guide/GuideSections";
 import { LockedGuide } from "@/components/guide/LockedGuide";
 import { OfflineSave } from "@/components/guide/OfflineSave";
+import { GuideMarks } from "@/components/marks/GuideMarks";
 import { RouteMap } from "@/components/guide/RouteMap";
 import { WeatherPanel } from "@/components/weather/WeatherPanel";
 import { getViewer } from "@/lib/access";
@@ -238,6 +239,7 @@ export default async function TourGuidePage({ params }: { params: Promise<{ slug
             <Link className="btn btn-secondary" href={mapHref}>
               {t.openInMap}
             </Link>
+            <GuideMarks slug={tour.slug} lang={lang} />
             {hasAccess && route ? (
               <OfflineSave
                 slug={tour.slug}

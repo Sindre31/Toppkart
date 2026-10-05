@@ -11,7 +11,7 @@
 import { Suspense, useCallback, useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import dynamic from "next/dynamic";
 import Link from "next/link";
-import { Check, Locate, LocateFixed, Lock, Unlock } from "lucide-react";
+import { Check, Locate, LocateFixed, Lock, Star, Unlock } from "lucide-react";
 
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { NavMenu } from "@/components/NavMenu";
@@ -33,6 +33,9 @@ import {
 } from "@/lib/map-filters";
 import { CapsText } from "@/components/CapsText";
 import { WeatherPanel } from "@/components/weather/WeatherPanel";
+import { MarkButtons } from "@/components/marks/MarkButtons";
+import { useTourMarks } from "@/components/marks/useTourMarks";
+import { marksDict } from "@/lib/i18n/marks";
 import { AvalanchePanel } from "./AvalanchePanel";
 import { useGeolocation, type GeoState } from "./useGeolocation";
 import s from "./kart.module.css";
@@ -181,6 +184,11 @@ export default function MapView({
   const [aspect, setAspect] = useState<AspectSector | "">("");
   const [vertical, setVertical] = useState<VerticalBand | "">("");
   const geo = useGeolocation();
+  /** Favoritter og gåtte turer. Filteret står bare når lista er hentet for en
+   *  innlogget leser; ellers er det ingenting å filtrere på. */
+  const marks = useTourMarks();
+  const [mine, setMine] = useState<"" | "favorites" | "done" | "notDone">("");
+  const markMap = marks.state.status === "ready" ? marks.state.marks : null;
   const position = geo.state.status === "on" ? geo.state.position : null;
   const [selectedSlug, setSelectedSlug] = useState<string | null>(initialSlug);
   /** Narrow screens show one pane at a time. The panel is opaque and nearly
@@ -197,6 +205,7 @@ export default function MapView({
   /* Menyknappens etiketter er sidechromets, ikke kartets — samme knapp, samme
      ord som på de andre sidene. */
   const c = commonDict(lang);
+  const m = marksDict(lang);
 
   /* The prototype sets `body { overflow: hidden }` globally; scope it to this
      route so the other pages keep scrolling normally. */
@@ -218,9 +227,14 @@ export default function MapView({
         (!grade || tour.grade === grade) &&
         (!region || tour.region === region) &&
         (!aspect || matchesAspect(tour.aspect, aspect)) &&
-        (!vertical || inVerticalBand(tour.verticalM, vertical)),
+        (!vertical || inVerticalBand(tour.verticalM, vertical)) &&
+        (!mine ||
+          !markMap ||
+          (mine === "favorites" && markMap.get(tour.slug)?.favorite) ||
+          (mine === "done" && markMap.get(tour.slug)?.doneOn) ||
+          (mine === "notDone" && !markMap.get(tour.slug)?.doneOn)),
     );
-  }, [tours, query, grade, region, aspect, vertical]);
+  }, [tours, query, grade, region, aspect, vertical, mine, markMap]);
 
   /* Avstanden til hver topp, og lista sortert etter den, så lenge leseren har
      delt posisjonen. Uten posisjon står lista i redaksjonell rekkefølge som før.
@@ -239,13 +253,14 @@ export default function MapView({
     [rows, distances],
   );
 
-  const filtered = Boolean(query.trim() || grade || region || aspect || vertical);
+  const filtered = Boolean(query.trim() || grade || region || aspect || vertical || mine);
   const resetFilters = useCallback(() => {
     setQuery("");
     setGrade(0);
     setRegion("");
     setAspect("");
     setVertical("");
+    setMine("");
   }, []);
 
   const visible = useMemo(() => new Set(rows.map((tour) => tour.slug)), [rows]);
@@ -400,6 +415,24 @@ export default function MapView({
               ))}
             </select>
           </div>
+          {markMap ? (
+            <div className={s.filters}>
+              <label className={s.srOnly} htmlFor="kart-mine">
+                {m.filterLabel}
+              </label>
+              <select
+                id="kart-mine"
+                className={`input ${s.filterSelect}`}
+                value={mine}
+                onChange={(e) => setMine(e.target.value as typeof mine)}
+              >
+                <option value="">{m.filterAll}</option>
+                <option value="favorites">{m.filterFavorites}</option>
+                <option value="done">{m.filterDone}</option>
+                <option value="notDone">{m.filterNotDone}</option>
+              </select>
+            </div>
+          ) : null}
           <div className={s.count}>
             <span>
               {rows.length} {rows.length === 1 ? t.tour : t.tours} ·{" "}
@@ -424,6 +457,18 @@ export default function MapView({
               <h3>
                 <span>
                   <CapsText>{tour.name}</CapsText>
+                  {markMap?.get(tour.slug)?.favorite ? (
+                    <Star
+                      className={s.markBadge}
+                      size={13}
+                      strokeWidth={1.5}
+                      fill="currentColor"
+                      aria-label={m.badgeFavorite}
+                    />
+                  ) : null}
+                  {markMap?.get(tour.slug)?.doneOn ? (
+                    <Check className={s.markBadge} size={14} strokeWidth={2.5} aria-label={m.badgeDone} />
+                  ) : null}
                 </span>
                 <span className={s.moh}>
                   {tour.summitM} {t.moh}
@@ -456,6 +501,17 @@ export default function MapView({
 
             <div className={s.dBody}>
               <p className={s.teaser}>{selected.teaser}</p>
+
+              <div className={s.marks}>
+                <MarkButtons
+                  slug={selected.slug}
+                  lang={lang}
+                  state={marks.state}
+                  failed={marks.failed}
+                  onChange={marks.update}
+                  returnTo={`/kart?tur=${selected.slug}`}
+                />
+              </div>
 
               {/* Open to everyone, subscription or not. A danger level is
                   safety information about the mountain someone is looking at

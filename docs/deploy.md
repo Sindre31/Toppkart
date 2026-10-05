@@ -72,7 +72,8 @@ site's URL.
 1. Create a project at <https://supabase.com/dashboard>. Pick a region close to your users
    (Frankfurt or Stockholm for Norwegian traffic).
 2. Open the **SQL Editor** and run `supabase/schema.sql`. This creates the `tk_tours`,
-   `tk_profiles`, `tk_subscriptions`, `tk_invoices`, `tk_feedback` and `tk_rate_limit` tables,
+   `tk_profiles`, `tk_subscriptions`, `tk_invoices`, `tk_feedback`, `tk_rate_limit` and
+   `tk_tour_marks` tables,
    enables row-level security, and installs the policies that keep the gated tour columns away
    from non-subscribers. The file is idempotent — re-run it after any change to it, which is also
    how an existing deployment picks up new tables and functions.
