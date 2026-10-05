@@ -3703,7 +3703,8 @@
   "source": "written against corridors.json and the routed line",
   "problems": [
    "SHAPE ROUND: two leftover vertices inside 30 m of the cairn (1248, 1246 m) dropped; the last leg is 34 m at 41 deg from the south-east (DTM1 1258/1261/1269/1275 along it), which is the summit block. Steepest 30 m window 36.2 (1205-1238) -> 41.3 (1247-1278), band 1200-1300 23.6 -> 27.8; gain 1212 -> 1210, distance 6.50 -> 6.47 km; card 1210 unchanged.",
-   "SHAPE ROUND (mid-route notches): vertices the coarse solve put on a boulder, a bank or the lip of a step were moved 5-20 m onto ground that reads like their neighbours, and same-height loops of 60-230 m the check had read as spikes were cut; figures re-derived from the line as it now is."
+   "SHAPE ROUND (mid-route notches): vertices the coarse solve put on a boulder, a bank or the lip of a step were moved 5-20 m onto ground that reads like their neighbours, and same-height loops of 60-230 m the check had read as spikes were cut; figures re-derived from the line as it now is.",
+   "REVIEW ROUND: line unchanged. The rebuilt treeline scan reads 637 m, but that is one isolated Skog vertex above 50 m of open ground (DTM1: Skog 569/573/581, then ÅpentOmråde 590–630, Skog 637, ÅpentOmråde 640+). The forest belt ends at 581 m, as the guide says; the prose stands."
   ]
  },
  "sunndalsnipa": {
@@ -4101,7 +4102,7 @@
    "intro": "1460 høgdemeter på 7,28 km frå Langøylia, over ein sørrygg som går opp og ned — 327 høgdemeter blir gjevne frå seg på veg opp. Dei siste 103 går på smal, eksponert rygg der brattaste samanhengande parti måler 40,5 grader, og der set dei fleste skia igjen.",
    "caption": "1460 høgdemeter og 7,28 km frå Langøylia over Aksla, Trollaksla og Sætrenibba, med austribba frå 1424 moh som stykket dei fleste går til fots.",
    "ascent": [
-    "Start ved vestenden av hyttevegen i Langøylia, 388 moh, mellom Hellesylt og Hornindal. Gå opp lia gjennom open lauvskog, aust for Gjøelva; skogen held til 673 moh, og bandet frå 600 til 700 moh måler 18,9 grader.",
+    "Start ved vestenden av hyttevegen i Langøylia, 388 moh, mellom Hellesylt og Hornindal. Gå opp lia gjennom open lauvskog, aust for Gjøelva; skogen held til 798 moh, og bandet frå 600 til 700 moh måler 18,9 grader.",
     "Ved Aksla på 921 moh er du oppe på ryggen. Følg han nordvestover til Trollaksla, 1255 moh, og deretter sørryggen nordover til Sætrenibba på 1370 moh. Ryggen går opp og ned heile vegen: banda frå 1100 til 1300 moh måler 3,7 og 3,5 grader over til saman meir enn tre kilometer grunn, og turen gjev frå seg 327 høgdemeter samla.",
     "Frå skaret nord for Sætrenibba, 1226 moh, rundar ein austover inn i sida som fell mot Kjellstaddalen og traverserer henne opp mot ryggen aust for toppen. Dette er skredterreng, og det er den same sida ein køyrer ned.",
     "Ved om lag 1424 moh er du på austribba, og der tek dei fleste av seg skia. Dei siste 103 høgdemetrane er smal og eksponert rygg: bandet frå 1400 til 1500 moh måler 24,2 grader i snitt, brattaste samanhengande parti 40,5 grader mellom 1482 og 1508 moh, og terrengmodellen gjev om lag 55 grader rett aust for ryggen og 75 rett vest."
@@ -4130,7 +4131,7 @@
    "intro": "1460 metres of climbing over 7.28 km from Langøylia, along a south ridge that rises and falls — 321 metres are given back on the way up. The last 103 are on a narrow, exposed rib where the steepest sustained section measures 40.5 degrees, and that is where most people take the skis off.",
    "caption": "1460 metres of climbing and 7.28 km from Langøylia over Aksla, Trollaksla and Sætrenibba, with the east rib from 1424 m as the stretch most people walk.",
    "ascent": [
-    "Start at the west end of the cabin road in Langøylia, 388 m, between Hellesylt and Hornindal. Climb the slope through open birch forest, east of Gjøelva; the forest holds to 673 m, and the band from 600 to 700 m measures 18.9 degrees.",
+    "Start at the west end of the cabin road in Langøylia, 388 m, between Hellesylt and Hornindal. Climb the slope through open birch forest, east of Gjøelva; the forest holds to 798 m, and the band from 600 to 700 m measures 18.9 degrees.",
     "At Aksla, 921 m, you are on the ridge. Follow it north-west to Trollaksla, 1255 m, and then the south ridge north to Sætrenibba at 1370 m. The ridge rises and falls the whole way: the bands from 1100 to 1300 m measure 3.7 and 3.5 degrees over more than three kilometres of ground between them, and the tour gives back 321 metres of height in total.",
     "From the col north of Sætrenibba, 1226 m, you round east into the flank falling toward Kjellstaddalen and traverse it up to the ridge east of the summit. This is avalanche terrain, and it is the same flank you ski down.",
     "At about 1424 m you are on the east rib, and that is where most people take the skis off. The last 103 metres of climbing are narrow, exposed ridge: the band from 1400 to 1500 m averages 24.2 degrees, the steepest sustained section 40.5 degrees between 1482 and 1508 m, and the terrain model gives about 55 degrees straight east of the crest and 75 straight west."
@@ -4162,7 +4163,8 @@
   ],
   "source": "written against corridors.json and the routed line",
   "problems": [
-   "SHAPE ROUND (mid-route notches): vertices the coarse solve put on a boulder, a bank or the lip of a step were moved 5-20 m onto ground that reads like their neighbours, and same-height loops of 60-230 m the check had read as spikes were cut; figures re-derived from the line as it now is."
+   "SHAPE ROUND (mid-route notches): vertices the coarse solve put on a boulder, a bank or the lip of a step were moved 5-20 m onto ground that reads like their neighbours, and same-height loops of 60-230 m the check had read as spikes were cut; figures re-derived from the line as it now is.",
+   "REVIEW ROUND: line unchanged. The full-corpus check_guides run on guide_facts.json rebuilt from scratch read the treeline at 798 m, not the 673 the guide gave: DTM1 classes every vertex from 655 to 798 m as Skog and the first open vertex at 810 m. Prose corrected in both languages."
   ]
  },
  "lodalskapa": {

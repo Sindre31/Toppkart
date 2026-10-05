@@ -96,6 +96,16 @@ NOTES = {
         "hut (DTM1: 31 m at 1178 m, 30 m at 1175 m) went with the spur, and so did the 90 m on the tarn at "
         "1162 m the guide named: check_ground on the cut line reports water only at 746 m."
     ),
+    "hornindalsrokken": (
+        "line unchanged. The full-corpus check_guides run on guide_facts.json rebuilt from scratch "
+        "read the treeline at 798 m, not the 673 the guide gave: DTM1 classes every vertex from 655 to "
+        "798 m as Skog and the first open vertex at 810 m. Prose corrected in both languages."
+    ),
+    "vassdalstinden": (
+        "line unchanged. The rebuilt treeline scan reads 637 m, but that is one isolated Skog vertex "
+        "above 50 m of open ground (DTM1: Skog 569/573/581, then ÅpentOmråde 590–630, Skog 637, "
+        "ÅpentOmråde 640+). The forest belt ends at 581 m, as the guide says; the prose stands."
+    ),
     "banseterkampen": (
         "summit moved to the 1202.4 m top (61.39470/10.12085) the line already crossed, 890 m "
         "east-north-east of the 1196.1 m top the card carried; between them a saddle at 1152 m on a "
@@ -241,6 +251,12 @@ def build_edits():
          "and the line crosses a tarn at 1162 m on the way. A little before that the line also runs 45 metres across a tarn at 1177 m, but only 10 metres from shore — there it cuts a corner. Both tarns are natural.",
          "At the head of Langedalen the line passes 180 metres north of Sigridsbu, which sits at 1175 m, and from there the ground flattens. The band from 1100 to 1200 m measures 3.8 degrees over 1529 metres of ground — a kilometre and a half of plateau with the view wide open."),
         ("and 3.1 degrees across the plateau from 1100 to 1200 m.", "and 3.8 degrees across the plateau from 1100 to 1200 m."))
+
+    # — hornindalsrokken — untouched line; the full-corpus guide check on a
+    #   from-scratch guide_facts.json reads forest on every vertex to 798 m
+    add("hornindalsrokken",
+        ("skogen held til 673 moh, og bandet", "skogen held til 798 moh, og bandet"),
+        ("the forest holds to 673 m, and the band", "the forest holds to 798 m, and the band"))
 
     # — banseterkampen — a different summit: the 1202.4 m top the line crossed
     add("banseterkampen",

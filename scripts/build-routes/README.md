@@ -6045,6 +6045,15 @@ the steepest 60 m window 40–110 m out, against 39.8° and 45.2° from the old
 top. The guide is rewritten around the new summit in both languages, and
 `measurements.json` carries the new sweep with the old one quoted.
 
+### Two treelines the full guide check caught
+
+`check_guides.py` over all 185 guides, on a `guide_facts.json` rebuilt from scratch, reported two
+figures on lines this round did not touch. Hornindalsrokken's guide said the forest holds to
+673 m; DTM1 classes every vertex from 655 to 798 m as `Skog` and the first open one at 810, so
+the prose now says 798 in both languages. Vassdalstinden's scan reads 637 m, but that is one
+isolated `Skog` vertex above 50 m of open ground — the belt ends at 581, as the guide says, and
+the reading is recorded in the guide's `problems` rather than written into the prose.
+
 ### What ran
 
 | check | result |
@@ -6053,7 +6062,7 @@ top. The guide is rewritten around the new summit in both languages, and
 | `check_tours.py` | clean |
 | `check_geometry.py` | the six real steps the shape round listed, and nothing else; three self-crossings and Bånsæterkampen's «gives back 4 m» are gone from the notes |
 | `check_bands.py` | 760 band claims, all agree with the line |
-| `check_guides.py` | 0 unsourced numbers, 0 reassurance claims |
+| `check_guides.py`, all 185 guides | 0 unsourced numbers, 0 reassurance claims |
 | `check_ground.py` on the eight tours | 12 routes clean; Lønahorgi's «skogsbilvegen» and Store Ble's «utsiktsløypa» still UNCHECKED because Overpass would not answer |
 | `check_routes.py` | clean |
 
