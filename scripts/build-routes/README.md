@@ -6066,8 +6066,26 @@ the reading is recorded in the guide's `problems` rather than written into the p
 | `check_geometry.py` | the six real steps the shape round listed, and nothing else; three self-crossings and Bånsæterkampen's «gives back 4 m» are gone from the notes |
 | `check_bands.py` | 760 band claims, all agree with the line |
 | `check_guides.py`, all 185 guides | 0 unsourced numbers, 0 reassurance claims |
-| `check_ground.py` on the eight tours | 12 routes clean; Lønahorgi's «skogsbilvegen» and Store Ble's «utsiktsløypa» still UNCHECKED because Overpass would not answer |
+| `check_ground.py` on the eight tours | 12 routes clean; the two trail claims Overpass would not answer were checked afterwards against the OSM API — below |
 | `check_routes.py` | clean |
+
+### The two trail claims Overpass would not answer
+
+Lønahorgi's «skogsbilvegen» and Store Ble's «utsiktsløypa» stayed UNCHECKED
+through the round: all four Overpass mirrors were down or timing out. They
+were measured afterwards against OpenStreetMap's own API
+(`api/0.6/map`), with the same tags and radius as `GROUND_QUERY`, by running
+`check_ground.py` with only `ground()` swapped for an API fetch.
+
+**Store Ble** comes back clean: the line is within 250 m of a mapped trail
+all the way. **Lønahorgi** came back as a finding of the Tempelseter shape. The
+guide claims the forest road only from Høyland to Bergsstølen, and over that
+stretch (to 380 m) the line is never more than 112 m from a mapped road or
+track. But a mapped path reaches the summit, so `check_trail` read the claim
+as end to end and reported the line 1549 m from it at 1037 m, on the ridge
+north-west of Svartahorgi, where the guide promises no path. The guide now
+states that gap in both languages, which is what `check_trail` softens on, and
+the tour comes back clean.
 
 ## Network
 
