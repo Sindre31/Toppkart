@@ -6117,6 +6117,13 @@ What it found, across 223 routes:
   Ospetinden, Snønipa's Veitebergsdalen line, Horndalsnuten's Skaftedalen
   line — and their guides quote the last forest on the line, which is the
   pipeline's definition. They are consistent and were left alone.
+  Lasselitinden (belt 332, stand to 348) and Mjølvafjellet (belt 673, stand to
+  701) are the same shape the other way round: their guides quote the belt.
+- **Four flags are the extraction, not the guide**: Store Blåmann's «open
+  from 56 m» is true of a line out of the forest at 15; Steindalsnosi's 1037 is
+  the Helgedalen line's treeline, quoted where that route is compared;
+  Slettind's and Høgevarde's numbers are the next sentence's. The check's
+  final run lists these fourteen and nothing else.
 - **Twelve guides gave a figure that matched no measurement**, mostly from
   research or an older scan that predated the line. `reground_treeline.py`
   replaces each with the vertex treeline (or first open vertex) in both
