@@ -940,13 +940,13 @@
   "banseterkampen": [
     {
       "what": "Flankesveip fra toppen, alle åtte peilinger",
-      "figure": "N 9,0° (15,0° 60–120 m ut), NØ 6,3° (10,6° 140–200), Ø 21,0° (38,0° 30–90), SØ 25,5° (45,2° 30–90), S 23,0° (39,8° 40–100), SV 18,7° (42,5° 180–240), V 3,9° (12,8° 10–70), NV 8,5° (14,8° 30–90)",
-      "how": "python3 flank_probe.py 61.39144 10.10642 — radial 400 m ut fra toppunktet, samplet hver 10 m på DTM1-rasteret, med bratteste 60-metersvindu per retning."
+      "figure": "N 7,4° (11,0° 200–260 m ut), NØ 5,7° (10,1° 340–400), Ø 28,2° (41,7° 140–200), SØ 31,0° (54,1° 40–100), S 30,8° (54,6° 50–110), SV 20,1° (32,4° 200–260), V 5,3° (13,4° 200–260), NV 7,9° (12,9° 110–170)",
+      "how": "python3 flank_probe.py 61.3947 10.12085 — radial 400 m ut fra toppunktet, samplet hver 10 m på DTM1-rasteret, med bratteste 60-metersvindu per retning. Målt på nytt i gjennomgangsrunden da toppen flyttet til 1202,4-kuppelen; sveipet fra den gamle 1196,1-toppen (61.39144 10.10642) ga SØ 25,5° (45,2° 30–90), S 23,0° (39,8° 40–100)."
     },
     {
       "what": "Varslingsregionen toppunktet ligger i",
       "figure": "Oppland sør, region 3042, type B. B-region: varsles bare når faregraden ventes å bli 4 eller 5, så de fleste vinterdager finnes det ingen vurdering å lese.",
-      "how": "NVEs varsom-API, AvalancheWarningByCoordinates/Simple på toppunktets koordinat — samme kall lib/avalanche.ts gjør fra kartet."
+      "how": "NVEs varsom-API, AvalancheWarningByCoordinates/Simple på toppunktets koordinat — samme kall lib/avalanche.ts gjør fra kartet. Samme region på den nye toppen (61.3947/10.12085): 3042 Oppland sør, type B."
     }
   ],
   "nevelfjell": [

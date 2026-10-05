@@ -103,6 +103,16 @@ SUMMIT_SEED = {
     # (UTM33 594798.7/7689615.18) that reads 897,8 in DTM1 against a published
     # 898; that position is the seed, the Kjølen rule again.
     "tredje-svanfjell": (69.29947, 17.40356),
+    # Bånsæterkampen is a ridge with three tops, and the register point sits
+    # 150 m from the middle one: 1196.1 m, which the tour carried for five
+    # rounds as «5.9 m short» of ut.no's 1202. The line itself crossed the
+    # answer on the way — a broad 1202.4 m top 890 m east-north-east, then
+    # gave back 44 m into a saddle and climbed to 1196. The register's own
+    # Fjell geometry passes 3 m from that top and 150 m from the 1196 one;
+    # the third, 1205.8 m west across a 1140 m saddle, is the flank of
+    # Prestkampen (1243, a Topp of its own). The published height names the
+    # top, the Fiskefjordtindan doctrine.
+    "banseterkampen": (61.39470, 10.12086),
 }
 
 # Peaks whose named top is a shoulder on a ridge that keeps rising, where an

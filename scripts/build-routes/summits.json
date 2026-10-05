@@ -785,11 +785,11 @@
   },
   "banseterkampen": {
     "name": "Bånsæterkampen",
-    "lat": 61.39144,
-    "lng": 10.10642,
-    "summit_dtm": 1196.1,
+    "lat": 61.3947,
+    "lng": 10.12085,
+    "summit_dtm": 1202.4,
     "claims": 1202,
-    "stored_off_km": 0.15
+    "stored_off_km": 0.71
   },
   "nevelfjell": {
     "name": "Nevelfjell",
