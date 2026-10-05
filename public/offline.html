@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="nb-NO">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Uten nett — Toppkart</title>
+<!--
+  Det service workeren (`public/sw.js`) viser når man navigerer til en side som
+  ikke er lagret, og nettet ikke svarer. Statisk og selvstendig med vilje: den
+  må virke uten et eneste annet kall, så stilen og skriptet står her inne, og
+  fargene er designsystemets egne (`app/globals.css`) skrevet ut.
+
+  Lista leses fra den samme cachen og den samme JSON-fila `lib/offline/store.ts`
+  skriver. Språket fra `tk_lang`, informasjonskapselen resten av sida bruker.
+-->
+<style>
+  :root {
+    --bg: #f2f2f3; --text: #1d1f20; --accent: #5980a6; --accent-700: #416180;
+    --divider: color-mix(in srgb, #1d1f20 16%, transparent);
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 16px/1.5 "Barlow", system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  main { max-width: 560px; margin: 0 auto; padding: 48px 16px 64px; }
+  .brand { font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; font-size: 18px; }
+  h1 { font-size: 34px; line-height: 1.1; text-transform: uppercase; letter-spacing: 0.01em; margin: 32px 0 12px; }
+  p { margin: 0 0 16px; }
+  .muted { color: color-mix(in srgb, var(--text) 65%, transparent); font-size: 14px; }
+  ul { list-style: none; margin: 24px 0 0; padding: 0; display: grid; gap: 10px; }
+  li { border: 1px solid var(--divider); padding: 12px 14px; }
+  li strong { display: block; text-transform: uppercase; letter-spacing: 0.02em; }
+  li a { color: var(--accent-700); margin-right: 14px; font-size: 14px; }
+  button {
+    margin-top: 24px; padding: 9px 16px; font: inherit; font-size: 14px; cursor: pointer;
+    background: var(--accent); color: var(--bg); border: 1px solid var(--accent);
+  }
+</style>
+</head>
+<body>
+<main>
+  <div class="brand">Toppkart</div>
+  <h1 id="title">Du er uten nett</h1>
+  <p id="lede">Denne sida er ikke lagret på telefonen.</p>
+  <p id="hint" class="muted"></p>
+  <ul id="list" hidden></ul>
+  <button id="retry" type="button">Prøv igjen</button>
+</main>
+<script>
+(function () {
+  var lang = /(?:^|;\s*)tk_lang=en(?:;|$)/.test(document.cookie) ? "en" : "no";
+  var T = {
+    no: {
+      title: "Du er uten nett",
+      lede: "Denne sida er ikke lagret på telefonen.",
+      saved: "Disse turene har du lagret, og de virker uten dekning:",
+      none: "Du har ingen turer lagret. Med abonnement kan du trykke «Lagre offline» på en turguide mens du har nett, så har du guiden, kartet og GPX-fila med deg.",
+      guide: "Turguide", map: "Kart", retry: "Prøv igjen"
+    },
+    en: {
+      title: "You are offline",
+      lede: "This page is not saved on your phone.",
+      saved: "These tours are saved and work without coverage:",
+      none: "You have no tours saved. With a subscription you can press «Save offline» on a guide while you are online, and the guide, the map and the GPX file come with you.",
+      guide: "Guide", map: "Map", retry: "Try again"
+    }
+  }[lang];
+  if (lang === "en") document.documentElement.lang = "en";
+  document.title = T.title + " — Toppkart";
+  document.getElementById("title").textContent = T.title;
+  document.getElementById("lede").textContent = T.lede;
+  document.getElementById("retry").textContent = T.retry;
+  document.getElementById("retry").onclick = function () { location.reload(); };
+
+  var hint = document.getElementById("hint");
+  hint.textContent = T.none;
+  if (!("caches" in window)) return;
+  caches.open("tk-offline-v1")
+    .then(function (c) { return c.match("/__offline/saved.json"); })
+    .then(function (r) { return r ? r.json() : null; })
+    .then(function (meta) {
+      var tours = meta && meta.tours ? meta.tours : {};
+      var slugs = Object.keys(tours).sort(function (a, b) {
+        return tours[a].name.localeCompare(tours[b].name, "nb");
+      });
+      if (!slugs.length) return;
+      hint.textContent = T.saved;
+      var list = document.getElementById("list");
+      slugs.forEach(function (slug) {
+        var li = document.createElement("li");
+        var name = document.createElement("strong");
+        name.textContent = tours[slug].name + (tours[slug].region ? " · " + tours[slug].region : "");
+        var guide = document.createElement("a");
+        guide.href = "/tur/" + encodeURIComponent(slug);
+        guide.textContent = T.guide;
+        var map = document.createElement("a");
+        map.href = "/kart?tur=" + encodeURIComponent(slug);
+        map.textContent = T.map;
+        li.append(name, guide, map);
+        list.append(li);
+      });
+      list.hidden = false;
+    })
+    .catch(function () {});
+})();
+</script>
+</body>
+</html>

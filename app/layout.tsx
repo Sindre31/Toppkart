@@ -3,6 +3,7 @@ import { Barlow, Barlow_Condensed } from "next/font/google";
 import Script from "next/script";
 import { Analytics } from "@vercel/analytics/next";
 import { Feedback } from "@/components/Feedback";
+import { ServiceWorker } from "@/components/ServiceWorker";
 import { getIdentity } from "@/lib/access";
 import { GA_MEASUREMENT_ID } from "@/lib/config";
 import { htmlLang } from "@/lib/i18n";
@@ -110,6 +111,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
       <body>
         {children}
         <Feedback lang={lang} email={email} />
+        <ServiceWorker />
         <Analytics />
         {analytics && (
           <>

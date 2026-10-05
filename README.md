@@ -246,6 +246,37 @@ wrote twice and never who. It fails open: turning away a reader with something t
 worse error here, which is the opposite of how `lib/admin.ts` is built and for the opposite
 reason.
 
+## Offline
+
+A subscriber can press «Lagre offline» on a guide, and the tour then works without coverage:
+the guide, `/kart` with that tour open and the reader's position, the map tiles along every
+route up, and the GPX file. Everything is stored in the browser's Cache Storage on the device;
+nothing about it reaches the server.
+
+- **`public/sw.js`** is hand-written, with no build step and no library. It only ever answers
+  from what the reader saved, and only when the network fails (or takes more than six seconds
+  on a page that is saved). It caches nothing on its own. It is registered in production builds
+  only (`components/ServiceWorker.tsx`): under `next dev` chunk names do not change between
+  edits, and a worker serving them from a saved copy would serve stale code without a word.
+- **`lib/offline/store.ts`** does the saving, from the page. The guide's HTML is checked for
+  `data-access="open"` first, because an expired session gets the locked guide with a `200`.
+  The code is found by following references from both pages through the chunks they load —
+  Turbopack writes lazy chunks as `"static/chunks/…"` inside other chunks, not in the HTML —
+  so `/kart`'s Leaflet half and the route data come along without a build manifest.
+- **`lib/offline/plan.ts`** decides the tiles: zoom 10–13 over the routes' padded bounding box,
+  14–15 as a corridor along the lines, at most 400 per tour (zoom 15 is dropped first). A tour
+  is typically 5–15 MB. Tiles are fetched with `mode: "cors"` — Kartverket sends
+  `access-control-allow-origin: *` — because Chrome counts an opaque response as megabytes
+  against the quota whatever it weighs.
+- **Signing out or deleting the account clears it**, both from the worker (it sees the request
+  go by) and with `Clear-Site-Data: "storage"` on the response. A borrowed phone must not keep
+  a subscriber's guides.
+- Navigating to a page that is not saved while offline shows `public/offline.html`, a static
+  page listing what is saved.
+
+Not done: saved copies are not refreshed on their own, and they stay readable offline after a
+subscription ends — online, the server's answer always wins.
+
 ## Before launch
 
 The design handoff flags this work as unfinished. None of it is a code defect; all of it is

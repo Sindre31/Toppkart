@@ -20,6 +20,16 @@ export interface GuideDict {
   downloadGpxLocked: string;
   requiresSubscription: string;
   openInMap: string;
+  /* — «Lagre offline» (`components/guide/OfflineSave.tsx`) — */
+  saveOffline: string;
+  savingOffline: (percent: number) => string;
+  savedOffline: (size: string) => string;
+  removeOffline: string;
+  offlineHint: string;
+  offlineSavedHint: string;
+  offlineErrorNetwork: string;
+  offlineErrorQuota: string;
+  offlineErrorLocked: string;
   /* — key figures — */
   statSummit: string;
   statVertical: string;
@@ -66,6 +76,17 @@ const GUIDE: Translated<GuideDict> = {
     downloadGpxLocked: "Last ned GPX — krever abonnement",
     requiresSubscription: "Krever abonnement",
     openInMap: "Åpne i kartet",
+    saveOffline: "Lagre offline",
+    savingOffline: (p) => `Lagrer … ${p} %`,
+    savedOffline: (size) => `Lagret offline · ${size}`,
+    removeOffline: "Fjern",
+    offlineHint:
+      "Lagrer guiden, kartet langs ruta og GPX-fila på denne enheten, så de virker uten dekning.",
+    offlineSavedHint:
+      "Åpne toppkart.no som vanlig i fjellet — uten dekning får du den lagrede guiden og kartet, med posisjonen din.",
+    offlineErrorNetwork: "Lagringen stoppet før den var ferdig. Sjekk nettet og prøv igjen.",
+    offlineErrorQuota: "Det er ikke plass på enheten. Fjern andre lagrede turer og prøv igjen.",
+    offlineErrorLocked: "Guiden kom tilbake låst. Logg inn på nytt og prøv igjen.",
     statSummit: "Topp",
     statVertical: "Høydemeter",
     statTime: "Normaltid",
@@ -103,6 +124,17 @@ const GUIDE: Translated<GuideDict> = {
     seasonPrefix: "Season",
     downloadGpx: "Download GPX",
     downloadGpxLocked: "Download GPX — requires a subscription",
+    saveOffline: "Save offline",
+    savingOffline: (p) => `Saving … ${p}%`,
+    savedOffline: (size) => `Saved offline · ${size}`,
+    removeOffline: "Remove",
+    offlineHint:
+      "Saves the guide, the map along the route and the GPX file on this device, so they work without coverage.",
+    offlineSavedHint:
+      "Open toppkart.no as usual in the mountains — without coverage you get the saved guide and map, with your position.",
+    offlineErrorNetwork: "Saving stopped before it finished. Check your connection and try again.",
+    offlineErrorQuota: "There is no room left on this device. Remove other saved tours and try again.",
+    offlineErrorLocked: "The guide came back locked. Sign in again and try again.",
     requiresSubscription: "Requires a subscription",
     openInMap: "Open on the map",
     statSummit: "Summit",
