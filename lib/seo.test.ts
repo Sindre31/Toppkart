@@ -15,8 +15,8 @@ import { getTour } from "@/lib/tours";
  *
  *  Fram til nå kunne den ikke bli feil på den måten: `/tur/hva-som-helst` svarte
  *  `200 OK` med «Turen finnes ikke», så *alt* i sitemap-et så levende ut. Nå
- *  svarer ukjente slugs 404 slik de skal (se `generateMetadata` i
- *  `app/tur/[slug]/page.tsx`), og da er avstanden mellom de to listene noe som
+ *  svarer ukjente slugs 404 slik de skal (se `unknownTour()` i
+ *  `middleware.ts`), og da er avstanden mellom de to listene noe som
  *  kan gjøre skade. `TOURS` avgjør hva sitemap-et lover; `GUIDES` avgjør hva
  *  ruta kjenner igjen. De er det samme settet i dag, og denne testen er det som
  *  sier fra den dagen de ikke er det.

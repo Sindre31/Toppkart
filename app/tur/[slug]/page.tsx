@@ -62,14 +62,15 @@ export async function generateMetadata({
    *  sidekomponenten har rukket å slå opp slug-en, og kastet kan bare bytte
    *  ut innholdet, ikke koden som allerede er ute.
    *
-   *  `generateMetadata` kjører før strømmen åpnes, fordi `<head>` må være
-   *  ferdig før den første byten kan sendes. Kaster vi her, er ingenting
-   *  sendt ennå, og Next svarer 404 med `app/not-found.tsx` i kroppen.
+   *  Her i `generateMetadata` var rettelsen en stund ment å sitte, ut fra at
+   *  `<head>` må være ferdig før den første byten. Det holdt ikke: med Next
+   *  16.3 svarte også dette `200`, for alle brukeragenter, Bingbot og
+   *  Googlebot med. Statusen settes nå i middleware, før noe rendres — se
+   *  `unknownTour()` i `middleware.ts` og `docs/seo.md`.
    *
-   *  Alternativet var å fjerne `app/loading.tsx`. Det virker også, og koster
-   *  prefetch på hver eneste dynamiske rute — se fila for hva det gjorde med
-   *  navigasjonen. `dynamicParams = false` virker ikke: ingen av sidene
-   *  prerendres (de leser cookies), så Next går til rendring uansett. */
+   *  Kallet står likevel. Det er det som gir riktig *innhold* — 404-sida og
+   *  ikke en tittel å rendre videre med — og det er det som slår inn hvis
+   *  slug-lista til middleware av en eller annen grunn er tom. */
   if (!tour) notFound();
 
   // Peak and region are proper nouns — the title is identical in both.

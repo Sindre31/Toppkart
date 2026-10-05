@@ -31,16 +31,35 @@ which is what "Discovered but not crawled" describes.
 the response. The head is sent — with `200` — before the page component has looked the slug up,
 and a throw from there can only replace the body, not a status code already on the wire.
 
-The decision therefore lives in `generateMetadata`, which runs before the stream opens because
-`<head>` must be complete before the first byte.
+The decision was first put in `generateMetadata`, on the reasoning that it runs before the
+stream opens because `<head>` must be complete before the first byte. **That did not hold.**
+Rebuilt at the commit that introduced it, with the same Next 16.3.0, `/tur/finnesikke` answers
+`200`; so did production when it was checked in October 2026, for every user agent tried —
+a browser, `curl`, Bingbot and Googlebot. The table this section used to end on said `404`; that
+was not what the site did.
+
+The decision now lives in **middleware**, which runs before anything is rendered and so before
+any status is on the wire. `isUnknownTour()` in `lib/tour-paths.ts` checks the slug against the
+tours, and an unknown one is rewritten to a path no route answers. That gets Next's ordinary 404
+handling — `app/not-found.tsx` in the body, `404` on the status line — while the address bar
+keeps what the reader typed. Unmatched paths were never the problem: `/finnesikke` has answered
+`404` all along, because routing decides that before rendering starts.
+
+Middleware cannot import `lib/tours`: it runs on the Edge, and that module pulls in every route
+line. The slug list is therefore built in `next.config.ts` from the same `TOURS` the pages read,
+and inlined into the bundle through `env`. There is no second list to keep in step, and the
+Python emitters that write `lib/tours.ts` need no change. `lib/tour-paths.test.ts` checks that the
+list is exactly the tours. With no list at all the check fails open, since answering `404` for
+all 185 tours is worse than `200` for one typo.
 
 | | `/tur/slogen` | `/tur/finnesikke` |
 | --- | --- | --- |
 | before | 200 | **200** |
+| `notFound()` in `generateMetadata` | 200 | **200** |
 | without `app/loading.tsx` | 200 | 404 |
-| now | 200 | **404** |
+| middleware (now) | 200 | **404** |
 
-Two alternatives were tried and rejected. Deleting `app/loading.tsx` works, and costs prefetch on
+Two other alternatives were tried and rejected. Deleting `app/loading.tsx` works, and costs prefetch on
 every dynamic route — the exact thing the file was added to fix. `export const dynamicParams =
 false` does nothing at all: no page is prerendered (they all read cookies), so Next renders anyway
 and the status is already out.
