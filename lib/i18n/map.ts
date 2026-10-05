@@ -101,6 +101,22 @@ export interface Dict {
   dangerUnavailable: string;
   dangerLoading: string;
   dangerSource: string;
+  /* — weather on the summit, from MET Norway — */
+  weatherTitle: string;
+  weatherAltitude: (m: number) => string;
+  weatherNow: string;
+  weatherToday: string;
+  weatherTomorrow: string;
+  /** «−5 til −1 °C» */
+  weatherTempRange: (min: string, max: string) => string;
+  /** «vind opptil 14 m/s fra SV» */
+  weatherWindMax: (speed: string, from: string) => string;
+  /** «vind 6 m/s fra S» */
+  weatherWindNow: (speed: string, from: string) => string;
+  weatherLoading: string;
+  weatherUnavailable: string;
+  weatherNote: string;
+  weatherSource: string;
 
   unlockedTitle: string;
   unlockedBody: string;
@@ -193,6 +209,19 @@ const MAP: Translated<Dict> = {
     dangerUnavailable: "Skredvarselet kunne ikke hentes nå. Sjekk varsom.no før du drar.",
     dangerLoading: "Henter skredvarsel …",
     dangerSource: "Varsom.no",
+    weatherTitle: "Vær på toppen",
+    weatherAltitude: (m) => `${m} moh`,
+    weatherNow: "Nå",
+    weatherToday: "I dag",
+    weatherTomorrow: "I morgen",
+    weatherTempRange: (min, max) => (min === max ? `${min} °C` : `${min} til ${max} °C`),
+    weatherWindMax: (speed, from) => `vind opptil ${speed} m/s fra ${from}`,
+    weatherWindNow: (speed, from) => `vind ${speed} m/s fra ${from}`,
+    weatherLoading: "Henter værvarsel …",
+    weatherUnavailable: "Værvarselet kunne ikke hentes nå. Sjekk yr.no før du drar.",
+    weatherNote:
+      "Temperaturen er regnet for toppens høyde. Vinden er modellens, og på en eksponert rygg blåser det ofte mer.",
+    weatherSource: "Yr · data fra MET Norway",
     unlockedTitle: "Du har full tilgang",
     unlockedBody: "Rutebeskrivelse, høydeprofil, GPX og skredterreng er åpne for deg.",
     guidePending: "Full turguide for denne toppen er under arbeid.",
@@ -288,6 +317,19 @@ const MAP: Translated<Dict> = {
     dangerUnavailable: "Could not load the avalanche forecast. Check varsom.no before you go.",
     dangerLoading: "Loading avalanche forecast …",
     dangerSource: "Varsom.no",
+    weatherTitle: "Weather on the summit",
+    weatherAltitude: (m) => `${m} m`,
+    weatherNow: "Now",
+    weatherToday: "Today",
+    weatherTomorrow: "Tomorrow",
+    weatherTempRange: (min, max) => (min === max ? `${min} °C` : `${min} to ${max} °C`),
+    weatherWindMax: (speed, from) => `wind up to ${speed} m/s from ${from}`,
+    weatherWindNow: (speed, from) => `wind ${speed} m/s from ${from}`,
+    weatherLoading: "Loading the forecast …",
+    weatherUnavailable: "Could not load the forecast. Check yr.no before you go.",
+    weatherNote:
+      "Temperature is for the summit's height. Wind is the model's, and an exposed ridge often blows harder.",
+    weatherSource: "Yr · data from MET Norway",
     unlockedTitle: "You have full access",
     unlockedBody: "Route description, elevation profile, GPX and avalanche terrain are open to you.",
     guidePending: "The full guide for this peak is still being written.",
