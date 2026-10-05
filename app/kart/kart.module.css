@@ -653,3 +653,57 @@
   font-size: 12px;
   color: var(--color-accent-700);
 }
+
+/* — weather on the summit (MET Norway). Shares the avalanche panel's frame,
+   heading and source link; these are the rows inside it. — */
+.weatherIcon {
+  flex: none;
+  color: var(--color-accent-700);
+}
+.weatherNow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 0 12px;
+  border-bottom: 1px solid var(--color-divider);
+}
+.weatherTemp {
+  flex: none;
+  font-family: var(--font-heading);
+  font-weight: var(--font-heading-weight);
+  font-size: 22px;
+  line-height: 1;
+}
+.weatherNowText {
+  font-size: 13px;
+  line-height: 18px;
+}
+.weatherDay {
+  font-family: var(--font-heading);
+  font-weight: var(--font-heading-weight);
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-right: 8px;
+}
+.weatherDays {
+  list-style: none;
+  margin: 0 0 10px;
+  padding: 0;
+}
+.weatherRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--color-divider);
+}
+.weatherRowHead {
+  font-size: 13px;
+  line-height: 18px;
+}
+.weatherRowFacts {
+  font-size: 12px;
+  line-height: 18px;
+  color: color-mix(in srgb, var(--color-text) 70%, transparent);
+}

@@ -33,6 +33,7 @@ import {
 } from "@/lib/map-filters";
 import { CapsText } from "@/components/CapsText";
 import { AvalanchePanel } from "./AvalanchePanel";
+import { WeatherPanel } from "./WeatherPanel";
 import { useGeolocation, type GeoState } from "./useGeolocation";
 import s from "./kart.module.css";
 
@@ -464,6 +465,13 @@ export default function MapView({
                   leseren bytter topp, slik at forrige topps faregrad aldri
                   rekker å stå under det nye navnet. */}
               <AvalanchePanel key={selected.slug} slug={selected.slug} lang={lang} />
+              <WeatherPanel
+                key={`vaer-${selected.slug}`}
+                slug={selected.slug}
+                lat={selected.lat}
+                lng={selected.lng}
+                lang={lang}
+              />
 
               {selected.hasGuide ? (
                 <Link className={`btn btn-secondary ${s.guideLink}`} href={`/tur/${selected.slug}`}>
