@@ -6089,6 +6089,63 @@ north-west of Svartahorgi, where the guide promises no path. The guide now
 states that gap in both languages, which is what `check_trail` softens on, and
 the tour comes back clean.
 
+## The treeline round
+
+`guide_facts.treeline_scan` reads the terrain class at each vertex of the line,
+about one every 45 m, and the guides quote its last `Skog` vertex as the
+treeline. The review round found two guides wrong about it in opposite ways —
+Hornindalsrokken quoting a stale 673 m on a line in forest to 798, and
+Vassdalstinden quoting the 581 m where the line leaves its forest belt while
+the scan's 637 m was a stand beside the line — so this round read every
+route's treeline again at 5 m.
+
+`check_treeline.py` does it. It reads densely from 300 m under the vertex
+treeline to the scan's own quiet margin above it (about 40 000 lookups for the
+catalogue), applies the same stopping rule to the samples, and reports per
+route the vertex treeline, the dense one, the top of the highest forest run
+at least 60 m long (the belt), and the heights the guide gives right after a
+word for forest or treeline.
+
+What it found, across 223 routes:
+
+- **The vertex scan is right.** Where the dense read goes higher it is by
+  10–17 m on most routes: the edge lies between the last forest vertex and
+  the next, which is the scan's resolution, not an error. The check flags only
+  gaps beyond one vertex segment (20 m).
+- **Eight routes clip a stand above their belt** — Storfjellet (both),
+  Fastdalstinden, Spanstinden's Lapphaugen line, Snøtinden i Tjeldsund,
+  Ospetinden, Snønipa's Veitebergsdalen line, Horndalsnuten's Skaftedalen
+  line — and their guides quote the last forest on the line, which is the
+  pipeline's definition. They are consistent and were left alone.
+- **Twelve guides gave a figure that matched no measurement**, mostly from
+  research or an older scan that predated the line. `reground_treeline.py`
+  replaces each with the vertex treeline (or first open vertex) in both
+  languages:
+
+| tour | guide said | now |
+| --- | --- | --- |
+| Storgalten | 70 | 180 |
+| Kavringtinden | 301 | 320 |
+| Rombakstøtta | 457 | 494 |
+| Kirketaket | 421 | 632 |
+| Kolåstinden | 410 | 474 |
+| Saudehornet | 339 | 456 |
+| Slogen | 659 | 681 |
+| Jakta | 296 | 395 |
+| Skåla | 426 | 698 |
+| Oksen | 538 | 580 |
+| Melderskin | 520 | 618 |
+| Melshornet | 454 | 545 |
+
+Three of them changed more than a number. Melshornet's guide put its steepest
+step (458–472 m) «just above» and «just below» the treeline in two places; at
+545 m it is in the forest. Melderskin's comparison with the Myrdalsvatnet line
+gave the Kletta route 300 m of forest and a 521 m treeline, against 1.76 km
+and 618. Kirketaket's «open birch at 420 m … the forest lets go right there»
+contradicted itself and is rewritten. Sæbyggjenuten's guide said its treeline
+had not been measured point by point because Kartverket's API was down; it has
+been now, at 1044 m.
+
 ## Network
 
 Everything is public and unauthenticated:
