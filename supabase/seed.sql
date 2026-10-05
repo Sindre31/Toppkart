@@ -224,7 +224,7 @@ values
 -- ============================================================================
 
 update public.tk_tours set
-  description_up   = 'Start ved Sandneset, der Galtelva renner ut i fjorden på 14 moh, rett ved Fv7922 Lenangsveien. Parkeringa er uskiltet: det som finnes er plassen på nordsida av elveosen og veikanten langs fylkesveien. Sett bilen godt utenfor kjørebanen — dette er brøytet vinterveg. Herfra går du rett inn i Galtdalen nord for Lassofjellet og holder sørsiden av elva, det vil si høyre side på vei opp. Bjørkeskogen slipper taket allerede rundt 70 moh; resten av turen er åpent terreng.
+  description_up   = 'Start ved Sandneset, der Galtelva renner ut i fjorden på 14 moh, rett ved Fv7922 Lenangsveien. Parkeringa er uskiltet: det som finnes er plassen på nordsida av elveosen og veikanten langs fylkesveien. Sett bilen godt utenfor kjørebanen — dette er brøytet vinterveg. Herfra går du rett inn i Galtdalen nord for Lassofjellet og holder sørsiden av elva, det vil si høyre side på vei opp. Bjørkeskogen slipper taket allerede rundt 180 moh; resten av turen er åpent terreng.
 
 Rund nordsiden av Lassofjellet og ta sikte på skaret mellom Litle-Galten og Storgalten. Du skal ikke helt opp i skaret. Det bunner på 626 moh, og går du dit, gir du fra deg høyde du nettopp har tatt. Legg deg inn på ribben et par hundre meter sør for skaret i stedet — det er der oppstigninga begynner.
 
@@ -574,7 +574,7 @@ where slug = 'hamperokken';
 update public.tk_tours set
   description_up   = 'Fra parkeringen ved Eidebakken, 62 moh, følger du skogsveien opp østsida av Gjerdelva. Du passerer Rødsteinen i bjørkeskogen rundt 200 moh og fortsetter opp ryggen øst for elva. Ruta krysser aldri Gjerdelva — går du over vann, har du gått feil.
 
-Skogen slipper taket ved 301 moh, og du går forbi Skihytta på 317. Mellom Rødsteinen og Skihytta må du gjennom et grunt søkk før stigningen tar seg opp igjen, og terrenget blir først ordentlig oversiktlig rundt 400. Skogsveiene fra Karnes, Solhov, Marieslett og Jensbakk kommer opp på den samme hylla, så hvilken du velger nede i bygda spiller mindre rolle. Herfra legger du kursen vestover mot nordøstryggen og kommer opp på kammen rundt 780 moh.
+Du går forbi Skihytta på 317, og skogen slipper taket ved 320 moh. Mellom Rødsteinen og Skihytta må du gjennom et grunt søkk før stigningen tar seg opp igjen, og terrenget blir først ordentlig oversiktlig rundt 400. Skogsveiene fra Karnes, Solhov, Marieslett og Jensbakk kommer opp på den samme hylla, så hvilken du velger nede i bygda spiller mindre rolle. Herfra legger du kursen vestover mot nordøstryggen og kommer opp på kammen rundt 780 moh.
 
 Videre følger du ryggen sørover, på eller like øst for kammen. Mellom 900 og 950 moh reiser østsida seg i partier over 30 grader, og bratteste enkeltsteget på linja måler 33,5. Vestsida er ikke et alternativ: der faller det 40 til 80 høydemeter per hundre meter rett ned mot Gjerdelva.
 
@@ -2372,7 +2372,7 @@ where slug = 'kvasstinden';
 update public.tk_tours set
   description_up   = 'Parkeringen er ved veibommen i Forselvveien over Djupvik. Gå forbi bommen og fram til veien slutter i det gamle steinbruddet på 141 moh, og hundre meter videre i samme retning før du legger deg inn i skogen. De første tre hundre høydemeterne er bratte og tette; følg det gradvis slakere terrenget opp mot venstre til du står ved Pumpvatnet på 325 moh.
 
-Kryss vatnet på isen og forlat det i sørøstre hjørne, der en gammel skogsvei tar deg inn i bekkedalen langs Forsneselva mot Forsnesvatnet. Skogen slipper taket på 457 moh, og resten av dalen går i åpent terreng. Ved dalhodet rundt 650 moh, nord for Forsnesvatnet, svinger du østover inn i den lille dalen mot Isvatnet.
+Kryss vatnet på isen og forlat det i sørøstre hjørne, der en gammel skogsvei tar deg inn i bekkedalen langs Forsneselva mot Forsnesvatnet. Skogen slipper taket på 494 moh, og resten av dalen går i åpent terreng. Ved dalhodet rundt 650 moh, nord for Forsnesvatnet, svinger du østover inn i den lille dalen mot Isvatnet.
 
 Isvatnet ligger på 820 moh. Rund det på nordsida — der går en sammenhengende benk på fire til tjuefire grader som tar deg østover fra 850 til 950 moh uten å berøre noe bratt. Hold benken hele veien. Skulderen rett øst for vatnet, nede til høyre for deg, er et bergband som måler 53 til 63 grader.
 
@@ -2381,7 +2381,7 @@ Fra 950 moh fortsetter benken østover til du kommer opp på sørøstryggen rund
 
 Vanligste feil: å tro at det går an å kjøre rett av toppen. Det gjør det ikke. Nordsida er Rombaks-S''en, og den måler 52 grader i snitt de første fire hundre meterne, med partier over 70 — videre 41 grader hele veien ned mot Rombaken. Den er så eksponert at et fall kan bli fatalt, og den er en linje for folk som har kjørt den før. Nordøst og øst er nesten like bratt, 48 og 44 grader, og fører ned i Rombaksrennene. Og vest, som ser ut som en snarvei tilbake til benken, går inn i et bergband på over 60 grader mellom 1060 og 1090 moh. Hold krona sørøstover til du er nede på 1145 moh og ser Isvatnet.
 
-Under skoggrensa på 457 moh blir det tett igjen. Følg oppsporet ned til veienden — skogen her er bratt og uoversiktlig, og det går fortere i eget spor enn å lete etter en bedre linje.',
+Under skoggrensa på 494 moh blir det tett igjen. Følg oppsporet ned til veienden — skogen her er bratt og uoversiktlig, og det går fortere i eget spor enn å lete etter en bedre linje.',
   avalanche_notes  = jsonb_build_array(
     jsonb_build_object(
       'title', 'Ruta',
@@ -3146,7 +3146,7 @@ where slug = 'storhornet';
 update public.tk_tours set
   description_up   = 'Fra parkeringen på Hellerøra (Øvre Kavli), 185 moh, følger du bomveien nordover den første kilometeren, til den krysser Heiaelva. Rundt svingen og videre inn på sporet mot Kavlisetra og Måsvassbu.
 
-Ved rundt 420 moh forlater du Måsvassbu-sporet og går nordøst opp gjennom åpen bjørkeskog. Skogen slipper taket akkurat der: over 421 moh er det åpent terreng resten av veien. Målet er Vesttoppen på Steinberget, 766 moh.
+Ved rundt 420 moh forlater du Måsvassbu-sporet og går nordøst opp gjennom åpen bjørkeskog. Skogen slipper taket på 632 moh, og derfra er det åpent terreng resten av veien. Målet er Vesttoppen på Steinberget, 766 moh.
 
 Fra Vesttoppen følger du kammen østover til Steinberget, 981 moh. Ryggen henger sammen og stiger jevnt, men rett nord for Steinberget faller den 19 meter i et søkk før den reiser seg igjen. De 19 meterne må du opp igjen på vei tilbake — de er med i turens 1277 høydemeter.
 
@@ -3457,7 +3457,7 @@ Den andre er tidspunktet. Ruta går gjennom skredterreng både inn mot Nordkopen
 where slug = 'rana';
 
 update public.tk_tours set
-  description_up   = 'Fra parkeringen ved Standaleidet, 376 moh, følger du den ryddede traseen nordover mot Fossane under Søre Sætretind. Skogen slipper allerede på 410 moh, og fossen markerer inngangen til Kvanndalen.
+  description_up   = 'Fra parkeringen ved Standaleidet, 376 moh, følger du den ryddede traseen nordover mot Fossane under Søre Sætretind. Skogen slipper på 474 moh, og fossen markerer inngangen til Kvanndalen.
 
 Følg dalbunnen langs elvefaret nordover. Terrenget er slakt: det bratteste hundremeterspennet, mellom 800 og 900 moh, ligger på 17,6° i snitt. Ikke sving vest der dalen åpner seg rundt 650 moh — det juvet fører opp i breens utløp. Hold nordover til Appelsinhaugen på 950 moh, den naturlige rasten halvveis.
 
@@ -3513,7 +3513,7 @@ Vanlegaste feil: å navigere seg vestover frå toppen i dårleg sikt. Frå skare
 where slug = 'vassdalstinden';
 
 update public.tk_tours set
-  description_up   = 'Frå parkeringa ved vasshuset øvst i Vikegeila, 149 moh, følgjer du anleggsvegen oppover Skåla. Skogen sluttar rundt 339 moh og terrenget er ope frå 344. Ved om lag 395 moh går ein av vegen der ein kartlagd sti tek av — det er same staden Fri Flyt skildrar med «på skrå mot Vikeelva, kryss elva».
+  description_up   = 'Frå parkeringa ved vasshuset øvst i Vikegeila, 149 moh, følgjer du anleggsvegen oppover Skåla. Skogen sluttar rundt 456 moh og terrenget er ope frå 473. Ved om lag 395 moh går ein av vegen der ein kartlagd sti tek av — det er same staden Fri Flyt skildrar med «på skrå mot Vikeelva, kryss elva».
 
 Over elva siktar du mot det lågaste punktet på ryggen mellom Vallahornet og Saudehornet, 812 moh. Skaret ligg lenger aust enn ei rett linje mellom dei to toppane skulle tilseia; ryggkammen sjølv har lågaste punkt der, og ein kartlagd sti følgjer han om lag tretti meter unna.
 
@@ -3544,7 +3544,7 @@ where slug = 'saudehornet';
 update public.tk_tours set
   description_up   = 'Fra veilomma ved Skylstad i Norangsdalen, 85 moh, går du rett opp Brekkheida. Hold deg vest for Brekkeelva gjennom hele skogen — elva ligger et par hundre meter øst for linja, og du kommer først inn på elvefaret oppe på flata rundt 700 moh. Dette er den bratteste delen av skogen: de hundre metrene mellom 200 og 300 moh ligger på 21,9° i snitt, og de under, 100 til 200 moh, på 19,0°.
 
-Skoggrensa slipper på 659 moh. Videre følger du sporet mot Patchellhytta inn på flata sørvest for hytta, drøyt 795 moh. Her forlater du hyttesporet. Sving vest opp østryggen før du krysser 1000-meteren — går du lenger inn mot Steinreset, må du hente igjen høyden på feil side av ryggen.
+Skoggrensa slipper på 681 moh. Videre følger du sporet mot Patchellhytta inn på flata sørvest for hytta, drøyt 795 moh. Her forlater du hyttesporet. Sving vest opp østryggen før du krysser 1000-meteren — går du lenger inn mot Steinreset, må du hente igjen høyden på feil side av ryggen.
 
 Pukkelen topper på 1143 moh. Derfra faller ryggen 26 meter til et skar før den stiger til høgde 1204, og videre er det 56 meter ned til kolen på 1148 før selve toppryggen. Hold deg til høyre for ura.
 
@@ -3629,9 +3629,9 @@ where slug = 'skarene';
 update public.tk_tours set
   description_up   = 'Start på den store parkeringsplassen ved Helgatun på Krøvelseidet, 252 moh, på fv5894 Vikebygdvegen mellom Volda og Åmdalen. Løypa tek av frå plassen og går rett inn i skogen. Ho er tidvis preparert med trakkemaskin, og den siste bakken er merkt med brøytestikker.
 
-Dei fyrste hundre og femti høgdemetrane er slake: bandet frå 200 til 300 moh måler 5,3 grader i snitt over 580 meter grunn, og 300 til 400 moh 12,0 grader. Skogen slepper taket ved 454 moh, og brattaste steget på heile turen ligg like under skoggrensa — 23,8 grader over tretti meter, mellom 458 og 472 moh.
+Dei fyrste hundre og femti høgdemetrane er slake: bandet frå 200 til 300 moh måler 5,3 grader i snitt over 580 meter grunn, og 300 til 400 moh 12,0 grader. Brattaste steget på heile turen ligg i skogen — 23,8 grader over tretti meter, mellom 458 og 472 moh.
 
-Over skoggrensa flatar det ut mot ryggen ved 519 moh. Bandet frå 500 til 600 moh er det slakaste på turen, 6,7 grader over 855 meter grunn, og herifrå ser du kvar resten av ruta går.
+Mot ryggen ved 519 moh flatar det ut, og ved 545 moh slepper skogen taket. Bandet frå 500 til 600 moh er det slakaste på turen, 6,7 grader over 855 meter grunn, og herifrå ser du kvar resten av ruta går.
 
 Ryggen stig jamt til topps: 12,9 grader frå 600 til 700 moh og 13,1 frå 700 til 800. Dei siste høgdemetrane til varden på 809 moh er flate — bandet over 800 moh måler 7,0 grader.',
   description_down = 'Ned same løypa, søraustover. Det er den same lia du gjekk opp, kort og oversiktleg, og du har bilen i sikte det meste av vegen ned.
@@ -3640,7 +3640,7 @@ Vanlegaste feilen på dette fjellet er ikkje eit linjeval, men eit tidsval: ture
   avalanche_notes  = jsonb_build_array(
     jsonb_build_object(
       'title', 'Ruta',
-      'body',  'Preparert og merkt løype i slakt terreng. Brattaste samanhengande parti måler 23,8 grader og ligg lågt, mellom 458 og 472 moh rett under skoggrensa; over 500 moh er turen på sitt slakaste med 6,7 grader i snitt frå 500 til 600 moh, og brattaste hundremeteren, 400 til 500 moh, måler 13,6.'
+      'body',  'Preparert og merkt løype i slakt terreng. Brattaste samanhengande parti måler 23,8 grader og ligg lågt, mellom 458 og 472 moh, nede i skogen; over 500 moh er turen på sitt slakaste med 6,7 grader i snitt frå 500 til 600 moh, og brattaste hundremeteren, 400 til 500 moh, måler 13,6.'
     ),
     jsonb_build_object(
       'title', 'Terrenget rundt',
@@ -3654,7 +3654,7 @@ Vanlegaste feilen på dette fjellet er ikkje eit linjeval, men eit tidsval: ture
 where slug = 'melshornet';
 
 update public.tk_tours set
-  description_up   = 'Frå vegenden ved Lisjeholen sør for Norang-gardane, 61 moh, tek du den bratte stien opp til Konedalen med skia på sekken — fyrst på venstre side av elva, så over på høgre. Skogen sluttar rundt 296 moh og terrenget er ope frå om lag 400. Dette er den delen av turen som ikkje er skitur, og ho stig 20 til 22 grader i snitt.
+  description_up   = 'Frå vegenden ved Lisjeholen sør for Norang-gardane, 61 moh, tek du den bratte stien opp til Konedalen med skia på sekken — fyrst på venstre side av elva, så over på høgre. Skogen sluttar rundt 395 moh og terrenget er ope frå 398. Dette er den delen av turen som ikkje er skitur, og ho stig 20 til 22 grader i snitt.
 
 Oppe i dalen tek du på deg skia og følgjer det slake dalføret sørvestover til om lag 740 moh. Hald deg på søraustre side på veg inn: det kan gå skred frå Jakta heile vegen inn Konedalen, og dalbotnen er utløpssona.
 
@@ -3911,7 +3911,7 @@ De siste seks kilometerne er flate. Regn med å stake dem, og regn med at de tar
 where slug = 'storronden';
 
 update public.tk_tours set
-  description_up   = 'Fra parkeringen på Tjugen ved Lodalsvegen, 34 moh, følger du traktorvegen som etter hvert blir til Kloumannstien og går oppover i Fosdalen. Plassen er avgiftsbelagt og betales med Vipps til Skåla Parkering — det er den samme plassen som brukes under Skåla Opp. De første 540 meterne går på veg; deretter tar stien over. Skogen slipper taket rundt 426 moh, ved Tyvasætra, og fra midten av mai må du regne med å bære skiene opp til Tjugensætra rundt 750 moh.
+  description_up   = 'Fra parkeringen på Tjugen ved Lodalsvegen, 34 moh, følger du traktorvegen som etter hvert blir til Kloumannstien og går oppover i Fosdalen. Plassen er avgiftsbelagt og betales med Vipps til Skåla Parkering — det er den samme plassen som brukes under Skåla Opp. De første 540 meterne går på veg; deretter tar stien over. Skogen slipper taket rundt 698 moh, og fra midten av mai må du regne med å bære skiene opp til Tjugensætra rundt 750 moh.
 
 Elva krysser du rundt 650 moh. Stien svinger nordover et stykke før den tar seg tilbake sørover — følg den; juvet nedenfor er ikke noe å skjære over. Så følger rundt 400 høydemeter jevn stigning opp mot Skålavatnet. Stien svinger seg opp gjennom hellinga, og ingen hundremeter på dette strekket holder mer enn 18°.
 
@@ -4833,7 +4833,7 @@ Fjellet er slakt i alle retninger. Radialmålinger fra varden gir 4,8 til 12,6 g
 where slug = 'gyranfisen';
 
 update public.tk_tours set
-  description_up   = 'Fra avgiftsparkeringen øverst på Tjoflotvegen, 276 moh, følger du traktorveien et kort stykke før stien tar over. Regn med å bære ski gjennom skogen: skoggrensa ligger på 538 moh, og de fleste spenner dem først på oppe ved Vindhovden.
+  description_up   = 'Fra avgiftsparkeringen øverst på Tjoflotvegen, 276 moh, følger du traktorveien et kort stykke før stien tar over. Regn med å bære ski gjennom skogen: skoggrensa ligger på 580 moh, og de fleste spenner dem først på oppe ved Vindhovden.
 
 Skogen er det bratteste partiet før flanken. Fallinja mellom 335 og 405 moh måler 30° i snitt og tar 51° over de bratteste seksti meterne; stien tar den i svinger — ingen hundremeter i skogen holder mer enn 21° — og topper på 29° rundt 490 moh. Følg svingene — det finnes ingen snarvei her som lønner seg.
 
@@ -4844,7 +4844,7 @@ Over 1100 moh slakner linja igjen, og de siste høydemeterne er rolig terreng in
 
 Vanligste feil: å følge fallinja. Tåka legger seg ofte på toppen her, og i flatt lys trekker den deg sørover av skulderen, ned i 35–40° med trinn opp mot 57°. Retter du for mye tilbake, havner du i det slake nord for linja — der ligger Hamreskredane, 530 meter nord for ruta på 758 moh, og under den faller terrenget 33° videre mot Granvinsfjorden. Sikt på Vindhovden, og hold høyden på skulderen hele veien ned.
 
-Under Vindhovden er kjøringen over. Skoggrensa på 538 moh er der skiene går på sekken, og de siste drøyt 260 høydemeterne ned til Tjoflot går på beina, i de samme svingene du kom opp.',
+Under Vindhovden er kjøringen over. Skoggrensa på 580 moh er der skiene går på sekken, og de siste drøyt 300 høydemeterne ned til Tjoflot går på beina, i de samme svingene du kom opp.',
   avalanche_notes  = jsonb_build_array(
     jsonb_build_object(
       'title', 'Ruta',
@@ -5189,7 +5189,7 @@ Vanlegaste feil: å ta den vestlege renna ned. Ho er 40 grader og eit eige val; 
 where slug = 'juklavasstinden';
 
 update public.tk_tours set
-  description_up   = 'Fra parkeringen ved Kletta, 154 moh, følger du veien 300 meter før stien svinger opp mot Skarshaug. Første strekket går over innmark og videre inn i blandingsskogen; sporet er tydelig, og du stiger jevnt gjennom skogen til rundt 520 moh.
+  description_up   = 'Fra parkeringen ved Kletta, 154 moh, følger du veien 300 meter før stien svinger opp mot Skarshaug. Første strekket går over innmark og videre inn i blandingsskogen; sporet er tydelig, og du stiger jevnt gjennom skogen til rundt 618 moh.
 
 Over tregrensa reiser lia seg. Mellom 600 og 700 moh holder den 22,6° i snitt over hundre høydemeter, og det bratteste hundremeterspennet på turen kommer like over: 23,9° mellom 800 og 900 moh, med 22,2° mellom 900 og 1000. Begge er noe du vil ha unnagjort tidlig på dagen. Toppen av bakken er Skarshaug, 806 moh, halvveis til Melderskin.
 
@@ -5202,7 +5202,7 @@ Vanligste feil: å slippe seg rett ned fra toppen i stedet for å gå tilbake ti
 
 Under Skarshaug møter du bakken mellom 600 og 700 moh igjen, nå vestvendt og med sol på seg fra midt på dagen. Kjør den mens snøen fortsatt bærer; senere blir den tung og våt helt ned i skogen.
 
-Fri Flyt går ikke opp Melderskin fra Kletta i det hele tatt. Startstedet deres er Myrdalsvatnet på 367 moh — det samme som Juklavasstinden går fra — og ruta følger grusveien litt tilbake til en traktorvei på 430, videre til Nipeelva på 525, opp langs elva og så den tydelige ryggen over Omnetjørnene på 1033 til Omnen på 1155 og toppryggen på 1204. 1101 høydemeter på 5,10 km, mot 1273 på 4,90 km fra Kletta: kortere klatring, lengre linje, og 1,84 km med skog i stedet for 300 meter — furua slipper først på 659 moh her mot 521 der. Beltet fra 600 til 700 moh måler 21,8 grader og det bratteste 30-metersvinduet 33,8 grader mellom 1258 og 1284 — brattere enn de 30,6 normalruta måler. Omnetjørnene ligger øst for ryggen — til venstre når du går sørover, som kilden sier — og linja går ikke over dem. «Ta med stegjern og øks» står i faktaboksen til denne ruta, ikke til den andre.',
+Fri Flyt går ikke opp Melderskin fra Kletta i det hele tatt. Startstedet deres er Myrdalsvatnet på 367 moh — det samme som Juklavasstinden går fra — og ruta følger grusveien litt tilbake til en traktorvei på 430, videre til Nipeelva på 525, opp langs elva og så den tydelige ryggen over Omnetjørnene på 1033 til Omnen på 1155 og toppryggen på 1204. 1101 høydemeter på 5,10 km, mot 1273 på 4,90 km fra Kletta: kortere klatring, lengre linje, og 1,84 km med skog mot 1,76 — furua slipper på 659 moh her mot 618 der. Beltet fra 600 til 700 moh måler 21,8 grader og det bratteste 30-metersvinduet 33,8 grader mellom 1258 og 1284 — brattere enn de 30,6 normalruta måler. Omnetjørnene ligger øst for ryggen — til venstre når du går sørover, som kilden sier — og linja går ikke over dem. «Ta med stegjern og øks» står i faktaboksen til denne ruta, ikke til den andre.',
   avalanche_notes  = jsonb_build_array(
     jsonb_build_object(
       'title', 'Ruta',
@@ -5363,7 +5363,7 @@ where slug = 'styggemann';
 update public.tk_tours set
   description_up   = 'Frå parkeringa ved bommen innerst i Berdalen hyttegrend, 810 moh, går ruta austover. Peilinga frå parkeringa til toppen er 82 grader — Berdalen ligg vest for fjellet, og du går inn mot det heile dagen. Riksveg 9 mellom Bykle og Hovden er brøytt heile vinteren, og ut.no presiserer at du ikkje skal køyre den siste kilometeren etter bommen: «Veien er privat.» Den fyrste kilometeren deler trasé med oppkøyrde løyper i Berdalen; linja her er terrenglinja og ikkje løypa.
 
-Forbi Langemyr på 891 moh går det jamt oppover mot Tverrheiskaret på 1028 moh. Dette er den einaste stigninga på turen som kjennest som ei stigning: brattaste 30 meter måler 26,2 grader mellom 1000 og 1022 moh, 2350 meter ute, og brattaste 400 meter 13,7 grader frå 963 til 1062 moh. Skogen står høgt her: DTM1 gjev terrengklasse Skog i sjølve Tverrheiskaret på 1028 moh. Kor høgt han går på denne linja er ikkje målt punkt for punkt — Kartverket sitt punkt-API låg nede då dette vart kontrollert — så guiden seier det som er målt og ikkje meir.
+Forbi Langemyr på 891 moh går det jamt oppover mot Tverrheiskaret på 1028 moh. Dette er den einaste stigninga på turen som kjennest som ei stigning: brattaste 30 meter måler 26,2 grader mellom 1000 og 1022 moh, 2350 meter ute, og brattaste 400 meter 13,7 grader frå 963 til 1062 moh. Skogen står høgt her: DTM1 gjev terrengklasse Skog i sjølve Tverrheiskaret på 1028 moh. Langs linja står skogen til 1044 moh, og frå 1052 er det ope.
 
 Over Tverrheii og Tverrheitjønnane held du aust til Tverrheiskardet på 1156 moh. Her er ei felle verdt å kjenne: SSR har tre skarpunkt på strekninga, og to av dei heiter Tverrheiskaret — det du gjekk over på 1028 moh, og eit til på 1091 moh som ligg berre 305 meter frå Tverrheiskardet på 1156. Det er det siste paret som er lett å blande, ikkje det fyrste. Bandet 1100 til 1200 moh måler 1,3 grader over 4455 meter grunn — det er over fire kilometer nesten flatt høgfjell, og det er her ein tur utan merking blir ein navigasjonsjobb.
 

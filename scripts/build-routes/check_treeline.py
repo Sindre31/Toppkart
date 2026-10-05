@@ -49,7 +49,8 @@ from guide_facts import TREELINE_CEILING_M, TREELINE_QUIET_M, TREELINE_QUIET_UP
 STEP_M = 5.0
 BELT_MIN_M = 60.0 # a forest run this long is belt; shorter ones above it are clips
 WINDOW_BELOW_M = 300.0  # how far under the vertex treeline the dense read starts
-TOL_M = 10.0      # dense above vertex by more than this: the scan missed forest
+TOL_M = 10.0      # a stated height this close to a measurement matches it
+SEGMENT_M = 20.0  # dense above vertex by more than this: more than one vertex segment of forest missed
 PATCH_M = 30.0    # belt below dense by more than this: a patch above a gap
 WORKERS = 16
 CACHE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "cache", "treeline_dense.json")
@@ -184,7 +185,7 @@ def main():
             dense = round(dense) if dense is not None else None
             belt = round(belt) if belt is not None else None
             notes = []
-            if dense is not None and (vertex is None or dense - vertex > TOL_M):
+            if dense is not None and (vertex is None or dense - vertex > SEGMENT_M):
                 notes.append(f"forest to {dense} m, vertex scan says {vertex}")
             described = any(abs(v - belt) <= TOL_M for v in said) and any(abs(v - dense) <= TOL_M for v in said) \
                 if dense is not None and belt is not None else False

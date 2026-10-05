@@ -1,9 +1,9 @@
 {
  "storgalten": {
   "no": {
-   "intro": "Fjord til topp i ytre Lyngen: 1215 høydemeter fra veikanten der Galtelva renner ut i Nord-Lenangen, til varden på 1219. Kort linje, åpent fjell fra 70 moh og opp, og fjorden i ryggen fra første stigning.",
+   "intro": "Fjord til topp i ytre Lyngen: 1215 høydemeter fra veikanten der Galtelva renner ut i Nord-Lenangen, til varden på 1219. Kort linje, åpent fjell fra 189 moh og opp, og fjorden i ryggen fra første stigning.",
    "ascent": [
-    "Start ved Sandneset, der Galtelva renner ut i fjorden på 14 moh, rett ved Fv7922 Lenangsveien. Parkeringa er uskiltet: det som finnes er plassen på nordsida av elveosen og veikanten langs fylkesveien. Sett bilen godt utenfor kjørebanen — dette er brøytet vinterveg. Herfra går du rett inn i Galtdalen nord for Lassofjellet og holder sørsiden av elva, det vil si høyre side på vei opp. Bjørkeskogen slipper taket allerede rundt 70 moh; resten av turen er åpent terreng.",
+    "Start ved Sandneset, der Galtelva renner ut i fjorden på 14 moh, rett ved Fv7922 Lenangsveien. Parkeringa er uskiltet: det som finnes er plassen på nordsida av elveosen og veikanten langs fylkesveien. Sett bilen godt utenfor kjørebanen — dette er brøytet vinterveg. Herfra går du rett inn i Galtdalen nord for Lassofjellet og holder sørsiden av elva, det vil si høyre side på vei opp. Bjørkeskogen slipper taket allerede rundt 180 moh; resten av turen er åpent terreng.",
     "Rund nordsiden av Lassofjellet og ta sikte på skaret mellom Litle-Galten og Storgalten. Du skal ikke helt opp i skaret. Det bunner på 626 moh, og går du dit, gir du fra deg høyde du nettopp har tatt. Legg deg inn på ribben et par hundre meter sør for skaret i stedet — det er der oppstigninga begynner.",
     "Mellom 800 og 860 moh reiser flanken seg til 30–35 grader, og bratteste steg på hele linja ligger her: 34,6 grader mellom 802 og 823 moh. Er snøen avblåst og hard, er stegjern verdt vekta. Over 880 moh brer ryggen seg ut, men den slutter ikke å stige — de siste drøyt 300 høydemeterne holder rundt 20 grader i snitt, med ett steg på 26 rundt 1000 moh. Hold deg på vestsida av ryggkanten hele veien: øst- og nordøstsiden faller 36–43 grader i snitt ned i Kalddalen mot Kalddalsvatnet på 477 moh, med enkeltpartier på 53–58."
    ],
@@ -28,9 +28,9 @@
    "caption": "Fra 14 moh ved Galtelvas utløp til 1219 på toppen — 1215 høydemeter på 4,2 kilometer, med det bratteste mellom 800 og 860."
   },
   "en": {
-   "intro": "Fjord to summit in outer Lyngen: 1215 metres of climbing from the roadside where Galtelva runs out into Nord-Lenangen, to the cairn at 1219. A short line, open mountain from 70 m up, and the fjord behind you from the first step.",
+   "intro": "Fjord to summit in outer Lyngen: 1215 metres of climbing from the roadside where Galtelva runs out into Nord-Lenangen, to the cairn at 1219. A short line, open mountain from 189 m up, and the fjord behind you from the first step.",
    "ascent": [
-    "Start at Sandneset, where Galtelva runs out into the fjord at 14 m, right by Fv7922 Lenangsveien. Parking is unsigned: what there is is the space on the north side of the river mouth and the verge along the county road. Park well clear of the carriageway — this road is plowed all winter. From here go straight into Galtdalen north of Lassofjellet and keep the south bank of the river, which is the right-hand side going up. The birch forest gives up at around 70 m; the rest of the tour is open terrain.",
+    "Start at Sandneset, where Galtelva runs out into the fjord at 14 m, right by Fv7922 Lenangsveien. Parking is unsigned: what there is is the space on the north side of the river mouth and the verge along the county road. Park well clear of the carriageway — this road is plowed all winter. From here go straight into Galtdalen north of Lassofjellet and keep the south bank of the river, which is the right-hand side going up. The birch forest gives up at around 180 m; the rest of the tour is open terrain.",
     "Round the north side of Lassofjellet and aim for the col between Litle-Galten and Storgalten. You do not go all the way up into the col. It bottoms out at 626 m, and going there hands back height you have just gained. Get onto the rib a couple of hundred metres south of the col instead — that is where the climb begins.",
     "Between 800 and 860 m the flank steepens to 30–35 degrees, and the steepest step on the whole line is here: 34.6 degrees between 802 and 823 m. If the snow is wind-scoured and hard, crampons earn their weight. Above 880 m the ridge broadens, but it does not stop climbing — the last 300-odd metres of ascent average about 20 degrees, with a single 26-degree step around 1000 m. Stay on the west side of the crest the whole way: the east and northeast sides fall 36–43 degrees on average into Kalddalen toward Kalddalsvatnet at 477 m, with individual sections at 53–58."
    ],
@@ -70,7 +70,8 @@
    "FALSE COMFORT: \"Over 880 moh flater det ut, og de siste drøyt 300 høydemeterne er bred, slak rygg.\" Per-100 m band means along the line are 22.4° (900–1000), 21.7° (1000–1100), 22.0° (1100–1200), with a 32.1° step between 1087 and 1115 m. It broadens; it does not slacken. Corrected to broad-but-still-climbing at ~22° with the 32° step named.",
    "\"storhavet i ryggen\" / \"the open sea behind you\" — the water at Sandneset is Nord-Lenangen (SSR Fjord, 69.91541/20.17385), an inner arm of Ullsfjorden, not open sea. Changed to the fjord, named.",
    "VERIFIED, unchanged: 14 moh start (minZ 14.0), 1210 gain (gainM 1210, Friflyt 1210), 3,9 km (distanceM 3935), varden 1219 (Friflyt Toppunkt 1219; DTM 1218.3), treeline ~70 (73 m), col 626 (probe 627.2 m), 800–860 at 30–35° (measured segments 31.2° and 35.6°), steepest step 35,6 (my recomputation: 35.6° between 823 and 849 m — inside the quoted band, so the juxtaposition is sound), 800–900 the steepest 100 m band at 26.5°. Sandneset confirmed in SSR (Nes i sjø, 69.90168/20.17424); Galtelva, Galtdalen, Lassofjellet, Litle-Galten all SSR-correct. \"Ingen opparbeidet parkering — veikant på Fv7922 Lenangsveien\" is right and worth keeping. The southward traverse to \"ei stor flate\" is in Friflyt 6.2.2 and measures 15.3° mean / 20.4° max SW of the rib top, so the added \"under 20 grader\" is real.",
-   "Varsom region checked, not changed: NVE AvalancheWarningByCoordinates returns region 3010 Lyngen for 69.88543/20.25257. \"varsom.no\" present in both languages. No claim that anyone skied or recorded the line."
+   "Varsom region checked, not changed: NVE AvalancheWarningByCoordinates returns region 3010 Lyngen for 69.88543/20.25257. \"varsom.no\" present in both languages. No claim that anyone skied or recorded the line.",
+   "TREELINE ROUND: the guide gave the treeline as 70 m; check_treeline.py reads forest on the line to 180 m at 5 m spacing and guide_facts' vertex scan to 180 m. Figure replaced in both languages. First open vertex 189 m."
   ]
  },
  "store-blamann": {
@@ -383,7 +384,7 @@
    "intro": "Lyngseidets hustopp, og 1252 høydemeter rett opp fra fjorden. Rygg opp, Østrenna ned — den store, østvendte renna nord for toppen samler den beste snøen på fjellet og holder på den langt ut i mai.",
    "ascent": [
     "Fra parkeringen ved Eidebakken, 62 moh, følger du skogsveien opp østsida av Gjerdelva. Du passerer Rødsteinen i bjørkeskogen rundt 200 moh og fortsetter opp ryggen øst for elva. Ruta krysser aldri Gjerdelva — går du over vann, har du gått feil.",
-    "Skogen slipper taket ved 301 moh, og du går forbi Skihytta på 317. Mellom Rødsteinen og Skihytta må du gjennom et grunt søkk før stigningen tar seg opp igjen, og terrenget blir først ordentlig oversiktlig rundt 400. Skogsveiene fra Karnes, Solhov, Marieslett og Jensbakk kommer opp på den samme hylla, så hvilken du velger nede i bygda spiller mindre rolle. Herfra legger du kursen vestover mot nordøstryggen og kommer opp på kammen rundt 780 moh.",
+    "Du går forbi Skihytta på 317, og skogen slipper taket ved 320 moh. Mellom Rødsteinen og Skihytta må du gjennom et grunt søkk før stigningen tar seg opp igjen, og terrenget blir først ordentlig oversiktlig rundt 400. Skogsveiene fra Karnes, Solhov, Marieslett og Jensbakk kommer opp på den samme hylla, så hvilken du velger nede i bygda spiller mindre rolle. Herfra legger du kursen vestover mot nordøstryggen og kommer opp på kammen rundt 780 moh.",
     "Videre følger du ryggen sørover, på eller like øst for kammen. Mellom 900 og 950 moh reiser østsida seg i partier over 30 grader, og bratteste enkeltsteget på linja måler 33,5. Vestsida er ikke et alternativ: der faller det 40 til 80 høydemeter per hundre meter rett ned mot Gjerdelva.",
     "Toppryggen smalner inn de siste hundre meterne, og rundt nitti meter før varden tar et grunt skar tilbake et par høydemeter. Her henger skavlene ut mot øst, over Østrenna: kammen faller 30 til 41 grader på østsida og 21 til 31 på vestsida. Skift side i god tid og gå det siste stykket vest for skavlekanten, fram til varden på 1289."
    ],
@@ -412,7 +413,7 @@
    "intro": "Lyngseidet's home peak, and 1252 metres of climbing straight up from the fjord. Ridge on the way up, Østrenna on the way down — the big east-facing gully north of the summit gathers the best snow on the mountain and holds it well into May.",
    "ascent": [
     "From the car park at Eidebakken, 62 m, follow the forest road up the east side of Gjerdelva. You pass Rødsteinen in the birch forest around 200 m and carry on up the ridge east of the river. The route never crosses Gjerdelva — if you are crossing water, you are off the line.",
-    "The forest lets go at 301 m, and you pass Skihytta at 317. Between Rødsteinen and Skihytta there is a shallow dip to cross before the climbing picks up again, and the terrain only really opens out around 400. The forest roads from Karnes, Solhov, Marieslett and Jensbakk come up onto the same shelf, so which one you pick down in the village matters less than it looks. From here you set a course west toward the northeast ridge and gain the crest around 780 m.",
+    "You pass Skihytta at 317, and the forest lets go at 320 m. Between Rødsteinen and Skihytta there is a shallow dip to cross before the climbing picks up again, and the terrain only really opens out around 400. The forest roads from Karnes, Solhov, Marieslett and Jensbakk come up onto the same shelf, so which one you pick down in the village matters less than it looks. From here you set a course west toward the northeast ridge and gain the crest around 780 m.",
     "From there follow the ridge south, on or just east of the crest. Between 900 and 950 m the east side stands up past 30 degrees in places, and the steepest single step on the line measures 33.5. The west side is not an option: it drops 40 to 80 metres per hundred straight down toward Gjerdelva.",
     "The summit ridge narrows over the last hundred metres, and about ninety metres before the cairn a shallow notch takes back a couple of metres of height. This is where the cornices hang out east, over Østrenna: the crest falls 30 to 41 degrees on the east side and 21 to 31 on the west. Change sides in good time and walk the last stretch west of the cornice edge, up to the cairn at 1289."
    ],
@@ -457,7 +458,8 @@
    "Varsom region verified by point-in-polygon against NVE's region service (api01.nve.no/hydrology/forecast/avalanche/v6.3.0/api/Region): 69.54704/20.12428 falls inside region 3010 Lyngen. \"varsom.no\" is present literally in both languages.",
    "Place names checked against SSR: Gjerdelva (Elv, 69.56499/20.15875), Rødsteinen (Berg, Lyngen), Skihytta (Turisthytte, 69.56103/20.18306), Kavringtinden (Fjell, 69.54706/20.12491). Goalsevarri correctly kept out of the text — SSR carries it as a different mountain 2.1 km SW. Østrenna is Friflyt's own name for the descent and is now used.",
    "NOTE FOR THE APP, outside the guide text: the map teaser \"Indre Lyngen-perle med nordvendt snø som holder seg langt ut i mai\" and the aspect field \"N\" now disagree with the corrected guide. Friflyt gives Ø-NØ and the measurements back it. The teaser should be changed too.",
-   "Sources used: friflyt.no turbeskrivelse Goalsevarri (Kavringtinden) — full page text incl. the ØSTRENNA descent section and the FAKTA block; ut.no/turforslag/115352 — full Norwegian body text; Kartverket DTM via flank_probe.py and crest/cross-section scans; ws.geonorge.no/hoydedata/v1/punkt; ws.geonorge.no/stedsnavn/v1/navn; NVE Varsom region polygons."
+   "Sources used: friflyt.no turbeskrivelse Goalsevarri (Kavringtinden) — full page text incl. the ØSTRENNA descent section and the FAKTA block; ut.no/turforslag/115352 — full Norwegian body text; Kartverket DTM via flank_probe.py and crest/cross-section scans; ws.geonorge.no/hoydedata/v1/punkt; ws.geonorge.no/stedsnavn/v1/navn; NVE Varsom region polygons.",
+   "TREELINE ROUND: the guide gave the treeline as 301 m; check_treeline.py reads forest on the line to 325 m at 5 m spacing and guide_facts' vertex scan to 320 m. Figure replaced in both languages."
   ]
  },
  "hesten-segla": {
@@ -680,14 +682,14 @@
    "intro": "Narviks landemerke, og en lang dag i fire tydelige etapper — skog, vann, dalføre og rygg. Turen krever at du er komfortabel med en kort klatring på toppblokka.",
    "ascent": [
     "Parkeringen er ved veibommen i Forselvveien over Djupvik. Gå forbi bommen og fram til veien slutter i det gamle steinbruddet på 141 moh, og hundre meter videre i samme retning før du legger deg inn i skogen. De første tre hundre høydemeterne er bratte og tette; følg det gradvis slakere terrenget opp mot venstre til du står ved Pumpvatnet på 325 moh.",
-    "Kryss vatnet på isen og forlat det i sørøstre hjørne, der en gammel skogsvei tar deg inn i bekkedalen langs Forsneselva mot Forsnesvatnet. Skogen slipper taket på 457 moh, og resten av dalen går i åpent terreng. Ved dalhodet rundt 650 moh, nord for Forsnesvatnet, svinger du østover inn i den lille dalen mot Isvatnet.",
+    "Kryss vatnet på isen og forlat det i sørøstre hjørne, der en gammel skogsvei tar deg inn i bekkedalen langs Forsneselva mot Forsnesvatnet. Skogen slipper taket på 494 moh, og resten av dalen går i åpent terreng. Ved dalhodet rundt 650 moh, nord for Forsnesvatnet, svinger du østover inn i den lille dalen mot Isvatnet.",
     "Isvatnet ligger på 820 moh. Rund det på nordsida — der går en sammenhengende benk på fire til tjuefire grader som tar deg østover fra 850 til 950 moh uten å berøre noe bratt. Hold benken hele veien. Skulderen rett øst for vatnet, nede til høyre for deg, er et bergband som måler 53 til 63 grader.",
     "Fra 950 moh fortsetter benken østover til du kommer opp på sørøstryggen rundt 1145 moh. Derfra følger du krona nordvestover til toppen. De siste tretti meterne er ikke skiterreng: et kort, bratt snøfelt og to korte partier med enkel klatring. Isøks er verdt å ha med, og stegjern hvis snøen er hard; tau trenger du ikke."
    ],
    "descent": [
     "Ned igjen samme vei. Kjøringen er delt opp i mange korte bakker heller enn én lang — fra ryggen ned til Isvatnet, over benken, ned den lille dalen og gjennom bekkedalen til Pumpvatnet. Vil du ha noe brattere, starter Rombaksrennene i skaret på 1070 moh rett øst for toppen. De ser brattere ut enn de er, men de er skredterreng, og de faller nordover mot Rombaken — ikke tilbake til Isvatnet.",
     "Vanligste feil: å tro at det går an å kjøre rett av toppen. Det gjør det ikke. Nordsida er Rombaks-S'en, og den måler 52 grader i snitt de første fire hundre meterne, med partier over 70 — videre 41 grader hele veien ned mot Rombaken. Den er så eksponert at et fall kan bli fatalt, og den er en linje for folk som har kjørt den før. Nordøst og øst er nesten like bratt, 48 og 44 grader, og fører ned i Rombaksrennene. Og vest, som ser ut som en snarvei tilbake til benken, går inn i et bergband på over 60 grader mellom 1060 og 1090 moh. Hold krona sørøstover til du er nede på 1145 moh og ser Isvatnet.",
-    "Under skoggrensa på 457 moh blir det tett igjen. Følg oppsporet ned til veienden — skogen her er bratt og uoversiktlig, og det går fortere i eget spor enn å lete etter en bedre linje."
+    "Under skoggrensa på 494 moh blir det tett igjen. Følg oppsporet ned til veienden — skogen her er bratt og uoversiktlig, og det går fortere i eget spor enn å lete etter en bedre linje."
    ],
    "avalanche": [
     {
@@ -709,14 +711,14 @@
    "intro": "Narvik's landmark peak, and a long day in four distinct stages — forest, lake, valley and ridge. The tour asks you to be comfortable with a short scramble on the summit block.",
    "ascent": [
     "Parking is at the road barrier in Forselvveien above Djupvik. Walk past the barrier to where the road ends in the old quarry at 141 m, then a hundred metres further in the same direction before you head into the forest. The first three hundred metres of climbing are steep and dense; follow the gradually easing ground up and to the left until you stand at Pumpvatnet at 325 m.",
-    "Cross the lake on the ice and leave it at the south-east corner, where an old forest track takes you into the stream valley along Forsneselva toward Forsnesvatnet. The forest lets go at 457 m and the rest of the valley is open ground. At the valley head around 650 m, north of Forsnesvatnet, turn east into the small dale that leads to Isvatnet.",
+    "Cross the lake on the ice and leave it at the south-east corner, where an old forest track takes you into the stream valley along Forsneselva toward Forsnesvatnet. The forest lets go at 494 m and the rest of the valley is open ground. At the valley head around 650 m, north of Forsnesvatnet, turn east into the small dale that leads to Isvatnet.",
     "Isvatnet lies at 820 m. Round it on the north side — there is a continuous bench there, four to twenty-four degrees, that carries you east from 850 to 950 m without touching anything steep. Hold the bench the whole way. The shoulder immediately east of the lake, below and to your right, is a crag band measuring 53 to 63 degrees.",
     "From 950 m the bench runs on east until you gain the south-east ridge at about 1145 m. From there follow the crest north-west to the summit. The last thirty metres are not ski terrain: a short steep snowfield and two short passages of easy climbing. An ice axe is worth carrying, and crampons if the snow is hard; you do not need a rope."
    ],
    "descent": [
     "Back down the same way. The skiing is broken into many short pitches rather than one long one — off the ridge to Isvatnet, across the bench, down the small dale and through the stream valley to Pumpvatnet. If you want something steeper, Rombaksrennene start from the col at 1070 m immediately east of the summit. They look steeper than they are, but they are avalanche terrain, and they fall north toward Rombaken — not back to Isvatnet.",
     "The common mistake: assuming you can ski straight off the summit. You cannot. The north side is Rombaks-S'en, and it measures 52 degrees on average over the first four hundred metres, with sections over 70 — then 41 degrees the whole way down toward Rombaken. It is exposed enough that a fall can be fatal, and it is a line for people who have skied it before. North-east and east are nearly as steep, 48 and 44 degrees, and feed into Rombaksrennene. And west, which looks like a shortcut back to the bench, runs into a crag band over 60 degrees between 1060 and 1090 m. Hold the crest south-east until you are down at 1145 m and can see Isvatnet.",
-    "Below the treeline at 457 m it gets tight again. Follow your ascent track down to the road end — the forest here is steep and hard to read, and your own track is faster than hunting for a better line."
+    "Below the treeline at 494 m it gets tight again. Follow your ascent track down to the road end — the forest here is steep and hard to read, and your own track is faster than hunting for a better line."
    ],
    "avalanche": [
     {
@@ -753,7 +755,8 @@
    "Added Forsneselva (SSR, Bekk, 68.43946/17.54094) — the route runs within ~100 m of it through the bekkedal, and naming it makes the second stage navigable.",
    "VERIFIED, LEFT ALONE: 141 m start, 325 m Pumpvatnet, 457 m treeline, ~650 m valley head, 820 m Isvatnet, 850→950 m bench at 4–24°, 1145 m ridge gain, 5.19 km, 1095 m, steepest 100 m band 500–600 moh at 19.8°, steepest step 27.9°, 'holder seg under 30 grader' (true — 27.9°), summit block as a scramble with a short steep snowfield and two easy climbing passages, 'mange korte bakker' (friflyt's own 'herlig skikjøring med mange korte nedkjøringer'), Ofoten as the Varsom region, literal 'varsom.no' in both languages, NO/EN 4/3/3 paragraph parity.",
    "SOURCES USED: friflyt.no/topptur/skiturer-narvik/turbeskrivelse-rombakstoetta-ahkacohkka (normalrute, toppblokka, and the three descent options with their aspects); friflyt.no/randone/to-bratte-linjer-paa-en-dag (Rombaks-S: 'bratt, utsatt', the S-formation, a fall can be fatal); SSR for Rombakstøtta 68.4338/17.58003, Rombaken 68.45955/17.58879, Isvatnet 68.42814/17.56683, Pumpvatnet 68.44241/17.52855, Forsnesvatnet 68.42356/17.53558, Forsneselva 68.43946/17.54094, Forselvveien 68.45083/17.52776, Tøttadalen 68.44132/17.54014; Kartverket DTM1 radial flank profiles and 30 m-baseline slope grids as above. randofolk.no is NOT cited any more — it 503s and nothing now rests on it.",
-   "STILL UNCERTAIN: the veibom in Forselvveien is not mapped in OSM, so the guide describes the walk to the road end at 141 moh rather than pinning the car park. No summit elevation is stated in the prose — the record says 1243, the terrain model 1231, the routed line 1228, and SSR puts the named Fjell point ~130 m WNW of the fixed summit coordinate. The exact fall line of the individual Rombaksrennene gullies is not measurable from radial profiles; the prose gives friflyt's characterisation ('ser brattere ut enn de er') and the measured col height, and no angle for the gullies themselves."
+   "STILL UNCERTAIN: the veibom in Forselvveien is not mapped in OSM, so the guide describes the walk to the road end at 141 moh rather than pinning the car park. No summit elevation is stated in the prose — the record says 1243, the terrain model 1231, the routed line 1228, and SSR puts the named Fjell point ~130 m WNW of the fixed summit coordinate. The exact fall line of the individual Rombaksrennene gullies is not measurable from radial profiles; the prose gives friflyt's characterisation ('ser brattere ut enn de er') and the measured col height, and no angle for the gullies themselves.",
+   "TREELINE ROUND: the guide gave the treeline as 457 m; check_treeline.py reads forest on the line to 498 m at 5 m spacing and guide_facts' vertex scan to 494 m. Figure replaced in both languages."
   ]
  },
  "geitgaljen": {
@@ -986,7 +989,7 @@
    "intro": "Norges kanskje mest populære topptur — bred rygg, oversiktlige linjevalg og lang sesong. En tur som gir mye fjell for pengene, både for førstegangsturen og for hundredegangen.",
    "ascent": [
     "Fra parkeringen på Hellerøra (Øvre Kavli), 185 moh, følger du bomveien nordover den første kilometeren, til den krysser Heiaelva. Rundt svingen og videre inn på sporet mot Kavlisetra og Måsvassbu.",
-    "Ved rundt 420 moh forlater du Måsvassbu-sporet og går nordøst opp gjennom åpen bjørkeskog. Skogen slipper taket akkurat der: over 421 moh er det åpent terreng resten av veien. Målet er Vesttoppen på Steinberget, 766 moh.",
+    "Ved rundt 420 moh forlater du Måsvassbu-sporet og går nordøst opp gjennom åpen bjørkeskog. Skogen slipper taket på 632 moh, og derfra er det åpent terreng resten av veien. Målet er Vesttoppen på Steinberget, 766 moh.",
     "Fra Vesttoppen følger du kammen østover til Steinberget, 981 moh. Ryggen henger sammen og stiger jevnt, men rett nord for Steinberget faller den 19 meter i et søkk før den reiser seg igjen. De 19 meterne må du opp igjen på vei tilbake — de er med i turens 1277 høydemeter.",
     "Herfra går sørvestryggen nord-nordøstover mot toppen. Bratteste hundremeterssjikt på hele oppstigninga ligger mellom 1400 og 1500 moh og holder 22,1° i snitt; sjiktet under, 1300 til 1400 moh, måler 20,5°. Det bratteste enkelttrinnet ligger i det same høgdelaget, mellom 1411 og 1433 moh, og måler 30,3°. Skavler henger ut på både øst- og vestsida av toppryggen; hold deg på ryggen og klar av begge kanter helt inn til varden på 1439."
    ],
@@ -1009,13 +1012,13 @@
      "body": "Sjekk dagens skredvarsel for Romsdal på varsom.no. Ta med sender/mottaker, søkestang og spade."
     }
    ],
-   "caption": "185 til 1439 moh på 6,2 kilometer: bomvei, bjørkeskog til 421, så rygg hele veien — 1277 høydemeter medregnet søkket nord for Steinberget."
+   "caption": "185 til 1439 moh på 6,2 kilometer: bomvei, bjørkeskog til 632, så rygg hele veien — 1277 høydemeter medregnet søkket nord for Steinberget."
   },
   "en": {
    "intro": "Possibly Norway's most popular ski tour — a broad ridge, legible line choices and a long season. A tour that gives you a lot of mountain for the money, both the first time and the hundredth.",
    "ascent": [
     "From the car park at Hellerøra (Øvre Kavli), 185 m, follow the toll road north for the first kilometre, until it crosses Heiaelva. Round the bend and onto the track towards Kavlisetra and Måsvassbu.",
-    "At around 420 m you leave the Måsvassbu track and climb northeast through open birch. The forest lets go right there: above 421 m it is open ground the rest of the way. The objective is Vesttoppen på Steinberget, 766 m.",
+    "At around 420 m you leave the Måsvassbu track and climb northeast through open birch. The forest lets go at 632 m, and from there it is open ground the rest of the way. The objective is Vesttoppen på Steinberget, 766 m.",
     "From Vesttoppen follow the crest east to Steinberget, 981 m. The ridge is continuous and rises steadily, but just north of Steinberget it drops 19 metres into a notch before rising again. You climb those 19 metres back on the way out — they are part of the tour's 1277 vertical metres.",
     "From here the southwest ridge runs north-northeast to the top. The steepest 100-metre band of the whole ascent lies between 1400 and 1500 m and averages 22.1°; the band below it, 1300 to 1400 m, measures 20.5°. The steepest single step sits in that same band, between 1411 and 1433 m, and measures 30.3°. Cornices hang out on both the east and the west side of the summit ridge; stay on the ridge and clear of both edges all the way to the cairn at 1439."
    ],
@@ -1038,7 +1041,7 @@
      "body": "Check today's avalanche forecast for Romsdal at varsom.no. Bring a transceiver, probe and shovel."
     }
    ],
-   "caption": "185 to 1439 m over 6.2 kilometres: toll road, birch forest to 421, then ridge all the way — 1277 vertical metres including the notch north of Steinberget."
+   "caption": "185 to 1439 m over 6.2 kilometres: toll road, birch forest to 632, then ridge all the way — 1277 vertical metres including the notch north of Steinberget."
   },
   "source": "checked (corrected)",
   "sources": [
@@ -1059,7 +1062,8 @@
    "FLANK MEASURED — 'Nordvest for ryggen faller det bratt ned mot Loftskarsetra'. Direction confirmed (Loftskarsetra, SSR Seter/støl, Rauma 62.60307/7.83767, bears ~301° from Vesttoppen). Measured NW from Steinberget 981 = 26.9° mean with a 46.4° steepest window; NW from the 1094 m point on the ridge = 26.7° / 53.5°; NW from Vesttoppen = 25.1° / 32.4°. 'Bratt' is defensible but vague — replaced with the measured numbers.",
    "VERIFIED, NO CHANGE — 185 moh start, 1439 moh cairn, 1271 hm gain, 18 m notch north of Steinberget, 5.9 km, treeline 421 m, Vesttoppen 766, Steinberget 981, the 26° / 30° figures, the two avalanche bands, the groomed return track, the east-and-west summit-ridge cornices. Friflyt's '38 grader bratteste punkt' still cannot be tied to a place on the line, so the measured 26°/30° stand.",
    "VERIFIED, NO CHANGE — place names. SSR confirms Hellerøra (Rygg, Rauma 62.58539/7.83648), Heiaelva (Bekk, Rauma 62.59116/7.84183), Kavlisetra (Seter/støl, Rauma 62.59148/7.89055), Måsvassbu, Loftskarsetra (note: friflyt's 'Loftskardsetra' is the non-SSR spelling — the guide's form is the correct one), Steinberget as both Fjell 62.59896/7.8523 and Berg 62.60061/7.89051. SSR's official summit name is Kyrkjetaket (Fjell, Rauma 62.61128/7.90718); 'Kirketaket' is the product's own name and friflyt's, so kept.",
-   "VERIFIED, NO CHANGE — third avalanche entry carries the literal 'varsom.no' in both languages and names Romsdal, the correct Varsom region for Isfjorden. No claim that anyone skied or recorded the line. NO/EN arrays are 4/4, 3/3, 3/3 and say the same thing."
+   "VERIFIED, NO CHANGE — third avalanche entry carries the literal 'varsom.no' in both languages and names Romsdal, the correct Varsom region for Isfjorden. No claim that anyone skied or recorded the line. NO/EN arrays are 4/4, 3/3, 3/3 and say the same thing.",
+   "TREELINE ROUND: the guide gave the treeline as 421 m; check_treeline.py reads forest on the line to 632 m at 5 m spacing and guide_facts' vertex scan to 632 m. Figure replaced in both languages. The old sentence also contradicted itself — open birch at 420 m and «the forest lets go right there» — and is rewritten."
   ]
  },
  "snohetta": {
@@ -1148,7 +1152,7 @@
   "no": {
    "intro": "Sunnmøres mest kjente skitopp. Slak dalgang hele veien inn, så en nordvendt passasje over 45°, bre — og en topp som er halvannen meter bred.",
    "ascent": [
-    "Fra parkeringen ved Standaleidet, 376 moh, følger du den ryddede traseen nordover mot Fossane under Søre Sætretind. Skogen slipper allerede på 410 moh, og fossen markerer inngangen til Kvanndalen.",
+    "Fra parkeringen ved Standaleidet, 376 moh, følger du den ryddede traseen nordover mot Fossane under Søre Sætretind. Skogen slipper på 474 moh, og fossen markerer inngangen til Kvanndalen.",
     "Følg dalbunnen langs elvefaret nordover. Terrenget er slakt: det bratteste hundremeterspennet, mellom 800 og 900 moh, ligger på 17,6° i snitt. Ikke sving vest der dalen åpner seg rundt 650 moh — det juvet fører opp i breens utløp. Hold nordover til Appelsinhaugen på 950 moh, den naturlige rasten halvveis.",
     "Fra Appelsinhaugen går du vest-sørvestover inn på flata i Kvanndalsskardet, drøyt 1020 moh. Herfra og opp til Stretet er det bratt: målte trinn i den nordvendte siden går over 45°. Stretet ligger på 1140 moh, en trang passasje på egga, og over den ser du toppen.",
     "Over Stretet er du på Kolåsbreen, som ligger som bre fra 1173 til 1355 moh. Følg brekanten under egga sørvestover mot toppen. De fleste tar av skia rundt 1350 moh og går den siste kneika, som måler 47°. Toppen er 1432 moh, halvannen til to meter bred og ti meter lang, med skavl mot øst — hold deg midt på — og en vestside som faller 260 høydemeter på 180, med tjuemeterssteg opp mot 75°."
@@ -1177,7 +1181,7 @@
   "en": {
    "intro": "Sunnmøre's best-known ski summit. A gentle valley the whole way in, then a north-facing passage over 45°, a glacier — and a summit a metre and a half wide.",
    "ascent": [
-    "From the car park at Standaleidet, 376 m, you follow the cleared track north toward Fossane below Søre Sætretind. The forest lets go already at 410 m, and the waterfall marks the mouth of Kvanndalen.",
+    "From the car park at Standaleidet, 376 m, you follow the cleared track north toward Fossane below Søre Sætretind. The forest lets go at 474 m, and the waterfall marks the mouth of Kvanndalen.",
     "Follow the valley floor along the riverbed northward. The terrain is gentle: the steepest hundred-metre band, between 800 and 900 m, averages 17.6°. Do not turn west where the valley opens around 650 m — that gorge leads up into the glacier's outflow. Hold north to Appelsinhaugen at 950 m, the natural rest point halfway.",
     "From Appelsinhaugen you head west-southwest onto the flat in Kvanndalsskardet, just over 1020 m. From here up to Stretet it is steep: measured steps on the north-facing side pass 45°. Stretet sits at 1140 m, a narrow passage on the edge, and above it you see the summit.",
     "Above Stretet you are on Kolåsbreen, glacier from 1173 to 1355 m. Follow the glacier edge under the crest southwest toward the top. Most people take the skis off around 1350 m and walk the final pitch, which measures 47°. The summit is 1432 m, one and a half to two metres wide and ten metres long, with a cornice to the east — stay in the middle — and a west side that drops 260 vertical metres in 180, with twenty-metre steps up to 75°."
@@ -1219,14 +1223,15 @@
    "BRESPREKK: \"dekket i høyvinteren, ikke i mai\" tightened to what the sources actually say (the crevasse opens late in the season) while keeping the register.",
    "VERIFIED UNCHANGED against guide_brief/guide_facts and measurement: start 376 moh, summit 1432 (DTM 1431.4), gain 1076 m, 5.35 km, treeline 410 moh, steepest 100 m band 800–900 moh at 18.5°, steepest single step 33.2°, Appelsinhaugen 950 moh (friflyt: \"ein kvilestein i 950 meters høgd\"), Kvanndalsskardet flat ~1020–1025 moh, Stretet 1139 moh and a narrow passage on the crest, Kolåsbreen terrain class SnøIsbre 1173–1355 moh, the >45° north-facing step (measured 45.2° at 1111 m, aspect 353°), the 47° final pitch (measured 45.9° at 30 m, aspect 21°) — so \"begge vender nord\" holds, summit 1.5–2 m wide and 10 m long with an east cornice (morotur), the gorge trap west at ~650 moh, varsom.no + Sunnmøre in both languages, EN/NO arrays 4-3-3 in parity, no claim that anyone skied or recorded the line.",
    "SHAPE ROUND: three leftover vertices inside 30 m of the cairn (1400, 1422, 1425 m) dropped; the last leg is 36 m at 43 deg from the south-east (DTM1 1402/1410/1416/1425 along it). Steepest 30 m window 38.0 (1386-1419) -> 43.1 (1397-1431), consistent with the 47 deg summit pitch the guide already states from the flank probe (45.9 measured); steepest band 800-900 17.6 -> 1300-1400 19.1. Distance 5.70 -> 5.67 km; gain and card unchanged.",
-   "SHAPE ROUND (mid-route notches): vertices the coarse solve put on a boulder, a bank or the lip of a step were moved 5-20 m onto ground that reads like their neighbours, and same-height loops of 60-230 m the check had read as spikes were cut; figures re-derived from the line as it now is."
+   "SHAPE ROUND (mid-route notches): vertices the coarse solve put on a boulder, a bank or the lip of a step were moved 5-20 m onto ground that reads like their neighbours, and same-height loops of 60-230 m the check had read as spikes were cut; figures re-derived from the line as it now is.",
+   "TREELINE ROUND: the guide gave the treeline as 410 m; check_treeline.py reads forest on the line to 487 m at 5 m spacing and guide_facts' vertex scan to 474 m. Figure replaced in both languages."
   ]
  },
  "saudehornet": {
   "no": {
    "intro": "1161 høgdemeter rett opp frå Ørsta sentrum, og Fri Flyt graderer turen «Komplekst» av ein grunn: ryggkammen held rundt 32 grader i snitt dei siste 170 høgdemetrane med det brattaste partiet på 37, og på hard snø gir ei utglidning der lang utløpsbane. Fri Flyt reknar med at mange tek skia på sekken det siste stykket.",
    "ascent": [
-    "Frå parkeringa ved vasshuset øvst i Vikegeila, 149 moh, følgjer du anleggsvegen oppover Skåla. Skogen sluttar rundt 339 moh og terrenget er ope frå 344. Ved om lag 395 moh går ein av vegen der ein kartlagd sti tek av — det er same staden Fri Flyt skildrar med «på skrå mot Vikeelva, kryss elva».",
+    "Frå parkeringa ved vasshuset øvst i Vikegeila, 149 moh, følgjer du anleggsvegen oppover Skåla. Skogen sluttar rundt 456 moh og terrenget er ope frå 473. Ved om lag 395 moh går ein av vegen der ein kartlagd sti tek av — det er same staden Fri Flyt skildrar med «på skrå mot Vikeelva, kryss elva».",
     "Over elva siktar du mot det lågaste punktet på ryggen mellom Vallahornet og Saudehornet, 812 moh. Skaret ligg lenger aust enn ei rett linje mellom dei to toppane skulle tilseia; ryggkammen sjølv har lågaste punkt der, og ein kartlagd sti følgjer han om lag tretti meter unna.",
     "Over skaret følgjer du sørryggen om lag 490 høgdemeter opp til toppen på 1303 moh. Stigninga er jamn til rundt 1137 moh og bratnar så. Målt langs sjølve ryggkammen frå 1135 moh og opp er stega 33, 30, 37 og 25 grader over om lag seksti meter: ryggen er brattast midtvegs, rundt 1266 moh, og slakkar inn mot toppkulen. Fri Flyt reknar med at mange tek skia på sekken dei siste 200 høgdemetrane.",
     "Langs toppeggja ligg det skavl. Du kan ikkje gå heilt ut på kanten, og det er verdt å vita før du står der og vil ha utsikta mot Hjørundfjorden."
@@ -1255,7 +1260,7 @@
   "en": {
    "intro": "1161 metres of climbing straight up from the centre of Ørsta, and Fri Flyt grades the tour \"complex\" for a reason: the crest holds about 32 degrees on average over the last 170 metres with its steepest section at 37, and on hard snow a slip there has a long runout. Fri Flyt reckons many parties carry their skis for the last stretch.",
    "ascent": [
-    "From the car park at the waterworks at the top of Vikegeila, 149 m, follow the service road up into Skåla. The forest ends around 339 m and the ground is open from 344. At about 395 m you leave the road where a mapped path branches off — the same place Fri Flyt describes as \"diagonally towards the Vikeelva, cross the river\".",
+    "From the car park at the waterworks at the top of Vikegeila, 149 m, follow the service road up into Skåla. The forest ends around 456 m and the ground is open from 473. At about 395 m you leave the road where a mapped path branches off — the same place Fri Flyt describes as \"diagonally towards the Vikeelva, cross the river\".",
     "Across the river, aim for the lowest point on the ridge between Vallahornet and Saudehornet, 812 m. The col sits further east than a straight line between the two summits would suggest; the crest itself has its low point there, and a mapped path follows it some thirty metres away.",
     "Over the col, follow the south ridge some 490 metres up to the summit at 1303 m. The climbing is steady to around 1137 m and then steepens. Measured along the crest itself from 1135 m upwards the steps are 33, 30, 37 and 25 degrees over roughly sixty metres each: the ridge is steepest mid-way, around 1266 m, and eases into the summit dome. Fri Flyt reckons many parties carry their skis for the last 200 metres.",
     "There are cornices along the summit crest. You cannot walk right out to the edge, and that is worth knowing before you are standing there wanting the view over the Hjørundfjord."
@@ -1285,6 +1290,9 @@
   "sources": [
    "https://www.friflyt.no/topptur/skiturer-sunnmoere/turbeskrivelse-saudehornet",
    "https://ut.no/turforslag/1113172/saudehornet-1303-moh"
+  ],
+  "problems": [
+   "TREELINE ROUND: the guide gave the treeline as 339 m; check_treeline.py reads forest on the line to 459 m at 5 m spacing and guide_facts' vertex scan to 456 m. Figure replaced in both languages. First open vertex 473 m."
   ]
  },
  "slogen": {
@@ -1292,7 +1300,7 @@
    "intro": "Sunnmørsalpenes dronning, og en av de mest alvorlige turene i landsdelen. 1535 høydemeter fra Norangsdalen til en topp de fleste går de siste 350 metrene til fots.",
    "ascent": [
     "Fra veilomma ved Skylstad i Norangsdalen, 85 moh, går du rett opp Brekkheida. Hold deg vest for Brekkeelva gjennom hele skogen — elva ligger et par hundre meter øst for linja, og du kommer først inn på elvefaret oppe på flata rundt 700 moh. Dette er den bratteste delen av skogen: de hundre metrene mellom 200 og 300 moh ligger på 21,9° i snitt, og de under, 100 til 200 moh, på 19,0°.",
-    "Skoggrensa slipper på 659 moh. Videre følger du sporet mot Patchellhytta inn på flata sørvest for hytta, drøyt 795 moh. Her forlater du hyttesporet. Sving vest opp østryggen før du krysser 1000-meteren — går du lenger inn mot Steinreset, må du hente igjen høyden på feil side av ryggen.",
+    "Skoggrensa slipper på 681 moh. Videre følger du sporet mot Patchellhytta inn på flata sørvest for hytta, drøyt 795 moh. Her forlater du hyttesporet. Sving vest opp østryggen før du krysser 1000-meteren — går du lenger inn mot Steinreset, må du hente igjen høyden på feil side av ryggen.",
     "Pukkelen topper på 1143 moh. Derfra faller ryggen 26 meter til et skar før den stiger til høgde 1204, og videre er det 56 meter ned til kolen på 1148 før selve toppryggen. Hold deg til høyre for ura.",
     "De siste 350 høydemeterne går de fleste til fots. Toppryggen smalner for hvert steg: 40 høydemeter under toppen faller nordsiden 43° og sørsiden 50°, og fra selve toppen måler nordflanken 57° og sørflanken 49° over de første 200 metrene ut. De øverste 70 meterne er knivegg. Toppen er 1564 moh."
    ],
@@ -1321,7 +1329,7 @@
    "intro": "The queen of the Sunnmøre Alps, and one of the most serious tours in the region. 1535 vertical metres from Norangsdalen to a summit most people walk the last 350 metres to.",
    "ascent": [
     "From the lay-by at Skylstad in Norangsdalen, 85 m, you climb straight up Brekkheida. Stay west of Brekkeelva the whole way through the forest — the river runs a couple of hundred metres east of the line, and you only meet the watercourse up on the flat around 700 m. This is the steepest part of the forest: the hundred metres between 200 and 300 m average 21.9°, and the hundred below, 100 to 200 m, 19.0°.",
-    "The treeline lets go at 659 m. From there you follow the Patchellhytta trail onto the flat southwest of the hut, just over 795 m. Leave the hut track here. Turn west up the east ridge before you cross the 1000 m level — go further in toward Steinreset and you give the height back on the wrong side of the ridge.",
+    "The treeline lets go at 681 m. From there you follow the Patchellhytta trail onto the flat southwest of the hut, just over 795 m. Leave the hut track here. Turn west up the east ridge before you cross the 1000 m level — go further in toward Steinreset and you give the height back on the wrong side of the ridge.",
     "Pukkelen tops out at 1143 m. From there the ridge drops 26 metres to a notch before rising to høgde 1204, and beyond that it is 56 metres down to the col at 1148 before the summit ridge proper. Keep to the right of the ura, the boulder field.",
     "Most people walk the last 350 vertical metres. The summit ridge narrows with every step: 40 vertical metres below the top the north side falls 43° and the south side 50°, and from the summit itself the north flank measures 57° and the south flank 49° over the first 200 metres out. The top 70 metres are a knife edge. The summit is 1564 m."
    ],
@@ -1367,14 +1375,15 @@
    "DIRECTION REVERSED: \"Vest for Skylstadbrekka ligger to navngitte skredløp, Smørskredene og Karvigrova.\" Both are EAST of the line. Karvigrova (SSR Bekk, 62.19238/6.69409, DTM 235 m) sits ~117 m east of the ascent at that latitude; Smørskredene (SSR Fjellside, 62.19146/6.7087, DTM 261 m) ~917 m east. Also Smørskredene is a named mountainside, not a single path. Rewritten as an eastward-drift warning, which is what the geometry actually supports.",
    "RIVER SIDE REVERSED: \"hold deg øst for elva\". SSR Brekkeelva (Bekk, Ørsta) 62.19451/6.69968, DTM 415 m, lies ~260 m EAST of the line at that height; the DTM cross-section at lat 62.19451 puts the channel minimum at 6.700/410 m with the line at 6.6947. The line only meets the watercourse around 700 moh (SSR Brekkelva 6.70549/698 m is 40 m off the line at the 703 m route point). Corrected to \"vest for Brekkeelva gjennom skogen\".",
    "CONSISTENCY: descent said skis go back on \"fra kolen under høgde 1204\" while the ascent puts the foot section at the last 350 m; pinned to the measured col at 1148 moh.",
-   "VERIFIED UNCHANGED against guide_brief/guide_facts: start 84 moh, summit 1564 (DTM 1563.4), gain 1482 m, 5.22 km, steepest 100 m band 400–500 moh at 29.5°, steepest single step 40.7°, treeline 659 moh, Pukkelen 1143, −26 m notch, høgde 1204, −56 m col at 1148, last 350 m on foot, top 70 m knife edge, ura on the right (friflyt), Steinreset/Patchellhytta/Norangsdalen/Skylstad/Øye all SSR-confirmed, varsom.no + Sunnmøre in both languages, no claim that anyone skied or recorded the line."
+   "VERIFIED UNCHANGED against guide_brief/guide_facts: start 84 moh, summit 1564 (DTM 1563.4), gain 1482 m, 5.22 km, steepest 100 m band 400–500 moh at 29.5°, steepest single step 40.7°, treeline 659 moh, Pukkelen 1143, −26 m notch, høgde 1204, −56 m col at 1148, last 350 m on foot, top 70 m knife edge, ura on the right (friflyt), Steinreset/Patchellhytta/Norangsdalen/Skylstad/Øye all SSR-confirmed, varsom.no + Sunnmøre in both languages, no claim that anyone skied or recorded the line.",
+   "TREELINE ROUND: the guide gave the treeline as 659 m; check_treeline.py reads forest on the line to 684 m at 5 m spacing and guide_facts' vertex scan to 681 m. Figure replaced in both languages."
   ]
  },
  "jakta": {
   "no": {
    "intro": "1569 høgdemeter frå fjorden på under fem kilometer, og det meste av dei kjem i eitt strekk. Frå Konedalen går ei side opp på ein smal topprygg — 25 til 33 grader nedst, 40 til 50 dei siste 200 høgdemetrane som har skavl mot Konedalen og ein om lag 80 grader bratt vegg ned mot Hjørundfjorden på hi sida.",
    "ascent": [
-    "Frå vegenden ved Lisjeholen sør for Norang-gardane, 61 moh, tek du den bratte stien opp til Konedalen med skia på sekken — fyrst på venstre side av elva, så over på høgre. Skogen sluttar rundt 296 moh og terrenget er ope frå om lag 400. Dette er den delen av turen som ikkje er skitur, og ho stig 20 til 22 grader i snitt.",
+    "Frå vegenden ved Lisjeholen sør for Norang-gardane, 61 moh, tek du den bratte stien opp til Konedalen med skia på sekken — fyrst på venstre side av elva, så over på høgre. Skogen sluttar rundt 395 moh og terrenget er ope frå 398. Dette er den delen av turen som ikkje er skitur, og ho stig 20 til 22 grader i snitt.",
     "Oppe i dalen tek du på deg skia og følgjer det slake dalføret sørvestover til om lag 740 moh. Hald deg på søraustre side på veg inn: det kan gå skred frå Jakta heile vegen inn Konedalen, og dalbotnen er utløpssona.",
     "Ved 740 moh svingar du til høgre og sikk-sakkar opp sida i nordvest til du når toppryggen ved 1240 moh. Sida er ikkje jamn: nedst held ho 25 til 33 grader, men dei siste 200 høgdemetrane opp mot ryggen måler fallinja 40 til 50. Dette er den store skredfella på turen: eit samanhengande heng på 300 til 400 høgdemeter, og det er også nedkøyringa. Linja slik ho er teikna held 35,0 grader som brattaste samanhengande parti — sikk-sakken er kva som gjer talet lågare enn fallinja.",
     "Ryggen blir følgd sørvestover heilt til topps på 1589 moh. Hald deg midt på han. Den bratteste hundremeteren på turen ligg mellom 1500 og 1600 moh og måler 24,6 grader i snitt, men det er ikkje hellinga som er problemet på ryggen — det er breidda: ein kryssprofil ved 62,1715 nord gjev 1556 moh på ryggen og 1265 moh berre 52 meter nordvest for han."
@@ -1403,7 +1412,7 @@
   "en": {
    "intro": "1569 metres of climbing from the fjord in under five kilometres, most of it in one unbroken push. From Konedalen a flank leads onto a narrow summit ridge — 25 to 33 degrees low down, 40 to 50 over the last 200 metres with cornices towards Konedalen and a roughly 80-degree wall down to the Hjørundfjord on the other side.",
    "ascent": [
-    "From the road end at Lisjeholen south of the Norang farms, 61 m, take the steep path up to Konedalen with the skis on your pack — first on the left bank of the river, then across to the right. The forest ends around 296 m and the ground is open from about 400. This is the part of the tour that is not a ski tour, and it climbs at 20 to 22 degrees on average.",
+    "From the road end at Lisjeholen south of the Norang farms, 61 m, take the steep path up to Konedalen with the skis on your pack — first on the left bank of the river, then across to the right. The forest ends around 395 m and the ground is open from 398. This is the part of the tour that is not a ski tour, and it climbs at 20 to 22 degrees on average.",
     "Up in the valley you put the skis on and follow the gentle valley floor south-west to about 740 m. Keep to the south-east side on the way in: avalanches run off Jakta the whole length of Konedalen, and the valley floor is the runout.",
     "At 740 m you turn right and switchback up the flank to the north-west until you reach the summit ridge at 1240 m. The flank is not uniform: low down it holds 25 to 33 degrees, but over the last 200 metres up to the ridge the fall line measures 40 to 50. This is the big avalanche trap on the tour: a continuous slope of 300 to 400 metres, and it is also the descent. The line as drawn holds 35.0 degrees as its steepest sustained section — the switchbacks are what make that number lower than the fall line.",
     "The ridge is followed south-west all the way to the top at 1589 m. Stay on the crest. The steepest hundred-metre band on the tour lies between 1500 and 1600 m and averages 24.6 degrees, but the angle is not the problem on the ridge — the width is: a cross-section at 62.1715 north gives 1556 m on the crest and 1265 m just 52 metres to the north-west."
@@ -1435,7 +1444,8 @@
    "https://ut.no/turforslag/1111890/jakta-1588-moh"
   ],
   "problems": [
-   "SHAPE ROUND (mid-route notches): vertices the coarse solve put on a boulder, a bank or the lip of a step were moved 5-20 m onto ground that reads like their neighbours, and same-height loops of 60-230 m the check had read as spikes were cut; figures re-derived from the line as it now is."
+   "SHAPE ROUND (mid-route notches): vertices the coarse solve put on a boulder, a bank or the lip of a step were moved 5-20 m onto ground that reads like their neighbours, and same-height loops of 60-230 m the check had read as spikes were cut; figures re-derived from the line as it now is.",
+   "TREELINE ROUND: the guide gave the treeline as 296 m; check_treeline.py reads forest on the line to 395 m at 5 m spacing and guide_facts' vertex scan to 395 m. Figure replaced in both languages."
   ]
  },
  "skarasalen": {
@@ -1659,7 +1669,7 @@
   "no": {
    "intro": "Fra Tjugen i Loen til 1848 moh: 1818 høydemeter i én sammenhengende stigning, og en av landets lengste nedkjøringer. Turen krever kondisjon og sikt, ikke bratt teknikk.",
    "ascent": [
-    "Fra parkeringen på Tjugen ved Lodalsvegen, 34 moh, følger du traktorvegen som etter hvert blir til Kloumannstien og går oppover i Fosdalen. Plassen er avgiftsbelagt og betales med Vipps til Skåla Parkering — det er den samme plassen som brukes under Skåla Opp. De første 540 meterne går på veg; deretter tar stien over. Skogen slipper taket rundt 426 moh, ved Tyvasætra, og fra midten av mai må du regne med å bære skiene opp til Tjugensætra rundt 750 moh.",
+    "Fra parkeringen på Tjugen ved Lodalsvegen, 34 moh, følger du traktorvegen som etter hvert blir til Kloumannstien og går oppover i Fosdalen. Plassen er avgiftsbelagt og betales med Vipps til Skåla Parkering — det er den samme plassen som brukes under Skåla Opp. De første 540 meterne går på veg; deretter tar stien over. Skogen slipper taket rundt 698 moh, og fra midten av mai må du regne med å bære skiene opp til Tjugensætra rundt 750 moh.",
     "Elva krysser du rundt 650 moh. Stien svinger nordover et stykke før den tar seg tilbake sørover — følg den; juvet nedenfor er ikke noe å skjære over. Så følger rundt 400 høydemeter jevn stigning opp mot Skålavatnet. Stien svinger seg opp gjennom hellinga, og ingen hundremeter på dette strekket holder mer enn 18°.",
     "Du passerer Skålavatnet på nordvestsida, 1141 moh, og fortsetter sørøstover inn i botnen. Derfra tar du opp til venstre mot den brede ryggen mot Sandsnibba. Den bratteste hundremeteren på hele linja ligger mellom 1500 og 1600 moh og holder 21,2° i snitt, med 20,2° i sjiktet under; det bratteste enkelttrinnet måler 26,9°.",
     "Skålabu og Skålatårnet står på 1835 moh, der stien formelt slutter. Toppunktet ligger 370 meter lenger øst, flatt platå hele vegen. Ved dårlig sikt: hold ryggen. Den er slak å gå, men den faller bratt til begge sider — 56° i snitt de første 200 metrene mot nordvest, 42° mot sør — og skavlen henger ut over nordvestkanten."
@@ -1687,7 +1697,7 @@
   "en": {
    "intro": "From Tjugen in Loen to 1848 m: 1818 vertical metres in one unbroken climb, and one of the longest descents in the country. The tour asks for fitness and visibility, not steep-skiing technique.",
    "ascent": [
-    "From the Tjugen car park on Lodalsvegen, 34 m, follow the tractor road that becomes Kloumannstien and climbs into Fosdalen. The car park charges, paid by Vipps to Skåla Parkering — it is the same one used for the Skåla Opp race. The first 540 metres are on road; then the path takes over. The forest lets go at around 426 m, at Tyvasætra, and from mid-May reckon on carrying your skis up to Tjugensætra at about 750 m.",
+    "From the Tjugen car park on Lodalsvegen, 34 m, follow the tractor road that becomes Kloumannstien and climbs into Fosdalen. The car park charges, paid by Vipps to Skåla Parkering — it is the same one used for the Skåla Opp race. The first 540 metres are on road; then the path takes over. The forest lets go at around 698 m, and from mid-May reckon on carrying your skis up to Tjugensætra at about 750 m.",
     "You cross the river at around 650 m. The path swings north for a stretch before working back south — follow it; the gorge below is not something to cut across. Then come about 400 vertical metres of steady climbing up toward Skålavatnet. The path works up the hillside in bends, and no hundred metres on this stretch holds more than 18°.",
     "You pass Skålavatnet on its northwest side, 1141 m, and continue southeast into the basin. From there take up to the left onto the broad ridge toward Sandsnibba. The steepest hundred metres on the whole line sit between 1500 and 1600 m and hold 21.2° on average, with 20.2° in the band below; the steepest single step measures 26.9°.",
     "Skålabu and Skålatårnet stand at 1835 m, where the path formally ends. The summit is 370 metres further east, flat plateau the whole way. In poor visibility: hold the ridge. It is easy walking, but it falls steeply on both sides — 56° on average over the first 200 metres to the northwest, 42° to the south — and the cornice hangs out over the northwest edge."
@@ -1729,7 +1739,8 @@
    "Added Tyvasætra (SSR Seter/støl, 61.87003/6.90422, DTM 427.3 m) at the measured treeline of 426 m — it sits on the line and makes the treeline concrete. 'Tjugensætra' returns nothing in SSR; kept anyway because ut.no names it together with the ~750 m ski-carry figure, which is the source for that sentence.",
    "SW descent variation checked and quantified rather than left vague. Directly SW of Skålatårnet there is a rock step of 60.1–66.1° at 180–240 m out, so the drop-in is not below the tower — which is exactly why the source says 'følg toppeggen lenger ut'. Further out along the crest, at 61.86652/6.95397 and 61.86519/6.95089, the SW flank runs 24.2–26.4° mean over 500 m with 39.1–43.7° steps. Steeper than the 22.8° ascent, as claimed; now stated with numbers.",
    "VERIFIED UNCHANGED: start 34 moh; first 540 m on road (audit, OSM way 773645443 starts 540 m ENE of the trailhead); treeline 426; river crossing ~650 (ut.no); Skålavatnet 1141 (SSR Tjern 61.86444/6.93360, DTM Innsjø 1141.0); steepest 100 m band 1400–1500 at 22.8° (my recompute 22.5°); steepest step 29.1° (recomputed 29.1° at index 114, 61.86211/6.94599, 1321→1345 m over 42 m); Skålabu 1835 (SSR 61.86814/6.96566) and Skålatårnet (SSR 61.86839/6.96572, DTM 1835.4); summit 370 m east on flat plateau (+12 m over 370 m; tower→E 7.8° mean, 13.3° max); 'det er bratt på begge sider av toppen' is ut.no verbatim and measures out; avalanche paths along Fosdøla and Skålelva and north of the summer route past Skålavatnet is ut.no verbatim; Skålelva is the correct SSR form (Bekk, Stryn, 61.87108/6.91966 — ut.no's 'Skålaelva' is not the SSR spelling); Sandsnibba (SSR 61.86028/6.94526); Tjugen (SSR Bru, 61.86663/6.88189); Kloumannstien confirmed as the 1891 trail built with the tower; Varsom region 3027 Indre Fjordane confirmed by NVE point query for both trailhead and summit; 'varsom.no' literal in both languages; NO and EN arrays 4/4, 2/2, 3/3; no claim that anyone skied or recorded the line.",
-   "Sources used: friflyt.no/topptur/skiturer-stryn/turbeskrivelse-skaala (route, descent variation, 'stygt stup med hengeskavl på toppen'); ut.no/turforslag/115077 (ski-carry to Tjugensætra ~750 moh, avalanche paths, 'bratt på begge sider av toppen'); Kartverket DTM1 via flank_probe.py and hoydedata punkt API (all flank angles above); Kartverket SSR stedsnavn API (Fosdalen, Fosdøla, Skålelva, Skålavatnet, Sandsnibba, Skålabu, Skålatårnet, Tyvasætra, Tjugen, Skåla/Loskåla); NVE Varsom v6.3.0 AvalancheWarningByCoordinates point query (region 3027); visitnorway.no and allkunne.no for Kloumannstien/Kloumanstårnet 1891."
+   "Sources used: friflyt.no/topptur/skiturer-stryn/turbeskrivelse-skaala (route, descent variation, 'stygt stup med hengeskavl på toppen'); ut.no/turforslag/115077 (ski-carry to Tjugensætra ~750 moh, avalanche paths, 'bratt på begge sider av toppen'); Kartverket DTM1 via flank_probe.py and hoydedata punkt API (all flank angles above); Kartverket SSR stedsnavn API (Fosdalen, Fosdøla, Skålelva, Skålavatnet, Sandsnibba, Skålabu, Skålatårnet, Tyvasætra, Tjugen, Skåla/Loskåla); NVE Varsom v6.3.0 AvalancheWarningByCoordinates point query (region 3027); visitnorway.no and allkunne.no for Kloumannstien/Kloumanstårnet 1891.",
+   "TREELINE ROUND: the guide gave the treeline as 426 m; check_treeline.py reads forest on the line to 707 m at 5 m spacing and guide_facts' vertex scan to 698 m. Figure replaced in both languages. «ved Tyvasætra» is dropped: no corridor waypoint or source places it, and the figure it was attached to was wrong."
   ]
  },
  "glittertinden": {
@@ -2618,7 +2629,7 @@
   "no": {
    "intro": "967 høydemeter i ett strekk, fra Tjoflot nede ved fjorden til en topp som ser ut over Hardangerfjorden, Granvinsfjorden, Sørfjorden og Eidfjorden. Turen krever kondisjon mer enn teknikk.",
    "ascent": [
-    "Fra avgiftsparkeringen øverst på Tjoflotvegen, 276 moh, følger du traktorveien et kort stykke før stien tar over. Regn med å bære ski gjennom skogen: skoggrensa ligger på 538 moh, og de fleste spenner dem først på oppe ved Vindhovden.",
+    "Fra avgiftsparkeringen øverst på Tjoflotvegen, 276 moh, følger du traktorveien et kort stykke før stien tar over. Regn med å bære ski gjennom skogen: skoggrensa ligger på 580 moh, og de fleste spenner dem først på oppe ved Vindhovden.",
     "Skogen er det bratteste partiet før flanken. Fallinja mellom 335 og 405 moh måler 30° i snitt og tar 51° over de bratteste seksti meterne; stien tar den i svinger — ingen hundremeter i skogen holder mer enn 21° — og topper på 29° rundt 490 moh. Følg svingene — det finnes ingen snarvei her som lønner seg.",
     "Ved stølen Vindhovden på 586 moh åpner det seg. Herfra følger du sørvestsida østover mot toppen, langs skulderen under ryggen. Rundt 900 moh strammer det til: spennet 900–1000 moh ligger på 24,3° i snitt og 1000–1100 på 19,0°, og det bratteste enkeltpartiet på linja, 29,1°, ligger lenger nede, rundt 490 moh i skogen. Grunnen blir samtidig steinete.",
     "Over 1100 moh slakner linja igjen, og de siste høydemeterne er rolig terreng inn mot toppen. Men hold linja: noen titalls meter sør for deg ruller skulderen over. Ved 1146 moh faller sørsida 40° i snitt de neste 340 høydemeterne, med et enkelttrinn på 66°. Nord for linja er det motsatt — der slakner det ut i 2–5°, og det er den sida som lurer deg av ruta."
@@ -2626,7 +2637,7 @@
    "descent": [
     "Flanken kjører like godt ned som den går opp: over 650 sammenhengende høydemeter fra toppen til Vindhovden, med fjorden foran deg hele veien. Du har bredde å velge i, men ikke ubegrenset — et par hundre meter sørover ruller skulderen over i 35–40°.",
     "Vanligste feil: å følge fallinja. Tåka legger seg ofte på toppen her, og i flatt lys trekker den deg sørover av skulderen, ned i 35–40° med trinn opp mot 57°. Retter du for mye tilbake, havner du i det slake nord for linja — der ligger Hamreskredane, 530 meter nord for ruta på 758 moh, og under den faller terrenget 33° videre mot Granvinsfjorden. Sikt på Vindhovden, og hold høyden på skulderen hele veien ned.",
-    "Under Vindhovden er kjøringen over. Skoggrensa på 538 moh er der skiene går på sekken, og de siste drøyt 260 høydemeterne ned til Tjoflot går på beina, i de samme svingene du kom opp."
+    "Under Vindhovden er kjøringen over. Skoggrensa på 580 moh er der skiene går på sekken, og de siste drøyt 300 høydemeterne ned til Tjoflot går på beina, i de samme svingene du kom opp."
    ],
    "avalanche": [
     {
@@ -2647,7 +2658,7 @@
   "en": {
    "intro": "967 metres of climbing in one go, from Tjoflot down by the fjord to a summit that looks out over Hardangerfjorden, Granvinsfjorden, Sørfjorden and Eidfjorden. The tour asks for fitness more than technique.",
    "ascent": [
-    "From the pay parking at the top of Tjoflotvegen, 276 m, you follow the tractor road a short way before the path takes over. Expect to carry skis through the forest: the treeline is at 538 m, and most people put them on up at Vindhovden.",
+    "From the pay parking at the top of Tjoflotvegen, 276 m, you follow the tractor road a short way before the path takes over. Expect to carry skis through the forest: the treeline is at 580 m, and most people put them on up at Vindhovden.",
     "The forest is the steepest section before the flank. Between 335 and 405 m the fall line averages 30° and hits 51° over the steepest sixty metres; the path takes it in switchbacks — no hundred metres in the forest holds more than 21° — and tops out at 29° around 490 m. Follow the switchbacks — there is no shortcut here that pays.",
     "At the summer farm at Vindhovden, 586 m, it opens up. From here you follow the southwest side east toward the summit, along the shoulder below the ridge. Around 900 m it tightens: the 900–1000 m band averages 24.3° and the 1000–1100 m band 19.0°, and the steepest single step on the line, 29.1°, sits lower down, at about 490 m in the forest. The ground turns rocky at the same time.",
     "Above 1100 m the line eases again, and the last metres are quiet ground in to the summit. But hold the line: a few tens of metres south of you the shoulder rolls over. At 1146 m the south side falls 40° on average for the next 340 metres, with a single step of 66°. North of the line it is the opposite — it eases off to 2–5°, and that is the side that pulls you off the route."
@@ -2655,7 +2666,7 @@
    "descent": [
     "The flank skis as well as it climbs: over 650 unbroken metres from the summit down to Vindhovden, with the fjord in front of you the whole way. You have width to choose from, but not unlimited — a couple of hundred metres south the shoulder rolls over into 35–40°.",
     "The usual mistake: following the fall line. Fog settles on this summit often, and in flat light it draws you south off the shoulder, down into 35–40° with steps up to 57°. Correct back too far and you end up in the gentle ground north of the line — that is where Hamreskredane sits, 530 metres north of the route at 758 m, and below it the terrain falls 33° on toward Granvinsfjorden. Aim for Vindhovden, and hold your height on the shoulder all the way down.",
-    "Below Vindhovden the skiing is over. The treeline at 538 m is where the skis go on the pack, and the last 260-odd metres down to Tjoflot are on foot, in the same switchbacks you came up."
+    "Below Vindhovden the skiing is over. The treeline at 580 m is where the skis go on the pack, and the last 300-odd metres down to Tjoflot are on foot, in the same switchbacks you came up."
    ],
    "avalanche": [
     {
@@ -2690,7 +2701,8 @@
    "\"STIEN ... GÅR ALDRI OVER 28°\" IS FALSE AGAINST THE ROUTE DATA. Recomputing the line, the steepest step below the treeline is 33.3°, at 477 -> 501 m. The 28° came from a router run on a different corridor version. Corrected to the line's own figures: under 25° per hundred-metre band, topping out at 33° around 480 m.",
    "34.8° STEP ATTACHED TO THE WRONG BAND. The sentence reads as if it sits in the 900-1000 m band; recomputing the line puts it at 1067 -> 1091 m. Also added the 1000-1100 band (24.7°), which the guide skipped over on the way to \"over 1100 slakner det\" — the steep zone is 900-1100, not 900-1000.",
    "\"BRED NOK TIL AT DU VELGER DIN EGEN LINJE\" NEEDED A BOUND. True in the direction you ski, false a couple of hundred metres south, where the shoulder rolls over into 35-40°. Bounded it rather than cutting it.",
-   "VERIFIED AND LEFT ALONE: 277 m start, 963 m gain, 3.39 km, no height given back, treeline 538 m (Kartverket class stops being Skog), Vindhovden 586 m (SSR Seter/støl, 60.45844/6.64042, 20 m off the line — and the writer correctly avoided the decoy 'Vindhovd' 2.3 km east), 900-1000 band 26.7°, max step 34.8°, 654 m from summit to Vindhovden, 261 m from treeline to Tjoflot, Tjoflotvegen (SSR Adressenavn, Voss), Hamreskredane (SSR Ur, 60.46416/6.66383, 758 m — measured 530 m north of the line and 93 m below it, and from it the ground does fall 32.6° mean / 44.4° steepest to the northwest). The fog claim is ut.no's and hardangerfjord.com's, quoted almost verbatim by both. hardangerfjord.com's two steep sections, \"between 400 and 600 masl. and 800-1100 masl.\", match the route bands. Varsom region checked directly against NVE for summit and trailhead: RegionId 3031 Voss at both, so the editor flag in 'uncertain' stands and the Voss line is right. \"varsom.no\" present in both languages. No claim that anyone skied or recorded the line."
+   "VERIFIED AND LEFT ALONE: 277 m start, 963 m gain, 3.39 km, no height given back, treeline 538 m (Kartverket class stops being Skog), Vindhovden 586 m (SSR Seter/støl, 60.45844/6.64042, 20 m off the line — and the writer correctly avoided the decoy 'Vindhovd' 2.3 km east), 900-1000 band 26.7°, max step 34.8°, 654 m from summit to Vindhovden, 261 m from treeline to Tjoflot, Tjoflotvegen (SSR Adressenavn, Voss), Hamreskredane (SSR Ur, 60.46416/6.66383, 758 m — measured 530 m north of the line and 93 m below it, and from it the ground does fall 32.6° mean / 44.4° steepest to the northwest). The fog claim is ut.no's and hardangerfjord.com's, quoted almost verbatim by both. hardangerfjord.com's two steep sections, \"between 400 and 600 masl. and 800-1100 masl.\", match the route bands. Varsom region checked directly against NVE for summit and trailhead: RegionId 3031 Voss at both, so the editor flag in 'uncertain' stands and the Voss line is right. \"varsom.no\" present in both languages. No claim that anyone skied or recorded the line.",
+   "TREELINE ROUND: the guide gave the treeline as 538 m; check_treeline.py reads forest on the line to 580 m at 5 m spacing and guide_facts' vertex scan to 580 m. Figure replaced in both languages. Start 276 m, so the walk down below the treeline is 304 m, not «260-odd»."
   ]
  },
  "vesoldo": {
@@ -2763,7 +2775,7 @@
   "no": {
    "intro": "Rosendalsalpenes klassiker — 1272 høydemeter fra gårdstunet på Kletta til varden, uten en meter tilbake underveis. En lang dag for den som vil ha hele fjellet fra bunnen av.",
    "ascent": [
-    "Fra parkeringen ved Kletta, 154 moh, følger du veien 300 meter før stien svinger opp mot Skarshaug. Første strekket går over innmark og videre inn i blandingsskogen; sporet er tydelig, og du stiger jevnt gjennom skogen til rundt 520 moh.",
+    "Fra parkeringen ved Kletta, 154 moh, følger du veien 300 meter før stien svinger opp mot Skarshaug. Første strekket går over innmark og videre inn i blandingsskogen; sporet er tydelig, og du stiger jevnt gjennom skogen til rundt 618 moh.",
     "Over tregrensa reiser lia seg. Mellom 600 og 700 moh holder den 22,6° i snitt over hundre høydemeter, og det bratteste hundremeterspennet på turen kommer like over: 23,9° mellom 800 og 900 moh, med 22,2° mellom 900 og 1000. Begge er noe du vil ha unnagjort tidlig på dagen. Toppen av bakken er Skarshaug, 806 moh, halvveis til Melderskin.",
     "Nordøstover flater det ut i Rindane, de små ryggene og søkkene du siger gjennom mot Holo. Holo er flata på 1211 moh; Kartverket klassifiserer den som myr, og det er det ene stedet på ruta der linja flater helt ut. Her svinger den nordøst før den vender tilbake østover — den svingen holder deg på hylla og utenfor den bratte sør- og sørvestsiden rett under toppen.",
     "Siste stigningen fra Holo til varden er 215 høydemeter på ni hundre meter: 13° i snitt, 25° der den er brattest. Øverst ligger skavlene langs toppkanten, og er snøen avblåst og hard, tar du på deg stegjern og har isøksa i hånda de siste meterne."
@@ -2772,7 +2784,7 @@
     "Ned igjen følger du oppstigningen: vestover fra varden til Holo, så sørvest gjennom Rindane og over Skarshaug, og til slutt ned lia og gjennom skogen til Kletta.",
     "Vanligste feil: å slippe seg rett ned fra toppen i stedet for å gå tilbake til Holo først. Fallinja fra varden går sørover, og der stuper det — sørflanken snitter 44° over de tre første hundre metrene, med et bergband på 60° i de øverste sytti. Hold vestover til du står på hylla ved Holo, og gå ned oppstigningssporet derfra.",
     "Under Skarshaug møter du bakken mellom 600 og 700 moh igjen, nå vestvendt og med sol på seg fra midt på dagen. Kjør den mens snøen fortsatt bærer; senere blir den tung og våt helt ned i skogen.",
-    "Fri Flyt går ikke opp Melderskin fra Kletta i det hele tatt. Startstedet deres er Myrdalsvatnet på 367 moh — det samme som Juklavasstinden går fra — og ruta følger grusveien litt tilbake til en traktorvei på 430, videre til Nipeelva på 525, opp langs elva og så den tydelige ryggen over Omnetjørnene på 1033 til Omnen på 1155 og toppryggen på 1204. 1101 høydemeter på 5,10 km, mot 1273 på 4,90 km fra Kletta: kortere klatring, lengre linje, og 1,84 km med skog i stedet for 300 meter — furua slipper først på 659 moh her mot 521 der. Beltet fra 600 til 700 moh måler 21,8 grader og det bratteste 30-metersvinduet 33,8 grader mellom 1258 og 1284 — brattere enn de 30,6 normalruta måler. Omnetjørnene ligger øst for ryggen — til venstre når du går sørover, som kilden sier — og linja går ikke over dem. «Ta med stegjern og øks» står i faktaboksen til denne ruta, ikke til den andre."
+    "Fri Flyt går ikke opp Melderskin fra Kletta i det hele tatt. Startstedet deres er Myrdalsvatnet på 367 moh — det samme som Juklavasstinden går fra — og ruta følger grusveien litt tilbake til en traktorvei på 430, videre til Nipeelva på 525, opp langs elva og så den tydelige ryggen over Omnetjørnene på 1033 til Omnen på 1155 og toppryggen på 1204. 1101 høydemeter på 5,10 km, mot 1273 på 4,90 km fra Kletta: kortere klatring, lengre linje, og 1,84 km med skog mot 1,76 — furua slipper på 659 moh her mot 618 der. Beltet fra 600 til 700 moh måler 21,8 grader og det bratteste 30-metersvinduet 33,8 grader mellom 1258 og 1284 — brattere enn de 30,6 normalruta måler. Omnetjørnene ligger øst for ryggen — til venstre når du går sørover, som kilden sier — og linja går ikke over dem. «Ta med stegjern og øks» står i faktaboksen til denne ruta, ikke til den andre."
    ],
    "avalanche": [
     {
@@ -2793,7 +2805,7 @@
   "en": {
    "intro": "The classic of the Rosendal alps — 1,272 metres of climbing from the farmyard at Kletta to the cairn, without giving back a single metre on the way. A long day for anyone who wants the whole mountain from the bottom up.",
    "ascent": [
-    "From the car park at Kletta, 154 m, follow the road for 300 metres before the path turns up towards Skarshaug. The first stretch crosses farmland and then enters mixed forest; the track is clear, and you climb steadily through the trees to around 520 m.",
+    "From the car park at Kletta, 154 m, follow the road for 300 metres before the path turns up towards Skarshaug. The first stretch crosses farmland and then enters mixed forest; the track is clear, and you climb steadily through the trees to around 618 m.",
     "Above the treeline the slope stands up. Between 600 and 700 m it averages 22.6° over a hundred vertical metres, and the steepest hundred-metre band of the tour comes just above: 23.9° between 800 and 900 m, with 22.2° between 900 and 1000. Both are ground you want behind you early in the day. The top of that slope is Skarshaug, 806 m, halfway to Melderskin.",
     "North-east from there the ground eases into Rindane, the small ridges and hollows you thread through towards Holo. Holo is the flat at 1,211 m; Kartverket classes it as bog, and it is the one place on the route where the line simply runs level. Here it swings north-east before turning back east — that dogleg keeps you on the bench and off the steep south and south-west ground directly below the summit.",
     "The final climb from Holo to the cairn is 215 vertical metres over nine hundred: 13° on average, 25° where it is steepest. Cornices sit along the summit edge, and when the snow up there is wind-scoured and hard you put on crampons and carry the axe for the last stretch."
@@ -2802,7 +2814,7 @@
     "Coming down you retrace the ascent: west from the cairn to Holo, then south-west through Rindane and over Skarshaug, and finally down the slope and through the forest to Kletta.",
     "The common mistake: dropping straight off the summit instead of going back to Holo first. The fall line from the cairn runs south, and south is where it drops away — the south flank averages 44° over the first three hundred metres, with a 60° rock band in the top seventy. Hold west until you are standing on the bench at Holo, and take your ascent track down from there.",
     "Below Skarshaug you meet the 600 to 700 m slope again, west-facing now and with the sun on it from midday. Ski it while the snow still carries; later it turns heavy and wet all the way down into the forest.",
-    "Fri Flyt does not climb Melderskin from Kletta at all. Their start is Myrdalsvatnet at 367 m — the same one Juklavasstinden goes from — and the route follows the gravel road back a little to a tractor track at 430, on to Nipeelva at 525, up along the river and then the distinct ridge over Omnetjørnene at 1033 to Omnen at 1155 and the summit ridge at 1204. 1101 metres of climbing over 5.10 km, against 1273 over 4.90 km from Kletta: less ascent, more line, and 1.84 km of forest instead of 300 metres — the pines let go at 659 m here against 521 there. The band from 600 to 700 m measures 21.8 degrees and the steepest 30 m window 33.8 degrees between 1258 and 1284 — steeper than the 30.6 the normal route measures. Omnetjørnene lie east of the ridge — on your left going south, as the source says — and the line does not cross them. «Bring crampons and an axe» is in this route's fact box, not the other one's."
+    "Fri Flyt does not climb Melderskin from Kletta at all. Their start is Myrdalsvatnet at 367 m — the same one Juklavasstinden goes from — and the route follows the gravel road back a little to a tractor track at 430, on to Nipeelva at 525, up along the river and then the distinct ridge over Omnetjørnene at 1033 to Omnen at 1155 and the summit ridge at 1204. 1101 metres of climbing over 5.10 km, against 1273 over 4.90 km from Kletta: less ascent, more line, and 1.84 km of forest against 1.76 — the pines let go at 659 m here against 618 there. The band from 600 to 700 m measures 21.8 degrees and the steepest 30 m window 33.8 degrees between 1258 and 1284 — steeper than the 30.6 the normal route measures. Omnetjørnene lie east of the ridge — on your left going south, as the source says — and the line does not cross them. «Bring crampons and an axe» is in this route's fact box, not the other one's."
    ],
    "avalanche": [
     {
@@ -2844,7 +2856,8 @@
    "Varsom region Hardanger correct (Kvinnherad/Rosendal, region 3034); literal 'varsom.no' present in both languages. Place names check out: SSR has Melderskin (Fjell, Kvinnherad) and Skardshaugen; Holo and Rindane are absent from SSR for Kvinnherad but are published by ut.no in exactly that order, so they stay. No claim that anyone skied or recorded the line.",
    "Register is already right — second person, present tense, unhedged. Nothing softened; the corrected numbers are larger and stated plainly.",
    "ANDRE RUTE LAGT INN: Melderskin frå Myrdalsvatnet. Fri Flyt «Turbeskrivelse Melderskin» fører Myrdalsvannet som startsted og skildrar oppgangen: «Fra Myrdalsvannet, følg grusveien litt tilbake til du kommer til en traktorvei. Følg veien til Nipelva dukker opp. Følg elva oppover til det blir naturlig å svinge av mot Omnen (1158). Da ligger Omnetjørnene til venstre for deg. Følg den tydelige ryggen opp til toppen.» Kjelda sine eigne tal for denne ruta: 1054 høydemeter, fem timar opp og ned, himmelretning NØ, bratteste punkt 45 grader, «Ta med stegjern og øks». Omnen er registerført (Topp, Kvinnherad, 60,01449/6,08235) og DTM1 les 1155,5 mot boka sine 1158. Omnetjørnene ligg på 1066 moh aust for ryggen. Startsteda er 2,0 km frå kvarandre, og Myrdalsvatnet er alt eit kartfesta startsted i appen — det Juklavasstinden går frå.",
-   "check_bands målte tidlegare kvar «A grader mellom X og Y moh»-påstand mot routes[0] åleine, så eit korrekt beltetal for ein alternativ rute vart rapportert som feil. Kontrollen les no alle rutene til touren og rapporterer berre når påstanden ikkje stemmer med nokon av dei; ei påstand som traff ein alternativ rute blir lista for seg, og superlativen blir målt mot den ruta si eiga tabell. Beltetala i dette avsnittet er difor målte på denne ruta og stadfesta av check_bands."
+   "check_bands målte tidlegare kvar «A grader mellom X og Y moh»-påstand mot routes[0] åleine, så eit korrekt beltetal for ein alternativ rute vart rapportert som feil. Kontrollen les no alle rutene til touren og rapporterer berre når påstanden ikkje stemmer med nokon av dei; ei påstand som traff ein alternativ rute blir lista for seg, og superlativen blir målt mot den ruta si eiga tabell. Beltetala i dette avsnittet er difor målte på denne ruta og stadfesta av check_bands.",
+   "TREELINE ROUND: the guide gave the treeline as 520 m; check_treeline.py reads forest on the line to 618 m at 5 m spacing and guide_facts' vertex scan to 618 m. Figure replaced in both languages. The comparison with the Myrdalsvatnet line also gave the Kletta route 300 m of forest and a treeline of 521; guide_facts reads 1.76 km and 618."
   ]
  },
  "gaustatoppen": {
@@ -2930,12 +2943,12 @@
  },
  "melshornet": {
   "no": {
-   "intro": "565 høgdemeter på 3,30 km frå Helgatun, opp ei preparert og merkt løype som blir gått i mørket heile vinteren. Brattaste samanhengande parti måler 23,8 grader, og det ligg nede rett over skoggrensa på 454 moh — ikkje oppe under varden.",
-   "caption": "559 høgdemeter og 3,00 km frå Helgatun på Krøvelseidet, med skoggrensa på 454 moh og brattaste hundremeteren mellom 400 og 500 moh.",
+   "intro": "565 høgdemeter på 3,30 km frå Helgatun, opp ei preparert og merkt løype som blir gått i mørket heile vinteren. Brattaste samanhengande parti måler 23,8 grader, og det ligg nede i skogen, mellom 458 og 472 moh — ikkje oppe under varden.",
+   "caption": "559 høgdemeter og 3,00 km frå Helgatun på Krøvelseidet, med skoggrensa på 545 moh og brattaste hundremeteren mellom 400 og 500 moh.",
    "ascent": [
     "Start på den store parkeringsplassen ved Helgatun på Krøvelseidet, 252 moh, på fv5894 Vikebygdvegen mellom Volda og Åmdalen. Løypa tek av frå plassen og går rett inn i skogen. Ho er tidvis preparert med trakkemaskin, og den siste bakken er merkt med brøytestikker.",
-    "Dei fyrste hundre og femti høgdemetrane er slake: bandet frå 200 til 300 moh måler 5,3 grader i snitt over 580 meter grunn, og 300 til 400 moh 12,0 grader. Skogen slepper taket ved 454 moh, og brattaste steget på heile turen ligg like under skoggrensa — 23,8 grader over tretti meter, mellom 458 og 472 moh.",
-    "Over skoggrensa flatar det ut mot ryggen ved 519 moh. Bandet frå 500 til 600 moh er det slakaste på turen, 6,7 grader over 855 meter grunn, og herifrå ser du kvar resten av ruta går.",
+    "Dei fyrste hundre og femti høgdemetrane er slake: bandet frå 200 til 300 moh måler 5,3 grader i snitt over 580 meter grunn, og 300 til 400 moh 12,0 grader. Brattaste steget på heile turen ligg i skogen — 23,8 grader over tretti meter, mellom 458 og 472 moh.",
+    "Mot ryggen ved 519 moh flatar det ut, og ved 545 moh slepper skogen taket. Bandet frå 500 til 600 moh er det slakaste på turen, 6,7 grader over 855 meter grunn, og herifrå ser du kvar resten av ruta går.",
     "Ryggen stig jamt til topps: 12,9 grader frå 600 til 700 moh og 13,1 frå 700 til 800. Dei siste høgdemetrane til varden på 809 moh er flate — bandet over 800 moh måler 7,0 grader."
    ],
    "descent": [
@@ -2945,7 +2958,7 @@
    "avalanche": [
     {
      "title": "Ruta",
-     "body": "Preparert og merkt løype i slakt terreng. Brattaste samanhengande parti måler 23,8 grader og ligg lågt, mellom 458 og 472 moh rett under skoggrensa; over 500 moh er turen på sitt slakaste med 6,7 grader i snitt frå 500 til 600 moh, og brattaste hundremeteren, 400 til 500 moh, måler 13,6."
+     "body": "Preparert og merkt løype i slakt terreng. Brattaste samanhengande parti måler 23,8 grader og ligg lågt, mellom 458 og 472 moh, nede i skogen; over 500 moh er turen på sitt slakaste med 6,7 grader i snitt frå 500 til 600 moh, og brattaste hundremeteren, 400 til 500 moh, måler 13,6."
     },
     {
      "title": "Terrenget rundt",
@@ -2958,12 +2971,12 @@
    ]
   },
   "en": {
-   "intro": "565 metres of climbing over 3.30 km from Helgatun, on a groomed and marked track that is skied after dark all winter. The steepest sustained section measures 23.8 degrees, and it sits just above the treeline at 454 m — not up under the cairn.",
-   "caption": "559 metres of climbing and 3.00 km from Helgatun on Krøvelseidet, with the treeline at 454 m and the steepest hundred-metre band between 400 and 500 m.",
+   "intro": "565 metres of climbing over 3.30 km from Helgatun, on a groomed and marked track that is skied after dark all winter. The steepest sustained section measures 23.8 degrees, and it sits low in the forest, between 458 and 472 m — not up under the cairn.",
+   "caption": "559 metres of climbing and 3.00 km from Helgatun on Krøvelseidet, with the treeline at 545 m and the steepest hundred-metre band between 400 and 500 m.",
    "ascent": [
     "Start at the large car park by Helgatun on Krøvelseidet, 252 m, on fv5894 Vikebygdvegen between Volda and Åmdalen. The track leaves the car park straight into the forest. It is groomed with a snowcat at times, and the final slope is marked with snow poles.",
-    "The first hundred and fifty metres of climbing are gentle: the band from 200 to 300 m averages 5.3 degrees over 580 metres of ground, and 300 to 400 m runs at 12.0. The forest lets go at 454 m, and the steepest step of the whole tour sits just below the treeline — 23.8 degrees over thirty metres, between 458 and 472 m.",
-    "Above the treeline it flattens out toward the ridge at 519 m. The band from 500 to 600 m is the gentlest on the tour, 6.7 degrees over 855 metres of ground, and from here you can see where the rest of the route goes.",
+    "The first hundred and fifty metres of climbing are gentle: the band from 200 to 300 m averages 5.3 degrees over 580 metres of ground, and 300 to 400 m runs at 12.0. The steepest step of the whole tour is in the forest — 23.8 degrees over thirty metres, between 458 and 472 m.",
+    "It flattens out toward the ridge at 519 m, and at 545 m the forest lets go. The band from 500 to 600 m is the gentlest on the tour, 6.7 degrees over 855 metres of ground, and from here you can see where the rest of the route goes.",
     "The ridge climbs evenly to the top: 12.9 degrees from 600 to 700 m and 13.1 from 700 to 800. The last metres to the cairn at 809 m are flat — the band above 800 m measures 7.0 degrees."
    ],
    "descent": [
@@ -2973,7 +2986,7 @@
    "avalanche": [
     {
      "title": "The route",
-     "body": "A groomed, marked track in gentle terrain. The steepest sustained section measures 23.8 degrees and sits low, between 458 and 472 m just below the treeline; above 500 m the tour is at its gentlest with 6.7 degrees on average from 500 to 600 m, and the steepest hundred-metre band, 400 to 500 m, measures 13.6."
+     "body": "A groomed, marked track in gentle terrain. The steepest sustained section measures 23.8 degrees and sits low, between 458 and 472 m, low in the forest; above 500 m the tour is at its gentlest with 6.7 degrees on average from 500 to 600 m, and the steepest hundred-metre band, 400 to 500 m, measures 13.6."
     },
     {
      "title": "The terrain around it",
@@ -2989,7 +3002,10 @@
    "https://www.friflyt.no/topptur/skiturer-sunnmoere/turbeskrivelse-melshornet-kolaashalvoeya",
    "https://www.openstreetmap.org/way/932657357"
   ],
-  "source": "written against corridors.json and the routed line"
+  "source": "written against corridors.json and the routed line",
+  "problems": [
+   "TREELINE ROUND: the guide gave the treeline as 454 m; check_treeline.py reads forest on the line to 546 m at 5 m spacing and guide_facts' vertex scan to 545 m. Figure replaced in both languages. With the treeline at 545, the steepest step (458–472 m) is in the forest, not above or just below the treeline as the intro and ascent said, and the ridge at 519 m is still below it."
+  ]
  },
  "auskjeret": {
   "no": {
@@ -5403,7 +5419,7 @@
    "intro": "Agders høgaste — så vidt det er: fylkesgrensa kryssar sjølve toppen, og det registrerte toppunktet på 1506 moh ligg i Tokke i Telemark, ti meter aust for Agder-sida, som når 1504. Ein tur der talet som betyr noko er 11,31 km og ikkje 851 høgdemeter. Ingen sti, ingen merking, tre skar og eit vatn undervegs, og eit terreng så slakt at det brattaste 400-metersvindauget måler 13,7 grader. Det einaste bratte på fjellet vender nord, og du skal ikkje dit.",
    "ascent": [
     "Frå parkeringa ved bommen innerst i Berdalen hyttegrend, 810 moh, går ruta austover. Peilinga frå parkeringa til toppen er 82 grader — Berdalen ligg vest for fjellet, og du går inn mot det heile dagen. Riksveg 9 mellom Bykle og Hovden er brøytt heile vinteren, og ut.no presiserer at du ikkje skal køyre den siste kilometeren etter bommen: «Veien er privat.» Den fyrste kilometeren deler trasé med oppkøyrde løyper i Berdalen; linja her er terrenglinja og ikkje løypa.",
-    "Forbi Langemyr på 891 moh går det jamt oppover mot Tverrheiskaret på 1028 moh. Dette er den einaste stigninga på turen som kjennest som ei stigning: brattaste 30 meter måler 26,2 grader mellom 1000 og 1022 moh, 2350 meter ute, og brattaste 400 meter 13,7 grader frå 963 til 1062 moh. Skogen står høgt her: DTM1 gjev terrengklasse Skog i sjølve Tverrheiskaret på 1028 moh. Kor høgt han går på denne linja er ikkje målt punkt for punkt — Kartverket sitt punkt-API låg nede då dette vart kontrollert — så guiden seier det som er målt og ikkje meir.",
+    "Forbi Langemyr på 891 moh går det jamt oppover mot Tverrheiskaret på 1028 moh. Dette er den einaste stigninga på turen som kjennest som ei stigning: brattaste 30 meter måler 26,2 grader mellom 1000 og 1022 moh, 2350 meter ute, og brattaste 400 meter 13,7 grader frå 963 til 1062 moh. Skogen står høgt her: DTM1 gjev terrengklasse Skog i sjølve Tverrheiskaret på 1028 moh. Langs linja står skogen til 1044 moh, og frå 1052 er det ope.",
     "Over Tverrheii og Tverrheitjønnane held du aust til Tverrheiskardet på 1156 moh. Her er ei felle verdt å kjenne: SSR har tre skarpunkt på strekninga, og to av dei heiter Tverrheiskaret — det du gjekk over på 1028 moh, og eit til på 1091 moh som ligg berre 305 meter frå Tverrheiskardet på 1156. Det er det siste paret som er lett å blande, ikkje det fyrste. Bandet 1100 til 1200 moh måler 1,3 grader over 4455 meter grunn — det er over fire kilometer nesten flatt høgfjell, og det er her ein tur utan merking blir ein navigasjonsjobb.",
     "Frå Tverrheiskardet fell linja 47 meter over 535 meter grunn ned i Gjuvvatn-bassenget, og så 32 meter til, ned på Midtre Gjuvvatn. Der går ho 720 meter over vatnet på 1124 moh, høgst 55 meter frå land — den einaste iskryssinga på turen. Vatnet er naturleg: DTM1 gjev terrengklasse Innsjø, og OSM-relasjonen (name=Midtre Gjuvvatn, ele=1124, ref:nve:vann=13750) ber ingen reservoartaggar. Turskildringane går same vegen.",
     "Frå austenden av vatnet på 1137 moh stig ruta jamt austover forbi vegpunktet på 1225 moh — det ligg på fast mark like vest for det nedste av dei to små vatna, ikkje på vatnet sjølv — og siste kilometeren går opp vestflanken. Bandet 1400 til 1500 moh måler 11,9 grader over 499 meter grunn, det brattaste på heile turen. Dei siste 500 metrane går på peiling 78 grader og stig 115 meter til toppen på 1506 moh. ut.no fører 1507; DTM1 gjev 1506,49 på det registrerte punktet, og ein halv meter er ikkje ei usemje verdt namnet."
@@ -5433,7 +5449,7 @@
    "intro": "Agder's highest — barely: the county line crosses the summit itself, and the registered high point at 1506 m lies in Tokke in Telemark, ten metres east of the Agder side, which reaches 1504. A tour where the number that matters is 11.31 km rather than 851 metres of climbing. No path, no marking, three passes and a lake along the way, and terrain so gentle that the steepest 400-metre window measures 13.7 degrees. The only steep ground on the mountain faces north, and you are not going there.",
    "ascent": [
     "From the car park at the barrier at the far end of Berdalen hyttegrend, 810 m, the route runs east. The bearing from the car park to the summit is 82 degrees — Berdalen lies west of the mountain, and you head toward it all day. Riksveg 9 between Bykle and Hovden is ploughed all winter, and ut.no is explicit that you do not drive the last kilometre past the barrier: «Veien er privat.» The first kilometre shares ground with the groomed tracks in Berdalen; the line here is the terrain line, not the track.",
-    "Past Langemyr at 891 m it climbs steadily to Tverrheiskaret at 1028 m. This is the only rise on the tour that feels like one: the steepest 30 metres measures 26.2 degrees between 1000 and 1022 m, 2350 metres in, and the steepest 400 metres 13.7 degrees from 963 to 1062 m. The forest stands high here: DTM1 gives terrain class Skog in Tverrheiskaret itself, at 1028 m. How much higher it goes on this line has not been measured point by point — Kartverket's point API was down when this was checked — so the guide states what is measured and no more.",
+    "Past Langemyr at 891 m it climbs steadily to Tverrheiskaret at 1028 m. This is the only rise on the tour that feels like one: the steepest 30 metres measures 26.2 degrees between 1000 and 1022 m, 2350 metres in, and the steepest 400 metres 13.7 degrees from 963 to 1062 m. The forest stands high here: DTM1 gives terrain class Skog in Tverrheiskaret itself, at 1028 m. Along the line the forest stands to 1044 m, and from 1052 it is open.",
     "Across Tverrheii and the Tverrheitjønnane you hold east to Tverrheiskardet at 1156 m. There is a trap here worth knowing: the place-name register has three passes on this stretch, and two of them are called Tverrheiskaret — the one you crossed at 1028 m, and another at 1091 m that lies only 305 metres from Tverrheiskardet at 1156. It is the second pair that is easy to confuse, not the first. The 1100 to 1200 m band averages 1.3 degrees over 4455 metres of ground — that is over four kilometres of nearly flat high country, and it is where a tour without marking becomes a navigation job.",
     "From Tverrheiskardet the line drops 47 metres over 535 metres of ground into the Gjuvvatn basin, then 32 metres more, down onto Midtre Gjuvvatn. There it runs 720 metres across the lake at 1124 m, at most 55 metres from shore — the only ice crossing of the tour. The lake is natural: DTM1 gives terrain class Innsjø, and the OSM relation (name=Midtre Gjuvvatn, ele=1124, ref:nve:vann=13750) carries no reservoir tags. The route descriptions go the same way.",
     "From the east end of the lake at 1137 m the route climbs steadily east past the waypoint at 1225 m — which sits on firm ground just west of the lower of the two small tarns, not on the tarn itself — and the last kilometre goes up the west flank. The 1400 to 1500 m band averages 11.9 degrees over 499 metres of ground, the steepest on the tour. The final 500 metres run on a bearing of 78 degrees and rise 115 metres to the summit at 1506 m. ut.no publishes 1507; DTM1 gives 1506.49 at the registered point, and half a metre is not a disagreement worth the name."
@@ -5465,6 +5481,9 @@
    "https://ut.no/turforslag/1110654/sbyggjenuten-srlandets-hyeste-punkt",
    "https://19topper.blog/2020/02/28/aust-agder-saebyggjenuten/",
    "https://www.openstreetmap.org/node/4991831285"
+  ],
+  "problems": [
+   "TREELINE ROUND: the guide said how high the forest goes on this line «is not measured point by point»; it is now: guide_facts' vertex scan reads 1044 m and check_treeline.py 1048 m at 5 m spacing."
   ]
  },
  "nibbi": {
