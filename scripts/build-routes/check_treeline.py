@@ -51,10 +51,14 @@ WORKERS = 16
 CACHE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "cache", "treeline_dense.json")
 
 FOREST_WORD = re.compile(
-    r"(skog\w*|tregrens\w*|lauvskog\w*|bjørkeskog\w*|forest|treeline|tree line|birch)",
+    r"(skoggrens\w*|tregrens\w*|skogen|skog\b|forest|treeline|tree line)",
     re.I,
 )
-NUM_M = re.compile(r"(\d{2,4})\s*(?:moh|m\b)")
+# The height a guide gives for the treeline is the first number after the word,
+# before the clause moves on: «skoggrensa ligger på 359 etter 1,04 km», «the
+# forest holds to 798 m». A number followed by a distance or an angle unit is
+# not it.
+STATED = re.compile(r"\D{0,30}?(?<![\d,.])(\d{2,4})(?![\d,.]\d)(?!\s*(?:km|grader|degrees|°|meter grunn|metres of ground|%))")
 
 
 def load_cache():
@@ -132,14 +136,14 @@ def scan(rows):
 
 
 def stated(text):
-    """Heights the guide puts within a sentence of a word for forest or treeline."""
+    """The heights a guide gives as its treeline: the first number after each forest word."""
     out = set()
-    for sent in re.split(r"(?<=[.!?])\s+", text):
-        if FOREST_WORD.search(sent):
-            for m in NUM_M.finditer(sent):
-                v = int(m.group(1))
-                if 0 < v < 1400:
-                    out.add(v)
+    for m in FOREST_WORD.finditer(text):
+        got = STATED.match(text, m.end())
+        if got:
+            v = int(got.group(1))
+            if 0 < v < 1400:
+                out.add(v)
     return out
 
 
