@@ -6053,9 +6053,11 @@ top. The guide is rewritten around the new summit in both languages, and
 `check_guides.py` over all 185 guides, on a `guide_facts.json` rebuilt from scratch, reported two
 figures on lines this round did not touch. Hornindalsrokken's guide said the forest holds to
 673 m; DTM1 classes every vertex from 655 to 798 m as `Skog` and the first open one at 810, so
-the prose now says 798 in both languages. Vassdalstinden's scan reads 637 m, but that is one
-isolated `Skog` vertex above 50 m of open ground — the belt ends at 581, as the guide says, and
-the reading is recorded in the guide's `problems` rather than written into the prose.
+the prose now says 798 in both languages. Vassdalstinden's scan reads 637 m. That was first
+dismissed as an isolated `Skog` vertex; a re-check proved it is not. Read every 5 m, the line
+leaves the forest at 581 m, crosses 95 m of open ground, and clips the corner of a 258-cell
+forest stand at 636–638 m that lies beside it and reaches 698 m further east. The line's
+treeline is 637 m, the caption now says so, and the ascent describes the gap and the stand.
 
 ### What ran
 
