@@ -4384,7 +4384,7 @@ export const GUIDES: Record<string, TourGuide> = {
       "1210 høgdemeter frå 92 moh i Nupen, gjennom Bukkedalen og opp ein lang flanke som held 27,8 grader i snitt dei siste hundre. Brattaste samanhengande parti måler 41,3 grader og ligg heilt oppe, mellom 1247 og 1278 moh.",
     ascent: [
       "Start ved bilparkeringa etter bommen i Nupen, 92 moh. Fri Flyt oppgjev «3 timar frå Vallasætra» og «4 timar frå Nupen», og skilnaden er reell: sætra ligg på 324 moh, og den vidare vegen dit er bomveg som berre gjeld «viss vegen er open».",
-      "Følg Engesetvegen oppover og austover til Vallasætra. Dei fyrste 766 metrane grunn er flate — 0,7 grader — og så tek vegen til: 5,3 grader frå 100 til 200 moh, 9,2 frå 200 til 300 og eit brattare parti på 19,9 og 21,8 grader mellom 400 og 600 moh. Skogen held til 581 moh.",
+      "Følg Engesetvegen oppover og austover til Vallasætra. Dei fyrste 766 metrane grunn er flate — 0,7 grader — og så tek vegen til: 5,3 grader frå 100 til 200 moh, 9,2 frå 200 til 300 og eit brattare parti på 19,9 og 21,8 grader mellom 400 og 600 moh. Skogen held til 581 moh langs linja. Derfrå går ho i ope terreng langs kanten av eit skogholt som ho streifar på 637 moh, og frå 640 moh er det ope for godt.",
       "Frå setra går ein nokre hundre meter inn Langedalen og deretter bratt opp kneiken til Bukkedalen, 791 moh — eventuelt med skia på sekken. Bandet frå 700 til 800 moh er slakt, 8,9 grader over 632 meter grunn, og gjev deg pusterommet før flanken.",
       "Følg dalbotnen innover til 960 moh, der den bratte, lange flanken tek til. Herifrå stig linja jamt og hardt: 19,5 grader frå 1000 til 1100 moh, 22,5 frå 1100 til 1200 og 24,4 frå 1200 til 1300, med brattaste samanhengande parti på 41,3 grader mellom 1247 og 1278 moh — sjølve toppsteget. Toppen står på 1278. Like før flanken tek til går linja 97 meter over eit tjern på 946 moh, opptil 40 meter frå land. Det er naturleg og uregulert, og utan namn i registeret.",
     ],
@@ -4411,7 +4411,7 @@ export const GUIDES: Record<string, TourGuide> = {
       startLabel: "92 moh",
       endLabel: "1278 moh",
       distanceLabel: "6,5 km",
-      caption: "1210 høgdemeter og 6,50 km frå Nupen over Vallasætra og Bukkedalen, med skoggrensa på 581 moh og flanken frå dalbotnen på 960 moh til toppen.",
+      caption: "1210 høgdemeter og 6,50 km frå Nupen over Vallasætra og Bukkedalen, med skoggrensa på 637 moh og flanken frå dalbotnen på 960 moh til toppen.",
     },
   },
   saudehornet: {

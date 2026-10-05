@@ -3644,10 +3644,10 @@
  "vassdalstinden": {
   "no": {
    "intro": "1210 høgdemeter frå 92 moh i Nupen, gjennom Bukkedalen og opp ein lang flanke som held 27,8 grader i snitt dei siste hundre. Brattaste samanhengande parti måler 41,3 grader og ligg heilt oppe, mellom 1247 og 1278 moh.",
-   "caption": "1210 høgdemeter og 6,50 km frå Nupen over Vallasætra og Bukkedalen, med skoggrensa på 581 moh og flanken frå dalbotnen på 960 moh til toppen.",
+   "caption": "1210 høgdemeter og 6,50 km frå Nupen over Vallasætra og Bukkedalen, med skoggrensa på 637 moh og flanken frå dalbotnen på 960 moh til toppen.",
    "ascent": [
     "Start ved bilparkeringa etter bommen i Nupen, 92 moh. Fri Flyt oppgjev «3 timar frå Vallasætra» og «4 timar frå Nupen», og skilnaden er reell: sætra ligg på 324 moh, og den vidare vegen dit er bomveg som berre gjeld «viss vegen er open».",
-    "Følg Engesetvegen oppover og austover til Vallasætra. Dei fyrste 766 metrane grunn er flate — 0,7 grader — og så tek vegen til: 5,3 grader frå 100 til 200 moh, 9,2 frå 200 til 300 og eit brattare parti på 19,9 og 21,8 grader mellom 400 og 600 moh. Skogen held til 581 moh.",
+    "Følg Engesetvegen oppover og austover til Vallasætra. Dei fyrste 766 metrane grunn er flate — 0,7 grader — og så tek vegen til: 5,3 grader frå 100 til 200 moh, 9,2 frå 200 til 300 og eit brattare parti på 19,9 og 21,8 grader mellom 400 og 600 moh. Skogen held til 581 moh langs linja. Derfrå går ho i ope terreng langs kanten av eit skogholt som ho streifar på 637 moh, og frå 640 moh er det ope for godt.",
     "Frå setra går ein nokre hundre meter inn Langedalen og deretter bratt opp kneiken til Bukkedalen, 791 moh — eventuelt med skia på sekken. Bandet frå 700 til 800 moh er slakt, 8,9 grader over 632 meter grunn, og gjev deg pusterommet før flanken.",
     "Følg dalbotnen innover til 960 moh, der den bratte, lange flanken tek til. Herifrå stig linja jamt og hardt: 19,5 grader frå 1000 til 1100 moh, 22,5 frå 1100 til 1200 og 24,4 frå 1200 til 1300, med brattaste samanhengande parti på 41,3 grader mellom 1247 og 1278 moh — sjølve toppsteget. Toppen står på 1278. Like før flanken tek til går linja 97 meter over eit tjern på 946 moh, opptil 40 meter frå land. Det er naturleg og uregulert, og utan namn i registeret."
    ],
@@ -3672,10 +3672,10 @@
   },
   "en": {
    "intro": "1210 metres of climbing from 92 m at Nupen, through Bukkedalen and up a long flank that averages 27.8 degrees over the last hundred. The steepest sustained section measures 41.3 degrees and sits right at the top, between 1247 and 1278 m.",
-   "caption": "1210 metres of climbing and 6.50 km from Nupen over Vallasætra and Bukkedalen, with the treeline at 581 m and the flank from the valley floor at 960 m to the summit.",
+   "caption": "1210 metres of climbing and 6.50 km from Nupen over Vallasætra and Bukkedalen, with the treeline at 637 m and the flank from the valley floor at 960 m to the summit.",
    "ascent": [
     "Start at the parking beyond the gate at Nupen, 92 m. Fri Flyt gives «3 hours from Vallasætra» and «4 hours from Nupen», and the difference is real: the seter sits at 324 m, and the road on to it is a toll road that only applies «if the road is open».",
-    "Follow Engesetvegen up and east to Vallasætra. The first 766 metres of ground are flat — 0.7 degrees — and then the road gets to work: 5.3 degrees from 100 to 200 m, 9.2 from 200 to 300 and a steeper stretch at 19.9 and 21.8 degrees between 400 and 600 m. The forest holds to 581 m.",
+    "Follow Engesetvegen up and east to Vallasætra. The first 766 metres of ground are flat — 0.7 degrees — and then the road gets to work: 5.3 degrees from 100 to 200 m, 9.2 from 200 to 300 and a steeper stretch at 19.9 and 21.8 degrees between 400 and 600 m. The forest holds to 581 m along the line. From there it runs in open ground along the edge of a stand of trees that it clips at 637 m, and from 640 m it is open for good.",
     "From the seter you go a few hundred metres into Langedalen and then steeply up the step into Bukkedalen, 791 m — with the skis on the pack if need be. The band from 700 to 800 m is gentle, 8.9 degrees over 632 metres of ground, and gives you the breather before the flank.",
     "Follow the valley floor in to 960 m, where the long steep flank begins. From here the line climbs evenly and hard: 19.5 degrees from 1000 to 1100 m, 22.5 from 1100 to 1200 and 24.4 from 1200 to 1300, with the steepest sustained section at 41.3 degrees between 1247 and 1278 m — the summit step itself. The summit stands at 1278. Just before the flank begins the line runs 97 metres across a tarn at 946 m, up to 40 metres from shore. It is natural and unregulated, and unnamed in the register."
    ],
@@ -3705,7 +3705,8 @@
   "problems": [
    "SHAPE ROUND: two leftover vertices inside 30 m of the cairn (1248, 1246 m) dropped; the last leg is 34 m at 41 deg from the south-east (DTM1 1258/1261/1269/1275 along it), which is the summit block. Steepest 30 m window 36.2 (1205-1238) -> 41.3 (1247-1278), band 1200-1300 23.6 -> 27.8; gain 1212 -> 1210, distance 6.50 -> 6.47 km; card 1210 unchanged.",
    "SHAPE ROUND (mid-route notches): vertices the coarse solve put on a boulder, a bank or the lip of a step were moved 5-20 m onto ground that reads like their neighbours, and same-height loops of 60-230 m the check had read as spikes were cut; figures re-derived from the line as it now is.",
-   "REVIEW ROUND: line unchanged. The rebuilt treeline scan reads 637 m, but that is one isolated Skog vertex above 50 m of open ground (DTM1: Skog 569/573/581, then ÅpentOmråde 590–630, Skog 637, ÅpentOmråde 640+). The forest belt ends at 581 m, as the guide says; the prose stands."
+   "REVIEW ROUND: line unchanged. The rebuilt treeline scan reads 637 m, but that is one isolated Skog vertex above 50 m of open ground (DTM1: Skog 569/573/581, then ÅpentOmråde 590–630, Skog 637, ÅpentOmråde 640+). The forest belt ends at 581 m, as the guide says; the prose stands.",
+   "TREELINE RE-CHECK: the review round's note above called the 637 m reading «one isolated Skog vertex» — wrong. DTM1 every 5 m along the line: Skog to 581 m (3960 m out), ÅpentOmråde 585–631 m for 95 m, Skog 636–638 m for 16 m (4062–4073 m out), ÅpentOmråde from 640 m. A 20 m grid over 600 m around the 637 m point shows it is the corner of a forest stand of 258 Skog cells that lies beside the line and reaches 698 m further east. The line's treeline is 637 m, as guide_facts says; the caption now says so, and the ascent describes the gap and the stand."
   ]
  },
  "sunndalsnipa": {
