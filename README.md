@@ -26,7 +26,8 @@ Norwegian; this README and the rest of `docs/` are in English for whoever mainta
   so «© Kartverket» stays visible in the corner. Coverage is Norway and only Norway, which is
   right for the product and means the map is blank if you pan out of the country.
 - **Varsom and MET Norway** — today's avalanche danger (`lib/avalanche.ts`) and a three-day
-  forecast for the summit (`lib/weather.ts`, Locationforecast 2.0) in the tour panel on `/kart`.
+  forecast for the summit (`lib/weather.ts`, Locationforecast 2.0). The danger level is in the tour
+  panel on `/kart`; the forecast (`components/weather/WeatherPanel.tsx`) is there and on the guide.
   Both are open to everyone and fetched through our own routes (`/api/skredvarsel`,
   `/api/vaer`), which take a slug rather than a coordinate so the site is not an open proxy.
   Neither needs a key. MET requires an identifying `User-Agent` and at most four decimals, and
@@ -157,7 +158,7 @@ docs/
 | `/` | Landing page: hero, data plate, what a guide contains, subscription | `Landing.dc.html` |
 | `/kart` | The map — tour list, grade/region/aspect/vertical filters, «Nær meg» (the reader's position on the map and the list sorted by distance, never sent to the server), detail panel with avalanche danger, the summit forecast, the route picker and the locked block. `?tur=<slug>` opens a tour, `&rute=<id>` a specific route | `kart.html` |
 | `/turer` | Every tour, grouped by region. Plain links, no map — the page a crawler can read | — |
-| `/tur/[slug]` | Tour guide: stats, route map, elevation profile, ascent/descent, avalanche terrain | `Turguide Kirketaket.dc.html` |
+| `/tur/[slug]` | Tour guide: stats, summit forecast, route map, elevation profile, ascent/descent, avalanche terrain | `Turguide Kirketaket.dc.html` |
 | `/logg-inn` | Sign in with Google | `Logg inn.dc.html` |
 | `/betaling` | Start the trial — sign-in first, then 0 kr today, card required | `Betaling.dc.html` |
 | `/min-side` | Subscription status, receipts, account e-mail | `Min side.dc.html` |

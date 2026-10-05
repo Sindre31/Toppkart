@@ -12,6 +12,7 @@ import { GuidePreview, GuideSections } from "@/components/guide/GuideSections";
 import { LockedGuide } from "@/components/guide/LockedGuide";
 import { OfflineSave } from "@/components/guide/OfflineSave";
 import { RouteMap } from "@/components/guide/RouteMap";
+import { WeatherPanel } from "@/components/weather/WeatherPanel";
 import { getViewer } from "@/lib/access";
 import { SITE } from "@/lib/config";
 import { guideSlugs } from "@/lib/guides";
@@ -277,6 +278,21 @@ export default async function TourGuidePage({ params }: { params: Promise<{ slug
                 </div>
               ))}
             </div>
+          </Blueprint>
+        </section>
+
+        {/* Været på toppen, rett under nøkkeltallene: det er det neste man
+            spør om etter «hvor høyt og hvor langt» — og det avgjør om turen
+            blir i dag. Åpent for alle, som på kartet. */}
+        <section style={{ padding: "0 0 40px" }}>
+          <Blueprint style={{ padding: "18px 20px" }}>
+            <WeatherPanel
+              slug={tour.slug}
+              lat={tour.lat}
+              lng={tour.lng}
+              lang={lang}
+              heading="h2"
+            />
           </Blueprint>
         </section>
 
