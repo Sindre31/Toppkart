@@ -14,6 +14,8 @@ import { DeleteAccountCard } from "./DeleteAccountCard";
 import { EmailCard } from "./EmailCard";
 import { SignOutCard } from "./SignOutCard";
 import { SubscriptionActions } from "./SubscriptionActions";
+import { MyTours } from "./MyTours";
+import { getMarks } from "@/lib/marks";
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = accountDict(await getLang());
@@ -162,7 +164,12 @@ export default async function MinSidePage() {
     { l: t.rowMemberSince, v: dateLabel(sub?.memberSince, lang) ?? "—" },
   ];
 
-  const invoices = await getInvoices(viewer, lang);
+  /* Hentes side om side med kvitteringene. En liste som ikke kan hentes, gir
+     en setning om det i «Mine turer», ikke en side som ikke rendres. */
+  const [invoices, marks] = await Promise.all([
+    getInvoices(viewer, lang),
+    getMarks(viewer).catch(() => null),
+  ]);
 
   return (
     <div className="shell">
@@ -299,6 +306,8 @@ export default async function MinSidePage() {
             <p style={{ fontSize: 14, color: MUTED_60, margin: 0 }}>{t.receiptsEmpty}</p>
           )}
         </section>
+
+        <MyTours marks={marks} lang={lang} />
 
         <section style={{ padding: "0 0 48px" }}>
           <SectionKicker>{t.kickerAccount}</SectionKicker>

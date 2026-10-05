@@ -2,8 +2,8 @@ import { cookies } from "next/headers";
 import { DEMO_COOKIE, TRIAL_DAYS } from "@/lib/config";
 import type { Invoice, Subscription, SubscriptionStatus } from "@/lib/types";
 
-/** Demo mode: everything Supabase and Stripe would own, kept in two httpOnly
- *  cookies so the flow is walkable without keys. Live mode never reads these.
+/** Demo mode: everything Supabase and Stripe would own, kept in httpOnly
+ *  cookies (session, subscription, tour marks) so the flow is walkable without keys. Live mode never reads these.
  *  Nothing here is a security boundary — demo mode gates sample content only. */
 
 interface DemoSub {
@@ -31,6 +31,7 @@ export async function clearDemoSession() {
   const jar = await cookies();
   jar.delete(DEMO_COOKIE.session);
   jar.delete(DEMO_COOKIE.subscription);
+  jar.delete(DEMO_COOKIE.marks);
 }
 
 export async function getDemoSubscription(): Promise<Subscription | null> {

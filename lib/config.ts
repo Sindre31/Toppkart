@@ -105,4 +105,8 @@ export const isStripeConfigured = Boolean(env.stripeSecretKey);
 export const isResendConfigured = Boolean(env.resendApiKey);
 
 /** Cookie names used by demo mode. */
-export const DEMO_COOKIE = { session: "tk_demo_session", subscription: "tk_demo_sub" } as const;
+export const DEMO_COOKIE = {
+  session: "tk_demo_session",
+  subscription: "tk_demo_sub",
+  marks: "tk_demo_marks",
+} as const;

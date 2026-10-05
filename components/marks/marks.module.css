@@ -1,0 +1,22 @@
+/* Knappene for favoritt og gått. Vanlige `.btn-secondary`; trykket inn er de
+   aksentfargen med lys skrift, samme språk som `.seg-opt` når den er valgt. */
+
+.row {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.btn[aria-pressed="true"] {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+  color: var(--color-bg);
+}
+.btn[aria-pressed="true"]:hover {
+  background: var(--color-accent-600);
+}
+.error {
+  flex-basis: 100%;
+  margin: 4px 0 0;
+  font-size: 13px;
+  color: #b42318;
+}

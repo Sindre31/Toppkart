@@ -193,6 +193,37 @@ comment on table public.tk_feedback is
   'Messages from the «Gi tilbakemelding» button. Written only by the service role (app/api/tilbakemelding); nobody reads it through the API — query it in the SQL editor.';
 
 -- ----------------------------------------------------------------------------
+-- tour_marks — the reader's favourites and the tours they have done.
+--
+-- One row per reader and tour. `favorite` and `done_on` live on the same row
+-- because a reader marks a tour, not a list: the star and the tick on a guide
+-- are two facts about the same peak. A row with neither is deleted by the app
+-- rather than kept as a row that says nothing (`lib/tour-marks.ts`), and the
+-- check below makes such a row impossible to write.
+--
+-- `slug` is not a foreign key to `tk_tours`: the app's tour list lives in
+-- `lib/tours.ts`, and the route (`app/api/turmerker`) only accepts slugs from
+-- it. A mark for a tour that is later removed lingers harmlessly and is not
+-- counted.
+--
+-- Written through the reader's own session, not the service role, so the RLS
+-- policies in section 5 are the boundary. `user_id` cascades on account
+-- deletion: a reader who asks to be forgotten takes their list with them.
+-- ----------------------------------------------------------------------------
+create table if not exists public.tk_tour_marks (
+  user_id    uuid not null references auth.users (id) on delete cascade,
+  slug       text not null check (slug ~ '^[a-z0-9-]{1,80}$'),
+  favorite   boolean not null default false,
+  done_on    date,
+  updated_at timestamptz not null default now(),
+  primary key (user_id, slug),
+  constraint tk_tour_marks_not_empty check (favorite or done_on is not null)
+);
+
+comment on table public.tk_tour_marks is
+  'A reader''s favourite tours and the tours they have done. Written through the reader''s own session (app/api/turmerker); RLS pins every row to auth.uid().';
+
+-- ----------------------------------------------------------------------------
 -- Rate limit counters.
 --
 -- What it protects: `tk_feedback`, which is written by an endpoint that does not
@@ -387,6 +418,7 @@ alter table public.tk_subscriptions enable row level security;
 alter table public.tk_invoices      enable row level security;
 alter table public.tk_feedback      enable row level security;
 alter table public.tk_rate_limit    enable row level security;
+alter table public.tk_tour_marks    enable row level security;
 
 -- ---------------------------------------------------------------- tours -----
 
@@ -457,6 +489,47 @@ create policy "tk_profiles: update own row"
 -- not be sitting there waiting for a policy edit to go wrong.
 revoke insert, update, delete, truncate on public.tk_profiles from anon;
 revoke delete, truncate on public.tk_profiles from authenticated;
+
+-- ----------------------------------------------------------- tour_marks -----
+
+-- Protects: what other readers have marked. A reader may read, add, change
+-- and remove their own marks and nobody else's. user_id is pinned in both
+-- USING and WITH CHECK so a row can never be moved to someone else.
+drop policy if exists "tk_tour_marks: read own rows" on public.tk_tour_marks;
+create policy "tk_tour_marks: read own rows"
+  on public.tk_tour_marks
+  for select
+  to authenticated
+  using (auth.uid() = user_id);
+
+drop policy if exists "tk_tour_marks: insert own rows" on public.tk_tour_marks;
+create policy "tk_tour_marks: insert own rows"
+  on public.tk_tour_marks
+  for insert
+  to authenticated
+  with check (auth.uid() = user_id);
+
+drop policy if exists "tk_tour_marks: update own rows" on public.tk_tour_marks;
+create policy "tk_tour_marks: update own rows"
+  on public.tk_tour_marks
+  for update
+  to authenticated
+  using (auth.uid() = user_id)
+  with check (auth.uid() = user_id);
+
+drop policy if exists "tk_tour_marks: delete own rows" on public.tk_tour_marks;
+create policy "tk_tour_marks: delete own rows"
+  on public.tk_tour_marks
+  for delete
+  to authenticated
+  using (auth.uid() = user_id);
+
+-- A signed-out caller has nothing to mark. RLS already refuses `anon` (no
+-- policy names it), but the grant should not be sitting there. `truncate`
+-- ignores RLS entirely, so nobody outside the service role keeps it.
+revoke all on public.tk_tour_marks from anon;
+revoke truncate on public.tk_tour_marks from authenticated;
+grant select, insert, update, delete on public.tk_tour_marks to authenticated;
 
 -- -------------------------------------------------------- subscriptions -----
 
