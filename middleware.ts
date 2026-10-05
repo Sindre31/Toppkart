@@ -2,6 +2,10 @@ import { createServerClient } from "@supabase/ssr";
 import { NextResponse, type NextRequest } from "next/server";
 import { env, isSupabaseConfigured } from "@/lib/config";
 import { LANG_COOKIE, LANG_COOKIE_MAX_AGE, LANG_PARAM, isLang } from "@/lib/i18n";
+import { isUnknownTour, parseTourSlugs } from "@/lib/tour-paths";
+
+/** Bygd inn ved bygging fra `next.config.ts` (`env`). */
+const TOUR_SLUGS = parseTourSlugs(process.env.TOUR_SLUGS);
 
 /** Promotes `?lang=` into the `tk_lang` cookie and redirects to the same URL
  *  without the parameter. This is what the language switcher links hit: the
@@ -75,9 +79,29 @@ function strayAuthCode(request: NextRequest): NextResponse | null {
  *  skrive informasjonskapsler, så et token som fornyes der blir aldri lagret.
  *  `getClaims()` fornyer selv når tokenet nærmer seg utløp, og `setAll` under
  *  fanger det opp. */
+/** `/tur/<slug>` for en tur som ikke finnes: et ekte 404.
+ *
+ *  Sida selv kan ikke gi det. `/tur/[slug]` ligger under rot-`loading.tsx`, så
+ *  svaret strømmes, og statuslinja er sendt med `200` før sida har slått opp
+ *  slug-en — `notFound()` bytter bare ut kroppen. Det gjelder `generateMetadata`
+ *  også, i Next 16 (se `docs/seo.md`). Her er ingenting sendt ennå.
+ *
+ *  Omskrivingen går til en adresse ingen rute svarer på. Den får Nexts vanlige
+ *  404-behandling — `app/not-found.tsx` og status 404 — mens adresselinja
+ *  beholder det leseren skrev. */
+function unknownTour(request: NextRequest): NextResponse | null {
+  if (!isUnknownTour(request.nextUrl.pathname, TOUR_SLUGS)) return null;
+  const url = request.nextUrl.clone();
+  url.pathname = "/_tur-finnes-ikke";
+  return NextResponse.rewrite(url);
+}
+
 export async function middleware(request: NextRequest) {
   const strayCode = strayAuthCode(request);
   if (strayCode) return strayCode;
+
+  const missing = unknownTour(request);
+  if (missing) return missing;
 
   const langResponse = languageRedirect(request);
   if (langResponse) return langResponse;

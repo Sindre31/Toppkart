@@ -6,6 +6,7 @@ import { isSupabaseConfigured } from "@/lib/config";
 import { clearDemoSession } from "@/lib/demo-session";
 import { getStripe } from "@/lib/stripe";
 import { getSupabaseAdminClient, getSupabaseServerClient } from "@/lib/supabase/server";
+import { CLEAR_OFFLINE_HEADERS } from "@/lib/offline/clear";
 
 /** DELETE /api/konto — sletter kontoen.
  *
@@ -41,7 +42,7 @@ export async function DELETE() {
      de blir borte. */
   if (!isSupabaseConfigured) {
     await clearDemoSession();
-    return NextResponse.json({ ok: true });
+    return NextResponse.json({ ok: true }, { headers: CLEAR_OFFLINE_HEADERS });
   }
 
   const admin = getSupabaseAdminClient();
@@ -116,5 +117,5 @@ export async function DELETE() {
   const supabase = await getSupabaseServerClient();
   if (supabase) await supabase.auth.signOut();
 
-  return NextResponse.json({ ok: true });
+  return NextResponse.json({ ok: true }, { headers: CLEAR_OFFLINE_HEADERS });
 }

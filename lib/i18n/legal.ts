@@ -28,7 +28,7 @@ import { pick } from "./index";
 
 /** Date the wording last changed. Bump it whenever you edit a paragraph — both
  *  pages print it, and a stale date on a changed policy is worse than none. */
-export const LEGAL_UPDATED = "2026-08-12";
+export const LEGAL_UPDATED = "2026-10-05";
 
 export interface LegalSection {
   /** Rendered through `SectionKicker`, numbered by the page. */
@@ -169,7 +169,8 @@ const LEGAL_TEXT: Translated<LegalDict> = {
             "Om betalingskortet lagrer vi korttype, de fire siste sifrene og utløpsmåned — nok til at du kjenner igjen kortet på Min side. Vi ser aldri det fulle kortnummeret. Kortet oppgis på Stripes egne sider, og opplysningene passerer aldri gjennom Toppkart.",
             "Kvitteringer: beløp, valuta, status og lenke til fakturaen hos Stripe, speilet hos oss så Min side kan vise historikken.",
             "Skriver du i tilbakemeldingsboksen: teksten du sendte, hvilken side du sto på, og adressa di dersom du var innlogget. Sammen med den lagrer vi en teller for å hindre at noen sender tusen meldinger på rad. Telleren står på en kryptografisk omskriving av IP-adressen din — en enveisverdi vi ikke kan regne tilbake til en adresse — og den slettes etter et døgn. Selve IP-adressen lagres ikke.",
-            "Vi lagrer ingen opplysninger om hvilke turer du ser på, og ingen posisjonsdata. Appen ber aldri om posisjonen din.",
+            "Vi lagrer ingen opplysninger om hvilke turer du ser på, og ingen posisjonsdata. Trykker du «Nær meg» eller posisjonsknappen på kartet, spør nettleseren deg om lov til å dele posisjonen. Den brukes bare i nettleseren din — til å vise hvor du står og sortere turene etter avstand — og sendes aldri til oss. Uten det trykket ber appen aldri om posisjonen din.",
+            "Trykker du «Lagre offline» på en turguide, lagres guiden, kartbildene langs ruta og GPX-fila i nettleseren på enheten din, så de virker uten dekning. Kopien ligger hos deg og ikke hos oss. Du fjerner den med «Fjern» på guiden, og den slettes når du logger ut eller sletter kontoen.",
           ],
         },
         {
@@ -335,7 +336,8 @@ const LEGAL_TEXT: Translated<LegalDict> = {
             "About the payment card we store the card type, the last four digits and the expiry month — enough for you to recognise the card on My account. We never see the full card number. The card is entered on Stripe's own pages and the details never pass through Toppkart.",
             "Receipts: amount, currency, status and a link to the invoice at Stripe, mirrored on our side so My account can show the history.",
             "If you write in the feedback box: the text you sent, the page you were on, and your address if you were signed in. Alongside it we keep a counter, so that nobody can send a thousand messages in a row. The counter is kept against a cryptographic rewriting of your IP address — a one-way value we cannot turn back into an address — and it is deleted after a day. The IP address itself is not stored.",
-            "We store nothing about which tours you look at, and no location data. The app never asks for your position.",
+            "We store nothing about which tours you look at, and no location data. If you press «Near me» or the location button on the map, your browser asks your permission to share your position. It is used only in your browser — to show where you are and sort the tours by distance — and is never sent to us. Without that press the app never asks for your position.",
+            "If you press «Save offline» on a guide, the guide, the map images along the route and the GPX file are stored in the browser on your device, so they work without coverage. The copy is kept by you, not by us. You remove it with «Remove» on the guide, and it is deleted when you sign out or delete your account.",
           ],
         },
         {

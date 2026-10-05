@@ -10,6 +10,7 @@ import { SiteNav, SiteFooter } from "@/components/SiteChrome";
 import { ElevationProfile } from "@/components/guide/ElevationProfile";
 import { GuidePreview, GuideSections } from "@/components/guide/GuideSections";
 import { LockedGuide } from "@/components/guide/LockedGuide";
+import { OfflineSave } from "@/components/guide/OfflineSave";
 import { RouteMap } from "@/components/guide/RouteMap";
 import { getViewer } from "@/lib/access";
 import { SITE } from "@/lib/config";
@@ -21,7 +22,7 @@ import { commonDict } from "@/lib/i18n/common";
 import { getLocalizedGuide, localizeTour, localizeTours, teaserFor } from "@/lib/i18n/content";
 import { elevationLabel, gradeLabel } from "@/lib/i18n/format";
 import { guideDict } from "@/lib/i18n/guide";
-import { getTour, regionAnchor, routeProfile, toursInRegion } from "@/lib/tours";
+import { getTour, regionAnchor, routeProfile, routesFor, toursInRegion } from "@/lib/tours";
 import styles from "./guide.module.css";
 
 /** Turguiden. Kart, nøkkeltall og høydeprofil er åpne for alle; rute-
@@ -61,14 +62,15 @@ export async function generateMetadata({
    *  sidekomponenten har rukket å slå opp slug-en, og kastet kan bare bytte
    *  ut innholdet, ikke koden som allerede er ute.
    *
-   *  `generateMetadata` kjører før strømmen åpnes, fordi `<head>` må være
-   *  ferdig før den første byten kan sendes. Kaster vi her, er ingenting
-   *  sendt ennå, og Next svarer 404 med `app/not-found.tsx` i kroppen.
+   *  Her i `generateMetadata` var rettelsen en stund ment å sitte, ut fra at
+   *  `<head>` må være ferdig før den første byten. Det holdt ikke: med Next
+   *  16.3 svarte også dette `200`, for alle brukeragenter, Bingbot og
+   *  Googlebot med. Statusen settes nå i middleware, før noe rendres — se
+   *  `unknownTour()` i `middleware.ts` og `docs/seo.md`.
    *
-   *  Alternativet var å fjerne `app/loading.tsx`. Det virker også, og koster
-   *  prefetch på hver eneste dynamiske rute — se fila for hva det gjorde med
-   *  navigasjonen. `dynamicParams = false` virker ikke: ingen av sidene
-   *  prerendres (de leser cookies), så Next går til rendring uansett. */
+   *  Kallet står likevel. Det er det som gir riktig *innhold* — 404-sida og
+   *  ikke en tittel å rendre videre med — og det er det som slår inn hvis
+   *  slug-lista til middleware av en eller annen grunn er tom. */
   if (!tour) notFound();
 
   // Peak and region are proper nouns — the title is identical in both.
@@ -93,6 +95,18 @@ export async function generateMetadata({
       images: [{ ...OG_IMAGE, alt: title }],
     },
   };
+}
+
+/** Alle rutene opp som `[lat, lng]`-par, til flisene «Lagre offline» henter.
+ *  Fire desimaler er ~10 m, langt under en flis på det tetteste nivået, og
+ *  holder det som sendes med sida til noen få kilobyte. */
+function offlineLines(tour: NonNullable<ReturnType<typeof getTour>>): [number, number][][] {
+  const round = (v: number) => Math.round(v * 1e4) / 1e4;
+  return routesFor(tour).map((r) => {
+    const pts: [number, number][] = [];
+    for (let i = 0; i < r.line.length; i += 3) pts.push([round(r.line[i]), round(r.line[i + 1])]);
+    return pts;
+  });
 }
 
 export default async function TourGuidePage({ params }: { params: Promise<{ slug: string }> }) {
@@ -142,7 +156,13 @@ export default async function TourGuidePage({ params }: { params: Promise<{ slug
 
       <SiteNav lang={lang} />
 
-      <main className="page page-narrow" style={{ paddingBottom: 64 }}>
+      {/* `data-access` er det «Lagre offline» sjekker i sida den henter: den
+          svarer 200 også når økta har gått ut, og da med den låste guiden. */}
+      <main
+        className="page page-narrow"
+        style={{ paddingBottom: 64 }}
+        data-access={hasAccess ? "open" : "locked"}
+      >
         <header style={{ padding: "48px 0 32px" }}>
           <Link href={mapHref} style={{ fontSize: 13, textDecoration: "none" }}>
             {t.backToMap}
@@ -217,6 +237,15 @@ export default async function TourGuidePage({ params }: { params: Promise<{ slug
             <Link className="btn btn-secondary" href={mapHref}>
               {t.openInMap}
             </Link>
+            {hasAccess && route ? (
+              <OfflineSave
+                slug={tour.slug}
+                name={tour.name}
+                region={tour.region}
+                lines={offlineLines(source)}
+                lang={lang}
+              />
+            ) : null}
           </div>
         </header>
 
