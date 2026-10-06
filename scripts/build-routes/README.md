@@ -6196,6 +6196,39 @@ definition every card in the catalogue uses, and replacing it on eleven
 routes would make those eleven the only ones measured differently. The
 numbers were left as they are.
 
+## The steepness round
+
+Every guide gives the line's steepest sustained gradient — «brattaste
+samanhengande parti 29,4 grader mellom 1411 og 1428 moh» — and that figure is
+`router.steepest_span`, the steepest 30 m of ground, over the line's vertices.
+A step shorter than the vertex spacing can sit between two of them and never
+be measured, and on an avalanche product the steepest figure is the one that
+must not be understated.
+
+`check_steepness.py` runs the same `steepest_span` over the 5 m profiles
+`check_gain.py` caches — no network, a second for the catalogue — and lists the
+routes where the 5 m window is more than 5° steeper than the vertex one. There
+were 33, by 5 to 17°: Møysalen's notch 45.9 → 62.9, Lodalskåpa 31.1 → 46.4,
+Kvamshesten 22.7 → 36.2, Rondslottet's Bjørnhollia line 33.7 → 45.8,
+Eidskyrkja 22.9 → 33.6, Gygrastølen 25.4 → 36.0, Fanaråken 27.1 → 36.8,
+Vassdalstinden 41.3 → 50.6, and 25 more between 5 and 9°.
+
+Unlike the vertical, this was corrected rather than documented: the ascent a
+skier makes is closer to the vertex sum, but the steepest ground the drawn
+line crosses is what a reader needs to know is there. `reground_steepness.py`
+puts the 5 m window into every sentence that quoted the vertex one, in both
+languages, and records both in each guide's `problems`. On sixteen routes it
+is the same step, steeper; on seventeen the steepest ground is somewhere else,
+and 38 hand edits move the words with it — Stortussen's steepest step is a
+drop into a notch, not the ridge rearing up; Vassdalstinden's is the flank
+under the summit, not the summit step; Kjerag's is the climb onto the plateau,
+not «a road bend at 673 m», and its 60, 100 and 400 m figures were re-read too.
+Slogen's guide already gives a steeper summit-block figure (46.9°) than either
+measurement, and Bitihorn's gives none for the Båtskaret line; both stand.
+
+`check_steepness.py` compares the two measurements, not the prose, so it keeps
+listing these 33: they are the routes whose guides now quote the 5 m window.
+
 ## Network
 
 Everything is public and unauthenticated:

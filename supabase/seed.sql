@@ -367,18 +367,18 @@ where slug = 'rodtinden';
 update public.tk_tours set
   description_up   = 'Fra fv. 91 i området der den krysser Storelva — 41 moh på Breivikeidvegen, og 1089 minus 41 forliker kildens 1050 høydemeter. Du går mot Russevankskardet langs nordaustsida av elvedalen: beltet fra 200 til 300 moh måler 21,1 grader, og renna i dalen er kildens eget faremoment — den fungerer som samletrakt for skred fra hengene omkring, så linja holder seg på dalsida, ikke i botnen. Skogen slutter på 455 moh etter 1,8 km, med åpent område fra 463.
 
-På rundt 400 svinger du mot nord og aust, opp på sørryggen som kommer ned fra toppen. Overgangen er turens bratteste: beltet fra 500 til 600 moh måler 29,7 grader over bare 198 meter grunn, med det bratteste sammenhengende partiet — 36,5 grader — mellom 531 og 554 moh.
+På rundt 400 svinger du mot nord og aust, opp på sørryggen som kommer ned fra toppen. Overgangen er turens bratteste: beltet fra 500 til 600 moh måler 29,7 grader over bare 198 meter grunn, med det bratteste sammenhengende partiet — 42,4 grader — mellom 536 og 565 moh.
 
 Ryggen tar deg til topps: 24,9 grader fra 800 til 900 moh og 23,7 fra 900 til 1000, som er linjas svar på kildens «30–40 grader mellom 950 og 1040» — ryggen skrår der flanken står. Varden på 1088; registerets Storfjellet ligger 46 m fra Fri Flyts publiserte punkt, og toppsøket løser 1088,2 mot publiserte 1089.',
   description_down = 'Normalen følger ruta opp — sørvestsektoren er den slakeste på toppen, 26,2 grader i snitt med 37,0 som bratteste 60-metersvindu, og det er den eneste: sørøst faller 34,8 i snitt med et vindu på 59,9, sør 36,3 med 53,1, og nordsiden har 53,9 grader bare 100 til 160 meter ut.
 
 Østhenget fra Krokenga er kildens KAST 3-alternativ, med lang eksponering i både løsne- og utløpsområder og 30–40 grader fra 240 moh og opp. Skredulykken i 1997, som tok to liv, gikk her. Det er ikke linja på dette kortet, og det er ikke en vei ned man tar på følelsen.
 
-Den andre ruta går opp austsida frå Krokenga: 1074 høgdemeter på 3,66 km, langs sørvestsida av Sauskarbekken til 578 moh og så vestover mot toppen. Kilden skriv henne med utropsteikn — «Denne oppstigningen krever sikre snøforhold!!!» og «Fra 240 moh. og helt opp er terrenget i store områder 30–40 grader!!» — og daterer eit skred: i 1997 gjekk eit sjølvutløyst skred langt oppe i fjellet over fv. 91 og tok livet av to personar i eit hus på Krokenga. Brattaste steget på linja måler 30,7 grader mellom 350 og 368 moh; normalruta frå Storelva er brattare i eit enkeltsteg, 36,5, men ligg kortare tid i skredterreng.',
+Den andre ruta går opp austsida frå Krokenga: 1074 høgdemeter på 3,66 km, langs sørvestsida av Sauskarbekken til 578 moh og så vestover mot toppen. Kilden skriv henne med utropsteikn — «Denne oppstigningen krever sikre snøforhold!!!» og «Fra 240 moh. og helt opp er terrenget i store områder 30–40 grader!!» — og daterer eit skred: i 1997 gjekk eit sjølvutløyst skred langt oppe i fjellet over fv. 91 og tok livet av to personar i eit hus på Krokenga. Brattaste steget på linja måler 30,7 grader mellom 350 og 368 moh; normalruta frå Storelva er brattare i eit enkeltsteg, 42,4, men ligg kortare tid i skredterreng.',
   avalanche_notes  = jsonb_build_array(
     jsonb_build_object(
       'title', 'Ruta',
-      'body',  'KAST 2 – Utfordrende hos Fri Flyt, med 30–40 grader mellom 950 og 1040 på flanken og linjas eget bratteste på 36,5 grader i overgangen opp på ryggen. Nesten hele turen ligger i eller inntil terreng over 30 grader — dette er en tur for stabile forhold.'
+      'body',  'KAST 2 – Utfordrende hos Fri Flyt, med 30–40 grader mellom 950 og 1040 på flanken og linjas eget bratteste på 42,4 grader i overgangen opp på ryggen. Nesten hele turen ligger i eller inntil terreng over 30 grader — dette er en tur for stabile forhold.'
     ),
     jsonb_build_object(
       'title', 'Renna i dalen',
@@ -549,7 +549,7 @@ Derfra følger skisporet den brede nordvestryggen sammenhengende oppover. Terren
 
 På Middagsaksla, 1076 moh, stopper skituren. Mange setter fra seg skiene her; noen bærer dem til forvarden på rundt 1190 moh og lar dem ligge der. Turrapportene fra vinterbestigninger er samstemte om at ryggen videre går til fots — «over ca. 1100 moh måtte skiene byttes mot stegjern og isøks».
 
-De siste 1,7 kilometerne er eksponert nordvestrygg. Ryggkammen bølger seg oppover fra 1076 til 1393 moh med korte motfall underveis — 47 høydemeter til sammen over Middagsaksla, og ingen av dem mer enn ti om gangen på linja. Det er luftige parti, korte klyvepartier, og helt til slutt ei renne og en bratt topppyramide: den bratteste hundremeteren på hele turen ligger mellom 1300 og 1400 moh og måler 23,9 grader i snitt, mens det bratteste sammenhengende partiet er selve toppsteget: 38,0 grader over tretti meter mellom 1355 og 1397 moh.',
+De siste 1,7 kilometerne er eksponert nordvestrygg. Ryggkammen bølger seg oppover fra 1076 til 1393 moh med korte motfall underveis — 47 høydemeter til sammen over Middagsaksla, og ingen av dem mer enn ti om gangen på linja. Det er luftige parti, korte klyvepartier, og helt til slutt ei renne og en bratt topppyramide: den bratteste hundremeteren på hele turen ligger mellom 1300 og 1400 moh og måler 23,9 grader i snitt, mens det bratteste sammenhengende partiet er selve toppsteget: 46,2 grader over tretti meter mellom 1365 og 1397 moh.',
   description_down = 'Ryggen tilbake til fots til Middagsaksla, og derfra ned nordvestryggen på ski til Vartavarhaugen og bilen. Fallretningen ned ryggen er målt til nordvest, 293 grader, og hellinga er 16 til 26 grader hele veien — jevn, oversiktlig kjøring uten trange partier.
 
 Vanligste feil: å behandle Middagsaksla som en pause i stedet for et vedtak. Er ryggen isete, eller er sikta dårlig, er det her turen slutter — skituren er uansett over, og det som ligger foran er 1,4 kilometer der en glipp ikke har noen utgang til sida. Å snu på Middagsaksla er ikke en avbrutt tur; det er en fullverdig tur i seg selv, og den riktige når ryggen er isete.
@@ -558,7 +558,7 @@ Den andre feilen er å slippe seg ned en av flankene fra ryggen for å korte inn
   avalanche_notes  = jsonb_build_array(
     jsonb_build_object(
       'title', 'Ruta',
-      'body',  'Skituren opp nordvestryggen er lite skredutsatt: 16 til 26 grader jevnt fra rundt 350 moh til Middagsaksla, uten bratte trinn. Flankene på begge sider av ryggen er derimot bratte, og de er terrengfeller — i dårlig sikt er det å holde ryggen selve navigasjonsoppgaven. Over Middagsaksla er det ikke lenger skiterreng: bratteste sammenhengende parti er toppsteget på 38,0 grader mellom 1355 og 1397 moh, og bratteste hundremeter, 1300 til 1400 moh, 23,9 grader i snitt.'
+      'body',  'Skituren opp nordvestryggen er lite skredutsatt: 16 til 26 grader jevnt fra rundt 350 moh til Middagsaksla, uten bratte trinn. Flankene på begge sider av ryggen er derimot bratte, og de er terrengfeller — i dårlig sikt er det å holde ryggen selve navigasjonsoppgaven. Over Middagsaksla er det ikke lenger skiterreng: bratteste sammenhengende parti er toppsteget på 46,2 grader mellom 1365 og 1397 moh, og bratteste hundremeter, 1300 til 1400 moh, 23,9 grader i snitt.'
     ),
     jsonb_build_object(
       'title', 'Terrenget utenfor',
@@ -864,7 +864,7 @@ where slug = 'hattfjellet';
 update public.tk_tours set
   description_up   = 'Fra Dale på 58 moh følger du sommerstien nordover — 294 moh der linja står i den — og passerer Trollvatnet på land på austbreidda, 337 moh. Skoggrensa kommer allerede på 311 etter 1,67 km, og beltet fra 300 til 400 måler 4,1 grader over nesten halvannen kilometer vann og myrer.
 
-Opp der terrenget er slakest, mellom høgdene på 406, og inn på ryggen fra 587: det bratteste enkeltpartiet, 36,2 grader mellom 593 og 627 moh, ligger der ryggen reiser seg.
+Opp der terrenget er slakest, mellom høgdene på 406, og inn på ryggen fra 587: ryggen reiser seg der, men det bratteste enkeltpartiet på linja, 43,9 grader, er et fall ned i et søkk lenger nord, fra 649 til 615 moh.
 
 Ryggen nordover — 740 moh der korridoren peker mot varden — og sluttpartiet som krever ekstra fokus: ski kan settes igjen, og kilden nevner 30 m tau og litt utstyr for vanskelige forhold. Beltet fra 800 til 900 er det bratteste i snitt med 18,9 grader; varden står på 945.',
   description_down = 'Sør er den slake sida: flankemålinga gir 20,0 grader i snitt der sydryggen kommer, mot 46,1 i nord — med 66,5-vindu 30–90 m ut — og 69,3 mot nordaust. Nedkjøringsvariantene måler 35–40 grader (nordrenna og austsida) og opp mot 50 øverst på vestsida: vurder snøen før valg.
@@ -974,7 +974,7 @@ where slug = 'istinden';
 update public.tk_tours set
   description_up   = 'Fra lomma på fv. 8670 Grytøyveien ved Skjellesvika småbåthavn — 6 moh — følger du traktorvegen vestover fra havna: 33 moh der linja står i den, og skoggrensa på 298 etter 1,53 km.
 
-Opp ryggen fra 151 og den store slake austryggen vestover — 617 moh der korridoren er festet. Beltet fra 500 til 600 er det bratteste i snitt med 21,5 grader, og det bratteste enkeltpartiet, 32,8 grader, ligger mellom 557 og 583 moh.
+Opp ryggen fra 151 og den store slake austryggen vestover — 617 moh der korridoren er festet. Beltet fra 500 til 600 er det bratteste i snitt med 21,5 grader, og det bratteste enkeltpartiet, 39,0 grader, ligger høyere, mellom 778 og 803 moh under skuldra.
 
 Ryggen fortsetter til varden på 987 — skuldra på rundt 800 underveis er høyden kilden navngir, men terrenget stiger videre uten søkk: NE-målinga, der ryggen kommer, er den slake sida med 15,3 grader i snitt.',
   description_down = 'Samme rygg hjem: hard vindpakket snø er normalen, sier kilden — det er den øksa og stegjerna er for. Store skavler bygger seg over rygglinjene og kan kollapse: gå der du gikk opp, ikke der utsikten er best.
@@ -1006,7 +1006,7 @@ Renna slipper deg ut på 843 moh, og de siste hundremeterne mot varden på 1009 
 
 Vurder snødekket før nedkjøring — terrenget er skredterreng i alle varianter, sier kilden. Renna gir kjøring hele veien ned mot Dalsdalen; under skoggrensa på 287 er det sporet hjem til Dale.
 
-Den andre dokumenterte ruta går opp sørsida frå Vaskinn — 996 høgdemeter på 4,55 km, og den mildaste vegen på fjellet: brattaste steget måler 27,1 grader mot vestsidas 36,2. Ho følgjer sommarstien opp gjennom skogen langs Vaskinnelva og forbi Vadskinndalsvatnet inn i den søndre bollen. Kilden seier det er lettare å finne linja om ein går opp same ruta som ein kjører ned.',
+Den andre dokumenterte ruta går opp sørsida frå Vaskinn — 996 høgdemeter på 4,55 km, og den mildaste vegen på fjellet: brattaste steget måler 34,0 grader mot vestsidas 36,2. Ho følgjer sommarstien opp gjennom skogen langs Vaskinnelva og forbi Vadskinndalsvatnet inn i den søndre bollen. Kilden seier det er lettare å finne linja om ein går opp same ruta som ein kjører ned.',
   avalanche_notes  = jsonb_build_array(
     jsonb_build_object(
       'title', 'Renna',
@@ -1234,7 +1234,7 @@ update public.tk_tours set
 
 Mot Blåisen fra 659: Blåisen er en isbre, og linja holder moreneterrenget sør for isen — 997 moh der korridoren svinger sørover. Beltet fra 900 til 1000 måler 8,5 grader over morenen.
 
-Passasjen fra 1059: kilden gir den 40 grader, og målingen legger den i NV/V-vinduene på 42,5–48,0 rett under toppen — mens modellens egen linje gjennom aldri måler mer enn 27,2 i noe enkeltparti. Det er forskjellen på fallinja og sporet: passasjen krysses skrått. Varden står på 1186.',
+Passasjen fra 1059: kilden gir den 40 grader, og målingen legger den i NV/V-vinduene på 42,5–48,0 rett under toppen — mens modellens egen linje gjennom aldri måler mer enn 32,5 i noe enkeltparti. Det er forskjellen på fallinja og sporet: passasjen krysses skrått. Varden står på 1186.',
   description_down = 'Samme vei ned: NV og V, der nordruta ligger, måler 14,0 og 11,4 grader i snitt — men med de bratte vinduene rett under toppen, så passasjen tas kontrollert før terrenget åpner seg. Austflanka faller 63,9 grader i vinduet 30–90 m ut: hold vest.
 
 Sørruta er brattere — 30–40 grader og mer skredutsatt, sier kilden — og varianten mot Reintinden på 587 fra Blåisen er en annen linje. Fra morenen er dalen hjem til Fornes ren transport.',
@@ -1669,16 +1669,16 @@ update public.tk_tours set
 
 Nordover mot det bratte og klippete Sølvfjellet går det i småkuler og terrasser: 10,2 grader fra 500 til 600 moh, 14,3 og 16,4 i de neste beltene — følg gamle spor når de finnes, sier kilden, for terrassene skjuler linja i flatt lys. Mellom Sølvfjellet og Spanstinden — 851 moh der linja passerer — åpner den store fonna sørøst for toppen seg.
 
-Fonna tas med den slakeste stigninga til høyre (aust), slik kilden sier: beltet fra 1300 til 1400 måler 18,8 grader, turens bratteste, og det bratteste sammenhengende partiet er 25,0 grader nede mellom 947 og 968. Så de spektakulære siste meterne: varden på 1457 — registeret løser 1457,4 — med fallene på alle andre kanter som kulisse.',
+Fonna tas med den slakeste stigninga til høyre (aust), slik kilden sier: beltet fra 1300 til 1400 måler 18,8 grader, turens bratteste, og det bratteste sammenhengende partiet er 31,0 grader nede mellom 863 og 883. Så de spektakulære siste meterne: varden på 1457 — registeret løser 1457,4 — med fallene på alle andre kanter som kulisse.',
   description_down = 'Ned fonna igjen — sørøstsektoren måler 14,1 grader i snitt over 500 meter med 28,9 i det første vinduet, stor og lesbar kjøring tilbake mot terrassene. Kilden beskriver fire nedfartsvarianter fra lett terrassekjøring til middels krevende via Tjuvhola-botnen mot Moen.
 
 Hold fonna til du er av toppen: nord, nordøst og sørvest faller 44,1, 47,5 og 42,0 grader i snitt, med et vindu på 71,4 grader på nordøstsiden. Det spektakulære og det farlige er samme kant her.
 
-Lapphaugen er ikke bare et alternativ i forbifarten — det er start B i kildens egen veibeskrivelse, og rute 6.8.2 går derfra: «Gå forbi husvognene på campingen og opp gjennom skogen ved toppen av campingen … Etter hvert går du litt på skrå til høyre til du kommer over tregrensen … Snart kommer du opp til et platå under toppen. Gå opp snøfeltet ovenfor platået for å komme til 6.8.1, og toppen.» Fra parkeringa ved turiststasjonen på 350 moh går linja over campingen på 383, opp gjennom skogen på 525, over tregrensa på 852, opp de bratte bakkene på 1004 og inn på platået under toppen på 1159 — der den møter fonna normalruta kommer opp. 1111 høydemeter på 4,80 km mot 1047 på 5,24 km fra Bukkemyrvatnet: mer klatring på kortere linje, og kilden graderer den «Middels vanskelig» der 6.8.1 er «Enkel». Bratteste hundremetersbelte er 19,7 grader fra 700 til 800 moh, og det bratteste 30-metersvinduet 28,5 grader mellom 756 og 776, mot 25,0 på normalruta. Skogen slipper på 576 moh etter 1,33 km. Området der det flate over campingen går over i brattere bakker er skredutsatt, sier kilden — og det er de første høydemetrene av turen, ikke de siste. Denne linja går ikke over noe vann.',
+Lapphaugen er ikke bare et alternativ i forbifarten — det er start B i kildens egen veibeskrivelse, og rute 6.8.2 går derfra: «Gå forbi husvognene på campingen og opp gjennom skogen ved toppen av campingen … Etter hvert går du litt på skrå til høyre til du kommer over tregrensen … Snart kommer du opp til et platå under toppen. Gå opp snøfeltet ovenfor platået for å komme til 6.8.1, og toppen.» Fra parkeringa ved turiststasjonen på 350 moh går linja over campingen på 383, opp gjennom skogen på 525, over tregrensa på 852, opp de bratte bakkene på 1004 og inn på platået under toppen på 1159 — der den møter fonna normalruta kommer opp. 1111 høydemeter på 4,80 km mot 1047 på 5,24 km fra Bukkemyrvatnet: mer klatring på kortere linje, og kilden graderer den «Middels vanskelig» der 6.8.1 er «Enkel». Bratteste hundremetersbelte er 19,7 grader fra 700 til 800 moh, og det bratteste 30-metersvinduet 28,5 grader mellom 756 og 776, mot 31,0 på normalruta. Skogen slipper på 576 moh etter 1,33 km. Området der det flate over campingen går over i brattere bakker er skredutsatt, sier kilden — og det er de første høydemetrene av turen, ikke de siste. Denne linja går ikke over noe vann.',
   avalanche_notes  = jsonb_build_array(
     jsonb_build_object(
       'title', 'Ruta',
-      'body',  'KAST 1 – Enkel hos Fri Flyt, og linja måler deretter: 18,8 grader i bratteste belte, 25,0 i bratteste parti. Skredterrenget ligger i de brattere partiene over skoggrensa ved siden av linja — vær varsom der de flate partiene går over i bratte heng, sier kilden.'
+      'body',  'KAST 1 – Enkel hos Fri Flyt, og linja måler deretter: 18,8 grader i bratteste belte, 31,0 i bratteste parti. Skredterrenget ligger i de brattere partiene over skoggrensa ved siden av linja — vær varsom der de flate partiene går over i bratte heng, sier kilden.'
     ),
     jsonb_build_object(
       'title', 'Toppkanten',
@@ -2070,7 +2070,7 @@ Fra Grønnvatnet stiger ruta jevnt, og her er det samme høyde 450 du nettopp gi
 
 Isen ligger lavere enn du kanskje venter. Linja går over mark klassifisert som SnøIsbre fra 752 til 898 moh, sammenhengende over 405 meter grunn mellom 7700 og 8100 meter ute, uten et eneste bart punkt imellom. Peilinga fra toppen til den strekninga er 184 til 216 grader — sør til sørvest — og avstanden 422 til 582 meter. Korridorforskinga kalte vegpunktet «breen sørøst for Møysalen, ~1025 moh»; på det punktet gir terrengmodellen 1026,59 moh med terrengklasse ÅpentOmråde, og ringprøver 300, 500, 700 og 900 meter ut fra toppen finner SnøIsbre bare mot øst og mot sørvest. Sørøst er bar mark hele veien. Friflyt skriver at «selv om det kalles bre er det ikke åpne sprekker», og at den går normalt uten tau. Det bratteste 30-meterssteget oppover, 41,9 grader fra 1036 til 1063 moh, ligger 8500 meter ute — altså over isen og ikke under den.
 
-Over isen fortsetter ruta nordvest opp toppryggen, og ryggen er ikke jevn. 9332 meter ute stiger linja til 1170 moh og faller så 51 meter til 1119 over 27,3 meter grunn — et hakk, ikke en målefeil: tolv DTM1-punkt med 2,3 meters mellomrom gjennom fallet gir en sammenhengende kurve fra 1170,0 til 1119,2, og et rutenett på 40 meter til hver side gir fra 1186 til 1055 moh, så nabolinjene er ikke slakere. Det er dette som gjør at største steg langs ruta måler 45,9 grader, og det er her isøksa og stegjerna hører hjemme. De siste 500 metrene går på peiling 333 grader og stiger 124 meter; det bratteste 200-metersvinduet på turen, 24,3 grader fra 1189 til 1264 moh, er selve toppryggen.',
+Over isen fortsetter ruta nordvest opp toppryggen, og ryggen er ikke jevn. 9332 meter ute stiger linja til 1170 moh og faller så 51 meter til 1119 over 27,3 meter grunn — et hakk, ikke en målefeil: tolv DTM1-punkt med 2,3 meters mellomrom gjennom fallet gir en sammenhengende kurve fra 1170,0 til 1119,2, og et rutenett på 40 meter til hver side gir fra 1186 til 1055 moh, så nabolinjene er ikke slakere. Det er dette som gjør at største steg langs ruta måler 62,9 grader, og det er her isøksa og stegjerna hører hjemme. De siste 500 metrene går på peiling 333 grader og stiger 124 meter; det bratteste 200-metersvinduet på turen, 24,3 grader fra 1189 til 1264 moh, er selve toppryggen.',
   description_down = 'Ned samme vei. Fallvekta gjennomsnittsretning er 193 grader — sør — og det stemmer med kilden: Friflyt kaller nettopp Vestryggen «sørvendt bratt terreng», og beskriver alle de andre linjene på fjellet som sørvendte eller sydvendte. Kortet sa lenge sørøst; det tallet hvilte på et vegpunkt som ble kalt bre og ikke er det, og er rettet. Over hakket i ryggen går de fleste til fots.
 
 Vanligste feil er å regne turen i høydemeter i stedet for i timer. 1596 høydemeter og 9,75 kilometer hver veg, med et bratt parti under breen og en rygg som ofte er avblåst og hard, er 11 til 18 timer etter Friflyt. Snur du på breen, har du fortsatt 120 høydemeter opp fra Grønnvatnet igjen på hjemvegen. Den andre feilen er å tro at et sørvendt bratt parti på 21 grader over lang strekning holder seg stabilt gjennom dagen: tidspunktet avgjør om du møter gjennomvåt eller gjennomfrossen snø der.',
@@ -2152,7 +2152,7 @@ Fra 570 svinger ruta sørover og holder østsida av bollen. Der ligger brattaste
 
 Rett nord for varden er det uansett bratt: 40,9 grader i brattaste 60-metersvindu bare 20 til 80 meter ut, med 24,8 grader i snitt ut til en kilometer. Der ligger også snøen som blir liggende — Kartverket fører terrengklassen SnøIsbre på nordsida fra rundt 1050 moh og nedover, mens ryggen ruta går på er bar mark i alle de seksten siste vertexene. De tre andre kantene er alvorlige: sør måler 30,6 grader i snitt med 63,9 grader i vinduet 20 til 80 meter fra varden, sørøst 30,9 med 62,5, øst 29,0 med 54,9, og sørvest 24,1 med 56,0. Fri Flyts to andre linjer — Kvanntoa i nordøst og Kvannto i øst — har partier på 45 grader og rappellfeste, og de er ikke ruta dette kortet beskriver.
 
-To av kildens sju linjer er eigne oppstigningar med eiga parkering, og begge møter turen først på høyde 779 — 787 moh der linja passerer — der dei siste 300 høgdemeterane nordaustover er felles. Frå Kåringen er det 1063 høgdemeter og 8,18 km over Nordfjellaksla på 344 moh: den lengste og slakaste av dei tre, med brattaste steg 22,8 grader mellom 976 og 995 moh, og kilden kallar henne «en meget populær skitur med fjellski» der ein oftast kan følgje skispor frå vegen. Frå Kanstadbotn er det 1140 høgdemeter og 7,68 km, nord for høyde 519 og sør for Trollvatnan på 418 — kildens «sprekere variant», med eit steg på 30,8 grader mellom 776 og 799.',
+To av kildens sju linjer er eigne oppstigningar med eiga parkering, og begge møter turen først på høyde 779 — 787 moh der linja passerer — der dei siste 300 høgdemeterane nordaustover er felles. Frå Kåringen er det 1063 høgdemeter og 8,18 km over Nordfjellaksla på 344 moh: den lengste og slakaste av dei tre, med brattaste steg 32,2 grader mellom 973 og 994 moh, og kilden kallar henne «en meget populær skitur med fjellski» der ein oftast kan følgje skispor frå vegen. Frå Kanstadbotn er det 1140 høgdemeter og 7,68 km, nord for høyde 519 og sør for Trollvatnan på 418 — kildens «sprekere variant», med eit steg på 30,8 grader mellom 776 og 799.',
   avalanche_notes  = jsonb_build_array(
     jsonb_build_object(
       'title', 'Bollen',
@@ -2199,14 +2199,14 @@ update public.tk_tours set
 
 Derfrå går oppstigninga vestover i det slakaste terrenget, over nordsida av høyde 462 — DTM1 måler 461,1 — på 400 moh der korridoren står, og vidare opp fjellsida på 509. Skogen slepper på 226 moh etter 2,44 km, og beltet frå 400 til 500 er det brattaste i snitt med 21,2 grader over 260 meter grunn.
 
-Toppen på 700 — 707 moh på linja — er der kildens skitur endar. Traversen vidare over fortoppen er den alpine delen: det brattaste enkeltsteget på ruta, 39,4 grader, ligg mellom 866 og 901 moh, i det siste stykket opp til varden. Siste stykket opp til varden på 901 tek du med fordel på austsida i starten, seier kilden — der slepp du den vanskelege klatringa.',
+Toppen på 700 — 707 moh på linja — er der kildens skitur endar. Traversen vidare over fortoppen er den alpine delen: det brattaste enkeltsteget på ruta, 45,0 grader, ligg mellom 869 og 901 moh, i det siste stykket opp til varden. Siste stykket opp til varden på 901 tek du med fordel på austsida i starten, seier kilden — der slepp du den vanskelege klatringa.',
   description_down = '107 av dei 985 høgdemetrane gir du frå deg undervegs. Mange startar nedkøyringa allereie frå 700-toppen, i slakt terreng med eit brattheng som kan gåast utanom, og det er den turen kildens høgdemetertal beskriv.
 
 Frå hovudtoppen er nordvestsida linja: ho startar mellom 902 og sørtoppen og er 20–25 grader med brattheng på 30–40 i nedre del. Nordaustsida er 30–40 grader og følgjer etter kvart vestruta til Lakselvtindan ned i Forkledalen. Begge går eksponert for skred frå høgareliggande terreng nesten heile vegen.',
   avalanche_notes  = jsonb_build_array(
     jsonb_build_object(
       'title', 'Traversen',
-      'body',  'Frå 700 til 901 er graderinga KAST 3 – Komplekst. Avhengig av snøforholda må du kanskje klatre litt ned på snø eller berg for å kome vidare, og siste delen er svært bratt og eksponert: det brattaste steget måler 39,4 grader mellom 866 og 901. Kilden viser eit bilete av flakskred tett under toppen, og skriv at mykje snø blir sett i rørsle og at det er lett å bli begravd.'
+      'body',  'Frå 700 til 901 er graderinga KAST 3 – Komplekst. Avhengig av snøforholda må du kanskje klatre litt ned på snø eller berg for å kome vidare, og siste delen er svært bratt og eksponert: det brattaste steget måler 45,0 grader mellom 869 og 901. Kilden viser eit bilete av flakskred tett under toppen, og skriv at mykje snø blir sett i rørsle og at det er lett å bli begravd.'
     ),
     jsonb_build_object(
       'title', 'Alle sider er bratte',
@@ -2463,14 +2463,14 @@ update public.tk_tours set
 
 Like etter tregrensa dreier du til høyre (nordvest) opp ryggen som leder til Litletind. Beltene fra 700 til 1000 måler 19,5, 17,9 og 19,9 grader — jevn skinning på åpen rygg med utsikten voksende bak deg.
 
-Toppartiet er kildens ene forbehold: ryggen mot toppen er ofte avblåst og steinete, så den siste biten kan være kronglete. Det bratteste sammenhengende partiet måler 26,2 grader mellom 1043 og 1064 moh, og på hardpakke er det de meterne du merker. Varden på 1100 med Narvik, Rombaksfjorden og dronningprofilen bak deg.',
+Toppartiet er kildens ene forbehold: ryggen mot toppen er ofte avblåst og steinete, så den siste biten kan være kronglete. Det bratteste sammenhengende partiet måler 32,8 grader mellom 1045 og 1066 moh, og på hardpakke er det de meterne du merker. Varden på 1100 med Narvik, Rombaksfjorden og dronningprofilen bak deg.',
   description_down = 'Ned samme vei — sør- og sørvestsektoren linja bruker er den slakeste på toppen, 16,8 og 20,6 grader i snitt over 500 meter. Fri Flyts nedfart er oppstykkede fonner i lett varierende terreng.
 
 Hold igjen mot øst og nordøst: 37,4 og 36,9 grader i snitt med vinduer på 57,7 og 49,0 rett under toppen — kanten mot Håkvikdalen. Sløret, den bratte fonna mellom Litletind og Dronninga, er skredterreng med stein i bunnen og hører til variantene, ikke normalturen.',
   avalanche_notes  = jsonb_build_array(
     jsonb_build_object(
       'title', 'Ruta',
-      'body',  'KAST 2 – Utfordrende hos Fri Flyt. Linja selv er snill — 19,9 grader i bratteste belte, 26,2 i bratteste parti — og det som krever hodet er kantene: øst- og nordøstsiden faller 37 grader i snitt med vinduer over 49 rett under varden.'
+      'body',  'KAST 2 – Utfordrende hos Fri Flyt. Linja selv er snill — 19,9 grader i bratteste belte, 32,8 i bratteste parti — og det som krever hodet er kantene: øst- og nordøstsiden faller 37 grader i snitt med vinduer over 49 rett under varden.'
     ),
     jsonb_build_object(
       'title', 'Toppartiet',
@@ -2648,7 +2648,7 @@ Vestsidevarianten mot Lyngvær, som kjelda nemner, krev tilrettelagd transport f
   avalanche_notes  = jsonb_build_array(
     jsonb_build_object(
       'title', 'Ruta',
-      'body',  'Fri Flyt set KAST 2 – Utfordrende, og målinga av lina seier 32,3 grader som brattaste samanhengande parti — det ligg lågt, mellom 127 og 155 moh på ryggen opp — og 22,8 grader som brattaste hundremetersbelte, mellom 600 og 700 moh. Hans eiga åtvaring gjeld flankane: «i øvre deler stiger henget 35-40 grader bratt» — det er terrenget kring sporet, og linevalet på den øvre flanken er der dagen vert avgjord.'
+      'body',  'Fri Flyt set KAST 2 – Utfordrende, og målinga av lina seier 38,3 grader som brattaste samanhengande parti — det ligg lågt, mellom 129 og 156 moh på ryggen opp — og 22,8 grader som brattaste hundremetersbelte, mellom 600 og 700 moh. Hans eiga åtvaring gjeld flankane: «i øvre deler stiger henget 35-40 grader bratt» — det er terrenget kring sporet, og linevalet på den øvre flanken er der dagen vert avgjord.'
     ),
     jsonb_build_object(
       'title', 'Kolbeindalen og skytebanen',
@@ -2947,7 +2947,7 @@ where slug = 'lukttinden';
 update public.tk_tours set
   description_up   = 'Start på parkeringa på Markavollen, 184 moh. Ut.no oppgir p-avgift, og terrengmodellen leser plassen til 184 moh — nøyaktig den starthøyda beskrivelsen oppgir. Ut.no sender deg langs skiløypene «merka S, deretter Ø og S igjen»; linja på kartet er terrenglinja gjennom det samme løypenettet og ikke løypa selv — 2205 av 4744 meter ligger mer enn 50 meter fra en kartlagt trasé, med største avvik 175 meter. Første halvdel er flat i en topptur å være: bandet fra 300 til 400 moh måler 5,2 grader over 1036 meter grunn, og 400 til 500 moh 3,2 grader over 1710.
 
-På 445 moh streifer linja kanten av Lomtjønna. Vassfjellhytta ligger på 507 moh, og rett etter den kommer stigninga: 11,5 grader fra 500 til 600 moh over 495 meter grunn, og linjas brattaste steg måler 23,0 grader mellom 251 og 270 moh. Skogen slipper taket på 586 moh, og fra 594 er terrenget åpent.
+På 445 moh streifer linja kanten av Lomtjønna. Vassfjellhytta ligger på 507 moh, og rett etter den kommer stigninga: 11,5 grader fra 500 til 600 moh over 495 meter grunn, og linjas brattaste steg måler 29,0 grader mellom 252 og 270 moh. Skogen slipper taket på 586 moh, og fra 594 er terrenget åpent.
 
 Over skoggrensa holder det 12,3 grader fra 600 til 700 moh, og du treffer anleggsvegen ut.no sender deg inn på — Vassfjellvegen, som ligger 16 meter fra linja og går helt opp til Melhus hovedsender, kommunikasjonsmasta som står 131 meter fra varden på 709 moh. De siste metrene dreier linja nordover. Varden selv står på 711, og terrengmodellen måler den til 710,9.',
   description_down = 'Ned samme vegen. Første 200 meter fra varden peiler 255 grader — vest — ned til 676 moh, og 500 meter ned peiler 249. Det er flanken kortet fører: vestsida måler 12,0 grader i snitt over 400 meter med et 26,2 graders vindu 230 til 290 meter ut, og 12,3 grader i snitt når sveipet går ut til en kilometer.
@@ -2956,7 +2956,7 @@ Ut.no advarer mot «diverse brattheng både under og over tregrensa», og sveipe
   avalanche_notes  = jsonb_build_array(
     jsonb_build_object(
       'title', 'Ruta',
-      'body',  '541 høydemeter der bandene under 500 moh måler 3,2 og 5,2 grader, og bandet fra 500 til 600 måler 11,5 over 495 meter grunn. Brattaste punkt på hele den routede linja er 23,0 grader, mellom 251 og 270 moh, og ruta gir tilbake 33 høydemeter på 4,92 km. Det er en løypetur med ett bratt parti i, ikke en flankeoppstigning. Den routede linja stiger 541 høydemeter over 4,74 km, mot ut.nos oppgitte 526 og 6,7 km: høydemeterne stemmer, kilometerne ikke. Løypa svinger seg sørover, østover og sørover igjen, og linja på kartet tar den korteste vegen gjennom de samme punktene.'
+      'body',  '541 høydemeter der bandene under 500 moh måler 3,2 og 5,2 grader, og bandet fra 500 til 600 måler 11,5 over 495 meter grunn. Brattaste punkt på hele den routede linja er 29,0 grader, mellom 252 og 270 moh, og ruta gir tilbake 33 høydemeter på 4,92 km. Det er en løypetur med ett bratt parti i, ikke en flankeoppstigning. Den routede linja stiger 541 høydemeter over 4,74 km, mot ut.nos oppgitte 526 og 6,7 km: høydemeterne stemmer, kilometerne ikke. Løypa svinger seg sørover, østover og sørover igjen, og linja på kartet tar den korteste vegen gjennom de samme punktene.'
     ),
     jsonb_build_object(
       'title', 'Terrenget utenfor',
@@ -3005,14 +3005,14 @@ Kråklivollen ligger på 452 moh, der vegen slutter. Videre opp Kråklia og vest
 
 Så krysser ruta Oksdalen på 532 moh. Punktet er ikke navngitt i noen kilde: dalen er registrert med representasjonspunkt 3,95 km unna på peiling 15, altså nord-nordaust, og kryssinga er lest ut av terrengmodellen som lavlinja sørover derfra. Skogen slipper taket på 562 moh, og fra 569 er du i åpent terreng.
 
-Etter Oksdalen begynner de siste fire kilometerne. Bandet fra 600 til 700 moh måler 6,1 grader, og det er her det brattaste sammenhengende steget ligger — 19,7 grader mellom 663 og 679 moh. Videre måler 700 til 800 moh 11,6 grader over 495 meter grunn, og så slakner det til 5,7 og 6,5 mot varden på 942 moh. Rensfjellet er grensetopp mellom Melhus, Midtre Gauldal og Selbu; ut.no noterer at den «mangler bare 2,1 km mot N-NV på å inkludere også Trondheim i den klubben».',
+Etter Oksdalen begynner de siste fire kilometerne. Bandet fra 600 til 700 moh måler 6,1 grader, og det er her det brattaste sammenhengende steget ligger — 27,9 grader mellom 661 og 679 moh. Videre måler 700 til 800 moh 11,6 grader over 495 meter grunn, og så slakner det til 5,7 og 6,5 mot varden på 942 moh. Rensfjellet er grensetopp mellom Melhus, Midtre Gauldal og Selbu; ut.no noterer at den «mangler bare 2,1 km mot N-NV på å inkludere også Trondheim i den klubben».',
   description_down = 'Ned samme vegen, vestover: første 200 meter fra toppen peiler 253 grader ned til 920 moh, og 500 meter ned 254. Parkeringa ligger 10,2 km unna, på peiling 254 grader. Ut.no gir ett alternativ — å styre ned mot Samsjøen etter Oksdalen — og setter to betingelser: at føret utenfor oppkjørte løyper er godt, eller at du har et spor å gå i.
 
 Sveipet finner ingen bratt side innafor 400 meter av varden: aust måler 11,0 grader i snitt med 17,8 i brattaste vindu, søraust 3,4 og nordvest 2,5. Ut.nos «bratte enkeltheng som er høye nok til at det kan gå skred» ligger lenger ute enn sveipet rekker, og beskrivelsen sier selv at de er mulige å unngå.',
   avalanche_notes  = jsonb_build_array(
     jsonb_build_object(
       'title', 'Ruta',
-      'body',  'Elleve kilometer der de to lange bandene måler 1,2 og 1,4 grader over drøye fire kilometer hver, og all stigninga ligger i de siste fire. Brattaste sammenhengende steg er 19,7 grader mellom 663 og 679 moh, brattaste hundremetersband 11,6 fra 700 til 800. Ruta gir tilbake 168 høydemeter mot ut.nos oppgitte «ca 130» — det er den samme terrengformen, rygger og søkk som må krysses.'
+      'body',  'Elleve kilometer der de to lange bandene måler 1,2 og 1,4 grader over drøye fire kilometer hver, og all stigninga ligger i de siste fire. Brattaste sammenhengende steg er 27,9 grader mellom 661 og 679 moh, brattaste hundremetersband 11,6 fra 700 til 800. Ruta gir tilbake 168 høydemeter mot ut.nos oppgitte «ca 130» — det er den samme terrengformen, rygger og søkk som må krysses.'
     ),
     jsonb_build_object(
       'title', 'Terrenget utenfor',
@@ -3032,18 +3032,18 @@ Opp lia sør–sørvest, gjennom 686 moh, med bandene 10,3, 6,3 og 7,0 grader. S
 
 Fra Svartvatnet kommer du til foten av Litj-Snota og runder den i aust, 1026 moh — de siste 90 metrene inn dit går over et lite unavngitt vatn på 1024. Herfra og opp er du i utløpsområder og i kortere partier i løsneområder over 30 grader, som ut.no skriver at det ikke er mulig å omgå. Bandene stiger til 7,1, 15,7 og 15,3 grader.
 
-På 1352 moh flater det ut, og den bratte bakken rett imot i vest er breen. Kartverket klasser elleve punkter på linja som breterreng, fra 1364 til 1463 moh, og strekket måler 404 meter — med to bare punkter på 1414 og 1421 moh midt i, der isen er brutt. Punktene rett før og etter, 1369 og 1471 moh, er åpent område. Ut.no oppgir «fra ca 1380 moh ... i ca 500 m» og ber deg sjekke med lokalkjente at det er nok snø. Brattaste sammenhengende steg på hele turen ligger her: 28,9 grader mellom 1414 og 1434 moh.
+På 1352 moh flater det ut, og den bratte bakken rett imot i vest er breen. Kartverket klasser elleve punkter på linja som breterreng, fra 1364 til 1463 moh, og strekket måler 404 meter — med to bare punkter på 1414 og 1421 moh midt i, der isen er brutt. Punktene rett før og etter, 1369 og 1471 moh, er åpent område. Ut.no oppgir «fra ca 1380 moh ... i ca 500 m» og ber deg sjekke med lokalkjente at det er nok snø. Brattaste sammenhengende steg på hele turen ligger her: 35,2 grader mellom 1413 og 1436 moh.
 
 Over breen, på 1516 moh, kommer du opp på toppflanken, og ruta dreier sørvest, sør og til slutt sør–søraust til toppunktet på 1668 moh.',
   description_down = 'Ned samme sporet — ut.no kaller det det beste valget i de fleste tilfeller, og legger til at faren for våte løssnøskred øker utover dagen på varme vårdager. Første 200 meter fra toppen peiler 320 grader, altså nordvest, ned til 1653 moh, og 500 meter ned 328: ruta går tilbake langs toppflanken før den faller austover ned breen. Parkeringa ligger 8,0 km unna, på peiling 13 grader.
 
 Det er verdt å vite hvorfor det første trekket går nordvest. Aust fra toppunktet måler 48,1 grader i snitt over 400 meter med et 57,9 graders vindu 130 til 190 meter ut — det er «toppflanken er stupbratt mot Ø» i tall. Sør og søraust måler 42,0 og 36,5 i snitt, med vindu på 71,4 og 71,0 grader bare 10 til 70 meter ut, og nordaust 42,0 med 64,2. Vest og nordvest, der ruta kommer opp og går ned, måler 14,8 og 9,4.
 
-Den andre ruta kjem frå aust, frå Trollheimshytta: 1320 høgdemeter på 11,36 km, over bruene på Slettåa og Folda, forbi Bossvasshøgda på 811 moh og opp i botnen vest for henne. Ved 993 moh kjem ho inn på den same vinterruta frå Gråhaugen som resten av dette kortet skildrar, og derfrå deler dei to hylla under Litj-Snota, breen og toppflanken. Kilden er den same forfattaren, og åtvaringa står uendra: ruta går i skredterreng, «både løsneområder over 30 grader bratt og utløpsområder som det ikke er mulig å omgå», og toppflanken er stupbratt mot aust. Linja frå Trollheimshytta gir frå seg 185 høgdemeter undervegs mot 95 frå Gråhaugen, og brattaste steget måler 28,5 grader mellom 1409 og 1435 moh.',
+Den andre ruta kjem frå aust, frå Trollheimshytta: 1320 høgdemeter på 11,36 km, over bruene på Slettåa og Folda, forbi Bossvasshøgda på 811 moh og opp i botnen vest for henne. Ved 993 moh kjem ho inn på den same vinterruta frå Gråhaugen som resten av dette kortet skildrar, og derfrå deler dei to hylla under Litj-Snota, breen og toppflanken. Kilden er den same forfattaren, og åtvaringa står uendra: ruta går i skredterreng, «både løsneområder over 30 grader bratt og utløpsområder som det ikke er mulig å omgå», og toppflanken er stupbratt mot aust. Linja frå Trollheimshytta gir frå seg 185 høgdemeter undervegs mot 95 frå Gråhaugen, og brattaste steget måler 35,3 grader mellom 1490 og 1514 moh.',
   avalanche_notes  = jsonb_build_array(
     jsonb_build_object(
       'title', 'Ruta',
-      'body',  '1268 høydemeter og 10,22 km, med 95 gitt tilbake. Ut.no fører ruta som skredterreng — «både løsneområder over 30 grader bratt og utløpsområder som det ikke er mulig å omgå» — og terrengklassen som KAST 2, utfordrende. Brattaste hundremetersband på den routede linja er 15,7 grader fra 1100 til 1200 moh og brattaste steg 28,9 grader mellom 1414 og 1434, men de tallene beskriver skisporet, ikke sidene det går under.'
+      'body',  '1268 høydemeter og 10,22 km, med 95 gitt tilbake. Ut.no fører ruta som skredterreng — «både løsneområder over 30 grader bratt og utløpsområder som det ikke er mulig å omgå» — og terrengklassen som KAST 2, utfordrende. Brattaste hundremetersband på den routede linja er 15,7 grader fra 1100 til 1200 moh og brattaste steg 35,2 grader mellom 1413 og 1436, men de tallene beskriver skisporet, ikke sidene det går under.'
     ),
     jsonb_build_object(
       'title', 'Terrenget utenfor',
@@ -3492,14 +3492,14 @@ Følg Engesetvegen oppover og austover til Vallasætra. Dei fyrste 766 metrane g
 
 Frå setra går ein nokre hundre meter inn Langedalen og deretter bratt opp kneiken til Bukkedalen, 791 moh — eventuelt med skia på sekken. Bandet frå 700 til 800 moh er slakt, 8,9 grader over 632 meter grunn, og gjev deg pusterommet før flanken.
 
-Følg dalbotnen innover til 960 moh, der den bratte, lange flanken tek til. Herifrå stig linja jamt og hardt: 19,5 grader frå 1000 til 1100 moh, 22,5 frå 1100 til 1200 og 24,4 frå 1200 til 1300, med brattaste samanhengande parti på 41,3 grader mellom 1247 og 1278 moh — sjølve toppsteget. Toppen står på 1278. Like før flanken tek til går linja 97 meter over eit tjern på 946 moh, opptil 40 meter frå land. Det er naturleg og uregulert, og utan namn i registeret.',
+Følg dalbotnen innover til 960 moh, der den bratte, lange flanken tek til. Herifrå stig linja jamt og hardt: 19,5 grader frå 1000 til 1100 moh, 22,5 frå 1100 til 1200 og 24,4 frå 1200 til 1300, med brattaste samanhengande parti på 50,6 grader mellom 1133 og 1171 moh, i flanken under toppen. Toppen står på 1278. Like før flanken tek til går linja 97 meter over eit tjern på 946 moh, opptil 40 meter frå land. Det er naturleg og uregulert, og utan namn i registeret.',
   description_down = 'Ned same flanken til dalbotnen, ut Bukkedalen og ned kneiken til Vallasætra og Nupen. Fallretninga er aust, og flanken er både oppstigninga og nedkøyringa.
 
 Vanlegaste feil: å navigere seg vestover frå toppen i dårleg sikt. Frå skaret nord for toppen fell Vestrenna 700 høgdemeter i 45 til 50 grader ned i Nupadalen. Ho er ei dokumentert ekspertlinje for dei som vel henne med opne auge, og ein alvorleg feil for dei som ikkje veit at ho er der.',
   avalanche_notes  = jsonb_build_array(
     jsonb_build_object(
       'title', 'Ruta',
-      'body',  'To bratte parti med eit slakt mellomspel: kneiken opp til Bukkedalen mellom 400 og 600 moh (19,9 og 21,8 grader i snitt) og flanken frå 960 moh til toppen, der bandet frå 1200 til 1300 moh måler 24,4 grader og brattaste samanhengande parti 41,3. Begge er skredterreng.'
+      'body',  'To bratte parti med eit slakt mellomspel: kneiken opp til Bukkedalen mellom 400 og 600 moh (19,9 og 21,8 grader i snitt) og flanken frå 960 moh til toppen, der bandet frå 1200 til 1300 moh måler 24,4 grader og brattaste samanhengande parti 50,6. Begge er skredterreng.'
     ),
     jsonb_build_object(
       'title', 'Terrenget rundt',
@@ -3658,7 +3658,7 @@ update public.tk_tours set
 
 Oppe i dalen tek du på deg skia og følgjer det slake dalføret sørvestover til om lag 740 moh. Hald deg på søraustre side på veg inn: det kan gå skred frå Jakta heile vegen inn Konedalen, og dalbotnen er utløpssona.
 
-Ved 740 moh svingar du til høgre og sikk-sakkar opp sida i nordvest til du når toppryggen ved 1240 moh. Sida er ikkje jamn: nedst held ho 25 til 33 grader, men dei siste 200 høgdemetrane opp mot ryggen måler fallinja 40 til 50. Dette er den store skredfella på turen: eit samanhengande heng på 300 til 400 høgdemeter, og det er også nedkøyringa. Linja slik ho er teikna held 35,0 grader som brattaste samanhengande parti — sikk-sakken er kva som gjer talet lågare enn fallinja.
+Ved 740 moh svingar du til høgre og sikk-sakkar opp sida i nordvest til du når toppryggen ved 1240 moh. Sida er ikkje jamn: nedst held ho 25 til 33 grader, men dei siste 200 høgdemetrane opp mot ryggen måler fallinja 40 til 50. Dette er den store skredfella på turen: eit samanhengande heng på 300 til 400 høgdemeter, og det er også nedkøyringa. Linja slik ho er teikna held 43,1 grader som brattaste samanhengande parti, mellom 1244 og 1272 moh der ho når ryggen — sikk-sakken er kva som gjer talet lågare enn fallinja.
 
 Ryggen blir følgd sørvestover heilt til topps på 1589 moh. Hald deg midt på han. Den bratteste hundremeteren på turen ligg mellom 1500 og 1600 moh og måler 24,6 grader i snitt, men det er ikkje hellinga som er problemet på ryggen — det er breidda: ein kryssprofil ved 62,1715 nord gjev 1556 moh på ryggen og 1265 moh berre 52 meter nordvest for han.',
   description_down = 'Vanlegaste nedkøyring er same vegen tilbake: 45 til 50 grader dei fyrste 200 høgdemetrane frå ryggen, så 30 til 35 ned mot Konedalen og slakare vidare ut dalen, og til slutt stien ned til Lisjeholen med skia på sekken igjen. Sida ned frå ryggen er den beste køyringa på turen og samstundes det brattaste og mest skredutsette du er innom.
@@ -3669,7 +3669,7 @@ Den andre feilen er å gå for langt inn i dalen før du tek av. Ruta svingar op
   avalanche_notes  = jsonb_build_array(
     jsonb_build_object(
       'title', 'Ruta',
-      'body',  'Sida frå Konedalen opp til toppryggen er den store skredfella: 25 til 33 grader nedst og 40 til 50 dei øvste 200 høgdemetrane, i eit samanhengande heng på over 400, og du må gjennom henne både opp og ned. Det kan gå skred frå Jakta heile vegen inn Konedalen, så hald deg på søraustre side på veg inn dalen. Brattaste samanhengande parti på linja måler 35,0 grader, og brattaste hundremeter, 1500 til 1600 moh, 24,6 grader i snitt.'
+      'body',  'Sida frå Konedalen opp til toppryggen er den store skredfella: 25 til 33 grader nedst og 40 til 50 dei øvste 200 høgdemetrane, i eit samanhengande heng på over 400, og du må gjennom henne både opp og ned. Det kan gå skred frå Jakta heile vegen inn Konedalen, så hald deg på søraustre side på veg inn dalen. Brattaste samanhengande parti på linja måler 43,1 grader, og brattaste hundremeter, 1500 til 1600 moh, 24,6 grader i snitt.'
     ),
     jsonb_build_object(
       'title', 'Terrenget rundt',
@@ -3801,7 +3801,7 @@ update public.tk_tours set
 
 Gå sørover og opp mot breen. Terrenget er ope heile vegen; det er ingen skog på denne ruta. Stigninga er jamn: 14,1 grader frå 400 til 500 moh, 15,5 frå 500 til 600 og 16,1 frå 700 til 800.
 
-Frå om lag 1197 moh er du inne på Blåbreen. Brattaste hundremeteren ligg like under, 1000 til 1100 moh med 18,3 grader i snitt, og brattaste samanhengande parti måler 22,9 grader mellom 1166 og 1179 moh. Kartverket registrerer breterreng på linja frå 1409 moh.
+Frå om lag 1197 moh er du inne på Blåbreen. Brattaste hundremeteren ligg like under, 1000 til 1100 moh med 18,3 grader i snitt, og brattaste samanhengande parti måler 33,6 grader mellom 1126 og 1147 moh. Kartverket registrerer breterreng på linja frå 1409 moh.
 
 Den siste kilometeren er slak stigning sørover mot toppvarden på 1482 moh: 13,9 grader frå 1300 til 1400 moh og 11,0 over det. Hald deg midt på breen.',
   description_down = 'Ned same linja, nordover over breen og ned til Skinnviksætra. Fallretninga er nord, og på vårføre kan ein òg traversere mot Lisje Eidskyrkja — det er ein variant, ikkje normalruta.
@@ -3812,7 +3812,7 @@ Den andre er toppområdet i skodde eller snødrev. Platået er vidt og flatt, og
   avalanche_notes  = jsonb_build_array(
     jsonb_build_object(
       'title', 'Ruta',
-      'body',  'Moderat helling og bre. Brattaste hundremeteren, 1000 til 1100 moh, måler 18,3 grader og brattaste samanhengande parti 22,9 grader mellom 1166 og 1179 moh; breterrenget er registrert frå 1409 moh på linja. Skredfaren er liten om ein held seg midt på Blåbreen.'
+      'body',  'Moderat helling og bre. Brattaste hundremeteren, 1000 til 1100 moh, måler 18,3 grader og brattaste samanhengande parti 33,6 grader mellom 1126 og 1147 moh; breterrenget er registrert frå 1409 moh på linja. Skredfaren er liten om ein held seg midt på Blåbreen.'
     ),
     jsonb_build_object(
       'title', 'Terrenget rundt',
@@ -3837,7 +3837,7 @@ Videre stiger det til Vinjeronden, 2043 moh. Herfra faller ruta vel hundre høyd
 
 Vanligste feil: å slippe seg vestover fra eggen for å slippe unna gjenstigningen over Vinjeronden. Vestsida av eggen mellom Slottsbrue og toppen faller 33–38° i nesten tre hundre høydemeter, ned i Styggebotn og videre mot Rondvatnet. Det slakner ikke før under 1700 moh, og til da henger du i én sammenhengende bratt flanke under en egg. Det er ingen snarvei — hold eggen til du er tilbake i skaret.
 
-Bjørnhollia er den tredje startstaden på Rondslottet og den einaste i aust: 1538 høgdemeter på 12,32 km frå hyttedøra, nordover langs dalen og inn i Langglupdalen mot Dørålseter, forbi brua over Langglupå og stiskillet til Høgronden, og vestover frå stiskillet på 1764 moh. ut.no gir henne 22,4 km tur/retur og minst fem timar opp. Ho startar lågast av dei tre — 913 moh mot Sprangets 1082 og Nedre Dørålseters 1043 — og gir frå seg 273 høgdemeter undervegs. Det brattaste 30-metersvindauget ligg difor ikkje i stigninga i det heile: 33,7 grader mellom 926 og 896 moh, i søkket ned mot dalmunnen den første kilometeren.',
+Bjørnhollia er den tredje startstaden på Rondslottet og den einaste i aust: 1538 høgdemeter på 12,32 km frå hyttedøra, nordover langs dalen og inn i Langglupdalen mot Dørålseter, forbi brua over Langglupå og stiskillet til Høgronden, og vestover frå stiskillet på 1764 moh. ut.no gir henne 22,4 km tur/retur og minst fem timar opp. Ho startar lågast av dei tre — 913 moh mot Sprangets 1082 og Nedre Dørålseters 1043 — og gir frå seg 273 høgdemeter undervegs. Det brattaste 30-metersvindauget ligg difor ikkje i stigninga i det heile: 45,8 grader mellom 913 og 880 moh, i søkket ned mot dalmunnen, halvannan kilometer inn.',
   avalanche_notes  = jsonb_build_array(
     jsonb_build_object(
       'title', 'Ruta',
@@ -3940,7 +3940,7 @@ where slug = 'skala';
 update public.tk_tours set
   description_up   = 'Start ved grinda på Dragesetvegen innerst i Innvikdalen, 349 moh, inn dalen frå Innvik. Traktorvegen tek deg opp til Remestøylen på 596 moh; bandet frå 300 til 400 moh måler 7,1 grader og 400 til 500 moh 10,6.
 
-Frå setra held du vest-sørvestover opp den tydelege ryggen, med Innvikdalen på høgre hand. Brattaste hundremeteren på turen ligg her, 600 til 700 moh med 17,3 grader i snitt, og brattaste samanhengande parti måler 25,0 grader mellom 520 og 541 moh.
+Frå setra held du vest-sørvestover opp den tydelege ryggen, med Innvikdalen på høgre hand. Brattaste hundremeteren på turen ligg her, 600 til 700 moh med 17,3 grader i snitt; brattaste samanhengande parti ligg høgare, 31,9 grader mellom 1321 og 1340 moh på ryggen.
 
 Forbi Hestehytta på 864 moh sluttar skogen — Kartverket fører terrenget som skog til 805 moh — og resten er open rygg. Frå Hestehytta til toppen stig linja 864 til 1567 moh over 3,3 kilometer, om lag tolv grader i snitt.
 
@@ -3951,7 +3951,7 @@ Vanlegaste feil: å velje ei anna linje ned enn den du gjekk opp. Fjellet har fl
   avalanche_notes  = jsonb_build_array(
     jsonb_build_object(
       'title', 'Ruta',
-      'body',  'Ein lang, brei rygg utan tekniske parti. Brattaste hundremeteren, 600 til 700 moh, måler 17,3 grader, og brattaste samanhengande parti 25,0 grader mellom 520 og 541 moh — begge nede i skogsdelen. Frå Hestehytta og opp held linja om lag tolv grader i snitt.'
+      'body',  'Ein lang, brei rygg utan tekniske parti. Brattaste hundremeteren, 600 til 700 moh, måler 17,3 grader, og brattaste samanhengande parti 31,9 grader mellom 1321 og 1340 moh — det fyrste nede i skogsdelen, det andre oppe på ryggen. Frå Hestehytta og opp held linja om lag tolv grader i snitt.'
     ),
     jsonb_build_object(
       'title', 'Terrenget rundt',
@@ -3971,7 +3971,7 @@ Gå austover langs nordaustsida av dalen mot osen av Sætrevatnet, 606 moh, og f
 
 Ved Kåpevatnet, 1211 moh, svingar ruta sørover og opp Brattebakkane inn på Bohrsbreen. Herifrå er det bre: Kartverket registrerer breterreng på linja frå 1825 moh, og Fri Flyt skildrar svært djupe sprekker på Bohrsbreen. Bandet frå 1300 til 1400 moh måler 20,5 grader, det brattaste hundremeteren på turen.
 
-Vidare opp mot ryggen og ein travers under Veslekåpa før det siste stykket til toppen på 2082 moh. Bandet frå 1900 til 2000 moh måler 17,1 grader, og det brattaste samanhengande partiet på ruta ligg langt nede, 31,1 grader mellom 1081 og 1111 moh, i bakkane opp mot breen. Breutstyr, stegjern og isøks høyrer med.',
+Vidare opp mot ryggen og ein travers under Veslekåpa før det siste stykket til toppen på 2082 moh. Bandet frå 1900 til 2000 moh måler 17,1 grader, og det brattaste samanhengande partiet på ruta ligg her, 46,4 grader mellom 1973 og 2005 moh, under toppen. Breutstyr, stegjern og isøks høyrer med.',
   description_down = 'Ned same vegen: under Veslekåpa, ned breen og Brattebakkane til Kåpevatnet, og deretter den lange, flate innmarsjen ut Bødalen. Fallretninga er vest.
 
 Vanlegaste feil: å behandle Bohrsbreen som ein snøbakke. Sprekkene er djupe, tau og breutstyr er ikkje valfritt, og på veg ned går ein fortare over dei same brøane som ein gjekk sakte over på veg opp.
@@ -3980,7 +3980,7 @@ Den andre er å undervurdere innmarsjen. Fem av ti kilometer ligg under 5 grader
   avalanche_notes  = jsonb_build_array(
     jsonb_build_object(
       'title', 'Ruta',
-      'body',  'Lang, flat innmarsj og ein bratt topp: brattaste hundremeteren, 1300 til 1400 moh, måler 20,5 grader, og brattaste samanhengande parti 31,1 grader mellom 1081 og 1111 moh. Brattebakkane opp mot breen er skredterreng.'
+      'body',  'Lang, flat innmarsj og ein bratt topp: brattaste hundremeteren, 1300 til 1400 moh, måler 20,5 grader, og brattaste samanhengande parti 46,4 grader mellom 1973 og 2005 moh. Brattebakkane opp mot breen er skredterreng.'
     ),
     jsonb_build_object(
       'title', 'Terrenget rundt',
@@ -4149,7 +4149,7 @@ update public.tk_tours set
 
 Å gå rundt koster: linja gir fra seg 113 høydemeter før den begynner å stige for alvor, mot de 54 en rett strek fra bilen til demninga ville gitt. Land bølger, is gjør det ikke. Forbi demninga trekker du opp i søkket øst for nordryggen til Steindalsnosi og inn på Fannaråkbreen rundt 1550 moh. Hold deg lavt og i den slake delen av breen. Den er oppsprukket, og du går den i tau.
 
-Sikt deg inn mot 1688-høgda øst for Fannaråknosi og rund den. Ikke hold høyde over breen: går du for høyt før du svinger opp, blir passasjen opp på austryggen vesentlig brattere. Den bratteste hundremeteren ligger mellom 1800 og 1900 moh og holder 19,8° i snitt over 317 meter grunn, og det bratteste enkelttrinnet på linja måler 27,1° mellom 1859 og 1882 moh.
+Sikt deg inn mot 1688-høgda øst for Fannaråknosi og rund den. Ikke hold høyde over breen: går du for høyt før du svinger opp, blir passasjen opp på austryggen vesentlig brattere. Den bratteste hundremeteren ligger mellom 1800 og 1900 moh og holder 19,8° i snitt over 317 meter grunn, og det bratteste enkelttrinnet på linja måler 36,8° mellom 1859 og 1884 moh.
 
 Rundt knausen kommer du inn på søraustryggen og sommerstien fra Keisarpasset. Følg den over Fannaråknosi og videre langs austryggen til Fanaråken. Det henger store skavler på nordsida hele vegen, og nordsida faller 55–58° i de øverste 90 metrene under kammen — hold deg på sørsida, også når sikten er god.',
   description_down = 'Ned følger du samme linja — øst- og nordøstvendt, jevnt og slakt, med pålitelig vårsnø langt ut i sesongen. Den andre dokumenterte ruta, fra Turtagrø gjennom Helgedalen, gir 1228 høydemeter og er en annen dag.
@@ -4158,7 +4158,7 @@ Vanligste feil: å holde høyde over breen på vei ned, slik at du havner for h�
   avalanche_notes  = jsonb_build_array(
     jsonb_build_object(
       'title', 'Ruta',
-      'body',  'Normalvegen er slak — bratteste hundremeter holder 19,8° i snitt mellom 1800 og 1900 moh, over 317 meter grunn, og det bratteste enkelttrinnet på linja måler 27,1° mellom 1859 og 1882 moh. På Fannaråkbreen er sprekkene faren like mye som snøen. Nede ved starten er faren en annen og enklere å beskrive: isen på et magasin som tappes ned, og ruta er lagt på land utenom den.'
+      'body',  'Normalvegen er slak — bratteste hundremeter holder 19,8° i snitt mellom 1800 og 1900 moh, over 317 meter grunn, og det bratteste enkelttrinnet på linja måler 36,8° mellom 1859 og 1884 moh. På Fannaråkbreen er sprekkene faren like mye som snøen. Nede ved starten er faren en annen og enklere å beskrive: isen på et magasin som tappes ned, og ruta er lagt på land utenom den.'
     ),
     jsonb_build_object(
       'title', 'Terrenget rundt',
@@ -4178,14 +4178,14 @@ Følg skogsvegen oppover mot Kårstadstølen på 495 moh, og hald deretter aust 
 
 Frå Rabbane går det nordover mot skaret aust for Skaravatnet på 715 moh. Partiet mellom 700 og 800 moh er det slakaste på turen, 3,8 grader over 1439 meter grunn. Ruta går vestover langs nordsida av vatnet og forbi Grunnevatnet på 785 moh — og linja ligg på isen undervegs: om lag 240 meter på Skaravatnet, 58 meter på eit unamngjeve tjern på 726 moh i skaret, og om lag 260 meter på Grunnevatnet, opptil om lag 40 meter frå land. Alle tre er naturlege fjellvatn, ikkje magasin, men det er vatn under snøen og skal vurderast som det.
 
-Vest for Grunnevatnet tek du litt høgde og følgjer så den markerte skålformasjonen sørover heilt opp. Bandet frå 1000 til 1100 moh måler 11,1 grader i snitt over 537 meter grunn; brattaste hundremeteren er 13,8 frå 900 til 1000 moh, og brattaste samanhengande parti 22,7 grader mellom 639 og 669 moh. Frå Grunnevatnet til varden på 1209 moh er det 424 høgdemeter på 581 meter grunn — om lag 36 grader i snitt over heile skåla.',
+Vest for Grunnevatnet tek du litt høgde og følgjer så den markerte skålformasjonen sørover heilt opp. Bandet frå 1000 til 1100 moh måler 11,1 grader i snitt over 537 meter grunn; brattaste hundremeteren er 13,8 frå 900 til 1000 moh, og brattaste samanhengande parti 36,2 grader mellom 665 og 688 moh. Frå Grunnevatnet til varden på 1209 moh er det 424 høgdemeter på 581 meter grunn — om lag 36 grader i snitt over heile skåla.',
   description_down = 'Ned same skåla og attende over Grunnevatnet, Skaravatnet og Rabbane. Fallretninga er nord, og skåla er både oppstigninga og nedkøyringa.
 
 Vanlegaste feil: å gå opp skåla på hardt føre utan isøks og stegjern. Fri Flyt fører begge delar som naudsynt utstyr på denne turen, og grunnen står i tala — 36 grader i snitt over dei siste 424 høgdemetrane er ikkje ein bakke ein sklir kontrollert nedover.',
   avalanche_notes  = jsonb_build_array(
     jsonb_build_object(
       'title', 'Ruta',
-      'body',  'Slak til 900 moh og bratt over. Skålformasjonen sør for Grunnevatnet er skredterreng: bandet frå 1000 til 1100 moh måler 11,1 grader i snitt, brattaste samanhengande parti 22,7 grader mellom 639 og 669 moh, og heile strekket frå Grunnevatnet til toppen ligg på om lag 36 grader.'
+      'body',  'Slak til 900 moh og bratt over. Skålformasjonen sør for Grunnevatnet er skredterreng: bandet frå 1000 til 1100 moh måler 11,1 grader i snitt, brattaste samanhengande parti 36,2 grader mellom 665 og 688 moh, og heile strekket frå Grunnevatnet til toppen ligg på om lag 36 grader.'
     ),
     jsonb_build_object(
       'title', 'Terrenget rundt',
@@ -4462,7 +4462,7 @@ update public.tk_tours set
 
 Frå grustaket går traktorvegen og sommarstien nordover gjennom skogen. Løypa er merkt og svingar bratt til venstre etter om lag ein kilometer, opp Gravarbakkane, der linja passerer 1010 moh. Bandtabellen for denne delen er jamn og moderat: 9,7 grader frå 700 til 800 moh over 455 meter grunn, 14,6 frå 800 til 900 over 396, 13,8 frå 900 til 1000 over 414, og 14,0 frå 1000 til 1100 over 393.
 
-Skogen slepper taket på 1107 moh og terrenget er ope frå 1121. Rett over skoggrensa ligg ein liten topp på 1299 moh, og Fri Flyt er tydeleg på kva du gjer med han: «gå på vestsiden av den lille toppen rett etter tregrensen. Derfra svinger du igjen østover og følger ryggen opp til toppen.» Linja går 1288 moh på vestsida av han. Her ligg òg det brattaste steget på turen, 24,1 grader mellom 1422 og 1442 moh.
+Skogen slepper taket på 1107 moh og terrenget er ope frå 1121. Rett over skoggrensa ligg ein liten topp på 1299 moh, og Fri Flyt er tydeleg på kva du gjer med han: «gå på vestsiden av den lille toppen rett etter tregrensen. Derfra svinger du igjen østover og følger ryggen opp til toppen.» Linja går 1288 moh på vestsida av han. Det brattaste steget på turen ligg likevel lågt, 30,0 grader mellom 811 og 829 moh, i den fyrste halvkilometeren.
 
 Vidare opp ryggen stig det jamt til det brattaste bandet, 20,9 grader frå 1400 til 1500 moh over 272 meter grunn, og linja passerer 1465 moh i det. Fortoppen kjem på 1608 moh — den ut.no fører som «den første på 1610 moh». Frå han fell ryggen 20 meter ned i skaret på 1589, og så er det flatt: bandet frå 1500 til 1600 moh måler 4,4 grader over 1306 meter grunn og 1600 til 1700 måler 6,5 over 535. «Den siste delen av ryggen mot toppen er lang og flat», skriv Fri Flyt, og det er 400 meter nordover til varden på 1670,5 moh — 1671 etter begge kjeldene.',
   description_down = 'Standardnedkøyringa går ikkje tilbake same vegen frå toppen. Fri Flyt: «Den vanligste ruta går fra toppen på omlag 1600 moh og vestover ned den store hvite flanken. Skal du ned til bilen, tar du av sørover rett før tregrensen og kommer inn på den samme ruta som oppstigningen.» Vestflanken måler 11,3 grader i snitt over 400 meter og sørvest 12,3 — det er den store, opne flanken, og det er difor kortet fører V.
@@ -4516,9 +4516,9 @@ where slug = 'nibbi';
 update public.tk_tours set
   description_up   = 'Start ved den brøytte parkeringslomma ved stølsområdet Sildegjerdet, 938 moh. Fri Flyt: «Følg RV52 vestover fra Hemsedal sentrum i 19,5 km og parker i brøytet parkeringslomme på venstre side, 1,5 km etter brua på RV52.» Parkeringa er kartlagd og avgiftsfri. Rv 52 over Hemsedalsfjellet er vinteropen, men kan gå i kolonne eller stengje i uvêr.
 
-Dei første 885 metrane er flate — 4,1 grader — og linja kryssar elva 224 meter inne, der terrengmodellen svarer terrengklasse Elv på 926,1 moh. Så byrjar sjølve oppstigninga gjennom glissen bjørkeskog og inn i den vide dalen til Rupebekken, med korridorpunktet på 1051 moh. Kartverket fører siste skog på 1115 moh og ope terreng frå 1133. Her ligg det bratte på turen: 18,9 grader frå 1000 til 1100 moh og 20,1 frå 1100 til 1200, som er brattaste bandet.
+Dei første 885 metrane er flate — 4,1 grader — og linja kryssar elva 224 meter inne, der terrengmodellen svarer terrengklasse Elv på 926,1 moh. Så byrjar sjølve oppstigninga gjennom glissen bjørkeskog og inn i den vide dalen til Rupebekken, med korridorpunktet på 1051 moh. Kartverket fører siste skog på 1115 moh og ope terreng frå 1133. Her ligg det bratte på turen: 18,9 grader frå 1000 til 1100 moh og 20,1 frå 1100 til 1200, som er brattaste bandet, med brattaste steget på 29,0 grader mellom 1164 og 1181 moh.
 
-Over det flatar det av til 14,5 grader frå 1200 til 1300 og reiser seg ein gong til, 19,3 frå 1300 til 1400, med brattaste steget på 24,0 grader mellom 1348 og 1368 moh. Flata Fri Flyt lovar kjem på 1397 moh — hundre meter høgare enn dei skriv — og dei siste 212 høgdemetrane stig 14,3 og så 7,8 grader over 698 meter grunn til varden.',
+Over det flatar det av til 14,5 grader frå 1200 til 1300 og reiser seg ein gong til, 19,3 frå 1300 til 1400. Flata Fri Flyt lovar kjem på 1397 moh — hundre meter høgare enn dei skriv — og dei siste 212 høgdemetrane stig 14,3 og så 7,8 grader over 698 meter grunn til varden.',
   description_down = 'Ned same vegen, nordaustover. Nordaust måler 10,5 grader i snitt ut til ein kilometer og aust 14,5, så det er slakt heile vegen tilbake. Fri Flyt oppgir at «du kan enten gå ned samme vei eller i rennene du så på vei opp», og rennene er skredterreng.
 
 Toppen er eit platå, og det er den viktigaste opplysninga om fjellet. Sørvest måler −0,2 grader i snitt ut til ein kilometer fordi bakken stig vidare, søraust 0,6 og sør 3,8. Frå varden ser fire retningar like flate ut, og tre av dei fører ingen stad du vil.
@@ -4527,7 +4527,7 @@ Det bratte ligg langt frå ruta. Nordflanken har eit 60-metersvindu på 41,1 gra
   avalanche_notes  = jsonb_build_array(
     jsonb_build_object(
       'title', 'Ruta',
-      'body',  'Fri Flyt fører turen som KAST 1 – Enkelt med bratteste punkt under 30 grader, og skriv likevel at «du beveger deg i skredterreng til du kommer opp på 1300 meter». Begge deler er sanne: brattaste bandet på linja er 20,1 grader og brattaste steg 24,0, men det er lia rundt som er brattare enn linja. Kortet fører turen som grad 2 av den grunnen.'
+      'body',  'Fri Flyt fører turen som KAST 1 – Enkelt med bratteste punkt under 30 grader, og skriv likevel at «du beveger deg i skredterreng til du kommer opp på 1300 meter». Begge deler er sanne: brattaste bandet på linja er 20,1 grader og brattaste steg 29,0, men det er lia rundt som er brattare enn linja. Kortet fører turen som grad 2 av den grunnen.'
     ),
     jsonb_build_object(
       'title', 'Sikt',
@@ -4734,7 +4734,7 @@ Over skuldra på 1153 moh flatar det ut ei stund, 13,3 grader frå 1100 til 1200
 
 Vanlegaste feil: å legge nedkøyringa i den øvre lia mot Bjørnsetstølen fordi ho ser open ut. Der er det skredbaner. Den andre er å undervurdere innmarsjen: 1490 meter tilnærma flat grunn er tungt å gå attende i mjuk snø, og turen er lengre enn høgdemetrane tilseier.
 
-Kjelda fører to startsted, eitt på kvar side av fjellet: «Oppstigningen fra nord starter ved Skiple i Raundalen, snaut tjue kilometer øst fra Voss. Oppstigningen fra sør starter i Skaftedalen.» Og ho seier kvifor: «Det er to gode utgangspunkt for denne turen, et på den skyggefulle nordsiden, og et som ligger solvendt mot sør.» Appens rute er nordruta; sørruta ligg no ved sida av henne. Frå enden av Skaftedalsvegen på 486 moh går linja i slakt terreng nordaustover opp dalen forbi 662 og 724 til stølen Skytjeset på 882 — kjelda sine «omtrent 890 moh» — og derfrå på ryggformasjonen over 1063, flanken på 1249 og 1368 til topps. 1007 høgdemeter på 5,76 km mot 1121 på 5,93 km frå Skiple: nesten same tur, motsett sol. Skogen slepper på 758 moh etter 2,84 km, mot 781 på nordruta. Brattaste hundremetersbeltet er 19,5 grader frå 900 til 1000 moh, og brattaste 30-metersvindauget 27,7 mellom 1210 og 1234, mot 31,4 på nordruta. Kjelda gjev eit val øvst — anten det bratte, markerte dalsøkket eller ryggformasjonen og flanken; linja her er ryggen, som er den kjelda skildrar heilt til topps.',
+Kjelda fører to startsted, eitt på kvar side av fjellet: «Oppstigningen fra nord starter ved Skiple i Raundalen, snaut tjue kilometer øst fra Voss. Oppstigningen fra sør starter i Skaftedalen.» Og ho seier kvifor: «Det er to gode utgangspunkt for denne turen, et på den skyggefulle nordsiden, og et som ligger solvendt mot sør.» Appens rute er nordruta; sørruta ligg no ved sida av henne. Frå enden av Skaftedalsvegen på 486 moh går linja i slakt terreng nordaustover opp dalen forbi 662 og 724 til stølen Skytjeset på 882 — kjelda sine «omtrent 890 moh» — og derfrå på ryggformasjonen over 1063, flanken på 1249 og 1368 til topps. 1007 høgdemeter på 5,76 km mot 1121 på 5,93 km frå Skiple: nesten same tur, motsett sol. Skogen slepper på 758 moh etter 2,84 km, mot 781 på nordruta. Brattaste hundremetersbeltet er 19,5 grader frå 900 til 1000 moh, og brattaste 30-metersvindauget 33,2 mellom 1211 og 1231, mot 31,4 på nordruta. Kjelda gjev eit val øvst — anten det bratte, markerte dalsøkket eller ryggformasjonen og flanken; linja her er ryggen, som er den kjelda skildrar heilt til topps.',
   avalanche_notes  = jsonb_build_array(
     jsonb_build_object(
       'title', 'Ruta',
@@ -5139,7 +5139,7 @@ update public.tk_tours set
 
 Følg stien vidare mot Gygrastølvatnet på 492 moh. Bandet frå 400 til 500 moh er det slakaste på turen, 5,6 grader over 1035 meter grunn — det er flata rundt vatnet. Anleggsvegen endar ved vatnet, og over det finst det ingen kartlagd sti der linja går: den nærmaste ligg opptil 526 meter unna, ved 566 moh, så ryggen er ditt eige vegval.
 
-Frå vatnet går du opp på sjølve ryggen og følgjer han. Skogen held til 590 moh; over det er alt ope. Stigninga er jamn og aukar gradvis: 16,8 grader frå 600 til 700 moh, 19,4 frå 800 til 900 og 19,8 frå 1000 til 1100, som er brattaste hundremeteren. Brattaste samanhengande parti måler 25,4 grader mellom 1042 og 1063 moh.
+Frå vatnet går du opp på sjølve ryggen og følgjer han. Skogen held til 590 moh; over det er alt ope. Stigninga er jamn og aukar gradvis: 16,8 grader frå 600 til 700 moh, 19,4 frå 800 til 900 og 19,8 frå 1000 til 1100, som er brattaste hundremeteren. Brattaste samanhengande parti, 36,0 grader mellom 1322 og 1345 moh, er det korte steget rett under toppen.
 
 Over 1300 moh legg ryggen seg nesten flat — 4,7 grader over 565 meter grunn — og fører fram til toppen på 1347 moh.',
   description_down = 'Ned same ryggen, nordover mot Gygrastølvatnet og vidare ned anleggsvegen til Ænes. Nedste delen er skogskøyring, og ho er tung når snøen er blaut.
@@ -5148,7 +5148,7 @@ Vanlegaste feil: å velje nordvestflanken fordi han er brattare og kortare. Han 
   avalanche_notes  = jsonb_build_array(
     jsonb_build_object(
       'title', 'Ruta',
-      'body',  'Ein lang rygg med jamn stigning: brattaste hundremeteren, 1000 til 1100 moh, måler 19,8 grader, og brattaste samanhengande parti 25,4 grader mellom 1042 og 1063 moh. Ryggen er linja både opp og ned.'
+      'body',  'Ein lang rygg med jamn stigning: brattaste hundremeteren, 1000 til 1100 moh, måler 19,8 grader, og brattaste samanhengande parti 36,0 grader mellom 1322 og 1345 moh. Ryggen er linja både opp og ned.'
     ),
     jsonb_build_object(
       'title', 'Terrenget rundt',
@@ -5202,11 +5202,11 @@ Vanligste feil: å slippe seg rett ned fra toppen i stedet for å gå tilbake ti
 
 Under Skarshaug møter du bakken mellom 600 og 700 moh igjen, nå vestvendt og med sol på seg fra midt på dagen. Kjør den mens snøen fortsatt bærer; senere blir den tung og våt helt ned i skogen.
 
-Fri Flyt går ikke opp Melderskin fra Kletta i det hele tatt. Startstedet deres er Myrdalsvatnet på 367 moh — det samme som Juklavasstinden går fra — og ruta følger grusveien litt tilbake til en traktorvei på 430, videre til Nipeelva på 525, opp langs elva og så den tydelige ryggen over Omnetjørnene på 1033 til Omnen på 1155 og toppryggen på 1204. 1101 høydemeter på 5,10 km, mot 1273 på 4,90 km fra Kletta: kortere klatring, lengre linje, og 1,84 km med skog mot 1,76 — furua slipper på 659 moh her mot 618 der. Beltet fra 600 til 700 moh måler 21,8 grader og det bratteste 30-metersvinduet 33,8 grader mellom 1258 og 1284 — brattere enn de 30,6 normalruta måler. Omnetjørnene ligger øst for ryggen — til venstre når du går sørover, som kilden sier — og linja går ikke over dem. «Ta med stegjern og øks» står i faktaboksen til denne ruta, ikke til den andre.',
+Fri Flyt går ikke opp Melderskin fra Kletta i det hele tatt. Startstedet deres er Myrdalsvatnet på 367 moh — det samme som Juklavasstinden går fra — og ruta følger grusveien litt tilbake til en traktorvei på 430, videre til Nipeelva på 525, opp langs elva og så den tydelige ryggen over Omnetjørnene på 1033 til Omnen på 1155 og toppryggen på 1204. 1101 høydemeter på 5,10 km, mot 1273 på 4,90 km fra Kletta: kortere klatring, lengre linje, og 1,84 km med skog mot 1,76 — furua slipper på 659 moh her mot 618 der. Beltet fra 600 til 700 moh måler 21,8 grader og det bratteste 30-metersvinduet 39,7 grader mellom 1317 og 1345 — brattere enn de 36,5 normalruta måler. Omnetjørnene ligger øst for ryggen — til venstre når du går sørover, som kilden sier — og linja går ikke over dem. «Ta med stegjern og øks» står i faktaboksen til denne ruta, ikke til den andre.',
   avalanche_notes  = jsonb_build_array(
     jsonb_build_object(
       'title', 'Ruta',
-      'body',  'Den bratteste hundremeteren ligger mellom 800 og 900 moh og holder 23,9°; bratteste enkeltsteg på linja måler 30,6°, mellom 720 og 744 moh. Linja selv passerer aldri 30°, men den ligger i lia du må gjennom uansett, og lia er brattere enn sporet gjennom den. Ta den vurderingen nede ved skogkanten, mens det ikke koster deg noe å snu.'
+      'body',  'Den bratteste hundremeteren ligger mellom 800 og 900 moh og holder 23,9°; bratteste enkeltsteg på linja måler 36,5°, mellom 848 og 874 moh. Linja selv passerer aldri 30°, men den ligger i lia du må gjennom uansett, og lia er brattere enn sporet gjennom den. Ta den vurderingen nede ved skogkanten, mens det ikke koster deg noe å snu.'
     ),
     jsonb_build_object(
       'title', 'Terrenget rundt',
@@ -5392,7 +5392,7 @@ Den andre feilen er lengda. Elleve kilometer inn — 11,31 km måler linja — m
 where slug = 'saebyggjenuten';
 
 update public.tk_tours set
-  description_up   = 'Frå parkeringa på Øygardstøl, 641 moh, følgjer du Lysevegen sørover. Vegen er vinterstengd — OSM har motor_vehicle:conditional=no @ Nov-May og snowplowing=no på fylkesveg 4224, og Sirdal kommune stadfestar det — så dette er ein vårtur og ikkje ein vintertur. Linja her ligg aldri meir enn 100 meter frå kartlagd veg, men ho kuttar hårnålssvingane: det brattaste 30-meterssteget på heile ruta, 24,4 grader mellom 673 og 687 moh, ligg 86 meter frå vegbanen og er ein sving og ikkje ei stigning.
+  description_up   = 'Frå parkeringa på Øygardstøl, 641 moh, følgjer du Lysevegen sørover. Vegen er vinterstengd — OSM har motor_vehicle:conditional=no @ Nov-May og snowplowing=no på fylkesveg 4224, og Sirdal kommune stadfestar det — så dette er ein vårtur og ikkje ein vintertur. Linja her ligg aldri meir enn 100 meter frå kartlagd veg, men ho kuttar hårnålssvingane — svingar, ikkje stigning. Det brattaste 30-meterssteget på heile ruta ligg oppe: 29,6 grader mellom 1083 og 1102 moh, på Kjeragplatået.
 
 Ved Stølsdalen bru på 850 moh tek anleggsvegen mot Langavatn av, og du følgjer Langvassvegen sørvestover. På 925 moh går linja 225 meter over eit umerkt vatn like ved vegen, høgst 24 meter frå land. Terrengklassen i DTM1 er Innsjø og ikkje InnsjøRegulert, og OSM-polygonet (way 1312542069, ref:nve:vann 195944) ber ingen reservoartaggar — det er eit naturleg vatn, ikkje eit magasin. Vegen er den eigentlege ferdselslinja her; vatnet ligg der linja skjer svingen.
 
@@ -5407,7 +5407,7 @@ Vanlegaste feil på platået: å gå nordover for å sjå ned i Lysefjorden. Ret
   avalanche_notes  = jsonb_build_array(
     jsonb_build_object(
       'title', 'Ruta',
-      'body',  'Skredterreng i vanleg meining finst nesten ikkje på denne linja. Brattaste 30-meterssteg er 24,4 grader og ligg på ein vegsving på 673 moh; brattaste 60 meter er 21,2 grader mellom 1077 og 1112 moh; brattaste 100 meter er 19,5 grader og brattaste 400 meter 11,3 grader. Ingen av dei sju høgdebanda over 700 moh måler meir enn 5,8 grader i snitt. Det som faktisk kan gå gale her er å tråkke gjennom is på eit av dei fem vatna seint i sesongen, og å bomme på kanten mot nord.'
+      'body',  'Skredterreng i vanleg meining finst nesten ikkje på denne linja. Brattaste 30-meterssteg er 29,6 grader mellom 1083 og 1102 moh, på platået; brattaste 60 meter er 24,9 grader og brattaste 100 meter 22,8, begge i eit søkk på platået ned til 1067 moh, og brattaste 400 meter 11,8 grader. Ingen av dei sju høgdebanda over 700 moh måler meir enn 5,8 grader i snitt. Det som faktisk kan gå gale her er å tråkke gjennom is på eit av dei fem vatna seint i sesongen, og å bomme på kanten mot nord.'
     ),
     jsonb_build_object(
       'title', 'Terrenget rundt',
