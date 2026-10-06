@@ -6153,6 +6153,49 @@ contradicted itself and is rewritten. Sæbyggjenuten's guide said its treeline
 had not been measured point by point because Kartverket's API was down; it has
 been now, at 1044 m.
 
+## The vertical round
+
+Every card's `verticalM` and every guide's opening figure is `gainM`: the sum
+of the rises between consecutive vertices, about 45 m apart, each one DTM1
+from Kartverket's point API. The shape round found one place where that sum
+walked past a hill — Fanaråken's Turtagrø line under a moraine bump — so this
+round read every line's height again at 5 m to see whether there are more.
+
+`check_gain.py` does it from 1 m WCS tiles, 200 m of line per request (about
+6 000 requests for the 1 243 km of line, twenty minutes), and reports the
+cumulative ascent of the 5 m profile with 2 m and 5 m of hysteresis — a climb
+counts only once it has risen that far above the last low, so a boulder or a
+hummock does not add a metre each time the line steps over it — and the
+largest height by which the ground stands off the straight line between two
+vertices. On the three tours it was calibrated on it agrees with `gainM` to
+within 1–11 m.
+
+**The figures stand.** On 212 of 223 routes the 5 m profile agrees with the
+vertex sum to within 2 % or 15 m. The other eleven:
+
+| route | gainM | 5 m, 5 m hysteresis | where most of it is |
+| --- | --- | --- | --- |
+| `moysalen/vestryggen` | 1596 | 1672 (+76) | the ridge, 1093–1192 m |
+| `vassdalstinden/normalruta` | 1210 | 1269 (+59) | the summit block, 1074–1278 m |
+| `snotindan/lobergsdalen` | 1544 | 1597 (+53) | spread along the line |
+| `strandtinden/heggedalen` | 1144 | 1194 (+50) | 895–1004 m |
+| `hamperokken/normalruta` | 1383 | 1422 (+39) | spread along the line |
+| `jakta/normalruta` | 1569 | 1603 (+34) | spread along the line |
+| `reinspalen/geitryggen` | 1367 | 1398 (+31) | the ridge, 681–905 m |
+| `forkledalstindan/sydsiden` | 985 | 1015 (+30) | 824–901 m |
+| `langlitinden/rytterklofta` | 1148 | 1177 (+29) | 1129–1230 m |
+
+and three single features of 15–20 m between two vertices: a dip on
+Skjellesvikgalten at 778 m, one on Lodalskåpa at 1973 m, and Møysalen's notch
+at 1190 m, which its guide already describes.
+
+The extra is almost all on broken ridges and summit blocks, where the straight
+segment between two vertices runs over knolls and notches a skier goes round.
+The vertex sum is the closer figure for what a tour climbs, it is the
+definition every card in the catalogue uses, and replacing it on eleven
+routes would make those eleven the only ones measured differently. The
+numbers were left as they are.
+
 ## Network
 
 Everything is public and unauthenticated:
