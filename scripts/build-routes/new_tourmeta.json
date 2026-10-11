@@ -1,6 +1,6 @@
 {
  "bispen": {
-  "season": "mai–juni",
+  "season": "mai–jun",
   "aspect": "SØ",
   "grade": 4,
   "gradeReason": "Sjølve skiterrenget frå Trollstigen om Bispevatnet til skaret er slakt og greitt, grad 2 for seg sjølv. Turen til toppen er likevel ekspertterreng: dei siste 333 høgdemetrane opp nordryggen er klyving på laus, luftig ur, og DTM-profilen har to trinn på 44 grader over 60-70 m. Skia må av i skaret, og fjellet skal ikkje gåast i dårleg sikt.",
@@ -80,7 +80,7 @@
   "notes": "Vesoldo er ein dokumentert toppturfjell – Hardangerfjord Adventure fører guida skiturar på «Vesoldo/Tørvikanuten» og oppgjev 700–1000 høgdemeter, som passar med dei 834 vi måler frå Byrkjenes. Men ingen publiserer ei eiga skiruteskildring for fjellet. Korridoren følgjer derfor den dokumenterte normalruta frå Byrkjenes i den nedre delen, og er over tregrensa lagd på den sørvestryggen DTM1 viser er den slake sida (SV 9,5° i snitt mot S 20,8°, V 48,3° og NV 55,3°) – ikkje på den raudmerka sommarstien. Det finst to andre dokumenterte oppgangar som ikkje er brukte her: frå Perslå via Osadal, Finnhellersvatnet og Knostenakkjen (aust), og frå Ryssing via Skorsete og Tørvikenuten (søraust); ingen av dei har kartlagd parkering nær starten."
  },
  "besshoe": {
-  "season": "mars–mai",
+  "season": "mar–mai",
   "aspect": "Ø",
   "grade": 3,
   "gradeReason": "1296 høydemeter og 9,3 km én vei, med toppen på 2257 moh. Oppstigningen er ikke teknisk — bratteste målte steg er 34° i Grotådalen og opp på Brue, og selve austryggen holder 18–20°. Det som gjør turen krevende er lengden, høyfjellet, og et stort rundt topplatå med 55–70° fall på nord- og vestsida der navigering i dårlig sikt er den reelle vanskeligheten.",
@@ -133,7 +133,7 @@
   "notes": "No ski-specific route description for Breitinden could be found, and that is the main reason confidence is low. Guided operators list Senja's highest peak as a ski-touring objective, but every line-by-line description found (ut.no, Peakbook, Utemagasinet) is the normal route in summer form: Svarthola parking -> Svartholvatnet -> east over the ridge -> Breitindvatnet -> along the north-east side of the lake -> the shelf south-west of the summit ridge -> the south-west ridge, called 'airy and steep, comparable to many Jotunheimen peaks' with several small exposed climbing sections. The approach valley is the same for ski and foot - there is no other feasible way in from Fv862 - so the corridor pins the valley, not the footpath's zig-zags. The corridor ends at the 762.9 m shoulder because the ridge above measures 45-52 degrees; treat everything above roughly 850 m as a boot-and-scramble finish. Note also that the summit used here (1007.0 m) is the south-east top, 0.46 km from the SSR point named Breitinden, which reads 983.2 m."
  },
  "folarskardnuten": {
-  "season": "mars–mai",
+  "season": "mar–mai",
   "aspect": "S",
   "grade": 3,
   "gradeReason": "Sjølve klatringa er ikkje teknisk, men turen er lang - nær 12 km og 920 høgdemeter kvar veg - og har eit kort, bratt trinn ut av Folarskardet som måler 36,7 grader over 41 m på den slakaste linja eg finn. Rutebeskrivinga tilrår stegjern og lett isøks når snøen er hard eller isete.",
@@ -190,7 +190,7 @@
   "notes": "Geitgallien (SSR spelling; Geitgaljen locally) is Lofoten's second highest peak, and Topptursentralen grades the ski line KAST 4 - ekstremt, 'only for experienced skiers, not recommended without a guide'. The corridor stops at 928.5 m: from there to the summit is 41.9 degrees over 174 m, the described skar usually means carrying the skis, and the final section wants crampons and an axe in hard conditions. The documented ski descent is sørrenna, a ~600 m south-facing gully at 35-40 degrees that comes out in another valley and needs a second car; the corridor describes the ascent up Lilandsdalen, which is also the descent for parties with one car, so the aspect is given as NV. Two vertical figures are published, 1070 m (Toppturnorge) and 1082 m (Topptursentralen); DTM1 gives 1085.2 - 19.8 = 1065.4 m from this trailhead."
  },
  "glittertinden": {
-  "season": "juni–juli",
+  "season": "jun–jul",
   "aspect": "SØ",
   "grade": 3,
   "gradeReason": "12,6 km og 1154 høydemeter én vei, hvorav 7 km bare er innmarsj i Veodalen. Selve stigningen er slak — bratteste målte steg på korridoren er 34° på flanken over Steinbudalen og 41° på den siste kneika under toppen, resten ligger på 22–25°. Det som løfter turen til krevende er lengden, høyden (2451 moh) og at øvre del ligger på Glitterbrean.",
@@ -270,7 +270,7 @@
   "notes": "SUMMIT DISPUTE RESOLVED IN FAVOUR OF summits.json - no override. The 1042 m figure matches no Keipen on Senja: DTM1 gives 938.4 m at the resolved point (69.49530,17.72324) and 660.9 m at the other Senja Keipen (69.32562,17.14972), and Senja's highest peak of any name is Breitinden at 1007.0 m, so a 1042 m Senja Keipen cannot exist. Friflyt, ut.no and nordnorge.com all describe the ski classic as Keipen 938 moh above Mefjordbotn/Fjordgård, paired with Grytetippen 1.05 km west, and Friflyt's stated 838 m of ascent reproduces to within 1.3 m from the mapped Fv862 parking at 101.7 m. Friflyt gives the aspect as 'sør til sørøst', the season as January-May, KAST 2 - utfordrende, 4-5 hours round trip."
  },
  "kjerag": {
-  "season": "mai–juni",
+  "season": "mai–jun",
   "aspect": "Ø",
   "grade": 2,
   "gradeReason": "455 netto høgdemeter og 6,6 km korridor i slakt platåterreng; friflyt kallar det «slakt og passar for dei fleste». Graderinga blir ikkje lågare enn 2 fordi Kjeragplatået er orienteringsterreng utan merking, med korte kantar og djupe kløfter, og fordi nordsida er ei tusen meter høg vegg mot Lysefjorden.",
@@ -429,7 +429,7 @@
   "notes": "Godt dokumentert tur. Friflyt: 'Oppstigningen følger vanligvis sommerløypa eller i skaret litt nord for denne. Gå fra vestsiden av elva rett mot ryggen og følg denne helt til topps', 800 høgdemeter, 3-4 timar. OSM har ein eigen piste:type=skitour-veg (way 402784116) opp same sida, og han og den merkte sommarstien (way 167235638) følgjer kvarandre innanfor 200-400 m - korridoren er lagd mellom dei. Målt vertikal frå p-plassen til toppen er 835,6 m (893,12 til 1728,68), som stemmer med outdooractive sine 834 m og friflyt sine 800 m. Straklinjelengda på korridoren er 3,6 km; publiserte 4,6-4,8 km er den svingande stien. Alle fire koordinatane er lesne tilbake frå ws.geonorge.no/hoydedata/v1/punkt og kjem ut som terreng 'ÅpentOmråde' over tregrensa."
  },
  "storronden": {
-  "season": "mars–mai",
+  "season": "mar–mai",
   "aspect": "SV",
   "grade": 2,
   "gradeReason": "1057 høydemeter og 9,8 km én vei, hvorav de første seks kilometerne bare er innmarsj til Rondvassbu og stiger 132 høydemeter. Fjellet begynner bak hytta: 698 høydemeter på 2,6 km opp vestryggen, jevnt og monotont, med 32° som bratteste målte steg. Ingen egg og ingen gjenstigning — dette er en enklere tur enn Rondslottet fra samme parkering.",
@@ -481,7 +481,7 @@
   "notes": "Korridoren stopper med vilje på Middagsaksla, 1076 moh. Turrapportene fra vinterbestigninger er samstemte: «Over ca. 1100 moh måtte skiene byttes mot stegjern og isøks», og «hele ryggen fra Middagsaksla og opp til toppen av Hamperokken ble gått til fots». Skiene settes igjen enten på Middagsaksla eller på forvarden 1190 moh (69.56466, 19.34805, DTM1 1190.02) før renna og klyvepartiet. De siste 1,4 km er derfor ikke skispor, og korridoren skal ikke leses som at de er det. Linja som genereres fra Middagsaksla til toppen vil måtte følge ryggen - DTM1 gir 1076-1157-1093-1190-1219-1208-1256-1331-1393 langs ryggkammen, altså både motbakke og motfall og et siste trinn som lokalt måler over 45 grader. Det er reell terreng, ikke en feil i korridoren, men det er verdt å vite hvis rutegenereringen klager. Ingen enkeltstående publisert skiruteskildring for Hamperokken ble funnet; korridoren er bygd på tre uavhengige turrapporter som beskriver samme startsted, samme rygg og samme sted for skiavtak. Confidence er derfor medium, ikke high."
  },
  "hornindalsrokken": {
-  "season": "mars–mai",
+  "season": "mar–mai",
   "aspect": "Ø",
   "grade": 4,
   "gradeReason": "Lang tur i alpint terreng: 1139 høgdemeter og 6,4 km korridor, med ein sørrygg som går opp og ned og ein travers over austsida ovanfor Kjellstaddalen før ein kjem opp på toppryggen. Sjølve skiruta held seg under 37 grader målt over 25-metersvindauge, men dei siste 103 høgdemetrane er smal, eksponert rygg med 55 grader ned austsida og om lag 75 grader ned vestsida, og blir normalt gått med skia på sekken og isøks når snøen er hard.",
@@ -509,7 +509,7 @@
   "notes": "Fri Flyt rute 3.5.1 'Opp frå Langøylia' (KAST 3 Komplekst): 1150 høgdemeter, 7 km, 5 timar, tilkomst 'Langøylia. Følg hovudvegen mellom Hellesylt og Hornindal. Ta av opp mot hyttefeltet Langøylia om lag 10 kilometer vest for Hellesylt (mellom Tronstad og Røyrhus) og parker på eigna plass.' Rutelinja i teksten er 'Ta opp lia aust (til høgre) for Gjøelva ... til du når Aksla (912 moh.). Følg ryggen til Trollaksla (1250 moh.) og sørryggen vidare litt opp og ned til Sætrenibba (1374 moh.) og skaret nord for denne. Frå skaret rundar ein austover (høgre) inn i sida som leier ned mot Kjellstaddalen. Traverser denne sida til du kjem opp på ryggen nord for toppen, og følg denne til topps.' Alle fire punkta er stadfesta mot DTM1: Trollaksla 1255,4 (Fri Flyt 1250), Sætrenibba 1369,6 (Fri Flyt 1374), skaret nord for Sætrenibba 1226 ved 62.0675,6.6681, Aksla 921,3. Målt vertikal frå start til topp er 1139,4 m mot dei publiserte 1150. Kryssjekk av ryggen nord for toppen viser fire 25-metersvindauge over 42 grader mellom 1300 og 1380 moh, medan aust-ribba som korridoren følgjer held seg under 37 grader heile vegen frå skaret - det er difor korridoren går den vegen. Merk at 'Gjøelva' ikkje finst i SSR og at eg ikkje har kunna stadfeste kva side av bekken stien går på; korridoren er lagd etter terrenget og etter dei namngjevne toppunkta, ikkje etter bekken. Alle koordinatar er lesne tilbake frå ws.geonorge.no/hoydedata/v1/punkt."
  },
  "lonahorgi": {
-  "season": "feb–april",
+  "season": "feb–apr",
   "aspect": "NØ",
   "grade": 2,
   "gradeReason": "Lang, men teknisk enkel linje. Målt frå waypoint til waypoint stig korridoren 12, 17, 15, 11 og 7 grader, og brattaste terreng innanfor 30 m av noko waypoint er 24 grader ved Breiming. Nordryggen frå punkt 1305 til toppen tek berre 107 høgdemeter på 893 m. Utfordringa er lengda - 6,9 km korridor og 1273 høgdemeter - og at ein startar på 139 moh., ikkje bratta.",
@@ -537,7 +537,7 @@
   "notes": "Fri Flyt (Lønahorgi, 1410 moh., 1330 høgdemeter) gjev to startstader. Den som kan brukast her er 'den nedlagte gården Høyland sør for Tvinne. Ta av til venstre ved Grotlandsbrua omtrent en kilometer nord for innløpet av Lønavatnet. Følg bilveg og så traktorveg', 3-4 timar opp, og rutelinja 'Følg skogsbilvei sørover til du kommer til Bergstølen. Herfra tar du deg opp det trange dalføret ved Breiming. Følg slakeste vei mot Svartahorge (1037) til venstre for det trigonometriske punktet 835. Følg rundt til høyre for selve Svartahorge, og følg ryggen mot selve toppen.' Alle namna er stadfesta: Bergsstølen (SSR, 60.69687,6.45979) 379,7 m, Breiming (SSR Li, 60.69543,6.44614) 609,8 m, trigpunktet 834,3 m ved 60.70200,6.44400, Svartahorgi (SSR, 60.70634,6.43978) 1029,0 m mot dei publiserte 1037, og punkt 1305 på 1305,2 m. Straklinja start-topp er 3496 m med retning 253 grader (VSV) og korridoren er 6,9 km. Confidence er medium av to grunnar: dei fleste går faktisk turen frå toppen av Horgaletten-heisen på om lag 920 moh. og korta ned til 490 høgdemeter, og det er ikkje dokumentert at Høylandsvegen blir brøytt fram til den nedlagde garden om vinteren. Alle koordinatar er lesne tilbake frå ws.geonorge.no/hoydedata/v1/punkt."
  },
  "rana": {
-  "season": "mars–mai",
+  "season": "mar–mai",
   "aspect": "SØ",
   "grade": 3,
   "gradeReason": "Lang fjord-til-topp-tur på 1500 høgdemeter i alpint terreng, KAST 3 Komplekst hos Fri Flyt. Sjølve skiruta går opp ein bratt bakke frå Nordkopen til egga og deretter ein brei rygg; det er lengda, skredterrenget inn mot kopen og skavlane på austsida av toppryggen som avgjer graden, ikkje ein einskild bratt meter.",
@@ -562,7 +562,7 @@
   "notes": "Fri Flyt: 1586 moh, 1500 høgdemeter, 5 timar frå Haukåssætra, KAST 3 Komplekst. Tilkomst: «Urkegjerdet/Haukåssætra. Følg hovudvegen til Urke og ta inn på grusveg ved Urke Landhandel, og køyr så langt du kjem på den vinterstengde vegen i retning Haukåssætra.» Rutelinje: «Ta av frå vegen litt nedanfor Haukåssætra og følg dalen innover mot Nordkopen. Frå kopen sikksakkar du bratt opp mot egga i nord, som du tek inn på til høgre for markert hammar. Følg deretter toppryggen nordover heile vegen til toppen.»"
  },
  "kvitegga": {
-  "season": "mars–mai",
+  "season": "mar–mai",
   "aspect": "Ø",
   "grade": 3,
   "gradeReason": "1400 høgdemeter og bre. Brattbakken er om lag 35 grader over ei kort strekning, og resten av turen er slakt platå- og ryggterreng; det er breen og lengda som gjer turen kompleks, ikkje hellinga.",
@@ -672,7 +672,7 @@
   "notes": "Fri Flyt: 1396 moh, 1000 høgdemeter, 5 km, 3 timar, KAST 2 opp / KAST 3 for sørflanken ned. «Grøndalsvatnet. Følg E39 frå Volda langs Austefjorden og vidare inn til Kalvatn. Ta her høgre mot Osdalen og vidare opp den heilårsopne vegen opp bakkane til Grøndalsvatnet.»"
  },
  "eidskyrkja": {
-  "season": "mars–mai",
+  "season": "mar–mai",
   "aspect": "N",
   "grade": 3,
   "gradeReason": "KAST 3 Komplekst hos Fri Flyt. Sjølve hellinga er moderat — om lag 25 grader nedst på breen og slakare oppover — men det er bre med sprekker, og toppplatået er ei orienteringsfelle.",
@@ -717,7 +717,7 @@
   "notes": "Fri Flyt: 1203 moh, 850 høgdemeter, 3 km, 2–3 timar. «Køyr om lag 4 km forbi skianlegget, til du kjem til Fausaskiftet ved enden av Nysætervatnet.» ut.no gjev 7,0 km tur/retur og 871 høgdemeter totalt, sesong desember–april."
  },
  "torvloysa": {
-  "season": "mars–mai",
+  "season": "mar–mai",
   "aspect": "N",
   "grade": 2,
   "gradeReason": "Fri Flyt: «Dersom du følgjer den skildra ruta, kan du halde deg under 30 grader.» Det bratte ligg i kneika frå Rellingsætra opp på Daurmålsfjellet; resten er slak rygg. Lengda — åtte kilometer og 1400 høgdemeter — er det som gjer turen krevjande.",
@@ -742,7 +742,7 @@
   "notes": "Fri Flyt: 1850 moh, 1500 høgdemeter, 8 km, 6 timar. «Frå Hatlestad-gardane … gå slakt inn i munninga av Dyrdalen. Frå Rellingssætra tek du deg brattare opp på Daurmålsfjellet. Herifrå følgjer du ryggen i slakt terreng heile vegen til toppen av Torvløysa.» Tilkomst med ferje Linge–Eidsdal."
  },
  "skarene": {
-  "season": "mars–mai",
+  "season": "mar–mai",
   "aspect": "S",
   "grade": 3,
   "gradeReason": "Sjølve snøflanken er jamn og slak nok til at Fri Flyt kallar nedkøyringa «flott skiterreng med snille hellingsvinklar», men heile strekket frå botnen av Gråsteindalen og opp er skredterreng, og turen er 1250 høgdemeter til eit av dei høgaste fjella i området.",
@@ -986,7 +986,7 @@
   "notes": "Fri Flyt: 1339 moh, 1330 høgdemeter, 7 timar, «moderat». «Ænes … anleggsvei opp fra Ænes Kirke og sti til Gygrastølvannet.»"
  },
  "juklavasstinden": {
-  "season": "mars–mai",
+  "season": "mar–mai",
   "aspect": "NV",
   "grade": 3,
   "gradeReason": "«Moderat» hos Fri Flyt med 35 grader som brattaste på oppstigninga og 40 på den vestlege nedkøyringa. Toppen ber skavl, og turen kan krevje stegjern og isøks.",
@@ -1035,7 +1035,7 @@
   "notes": "To uavhengige kilder beskriver hver sin start. randofolk.no fra Tempelseter: 5 km én veg, ca. 650 høydemeter, 2–3 timer, «gå til høyre for skibakken oppover», oppstakede og som regel kjørte løyper. Ut.no fra Norefjellstua: 10,7 km, 527 høydemeter, sesong januar–april, og anbefaler høyfjellsruta over Norefjellsryggen. Begge ender på DNT-hytta Høgevarde (1397 moh i DTM1, hyttas egen oppgitte høyde 1400) med toppen 560 m nordøst. Ut.no 115722 beskriver den samme ryggen om sommeren og navngir Ravnås og Augunshaug, som er waypointene i alternativruta."
  },
  "grafjell": {
-  "season": "des–mars",
+  "season": "des–mar",
   "aspect": "S",
   "grade": 2,
   "gradeReason": "Ni kilometer og 600 høydemeter over høyfjell uten bratte partier — ut.no graderer den «middels krevende» og setter fire og en halv time. Lengden og navigeringen er vanskeligheten: løypa går over en rekke vann og myrflater der orienteringspunktene er tjern, og siste kilometer opp på toppen er åpent, vindutsatt fjell.",
@@ -1158,7 +1158,7 @@
   "notes": "Ut.no 1111944 gir den detaljerte rutekjeden over Svarttjernskollen (1054 moh), Venekollen, Den store steinen og opp mot Gyranfisen (1127 moh) — den er skrevet for barmark og starter fra Sandviksetra. Vinterbruken er dokumentert av Vikerfjell Skiløyper, som kjører egne løyper til toppen av Gyranfisen og Treknatten, og av Vikersetra.com, som beskriver toppturen fra Vikerkoia med parkering. Korridoren starter derfor ved Vikerkoia. Den store steinen er en flyttblokk uten navn i registeret og er utelatt fra waypointene; Treknatten (1097,7 moh) ligger 1,3 km nordøst for toppen og er den andre toppen løypa går til."
  },
  "styggemann": {
-  "season": "jan–mars",
+  "season": "jan–mar",
   "aspect": "SV",
   "grade": 2,
   "gradeReason": "Åtte kilometer i skogsterreng på oppkjørte løyper med en kort, bratt topp til slutt. Ut.no fører skituren i området som «lett» og barnevennlig, men skriver om selve toppen at «turen opp på Styggemann er nemlig temmelig bratt» og anbefaler å sette igjen sekken i stikrysset. Det er den siste kilometeren som gir graden.",
@@ -1870,7 +1870,7 @@
   "notes": ""
  },
  "togga": {
-  "season": "des–mars",
+  "season": "des–mar",
   "aspect": "SØ",
   "grade": 3,
   "gradeReason": "Målinga seier 2 — brattaste hundremetersbeltet 22,5 grader mellom 800 og 900 moh, brattaste 30 m 27,5 — men grad 3 er redaksjonell: Fri Flyt gjev normalvegen 33–35 grader som brattaste punkt og skriv at skiløparar har løyst ut skred i det brattare partiet på søraustryggen under opptur. Lina sikksakkar slakare enn fallinja, men henget ho går i gjer ikkje.",

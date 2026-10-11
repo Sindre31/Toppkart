@@ -6229,6 +6229,119 @@ measurement, and Bitihorn's gives none for the Båtskaret line; both stand.
 `check_steepness.py` compares the two measurements, not the prose, so it keeps
 listing these 33: they are the routes whose guides now quote the 5 m window.
 
+## The card round: the tokens nothing measured
+
+No new tour and no line moved. The round was a request to go through every
+tour and check that it is right, so it began by running every check the
+pipeline owns again from one container — `check_tours.py`,
+`check_geometry.py`, `check_bands.py`, `check_routes.py`, the guide check on
+a `guide_facts.json` rebuilt from scratch, `check_ground.py` as far as the
+Overpass mirrors would answer, and the test suite — and then asked the
+question those checks do not: whether the four short tokens on a card that
+no check reads are right. `summitM` and `verticalM` are measured by
+`check_tours.py`; `aspect`, `season`, `duration` and `region` are typed by
+hand and had never been compared against anything.
+
+The pass compared each of them against the only things available: the
+aspect against the line three ways (the slope the top 300 m climb, the
+drop-weighted downhill direction, the bearing to the car) and against the
+descent the guide describes; the duration against a skinning rule of thumb
+over the line's own distance and gain; the season against the month list the
+formatter knows; the region against the other tours in it; and, for good
+measure, every summit coordinate re-read live from the point API with a
+1 m tile around it, `hasGuide` in the direction `guides.test.ts` does not
+check, the NO and EN guides against each other for shape, and the seed's
+guide columns against `lib/guides.ts` word for word.
+
+### Sixteen seasons were written with full month names
+
+`seasonLabel` in `lib/i18n/format.ts` translates a season for the English
+pages through a twelve-entry table of three-letter abbreviations and passes
+anything else through untouched. Sixteen cards — Råna, Torvløysa, Skårene,
+Kvitegga, Hornindalsrokken, Eidskyrkja, Storronden, Glittertinden, Besshøe,
+Togga, Lønahorgi, Folarskardnuten, Gråfjell, Juklavasstinden, Styggemann and
+Kjerag — carried «mars», «juni», «juli» or «april» where the other 169 carry
+«mar», «jun», «jul» and «apr», so `/turer` in English printed «mars–May»,
+«juni–juli» and «Feb–april», and the Norwegian list mixed «mars–mai» with
+«mar–mai» on the same page. All sixteen now use the abbreviations, in
+`lib/tours.ts`, `seed.sql`, `tourmeta.json` and `new_tourmeta.json` — the
+last because `emit_new_tours.py` rebuilds rows from it — and
+`lib/tours.test.ts` now pins the token format of season, aspect and duration
+on every card, which is the test that would have caught the first one.
+
+### Eight aspects that the guide's own descent contradicted
+
+The card's aspect is the side the source sends you down, not the side the
+drawn line climbs: Kyrkjebønosi's guide says so in as many words («det er
+difor kortet fører V») and so does Prestholtskarvet's («Sørflanken er den
+kortet fører»). Measured against the line, fourteen cards sat more than a
+sector and a half from every reading. Six of those are that doctrine at
+work or a ridge route whose flanks face both ways — Kyrkjebønosi,
+Prestholtskarvet, Jakta, Store Blåmann, Lasselitinden, Hattfjellet — and
+stand. The other eight contradicted the descent their own guide describes,
+and every one of them was an original or early card that no guide had been
+written against when it was typed:
+
+| tour | card said | the guide's descent | now |
+| --- | --- | --- | --- |
+| Bitihorn | S | «Ned samme skulder … Hold nordvestskuldra»; the south route «er ikke vegen ned herfra» | NV |
+| Rørnestinden | V | «Østflanken ned mot 850 moh er den lengste sammenhengende nedkjøringa på normalruta»; the N and NV edges are the cornice drops | Ø |
+| Himmeltindan | Ø | the ridge and Durmålsdalen back to Haukland; «Lehengene mot øst og sør» are the slopes to stay off | SV |
+| Slogen | V | «ned østryggen til flata ved 795 moh»; both flanks are the accident sites | Ø |
+| Gaustatoppen | NV | «ned flanken mot nord-nordøst til Svineroisetra» | NØ |
+| Synshorn | Ø | «Sørvestflanken er bred og jevn … hele vegen ned mot Fagerdalen» | SV |
+| Steindalsnosi | S | «Ned går du samme veg, vestover»; south is the Helgedalen route and the «vanligste feil» | V |
+| Stornappstinden | N | «Hold vestover … vest er den slakeste sida»; the valley back to Nappskaret runs SW, and north is the wall over Napp | SV |
+
+In every case the line agrees with the guide and not with the card: the
+drop-weighted downhill direction of the eight lines reads 348°, 94°, 221°,
+148°, 56°, 213°, 261° and 223°. The map's aspect filter reads these tokens —
+Bitihorn sat under «Sør» and not under «Nord» — and the English pages
+translate them, so all four copies of the row changed together and
+`check_tours.py` confirms they agree.
+
+### What the same pass left alone
+
+- **Hattfjellet's prose and line disagree about which side the top is
+  climbed on.** The guide says «Sørsida til topps fra 800» and «sørsida ruta
+  bruker, 12,0», and the card carries S because the source's descent is the
+  south side at 30–35°. The drawn line, pinned by the corridor's own
+  waypoints «venstre der det flater» (706 m) and «mot toppen» (800 m), climbs
+  the last 850 m of ground on the flank that faces 280–291° — the west side
+  the flank sweep calls one of the two gentle ones — and never touches the
+  south side. Either the corridor swings onto the south flank it describes,
+  or the guide says west. That is a judgement about the mountain and is
+  left for a reader who knows it; the card stands on the source.
+- **Galdhøpiggen's 6–8 t describes 642 m and 5.4 km from Juvasshytta**, the
+  only card whose stated time the rule of thumb puts more than an hour and a
+  half outside: it estimates 4.3 h. The figure reads like the Spiterstulen
+  route's (1434 m), but a rope team over Styggebrean is slow, and neither
+  source gives a time. Left.
+- **Three summits have a higher cell within 60 m**: Rødtinden 474.3 at
+  52 m (card 470), Skåla 1851.4 at 45 m (Skålatårnet, already known) and
+  Steindalsnosi 2029.3 at 48 m (card 2025). All three cards are the climbed
+  top closest to the published height, which is `resolve_summits.py`'s
+  rule, and the point API reads every one of the 185 cards within 2 m. Noted,
+  not moved.
+- **Glittertinden's «jun–jul»** is the one season outside winter, and its
+  guide says in its own words that June and July are the only period the
+  route is described for.
+- **Fastdalstinden's Varto road finding** came back from `check_ground.py`
+  again; it is the reservoir false positive recorded in the review round.
+
+### What ran
+
+| check | result |
+| --- | --- |
+| `npm test`, `typecheck`, `lint` | green, 124 tests |
+| `check_tours.py` | clean, before and after the edits |
+| `check_geometry.py` | the six real steps, nothing else |
+| `check_bands.py` | 760 band claims, all agree with the line |
+| `check_routes.py` | clean, every midpoint verified against the point API |
+| seed guide columns against `lib/guides.ts` | 185 blocks, identical |
+| summits re-read live | 185 within 2 m; the three higher cells above |
+| card tokens, aspect, duration, region, parity | the findings above; nothing else |
+
 ## Network
 
 Everything is public and unauthenticated:

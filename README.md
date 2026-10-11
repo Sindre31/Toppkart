@@ -90,7 +90,8 @@ reproduced the mistake faithfully.
 The tour data gets the same treatment: `lib/tours.test.ts` re-checks the emitted TypeScript for
 the invariants a regeneration could break — every line ending on the summit it belongs to, every
 card vertical within 10 m of its route's ascent, every line stored as whole lat/lng/elevation
-triples. It is a tripwire on the pipeline's output, not a second opinion on the terrain. The
+triples, every card's season, aspect and duration written as the tokens the formatters and the map
+filter read. It is a tripwire on the pipeline's output, not a second opinion on the terrain. The
 real audit is the Python under `scripts/build-routes/`, which measures against Kartverket's
 terrain model and against mapped ground, and which cannot run in CI: it needs Geonorge and a few
 hundred megabytes of cached raster.

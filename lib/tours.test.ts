@@ -57,6 +57,27 @@ describe("the tour list", () => {
     }
   });
 
+  it("writes every card token the way the formatters and filters read it", () => {
+    /* The rows are hand-edited, and the three short tokens on a card are the
+       ones nothing downstream validates: `seasonLabel` translates month
+       abbreviations through a table and passes anything else through, so a
+       «mars–mai» rendered as «mars–May» on the English list — sixteen cards
+       did, written with full month names while the other 169 used «mar»;
+       `matchesAspect` treats an unknown compass code as facing no way, which
+       drops the tour from every aspect filter; and `durationLabel` only swaps
+       the unit. */
+    const months = ["jan", "feb", "mar", "apr", "mai", "jun", "jul", "aug", "sep", "okt", "nov", "des"];
+    const aspects = ["N", "NØ", "Ø", "SØ", "S", "SV", "V", "NV"];
+    for (const tour of TOURS) {
+      const season = tour.season.match(/^([a-zæøå]{3})–([a-zæøå]{3})$/);
+      expect(season, `${tour.slug} season «${tour.season}»`).not.toBeNull();
+      expect(months, `${tour.slug} season «${tour.season}»`).toContain(season![1]);
+      expect(months, `${tour.slug} season «${tour.season}»`).toContain(season![2]);
+      expect(aspects, `${tour.slug} aspect «${tour.aspect}»`).toContain(tour.aspect);
+      expect(tour.duration, `${tour.slug} duration «${tour.duration}»`).toMatch(/^\d+–\d+ t$/);
+    }
+  });
+
   it("gives every tour a position inside Norway", () => {
     for (const tour of TOURS) {
       expect(tour.lat, tour.slug).toBeGreaterThan(57);
