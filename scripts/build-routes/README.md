@@ -6300,6 +6300,38 @@ Bitihorn sat under «Sør» and not under «Nord» — and the English pages
 translate them, so all four copies of the row changed together and
 `check_tours.py` confirms they agree.
 
+### Ospetinden's treeline, re-read from scratch
+
+`check_guides.py` on a `guide_facts.json` rebuilt from nothing — every
+terrain class fetched again, no cache — came back with four unsourced
+numbers in 185 guides, all of them one figure: Ospetinden's «Skogen slutter
+på 668 moh etter 4,68 km, med åpent område fra 681». The rebuilt vertex scan
+reads 805 m, first open 813, last forest 5.06 km out. Read vertex by vertex,
+DTM1 today classes the line `Skog` to 694 m (4.77 km), open at 707, `Skog`
+again at 727–743 and 800–805, and open for good from 813 — so «åpent område
+fra 681» was false against the current classes, and the treeline round had
+already seen stands above the belt on this line. The ascent now says the belt
+ends at 694 m after 4.77 km, that the line clips stands up to 805 and is open
+from 813, and the caption carries 805 as the line's treeline, in both
+languages, with a `problems` note in `guides.json` that records the per-vertex
+read so the belt figures are sourced.
+
+### A tarn above Bjørnhollia that OpenStreetMap does not know
+
+`check_ground.py` over all 223 routes, in five shards against the one
+Overpass mirror that answered, reported two routes. Fastdalstinden's Varto
+road is the reservoir false positive the review round recorded. The other is
+`rondslottet/bjornhollia`: 45 m on water at 942 m, a kilometre in, under a
+paragraph that never names it. Vertices 31 and 32 read `Innsjø`, with forest
+either side; the OSM API returns no `natural=water` way within 400 m of
+them, so there is no shoreline to measure an offshore distance against — it
+is a tarn only the terrain model knows, on the marked summer route the
+source follows. The shape round measured it at 90 m before the clip was
+nudged. The Bjørnhollia paragraph now names it in both languages, height and
+length, as a natural tarn and not a reservoir. Thirty-three trail claims and
+three water polygons stayed unchecked because the mirror returned 504 on
+them; every one of them was answered in an earlier round.
+
 ### What the same pass left alone
 
 - **Hattfjellet's prose and line disagree about which side the top is
@@ -6338,6 +6370,8 @@ translate them, so all four copies of the row changed together and
 | `check_geometry.py` | the six real steps, nothing else |
 | `check_bands.py` | 760 band claims, all agree with the line |
 | `check_routes.py` | clean, every midpoint verified against the point API |
+| `check_guides.py`, all 185 guides, on a `guide_facts.json` rebuilt from scratch | Ospetinden's treeline above, then 0 unsourced numbers, 0 reassurance claims |
+| `check_ground.py`, all 223 routes | the Bjørnhollia tarn above and the Fastdalstinden false positive; 36 questions Overpass would not answer |
 | seed guide columns against `lib/guides.ts` | 185 blocks, identical |
 | summits re-read live | 185 within 2 m; the three higher cells above |
 | card tokens, aspect, duration, region, parity | the findings above; nothing else |
