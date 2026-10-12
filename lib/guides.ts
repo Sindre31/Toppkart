@@ -4087,7 +4087,7 @@ export const GUIDES: Record<string, TourGuide> = {
       "1061 høydemeter og 6,88 km fra bomkassa på Venås til pyramiden innerst i Måndalen — fjellet du ser reise seg foran deg fra første steg, sier morotur. Fri Flyt gir turen KAST 2 – Utfordrende med bratteste punkt rundt 35 grader øverst i botnen; linja her trekker ut på nordøstryggen fra flata på rundt 900 moh, slik kilden anbefaler for skred, og måler 22,4 grader i bratteste hundremetersbelte og 25,6 i bratteste sammenhengende parti. Toppen er ofte snøfri — skiene settes vanligvis igjen noen meter under den.",
     ascent: [
       "Fra bomkassa ved gården Venås innerst i Måndalen, 201 moh, følger du bomveien til Venåssetra — beltene fra 200 til 400 moh måler 3,0 og 3,7 grader over nesten tre og en halv kilometer veg, jevn og fin stigning innover dalen. Setra er et godt hvilepunkt på finværsdager, sier morotur. Terrengmodellen leser 393 moh der; Fri Flyts «ca 700» for setra er feil, registeret og terrengmodellen er enige.",
-      "Fra setra går du rett vest over myra — 414 moh — og krysser Stavvasselva, så sikter du mot den store østvendte botnen. Skogen slutter på 668 moh etter 4,68 km, med åpent område fra 681, og botnen har jevnt stigende bratthet: 15,4 grader fra 600 til 700 moh, og så turens bratteste belte, 22,4 grader fra 700 til 800 over 225 meter grunn, med det bratteste sammenhengende partiet — 25,6 grader — mellom 764 og 779 moh.",
+      "Fra setra går du rett vest over myra — 414 moh — og krysser Stavvasselva, så sikter du mot den store østvendte botnen. Skogen slutter på 694 moh etter 4,77 km, men linja streifer skogholt helt opp til 805 moh og er åpen for godt fra 813, og botnen har jevnt stigende bratthet: 15,4 grader fra 600 til 700 moh, og så turens bratteste belte, 22,4 grader fra 700 til 800 over 225 meter grunn, med det bratteste sammenhengende partiet — 25,6 grader — mellom 764 og 779 moh.",
       "Fra flata på rundt 900 moh — 948 der linja tar den — er det vanlig å trekke ut mot nordøstryggen, og det er det linja gjør: beltet fra 900 til 1000 måler bare 8,5 grader på traversen ut. Ryggen tar deg vestover mot varden — 19,0 grader fra 1100 til 1200 — med utsikten over fjordene mot Molde og havet bak deg. Registeret leser 1203 på representasjonspunktet; toppsøket klatrer til 1227,5 mot publiserte 1228. Selve toppen er ofte avblåst med bart berg og hardpakke — det første 60-metersvinduet ned nordøstryggen måler 45,3 grader, så skiene blir stående der du satte dem.",
     ],
     descent: [
@@ -4117,7 +4117,7 @@ export const GUIDES: Record<string, TourGuide> = {
       startLabel: "201 moh",
       endLabel: "1228 moh",
       distanceLabel: "6,9 km",
-      caption: "1061 høydemeter og 6,88 km fra Venås om Venåssetra og den østvendte botnen, med skoggrensa på 668 moh og det bratteste — 25,6 grader mellom 764 og 779 moh — i botnen.",
+      caption: "1061 høydemeter og 6,88 km fra Venås om Venåssetra og den østvendte botnen, med skoggrensa på 805 moh og det bratteste — 25,6 grader mellom 764 og 779 moh — i botnen.",
     },
   },
   middagstinden: {
@@ -4831,7 +4831,7 @@ export const GUIDES: Record<string, TourGuide> = {
     descent: [
       "Samme vei tilbake — over eggen, ned i Slottsbrue, opp igjen de hundre høydemeterne til Vinjeronden. Den gjenstigningen kommer sent på dagen og tar lengre tid enn den ser ut til; legg inn tida før du bestemmer deg for hvor lenge du blir på toppen.",
       "Vanligste feil: å slippe seg vestover fra eggen for å slippe unna gjenstigningen over Vinjeronden. Vestsida av eggen mellom Slottsbrue og toppen faller 33–38° i nesten tre hundre høydemeter, ned i Styggebotn og videre mot Rondvatnet. Det slakner ikke før under 1700 moh, og til da henger du i én sammenhengende bratt flanke under en egg. Det er ingen snarvei — hold eggen til du er tilbake i skaret.",
-      "Bjørnhollia er den tredje startstaden på Rondslottet og den einaste i aust: 1538 høgdemeter på 12,32 km frå hyttedøra, nordover langs dalen og inn i Langglupdalen mot Dørålseter, forbi brua over Langglupå og stiskillet til Høgronden, og vestover frå stiskillet på 1764 moh. ut.no gir henne 22,4 km tur/retur og minst fem timar opp. Ho startar lågast av dei tre — 913 moh mot Sprangets 1082 og Nedre Dørålseters 1043 — og gir frå seg 273 høgdemeter undervegs. Det brattaste 30-metersvindauget ligg difor ikkje i stigninga i det heile: 45,8 grader mellom 913 og 880 moh, i søkket ned mot dalmunnen, halvannan kilometer inn.",
+      "Bjørnhollia er den tredje startstaden på Rondslottet og den einaste i aust: 1538 høgdemeter på 12,32 km frå hyttedøra, nordover langs dalen og inn i Langglupdalen mot Dørålseter, forbi brua over Langglupå og stiskillet til Høgronden, og vestover frå stiskillet på 1764 moh. ut.no gir henne 22,4 km tur/retur og minst fem timar opp. Ho startar lågast av dei tre — 913 moh mot Sprangets 1082 og Nedre Dørålseters 1043 — og gir frå seg 273 høgdemeter undervegs. Det brattaste 30-metersvindauget ligg difor ikkje i stigninga i det heile: 45,8 grader mellom 913 og 880 moh, i søkket ned mot dalmunnen, halvannan kilometer inn. Ein kilometer inn, på 942 moh i skogen ovanfor hytta, står linja 45 meter på eit lite naturleg tjern som OpenStreetMap ikkje har kartlagt — to vertex på is, ikkje eit magasin.",
     ],
     avalanche: [
       {
