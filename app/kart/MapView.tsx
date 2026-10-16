@@ -270,6 +270,35 @@ export default function MapView({
     setMine("");
   }, []);
 
+  /** Øker hver gang leseren ber om startposisjonen; kartet flyr hjem på det. */
+  const [homeSignal, setHomeSignal] = useState(0);
+  const goHome = useCallback(() => {
+    setSelectedSlug(null);
+    setSelectedRouteId(null);
+    resetFilters();
+    setMobilePane("map");
+    setHomeSignal((n) => n + 1);
+  }, [resetFilters]);
+
+  /** Logoen og «Kartet» lenker til `/` — den sida vi står på. Uten dette gjør et
+   *  trykk på dem ingenting synlig: Next navigerer til samme side, og både valgt
+   *  topp, filtrene og utsnittet blir stående. Leseren mener «tilbake til
+   *  start», så det er det vi gjør, uten navigasjon.
+   *
+   *  Fanget i capture-fasen, før lenkens egen handler, som lar en
+   *  `preventDefault` stå. Med modifikatortast eller midtklikk er det en ny fane
+   *  leseren vil ha, og da får lenka gjøre jobben sin. */
+  const onTopbarClick = useCallback(
+    (event: React.MouseEvent) => {
+      const link = (event.target as Element).closest("a");
+      if (!link || link.getAttribute("href") !== "/") return;
+      if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+      event.preventDefault();
+      goHome();
+    },
+    [goHome],
+  );
+
   const visible = useMemo(() => new Set(rows.map((tour) => tour.slug)), [rows]);
 
   const selected = useMemo(
@@ -320,7 +349,7 @@ export default function MapView({
 
   return (
     <div className={s.page} data-pane={mobilePane}>
-      <header className={s.topbar}>
+      <header className={s.topbar} onClickCapture={onTopbarClick}>
         <Link className={s.brand} href="/">
           Toppkart
         </Link>
@@ -633,6 +662,7 @@ export default function MapView({
             onSelectRoute={setSelectedRouteId}
             position={position}
             lang={lang}
+            homeSignal={homeSignal}
           />
         </Suspense>
         <div className={s.locateBox}>
