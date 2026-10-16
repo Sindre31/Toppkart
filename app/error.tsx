@@ -48,7 +48,7 @@ export default function Error({ error, reset }: { error: Error & { digest?: stri
       <main style={{ display: "grid", placeItems: "center", padding: "48px 20px" }}>
         <Blueprint style={{ padding: 32, width: "min(480px, 100%)" }}>
           <span className="kicker">{t.errorKicker}</span>
-          <h1 style={{ fontSize: 34, lineHeight: 1.08, letterSpacing: "0.02em", textTransform: "uppercase", margin: "10px 0 0" }}>
+          <h1 className="display" style={{ fontSize: 44, margin: "8px 0 0" }}>
             {t.errorTitle}
           </h1>
           <p className="prose" style={{ margin: "12px 0 0" }}>
