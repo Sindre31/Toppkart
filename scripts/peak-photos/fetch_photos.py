@@ -1,8 +1,14 @@
 """Bilder av toppene, fra Wikimedia Commons — kilden til `lib/photos.ts`.
 
-Skriptet henter alle fjell med bilde (P18) i Wikidata innenfor Norges
-utstrekning, i bånd på én breddegrad, og velger for hver tur i `lib/tours.ts` det
-nærmeste innen `RADIUS_KM` fra toppunktet med samme navn som turen. Bare navnesamsvar teller: «nærmeste ting med et bilde» kan
+For hver tur i `lib/tours.ts` søker skriptet i Wikidata etter elementer med
+turens navn, og velger det nærmeste innen `RADIUS_KM` fra toppunktet som har et
+bilde (P18). Bare navnesamsvar teller: «nærmeste ting med et bilde» kan like
+gjerne være en hytte, en innsjø eller nabotoppen.
+
+Spørretjenesten (WDQS) er ikke brukt: Norge har hundretusener av
+fjellelementer, og både geo- og landsspørringer gikk ut på tid og brukte opp
+kvoten. Det vanlige API-et med ett navnesøk per tur og `wbgetentities` i
+batcher på 50 er lett, og `PAUSE` holder tempoet nede. Bare navnesamsvar teller: «nærmeste ting med et bilde» kan
 like gjerne være en hytte, en innsjø eller nabotoppen, og et bilde av feil fjell
 er verre enn ingen bilde.
 
@@ -28,6 +34,7 @@ import urllib.request
 
 UA = "ToppkartBot/1.0 (https://github.com/Sindre31/Toppkart)"
 RADIUS_KM = 1.5
+PAUSE = 1.5  # sekunder mellom kall
 THUMB_WIDTH = 1280
 FREE = re.compile(r"^(CC0|Public domain|PD|CC BY(-SA)? \d(\.\d)?( \w+)?)", re.I)
 
@@ -65,62 +72,79 @@ def norm(s: str) -> str:
     return re.sub(r"[^a-z0-9]", "", s)
 
 
-# Fastlandet med margin, som i `scripts/map-coverage`.
-SOUTH, WEST, NORTH, EAST = 57.5, 4.0, 71.5, 31.5
-# Fjell, topp, ås/høyde, fjellkjede, rygg, nunatak, tind.
-KINDS = "wd:Q8502 wd:Q207326 wd:Q54050 wd:Q46831 wd:Q740445 wd:Q193457 wd:Q1595289"
-BAND = 1.0  # grader breddegrad per spørring
+API = "https://www.wikidata.org/w/api.php"
 
 
-def peaks_in(south: float, north: float) -> list[dict]:
-    """Fjell med bilde i ett breddegradsbånd over hele utstrekningen."""
-    query = f"""
-    SELECT ?item ?img ?label ?coord WHERE {{
-      VALUES ?kind {{ {KINDS} }}
-      SERVICE wikibase:box {{
-        ?item wdt:P625 ?coord .
-        bd:serviceParam wikibase:cornerSouthWest "Point({WEST} {south})"^^geo:wktLiteral ;
-                        wikibase:cornerNorthEast "Point({EAST} {north})"^^geo:wktLiteral .
-      }}
-      ?item wdt:P31 ?kind ; wdt:P18 ?img ; rdfs:label ?label .
-      FILTER(LANG(?label) IN ("nb", "nn", "no", "en", "se", "mul"))
-    }}"""
-    res = get("https://query.wikidata.org/sparql", {"query": query, "format": "json"})
-    out = []
-    for b in res["results"]["bindings"]:
-        lng, lat = map(float, re.findall(r"-?[\d.]+", b["coord"]["value"])[:2])
-        out.append(
+def search(name: str) -> list[str]:
+    """Wikidata-elementer som heter `name`, på bokmål."""
+    res = get(
+        API,
+        {
+            "action": "wbsearchentities",
+            "search": name,
+            "language": "nb",
+            "uselang": "nb",
+            "type": "item",
+            "limit": 20,
+            "format": "json",
+        },
+    )
+    return [hit["id"] for hit in res.get("search", [])]
+
+
+def claim(entity: dict, prop: str):
+    for c in entity.get("claims", {}).get(prop, []):
+        value = c.get("mainsnak", {}).get("datavalue", {}).get("value")
+        if value is not None:
+            return value
+    return None
+
+
+def entities(ids: list[str]) -> dict[str, dict]:
+    """Koordinat, bilde og navn for elementene, 50 om gangen."""
+    out: dict[str, dict] = {}
+    for i in range(0, len(ids), 50):
+        res = get(
+            API,
             {
-                "item": b["item"]["value"].rsplit("/", 1)[1],
-                "file": urllib.parse.unquote(b["img"]["value"].rsplit("/", 1)[1]),
-                "label": b["label"]["value"],
-                "lat": lat,
-                "lng": lng,
-            }
+                "action": "wbgetentities",
+                "ids": "|".join(ids[i : i + 50]),
+                "props": "claims|labels|aliases",
+                "languages": "nb|nn|no|en|se|mul",
+                "format": "json",
+            },
         )
+        for qid, e in res.get("entities", {}).items():
+            coord, img = claim(e, "P625"), claim(e, "P18")
+            if not coord or not img:
+                continue
+            names = [v["value"] for v in e.get("labels", {}).values()]
+            names += [a["value"] for vs in e.get("aliases", {}).values() for a in vs]
+            out[qid] = {
+                "item": qid,
+                "file": img.replace(" ", "_"),
+                "names": names,
+                "lat": coord["latitude"],
+                "lng": coord["longitude"],
+            }
+        time.sleep(PAUSE)
     return out
 
 
-def all_peaks(cache: str | None) -> list[dict]:
-    """Alle fjell med bilde innenfor utstrekningen, i bånd på `BAND` grader.
-
-    Hele landet i én spørring ble kuttet av Wikidatas 60-sekundersgrense, og en
-    per tur var 185 spørringer — begge deler endte i struping. Hvert bånd lagres
-    i `cache` så snart det er inne, så en 429 halvveis ikke koster de ferdige."""
-    done: dict[str, list[dict]] = {}
+def candidates(all_tours: list[dict], cache: str | None) -> dict[str, list[str]]:
+    """Søketreffene per tur. Lagres underveis i `cache`, så en struping
+    halvveis ikke koster de turene som er ferdige."""
+    done: dict[str, list[str]] = {}
     if cache and os.path.exists(cache):
         done = json.load(open(cache, encoding="utf-8"))
-    lat = SOUTH
-    while lat < NORTH:
-        key = f"{lat:.1f}"
-        if key not in done:
-            done[key] = peaks_in(lat, min(lat + BAND, NORTH))
-            print(f"  band {key}: {len(done[key])} rows", file=sys.stderr)
-            if cache:
-                json.dump(done, open(cache, "w", encoding="utf-8"), ensure_ascii=False)
-            time.sleep(5)
-        lat += BAND
-    return [p for rows in done.values() for p in rows]
+    for t in all_tours:
+        if t["slug"] in done:
+            continue
+        done[t["slug"]] = search(t["name"])
+        if cache:
+            json.dump(done, open(cache, "w", encoding="utf-8"), ensure_ascii=False)
+        time.sleep(PAUSE)
+    return done
 
 
 def km(a_lat: float, a_lng: float, b_lat: float, b_lng: float) -> float:
@@ -131,9 +155,13 @@ def km(a_lat: float, a_lng: float, b_lat: float, b_lng: float) -> float:
 
 
 def pick(t: dict, peaks: list[dict]) -> dict | None:
-    """Nærmeste fjell innen `RADIUS_KM` med samme navn som turen."""
+    """Nærmeste element innen `RADIUS_KM` som heter det samme som turen."""
     want = norm(t["name"])
-    near = [(km(t["lat"], t["lng"], p["lat"], p["lng"]), p) for p in peaks if norm(p["label"]) == want]
+    near = [
+        (km(t["lat"], t["lng"], p["lat"], p["lng"]), p)
+        for p in peaks
+        if any(norm(n) == want for n in p["names"])
+    ]
     near = [(d, p) for d, p in near if d <= RADIUS_KM]
     return min(near, key=lambda dp: dp[0])[1] if near else None
 
@@ -178,21 +206,17 @@ def commons_info(files: list[str]) -> dict[str, dict]:
 
 
 def main() -> None:
-    # Wikidata-treffene kan mellomlagres mellom kjøringer: PHOTO_CACHE=sti.json
+    # Mellomresultatene kan lagres mellom kjøringer: PHOTO_CACHE=sti.json
     cache_path = os.environ.get("PHOTO_CACHE")
     all_tours = tours()
-    if cache_path and os.path.exists(cache_path):
-        chosen = json.load(open(cache_path, encoding="utf-8"))
-    else:
-        peaks = all_peaks(cache_path + ".bands" if cache_path else None)
-        print(f"{len(peaks)} peaks with an image in Wikidata", file=sys.stderr)
-        chosen = {}
-        for t in all_tours:
-            c = pick(t, peaks)
-            if c:
-                chosen[t["slug"]] = c
-        if cache_path:
-            json.dump(chosen, open(cache_path, "w", encoding="utf-8"), ensure_ascii=False)
+    hits = candidates(all_tours, cache_path + ".search" if cache_path else None)
+    ids = sorted({qid for qids in hits.values() for qid in qids})
+    found = entities(ids)
+    chosen = {}
+    for t in all_tours:
+        c = pick(t, [found[q] for q in hits.get(t["slug"], []) if q in found])
+        if c:
+            chosen[t["slug"]] = c
     print(f"{len(chosen)} tours matched a Wikidata peak with an image", file=sys.stderr)
     info = commons_info(sorted({c["file"] for c in chosen.values()}))
 
