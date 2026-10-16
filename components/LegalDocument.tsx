@@ -1,4 +1,3 @@
-import { Blueprint, SectionKicker } from "@/components/Blueprint";
 import { SiteFooter, SiteNav } from "@/components/SiteChrome";
 import { formatDate } from "@/lib/dates";
 import type { Lang } from "@/lib/i18n";
@@ -10,9 +9,9 @@ import { LEGAL_UPDATED, type LegalDocument as LegalDoc } from "@/lib/i18n/legal"
  *  the numbering and the «last updated» line live here rather than being
  *  written twice and drifting apart.
  *
- *  Sections are numbered from their position — `01 · Om tjenesten` — the same
- *  way `GuideSections` numbers a tour guide, so a section can be inserted or
- *  moved without renumbering anything by hand.
+ *  Same grammar as the tour guide: the title in Instrument Serif, each section
+ *  an `h2` in the same face over a card. No numbering and no capitals — the
+ *  «01 · OM TJENESTEN» kicker belonged to the Industry look v3 replaced.
  */
 export function LegalDocument({ lang, doc }: { lang: Lang; doc: LegalDoc }) {
 
@@ -20,34 +19,26 @@ export function LegalDocument({ lang, doc }: { lang: Lang; doc: LegalDoc }) {
     <div className="shell">
       <SiteNav lang={lang} />
 
-      <main className="page page-narrow" style={{ paddingBottom: 72 }}>
+      <main className="page page-narrow" style={{ width: "100%" }}>
         <header style={{ padding: "48px 0 8px" }}>
           <span className="kicker">{doc.kicker}</span>
-          <h1
-            style={{
-              fontSize: "clamp(34px, 5vw, 52px)",
-              lineHeight: 1.06,
-              letterSpacing: "0.02em",
-              textTransform: "uppercase",
-              margin: "10px 0 0",
-            }}
-          >
+          <h1 className="display" style={{ fontSize: "clamp(48px, 6vw, 72px)", margin: "8px 0 0 -0.03em" }}>
             {doc.title}
           </h1>
-          <p className="lede" style={{ margin: "18px 0 0" }}>
+          <p className="lede" style={{ margin: "16px 0 0" }}>
             {doc.lede}
           </p>
-          <p className="note" style={{ margin: "16px 0 0" }}>
+          <p className="note" style={{ margin: "14px 0 0" }}>
             {doc.updatedLabel} {formatDate(LEGAL_UPDATED, lang)}
           </p>
         </header>
 
-        {doc.sections.map((section, index) => (
-          <section key={section.title} style={{ marginTop: 40 }}>
-            <SectionKicker>
-              {String(index + 1).padStart(2, "0")} · {section.title}
-            </SectionKicker>
-            <Blueprint style={{ padding: "24px 28px" }}>
+        {doc.sections.map((section) => (
+          <section key={section.title} style={{ paddingTop: 40 }}>
+            <h2 className="h-section" style={{ margin: "0 0 16px" }}>
+              {section.title}
+            </h2>
+            <div className="card" style={{ padding: "20px 24px", gap: 0 }}>
               {section.body.map((paragraph, i) => (
                 <p
                   className="prose"
@@ -57,12 +48,12 @@ export function LegalDocument({ lang, doc }: { lang: Lang; doc: LegalDoc }) {
                   {paragraph}
                 </p>
               ))}
-            </Blueprint>
+            </div>
           </section>
         ))}
-      </main>
 
-      <SiteFooter lang={lang} />
+        <SiteFooter lang={lang} />
+      </main>
     </div>
   );
 }
