@@ -442,11 +442,11 @@ content and data quality that has to be settled before the site is promoted wide
   `lib/guides.ts` traces to Kartverket's terrain model, the route research or a cited source, and
   every number is matched mechanically by `check_guides.py` — which reads nynorsk verticals as well
   as bokmål ones, and comes back clean on all 187 guides with no unsourced number left.
-  On top of that, **105 of the 185 have been through an independent adversarial read** whose only job
+  On top of that, **107 of the 187 have been through an independent adversarial read** whose only job
   is to break it — the 24 of the first round, the 15 of the second, the 7 of the Oslo round, the
   22 of the Sunnmøre and Vestland rounds, the 7 of the Trondheim round, Kjerag, Møysalen and
-  Sæbyggjenuten, the 4 of the popularity round, the 8 of the alpine-resort round and, last, the
-  14 newest — the gap every previous round's write-up had to name. That read is written up in
+  Sæbyggjenuten, the 4 of the popularity round, the 8 of the alpine-resort round, the
+  14 newest and, last, Heddersfjell and Mellomkollen — the gap every previous round's write-up had to name. That read is written up in
   `scripts/build-routes/README.md`. The seventy-five of the fourteen newest rounds — Senja/Helgeland, Romsdal, Troms, Lofoten, Narvik, Sør-Troms, Tjeldsund, Lofast, Grytøya/Kvæfjord-vest, Ibestad, Tjeldøya, the island-completion round, the Møysalen round and the town round — are the current gap. It found four fabricated quotations, seven dropped or
   misplaced source warnings, four superlatives stated in the wrong place on the mountain, three
   bearings pointing the wrong way in fog, a fjord depth measured against water 8 km away, and a

@@ -6407,14 +6407,14 @@ Ut.no's trip is called «Topptur på ski i Maridalsalpene» and names three hill
 «Midtkollen (519 moh), Mellomkollen og Gaupekollen (524moh)». The GPX ut.no serves
 for it, `/api/gpx/trip/1113693`, never reaches Gaupekollen: its nearest point is
 558 m from that top. Point 192 is a metre from Mellomkollen's, and the track then
-laps the same hill twice. The tour ships under the name of the summit the line
+laps the same hill once, down to 461 m and back up. The tour ships under the name of the summit the line
 reaches, which is also the highest of the three — 536.6 on DTM1, `ele` 537 in
 OSM, and «den høyeste toppen i denne delen av Nordmarka» in ut.no's own High 5
-description. Ut.no's 428 høgdemeter is the whole track with both laps; to the
+description. Ut.no's 428 høgdemeter is the whole track with the lap; to the
 top the first time it climbs 185.6 → 536.3.
 
 The track has no detail for its first 600 m: point 0 is the car park and point 1
-is at Hallset, joined by a straight line over Skarselva. The first solve followed
+is at Nedre Vaggestein, joined by a straight line over Skarselva. The first solve followed
 that line into the river valley at 170 m, 216 m off the track. The corridor now
 crosses where a person does, on Maridalsveien over Vaggesteinbrua (`way/381297585`,
 159.6 on DTM1 — the road drops 26 m from the car park to the bridge), and after
@@ -6457,6 +6457,25 @@ where Hulderhola is — 46.9° — 429 m south of the line. Vest-Telemark is an
 The season is borrowed from Gaustatoppen, the same rule Surløytenuten followed:
 randofolk.no gives one ascent in March/April and no season, and the card carries
 the neighbour's des–mai from the same massif and the same road up.
+
+### The independent read
+
+The second reader went over both guides and found eight things that needed
+changing. The worst was Heddersfjell's summit cone: the guide called the south
+side the steep one, and on the 5 m grid the steep ground beside the upper line
+lies south only at 1375–1383 m — it is north-east at 1398–1415 and west and
+south-west at 1428–1440, and the line comes onto the top from the north. The
+guide's «det som løsner i lia, stopper på isen» read as reassurance and was a
+runout across the line; the source's «Husk hvor du gikk» had been cut before its
+own avalanche warning; and a sentence about Gausta's wind and visibility had no
+source. On Mellomkollen the ut.no track laps the hill once, not twice; Gaupekollen
+is north-east of the line, not east; the leg to Kroken runs east, not south-east,
+and the waypoint called Hallset was at Nedre Vaggestein; the guide said the ut.no
+track follows Maridalsveien when it draws a straight line over the river; and
+«skog fra start til topp» ignored the fields before Kroken. All fixed in both
+languages and in the research records. What it could not check is whether
+Heddersvatn is unregulated beyond OSM's `water=lake`: NVE's lake register was
+not reachable from here.
 
 ### What ran
 

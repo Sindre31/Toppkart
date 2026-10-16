@@ -11225,7 +11225,7 @@
    {
     "id": "skar",
     "name": "Fra Skar langs blåmerket sti",
-    "description": "Fra Skar parkeringsplass langs Maridalsveien over Skarselva på Vaggesteinbrua, forbi Hallset til Kroken, nordover gjennom skogen til Rollveien, opp forbi Jondalen og vest for Midtkollen til toppen av Mellomkollen",
+    "description": "Fra Skar parkeringsplass langs Maridalsveien over Skarselva på Vaggesteinbrua, forbi Nedre Vaggestein til Kroken, nordover gjennom skogen til Rollveien, opp forbi Jondalen og vest for Midtkollen til toppen av Mellomkollen",
     "trailhead": {
      "name": "Skar",
      "lat": 60.02775,
@@ -11247,7 +11247,7 @@
       "elevation_m": 159.6
      },
      {
-      "name": "Hallset",
+      "name": "Nedre Vaggestein",
       "lat": 60.02413,
       "lng": 10.78636,
       "elevation_m": 177.1

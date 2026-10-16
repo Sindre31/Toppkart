@@ -2528,7 +2528,7 @@
     },
     {
       "what": "Toppkjegla, 1375–1462 moh",
-      "figure": "42,0° 48 m under linja ved 1375 moh, 43,4° 23 m under ved 1428, 41,0° 28 m under ved 1440 og 45,4° 44 m under toppen",
+      "figure": "42,0° 48 m frå linja mot sør ved 1375 moh, 43,4° 39 m mot nordaust ved 1415, 43,4° 23 m mot vest-nordvest ved 1428, 41,0° 28 m mot vest-sørvest ved 1440 og 45,4° 44 m frå toppen; linja kjem opp på toppen frå nord (kurs 166° dei siste tre punkta)",
       "how": "DTM1 som GeoTIFF i 5 m rutenett (geo.dem_tile) over oppstigninga, helling per celle med numpy.gradient; for kvart andre punkt på den routede linja er det brattaste cella innanfor 50 m oppgitt med avstand og om ho ligg over eller under linja."
     },
     {

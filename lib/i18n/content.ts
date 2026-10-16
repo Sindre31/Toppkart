@@ -6628,23 +6628,23 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
     intro:
       "398 metres of climbing over 4.11 km from Skar: along Maridalsveien over Skarselva, a flat stretch along the road and the tracks, and then forest all the way to Mellomkollen at 537 m — the highest hill in this part of Nordmarka. The steepest sustained section is 22.9 degrees between 431 and 445 m, but what makes the tour hard is not the gradient: it is the thickets, the knolls and a descent the source calls «bumpy».",
     ascent: [
-      "The bus stops at the Skar car park, and that is where the line starts, at 186 m. The first part goes down: along Maridalsveien and over Skarselva on Vaggesteinbrua, where the road sits at 160 m, past Hallset and south-east to Kroken at 183. It is a detour on the map, but it is the source's — the track ut.no publishes for the tour goes this way before it turns north.",
+      "The bus stops at the Skar car park, and the line starts right by it, at 186 m. The first part goes down: along Maridalsveien and over Skarselva on Vaggesteinbrua, where the road sits at 160 m, past Nedre Vaggestein and east to Kroken at 183. The ut.no track goes from the car park via Nedre Vaggestein and Kroken before it turns north, but it only draws a straight line over the river; the road over Vaggesteinbrua is where you actually get across.",
       "From Kroken the line heads north. The band from 100 to 200 m measures 0.6 degrees over 1353 metres of ground — the road and the flat — and from 200 to 300 m 6.7 degrees over 857 metres, up to Rollveien at 301 m.",
       "After Rollveien the slope toward Jondalen begins, and from here it is the same rhythm to the top: short pitches and flat stretches. The band from 300 to 400 m averages 7.3 degrees. The band from 400 to 500 m averages 6.8 degrees. The average hides the ground. Within 50 metres of the line there are knolls of 40 to 55 degrees in many places, and the steepest 30-metre window on the line itself, 22.9 degrees, is between 431 and 445 m on the slope above Jondalen.",
-      "The line passes 270 metres west of Midtkollen and heads due north for the top. On the last stretch it passes a cliff OpenStreetMap maps 49 metres from the line, and Svartputten lies 205 metres east. The summit, 537 m, is wooded; ut.no describes the view from it toward Lillomarka, Maridalsvannet and the Oslofjord in the distance.",
+      "The line passes 270 metres west of Midtkollen and heads due north for the top. On the last stretch it passes a cliff OpenStreetMap maps 49 metres from the line, and the middle of Svartputten lies 205 metres east. The summit, 537 m, is wooded; ut.no describes the view from it toward Lillomarka, Maridalsvannet and the Oslofjord in the distance.",
     ],
     descent: [
-      "The descent is harder than the climb, and the source says so outright: «The descent can quickly get quite technical and bumpy if you have not picked out some open patches beforehand.» The advice is to look for open patches of forest on the way up, and otherwise to follow the summer paths — the source names the blue-marked one down to Øyungen, which takes you somewhere other than the bus. The ut.no track itself skis the same side down and climbs back up, twice.",
-      "Mellomkollen is gentle on top — 3.3 to 11.6 degrees on average on every side over 500 metres — but steepest to the south-west, 36.2 degrees 210 to 270 metres out. The source warns about the cliffs on the south side of Gaupekollen: they measure 38.7 degrees 240 to 300 metres south of that top, 632 metres east of the line. The hills look alike, and «suddenly you are on Mellomkollen when you thought you were on Midtkollen» — carry a map and compass.",
+      "The descent is harder than the climb, and the source says so outright: «The descent can quickly get quite technical and bumpy if you have not picked out some open patches beforehand.» The advice is to look for open patches of forest on the way up, and otherwise to follow the summer paths — the source names the blue-marked one down to Øyungen, which takes you somewhere other than the bus. The ut.no track itself skis the same side down to 461 m, climbs back up once, and ends below the top.",
+      "Mellomkollen is gentle on top — 3.3 to 11.6 degrees on average on every side over 500 metres — but steepest to the south-west, 36.2 degrees 210 to 270 metres out. The source warns about the cliffs on the south side of Gaupekollen: they measure 38.7 degrees 240 to 300 metres south of that top, 632 metres north-east of the line. The hills look alike, and «suddenly you are on Mellomkollen when you thought you were on Midtkollen» — carry a map and compass.",
     ],
     avalanche: [
       {
         title: "The route",
-        body: "The steepest sustained section on the line is 22.9 degrees between 431 and 445 m, and the steepest hundred-metre band is 300 to 400 m at 7.3 degrees. From the car park to the summit it is forest the whole way, up to and including 537 m.",
+        body: "The steepest sustained section on the line is 22.9 degrees between 431 and 445 m, and the steepest hundred-metre band is 300 to 400 m at 7.3 degrees. After the fields at Kroken it is forest the whole way, up to and including 537 m.",
       },
       {
         title: "The terrain around it",
-        body: "The steep edges here are short, not big mountain faces: the knolls along the line measure 40 to 55 degrees within 50 metres, and a small slab off one of those edges ends in thicket and rock. The cliffs on the south side of Gaupekollen, 38.7 degrees, are the ones the source itself warns about. Streams and rivers lie under the snow, and the source names both them and dense thicket as obstacles.",
+        body: "The steep edges here are short, not big mountain faces: the knolls along the line measure 40 to 55 degrees within 50 metres, and a small slab off one of those edges ends in thicket and rock. The cliffs on the south side of Gaupekollen, 38.7 degrees, are the ones the source itself warns about. Rivers lie under the snow, and the source names both rivers and dense thicket as obstacles.",
       },
       {
         title: "Before you go",
@@ -6655,7 +6655,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       startLabel: "186 m",
       endLabel: "537 m",
       distanceLabel: "4.1 km",
-      caption: "398 metres of climbing and 4.11 km from Skar, in forest from start to summit, with the steepest hundred-metre band between 300 and 400 m.",
+      caption: "398 metres of climbing and 4.11 km from Skar, in forest from Kroken to the summit, with the steepest hundred-metre band between 300 and 400 m.",
     },
   },
   juklavasstinden: {
@@ -6805,10 +6805,10 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       "Start at the free car park by Gaustabanen, 1132 m, 170 metres east of the lower station. The tour begins by going down: 49 metres to the ski track at 1083 m, which you follow south-east up to 1160 m on the flat ground west of Heddersvatn. That is the track the source means by «follow the ski track a while and cut down to the lake».",
       "From the track the line drops to the west end of Heddersvatn at 1137 m, and then it is on the ice: 1846 metres flat and up to 213 metres from the shore, past the point that reaches out from the south shore, which the line passes 202 metres to the north. Heddersvatn is a natural lake, not a regulated reservoir, and the source crosses it — but that means the ice has to hold, and that is your judgement on the day, not the map's.",
       "After the point the climbing starts, from the north-east shore at 1143 m. The first pitch is the steepest on the tour: 21.7 degrees between 1169 and 1187 m, and the ground on both sides is steeper than the line — within 50 metres it measures 35 to 39 degrees, above and below you, between 1159 and 1216 m. That is as close as the terrain model gets to the source's «a section that can be exposed». The source does not say exactly where it is.",
-      "Above the pitch it goes in steps: the band from 1200 to 1300 m measures 11.6 degrees, and from 1300 to 1400 m 16.6 degrees over 378 metres of ground, the steepest band on the tour. The south side of the summit cone is steeper than the route — 41 to 45 degrees 23 to 48 metres below the line above 1375 m — so do not drift south. Blånipa stands at 1462 m, with Gaustatoppen to the west-north-west.",
+      "Above the pitch it goes in steps: the band from 1200 to 1300 m measures 11.6 degrees, and from 1300 to 1400 m 16.6 degrees over 378 metres of ground, the steepest band on the tour. The summit cone is steeper than the route on more than one side — 41 to 45 degrees 23 to 48 metres from the line above 1375 m, to the south low down and to the west and south-west between 1428 and 1440 m — so keep to the line. It comes onto the top from the north. Blånipa stands at 1462 m, with Gaustatoppen to the west-north-west.",
     ],
     descent: [
-      "The source skis down the same way — «remember where you went» — down the west side toward Heddersvatn with Gaustatoppen in front of you. The west side averages 18.7 degrees over 700 metres from the summit, with 29.5 degrees as the steepest 60-metre window, 60 to 120 metres out. The pitch down to the ice is the same one as on the way up, with the same steeper ground on either side.",
+      "The source skis down the same way and writes: «remember where you went up and watch out for the area exposed to avalanche danger.» That is down toward Heddersvatn with Gaustatoppen in front of you. Due west of the summit the ground averages 18.7 degrees over 700 metres, with 29.5 degrees as the steepest 60-metre window, 60 to 120 metres out — that is the mountainside beside the line, not the line itself. The pitch down to the ice is the same one as on the way up, with the same steeper ground on either side.",
       "Do not take the shortcut south-west. That side is the crag above Heddersvatn where the Hulderhola cave is, 429 metres south of the line — 46.9 degrees in its steepest window, 520 to 580 metres out from the summit. From the lake it is the same way back across the ice and up to the track, and the 76 metres you lost on the way in you climb again on the way out.",
     ],
     avalanche: [
@@ -6818,11 +6818,11 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       },
       {
         title: "The terrain around it",
-        body: "The source tells you to get the Varsom app out where the climbing starts, after the point, and to pick the section you go up by the conditions. The terrain model shows why: in the pitch between 1159 and 1216 m the ground measures 35 to 39 degrees within 50 metres on both sides of the line, and 94 metres above the line there is a knoll at 59 degrees. The south-west side is the crag above the lake, 46.9 degrees, and the east side has a window of 39.5 degrees 440 to 500 metres out. The lake lies under the whole climb: whatever releases on the slope stops on the ice.",
+        body: "The source tells you to get the Varsom app out where the climbing starts, after the point, and to pick the section you go up by the conditions. The terrain model shows why: in the pitch between 1159 and 1216 m the ground measures 35 to 39 degrees within 50 metres on both sides of the line, and 94 metres above the line there is a knoll at 59 degrees. The south-west side is the crag above the lake, 46.9 degrees, and the east side has a window of 39.5 degrees 440 to 500 metres out. The lake lies below the climb: whatever releases on the slope above you runs across the line and out onto the ice. Do not gather the group on the ice below the slope.",
       },
       {
         title: "Before you go",
-        body: "Check today's avalanche forecast for Vest-Telemark at varsom.no. Vest-Telemark is an A region and is forecast daily in season. Check the ice on Heddersvatn too: the tour goes 1846 metres across it. The plateau is bare mountain with no shelter, and wind and poor visibility are the norm on the Gausta massif. Bring a transceiver, probe and shovel.",
+        body: "Check today's avalanche forecast for Vest-Telemark at varsom.no. Vest-Telemark is an A region and is forecast daily in season. Check the ice on Heddersvatn too: the tour goes 1846 metres across it. The plateau is bare mountain with no shelter. Bring a transceiver, probe and shovel.",
       },
     ],
     elevationProfile: {

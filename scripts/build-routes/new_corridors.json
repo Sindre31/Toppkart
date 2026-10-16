@@ -11487,11 +11487,11 @@
     "slug": "mellomkollen",
     "verdict": "corrected",
     "corrections": [
-      "Ut.no 1113693 heiter «Topptur på ski i Maridalsalpene» og namngir tre koller — «Midtkollen (519 moh), Mellomkollen og Gaupekollen (524moh)». Sporet ut.no publiserer for turen (/api/gpx/trip/1113693, 304 punkt, 6,46 km) går ikkje på Gaupekollen: næraste punkt er 558 m frå toppen. Det går på Mellomkollen — punkt 192 ligg 1 m frå toppen — og så to rundar ned og opp att på same kollen. Turen heiter difor Mellomkollen, etter toppen linja faktisk når.",
+      "Ut.no 1113693 heiter «Topptur på ski i Maridalsalpene» og namngir tre koller — «Midtkollen (519 moh), Mellomkollen og Gaupekollen (524moh)». Sporet ut.no publiserer for turen (/api/gpx/trip/1113693, 304 punkt, 6,46 km) går ikkje på Gaupekollen: næraste punkt er 558 m frå toppen. Det går på Mellomkollen — punkt 192 ligg 1 m frå toppen — og så éin runde ned til 461 moh og opp att på same kollen, før sporet sluttar på 488. Turen heiter difor Mellomkollen, etter toppen linja faktisk når.",
       "Mellomkollen er den høgaste av dei tre: DTM1 les 536,6 på toppen, OSM fører ele 537 (node/3813054270), mot Gaupekollen 524,9 og Midtkollen 519,5. Ut.no 1113431 («Maridalen High 5») skriv det same: «Mellomkollen er den høyeste toppen i denne delen av Nordmarka». Ingen kjelde publiserer høgda, så forventa høgd i peaks.py er DTM1 i registerpunktet.",
-      "Ut.no sine 428 høgdemeter er heile sporet med begge rundane. Opp til toppen første gong (4,69 km) stig sporet 185,6 → 536,3, med ei lita dump på 11 m ved 2,9 km.",
+      "Ut.no sine 428 høgdemeter er heile sporet med runden. Opp til toppen første gong (4,69 km) stig sporet 185,6 → 536,3, med ei lita dump på 11 m ved 2,9 km.",
       "Startpunktet i sporet er 60.02775/10.77782, 185,6 moh ved Skar utfartsparkering (OSM relation/9184679, amenity=parking). Kilden: «Bussen stopper på parkeringsplassen der turen starter» — busstoppet Skar (node/3845261832) ligg 120 m sør.",
-      "Ut.no-sporet har ingen detalj dei første 600 metrane: punkt 0 er parkeringa og punkt 1 ligg ved Hallset (60.02413/10.78636), med ein rett strek over Skarselva mellom dei. Første ruting følgde streken og gjekk ned i elvedalen på 170 moh, 216 m frå sporet. Korridoren går no der ein faktisk kjem over elva: langs Maridalsveien og over Vaggesteinbrua (OSM way/381297585, man_made=bridge), der DTM1 les 159,6 — vegen søkk 26 m frå parkeringa til brua. Så forbi Hallset og 770 m søraust i sporet til Kroken (60.02513/10.78774, 183,0 moh) før stigninga nordover.",
+      "Ut.no-sporet har ingen detalj dei første 600 metrane: punkt 0 er parkeringa og punkt 1 ligg ved Nedre Vaggestein (60.02413/10.78636), med ein rett strek over Skarselva mellom dei. Første ruting følgde streken og gjekk ned i elvedalen på 170 moh, 216 m frå sporet. Korridoren går no der ein faktisk kjem over elva: langs Maridalsveien og over Vaggesteinbrua (OSM way/381297585, man_made=bridge), der DTM1 les 159,6 — vegen søkk 26 m frå parkeringa til brua. Så forbi Nedre Vaggestein og austover i sporet til Kroken, 770 m frå starten, (60.02513/10.78774, 183,0 moh) før stigninga nordover.",
       "Mellomkollen naturreservat (OSM relation/13363584, verneklasse 1a) dekkjer toppen. Kilden: «et fredet naturreservat og en skal derfor ta ekstra hensyn».",
       "Svartputten (OSM way/35909098, ele 488, natural=water) ligg 200 m aust for linja under toppen."
     ],
@@ -11499,7 +11499,7 @@
     "corridor": {
       "routeId": "skar",
       "routeName": "Fra Skar langs blåmerket sti",
-      "routeDescriptionFull": "Fra Skar parkeringsplass langs Maridalsveien over Skarselva på Vaggesteinbrua, forbi Hallset til Kroken, nordover gjennom skogen til Rollveien, opp forbi Jondalen og vest for Midtkollen til toppen av Mellomkollen",
+      "routeDescriptionFull": "Fra Skar parkeringsplass langs Maridalsveien over Skarselva på Vaggesteinbrua, forbi Nedre Vaggestein til Kroken, nordover gjennom skogen til Rollveien, opp forbi Jondalen og vest for Midtkollen til toppen av Mellomkollen",
       "trailhead": {
         "name": "Skar",
         "lat": 60.02775,
@@ -11521,7 +11521,7 @@
           "elevationM": 159.6
         },
         {
-          "name": "Hallset",
+          "name": "Nedre Vaggestein",
           "lat": 60.02413,
           "lng": 10.78636,
           "elevationM": 177.1
