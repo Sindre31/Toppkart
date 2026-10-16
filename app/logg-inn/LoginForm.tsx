@@ -57,17 +57,9 @@ export default function LoginForm({
     failure === "google" ? t.errGoogleFailed : failure === "1" ? t.errSignInFailed : null;
 
   return (
-    <Blueprint style={{ padding: "28px 28px 24px", background: "var(--color-bg)" }}>
+    <Blueprint style={{ padding: "28px 28px 24px" }}>
       <span className="kicker">{t.loginKicker}</span>
-      <h1
-        style={{
-          fontSize: 30,
-          lineHeight: 1.1,
-          letterSpacing: "0.02em",
-          textTransform: "uppercase",
-          margin: "10px 0 0",
-        }}
-      >
+      <h1 className="display" style={{ fontSize: 40, margin: "8px 0 0" }}>
         {t.loginHeading}
       </h1>
       <p className="prose" style={{ margin: "12px 0 0" }}>

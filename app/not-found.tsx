@@ -20,7 +20,7 @@ export default async function NotFound() {
       <main style={{ display: "grid", placeItems: "center", padding: "48px 20px" }}>
         <Blueprint style={{ padding: 32, width: "min(480px, 100%)" }}>
           <span className="kicker">{t.notFoundKicker}</span>
-          <h1 style={{ fontSize: 34, lineHeight: 1.08, letterSpacing: "0.02em", textTransform: "uppercase", margin: "10px 0 0" }}>
+          <h1 className="display" style={{ fontSize: 44, margin: "8px 0 0" }}>
             {t.notFoundTitle}
           </h1>
           <p className="prose" style={{ margin: "12px 0 0" }}>
@@ -33,7 +33,11 @@ export default async function NotFound() {
           </div>
         </Blueprint>
       </main>
-      <SiteFooter lang={lang} />
+      {/* Inne i sidebredden, som på de andre sidene — ellers står lenkene
+          klistret til venstre kant. */}
+      <div className="page" style={{ width: "100%" }}>
+        <SiteFooter lang={lang} />
+      </div>
     </div>
   );
 }
