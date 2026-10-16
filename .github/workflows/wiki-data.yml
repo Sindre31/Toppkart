@@ -1,0 +1,53 @@
+name: Wikipedia-data
+
+# Henter bilder av toppene (Wikimedia Commons) og hvor mye de leses om på
+# Wikipedia, og pusher resultatet til grenen `data/wiki`. Derfra blir det en
+# vanlig PR.
+#
+# Skriptene kjøres her og ikke lokalt fordi Wikimedia struper delte IP-adresser
+# hardt; GitHubs maskiner slipper gjennom. Kjøres for hånd:
+# Actions → Wikipedia-data → Run workflow.
+#
+# Hvert steg skriver til en midlertidig fil og flytter den på plass bare når
+# skriptet gikk gjennom, så et steg som feiler aldri etterlater en halv fil —
+# og det andre steget kjøres uansett.
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    name: Hent bilder og popularitet
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Bilder (Commons)
+        continue-on-error: true
+        run: python3 scripts/peak-photos/fetch_photos.py > "$RUNNER_TEMP/photos.ts" && mv "$RUNNER_TEMP/photos.ts" lib/photos.ts
+
+      - name: Popularitet (Wikipedia-visninger)
+        continue-on-error: true
+        run: python3 scripts/wiki-popularity/fetch_popularity.py > "$RUNNER_TEMP/popularity.ts" && mv "$RUNNER_TEMP/popularity.ts" lib/popularity.ts
+
+      - name: Push til data/wiki
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -B data/wiki
+          git add lib/photos.ts lib/popularity.ts
+          if git diff --cached --quiet; then
+            echo "Ingenting nytt å pushe."
+            exit 0
+          fi
+          git commit -m "Wikipedia-data: bilder og popularitet"
+          git push --force origin data/wiki

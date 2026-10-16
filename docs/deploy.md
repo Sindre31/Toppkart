@@ -259,8 +259,7 @@ Walk the real flow on the deployed site, not just the local one:
 - [ ] A guide, e.g. `/tur/kirketaket`, shows ascent, descent and avalanche terrain, and «Last ned
       GPX» downloads the file — all without signing in.
 - [ ] «Favoritt» and «Har gått» on a guide show up on `/mine-turer`.
-- [ ] Opening the site in a fresh tab for the third time shows the «Toppkart er gratis» prompt
-      once; the fourth time it stays away.
+- [ ] `/om` shows the Vipps number with a working «Kopier nummer» button.
 - [ ] `/betaling` and `/min-side` redirect to `/` and `/mine-turer`.
 - [ ] `/logg-inn` (linked from nowhere): "Fortsett med Google" signs an `ADMIN_EMAILS` address in
       on the deployed domain and lands on `/admin/tilbakemeldinger`.

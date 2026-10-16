@@ -4,7 +4,6 @@ import Script from "next/script";
 import { Analytics } from "@vercel/analytics/next";
 import { Feedback } from "@/components/Feedback";
 import { ServiceWorker } from "@/components/ServiceWorker";
-import { SupportPrompt } from "@/components/SupportPrompt";
 import { getIdentity } from "@/lib/access";
 import { GA_MEASUREMENT_ID } from "@/lib/config";
 import { htmlLang } from "@/lib/i18n";
@@ -111,7 +110,6 @@ export default async function RootLayout({ children }: { children: React.ReactNo
       <body>
         {children}
         <Feedback lang={lang} email={email} />
-        <SupportPrompt lang={lang} />
         <ServiceWorker />
         <Analytics />
         {analytics && (

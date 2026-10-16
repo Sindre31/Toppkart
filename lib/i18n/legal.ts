@@ -151,7 +151,6 @@ const LEGAL_TEXT: Translated<LegalDict> = {
           body: [
             "Merker du en tur som favoritt eller som gått, lagres det i nettleseren på enheten din — hvilken tur det er, og datoen du merket den som gått. Det sendes aldri til oss, og det følger ikke med til en annen enhet. Du fjerner en markering ved å trykke på knappen igjen.",
             "Trykker du «Lagre offline» på en turguide, lagres guiden, kartbildene langs ruta og GPX-fila i nettleseren på enheten din, så de virker uten dekning. Du fjerner den med «Fjern» på guiden.",
-            "Nettleseren husker også hvor mange ganger du har åpnet appen, slik at spørsmålet om støtte kommer én gang — den tredje gangen — og aldri igjen.",
             "Alt dette slettes når du tømmer nettstedsdataene for Toppkart i nettleseren.",
           ],
         },
@@ -297,7 +296,6 @@ const LEGAL_TEXT: Translated<LegalDict> = {
           body: [
             "If you mark a tour as a favourite or as done, it is stored in the browser on your device — which tour it is, and the date you marked it done. It is never sent to us, and it does not follow you to another device. You remove a mark by pressing the button again.",
             "If you press «Save offline» on a guide, the guide, the map images along the route and the GPX file are stored in the browser on your device, so they work without coverage. You remove it with «Remove» on the guide.",
-            "The browser also remembers how many times you have opened the app, so that the question about support comes once — the third time — and never again.",
             "All of this is deleted when you clear the site data for Toppkart in your browser.",
           ],
         },
