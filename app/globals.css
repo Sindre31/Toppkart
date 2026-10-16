@@ -555,6 +555,10 @@ select.input { border-radius: var(--radius-pill); }
   font-family: var(--font-heading); font-weight: 400;
   line-height: 0.98; letter-spacing: -0.02em;
   margin: 0 0 0 -0.03em;
+  /* Lange enkeltord — «Personvernerklæring», «Tilbakemeldinger» — er bredere
+     enn en 320px-skjerm i 48px. De deles heller enn å dra sida ut til siden. */
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 .display-hero { font-size: clamp(56px, 7vw, 96px); }
 @media (max-width: 620px) {
