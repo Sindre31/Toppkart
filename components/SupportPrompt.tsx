@@ -7,7 +7,7 @@ import type { Lang } from "@/lib/i18n";
 import { supportDict } from "@/lib/i18n/support";
 import { nextVisit } from "@/lib/support-prompt";
 
-/** The one-time «Toppkart er gratis — støtt gjerne med Vipps» prompt.
+/** The one-time «Støtt Toppkart» prompt.
  *
  *  Shown on the third time the reader opens the app, and never again: once is
  *  an invitation, every visit is nagging. «Opens the app» means a new browser

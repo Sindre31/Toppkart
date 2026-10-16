@@ -58,7 +58,7 @@ export default function Error({ error, reset }: { error: Error & { digest?: stri
             <button type="button" className="btn btn-primary" onClick={reset}>
               {t.errorRetry}
             </button>
-            <Link className="btn btn-secondary" href="/kart">
+            <Link className="btn btn-secondary" href="/">
               {t.errorMap}
             </Link>
           </div>

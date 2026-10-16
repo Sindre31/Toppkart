@@ -11,7 +11,7 @@
 import { Suspense, useCallback, useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import dynamic from "next/dynamic";
 import Link from "next/link";
-import { Check, Locate, LocateFixed, Star, Unlock } from "lucide-react";
+import { Check, Locate, LocateFixed, Star } from "lucide-react";
 
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { NavMenu } from "@/components/NavMenu";
@@ -192,8 +192,11 @@ export default function MapView({
   /** Narrow screens show one pane at a time. The panel is opaque and nearly
    *  full width there, so side-by-side just means the map is permanently
    *  behind it — on the one page whose whole point is the map. Above the
-   *  breakpoint this state is inert; the CSS ignores it. */
-  const [mobilePane, setMobilePane] = useState<"list" | "map">("list");
+   *  breakpoint this state is inert; the CSS ignores it.
+   *
+   *  Opens on the map: this is the front page, and the map is what it is. The
+   *  list is one tap away on the toggle. */
+  const [mobilePane, setMobilePane] = useState<"list" | "map">("map");
   /* Which of the peak's routes is drawn. Null means "the tour's own route", so a
      peak with one route needs no state and picking a tour never has to guess. */
   const [selectedRouteId, setSelectedRouteId] = useState<string | null>(initialRouteId);
@@ -500,64 +503,6 @@ export default function MapView({
             <div className={s.dBody}>
               <p className={s.teaser}>{selected.teaser}</p>
 
-              <div className={s.marks}>
-                <MarkButtons
-                  slug={selected.slug}
-                  lang={lang}
-                  state={marks.state}
-                  failed={marks.failed}
-                  onChange={marks.update}
-                />
-              </div>
-
-              {/* `key` er ikke pynt: den gjør at panelet lages på nytt når
-                  leseren bytter topp, slik at forrige topps faregrad aldri
-                  rekker å stå under det nye navnet. */}
-              <AvalanchePanel key={selected.slug} slug={selected.slug} lang={lang} />
-              <WeatherPanel
-                key={`vaer-${selected.slug}`}
-                slug={selected.slug}
-                lat={selected.lat}
-                lng={selected.lng}
-                lang={lang}
-                className={s.avalanche}
-              />
-
-              {selected.hasGuide ? (
-                <Link className={`btn btn-secondary ${s.guideLink}`} href={`/tur/${selected.slug}`}>
-                  {t.openGuide} →
-                </Link>
-              ) : null}
-
-              {routes.length > 1 ? (
-                <div className={s.routes}>
-                  <div className={s.routesHead}>
-                    <CapsText>{t.routesLabel}</CapsText>
-                  </div>
-                  <div className={s.routeList} role="radiogroup" aria-label={t.routesGroup}>
-                    {routes.map((route) => (
-                      <label
-                        key={route.id}
-                        className={`${s.route}${route.id === activeRouteId ? ` ${s.routeSel}` : ""}`}
-                      >
-                        <input
-                          type="radio"
-                          name="rute"
-                          value={route.id}
-                          checked={route.id === activeRouteId}
-                          onChange={() => setSelectedRouteId(route.id)}
-                        />
-                        <span className={s.routeName}>{route.name}</span>
-                        <span className={s.routeMeta}>
-                          ↑ {route.gainM} m · {(route.distanceM / 1000).toFixed(1)} km ·{" "}
-                          {route.trailhead}
-                        </span>
-                      </label>
-                    ))}
-                  </div>
-                </div>
-              ) : null}
-
               <div className={s.stats}>
                 <div className={s.stat}>
                   <div className={s.statL}>
@@ -591,36 +536,73 @@ export default function MapView({
                 </div>
               </div>
 
-              <p className={s.schematic}>{t.schematicNote}</p>
+              {/* Guiden er det panelet peker videre til, så den står rett under
+                  tallene — ikke etter vær og skredvarsel. */}
+              {selected.hasGuide ? (
+                <Link
+                  className={`btn btn-primary ${s.guideLink}`}
+                  href={`/tur/${selected.slug}`}
+                  style={PRIMARY_LINK}
+                >
+                  {t.openGuide} →
+                </Link>
+              ) : (
+                <p className={s.pending}>{t.guidePending}</p>
+              )}
 
-              <div className="locked">
-                <div className={`${s.lockmsg} ${s.lockmsgFlush}`}>
-                  <span className={`kicker ${s.lockKicker}`}>
-                    <Unlock size={14} strokeWidth={1.5} />
-                    {t.unlockedTitle}
-                  </span>
-                  <p className={s.lockText}>{t.unlockedBody}</p>
-                  <div className="chips">
-                    {t.chips.map((chip) => (
-                      <span className={`chip ${s.chipOn}`} key={chip}>
-                        <Check size={12} strokeWidth={1.5} />
-                        {chip}
-                      </span>
+              <div className={s.marks}>
+                <MarkButtons
+                  slug={selected.slug}
+                  lang={lang}
+                  state={marks.state}
+                  failed={marks.failed}
+                  onChange={marks.update}
+                />
+              </div>
+
+              {routes.length > 1 ? (
+                <div className={s.routes}>
+                  <div className={s.routesHead}>
+                    <CapsText>{t.routesLabel}</CapsText>
+                  </div>
+                  <div className={s.routeList} role="radiogroup" aria-label={t.routesGroup}>
+                    {routes.map((route) => (
+                      <label
+                        key={route.id}
+                        className={`${s.route}${route.id === activeRouteId ? ` ${s.routeSel}` : ""}`}
+                      >
+                        <input
+                          type="radio"
+                          name="rute"
+                          value={route.id}
+                          checked={route.id === activeRouteId}
+                          onChange={() => setSelectedRouteId(route.id)}
+                        />
+                        <span className={s.routeName}>{route.name}</span>
+                        <span className={s.routeMeta}>
+                          ↑ {route.gainM} m · {(route.distanceM / 1000).toFixed(1)} km ·{" "}
+                          {route.trailhead}
+                        </span>
+                      </label>
                     ))}
                   </div>
-                  {selected.hasGuide ? (
-                    <Link
-                      className="btn btn-primary"
-                      href={`/tur/${selected.slug}`}
-                      style={PRIMARY_LINK}
-                    >
-                      {t.openGuide} →
-                    </Link>
-                  ) : (
-                    <p className={s.lockText}>{t.guidePending}</p>
-                  )}
                 </div>
-              </div>
+              ) : null}
+
+              {/* `key` er ikke pynt: den gjør at panelet lages på nytt når
+                  leseren bytter topp, slik at forrige topps faregrad aldri
+                  rekker å stå under det nye navnet. */}
+              <AvalanchePanel key={selected.slug} slug={selected.slug} lang={lang} />
+              <WeatherPanel
+                key={`vaer-${selected.slug}`}
+                slug={selected.slug}
+                lat={selected.lat}
+                lng={selected.lng}
+                lang={lang}
+                className={s.avalanche}
+              />
+
+              <p className={s.schematic}>{t.schematicNote}</p>
             </div>
           </div>
         ) : null}

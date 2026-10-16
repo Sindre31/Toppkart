@@ -12,6 +12,8 @@ export interface CommonDict {
   tours: string;
   /** Favorittene og turene leseren har gått, på `/mine-turer`. */
   myTours: string;
+  /** `/om` — what Toppkart is, and the Vipps number. */
+  about: string;
   /** Menyknappen som samler navigasjonslenkene på telefon. */
   menu: string;
   menuClose: string;
@@ -22,7 +24,7 @@ export interface CommonDict {
   footerSupport: string;
   footerTerms: string;
   footerPrivacy: string;
-  /** Lenke til Vipps-delen på forsida. */
+  /** Lenke til Vipps-delen på `/om`. */
   footerSupportUs: string;
   /* — language switcher — */
   langLabel: string;
@@ -39,6 +41,7 @@ const COMMON: Translated<CommonDict> = {
     map: "Kartet",
     tours: "Turene",
     myTours: "Mine turer",
+    about: "Om",
     menu: "Meny",
     menuClose: "Lukk menyen",
     footerMap: "Kartet",
@@ -58,6 +61,7 @@ const COMMON: Translated<CommonDict> = {
     map: "The map",
     tours: "The tours",
     myTours: "My tours",
+    about: "About",
     menu: "Menu",
     menuClose: "Close the menu",
     footerMap: "The map",

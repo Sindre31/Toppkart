@@ -27,11 +27,8 @@ export default async function NotFound() {
             {t.notFoundBody}
           </p>
           <div style={{ display: "flex", gap: 10, flexWrap: "wrap", marginTop: 22 }}>
-            <Link className="btn btn-primary" href="/kart">
+            <Link className="btn btn-primary" href="/">
               {t.notFoundMap}
-            </Link>
-            <Link className="btn btn-secondary" href="/">
-              {t.notFoundHome}
             </Link>
           </div>
         </Blueprint>

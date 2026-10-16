@@ -81,7 +81,7 @@ export default async function TurerPage() {
             {t.lede(total, groups.length)}
           </p>
           <div style={{ marginTop: 24 }}>
-            <Link className="btn btn-secondary" href="/kart">
+            <Link className="btn btn-secondary" href="/">
               {t.openMap}
             </Link>
           </div>

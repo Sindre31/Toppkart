@@ -1,18 +1,23 @@
 import type { Metadata } from "next";
+import { JsonLd } from "@/components/JsonLd";
 import { NavLinks } from "@/components/SiteChrome";
 import { getLang } from "@/lib/i18n/server";
 import { mapDict } from "@/lib/i18n/map";
 import { localizeTours } from "@/lib/i18n/content";
+import { siteJsonLd } from "@/lib/structured-data";
 import { REGIONS, TOURS, getTour, routeMeta, routesFor } from "@/lib/tours";
 import MapView from "./MapView";
 
-/** `?tur=` og `?rute=` velger hva panelet åpner på — de er navigasjon, ikke nye
+/** Kartet er forsida: `next.config.ts` skriver `/` om hit.
+ *
+ *  `?tur=` og `?rute=` velger hva panelet åpner på — de er navigasjon, ikke nye
  *  sider, og hver kombinasjon ville ellers blitt en egen adresse i indeksen med
- *  samme kart under. Canonical peker dem alle tilbake på `/kart`; turen har sin
- *  egen side på `/tur/<slug>`, og det er den som skal rangere på fjellnavnet. */
+ *  samme kart under. Canonical peker dem alle, og `/kart`, tilbake på `/`; turen
+ *  har sin egen side på `/tur/<slug>`, og det er den som skal rangere på
+ *  fjellnavnet. */
 export async function generateMetadata(): Promise<Metadata> {
   const t = mapDict(await getLang());
-  return { title: t.metaTitle, description: t.metaDescription, alternates: { canonical: "/kart" } };
+  return { title: t.metaTitle, description: t.metaDescription, alternates: { canonical: "/" } };
 }
 
 /** The map — and every guide behind it — is open to everyone. */
@@ -46,14 +51,19 @@ export default async function KartPage({
    *  rutene uten geometrien de ikke viser. Linjene tegnes av Leaflet-halvdelen,
    *  som lastes for seg. */
   return (
-    <MapView
-      lang={lang}
-      nav={<NavLinks lang={lang} current="/kart" />}
-      tours={localizeTours(TOURS, lang)}
-      regions={REGIONS}
-      routeMeta={routeMeta()}
-      initialSlug={initialSlug}
-      initialRouteId={initialRouteId}
-    />
+    <>
+      {/* Hvem nettstedet er. Står bare på forsida: `WebSite` gjentatt på 90
+          sider er det samme utsagnet 90 ganger. */}
+      <JsonLd data={siteJsonLd(lang)} />
+      <MapView
+        lang={lang}
+        nav={<NavLinks lang={lang} current="/" />}
+        tours={localizeTours(TOURS, lang)}
+        regions={REGIONS}
+        routeMeta={routeMeta()}
+        initialSlug={initialSlug}
+        initialRouteId={initialRouteId}
+      />
+    </>
   );
 }

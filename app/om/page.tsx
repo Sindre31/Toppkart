@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { Blueprint, SectionKicker } from "@/components/Blueprint";
-import { JsonLd } from "@/components/JsonLd";
 import { SiteFooter, SiteNav } from "@/components/SiteChrome";
 import { DataPlate } from "@/components/landing/DataPlate";
 import styles from "@/components/landing/landing.module.css";
@@ -11,12 +10,11 @@ import { RouteMap } from "@/components/guide/RouteMap";
 import { VippsNumber } from "@/components/VippsNumber";
 import { getLang } from "@/lib/i18n/server";
 import { landingDict } from "@/lib/i18n/landing";
-import { siteJsonLd } from "@/lib/structured-data";
 import { getTour, routeProfile } from "@/lib/tours";
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = landingDict(await getLang());
-  return { title: t.metaTitle, description: t.metaDescription, alternates: { canonical: "/" } };
+  return { title: t.metaTitle, description: t.metaDescription, alternates: { canonical: "/om" } };
 }
 
 /** Turen figuren i seksjon 03 tegner.
@@ -34,9 +32,10 @@ export async function generateMetadata(): Promise<Metadata> {
  *  1439 er sant igjen, fordi det nå er fjellet det alltid tilhørte. */
 const SAFETY_PEAK = { slug: "kirketaket", name: "Kirketaket" } as const;
 
-const muted = (percent: number) => `color-mix(in srgb, var(--color-text) ${percent}%, transparent)`;
-
-export default async function LandingPage() {
+/** `/om` — hva Toppkart er, og Vipps-nummeret. Forsida er selve kartet
+ *  (`next.config.ts` skriver `/` om til `/kart`), så det som sto her før, er nå
+ *  sida man går til for å lese om tjenesten. */
+export default async function AboutPage() {
   const lang = await getLang();
   const t = landingDict(lang);
 
@@ -45,11 +44,6 @@ export default async function LandingPage() {
 
   return (
     <>
-      {/* Hvem nettstedet er. Står bare her: forsida er den ene sida som
-          representerer hele nettstedet, og `WebSite` gjentatt på 90 sider er
-          det samme utsagnet 90 ganger. */}
-      <JsonLd data={siteJsonLd(lang)} />
-
       <SiteNav lang={lang} />
 
       <div className="page">
@@ -76,13 +70,12 @@ export default async function LandingPage() {
                 {t.lede}
               </p>
               <div style={{ display: "flex", gap: 10, flexWrap: "wrap", alignItems: "center", marginTop: 28 }}>
-                <Link className="btn btn-primary" href="/kart">
+                <Link className="btn btn-primary" href="/">
                   {t.ctaMap}
                 </Link>
                 <Link className="btn btn-secondary" href="/turer">
                   {t.ctaTours}
                 </Link>
-                <span style={{ fontSize: 13, color: muted(60) }}>{t.priceNote}</span>
               </div>
             </div>
           </section>
@@ -131,7 +124,7 @@ export default async function LandingPage() {
                    akkurat det seksjonen påstår. */
                 caption={false}
               >
-                <Link href={`/kart?tur=${SAFETY_PEAK.slug}`}>{t.safetyFigureLink}</Link>
+                <Link href={`/?tur=${SAFETY_PEAK.slug}`}>{t.safetyFigureLink}</Link>
               </RouteMap>
             ) : null}
           </section>
@@ -147,21 +140,9 @@ export default async function LandingPage() {
                 <p className="prose" style={{ margin: "16px 0 0", maxWidth: "52ch" }}>
                   {t.supportBody}
                 </p>
-                <p className="note" style={{ margin: "12px 0 0" }}>
-                  {t.supportNote}
-                </p>
               </div>
               <Blueprint style={{ padding: 24 }}>
                 <VippsNumber lang={lang} />
-                <hr className="hr" style={{ margin: "20px 0" }} />
-                <ul className="numbered">
-                  {t.supportPoints.map((point, index) => (
-                    <li key={point}>
-                      <span>{String(index + 1).padStart(2, "0")}</span>
-                      {point}
-                    </li>
-                  ))}
-                </ul>
               </Blueprint>
             </div>
           </section>

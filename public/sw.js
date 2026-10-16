@@ -121,11 +121,11 @@ async function networkFirst(request, key) {
 /** Den lagrede kopien av sida det navigeres til, om det finnes en.
  *
  *  Turguiden lagres under sin egen sti. Kartsida lagres både som `/kart` og som
- *  `/kart?tur=<slug>` for hver lagrede tur; andre parametre (`rute`, `lang`)
+ *  `/kart?tur=<slug>` for hver lagrede tur, og forsida `/` er den samme sida; andre parametre (`rute`, `lang`)
  *  spiller ingen rolle for hvilken kopi som passer. En tur som ikke er lagret,
  *  får lista. */
 async function savedPage(url) {
-  if (url.pathname === "/kart") {
+  if (url.pathname === "/kart" || url.pathname === "/") {
     const tur = url.searchParams.get("tur");
     const hit = tur ? await lookup(`/kart?tur=${encodeURIComponent(tur)}`) : undefined;
     return hit || lookup("/kart");
