@@ -11169,5 +11169,135 @@
     "notes": "Fri Flyt: KAST 1 – Enkelt på ruta over Helgevallan og høgde 361 — «trygt og enkelt terreng». Åtvaringa gjeld sidene: «På siden av denne ruten er det skrenter og partier som er skredutsatt så ruta må følges når det er skredfare.» Parkeringa ved hyttefeltet er lita og på privat grunn; kilden ber om godkjenning frå grunneigar, eller at du tek den brøyta plassen ved skiløypene 1,5 km lenger vest."
    }
   ]
+ },
+ "heddersfjell": {
+  "routes": [
+   {
+    "id": "vest",
+    "name": "Fra Gaustabanen over Heddersvatn",
+    "description": "Fra parkeringa ved Gaustabanen langs skisporet et stykke, ned til Heddersvatn og over isen forbi odden halvveis, og opp vestsida til Blånipa",
+    "trailhead": {
+     "name": "Gaustabanen",
+     "lat": 59.85322,
+     "lng": 8.6871,
+     "elevation_m": 1132.4,
+     "fullName": "Gaustabanen"
+    },
+    "waypoints": [
+     {
+      "name": "skisporet",
+      "lat": 59.853,
+      "lng": 8.6934,
+      "elevation_m": 1082.6
+     },
+     {
+      "name": "over sporet",
+      "lat": 59.84497,
+      "lng": 8.70229,
+      "elevation_m": 1159.8
+     },
+     {
+      "name": "Heddersvatn, vestenden",
+      "lat": 59.8434,
+      "lng": 8.709,
+      "elevation_m": 1137.0
+     },
+     {
+      "name": "forbi odden",
+      "lat": 59.8395,
+      "lng": 8.729,
+      "elevation_m": 1137.0
+     },
+     {
+      "name": "stigninga",
+      "lat": 59.8387,
+      "lng": 8.7395,
+      "elevation_m": 1142.8
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Randofolk.no: «Når man har passert odden ca halvveis på vannet begynner stigningen. Her er det frem med Varsom appen og finne partiet det er trygt å gå opp. Det er et parti der som kan være utsatt. Etter dette er det trygt helt opp til toppen.» Hulderhola ligg «i det bratteste partiet på fjellsiden ned mot Heddersvannet» — sørvestsida, som måler 46,9° i det brattaste vindauget. Turen kryssar Heddersvatn (naturleg vatn, 1137 moh); isen må vere trygg. Platået er snaufjell utan ly, og vind og dårleg sikt er det vanlege på Gausta-fjellet."
+   }
+  ]
+ },
+ "mellomkollen": {
+  "routes": [
+   {
+    "id": "skar",
+    "name": "Fra Skar langs blåmerket sti",
+    "description": "Fra Skar parkeringsplass langs Maridalsveien over Skarselva på Vaggesteinbrua, forbi Nedre Vaggestein til Kroken, nordover gjennom skogen til Rollveien, opp forbi Jondalen og vest for Midtkollen til toppen av Mellomkollen",
+    "trailhead": {
+     "name": "Skar",
+     "lat": 60.02775,
+     "lng": 10.77782,
+     "elevation_m": 185.6,
+     "fullName": "Skar"
+    },
+    "waypoints": [
+     {
+      "name": "Maridalsveien",
+      "lat": 60.0256,
+      "lng": 10.7812,
+      "elevation_m": 169.9
+     },
+     {
+      "name": "Vaggesteinbrua",
+      "lat": 60.02498,
+      "lng": 10.78221,
+      "elevation_m": 159.6
+     },
+     {
+      "name": "Nedre Vaggestein",
+      "lat": 60.02413,
+      "lng": 10.78636,
+      "elevation_m": 177.1
+     },
+     {
+      "name": "Kroken",
+      "lat": 60.02513,
+      "lng": 10.78774,
+      "elevation_m": 183.0
+     },
+     {
+      "name": "skogen nord for Kroken",
+      "lat": 60.03077,
+      "lng": 10.78321,
+      "elevation_m": 210.6
+     },
+     {
+      "name": "Rollveien",
+      "lat": 60.03746,
+      "lng": 10.78323,
+      "elevation_m": 301.4
+     },
+     {
+      "name": "lia mot Jondalen",
+      "lat": 60.04034,
+      "lng": 10.78066,
+      "elevation_m": 319.4
+     },
+     {
+      "name": "Jondalen",
+      "lat": 60.0431,
+      "lng": 10.7764,
+      "elevation_m": 408.2
+     },
+     {
+      "name": "vest for Midtkollen",
+      "lat": 60.04631,
+      "lng": 10.77041,
+      "elevation_m": 471.9
+     },
+     {
+      "name": "under toppen",
+      "lat": 60.04884,
+      "lng": 10.76871,
+      "elevation_m": 513.2
+     }
+    ],
+    "source": "researched, verified (corrected), no local audit",
+    "notes": "Ut.no: «pass på å unngå stupene som ligger på sørsiden av Gaupekollen.» Nedkjøringa er vanskelegare enn oppturen: «Nedkjøringen kan fort bli ganske teknisk og byksete om man ikke har sett seg ut noen åpne felt på forkant», og kilden rår til å følgje sommerstiane, t.d. den blåmerkte ned til Øyungen. Tett skog, kratt og elver. Kollene liknar kvarandre — «plutselig står du på Mellomkollen når du trodde du var på Midtkollen» — så kart og kompass. Fredet naturreservat."
+   }
+  ]
  }
 }

@@ -1574,5 +1574,21 @@
     "summit_dtm": 547.0,
     "claims": 546,
     "stored_off_km": 0.01
+  },
+  "heddersfjell": {
+    "name": "Blånipa",
+    "lat": 59.83821,
+    "lng": 8.75924,
+    "summit_dtm": 1461.6,
+    "claims": 1461,
+    "stored_off_km": 0.0
+  },
+  "mellomkollen": {
+    "name": "Mellomkollen",
+    "lat": 60.0506,
+    "lng": 10.76836,
+    "summit_dtm": 536.6,
+    "claims": 536,
+    "stored_off_km": 0.0
   }
 }

@@ -1935,6 +1935,17 @@
   "season": "feb–apr",
   "hasGuide": true
  },
+ "mellomkollen": {
+  "name": "Mellomkollen",
+  "region": "Oslo",
+  "summitM": 537,
+  "verticalM": 400,
+  "duration": "2–4 t",
+  "grade": 1,
+  "aspect": "SØ",
+  "season": "des–mar",
+  "hasGuide": true
+ },
  "juklavasstinden": {
   "name": "Juklavasstinden",
   "region": "Hardanger",
@@ -1976,6 +1987,17 @@
   "duration": "4–6 t",
   "grade": 2,
   "aspect": "NØ",
+  "season": "des–mai",
+  "hasGuide": true
+ },
+ "heddersfjell": {
+  "name": "Heddersfjell",
+  "region": "Telemark",
+  "summitM": 1462,
+  "verticalM": 410,
+  "duration": "2–4 t",
+  "grade": 2,
+  "aspect": "V",
   "season": "des–mai",
   "hasGuide": true
  },
