@@ -1,59 +1,107 @@
-import { Blueprint } from "@/components/Blueprint";
-import { CapsText } from "@/components/CapsText";
-import type { Lang } from "@/lib/i18n";
-import { guideDict } from "@/lib/i18n/guide";
-import type { TourGuide } from "@/lib/types";
+"use client";
 
-/** Høydeprofil — arealgraf over viewBox «0 0 600 220».
+import { useStages } from "./GuideStages";
+import { PROFILE_H, PROFILE_W, type ProfileGeometry } from "./stages";
+import styles from "./ElevationProfile.module.css";
+
+/** Høydeprofilen under kartet, regnet fra rutas egne høyder (`routeProfile`),
+ *  over viewBox «0 0 600 150».
  *
- *  `profile.path` er selve linja; arealet under den lukkes her ved å føye til
- *  nedre kant, slik at guideinnholdet bare trenger å bære én path. Nullpunktet
- *  på x-aksen er alltid «0 km» og ligger derfor i visningen, ikke i dataene.
+ *  Ett `path` per etappe, så profilen kan utheve det samme stykket som kartet
+ *  og lista: aktiv etappe tykk, de andre dempet. Over hver etappe ligger et
+ *  usynlig felt som pekemål — en linje på 2,5 px er for smal å treffe.
  *
- *  The labels arrive already localised (`localizeGuide`); only the heading and
- *  the accessible description come from the dictionary. */
+ *  Koordinatene regnes på serveren (`profileGeometry` i sida); her tegnes de. */
+
+/* Skriften som stil, ikke som attributt: et presentasjonsattributt leser ikke
+   CSS-variabler. */
+const LABEL = { fontSize: 11, fill: "rgba(28,38,34,0.55)", style: { fontFamily: "var(--font-body)" } } as const;
+
+function pathOf(xy: readonly [number, number][]): string {
+  return xy.map(([x, y], i) => `${i ? "L" : "M"}${x.toFixed(1)},${y.toFixed(1)}`).join(" ");
+}
+
 export function ElevationProfile({
-  profile,
-  lang,
+  geometry,
+  title,
+  summary,
+  label,
+  startLabel,
+  endLabel,
 }: {
-  profile: TourGuide["elevationProfile"];
-  lang: Lang;
+  geometry: ProfileGeometry;
+  title: string;
+  /** «5,5 km · ↑ 1270 m · brattest 900–1200 moh» */
+  summary: string;
+  /** Skjermleserens beskrivelse. */
+  label: string;
+  startLabel: string;
+  endLabel: string;
 }) {
-  const t = guideDict(lang);
-  const area = `${profile.path} L600,220 L0,220 Z`;
+  const { active, setHover, togglePin } = useStages();
+  const { xy, spans } = geometry;
+  const line = pathOf(xy);
+  const area = `${line} L${PROFILE_W},${PROFILE_H} L0,${PROFILE_H} Z`;
+  const segments = spans.length ? spans : [{ from: 0, to: xy.length - 1, x0: 0, x1: PROFILE_W }];
 
   return (
-    <Blueprint style={{ padding: "18px 20px" }}>
-      <h2 style={{ fontSize: 18, letterSpacing: "0.02em", textTransform: "uppercase", margin: "0 0 12px" }}>
-        <CapsText>{t.elevationTitle}</CapsText>
-      </h2>
-      <svg
-        viewBox="0 0 600 220"
-        style={{ width: "100%", height: "auto", display: "block" }}
-        role="img"
-        aria-label={t.elevationAria(profile.startLabel, profile.endLabel, profile.distanceLabel)}
-      >
-        <line x1="0" y1="55" x2="600" y2="55" stroke="#1d1f2029" strokeWidth="1" />
-        <line x1="0" y1="110" x2="600" y2="110" stroke="#1d1f2029" strokeWidth="1" />
-        <line x1="0" y1="165" x2="600" y2="165" stroke="#1d1f2029" strokeWidth="1" />
-        <path d={area} fill="#5980a626" />
-        <path d={profile.path} fill="none" stroke="#416180" strokeWidth="2.5" />
-        <text x="6" y="196" fontSize="13" fill="#5d5d60" fontFamily="monospace">
-          {profile.startLabel}
+    <div className={styles.card}>
+      <div className={styles.head}>
+        <span className={styles.title}>{title}</span>
+        <span className={styles.summary}>{summary}</span>
+      </div>
+      <svg viewBox={`0 0 ${PROFILE_W} ${PROFILE_H}`} className={styles.svg} role="img" aria-label={label}>
+        <line x1="0" y1="40" x2={PROFILE_W} y2="40" stroke="rgba(28,38,34,0.1)" />
+        <line x1="0" y1="80" x2={PROFILE_W} y2="80" stroke="rgba(28,38,34,0.1)" />
+        <path d={area} fill="rgba(138,42,91,0.08)" />
+        {segments.map((seg, i) => {
+          const on = active === i;
+          const dim = active !== null && !on;
+          return (
+            <g key={i}>
+              <path
+                d={pathOf(xy.slice(seg.from, seg.to + 1))}
+                fill="none"
+                stroke={dim ? "rgba(138,42,91,0.3)" : "#8a2a5b"}
+                strokeWidth={on ? 5 : 2.5}
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+              {spans.length ? (
+                <>
+                  <rect
+                    x={seg.x0}
+                    y="0"
+                    width={Math.max(0, seg.x1 - seg.x0)}
+                    height={PROFILE_H}
+                    fill={on ? "rgba(138,42,91,0.08)" : "transparent"}
+                    className={styles.target}
+                    onMouseEnter={() => setHover(i)}
+                    onMouseLeave={() => setHover(null)}
+                    onClick={() => togglePin(i)}
+                  />
+                  <text
+                    x={(seg.x0 + seg.x1) / 2}
+                    y="146"
+                    {...LABEL}
+                    fontWeight="600"
+                    textAnchor="middle"
+                    pointerEvents="none"
+                  >
+                    {i + 1}
+                  </text>
+                </>
+              ) : null}
+            </g>
+          );
+        })}
+        <text x="4" y="126" {...LABEL} pointerEvents="none">
+          {startLabel}
         </text>
-        <text x="452" y="16" fontSize="13" fill="#5d5d60" fontFamily="monospace">
-          {profile.endLabel}
-        </text>
-        <text x="6" y="216" fontSize="13" fill="#5d5d60" fontFamily="monospace">
-          0 km
-        </text>
-        <text x="548" y="216" fontSize="13" fill="#5d5d60" fontFamily="monospace">
-          {profile.distanceLabel}
+        <text x={PROFILE_W - 4} y="9" {...LABEL} textAnchor="end" pointerEvents="none">
+          {endLabel}
         </text>
       </svg>
-      <p className="note" style={{ margin: "12px 0 0" }}>
-        {profile.caption}
-      </p>
-    </Blueprint>
+    </div>
   );
 }

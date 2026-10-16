@@ -1,81 +1,109 @@
-/* Industry — design-system tokens and component classes. This file is the source of truth for the system's look; retune it here and see readme.md. */
+/* Toppkart v3 — tokens og komponentklasser. Erstatter «Industry» (Barlow
+   Condensed, blåkopi-rammer, stålblått): papir og blekk, én aksent i
+   tyttebær, avrundede kort med myke skygger, og ingen versaler i overskriftene.
+   Kilden er `design-reference/v3/README.md`; tallene der er endelige.
 
-/* Skriftene lastes ikke herfra lenger. En `@import` øverst i et stilark er en
-   lenke nettleseren først finner etter at arket er hentet og lest, og den er
-   blokkerende: hent globals → les linje 2 → hent Googles CSS → les den → hent
-   filene → tegn tekst. Tre rundturer på rad, hver eneste førstegangsvisning,
-   til to fjerne verter.
-   `next/font` i `app/layout.tsx` gjør det motsatte: filene hentes ved bygging og
-   ligger på vårt eget domene, i samme forespørsel som resten av siden.
-   `--font-heading` og `--font-body` under peker på dem. */
+   Skriftene lastes ikke herfra. En `@import` øverst i et stilark er en lenke
+   nettleseren først finner etter at arket er hentet og lest, og den er
+   blokkerende. `next/font` i `app/layout.tsx` henter filene ved bygging og
+   serverer dem fra vårt eget domene; `--font-heading` og `--font-body` under
+   peker på dem. */
 
 :root {
-  --color-bg: #f2f2f3;
-  --color-surface: #e9e9ea;
-  --color-text: #1d1f20;
-  --color-accent: #5980a6;
-  --color-accent-2: #728fab;
-  --color-divider: color-mix(in srgb, #1d1f20 16%, transparent);
+  /* — flater og blekk — */
+  --color-bg: #f4f1ea;
+  --color-card: #fffdf8;
+  --color-text: #1c2622;
+  /* Et ugjennomsiktig hakk ned fra papiret, der noe må dekke det som ligger
+     under (dialoger, felt over et kart). Ellers brukes tintene under. */
+  --color-surface: #ebe7de;
 
-  /* Tonal ramps — generated in OKLCH on one shared lightness scale, so the
-     same step of any role matches the others in visual value. */
-  --color-neutral-100: #f5f5f8;
-  --color-neutral-200: #e7e7ea;
-  --color-neutral-300: #d4d4d7;
-  --color-neutral-400: #b7b7ba;
-  --color-neutral-500: #98989b;
-  --color-neutral-600: #7a7a7d;
-  --color-neutral-700: #5d5d60;
-  --color-neutral-800: #424244;
-  --color-neutral-900: #2b2b2d;
+  /* Dempet tekst, i de trinnene designet bruker. */
+  --color-muted: rgba(28, 38, 34, 0.78);
+  --color-label: rgba(28, 38, 34, 0.62);
+  --color-hint: rgba(28, 38, 34, 0.55);
 
-  --color-accent-100: #eef6ff;
-  --color-accent-200: #d6ebff;
-  --color-accent-300: #b5d9fd;
-  --color-accent-400: #94bce3;
-  --color-accent-500: #749dc4;
-  --color-accent-600: #597ea3;
-  --color-accent-700: #416180;
-  --color-accent-800: #2c455d;
-  --color-accent-900: #1d2d3d;
+  /* Tinter over papiret: hover, søkefelt og segment, nummersirkel av. */
+  --color-tint: rgba(28, 38, 34, 0.05);
+  --color-tint-2: rgba(28, 38, 34, 0.06);
+  --color-tint-3: rgba(28, 38, 34, 0.08);
 
-  --color-accent-2-100: #eef6ff;
-  --color-accent-2-200: #d6ebff;
-  --color-accent-2-300: #bdd8f2;
-  --color-accent-2-400: #9ebbd8;
-  --color-accent-2-500: #7e9cb8;
-  --color-accent-2-600: #627d98;
-  --color-accent-2-700: #486077;
-  --color-accent-2-800: #314457;
-  --color-accent-2-900: #1f2d3a;
+  /* Linjer: footerstreken og hårstreker, og knapperammene. */
+  --color-divider: rgba(28, 38, 34, 0.12);
+  --color-line: rgba(28, 38, 34, 0.14);
+  --color-line-strong: rgba(28, 38, 34, 0.18);
 
-  /* `--tk-font-*` settes av `next/font` i rotlayouten. Fallbacken bak er den
-     samme som før, for det tilfellet at en side rendres uten den klassen. */
-  --font-heading: var(--tk-font-heading), "Barlow Condensed", system-ui, sans-serif;
-  --font-heading-weight: 600;
-  --font-body: var(--tk-font-body), "Barlow", system-ui, sans-serif;
+  /* Fylt knapp og valgt tilstand: blekk på papir. */
+  --color-ink: #1c2622;
+  --color-ink-hover: #2b3a34;
 
-  /* Navigasjonen har én tekststørrelse, og dette er den. Den gjelder hver
-     tekstflate i baren — lenkene, kontolenka, knappen, språkvelgeren og
-     lenkene i mobilmenyen — på hver bredde og i begge navigasjonene (sidenes
-     `.site-nav` og kartets egen topbar).
+  /* Aksent «tyttebær»: rute, lenker, aktive valg. */
+  --color-accent: #8a2a5b;
+  --color-accent-hover: #5c1a3c;
+  --color-accent-tint: rgba(138, 42, 91, 0.08);
+  --color-accent-dim: rgba(138, 42, 91, 0.3);
 
-     Grunnen til at den finnes: størrelsene hadde grodd fram hver for seg. Én
-     regel satte 14px, `.nav-muted` 13, `.btn` 14, `.seg-opt` 13, og under 620px
-     ble alt sammen 13 mens menypanelet stod på 15. Sju steder å endre, og
-     ingenting som holdt dem i takt — så de var ikke i takt. Nå er det ett tall.
+  /* Rampene står igjen for sidene som fortsatt leser dem (forsida, `/om`,
+     de juridiske sidene). Samme tone som aksenten, fra lys til mørk; 300, 500,
+     700 og 900 er gradfargene. */
+  --color-accent-100: #f8eef3;
+  --color-accent-200: #f0d9e5;
+  --color-accent-300: #e2b3c9;
+  --color-accent-400: #d08fae;
+  --color-accent-500: #bf6a93;
+  --color-accent-600: #a44677;
+  --color-accent-700: #8a2a5b;
+  --color-accent-800: #5c1a3c;
+  --color-accent-900: #4a1430;
 
-     Trykkflatene i mobilmenyen kommer fra padding og line-height, ikke fra
-     skriftstørrelsen, så de er de samme 44px som før. */
+  --color-accent-2-100: #eef0ec;
+  --color-accent-2-800: #2b3a34;
+
+  --color-neutral-100: #f4f1ea;
+  --color-neutral-200: #e8e4da;
+  --color-neutral-800: #2b3a34;
+  --color-neutral-900: #1c2622;
+
+  /* Gradene 1–4 på kartet og i tegnforklaringen: én lysskala av aksenten,
+     lesbar over Kartverkets grønne og brune. Speilet i `GRADE_COLORS`
+     (`lib/config.ts`), som Leaflet-markørene leser. */
+  --grade-1: #e2b3c9;
+  --grade-2: #bf6a93;
+  --grade-3: #8a2a5b;
+  --grade-4: #4a1430;
+
+  /* — skrift — */
+  --font-heading: var(--tk-font-heading), "Instrument Serif", Georgia, serif;
+  --font-heading-weight: 400;
+  --font-body: var(--tk-font-body), "Schibsted Grotesk", system-ui, sans-serif;
+
+  /* Navigasjonen har én tekststørrelse, og dette er den — i sidenes
+     `.site-nav`, i kartets topbar og i mobilmenyen. Ordmerket er det ene som
+     ikke følger den: det er et merke, ikke en lenke i rekka. */
   --nav-text: 14px;
+  --nav-brand-text: 26px;
 
-  /* Ordmerket er det ene som ikke er 14px — det er et merke og ikke en lenke i
-     rekka — men det er 18px begge steder det står.
-     Det var det ikke: `.nav-brand` sa 18px, men `.site-nav a` er en mer
-     spesifikk velger og satte 14, så merket stod på 14 på alle de vanlige
-     sidene og på 18 i kartets topbar. Ingen av tallene var valgt; forskjellen
-     var utfallet av en spesifisitetskollisjon. */
-  --nav-brand-text: 18px;
+  /* — form — */
+  --radius-sm: 10px;
+  --radius-md: 12px;
+  --radius-card: 14px;
+  --radius-profile: 18px;
+  --radius-frame: 22px;
+  --radius-pill: 999px;
+
+  --shadow-card: 0 1px 0 rgba(28, 38, 34, 0.06), 0 8px 24px rgba(28, 38, 34, 0.05);
+  --shadow-card-active: 0 1px 0 rgba(28, 38, 34, 0.06), 0 12px 32px rgba(28, 38, 34, 0.1);
+  --shadow-frame: 0 1px 0 rgba(28, 38, 34, 0.08), 0 24px 60px rgba(28, 38, 34, 0.12);
+  --shadow-panel: 0 1px 0 rgba(28, 38, 34, 0.06), 0 16px 40px rgba(28, 38, 34, 0.08);
+  --shadow-float: 0 6px 20px rgba(28, 38, 34, 0.14);
+
+  /* Flytende kontroller over et kart. */
+  --float-bg: rgba(255, 253, 248, 0.92);
+
+  /* De gamle navnene, for det som fortsatt bruker dem. */
+  --shadow-sm: var(--shadow-card);
+  --shadow-md: var(--shadow-float);
+  --shadow-lg: var(--shadow-frame);
 
   --space-1: 3.4px;
   --space-2: 6.8px;
@@ -83,537 +111,374 @@
   --space-4: 13.6px;
   --space-6: 20.4px;
   --space-8: 27.2px;
-
-  --radius-sm: 2px;
-  --radius-md: 4px;
-  --radius-lg: 7px;
-
-  /* Elevation — derived from the ground: soft ink-tinted shadows on a
-     light theme, a hairline edge + ambient darkness on a dark one. */
-  --shadow-sm: 0 1px 2px color-mix(in srgb, #2b2b2d 14%, transparent);
-  --shadow-md: 0 3px 10px color-mix(in srgb, #2b2b2d 16%, transparent);
-  --shadow-lg: 0 12px 32px color-mix(in srgb, #2b2b2d 22%, transparent);
 }
-
-body {
-  background: var(--color-bg);
-  color: var(--color-text);
-  font-family: var(--font-body);
-}
-h1, h2, h3, h4 { font-family: var(--font-heading); font-weight: var(--font-heading-weight); }
-
-.blueprint {
-  position: relative;
-  border: 1px solid var(--color-divider);
-  border-radius: 0;
-}
-/* The overlay image treatments (halftone, duotone) clip their overlay
-   (overflow:hidden); a blueprint wrapper draws its registration marks
-   outside the box, so when both classes share a wrapper the frame must
-   win. */
-.blueprint.halftone, .blueprint.plate, .blueprint.duotone { overflow: visible; }
-.blueprint > .corner {
-  position: absolute; width: 11px; height: 11px;
-  color: color-mix(in srgb, var(--color-text) 55%, transparent);
-}
-.blueprint > .corner::before, .blueprint > .corner::after {
-  content: ""; position: absolute; background: currentColor;
-}
-.blueprint > .corner::before { left: 5px; top: 0; width: 1px; height: 100%; }
-.blueprint > .corner::after  { top: 5px; left: 0; width: 100%; height: 1px; }
-.blueprint > .corner.tl { top: -6px; left: -6px; }
-.blueprint > .corner.tr { top: -6px; right: -6px; }
-.blueprint > .corner.bl { bottom: -6px; left: -6px; }
-.blueprint > .corner.br { bottom: -6px; right: -6px; }
-
-.duotone{position:relative;overflow:hidden}
-.duotone::after{content:"";position:absolute;inset:0;pointer-events:none;
-  background:var(--color-accent);mix-blend-mode:color}
 
 /* ══════════════════════════════════════════════════════════════════════════
-   Components — built with the tokens above. Plain CSS
-   on plain HTML: no JavaScript, no build step. Each class is documented in
-   readme.md and demonstrated in foundations/ and components/.
+   Grunnlaget
    ══════════════════════════════════════════════════════════════════════ */
 
 *, *::before, *::after { box-sizing: border-box; }
-body { margin: 0; font-size: 15px; line-height: 1.55; font-weight: 400; }
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-heading); font-weight: var(--font-heading-weight);
-  line-height: 1.12; letter-spacing: -0.015em; margin: 0 0 var(--space-2);
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.55;
+  font-weight: 400;
+  text-wrap: pretty;
 }
-h1 { font-size: 42px; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: var(--font-heading-weight);
+  line-height: 1.05;
+  letter-spacing: -0.015em;
+  margin: 0 0 var(--space-2);
+}
+h1 { font-size: 56px; letter-spacing: -0.02em; }
 h2 { font-size: 32px; }
-h3 { font-size: 25px; }
+h3 { font-size: 24px; }
 h4 { font-size: 20px; }
-h5 { font-size: 16px; }
-h6 { font-size: 13px; }
-h6 { letter-spacing: 0.08em; text-transform: uppercase; }
+h5 { font-size: 17px; }
+h6 { font-size: 15px; }
+
 p { margin: 0 0 var(--space-3); }
-a { color: var(--color-accent); text-underline-offset: 3px; }
+a { color: var(--color-accent); text-underline-offset: 3px; text-decoration-thickness: 1px; }
+a:hover { color: var(--color-accent-hover); }
 img { display: block; max-width: 100%; }
 figure { margin: 0; }
-figcaption {
-  font-size: 11px; margin-top: var(--space-1);
-  color: color-mix(in srgb, var(--color-text) 55%, transparent);
-}
-.text-muted { color: color-mix(in srgb, var(--color-text) 55%, transparent); }
+figcaption { font-size: 13px; margin-top: 8px; color: var(--color-label); }
+em { font-style: italic; }
+.text-muted { color: var(--color-hint); }
+
+/* Tabelltall der tallene står i kolonner og kort og ikke skal danse når de
+   endres. Ikke på hele sida: i Schibsted Grotesk gjør `tnum` også komma, kolon
+   og punktum like brede som et siffer, og brødteksten fikk luft foran hvert
+   skilletegn. */
+.tnum { font-variant-numeric: tabular-nums; }
+
+html { scroll-behavior: smooth; }
 :focus { outline: none; }
 :focus-visible { outline: 2px solid var(--color-accent); outline-offset: 2px; }
-::selection { background: color-mix(in srgb, var(--color-accent) 30%, transparent); }
+::selection { background: var(--color-accent-tint); }
 
-/* — rules — */
-.hr {
-  height: 1px; border: 0; margin: var(--space-4) 0;
-  background: var(--color-divider);
+/* Inngangen på guiden og kartet: opp og inn, én gang. */
+@keyframes rise {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
 }
 
-/* — buttons — */
+/* ══════════════════════════════════════════════════════════════════════════
+   Komponenter
+   ══════════════════════════════════════════════════════════════════════ */
+
+/* — kort —
+   `.blueprint` er navnet fra Industry, der det var en strektegning med
+   registreringskryss i hjørnene. Sidene som ikke er tegnet om ennå, bruker det
+   fortsatt; i v3 er det et vanlig kort. Kryssene rendres, men vises ikke. */
+.blueprint,
+.card {
+  position: relative;
+  border: 0;
+  border-radius: var(--radius-card);
+  background: var(--color-card);
+  box-shadow: var(--shadow-card);
+}
+.blueprint > .corner { display: none; }
+.card {
+  display: flex; flex-direction: column; gap: var(--space-2);
+  padding: 14px 16px;
+}
+.card-kicker { font-size: 12px; font-weight: 500; color: var(--color-label); }
+.card-title { font-family: var(--font-heading); font-size: 22px; line-height: 1.1; }
+.card-body { margin: 0; font-size: 14px; color: var(--color-muted); flex: 1; }
+.card-meta { display: flex; align-items: center; gap: 6px; font-size: 12px; color: var(--color-hint); }
+
+.duotone { position: relative; overflow: hidden; border-radius: var(--radius-card); }
+.duotone::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background: var(--color-accent); mix-blend-mode: color;
+}
+
+.elev-sm { box-shadow: var(--shadow-card); }
+.elev-md { box-shadow: var(--shadow-float); }
+.elev-lg { box-shadow: var(--shadow-frame); }
+
+.hr { height: 1px; border: 0; margin: var(--space-4) 0; background: var(--color-divider); }
+
+/* — knapper: piller, 14px 600 — */
 .btn {
-  display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  min-height: 42px; padding: 0 16px;
   cursor: pointer; text-decoration: none;
-  font-family: var(--font-heading); font-weight: var(--font-heading-weight);
-  font-size: 14px; line-height: 1.2; color: var(--color-text); /* matches the .input's 14px —
-     the pair sits side by side in sign-up rows */
-  background: transparent; border: 1px solid transparent;
-  padding: var(--space-2) calc(var(--space-3) * 1.2);
-  border-radius: var(--radius-md);
+  font: inherit; font-size: 14px; font-weight: 600; line-height: 1.2;
+  color: var(--color-text);
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: var(--radius-pill);
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
 }
-.btn svg { display: block; }
+.btn svg { display: block; flex: none; }
 .btn:disabled { opacity: 0.45; cursor: not-allowed; }
-.btn-primary { background: var(--color-accent); color: var(--color-bg); }
-.btn-primary:hover { background: var(--color-accent-600); }
-.btn-primary:active { background: var(--color-accent-700); }
-.btn-secondary { border-color: var(--color-divider); }
-.btn-secondary:hover { background: color-mix(in srgb, var(--color-text) 7%, transparent); }
-.btn-secondary:active { background: color-mix(in srgb, var(--color-text) 14%, transparent); }
-.btn-ghost { color: var(--color-accent); padding-inline: var(--space-1); }
-.btn-ghost:hover { background: color-mix(in srgb, var(--color-accent) 10%, transparent); }
-.btn-ghost:active { background: color-mix(in srgb, var(--color-accent) 18%, transparent); }
-.btn-icon { width: 36px; height: 36px; padding: 0; }
+.btn-primary { background: var(--color-ink); border-color: var(--color-ink); color: var(--color-bg); }
+.btn-primary:hover { background: var(--color-ink-hover); border-color: var(--color-ink-hover); }
+.btn-secondary { border-color: var(--color-line-strong); }
+.btn-secondary:hover { background: var(--color-tint); }
+.btn-secondary:active { background: var(--color-tint-3); }
+.btn-secondary[aria-pressed="true"] { background: var(--color-ink); border-color: var(--color-ink); color: var(--color-bg); }
+.btn-ghost { color: var(--color-accent); padding-inline: 10px; }
+.btn-ghost:hover { background: var(--color-accent-tint); }
+.btn-icon { width: 42px; min-height: 42px; height: 42px; padding: 0; }
 .btn-block { width: 100%; margin-top: var(--space-2); }
 
-/* — forms — */
-.field > label {
-  display: block; font-size: 12px; margin-bottom: 5px;
-  color: color-mix(in srgb, var(--color-text) 70%, transparent);
-}
+/* Lenker som knapper: `a:hover` over er mer spesifikk enn `.btn-primary`, og
+   ville gjort teksten i en fylt knapp tyttebær. */
+a.btn-primary, a.btn-primary:hover { color: var(--color-bg); }
+a.btn-secondary, a.btn-secondary:hover { color: var(--color-text); }
+
+/* — skjema — */
+.field > label { display: block; font-size: 12px; font-weight: 500; margin-bottom: 5px; color: var(--color-label); }
 .input {
-  width: 100%; min-height: 36px; padding: 6px 10px; font: inherit;
+  width: 100%; min-height: 42px; padding: 8px 14px; font: inherit;
   font-size: 14px; color: var(--color-text); caret-color: var(--color-accent);
-  background: var(--color-surface);
-  border: 1px solid var(--color-divider); border-radius: var(--radius-md);
+  background: var(--color-tint-2);
+  border: 1px solid transparent; border-radius: var(--radius-md);
 }
-.input:hover { border-color: color-mix(in srgb, var(--color-text) 45%, transparent); }
+.input:hover { border-color: var(--color-line); }
 .input:focus-visible { border-color: var(--color-accent); outline-offset: 0; }
 textarea.input { min-height: 90px; resize: vertical; }
+select.input { border-radius: var(--radius-pill); }
 
 /* 16px, ikke 14, på berøringsskjerm. iOS Safari zoomer hele sida inn når et
-   tekstfelt med skrift under 16px får fokus, og zoomer ikke ut igjen — så et
-   trykk på e-postfeltet på forsiden etterlot leseren på en side som var
-   bredere enn skjermen. Grensa er Apples, ikke vår, og 16 er der den går.
-   `pointer: coarse` treffer telefon og nettbrett i begge retninger; på
-   pekerskjermer finnes ikke autozoomen, og feltet blir stående på 14. */
+   tekstfelt med skrift under 16px får fokus, og zoomer ikke ut igjen. Grensa
+   er Apples, ikke vår. `pointer: coarse` treffer telefon og nettbrett. */
 @media (pointer: coarse) {
-  .input {
-    font-size: 16px;
-    /* Brødtekstens 1,55 ville tatt 16px forbi `min-height` og gjort feltet
-       39px i stedet for 36 — tre piksler som flytter alt under seg. 1,2 holder
-       tekstboksen innenfor de 36 og lar høyden stå akkurat der den sto. */
-    line-height: 1.2;
-  }
-  /* Flerlinjefeltet styres av sin egen `min-height`, så det kan beholde en
-     luftigere linjeavstand uten å flytte noe. */
-  textarea.input {
-    line-height: 1.45;
-  }
+  .input { font-size: 16px; line-height: 1.2; }
+  textarea.input { line-height: 1.45; }
 }
+
 .radio { display: inline-flex; align-items: center; gap: 8px; cursor: pointer; font-size: 14px; }
 .radio input, .seg-opt input {
   position: absolute; opacity: 0; width: 0; height: 0; pointer-events: none;
 }
 .radio .dot {
-  width: 16px; height: 16px; flex: none; border-radius: 50%;
-  border: 1.5px solid var(--color-divider);
+  width: 18px; height: 18px; flex: none; border-radius: 50%;
+  border: 1.5px solid rgba(28, 38, 34, 0.3);
 }
-.radio:hover .dot { border-color: var(--color-accent); }
+.radio:hover .dot { border-color: var(--color-ink); }
 .radio input:checked + .dot {
-  border-color: var(--color-accent); background: var(--color-accent);
-  box-shadow: inset 0 0 0 4px var(--color-bg);
+  border-color: var(--color-ink); background: var(--color-ink);
+  box-shadow: inset 0 0 0 4px var(--color-card);
 }
 .radio input:focus-visible + .dot { outline: 2px solid var(--color-accent); outline-offset: 2px; }
+
+/* — segment: en pill med piller inni — */
 .seg {
-  display: inline-flex; overflow: hidden;
-  border: 1px solid var(--color-divider); border-radius: var(--radius-md);
+  display: inline-flex; padding: 3px; gap: 2px;
+  border-radius: var(--radius-pill);
+  background: var(--color-tint-2);
 }
 .seg-opt {
   display: inline-flex; align-items: center; gap: 6px;
-  padding: 7px 12px; font-size: 13px; cursor: pointer;
+  padding: 4px 12px; border-radius: var(--radius-pill);
+  font-size: 13px; font-weight: 500; cursor: pointer;
 }
-.seg-opt + .seg-opt { border-left: 1px solid var(--color-divider); }
-.seg-opt:has(input:checked) { background: var(--color-accent); color: var(--color-bg); }
-.seg-opt:not(:has(input:checked)):hover { background: color-mix(in srgb, var(--color-text) 7%, transparent); }
+.seg-opt:has(input:checked) { background: var(--color-ink); color: var(--color-bg); font-weight: 600; }
+.seg-opt:not(:has(input:checked)):hover { background: var(--color-tint-3); }
 .seg-opt:has(input:focus-visible) { outline: 2px solid var(--color-accent); outline-offset: -2px; }
 
-/* The language switcher is a `.seg` built from links rather than radios, so the
-   selected state comes from `data-active` instead of `:has(input:checked)`.
-   It lives in the top-right corner of a nav row on every page, so it centres on
-   the cross axis to line up with the links and the CTA beside it.
-
-   `flex: none` is a fix, not a default. `.seg` sets `overflow: hidden`, which
-   drops a flex item's automatic minimum size to zero — so in a tight nav the
-   switcher was the one item able to shrink, and it absorbed the whole shortfall
-   silently: the box collapsed to 40px while its links still needed 133px, and
-   `overflow: hidden` clipped them. On a phone that left "English" entirely off
-   screen with no way to reach it. Now it keeps its width and the short labels
-   below make it fit. */
+/* Språkvelgeren er et `.seg` av lenker, så valgt tilstand kommer fra
+   `data-active` og ikke fra en avkrysset radio. `flex: none` er en rettelse:
+   i en trang rad var den ellers det ene elementet som kunne krympe, og da
+   forsvant «English» ut av skjermen. */
 .lang-switch { align-self: center; flex: none; }
 .lang-short { display: none; }
 .lang-switch a.seg-opt { color: inherit; text-decoration: none; }
-.lang-switch a.seg-opt[data-active] { background: var(--color-accent); color: var(--color-bg); }
-.lang-switch a.seg-opt:not([data-active]):hover {
-  background: color-mix(in srgb, var(--color-text) 7%, transparent);
-  color: inherit;
-}
+.lang-switch a.seg-opt[data-active] { background: var(--color-ink); color: var(--color-bg); font-weight: 600; }
+.lang-switch a.seg-opt:not([data-active]):hover { background: var(--color-tint-3); color: inherit; }
 .lang-switch a.seg-opt:focus-visible { outline: 2px solid var(--color-accent); outline-offset: -2px; }
+.lang-switch .seg-opt { font-size: 13px; }
 
-/* — cards — */
-.card {
-  display: flex; flex-direction: column; gap: var(--space-2);
-  padding: var(--space-3); border-radius: var(--radius-md); background: var(--color-surface);
-}
-.card-kicker { font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-accent); }
-.card-title {
-  font-family: var(--font-heading); font-weight: var(--font-heading-weight);
-  font-size: 17px; line-height: 1.2;
-}
-.card-body { margin: 0; font-size: 13px; opacity: 0.8; flex: 1; }
-.card-meta {
-  display: flex; align-items: center; gap: 6px; font-size: 11px;
-  color: color-mix(in srgb, var(--color-text) 50%, transparent);
-}
-.elev-sm { box-shadow: var(--shadow-sm); }
-.elev-md { box-shadow: var(--shadow-md); }
-.elev-lg { box-shadow: var(--shadow-lg); }
-
-/* — tags — */
+/* — merker — */
 .tag {
-  display: inline-flex; align-items: center; font-size: 11px;
-  letter-spacing: 0.02em; padding: 3px 10px;
-  border-radius: calc(var(--radius-md) * 0.75);
+  display: inline-flex; align-items: center; font-size: 12px; font-weight: 500;
+  padding: 3px 10px; border-radius: var(--radius-pill);
 }
-.tag-accent { background: var(--color-accent-100); color: var(--color-accent-800); }
-.tag-accent-2 { background: var(--color-accent-2-100); color: var(--color-accent-2-800); }
-.tag-neutral { background: var(--color-neutral-100); color: var(--color-neutral-800); }
+.tag-accent { background: var(--color-accent-tint); color: var(--color-accent); }
+.tag-accent-2 { background: var(--color-tint-2); color: var(--color-text); }
+.tag-neutral { background: var(--color-tint-2); color: var(--color-muted); }
 .tag-outline { border: 1px solid var(--color-accent); color: var(--color-accent); }
 
-/* — navigation — */
-.nav {
-  display: flex; align-items: center; gap: var(--space-4);
-  padding: var(--space-3) var(--space-4);
-  border-bottom: none;
-}
-.nav-brand {
-  font-family: var(--font-heading); font-weight: var(--font-heading-weight);
-  font-size: var(--nav-brand-text); margin-right: auto;
-}
-.nav a { color: inherit; text-decoration: none; font-size: var(--nav-text); }
-.nav a:hover, .nav a[aria-current='page'] { color: var(--color-accent); }
-
-/* — tables — */
+/* — tabeller — */
 .table { width: 100%; border-collapse: collapse; font-size: 14px; }
 .table th {
-  text-align: left; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase;
-  color: color-mix(in srgb, var(--color-text) 60%, transparent);
+  text-align: left; font-size: 12px; font-weight: 500; color: var(--color-label);
   padding: var(--space-2); border-bottom: 1px solid var(--color-divider);
 }
-.table td {
-  padding: var(--space-2);
-  border-bottom: 1px solid color-mix(in srgb, var(--color-text) 8%, transparent);
-}
-.table tbody tr:hover { background: color-mix(in srgb, var(--color-text) 4%, transparent); }
-
-/* En tabell som er bredere enn telefonen skal skrenge inni sin egen ramme, ikke
-   dra hele sida med seg. Kvitteringene har fem kolonner og gjorde det siste. */
+.table td { padding: var(--space-2); border-bottom: 1px solid var(--color-tint-3); }
+.table tbody tr:hover { background: var(--color-tint); }
 .table-scroll { overflow-x: auto; }
 
 /* — dialog — */
 .dialog-backdrop {
   position: fixed; inset: 0; display: grid; place-items: center;
   padding: var(--space-4);
-  background: color-mix(in srgb, var(--color-neutral-900) 50%, transparent);
-  /* Above every fixed thing the app puts on screen — the map topbar at 1200,
-     its panel at 1100, and the feedback button at 1300. A modal that something
-     else can sit on top of is not a modal. */
+  background: rgba(28, 38, 34, 0.5);
+  /* Over alt annet som ligger fast på skjermen: kartets topbar (1200), panelet
+     (1100) og tilbakemeldingsknappen (1300). */
   z-index: 2000;
 }
 .dialog {
   width: min(440px, 100%); display: flex; flex-direction: column; gap: var(--space-3);
-  padding: var(--space-4); border-radius: var(--radius-lg);
-  background: var(--color-surface); box-shadow: var(--shadow-lg);
+  padding: 20px 22px; border-radius: var(--radius-profile);
+  background: var(--color-card); box-shadow: var(--shadow-frame);
 }
-.dialog-title {
-  font-family: var(--font-heading); font-weight: var(--font-heading-weight);
-  font-size: 20px;
-}
-.dialog-body { font-size: 14px; opacity: 0.85; }
+.dialog-title { font-family: var(--font-heading); font-size: 26px; line-height: 1.1; }
+.dialog-body { font-size: 14px; color: var(--color-muted); }
 .dialog-actions { display: flex; justify-content: flex-end; gap: var(--space-2); margin-top: var(--space-2); }
 
-/* — feedback — */
+/* — tilbakemelding — */
 .feedback-fab {
   position: fixed;
   right: clamp(12px, 3vw, 24px);
   bottom: clamp(12px, 3vw, 24px);
   z-index: 1300;
-  background: var(--color-surface);
-  box-shadow: var(--shadow-md);
+  background: var(--float-bg);
+  backdrop-filter: blur(8px);
+  border-color: transparent;
+  box-shadow: var(--shadow-float);
 }
-/* Wider than the default dialog: this one holds six rows of prose, and 440px
-   makes a textarea feel like a search box.
+.dialog.feedback-dialog { width: min(520px, 100%); }
+/* Honningkrukka. Utenfor skjermen framfor `display: none`, som noen
+   skjemautfyllere vet å hoppe over. */
+.feedback-trap { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
 
-   The background is restated because the blueprint layer below sets
-   `.card, .dialog { background: transparent }` — right for a card sitting on
-   the page, wrong for a modal, which then lets the heading behind it show
-   through its own body text.
-
-   Two classes rather than one: that override comes *later* in this file and
-   carries the same weight, so a single `.feedback-dialog` loses to it on
-   source order alone. */
-.dialog.feedback-dialog {
-  width: min(520px, 100%);
-  background: var(--color-surface);
-}
-/* — support (Vipps) — */
-.vipps {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  gap: 8px 12px;
-}
-.vipps-label {
-  font-size: 13px;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--color-accent-700);
-}
+/* — Vipps — */
+.vipps { display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 12px; }
+.vipps-label { font-size: 13px; font-weight: 500; color: var(--color-label); }
 .vipps-number {
-  font-family: var(--font-heading);
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 1;
-  letter-spacing: 0.02em;
-  margin-right: auto;
+  font-family: var(--font-heading); font-size: 40px; line-height: 1;
+  letter-spacing: -0.01em; margin-right: auto;
 }
-
-/* The honeypot. Off-screen rather than `display: none`, which some form-fillers
-   know to skip; `aria-hidden` on the wrapper keeps it away from screen readers,
-   and `tabindex="-1"` keeps it out of the keyboard path. */
-.feedback-trap {
-  position: absolute;
-  left: -9999px;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-}
-
-/* — blueprint frame: components are wireframe objects (see .blueprint
-     and .corner above) — square, transparent, hairline-bordered — */
-.card, .btn, .input, .tag, .seg, .dialog { border-radius: 0; }
-.card, .dialog { background: transparent; border: 1px solid var(--color-divider); }
-.btn { border: 1px solid var(--color-divider); }
-.btn-primary { border-color: var(--color-accent); }
-.btn-ghost { border-color: transparent; }
-
 
 /* ══════════════════════════════════════════════════════════════════════════
-   Toppkart — page-level primitives shared by the App Router pages. Everything
-   above this line is the Industry design system verbatim; everything below is
-   the grammar the prototype pages express with inline styles, lifted into
-   reusable classes so the pages stay readable.
+   Sidegrammatikk — delt av sidene i App Router
    ══════════════════════════════════════════════════════════════════════ */
 
-html { scroll-behavior: smooth; }
-body { text-wrap: pretty; }
-a { color: var(--color-accent-700); }
-a:hover { color: var(--color-accent-900); }
-
-/* — layout shells — */
-.page { max-width: 1160px; margin: 0 auto; padding: 0 clamp(20px, 5vw, 64px); }
+.page { max-width: 1160px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); }
 .page-narrow { max-width: 960px; }
 .page-account { max-width: 920px; }
 .shell { min-height: 100vh; display: flex; flex-direction: column; }
 .shell > main { flex: 1; }
 
-/* — top navigation (sticky, hairline underline) — */
+/* — toppnavigasjonen: klebrig, gjennomskinnelig papir, ingen strek — */
+.nav {
+  display: flex; align-items: center; gap: 28px;
+  padding: var(--space-3) var(--space-4);
+}
+.nav-brand {
+  font-family: var(--font-heading); font-weight: 400;
+  font-size: var(--nav-brand-text); letter-spacing: -0.01em; line-height: 1;
+  margin-right: auto;
+}
+.nav a { color: inherit; text-decoration: none; font-size: var(--nav-text); }
+
 .site-nav {
-  display: flex; align-items: center; gap: var(--space-4);
-  padding: 10px 40px; border-bottom: 1px solid var(--color-divider);
-  position: sticky; top: 0; background: var(--color-bg); z-index: 20;
+  display: flex; align-items: center; gap: 28px;
+  padding: 18px clamp(20px, 4vw, 48px);
+  position: sticky; top: 0; z-index: 1200;
+  background: rgba(244, 241, 234, 0.9);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 }
 /* `a.nav-brand`, ikke `.nav-brand`: `.site-nav a` under er en klasse pluss et
-   element og vinner ellers over en ren klasse — det var slik merket havnet på
-   lenkestørrelsen her og på 18px i kartets bar. */
-.site-nav a.nav-brand {
-  font-size: var(--nav-brand-text);
-  letter-spacing: 0.06em; text-transform: uppercase;
-  text-decoration: none; color: var(--color-text); margin-right: auto;
+   element og vinner ellers over en ren klasse. */
+.site-nav a.nav-brand { font-size: var(--nav-brand-text); color: var(--color-text); text-decoration: none; margin-right: auto; }
+.site-nav a { color: var(--color-text); text-decoration: none; font-size: var(--nav-text); }
+.site-nav a.btn { color: var(--color-bg); font-size: var(--nav-text); }
+.nav-muted { font-size: var(--nav-text); color: var(--color-label) !important; }
+
+/* Menylenkene. Global klasse framfor `.site-nav a`, fordi den samme menyen
+   også står i kartets topbar — en CSS-modul som en regel her ikke kan nå. */
+.nav-link {
+  font-size: var(--nav-text); font-weight: 500; color: var(--color-text);
+  text-decoration: none; opacity: 0.75; transition: opacity 0.15s;
 }
-.site-nav a { color: var(--color-accent-700); text-decoration: none; font-size: var(--nav-text); }
-.site-nav a:hover { color: var(--color-accent-900); }
-.site-nav a.btn { color: var(--color-bg); }
-.nav-muted { font-size: var(--nav-text); color: color-mix(in srgb, var(--color-text) 60%, transparent) !important; }
+.nav-link:hover, .nav-link[aria-current="page"] { color: var(--color-text); opacity: 1; }
 
-/* Knappen og språkvelgeren i baren. Begge er delte komponenter med sine egne
-   standardstørrelser (`.btn` 14px, `.seg-opt` 13px) — her er de først og fremst
-   elementer i navigasjonen, og da er det navigasjonens størrelse som gjelder.
-   Dempinga av `.nav-muted` er en fargeforskjell; den skal ikke også være en
-   størrelsesforskjell.
-
-   Språkvelgeren treffes på sin egen klasse framfor på baren rundt: den står i to
-   navigasjoner, og kartets er en CSS-modul med hashede klassenavn som en regel
-   herfra ikke kan nå. `.lang-switch` finnes ingen andre steder enn i en bar. */
-.site-nav a.btn { font-size: var(--nav-text); }
-.lang-switch .seg-opt { font-size: var(--nav-text); }
-
-/* Anchors styled as buttons: the page-level `a:hover` rule above out-specifies
-   `.btn-primary`, which would turn a filled button's label accent-900 on hover.
-   Pin the label to the ground colour so links and buttons behave identically. */
-a.btn-primary, a.btn-primary:hover { color: var(--color-bg); }
-a.btn-secondary, a.btn-secondary:hover { color: var(--color-text); }
 @media (max-width: 620px) {
-  /* One row on a phone: wordmark left, menu button and language right.
-
-     Raden holdt lenkene direkte fram til «Turene» ble lagt i den. Da var
-     innholdet 438px: for langt for 390px (iPhone 15), for langt for 360px (de
-     vanligste Android-ene) og for langt for 430px (den største iPhonen som
-     finnes). To ganger tidligere ble det løst ved å stramme padding, gap og
-     skriftstørrelse noen piksler av gangen — men den veien tar slutt, og den
-     betaler med trykkflater.
-
-     Nå ligger lenkene bak menyknappen (`.nav-menu` under). Det som står igjen i
-     raden er merket, knappen og språkvelgeren: 219px, og — det viktige — et
-     tall som ikke vokser neste gang det kommer en lenke til. */
-  .site-nav {
-    padding: 10px 12px;
-    gap: 10px;
-    flex-wrap: nowrap;
-  }
+  /* Én rad på telefon: ordmerket til venstre, menyknappen og språket til
+     høyre. Lenkene ligger bak menyknappen, så raden slutter å vokse med antall
+     lenker. */
+  .site-nav { padding: 12px 16px; gap: 10px; flex-wrap: nowrap; }
   .site-nav .lang-switch { margin-left: 0; flex: none; }
-  .site-nav .nav-brand { letter-spacing: 0.04em; flex: none; }
-  /* Nothing in a single row may wrap or shrink into an ellipsis. */
+  .site-nav .nav-brand { flex: none; }
   .site-nav > * { white-space: nowrap; }
-  /* Bare padding her. Skriftstørrelsen sto tidligere i hver av disse reglene og
-     satte 13px — én av de tre størrelsene baren hadde samtidig. Plassen som
-     trengtes ble frigjort da lenkene flyttet inn i menyen; raden holder nå
-     merket, knappen og språkvelgeren, og har god margin på 320px. */
-  .site-nav a.btn { padding: 8px 9px; }
-  .site-nav .lang-switch .seg-opt { padding: 6px 7px; }
-
-  /* "Norsk"/"English" costs 133px; "NO"/"EN" costs 70. That is the difference
-     between the map's 56px topbar fitting on a phone and clipping a language
-     nobody can then reach. */
+  .site-nav .lang-switch .seg-opt { padding: 4px 9px; }
   .lang-full { display: none; }
   .lang-short { display: inline; }
 }
 
-/* — navigasjonsmenyen (`components/NavMenu.tsx`) — */
-
-/* Lenkene i menyen. Global klasse framfor `.site-nav a`, fordi den samme menyen
-   også står i kartets topbar — som er en CSS-modul med sine egne klassenavn og
-   ikke kan treffes av en regel som henger på sidenavigasjonen. */
-.nav-link { font-size: var(--nav-text); color: var(--color-accent-700); text-decoration: none; }
-.nav-link:hover { color: var(--color-accent-900); }
-
-/* Fra 621px og opp finnes den ikke: `display: contents` løser opp både
-   innpakningen og panelet, så lenkene blir flex-elementer i navigasjonsraden
-   akkurat som da de lå der direkte. Én DOM, to oppsett. */
+/* — navigasjonsmenyen (`components/NavMenu.tsx`) —
+   Fra 621px og opp finnes den ikke: `display: contents` løser opp både
+   innpakningen og panelet, så lenkene blir elementer i navigasjonsraden. */
 .nav-menu, .nav-menu-panel { display: contents; }
 .nav-menu-toggle { display: none; }
 
 @media (max-width: 620px) {
   .nav-menu { display: block; }
-  .nav-menu-toggle { display: inline-flex; }
+  .nav-menu-toggle { display: inline-flex; width: 38px; height: 38px; min-height: 38px; }
 
-  /* Panelet henger under raden i stedet for i knappen: `.site-nav` er sticky,
-     altså posisjonert, så det er den som er utgangspunktet for `left`/`right`
-     og full bredde. Raden har ingen `overflow` lenger — den trengte den bare
-     fordi den vokste med antall lenker — og uten den er det ingenting som
-     klipper panelet vekk. */
   .nav-menu-panel {
     display: none;
     position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
+    top: calc(100% + 6px);
+    left: 12px;
+    right: 12px;
     flex-direction: column;
     align-items: stretch;
     gap: 2px;
-    padding: 8px 12px 14px;
-    background: var(--color-bg);
-    border-bottom: 1px solid var(--color-divider);
-    box-shadow: var(--shadow-md);
+    padding: 6px 14px;
+    background: var(--color-card);
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow-frame);
   }
   .nav-menu[data-open] .nav-menu-panel { display: flex; }
 
-  /* Trykkflater, ikke navigasjonslenker klemt sammen: 44px høyde er minstemålet
-     en finger trenger for å treffe riktig lenke av fem. Høyden kommer av
-     `line-height` og padding — 20 + 12 + 12 — og ikke av skriftstørrelsen, så
-     lenkene her kan stå i samme størrelse som resten av navigasjonen uten at
-     flata blir mindre. */
+  /* 44px trykkflate: 20 + 12 + 12. */
   .nav-menu-panel a,
   .nav-menu-panel > span {
-    font-size: var(--nav-text);
+    font-size: 15px;
     line-height: 20px;
     padding: 12px 2px;
+    opacity: 1;
     border-bottom: 1px solid var(--color-divider);
   }
   .nav-menu-panel > :last-child { border-bottom: 0; }
-  /* `.nav-muted` demper «Logg inn» og «Min side» ned til 60% fordi de i raden
-     står ved siden av en fylt knapp og ikke skal konkurrere med den. I panelet
-     står de i en liste med fire likestilte lenker, og der leste den samme
-     dempinga som «deaktivert». */
-  .nav-menu-panel .nav-muted {
-    color: var(--color-accent-700) !important;
-    font-size: var(--nav-text) !important;
-  }
-  .nav-menu-panel a.btn {
-    justify-content: center;
-    margin-top: 10px;
-    padding: 12px;
-    font-size: var(--nav-text);
-    border-bottom: 0;
-  }
-
+  .nav-menu-panel .nav-muted { color: var(--color-text) !important; font-size: 15px !important; }
+  .nav-menu-panel a.btn { justify-content: center; margin-top: 10px; padding: 12px; border-bottom: 0; }
 }
 
-/* — skjelettet mellom to sider (`app/loading.tsx`) —
-
-   Hver rute her er dynamisk: de leser `tk_lang` og sesjonen, så ingen av dem
-   kan ligge ferdig bygget. Uten en `loading`-grense hopper Next over prefetch
-   av en dynamisk rute helt — det står i deres egen dokumentasjon — og da er en
-   navigasjon dette: du trykker, og ingenting skjer før serveren er ferdig.
-
-   Med grensa på plass hentes skallet på forhånd og tegnes med det samme, og
-   sida strømmer inn i det. Det som står i skallet må derfor kunne bygges
-   statisk: ingen informasjonskapsler, ingen sesjon, ingen oversettelser. Derfor
-   er ordmerket det eneste ordet her — det er det samme på begge språk. */
+/* — skjelettet mellom to sider (`app/loading.tsx`) — */
 .skeleton-bar {
   display: flex; align-items: center; gap: var(--space-4);
-  padding: 10px 40px; border-bottom: 1px solid var(--color-divider);
-  height: 57px;
+  padding: 18px clamp(20px, 4vw, 48px);
+  height: 70px;
 }
 .skeleton-brand {
-  font-family: var(--font-heading); font-weight: var(--font-heading-weight);
-  font-size: 18px; letter-spacing: 0.06em; text-transform: uppercase;
+  font-family: var(--font-heading); font-size: 26px; letter-spacing: -0.01em;
   color: var(--color-text); margin-right: auto;
 }
 .skeleton-block {
-  border-radius: var(--radius-md);
-  background: color-mix(in srgb, var(--color-text) 9%, transparent);
+  border-radius: var(--radius-card);
+  background: var(--color-tint-3);
+  animation: skeleton-pulse 1.4s ease-in-out infinite;
 }
-/* Pulsen sier «det kommer noe», og den skal ikke si det høyere enn det. */
-.skeleton-block { animation: skeleton-pulse 1.4s ease-in-out infinite; }
 @keyframes skeleton-pulse {
   0%, 100% { opacity: 1; }
   50% { opacity: 0.45; }
@@ -623,156 +488,137 @@ a.btn-secondary, a.btn-secondary:hover { color: var(--color-text); }
 }
 .skeleton-main { padding-top: 48px; display: flex; flex-direction: column; gap: 14px; }
 @media (max-width: 620px) {
-  .skeleton-bar { padding: 10px 12px; gap: 10px; }
+  .skeleton-bar { padding: 12px 16px; gap: 10px; height: 62px; }
 }
 
-/* — section kicker: "01 · Abonnement" over a 1px rule — */
-.kicker {
-  display: block; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase;
-  font-weight: 600; color: var(--color-accent-700);
-}
-.kicker-rule { height: 1px; border: 0; margin: 12px 0 32px; background: var(--color-divider); }
+/* — seksjonsetikett over en hårstrek — */
+.kicker { display: block; font-size: 13px; font-weight: 500; color: var(--color-label); }
+.kicker-rule { height: 1px; border: 0; margin: 12px 0 28px; background: var(--color-divider); }
 
-/* — display headings — */
+/* — visningsoverskrifter — */
 .display {
-  font-family: var(--font-heading); font-weight: 600;
-  line-height: 1.04; letter-spacing: 0.01em; text-transform: uppercase;
-  margin: 0 0 0 -0.052em;
+  font-family: var(--font-heading); font-weight: 400;
+  line-height: 0.98; letter-spacing: -0.02em;
+  margin: 0 0 0 -0.03em;
 }
-.display-hero { font-size: clamp(46px, 7vw, 92px); }
-/* The 46px floor assumes a viewport wide enough for the longest word. It is not
-   on a phone: "TOPPTURENE." sets at 366px there against 322px of usable width,
-   and since it cannot break it dragged the entire landing page into horizontal
-   scroll. Below this width the size tracks the viewport instead. `min()` meets
-   the clamp floor exactly at 620px, so the two curves join without a jump. */
+.display-hero { font-size: clamp(56px, 7vw, 96px); }
 @media (max-width: 620px) {
-  .display-hero { font-size: min(46px, 10.5vw); }
+  /* «Alle toppturene.» må få plass uten å dra sida ut til siden. */
+  .display-hero { font-size: min(56px, 12.5vw); }
 }
-.h-section {
-  font-size: 32px; line-height: 36px; letter-spacing: 0.02em;
-  text-transform: uppercase; margin: 0;
-}
-.h-cell {
-  font-size: 22px; line-height: 24px; letter-spacing: 0.02em;
-  text-transform: uppercase; margin: 0;
-}
+.h-section { font-size: 32px; line-height: 1.05; letter-spacing: -0.015em; margin: 0; }
+.h-cell { font-size: 24px; line-height: 1.1; letter-spacing: -0.01em; margin: 0; }
 
-/* — stor Ø, strammet inn — */
-/* Barlow Condensed gir stor Ø en bredde på 597 enheter mot 467 for O (SemiBold):
-   0,13 em tomt felt til høyre for en glyf som ikke er bredere enn en O, og uten
-   et eneste kerningpar i skriften å rette det opp med. Alle overskriftene her
-   settes med versaler, så «Jønshornet» kommer ut som «JØ NSHORNET» og
-   «Høydeprofil» som «HØ YDEPROFIL».
+/* Stor Ø trengte en korreksjon i Barlow Condensed satt med versaler
+   (`components/CapsText.tsx`). Instrument Serif og Schibsted Grotesk har
+   ingen slik feil, og ingenting settes med versaler lenger. */
+.oslash { margin-right: 0; }
 
-   Korreksjonen ligger på wrapperen `components/CapsText.tsx` skriver ut, og
-   ikke på en liste over versalklasser: klassen finnes bare der noen har valgt
-   å bruke komponenten, og komponenten brukes bare på tekst som settes med
-   versaler. Liten ø har 0,03 em å gå på og skal ikke røres — den er heller
-   ikke pakket inn noe sted. */
-.oslash { margin-right: -0.13em; }
+/* — brødtekst — */
+.lede { font-size: 18px; line-height: 28px; max-width: 58ch; color: var(--color-muted); }
+.prose { font-size: 16px; line-height: 26px; color: var(--color-muted); }
+.note { font-size: 13px; line-height: 20px; color: var(--color-label); }
+.note-sm { font-size: 12px; line-height: 18px; color: var(--color-hint); }
 
-/* — body copy — */
-.lede { font-size: 16px; line-height: 24px; max-width: 60ch; }
-.prose { font-size: 15px; line-height: 24px; color: color-mix(in srgb, var(--color-text) 78%, transparent); }
-.note { font-size: 13px; line-height: 20px; color: color-mix(in srgb, var(--color-text) 60%, transparent); }
-.note-sm { font-size: 12px; line-height: 18px; color: color-mix(in srgb, var(--color-text) 55%, transparent); }
-
-/* — the plate: a blueprint frame with a title block and hairline rows — */
-.plate { background: transparent; }
-.plate-head {
-  display: flex; flex-wrap: wrap; border-bottom: 1px solid var(--color-divider);
-}
-.plate-head > span {
-  padding: 12px 24px; font-size: 13px; line-height: 24px;
-  letter-spacing: 0.08em; text-transform: uppercase; font-weight: 600;
-}
-.plate-head > span:first-child { flex: 1; min-width: 16ch; }
-.plate-head > span + span {
-  border-left: 1px solid var(--color-divider); white-space: nowrap;
-  color: color-mix(in srgb, var(--color-text) 70%, transparent);
-}
+/* — plata: et kort med tittelrad og hårstrek-rader (forsida) — */
+.plate { overflow: hidden; }
+.plate-head { display: flex; flex-wrap: wrap; border-bottom: 1px solid var(--color-divider); }
+.plate-head > span { padding: 12px 22px; font-size: 13px; line-height: 24px; font-weight: 500; color: var(--color-label); }
+.plate-head > span:first-child { flex: 1; min-width: 16ch; color: var(--color-text); font-weight: 600; }
+.plate-head > span + span { white-space: nowrap; }
 .plate-foot {
-  margin: 0; padding: 12px 24px; border-top: 1px solid var(--color-divider);
-  font-size: 13px; line-height: 24px;
-  color: color-mix(in srgb, var(--color-text) 70%, transparent);
+  margin: 0; padding: 12px 22px; border-top: 1px solid var(--color-divider);
+  font-size: 13px; line-height: 22px; color: var(--color-label);
 }
-.hairline { border-bottom: 1px solid color-mix(in srgb, var(--color-text) 8%, transparent); }
-
-/* The four plate cells: index, property, value, remark. */
-.plate-idx {
-  width: 72px; padding: 12px 0 12px 24px;
-  font-size: 13px; font-weight: 600; letter-spacing: 0.08em;
-  color: var(--color-accent-700);
-}
-.plate-prop { width: 30%; padding: 12px 24px 12px 0; font-size: 15px; }
+.hairline { border-bottom: 1px solid var(--color-tint-3); }
+.plate-idx { width: 64px; padding: 12px 0 12px 22px; font-size: 13px; font-weight: 600; color: var(--color-accent); }
+.plate-prop { width: 30%; padding: 12px 22px 12px 0; font-size: 15px; }
 .plate-val {
-  width: 22%; padding: 12px 24px 12px 0;
-  font-family: var(--font-heading); font-weight: 600; font-size: 22px;
-  letter-spacing: 0.02em; white-space: nowrap;
+  width: 22%; padding: 12px 22px 12px 0;
+  font-family: var(--font-heading); font-size: 30px; line-height: 1;
+  letter-spacing: -0.01em; white-space: nowrap;
 }
-.plate-rem {
-  padding: 12px 24px 12px 0; font-size: 14px;
-  color: color-mix(in srgb, var(--color-text) 70%, transparent);
-}
-
-/* Four columns need ~459px of content and will not shrink below it, so on a
-   phone the plate pushed the whole landing page into horizontal scroll.
-
-   The remark used to drop onto its own line here, which fixed the width and
-   cost something else: on a phone the plate became four rows of two lines each,
-   and the second line was the one nobody came for. «Fra Lyngen i nord til
-   Rogaland i sør» is a nice sentence next to a number and a footnote under it.
-   On a narrow screen the plate is worth reading as four numbers, so the remark
-   is dropped rather than wrapped. It is still in the markup and still read
-   aloud — `display: none` on a table cell would take it from a screen reader
-   too, and the sentence is not the problem, the line break is. */
+.plate-rem { padding: 12px 22px 12px 0; font-size: 14px; color: var(--color-muted); }
 @media (max-width: 620px) {
   .plate .table, .plate .table tbody { display: block; }
   .plate .table tr {
     display: grid; grid-template-columns: auto 1fr auto;
     align-items: baseline; column-gap: 12px; padding: 10px 16px;
-    border-bottom: 1px solid color-mix(in srgb, var(--color-text) 8%, transparent);
+    border-bottom: 1px solid var(--color-tint-3);
   }
   .plate .table td { display: block; width: auto; padding: 0; border-bottom: 0; }
-  .plate-val { font-size: 19px; }
+  .plate-val { font-size: 24px; }
   .plate-rem {
     position: absolute; width: 1px; height: 1px;
     padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap;
   }
 }
 
-/* — stat cells (guide plate, map detail) — */
-.stat-l {
-  font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase;
-  color: color-mix(in srgb, var(--color-text) 60%, transparent);
-}
-.stat-v { font-family: var(--font-heading); font-weight: 600; letter-spacing: 0.02em; }
+/* — tallkort — */
+.stat-l { font-size: 12px; font-weight: 500; letter-spacing: 0.02em; color: var(--color-label); }
+.stat-v { font-family: var(--font-heading); font-weight: 400; font-size: 30px; line-height: 1.1; letter-spacing: -0.01em; }
 
-/* — numbered list, 01–04 — */
-.numbered { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; font-size: 15px; line-height: 22px; }
+/* — nummerert liste — */
+.numbered { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; font-size: 15px; line-height: 23px; }
 .numbered li { display: flex; gap: 10px; }
-.numbered li > span:first-child { color: var(--color-accent-700); font-weight: 600; }
+.numbered li > span:first-child { color: var(--color-accent); font-weight: 600; }
 
-/* — grids — */
-.grid-auto { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: clamp(20px, 3vw, 48px); }
+/* — rutenett — */
+.grid-auto { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: clamp(16px, 2.5vw, 32px); }
 .grid-split { display: grid; grid-template-columns: minmax(0, 6fr) minmax(0, 6fr); gap: 24px clamp(24px, 5vw, 96px); align-items: start; }
 @media (max-width: 760px) { .grid-split { grid-template-columns: minmax(0, 1fr); } }
 
-/* — footer — */
+/* — bunnlinja — */
 .site-footer {
-  padding: 48px 0; font-size: 13px; line-height: 24px;
-  color: color-mix(in srgb, var(--color-text) 70%, transparent);
+  margin-top: 64px; padding: 28px 0 48px;
+  font-size: 13px; line-height: 24px; color: rgba(28, 38, 34, 0.6);
   border-top: 1px solid var(--color-divider);
-  display: flex; gap: 24px; flex-wrap: wrap;
+  display: flex; gap: 8px 24px; flex-wrap: wrap;
 }
+.site-footer a { color: inherit; text-decoration: none; }
+.site-footer a:hover { color: var(--color-text); }
 .site-footer .push { margin-left: auto; }
 
-/* — locked block (map detail + guide) — */
-.locked { position: relative; border: 1px solid var(--color-divider); padding: 16px; }
-.bars { display: flex; flex-direction: column; gap: 8px; filter: blur(3px); user-select: none; }
-.bars i { display: block; height: 10px; background: color-mix(in srgb, var(--color-text) 14%, transparent); }
+/* — brikker — */
 .chips { display: flex; gap: 8px; flex-wrap: wrap; }
 .chip {
-  display: inline-flex; align-items: center; gap: 6px; font-size: 12px; padding: 4px 10px;
-  border: 1px solid var(--color-divider); color: color-mix(in srgb, var(--color-text) 60%, transparent);
+  display: inline-flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 500;
+  padding: 4px 10px; border-radius: var(--radius-pill);
+  background: var(--color-tint-2); color: var(--color-muted);
+}
+
+/* ══════════════════════════════════════════════════════════════════════════
+   Leaflet — felles for hovedkartet og kartet i guiden
+   ══════════════════════════════════════════════════════════════════════ */
+
+.leaflet-container { font-family: var(--font-body); background: #fff; }
+.leaflet-control-zoom.leaflet-bar {
+  border: 0;
+  border-radius: var(--radius-pill);
+  overflow: hidden;
+  box-shadow: var(--shadow-float);
+}
+.leaflet-control-zoom.leaflet-bar a {
+  width: 36px; height: 36px; line-height: 36px;
+  color: var(--color-text);
+  background: var(--float-bg);
+  border-bottom: 1px solid rgba(28, 38, 34, 0.1);
+}
+.leaflet-control-zoom.leaflet-bar a:last-child { border-bottom: 0; }
+.leaflet-control-zoom.leaflet-bar a:hover { background: var(--color-card); color: var(--color-text); }
+.leaflet-tooltip {
+  border: 0; border-radius: var(--radius-pill);
+  padding: 5px 11px;
+  font-family: var(--font-body); font-weight: 600; font-size: 12px;
+  color: var(--color-text); background: var(--color-card);
+  box-shadow: var(--shadow-float);
+}
+.leaflet-tooltip-top::before,
+.leaflet-tooltip-bottom::before,
+.leaflet-tooltip-left::before,
+.leaflet-tooltip-right::before { display: none; }
+.leaflet-control-attribution.leaflet-control {
+  font-size: 10px;
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 8px 0 0 0;
 }

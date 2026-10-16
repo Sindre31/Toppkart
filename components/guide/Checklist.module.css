@@ -1,0 +1,55 @@
+/* Sjekklista i turguiden: ett kort, rader med egen rund avkrysning. */
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 6px 4px;
+  border-radius: var(--radius-card);
+  background: var(--color-card);
+  box-shadow: var(--shadow-card);
+}
+
+.row {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  font-size: 15px;
+}
+.row:hover { background: rgba(28, 38, 34, 0.04); }
+
+/* Den ekte boksen er usynlig men fokuserbar; ringen viser tilstanden. */
+.input {
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+}
+
+.ring {
+  flex: none;
+  width: 20px;
+  height: 20px;
+  border-radius: var(--radius-pill);
+  display: grid;
+  place-items: center;
+  border: 1.5px solid rgba(28, 38, 34, 0.3);
+  color: var(--color-bg);
+  transition: background 0.15s, border-color 0.15s;
+}
+.ring svg { opacity: 0; transition: opacity 0.15s; }
+.row[data-on] .ring { background: var(--color-ink); border-color: var(--color-ink); }
+.row[data-on] .ring svg { opacity: 1; }
+.input:focus-visible + .ring { outline: 2px solid var(--color-accent); outline-offset: 2px; }
+
+.text { flex: 1; min-width: 0; color: var(--color-text); }
+.row[data-on] .text { color: rgba(28, 38, 34, 0.45); text-decoration: line-through; }
+
+.hint { font-size: 12px; color: rgba(28, 38, 34, 0.5); text-align: right; }
+
+@media (max-width: 480px) {
+  .hint { display: none; }
+}

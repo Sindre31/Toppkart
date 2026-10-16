@@ -1,19 +1,54 @@
-/* Knappene for favoritt og gått. Vanlige `.btn-secondary`; trykket inn er de
-   aksentfargen med lys skrift, samme språk som `.seg-opt` når den er valgt. */
+/* Knappene for favoritt og gått (`MarkButtons.tsx`). Av: ramme og papir.
+   Trykket inn: blekk-fylt med papirtekst — samme språk som valgt segment. */
 
 .row {
   display: inline-flex;
   flex-wrap: wrap;
   gap: 8px;
 }
+.row[data-variant="float"] { gap: 6px; flex-wrap: nowrap; }
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 42px;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--color-line-strong);
+  background: transparent;
+  color: var(--color-text);
+  font: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+.btn:hover { background: var(--color-tint); }
+.btn:disabled { opacity: 0.45; cursor: not-allowed; }
 .btn[aria-pressed="true"] {
-  background: var(--color-accent);
-  border-color: var(--color-accent);
+  background: var(--color-ink);
+  border-color: var(--color-ink);
   color: var(--color-bg);
 }
-.btn[aria-pressed="true"]:hover {
-  background: var(--color-accent-600);
+.btn[aria-pressed="true"]:hover { background: var(--color-ink-hover); }
+
+.icon { width: 42px; padding: 0; }
+.pill { padding: 0 16px; white-space: nowrap; }
+
+/* Over bildet i kartpanelet: små, uten ramme, på flytende papir. */
+.row[data-variant="float"] .btn {
+  width: 34px;
+  height: 34px;
+  border: 0;
+  background: var(--float-bg);
+  box-shadow: var(--shadow-float);
 }
+.row[data-variant="float"] .btn[aria-pressed="true"] {
+  background: var(--color-ink);
+  color: var(--color-bg);
+}
+
 .error {
   flex-basis: 100%;
   margin: 4px 0 0;

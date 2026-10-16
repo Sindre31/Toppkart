@@ -1,0 +1,45 @@
+/* Skredfaren og været som små kort (`ConditionCards.tsx`).
+   `lg` er guidens: tall 40px, kortet i papirhvitt med skygge. `sm` er
+   kartpanelets: tall 30px, værkortet i en tint. */
+
+.card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+  padding: 12px 16px;
+  border-radius: var(--radius-card);
+  color: var(--color-text);
+}
+.card[data-tone="card"] { background: var(--color-card); box-shadow: var(--shadow-card); gap: 14px; }
+.card[data-tone="tint"] { background: var(--color-tint); }
+.card[data-tone="quiet"] { background: var(--color-tint); }
+.card[data-size="sm"] { gap: 10px; padding: 10px 14px; border-radius: var(--radius-md); }
+
+.big {
+  flex: none;
+  font-family: var(--font-heading);
+  font-size: 40px;
+  line-height: 1;
+}
+.card[data-size="sm"] .big { font-size: 30px; }
+
+.icon { flex: none; opacity: 0.8; }
+
+.text {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  font-size: 13px;
+  line-height: 17px;
+}
+.text strong { font-weight: 600; }
+.text[data-muted] { color: var(--color-muted); }
+.card[data-size="sm"] .text { font-size: 12px; line-height: 15px; }
+
+.sub { font-weight: 400; opacity: 0.8; }
+.card[data-tone="quiet"] .sub { opacity: 1; color: var(--color-muted); }
+
+/* Lenkene i det gule kortet arver blekket; tyttebær på gult leses dårlig. */
+.card[data-tone="danger"] a { color: inherit; }
+.yr { font-weight: 500; }

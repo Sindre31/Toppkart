@@ -1,42 +1,69 @@
-/* Seksjonene i turguiden. `scroll-margin-top` er der et ankerhopp lander:
-   under både den klebrige menyen og innholdslista (`--guide-sticky-h`, satt på
-   sida). Uten den havner overskriften man trykket på bak dem. */
+/* Seksjonene i lesekolonnen. `scroll-margin-top` er der et ankerhopp lander:
+   under den klebrige menyen, ikke bak den. */
 
 .section {
-  padding: 0 0 48px;
-  scroll-margin-top: var(--guide-sticky-h, 0px);
+  padding: 40px 0 0;
+  scroll-margin-top: 84px;
 }
 
 .heading {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.05;
+  letter-spacing: -0.015em;
+  margin: 0 0 16px;
+}
+
+.headRow {
   display: flex;
   align-items: baseline;
-  gap: 12px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 4px 16px;
+  margin-bottom: 16px;
+}
+.headRow .heading { margin: 0; }
+.aside { font-size: 13px; color: var(--color-hint); }
+
+/* — «Ned»: punkter med en aksentprikk — */
+.bullets {
+  list-style: none;
   margin: 0;
-  font-size: clamp(24px, 3vw, 30px);
-  line-height: 1.1;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
-}
-
-.num {
-  font-size: 14px;
-  letter-spacing: 0.08em;
-  color: var(--color-accent-700);
-}
-
-.rule {
-  height: 1px;
-  border: 0;
-  margin: 12px 0 24px;
-  background: var(--color-divider);
-}
-
-/* Brødteksten. 16px og 26px linjeavstand: dette leses på en telefon ute, ofte
-   med hansker og i sterkt lys, og 15/24 var satt for en skjerm ved et bord. */
-.prose {
-  max-width: 68ch;
+  padding: 0;
+  display: grid;
+  gap: 12px;
   font-size: 16px;
-  line-height: 26px;
+  line-height: 25px;
 }
-.prose p { margin: 0 0 16px; }
-.prose p:last-child { margin: 0; }
+.bullets li { display: flex; gap: 14px; }
+.bullets strong { font-weight: 600; }
+.bullet {
+  flex: none;
+  width: 8px;
+  height: 8px;
+  border-radius: var(--radius-pill);
+  background: var(--color-accent);
+  margin-top: 9px;
+}
+
+/* — «Skredterreng»: kort med gradtallet stort — */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+  gap: 10px;
+}
+.card {
+  padding: 16px 18px;
+  border-radius: var(--radius-card);
+  background: var(--color-card);
+  box-shadow: var(--shadow-card);
+}
+.cardLabel { font-size: 12px; font-weight: 500; color: rgba(28, 38, 34, 0.6); }
+.cardFigure { font-family: var(--font-heading); font-size: 36px; line-height: 1.1; }
+.cardBody {
+  margin: 6px 0 0;
+  font-size: 14px;
+  line-height: 21px;
+  color: rgba(28, 38, 34, 0.75);
+}

@@ -11,19 +11,26 @@ import s from "./marks.module.css";
 
 /** «Favoritt» og «Har gått» for én tur — to av/på-knapper, lagret på
  *  enheten. Mens lista leses, og om den ikke kan leses, står de av: en knapp
- *  som ikke vet om turen er favoritt, kan ikke vise det. */
+ *  som ikke vet om turen er favoritt, kan ikke vise det.
+ *
+ *  To utforminger. `guide`: stjerna som rund ikonknapp og «Har gått» som pill
+ *  med tekst, i raden med handlinger øverst i turguiden. `float`: to små
+ *  ikonknapper som flyter over bildet i kartpanelet. Trykket inn er begge
+ *  blekk-fylt. */
 export function MarkButtons({
   slug,
   lang,
   state,
   failed,
   onChange,
+  variant = "guide",
 }: {
   slug: string;
   lang: Lang;
   state: MarksState;
   failed: string | null;
   onChange: (slug: string, patch: MarkPatch) => void;
+  variant?: "guide" | "float";
 }) {
   const t = marksDict(lang);
 
@@ -31,34 +38,43 @@ export function MarkButtons({
   const mark = ready ? state.marks.get(slug) : undefined;
   const favorite = mark?.favorite ?? false;
   const doneOn = mark?.doneOn ?? null;
+  const doneLabel = doneOn ? t.doneOn(formatDate(doneOn, lang)) : t.done;
+  const iconSize = variant === "float" ? 15 : 16;
 
   return (
     <>
-      <span className={s.row}>
+      <span className={s.row} data-variant={variant}>
         <button
           type="button"
-          className={`btn btn-secondary ${s.btn}`}
+          className={`${s.btn} ${s.icon}`}
           aria-pressed={favorite}
+          aria-label={t.favorite}
+          title={t.favorite}
           disabled={!ready}
           onClick={() => onChange(slug, { favorite: !favorite })}
         >
           <Star
-            size={14}
-            strokeWidth={1.5}
+            size={iconSize}
+            strokeWidth={1.75}
             fill={favorite ? "currentColor" : "none"}
             aria-hidden="true"
           />
-          {t.favorite}
         </button>
         <button
           type="button"
-          className={`btn btn-secondary ${s.btn}`}
+          className={`${s.btn} ${variant === "float" ? s.icon : s.pill}`}
           aria-pressed={Boolean(doneOn)}
+          aria-label={variant === "float" ? doneLabel : undefined}
+          title={variant === "float" ? doneLabel : undefined}
           disabled={!ready}
           onClick={() => onChange(slug, { done: !doneOn })}
         >
-          <Check size={14} strokeWidth={doneOn ? 2.5 : 1.5} aria-hidden="true" />
-          {doneOn ? t.doneOn(formatDate(doneOn, lang)) : t.done}
+          <Check
+            size={15}
+            strokeWidth={variant === "float" ? 2.25 : doneOn ? 2.5 : 1.75}
+            aria-hidden="true"
+          />
+          {variant === "float" ? null : doneLabel}
         </button>
       </span>
       {failed === slug ? (

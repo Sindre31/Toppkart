@@ -21,12 +21,13 @@ import {
   type LatLngBoundsExpression,
   type LatLngExpression,
   type LatLngTuple,
+  type CircleMarker as LeafletCircleMarker,
   type Map as LeafletMap,
 } from "leaflet";
 import "leaflet/dist/leaflet.css";
 
 import { BaseTileLayer } from "@/components/map/BaseTileLayer";
-import { startIcon, summitIcon } from "@/components/map/markers";
+import { startIcon } from "@/components/map/markers";
 import { GRADE_COLORS } from "@/lib/config";
 import { MAX_ZOOM, TILE_ATTRIBUTION, TILE_URL } from "@/lib/map-tiles";
 import type { Lang } from "@/lib/i18n";
@@ -41,12 +42,11 @@ const NORWAY: LatLngBoundsExpression = [
   [70.6, 26.0],
 ];
 
-const MARKER_STROKE = "#f2f2f3";
-const ROUTE_ACCENT = "#416180"; // accent-700
-const ROUTE_ALT = "#8aa2b8"; // the peak's other routes, a step back
+const MARKER_STROKE = "#fff";
+const ROUTE_ACCENT = "#8a2a5b"; // tyttebær, som i turguiden
+const ROUTE_ALT = "#bf6a93"; // toppens andre ruter, et steg tilbake
 const START_ICON = startIcon(ROUTE_ACCENT);
 const START_ICON_ALT = startIcon(ROUTE_ALT, true);
-const SUMMIT_ICON = summitIcon(ROUTE_ACCENT);
 /** OSM-laget får de samme flytur-innstillingene som Kartverket-laget over. */
 const BASE_LAYER_OPTIONS = { updateWhenZooming: true, keepBuffer: 3 } as const;
 /** Leserens prikk. Ikke en gradfarge og ikke rutefargen — den skal ikke kunne
@@ -278,11 +278,52 @@ function PositionLayer({ position, label }: { position: Position; label: string 
   );
 }
 
+/** Én topp: en prikk i gradfargen med hvit kant. Valgt eller pekt på i lista
+ *  vokser den fra 7 til 11 px og legges øverst; filtrert bort dempes den. */
+function TourMarker({
+  tour,
+  shown,
+  big,
+  onSelect,
+}: {
+  tour: Tour;
+  shown: boolean;
+  big: boolean;
+  onSelect: (slug: string) => void;
+}) {
+  const ref = useRef<LeafletCircleMarker>(null);
+  useEffect(() => {
+    if (big) ref.current?.bringToFront();
+  }, [big]);
+
+  return (
+    <CircleMarker
+      ref={ref}
+      center={[tour.lat, tour.lng]}
+      radius={big ? 11 : 7}
+      pathOptions={{
+        color: MARKER_STROKE,
+        weight: 2,
+        fillColor: GRADE_COLORS[tour.grade - 1],
+        opacity: shown || big ? 1 : 0.15,
+        fillOpacity: shown || big ? 1 : 0.15,
+      }}
+      eventHandlers={{ click: () => onSelect(tour.slug) }}
+    >
+      <Tooltip direction="top" offset={[0, big ? -12 : -8]}>
+        {tour.name}
+      </Tooltip>
+    </CircleMarker>
+  );
+}
+
 export interface MapCanvasProps {
   tours: readonly Tour[];
   /** Slugs surviving the sidebar filters — everything else dims. */
   visible: ReadonlySet<string>;
   selectedSlug: string | null;
+  /** Toppen pekeren står over i lista; markøren forstørres som den valgte. */
+  hoveredSlug: string | null;
   /** Which of the selected tour's routes is drawn; null means the tour's own. */
   selectedRouteId: string | null;
   onSelect: (slug: string) => void;
@@ -391,8 +432,8 @@ function RouteLayer({
         positions={activePoints}
         pathOptions={{
           color: MARKER_STROKE,
-          weight: 7,
-          opacity: 0.85,
+          weight: 8,
+          opacity: 0.9,
           lineJoin: "round",
           lineCap: "round",
         }}
@@ -401,7 +442,7 @@ function RouteLayer({
         positions={activePoints}
         pathOptions={{
           color: ROUTE_ACCENT,
-          weight: 3.5,
+          weight: 3,
           lineJoin: "round",
           lineCap: "round",
         }}
@@ -435,6 +476,7 @@ export default function MapCanvas({
   tours,
   visible,
   selectedSlug,
+  hoveredSlug,
   selectedRouteId,
   onSelect,
   onSelectRoute,
@@ -474,44 +516,15 @@ export default function MapCanvas({
       {/* Leaflet's zoom buttons ship English titles; give them the page's. */}
       <ZoomControl position="bottomright" zoomInTitle={t.zoomIn} zoomOutTitle={t.zoomOut} />
 
-      {tours.map((tour) => {
-        const shown = visible.has(tour.slug);
-        const isSelected = tour.slug === selectedSlug;
-        /* Den valgte toppen blir en trekant, så den skiller seg fra de andre
-           prikkene og fra startpunktet nede i dalen. */
-        if (isSelected) {
-          return (
-            <Marker
-              key={tour.slug}
-              position={[tour.lat, tour.lng]}
-              icon={SUMMIT_ICON}
-              zIndexOffset={1000}
-              keyboard={false}
-            >
-              <Tooltip direction="top">{tour.name}</Tooltip>
-            </Marker>
-          );
-        }
-        return (
-          <CircleMarker
-            key={tour.slug}
-            center={[tour.lat, tour.lng]}
-            radius={7}
-            pathOptions={{
-              color: MARKER_STROKE,
-              weight: 1.5,
-              fillColor: GRADE_COLORS[tour.grade - 1],
-              opacity: shown ? 1 : 0.15,
-              fillOpacity: shown ? 0.95 : 0.12,
-            }}
-            eventHandlers={{ click: () => onSelect(tour.slug) }}
-          >
-            <Tooltip direction="top" offset={[0, -8]}>
-              {tour.name}
-            </Tooltip>
-          </CircleMarker>
-        );
-      })}
+      {tours.map((tour) => (
+        <TourMarker
+          key={tour.slug}
+          tour={tour}
+          shown={visible.has(tour.slug)}
+          big={tour.slug === selectedSlug || tour.slug === hoveredSlug}
+          onSelect={onSelect}
+        />
+      ))}
 
       {selected && routeTable ? (
         <RouteLayer

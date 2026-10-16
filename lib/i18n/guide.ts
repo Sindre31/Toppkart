@@ -59,6 +59,27 @@ export interface GuideDict {
   /* — elevation profile — */
   elevationTitle: string;
   elevationAria: (start: string, end: string, distance: string) => string;
+  /* — v3: «Før du går», etappene, kartet ved siden — */
+  beforeTitle: string;
+  checklistLabel: string;
+  /** Sjekklista under skredfaren og været. Hintet står dempet til høyre. */
+  checklist: readonly { text: string; hint: string }[];
+  accessTitle: string;
+  directions: string;
+  /** «Opp, i fire etapper». Tallet skrives med bokstaver der det er naturlig. */
+  stagesTitle: (count: number) => string;
+  stagesHint: string;
+  /** Pillen over kartet og tooltipen på linja. */
+  wholeRoute: (distance: string) => string;
+  stageLabel: (num: number, range: string) => string;
+  /** Det mørke kortet etter etappene. */
+  lineNoteLead: string;
+  lineNote: string;
+  downTitle: string;
+  photoTitle: string;
+  openInMainMap: string;
+  steepest: (range: string) => string;
+  footerCredit: string;
   /* — guide not written yet — */
   guidePendingTitle: string;
   guidePendingBody: string;
@@ -116,6 +137,30 @@ const GUIDE: Translated<GuideDict> = {
     elevationTitle: "Høydeprofil",
     elevationAria: (start, end, distance) =>
       `Høydeprofil fra ${start} til ${end} over ${distance}`,
+    beforeTitle: "Før du går",
+    checklistLabel: "Sjekkliste før turen",
+    checklist: [
+      { text: "Les dagens skredvarsel", hint: "varsom.no" },
+      { text: "Sjekk været på toppen", hint: "vind og sikt" },
+      { text: "Sender/mottaker, søkestang og spade", hint: "sjekk batteriet" },
+      { text: "GPX på klokka eller telefonen", hint: "last ned over" },
+      { text: "Guiden lagret offline", hint: "ofte ingen dekning" },
+      { text: "Si fra hvor du går og når du er tilbake", hint: "" },
+    ],
+    accessTitle: "Kom deg dit",
+    directions: "Veibeskrivelse ↗",
+    stagesTitle: (count) =>
+      `Opp, i ${["", "én", "to", "tre", "fire", "fem", "seks", "sju", "åtte"][count] ?? count} ${count === 1 ? "etappe" : "etapper"}`,
+    stagesHint: "Pek for å se den i kartet",
+    wholeRoute: (distance) => `Hele ruta · ${distance}`,
+    stageLabel: (num, range) => `Etappe ${num} · ${range}`,
+    lineNoteLead: "Linja er beregnet,",
+    lineNote: "ikke gått med GPS. Den viser hvor ruta går — les terrenget, ikke streken.",
+    downTitle: "Ned",
+    photoTitle: "Fjellet",
+    openInMainMap: "Åpne i hovedkartet ↗",
+    steepest: (range) => `brattest ${range}`,
+    footerCredit: "Kartgrunnlag © Kartverket · Linja er beregnet i terrengmodellen, ikke et innspilt spor.",
     guidePendingTitle: "Turguide",
     guidePendingBody: "Turguiden for denne toppen er under arbeid.",
     moreInRegion: (region) => `Flere turer i ${region}`,
@@ -169,6 +214,30 @@ const GUIDE: Translated<GuideDict> = {
     elevationTitle: "Elevation profile",
     elevationAria: (start, end, distance) =>
       `Elevation profile from ${start} to ${end} over ${distance}`,
+    beforeTitle: "Before you go",
+    checklistLabel: "Checklist before the tour",
+    checklist: [
+      { text: "Read today's avalanche forecast", hint: "varsom.no" },
+      { text: "Check the weather on the summit", hint: "wind and visibility" },
+      { text: "Transceiver, probe and shovel", hint: "check the battery" },
+      { text: "GPX on your watch or phone", hint: "download above" },
+      { text: "Guide saved offline", hint: "often no coverage" },
+      { text: "Tell someone where you're going and when you'll be back", hint: "" },
+    ],
+    accessTitle: "Getting there",
+    directions: "Directions ↗",
+    stagesTitle: (count) =>
+      `Up, in ${["", "one", "two", "three", "four", "five", "six", "seven", "eight"][count] ?? count} ${count === 1 ? "stage" : "stages"}`,
+    stagesHint: "Point at one to see it on the map",
+    wholeRoute: (distance) => `Whole route · ${distance}`,
+    stageLabel: (num, range) => `Stage ${num} · ${range}`,
+    lineNoteLead: "The line is computed,",
+    lineNote: "not walked with a GPS. It shows where the route goes — read the terrain, not the line.",
+    downTitle: "Down",
+    photoTitle: "The mountain",
+    openInMainMap: "Open in the main map ↗",
+    steepest: (range) => `steepest ${range}`,
+    footerCredit: "Map data © Kartverket · The line is computed in the terrain model, not a recorded track.",
     guidePendingTitle: "Tour guide",
     guidePendingBody: "The guide for this peak is still being written.",
     moreInRegion: (region) => `More tours in ${region}`,

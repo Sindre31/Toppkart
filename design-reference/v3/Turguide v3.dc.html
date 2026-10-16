@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Schibsted+Grotesk:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="./image-slot.js"></script>
+<style>
+html { scroll-behavior: smooth; }
+body { margin: 0; background: #f4f1ea; color: #1c2622; font-family: "Schibsted Grotesk", system-ui, sans-serif; font-size: 16px; line-height: 1.6; text-wrap: pretty; font-feature-settings: "tnum" 1; }
+*, *::before, *::after { box-sizing: border-box; }
+a { color: #8a2a5b; text-underline-offset: 3px; text-decoration-thickness: 1px; }
+a:hover { color: #5c1a3c; }
+@keyframes rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+.leaflet-container { font-family: "Schibsted Grotesk", system-ui, sans-serif; background: #fff; }
+.leaflet-control-zoom { border: 0 !important; box-shadow: 0 6px 20px rgba(28,38,34,0.14) !important; border-radius: 999px !important; overflow: hidden; }
+.leaflet-control-zoom a { width: 36px !important; height: 36px !important; line-height: 36px !important; color: #1c2622 !important; border-bottom: 1px solid rgba(28,38,34,0.1) !important; }
+.leaflet-tooltip { border-radius: 999px; border: 0; padding: 5px 11px; font-family: "Schibsted Grotesk", sans-serif; font-weight: 600; font-size: 12px; color: #1c2622; box-shadow: 0 6px 20px rgba(28,38,34,0.14); }
+.leaflet-tooltip-top:before { display: none; }
+.leaflet-control-attribution { font-size: 10px; background: rgba(255,255,255,0.75) !important; border-radius: 8px 0 0 0; }
+</style>
+</helmet>
+
+<div data-screen-label="Turguide v3 — kart ved siden, nytt uttrykk" style="min-height: 100vh; display: flex; flex-direction: column;">
+
+  <nav style="display: flex; align-items: center; gap: 28px; padding: 18px clamp(20px, 4vw, 48px); position: sticky; top: 0; z-index: 1200; background: rgba(244,241,234,0.9); backdrop-filter: blur(10px);">
+    <a href="Kart v3.dc.html" style="font-family: 'Instrument Serif', serif; font-size: 26px; letter-spacing: -0.01em; text-decoration: none; color: #1c2622; margin-right: auto;">Toppkart</a>
+    <a href="Kart v3.dc.html" style="font-size: 14px; font-weight: 500; color: #1c2622; text-decoration: none; opacity: 0.75;" style-hover="opacity: 1;">Kartet</a>
+    <a href="#" style="font-size: 14px; font-weight: 500; color: #1c2622; text-decoration: none; opacity: 0.75;" style-hover="opacity: 1;">Mine turer</a>
+    <a href="#" style="font-size: 14px; font-weight: 500; color: #1c2622; text-decoration: none; opacity: 0.75;" style-hover="opacity: 1;">Om</a>
+    <div role="group" aria-label="Språk" style="display: inline-flex; padding: 3px; border-radius: 999px; background: rgba(28,38,34,0.06);">
+      <a href="#" style="padding: 4px 12px; border-radius: 999px; font-size: 13px; font-weight: 600; text-decoration: none; background: #1c2622; color: #f4f1ea;">NO</a>
+      <a href="#" style="padding: 4px 12px; border-radius: 999px; font-size: 13px; font-weight: 500; text-decoration: none; color: #1c2622;">EN</a>
+    </div>
+  </nav>
+
+  <main style="flex: 1; width: 100%; max-width: 1360px; margin: 0 auto; padding: 8px clamp(20px, 4vw, 48px) 72px;">
+
+    <header style="padding: 12px 0 28px; animation: rise 0.5s ease-out both;">
+      <a href="Kart v3.dc.html" style="display: inline-flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 500; text-decoration: none; color: rgba(28,38,34,0.62);" style-hover="color: #1c2622;">← Tilbake til kartet</a>
+      <div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 32px; flex-wrap: wrap; margin-top: 14px;">
+        <div style="min-width: 0;">
+          <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap; font-size: 13px; font-weight: 500; color: rgba(28,38,34,0.62);">
+            <span>Romsdal</span><span aria-hidden="true">·</span><span>Middels</span><span aria-hidden="true">·</span><span>Sesong des–mai</span>
+          </div>
+          <h1 style="font-family: 'Instrument Serif', serif; font-weight: 400; font-size: clamp(56px, 6.5vw, 84px); line-height: 0.98; letter-spacing: -0.02em; margin: 6px 0 0 -0.03em;">Kirketaket</h1>
+          <p style="font-size: 18px; line-height: 28px; max-width: 54ch; margin: 14px 0 0; color: rgba(28,38,34,0.78);">Bred rygg, trygge linjevalg og lang sesong. <em style="font-family: 'Instrument Serif', serif; font-style: italic; font-size: 20px; color: #1c2622;">Norges kanskje mest populære topptur.</em></p>
+        </div>
+        <div style="display: flex; gap: 8px; flex-wrap: wrap; align-items: center; padding-bottom: 6px;">
+          <button type="button" onClick="{{ toggleFav }}" aria-pressed="{{ fav }}" title="Favoritt" style="width: 42px; height: 42px; display: grid; place-items: center; cursor: pointer; border-radius: 999px; border: 1px solid {{ favBorder }}; background: {{ favBg }}; color: {{ favFg }};"><svg width="16" height="16" viewBox="0 0 24 24" fill="{{ favFill }}" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></button>
+          <button type="button" onClick="{{ toggleDone }}" aria-pressed="{{ done }}" style="height: 42px; display: inline-flex; align-items: center; gap: 8px; padding: 0 16px; cursor: pointer; border-radius: 999px; font: inherit; font-size: 14px; font-weight: 600; border: 1px solid {{ doneBorder }}; background: {{ doneBg }}; color: {{ doneFg }};"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="{{ doneStroke }}" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>{{ doneLabel }}</button>
+          <button type="button" style="height: 42px; display: inline-flex; align-items: center; gap: 8px; padding: 0 16px; cursor: pointer; border-radius: 999px; font: inherit; font-size: 14px; font-weight: 600; color: #1c2622; background: transparent; border: 1px solid rgba(28,38,34,0.18);" style-hover="background: rgba(28,38,34,0.05);"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="2" x2="22" y1="2" y2="22"></line><path d="M8.5 16.5a5 5 0 0 1 7 0"></path><path d="M2 8.82a15 15 0 0 1 4.17-2.65"></path><path d="M10.66 5c4.01-.36 8.14.9 11.34 3.76"></path><path d="M16.85 11.25a10 10 0 0 1 2.22 1.68"></path><path d="M5 13a10 10 0 0 1 5.24-2.76"></path><line x1="12" x2="12.01" y1="20" y2="20"></line></svg>Lagre offline</button>
+          <a href="#" style="height: 42px; display: inline-flex; align-items: center; gap: 8px; padding: 0 18px; border-radius: 999px; font-size: 14px; font-weight: 600; text-decoration: none; background: #1c2622; color: #f4f1ea;" style-hover="background: #2b3a34;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>Last ned GPX</a>
+        </div>
+      </div>
+    </header>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 440px), 1fr)); gap: 32px clamp(28px, 4vw, 64px); align-items: start;">
+
+      <div style="min-width: 0; animation: rise 0.6s 0.1s ease-out both;">
+
+        <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px;">
+          <sc-for list="{{ stats }}" as="s" hint-placeholder-count="6">
+            <div style="padding: 14px 16px; border-radius: 14px; background: #fffdf8; box-shadow: 0 1px 0 rgba(28,38,34,0.06), 0 8px 24px rgba(28,38,34,0.05);">
+              <div style="font-size: 12px; font-weight: 500; letter-spacing: 0.02em; color: rgba(28,38,34,0.6);">{{ s.label }}</div>
+              <div style="font-family: 'Instrument Serif', serif; font-size: 30px; line-height: 1.1; letter-spacing: -0.01em; margin-top: 2px;">{{ s.value }}</div>
+            </div>
+          </sc-for>
+        </div>
+
+        <section style="padding: 40px 0 0;">
+          <h2 style="font-family: 'Instrument Serif', serif; font-weight: 400; font-size: 32px; line-height: 1.05; letter-spacing: -0.015em; margin: 0 0 16px;">Før du går</h2>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 10px; margin-bottom: 12px;">
+            <div style="display: flex; align-items: center; gap: 12px; padding: 12px 16px; border-radius: 14px; background: #ffff00; color: #1c2622;">
+              <span style="font-family: 'Instrument Serif', serif; font-size: 40px; line-height: 1;">2</span>
+              <span style="font-size: 13px; line-height: 17px; font-weight: 600;">Moderat skredfare<br><span style="font-weight: 400; opacity: 0.8;">Romsdal · <a href="https://varsom.no" target="_blank" rel="noreferrer" style="color: inherit;">Varsom</a></span></span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 14px; padding: 12px 16px; border-radius: 14px; background: #fffdf8; box-shadow: 0 1px 0 rgba(28,38,34,0.06), 0 8px 24px rgba(28,38,34,0.05);">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#1c2622" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; opacity: 0.8;"><path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"></path><path d="M8 15h.01"></path><path d="M8 19h.01"></path><path d="M12 17h.01"></path><path d="M12 21h.01"></path><path d="M16 15h.01"></path><path d="M16 19h.01"></path></svg>
+              <span style="font-family: 'Instrument Serif', serif; font-size: 40px; line-height: 1;">−4°</span>
+              <span style="font-size: 13px; line-height: 17px; color: rgba(28,38,34,0.78);">På toppen nå, lett snø<br>Vind 6 m/s fra SV · <a href="#" style="font-weight: 500;">Yr ↗</a></span>
+            </div>
+          </div>
+          <ul style="list-style: none; margin: 0; padding: 6px 4px; border-radius: 14px; background: #fffdf8; box-shadow: 0 1px 0 rgba(28,38,34,0.06), 0 8px 24px rgba(28,38,34,0.05);">
+            <sc-for list="{{ checklist }}" as="c" hint-placeholder-count="6">
+              <li><label style="display: flex; align-items: center; gap: 12px; padding: 10px 14px; border-radius: 10px; cursor: pointer; font-size: 15px;" style-hover="background: rgba(28,38,34,0.04);">
+                <span style="width: 20px; height: 20px; border-radius: 999px; display: grid; place-items: center; flex: none; border: 1.5px solid {{ c.ringBorder }}; background: {{ c.ringBg }}; color: #f4f1ea; transition: all 0.15s;"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="opacity: {{ c.tickOpacity }};"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
+                <input type="checkbox" checked="{{ c.on }}" onChange="{{ c.toggle }}" style="position: absolute; opacity: 0; width: 1px; height: 1px;">
+                <span style="flex: 1; color: {{ c.fg }}; text-decoration: {{ c.deco }};">{{ c.text }}</span>
+                <span style="font-size: 12px; color: rgba(28,38,34,0.5);">{{ c.hint }}</span>
+              </label></li>
+            </sc-for>
+          </ul>
+        </section>
+
+        <section style="padding: 40px 0 0;">
+          <h2 style="font-family: 'Instrument Serif', serif; font-weight: 400; font-size: 32px; line-height: 1.05; letter-spacing: -0.015em; margin: 0 0 16px;">Kom deg dit</h2>
+          <div onMouseEnter="{{ hoverStart }}" onMouseLeave="{{ hoverNone }}" style="display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 16px; padding: 16px 18px; border-radius: 14px; background: #fffdf8; box-shadow: 0 1px 0 rgba(28,38,34,0.06), 0 8px 24px rgba(28,38,34,0.05);">
+            <div>
+              <div style="display: flex; align-items: center; gap: 10px;"><span style="width: 26px; height: 26px; border-radius: 999px; display: grid; place-items: center; background: #fff; border: 2px solid #8a2a5b; color: #8a2a5b; font-weight: 700; font-size: 13px;">P</span><span style="font-size: 18px; font-weight: 600;">Skarbakkane vinterparkering</span></div>
+              <p style="margin: 8px 0 0; font-size: 15px; line-height: 23px; color: rgba(28,38,34,0.78);">Ved E136 øst for Isfjorden. Brøytes gjennom sesongen; sporet starter rett bak brøytekanten mot sørvest.</p>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 6px; align-items: flex-end; font-size: 13px;">
+              <a href="#" style="font-weight: 500; white-space: nowrap;">Veibeskrivelse ↗</a>
+              <span style="color: rgba(28,38,34,0.5); white-space: nowrap;">60 moh · 62.6402, 7.8650</span>
+            </div>
+          </div>
+        </section>
+
+        <section style="padding: 40px 0 0;">
+          <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 16px; margin-bottom: 16px;">
+            <h2 style="font-family: 'Instrument Serif', serif; font-weight: 400; font-size: 32px; line-height: 1.05; letter-spacing: -0.015em; margin: 0;">Opp, i fire etapper</h2>
+            <span style="font-size: 13px; color: rgba(28,38,34,0.55);">Pek for å se den i kartet</span>
+          </div>
+          <ol style="list-style: none; margin: 0; padding: 0; position: relative;">
+            <sc-for list="{{ steps }}" as="st" hint-placeholder-count="4">
+              <li onMouseEnter="{{ st.hover }}" onMouseLeave="{{ hoverNone }}" onClick="{{ st.pin }}" style="display: grid; grid-template-columns: 36px minmax(0, 1fr); gap: 0 16px; padding: 14px 16px 14px 12px; margin: 0 0 6px; border-radius: 14px; cursor: pointer; background: {{ st.bg }}; box-shadow: {{ st.shadow }}; transition: background 0.15s, box-shadow 0.15s;">
+                <span style="width: 36px; height: 36px; border-radius: 999px; display: grid; place-items: center; font-family: 'Instrument Serif', serif; font-size: 22px; line-height: 1; background: {{ st.numBg }}; color: {{ st.numFg }}; transition: all 0.15s;">{{ st.num }}</span>
+                <div style="min-width: 0;">
+                  <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap;">
+                    <span style="font-size: 17px; font-weight: 600;">{{ st.title }}</span>
+                    <span style="font-size: 13px; color: rgba(28,38,34,0.55); white-space: nowrap;">{{ st.meta }}</span>
+                  </div>
+                  <p style="margin: 4px 0 0; font-size: 15px; line-height: 23px; color: rgba(28,38,34,0.78);">{{ st.body }}</p>
+                </div>
+              </li>
+            </sc-for>
+          </ol>
+          <p style="margin: 14px 0 0; padding: 12px 16px; border-radius: 14px; font-size: 15px; line-height: 23px; background: #1c2622; color: #f4f1ea;"><em style="font-family: 'Instrument Serif', serif; font-size: 18px;">I dårlig sikt:</em> hold ryggen. Terrenget på begge sider faller brattere enn det ser ut fra sporet.</p>
+        </section>
+
+        <section style="padding: 40px 0 0;">
+          <h2 style="font-family: 'Instrument Serif', serif; font-weight: 400; font-size: 32px; line-height: 1.05; letter-spacing: -0.015em; margin: 0 0 14px;">Ned</h2>
+          <ul style="list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; font-size: 16px; line-height: 25px;">
+            <li style="display: flex; gap: 14px;"><span style="flex: none; width: 8px; height: 8px; border-radius: 999px; background: #8a2a5b; margin-top: 9px;"></span><span><strong style="font-weight: 600;">Normalvegen</strong> følger oppstigningen: bred, jevn og med god flyt til skoggrensa.</span></li>
+            <li style="display: flex; gap: 14px;"><span style="flex: none; width: 8px; height: 8px; border-radius: 999px; background: #8a2a5b; margin-top: 9px;"></span><span><strong style="font-weight: 600;">SV-flanken</strong> er et naturlig linjevalg ved stabile forhold, men samler fokksnø etter vind fra nordvest.</span></li>
+            <li style="display: flex; gap: 14px;"><span style="flex: none; width: 8px; height: 8px; border-radius: 999px; background: #8a2a5b; margin-top: 9px;"></span><span><strong style="font-weight: 600;">Vanligste feil</strong> er å dra for langt mot sør. Da havner du over de bratte partiene mot dalen — hold sporet til du ser parkeringen.</span></li>
+          </ul>
+        </section>
+
+        <section style="padding: 40px 0 0;">
+          <h2 style="font-family: 'Instrument Serif', serif; font-weight: 400; font-size: 32px; line-height: 1.05; letter-spacing: -0.015em; margin: 0 0 16px;">Skredterreng</h2>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+            <div style="padding: 16px 18px; border-radius: 14px; background: #fffdf8; box-shadow: 0 1px 0 rgba(28,38,34,0.06), 0 8px 24px rgba(28,38,34,0.05);">
+              <div style="font-size: 12px; font-weight: 500; color: rgba(28,38,34,0.6);">Normalruta</div>
+              <div style="font-family: 'Instrument Serif', serif; font-size: 36px; line-height: 1.1;">under 30°</div>
+              <p style="margin: 6px 0 0; font-size: 14px; line-height: 21px; color: rgba(28,38,34,0.75);">Hele veien i normale forhold. Ingen kjente utløpssoner krysser ruta.</p>
+            </div>
+            <div style="padding: 16px 18px; border-radius: 14px; background: #fffdf8; box-shadow: 0 1px 0 rgba(28,38,34,0.06), 0 8px 24px rgba(28,38,34,0.05);">
+              <div style="font-size: 12px; font-weight: 500; color: rgba(28,38,34,0.6);">Flankene mot S og SV</div>
+              <div style="font-family: 'Instrument Serif', serif; font-size: 36px; line-height: 1.1;">30–40°</div>
+              <p style="margin: 6px 0 0; font-size: 14px; line-height: 21px; color: rgba(28,38,34,0.75);">Samler fokksnø. Bare ved stabile forhold — sjekk <a href="https://varsom.no" target="_blank" rel="noopener">varsom.no</a>.</p>
+            </div>
+          </div>
+        </section>
+
+        <section style="padding: 40px 0 0;">
+          <h2 style="font-family: 'Instrument Serif', serif; font-weight: 400; font-size: 32px; line-height: 1.05; letter-spacing: -0.015em; margin: 0 0 16px;">Langs ruta</h2>
+          <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px;">
+            <figure style="margin: 0;"><div style="aspect-ratio: 4 / 3; border-radius: 14px; overflow: hidden;"><image-slot id="v3-foto-1" shape="rect" placeholder="Parkeringen i Skarbakkane"></image-slot></div><figcaption style="font-size: 13px; color: rgba(28,38,34,0.6); margin-top: 8px;">1 · Start, 60 moh</figcaption></figure>
+            <figure style="margin: 0;"><div style="aspect-ratio: 4 / 3; border-radius: 14px; overflow: hidden;"><image-slot id="v3-foto-2" shape="rect" placeholder="Ryggen over skoggrensa"></image-slot></div><figcaption style="font-size: 13px; color: rgba(28,38,34,0.6); margin-top: 8px;">2 · Skoggrensa, ca. 520 moh</figcaption></figure>
+            <figure style="margin: 0;"><div style="aspect-ratio: 4 / 3; border-radius: 14px; overflow: hidden;"><image-slot id="v3-foto-3" shape="rect" placeholder="Toppflata og varden"></image-slot></div><figcaption style="font-size: 13px; color: rgba(28,38,34,0.6); margin-top: 8px;">4 · Varden, 1439 moh</figcaption></figure>
+          </div>
+        </section>
+
+        <section style="padding: 44px 0 0;">
+          <div style="font-size: 13px; font-weight: 500; color: rgba(28,38,34,0.6); margin-bottom: 10px;">Flere turer i Romsdal</div>
+          <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+            <sc-for list="{{ neighbours }}" as="n" hint-placeholder-count="5">
+              <a href="#" style="display: inline-flex; align-items: baseline; gap: 8px; padding: 9px 14px; border-radius: 999px; background: #fffdf8; box-shadow: 0 1px 0 rgba(28,38,34,0.06), 0 6px 18px rgba(28,38,34,0.05); text-decoration: none; color: #1c2622;" style-hover="background: #1c2622; color: #f4f1ea;"><span style="font-weight: 600; font-size: 14px;">{{ n.name }}</span><span style="font-size: 12px; opacity: 0.6;">{{ n.meta }}</span></a>
+            </sc-for>
+          </div>
+        </section>
+      </div>
+
+      <aside style="position: sticky; top: 76px; height: calc(100vh - 96px); min-height: 600px; display: flex; flex-direction: column; gap: 10px; animation: rise 0.6s 0.2s ease-out both;">
+        <div style="position: relative; flex: 1; min-height: 0; border-radius: 22px; overflow: hidden; background: #fff; box-shadow: 0 1px 0 rgba(28,38,34,0.08), 0 24px 60px rgba(28,38,34,0.12);">
+          <div ref="{{ mountMap }}" style="position: absolute; inset: 0;"></div>
+          <div style="position: absolute; top: 14px; left: 14px; right: 14px; z-index: 1000; display: flex; justify-content: space-between; align-items: center; gap: 10px; pointer-events: none;">
+            <span style="pointer-events: auto; display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; border-radius: 999px; background: rgba(255,253,248,0.92); backdrop-filter: blur(8px); font-size: 13px; font-weight: 600; box-shadow: 0 6px 20px rgba(28,38,34,0.14);"><span style="width: 8px; height: 8px; border-radius: 999px; background: #8a2a5b;"></span>{{ activeLabel }}</span>
+            <a href="Kart v3.dc.html" style="pointer-events: auto; padding: 8px 14px; border-radius: 999px; background: rgba(255,253,248,0.92); backdrop-filter: blur(8px); font-size: 13px; font-weight: 600; text-decoration: none; color: #1c2622; box-shadow: 0 6px 20px rgba(28,38,34,0.14);" style-hover="background: #1c2622; color: #f4f1ea;">Åpne i hovedkartet ↗</a>
+          </div>
+        </div>
+        <div style="padding: 14px 18px 10px; border-radius: 18px; background: #fffdf8; box-shadow: 0 1px 0 rgba(28,38,34,0.06), 0 8px 24px rgba(28,38,34,0.05);">
+          <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 6px;">
+            <span style="font-family: 'Instrument Serif', serif; font-size: 20px;">Høydeprofil</span>
+            <span style="font-size: 13px; color: rgba(28,38,34,0.6);">5,5 km · ↑ 1270 m · brattest 900–1200 moh</span>
+          </div>
+          <svg viewBox="0 0 600 150" style="width: 100%; height: auto; display: block;" role="img" aria-label="Høydeprofil fra 60 til 1439 moh over 5,5 km">
+            <line x1="0" y1="40" x2="600" y2="40" stroke="rgba(28,38,34,0.1)"></line>
+            <line x1="0" y1="80" x2="600" y2="80" stroke="rgba(28,38,34,0.1)"></line>
+            <path d="M0,130 L80,116 L175,88 L270,70 L360,54 L420,42 L491,30 L545,18 L600,10 L600,150 L0,150 Z" fill="rgba(138,42,91,0.08)"></path>
+            <sc-for list="{{ profileSegs }}" as="sg" hint-placeholder-count="4">
+              <path d="{{ sg.d }}" fill="none" stroke="{{ sg.stroke }}" stroke-width="{{ sg.w }}" stroke-linecap="round" stroke-linejoin="round"></path>
+              <rect x="{{ sg.x0 }}" y="0" width="{{ sg.wd }}" height="150" fill="{{ sg.fill }}" onMouseEnter="{{ sg.hover }}" onMouseLeave="{{ hoverNone }}" style="cursor: pointer;"></rect>
+              <text x="{{ sg.lx }}" y="146" font-size="11" fill="rgba(28,38,34,0.55)" font-family="Schibsted Grotesk, sans-serif" font-weight="600" text-anchor="middle">{{ sg.num }}</text>
+            </sc-for>
+            <text x="4" y="126" font-size="11" fill="rgba(28,38,34,0.55)" font-family="Schibsted Grotesk, sans-serif">60 moh</text>
+            <text x="596" y="8" font-size="11" fill="rgba(28,38,34,0.55)" font-family="Schibsted Grotesk, sans-serif" text-anchor="end">1439 moh</text>
+          </svg>
+        </div>
+      </aside>
+    </div>
+
+    <footer style="margin-top: 64px; padding: 28px 0 0; font-size: 13px; line-height: 24px; color: rgba(28,38,34,0.6); border-top: 1px solid rgba(28,38,34,0.12); display: flex; gap: 24px; flex-wrap: wrap;">
+      <a href="Kart v3.dc.html" style="color: inherit; text-decoration: none;">Kartet</a><a href="#" style="color: inherit; text-decoration: none;">Vilkår</a><a href="#" style="color: inherit; text-decoration: none;">Personvern</a><a href="#" style="color: inherit; text-decoration: none;">Støtt Toppkart</a><a href="#" style="color: inherit; text-decoration: none;">Kontakt</a>
+      <span style="margin-left: auto;">Kartgrunnlag © Kartverket · Linja er beregnet i terrengmodellen, ikke et innspilt spor.</span>
+    </footer>
+  </main>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+const ACCENT = "#8a2a5b";
+const PAPER = "#f4f1ea";
+// Skjematisk linje i prototypen — ekte geometri i lib/tours.ts.
+const LINE = [[62.6402, 7.8650], [62.6330, 7.8760], [62.6270, 7.8880], [62.6205, 7.8960], [62.6150, 7.9040], [62.61158, 7.90672]];
+const STEPS = [
+  { pts: [0, 1], x: [0, 175], title: "Parkeringen til skoggrensa", alt: "60–520 moh", meta: "60–520 moh · 1,6 km", body: "Følg den brede ryggen mot sørvest. Sporet er som regel godt tråkket; hold høyre der skogen tynnes ut, så unngår du de bratteste kulene i skoggrensa." },
+  { pts: [1, 3], x: [175, 360], title: "Slak rygg over skogen", alt: "520–900 moh", meta: "520–900 moh · 1,7 km", body: "Terrenget åpner seg. Ryggen er slak og trygg i normale forhold — god plass til å legge sitt eget spor." },
+  { pts: [3, 4], x: [360, 491], title: "Det bratte partiet", alt: "900–1200 moh", meta: "900–1200 moh · 1,2 km · opptil 28°", body: "Turens bratteste. Mange legger slakere sikksakk her; hold deg på ryggen og unngå flankene mot sør." },
+  { pts: [4, 5], x: [491, 600], title: "Toppflata til varden", alt: "1200–1439 moh", meta: "1200–1439 moh · 1,0 km", body: "Stor og godslig toppflate. Varden står lengst sørøst — i dårlig sikt er det lett å stoppe for tidlig." },
+];
+const PROFILE_PTS = [[0, 60], [80, 180], [175, 520], [270, 700], [360, 900], [420, 1050], [491, 1200], [545, 1340], [600, 1439]];
+const CHECKLIST = [
+  { text: "Les dagens skredvarsel", hint: "Faregrad 2 i Romsdal" },
+  { text: "Sjekk været på toppen", hint: "−4 °C, opptil 12 m/s i morgen" },
+  { text: "Sender/mottaker, søkestang og spade", hint: "sjekk batteriet" },
+  { text: "GPX på klokka eller telefonen", hint: "last ned over" },
+  { text: "Guiden lagret offline", hint: "ingen dekning på toppen" },
+  { text: "Si fra hvor du går og når du er tilbake", hint: "" },
+];
+
+class Component extends DCLogic {
+  state = { fav: false, done: false, checks: {}, hover: null, pinned: null };
+  segs = null;
+  mountMap = (el, tries = 0) => {
+    if (!el) { if (this.map) { this.map.remove(); this.map = null; this.segs = null; } return; }
+    if (this.map) return;
+    if (!window.L || !el.isConnected || el.clientWidth === 0 || el.clientHeight === 0) { if (tries < 80) setTimeout(() => this.mountMap(el, tries + 1), 120); return; }
+    const L = window.L;
+    const map = L.map(el, { zoomControl: false, scrollWheelZoom: false });
+    L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", { maxZoom: 19, attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>' }).addTo(map);
+    L.tileLayer("https://cache.kartverket.no/v1/wmts/1.0.0/topo/default/webmercator/{z}/{y}/{x}.png", { maxZoom: 18, attribution: "© Kartverket", zIndex: 1 }).addTo(map);
+    L.control.zoom({ position: "bottomright", zoomInTitle: "Zoom inn", zoomOutTitle: "Zoom ut" }).addTo(map);
+    L.polyline(LINE, { color: "#fff", weight: 8, lineCap: "round", lineJoin: "round", interactive: false, opacity: 0.9 }).addTo(map);
+    this.segs = STEPS.map((s, i) => {
+      const line = L.polyline(LINE.slice(s.pts[0], s.pts[1] + 1), { color: ACCENT, weight: 3, lineCap: "round", lineJoin: "round" }).addTo(map);
+      line.bindTooltip(`${i + 1} · ${s.title}`, { sticky: true, direction: "top" });
+      line.on("mouseover", () => this.setState({ hover: i }));
+      line.on("mouseout", () => this.setState({ hover: null }));
+      line.on("click", () => this.setState({ pinned: this.state.pinned === i ? null : i }));
+      return line;
+    });
+    const shadow = "filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3))";
+    L.marker(LINE[0], { icon: L.divIcon({ className: "", html: `<svg width="26" height="26" viewBox="0 0 26 26" style="${shadow}"><circle cx="13" cy="13" r="11" fill="#fff" stroke="${ACCENT}" stroke-width="2.5"/><text x="13" y="17.5" text-anchor="middle" font-family="Schibsted Grotesk, system-ui, sans-serif" font-weight="700" font-size="13" fill="${ACCENT}">P</text></svg>`, iconSize: [26, 26], iconAnchor: [13, 13] }), interactive: false }).addTo(map);
+    L.marker(LINE[LINE.length - 1], { icon: L.divIcon({ className: "", html: `<svg width="28" height="25" viewBox="0 0 26 23" style="${shadow}"><path d="M13,2 L24,21 L2,21 Z" fill="${ACCENT}" stroke="#fff" stroke-width="2" stroke-linejoin="round"/></svg>`, iconSize: [28, 25], iconAnchor: [14, 16] }), interactive: false }).addTo(map);
+    STEPS.slice(1).forEach((s, i) => {
+      L.marker(LINE[s.pts[0]], { icon: L.divIcon({ className: "", html: `<div style="width:20px;height:20px;border-radius:50%;background:${PAPER};border:2px solid ${ACCENT};color:${ACCENT};font:700 11px 'Schibsted Grotesk',sans-serif;display:grid;place-items:center;box-shadow:0 1px 3px rgba(0,0,0,0.25)">${i + 2}</div>`, iconSize: [20, 20], iconAnchor: [10, 10] }), interactive: false }).addTo(map);
+    });
+    map.fitBounds(L.latLngBounds(LINE), { padding: [48, 48], maxZoom: 15 });
+    map.on("click", () => map.scrollWheelZoom.enable());
+    map.on("mouseout", () => map.scrollWheelZoom.disable());
+    if (window.ResizeObserver) { const ro = new ResizeObserver(() => { if (this.map) map.invalidateSize(); }); ro.observe(el); map.on("remove", () => ro.disconnect()); }
+    this.map = map;
+    this.paintSegs();
+  };
+
+  active() { return this.state.hover ?? this.state.pinned; }
+  paintSegs() {
+    if (!this.segs) return;
+    const a = this.active();
+    this.segs.forEach((line, i) => {
+      line.setStyle(a == null ? { weight: 3, opacity: 1 } : i === a ? { weight: 6, opacity: 1 } : { weight: 3, opacity: 0.3 });
+      if (i === a) line.bringToFront();
+    });
+  }
+  componentDidUpdate() { this.paintSegs(); }
+  componentWillUnmount() { if (this.map) this.map.remove(); }
+
+  renderVals() {
+    const { fav, done, checks } = this.state;
+    const a = this.active();
+    const y = (alt) => Math.round((1 - (alt - 60) / (1439 - 60)) * 130 + 10);
+    const pressed = { border: "#1c2622", bg: "#1c2622", fg: "#f4f1ea" };
+    const idle = { border: "rgba(28,38,34,0.18)", bg: "transparent", fg: "#1c2622" };
+    const f = fav ? pressed : idle, d = done ? pressed : idle;
+    return {
+      mountMap: this.mountMap,
+      fav, done,
+      toggleFav: () => this.setState({ fav: !fav }),
+      toggleDone: () => this.setState({ done: !done }),
+      favBorder: f.border, favBg: f.bg, favFg: f.fg, favFill: fav ? "currentColor" : "none",
+      doneBorder: d.border, doneBg: d.bg, doneFg: d.fg, doneStroke: done ? "2.5" : "1.75",
+      doneLabel: done ? "Gått 16. okt. 2026" : "Har gått",
+      stats: [
+        { label: "Topp", value: "1439 moh" }, { label: "Høydemeter", value: "↑ 1270 m" }, { label: "Lengde", value: "5,5 km" },
+        { label: "Normaltid", value: "5–6 t" }, { label: "Himmelretning", value: "SV" }, { label: "Grad", value: "Middels" },
+      ],
+      activeLabel: a == null ? "Hele ruta · 5,5 km" : `Etappe ${a + 1} · ${STEPS[a].alt}`,
+      hoverNone: () => this.setState({ hover: null }),
+      hoverStart: () => this.setState({ hover: 0 }),
+      steps: STEPS.map((s, i) => {
+        const on = a === i;
+        return {
+          ...s, num: String(i + 1),
+          bg: on ? "#fffdf8" : "transparent", shadow: on ? "0 1px 0 rgba(28,38,34,0.06), 0 12px 32px rgba(28,38,34,0.1)" : "none",
+          numBg: on ? ACCENT : "rgba(28,38,34,0.08)", numFg: on ? "#fff" : "#1c2622",
+          hover: () => this.setState({ hover: i }),
+          pin: () => this.setState({ pinned: this.state.pinned === i ? null : i }),
+        };
+      }),
+      profileSegs: STEPS.map((s, i) => {
+        const pts = PROFILE_PTS.filter((p) => p[0] >= s.x[0] && p[0] <= s.x[1]);
+        const on = a === i, dim = a != null && !on;
+        return {
+          d: pts.map((p, k) => `${k ? "L" : "M"}${p[0]},${y(p[1])}`).join(" "),
+          stroke: dim ? "rgba(138,42,91,0.3)" : ACCENT, w: on ? 5 : 2.5,
+          x0: s.x[0], wd: s.x[1] - s.x[0], lx: (s.x[0] + s.x[1]) / 2,
+          fill: on ? "rgba(138,42,91,0.08)" : "transparent", num: String(i + 1),
+          hover: () => this.setState({ hover: i }),
+        };
+      }),
+      checklist: CHECKLIST.map((c, i) => ({
+        ...c, on: Boolean(checks[i]),
+        ringBorder: checks[i] ? "#1c2622" : "rgba(28,38,34,0.3)", ringBg: checks[i] ? "#1c2622" : "transparent", tickOpacity: checks[i] ? 1 : 0,
+        deco: checks[i] ? "line-through" : "none", fg: checks[i] ? "rgba(28,38,34,0.45)" : "#1c2622",
+        toggle: () => this.setState({ checks: { ...checks, [i]: !checks[i] } }),
+      })),
+      neighbours: [
+        { name: "Skarven", meta: "1048 moh · Middels" }, { name: "Mjølvafjellet", meta: "1215 moh · Middels" }, { name: "Blånebba", meta: "1317 moh · Krevende" }, { name: "Øspetinden", meta: "1228 moh · Krevende" }, { name: "Middagstinden", meta: "1568 moh · Ekspert" },
+      ],
+    };
+  }
+}
+</script>
+</body>
+</html>

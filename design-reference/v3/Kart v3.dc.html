@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Schibsted+Grotesk:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<style>
+body { margin: 0; overflow: hidden; background: #f4f1ea; color: #1c2622; font-family: "Schibsted Grotesk", system-ui, sans-serif; font-size: 15px; line-height: 1.55; font-feature-settings: "tnum" 1; }
+*, *::before, *::after { box-sizing: border-box; }
+a { color: #8a2a5b; text-underline-offset: 3px; }
+a:hover { color: #5c1a3c; }
+.leaflet-container { font-family: "Schibsted Grotesk", system-ui, sans-serif; background: #fff; }
+.leaflet-control-zoom { border: 0 !important; box-shadow: 0 6px 20px rgba(28,38,34,0.14) !important; border-radius: 999px !important; overflow: hidden; }
+.leaflet-control-zoom a { width: 36px !important; height: 36px !important; line-height: 36px !important; color: #1c2622 !important; border-bottom: 1px solid rgba(28,38,34,0.1) !important; }
+.leaflet-tooltip { border-radius: 999px; border: 0; padding: 5px 11px; font-weight: 600; font-size: 12px; color: #1c2622; box-shadow: 0 6px 20px rgba(28,38,34,0.14); }
+.leaflet-tooltip-top:before { display: none; }
+.leaflet-control-attribution { font-size: 10px; background: rgba(255,255,255,0.75) !important; border-radius: 8px 0 0 0; }
+</style>
+</helmet>
+
+<div data-screen-label="Kart v3 — nytt uttrykk" style="position: fixed; inset: 0; overflow: hidden; background: #f4f1ea; display: grid; grid-template-rows: 64px minmax(0, 1fr); grid-template-columns: 400px minmax(0, 1fr);">
+
+  <header style="grid-column: 1 / -1; display: flex; align-items: center; gap: 28px; padding: 0 24px; background: #f4f1ea;">
+    <a href="#" onClick="{{ goHome }}" style="font-family: 'Instrument Serif', serif; font-size: 26px; letter-spacing: -0.01em; text-decoration: none; color: #1c2622; margin-right: auto;">Toppkart</a>
+    <a href="#" style="font-size: 14px; font-weight: 500; color: #1c2622; text-decoration: none;">Kartet</a>
+    <a href="#" style="font-size: 14px; font-weight: 500; color: #1c2622; text-decoration: none; opacity: 0.7;">Mine turer</a>
+    <a href="#" style="font-size: 14px; font-weight: 500; color: #1c2622; text-decoration: none; opacity: 0.7;">Om</a>
+    <div role="group" aria-label="Språk" style="display: inline-flex; padding: 3px; border-radius: 999px; background: rgba(28,38,34,0.06);">
+      <a href="#" style="padding: 4px 12px; border-radius: 999px; font-size: 13px; font-weight: 600; text-decoration: none; background: #1c2622; color: #f4f1ea;">NO</a>
+      <a href="#" style="padding: 4px 12px; border-radius: 999px; font-size: 13px; font-weight: 500; text-decoration: none; color: #1c2622;">EN</a>
+    </div>
+  </header>
+
+  <aside style="display: flex; flex-direction: column; min-height: 0; padding: 0 0 16px 16px;">
+    <div style="flex: 1; min-height: 0; display: flex; flex-direction: column; border-radius: 22px; background: #fffdf8; box-shadow: 0 1px 0 rgba(28,38,34,0.06), 0 16px 40px rgba(28,38,34,0.08); overflow: hidden;">
+
+      <sc-if value="{{ showList }}" hint-placeholder-val="{{ true }}">
+        <div style="padding: 16px 16px 12px; display: flex; flex-direction: column; gap: 10px; border-bottom: 1px solid rgba(28,38,34,0.08);">
+          <div style="display: flex; gap: 8px;">
+            <label style="flex: 1; display: flex; align-items: center; gap: 10px; min-height: 42px; padding: 0 14px; border-radius: 999px; background: rgba(28,38,34,0.06);">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="opacity: 0.6;"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg>
+              <input type="search" placeholder="Søk topp eller region" aria-label="Søk etter topp eller region" value="{{ query }}" onChange="{{ setQuery }}" style="flex: 1; min-width: 0; border: 0; background: transparent; font: inherit; font-size: 14px; color: #1c2622; outline: none;">
+            </label>
+            <button type="button" title="Nær meg" style="flex: none; display: inline-flex; align-items: center; gap: 6px; padding: 0 14px; border-radius: 999px; font: inherit; font-size: 13px; font-weight: 600; color: #1c2622; background: transparent; border: 1px solid rgba(28,38,34,0.18); cursor: pointer;" style-hover="background: rgba(28,38,34,0.05);">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="2" x2="5" y1="12" y2="12"></line><line x1="19" x2="22" y1="12" y2="12"></line><line x1="12" x2="12" y1="2" y2="5"></line><line x1="12" x2="12" y1="19" y2="22"></line><circle cx="12" cy="12" r="7"></circle></svg>Nær meg
+            </button>
+          </div>
+          <div style="display: flex; gap: 6px; flex-wrap: wrap; align-items: center;">
+            <sc-for list="{{ gradeChips }}" as="g" hint-placeholder-count="5">
+              <button type="button" onClick="{{ g.pick }}" style="display: inline-flex; align-items: center; gap: 6px; padding: 6px 12px; border-radius: 999px; font: inherit; font-size: 13px; font-weight: 600; cursor: pointer; border: 1px solid {{ g.border }}; background: {{ g.bg }}; color: {{ g.fg }};"><span style="width: 8px; height: 8px; border-radius: 999px; background: {{ g.dot }}; display: {{ g.dotDisplay }};"></span>{{ g.label }}</button>
+            </sc-for>
+            <select aria-label="Region" style="margin-left: auto; padding: 6px 12px; border-radius: 999px; font: inherit; font-size: 13px; font-weight: 600; color: #1c2622; background: transparent; border: 1px solid rgba(28,38,34,0.18);"><option>Alle regioner</option><option>Romsdal</option><option>Sunnmøre</option><option>Lyngen</option><option>Jotunheimen</option></select>
+          </div>
+          <div style="display: flex; gap: 6px; flex-wrap: wrap;">
+            <select aria-label="Himmelretning" style="padding: 6px 12px; border-radius: 999px; font: inherit; font-size: 13px; font-weight: 500; color: rgba(28,38,34,0.75); background: transparent; border: 1px solid rgba(28,38,34,0.14);"><option>Alle retninger</option></select>
+            <select aria-label="Høydemeter" style="padding: 6px 12px; border-radius: 999px; font: inherit; font-size: 13px; font-weight: 500; color: rgba(28,38,34,0.75); background: transparent; border: 1px solid rgba(28,38,34,0.14);"><option>Alle høydemeter</option></select>
+            <select aria-label="Mine turer" style="padding: 6px 12px; border-radius: 999px; font: inherit; font-size: 13px; font-weight: 500; color: rgba(28,38,34,0.75); background: transparent; border: 1px solid rgba(28,38,34,0.14);"><option>Alle turer</option><option>Favoritter</option><option>Har gått</option></select>
+          </div>
+          <div style="font-size: 12px; color: rgba(28,38,34,0.55); padding-top: 2px;">{{ countLabel }} · mest populære først</div>
+        </div>
+        <div style="flex: 1; overflow-y: auto; padding: 10px 10px 14px; display: flex; flex-direction: column; gap: 4px;">
+          <sc-for list="{{ tours }}" as="tour" hint-placeholder-count="8">
+            <button type="button" onClick="{{ tour.open }}" onMouseEnter="{{ tour.enter }}" onMouseLeave="{{ leaveTour }}" style="display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 2px 12px; align-items: baseline; padding: 12px 14px; border-radius: 14px; border: 0; cursor: pointer; text-align: left; font: inherit; color: inherit; background: {{ tour.bg }}; transition: background 0.12s;" style-hover="background: rgba(28,38,34,0.05);">
+              <span style="font-family: 'Instrument Serif', serif; font-size: 22px; line-height: 1.1; letter-spacing: -0.01em;">{{ tour.name }}</span>
+              <span style="font-size: 14px; font-weight: 600; white-space: nowrap;">{{ tour.summitM }} moh</span>
+              <span style="display: flex; gap: 10px; flex-wrap: wrap; font-size: 12.5px; color: rgba(28,38,34,0.6); align-items: center; grid-column: 1 / -1;">
+                <span style="display: inline-flex; align-items: center; gap: 6px;"><span style="width: 8px; height: 8px; border-radius: 999px; display: inline-block; background: {{ tour.color }};"></span>{{ tour.gradeName }}</span>
+                <span>{{ tour.region }}</span>
+                <span>↑ {{ tour.verticalM }} m</span>
+                <span>{{ tour.duration }}</span>
+              </span>
+            </button>
+          </sc-for>
+        </div>
+      </sc-if>
+
+      <sc-if value="{{ showDetail }}" hint-placeholder-val="{{ false }}">
+        <div style="flex: 1; min-height: 0; overflow-y: auto; display: flex; flex-direction: column;">
+          <div style="position: relative; aspect-ratio: 16 / 10; background: repeating-linear-gradient(135deg, #e8e4da 0 12px, #e1ddd2 12px 24px); display: grid; place-items: center;">
+            <span style="font-family: ui-monospace, Menlo, monospace; font-size: 11px; color: #5d5d60; background: #fffdf8; padding: 3px 8px; border-radius: 999px;">foto · Wikimedia Commons</span>
+            <button type="button" onClick="{{ closeDetail }}" style="position: absolute; top: 12px; left: 12px; display: inline-flex; align-items: center; gap: 6px; padding: 7px 12px; border-radius: 999px; font: inherit; font-size: 13px; font-weight: 600; color: #1c2622; background: rgba(255,253,248,0.92); border: 0; cursor: pointer; box-shadow: 0 6px 20px rgba(28,38,34,0.14);">← Lista</button>
+            <div style="position: absolute; top: 12px; right: 12px; display: flex; gap: 6px;">
+              <button type="button" onClick="{{ toggleFav }}" title="Favoritt" style="width: 34px; height: 34px; display: grid; place-items: center; border-radius: 999px; border: 0; cursor: pointer; background: {{ favBg }}; color: {{ favFg }}; box-shadow: 0 6px 20px rgba(28,38,34,0.14);"><svg width="15" height="15" viewBox="0 0 24 24" fill="{{ favFill }}" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></button>
+              <button type="button" onClick="{{ toggleDone }}" title="Har gått" style="width: 34px; height: 34px; display: grid; place-items: center; border-radius: 999px; border: 0; cursor: pointer; background: {{ doneBg }}; color: {{ doneFg }}; box-shadow: 0 6px 20px rgba(28,38,34,0.14);"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg></button>
+            </div>
+          </div>
+          <div style="padding: 18px 18px 20px; display: flex; flex-direction: column; gap: 16px;">
+            <div>
+              <div style="font-size: 13px; font-weight: 500; color: rgba(28,38,34,0.6);">Romsdal · Middels · des–mai</div>
+              <h2 style="font-family: 'Instrument Serif', serif; font-weight: 400; font-size: 40px; line-height: 1; letter-spacing: -0.02em; margin: 4px 0 0 -0.02em;">Kirketaket</h2>
+              <p style="font-size: 15px; line-height: 23px; margin: 10px 0 0; color: rgba(28,38,34,0.78);">Norges kanskje mest populære topptur: bred rygg, trygge linjevalg, lang sesong.</p>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px;">
+              <sc-for list="{{ stats }}" as="s" hint-placeholder-count="4">
+                <div style="padding: 10px 14px; border-radius: 12px; background: rgba(28,38,34,0.05);"><div style="font-size: 12px; color: rgba(28,38,34,0.6);">{{ s.label }}</div><div style="font-family: 'Instrument Serif', serif; font-size: 26px; line-height: 1.1;">{{ s.value }}</div></div>
+              </sc-for>
+            </div>
+            <a href="Turguide v3.dc.html" style="display: flex; align-items: center; justify-content: center; gap: 8px; min-height: 48px; border-radius: 999px; font-size: 15px; font-weight: 600; text-decoration: none; background: #1c2622; color: #f4f1ea;" style-hover="background: #2b3a34;">Åpne turguiden →</a>
+            <div style="display: flex; gap: 10px;">
+              <div style="flex: 1; display: flex; align-items: center; gap: 10px; padding: 10px 14px; border-radius: 12px; background: #ffff00; color: #1c2622;">
+                <span style="font-family: 'Instrument Serif', serif; font-size: 30px; line-height: 1;">2</span>
+                <span style="font-size: 12px; line-height: 15px; font-weight: 600;">Moderat skredfare<br><span style="font-weight: 400; opacity: 0.8;"><a href="https://varsom.no" target="_blank" rel="noreferrer" style="color: inherit;">Varsom</a> · Romsdal</span></span>
+              </div>
+              <div style="flex: 1; display: flex; align-items: center; gap: 10px; padding: 10px 14px; border-radius: 12px; background: rgba(28,38,34,0.05);">
+                <span style="font-family: 'Instrument Serif', serif; font-size: 30px; line-height: 1;">−4°</span>
+                <span style="font-size: 12px; line-height: 15px; color: rgba(28,38,34,0.78);">På toppen nå<br>lett snø · 6 m/s SV · <a href="#">Yr</a></span>
+              </div>
+            </div>
+            <p style="font-size: 12px; line-height: 17px; color: rgba(28,38,34,0.5); margin: 0;">Rutelinja er beregnet i Kartverkets terrengmodell — ikke et innspilt spor.</p>
+          </div>
+        </div>
+      </sc-if>
+    </div>
+  </aside>
+
+  <div style="position: relative; min-height: 0; padding: 0 16px 16px 16px;">
+    <div style="position: relative; height: 100%; border-radius: 22px; overflow: hidden; background: #fff; box-shadow: 0 1px 0 rgba(28,38,34,0.08), 0 24px 60px rgba(28,38,34,0.12);">
+      <div ref="{{ mountMap }}" style="position: absolute; inset: 0;"></div>
+      <div style="position: absolute; top: 14px; right: 14px; z-index: 1000; display: flex; gap: 8px;">
+        <button type="button" aria-label="Vis posisjonen min" title="Vis posisjonen min" style="width: 38px; height: 38px; display: grid; place-items: center; border-radius: 999px; border: 0; cursor: pointer; color: #1c2622; background: rgba(255,253,248,0.92); box-shadow: 0 6px 20px rgba(28,38,34,0.14);"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="2" x2="5" y1="12" y2="12"></line><line x1="19" x2="22" y1="12" y2="12"></line><line x1="12" x2="12" y1="2" y2="5"></line><line x1="12" x2="12" y1="19" y2="22"></line><circle cx="12" cy="12" r="7"></circle></svg></button>
+      </div>
+      <div style="position: absolute; left: 14px; bottom: 14px; z-index: 1000; display: flex; gap: 12px; padding: 8px 14px; border-radius: 999px; background: rgba(255,253,248,0.92); backdrop-filter: blur(8px); font-size: 12px; font-weight: 500; box-shadow: 0 6px 20px rgba(28,38,34,0.14);">
+        <sc-for list="{{ legend }}" as="l" hint-placeholder-count="4">
+          <span style="display: inline-flex; align-items: center; gap: 6px;"><span style="width: 9px; height: 9px; border-radius: 999px; background: {{ l.color }};"></span>{{ l.label }}</span>
+        </sc-for>
+      </div>
+    </div>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+const ACCENT = "#8a2a5b";
+// Grad 1–4 på én lysskala av aksentfargen, lesbar over Kartverkets grønne og brune.
+const GRADE_COLORS = ["#e2b3c9", "#bf6a93", "#8a2a5b", "#4a1430"];
+const GRADE_NAMES = ["", "Enkel", "Middels", "Krevende", "Ekspert"];
+const TOURS = [
+  { slug: "kirketaket", name: "Kirketaket", region: "Romsdal", lat: 62.61158, lng: 7.90672, summitM: 1439, verticalM: 1270, duration: "5–6 t", grade: 2 },
+  { slug: "galdhopiggen", name: "Galdhøpiggen", region: "Jotunheimen", lat: 61.63644, lng: 8.31243, summitM: 2469, verticalM: 642, duration: "6–8 t", grade: 3 },
+  { slug: "gaustatoppen", name: "Gaustatoppen", region: "Telemark", lat: 59.8542, lng: 8.64928, summitM: 1883, verticalM: 970, duration: "4–6 t", grade: 2 },
+  { slug: "glittertinden", name: "Glittertinden", region: "Jotunheimen", lat: 61.65138, lng: 8.5575, summitM: 2451, verticalM: 1228, duration: "7–9 t", grade: 3 },
+  { slug: "slogen", name: "Slogen", region: "Sunnmøre", lat: 62.20818, lng: 6.67306, summitM: 1564, verticalM: 1535, duration: "6–8 t", grade: 4 },
+  { slug: "storgalten", name: "Storgalten", region: "Lyngen", lat: 69.88543, lng: 20.25257, summitM: 1219, verticalM: 1219, duration: "5–7 t", grade: 3 },
+  { slug: "kolastinden", name: "Kolåstinden", region: "Sunnmøre", lat: 62.25886, lng: 6.31102, summitM: 1432, verticalM: 1120, duration: "5–7 t", grade: 3 },
+  { slug: "rornestinden", name: "Rørnestinden", region: "Lyngen", lat: 69.57329, lng: 20.11187, summitM: 1030, verticalM: 1018, duration: "4–6 t", grade: 2 },
+  { slug: "besshoe", name: "Besshø", region: "Jotunheimen", lat: 61.51791, lng: 8.68712, summitM: 2257, verticalM: 1328, duration: "6–8 t", grade: 3 },
+  { slug: "rasletinden", name: "Rasletinden", region: "Jotunheimen", lat: 61.39514, lng: 8.69944, summitM: 2104, verticalM: 778, duration: "4–6 t", grade: 2 },
+  { slug: "skarven", name: "Skarven", region: "Romsdal", lat: 62.60775, lng: 7.60201, summitM: 1048, verticalM: 740, duration: "3–5 t", grade: 2 },
+  { slug: "mjolvafjellet", name: "Mjølvafjellet", region: "Romsdal", lat: 62.54172, lng: 7.76405, summitM: 1215, verticalM: 1220, duration: "5–7 t", grade: 2 },
+  { slug: "blanebba", name: "Blånebba", region: "Romsdal", lat: 62.52627, lng: 7.79275, summitM: 1317, verticalM: 930, duration: "4–6 t", grade: 3 },
+  { slug: "middagstinden", name: "Middagstinden", region: "Romsdal", lat: 62.46024, lng: 7.44099, summitM: 1568, verticalM: 1290, duration: "5–7 t", grade: 4 },
+  { slug: "rana", name: "Råna", region: "Sunnmøre", lat: 62.27554, lng: 6.57479, summitM: 1587, verticalM: 1560, duration: "7–9 t", grade: 3 },
+  { slug: "kavringtinden", name: "Kavringtinden", region: "Lyngen", lat: 69.54704, lng: 20.12428, summitM: 1289, verticalM: 1250, duration: "5–7 t", grade: 3 },
+  { slug: "torvloysa", name: "Torvløysa", region: "Sunnmøre", lat: 62.1834, lng: 7.28026, summitM: 1851, verticalM: 1460, duration: "7–9 t", grade: 2 },
+  { slug: "melshornet", name: "Melshornet", region: "Sunnmøre", lat: 62.17381, lng: 6.14287, summitM: 809, verticalM: 560, duration: "2–4 t", grade: 1 },
+];
+// Skjematisk linje i prototypen — ekte geometri i lib/tours.ts.
+const LINE = [[62.6402, 7.8650], [62.6330, 7.8760], [62.6270, 7.8880], [62.6205, 7.8960], [62.6150, 7.9040], [62.61158, 7.90672]];
+
+class Component extends DCLogic {
+  state = { selected: null, hovered: null, grade: 0, query: "", fav: false, done: false };
+  markers = {};
+  mountMap = (el, tries = 0) => {
+    if (!el) { if (this.map) { this.map.remove(); this.map = null; } return; }
+    if (this.map) return;
+    if (!window.L || !el.isConnected || el.clientWidth === 0 || el.clientHeight === 0) { if (tries < 80) setTimeout(() => this.mountMap(el, tries + 1), 120); return; }
+    const L = window.L;
+    const map = L.map(el, { zoomControl: false, center: [64.6, 11.5], zoom: 5 });
+    L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", { maxZoom: 19, attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>' }).addTo(map);
+    L.tileLayer("https://cache.kartverket.no/v1/wmts/1.0.0/topo/default/webmercator/{z}/{y}/{x}.png", { maxZoom: 18, attribution: "© Kartverket", zIndex: 1 }).addTo(map);
+    L.control.zoom({ position: "bottomright", zoomInTitle: "Zoom inn", zoomOutTitle: "Zoom ut" }).addTo(map);
+    for (const t of TOURS) {
+      const m = L.circleMarker([t.lat, t.lng], { radius: 7, color: "#fff", weight: 2, fillColor: GRADE_COLORS[t.grade - 1], fillOpacity: 1 }).addTo(map);
+      m.bindTooltip(t.name, { direction: "top", offset: [0, -8] });
+      m.on("click", () => this.setState({ selected: t.slug }));
+      this.markers[t.slug] = m;
+    }
+    this.routeLayer = L.layerGroup().addTo(map);
+    if (window.ResizeObserver) { const ro = new ResizeObserver(() => { if (this.map) map.invalidateSize(); }); ro.observe(el); map.on("remove", () => ro.disconnect()); }
+    this.map = map;
+    this.syncMap(true);
+  };
+
+  componentDidUpdate(prev, prevState) {
+    if (prevState.selected !== this.state.selected || prevState.hovered !== this.state.hovered || prevState.grade !== this.state.grade || prevState.query !== this.state.query) this.syncMap(false);
+  }
+  componentWillUnmount() { if (this.map) this.map.remove(); }
+
+  visibleTours() {
+    const q = this.state.query.trim().toLowerCase();
+    return TOURS.filter((t) => (!this.state.grade || t.grade === this.state.grade) && (!q || t.name.toLowerCase().includes(q) || t.region.toLowerCase().includes(q)));
+  }
+
+  syncMap(initial) {
+    const L = window.L; if (!L || !this.map) return;
+    const { selected, hovered } = this.state;
+    const vis = new Set(this.visibleTours().map((t) => t.slug));
+    for (const slug in this.markers) {
+      const m = this.markers[slug];
+      const on = slug === selected || slug === hovered;
+      m.setRadius(on ? 11 : 7);
+      m.setStyle({ fillOpacity: vis.has(slug) ? 1 : 0.15, opacity: vis.has(slug) ? 1 : 0.15 });
+      if (on) m.bringToFront();
+    }
+    this.routeLayer.clearLayers();
+    if (selected === "kirketaket") {
+      const shadow = "filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3))";
+      L.polyline(LINE, { color: "#fff", weight: 8, opacity: 0.9, lineCap: "round", lineJoin: "round", interactive: false }).addTo(this.routeLayer);
+      L.polyline(LINE, { color: ACCENT, weight: 3, lineCap: "round", lineJoin: "round", interactive: false }).addTo(this.routeLayer);
+      L.marker(LINE[0], { icon: L.divIcon({ className: "", html: `<svg width="26" height="26" viewBox="0 0 26 26" style="${shadow}"><circle cx="13" cy="13" r="11" fill="#fff" stroke="${ACCENT}" stroke-width="2.5"/><text x="13" y="17.5" text-anchor="middle" font-family="Schibsted Grotesk, system-ui, sans-serif" font-weight="700" font-size="13" fill="${ACCENT}">P</text></svg>`, iconSize: [26, 26], iconAnchor: [13, 13] }), interactive: false }).bindTooltip("Start / parkering", { direction: "top", offset: [0, -12] }).addTo(this.routeLayer);
+      const b = L.latLngBounds(LINE);
+      if (initial) this.map.fitBounds(b, { padding: [80, 80], maxZoom: 14 }); else this.map.flyToBounds(b, { padding: [80, 80], maxZoom: 14, duration: 0.8 });
+    } else if (selected) {
+      const t = TOURS.find((x) => x.slug === selected);
+      if (t) this.map.flyTo([t.lat, t.lng], 12, { duration: 0.8 });
+    }
+  }
+
+  renderVals() {
+    const { selected, hovered, grade, query, fav, done } = this.state;
+    const list = this.visibleTours();
+    return {
+      mountMap: this.mountMap,
+      showList: selected !== "kirketaket",
+      showDetail: selected === "kirketaket",
+      goHome: (e) => { e.preventDefault(); this.setState({ selected: null, grade: 0, query: "" }); if (this.map) this.map.flyTo([64.6, 11.5], 5, { duration: 0.8 }); },
+      closeDetail: () => this.setState({ selected: null }),
+      query, setQuery: (e) => this.setState({ query: e.target.value }),
+      countLabel: `${list.length} ${list.length === 1 ? "tur" : "turer"}`,
+      gradeChips: [0, 1, 2, 3, 4].map((g) => ({
+        label: g ? GRADE_NAMES[g] : "Alle", dot: g ? GRADE_COLORS[g - 1] : "transparent", dotDisplay: g ? "inline-block" : "none",
+        border: grade === g ? "#1c2622" : "rgba(28,38,34,0.18)", bg: grade === g ? "#1c2622" : "transparent", fg: grade === g ? "#f4f1ea" : "#1c2622",
+        pick: () => this.setState({ grade: g }),
+      })),
+      tours: list.map((t) => ({
+        ...t, gradeName: GRADE_NAMES[t.grade], color: GRADE_COLORS[t.grade - 1],
+        bg: selected === t.slug ? "rgba(138,42,91,0.08)" : "transparent",
+        open: () => this.setState({ selected: t.slug }),
+        enter: () => this.setState({ hovered: t.slug }),
+      })),
+      leaveTour: () => this.setState({ hovered: null }),
+      toggleFav: () => this.setState({ fav: !fav }), toggleDone: () => this.setState({ done: !done }),
+      favBg: fav ? "#1c2622" : "rgba(255,253,248,0.92)", favFg: fav ? "#f4f1ea" : "#1c2622", favFill: fav ? "currentColor" : "none",
+      doneBg: done ? "#1c2622" : "rgba(255,253,248,0.92)", doneFg: done ? "#f4f1ea" : "#1c2622",
+      stats: [{ label: "Topp", value: "1439 moh" }, { label: "Høydemeter", value: "↑ 1270 m" }, { label: "Normaltid", value: "5–6 t" }, { label: "Himmelretning", value: "SV" }],
+      legend: GRADE_NAMES.slice(1).map((n, i) => ({ label: n, color: GRADE_COLORS[i] })),
+    };
+  }
+}
+</script>
+</body>
+</html>
