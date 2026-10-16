@@ -37,8 +37,9 @@ def get(url: str, params: dict) -> dict:
     for attempt in range(8):
         req = urllib.request.Request(full, headers={"User-Agent": UA, "Accept": "application/json"})
         try:
-            with urllib.request.urlopen(req, timeout=60) as res:
-                return json.load(res)
+            with urllib.request.urlopen(req, timeout=120) as res:
+                # `strict=False`: Wikidata-etiketter kan inneholde rå kontrolltegn.
+                return json.loads(res.read().decode("utf-8"), strict=False)
         except urllib.error.HTTPError as err:
             if err.code in (429, 503) and attempt < 7:
                 wait = int(err.headers.get("Retry-After") or 0) or 10 * (attempt + 1)
@@ -161,7 +162,13 @@ def main() -> None:
     if cache_path and os.path.exists(cache_path):
         chosen = json.load(open(cache_path, encoding="utf-8"))
     else:
-        peaks = all_peaks()
+        peaks_path = cache_path + ".peaks" if cache_path else None
+        if peaks_path and os.path.exists(peaks_path):
+            peaks = json.load(open(peaks_path, encoding="utf-8"))
+        else:
+            peaks = all_peaks()
+            if peaks_path:
+                json.dump(peaks, open(peaks_path, "w", encoding="utf-8"), ensure_ascii=False)
         print(f"{len(peaks)} peaks with an image in Wikidata", file=sys.stderr)
         chosen = {}
         for t in all_tours:
