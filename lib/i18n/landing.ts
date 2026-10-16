@@ -57,7 +57,6 @@ export interface LandingDict {
   heroLine2: string;
   lede: string;
   ctaMap: string;
-  ctaTours: string;
   /* — data plate — */
   plateLabel: string;
   plateSheet: string;
@@ -94,7 +93,6 @@ const LANDING: Translated<LandingDict> = {
     lede:
       "Kvalitetssikrede toppturer i hele Norge, med rute, høydemeter, bratthet og skredterreng — skrevet for at du skal komme trygt opp og trygt ned.",
     ctaMap: "Se kartet",
-    ctaTours: "Alle turene",
 
     plateLabel: "Toppkart — nøkkeldata",
     plateSheet: "Ark 01 av 04",
@@ -143,7 +141,6 @@ const LANDING: Translated<LandingDict> = {
     lede:
       "Quality-assured ski tours across Norway, with routes, vertical gain, steepness and avalanche terrain — written to get you safely up and safely back down.",
     ctaMap: "See the map",
-    ctaTours: "Every tour",
 
     plateLabel: "Toppkart — key figures",
     plateSheet: "Sheet 01 of 04",

@@ -54,7 +54,6 @@ export interface GuideDict {
   guidePendingBody: string;
   /* — naboturer i samme region — */
   moreInRegion: (region: string) => string;
-  allTours: string;
   /* — GPX file (served by `app/api/gpx/[slug]`, read in the user's GPS app) — */
   gpxNotFound: string;
   gpxDesc: (peak: string, region: string) => string;
@@ -100,7 +99,6 @@ const GUIDE: Translated<GuideDict> = {
     guidePendingTitle: "Turguide",
     guidePendingBody: "Turguiden for denne toppen er under arbeid.",
     moreInRegion: (region) => `Flere turer i ${region}`,
-    allTours: "Se alle turene",
     gpxNotFound: "Fant ikke turen.",
     gpxDesc: (peak, region) =>
       `${peak} (${region}) — oppstigning fra Toppkart, beregnet i Kartverkets terrengmodell. Generert geometri, ikke et innspilt spor: sjekk kart og skredvarsel før du går.`,
@@ -144,7 +142,6 @@ const GUIDE: Translated<GuideDict> = {
     guidePendingTitle: "Tour guide",
     guidePendingBody: "The guide for this peak is still being written.",
     moreInRegion: (region) => `More tours in ${region}`,
-    allTours: "See all the tours",
     gpxNotFound: "Tour not found.",
     gpxDesc: (peak, region) =>
       `${peak} (${region}) — ascent from Toppkart, solved over Kartverket's terrain model. Generated geometry, not a recorded track: check the map and the avalanche forecast before you go.`,

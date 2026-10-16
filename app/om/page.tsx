@@ -73,9 +73,6 @@ export default async function AboutPage() {
                 <Link className="btn btn-primary" href="/">
                   {t.ctaMap}
                 </Link>
-                <Link className="btn btn-secondary" href="/turer">
-                  {t.ctaTours}
-                </Link>
               </div>
             </div>
           </section>

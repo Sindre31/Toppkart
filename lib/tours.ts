@@ -212,27 +212,6 @@ export function toursInRegion(region: string, exclude?: string): Tour[] {
   return TOURS.filter((t) => t.region === region && t.slug !== exclude);
 }
 
-/** Turene gruppert på region, i den rekkefølgen `TOURS` står i — som er nord
- *  til sør, fra Lyngen til Gaustatoppen. Rekkefølgen er redaksjonell og skal
- *  overleve grupperinga; derfor `REGIONS` og ikke en sortert nøkkelliste. */
-export function toursByRegion(): { region: string; tours: Tour[] }[] {
-  return REGIONS.map((region) => ({ region, tours: toursInRegion(region) }));
-}
-
-/** Ankeret en region får på `/turer`: «Sunnmøre» → `sunnmore`.
- *
- *  Fragmentet havner i adressefeltet og i delte lenker, så det holdes til
- *  ASCII framfor å bli prosentkodet til `#Sunnm%C3%B8re`. */
-export function regionAnchor(region: string): string {
-  return region
-    .toLowerCase()
-    .replace(/æ/g, "ae")
-    .replace(/ø/g, "o")
-    .replace(/å/g, "a")
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-|-$/g, "");
-}
-
 /** Every documented way up a tour, the tour's own route first.
  *
  *  A peak can have more than one, and they are not variants of one line:

@@ -4,7 +4,6 @@ import {
   REGIONS,
   TOURS,
   getTour,
-  regionAnchor,
   routeById,
   routeFor,
   routeProfile,
@@ -87,15 +86,6 @@ describe("the tour list", () => {
     }
   });
 
-  it("gives every region an anchor that survives a URL", () => {
-    /* The anchors end up in shared links. A region that ASCII-folds to the same
-       string as another would send both to the same place on `/turer`. */
-    const anchors = REGIONS.map(regionAnchor);
-    for (const anchor of anchors) {
-      expect(anchor).toMatch(/^[a-z0-9-]+$/);
-    }
-    expect(new Set(anchors).size).toBe(REGIONS.length);
-  });
 });
 
 describe("getTour", () => {
