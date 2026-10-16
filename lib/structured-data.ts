@@ -74,27 +74,6 @@ export function breadcrumbJsonLd(trail: { name: string; path?: string }[]) {
   };
 }
 
-/** `/turer` som det den er: en liste over de andre sidene.
- *
- *  Dette er formen Google kaller en «summary page» — hvert ledd peker til sida
- *  som har innholdet, framfor å gjenta innholdet her. Rekkefølgen er den lista
- *  faktisk står i, gruppert på region, så `position` betyr det den ser ut som. */
-export function tourListJsonLd(tours: { slug: string; name: string }[], lang: Lang) {
-  return {
-    "@context": "https://schema.org",
-    "@type": "ItemList",
-    name: SITE.name,
-    inLanguage: htmlLang(lang),
-    numberOfItems: tours.length,
-    itemListElement: tours.map((tour, i) => ({
-      "@type": "ListItem",
-      position: i + 1,
-      name: tour.name,
-      url: canonicalUrl(`/tur/${tour.slug}`),
-    })),
-  };
-}
-
 /** En turguide: artikkelen og fjellet den handler om. Hele guiden er åpen
  *  for alle, så `isAccessibleForFree` er sann. */
 export function tourJsonLd({

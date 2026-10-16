@@ -5,7 +5,7 @@ import { TOURS } from "@/lib/tours";
 
 /** `/sitemap.xml` — listen Search Console skal fôres med.
  *
- *  Forsida (kartet), turlista, tursidene, om-sida og de to juridiske sidene.
+ *  Forsida (kartet), tursidene, om-sida og de to juridiske sidene.
  *  `/kart` står ikke her: det er den samme sida som `/`, og canonical peker dit.
  *  `/logg-inn` og `/admin/*` hører ikke hjemme i et sitemap — de er
  *  driftssider, og de er merket `noindex` der de defineres.
@@ -20,7 +20,6 @@ import { TOURS } from "@/lib/tours";
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     { url: canonicalUrl("/"), changeFrequency: "weekly", priority: 1 },
-    { url: canonicalUrl("/turer"), changeFrequency: "weekly", priority: 0.9 },
     ...TOURS.map((tour) => ({
       url: canonicalUrl(`/tur/${tour.slug}`),
       changeFrequency: "monthly" as const,

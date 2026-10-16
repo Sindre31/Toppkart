@@ -59,9 +59,6 @@ export function NavLinks({ lang, current }: { lang: Lang; current?: string }) {
 
   return (
     <>
-      <Link className="nav-link" href="/turer" aria-current={here("/turer")}>
-        {t.tours}
-      </Link>
       <Link className="nav-link" href="/" aria-current={here("/")}>
         {t.map}
       </Link>
@@ -95,7 +92,6 @@ export function SiteFooter({
       {/* Ordmerket sto først i rada, som avsender. Det står allerede øverst på
           hver side, og en bunnlinje som gjentar hvem nettstedet er, rett før
           lenkene til vilkårene, er den ene tingen her ingen skal noe sted med. */}
-      <Link href="/turer">{t.footerTours}</Link>
       <Link href="/">{t.footerMap}</Link>
       <Link href="/vilkar">{t.footerTerms}</Link>
       <Link href="/personvern">{t.footerPrivacy}</Link>

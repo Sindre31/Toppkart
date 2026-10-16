@@ -15,8 +15,10 @@ and the rest of `docs/` are in English for whoever maintains it.
   Readers never sign in.
 - **Leaflet + Kartverket** — the full-screen map on `/kart`, over Kartverket's topographic WMTS
   (`cache.kartverket.no`, the `webmercator` grid, zoom 18 at the top). Open data under CC BY 4.0,
-  so «© Kartverket» stays visible in the corner. Coverage is Norway and only Norway, which is
-  right for the product and means the map is blank if you pan out of the country.
+  so «© Kartverket» stays visible in the corner. Coverage is Norway and only Norway — the tiles
+  are transparent outside it — so OpenStreetMap's standard tiles sit underneath and fill in the
+  neighbouring countries and the sea. OSM requires its credit in the corner too, and forbids bulk
+  prefetching, so neither offline saving nor `prefetchTiles` touches those tiles.
 - **Varsom and MET Norway** — today's avalanche danger (`lib/avalanche.ts`) and a three-day
   forecast for the summit (`lib/weather.ts`, Locationforecast 2.0). The danger level is in the tour
   panel on `/kart`; the forecast (`components/weather/WeatherPanel.tsx`) is there and on the guide.
@@ -87,9 +89,8 @@ To run against real services, copy `.env.example` to `.env.local` and fill in th
 app/
   globals.css            The "Industry" design system — source of truth for every token
   layout.tsx             Fonts, <SiteChrome>, <Feedback>, <SupportPrompt>, metadata
-  page.tsx               / — landing
-  kart/                  /kart — full-screen Leaflet map, list panel, detail panel
-  turer/                 /turer — every tour, grouped by region. The indexable list
+  kart/                  / and /kart — full-screen Leaflet map, list panel, detail panel
+  om/                    /om — about Toppkart, support with Vipps
   tur/[slug]/            /tur/[slug] — tour guide, open in full
   mine-turer/            /mine-turer — favourites and done tours, read from the browser
   logg-inn/              /logg-inn — Google sign-in for /admin, linked from nowhere
@@ -138,17 +139,16 @@ docs/
 
 | Route | What it is | Prototype |
 |---|---|---|
-| `/` | Landing page: hero, data plate, what a guide contains, support with Vipps | `Landing.dc.html` |
-| `/kart` | The map — tour list, grade/region/aspect/vertical filters, «Nær meg» (the reader's position on the map and the list sorted by distance, never sent to the server), detail panel with avalanche danger, the summit forecast, the route picker and the link to the guide. `?tur=<slug>` opens a tour, `&rute=<id>` a specific route | `kart.html` |
-| `/turer` | Every tour, grouped by region. Plain links, no map — the page a crawler can read | — |
+| `/om` | About page: hero, data plate, what a guide contains, support with Vipps | `Landing.dc.html` |
+| `/`, `/kart` | The map (`/` is rewritten to `/kart`; canonical is `/`) — tour list, grade/region/aspect/vertical filters, «Nær meg» (the reader's position on the map and the list sorted by distance, never sent to the server), detail panel with avalanche danger, the summit forecast, the route picker and the link to the guide. `?tur=<slug>` opens a tour, `&rute=<id>` a specific route | `kart.html` |
 | `/tur/[slug]` | Tour guide: stats, summit forecast, route map, elevation profile, ascent/descent, avalanche terrain | `Turguide Kirketaket.dc.html` |
 | `/mine-turer` | Favourites and done tours, with the vertical metres done. Stored in the browser | — |
 | `/logg-inn` | Google sign-in for `/admin`. Linked from nowhere | `Logg inn.dc.html` |
 | `/vilkar`, `/personvern` | Terms and privacy. Copy lives in `lib/i18n/legal.ts`; bump `LEGAL_UPDATED` when you edit a paragraph | — |
 | `/admin/tilbakemeldinger` | What people wrote in the feedback dialog. `ADMIN_EMAILS` only; 404 for everyone else | — |
 
-`/betaling` and `/min-side` no longer exist; `next.config.ts` redirects them to `/` and
-`/mine-turer` so old links land somewhere.
+`/betaling`, `/min-side` and `/turer` no longer exist; `next.config.ts` redirects them to `/`,
+`/mine-turer` and `/` so old links land somewhere.
 
 ## Design system
 

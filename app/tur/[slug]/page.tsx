@@ -17,11 +17,10 @@ import { guideSlugs } from "@/lib/guides";
 import { OG_IMAGE } from "@/lib/seo";
 import { breadcrumbJsonLd, tourJsonLd } from "@/lib/structured-data";
 import { getLang } from "@/lib/i18n/server";
-import { commonDict } from "@/lib/i18n/common";
 import { getLocalizedGuide, localizeTour, localizeTours, teaserFor } from "@/lib/i18n/content";
 import { elevationLabel, gradeLabel } from "@/lib/i18n/format";
 import { guideDict } from "@/lib/i18n/guide";
-import { getTour, regionAnchor, routeProfile, routesFor, toursInRegion } from "@/lib/tours";
+import { getTour, routeProfile, routesFor, toursInRegion } from "@/lib/tours";
 import styles from "./guide.module.css";
 
 /** Turguiden. Alt er åpent for alle — kart, nøkkeltall, høydeprofil,
@@ -132,18 +131,12 @@ export default async function TourGuidePage({ params }: { params: Promise<{ slug
     <div className="shell">
       {/* Det samme sida viser, i den formen en søkerobot ikke trenger å tolke:
           artikkelen og fjellet med koordinater og høyde. Se
-          `lib/structured-data.ts`.
-
-          Brødsmulene går innom regionen, fordi `/turer#lyngen` er en ekte
-          destinasjon lista allerede lenker til fra hoppmenyen sin, ikke et
-          mellomledd oppfunnet for anledningen. */}
+          `lib/structured-data.ts`. */}
       <JsonLd
         data={[
           tourJsonLd({ tour, guide, lang }),
           breadcrumbJsonLd([
             { name: SITE.name, path: "/" },
-            { name: commonDict(lang).tours, path: "/turer" },
-            { name: tour.region, path: `/turer#${regionAnchor(source.region)}` },
             { name: tour.name },
           ]),
         ]}
@@ -325,9 +318,6 @@ export default async function TourGuidePage({ params }: { params: Promise<{ slug
                 </li>
               ))}
             </ul>
-            <Link className="btn btn-secondary" href="/turer">
-              {t.allTours}
-            </Link>
           </section>
         )}
 

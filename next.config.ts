@@ -12,6 +12,8 @@ const nextConfig: NextConfig = {
     return [
       { source: "/betaling", destination: "/", permanent: true },
       { source: "/min-side", destination: "/mine-turer", permanent: true },
+      /* Turlista er borte; kartet er lista. */
+      { source: "/turer", destination: "/", permanent: true },
     ];
   },
 
