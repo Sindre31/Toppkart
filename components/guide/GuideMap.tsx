@@ -6,6 +6,7 @@ import { Blueprint } from "@/components/Blueprint";
 import { distanceLabel } from "@/components/guide/RouteMap";
 import type { Lang } from "@/lib/i18n";
 import { guideDict } from "@/lib/i18n/guide";
+import styles from "./GuideMap.module.css";
 
 /** Kartet i turguiden: ruta opp over Kartverket, og leseren kan dra og zoome.
  *
@@ -14,10 +15,10 @@ import { guideDict } from "@/lib/i18n/guide";
  *  ikke et arbeidsverktøy.
  *
  *  Rammen og figurteksten rendres av serveren; bare kartet inni venter på
- *  Leaflet. Høyden er låst av forholdet 3:2, så sida flytter seg ikke når
- *  kartet kommer. `isolation` holder Leaflets egne z-indekser (kontrollene
- *  ligger på 1000) inne i figuren, så de ikke legger seg over den klebrige
- *  menyen når man ruller.
+ *  Leaflet. Høyden er låst av et sideforhold (`GuideMap.module.css`), så sida
+ *  flytter seg ikke når kartet kommer. `isolation` holder Leaflets egne
+ *  z-indekser (kontrollene ligger på 1000) inne i figuren, så de ikke legger
+ *  seg over den klebrige menyen og innholdslista når man ruller.
  *
  *  Offline: `planTourTiles` lagrer Kartverkets fliser langs ruta på nivå
  *  10–15, og chunken med Leaflet følges fra sida av `staticRefs`, så kartet
@@ -50,13 +51,7 @@ export function GuideMap({
       <div
         role="region"
         aria-label={t.routeMapAria(peak, distance, gainM)}
-        style={{
-          position: "relative",
-          width: "100%",
-          aspectRatio: "3 / 2",
-          isolation: "isolate",
-          background: "#fff",
-        }}
+        className={styles.frame}
       >
         {points.length >= 2 ? <GuideMapCanvas points={points} lang={lang} /> : null}
       </div>

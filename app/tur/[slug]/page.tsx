@@ -1,18 +1,22 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { Download, Map as MapIcon } from "lucide-react";
 
 import { Blueprint } from "@/components/Blueprint";
 import { CapsText } from "@/components/CapsText";
 import { JsonLd } from "@/components/JsonLd";
 import { SiteNav, SiteFooter } from "@/components/SiteChrome";
 import { ElevationProfile } from "@/components/guide/ElevationProfile";
-import { GuideSections } from "@/components/guide/GuideSections";
+import { GUIDE_ANCHORS, GuideHeading, GuideSections } from "@/components/guide/GuideSections";
+import { GuideToc } from "@/components/guide/GuideToc";
+import { distanceLabel } from "@/components/guide/RouteMap";
 import { OfflineSave } from "@/components/guide/OfflineSave";
 import { GuideMarks } from "@/components/marks/GuideMarks";
 import { GuideMap } from "@/components/guide/GuideMap";
 import { PeakPhoto } from "@/components/PeakPhoto";
 import { WeatherPanel } from "@/components/weather/WeatherPanel";
+import { AvalanchePanel } from "@/app/kart/AvalanchePanel";
 import { SITE } from "@/lib/config";
 import { guideSlugs } from "@/lib/guides";
 import { OG_IMAGE } from "@/lib/seo";
@@ -122,6 +126,8 @@ export default async function TourGuidePage({ params }: { params: Promise<{ slug
   const mapHref = `/?tur=${tour.slug}`;
   const neighbours = localizeTours(toursInRegion(source.region, source.slug), lang);
 
+  const otherRoutes = routesFor(source).slice(1);
+
   const stats: { label: string; value: string }[] = [
     { label: t.statSummit, value: elevationLabel(tour.summitM, lang) },
     { label: t.statVertical, value: `↑ ${tour.verticalM} m` },
@@ -129,6 +135,22 @@ export default async function TourGuidePage({ params }: { params: Promise<{ slug
     { label: t.statGrade, value: gradeLabel(tour.grade, lang) },
     { label: t.statAspect, value: tour.aspect },
   ];
+
+  /* Rekkefølgen er den samme som spørsmålene kommer i: kan jeg gå i dag, hvor
+     går ruta, hvordan kommer jeg opp, hvordan kommer jeg ned, hva må jeg passe
+     meg for. Nummeret i lista og i overskriftene følger av plassen her. */
+  const toc = [
+    { id: GUIDE_ANCHORS.conditions, label: t.conditionsTitle },
+    ...(route ? [{ id: GUIDE_ANCHORS.route, label: t.routeTitle }] : []),
+    ...(guide
+      ? [
+          { id: GUIDE_ANCHORS.ascent, label: t.ascentTitle },
+          { id: GUIDE_ANCHORS.descent, label: t.descentTitle },
+          { id: GUIDE_ANCHORS.avalanche, label: t.avalancheTitle },
+        ]
+      : []),
+  ];
+  const numOf = (id: string) => toc.findIndex((item) => item.id === id) + 1;
 
   return (
     <div className="shell">
@@ -148,40 +170,30 @@ export default async function TourGuidePage({ params }: { params: Promise<{ slug
       <SiteNav lang={lang} />
 
       {/* `data-access` er det «Lagre offline» sjekker i sida den henter. */}
-      <main className="page page-narrow" style={{ paddingBottom: 64 }} data-access="open">
-        <header style={{ padding: "48px 0 32px" }}>
-          <Link href={mapHref} style={{ fontSize: 13, textDecoration: "none" }}>
+      <main className={`page page-narrow ${styles.main}`} data-access="open">
+        <header className={styles.header}>
+          <Link href={mapHref} className={styles.back}>
             {t.backToMap}
           </Link>
-          <div style={{ display: "flex", gap: 10, alignItems: "center", marginTop: 20, flexWrap: "wrap" }}>
-            <span
-              style={{
-                fontSize: 13,
-                letterSpacing: "0.08em",
-                textTransform: "uppercase",
-                fontWeight: 600,
-                color: "var(--color-accent-700)",
-              }}
-            >
+          <div className={styles.tags}>
+            <span className={styles.region}>
               <CapsText>{tour.region}</CapsText>
             </span>
-            <span
-              className="tag tag-accent"
-              style={{ letterSpacing: "0.06em", textTransform: "uppercase", fontWeight: 600 }}
-            >
-              {gradeLabel(tour.grade, lang)}
-            </span>
-            <span className="tag tag-neutral" style={{ letterSpacing: "0.06em", textTransform: "uppercase" }}>
+            <span className={`tag tag-accent ${styles.tag}`}>{gradeLabel(tour.grade, lang)}</span>
+            <span className={`tag tag-neutral ${styles.tag}`}>
               {t.seasonPrefix} {tour.season}
             </span>
           </div>
-          <h1 className="display" style={{ fontSize: "clamp(44px, 6vw, 76px)", margin: "10px 0 0 -0.052em" }}>
+          <h1 className={`display ${styles.title}`}>
             <CapsText>{tour.name}</CapsText>
           </h1>
-          <p className="lede" style={{ margin: "18px 0 0" }}>
-            {guide?.intro ?? tour.teaser}
-          </p>
-          <div style={{ display: "flex", gap: 10, flexWrap: "wrap", marginTop: 22 }}>
+          <p className={`lede ${styles.lede}`}>{guide?.intro ?? tour.teaser}</p>
+
+          {/* To rader med to slags handlinger. Den første er det man tar med
+              seg på tur: fila, kartet og en kopi uten dekning. Den andre er
+              leserens egen logg. Før sto alle fem på én rad med lik vekt, og
+              på en telefon brøt de om tilfeldig. */}
+          <div className={styles.actions}>
             {/* `target="_blank"` selv om `download` allerede sier at dette er
                en fil og ikke en side.
 
@@ -204,12 +216,13 @@ export default async function TourGuidePage({ params }: { params: Promise<{ slug
               target="_blank"
               rel="noopener"
             >
+              <Download size={15} strokeWidth={1.75} aria-hidden="true" />
               {t.downloadGpx}
             </a>
             <Link className="btn btn-secondary" href={mapHref}>
+              <MapIcon size={15} strokeWidth={1.5} aria-hidden="true" />
               {t.openInMap}
             </Link>
-            <GuideMarks slug={tour.slug} lang={lang} />
             {route ? (
               <OfflineSave
                 slug={tour.slug}
@@ -220,33 +233,22 @@ export default async function TourGuidePage({ params }: { params: Promise<{ slug
               />
             ) : null}
           </div>
+          <div className={styles.marks}>
+            <GuideMarks slug={tour.slug} lang={lang} />
+          </div>
         </header>
 
         {photo ? (
-          <section style={{ padding: "0 0 32px" }}>
+          <section className={styles.block}>
             <PeakPhoto photo={photo} peak={tour.name} lang={lang} aspect="21 / 9" priority />
           </section>
         ) : null}
 
-        <section style={{ padding: "0 0 40px" }}>
+        <section className={styles.block}>
           <Blueprint>
-            {/* `min(150px, 100%)` so the two stat columns can fall below their
-                floor on a narrow phone instead of widening the page. */}
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "repeat(auto-fit, minmax(min(150px, 100%), 1fr))",
-              }}
-            >
+            <div className={styles.stats}>
               {stats.map((s) => (
-                <div
-                  key={s.label}
-                  style={{
-                    padding: "14px 18px",
-                    borderRight: "1px solid var(--color-divider)",
-                    borderBottom: "1px solid var(--color-divider)",
-                  }}
-                >
+                <div key={s.label} className={styles.stat}>
                   <div className="stat-l">
                     <CapsText>{s.label}</CapsText>
                   </div>
@@ -259,23 +261,36 @@ export default async function TourGuidePage({ params }: { params: Promise<{ slug
           </Blueprint>
         </section>
 
-        {/* Været på toppen, rett under nøkkeltallene: det er det neste man
-            spør om etter «hvor høyt og hvor langt» — og det avgjør om turen
-            blir i dag. Åpent for alle, som på kartet. */}
-        <section style={{ padding: "0 0 40px" }}>
-          <Blueprint style={{ padding: "18px 20px" }}>
-            <WeatherPanel
-              slug={tour.slug}
-              lat={tour.lat}
-              lng={tour.lng}
-              lang={lang}
-              heading="h2"
-            />
-          </Blueprint>
+        <GuideToc items={toc} label={t.tocLabel} />
+
+        {/* Forholdene først, rett under nøkkeltallene: «kan jeg gå i dag» er
+            det neste man spør om etter «hvor høyt og hvor langt». Skredfaren
+            sto før bare i kartpanelet, så den som kom rett inn på guiden — fra
+            et søk eller en delt lenke — fikk været og ikke varselet. */}
+        <section id={GUIDE_ANCHORS.conditions} className={styles.section}>
+          <GuideHeading num={numOf(GUIDE_ANCHORS.conditions)}>{t.conditionsTitle}</GuideHeading>
+          <div className={styles.conditions}>
+            <Blueprint style={{ padding: "18px 20px" }}>
+              <AvalanchePanel slug={tour.slug} lang={lang} heading="h3" className={styles.panel} />
+            </Blueprint>
+            <Blueprint style={{ padding: "18px 20px" }}>
+              <WeatherPanel
+                slug={tour.slug}
+                lat={tour.lat}
+                lng={tour.lng}
+                lang={lang}
+                heading="h3"
+              />
+            </Blueprint>
+          </div>
+          <p className="note" style={{ margin: "16px 0 0" }}>
+            {t.conditionsNote}
+          </p>
         </section>
 
-        <section className={styles.split}>
-          {route && (
+        {route ? (
+          <section id={GUIDE_ANCHORS.route} className={styles.section}>
+            <GuideHeading num={numOf(GUIDE_ANCHORS.route)}>{t.routeTitle}</GuideHeading>
             <GuideMap
               peak={tour.name}
               points={route.points}
@@ -286,11 +301,63 @@ export default async function TourGuidePage({ params }: { params: Promise<{ slug
             >
               <Link href={mapHref}>{t.routeMapCaptionLink}</Link>.
             </GuideMap>
-          )}
 
-          {guide ? (
-            <ElevationProfile profile={guide.elevationProfile} lang={lang} />
-          ) : (
+            <div className={styles.split}>
+              {guide ? <ElevationProfile profile={guide.elevationProfile} lang={lang} /> : null}
+
+              {/* Det man trenger for å finne fram til start: hvor, hvor langt og
+                  hvor mye opp. Og de andre veiene opp, som ellers bare fantes i
+                  rutevelgeren på kartet. */}
+              <Blueprint style={{ padding: "18px 20px" }}>
+                <dl className={styles.facts}>
+                  <div>
+                    <dt className="stat-l">
+                      <CapsText>{t.routeStart}</CapsText>
+                    </dt>
+                    <dd>{route.trailhead}</dd>
+                  </div>
+                  <div>
+                    <dt className="stat-l">
+                      <CapsText>{t.routeLength}</CapsText>
+                    </dt>
+                    <dd>{distanceLabel(route.distanceM, lang)}</dd>
+                  </div>
+                  <div>
+                    <dt className="stat-l">
+                      <CapsText>{t.routeGain}</CapsText>
+                    </dt>
+                    <dd>↑ {route.gainM} m</dd>
+                  </div>
+                </dl>
+                {otherRoutes.length > 0 ? (
+                  <>
+                    <h3 className={styles.otherHead}>
+                      <CapsText>{t.otherRoutesTitle}</CapsText>
+                    </h3>
+                    <ul className={styles.otherList}>
+                      {otherRoutes.map((r) => (
+                        <li key={r.id}>
+                          <span className={styles.otherName}>{r.name}</span>
+                          <span className="note">
+                            ↑ {r.gainM} m · {distanceLabel(r.distanceM, lang)} · {r.trailhead}
+                          </span>
+                          <Link href={`${mapHref}&rute=${encodeURIComponent(r.id)}`}>
+                            {t.otherRouteLink} →
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </>
+                ) : null}
+              </Blueprint>
+            </div>
+          </section>
+        ) : null}
+
+        {guide ? (
+          <GuideSections guide={guide} lang={lang} firstNum={numOf(GUIDE_ANCHORS.ascent)} />
+        ) : (
+          <section className={styles.section}>
             <Blueprint style={{ padding: "18px 20px" }}>
               <h2 style={{ fontSize: 18, letterSpacing: "0.02em", textTransform: "uppercase", margin: "0 0 12px" }}>
                 {t.guidePendingTitle}
@@ -299,10 +366,8 @@ export default async function TourGuidePage({ params }: { params: Promise<{ slug
                 {t.guidePendingBody}
               </p>
             </Blueprint>
-          )}
-        </section>
-
-        {guide && <GuideSections guide={guide} lang={lang} />}
+          </section>
+        )}
 
         {/* Naboturene. Regionen er den eneste slektskapen datasettet kjenner, og
             den er nok: den som leser om Slogen er som regel i ferd med å legge

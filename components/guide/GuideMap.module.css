@@ -1,0 +1,16 @@
+/* Kartrammen i turguiden. Kartet har en hel rad for seg selv, så det er bredt:
+   16:9 på en skjerm. På en telefon ville det samme forholdet gjort det lavere
+   enn det var før, så der er det 4:5 — høyt nok til at hele ruta får plass med
+   terrenget rundt, og fortsatt lavere enn skjermen, så man kan rulle forbi. */
+
+.frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  isolation: isolate;
+  background: #fff;
+}
+
+@media (max-width: 620px) {
+  .frame { aspect-ratio: 4 / 5; }
+}

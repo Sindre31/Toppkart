@@ -1,8 +1,9 @@
-import { Blueprint, SectionKicker } from "@/components/Blueprint";
+import { Blueprint } from "@/components/Blueprint";
 import { CapsText } from "@/components/CapsText";
 import type { Lang } from "@/lib/i18n";
 import { guideDict } from "@/lib/i18n/guide";
 import type { TourGuide } from "@/lib/types";
+import styles from "./GuideSections.module.css";
 
 const VARSOM = "varsom.no";
 
@@ -25,42 +26,84 @@ function AvalancheBody({ body, linkTitle }: { body: string; linkTitle: string })
 
 function Paragraphs({ items }: { items: string[] }) {
   return (
-    <div style={{ maxWidth: "68ch", fontSize: 15, lineHeight: "24px" }}>
+    <div className={styles.prose}>
       {items.map((text, i) => (
-        <p key={i} style={{ margin: i === items.length - 1 ? 0 : "0 0 16px" }}>
-          {text}
-        </p>
+        <p key={i}>{text}</p>
       ))}
     </div>
   );
 }
 
-/** 01 Oppstigning · 02 Nedkjøring · 03 Skredterreng — hele guideteksten.
+/** Ankrene i guiden. Innholdslista (`GuideToc`) og seksjonene leser dem
+ *  herfra, så en lenke aldri peker på et id som er omdøpt. Norske ord også på
+ *  engelsk: en delt lenke til `#nedkjoring` skal virke uansett språk. */
+export const GUIDE_ANCHORS = {
+  conditions: "forhold",
+  route: "rute",
+  ascent: "oppstigning",
+  descent: "nedkjoring",
+  avalanche: "skredterreng",
+} as const;
+
+/** Seksjonsoverskrift i guiden: nummeret og tittelen som en ekte `h2`, over en
+ *  hårstrek.
+ *
+ *  Tidligere sto tittelen som en 13px-kicker («01 · OPPSTIGNING») — riktig som
+ *  etikett på en side man leser fra toppen, men for liten til å finne igjen når
+ *  man ruller tilbake etter nedkjøringen. Nummeret er det samme som i
+ *  innholdslista, så de to peker på hverandre. */
+export function GuideHeading({ num, children }: { num: number; children: string }) {
+  return (
+    <>
+      <h2 className={styles.heading}>
+        <span className={styles.num}>{String(num).padStart(2, "0")}</span>
+        {/* Egen `span`: overskriften er en flex-rad, og uten den ble hver
+            bit `CapsText` deler teksten i («NEDKJ», «Ø», «RING») et eget
+            flex-element med mellomrom imellom. */}
+        <span>
+          <CapsText>{children}</CapsText>
+        </span>
+      </h2>
+      <hr className={styles.rule} />
+    </>
+  );
+}
+
+/** Oppstigning · Nedkjøring · Skredterreng — hele guideteksten.
  *
  *  `guide` is expected to be localised already (`getLocalizedGuide`); the
- *  headings come from the dictionary. */
-export function GuideSections({ guide, lang }: { guide: TourGuide; lang: Lang }) {
+ *  headings come from the dictionary. `firstNum` is the number of the first of
+ *  the three, since the page puts its own sections ahead of them. */
+export function GuideSections({
+  guide,
+  lang,
+  firstNum,
+}: {
+  guide: TourGuide;
+  lang: Lang;
+  firstNum: number;
+}) {
   const t = guideDict(lang);
   return (
     <>
-      <section style={{ padding: "0 0 40px" }}>
-        <SectionKicker>01 · {t.ascentTitle}</SectionKicker>
+      <section id={GUIDE_ANCHORS.ascent} className={styles.section}>
+        <GuideHeading num={firstNum}>{t.ascentTitle}</GuideHeading>
         <Paragraphs items={guide.ascent} />
       </section>
 
-      <section style={{ padding: "0 0 40px" }}>
-        <SectionKicker>02 · {t.descentTitle}</SectionKicker>
+      <section id={GUIDE_ANCHORS.descent} className={styles.section}>
+        <GuideHeading num={firstNum + 1}>{t.descentTitle}</GuideHeading>
         <Paragraphs items={guide.descent} />
       </section>
 
-      <section style={{ padding: "0 0 40px" }}>
-        <SectionKicker>03 · {t.avalancheTitle}</SectionKicker>
+      <section id={GUIDE_ANCHORS.avalanche} className={styles.section}>
+        <GuideHeading num={firstNum + 2}>{t.avalancheTitle}</GuideHeading>
         <div className="grid-auto" style={{ gap: "clamp(16px, 2.5vw, 32px)" }}>
           {guide.avalanche.map((cell) => (
             <Blueprint key={cell.title} style={{ padding: "18px 20px" }}>
-              <h2 style={{ fontSize: 17, letterSpacing: "0.02em", textTransform: "uppercase", margin: "0 0 8px" }}>
+              <h3 style={{ fontSize: 17, letterSpacing: "0.02em", textTransform: "uppercase", margin: "0 0 8px" }}>
                 <CapsText>{cell.title}</CapsText>
-              </h2>
+              </h3>
               <p
                 style={{
                   fontSize: 14,

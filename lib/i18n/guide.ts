@@ -41,6 +41,16 @@ export interface GuideDict {
   /** Kartverkets lisens (CC BY 4.0) krever synlig kreditering på flisene
    *  figuren tegner over. Står i figurteksten uansett om resten gjør det. */
   routeMapCredit: string;
+  /* — innholdslista som står klistret øverst mens man leser — */
+  tocLabel: string;
+  conditionsTitle: string;
+  conditionsNote: string;
+  routeTitle: string;
+  routeStart: string;
+  routeLength: string;
+  routeGain: string;
+  otherRoutesTitle: string;
+  otherRouteLink: string;
   /* — guide sections — */
   ascentTitle: string;
   descentTitle: string;
@@ -89,6 +99,16 @@ const GUIDE: Translated<GuideDict> = {
       `Ruta opp fra ${trailhead} — ${distance}, ${gain} høydemeter. Linja er beregnet i Kartverkets terrengmodell, ikke et innspilt spor.`,
     routeMapCaptionLink: "Se turen i kartet",
     routeMapCredit: "Kartgrunnlag © Kartverket.",
+    tocLabel: "Innhold i guiden",
+    conditionsTitle: "Forhold i dag",
+    conditionsNote:
+      "Sjekk skredvarselet og været rett før du går — begge kan endre seg i løpet av dagen.",
+    routeTitle: "Ruta",
+    routeStart: "Start",
+    routeLength: "Lengde",
+    routeGain: "Stigning",
+    otherRoutesTitle: "Andre ruter opp",
+    otherRouteLink: "Se i kartet",
     ascentTitle: "Oppstigning",
     descentTitle: "Nedkjøring",
     avalancheTitle: "Skredterreng",
@@ -132,6 +152,16 @@ const GUIDE: Translated<GuideDict> = {
       `The ascent from ${trailhead} — ${distance}, ${gain} metres of ascent. The line is solved over Kartverket's terrain model, not a recorded track.`,
     routeMapCaptionLink: "See the tour on the map",
     routeMapCredit: "Map data © Kartverket.",
+    tocLabel: "In this guide",
+    conditionsTitle: "Conditions today",
+    conditionsNote:
+      "Check the avalanche forecast and the weather right before you go — both can change during the day.",
+    routeTitle: "The route",
+    routeStart: "Start",
+    routeLength: "Distance",
+    routeGain: "Ascent",
+    otherRoutesTitle: "Other ways up",
+    otherRouteLink: "See on the map",
     ascentTitle: "Ascent",
     descentTitle: "Descent",
     avalancheTitle: "Avalanche terrain",

@@ -45,6 +45,8 @@ export interface Dict {
   stAsp: string;
   stSea: string;
   openGuide: string;
+  /** Den korte varianten, i linja nederst på mobilkartet. */
+  guideShort: string;
   /* — strings the prototype held inline — */
   schematicNote: string;
   startTooltip: string;
@@ -130,6 +132,7 @@ const MAP: Translated<Dict> = {
     stAsp: "Himmelretning",
     stSea: "Sesong",
     openGuide: "Åpne turguiden",
+    guideShort: "Turguide",
     schematicNote:
       "Rutelinjene er beregnet i Kartverkets terrengmodell. Generert geometri — ikke innspilte spor.",
     startTooltip: "Start / parkering",
@@ -198,6 +201,7 @@ const MAP: Translated<Dict> = {
     stAsp: "Aspect",
     stSea: "Season",
     openGuide: "Open the guide",
+    guideShort: "Guide",
     schematicNote:
       "The route lines are solved over Kartverket's terrain model. Generated geometry — not recorded tracks.",
     startTooltip: "Trailhead / parking",

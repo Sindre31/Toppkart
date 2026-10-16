@@ -705,6 +705,14 @@ export default function MapView({
             </span>
             <span className={s.peakBarCta}>{t.showInfo}</span>
           </button>
+          {/* Rett til guiden herfra. Før gikk veien om «Vis info», panelet og
+              en knapp lenger ned i det — fire trykk fra fjellet man trykket på
+              til guiden om det. */}
+          {selected.hasGuide ? (
+            <Link className={s.peakBarGuide} href={`/tur/${selected.slug}`}>
+              {t.guideShort} →
+            </Link>
+          ) : null}
           <button
             type="button"
             className={s.peakBarClose}

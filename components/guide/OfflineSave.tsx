@@ -8,7 +8,7 @@
  *  som dukker opp. */
 
 import { useEffect, useState } from "react";
-import { Check, Download } from "lucide-react";
+import { Check, WifiOff } from "lucide-react";
 
 import type { Lang } from "@/lib/i18n";
 import { guideDict } from "@/lib/i18n/guide";
@@ -118,7 +118,7 @@ export function OfflineSave({
           title={t.offlineHint}
           aria-live="polite"
         >
-          <Download size={14} strokeWidth={1.5} aria-hidden="true" />
+          <WifiOff size={14} strokeWidth={1.5} aria-hidden="true" />
           {state.kind === "saving" ? t.savingOffline(state.percent) : t.saveOffline}
         </button>
       )}
