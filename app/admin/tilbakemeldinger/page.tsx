@@ -139,7 +139,7 @@ export default async function TilbakemeldingerPage() {
       <main className="page page-narrow" style={{ width: "100%" }}>
         <header style={{ padding: "48px 0 8px" }}>
           <span className="kicker">Admin</span>
-          <h1 className="display" style={{ fontSize: "clamp(48px, 6vw, 72px)", margin: "8px 0 0 -0.03em" }}>
+          <h1 className="display" style={{ fontSize: "clamp(38px, 6vw, 72px)", margin: "8px 0 0 -0.03em" }}>
             Tilbakemeldinger
           </h1>
           <p className="note" style={{ margin: "14px 0 0" }}>

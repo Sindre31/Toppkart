@@ -417,6 +417,12 @@
   gap: 10px;
 }
 
+/* På de smaleste telefonene (320–380px) blir to kort i bredden så trange at
+   værteksten brytes ett ord per linje. Da står de under hverandre. */
+@media (max-width: 380px) {
+  .conditions { grid-template-columns: minmax(0, 1fr); }
+}
+
 .schematic { font-size: 12px; line-height: 17px; color: rgba(28, 38, 34, 0.5); margin: 0; }
 
 /* — kartet — */

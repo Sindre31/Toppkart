@@ -22,7 +22,7 @@ export function LegalDocument({ lang, doc }: { lang: Lang; doc: LegalDoc }) {
       <main className="page page-narrow" style={{ width: "100%" }}>
         <header style={{ padding: "48px 0 8px" }}>
           <span className="kicker">{doc.kicker}</span>
-          <h1 className="display" style={{ fontSize: "clamp(48px, 6vw, 72px)", margin: "8px 0 0 -0.03em" }}>
+          <h1 className="display" style={{ fontSize: "clamp(38px, 6vw, 72px)", margin: "8px 0 0 -0.03em" }}>
             {doc.title}
           </h1>
           <p className="lede" style={{ margin: "16px 0 0" }}>

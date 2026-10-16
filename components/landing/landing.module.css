@@ -9,8 +9,10 @@
    rullefeltet som bredde og har dratt denne siden ut i horisontal scroll før. */
 .hero {
   position: relative;
-  padding: 96px clamp(20px, 5vw, 64px) 72px;
-  margin-inline: calc(-1 * clamp(20px, 5vw, 64px));
+  /* Ut til kanten av `.page`, som har sin sidemarg i padding — samme mål
+     som der, ellers stikker seksjonen ut og sida får sideveis rulling. */
+  padding: 96px clamp(20px, 4vw, 48px) 72px;
+  margin-inline: calc(-1 * clamp(20px, 4vw, 48px));
 }
 
 .heroImage {
