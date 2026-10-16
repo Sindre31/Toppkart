@@ -40,6 +40,7 @@ import { AvalancheCard, WeatherCard } from "@/components/conditions/ConditionCar
 import { MarkButtons } from "@/components/marks/MarkButtons";
 import { useTourMarks } from "@/components/marks/useTourMarks";
 import { marksDict } from "@/lib/i18n/marks";
+import { FilterSelect } from "./FilterSelect";
 import { useGeolocation, type GeoState } from "./useGeolocation";
 import s from "./kart.module.css";
 
@@ -408,65 +409,47 @@ export default function MapView({
                   </button>
                 ))}
               </div>
-              <select
-                className={s.pillSelect}
-                data-strong
-                aria-label={t.regionLabel}
+              <FilterSelect
+                strong
+                label={t.regionLabel}
                 value={region}
-                onChange={(e) => setRegion(e.target.value)}
-              >
-                <option value="">{t.allRegions}</option>
-                {regions.map((r) => (
-                  <option key={r} value={r}>
-                    {r}
-                  </option>
-                ))}
-              </select>
+                onChange={setRegion}
+                options={[{ value: "", label: t.allRegions }, ...regions.map((r) => ({ value: r, label: r }))]}
+              />
             </div>
 
             <div className={s.filterRow}>
-              <select
-                className={s.pillSelect}
-                aria-label={t.aspectFilterLabel}
-                data-on={aspect ? "" : undefined}
+              <FilterSelect
+                label={t.aspectFilterLabel}
                 value={aspect}
-                onChange={(e) => setAspect(e.target.value as AspectSector | "")}
-              >
-                <option value="">{t.allAspects}</option>
-                {ASPECT_SECTORS.map((a) => (
-                  <option key={a} value={a}>
-                    {t.aspectSectors[a]}
-                  </option>
-                ))}
-              </select>
-              <select
-                className={s.pillSelect}
-                aria-label={t.verticalFilterLabel}
-                data-on={vertical ? "" : undefined}
+                onChange={setAspect}
+                options={[
+                  { value: "", label: t.allAspects },
+                  ...ASPECT_SECTORS.map((a) => ({ value: a, label: t.aspectSectors[a] })),
+                ]}
+              />
+              <FilterSelect
+                label={t.verticalFilterLabel}
                 value={vertical}
-                onChange={(e) => setVertical(e.target.value as VerticalBand | "")}
-              >
-                <option value="">{t.allVertical}</option>
-                {VERTICAL_BANDS.map((b) => (
-                  <option key={b.id} value={b.id}>
-                    {t.verticalBands[b.id]}
-                  </option>
-                ))}
-              </select>
+                onChange={setVertical}
+                options={[
+                  { value: "", label: t.allVertical },
+                  ...VERTICAL_BANDS.map((b) => ({ value: b.id, label: t.verticalBands[b.id] })),
+                ]}
+              />
               {/* Bare når lista over favoritter og gåtte turer er lest. */}
               {markMap ? (
-                <select
-                  className={s.pillSelect}
-                  aria-label={m.filterLabel}
-                  data-on={mine ? "" : undefined}
+                <FilterSelect
+                  label={m.filterLabel}
                   value={mine}
-                  onChange={(e) => setMine(e.target.value as typeof mine)}
-                >
-                  <option value="">{m.filterAll}</option>
-                  <option value="favorites">{m.filterFavorites}</option>
-                  <option value="done">{m.filterDone}</option>
-                  <option value="notDone">{m.filterNotDone}</option>
-                </select>
+                  onChange={setMine}
+                  options={[
+                    { value: "", label: m.filterAll },
+                    { value: "favorites", label: m.filterFavorites },
+                    { value: "done", label: m.filterDone },
+                    { value: "notDone", label: m.filterNotDone },
+                  ]}
+                />
               ) : null}
             </div>
 
