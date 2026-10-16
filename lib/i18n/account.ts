@@ -33,7 +33,7 @@ const ACCOUNT: Translated<AccountDict> = {
     loginKicker: "Drift",
     loginHeading: "Logg inn",
     loginIntro:
-      "Denne innloggingen er bare for drift av Toppkart. Toppkart er gratis og trenger ingen konto — alle turene og guidene er åpne.",
+      "Denne innloggingen er bare for drift av Toppkart. Du trenger ingen konto for å bruke Toppkart — alle turene og guidene er åpne.",
     googleButton: "Fortsett med Google",
     googleRedirecting: "Sender deg til Google …",
     googleOnlyNote: "Bare adresser med drifttilgang slipper inn.",
@@ -47,7 +47,7 @@ const ACCOUNT: Translated<AccountDict> = {
     loginKicker: "Admin",
     loginHeading: "Log in",
     loginIntro:
-      "This sign-in is only for running Toppkart. Toppkart is free and needs no account — every tour and guide is open.",
+      "This sign-in is only for running Toppkart. You need no account to use Toppkart — every tour and guide is open.",
     googleButton: "Continue with Google",
     googleRedirecting: "Taking you to Google …",
     googleOnlyNote: "Only addresses with admin access get in.",

@@ -50,7 +50,7 @@ export function Feedback({ lang, email }: { lang: Lang; email: string | null }) 
     return () => document.removeEventListener("keydown", onKey);
   }, [open, close]);
 
-  if (pathname?.startsWith("/kart")) return null;
+  if (pathname === "/" || pathname?.startsWith("/kart")) return null;
 
   async function submit() {
     const trimmed = message.trim();

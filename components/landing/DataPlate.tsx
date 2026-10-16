@@ -20,13 +20,12 @@ function plateFigures(): PlateFigures {
   return {
     tours: TOURS.length,
     regions: REGIONS.length,
-    guides: TOURS.filter((tour) => tour.hasGuide).length,
     north: north.region,
     south: south.region,
   };
 }
 
-/** «Toppkart — nøkkeldata»: tittelblokk + fire hairline-rader. */
+/** «Toppkart — nøkkeldata»: tittelblokk + to hairline-rader. */
 export function DataPlate({ lang }: { lang: Lang }) {
   const t = landingDict(lang);
   const figures = plateFigures();
@@ -57,7 +56,7 @@ export function DataPlate({ lang }: { lang: Lang }) {
             ))}
           </tbody>
         </table>
-        <p className="plate-foot">{t.plateFoot(figures)}</p>
+        <p className="plate-foot">{t.plateFoot}</p>
       </Blueprint>
     </section>
   );

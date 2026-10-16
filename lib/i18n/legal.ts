@@ -60,7 +60,7 @@ const LEGAL_TEXT: Translated<LegalDict> = {
     terms: {
       metaTitle: "Vilkår for bruk",
       metaDescription:
-        "Vilkårene for bruk av Toppkart: en gratis tjeneste uten konto, frivillig støtte med Vipps, og ansvar for egen sikkerhet i fjellet.",
+        "Vilkårene for bruk av Toppkart: en tjeneste uten konto, frivillig støtte med Vipps, og ansvar for egen sikkerhet i fjellet.",
       kicker: "Vilkår",
       title: "Vilkår for bruk",
       lede:
@@ -71,7 +71,7 @@ const LEGAL_TEXT: Translated<LegalDict> = {
           title: "Om tjenesten",
           body: [
             "Toppkart er en digital feltguide for skiturer i Norge, med rutebeskrivelser, høydeprofil, bratthet, skredterreng og GPX-filer for turene i kartet.",
-            "Toppkart er gratis å bruke, og du trenger ingen konto. Alt innhold er åpent for alle.",
+            "Du trenger ingen konto for å bruke Toppkart. Alt innhold er åpent for alle.",
             /* Operator. A registered entity's name and address go here. */
             `Toppkart er et lite prosjekt drevet privat, ikke gjennom et registrert selskap. All kontakt går til ${CONTACT}.`,
           ],
@@ -207,7 +207,7 @@ const LEGAL_TEXT: Translated<LegalDict> = {
     terms: {
       metaTitle: "Terms of service",
       metaDescription:
-        "The terms for using Toppkart: a free service with no account, voluntary support through Vipps, and responsibility for your own safety in the mountains.",
+        "The terms for using Toppkart: a service with no account, voluntary support through Vipps, and responsibility for your own safety in the mountains.",
       kicker: "Terms",
       title: "Terms of service",
       lede:
@@ -218,7 +218,7 @@ const LEGAL_TEXT: Translated<LegalDict> = {
           title: "The service",
           body: [
             "Toppkart is a digital field guide to ski touring in Norway, with route descriptions, elevation profiles, steepness, avalanche terrain and GPX files for the tours on the map.",
-            "Toppkart is free to use, and you need no account. All content is open to everyone.",
+            "You need no account to use Toppkart. All content is open to everyone.",
             /* Operator. A registered entity's name and address go here. */
             `Toppkart is a small project run privately, not through a registered company. All contact goes to ${CONTACT}.`,
           ],

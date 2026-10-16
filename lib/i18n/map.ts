@@ -45,8 +45,6 @@ export interface Dict {
   stAsp: string;
   stSea: string;
   openGuide: string;
-  /** What every guide holds, listed in the detail panel. */
-  chips: readonly string[];
   /* — strings the prototype held inline — */
   schematicNote: string;
   startTooltip: string;
@@ -83,8 +81,6 @@ export interface Dict {
   dangerLoading: string;
   dangerSource: string;
 
-  unlockedTitle: string;
-  unlockedBody: string;
   guidePending: string;
 
   /* — aspect and vertical filters — */
@@ -114,9 +110,9 @@ export interface Dict {
 
 const MAP: Translated<Dict> = {
   no: {
-    metaTitle: "Kartet",
+    metaTitle: "Alle toppturene. Ett kart.",
     metaDescription:
-      "Alle toppturene på ett kart: grad, høydemeter, normaltid, himmelretning og sesong for hver topp.",
+      "Alle toppturene i Norge på ett kart: rute, høydemeter, bratthet, skredterreng og sesong for hver topp.",
     all: "Alle",
     search: "Søk etter topp eller region…",
     allRegions: "Alle regioner",
@@ -132,7 +128,6 @@ const MAP: Translated<Dict> = {
     stAsp: "Himmelretning",
     stSea: "Sesong",
     openGuide: "Åpne turguiden",
-    chips: ["Rutebeskrivelse", "Høydeprofil", "GPX", "Skredterreng", "Varsom-varsel"],
     schematicNote:
       "Rutelinjene er beregnet i Kartverkets terrengmodell. Generert geometri — ikke innspilte spor.",
     startTooltip: "Start / parkering",
@@ -156,8 +151,6 @@ const MAP: Translated<Dict> = {
     dangerUnavailable: "Skredvarselet kunne ikke hentes nå. Sjekk varsom.no før du drar.",
     dangerLoading: "Henter skredvarsel …",
     dangerSource: "Varsom.no",
-    unlockedTitle: "Hele guiden er åpen",
-    unlockedBody: "Rutebeskrivelse, høydeprofil, GPX og skredterreng — gratis for alle.",
     guidePending: "Full turguide for denne toppen er under arbeid.",
     aspectFilterLabel: "Himmelretning",
     allAspects: "Alle retninger",
@@ -184,9 +177,9 @@ const MAP: Translated<Dict> = {
     geoUnsupported: "Nettleseren din kan ikke dele posisjon.",
   },
   en: {
-    metaTitle: "The map",
+    metaTitle: "Every ski tour. One map.",
     metaDescription:
-      "Every ski tour on one map: grade, vertical gain, typical time, aspect and season for each peak.",
+      "Every ski tour in Norway on one map: route, vertical gain, steepness, avalanche terrain and season for each peak.",
     all: "All",
     search: "Search peak or region…",
     allRegions: "All regions",
@@ -202,13 +195,6 @@ const MAP: Translated<Dict> = {
     stAsp: "Aspect",
     stSea: "Season",
     openGuide: "Open the guide",
-    chips: [
-      "Route description",
-      "Elevation profile",
-      "GPX",
-      "Avalanche terrain",
-      "Varsom forecast",
-    ],
     schematicNote:
       "The route lines are solved over Kartverket's terrain model. Generated geometry — not recorded tracks.",
     startTooltip: "Trailhead / parking",
@@ -232,8 +218,6 @@ const MAP: Translated<Dict> = {
     dangerUnavailable: "Could not load the avalanche forecast. Check varsom.no before you go.",
     dangerLoading: "Loading avalanche forecast …",
     dangerSource: "Varsom.no",
-    unlockedTitle: "The whole guide is open",
-    unlockedBody: "Route description, elevation profile, GPX and avalanche terrain — free for everyone.",
     guidePending: "The full guide for this peak is still being written.",
     aspectFilterLabel: "Aspect",
     allAspects: "All aspects",

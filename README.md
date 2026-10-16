@@ -3,7 +3,7 @@
 Toppkart is a Norwegian ski-touring field guide: quality-assured peak tours on one map, with
 route, vertical gain, steepness and avalanche terrain. **It is free.** Every guide, GPX file and
 elevation profile is open to everyone, and readers have no accounts. Anyone who wants to chip in
-can Vipps 966 40 540 (`VIPPS` in `lib/config.ts`) — the number is on the front page, and a
+can Vipps 966 40 540 (`VIPPS` in `lib/config.ts`) — the number is on `/om` (the front page `/` is the map itself), and a
 one-time prompt asks on the third time the app is opened. The site is in Norwegian; this README
 and the rest of `docs/` are in English for whoever maintains it.
 

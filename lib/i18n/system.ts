@@ -18,7 +18,6 @@ export interface SystemDict {
   notFoundTitle: string;
   notFoundBody: string;
   notFoundMap: string;
-  notFoundHome: string;
   /* — unexpected error — */
   errorKicker: string;
   errorTitle: string;
@@ -35,7 +34,6 @@ const SYSTEM: Translated<SystemDict> = {
     notFoundBody:
       "Siden du leter etter finnes ikke. Den kan ha flyttet seg, eller lenken kan være skrevet feil.",
     notFoundMap: "Åpne kartet",
-    notFoundHome: "Til forsiden",
     errorKicker: "Noe gikk galt",
     errorTitle: "Uventet feil",
     errorBody:
@@ -50,7 +48,6 @@ const SYSTEM: Translated<SystemDict> = {
     notFoundBody:
       "The page you are looking for does not exist. It may have moved, or the link may be mistyped.",
     notFoundMap: "Open the map",
-    notFoundHome: "Back to the front page",
     errorKicker: "Something went wrong",
     errorTitle: "Unexpected error",
     errorBody:

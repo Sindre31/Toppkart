@@ -139,7 +139,6 @@
 .marks {
   display: flex;
   flex-wrap: wrap;
-  margin: 14px 0 0;
 }
 .distance {
   color: var(--color-accent-700);
@@ -311,7 +310,7 @@
 .schematic {
   font-size: 11px;
   color: color-mix(in srgb, var(--color-text) 50%, transparent);
-  margin: -6px 0 0;
+  margin: 0;
 }
 
 /* — route picker: only rendered when a peak has more than one way up — */
@@ -391,30 +390,12 @@
   letter-spacing: 0.02em;
 }
 
-/* — locked / unlocked block (frame, bars and chips come from globals.css) — */
-.lockmsg {
-  margin-top: 14px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  align-items: flex-start;
-}
-.lockmsgFlush { margin-top: 0; }
-.lockKicker {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 12px;
-}
-.lockText {
+/* Står der guideknappen ellers står, for topper uten skrevet guide. */
+.pending {
   font-size: 14px;
   line-height: 1.5;
   margin: 0;
   color: color-mix(in srgb, var(--color-text) 70%, transparent);
-}
-.chipOn {
-  color: var(--color-accent-700);
-  border-color: color-mix(in srgb, var(--color-accent) 45%, transparent);
 }
 
 /* — leaflet overrides — */

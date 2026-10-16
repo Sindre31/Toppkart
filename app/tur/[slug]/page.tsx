@@ -117,7 +117,7 @@ export default async function TourGuidePage({ params }: { params: Promise<{ slug
   /* Rutas egen geometri — den samme linja `/kart` tegner. `RouteMap` bruker den
      til figuren over høydeprofilen; hver av de 86 sidene får sin egen. */
   const route = routeProfile(source);
-  const mapHref = `/kart?tur=${tour.slug}`;
+  const mapHref = `/?tur=${tour.slug}`;
   const neighbours = localizeTours(toursInRegion(source.region, source.slug), lang);
 
   const stats: { label: string; value: string }[] = [

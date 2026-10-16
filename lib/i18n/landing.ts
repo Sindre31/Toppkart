@@ -1,15 +1,16 @@
-/** NO/EN dictionary for the front page.
+/** NO/EN dictionary for `/om`, the about page. It was the front page until the
+ *  map took over `/`.
  *
- *  The landing page is pure copy — every string it renders lives here.
- *  Toppkart is free; the only number with a unit on it is the Vipps number,
- *  which is the same in both languages.
+ *  The page is pure copy — every string it renders lives here.
+ *  The only number with a unit on it is the Vipps number, which is the same
+ *  in both languages.
  *
  *  What is *not* copy is how many tours and regions the map holds. Those two
  *  figures sat here as the literals «214» and «12» and were wrong by an order of
  *  magnitude — the map has never had 214 tours. They are counted from `TOURS`
  *  now and passed in as `PlateFigures`, so the plate cannot claim a number the
- *  map does not have. `plateRows` and `plateFoot` are therefore functions of
- *  those figures rather than plain strings.
+ *  map does not have. `plateRows` is therefore a function of those figures
+ *  rather than a plain list.
  *
  *  The counting is done by the caller, not here: this module is imported by a
  *  client component, and importing the tour catalogue would send every route's
@@ -23,7 +24,7 @@ import type { Lang, Translated } from "./index";
 import { pick } from "./index";
 
 /** One row of the «Toppkart — nøkkeldata» plate: property, figure, remark. The
- *  ordinal (`01`…`04`) is generated from the index, not stored. */
+ *  ordinal (`01`, `02`) is generated from the index, not stored. */
 export interface PlateRow {
   prop: string;
   val: string;
@@ -36,9 +37,6 @@ export interface PlateFigures {
   tours: number;
   /** Regions those tours cover. */
   regions: number;
-  /** Tours with a written guide — fewer than `tours`, and the plate says so
-   *  rather than implying every peak has one. */
-  guides: number;
   /** Region of the northernmost tour, and of the southernmost. Proper nouns:
    *  they stay Norwegian in both languages. */
   north: string;
@@ -60,13 +58,11 @@ export interface LandingDict {
   lede: string;
   ctaMap: string;
   ctaTours: string;
-  /** The line beside the buttons: free, no account. */
-  priceNote: string;
   /* — data plate — */
   plateLabel: string;
   plateSheet: string;
   plateRows: (figures: PlateFigures) => readonly PlateRow[];
-  plateFoot: (figures: PlateFigures) => string;
+  plateFoot: string;
   /* — 02 · what a guide holds — */
   guidesKicker: string;
   guideCells: readonly GuideCell[];
@@ -85,34 +81,29 @@ export interface LandingDict {
   supportKicker: string;
   supportHeading: string;
   supportBody: string;
-  supportNote: string;
-  supportPoints: readonly string[];
 }
 
 const LANDING: Translated<LandingDict> = {
   no: {
-    metaTitle: "Alle toppturene. Ett kart.",
+    metaTitle: "Om Toppkart",
     metaDescription:
-      "Toppkart er en feltguide for skiturer i Norge: kvalitetssikrede toppturer på ett kart, med rute, høydemeter, bratthet og skredterreng. Gratis å bruke.",
+      "Toppkart er en feltguide for skiturer i Norge: kvalitetssikrede toppturer på ett kart, med rute, høydemeter, bratthet og skredterreng.",
 
     heroLine1: "Alle toppturene.",
     heroLine2: "Ett kart.",
     lede:
-      "Toppkart er en feltguide for skiturer i Norge: kvalitetssikrede toppturer på ett kart, med rute, høydemeter, bratthet og skredterreng — skrevet for at du skal komme trygt opp og trygt ned. For deg som går din første topptur, og for deg som går din hundrede.",
+      "Kvalitetssikrede toppturer i hele Norge, med rute, høydemeter, bratthet og skredterreng — skrevet for at du skal komme trygt opp og trygt ned.",
     ctaMap: "Se kartet",
     ctaTours: "Alle turene",
-    priceNote: "Gratis å bruke. Ingen konto, ingen binding.",
 
     plateLabel: "Toppkart — nøkkeldata",
     plateSheet: "Ark 01 av 04",
     plateRows: (f) => [
       { prop: "Toppturer i kartet", val: String(f.tours), rem: `Fra ${f.north} i nord til ${f.south} i sør` },
       { prop: "Regioner", val: String(f.regions), rem: "Alle med opptegnet rute og høydeprofil" },
-      { prop: "Pris", val: "Gratis", rem: "Ingen konto, ingen binding" },
-      { prop: "Støtt med Vipps", val: "966 40 540", rem: "Frivillig — alt hjelper" },
     ],
-    plateFoot: (f) =>
-      `Hver topp er stedfestet mot Kartverkets terrengmodell, og ${f.guides} av turene har en full turguide skrevet mot ruta. Sjekk alltid skredvarselet på varsom.no før du går.`,
+    plateFoot:
+      "Hver topp er stedfestet mot Kartverkets terrengmodell. Sjekk alltid skredvarselet på varsom.no før du går.",
 
     guidesKicker: "02 · Hva hver turguide holder",
     guideCells: [
@@ -137,41 +128,31 @@ const LANDING: Translated<LandingDict> = {
     safetyFigureLink: "Se Kirketaket i kartet",
 
     supportKicker: "04 · Støtt Toppkart",
-    supportHeading: "Gratis. Hele kartet, alle guidene.",
+    supportHeading: "Har du glede av Toppkart?",
     supportBody:
-      "Toppkart er gratis å bruke, uten konto og uten reklame. Nye turer legges til hver sesong, og guidene revideres når terrenget eller normalruta endrer seg. Har du glede av appen, kan du støtte arbeidet med en Vipps.",
-    supportNote: "Helt frivillig — alt er åpent uansett.",
-    supportPoints: [
-      "Alle turguider, GPX og høydeprofiler",
-      "Skredterreng og Varsom-varsel per tur",
-      "Favoritter og turer du har gått, lagret på enheten din",
-      "Ingen konto, ingen reklame",
-    ],
+      "Nye turer legges til hver sesong, og guidene revideres når terrenget eller normalruta endrer seg. Vil du støtte arbeidet, kan du sende en Vipps.",
   },
 
   en: {
-    metaTitle: "Every ski tour. One map.",
+    metaTitle: "About Toppkart",
     metaDescription:
-      "Toppkart is a field guide to ski touring in Norway: quality-assured peaks on a single map, with routes, vertical gain, steepness and avalanche terrain. Free to use.",
+      "Toppkart is a field guide to ski touring in Norway: quality-assured peaks on a single map, with routes, vertical gain, steepness and avalanche terrain.",
 
     heroLine1: "Every ski tour.",
     heroLine2: "One map.",
     lede:
-      "Toppkart is a field guide to ski touring in Norway: quality-assured peaks on a single map, with routes, vertical gain, steepness and avalanche terrain — written to get you safely up and safely back down. For your first ski tour, and for your hundredth.",
+      "Quality-assured ski tours across Norway, with routes, vertical gain, steepness and avalanche terrain — written to get you safely up and safely back down.",
     ctaMap: "See the map",
     ctaTours: "Every tour",
-    priceNote: "Free to use. No account, no lock-in.",
 
     plateLabel: "Toppkart — key figures",
     plateSheet: "Sheet 01 of 04",
     plateRows: (f) => [
       { prop: "Tours on the map", val: String(f.tours), rem: `From ${f.north} in the north to ${f.south} in the south` },
       { prop: "Regions", val: String(f.regions), rem: "Every one with drawn routes and elevation profiles" },
-      { prop: "Price", val: "Free", rem: "No account, no lock-in" },
-      { prop: "Support with Vipps", val: "966 40 540", rem: "Voluntary — every bit helps" },
     ],
-    plateFoot: (f) =>
-      `Every summit is placed against Kartverket's terrain model, and ${f.guides} of the tours have a full guide written against the route. Always check the avalanche forecast at varsom.no before you head out.`,
+    plateFoot:
+      "Every summit is placed against Kartverket's terrain model. Always check the avalanche forecast at varsom.no before you head out.",
 
     guidesKicker: "02 · What every guide holds",
     guideCells: [
@@ -196,16 +177,9 @@ const LANDING: Translated<LandingDict> = {
     safetyFigureLink: "See Kirketaket on the map",
 
     supportKicker: "04 · Support Toppkart",
-    supportHeading: "Free. The whole map, every guide.",
+    supportHeading: "Enjoying Toppkart?",
     supportBody:
-      "Toppkart is free to use, with no account and no ads. New tours are added every season, and guides are revised whenever the terrain or the normal route changes. If you enjoy the app, you can support the work with a Vipps.",
-    supportNote: "Entirely voluntary — everything stays open either way.",
-    supportPoints: [
-      "Every guide, GPX file and elevation profile",
-      "Avalanche terrain and Varsom forecast per tour",
-      "Favourites and tours you have done, saved on your device",
-      "No account, no ads",
-    ],
+      "New tours are added every season, and guides are revised whenever the terrain or the normal route changes. If you want to support the work, you can send a Vipps.",
   },
 };
 

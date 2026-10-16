@@ -15,6 +15,13 @@ const nextConfig: NextConfig = {
     ];
   },
 
+  /* Forsida er kartet. `/` serveres av `app/kart` uten å bytte adresse, så
+     `/?tur=<slug>` er lenka man deler. `/kart` virker fortsatt — gamle lenker,
+     og den lagrede kopien offline-lagringa henter — og peker canonical hit. */
+  async rewrites() {
+    return { beforeFiles: [{ source: "/", destination: "/kart" }], afterFiles: [], fallback: [] };
+  },
+
   /* Turene som finnes, til middleware, som svarer 404 på alle andre under
      `/tur/`. Den kan ikke importere `lib/tours` selv — den kjører på Edge, og
      modulen drar med seg all rutegeometrien — så lista bygges her, fra den

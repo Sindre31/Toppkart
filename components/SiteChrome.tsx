@@ -20,7 +20,7 @@ import { commonDict } from "@/lib/i18n/common";
  *  På telefon ligger lenkene bak hamburgerknappen (`NavMenu`). På skjerm er det
  *  den samme markupen i den samme raden — se `.nav-menu` i globals.
  *
- *  Ingen kontodel: Toppkart er gratis og har ingen brukerkontoer.
+ *  Ingen kontodel: Toppkart har ingen brukerkontoer.
  */
 export function SiteNav({
   lang,
@@ -62,11 +62,14 @@ export function NavLinks({ lang, current }: { lang: Lang; current?: string }) {
       <Link className="nav-link" href="/turer" aria-current={here("/turer")}>
         {t.tours}
       </Link>
-      <Link className="nav-link" href="/kart" aria-current={here("/kart")}>
+      <Link className="nav-link" href="/" aria-current={here("/")}>
         {t.map}
       </Link>
       <Link className="nav-link" href="/mine-turer" aria-current={here("/mine-turer")}>
         {t.myTours}
+      </Link>
+      <Link className="nav-link" href="/om" aria-current={here("/om")}>
+        {t.about}
       </Link>
     </>
   );
@@ -76,8 +79,7 @@ export function NavLinks({ lang, current }: { lang: Lang; current?: string }) {
  *  same corner on every page, no scrolling to reach it.
  *
  *  «Vilkår» and «Personvern» sit on every page deliberately, so they are
- *  reachable without hunting. «Støtt» points at the Vipps section on the front
- *  page. */
+ *  reachable without hunting. «Støtt» points at the Vipps section on `/om`. */
 export function SiteFooter({
   lang,
   children,
@@ -94,10 +96,10 @@ export function SiteFooter({
           hver side, og en bunnlinje som gjentar hvem nettstedet er, rett før
           lenkene til vilkårene, er den ene tingen her ingen skal noe sted med. */}
       <Link href="/turer">{t.footerTours}</Link>
-      <Link href="/kart">{t.footerMap}</Link>
+      <Link href="/">{t.footerMap}</Link>
       <Link href="/vilkar">{t.footerTerms}</Link>
       <Link href="/personvern">{t.footerPrivacy}</Link>
-      <Link href="/#stott">{t.footerSupportUs}</Link>
+      <Link href="/om#stott">{t.footerSupportUs}</Link>
       <a href={`mailto:${SITE.supportEmail}`}>{t.footerSupport}</a>
       {children}
     </footer>
