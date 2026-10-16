@@ -69,11 +69,10 @@ site's URL.
 1. Create a project at <https://supabase.com/dashboard>. Pick a region close to your users
    (Frankfurt or Stockholm for Norwegian traffic).
 2. Open the **SQL Editor** and run `supabase/schema.sql`. This creates the `tk_tours`,
-   `tk_profiles`, `tk_subscriptions`, `tk_invoices`, `tk_feedback`, `tk_rate_limit` and
-   `tk_tour_marks` tables,
-   enables row-level security, and installs the policies that keep the gated tour columns away
-   from non-subscribers. The file is idempotent — re-run it after any change to it, which is also
-   how an existing deployment picks up new tables and functions.
+   `tk_profiles`, `tk_feedback`, `tk_rate_limit` and `tk_tour_marks` tables, enables row-level
+   security and installs the policies. The file is idempotent — re-run it after any change to
+   it, which is also how an existing deployment picks up new tables and functions, and drops the
+   retired subscription tables (section 8 of the file).
 3. Run `supabase/seed.sql` in the same editor. This loads all 90 tours and their guide content.
    Running it against a database without the schema will fail, so do not reorder these.
 4. **Authentication → URL Configuration**: set **Site URL** to your `NEXT_PUBLIC_SITE_URL`, and
@@ -147,22 +146,12 @@ site's URL.
 
 ---
 
-## 3. Stripe — winding down
+## 3. Stripe — retired
 
-Toppkart used to be sold as a subscription through Stripe. The checkout, the customer portal, the
-webhook and `/min-side` are gone, so **nothing in the app can cancel a subscription any more**,
-and Stripe keeps charging until someone does:
-
-1. In the Stripe dashboard, **Billing → Subscriptions**, cancel every active and trialing
-   subscription (immediately, or at period end if you would rather let paid periods run out).
-2. **Developers → Webhooks**: delete the endpoint for `/api/stripe/webhook`. The route no longer
-   exists, and Stripe would retry every event against a 404 and eventually e-mail you about it.
-3. Remove `STRIPE_*`, `RESEND_API_KEY` and `RESEND_FROM_EMAIL` from Vercel's environment.
-
-Keep the Stripe account itself: invoices already issued are accounting records the Bookkeeping
-Act wants kept for five years, and `/personvern` says they sit at Stripe. The `tk_subscriptions`
-and `tk_invoices` tables in Supabase are no longer read or written and can be dropped once you no
-longer need them.
+Toppkart used to be sold as a subscription through Stripe. The subscriptions are cancelled, the
+Stripe account is closed, and the code is gone. `supabase/schema.sql` drops the old
+`tk_subscriptions` and `tk_invoices` tables and `tk_has_active_subscription()` when it is
+re-run. There is nothing to configure.
 
 ---
 
@@ -283,7 +272,6 @@ Walk the real flow on the deployed site, not just the local one:
       Register an entity, or grow into having to, and two things change together: the operator
       and controller paragraphs in `lib/i18n/legal.ts` need a name and address. They are marked
       in that file.
-- [ ] Every Stripe subscription is cancelled and the webhook endpoint is deleted (section 3).
 - [ ] `https://toppkart.no/robots.txt` allows crawling and names the sitemap;
       `https://toppkart.no/sitemap.xml` lists 99 URLs on the production domain — not on a
       `*.vercel.app` host. The same two files on a preview deploy say `Disallow: /`.

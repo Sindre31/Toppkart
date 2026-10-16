@@ -6,7 +6,7 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
 
   /* Toppkart er gratis og har ingen kontoer. Gamle lenker til kassa og
-     kontosida — i e-poster, bokmerker, Stripes kundeportal — lander på
+     kontosida — i gamle e-poster og bokmerker — lander på
      forsida og «Mine turer» i stedet for på en 404. */
   async redirects() {
     return [

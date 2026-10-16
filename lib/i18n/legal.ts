@@ -182,7 +182,6 @@ const LEGAL_TEXT: Translated<LegalDict> = {
           title: "Hvor lenge vi lagrer",
           body: [
             "Tilbakemeldinger beholdes så lenge de er nyttige for å forbedre tjenesten. Vil du ha en melding slettet, skriv til oss.",
-            "Har du tidligere hatt abonnement på Toppkart, oppbevares fakturaer og annet regnskapsmateriale i fem år etter regnskapsårets slutt, slik bokføringsloven krever. De ligger hos Stripe.",
           ],
         },
         {
@@ -329,7 +328,6 @@ const LEGAL_TEXT: Translated<LegalDict> = {
           title: "How long we keep it",
           body: [
             "Feedback is kept for as long as it is useful for improving the service. If you want a message deleted, write to us.",
-            "If you previously had a Toppkart subscription, invoices and other accounting material are kept for five years after the end of the financial year, as the Bookkeeping Act requires. They sit at Stripe.",
           ],
         },
         {

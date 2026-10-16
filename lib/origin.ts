@@ -3,7 +3,7 @@ import { env } from "@/lib/config";
 /** The origin the browser actually asked for, e.g. `https://toppkart.no`.
  *
  *  Every redirect that has to come *back* to a signed-in browser — the OAuth
- *  round-trip and Stripe's return URLs — has to land on the origin
+ *  round-trip — has to land on the origin
  *  the visitor started on. Building those from `NEXT_PUBLIC_SITE_URL` looks
  *  right until the variable is unset: `env.siteUrl` then falls back to
  *  `https://$VERCEL_URL`, so a visitor on the custom domain is sent to
@@ -19,7 +19,7 @@ import { env } from "@/lib/config";
  *  populates; `host` covers running the server directly. The `Host` header is
  *  caller-controlled in principle, but nothing here trusts it as a security
  *  boundary — Supabase checks `redirect_to` against its own Redirect URL
- *  allow-list and Stripe checks its return URLs, both server-side. A forged
+ *  allow-list server-side. A forged
  *  host is rejected there unless it is already a domain you allow-listed.
  */
 export function requestOrigin(request: Request): string {
