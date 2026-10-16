@@ -300,7 +300,7 @@ export function RouteMap({
           <path
             d={d}
             fill="none"
-            stroke="#f2f2f3"
+            stroke="#fffdf8"
             strokeWidth="6"
             strokeLinejoin="round"
             strokeLinecap="round"
@@ -308,17 +308,17 @@ export function RouteMap({
           <path
             d={d}
             fill="none"
-            stroke="#416180"
+            stroke="#8a2a5b"
             strokeWidth="2.5"
             strokeLinejoin="round"
             strokeLinecap="round"
           />
 
           {/* Start: en ring, som på et kart. Toppen: en trekant. */}
-          <circle cx={startX.toFixed(1)} cy={startY.toFixed(1)} r="5" fill="#f2f2f3" stroke="#416180" strokeWidth="2" />
+          <circle cx={startX.toFixed(1)} cy={startY.toFixed(1)} r="5" fill="#fffdf8" stroke="#8a2a5b" strokeWidth="2" />
           <path
             d={`M${summitX.toFixed(1)},${(summitY - 7).toFixed(1)} L${(summitX + 6).toFixed(1)},${(summitY + 4).toFixed(1)} L${(summitX - 6).toFixed(1)},${(summitY + 4).toFixed(1)} Z`}
-            fill="#416180"
+            fill="#8a2a5b"
           />
 
           {/* Nordpil og målestokk står på en lys plate hver. Mot en tom ramme

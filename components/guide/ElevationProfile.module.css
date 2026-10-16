@@ -1,0 +1,28 @@
+/* Høydeprofilkortet under kartet i turguiden. */
+
+.card {
+  flex: none;
+  padding: 14px 18px 10px;
+  border-radius: var(--radius-profile);
+  background: var(--color-card);
+  box-shadow: var(--shadow-card);
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 2px 12px;
+  margin-bottom: 6px;
+}
+.title { font-family: var(--font-heading); font-size: 20px; line-height: 1.2; }
+.summary { font-size: 13px; color: var(--color-label); }
+
+.svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+.target { cursor: pointer; }

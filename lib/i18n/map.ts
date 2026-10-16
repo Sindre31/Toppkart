@@ -39,6 +39,7 @@ export interface Dict {
   back: string;
   grades: GradeNames;
   moh: string;
+  stSummit: string;
   stHm: string;
   stTime: string;
   stGrade: string;
@@ -74,6 +75,8 @@ export interface Dict {
   /** 1–5 on the European scale, indexed from 1. */
   dangerLevels: readonly string[];
   dangerLevelLabel: (level: number, name: string) => string;
+  /** Kortversjonen i de små kortene: «Moderat skredfare». */
+  dangerShort: (name: string) => string;
   /** Out of season: in a region, but nobody has assessed today. */
   dangerNotAssessed: string;
   /** The peak is not inside any Varsom forecast region. */
@@ -126,14 +129,15 @@ const MAP: Translated<Dict> = {
     metaDescription:
       "Alle toppturene i Norge på ett kart: rute, høydemeter, bratthet, skredterreng og sesong for hver topp.",
     all: "Alle",
-    search: "Søk etter topp eller region…",
+    search: "Søk topp eller region",
     allRegions: "Alle regioner",
     tours: "turer",
     tour: "tur",
     approx: "Toppunkter er hentet fra Kartverkets terrengmodell.",
-    back: "← Til lista",
+    back: "← Lista",
     grades: gradeNames("no"),
     moh: "moh",
+    stSummit: "Topp",
     stHm: "Høydemeter",
     stTime: "Normaltid",
     stGrade: "Grad",
@@ -159,6 +163,7 @@ const MAP: Translated<Dict> = {
     avalancheTitle: "Skredfare i dag",
     dangerLevels: ["Liten", "Moderat", "Betydelig", "Stor", "Meget stor"],
     dangerLevelLabel: (level, name) => `Faregrad ${level} — ${name}`,
+    dangerShort: (name) => `${name} skredfare`,
     dangerNotAssessed: "Ikke vurdert i dag. Varsom varsler i skredsesongen, omtrent desember til mai.",
     dangerOutsideRegion: "Toppen ligger utenfor Varsoms varslingsregioner.",
     dangerUnavailable: "Skredvarselet kunne ikke hentes nå. Sjekk varsom.no før du drar.",
@@ -199,14 +204,15 @@ const MAP: Translated<Dict> = {
     metaDescription:
       "Every ski tour in Norway on one map: route, vertical gain, steepness, avalanche terrain and season for each peak.",
     all: "All",
-    search: "Search peak or region…",
+    search: "Search peak or region",
     allRegions: "All regions",
     tours: "tours",
     tour: "tour",
     approx: "Summit positions come from Kartverket's terrain model.",
-    back: "← Back to list",
+    back: "← List",
     grades: gradeNames("en"),
     moh: "m",
+    stSummit: "Summit",
     stHm: "Vertical gain",
     stTime: "Typical time",
     stGrade: "Grade",
@@ -232,6 +238,7 @@ const MAP: Translated<Dict> = {
     avalancheTitle: "Avalanche danger today",
     dangerLevels: ["Low", "Moderate", "Considerable", "High", "Very high"],
     dangerLevelLabel: (level, name) => `Danger level ${level} — ${name}`,
+    dangerShort: (name) => `${name} avalanche danger`,
     dangerNotAssessed: "Not assessed today. Varsom forecasts during the avalanche season, roughly December to May.",
     dangerOutsideRegion: "This peak lies outside Varsom's forecast regions.",
     dangerUnavailable: "Could not load the avalanche forecast. Check varsom.no before you go.",

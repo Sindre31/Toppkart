@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Barlow, Barlow_Condensed } from "next/font/google";
+import { Instrument_Serif, Schibsted_Grotesk } from "next/font/google";
 import Script from "next/script";
 import { Analytics } from "@vercel/analytics/next";
 import { Feedback } from "@/components/Feedback";
@@ -12,31 +12,30 @@ import { siteMeta } from "@/lib/i18n/common";
 import { CANONICAL_ORIGIN, OG_IMAGE, isIndexable } from "@/lib/seo";
 import "./globals.css";
 
-/** Barlow og Barlow Condensed, hentet ved bygging og servert fra vårt eget
- *  domene. De lå tidligere bak en `@import` øverst i `globals.css`, altså tre
- *  blokkerende rundturer på rad til to fremmede verter før den første bokstaven
- *  kunne tegnes i riktig skrift. Nå kommer filene fra samme opphav som resten av
- *  sida, uten oppslag, uten ny forbindelse, og med den samme
- *  bufferen — og `preconnect`-lenkene i `<head>` er ikke lenger noe å varme opp.
+/** Instrument Serif og Schibsted Grotesk, hentet ved bygging og servert fra
+ *  vårt eget domene — ikke bak en `@import` i `globals.css`, som ville vært tre
+ *  blokkerende rundturer til to fremmede verter før første bokstav.
  *
- *  `display: "swap"` er det samme løftet som før: tekst leses i reserveskriften
- *  med det samme framfor å stå usynlig og vente.
+ *  Instrument Serif er visningsskriften: fjellnavn, seksjonstitler og de store
+ *  tallene. Den finnes bare i én vekt, med kursiv til ingressens siste setning.
+ *  Schibsted Grotesk bærer alt annet, i 400–700; den er variabel, så vektene
+ *  koster én fil og ikke fire.
  *
- *  Vektene er de som faktisk brukes — 400/500/700 i brødteksten, 400/600 i
- *  overskriftene — og det er den listen som avgjør hvor mange filer som lastes.
- *  Variablene leses av `--font-body` og `--font-heading` i `globals.css`. */
-const barlow = Barlow({
+ *  `display: "swap"`: tekst leses i reserveskriften med det samme framfor å stå
+ *  usynlig og vente. Variablene leses av `--font-heading` og `--font-body` i
+ *  `globals.css`. */
+const instrumentSerif = Instrument_Serif({
   subsets: ["latin"],
-  weight: ["400", "500", "700"],
-  display: "swap",
-  variable: "--tk-font-body",
-});
-
-const barlowCondensed = Barlow_Condensed({
-  subsets: ["latin"],
-  weight: ["400", "600"],
+  weight: "400",
+  style: ["normal", "italic"],
   display: "swap",
   variable: "--tk-font-heading",
+});
+
+const schibstedGrotesk = Schibsted_Grotesk({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--tk-font-body",
 });
 
 /** Title and description follow the reader's language. `generateMetadata` runs
@@ -106,7 +105,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
   const analytics = process.env.VERCEL_ENV === "production";
 
   return (
-    <html lang={htmlLang(lang)} className={`${barlow.variable} ${barlowCondensed.variable}`}>
+    <html lang={htmlLang(lang)} className={`${instrumentSerif.variable} ${schibstedGrotesk.variable}`}>
       <body>
         {children}
         <Feedback lang={lang} email={email} />

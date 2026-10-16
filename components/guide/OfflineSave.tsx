@@ -102,7 +102,7 @@ export function OfflineSave({
       {state.kind === "saved" ? (
         <span style={{ display: "inline-flex", gap: 4 }}>
           <span className="btn btn-secondary" style={{ cursor: "default" }} title={t.offlineSavedHint}>
-            <Check size={14} strokeWidth={1.5} aria-hidden="true" />
+            <Check size={15} strokeWidth={1.75} aria-hidden="true" />
             {t.savedOffline(formatBytes(state.tour.bytes, lang))}
           </span>
           <button type="button" className="btn btn-ghost" onClick={remove}>
@@ -118,7 +118,7 @@ export function OfflineSave({
           title={t.offlineHint}
           aria-live="polite"
         >
-          <WifiOff size={14} strokeWidth={1.5} aria-hidden="true" />
+          <WifiOff size={15} strokeWidth={1.75} aria-hidden="true" />
           {state.kind === "saving" ? t.savingOffline(state.percent) : t.saveOffline}
         </button>
       )}

@@ -1,4 +1,4 @@
-/** NO/EN dictionary for the summit forecast (`components/weather/WeatherPanel`).
+/** NO/EN dictionary for the summit forecast (`components/conditions/ConditionCards`).
  *
  *  Its own file because the panel is: it stands on `/kart` and on the guide
  *  page, and neither page's dictionary should own strings the other renders.
@@ -21,6 +21,9 @@ export interface WeatherDict {
   windMax: (speed: string, from: string) => string;
   /** «vind 6 m/s fra S» */
   windNow: (speed: string, from: string) => string;
+  /** De små kortene på guiden og i kartpanelet. */
+  onSummitNow: string;
+  yr: string;
   loading: string;
   unavailable: string;
   note: string;
@@ -37,6 +40,8 @@ const WEATHER: Translated<WeatherDict> = {
     tempRange: (min, max) => (min === max ? `${min} °C` : `${min} til ${max} °C`),
     windMax: (speed, from) => `vind opptil ${speed} m/s fra ${from}`,
     windNow: (speed, from) => `vind ${speed} m/s fra ${from}`,
+    onSummitNow: "På toppen nå",
+    yr: "Yr ↗",
     loading: "Henter værvarsel …",
     unavailable: "Værvarselet kunne ikke hentes nå. Sjekk yr.no før du drar.",
     note:
@@ -52,6 +57,8 @@ const WEATHER: Translated<WeatherDict> = {
     tempRange: (min, max) => (min === max ? `${min} °C` : `${min} to ${max} °C`),
     windMax: (speed, from) => `wind up to ${speed} m/s from ${from}`,
     windNow: (speed, from) => `wind ${speed} m/s from ${from}`,
+    onSummitNow: "On the summit now",
+    yr: "Yr ↗",
     loading: "Loading the forecast …",
     unavailable: "Could not load the forecast. Check yr.no before you go.",
     note:

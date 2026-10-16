@@ -1,16 +1,68 @@
-/* Kartrammen i turguiden. Kartet har en hel rad for seg selv, så det er bredt:
-   16:9 på en skjerm. På en telefon ville det samme forholdet gjort det lavere
-   enn det var før, så der er det 4:5 — høyt nok til at hele ruta får plass med
-   terrenget rundt, og fortsatt lavere enn skjermen, så man kan rulle forbi. */
+/* Kartrammen i turguiden. Høyden kommer fra kolonnen den står i
+   (`guide.module.css` → `.mapCol`): rammen fyller det profilkortet under ikke
+   tar. */
 
 .frame {
   position: relative;
-  width: 100%;
-  aspect-ratio: 16 / 9;
+  flex: 1;
+  min-height: 0;
+  border-radius: var(--radius-frame);
+  overflow: hidden;
   isolation: isolate;
   background: #fff;
+  box-shadow: var(--shadow-frame);
 }
 
-@media (max-width: 620px) {
-  .frame { aspect-ratio: 4 / 5; }
+/* Pillene over kartet. Raden slipper pekeren gjennom, så kartet under kan dras
+   mellom dem. */
+.overlay {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  right: 14px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  pointer-events: none;
+}
+
+.pill {
+  pointer-events: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  padding: 8px 14px;
+  border-radius: var(--radius-pill);
+  background: var(--float-bg);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+  color: var(--color-text);
+  box-shadow: var(--shadow-float);
+}
+
+.dot {
+  flex: none;
+  width: 8px;
+  height: 8px;
+  border-radius: var(--radius-pill);
+  background: var(--color-accent);
+}
+
+.link {
+  text-decoration: none;
+  transition: background 0.15s, color 0.15s;
+}
+.link:hover {
+  background: var(--color-ink);
+  color: var(--color-bg);
+}
+
+@media (max-width: 480px) {
+  .pill { padding: 7px 12px; font-size: 12px; }
 }

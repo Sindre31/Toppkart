@@ -16,6 +16,7 @@ export function GuideMarks({ slug, lang }: { slug: string; lang: Lang }) {
       state={state}
       failed={failed}
       onChange={update}
+      variant="guide"
     />
   );
 }

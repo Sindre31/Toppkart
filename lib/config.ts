@@ -63,8 +63,10 @@ export const SITE = {
  *  no page-view listener is needed for the App Router. */
 export const GA_MEASUREMENT_ID = "G-5VS58ECVSB";
 
-/** Accent ramp 300/500/700/900 — grade 1…4 on the map. */
-export const GRADE_COLORS = ["#b5d9fd", "#749dc4", "#416180", "#1d2d3d"] as const;
+/** Grad 1…4 på kartet og i tegnforklaringen: én lysskala av aksenten
+ *  (tyttebær), lesbar over Kartverkets grønne og brune. Speilet i
+ *  `--grade-1…4` i `app/globals.css`. */
+export const GRADE_COLORS = ["#e2b3c9", "#bf6a93", "#8a2a5b", "#4a1430"] as const;
 
 export const env = {
   supabaseUrl: process.env.NEXT_PUBLIC_SUPABASE_URL ?? "",
