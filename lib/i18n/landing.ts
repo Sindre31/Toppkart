@@ -59,7 +59,6 @@ export interface LandingDict {
   ctaMap: string;
   /* — data plate — */
   plateLabel: string;
-  plateSheet: string;
   plateRows: (figures: PlateFigures) => readonly PlateRow[];
   plateFoot: string;
   /* — 02 · what a guide holds — */
@@ -94,8 +93,7 @@ const LANDING: Translated<LandingDict> = {
       "Kvalitetssikrede toppturer i hele Norge, med rute, høydemeter, bratthet og skredterreng — skrevet for at du skal komme trygt opp og trygt ned.",
     ctaMap: "Se kartet",
 
-    plateLabel: "Toppkart — nøkkeldata",
-    plateSheet: "Ark 01 av 04",
+    plateLabel: "Toppkart i tall",
     plateRows: (f) => [
       { prop: "Toppturer i kartet", val: String(f.tours), rem: `Fra ${f.north} i nord til ${f.south} i sør` },
       { prop: "Regioner", val: String(f.regions), rem: "Alle med opptegnet rute og høydeprofil" },
@@ -142,8 +140,7 @@ const LANDING: Translated<LandingDict> = {
       "Quality-assured ski tours across Norway, with routes, vertical gain, steepness and avalanche terrain — written to get you safely up and safely back down.",
     ctaMap: "See the map",
 
-    plateLabel: "Toppkart — key figures",
-    plateSheet: "Sheet 01 of 04",
+    plateLabel: "Toppkart in numbers",
     plateRows: (f) => [
       { prop: "Tours on the map", val: String(f.tours), rem: `From ${f.north} in the north to ${f.south} in the south` },
       { prop: "Regions", val: String(f.regions), rem: "Every one with drawn routes and elevation profiles" },

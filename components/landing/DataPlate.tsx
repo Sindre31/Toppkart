@@ -1,4 +1,3 @@
-import { Blueprint } from "@/components/Blueprint";
 import type { Lang } from "@/lib/i18n";
 import { landingDict, type PlateFigures } from "@/lib/i18n/landing";
 import { REGIONS, TOURS } from "@/lib/tours";
@@ -25,39 +24,26 @@ function plateFigures(): PlateFigures {
   };
 }
 
-/** «Toppkart — nøkkeldata»: tittelblokk + to hairline-rader. */
+/** «Toppkart i tall»: tallene fra katalogen som kort, i samme form som
+ *  nøkkeltallene i turguiden — etikett, stort tall i Instrument Serif og en
+ *  merknad under. Tidligere en blåkopi-plate med arknummer og radnumre, lånt
+ *  fra «Industry»-uttrykket som v3 erstattet. */
 export function DataPlate({ lang }: { lang: Lang }) {
   const t = landingDict(lang);
   const figures = plateFigures();
   return (
-    <section aria-label={t.plateLabel} style={{ padding: "24px 0 60px" }}>
-      <Blueprint className="plate">
-        {/* Her sto det «TK-100» mellom tittelen og arknummeret. Det er et
-            tegningsnummer, og det er lånt: et blueprint har det fordi det finnes
-            en tegningsliste med hundre ark, og her er det ett ark og ingen
-            liste. Formspråket tåler å bli sitert, men ikke å påstå noe det ikke
-            finnes dekning for — resten av plata er tellinger fra katalogen. */}
-        <header className="plate-head">
-          <span>{t.plateLabel}</span>
-          <span>{t.plateSheet}</span>
-        </header>
-        <table className="table">
-          <tbody>
-            {/* The cells are styled from globals rather than inline so the
-                narrow-screen rule can restack them — an inline `width` would
-                out-specify any media query and keep forcing four columns. */}
-            {t.plateRows(figures).map((row, index) => (
-              <tr key={row.prop}>
-                <td className="hairline plate-idx">{String(index + 1).padStart(2, "0")}</td>
-                <td className="hairline plate-prop">{row.prop}</td>
-                <td className="hairline plate-val">{row.val}</td>
-                <td className="hairline plate-rem">{row.rem}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-        <p className="plate-foot">{t.plateFoot}</p>
-      </Blueprint>
+    <section aria-label={t.plateLabel} className="figures">
+      <h2 className="figures-label">{t.plateLabel}</h2>
+      <div className="figures-grid">
+        {t.plateRows(figures).map((row) => (
+          <div key={row.prop} className="figure">
+            <div className="figure-label">{row.prop}</div>
+            <div className="figure-value">{row.val}</div>
+            <p className="figure-note">{row.rem}</p>
+          </div>
+        ))}
+      </div>
+      <p className="note figures-foot">{t.plateFoot}</p>
     </section>
   );
 }
