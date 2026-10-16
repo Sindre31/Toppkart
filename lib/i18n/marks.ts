@@ -1,5 +1,5 @@
 /** NO/EN dictionary for favourites and done tours — the buttons on the guide
- *  and the map panel, the filter on the map, and «Mine turer» on Min side.
+ *  and the map panel, the filter on the map, and the «Mine turer» page.
  *  Its own file because three pages render it. */
 
 import type { Lang, Translated } from "./index";
@@ -10,8 +10,6 @@ export interface MarksDict {
   done: string;
   /** «Gått 5. oktober 2026» on the pressed button. */
   doneOn: (date: string) => string;
-  /** Title on the buttons for a signed-out reader. */
-  signInToMark: string;
   saveFailed: string;
   /* — the filter on /kart — */
   filterLabel: string;
@@ -22,8 +20,12 @@ export interface MarksDict {
   /* — list badges, for screen readers — */
   badgeFavorite: string;
   badgeDone: string;
-  /* — Min side — */
-  kicker: string;
+  /* — /mine-turer — */
+  metaTitle: string;
+  metaDescription: string;
+  heading: string;
+  /** Under the heading: where the list lives. */
+  storedLocally: string;
   favoritesTitle: string;
   doneTitle: string;
   doneTotals: (count: number, vertical: string) => string;
@@ -37,7 +39,6 @@ const MARKS: Translated<MarksDict> = {
     favorite: "Favoritt",
     done: "Har gått",
     doneOn: (date) => `Gått ${date}`,
-    signInToMark: "Logg inn for å lagre favoritter og turer du har gått",
     saveFailed: "Endringen ble ikke lagret. Prøv igjen.",
     filterLabel: "Mine turer",
     filterAll: "Alle turer",
@@ -46,20 +47,23 @@ const MARKS: Translated<MarksDict> = {
     filterNotDone: "Ikke gått",
     badgeFavorite: "Favoritt",
     badgeDone: "Gått",
-    kicker: "03 · Mine turer",
+    metaTitle: "Mine turer",
+    metaDescription: "Favorittene dine og turene du har gått, lagret på enheten din.",
+    heading: "Mine turer",
+    storedLocally:
+      "Lista ligger på denne enheten, i denne nettleseren. Toppkart har ingen kontoer, så den følger ikke med til en annen telefon eller PC.",
     favoritesTitle: "Favoritter",
     doneTitle: "Turer du har gått",
     doneTotals: (count, vertical) =>
       `${count} ${count === 1 ? "tur" : "turer"} · ${vertical} høydemeter`,
     emptyFavorites: "Ingen ennå. Trykk «Favoritt» på en tur, i kartet eller på guiden.",
     emptyDone: "Ingen ennå. Trykk «Har gått» på en tur når du har vært på toppen.",
-    unavailable: "Turlista di kunne ikke hentes akkurat nå.",
+    unavailable: "Turlista di kan ikke leses i denne nettleseren.",
   },
   en: {
     favorite: "Favourite",
     done: "Done it",
     doneOn: (date) => `Done ${date}`,
-    signInToMark: "Sign in to save favourites and the tours you have done",
     saveFailed: "The change was not saved. Try again.",
     filterLabel: "My tours",
     filterAll: "All tours",
@@ -68,14 +72,18 @@ const MARKS: Translated<MarksDict> = {
     filterNotDone: "Not done",
     badgeFavorite: "Favourite",
     badgeDone: "Done",
-    kicker: "03 · My tours",
+    metaTitle: "My tours",
+    metaDescription: "Your favourites and the tours you have done, saved on your device.",
+    heading: "My tours",
+    storedLocally:
+      "The list lives on this device, in this browser. Toppkart has no accounts, so it does not follow you to another phone or computer.",
     favoritesTitle: "Favourites",
     doneTitle: "Tours you have done",
     doneTotals: (count, vertical) =>
       `${count} ${count === 1 ? "tour" : "tours"} · ${vertical} m vertical`,
     emptyFavorites: "None yet. Press «Favourite» on a tour, on the map or on its guide.",
     emptyDone: "None yet. Press «Done it» on a tour once you have been to the top.",
-    unavailable: "Your list could not be loaded right now.",
+    unavailable: "Your list cannot be read in this browser.",
   },
 };
 

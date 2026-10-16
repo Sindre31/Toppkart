@@ -1,18 +1,25 @@
 /** Product constants and environment wiring.
  *
+ *  Toppkart is free. Every guide is open to everyone and there are no reader
+ *  accounts; the only sign-in left is for `/admin`.
+ *
  *  The app runs in two modes:
- *   - **live**: Supabase + Stripe env vars are present, real auth and billing.
- *   - **demo**: no keys configured. Auth and subscription state are kept in
- *     signed-ish httpOnly cookies so the whole flow stays clickable (the
- *     design-review path). Every integration module falls back to this.
+ *   - **live**: Supabase env vars are present — real admin sign-in and the
+ *     feedback table.
+ *   - **demo**: no keys configured. The admin session is kept in an httpOnly
+ *     cookie so the flow stays clickable. Every integration module falls back
+ *     to this.
  */
 
-export const PRICE = {
-  monthly: { amount: 29, label: "29 kr", planLabel: "Toppkart månedlig", perLabel: "per måned" },
-  yearly: { amount: 290, label: "290 kr", planLabel: "Toppkart årlig", perLabel: "per år — to måneder gratis" },
+/** Voluntary support. Shown on the front page and in the one-time prompt
+ *  (`components/SupportPrompt.tsx`). A public fact, read in the browser bundle,
+ *  so a constant rather than an env var. */
+export const VIPPS = {
+  /** Digits only — what gets copied to the clipboard. */
+  number: "96640540",
+  /** Grouped the way Norwegian mobile numbers are read out. */
+  label: "966 40 540",
 } as const;
-
-export const TRIAL_DAYS = 14;
 
 export const SITE = {
   name: "Toppkart",
@@ -64,35 +71,18 @@ export const env = {
   supabaseUrl: process.env.NEXT_PUBLIC_SUPABASE_URL ?? "",
   supabaseAnonKey: process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ?? "",
   supabaseServiceKey: process.env.SUPABASE_SERVICE_ROLE_KEY ?? "",
-  stripeSecretKey: process.env.STRIPE_SECRET_KEY ?? "",
-  stripeWebhookSecret: process.env.STRIPE_WEBHOOK_SECRET ?? "",
-  stripePriceMonthly: process.env.STRIPE_PRICE_MONTHLY ?? "",
-  stripePriceYearly: process.env.STRIPE_PRICE_YEARLY ?? "",
-  /** Customer portal configuration id (`bpc_…`), written by
-   *  `scripts/stripe-setup.mjs`. Optional: unset means the portal session falls
-   *  back to whatever configuration is default in the dashboard, which is how
-   *  an account set up by hand works. Set it and the portal's settings come
-   *  from the script rather than from someone's memory of a settings page. */
-  stripePortalConfiguration: process.env.STRIPE_PORTAL_CONFIGURATION ?? "",
   /** Comma-separated e-mail addresses that may open /admin/*. Server-side
    *  only — never give this a NEXT_PUBLIC_ prefix. Unset means nobody. */
   adminEmails: process.env.ADMIN_EMAILS ?? "",
-  resendApiKey: process.env.RESEND_API_KEY ?? "",
-  fromEmail: process.env.RESEND_FROM_EMAIL ?? "Toppkart <ingen-svar@toppkart.no>",
   siteUrl:
     process.env.NEXT_PUBLIC_SITE_URL ??
     (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "http://localhost:3000"),
 };
 
-/** `ADMIN_EMAILS` as a normalised list. Empty when unset.
+/** `ADMIN_EMAILS` as a normalised list. Empty when unset. Read by
+ *  `lib/admin.ts` to decide who may open `/admin/*`.
  *
- *  Two callers, and they want the same list for opposite reasons: `lib/admin.ts`
- *  asks who may open `/admin/*`, and `lib/alerts.ts` asks who to wake when a
- *  webhook fails. The parsing lived in the first of them until the second
- *  needed it; splitting the string in two places is how a trailing space in one
- *  of them becomes a lockout in one place and a lost alert in the other.
- *
- *  **Empty means nobody**, never everybody. Both callers depend on that. */
+ *  **Empty means nobody**, never everybody. */
 export function adminEmailList(): string[] {
   return env.adminEmails
     .split(",")
@@ -101,12 +91,8 @@ export function adminEmailList(): string[] {
 }
 
 export const isSupabaseConfigured = Boolean(env.supabaseUrl && env.supabaseAnonKey);
-export const isStripeConfigured = Boolean(env.stripeSecretKey);
-export const isResendConfigured = Boolean(env.resendApiKey);
 
 /** Cookie names used by demo mode. */
 export const DEMO_COOKIE = {
   session: "tk_demo_session",
-  subscription: "tk_demo_sub",
-  marks: "tk_demo_marks",
 } as const;

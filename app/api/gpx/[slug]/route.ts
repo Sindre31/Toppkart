@@ -1,6 +1,5 @@
 import { NextResponse } from "next/server";
 
-import { getViewer } from "@/lib/access";
 import type { Lang } from "@/lib/i18n";
 import { getLang } from "@/lib/i18n/server";
 import { guideDict } from "@/lib/i18n/guide";
@@ -17,10 +16,9 @@ import type { Tour } from "@/lib/types";
  *  NB: dette er generert geometri, ikke et innspilt spor. Den viser hvor ruta
  *  går, men erstatter ikke kart, skredvarsel og egne vurderinger i felt. I
  *  produksjon serveres kvalitetssikret GPX fra Supabase Storage (`gpx_path` på
- *  `tours`), signert per forespørsel etter samme tilgangssjekk som under.
+ *  `tours`).
  *
- *  Gaten er serverside: uten aktivt abonnement eller prøveperiode sendes du
- *  til /betaling, slik at fila aldri kan hentes ved å gjette URL-en.
+ *  Åpen for alle — Toppkart er gratis.
  *
  *  The strings inside the file follow the reader's language: the description
  *  and the summit waypoint type are read in whatever GPS app the file is opened
@@ -86,11 +84,6 @@ export async function GET(request: Request, { params }: { params: Promise<{ slug
       status: 404,
       headers: { "Content-Type": "text/plain; charset=utf-8" },
     });
-  }
-
-  const { hasAccess } = await getViewer();
-  if (!hasAccess) {
-    return NextResponse.redirect(new URL("/betaling", request.url), 303);
   }
 
   const route = routeProfile(tour, routeId);

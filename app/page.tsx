@@ -6,10 +6,9 @@ import { Blueprint, SectionKicker } from "@/components/Blueprint";
 import { JsonLd } from "@/components/JsonLd";
 import { SiteFooter, SiteNav } from "@/components/SiteChrome";
 import { DataPlate } from "@/components/landing/DataPlate";
-import { TrialSignupRow } from "@/components/landing/TrialSignupRow";
 import styles from "@/components/landing/landing.module.css";
 import { RouteMap } from "@/components/guide/RouteMap";
-import { getViewer } from "@/lib/access";
+import { VippsNumber } from "@/components/VippsNumber";
 import { getLang } from "@/lib/i18n/server";
 import { landingDict } from "@/lib/i18n/landing";
 import { siteJsonLd } from "@/lib/structured-data";
@@ -19,9 +18,6 @@ export async function generateMetadata(): Promise<Metadata> {
   const t = landingDict(await getLang());
   return { title: t.metaTitle, description: t.metaDescription, alternates: { canonical: "/" } };
 }
-
-/** Årsprisen (290 kr/år — to måneder gratis) er skrudd av. Sett til true for å vise raden. */
-const SHOW_ANNUAL = false;
 
 /** Turen figuren i seksjon 03 tegner.
  *
@@ -44,20 +40,6 @@ export default async function LandingPage() {
   const lang = await getLang();
   const t = landingDict(lang);
 
-  /* Forsida sto og solgte prøveperioden til folk som allerede hadde kjøpt.
-     «Prøv gratis i 14 dager» i heroen og påmeldingsfeltet i seksjon 04 pekte
-     begge til kassa, og en abonnent som trykker der starter abonnement nummer
-     to — ikke fordi vedkommende vil det, men fordi sida ikke visste bedre.
-
-     Navigasjonen har alltid visst det (`AccountNav` bytter «Prøv gratis» mot
-     «Min side» så snart det finnes en sesjon); det var bare sidekroppen som
-     ikke spurte. Nå gjør den det. `hasAccess`, ikke bare «er innlogget»: en
-     som er logget inn uten abonnement skal fortsatt få tilbudet. */
-  const { hasAccess } = await getViewer();
-
-  /* Geometrien er fri — den står allerede på `/kart` for alle. Det er
-     ruteteksten, høydeprofilen og skredterrenget som er bak betalingsmuren, og
-     ingen av dem er her. */
   const safetyPeak = getTour(SAFETY_PEAK.slug);
   const safetyRoute = safetyPeak ? routeProfile(safetyPeak) : null;
 
@@ -94,30 +76,13 @@ export default async function LandingPage() {
                 {t.lede}
               </p>
               <div style={{ display: "flex", gap: 10, flexWrap: "wrap", alignItems: "center", marginTop: 28 }}>
-                {hasAccess ? (
-                  /* Kartet er det abonnenten kom for. Det står som andreknapp
-                     for alle andre, og rykker opp til første her. */
-                  <>
-                    <Link className="btn btn-primary" href="/kart">
-                      {t.ctaMap}
-                    </Link>
-                    <Link className="btn btn-secondary" href="/turer">
-                      {t.ctaTours}
-                    </Link>
-                  </>
-                ) : (
-                  <>
-                    <Link className="btn btn-primary" href="/betaling">
-                      {t.ctaTrial}
-                    </Link>
-                    <Link className="btn btn-secondary" href="/kart">
-                      {t.ctaMap}
-                    </Link>
-                  </>
-                )}
-                <span style={{ fontSize: 13, color: muted(60) }}>
-                  {hasAccess ? t.priceNoteActive : t.priceNote}
-                </span>
+                <Link className="btn btn-primary" href="/kart">
+                  {t.ctaMap}
+                </Link>
+                <Link className="btn btn-secondary" href="/turer">
+                  {t.ctaTours}
+                </Link>
+                <span style={{ fontSize: 13, color: muted(60) }}>{t.priceNote}</span>
               </div>
             </div>
           </section>
@@ -162,7 +127,7 @@ export default async function LandingPage() {
                    stemningsbilde: et grått kart leses som bakgrunn. Poenget med
                    seksjonen er at guidene er bygget rundt terrenget, og da må
                    terrenget være lesbart — skog mot snaufjell, bre, myr, merkede
-                   løyper. Det er den samme figuren en abonnent får, som er
+                   løyper. Det er den samme figuren tursidene viser, som er
                    akkurat det seksjonen påstår. */
                 caption={false}
               >
@@ -171,68 +136,26 @@ export default async function LandingPage() {
             ) : null}
           </section>
 
-          {/* — 04 · Abonnement — */}
-          <section id="pris" style={{ padding: "60px 0 48px" }}>
-            <SectionKicker>{t.planKicker}</SectionKicker>
+          {/* — 04 · Støtt Toppkart — */}
+          <section id="stott" style={{ padding: "60px 0 48px" }}>
+            <SectionKicker>{t.supportKicker}</SectionKicker>
             <div className="grid-split">
               <div>
                 <h3 style={{ fontSize: 24, lineHeight: "24px", letterSpacing: "0.02em", textTransform: "uppercase", margin: 0 }}>
-                  {t.planHeading}
+                  {t.supportHeading}
                 </h3>
                 <p className="prose" style={{ margin: "16px 0 0", maxWidth: "52ch" }}>
-                  {t.planBody}
+                  {t.supportBody}
                 </p>
-                {hasAccess ? (
-                  /* Prisplata ved siden av blir stående: den beskriver
-                     produktet, og det er like sant for en abonnent. Det er
-                     bare oppfordringa om å begynne som ikke er det. */
-                  <div style={{ display: "flex", gap: 10, flexWrap: "wrap", marginTop: 24 }}>
-                    <Link className="btn btn-primary" href="/min-side">
-                      {t.planAccount}
-                    </Link>
-                  </div>
-                ) : (
-                  <TrialSignupRow lang={lang} />
-                )}
-                {/* Bare for den som ennå ikke abonnerer. Merknaden forklarte
-                    prisen og bindingstida, og for en abonnent ble den byttet
-                    mot «Du abonnerer allerede. Kvitteringer, kort og oppsigelse
-                    ligger på Min side» — en beskjed om hvor kontosida er, på
-                    forsida, til noen som allerede har vært innom den. Knappen
-                    ved siden av sier «Min side» og gjør den samme jobben uten
-                    å bruke et avsnitt på det. */}
-                {hasAccess ? null : (
-                  <p className="note" style={{ margin: "12px 0 0" }}>
-                    {t.planNote}
-                  </p>
-                )}
+                <p className="note" style={{ margin: "12px 0 0" }}>
+                  {t.supportNote}
+                </p>
               </div>
               <Blueprint style={{ padding: 24 }}>
-                <div style={{ display: "flex", alignItems: "baseline", gap: 10 }}>
-                  <span
-                    style={{
-                      fontFamily: "var(--font-heading)",
-                      fontWeight: 600,
-                      fontSize: 64,
-                      lineHeight: 1,
-                      letterSpacing: "0.01em",
-                    }}
-                  >
-                    {t.planPrice}
-                  </span>
-                  <span style={{ fontSize: 15, color: muted(70) }}>{t.planPriceUnit}</span>
-                </div>
-                {SHOW_ANNUAL ? (
-                  <div style={{ display: "flex", alignItems: "baseline", gap: 10, marginTop: 10 }}>
-                    <span style={{ fontFamily: "var(--font-heading)", fontWeight: 600, fontSize: 26, lineHeight: 1 }}>
-                      {t.planAnnualPrice}
-                    </span>
-                    <span style={{ fontSize: 14, color: muted(70) }}>{t.planAnnualUnit}</span>
-                  </div>
-                ) : null}
+                <VippsNumber lang={lang} />
                 <hr className="hr" style={{ margin: "20px 0" }} />
                 <ul className="numbered">
-                  {t.planPoints.map((point, index) => (
+                  {t.supportPoints.map((point, index) => (
                     <li key={point}>
                       <span>{String(index + 1).padStart(2, "0")}</span>
                       {point}

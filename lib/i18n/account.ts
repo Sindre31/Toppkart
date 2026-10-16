@@ -1,18 +1,9 @@
-/** NO/EN dictionary for sign-in (`/logg-inn`) and the account page
- *  (`/min-side`) — headings, form copy, subscription state, billing actions and
- *  every error the two pages can show.
+/** NO/EN dictionary for sign-in (`/logg-inn`).
  *
- *  Subscription *state* is never translated: `Subscription["status"]` and the
- *  plan ids (`"maned"` / `"ar"`) stay exactly as the database and Stripe write
- *  them. Only the label a reader sees is picked from here.
- *
- *  Keys that carry data — a date, a price, an email address — are functions, so
- *  the sentence order stays translatable instead of being glued together in JSX.
- *  Receipt rows are localised separately, in `@/lib/invoices`, because their
- *  strings come from Stripe rather than from the page.
+ *  Toppkart has no reader accounts. The sign-in page is the way into `/admin`
+ *  for the addresses in `ADMIN_EMAILS`, and is linked from nowhere on the site.
  */
 
-import { SITE } from "@/lib/config";
 import type { Lang, Translated } from "./index";
 import { pick } from "./index";
 
@@ -26,329 +17,43 @@ export interface AccountDict {
   loginIntro: string;
   googleButton: string;
   googleRedirecting: string;
-  /** Standing note under the button: Google is the only way in. */
+  /** Standing note under the button. */
   googleOnlyNote: string;
-  /** Trailing question + link under the card, for readers without an account. */
-  newHere: string;
-  newHereLink: string;
   /* — sign-in: errors — */
   /** Google handed back an error, or the provider is not enabled in Supabase. */
   errGoogleFailed: string;
   /** The round-trip came back but the session exchange failed. */
   errSignInFailed: string;
-
-  /* — account: metadata and header — */
-  accountMetaTitle: string;
-  accountMetaDescription: string;
-  accountHeading: string;
-  signedInAs: string;
-  /* — account: section kickers — */
-  kickerSubscription: string;
-  kickerReceipts: string;
-  kickerAccount: string;
-  /* — account: the plan plate — */
-  planTitle: (price: string) => string;
-  pricePerMonth: string;
-  pricePerYear: string;
-  statusNone: string;
-  statusTrialing: string;
-  statusActive: string;
-  /** Oppsagt, men perioden løper enda: «Avsluttes 22. august 2026».
-   *
-   *  Egen tilstand fordi merket ellers sier «Avsluttet» i det sekundet noen
-   *  sier opp, med to uker igjen av tilgangen. Notatet under sa riktig nok
-   *  «tilgang ut perioden», men et merke leses for seg, og «Avsluttet» leses
-   *  som at guidene er stengt nå. */
-  statusEnding: (date: string) => string;
-  /** Samme tilstand uten dato — vi vet at den avsluttes, ikke når. */
-  statusEndingUndated: string;
-  statusCancelled: string;
-  statusPastDue: string;
-  noteNone: string;
-  noteTrialUntil: (date: string, price: string) => string;
-  noteTrial: (price: string) => string;
-  noteRenewsMonthly: string;
-  noteRenewsYearly: string;
-  noteEnding: string;
-  noteCancelled: string;
-  notePastDue: string;
-  startTrial: string;
-  /* — account: the subscription table — */
-  rowNextCharge: string;
-  rowPaymentMethod: string;
-  rowMemberSince: string;
-  nextChargeNone: string;
-  /** Oppsagt, men perioden løper: det kommer ingen trekk, og abonnementet er
-   *  ikke avsluttet ennå — så «Ingen — abonnementet er avsluttet» ville vært
-   *  feil på begge halvdeler. */
-  nextChargeEnding: string;
-  nextChargeOn: (price: string, date: string) => string;
-  nextChargeAfterTrial: (price: string) => string;
-  nextChargeAtRenewal: (price: string) => string;
-  noPaymentMethod: string;
-  /** `("Visa", "4242", "08/28")` → «Visa •••• 4242 (utløper 08/28)». */
-  cardLine: (brand: string, last4: string, expiry: string) => string;
-  stripeNote: string;
-  /* — account: billing actions and the cancel dialog — */
-  changePaymentMethod: string;
-  resumeSubscription: string;
-  /** For en som faktisk har falt ut. «Gjenoppta» kan ikke virke der — Stripe
-   *  har slettet abonnementet, og det finnes ikke noe å skru `cancel_at_period_end`
-   *  av på — så veien tilbake går gjennom kassa. */
-  restartSubscription: string;
-  cancelSubscription: string;
-  portalDemoNote: string;
-  errPortalFailed: string;
-  errSubscriptionFailed: string;
-  cancelDialogTitle: string;
-  cancelDialogBody: (periodEnd: string) => string;
-  keepSubscription: string;
-  confirmCancel: string;
-  /** Stands in for the period end when no date is known. */
-  periodEndFallback: string;
-  /* — account: receipts — */
-  receiptDate: string;
-  receiptDescription: string;
-  receiptAmount: string;
-  receiptStatus: string;
-  receiptPdf: string;
-  receiptsEmpty: string;
-  /* — account: the e-mail card, read-only — */
-  emailCardTitle: string;
-  emailCardNote: string;
-  signOutCardTitle: string;
-  signOutCardNote: string;
-  signOutCardAction: string;
-  /* — account: deleting the account, for good — */
-  deleteCardTitle: string;
-  deleteCardNote: string;
-  deleteCardAction: string;
-  deleteDialogTitle: string;
-  deleteDialogBody: string;
-  /** Hva som blir borte og hva som blir stående. Punktvis, fordi leseren som
-   *  åpner denne dialogen har ett bestemt spørsmål og skal finne svaret uten å
-   *  lese et avsnitt. */
-  deleteDialogPoints: readonly string[];
-  /** Ordet som må skrives. Holdt kort og på leserens eget språk — det skal være
-   *  et bevisst tastetrykk, ikke en staveprøve. */
-  deleteConfirmWord: string;
-  deleteConfirmLabel: (word: string) => string;
-  deleteDialogKeep: string;
-  deleteDialogConfirm: string;
-  deleteDialogBusy: string;
-  errDeleteFailed: string;
-  /* — account: footer — */
-  aboutSubscription: string;
 }
 
 const ACCOUNT: Translated<AccountDict> = {
   no: {
     loginMetaTitle: "Logg inn",
-    loginMetaDescription:
-      "Logg inn på Toppkart med Google-kontoen din — ingen passord å huske.",
-    loginKicker: "Logg inn",
-    loginHeading: "Uten passord",
+    loginMetaDescription: "Innlogging for drift av Toppkart.",
+    loginKicker: "Drift",
+    loginHeading: "Logg inn",
     loginIntro:
-      "Logg inn med Google-kontoen din. Ingen passord, ingen ny konto å opprette.",
+      "Denne innloggingen er bare for drift av Toppkart. Toppkart er gratis og trenger ingen konto — alle turene og guidene er åpne.",
     googleButton: "Fortsett med Google",
     googleRedirecting: "Sender deg til Google …",
-    googleOnlyNote:
-      "Google er eneste innloggingsmåte. Vi lagrer e-postadressen fra Google-kontoen din, og bruker den bare til kvitteringer.",
-    newHere: "Ny her?",
-    newHereLink: "Prøv gratis i 14 dager — deretter 29 kr/mnd",
+    googleOnlyNote: "Bare adresser med drifttilgang slipper inn.",
     errGoogleFailed:
       "Vi fikk ikke kontakt med Google, eller innlogginga ble avbrutt. Prøv igjen.",
     errSignInFailed: "Vi klarte ikke å fullføre innlogginga. Prøv igjen.",
-
-    accountMetaTitle: "Min side",
-    accountMetaDescription: "Abonnement, kvitteringer og kontoinnstillinger for Toppkart.",
-    accountHeading: "Min side",
-    signedInAs: "Innlogget som",
-    kickerSubscription: "01 · Abonnement",
-    kickerReceipts: "02 · Kvitteringer",
-    kickerAccount: "04 · Konto",
-    planTitle: (price) => `Toppkart — ${price}`,
-    pricePerMonth: "29 kr/mnd",
-    pricePerYear: "290 kr/år",
-    statusNone: "Ingen abonnement",
-    statusTrialing: "Prøveperiode",
-    statusActive: "Aktiv",
-    statusEnding: (date) => `Avsluttes ${date}`,
-    statusEndingUndated: "Avsluttes ved periodeslutt",
-    statusCancelled: "Avsluttet",
-    statusPastDue: "Betaling mangler",
-    noteNone:
-      "Du har ikke et aktivt abonnement — start prøveperioden for å låse opp turguidene.",
-    noteTrialUntil: (date, price) => `Gratis til ${date} — deretter ${price}.`,
-    noteTrial: (price) => `Gratis prøveperiode — deretter ${price}.`,
-    noteRenewsMonthly: "Fornyes automatisk hver måned.",
-    noteRenewsYearly: "Fornyes automatisk hvert år.",
-    noteEnding: "Tilgang ut perioden — ingen flere trekk.",
-    noteCancelled: "Abonnementet er avsluttet, og turguidene er låst igjen.",
-    notePastDue: "Vi fikk ikke trukket siste betaling — oppdater betalingsmetoden.",
-    startTrial: "Start gratis prøveperiode",
-    rowNextCharge: "Neste trekk",
-    rowPaymentMethod: "Betalingsmetode",
-    rowMemberSince: "Medlem siden",
-    nextChargeNone: "Ingen — abonnementet er avsluttet",
-    nextChargeEnding: "Ingen flere trekk",
-    nextChargeOn: (price, date) => `${price} den ${date}`,
-    nextChargeAfterTrial: (price) => `${price} når prøveperioden er over`,
-    nextChargeAtRenewal: (price) => `${price} ved neste fornyelse`,
-    noPaymentMethod: "Ingen betalingsmetode registrert",
-    cardLine: (brand, last4, expiry) => `${brand} •••• ${last4} (utløper ${expiry})`,
-    stripeNote:
-      "Betaling og kort håndteres sikkert av Stripe. Kvittering sendes på e-post etter hvert trekk.",
-    changePaymentMethod: "Endre betalingsmetode",
-    resumeSubscription: "Gjenoppta abonnement",
-    restartSubscription: "Start abonnement på nytt",
-    cancelSubscription: "Avslutt abonnement",
-    portalDemoNote: "Stripe-portalen åpnes her når betalingsnøklene er satt opp.",
-    errPortalFailed: "Vi fikk ikke åpnet betalingsportalen. Prøv igjen om litt.",
-    errSubscriptionFailed: "Vi fikk ikke oppdatert abonnementet. Prøv igjen om litt.",
-    cancelDialogTitle: "Avslutte abonnementet?",
-    cancelDialogBody: (periodEnd) =>
-      `Du beholder tilgang ut inneværende periode (${periodEnd}). Etter det låses turguidene, men kontoen og lagrede turer beholdes.`,
-    keepSubscription: "Behold abonnement",
-    confirmCancel: "Avslutt",
-    periodEndFallback: "periodeslutt",
-    receiptDate: "Dato",
-    receiptDescription: "Beskrivelse",
-    receiptAmount: "Beløp",
-    receiptStatus: "Status",
-    receiptPdf: "PDF",
-    receiptsEmpty: "Ingen kvitteringer ennå — første trekk kommer etter prøveperioden.",
-    emailCardTitle: "E-post",
-    emailCardNote:
-      "Adressen kommer fra Google-kontoen du logger inn med, og kan ikke endres her. Endrer du den hos Google, følger den etter.",
-    signOutCardTitle: "Logg ut",
-    signOutCardNote:
-      "Logger deg ut på denne enheten. Abonnementet løper som før, og du kommer inn igjen med Google når du vil.",
-    signOutCardAction: "Logg ut",
-    deleteCardTitle: "Slett kontoen",
-    deleteCardNote:
-      "Sletter kontoen din og alt vi har lagret om deg. Et løpende abonnement blir sagt opp med det samme. Dette kan ikke angres.",
-    deleteCardAction: "Slett kontoen",
-    deleteDialogTitle: "Slette kontoen?",
-    deleteDialogBody:
-      "Dette gjøres med det samme, og verken du eller vi kan hente den tilbake etterpå.",
-    deleteDialogPoints: [
-      "Abonnementet blir sagt opp nå. Du mister tilgangen til turguidene med det samme, også om du har betalt for resten av perioden.",
-      "Profilen, abonnementsdataene og tilbakemeldingene dine blir slettet.",
-      "Kvitteringene dine blir stående hos Stripe i fem år. Det er regnskapsmateriale, og bokføringsloven krever det.",
-      "Du kan lage en ny konto med den samme Google-kontoen når som helst. Den starter tom, uten prøveperiode.",
-    ],
-    deleteConfirmWord: "SLETT",
-    deleteConfirmLabel: (word) => `Skriv ${word} for å bekrefte`,
-    deleteDialogKeep: "Avbryt",
-    deleteDialogConfirm: "Slett kontoen",
-    deleteDialogBusy: "Sletter…",
-    errDeleteFailed: `Vi fikk ikke slettet kontoen, og ingenting er endret. Prøv igjen om litt, eller skriv til ${SITE.supportEmail}.`,
-    aboutSubscription: "Om abonnementet",
   },
   en: {
     loginMetaTitle: "Log in",
-    loginMetaDescription:
-      "Sign in to Toppkart with your Google account — no password to remember.",
-    loginKicker: "Log in",
-    loginHeading: "No password",
+    loginMetaDescription: "Sign-in for running Toppkart.",
+    loginKicker: "Admin",
+    loginHeading: "Log in",
     loginIntro:
-      "Sign in with your Google account. No password, no new account to create.",
+      "This sign-in is only for running Toppkart. Toppkart is free and needs no account — every tour and guide is open.",
     googleButton: "Continue with Google",
     googleRedirecting: "Taking you to Google …",
-    googleOnlyNote:
-      "Google is the only way to sign in. We store the email address from your Google account, and use it only for receipts.",
-    newHere: "New here?",
-    newHereLink: "Try free for 14 days — then 29 kr/month",
+    googleOnlyNote: "Only addresses with admin access get in.",
     errGoogleFailed:
       "We could not reach Google, or the sign-in was cancelled. Try again.",
     errSignInFailed: "We could not complete the sign-in. Try again.",
-
-    accountMetaTitle: "My account",
-    accountMetaDescription: "Subscription, receipts and account settings for Toppkart.",
-    accountHeading: "My account",
-    signedInAs: "Signed in as",
-    kickerSubscription: "01 · Subscription",
-    kickerReceipts: "02 · Receipts",
-    kickerAccount: "04 · Account",
-    planTitle: (price) => `Toppkart — ${price}`,
-    pricePerMonth: "29 kr/month",
-    pricePerYear: "290 kr/year",
-    statusNone: "No subscription",
-    statusTrialing: "Free trial",
-    statusActive: "Active",
-    statusEnding: (date) => `Ends ${date}`,
-    statusEndingUndated: "Ends at the end of the period",
-    statusCancelled: "Cancelled",
-    statusPastDue: "Payment due",
-    noteNone:
-      "You do not have an active subscription — start the free trial to unlock the guides.",
-    noteTrialUntil: (date, price) => `Free until ${date} — then ${price}.`,
-    noteTrial: (price) => `Free trial — then ${price}.`,
-    noteRenewsMonthly: "Renews automatically every month.",
-    noteRenewsYearly: "Renews automatically every year.",
-    noteEnding: "Access runs to the end of the period — no further charges.",
-    noteCancelled: "The subscription has ended, and the guides are locked again.",
-    notePastDue: "The last payment did not go through — update your payment method.",
-    startTrial: "Start free trial",
-    rowNextCharge: "Next charge",
-    rowPaymentMethod: "Payment method",
-    rowMemberSince: "Member since",
-    nextChargeNone: "None — the subscription has ended",
-    nextChargeEnding: "No further charges",
-    nextChargeOn: (price, date) => `${price} on ${date}`,
-    nextChargeAfterTrial: (price) => `${price} when the trial ends`,
-    nextChargeAtRenewal: (price) => `${price} at the next renewal`,
-    noPaymentMethod: "No payment method saved",
-    cardLine: (brand, last4, expiry) => `${brand} •••• ${last4} (expires ${expiry})`,
-    stripeNote:
-      "Payments and card details are handled securely by Stripe. A receipt is emailed after every charge.",
-    changePaymentMethod: "Change payment method",
-    resumeSubscription: "Resume subscription",
-    restartSubscription: "Start the subscription again",
-    cancelSubscription: "Cancel subscription",
-    portalDemoNote: "The Stripe portal opens here once the payment keys are set up.",
-    errPortalFailed: "We could not open the billing portal. Try again in a moment.",
-    errSubscriptionFailed: "We could not update your subscription. Try again in a moment.",
-    cancelDialogTitle: "Cancel your subscription?",
-    cancelDialogBody: (periodEnd) =>
-      `You keep access until the end of the current period (${periodEnd}). After that the guides lock again, but your account and saved tours stay.`,
-    keepSubscription: "Keep subscription",
-    confirmCancel: "Cancel subscription",
-    periodEndFallback: "the end of the period",
-    receiptDate: "Date",
-    receiptDescription: "Description",
-    receiptAmount: "Amount",
-    receiptStatus: "Status",
-    receiptPdf: "PDF",
-    receiptsEmpty: "No receipts yet — the first charge comes after the trial.",
-    emailCardTitle: "Email",
-    emailCardNote:
-      "This address comes from the Google account you sign in with, and cannot be changed here. Change it at Google and it follows.",
-    signOutCardTitle: "Log out",
-    signOutCardNote:
-      "Signs you out on this device. The subscription carries on as before, and Google lets you back in whenever you like.",
-    signOutCardAction: "Log out",
-    deleteCardTitle: "Delete account",
-    deleteCardNote:
-      "Deletes your account and everything we hold about you. A running subscription is cancelled straight away. This cannot be undone.",
-    deleteCardAction: "Delete account",
-    deleteDialogTitle: "Delete the account?",
-    deleteDialogBody:
-      "This happens straight away, and neither you nor we can get it back afterwards.",
-    deleteDialogPoints: [
-      "The subscription is cancelled now. You lose access to the guides immediately, even if you have paid for the rest of the period.",
-      "Your profile, subscription data and feedback are deleted.",
-      "Your receipts stay at Stripe for five years. They are accounting material, and the Bookkeeping Act requires it.",
-      "You can create a new account with the same Google account whenever you like. It starts empty, with no trial.",
-    ],
-    deleteConfirmWord: "DELETE",
-    deleteConfirmLabel: (word) => `Type ${word} to confirm`,
-    deleteDialogKeep: "Cancel",
-    deleteDialogConfirm: "Delete account",
-    deleteDialogBusy: "Deleting…",
-    errDeleteFailed: `We could not delete the account, and nothing has changed. Try again in a moment, or write to ${SITE.supportEmail}.`,
-    aboutSubscription: "About the subscription",
   },
 };
 

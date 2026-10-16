@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { NavLinks } from "@/components/SiteChrome";
-import { getViewer } from "@/lib/access";
 import { getLang } from "@/lib/i18n/server";
 import { mapDict } from "@/lib/i18n/map";
 import { localizeTours } from "@/lib/i18n/content";
@@ -16,14 +15,13 @@ export async function generateMetadata(): Promise<Metadata> {
   return { title: t.metaTitle, description: t.metaDescription, alternates: { canonical: "/kart" } };
 }
 
-/** The map is open to everyone; `hasAccess` only decides whether the detail
- *  panel shows the locked block or the subscriber block. */
+/** The map — and every guide behind it — is open to everyone. */
 export default async function KartPage({
   searchParams,
 }: {
   searchParams: Promise<{ tur?: string | string[]; rute?: string | string[] }>;
 }) {
-  const [viewer, params, lang] = await Promise.all([getViewer(), searchParams, getLang()]);
+  const [params, lang] = await Promise.all([searchParams, getLang()]);
 
   const first = (v: string | string[] | undefined) => (Array.isArray(v) ? v[0] : v);
 
@@ -50,7 +48,6 @@ export default async function KartPage({
   return (
     <MapView
       lang={lang}
-      hasAccess={viewer.hasAccess}
       nav={<NavLinks lang={lang} current="/kart" />}
       tours={localizeTours(TOURS, lang)}
       regions={REGIONS}

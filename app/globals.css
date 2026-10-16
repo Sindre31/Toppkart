@@ -333,38 +333,6 @@ textarea.input { min-height: 90px; resize: vertical; }
 }
 .table tbody tr:hover { background: color-mix(in srgb, var(--color-text) 4%, transparent); }
 
-/* Nøkkel/verdi-tabellen i abonnementsplata på /min-side. Stilen lå som inline
-   `style` på hver celle, og da fantes det ingen vei til å gi den et annet
-   oppsett på telefon: en inline-regel vinner over enhver mediespørring. */
-.table-kv .kv-l {
-  width: 34%; padding: 12px 0 12px 24px;
-  font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600;
-  color: color-mix(in srgb, var(--color-text) 60%, transparent);
-}
-.table-kv .kv-v { padding: 12px 24px 12px 0; font-size: 15px; }
-
-/* To kolonner side om side trenger mer enn en telefon har. «Betalingsmetode»
-   koster 130px satt med versaler og sperring, «Visa •••• 4242 (utløper 08/28)»
-   drøyt 210, og med cellepaddingen er det 390px innhold i en 320px skjerm —
-   altså skrenger hele kontosida sideveis, og kortet blir stående og klemme.
-
-   Nøkkelen over verdien i stedet. Da er den lengste linja i raden verdien
-   alene, som får hele bredden og kan brekke om den må. Samme grep som plata på
-   forsida gjør med bemerkningskolonnen sin, og av samme grunn. */
-@media (max-width: 620px) {
-  .table-kv, .table-kv tbody { display: block; }
-  .table-kv tr {
-    display: block; padding: 10px 16px;
-    border-bottom: 1px solid color-mix(in srgb, var(--color-text) 8%, transparent);
-  }
-  .table-kv td { display: block; width: auto; padding: 0; border-bottom: 0; }
-  .table-kv .kv-l { letter-spacing: 0.04em; }
-  /* Kortlinja er det lengste ordet i tabellen og har ingen naturlig brekkplass
-     mellom «••••» og sifrene. `anywhere` er siste utvei, ikke førstevalget:
-     mellomromma brukes først. */
-  .table-kv .kv-v { margin-top: 2px; overflow-wrap: anywhere; }
-}
-
 /* En tabell som er bredere enn telefonen skal skrenge inni sin egen ramme, ikke
    dra hele sida med seg. Kvitteringene har fem kolonner og gjorde det siste. */
 .table-scroll { overflow-x: auto; }
@@ -415,6 +383,33 @@ textarea.input { min-height: 90px; resize: vertical; }
   width: min(520px, 100%);
   background: var(--color-surface);
 }
+/* — support (Vipps) — */
+/* Same reason as `.feedback-dialog` for the restated background. */
+.dialog.support-dialog {
+  background: var(--color-surface);
+}
+.vipps {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 8px 12px;
+}
+.vipps-label {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-accent-700);
+}
+.vipps-number {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  margin-right: auto;
+}
+
 /* The honeypot. Off-screen rather than `display: none`, which some form-fillers
    know to skip; `aria-hidden` on the wrapper keeps it away from screen readers,
    and `tabindex="-1"` keeps it out of the keyboard path. */
@@ -512,11 +507,6 @@ a.btn-secondary, a.btn-secondary:hover { color: var(--color-text); }
   .site-nav .nav-brand { letter-spacing: 0.04em; flex: none; }
   /* Nothing in a single row may wrap or shrink into an ellipsis. */
   .site-nav > * { white-space: nowrap; }
-  /* Unntaket er kassa-notisen, som er den eneste teksten i raden som ikke er en
-     kontroll. «Sikker betaling via Stripe» koster 155px, og på 320px skjøv den
-     hele sida sideveis. To linjer i baren er et lite tap; en side som skrenger
-     sidelengs under kortskjemaet er et større. */
-  .site-nav .nav-muted { white-space: normal; }
   /* Bare padding her. Skriftstørrelsen sto tidligere i hver av disse reglene og
      satte 13px — én av de tre størrelsene baren hadde samtidig. Plassen som
      trengtes ble frigjort da lenkene flyttet inn i menyen; raden holder nå

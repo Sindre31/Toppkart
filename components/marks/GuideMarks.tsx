@@ -5,8 +5,8 @@ import { MarkButtons } from "./MarkButtons";
 import { useTourMarks } from "./useTourMarks";
 
 /** Favoritt og gått på turguiden. Sida rendres på serveren; markeringene er
- *  leserens egne og hentes her, så sida kan bufres og lagres offline uten å
- *  bære med seg noens liste. */
+ *  leserens egne og leses fra enheten her, så sida kan bufres og lagres
+ *  offline uten å bære med seg noens liste. */
 export function GuideMarks({ slug, lang }: { slug: string; lang: Lang }) {
   const { state, update, failed } = useTourMarks();
   return (
@@ -16,7 +16,6 @@ export function GuideMarks({ slug, lang }: { slug: string; lang: Lang }) {
       state={state}
       failed={failed}
       onChange={update}
-      returnTo={`/tur/${slug}`}
     />
   );
 }

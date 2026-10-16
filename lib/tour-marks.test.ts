@@ -1,13 +1,6 @@
 import { describe, expect, it } from "vitest";
 
-import {
-  applyMark,
-  decodeDemoMarks,
-  doneTotals,
-  encodeDemoMarks,
-  parseMarkRequest,
-  type TourMark,
-} from "@/lib/tour-marks";
+import { applyMark, doneTotals, parseStoredMarks, type TourMark } from "@/lib/tour-marks";
 
 const today = "2026-10-05";
 
@@ -42,40 +35,28 @@ describe("applyMark", () => {
   });
 });
 
-describe("parseMarkRequest", () => {
-  it("accepts one field or both", () => {
-    expect(parseMarkRequest({ slug: "slogen", favorite: true })).toEqual({ slug: "slogen", favorite: true });
-    expect(parseMarkRequest({ slug: "slogen", done: false, favorite: true })).toEqual({
-      slug: "slogen",
-      favorite: true,
-      done: false,
-    });
-  });
-
-  it("refuses anything that is not a request", () => {
-    expect(parseMarkRequest(null)).toBeNull();
-    expect(parseMarkRequest({ slug: "slogen" })).toBeNull();
-    expect(parseMarkRequest({ slug: "slogen", favorite: "true" })).toBeNull();
-    expect(parseMarkRequest({ slug: "../etc", favorite: true })).toBeNull();
-    expect(parseMarkRequest({ slug: "", done: true })).toBeNull();
-  });
-});
-
-describe("demo cookie", () => {
-  it("round-trips", () => {
+describe("parseStoredMarks", () => {
+  it("round-trips what the hook writes", () => {
     const marks: TourMark[] = [
       { slug: "slogen", favorite: true, doneOn: "2026-10-05" },
-      { slug: "kirketaket", favorite: true, doneOn: null },
-      { slug: "storgalten", favorite: false, doneOn: "2026-01-02" },
+      { slug: "kirketaket", favorite: false, doneOn: "2026-02-01" },
     ];
-    expect(decodeDemoMarks(encodeDemoMarks(marks))).toEqual(marks);
+    expect(parseStoredMarks(JSON.stringify(marks))).toEqual(marks);
   });
 
   it("drops what it cannot read instead of guessing", () => {
-    expect(decodeDemoMarks("slogen|f|05.10.2026;BAD SLUG|f|;tomt|-|")).toEqual([
-      { slug: "slogen", favorite: true, doneOn: null },
-    ]);
-    expect(decodeDemoMarks(undefined)).toEqual([]);
+    expect(parseStoredMarks(null)).toEqual([]);
+    expect(parseStoredMarks("not json")).toEqual([]);
+    expect(parseStoredMarks('{"slug":"slogen"}')).toEqual([]);
+    expect(
+      parseStoredMarks(
+        JSON.stringify([
+          { slug: "Slogen!", favorite: true },
+          { slug: "slogen", favorite: "yes", doneOn: "i går" },
+          { slug: "kirketaket", favorite: true, doneOn: "5. oktober" },
+        ]),
+      ),
+    ).toEqual([{ slug: "kirketaket", favorite: true, doneOn: null }]);
   });
 });
 

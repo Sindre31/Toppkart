@@ -1,20 +1,17 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { Lock } from "lucide-react";
 
 import { Blueprint } from "@/components/Blueprint";
 import { CapsText } from "@/components/CapsText";
 import { JsonLd } from "@/components/JsonLd";
 import { SiteNav, SiteFooter } from "@/components/SiteChrome";
 import { ElevationProfile } from "@/components/guide/ElevationProfile";
-import { GuidePreview, GuideSections } from "@/components/guide/GuideSections";
-import { LockedGuide } from "@/components/guide/LockedGuide";
+import { GuideSections } from "@/components/guide/GuideSections";
 import { OfflineSave } from "@/components/guide/OfflineSave";
 import { GuideMarks } from "@/components/marks/GuideMarks";
 import { RouteMap } from "@/components/guide/RouteMap";
 import { WeatherPanel } from "@/components/weather/WeatherPanel";
-import { getViewer } from "@/lib/access";
 import { SITE } from "@/lib/config";
 import { guideSlugs } from "@/lib/guides";
 import { OG_IMAGE } from "@/lib/seo";
@@ -27,14 +24,11 @@ import { guideDict } from "@/lib/i18n/guide";
 import { getTour, regionAnchor, routeProfile, routesFor, toursInRegion } from "@/lib/tours";
 import styles from "./guide.module.css";
 
-/** Turguiden. Kart, nøkkeltall og høydeprofil er åpne for alle; rute-
- *  beskrivelse, nedkjøring, skredterreng og GPX ligger bak abonnement
- *  (`getViewer().hasAccess`).
+/** Turguiden. Alt er åpent for alle — kart, nøkkeltall, høydeprofil,
+ *  rutebeskrivelse, nedkjøring, skredterreng og GPX. Toppkart er gratis.
  *
- *  The page reads two cookies — the viewer's subscription and `tk_lang` — so it
- *  renders per request. `generateStaticParams` is kept for the route's params
- *  contract, but nothing here was prerenderable before either: `getViewer()`
- *  has always made the guide dynamic. */
+ *  The page reads the `tk_lang` cookie, so it renders per request.
+ *  `generateStaticParams` is kept for the route's params contract. */
 
 export function generateStaticParams(): { slug: string }[] {
   return guideSlugs().map((slug) => ({ slug }));
@@ -119,7 +113,6 @@ export default async function TourGuidePage({ params }: { params: Promise<{ slug
 
   const tour = localizeTour(source, lang);
   const guide = getLocalizedGuide(slug, lang);
-  const { hasAccess } = await getViewer();
   const t = guideDict(lang);
   /* Rutas egen geometri — den samme linja `/kart` tegner. `RouteMap` bruker den
      til figuren over høydeprofilen; hver av de 86 sidene får sin egen. */
@@ -138,15 +131,15 @@ export default async function TourGuidePage({ params }: { params: Promise<{ slug
   return (
     <div className="shell">
       {/* Det samme sida viser, i den formen en søkerobot ikke trenger å tolke:
-          artikkelen, fjellet med koordinater og høyde, og — for den som ikke
-          har abonnement — hvor betalingsmuren står. Se `lib/structured-data.ts`.
+          artikkelen og fjellet med koordinater og høyde. Se
+          `lib/structured-data.ts`.
 
           Brødsmulene går innom regionen, fordi `/turer#lyngen` er en ekte
           destinasjon lista allerede lenker til fra hoppmenyen sin, ikke et
           mellomledd oppfunnet for anledningen. */}
       <JsonLd
         data={[
-          tourJsonLd({ tour, guide, lang, locked: !hasAccess }),
+          tourJsonLd({ tour, guide, lang }),
           breadcrumbJsonLd([
             { name: SITE.name, path: "/" },
             { name: commonDict(lang).tours, path: "/turer" },
@@ -158,13 +151,8 @@ export default async function TourGuidePage({ params }: { params: Promise<{ slug
 
       <SiteNav lang={lang} />
 
-      {/* `data-access` er det «Lagre offline» sjekker i sida den henter: den
-          svarer 200 også når økta har gått ut, og da med den låste guiden. */}
-      <main
-        className="page page-narrow"
-        style={{ paddingBottom: 64 }}
-        data-access={hasAccess ? "open" : "locked"}
-      >
+      {/* `data-access` er det «Lagre offline» sjekker i sida den henter. */}
+      <main className="page page-narrow" style={{ paddingBottom: 64 }} data-access="open">
         <header style={{ padding: "48px 0 32px" }}>
           <Link href={mapHref} style={{ fontSize: 13, textDecoration: "none" }}>
             {t.backToMap}
@@ -198,49 +186,35 @@ export default async function TourGuidePage({ params }: { params: Promise<{ slug
             {guide?.intro ?? tour.teaser}
           </p>
           <div style={{ display: "flex", gap: 10, flexWrap: "wrap", marginTop: 22 }}>
-            {hasAccess ? (
-              /* `target="_blank"` selv om `download` allerede sier at dette er
-                 en fil og ikke en side.
+            {/* `target="_blank"` selv om `download` allerede sier at dette er
+               en fil og ikke en side.
 
-                 På skrivebordet er det ingen forskjell: nettleseren laster ned
-                 og blir stående. På telefon er det ikke gitt. Mange
-                 mobilnettlesere — og hver eneste innebygde nettleser i en app —
-                 behandler `application/gpx+xml` som noe som skal *åpnes*, og
-                 gjør det ved å navigere dit. Da er guiden borte, og en fane som
-                 viser XML har verken tilbakeknapp eller navigasjon: eneste vei
-                 tilbake er å skrive adressa på nytt.
+               På skrivebordet er det ingen forskjell: nettleseren laster ned
+               og blir stående. På telefon er det ikke gitt. Mange
+               mobilnettlesere — og hver eneste innebygde nettleser i en app —
+               behandler `application/gpx+xml` som noe som skal *åpnes*, og
+               gjør det ved å navigere dit. Da er guiden borte, og en fane som
+               viser XML har verken tilbakeknapp eller navigasjon: eneste vei
+               tilbake er å skrive adressa på nytt.
 
-                 Med `_blank` skjer det i en ny kontekst. Laster nettleseren ned
-                 fila, blir vi stående som før; åpner den den, står guiden urørt
-                 i fana bak. `rel="noopener"` fordi enhver `_blank` skal ha
-                 den. */
-              <a
-                className="btn btn-primary"
-                href={`/api/gpx/${tour.slug}`}
-                download={`${tour.slug}.gpx`}
-                target="_blank"
-                rel="noopener"
-              >
-                {t.downloadGpx}
-              </a>
-            ) : (
-              /* Uten abonnement er nedlastingen stengt både her og i API-et —
-                 knappen leder dit tilgangen kjøpes. */
-              <Link
-                className="btn btn-secondary"
-                href="/betaling"
-                aria-label={t.downloadGpxLocked}
-                title={t.requiresSubscription}
-              >
-                <Lock size={14} strokeWidth={1.5} />
-                {t.downloadGpx}
-              </Link>
-            )}
+               Med `_blank` skjer det i en ny kontekst. Laster nettleseren ned
+               fila, blir vi stående som før; åpner den den, står guiden urørt
+               i fana bak. `rel="noopener"` fordi enhver `_blank` skal ha
+               den. */}
+            <a
+              className="btn btn-primary"
+              href={`/api/gpx/${tour.slug}`}
+              download={`${tour.slug}.gpx`}
+              target="_blank"
+              rel="noopener"
+            >
+              {t.downloadGpx}
+            </a>
             <Link className="btn btn-secondary" href={mapHref}>
               {t.openInMap}
             </Link>
             <GuideMarks slug={tour.slug} lang={lang} />
-            {hasAccess && route ? (
+            {route ? (
               <OfflineSave
                 slug={tour.slug}
                 name={tour.name}
@@ -326,15 +300,7 @@ export default async function TourGuidePage({ params }: { params: Promise<{ slug
           )}
         </section>
 
-        {guide &&
-          (hasAccess ? (
-            <GuideSections guide={guide} lang={lang} />
-          ) : (
-            <>
-              <GuidePreview guide={guide} lang={lang} />
-              <LockedGuide lang={lang} />
-            </>
-          ))}
+        {guide && <GuideSections guide={guide} lang={lang} />}
 
         {/* Naboturene. Regionen er den eneste slektskapen datasettet kjenner, og
             den er nok: den som leser om Slogen er som regel i ferd med å legge

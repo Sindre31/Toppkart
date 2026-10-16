@@ -4,6 +4,7 @@ import Script from "next/script";
 import { Analytics } from "@vercel/analytics/next";
 import { Feedback } from "@/components/Feedback";
 import { ServiceWorker } from "@/components/ServiceWorker";
+import { SupportPrompt } from "@/components/SupportPrompt";
 import { getIdentity } from "@/lib/access";
 import { GA_MEASUREMENT_ID } from "@/lib/config";
 import { htmlLang } from "@/lib/i18n";
@@ -94,10 +95,9 @@ export const viewport: Viewport = {
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   const lang = await getLang();
-  /* Free: `getIdentity()` is memoised per request, and every page that renders
-     the account nav has already asked. The dialog only needs the address, to
-     tell the reader whether a reply can reach them — not the subscription row
-     `getViewer()` would fetch alongside it. */
+  /* The feedback dialog only needs the address, to tell the reader whether a
+     reply can reach them. Readers have no accounts, so this is only ever set
+     for a signed-in admin. */
   const { email } = await getIdentity();
 
   /* Production only. `VERCEL_ENV` is "preview" on branch deploys and undefined
@@ -111,6 +111,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
       <body>
         {children}
         <Feedback lang={lang} email={email} />
+        <SupportPrompt lang={lang} />
         <ServiceWorker />
         <Analytics />
         {analytics && (

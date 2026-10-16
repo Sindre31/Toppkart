@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 
-import { getViewer } from "@/lib/access";
+import { getIdentity } from "@/lib/access";
 import { FEEDBACK_MAX_LENGTH } from "@/lib/i18n/feedback";
 import { rateLimitKey, withinRateLimit } from "@/lib/rate-limit";
 import { getSupabaseAdminClient } from "@/lib/supabase/server";
@@ -76,7 +76,7 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "rate_limited" }, { status: 429 });
   }
 
-  const viewer = await getViewer();
+  const viewer = await getIdentity();
   /* Demo mode hands out `demo:<e-post>` as a user id. That is not a uuid and
      has no row in auth.users, so it would fail the foreign key. */
   const userId = viewer.userId && !viewer.userId.startsWith("demo:") ? viewer.userId : null;
