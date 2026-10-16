@@ -11,7 +11,8 @@
 import { Suspense, useCallback, useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import dynamic from "next/dynamic";
 import Link from "next/link";
-import { Check, Locate, LocateFixed, Star } from "lucide-react";
+import { flushSync } from "react-dom";
+import { Check, ChevronDown, Locate, LocateFixed, Search, SlidersHorizontal, Star, X } from "lucide-react";
 
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { NavMenu } from "@/components/NavMenu";
@@ -210,6 +211,10 @@ export default function MapView({
      peak with one route needs no state and picking a tour never has to guess. */
   const [selectedRouteId, setSelectedRouteId] = useState<string | null>(initialRouteId);
   const detailRef = useRef<HTMLDivElement>(null);
+  const searchRef = useRef<HTMLInputElement>(null);
+  /** «Flere filtre» åpen eller lukket. Lukket som standard: søk og grad er det
+   *  de fleste bruker, og lista skal starte høyt oppe. */
+  const [moreOpen, setMoreOpen] = useState(false);
 
   const t = mapDict(lang);
   /* Menyknappens etiketter er sidechromets, ikke kartets — samme knapp, samme
@@ -265,6 +270,22 @@ export default function MapView({
   );
 
   const filtered = Boolean(query.trim() || grade || region || aspect || vertical || mine);
+
+  /** Filtrene bak «Flere filtre» som står på, som brikker: hva de heter, og
+   *  hvordan de slås av. */
+  const activeExtras = useMemo(() => {
+    const out: { key: string; label: string; clear: () => void }[] = [];
+    if (region) out.push({ key: "region", label: region, clear: () => setRegion("") });
+    if (aspect) out.push({ key: "aspect", label: t.aspectSectors[aspect], clear: () => setAspect("") });
+    if (vertical) {
+      out.push({ key: "vertical", label: t.verticalBands[vertical], clear: () => setVertical("") });
+    }
+    if (mine) {
+      const label = { favorites: m.filterFavorites, done: m.filterDone, notDone: m.filterNotDone }[mine];
+      out.push({ key: "mine", label, clear: () => setMine("") });
+    }
+    return out;
+  }, [region, aspect, vertical, mine, t, m]);
   const resetFilters = useCallback(() => {
     setQuery("");
     setGrade(0);
@@ -367,6 +388,7 @@ export default function MapView({
         <div className={s.sideHead}>
           <div className={s.searchRow}>
             <input
+              ref={searchRef}
               className="input"
               type="search"
               placeholder={t.search}
@@ -376,118 +398,148 @@ export default function MapView({
             />
             <LocateToggle state={geo.state} onToggle={geo.toggle} t={t} variant="side" />
           </div>
-          <div className={s.filters}>
-            <div className="seg" role="group" aria-label={t.gradeGroup}>
-              <label className="seg-opt">
-                <input
-                  type="radio"
-                  name="g"
-                  value={0}
-                  checked={grade === 0}
-                  onChange={() => setGrade(0)}
-                />
-                <span>{t.all}</span>
-              </label>
-              {GRADE_FILTERS.map((g) => (
-                /* The visible label is the bare number, as in the prototype —
-                   the grade name rides along for screen readers. */
-                <label className="seg-opt" key={g}>
-                  <input
-                    type="radio"
-                    name="g"
-                    value={g}
-                    aria-label={t.grades[g]}
-                    checked={grade === g}
-                    onChange={() => setGrade(g)}
-                  />
-                  {g}
-                </label>
-              ))}
-            </div>
-            <label className={s.srOnly} htmlFor="kart-region">
-              {t.regionLabel}
-            </label>
-            <select
-              id="kart-region"
-              className={`input ${s.regionSelect}`}
-              value={region}
-              onChange={(e) => setRegion(e.target.value)}
-            >
-              <option value="">{t.allRegions}</option>
-              {regions.map((r) => (
-                <option key={r} value={r}>
-                  {r}
-                </option>
-              ))}
-            </select>
-          </div>
-          <div className={s.filters}>
-            <label className={s.srOnly} htmlFor="kart-aspect">
-              {t.aspectFilterLabel}
-            </label>
-            <select
-              id="kart-aspect"
-              className={`input ${s.filterSelect}`}
-              value={aspect}
-              onChange={(e) => setAspect(e.target.value as AspectSector | "")}
-            >
-              <option value="">{t.allAspects}</option>
-              {ASPECT_SECTORS.map((a) => (
-                <option key={a} value={a}>
-                  {t.aspectSectors[a]}
-                </option>
-              ))}
-            </select>
-            <label className={s.srOnly} htmlFor="kart-vertical">
-              {t.verticalFilterLabel}
-            </label>
-            <select
-              id="kart-vertical"
-              className={`input ${s.filterSelect}`}
-              value={vertical}
-              onChange={(e) => setVertical(e.target.value as VerticalBand | "")}
-            >
-              <option value="">{t.allVertical}</option>
-              {VERTICAL_BANDS.map((b) => (
-                <option key={b.id} value={b.id}>
-                  {t.verticalBands[b.id]}
-                </option>
-              ))}
-            </select>
-          </div>
-          {markMap ? (
-            <div className={s.filters}>
-              <label className={s.srOnly} htmlFor="kart-mine">
-                {m.filterLabel}
-              </label>
-              <select
-                id="kart-mine"
-                className={`input ${s.filterSelect}`}
-                value={mine}
-                onChange={(e) => setMine(e.target.value as typeof mine)}
+
+          {/* Graden som navngitte knapper med fargeprikken fra kartet. Før sto
+              det «1 2 3 4», og ingenting på sida sa hva tallene — eller
+              prikkfargene på kartet — betydde. Nå er filteret også
+              tegnforklaringen. */}
+          <div className={s.gradeChips} role="group" aria-label={t.gradeGroup}>
+            {/* Av/på-knapper, og ingen valgt betyr alle. En egen «Alle»-knapp
+                presset den siste graden ned på en ny linje i et 372px-panel. */}
+            {GRADE_FILTERS.map((g) => (
+              <button
+                type="button"
+                key={g}
+                className={s.gradeChip}
+                aria-pressed={grade === g}
+                onClick={() => setGrade((current) => (current === g ? 0 : g))}
               >
-                <option value="">{m.filterAll}</option>
-                <option value="favorites">{m.filterFavorites}</option>
-                <option value="done">{m.filterDone}</option>
-                <option value="notDone">{m.filterNotDone}</option>
-              </select>
-            </div>
-          ) : null}
-          <div className={s.count}>
-            <span>
-              {rows.length} {rows.length === 1 ? t.tour : t.tours} ·{" "}
-              {geoMessage(geo.state, t) ??
-                (distances ? t.sortedByDistance : sortedByPopularity ? t.sortedByPopularity : t.approx)}
-            </span>
+                <span className={s.dot} style={{ background: GRADE_COLORS[g - 1] }} aria-hidden="true" />
+                {t.grades[g]}
+              </button>
+            ))}
+          </div>
+
+          {/* Resten av filtrene bak én knapp. De fire nedtrekkslistene tok tre
+              rader — rundt 150px — over lista på hver skjerm, også for den som
+              bare ville søke. Knappen sier hvor mange som står på, og brikkene
+              under viser hvilke, så ingenting er skjult uten at det synes. */}
+          <div className={s.moreRow}>
+            <button
+              type="button"
+              className={s.moreBtn}
+              aria-expanded={moreOpen}
+              aria-controls="kart-flere-filtre"
+              onClick={() => setMoreOpen((open) => !open)}
+            >
+              <SlidersHorizontal size={15} strokeWidth={1.5} aria-hidden="true" />
+              {t.moreFilters}
+              {activeExtras.length ? <span className={s.moreCount}>{activeExtras.length}</span> : null}
+              <ChevronDown className={s.moreChevron} size={15} strokeWidth={1.5} aria-hidden="true" />
+            </button>
             {filtered ? (
               <button type="button" className={s.reset} onClick={resetFilters}>
                 {t.resetFilters}
               </button>
             ) : null}
           </div>
+
+          <div id="kart-flere-filtre" className={s.moreGrid} hidden={!moreOpen}>
+            <label className={s.field}>
+              <span>{t.regionLabel}</span>
+              <select className="input" value={region} onChange={(e) => setRegion(e.target.value)}>
+                <option value="">{t.allRegions}</option>
+                {regions.map((r) => (
+                  <option key={r} value={r}>
+                    {r}
+                  </option>
+                ))}
+              </select>
+            </label>
+            <label className={s.field}>
+              <span>{t.aspectFilterLabel}</span>
+              <select
+                className="input"
+                value={aspect}
+                onChange={(e) => setAspect(e.target.value as AspectSector | "")}
+              >
+                <option value="">{t.allAspects}</option>
+                {ASPECT_SECTORS.map((a) => (
+                  <option key={a} value={a}>
+                    {t.aspectSectors[a]}
+                  </option>
+                ))}
+              </select>
+            </label>
+            <label className={s.field}>
+              <span>{t.verticalFilterLabel}</span>
+              <select
+                className="input"
+                value={vertical}
+                onChange={(e) => setVertical(e.target.value as VerticalBand | "")}
+              >
+                <option value="">{t.allVertical}</option>
+                {VERTICAL_BANDS.map((b) => (
+                  <option key={b.id} value={b.id}>
+                    {t.verticalBands[b.id]}
+                  </option>
+                ))}
+              </select>
+            </label>
+            {markMap ? (
+              <label className={s.field}>
+                <span>{m.filterLabel}</span>
+                <select
+                  className="input"
+                  value={mine}
+                  onChange={(e) => setMine(e.target.value as typeof mine)}
+                >
+                  <option value="">{m.filterAll}</option>
+                  <option value="favorites">{m.filterFavorites}</option>
+                  <option value="done">{m.filterDone}</option>
+                  <option value="notDone">{m.filterNotDone}</option>
+                </select>
+              </label>
+            ) : null}
+          </div>
+
+          {!moreOpen && activeExtras.length ? (
+            <ul className={s.activeChips}>
+              {activeExtras.map((chip) => (
+                <li key={chip.key}>
+                  <button
+                    type="button"
+                    className={s.activeChip}
+                    aria-label={t.removeFilter(chip.label)}
+                    onClick={chip.clear}
+                  >
+                    {chip.label}
+                    <X size={13} strokeWidth={2} aria-hidden="true" />
+                  </button>
+                </li>
+              ))}
+            </ul>
+          ) : null}
+
+          <div
+            className={s.count}
+            title={!distances && sortedByPopularity ? t.sortedByPopularityHint : undefined}
+          >
+            {rows.length} {rows.length === 1 ? t.tour : t.tours} ·{" "}
+            {geoMessage(geo.state, t) ??
+              (distances ? t.sortedByDistance : sortedByPopularity ? t.sortedByPopularity : t.approx)}
+          </div>
         </div>
 
         <div className={s.list}>
+          {listed.length === 0 ? (
+            <div className={s.empty}>
+              <p>{t.noMatches}</p>
+              <button type="button" className="btn btn-secondary" onClick={resetFilters}>
+                {t.resetFilters}
+              </button>
+            </div>
+          ) : null}
           {listed.map((tour) => (
             <button
               type="button"
@@ -670,6 +722,24 @@ export default function MapView({
             homeSignal={homeSignal}
           />
         </Suspense>
+        {/* Søket rett på kartet, på telefon. Før måtte man vite at «Vis liste»
+            var veien til søkefeltet. `flushSync` gjør at lista er synlig før
+            `focus()`: iOS åpner bare tastaturet for et felt som fokuseres i
+            selve trykket, og et skjult felt kan ikke fokuseres. */}
+        <button
+          type="button"
+          className={s.mapSearch}
+          onClick={() => {
+            flushSync(() => {
+              setSelectedSlug(null);
+              setMobilePane("list");
+            });
+            searchRef.current?.focus();
+          }}
+        >
+          <Search size={16} strokeWidth={1.75} aria-hidden="true" />
+          <span>{query.trim() || t.search}</span>
+        </button>
         <div className={s.locateBox}>
           <LocateToggle state={geo.state} onToggle={geo.toggle} t={t} variant="map" />
           {geoMessage(geo.state, t) ? (
@@ -700,8 +770,11 @@ export default function MapView({
             className={s.peakBarOpen}
             onClick={() => setMobilePane("list")}
           >
-            <span className={s.peakBarName}>
-              <CapsText>{selected.name}</CapsText>
+            <span className={s.peakBarText}>
+              <span className={s.peakBarName}>
+                <CapsText>{selected.name}</CapsText>
+              </span>
+              <GradeDot grade={selected.grade} t={t} />
             </span>
             <span className={s.peakBarCta}>{t.showInfo}</span>
           </button>
