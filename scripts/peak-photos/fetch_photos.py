@@ -1,7 +1,7 @@
 """Bilder av toppene, fra Wikimedia Commons — kilden til `lib/photos.ts`.
 
 Skriptet henter alle fjell med bilde (P18) i Wikidata innenfor Norges
-utstrekning i én spørring, og velger for hver tur i `lib/tours.ts` det
+utstrekning, i bånd på én breddegrad, og velger for hver tur i `lib/tours.ts` det
 nærmeste innen `RADIUS_KM` fra toppunktet med samme navn som turen. Bare navnesamsvar teller: «nærmeste ting med et bilde» kan
 like gjerne være en hytte, en innsjø eller nabotoppen, og et bilde av feil fjell
 er verre enn ingen bilde.
@@ -69,18 +69,18 @@ def norm(s: str) -> str:
 SOUTH, WEST, NORTH, EAST = 57.5, 4.0, 71.5, 31.5
 # Fjell, topp, ås/høyde, fjellkjede, rygg, nunatak, tind.
 KINDS = "wd:Q8502 wd:Q207326 wd:Q54050 wd:Q46831 wd:Q740445 wd:Q193457 wd:Q1595289"
+BAND = 1.0  # grader breddegrad per spørring
 
 
-def all_peaks() -> list[dict]:
-    """Alle fjell med bilde innenfor utstrekningen, i én spørring. Én per tur
-    var 185 spørringer og nok til at Wikidata strupet oss."""
+def peaks_in(south: float, north: float) -> list[dict]:
+    """Fjell med bilde i ett breddegradsbånd over hele utstrekningen."""
     query = f"""
     SELECT ?item ?img ?label ?coord WHERE {{
       VALUES ?kind {{ {KINDS} }}
       SERVICE wikibase:box {{
         ?item wdt:P625 ?coord .
-        bd:serviceParam wikibase:cornerSouthWest "Point({WEST} {SOUTH})"^^geo:wktLiteral ;
-                        wikibase:cornerNorthEast "Point({EAST} {NORTH})"^^geo:wktLiteral .
+        bd:serviceParam wikibase:cornerSouthWest "Point({WEST} {south})"^^geo:wktLiteral ;
+                        wikibase:cornerNorthEast "Point({EAST} {north})"^^geo:wktLiteral .
       }}
       ?item wdt:P31 ?kind ; wdt:P18 ?img ; rdfs:label ?label .
       FILTER(LANG(?label) IN ("nb", "nn", "no", "en", "se", "mul"))
@@ -99,6 +99,28 @@ def all_peaks() -> list[dict]:
             }
         )
     return out
+
+
+def all_peaks(cache: str | None) -> list[dict]:
+    """Alle fjell med bilde innenfor utstrekningen, i bånd på `BAND` grader.
+
+    Hele landet i én spørring ble kuttet av Wikidatas 60-sekundersgrense, og en
+    per tur var 185 spørringer — begge deler endte i struping. Hvert bånd lagres
+    i `cache` så snart det er inne, så en 429 halvveis ikke koster de ferdige."""
+    done: dict[str, list[dict]] = {}
+    if cache and os.path.exists(cache):
+        done = json.load(open(cache, encoding="utf-8"))
+    lat = SOUTH
+    while lat < NORTH:
+        key = f"{lat:.1f}"
+        if key not in done:
+            done[key] = peaks_in(lat, min(lat + BAND, NORTH))
+            print(f"  band {key}: {len(done[key])} rows", file=sys.stderr)
+            if cache:
+                json.dump(done, open(cache, "w", encoding="utf-8"), ensure_ascii=False)
+            time.sleep(5)
+        lat += BAND
+    return [p for rows in done.values() for p in rows]
 
 
 def km(a_lat: float, a_lng: float, b_lat: float, b_lng: float) -> float:
@@ -162,13 +184,7 @@ def main() -> None:
     if cache_path and os.path.exists(cache_path):
         chosen = json.load(open(cache_path, encoding="utf-8"))
     else:
-        peaks_path = cache_path + ".peaks" if cache_path else None
-        if peaks_path and os.path.exists(peaks_path):
-            peaks = json.load(open(peaks_path, encoding="utf-8"))
-        else:
-            peaks = all_peaks()
-            if peaks_path:
-                json.dump(peaks, open(peaks_path, "w", encoding="utf-8"), ensure_ascii=False)
+        peaks = all_peaks(cache_path + ".bands" if cache_path else None)
         print(f"{len(peaks)} peaks with an image in Wikidata", file=sys.stderr)
         chosen = {}
         for t in all_tours:
