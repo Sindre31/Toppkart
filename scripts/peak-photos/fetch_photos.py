@@ -3,14 +3,13 @@
 For hver tur i `lib/tours.ts` søker skriptet i Wikidata etter elementer med
 turens navn, og velger det nærmeste innen `RADIUS_KM` fra toppunktet som har et
 bilde (P18). Bare navnesamsvar teller: «nærmeste ting med et bilde» kan like
-gjerne være en hytte, en innsjø eller nabotoppen.
+gjerne være en hytte, en innsjø eller nabotoppen, og et bilde av feil fjell er
+verre enn ingen bilde.
 
 Spørretjenesten (WDQS) er ikke brukt: Norge har hundretusener av
 fjellelementer, og både geo- og landsspørringer gikk ut på tid og brukte opp
 kvoten. Det vanlige API-et med ett navnesøk per tur og `wbgetentities` i
-batcher på 50 er lett, og `PAUSE` holder tempoet nede. Bare navnesamsvar teller: «nærmeste ting med et bilde» kan
-like gjerne være en hytte, en innsjø eller nabotoppen, og et bilde av feil fjell
-er verre enn ingen bilde.
+batcher på 50 er lett, og `PAUSE` holder tempoet nede.
 
 Så hentes lisens og opphav fra Commons. Bare frie lisenser tas med (CC0,
 offentlig eie, CC BY, CC BY-SA); kreditering står under bildet på sida.
