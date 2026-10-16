@@ -10,7 +10,7 @@ import { ElevationProfile } from "@/components/guide/ElevationProfile";
 import { GuideSections } from "@/components/guide/GuideSections";
 import { OfflineSave } from "@/components/guide/OfflineSave";
 import { GuideMarks } from "@/components/marks/GuideMarks";
-import { RouteMap } from "@/components/guide/RouteMap";
+import { GuideMap } from "@/components/guide/GuideMap";
 import { WeatherPanel } from "@/components/weather/WeatherPanel";
 import { SITE } from "@/lib/config";
 import { guideSlugs } from "@/lib/guides";
@@ -113,8 +113,8 @@ export default async function TourGuidePage({ params }: { params: Promise<{ slug
   const tour = localizeTour(source, lang);
   const guide = getLocalizedGuide(slug, lang);
   const t = guideDict(lang);
-  /* Rutas egen geometri — den samme linja `/kart` tegner. `RouteMap` bruker den
-     til figuren over høydeprofilen; hver av de 86 sidene får sin egen. */
+  /* Rutas egen geometri — den samme linja `/kart` tegner. `GuideMap` bruker den
+     til kartet ved siden av høydeprofilen; hver av sidene får sitt eget. */
   const route = routeProfile(source);
   const mapHref = `/?tur=${tour.slug}`;
   const neighbours = localizeTours(toursInRegion(source.region, source.slug), lang);
@@ -267,7 +267,7 @@ export default async function TourGuidePage({ params }: { params: Promise<{ slug
 
         <section className={styles.split}>
           {route && (
-            <RouteMap
+            <GuideMap
               peak={tour.name}
               points={route.points}
               distanceM={route.distanceM}
@@ -276,7 +276,7 @@ export default async function TourGuidePage({ params }: { params: Promise<{ slug
               lang={lang}
             >
               <Link href={mapHref}>{t.routeMapCaptionLink}</Link>.
-            </RouteMap>
+            </GuideMap>
           )}
 
           {guide ? (

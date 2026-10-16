@@ -8,6 +8,7 @@ import {
   Circle,
   CircleMarker,
   MapContainer,
+  Marker,
   Polyline,
   TileLayer,
   Tooltip,
@@ -24,7 +25,10 @@ import {
 } from "leaflet";
 import "leaflet/dist/leaflet.css";
 
+import { BaseTileLayer } from "@/components/map/BaseTileLayer";
+import { startIcon, summitIcon } from "@/components/map/markers";
 import { GRADE_COLORS } from "@/lib/config";
+import { MAX_ZOOM, TILE_ATTRIBUTION, TILE_URL } from "@/lib/map-tiles";
 import type { Lang } from "@/lib/i18n";
 import { mapDict } from "@/lib/i18n/map";
 import type { TourRoute } from "@/lib/routes";
@@ -40,6 +44,11 @@ const NORWAY: LatLngBoundsExpression = [
 const MARKER_STROKE = "#f2f2f3";
 const ROUTE_ACCENT = "#416180"; // accent-700
 const ROUTE_ALT = "#8aa2b8"; // the peak's other routes, a step back
+const START_ICON = startIcon(ROUTE_ACCENT);
+const START_ICON_ALT = startIcon(ROUTE_ALT, true);
+const SUMMIT_ICON = summitIcon(ROUTE_ACCENT);
+/** OSM-laget får de samme flytur-innstillingene som Kartverket-laget over. */
+const BASE_LAYER_OPTIONS = { updateWhenZooming: true, keepBuffer: 3 } as const;
 /** Leserens prikk. Ikke en gradfarge og ikke rutefargen — den skal ikke kunne
  *  forveksles med en topp eller en linje. Kartverkets topo bruker blått for
  *  vann, så det er en dyp oransje, som ingenting annet på kartet har. */
@@ -50,44 +59,6 @@ const POSITION = "#d9480f";
  *  blir man der. */
 const POSITION_ZOOM = 11;
 
-/** Kartverkets topografiske norgeskart, servert fra deres egen flis-cache.
- *
- *  Her lå OpenStreetMap fram til nå, fordi prototypen brukte det. Forskjellen
- *  er ikke kosmetisk. Et toppturkart skal vise høydekurver, bre, myr og ur, og
- *  det er nettopp det Kartverkets topografiske serie tegner og OSMs standardstil
- *  ikke har — den er laget for veier og bebyggelse, ikke for terreng over
- *  tregrensa. Rutelinja vår er dessuten regnet ut i Kartverkets egen
- *  høydemodell, så kartet under streken og streken selv kommer nå fra samme
- *  kilde.
- *
- *  Adressen er WMTS-en i `webmercator`-rutenettet, som er det samme rutenettet
- *  Leaflet regner i, så flisene legger seg rett i rutenettet uten projeksjons-
- *  arbeid. Rekkefølgen i stien er `{z}/{y}/{x}` — TileMatrix, TileRow, TileCol —
- *  altså y foran x, motsatt av OSM. Bytt dem om, og kartet blir speilvendt om
- *  diagonalen uten å feile på en eneste forespørsel.
- *
- *  Dekningen er Norge og bare Norge: utenfor grensa er flisene helt
- *  gjennomsiktige. Der tegner `BASE_URL` under resten av verden, så nabolanda
- *  og havet ikke står tomme. Kartverket ligger øverst, så Norge ser ut akkurat
- *  som før.
- *
- *  Bruksvilkår: åpne data under Kartverkets lisens (CC BY 4.0), som krever at
- *  opphavet står synlig. Det gjør det i `attribution` på `TileLayer` under. */
-const TILE_URL = "https://cache.kartverket.no/v1/wmts/1.0.0/topo/default/webmercator/{z}/{y}/{x}.png";
-/** Bakgrunnskartet for alt utenfor Norge: OpenStreetMaps standardkart. Det synes
- *  bare der Kartverkets fliser er gjennomsiktige, altså utenfor landet.
- *
- *  Valgt framfor OpenTopoMap, som ble for mettet i landsvisningen, og CARTO, som
- *  krever API-nøkkel. OSMs bruksvilkår krever synlig kreditering (står i
- *  `attribution`) og forbyr masseforhåndshenting — derfor lagrer verken
- *  offline-lagringa eller `prefetchTiles` disse flisene; de er bare Kartverkets. */
-const BASE_URL = "https://tile.openstreetmap.org/{z}/{x}/{y}.png";
-const BASE_ATTRIBUTION = '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>';
-const BASE_MAX_NATIVE_ZOOM = 19;
-/** Så langt cachen er tegnet. Nivå 19 svarer 400, ikke en tom flis, så dette er
- *  en grense å holde seg innenfor og ikke en anbefaling. Leaflets egen standard
- *  er tilfeldigvis den samme; den står her fordi den er Kartverkets. */
-const MAX_ZOOM = 18;
 /** Leaflets standard, og det `TileLayer` under kjører med. */
 const TILE_SIZE = 256;
 
@@ -191,7 +162,9 @@ function flyToView(map: LeafletMap, center: LatLngExpression, zoom: number) {
 
   prefetchTiles(map, center, zoom);
   const jump = Math.abs(zoom - map.getZoom());
-  const seconds = Math.min(1.1, 0.5 + jump * 0.08);
+  /* Opp til 1,5 s for de store hoppene. 1,1 s over åtte nivåer var en zoom
+     man så rykke; den ekstra tida gir også flisene mer forsprang. */
+  const seconds = Math.min(1.5, 0.5 + jump * 0.12);
   veilVectors(map, jump, seconds);
   map.flyTo(center, zoom, { duration: seconds });
 }
@@ -423,22 +396,18 @@ function RouteLayer({
            useful than "Skorgedalen" when you are planning the drive. */
         const label = route.trailhead ? `${startLabel}: ${route.trailhead}` : startLabel;
         return (
-          <CircleMarker
+          <Marker
             key={`start-${route.id}`}
-            center={points[0]}
-            radius={isActive ? 6 : 4.5}
+            position={points[0]}
+            icon={isActive ? START_ICON : START_ICON_ALT}
+            zIndexOffset={isActive ? 500 : 0}
+            keyboard={false}
             eventHandlers={isActive ? undefined : { click: () => onSelectRoute(route.id) }}
-            pathOptions={{
-              color: isActive ? ROUTE_ACCENT : ROUTE_ALT,
-              weight: 2,
-              fillColor: MARKER_STROKE,
-              fillOpacity: 1,
-            }}
           >
-            <Tooltip direction="top" offset={[0, -6]}>
+            <Tooltip direction="top">
               {routes.length > 1 ? `${route.name} — ${label}` : label}
             </Tooltip>
-          </CircleMarker>
+          </Marker>
         );
       })}
     </>
@@ -463,35 +432,23 @@ export default function MapCanvas({
     <MapContainer bounds={NORWAY} zoomControl={false} style={{ height: "100%", width: "100%" }}>
       {/* Under Kartverket, og bare synlig utenfor Norge. Samme innstillinger for
           zoomflyturen som laget over, så de to ikke laster i utakt. */}
-      <TileLayer
-        url={BASE_URL}
-        attribution={BASE_ATTRIBUTION}
-        maxZoom={MAX_ZOOM}
-        maxNativeZoom={BASE_MAX_NATIVE_ZOOM}
-        zIndex={0}
-        updateWhenZooming={false}
-        keepBuffer={3}
-      />
+      <BaseTileLayer options={BASE_LAYER_OPTIONS} />
       <TileLayer
         zIndex={1}
         url={TILE_URL}
-        attribution="© Kartverket"
+        attribution={TILE_ATTRIBUTION}
         maxZoom={MAX_ZOOM}
-        /* Ikke bygg rutenettet på nytt for hvert nivå flyturen passerer.
+        /* Last mellomnivåene underveis i flyturen.
 
-           Leaflet gjør det som standard: hver gang zoomen krysser et helt nivå
-           underveis, kastes rutenettet og et helt skjermbilde med fliser
-           bestilles på nytt. Fra landsvisningen ned til en topp er det åtte
-           nivåer, og ingen av dem rekker å bli synlige — de blir avbrutt av det
-           neste. Sammen med resten av endringen her gikk ett trykk fra 253
-           flisforespørsler til 119, og et sprang mellom to topper i hver sin
-           ende av landet fra 369 til 75.
-
-           Av: turen går over det forrige nivåets fliser, strukket, og målnivået
-           — hentet av `flyToView` mens vi flyr — er nede før vi lander. Det
-           gjelder klyping på berøringsskjerm også: da blir bildet skarpt når
-           fingrene slipper, i stedet for å blafre gjennom nivåene. */
-        updateWhenZooming={false}
+           Her sto `false` en stund, for å spare forespørsler: turen gikk over
+           det forrige nivåets fliser, strukket. Men fra landsvisningen ned til
+           en topp er det åtte nivåer, og fliser strukket 256 ganger tegner ikke
+           nettleseren — kartet ble hvitt i nesten et sekund midt i hver flytur.
+           Med mellomnivåene er bildet uskarpt, men sammenhengende, og blir
+           skarpere hele veien ned. Det koster rundt dobbelt så mange
+           flisforespørsler per flytur; målnivået hentes fortsatt på forhånd av
+           `prefetchTiles`. */
+        updateWhenZooming={true}
         /* Litt margin utenfor kanten, så en flytur som lander med et lite
            etterslep ikke viser grått i ytterkant mens den setter seg. */
         keepBuffer={3}
@@ -502,14 +459,29 @@ export default function MapCanvas({
       {tours.map((tour) => {
         const shown = visible.has(tour.slug);
         const isSelected = tour.slug === selectedSlug;
+        /* Den valgte toppen blir en trekant, så den skiller seg fra de andre
+           prikkene og fra startpunktet nede i dalen. */
+        if (isSelected) {
+          return (
+            <Marker
+              key={tour.slug}
+              position={[tour.lat, tour.lng]}
+              icon={SUMMIT_ICON}
+              zIndexOffset={1000}
+              keyboard={false}
+            >
+              <Tooltip direction="top">{tour.name}</Tooltip>
+            </Marker>
+          );
+        }
         return (
           <CircleMarker
             key={tour.slug}
             center={[tour.lat, tour.lng]}
-            radius={isSelected ? 10 : 7}
+            radius={7}
             pathOptions={{
               color: MARKER_STROKE,
-              weight: isSelected ? 2.5 : 1.5,
+              weight: 1.5,
               fillColor: GRADE_COLORS[tour.grade - 1],
               opacity: shown ? 1 : 0.15,
               fillOpacity: shown ? 0.95 : 0.12,
