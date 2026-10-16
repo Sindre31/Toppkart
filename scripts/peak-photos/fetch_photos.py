@@ -169,6 +169,28 @@ def strip_tags(s: str) -> str:
     return html.unescape(re.sub(r"<[^>]+>", "", s or "")).strip()
 
 
+def clean_author(s: str) -> str:
+    """Fotografens navn, uten Commons' standardfraser rundt.
+
+    «No machine-readable author provided. Berland assumed (…)» blir «Berland»,
+    «The original uploader was Slimguy at German Wikipedia. (…)» blir
+    «Slimguy». Ingen fotograf gir tom streng; da står lisensen og lenka til
+    Commons alene."""
+    s = re.sub(r"\s+", " ", s).strip()
+    m = re.match(r"No machine-readable author provided\. (.+?) assumed", s)
+    if m:
+        return m[1]
+    m = re.match(r"The original uploader was (.+?) at ", s)
+    if m:
+        return m[1]
+    return s
+
+
+def clean_src(url: str) -> str:
+    """Miniatyradressen uten Commons' sporingsparametre (`utm_*`)."""
+    return url.split("?", 1)[0]
+
+
 def commons_info(files: list[str]) -> dict[str, dict]:
     info: dict[str, dict] = {}
     for i in range(0, len(files), 50):
@@ -192,11 +214,11 @@ def commons_info(files: list[str]) -> dict[str, dict]:
             meta = ii.get("extmetadata", {})
             title = norm_map.get(page["title"], page["title"])
             info[title.removeprefix("File:")] = {
-                "src": ii.get("thumburl") or ii["url"],
+                "src": clean_src(ii.get("thumburl") or ii["url"]),
                 "width": ii.get("thumbwidth") or ii["width"],
                 "height": ii.get("thumbheight") or ii["height"],
                 "page": ii["descriptionurl"],
-                "author": strip_tags(meta.get("Artist", {}).get("value", "")),
+                "author": clean_author(strip_tags(meta.get("Artist", {}).get("value", ""))),
                 "license": strip_tags(meta.get("LicenseShortName", {}).get("value", "")),
                 "licenseUrl": strip_tags(meta.get("LicenseUrl", {}).get("value", "")),
             }

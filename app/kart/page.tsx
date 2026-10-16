@@ -23,13 +23,13 @@ export async function generateMetadata(): Promise<Metadata> {
   return { title: t.metaTitle, description: t.metaDescription, alternates: { canonical: "/" } };
 }
 
-/** Miniatyrene til kartpanelet: 640 px holder til et panel på 370, også på en
- *  skjerm med dobbel pikseltetthet. */
+/** Miniatyrene til kartpanelet: 960 px holder til et panel på 370 og en
+ *  telefon på 390, også med dobbel pikseltetthet. */
 function panelPhotos() {
   return Object.fromEntries(
     TOURS.flatMap((tour) => {
       const photo = photoFor(tour.slug);
-      return photo ? [[tour.slug, atWidth(photo, 640)]] : [];
+      return photo ? [[tour.slug, atWidth(photo, 960)]] : [];
     }),
   );
 }
