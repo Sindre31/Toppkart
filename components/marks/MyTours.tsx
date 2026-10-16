@@ -2,12 +2,12 @@
 
 import Link from "next/link";
 
-import { CapsText } from "@/components/CapsText";
 import { formatDate } from "@/lib/dates";
 import type { Lang } from "@/lib/i18n";
 import { marksDict } from "@/lib/i18n/marks";
 import { doneTotals, type TourMark } from "@/lib/tour-marks";
 import { useTourMarks } from "./useTourMarks";
+import s from "./MyTours.module.css";
 
 /** Det lista trenger å vite om en tur — ferdig oversatt av serveren, så
  *  turkatalogen med all geometrien blir liggende der. */
@@ -17,8 +17,6 @@ export interface MyTourInfo {
   region: string;
   verticalM: number;
 }
-
-const MUTED_60 = "color-mix(in srgb, var(--color-text) 60%, transparent)";
 
 /** Favorittene og turene leseren har gått, på `/mine-turer`.
  *
@@ -49,68 +47,42 @@ export function MyTours({ tours, lang }: { tours: MyTourInfo[]; lang: Lang }) {
   const row = (slug: string, aside: string) => {
     const tour = bySlug.get(slug)!;
     return (
-      <li
-        key={slug}
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "baseline",
-          gap: 12,
-          padding: "10px 0",
-          borderBottom: "1px solid var(--color-divider)",
-        }}
-      >
-        <Link href={`/tur/${slug}`} style={{ fontWeight: 600, textDecoration: "none" }}>
-          <CapsText>{tour.name}</CapsText>
+      <li key={slug}>
+        <Link href={`/tur/${slug}`} className={s.row}>
+          <span className={s.name}>{tour.name}</span>
+          <span className={s.aside}>{aside}</span>
         </Link>
-        <span style={{ fontSize: 13, color: MUTED_60, textAlign: "right" }}>{aside}</span>
       </li>
     );
   };
 
-  const list = { listStyle: "none", margin: "0 0 8px", padding: 0 } as const;
-  const head = {
-    fontSize: 16,
-    letterSpacing: "0.02em",
-    textTransform: "uppercase",
-    margin: "0 0 6px",
-  } as const;
-
   return (
-    <section style={{ padding: "0 0 48px" }}>
+    <section className={s.section}>
       {marks === null ? (
-        <p style={{ fontSize: 14, color: MUTED_60, margin: 0 }}>{t.unavailable}</p>
+        <p className={s.empty}>{t.unavailable}</p>
       ) : (
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(min(280px, 100%), 1fr))",
-            gap: "24px clamp(20px, 3vw, 40px)",
-          }}
-        >
-          <div>
-            <h2 style={head}>{t.favoritesTitle}</h2>
+        <div className={s.grid}>
+          <div className={s.card}>
+            <h2 className={s.heading}>{t.favoritesTitle}</h2>
             {favorites.length ? (
-              <ul style={list}>
+              <ul className={s.list}>
                 {favorites.map(({ tour }) => row(tour.slug, `${tour.region} · ↑ ${tour.verticalM} m`))}
               </ul>
             ) : (
-              <p style={{ fontSize: 14, color: MUTED_60, margin: 0 }}>{t.emptyFavorites}</p>
+              <p className={s.empty}>{t.emptyFavorites}</p>
             )}
           </div>
-          <div>
-            <h2 style={head}>{t.doneTitle}</h2>
+          <div className={s.card}>
+            <h2 className={s.heading}>{t.doneTitle}</h2>
             {done.length ? (
               <>
-                <p style={{ fontSize: 13, color: MUTED_60, margin: "0 0 4px" }}>
-                  {t.doneTotals(totals.count, vertical)}
-                </p>
-                <ul style={list}>
+                <p className={s.totals}>{t.doneTotals(totals.count, vertical)}</p>
+                <ul className={s.list}>
                   {done.map(({ tour, mark }) => row(tour.slug, formatDate(mark.doneOn!, lang)))}
                 </ul>
               </>
             ) : (
-              <p style={{ fontSize: 14, color: MUTED_60, margin: 0 }}>{t.emptyDone}</p>
+              <p className={s.empty}>{t.emptyDone}</p>
             )}
           </div>
         </div>

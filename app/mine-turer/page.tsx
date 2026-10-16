@@ -18,8 +18,6 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
-const MUTED_70 = "color-mix(in srgb, var(--color-text) 70%, transparent)";
-
 /** `/mine-turer` — favorittene og turene leseren har gått.
  *
  *  Lista ligger på enheten (se `components/marks/useTourMarks.ts`); serveren
@@ -40,11 +38,11 @@ export default async function MineTurerPage() {
       <SiteNav lang={lang} current="/mine-turer" />
 
       <main className="page page-account">
-        <header style={{ padding: "56px 0 40px" }}>
-          <h1 className="display" style={{ fontSize: "clamp(38px, 5vw, 56px)" }}>
+        <header style={{ padding: "48px 0 32px" }}>
+          <h1 className="display" style={{ fontSize: "clamp(56px, 6.5vw, 84px)" }}>
             {t.heading}
           </h1>
-          <p style={{ fontSize: 15, lineHeight: "24px", margin: "14px 0 0", color: MUTED_70, maxWidth: "60ch" }}>
+          <p className="lede" style={{ margin: "14px 0 0" }}>
             {t.storedLocally}
           </p>
         </header>
