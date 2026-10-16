@@ -348,11 +348,66 @@ select.input { border-radius: var(--radius-pill); }
   right: clamp(12px, 3vw, 24px);
   bottom: clamp(12px, 3vw, 24px);
   z-index: 1300;
+  display: inline-flex;
+  align-items: stretch;
+  border-radius: var(--radius-pill);
   background: var(--float-bg);
+  -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
-  border-color: transparent;
   box-shadow: var(--shadow-float);
+  overflow: hidden;
 }
+.feedback-open,
+.feedback-hide,
+.feedback-mini {
+  border: 0;
+  background: transparent;
+  font: inherit;
+  color: var(--color-text);
+  cursor: pointer;
+}
+.feedback-open {
+  padding: 0 8px 0 18px;
+  min-height: 42px;
+  font-size: 14px;
+  font-weight: 600;
+}
+/* Krysset: skjuler knappen. Egen trykkflate til høyre, med en hårstrek imellom. */
+.feedback-hide {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  margin-left: 6px;
+  border-left: 1px solid var(--color-divider);
+  color: var(--color-label);
+}
+.feedback-open:hover,
+.feedback-hide:hover { background: var(--color-tint); color: var(--color-text); }
+.feedback-open:focus-visible,
+.feedback-hide:focus-visible { outline: 2px solid var(--color-accent); outline-offset: -2px; }
+
+/* Skjult: bare et lite symbol nede i venstre hjørne. Et trykk henter knappen
+   fram igjen. */
+.feedback-mini {
+  position: fixed;
+  left: clamp(12px, 3vw, 24px);
+  bottom: clamp(12px, 3vw, 24px);
+  z-index: 1300;
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: var(--radius-pill);
+  background: var(--float-bg);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  box-shadow: var(--shadow-float);
+  color: var(--color-label);
+  opacity: 0.8;
+  transition: opacity 0.15s, color 0.15s;
+}
+.feedback-mini:hover { opacity: 1; color: var(--color-text); }
+.feedback-mini:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 2px; opacity: 1; }
 .dialog.feedback-dialog { width: min(520px, 100%); }
 /* Honningkrukka. Utenfor skjermen framfor `display: none`, som noen
    skjemautfyllere vet å hoppe over. */
@@ -520,39 +575,32 @@ select.input { border-radius: var(--radius-pill); }
 .note { font-size: 13px; line-height: 20px; color: var(--color-label); }
 .note-sm { font-size: 12px; line-height: 18px; color: var(--color-hint); }
 
-/* — plata: et kort med tittelrad og hårstrek-rader (forsida) — */
-.plate { overflow: hidden; }
-.plate-head { display: flex; flex-wrap: wrap; border-bottom: 1px solid var(--color-divider); }
-.plate-head > span { padding: 12px 22px; font-size: 13px; line-height: 24px; font-weight: 500; color: var(--color-label); }
-.plate-head > span:first-child { flex: 1; min-width: 16ch; color: var(--color-text); font-weight: 600; }
-.plate-head > span + span { white-space: nowrap; }
-.plate-foot {
-  margin: 0; padding: 12px 22px; border-top: 1px solid var(--color-divider);
-  font-size: 13px; line-height: 22px; color: var(--color-label);
+/* — «Toppkart i tall» på forsida (`components/landing/DataPlate.tsx`):
+     kort med stort tall, som nøkkeltallene i turguiden — */
+.figures { padding: 24px 0 60px; }
+.figures-label {
+  font-family: var(--font-body); font-size: 13px; font-weight: 500;
+  line-height: 1.4; letter-spacing: 0; color: var(--color-label);
+  margin: 0 0 10px;
 }
-.hairline { border-bottom: 1px solid var(--color-tint-3); }
-.plate-idx { width: 64px; padding: 12px 0 12px 22px; font-size: 13px; font-weight: 600; color: var(--color-accent); }
-.plate-prop { width: 30%; padding: 12px 22px 12px 0; font-size: 15px; }
-.plate-val {
-  width: 22%; padding: 12px 22px 12px 0;
-  font-family: var(--font-heading); font-size: 30px; line-height: 1;
-  letter-spacing: -0.01em; white-space: nowrap;
+.figures-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+  gap: 10px;
 }
-.plate-rem { padding: 12px 22px 12px 0; font-size: 14px; color: var(--color-muted); }
-@media (max-width: 620px) {
-  .plate .table, .plate .table tbody { display: block; }
-  .plate .table tr {
-    display: grid; grid-template-columns: auto 1fr auto;
-    align-items: baseline; column-gap: 12px; padding: 10px 16px;
-    border-bottom: 1px solid var(--color-tint-3);
-  }
-  .plate .table td { display: block; width: auto; padding: 0; border-bottom: 0; }
-  .plate-val { font-size: 24px; }
-  .plate-rem {
-    position: absolute; width: 1px; height: 1px;
-    padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap;
-  }
+.figure {
+  padding: 16px 20px 18px;
+  border-radius: var(--radius-card);
+  background: var(--color-card);
+  box-shadow: var(--shadow-card);
 }
+.figure-label { font-size: 12px; font-weight: 500; letter-spacing: 0.02em; color: rgba(28, 38, 34, 0.6); }
+.figure-value {
+  font-family: var(--font-heading); font-size: 56px; line-height: 1;
+  letter-spacing: -0.02em; margin: 6px 0 0;
+}
+.figure-note { margin: 8px 0 0; font-size: 14px; line-height: 21px; color: var(--color-muted); }
+.figures-foot { margin: 14px 0 0; }
 
 /* — tallkort — */
 .stat-l { font-size: 12px; font-weight: 500; letter-spacing: 0.02em; color: var(--color-label); }

@@ -1,12 +1,14 @@
 "use client";
 
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState, useSyncExternalStore } from "react";
 import { usePathname } from "next/navigation";
+import { MessageSquare, X } from "lucide-react";
 
 import type { Lang } from "@/lib/i18n";
 import { FEEDBACK_MAX_LENGTH, feedbackDict } from "@/lib/i18n/feedback";
 
 /** Floating «Gi tilbakemelding» button, bottom right, on every page but one.
+ *  The reader can hide it; see `HIDDEN_KEY` below.
  *
  *  `/kart` is excluded deliberately. Its map pane is fixed to the bottom-right
  *  corner, and Leaflet renders the tile attribution there — «© Kartverket», a
@@ -20,6 +22,44 @@ import { FEEDBACK_MAX_LENGTH, feedbackDict } from "@/lib/i18n/feedback";
 
 type State = "idle" | "sending" | "done";
 
+/** Knappen kan skjules. Da står bare et lite symbol igjen nede i venstre
+ *  hjørne, og et trykk på det henter knappen fram igjen. Valget huskes på
+ *  enheten (`localStorage`), så den holder seg skjult fra side til side.
+ *  Kan lagringen ikke leses eller skrives, står knappen — en knapp som ikke
+ *  lar seg skjule er bedre enn en som forsvinner for godt. */
+const HIDDEN_KEY = "tk_feedback_hidden";
+const hiddenListeners = new Set<() => void>();
+
+function readHidden(): boolean {
+  try {
+    return window.localStorage.getItem(HIDDEN_KEY) === "1";
+  } catch {
+    return false;
+  }
+}
+
+function subscribeHidden(listener: () => void): () => void {
+  hiddenListeners.add(listener);
+  const onStorage = (event: StorageEvent) => {
+    if (event.key === HIDDEN_KEY || event.key === null) listener();
+  };
+  window.addEventListener("storage", onStorage);
+  return () => {
+    hiddenListeners.delete(listener);
+    window.removeEventListener("storage", onStorage);
+  };
+}
+
+function writeHidden(hidden: boolean) {
+  try {
+    if (hidden) window.localStorage.setItem(HIDDEN_KEY, "1");
+    else window.localStorage.removeItem(HIDDEN_KEY);
+  } catch {
+    return;
+  }
+  hiddenListeners.forEach((listener) => listener());
+}
+
 export function Feedback({ lang, email }: { lang: Lang; email: string | null }) {
   const t = feedbackDict(lang);
   const pathname = usePathname();
@@ -31,6 +71,17 @@ export function Feedback({ lang, email }: { lang: Lang; email: string | null }) 
 
   const textareaRef = useRef<HTMLTextAreaElement>(null);
   const openerRef = useRef<HTMLButtonElement>(null);
+  const showRef = useRef<HTMLButtonElement>(null);
+  const hidden = useSyncExternalStore(subscribeHidden, readHidden, () => false);
+  /* Fokus følger knappen: skjules den, havner fokus på symbolet som henter den
+     fram, og omvendt — ellers står tastaturet på et element som ikke finnes. */
+  const focusAfterToggle = useRef<"show" | "open" | null>(null);
+  useEffect(() => {
+    const target = focusAfterToggle.current;
+    focusAfterToggle.current = null;
+    if (target === "show") showRef.current?.focus();
+    if (target === "open") openerRef.current?.focus();
+  }, [hidden]);
 
   const close = useCallback(() => {
     setOpen(false);
@@ -99,18 +150,48 @@ export function Feedback({ lang, email }: { lang: Lang; email: string | null }) 
 
   return (
     <>
-      <button
-        ref={openerRef}
-        type="button"
-        className="btn btn-secondary feedback-fab"
-        onClick={() => {
-          setState("idle");
-          setError(null);
-          setOpen(true);
-        }}
-      >
-        {t.open}
-      </button>
+      {hidden ? (
+        <button
+          ref={showRef}
+          type="button"
+          className="feedback-mini"
+          aria-label={t.show}
+          title={t.show}
+          onClick={() => {
+            focusAfterToggle.current = "open";
+            writeHidden(false);
+          }}
+        >
+          <MessageSquare size={16} strokeWidth={1.75} aria-hidden="true" />
+        </button>
+      ) : (
+        <div className="feedback-fab">
+          <button
+            ref={openerRef}
+            type="button"
+            className="feedback-open"
+            onClick={() => {
+              setState("idle");
+              setError(null);
+              setOpen(true);
+            }}
+          >
+            {t.open}
+          </button>
+          <button
+            type="button"
+            className="feedback-hide"
+            aria-label={t.hide}
+            title={t.hide}
+            onClick={() => {
+              focusAfterToggle.current = "show";
+              writeHidden(true);
+            }}
+          >
+            <X size={14} strokeWidth={2} aria-hidden="true" />
+          </button>
+        </div>
+      )}
 
       {open && (
         <div

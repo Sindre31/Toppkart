@@ -15,15 +15,12 @@
 
 .heroImage {
   object-fit: cover;
-  /* Toppen sitter ~65 % inn i bildet. Litt til høyre for midten holder den i
-     ramma på brede skjermer uten å skyve dalbunnen — den lyse flata teksten
-     står på — ut av utsnittet.
-
-     Loddrett: 38, ikke 50. Jo bredere seksjonen blir, jo mer skaleres bildet
-     opp og jo mer faller bort over og under. På 1440 er det 226 piksler, og
-     sentrert kutter de «1478 MOH» tvers over — halv tekst leser som en feil,
-     ikke som et utsnitt. 38 % legger snittet over etiketten på alle bredder. */
-  object-position: 60% 38%;
+  /* Toppen sitter ~65 % inn i bildet og bare ~12 % fra overkanten. Utsnittet
+     forankres derfor i overkanten: jo bredere seksjonen blir, jo mer skaleres
+     bildet opp og jo mer faller bort, og med et midtstilt utsnitt var det
+     toppen og «1478 MOH» som forsvant. Nå er det dalbunnen nederst som gir
+     seg — den toner uansett ut mot sidefargen. */
+  object-position: 60% 0%;
   z-index: 0;
 }
 
@@ -74,7 +71,7 @@
    heller enn som en overgang mot resten av sida. */
 @media (max-width: 760px) {
   .heroImage {
-    object-position: 68% 42%;
+    object-position: 68% 0%;
   }
 
   .hero::after {

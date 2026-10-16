@@ -65,9 +65,6 @@ export function NavLinks({ lang, current }: { lang: Lang; current?: string }) {
       <Link className="nav-link" href="/mine-turer" aria-current={here("/mine-turer")}>
         {t.myTours}
       </Link>
-      <Link className="nav-link" href="/om" aria-current={here("/om")}>
-        {t.about}
-      </Link>
     </>
   );
 }
@@ -75,7 +72,7 @@ export function NavLinks({ lang, current }: { lang: Lang; current?: string }) {
 /** Page footer. The language switcher lives in the nav rather than down here —
  *  same corner on every page, no scrolling to reach it.
  *
- *  «Vilkår» and «Personvern» sit on every page deliberately, so they are
+ *  «Om», «Vilkår» and «Personvern» sit on every page deliberately, so they are
  *  reachable without hunting. «Støtt» points at the Vipps section on `/om`. */
 export function SiteFooter({
   lang,
@@ -93,6 +90,9 @@ export function SiteFooter({
           hver side, og en bunnlinje som gjentar hvem nettstedet er, rett før
           lenkene til vilkårene, er den ene tingen her ingen skal noe sted med. */}
       <Link href="/">{t.footerMap}</Link>
+      {/* «Om» står her og ikke i menyen: den er ikke et sted man skal ofte, og
+          menyen holdes til det man bruker turene til. */}
+      <Link href="/om">{t.about}</Link>
       <Link href="/vilkar">{t.footerTerms}</Link>
       <Link href="/personvern">{t.footerPrivacy}</Link>
       <Link href="/om#stott">{t.footerSupportUs}</Link>

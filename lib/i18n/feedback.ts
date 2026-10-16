@@ -12,6 +12,10 @@ import { pick } from "./index";
 export interface FeedbackDict {
   /** Floating button, and the dialog's accessible name. */
   open: string;
+  /** Krysset som skjuler knappen, og symbolet i venstre hjørne som henter
+   *  den fram igjen. */
+  hide: string;
+  show: string;
   title: string;
   intro: string;
   label: string;
@@ -41,6 +45,8 @@ export interface FeedbackDict {
 const FEEDBACK: Translated<FeedbackDict> = {
   no: {
     open: "Gi tilbakemelding",
+    hide: "Skjul tilbakemeldingsknappen",
+    show: "Vis «Gi tilbakemelding»",
     title: "Gi tilbakemelding",
     intro:
       "Fant du noe som er feil, uklart eller mangler? Skriv det her — det går rett til den som lager Toppkart.",
@@ -61,6 +67,8 @@ const FEEDBACK: Translated<FeedbackDict> = {
   },
   en: {
     open: "Give feedback",
+    hide: "Hide the feedback button",
+    show: "Show «Give feedback»",
     title: "Give feedback",
     intro:
       "Found something wrong, unclear or missing? Write it here — it goes straight to the person who makes Toppkart.",
