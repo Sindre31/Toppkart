@@ -19,6 +19,7 @@ import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { NavMenu } from "@/components/NavMenu";
 import { GRADE_COLORS } from "@/lib/config";
 import type { RouteMeta } from "@/lib/tours";
+import type { RouteFacts } from "@/lib/route-facts";
 import type { Lang } from "@/lib/i18n";
 import { commonDict } from "@/lib/i18n/common";
 import { mapDict, type Dict } from "@/lib/i18n/map";
@@ -132,6 +133,7 @@ export default function MapView({
   tours,
   regions,
   routeMeta,
+  routeFacts,
   initialSlug,
   initialRouteId,
   photos,
@@ -153,6 +155,9 @@ export default function MapView({
   /** Rutene per tur uten geometrien — det rutevelgeren viser. Punktene tegnes av
    *  `MapCanvas`, som laster dem i sin egen bunt. */
   routeMeta: Record<string, RouteMeta[]>;
+  /** Høydemeter, normaltid og himmelretning per rute, for toppene med flere
+   *  veier opp. Panelet viser tallene for ruta som er valgt. */
+  routeFacts: Record<string, Record<string, RouteFacts>>;
   /** Menylenkene, rendret på serveren av `NavLinks` og sendt inn ferdige.
    *
    *  Topbaren her er den eneste navigasjonen på nettstedet som ikke er
@@ -345,6 +350,14 @@ export default function MapView({
   }, []);
 
   const photo = selected ? photos[selected.slug] : undefined;
+  /* Tallene for ruta som er valgt; turens egne når den bare har én. */
+  const facts: RouteFacts | null = selected
+    ? ((activeRouteId ? routeFacts[selected.slug]?.[activeRouteId] : undefined) ?? {
+        verticalM: selected.verticalM,
+        duration: selected.duration,
+        aspect: selected.aspect,
+      })
+    : null;
 
   return (
     <div className={s.page} data-pane={mobilePane}>
@@ -565,15 +578,15 @@ export default function MapView({
                   </div>
                   <div className={s.stat}>
                     <div className={s.statL}>{t.stHm}</div>
-                    <div className={s.statV}>↑ {selected.verticalM} m</div>
+                    <div className={s.statV}>↑ {facts!.verticalM} m</div>
                   </div>
                   <div className={s.stat}>
                     <div className={s.statL}>{t.stTime}</div>
-                    <div className={s.statV}>{selected.duration}</div>
+                    <div className={s.statV}>{facts!.duration}</div>
                   </div>
                   <div className={s.stat}>
                     <div className={s.statL}>{t.stAsp}</div>
-                    <div className={s.statV}>{selected.aspect}</div>
+                    <div className={s.statV}>{facts!.aspect}</div>
                   </div>
                 </div>
 

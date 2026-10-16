@@ -4,6 +4,9 @@ import { NavLinks } from "@/components/SiteChrome";
 import { getLang } from "@/lib/i18n/server";
 import { mapDict } from "@/lib/i18n/map";
 import { localizeTours } from "@/lib/i18n/content";
+import { aspectLabel, durationLabel } from "@/lib/i18n/format";
+import type { Lang } from "@/lib/i18n";
+import { routeFacts, type RouteFacts } from "@/lib/route-facts";
 import { atWidth, photoFor } from "@/lib/peak-photos";
 import { POPULARITY } from "@/lib/popularity";
 import { byPopularity } from "@/lib/popularity-order";
@@ -32,6 +35,25 @@ function panelPhotos() {
       return photo ? [[tour.slug, atWidth(photo, 960)]] : [];
     }),
   );
+}
+
+/** Høydemeter, normaltid og himmelretning for hver rute, på de toppene som
+ *  har mer enn én vei opp — så tallene i panelet følger ruta leseren velger.
+ *  Se `lib/route-facts.ts`. Oversatt her, som turene. */
+function allRouteFacts(lang: Lang): Record<string, Record<string, RouteFacts>> {
+  const out: Record<string, Record<string, RouteFacts>> = {};
+  for (const tour of TOURS) {
+    const routes = routesFor(tour);
+    if (routes.length < 2) continue;
+    const facts = routeFacts(tour, routes);
+    out[tour.slug] = Object.fromEntries(
+      Object.entries(facts).map(([id, f]) => [
+        id,
+        { verticalM: f.verticalM, duration: durationLabel(f.duration, lang), aspect: aspectLabel(f.aspect, lang) },
+      ]),
+    );
+  }
+  return out;
 }
 
 /** The map — and every guide behind it — is open to everyone. */
@@ -79,6 +101,7 @@ export default async function KartPage({
         sortedByPopularity={Object.keys(POPULARITY).length > 0}
         regions={REGIONS}
         routeMeta={routeMeta()}
+        routeFacts={allRouteFacts(lang)}
         initialSlug={initialSlug}
         initialRouteId={initialRouteId}
         photos={panelPhotos()}
