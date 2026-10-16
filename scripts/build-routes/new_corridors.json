@@ -216,7 +216,7 @@
       "routeName": "Normalruta fra Liland gjennom Lilandsdalen",
       "routeDescriptionFull": "Normalruta fra Liland/Skinvollen innerst i Austnesfjorden: følg lysløypa et stykke og videre inn i Lilandsdalen gjennom bjørkeskogen, opp den bratte renna fra ca. 250 til 360 moh og deretter i slakere terreng oppover dalen til ca. 620 moh. Der elveleiet bratter til, går en tydelig rampe opp mot høyre inn i den store skålformasjonen som utgjør toppen av sørrenna, og videre mot skaret og toppen. Øverste del er klyving med stegjern og isøks. Sørrenna brukes som nedkjøring og krever bil nummer to.",
       "trailhead": {
-        "name": "Vegenden i Geitgallien ved Skinvollen, Liland",
+        "name": "Veienden i Geitgallien ved Skinvollen, Liland",
         "lat": 68.34799,
         "lng": 14.74685,
         "elevationM": 19.76,
@@ -469,7 +469,7 @@
       "routeName": "Normalruta frå Langøylia over Trollaksla og Sætrenibba",
       "routeDescriptionFull": "Frå vestenden av hyttevegen i Langøylia går ein opp lia gjennom open lauvskog, aust for Gjøelva, til ein når Aksla på om lag 920 moh. Vidare følgjer ein ryggen nordvestover til Trollaksla (1255 moh.) og deretter sørryggen litt opp og ned nordover til Sætrenibba (1370 moh.) og skaret nord for denne, som ligg på 1226 moh. Frå skaret rundar ein austover inn i sida som fell mot Kjellstaddalen og traverserer denne opp på ryggen aust for toppen. Der, kring 1420 moh., tek dei fleste av seg skia: dei siste 103 høgdemetrane er ein smal og eksponert rygg. Vanlegaste nedkøyring er ned Kjellstaddalen, nesten 1000 høgdemeter i 25-35 grader ned til Kjellstadsætra, og deretter eit par flate kilometer ut dalen og vestover attende til bilen.",
       "trailhead": {
-        "name": "Langøylia hyttefelt, vestre vegende",
+        "name": "Langøylia hyttefelt, vestre veiende",
         "lat": 62.0341,
         "lng": 6.74613,
         "elevationM": 387.7,
@@ -537,7 +537,7 @@
       "routeName": "Normalruta frå Norang gjennom Konedalen",
       "routeDescriptionFull": "Frå vegenden ved Lisjeholen sør for Norang-gardane går ein den bratte stien opp til Konedalen med skia på sekken, først på venstre side av elva og så over på høgre. Oppe i dalen tek ein på seg skia og følgjer det slake dalføret sørvestover til om lag 740 moh. Der svingar ein til høgre og sikk-sakkar opp den 33-36 grader bratte sida i nordvest til ein når toppryggen ved 1240 moh. Ryggen blir følgd sørvestover heilt til topps; ein held seg midt på han, med skavlar mot Konedalen i søraust og den stupbratte nordvestveggen mot Hjørundfjorden på hi sida. Vanlegaste nedkøyring er same veg tilbake: 35 grader frå ryggen ned mot Konedalen, slakare vidare ut dalen.",
       "trailhead": {
-        "name": "Norang, vegenden ved Lisjeholen",
+        "name": "Norang, veienden ved Lisjeholen",
         "lat": 62.18571,
         "lng": 6.66455,
         "elevationM": 60.82,
@@ -1055,7 +1055,7 @@
       "routeName": "Normalruta frå Vasshuset over skaret og sørryggen",
       "routeDescriptionFull": "Frå parkeringa ved vassverket øvst i Vikegeila i Ørsta sentrum (149 moh) følgjer ein anleggsvegen oppover Skåla. Ved om lag 400 moh går ein av vegen, på skrå nordaustover mot Vikeelva, kryssar elva og siktar mot det lågaste punktet på ryggen mellom Vallahornet og Saudehornet (812 moh). Over skaret følgjer ein sørryggen om lag 490 høgdemeter opp til toppen på 1303 moh; dei siste 170 høgdemetrane held 33-39°. Vanlegaste nedkøyringa går same vegen, men gjerne på flanken på skiløparen si høgre side av renna - sørvestflanken, som held om lag 37° i 600 høgdemeter.",
       "trailhead": {
-        "name": "Vasshuset (vassverket) i Vikegeila",
+        "name": "Vasshuset (vannverket) i Vikegeila",
         "lat": 62.21087,
         "lng": 6.12681,
         "elevationM": 149.26,
@@ -3682,7 +3682,7 @@
       "gradeReason": "Fri Flyt fører turen som KAST 1 – enkelt med bratteste punkt under 30 grader, ut.no som easy, og ut.no si eiga skildring seier «terrenget er jevnt og passe bratt mellom 20-25 grader». 470 høgdemeter på 2,5 km frå ein vinteropen riksveg er så enkelt ein topptur blir.",
       "hazardNotes": "Ut.no: «Ingen spesiell skredfare hvis man følger de slake partiene, men det er noen helninger som er over 30 grader.» Fri Flyt namngir kva som er brattast: «skredterreng nord for toppen», og åtvarar mot å trekke for langt til høgre i starten av nedkøyringa. Turen ligg på Hemsedalsfjellet der rv 52 stengjer i uvêr, og det er vêret og ikkje terrenget som avlyser dagen.",
       "teaserNo": "470 høgdemeter frå rv 52 ved Eldrevatn opp ei jamn 20–25-graders flanke — nybegynnartoppen på Hemsedalsfjellet.",
-      "teaserEn": "470 m of climbing from the rv 52 at Eldrevatn up an even 20–25° flank — the beginner's summit on Hemsedalsfjellet.",
+      "teaserEn": "470 m of climbing from the rv 52 at Eldrevatn up an even 20–25 degrees flank — the beginner's summit on Hemsedalsfjellet.",
       "sources": [
         "https://www.friflyt.no/topptur/skiturer-hemsedal/slettind-hemsedal",
         "https://ut.no/turforslag/118246"
@@ -8239,7 +8239,7 @@
       "roadClosedInWinter": false,
       "hazardNotes": "Fri Flyt: KAST 2 – Utfordrende. Isøks og stegjern. Ryggpartiet held 30 grader; austsida med Tunellen startar på 30–40 grader og krev stabil snø. Parkering ved Sjøvoll krev grunneigars samtykke — bruk plassen ved Dalelva.",
       "teaserNo": "780 høydemeter fra fjæra innerst i Fiskefjorden: traktorveien øst for Gårdselva, mot Mølnskaret — og nordryggen til topps, med isøks og stegjern for ryggpartiet på 30 grader.",
-      "teaserEn": "780 metres of ascent from the shore at the head of Fiskefjorden: the tractor road east of Gårdselva, toward Mølnskaret — and the north ridge to the top, with ice axe and crampons for the 30-degree ridge section.",
+      "teaserEn": "780 metres of ascent from the shore at the head of Fiskefjorden: the tractor road east of Gårdselva, towards Mølnskaret — and the north ridge to the top, with ice axe and crampons for the 30-degree ridge section.",
       "sources": [
         "https://www.friflyt.no/topptur/harstad/taraldsviktinden",
         "https://www.friflyt.no/randonee/turomraade-tjeldsund"
@@ -11268,7 +11268,7 @@
       "roadClosedInWinter": false,
       "hazardNotes": "Fri Flyt: KAST 3 – Komplekst. Alpinøks og stegjern. «Følg den bratte dalen som blir brattere og brattere. Sjekk jevnlig snøen og om den er stabil, forholdene kan endre seg oppover.» På ca. 600 moh ligg eit brattare parti, nesten som eit band over heile sida — skift retning til høgre (sørover) for å koma lettare opp på ryggen. Nedkjøringa på vestsida er stort sett 30–40 grader.",
       "teaserNo": "1010 høgdemeter frå Vangpollen kraftstasjon: den bratte dalen som blir brattare og brattare, til høgre under bandet på 600 moh og opp ryggen — ein av Hinnøyas tusenmetringar, med bratt kjøring heilt ned til havet.",
-      "teaserEn": "1010 metres of ascent from the Vangpollen power station: the steep valley that keeps steepening, right beneath the band at 600 moh and up the ridge — one of Hinnøya's thousand-metre peaks, with steep skiing all the way back to the sea.",
+      "teaserEn": "1010 metres of ascent from the Vangpollen power station: the steep valley that keeps steepening, right beneath the band at 600 m and up the ridge — one of Hinnøya's thousand-metre peaks, with steep skiing all the way back to the sea.",
       "sources": [
         "https://www.friflyt.no/topptur/harstad/stortinden-1021",
         "https://www.friflyt.no/randone/turomraade-kvaefjord-og-sortland"
@@ -11576,7 +11576,7 @@
       "roadClosedInWinter": false,
       "hazardNotes": "Ut.no: «pass på å unngå stupene som ligger på sørsiden av Gaupekollen.» Nedkjøringa er vanskelegare enn oppturen: «Nedkjøringen kan fort bli ganske teknisk og byksete om man ikke har sett seg ut noen åpne felt på forkant», og kilden rår til å følgje sommerstiane, t.d. den blåmerkte ned til Øyungen. Tett skog, kratt og elver. Kollene liknar kvarandre — «plutselig står du på Mellomkollen når du trodde du var på Midtkollen» — så kart og kompass. Fredet naturreservat.",
       "teaserNo": "400 høydemeter fra bussen på Skar: over Skarselva og gjennom skogen i Maridalsalpene til Mellomkollen, den høyeste kollen i denne delen av Nordmarka — en topptur innenfor bygrensa.",
-      "teaserEn": "400 metres of ascent from the bus stop at Skar: over Skarselva and up through the forest of the Maridalen «Alps» to Mellomkollen, the highest hill in this part of Nordmarka — a ski tour inside the city limits.",
+      "teaserEn": "400 metres of ascent from the bus stop at Skar: over Skarselva and up through the forest of the Maridalen “Alps” to Mellomkollen, the highest hill in this part of Nordmarka — a ski tour inside the city limits.",
       "sources": [
         "https://ut.no/turforslag/1113693/20-innenfor-20-topptur-i-oslo-i-maridalsalpene",
         "https://ut.no/api/gpx/trip/1113693",

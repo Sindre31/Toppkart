@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-import { Blueprint, SectionKicker } from "@/components/Blueprint";
+import { Blueprint } from "@/components/Blueprint";
 import { SiteFooter, SiteNav } from "@/components/SiteChrome";
 import { requireAdmin } from "@/lib/admin";
 import { formatDateTime } from "@/lib/dates";
@@ -136,18 +136,10 @@ export default async function TilbakemeldingerPage() {
     <div className="shell">
       <SiteNav lang={lang} />
 
-      <main className="page page-narrow" style={{ paddingBottom: 72 }}>
+      <main className="page page-narrow" style={{ width: "100%" }}>
         <header style={{ padding: "48px 0 8px" }}>
           <span className="kicker">Admin</span>
-          <h1
-            style={{
-              fontSize: "clamp(30px, 4vw, 44px)",
-              lineHeight: 1.08,
-              letterSpacing: "0.02em",
-              textTransform: "uppercase",
-              margin: "10px 0 0",
-            }}
-          >
+          <h1 className="display" style={{ fontSize: "clamp(38px, 6vw, 72px)", margin: "8px 0 0 -0.03em" }}>
             Tilbakemeldinger
           </h1>
           <p className="note" style={{ margin: "14px 0 0" }}>
@@ -165,7 +157,7 @@ export default async function TilbakemeldingerPage() {
 
         {failed ? (
           <section style={{ marginTop: 32 }}>
-            <SectionKicker>01 · Innboks</SectionKicker>
+            <h2 className="h-section" style={{ margin: "0 0 16px" }}>Innboks</h2>
             <Blueprint style={{ padding: "24px 28px" }}>
               <p className="prose" style={{ margin: 0 }}>
                 Tabellen svarte ikke. Vanligste årsak er at{" "}
@@ -176,7 +168,7 @@ export default async function TilbakemeldingerPage() {
           </section>
         ) : rows.length === 0 ? (
           <section style={{ marginTop: 32 }}>
-            <SectionKicker>01 · Innboks</SectionKicker>
+            <h2 className="h-section" style={{ margin: "0 0 16px" }}>Innboks</h2>
             <Blueprint style={{ padding: "24px 28px" }}>
               <p className="prose" style={{ margin: 0 }}>
                 Ingenting har kommet inn. Knappen står nederst til høyre på alle sider unntatt
@@ -187,7 +179,7 @@ export default async function TilbakemeldingerPage() {
         ) : (
           <>
             <section style={{ marginTop: 32 }}>
-              <SectionKicker>01 · Ubehandlet ({unhandled.length})</SectionKicker>
+              <h2 className="h-section" style={{ margin: "0 0 16px" }}>Ubehandlet ({unhandled.length})</h2>
               {unhandled.length === 0 ? (
                 <Blueprint style={{ padding: "24px 28px" }}>
                   <p className="prose" style={{ margin: 0 }}>
@@ -195,7 +187,7 @@ export default async function TilbakemeldingerPage() {
                   </p>
                 </Blueprint>
               ) : (
-                <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
+                <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
                   {unhandled.map((row) => (
                     <Message key={row.id} row={row} />
                   ))}
@@ -205,8 +197,8 @@ export default async function TilbakemeldingerPage() {
 
             {handled.length > 0 && (
               <section style={{ marginTop: 44 }}>
-                <SectionKicker>02 · Behandlet ({handled.length})</SectionKicker>
-                <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
+                <h2 className="h-section" style={{ margin: "0 0 16px" }}>Behandlet ({handled.length})</h2>
+                <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
                   {handled.map((row) => (
                     <Message key={row.id} row={row} />
                   ))}
@@ -215,9 +207,8 @@ export default async function TilbakemeldingerPage() {
             )}
           </>
         )}
+        <SiteFooter lang={lang} />
       </main>
-
-      <SiteFooter lang={lang} />
     </div>
   );
 }

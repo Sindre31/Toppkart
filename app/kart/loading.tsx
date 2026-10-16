@@ -1,69 +1,44 @@
-/** Kartets eget skjelett. Rammen her er en annen enn på resten av nettstedet —
- *  fast topbar på 56px, 372px liste til venstre, kart som fyller resten — så
- *  rotskjelettet ville tegnet en side som ikke ligner den som kommer.
+import s from "./kart.module.css";
+
+/** Kartets eget skjelett — det som står på forsida i øyeblikket før kartet
+ *  kommer. Rammen her er en annen enn på resten av nettstedet, så rotskjelettet
+ *  ville tegnet en side som ikke ligner den som kommer.
  *
- *  Samme krav som der: statisk, ingen sesjon, ingen ordbok. Målene speiler
- *  `kart.module.css`, slik at det som strømmer inn legger seg oppå og ikke
- *  flytter på noe.
+ *  Klassene er de samme som `MapView` bruker (`kart.module.css`): topbaren på
+ *  64px, panelet og kartflaten som to flytende flater med radius og skygge, og
+ *  på telefon bare kartet. Da kan skjelettet ikke drive fra sida det står i for
+ *  — det som strømmer inn, legger seg oppå og flytter ikke på noe.
+ *
+ *  Samme krav som rotskjelettet: statisk, ingen sesjon, ingen ordbok.
+ *  Ordmerket er det ene ordet som er det samme på begge språk.
  */
 export default function LoadingMap() {
   return (
-    <div style={{ position: "fixed", inset: 0, overflow: "hidden" }} aria-hidden="true">
-      <header
-        style={{
-          position: "fixed",
-          inset: "0 0 auto 0",
-          height: 56,
-          display: "flex",
-          alignItems: "center",
-          gap: 20,
-          padding: "0 20px",
-          background: "var(--color-bg)",
-          borderBottom: "1px solid var(--color-divider)",
-          zIndex: 1200,
-        }}
-      >
-        <span className="skeleton-brand" style={{ marginRight: "auto" }}>
-          Toppkart
-        </span>
+    <div className={s.page} data-pane="map" aria-hidden="true">
+      <header className={s.topbar}>
+        <span className={s.brand}>Toppkart</span>
         <span className="skeleton-block" style={{ width: 56, height: 14 }} />
-        <span className="skeleton-block" style={{ width: 44, height: 14 }} />
-        <span className="skeleton-block" style={{ width: 70, height: 30 }} />
+        <span className="skeleton-block" style={{ width: 70, height: 14 }} />
+        <span className="skeleton-block" style={{ width: 120, height: 34, borderRadius: 999 }} />
       </header>
 
-      {/* Kartflata ligger under lista og fyller alt under baren — på telefon
-          dekker lista 85vw av den. Den er en rolig flate og ikke en puls:
-          Leaflet tegner seg først etter at klienten har startet, så en puls her
-          ville lovet noe som ikke kommer med denne strømmen. */}
-      <div
-        style={{
-          position: "fixed",
-          inset: "56px 0 0 0",
-          background: "color-mix(in srgb, var(--color-text) 5%, transparent)",
-        }}
-      />
-
-      <aside
-        style={{
-          position: "fixed",
-          top: 56,
-          left: 0,
-          bottom: 0,
-          width: "min(372px, 85vw)",
-          padding: 16,
-          display: "flex",
-          flexDirection: "column",
-          gap: 12,
-          background: "var(--color-bg)",
-          borderRight: "1px solid var(--color-divider)",
-        }}
-      >
-        <span className="skeleton-block" style={{ height: 34 }} />
-        <span className="skeleton-block" style={{ height: 30, width: "70%" }} />
-        {[0, 1, 2, 3, 4].map((i) => (
-          <span key={i} className="skeleton-block" style={{ height: 78, marginTop: i ? 8 : 0 }} />
-        ))}
+      <aside className={s.side}>
+        <div className={s.panel} style={{ padding: 16, gap: 10 }}>
+          <span className="skeleton-block" style={{ height: 42, borderRadius: 999 }} />
+          <span className="skeleton-block" style={{ height: 30, width: "80%", borderRadius: 999 }} />
+          <span className="skeleton-block" style={{ height: 30, width: "60%", borderRadius: 999 }} />
+          {[0, 1, 2, 3, 4].map((i) => (
+            <span key={i} className="skeleton-block" style={{ height: 62, marginTop: i ? 4 : 12 }} />
+          ))}
+        </div>
       </aside>
+
+      {/* Kartflaten er en rolig flate og ikke en puls: Leaflet tegner seg først
+          etter at klienten har startet, så en puls her ville lovet noe som ikke
+          kommer med denne strømmen. */}
+      <div className={s.map}>
+        <div className={s.mapFrame} style={{ background: "var(--color-tint-2)" }} />
+      </div>
     </div>
   );
 }

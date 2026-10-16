@@ -22,7 +22,7 @@ import { FEEDBACK_MAX_LENGTH, feedbackDict } from "@/lib/i18n/feedback";
 
 type State = "idle" | "sending" | "done";
 
-/** Knappen kan skjules. Da står bare et lite symbol igjen nede i venstre
+/** Knappen kan skjules. Da står bare et lite symbol igjen nede i høyre
  *  hjørne, og et trykk på det henter knappen fram igjen. Valget huskes på
  *  enheten (`localStorage`), så den holder seg skjult fra side til side.
  *  Kan lagringen ikke leses eller skrives, står knappen — en knapp som ikke

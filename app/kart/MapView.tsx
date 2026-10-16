@@ -19,6 +19,7 @@ import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { NavMenu } from "@/components/NavMenu";
 import { GRADE_COLORS } from "@/lib/config";
 import type { RouteMeta } from "@/lib/tours";
+import type { RouteFacts } from "@/lib/route-facts";
 import type { Lang } from "@/lib/i18n";
 import { commonDict } from "@/lib/i18n/common";
 import { mapDict, type Dict } from "@/lib/i18n/map";
@@ -39,6 +40,7 @@ import { AvalancheCard, WeatherCard } from "@/components/conditions/ConditionCar
 import { MarkButtons } from "@/components/marks/MarkButtons";
 import { useTourMarks } from "@/components/marks/useTourMarks";
 import { marksDict } from "@/lib/i18n/marks";
+import { FilterSelect } from "./FilterSelect";
 import { useGeolocation, type GeoState } from "./useGeolocation";
 import s from "./kart.module.css";
 
@@ -132,6 +134,7 @@ export default function MapView({
   tours,
   regions,
   routeMeta,
+  routeFacts,
   initialSlug,
   initialRouteId,
   photos,
@@ -153,6 +156,9 @@ export default function MapView({
   /** Rutene per tur uten geometrien — det rutevelgeren viser. Punktene tegnes av
    *  `MapCanvas`, som laster dem i sin egen bunt. */
   routeMeta: Record<string, RouteMeta[]>;
+  /** Høydemeter, normaltid og himmelretning per rute, for toppene med flere
+   *  veier opp. Panelet viser tallene for ruta som er valgt. */
+  routeFacts: Record<string, Record<string, RouteFacts>>;
   /** Menylenkene, rendret på serveren av `NavLinks` og sendt inn ferdige.
    *
    *  Topbaren her er den eneste navigasjonen på nettstedet som ikke er
@@ -345,6 +351,14 @@ export default function MapView({
   }, []);
 
   const photo = selected ? photos[selected.slug] : undefined;
+  /* Tallene for ruta som er valgt; turens egne når den bare har én. */
+  const facts: RouteFacts | null = selected
+    ? ((activeRouteId ? routeFacts[selected.slug]?.[activeRouteId] : undefined) ?? {
+        verticalM: selected.verticalM,
+        duration: selected.duration,
+        aspect: selected.aspect,
+      })
+    : null;
 
   return (
     <div className={s.page} data-pane={mobilePane}>
@@ -395,65 +409,47 @@ export default function MapView({
                   </button>
                 ))}
               </div>
-              <select
-                className={s.pillSelect}
-                data-strong
-                aria-label={t.regionLabel}
+              <FilterSelect
+                strong
+                label={t.regionLabel}
                 value={region}
-                onChange={(e) => setRegion(e.target.value)}
-              >
-                <option value="">{t.allRegions}</option>
-                {regions.map((r) => (
-                  <option key={r} value={r}>
-                    {r}
-                  </option>
-                ))}
-              </select>
+                onChange={setRegion}
+                options={[{ value: "", label: t.allRegions }, ...regions.map((r) => ({ value: r, label: r }))]}
+              />
             </div>
 
             <div className={s.filterRow}>
-              <select
-                className={s.pillSelect}
-                aria-label={t.aspectFilterLabel}
-                data-on={aspect ? "" : undefined}
+              <FilterSelect
+                label={t.aspectFilterLabel}
                 value={aspect}
-                onChange={(e) => setAspect(e.target.value as AspectSector | "")}
-              >
-                <option value="">{t.allAspects}</option>
-                {ASPECT_SECTORS.map((a) => (
-                  <option key={a} value={a}>
-                    {t.aspectSectors[a]}
-                  </option>
-                ))}
-              </select>
-              <select
-                className={s.pillSelect}
-                aria-label={t.verticalFilterLabel}
-                data-on={vertical ? "" : undefined}
+                onChange={setAspect}
+                options={[
+                  { value: "", label: t.allAspects },
+                  ...ASPECT_SECTORS.map((a) => ({ value: a, label: t.aspectSectors[a] })),
+                ]}
+              />
+              <FilterSelect
+                label={t.verticalFilterLabel}
                 value={vertical}
-                onChange={(e) => setVertical(e.target.value as VerticalBand | "")}
-              >
-                <option value="">{t.allVertical}</option>
-                {VERTICAL_BANDS.map((b) => (
-                  <option key={b.id} value={b.id}>
-                    {t.verticalBands[b.id]}
-                  </option>
-                ))}
-              </select>
+                onChange={setVertical}
+                options={[
+                  { value: "", label: t.allVertical },
+                  ...VERTICAL_BANDS.map((b) => ({ value: b.id, label: t.verticalBands[b.id] })),
+                ]}
+              />
               {/* Bare når lista over favoritter og gåtte turer er lest. */}
               {markMap ? (
-                <select
-                  className={s.pillSelect}
-                  aria-label={m.filterLabel}
-                  data-on={mine ? "" : undefined}
+                <FilterSelect
+                  label={m.filterLabel}
                   value={mine}
-                  onChange={(e) => setMine(e.target.value as typeof mine)}
-                >
-                  <option value="">{m.filterAll}</option>
-                  <option value="favorites">{m.filterFavorites}</option>
-                  <option value="done">{m.filterDone}</option>
-                  <option value="notDone">{m.filterNotDone}</option>
-                </select>
+                  onChange={setMine}
+                  options={[
+                    { value: "", label: m.filterAll },
+                    { value: "favorites", label: m.filterFavorites },
+                    { value: "done", label: m.filterDone },
+                    { value: "notDone", label: m.filterNotDone },
+                  ]}
+                />
               ) : null}
             </div>
 
@@ -565,15 +561,15 @@ export default function MapView({
                   </div>
                   <div className={s.stat}>
                     <div className={s.statL}>{t.stHm}</div>
-                    <div className={s.statV}>↑ {selected.verticalM} m</div>
+                    <div className={s.statV}>↑ {facts!.verticalM} m</div>
                   </div>
                   <div className={s.stat}>
                     <div className={s.statL}>{t.stTime}</div>
-                    <div className={s.statV}>{selected.duration}</div>
+                    <div className={s.statV}>{facts!.duration}</div>
                   </div>
                   <div className={s.stat}>
                     <div className={s.statL}>{t.stAsp}</div>
-                    <div className={s.statV}>{selected.aspect}</div>
+                    <div className={s.statV}>{facts!.aspect}</div>
                   </div>
                 </div>
 

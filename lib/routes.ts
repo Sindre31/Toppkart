@@ -598,7 +598,7 @@ export const ROUTES: Record<string, readonly TourRoute[]> = {
   fastdalstinden: [
     {
       id: "varto",
-      name: "Normalruta I frå Varto",
+      name: "Normalruta I fra Varto",
       trailhead: "Varto",
       distanceM: 7205,
       gainM: 1271,
@@ -1183,7 +1183,7 @@ export const ROUTES: Record<string, readonly TourRoute[]> = {
   husfjellet: [
     {
       id: "skaland",
-      name: "Normalruta frå Skaland",
+      name: "Normalruta fra Skaland",
       trailhead: "Skaland",
       distanceM: 3295,
       gainM: 640,
@@ -1270,7 +1270,7 @@ export const ROUTES: Record<string, readonly TourRoute[]> = {
   skolpan: [
     {
       id: "normalruta",
-      name: "Normalruta frå Krokelvdalen",
+      name: "Normalruta fra Krokelvdalen",
       trailhead: "Krokelvdalen",
       distanceM: 2311,
       gainM: 607,
@@ -1302,7 +1302,7 @@ export const ROUTES: Record<string, readonly TourRoute[]> = {
   "tredje-svanfjell": [
     {
       id: "kaperdalen",
-      name: "Normalruta frå Kaperdalen",
+      name: "Normalruta fra Kaperdalen",
       trailhead: "Kaperdalen",
       distanceM: 2846,
       gainM: 664,
@@ -1336,7 +1336,7 @@ export const ROUTES: Record<string, readonly TourRoute[]> = {
   lonketind: [
     {
       id: "normalruta",
-      name: "Normalruta frå Finnelva",
+      name: "Normalruta fra Finnelva",
       trailhead: "Finnelva",
       distanceM: 3057,
       gainM: 784,
@@ -1553,7 +1553,7 @@ export const ROUTES: Record<string, readonly TourRoute[]> = {
   istinden: [
     {
       id: "normalvegen",
-      name: "Normalvegen frå Tindelva",
+      name: "Normalveien fra Tindelva",
       trailhead: "Tindelva",
       distanceM: 5238,
       gainM: 1432,
@@ -2206,7 +2206,7 @@ export const ROUTES: Record<string, readonly TourRoute[]> = {
     },
     {
       id: "rytterklofta",
-      name: "Rytterkløfta frå Vasskaret",
+      name: "Rytterkløfta fra Vasskaret",
       trailhead: "Vasskaret",
       distanceM: 6727,
       gainM: 1148,
@@ -3148,7 +3148,7 @@ export const ROUTES: Record<string, readonly TourRoute[]> = {
     },
     {
       id: "lapphaugen",
-      name: "Opp frå Lapphaugen turiststasjon",
+      name: "Opp fra Lapphaugen turiststasjon",
       trailhead: "Lapphaugen turiststasjon",
       distanceM: 4798,
       gainM: 1111,
@@ -4101,7 +4101,7 @@ export const ROUTES: Record<string, readonly TourRoute[]> = {
     },
     {
       id: "gullesfjordbotn",
-      name: "Østruta frå Gullesfjordbotn",
+      name: "Østruta fra Gullesfjordbotn",
       trailhead: "Gullesfjordbotn camping",
       distanceM: 8522,
       gainM: 1360,
@@ -5217,7 +5217,7 @@ export const ROUTES: Record<string, readonly TourRoute[]> = {
     },
     {
       id: "narvik",
-      name: "Frå Narvik gjennom Tøttadalen",
+      name: "Fra Narvik gjennom Tøttadalen",
       trailhead: "Taraldsvikfossen",
       distanceM: 9031,
       gainM: 1351,
@@ -5400,7 +5400,7 @@ export const ROUTES: Record<string, readonly TourRoute[]> = {
     {
       id: "normalruta",
       name: "Normalruta fra Liland gjennom Lilandsdalen",
-      trailhead: "Vegenden i Geitgallien ved Skinvollen, Liland",
+      trailhead: "Veienden i Geitgallien ved Skinvollen, Liland",
       distanceM: 3798,
       gainM: 1073,
       line: [
@@ -5675,7 +5675,7 @@ export const ROUTES: Record<string, readonly TourRoute[]> = {
   "varden-smaatindan": [
     {
       id: "kabelvagmarka",
-      name: "Frå Eidet ved Kabelvåg over Aksla",
+      name: "Fra Eidet ved Kabelvåg over Aksla",
       trailhead: "Eidet",
       distanceM: 4819,
       gainM: 763,
@@ -5900,7 +5900,7 @@ export const ROUTES: Record<string, readonly TourRoute[]> = {
   midtitinden: [
     {
       id: "sagelva",
-      name: "Frå Sagelva ved rv80 om militærløypa",
+      name: "Fra Sagelva ved rv80 om militærløypa",
       trailhead: "Sagelva",
       distanceM: 4152,
       gainM: 1051,
@@ -5948,7 +5948,7 @@ export const ROUTES: Record<string, readonly TourRoute[]> = {
   sandhornet: [
     {
       id: "horsdal",
-      name: "Frå Horsdal om Stjerndalen",
+      name: "Fra Horsdal om Stjerndalen",
       trailhead: "Horsdal",
       distanceM: 5009,
       gainM: 1021,
@@ -6053,7 +6053,7 @@ export const ROUTES: Record<string, readonly TourRoute[]> = {
   tortenviktinden: [
     {
       id: "normalruta",
-      name: "Normalruta frå Neset",
+      name: "Normalruta fra Neset",
       trailhead: "Neset",
       distanceM: 5570,
       gainM: 1023,
@@ -6107,7 +6107,7 @@ export const ROUTES: Record<string, readonly TourRoute[]> = {
   tomskjevelen: [
     {
       id: "forsland",
-      name: "Frå Forsland om Forslandsvatnet",
+      name: "Fra Forsland om Forslandsvatnet",
       trailhead: "Forsland",
       distanceM: 3858,
       gainM: 951,
@@ -6160,7 +6160,7 @@ export const ROUTES: Record<string, readonly TourRoute[]> = {
   lukttinden: [
     {
       id: "normalruta",
-      name: "Normalruta frå Kammen",
+      name: "Normalruta fra Kammen",
       trailhead: "Kammen",
       distanceM: 3993,
       gainM: 1129,
@@ -6513,7 +6513,7 @@ export const ROUTES: Record<string, readonly TourRoute[]> = {
     },
     {
       id: "trollheimshytta",
-      name: "Frå Trollheimshytta under Litj-Snota",
+      name: "Fra Trollheimshytta under Litj-Snota",
       trailhead: "Trollheimshytta",
       distanceM: 11362,
       gainM: 1320,
@@ -6770,7 +6770,7 @@ export const ROUTES: Record<string, readonly TourRoute[]> = {
   kirketaket: [
     {
       id: "normalruta",
-      name: "Normalruta frå Hellerøra over Steinberget",
+      name: "Normalruta fra Hellerøra over Steinberget",
       trailhead: "Hellerøra-parkeringa",
       distanceM: 6391,
       gainM: 1280,
@@ -7101,7 +7101,7 @@ export const ROUTES: Record<string, readonly TourRoute[]> = {
   auskjeret: [
     {
       id: "normalruta",
-      name: "Normalruta frå Fausaskiftet",
+      name: "Normalruta fra Fausaskiftet",
       trailhead: "Fausaskiftet ved Nysætervatnet",
       distanceM: 3833,
       gainM: 870,
@@ -7245,7 +7245,7 @@ export const ROUTES: Record<string, readonly TourRoute[]> = {
   jonshornet: [
     {
       id: "normalruta",
-      name: "Normalruta frå Vollane over Vollesætra og Rametinden",
+      name: "Normalruta fra Vollane over Vollesætra og Rametinden",
       trailhead: "Vollane ved Tverrelva",
       distanceM: 5705,
       gainM: 1430,
@@ -7308,7 +7308,7 @@ export const ROUTES: Record<string, readonly TourRoute[]> = {
   ytstevasshornet: [
     {
       id: "normalruta",
-      name: "Normalruta frå Svartevatnet opp Vassdalen",
+      name: "Normalruta fra Svartevatnet opp Vassdalen",
       trailhead: "Svartevatnet ved Vasshaugen",
       distanceM: 3788,
       gainM: 816,
@@ -7349,7 +7349,7 @@ export const ROUTES: Record<string, readonly TourRoute[]> = {
   rana: [
     {
       id: "normalruta",
-      name: "Normalruta frå Urkegjerdet over Haukåssætra og Nordkopen",
+      name: "Normalruta fra Urkegjerdet over Haukåssætra og Nordkopen",
       trailhead: "Urkegjerdet ved Urke",
       distanceM: 8586,
       gainM: 1559,
@@ -7431,7 +7431,7 @@ export const ROUTES: Record<string, readonly TourRoute[]> = {
   kolastinden: [
     {
       id: "normalruta",
-      name: "Normalruta frå Standaleidet gjennom Kvanndalen",
+      name: "Normalruta fra Standaleidet gjennom Kvanndalen",
       trailhead: "Standaleidet ved Standalhytta",
       distanceM: 5670,
       gainM: 1120,
@@ -7489,7 +7489,7 @@ export const ROUTES: Record<string, readonly TourRoute[]> = {
   vassdalstinden: [
     {
       id: "normalruta",
-      name: "Normalruta frå Nupen over Vallasætra og Bukkedalen",
+      name: "Normalruta fra Nupen over Vallasætra og Bukkedalen",
       trailhead: "Nupen",
       distanceM: 6495,
       gainM: 1210,
@@ -7552,8 +7552,8 @@ export const ROUTES: Record<string, readonly TourRoute[]> = {
   saudehornet: [
     {
       id: "normalruta",
-      name: "Normalruta frå Vasshuset over skaret og sørryggen",
-      trailhead: "Vasshuset (vassverket) i Vikegeila",
+      name: "Normalruta fra Vasshuset over skaret og sørryggen",
+      trailhead: "Vasshuset (vannverket) i Vikegeila",
       distanceM: 4081,
       gainM: 1161,
       line: [
@@ -7601,7 +7601,7 @@ export const ROUTES: Record<string, readonly TourRoute[]> = {
   slogen: [
     {
       id: "normalruta",
-      name: "Normalruta frå Skylstad over Pukkelen",
+      name: "Normalruta fra Skylstad over Pukkelen",
       trailhead: "Skylstad i Norangsdalen",
       distanceM: 6517,
       gainM: 1535,
@@ -7669,7 +7669,7 @@ export const ROUTES: Record<string, readonly TourRoute[]> = {
     },
     {
       id: "oye-direkte",
-      name: "Direkteruta frå Øye",
+      name: "Direkteruta fra Øye",
       trailhead: "Slogen-parkeringa i Norangsdalen",
       distanceM: 4091,
       gainM: 1523,
@@ -7728,7 +7728,7 @@ export const ROUTES: Record<string, readonly TourRoute[]> = {
   torvloysa: [
     {
       id: "normalruta",
-      name: "Normalruta frå Hatlestad over Rellingsætra og Daurmålsfjellet",
+      name: "Normalruta fra Hatlestad over Rellingsætra og Daurmålsfjellet",
       trailhead: "Hatlestad i Norddal",
       distanceM: 11130,
       gainM: 1469,
@@ -7822,7 +7822,7 @@ export const ROUTES: Record<string, readonly TourRoute[]> = {
   skarene: [
     {
       id: "normalruta",
-      name: "Normalruta frå Korsmyra over Grandesætra og Gråsteindalen",
+      name: "Normalruta fra Korsmyra over Grandesætra og Gråsteindalen",
       trailhead: "Korsmyra",
       distanceM: 6587,
       gainM: 1226,
@@ -7885,7 +7885,7 @@ export const ROUTES: Record<string, readonly TourRoute[]> = {
   melshornet: [
     {
       id: "normalruta",
-      name: "Skiløypa frå Helgatun",
+      name: "Skiløypa fra Helgatun",
       trailhead: "Helgatun på Krøvelseidet",
       distanceM: 3297,
       gainM: 565,
@@ -7920,8 +7920,8 @@ export const ROUTES: Record<string, readonly TourRoute[]> = {
   jakta: [
     {
       id: "normalruta",
-      name: "Normalruta frå Norang gjennom Konedalen",
-      trailhead: "Norang, vegenden ved Lisjeholen",
+      name: "Normalruta fra Norang gjennom Konedalen",
+      trailhead: "Norang, veienden ved Lisjeholen",
       distanceM: 4788,
       gainM: 1569,
       line: [
@@ -7978,7 +7978,7 @@ export const ROUTES: Record<string, readonly TourRoute[]> = {
   skarasalen: [
     {
       id: "normalruta",
-      name: "Normalruta frå bommen på Kvistadvegen om Kvistadsætra",
+      name: "Normalruta fra bommen på Kvistadvegen om Kvistadsætra",
       trailhead: "Bommen på Kvistadvegen",
       distanceM: 7455,
       gainM: 1452,
@@ -8049,7 +8049,7 @@ export const ROUTES: Record<string, readonly TourRoute[]> = {
   kvitegga: [
     {
       id: "normalruta",
-      name: "Normalruta frå Nibbedalen gjennom Snødalen",
+      name: "Normalruta fra Nibbedalen gjennom Snødalen",
       trailhead: "Grustaket i Nibbedalen",
       distanceM: 5329,
       gainM: 1391,
@@ -8109,8 +8109,8 @@ export const ROUTES: Record<string, readonly TourRoute[]> = {
   hornindalsrokken: [
     {
       id: "normalruta",
-      name: "Normalruta frå Langøylia over Trollaksla og Sætrenibba",
-      trailhead: "Langøylia hyttefelt, vestre vegende",
+      name: "Normalruta fra Langøylia over Trollaksla og Sætrenibba",
+      trailhead: "Langøylia hyttefelt, vestre veiende",
       distanceM: 7283,
       gainM: 1460,
       line: [
@@ -8184,7 +8184,7 @@ export const ROUTES: Record<string, readonly TourRoute[]> = {
   sunndalsnipa: [
     {
       id: "normalruta",
-      name: "Normalruta frå Grøndalsvatnet opp søraustryggen",
+      name: "Normalruta fra Grøndalsvatnet opp sørøstryggen",
       trailhead: "Grøndalsvatnet",
       distanceM: 5561,
       gainM: 989,
@@ -8240,7 +8240,7 @@ export const ROUTES: Record<string, readonly TourRoute[]> = {
   eidskyrkja: [
     {
       id: "normalruta",
-      name: "Normalruta frå Skinnviksætra over Blåbreen",
+      name: "Normalruta fra Skinnviksætra over Blåbreen",
       trailhead: "Skinnviksætra",
       distanceM: 4564,
       gainM: 1115,
@@ -8586,7 +8586,7 @@ export const ROUTES: Record<string, readonly TourRoute[]> = {
   glitregga: [
     {
       id: "normalruta",
-      name: "Normalruta frå Randabygd idrettsanlegg",
+      name: "Normalruta fra Randabygd idrettsanlegg",
       trailhead: "Randabygd idrettsanlegg",
       distanceM: 4450,
       gainM: 906,
@@ -8788,7 +8788,7 @@ export const ROUTES: Record<string, readonly TourRoute[]> = {
   skarsteinfjellet: [
     {
       id: "normalruta",
-      name: "Normalruta frå Drageset over Remestøylen og Hestehytta",
+      name: "Normalruta fra Drageset over Remestøylen og Hestehytta",
       trailhead: "Dragesetvegen i Innvikdalen",
       distanceM: 5837,
       gainM: 1219,
@@ -8843,7 +8843,7 @@ export const ROUTES: Record<string, readonly TourRoute[]> = {
   lodalskapa: [
     {
       id: "normalruta",
-      name: "Normalruta frå Bødalssætra over Kåpevatnet og Bohrsbreen",
+      name: "Normalruta fra Bødalssætra over Kåpevatnet og Bohrsbreen",
       trailhead: "Bødalssætra",
       distanceM: 10633,
       gainM: 1526,
@@ -8938,7 +8938,7 @@ export const ROUTES: Record<string, readonly TourRoute[]> = {
   snonipa: [
     {
       id: "normalruta",
-      name: "Normalruta frå Klakegg opp Haugadalen og Haugabreen",
+      name: "Normalruta fra Klakegg opp Haugadalen og Haugabreen",
       trailhead: "Stardalen ved Høyseth",
       distanceM: 8450,
       gainM: 1494,
@@ -9426,7 +9426,7 @@ export const ROUTES: Record<string, readonly TourRoute[]> = {
     },
     {
       id: "helgedalen",
-      name: "Sørsida frå Turtagrø gjennom Helgedalen og Steindalen",
+      name: "Sørsida fra Turtagrø gjennom Helgedalen og Steindalen",
       trailhead: "Turtagrø",
       distanceM: 7826,
       gainM: 1172,
@@ -9719,7 +9719,7 @@ export const ROUTES: Record<string, readonly TourRoute[]> = {
   kvamshesten: [
     {
       id: "normalruta",
-      name: "Normalruta frå Rytnane over Kårstadstølen og Grunnevatnet",
+      name: "Normalruta fra Rytnane over Kårstadstølen og Grunnevatnet",
       trailhead: "Rytnavegen ved Rytnane",
       distanceM: 5343,
       gainM: 830,
@@ -9861,7 +9861,7 @@ export const ROUTES: Record<string, readonly TourRoute[]> = {
   molden: [
     {
       id: "normalruta",
-      name: "Normalruta frå Mollandsmarki opp sørvestryggen",
+      name: "Normalruta fra Mollandsmarki opp sørvestryggen",
       trailhead: "Mollandsmarki",
       distanceM: 3308,
       gainM: 626,
@@ -9897,7 +9897,7 @@ export const ROUTES: Record<string, readonly TourRoute[]> = {
     },
     {
       id: "marifjora",
-      name: "Frå Marifjøra over Svolsete",
+      name: "Fra Marifjøra over Svolsete",
       trailhead: "Marifjøra",
       distanceM: 5278,
       gainM: 1131,
@@ -9980,7 +9980,7 @@ export const ROUTES: Record<string, readonly TourRoute[]> = {
   togga: [
     {
       id: "brandhaugane",
-      name: "Normalvegen frå Brandhaugane opp søraustryggen",
+      name: "Normalveien fra Brandhaugane opp sørøstryggen",
       trailhead: "Brandhaugane",
       distanceM: 2640,
       gainM: 780,
@@ -10079,7 +10079,7 @@ export const ROUTES: Record<string, readonly TourRoute[]> = {
   ulvsjoberget: [
     {
       id: "vestby",
-      name: "Frå Vestby opp gjennom skogen",
+      name: "Fra Vestby opp gjennom skogen",
       trailhead: "Vestby",
       distanceM: 2172,
       gainM: 295,
@@ -10147,7 +10147,7 @@ export const ROUTES: Record<string, readonly TourRoute[]> = {
   slettind: [
     {
       id: "eldrevatn",
-      name: "Frå Eldrevatn opp nordvestflanken",
+      name: "Fra Eldrevatn opp nordvestflanken",
       trailhead: "Eldrevatn",
       distanceM: 2496,
       gainM: 474,
@@ -10177,7 +10177,7 @@ export const ROUTES: Record<string, readonly TourRoute[]> = {
   kyrkjebonosi: [
     {
       id: "kyrkjebon",
-      name: "Frå grustaket ved Kyrkjebøen over den første toppen",
+      name: "Fra grustaket ved Kyrkjebøen over den første toppen",
       trailhead: "Grustaket ved Kyrkjebøen",
       distanceM: 4771,
       gainM: 998,
@@ -10228,7 +10228,7 @@ export const ROUTES: Record<string, readonly TourRoute[]> = {
   nibbi: [
     {
       id: "lykkjastolen",
-      name: "Frå Lykkjastølen vest for fossen",
+      name: "Fra Lykkjastølen vest for fossen",
       trailhead: "Lykkjastølen",
       distanceM: 2928,
       gainM: 803,
@@ -10262,7 +10262,7 @@ export const ROUTES: Record<string, readonly TourRoute[]> = {
   raskarfjellet: [
     {
       id: "sildegjerdet",
-      name: "Frå Sildegjerdet ved rv 52",
+      name: "Fra Sildegjerdet ved rv 52",
       trailhead: "Sildegjerdet",
       distanceM: 3261,
       gainM: 685,
@@ -10299,7 +10299,7 @@ export const ROUTES: Record<string, readonly TourRoute[]> = {
   skogshorn: [
     {
       id: "normalruta",
-      name: "Normalruta frå Trefta over austryggen",
+      name: "Normalruta fra Trefta over østryggen",
       trailhead: "Trefta p-plass ved Lykkjavegen",
       distanceM: 3930,
       gainM: 837,
@@ -10340,7 +10340,7 @@ export const ROUTES: Record<string, readonly TourRoute[]> = {
   finnbufjellet: [
     {
       id: "halsabakkane",
-      name: "Frå leirplassen på toppen av Halsabakkane",
+      name: "Fra leirplassen på toppen av Halsabakkane",
       trailhead: "Halsabakkane",
       distanceM: 4366,
       gainM: 619,
@@ -10388,7 +10388,7 @@ export const ROUTES: Record<string, readonly TourRoute[]> = {
   storehorn: [
     {
       id: "normalruta",
-      name: "Normalruta frå Hornslie over Hødnetjedne",
+      name: "Normalruta fra Hornslie over Hødnetjedne",
       trailhead: "Hornslie p-plass",
       distanceM: 3005,
       gainM: 473,
@@ -10425,7 +10425,7 @@ export const ROUTES: Record<string, readonly TourRoute[]> = {
   storanosi: [
     {
       id: "normalruta",
-      name: "Normalruta frå Ljosno over Eggjane",
+      name: "Normalruta fra Ljosno over Eggjane",
       trailhead: "Ljosno i Brandsetdalen",
       distanceM: 4670,
       gainM: 742,
@@ -10469,7 +10469,7 @@ export const ROUTES: Record<string, readonly TourRoute[]> = {
   lonahorgi: [
     {
       id: "normalruta",
-      name: "Ruta frå Høyland via Breiming og Svartahorgi",
+      name: "Ruta fra Høyland via Breiming og Svartahorgi",
       trailhead: "Høyland ved Grotlandsbrua",
       distanceM: 6451,
       gainM: 1298,
@@ -10531,7 +10531,7 @@ export const ROUTES: Record<string, readonly TourRoute[]> = {
     },
     {
       id: "horgaletten",
-      name: "Frå toppen av Horgaletten over Vådalseggi",
+      name: "Fra toppen av Horgaletten over Vådalseggi",
       trailhead: "Toppen av Horgaletten",
       distanceM: 3658,
       gainM: 506,
@@ -10571,7 +10571,7 @@ export const ROUTES: Record<string, readonly TourRoute[]> = {
   vatnaknausen: [
     {
       id: "tverrberg",
-      name: "Frå Tverrberg om Budalen og Nyestølen",
+      name: "Fra Tverrberg om Budalen og Nyestølen",
       trailhead: "Tverrberg",
       distanceM: 7478,
       gainM: 979,
@@ -10641,7 +10641,7 @@ export const ROUTES: Record<string, readonly TourRoute[]> = {
   horndalsnuten: [
     {
       id: "normalruta",
-      name: "Normalruta frå Skiple gjennom Horndalsbotnen",
+      name: "Normalruta fra Skiple gjennom Horndalsbotnen",
       trailhead: "Skiple i Raundalen",
       distanceM: 5934,
       gainM: 1121,
@@ -10697,7 +10697,7 @@ export const ROUTES: Record<string, readonly TourRoute[]> = {
     },
     {
       id: "skaftedalen",
-      name: "Frå sør, opp frå Skaftedalen over Skytjeset",
+      name: "Fra sør, opp fra Skaftedalen over Skytjeset",
       trailhead: "Skaftedalen",
       distanceM: 5762,
       gainM: 1007,
@@ -10756,7 +10756,7 @@ export const ROUTES: Record<string, readonly TourRoute[]> = {
   folarskardnuten: [
     {
       id: "normalruta",
-      name: "Frå Haugastøl gjennom Folarskardet",
+      name: "Fra Haugastøl gjennom Folarskardet",
       trailhead: "Haugastøl p-plass ved Rv7",
       distanceM: 13059,
       gainM: 997,
@@ -11002,7 +11002,7 @@ export const ROUTES: Record<string, readonly TourRoute[]> = {
   oksen: [
     {
       id: "normalruta",
-      name: "Normalruta frå Tjoflot",
+      name: "Normalruta fra Tjoflot",
       trailhead: "Tjoflot øvre parkering",
       distanceM: 3658,
       gainM: 967,
@@ -11088,7 +11088,7 @@ export const ROUTES: Record<string, readonly TourRoute[]> = {
   skrott: [
     {
       id: "fitjadalen",
-      name: "Frå Fitjadalen om Håsete",
+      name: "Fra Fitjadalen om Håsete",
       trailhead: "Fitjadalen",
       distanceM: 5033,
       gainM: 1068,
@@ -11144,7 +11144,7 @@ export const ROUTES: Record<string, readonly TourRoute[]> = {
   sata: [
     {
       id: "eikedalen",
-      name: "Frå Eikedalen inn Skeiskvanndalen",
+      name: "Fra Eikedalen inn Skeiskvanndalen",
       trailhead: "Eikedalen",
       distanceM: 6602,
       gainM: 895,
@@ -11212,7 +11212,7 @@ export const ROUTES: Record<string, readonly TourRoute[]> = {
   gullfjellstoppen: [
     {
       id: "osavatnet",
-      name: "Frå Osavatnet over Redningshytta",
+      name: "Fra Osavatnet over Redningshytta",
       trailhead: "Osavatnet",
       distanceM: 7802,
       gainM: 839,
@@ -11290,7 +11290,7 @@ export const ROUTES: Record<string, readonly TourRoute[]> = {
     },
     {
       id: "gullbotn",
-      name: "Frå Gullbotn over Gullfjellhalsen",
+      name: "Fra Gullbotn over Gullfjellhalsen",
       trailhead: "Gullbotn",
       distanceM: 3964,
       gainM: 753,
@@ -11333,7 +11333,7 @@ export const ROUTES: Record<string, readonly TourRoute[]> = {
   tveitakvitingen: [
     {
       id: "furedalen",
-      name: "Frå Furedalen om Mødal",
+      name: "Fra Furedalen om Mødal",
       trailhead: "Furedalen",
       distanceM: 8561,
       gainM: 995,
@@ -11481,7 +11481,7 @@ export const ROUTES: Record<string, readonly TourRoute[]> = {
   vesoldo: [
     {
       id: "normalruta",
-      name: "Normalruta frå Byrkjenes over Fadnastølen",
+      name: "Normalruta fra Byrkjenes over Fadnastølen",
       trailhead: "Byrkjenes parkering",
       distanceM: 4207,
       gainM: 839,
@@ -11714,7 +11714,7 @@ export const ROUTES: Record<string, readonly TourRoute[]> = {
   gygrastolen: [
     {
       id: "normalruta",
-      name: "Normalruta frå Ænes over Gygrastølvatnet",
+      name: "Normalruta fra Ænes over Gygrastølvatnet",
       trailhead: "Ænes",
       distanceM: 5962,
       gainM: 1267,
@@ -11815,7 +11815,7 @@ export const ROUTES: Record<string, readonly TourRoute[]> = {
   juklavasstinden: [
     {
       id: "normalruta",
-      name: "Normalruta frå Myrdalsvatnet opp nordryggen",
+      name: "Normalruta fra Myrdalsvatnet opp nordryggen",
       trailhead: "Myrdalsvatnet",
       distanceM: 7162,
       gainM: 1341,
@@ -11887,7 +11887,7 @@ export const ROUTES: Record<string, readonly TourRoute[]> = {
   melderskin: [
     {
       id: "normalruta",
-      name: "Normalruta frå Kletta",
+      name: "Normalruta fra Kletta",
       trailhead: "Kletta p-plass",
       distanceM: 4897,
       gainM: 1273,
@@ -11940,7 +11940,7 @@ export const ROUTES: Record<string, readonly TourRoute[]> = {
     },
     {
       id: "myrdalsvatnet",
-      name: "Frå Myrdalsvatnet over Omnen",
+      name: "Fra Myrdalsvatnet over Omnen",
       trailhead: "Myrdalsvatnet",
       distanceM: 5097,
       gainM: 1101,
@@ -11996,7 +11996,7 @@ export const ROUTES: Record<string, readonly TourRoute[]> = {
   englafjell: [
     {
       id: "musland",
-      name: "Frå Musland om Såta",
+      name: "Fra Musland om Såta",
       trailhead: "Musland",
       distanceM: 8643,
       gainM: 1237,
@@ -12081,7 +12081,7 @@ export const ROUTES: Record<string, readonly TourRoute[]> = {
   gaustatoppen: [
     {
       id: "normalruta",
-      name: "Frå Langefonn",
+      name: "Fra Langefonn",
       trailhead: "Langefonn parkering",
       distanceM: 4421,
       gainM: 973,
@@ -12412,7 +12412,7 @@ export const ROUTES: Record<string, readonly TourRoute[]> = {
   saebyggjenuten: [
     {
       id: "normalruta",
-      name: "Vinterruta frå Berdalen over Tverrheiskara",
+      name: "Vinterruta fra Berdalen over Tverrheiskara",
       trailhead: "Berdalen hyttegrend, parkering ved bommen",
       distanceM: 11306,
       gainM: 851,
@@ -12504,7 +12504,7 @@ export const ROUTES: Record<string, readonly TourRoute[]> = {
   kjerag: [
     {
       id: "normalruta",
-      name: "Vårruta frå Øygardstøl om Langavassvegen",
+      name: "Vårruta fra Øygardstøl om Langavassvegen",
       trailhead: "Øygardstøl parkering",
       distanceM: 7362,
       gainM: 617,
