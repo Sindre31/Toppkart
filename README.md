@@ -130,7 +130,7 @@ supabase/
 design-reference/        The HTML prototypes and the product/design handoff. Read-only ground
                          truth; not shipped.
 docs/
-  deploy.md              Vercel and Supabase setup, and winding down Stripe
+  deploy.md              Vercel and Supabase setup checklist
   seo.md                 What crawlers get, and the caching fixes that were priced and declined
 ```
 
@@ -190,9 +190,9 @@ sign-in. The guides' structured data says `isAccessibleForFree: true`.
 The only sign-in left is Google, for the addresses in `ADMIN_EMAILS`, to read
 `/admin/tilbakemeldinger`. `lib/admin.ts` fails closed.
 
-`supabase/schema.sql` still holds the subscription tables and `tk_has_active_subscription()` from
-when Toppkart was sold as a subscription. Nothing reads or writes them any more; see
-`docs/deploy.md` section 3 for winding down Stripe.
+Toppkart was sold as a subscription through Stripe until October 2026. That is all gone: the
+Stripe account is closed, and `supabase/schema.sql` drops the old subscription tables when it
+is re-run (section 8).
 
 ### The route figure
 

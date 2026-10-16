@@ -32,15 +32,15 @@ jobs:
       - name: Lint
         run: npm run lint
 
-      # The unit tests cover the pure functions that fail *quietly*: the access
-      # gate, the Stripe mapping and the route geometry. Each of them can be
-      # wrong without anything erroring, which is why they get a test and the
-      # code that talks to Supabase or Stripe does not — that code complains on
-      # its own. No keys are needed; nothing here reaches the network.
+      # The unit tests cover the pure functions that fail *quietly*: the route
+      # geometry, the stored favourites and the support prompt. Each of them can
+      # be wrong without anything erroring, which is why they get a test and the
+      # code that talks to Supabase does not — that code complains on its own.
+      # No keys are needed; nothing here reaches the network.
       - name: Test
         run: npm test
 
-      # The build runs with no Supabase or Stripe keys, which is deliberate:
+      # The build runs with no Supabase keys, which is deliberate:
       # it proves the app still compiles and prerenders in demo mode, so a
       # missing secret can never be what breaks a deploy.
       - name: Build
