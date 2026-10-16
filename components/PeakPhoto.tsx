@@ -50,7 +50,7 @@ export function PeakPhoto({
         }}
       />
       <figcaption className="note" style={{ margin: "6px 0 0", fontSize: 11 }}>
-        {t.by}: {photo.author || "—"} ·{" "}
+        {photo.author ? `${t.by}: ${photo.author} · ` : null}
         {photo.licenseUrl ? (
           <a href={photo.licenseUrl} rel="license noopener" target="_blank">
             {photo.license}

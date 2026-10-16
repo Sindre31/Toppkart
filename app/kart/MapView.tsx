@@ -543,7 +543,7 @@ export default function MapView({
             <div className={s.dBody}>
               {photos[selected.slug] ? (
                 <PeakPhoto
-                  key={selected.slug}
+                  key={`foto-${selected.slug}`}
                   photo={photos[selected.slug]}
                   peak={selected.name}
                   lang={lang}
