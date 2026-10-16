@@ -17,7 +17,20 @@ import s from "./kart.module.css";
  *  outside the forecast regions, and a summer day with no assessment are three
  *  different facts, and none of them is «danger level 0» — see `lib/avalanche`.
  */
-export function AvalanchePanel({ slug, lang }: { slug: string; lang: Lang }) {
+export function AvalanchePanel({
+  slug,
+  lang,
+  heading: Heading = "h3",
+  className,
+}: {
+  slug: string;
+  lang: Lang;
+  /** Som i `WeatherPanel`: overskriftsnivået følger sida panelet står på. */
+  heading?: "h2" | "h3";
+  /** Erstatter panelets egen ramme (strek over, luft over). I guiden står
+   *  panelet i sin egen `Blueprint` og trenger ingen av delene. */
+  className?: string;
+}) {
   const t = mapDict(lang);
   const [forecast, setForecast] = useState<AvalancheForecast | null>(null);
 
@@ -58,13 +71,13 @@ export function AvalanchePanel({ slug, lang }: { slug: string; lang: Lang }) {
   const colors = level ? DANGER_COLORS[level] : null;
 
   return (
-    <section className={s.avalanche}>
-      <h3 className={s.avalancheHead}>
+    <section className={className ?? s.avalanche}>
+      <Heading className={s.avalancheHead}>
         {t.avalancheTitle}
         {forecast?.regionName ? (
           <span className={s.avalancheRegion}>{forecast.regionName}</span>
         ) : null}
-      </h3>
+      </Heading>
 
       {forecast === null ? (
         <p className={s.avalancheNote}>{t.dangerLoading}</p>

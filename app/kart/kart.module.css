@@ -306,7 +306,12 @@
   line-height: 1.55;
   margin: 0;
 }
-.guideLink { align-self: flex-start; }
+.guideLink {
+  /* Hele bredden: det er den ene handlingen panelet peker videre til. */
+  align-self: stretch;
+  min-height: 44px;
+  font-size: 15px;
+}
 .schematic {
   font-size: 11px;
   color: color-mix(in srgb, var(--color-text) 50%, transparent);
@@ -547,6 +552,21 @@
     bottom: calc(84px + env(safe-area-inset-bottom, 0px));
   }
 
+  .peakBarGuide {
+    flex: none;
+    display: flex;
+    align-items: center;
+    padding: 0 14px;
+    border-left: 1px solid var(--color-divider);
+    background: var(--color-accent);
+    color: var(--color-bg);
+    font-family: var(--font-heading);
+    font-weight: var(--font-heading-weight);
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+  }
+  .peakBarGuide:hover { background: var(--color-accent-600); color: var(--color-bg); }
   .peakBarClose {
     flex: none;
     width: 44px;

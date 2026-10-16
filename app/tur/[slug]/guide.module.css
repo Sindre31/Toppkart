@@ -1,25 +1,179 @@
-/* Sideoppsett for turguiden. Prototypen legger dette inline (7/5-delt rad);
-   media-spørringen kan ikke uttrykkes med style-attributt, så raden bor her. */
+/* Sideoppsett for turguiden.
 
+   `--guide-nav-h` er høyden på den klebrige `.site-nav` (målt: 58,7px på
+   skjerm, 57px på telefon), og innholdslista legger seg rett under den.
+   `--guide-sticky-h` er begge til sammen: der et ankerhopp skal lande så
+   overskriften ikke havner bak dem. */
+
+.main {
+  --guide-nav-h: 58px;
+  --guide-sticky-h: 112px;
+  padding-bottom: 64px;
+  /* `.page` sentrerer med `margin: auto` inne i `.shell`, som er en
+     flex-kolonne. Auto-marger slår av strekkingen, og da blir bredden
+     innholdets — og innholdslista er bredere enn en telefon. Uten denne
+     linja dro den hele sida ut til 538px på en 390px skjerm. */
+  width: 100%;
+}
+@media (max-width: 620px) {
+  .main {
+    --guide-nav-h: 56px;
+    --guide-sticky-h: 108px;
+  }
+}
+
+/* — toppen — */
+
+.header { padding: 40px 0 28px; }
+.back { font-size: 14px; text-decoration: none; }
+.back:hover { text-decoration: underline; }
+
+.tags {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+.region {
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--color-accent-700);
+}
+.tag {
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.title {
+  font-size: clamp(44px, 6vw, 76px);
+  margin: 10px 0 0 -0.052em;
+  overflow-wrap: anywhere;
+}
+.lede { margin: 18px 0 0; }
+
+/* Handlingene. På en telefon fyller knappene raden — de er det man trykker
+   på med kalde fingre, og en knapp på halv bredde er lettere å treffe enn en
+   som er akkurat så bred som ordet sitt. */
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 24px;
+}
+.actions :global(.btn) { min-height: 40px; padding-inline: 14px; }
+
+.marks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+@media (max-width: 620px) {
+  .actions > :global(.btn) { flex: 1 1 calc(50% - 4px); }
+  /* GPX-fila er hovedhandlingen og får hele raden. */
+  .actions > :global(.btn-primary) { flex-basis: 100%; }
+  .actions :global(.btn) { min-height: 44px; }
+}
+
+/* — blokkene under — */
+
+.block { padding: 0 0 32px; }
+
+.stats {
+  display: grid;
+  /* `min(150px, 100%)` so the stat columns can fall below their floor on a
+     narrow phone instead of widening the page. */
+  grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr));
+}
+.stat {
+  padding: 14px 18px;
+  border-right: 1px solid var(--color-divider);
+  border-bottom: 1px solid var(--color-divider);
+}
+@media (max-width: 620px) {
+  .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .stat { padding: 12px 14px; }
+}
+
+.section {
+  padding: 40px 0 8px;
+  scroll-margin-top: var(--guide-sticky-h);
+}
+
+/* «Forhold i dag»: skredfaren og været side om side på en skjerm. */
+.conditions {
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+  gap: 24px clamp(24px, 3vw, 40px);
+  align-items: start;
+}
+/* Skredpanelet har sin egen strek over seg i kartpanelet; her står det i en
+   ramme og trenger den ikke. */
+.panel { margin: 0; padding: 0; border: 0; }
+
+/* Høydeprofilen og rutefakta under kartet. */
 .split {
   display: grid;
   grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
-  gap: 24px clamp(24px, 4vw, 64px);
+  gap: 24px clamp(24px, 3vw, 40px);
   align-items: start;
-  padding: 0 0 48px;
+  margin-top: 24px;
 }
 
 @media (max-width: 760px) {
+  .conditions,
   .split {
     grid-template-columns: minmax(0, 1fr);
   }
 }
 
+.facts {
+  display: grid;
+  gap: 14px;
+  margin: 0;
+}
+.facts dd {
+  margin: 2px 0 0;
+  font-family: var(--font-heading);
+  font-weight: var(--font-heading-weight);
+  font-size: 20px;
+  letter-spacing: 0.01em;
+}
+
+.otherHead {
+  margin: 22px 0 6px;
+  padding-top: 16px;
+  border-top: 1px solid var(--color-divider);
+  font-size: 15px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.otherList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.otherList li {
+  display: grid;
+  gap: 2px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--color-divider);
+}
+.otherList li:last-child { border-bottom: 0; padding-bottom: 0; }
+.otherName { font-weight: 500; font-size: 15px; }
+.otherList a { font-size: 14px; text-decoration: none; }
+.otherList a:hover { text-decoration: underline; }
+
 /* Naboturene i samme region, nederst i guiden. Lista er lenker først og
    nøkkeltall etterpå — den skal kunne skummes på fjellnavn. */
 
 .neighbours {
-  padding: 8px 0 48px;
+  padding: 24px 0 48px;
 }
 
 .neighbourList {

@@ -1,0 +1,42 @@
+/* Seksjonene i turguiden. `scroll-margin-top` er der et ankerhopp lander:
+   under både den klebrige menyen og innholdslista (`--guide-sticky-h`, satt på
+   sida). Uten den havner overskriften man trykket på bak dem. */
+
+.section {
+  padding: 0 0 48px;
+  scroll-margin-top: var(--guide-sticky-h, 0px);
+}
+
+.heading {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin: 0;
+  font-size: clamp(24px, 3vw, 30px);
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.num {
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  color: var(--color-accent-700);
+}
+
+.rule {
+  height: 1px;
+  border: 0;
+  margin: 12px 0 24px;
+  background: var(--color-divider);
+}
+
+/* Brødteksten. 16px og 26px linjeavstand: dette leses på en telefon ute, ofte
+   med hansker og i sterkt lys, og 15/24 var satt for en skjerm ved et bord. */
+.prose {
+  max-width: 68ch;
+  font-size: 16px;
+  line-height: 26px;
+}
+.prose p { margin: 0 0 16px; }
+.prose p:last-child { margin: 0; }
