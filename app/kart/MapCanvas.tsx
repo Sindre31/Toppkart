@@ -190,6 +190,20 @@ function PeakFocus({ tour }: { tour: Tour }) {
   return null;
 }
 
+/** Flyr tilbake til landsvisningen kartet åpner på, når `signal` endres — men
+ *  ikke ved montering, der kartet allerede står der. */
+function HomeView({ signal }: { signal: number }) {
+  const map = useMap();
+  const mounted = useRef(signal);
+
+  useEffect(() => {
+    if (signal === mounted.current) return;
+    flyToArea(map, latLngBounds(NORWAY as LatLngTuple[]));
+  }, [map, signal]);
+
+  return null;
+}
+
 /** Terrenglinjene, hentet i sin egen bunt så snart kartet er montert.
  *
  *  De lå tidligere i den samme bunten som Leaflet, og det er en dyrere plass enn
@@ -278,6 +292,9 @@ export interface MapCanvasProps {
   /** Language for the tooltips and Leaflet's own controls. Peak names are
    *  proper nouns and are rendered as they come. */
   lang: Lang;
+  /** Endres når leseren ber om startposisjonen (logoen); kartet flyr da tilbake
+   *  til landsvisningen. */
+  homeSignal: number;
 }
 
 /** Every route up the selected tour.
@@ -423,6 +440,7 @@ export default function MapCanvas({
   onSelectRoute,
   position,
   lang,
+  homeSignal,
 }: MapCanvasProps) {
   const t = mapDict(lang);
   const selected = tours.find((tour) => tour.slug === selectedSlug) ?? null;
@@ -507,6 +525,7 @@ export default function MapCanvas({
       ) : null}
       {selected && !routeTable ? <PeakFocus key={selected.slug} tour={selected} /> : null}
       {position ? <PositionLayer position={position} label={t.youAreHere} /> : null}
+      <HomeView signal={homeSignal} />
     </MapContainer>
   );
 }
