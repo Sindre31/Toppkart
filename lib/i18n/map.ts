@@ -93,6 +93,12 @@ export interface Dict {
   allVertical: string;
   verticalBands: Record<VerticalBand, string>;
   resetFilters: string;
+  /** Knappen som folder ut region, retning, høydemeter og «mine turer». */
+  moreFilters: string;
+  /** Skjermleserteksten på krysset i en aktiv filterbrikke. */
+  removeFilter: (label: string) => string;
+  /** Lista når ingen turer passer filtrene. */
+  noMatches: string;
   /* — the reader's position — */
   /** The toggle beside the search box: sort by distance, and show the dot. */
   nearMe: string;
@@ -101,8 +107,10 @@ export interface Dict {
   locateStop: string;
   /** Replaces `approx` under the filters while the list is sorted by distance. */
   sortedByDistance: string;
-  /** Under lista når den står etter Wikipedia-visninger. */
+  /** Under lista når den står etter Wikipedia-visninger. Kort; forklaringen
+   *  står i `sortedByPopularityHint`, som `title`. */
   sortedByPopularity: string;
+  sortedByPopularityHint: string;
   /** «12 km unna» on a card. Straight-line distance to the summit. */
   distanceAway: (distance: string) => string;
   youAreHere: string;
@@ -169,11 +177,15 @@ const MAP: Translated<Dict> = {
       gte1300: "1300 m og mer",
     },
     resetFilters: "Nullstill",
+    moreFilters: "Flere filtre",
+    removeFilter: (label) => `Fjern filteret «${label}»`,
+    noMatches: "Ingen turer passer filtrene.",
     nearMe: "Nær meg",
     locate: "Vis posisjonen min",
     locateStop: "Skjul posisjonen min",
-    sortedByDistance: "Nærmest først, i luftlinje til toppen.",
-    sortedByPopularity: "Mest populære først, etter visninger på Wikipedia siste år.",
+    sortedByDistance: "nærmest først, i luftlinje",
+    sortedByPopularity: "mest populære først",
+    sortedByPopularityHint: "Etter visninger på norsk Wikipedia siste år.",
     distanceAway: (d) => `${d} unna`,
     youAreHere: "Du er her",
     locating: "Finner posisjonen din …",
@@ -238,11 +250,15 @@ const MAP: Translated<Dict> = {
       gte1300: "1300 m and up",
     },
     resetFilters: "Clear",
+    moreFilters: "More filters",
+    removeFilter: (label) => `Remove the filter “${label}”`,
+    noMatches: "No tours match these filters.",
     nearMe: "Near me",
     locate: "Show my location",
     locateStop: "Hide my location",
-    sortedByDistance: "Nearest first, straight-line distance to the summit.",
-    sortedByPopularity: "Most popular first, by Wikipedia views over the past year.",
+    sortedByDistance: "nearest first, as the crow flies",
+    sortedByPopularity: "most popular first",
+    sortedByPopularityHint: "By views on Norwegian Wikipedia over the past year.",
     distanceAway: (d) => `${d} away`,
     youAreHere: "You are here",
     locating: "Finding your location …",
