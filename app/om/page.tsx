@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
-import { Blueprint, SectionKicker } from "@/components/Blueprint";
+import { Blueprint } from "@/components/Blueprint";
 import { SiteFooter, SiteNav } from "@/components/SiteChrome";
 import { DataPlate } from "@/components/landing/DataPlate";
 import styles from "@/components/landing/landing.module.css";
@@ -80,13 +80,15 @@ export default async function AboutPage() {
           {/* — nøkkeldata — */}
           <DataPlate lang={lang} />
 
-          {/* — 02 · Hva hver turguide holder — */}
+          {/* — Hva hver turguide holder — */}
           <section id="innhold" style={{ padding: "72px 0 60px" }}>
-            <SectionKicker>{t.guidesKicker}</SectionKicker>
-            <div className="grid-auto">
+            <h2 className="h-section" style={{ margin: "0 0 16px" }}>
+              {t.guidesKicker}
+            </h2>
+            <div className="grid-auto" style={{ gap: 10 }}>
               {t.guideCells.map((cell) => (
-                <Blueprint key={cell.title} style={{ padding: 24 }}>
-                  <h2 className="h-cell">{cell.title}</h2>
+                <Blueprint key={cell.title} style={{ padding: "20px 22px" }}>
+                  <h3 className="h-cell">{cell.title}</h3>
                   <p className="prose" style={{ margin: "16px 0 0" }}>
                     {cell.body}
                   </p>
@@ -95,10 +97,12 @@ export default async function AboutPage() {
             </div>
           </section>
 
-          {/* — 03 · Trygghet først — */}
+          {/* — Trygghet først — */}
           <section className={styles.split57}>
             <div>
-              <SectionKicker>{t.safetyKicker}</SectionKicker>
+              <span className="kicker" style={{ marginBottom: 8 }}>
+                {t.safetyKicker}
+              </span>
               <h2 className="h-section">{t.safetyHeading}</h2>
               <p className="prose" style={{ margin: "16px 0 0", maxWidth: "48ch" }}>
                 {t.safetyBody}
@@ -126,14 +130,14 @@ export default async function AboutPage() {
             ) : null}
           </section>
 
-          {/* — 04 · Støtt Toppkart — */}
+          {/* — Støtt Toppkart — */}
           <section id="stott" style={{ padding: "60px 0 48px" }}>
-            <SectionKicker>{t.supportKicker}</SectionKicker>
+            <h2 className="h-section" style={{ margin: "0 0 16px" }}>
+              {t.supportKicker}
+            </h2>
             <div className="grid-split">
               <div>
-                <h3 style={{ fontSize: 24, lineHeight: "24px", letterSpacing: "0.02em", textTransform: "uppercase", margin: 0 }}>
-                  {t.supportHeading}
-                </h3>
+                <h3 className="h-cell">{t.supportHeading}</h3>
                 <p className="prose" style={{ margin: "16px 0 0", maxWidth: "52ch" }}>
                   {t.supportBody}
                 </p>
