@@ -4,6 +4,7 @@ import { NavLinks } from "@/components/SiteChrome";
 import { getLang } from "@/lib/i18n/server";
 import { mapDict } from "@/lib/i18n/map";
 import { localizeTours } from "@/lib/i18n/content";
+import { atWidth, photoFor } from "@/lib/peak-photos";
 import { siteJsonLd } from "@/lib/structured-data";
 import { REGIONS, TOURS, getTour, routeMeta, routesFor } from "@/lib/tours";
 import MapView from "./MapView";
@@ -18,6 +19,17 @@ import MapView from "./MapView";
 export async function generateMetadata(): Promise<Metadata> {
   const t = mapDict(await getLang());
   return { title: t.metaTitle, description: t.metaDescription, alternates: { canonical: "/" } };
+}
+
+/** Miniatyrene til kartpanelet: 640 px holder til et panel på 370, også på en
+ *  skjerm med dobbel pikseltetthet. */
+function panelPhotos() {
+  return Object.fromEntries(
+    TOURS.flatMap((tour) => {
+      const photo = photoFor(tour.slug);
+      return photo ? [[tour.slug, atWidth(photo, 640)]] : [];
+    }),
+  );
 }
 
 /** The map — and every guide behind it — is open to everyone. */
@@ -63,6 +75,7 @@ export default async function KartPage({
         routeMeta={routeMeta()}
         initialSlug={initialSlug}
         initialRouteId={initialRouteId}
+        photos={panelPhotos()}
       />
     </>
   );

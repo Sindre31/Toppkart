@@ -196,7 +196,7 @@ function scaleStep(metresPerUnit: number): number {
  *  Hele kilometer skrives uten desimal. Målestokken er nesten alltid et rundt
  *  tall, og «1,0 km» under en strek som er nøyaktig én kilometer lover en
  *  presisjon streken ikke har. */
-function distanceLabel(metres: number, lang: Lang): string {
+export function distanceLabel(metres: number, lang: Lang): string {
   if (metres < 1000) return `${Math.round(metres)} m`;
   const km = (metres / 1000).toFixed(1).replace(/\.0$/, "");
   return `${decimalLabel(km.replace(".", ","), lang)} km`;
