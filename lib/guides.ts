@@ -6531,6 +6531,42 @@ export const GUIDES: Record<string, TourGuide> = {
       caption: "1267 høgdemeter og 5,96 km frå Ænes over Gygrastølvatnet, med skoggrensa på 590 moh og ryggen over 1300 moh på 4,7 grader.",
     },
   },
+  mellomkollen: {
+    slug: "mellomkollen",
+    intro:
+      "398 høydemeter på 4,11 km fra Skar: langs Maridalsveien over Skarselva, et flatt stykke langs vegen og sporene, og så skog hele vegen til Mellomkollen på 537 moh — den høyeste kollen i denne delen av Nordmarka. Bratteste sammenhengende parti er 22,9 grader mellom 431 og 445 moh, men det som gjør turen krevende er ikke hellinga: det er krattet, knausene og en nedkjøring kilden kaller «byksete».",
+    ascent: [
+      "Bussen stopper ved Skar utfartsparkering, og det er der linja starter, på 186 moh. Første del går ned: langs Maridalsveien og over Skarselva på Vaggesteinbrua, der vegen ligger på 160 moh, forbi Hallset og sørøstover til Kroken på 183. Det er en omveg på kartet, men den er kildens — sporet ut.no publiserer for turen går denne vegen før det svinger nordover.",
+      "Fra Kroken går linja nordover. Bandet fra 100 til 200 moh måler 0,6 grader over 1353 meter grunn — vegen og flata — og fra 200 til 300 moh 6,7 grader over 857 meter, opp til Rollveien på 301 moh.",
+      "Etter Rollveien begynner lia mot Jondalen, og herfra er det den samme rytmen til toppen: korte kneiker og flate partier. Bandet fra 300 til 400 moh måler 7,3 grader i snitt. Bandet fra 400 til 500 moh måler 6,8 grader. Snittet skjuler terrenget. Innenfor 50 meter av linja står knauser på 40 til 55 grader mange steder, og det bratteste 30-metersvinduet på selve linja, 22,9 grader, ligger mellom 431 og 445 moh i lia over Jondalen.",
+      "Linja passerer 270 meter vest for Midtkollen og går rett nord mot toppen. På det siste stykket går den forbi et stup OpenStreetMap kartfester 49 meter fra linja, og Svartputten ligger 205 meter øst. Toppen, 537 moh, er skogkledd; ut.no beskriver utsikten derfra mot Lillomarka, Maridalsvannet og Oslofjorden i det fjerne.",
+    ],
+    descent: [
+      "Nedkjøringa er vanskeligere enn oppturen, og kilden sier det rett ut: «Nedkjøringen kan fort bli ganske teknisk og byksete om man ikke har sett seg ut noen åpne felt på forkant.» Rådet er å se etter åpne skogsfelt på veg opp, og ellers følge sommerstiene — kilden nevner den blåmerkede ned til Øyungen, som tar deg til et annet sted enn bussen. Ut.no-sporet selv kjører samme side ned og går opp igjen, to ganger.",
+      "Mellomkollen er slak på toppen — 3,3 til 11,6 grader i snitt på alle sider over 500 meter — men brattest mot sørvest, 36,2 grader 210 til 270 meter ut. Kilden advarer mot stupene på sørsida av Gaupekollen: de måler 38,7 grader 240 til 300 meter sør for den toppen, 632 meter øst for linja. Kollene ligner hverandre, og «plutselig står du på Mellomkollen når du trodde du var på Midtkollen» — ha kart og kompass.",
+    ],
+    avalanche: [
+      {
+        title: "Ruta",
+        body: "Bratteste sammenhengende parti på linja er 22,9 grader mellom 431 og 445 moh, og bratteste hundremeteren er 300 til 400 moh med 7,3 grader. Fra parkeringa til toppen er det skog hele vegen, til og med 537 moh.",
+      },
+      {
+        title: "Terrenget utenfor",
+        body: "Brattkantene her er korte, ikke store fjellsider: knausene langs linja måler 40 til 55 grader innenfor 50 meter, og et lite flak i en slik kant ender i kratt og stein. Stupene på sørsida av Gaupekollen, 38,7 grader, er det kilden selv advarer mot. Bekker og elver ligger under snøen, og kilden nevner både dem og tett kratt som hindringer.",
+      },
+      {
+        title: "Før du går",
+        body: "Sjekk dagens skredvarsel for Oslo på varsom.no. Oslo er en B-region: den varsles bare ved faregrad 4 og 5, så de fleste vinterdager finnes det ingen vurdering å lese, og en tom side betyr ikke at terrenget er uten fare. Toppen ligger i Mellomkollen naturreservat — «et fredet naturreservat og en skal derfor ta ekstra hensyn», skriver kilden. Snøen i Oslomarka kommer og går; kilden fører turen fra desember til mars og lister hjelm, spade, kart, kompass og hodelykt.",
+      },
+    ],
+    elevationProfile: {
+      path: "M0,187 L20,190 L46,195 L66,198 L86,192 L105,191 L125,188 L151,184 L178,182 L200,180 L217,175 L237,171 L257,160 L276,145 L300,134 L317,132 L335,130 L355,130 L374,132 L388,124 L401,114 L427,93 L447,81 L467,76 L480,69 L498,57 L519,52 L539,41 L557,42 L578,25 L600,18",
+      startLabel: "186 moh",
+      endLabel: "537 moh",
+      distanceLabel: "4,1 km",
+      caption: "398 høydemeter og 4,11 km fra Skar, i skog fra start til topp, med bratteste hundremeteren mellom 300 og 400 moh.",
+    },
+  },
   juklavasstinden: {
     slug: "juklavasstinden",
     intro:
@@ -6677,6 +6713,42 @@ export const GUIDES: Record<string, TourGuide> = {
       endLabel: "1883 moh",
       distanceLabel: "4,4 km",
       caption: "922 til 1882 moh på 4,42 km. Bratteste hundremeteren måler 15,8°, og ingenting på linja passerer 25°.",
+    },
+  },
+  heddersfjell: {
+    slug: "heddersfjell",
+    intro:
+      "406 høydemeter på 5,14 km fra Gaustabanen: et stykke langs skisporet, nesten to kilometer flatt over isen på Heddersvatn, og 325 høydemeter opp vestsida til Blånipa, toppen av Heddersfjell på 1462 moh. Bratteste sammenhengende parti er 21,7 grader mellom 1169 og 1187 moh, i kneika rett opp fra vatnet — og det er der kilden ber deg finne fram Varsom-appen.",
+    ascent: [
+      "Start på gratisparkeringa ved Gaustabanen, 1132 moh, 170 meter øst for nedre stasjon. Turen begynner med å gå ned: 49 høydemeter til skisporet på 1083 moh, som du følger sørøstover opp til 1160 moh på flata vest for Heddersvatn. Det er sporet kilden mener med «følge skisporet et stykke og knekke ned til vannet».",
+      "Fra sporet tar linja av ned til vestenden av Heddersvatn på 1137 moh, og så går den på isen: 1846 meter flatt og opptil 213 meter fra land, forbi odden fra sørbreidda, som linja passerer 202 meter nord for. Heddersvatn er et naturlig vatn, ikke et regulert magasin, og kilden går over det — men det betyr at isen må bære, og det er din vurdering den dagen, ikke kartets.",
+      "Etter odden begynner stigningen, fra nordøstbreidda på 1143 moh. Den første kneika er den bratteste på turen: 21,7 grader mellom 1169 og 1187 moh, og terrenget på begge sider er brattere enn linja — innenfor 50 meter måler det 35 til 39 grader, både over og under deg, mellom 1159 og 1216 moh. Det er det nærmeste terrengmodellen kommer kildens «et parti der som kan være utsatt». Kilden sier ikke nøyaktig hvor partiet er.",
+      "Over kneika går det i trinn: bandet fra 1200 til 1300 moh måler 11,6 grader, og fra 1300 til 1400 moh 16,6 grader over 378 meter grunn, som er det bratteste bandet på turen. Sørsida av toppkjegla er brattere enn ruta — 41 til 45 grader 23 til 48 meter under linja over 1375 moh — så ikke dra ut mot sør. Blånipa står på 1462 moh, med Gaustatoppen i vest-nordvest.",
+    ],
+    descent: [
+      "Kilden kjører ned samme veg — «Husk hvor du gikk» — ned vestsida mot Heddersvatn med Gaustatoppen foran deg. Vestsida måler 18,7 grader i snitt over 700 meter fra toppen, med 29,5 grader som bratteste 60-metersvindu, 60 til 120 meter ut. Kneika ned mot isen er den samme som på veg opp, med det samme brattere terrenget på sidene.",
+      "Ikke ta snarveien sørvestover. Den sida er hamaren ned mot Heddersvatn der Hulderhola ligger, 429 meter sør for linja — 46,9 grader i bratteste vindu, 520 til 580 meter ut fra toppen. Fra vatnet er det samme veg tilbake over isen og opp til sporet, og de 76 høydemeterne du tapte på veg inn, går du opp igjen på veg ut.",
+    ],
+    avalanche: [
+      {
+        title: "Ruta",
+        body: "Bratteste sammenhengende parti er 21,7 grader mellom 1169 og 1187 moh, i den første kneika opp fra isen, og bratteste hundremeteren er 1300 til 1400 moh med 16,6 grader. Linja selv er ikke bratt. Det er terrenget rett ved sida av den som er det.",
+      },
+      {
+        title: "Terrenget utenfor",
+        body: "Kilden ber deg finne fram Varsom-appen der stigningen begynner, etter odden, og velge partiet du går opp etter forholdene. Terrengmodellen viser hvorfor: i kneika mellom 1159 og 1216 moh måler terrenget 35 til 39 grader innenfor 50 meter på begge sider av linja, og 94 meter over linja står en knaus på 59 grader. Sørvestsida er hamaren ned mot vatnet, 46,9 grader, og østsida har et vindu på 39,5 grader 440 til 500 meter ut. Under hele stigningen ligger vatnet: det som løsner i lia, stopper på isen.",
+      },
+      {
+        title: "Før du går",
+        body: "Sjekk dagens skredvarsel for Vest-Telemark på varsom.no. Vest-Telemark er en A-region og varsles daglig i sesongen. Sjekk isen på Heddersvatn også: turen går 1846 meter på den. Platået er snaufjell uten ly, og vind og dårlig sikt er det vanlige på Gausta-fjellet. Ta med sender/mottaker, søkestang og spade.",
+      },
+    ],
+    elevationProfile: {
+      path: "M0,176 L17,189 L39,200 L59,199 L85,197 L106,188 L132,171 L153,164 L174,163 L195,169 L211,170 L227,174 L248,174 L269,174 L295,174 L321,174 L342,174 L369,174 L384,174 L405,174 L426,174 L447,174 L469,157 L489,131 L510,123 L531,98 L547,81 L568,56 L589,29 L600,18",
+      startLabel: "1132 moh",
+      endLabel: "1462 moh",
+      distanceLabel: "5,1 km",
+      caption: "406 høydemeter og 5,14 km fra Gaustabanen, med 1846 meter på isen av Heddersvatn og bratteste hundremeteren mellom 1300 og 1400 moh.",
     },
   },
   "store-ble": {

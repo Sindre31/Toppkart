@@ -3925,5 +3925,57 @@
    "check_ground: «says «skiløypene» and a mapped trail runs the whole way (trailhead 45 m, summit 244 m), but the line strays 536 m from it». Falsk positiv: ordet «skiløypene» står om parkeringsplassen kilden namngir, ikkje om at ruta følgjer ei løype. Kvæfjordløypene går vestover mot Koven (sjå Storhornet i Kvæfjord); Vetefjellet-ruta går austover over Olaåsen og vidare utanfor løypenettet, slik kilden skildrar henne."
   ],
   "notes": ""
+ },
+ "heddersfjell": {
+  "season": "des–mai",
+  "aspect": "V",
+  "grade": 2,
+  "gradeReason": "Kort og for det meste slakt: ca. 400 høgdemeter over 5 km, og kilden skriv at det etter eitt parti «er trygt helt opp til toppen». Men det partiet er der — «Her er det frem med Varsom appen og finne partiet det er trygt å gå opp. Det er et parti der som kan være utsatt» — og sørvestsida av fjellet er ein hamar på over 45°. Det, og at turen går over isen på Heddersvatn, gjev grad 2.",
+  "roadClosedInWinter": false,
+  "teaserNo": "410 høydemeter fra Gaustabanen: langs skisporet, over isen på Heddersvatn forbi odden og opp vestsida til Blånipa — det høyeste fjellet mellom Tuddal og Tinnsjå, med Gaustatoppen i ryggen.",
+  "teaserEn": "410 metres of ascent from Gaustabanen: along the ski track, across the ice of Heddersvatn past the point and up the west side to Blånipa — the highest mountain between Tuddal and Tinnsjå, with Gaustatoppen at your back.",
+  "hazardNotes": "Randofolk.no: «Når man har passert odden ca halvveis på vannet begynner stigningen. Her er det frem med Varsom appen og finne partiet det er trygt å gå opp. Det er et parti der som kan være utsatt. Etter dette er det trygt helt opp til toppen.» Hulderhola ligg «i det bratteste partiet på fjellsiden ned mot Heddersvannet» — sørvestsida, som måler 46,9° i det brattaste vindauget. Turen kryssar Heddersvatn (naturleg vatn, 1137 moh); isen må vere trygg. Platået er snaufjell utan ly, og vind og dårleg sikt er det vanlege på Gausta-fjellet.",
+  "sources": [
+   "https://www.randofolk.no/toppturer/basecamp-med-randonee-heddersfjell-i-tuddal/",
+   "https://snl.no/Heddersfjellet"
+  ],
+  "confidence": "medium",
+  "corrections": [
+   "Registerets Blånipa (Topp, Hjartdal) er toppen på Heddersfjellet, og DTM1 les 1461,6 mot randofolk.no sine 1461 moh — +0,6 m. OSM fører same punkt som natural=hill «Blånipa», ele 1462.",
+   "Randofolk.no startar «fra Gaustabanen» med «gratis parkering». Den kartfeste gratisplassen er OSM way/1054510553 (amenity=parking, fee=no, access=yes) 170 m aust for Gaustabanens nedre stasjon (node/3399978330, ele 1150); DTM1 les 1132,4 moh der. Den store plassen ved Stavsro (way/446378709) er avgiftsbelagd (150 kr) og er ikkje den kilden namngir.",
+   "«Følge skisporet et stykke og knekke ned til vannet»: det næraste kartfeste sporet er OSM way/402506617 (piste:type=nordic, klassisk), som går frå 1083 moh under parkeringa opp til 1160 moh vest for Heddersvatn. Korridoren følgjer det og tek av ned til vestenden av vatnet.",
+   "Heddersvatn er OSM relation/5418652, water=lake (ikkje reservoir), NVE-vatn 69, ele 1137; DTM1 les 1137,0 og terrengklassen Innsjø på isen. Kilden går over vatnet («krysse dette»), og eit naturleg vatn på 1137 moh er vanleg vinterferdsel — linja går på isen med vilje, og guiden må seie det.",
+   "«Når man har passert odden ca halvveis på vannet begynner stigningen»: odden er neset frå sørbreidda som når 59.83757/8.72841, og sundet mellom det og nordbreidda (59.8410/8.7295) er ca. 380 m breitt. Stigninga startar på nordaustbreidda ved 59.8387/8.7395, 1142,8 moh.",
+   "Linja gjev tilbake høgd to gonger, og kilden sitt «ca. 400 m» tek det med: 1132 → 1083 ned til sporet, opp til 1160, ned til isen på 1137, og 1137 → 1462 til toppen. 49 + 23 m tapt, 77 + 325 m stigning — 402 m.",
+   "Flankesveip frå toppen (flank_probe, 700 m, 20 m steg): sørvest 46,9° i vindauget 520–580 m ute — det er hamaren ned mot Heddersvatn der Hulderhola ligg (OSM node/9939327459, «det bratteste partiet på fjellsiden ned mot Heddersvannet» i kilden). Vest måler 18,7° i snitt med 29,5° bratt 60–120 m ute; nordvest 14,0° og 26,3°; sør 8,1° i snitt."
+  ],
+  "notes": "Randofolk.no er einaste vinterkjelde: Heddersfjell 1461 moh, ca. 10 km tur/retur, ca. 400 m stigning frå Gaustabanen, 3–4 timar, gått mars/april 2023, med rutekjeda parkering – skisporet – ned til Heddersvatn – over vatnet – stigninga etter odden – toppen, og nedkjøringa same veg («Husk hvor du gikk»). SNL stadfestar at Heddersfjellet er det høgaste fjellet mellom Tuddal og Tinnsjø og at toppen heiter Blånipa. Sesongen er ikkje publisert for denne toppen; kortet låner Gaustatoppens des–mai frå same fjellet og same veg opp, slik Surløytenuten lånte frå Store Ble. Confidence er medium fordi det er éin kjelde og ingen publisert linje — korridoren er kjeda kilden namngir, festa til kartfeste punkt."
+ },
+ "mellomkollen": {
+  "season": "des–mar",
+  "aspect": "SØ",
+  "grade": 1,
+  "gradeReason": "Ut.no fører turen som middels (MODERATE): «Du trenger ikke å være en fjellgeit i toppform», men «grunnet ulemt terreng og byksete nedkjøring kan man med fordel ha hatt noen turer tidligere». Det er skog heile vegen og ikkje skredterreng av betydning; vanskane er tett kratt, bekkar og bratte kneikar. Grad 1, med førebehald som skal stå i guiden.",
+  "roadClosedInWinter": false,
+  "teaserNo": "400 høydemeter fra bussen på Skar: over Skarselva og gjennom skogen i Maridalsalpene til Mellomkollen, den høyeste kollen i denne delen av Nordmarka — en topptur innenfor bygrensa.",
+  "teaserEn": "400 metres of ascent from the bus stop at Skar: over Skarselva and up through the forest of the Maridalen «Alps» to Mellomkollen, the highest hill in this part of Nordmarka — a ski tour inside the city limits.",
+  "hazardNotes": "Ut.no: «pass på å unngå stupene som ligger på sørsiden av Gaupekollen.» Nedkjøringa er vanskelegare enn oppturen: «Nedkjøringen kan fort bli ganske teknisk og byksete om man ikke har sett seg ut noen åpne felt på forkant», og kilden rår til å følgje sommerstiane, t.d. den blåmerkte ned til Øyungen. Tett skog, kratt og elver. Kollene liknar kvarandre — «plutselig står du på Mellomkollen når du trodde du var på Midtkollen» — så kart og kompass. Fredet naturreservat.",
+  "sources": [
+   "https://ut.no/turforslag/1113693/20-innenfor-20-topptur-i-oslo-i-maridalsalpene",
+   "https://ut.no/api/gpx/trip/1113693",
+   "https://ut.no/turforslag/1113431/maridalen-high-5-fem-topper-pa-en-tur-i-nordmarka"
+  ],
+  "confidence": "medium",
+  "corrections": [
+   "Ut.no 1113693 heiter «Topptur på ski i Maridalsalpene» og namngir tre koller — «Midtkollen (519 moh), Mellomkollen og Gaupekollen (524moh)». Sporet ut.no publiserer for turen (/api/gpx/trip/1113693, 304 punkt, 6,46 km) går ikkje på Gaupekollen: næraste punkt er 558 m frå toppen. Det går på Mellomkollen — punkt 192 ligg 1 m frå toppen — og så to rundar ned og opp att på same kollen. Turen heiter difor Mellomkollen, etter toppen linja faktisk når.",
+   "Mellomkollen er den høgaste av dei tre: DTM1 les 536,6 på toppen, OSM fører ele 537 (node/3813054270), mot Gaupekollen 524,9 og Midtkollen 519,5. Ut.no 1113431 («Maridalen High 5») skriv det same: «Mellomkollen er den høyeste toppen i denne delen av Nordmarka». Ingen kjelde publiserer høgda, så forventa høgd i peaks.py er DTM1 i registerpunktet.",
+   "Ut.no sine 428 høgdemeter er heile sporet med begge rundane. Opp til toppen første gong (4,69 km) stig sporet 185,6 → 536,3, med ei lita dump på 11 m ved 2,9 km.",
+   "Startpunktet i sporet er 60.02775/10.77782, 185,6 moh ved Skar utfartsparkering (OSM relation/9184679, amenity=parking). Kilden: «Bussen stopper på parkeringsplassen der turen starter» — busstoppet Skar (node/3845261832) ligg 120 m sør.",
+   "Sporet går først 770 m søraust langs Maridalsveien til Kroken (60.02513/10.78774, 183,0 moh) og så nordover. Korridoren held på den omvegen fordi kilden gjer det; han går langs vegen og dei oppkøyrde spora austover før stigninga.",
+   "Mellomkollen naturreservat (OSM relation/13363584, verneklasse 1a) dekkjer toppen. Kilden: «et fredet naturreservat og en skal derfor ta ekstra hensyn».",
+   "Svartputten (OSM way/35909098, ele 488, natural=water) ligg 200 m aust for linja under toppen.",
+   "Ut.no-sporet har ingen detalj dei første 600 metrane: punkt 0 er parkeringa og punkt 1 ligg ved Hallset (60.02413/10.78636), med ein rett strek over Skarselva mellom dei. Første ruting følgde streken og gjekk ned i elvedalen på 170 moh, 216 m frå sporet. Korridoren går no der ein faktisk kjem over elva: langs Maridalsveien og over Vaggesteinbrua (OSM way/381297585, man_made=bridge), der DTM1 les 159,6 — vegen søkk 26 m frå parkeringa til brua. Så forbi Hallset og 770 m søraust i sporet til Kroken (60.02513/10.78774, 183,0 moh) før stigninga nordover."
+  ],
+  "notes": "Ut.no 1113693 er ein skitur (SKI_TOURING, med Topptur), sesong desember–mars, retning A–B, 6,5 km og 428 høgdemeter, 5 timar, skriven av Ina Othilie Vikøren i serien «20 innenfor 20». Sporet ut.no publiserer er linja: Skar – Kroken – nordover til Rollveien – Jondalen – vest for Midtkollen – Mellomkollen. Korridoren er festa på punkt frå sporet. Oslo-runden avviste Oslomarka fordi kollene ikkje har høgdemeter verdt eit kort; dette er den eine skildra toppturen der, og linja frå Skar måler 398 høgdemeter til toppen. Confidence medium fordi kilden er éin, og fordi turforslaget namngir ein annan topp enn sporet når."
  }
 }

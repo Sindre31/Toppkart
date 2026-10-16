@@ -122,10 +122,10 @@ components/
 lib/
   config.ts              VIPPS, SITE, GRADE_COLORS, env, isSupabaseConfigured
   types.ts               Tour, TourGuide, Identity
-  tours.ts               The 185 tours, REGIONS, getTour(), routesFor(), routeById(),
+  tours.ts               The 187 tours, REGIONS, getTour(), routesFor(), routeById(),
                          routeFor(), routeProfile()
   routes.ts              Generated ascent routes per tour — see scripts/build-routes/
-  guides.ts              Editorial guide content — all 185 tours, generated
+  guides.ts              Editorial guide content — all 187 tours, generated
   i18n/                  Every user-visible string, no/en. content.ts holds the guides
   access.ts              getIdentity() — who is signed in (admins only)
   tour-marks.ts          Favourite/done rules and reading them back from storage
@@ -136,7 +136,7 @@ lib/
   *.test.ts              Unit tests, run by `npm test` — see "Checks" below
 supabase/
   schema.sql             Tables, policies, RLS
-  seed.sql               The 185 tours and all 185 guides
+  seed.sql               The 187 tours and all 187 guides
 design-reference/        The HTML prototypes and the product/design handoff. Read-only ground
                          truth; not shipped.
 docs/
@@ -280,10 +280,10 @@ content and data quality that has to be settled before the site is promoted wide
   pipeline and what it verifies. What is still missing is ground truth: these lines show where a
   route goes, but nobody has skied them with a GPS. Surveyed GPX per route, served from Supabase
   Storage, is still the production plan.
-- **Thirty-five peaks of 185 have their alternative routes entered, and the Fri Flyt corpus is
+- **Thirty-five peaks of 187 have their alternative routes entered, and the Fri Flyt corpus is
   now exhausted.** The data model takes any number of routes per tour and the map renders a picker
-  when there is more than one; 223 routes now cover 185 tours, and Kjølen, Strandtinden and
-  Rondslottet carry three lines each. The remaining 150 tours have exactly one route. That is no
+  when there is more than one; 225 routes now cover 187 tours, and Kjølen, Strandtinden and
+  Rondslottet carry three lines each. The remaining 152 tours have exactly one route. That is no
   longer a research backlog against the source this collection was built from: every one of Fri
   Flyt's 580 published route pages has been indexed and read, and the four documented second
   starts left in it went in with the round that indexed them. Further second routes have to come
@@ -305,9 +305,20 @@ content and data quality that has to be settled before the site is promoted wide
   5 — so on most winter days the avalanche panel on those tours has no assessment to show, because
   none was made. Each of the ten guides says so in its own words, and every region was queried
   rather than assumed. The four Trollheimen tours are in an A-region and are forecast daily.
+  Of the two Oslo-area tours added later, Mellomkollen is in *Oslo*, a B-region as well, and its
+  guide says so; Heddersfjell is in *Vest-Telemark*, an A-region forecast daily.
+- **Two more Oslo-area tours: Heddersfjell above Tuddal and Mellomkollen in Maridalen.** They
+  are the two tops near Oslo with a published winter ski description that the Oslo round did not
+  have — randofolk.no for Heddersfjell, ut.no with its own GPX track for Mellomkollen. Mellomkollen
+  is the app's first tour inside the city limits, and the tour is named after the top the source's
+  track actually reaches: the ut.no trip is titled for the «Maridalsalpene» and names Gaupekollen,
+  but its line goes to Mellomkollen, 537 m, the highest of the three hills. Heddersfjell is the
+  first tour whose line goes across a lake on purpose: 1846 m on the ice of Heddersvatn, a natural
+  lake the source crosses, and the guide says so with the height, the length and the offshore
+  distance. See «The Oslo round, continued» in `scripts/build-routes/README.md`.
 - **The tour cards are checked, the guides are checked, the geometry is checked — by machine.**
-  `check_tours.py` and `check_routes.py` come back clean on all 185 tours and `check_guides.py` on
-  every number in all 185 guides: every card height is DTM1 at the resolved summit, every vertical is
+  `check_tours.py` and `check_routes.py` come back clean on all 187 tours and `check_guides.py` on
+  every number in all 187 guides: every card height is DTM1 at the resolved summit, every vertical is
   its route's cumulative ascent to within 10 m, every number in the prose traces to a measurement, and
   `supabase/seed.sql` holds the same figures as `lib/tours.ts`. The last figure without a tracked
   source — a stone tunnel's altitude in Taraldsviktinden's guide — was settled by researching that
@@ -430,7 +441,7 @@ content and data quality that has to be settled before the site is promoted wide
 - **The guide text has not been read by anyone who has skied these tours.** Every number in
   `lib/guides.ts` traces to Kartverket's terrain model, the route research or a cited source, and
   every number is matched mechanically by `check_guides.py` — which reads nynorsk verticals as well
-  as bokmål ones, and comes back clean on all 185 guides with no unsourced number left.
+  as bokmål ones, and comes back clean on all 187 guides with no unsourced number left.
   On top of that, **105 of the 185 have been through an independent adversarial read** whose only job
   is to break it — the 24 of the first round, the 15 of the second, the 7 of the Oslo round, the
   22 of the Sunnmøre and Vestland rounds, the 7 of the Trondheim round, Kjerag, Møysalen and

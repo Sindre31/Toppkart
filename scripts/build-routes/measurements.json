@@ -2499,5 +2499,79 @@
       "figure": "NV og W er nesten flate, 1,9° og 3,8° i snitt — toppflata. S måler 14,4 i snitt med eit 29,5-vindu 260–320 m ute og NE 10,4 med 27,6 på 250–310. Ingen radial ut frå toppen når 30 grader i snitt: skrentane kjelda åtvarar mot ligg ved sida av ruta lenger nede, ikkje under toppen",
       "how": "flank_probe.py <lat> <lng> --out 500 --step 10 frå toppkoordinaten i summits.json, åtte peilingar over DTM1. Snittet er heile radialen; vindauget er det brattaste 60-metersvinduet langs den."
     }
+  ],
+  "heddersfjell": [
+    {
+      "what": "Sørvestsida — hamaren ned mot Heddersvatn, der Hulderhola ligg",
+      "figure": "46,9° i brattaste 60-metersvindauge, 520–580 m ut; 20,1° i snitt over 700 m",
+      "how": "flank_probe.py <lat> <lng> --out 700 --step 20 frå toppkoordinaten i summits.json, åtte peilingar over DTM1. Talet er det brattaste 60-metersvindauget langs radialen."
+    },
+    {
+      "what": "Vestsida, som er sida ruta går opp",
+      "figure": "18,7° i snitt over 700 m, brattaste vindauge 29,5° 60–120 m ut",
+      "how": "flank_probe.py <lat> <lng> --out 700 --step 20 frå toppkoordinaten i summits.json, åtte peilingar over DTM1. Talet er det brattaste 60-metersvindauget langs radialen."
+    },
+    {
+      "what": "Nordvest og sør",
+      "figure": "NV 14,0° i snitt, brattaste vindauge 26,3° 80–140 m ut; S 8,1° i snitt, 36,3° 140–200 m ut",
+      "how": "flank_probe.py <lat> <lng> --out 700 --step 20 frå toppkoordinaten i summits.json, åtte peilingar over DTM1. Talet er det brattaste 60-metersvindauget langs radialen."
+    },
+    {
+      "what": "Austsida",
+      "figure": "18,9° i snitt, brattaste vindauge 39,5° 440–500 m ut",
+      "how": "flank_probe.py <lat> <lng> --out 700 --step 20 frå toppkoordinaten i summits.json, åtte peilingar over DTM1. Talet er det brattaste 60-metersvindauget langs radialen."
+    },
+    {
+      "what": "Den første kneika opp frå isen, 1141–1216 moh",
+      "figure": "cellene innanfor 50 m av linja måler 35,4–39,2° på begge sider — 37 m over linja ved 1159 moh, 38,4° 55 m over ved 1173, 39,2° 26 m under ved 1204 og 38,3° 43 m under ved 1216; innanfor 100 m står ein 59,0° knaus 94 m over linja ved 1159 moh",
+      "how": "DTM1 som GeoTIFF i 5 m rutenett (geo.dem_tile) over oppstigninga, helling per celle med numpy.gradient; for kvart andre punkt på den routede linja er det brattaste cella innanfor 50 m oppgitt med avstand og om ho ligg over eller under linja."
+    },
+    {
+      "what": "Toppkjegla, 1375–1462 moh",
+      "figure": "42,0° 48 m under linja ved 1375 moh, 43,4° 23 m under ved 1428, 41,0° 28 m under ved 1440 og 45,4° 44 m under toppen",
+      "how": "DTM1 som GeoTIFF i 5 m rutenett (geo.dem_tile) over oppstigninga, helling per celle med numpy.gradient; for kvart andre punkt på den routede linja er det brattaste cella innanfor 50 m oppgitt med avstand og om ho ligg over eller under linja."
+    },
+    {
+      "what": "Isen på Heddersvatn",
+      "figure": "1846 m av linja går flatt på 1137 moh, frå 1991 til 3837 m langs ruta; linja passerer 202 m nord for odden ved 3206 m",
+      "how": "Lest av den routede linja i lib/routes.ts (resample_dtm1.py): den samanhengande køyringa av punkt på vass-flata 1137 moh, og næraste punkt til neset 59.83757/8.72841."
+    },
+    {
+      "what": "Hulderhola",
+      "figure": "429 m sør for linja, næraste punkt ved 4583 m langs ruta på 1302 moh",
+      "how": "Haversine frå OSM node/9939327459 (natural=cave_entrance) til næraste punkt på den routede linja."
+    },
+    {
+      "what": "Varslingsregionen toppkoordinaten ligg i",
+      "figure": "Vest-Telemark (region 3035), regiontype A — varsla dagleg i sesongen",
+      "how": "Spurt Varsom/NVE på same endepunkt som appen bruker: api01.nve.no/hydrology/forecast/avalanche/v6.3.2/api/AvalancheWarningByCoordinates/Simple/<lat>/<lng>/1/<dato>/<dato> med toppkoordinaten frå summits.json. Svaret gir RegionName, RegionId og RegionTypeName."
+    }
+  ],
+  "mellomkollen": [
+    {
+      "what": "Mellomkollen, alle sider",
+      "figure": "3,3–11,6° i snitt over 500 m; brattaste vindauge 36,2° mot sørvest 210–270 m ut, 28,2° mot sør 290–350 m ut, 27,4° mot nordaust 150–210 m ut",
+      "how": "flank_probe.py <lat> <lng> --out 500 --step 10 frå toppkoordinaten i summits.json, åtte peilingar over DTM1. Talet er det brattaste 60-metersvindauget langs radialen."
+    },
+    {
+      "what": "Sørsida av Gaupekollen — «stupene» kilden åtvarar mot",
+      "figure": "38,7° i brattaste vindauge mot sør 240–300 m ut, 33,2° mot sørvest 180–240 m ut; Gaupekollen ligg 632 m frå linja",
+      "how": "flank_probe.py 60.04861 10.78164 135 180 225 --out 300 --step 10 frå OSM node/3813054268, og haversine til næraste punkt på den routede linja (ved 3414 m, 456 moh)."
+    },
+    {
+      "what": "Knausane langs linja",
+      "figure": "cellene innanfor 50 m av linja når 40–55° mange stader frå 242 moh og opp: 49,0° 40 m over ved 297 moh, 55,4° 47 m over ved 300, 48,0° 34 m over ved 452, 54,5° 39 m over ved 507 og 55,1° 35 m under ved 523 — der OSM fører eit stup (way/692714143, natural=cliff) 49 m frå linja",
+      "how": "DTM1 som GeoTIFF i 5 m rutenett (geo.dem_tile) over oppstigninga, helling per celle med numpy.gradient; for kvart andre punkt på den routede linja er det brattaste cella innanfor 50 m oppgitt med avstand og om ho ligg over eller under linja."
+    },
+    {
+      "what": "Svartputten og Midtkollen",
+      "figure": "Svartputten (OSM way/35909098, 488 moh) 205 m frå linja ved 4053 m langs ruta; Midtkollen 270 m frå linja ved 3818 m",
+      "how": "Haversine frå OSM-geometrien til næraste punkt på den routede linja."
+    },
+    {
+      "what": "Varslingsregionen toppkoordinaten ligg i",
+      "figure": "Oslo (region 3045), regiontype B — B-regionar blir varsla berre ved faregrad 4 og 5",
+      "how": "Spurt Varsom/NVE på same endepunkt som appen bruker: api01.nve.no/hydrology/forecast/avalanche/v6.3.2/api/AvalancheWarningByCoordinates/Simple/<lat>/<lng>/1/<dato>/<dato> med toppkoordinaten frå summits.json. Svaret gir RegionName, RegionId og RegionTypeName."
+    }
   ]
 }

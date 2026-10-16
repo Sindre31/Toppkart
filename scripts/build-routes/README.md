@@ -6376,6 +6376,99 @@ them; every one of them was answered in an earlier round.
 | summits re-read live | 185 within 2 m; the three higher cells above |
 | card tokens, aspect, duration, region, parity | the findings above; nothing else |
 
+## The Oslo round, continued
+
+Two more tops near Oslo, and the reason it is two is that nothing else near Oslo
+has a published winter ski line. 187 tours, 225 routes.
+
+| tour | region | start | summit | gain | km | steepest 100 m band | steepest 30 m | grade |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Heddersfjell | Telemark | 1132 | 1462 | 406 | 5.14 | 16.6° | 21.7° | 2 |
+| Mellomkollen | Oslo | 186 | 537 | 398 | 4.11 | 7.3° | 22.9° | 1 |
+
+The Oslo round took every top within two hours that Fri Flyt, ut.no or
+randofolk.no described as a winter tour. Looking again found Fri Flyt's eastern
+corpus with nothing new (`skiturer-oslo` now lists only Rødkleiva, which has no
+summit), randofolk.no's list of eighteen with one Eastern Norway entry the app did not
+have, and on ut.no one ski-touring trip inside Oslo. Everything else in reach is
+summer-only on the page: Øysteinnatten and Jøronnatten on Lifjell are May–October
+hikes, Skaget's ut.no route is June–October, Spåtind's winter source is a cabin
+owners' association post about groomed trails, and the ut.no route Visit Norway
+points to for Hallingnatten could not be found. Mugnetind has a good ut.no ski
+trip and is three hours from Oslo, which is Valdres, not this round.
+
+The summit search went two for two inside a metre: Blånipa +0.6 against
+randofolk.no's 1461, and Mellomkollen +0.6 against the DTM1 reading used as its
+expected height, because nobody publishes one.
+
+### Mellomkollen is the top the source's track reaches, not the one it names
+
+Ut.no's trip is called «Topptur på ski i Maridalsalpene» and names three hills —
+«Midtkollen (519 moh), Mellomkollen og Gaupekollen (524moh)». The GPX ut.no serves
+for it, `/api/gpx/trip/1113693`, never reaches Gaupekollen: its nearest point is
+558 m from that top. Point 192 is a metre from Mellomkollen's, and the track then
+laps the same hill twice. The tour ships under the name of the summit the line
+reaches, which is also the highest of the three — 536.6 on DTM1, `ele` 537 in
+OSM, and «den høyeste toppen i denne delen av Nordmarka» in ut.no's own High 5
+description. Ut.no's 428 høgdemeter is the whole track with both laps; to the
+top the first time it climbs 185.6 → 536.3.
+
+The track has no detail for its first 600 m: point 0 is the car park and point 1
+is at Hallset, joined by a straight line over Skarselva. The first solve followed
+that line into the river valley at 170 m, 216 m off the track. The corridor now
+crosses where a person does, on Maridalsveien over Vaggesteinbrua (`way/381297585`,
+159.6 on DTM1 — the road drops 26 m from the car park to the bridge), and after
+the first kilometre the routed line averages 20 m from the track and never more
+than 70.
+
+The hazard on a 537 m forest hill is not a big slope, and the guide does not
+pretend it is. It is the knolls: within 50 m of the line the 5 m slope grid finds
+40–55° cells from 242 m upward, and OSM maps a cliff (`way/692714143`) 49 m from
+the line below the top. The cliffs the source warns about, south of Gaupekollen,
+measure 38.7° and are 632 m east of the line. Oslo is a **B-region** (3045).
+
+### Heddersfjell goes across a lake on purpose
+
+Randofolk.no's chain is: free parking at Gaustabanen, «følge skisporet et stykke
+og knekke ned til vannet», cross Heddersvatn, start climbing «når man har passert
+odden ca halvveis på vannet». Every link is pinned to a mapped point — the free car
+park is `way/1054510553` (fee=no; the big Stavsro car park charges), the ski track
+is `way/402506617`, the point is the spit off the south shore at 59.83757/8.72841
+— and the line follows it: 1846 m flat on the ice at 1137 m, passing 202 m north
+of the point, up to 213 m offshore.
+
+Heddersvatn is `relation/5418652`, `water=lake`, NVE lake 69 — not a reservoir —
+so the router was left to cross it and `check_ground` reports a note, not a
+finding: the guide names the height, the length and the offshore distance, and
+tells the reader that whether the ice holds is their call on the day.
+
+The line gives back height twice, and the source's «ca. 400 m» already counts it:
+1132 → 1083 down to the track, up to 1160, down to the ice at 1137. 406 m of
+climbing against 76 m lost.
+
+The source does not say where «et parti der som kan være utsatt» is, only that it
+comes after the point. The 5 m slope grid over the ascent puts the candidate in
+the first pitch off the ice: between 1159 and 1216 m the ground within 50 m of
+the line measures 35–39° on both sides, and a 59° knoll stands 94 m above it. The
+guide says that much and no more. The south-west side is the crag above the lake
+where Hulderhola is — 46.9° — 429 m south of the line. Vest-Telemark is an
+**A-region** (3035), forecast daily.
+
+The season is borrowed from Gaustatoppen, the same rule Surløytenuten followed:
+randofolk.no gives one ascent in March/April and no season, and the card carries
+the neighbour's des–mai from the same massif and the same road up.
+
+### What ran
+
+`check_new_corridors` (two notes, both the source's own shape: Heddersfjell's
+50 m drop to the ski track, and Mellomkollen's start heading away from the summit
+along the road), `check_routes`, `check_tours` and `check_geometry` clean on 187
+tours and 225 routes (the geometry check's seven findings in five tours are the
+standing ones), `check_guides` and `check_bands` clean on both guides — 0
+unsourced numbers, 12 band claims all agreeing — `check_treeline`,
+`check_steepness`, `check_gain` and `check_ground` with nothing to look at, and
+`npm run typecheck`, `lint`, `test` and `build`.
+
 ## Network
 
 Everything is public and unauthenticated:

@@ -225,4 +225,7 @@ NEW_TOURS = {
     "stortinden-sortland": ("Stortinden i Sortland", "Vesterålen"),
     "storlitinden": ("Storlitinden", "Harstad"),
     "vetefjellet": ("Vetefjellet", "Harstad"),
+    # — Oslo-runden, del to —
+    "heddersfjell": ("Heddersfjell", "Telemark"),
+    "mellomkollen": ("Mellomkollen", "Oslo"),
 }

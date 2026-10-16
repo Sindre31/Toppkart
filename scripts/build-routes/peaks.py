@@ -444,4 +444,14 @@ PEAKS = [
     ("stortinden-sortland", "Stortinden", ["Sortland - Suortá", "Sortland"], 1021, 68.60301, 15.62939),
     ("storlitinden", "Storlitinden", ["Kvæfjord"], 614, 68.79798, 16.31025),
     ("vetefjellet", "Vetefjellet", ["Harstad - Hárstták", "Harstad"], 546, 68.80011, 16.34058),
+    # — Oslo-runden, del to: to topper ein kilde beskriv som topptur på ski om
+    #   vinteren, og som Oslo-runden ikkje hadde. Heddersfjell er det høgaste
+    #   fjellet mellom Tuddal og Tinnsjå, og toppen der heiter Blånipa i registeret
+    #   (Topp, Hjartdal); randofolk.no oppgir 1461 moh. Mellomkollen i Maridalen er
+    #   den einaste toppturen med ski i sjølve Oslo som har ei publisert linje:
+    #   ut.no sitt spor i «Topptur på ski i Maridalsalpene» går opp på Mellomkollen,
+    #   ikkje på Gaupekollen som turforslaget namngir. Ingen kilde publiserer
+    #   høgda på Mellomkollen, så forventa høgd er DTM1 i registerpunktet (536). —
+    ("heddersfjell", "Blånipa", ["Hjartdal"], 1461, 59.83823, 8.75923),
+    ("mellomkollen", "Mellomkollen", ["Oslo"], 536, 60.05060, 10.76839),
 ]
