@@ -3428,7 +3428,7 @@ Vanligste feil: å runde skavlen mellom fortoppen og hovedtoppen på oversida. D
 where slug = 'ytstevasshornet';
 
 update public.tk_tours set
-  description_up   = 'Start ved Urkegjerdet, 63 moh, der grusveien tar av fra hovedveien ved Urke Landhandel. Veien videre mot Haukåssætra er vinterstengt, og det er derfor turen starter nede ved fjorden og ikke oppe ved sætra på 230 moh — Fri Flyts «5 timar frå Haukåssætra» er tida fra et punkt du sjelden kommer til med bil om vinteren.
+  description_up   = 'Start ved Urkegjerdet, 63 moh, der grusveien tar av fra hovedveien ved Urke Landhandel. Veien videre mot Haukåssætra er vinterstengt, og det er derfor turen starter nede ved fjorden og ikke oppe ved sætra på 230 moh — Fri Flyts «5 timer fra Haukåssætra» er tida fra et punkt du sjelden kommer til med bil om vinteren.
 
 Følg veien opp gjennom skogen — Kartverket fører skog til 231 moh — forbi Haukåssætra og inn i dalen mot Nordkopen på 501 moh. Bandet fra 400 til 500 moh måler 11,7 grader, og ellers er hele innmarsjen slak: 5,5 grader fra 100 til 200 moh og 6,5 fra 200 til 300.
 
@@ -3486,7 +3486,7 @@ På dager uten skredfare gir Kolåsbreen en videre nedkjøring med flere linjeva
 where slug = 'kolastinden';
 
 update public.tk_tours set
-  description_up   = 'Start ved bilparkeringa etter bommen i Nupen, 92 moh. Fri Flyt oppgir «3 timar frå Vallasætra» og «4 timar frå Nupen», og forskjellen er reell: setra ligger på 324 moh, og den videre veien dit er bomvei som bare gjelder «viss vegen er open».
+  description_up   = 'Start ved bilparkeringa etter bommen i Nupen, 92 moh. Fri Flyt oppgir «3 timer fra Vallasætra» og «4 timer fra Nupen», og forskjellen er reell: setra ligger på 324 moh, og den videre veien dit er bomvei som bare gjelder «hvis veien er åpen».
 
 Følg Engesetvegen oppover og østover til Vallasætra. De første 766 metrene grunn er flate — 0,7 grader — og så begynner veien: 5,3 grader fra 100 til 200 moh, 9,2 fra 200 til 300 og et brattere parti på 19,9 og 21,8 grader mellom 400 og 600 moh. Skogen holder til 581 moh langs linja. Derfra går den i åpent terreng langs kanten av et skogholt som den streifer på 637 moh, og fra 640 moh er det åpent for godt.
 
@@ -3663,7 +3663,7 @@ Ved 740 moh svinger du til høyre og sikk-sakker opp sida i nordvest til du når
 Ryggen følges sørvestover helt til topps på 1589 moh. Hold deg midt på den. Den bratteste hundremeteren på turen ligger mellom 1500 og 1600 moh og måler 24,6 grader i snitt, men det er ikke hellinga som er problemet på ryggen — det er bredden: en kryssprofil ved 62,1715 nord gir 1556 moh på ryggen og 1265 moh bare 52 meter nordvest for den.',
   description_down = 'Vanligste nedkjøring er samme veien tilbake: 45 til 50 grader de første 200 høydemetrene fra ryggen, så 30 til 35 ned mot Konedalen og slakere videre ut dalen, og til slutt stien ned til Lisjeholen med skiene på sekken igjen. Sida ned fra ryggen er den beste kjøringa på turen og samtidig det bratteste og mest skredutsatte du er innom.
 
-Vanligste feil: å lese skavlene etter «høgre og venstre» i stedet for etter kompasset. Fri Flyt skriver om skavler både til høyre ned mot Konedalen og til venstre ned nordveggen, men det gjelder nedstigningen — på vei opp ligger Konedalen i sørøst og fjordveggen i nordvest. Nordvestsida er ikke en felle du kan korrigere for underveis: DTM1 måler om lag 80 grader rett under toppen, og fallet er nær 290 høydemeter på 52 meter grunn.
+Vanligste feil: å lese skavlene etter «høyre og venstre» i stedet for etter kompasset. Fri Flyt skriver om skavler både til høyre ned mot Konedalen og til venstre ned nordveggen, men det gjelder nedstigningen — på vei opp ligger Konedalen i sørøst og fjordveggen i nordvest. Nordvestsida er ikke en felle du kan korrigere for underveis: DTM1 måler om lag 80 grader rett under toppen, og fallet er nær 290 høydemeter på 52 meter grunn.
 
 Den andre feilen er å gå for langt inn i dalen før du tar av. Ruta svinger opp ved om lag 740 moh, 1,6 kilometer fra veienden. Første utkastet av denne ruta svingte opp mot dalbunnen lenger inne, og den linja måler 40 til 44 grader mellom 1030 og 1205 moh. Sida ved 62,174 til 62,176 nord er den som holder 33 til 36 hele veien til ryggen.',
   avalanche_notes  = jsonb_build_array(
@@ -4098,7 +4098,7 @@ Vanligste feil: å la seg dra sørover fra toppen, ned Steindalen, uten å ha pl
 
 Vestsida er hard om morgenen i april og mai, og sola trenger noen timer på den. Går du tidlig, tar du med stegjern; det bratte partiet ved 1840 moh er ikke morsomt på blank skare, verken opp eller ned.
 
-Sørsida er nå en egen rute på kartet, og den er ikke bare en variant: «Før Sognefjellet opnar er det best å gå sørsida opp frå Helgedalen», skriver kilden i sin egen når-linje. Normalruta starter ved Gjuvvatnet på Sognefjellsvegen, som er vinterstengt — så fram til veien åpner er dette veien opp. Fra Turtagrø på 884 moh går linja inn Helgedalen forbi 910 og 1026, opp mot Steindøla på 1202 og 1338, langs vestsida av elva på 1434 og 1520, inn i Steindalen på 1704, og over inngangen til sørsida på 1893 til vestkanten av topplatået på 1931 — det punktet normalruta også kommer opp på. 1172 høydemeter på 7,83 km mot 764 på 3,99 km fra Gjuvvatnet: nesten dobbelt så mye klatring og nesten dobbelt så langt, fordi turen starter 390 meter lavere. Skogen slipper på 1037 moh etter 3,92 km. Beltet fra 1700 til 1800 moh måler 21,3 grader, turens bratteste, og det bratteste 30-metersvinduet er 28,4 mellom 1658 og 1675. Kilden advarer om Steindøla: elva åpner seg en gang i mai.',
+Sørsida er nå en egen rute på kartet, og den er ikke bare en variant: «Før Sognefjellet åpner, er det best å gå sørsida opp fra Helgedalen», skriver kilden i sin egen når-linje. Normalruta starter ved Gjuvvatnet på Sognefjellsvegen, som er vinterstengt — så fram til veien åpner er dette veien opp. Fra Turtagrø på 884 moh går linja inn Helgedalen forbi 910 og 1026, opp mot Steindøla på 1202 og 1338, langs vestsida av elva på 1434 og 1520, inn i Steindalen på 1704, og over inngangen til sørsida på 1893 til vestkanten av topplatået på 1931 — det punktet normalruta også kommer opp på. 1172 høydemeter på 7,83 km mot 764 på 3,99 km fra Gjuvvatnet: nesten dobbelt så mye klatring og nesten dobbelt så langt, fordi turen starter 390 meter lavere. Skogen slipper på 1037 moh etter 3,92 km. Beltet fra 1700 til 1800 moh måler 21,3 grader, turens bratteste, og det bratteste 30-metersvinduet er 28,4 mellom 1658 og 1675. Kilden advarer om Steindøla: elva åpner seg en gang i mai.',
   avalanche_notes  = jsonb_build_array(
     jsonb_build_object(
       'title', 'Ruta',
@@ -4334,7 +4334,7 @@ Vestover skal ingen: ryggen stiger videre mot høyere fjell, og i skodde er det 
     ),
     jsonb_build_object(
       'title', 'Variantene',
-      'body',  'Fri Flyt legger sin egen NB på østflanken: «Skiløparar har fleire gongar løyst ut flakskred i denne austlege flanken», og nedfarten ved Høgde 1140 «krev stabile snøforhold». Fem nedfarter gir fem måter å øke innsatsen på: nord-, nordøst- og østsida måler 44,8 til 51,1 grader i sine bratteste 60 m-vinduer, sørsida 41,9. Kort vei til bilen gjør det fristende å ta en variant til — det er nettopp da snøvurderingen fra i stad skal gjelde ennå.'
+      'body',  'Fri Flyt legger sin egen NB på østflanken: «Skiløpere har flere ganger løst ut flakskred i denne østlige flanken», og nedfarten ved høyde 1140 «krever stabile snøforhold». Fem nedfarter gir fem måter å øke innsatsen på: nord-, nordøst- og østsida måler 44,8 til 51,1 grader i sine bratteste 60 m-vinduer, sørsida 41,9. Kort vei til bilen gjør det fristende å ta en variant til — det er nettopp da snøvurderingen fra i stad skal gjelde ennå.'
     ),
     jsonb_build_object(
       'title', 'Ryggen som stiger',
