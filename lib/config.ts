@@ -11,9 +11,8 @@
  *     to this.
  */
 
-/** Voluntary support. Shown on the front page and in the one-time prompt
- *  (`components/SupportPrompt.tsx`). A public fact, read in the browser bundle,
- *  so a constant rather than an env var. */
+/** Voluntary support. Shown on `/om`. A public fact, read in the browser
+ *  bundle, so a constant rather than an env var. */
 export const VIPPS = {
   /** Digits only — what gets copied to the clipboard. */
   number: "96640540",

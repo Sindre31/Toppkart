@@ -147,6 +147,7 @@ export default function MapView({
   initialSlug,
   initialRouteId,
   photos,
+  sortedByPopularity,
 }: {
   lang: Lang;
   /** Turene, ferdig oversatt av serveren.
@@ -181,6 +182,8 @@ export default function MapView({
   /** Bildene av toppene, som små miniatyrer. Bare de turene som har ett; se
    *  `lib/photos.ts`. */
   photos: Readonly<Record<string, PeakPhotoData>>;
+  /** Om `tours` kommer sortert etter popularitet — da sier lista det. */
+  sortedByPopularity: boolean;
 }) {
   const [query, setQuery] = useState("");
   const [grade, setGrade] = useState(0);
@@ -244,7 +247,8 @@ export default function MapView({
   }, [tours, query, grade, region, aspect, vertical, mine, markMap]);
 
   /* Avstanden til hver topp, og lista sortert etter den, så lenge leseren har
-     delt posisjonen. Uten posisjon står lista i redaksjonell rekkefølge som før.
+     delt posisjonen. Uten posisjon står lista i rekkefølgen serveren sendte:
+     mest leste på Wikipedia først (`lib/popularity.ts`).
      Kartet får den usorterte `rows` gjennom `visible` — rekkefølgen betyr ingen
      ting der. */
   const distances = useMemo(() => {
@@ -472,7 +476,8 @@ export default function MapView({
           <div className={s.count}>
             <span>
               {rows.length} {rows.length === 1 ? t.tour : t.tours} ·{" "}
-              {geoMessage(geo.state, t) ?? (distances ? t.sortedByDistance : t.approx)}
+              {geoMessage(geo.state, t) ??
+                (distances ? t.sortedByDistance : sortedByPopularity ? t.sortedByPopularity : t.approx)}
             </span>
             {filtered ? (
               <button type="button" className={s.reset} onClick={resetFilters}>

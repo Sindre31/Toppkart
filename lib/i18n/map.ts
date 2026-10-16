@@ -99,6 +99,8 @@ export interface Dict {
   locateStop: string;
   /** Replaces `approx` under the filters while the list is sorted by distance. */
   sortedByDistance: string;
+  /** Under lista når den står etter Wikipedia-visninger. */
+  sortedByPopularity: string;
   /** «12 km unna» on a card. Straight-line distance to the summit. */
   distanceAway: (distance: string) => string;
   youAreHere: string;
@@ -168,6 +170,7 @@ const MAP: Translated<Dict> = {
     locate: "Vis posisjonen min",
     locateStop: "Skjul posisjonen min",
     sortedByDistance: "Nærmest først, i luftlinje til toppen.",
+    sortedByPopularity: "Mest populære først, etter visninger på Wikipedia siste år.",
     distanceAway: (d) => `${d} unna`,
     youAreHere: "Du er her",
     locating: "Finner posisjonen din …",
@@ -235,6 +238,7 @@ const MAP: Translated<Dict> = {
     locate: "Show my location",
     locateStop: "Hide my location",
     sortedByDistance: "Nearest first, straight-line distance to the summit.",
+    sortedByPopularity: "Most popular first, by Wikipedia views over the past year.",
     distanceAway: (d) => `${d} away`,
     youAreHere: "You are here",
     locating: "Finding your location …",

@@ -3,8 +3,8 @@
 Toppkart is a Norwegian ski-touring field guide: quality-assured peak tours on one map, with
 route, vertical gain, steepness and avalanche terrain. **It is free.** Every guide, GPX file and
 elevation profile is open to everyone, and readers have no accounts. Anyone who wants to chip in
-can Vipps 966 40 540 (`VIPPS` in `lib/config.ts`) — the number is on `/om` (the front page `/` is the map itself), and a
-one-time prompt asks on the third time the app is opened. The site is in Norwegian; this README
+can Vipps 966 40 540 (`VIPPS` in `lib/config.ts`) — the number is on `/om` (the front page `/` is
+the map itself), and nowhere else asks. The site is in Norwegian; this README
 and the rest of `docs/` are in English for whoever maintains it.
 
 ## Stack
@@ -70,7 +70,7 @@ deploy.
 
 The tests are pointed at one specific class of bug: **the pure functions that fail quietly.**
 `routeProfile()` decides where a line goes, `lib/tour-marks.ts` reads back what the browser
-stored, and `lib/support-prompt.ts` decides when to ask for support — and each of them returns a
+stored, and `coveredByKartverket()` decides which map tiles to skip — and each of them returns a
 plausible wrong answer rather than throwing. Everything that talks to Supabase is left alone on
 purpose: that code complains on its own when it breaks, and testing it would mean writing mocks
 that assert our own understanding of someone else's API.
@@ -91,7 +91,7 @@ To run against real services, copy `.env.example` to `.env.local` and fill in th
 ```
 app/
   globals.css            The "Industry" design system — source of truth for every token
-  layout.tsx             Fonts, <SiteChrome>, <Feedback>, <SupportPrompt>, metadata
+  layout.tsx             Fonts, <SiteChrome>, <Feedback>, metadata
   kart/                  / and /kart — full-screen Leaflet map, list panel, detail panel
   om/                    /om — about Toppkart, support with Vipps
   tur/[slug]/            /tur/[slug] — tour guide, open in full
@@ -106,7 +106,6 @@ components/
   CapsText.tsx           Pulls back Barlow Condensed's over-wide uppercase Ø
   SiteChrome.tsx         <SiteNav>, <SiteFooter>
   Feedback.tsx           The floating «Gi tilbakemelding» dialog
-  SupportPrompt.tsx      The one-time «Toppkart er gratis — Vipps» prompt
   VippsNumber.tsx        The Vipps number with a copy button
   marks/                 «Favoritt» / «Har gått» buttons, the localStorage hook, «Mine turer»
   guide/                 Tour-page parts, incl. <RouteMap> — the route drawn from its
@@ -121,7 +120,6 @@ lib/
   guides.ts              Editorial guide content — all 185 tours, generated
   i18n/                  Every user-visible string, no/en. content.ts holds the guides
   access.ts              getIdentity() — who is signed in (admins only)
-  support-prompt.ts      When to show the Vipps prompt: third visit, once. Unit-tested
   tour-marks.ts          Favourite/done rules and reading them back from storage
   rate-limit.ts          Fixed-window limiting, counted in Postgres
   admin.ts               Who may open /admin/*. Fails closed

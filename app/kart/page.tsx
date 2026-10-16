@@ -5,6 +5,8 @@ import { getLang } from "@/lib/i18n/server";
 import { mapDict } from "@/lib/i18n/map";
 import { localizeTours } from "@/lib/i18n/content";
 import { atWidth, photoFor } from "@/lib/peak-photos";
+import { POPULARITY } from "@/lib/popularity";
+import { byPopularity } from "@/lib/popularity-order";
 import { siteJsonLd } from "@/lib/structured-data";
 import { REGIONS, TOURS, getTour, routeMeta, routesFor } from "@/lib/tours";
 import MapView from "./MapView";
@@ -70,7 +72,11 @@ export default async function KartPage({
       <MapView
         lang={lang}
         nav={<NavLinks lang={lang} current="/" />}
-        tours={localizeTours(TOURS, lang)}
+        /* Mest leste på Wikipedia først. Lista bevarer rekkefølgen den får,
+           så sorteringen hører hjemme her; «Nær meg» sorterer på nytt etter
+           avstand i `MapView`. */
+        tours={byPopularity(localizeTours(TOURS, lang), POPULARITY)}
+        sortedByPopularity={Object.keys(POPULARITY).length > 0}
         regions={REGIONS}
         routeMeta={routeMeta()}
         initialSlug={initialSlug}

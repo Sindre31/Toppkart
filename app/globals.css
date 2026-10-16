@@ -384,10 +384,6 @@ textarea.input { min-height: 90px; resize: vertical; }
   background: var(--color-surface);
 }
 /* — support (Vipps) — */
-/* Same reason as `.feedback-dialog` for the restated background. */
-.dialog.support-dialog {
-  background: var(--color-surface);
-}
 .vipps {
   display: flex;
   flex-wrap: wrap;
