@@ -386,11 +386,11 @@ select.input { border-radius: var(--radius-pill); }
 .feedback-open:focus-visible,
 .feedback-hide:focus-visible { outline: 2px solid var(--color-accent); outline-offset: -2px; }
 
-/* Skjult: bare et lite symbol nede i venstre hjørne. Et trykk henter knappen
+/* Skjult: bare et lite symbol nede i høyre hjørne, der knappen sto. Et trykk henter knappen
    fram igjen. */
 .feedback-mini {
   position: fixed;
-  left: clamp(12px, 3vw, 24px);
+  right: clamp(12px, 3vw, 24px);
   bottom: clamp(12px, 3vw, 24px);
   z-index: 1300;
   display: grid;

@@ -12,7 +12,7 @@ import { pick } from "./index";
 export interface FeedbackDict {
   /** Floating button, and the dialog's accessible name. */
   open: string;
-  /** Krysset som skjuler knappen, og symbolet i venstre hjørne som henter
+  /** Krysset som skjuler knappen, og symbolet i høyre hjørne som henter
    *  den fram igjen. */
   hide: string;
   show: string;

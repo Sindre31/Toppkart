@@ -16,8 +16,8 @@
  *  client component, and importing the tour catalogue would send every route's
  *  geometry to the browser on a page that draws no map.
  *
- *  Section kickers keep their numbering (`02 · …`) — the numbers are part of the
- *  blueprint conceit, not of the sentence.
+ *  The section titles used to carry a number (`02 · …`), part of the blueprint
+ *  look v3 replaced. They are plain headings now.
  */
 
 import type { Lang, Translated } from "./index";
@@ -101,7 +101,7 @@ const LANDING: Translated<LandingDict> = {
     plateFoot:
       "Hver topp er stedfestet mot Kartverkets terrengmodell. Sjekk alltid skredvarselet på varsom.no før du går.",
 
-    guidesKicker: "02 · Hva hver turguide holder",
+    guidesKicker: "Hva hver turguide holder",
     guideCells: [
       {
         title: "Rute og nedkjøring",
@@ -117,13 +117,13 @@ const LANDING: Translated<LandingDict> = {
       },
     ],
 
-    safetyKicker: "03 · Trygghet først",
+    safetyKicker: "Trygghet først",
     safetyHeading: "Skrevet for å komme hjem",
     safetyBody:
       "I snitt dør fem mennesker i snøskred i Norge hvert år — de fleste på topptur. Hver guide i Toppkart er derfor bygget rundt terrenget, ikke rundt bildene: bratthet, utløpssoner og trygge alternativer står først, pudderpratet sist.",
     safetyFigureLink: "Se Kirketaket i kartet",
 
-    supportKicker: "04 · Støtt Toppkart",
+    supportKicker: "Støtt Toppkart",
     supportHeading: "Har du glede av Toppkart?",
     supportBody:
       "Nye turer legges til hver sesong, og guidene revideres når terrenget eller normalruta endrer seg. Vil du støtte arbeidet, kan du sende en Vipps.",
@@ -148,7 +148,7 @@ const LANDING: Translated<LandingDict> = {
     plateFoot:
       "Every summit is placed against Kartverket's terrain model. Always check the avalanche forecast at varsom.no before you head out.",
 
-    guidesKicker: "02 · What every guide holds",
+    guidesKicker: "What every guide holds",
     guideCells: [
       {
         title: "Route and descent",
@@ -164,13 +164,13 @@ const LANDING: Translated<LandingDict> = {
       },
     ],
 
-    safetyKicker: "03 · Safety first",
+    safetyKicker: "Safety first",
     safetyHeading: "Written to get you home",
     safetyBody:
       "On average, five people die in avalanches in Norway every year — most of them ski touring. Every guide in Toppkart is therefore built around the terrain, not around the photos: steepness, runout zones and safer alternatives come first, the powder talk last.",
     safetyFigureLink: "See Kirketaket on the map",
 
-    supportKicker: "04 · Support Toppkart",
+    supportKicker: "Support Toppkart",
     supportHeading: "Enjoying Toppkart?",
     supportBody:
       "New tours are added every season, and guides are revised whenever the terrain or the normal route changes. If you want to support the work, you can send a Vipps.",
