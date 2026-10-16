@@ -15,8 +15,10 @@ and the rest of `docs/` are in English for whoever maintains it.
   Readers never sign in.
 - **Leaflet + Kartverket** — the full-screen map on `/kart`, over Kartverket's topographic WMTS
   (`cache.kartverket.no`, the `webmercator` grid, zoom 18 at the top). Open data under CC BY 4.0,
-  so «© Kartverket» stays visible in the corner. Coverage is Norway and only Norway, which is
-  right for the product and means the map is blank if you pan out of the country.
+  so «© Kartverket» stays visible in the corner. Coverage is Norway and only Norway — the tiles
+  are transparent outside it — so OpenStreetMap's standard tiles sit underneath and fill in the
+  neighbouring countries and the sea. OSM requires its credit in the corner too, and forbids bulk
+  prefetching, so neither offline saving nor `prefetchTiles` touches those tiles.
 - **Varsom and MET Norway** — today's avalanche danger (`lib/avalanche.ts`) and a three-day
   forecast for the summit (`lib/weather.ts`, Locationforecast 2.0). The danger level is in the tour
   panel on `/kart`; the forecast (`components/weather/WeatherPanel.tsx`) is there and on the guide.

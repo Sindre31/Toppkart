@@ -66,14 +66,24 @@ const POSITION_ZOOM = 11;
  *  altså y foran x, motsatt av OSM. Bytt dem om, og kartet blir speilvendt om
  *  diagonalen uten å feile på en eneste forespørsel.
  *
- *  Dekningen er Norge og bare Norge. Det er riktig for produktet — alle 90
- *  turene ligger innenfor — men panorerer man ut av landet, blir det tomt der
- *  OSM ville tegnet Sverige. Startutsnittet og `MAX_ZOOM` under holder oss
- *  innenfor det tjenesten faktisk har.
+ *  Dekningen er Norge og bare Norge: utenfor grensa er flisene helt
+ *  gjennomsiktige. Der tegner `BASE_URL` under resten av verden, så nabolanda
+ *  og havet ikke står tomme. Kartverket ligger øverst, så Norge ser ut akkurat
+ *  som før.
  *
  *  Bruksvilkår: åpne data under Kartverkets lisens (CC BY 4.0), som krever at
  *  opphavet står synlig. Det gjør det i `attribution` på `TileLayer` under. */
 const TILE_URL = "https://cache.kartverket.no/v1/wmts/1.0.0/topo/default/webmercator/{z}/{y}/{x}.png";
+/** Bakgrunnskartet for alt utenfor Norge: OpenStreetMaps standardkart. Det synes
+ *  bare der Kartverkets fliser er gjennomsiktige, altså utenfor landet.
+ *
+ *  Valgt framfor OpenTopoMap, som ble for mettet i landsvisningen, og CARTO, som
+ *  krever API-nøkkel. OSMs bruksvilkår krever synlig kreditering (står i
+ *  `attribution`) og forbyr masseforhåndshenting — derfor lagrer verken
+ *  offline-lagringa eller `prefetchTiles` disse flisene; de er bare Kartverkets. */
+const BASE_URL = "https://tile.openstreetmap.org/{z}/{x}/{y}.png";
+const BASE_ATTRIBUTION = '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>';
+const BASE_MAX_NATIVE_ZOOM = 19;
 /** Så langt cachen er tegnet. Nivå 19 svarer 400, ikke en tom flis, så dette er
  *  en grense å holde seg innenfor og ikke en anbefaling. Leaflets egen standard
  *  er tilfeldigvis den samme; den står her fordi den er Kartverkets. */
@@ -451,7 +461,19 @@ export default function MapCanvas({
 
   return (
     <MapContainer bounds={NORWAY} zoomControl={false} style={{ height: "100%", width: "100%" }}>
+      {/* Under Kartverket, og bare synlig utenfor Norge. Samme innstillinger for
+          zoomflyturen som laget over, så de to ikke laster i utakt. */}
       <TileLayer
+        url={BASE_URL}
+        attribution={BASE_ATTRIBUTION}
+        maxZoom={MAX_ZOOM}
+        maxNativeZoom={BASE_MAX_NATIVE_ZOOM}
+        zIndex={0}
+        updateWhenZooming={false}
+        keepBuffer={3}
+      />
+      <TileLayer
+        zIndex={1}
         url={TILE_URL}
         attribution="© Kartverket"
         maxZoom={MAX_ZOOM}
