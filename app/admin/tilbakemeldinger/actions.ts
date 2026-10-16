@@ -8,7 +8,7 @@ import { getSupabaseAdminClient } from "@/lib/supabase/server";
 /** Mark one message handled, or put it back.
  *
  *  A Server Action driven by a plain `<form>`, so the buttons work without any
- *  client JavaScript — the same shape as the sign-out form on Min side.
+ *  client JavaScript — the same shape as a plain sign-out form.
  *
  *  `assertAdminAction()` runs here rather than relying on the page's gate: an
  *  action is its own endpoint, and a POST to it never passes through the page

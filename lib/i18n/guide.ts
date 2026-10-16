@@ -1,6 +1,6 @@
 /** NO/EN dictionary for the tour guide page (`/tur/[slug]`).
  *
- *  UI only: section headings, stat labels, the locked block, the buttons and the
+ *  UI only: section headings, stat labels, the buttons and the
  *  accessible labels. The editorial prose — intro, ascent, descent, avalanche
  *  notes, elevation-profile labels — comes from `./content`, and the structured
  *  tour tokens (aspect, season, duration, grade) from `./format`.
@@ -17,8 +17,6 @@ export interface GuideDict {
   backToMap: string;
   seasonPrefix: string;
   downloadGpx: string;
-  downloadGpxLocked: string;
-  requiresSubscription: string;
   openInMap: string;
   /* — «Lagre offline» (`components/guide/OfflineSave.tsx`) — */
   saveOffline: string;
@@ -54,10 +52,6 @@ export interface GuideDict {
   /* — guide not written yet — */
   guidePendingTitle: string;
   guidePendingBody: string;
-  /* — locked state — */
-  lockedTitle: string;
-  lockedBody: (trialDays: number, price: string) => string;
-  lockedCta: string;
   /* — naboturer i samme region — */
   moreInRegion: (region: string) => string;
   allTours: string;
@@ -73,8 +67,6 @@ const GUIDE: Translated<GuideDict> = {
     backToMap: "← Tilbake til kartet",
     seasonPrefix: "Sesong",
     downloadGpx: "Last ned GPX",
-    downloadGpxLocked: "Last ned GPX — krever abonnement",
-    requiresSubscription: "Krever abonnement",
     openInMap: "Åpne i kartet",
     saveOffline: "Lagre offline",
     savingOffline: (p) => `Lagrer … ${p} %`,
@@ -86,7 +78,7 @@ const GUIDE: Translated<GuideDict> = {
       "Åpne toppkart.no som vanlig i fjellet — uten dekning får du den lagrede guiden og kartet, med posisjonen din.",
     offlineErrorNetwork: "Lagringen stoppet før den var ferdig. Sjekk nettet og prøv igjen.",
     offlineErrorQuota: "Det er ikke plass på enheten. Fjern andre lagrede turer og prøv igjen.",
-    offlineErrorLocked: "Guiden kom tilbake låst. Logg inn på nytt og prøv igjen.",
+    offlineErrorLocked: "Guiden kom ikke tilbake som den skulle. Prøv igjen.",
     statSummit: "Topp",
     statVertical: "Høydemeter",
     statTime: "Normaltid",
@@ -107,10 +99,6 @@ const GUIDE: Translated<GuideDict> = {
       `Høydeprofil fra ${start} til ${end} over ${distance}`,
     guidePendingTitle: "Turguide",
     guidePendingBody: "Turguiden for denne toppen er under arbeid.",
-    lockedTitle: "Resten av guiden er låst",
-    lockedBody: (trialDays, price) =>
-      `Rutebeskrivelse, nedkjøring og skredterreng åpnes med abonnement — ${trialDays} dager gratis, deretter ${price}/mnd.`,
-    lockedCta: "Start gratis prøveperiode",
     moreInRegion: (region) => `Flere turer i ${region}`,
     allTours: "Se alle turene",
     gpxNotFound: "Fant ikke turen.",
@@ -123,7 +111,6 @@ const GUIDE: Translated<GuideDict> = {
     backToMap: "← Back to the map",
     seasonPrefix: "Season",
     downloadGpx: "Download GPX",
-    downloadGpxLocked: "Download GPX — requires a subscription",
     saveOffline: "Save offline",
     savingOffline: (p) => `Saving … ${p}%`,
     savedOffline: (size) => `Saved offline · ${size}`,
@@ -134,8 +121,7 @@ const GUIDE: Translated<GuideDict> = {
       "Open toppkart.no as usual in the mountains — without coverage you get the saved guide and map, with your position.",
     offlineErrorNetwork: "Saving stopped before it finished. Check your connection and try again.",
     offlineErrorQuota: "There is no room left on this device. Remove other saved tours and try again.",
-    offlineErrorLocked: "The guide came back locked. Sign in again and try again.",
-    requiresSubscription: "Requires a subscription",
+    offlineErrorLocked: "The guide did not come back as expected. Try again.",
     openInMap: "Open on the map",
     statSummit: "Summit",
     statVertical: "Vertical gain",
@@ -157,10 +143,6 @@ const GUIDE: Translated<GuideDict> = {
       `Elevation profile from ${start} to ${end} over ${distance}`,
     guidePendingTitle: "Tour guide",
     guidePendingBody: "The guide for this peak is still being written.",
-    lockedTitle: "The rest of this guide is locked",
-    lockedBody: (trialDays, price) =>
-      `Route description, descent and avalanche terrain open with a subscription — ${trialDays} days free, then ${price}/month.`,
-    lockedCta: "Start free trial",
     moreInRegion: (region) => `More tours in ${region}`,
     allTours: "See all the tours",
     gpxNotFound: "Tour not found.",

@@ -1,8 +1,8 @@
 /** Favoritter og turer leseren har gått — den rene delen.
  *
- *  Ingen importer fra server eller nettleser: dette leses av API-ruta, av
- *  kartet og guiden i nettleseren, og av Min side på serveren, og de skal være
- *  enige om hva en markering er.
+ *  Markeringene ligger i leserens egen nettleser (`localStorage`, se
+ *  `components/marks/useTourMarks.ts`) — Toppkart har ingen kontoer. Ingen
+ *  importer fra nettleseren her, så dette kan testes for seg.
  *
  *  Én markering per tur og leser, med to felt: favoritt (av/på) og datoen turen
  *  ble gått (eller ingenting). En markering der begge er tomme, finnes ikke — den
@@ -42,40 +42,34 @@ export function applyMark(
 const DATE = /^\d{4}-\d{2}-\d{2}$/;
 const SLUG = /^[a-z0-9-]{1,80}$/;
 
-/** Leser kroppen på `POST /api/turmerker`. Null for alt som ikke er en
- *  gyldig forespørsel — et felt av feil type er ikke «ingen endring». */
-export function parseMarkRequest(body: unknown): ({ slug: string } & MarkPatch) | null {
-  if (!body || typeof body !== "object") return null;
-  const { slug, favorite, done } = body as Record<string, unknown>;
-  if (typeof slug !== "string" || !SLUG.test(slug)) return null;
-  if (favorite !== undefined && typeof favorite !== "boolean") return null;
-  if (done !== undefined && typeof done !== "boolean") return null;
-  if (favorite === undefined && done === undefined) return null;
-  return { slug, ...(favorite !== undefined && { favorite }), ...(done !== undefined && { done }) };
-}
-
-/* — demomodus: markeringene i én informasjonskapsel — */
-
-/** `slogen|f|2026-10-05;kirketaket|-|` — kompakt, fordi en informasjonskapsel
- *  har fire kilobyte å gjøre det på. Demomodus er ikke en sikkerhetsgrense og
- *  ikke et lager; dette er nok til at flyten kan prøves uten Supabase. */
-export function encodeDemoMarks(marks: readonly TourMark[]): string {
-  return marks.map((m) => `${m.slug}|${m.favorite ? "f" : "-"}|${m.doneOn ?? ""}`).join(";");
-}
-
-export function decodeDemoMarks(value: string | undefined): TourMark[] {
+/** Leser lista slik den ligger lagret. Alt som ikke er en gyldig markering,
+ *  droppes framfor å gjettes på — og en lagring som ikke kan leses i det hele
+ *  tatt, er en tom liste, ikke en feil. */
+export function parseStoredMarks(value: string | null): TourMark[] {
   if (!value) return [];
+  let raw: unknown;
+  try {
+    raw = JSON.parse(value);
+  } catch {
+    return [];
+  }
+  if (!Array.isArray(raw)) return [];
   const out: TourMark[] = [];
-  for (const part of value.split(";")) {
-    const [slug, fav, date] = part.split("|");
-    if (!slug || !SLUG.test(slug)) continue;
-    const mark = { slug, favorite: fav === "f", doneOn: date && DATE.test(date) ? date : null };
+  for (const item of raw) {
+    if (!item || typeof item !== "object") continue;
+    const { slug, favorite, doneOn } = item as Record<string, unknown>;
+    if (typeof slug !== "string" || !SLUG.test(slug)) continue;
+    const mark = {
+      slug,
+      favorite: favorite === true,
+      doneOn: typeof doneOn === "string" && DATE.test(doneOn) ? doneOn : null,
+    };
     if (mark.favorite || mark.doneOn) out.push(mark);
   }
   return out;
 }
 
-/** Turer gått og høydemeter samlet, for Min side. Turer som ikke lenger finnes
+/** Turer gått og høydemeter samlet, for «Mine turer». Turer som ikke lenger finnes
  *  i datasettet, telles ikke — de har ingen høydemeter å legge til. */
 export function doneTotals(
   marks: readonly TourMark[],

@@ -1,16 +1,16 @@
 # Deploying Toppkart
 
 A checklist for taking the app from a clone to a working production deployment on Vercel with
-real Supabase auth and real Stripe billing.
+real Supabase behind the feedback table and the admin sign-in.
 
-You do not have to do all of it at once. The app runs in demo mode with no configuration, and
-each integration is switched on independently by its own environment variables, so it is
-reasonable to get Supabase working first and add Stripe afterwards. Read `.env.example` alongside
-this document — it lists every variable and where to find its value.
+Toppkart is free: every guide is open to everyone, readers have no accounts, and there is no
+billing. Voluntary support goes to a Vipps number (`VIPPS` in `lib/config.ts`). The app runs in
+demo mode with no configuration. Read `.env.example` alongside this document — it lists every
+variable and where to find its value.
 
-Do the Supabase and Stripe sections before the first real deploy. Vercel needs the environment
-variables at build time, and both services need the deployment's URL, so expect one pass through
-Vercel to get a domain, then a return trip to fill in redirect URLs and webhook endpoints.
+Do the Supabase section before the first real deploy. Vercel needs the environment variables at
+build time, and Supabase needs the deployment's URL, so expect one pass through Vercel to get a
+domain, then a return trip to fill in redirect URLs.
 
 ---
 
@@ -20,8 +20,8 @@ Vercel to get a domain, then a return trip to fill in redirect URLs and webhook 
 2. In Vercel, **Add New → Project**, import the repository. Vercel detects Next.js; leave the
    build command (`next build`) and output settings at their defaults.
 3. Add the environment variables from `.env.example` under **Settings → Environment Variables**.
-   Add them to Production and Preview separately — Preview deployments should point at Stripe
-   test mode and, ideally, a separate Supabase project.
+   Add them to Production and Preview separately — Preview deployments should ideally point at a
+   separate Supabase project.
 4. Deploy. Note the production URL.
 5. Set `NEXT_PUBLIC_SITE_URL` to that URL (`https://toppkart.no`, no trailing slash) and redeploy.
 6. If you are using a custom domain, add it under **Settings → Domains** first, then use the
@@ -36,8 +36,8 @@ Vercel to get a domain, then a return trip to fill in redirect URLs and webhook 
 > falls back to `https://$VERCEL_URL`, which is the **per-deployment** hostname — something like
 > `toppkart-qytwddyuz-yourteam.vercel.app`. A new one is minted on every single deploy.
 >
-> **The four redirects that come back to a signed-in browser no longer read it.** Google sign-in,
-> and Stripe's `success_url` / `return_url` are built from `requestOrigin()` in
+> **The redirect that comes back to a signed-in browser no longer reads it.** Google sign-in is
+> built from `requestOrigin()` in
 > `lib/origin.ts`, which reads the origin off the incoming request. You come back to whatever
 > domain you left from — apex, `www`, or a preview host that did not exist when anything was
 > configured. This used to be the single most effective way to break sign-in: a visitor on
@@ -46,9 +46,6 @@ Vercel to get a domain, then a return trip to fill in redirect URLs and webhook 
 >
 > **What still reads it**, and so still wants setting:
 >
-> - **Links inside e-mail** (`lib/email.ts` — welcome, receipts, trial-ending). These are sent
->   from the Stripe webhook, where there is no browser request to read an origin from. Unset, the
->   buttons in those mails point at a stale per-deploy hostname.
 > - **Supabase's own Site URL** field, which you paste this value into in step 4 below. That is
 >   configured in the dashboard, not read from the app.
 >
@@ -60,7 +57,7 @@ Vercel to get a domain, then a return trip to fill in redirect URLs and webhook 
 > Supabase will reject it unless the wildcard covers it.
 
 Anything prefixed `NEXT_PUBLIC_` ends up in the browser bundle. Do not put the Supabase
-service-role key or the Stripe secret key behind that prefix.
+service-role key behind that prefix.
 
 ---
 
@@ -142,169 +139,30 @@ site's URL.
 7. **Project Settings → Authentication → SMTP Settings: leave it alone.** Supabase Auth sends no
    mail in this product, so there is nothing to configure and nothing to pay for.
 
-   Do not confuse this with `RESEND_API_KEY` in the app's own environment. That key is for
-   `lib/email.ts`, which sends the welcome and receipt mail after a Stripe checkout, through
-   Resend's own API rather than Supabase SMTP. It is billing correspondence and unrelated to
-   signing in; the product runs without it, and those sends log and no-op when the key is absent.
-
 8. Copy the project URL and the anon key from **Project Settings → API** into
    `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_ANON_KEY`. Copy the service-role key into
    `SUPABASE_SERVICE_ROLE_KEY` as well: it bypasses RLS, so it is server-only and must never sit
-   behind a `NEXT_PUBLIC_` prefix — but it is **required** as soon as Stripe is live. The webhook
-   writes subscription rows for a user it is not authenticated as, which no other key can do, and
-   returns 503 without it. Billing then appears to work while no one ever gains access.
+   behind a `NEXT_PUBLIC_` prefix — but the feedback dialog and the admin page need it: readers
+   are never signed in, and `tk_feedback` has RLS on with no policies.
 
 ---
 
-## 3. Stripe
+## 3. Stripe — winding down
 
-### Which account
+Toppkart used to be sold as a subscription through Stripe. The checkout, the customer portal, the
+webhook and `/min-side` are gone, so **nothing in the app can cancel a subscription any more**,
+and Stripe keeps charging until someone does:
 
-Toppkart needs **its own Stripe account**, not a section of one that already sells something
-else. An account carries one legal entity and one tax ID, one statement descriptor, one set of
-public business information and one payout bank account — so a customer who subscribes to
-Toppkart and sees somebody else's business name on their card statement is a dispute waiting to
-happen, and the reporting never separates cleanly afterwards.
+1. In the Stripe dashboard, **Billing → Subscriptions**, cancel every active and trialing
+   subscription (immediately, or at period end if you would rather let paid periods run out).
+2. **Developers → Webhooks**: delete the endpoint for `/api/stripe/webhook`. The route no longer
+   exists, and Stripe would retry every event against a 404 and eventually e-mail you about it.
+3. Remove `STRIPE_*`, `RESEND_API_KEY` and `RESEND_FROM_EMAIL` from Vercel's environment.
 
-One login can own any number of accounts. In the Dashboard, click the account name in the
-upper-left corner and choose **New account**; the switcher in the same menu moves between them
-afterwards. A new account inherits nothing from the old one — not its pricing, not its
-verification status — so it goes through business verification on its own. If two accounts belong
-to the same legal entity, they can share a tax ID and even a payout account; they still need
-distinct public business information so customers can tell which one charged them.
-
-Every key, price ID, portal configuration and webhook secret below belongs to one account. Mixing
-them across two is the failure this section is arranged to prevent: `--account` on the setup
-script exists for exactly that reason.
-
-### With the setup script
-
-`scripts/stripe-setup.mjs` does steps 1–3 and 6–8 below in one command — product, both prices,
-the customer portal configuration and the webhook endpoint — and prints the environment variables
-they produce. It is idempotent, so running it twice is safe, and it never deletes anything.
-
-```bash
-STRIPE_SECRET_KEY=sk_test_… npm run stripe:setup                 # dry run, changes nothing
-STRIPE_SECRET_KEY=sk_test_… npm run stripe:setup -- --apply      # creates what is missing
-```
-
-It reads the key from `.env.local` if it is not in the environment, and prints the account id,
-the display name and whether the key is live before it writes anything. Pass
-`--account acct_…` to make it abort unless the key belongs to that account, and `--site
-https://toppkart.no` to set the origin the webhook URL is built from (default:
-`NEXT_PUBLIC_SITE_URL`, then `https://toppkart.no`).
-
-**Run it against an account you built by hand and it adopts what is there.** A dashboard-made
-product carries no metadata and its prices no lookup keys, so the script falls back to
-recognising the product by name, a price by its amount and interval, and the portal by being the
-account's default — then labels them. Without that fallback it would report a fully working
-account as empty and build a second product beside the one your live subscriptions point at.
-
-It sorts what it finds into three groups, and the dry run counts them separately: what is
-missing, what `--apply` corrects on its own, and what needs you. The last group is the one marked
-⚠ — a price whose amount is wrong (prices are immutable; archive it and re-run), or a price
-sitting on someone else's product.
-
-The legal links are in none of the three groups: the script neither checks nor writes them. See
-step 6 for why — the empty field on a portal configuration is inheritance, not a gap, and nothing
-in the API lets the script see what it would be inheriting.
-
-Two things it deliberately leaves alone. It does not touch how plan changes work in the portal —
-whether switching is offered at all, and whether downgrades wait for the period to end, are
-product decisions — with one exception: it corrects the trial behaviour described in step 6,
-because that one charges a customer during a period checkout promised was free. And it cannot
-show you the webhook signing secret for an endpoint that already existed, because Stripe returns
-that once, at creation.
-
-### By hand
-
-1. Create the product in **Product catalogue → Add product**. Name it "Toppkart".
-2. Add two recurring prices on that product:
-   - **29 NOK**, recurring, billing period **monthly**.
-   - **290 NOK**, recurring, billing period **yearly** (two months free relative to monthly).
-3. Copy each price ID (`price_…`) into `STRIPE_PRICE_MONTHLY` and `STRIPE_PRICE_YEARLY`.
-   The price ID is on the price row, not the product — do not use the `prod_…` ID.
-4. Copy the secret key from **Developers → API keys** into `STRIPE_SECRET_KEY`. Use `sk_test_…`
-   everywhere except production.
-5. The trial is set on the Checkout Session in code (`trial_period_days: 14`) with a card
-   required at signup, so you do not need to configure a trial on the price itself. Adding one
-   there as well would apply it twice.
-6. **Settings → Billing → Customer portal**: activate the portal and allow customers to update
-   their payment method and to cancel at period end. `/min-side` sends people there for both.
-
-   **The portal has to be activated before `/min-side` can open it.** Until it is, every click on
-   «Endre betalingsmetode» comes back as «Vi fikk ikke åpnet betalingsportalen» — the reader sees
-   a transient-looking error and the real cause is only in the server log, which
-   `app/api/portal/route.ts` writes as `[portal] kunne ikke opprette portaløkt`.
-
-   The setup script writes these settings as a portal *configuration* and prints its id as
-   `STRIPE_PORTAL_CONFIGURATION`. Set that variable and every portal session is created against
-   that configuration; leave it unset and sessions use whatever is default in the dashboard. Both
-   work — the variable is what makes the settings reviewable in the repository rather than only
-   in a settings page.
-
-   Leave **Redirect link** empty: `app/api/portal/route.ts` sets `return_url` on every session
-   from `requestOrigin()`, which overrides anything configured here, so a value in that field is
-   dead config that can only go stale.
-
-   **The two legal links are not set on this page**, even though it displays them. The portal's
-   **Legal policies** panel shows `https://toppkart.no/vilkar` and `https://toppkart.no/personvern`
-   and then sends you to **Public business information** to change them, because that is where
-   they live — on the account, not on the portal configuration. Checkout, invoices and receipts
-   read the same two values, so setting them once covers all of it.
-
-   This is worth knowing before you go looking for them in the API. A portal configuration *has*
-   a `business_profile.privacy_policy_url`, but it is an **override**, and it is `null` on a
-   correctly configured account — the empty field means «inherit», not «missing». The Account
-   object exposes no legal-policy URLs at all, so there is nothing to read them back from either.
-   Reading that `null` as a gap is a mistake that looks like diligence.
-
-   If you also let customers switch between the monthly and yearly plan, turn **off** «End trials
-   on subscription updates». With it on, a customer who upgrades on day 3 of the trial has the
-   trial ended immediately and is charged there and then — the opposite of what checkout promised
-   them. The webhook handles the switch either way: `planFor()` reads the new price id and updates
-   the `plan` column.
-7. **Developers → Webhooks → Add endpoint**. URL:
-
-   ```
-   https://toppkart.no/api/stripe/webhook
-   ```
-
-   Select these events, which are the ones the handler acts on:
-
-   - `checkout.session.completed` — the trial has started; create or attach the subscription row.
-   - `customer.subscription.updated` — status changes (`trialing` → `active`, `past_due`,
-     scheduled cancellation), period end, card details.
-   - `customer.subscription.created` — the subscription exists in Stripe; the row is upserted.
-   - `customer.subscription.deleted` — the subscription has ended; access closes.
-   - `invoice.paid` — a charge succeeded; the receipt appears on `/min-side`.
-   - `invoice.payment_failed` — the charge bounced; the status moves to `past_due`.
-
-8. Copy the endpoint's **Signing secret** (`whsec_…`) into `STRIPE_WEBHOOK_SECRET`. The handler
-   verifies every request against it and rejects anything that does not match, so a missing or
-   wrong secret makes all webhooks fail with a 400 and leaves subscription status stale.
-9. Redeploy on Vercel so the new environment variables take effect, then send a test event from
-   the webhook page and confirm it returns 200.
-
-### Local webhook testing
-
-Stripe cannot reach `localhost`, so forward events with the Stripe CLI:
-
-```bash
-stripe listen --forward-to localhost:3000/api/stripe/webhook
-```
-
-It prints a signing secret (`whsec_…`) when it starts. Put that value — not the dashboard one —
-in your local `.env.local` as `STRIPE_WEBHOOK_SECRET`, and restart `npm run dev`. It is a
-different secret from the deployed endpoint's and rotates each time you start `stripe listen`.
-
-To drive a flow without clicking through Checkout:
-
-```bash
-stripe trigger checkout.session.completed
-```
-
-Card `4242 4242 4242 4242`, any future expiry and any CVC works in test mode.
+Keep the Stripe account itself: invoices already issued are accounting records the Bookkeeping
+Act wants kept for five years, and `/personvern` says they sit at Stripe. The `tk_subscriptions`
+and `tk_invoices` tables in Supabase are no longer read or written and can be dropped once you no
+longer need them.
 
 ---
 
@@ -326,42 +184,14 @@ indistinguishable. Reading the table needs `SUPABASE_SERVICE_ROLE_KEY` as well �
 has row-level security on with no policies at all, so no other role can see it whoever is signed
 in.
 
-### Deleting accounts needs the service-role key
-
-The «Slett kontoen» card on Min side calls `DELETE /api/konto`, which cancels the Stripe
-subscription and then deletes the row in `auth.users`. Deleting an auth user is an admin
-operation, so it needs `SUPABASE_SERVICE_ROLE_KEY`; without it the endpoint answers 503 and
-nothing is deleted. If you run without that key, take the deletion promise out of `/personvern`
-too — a policy that describes a button that answers 503 is worse than one that tells people to
-write in.
-
-### The same list gets the alerts
-
-`ADMIN_EMAILS` is also where `lib/alerts.ts` sends operational mail, and that is the more
-important of its two jobs. There is one failure in this system that is both expensive and
-invisible: the Stripe webhook completes a checkout it cannot match to an account. Stripe has the
-card and is running the trial; the app has no subscription row and shows the reader the paywall.
-It answers 200 deliberately — retrying cannot change the outcome — so without an alert the only
-trace is a line in the Vercel log.
-
-Set `ADMIN_EMAILS` **and** `RESEND_API_KEY` together, then. With the list unset, or Resend
-unconfigured, those alerts are written to the log and nowhere else. Repeats of the same alert are
-throttled to one per ten minutes per instance, so a failing dependency does not fill the inbox.
-
----
-
 ## 3b. The support mailbox
 
-`support@toppkart.no` is the one address a human reads. The app never sends *from* it — mail goes
-out from the no-reply sender in `RESEND_FROM_EMAIL` — so it only ever has to **receive**. That
-makes it cheap: you need MX records and somewhere for the mail to land, and nothing else.
+`support@toppkart.no` is the one address a human reads. The app sends no mail, so it only ever
+has to **receive**. That makes it cheap: you need MX records and somewhere for the mail to land,
+and nothing else.
 
-It is referenced in three places, all from `SITE.supportEmail` in `lib/config.ts`:
-
-- `Reply-To` on every message `lib/email.ts` sends, so a reply to a receipt reaches a person
-  rather than a no-reply box nobody opens.
-- The footer of those messages, in both languages.
-- The «Kontakt» / «Contact» link in the site footer, on every page.
+It is referenced from `SITE.supportEmail` in `lib/config.ts`: the «Kontakt» / «Contact» link in
+the site footer, on every page, and the contact paragraphs on `/vilkar` and `/personvern`.
 
 It is a constant, not an environment variable, because it is read in the browser bundle — a
 variable without a `NEXT_PUBLIC_` prefix would silently be `undefined` there. Change the address
@@ -380,10 +210,6 @@ mailbox is not needed unless you want to reply from the address too.
 If you later want to *reply* from the address rather than just read it, that is a mailbox
 product (Google Workspace, Fastmail, Migadu and so on) and a separate cost. Nothing in the app
 requires it.
-
-Note the DNS overlap with step 7: verifying the domain in Resend for outbound SMTP touches the
-same zone. Do both in one sitting — SPF and DKIM for sending, MX for receiving. They do not
-conflict; a domain can send through Resend and receive through someone else.
 
 ---
 
@@ -429,11 +255,9 @@ Once verified:
 3. Expect **Pages** and **Performance** to stay empty for a few days to a couple of weeks. That is
    normal; nothing is wrong until a URL shows up under a specific exclusion reason.
 
-Two exclusions are expected rather than faults. Guides are half-gated — intro, map, key figures
-and elevation profile are open, the route description and avalanche notes are not — so a guide
-page is genuinely indexable, but thin compared to what a subscriber sees. And `/logg-inn`,
-`/betaling`, `/min-side` and `/admin/*` will report "Excluded by 'noindex' tag", which is the
-intended outcome, not a problem to fix.
+One exclusion is expected rather than a fault: `/logg-inn`, `/mine-turer` and `/admin/*` will
+report "Excluded by 'noindex' tag", which is the intended outcome, not a problem to fix. Guides
+are open in full, so every guide page carries its whole text.
 
 ---
 
@@ -441,32 +265,25 @@ intended outcome, not a problem to fix.
 
 Walk the real flow on the deployed site, not just the local one:
 
-- [ ] `/` loads, and every «Prøv gratis» goes to `/betaling`.
+- [ ] `/` loads, shows the Vipps number under «04 · Støtt Toppkart», and nothing offers a trial.
 - [ ] `/kart` renders the map with all tours; filters and the detail panel work.
-- [ ] Signed out, the locked block on a tour detail shows and the guide text is genuinely absent
-      from the page source — not merely hidden with CSS.
-- [ ] `/logg-inn`, both ways in: "Fortsett med Google" signs you in on the deployed domain, and
-      cancelling at Google's consent screen returns you to `/logg-inn` with the Google-specific
-      error rather than a blank page.
-- [ ] `/betaling` signed out shows the Google button and **no** payment form; the trial cannot be
-      started without a session. Signing in from there returns you to the same plan.
+- [ ] A guide, e.g. `/tur/kirketaket`, shows ascent, descent and avalanche terrain, and «Last ned
+      GPX» downloads the file — all without signing in.
+- [ ] «Favoritt» and «Har gått» on a guide show up on `/mine-turer`.
+- [ ] Opening the site in a fresh tab for the third time shows the «Toppkart er gratis» prompt
+      once; the fourth time it stays away.
+- [ ] `/betaling` and `/min-side` redirect to `/` and `/mine-turer`.
+- [ ] `/logg-inn` (linked from nowhere): "Fortsett med Google" signs an `ADMIN_EMAILS` address in
+      on the deployed domain and lands on `/admin/tilbakemeldinger`.
 - [ ] `support@toppkart.no` receives a message sent from an outside address.
 - [ ] `/vilkar` and `/personvern` load and are linked from the footer of every page.
 
       Both pages describe Toppkart as a privately run project with no company behind it, and
       route all contact to `SITE.supportEmail`. That is accurate while this is a side project.
       Register an entity, or grow into having to, and two things change together: the operator
-      and controller paragraphs in `lib/i18n/legal.ts` need a name and address, and the price
-      paragraph needs to say whether VAT is included. They are marked in that file.
-- [ ] `/betaling` creates a Stripe Checkout session, the card is collected, and today's total is
-      0 kr.
-- [ ] The webhook fires and the subscription row in Supabase reaches status `trialing`.
-- [ ] Gated content on `/tur/kirketaket` unlocks for that account.
-- [ ] `/min-side` shows the plan, the trial end date and the card; "Endre betalingsmetode" opens
-      the Customer Portal; cancelling sets `cancel_at_period_end` and keeps access until the
-      period ends.
-- [ ] Query the gated `tk_tours` columns with the anon key while signed out and confirm RLS returns
-      nothing. The server-side gate and RLS should both hold on their own.
+      and controller paragraphs in `lib/i18n/legal.ts` need a name and address. They are marked
+      in that file.
+- [ ] Every Stripe subscription is cancelled and the webhook endpoint is deleted (section 3).
 - [ ] `https://toppkart.no/robots.txt` allows crawling and names the sitemap;
       `https://toppkart.no/sitemap.xml` lists 99 URLs on the production domain — not on a
       `*.vercel.app` host. The same two files on a preview deploy say `Disallow: /`.
@@ -510,20 +327,6 @@ is being set on a domain you are not browsing, which is exactly what "signed in,
 out" looks like. Since `requestOrigin()` landed this cannot come from a missing environment
 variable any more; check for a proxy or redirect in front of the app rewriting the `Host` header,
 and confirm the origin is in the Redirect URLs allow-list.
-
-**Checkout succeeds but the guides stay locked.**
-The webhook could not resolve the payer to an app user. Its log line is
-`[stripe-webhook] abonnementshendelse uten brukertreff`. It resolves by `client_reference_id`
-first, then by matching the Stripe customer email against `tk_profiles.email`, so this is expected
-if the purchase was made while signed out. It also happens when `SUPABASE_SERVICE_ROLE_KEY` is
-missing — but that returns 503 and shows up in Stripe's delivery attempts as a failure, so check
-there to tell the two apart.
-
-**Trial starts, nothing unlocks, and no Stripe session was ever created.**
-Supabase and Stripe are configured independently, and the app switches each on its own key. With
-Supabase live but `STRIPE_SECRET_KEY` absent, `/api/checkout` takes the demo path and writes the
-demo cookies — which `getViewer()` never reads, because it is on the Supabase path. The user gets
-the confirmation screen and no access. Configure both together, or neither.
 
 **Anonymous users can write to the database.**
 If you adapt `tk_tours_public` or add a view of your own, remember that a single-table view with

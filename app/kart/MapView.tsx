@@ -11,7 +11,7 @@
 import { Suspense, useCallback, useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import dynamic from "next/dynamic";
 import Link from "next/link";
-import { Check, Locate, LocateFixed, Lock, Star, Unlock } from "lucide-react";
+import { Check, Locate, LocateFixed, Star, Unlock } from "lucide-react";
 
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { NavMenu } from "@/components/NavMenu";
@@ -138,7 +138,6 @@ function LocateToggle({
 
 export default function MapView({
   lang,
-  hasAccess,
   nav,
   tours,
   regions,
@@ -147,7 +146,6 @@ export default function MapView({
   initialRouteId,
 }: {
   lang: Lang;
-  hasAccess: boolean;
   /** Turene, ferdig oversatt av serveren.
    *
    *  De ble tidligere hentet fra `lib/tours` og kjørt gjennom `localizeTours`
@@ -184,8 +182,8 @@ export default function MapView({
   const [aspect, setAspect] = useState<AspectSector | "">("");
   const [vertical, setVertical] = useState<VerticalBand | "">("");
   const geo = useGeolocation();
-  /** Favoritter og gåtte turer. Filteret står bare når lista er hentet for en
-   *  innlogget leser; ellers er det ingenting å filtrere på. */
+  /** Favoritter og gåtte turer, lagret på enheten. Filteret står bare når
+   *  lista er lest. */
   const marks = useTourMarks();
   const [mine, setMine] = useState<"" | "favorites" | "done" | "notDone">("");
   const markMap = marks.state.status === "ready" ? marks.state.marks : null;
@@ -509,14 +507,9 @@ export default function MapView({
                   state={marks.state}
                   failed={marks.failed}
                   onChange={marks.update}
-                  returnTo={`/kart?tur=${selected.slug}`}
                 />
               </div>
 
-              {/* Open to everyone, subscription or not. A danger level is
-                  safety information about the mountain someone is looking at
-                  right now; putting it behind the paywall would be the one
-                  thing on this page it is not defensible to withhold. */}
               {/* `key` er ikke pynt: den gjør at panelet lages på nytt når
                   leseren bytter topp, slik at forrige topps faregrad aldri
                   rekker å stå under det nye navnet. */}
@@ -600,66 +593,34 @@ export default function MapView({
 
               <p className={s.schematic}>{t.schematicNote}</p>
 
-              {hasAccess ? (
-                <div className="locked">
-                  <div className={`${s.lockmsg} ${s.lockmsgFlush}`}>
-                    <span className={`kicker ${s.lockKicker}`}>
-                      <Unlock size={14} strokeWidth={1.5} />
-                      {t.unlockedTitle}
-                    </span>
-                    <p className={s.lockText}>{t.unlockedBody}</p>
-                    <div className="chips">
-                      {t.chips.map((chip) => (
-                        <span className={`chip ${s.chipOn}`} key={chip}>
-                          <Check size={12} strokeWidth={1.5} />
-                          {chip}
-                        </span>
-                      ))}
-                    </div>
-                    {selected.hasGuide ? (
-                      <Link
-                        className="btn btn-primary"
-                        href={`/tur/${selected.slug}`}
-                        style={PRIMARY_LINK}
-                      >
-                        {t.openGuide} →
-                      </Link>
-                    ) : (
-                      <p className={s.lockText}>{t.guidePending}</p>
-                    )}
+              <div className="locked">
+                <div className={`${s.lockmsg} ${s.lockmsgFlush}`}>
+                  <span className={`kicker ${s.lockKicker}`}>
+                    <Unlock size={14} strokeWidth={1.5} />
+                    {t.unlockedTitle}
+                  </span>
+                  <p className={s.lockText}>{t.unlockedBody}</p>
+                  <div className="chips">
+                    {t.chips.map((chip) => (
+                      <span className={`chip ${s.chipOn}`} key={chip}>
+                        <Check size={12} strokeWidth={1.5} />
+                        {chip}
+                      </span>
+                    ))}
                   </div>
-                </div>
-              ) : (
-                <div className="locked">
-                  <div className="bars" aria-hidden="true">
-                    <i style={{ width: "92%" }} />
-                    <i style={{ width: "100%" }} />
-                    <i style={{ width: "86%" }} />
-                    <i style={{ width: "95%" }} />
-                    <i style={{ width: "64%" }} />
-                    <i style={{ width: 0, height: 6 }} />
-                    <i style={{ width: "97%" }} />
-                    <i style={{ width: "78%" }} />
-                  </div>
-                  <div className={s.lockmsg}>
-                    <span className={`kicker ${s.lockKicker}`}>
-                      <Lock size={14} strokeWidth={1.5} />
-                      {t.lockTitle}
-                    </span>
-                    <p className={s.lockText}>{t.lockBody}</p>
-                    <div className="chips">
-                      {t.chips.map((chip) => (
-                        <span className="chip" key={chip}>
-                          {chip}
-                        </span>
-                      ))}
-                    </div>
-                    <Link className="btn btn-primary" href="/betaling" style={PRIMARY_LINK}>
-                      {t.lockCta}
+                  {selected.hasGuide ? (
+                    <Link
+                      className="btn btn-primary"
+                      href={`/tur/${selected.slug}`}
+                      style={PRIMARY_LINK}
+                    >
+                      {t.openGuide} →
                     </Link>
-                  </div>
+                  ) : (
+                    <p className={s.lockText}>{t.guidePending}</p>
+                  )}
                 </div>
-              )}
+              </div>
             </div>
           </div>
         ) : null}

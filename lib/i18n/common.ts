@@ -10,10 +10,8 @@ export interface CommonDict {
   map: string;
   /** Turoversikta på `/turer`. */
   tours: string;
-  login: string;
-  logout: string;
-  account: string;
-  trial: string;
+  /** Favorittene og turene leseren har gått, på `/mine-turer`. */
+  myTours: string;
   /** Menyknappen som samler navigasjonslenkene på telefon. */
   menu: string;
   menuClose: string;
@@ -24,6 +22,8 @@ export interface CommonDict {
   footerSupport: string;
   footerTerms: string;
   footerPrivacy: string;
+  /** Lenke til Vipps-delen på forsida. */
+  footerSupportUs: string;
   /* — language switcher — */
   langLabel: string;
   langSwitchTo: string;
@@ -38,10 +38,7 @@ const COMMON: Translated<CommonDict> = {
     brandHome: "Til forsiden",
     map: "Kartet",
     tours: "Turene",
-    login: "Logg inn",
-    logout: "Logg ut",
-    account: "Min side",
-    trial: "Prøv gratis",
+    myTours: "Mine turer",
     menu: "Meny",
     menuClose: "Lukk menyen",
     footerMap: "Kartet",
@@ -49,6 +46,7 @@ const COMMON: Translated<CommonDict> = {
     footerSupport: "Kontakt",
     footerTerms: "Vilkår",
     footerPrivacy: "Personvern",
+    footerSupportUs: "Støtt Toppkart",
     langLabel: "Språk",
     langSwitchTo: "Bytt til engelsk",
     close: "Lukk",
@@ -59,10 +57,7 @@ const COMMON: Translated<CommonDict> = {
     brandHome: "Back to the front page",
     map: "The map",
     tours: "The tours",
-    login: "Log in",
-    logout: "Log out",
-    account: "My account",
-    trial: "Try for free",
+    myTours: "My tours",
     menu: "Menu",
     menuClose: "Close the menu",
     footerMap: "The map",
@@ -70,6 +65,7 @@ const COMMON: Translated<CommonDict> = {
     footerSupport: "Contact",
     footerTerms: "Terms",
     footerPrivacy: "Privacy",
+    footerSupportUs: "Support Toppkart",
     langLabel: "Language",
     langSwitchTo: "Switch to Norwegian",
     close: "Close",

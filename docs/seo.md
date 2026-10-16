@@ -123,7 +123,7 @@ by a function overrides route-level headers, and Next's `no-store` is returned b
 Suspense-shaped caching is exactly what PPR was invented for.
 
 **Turn on `cacheComponents: true`** (PPR in Next 16). Not a contained change: the build refuses
-`export const runtime` in `app/api/konto`, `app/api/stripe/webhook` and `app/api/tilbakemelding`,
+`export const runtime` in `app/api/tilbakemelding`,
 and `export const dynamic` in `app/admin/tilbakemeldinger`. It is a project-wide migration.
 
 ### The one that does work, and what it breaks
@@ -132,11 +132,10 @@ and `export const dynamic` in `app/admin/tilbakemeldinger`. It is a project-wide
 build table. Under it `cookies()` returns empty, which on these pages means:
 
 - `getLang()` falls back to Norwegian, so a legal page would be **Norwegian for English readers**
-- `getIdentity()` returns anonymous, so `AccountNav` would show **"Logg inn / Prøv gratis" to
-  signed-in readers**
 
-Tour pages cannot use it at all: `getViewer().hasAccess` picks the paywall, and a frozen page would
-serve the locked version to subscribers.
+(When this was written the tour pages could not use it either, because the paywall was decided
+per reader. Toppkart is free now and the guides are the same for everyone, so the language cookie
+is the only thing left keeping them dynamic.)
 
 ### What a real fix costs
 

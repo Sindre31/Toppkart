@@ -1,26 +1,18 @@
 # Toppkart
 
-Toppkart is a Norwegian ski-touring field guide sold as a subscription: quality-assured peak
-tours on one map, with route, vertical gain, steepness and avalanche terrain. The subscription
-costs 29 kr/mnd (or 290 kr/år), and every new account starts with a 14-day free trial where a
-card is required at signup and the first charge lands when the trial ends. The site is in
-Norwegian; this README and the rest of `docs/` are in English for whoever maintains it.
+Toppkart is a Norwegian ski-touring field guide: quality-assured peak tours on one map, with
+route, vertical gain, steepness and avalanche terrain. **It is free.** Every guide, GPX file and
+elevation profile is open to everyone, and readers have no accounts. Anyone who wants to chip in
+can Vipps 966 40 540 (`VIPPS` in `lib/config.ts`) — the number is on the front page, and a
+one-time prompt asks on the third time the app is opened. The site is in Norwegian; this README
+and the rest of `docs/` are in English for whoever maintains it.
 
 ## Stack
 
 - **Next.js 16, App Router**, TypeScript in strict mode. Server Components by default.
-- **Supabase** — Google sign-in, the only way in: no password, no magic link, no SMTP. Postgres for tours/profiles/subscriptions (tables are prefixed `tk_`, so the database can be shared with other projects), and
-  row-level security as the second line of defence on gated columns.
-- **Stripe** — subscription billing. Checkout in `mode: "subscription"` with
-  `trial_period_days: 14`, the Customer Portal for payment-method changes and cancellation, and
-  webhooks to sync subscription status back into Postgres. `npm run stripe:setup -- --apply`
-  provisions a fresh Stripe account with the product, both prices, the portal configuration and
-  the webhook endpoint, and prints the environment variables they produce.
-- **Resend** — transactional mail (receipts, "your trial is ending" notices) after a Stripe
-  checkout, and the operational alerts in `lib/alerts.ts` that go to `ADMIN_EMAILS` when a webhook
-  fails or completes a checkout it cannot attach to an account. Nothing to do with signing in:
-  Google sends no mail, so auth needs no SMTP at all. Optional — without the key those sends log
-  and no-op, which for the alerts means the log is the only place they appear.
+- **Supabase** — Postgres for the feedback table and its rate limit (tables are prefixed `tk_`,
+  so the database can be shared with other projects), and Google sign-in for `/admin` only.
+  Readers never sign in.
 - **Leaflet + Kartverket** — the full-screen map on `/kart`, over Kartverket's topographic WMTS
   (`cache.kartverket.no`, the `webmercator` grid, zoom 18 at the top). Open data under CC BY 4.0,
   so «© Kartverket» stays visible in the corner. Coverage is Norway and only Norway, which is
@@ -45,21 +37,14 @@ npm install
 npm run dev
 ```
 
-Open <http://localhost:3000> and the whole product is walkable: sign in with any e-mail address,
-start the trial, watch the gated guide content unlock, cancel the subscription, resume it. No
-Supabase project, no Stripe account, no keys.
+Open <http://localhost:3000> and the whole product is there: the map, every guide, favourites,
+offline saving. Readers need nothing configured, because there is nothing to sign in to.
 
-This works because `lib/config.ts` exposes `isSupabaseConfigured` / `isStripeConfigured` and every
-integration module checks them. When the keys are absent, auth and subscription state fall back to
-the cookie-backed helpers in `lib/demo-session.ts` — two `httpOnly` cookies (`tk_demo_session` and
-`tk_demo_sub`) holding the signed-in e-mail and a synthetic subscription record. Nothing crashes
-or 500s on a missing key; the code path just changes.
-
-Be clear-eyed about what this is: **demo mode gates sample content, it is not a security
-boundary.** The demo cookies are not signed and are trivially forged, and the "gated" text they
-protect ships in the repository anyway. It exists so the app can be
-reviewed and developed without credentials. Real enforcement in live mode is `getViewer()` on the
-server plus RLS in Postgres — see "Access model".
+`lib/config.ts` exposes `isSupabaseConfigured`, and the two things that need Supabase check it.
+Without keys, the admin sign-in falls back to a cookie (`tk_demo_session`, `lib/demo-session.ts`)
+so `/admin` can be walked through, and the feedback dialog says it could not send. The demo cookie
+is not signed and is trivially forged — it is not a security boundary, which is fine, because in
+demo mode there is no data behind it.
 
 ## Quick start
 
@@ -74,18 +59,16 @@ npm run build      # production build
 
 ### Checks
 
-CI runs all four of those on every push and pull request, with no Supabase or Stripe keys set —
+CI runs all four of those on every push and pull request, with no Supabase keys set —
 which is deliberate, and is what proves a missing secret can never be the thing that breaks a
 deploy.
 
 The tests are pointed at one specific class of bug: **the pure functions that fail quietly.**
-`grantsAccess()` decides who may read a guide, `lib/stripe-mapping.ts` decides what a
-subscription row says, and `routeProfile()` decides where a line goes — and each of them returns
-a plausible wrong answer rather than throwing. Everything that talks to Supabase, Stripe or
-Resend is left alone on purpose: that code complains on its own when it breaks, and testing it
-would mean writing mocks that assert our own understanding of someone else's API. `periodEndFor`
-was once wrong because Stripe moved a field, and any mock written before that would have
-reproduced the mistake faithfully.
+`routeProfile()` decides where a line goes, `lib/tour-marks.ts` reads back what the browser
+stored, and `lib/support-prompt.ts` decides when to ask for support — and each of them returns a
+plausible wrong answer rather than throwing. Everything that talks to Supabase is left alone on
+purpose: that code complains on its own when it breaks, and testing it would mean writing mocks
+that assert our own understanding of someone else's API.
 
 The tour data gets the same treatment: `lib/tours.test.ts` re-checks the emitted TypeScript for
 the invariants a regeneration could break — every line ending on the summit it belongs to, every
@@ -97,49 +80,48 @@ terrain model and against mapped ground, and which cannot run in CI: it needs Ge
 hundred megabytes of cached raster.
 
 To run against real services, copy `.env.example` to `.env.local` and fill in the values you have.
-The two modes are decided per integration, so a half-configured environment is fine: Supabase keys
-without Stripe keys gives you real auth and a demo subscription.
 
 ## Project structure
 
 ```
 app/
   globals.css            The "Industry" design system — source of truth for every token
-  layout.tsx             Fonts, <SiteChrome>, <Feedback>, metadata
+  layout.tsx             Fonts, <SiteChrome>, <Feedback>, <SupportPrompt>, metadata
   page.tsx               / — landing
   kart/                  /kart — full-screen Leaflet map, list panel, detail panel
   turer/                 /turer — every tour, grouped by region. The indexable list
-  tur/[slug]/            /tur/[slug] — tour guide, gated below the key figures
-  logg-inn/              /logg-inn — Google sign-in
-  betaling/              /betaling — start-the-trial checkout
-  min-side/              /min-side — subscription, receipts, account, delete account
+  tur/[slug]/            /tur/[slug] — tour guide, open in full
+  mine-turer/            /mine-turer — favourites and done tours, read from the browser
+  logg-inn/              /logg-inn — Google sign-in for /admin, linked from nowhere
   vilkar/, personvern/   Terms and privacy, both languages, from lib/i18n/legal.ts
   admin/                 /admin/* — behind ADMIN_EMAILS, 404 for everyone else
-  api/                   Route handlers, incl. api/stripe/webhook and api/konto (deletion)
+  api/                   Route handlers: GPX, avalanche, weather, feedback, admin sign-in
   robots.ts, sitemap.ts  Production indexes; preview deploys say Disallow: /
 components/
   Blueprint.tsx          <Blueprint> registration-cross frame, <SectionKicker>
   CapsText.tsx           Pulls back Barlow Condensed's over-wide uppercase Ø
   SiteChrome.tsx         <SiteNav>, <SiteFooter>
   Feedback.tsx           The floating «Gi tilbakemelding» dialog
+  SupportPrompt.tsx      The one-time «Toppkart er gratis — Vipps» prompt
+  VippsNumber.tsx        The Vipps number with a copy button
+  marks/                 «Favoritt» / «Har gått» buttons, the localStorage hook, «Mine turer»
   guide/                 Tour-page parts, incl. <RouteMap> — the route drawn from its
                          own points, as inline SVG over Kartverket's topographic
                          tiles. Colour on a tour page, greyscale on the landing page
 lib/
-  config.ts              PRICE, TRIAL_DAYS, SITE, GRADE_COLORS, env, is*Configured
-  types.ts               Tour, TourGuide, Viewer, Subscription, Invoice
+  config.ts              VIPPS, SITE, GRADE_COLORS, env, isSupabaseConfigured
+  types.ts               Tour, TourGuide, Identity
   tours.ts               The 185 tours, REGIONS, getTour(), routesFor(), routeById(),
                          routeFor(), routeProfile()
   routes.ts              Generated ascent routes per tour — see scripts/build-routes/
   guides.ts              Editorial guide content — all 185 tours, generated
   i18n/                  Every user-visible string, no/en. content.ts holds the guides
-  access.ts              getViewer() / grantsAccess() — server-only access gate
-  stripe.ts              Stripe client, null in demo mode
-  stripe-mapping.ts      Reading a Stripe object into a subscription row. Unit-tested
-  alerts.ts              Mails ADMIN_EMAILS when a webhook fails silently
+  access.ts              getIdentity() — who is signed in (admins only)
+  support-prompt.ts      When to show the Vipps prompt: third visit, once. Unit-tested
+  tour-marks.ts          Favourite/done rules and reading them back from storage
   rate-limit.ts          Fixed-window limiting, counted in Postgres
   admin.ts               Who may open /admin/*. Fails closed
-  demo-session.ts        Cookie-backed stand-ins for auth and subscription
+  demo-session.ts        Cookie-backed stand-in for the admin session
   supabase/              Browser and server Supabase clients
   *.test.ts              Unit tests, run by `npm test` — see "Checks" below
 supabase/
@@ -148,7 +130,7 @@ supabase/
 design-reference/        The HTML prototypes and the product/design handoff. Read-only ground
                          truth; not shipped.
 docs/
-  deploy.md              Vercel, Supabase and Stripe setup checklist
+  deploy.md              Vercel and Supabase setup, and winding down Stripe
   seo.md                 What crawlers get, and the caching fixes that were priced and declined
 ```
 
@@ -156,18 +138,17 @@ docs/
 
 | Route | What it is | Prototype |
 |---|---|---|
-| `/` | Landing page: hero, data plate, what a guide contains, subscription | `Landing.dc.html` |
-| `/kart` | The map — tour list, grade/region/aspect/vertical filters, «Nær meg» (the reader's position on the map and the list sorted by distance, never sent to the server), detail panel with avalanche danger, the summit forecast, the route picker and the locked block. `?tur=<slug>` opens a tour, `&rute=<id>` a specific route | `kart.html` |
+| `/` | Landing page: hero, data plate, what a guide contains, support with Vipps | `Landing.dc.html` |
+| `/kart` | The map — tour list, grade/region/aspect/vertical filters, «Nær meg» (the reader's position on the map and the list sorted by distance, never sent to the server), detail panel with avalanche danger, the summit forecast, the route picker and the link to the guide. `?tur=<slug>` opens a tour, `&rute=<id>` a specific route | `kart.html` |
 | `/turer` | Every tour, grouped by region. Plain links, no map — the page a crawler can read | — |
 | `/tur/[slug]` | Tour guide: stats, summit forecast, route map, elevation profile, ascent/descent, avalanche terrain | `Turguide Kirketaket.dc.html` |
-| `/logg-inn` | Sign in with Google | `Logg inn.dc.html` |
-| `/betaling` | Start the trial — sign-in first, then 0 kr today, card required | `Betaling.dc.html` |
-| `/min-side` | Subscription status, receipts, account e-mail | `Min side.dc.html` |
+| `/mine-turer` | Favourites and done tours, with the vertical metres done. Stored in the browser | — |
+| `/logg-inn` | Google sign-in for `/admin`. Linked from nowhere | `Logg inn.dc.html` |
 | `/vilkar`, `/personvern` | Terms and privacy. Copy lives in `lib/i18n/legal.ts`; bump `LEGAL_UPDATED` when you edit a paragraph | — |
 | `/admin/tilbakemeldinger` | What people wrote in the feedback dialog. `ADMIN_EMAILS` only; 404 for everyone else | — |
 
-Every «Prøv gratis» / «Start gratis prøveperiode» call to action anywhere in the app goes to
-`/betaling`.
+`/betaling` and `/min-side` no longer exist; `next.config.ts` redirects them to `/` and
+`/mine-turer` so old links land somewhere.
 
 ## Design system
 
@@ -177,50 +158,41 @@ live there as CSS variables (`--color-*`, `--font-heading`/`--font-body`, `--spa
 primitives appended below. Everything on the page is a blueprint object: right-angled corners
 (radius 0), 1px hairline borders in `--color-divider`, and four registration crosses in the
 corners, which is what `<Blueprint>` renders. Type is Barlow Condensed 600 uppercase for headings
-over Barlow 400/500/700 for body text, sections are numbered with a kicker ("01 · Abonnement")
+over Barlow 400/500/700 for body text, sections are numbered with a kicker ("04 · Støtt Toppkart")
 above a 1px rule, and there is exactly one accent — steel blue `#5980a6` with its 100–900 ramp, of
 which `.btn-primary` is the only filled object on the site. Icons are `lucide-react` at stroke
 width 1.5; there are no emoji.
 
 ## Favourites and done tours
 
-A signed-in reader can mark any tour as a favourite and as done («Favoritt», «Har gått») on its
-guide and in the map panel, filter the map by them («Mine turer»), and see both lists — with the
-tours and vertical metres done — under «03 · Mine turer» on Min side. Any account can use it;
-it is not part of the subscription.
+Any reader can mark a tour as a favourite and as done («Favoritt», «Har gått») on its guide and
+in the map panel, filter the map by them («Mine turer»), and see both lists — with the tours and
+vertical metres done — on `/mine-turer`.
 
-- **`tk_tour_marks`**, one row per reader and tour: `favorite` and `done_on`. A row with neither
-  is deleted rather than kept, and a check constraint makes one impossible to write. Written
-  through the reader's own Supabase session, never the service role, so the RLS policies in
-  `supabase/schema.sql` (read, insert, update, delete — all `auth.uid() = user_id`) are the
-  boundary. `user_id` cascades on account deletion.
-- **`app/api/turmerker`** — `GET` the reader's marks, `POST { slug, favorite?, done? }` one change
-  at a time. Only slugs from `lib/tours.ts`; `private, no-store`; `503` when the database will
-  not take it, so the button rolls back and says so rather than showing a mark that was not
-  saved.
-- **`lib/tour-marks.ts`** holds the rules both sides share and is what the tests pin: marking a
-  done tour as done again keeps its date, and clearing both fields means no row.
-- In demo mode the marks live in a third cookie, `tk_demo_marks`, cleared with the others.
-- `/personvern` says what is stored and that only the reader sees it.
+- **Stored in the browser**, in `localStorage` under `tk_marks`. There are no accounts, so there
+  is nowhere else to keep them; they do not follow the reader to another device, and the page
+  says so.
+- **`components/marks/useTourMarks.ts`** reads them through `useSyncExternalStore`, so every
+  button on the page — and other tabs — stays in step, and the server render says «loading»
+  rather than guessing. A write that fails (private window, full storage) leaves the list as it
+  was and the button says so.
+- **`lib/tour-marks.ts`** holds the rules and is what the tests pin: marking a done tour as done
+  again keeps its date, clearing both fields removes the mark, and whatever is read back from
+  storage is validated rather than trusted.
+- `/personvern` says what is stored and that it stays on the device.
 
 ## Access model
 
-The map and the key figures are open to everyone: tour name, position, summit elevation, vertical
-gain, duration, grade, aspect, season and teaser. The route description, elevation profile, GPX
-download and avalanche terrain notes require a subscription that is `trialing` or `active` — a
-`canceled` subscription keeps access until the period it already paid for runs out.
+Everything is open to everyone: the map, the key figures, the route description, the elevation
+profile, the GPX download and the avalanche terrain notes. There is no paywall and no reader
+sign-in. The guides' structured data says `isAccessibleForFree: true`.
 
-This is enforced in two places. Server-side, `getViewer()` in `lib/access.ts` resolves the current
-viewer and returns `hasAccess`; pages must decide what to render from that flag, and gated content
-must never reach the client for a viewer without access. Independently, RLS policies in
-`supabase/schema.sql` restrict the gated columns at the database level, so a leaked anon key or a
-mistake in a route handler still cannot read them. Treat both as required — the server check is
-the product behaviour, RLS is the backstop.
+The only sign-in left is Google, for the addresses in `ADMIN_EMAILS`, to read
+`/admin/tilbakemeldinger`. `lib/admin.ts` fails closed.
 
-`grantsAccess()` is mirrored in SQL as `public.tk_has_active_subscription()`, and the two must
-say the same thing. `lib/access.test.ts` pins the TypeScript side case by case, written so it can
-be read against that function line by line — change one and the test is where you find out you
-have to change the other.
+`supabase/schema.sql` still holds the subscription tables and `tk_has_active_subscription()` from
+when Toppkart was sold as a subscription. Nothing reads or writes them any more; see
+`docs/deploy.md` section 3 for winding down Stripe.
 
 ### The route figure
 
@@ -245,29 +217,10 @@ route stops fitting. The north arrow and scale bar are therefore placed by count
 vertices per corner and taking the two quietest, rather than by widening the margin until the
 summit marker stops colliding with them.
 
-### Deleting an account
-
-`DELETE /api/konto`, behind the «Slett kontoen» card on Min side. The order is Stripe first,
-Postgres second, and it is not arbitrary: cancel the subscription and fail the delete, and the
-reader has an account with no subscription — annoying, visible, fixable. Delete first and fail at
-Stripe, and the account is gone while the card keeps being charged every month, with no account
-left to find the customer through. Only one of those two failures keeps costing money after it
-happens.
-
-One `auth.users` delete takes the profile, the subscription row, the invoice mirror and the
-feedback with it, through `on delete cascade`. What stays is the customer and the invoices at
-Stripe: that is the accounting record the Bookkeeping Act wants kept for five years, and
-`/personvern` says so in both languages. The invoice *mirror* is not that record — it exists so
-«02 · Kvitteringer» can render without a round trip — so it goes with the reader who asked to be
-forgotten.
-
-Confirmation is type-the-word rather than a second click. Cancelling a subscription can be undone
-by subscribing again; this cannot be undone by anyone, including us.
-
 ### The one endpoint that is open on purpose
 
-`/api/tilbakemelding` takes a message without asking anyone to sign in, because the people most
-likely to have something useful to say are the ones who have not signed up. That decision is what
+`/api/tilbakemelding` takes a message without asking anyone to sign in — readers have no
+accounts. That decision is what
 makes `lib/rate-limit.ts` necessary: an open write endpoint is one loop away from a full table,
 and the honeypot in the route only catches a form filler, never someone repeating the request
 they saw in the network tab. The limit is ten an hour per caller, counted by
@@ -279,7 +232,7 @@ reason.
 
 ## Offline
 
-A subscriber can press «Lagre offline» on a guide, and the tour then works without coverage:
+A reader can press «Lagre offline» on a guide, and the tour then works without coverage:
 the guide, `/kart` with that tour open and the reader's position, the map tiles along every
 route up, and the GPX file. Everything is stored in the browser's Cache Storage on the device;
 nothing about it reaches the server.
@@ -290,7 +243,8 @@ nothing about it reaches the server.
   only (`components/ServiceWorker.tsx`): under `next dev` chunk names do not change between
   edits, and a worker serving them from a saved copy would serve stale code without a word.
 - **`lib/offline/store.ts`** does the saving, from the page. The guide's HTML is checked for
-  `data-access="open"` first, because an expired session gets the locked guide with a `200`.
+  `data-access="open"` first, a leftover from the paywall that still guards against saving
+  something that is not the guide.
   The code is found by following references from both pages through the chunks they load —
   Turbopack writes lazy chunks as `"static/chunks/…"` inside other chunks, not in the HTML —
   so `/kart`'s Leaflet half and the route data come along without a build manifest.
@@ -299,19 +253,16 @@ nothing about it reaches the server.
   is typically 5–15 MB. Tiles are fetched with `mode: "cors"` — Kartverket sends
   `access-control-allow-origin: *` — because Chrome counts an opaque response as megabytes
   against the quota whatever it weighs.
-- **Signing out or deleting the account clears it**, both from the worker (it sees the request
-  go by) and with `Clear-Site-Data: "storage"` on the response. A borrowed phone must not keep
-  a subscriber's guides.
+- **«Fjern» on the guide removes it**, and so does clearing the site's data in the browser.
 - Navigating to a page that is not saved while offline shows `public/offline.html`, a static
   page listing what is saved.
 
-Not done: saved copies are not refreshed on their own, and they stay readable offline after a
-subscription ends — online, the server's answer always wins.
+Not done: saved copies are not refreshed on their own — online, the server's answer always wins.
 
 ## Before launch
 
 The design handoff flags this work as unfinished. None of it is a code defect; all of it is
-content and data quality that has to be settled before the site is sold to anyone.
+content and data quality that has to be settled before the site is promoted widely.
 
 - **Route lines are generated, not surveyed.** They are no longer schematic: `lib/routes.ts` holds
   detailed lines — one or more per tour — solved as least-cost paths over Kartverket's 1 m terrain

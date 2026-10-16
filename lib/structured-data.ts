@@ -25,14 +25,6 @@ import { htmlLang, type Lang } from "@/lib/i18n";
 import { CANONICAL_ORIGIN, OG_IMAGE, canonicalUrl } from "@/lib/seo";
 import type { Tour, TourGuide } from "@/lib/types";
 
-/** `id` på den låste blokka, og velgeren som peker på den i `hasPart`.
- *
- *  De to må være det samme, ellers beskriver betalingsmuren en del av sida som
- *  ikke finnes — derfor står de her sammen og ikke ett sted hver. `LockedGuide`
- *  setter `id`-en, `tourJsonLd()` sender velgeren. */
-export const PAYWALL_ID = "guide-laast";
-const PAYWALL_SELECTOR = `#${PAYWALL_ID}`;
-
 /** Avsenderen. Samme objekt refereres fra både `WebSite` og hver artikkel, så
  *  det er én enhet i grafen framfor tre løse med samme navn. */
 const ORGANIZATION_ID = `${CANONICAL_ORIGIN}/#organization`;
@@ -103,31 +95,16 @@ export function tourListJsonLd(tours: { slug: string; name: string }[], lang: La
   };
 }
 
-/** En turguide: artikkelen, fjellet den handler om, og hvor betalingsmuren går.
- *
- *  `isAccessibleForFree: false` med en `hasPart` som peker på den låste blokka
- *  er Googles egen oppskrift for innhold bak abonnement, og den løser et
- *  problem vi ellers ville hatt: en robot får systematisk se mindre enn en
- *  betalende leser, og forskjellsbehandling av roboten er per definisjon
- *  cloaking — med mindre man sier fra at det er en betalingsmur og hvor den
- *  står. Da er det en kjent, tillatt tilstand i stedet.
- *
- *  Velgeren sendes bare når blokka faktisk er på sida. For en abonnent er hele
- *  guiden der, og en `cssSelector` som ikke treffer noe beskriver ingenting.
- *  `isAccessibleForFree` står uansett: det er en opplysning om ressursen, ikke
- *  om den som ser på den akkurat nå.
- */
+/** En turguide: artikkelen og fjellet den handler om. Hele guiden er åpen
+ *  for alle, så `isAccessibleForFree` er sann. */
 export function tourJsonLd({
   tour,
   guide,
   lang,
-  locked,
 }: {
   tour: Tour;
   guide: TourGuide | undefined;
   lang: Lang;
-  /** Om den låste blokka er rendret på denne visningen. */
-  locked: boolean;
 }) {
   const path = `/tur/${tour.slug}`;
   const url = canonicalUrl(path);
@@ -143,16 +120,7 @@ export function tourJsonLd({
     image: canonicalUrl(OG_IMAGE.url),
     mainEntityOfPage: url,
     publisher: { "@id": ORGANIZATION_ID },
-    isAccessibleForFree: false,
-    ...(locked
-      ? {
-          hasPart: {
-            "@type": "WebPageElement",
-            isAccessibleForFree: false,
-            cssSelector: PAYWALL_SELECTOR,
-          },
-        }
-      : {}),
+    isAccessibleForFree: true,
     about: {
       "@type": "Mountain",
       name: tour.name,

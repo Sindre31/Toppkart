@@ -3,8 +3,8 @@ import { getSupabaseServerClient } from "@/lib/supabase/server";
 
 /** Only same-origin relative paths are accepted as a landing target. */
 function safeNext(value: string | null): string {
-  if (!value) return "/min-side";
-  if (!value.startsWith("/") || value.startsWith("//") || value.startsWith("/\\")) return "/min-side";
+  if (!value) return "/admin/tilbakemeldinger";
+  if (!value.startsWith("/") || value.startsWith("//") || value.startsWith("/\\")) return "/admin/tilbakemeldinger";
   return value;
 }
 

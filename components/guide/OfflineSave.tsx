@@ -1,6 +1,6 @@
 "use client";
 
-/** «Lagre offline» på turguiden — for abonnenter, der det er noe å lagre.
+/** «Lagre offline» på turguiden, der det er noe å lagre.
  *
  *  Rendres ikke i det hele tatt før komponenten er montert og vet at
  *  nettleseren kan dette; serveren vet ikke hva som ligger lagret på

@@ -1,9 +1,8 @@
 /** NO/EN dictionary for the front page.
  *
- *  The landing page is pure copy — every string it renders lives here. The
- *  units in the data plate are copy too: «29 kr» and «14 dager» carry one, and
- *  the unit is the part that has to change language. Prices stay in kroner in
- *  both languages; the product is sold in Norway.
+ *  The landing page is pure copy — every string it renders lives here.
+ *  Toppkart is free; the only number with a unit on it is the Vipps number,
+ *  which is the same in both languages.
  *
  *  What is *not* copy is how many tours and regions the map holds. Those two
  *  figures sat here as the literals «214» and «12» and were wrong by an order of
@@ -37,8 +36,8 @@ export interface PlateFigures {
   tours: number;
   /** Regions those tours cover. */
   regions: number;
-  /** Tours with a written guide behind the subscription — fewer than `tours`,
-   *  and the plate says so rather than implying every peak has one. */
+  /** Tours with a written guide — fewer than `tours`, and the plate says so
+   *  rather than implying every peak has one. */
   guides: number;
   /** Region of the northernmost tour, and of the southernmost. Proper nouns:
    *  they stay Norwegian in both languages. */
@@ -59,18 +58,10 @@ export interface LandingDict {
   heroLine1: string;
   heroLine2: string;
   lede: string;
-  ctaTrial: string;
   ctaMap: string;
-  priceNote: string;
-  /* — hero og abonnementsseksjon, sett av en som allerede abonnerer — */
-  /** Erstatter «Prøv gratis i 14 dager» når leseren har tilgang. */
   ctaTours: string;
-  /** Erstatter «Deretter 29 kr/mnd» når leseren har tilgang. */
-  priceNoteActive: string;
-  /** Knappa som erstatter påmeldingsfeltet i «04 · Abonnement». */
-  planAccount: string;
-  /** Erstatter `planNote` — den handler om å begynne, og det er gjort. */
-  planNoteActive: string;
+  /** The line beside the buttons: free, no account. */
+  priceNote: string;
   /* — data plate — */
   plateLabel: string;
   plateSheet: string;
@@ -90,49 +81,35 @@ export interface LandingDict {
    *  alternative tekst — og som her står uten figurtekst, fordi lengden og
    *  stigningen til én bestemt tur ikke er det forsida handler om. */
   safetyFigureLink: string;
-  /* — 04 · subscription — */
-  planKicker: string;
-  planHeading: string;
-  planBody: string;
-  planNote: string;
-  planPrice: string;
-  planPriceUnit: string;
-  planAnnualPrice: string;
-  planAnnualUnit: string;
-  planPoints: readonly string[];
-  /* — trial signup row — */
-  emailPlaceholder: string;
-  emailLabel: string;
-  emailSubmit: string;
-  emailInvalid: string;
+  /* — 04 · support — */
+  supportKicker: string;
+  supportHeading: string;
+  supportBody: string;
+  supportNote: string;
+  supportPoints: readonly string[];
 }
 
 const LANDING: Translated<LandingDict> = {
   no: {
     metaTitle: "Alle toppturene. Ett kart.",
     metaDescription:
-      "Toppkart er en feltguide for skiturer i Norge: kvalitetssikrede toppturer på ett kart, med rute, høydemeter, bratthet og skredterreng. 29 kr/mnd, 14 dager gratis.",
+      "Toppkart er en feltguide for skiturer i Norge: kvalitetssikrede toppturer på ett kart, med rute, høydemeter, bratthet og skredterreng. Gratis å bruke.",
 
     heroLine1: "Alle toppturene.",
     heroLine2: "Ett kart.",
     lede:
       "Toppkart er en feltguide for skiturer i Norge: kvalitetssikrede toppturer på ett kart, med rute, høydemeter, bratthet og skredterreng — skrevet for at du skal komme trygt opp og trygt ned. For deg som går din første topptur, og for deg som går din hundrede.",
-    ctaTrial: "Prøv gratis i 14 dager",
     ctaMap: "Se kartet",
-    priceNote: "Deretter 29 kr/mnd. Ingen binding.",
     ctaTours: "Alle turene",
-    priceNoteActive: "Abonnementet ditt er aktivt — alle guidene er åpne.",
-    planAccount: "Min side",
-    planNoteActive:
-      "Du abonnerer allerede. Kvitteringer, kort og oppsigelse ligger på Min side.",
+    priceNote: "Gratis å bruke. Ingen konto, ingen binding.",
 
     plateLabel: "Toppkart — nøkkeldata",
     plateSheet: "Ark 01 av 04",
     plateRows: (f) => [
       { prop: "Toppturer i kartet", val: String(f.tours), rem: `Fra ${f.north} i nord til ${f.south} i sør` },
       { prop: "Regioner", val: String(f.regions), rem: "Alle med opptegnet rute og høydeprofil" },
-      { prop: "Pris per måned", val: "29 kr", rem: "Ingen binding" },
-      { prop: "Gratis prøveperiode", val: "14 dager", rem: "Kort kreves — første trekk etter prøveperioden" },
+      { prop: "Pris", val: "Gratis", rem: "Ingen konto, ingen binding" },
+      { prop: "Støtt med Vipps", val: "966 40 540", rem: "Frivillig — alt hjelper" },
     ],
     plateFoot: (f) =>
       `Hver topp er stedfestet mot Kartverkets terrengmodell, og ${f.guides} av turene har en full turguide skrevet mot ruta. Sjekk alltid skredvarselet på varsom.no før du går.`,
@@ -159,54 +136,39 @@ const LANDING: Translated<LandingDict> = {
       "I snitt dør fem mennesker i snøskred i Norge hvert år — de fleste på topptur. Hver guide i Toppkart er derfor bygget rundt terrenget, ikke rundt bildene: bratthet, utløpssoner og trygge alternativer står først, pudderpratet sist.",
     safetyFigureLink: "Se Kirketaket i kartet",
 
-    planKicker: "04 · Abonnement",
-    planHeading: "Hele kartet. Alle guidene.",
-    planBody:
-      "Én pris, alt åpent. Nye turer legges til hver sesong, og guidene revideres når terrenget eller normalruta endrer seg. Avslutt når du vil — abonnementet stopper ved neste trekk.",
-    planNote:
-      "Du logger inn med Google — ingen passord. Betaling håndteres sikkert av Stripe. Du legger inn kort ved start — første trekk etter 14 dager.",
-    planPrice: "29 kr",
-    planPriceUnit: "per måned",
-    planAnnualPrice: "290 kr",
-    planAnnualUnit: "per år — to måneder gratis",
-    planPoints: [
-      "14 dager gratis prøveperiode",
+    supportKicker: "04 · Støtt Toppkart",
+    supportHeading: "Gratis. Hele kartet, alle guidene.",
+    supportBody:
+      "Toppkart er gratis å bruke, uten konto og uten reklame. Nye turer legges til hver sesong, og guidene revideres når terrenget eller normalruta endrer seg. Har du glede av appen, kan du støtte arbeidet med en Vipps.",
+    supportNote: "Helt frivillig — alt er åpent uansett.",
+    supportPoints: [
       "Alle turguider, GPX og høydeprofiler",
       "Skredterreng og Varsom-varsel per tur",
-      "Ingen binding — avslutt når som helst",
+      "Favoritter og turer du har gått, lagret på enheten din",
+      "Ingen konto, ingen reklame",
     ],
-
-    emailPlaceholder: "din@epost.no",
-    emailLabel: "E-postadresse",
-    emailSubmit: "Start prøveperiode",
-    emailInvalid: "Skriv inn en gyldig e-postadresse.",
   },
 
   en: {
     metaTitle: "Every ski tour. One map.",
     metaDescription:
-      "Toppkart is a field guide to ski touring in Norway: quality-assured peaks on a single map, with routes, vertical gain, steepness and avalanche terrain. 29 kr/month, 14 days free.",
+      "Toppkart is a field guide to ski touring in Norway: quality-assured peaks on a single map, with routes, vertical gain, steepness and avalanche terrain. Free to use.",
 
     heroLine1: "Every ski tour.",
     heroLine2: "One map.",
     lede:
       "Toppkart is a field guide to ski touring in Norway: quality-assured peaks on a single map, with routes, vertical gain, steepness and avalanche terrain — written to get you safely up and safely back down. For your first ski tour, and for your hundredth.",
-    ctaTrial: "Try free for 14 days",
     ctaMap: "See the map",
-    priceNote: "Then 29 kr/month. No lock-in.",
     ctaTours: "Every tour",
-    priceNoteActive: "Your subscription is active — every guide is open.",
-    planAccount: "My account",
-    planNoteActive:
-      "You already subscribe. Receipts, card and cancellation live on your account page.",
+    priceNote: "Free to use. No account, no lock-in.",
 
     plateLabel: "Toppkart — key figures",
     plateSheet: "Sheet 01 of 04",
     plateRows: (f) => [
       { prop: "Tours on the map", val: String(f.tours), rem: `From ${f.north} in the north to ${f.south} in the south` },
       { prop: "Regions", val: String(f.regions), rem: "Every one with drawn routes and elevation profiles" },
-      { prop: "Price per month", val: "29 kr", rem: "No lock-in" },
-      { prop: "Free trial", val: "14 days", rem: "Card required — first charge after the trial" },
+      { prop: "Price", val: "Free", rem: "No account, no lock-in" },
+      { prop: "Support with Vipps", val: "966 40 540", rem: "Voluntary — every bit helps" },
     ],
     plateFoot: (f) =>
       `Every summit is placed against Kartverket's terrain model, and ${f.guides} of the tours have a full guide written against the route. Always check the avalanche forecast at varsom.no before you head out.`,
@@ -233,27 +195,17 @@ const LANDING: Translated<LandingDict> = {
       "On average, five people die in avalanches in Norway every year — most of them ski touring. Every guide in Toppkart is therefore built around the terrain, not around the photos: steepness, runout zones and safer alternatives come first, the powder talk last.",
     safetyFigureLink: "See Kirketaket on the map",
 
-    planKicker: "04 · Subscription",
-    planHeading: "The whole map. Every guide.",
-    planBody:
-      "One price, everything open. New tours are added every season, and guides are revised whenever the terrain or the normal route changes. Cancel whenever you like — the subscription stops at the next charge.",
-    planNote:
-      "You sign in with Google — no passwords. Payments are handled securely by Stripe. You add a card at signup — first charge after 14 days.",
-    planPrice: "29 kr",
-    planPriceUnit: "per month",
-    planAnnualPrice: "290 kr",
-    planAnnualUnit: "per year — two months free",
-    planPoints: [
-      "14-day free trial",
+    supportKicker: "04 · Support Toppkart",
+    supportHeading: "Free. The whole map, every guide.",
+    supportBody:
+      "Toppkart is free to use, with no account and no ads. New tours are added every season, and guides are revised whenever the terrain or the normal route changes. If you enjoy the app, you can support the work with a Vipps.",
+    supportNote: "Entirely voluntary — everything stays open either way.",
+    supportPoints: [
       "Every guide, GPX file and elevation profile",
       "Avalanche terrain and Varsom forecast per tour",
-      "No lock-in — cancel anytime",
+      "Favourites and tours you have done, saved on your device",
+      "No account, no ads",
     ],
-
-    emailPlaceholder: "you@example.com",
-    emailLabel: "Email address",
-    emailSubmit: "Start free trial",
-    emailInvalid: "Enter a valid email address.",
   },
 };
 

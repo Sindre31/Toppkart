@@ -26,7 +26,7 @@ export function Blueprint({
   );
 }
 
-/** Numbered section header — «01 · Abonnement» over a 1px rule. */
+/** Numbered section header — «04 · Støtt Toppkart» over a 1px rule. */
 export function SectionKicker({ children, id }: { children: ReactNode; id?: string }) {
   return (
     <>

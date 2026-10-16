@@ -4,8 +4,16 @@ import { TOURS } from "./lib/tours";
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
-  // The Stripe webhook needs the raw request body; Next's App Router gives us
-  // that via request.text(), so no body-parser opt-out is required here.
+
+  /* Toppkart er gratis og har ingen kontoer. Gamle lenker til kassa og
+     kontosida — i e-poster, bokmerker, Stripes kundeportal — lander på
+     forsida og «Mine turer» i stedet for på en 404. */
+  async redirects() {
+    return [
+      { source: "/betaling", destination: "/", permanent: true },
+      { source: "/min-side", destination: "/mine-turer", permanent: true },
+    ];
+  },
 
   /* Turene som finnes, til middleware, som svarer 404 på alle andre under
      `/tur/`. Den kan ikke importere `lib/tours` selv — den kjører på Edge, og
