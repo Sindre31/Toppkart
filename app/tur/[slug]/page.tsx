@@ -11,6 +11,7 @@ import { GuideSections } from "@/components/guide/GuideSections";
 import { OfflineSave } from "@/components/guide/OfflineSave";
 import { GuideMarks } from "@/components/marks/GuideMarks";
 import { GuideMap } from "@/components/guide/GuideMap";
+import { PeakPhoto } from "@/components/PeakPhoto";
 import { WeatherPanel } from "@/components/weather/WeatherPanel";
 import { SITE } from "@/lib/config";
 import { guideSlugs } from "@/lib/guides";
@@ -20,6 +21,7 @@ import { getLang } from "@/lib/i18n/server";
 import { getLocalizedGuide, localizeTour, localizeTours, teaserFor } from "@/lib/i18n/content";
 import { elevationLabel, gradeLabel } from "@/lib/i18n/format";
 import { guideDict } from "@/lib/i18n/guide";
+import { photoFor } from "@/lib/peak-photos";
 import { getTour, routeProfile, routesFor, toursInRegion } from "@/lib/tours";
 import styles from "./guide.module.css";
 
@@ -116,6 +118,7 @@ export default async function TourGuidePage({ params }: { params: Promise<{ slug
   /* Rutas egen geometri — den samme linja `/kart` tegner. `GuideMap` bruker den
      til kartet ved siden av høydeprofilen; hver av sidene får sitt eget. */
   const route = routeProfile(source);
+  const photo = photoFor(source.slug);
   const mapHref = `/?tur=${tour.slug}`;
   const neighbours = localizeTours(toursInRegion(source.region, source.slug), lang);
 
@@ -218,6 +221,12 @@ export default async function TourGuidePage({ params }: { params: Promise<{ slug
             ) : null}
           </div>
         </header>
+
+        {photo ? (
+          <section style={{ padding: "0 0 32px" }}>
+            <PeakPhoto photo={photo} peak={tour.name} lang={lang} aspect="21 / 9" priority />
+          </section>
+        ) : null}
 
         <section style={{ padding: "0 0 40px" }}>
           <Blueprint>

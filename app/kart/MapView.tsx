@@ -32,6 +32,8 @@ import {
   type VerticalBand,
 } from "@/lib/map-filters";
 import { CapsText } from "@/components/CapsText";
+import { PeakPhoto } from "@/components/PeakPhoto";
+import type { PeakPhoto as PeakPhotoData } from "@/lib/peak-photos";
 import { WeatherPanel } from "@/components/weather/WeatherPanel";
 import { MarkButtons } from "@/components/marks/MarkButtons";
 import { useTourMarks } from "@/components/marks/useTourMarks";
@@ -144,6 +146,7 @@ export default function MapView({
   routeMeta,
   initialSlug,
   initialRouteId,
+  photos,
 }: {
   lang: Lang;
   /** Turene, ferdig oversatt av serveren.
@@ -175,6 +178,9 @@ export default function MapView({
   nav: ReactNode;
   initialSlug: string | null;
   initialRouteId: string | null;
+  /** Bildene av toppene, som små miniatyrer. Bare de turene som har ett; se
+   *  `lib/photos.ts`. */
+  photos: Readonly<Record<string, PeakPhotoData>>;
 }) {
   const [query, setQuery] = useState("");
   const [grade, setGrade] = useState(0);
@@ -501,6 +507,14 @@ export default function MapView({
             </div>
 
             <div className={s.dBody}>
+              {photos[selected.slug] ? (
+                <PeakPhoto
+                  key={selected.slug}
+                  photo={photos[selected.slug]}
+                  peak={selected.name}
+                  lang={lang}
+                />
+              ) : null}
               <p className={s.teaser}>{selected.teaser}</p>
 
               <div className={s.stats}>
