@@ -547,7 +547,7 @@
   "routes": [
    {
     "id": "normalruta",
-    "name": "Normalruta frå Hellerøra over Steinberget",
+    "name": "Normalruta fra Hellerøra over Steinberget",
     "description": "Normalruta frå Hellerøra over Steinberget",
     "trailhead": {
      "name": "Hellerøra-parkeringa",
@@ -599,7 +599,7 @@
   "routes": [
    {
     "id": "normalruta",
-    "name": "Normalruta frå Skylstad over Pukkelen",
+    "name": "Normalruta fra Skylstad over Pukkelen",
     "description": "Normalruta frå Skylstad over Pukkelen",
     "trailhead": {
      "name": "Skylstad i Norangsdalen",
@@ -647,7 +647,7 @@
    },
    {
     "id": "oye-direkte",
-    "name": "Direkteruta frå Øye",
+    "name": "Direkteruta fra Øye",
     "description": "Direkteruta frå Øye opp fjellsida",
     "trailhead": {
      "name": "Slogen-parkeringa i Norangsdalen",
@@ -694,7 +694,7 @@
   "routes": [
    {
     "id": "normalruta",
-    "name": "Normalruta frå Standaleidet gjennom Kvanndalen",
+    "name": "Normalruta fra Standaleidet gjennom Kvanndalen",
     "description": "Normalruta frå Standaleidet gjennom Kvanndalen",
     "trailhead": {
      "name": "Standaleidet ved Standalhytta",
@@ -982,7 +982,7 @@
    },
    {
     "id": "helgedalen",
-    "name": "Sørsida frå Turtagrø gjennom Helgedalen og Steindalen",
+    "name": "Sørsida fra Turtagrø gjennom Helgedalen og Steindalen",
     "trailhead": {
      "lat": 61.50457,
      "lng": 7.80159,
@@ -1486,7 +1486,7 @@
   "routes": [
    {
     "id": "normalruta",
-    "name": "Normalruta frå Hornslie over Hødnetjedne",
+    "name": "Normalruta fra Hornslie over Hødnetjedne",
     "description": "Normalruta frå Hornslie over Hødnetjedne",
     "trailhead": {
      "name": "Hornslie p-plass",
@@ -1532,7 +1532,7 @@
   "routes": [
    {
     "id": "normalruta",
-    "name": "Normalruta frå Tjoflot",
+    "name": "Normalruta fra Tjoflot",
     "description": "Normalruta frå Tjoflot via Vindhovden",
     "trailhead": {
      "name": "Tjoflot øvre parkering",
@@ -1578,7 +1578,7 @@
   "routes": [
    {
     "id": "normalruta",
-    "name": "Normalruta frå Kletta",
+    "name": "Normalruta fra Kletta",
     "description": "Normalruta frå Kletta via Skarshaug",
     "trailhead": {
      "name": "Kletta p-plass",
@@ -1626,7 +1626,7 @@
    },
    {
     "id": "myrdalsvatnet",
-    "name": "Frå Myrdalsvatnet over Omnen",
+    "name": "Fra Myrdalsvatnet over Omnen",
     "trailhead": {
      "lat": 60.023,
      "lng": 6.06094,
@@ -1682,7 +1682,7 @@
   "routes": [
    {
     "id": "normalruta",
-    "name": "Frå Langefonn",
+    "name": "Fra Langefonn",
     "description": "Frå Langefonn via Svineroi og austryggen",
     "trailhead": {
      "name": "Langefonn parkering",
@@ -1749,7 +1749,7 @@
   "routes": [
    {
     "id": "normalruta",
-    "name": "Normalruta frå bommen på Kvistadvegen om Kvistadsætra",
+    "name": "Normalruta fra bommen på Kvistadvegen om Kvistadsætra",
     "description": "Frå bommen på Kvistadvegen ovanfor Kvistad-gardane i Bondalen (104 moh) følgjer ein den vinterstengde setervegen om lag 3,7 km sørover og innover Kvistaddalen til parkeringa framfor Kvistadsætra og Årsetsætra (509 moh). Derifrå går ruta nordaustover opp gjennom open bjørkeskog og vidare opp storhellinga - nord for og langsmed skredrenna aust for Blåhornet - til skaret mellom Blåhornet og Skårasalen (1074 moh). Over skaret svingar ein aust-nordaust opp hovudhellinga mot ryggen og toppplatået (1448 moh), og siste stykket sørover langs platået til toppen på 1542 moh. Aust for eggja fell fjellet rett ned i Skåradalen, og skavlane ligg på den sida.",
     "trailhead": {
      "name": "Bommen på Kvistadvegen",
@@ -1787,7 +1787,7 @@
   "routes": [
    {
     "id": "normalruta",
-    "name": "Normalruta frå Byrkjenes over Fadnastølen",
+    "name": "Normalruta fra Byrkjenes over Fadnastølen",
     "description": "Frå parkeringa ved Byrkjenes (211 m), innerst på bomvegen Tordalsvegen nord for Strandebarm, går ein opp den bratte skogkledde lia mot Fadnastølen (498 m). Over stølen opnar terrenget seg, og ruta held nordaustover inn på den breie sørvestryggen ved 629 m. Derfrå følgjer ein ryggen samanhengande nordover – 791 m, så skulderen på 977 m – før dei siste hundre metrane svingar nordaustover opp den slake toppkuppelen til varden på 1046 m. Heile den øvre delen ligg på open, jamn rygg; ein held seg vest for sørfallet og godt aust for stupa mot Goddalen.",
     "trailhead": {
      "name": "Byrkjenes parkering",
@@ -1931,7 +1931,7 @@
   "routes": [
    {
     "id": "normalruta",
-    "name": "Frå Haugastøl gjennom Folarskardet",
+    "name": "Fra Haugastøl gjennom Folarskardet",
     "description": "Standard vinterrute på Buskeruds høgaste. Frå p-plassen ved Rv7 på Haugastøl følgjer ein den kvista DNT-vinterruta mot Raggsteindalen nordover over Slåttehall-flatene og Hellevatn-terrenget, i alt nær 11 km og rundt 600 høgdemeter, opp i Folarskardet ved Lordehytta (1620 moh). Der går ein av merkinga, forbi tjørna på 1603 m, og opp ramma i sørausthellinga - eit kort, bratt trinn - til skulderen på ca. 1830 m og vidare vest-sørvestover den slake ramma til toppen på 1932 moh. Toppvarden i rutebeskrivingane står på nordausttoppen, 1927 moh, 821 meter unna. Retur same veg.",
     "trailhead": {
      "name": "Haugastøl p-plass ved Rv7",
@@ -1978,7 +1978,7 @@
     "name": "Normalruta fra Liland gjennom Lilandsdalen",
     "description": "Normalruta fra Liland/Skinvollen innerst i Austnesfjorden: følg lysløypa et stykke og videre inn i Lilandsdalen gjennom bjørkeskogen, opp den bratte renna fra ca. 250 til 360 moh og deretter i slakere terreng oppover dalen til ca. 620 moh. Der elveleiet bratter til, går en tydelig rampe opp mot høyre inn i den store skålformasjonen som utgjør toppen av sørrenna, og videre mot skaret og toppen. Øverste del er klyving med stegjern og isøks. Sørrenna brukes som nedkjøring og krever bil nummer to.",
     "trailhead": {
-     "name": "Vegenden i Geitgallien ved Skinvollen, Liland",
+     "name": "Veienden i Geitgallien ved Skinvollen, Liland",
      "lat": 68.34799,
      "lng": 14.74685,
      "elevation_m": 19.76,
@@ -2121,10 +2121,10 @@
   "routes": [
    {
     "id": "normalruta",
-    "name": "Normalruta frå Norang gjennom Konedalen",
+    "name": "Normalruta fra Norang gjennom Konedalen",
     "description": "Frå vegenden ved Lisjeholen sør for Norang-gardane går ein den bratte stien opp til Konedalen med skia på sekken, først på venstre side av elva og så over på høgre. Oppe i dalen tek ein på seg skia og følgjer det slake dalføret sørvestover til om lag 740 moh. Der svingar ein til høgre og sikk-sakkar opp den 33-36 grader bratte sida i nordvest til ein når toppryggen ved 1240 moh. Ryggen blir følgd sørvestover heilt til topps; ein held seg midt på han, med skavlar mot Konedalen i søraust og den stupbratte nordvestveggen mot Hjørundfjorden på hi sida. Vanlegaste nedkøyring er same veg tilbake: 35 grader frå ryggen ned mot Konedalen, slakare vidare ut dalen.",
     "trailhead": {
-     "name": "Norang, vegenden ved Lisjeholen",
+     "name": "Norang, veienden ved Lisjeholen",
      "lat": 62.18571,
      "lng": 6.66455,
      "elevation_m": 60.82,
@@ -2197,7 +2197,7 @@
   "routes": [
    {
     "id": "normalruta",
-    "name": "Vårruta frå Øygardstøl om Langavassvegen",
+    "name": "Vårruta fra Øygardstøl om Langavassvegen",
     "description": "Frå den store parkeringa på Øygardstøl (641 m) følgjer ein Lysevegen sørover – forbi 735 m – dei drygt to kilometrane til der anleggsvegen mot Langavatn tek av ved Stølsdalen bru (850 m). Vidare oppover Langavassvegen sørvestover til om lag 944 m, der ein forlèt vegen og held vest/nordvest inn på Kjeragplatået. Over platået går ruta jamt vestover over knausar og små vatn til punktet på 1090 m, og siste kilometeren er nesten flat fram til toppunktet på 1096 m. Terrenget heile vegen er slakt – innanfor 800 m av toppen ligg alle åtte retningane under 6° i snitt – men platået er svaberg med korte, brå kantar, og nordsida stuper i Lysefjorden.",
     "trailhead": {
      "name": "Øygardstøl parkering",
@@ -2329,7 +2329,7 @@
   "routes": [
    {
     "id": "normalruta",
-    "name": "Vinterruta frå Berdalen over Tverrheiskara",
+    "name": "Vinterruta fra Berdalen over Tverrheiskara",
     "description": "Frå parkeringa innerst i Berdalen hyttegrend (810 m) går ein austover forbi Langemyr (891 m) og opp i Tverrheiskaret (1028 m), det fyrste skaret. Vidare aust over Tverrheii og Tverrheitjønnane til Tverrheiskardet (1156 m), så ned i Gjuvvatn-bassenget og over til austenden av Midtre Gjuvvatn (1137 m). Frå vatnet stig ruta jamt austover forbi dei to namnlause vatna på 1234 og 1257 m – vegpunktet på 1225 m ligg på fast mark like vest for det nedste – og siste kilometeren går opp vestflanken av nuten til toppen på 1506 m. Ingen sti heile vegen; ruta er om lag 10,7 km kvar veg og går på fjellski med feller.",
     "trailhead": {
      "name": "Berdalen hyttegrend, parkering ved bommen",
@@ -2379,10 +2379,10 @@
   "routes": [
    {
     "id": "normalruta",
-    "name": "Normalruta frå Vasshuset over skaret og sørryggen",
+    "name": "Normalruta fra Vasshuset over skaret og sørryggen",
     "description": "Frå parkeringa ved vassverket øvst i Vikegeila i Ørsta sentrum (149 moh) følgjer ein anleggsvegen oppover Skåla. Ved om lag 400 moh går ein av vegen, på skrå nordaustover mot Vikeelva, kryssar elva og siktar mot det lågaste punktet på ryggen mellom Vallahornet og Saudehornet (812 moh). Over skaret følgjer ein sørryggen om lag 490 høgdemeter opp til toppen på 1303 moh; dei siste 170 høgdemetrane held 33-39°. Vanlegaste nedkøyringa går same vegen, men gjerne på flanken på skiløparen si høgre side av renna - sørvestflanken, som held om lag 37° i 600 høgdemeter.",
     "trailhead": {
-     "name": "Vasshuset (vassverket) i Vikegeila",
+     "name": "Vasshuset (vannverket) i Vikegeila",
      "lat": 62.21087,
      "lng": 6.12681,
      "elevation_m": 149.26,
@@ -2417,7 +2417,7 @@
   "routes": [
    {
     "id": "normalruta",
-    "name": "Normalruta frå Trefta over austryggen",
+    "name": "Normalruta fra Trefta over østryggen",
     "description": "Normalruta frå den store parkeringa ved Hyndra bru nedanfor Trefta på Lykkjavegen (Fv2920). Ein kryssar elva og går opp lia på vestsida, nordvestover over det opne beltet på 1000-1100 m, og inn på den breie austryggen ved ca. 1320 m. Ryggen blir følgd heile vegen til toppen. Vanlegaste nedkøyring er same veg; friflyt.no nemner òg ei renne rett nord frå toppen ned til flata på 1100 m og deretter sørover til parkeringa.",
     "trailhead": {
      "name": "Trefta p-plass ved Lykkjavegen",
@@ -2543,10 +2543,10 @@
   "routes": [
    {
     "id": "normalruta",
-    "name": "Normalruta frå Langøylia over Trollaksla og Sætrenibba",
+    "name": "Normalruta fra Langøylia over Trollaksla og Sætrenibba",
     "description": "Frå vestenden av hyttevegen i Langøylia går ein opp lia gjennom open lauvskog, aust for Gjøelva, til ein når Aksla på om lag 920 moh. Vidare følgjer ein ryggen nordvestover til Trollaksla (1255 moh.) og deretter sørryggen litt opp og ned nordover til Sætrenibba (1370 moh.) og skaret nord for denne, som ligg på 1226 moh. Frå skaret rundar ein austover inn i sida som fell mot Kjellstaddalen og traverserer denne opp på ryggen aust for toppen. Der, kring 1420 moh., tek dei fleste av seg skia: dei siste 103 høgdemetrane er ein smal og eksponert rygg. Vanlegaste nedkøyring er ned Kjellstaddalen, nesten 1000 høgdemeter i 25-35 grader ned til Kjellstadsætra, og deretter eit par flate kilometer ut dalen og vestover attende til bilen.",
     "trailhead": {
-     "name": "Langøylia hyttefelt, vestre vegende",
+     "name": "Langøylia hyttefelt, vestre veiende",
      "lat": 62.0341,
      "lng": 6.74613,
      "elevation_m": 387.7,
@@ -2587,7 +2587,7 @@
   "routes": [
    {
     "id": "normalruta",
-    "name": "Ruta frå Høyland via Breiming og Svartahorgi",
+    "name": "Ruta fra Høyland via Breiming og Svartahorgi",
     "description": "Frå E16 ved Grotlandsbrua, om lag ein kilometer nord for enden av Lønavatnet, tek ein av mot vest og køyrer Høylandsvegen opp til den nedlagde garden Høyland. Derfrå følgjer ein skogsbilvegen sørvestover til Bergsstølen (380 moh.) og tek seg opp det trange dalføret ved Breiming (610 moh.). Vidare følgjer ein slakaste veg nordvestover mot Svartahorgi, til venstre for det trigonometriske punktet 835, og rundar Svartahorgi før ein kjem inn på ryggen på om lag 1000 moh. Ryggen blir følgd vestover og deretter sørover over punkt 1305 og opp nordryggen til toppen. Nedkøyringa følgjer same linje; ved stabile forhold kan dyktige køyrarar i staden ta seg ned i Årdalen frå punkt 1305.",
     "trailhead": {
      "name": "Høyland ved Grotlandsbrua",
@@ -2628,7 +2628,7 @@
    },
    {
     "id": "horgaletten",
-    "name": "Frå toppen av Horgaletten over Vådalseggi",
+    "name": "Fra toppen av Horgaletten over Vådalseggi",
     "description": "Frå toppen av Horgaletten-heisen i Voss Fjellheiser, der ein festar fellene, og vidare langs dei tydelege stakane som leier nordaustover langs Vådalseggi og den lange ryggen til toppen av Lønahorgi.",
     "trailhead": {
      "name": "Toppen av Horgaletten",
@@ -2690,7 +2690,7 @@
   "routes": [
    {
     "id": "normalruta",
-    "name": "Normalruta frå Urkegjerdet over Haukåssætra og Nordkopen",
+    "name": "Normalruta fra Urkegjerdet over Haukåssætra og Nordkopen",
     "description": "Frå Urkegjerdet ved Urke følgjer ein den vinterstengde grusvegen opp mot Haukåssætra. Litt nedanfor sætra tek ein av frå vegen og går innover dalen mot Nordkopen. Frå kopen sikksakkar ein bratt opp mot egga i nord, som ein tek inn på til høgre for ein markert hammar, og følgjer så toppryggen nordover heile vegen til toppen.",
     "trailhead": {
      "name": "Urkegjerdet ved Urke",
@@ -2753,7 +2753,7 @@
   "routes": [
    {
     "id": "normalruta",
-    "name": "Normalruta frå Nibbedalen gjennom Snødalen",
+    "name": "Normalruta fra Nibbedalen gjennom Snødalen",
     "description": "Frå grustaket i Nibbedalen følgjer ein grusvegen eit lite stykke og deretter sommarstien gjennom open skog vestover inn Snødalen. Innerst i dalen tek ein Brattbakken, ei bratt bakke på om lag 35 grader opp mot 1300 moh, og følgjer så det brelagde platået til høgda på 1583 moh. Derfrå går ein ned eit lite skar og nordover langs ryggen til toppen.",
     "trailhead": {
      "name": "Grustaket i Nibbedalen",
@@ -2792,7 +2792,7 @@
   "routes": [
    {
     "id": "normalruta",
-    "name": "Normalruta frå Vollane over Vollesætra og Rametinden",
+    "name": "Normalruta fra Vollane over Vollesætra og Rametinden",
     "description": "Frå Vollane ved Tverrelva går ein gjennom stålgrinda ved elva og følgjer stien oppover, først på venstre og så på høgre side av elva, til terrenget legg seg ved Vollesætra. Herifrå går ein i relativt slakt terreng opp til Rametinden (1198 moh.), og følgjer ryggen og etter kvart egga sørover mot Jønshornet.",
     "trailhead": {
      "name": "Vollane ved Tverrelva",
@@ -2824,7 +2824,7 @@
   "routes": [
    {
     "id": "normalruta",
-    "name": "Normalruta frå Nupen over Vallasætra og Bukkedalen",
+    "name": "Normalruta fra Nupen over Vallasætra og Bukkedalen",
     "description": "Frå bilparkeringa etter bommen i Nupen følgjer ein Engesetvegen oppover og austover til Vallasætra. Frå setra går ein nokre hundre meter inn Langedalen før ein tek bratt opp kneika til Bukkedalen, eventuelt med skia på sekken. Så følgjer ein dalbotnen innover til den bratte, lange flanken som fører opp til toppen.",
     "trailhead": {
      "name": "Nupen",
@@ -2862,7 +2862,7 @@
   "routes": [
    {
     "id": "normalruta",
-    "name": "Skiløypa frå Helgatun",
+    "name": "Skiløypa fra Helgatun",
     "description": "Frå parkeringsplassen ved Helgatun følgjer ein den tydelege, slake og skredtrygge skiløypa til topps. Løypa er tidvis preparert med trakkemaskin, og den siste bakken er gjerne merkt med brøytestikker, noko som gjer det lettare å finne fram i dårleg sikt og i mørket. Same veg ned.",
     "trailhead": {
      "name": "Helgatun på Krøvelseidet",
@@ -2888,7 +2888,7 @@
   "routes": [
    {
     "id": "normalruta",
-    "name": "Normalruta frå Grøndalsvatnet opp søraustryggen",
+    "name": "Normalruta fra Grøndalsvatnet opp sørøstryggen",
     "description": "Frå vegenden ved Grøndalsvatnet går ein nordover gjennom open lauvskog i slakt terreng til ein kjem opp på søraustryggen. Ryggen følgjer ein oppover til platået, og vidare nordover om lag ein kilometer til toppvarden. Hald deg midt på platået: både vest- og austsida fell bratt.",
     "trailhead": {
      "name": "Grøndalsvatnet",
@@ -2920,7 +2920,7 @@
   "routes": [
    {
     "id": "normalruta",
-    "name": "Normalruta frå Skinnviksætra over Blåbreen",
+    "name": "Normalruta fra Skinnviksætra over Blåbreen",
     "description": "Frå Skinnviksætra går ein sørover og opp mot Blåbreen. Breen held om lag 25 grader nedst og legg seg gradvis slakare mot toppplatået. Den siste kilometeren er slak stigning sørover til toppvarden. Same veg ned, eventuelt med ein travers mot Lisje Eidskyrkja på vårføre.",
     "trailhead": {
      "name": "Skinnviksætra",
@@ -2946,7 +2946,7 @@
   "routes": [
    {
     "id": "normalruta",
-    "name": "Normalruta frå Fausaskiftet",
+    "name": "Normalruta fra Fausaskiftet",
     "description": "Frå Fausaskiftet ved enden av Nysætervatnet tek ein på skia og går nordover i jamn og slak stigning heile vegen til toppen. Nedkøyringa følgjer same veg i moderat og triveleg skiterreng.",
     "trailhead": {
      "name": "Fausaskiftet ved Nysætervatnet",
@@ -2972,7 +2972,7 @@
   "routes": [
    {
     "id": "normalruta",
-    "name": "Normalruta frå Hatlestad over Rellingsætra og Daurmålsfjellet",
+    "name": "Normalruta fra Hatlestad over Rellingsætra og Daurmålsfjellet",
     "description": "Frå Hatlestad-gardane går ein slakt inn i munningen av Dyrdalen og opp til Rellingsætra. Frå setra tek ein brattare opp på Daurmålsfjellet, og derifrå følgjer ein ryggen i slakt terreng heile vegen til toppen av Torvløysa. Same veg ned.",
     "trailhead": {
      "name": "Hatlestad i Norddal",
@@ -3010,7 +3010,7 @@
   "routes": [
    {
     "id": "normalruta",
-    "name": "Normalruta frå Korsmyra over Grandesætra og Gråsteindalen",
+    "name": "Normalruta fra Korsmyra over Grandesætra og Gråsteindalen",
     "description": "Frå biloppstillingsplassen på Korsmyra følgjer ein setervegen inn til Grandesætra. Frå setra går ein slakt inn og oppover Gråsteindalen, og komen inn mot botnen av dalen følgjer ein den store snøflanken heile vegen til topps. Same veg attende i flott skiterreng med slake hellingsvinklar.",
     "trailhead": {
      "name": "Korsmyra",
@@ -3048,7 +3048,7 @@
   "routes": [
    {
     "id": "normalruta",
-    "name": "Normalruta frå Svartevatnet opp Vassdalen",
+    "name": "Normalruta fra Svartevatnet opp Vassdalen",
     "description": "Frå parkeringa ved Svartevatnet går ein vestover, på venstre side av elva, opp Vassdalen i ganske bratt terreng til ein når nokre små fjellvatn på om lag 950 moh. Derifrå held ein nordvestover mot toppryggen, og dei siste metrane blir gjerne gått utan ski. Same veg ned.",
     "trailhead": {
      "name": "Svartevatnet ved Vasshaugen",
@@ -3099,7 +3099,7 @@
   "routes": [
    {
     "id": "normalruta",
-    "name": "Normalruta frå Bødalssætra over Kåpevatnet og Bohrsbreen",
+    "name": "Normalruta fra Bødalssætra over Kåpevatnet og Bohrsbreen",
     "description": "Frå Bødalssætra går ein austover langs nordaustsida av dalen mot osen av Sætrevatnet og følgjer elva vidare innover til Kåpevatnet. Derfrå svingar ein sørover og opp Brattebakkane inn på Bohrsbreen, som ein følgjer opp mot ryggen. Ein traverserer under Veslekåpa og går siste stykket opp til toppen. Breutstyr, stegjern og isøks høyrer med.",
     "trailhead": {
      "name": "Bødalssætra",
@@ -3137,7 +3137,7 @@
   "routes": [
    {
     "id": "normalruta",
-    "name": "Normalruta frå Drageset over Remestøylen og Hestehytta",
+    "name": "Normalruta fra Drageset over Remestøylen og Hestehytta",
     "description": "Frå grinda på Dragesetvegen innerst i Innvikdalen følgjer ein traktorvegen opp til Remestøylen. Derfrå held ein vest-sørvestover opp den tydelege ryggen med Innvikdalen på høgre side, forbi Hestehytta på 900 moh, og vidare langs ryggen heilt til toppen. Same veg ned — det finst fleire skredutsette nedkøyringsalternativ her, så følg ruta og ikkje andre sine spor.",
     "trailhead": {
      "name": "Dragesetvegen i Innvikdalen",
@@ -3175,7 +3175,7 @@
   "routes": [
    {
     "id": "normalruta",
-    "name": "Normalruta frå Randabygd idrettsanlegg",
+    "name": "Normalruta fra Randabygd idrettsanlegg",
     "description": "Frå parkeringa ved idrettsanlegget i Randabygd følgjer ein grusvegen nordaustover, og svingar så nordover og nordvestover på venstre (vestre) side av Djupegrova. Etter eit brattare parti flatar det ut, og ein held nordaustover mot eit markert skar. Frå skaret tek ein austover til toppen av Glitregga. Same veg ned.",
     "trailhead": {
      "name": "Randabygd idrettsanlegg",
@@ -3201,7 +3201,7 @@
   "routes": [
    {
     "id": "normalruta",
-    "name": "Normalruta frå Klakegg opp Haugadalen og Haugabreen",
+    "name": "Normalruta fra Klakegg opp Haugadalen og Haugabreen",
     "description": "Frå parkeringa ved campingplassen i Stardalen følgjer ein skogsvegen innover Haugadalen til Haugastøylen. Vidare går ein opp dalen til brefallet, og opp midt i fallet på Haugabreen. Oppe på platået traverserer ein nordvestover og kjem opp på toppen frå nordvest. Same veg ned.",
     "trailhead": {
      "name": "Stardalen ved Høyseth",
@@ -3315,7 +3315,7 @@
   "routes": [
    {
     "id": "normalruta",
-    "name": "Normalruta frå Rytnane over Kårstadstølen og Grunnevatnet",
+    "name": "Normalruta fra Rytnane over Kårstadstølen og Grunnevatnet",
     "description": "Frå Kårstad og Rytnane følgjer ein skogsvegen vidare oppover mot Kårstadstølen. Så held ein aust mot Rabbane, og deretter i nordleg retning mot skaret aust for Skardavatnet på 715 moh. Ruta går på nordsida av Skardavatnet i vestleg retning og rundar Grunnevatnet. Etter å ha teke litt høgde vest for Grunnevatnet følgjer ein den markerte skålformasjonen sørover heilt opp til toppen.",
     "trailhead": {
      "name": "Rytnavegen ved Rytnane",
@@ -3359,7 +3359,7 @@
   "routes": [
    {
     "id": "normalruta",
-    "name": "Normalruta frå Mollandsmarki opp sørvestryggen",
+    "name": "Normalruta fra Mollandsmarki opp sørvestryggen",
     "description": "Frå parkeringa på Mollandsmarki følgjer ein vegen mot Garden og vidare opp sommarstien gjennom skogen. Over tregrensa tek ein inn på sørvestryggen, som fører heile vegen til toppen. Det brattaste ligg mellom 850 og 1000 moh. Same veg ned; på stabile dagar kan ein òg køyre rett vestover frå toppen, men då må ein passe på å ikkje hamne i den tette skogen.",
     "trailhead": {
      "name": "Mollandsmarki",
@@ -3381,7 +3381,7 @@
    },
    {
     "id": "marifjora",
-    "name": "Frå Marifjøra over Svolsete",
+    "name": "Fra Marifjøra over Svolsete",
     "description": "Frå kaia i Marifjøra på traktorveg/grusveg, bratt opp i skogen til Steinkveane og vidare til den nedlagde stølen Svolsete, og derfrå i fjellterreng til toppen",
     "trailhead": {
      "name": "Marifjøra",
@@ -3431,7 +3431,7 @@
   "routes": [
    {
     "id": "normalruta",
-    "name": "Normalruta frå Ljosno over Eggjane",
+    "name": "Normalruta fra Ljosno over Eggjane",
     "description": "Frå Ljosno i Brandsetdalen følgjer ein bjørkeskogen opp mot nordsida av Middagshovden. Før toppen tek ein av mot Eggjane og følgjer platået halvanna kilometer vestover mot Storanosi. Same veg ned.",
     "trailhead": {
      "name": "Ljosno i Brandsetdalen",
@@ -3457,7 +3457,7 @@
   "routes": [
    {
     "id": "normalruta",
-    "name": "Normalruta frå Skiple gjennom Horndalsbotnen",
+    "name": "Normalruta fra Skiple gjennom Horndalsbotnen",
     "description": "Frå brua over Raundalselvi ved Skiple følgjer ein traktorvegen forbi Horndalsbruni og inn i Horndalsbotnen. Frå botnen stig ein opp til skuldra på om lag 1300 moh, og går derfrå den siste kneika opp til toppen. Same veg ned.",
     "trailhead": {
      "name": "Skiple i Raundalen",
@@ -3485,7 +3485,7 @@
    },
    {
     "id": "skaftedalen",
-    "name": "Frå sør, opp frå Skaftedalen over Skytjeset",
+    "name": "Fra sør, opp fra Skaftedalen over Skytjeset",
     "description": "Frå enden av Skaftedalsvegen i slakt terreng nordaustover opp til stølen Skytjeset på om lag 890 moh, og derfrå anten inn i det bratte, markerte dalsøkket som leier til toppen eller ut til venstre på ryggformasjonen og vidare opp flanken til topps.",
     "trailhead": {
      "name": "Skaftedalen",
@@ -3541,7 +3541,7 @@
   "routes": [
    {
     "id": "normalruta",
-    "name": "Normalruta frå Ænes over Gygrastølvatnet",
+    "name": "Normalruta fra Ænes over Gygrastølvatnet",
     "description": "Frå Ænes følgjer ein anleggsvegen opp frå kyrkja og stien vidare til Gygrastølvatnet. Frå vatnet går ein opp på sjølve ryggen og følgjer han heile vegen til toppen — det er den tryggaste linja. Nedkøyringa følgjer normalt same ryggen; nordvestflanken er eit brattare alternativ i skredterreng.",
     "trailhead": {
      "name": "Ænes",
@@ -3567,7 +3567,7 @@
   "routes": [
    {
     "id": "normalruta",
-    "name": "Normalruta frå Myrdalsvatnet opp nordryggen",
+    "name": "Normalruta fra Myrdalsvatnet opp nordryggen",
     "description": "Frå Myrdalsvatnet følgjer ein vegen litt tilbake til ein traktorveg, og følgjer denne til Nipelva kjem til syne. Så følgjer ein elva oppover til ryggen over Omnetjørnene. Derfrå held ein austover mot Møsetjørnene med Juklavasstinden framfor seg, og går opp den nordlege ryggen til topps — det er den tryggaste linja. Same veg ned.",
     "trailhead": {
      "name": "Myrdalsvatnet",
@@ -4247,7 +4247,7 @@
    },
    {
     "id": "trollheimshytta",
-    "name": "Frå Trollheimshytta under Litj-Snota",
+    "name": "Fra Trollheimshytta under Litj-Snota",
     "description": "Frå Trollheimshytta etter merka sommarløype over bruene på Slettåa og Folda, forbi Bossvasshøgda og opp i botnen vest for henne, inn på vinterruta frå Gråhaugen og under Litj-Snota, over breen og opp på toppflanken",
     "trailhead": {
      "name": "Trollheimshytta",
@@ -4328,7 +4328,7 @@
   "routes": [
    {
     "id": "lykkjastolen",
-    "name": "Frå Lykkjastølen vest for fossen",
+    "name": "Fra Lykkjastølen vest for fossen",
     "description": "Frå parkeringa ved Lykkjastølen (939 moh) ser du fossen i Nordrestølbekken eit stykke opp i lia. Hald vestsida av han og skrå opp langs fossen til du er over 1075 moh. Derfrå fell det seg naturleg å følgje dalen oppover — renna held seg til høgre for deg — og du får toppen i front eller på høgre hand heile vegen. Over 1364 moh flatar det av eit stykke før den siste, jamne stigninga. Linja kjem opp vest for toppen på 1708 moh og snur austover langs toppryggen dei siste 300 metrane til varden på 1741.",
     "trailhead": {
      "name": "Lykkjastølen",
@@ -4366,7 +4366,7 @@
   "routes": [
    {
     "id": "eldrevatn",
-    "name": "Frå Eldrevatn opp nordvestflanken",
+    "name": "Fra Eldrevatn opp nordvestflanken",
     "description": "Frå den opparbeidde parkeringa ved fylkesgrensa ved Eldrevatn (1122 moh) på rv 52 over Hemsedalsfjellet går du søraust. Ruta gir seg sjølv: ei brei, jamn nordvestflanke på 20–25 grader utan noko å navigere etter, over 1325 moh og vidare opp til varden på 1592. Ned same veg, med sporet lagt i den breie fjellsida.",
     "trailhead": {
      "name": "Eldrevatn",
@@ -4392,7 +4392,7 @@
   "routes": [
    {
     "id": "kyrkjebon",
-    "name": "Frå grustaket ved Kyrkjebøen over den første toppen",
+    "name": "Fra grustaket ved Kyrkjebøen over den første toppen",
     "description": "Frå sandtaket ovanfor garden Kyrkjebøen (722 moh) følgjer du traktorvegen og sommarstien gjennom skogen. Løypa er merkt og svingar bratt til venstre etter om lag ein kilometer, opp Gravarbakkane (1010 moh). Følg henne ut av tregrensa og gå på vestsida av den vesle toppen rett etter tregrensa (1288 moh) — sjølve toppen måler 1299. Derfrå svingar du austover igjen og følgjer ryggen opp (1465 moh) til fortoppen på 1610 moh. Den siste delen av ryggen mot toppen er lang og flat: du fell 20 meter ned i skaret (1589 moh) og går dei siste 400 metrane nordover til det høgste punktet på 1671. Skal du ned same vegen, kan du snu på fortoppen.",
     "trailhead": {
      "name": "Grustaket ved Kyrkjebøen",
@@ -4594,7 +4594,7 @@
   "routes": [
    {
     "id": "vestby",
-    "name": "Frå Vestby opp gjennom skogen",
+    "name": "Fra Vestby opp gjennom skogen",
     "description": "Frå Vestby (559 moh), rett ved Misjonshuset, går ruta nordvest opp gjennom skogsterreng. Stigninga er jamn heile vegen — 675 moh etter ein kilometer, 801 moh etter to — og det er skog til godt over 800. På 838 moh opnar terrenget seg, og dei siste hundre metrane går i ope fjell til toppen på 854. Derfrå er utsikta vid i alle himmelretningar. Ned same veg.",
     "trailhead": {
      "name": "Vestby",
@@ -4954,7 +4954,7 @@
   "routes": [
    {
     "id": "sildegjerdet",
-    "name": "Frå Sildegjerdet ved rv 52",
+    "name": "Fra Sildegjerdet ved rv 52",
     "description": "Frå den brøytte parkeringslomma ved stølsområdet Sildegjerdet (938 moh) kryssar du elva og går sørvestover. Etter dei første 500 metrane byrjar sjølve oppstigninga gjennom glissen bjørkeskog og inn i den vide dalen til Rupebekken. Skogen slepper taket rundt 1130 moh, og derfrå går ruta i ope skredterreng opp mot 1400, der det flatar av eit stykke. Dei siste vel to hundre høgdemetrane stig jamt til varden på 1609.",
     "trailhead": {
      "name": "Sildegjerdet",
@@ -4986,7 +4986,7 @@
   "routes": [
    {
     "id": "osavatnet",
-    "name": "Frå Osavatnet over Redningshytta",
+    "name": "Fra Osavatnet over Redningshytta",
     "description": "Frå Osavatnet i Bjørndalen forbi Svartavatnet og Redningshytta til Gullfjellstoppen",
     "avoidWater": true,
     "waterNote": "Osavatnet ligg på 307 moh ved kysten på Bergens breiddegrad, og Svartavatnet er regulert og blir tappa ned om vinteren. Isen kan ikkje føresetjast, så linja skal gå på land.",
@@ -5363,7 +5363,7 @@
    },
    {
     "id": "gullbotn",
-    "name": "Frå Gullbotn over Gullfjellhalsen",
+    "name": "Fra Gullbotn over Gullfjellhalsen",
     "trailhead": {
      "lat": 60.40767,
      "lng": 5.63913,
@@ -5407,7 +5407,7 @@
   "routes": [
    {
     "id": "eikedalen",
-    "name": "Frå Eikedalen inn Skeiskvanndalen",
+    "name": "Fra Eikedalen inn Skeiskvanndalen",
     "description": "Frå den innarste parkeringsplassen ved Eikedalen skisenter etter setervegen dei fyrste hundre høgdemetrane, flatt inn Skeiskvanndalen, og frå Rosselandsbotnen bratt austover opp i skaret nord for toppen",
     "avoidWater": false,
     "waterNote": "Dalbotnen i Skeiskvanndalen ber to naturlege vatn på 551 moh — ei namnlaus tjørn ved 60.413/5.951 og Skeiskvanndalsvatnet (Tjern i registeret, 60.41617/5.95821) — og Fri Flyt seier ikkje kva side den flate anmarsjen tek. Med same is-argumentet som Gullfjellstoppen (kystnært, lågt, «ikkje den mest snøsikre byen») er lina pinna på den tørre nordvestsida forbi begge, målt punkt for punkt mot terrengklassane. Fyrste løysinga med vannkost las den flate myra som vatn og vov; utan vannkost kryssa lina tjørnene. Pinnene er svaret på begge delar, og check_ground.py er dommaren.",
@@ -5530,7 +5530,7 @@
   "routes": [
    {
     "id": "fitjadalen",
-    "name": "Frå Fitjadalen om Håsete",
+    "name": "Fra Fitjadalen om Håsete",
     "description": "Frå parkeringa ved støls- og hyttetunet i Fitjadalen over gangbrua på Kjølo, opp lia til Håsete, vidare nordvestover forbi skihytta og nordover opp i skaret mellom Glynt og toppen",
     "corridorNote": "Trasé etter Fri Flyt og ut.no 116438, på den kartlagde stikjeda way/376310909 → way/376310905 → way/953805990: sti-start ved Kjølo (302,6 moh), Håsete-stølen (bygning way/1391666538, 21 m frå registerpunktet, 753,8 moh), skihytta (OSM way/939488686, 1109,8 moh — Fri Flyt seier «omtrent 1000 moh», westcoastpeaks «the hut at 1100m»), og skaret mellom Glynt og toppen der sommarstien kryssar skuldra 1300,6 moh 85 m nord for varden. Alternativ-oppstiginga Fri Flyt nemner frå skihytta — sommarstien på skråhyller — er ikkje korridoren: han åtvarar sjølv mot henne ved hardt føre.",
     "trailhead": {
@@ -5603,7 +5603,7 @@
   "routes": [
    {
     "id": "furedalen",
-    "name": "Frå Furedalen om Mødal",
+    "name": "Fra Furedalen om Mødal",
     "description": "Frå Furedalen alpinsenter etter dei prepparerte løypene på Mødalsvegen til Mødal, opp kliva mot Stoveveggen, sør for Gråskorvenuten, gjennom søkket og siste biten langs ryggen til varden",
     "avoidWater": false,
     "waterNote": "Lina er trekt av ut.no si eiga GPX-linje. Fyrste løysinga køyrde med vannkost og la 281 ekstrapunkt i våte legg utan å bli rein (85 m att); det våte langs lina er myr og småtjørner på platået som kjelda sjølv kryssar. Løyst utan vannkost; vasskontakt målt og handtert med check_ground.py etter Snota/Styggemann-regelen — kryssingar kjelda sjølv tek, blir namngjevne i prosaen, og regulerte vatn finst ikkje på lina.",
@@ -5720,7 +5720,7 @@
   "routes": [
    {
     "id": "halsabakkane",
-    "name": "Frå leirplassen på toppen av Halsabakkane",
+    "name": "Fra leirplassen på toppen av Halsabakkane",
     "description": "Frå leirplassen ved Sendo på toppen av Halsabakkane (770 moh) over brua på Sendo-elva, sørover opp ryggen på austsida av Finnbujuvet, forbi møtepunktet med alternativtilkomsten frå Myrkdalen skisenter på skuldra ved 1090 moh, og vestover opp austryggen til toppen registeret kallar Finnbunuten",
     "trailhead": {
      "name": "Halsabakkane",
@@ -5788,7 +5788,7 @@
   "routes": [
    {
     "id": "tverrberg",
-    "name": "Frå Tverrberg om Budalen og Nyestølen",
+    "name": "Fra Tverrberg om Budalen og Nyestølen",
     "description": "Frå parkeringa på Tverrberg (383 moh) etter Tverrbergsvegen sørover til vegdelet på 475 moh, Øvraset-vegen austover inn Budalen om Øvraset (639 moh) og opp til Nyestølen, rett nord etter skoggrensa, opp på eggi vest for Rjupetjørnane, og austover over platået til toppen",
     "trailhead": {
      "name": "Tverrberg",
@@ -5874,7 +5874,7 @@
   "routes": [
    {
     "id": "kabelvagmarka",
-    "name": "Frå Eidet ved Kabelvåg over Aksla",
+    "name": "Fra Eidet ved Kabelvåg over Aksla",
     "description": "Frå Karlsvågen-parkeringa ved Eidet etter lysløypa (Damveien) langs austsida av Karlsvatnet, over eidet mellom Karlsvatnet og det regulerte Stor-Kongsvatnet, vestover til foten av Aksla, opp ryggen til rett under Ørntinden, til høgre gjennom skaret nord for toppen, og vestover flanken til Varden",
     "trailhead": {
      "name": "Eidet",
@@ -5962,7 +5962,7 @@
   "routes": [
    {
     "id": "sagelva",
-    "name": "Frå Sagelva ved rv80 om militærløypa",
+    "name": "Fra Sagelva ved rv80 om militærløypa",
     "description": "Frå avkøyringa ved Kleivberget nordaust for Sagelva-utløpet på rv80, nordover gjennom hyttefeltet forbi øvste hytta (Geilo, ca 50 moh), nordnordaust opp rampene mot Innertinden til militærløypemerkinga ved 560, vestover langs merkinga til søraustryggen frå Midtitinden ved ca 720, ryggen til ca 900, og nordover inn på nordaustryggen ved 980 til toppen",
     "trailhead": {
      "name": "Sagelva",
@@ -6030,7 +6030,7 @@
   "routes": [
    {
     "id": "varto",
-    "name": "Normalruta I frå Varto",
+    "name": "Normalruta I fra Varto",
     "description": "Frå vegenden av Vardoveien på Varto (115 moh) etter anleggsvegen opp til dammen på Rottenvikvatnet, på land langs vest- og nordsida av magasinet, opp på flata på 650 moh, vestover nord for det vesle vatnet, opp den vesle ryggformasjonen og rett mot toppen",
     "trailhead": {
      "name": "Varto",
@@ -6117,7 +6117,7 @@
   "routes": [
    {
     "id": "brandhaugane",
-    "name": "Normalvegen frå Brandhaugane opp søraustryggen",
+    "name": "Normalveien fra Brandhaugane opp sørøstryggen",
     "description": "Frå toppturparkeringa ved rv5 på Brandhaugane (426 moh) opp søraustryggen gjennom skogen, gjennom det brattare partiet over skoggrensa, ut på flata ved Orraleiken (1042 moh), og siste stigninga til Togga",
     "trailhead": {
      "name": "Brandhaugane",
@@ -6161,7 +6161,7 @@
   "routes": [
    {
     "id": "musland",
-    "name": "Frå Musland om Såta",
+    "name": "Fra Musland om Såta",
     "description": "Frå fyrste garden på Musland etter traktorvegen og den merkte stien vestover, over dalen, opp flanken til Såta (651 moh), og sørover den bratte ryggen til toppen",
     "trailhead": {
      "name": "Musland",
@@ -6235,7 +6235,7 @@
   "routes": [
    {
     "id": "horsdal",
-    "name": "Frå Horsdal om Stjerndalen",
+    "name": "Fra Horsdal om Stjerndalen",
     "description": "Frå garden på Horsdal etter den merkte stien langs fjæra, opp trappene til flata i Stjerndalen på ~190 moh, nordover mot 450, vestover i slakt terreng nord for punkt 592, og nordover toppflanken til varden",
     "trailhead": {
      "name": "Horsdal",
@@ -6349,7 +6349,7 @@
   "routes": [
    {
     "id": "forsland",
-    "name": "Frå Forsland om Forslandsvatnet",
+    "name": "Fra Forsland om Forslandsvatnet",
     "description": "Frå åkeren ved Forsland etter den merkte stien vestover opp til høgda der Forslandsvatnet ligg, nordover forbi tjernet på land, og opp den nordvestgåande ryggen heilt til toppen",
     "trailhead": {
      "name": "Forsland",
@@ -6425,7 +6425,7 @@
   "routes": [
    {
     "id": "kaperdalen",
-    "name": "Normalruta frå Kaperdalen",
+    "name": "Normalruta fra Kaperdalen",
     "description": "Frå parkeringslomma langs fv. 7862 i Kaperdalen opp mot det vesle skaret nord for punkt 504, jamt vidare mot fortoppen på 870, og dei siste høgdemetrane til toppen",
     "trailhead": {
      "name": "Kaperdalen",
@@ -6469,7 +6469,7 @@
   "routes": [
    {
     "id": "normalvegen",
-    "name": "Normalvegen frå Tindelva",
+    "name": "Normalveien fra Tindelva",
     "description": "Frå parkeringa der Tindelva kjem ned ved Iselvmoen på vegen mot Fjellstad, opp sørsida av elva gjennom den bratte bjørkelia, over skoggrensa innover i gryta mot nordveggen, og opp ryggen på vestsida av veggen — vest for breen i botnen, slik båe kjeldene seier — til toppen",
     "trailhead": {
      "name": "Tindelva",
@@ -6537,7 +6537,7 @@
   "routes": [
    {
     "id": "skaland",
-    "name": "Normalruta frå Skaland",
+    "name": "Normalruta fra Skaland",
     "description": "Frå kyrkja på Skaland etter Dronningstien til Grillbua, vidare på rydda skogstrasé opp til Sommerdalen og forbi Sommerdalhaugen, og så jamt stigande langs ryggen til toppen",
     "trailhead": {
      "name": "Skaland",
@@ -6605,7 +6605,7 @@
   "routes": [
    {
     "id": "normalruta",
-    "name": "Normalruta frå Finnelva",
+    "name": "Normalruta fra Finnelva",
     "description": "Frå vegenden ved vassbassenget ved Finnelva over det flate myrterrenget, opp ryggen mot Lonketuva og vidare nordover toppryggen som gradvis blir brattare, til varden",
     "trailhead": {
      "name": "Finnelva",
@@ -6673,7 +6673,7 @@
   "routes": [
    {
     "id": "normalruta",
-    "name": "Normalruta frå Krokelvdalen",
+    "name": "Normalruta fra Krokelvdalen",
     "description": "Frå parkeringa langs fv. 862 i Krokelvdalen jamt stigande opp gjennom småskogen, over flata på 500 moh og så nordvestover inn på ryggen til toppen",
     "trailhead": {
      "name": "Krokelvdalen",
@@ -6723,7 +6723,7 @@
   "routes": [
    {
     "id": "normalruta",
-    "name": "Normalruta frå Kammen",
+    "name": "Normalruta fra Kammen",
     "description": "Frå vegenden ved garden på Kammen, opp traktorvegen og vidare i sør-søraustleg retning opp dalen mot bekken, så den slakare ryggen frå aust opp på ryggkammen og rett opp til toppen",
     "trailhead": {
      "name": "Kammen",
@@ -6785,7 +6785,7 @@
   "routes": [
    {
     "id": "normalruta",
-    "name": "Normalruta frå Neset",
+    "name": "Normalruta fra Neset",
     "description": "Frå Neset ved Flostrand rett opp til over skoggrensa i nord-nordvestleg retning, så vestover på rabbane over det flate, ulendte partiet, sør om tjernklynga på 785–792 moh og opp den slake helninga til toppen",
     "trailhead": {
      "name": "Neset",
@@ -7971,7 +7971,7 @@
    },
    {
     "id": "narvik",
-    "name": "Frå Narvik gjennom Tøttadalen",
+    "name": "Fra Narvik gjennom Tøttadalen",
     "description": "Frå parkeringa ved minikraftverket i Taraldsvikfossen nordaust for skiheisene i Narvikfjellet, langs den merkte turstien inn i Tøttadalen til Pumpvatnet, og derfrå som normalruta: bekkedalen mot Forsnesvatnet, austsida av vatnet på land, opp mot skaret mellom Moskočohkka og Tøtta, og ryggen sørover til toppen.",
     "trailhead": {
      "name": "Taraldsvikfossen",
@@ -8109,7 +8109,7 @@
    },
    {
     "id": "lapphaugen",
-    "name": "Opp frå Lapphaugen turiststasjon",
+    "name": "Opp fra Lapphaugen turiststasjon",
     "description": "Frå parkeringa ved Lapphaugen turiststasjon forbi husvognene og opp gjennom skogen ved toppen av campingen, skrått mot høgre til over tregrensa, opp og litt til venstre på fleire bratte bakker til platået under toppen, og opp snøfeltet ovanfor platået inn på normalruta og toppen.",
     "trailhead": {
      "name": "Lapphaugen turiststasjon",
@@ -8424,7 +8424,7 @@
    },
    {
     "id": "gullesfjordbotn",
-    "name": "Østruta frå Gullesfjordbotn",
+    "name": "Østruta fra Gullesfjordbotn",
     "description": "Frå Gullesfjordbotn camping på nordsida (høgre) av Vesterelva, over vatnet på 76 og vidare på andre sida, vestover over vatnet på 113 og opp den bratte traseen mot vatnet på 289, sørover langs den slake ryggen mot høgda 667 og opp på Vestbotntinden, ned til Øvre Storelvvatnet og over vatnet, og opp att inn på ruta frå Snytindhytta som rundar toppen på vestsida og går opp frå sør.",
     "trailhead": {
      "name": "Gullesfjordbotn camping",
@@ -9752,7 +9752,7 @@
    },
    {
     "id": "rytterklofta",
-    "name": "Rytterkløfta frå Vasskaret",
+    "name": "Rytterkløfta fra Vasskaret",
     "description": "Fra enden av veien i Vasskaret østover langs bred sti mot Mørkevatnet, og etter Strupen rett sørover opp Rytterkløfta og videre til høyde 1152 og toppen",
     "trailhead": {
      "name": "Vasskaret",
