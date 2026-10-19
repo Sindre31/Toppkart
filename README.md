@@ -356,6 +356,16 @@ content and data quality that has to be settled before the site is promoted wide
   so it is `confidence: medium` and its summit is seeded. **Heggmotinden's whole south side lies in
   the Heggmoen firing range**, which the guide says. See «The Bodø round» in
   `scripts/build-routes/README.md`.
+- **Forty-five lines that ran beside the path through forest now run on it.** A line solved over
+  the terrain model does not know a path is drawn on the map, and in places it ran 50–200 m to one
+  side of one and came back. On open ground that is left alone — it is snow either side, and the
+  winter line is often the better one — but below the treeline the path is where the trees are
+  cleared, so `follow_trails.py` puts those stretches on the mapped path or road, changing nothing
+  else on the line: the steepest 30 m is unchanged on 40 of the 45 and no card moved. 73 forest
+  stretches on 57 routes stay, each with its reason in `follow_trails_run.txt` — mostly a path
+  that goes somewhere else, a line on the path that would change the card's vertical, or a
+  research waypoint that holds the line where it is. See «The path round» in
+  `scripts/build-routes/README.md`.
 - **The tour cards are checked, the guides are checked, the geometry is checked — by machine.**
   `check_tours.py` and `check_routes.py` come back clean on all 201 tours and `check_guides.py` on
   every number in all 201 guides: every card height is DTM1 at the resolved summit, every vertical is

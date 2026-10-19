@@ -272,6 +272,11 @@
       "what": "Urdstjerna finst i registeret likevel",
       "figure": "Korridor-notatet seier «Urdstjerna finnes ikke i registeret og er utelatt fra waypointene». Det stemmer ikkje: SSR har Nedre Urdstjerna og Midtre Urdstjerna, begge navneobjekttype Tjern, innanfor 400 m av det punktet linja kryssar på 594 moh. Namnesøket leita truleg på «Urdstjerna» aleine og fann ikkje Nedre/Midtre-variantane.",
       "how": "ws.geonorge.no/stedsnavn/v1/punkt med radius 400 m på 59.50470/9.60903."
+    },
+    {
+      "what": "Åpent terreng over skoggrensa",
+      "figure": "830 moh",
+      "how": "Vertex 280 av ruta «ravalsjo» i routes.json etter stirunden (follow_trails.py), lest fra DTM1 av resample: 830 moh, 9.42 km ut. Tallet sto før i terrengprøvene til guide_facts; skjøten flyttet prøvepunktene, ikke høyden."
     }
   ],
   "rana": [
@@ -417,6 +422,11 @@
       "what": "Omnatjørnane, som linja går over og ikkje forbi",
       "figure": "Linja går 269 m over vatn på 1066 moh, opptil 100 m frå land, mellom 3200 og 3470 m ute. SSR gjev Omnatjørnane (Gruppe av tjern) 51 m frå kryssinga; guiden skreiv «Omnetjørnene», som ikkje er skrivemåten i registeret. Vatna ligg på sjølve ryggen, og guiden sitt «ryggen over Omnetjørnene» kan lesast både som over dei og forbi dei — linja går over. Naturleg vatn (Innsjø).",
       "how": "DTM1-terrengklasse på kvar vertex, perpendikulære profil, SSR-punktsøk."
+    },
+    {
+      "what": "Foten av nordryggen",
+      "figure": "865 moh",
+      "how": "Vertex 188 av ruta «normalruta» i routes.json etter stirunden (follow_trails.py), lest fra DTM1 av resample: 865 moh, 5.93 km ut. Tallet sto før i terrengprøvene til guide_facts; skjøten flyttet prøvepunktene, ikke høyden."
     }
   ],
   "gygrastolen": [
@@ -453,6 +463,11 @@
       "what": "Avstanden Skiple-Voss guiden oppgjev",
       "figure": "Parkeringa ved brua over Raundalselvi ved Skiple ligg pa 60.67739/6.69027. Luftlinje til Voss sentrum (Vangen, 60.6293/6.4152) er 15,9 km og til Voss stasjon 16,1 km. 20 km er vegavstanden langs Rv13 gjennom Raundalen, som er lengre enn luftlinja; guiden meiner vegavstanden.",
       "how": "Storsirkelavstand fra fyrste vertex i routes.json til Voss sentrum."
+    },
+    {
+      "what": "Sørruta opp Skaftedalen, punkt forbi 662",
+      "figure": "766 moh",
+      "how": "Vertex 68 av ruta «skaftedalen» i routes.json etter stirunden (follow_trails.py), lest fra DTM1 av resample: 766 moh, 2.19 km ut. Erstatter 724 moh, forskningsvegpunktet «slakt terreng mot stølen», som follow_trails.py byttet ut med stien og linja ikke lenger passerer."
     }
   ],
   "glitregga": [
@@ -2225,6 +2240,11 @@
       "what": "Alle kantar ved toppen (Nona)",
       "figure": "Ingen slak side på Grytøyas konge: N/NE/E måler 45,7–49,1° i snitt med vindu på 57–66°, og SV — den snillaste — 27,8°. Renna i vestruta og Syd direkte ligg i flankar som måler 37,9 og 34,7 i snitt",
       "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+    },
+    {
+      "what": "Dalbotnen i Dalsdalen der linja går på skitursporet",
+      "figure": "118 moh",
+      "how": "Vertex 49 av ruta «vestsiden» i routes.json etter stirunden (follow_trails.py), lest fra DTM1 av resample: 118 moh, 1.99 km ut. Erstatter 137 moh, forskningsvegpunktet «Dalsdalen», som follow_trails.py byttet ut med stien og linja ikke lenger passerer."
     }
   ],
   "trolltinden": [
@@ -2400,6 +2420,11 @@
       "what": "Alle kantar ved toppen (Lakselvtindan)",
       "figure": "NV er 5,4° i snitt og SV 17,7 — der ryggen frå Lakselva kjem — og N 16,0. Ingen peiling har eit vindauge over 50,4, og det er E, 290–350 m ute. Det mildaste toppartiet i runden",
       "how": "flank_probe.py <lat> <lng> --out 500 --step 10 (600 for Årbostadtinden) frå toppkoordinaten i summits.json, åtte peilingar over DTM1. Snittet er heile radialen; vindauget er det brattaste 60-metersvinduet langs den."
+    },
+    {
+      "what": "Bratteste 30 m der linja følger stien i lia over parkeringa",
+      "figure": "21,1 grader mellom 68 og 80 moh",
+      "how": "router.steepest_span over den delen av ruta «sorsiden» i routes.json som ligger på eller under 300 moh, etter stirunden (follow_trails.py): 21,1° mellom vertex med 68 og 80 moh. Hele linjas bratteste er 25,5° mellom 656 og 674 moh (guide_facts steepestStep)."
     }
   ],
   "forkledalstindan": [
@@ -2484,6 +2509,16 @@
       "what": "Alle kantar ved toppen (Stortinden i Sortland)",
       "figure": "S er slakast med 21,1° i snitt, deretter SE 28,2. Vestsida ruta går opp måler 32,5 i snitt med eit 38,7-vindu 400–460 m ute — nett dei 30–40 grader kjelda oppgir for hovudnedkjøringa. N er brattast med 39,9 i snitt og 62,6 på 150–210, E 36,3 med 64,4 på 100–160: toppen er avskoren mot nord og aust",
       "how": "flank_probe.py <lat> <lng> --out 500 --step 10 frå toppkoordinaten i summits.json, åtte peilingar over DTM1. Snittet er heile radialen; vindauget er det brattaste 60-metersvinduet langs den."
+    },
+    {
+      "what": "Dalmunnen",
+      "figure": "92 moh",
+      "how": "DTM1 i forskningsvegpunktet «dalmunnen» (68.6101, 15.594) slik det sto i corridors.json før stirunden: 92.0 moh. follow_trails.py erstattet vegpunktet med stien; linja passerer nå 73 m unna, på 95 moh."
+    },
+    {
+      "what": "Dalen",
+      "figure": "274 moh",
+      "how": "DTM1 i forskningsvegpunktet «dalen» (68.6086, 15.601) slik det sto i corridors.json før stirunden: 274.0 moh. follow_trails.py erstattet vegpunktet med stien; linja passerer nå 106 m unna, på 267 moh."
     }
   ],
   "storlitinden": [
@@ -2491,6 +2526,11 @@
       "what": "Alle kantar ved toppen (Storlitinden)",
       "figure": "NE er slakast med 5,0° i snitt og N 6,7, E 9,0 og SE 10,9 — ruta kjem opp sørausthellinga. S måler 17,6 i snitt med eit 32,5-vindu 370–430 m ute og SV 14,8 med 33,6 på 250–310: det er området kjelda seier ligg «til venstre (vest)» av ruta og ikkje må kjørast",
       "how": "flank_probe.py <lat> <lng> --out 500 --step 10 frå toppkoordinaten i summits.json, åtte peilingar over DTM1. Snittet er heile radialen; vindauget er det brattaste 60-metersvinduet langs den."
+    },
+    {
+      "what": "Kvilheim ved traktorveien",
+      "figure": "214 moh",
+      "how": "DTM1 i forskningsvegpunktet «traktorvegen forbi Kvilheim» (68.78338, 16.33343) slik det sto i corridors.json før stirunden: 214.0 moh. follow_trails.py erstattet vegpunktet med stien; linja passerer nå 23 m unna, på 211 moh."
     }
   ],
   "vetefjellet": [
@@ -2914,6 +2954,16 @@
       "what": "Varslingsregionen toppkoordinaten ligger i",
       "figure": "Indre Sogn (region 3029), regiontype A — varslet daglig i sesongen",
       "how": "Spurt Varsom/NVE på samme endepunkt som appen bruker: api01.nve.no/hydrology/forecast/avalanche/v6.3.0/api/AvalancheWarningByCoordinates/Simple/<lat>/<lng>/1/<dato>/<dato> med toppkoordinaten fra summits.json."
+    },
+    {
+      "what": "Stølen Tråna",
+      "figure": "69 meter unna ved 0,79 km",
+      "how": "SSR: Tråna, Seter/støl, Sogndal (61.27545, 7.02854). Korteste avstand til ruta «fretland» i routes.json etter stirunden, lest hvert 1/20 segment: 69 m, 0,79 km ut fra start."
+    },
+    {
+      "what": "Stølen Stokksete",
+      "figure": "80 meter unna ved 1,34 km",
+      "how": "SSR: Stokksete, Seter/støl, Sogndal (61.27937, 7.0286). Korteste avstand til ruta «fretland» etter stirunden på samme måte: 79 m, 1,34 km ut; guiden skrev 80 m før stirunden og avstanden er uendret."
     }
   ],
   "kvalhornet": [
@@ -3005,6 +3055,13 @@
       "what": "Varslingsregionen toppkoordinaten ligger i",
       "figure": "Salten (region 3016), regiontype A — varslet daglig i sesongen",
       "how": "Spurt Varsom/NVE på samme endepunkt som appen bruker: api01.nve.no/hydrology/forecast/avalanche/v6.3.0/api/AvalancheWarningByCoordinates/Simple/<lat>/<lng>/1/<dato>/<dato> med toppkoordinaten fra summits.json."
+    }
+  ],
+  "keipen": [
+    {
+      "what": "Fallinja rett nord fra skåla",
+      "figure": "29 til 36 grader de første 180 meterne",
+      "how": "flank_probe.py 69.49037 17.72332 0 --out 500 --step 10, fra vertex 76 av ruta «normalruta» (593 moh): 10-metersstegene måler 26–37° fra 0 til 190 m ut (593,7 til 713,3 moh), og 51–73° mellom 713 og 777 moh. «180» er meter grunn, ikke høydemeter — den norske teksten sa «høydemetrene» og er rettet."
     }
   ]
 }

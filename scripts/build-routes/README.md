@@ -98,6 +98,7 @@ python3 emit_ts.py            # routes.json         -> ../../lib/routes.ts
 python3 check_routes.py       # independent sanity pass over the geometry
 python3 check_tours.py        # the card figures: summit, vertical, coordinate, seed
 python3 check_geometry.py     # the shape of every line: scribbles, spurs, sea, notches — offline
+python3 follow_trails.py --survey  # where a line runs beside a mapped path; forest ones listed
 
 # only when re-running the research itself:
 python3 find_trailheads.py            # OSM roads/parking -> trailhead_candidates.json
@@ -6881,6 +6882,167 @@ bus stop — said in the record and the guide), `check_routes`, `check_tours` an
 three, `check_guides` and `check_bands` clean (0 unsourced numbers, 12 band
 claims all agreeing), `check_treeline`, `check_gain` and `check_steepness` with
 nothing to look at, and `npm run typecheck`, `lint`, `test` and `build`.
+
+## The path round: lines that ran beside the path
+
+A reader looking at the map saw what the checks so far did not ask about: in
+places the line runs beside the path drawn on the map, 50–200 m off it, for a
+few hundred metres, and then comes back. The routes are solved over the
+terrain model, which does not know a path is there. The question put to the
+round was whether each of those lines *should* be on the path — with the
+reader's own rider: it is winter, so it does not matter much as long as the
+ground beside the path can be travelled.
+
+That rider is the rule the round applies. **On open ground it does not
+matter**: above the treeline, on a bog or a glacier, the snow is the same on
+either side of a summer path, and the winter line is often the better one.
+**In forest it does**: the path is where the trees are cleared and the track is
+broken, and a line 150 m into the birch beside it is one nobody will follow.
+`follow_trails.py` measures every route against OSM's paths, tracks and minor
+roads (`trails.py`), finds the *detours* — at least 150 m more than 30 m off
+any mapped way, leaving one and coming back to one, mostly within 150 m of
+it — and reads Kartverket's terrain class every 40 m along each.
+
+**45 of the 239 routes were put on the path** where they ran beside it through
+forest. What is left, on the shipped lines, is in `follow_trails_run.txt`:
+
+| detours left | | routes |
+| --- | --- | --- |
+| on open ground — skiable either side, left as they are | 218 (102 km) | |
+| mostly `Skog`, each with the reason it stays | 73 | 57 |
+
+### How a forest detour is moved
+
+The stretch is replaced by the path itself: the shortest way along the mapped
+network from where the line leaves it to where it comes back. That path goes
+into `corridors.json` as waypoints with a `corridorNote`, so a re-solve through
+the corridor draws it, the rule `cut_spurs.py` set.
+
+What ships is not the re-solve. The first pass shipped whole re-solved lines,
+and once `resample_dtm1.py` had read them at 1 m, **eight of thirty were a
+degree or more steeper** — Melderskin's Myrdalsvatnet line 33.8° → 39.6°,
+Istinden 27.7° → 31.6° — mostly outside the stretch that moved: a re-solve re-cuts the grid and
+lands the smoothing differently everywhere, and at 1 m that moves the steepest
+30 m. So the shipped line keeps every vertex it had, only the forest detours
+are spliced in from the re-solve, and the result is read from DTM1. Of the 45,
+**the steepest 30 m is unchanged on 40**, gentler on three (Oksen 29.1° →
+28.2°, Mellomkollen 22.9° → 21.9°, Lakselvtindan 26.2° → 25.5°), and 0.1–0.4°
+steeper on two (Togga, Litletussen), on the path itself. Lines got up to 368 m
+longer — Horndalsnuten from Skaftedalen, which leaves 1.8 km of birch for the
+path — and Slogen 143 m shorter; no gain moved more than 15 m.
+
+The bars are `retrace_trails.py`'s — no new problem from
+`generate_routes.problems_with`, no more than 12% longer or higher, no more
+height given back, not more than a degree steeper above 25° — plus one more:
+**the card's vertical has to stay true of the primary route.** Skårene is the
+case: the path through the forest at the bottom of Gråsteindalen undulates, the
+spliced line climbs 1239 m against a card, a seed row and a teaser that say
+1220, and changing all three to draw a line on a path is a different tour, not
+a better line. And a spliced line has to pass `check_geometry` like any other:
+Jakobstinden's crossed itself at the bridge over Kongsvikdalselva and was put
+back.
+
+### The roads
+
+The first pass measured against paths only, the set `trails.py` gives the
+router. A line that follows the road from the car park then reads as a detour
+beside the footpath next to the road, and a path that meets a track by way of
+fifty metres of farm road reads as two paths that are «not connected». So
+`trails.fetch_roads` adds the minor roads (tertiary and below) for this pass,
+and a second pass over the lines the first one left found six more routes to
+move — Grønlifjellet, Istinden's start by the railway, Kongsviktinden,
+Skarasalen, Snønipa from Veitebergsdalen and Storlitinden — along tracks and
+farm roads. The router's own trail discount still takes paths only.
+
+### What was left in the forest, and why
+
+Fifty-seven routes, with the reason on each in `follow_trails_run.txt`. A
+route can have more than one.
+
+- **The path goes somewhere else** (28 routes — Gygrastølen, Vesoldo, Sula,
+  Mjølvafjellet among them): the shortest way along the mapped network is more
+  than half again as long as the line's detour. These are paths to a hut, a
+  farm or another summit that run alongside for a while; the line takes the
+  direct way through the forest, which is passable on snow.
+- **The card** (12): the line on the path climbs more than ten metres more or
+  less than the tour's stated vertical — Skårene, Forselvtinden, Lodalskåpa,
+  Vassdalstinden, Torvløysa among them. Those are for a round that is willing
+  to change the card, the teaser and the guide together.
+- **A research waypoint holds the line where it is** (11 — Hamperøkken's
+  Vartavarhaugen, Hattfjellet's tractor road in Bjørndalen, Rondslottet's
+  Langglupdalen): the corridor puts the line there for a reason the path does
+  not share, and this round does not overrule the research.
+- **«Not connected»** (9): the way the line leaves and the way it rejoins are
+  not joined in OSM, roads included, within 40 m. Englafjell is the one worth
+  knowing: the source says to carry skis on the trodden path from Musland, and
+  the line runs 70–190 m above the track by the railway in Uskedalen — but that
+  track does not reach the tractor road the corridor follows next, which is not
+  in OSM at all. It needs a hand-placed corridor, not this pass.
+  Gaustatoppen's line runs through the forest beside Svineroivegen, a county
+  road that is not among the minor roads OSM returned for its box.
+- **The path is steeper, wetter, or will not hold the line** (Sandhornet's
+  path from Horsdal runs along the shore at sea level and puts the steepest 30 m
+  at 34.5° against 32.5°; Såta's gives back 110 m; Heia's, Rundtind's and
+  Vatnaknausen's re-solves stayed in the forest).
+
+### Where the path data came from
+
+`trails.py` fetches one bounding box per route, and through this round's
+network only `maps.mail.ru`'s Overpass answered: `overpass-api.de` reset every
+connection and `kumi.systems` answered 500. At one box a minute the 214
+missing routes would have taken hours, so paths and roads were each fetched as
+65–67 regional boxes and split back into the same per-route cache files
+(`cache/trails_*.json`, `cache/roads_*.json`: the ways with a segment inside
+the route's box).
+
+### The guides
+
+Forty-three of the moved routes have a written guide, and a guide quotes the
+line: its length, its climb, where the forest ends and how steep each hundred
+metres is. All of those were brought up to the new lines in both languages and
+re-emitted (`emit_guides.py` on the 43, every other guide byte for byte):
+
+- the total length and climb, and what the line gives back, wherever they are
+  stated — including the second-route paragraphs, where only the moved route's
+  figures changed;
+- the treeline's height and distance, read from the old line with
+  `guide_facts.treeline_scan` and replaced by the new one's;
+- every band figure the old line's `bands()` and the new one's disagree on,
+  which `check_bands.py` agrees with on all 43;
+- **four steepest steps that moved somewhere else.** On Oksen, Lakselvtindan,
+  Litletussen and Mellomkollen the old line's steepest 30 m was in the forest
+  detour itself, so it went with it: Oksen's 29.1° at 490 m in the forest is
+  now 28.2° between 902 and 920 m, and the path through the forest tops out at
+  26.3°. The guides say where the steepest step is now, and what the path
+  measures where it used to be;
+- **Gyranfisen's treeline.** On the path the line leaves the forest at 857 m
+  after 1.04 km, where the old line's forest detours kept it in the trees to
+  946 m; caption and ascent now say 857;
+- places the line no longer passes at the height quoted, because the research
+  waypoint the height came from was replaced by the path (Togga's 744, Nona's
+  valley floor, Horndalsnuten's 724, Lakselvtindan's and Forkledalstindan's
+  85 by Storvatnet), and Tylderingen's distances to Tråna and Stokksete.
+
+Heights that are still true of the new line but were only «sourced» because a
+terrain sample happened to land on them — Juklavasstinden's 865, Styggemann's
+830, Stortinden's 92 and 274, Storlitinden's Kvilheim — are now recorded in
+`measurements.json` with where they were read. One pre-existing slip turned up
+on the way: Keipen's Norwegian text said the fall line north of the bowl holds
+29–36° for «de første 180 høydemetrene»; `flank_probe.py` measures 180 metres
+of *ground* (593 → 713 m), which is what the English said, and it is fixed.
+
+### What ran
+
+`follow_trails.py --survey` over all 239 routes before and after;
+`check_routes`, `check_tours` clean on 201 tours and 239 routes;
+`check_geometry` unchanged from before the round apart from Møysalen's,
+Juklavasstinden's and Rondslottet's descent-on-the-way-up figures moving by
+2–6 m; `check_ground` clean on all 45 moved routes; `check_bands` clean on the
+43 guides (173 claims); `check_treeline` with no new finding on them;
+`check_guides` with 1 unsourced number and 2 reassurance claims, none of them
+on a moved tour or new (Tortenviktinden's «1170 metres», and the Istinden and
+Sandhornet sentences the check has always listed); and `npm run typecheck`,
+`lint`, `test` and `build`.
 
 ## Network
 
