@@ -65,7 +65,7 @@ WATER_REPORT_M = 60.0        # metres of line on a lake surface
 WATER_OFFSHORE_M = 80.0      # how far from the mapped shore it gets
 TRAIL_REPORT_M = 250.0       # metres between the line and the trail it claims
 TRAIL_END_M = 250.0          # how close a trail must come to both ends to count
-BUILDING_END_M = 40.0        # a building this close to the summit is the destination
+BUILDING_SUMMIT_M = 100.0    # a building standing this close to the summit is the destination
 
 # Terrain classes the DTM returns for standing water. `InnsjøRegulert` is the
 # one that matters most: a regulated lake is drawn down through the winter, so
@@ -561,8 +561,8 @@ def check_buildings(slug, rec):
     other questions in this pass could not see it: the line was on no water and
     claimed no trail there.
 
-    A building the line ends on — a summit cabin, a mast — is where the tour is
-    meant to go, so a crossing within the last stretch of the line is a note.
+    A building on the summit — a hut, a mast — is where the tour is meant to go,
+    so one standing within 100 m of the summit is a note.
     A garden is a note too: `leisure=garden` is also a park or a botanical
     garden, and only a reader can tell a yard from a public one.
     """
@@ -617,7 +617,10 @@ def check_buildings(slug, rec):
         what = f"building={t['building']}" if t.get("building") else "leisure=garden"
         if t.get("name"):
             what += f" «{t['name']}»"
-        at_end = cum - max(hits) < BUILDING_END_M
+        # Measured from the summit, not along the line: Fannaråkhytta stands
+        # 90 m from the cairn, and a line can approach a summit hut from any side.
+        cen = (sum(n["lat"] for n in g) / len(g), sum(n["lon"] for n in g) / len(g))
+        at_end = haversine(cen[0], cen[1], pts[-1][0], pts[-1][1]) < BUILDING_SUMMIT_M
         note = "note: " if at_end or "building" not in t else ""
         span = f"{min(hits):.0f}" if max(hits) - min(hits) < 1 else f"{min(hits):.0f}–{max(hits):.0f}"
         findings.append(

@@ -1402,9 +1402,11 @@ did, through a house and a shed at Bergerud, and none of the other questions
 could see it. The buildings are fetched from the route's bounding box, padded
 by about 30 m, and matched against the line locally. Overpass's polyline
 `around` would fetch only what is near the line, but on a loaded mirror it
-timed out on almost every route. The line is sampled every 2 m against each polygon. A building in
-the last 40 m of the line is the summit cabin or mast the tour goes to, and is
-printed as a note. A `leisure=garden` is a note too, because the tag also covers
+timed out on almost every route. The line is sampled every 2 m against each
+polygon. A building standing within 100 m of the summit is the hut or mast the
+tour goes to, and is printed as a note. Fannaråkhytta stands 90 m from the
+cairn. Gaustatoppen's transmitter and bunkers are 500 m out along the ridge,
+so they are not the summit and still count. A `leisure=garden` is a note too, because the tag also covers
 parks. Run against the pre-fix Mellomkollen line, it reports exactly the house
 and the shed.
 
@@ -6535,6 +6537,46 @@ had been 26.7°, and the guide's paragraph about the route was updated to match.
 The couloir route is unchanged, so the card is too. `generate_routes.py` re-solves
 every route of a tour, and the re-solve moved the couloir's last vertex, so
 that line was put back exactly as it shipped.
+
+### The house round: skirt_buildings.py
+
+`check_ground.py --houses` over every route found the same fault on many more
+lines. Most were at trailheads in farmyards, cabin fields and resorts
+(Gjendesheim, Turtagrø, Spiterstulen, Norefjellstua). A few were mid-route
+cabins and barns, Glitterheim, and the transmitter and bunkers along
+Gaustatoppen's ridge.
+
+Re-solving those tours was tried first and thrown away. A shipped line has been
+through `retrace_trails`, `cut_spurs` and the review rounds, and a fresh solve
+through the corridor undoes them: on the first nineteen it made Fannaråken
+from Turtagrø 300 m shorter and Folarskardnuten 430 m shorter, to fix crossings
+a few dozen metres long. `skirt_buildings.py` does what `cut_spurs.py` does,
+at the building instead of the spur. The line leaves a vertex before the
+crossing and rejoins one after it, through three points offset to the nearer
+side that keeps 5 m off every footprint. The new legs are read from DTM1 every
+15 m and are rejected if they are wet or steeper than 40°. A trailhead that
+stands in or against a building moves to the nearest clear point. The detour
+points go into `corridors.json` as waypoints named «utenom bygningene», so a
+re-solve goes round the same buildings.
+
+Where 5 m does not fit, the pass relaxes the lead and the clearance step by step
+and says which it used. Gaustatoppen's normal route needed 30 m and 3 m to get
+past the bunkers on the ridge, and Spiterstulen's trailhead needed 4 m.
+Husfjellet needed 40 m and 3 m. Sandhornet's north-east route was done by hand:
+it ran through a row of houses between the road and the shore, so it now follows
+the farm track (`way/687759961`) south from the car park and rejoins its old
+line south of the houses. That adds 129 m and 15 m of climbing.
+
+Elsewhere the changes are a few metres. Glittertinden is +93 m past Glitterheim,
+Gjendesheim +70 m and Norefjellstua +45 m. Gain changes by 0–6 m. Every guide figure
+the move touched was rewritten: distances, gains, the band angles and grounds
+`check_bands` reads, and Gaustatoppen's steepest step, which is now 24.8° on the
+ridge detour. Gyranfisen's list of sampled heights changed too, because the
+sampled vertices moved. The cards follow the convention each one already used.
+An exact gain stays exact (Besshø 1328 → 1329), and a rounded one moves only
+when the rounding does (Gaustatoppen 970 → 980, Kavringtinden 1250 → 1260,
+Melderskin 1270 → 1280, Blånebba 930 → 940). Gråfjell's teaser still said
+580 m and 7.8 km from an older line, and now says 600 m and 8.1 km.
 
 ## The Sunnfjord round
 
