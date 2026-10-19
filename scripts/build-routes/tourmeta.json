@@ -1,4 +1,48 @@
 {
+ "gievdnerassa": {
+  "name": "Gievdnerášša",
+  "region": "Vest-Finnmark",
+  "summitM": 898,
+  "verticalM": 870,
+  "duration": "4–6 t",
+  "grade": 2,
+  "aspect": "SV",
+  "season": "des–mai",
+  "hasGuide": true
+ },
+ "stortinden-langfjord": {
+  "name": "Stortinden i Langfjorden",
+  "region": "Vest-Finnmark",
+  "summitM": 936,
+  "verticalM": 1010,
+  "duration": "5–7 t",
+  "grade": 3,
+  "aspect": "S",
+  "season": "nov–mai",
+  "hasGuide": true
+ },
+ "laslettind": {
+  "name": "Laslettind",
+  "region": "Vest-Finnmark",
+  "summitM": 822,
+  "verticalM": 660,
+  "duration": "3–5 t",
+  "grade": 1,
+  "aspect": "Ø",
+  "season": "nov–mai",
+  "hasGuide": true
+ },
+ "vassnestind": {
+  "name": "Vassnestind",
+  "region": "Vest-Finnmark",
+  "summitM": 896,
+  "verticalM": 880,
+  "duration": "3–5 t",
+  "grade": 2,
+  "aspect": "N",
+  "season": "jan–mai",
+  "hasGuide": true
+ },
  "storgalten": {
   "name": "Storgalten",
   "region": "Lyngen",

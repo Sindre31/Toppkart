@@ -12393,16 +12393,40 @@
       "elevation_m": 553.4
      },
      {
+      "name": "øst for kanten",
+      "lat": 70.0595,
+      "lng": 22.269,
+      "elevation_m": 684.0
+     },
+     {
+      "name": "øst for kanten",
+      "lat": 70.062,
+      "lng": 22.2685,
+      "elevation_m": 790.6
+     },
+     {
       "name": "forhøyningen på 839",
       "lat": 70.06352,
       "lng": 22.26605,
       "elevation_m": 837.7
      },
      {
-      "name": "ryggen nordover",
-      "lat": 70.07329,
-      "lng": 22.26974,
-      "elevation_m": 895.4
+      "name": "midt på ryggen",
+      "lat": 70.07,
+      "lng": 22.269,
+      "elevation_m": 854.0
+     },
+     {
+      "name": "midt på ryggen",
+      "lat": 70.0716,
+      "lng": 22.2684,
+      "elevation_m": 876.0
+     },
+     {
+      "name": "midt på ryggen",
+      "lat": 70.0735,
+      "lng": 22.2686,
+      "elevation_m": 886.7
      },
      {
       "name": "920-toppen",
@@ -12439,7 +12463,7 @@
    {
     "id": "oksfjordbotn",
     "name": "Fra Øksfjordbotn over nordøstryggen",
-    "description": "Fra parkeringa ved skolen i Øksfjordbotn opp ryggen nordøstover og over det slake topplatået til Gievdnerášša",
+    "description": "Fra parkeringa ved skolen i Øksfjordbotn langs Gammelveien og sommervegen Geassegeaidnu østover over Nordelva, opp ryggen nordøstover og over det slake topplatået til Gievdnerášša",
     "trailhead": {
      "name": "Parkeringa ved skolen i Øksfjordbotn",
      "lat": 70.10842,
@@ -12449,10 +12473,52 @@
     },
     "waypoints": [
      {
+      "name": "Gammelveien",
+      "lat": 70.10484,
+      "lng": 22.53046,
+      "elevation_m": 60.4
+     },
+     {
+      "name": "sommervegen Geassegeaidnu",
+      "lat": 70.10181,
+      "lng": 22.54504,
+      "elevation_m": 94.3
+     },
+     {
+      "name": "sommervegen Geassegeaidnu",
+      "lat": 70.10218,
+      "lng": 22.5531,
+      "elevation_m": 117.9
+     },
+     {
+      "name": "stien østover",
+      "lat": 70.1017,
+      "lng": 22.56,
+      "elevation_m": 119.8
+     },
+     {
+      "name": "sør for vatnet",
+      "lat": 70.102,
+      "lng": 22.566,
+      "elevation_m": 142.0
+     },
+     {
+      "name": "øst for tjernet",
+      "lat": 70.1045,
+      "lng": 22.57,
+      "elevation_m": 128.8
+     },
+     {
+      "name": "lia øst for steget",
+      "lat": 70.107,
+      "lng": 22.572,
+      "elevation_m": 170.1
+     },
+     {
       "name": "ryggen nordøstover",
-      "lat": 70.11,
-      "lng": 22.564,
-      "elevation_m": 262.1
+      "lat": 70.1095,
+      "lng": 22.5722,
+      "elevation_m": 284.2
      },
      {
       "name": "ryggen nordøstover",
