@@ -18,7 +18,7 @@ check saw them:
 
 The common factor is that both were checkable against something outside the
 terrain model — OpenStreetMap's water polygons and its winter routes. That is
-what this pass does. Three questions, all answerable from public data:
+what this pass does. Four questions, all answerable from public data:
 
   water     Which vertices sit on a lake, how far the line runs on it, how far
             offshore it gets, and — for a regulated lake, which is the dangerous
@@ -28,8 +28,10 @@ what this pass does. Three questions, all answerable from public data:
             nearest mapped one?
   side      Where the guide says the route runs to the right or left of a named
             stream, which side is the line actually on?
+  house     Does the line go through a mapped building or garden? DTM1 is bare
+            ground, so the router cannot see one.
 
-    python3 check_ground.py [slug …]
+    python3 check_ground.py [--houses] [slug …]
 
 Exits non-zero if anything needs a look. Findings are printed with the numbers
 behind them, because the decision — reroute, rewrite, or leave it — is a
@@ -41,6 +43,7 @@ Answers from both APIs are cached under `cache/`, so a re-run is cheap and a
 first run over all 75 tours is a few minutes rather than a few hours.
 """
 
+import hashlib
 import json
 import math
 import os
@@ -62,6 +65,7 @@ WATER_REPORT_M = 60.0        # metres of line on a lake surface
 WATER_OFFSHORE_M = 80.0      # how far from the mapped shore it gets
 TRAIL_REPORT_M = 250.0       # metres between the line and the trail it claims
 TRAIL_END_M = 250.0          # how close a trail must come to both ends to count
+BUILDING_END_M = 40.0        # a building this close to the summit is the destination
 
 # Terrain classes the DTM returns for standing water. `InnsjøRegulert` is the
 # one that matters most: a regulated lake is drawn down through the winter, so
@@ -528,6 +532,95 @@ def quoted_spans(text):
     return spans
 
 
+# Buildings are asked for along the line itself rather than around its centre.
+# Overpass reads a coordinate list in `around` as a polyline, so this returns
+# only what stands within a few metres of the route — a valley town at the
+# trailhead would otherwise be thousands of footprints nobody walks through.
+BUILDING_NEAR_M = 15.0      # how far from the line a footprint is fetched
+BUILDING_STEP_M = 2.0       # the line is sampled this finely against each polygon
+BUILDING_QUERY = """[out:json][timeout:180];
+(way(around:{r},{coords})[building];
+ way(around:{r},{coords})[leisure=garden];);
+out geom tags;"""
+
+
+def _inside(x, y, poly):
+    c = False
+    for (x1, y1), (x2, y2) in zip(poly, poly[1:] + poly[:1]):
+        if (y1 > y) != (y2 > y) and x < (x2 - x1) * (y - y1) / (y2 - y1) + x1:
+            c = not c
+    return c
+
+
+def check_buildings(slug, rec):
+    """Where the line goes through a house, a shed or a garden.
+
+    DTM1 is bare ground, so the router cannot see a building, and a corridor
+    with no waypoint over farmland draws a straight line through whatever stands
+    on it. Mellomkollen's did, through a house and a shed at Bergerud, and the
+    other questions in this pass could not see it: the line was on no water and
+    claimed no trail there.
+
+    A building the line ends on — a summit cabin, a mast — is where the tour is
+    meant to go, so a crossing within the last stretch of the line is a note.
+    A garden is a note too: `leisure=garden` is also a park or a botanical
+    garden, and only a reader can tell a yard from a public one.
+    """
+    pts = rec["points"]
+    # The key carries the line, not just the tour: re-routing a tour must not
+    # read back the buildings that stood along its old line.
+    key = hashlib.sha1(json.dumps(pts).encode()).hexdigest()[:12]
+    coords = ",".join(f"{a:.5f},{b:.5f}" for a, b in pts)
+    els = overpass(f"buildings_{slug}_{rec['id']}_{key}", BUILDING_QUERY.format(r=int(BUILDING_NEAR_M), coords=coords))
+    if els is None:
+        return ["note: buildings UNCHECKED, Overpass would not answer"]
+
+    lat0 = pts[0][0]
+    kx = 111320.0 * math.cos(math.radians(lat0))
+    ky = 110540.0
+
+    def xy(lat, lng):
+        return ((lng - pts[0][1]) * kx, (lat - lat0) * ky)
+
+    line = [xy(*p) for p in pts]
+    seg = segment_lengths(pts)
+    samples = []  # (x, y, metres along the line)
+    cum = 0.0
+    for (ax, ay), (bx, by), d in zip(line, line[1:], seg[1:]):
+        n = max(1, int(d / BUILDING_STEP_M))
+        for k in range(n):
+            samples.append((ax + (bx - ax) * k / n, ay + (by - ay) * k / n, cum + d * k / n))
+        cum += d
+    samples.append((line[-1][0], line[-1][1], cum))
+
+    findings = []
+    for el in els:
+        g = el.get("geometry") or []
+        if len(g) < 4 or g[0] != g[-1]:
+            continue
+        poly = [xy(n["lat"], n["lon"]) for n in g]
+        xs = [p[0] for p in poly]
+        ys = [p[1] for p in poly]
+        hits = [
+            m for x, y, m in samples
+            if min(xs) <= x <= max(xs) and min(ys) <= y <= max(ys) and _inside(x, y, poly)
+        ]
+        if not hits:
+            continue
+        t = el.get("tags") or {}
+        what = f"building={t['building']}" if t.get("building") else "leisure=garden"
+        if t.get("name"):
+            what += f" «{t['name']}»"
+        at_end = cum - max(hits) < BUILDING_END_M
+        note = "note: " if at_end or "building" not in t else ""
+        span = f"{min(hits):.0f}" if max(hits) - min(hits) < 1 else f"{min(hits):.0f}–{max(hits):.0f}"
+        findings.append(
+            f"{note}goes through {what} (way/{el['id']}) {span} m along the line"
+            + (" — at the summit, where the tour goes" if at_end else "")
+        )
+    return findings
+
+
 def check_side(slug, rec, text, stream_els):
     """«til høyre for Veslebekken» — measured rather than repeated.
 
@@ -623,23 +716,31 @@ def main():
         OFFLINE[0] = True
         args.remove("--offline")
         print("--offline: the terrain model only; trails and stream sides go unchecked")
+    # `--houses` asks the house question alone. It is one Overpass request per
+    # route and no terrain lookups, which is the run to make after a re-route.
+    houses_only = "--houses" in args
+    if houses_only:
+        args.remove("--houses")
     only = set(args)
     todo = {s: r for s, r in routes.items() if not only or s in only}
 
     bad = []
-    print(f"{'tour / route':<34}{'water':>7}{'trail':>7}  findings", flush=True)
+    print(f"{'tour / route':<34}{'water':>7}{'trail':>7}{'house':>7}  findings", flush=True)
     for slug in sorted(todo):
         text = guide_text(guides, slug)
         for rec in todo[slug]:
-            on_water = water_vertices(slug, rec)
-            trail_els, stream_els = ground(slug, rec)
             findings = []
-            findings += check_water(slug, rec, text, on_water)
-            findings += check_trail(slug, rec, text, on_water, trail_els)
-            findings += check_side(slug, rec, text, stream_els)
+            if not houses_only:
+                on_water = water_vertices(slug, rec)
+                trail_els, stream_els = ground(slug, rec)
+                findings += check_water(slug, rec, text, on_water)
+                findings += check_trail(slug, rec, text, on_water, trail_els)
+                findings += check_side(slug, rec, text, stream_els)
+            findings += check_buildings(slug, rec)
             w = sum(1 for f in findings if "on water" in f and not f.startswith("note:"))
             t = sum(1 for f in findings if "mapped trail" in f and not f.startswith("note:"))
-            print(f"{slug + ' / ' + rec['id']:<34}{w:>7}{t:>7}  {'; '.join(findings)}", flush=True)
+            b = sum(1 for f in findings if "goes through" in f and not f.startswith("note:"))
+            print(f"{slug + ' / ' + rec['id']:<34}{w:>7}{t:>7}{b:>7}  {'; '.join(findings)}", flush=True)
             for f in findings:
                 if not f.startswith("note:"):
                     bad.append(f"{slug}/{rec['id']}: {f}")

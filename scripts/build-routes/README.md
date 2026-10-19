@@ -1368,7 +1368,7 @@ factually correct in every number it contained.
 
 What the three shared was that they were checkable against something *outside*
 the terrain model — OpenStreetMap's water polygons and its winter routes — and
-nothing was doing that. `check_ground.py` does. It asks three questions:
+nothing was doing that. `check_ground.py` does. It asks four questions:
 
 **Water.** Which vertices stand on a lake, how far the line runs on it, how far
 offshore it gets, and whether the guide names that height at all. A lake surface
@@ -1394,6 +1394,18 @@ stream, which side is it on? Which way is right depends on which way you are
 walking, so this is resolved from the trailhead-to-summit bearing, and a tour
 that runs east–west is reported as undecidable rather than answered with a coin
 flip.
+
+**House.** Does the line go through a mapped building or garden? DTM1 is bare
+ground, so the router cannot see a house, and a corridor with no waypoint over
+farmland draws a straight line through whatever stands there. Mellomkollen's
+did, through a house and a shed at Bergerud, and none of the other questions
+could see it. The buildings are fetched along the line itself, using Overpass's
+polyline `around:15`, so a town at the trailhead is not thousands of
+footprints. The line is sampled every 2 m against each polygon. A building in
+the last 40 m of the line is the summit cabin or mast the tour goes to, and is
+printed as a note. A `leisure=garden` is a note too, because the tag also covers
+parks. Run against the pre-fix Mellomkollen line, it reports exactly the house
+and the shed.
 
 It exits non-zero on findings, and it prints the numbers behind each one, because
 the decision is not the script's to make. A frozen tarn a source deliberately
