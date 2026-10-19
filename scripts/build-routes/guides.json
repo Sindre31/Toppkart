@@ -12842,5 +12842,276 @@
   "problems": [
    "ADVERSARIAL READ: ut.no-sporet går opp att éin gong, ikkje to (topp 536 → 461 → 535 → slutt 488) — retta i guiden og forskingsposten. Gaupekollen ligg nordaust for linja (53°), ikkje aust. Strekninga Kroken–bru gjekk mot aust, ikkje søraust, og punktet kalla «Hallset» ligg ved Nedre Vaggestein — omdøypt. Ut.no-sporet har ein rett strek over elva og følgjer ikkje Maridalsveien — guiden seier det. Linja går over jorder fram til Kroken, så «skog frå start til topp» er retta til «frå Kroken»."
   ]
+ },
+ "gotdalsnipa": {
+  "no": {
+   "intro": "998 høydemeter på 5,25 km fra toppturparkeringa på Ålhus: skoglia over Dalebø, Fjellstøylen på 590 moh, østsida av Fossgrova og ryggen over Nonsnipa til Gotdalsnipa på 1248 moh. Bratteste sammenhengende parti på linja er 24,3 grader mellom 1172 og 1197 moh, i toppryggen — det bratte på dette fjellet er nedkjøringa sørover i Steinbotnen, ikke oppturen.",
+   "caption": "998 høydemeter og 5,25 km fra Ålhus, med skoggrensa på 682 moh, Fjellstøylen på 590 og Nonsnipa på 1105.",
+   "ascent": [
+    "Toppturparkeringa ligger ved brua mellom Indrebø og Dalebø, 277 moh, og Fri Flyt sier parkering mot avgift. Gå over brua til Dalebø og ta av fra traktorvegen til høyre — kilden sier etter «vel 200 meter» — og legg sporet skrått opp lia mot nordøst.",
+    "Lia er skogsterreng, og den er ujevnere enn snittet viser. Bandet fra 300 til 400 moh måler 13,3 grader. Bandet fra 400 til 500 moh måler også 13,3 grader. Innenfor 50 meter av linja står knauser på opptil 69 grader, og Fri Flyt oppgir 25 til 28 grader som det bratteste mellom 370 og 560 moh. Fjellstøylen kommer på 590 moh etter 1,66 km, og skogen slipper ved 682 moh.",
+    "Over Fjellstøylen holder du samme retning mot Fossgrova og følger den oppover på østsida, slik Fri Flyt beskriver. Linja er på 906 moh på østsida av grova etter 3,41 km. Høgemannsholten ligger 371 meter vest for linja, på den andre sida av grova; skifantomet beskriver ruta over den, Fri Flyt østsida, og linja følger Fri Flyt.",
+    "Grova fører deg opp mot Nonsnipa, 1105 moh, og linja passerer like ved toppen. Herfra følger du ryggen mot nordvest til Gotdalsnipa. Det siste stykket over 1200 moh måler 15,4 grader over 167 meter grunn og er det bratteste bandet på turen, og det bratteste sammenhengende partiet, 24,3 grader mellom 1172 og 1197 moh, ligger like under toppen. Toppen er på 1248 moh."
+   ],
+   "descent": [
+    "Fri Flyt beskriver nedkjøringa rett sør fra toppen ned i Steinbotnen som «Utfordrande», med 30 til 34 grader mellom 1140 og 980 moh. Sørradialen fra toppen måler 23,0 grader i snitt og 33,0 grader i bratteste vindu, 410 til 470 meter ut. Vil du ha slakere terreng, følger du ryggen ned mot skaret før Nonsnipa. Fra Steinbotnen renner du vestover mot Gotdalsstøylen og følger traktorvegen tilbake til Indrebø — samme parkering, og samme veg som Grønlifjellet går opp, under bratte lisider på begge sider.",
+    "Fjord Norway skriver at den beste nedkjøringa fra toppen er nordvendt. Nordsida måler 40,2 grader i bratteste vindu 80 til 140 meter ut, og nordøstsida 46,3 grader — det er brattere enn noe på oppturen, og ingen av kildene beskriver en linje der. Samme veg ned som opp er alltid et alternativ: ryggen over Nonsnipa og ned østsida av Fossgrova."
+   ],
+   "avalanche": [
+    {
+     "title": "Ruta",
+     "body": "Bratteste sammenhengende parti på linja er 24,3 grader mellom 1172 og 1197 moh, og bratteste bandet er stykket over 1200 moh med 15,4 grader. Bakken under linja har ingen strekk over 35 grader. Fri Flyt oppgir 25 til 28 grader i skoglia mellom 370 og 560 moh, der linja går mellom knauser."
+    },
+    {
+     "title": "Terrenget utenfor",
+     "body": "Nord- og nordøstsida av toppen måler 40,2 og 46,3 grader i bratteste vindu, vestsida 46,3 grader 310 til 370 meter ut, og nedkjøringa i Steinbotnen 30 til 34 grader ifølge Fri Flyt. Skifantomet advarer mot dalen vest for ruta: «Kommer i løpet vinteren store snøskred ned i Ålhusdalen ifrå fjellsidene». Oppturen går ikke der, men returen fra Gotdalsstøylen følger skogsvegen forbi Brekka, der skifantomets nedkjøring fra Ålhusdalen kommer ut, og lisidene over vegen måler 35 til 68 grader i bratteste vindu."
+    },
+    {
+     "title": "Før du går",
+     "body": "Sjekk dagens skredvarsel for Indre Fjordane på varsom.no. Indre Fjordane er en A-region og varsles daglig i sesongen. Ta med sender/mottaker, søkestang og spade."
+    }
+   ]
+  },
+  "en": {
+   "intro": "998 metres of climbing over 5.25 km from the ski-touring car park at Ålhus: the wooded slope above Dalebø, Fjellstøylen at 590 m, the east side of Fossgrova and the ridge over Nonsnipa to Gotdalsnipa at 1248 m. The steepest sustained section on the line is 24.3 degrees between 1172 and 1197 m, on the summit ridge — what is steep on this mountain is the descent south into Steinbotnen, not the climb.",
+   "caption": "998 metres of climbing and 5.25 km from Ålhus, with the treeline at 682 m, Fjellstøylen at 590 and Nonsnipa at 1105.",
+   "ascent": [
+    "The ski-touring car park is by the bridge between Indrebø and Dalebø, 277 m, and Fri Flyt says it charges a fee. Cross the bridge to Dalebø and turn right off the tractor road — the source says after “just over 200 metres” — and set the track up the slope at a slant towards the north-east.",
+    "The slope is wooded, and it is rougher than the average shows. The band from 300 to 400 m measures 13.3 degrees. The band from 400 to 500 m also measures 13.3 degrees. Within 50 metres of the line there are knolls of up to 69 degrees, and Fri Flyt gives 25 to 28 degrees as the steepest between 370 and 560 m. Fjellstøylen comes at 590 m after 1.66 km, and the forest lets go at 682 m.",
+    "Above Fjellstøylen keep the same direction towards Fossgrova and follow it up on its east side, as Fri Flyt describes. The line is at 906 m on the east side of the gully after 3.41 km. Høgemannsholten is 371 metres west of the line, on the other side of the gully; skifantomet describes the route over it, Fri Flyt the east side, and the line follows Fri Flyt.",
+    "The gully leads you up towards Nonsnipa, 1105 m, and the line passes close by its top. From there follow the ridge north-west to Gotdalsnipa. The last stretch above 1200 m measures 15.4 degrees over 167 metres of ground and is the steepest band on the tour, and the steepest sustained section, 24.3 degrees between 1172 and 1197 m, is just below the summit. The summit is at 1248 m."
+   ],
+   "descent": [
+    "Fri Flyt describes the descent due south from the summit into Steinbotnen as “Challenging”, with 30 to 34 degrees between 1140 and 980 m. The south radial from the summit averages 23.0 degrees, with 33.0 degrees in its steepest window, 410 to 470 metres out. For gentler ground, follow the ridge down towards the col before Nonsnipa. From Steinbotnen run west towards Gotdalsstøylen and follow the tractor road back to Indrebø — the same car park, and the same road Grønlifjellet climbs, under steep slopes on both sides.",
+    "Fjord Norway writes that the best descent from the summit faces north. The north side measures 40.2 degrees in its steepest window 80 to 140 metres out, and the north-east side 46.3 degrees — steeper than anything on the climb, and neither source describes a line there. The way you came up is always an option: the ridge over Nonsnipa and down the east side of Fossgrova."
+   ],
+   "avalanche": [
+    {
+     "title": "The route",
+     "body": "The steepest sustained section on the line is 24.3 degrees between 1172 and 1197 m, and the steepest band is the stretch above 1200 m at 15.4 degrees. The ground under the line has no stretch steeper than 35 degrees. Fri Flyt gives 25 to 28 degrees on the wooded slope between 370 and 560 m, where the line runs between knolls."
+    },
+    {
+     "title": "The terrain around it",
+     "body": "The north and north-east sides of the summit measure 40.2 and 46.3 degrees in their steepest windows, the west side 46.3 degrees 310 to 370 metres out, and the descent into Steinbotnen 30 to 34 degrees according to Fri Flyt. Skifantomet warns about the valley west of the route: “during the winter large avalanches come down into Ålhusdalen from the mountainsides”. The climb does not go there, but the return from Gotdalsstøylen follows the forest road past Brekka, where skifantomet's descent from Ålhusdalen comes out, and the slopes above the road measure 35 to 68 degrees in their steepest windows."
+    },
+    {
+     "title": "Before you go",
+     "body": "Check today's avalanche forecast for Indre Fjordane at varsom.no. Indre Fjordane is an A region and is forecast daily in season. Bring a transceiver, probe and shovel."
+    }
+   ]
+  },
+  "sources": [
+   "https://www.friflyt.no/topptur/skiturer-sunnfjord/turbeskrivelse-gotdalsnipa",
+   "https://skifantomet.wordpress.com/turbeskrivelse-til-toppturer/",
+   "https://www.fjordnorway.com/no/reiseinspirasjon/sunnfjord---det-nye-skiparadiset"
+  ],
+  "source": "written against corridors.json, the routed line, flank_probe.py and a 5 m slope grid along the line",
+  "problems": [
+   "ADVERSARIAL READ: returen fra Gotdalsstøylen går på skogsvegen forbi Brekka under bratte lisider; «ruta går ikke der» om Ålhusdalen er retta til å si det. Linja følger traktorvegen fra Dalebø bare et kort stykke — teksten sier nå at du tar av fra den. Bratteste band er et delband over 1200 moh og kalles nå det."
+  ]
+ },
+ "gronlifjellet": {
+  "no": {
+   "intro": "1155 høydemeter på 8,10 km fra toppturparkeringa på Ålhus: nesten fire kilometer skogsveg til Gotdalsstøylen, opp i Tolsbotnen og Litlebotn, og den smale sørøstryggen til Grønlifjellet på 1386 moh. Bratteste sammenhengende parti på linja er 23,8 grader mellom 1050 og 1073 moh, i kneika opp på ryggen — men Fri Flyt advarer om at egga «kan opplevast brattare enn målingane tilseier», fordi den er smal og har skavler mot øst.",
+   "caption": "1155 høydemeter og 8,10 km fra Ålhus, med Gotdalsstøylen på 563 moh, Litlebotn på 900 og bratteste hundremeteren mellom 1200 og 1300 moh.",
+   "ascent": [
+    "Start på toppturparkeringa ved brua mellom Indrebø og Dalebø, 277 moh — samme parkering som Gotdalsnipa. Første del er skogsvegen nordover langs elva, forbi Brekka og videre til Gotdalsstøylen. Bandet fra 300 til 400 moh måler 4,5 grader over 1260 meter grunn. Bandet fra 500 til 600 moh måler 3,4 grader over 1664 meter. Støylen kommer etter 3,86 km, på 563 moh. Seint på våren kan du ifølge Fri Flyt kjøre lenger inn på skogsvegen mot bompenger.",
+    "Fra støylen går Fri Flyt «noko nordaustover» for det slakeste terrenget og opp i Tolsbotnen, 802 moh etter 5,35 km. Fri Flyt holder høyden derfra over i Litlebotn; linja stiger vestover fra bunnen av Tolsbotnen og gir fra seg ned til 868 moh i Litlebotn, som registeret fører på 900 moh, før stigningen. Litlebottsegga ligger 790 meter nord for linja; det er nabotoppen og en egen tur.",
+    "Fra Litlebotn går du opp på sørøstryggen og følger den mot nordvest til toppen. Kneika opp på ryggen er linjas bratteste sammenhengende parti, 23,8 grader mellom 1050 og 1073 moh — og det er sporets stigning; bakken sporet krysser er brattere, 35 til 50 grader over 35 og 20 meter ved 1044 og 1068–1075 moh — og Fri Flyt oppgir 27 til 30 grader både mellom 900 og 1000 og mellom 1230 og 1340 moh. Bandet fra 1200 til 1300 moh måler 19,2 grader over 270 meter grunn og er det bratteste bandet på turen.",
+    "Øvre del av ryggen er smal. Innenfor 50 meter av linja måler terrenget 49 til 65 grader mot øst og nordøst mellom 1153 og 1335 moh — det er der skavlene henger. Hold avstand til eggkanten mot øst. I hard snø sier Fri Flyt at du kan måtte bruke skarejern eller gå til fots, og at «Utgliding eller fall kan ved nokre tilhøve utgjere betydeleg risiko». Toppen er på 1386 moh."
+   ],
+   "descent": [
+    "Fri Flyt beskriver nedkjøringa ned østsida mot Litlebotnen med mange linjer av ulik bratthet, og den slakeste går først nordøstover ned ryggen mot Litlebottsegga, så lengst nord i sida og ned en forsenkning til Litlebotnen. Nordøstradialen fra toppen er den slake: 15,2 grader i snitt og 24,9 grader i bratteste vindu. Men «Dei første ti høgdemetrane frå toppen kan vere bratte, 35-40 grader avhengig av snøforhold/skavldanning», og lenger nede oppgir kilden 34 til 36 grader mellom 1070 og 1000 moh og 29 til 32 grader mellom 860 og 750 moh. Østsida av toppen måler 37,6 grader i bratteste vindu 160 til 220 meter ut, og sørøstsida 35,2 grader.",
+    "Fra Litlebotnen kjører du ned øst for elva fra botnen og ut til Gotdalsstøylen, og så skogsvegen tilbake. Det er nord-, nordvest- og sørsida som ikke er nedkjøringer: Nordsida av toppen måler 57,6 grader 40 til 100 meter ut og nordvestsida 61,8 grader; sørsida 42,2 grader 170 til 230 meter ut."
+   ],
+   "avalanche": [
+    {
+     "title": "Ruta",
+     "body": "Bratteste sammenhengende parti på linja er 23,8 grader mellom 1050 og 1073 moh, og bratteste hundremeteren er 1200 til 1300 moh med 19,2 grader. Bakken under linja er 35 grader eller brattere på to korte strekk i kneika opp på ryggen, 35 og 20 meter, med bratteste celle 50 grader."
+    },
+    {
+     "title": "Terrenget utenfor",
+     "body": "Egga har skavler mot øst, og terrenget under dem måler 49 til 65 grader innenfor 50 meter av linja. Nordsida og nordvestsida av toppen er hamrer på 57,6 og 61,8 grader. Nedkjøringa østover har 34 til 36 grader mellom 1070 og 1000 moh. Skogsvegen går i dalbunnen under lisider som måler 35 til 68 grader i bratteste vindu på begge sider, 160 til 640 meter ut, mellom 1,2 og 3,6 km. Skifantomet: «Kommer i løpet vinteren store snøskred ned i Ålhusdalen ifrå fjellsidene (Blåfjellet, Sølvet og Trollet).» Ålhusdalen ligger 784 meter sørvest for linja, og vegen passerer Brekka, der skifantomets nedkjøring fra den dalen kommer ut."
+    },
+    {
+     "title": "Før du går",
+     "body": "Sjekk dagens skredvarsel for Indre Fjordane på varsom.no. Indre Fjordane er en A-region og varsles daglig i sesongen. Det er en lang dag — Fri Flyt setter 5 til 10 timer. Ta med sender/mottaker, søkestang og spade, og skarejern."
+    }
+   ]
+  },
+  "en": {
+   "intro": "1155 metres of climbing over 8.10 km from the ski-touring car park at Ålhus: almost four kilometres of forest road to Gotdalsstøylen, up into Tolsbotnen and Litlebotn, and the narrow south-east ridge to Grønlifjellet at 1386 m. The steepest sustained section on the line is 23.8 degrees between 1050 and 1073 m, on the pitch up onto the ridge — but Fri Flyt warns that the crest “can feel steeper than the measurements say”, because it is narrow and corniced to the east.",
+   "caption": "1155 metres of climbing and 8.10 km from Ålhus, with Gotdalsstøylen at 563 m, Litlebotn at 900 and the steepest hundred-metre band between 1200 and 1300 m.",
+   "ascent": [
+    "Start at the ski-touring car park by the bridge between Indrebø and Dalebø, 277 m — the same car park as Gotdalsnipa. The first part is the forest road north along the river, past Brekka and on to Gotdalsstøylen. The band from 300 to 400 m measures 4.5 degrees over 1260 metres of ground. The band from 500 to 600 m measures 3.4 degrees over 1664 metres. The summer farm comes after 3.86 km, at 563 m. Late in the spring, Fri Flyt says, you can drive further in on the forest road for a toll.",
+    "From the farm Fri Flyt goes “somewhat north-east” for the gentlest ground and up into Tolsbotnen, 802 m after 5.35 km. Fri Flyt holds its height from there across into Litlebotn; the line climbs west from the bottom of Tolsbotnen and gives back height down to 868 m in Litlebotn, which the register places at 900 m, before the climb. Litlebottsegga is 790 metres north of the line; it is the neighbouring top and a tour of its own.",
+    "From Litlebotn go up onto the south-east ridge and follow it north-west to the summit. The pitch up onto the ridge is the line's steepest sustained section, 23.8 degrees between 1050 and 1073 m — and that is the track's gradient; the ground the track crosses is steeper, 35 to 50 degrees over 35 and 20 metres at 1044 and 1068–1075 m — and Fri Flyt gives 27 to 30 degrees both between 900 and 1000 and between 1230 and 1340 m. The band from 1200 to 1300 m measures 19.2 degrees over 270 metres of ground and is the steepest band on the tour.",
+    "The upper part of the ridge is narrow. Within 50 metres of the line the ground measures 49 to 65 degrees to the east and north-east between 1153 and 1335 m — that is where the cornices hang. Keep away from the eastern edge of the crest. In hard snow Fri Flyt says you may need ski crampons or have to go on foot, and that “a slide or a fall can in some conditions be a considerable risk”. The summit is at 1386 m."
+   ],
+   "descent": [
+    "Fri Flyt describes the descent down the east side towards Litlebotnen with many lines of varying steepness, and the gentlest goes first north-east down the ridge towards Litlebottsegga, then furthest north on the slope and down a hollow to Litlebotnen. The north-east radial from the summit is the gentle one: 15.2 degrees on average and 24.9 degrees in its steepest window. But “the first ten vertical metres from the summit can be steep, 35-40 degrees depending on snow conditions and cornices”, and further down the source gives 34 to 36 degrees between 1070 and 1000 m and 29 to 32 degrees between 860 and 750 m. The east side of the summit measures 37.6 degrees in its steepest window 160 to 220 metres out, and the south-east side 35.2 degrees.",
+    "From Litlebotnen ski down east of the stream from the cirque and out to Gotdalsstøylen, then the forest road back. It is the north, north-west and south sides that are not descents: The north side of the summit measures 57.6 degrees 40 to 100 metres out and the north-west side 61.8 degrees; the south side 42.2 degrees 170 to 230 metres out."
+   ],
+   "avalanche": [
+    {
+     "title": "The route",
+     "body": "The steepest sustained section on the line is 23.8 degrees between 1050 and 1073 m, and the steepest hundred-metre band is 1200 to 1300 m at 19.2 degrees. The ground under the line is 35 degrees or steeper on two short stretches in the pitch up onto the ridge, 35 and 20 metres, with the steepest cell at 50 degrees."
+    },
+    {
+     "title": "The terrain around it",
+     "body": "The crest is corniced to the east, and the ground below the cornices measures 49 to 65 degrees within 50 metres of the line. The north and north-west sides of the summit are crags at 57.6 and 61.8 degrees. The descent east has 34 to 36 degrees between 1070 and 1000 m. The forest road runs along the valley floor under slopes that measure 35 to 68 degrees in their steepest windows on both sides, 160 to 640 metres out, between 1.2 and 3.6 km. Skifantomet: “during the winter large avalanches come down into Ålhusdalen from the mountainsides (Blåfjellet, Sølvet and Trollet).” Ålhusdalen is 784 metres south-west of the line, and the road passes Brekka, where skifantomet's descent from that valley comes out."
+    },
+    {
+     "title": "Before you go",
+     "body": "Check today's avalanche forecast for Indre Fjordane at varsom.no. Indre Fjordane is an A region and is forecast daily in season. It is a long day — Fri Flyt puts it at 5 to 10 hours. Bring a transceiver, probe and shovel, and ski crampons."
+    }
+   ]
+  },
+  "sources": [
+   "https://www.friflyt.no/topptur/skiturer-sunnfjord/turbeskrivelse-groenlifjellet-og-litlebottsegga",
+   "https://ut.no/turforslag/113714279",
+   "https://www.fjordnorway.com/no/reiseinspirasjon/sunnfjord---det-nye-skiparadiset",
+   "https://skifantomet.wordpress.com/turbeskrivelse-til-toppturer/"
+  ],
+  "source": "written against corridors.json, the routed line, flank_probe.py and a 5 m slope grid along the line",
+  "problems": [
+   "ADVERSARIAL READ: skogsvegen var framstilt som ufarlig; lisidene over den måler 35–68 grader i bratteste vindu på begge sider, og det står nå i skredavsnittet med hele skifantomet-setninga. Ålhusdalen ligger sørvest, ikke vest. «holder du høyden» stemte ikke med linja, som stiger fra 803 til 908 — retta. Østsida (37,6°) og Fri Flyts 29–32 grader ved 860–750 moh var utelatt fra nedkjøringa, og Fri Flyts advarsel om utgliding var utelatt — lagt til. Bakken under sporet i kneika er 35–50 grader på to korte strekk."
+  ]
+ },
+ "eggja": {
+  "no": {
+   "intro": "680 høydemeter på 2,83 km fra toppen av Rørvikfjellet: forbi Fjelltjønna, opp ryggformasjonen og over kammen til Eggja på 1204 moh, østtoppen på Rimmane. Fri Flyt kaller toppen Ørnafjellet og ut.no «den austlege toppen på fjellpartiet Rimmane»; kartet kaller den Eggja, og registerets Ørnafjellet er en annen topp 1121 meter lenger øst. Bratteste sammenhengende parti på linja er 25,3 grader mellom 916 og 940 moh — men det er sporets stigning, og bakken det krysser er brattere.",
+   "caption": "680 høydemeter og 2,83 km fra Rørvikfjellet, i åpent fjell nesten fra bilen og med bratteste hundremeteren mellom 800 og 900 moh.",
+   "ascent": [
+    "Parkeringa ligger på toppen av Rørvikfjellet, 542 moh, 100 meter fra Rørvik fjellstove mot Førde. Det er her Fri Flyt sier du kan spenne på skia ved bilen, og at turen derfor er snøsikker fra tidlig i sesongen; Fjord Norway skriver at lokale går den allerede i november og desember.",
+    "Gå nordover og forbi Fjelltjønna med tjernet på venstre side — linja går øst for det, 70 meter fra registerpunktet. Så et lite stykke nordøst til ryggformasjonen, 647 moh etter 937 meter, som du følger mot nordvest. Der linja tar østover inn på ryggen, krysser den 50 meter bakke på 35 grader eller brattere, med en celle på 61 grader — et brattheng du ser og velger linje gjennom selv. Ut.no-stien går «inn i skogen over fjelltjønna»; langs linja er terrengklassen åpent fjell nesten fra start.",
+    "Ryggen er det bratte. Bandet fra 700 til 800 moh måler 17,3 grader. Bandet fra 800 til 900 moh måler 20,0 grader over 263 meter grunn og er det bratteste på turen. Bandet fra 900 til 1000 moh måler 19,9 grader. Bandet fra 1000 til 1100 moh måler 19,3 grader. Det bratteste sammenhengende partiet, 25,3 grader mellom 916 og 940 moh, ligger midt på ryggen — der bakken under sporet er 35 til 47 grader over 39 meter — og Fri Flyt oppgir bratteste punkt til 27–32 grader, øverst på ryggen over 1000 moh. Innenfor 50 meter av linja står knauser og hamrer på 41 til 67 grader; sommerstien på ut.no går gjennom «ei rås i ein bratt berghammar» og gir en veg rundt den. Vinterlinja følger ryggformasjonen.",
+    "Ved 1134 moh flater det ut, og du legger sporet nordover til kammen og så østover til toppen etter 2,83 km. Terrengmodellen leser 1204 moh; Fri Flyt, ut.no og kartet sier 1209. Kammen fortsetter østover over et skar på 1111 moh til registerets Ørnafjellet, 1228 moh — den toppen Fri Flyt fører som Blåfjellet, 1226 moh, med egen tur fra Hårklau, og foreslår som rundtur herfra."
+   ],
+   "descent": [
+    "Fri Flyt: samme veg ned, eller en av mange linjer mellom toppen og høyden på 1125 moh langs Rimmane. Sørsida av toppen måler 14,2 grader i snitt og 26,1 grader i bratteste vindu, 230 til 290 meter ut, og vestover mot Rimmane er kammen slak, 8,2 grader i snitt. Fri Flyt skriver at de sørvendte sidene gir sol på kalde vinterdager.",
+    "Nordsida er hamrer: 52,3 grader i bratteste vindu 390 til 450 meter ut, og nordvestsida 48,0 grader. Sørvest måler 39,5 grader 440 til 500 meter ut. Kjør ned sørover, ikke nordover."
+   ],
+   "avalanche": [
+    {
+     "title": "Ruta",
+     "body": "Bratteste sammenhengende parti på linja er 25,3 grader mellom 916 og 940 moh, og bratteste hundremeteren er 800 til 900 moh med 20,0 grader. Det er stigningen langs sporet. Bakken sporet krysser er 35 grader eller brattere over 50 meter ved 628–644 moh, med en celle på 61 grader, og over 39 meter ved 921–940 moh. Fri Flyt oppgir bratteste punkt til 27–32 grader, øverst på ryggen over 1000 moh."
+    },
+    {
+     "title": "Terrenget utenfor",
+     "body": "Ryggen har knauser og hamrer på 41 til 67 grader innenfor 50 meter av linja, og nordsida av toppen bryter av i 52,3 grader. Sørsida, der nedkjøringene går, ligger i sola — det er det Fri Flyt selger turen på, og det er også det som varmer snøen når dagen blir lang."
+    },
+    {
+     "title": "Før du går",
+     "body": "Sjekk dagens skredvarsel for Indre Fjordane på varsom.no. Indre Fjordane er en A-region og varsles daglig i sesongen. Rørvikfjellet er tilgjengelig om vinteren; det er Nasjonal turistveg Gaularfjellet som ifølge Fjord Norway vanligvis åpner i månedsskiftet april/mai. Ta med sender/mottaker, søkestang og spade."
+    }
+   ]
+  },
+  "en": {
+   "intro": "680 metres of climbing over 2.83 km from the top of Rørvikfjellet: past Fjelltjønna, up the ridge and over the crest to Eggja at 1204 m, the east top of Rimmane. Fri Flyt calls the top Ørnafjellet and ut.no “the eastern top of the Rimmane massif”; the map calls it Eggja, and the register's Ørnafjellet is a different top 1121 metres further east. The steepest sustained section on the line is 25.3 degrees between 916 and 940 m — but that is the track's gradient, and the ground it crosses is steeper.",
+   "caption": "680 metres of climbing and 2.83 km from Rørvikfjellet, in open mountain almost from the car and with the steepest hundred-metre band between 800 and 900 m.",
+   "ascent": [
+    "The car park is at the top of Rørvikfjellet, 542 m, 100 metres from Rørvik fjellstove towards Førde. This is where Fri Flyt says you can put your skis on at the car, which is why the tour has reliable snow from early in the season; Fjord Norway writes that locals ski it as early as November and December.",
+    "Head north and past Fjelltjønna with the tarn on your left — the line goes east of it, 70 metres from the register point. Then a short way north-east to the ridge, 647 m after 937 metres, which you follow north-west. Where the line turns east onto the ridge it crosses 50 metres of ground at 35 degrees or steeper, with one cell at 61 degrees — a steep step you will see and pick your own line through. The ut.no path goes “into the forest above the tarn”; along the line the terrain class is open mountain almost from the start.",
+    "The ridge is the steep part. The band from 700 to 800 m measures 17.3 degrees. The band from 800 to 900 m measures 20.0 degrees over 263 metres of ground and is the steepest on the tour. The band from 900 to 1000 m measures 19.9 degrees. The band from 1000 to 1100 m measures 19.3 degrees. The steepest sustained section, 25.3 degrees between 916 and 940 m, is halfway up the ridge — where the ground under the track is 35 to 47 degrees over 39 metres — and Fri Flyt puts its steepest point at 27–32 degrees, high on the ridge above 1000 m. Within 50 metres of the line there are knolls and crags of 41 to 67 degrees; the summer path on ut.no goes through “a gully in a steep rock band” and gives a way round it. The winter line follows the ridge.",
+    "At 1134 m it flattens out, and you set the track north to the crest and then east to the summit after 2.83 km. The terrain model reads 1204 m; Fri Flyt, ut.no and the map say 1209. The crest carries on east over a col at 1111 m to the register's Ørnafjellet, 1228 m — the top Fri Flyt lists as Blåfjellet, 1226 m, with a tour of its own from Hårklau, and suggests as a round trip from here."
+   ],
+   "descent": [
+    "Fri Flyt: the same way down, or one of many lines between the summit and the 1125 m top along Rimmane. The south side of the summit averages 14.2 degrees, with 26.1 degrees in its steepest window 230 to 290 metres out, and west towards Rimmane the crest is gentle, 8.2 degrees on average. Fri Flyt writes that the south-facing sides give sun on cold winter days.",
+    "The north side is crags: 52.3 degrees in its steepest window 390 to 450 metres out, and the north-west side 48.0 degrees. South-west measures 39.5 degrees 440 to 500 metres out. Ski down to the south, not the north."
+   ],
+   "avalanche": [
+    {
+     "title": "The route",
+     "body": "The steepest sustained section on the line is 25.3 degrees between 916 and 940 m, and the steepest hundred-metre band is 800 to 900 m at 20.0 degrees. That is the gradient along the track. The ground the track crosses is 35 degrees or steeper over 50 metres at 628–644 m, with one cell at 61 degrees, and over 39 metres at 921–940 m. Fri Flyt puts its steepest point at 27–32 degrees, high on the ridge above 1000 m."
+    },
+    {
+     "title": "The terrain around it",
+     "body": "The ridge has knolls and crags of 41 to 67 degrees within 50 metres of the line, and the north side of the summit breaks off at 52.3 degrees. The south side, where the descents go, is in the sun — that is what Fri Flyt sells the tour on, and it is also what warms the snow as the days get longer."
+    },
+    {
+     "title": "Before you go",
+     "body": "Check today's avalanche forecast for Indre Fjordane at varsom.no. Indre Fjordane is an A region and is forecast daily in season. Rørvikfjellet is open in winter; it is the Gaularfjellet National Tourist Route that, according to Fjord Norway, usually opens at the turn of April and May. Bring a transceiver, probe and shovel."
+    }
+   ]
+  },
+  "sources": [
+   "https://www.friflyt.no/topptur/skiturer-sunnfjord/turbeskrivelse-oernafjellet",
+   "https://ut.no/turforslag/115227",
+   "https://www.fjordnorway.com/no/reiseinspirasjon/sunnfjord---det-nye-skiparadiset",
+   "https://www.openstreetmap.org/node/3888574483"
+  ],
+  "source": "written against corridors.json, the routed line, flank_probe.py and a 5 m slope grid along the line",
+  "problems": [
+   "Parkeringa: Fri Flyt «Parkeringsplass finn du på toppen av Rørvikfjellet, 100 meter frå Rørvik fjellstove i retning Førde.» OSM node/9804117203 ligger 136 m nord for registerpunktet for fjellstova.",
+   "ADVERSARIAL READ: «ingen av kildene går dit» om 1226-toppen var feil — Fri Flyt fører den som Blåfjellet (1226) og foreslår rundtur dit. 25,3 grader var sporets stigning; bakken under linja er 35–61 grader på korte strekk, og det står nå i guiden. Toppen er 1204 på DTM1 mot 1209 i kildene, og det står nå. «Skogen slipper ved 539, rett over parkeringa» var under parkeringas 542 — fjernet. Gaularfjellet åpner «i månedsskiftet april/mai»."
+  ]
+ },
+ "venevassegga": {
+  "no": {
+   "intro": "533 høydemeter på 4,68 km fra Rørvik fjellstove: en lang, avrundet rygg sørvestover, nord for Svartenova, opp i Jakobskardet der ryggen deler seg, og ryggen sørover til Venevassegga på 1024 moh. Bratteste sammenhengende parti er 26,2 grader mellom 679 og 701 moh, tidlig på ryggen; resten er slakt, og Fri Flyt skriver at turen «passar også fint som fjellskitur».",
+   "caption": "533 høydemeter og 4,68 km fra Rørvikfjellet, med skoggrensa på 592 moh, Jakobskardet på 853 og bratteste bandet under 600 moh.",
+   "ascent": [
+    "Start ved parkeringa på toppen av Rørvikfjellet, 542 moh, 100 meter fra Rørvik fjellstove mot Førde — samme parkering som Eggja. Fri Flyt starter turen ved fjellstova og går sørvestover langs en lang, avrundet rygg i oversiktlig terreng.",
+    "Den første kneika er den bratte. Fra parkeringa opp til 600 moh måler linja 14,1 grader over 230 meter grunn, og Fri Flyt oppgir 26 til 30 grader mellom 575 og 600 moh. Linjas bratteste 30-metersvindu, 26,2 grader, ligger litt høyere, mellom 679 og 701 moh. Skogen slipper ved 592 moh. Bakken under linja er brattere enn sporet på noen korte strekk her: 20 og 33 meter på 35 grader eller mer ved 702–713 moh, med en celle på 54 grader, og 36 meter ved 732–735 moh — knauser du ser og velger linje rundt.",
+    "Over det er ryggen slak: bandet fra 700 til 800 moh måler 3,9 grader over 1531 meter grunn. Linja passerer nord for Svartenova — toppen ligger 142 meter sørøst for linja — og går opp i skaret der ryggen deler seg, Jakobskardet, 853 moh etter 3,06 km. Skaret er sadelen mellom Venevassegga og Rundenova; grenen mot nordvest går til Rundenova, 721 meter fra linja, og Venevassegga ligger sørover.",
+    "Fra skaret følger du ryggen sørover. Bandet fra 900 til 1000 moh måler 7,3 grader. Ved 906–908 moh krysser linja 17 meter bakke på rundt 40 grader, og langs ryggen står knauser og hamrer på 53 grader og mer innenfor 50 meter av linja — små brattheng i et ellers slakt fjell. Toppen er på 1024 moh etter 4,68 km."
+   ],
+   "descent": [
+    "Fri Flyt: «Det er vanleg å køyre ned same vegen som du gjekk opp.» Toppen er slak på nesten alle sider — 6,1 til 11,9 grader i snitt mot nord, øst og vest over 500 meter — og nordsida, som er den ruta vender mot, måler 7,3 grader.",
+    "Sørvestsida er unntaket: 36,3 grader i bratteste vindu 270 til 330 meter ut, og mot nordvest bryter terrenget av i 52,7 grader 440 til 500 meter ut. Kjør tilbake langs ryggen til Jakobskardet og videre mot fjellstova."
+   ],
+   "avalanche": [
+    {
+     "title": "Ruta",
+     "body": "Bratteste sammenhengende parti på linja er 26,2 grader mellom 679 og 701 moh, og bratteste bandet er stykket under 600 moh med 14,1 grader. Bakken under sporet er 35 grader eller brattere på fire korte strekk på 17 til 36 meter, med bratteste celle 54 grader. Fri Flyt graderer turen som «Lett»."
+    },
+    {
+     "title": "Terrenget utenfor",
+     "body": "Terrenget er slakt, men ikke uten brattheng: knauser og små hamrer langs ryggen, og sørvest- og nordvestsida av toppen på 36,3 og 52,7 grader. Ryggen er snaufjell uten ly, og i skodde er det orienteringen som er det vanskelige — de avrundede ryggene ligner hverandre."
+    },
+    {
+     "title": "Før du går",
+     "body": "Sjekk dagens skredvarsel for Indre Fjordane på varsom.no. Indre Fjordane er en A-region og varsles daglig i sesongen. Rørvikfjellet er tilgjengelig om vinteren; Nasjonal turistveg Gaularfjellet åpner ifølge Fjord Norway vanligvis i månedsskiftet april/mai. Ta med sender/mottaker, søkestang og spade."
+    }
+   ]
+  },
+  "en": {
+   "intro": "533 metres of climbing over 4.68 km from Rørvik fjellstove: a long, rounded ridge south-west, north of Svartenova, up into Jakobskardet where the ridge splits, and the ridge south to Venevassegga at 1024 m. The steepest sustained section is 26.2 degrees between 679 and 701 m, early on the ridge; the rest is gentle, and Fri Flyt writes that the tour “also works well as a mountain ski tour”.",
+   "caption": "533 metres of climbing and 4.68 km from Rørvikfjellet, with the treeline at 592 m, Jakobskardet at 853 and the steepest band below 600 m.",
+   "ascent": [
+    "Start at the car park at the top of Rørvikfjellet, 542 m, 100 metres from Rørvik fjellstove towards Førde — the same car park as Eggja. Fri Flyt starts the tour at the lodge and heads south-west along a long, rounded ridge in open, easily read terrain.",
+    "The first pitch is the steep one. From the car park up to 600 m the line measures 14.1 degrees over 230 metres of ground, and Fri Flyt gives 26 to 30 degrees between 575 and 600 m. The line's steepest 30-metre window, 26.2 degrees, is a little higher, between 679 and 701 m. The forest lets go at 592 m. The ground under the line is steeper than the track on a few short stretches here: 20 and 33 metres at 35 degrees or more at 702–713 m, with one cell at 54 degrees, and 36 metres at 732–735 m — knolls you will see and pick a line round.",
+    "Above that the ridge is gentle: the band from 700 to 800 m measures 3.9 degrees over 1531 metres of ground. The line passes north of Svartenova — the top is 142 metres south-east of the line — and goes up into the col where the ridge splits, Jakobskardet, 853 m after 3.06 km. The col is the saddle between Venevassegga and Rundenova; the branch to the north-west goes to Rundenova, 721 metres from the line, and Venevassegga is to the south.",
+    "From the col follow the ridge south. The band from 900 to 1000 m measures 7.3 degrees. At 906–908 m the line crosses 17 metres of ground at about 40 degrees, and along the ridge there are knolls and small crags of 53 degrees and more within 50 metres of the line — small steep steps on an otherwise gentle mountain. The summit is at 1024 m after 4.68 km."
+   ],
+   "descent": [
+    "Fri Flyt: “it is usual to ski down the same way you came up.” The summit is gentle on almost every side — 6.1 to 11.9 degrees on average to the north, east and west over 500 metres — and the north side, the one the route faces, measures 7.3 degrees.",
+    "The south-west side is the exception: 36.3 degrees in its steepest window 270 to 330 metres out, and to the north-west the ground breaks off at 52.7 degrees 440 to 500 metres out. Ski back along the ridge to Jakobskardet and on towards the lodge."
+   ],
+   "avalanche": [
+    {
+     "title": "The route",
+     "body": "The steepest sustained section on the line is 26.2 degrees between 679 and 701 m, and the steepest band is the stretch below 600 m at 14.1 degrees. The ground under the track is 35 degrees or steeper on four short stretches of 17 to 36 metres, with the steepest cell at 54 degrees. Fri Flyt grades the tour “Easy”."
+    },
+    {
+     "title": "The terrain around it",
+     "body": "The ground is gentle, but not without steep steps: knolls and small crags along the ridge, and the south-west and north-west sides of the summit at 36.3 and 52.7 degrees. The ridge is bare mountain with no shelter, and in fog it is navigation that is hard — the rounded ridges look alike."
+    },
+    {
+     "title": "Before you go",
+     "body": "Check today's avalanche forecast for Indre Fjordane at varsom.no. Indre Fjordane is an A region and is forecast daily in season. Rørvikfjellet is open in winter; the Gaularfjellet National Tourist Route usually opens at the turn of April and May, according to Fjord Norway. Bring a transceiver, probe and shovel."
+    }
+   ]
+  },
+  "sources": [
+   "https://www.friflyt.no/topptur/skiturer-sunnfjord/turbeskrivelse-venevassegga-og-rundenova",
+   "https://www.fjordnorway.com/no/reiseinspirasjon/sunnfjord---det-nye-skiparadiset"
+  ],
+  "source": "written against corridors.json, the routed line, flank_probe.py and a 5 m slope grid along the line",
+  "problems": [
+   "Parkeringa: Fri Flyt «Parkeringsplass finn du på toppen av Rørvikfjellet, 100 meter frå Rørvik fjellstove i retning Førde.» OSM node/9804117203 ligger 136 m nord for registerpunktet for fjellstova.",
+   "ADVERSARIAL READ: Jakobskardet var først festet på en østvendt li på 24 grader (61.3905/6.1915, 792,8 moh), 207 m øst for sadelen mellom Venevassegga og Rundenova. Korridoren er flyttet til sadelen (61.38875/6.18520, 852,8 moh) og linja rutet på nytt: 4456 m +528 → 4685 m +533, kortet står på 530. «Lett. Stor jamn side med svak helling» var Fri Flyts generelle gradsdefinisjon, ikke en beskrivelse av turen — nå «Lett». Bakken under linja er målt hver 5. meter og står i guiden."
+  ]
  }
 }

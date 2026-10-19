@@ -1590,5 +1590,37 @@
     "summit_dtm": 536.6,
     "claims": 536,
     "stored_off_km": 0.0
+  },
+  "gotdalsnipa": {
+    "name": "Gotdalsnipa",
+    "lat": 61.58912,
+    "lng": 6.27909,
+    "summit_dtm": 1248.4,
+    "claims": 1249,
+    "stored_off_km": 0.0
+  },
+  "gronlifjellet": {
+    "name": "Grønlifjellet",
+    "lat": 61.59718,
+    "lng": 6.22043,
+    "summit_dtm": 1385.7,
+    "claims": 1385,
+    "stored_off_km": 0.45
+  },
+  "venevassegga": {
+    "name": "Venevassegga",
+    "lat": 61.37516,
+    "lng": 6.18333,
+    "summit_dtm": 1023.6,
+    "claims": 1023,
+    "stored_off_km": 0.02
+  },
+  "eggja": {
+    "name": "Rimmane",
+    "lat": 61.42301,
+    "lng": 6.22375,
+    "summit_dtm": 1204.0,
+    "claims": 1209,
+    "stored_off_km": 1.03
   }
 }

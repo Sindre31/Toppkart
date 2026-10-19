@@ -2223,6 +2223,38 @@
   "distanceKm": 5.4,
   "cumdistM": 5360
  },
+ "gronlifjellet": {
+  "verticalM": 1160,
+  "gainM": 1155,
+  "distanceM": 8102,
+  "startM": 277,
+  "summitM": 1386,
+  "duration": "6–8 t",
+  "steepestBandAngle": 19.2,
+  "steepestBandFrom": 1200,
+  "steepestBandTo": 1300,
+  "maxStepAngle": 23.8,
+  "grade": 2,
+  "aspect": "SØ",
+  "distanceKm": 8.1,
+  "cumdistM": 8102
+ },
+ "gotdalsnipa": {
+  "verticalM": 1000,
+  "gainM": 998,
+  "distanceM": 5253,
+  "startM": 277,
+  "summitM": 1248,
+  "duration": "4–6 t",
+  "steepestBandAngle": 15.4,
+  "steepestBandFrom": 1200,
+  "steepestBandTo": 1300,
+  "maxStepAngle": 24.3,
+  "grade": 2,
+  "aspect": "S",
+  "distanceKm": 5.3,
+  "cumdistM": 5253
+ },
  "steindalsnosi": {
   "verticalM": 760,
   "gainM": 764,
@@ -2271,6 +2303,22 @@
   "distanceKm": 6.7,
   "cumdistM": 6698
  },
+ "eggja": {
+  "verticalM": 680,
+  "gainM": 680,
+  "distanceM": 2825,
+  "startM": 542,
+  "summitM": 1204,
+  "duration": "3–5 t",
+  "steepestBandAngle": 20.0,
+  "steepestBandFrom": 800,
+  "steepestBandTo": 900,
+  "maxStepAngle": 25.3,
+  "grade": 2,
+  "aspect": "S",
+  "distanceKm": 2.8,
+  "cumdistM": 2826
+ },
  "kvamshesten": {
   "verticalM": 830,
   "gainM": 830,
@@ -2318,6 +2366,22 @@
   "aspect": "NØ",
   "distanceKm": 1.8,
   "cumdistM": 1834
+ },
+ "venevassegga": {
+  "verticalM": 530,
+  "gainM": 533,
+  "distanceM": 4685,
+  "startM": 542,
+  "summitM": 1024,
+  "duration": "3–5 t",
+  "steepestBandAngle": 14.1,
+  "steepestBandFrom": 500,
+  "steepestBandTo": 600,
+  "maxStepAngle": 26.2,
+  "grade": 1,
+  "aspect": "N",
+  "distanceKm": 4.7,
+  "cumdistM": 4685
  },
  "molden": {
   "verticalM": 630,

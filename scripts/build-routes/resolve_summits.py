@@ -57,6 +57,13 @@ SAME_TOP_M = 200.0
 # register point, and that is the evidence that settled Ranten. It cannot settle
 # a mountain whose register point sits between two of its own tops.
 SUMMIT_SEED = {
+    # Eggja (1209) is the east top of the Rimmane massif, the summit both of its
+    # sources end on — Fri Flyt calls it «Ørnafjellet på 1209 moh», ut.no «den
+    # austlege toppen på fjellpartiet Rimmane». The register has no Eggja; its
+    # Rimmane point sits 1.1 km west on the 1125 m top and its Ørnafjellet on the
+    # 1226 m top 1.1 km east, behind a 1111 m col. The seed is OSM's Eggja peak
+    # (node/3888574483, ele 1209), which is the name N50 gives this top.
+    "eggja": (61.42296, 6.22337),
     # Two tops on the Hallingskarvet plateau, 650 m apart, climbing to 1860.4 and
     # 1857.5 m. Against a published 1859 they land 1.4 and 1.5 m off, which is a
     # tie by any reading, and the register point is 198 m from the lower one and
