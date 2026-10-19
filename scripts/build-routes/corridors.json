@@ -12463,7 +12463,7 @@
    {
     "id": "oksfjordbotn",
     "name": "Fra Øksfjordbotn over nordøstryggen",
-    "description": "Fra parkeringa ved skolen i Øksfjordbotn langs Gammelveien og sommervegen Geassegeaidnu østover over Nordelva, opp ryggen nordøstover og over det slake topplatået til Gievdnerášša",
+    "description": "Fra parkeringa ved skolen i Øksfjordbotn langs Gammelveien og sommervegen Geassegeaidnu østover sør for Nordelva-vatnet, opp lia øst for Skárpavággi og over det slake topplatået til Gievdnerášša",
     "trailhead": {
      "name": "Parkeringa ved skolen i Øksfjordbotn",
      "lat": 70.10842,
@@ -12477,6 +12477,24 @@
       "lat": 70.10484,
       "lng": 22.53046,
       "elevation_m": 60.4
+     },
+     {
+      "name": "sommervegen Geassegeaidnu",
+      "lat": 70.10407,
+      "lng": 22.53527,
+      "elevation_m": 66.6
+     },
+     {
+      "name": "sommervegen Geassegeaidnu",
+      "lat": 70.10265,
+      "lng": 22.53762,
+      "elevation_m": 74.8
+     },
+     {
+      "name": "sommervegen Geassegeaidnu",
+      "lat": 70.10181,
+      "lng": 22.53864,
+      "elevation_m": 88.5
      },
      {
       "name": "sommervegen Geassegeaidnu",
@@ -12620,6 +12638,24 @@
      "fullName": "Parkeringa i Jøkelfjord"
     },
     "waypoints": [
+     {
+      "name": "vest for elva",
+      "lat": 70.0597,
+      "lng": 21.8716,
+      "elevation_m": 35.3
+     },
+     {
+      "name": "vest for gjelet",
+      "lat": 70.0585,
+      "lng": 21.8722,
+      "elevation_m": 58.9
+     },
+     {
+      "name": "vest for gjelet",
+      "lat": 70.0572,
+      "lng": 21.8722,
+      "elevation_m": 101.8
+     },
      {
       "name": "vest for Golpeelva",
       "lat": 70.056,

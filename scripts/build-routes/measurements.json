@@ -3015,7 +3015,7 @@
     },
     {
       "what": "Langs linja",
-      "figure": "kafeen (OSM node/3716139335) på 39 moh; forhøyningen på 839 ved 3143 m (3,14 km), 839 moh; 920-toppen ved 4924 m (4,92 km), 916 moh; toppryggen ned til 884 moh ved 5406 m; 918-toppen ved 6467 m (6,47 km), 917 moh",
+      "figure": "kafeen (OSM node/3716139335) på 39 moh; forhøyningen på 839 ved 3143 m (3,14 km), 839 moh; 920-toppen ved 4924 m (4,92 km), 916 moh; toppryggen ned til 866 moh ved 5618 m (5,62 km); 918-toppen ved 6467 m (6,47 km), 917 moh; ned til 889 moh ved 7058 m (7,06 km) og 47 m opp over de siste 346 m til toppen; 86 m tilbakegitt fra 920-toppen til toppen; kafeen har opening_hours juni–august",
       "how": "Nærmeste punkt på den routede linja i lib/routes.ts til OSM-/registerpunktet, med avstand langs ruta og DTM1-høyden der."
     },
     {
@@ -3024,8 +3024,13 @@
       "how": "DTM1 i 5 m rutenett (geo.dem_tile), helling per celle med numpy.gradient, lest hver 5. meter langs den routede linja; oppgitt er hvert sammenhengende strekk på minst 15 m der bakken under linja er 35° eller brattere, med lengde, høyde og bratteste celle."
     },
     {
+      "what": "Bergsteget på ryggen",
+      "figure": "13 m med bakke på 35° eller brattere ved 880–888 moh (4071–4084 m, 4,07 km, bratteste celle 56°)",
+      "how": "DTM1 i 1 m rutenett (geo.dem_tile), helling per celle med numpy.gradient, lest hver meter langs den routede linja; oppgitt er hvert sammenhengende strekk på minst 10 m med bakke på 35° eller brattere, med lengde, høyde og bratteste celle."
+    },
+    {
       "what": "Kantene langs ryggen",
-      "figure": "bakke på 45° eller brattere 18 til 29 m fra linja mellom 555 og 617 moh (2132–2299 m); 3 til 15 m fra linja på begge sider mellom 879 og 892 moh (4063–4168 m, 4,06 til 4,17 km)",
+      "figure": "bakke på 45° eller brattere 18 til 29 m fra linja mellom 555 og 617 moh (2132–2299 m); 3 til 12 m fra linja ved bergsteget, 880–888 moh; østkanten 13 til 27 m øst for linja ved 891–892 moh (4108–4233 m), 880–892 moh for halsen som helhet",
       "how": "DTM1 i 5 m rutenett (geo.dem_tile), helling per celle med numpy.gradient; for hver 15. meter langs den routede linja er avstand og peiling til nærmeste celle på 45° eller brattere innenfor 60 m oppgitt."
     },
     {
@@ -3047,12 +3052,12 @@
     },
     {
       "what": "Langs linja",
-      "figure": "parkeringa (OSM way/550421841) på 58 moh ved skolebygget (way/667930487); Gammelveien ved 413 m; Geassegeaidnu ved 1077 m; vatnet på 111 moh (OSM way/865418501, NVE 204367), som Nordelva (way/865418444) renner ned i, 160 m fra linja ved 1494 m; tjernet på 123 moh (way/865418423) 107 m fra linja ved 2349 m",
+      "figure": "parkeringa (OSM way/550421841) på 58 moh ved skolebygget (way/667930487); Gammelveien ved 413 m; Geassegeaidnu ved 1077 m; vatnet på 111 moh (OSM way/865418501, NVE 204367), som Nordelva (way/865418444) renner ut av, 103 m fra linja ved 1538 m; Nordelva aldri nærmere enn 207 m; tjernet på 123 moh (way/865418423) 72 m fra linja ved 2439 m; Skárpavággi (registerets Dal, 70.11801/22.57181) 168 m vest for linja ved 4059 m, 513 moh; Geassegeaidnu (way/550421843) snowmobile=designated, «Tappeluftløypa» ref 10",
       "how": "Nærmeste punkt på den routede linja i lib/routes.ts til OSM-/registerpunktet, med avstand langs ruta og DTM1-høyden der."
     },
     {
       "what": "Kantene langs ryggen",
-      "figure": "små bergsteg på 45° eller brattere 4 til 15 m fra linja mellom 182 og 651 moh (2604–4540 m)",
+      "figure": "små bergsteg på 45° eller brattere 3 til 15 m fra linja mellom 181 og 647 moh (2680–4599 m)",
       "how": "DTM1 i 5 m rutenett (geo.dem_tile), helling per celle med numpy.gradient; for hver 15. meter langs den routede linja er avstand og peiling til nærmeste celle på 45° eller brattere innenfor 60 m oppgitt."
     },
     {
@@ -3074,7 +3079,7 @@
     },
     {
       "what": "Langs linja",
-      "figure": "parkeringa (OSM node/3367919330) på 163 moh; varden (registerets Laslettind, 70.042728/22.006588) ved 2655 m (2,66 km), 807 moh; toppen 0,31 km lenger nordvest",
+      "figure": "parkeringa (OSM node/3367919330) på 163 moh; varden (registerets Laslettind, 70.042728/22.006588, 808,1 moh i DTM1) ved 2655 m (2,66 km); toppen 0,31 km lenger nordvest",
       "how": "Nærmeste punkt på den routede linja i lib/routes.ts til OSM-/registerpunktet, med avstand langs ruta og DTM1-høyden der."
     },
     {
@@ -3084,7 +3089,7 @@
     },
     {
       "what": "Kantene langs ryggen",
-      "figure": "ingen celle på 45° eller brattere innenfor 30 m fra linja; nærmest 45 m fra toppunktet",
+      "figure": "nærmeste celle på 45° eller brattere 33 m fra linja ved 686 moh (2200 m); bakke på 40° eller brattere 41 m vest-sørvest for toppunktet",
       "how": "DTM1 i 5 m rutenett (geo.dem_tile), helling per celle med numpy.gradient; for hver 15. meter langs den routede linja er avstand og peiling til nærmeste celle på 45° eller brattere innenfor 60 m oppgitt."
     },
     {
@@ -3106,23 +3111,23 @@
     },
     {
       "what": "Golpeelva",
-      "figure": "Golpeelva (OSM way/643526467) 9 til 149 m øst for linja de første 739 m (0,74 km), deretter lenger øst",
+      "figure": "Golpeelva (OSM way/643526467) 18 til 149 m øst for linja de første 739 m (0,74 km), deretter lenger øst; busstoppet (node/7099800524) øst for elva",
       "how": "Avstand fra hver 6. punkt på den routede linja til nærmeste punkt på OSM-veien, med avstand langs ruta og høyden der."
     },
     {
       "what": "Langs linja",
-      "figure": "parkeringa (OSM way/643526459) på 22 moh; topplatået ved 3468 m (3,47 km), 869 moh; Ytre Hamnebukta (registerets Gard, 70.04299/21.81740) 2,9 km vest for starten",
+      "figure": "parkeringa (OSM way/643526459) på 22 moh; topplatået ved 3508 m (3,51 km), 871 moh; Ytre Hamnebukta (registerets Gard, 70.04299/21.81740) 2,9 km vest-sørvest for starten; linja går 181° (sør) fra start til 3,4 km og 121° (øst-sørøst) den siste halve kilometeren",
       "how": "Nærmeste punkt på den routede linja i lib/routes.ts til OSM-/registerpunktet, med avstand langs ruta og DTM1-høyden der."
     },
     {
       "what": "Kantene langs ryggen",
-      "figure": "bakke på 45° eller brattere 1 til 29 m fra linja mellom 455 og 492 moh (1618–1724 m)",
+      "figure": "bakke på 45° eller brattere 2 til 30 m fra linja mellom 457 og 493 moh (1644–1748 m); 17 til 24 m fra linja ved 888–891 moh (3762–3795 m, 3,76 til 3,80 km), toppen av et gjel på nordsida; ingen celle på 40° eller brattere innenfor 60 m fra varden",
       "how": "DTM1 i 5 m rutenett (geo.dem_tile), helling per celle med numpy.gradient; for hver 15. meter langs den routede linja er avstand og peiling til nærmeste celle på 45° eller brattere innenfor 60 m oppgitt."
     },
     {
       "what": "Bakken under linja",
-      "figure": "ingen strekk på 15 m med bakke på 35° eller brattere under linja, bratteste celle 49,8°",
-      "how": "DTM1 i 5 m rutenett (geo.dem_tile), helling per celle med numpy.gradient, lest hver 5. meter langs den routede linja; oppgitt er hvert sammenhengende strekk på minst 15 m der bakken under linja er 35° eller brattere, med lengde, høyde og bratteste celle."
+      "figure": "15 m med bakke på 35° eller brattere ved 440–448 moh (1580–1596 m, bratteste celle 41°) og 16 m ved 471–479 moh (1678–1694 m, bratteste celle 60°); ingen nederst ved elva",
+      "how": "DTM1 i 1 m rutenett (geo.dem_tile), helling per celle med numpy.gradient, lest hver meter langs den routede linja; oppgitt er hvert sammenhengende strekk på minst 10 m med bakke på 35° eller brattere, med lengde, høyde og bratteste celle."
     },
     {
       "what": "Varslingsregionen toppkoordinaten ligger i",

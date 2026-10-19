@@ -3232,20 +3232,20 @@
   "cumdistM": 7404
  },
  "gievdnerassa": {
-  "verticalM": 870,
-  "gainM": 873,
-  "distanceM": 6269,
+  "verticalM": 880,
+  "gainM": 879,
+  "distanceM": 6334,
   "startM": 58,
   "summitM": 898,
   "duration": "4–6 t",
-  "steepestBandAngle": 19.0,
+  "steepestBandAngle": 17.3,
   "steepestBandFrom": 200,
   "steepestBandTo": 300,
-  "maxStepAngle": 25.4,
+  "maxStepAngle": 29.1,
   "grade": 2,
   "aspect": "S",
   "distanceKm": 6.3,
-  "cumdistM": 6271
+  "cumdistM": 6336
  },
  "laslettind": {
   "verticalM": 660,
@@ -3265,18 +3265,18 @@
  },
  "vassnestind": {
   "verticalM": 880,
-  "gainM": 878,
-  "distanceM": 3910,
+  "gainM": 879,
+  "distanceM": 3930,
   "startM": 22,
   "summitM": 896,
   "duration": "3–5 t",
-  "steepestBandAngle": 19.1,
+  "steepestBandAngle": 19.2,
   "steepestBandFrom": 400,
   "steepestBandTo": 500,
-  "maxStepAngle": 27.0,
+  "maxStepAngle": 26.0,
   "grade": 2,
   "aspect": "N",
   "distanceKm": 3.9,
-  "cumdistM": 3910
+  "cumdistM": 3929
  }
 }

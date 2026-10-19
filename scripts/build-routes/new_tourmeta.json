@@ -4353,10 +4353,10 @@
   "season": "des–mai",
   "aspect": "SV",
   "grade": 2,
-  "gradeReason": "Fri Flyt: KAST 1 – Enkelt, hele ruta under 30 grader, 797 høydemeter og 4 timer. 870 høydemeter fra parkeringa og et platå som er vanskelig å orientere seg på i dårlig sikt gjør den til grad 2.",
+  "gradeReason": "Fri Flyt: KAST 1 – Enkelt, hele ruta under 30 grader, 797 høydemeter og 4 timer. 880 høydemeter fra parkeringa og et platå som er vanskelig å orientere seg på i dårlig sikt gjør den til grad 2.",
   "roadClosedInWinter": false,
-  "teaserNo": "870 høydemeter fra Øksfjordbotn: sommervegen østover over Nordelva, opp ryggen nordøstover og over et platå som Fri Flyt sammenligner med en bre — med utsikt mot Finnmarksalpene.",
-  "teaserEn": "870 metres of ascent from Øksfjordbotn: the summer road east over Nordelva, up the ridge to the north-east and across a plateau Fri Flyt compares to a glacier — with views to the Finnmark Alps.",
+  "teaserNo": "880 høydemeter fra Øksfjordbotn: sommervegen østover sør for Nordelva-vatnet, opp lia øst for Skárpavággi og over et platå som Fri Flyt sammenligner med en bre — med utsikt mot Finnmarksalpene.",
+  "teaserEn": "880 metres of ascent from Øksfjordbotn: the summer road east past the Nordelva lake, up the hillside east of Skárpavággi and across a plateau Fri Flyt compares to a glacier — with views to the Finnmark Alps.",
   "hazardNotes": "Fri Flyt: «I dårlig sikt er det lett å gli ned i små og store heng brattere enn 30 grader.» Mikroterrenget er utfordrende å orientere seg i når sporene blåser igjen.",
   "sources": [
    "https://www.friflyt.no/topptur/finnmark/gievdnerassa",
@@ -4367,11 +4367,11 @@
    "Registerets Gievdnerášša (Fjell, Alta) løser seg til 897,8 mot publiserte 897 — +0,8 m. Fri Flyt skriver navnet «Gievdnerassa», Peakbook «Gievdnerášša (898 moh)».",
    "Fri Flyt, Opp: «Fra parkeringen ved den gamle leirskolen, tar du sikte på en rygg som går nordøstover. Her går du opp en jevn fin bakke, før det blir slakere mot toppen av Gievdnerassa.» Ned: «Den tryggeste nedkjøringen følger samme rute ned.» Trygg topptur: «Hele ruta kan gås i terreng under 30 grader.» Fare: «I dårlig sikt er det lett å gli ned i små og store heng brattere enn 30 grader.» Læringspunkt: «Turen gir litt utfordrende mikroterreng å orientere seg i på vei opp og ned, særlig hvis sikten er begrenset og sporene blåser igjen.»",
    "Fri Flyt: «Topplåtået er som å komme på en bre med overraskende godt føre selv når det blåser surt ned i dalen fra sørøst. Nedkjøringen mot sør der det er enklest å komme opp, gir et langt sammenhengende nedrenn.»",
-   "Andrekilde, Peakbook (Otto Lund, 29. mars 2016): «Parkerte ved Gammelveien nær Øksfjordbotn skole (e-verket).» Startsted «Øksfjordbotn skole (65 moh)». Han gikk en annen linje: «Forlot sommerveien ved noen hytter i Rivarbukteidet og valgte oppgangen øst for Skarpavaggi.» Sommervegen er Geassegeaidnu (OSM way/447573634, way/550421843) og stien videre (way/759043360) østover mot Rivarbukteidet; korridoren følger den over Nordelva (way/865418444) i stedet for å gå opp elvejuvet, og går nordøstryggen derfra.",
+   "Andrekilde, Peakbook (Otto Lund, 29. mars 2016): «Parkerte ved Gammelveien nær Øksfjordbotn skole (e-verket).» Startsted «Øksfjordbotn skole (65 moh)». «Forlot sommerveien ved noen hytter i Rivarbukteidet og valgte oppgangen øst for Skarpavaggi.» og «Stor scooter-trafikk hadde inntatt Kjeldalen i påsken.» Korridoren følger hans linje: sommervegen Geassegeaidnu (OSM way/447573634, way/550421843, snowmobile=designated, «Tappeluftløypa» ref 10; parkeringa way/550421841 er snowmobile=yes) og stien videre (way/759043360) østover, sør for vatnet på 111 moh (way/865418501) som Nordelva (way/865418444) renner ut av, og opp lia øst for Skárpavággi (registerets Dal, 70.11801/22.57181). Fri Flyts «rygg som går nordøstover» rett fra skolen går over Nordelva-juvet og bratte heng; den gamle leirskolen er ikke funnet.",
    "Fri Flyt: «Gievdnerassa er et rundt og stort platåfjell med storslagen utsikt i alle retninger og særlig mot Finnmarksalpene i nord og vest»",
-   "897,8 − 57,8 = 840 mot Fri Flyts 797 høydemeter; med motbakkene forbi Nordelva blir det 870."
+   "897,8 − 57,8 = 840 mot Fri Flyts 797 høydemeter; med omvegen langs sommervegen og motbakkene blir den rutede stigningen 879."
   ],
-  "notes": "Fri Flyt (Trygge toppturer, Finnmark) er hovedkilden. Peakbook bekrefter start og topp, men gikk en annen linje østfra. Derfor confidence medium."
+  "notes": "Fri Flyt (Trygge toppturer, Finnmark) gir topp, aspekt og vanskelighet; linja følger Peakbooks oppgang øst for Skárpavággi, fordi Fri Flyts nordøstrygg rett fra skolen går over Nordelva-juvet. Derfor confidence medium."
  },
  "laslettind": {
   "season": "nov–mai",
