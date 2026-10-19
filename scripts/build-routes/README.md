@@ -7181,7 +7181,8 @@ the line — and the guide says so. The teasers follow the lines they describe.
 
 `check_new_corridors` (Hilleknuten has no mapped car park at its start — said in
 the record and the guide), `check_routes`, `check_tours` and `check_geometry`
-clean on 208 tours and 246 routes, `check_ground` clean on all three,
+clean on 208 tours and 246 routes, `check_ground` clean on all three
+(water, trail and, after the merge with the house round, buildings),
 `check_guides` and `check_bands` clean (0 unsourced numbers, 6 band claims all
 agreeing), `check_treeline`, `check_gain` and `check_steepness` with nothing to
 look at, and `npm run typecheck`, `lint`, `test` and `build`.
