@@ -1467,12 +1467,26 @@
     "description": "Normalruta fra Snøheim over østryggen",
     "trailhead": {
      "name": "Snøheim turisthytte",
-     "lat": 62.29417,
-     "lng": 9.35067,
-     "elevation_m": 1474.49,
+     "lat": 62.29429,
+     "lng": 9.35063,
+     "elevation_m": 1474.0,
      "fullName": "Snøheim turisthytte"
     },
     "waypoints": [
+     {
+      "name": "utenom bygningene",
+      "lat": 62.29429,
+      "lng": 9.35051,
+      "elevation_m": 1473.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/181363141."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 62.29417,
+      "lng": 9.35032,
+      "elevation_m": 1473.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/181363141."
+     },
      {
       "name": "Gangbrua over Stridåi",
       "lat": 62.29365,
@@ -1939,10 +1953,31 @@
     },
     "waypoints": [
      {
+      "name": "utenom bygningene",
+      "lat": 60.29063,
+      "lng": 6.07703,
+      "elevation_m": 495.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/939480409."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 60.29068,
+      "lng": 6.07719,
+      "elevation_m": 497.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/939480409."
+     },
+     {
       "name": "Fadnastølen",
       "lat": 60.29068,
       "lng": 6.07731,
       "elevation_m": 497.65
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 60.29068,
+      "lng": 6.0775,
+      "elevation_m": 498.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/939480409."
      },
      {
       "name": "Nedre del av sørvestryggen",
@@ -3172,17 +3207,52 @@
     "description": "Frå bilparkeringa etter bommen i Nupen følgjer ein Engesetvegen oppover og austover til Vallasætra. Frå setra går ein nokre hundre meter inn Langedalen før ein tek bratt opp kneika til Bukkedalen, eventuelt med skia på sekken. Så følgjer ein dalbotnen innover til den bratte, lange flanken som fører opp til toppen.",
     "trailhead": {
      "name": "Nupen",
-     "lat": 62.21249,
-     "lng": 6.1747,
-     "elevation_m": 92.21,
+     "lat": 62.21244,
+     "lng": 6.17475,
+     "elevation_m": 92.0,
      "fullName": "Nupen"
     },
     "waypoints": [
+     {
+      "name": "utenom bygningene",
+      "lat": 62.21235,
+      "lng": 6.17579,
+      "elevation_m": 80.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/940286757, way/940286792, way/940286794."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 62.2126,
+      "lng": 6.17614,
+      "elevation_m": 81.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/940286757, way/940286792, way/940286794."
+     },
      {
       "name": "Vallasætra",
       "lat": 62.23207,
       "lng": 6.21122,
       "elevation_m": 323.48
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 62.23244,
+      "lng": 6.21138,
+      "elevation_m": 325.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/940286525."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 62.23253,
+      "lng": 6.21148,
+      "elevation_m": 326.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/940286525."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 62.23261,
+      "lng": 6.21157,
+      "elevation_m": 325.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/940286525."
      },
      {
       "name": "Bukkedalen",
@@ -3352,6 +3422,27 @@
       "lat": 62.23128,
       "lng": 7.24464,
       "elevation_m": 557.05
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 62.23109,
+      "lng": 7.24492,
+      "elevation_m": 553.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/931480867."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 62.23098,
+      "lng": 7.24489,
+      "elevation_m": 550.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/931480867."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 62.23088,
+      "lng": 7.24486,
+      "elevation_m": 548.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/931480867."
      },
      {
       "name": "Daurmålsfjellet",
@@ -3604,6 +3695,27 @@
      "fullName": "Skogsvegen opp Veitebergsdalen"
     },
     "waypoints": [
+     {
+      "name": "utenom bygningene",
+      "lat": 61.61988,
+      "lng": 6.64423,
+      "elevation_m": 286.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/1000238379, way/1000240982."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 61.62003,
+      "lng": 6.64357,
+      "elevation_m": 287.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/1000238379, way/1000240982."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 61.62026,
+      "lng": 6.6431,
+      "elevation_m": 295.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/1000238379, way/1000240982."
+     },
      {
       "name": "skogsvegen ved 405",
       "lat": 61.62281,
@@ -4391,10 +4503,31 @@
     },
     "waypoints": [
      {
+      "name": "utenom bygningene",
+      "lat": 63.26156,
+      "lng": 10.34196,
+      "elevation_m": 503.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/939648030."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 63.26146,
+      "lng": 10.34211,
+      "elevation_m": 506.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/939648030."
+     },
+     {
       "name": "Vassfjellhytta",
       "lat": 63.26151,
       "lng": 10.34241,
       "elevation_m": 507.4
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 63.26135,
+      "lng": 10.34263,
+      "elevation_m": 509.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/939648030."
      }
     ],
     "source": "researched, verified (ok), no local audit",
@@ -4763,12 +4896,26 @@
     "description": "Frå Trollheimshytta etter merka sommarløype over bruene på Slettåa og Folda, forbi Bossvasshøgda og opp i botnen vest for henne, inn på vinterruta frå Gråhaugen og under Litj-Snota, over breen og opp på toppflanken",
     "trailhead": {
      "name": "Trollheimshytta",
-     "lat": 62.829,
-     "lng": 9.23982,
-     "elevation_m": 533.0,
+     "lat": 62.8291,
+     "lng": 9.23976,
+     "elevation_m": 532.0,
      "fullName": "Trollheimshytta"
     },
     "waypoints": [
+     {
+      "name": "utenom bygningene",
+      "lat": 62.82941,
+      "lng": 9.23987,
+      "elevation_m": 530.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/271455345."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 62.82943,
+      "lng": 9.23966,
+      "elevation_m": 529.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/271455345."
+     },
      {
       "name": "bruene over Slettåa og Folda",
       "lat": 62.832,
@@ -6060,6 +6207,27 @@
       "elevation_m": 302.6
      },
      {
+      "name": "utenom bygningene",
+      "lat": 60.43042,
+      "lng": 6.1582,
+      "elevation_m": 300.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/939477983, way/939479592."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 60.43061,
+      "lng": 6.15792,
+      "elevation_m": 309.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/939477983, way/939479592."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 60.43081,
+      "lng": 6.15765,
+      "elevation_m": 316.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/939477983, way/939479592."
+     },
+     {
       "name": "stien i lia",
       "lat": 60.43438,
       "lng": 6.15453,
@@ -6401,6 +6569,13 @@
       "lat": 68.21695,
       "lng": 14.4447,
       "elevation_m": 5.1
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 68.21701,
+      "lng": 14.4444,
+      "elevation_m": 4.0,
+      "note": "Lagt inn for hand i hus-runden: linja gjekk gjennom way/1356282797. Strandkanten her les Havflate i DTM1 alt på den opphavlege linja, så omvegen går 12 m nord for bygget utan å gå lenger ut."
      },
      {
       "name": "lysløypa nordover",
@@ -7830,12 +8005,26 @@
     "description": "Fra skogsvegen ved Sandeggen på Breivikeidet, langs nordsida av Russevankelva opp gjennom storsteinet terreng, inn i Russevankskaret der det flater på rundt 400 moh, ved punkt 511 mot sør-søraust, og jevnt opp på toppplatået forbi 847 til varden",
     "trailhead": {
      "name": "Sandeggen",
-     "lat": 69.6315,
-     "lng": 19.4181,
-     "elevation_m": 31.0,
+     "lat": 69.63145,
+     "lng": 19.41822,
+     "elevation_m": 30.0,
      "fullName": "Sandeggen"
     },
     "waypoints": [
+     {
+      "name": "utenom bygningene",
+      "lat": 69.63139,
+      "lng": 19.41798,
+      "elevation_m": 30.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/172660152."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 69.63147,
+      "lng": 19.41765,
+      "elevation_m": 30.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/172660152."
+     },
      {
       "name": "skogsvegen",
       "lat": 69.633,
@@ -8842,6 +9031,27 @@
     },
     "waypoints": [
      {
+      "name": "utenom bygningene",
+      "lat": 68.67946,
+      "lng": 17.91306,
+      "elevation_m": 360.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/1025234329."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 68.67957,
+      "lng": 17.91288,
+      "elevation_m": 360.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/1025234329."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 68.67968,
+      "lng": 17.91271,
+      "elevation_m": 360.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/1025234329."
+     },
+     {
       "name": "over campingen",
       "lat": 68.682,
       "lng": 17.906,
@@ -8949,6 +9159,90 @@
      "fullName": "Ånstad"
     },
     "waypoints": [
+     {
+      "name": "utenom bygningene",
+      "lat": 68.82396,
+      "lng": 17.17786,
+      "elevation_m": 10.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/925904181."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 68.82404,
+      "lng": 17.17803,
+      "elevation_m": 10.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/925904181."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 68.82411,
+      "lng": 17.17817,
+      "elevation_m": 11.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/925904181."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 68.82457,
+      "lng": 17.17866,
+      "elevation_m": 13.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/925903363, way/925905206."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 68.82474,
+      "lng": 17.17894,
+      "elevation_m": 13.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/925903363, way/925905206."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 68.82492,
+      "lng": 17.17921,
+      "elevation_m": 13.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/925903363, way/925905206."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 68.82587,
+      "lng": 17.18066,
+      "elevation_m": 17.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/925902600."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 68.82595,
+      "lng": 17.18078,
+      "elevation_m": 17.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/925902600."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 68.82603,
+      "lng": 17.18091,
+      "elevation_m": 18.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/925902600."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 68.82775,
+      "lng": 17.19022,
+      "elevation_m": 45.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/925902445."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 68.82775,
+      "lng": 17.19052,
+      "elevation_m": 44.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/925902445."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 68.82771,
+      "lng": 17.19069,
+      "elevation_m": 44.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/925902445."
+     },
      {
       "name": "vegen mot Kvantobotn",
       "lat": 68.825,
@@ -11158,6 +11452,27 @@
      "fullName": "Skjellesvika"
     },
     "waypoints": [
+     {
+      "name": "utenom bygningene",
+      "lat": 68.91306,
+      "lng": 16.61139,
+      "elevation_m": 10.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/963365558, way/963365562, way/963365563."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 68.91291,
+      "lng": 16.61047,
+      "elevation_m": 15.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/963365558, way/963365562, way/963365563."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 68.91277,
+      "lng": 16.60958,
+      "elevation_m": 15.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/963365558, way/963365562, way/963365563."
+     },
      {
       "name": "traktorvegen",
       "lat": 68.91204,

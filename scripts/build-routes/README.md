@@ -6578,6 +6578,17 @@ when the rounding does (Gaustatoppen 970 → 980, Kavringtinden 1250 → 1260,
 Melderskin 1270 → 1280, Blånebba 930 → 940). Gråfjell's teaser still said
 580 m and 7.8 km from an older line, and now says 600 m and 8.1 km.
 
+The rest of the run added thirteen more routes: Skarlitinden, Skjellesvikgalten,
+Skrott, Snøhetta, Snønipa, Snota from Trollheimshytta, Snøtinden, Spanstinden,
+Torvløysa, Varden, Vassdalstinden, Vassfjellet and Vesoldo. Four started inside
+a building: the cabin at Sandeggen, the hotel at Snøheim, Trollheimshytta and
+the outbuildings at Nupen. Vassdalstinden is the largest change, +65 m and +13 m
+of climbing round the farmyard at Nupen, and its card goes from 1210 to 1220.
+Varden's crossing was a small shed on the shore at Kabelvåg, where DTM1 already
+reads `Havflate` under the shipped line, so every detour failed the water
+test. It was spliced by hand, 12 m north of the shed and no further out.
+Torvløysa's card had said 1460 against a gain of 1469 and now says 1470.
+
 ## The Sunnfjord round
 
 Four tours from Fri Flyt's *Toppturer i Sunnfjord*, two from the ski-touring car
