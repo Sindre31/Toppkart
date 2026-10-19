@@ -335,7 +335,7 @@ content and data quality that has to be settled before the site is promoted wide
   point 659 m away that reads 1560.0 on DTM1, and the guide says so. **Vesle Nup is in Varsom's
   *Vest-Telemark***, the other three in *Hardanger* — both A-regions. **Fjetlandsnuten's first line
   ran 393 m on Røldalsvatnet**, a regulated lake, until `check_ground.py` saw it; the corridor now
-  follows ut.no's track along the access road. See «The Haukeli and Røldal round» in
+  follows Blåbergdalsvegen, the access road. See «The Haukeli and Røldal round» in
   `scripts/build-routes/README.md`.
 - **The tour cards are checked, the guides are checked, the geometry is checked — by machine.**
   `check_tours.py` and `check_routes.py` come back clean on all 195 tours and `check_guides.py` on

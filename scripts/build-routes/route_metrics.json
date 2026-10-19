@@ -3057,19 +3057,19 @@
  },
  "stavsnuten": {
   "verticalM": 610,
-  "gainM": 610,
-  "distanceM": 3483,
+  "gainM": 612,
+  "distanceM": 3595,
   "startM": 1054,
   "summitM": 1661,
   "duration": "3–5 t",
-  "steepestBandAngle": 21.9,
+  "steepestBandAngle": 20.2,
   "steepestBandFrom": 1400,
   "steepestBandTo": 1500,
-  "maxStepAngle": 26.4,
+  "maxStepAngle": 23.8,
   "grade": 2,
   "aspect": "S",
-  "distanceKm": 3.5,
-  "cumdistM": 3483
+  "distanceKm": 3.6,
+  "cumdistM": 3595
  },
  "sveigen": {
   "verticalM": 560,
@@ -3105,18 +3105,18 @@
  },
  "fjetlandsnuten": {
   "verticalM": 900,
-  "gainM": 895,
-  "distanceM": 5624,
+  "gainM": 900,
+  "distanceM": 5673,
   "startM": 396,
   "summitM": 1285,
   "duration": "4–6 t",
-  "steepestBandAngle": 16.1,
-  "steepestBandFrom": 1100,
-  "steepestBandTo": 1200,
-  "maxStepAngle": 24.0,
+  "steepestBandAngle": 13.9,
+  "steepestBandFrom": 700,
+  "steepestBandTo": 800,
+  "maxStepAngle": 25.0,
   "grade": 2,
   "aspect": "SV",
-  "distanceKm": 5.6,
-  "cumdistM": 5625
+  "distanceKm": 5.7,
+  "cumdistM": 5672
  }
 }

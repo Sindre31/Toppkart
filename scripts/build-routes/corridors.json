@@ -11579,10 +11579,22 @@
       "lat": 59.85952,
       "lng": 7.0053,
       "elevation_m": 1603.2
+     },
+     {
+      "name": "platået, nord for sørkanten",
+      "lat": 59.86028,
+      "lng": 7.00847,
+      "elevation_m": 1650.6
+     },
+     {
+      "name": "inn mot varden",
+      "lat": 59.86019,
+      "lng": 7.00992,
+      "elevation_m": 1650.5
      }
     ],
     "source": "researched, verified (ok), no local audit",
-    "notes": "Ut.no: hold til venstre for undertoppen 1603 — til høyre er det helninger over 30 grader som kan være skredutsatt — og i bollen går du gjennom utløpssoner, selv om løsneområdene kan unngås. På dager med dårlig sikt anbefaler ut.no å stoppe på platået. Fri Flyt: ved østlig vind kan Stavsnuten bli avblåst, og å ta begge toppene krever lett klatring og sikringsutstyr."
+    "notes": "Ut.no: hold til venstre for undertoppen 1603 — til høyre er det helninger over 30 grader som kan være skredutsatt — og i bollen går du gjennom utløpssoner, selv om løsneområdene kan unngås. På dager med dårlig sikt anbefaler ut.no å stoppe på platået. Fri Flyt: ved østlig vind kan Stavsnuten bli litt avblåst, og å ta begge toppene krever lett klatring og sikringsutstyr."
    }
   ]
  },
@@ -11724,7 +11736,7 @@
      }
     ],
     "source": "researched, verified (ok), no local audit",
-    "notes": "Fri Flyt: bratteste punkt 25 grader, og turen passer særlig for nybegynnere. Hele turen går over snaufjell på høyfjellsplatået sør på Hardangervidda, uten ly og med få landemerker; i skodde er det navigasjonen som teller. Fri Flyt advarer mot snorkelføre: da er den bedre på fjellski enn på toppturski."
+    "notes": "Fri Flyt: bratteste punkt 25 grader, og turen passer særlig for nybegynnere. Hele turen går over snaufjell på høyfjellsplatået sør på Hardangervidda, uten ly og med få landemerker; i skodde er det navigasjonen som teller. Fri Flyt: «Det er en veldig populær tur på fjellski, men så lenge det ikke er snorkelføre gir den en flott opplevelse på randoutstyr også.»"
    }
   ]
  },
@@ -11733,62 +11745,146 @@
    {
     "id": "tveitlia",
     "name": "Opp Tveitlia",
-    "description": "Fra Odlandsvegen ved Røldal kraftverk opp anleggsvegen i Tveitlia forbi fjerde hårnålssving, nordover gjennom henget ved 750 moh. og langs den vestvendte bekken mot masta på toppen",
+    "description": "Fra krysset Odlandsvegen/Blåbergdalsvegen ved Røldal kraftverk opp Blåbergdalsvegen i Tveitlia forbi fjerde hårnålssving, nordover gjennom henget ved 750 moh. og langs Gjertrabekk mot masta på toppen",
     "trailhead": {
-     "name": "Odlandsvegen ved Røldal kraftverk",
+     "name": "Krysset Odlandsvegen/Blåbergdalsvegen",
      "lat": 59.81916,
      "lng": 6.81543,
      "elevation_m": 395.6,
-     "fullName": "Odlandsvegen ved Røldal kraftverk"
+     "fullName": "Krysset Odlandsvegen/Blåbergdalsvegen"
     },
     "waypoints": [
      {
-      "name": "anleggsvegen",
-      "lat": 59.81838,
-      "lng": 6.81478,
-      "elevation_m": 405.2
+      "name": "Blåbergdalsvegen",
+      "lat": 59.81804,
+      "lng": 6.81431,
+      "elevation_m": 411.0
      },
      {
-      "name": "anleggsvegen",
-      "lat": 59.81754,
-      "lng": 6.81371,
-      "elevation_m": 418.1
+      "name": "Blåbergdalsvegen",
+      "lat": 59.81698,
+      "lng": 6.81373,
+      "elevation_m": 423.4
      },
      {
-      "name": "anleggsvegen",
+      "name": "Blåbergdalsvegen",
       "lat": 59.81593,
-      "lng": 6.8132,
-      "elevation_m": 437.4
+      "lng": 6.81319,
+      "elevation_m": 437.5
      },
      {
-      "name": "anleggsvegen",
-      "lat": 59.81431,
-      "lng": 6.8132,
-      "elevation_m": 458.3
+      "name": "Blåbergdalsvegen",
+      "lat": 59.81478,
+      "lng": 6.81332,
+      "elevation_m": 451.7
+     },
+     {
+      "name": "Blåbergdalsvegen",
+      "lat": 59.81349,
+      "lng": 6.81295,
+      "elevation_m": 469.9
+     },
+     {
+      "name": "Blåbergdalsvegen",
+      "lat": 59.81241,
+      "lng": 6.81253,
+      "elevation_m": 480.1
+     },
+     {
+      "name": "Blåbergdalsvegen",
+      "lat": 59.81122,
+      "lng": 6.81134,
+      "elevation_m": 489.0
      },
      {
       "name": "første hårnålssving",
-      "lat": 59.8107,
-      "lng": 6.81097,
-      "elevation_m": 495.5
+      "lat": 59.81073,
+      "lng": 6.81117,
+      "elevation_m": 496.2
+     },
+     {
+      "name": "Blåbergdalsvegen",
+      "lat": 59.8115,
+      "lng": 6.81269,
+      "elevation_m": 511.9
+     },
+     {
+      "name": "Blåbergdalsvegen",
+      "lat": 59.81244,
+      "lng": 6.81441,
+      "elevation_m": 527.1
+     },
+     {
+      "name": "Blåbergdalsvegen",
+      "lat": 59.81333,
+      "lng": 6.81566,
+      "elevation_m": 539.6
      },
      {
       "name": "andre hårnålssving",
-      "lat": 59.81431,
-      "lng": 6.81693,
-      "elevation_m": 553.6
+      "lat": 59.81426,
+      "lng": 6.81686,
+      "elevation_m": 553.7
+     },
+     {
+      "name": "Blåbergdalsvegen",
+      "lat": 59.81312,
+      "lng": 6.81649,
+      "elevation_m": 565.6
+     },
+     {
+      "name": "Blåbergdalsvegen",
+      "lat": 59.81203,
+      "lng": 6.81607,
+      "elevation_m": 577.7
+     },
+     {
+      "name": "Blåbergdalsvegen",
+      "lat": 59.81092,
+      "lng": 6.81604,
+      "elevation_m": 592.1
+     },
+     {
+      "name": "Blåbergdalsvegen",
+      "lat": 59.80981,
+      "lng": 6.81615,
+      "elevation_m": 604.7
+     },
+     {
+      "name": "Blåbergdalsvegen",
+      "lat": 59.8087,
+      "lng": 6.81642,
+      "elevation_m": 619.6
      },
      {
       "name": "tredje hårnålssving",
-      "lat": 59.80865,
-      "lng": 6.817,
-      "elevation_m": 628.6
+      "lat": 59.80859,
+      "lng": 6.8167,
+      "elevation_m": 622.5
+     },
+     {
+      "name": "Blåbergdalsvegen",
+      "lat": 59.80987,
+      "lng": 6.81841,
+      "elevation_m": 641.1
      },
      {
       "name": "fjerde hårnålssving",
-      "lat": 59.81076,
-      "lng": 6.81915,
-      "elevation_m": 655.4
+      "lat": 59.81073,
+      "lng": 6.81922,
+      "elevation_m": 655.7
+     },
+     {
+      "name": "Blåbergdalsvegen",
+      "lat": 59.80962,
+      "lng": 6.82017,
+      "elevation_m": 671.7
+     },
+     {
+      "name": "Blåbergdalsvegen",
+      "lat": 59.8094,
+      "lng": 6.8203,
+      "elevation_m": 675.0
      },
      {
       "name": "drei nordover",
@@ -11828,7 +11924,7 @@
      }
     ],
     "source": "researched, verified (ok), no local audit",
-    "notes": "Ut.no: henget ved rundt 750 moh. har et kort parti med mulig skredfare; vurder det før du går videre. Ut.no: på returen holder du deg sør for Gjertrabekk, ellers kommer du ut i meget bratt terreng. Fri Flyt: på varme dager varmer sola opp masta, og isen faller av. Gravgjel-renna fra toppen er 55 grader øverst og en egen nedkjøring."
+    "notes": "Ut.no: henget ved rundt 750 moh. har et kort parti med mulig skredfare; vurder det før du går videre. Ut.no: på returen holder du deg sør for Gjertrabekk, ellers kommer du ut i meget bratt terreng — mellom 864 og 970 moh. ligger terreng på 40 grader og mer 50–220 m nordvest for linja, og inngangen til Gravgjel-renna ligger nord for linja ved rundt 950–1000 moh. Fri Flyt: på varme dager varmer sola opp masta, og isen faller av. Gravgjel er 55 grader øverst, «Vanskelig», med fare for skred og steinfall."
    }
   ]
  }

@@ -2709,18 +2709,23 @@
       "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
     },
     {
+      "what": "Sørsida rett under varden",
+      "figure": "S 38,4° 30–90 m ut, 195° 43,3° 20–80 m ut, 210° 40,6° 10–70 m ut — 38,4 til 43,3° 10 til 90 m fra varden, 31,8–33,4° i snitt over de første 120 m; første 90 m",
+      "how": "flank_probe.py fra toppkoordinaten i summits.json, peiling 180, 195 og 210, --out 120 --step 10, over DTM1."
+    },
+    {
       "what": "Undertoppene 1603 og 1567",
       "figure": "1603 (OSM node/11398148399): S 28,5° i snitt over 300 m med 51,1° 50–110 m ut, SV 45,7° 130–190 m ut, V 26,7°; 1567 (node/11398148986): Ø 35,2° 180–240 m ut, SØ 41,4° 80–140 m ut, S 61,2° 280–340 m ut",
       "how": "flank_probe.py fra OSM-punktet, --out 300 og 400, --step 10, over DTM1."
     },
     {
       "what": "Langs linja",
-      "figure": "Holebudalen nådd ved 1265 m (1,27 km), 1141 moh; inn mot bollen ved 1999 m (2,00 km), 1255 moh; platået ved 3161 m (3,16 km), 1603 moh; varden ved 3483 m, 322 m lenger inne; 1567 ligger 462 m nordvest for linja, 1603 288 m sørøst; Midtlæger 562 m fra linja; Holbubekk 1 km vest for den vestre tunnelmunningen",
+      "figure": "Holebudalen nådd ved 1265 m (1,27 km), 1141 moh; inn mot bollen ved 2029 m (2,03 km), 1256 moh; platået ved 3245 m (3,25 km), 1608 moh; varden ved 3595 m, 350 m lenger inne; 1567 ligger 408 m vest for linja (peiling 279), 1603 279 m øst (peiling 95); Midtlæger 558 m fra linja; Holbubekk 1 km vest for den vestre tunnelmunningen",
       "how": "Nærmeste punkt på den routede linja i lib/routes.ts til OSM-/registerpunktet, med avstand langs ruta og DTM1-høyden der."
     },
     {
-      "what": "Bakken ved siden av linja i bollen",
-      "figure": "celler på 43,4° og 44,2° innenfor 50 m av linja mellom 1368 og 1489 moh; ingen sammenhengende strekk på 15 m med bakke på 35° eller brattere under linja, bratteste celle 41,8°",
+      "what": "Bakken ved siden av linja",
+      "figure": "celler på 45,5°, 40,3° og 44,5° 35–62 m fra linja ved 1383, 1492 og 1540 moh (40 til 46°); 53,2° 61 m sørøst for linja ved 1640 moh (3385 m); ingen sammenhengende strekk på 15 m med bakke på 35° eller brattere under linja, bratteste celle 39,4°",
       "how": "DTM1 som GeoTIFF i 5 m rutenett (geo.dem_tile) langs linja, helling per celle med numpy.gradient; for hvert sjette punkt på den routede linja er bratteste celle innenfor 50 m oppgitt med avstand og peiling fra linja. Strekkene under linja: DTM1 i 5 m rutenett (geo.dem_tile), helling per celle med numpy.gradient, lest hver 5. meter langs den routede linja; oppgitt er hvert sammenhengende strekk på minst 15 m der bakken under linja er 35° eller brattere, med lengde, høyde og bratteste celle."
     },
     {
@@ -2742,7 +2747,7 @@
     },
     {
       "what": "Langs linja",
-      "figure": "skaret fra 269 m (1051 moh); der det flater ut ved 1587 m (1,59 km), 1400 moh; toppen ved 2612 m; den vestre munningen av rasoverbygget til Haukelitunnelen 173 m fra linja",
+      "figure": "skaret fra 269 m (1051 moh); der det flater ut ved 1587 m (1,59 km), 1400 moh; toppen ved 2612 m; den vestre munningen av rasoverbygget til Haukelitunnelen 173 m fra linja; Pepparsteinen (stedsnavnregisteret, Stein, 59.8472/7.08783) 33 m fra linja ved 452 m (0,45 km), 1114 moh",
       "how": "Nærmeste punkt på den routede linja i lib/routes.ts til OSM-/registerpunktet, med avstand langs ruta og DTM1-høyden der."
     },
     {
@@ -2791,18 +2796,28 @@
     },
     {
       "what": "Langs linja",
-      "figure": "Tveita 115 m fra linja ved 742 m (0,74 km); hårnålssvingene ved 1007 m (1,01 km, 496 moh), 1532 m (1,53 km, 558), 2174 m (2,17 km, 633) og 2436 m (2,44 km, 656); dreier nordover ved 2674 m (2,67 km, 700); henget ved 2926 m (2,93 km, 755); ut.no sitt startpunkt 193 m fra linjas start; masta (node/5583843559) 17 m fra linjas ende",
+      "figure": "Blåbergdalsvegen (OSM way/782797255) innenfor 33 m av linja fra start til 2,6 km; Tveita 132 m fra linja ved 769 m (0,77 km); hårnålssvingene ved 1006 m (1,01 km, 497 moh), 1515 m (1,52 km, 555), 2163 m (2,16 km, 623) og 2440 m (2,44 km, 656); forlater vegen og dreier nordover ved 2748 m (2,75 km, 700); henget ved 3018 m (3,02 km, 760); ut.no sitt startpunkt 193 m fra linjas start; masta (node/5583843559) 17 m fra linjas ende; 1,4 km før toppen er linja ved 1029 moh",
       "how": "Nærmeste punkt på den routede linja i lib/routes.ts til OSM-/registerpunktet, med avstand langs ruta og DTM1-høyden der."
     },
     {
+      "what": "Lia over Blåbergdalsvegen",
+      "figure": "østover fra vegen ved 59.8165/6.8136, 437 moh: 692 moh 400 m ut, 255 m stigning, 32,5° i snitt; lokalt 44,3° og 47,1° 260 og 300 m ut (over 40° 260 til 300 m ut); terrengklasse Skog",
+      "how": "flank_probe.py 59.8165 6.8136 90 --out 400 --step 10 over DTM1."
+    },
+    {
       "what": "Gjertrabekk",
-      "figure": "OSM way/353462824, som går gjennom stedsnavnregisterets Gjertrabekk (59.81506/6.81629). Linja krysser bekken fra sør til nord ved 3447 m (3,45 km), 864 moh, ligger nord for den eller i bekkefaret mellom 4412 og 4817 m, og er ved 4952 m (4,95 km), 1185 moh, 116 m fra øverste kartlagte punkt på bekken, 673 m før masta",
+      "figure": "OSM way/353462824, som går gjennom stedsnavnregisterets Gjertrabekk (59.81506/6.81629). Linja er nord for bekken til 499 m (0,50 km, 446 moh), sør for den fra der til 3513 m (3,51 km), 866 moh, og nord for den eller i bekkefaret derfra (krysser ved 4737 og 4863 m); ved 4953 m (4,95 km), 1172 moh, er den 52 m fra øverste kartlagte punkt på bekken, 719 m før masta",
       "how": "Linja i lib/routes.ts mot bekkens OSM-geometri: for hvert punkt på linja er bekkens nærmeste punkt i lengdegrad sammenlignet i breddegrad; skifte av fortegn er en kryssing."
     },
     {
-      "what": "Bakken under og ved siden av linja",
-      "figure": "åtte strekk med bakke på 35° eller brattere mellom 406 og 562 moh: 25 m (406–411, 54°), 60 m (414–425, 56°), 15 m (514–512, 45°), 22 m (516–520, 40°), 37 m (526–529, 46°), 16 m (551–554, 39°), 20 m (556–562, 49°) og 21 m (560 moh, 38°); i henget står celler på 58,7° 42 m vest for linja ved 780 moh",
-      "how": "DTM1 i 5 m rutenett (geo.dem_tile), helling per celle med numpy.gradient, lest hver 5. meter langs den routede linja; oppgitt er hvert sammenhengende strekk på minst 15 m der bakken under linja er 35° eller brattere, med lengde, høyde og bratteste celle. Cellene ved siden av: DTM1 som GeoTIFF i 5 m rutenett (geo.dem_tile) langs linja, helling per celle med numpy.gradient; for hvert sjette punkt på den routede linja er bratteste celle innenfor 50 m oppgitt med avstand og peiling fra linja."
+      "what": "Terrenget nordvest for linja ved Gjertrabekk",
+      "figure": "nærmeste celle på 40° eller brattere 20–170 m vest, nordvest og nord for linja mellom 849 og 997 moh (3,33–4,10 km); 56,4° 300 m nord for linja ved 1029 moh (4,28 km)",
+      "how": "DTM1 i 10 m rutenett (geo.dem_tile), helling per celle med numpy.gradient; for hvert tredje punkt på linja mellom 3,3 og 4,3 km er nærmeste celle på 40° eller mer søkt langs peilingene 270–360° i 10 m-steg."
+    },
+    {
+      "what": "Bakken under linja",
+      "figure": "vegskjæringer og fyllinger langs Blåbergdalsvegen: 17 m (405–406 moh, 54°), 21 m (441–445, 48°), 26 m (510–512, 42°), 45 m (521–535, 44°), 20 m (537–538, 40°) og 15 m (540–542, 42°) mellom 405 og 542 moh; 22 m (869–876 moh, 43°) der linja krysser Gjertrabekk ved 3,54 km",
+      "how": "DTM1 i 5 m rutenett (geo.dem_tile), helling per celle med numpy.gradient, lest hver 5. meter langs den routede linja; oppgitt er hvert sammenhengende strekk på minst 15 m der bakken under linja er 35° eller brattere, med lengde, høyde og bratteste celle."
     },
     {
       "what": "Varslingsregionen toppkoordinaten ligger i",

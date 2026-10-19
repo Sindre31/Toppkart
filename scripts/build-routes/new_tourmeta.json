@@ -4079,11 +4079,11 @@
   "season": "feb–mai",
   "aspect": "S",
   "grade": 2,
-  "gradeReason": "Fri Flyt: «Lett», bratteste punkt 30 grader, 550 høydemeter og 2,5 timer; «en av de enkleste og tryggeste toppturene på Haukeli». Ut.no: normalruta går gjennom utløpssoner under bratte sider, og til høyre for undertoppen 1603 er det helninger «i overkant av 30 grader som kan være skredutsatt». Grad 2, ikke 1, fordi bollen er omkranset av skredterreng.",
+  "gradeReason": "Fri Flyt: «Lett», bratteste punkt 30 grader, 550 høydemeter og 2,5 timer; «en av de enkleste og tryggeste toppturene på Haukeli». Ut.no: normalruta går gjennom utløpssoner under bratte sider, og til høyre for undertoppen 1603 er det helninger «i overkant av 30 grader som kan være skredutsatt». Grad 2, ikke 1, fordi bollen er omkranset av skredterreng. Ut.no graderer turen «Krevende» (TOUGH); her er den 2 fordi Fri Flyt oppgir «Lett» og 30 grader, og bakken under linja ikke er 35 grader i noe strekk på 15 m.",
   "roadClosedInWinter": false,
   "teaserNo": "610 høydemeter fra Holbubekk: bekkedalen inn Holebudalen, bollen mellom undertoppene 1567 og 1603 og platået inn til varden — en av de mest kjørte toppturene ved Haukeliseter.",
   "teaserEn": "610 metres of ascent from Holbubekk: the stream valley into Holebudalen, the bowl between the subsidiary tops 1567 and 1603 and the plateau in to the cairn — one of the most-skied tours near Haukeliseter.",
-  "hazardNotes": "Ut.no: hold til venstre for undertoppen 1603 — til høyre er det helninger over 30 grader som kan være skredutsatt — og i bollen går du gjennom utløpssoner, selv om løsneområdene kan unngås. På dager med dårlig sikt anbefaler ut.no å stoppe på platået. Fri Flyt: ved østlig vind kan Stavsnuten bli avblåst, og å ta begge toppene krever lett klatring og sikringsutstyr.",
+  "hazardNotes": "Ut.no: hold til venstre for undertoppen 1603 — til høyre er det helninger over 30 grader som kan være skredutsatt — og i bollen går du gjennom utløpssoner, selv om løsneområdene kan unngås. På dager med dårlig sikt anbefaler ut.no å stoppe på platået. Fri Flyt: ved østlig vind kan Stavsnuten bli litt avblåst, og å ta begge toppene krever lett klatring og sikringsutstyr.",
   "sources": [
    "https://www.friflyt.no/topptur/skiturer-odda-roeldal-og-haukeli/turbeskrivelse-stavsnuten",
    "https://ut.no/turforslag/115204/topptur-pa-ski-til-stavsnuten"
@@ -4095,7 +4095,8 @@
    "Andrekilde, ut.no 115204: «Anmarsjen går inn Holebudalen i slakt terreng før man dreier mot venstre. Normalruten går inn \"bollen\" og fortsetter oppover midt mellom de bratte sidene. Hold til venstre for undertoppen (1603 m.o.h.) under oppstigning for mest behagelig og sikker tur da det mot høyre er helninger i overkant av 30 grader som kan være skredutsatt.» Undertoppen 1603 er OSM node/11398148399 (59.85637/7.00813) og 1567 er node/11398148986 (59.85443/6.99427); korridoren går mellom dem, vest for 1603, slik begge kildene sier.",
    "Ut.no starter sporet ved Midtlæger, ved vestre tunnelmunning (59.83937/6.98716, toalett og busslomme i OSM), ikke ved Holbubekk 1 km lenger vest. De to startene møtes i Holebudalen. Korridoren bruker Fri Flyts start, som er den kartlagte parkeringsplassen.",
    "1660,9 − 1054,4 = 607 mot Fri Flyts 550 og ut.nos 576 høydemeter; ut.no starter høyere, ved tunnelen.",
-   "check_new_corridors: «OSM unreachable, unchecked» — Overpass svarte 500. Parkeringa er kartlagt (way/1016662357, amenity=parking), lest direkte fra OSM-API-et."
+   "check_new_corridors: «OSM unreachable, unchecked» — Overpass svarte 500. Parkeringa er kartlagt (way/1016662357, amenity=parking), lest direkte fra OSM-API-et.",
+   "Den uavhengige lesingen: siste 150 m inn til varden gikk langs sørkanten av platået, med celler på 37–56 grader 10–30 m sørsørvest for linja; ut.no-sporet kommer inn 25–60 m lenger nord. To punkter fra ut.no-sporet (59.86028/7.00847 og 59.86019/7.00992, 1650,6 og 1650,5 moh.) legger innløpet dit."
   ],
   "notes": "Fri Flyt (Toppturer i Sørvest) og ut.no beskriver samme linje: Holebudalen, bollen, til venstre for 1603 og platået inn til varden. De er uenige om starten (Holbubekk mot Midtlæger), men linja er den samme fra Holebudalen. Ut.no oppgir starthøyde «1984 moh.», som er en skrivefeil."
  },
@@ -4103,7 +4104,7 @@
   "season": "jan–apr",
   "aspect": "N",
   "grade": 3,
-  "gradeReason": "Fri Flyt: «Moderat», bratteste punkt 30 grader, 500 høydemeter og 3 timer. Ut.no om nordsiden: «noe mer krevende og mer skredutsatt», med helninger over 30 grader, og «Hele fjellet er et potensielt skredområde vinterstid». Skaret går rett opp uten anmarsj, og bakken under linja er 35 grader eller brattere i 112 meter mellom 1084 og 1130 moh. Grad 3, ikke 2.",
+  "gradeReason": "Fri Flyt: «Moderat», bratteste punkt 30 grader, 500 høydemeter og 3 timer. Ut.no om nordsiden: «noe mer krevende og mer skredutsatt», med helninger over 30 grader, og «Hele fjellet er et potensielt skredområde vinterstid». Skaret går rett opp uten anmarsj, og bakken under linja er 35 grader eller brattere i 112 meter mellom 1084 og 1130 moh. Grad 3, ikke 2. Ut.no graderer turen «Krevende» (TOUGH), som grad 3.",
   "roadClosedInWinter": false,
   "teaserNo": "560 høydemeter rett fra Pepparsteinen ved Haukelitunnelen: skaret mellom Sveigen og p1490, og vestover til toppen der det flater ut — uten anmarsj.",
   "teaserEn": "560 metres of ascent straight from Pepparsteinen by the Haukeli tunnel: the gully between Sveigen and p1490, then west to the top where it levels out — no approach at all.",
@@ -4127,11 +4128,11 @@
   "season": "des–mai",
   "aspect": "SV",
   "grade": 1,
-  "gradeReason": "Fri Flyt: «Lett», bratteste punkt 25 grader, 550 høydemeter; «toppen for deg som er som fersk på topptur og ønsker en rolig start». Ut.no: «en perfekt tur for deg som er fersk med toppturer». Grad 1.",
+  "gradeReason": "Fri Flyt: «Lett», bratteste punkt 25 grader, 550 høydemeter; «toppen for deg som er som fersk på topptur og ønsker en rolig start». Ut.no: «en perfekt tur for deg som er fersk med toppturer». Grad 1. Ut.no graderer turen «Middels» (MODERATE) for den 17,9 km lange runden fra fjellstua; fra Ulevå er den 5,9 km, og Fri Flyt oppgir «Lett» og 25 grader.",
   "roadClosedInWinter": false,
   "teaserNo": "600 høydemeter fra Ulevå: bekkedalen opp til flata ved 1200, skaret mot topp 1469 og ryggen østover til varden — den rolige starten på Haukeli.",
   "teaserEn": "600 metres of ascent from Ulevå: the stream valley up to the flat at 1200, the col towards top 1469 and the ridge east to the cairn — the gentle start at Haukeli.",
-  "hazardNotes": "Fri Flyt: bratteste punkt 25 grader, og turen passer særlig for nybegynnere. Hele turen går over snaufjell på høyfjellsplatået sør på Hardangervidda, uten ly og med få landemerker; i skodde er det navigasjonen som teller. Fri Flyt advarer mot snorkelføre: da er den bedre på fjellski enn på toppturski.",
+  "hazardNotes": "Fri Flyt: bratteste punkt 25 grader, og turen passer særlig for nybegynnere. Hele turen går over snaufjell på høyfjellsplatået sør på Hardangervidda, uten ly og med få landemerker; i skodde er det navigasjonen som teller. Fri Flyt: «Det er en veldig populær tur på fjellski, men så lenge det ikke er snorkelføre gir den en flott opplevelse på randoutstyr også.»",
   "sources": [
    "https://www.friflyt.no/topptur/skiturer-odda-roeldal-og-haukeli/turbeskrivelse-vesle-nup",
    "https://ut.no/turforslag/1112154503/topptur-pa-ski-til-vesle-nup"
@@ -4151,11 +4152,11 @@
   "season": "des–mai",
   "aspect": "SV",
   "grade": 2,
-  "gradeReason": "Fri Flyt: «Lett», bratteste punkt 30 grader, 800 høydemeter og 4 timer. Ut.no: i henget ved 750 moh. er det «et kort parti med mulig skredfare» som skal vurderes før du går videre. Nesten 900 høydemeter fra bygda. Grad 2.",
+  "gradeReason": "Fri Flyt: «Lett», bratteste punkt 30 grader, 800 høydemeter og 4 timer. Ut.no: i henget ved 750 moh. er det «et kort parti med mulig skredfare» som skal vurderes før du går videre. Nesten 900 høydemeter fra bygda. Grad 2. Ut.no graderer turen «Krevende» (TOUGH); her er den 2 fordi Fri Flyt oppgir «Lett» og 30 grader og bratteste parti på linja er 25 grader, i henget.",
   "roadClosedInWinter": false,
   "teaserNo": "900 høydemeter fra Røldal: anleggsvegen opp Tveitlia, henget ved 750 og den vestvendte bekken opp til masta — bygdefjellet midt i Røldal.",
-  "teaserEn": "900 metres of ascent from Røldal: the access road up Tveitlia, the steep step at 750 and the west-facing stream up to the mast — the village mountain right above Røldal.",
-  "hazardNotes": "Ut.no: henget ved rundt 750 moh. har et kort parti med mulig skredfare; vurder det før du går videre. Ut.no: på returen holder du deg sør for Gjertrabekk, ellers kommer du ut i meget bratt terreng. Fri Flyt: på varme dager varmer sola opp masta, og isen faller av. Gravgjel-renna fra toppen er 55 grader øverst og en egen nedkjøring.",
+  "teaserEn": "900 metres of ascent from Røldal: the access road up Tveitlia, the slope at 750 and the west-facing stream up to the mast — the village mountain right above Røldal.",
+  "hazardNotes": "Ut.no: henget ved rundt 750 moh. har et kort parti med mulig skredfare; vurder det før du går videre. Ut.no: på returen holder du deg sør for Gjertrabekk, ellers kommer du ut i meget bratt terreng — mellom 864 og 970 moh. ligger terreng på 40 grader og mer 50–220 m nordvest for linja, og inngangen til Gravgjel-renna ligger nord for linja ved rundt 950–1000 moh. Fri Flyt: på varme dager varmer sola opp masta, og isen faller av. Gravgjel er 55 grader øverst, «Vanskelig», med fare for skred og steinfall.",
   "sources": [
    "https://www.friflyt.no/topptur/skiturer-odda-roeldal-og-haukeli/turbeskrivelse-fjetlandsnuten",
    "https://ut.no/turforslag/119727/topptur-pa-ski-til-fjetlandsnuten"
@@ -4164,13 +4165,13 @@
   "corrections": [
    "Registerets Fjetlandsnuten (Fjell, Ullensvang) løser seg til 1284,8 mot publiserte 1287 — −2,2 m. OSM fører toppen som node/9980744643 (ele 1287) og masta som node/5583843559 (man_made=mast, ele 1285) 10 m unna. Ut.no-sporet for turforslag 119727 ender 15 m fra registerpunktet.",
    "Fri Flyt: «Kjør inn til Tveita og parker nede ved veien hvis snøen ligger langt nok ned. Hvis ikke kjører du bilen opp anleggsveien og parkerer i ei passende lomme. Følg den vestvendte bekken så langt den går, herfra ser du toppmasta.»",
-   "Andrekilde, ut.no 119727: «Start ved kraftstasjonen på østsiden av Røldalsvatnet, og følg veien oppover Tveitlia til litt forbi fjerde hårnålssving. Drei nordover, i henget ca 750 moh bør det foretas skredvurdering før eventuelt videre oppstigning, her er et kort parti med mulig skredfare. Videre stort sett greit mot masten på toppen.» Hårnålssvingene og henget er festet fra ut.no-sporet; DTM1 leser 757,8 moh. i henget.",
-   "Startpunktet er festet der Odlandsvegen (OSM way/782797246) møter servicevegen til Røldal kraftverk (way/242395984), 200 m sør for ut.no sitt startpunkt ved porten (node/11704063997, access=private). Anleggsvegen opp Tveitlia er ikke kartlagt i OSM utenom en stubb (way/782797252), og hårnålssvingene er festet fra ut.no-sporet.",
+   "Andrekilde, ut.no 119727: «Start ved kraftstasjonen på østsiden av Røldalsvatnet, og følg veien oppover Tveitlia til litt forbi fjerde hårnålssving. Drei nordover, i henget ca 750 moh bør det foretas skredvurdering før eventuelt videre oppstigning, her er et kort parti med mulig skredfare. Videre stort sett greit mot masten på toppen.» Hårnålssvingene er Blåbergdalsvegens (OSM way/782797255), og henget er festet fra ut.no-sporet; DTM1 leser 757,8 moh. der.",
    "Vegen opp Tveitlia gir fire legger som går sørover, bort fra toppen. Det er vegen, ikke en omvei: begge kildene sender deg opp den.",
    "1284,8 − 395,6 = 889 mot ut.nos 887 og Fri Flyts 800 høydemeter.",
    "Himmelretning SV: Fri Flyt oppgir V, ut.no kaller sørvestsiden den vennlige, og ruta måler SV.",
    "check_new_corridors: tre legger «heads 114°/130°/114° away from the summit» — det er hårnålssvingene på anleggsvegen opp Tveitlia, som begge kildene følger. «no mapped parking, only residential, service, unclassified»: ingen parkering er kartlagt ved kraftverket, og Fri Flyt ber deg parkere «nede ved veien». Korridoren står.",
-   "check_ground: første ruting gikk 393 m på Røldalsvatnet (regulert, 380 moh.) fra Odlandsvegen sørover, opptil 29 m fra land. Ingen av kildene går på vatnet. Tre punkter fra ut.no-sporet langs anleggsvegen (405, 418 og 437 moh., terrengklasse Skog) holder linja på land, og den er rutet på nytt."
+   "Startpunktet er krysset der Blåbergdalsvegen (OSM way/782797255) går ut fra Odlandsvegen ved servicevegen til Røldal kraftverk, 193 m fra ut.no sitt startpunkt ved porten (node/11704063997, access=private). Blåbergdalsvegen er anleggsvegen opp Tveitlia; korridoren følger den gjennom alle fire hårnålssvingene, med punkter fra OSM-geometrien omtrent hver 120. meter. Første utkast sa at vegen ikke var kartlagt, og la linja etter ut.no-sporet ved siden av den — den uavhengige lesingen fant vegen.",
+   "check_ground: første ruting gikk 393 m på Røldalsvatnet (regulert, 380 moh.) fra Odlandsvegen sørover, opptil 29 m fra land. Ingen av kildene går på vatnet. Korridoren følger nå Blåbergdalsvegen fra krysset, og linja er på land."
   ],
   "notes": "Fri Flyt (Toppturer i Sørvest) og ut.no beskriver samme linje: anleggsvegen fra Tveita/kraftstasjonen, og bekken opp mot masta. Ut.no gir hårnålssvingene og henget ved 750; Fri Flyt gir bekken og faren fra masta. Det er sørvestsiden ut.no kaller den vennlige."
  }
