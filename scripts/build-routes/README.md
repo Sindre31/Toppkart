@@ -6791,6 +6791,97 @@ unsourced numbers, 14 band claims all agreeing), `check_treeline`, `check_gain`
 and `check_steepness` with nothing to look at, and `npm run typecheck`, `lint`,
 `test` and `build`.
 
+## The Bodø round
+
+Three tours from Fri Flyt's *Toppturer rundt Bodø*. 201 tours, 239 routes. All
+three summits answer to **Salten** (3016), an A-region. The app had two tours
+around Bodø, Midtitinden and Sandhornet.
+
+| tour | start | summit | gain | km | steepest 100 m band | steepest 30 m | grade |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Kistrandtindan | 7 | 982 | 976 | 3.94 | 19.1° | 25.8° | 2 |
+| Kvalhornet | 63 | 965 | 902 | 4.39 | 18.4° | 24.1° | 2 |
+| Heggmotinden | 24 | 797 | 773 | 3.39 | 16.8° | 25.1° | 2 |
+
+### What was turned away
+
+About thirty Bodø pages in the corpus index describe peaks the app does not
+carry, and most of them are steep: Korsviktinden, Spisstind, Småtindan,
+Sfinxen, Store Åselitinden, Sautinden, Bjørnhatten, Børtinden, Ryptinden, Per
+Kalsatinden, Kjerringtinden, Preikestolhola, the Aurnestindan, Fagertinden,
+Midtiskardstinden and Vassviktinden are 33–50° or ask for crampons.
+Grytviktinden is a two-car round trip. Skjelviknubben, Kvarsnestinden,
+Våtvikfjellet and Isvasstinden had no second source beyond list entries.
+Snefjellet at Misvær and Bonden on Sandhornøya were kept for a later round: the
+only second source for both is a French topo that shares the book's steepness
+figures, and their winter road access is inferred rather than documented.
+
+### Kistrandtindan's top has no name
+
+Fri Flyt's tour goes to «Kistrandtinden p979». The register's Kistrandtindan is
+a label on the south flank at 806 m, so the summit is seeded on the 979 top
+(`SUMMIT_SEED`), which climbs to 981.6 m. Ut.no's track starts at the same lay-by
+and shares the ridge south of Mølnelva to 352 m, then crosses the gorge to a 967
+m top 853 m east; the corridor follows Fri Flyt from there, to the flat at 480 m
+and north. The record says `confidence: medium`.
+
+### Heggmotinden is in a firing range
+
+Kartverket's terrain class along the whole south side of Heggmotinden is
+Skytefelt, and OSM maps Heggmoen skytefelt. The guide tells the reader to check
+the firing schedule, and the treeline is not stated because the terrain class
+cannot show it. The line leaves the forest road where a track goes left 0.53 km
+from the barrier, 0.9 km before Fri Flyt's junction, and climbs the ridge west
+of the hollow — the alternative Fri Flyt gives for it; the record says so.
+
+### The independent read
+
+The second reader found sixteen things and three of them were serious, all on
+Heggmotinden. **The line left the road at the wrong junction.** Fri Flyt's
+signed junction is where the forest road ends after 1.44 km and the road to the
+Heggmovatnet dam goes left; the pump house and the clearing are on that route,
+and the guide had put them on a track that leaves 0.9 km earlier. The line was
+kept — it climbs the ridge west of the 300–400 m hollow, which is Fri Flyt's own
+alternative to the hollow — and the guide now says where it leaves and that the
+pump house and the clearing are not on it. **«Up the half-pipe» was wrong**:
+cross-sections show the ground falling 25–43 m within 100 m to the east from 430
+m, so the line runs along the half-pipe's west edge, and from 542 m it is 6–46 m
+from the mapped summer path, which the guide never mentioned. Peakbook's «ankom
+halfpipen» described reaching it above 600 m on another line and is now quoted
+for what the half-pipe is. **The summit approach ran close to the north edge**
+while the guide called the top «slak mot vest» and kept the cornice for the
+descent. The last waypoint moved 28 m south (3368 m → 3389 m, the gain stays
+773, the steepest 30 m goes from 23.9° to 25.1° low on the ridge), but the top
+is a narrow dome: ground 10 m lower lies 20–30 m away on both sides. So the
+ascent now says that 45° ground is 21–29 m north of the line from 777 m, and
+10–15 m east at the rock nose, where the line crosses its one 16 m stretch of
+35°+ ground at 717–724 m — not at 536–540 m, as before the reroute.
+
+The rest were smaller and are fixed. Kvalhornet's teaser called it Bodø's season
+opener, which Fri Flyt says of Nattmålstuva; Nattmålstuva was pinned 0.8 km
+north-east of the top the line passes (411 m east of it, at 2.21 km), and the
+two places the sources call by that name are now told apart; Grytåga is 36–355
+m from the line, not 80–119; the 7.2 east flank now carries Fri Flyt's 32° and
+lee-slope warnings; and the guide says where the mapped path leaves the line,
+61–137 m east up the 880–940 m slope. On Kistrandtindan the start is an active
+bus stop, so the guide says parking there is not allowed and points to the car
+park 863 m west and Fri Flyt's Dinesodden, and notes the new Rv 80 under
+construction 82 m south. The gorge-edge distances were understated (45° ground
+is 12–53 m away at 176–271 m, and 19–46 m round the head of the gorge), the
+summit point is 15 m from a 61° edge, and «p970 426 m øst» was dropped — Fri
+Flyt's own p970 route points further east. Fri Flyt's 700–770 m figure on
+Heggmotinden applies only to the south-west flank, and its season and
+spring-avalanche lines are now tied to the descents they belong to.
+
+### What ran
+
+`check_new_corridors` (Kistrand has no mapped parking at the start, which is a
+bus stop — said in the record and the guide), `check_routes`, `check_tours` and
+`check_geometry` clean on 201 tours and 239 routes, `check_ground` clean on all
+three, `check_guides` and `check_bands` clean (0 unsourced numbers, 12 band
+claims all agreeing), `check_treeline`, `check_gain` and `check_steepness` with
+nothing to look at, and `npm run typecheck`, `lint`, `test` and `build`.
+
 ## Network
 
 Everything is public and unauthenticated:

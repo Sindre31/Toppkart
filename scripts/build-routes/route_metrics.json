@@ -3166,5 +3166,53 @@
   "aspect": "S",
   "distanceKm": 2.8,
   "cumdistM": 2794
+ },
+ "kvalhornet": {
+  "verticalM": 900,
+  "gainM": 902,
+  "distanceM": 4390,
+  "startM": 63,
+  "summitM": 965,
+  "duration": "4–6 t",
+  "steepestBandAngle": 18.4,
+  "steepestBandFrom": 300,
+  "steepestBandTo": 400,
+  "maxStepAngle": 24.1,
+  "grade": 2,
+  "aspect": "S",
+  "distanceKm": 4.4,
+  "cumdistM": 4390
+ },
+ "heggmotinden": {
+  "verticalM": 770,
+  "gainM": 773,
+  "distanceM": 3388,
+  "startM": 24,
+  "summitM": 797,
+  "duration": "3–5 t",
+  "steepestBandAngle": 16.8,
+  "steepestBandFrom": 500,
+  "steepestBandTo": 600,
+  "maxStepAngle": 25.1,
+  "grade": 1,
+  "aspect": "SV",
+  "distanceKm": 3.4,
+  "cumdistM": 3389
+ },
+ "kistrandtindan": {
+  "verticalM": 980,
+  "gainM": 976,
+  "distanceM": 3939,
+  "startM": 7,
+  "summitM": 982,
+  "duration": "4–6 t",
+  "steepestBandAngle": 19.1,
+  "steepestBandFrom": 700,
+  "steepestBandTo": 800,
+  "maxStepAngle": 25.8,
+  "grade": 2,
+  "aspect": "S",
+  "distanceKm": 3.9,
+  "cumdistM": 3941
  }
 }

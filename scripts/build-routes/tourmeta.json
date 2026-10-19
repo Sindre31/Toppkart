@@ -1033,6 +1033,39 @@
   "season": "jan–apr",
   "hasGuide": true
  },
+ "heggmotinden": {
+  "name": "Heggmotinden",
+  "region": "Bodø",
+  "summitM": 797,
+  "verticalM": 770,
+  "duration": "3–5 t",
+  "grade": 2,
+  "aspect": "SV",
+  "season": "des–apr",
+  "hasGuide": true
+ },
+ "kvalhornet": {
+  "name": "Kvalhornet",
+  "region": "Bodø",
+  "summitM": 965,
+  "verticalM": 900,
+  "duration": "4–6 t",
+  "grade": 2,
+  "aspect": "SØ",
+  "season": "des–mai",
+  "hasGuide": true
+ },
+ "kistrandtindan": {
+  "name": "Kistrandtindan",
+  "region": "Bodø",
+  "summitM": 982,
+  "verticalM": 980,
+  "duration": "4–6 t",
+  "grade": 2,
+  "aspect": "S",
+  "season": "feb–mai",
+  "hasGuide": true
+ },
  "midtitinden": {
   "name": "Midtitinden",
   "region": "Bodø",

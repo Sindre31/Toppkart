@@ -64,6 +64,12 @@ SUMMIT_SEED = {
     # 1226 m top 1.1 km east, behind a 1111 m col. The seed is OSM's Eggja peak
     # (node/3888574483, ele 1209), which is the name N50 gives this top.
     "eggja": (61.42296, 6.22337),
+    # Kistrandtindan is the massif; Fri Flyt's tour goes to its 979 m top,
+    # «Kistrandtinden p979», which carries no register name of its own. The
+    # register's Kistrandtindan point is a label on the south flank at 806 m,
+    # and its neighbour p970 sits 0.4 km east. The seed is the 979 top read off
+    # DTM1 (980.4 m).
+    "kistrandtindan": (67.3494, 15.0676),
     # Two tops on the Hallingskarvet plateau, 650 m apart, climbing to 1860.4 and
     # 1857.5 m. Against a published 1859 they land 1.4 and 1.5 m off, which is a
     # tie by any reading, and the register point is 198 m from the lower one and

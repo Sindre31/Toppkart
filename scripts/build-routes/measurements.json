@@ -2915,5 +2915,96 @@
       "figure": "Indre Sogn (region 3029), regiontype A — varslet daglig i sesongen",
       "how": "Spurt Varsom/NVE på samme endepunkt som appen bruker: api01.nve.no/hydrology/forecast/avalanche/v6.3.0/api/AvalancheWarningByCoordinates/Simple/<lat>/<lng>/1/<dato>/<dato> med toppkoordinaten fra summits.json."
     }
+  ],
+  "kvalhornet": [
+    {
+      "what": "Toppen, alle sider",
+      "figure": "N 32,6° i snitt med 58,7° 180–240 m ut; NØ 50,9° 240–300 m ut; Ø 50,4° 40–100 m ut; SØ 47,7° 60–120 m ut (40 til 120 m); S 17,0°, SV 10,4° og V 11,0° i snitt (10,4 til 17,0°); NV 51,1° 310–370 m ut",
+      "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+    },
+    {
+      "what": "Langs linja",
+      "figure": "skogen slipper ved 160 moh (0,55 km); Søndre Nattmålstuva ved 1616 m (1,62 km), 493 moh; Nattmålstuva (registerets Ås, 67.35695/15.15942) nærmest ved 2211 m (2,21 km), 594 moh, 411 m øst for toppen; inn på toppryggen ved 4237 m (4,24 km), 953 moh; bandene 500–800 moh til sammen 1935 m grunn",
+      "how": "Nærmeste punkt på den routede linja i lib/routes.ts til OSM-/registerpunktet, med avstand langs ruta og DTM1-høyden der."
+    },
+    {
+      "what": "Grytåga og stien",
+      "figure": "Grytåga (OSM way/966042727) 36 til 355 m nordøst for linja de første 1,3 km, nærmest 36 m ved 550 m (160 moh) og 53 m ved 1189 m (355 moh); stien «Kvalhornet» (OSM way/315328312, mountain_hiking) innen 68 m av linja de første 3640 m (3,64 km), deretter 61 til 137 m øst for linja mellom 828 og 956 moh",
+      "how": "Avstand fra hver 3. meter på den routede linja til nærmeste segment av OSM-veien, med avstand langs ruta og høyden der."
+    },
+    {
+      "what": "Bakken ved siden av linja",
+      "figure": "celler på 65,5° 52 m nordnordøst for linja ved 174 moh; 36,8° og 38,8° 51 og 44 m nordøst og nord ved 305 og 363 moh (36,8 til 38,8°, 44 til 51 m); 42,3° 46 m nordøst for linja ved 904 moh; ingen strekk på 15 m med bakke på 35° eller brattere under linja, bratteste celle 34,4°",
+      "how": "DTM1 som GeoTIFF i 5 m rutenett (geo.dem_tile) langs linja, helling per celle med numpy.gradient; for hvert sjette punkt på den routede linja er bratteste celle innenfor 50 m oppgitt med avstand og peiling fra linja. Strekkene under linja: DTM1 i 5 m rutenett (geo.dem_tile), helling per celle med numpy.gradient, lest hver 5. meter langs den routede linja; oppgitt er hvert sammenhengende strekk på minst 15 m der bakken under linja er 35° eller brattere, med lengde, høyde og bratteste celle."
+    },
+    {
+      "what": "Varslingsregionen toppkoordinaten ligger i",
+      "figure": "Salten (region 3016), regiontype A — varslet daglig i sesongen",
+      "how": "Spurt Varsom/NVE på samme endepunkt som appen bruker: api01.nve.no/hydrology/forecast/avalanche/v6.3.0/api/AvalancheWarningByCoordinates/Simple/<lat>/<lng>/1/<dato>/<dato> med toppkoordinaten fra summits.json."
+    }
+  ],
+  "heggmotinden": [
+    {
+      "what": "Toppen, alle sider",
+      "figure": "N 38,9° i snitt med 58,9° 40–100 m ut; NØ 55,8° 20–80 m ut (55,8 til 58,9°); Ø 12,2°; SØ 44,2° 120–180 m ut; S 41,0° 120–180 m ut; SV 32,3°; V 13,8° i snitt med 26,4° 170–230 m ut; NV 50,9° 300–360 m ut",
+      "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+    },
+    {
+      "what": "Langs linja",
+      "figure": "sporet til venstre (OSM way/784267603) tar av fra skogsvegen (way/24590742) ved 529 m (0,53 km), 95 moh; skogsvegen ender ved Fri Flyts veikryss etter 1,44 km, der vegen mot dammen (way/784267598) går til venstre — 0,9 km etter at linja har tatt av; foten av ryggen vest for søkket ved 1032 m (1,03 km), 196 moh; vestryggen fra 3067 m (3,07 km), 709 moh; Heggmoen skytefelt (way/736382147, landuse=military) og terrengklasse Skytefelt langs lia",
+      "how": "Nærmeste punkt på den routede linja i lib/routes.ts til OSM-/registerpunktet, med avstand langs ruta og DTM1-høyden der."
+    },
+    {
+      "what": "Sommerstien",
+      "figure": "den kartlagte stien (OSM way/551512371) 6 til 46 m fra linja fra 2381 m (542 moh) til toppen",
+      "how": "Avstand fra hver 3. meter på den routede linja til nærmeste segment av OSM-veien, med avstand langs ruta og høyden der."
+    },
+    {
+      "what": "Halfpipen og ryggen",
+      "figure": "fra 428 til 467 moh og fra 598 til 696 moh faller bakken 25 til 43 m innen 100 m til høyre (øst og sørøst) for linja, og er flat eller stiger til venstre; linja ligger på vestkanten av halfpipen fra 430 moh",
+      "how": "Tverrprofil på DTM1 i 2 m rutenett vinkelrett på den routede linja, ±100 m i steg på 20 m, med høydeforskjellen mot punktet på linja."
+    },
+    {
+      "what": "Bakken under og ved siden av linja",
+      "figure": "16 m med bakke på 35° eller brattere ved 717–724 moh (3,11 km, bratteste celle 38°); celler på 59,2° 49 m sørøst for linja ved 263 moh",
+      "how": "DTM1 i 5 m rutenett (geo.dem_tile), helling per celle med numpy.gradient, lest hver 5. meter langs den routede linja; oppgitt er hvert sammenhengende strekk på minst 15 m der bakken under linja er 35° eller brattere, med lengde, høyde og bratteste celle. Cellene ved siden av: DTM1 som GeoTIFF i 5 m rutenett (geo.dem_tile) langs linja, helling per celle med numpy.gradient; for hvert sjette punkt på den routede linja er bratteste celle innenfor 50 m oppgitt med avstand og peiling fra linja."
+    },
+    {
+      "what": "Kantene ved klippefremspringet og toppeggen",
+      "figure": "bakke på 45° eller brattere 10 til 15 m øst for linja mellom 708 og 718 moh (3050–3111 m); 21 til 29 m nord og nordøst for linja fra 777 moh (3298 m) til toppen",
+      "how": "DTM1 i 5 m rutenett (geo.dem_tile), helling per celle med numpy.gradient; for hver 15. meter langs den routede linja er avstand og peiling til nærmeste celle på 45° eller brattere innenfor 60 m oppgitt."
+    },
+    {
+      "what": "Varslingsregionen toppkoordinaten ligger i",
+      "figure": "Salten (region 3016), regiontype A — varslet daglig i sesongen",
+      "how": "Spurt Varsom/NVE på samme endepunkt som appen bruker: api01.nve.no/hydrology/forecast/avalanche/v6.3.0/api/AvalancheWarningByCoordinates/Simple/<lat>/<lng>/1/<dato>/<dato> med toppkoordinaten fra summits.json."
+    }
+  ],
+  "kistrandtindan": [
+    {
+      "what": "Toppen, alle sider",
+      "figure": "N 32,4° i snitt med 56,9° 20–80 m ut; NØ 46,0° 40–100 m ut; Ø 2,2° i snitt; SØ 12,4°; S 15,6° i snitt med 21,4° 110–170 m ut; SV 20,1°; V 48,7° 40–100 m ut; NV 56,2° 20–80 m ut (48,7 til 56,9°)",
+      "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+    },
+    {
+      "what": "Langs linja",
+      "figure": "skogen slipper ved 207 moh (0,94 km); Mølnelva (OSM way/966040227) nærmest 46 m nordnordøst for linja ved 1735 m (1,74 km), 373 moh; flata ved 2112 m (2,11 km), 476 moh; ut.no-sporet ender på 967,3 moh 853 m øst for toppen; nærmeste kartlagte parkering (node/3397446639) 863 m vest for starten; starten er et busstopp (node/3397446653, highway=bus_stop); ny rv. 80 under bygging (way/1554040610, highway=construction) 82 m sør for starten",
+      "how": "Nærmeste punkt på den routede linja i lib/routes.ts til OSM-/registerpunktet, med avstand langs ruta og DTM1-høyden der."
+    },
+    {
+      "what": "Kantene ved juvet og toppen",
+      "figure": "bakke på 45° eller brattere 12 til 53 m nord og nordøst for linja mellom 176 og 271 moh (808–1252 m); 19 til 46 m fra linja mellom 453 og 493 moh (2000–2198 m), der linja går rundt toppen av juvet; 15 m nordnordvest for toppunktet (61°)",
+      "how": "DTM1 i 5 m rutenett (geo.dem_tile), helling per celle med numpy.gradient; for hver 15. meter langs den routede linja er avstand og peiling til nærmeste celle på 45° eller brattere innenfor 60 m oppgitt."
+    },
+    {
+      "what": "Bakken ved siden av linja",
+      "figure": "39,7°, 41,6° og 38,6° 18, 11 og 32 m fra linja ved 558, 609 og 651 moh (38,6 til 41,6°, 11 til 32 m); ingen strekk på 15 m med bakke på 35° eller brattere under linja, bratteste celle 41,7°",
+      "how": "DTM1 som GeoTIFF i 5 m rutenett (geo.dem_tile) langs linja, helling per celle med numpy.gradient; for hvert sjette punkt på den routede linja er bratteste celle innenfor 50 m oppgitt med avstand og peiling fra linja. Strekkene under linja: DTM1 i 5 m rutenett (geo.dem_tile), helling per celle med numpy.gradient, lest hver 5. meter langs den routede linja; oppgitt er hvert sammenhengende strekk på minst 15 m der bakken under linja er 35° eller brattere, med lengde, høyde og bratteste celle."
+    },
+    {
+      "what": "Varslingsregionen toppkoordinaten ligger i",
+      "figure": "Salten (region 3016), regiontype A — varslet daglig i sesongen",
+      "how": "Spurt Varsom/NVE på samme endepunkt som appen bruker: api01.nve.no/hydrology/forecast/avalanche/v6.3.0/api/AvalancheWarningByCoordinates/Simple/<lat>/<lng>/1/<dato>/<dato> med toppkoordinaten fra summits.json."
+    }
   ]
 }

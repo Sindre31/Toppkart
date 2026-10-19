@@ -478,4 +478,7 @@ PEAKS = [
     ("heimdalshoe", "Heimdalshøe", ["Vågå"], 1843, 61.45438, 8.90212),
     ("nautgardstinden", "Nautgardstinden", ["Lom", "Vågå"], 2258, 61.60330, 8.75943),
     ("tylderingen", "Tylderingen", ["Sogndal"], 1104, 61.29201, 7.03271),
+    ("kvalhornet", "Kvalhornet", ["Fauske", "Bodø"], 962, 67.37358, 15.15778),
+    ("heggmotinden", "Heggmotinden", ["Bodø"], 798, 67.37538, 14.87980),
+    ("kistrandtindan", "Kistrandtindan", ["Bodø", "Fauske"], 979, 67.34940, 15.06760),
 ]
