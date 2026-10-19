@@ -6589,6 +6589,32 @@ reads `Havflate` under the shipped line, so every detour failed the water
 test. It was spliced by hand, 12 m north of the shed and no further out.
 Torvløysa's card had said 1460 against a gain of 1469 and now says 1470.
 
+The routes Overpass had not answered for came back with 42 more crossings. Most
+were trailheads, at Juvasshytta and Spiterstulen for Galdhøpiggen, Tempelseter
+for Høgevarde and Ranten, Furedalen, Ustaoset, Tromsdalen and Øye. Here the
+pass learned to drop detour points the line stays clear without, after its
+three-point detours made hooks back on themselves where the line bends at the
+building. Five needed more than the pass:
+
+- **Kjølen from Kvaløysletta** started beside the care home and ran through the
+  housing estate above it. It now follows the mapped paths east of the houses,
+  as the shortest way over OSM's path network. That adds 233 m, and no house is
+  within 24 m of the line.
+- **Rondslottet from Spranget** came in over the ice on Rondvatnet and went
+  through Rondvassbu. No single dry detour exists, because the hut stands on
+  the shore. The line now keeps to the ice south of the yard and comes ashore
+  east of it, 22 m from the nearest building. That adds 54 m and 15 m of
+  climbing, and the card goes from 1280 to 1300.
+- **Rondslottet from Nedre Dørålseter** started inside the main building. The
+  trailhead moved 18 m south, outside it.
+- Rondslottet's Bjørnhollia route and Husfjellet needed the relaxed ladder.
+
+Seven more cards moved with their gain: Hesten-Segla 510 → 520, Rørnestinden
+1018 → 1022, Slogen 1535 → 1536, Snønipa 1490 → 1500, Torskmannen 750 → 760,
+Tromsdalstinden 1212 → 1213, and Rondslottet. A last `check_ground.py
+--houses` over all 229 routes, with fresh footprints for every moved line, is
+the check that this round is finished.
+
 ## The Sunnfjord round
 
 Four tours from Fri Flyt's *Toppturer i Sunnfjord*, two from the ski-touring car

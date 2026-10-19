@@ -222,6 +222,16 @@ def skirt(r, slug, summit):
                 break
         if chosen is None:
             return None, f"no detour within {MAX_OFFSET_M:.0f} m round way/{sorted(g['ids'])} at {a:.0f} m"
+        # Three points is what the search needs, not what the line needs: where
+        # the line bends at the building, the outer two make a hook back on
+        # itself. Drop any point the detour stays clear without.
+        k = 0
+        while len(chosen) > 1 and k < len(chosen):
+            trial = chosen[:k] + chosen[k + 1:]
+            if path_clear([line[i]] + trial + [line[j]], allp, CLEAR_M / 2):
+                chosen = trial
+            else:
+                k += 1
         via = [fr.ll(*p) for p in chosen]
         via_z = [dtm_point(*p) for p in via]
         if any(z is None or cls in WATER for z, cls in via_z):
