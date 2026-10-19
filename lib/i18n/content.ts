@@ -448,6 +448,12 @@ export const TOUR_TEASER_EN: Record<string, string> = {
     "660 metres of ascent from Jøkelfjordeidet: straight west up a broad east ridge that gets snow early — the safest tour in the Koppartind massif.",
   vassnestind:
     "880 metres of ascent from the fjord at Jøkelfjord: open forest west of Golpeelva, a broad ridge and a wide summit plateau with sea on every side.",
+  grubba:
+    "500 metres of ascent from Fidjeland: the ski trail into the col by the lake and the west-facing flank to Grubbå, in terrain under 30 degrees.",
+  hilleknuten:
+    "660 metres of ascent from the Fv 450 at Storekvæven: up along Bekkene, east across the flat and south to the “Chinese house” on Hilleknuten — one of the longest descents in Sirdal.",
+  roseknuten:
+    "350 metres of ascent from Hunnedalsveien: up the ridge at Finndokkje and a small gully to the top — but keep clear of the cornice above Røsehola.",
 
 };
 
@@ -511,6 +517,140 @@ export interface GuideTextEn {
  *  (`components/guide/GuideSections.tsx` → `AvalancheBody`) finds that exact
  *  substring and turns it into the link. Keep it spelled that way. */
 export const GUIDE_EN: Record<string, GuideTextEn> = {
+  gievdnerassa: {
+    intro:
+      "879 metres of climbing over 6.33 km from the school at Øksfjordbotn: the summer road east, up the hillside east of Skárpavággi and across the big summit plateau of Gievdnerášša, 898 m. The steepest band is 17.3 degrees between 200 and 300 m, and the steepest sustained section 29.1 degrees between 266 and 284. Fri Flyt spells the name Gievdnerassa: “Gievdnerassa is a round, big plateau mountain with magnificent views in every direction and especially towards the Finnmark Alps to the north and west”.",
+    ascent: [
+      "Start at the car park by the school at Øksfjordbotn, 58 m, by the bus stop. Fri Flyt starts “at the old camp school”, and Peakbook: “Parked by Gammelveien near Øksfjordbotn school (the power works).” The line follows Gammelveien and the summer road Geassegeaidnu east, and the path on towards Rivarbukteidet. In winter the road is a designated snowmobile trail, Tappeluftløypa, and Peakbook writes: “Heavy snowmobile traffic had taken over Kjeldalen at Easter.” It is almost flat: the bands below 200 m are 1224 and 1531 metres of ground at 2.1 and 3.8 degrees. The line passes south of the lake at 111 m that Nordelva drains, 103 metres from it, and east of the tarn at 123 m, 72 metres from it, before it climbs the hillside east of a rugged step.",
+      "The line then heads north on the line Peakbook took: “Left the summer road by some cabins at Rivarbukteidet and chose the way up east of Skarpavaggi.” It passes 168 metres east of the Skárpavággi name point at 513 m. Fri Flyt's “ridge that runs north-east” from “the old camp school” would go straight up over the Nordelva ravine and steep slopes from the school; the line only meets that ridge higher up. The band from 200 to 300 m is the steepest, 17.3 degrees over 315 metres of ground, and the steepest sustained section is 29.1 degrees between 266 and 284 m. The forest lets go at 215 m, 2.8 km from the start. Between 181 and 647 m there are small rock steps of 45 degrees or steeper 3 to 15 metres from the line, but the ground under the line is never 35 degrees or steeper for 15 metres in a row.",
+      "The bands from 300 to 700 m measure 11.4 to 14.1 degrees. Fri Flyt: “Here you go up an even, fine slope before it gets gentler towards the top of Gievdnerassa.” Above 700 m it eases: 6.6 and 7.8 degrees in the top two bands, over 844 and 713 metres of ground. Fri Flyt: “The summit plateau is like coming onto a glacier, with surprisingly good snow even when a bitter wind blows down the valley from the south-east.” The summit is gentle on every side, 3.6 to 13.4 degrees on average over 500 metres.",
+    ],
+    descent: [
+      "Fri Flyt recommends the same way down: “The descent to the south, where it is easiest to come up, gives a long continuous run.” At the bottom the line joins the summer road again, and the last kilometres back to the school are almost flat.",
+      "Fri Flyt: “In poor visibility it is easy to slide down into small and large slopes steeper than 30 degrees.” and “The tour gives somewhat challenging micro-terrain to navigate on the way up and down, especially if visibility is limited and the tracks blow in.” The plateau is big and looks the same in every direction; bring a map and compass or GPS.",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "The steepest sustained section is 29.1 degrees between 266 and 284 m, and the steepest band 17.3 degrees from 200 to 300. The ground under the line is not 35 degrees or steeper for any continuous stretch of 15 metres. Fri Flyt rates the tour KAST 1 – Simple and writes that the whole route can be done in terrain under 30 degrees.",
+      },
+      {
+        title: "The terrain around it",
+        body: "There are small rock steps along the hillside, 3 to 15 metres from the line between 181 and 647 m. Fri Flyt: “In poor visibility it is easy to slide down into small and large slopes steeper than 30 degrees.” The plateau is big and flat, and tracks blow in quickly.",
+      },
+      {
+        title: "Before you go",
+        body: "Check today's avalanche forecast for Vest-Finnmark at varsom.no. Vest-Finnmark is an A region and is forecast daily in season. Bring a transceiver, probe and shovel.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "58 m",
+      endLabel: "898 m",
+      distanceLabel: "6.3 km",
+      caption: "879 metres of climbing and 6.33 km from Øksfjordbotn, with the treeline at 215 m and the steepest band between 200 and 300.",
+    },
+  },
+  "stortinden-langfjord": {
+    intro:
+      "1007 metres of climbing over 7.40 km from the café at Langfjordbotn: straight north through the birch forest, up the broad ridge over the 839 rise and the 920 top, and along the summit ridge to Stortinden, 936 m. The ridge gives back 110 metres on the way. The steepest band is 19.6 degrees between 100 and 200 m, and the steepest sustained section 26.3 degrees between 552 and 577. Fri Flyt: “The ski-touring classic Stortinden is a snow hole, offering varied skiing and many options for ski touring and randonnée.”",
+    ascent: [
+      "Start at the café at the junction where the road to Øksfjord leaves the E6 at Langfjordbotn, 39 m. The café is open only in summer, and there is no mapped car park here. Fri Flyt: “Start at the local café a hundred metres north-east of where the E6 and the road to Øksfjord form a junction. Walk straight north through coarse birch forest.” The first 713 metres climb 5.7 degrees on average, and then comes the hillside: 19.6 degrees from 100 to 200 m, the steepest band of the tour. The forest lets go at 301 m, 1.3 km from the start. Fri Flyt: “At the start in Langfjordbotn there is normally around a metre and a half of snow right down to the fjord.”",
+      "Fri Flyt: “Above the treeline the mountain is a broad ridge. Follow the ridge to the top, if you intend to go all the way.” The bands from 200 to 600 m measure 16.8 to 17.9 degrees. The steepest sustained section is 26.3 degrees between 552 and 577 m, and just above, at 596–609 m, the line crosses a steep belt that runs across the ridge: 26 metres of ground at 35 degrees or more, with the steepest cell at 42 degrees. Between 555 and 617 m, ground of 45 degrees or steeper is 18 to 29 metres from the line. Above the belt the line keeps east of the steep west edge up to the 839 rise, which you reach after 3.14 km.",
+      "Fri Flyt: “Most settle for going up to the summit ridge to enjoy the skiing from there rather than going all the way to the top.” Further north the ridge narrows. At 880–888 m, 4.07 km from the start, the line crosses a short rock step: 13 metres of ground at 35 degrees or more, with the steepest cell at 56 degrees. Above the step the line follows a narrow ridge whose east edge is 13 to 27 metres from the line at 891–892 m and drops steeply into the bowl; east of the ridge there are cells of 66.5 and 67.8 degrees 59 and 45 metres away. Fri Flyt writes that “large amounts of snow can come on north-westerlies”, and then the east edge is in the lee and can carry a cornice. Keep at least 20 metres west of the edge. You reach the 920 top at 916 m after 4.92 km. Fri Flyt: “If you carry on towards the top at 920 m, you can drop 500 vertical metres into an east-facing bowl towards Øvre Møllevatn.” That is a descent, not the line.",
+      "From the 920 top the line follows the summit ridge. It is gentle, but it goes up and down: down to 866 m after 5.62 km, up over the 918 top after 6.47 km, down to 889 m after 7.06 km and 47 metres up over the last 346 metres to Stortinden. From the 920 top to the summit the line gives back 86 metres. The summit is gentle to the north, west and north-west, 3.3 to 12.5 degrees on average over 500 metres, and falls to the south-east and south: 52.1 degrees 140 to 200 metres out to the south-east and 44.1 degrees 260 to 320 metres out to the south.",
+    ],
+    descent: [
+      "Fri Flyt: “The normal descent follows the ascent route and offers good skiing from the first top at 839 metres down to the sea. The forest skiing often gives deep, fine powder. The skiing gets steeper if you drift east in the forest.” If you go all the way to the top, you have to go back along the summit ridge, through the dips and over the 920 top, before that descent begins.",
+      "Fri Flyt's alternatives are steeper. The bowl towards Øvre Møllevatn has “several steep descents that are very exposed”, and the flanks towards Russelvdalen “should be assessed from above and can offer 500 vertical metres of steep big-mountain skiing that is demanding to assess”.",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "The steepest sustained section is 26.3 degrees between 552 and 577 m, and the steepest band 19.6 degrees from 100 to 200. The ground under the line is 35 degrees or steeper on two short stretches: 26 metres at 596–609 m and 13 metres at 880–888 m, a rock step on the ridge. Fri Flyt rates the tour KAST 3 – Complex and writes: “Demanding avalanche assessment west and south of the summit ridge”.",
+      },
+      {
+        title: "The terrain around it",
+        body: "The west side of the ridge is steep from 555 m up. At 880–892 m the ridge is narrow, and the east edge is 13 to 27 metres from the line and can carry a cornice; keep at least 20 metres west of it. East of the 920 top lies the bowl towards Øvre Møllevatn, and the summit falls 44.1 to 52.1 degrees to the south and south-east. Stay on the ridge.",
+      },
+      {
+        title: "Before you go",
+        body: "Check today's avalanche forecast for Vest-Finnmark at varsom.no. Vest-Finnmark is an A region and is forecast daily in season. Bring a transceiver, probe and shovel.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "39 m",
+      endLabel: "936 m",
+      distanceLabel: "7.4 km",
+      caption: "1007 metres of climbing and 7.40 km from Langfjordbotn, with the treeline at 301 m, 839 after 3.14 km and the 920 top after 4.92 km.",
+    },
+  },
+  laslettind: {
+    intro:
+      "665 metres of climbing over 2.97 km from the car park at Jøkelfjordeidet: west over the stream and up the broad east ridge to the cairn, and on to the top of Laslettind, 822 m. The steepest band is 19.6 degrees between 300 and 400 m, and the steepest sustained section 22.1 degrees between 377 and 398. Fri Flyt: “Laslettind has a long season and many options for fine ski tours and skiing.”",
+    ascent: [
+      "Start at the car park on Jøkelfjordveien, 163 m, where the ut.no route starts. Ut.no: “Look for a car park on the left side of the road after about 2 km. Here you find the start of the route, with a sign. Follow the path. Right at the start you cross a stream.” Fri Flyt: “Start from the westernmost car park at Jøkelfjordeidet and go west.” The forest lets go at 180 m, 0.27 km from the start, by Kartverket's terrain classes; Fri Flyt writes of Kvænangen that “The treeline is at around 350 m”.",
+      "Ut.no: “After this you go up along the ridge of Laslettind. Keep to the right of the cairns.” Fri Flyt: “The route up Laslettind follows a broad ridge that gets snow early and keeps it long.” The bands from 200 to 400 m measure 10.3 and 19.6 degrees; 300 to 400 is the steepest, with the steepest sustained section 22.1 degrees between 377 and 398 m. Above that the ridge holds 14.5 to 17.8 degrees up to 800 m. The ground under the line is never 35 degrees or steeper for 15 metres in a row.",
+      "You reach the cairn at 808 m after 2.66 km; Kartverket and ut.no put the name Laslettind there. The top is 0.31 km further north-west, at 822 m, and that is where Fri Flyt's GPS point is; the band from 800 to 900 m is 314 metres of ground at 2.7 degrees. South, south-west and west of the top the mountain falls steeply, 29.1 to 31.3 degrees on average over 500 metres, with 43.1 degrees 250 to 310 metres out to the south-west, and ground of 40 degrees or steeper is 41 metres west-south-west of the top. To the north-west it is almost flat, 2.5 degrees, towards Olderbakkfjellet; Fri Flyt on that tour: “Cornices on the top”.",
+    ],
+    descent: [
+      "Fri Flyt recommends the same way down. Fri Flyt on Kvænangen: “We made big turns down the long open east side of Laslettind and into the forest below.” Fri Flyt: “The aspect often gives good snow because it is in the lee of winds from the west and north-west.”",
+      "Fri Flyt: “Laslettind is surrounded by cliffs and steep couloir terrain south and north of the top and the ridge.” South-west of the line there are cells of 51.5 and 46.9 degrees 45 and 57 metres away at 650 and 698 m. Stay on the ridge on the way down.",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "The steepest sustained section is 22.1 degrees between 377 and 398 m, and the steepest band 19.6 degrees from 300 to 400. The ground under the line is not 35 degrees or steeper for any continuous stretch of 15 metres, and the nearest ground of 45 degrees is 33 metres from the line, at 686 m. Fri Flyt rates the tour KAST 1 – Simple, with the steepest point under 25 degrees.",
+      },
+      {
+        title: "The terrain around it",
+        body: "Cliffs and steep couloir terrain lie both north and south of the ridge and the top. The south, south-west and west sides of the top are 29.1 to 31.3 degrees on average, and ground of 40 degrees is 41 metres from the top. Fri Flyt warns of cornices on Olderbakkfjellet, north-west of the top.",
+      },
+      {
+        title: "Before you go",
+        body: "Check today's avalanche forecast for Vest-Finnmark at varsom.no. Vest-Finnmark is an A region and is forecast daily in season. Fri Flyt: “If you live in Finnmark and want to go ski touring before Christmas, a head torch is good to have.” Bring a transceiver, probe and shovel.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "163 m",
+      endLabel: "822 m",
+      distanceLabel: "3.0 km",
+      caption: "665 metres of climbing and 2.97 km from Jøkelfjordeidet, with the treeline at 180 m, the steepest band between 300 and 400 and the cairn at 808.",
+    },
+  },
+  vassnestind: {
+    intro:
+      "879 metres of climbing over 3.93 km from the fjord at Jøkelfjord: south through open forest west of Golpeelva, up the broad ridge and across the summit plateau to the cairn on Vassnestind, 896 m. The steepest band is 19.2 degrees between 400 and 500 m, and the steepest sustained section 26.0 degrees between 523 and 545. Fri Flyt: “Vassnestind is a fascinating and little-visited top beyond the playground of Jøkelfjordeidet.”",
+    ascent: [
+      "Start at the car park on Hamnebuktveien at Jøkelfjord, 22 m, west of Golpeelva; the bus stop is on the other side of the river. Fri Flyt gives two starting points. The text says “From Ytre Hamnebukta, where the road along the south side of Jøkelfjorden ends”, but the fact box says “Start/parking: Jøkelfjord. Parking in a gravel pit on the south side of Fv 365”, and the route goes “along the west side of Golpeelva”, which runs out at Jøkelfjord. So the line starts here; Ytre Hamnebukta is 2.9 km further west-south-west, below a steep hillside. Fri Flyt's “Follow it east to the top of Vassnestind” only fits the last stretch: the line goes straight south and turns east-south-east for the last half kilometre.",
+      "Fri Flyt: “The first part of the route up through open forest follows the west side of Golpeelva.” The river runs 18 to 149 metres east of the line for the first 0.74 km. At the bottom it runs in a ravine with steep sides, open water and snow bridges; the line keeps to the west side of the ravine, and you should not go down into it. Fri Flyt: “At the treeline between 220 and 240 m there is a slightly steeper section, so read the terrain carefully to lay a sensible track.” The forest lets go at 241 m, 0.92 km from the start, and the band from 200 to 300 m measures 17.4 degrees.",
+      "Fri Flyt: “Once over, it is undulating further up. Between 440 and 600 m there are small sections slightly steeper than 30 degrees. Use and read the terrain features.” The band from 400 to 500 m is the steepest, 19.2 degrees over 281 metres of ground. At 440–448 and 471–479 m the line crosses two short stretches, 15 and 16 metres, of ground at 35 degrees or more, and between 457 and 493 m ground of 45 degrees or steeper is 2 to 30 metres from it. The steepest sustained section is 26.0 degrees between 523 and 545 m.",
+      "Above 600 m the ridge eases: 9.6 degrees from 600 to 700 m over 588 metres of ground, and 13.0 from 700 to 800. You reach the summit plateau at 871 m after 3.51 km. Fri Flyt: “Once up it flattens out, and you track across the broad summit plateau to the cairn to enjoy your packed lunch and the view.” The band from 800 to 900 m is 781 metres of ground at 7.0 degrees. At 3.76–3.80 km the line passes 17 to 24 metres from the head of a gully on the north side; keep away from the edge.",
+    ],
+    descent: [
+      "Fri Flyt: “The descent follows the same line as the ascent. There you can choose your track on fine, big open flats.”",
+      "Fri Flyt: “Keep your distance from the steep terrain to the south and north.” The summit falls steeply to the north, north-east and east: 40.3 degrees 210 to 270 metres out to the north, 52.9 to the north-east and 50.6 to the east. To the south it is 19.5 degrees on average, with 28.5 degrees 330 to 390 metres out, and to the west and north-west almost flat. Ground of 40 degrees or steeper is more than 60 metres from the cairn.",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "The steepest sustained section is 26.0 degrees between 523 and 545 m, and the steepest band 19.2 degrees from 400 to 500. The ground under the line is 35 degrees or steeper on two short stretches of 15 and 16 metres at 440–448 and 471–479 m. Fri Flyt rates the tour KAST 1 – Simple, with “Steepest section: 30 degrees (short section)”.",
+      },
+      {
+        title: "The terrain around it",
+        body: "At the bottom Golpeelva runs in a ravine with open water and snow bridges east of the line. Between 440 and 600 m there are small sections steeper than 30 degrees by the line; at 457–493 m steep ground is 2 to 30 metres from it, and at 3.76–3.80 km the line passes 17 to 24 metres from the head of a gully on the north side. The north, north-east and east sides of the summit are 40.3 to 52.9 degrees, and Fri Flyt asks you to keep your distance from the steep terrain to the south and north.",
+      },
+      {
+        title: "Before you go",
+        body: "Check today's avalanche forecast for Vest-Finnmark at varsom.no. Vest-Finnmark is an A region and is forecast daily in season. Bring a transceiver, probe and shovel.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "22 m",
+      endLabel: "896 m",
+      distanceLabel: "3.9 km",
+      caption: "879 metres of climbing and 3.93 km from Jøkelfjord, with the treeline at 241 m, the steepest band between 400 and 500 and the summit plateau from 871.",
+    },
+  },
   storgalten: {
     intro:
       "Fjord to summit in outer Lyngen: 1215 metres of climbing from the roadside where Galtelva runs out into Nord-Lenangen, to the cairn at 1219. A short line, open mountain from 189 m up, and the fjord behind you from the first step.",
@@ -7518,138 +7658,104 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       caption: "620 metres of ascent and 7.4 km across the Kjerag plateau, where the steepest 30 metres is 29.6 degrees, up on the plateau, and the danger lies 1850 metres north of the high point.",
     },
   },
-  gievdnerassa: {
+  hilleknuten: {
     intro:
-      "879 metres of climbing over 6.33 km from the school at Øksfjordbotn: the summer road east, up the hillside east of Skárpavággi and across the big summit plateau of Gievdnerášša, 898 m. The steepest band is 17.3 degrees between 200 and 300 m, and the steepest sustained section 29.1 degrees between 266 and 284. Fri Flyt spells the name Gievdnerassa: “Gievdnerassa is a round, big plateau mountain with magnificent views in every direction and especially towards the Finnmark Alps to the north and west”.",
+      "665 metres of climbing over 4.21 km from the Fv 450 at Storekvæven: up along Bekkene to the flat, east north of a steep belt in the west face, and south along a gentle strip to Hilleknuten, 1209 m. The steepest band is 12.7 degrees between 600 and 700 m, and the steepest sustained section 26.6 degrees between 1061 and 1081. Fri Flyt: “The ski tour to Hilleknuten offers one of the longest descents in the area.”",
     ascent: [
-      "Start at the car park by the school at Øksfjordbotn, 58 m, by the bus stop. Fri Flyt starts “at the old camp school”, and Peakbook: “Parked by Gammelveien near Øksfjordbotn school (the power works).” The line follows Gammelveien and the summer road Geassegeaidnu east, and the path on towards Rivarbukteidet. In winter the road is a designated snowmobile trail, Tappeluftløypa, and Peakbook writes: “Heavy snowmobile traffic had taken over Kjeldalen at Easter.” It is almost flat: the bands below 200 m are 1224 and 1531 metres of ground at 2.1 and 3.8 degrees. The line passes south of the lake at 111 m that Nordelva drains, 103 metres from it, and east of the tarn at 123 m, 72 metres from it, before it climbs the hillside east of a rugged step.",
-      "The line then heads north on the line Peakbook took: “Left the summer road by some cabins at Rivarbukteidet and chose the way up east of Skarpavaggi.” It passes 168 metres east of the Skárpavággi name point at 513 m. Fri Flyt's “ridge that runs north-east” from “the old camp school” would go straight up over the Nordelva ravine and steep slopes from the school; the line only meets that ridge higher up. The band from 200 to 300 m is the steepest, 17.3 degrees over 315 metres of ground, and the steepest sustained section is 29.1 degrees between 266 and 284 m. The forest lets go at 215 m, 2.8 km from the start. Between 181 and 647 m there are small rock steps of 45 degrees or steeper 3 to 15 metres from the line, but the ground under the line is never 35 degrees or steeper for 15 metres in a row.",
-      "The bands from 300 to 700 m measure 11.4 to 14.1 degrees. Fri Flyt: “Here you go up an even, fine slope before it gets gentler towards the top of Gievdnerassa.” Above 700 m it eases: 6.6 and 7.8 degrees in the top two bands, over 844 and 713 metres of ground. Fri Flyt: “The summit plateau is like coming onto a glacier, with surprisingly good snow even when a bitter wind blows down the valley from the south-east.” The summit is gentle on every side, 3.6 to 13.4 degrees on average over 500 metres.",
+      "Start at the Fv 450 at Storekvæven, 568 m, north of Fidjeland. There is no mapped car park here. Fri Flyt: “Park at Store Kvæven and follow Bekkene up until it flattens out.” The line goes up along Bekkene: the band from 600 to 700 m is the steepest of the tour, 12.7 degrees over 418 metres of ground, and the forest lets go at 796 m, 1.49 km from the start. You reach the flat at 807 m after 1.57 km.",
+      "Fri Flyt goes on: “Follow the bog south before you turn east up the slopes.” The line does not. A steep belt runs north–south through the whole west face of Hilleknuten, and routed south across the bog and then east, the line crossed it on 65 metres of ground at 35 degrees or more. Instead the line goes east north of the belt, 910 m after 2.34 km, and crosses it where it is gentlest, at 1087 m after 3.09 km. Just after, at 3.28 km and 1080–1088 m, it crosses 16 metres of ground at 35 degrees or more, with the steepest cell at 41 degrees.",
+      "East of the belt the line heads south along a gentle strip: the bands from 900 to 1200 m measure 7.9 to 9.7 degrees. The steepest sustained section is 26.6 degrees between 1061 and 1081 m. Between 3.06 and 3.28 km ground of 45 degrees or steeper is 16 to 24 metres from the line, and north-east of it there are cells of 58.7 degrees 50 metres away at 1091 m. Fri Flyt: “The little building that looks like a Chinese house stands on the top of Hilleknuten.”",
+      "On the last stretch up, between 1191 and 1209 m, small rock edges of 45 degrees or steeper are 8 to 23 metres from the line. The summit is gentle on average to the north, north-east, east, south-east and south-west, 6.3 to 10.6 degrees over 500 metres, but the east edge has 31.8 degrees 20 to 80 metres out, and the summit falls more steeply to the west and north-west, 37.0 and 38.2 degrees 260 to 380 metres out, and 39.7 degrees 240 to 300 metres out to the south.",
     ],
     descent: [
-      "Fri Flyt recommends the same way down: “The descent to the south, where it is easiest to come up, gives a long continuous run.” At the bottom the line joins the summer road again, and the last kilometres back to the school are almost flat.",
-      "Fri Flyt: “In poor visibility it is easy to slide down into small and large slopes steeper than 30 degrees.” and “The tour gives somewhat challenging micro-terrain to navigate on the way up and down, especially if visibility is limited and the tracks blow in.” The plateau is big and looks the same in every direction; bring a map and compass or GPS.",
+      "Fri Flyt: “From the top of Hilleknuten you can ski down in several places. If you aim straight for the bogs you get a very fine descent.” That descent crosses the steep belt in the west face; if you go down the line, you cross it where it is gentlest, at 1087 m.",
+      "Fri Flyt: “When you reach the flats by the bog it is recommended to climb the little top p1012 before skiing down to the bog again. End the day by going up Kviturdfjellet, so you avoid crossing the flats and get a good run back to the car.” And: “It is recommended that you explore the area more than the book describes.”",
     ],
     avalanche: [
       {
         title: "The route",
-        body: "The steepest sustained section is 29.1 degrees between 266 and 284 m, and the steepest band 17.3 degrees from 200 to 300. The ground under the line is not 35 degrees or steeper for any continuous stretch of 15 metres. Fri Flyt rates the tour KAST 1 – Simple and writes that the whole route can be done in terrain under 30 degrees.",
+        body: "The steepest sustained section is 26.6 degrees between 1061 and 1081 m, and the steepest band 12.7 degrees from 600 to 700. The ground under the line is 35 degrees or steeper on one stretch of 16 metres at 1080–1088 m, where the line crosses the steep belt. Fri Flyt gives 35 degrees as the steepest point and grades the tour “Moderate”.",
       },
       {
         title: "The terrain around it",
-        body: "There are small rock steps along the hillside, 3 to 15 metres from the line between 181 and 647 m. Fri Flyt: “In poor visibility it is easy to slide down into small and large slopes steeper than 30 degrees.” The plateau is big and flat, and tracks blow in quickly.",
+        body: "The steep belt in the west face runs north–south through the whole hillside; the line crosses it only where it is gentlest. The south, west and north-west sides of the summit are 37.0 to 39.7 degrees in their steepest windows.",
       },
       {
         title: "Before you go",
-        body: "Check today's avalanche forecast for Vest-Finnmark at varsom.no. Vest-Finnmark is an A region and is forecast daily in season. Bring a transceiver, probe and shovel.",
+        body: "Check today's avalanche forecast for Heiane at varsom.no. Heiane is an A region and is forecast daily in season. Bring a transceiver, probe and shovel.",
       },
     ],
     elevationProfile: {
-      startLabel: "58 m",
-      endLabel: "898 m",
-      distanceLabel: "6.3 km",
-      caption: "879 metres of climbing and 6.33 km from Øksfjordbotn, with the treeline at 215 m and the steepest band between 200 and 300.",
+      startLabel: "568 m",
+      endLabel: "1209 m",
+      distanceLabel: "4.2 km",
+      caption: "665 metres of climbing and 4.21 km from Storekvæven, with the treeline at 796 m, the flat at 807 and the steep belt crossed at 1087.",
     },
   },
-  "stortinden-langfjord": {
+  grubba: {
     intro:
-      "1007 metres of climbing over 7.40 km from the café at Langfjordbotn: straight north through the birch forest, up the broad ridge over the 839 rise and the 920 top, and along the summit ridge to Stortinden, 936 m. The ridge gives back 110 metres on the way. The steepest band is 19.6 degrees between 100 and 200 m, and the steepest sustained section 26.3 degrees between 552 and 577. Fri Flyt: “The ski-touring classic Stortinden is a snow hole, offering varied skiing and many options for ski touring and randonnée.”",
+      "502 metres of climbing over 2.55 km from Smølåsveien at Fidjeland: east to the col by the lake at 859 m and up the west-facing flank to Grubbå, 1184 m. The steepest band is 17.0 degrees between 900 and 1000 m, and the steepest sustained section 23.1 degrees between 717 and 732. Fri Flyt: “The ski tour to Grubbå starts at Leitet, and the tour goes in terrain under 30 degrees.”",
     ascent: [
-      "Start at the café at the junction where the road to Øksfjord leaves the E6 at Langfjordbotn, 39 m. The café is open only in summer, and there is no mapped car park here. Fri Flyt: “Start at the local café a hundred metres north-east of where the E6 and the road to Øksfjord form a junction. Walk straight north through coarse birch forest.” The first 713 metres climb 5.7 degrees on average, and then comes the hillside: 19.6 degrees from 100 to 200 m, the steepest band of the tour. The forest lets go at 301 m, 1.3 km from the start. Fri Flyt: “At the start in Langfjordbotn there is normally around a metre and a half of snow right down to the fjord.”",
-      "Fri Flyt: “Above the treeline the mountain is a broad ridge. Follow the ridge to the top, if you intend to go all the way.” The bands from 200 to 600 m measure 16.8 to 17.9 degrees. The steepest sustained section is 26.3 degrees between 552 and 577 m, and just above, at 596–609 m, the line crosses a steep belt that runs across the ridge: 26 metres of ground at 35 degrees or more, with the steepest cell at 42 degrees. Between 555 and 617 m, ground of 45 degrees or steeper is 18 to 29 metres from the line. Above the belt the line keeps east of the steep west edge up to the 839 rise, which you reach after 3.14 km.",
-      "Fri Flyt: “Most settle for going up to the summit ridge to enjoy the skiing from there rather than going all the way to the top.” Further north the ridge narrows. At 880–888 m, 4.07 km from the start, the line crosses a short rock step: 13 metres of ground at 35 degrees or more, with the steepest cell at 56 degrees. Above the step the line follows a narrow ridge whose east edge is 13 to 27 metres from the line at 891–892 m and drops steeply into the bowl; east of the ridge there are cells of 66.5 and 67.8 degrees 59 and 45 metres away. Fri Flyt writes that “large amounts of snow can come on north-westerlies”, and then the east edge is in the lee and can carry a cornice. Keep at least 20 metres west of the edge. You reach the 920 top at 916 m after 4.92 km. Fri Flyt: “If you carry on towards the top at 920 m, you can drop 500 vertical metres into an east-facing bowl towards Øvre Møllevatn.” That is a descent, not the line.",
-      "From the 920 top the line follows the summit ridge. It is gentle, but it goes up and down: down to 866 m after 5.62 km, up over the 918 top after 6.47 km, down to 889 m after 7.06 km and 47 metres up over the last 346 metres to Stortinden. From the 920 top to the summit the line gives back 86 metres. The summit is gentle to the north, west and north-west, 3.3 to 12.5 degrees on average over 500 metres, and falls to the south-east and south: 52.1 degrees 140 to 200 metres out to the south-east and 44.1 degrees 260 to 320 metres out to the south.",
+      "Start at the car park on Smølåsveien at Fidjeland, 695 m. Fri Flyt: “Drive in at Leitet and park at the end of the road.” Smølåsveien ends 0.2 km further south. Fri Flyt: “Go so that you come into the col between p893 and the lake at 850 m. There is often a ski trail this way.” The line crosses the mapped ski trail after 0.25 km and heads east; the steepest sustained section is 23.1 degrees between 717 and 732 m, at the bottom.",
+      "The bands from 700 to 900 m measure 10.6 and 9.5 degrees, and the forest lets go at 856 m, 1.0 km from the start. You reach the col at 856 m after 1.00 km; the lake, at 859 m on the map, is 24 metres from the line at 1.09 km. Stay on land.",
+      "Fri Flyt: “Turn up the west-facing flank and follow it to the top.” The band from 900 to 1000 m is the steepest, 17.0 degrees over 316 metres of ground, and 1000 to 1100 measures 14.9. Between 932 and 1036 m small rock edges of 45 degrees or steeper are 9 to 23 metres from the line. The ground under the line is never 35 degrees or steeper for 15 metres in a row. The last band, 1100 to 1200, is 470 metres of ground at 9.9 degrees up to the top. Ut.no on the cairn: “A cairn has also been built on the highest point (1184 m) a little further north-west (that is probably Grubbå itself).”",
     ],
     descent: [
-      "Fri Flyt: “The normal descent follows the ascent route and offers good skiing from the first top at 839 metres down to the sea. The forest skiing often gives deep, fine powder. The skiing gets steeper if you drift east in the forest.” If you go all the way to the top, you have to go back along the summit ridge, through the dips and over the 920 top, before that descent begins.",
-      "Fri Flyt's alternatives are steeper. The bowl towards Øvre Møllevatn has “several steep descents that are very exposed”, and the flanks towards Russelvdalen “should be assessed from above and can offer 500 vertical metres of steep big-mountain skiing that is demanding to assess”.",
+      "Fri Flyt: “Ski down the flank and home the way you came, or choose a more direct line down between the ridge and the northern stream valley. At the end you get some fun forest skiing before you turn off to the car.”",
+      "The summit is gentle on every side, 3.0 to 14.5 degrees on average over 500 metres. The steepest window is 30.6 degrees 20 to 80 metres out to the south-east.",
     ],
     avalanche: [
       {
         title: "The route",
-        body: "The steepest sustained section is 26.3 degrees between 552 and 577 m, and the steepest band 19.6 degrees from 100 to 200. The ground under the line is 35 degrees or steeper on two short stretches: 26 metres at 596–609 m and 13 metres at 880–888 m, a rock step on the ridge. Fri Flyt rates the tour KAST 3 – Complex and writes: “Demanding avalanche assessment west and south of the summit ridge”.",
+        body: "The steepest sustained section is 23.1 degrees between 717 and 732 m, and the steepest band 17.0 degrees from 900 to 1000. The ground under the line is not 35 degrees or steeper for any continuous stretch of 15 metres. Fri Flyt gives 27 degrees as the steepest point and grades the tour “Easy”.",
       },
       {
         title: "The terrain around it",
-        body: "The west side of the ridge is steep from 555 m up. At 880–892 m the ridge is narrow, and the east edge is 13 to 27 metres from the line and can carry a cornice; keep at least 20 metres west of it. East of the 920 top lies the bowl towards Øvre Møllevatn, and the summit falls 44.1 to 52.1 degrees to the south and south-east. Stay on the ridge.",
+        body: "Small rock edges along the flank, 9 to 23 metres from the line between 932 and 1036 m. The lake in the col is 24 metres from the line; the ice can be weak.",
       },
       {
         title: "Before you go",
-        body: "Check today's avalanche forecast for Vest-Finnmark at varsom.no. Vest-Finnmark is an A region and is forecast daily in season. Bring a transceiver, probe and shovel.",
+        body: "Check today's avalanche forecast for Heiane at varsom.no. Heiane is an A region and is forecast daily in season. Bring a transceiver, probe and shovel.",
       },
     ],
     elevationProfile: {
-      startLabel: "39 m",
-      endLabel: "936 m",
-      distanceLabel: "7.4 km",
-      caption: "1007 metres of climbing and 7.40 km from Langfjordbotn, with the treeline at 301 m, 839 after 3.14 km and the 920 top after 4.92 km.",
+      startLabel: "695 m",
+      endLabel: "1184 m",
+      distanceLabel: "2.5 km",
+      caption: "502 metres of climbing and 2.55 km from Fidjeland, with the treeline at 856 m, the col at 856 and the steepest band between 900 and 1000.",
     },
   },
-  laslettind: {
+  roseknuten: {
     intro:
-      "665 metres of climbing over 2.97 km from the car park at Jøkelfjordeidet: west over the stream and up the broad east ridge to the cairn, and on to the top of Laslettind, 822 m. The steepest band is 19.6 degrees between 300 and 400 m, and the steepest sustained section 22.1 degrees between 377 and 398. Fri Flyt: “Laslettind has a long season and many options for fine ski tours and skiing.”",
+      "352 metres of climbing over 1.62 km from Hunnedalsveien: up the faint ridge at Finndokkje to p905, the gully south-east of it and the ridge south of Røsehola to Røseknuten, 1022 m. The steepest band is 13.6 degrees between 600 and 700 m, and the steepest sustained section 24.6 degrees between 838 and 857. Fri Flyt: “Røseknuten can be skied from almost every side and is easily combined with a ski tour to Store Knuten.”",
     ascent: [
-      "Start at the car park on Jøkelfjordveien, 163 m, where the ut.no route starts. Ut.no: “Look for a car park on the left side of the road after about 2 km. Here you find the start of the route, with a sign. Follow the path. Right at the start you cross a stream.” Fri Flyt: “Start from the westernmost car park at Jøkelfjordeidet and go west.” The forest lets go at 180 m, 0.27 km from the start, by Kartverket's terrain classes; Fri Flyt writes of Kvænangen that “The treeline is at around 350 m”.",
-      "Ut.no: “After this you go up along the ridge of Laslettind. Keep to the right of the cairns.” Fri Flyt: “The route up Laslettind follows a broad ridge that gets snow early and keeps it long.” The bands from 200 to 400 m measure 10.3 and 19.6 degrees; 300 to 400 is the steepest, with the steepest sustained section 22.1 degrees between 377 and 398 m. Above that the ridge holds 14.5 to 17.8 degrees up to 800 m. The ground under the line is never 35 degrees or steeper for 15 metres in a row.",
-      "You reach the cairn at 808 m after 2.66 km; Kartverket and ut.no put the name Laslettind there. The top is 0.31 km further north-west, at 822 m, and that is where Fri Flyt's GPS point is; the band from 800 to 900 m is 314 metres of ground at 2.7 degrees. South, south-west and west of the top the mountain falls steeply, 29.1 to 31.3 degrees on average over 500 metres, with 43.1 degrees 250 to 310 metres out to the south-west, and ground of 40 degrees or steeper is 41 metres west-south-west of the top. To the north-west it is almost flat, 2.5 degrees, towards Olderbakkfjellet; Fri Flyt on that tour: “Cornices on the top”.",
+      "Start at the car park on Hunnedalsveien, 674 m. Fri Flyt: “Park at the car park by the power station, or at a larger car park a little further down.” The power station is not mapped; the Gravasstølen car park is 1.2 km west. Fri Flyt: “Go up a faint ridge at Finndokje.” The line goes straight north on it: the bands from 700 to 900 m measure 12.0 and 12.9 degrees, and the forest lets go at 803 m, 0.59 km from the start. At the bottom, between 688 and 712 m, small rock edges of 45 degrees or steeper are 4 to 19 metres from the line.",
+      "The steepest sustained section is 24.6 degrees between 838 and 857 m. You reach p905 at 906 m after 1.08 km. Fri Flyt: “Go up a small gully south-east of p905. Continue on the ridge to the top.” The line takes the gully and the ridge south of Røsehola, a shelf in the west face at 949 m, and keeps 131 metres from it.",
+      "Fri Flyt: “At 990 m a cornice hangs out over Røsehola. It breaks much further in than you think, so keep your distance.” So the line comes onto the top from the south, at 987 m after 1.40 km, instead of over the edge above Røsehola. Between 952 and 1012 m small rock edges of 45 degrees or steeper are 7 to 20 metres from the line. The ground under the line is never 35 degrees or steeper for 15 metres in a row.",
     ],
     descent: [
-      "Fri Flyt recommends the same way down. Fri Flyt on Kvænangen: “We made big turns down the long open east side of Laslettind and into the forest below.” Fri Flyt: “The aspect often gives good snow because it is in the lee of winds from the west and north-west.”",
-      "Fri Flyt: “Laslettind is surrounded by cliffs and steep couloir terrain south and north of the top and the ridge.” South-west of the line there are cells of 51.5 and 46.9 degrees 45 and 57 metres away at 650 and 698 m. Stay on the ridge on the way down.",
+      "Fri Flyt's descents are steeper than the line. Røsehola: “The way goes down into an exciting bowl. Fine snow settles easily here because the wind gets little grip.” Sørrenna: “A lovely south-facing hollow runs all the way down to the road.” Both have 35 degrees as the steepest point, and Røsehola runs straight under the cornice.",
+      "The summit is almost flat to the north and north-east, 3.1 and 4.3 degrees on average over 500 metres, but falls steeply to the south and south-east: 39.7 degrees just 30 to 90 metres out to the south, and 56.7 degrees 390 to 450 metres out to the south-east.",
     ],
     avalanche: [
       {
         title: "The route",
-        body: "The steepest sustained section is 22.1 degrees between 377 and 398 m, and the steepest band 19.6 degrees from 300 to 400. The ground under the line is not 35 degrees or steeper for any continuous stretch of 15 metres, and the nearest ground of 45 degrees is 33 metres from the line, at 686 m. Fri Flyt rates the tour KAST 1 – Simple, with the steepest point under 25 degrees.",
+        body: "The steepest sustained section is 24.6 degrees between 838 and 857 m, and the steepest band 13.6 degrees from 600 to 700. The ground under the line is not 35 degrees or steeper for any continuous stretch of 15 metres. Fri Flyt gives 30 degrees as the steepest point and grades the tour “Easy”.",
       },
       {
         title: "The terrain around it",
-        body: "Cliffs and steep couloir terrain lie both north and south of the ridge and the top. The south, south-west and west sides of the top are 29.1 to 31.3 degrees on average, and ground of 40 degrees is 41 metres from the top. Fri Flyt warns of cornices on Olderbakkfjellet, north-west of the top.",
+        body: "The cornice at 990 m hangs out over Røsehola and breaks far in; the line keeps 131 metres from the shelf and comes up from the south. The south side of the summit is 39.7 degrees 30 to 90 metres out.",
       },
       {
         title: "Before you go",
-        body: "Check today's avalanche forecast for Vest-Finnmark at varsom.no. Vest-Finnmark is an A region and is forecast daily in season. Fri Flyt: “If you live in Finnmark and want to go ski touring before Christmas, a head torch is good to have.” Bring a transceiver, probe and shovel.",
+        body: "Check today's avalanche forecast for Heiane at varsom.no. Heiane is an A region and is forecast daily in season. Bring a transceiver, probe and shovel.",
       },
     ],
     elevationProfile: {
-      startLabel: "163 m",
-      endLabel: "822 m",
-      distanceLabel: "3.0 km",
-      caption: "665 metres of climbing and 2.97 km from Jøkelfjordeidet, with the treeline at 180 m, the steepest band between 300 and 400 and the cairn at 808.",
-    },
-  },
-  vassnestind: {
-    intro:
-      "879 metres of climbing over 3.93 km from the fjord at Jøkelfjord: south through open forest west of Golpeelva, up the broad ridge and across the summit plateau to the cairn on Vassnestind, 896 m. The steepest band is 19.2 degrees between 400 and 500 m, and the steepest sustained section 26.0 degrees between 523 and 545. Fri Flyt: “Vassnestind is a fascinating and little-visited top beyond the playground of Jøkelfjordeidet.”",
-    ascent: [
-      "Start at the car park on Hamnebuktveien at Jøkelfjord, 22 m, west of Golpeelva; the bus stop is on the other side of the river. Fri Flyt gives two starting points. The text says “From Ytre Hamnebukta, where the road along the south side of Jøkelfjorden ends”, but the fact box says “Start/parking: Jøkelfjord. Parking in a gravel pit on the south side of Fv 365”, and the route goes “along the west side of Golpeelva”, which runs out at Jøkelfjord. So the line starts here; Ytre Hamnebukta is 2.9 km further west-south-west, below a steep hillside. Fri Flyt's “Follow it east to the top of Vassnestind” only fits the last stretch: the line goes straight south and turns east-south-east for the last half kilometre.",
-      "Fri Flyt: “The first part of the route up through open forest follows the west side of Golpeelva.” The river runs 18 to 149 metres east of the line for the first 0.74 km. At the bottom it runs in a ravine with steep sides, open water and snow bridges; the line keeps to the west side of the ravine, and you should not go down into it. Fri Flyt: “At the treeline between 220 and 240 m there is a slightly steeper section, so read the terrain carefully to lay a sensible track.” The forest lets go at 241 m, 0.92 km from the start, and the band from 200 to 300 m measures 17.4 degrees.",
-      "Fri Flyt: “Once over, it is undulating further up. Between 440 and 600 m there are small sections slightly steeper than 30 degrees. Use and read the terrain features.” The band from 400 to 500 m is the steepest, 19.2 degrees over 281 metres of ground. At 440–448 and 471–479 m the line crosses two short stretches, 15 and 16 metres, of ground at 35 degrees or more, and between 457 and 493 m ground of 45 degrees or steeper is 2 to 30 metres from it. The steepest sustained section is 26.0 degrees between 523 and 545 m.",
-      "Above 600 m the ridge eases: 9.6 degrees from 600 to 700 m over 588 metres of ground, and 13.0 from 700 to 800. You reach the summit plateau at 871 m after 3.51 km. Fri Flyt: “Once up it flattens out, and you track across the broad summit plateau to the cairn to enjoy your packed lunch and the view.” The band from 800 to 900 m is 781 metres of ground at 7.0 degrees. At 3.76–3.80 km the line passes 17 to 24 metres from the head of a gully on the north side; keep away from the edge.",
-    ],
-    descent: [
-      "Fri Flyt: “The descent follows the same line as the ascent. There you can choose your track on fine, big open flats.”",
-      "Fri Flyt: “Keep your distance from the steep terrain to the south and north.” The summit falls steeply to the north, north-east and east: 40.3 degrees 210 to 270 metres out to the north, 52.9 to the north-east and 50.6 to the east. To the south it is 19.5 degrees on average, with 28.5 degrees 330 to 390 metres out, and to the west and north-west almost flat. Ground of 40 degrees or steeper is more than 60 metres from the cairn.",
-    ],
-    avalanche: [
-      {
-        title: "The route",
-        body: "The steepest sustained section is 26.0 degrees between 523 and 545 m, and the steepest band 19.2 degrees from 400 to 500. The ground under the line is 35 degrees or steeper on two short stretches of 15 and 16 metres at 440–448 and 471–479 m. Fri Flyt rates the tour KAST 1 – Simple, with “Steepest section: 30 degrees (short section)”.",
-      },
-      {
-        title: "The terrain around it",
-        body: "At the bottom Golpeelva runs in a ravine with open water and snow bridges east of the line. Between 440 and 600 m there are small sections steeper than 30 degrees by the line; at 457–493 m steep ground is 2 to 30 metres from it, and at 3.76–3.80 km the line passes 17 to 24 metres from the head of a gully on the north side. The north, north-east and east sides of the summit are 40.3 to 52.9 degrees, and Fri Flyt asks you to keep your distance from the steep terrain to the south and north.",
-      },
-      {
-        title: "Before you go",
-        body: "Check today's avalanche forecast for Vest-Finnmark at varsom.no. Vest-Finnmark is an A region and is forecast daily in season. Bring a transceiver, probe and shovel.",
-      },
-    ],
-    elevationProfile: {
-      startLabel: "22 m",
-      endLabel: "896 m",
-      distanceLabel: "3.9 km",
-      caption: "879 metres of climbing and 3.93 km from Jøkelfjord, with the treeline at 241 m, the steepest band between 400 and 500 and the summit plateau from 871.",
+      startLabel: "674 m",
+      endLabel: "1022 m",
+      distanceLabel: "1.6 km",
+      caption: "352 metres of climbing and 1.62 km from Hunnedalsveien, with the treeline at 803 m, p905 after 1.08 km and the ridge south of Røsehola.",
     },
   },
 };

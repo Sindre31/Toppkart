@@ -249,4 +249,8 @@ NEW_TOURS = {
     "gievdnerassa": ("Gievdnerášša", "Vest-Finnmark"),
     "laslettind": ("Laslettind", "Vest-Finnmark"),
     "vassnestind": ("Vassnestind", "Vest-Finnmark"),
+    # — Sirdal-runden —
+    "hilleknuten": ("Hilleknuten", "Sirdal"),
+    "roseknuten": ("Røseknuten", "Sirdal"),
+    "grubba": ("Grubbå", "Sirdal"),
 }

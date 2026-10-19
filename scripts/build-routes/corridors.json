@@ -12703,5 +12703,179 @@
     "notes": "Fri Flyt: «Hold avstand til det bratte terrenget mot sør og nord.» Brattere parti i skoggrensa mellom 220 og 240 moh, og små partier brattere enn 30 grader mellom 440 og 600 moh."
    }
   ]
+ },
+ "hilleknuten": {
+  "routes": [
+   {
+    "id": "storekvaeven",
+    "name": "Fra Storekvæven",
+    "description": "Fra fv. 450 ved Storekvæven opp langs Bekkene til flata, østover nord for brattbeltet i vestsida og sørover langs den slake stripa til Hilleknuten",
+    "trailhead": {
+     "name": "Storekvæven ved fv. 450",
+     "lat": 58.99667,
+     "lng": 6.93281,
+     "elevation_m": 567.7,
+     "fullName": "Storekvæven ved fv. 450"
+    },
+    "waypoints": [
+     {
+      "name": "opp langs Bekkene",
+      "lat": 58.9915,
+      "lng": 6.933,
+      "elevation_m": 643.5
+     },
+     {
+      "name": "opp langs Bekkene",
+      "lat": 58.9908,
+      "lng": 6.94,
+      "elevation_m": 773.8
+     },
+     {
+      "name": "flata",
+      "lat": 58.989,
+      "lng": 6.947,
+      "elevation_m": 801.6
+     },
+     {
+      "name": "østover nord for brattbeltet",
+      "lat": 58.9884,
+      "lng": 6.96,
+      "elevation_m": 909.4
+     },
+     {
+      "name": "østover nord for brattbeltet",
+      "lat": 58.9892,
+      "lng": 6.965,
+      "elevation_m": 937.2
+     },
+     {
+      "name": "over beltet der det er slakest",
+      "lat": 58.989,
+      "lng": 6.9715,
+      "elevation_m": 1085.7
+     },
+     {
+      "name": "den slake stripa sørover",
+      "lat": 58.9872,
+      "lng": 6.9718,
+      "elevation_m": 1079.5
+     },
+     {
+      "name": "den slake stripa sørover",
+      "lat": 58.985,
+      "lng": 6.9725,
+      "elevation_m": 1099.9
+     },
+     {
+      "name": "ryggen sørover mot toppen",
+      "lat": 58.9825,
+      "lng": 6.97,
+      "elevation_m": 1146.0
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt oppgir 35 grader som bratteste punkt og graderer turen «Moderat». Fri Flyt: «Det anbefales at du utforsker området mer enn hva som står i boka.»"
+   }
+  ]
+ },
+ "roseknuten": {
+  "routes": [
+   {
+    "id": "hunnedalsveien",
+    "name": "Fra Hunnedalsveien via Finndokkje",
+    "description": "Fra parkeringa ved Hunnedalsveien opp den svake ryggen ved Finndokkje til p905, den lille renna sørøst for den og ryggen sør for Røsehola til toppen av Røseknuten",
+    "trailhead": {
+     "name": "Parkeringa ved Hunnedalsveien",
+     "lat": 58.90085,
+     "lng": 6.77803,
+     "elevation_m": 674.0,
+     "fullName": "Parkeringa ved Hunnedalsveien"
+    },
+    "waypoints": [
+     {
+      "name": "ryggen ved Finndokkje",
+      "lat": 58.903,
+      "lng": 6.78,
+      "elevation_m": 781.6
+     },
+     {
+      "name": "ryggen ved Finndokkje",
+      "lat": 58.9051,
+      "lng": 6.7805,
+      "elevation_m": 860.4
+     },
+     {
+      "name": "p905",
+      "lat": 58.9069,
+      "lng": 6.7837,
+      "elevation_m": 904.6
+     },
+     {
+      "name": "renna sørøst for p905",
+      "lat": 58.9061,
+      "lng": 6.786,
+      "elevation_m": 959.8
+     },
+     {
+      "name": "ryggen sør for Røsehola",
+      "lat": 58.9064,
+      "lng": 6.788,
+      "elevation_m": 984.8
+     },
+     {
+      "name": "ryggen sør for Røsehola",
+      "lat": 58.907,
+      "lng": 6.7892,
+      "elevation_m": 993.9
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: «På 990 moh. henger en skavl ut mot Røsehola. Denne knekker mye lenger inn enn du tror, så hold avstand.» Nedkjøringene i Røsehola og Sørrenna har 35 grader som bratteste punkt."
+   }
+  ]
+ },
+ "grubba": {
+  "routes": [
+   {
+    "id": "leitet",
+    "name": "Fra Leitet opp vestflanken",
+    "description": "Fra parkeringa ved Smølåsveien på Fidjeland østover til skaret ved vatnet på 859 moh, og opp den vestvendte flanken til Grubbå",
+    "trailhead": {
+     "name": "Parkeringa ved Smølåsveien",
+     "lat": 58.95235,
+     "lng": 6.94737,
+     "elevation_m": 695.3,
+     "fullName": "Parkeringa ved Smølåsveien"
+    },
+    "waypoints": [
+     {
+      "name": "mot skaret",
+      "lat": 58.951,
+      "lng": 6.953,
+      "elevation_m": 731.1
+     },
+     {
+      "name": "skaret ved vatnet på 859",
+      "lat": 58.9505,
+      "lng": 6.9625,
+      "elevation_m": 856.1
+     },
+     {
+      "name": "den vestvendte flanken",
+      "lat": 58.95,
+      "lng": 6.972,
+      "elevation_m": 991.3
+     },
+     {
+      "name": "den vestvendte flanken",
+      "lat": 58.9495,
+      "lng": 6.979,
+      "elevation_m": 1117.0
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: «turen går i terreng under 30 grader», bratteste punkt 27 grader."
+   }
+  ]
  }
 }

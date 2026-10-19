@@ -14054,5 +14054,199 @@
   "problems": [
    "Fri Flyt oppgir både Ytre Hamnebukta og Jøkelfjord som start; linja følger faktaboksen og Golpeelva. Grustaket er ikke kartlagt, og Wikiloc-sporet kunne ikke leses. Confidence medium."
   ]
+ },
+ "hilleknuten": {
+  "no": {
+   "intro": "665 høydemeter på 4,21 km fra fv. 450 ved Storekvæven: opp langs Bekkene til flata, østover nord for et brattbelte i vestsida og sørover langs en slak stripe til Hilleknuten, 1209 moh. Bratteste bandet er 12,7 grader mellom 600 og 700 moh, og bratteste sammenhengende parti 26,6 grader mellom 1061 og 1081. Fri Flyt: «Toppturen til Hilleknuten byr på en av de lengste nedkjøringene i området.»",
+   "caption": "665 høydemeter og 4,21 km fra Storekvæven, med skoggrensa på 796 moh, flata på 807 og brattbeltet krysset på 1087.",
+   "ascent": [
+    "Start ved fv. 450 ved Storekvæven, 568 moh, nord for Fidjeland. Det er ingen kartlagt parkering her. Fri Flyt: «Parker i Store Kvæven og følg Bekkene opp til det flater ut.» Linja går opp langs Bekkene: bandet fra 600 til 700 moh er det bratteste på turen, 12,7 grader over 418 meter grunn, og skogen slipper ved 796 moh, 1,49 km fra start. Flata når du på 807 moh etter 1,57 km.",
+    "Fri Flyt fortsetter: «Følg myra sørover før du dreier øst opp bakkene.» Linja gjør det ikke. Gjennom hele vestsida av Hilleknuten går et brattbelte nord–sør, og rutet sørover over myra og så østover krysset linja det med 65 meter bakke på 35 grader eller mer. Linja går i stedet østover nord for beltet, 910 moh etter 2,34 km, og krysser det der det er slakest, på 1087 moh etter 3,09 km. Like etter, ved 3,28 km og 1080–1088 moh, går den over 16 meter bakke på 35 grader eller mer, med bratteste celle 41 grader.",
+    "Øst for beltet går linja sørover langs en slak stripe: bandene fra 900 til 1200 moh måler 7,9 til 9,7 grader. Bratteste sammenhengende parti er 26,6 grader mellom 1061 og 1081 moh. Mellom 3,06 og 3,28 km står bakke på 45 grader eller brattere 16 til 24 meter fra linja, og nordøst for den står celler på 58,7 grader 50 meter unna ved 1091 moh. Fri Flyt: «Det lille bygget som ligner på et kinahus står på toppen av Hilleknuten.»",
+    "Det siste stykket opp, mellom 1191 og 1209 moh, står små bergkanter på 45 grader eller brattere 8 til 23 meter fra linja. Toppen er slak i snitt mot nord, nordøst, øst, sørøst og sørvest, 6,3 til 10,6 grader over 500 meter, men østkanten har 31,8 grader 20 til 80 meter ut, og toppen faller brattere mot vest og nordvest, 37,0 og 38,2 grader 260 til 380 meter ut, og 39,7 grader 240 til 300 meter ut mot sør."
+   ],
+   "descent": [
+    "Fri Flyt: «Fra toppen av Hilleknuten kan du kjøre ned flere steder. Hvis du sikter rett på myrene får du en veldig fin nedkjøring.» Den nedkjøringen går over brattbeltet i vestsida; går du ned linja, krysser du det der det er slakest, ved 1087 moh.",
+    "Fri Flyt: «Når du ankommer flatene ved myra anbefales det å gå opp på den lille toppen p1012 før du kjører ned til myra igjen. Avslutt dagen med å gå opp til Kviturdfjellet, da slipper du å gå over flatene og du får en bra nedkjøring tilbake til bilen.» Og: «Det anbefales at du utforsker området mer enn hva som står i boka.»"
+   ],
+   "avalanche": [
+    {
+     "title": "Ruta",
+     "body": "Bratteste sammenhengende parti er 26,6 grader mellom 1061 og 1081 moh, og bratteste bandet 12,7 grader fra 600 til 700. Bakken under linja er 35 grader eller brattere i ett strekk på 16 meter ved 1080–1088 moh, der linja krysser brattbeltet. Fri Flyt oppgir 35 grader som bratteste punkt og graderer turen «Moderat»."
+    },
+    {
+     "title": "Terrenget utenfor",
+     "body": "Brattbeltet i vestsida går nord–sør gjennom hele lia; linja krysser det bare der det er slakest. Sør-, vest- og nordvestsida av toppen er 37,0 til 39,7 grader i de bratteste vinduene."
+    },
+    {
+     "title": "Før du går",
+     "body": "Sjekk dagens skredvarsel for Heiane på varsom.no. Heiane er en A-region og varsles daglig i sesongen. Ta med sender/mottaker, søkestang og spade."
+    }
+   ]
+  },
+  "en": {
+   "intro": "665 metres of climbing over 4.21 km from the Fv 450 at Storekvæven: up along Bekkene to the flat, east north of a steep belt in the west face, and south along a gentle strip to Hilleknuten, 1209 m. The steepest band is 12.7 degrees between 600 and 700 m, and the steepest sustained section 26.6 degrees between 1061 and 1081. Fri Flyt: “The ski tour to Hilleknuten offers one of the longest descents in the area.”",
+   "caption": "665 metres of climbing and 4.21 km from Storekvæven, with the treeline at 796 m, the flat at 807 and the steep belt crossed at 1087.",
+   "ascent": [
+    "Start at the Fv 450 at Storekvæven, 568 m, north of Fidjeland. There is no mapped car park here. Fri Flyt: “Park at Store Kvæven and follow Bekkene up until it flattens out.” The line goes up along Bekkene: the band from 600 to 700 m is the steepest of the tour, 12.7 degrees over 418 metres of ground, and the forest lets go at 796 m, 1.49 km from the start. You reach the flat at 807 m after 1.57 km.",
+    "Fri Flyt goes on: “Follow the bog south before you turn east up the slopes.” The line does not. A steep belt runs north–south through the whole west face of Hilleknuten, and routed south across the bog and then east, the line crossed it on 65 metres of ground at 35 degrees or more. Instead the line goes east north of the belt, 910 m after 2.34 km, and crosses it where it is gentlest, at 1087 m after 3.09 km. Just after, at 3.28 km and 1080–1088 m, it crosses 16 metres of ground at 35 degrees or more, with the steepest cell at 41 degrees.",
+    "East of the belt the line heads south along a gentle strip: the bands from 900 to 1200 m measure 7.9 to 9.7 degrees. The steepest sustained section is 26.6 degrees between 1061 and 1081 m. Between 3.06 and 3.28 km ground of 45 degrees or steeper is 16 to 24 metres from the line, and north-east of it there are cells of 58.7 degrees 50 metres away at 1091 m. Fri Flyt: “The little building that looks like a Chinese house stands on the top of Hilleknuten.”",
+    "On the last stretch up, between 1191 and 1209 m, small rock edges of 45 degrees or steeper are 8 to 23 metres from the line. The summit is gentle on average to the north, north-east, east, south-east and south-west, 6.3 to 10.6 degrees over 500 metres, but the east edge has 31.8 degrees 20 to 80 metres out, and the summit falls more steeply to the west and north-west, 37.0 and 38.2 degrees 260 to 380 metres out, and 39.7 degrees 240 to 300 metres out to the south."
+   ],
+   "descent": [
+    "Fri Flyt: “From the top of Hilleknuten you can ski down in several places. If you aim straight for the bogs you get a very fine descent.” That descent crosses the steep belt in the west face; if you go down the line, you cross it where it is gentlest, at 1087 m.",
+    "Fri Flyt: “When you reach the flats by the bog it is recommended to climb the little top p1012 before skiing down to the bog again. End the day by going up Kviturdfjellet, so you avoid crossing the flats and get a good run back to the car.” And: “It is recommended that you explore the area more than the book describes.”"
+   ],
+   "avalanche": [
+    {
+     "title": "The route",
+     "body": "The steepest sustained section is 26.6 degrees between 1061 and 1081 m, and the steepest band 12.7 degrees from 600 to 700. The ground under the line is 35 degrees or steeper on one stretch of 16 metres at 1080–1088 m, where the line crosses the steep belt. Fri Flyt gives 35 degrees as the steepest point and grades the tour “Moderate”."
+    },
+    {
+     "title": "The terrain around it",
+     "body": "The steep belt in the west face runs north–south through the whole hillside; the line crosses it only where it is gentlest. The south, west and north-west sides of the summit are 37.0 to 39.7 degrees in their steepest windows."
+    },
+    {
+     "title": "Before you go",
+     "body": "Check today's avalanche forecast for Heiane at varsom.no. Heiane is an A region and is forecast daily in season. Bring a transceiver, probe and shovel."
+    }
+   ]
+  },
+  "sources": [
+   "https://www.friflyt.no/topptur/skiturer-sirdal/turbeskrivelse-hilleknuten",
+   "https://ut.no/turforslag/119426/hilleknuten"
+  ],
+  "source": "written against corridors.json, the routed line, flank_probe.py and a 5 m slope grid along the line",
+  "problems": [
+   "Linja følger ikke Fri Flyts «Følg myra sørover før du dreier øst opp bakkene», fordi den rutet slik krysset brattbeltet i vestsida med 65 m bakke på 35 grader eller mer. Ingen kartlagt parkering ved Storekvæven. Confidence medium."
+  ]
+ },
+ "roseknuten": {
+  "no": {
+   "intro": "352 høydemeter på 1,62 km fra Hunnedalsveien: opp den svake ryggen ved Finndokkje til p905, renna sørøst for den og ryggen sør for Røsehola til Røseknuten, 1022 moh. Bratteste bandet er 13,6 grader mellom 600 og 700 moh, og bratteste sammenhengende parti 24,6 grader mellom 838 og 857. Fri Flyt: «Røseknuten kan kjøres fra nesten alle kanter og kombineres lett med en topptur til Store Knuten.»",
+   "caption": "352 høydemeter og 1,62 km fra Hunnedalsveien, med skoggrensa på 803 moh, p905 etter 1,08 km og ryggen sør for Røsehola.",
+   "ascent": [
+    "Start på parkeringa ved Hunnedalsveien, 674 moh. Fri Flyt: «Parker på parkeringsplass ved kraftstasjonen, eller på en større parkering litt lengre nede.» Kraftstasjonen er ikke kartlagt; Gravasstølen-parkeringa ligger 1,2 km vest. Fri Flyt: «Gå opp en svak ryggformasjon ved Finndokje.» Linja går rett nordover på den: bandene fra 700 til 900 moh måler 12,0 og 12,9 grader, og skogen slipper ved 803 moh, 0,59 km fra start. Nederst, mellom 688 og 712 moh, står små bergkanter på 45 grader eller brattere 4 til 19 meter fra linja.",
+    "Bratteste sammenhengende parti er 24,6 grader mellom 838 og 857 moh. P905 når du på 906 moh etter 1,08 km. Fri Flyt: «Gå opp en liten renne sørøst for p905. Fortsett på ryggen til toppunktet.» Linja går renna og ryggen sør for Røsehola, en hylle i vestsida på 949 moh, og holder seg 131 meter fra den.",
+    "Fri Flyt: «På 990 moh. henger en skavl ut mot Røsehola. Denne knekker mye lenger inn enn du tror, så hold avstand.» Linja kommer derfor opp på toppen sørfra, ved 987 moh etter 1,40 km, i stedet for over kanten mot Røsehola. Mellom 952 og 1012 moh står små bergkanter på 45 grader eller brattere 7 til 20 meter fra linja. Bakken under linja er aldri 35 grader eller brattere i 15 meter sammenhengende."
+   ],
+   "descent": [
+    "Fri Flyts nedkjøringer er brattere enn linja. Røsehola: «Veien går ned i en spennende gryteformasjon. Her legger det seg lett fin snø da vinden får dårlig tak.» Sørrenna: «Ei herlig sørvendt fordypning går helt ned til veien.» Begge har 35 grader som bratteste punkt, og Røsehola går rett under skavlen.",
+    "Toppen er nesten flat mot nord og nordøst, 3,1 og 4,3 grader i snitt over 500 meter, men faller bratt mot sør og sørøst: 39,7 grader bare 30 til 90 meter ut mot sør, og 56,7 grader 390 til 450 meter ut mot sørøst."
+   ],
+   "avalanche": [
+    {
+     "title": "Ruta",
+     "body": "Bratteste sammenhengende parti er 24,6 grader mellom 838 og 857 moh, og bratteste bandet 13,6 grader fra 600 til 700. Bakken under linja er ikke 35 grader eller brattere i noe sammenhengende strekk på 15 meter. Fri Flyt oppgir 30 grader som bratteste punkt og graderer turen «Lett»."
+    },
+    {
+     "title": "Terrenget utenfor",
+     "body": "Skavlen på 990 moh henger ut mot Røsehola og knekker langt inn; linja holder seg 131 meter fra hylla og kommer opp sørfra. Sørsida av toppen er 39,7 grader 30 til 90 meter ut."
+    },
+    {
+     "title": "Før du går",
+     "body": "Sjekk dagens skredvarsel for Heiane på varsom.no. Heiane er en A-region og varsles daglig i sesongen. Ta med sender/mottaker, søkestang og spade."
+    }
+   ]
+  },
+  "en": {
+   "intro": "352 metres of climbing over 1.62 km from Hunnedalsveien: up the faint ridge at Finndokkje to p905, the gully south-east of it and the ridge south of Røsehola to Røseknuten, 1022 m. The steepest band is 13.6 degrees between 600 and 700 m, and the steepest sustained section 24.6 degrees between 838 and 857. Fri Flyt: “Røseknuten can be skied from almost every side and is easily combined with a ski tour to Store Knuten.”",
+   "caption": "352 metres of climbing and 1.62 km from Hunnedalsveien, with the treeline at 803 m, p905 after 1.08 km and the ridge south of Røsehola.",
+   "ascent": [
+    "Start at the car park on Hunnedalsveien, 674 m. Fri Flyt: “Park at the car park by the power station, or at a larger car park a little further down.” The power station is not mapped; the Gravasstølen car park is 1.2 km west. Fri Flyt: “Go up a faint ridge at Finndokje.” The line goes straight north on it: the bands from 700 to 900 m measure 12.0 and 12.9 degrees, and the forest lets go at 803 m, 0.59 km from the start. At the bottom, between 688 and 712 m, small rock edges of 45 degrees or steeper are 4 to 19 metres from the line.",
+    "The steepest sustained section is 24.6 degrees between 838 and 857 m. You reach p905 at 906 m after 1.08 km. Fri Flyt: “Go up a small gully south-east of p905. Continue on the ridge to the top.” The line takes the gully and the ridge south of Røsehola, a shelf in the west face at 949 m, and keeps 131 metres from it.",
+    "Fri Flyt: “At 990 m a cornice hangs out over Røsehola. It breaks much further in than you think, so keep your distance.” So the line comes onto the top from the south, at 987 m after 1.40 km, instead of over the edge above Røsehola. Between 952 and 1012 m small rock edges of 45 degrees or steeper are 7 to 20 metres from the line. The ground under the line is never 35 degrees or steeper for 15 metres in a row."
+   ],
+   "descent": [
+    "Fri Flyt's descents are steeper than the line. Røsehola: “The way goes down into an exciting bowl. Fine snow settles easily here because the wind gets little grip.” Sørrenna: “A lovely south-facing hollow runs all the way down to the road.” Both have 35 degrees as the steepest point, and Røsehola runs straight under the cornice.",
+    "The summit is almost flat to the north and north-east, 3.1 and 4.3 degrees on average over 500 metres, but falls steeply to the south and south-east: 39.7 degrees just 30 to 90 metres out to the south, and 56.7 degrees 390 to 450 metres out to the south-east."
+   ],
+   "avalanche": [
+    {
+     "title": "The route",
+     "body": "The steepest sustained section is 24.6 degrees between 838 and 857 m, and the steepest band 13.6 degrees from 600 to 700. The ground under the line is not 35 degrees or steeper for any continuous stretch of 15 metres. Fri Flyt gives 30 degrees as the steepest point and grades the tour “Easy”."
+    },
+    {
+     "title": "The terrain around it",
+     "body": "The cornice at 990 m hangs out over Røsehola and breaks far in; the line keeps 131 metres from the shelf and comes up from the south. The south side of the summit is 39.7 degrees 30 to 90 metres out."
+    },
+    {
+     "title": "Before you go",
+     "body": "Check today's avalanche forecast for Heiane at varsom.no. Heiane is an A region and is forecast daily in season. Bring a transceiver, probe and shovel."
+    }
+   ]
+  },
+  "sources": [
+   "https://www.friflyt.no/topptur/skiturer-sirdal/turbeskrivelse-roeseknuten",
+   "https://www.visitnorway.no/reisemal/sorlandet/listings-lister/topptur-til-r%C3%B8seknuten/20917/"
+  ],
+  "source": "written against corridors.json, the routed line, flank_probe.py and a 5 m slope grid along the line",
+  "problems": [
+   "Fri Flyt oppgir 475 høydemeter; linja fra Hunnedalsveien har 352, og kraftstasjonen Fri Flyt nevner er ikke kartlagt. Confidence medium."
+  ]
+ },
+ "grubba": {
+  "no": {
+   "intro": "502 høydemeter på 2,55 km fra Smølåsveien på Fidjeland: østover til skaret ved vatnet på 859 moh og opp den vestvendte flanken til Grubbå, 1184 moh. Bratteste bandet er 17,0 grader mellom 900 og 1000 moh, og bratteste sammenhengende parti 23,1 grader mellom 717 og 732. Fri Flyt: «Toppturen til Grubbå starter ved Leitet, og turen går i terreng under 30 grader.»",
+   "caption": "502 høydemeter og 2,55 km fra Fidjeland, med skoggrensa på 856 moh, skaret på 856 og bratteste bandet mellom 900 og 1000.",
+   "ascent": [
+    "Start på parkeringa ved Smølåsveien på Fidjeland, 695 moh. Fri Flyt: «Kjør inn ved Leitet og parker i enden av veien.» Smølåsveien ender 0,2 km lenger sør. Fri Flyt: «Gå slik at du kommer inn i skaret mellom p893 og vannet på 850 moh. Det ligger ofte skiløype denne veien.» Linja krysser den kartlagte skiløypa etter 0,25 km og går østover; bratteste sammenhengende parti er 23,1 grader mellom 717 og 732 moh, nederst.",
+    "Bandene fra 700 til 900 moh måler 10,6 og 9,5 grader, og skogen slipper ved 856 moh, 1,0 km fra start. Skaret når du på 856 moh etter 1,00 km; vatnet, på 859 moh i kartet, ligger 24 meter fra linja ved 1,09 km. Hold deg på land.",
+    "Fri Flyt: «Ta av opp den vestvendte flanken og følg til topps.» Bandet fra 900 til 1000 moh er det bratteste, 17,0 grader over 316 meter grunn, og 1000 til 1100 måler 14,9. Mellom 932 og 1036 moh står små bergkanter på 45 grader eller brattere 9 til 23 meter fra linja. Bakken under linja er aldri 35 grader eller brattere i 15 meter sammenhengende. Det siste bandet, 1100 til 1200, er 470 meter grunn på 9,9 grader opp til toppen. Ut.no skriver om varden: «Det er bygget varde også på det høyeste punktet (1184 moh) litt lenger nordvest (det er vel selve Grubbå).»"
+   ],
+   "descent": [
+    "Fri Flyt: «Kjør ned flanken og hjem samme vei som du kom, eller velg en mer dirkete rute ned mellom ryggen og den nordlige bekkedalen. På slutten får du litt artig skogskjøring før du svinger av til bilen.»",
+    "Toppen er slak til alle kanter, 3,0 til 14,5 grader i snitt over 500 meter. Bratteste vindu er 30,6 grader 20 til 80 meter ut mot sørøst."
+   ],
+   "avalanche": [
+    {
+     "title": "Ruta",
+     "body": "Bratteste sammenhengende parti er 23,1 grader mellom 717 og 732 moh, og bratteste bandet 17,0 grader fra 900 til 1000. Bakken under linja er ikke 35 grader eller brattere i noe sammenhengende strekk på 15 meter. Fri Flyt oppgir 27 grader som bratteste punkt og graderer turen «Lett»."
+    },
+    {
+     "title": "Terrenget utenfor",
+     "body": "Små bergkanter langs flanken, 9 til 23 meter fra linja mellom 932 og 1036 moh. Vatnet i skaret ligger 24 meter fra linja; isen kan være svak."
+    },
+    {
+     "title": "Før du går",
+     "body": "Sjekk dagens skredvarsel for Heiane på varsom.no. Heiane er en A-region og varsles daglig i sesongen. Ta med sender/mottaker, søkestang og spade."
+    }
+   ]
+  },
+  "en": {
+   "intro": "502 metres of climbing over 2.55 km from Smølåsveien at Fidjeland: east to the col by the lake at 859 m and up the west-facing flank to Grubbå, 1184 m. The steepest band is 17.0 degrees between 900 and 1000 m, and the steepest sustained section 23.1 degrees between 717 and 732. Fri Flyt: “The ski tour to Grubbå starts at Leitet, and the tour goes in terrain under 30 degrees.”",
+   "caption": "502 metres of climbing and 2.55 km from Fidjeland, with the treeline at 856 m, the col at 856 and the steepest band between 900 and 1000.",
+   "ascent": [
+    "Start at the car park on Smølåsveien at Fidjeland, 695 m. Fri Flyt: “Drive in at Leitet and park at the end of the road.” Smølåsveien ends 0.2 km further south. Fri Flyt: “Go so that you come into the col between p893 and the lake at 850 m. There is often a ski trail this way.” The line crosses the mapped ski trail after 0.25 km and heads east; the steepest sustained section is 23.1 degrees between 717 and 732 m, at the bottom.",
+    "The bands from 700 to 900 m measure 10.6 and 9.5 degrees, and the forest lets go at 856 m, 1.0 km from the start. You reach the col at 856 m after 1.00 km; the lake, at 859 m on the map, is 24 metres from the line at 1.09 km. Stay on land.",
+    "Fri Flyt: “Turn up the west-facing flank and follow it to the top.” The band from 900 to 1000 m is the steepest, 17.0 degrees over 316 metres of ground, and 1000 to 1100 measures 14.9. Between 932 and 1036 m small rock edges of 45 degrees or steeper are 9 to 23 metres from the line. The ground under the line is never 35 degrees or steeper for 15 metres in a row. The last band, 1100 to 1200, is 470 metres of ground at 9.9 degrees up to the top. Ut.no on the cairn: “A cairn has also been built on the highest point (1184 m) a little further north-west (that is probably Grubbå itself).”"
+   ],
+   "descent": [
+    "Fri Flyt: “Ski down the flank and home the way you came, or choose a more direct line down between the ridge and the northern stream valley. At the end you get some fun forest skiing before you turn off to the car.”",
+    "The summit is gentle on every side, 3.0 to 14.5 degrees on average over 500 metres. The steepest window is 30.6 degrees 20 to 80 metres out to the south-east."
+   ],
+   "avalanche": [
+    {
+     "title": "The route",
+     "body": "The steepest sustained section is 23.1 degrees between 717 and 732 m, and the steepest band 17.0 degrees from 900 to 1000. The ground under the line is not 35 degrees or steeper for any continuous stretch of 15 metres. Fri Flyt gives 27 degrees as the steepest point and grades the tour “Easy”."
+    },
+    {
+     "title": "The terrain around it",
+     "body": "Small rock edges along the flank, 9 to 23 metres from the line between 932 and 1036 m. The lake in the col is 24 metres from the line; the ice can be weak."
+    },
+    {
+     "title": "Before you go",
+     "body": "Check today's avalanche forecast for Heiane at varsom.no. Heiane is an A region and is forecast daily in season. Bring a transceiver, probe and shovel."
+    }
+   ]
+  },
+  "sources": [
+   "https://www.friflyt.no/topptur/skiturer-sirdal/turbeskrivelse-grubbaa",
+   "https://ut.no/turforslag/1110291410/grubba-fra-hnedalen"
+  ],
+  "source": "written against corridors.json, the routed line, flank_probe.py and a 5 m slope grid along the line",
+  "problems": [
+   "Registerets navnepunkt for Grubbå står 0,5 km øst for toppen; toppen er festet med SUMMIT_SEED. Ut.no går fra Hønedalen. Confidence medium."
+  ]
  }
 }

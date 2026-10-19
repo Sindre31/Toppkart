@@ -3278,5 +3278,53 @@
   "aspect": "N",
   "distanceKm": 3.9,
   "cumdistM": 3929
+ },
+ "grubba": {
+  "verticalM": 500,
+  "gainM": 502,
+  "distanceM": 2545,
+  "startM": 695,
+  "summitM": 1184,
+  "duration": "2–4 t",
+  "steepestBandAngle": 17.0,
+  "steepestBandFrom": 900,
+  "steepestBandTo": 1000,
+  "maxStepAngle": 23.1,
+  "grade": 1,
+  "aspect": "V",
+  "distanceKm": 2.5,
+  "cumdistM": 2548
+ },
+ "hilleknuten": {
+  "verticalM": 660,
+  "gainM": 665,
+  "distanceM": 4209,
+  "startM": 568,
+  "summitM": 1209,
+  "duration": "3–5 t",
+  "steepestBandAngle": 12.7,
+  "steepestBandFrom": 600,
+  "steepestBandTo": 700,
+  "maxStepAngle": 26.6,
+  "grade": 1,
+  "aspect": "NV",
+  "distanceKm": 4.2,
+  "cumdistM": 4207
+ },
+ "roseknuten": {
+  "verticalM": 350,
+  "gainM": 352,
+  "distanceM": 1614,
+  "startM": 674,
+  "summitM": 1022,
+  "duration": "1–3 t",
+  "steepestBandAngle": 13.6,
+  "steepestBandFrom": 600,
+  "steepestBandTo": 700,
+  "maxStepAngle": 24.6,
+  "grade": 1,
+  "aspect": "V",
+  "distanceKm": 1.6,
+  "cumdistM": 1616
  }
 }

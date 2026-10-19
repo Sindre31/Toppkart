@@ -2253,5 +2253,38 @@
   "aspect": "Ø",
   "season": "mai–jun",
   "hasGuide": true
+ },
+ "hilleknuten": {
+  "name": "Hilleknuten",
+  "region": "Sirdal",
+  "summitM": 1209,
+  "verticalM": 660,
+  "duration": "3–5 t",
+  "grade": 2,
+  "aspect": "V",
+  "season": "des–apr",
+  "hasGuide": true
+ },
+ "grubba": {
+  "name": "Grubbå",
+  "region": "Sirdal",
+  "summitM": 1184,
+  "verticalM": 500,
+  "duration": "2–4 t",
+  "grade": 1,
+  "aspect": "V",
+  "season": "des–apr",
+  "hasGuide": true
+ },
+ "roseknuten": {
+  "name": "Røseknuten",
+  "region": "Sirdal",
+  "summitM": 1022,
+  "verticalM": 350,
+  "duration": "1–3 t",
+  "grade": 2,
+  "aspect": "SV",
+  "season": "des–apr",
+  "hasGuide": true
  }
 }

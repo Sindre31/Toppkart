@@ -6979,6 +6979,50 @@ routes, `check_ground` clean on all four, `check_guides` and `check_bands` clean
 `check_gain` and `check_steepness` with nothing to look at, and `npm run
 typecheck`, `lint`, `test` and `build`.
 
+## The Sirdal round
+
+Three tours from Fri Flyt's *Toppturer i Sirdal*. 208 tours, 246 routes. The app
+had nothing in Sirdal and only Kjerag in Rogaland. All three summits answer to
+**Heiane** (3037), an A-region, and all three start by the Fv 450, whose winter
+closure is the stretch between Suleskard and Brokke, east of every start.
+
+| tour | start | summit | gain | km | steepest 100 m band | steepest 30 m | grade |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Hilleknuten | 568 | 1209 | 665 | 4.21 | 12.7° | 26.6° | 2 |
+| Grubbå | 695 | 1184 | 502 | 2.55 | 17.0° | 23.1° | 1 |
+| Røseknuten | 674 | 1022 | 352 | 1.62 | 13.6° | 24.6° | 2 |
+
+### Which tours, and which were left
+
+Fri Flyt's Sirdal book has twelve tours the app did not carry, most of them
+250–500 m of climbing. Lyseknuden starts at Lortabu on Lysevegen, which is closed
+in winter; Bjønnskjeggheia is 250 m with 40° in the line; Midstølknuten is a
+50° couloir; Storeknuten lies in Gjesdal and had no second source. The three
+built are the longest, and each has a second source that confirms the top — but
+those are summer routes from other starts, so all three are `confidence: medium`.
+
+### Two lines that leave the text
+
+**Hilleknuten.** Fri Flyt says to follow the bog south and then turn east up the
+slopes. A steep belt runs north–south through the whole west face, and routed
+that way the line crossed it on 65 m of ground at 35° or more, with 48° cells.
+The line goes east north of the belt, crosses it where it is gentlest at
+1087 m, and goes south along a gentle strip to the top; one 16 m stretch at
+35°+ is left, and the guide says where.
+
+**Røseknuten.** Routed up Fri Flyt's gully south-east of p905, the line went
+through Røsehola — a shelf in the west face at 949 m — and climbed out over the
+rim where Fri Flyt warns of the cornice at 990 m that «knekker mye lenger inn enn
+du tror». It now takes the ridge south of Røsehola, 131 m from it, and comes onto
+the top from the south; no 15 m stretch under the line is 35° or more.
+
+### Grubbå's top
+
+The register puts Grubbå on the plateau at 1137 m. Fri Flyt gives 1184, and
+ut.no's trip names «Søndre Grubbå» at 1172 with the highest cairn «litt lenger
+nordvest». DTM1 has the 1184 top 0.5 km west of the register point, and OSM has
+it as a peak; the summit is seeded there (`SUMMIT_SEED`).
+
 ## Network
 
 Everything is public and unauthenticated:

@@ -30,6 +30,148 @@ export const GRADE_LABELS: Record<Grade, string> = {
 };
 
 export const GUIDES: Record<string, TourGuide> = {
+  gievdnerassa: {
+    slug: "gievdnerassa",
+    intro:
+      "879 høydemeter på 6,33 km fra skolen i Øksfjordbotn: sommervegen østover, opp lia øst for Skárpavággi og over det store topplatået til Gievdnerášša, 898 moh. Bratteste bandet er 17,3 grader mellom 200 og 300 moh, og bratteste sammenhengende parti 29,1 grader mellom 266 og 284. Fri Flyt skriver navnet Gievdnerassa: «Gievdnerassa er et rundt og stort platåfjell med storslagen utsikt i alle retninger og særlig mot Finnmarksalpene i nord og vest».",
+    ascent: [
+      "Start på parkeringa ved skolen i Øksfjordbotn, 58 moh, ved busstoppet. Fri Flyt starter «ved den gamle leirskolen», og Peakbook: «Parkerte ved Gammelveien nær Øksfjordbotn skole (e-verket).» Linja følger Gammelveien og sommervegen Geassegeaidnu østover, og stien videre mot Rivarbukteidet. Vegen er merket skuterløype om vinteren, Tappeluftløypa, og Peakbook skriver: «Stor scooter-trafikk hadde inntatt Kjeldalen i påsken.» Det er nesten flatt: bandene under 200 moh er 1224 og 1531 meter grunn på 2,1 og 3,8 grader. Linja går sør for vatnet på 111 moh som Nordelva renner ut av, 103 meter fra det, og øst for tjernet på 123 moh, 72 meter fra det, før den tar opp i lia øst for et ulendt steg.",
+      "Linja går så nordover den linja Peakbook gikk: «Forlot sommerveien ved noen hytter i Rivarbukteidet og valgte oppgangen øst for Skarpavaggi.» Den passerer 168 meter øst for navnepunktet Skárpavággi ved 513 moh. Fri Flyts «rygg som går nordøstover» fra «den gamle leirskolen» går rett opp over Nordelva-juvet og bratte heng fra skolen; linja møter først den ryggen høyere oppe. Bandet fra 200 til 300 moh er det bratteste, 17,3 grader over 315 meter grunn, og bratteste sammenhengende parti er 29,1 grader mellom 266 og 284 moh. Skogen slipper ved 215 moh, 2,8 km fra start. Mellom 181 og 647 moh står små bergsteg på 45 grader eller brattere 3 til 15 meter fra linja, men bakken under linja er aldri 35 grader eller brattere i 15 meter sammenhengende.",
+      "Bandene fra 300 til 700 moh måler 11,4 til 14,1 grader. Fri Flyt: «Her går du opp en jevn fin bakke, før det blir slakere mot toppen av Gievdnerassa.» Over 700 moh slakner det: 6,6 og 7,8 grader i de to øverste bandene, over 844 og 713 meter grunn. Fri Flyt: «Topplåtået er som å komme på en bre med overraskende godt føre selv når det blåser surt ned i dalen fra sørøst.» Toppen er slak til alle kanter, 3,6 til 13,4 grader i snitt over 500 meter.",
+    ],
+    descent: [
+      "Fri Flyt anbefaler samme rute ned: «Nedkjøringen mot sør der det er enklest å komme opp, gir et langt sammenhengende nedrenn.» Nederst går linja over i sommervegen igjen, og det er nesten flatt de siste kilometerne tilbake til skolen.",
+      "Fri Flyt: «I dårlig sikt er det lett å gli ned i små og store heng brattere enn 30 grader.» og «Turen gir litt utfordrende mikroterreng å orientere seg i på vei opp og ned, særlig hvis sikten er begrenset og sporene blåser igjen.» Platået er stort og likt i alle retninger; ha med deg kart og kompass eller GPS.",
+    ],
+    avalanche: [
+      {
+        title: "Ruta",
+        body: "Bratteste sammenhengende parti er 29,1 grader mellom 266 og 284 moh, og bratteste bandet 17,3 grader fra 200 til 300. Bakken under linja er ikke 35 grader eller brattere i noe sammenhengende strekk på 15 meter. Fri Flyt setter turen til KAST 1 – Enkelt og skriver at hele ruta kan gås i terreng under 30 grader.",
+      },
+      {
+        title: "Terrenget utenfor",
+        body: "Det står små bergsteg langs lia, 3 til 15 meter fra linja mellom 181 og 647 moh. Fri Flyt: «I dårlig sikt er det lett å gli ned i små og store heng brattere enn 30 grader.» Platået er stort og flatt, og sporene blåser fort igjen.",
+      },
+      {
+        title: "Før du går",
+        body: "Sjekk dagens skredvarsel for Vest-Finnmark på varsom.no. Vest-Finnmark er en A-region og varsles daglig i sesongen. Ta med sender/mottaker, søkestang og spade.",
+      },
+    ],
+    elevationProfile: {
+      path: "M0,200 L31,200 L56,198 L82,194 L107,192 L129,186 L150,188 L171,185 L188,182 L207,184 L227,185 L248,175 L265,166 L282,151 L303,138 L320,131 L345,121 L367,107 L393,95 L406,87 L431,75 L453,60 L478,50 L504,45 L529,40 L549,35 L572,24 L593,18 L600,18",
+      startLabel: "58 moh",
+      endLabel: "898 moh",
+      distanceLabel: "6,3 km",
+      caption: "879 høydemeter og 6,33 km fra Øksfjordbotn, med skoggrensa på 215 moh og bratteste bandet mellom 200 og 300.",
+    },
+  },
+  "stortinden-langfjord": {
+    slug: "stortinden-langfjord",
+    intro:
+      "1007 høydemeter på 7,40 km fra kafeen i Langfjordbotn: rett nordover gjennom bjørkeskogen, opp den breie ryggen over forhøyningen på 839 og 920-toppen, og langs toppryggen til Stortinden, 936 moh. Ryggen gir tilbake 110 meter på vegen. Bratteste bandet er 19,6 grader mellom 100 og 200 moh, og bratteste sammenhengende parti 26,3 grader mellom 552 og 577. Fri Flyt: «Toppturklassikeren Stortinden er et snøhøl, som byr på variert kjøring og mange muligheter for topptur og randonee.»",
+    ascent: [
+      "Start ved kafeen ved krysset der vegen mot Øksfjord tar av fra E6 i Langfjordbotn, 39 moh. Kafeen er bare åpen om sommeren, og det er ingen kartlagt parkering her. Fri Flyt: «Start ved den lokale kafeen hundre meter nordøst der E-6 og veien mot Øksjord danner et kryss. Gå rett nordover gjennom grov bjørkeskog.» De første 713 metrene stiger 5,7 grader i snitt, og så kommer lia: 19,6 grader fra 100 til 200 moh, det bratteste bandet på turen. Skogen slipper ved 301 moh, 1,3 km fra start. Fri Flyt: «Ved startstedet i Langfjordbotn er det normalt at det ligger rundt halvannen meter snø helt ned mot fjordnivå.»",
+      "Fri Flyt: «Over tregrensen er fjellet en brei ryggformasjon. Følg ryggen til toppen, dersom du har tenkt deg helt opp.» Bandene fra 200 til 600 moh måler 16,8 til 17,9 grader. Bratteste sammenhengende parti er 26,3 grader mellom 552 og 577 moh, og like over, ved 596–609 moh, krysser linja et bratt belte som går tvers over ryggen: 26 meter bakke på 35 grader eller mer, med bratteste celle 42 grader. Mellom 555 og 617 moh står bakke på 45 grader eller brattere 18 til 29 meter fra linja. Over beltet holder linja seg øst for den bratte vestkanten opp til forhøyningen på 839, som du når etter 3,14 km.",
+      "Fri Flyt: «De fleste nøyer seg med å gå opp til toppryggen for å nyte skikjøringen derfra i stedet for å gå helt til toppen.» Videre nordover er ryggen smalere. Ved 880–888 moh, 4,07 km fra start, krysser linja et kort bergsteg: 13 meter bakke på 35 grader eller mer, med bratteste celle 56 grader. Over steget går linja på en smal rygg der østkanten står 13 til 27 meter fra linja ved 891–892 moh og faller bratt mot gryta; øst for ryggen står celler på 66,5 og 67,8 grader 59 og 45 meter unna. Fri Flyt skriver at det kan komme «store mengder snø på nordvest», og da er østkanten leside og kan ha skavl. Hold deg minst 20 meter vest for kanten. 920-toppen når du på 916 moh etter 4,92 km. Fri Flyt: «Fortsetter du videre mot toppen på 920 moh, kan du slippe deg 500 høydemeter ned i en østvendt gryte mot Øvre Møllevatn.» Det er en nedkjøring, ikke linja.",
+      "Fra 920-toppen går linja langs toppryggen. Den er slak, men går opp og ned: ned til 866 moh etter 5,62 km, opp over 918-toppen etter 6,47 km, ned til 889 moh etter 7,06 km og 47 høydemeter opp de siste 346 meterne til Stortinden. Fra 920-toppen til toppen gir linja tilbake 86 høydemeter. Toppen er slak mot nord, vest og nordvest, 3,3 til 12,5 grader i snitt over 500 meter, og faller mot sørøst og sør: 52,1 grader 140 til 200 meter ut mot sørøst og 44,1 grader 260 til 320 meter ut mot sør.",
+    ],
+    descent: [
+      "Fri Flyt: «Den normale nedkjøringen følger ruta til oppstigningen og byr på bra kjøring fra den første toppen på 839 meter og ned til havet. Skogskjøringen gir ofte dyp og fin løssnø. Kjøringen blir brattere hvis du trekker østover i skogen.» Går du helt til toppen, må du tilbake langs toppryggen, gjennom dumpene og over 920-toppen, før den nedkjøringen begynner.",
+      "Fri Flyts alternativer er brattere. Gryta mot Øvre Møllevatn har «flere bratte nedkjøringer som er svært eksponerte», og flankene mot Russelvdalen «bør vurderes ovenfra og kan by på 500 høydemeter med bratt og vurderingsmessig krevende storfjellskjøring».",
+    ],
+    avalanche: [
+      {
+        title: "Ruta",
+        body: "Bratteste sammenhengende parti er 26,3 grader mellom 552 og 577 moh, og bratteste bandet 19,6 grader fra 100 til 200. Bakken under linja er 35 grader eller brattere i to korte strekk: 26 meter ved 596–609 moh og 13 meter ved 880–888 moh, et bergsteg på ryggen. Fri Flyt setter turen til KAST 3 – Komplekst og skriver: «Krevende skredvurdering vest og sør for toppryggen».",
+      },
+      {
+        title: "Terrenget utenfor",
+        body: "Vestsida av ryggen er bratt fra 555 moh og opp. Ved 880–892 moh er ryggen smal, og østkanten står 13 til 27 meter fra linja og kan ha skavl; hold deg minst 20 meter vest for den. Øst for 920-toppen ligger gryta mot Øvre Møllevatn, og toppen faller 44,1 til 52,1 grader mot sør og sørøst. Hold deg på ryggen.",
+      },
+      {
+        title: "Før du går",
+        body: "Sjekk dagens skredvarsel for Vest-Finnmark på varsom.no. Vest-Finnmark er en A-region og varsles daglig i sesongen. Ta med sender/mottaker, søkestang og spade.",
+      },
+    ],
+    elevationProfile: {
+      path: "M0,200 L25,196 L50,191 L69,176 L93,156 L113,142 L127,130 L145,114 L166,100 L182,87 L204,73 L216,65 L232,52 L251,41 L273,40 L291,41 L313,36 L331,28 L357,28 L375,27 L397,22 L422,28 L441,29 L466,32 L488,29 L516,24 L535,24 L561,27 L586,27 L600,18",
+      startLabel: "39 moh",
+      endLabel: "936 moh",
+      distanceLabel: "7,4 km",
+      caption: "1007 høydemeter og 7,40 km fra Langfjordbotn, med skoggrensa på 301 moh, 839 etter 3,14 km og 920-toppen etter 4,92 km.",
+    },
+  },
+  laslettind: {
+    slug: "laslettind",
+    intro:
+      "665 høydemeter på 2,97 km fra parkeringa ved Jøkelfjordeidet: vestover over bekken og opp den breie østryggen til varden, og videre til toppen av Laslettind, 822 moh. Bratteste bandet er 19,6 grader mellom 300 og 400 moh, og bratteste sammenhengende parti 22,1 grader mellom 377 og 398. Fri Flyt: «Laslettind har lang sesong og mange muligheter for fine toppturer og skiopplevelser.»",
+    ascent: [
+      "Start på parkeringa ved Jøkelfjordveien, 163 moh, der ut.no-turen starter. Ut.no: «Se etter parkeringsplass på venstre side av veien etter ca. 2 km. Her finner du startpunktet for turen med skilt. Følg stien. Helt i starten av turen krysser du en bekk.» Fri Flyt: «Start fra den vestligste parkeringsplassen ved Jøkelfjordeidet og gå vestover.» Skogen slipper ved 180 moh, 0,27 km fra start, etter Kartverkets terrengklasser; Fri Flyt skriver om Kvænangen at «Skoggrensa ligger på rundt 350 moh».",
+      "Ut.no: «Etter dette går du opp langs ryggen på Laslettind. Hold deg til høyre for vardene.» Fri Flyt: «Ruta opp Laslettind går opp en bred rygg som får snø tidlig og holder på den lenge.» Bandene fra 200 til 400 moh måler 10,3 og 19,6 grader; 300 til 400 er det bratteste, med bratteste sammenhengende parti 22,1 grader mellom 377 og 398 moh. Over det holder ryggen 14,5 til 17,8 grader opp til 800 moh. Bakken under linja er aldri 35 grader eller brattere i 15 meter sammenhengende.",
+      "Varden når du på 808 moh etter 2,66 km; Kartverket og ut.no setter navnet Laslettind der. Toppen ligger 0,31 km lenger nordvest, på 822 moh, og det er den Fri Flyts GPS-punkt viser; bandet fra 800 til 900 moh er 314 meter grunn på 2,7 grader. Sør, sørvest og vest for toppen faller fjellet bratt, 29,1 til 31,3 grader i snitt over 500 meter, med 43,1 grader 250 til 310 meter ut mot sørvest, og bakke på 40 grader eller brattere står 41 meter vest-sørvest for toppunktet. Mot nordvest er det nesten flatt, 2,5 grader, mot Olderbakkfjellet; Fri Flyt om den turen: «Skavler på toppen».",
+    ],
+    descent: [
+      "Fri Flyt anbefaler samme rute ned. Fri Flyt om Kvænangen: «Vi kjørte store svinger ned den lange åpne østsiden av Laslettind og ned i skogen under.» Fri Flyt: «Himmelretningen gir ofte godt føre pga leside for vinden fra vest og nord vest.»",
+      "Fri Flyt: «Laslettind er omkranset av stup og bratt renneterreng sør og nord for toppen og ryggen.» Sørvest for linja står celler på 51,5 og 46,9 grader 45 og 57 meter unna ved 650 og 698 moh. Hold deg på ryggen på vei ned.",
+    ],
+    avalanche: [
+      {
+        title: "Ruta",
+        body: "Bratteste sammenhengende parti er 22,1 grader mellom 377 og 398 moh, og bratteste bandet 19,6 grader fra 300 til 400. Bakken under linja er ikke 35 grader eller brattere i noe sammenhengende strekk på 15 meter, og nærmeste bakke på 45 grader står 33 meter fra linja, ved 686 moh. Fri Flyt setter turen til KAST 1 – Enkelt, med bratteste punkt under 25 grader.",
+      },
+      {
+        title: "Terrenget utenfor",
+        body: "Stup og bratt renneterreng ligger både nord og sør for ryggen og toppen. Sør-, sørvest- og vestsida av toppen er 29,1 til 31,3 grader i snitt, og bakke på 40 grader står 41 meter fra toppunktet. Fri Flyt advarer om skavler på Olderbakkfjellet, nordvest for toppen.",
+      },
+      {
+        title: "Før du går",
+        body: "Sjekk dagens skredvarsel for Vest-Finnmark på varsom.no. Vest-Finnmark er en A-region og varsles daglig i sesongen. Fri Flyt: «Bor du i Finnmark og skal gå topptur før jul er hodelykt greit å ha.» Ta med sender/mottaker, søkestang og spade.",
+      },
+    ],
+    elevationProfile: {
+      path: "M0,199 L18,200 L36,198 L64,192 L82,187 L100,184 L120,179 L145,172 L164,166 L182,162 L200,156 L215,149 L227,144 L245,134 L264,125 L282,117 L300,113 L318,107 L339,98 L355,92 L375,83 L400,72 L418,65 L436,58 L455,52 L482,40 L500,33 L518,27 L542,22 L564,22 L591,19 L600,18",
+      startLabel: "163 moh",
+      endLabel: "822 moh",
+      distanceLabel: "3,0 km",
+      caption: "665 høydemeter og 2,97 km fra Jøkelfjordeidet, med skoggrensa på 180 moh, bratteste bandet mellom 300 og 400 og varden på 808.",
+    },
+  },
+  vassnestind: {
+    slug: "vassnestind",
+    intro:
+      "879 høydemeter på 3,93 km fra fjorden i Jøkelfjord: sørover gjennom glissen skog vest for Golpeelva, opp den breie ryggen og over topplatået til varden på Vassnestind, 896 moh. Bratteste bandet er 19,2 grader mellom 400 og 500 moh, og bratteste sammenhengende parti 26,0 grader mellom 523 og 545. Fri Flyt: «Vassnestind er en fascinerende og lite besøkt topp bortenfor lekegrinda Jøkelfjordeidet.»",
+    ascent: [
+      "Start på parkeringa ved Hamnebuktveien i Jøkelfjord, 22 moh, vest for Golpeelva; busstoppet ligger på andre sida av elva. Fri Flyt oppgir to startsteder. Teksten sier «Fra Ytre Hamnebukta, der veien langs sørsiden av Jøkelfjorden stopper», men faktaboksen sier «Startsted/parkering: Jøkelfjord. Parkering i grustak på sørsiden av Fv.365», og ruta går «langs vestsiden av Golpeelva», som renner ut i Jøkelfjord. Linja starter derfor her; Ytre Hamnebukta ligger 2,9 km lenger vest-sørvest, under en bratt li. Fri Flyts «Følg denne østover til toppen av Vassnestind» passer bare på det siste stykket: linja går rett sørover og dreier mot øst-sørøst den siste halve kilometeren.",
+      "Fri Flyt: «Første delen av ruta opp gjennom glissen skog går langs vestsiden av Golpeelva.» Elva renner 18 til 149 meter øst for linja de første 0,74 km. Nederst går den i et gjel med bratte sider, åpent vann og snøbruer; linja holder seg på vestsida av gjelet, og du skal ikke ned i det. Fri Flyt: «I skoggrensen mellom 220-240 moh. er det et litt brattere parti så her anbefales å lese terrenget litt nøye for å legge et hensiktsmessig spor.» Skogen slipper ved 241 moh, 0,92 km fra start, og bandet fra 200 til 300 moh måler 17,4 grader.",
+      "Fri Flyt: «Vel over er det småkupert videre oppover. Mellom 440-600 moh. finnes små partier som er litt brattere enn 30 grader. Bruk og les terrengformasjoner.» Bandet fra 400 til 500 moh er det bratteste, 19,2 grader over 281 meter grunn. Ved 440–448 og 471–479 moh krysser linja to korte strekk, 15 og 16 meter, med bakke på 35 grader eller mer, og mellom 457 og 493 moh står bakke på 45 grader eller brattere 2 til 30 meter fra den. Bratteste sammenhengende parti er 26,0 grader mellom 523 og 545 moh.",
+      "Over 600 moh slakner ryggen: 9,6 grader fra 600 til 700 moh over 588 meter grunn, og 13,0 fra 700 til 800. Topplatået når du på 871 moh etter 3,51 km. Fri Flyt: «Vel oppe flater det ut og man sporer bortover det brede topplatået til varden for å nyte matpakke og utsikt.» Bandet fra 800 til 900 moh er 781 meter grunn på 7,0 grader. Ved 3,76–3,80 km går linja 17 til 24 meter fra toppen av et gjel på nordsida; hold avstand til kanten.",
+    ],
+    descent: [
+      "Fri Flyt: «Nedturen følger i samme trase som opp. Der kan man velge spor på fine store flater.»",
+      "Fri Flyt: «Hold avstand til det bratte terrenget mot sør og nord.» Toppen faller bratt mot nord, nordøst og øst: 40,3 grader 210 til 270 meter ut mot nord, 52,9 mot nordøst og 50,6 mot øst. Mot sør er den 19,5 grader i snitt, med 28,5 grader 330 til 390 meter ut, og mot vest og nordvest nesten flat. Bakke på 40 grader eller brattere står mer enn 60 meter fra varden.",
+    ],
+    avalanche: [
+      {
+        title: "Ruta",
+        body: "Bratteste sammenhengende parti er 26,0 grader mellom 523 og 545 moh, og bratteste bandet 19,2 grader fra 400 til 500. Bakken under linja er 35 grader eller brattere i to korte strekk på 15 og 16 meter ved 440–448 og 471–479 moh. Fri Flyt setter turen til KAST 1 – Enkelt, med «Bratteste parti: 30 grader (kort parti)».",
+      },
+      {
+        title: "Terrenget utenfor",
+        body: "Nederst går Golpeelva i et gjel med åpent vann og snøbruer øst for linja. Mellom 440 og 600 moh er det små partier brattere enn 30 grader ved linja; ved 457–493 moh står bratt bakke 2 til 30 meter fra den, og ved 3,76–3,80 km går linja 17 til 24 meter fra toppen av et gjel på nordsida. Nord-, nordøst- og østsida av toppen er 40,3 til 52,9 grader, og Fri Flyt ber deg holde avstand til det bratte terrenget mot sør og nord.",
+      },
+      {
+        title: "Før du går",
+        body: "Sjekk dagens skredvarsel for Vest-Finnmark på varsom.no. Vest-Finnmark er en A-region og varsles daglig i sesongen. Ta med sender/mottaker, søkestang og spade.",
+      },
+    ],
+    elevationProfile: {
+      path: "M0,200 L27,194 L47,186 L68,179 L89,172 L110,168 L127,160 L144,152 L164,145 L184,136 L203,128 L234,118 L247,111 L268,102 L288,96 L316,83 L341,76 L358,71 L385,67 L412,60 L437,54 L460,46 L488,35 L508,29 L529,24 L563,20 L600,18",
+      startLabel: "22 moh",
+      endLabel: "896 moh",
+      distanceLabel: "3,9 km",
+      caption: "879 høydemeter og 3,93 km fra Jøkelfjord, med skoggrensa på 241 moh, bratteste bandet mellom 400 og 500 og topplatået fra 871.",
+    },
+  },
   storgalten: {
     slug: "storgalten",
     intro:
@@ -7439,146 +7581,110 @@ export const GUIDES: Record<string, TourGuide> = {
       caption: "620 høydemeter og 7,4 km over Kjeragplatået, der bratteste 30 meter er 29,6 grader, oppe på platået, og det farlige ligger 1850 meter nord for toppunktet.",
     },
   },
-  gievdnerassa: {
-    slug: "gievdnerassa",
+  hilleknuten: {
+    slug: "hilleknuten",
     intro:
-      "879 høydemeter på 6,33 km fra skolen i Øksfjordbotn: sommervegen østover, opp lia øst for Skárpavággi og over det store topplatået til Gievdnerášša, 898 moh. Bratteste bandet er 17,3 grader mellom 200 og 300 moh, og bratteste sammenhengende parti 29,1 grader mellom 266 og 284. Fri Flyt skriver navnet Gievdnerassa: «Gievdnerassa er et rundt og stort platåfjell med storslagen utsikt i alle retninger og særlig mot Finnmarksalpene i nord og vest».",
+      "665 høydemeter på 4,21 km fra fv. 450 ved Storekvæven: opp langs Bekkene til flata, østover nord for et brattbelte i vestsida og sørover langs en slak stripe til Hilleknuten, 1209 moh. Bratteste bandet er 12,7 grader mellom 600 og 700 moh, og bratteste sammenhengende parti 26,6 grader mellom 1061 og 1081. Fri Flyt: «Toppturen til Hilleknuten byr på en av de lengste nedkjøringene i området.»",
     ascent: [
-      "Start på parkeringa ved skolen i Øksfjordbotn, 58 moh, ved busstoppet. Fri Flyt starter «ved den gamle leirskolen», og Peakbook: «Parkerte ved Gammelveien nær Øksfjordbotn skole (e-verket).» Linja følger Gammelveien og sommervegen Geassegeaidnu østover, og stien videre mot Rivarbukteidet. Vegen er merket skuterløype om vinteren, Tappeluftløypa, og Peakbook skriver: «Stor scooter-trafikk hadde inntatt Kjeldalen i påsken.» Det er nesten flatt: bandene under 200 moh er 1224 og 1531 meter grunn på 2,1 og 3,8 grader. Linja går sør for vatnet på 111 moh som Nordelva renner ut av, 103 meter fra det, og øst for tjernet på 123 moh, 72 meter fra det, før den tar opp i lia øst for et ulendt steg.",
-      "Linja går så nordover den linja Peakbook gikk: «Forlot sommerveien ved noen hytter i Rivarbukteidet og valgte oppgangen øst for Skarpavaggi.» Den passerer 168 meter øst for navnepunktet Skárpavággi ved 513 moh. Fri Flyts «rygg som går nordøstover» fra «den gamle leirskolen» går rett opp over Nordelva-juvet og bratte heng fra skolen; linja møter først den ryggen høyere oppe. Bandet fra 200 til 300 moh er det bratteste, 17,3 grader over 315 meter grunn, og bratteste sammenhengende parti er 29,1 grader mellom 266 og 284 moh. Skogen slipper ved 215 moh, 2,8 km fra start. Mellom 181 og 647 moh står små bergsteg på 45 grader eller brattere 3 til 15 meter fra linja, men bakken under linja er aldri 35 grader eller brattere i 15 meter sammenhengende.",
-      "Bandene fra 300 til 700 moh måler 11,4 til 14,1 grader. Fri Flyt: «Her går du opp en jevn fin bakke, før det blir slakere mot toppen av Gievdnerassa.» Over 700 moh slakner det: 6,6 og 7,8 grader i de to øverste bandene, over 844 og 713 meter grunn. Fri Flyt: «Topplåtået er som å komme på en bre med overraskende godt føre selv når det blåser surt ned i dalen fra sørøst.» Toppen er slak til alle kanter, 3,6 til 13,4 grader i snitt over 500 meter.",
+      "Start ved fv. 450 ved Storekvæven, 568 moh, nord for Fidjeland. Det er ingen kartlagt parkering her. Fri Flyt: «Parker i Store Kvæven og følg Bekkene opp til det flater ut.» Linja går opp langs Bekkene: bandet fra 600 til 700 moh er det bratteste på turen, 12,7 grader over 418 meter grunn, og skogen slipper ved 796 moh, 1,49 km fra start. Flata når du på 807 moh etter 1,57 km.",
+      "Fri Flyt fortsetter: «Følg myra sørover før du dreier øst opp bakkene.» Linja gjør det ikke. Gjennom hele vestsida av Hilleknuten går et brattbelte nord–sør, og rutet sørover over myra og så østover krysset linja det med 65 meter bakke på 35 grader eller mer. Linja går i stedet østover nord for beltet, 910 moh etter 2,34 km, og krysser det der det er slakest, på 1087 moh etter 3,09 km. Like etter, ved 3,28 km og 1080–1088 moh, går den over 16 meter bakke på 35 grader eller mer, med bratteste celle 41 grader.",
+      "Øst for beltet går linja sørover langs en slak stripe: bandene fra 900 til 1200 moh måler 7,9 til 9,7 grader. Bratteste sammenhengende parti er 26,6 grader mellom 1061 og 1081 moh. Mellom 3,06 og 3,28 km står bakke på 45 grader eller brattere 16 til 24 meter fra linja, og nordøst for den står celler på 58,7 grader 50 meter unna ved 1091 moh. Fri Flyt: «Det lille bygget som ligner på et kinahus står på toppen av Hilleknuten.»",
+      "Det siste stykket opp, mellom 1191 og 1209 moh, står små bergkanter på 45 grader eller brattere 8 til 23 meter fra linja. Toppen er slak i snitt mot nord, nordøst, øst, sørøst og sørvest, 6,3 til 10,6 grader over 500 meter, men østkanten har 31,8 grader 20 til 80 meter ut, og toppen faller brattere mot vest og nordvest, 37,0 og 38,2 grader 260 til 380 meter ut, og 39,7 grader 240 til 300 meter ut mot sør.",
     ],
     descent: [
-      "Fri Flyt anbefaler samme rute ned: «Nedkjøringen mot sør der det er enklest å komme opp, gir et langt sammenhengende nedrenn.» Nederst går linja over i sommervegen igjen, og det er nesten flatt de siste kilometerne tilbake til skolen.",
-      "Fri Flyt: «I dårlig sikt er det lett å gli ned i små og store heng brattere enn 30 grader.» og «Turen gir litt utfordrende mikroterreng å orientere seg i på vei opp og ned, særlig hvis sikten er begrenset og sporene blåser igjen.» Platået er stort og likt i alle retninger; ha med deg kart og kompass eller GPS.",
+      "Fri Flyt: «Fra toppen av Hilleknuten kan du kjøre ned flere steder. Hvis du sikter rett på myrene får du en veldig fin nedkjøring.» Den nedkjøringen går over brattbeltet i vestsida; går du ned linja, krysser du det der det er slakest, ved 1087 moh.",
+      "Fri Flyt: «Når du ankommer flatene ved myra anbefales det å gå opp på den lille toppen p1012 før du kjører ned til myra igjen. Avslutt dagen med å gå opp til Kviturdfjellet, da slipper du å gå over flatene og du får en bra nedkjøring tilbake til bilen.» Og: «Det anbefales at du utforsker området mer enn hva som står i boka.»",
     ],
     avalanche: [
       {
         title: "Ruta",
-        body: "Bratteste sammenhengende parti er 29,1 grader mellom 266 og 284 moh, og bratteste bandet 17,3 grader fra 200 til 300. Bakken under linja er ikke 35 grader eller brattere i noe sammenhengende strekk på 15 meter. Fri Flyt setter turen til KAST 1 – Enkelt og skriver at hele ruta kan gås i terreng under 30 grader.",
+        body: "Bratteste sammenhengende parti er 26,6 grader mellom 1061 og 1081 moh, og bratteste bandet 12,7 grader fra 600 til 700. Bakken under linja er 35 grader eller brattere i ett strekk på 16 meter ved 1080–1088 moh, der linja krysser brattbeltet. Fri Flyt oppgir 35 grader som bratteste punkt og graderer turen «Moderat».",
       },
       {
         title: "Terrenget utenfor",
-        body: "Det står små bergsteg langs lia, 3 til 15 meter fra linja mellom 181 og 647 moh. Fri Flyt: «I dårlig sikt er det lett å gli ned i små og store heng brattere enn 30 grader.» Platået er stort og flatt, og sporene blåser fort igjen.",
+        body: "Brattbeltet i vestsida går nord–sør gjennom hele lia; linja krysser det bare der det er slakest. Sør-, vest- og nordvestsida av toppen er 37,0 til 39,7 grader i de bratteste vinduene.",
       },
       {
         title: "Før du går",
-        body: "Sjekk dagens skredvarsel for Vest-Finnmark på varsom.no. Vest-Finnmark er en A-region og varsles daglig i sesongen. Ta med sender/mottaker, søkestang og spade.",
+        body: "Sjekk dagens skredvarsel for Heiane på varsom.no. Heiane er en A-region og varsles daglig i sesongen. Ta med sender/mottaker, søkestang og spade.",
       },
     ],
     elevationProfile: {
-      path: "M0,200 L31,200 L56,198 L82,194 L107,192 L129,186 L150,188 L171,185 L188,182 L207,184 L227,185 L248,175 L265,166 L282,151 L303,138 L320,131 L345,121 L367,107 L393,95 L406,87 L431,75 L453,60 L478,50 L504,45 L529,40 L549,35 L572,24 L593,18 L600,18",
-      startLabel: "58 moh",
-      endLabel: "898 moh",
-      distanceLabel: "6,3 km",
-      caption: "879 høydemeter og 6,33 km fra Øksfjordbotn, med skoggrensa på 215 moh og bratteste bandet mellom 200 og 300.",
+      path: "M0,200 L26,199 L50,195 L68,187 L86,178 L109,170 L135,154 L154,142 L178,141 L206,138 L225,132 L251,128 L276,120 L295,111 L321,105 L344,100 L366,96 L388,90 L404,77 L424,65 L441,53 L462,51 L488,53 L508,48 L533,45 L558,34 L584,24 L600,18",
+      startLabel: "568 moh",
+      endLabel: "1209 moh",
+      distanceLabel: "4,2 km",
+      caption: "665 høydemeter og 4,21 km fra Storekvæven, med skoggrensa på 796 moh, flata på 807 og brattbeltet krysset på 1087.",
     },
   },
-  "stortinden-langfjord": {
-    slug: "stortinden-langfjord",
+  grubba: {
+    slug: "grubba",
     intro:
-      "1007 høydemeter på 7,40 km fra kafeen i Langfjordbotn: rett nordover gjennom bjørkeskogen, opp den breie ryggen over forhøyningen på 839 og 920-toppen, og langs toppryggen til Stortinden, 936 moh. Ryggen gir tilbake 110 meter på vegen. Bratteste bandet er 19,6 grader mellom 100 og 200 moh, og bratteste sammenhengende parti 26,3 grader mellom 552 og 577. Fri Flyt: «Toppturklassikeren Stortinden er et snøhøl, som byr på variert kjøring og mange muligheter for topptur og randonee.»",
+      "502 høydemeter på 2,55 km fra Smølåsveien på Fidjeland: østover til skaret ved vatnet på 859 moh og opp den vestvendte flanken til Grubbå, 1184 moh. Bratteste bandet er 17,0 grader mellom 900 og 1000 moh, og bratteste sammenhengende parti 23,1 grader mellom 717 og 732. Fri Flyt: «Toppturen til Grubbå starter ved Leitet, og turen går i terreng under 30 grader.»",
     ascent: [
-      "Start ved kafeen ved krysset der vegen mot Øksfjord tar av fra E6 i Langfjordbotn, 39 moh. Kafeen er bare åpen om sommeren, og det er ingen kartlagt parkering her. Fri Flyt: «Start ved den lokale kafeen hundre meter nordøst der E-6 og veien mot Øksjord danner et kryss. Gå rett nordover gjennom grov bjørkeskog.» De første 713 metrene stiger 5,7 grader i snitt, og så kommer lia: 19,6 grader fra 100 til 200 moh, det bratteste bandet på turen. Skogen slipper ved 301 moh, 1,3 km fra start. Fri Flyt: «Ved startstedet i Langfjordbotn er det normalt at det ligger rundt halvannen meter snø helt ned mot fjordnivå.»",
-      "Fri Flyt: «Over tregrensen er fjellet en brei ryggformasjon. Følg ryggen til toppen, dersom du har tenkt deg helt opp.» Bandene fra 200 til 600 moh måler 16,8 til 17,9 grader. Bratteste sammenhengende parti er 26,3 grader mellom 552 og 577 moh, og like over, ved 596–609 moh, krysser linja et bratt belte som går tvers over ryggen: 26 meter bakke på 35 grader eller mer, med bratteste celle 42 grader. Mellom 555 og 617 moh står bakke på 45 grader eller brattere 18 til 29 meter fra linja. Over beltet holder linja seg øst for den bratte vestkanten opp til forhøyningen på 839, som du når etter 3,14 km.",
-      "Fri Flyt: «De fleste nøyer seg med å gå opp til toppryggen for å nyte skikjøringen derfra i stedet for å gå helt til toppen.» Videre nordover er ryggen smalere. Ved 880–888 moh, 4,07 km fra start, krysser linja et kort bergsteg: 13 meter bakke på 35 grader eller mer, med bratteste celle 56 grader. Over steget går linja på en smal rygg der østkanten står 13 til 27 meter fra linja ved 891–892 moh og faller bratt mot gryta; øst for ryggen står celler på 66,5 og 67,8 grader 59 og 45 meter unna. Fri Flyt skriver at det kan komme «store mengder snø på nordvest», og da er østkanten leside og kan ha skavl. Hold deg minst 20 meter vest for kanten. 920-toppen når du på 916 moh etter 4,92 km. Fri Flyt: «Fortsetter du videre mot toppen på 920 moh, kan du slippe deg 500 høydemeter ned i en østvendt gryte mot Øvre Møllevatn.» Det er en nedkjøring, ikke linja.",
-      "Fra 920-toppen går linja langs toppryggen. Den er slak, men går opp og ned: ned til 866 moh etter 5,62 km, opp over 918-toppen etter 6,47 km, ned til 889 moh etter 7,06 km og 47 høydemeter opp de siste 346 meterne til Stortinden. Fra 920-toppen til toppen gir linja tilbake 86 høydemeter. Toppen er slak mot nord, vest og nordvest, 3,3 til 12,5 grader i snitt over 500 meter, og faller mot sørøst og sør: 52,1 grader 140 til 200 meter ut mot sørøst og 44,1 grader 260 til 320 meter ut mot sør.",
+      "Start på parkeringa ved Smølåsveien på Fidjeland, 695 moh. Fri Flyt: «Kjør inn ved Leitet og parker i enden av veien.» Smølåsveien ender 0,2 km lenger sør. Fri Flyt: «Gå slik at du kommer inn i skaret mellom p893 og vannet på 850 moh. Det ligger ofte skiløype denne veien.» Linja krysser den kartlagte skiløypa etter 0,25 km og går østover; bratteste sammenhengende parti er 23,1 grader mellom 717 og 732 moh, nederst.",
+      "Bandene fra 700 til 900 moh måler 10,6 og 9,5 grader, og skogen slipper ved 856 moh, 1,0 km fra start. Skaret når du på 856 moh etter 1,00 km; vatnet, på 859 moh i kartet, ligger 24 meter fra linja ved 1,09 km. Hold deg på land.",
+      "Fri Flyt: «Ta av opp den vestvendte flanken og følg til topps.» Bandet fra 900 til 1000 moh er det bratteste, 17,0 grader over 316 meter grunn, og 1000 til 1100 måler 14,9. Mellom 932 og 1036 moh står små bergkanter på 45 grader eller brattere 9 til 23 meter fra linja. Bakken under linja er aldri 35 grader eller brattere i 15 meter sammenhengende. Det siste bandet, 1100 til 1200, er 470 meter grunn på 9,9 grader opp til toppen. Ut.no skriver om varden: «Det er bygget varde også på det høyeste punktet (1184 moh) litt lenger nordvest (det er vel selve Grubbå).»",
     ],
     descent: [
-      "Fri Flyt: «Den normale nedkjøringen følger ruta til oppstigningen og byr på bra kjøring fra den første toppen på 839 meter og ned til havet. Skogskjøringen gir ofte dyp og fin løssnø. Kjøringen blir brattere hvis du trekker østover i skogen.» Går du helt til toppen, må du tilbake langs toppryggen, gjennom dumpene og over 920-toppen, før den nedkjøringen begynner.",
-      "Fri Flyts alternativer er brattere. Gryta mot Øvre Møllevatn har «flere bratte nedkjøringer som er svært eksponerte», og flankene mot Russelvdalen «bør vurderes ovenfra og kan by på 500 høydemeter med bratt og vurderingsmessig krevende storfjellskjøring».",
+      "Fri Flyt: «Kjør ned flanken og hjem samme vei som du kom, eller velg en mer dirkete rute ned mellom ryggen og den nordlige bekkedalen. På slutten får du litt artig skogskjøring før du svinger av til bilen.»",
+      "Toppen er slak til alle kanter, 3,0 til 14,5 grader i snitt over 500 meter. Bratteste vindu er 30,6 grader 20 til 80 meter ut mot sørøst.",
     ],
     avalanche: [
       {
         title: "Ruta",
-        body: "Bratteste sammenhengende parti er 26,3 grader mellom 552 og 577 moh, og bratteste bandet 19,6 grader fra 100 til 200. Bakken under linja er 35 grader eller brattere i to korte strekk: 26 meter ved 596–609 moh og 13 meter ved 880–888 moh, et bergsteg på ryggen. Fri Flyt setter turen til KAST 3 – Komplekst og skriver: «Krevende skredvurdering vest og sør for toppryggen».",
+        body: "Bratteste sammenhengende parti er 23,1 grader mellom 717 og 732 moh, og bratteste bandet 17,0 grader fra 900 til 1000. Bakken under linja er ikke 35 grader eller brattere i noe sammenhengende strekk på 15 meter. Fri Flyt oppgir 27 grader som bratteste punkt og graderer turen «Lett».",
       },
       {
         title: "Terrenget utenfor",
-        body: "Vestsida av ryggen er bratt fra 555 moh og opp. Ved 880–892 moh er ryggen smal, og østkanten står 13 til 27 meter fra linja og kan ha skavl; hold deg minst 20 meter vest for den. Øst for 920-toppen ligger gryta mot Øvre Møllevatn, og toppen faller 44,1 til 52,1 grader mot sør og sørøst. Hold deg på ryggen.",
+        body: "Små bergkanter langs flanken, 9 til 23 meter fra linja mellom 932 og 1036 moh. Vatnet i skaret ligger 24 meter fra linja; isen kan være svak.",
       },
       {
         title: "Før du går",
-        body: "Sjekk dagens skredvarsel for Vest-Finnmark på varsom.no. Vest-Finnmark er en A-region og varsles daglig i sesongen. Ta med sender/mottaker, søkestang og spade.",
+        body: "Sjekk dagens skredvarsel for Heiane på varsom.no. Heiane er en A-region og varsles daglig i sesongen. Ta med sender/mottaker, søkestang og spade.",
       },
     ],
     elevationProfile: {
-      path: "M0,200 L25,196 L50,191 L69,176 L93,156 L113,142 L127,130 L145,114 L166,100 L182,87 L204,73 L216,65 L232,52 L251,41 L273,40 L291,41 L313,36 L331,28 L357,28 L375,27 L397,22 L422,28 L441,29 L466,32 L488,29 L516,24 L535,24 L561,27 L586,27 L600,18",
-      startLabel: "39 moh",
-      endLabel: "936 moh",
-      distanceLabel: "7,4 km",
-      caption: "1007 høydemeter og 7,40 km fra Langfjordbotn, med skoggrensa på 301 moh, 839 etter 3,14 km og 920-toppen etter 4,92 km.",
+      path: "M0,200 L22,199 L44,199 L65,198 L87,191 L107,183 L128,182 L144,172 L160,167 L192,156 L209,152 L227,145 L248,136 L268,136 L298,133 L319,124 L347,113 L364,104 L374,98 L404,84 L415,79 L430,70 L458,59 L479,51 L510,41 L532,38 L553,34 L574,25 L600,18",
+      startLabel: "695 moh",
+      endLabel: "1184 moh",
+      distanceLabel: "2,5 km",
+      caption: "502 høydemeter og 2,55 km fra Fidjeland, med skoggrensa på 856 moh, skaret på 856 og bratteste bandet mellom 900 og 1000.",
     },
   },
-  laslettind: {
-    slug: "laslettind",
+  roseknuten: {
+    slug: "roseknuten",
     intro:
-      "665 høydemeter på 2,97 km fra parkeringa ved Jøkelfjordeidet: vestover over bekken og opp den breie østryggen til varden, og videre til toppen av Laslettind, 822 moh. Bratteste bandet er 19,6 grader mellom 300 og 400 moh, og bratteste sammenhengende parti 22,1 grader mellom 377 og 398. Fri Flyt: «Laslettind har lang sesong og mange muligheter for fine toppturer og skiopplevelser.»",
+      "352 høydemeter på 1,62 km fra Hunnedalsveien: opp den svake ryggen ved Finndokkje til p905, renna sørøst for den og ryggen sør for Røsehola til Røseknuten, 1022 moh. Bratteste bandet er 13,6 grader mellom 600 og 700 moh, og bratteste sammenhengende parti 24,6 grader mellom 838 og 857. Fri Flyt: «Røseknuten kan kjøres fra nesten alle kanter og kombineres lett med en topptur til Store Knuten.»",
     ascent: [
-      "Start på parkeringa ved Jøkelfjordveien, 163 moh, der ut.no-turen starter. Ut.no: «Se etter parkeringsplass på venstre side av veien etter ca. 2 km. Her finner du startpunktet for turen med skilt. Følg stien. Helt i starten av turen krysser du en bekk.» Fri Flyt: «Start fra den vestligste parkeringsplassen ved Jøkelfjordeidet og gå vestover.» Skogen slipper ved 180 moh, 0,27 km fra start, etter Kartverkets terrengklasser; Fri Flyt skriver om Kvænangen at «Skoggrensa ligger på rundt 350 moh».",
-      "Ut.no: «Etter dette går du opp langs ryggen på Laslettind. Hold deg til høyre for vardene.» Fri Flyt: «Ruta opp Laslettind går opp en bred rygg som får snø tidlig og holder på den lenge.» Bandene fra 200 til 400 moh måler 10,3 og 19,6 grader; 300 til 400 er det bratteste, med bratteste sammenhengende parti 22,1 grader mellom 377 og 398 moh. Over det holder ryggen 14,5 til 17,8 grader opp til 800 moh. Bakken under linja er aldri 35 grader eller brattere i 15 meter sammenhengende.",
-      "Varden når du på 808 moh etter 2,66 km; Kartverket og ut.no setter navnet Laslettind der. Toppen ligger 0,31 km lenger nordvest, på 822 moh, og det er den Fri Flyts GPS-punkt viser; bandet fra 800 til 900 moh er 314 meter grunn på 2,7 grader. Sør, sørvest og vest for toppen faller fjellet bratt, 29,1 til 31,3 grader i snitt over 500 meter, med 43,1 grader 250 til 310 meter ut mot sørvest, og bakke på 40 grader eller brattere står 41 meter vest-sørvest for toppunktet. Mot nordvest er det nesten flatt, 2,5 grader, mot Olderbakkfjellet; Fri Flyt om den turen: «Skavler på toppen».",
+      "Start på parkeringa ved Hunnedalsveien, 674 moh. Fri Flyt: «Parker på parkeringsplass ved kraftstasjonen, eller på en større parkering litt lengre nede.» Kraftstasjonen er ikke kartlagt; Gravasstølen-parkeringa ligger 1,2 km vest. Fri Flyt: «Gå opp en svak ryggformasjon ved Finndokje.» Linja går rett nordover på den: bandene fra 700 til 900 moh måler 12,0 og 12,9 grader, og skogen slipper ved 803 moh, 0,59 km fra start. Nederst, mellom 688 og 712 moh, står små bergkanter på 45 grader eller brattere 4 til 19 meter fra linja.",
+      "Bratteste sammenhengende parti er 24,6 grader mellom 838 og 857 moh. P905 når du på 906 moh etter 1,08 km. Fri Flyt: «Gå opp en liten renne sørøst for p905. Fortsett på ryggen til toppunktet.» Linja går renna og ryggen sør for Røsehola, en hylle i vestsida på 949 moh, og holder seg 131 meter fra den.",
+      "Fri Flyt: «På 990 moh. henger en skavl ut mot Røsehola. Denne knekker mye lenger inn enn du tror, så hold avstand.» Linja kommer derfor opp på toppen sørfra, ved 987 moh etter 1,40 km, i stedet for over kanten mot Røsehola. Mellom 952 og 1012 moh står små bergkanter på 45 grader eller brattere 7 til 20 meter fra linja. Bakken under linja er aldri 35 grader eller brattere i 15 meter sammenhengende.",
     ],
     descent: [
-      "Fri Flyt anbefaler samme rute ned. Fri Flyt om Kvænangen: «Vi kjørte store svinger ned den lange åpne østsiden av Laslettind og ned i skogen under.» Fri Flyt: «Himmelretningen gir ofte godt føre pga leside for vinden fra vest og nord vest.»",
-      "Fri Flyt: «Laslettind er omkranset av stup og bratt renneterreng sør og nord for toppen og ryggen.» Sørvest for linja står celler på 51,5 og 46,9 grader 45 og 57 meter unna ved 650 og 698 moh. Hold deg på ryggen på vei ned.",
+      "Fri Flyts nedkjøringer er brattere enn linja. Røsehola: «Veien går ned i en spennende gryteformasjon. Her legger det seg lett fin snø da vinden får dårlig tak.» Sørrenna: «Ei herlig sørvendt fordypning går helt ned til veien.» Begge har 35 grader som bratteste punkt, og Røsehola går rett under skavlen.",
+      "Toppen er nesten flat mot nord og nordøst, 3,1 og 4,3 grader i snitt over 500 meter, men faller bratt mot sør og sørøst: 39,7 grader bare 30 til 90 meter ut mot sør, og 56,7 grader 390 til 450 meter ut mot sørøst.",
     ],
     avalanche: [
       {
         title: "Ruta",
-        body: "Bratteste sammenhengende parti er 22,1 grader mellom 377 og 398 moh, og bratteste bandet 19,6 grader fra 300 til 400. Bakken under linja er ikke 35 grader eller brattere i noe sammenhengende strekk på 15 meter, og nærmeste bakke på 45 grader står 33 meter fra linja, ved 686 moh. Fri Flyt setter turen til KAST 1 – Enkelt, med bratteste punkt under 25 grader.",
+        body: "Bratteste sammenhengende parti er 24,6 grader mellom 838 og 857 moh, og bratteste bandet 13,6 grader fra 600 til 700. Bakken under linja er ikke 35 grader eller brattere i noe sammenhengende strekk på 15 meter. Fri Flyt oppgir 30 grader som bratteste punkt og graderer turen «Lett».",
       },
       {
         title: "Terrenget utenfor",
-        body: "Stup og bratt renneterreng ligger både nord og sør for ryggen og toppen. Sør-, sørvest- og vestsida av toppen er 29,1 til 31,3 grader i snitt, og bakke på 40 grader står 41 meter fra toppunktet. Fri Flyt advarer om skavler på Olderbakkfjellet, nordvest for toppen.",
+        body: "Skavlen på 990 moh henger ut mot Røsehola og knekker langt inn; linja holder seg 131 meter fra hylla og kommer opp sørfra. Sørsida av toppen er 39,7 grader 30 til 90 meter ut.",
       },
       {
         title: "Før du går",
-        body: "Sjekk dagens skredvarsel for Vest-Finnmark på varsom.no. Vest-Finnmark er en A-region og varsles daglig i sesongen. Fri Flyt: «Bor du i Finnmark og skal gå topptur før jul er hodelykt greit å ha.» Ta med sender/mottaker, søkestang og spade.",
+        body: "Sjekk dagens skredvarsel for Heiane på varsom.no. Heiane er en A-region og varsles daglig i sesongen. Ta med sender/mottaker, søkestang og spade.",
       },
     ],
     elevationProfile: {
-      path: "M0,199 L18,200 L36,198 L64,192 L82,187 L100,184 L120,179 L145,172 L164,166 L182,162 L200,156 L215,149 L227,144 L245,134 L264,125 L282,117 L300,113 L318,107 L339,98 L355,92 L375,83 L400,72 L418,65 L436,58 L455,52 L482,40 L500,33 L518,27 L542,22 L564,22 L591,19 L600,18",
-      startLabel: "163 moh",
-      endLabel: "822 moh",
-      distanceLabel: "3,0 km",
-      caption: "665 høydemeter og 2,97 km fra Jøkelfjordeidet, med skoggrensa på 180 moh, bratteste bandet mellom 300 og 400 og varden på 808.",
-    },
-  },
-  vassnestind: {
-    slug: "vassnestind",
-    intro:
-      "879 høydemeter på 3,93 km fra fjorden i Jøkelfjord: sørover gjennom glissen skog vest for Golpeelva, opp den breie ryggen og over topplatået til varden på Vassnestind, 896 moh. Bratteste bandet er 19,2 grader mellom 400 og 500 moh, og bratteste sammenhengende parti 26,0 grader mellom 523 og 545. Fri Flyt: «Vassnestind er en fascinerende og lite besøkt topp bortenfor lekegrinda Jøkelfjordeidet.»",
-    ascent: [
-      "Start på parkeringa ved Hamnebuktveien i Jøkelfjord, 22 moh, vest for Golpeelva; busstoppet ligger på andre sida av elva. Fri Flyt oppgir to startsteder. Teksten sier «Fra Ytre Hamnebukta, der veien langs sørsiden av Jøkelfjorden stopper», men faktaboksen sier «Startsted/parkering: Jøkelfjord. Parkering i grustak på sørsiden av Fv.365», og ruta går «langs vestsiden av Golpeelva», som renner ut i Jøkelfjord. Linja starter derfor her; Ytre Hamnebukta ligger 2,9 km lenger vest-sørvest, under en bratt li. Fri Flyts «Følg denne østover til toppen av Vassnestind» passer bare på det siste stykket: linja går rett sørover og dreier mot øst-sørøst den siste halve kilometeren.",
-      "Fri Flyt: «Første delen av ruta opp gjennom glissen skog går langs vestsiden av Golpeelva.» Elva renner 18 til 149 meter øst for linja de første 0,74 km. Nederst går den i et gjel med bratte sider, åpent vann og snøbruer; linja holder seg på vestsida av gjelet, og du skal ikke ned i det. Fri Flyt: «I skoggrensen mellom 220-240 moh. er det et litt brattere parti så her anbefales å lese terrenget litt nøye for å legge et hensiktsmessig spor.» Skogen slipper ved 241 moh, 0,92 km fra start, og bandet fra 200 til 300 moh måler 17,4 grader.",
-      "Fri Flyt: «Vel over er det småkupert videre oppover. Mellom 440-600 moh. finnes små partier som er litt brattere enn 30 grader. Bruk og les terrengformasjoner.» Bandet fra 400 til 500 moh er det bratteste, 19,2 grader over 281 meter grunn. Ved 440–448 og 471–479 moh krysser linja to korte strekk, 15 og 16 meter, med bakke på 35 grader eller mer, og mellom 457 og 493 moh står bakke på 45 grader eller brattere 2 til 30 meter fra den. Bratteste sammenhengende parti er 26,0 grader mellom 523 og 545 moh.",
-      "Over 600 moh slakner ryggen: 9,6 grader fra 600 til 700 moh over 588 meter grunn, og 13,0 fra 700 til 800. Topplatået når du på 871 moh etter 3,51 km. Fri Flyt: «Vel oppe flater det ut og man sporer bortover det brede topplatået til varden for å nyte matpakke og utsikt.» Bandet fra 800 til 900 moh er 781 meter grunn på 7,0 grader. Ved 3,76–3,80 km går linja 17 til 24 meter fra toppen av et gjel på nordsida; hold avstand til kanten.",
-    ],
-    descent: [
-      "Fri Flyt: «Nedturen følger i samme trase som opp. Der kan man velge spor på fine store flater.»",
-      "Fri Flyt: «Hold avstand til det bratte terrenget mot sør og nord.» Toppen faller bratt mot nord, nordøst og øst: 40,3 grader 210 til 270 meter ut mot nord, 52,9 mot nordøst og 50,6 mot øst. Mot sør er den 19,5 grader i snitt, med 28,5 grader 330 til 390 meter ut, og mot vest og nordvest nesten flat. Bakke på 40 grader eller brattere står mer enn 60 meter fra varden.",
-    ],
-    avalanche: [
-      {
-        title: "Ruta",
-        body: "Bratteste sammenhengende parti er 26,0 grader mellom 523 og 545 moh, og bratteste bandet 19,2 grader fra 400 til 500. Bakken under linja er 35 grader eller brattere i to korte strekk på 15 og 16 meter ved 440–448 og 471–479 moh. Fri Flyt setter turen til KAST 1 – Enkelt, med «Bratteste parti: 30 grader (kort parti)».",
-      },
-      {
-        title: "Terrenget utenfor",
-        body: "Nederst går Golpeelva i et gjel med åpent vann og snøbruer øst for linja. Mellom 440 og 600 moh er det små partier brattere enn 30 grader ved linja; ved 457–493 moh står bratt bakke 2 til 30 meter fra den, og ved 3,76–3,80 km går linja 17 til 24 meter fra toppen av et gjel på nordsida. Nord-, nordøst- og østsida av toppen er 40,3 til 52,9 grader, og Fri Flyt ber deg holde avstand til det bratte terrenget mot sør og nord.",
-      },
-      {
-        title: "Før du går",
-        body: "Sjekk dagens skredvarsel for Vest-Finnmark på varsom.no. Vest-Finnmark er en A-region og varsles daglig i sesongen. Ta med sender/mottaker, søkestang og spade.",
-      },
-    ],
-    elevationProfile: {
-      path: "M0,200 L27,194 L47,186 L68,179 L89,172 L110,168 L127,160 L144,152 L164,145 L184,136 L203,128 L234,118 L247,111 L268,102 L288,96 L316,83 L341,76 L358,71 L385,67 L412,60 L437,54 L460,46 L488,35 L508,29 L529,24 L563,20 L600,18",
-      startLabel: "22 moh",
-      endLabel: "896 moh",
-      distanceLabel: "3,9 km",
-      caption: "879 høydemeter og 3,93 km fra Jøkelfjord, med skoggrensa på 241 moh, bratteste bandet mellom 400 og 500 og topplatået fra 871.",
+      path: "M0,200 L25,194 L39,187 L67,178 L84,171 L101,165 L134,160 L167,152 L185,148 L208,137 L235,126 L251,122 L283,104 L301,94 L318,84 L335,83 L351,84 L368,82 L395,79 L413,74 L427,68 L452,59 L469,53 L490,45 L519,36 L545,32 L561,33 L570,31 L588,21 L600,18",
+      startLabel: "674 moh",
+      endLabel: "1022 moh",
+      distanceLabel: "1,6 km",
+      caption: "352 høydemeter og 1,62 km fra Hunnedalsveien, med skoggrensa på 803 moh, p905 etter 1,08 km og ryggen sør for Røsehola.",
     },
   },
 };
