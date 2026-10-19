@@ -1368,7 +1368,7 @@ factually correct in every number it contained.
 
 What the three shared was that they were checkable against something *outside*
 the terrain model — OpenStreetMap's water polygons and its winter routes — and
-nothing was doing that. `check_ground.py` does. It asks three questions:
+nothing was doing that. `check_ground.py` does. It asks four questions:
 
 **Water.** Which vertices stand on a lake, how far the line runs on it, how far
 offshore it gets, and whether the guide names that height at all. A lake surface
@@ -1394,6 +1394,21 @@ stream, which side is it on? Which way is right depends on which way you are
 walking, so this is resolved from the trailhead-to-summit bearing, and a tour
 that runs east–west is reported as undecidable rather than answered with a coin
 flip.
+
+**House.** Does the line go through a mapped building or garden? DTM1 is bare
+ground, so the router cannot see a house, and a corridor with no waypoint over
+farmland draws a straight line through whatever stands there. Mellomkollen's
+did, through a house and a shed at Bergerud, and none of the other questions
+could see it. The buildings are fetched from the route's bounding box, padded
+by about 30 m, and matched against the line locally. Overpass's polyline
+`around` would fetch only what is near the line, but on a loaded mirror it
+timed out on almost every route. The line is sampled every 2 m against each
+polygon. A building standing within 100 m of the summit is the hut or mast the
+tour goes to, and is printed as a note. Fannaråkhytta stands 90 m from the
+cairn. Gaustatoppen's transmitter and bunkers are 500 m out along the ridge,
+so they are not the summit and still count. A `leisure=garden` is a note too, because the tag also covers
+parks. Run against the pre-fix Mellomkollen line, it reports exactly the house
+and the shed.
 
 It exits non-zero on findings, and it prints the numbers behind each one, because
 the decision is not the script's to make. A frozen tarn a source deliberately
@@ -6487,6 +6502,124 @@ standing ones), `check_guides` and `check_bands` clean on both guides — 0
 unsourced numbers, 12 band claims all agreeing — `check_treeline`,
 `check_steepness`, `check_gain` and `check_ground` with nothing to look at, and
 `npm run typecheck`, `lint`, `test` and `build`.
+
+### Mellomkollen went through a house at Bergerud
+
+Between Kroken and Rollveien the corridor had no waypoint, so the router drew a
+straight line across the fields, and that line went through the house
+`way/100868266` and the shed `way/232381072` at Bergerud. DTM1 does not know about
+buildings, and `check_ground` looks for water and trails, not houses. The ut.no
+track goes round them: north from Kroken to the forest road (`way/369790069`),
+west along it, then north on the road through the yard (`way/8101527`) to where
+Rollveien (`way/130448611`) begins. The corridor now has five waypoints along
+that way. The re-routed line keeps within 3–7 m of the road from the forest road
+to Rollveien, and no building lies on it: the nearest is 5 m away.
+
+The line is now 4158 m with 408 m of climbing, against 4109 m and 398 m before,
+so the card goes from 400 to 410. Above Rollveien the geometry is unchanged
+within 8 m. The vertices still landed a few metres differently, though, and the
+steepest 30 m window moved: 20.3° between 300 and 314 m, where it had been
+22.9° between 431 and 445. The steepest band is now 500 m to the top at 7.3°.
+The guide's numbers were rewritten to match the new line. `check_guides`,
+`check_bands`, `check_ground`, `check_tours` and `check_routes` are clean for the
+tour.
+
+### Årbostadtinden's south route went through the yard at Holte
+
+The first run of `check_ground.py`'s new house question found the same fault
+on Årbostadtinden's second route. The trailhead is the road end at Holte, and
+the line left it north-east, straight through a shed (`way/925905090`) between
+the farm buildings and the house. One waypoint, west and north of the yard at
+68.8962/17.2964, 216 moh, takes it round the west side. The nearest building is
+now the shed, about 16 m east of the line. The route is now 3889 m and 995 m of
+climbing, against 3863 m and 998 m before. The steepest step is 27.9°, where it
+had been 26.7°, and the guide's paragraph about the route was updated to match.
+The couloir route is unchanged, so the card is too. `generate_routes.py` re-solves
+every route of a tour, and the re-solve moved the couloir's last vertex, so
+that line was put back exactly as it shipped.
+
+### The house round: skirt_buildings.py
+
+`check_ground.py --houses` over every route found the same fault on many more
+lines. Most were at trailheads in farmyards, cabin fields and resorts
+(Gjendesheim, Turtagrø, Spiterstulen, Norefjellstua). A few were mid-route
+cabins and barns, Glitterheim, and the transmitter and bunkers along
+Gaustatoppen's ridge.
+
+Re-solving those tours was tried first and thrown away. A shipped line has been
+through `retrace_trails`, `cut_spurs` and the review rounds, and a fresh solve
+through the corridor undoes them: on the first nineteen it made Fannaråken
+from Turtagrø 300 m shorter and Folarskardnuten 430 m shorter, to fix crossings
+a few dozen metres long. `skirt_buildings.py` does what `cut_spurs.py` does,
+at the building instead of the spur. The line leaves a vertex before the
+crossing and rejoins one after it, through three points offset to the nearer
+side that keeps 5 m off every footprint. The new legs are read from DTM1 every
+15 m and are rejected if they are wet or steeper than 40°. A trailhead that
+stands in or against a building moves to the nearest clear point. The detour
+points go into `corridors.json` as waypoints named «utenom bygningene», so a
+re-solve goes round the same buildings.
+
+Where 5 m does not fit, the pass relaxes the lead and the clearance step by step
+and says which it used. Gaustatoppen's normal route needed 30 m and 3 m to get
+past the bunkers on the ridge, and Spiterstulen's trailhead needed 4 m.
+Husfjellet needed 40 m and 3 m. Sandhornet's north-east route was done by hand:
+it ran through a row of houses between the road and the shore, so it now follows
+the farm track (`way/687759961`) south from the car park and rejoins its old
+line south of the houses. That adds 129 m and 15 m of climbing.
+
+Elsewhere the changes are a few metres. Glittertinden is +93 m past Glitterheim,
+Gjendesheim +70 m and Norefjellstua +45 m. Gain changes by 0–6 m. Every guide figure
+the move touched was rewritten: distances, gains, the band angles and grounds
+`check_bands` reads, and Gaustatoppen's steepest step, which is now 24.8° on the
+ridge detour. Gyranfisen's list of sampled heights changed too, because the
+sampled vertices moved. The cards follow the convention each one already used.
+An exact gain stays exact (Besshø 1328 → 1329), and a rounded one moves only
+when the rounding does (Gaustatoppen 970 → 980, Kavringtinden 1250 → 1260,
+Melderskin 1270 → 1280, Blånebba 930 → 940). Gråfjell's teaser still said
+580 m and 7.8 km from an older line, and now says 600 m and 8.1 km.
+
+The rest of the run added thirteen more routes: Skarlitinden, Skjellesvikgalten,
+Skrott, Snøhetta, Snønipa, Snota from Trollheimshytta, Snøtinden, Spanstinden,
+Torvløysa, Varden, Vassdalstinden, Vassfjellet and Vesoldo. Four started inside
+a building: the cabin at Sandeggen, the hotel at Snøheim, Trollheimshytta and
+the outbuildings at Nupen. Vassdalstinden is the largest change, +65 m and +13 m
+of climbing round the farmyard at Nupen, and its card goes from 1210 to 1220.
+Varden's crossing was a small shed on the shore at Kabelvåg, where DTM1 already
+reads `Havflate` under the shipped line, so every detour failed the water
+test. It was spliced by hand, 12 m north of the shed and no further out.
+Torvløysa's card had said 1460 against a gain of 1469 and now says 1470.
+
+The routes Overpass had not answered for came back with 42 more crossings. Most
+were trailheads, at Juvasshytta and Spiterstulen for Galdhøpiggen, Tempelseter
+for Høgevarde and Ranten, Furedalen, Ustaoset, Tromsdalen and Øye. Here the
+pass learned to drop detour points the line stays clear without, after its
+three-point detours made hooks back on themselves where the line bends at the
+building. Five needed more than the pass:
+
+- **Kjølen from Kvaløysletta** started beside the care home and ran through the
+  housing estate above it. It now follows the mapped paths east of the houses,
+  as the shortest way over OSM's path network. That adds 233 m, and no house is
+  within 24 m of the line.
+- **Rondslottet from Spranget** came in over the ice on Rondvatnet and went
+  through Rondvassbu. No single dry detour exists, because the hut stands on
+  the shore. The line now keeps to the ice south of the yard and comes ashore
+  east of it, 22 m from the nearest building. That adds 54 m and 15 m of
+  climbing, and the card goes from 1280 to 1300.
+- **Rondslottet from Nedre Dørålseter** started inside the main building. The
+  trailhead moved 18 m south, outside it.
+- Rondslottet's Bjørnhollia route and Husfjellet needed the relaxed ladder.
+
+Seven more cards moved with their gain: Hesten-Segla 510 → 520, Rørnestinden
+1018 → 1022, Slogen 1535 → 1536, Snønipa 1490 → 1500, Torskmannen 750 → 760,
+Tromsdalstinden 1212 → 1213, and Rondslottet. A last `check_ground.py
+--houses` over all 229 routes, with fresh footprints for every moved line, came
+back clean.
+
+The fourteen tours main gained while this round ran were checked the same way.
+Four went through buildings: Gievdnerášša, Heimdalshøe from Maurvangen,
+Stortinden from Langfjordbotn and Tylderingen. Two of them started inside one.
+All four took the standard detour, and none of their cards moved. 205 tours and
+243 routes now go through no mapped building.
 
 ## The Sunnfjord round
 
