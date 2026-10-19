@@ -12709,12 +12709,12 @@
    {
     "id": "storekvaeven",
     "name": "Fra Storekvæven",
-    "description": "Fra fv. 450 ved Storekvæven opp langs Bekkene til flata, østover nord for brattbeltet i vestsida og sørover langs den slake stripa til Hilleknuten",
+    "description": "Fra fv. 450 ved Storekvæven opp langs Bekkene til flata, sørover over myra og østover opp bakkene til tårnet på Hilleknuten",
     "trailhead": {
      "name": "Storekvæven ved fv. 450",
-     "lat": 58.99667,
-     "lng": 6.93281,
-     "elevation_m": 567.7,
+     "lat": 58.9955,
+     "lng": 6.9322,
+     "elevation_m": 569.7,
      "fullName": "Storekvæven ved fv. 450"
     },
     "waypoints": [
@@ -12732,49 +12732,43 @@
      },
      {
       "name": "flata",
-      "lat": 58.989,
-      "lng": 6.947,
-      "elevation_m": 801.6
+      "lat": 58.988,
+      "lng": 6.9475,
+      "elevation_m": 799.5
      },
      {
-      "name": "østover nord for brattbeltet",
-      "lat": 58.9884,
+      "name": "myra sørover",
+      "lat": 58.9852,
+      "lng": 6.9546,
+      "elevation_m": 957.8
+     },
+     {
+      "name": "myra sørover",
+      "lat": 58.9797,
+      "lng": 6.9578,
+      "elevation_m": 1005.5
+     },
+     {
+      "name": "myra sørover",
+      "lat": 58.9761,
       "lng": 6.96,
-      "elevation_m": 909.4
+      "elevation_m": 1093.3
      },
      {
-      "name": "østover nord for brattbeltet",
-      "lat": 58.9892,
-      "lng": 6.965,
-      "elevation_m": 937.2
+      "name": "østover opp bakkene",
+      "lat": 58.9765,
+      "lng": 6.9623,
+      "elevation_m": 1132.0
      },
      {
-      "name": "over beltet der det er slakest",
-      "lat": 58.989,
-      "lng": 6.9715,
-      "elevation_m": 1085.7
-     },
-     {
-      "name": "den slake stripa sørover",
-      "lat": 58.9872,
-      "lng": 6.9718,
-      "elevation_m": 1079.5
-     },
-     {
-      "name": "den slake stripa sørover",
-      "lat": 58.985,
-      "lng": 6.9725,
-      "elevation_m": 1099.9
-     },
-     {
-      "name": "ryggen sørover mot toppen",
-      "lat": 58.9825,
-      "lng": 6.97,
-      "elevation_m": 1146.0
+      "name": "østover opp bakkene",
+      "lat": 58.9782,
+      "lng": 6.9656,
+      "elevation_m": 1141.8
      }
     ],
     "source": "researched, verified (ok), no local audit",
-    "notes": "Fri Flyt oppgir 35 grader som bratteste punkt og graderer turen «Moderat». Fri Flyt: «Det anbefales at du utforsker området mer enn hva som står i boka.»"
+    "notes": "Fri Flyt oppgir 35 grader som bratteste punkt og graderer turen «Moderat». Bygget på toppen er et 23 m høyt kommunikasjonstårn (OSM node/5163720725); det kan falle is fra det. Fri Flyt: «Det anbefales at du utforsker området mer enn hva som står i boka.»"
    }
   ]
  },
@@ -12783,7 +12777,7 @@
    {
     "id": "hunnedalsveien",
     "name": "Fra Hunnedalsveien via Finndokkje",
-    "description": "Fra parkeringa ved Hunnedalsveien opp den svake ryggen ved Finndokkje til p905, den lille renna sørøst for den og ryggen sør for Røsehola til toppen av Røseknuten",
+    "description": "Fra parkeringa ved Hunnedalsveien opp den svake ryggen ved Finndokkje til p905, ryggen langs renna sørøst for den og kanten over Røsehola til toppen av Røseknuten",
     "trailhead": {
      "name": "Parkeringa ved Hunnedalsveien",
      "lat": 58.90085,
@@ -12830,7 +12824,7 @@
      }
     ],
     "source": "researched, verified (ok), no local audit",
-    "notes": "Fri Flyt: «På 990 moh. henger en skavl ut mot Røsehola. Denne knekker mye lenger inn enn du tror, så hold avstand.» Nedkjøringene i Røsehola og Sørrenna har 35 grader som bratteste punkt."
+    "notes": "Fra 1,41 til 1,56 km går linja 5 til 31 m fra kanten mot Røsehola. Fri Flyt: «På 990 moh. henger en skavl ut mot Røsehola. Denne knekker mye lenger inn enn du tror, så hold avstand.» Nedkjøringene i Røsehola og Sørrenna har 35 grader som bratteste punkt. Fv. 450 gjennom Hunnedalen kan bli stengt i uvær."
    }
   ]
  },
@@ -12855,26 +12849,44 @@
       "elevation_m": 731.1
      },
      {
-      "name": "skaret ved vatnet på 859",
+      "name": "mot skaret",
       "lat": 58.9505,
       "lng": 6.9625,
       "elevation_m": 856.1
      },
      {
-      "name": "den vestvendte flanken",
-      "lat": 58.95,
-      "lng": 6.972,
-      "elevation_m": 991.3
+      "name": "skaret ved vatnet på 859",
+      "lat": 58.9506,
+      "lng": 6.966,
+      "elevation_m": 866.4
      },
      {
       "name": "den vestvendte flanken",
-      "lat": 58.9495,
-      "lng": 6.979,
-      "elevation_m": 1117.0
+      "lat": 58.9517,
+      "lng": 6.9692,
+      "elevation_m": 934.2
+     },
+     {
+      "name": "den vestvendte flanken",
+      "lat": 58.9512,
+      "lng": 6.9727,
+      "elevation_m": 1008.7
+     },
+     {
+      "name": "den vestvendte flanken",
+      "lat": 58.951,
+      "lng": 6.9762,
+      "elevation_m": 1062.5
+     },
+     {
+      "name": "den vestvendte flanken",
+      "lat": 58.9502,
+      "lng": 6.9797,
+      "elevation_m": 1117.1
      }
     ],
     "source": "researched, verified (ok), no local audit",
-    "notes": "Fri Flyt: «turen går i terreng under 30 grader», bratteste punkt 27 grader."
+    "notes": "Fri Flyt oppgir 27 grader som bratteste punkt, men linja går over et bergsteg på 10 m med bakke på 35 grader eller mer ved 1046–1051 moh, og bergkanter står 4 til 20 m fra linja mellom 932 og 1023 moh. Vatnet i skaret ligger 27 m fra linja."
    }
   ]
  }

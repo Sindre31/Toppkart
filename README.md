@@ -368,10 +368,9 @@ content and data quality that has to be settled before the site is promoted wide
   Grubbå.** The app had nothing in Sirdal, and only Kjerag in Rogaland. All three start by the
   Fv 450, whose winter closure is only the stretch between Suleskard and Brokke, east of all
   three starts, and all three are in
-  Varsom's *Heiane*, an A-region. They are short — 350 to 665 m of climbing. Two of the lines
-  leave Fri Flyt's text on purpose: Hilleknuten goes north of a steep belt in the west face rather
-  than over it, and Røseknuten comes up from the south rather than over the cornice edge above
-  Røsehola. The second sources are summer routes from other starts, so all three are
+  Varsom's *Heiane*, an A-region. They are short — 350 to 690 m of climbing. Hilleknuten and Grubbå follow Fri Flyt's
+  lines; Røseknuten has no way up that keeps clear of the cornice edge above Røsehola, and the
+  guide says where the line runs 5–31 m from it. The second sources are summer routes from other starts, so all three are
   `confidence: medium`. See «The Sirdal round» in `scripts/build-routes/README.md`.
 - **The tour cards are checked, the guides are checked, the geometry is checked — by machine.**
   `check_tours.py` and `check_routes.py` come back clean on all 208 tours and `check_guides.py` on

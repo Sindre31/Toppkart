@@ -6988,9 +6988,9 @@ closure is the stretch between Suleskard and Brokke, east of every start.
 
 | tour | start | summit | gain | km | steepest 100 m band | steepest 30 m | grade |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Hilleknuten | 568 | 1209 | 665 | 4.21 | 12.7° | 26.6° | 2 |
-| Grubbå | 695 | 1184 | 502 | 2.55 | 17.0° | 23.1° | 1 |
-| Røseknuten | 674 | 1022 | 352 | 1.62 | 13.6° | 24.6° | 2 |
+| Hilleknuten | 570 | 1209 | 687 | 4.02 | 13.5° | 23.1° | 2 |
+| Grubbå | 695 | 1184 | 500 | 2.50 | 17.6° | 23.1° | 1 |
+| Røseknuten | 674 | 1022 | 352 | 1.61 | 13.6° | 24.6° | 2 |
 
 ### Which tours, and which were left
 
@@ -7001,20 +7001,20 @@ in winter; Bjønnskjeggheia is 250 m with 40° in the line; Midstølknuten is a
 built are the longest, and each has a second source that confirms the top — but
 those are summer routes from other starts, so all three are `confidence: medium`.
 
-### Two lines that leave the text
+### Where the lines go
 
-**Hilleknuten.** Fri Flyt says to follow the bog south and then turn east up the
-slopes. A steep belt runs north–south through the whole west face, and routed
-that way the line crossed it on 65 m of ground at 35° or more, with 48° cells.
-The line goes east north of the belt, crosses it where it is gentlest at
-1087 m, and goes south along a gentle strip to the top; one 16 m stretch at
-35°+ is left, and the guide says where.
+**Hilleknuten** follows Fri Flyt: up Bekkene to the flat, south along the bog
+and east up the slopes to the tower. No 15 m stretch under the line is 35° or
+more, at 5 m or at 1 m, and it crosses no water. There is no mapped car park at
+Storekvæven: the one 1.4 km north is `access=private`, the nearest public one is
+at the filling station 1.7 km north, and Fidjeland's hiking car park is the
+alternative. The guide says so, and warns of ice falling from the 23 m tower.
 
-**Røseknuten.** Routed up Fri Flyt's gully south-east of p905, the line went
-through Røsehola — a shelf in the west face at 949 m — and climbed out over the
-rim where Fri Flyt warns of the cornice at 990 m that «knekker mye lenger inn enn
-du tror». It now takes the ridge south of Røsehola, 131 m from it, and comes onto
-the top from the south; no 15 m stretch under the line is 35° or more.
+**Røseknuten** has no way up that keeps well clear of the edge above Røsehola,
+where Fri Flyt warns of the cornice at 990 m that «knekker mye lenger inn enn du
+tror». The line keeps to the ridge on the south rim of the gully south-east of
+p905, not down in it, and from 1.41 to 1.56 km ground at 37° or more is 5–31 m
+from it. The guide says where, rather than claiming the line avoids it.
 
 ### Grubbå's top
 
@@ -7022,6 +7022,36 @@ The register puts Grubbå on the plateau at 1137 m. Fri Flyt gives 1184, and
 ut.no's trip names «Søndre Grubbå» at 1172 with the highest cairn «litt lenger
 nordvest». DTM1 has the 1184 top 0.5 km west of the register point, and OSM has
 it as a peak; the summit is seeded there (`SUMMIT_SEED`).
+
+### The independent read
+
+The second reader found three serious things. **Hilleknuten's line crossed a
+tarn and a pond**, and the reason the write-up gave for leaving Fri Flyt's line —
+a steep belt through the whole west face — did not hold up. The line now follows
+Fri Flyt south and then east, with no 35° stretch and no water under it.
+**Røseknuten's line ran along the rim above Røsehola**, where the guide said it
+came up from the south 131 m away. No line keeps clear of that edge, so the
+line stays and the guide, record and teaser now say where it runs 5–31 m from
+37° ground. **Grubbå's card repeated Fri Flyt's «i terreng under 30 grader»**,
+while at 1 m the line crosses a 10 m rock step at 35° or more at 1046–1051 m.
+The flank is rerouted, the guide and record state the step, and the teaser and
+grade reason no longer make the claim.
+
+The rest were smaller and are fixed. Hilleknuten starts where the line leaves
+the Fv 450, and the private car park is no longer offered. Røseknuten's guide
+names Fri Flyt's «Gravasstølan/Bekkekrogan» start, 0.48 km from the car park,
+and says the Fv 450 through Hunnedalen can close in blizzards (OSM relation
+3488474). Grubbå's p893 is not in DTM1 — the knoll by the col is 885 m, 66 m from
+the line — and the guide says so. The teasers follow the lines they describe.
+
+### What ran
+
+`check_new_corridors` (Hilleknuten has no mapped car park at its start — said in
+the record and the guide), `check_routes`, `check_tours` and `check_geometry`
+clean on 208 tours and 246 routes, `check_ground` clean on all three,
+`check_guides` and `check_bands` clean (0 unsourced numbers, 6 band claims all
+agreeing), `check_treeline`, `check_gain` and `check_steepness` with nothing to
+look at, and `npm run typecheck`, `lint`, `test` and `build`.
 
 ## Network
 

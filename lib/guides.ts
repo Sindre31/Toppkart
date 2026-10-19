@@ -7584,25 +7584,26 @@ export const GUIDES: Record<string, TourGuide> = {
   hilleknuten: {
     slug: "hilleknuten",
     intro:
-      "665 høydemeter på 4,21 km fra fv. 450 ved Storekvæven: opp langs Bekkene til flata, østover nord for et brattbelte i vestsida og sørover langs en slak stripe til Hilleknuten, 1209 moh. Bratteste bandet er 12,7 grader mellom 600 og 700 moh, og bratteste sammenhengende parti 26,6 grader mellom 1061 og 1081. Fri Flyt: «Toppturen til Hilleknuten byr på en av de lengste nedkjøringene i området.»",
+      "687 høydemeter på 4,02 km fra fv. 450 ved Storekvæven: opp langs Bekkene til flata, sørover og så østover opp bakkene til tårnet på Hilleknuten, 1209 moh. Bratteste bandet er 13,5 grader mellom 600 og 700 moh, og bratteste sammenhengende parti 23,1 grader mellom 842 og 857. Fri Flyt: «Toppturen til Hilleknuten byr på en av de lengste nedkjøringene i området.»",
     ascent: [
-      "Start ved fv. 450 ved Storekvæven, 568 moh, nord for Fidjeland. Det er ingen kartlagt parkering her. Fri Flyt: «Parker i Store Kvæven og følg Bekkene opp til det flater ut.» Linja går opp langs Bekkene: bandet fra 600 til 700 moh er det bratteste på turen, 12,7 grader over 418 meter grunn, og skogen slipper ved 796 moh, 1,49 km fra start. Flata når du på 807 moh etter 1,57 km.",
-      "Fri Flyt fortsetter: «Følg myra sørover før du dreier øst opp bakkene.» Linja gjør det ikke. Gjennom hele vestsida av Hilleknuten går et brattbelte nord–sør, og rutet sørover over myra og så østover krysset linja det med 65 meter bakke på 35 grader eller mer. Linja går i stedet østover nord for beltet, 910 moh etter 2,34 km, og krysser det der det er slakest, på 1087 moh etter 3,09 km. Like etter, ved 3,28 km og 1080–1088 moh, går den over 16 meter bakke på 35 grader eller mer, med bratteste celle 41 grader.",
-      "Øst for beltet går linja sørover langs en slak stripe: bandene fra 900 til 1200 moh måler 7,9 til 9,7 grader. Bratteste sammenhengende parti er 26,6 grader mellom 1061 og 1081 moh. Mellom 3,06 og 3,28 km står bakke på 45 grader eller brattere 16 til 24 meter fra linja, og nordøst for den står celler på 58,7 grader 50 meter unna ved 1091 moh. Fri Flyt: «Det lille bygget som ligner på et kinahus står på toppen av Hilleknuten.»",
-      "Det siste stykket opp, mellom 1191 og 1209 moh, står små bergkanter på 45 grader eller brattere 8 til 23 meter fra linja. Toppen er slak i snitt mot nord, nordøst, øst, sørøst og sørvest, 6,3 til 10,6 grader over 500 meter, men østkanten har 31,8 grader 20 til 80 meter ut, og toppen faller brattere mot vest og nordvest, 37,0 og 38,2 grader 260 til 380 meter ut, og 39,7 grader 240 til 300 meter ut mot sør.",
+      "Linja starter der den forlater fv. 450 ved Storekvæven, 570 moh, nord for Fidjeland. Fri Flyt: «Parker i Store Kvæven og følg Bekkene opp til det flater ut.» Det er ingen kartlagt parkering ved Storekvæven; nærmeste offentlige parkering ligger 1,7 km nord, ved bensinstasjonen. Alternativet er å starte fra Fidjeland, der ut.no-stien går opp langs skiheisen.",
+      "Linja går opp langs Bekkene: bandet fra 600 til 700 moh er det bratteste på turen, 13,5 grader over 405 meter grunn, og du er ute av skogen ved 795 moh, 1,4 km fra start. Flata når du på 800 moh etter 1,52 km; et lite tjern ligger 84 meter fra linja like før.",
+      "Fri Flyt: «Følg myra sørover før du dreier øst opp bakkene.» Linja gjør det. Bratteste sammenhengende parti er 23,1 grader mellom 842 og 857 moh, og bandet fra 900 til 1000 moh er 855 meter grunn på 6,0 grader. Mellom 916 og 955 moh står små bergkanter på 45 grader eller brattere 8 til 19 meter fra linja. Linja dreier østover ved 1102 moh, etter 3,34 km.",
+      "Opp bakkene måler bandene fra 1000 til 1200 moh 12,2 og 9,3 grader, og mellom 1083 og 1117 moh står bergkanter 12 til 20 meter fra linja. Bakken under linja er aldri 35 grader eller brattere i 15 meter sammenhengende. Fri Flyt: «Det lille bygget som ligner på et kinahus står på toppen av Hilleknuten.» I kartet er det et 23 meter høyt kommunikasjonstårn; hold avstand om vinteren, det kan falle is.",
+      "Toppen er slak i snitt mot nord, nordøst, øst, sørøst og sørvest, 6,3 til 10,6 grader over 500 meter, men østkanten har 31,8 grader 20 til 80 meter ut, og toppen faller brattere mot vest og nordvest, 37,0 og 38,2 grader 260 til 380 meter ut, og 39,7 grader 240 til 300 meter ut mot sør.",
     ],
     descent: [
-      "Fri Flyt: «Fra toppen av Hilleknuten kan du kjøre ned flere steder. Hvis du sikter rett på myrene får du en veldig fin nedkjøring.» Den nedkjøringen går over brattbeltet i vestsida; går du ned linja, krysser du det der det er slakest, ved 1087 moh.",
+      "Fri Flyt: «Fra toppen av Hilleknuten kan du kjøre ned flere steder. Hvis du sikter rett på myrene får du en veldig fin nedkjøring.» Vest- og nordvestsida av toppen er 37,0 og 38,2 grader 260 til 380 meter ut; den slakeste vegen ned er linja, sørvestover og ut på myrene.",
       "Fri Flyt: «Når du ankommer flatene ved myra anbefales det å gå opp på den lille toppen p1012 før du kjører ned til myra igjen. Avslutt dagen med å gå opp til Kviturdfjellet, da slipper du å gå over flatene og du får en bra nedkjøring tilbake til bilen.» Og: «Det anbefales at du utforsker området mer enn hva som står i boka.»",
     ],
     avalanche: [
       {
         title: "Ruta",
-        body: "Bratteste sammenhengende parti er 26,6 grader mellom 1061 og 1081 moh, og bratteste bandet 12,7 grader fra 600 til 700. Bakken under linja er 35 grader eller brattere i ett strekk på 16 meter ved 1080–1088 moh, der linja krysser brattbeltet. Fri Flyt oppgir 35 grader som bratteste punkt og graderer turen «Moderat».",
+        body: "Bratteste sammenhengende parti er 23,1 grader mellom 842 og 857 moh, og bratteste bandet 13,5 grader fra 600 til 700. Bakken under linja er ikke 35 grader eller brattere i noe sammenhengende strekk på 15 meter. Fri Flyt oppgir 35 grader som bratteste punkt og graderer turen «Moderat».",
       },
       {
         title: "Terrenget utenfor",
-        body: "Brattbeltet i vestsida går nord–sør gjennom hele lia; linja krysser det bare der det er slakest. Sør-, vest- og nordvestsida av toppen er 37,0 til 39,7 grader i de bratteste vinduene.",
+        body: "Sør-, vest- og nordvestsida av toppen er 37,0 til 39,7 grader i de bratteste vinduene, og østkanten 31,8 grader like ved toppen. Like under toppen, ved 1186 moh, står en bergkant på 64,1 grader 47 meter øst for linja.",
       },
       {
         title: "Før du går",
@@ -7610,21 +7611,21 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,200 L26,199 L50,195 L68,187 L86,178 L109,170 L135,154 L154,142 L178,141 L206,138 L225,132 L251,128 L276,120 L295,111 L321,105 L344,100 L366,96 L388,90 L404,77 L424,65 L441,53 L462,51 L488,53 L508,48 L533,45 L558,34 L584,24 L600,18",
-      startLabel: "568 moh",
+      path: "M0,200 L27,197 L47,193 L72,178 L94,171 L119,158 L141,143 L161,139 L188,137 L209,136 L235,134 L256,130 L279,115 L309,99 L330,89 L353,97 L376,97 L397,91 L424,81 L450,69 L477,62 L498,49 L512,43 L538,43 L561,38 L580,27 L600,18",
+      startLabel: "570 moh",
       endLabel: "1209 moh",
-      distanceLabel: "4,2 km",
-      caption: "665 høydemeter og 4,21 km fra Storekvæven, med skoggrensa på 796 moh, flata på 807 og brattbeltet krysset på 1087.",
+      distanceLabel: "4,0 km",
+      caption: "687 høydemeter og 4,02 km fra Storekvæven, med skoggrensa på 795 moh, flata på 800 og vendingen østover på 1102.",
     },
   },
   grubba: {
     slug: "grubba",
     intro:
-      "502 høydemeter på 2,55 km fra Smølåsveien på Fidjeland: østover til skaret ved vatnet på 859 moh og opp den vestvendte flanken til Grubbå, 1184 moh. Bratteste bandet er 17,0 grader mellom 900 og 1000 moh, og bratteste sammenhengende parti 23,1 grader mellom 717 og 732. Fri Flyt: «Toppturen til Grubbå starter ved Leitet, og turen går i terreng under 30 grader.»",
+      "500 høydemeter på 2,50 km fra Smølåsveien på Fidjeland: østover til skaret ved vatnet på 859 moh og opp den vestvendte flanken til Grubbå, 1184 moh. Bratteste bandet er 17,6 grader mellom 900 og 1000 moh, og bratteste sammenhengende parti 23,1 grader mellom 717 og 732. Fri Flyt graderer turen «Lett» og oppgir 27 grader som bratteste punkt; linja har likevel et kort bergsteg på flanken.",
     ascent: [
-      "Start på parkeringa ved Smølåsveien på Fidjeland, 695 moh. Fri Flyt: «Kjør inn ved Leitet og parker i enden av veien.» Smølåsveien ender 0,2 km lenger sør. Fri Flyt: «Gå slik at du kommer inn i skaret mellom p893 og vannet på 850 moh. Det ligger ofte skiløype denne veien.» Linja krysser den kartlagte skiløypa etter 0,25 km og går østover; bratteste sammenhengende parti er 23,1 grader mellom 717 og 732 moh, nederst.",
-      "Bandene fra 700 til 900 moh måler 10,6 og 9,5 grader, og skogen slipper ved 856 moh, 1,0 km fra start. Skaret når du på 856 moh etter 1,00 km; vatnet, på 859 moh i kartet, ligger 24 meter fra linja ved 1,09 km. Hold deg på land.",
-      "Fri Flyt: «Ta av opp den vestvendte flanken og følg til topps.» Bandet fra 900 til 1000 moh er det bratteste, 17,0 grader over 316 meter grunn, og 1000 til 1100 måler 14,9. Mellom 932 og 1036 moh står små bergkanter på 45 grader eller brattere 9 til 23 meter fra linja. Bakken under linja er aldri 35 grader eller brattere i 15 meter sammenhengende. Det siste bandet, 1100 til 1200, er 470 meter grunn på 9,9 grader opp til toppen. Ut.no skriver om varden: «Det er bygget varde også på det høyeste punktet (1184 moh) litt lenger nordvest (det er vel selve Grubbå).»",
+      "Start på parkeringa ved Smølåsveien på Fidjeland, 695 moh. Fri Flyt: «Kjør inn ved Leitet og parker i enden av veien.» Smølåsveien ender 0,2 km lenger sør. Fri Flyt: «Gå slik at du kommer inn i skaret mellom p893 og vannet på 850 moh. Det ligger ofte skiløype denne veien.» Linja krysser den kartlagte skiløypa etter 0,28 km og går østover; bratteste sammenhengende parti er 23,1 grader mellom 717 og 732 moh, nederst.",
+      "Bandene fra 700 til 900 moh måler 10,6 og 9,4 grader, og du er ute av skogen ved 856 moh, 1,0 km fra start. Skaret, mellom en liten kolle på 885 moh og vatnet, går du gjennom fra 1,04 til 1,20 km på 862–868 moh; vatnet, på 859 moh i kartet, ligger 27 meter fra linja ved 1,09 km. Hold deg på land. Fri Flyts p893 finnes ikke i terrengmodellen; kollen sør for linja er 885 moh, 66 meter unna.",
+      "Fri Flyt: «Ta av opp den vestvendte flanken og følg til topps.» Bandet fra 900 til 1000 moh er det bratteste, 17,6 grader over 315 meter grunn, og 1000 til 1100 måler 13,6. Mellom 932 og 1023 moh står små bergkanter på 45 grader eller brattere 4 til 20 meter fra linja, og ved 1046–1051 moh går linja over et bergsteg på 10 meter med bakke på 35 grader eller mer. Det siste bandet, 1100 til 1200, er 424 meter grunn på 11,2 grader opp til toppen. Ut.no skriver om varden: «Det er bygget varde også på det høyeste punktet (1184 moh) litt lenger nordvest (det er vel selve Grubbå).»",
     ],
     descent: [
       "Fri Flyt: «Kjør ned flanken og hjem samme vei som du kom, eller velg en mer dirkete rute ned mellom ryggen og den nordlige bekkedalen. På slutten får du litt artig skogskjøring før du svinger av til bilen.»",
@@ -7633,11 +7634,11 @@ export const GUIDES: Record<string, TourGuide> = {
     avalanche: [
       {
         title: "Ruta",
-        body: "Bratteste sammenhengende parti er 23,1 grader mellom 717 og 732 moh, og bratteste bandet 17,0 grader fra 900 til 1000. Bakken under linja er ikke 35 grader eller brattere i noe sammenhengende strekk på 15 meter. Fri Flyt oppgir 27 grader som bratteste punkt og graderer turen «Lett».",
+        body: "Bratteste sammenhengende parti er 23,1 grader mellom 717 og 732 moh, og bratteste bandet 17,6 grader fra 900 til 1000. Bakken under linja er 35 grader eller brattere bare i et bergsteg på 10 meter ved 1046–1051 moh. Fri Flyt oppgir 27 grader som bratteste punkt og graderer turen «Lett».",
       },
       {
         title: "Terrenget utenfor",
-        body: "Små bergkanter langs flanken, 9 til 23 meter fra linja mellom 932 og 1036 moh. Vatnet i skaret ligger 24 meter fra linja; isen kan være svak.",
+        body: "Små bergkanter langs flanken, 4 til 20 meter fra linja mellom 932 og 1023 moh. Vatnet i skaret ligger 27 meter fra linja; isen kan være svak.",
       },
       {
         title: "Før du går",
@@ -7645,21 +7646,21 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,200 L22,199 L44,199 L65,198 L87,191 L107,183 L128,182 L144,172 L160,167 L192,156 L209,152 L227,145 L248,136 L268,136 L298,133 L319,124 L347,113 L364,104 L374,98 L404,84 L415,79 L430,70 L458,59 L479,51 L510,41 L532,38 L553,34 L574,25 L600,18",
+      path: "M0,200 L23,199 L44,199 L66,198 L89,191 L109,183 L131,182 L147,172 L163,167 L196,156 L213,152 L231,145 L253,136 L271,137 L293,136 L318,128 L335,117 L348,111 L368,101 L385,94 L400,86 L412,80 L434,74 L455,65 L477,54 L507,46 L531,38 L552,36 L574,26 L600,18",
       startLabel: "695 moh",
       endLabel: "1184 moh",
       distanceLabel: "2,5 km",
-      caption: "502 høydemeter og 2,55 km fra Fidjeland, med skoggrensa på 856 moh, skaret på 856 og bratteste bandet mellom 900 og 1000.",
+      caption: "500 høydemeter og 2,50 km fra Fidjeland, med skoggrensa på 856 moh, skaret på 862–868 og bratteste bandet mellom 900 og 1000.",
     },
   },
   roseknuten: {
     slug: "roseknuten",
     intro:
-      "352 høydemeter på 1,62 km fra Hunnedalsveien: opp den svake ryggen ved Finndokkje til p905, renna sørøst for den og ryggen sør for Røsehola til Røseknuten, 1022 moh. Bratteste bandet er 13,6 grader mellom 600 og 700 moh, og bratteste sammenhengende parti 24,6 grader mellom 838 og 857. Fri Flyt: «Røseknuten kan kjøres fra nesten alle kanter og kombineres lett med en topptur til Store Knuten.»",
+      "352 høydemeter på 1,61 km fra Hunnedalsveien: opp den svake ryggen ved Finndokkje til p905, videre på ryggen sør for renna og langs kanten over Røsehola til Røseknuten, 1022 moh. Bandene fra 700 til 1000 moh måler 11,2 til 12,9 grader, og bratteste sammenhengende parti er 24,6 grader mellom 838 og 857. Fri Flyt: «Røseknuten kan kjøres fra nesten alle kanter og kombineres lett med en topptur til Store Knuten.»",
     ascent: [
-      "Start på parkeringa ved Hunnedalsveien, 674 moh. Fri Flyt: «Parker på parkeringsplass ved kraftstasjonen, eller på en større parkering litt lengre nede.» Kraftstasjonen er ikke kartlagt; Gravasstølen-parkeringa ligger 1,2 km vest. Fri Flyt: «Gå opp en svak ryggformasjon ved Finndokje.» Linja går rett nordover på den: bandene fra 700 til 900 moh måler 12,0 og 12,9 grader, og skogen slipper ved 803 moh, 0,59 km fra start. Nederst, mellom 688 og 712 moh, står små bergkanter på 45 grader eller brattere 4 til 19 meter fra linja.",
-      "Bratteste sammenhengende parti er 24,6 grader mellom 838 og 857 moh. P905 når du på 906 moh etter 1,08 km. Fri Flyt: «Gå opp en liten renne sørøst for p905. Fortsett på ryggen til toppunktet.» Linja går renna og ryggen sør for Røsehola, en hylle i vestsida på 949 moh, og holder seg 131 meter fra den.",
-      "Fri Flyt: «På 990 moh. henger en skavl ut mot Røsehola. Denne knekker mye lenger inn enn du tror, så hold avstand.» Linja kommer derfor opp på toppen sørfra, ved 987 moh etter 1,40 km, i stedet for over kanten mot Røsehola. Mellom 952 og 1012 moh står små bergkanter på 45 grader eller brattere 7 til 20 meter fra linja. Bakken under linja er aldri 35 grader eller brattere i 15 meter sammenhengende.",
+      "Start på parkeringa ved Hunnedalsveien, 674 moh. Fri Flyt: «Parker på parkeringsplass ved kraftstasjonen, eller på en større parkering litt lengre nede.» Kraftstasjonen er ikke kartlagt. Fri Flyts startsted er «Gravasstølan/Bekkekrogan», og registerets Bekkekrokan ligger 0,48 km nordvest for parkeringa. Fri Flyt: «Gå opp en svak ryggformasjon ved Finndokje.» Linja går rett nordover på den: bandene fra 700 til 900 moh måler 12,0 og 12,9 grader, og du er ute av skogen ved 803 moh, 0,59 km fra start. Nederst, mellom 688 og 712 moh, står små bergkanter på 45 grader eller brattere 4 til 19 meter fra linja.",
+      "Bratteste sammenhengende parti er 24,6 grader mellom 838 og 857 moh. P905 når du på 906 moh etter 1,08 km. Fri Flyt: «Gå opp en liten renne sørøst for p905. Fortsett på ryggen til toppunktet.» Linja holder seg på ryggen på sørkanten av renna, ikke nede i den, fordi renna leder opp mot Røsehola, en hylle i vestsida på 949 moh.",
+      "Fri Flyt: «På 990 moh. henger en skavl ut mot Røsehola. Denne knekker mye lenger inn enn du tror, så hold avstand.» Det finnes ingen veg opp som holder seg langt unna den kanten. Fra 1,41 til 1,56 km, ved 989–1007 moh, går linja langs kanten mot Røsehola, og bakke på 37 grader eller brattere står 5 til 31 meter fra linja — der skavlen henger. Hold deg på øst- og sørsida av ryggen der. Sørsida av toppen er også bratt, 39,7 grader 30 til 90 meter ut. Bakken under linja er aldri 35 grader eller brattere i 15 meter sammenhengende.",
     ],
     descent: [
       "Fri Flyts nedkjøringer er brattere enn linja. Røsehola: «Veien går ned i en spennende gryteformasjon. Her legger det seg lett fin snø da vinden får dårlig tak.» Sørrenna: «Ei herlig sørvendt fordypning går helt ned til veien.» Begge har 35 grader som bratteste punkt, og Røsehola går rett under skavlen.",
@@ -7668,15 +7669,15 @@ export const GUIDES: Record<string, TourGuide> = {
     avalanche: [
       {
         title: "Ruta",
-        body: "Bratteste sammenhengende parti er 24,6 grader mellom 838 og 857 moh, og bratteste bandet 13,6 grader fra 600 til 700. Bakken under linja er ikke 35 grader eller brattere i noe sammenhengende strekk på 15 meter. Fri Flyt oppgir 30 grader som bratteste punkt og graderer turen «Lett».",
+        body: "Bratteste sammenhengende parti er 24,6 grader mellom 838 og 857 moh, og bandene fra 700 til 1000 moh måler 11,2 til 12,9 grader. Bakken under linja er ikke 35 grader eller brattere i noe sammenhengende strekk på 15 meter. Fri Flyt oppgir 30 grader som bratteste punkt og graderer turen «Lett».",
       },
       {
         title: "Terrenget utenfor",
-        body: "Skavlen på 990 moh henger ut mot Røsehola og knekker langt inn; linja holder seg 131 meter fra hylla og kommer opp sørfra. Sørsida av toppen er 39,7 grader 30 til 90 meter ut.",
+        body: "Skavlen på 990 moh henger ut mot Røsehola og knekker langt inn, og fra 1,41 til 1,56 km går linja 5 til 31 meter fra kanten. Sørsida av toppen er 39,7 grader 30 til 90 meter ut.",
       },
       {
         title: "Før du går",
-        body: "Sjekk dagens skredvarsel for Heiane på varsom.no. Heiane er en A-region og varsles daglig i sesongen. Ta med sender/mottaker, søkestang og spade.",
+        body: "Sjekk dagens skredvarsel for Heiane på varsom.no. Heiane er en A-region og varsles daglig i sesongen. Fv. 450 gjennom Hunnedalen kan bli stengt i uvær. Ta med sender/mottaker, søkestang og spade.",
       },
     ],
     elevationProfile: {
@@ -7684,7 +7685,7 @@ export const GUIDES: Record<string, TourGuide> = {
       startLabel: "674 moh",
       endLabel: "1022 moh",
       distanceLabel: "1,6 km",
-      caption: "352 høydemeter og 1,62 km fra Hunnedalsveien, med skoggrensa på 803 moh, p905 etter 1,08 km og ryggen sør for Røsehola.",
+      caption: "352 høydemeter og 1,61 km fra Hunnedalsveien, med skoggrensa på 803 moh, p905 etter 1,08 km og ryggen sør for Røsehola.",
     },
   },
 };

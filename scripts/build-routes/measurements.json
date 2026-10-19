@@ -3143,22 +3143,27 @@
     },
     {
       "what": "Langs linja",
-      "figure": "fv. 450 (OSM way/532048899) på 568 moh; Bekkene ved 602 og 1096 m; flata ved 1572 m (1,57 km), 807 moh; østover nord for brattbeltet ved 2342 m (2,34 km), 910 moh; brattbeltet krysset ved 3093 m (3,09 km), 1087 moh; bygget på toppen OSM node/5163720725",
+      "figure": "linja forlater fv. 450 (OSM way/532048899) på 570 moh; Bekkene ved 479 og 982 m; et lite tjern 84 m fra linja ved 1,44 km; flata ved 1522 m (1,52 km), 800 moh; myra sørover ved 2205 og 2880 m; vender østover ved 3340 m (3,34 km), 1102 moh; tårnet på toppen OSM node/5163720725 (man_made=tower, tower:type=communication, height=23, 23 m)",
       "how": "Nærmeste punkt på den routede linja i lib/routes.ts til OSM-/registerpunktet, med avstand langs ruta og DTM1-høyden der."
     },
     {
+      "what": "Parkering",
+      "figure": "ingen kartlagt parkering ved Storekvæven; way/1350603818 1,4 km nord er access=private; nærmeste offentlige parkering way/1424618386 ved bensinstasjonen 1,7 km nord; turparkeringa på Fidjeland way/532048807",
+      "how": "OSM Overpass: amenity=parking, man_made=tower og vann innenfor 2 km av linja, med tagger; avstand fra punktet til nærmeste punkt på den routede linja."
+    },
+    {
       "what": "Bakken under linja",
-      "figure": "16 m med bakke på 35° eller brattere ved 1080–1088 moh (3,28 km, bratteste celle 41°); rutet sørover over myra (første forsøk) 65 m ved 1069–1101 moh, bratteste celle 48°",
-      "how": "DTM1 i 5 m rutenett (geo.dem_tile), helling per celle med numpy.gradient, lest hver 5. meter langs den routede linja; oppgitt er hvert sammenhengende strekk på minst 15 m der bakken under linja er 35° eller brattere, med lengde, høyde og bratteste celle."
+      "figure": "ingen strekk på 15 m med bakke på 35° eller brattere under linja; ingen strekk på 10 m i 1 m rutenett",
+      "how": "DTM1 i 5 m rutenett (geo.dem_tile), helling per celle med numpy.gradient, lest hver 5. meter langs den routede linja; oppgitt er hvert sammenhengende strekk på minst 15 m der bakken under linja er 35° eller brattere, med lengde, høyde og bratteste celle. DTM1 i 1 m rutenett (geo.dem_tile), helling per celle med numpy.gradient, lest hver meter langs den routede linja; oppgitt er hvert sammenhengende strekk på minst 10 m med bakke på 35° eller brattere, med lengde, høyde og bratteste celle."
     },
     {
       "what": "Kantene langs linja",
-      "figure": "bakke på 45° eller brattere 16 til 24 m fra linja mellom 3062 og 3281 m (3,06 til 3,28 km); 8 til 23 m fra linja mellom 1191 og 1209 moh (4123–4202 m)",
+      "figure": "bakke på 45° eller brattere 8 til 19 m fra linja mellom 916 og 955 moh; 12 til 20 m fra linja mellom 1083 og 1117 moh",
       "how": "DTM1 i 5 m rutenett (geo.dem_tile), helling per celle med numpy.gradient; for hver 15. meter langs den routede linja er avstand og peiling til nærmeste celle på 45° eller brattere innenfor 60 m oppgitt."
     },
     {
       "what": "Bakken ved siden av linja",
-      "figure": "celler på 58,7° 50 m nordøst for linja ved 1091 moh (3151 m)",
+      "figure": "celler på 64,1° 47 m øst for linja ved 1186 moh (3,91 km)",
       "how": "DTM1 som GeoTIFF i 5 m rutenett (geo.dem_tile) langs linja, helling per celle med numpy.gradient; for hvert sjette punkt på den routede linja er bratteste celle innenfor 50 m oppgitt med avstand og peiling fra linja."
     },
     {
@@ -3175,18 +3180,28 @@
     },
     {
       "what": "Langs linja",
-      "figure": "parkeringa (OSM way/532234832) på 674 moh; Gravasstølen-parkeringa (way/1290773491) 1,26 km vest (1,2 km); Finndokkje-ryggen ved 542 og 766 m; p905 ved 1082 m (1,08 km), 906 moh; renna ved 1262 m; opp på toppen sørfra ved 1397 m (1,40 km), 987 moh; Røsehola (registerets Botn 58.90768/6.78686, 949 moh) 131 m fra linja",
+      "figure": "parkeringa (OSM way/532234832) på 674 moh; Gravasstølen-parkeringa (way/1290773491) 1,26 km vest (1,2 km); registerets Bekkekrokan (Botn, 58.90488/6.77518) 0,48 km nordvest for parkeringa; Finndokkje-ryggen ved 542 og 766 m; p905 ved 1082 m (1,08 km), 906 moh; Røsehola (registerets Botn 58.90768/6.78686, 949 moh)",
       "how": "Nærmeste punkt på den routede linja i lib/routes.ts til OSM-/registerpunktet, med avstand langs ruta og DTM1-høyden der."
     },
     {
+      "what": "Kanten mot Røsehola",
+      "figure": "fra 1,41 til 1,56 km, ved 989–1007 moh, står bakke på 37° eller brattere 5 til 31 m fra linja",
+      "how": "Som kantmålingen, men med terskel 37°: for hver 15. meter langs den routede linja avstanden til nærmeste celle på 37° eller brattere innenfor 60 m."
+    },
+    {
       "what": "Kantene langs linja",
-      "figure": "bakke på 45° eller brattere 4 til 19 m fra linja mellom 688 og 712 moh (79–147 m); 7 til 20 m fra linja mellom 952 og 1012 moh (1240–1567 m)",
+      "figure": "bakke på 45° eller brattere 4 til 19 m fra linja mellom 688 og 712 moh; 7 til 20 m fra linja mellom 952 og 1012 moh",
       "how": "DTM1 i 5 m rutenett (geo.dem_tile), helling per celle med numpy.gradient; for hver 15. meter langs den routede linja er avstand og peiling til nærmeste celle på 45° eller brattere innenfor 60 m oppgitt."
     },
     {
       "what": "Bakken under linja",
       "figure": "ingen strekk på 15 m med bakke på 35° eller brattere under linja, bratteste celle 46,0°",
       "how": "DTM1 i 5 m rutenett (geo.dem_tile), helling per celle med numpy.gradient, lest hver 5. meter langs den routede linja; oppgitt er hvert sammenhengende strekk på minst 15 m der bakken under linja er 35° eller brattere, med lengde, høyde og bratteste celle."
+    },
+    {
+      "what": "Hunnedalen",
+      "figure": "OSM relation/3488474 på fv. 450 gjennom Hunnedalen: «Occationally closed during blizzards»",
+      "how": "OSM Overpass, relasjoner på fv. 450 Hunnedalsveien."
     },
     {
       "what": "Varslingsregionen toppkoordinaten ligger i",
@@ -3202,18 +3217,18 @@
     },
     {
       "what": "Langs linja",
-      "figure": "parkeringa (OSM way/532048809) på 695 moh; Smølåsveien ender 0,2 km sør; skiløypa (OSM way/52480369, piste:type=nordic) 24 m fra linja ved 246 m (0,25 km); skaret ved 996 m (1,00 km), 856 moh; vatnet (OSM way/893675547, ele 859) 24 m fra linja ved 1086 m (1,09 km)",
+      "figure": "parkeringa (OSM way/532048809) på 695 moh; Smølåsveien ender 0,2 km sør; skiløypa (OSM way/52480369, piste:type=nordic) krysset 17 m fra linja ved 0,28 km; skaret fra 1,04 til 1,20 km, 862–868 moh; vatnet (OSM way/893675547, ele 859) 27 m fra linja ved 1,09 km; kollen sør for skaret 884,6 moh (885), 66 m fra linja; ingen topp på 893 moh i DTM1 mellom parkeringa og skaret",
       "how": "Nærmeste punkt på den routede linja i lib/routes.ts til OSM-/registerpunktet, med avstand langs ruta og DTM1-høyden der."
     },
     {
       "what": "Kantene langs flanken",
-      "figure": "bakke på 45° eller brattere 9 til 23 m fra linja mellom 932 og 1036 moh (1479–1796 m)",
+      "figure": "bakke på 45° eller brattere 4 til 20 m fra linja mellom 932 og 1023 moh",
       "how": "DTM1 i 5 m rutenett (geo.dem_tile), helling per celle med numpy.gradient; for hver 15. meter langs den routede linja er avstand og peiling til nærmeste celle på 45° eller brattere innenfor 60 m oppgitt."
     },
     {
       "what": "Bakken under linja",
-      "figure": "ingen strekk på 15 m med bakke på 35° eller brattere under linja, bratteste celle 44,3°",
-      "how": "DTM1 i 5 m rutenett (geo.dem_tile), helling per celle med numpy.gradient, lest hver 5. meter langs den routede linja; oppgitt er hvert sammenhengende strekk på minst 15 m der bakken under linja er 35° eller brattere, med lengde, høyde og bratteste celle."
+      "figure": "ingen strekk på 15 m med bakke på 35° eller brattere i 5 m rutenett; i 1 m rutenett ett strekk på 10 m ved 1046–1051 moh (1857–1867 m), bratteste celle 60°",
+      "how": "DTM1 i 5 m rutenett (geo.dem_tile), helling per celle med numpy.gradient, lest hver 5. meter langs den routede linja; oppgitt er hvert sammenhengende strekk på minst 15 m der bakken under linja er 35° eller brattere, med lengde, høyde og bratteste celle. DTM1 i 1 m rutenett (geo.dem_tile), helling per celle med numpy.gradient, lest hver meter langs den routede linja; oppgitt er hvert sammenhengende strekk på minst 10 m med bakke på 35° eller brattere, med lengde, høyde og bratteste celle."
     },
     {
       "what": "Varslingsregionen toppkoordinaten ligger i",
