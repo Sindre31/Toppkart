@@ -12365,5 +12365,343 @@
     "notes": "Ut.no: Mølnelva har dannet et markant juv; «På tur nedover anbefales det å krysset juvet/Mølnelva ved ca. 200 moh.» Fri Flyt om p970-ruta (5.2): terrenget vest for sporet er rundt 30+ grader i hele den sørøstvendte flanken fra 400 til 700 moh, og «På dager med skredfaregrad 3 må du holde behørig avstand til sørøstflankene som starter på 400-700 moh.» Sørflanken er to kilometer bred med mange valg; hold deg på linja."
    }
   ]
+ },
+ "stortinden-langfjord": {
+  "routes": [
+   {
+    "id": "langfjordbotn",
+    "name": "Fra Langfjordbotn over ryggen",
+    "description": "Fra kafeen ved krysset E6/fv. 882 i Langfjordbotn rett nordover gjennom bjørkeskogen, opp den breie ryggen over forhøyningen på 839 og 920-toppen, og langs toppryggen til Stortinden",
+    "trailhead": {
+     "name": "Kafeen i Langfjordbotn",
+     "lat": 70.04022,
+     "lng": 22.25962,
+     "elevation_m": 39.4,
+     "fullName": "Kafeen i Langfjordbotn"
+    },
+    "waypoints": [
+     {
+      "name": "nordover gjennom bjørkeskogen",
+      "lat": 70.05,
+      "lng": 22.262,
+      "elevation_m": 256.4
+     },
+     {
+      "name": "ryggen",
+      "lat": 70.0565,
+      "lng": 22.2645,
+      "elevation_m": 553.4
+     },
+     {
+      "name": "øst for kanten",
+      "lat": 70.0595,
+      "lng": 22.269,
+      "elevation_m": 684.0
+     },
+     {
+      "name": "øst for kanten",
+      "lat": 70.062,
+      "lng": 22.2685,
+      "elevation_m": 790.6
+     },
+     {
+      "name": "forhøyningen på 839",
+      "lat": 70.06352,
+      "lng": 22.26605,
+      "elevation_m": 837.7
+     },
+     {
+      "name": "midt på ryggen",
+      "lat": 70.07,
+      "lng": 22.269,
+      "elevation_m": 854.0
+     },
+     {
+      "name": "midt på ryggen",
+      "lat": 70.0716,
+      "lng": 22.2684,
+      "elevation_m": 876.0
+     },
+     {
+      "name": "midt på ryggen",
+      "lat": 70.0735,
+      "lng": 22.2686,
+      "elevation_m": 886.7
+     },
+     {
+      "name": "920-toppen",
+      "lat": 70.07891,
+      "lng": 22.26658,
+      "elevation_m": 918.5
+     },
+     {
+      "name": "toppryggen",
+      "lat": 70.08307,
+      "lng": 22.26816,
+      "elevation_m": 884.2
+     },
+     {
+      "name": "toppryggen",
+      "lat": 70.08977,
+      "lng": 22.27605,
+      "elevation_m": 906.0
+     },
+     {
+      "name": "918-toppen",
+      "lat": 70.09194,
+      "lng": 22.27816,
+      "elevation_m": 919.5
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: «Krevende skredvurdering vest og sør for toppryggen». Den østvendte gryta mot Øvre Møllevatn har «flere bratte nedkjøringer som er svært eksponerte», og flankene mot Russelvdalen er «bratt og vurderingsmessig krevende storfjellskjøring». Hold deg på ryggen."
+   }
+  ]
+ },
+ "gievdnerassa": {
+  "routes": [
+   {
+    "id": "oksfjordbotn",
+    "name": "Fra Øksfjordbotn over nordøstryggen",
+    "description": "Fra parkeringa ved skolen i Øksfjordbotn langs Gammelveien og sommervegen Geassegeaidnu østover sør for Nordelva-vatnet, opp lia øst for Skárpavággi og over det slake topplatået til Gievdnerášša",
+    "trailhead": {
+     "name": "Parkeringa ved skolen i Øksfjordbotn",
+     "lat": 70.10842,
+     "lng": 22.52829,
+     "elevation_m": 57.8,
+     "fullName": "Parkeringa ved skolen i Øksfjordbotn"
+    },
+    "waypoints": [
+     {
+      "name": "Gammelveien",
+      "lat": 70.10484,
+      "lng": 22.53046,
+      "elevation_m": 60.4
+     },
+     {
+      "name": "sommervegen Geassegeaidnu",
+      "lat": 70.10407,
+      "lng": 22.53527,
+      "elevation_m": 66.6
+     },
+     {
+      "name": "sommervegen Geassegeaidnu",
+      "lat": 70.10265,
+      "lng": 22.53762,
+      "elevation_m": 74.8
+     },
+     {
+      "name": "sommervegen Geassegeaidnu",
+      "lat": 70.10181,
+      "lng": 22.53864,
+      "elevation_m": 88.5
+     },
+     {
+      "name": "sommervegen Geassegeaidnu",
+      "lat": 70.10181,
+      "lng": 22.54504,
+      "elevation_m": 94.3
+     },
+     {
+      "name": "sommervegen Geassegeaidnu",
+      "lat": 70.10218,
+      "lng": 22.5531,
+      "elevation_m": 117.9
+     },
+     {
+      "name": "stien østover",
+      "lat": 70.1017,
+      "lng": 22.56,
+      "elevation_m": 119.8
+     },
+     {
+      "name": "sør for vatnet",
+      "lat": 70.102,
+      "lng": 22.566,
+      "elevation_m": 142.0
+     },
+     {
+      "name": "øst for tjernet",
+      "lat": 70.1045,
+      "lng": 22.57,
+      "elevation_m": 128.8
+     },
+     {
+      "name": "lia øst for steget",
+      "lat": 70.107,
+      "lng": 22.572,
+      "elevation_m": 170.1
+     },
+     {
+      "name": "ryggen nordøstover",
+      "lat": 70.1095,
+      "lng": 22.5722,
+      "elevation_m": 284.2
+     },
+     {
+      "name": "ryggen nordøstover",
+      "lat": 70.115,
+      "lng": 22.572,
+      "elevation_m": 450.9
+     },
+     {
+      "name": "ryggen nordøstover",
+      "lat": 70.1195,
+      "lng": 22.582,
+      "elevation_m": 605.9
+     },
+     {
+      "name": "ryggen",
+      "lat": 70.124,
+      "lng": 22.592,
+      "elevation_m": 748.3
+     },
+     {
+      "name": "slakere mot toppen",
+      "lat": 70.129,
+      "lng": 22.596,
+      "elevation_m": 801.8
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: «I dårlig sikt er det lett å gli ned i små og store heng brattere enn 30 grader.» Mikroterrenget er utfordrende å orientere seg i når sporene blåser igjen."
+   }
+  ]
+ },
+ "laslettind": {
+  "routes": [
+   {
+    "id": "jokelfjordeidet",
+    "name": "Fra Jøkelfjordeidet opp østryggen",
+    "description": "Fra parkeringa ved Jøkelfjordveien på Jøkelfjordeidet vestover over bekken og opp den breie østryggen til varden og toppen av Laslettind",
+    "trailhead": {
+     "name": "Parkeringa ved Jøkelfjordeidet",
+     "lat": 70.03743,
+     "lng": 22.06926,
+     "elevation_m": 162.6,
+     "fullName": "Parkeringa ved Jøkelfjordeidet"
+    },
+    "waypoints": [
+     {
+      "name": "ut.no-stien",
+      "lat": 70.03628,
+      "lng": 22.06051,
+      "elevation_m": 195.7
+     },
+     {
+      "name": "ut.no-stien",
+      "lat": 70.03574,
+      "lng": 22.04999,
+      "elevation_m": 275.0
+     },
+     {
+      "name": "ut.no-stien",
+      "lat": 70.03644,
+      "lng": 22.04083,
+      "elevation_m": 372.4
+     },
+     {
+      "name": "ut.no-stien",
+      "lat": 70.03841,
+      "lng": 22.03233,
+      "elevation_m": 491.2
+     },
+     {
+      "name": "ut.no-stien",
+      "lat": 70.03963,
+      "lng": 22.02199,
+      "elevation_m": 622.7
+     },
+     {
+      "name": "varden på Laslettind",
+      "lat": 70.04273,
+      "lng": 22.00659,
+      "elevation_m": 808.1
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: «Laslettind er omkranset av stup og bratt renneterreng sør og nord for toppen og ryggen.» Fri Flyt (Lyngenfjord): «Skavler på toppen»."
+   }
+  ]
+ },
+ "vassnestind": {
+  "routes": [
+   {
+    "id": "jokelfjord",
+    "name": "Fra Jøkelfjord vest for Golpeelva",
+    "description": "Fra parkeringa i Jøkelfjord sørover gjennom glissen skog vest for Golpeelva, opp den breie ryggen og over topplatået til varden på Vassnestind",
+    "trailhead": {
+     "name": "Parkeringa i Jøkelfjord",
+     "lat": 70.06023,
+     "lng": 21.87301,
+     "elevation_m": 21.5,
+     "fullName": "Parkeringa i Jøkelfjord"
+    },
+    "waypoints": [
+     {
+      "name": "vest for elva",
+      "lat": 70.0597,
+      "lng": 21.8716,
+      "elevation_m": 35.3
+     },
+     {
+      "name": "vest for gjelet",
+      "lat": 70.0585,
+      "lng": 21.8722,
+      "elevation_m": 58.9
+     },
+     {
+      "name": "vest for gjelet",
+      "lat": 70.0572,
+      "lng": 21.8722,
+      "elevation_m": 101.8
+     },
+     {
+      "name": "vest for Golpeelva",
+      "lat": 70.056,
+      "lng": 21.873,
+      "elevation_m": 145.1
+     },
+     {
+      "name": "vest for Golpeelva",
+      "lat": 70.0509,
+      "lng": 21.871,
+      "elevation_m": 334.1
+     },
+     {
+      "name": "ryggen",
+      "lat": 70.0465,
+      "lng": 21.871,
+      "elevation_m": 503.6
+     },
+     {
+      "name": "ryggen",
+      "lat": 70.0422,
+      "lng": 21.869,
+      "elevation_m": 651.6
+     },
+     {
+      "name": "ryggen",
+      "lat": 70.0378,
+      "lng": 21.869,
+      "elevation_m": 738.4
+     },
+     {
+      "name": "ryggen",
+      "lat": 70.035,
+      "lng": 21.87,
+      "elevation_m": 825.0
+     },
+     {
+      "name": "toppplatået",
+      "lat": 70.0335,
+      "lng": 21.874,
+      "elevation_m": 869.4
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: «Hold avstand til det bratte terrenget mot sør og nord.» Brattere parti i skoggrensa mellom 220 og 240 moh, og små partier brattere enn 30 grader mellom 440 og 600 moh."
+   }
+  ]
  }
 }

@@ -6882,6 +6882,103 @@ three, `check_guides` and `check_bands` clean (0 unsourced numbers, 12 band
 claims all agreeing), `check_treeline`, `check_gain` and `check_steepness` with
 nothing to look at, and `npm run typecheck`, `lint`, `test` and `build`.
 
+## The Vest-Finnmark round
+
+Four tours from Fri Flyt's Finnmark series (*Trygge toppturer*). 205 tours, 243
+routes. The app had nothing north of Lyngen and Troms. All four summits answer
+to **Vest-Finnmark** (3007), an A-region. Laslettind and Vassnestind lie in
+Kvænangen, which is Troms; Fri Flyt files them under Finnmark — «Laslettind er
+egentlig i Troms, men vi har adoptert den til Finnmark» — and the region on the
+cards is Vest-Finnmark for all four.
+
+| tour | start | summit | gain | km | steepest 100 m band | steepest 30 m | grade |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Stortinden i Langfjorden | 39 | 936 | 1007 | 7.40 | 19.6° | 26.3° | 3 |
+| Gievdnerášša | 58 | 898 | 879 | 6.33 | 17.3° | 29.1° | 2 |
+| Vassnestind | 22 | 896 | 879 | 3.93 | 19.2° | 26.0° | 2 |
+| Laslettind | 163 | 822 | 665 | 2.97 | 19.6° | 22.1° | 1 |
+
+### Which tours, and which were left
+
+Fri Flyt's Finnmark index has nine tours. Aspenesfjellet, Giskedalstuva, Kista
+and Midtfjellet are 400–580 m of climbing; Middagstinden above Øksfjord gives no
+line beyond «forsenkningen», and the page warns of «raske værskifter». The four
+built are the longest and the ones with a described line. Only Laslettind has a
+second source that draws it — ut.no's signed track and Ut i Nord's text — so it
+is `confidence: high` and the other three are `medium`.
+
+### Two starts for Vassnestind
+
+Fri Flyt's text starts at «Ytre Hamnebukta, der veien langs sørsiden av
+Jøkelfjorden stopper», and its fact box at «Jøkelfjord. Parkering i grustak på
+sørsiden av Fv.365». The text also says the route goes «langs vestsiden av
+Golpeelva», and Golpeelva runs out at Jøkelfjord; Ytre Hamnebukta is 2.9 km west,
+under a hillside that is steep all the way up, and from there the climb would be
+854 m, not the fact box's 885. The line starts at Jøkelfjord.
+
+### Gievdnerášša leaves the river
+
+Routed straight from the school car park towards Fri Flyt's north-east ridge, the
+line went up the Nordelva ravine between walls of 45° and more. It now follows
+Gammelveien and the summer road Geassegeaidnu east — the road Peakbook's trip
+calls «sommerveien» — south of the lake at 111 m that Nordelva drains and east
+of the tarn at 123 m, and climbs east of Skárpavággi, which is Peakbook's way up.
+That adds about a kilometre of nearly flat ground, and the ascent is 879 m
+against Fri Flyt's 797. The road is the Tappeluftløypa snowmobile trail in
+winter, and the guide says so.
+
+### Stortinden's ridge
+
+The line goes over the 839 rise and the 920 top before the summit, so it gives
+back 110 m and the card's vertical is 1010, not Fri Flyt's 900. A steep belt
+crosses the ridge at 596–609 m — 26 m of ground at 35° or more — and at
+880–888 m, 4.07 km out, the line crosses a rock step on the neck. Above it the
+east edge is 13–27 m from the line and is a lee edge under north-westerlies.
+There is no gentler line past the step: west of it is a terrace that ends in
+another step, east of it the cliff. Fri Flyt rates it KAST 3 – Komplekst, and it
+is grade 3.
+
+### The independent read
+
+The second reader found fourteen things and four of them were serious.
+**Vassnestind's line ran up the bed of Golpeelva** for its first 300 m, crossing
+the river four times between gully walls, where the guide said the river was
+9–149 m east. Three waypoints now hold the line on the west bank; the river is
+18–149 m east of it for the first 0.74 km and never west, and the guide warns of
+the ravine. The same reader measured at 1 m what the 5 m grid had missed: two
+stretches of 15 and 16 m at 35° or more at 440–479 m, which the guide now
+states instead of «aldri». **Stortinden's neck sits on a lee rim** and the line
+crosses a 13 m rock step there; an attempt to move it 19 m west put it on a 36 m
+stretch of 51° ground, so the line stayed and the guide now names the step and
+the cornice-prone east edge, and says to keep 20 m west of it. **The summit
+ridge was not «nesten flat»**: it drops to 866 m and to 889 m and gives back
+86 m between the 920 top and the summit, which the guide now gives.
+
+The rest were smaller and are fixed. Nordelva drains the 111 m lake rather than
+running into it, and the teaser no longer says the line crosses the river; the
+lake and tarn are 103 and 72 m from the line, not 160 and 107. Gievdnerášša's
+line now stays on Geassegeaidnu instead of a stream bed beside it, and the guide
+says the road is a snowmobile trail and credits Peakbook's line. «Skavler på
+toppen» belongs to Fri Flyt's Olderbakkfjellet tour, and the guide now says so
+and adds the 40° ground 41 m from Laslettind's top; the nearest 45° ground is
+33 m from the line, not «more than 30». Vassnestind's guide now quotes Fri
+Flyt's «østover» sentence that the Jøkelfjord start only partly fits, places
+Ytre Hamnebukta west-south-west, and warns of the gully head 17–24 m from the
+line at 3.76 km. The café at Langfjordbotn is open only in summer. Two points
+were not changed: the cards round verticals to 10 m, as every card does, and the
+band angles are the pipeline's own measure along the profile, not net rise over
+ground, which is what `check_bands` checks.
+
+### What ran
+
+`check_new_corridors` (Stortinden gives back 34 m between the 920 top and the
+ridge and has no mapped parking at the café — said in the record and the guide),
+`check_routes`, `check_tours` and `check_geometry` clean on 205 tours and 243
+routes, `check_ground` clean on all four, `check_guides` and `check_bands` clean
+(0 unsourced numbers, 18 band claims all agreeing), `check_treeline`,
+`check_gain` and `check_steepness` with nothing to look at, and `npm run
+typecheck`, `lint`, `test` and `build`.
+
 ## Network
 
 Everything is public and unauthenticated:
