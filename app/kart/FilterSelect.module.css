@@ -1,15 +1,15 @@
 /* Nedtrekkslistene i kartpanelet. Pillen er den samme som før; lista er ny. */
 
-.root { position: relative; min-width: 0; max-width: 100%; }
-/* Regionen skyves til høyre på gradraden, som før. */
-.root[data-strong] { margin-left: auto; }
+/* Pillen vokser med resten av filterraden, så linjen fylles ut. */
+.root { position: relative; flex: 1 1 auto; min-width: 0; max-width: 100%; }
 
 .pill {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 6px;
+  width: 100%;
   min-width: 0;
-  max-width: 100%;
   padding: 6px 10px 6px 12px;
   border-radius: var(--radius-pill);
   border: 1px solid var(--color-line);
@@ -130,12 +130,12 @@
 @keyframes fade { from { opacity: 0; } to { opacity: 1; } }
 @keyframes slide { from { transform: translateY(100%); } to { transform: none; } }
 
+/* Tettere på telefon, i takt med gradbrikkene i kartpanelet. */
+@media (max-width: 760px) {
+  .pill { padding-inline: 9px 7px; gap: 4px; }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .popover, .backdrop, .sheet { animation: none; }
   .chevron { transition: none; }
-}
-
-/* På telefon brekker gradraden, og regionen begynner til venstre på sin egen linje. */
-@media (max-width: 760px) {
-  .root[data-strong] { margin-left: 0; }
 }

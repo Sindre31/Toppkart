@@ -391,8 +391,9 @@ export default function MapView({
             </div>
 
             {/* Graden som navngitte brikker med fargeprikken fra kartet, så
-                filteret også er tegnforklaringen. Region til høyre. */}
-            <div className={s.gradeRow}>
+                filteret også er tegnforklaringen. Alle filtrene flyter i én
+                rad som brekker, og hver linje fylles helt ut. */}
+            <div className={s.filters}>
               <div className={s.gradeChips} role="group" aria-label={t.gradeGroup}>
                 {GRADE_FILTERS.map((g) => (
                   <button
@@ -416,9 +417,6 @@ export default function MapView({
                 onChange={setRegion}
                 options={[{ value: "", label: t.allRegions }, ...regions.map((r) => ({ value: r, label: r }))]}
               />
-            </div>
-
-            <div className={s.filterRow}>
               <FilterSelect
                 label={t.aspectFilterLabel}
                 value={aspect}
