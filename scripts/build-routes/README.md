@@ -6721,6 +6721,391 @@ says), `check_routes`, `check_tours` and `check_geometry` clean on 191 tours and
 agreeing), `check_treeline`, `check_gain` and `check_steepness` with nothing to
 look at, and `npm run typecheck`, `lint`, `test` and `build`.
 
+## The Haukeli and Røldal round
+
+Four tours from Fri Flyt's *Toppturer i Sørvest*, three from the E134 by
+Haukeliseter and one from the village in Røldal. 195 tours, 233 routes. Three
+summits answer to **Hardanger** (3034) and Vesle Nup to **Vest-Telemark**
+(3035), both A-regions — Vesle Nup was assumed to be Hardanger until the
+region was queried.
+
+| tour | start | summit | gain | km | steepest 100 m band | steepest 30 m | grade |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Fjetlandsnuten | 396 | 1285 | 900 | 5.67 | 13.9° | 25.0° | 2 |
+| Stavsnuten | 1054 | 1661 | 612 | 3.60 | 20.2° | 23.8° | 2 |
+| Vesle Nup | 982 | 1510 | 595 | 5.93 | 7.8° | 27.1° | 1 |
+| Sveigen | 994 | 1543 | 556 | 2.61 | 18.6° | 27.2° | 3 |
+
+### What was turned away
+
+The corpus index from the Sunnfjord round put Odda–Røldal–Haukeli at about 30
+Fri Flyt pages for peaks the app did not carry, and no tour on the map. Most
+did not pass the round's four conditions. Breifonn, Søre Tinden, Mælen,
+Hegerlandsnuten and Holmansnuten start on the Rv520 over Røldalsfjellet,
+which is closed in winter. Gauthellernuten and Røldalsåta are shuttle tours
+that need a car at both ends. Kistenuten, Store Nup, Verjesteinsnuten and
+Dyrskardsnuten are steeper than a guide with no surveyed line should send
+anyone up. Monsaskukken, Odlandnosa, Kløvsnuten, Havrenos and Søre
+Krossfonnuten had no readable second source for the line.
+
+### Sveigen ends on the top the register names
+
+Fri Flyt's line goes «Rett opp fra parkeringen … et lite skar mellom Sveigen
+(1543moh.) og p1490» and west to the top; the register puts Sveigen on that
+north top, 1543.4 on DTM1. Ut.no gives 1561 and goes to a south point 659 m
+away that reads 1560.0, behind a dip a straight line between them reads at
+1512.6. The tour ends where its primary source ends and the guide says where
+the massif's high point is. Ut.no confirms only that the north side goes from
+Pepparsteinen and «har så å si ingen anmarsj», not the gully, so the record is
+`confidence: medium`. It is grade 3, not Fri Flyt's «Moderat» 2: ut.no calls
+the whole mountain potential avalanche terrain in winter, and the ground under
+the line is 35° or steeper for 112 m between 1084 and 1130 m, straight above
+the road.
+
+### Two lines that went onto water
+
+`check_ground.py` caught both on the first routing. **Fjetlandsnuten ran 393 m
+on Røldalsvatnet**, a regulated lake at 380 m, from the end of Odlandsvegen
+south — the router found the flat ice cheaper than the hillside. **Vesle Nup
+ran 180 m over a tarn at 1185 m** north of point 1206, because the corridor
+point meant to sit «mellom punkt 1206 og Loftdokkstjønn» sat north-east of
+1206 instead. `avoidWater` was tried first and the re-route did not finish
+inside 25 minutes; corridor points along the access road and a point on the
+marked path south-east of 1206 took both lines off the water instead, and both
+now pass.
+
+### The access road up Tveitlia
+
+Both Fjetlandsnuten sources go up the access road from the power station in
+Tveitlia: ut.no «til litt forbi fjerde hårnålssving», then north through «henget
+ca 750 moh» where it asks for an avalanche assessment. The road is
+Blåbergdalsvegen (OSM way/782797255), which starts at the trailhead on
+Odlandsvegen and runs through all four hairpins; the corridor follows it with a
+point every 120 m or so, and the line is within 33 m of it to the fourth bend.
+Three legs point away from the summit — `check_new_corridors.py` lists them,
+and the record says why they stand. Above the step the line follows
+Gjertrabekk, Fri Flyt's «vestvendte bekken», on its north side from 866 m —
+and lies south of it below that, which is the side ut.no says to keep to on the
+way down.
+
+### The independent read
+
+The second reader found twelve things and three of them were serious. **The
+first draft said Fjetlandsnuten's access road was not in OSM and drew the line
+beside it, after ut.no's track** — it is Blåbergdalsvegen, starting at the very
+node the corridor started on, and the eight «stretches of 35° or more» the
+guide warned about were the road's cuttings and fill on the 5 m grid. The
+corridor now follows the road (5624 m +895 → 5673 m +900; the card stays at
+900), the guide calls the road by its name, and what is measured instead is
+the wooded hillside above it: 32.5° on average over 400 m, over 40° in places.
+**The Gjertrabekk warning was handled indirectly and Gravgjel was placed on the
+wrong face.** The line follows the north bank from 866 m to the top, with
+terrain of 40° or more 20–170 m west and north-west of it between 849 and
+997 m; the guide now says to be on the south side by 866 m at the latest, and
+that Fri Flyt's directions to the Gravgjel couloir follow this line down to
+1029 m with steep ground north of it — not, as the draft had it, on the summit's
+north and north-west faces. **Stavsnuten's last 150 m ran along the edge of the
+south face**, with 37–56° cells 10–30 m from the line; two points from ut.no's
+track move it onto the north side of the plateau (3483 m +610 → 3595 m +612,
+the card stays at 610), and the guide gives the face below the cairn, 38–43°
+in the first 90 m.
+
+The rest were smaller and are all fixed: Sveigen's «walls of the gully» were
+single steep cells on alternating sides, and «the steepest band is the first»
+was not true; Pepparsteinen is a stone on the slope, not the rest area, and
+the north couloir is now located, reached from Dyrskaret; Vesle Nup's
+«Fri Flyt warns about snorkelføre» was not in the source and is now quoted as
+written, and the lodge routes meet it north-west of Loftsdokktjønn, not at it;
+1567 is west of Stavsnuten's line, not north-west, two flank means were
+swapped, and Fri Flyt's «litt avblåst» had lost its «litt». Each record's
+`gradeReason` now gives ut.no's grade — «Krevende» for three of the four,
+«Middels» for Vesle Nup — and why the card differs.
+
+### What ran
+
+`check_new_corridors` (Pepparsteinen and the Røldal start have no mapped car
+park, Fjetlandsnuten's hairpins head away from the summit, and Overpass
+answered 500 on two trailheads — each is said in the record),
+`check_routes`, `check_tours` and `check_geometry` clean on 195 tours and
+233 routes, `check_ground` clean on all four, `check_guides` and `check_bands`
+clean (0 unsourced numbers, 28 band claims all agreeing), `check_treeline` and
+`check_gain` with nothing to look at, `check_steepness` listing only Vesle Nup,
+whose guide quotes the 5 m window, and `npm run typecheck`, `lint`, `test` and
+`build`.
+
+## The Sjodalen and Sogndal round
+
+Three tours from Fri Flyt: Heimdalshøe and Nautgardstinden from *Trygge
+toppturer*, on the east side of Jotunheimen, and Tylderingen from *Toppturar i
+Sogn*. 198 tours, 236 routes. The two in Sjodalen answer to **Jotunheimen**
+(3028) and Tylderingen to **Indre Sogn** (3029), both A-regions.
+
+| tour | start | summit | gain | km | steepest 100 m band | steepest 30 m | grade |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Nautgardstinden | 874 | 2257 | 1387 | 9.60 | 18.3° | 30.0° | 2 |
+| Heimdalshøe | 970 | 1843 | 879 | 6.32 | 14.3° | 19.3° | 1 |
+| Tylderingen | 495 | 1104 | 610 | 2.79 | 15.4° | 23.8° | 1 |
+
+### Which road is open
+
+Fv51 is closed in winter over Valdresflye, between Garli and Maurvangen, and
+open all year from Vågå to Gjendesheim. Both Sjodalen tours start on the open
+stretch — Russlie, and Maurvangen at the gate itself. The same closure, with
+Sognefjellet and the road to Leirvassbu, turned away Høgdebrotet, Loftet,
+Surtningstinden, Semmelholstinden and Store Tverrbotntinden, which are spring
+tours. Rasletinden and Besshø are already in the app. Ut.no's summer start for
+Heimdalshøe, a pull-in towards Vargebakkan, is on the closed stretch, so the
+corridor starts where Fri Flyt does.
+
+### Three thin second sources
+
+None of the three has a second source that draws the whole ski line, and each
+record is `confidence: medium`. Fri Flyt describes only the forest on
+Heimdalshøe; the line above it follows ut.no's summer path via Molflyhalsen,
+and Bessheim's winter line goes up Brurskardet, 902 m south-west, which is not
+drawn. James Baxter's winter route up Nautgardstinden starts from Heimsand by
+the same road and goes south of Russlirundhøe where Fri Flyt goes north; the
+two meet on the east side of the summit and share the east ridge. Fjordpeaks'
+Tylderingen report confirms the start, the length and the height, not the line.
+Skørsnøse above Tyinkrysset was held back: its ut.no page is Fri Flyt's text
+word for word, and one text published twice is one source. Buskrednosi,
+Kattøyra and Fivlenosi in Vigdalen had no second source for the ski line.
+
+### Nautgardstinden's height and the last steep metres
+
+The line climbs 1387 m from Russlie at 874 m; Fri Flyt gives 1260 with no start
+height. Most of it is gentle — the bands from 1600 to 1800 m are 2.2 km of
+ground at 5.1° — and the steep part is the last: 30.0° between 2175 and 2194 m
+on the east ridge, 21 m of ground at 35° or more, and a summit that falls
+52–66° within 110 m to the north, north-west and west. Fri Flyt says to leave the skis before the last
+steep bit, and Baxter that in spring «it is often necessary to remove skis». It
+is grade 2, not Fri Flyt's KAST 1, for that and for the length.
+
+### The independent read
+
+The second reader found fourteen things and three of them were serious.
+**Nautgardstinden's last 300 m ran along the rim of the north corrie**, with
+42–53° 0–20 m from the line exactly where Fri Flyt warns of the north-west
+cornice — the router had found the rim gentler than the ridge. Three points on
+the east ridge put the line 50–130 m from the edge (9647 m → 9596 m, the gain
+stays 1387, and the steepest 30 m goes from 24.2° to 30.0°), and the guide now
+says where the drop is. **The steeper ground «under Russlirundhøe» was never
+located**: it is a rocky step at 4.6–4.9 km, 1554–1635 m, with 45° cells 39 m
+from the line, and the guide now names it; the draft had also put the closest
+approach to Russlirundhøe 1.2 km early. **Heimdalshøe was «slakt hele veien»
+beside a stream gully** whose north side falls 45–57° 70–80 m from the line at
+1371–1399 m — Fri Flyt's «trange og dype bekkefar» — and the gully is now
+placed. The line also never crosses Brurskardbekken, as the draft said; ut.no's
+crossing belongs to the summer path from the west.
+
+The rest were smaller and are all fixed: Tylderingen's stølen Tråna is in the
+register after all, 26 m from the line, where the draft said it was missing;
+Baxter's cornice and «remove skis» sentences describe his Glitterheim route and
+now say so; «en av Jotunheimens høyeste» had no source and is gone; Bessheim's
+line shares the staked trail, which OSM maps, before it turns up Brurskardet;
+Fri Flyt's own figures (1000 m and 5.2 km; 1260 m and 10 km) now stand in the
+intros next to the line's; «anviste plasser» was Fri Flyt's «egna plassar». Where
+the line on Heimdalshøe crosses the north side 406–454 m below the col to 1732
+may be the top of the bowl Fri Flyt warns about, and the guide says it may be.
+
+### What ran
+
+`check_new_corridors` (Maurvangen's car park is 430 m from the start, and
+Overpass answered 500 on the other two — said in each record), `check_routes`,
+`check_tours` and `check_geometry` clean on 198 tours and 236 routes,
+`check_ground` clean on all three, `check_guides` and `check_bands` clean (0
+unsourced numbers, 14 band claims all agreeing), `check_treeline`, `check_gain`
+and `check_steepness` with nothing to look at, and `npm run typecheck`, `lint`,
+`test` and `build`.
+
+## The Bodø round
+
+Three tours from Fri Flyt's *Toppturer rundt Bodø*. 201 tours, 239 routes. All
+three summits answer to **Salten** (3016), an A-region. The app had two tours
+around Bodø, Midtitinden and Sandhornet.
+
+| tour | start | summit | gain | km | steepest 100 m band | steepest 30 m | grade |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Kistrandtindan | 7 | 982 | 976 | 3.94 | 19.1° | 25.8° | 2 |
+| Kvalhornet | 63 | 965 | 902 | 4.39 | 18.4° | 24.1° | 2 |
+| Heggmotinden | 24 | 797 | 773 | 3.39 | 16.8° | 25.1° | 2 |
+
+### What was turned away
+
+About thirty Bodø pages in the corpus index describe peaks the app does not
+carry, and most of them are steep: Korsviktinden, Spisstind, Småtindan,
+Sfinxen, Store Åselitinden, Sautinden, Bjørnhatten, Børtinden, Ryptinden, Per
+Kalsatinden, Kjerringtinden, Preikestolhola, the Aurnestindan, Fagertinden,
+Midtiskardstinden and Vassviktinden are 33–50° or ask for crampons.
+Grytviktinden is a two-car round trip. Skjelviknubben, Kvarsnestinden,
+Våtvikfjellet and Isvasstinden had no second source beyond list entries.
+Snefjellet at Misvær and Bonden on Sandhornøya were kept for a later round: the
+only second source for both is a French topo that shares the book's steepness
+figures, and their winter road access is inferred rather than documented.
+
+### Kistrandtindan's top has no name
+
+Fri Flyt's tour goes to «Kistrandtinden p979». The register's Kistrandtindan is
+a label on the south flank at 806 m, so the summit is seeded on the 979 top
+(`SUMMIT_SEED`), which climbs to 981.6 m. Ut.no's track starts at the same lay-by
+and shares the ridge south of Mølnelva to 352 m, then crosses the gorge to a 967
+m top 853 m east; the corridor follows Fri Flyt from there, to the flat at 480 m
+and north. The record says `confidence: medium`.
+
+### Heggmotinden is in a firing range
+
+Kartverket's terrain class along the whole south side of Heggmotinden is
+Skytefelt, and OSM maps Heggmoen skytefelt. The guide tells the reader to check
+the firing schedule, and the treeline is not stated because the terrain class
+cannot show it. The line leaves the forest road where a track goes left 0.53 km
+from the barrier, 0.9 km before Fri Flyt's junction, and climbs the ridge west
+of the hollow — the alternative Fri Flyt gives for it; the record says so.
+
+### The independent read
+
+The second reader found sixteen things and three of them were serious, all on
+Heggmotinden. **The line left the road at the wrong junction.** Fri Flyt's
+signed junction is where the forest road ends after 1.44 km and the road to the
+Heggmovatnet dam goes left; the pump house and the clearing are on that route,
+and the guide had put them on a track that leaves 0.9 km earlier. The line was
+kept — it climbs the ridge west of the 300–400 m hollow, which is Fri Flyt's own
+alternative to the hollow — and the guide now says where it leaves and that the
+pump house and the clearing are not on it. **«Up the half-pipe» was wrong**:
+cross-sections show the ground falling 25–43 m within 100 m to the east from 430
+m, so the line runs along the half-pipe's west edge, and from 542 m it is 6–46 m
+from the mapped summer path, which the guide never mentioned. Peakbook's «ankom
+halfpipen» described reaching it above 600 m on another line and is now quoted
+for what the half-pipe is. **The summit approach ran close to the north edge**
+while the guide called the top «slak mot vest» and kept the cornice for the
+descent. The last waypoint moved 28 m south (3368 m → 3389 m, the gain stays
+773, the steepest 30 m goes from 23.9° to 25.1° low on the ridge), but the top
+is a narrow dome: ground 10 m lower lies 20–30 m away on both sides. So the
+ascent now says that 45° ground is 21–29 m north of the line from 777 m, and
+10–15 m east at the rock nose, where the line crosses its one 16 m stretch of
+35°+ ground at 717–724 m — not at 536–540 m, as before the reroute.
+
+The rest were smaller and are fixed. Kvalhornet's teaser called it Bodø's season
+opener, which Fri Flyt says of Nattmålstuva; Nattmålstuva was pinned 0.8 km
+north-east of the top the line passes (411 m east of it, at 2.21 km), and the
+two places the sources call by that name are now told apart; Grytåga is 36–355
+m from the line, not 80–119; the 7.2 east flank now carries Fri Flyt's 32° and
+lee-slope warnings; and the guide says where the mapped path leaves the line,
+61–137 m east up the 880–940 m slope. On Kistrandtindan the start is an active
+bus stop, so the guide says parking there is not allowed and points to the car
+park 863 m west and Fri Flyt's Dinesodden, and notes the new Rv 80 under
+construction 82 m south. The gorge-edge distances were understated (45° ground
+is 12–53 m away at 176–271 m, and 19–46 m round the head of the gorge), the
+summit point is 15 m from a 61° edge, and «p970 426 m øst» was dropped — Fri
+Flyt's own p970 route points further east. Fri Flyt's 700–770 m figure on
+Heggmotinden applies only to the south-west flank, and its season and
+spring-avalanche lines are now tied to the descents they belong to.
+
+### What ran
+
+`check_new_corridors` (Kistrand has no mapped parking at the start, which is a
+bus stop — said in the record and the guide), `check_routes`, `check_tours` and
+`check_geometry` clean on 201 tours and 239 routes, `check_ground` clean on all
+three, `check_guides` and `check_bands` clean (0 unsourced numbers, 12 band
+claims all agreeing), `check_treeline`, `check_gain` and `check_steepness` with
+nothing to look at, and `npm run typecheck`, `lint`, `test` and `build`.
+
+## The Vest-Finnmark round
+
+Four tours from Fri Flyt's Finnmark series (*Trygge toppturer*). 205 tours, 243
+routes. The app had nothing north of Lyngen and Troms. All four summits answer
+to **Vest-Finnmark** (3007), an A-region. Laslettind and Vassnestind lie in
+Kvænangen, which is Troms; Fri Flyt files them under Finnmark — «Laslettind er
+egentlig i Troms, men vi har adoptert den til Finnmark» — and the region on the
+cards is Vest-Finnmark for all four.
+
+| tour | start | summit | gain | km | steepest 100 m band | steepest 30 m | grade |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Stortinden i Langfjorden | 39 | 936 | 1007 | 7.40 | 19.6° | 26.3° | 3 |
+| Gievdnerášša | 58 | 898 | 879 | 6.33 | 17.3° | 29.1° | 2 |
+| Vassnestind | 22 | 896 | 879 | 3.93 | 19.2° | 26.0° | 2 |
+| Laslettind | 163 | 822 | 665 | 2.97 | 19.6° | 22.1° | 1 |
+
+### Which tours, and which were left
+
+Fri Flyt's Finnmark index has nine tours. Aspenesfjellet, Giskedalstuva, Kista
+and Midtfjellet are 400–580 m of climbing; Middagstinden above Øksfjord gives no
+line beyond «forsenkningen», and the page warns of «raske værskifter». The four
+built are the longest and the ones with a described line. Only Laslettind has a
+second source that draws it — ut.no's signed track and Ut i Nord's text — so it
+is `confidence: high` and the other three are `medium`.
+
+### Two starts for Vassnestind
+
+Fri Flyt's text starts at «Ytre Hamnebukta, der veien langs sørsiden av
+Jøkelfjorden stopper», and its fact box at «Jøkelfjord. Parkering i grustak på
+sørsiden av Fv.365». The text also says the route goes «langs vestsiden av
+Golpeelva», and Golpeelva runs out at Jøkelfjord; Ytre Hamnebukta is 2.9 km west,
+under a hillside that is steep all the way up, and from there the climb would be
+854 m, not the fact box's 885. The line starts at Jøkelfjord.
+
+### Gievdnerášša leaves the river
+
+Routed straight from the school car park towards Fri Flyt's north-east ridge, the
+line went up the Nordelva ravine between walls of 45° and more. It now follows
+Gammelveien and the summer road Geassegeaidnu east — the road Peakbook's trip
+calls «sommerveien» — south of the lake at 111 m that Nordelva drains and east
+of the tarn at 123 m, and climbs east of Skárpavággi, which is Peakbook's way up.
+That adds about a kilometre of nearly flat ground, and the ascent is 879 m
+against Fri Flyt's 797. The road is the Tappeluftløypa snowmobile trail in
+winter, and the guide says so.
+
+### Stortinden's ridge
+
+The line goes over the 839 rise and the 920 top before the summit, so it gives
+back 110 m and the card's vertical is 1010, not Fri Flyt's 900. A steep belt
+crosses the ridge at 596–609 m — 26 m of ground at 35° or more — and at
+880–888 m, 4.07 km out, the line crosses a rock step on the neck. Above it the
+east edge is 13–27 m from the line and is a lee edge under north-westerlies.
+There is no gentler line past the step: west of it is a terrace that ends in
+another step, east of it the cliff. Fri Flyt rates it KAST 3 – Komplekst, and it
+is grade 3.
+
+### The independent read
+
+The second reader found fourteen things and four of them were serious.
+**Vassnestind's line ran up the bed of Golpeelva** for its first 300 m, crossing
+the river four times between gully walls, where the guide said the river was
+9–149 m east. Three waypoints now hold the line on the west bank; the river is
+18–149 m east of it for the first 0.74 km and never west, and the guide warns of
+the ravine. The same reader measured at 1 m what the 5 m grid had missed: two
+stretches of 15 and 16 m at 35° or more at 440–479 m, which the guide now
+states instead of «aldri». **Stortinden's neck sits on a lee rim** and the line
+crosses a 13 m rock step there; an attempt to move it 19 m west put it on a 36 m
+stretch of 51° ground, so the line stayed and the guide now names the step and
+the cornice-prone east edge, and says to keep 20 m west of it. **The summit
+ridge was not «nesten flat»**: it drops to 866 m and to 889 m and gives back
+86 m between the 920 top and the summit, which the guide now gives.
+
+The rest were smaller and are fixed. Nordelva drains the 111 m lake rather than
+running into it, and the teaser no longer says the line crosses the river; the
+lake and tarn are 103 and 72 m from the line, not 160 and 107. Gievdnerášša's
+line now stays on Geassegeaidnu instead of a stream bed beside it, and the guide
+says the road is a snowmobile trail and credits Peakbook's line. «Skavler på
+toppen» belongs to Fri Flyt's Olderbakkfjellet tour, and the guide now says so
+and adds the 40° ground 41 m from Laslettind's top; the nearest 45° ground is
+33 m from the line, not «more than 30». Vassnestind's guide now quotes Fri
+Flyt's «østover» sentence that the Jøkelfjord start only partly fits, places
+Ytre Hamnebukta west-south-west, and warns of the gully head 17–24 m from the
+line at 3.76 km. The café at Langfjordbotn is open only in summer. Two points
+were not changed: the cards round verticals to 10 m, as every card does, and the
+band angles are the pipeline's own measure along the profile, not net rise over
+ground, which is what `check_bands` checks.
+
+### What ran
+
+`check_new_corridors` (Stortinden gives back 34 m between the 920 top and the
+ridge and has no mapped parking at the café — said in the record and the guide),
+`check_routes`, `check_tours` and `check_geometry` clean on 205 tours and 243
+routes, `check_ground` clean on all four, `check_guides` and `check_bands` clean
+(0 unsourced numbers, 18 band claims all agreeing), `check_treeline`,
+`check_gain` and `check_steepness` with nothing to look at, and `npm run
+typecheck`, `lint`, `test` and `build`.
+
 ## Network
 
 Everything is public and unauthenticated:

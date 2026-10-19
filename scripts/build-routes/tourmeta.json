@@ -1,4 +1,48 @@
 {
+ "gievdnerassa": {
+  "name": "Gievdnerášša",
+  "region": "Vest-Finnmark",
+  "summitM": 898,
+  "verticalM": 880,
+  "duration": "4–6 t",
+  "grade": 2,
+  "aspect": "SV",
+  "season": "des–mai",
+  "hasGuide": true
+ },
+ "stortinden-langfjord": {
+  "name": "Stortinden i Langfjorden",
+  "region": "Vest-Finnmark",
+  "summitM": 936,
+  "verticalM": 1010,
+  "duration": "5–7 t",
+  "grade": 3,
+  "aspect": "S",
+  "season": "nov–mai",
+  "hasGuide": true
+ },
+ "laslettind": {
+  "name": "Laslettind",
+  "region": "Vest-Finnmark",
+  "summitM": 822,
+  "verticalM": 660,
+  "duration": "3–5 t",
+  "grade": 1,
+  "aspect": "Ø",
+  "season": "nov–mai",
+  "hasGuide": true
+ },
+ "vassnestind": {
+  "name": "Vassnestind",
+  "region": "Vest-Finnmark",
+  "summitM": 896,
+  "verticalM": 880,
+  "duration": "3–5 t",
+  "grade": 2,
+  "aspect": "N",
+  "season": "jan–mai",
+  "hasGuide": true
+ },
  "storgalten": {
   "name": "Storgalten",
   "region": "Lyngen",
@@ -1033,6 +1077,39 @@
   "season": "jan–apr",
   "hasGuide": true
  },
+ "heggmotinden": {
+  "name": "Heggmotinden",
+  "region": "Bodø",
+  "summitM": 797,
+  "verticalM": 770,
+  "duration": "3–5 t",
+  "grade": 2,
+  "aspect": "SV",
+  "season": "des–apr",
+  "hasGuide": true
+ },
+ "kvalhornet": {
+  "name": "Kvalhornet",
+  "region": "Bodø",
+  "summitM": 965,
+  "verticalM": 900,
+  "duration": "4–6 t",
+  "grade": 2,
+  "aspect": "SØ",
+  "season": "des–mai",
+  "hasGuide": true
+ },
+ "kistrandtindan": {
+  "name": "Kistrandtindan",
+  "region": "Bodø",
+  "summitM": 982,
+  "verticalM": 980,
+  "duration": "4–6 t",
+  "grade": 2,
+  "aspect": "S",
+  "season": "feb–mai",
+  "hasGuide": true
+ },
  "midtitinden": {
   "name": "Midtitinden",
   "region": "Bodø",
@@ -1528,6 +1605,17 @@
   "season": "apr–jun",
   "hasGuide": true
  },
+ "nautgardstinden": {
+  "name": "Nautgardstinden",
+  "region": "Jotunheimen",
+  "summitM": 2257,
+  "verticalM": 1390,
+  "duration": "7–9 t",
+  "grade": 2,
+  "aspect": "Ø",
+  "season": "feb–mai",
+  "hasGuide": true
+ },
  "gronlifjellet": {
   "name": "Grønlifjellet",
   "region": "Sunnfjord",
@@ -1581,6 +1669,17 @@
   "grade": 2,
   "aspect": "N",
   "season": "apr–jun",
+  "hasGuide": true
+ },
+ "heimdalshoe": {
+  "name": "Heimdalshøe",
+  "region": "Jotunheimen",
+  "summitM": 1843,
+  "verticalM": 880,
+  "duration": "4–6 t",
+  "grade": 1,
+  "aspect": "NV",
+  "season": "des–apr",
   "hasGuide": true
  },
  "eggja": {
@@ -1680,6 +1779,17 @@
   "grade": 1,
   "aspect": "NV",
   "season": "feb–mai",
+  "hasGuide": true
+ },
+ "tylderingen": {
+  "name": "Tylderingen",
+  "region": "Sogn",
+  "summitM": 1104,
+  "verticalM": 610,
+  "duration": "2–4 t",
+  "grade": 1,
+  "aspect": "S",
+  "season": "des–apr",
   "hasGuide": true
  },
  "ulvsjoberget": {
@@ -2023,6 +2133,28 @@
   "season": "jan–apr",
   "hasGuide": true
  },
+ "stavsnuten": {
+  "name": "Stavsnuten",
+  "region": "Haukeli",
+  "summitM": 1661,
+  "verticalM": 610,
+  "duration": "3–5 t",
+  "grade": 2,
+  "aspect": "S",
+  "season": "feb–mai",
+  "hasGuide": true
+ },
+ "vesle-nup": {
+  "name": "Vesle Nup",
+  "region": "Haukeli",
+  "summitM": 1510,
+  "verticalM": 600,
+  "duration": "3–5 t",
+  "grade": 1,
+  "aspect": "SV",
+  "season": "des–mai",
+  "hasGuide": true
+ },
  "gaustatoppen": {
   "name": "Gaustatoppen",
   "region": "Telemark",
@@ -2042,6 +2174,28 @@
   "duration": "2–4 t",
   "grade": 2,
   "aspect": "V",
+  "season": "des–mai",
+  "hasGuide": true
+ },
+ "sveigen": {
+  "name": "Sveigen",
+  "region": "Haukeli",
+  "summitM": 1543,
+  "verticalM": 560,
+  "duration": "2–4 t",
+  "grade": 3,
+  "aspect": "N",
+  "season": "jan–apr",
+  "hasGuide": true
+ },
+ "fjetlandsnuten": {
+  "name": "Fjetlandsnuten",
+  "region": "Røldal",
+  "summitM": 1285,
+  "verticalM": 900,
+  "duration": "4–6 t",
+  "grade": 2,
+  "aspect": "SV",
   "season": "des–mai",
   "hasGuide": true
  },

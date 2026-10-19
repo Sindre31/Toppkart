@@ -468,4 +468,25 @@ PEAKS = [
     #   SUMMIT_SEED i resolve_summits.py set klatringa på OSM node/3888574483.
     ("eggja", "Rimmane", ["Sunnfjord"], 1209, 61.42198, 6.20446),
     ("venevassegga", "Venevassegga", ["Sunnfjord"], 1023, 61.37503, 6.18306),
+    # — Røldal- og Haukeli-runden: fire toppturar frå Fri Flyts Røldal/Haukeli-sider,
+    #   kvar med ein ut.no-skitur som andre kjelde. Tre frå E134 på Haukelifjell,
+    #   ein frå Tveita i Røldal. Vesle Nup: ut.no seier 1510, Fri Flyt 1540. —
+    ("stavsnuten", "Stavsnuten", ["Ullensvang"], 1661, 59.85965, 7.00984),
+    ("sveigen", "Sveigen", ["Ullensvang"], 1543, 59.83730, 7.07723),
+    ("vesle-nup", "Vesle Nup", ["Vinje"], 1510, 59.85865, 7.23250),
+    ("fjetlandsnuten", "Fjetlandsnuten", ["Ullensvang"], 1287, 59.82273, 6.85390),
+    ("heimdalshoe", "Heimdalshøe", ["Vågå"], 1843, 61.45438, 8.90212),
+    ("nautgardstinden", "Nautgardstinden", ["Lom", "Vågå"], 2258, 61.60330, 8.75943),
+    ("tylderingen", "Tylderingen", ["Sogndal"], 1104, 61.29201, 7.03271),
+    ("kvalhornet", "Kvalhornet", ["Fauske", "Bodø"], 962, 67.37358, 15.15778),
+    ("heggmotinden", "Heggmotinden", ["Bodø"], 798, 67.37538, 14.87980),
+    ("kistrandtindan", "Kistrandtindan", ["Bodø", "Fauske"], 979, 67.34940, 15.06760),
+    # Vest-Finnmark-runden (Fri Flyt, «Finnmark»). Laslettind og Vassnestind
+    #   ligg i Kvænangen kommune, men Fri Flyt fører dei under Finnmark og
+    #   varslingsregionen er Vest-Finnmark. Gievdnerassa heiter Gievdnerášša i
+    #   registeret. —
+    ("stortinden-langfjord", "Stortinden", ["Loppa", "Alta"], 935, 70.09224, 22.30232),
+    ("gievdnerassa", "Gievdnerášša", ["Alta"], 897, 70.13490, 22.59406),
+    ("laslettind", "Laslettind", ["Kvænangen"], 819, 70.04275, 22.00658),
+    ("vassnestind", "Vassnestind", ["Kvænangen"], 897, 70.03146, 21.88384),
 ]

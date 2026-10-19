@@ -233,4 +233,20 @@ NEW_TOURS = {
     "gronlifjellet": ("Grønlifjellet", "Sunnfjord"),
     "eggja": ("Eggja", "Sunnfjord"),
     "venevassegga": ("Venevassegga", "Sunnfjord"),
+    # — Røldal- og Haukeli-runden —
+    "stavsnuten": ("Stavsnuten", "Haukeli"),
+    "sveigen": ("Sveigen", "Haukeli"),
+    "vesle-nup": ("Vesle Nup", "Haukeli"),
+    "fjetlandsnuten": ("Fjetlandsnuten", "Røldal"),
+    "heimdalshoe": ("Heimdalshøe", "Jotunheimen"),
+    "nautgardstinden": ("Nautgardstinden", "Jotunheimen"),
+    "tylderingen": ("Tylderingen", "Sogn"),
+    "kvalhornet": ("Kvalhornet", "Bodø"),
+    "heggmotinden": ("Heggmotinden", "Bodø"),
+    "kistrandtindan": ("Kistrandtindan", "Bodø"),
+    # — Vest-Finnmark-runden —
+    "stortinden-langfjord": ("Stortinden i Langfjorden", "Vest-Finnmark"),
+    "gievdnerassa": ("Gievdnerášša", "Vest-Finnmark"),
+    "laslettind": ("Laslettind", "Vest-Finnmark"),
+    "vassnestind": ("Vassnestind", "Vest-Finnmark"),
 }

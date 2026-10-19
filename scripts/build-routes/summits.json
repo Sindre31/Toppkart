@@ -1622,5 +1622,117 @@
     "summit_dtm": 1204.0,
     "claims": 1209,
     "stored_off_km": 1.03
+  },
+  "stavsnuten": {
+    "name": "Stavsnuten",
+    "lat": 59.85961,
+    "lng": 7.0101,
+    "summit_dtm": 1660.9,
+    "claims": 1661,
+    "stored_off_km": 0.02
+  },
+  "sveigen": {
+    "name": "Sveigen",
+    "lat": 59.83683,
+    "lng": 7.07817,
+    "summit_dtm": 1543.4,
+    "claims": 1543,
+    "stored_off_km": 0.07
+  },
+  "vesle-nup": {
+    "name": "Vesle Nup",
+    "lat": 59.85855,
+    "lng": 7.23287,
+    "summit_dtm": 1509.8,
+    "claims": 1510,
+    "stored_off_km": 0.02
+  },
+  "fjetlandsnuten": {
+    "name": "Fjetlandsnuten",
+    "lat": 59.82294,
+    "lng": 6.85402,
+    "summit_dtm": 1284.8,
+    "claims": 1287,
+    "stored_off_km": 0.02
+  },
+  "heimdalshoe": {
+    "name": "Heimdalshøe",
+    "lat": 61.45438,
+    "lng": 8.90219,
+    "summit_dtm": 1843.0,
+    "claims": 1843,
+    "stored_off_km": 0.0
+  },
+  "nautgardstinden": {
+    "name": "Nautgardstinden",
+    "lat": 61.60324,
+    "lng": 8.75936,
+    "summit_dtm": 2257.1,
+    "claims": 2258,
+    "stored_off_km": 0.01
+  },
+  "tylderingen": {
+    "name": "Tylderingen",
+    "lat": 61.29215,
+    "lng": 7.03255,
+    "summit_dtm": 1104.5,
+    "claims": 1104,
+    "stored_off_km": 0.02
+  },
+  "kvalhornet": {
+    "name": "Kvalhornet",
+    "lat": 67.37358,
+    "lng": 15.15777,
+    "summit_dtm": 965.0,
+    "claims": 962,
+    "stored_off_km": 0.0
+  },
+  "heggmotinden": {
+    "name": "Heggmotinden",
+    "lat": 67.37541,
+    "lng": 14.87934,
+    "summit_dtm": 797.4,
+    "claims": 798,
+    "stored_off_km": 0.02
+  },
+  "kistrandtindan": {
+    "name": "Kistrandtindan",
+    "lat": 67.34935,
+    "lng": 15.06775,
+    "summit_dtm": 981.6,
+    "claims": 979,
+    "stored_off_km": 0.01
+  },
+  "stortinden-langfjord": {
+    "name": "Stortinden",
+    "lat": 70.09225,
+    "lng": 22.30233,
+    "summit_dtm": 935.5,
+    "claims": 935,
+    "stored_off_km": 0.0
+  },
+  "gievdnerassa": {
+    "name": "Gievdnerášša",
+    "lat": 70.13487,
+    "lng": 22.59386,
+    "summit_dtm": 897.8,
+    "claims": 897,
+    "stored_off_km": 0.01
+  },
+  "laslettind": {
+    "name": "Laslettind",
+    "lat": 70.04458,
+    "lng": 22.00059,
+    "summit_dtm": 822.1,
+    "claims": 819,
+    "stored_off_km": 0.31
+  },
+  "vassnestind": {
+    "name": "Vassnestind",
+    "lat": 70.03148,
+    "lng": 21.88364,
+    "summit_dtm": 896.2,
+    "claims": 897,
+    "stored_off_km": 0.01
   }
 }
