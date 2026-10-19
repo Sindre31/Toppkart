@@ -13598,12 +13598,26 @@
     "description": "Fra Maurvangen Fjellpark sørover opp gjennom bjørkeskogen, langs Brurskardbekken, opp på Molflyhalsen og ryggen østover til toppen",
     "trailhead": {
      "name": "Maurvangen Fjellpark",
-     "lat": 61.48883,
-     "lng": 8.84352,
-     "elevation_m": 970.5,
+     "lat": 61.48871,
+     "lng": 8.84345,
+     "elevation_m": 971.0,
      "fullName": "Maurvangen Fjellpark"
     },
     "waypoints": [
+     {
+      "name": "utenom bygningene",
+      "lat": 61.4885,
+      "lng": 8.84307,
+      "elevation_m": 971.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/199805839, way/925444497."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 61.48805,
+      "lng": 8.84283,
+      "elevation_m": 973.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/199805839, way/925444497."
+     },
      {
       "name": "bjørkeskogen",
       "lat": 61.483,
@@ -13747,10 +13761,31 @@
     },
     "waypoints": [
      {
+      "name": "utenom bygningene",
+      "lat": 61.27146,
+      "lng": 7.02862,
+      "elevation_m": 515.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/942986306, way/942990631."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 61.27191,
+      "lng": 7.02884,
+      "elevation_m": 525.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/942986306, way/942990631."
+     },
+     {
       "name": "over jordet",
       "lat": 61.276,
       "lng": 7.027,
       "elevation_m": 634.9
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 61.27932,
+      "lng": 7.02696,
+      "elevation_m": 742.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/942985593."
      },
      {
       "name": "ryggen",
@@ -14036,12 +14071,19 @@
     "description": "Fra kafeen ved krysset E6/fv. 882 i Langfjordbotn rett nordover gjennom bjørkeskogen, opp den breie ryggen over forhøyningen på 839 og 920-toppen, og langs toppryggen til Stortinden",
     "trailhead": {
      "name": "Kafeen i Langfjordbotn",
-     "lat": 70.04022,
-     "lng": 22.25962,
-     "elevation_m": 39.4,
+     "lat": 70.04028,
+     "lng": 22.2595,
+     "elevation_m": 40.0,
      "fullName": "Kafeen i Langfjordbotn"
     },
     "waypoints": [
+     {
+      "name": "utenom bygningene",
+      "lat": 70.04035,
+      "lng": 22.25931,
+      "elevation_m": 40.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/1008150402."
+     },
      {
       "name": "nordover gjennom bjørkeskogen",
       "lat": 70.05,
@@ -14139,6 +14181,13 @@
       "lat": 70.10484,
       "lng": 22.53046,
       "elevation_m": 60.4
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 70.10461,
+      "lng": 22.53194,
+      "elevation_m": 62.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/759043353."
      },
      {
       "name": "sommervegen Geassegeaidnu",

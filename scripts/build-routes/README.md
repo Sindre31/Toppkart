@@ -6612,8 +6612,14 @@ building. Five needed more than the pass:
 Seven more cards moved with their gain: Hesten-Segla 510 → 520, Rørnestinden
 1018 → 1022, Slogen 1535 → 1536, Snønipa 1490 → 1500, Torskmannen 750 → 760,
 Tromsdalstinden 1212 → 1213, and Rondslottet. A last `check_ground.py
---houses` over all 229 routes, with fresh footprints for every moved line, is
-the check that this round is finished.
+--houses` over all 229 routes, with fresh footprints for every moved line, came
+back clean.
+
+The fourteen tours main gained while this round ran were checked the same way.
+Four went through buildings: Gievdnerášša, Heimdalshøe from Maurvangen,
+Stortinden from Langfjordbotn and Tylderingen. Two of them started inside one.
+All four took the standard detour, and none of their cards moved. 205 tours and
+243 routes now go through no mapped building.
 
 ## The Sunnfjord round
 
