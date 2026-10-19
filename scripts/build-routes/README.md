@@ -6706,6 +6706,54 @@ clean (0 unsourced numbers, 28 band claims all agreeing), `check_treeline` and
 whose guide quotes the 5 m window, and `npm run typecheck`, `lint`, `test` and
 `build`.
 
+## The Sjodalen and Sogndal round
+
+Three tours from Fri Flyt: Heimdalshøe and Nautgardstinden from *Trygge
+toppturer*, on the east side of Jotunheimen, and Tylderingen from *Toppturar i
+Sogn*. 198 tours, 236 routes. The two in Sjodalen answer to **Jotunheimen**
+(3028) and Tylderingen to **Indre Sogn** (3029), both A-regions.
+
+| tour | start | summit | gain | km | steepest 100 m band | steepest 30 m | grade |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Nautgardstinden | 874 | 2257 | 1387 | 9.65 | 16.6° | 24.2° | 2 |
+| Heimdalshøe | 970 | 1843 | 879 | 6.32 | 14.3° | 19.3° | 1 |
+| Tylderingen | 495 | 1104 | 610 | 2.79 | 15.4° | 23.8° | 1 |
+
+### Which road is open
+
+Fv51 is closed in winter over Valdresflye, between Garli and Maurvangen, and
+open all year from Vågå to Gjendesheim. Both Sjodalen tours start on the open
+stretch — Russlie, and Maurvangen at the gate itself. The same closure, with
+Sognefjellet and the road to Leirvassbu, turned away Høgdebrotet, Loftet,
+Surtningstinden, Semmelholstinden and Store Tverrbotntinden, which are spring
+tours. Rasletinden and Besshø are already in the app. Ut.no's summer start for
+Heimdalshøe, a pull-in towards Vargebakkan, is on the closed stretch, so the
+corridor starts where Fri Flyt does.
+
+### Three thin second sources
+
+None of the three has a second source that draws the whole ski line, and each
+record is `confidence: medium`. Fri Flyt describes only the forest on
+Heimdalshøe; the line above it follows ut.no's summer path via Molflyhalsen,
+and Bessheim's winter line goes up Brurskardet, 902 m south-west, which is not
+drawn. James Baxter's winter route up Nautgardstinden starts from Heimsand by
+the same road and goes south of Russlirundhøe where Fri Flyt goes north; the
+two meet on the east side of the summit and share the east ridge. Fjordpeaks'
+Tylderingen report confirms the start, the length and the height, not the line.
+Skørsnøse above Tyinkrysset was held back: its ut.no page is Fri Flyt's text
+word for word, and one text published twice is one source. Buskrednosi,
+Kattøyra and Fivlenosi in Vigdalen had no second source for the ski line.
+
+### Nautgardstinden's height and the last steep metres
+
+The line climbs 1387 m from Russlie at 874 m; Fri Flyt gives 1260 with no start
+height. Most of it is gentle — the bands from 1600 to 1800 m are 2.2 km of
+ground at 5.1° — and the steep part is the last: 24.2° between 2216 and 2236 m,
+17 m of ground at 35° or more, and a summit that falls 52–66° within 110 m to
+the north, north-west and west. Fri Flyt says to leave the skis before the last
+steep bit, and Baxter that in spring «it is often necessary to remove skis». It
+is grade 2, not Fri Flyt's KAST 1, for that and for the length.
+
 ## Network
 
 Everything is public and unauthenticated:

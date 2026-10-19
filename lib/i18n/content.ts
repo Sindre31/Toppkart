@@ -428,6 +428,12 @@ export const TOUR_TEASER_EN: Record<string, string> = {
     "600 metres of ascent from Ulevå: the stream valley up to the flat at 1200, the col towards top 1469 and the ridge east to the cairn — the gentle start at Haukeli.",
   fjetlandsnuten:
     "900 metres of ascent from Røldal: the access road up Tveitlia, the slope at 750 and the west-facing stream up to the mast — the village mountain right above Røldal.",
+  heimdalshoe:
+    "880 metres of ascent from Maurvangen: up through the birch forest, across Brurskardbekken and along the Molflyhalsen ridge to the top — gentle and open, with a view over Jotunheimen.",
+  nautgardstinden:
+    "1390 metres of ascent from Russlie in Sjodalen: west towards Steinhøe, north of Russlirundhøe and up the east ridge to one of Jotunheimen's highest — gentle most of the way.",
+  tylderingen:
+    "610 metres of ascent from Fretland in Sogndalsdalen: across the field and up the southern ridge through open farmland to the top — short and south-facing, with the sun in your face.",
 
 };
 
@@ -5333,6 +5339,40 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       caption: "639 metres of climbing over 5.3 kilometres from Juvasshytta — 1.6 of them on Styggebrean, roped.",
     },
   },
+  nautgardstinden: {
+    intro:
+      "1387 metres of climbing over 9.65 km from Russlie in Sjodalen: west towards Steinhøe, north of Russlirundhøe, across the long flat and up the east ridge to the summit at 2257 m. Most of it is gentle; the band from 1600 to 1800 m is 2.2 km of ground at 5.1 degrees. The steep part is the last: 16.5 and 16.6 degrees from 2000 to 2200 m and the steepest sustained section 24.2 degrees between 2216 and 2236, just below the summit. Fri Flyt: “It can be a good idea to leave your skis before the last steep section to the top.”",
+    ascent: [
+      "Start at the car park at Russlie, 874 m, on the Fv51 Sjodalsvegen. Fri Flyt: “There are several possible starting points for the tour to Nautgardstinden, but a good one is Russlie by the road from Vågå towards Valdresflye.” The forest lets go at 1013 m, 0.61 km from the start.",
+      "Fri Flyt: “Start by heading west towards Steinhøe and keep right of the steeper terrain below Russlirundhøe, before you come onto a flatter stretch.” The line passes 165 metres north of Steinhøe at 3.14 km and 1449 m, and at 4.85 km and 1613 m it is north of Russlirundhøe, which lies 956 metres south of the line. The steepest stretch here is the band from 1000 to 1100 m at 16.1 degrees, early in the tour.",
+      "Then comes the flat. The bands from 1600 to 1700 and from 1700 to 1800 m measure 5.1 degrees each over 1044 and 1170 metres of ground, and top 1743 is 332 metres south of the line at 6.73 km. Fri Flyt: “From here it climbs more steeply towards the Nautgard peaks. Austre Nautgardstinden is on the right, the main summit on the left.” Austre Nautgardstinden is 701 metres north-north-east of the line at 9.24 km.",
+      "The line goes up the east ridge from 2035 m at 8.91 km — 16.5 degrees from 2000 to 2100 and 16.6 from 2100 to 2200. The steepest sustained section is 24.2 degrees between 2216 and 2236 m, and there the line crosses 17 metres of ground at 35 degrees or more at 2214–2228 m, with the steepest cell at 61 degrees. Baxter: “The last section of the east ridge is relatively steep but should not be a problem in the summer or winter (provided it is not icy).” Fri Flyt recommends doing the last bit on foot, and Baxter writes of spring that “it is often necessary to remove skis”. The east ridge itself measures 35.3 degrees 30 to 90 metres from the summit.",
+    ],
+    descent: [
+      "Fri Flyt: “Follow the ascent route for the first stretch from the summit. From there you can choose your line in the gentle terrain towards the car. Watch out for the steep section below Russlirundhøe.”",
+      "The summit falls away steeply to the north, north-west and west: 60.7 degrees 20 to 80 metres out to the north, 66.4 to the north-west and 52.3 to the west. Fri Flyt: “Steep terrain around the summit. Keep well away from the cornice on the north-west side.” Baxter: “During the spring, the rim of this corrie sports some huge cornices and a respectful distance should be maintained to avoid plunging through them, especially in poor weather.”",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "The steepest sustained section is 24.2 degrees between 2216 and 2236 m, just below the summit, and there the ground under the line is 35 degrees or steeper for 17 metres. Below 2000 m the steepest band is 16.1 degrees from 1000 to 1100. Fri Flyt grades the tour “KAST 1 – Easy” with the steepest point under 25 degrees; here it is grade 2 for the length, the height and the last steep stretch.",
+      },
+      {
+        title: "The terrain around it",
+        body: "The north, north-west and west sides of the summit are 52.3 to 66.4 degrees in their steepest windows just below the top. Fri Flyt: “Watch out for the steep section below Russlirundhøe.” Fri Flyt's learning point is wind transport of snow: “See how the snow settles in hollows and stream gullies.”",
+      },
+      {
+        title: "Before you go",
+        body: "Check today's avalanche forecast for Jotunheimen at varsom.no. Jotunheimen is an A region and is forecast daily in season. The Fv51 is open from Vågå to Gjendesheim all year; the stretch over Valdresflye south of Maurvangen is closed in winter. Bring a transceiver, probe and shovel.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "874 m",
+      endLabel: "2257 m",
+      distanceLabel: "9.6 km",
+      caption: "1387 metres of climbing and 9.65 km from Russlie, with the treeline at 1013 m, the flat between 1600 and 1800 and the east ridge from 2035.",
+    },
+  },
   gronlifjellet: {
     intro:
       "1155 metres of climbing over 8.10 km from the ski-touring car park at Ålhus: almost four kilometres of forest road to Gotdalsstøylen, up into Tolsbotnen and Litlebotn, and the narrow south-east ridge to Grønlifjellet at 1386 m. The steepest sustained section on the line is 23.8 degrees between 1050 and 1073 m, on the pitch up onto the ridge — but Fri Flyt warns that the crest “can feel steeper than the measurements say”, because it is narrow and corniced to the east.",
@@ -5504,6 +5544,40 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       endLabel: "2068 m",
       distanceLabel: "6.7 km",
       caption: "783 metres of climbing and 6.70 km from Korpen to the summit — 113 of them given back along the west side of the reservoir, before the climbing begins.",
+    },
+  },
+  heimdalshoe: {
+    intro:
+      "879 metres of climbing over 6.32 km from Maurvangen: up through the birch forest, across Brurskardbekken, onto Molflyhalsen and along the ridge east to the top at 1843 m. It is gentle all the way — the steepest band is 14.3 degrees between 1300 and 1400 m, and the steepest sustained section 19.3 degrees between 1383 and 1398. Fri Flyt: “Gentle, open terrain where there is seldom much snow.”",
+    ascent: [
+      "Start at Maurvangen Fjellpark, 970 m, on the Fv51 in Sjodalen. Fri Flyt: “Start: Maurvangen Fjellpark. Talk to the hosts about parking.” The Maurvangen rest area and a car park are 430 metres north.",
+      "Fri Flyt: “The tour starts in the forest beyond Maurvangen. You can follow a packed, staked trail up through the forest, but it is often just as nice to make your own track up through the mountain birch.” The line goes south through the forest, and the forest lets go at 1036 m, 1.17 km from the start. Brurskardbekken runs 132 metres west of the line at 1.62 km.",
+      "At 1181 m, 2.22 km from the start, the line turns east. Ut.no describes the summer path like this: “At just under 1200 m you leave the path, cross Brurskardbekken at a suitable spot and slant up towards Mollflyhalsen.” This is the steepest part of the tour — 12.5 degrees from 1200 to 1300 m and 14.3 from 1300 to 1400, with the steepest section at 19.3 degrees between 1383 and 1398. You reach Molflyhalsen at 1447 m after 3.60 km.",
+      "Ut.no: “This ridge is then followed up to a little over 1600 m.” Above 1600 it is almost level — the band from 1600 to 1700 m measures 4.4 degrees over 1214 metres of ground — and ut.no writes that the terrain becomes “mostly stony”. The ground under the line is never 35 degrees or steeper. The summit is a plateau: 3.7 to 15.9 degrees on average to every side over 500 metres. Bessheim describes a different winter line, across Sjodalsvatnet to Brurskaret and a staked trail “steep to the top”; Brurskardet is 902 metres south-west of this line.",
+    ],
+    descent: [
+      "Fri Flyt: “Descent the same way as the ascent, or down between Heimdalshø and 1732 m. The snow is often better there. As the terrain is gentle all the way, the tour is not as exciting after big snowfalls.” Top 1732 is 582 metres south-west of the line.",
+      "The bowl between Heimdalshøe and 1732 is the one Fri Flyt warns about: it “can collect large amounts of snow, and should only be skied in late winter and spring”. For the easy tour, ski down the way you came.",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "The steepest band is 14.3 degrees between 1300 and 1400 m, and the steepest sustained section 19.3 degrees between 1383 and 1398. The ground under the line is not 35 degrees or steeper anywhere. Fri Flyt grades the tour “KAST 1 – Easy” with the steepest point under 30 degrees.",
+      },
+      {
+        title: "The terrain around it",
+        body: "Fri Flyt: “Watch out for narrow, deep stream gullies that collect long, hard and steep cornices.” The north-facing bowl between the summit and 1732 can collect large amounts of snow. Above the forest it is bare mountain with no shelter, and the summit is a stony plateau.",
+      },
+      {
+        title: "Before you go",
+        body: "Check today's avalanche forecast for Jotunheimen at varsom.no. Jotunheimen is an A region and is forecast daily in season. The Fv51 is open from Vågå to Gjendesheim all year; the stretch over Valdresflye south of Maurvangen is closed in winter. Bring a transceiver, probe and shovel.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "970 m",
+      endLabel: "1843 m",
+      distanceLabel: "6.3 km",
+      caption: "879 metres of climbing and 6.32 km from Maurvangen, with the treeline at 1036 m, Molflyhalsen at 1447 and the steepest band between 1300 and 1400.",
     },
   },
   eggja: {
@@ -5820,6 +5894,39 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       endLabel: "1607 m",
       distanceLabel: "3.3 km",
       caption: "1061 to 1607 m: flat for the first kilometre, then an even climb up the north-west shoulder to the iron poles.",
+    },
+  },
+  tylderingen: {
+    intro:
+      "610 metres of climbing over 2.79 km from Fretland in Sogndalsdalen: across the field, up through the forest and the southernmost ridge, and on the west side of the ridge for the last stretch to the top at 1104 m. The steepest band is 15.4 degrees between 900 and 1000 m, and the steepest sustained section 23.8 degrees between 691 and 707. Fri Flyt: “The south side of Tylderingen is a fine tour in the winter sun with good views and open, ski-friendly country.”",
+    ascent: [
+      "Start at the car park by the farms at Fretland, 495 m. Fri Flyt: “Turn off at the Fretland sign and park up by the farms in suitable spots.” and “Show consideration when you park by the farms.”",
+      "Fri Flyt: “From the westernmost farm you cross the field to the summer farm Tråna. From there it is open farmland up to the treeline.” The line goes north across the field and passes Stokksete 80 metres away at 1.12 km. The bands from 500 to 900 m measure 11.3 to 14.0 degrees, and the steepest section of the tour, 23.8 degrees, is between 691 and 707 m. At 714–723 m the line crosses 23 metres of ground at 35 degrees or more, with the steepest cell at 42 degrees. The forest lets go at 860 m, 1.62 km from the start.",
+      "Fri Flyt: “The ascent follows the southernmost ridge formation upwards. At about 1050 m you go on the west side of the ridge until you reach the summit.” The band from 900 to 1000 m is the steepest, 15.4 degrees over 385 metres of ground. The line is on the west side of the ridge at 1062 m, 2.56 km from the start, and the summit is 230 metres further on. Beside the ridge there are cells of 51.9 degrees 27 metres north-north-west of the line at 1006 m and 56.3 degrees 27 metres south of it at 1076 m — knolls you will see.",
+    ],
+    descent: [
+      "Fri Flyt: “The descent from Tylderingen gives good views from the ridge and the sun in your face. You can follow the same way down as you came up. There is a lot of open farmland, so there is plenty of room to play in the snow.”",
+      "The summit is gentle to the north, north-east and south-west, 5.5 to 10.3 degrees on average over 500 metres. To the west and north-west it falls 41.9 and 44.9 degrees in its steepest windows 250 to 370 metres out, and to the east 35.6 degrees 220 to 280 metres out. Keep to the south side.",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "The steepest sustained section is 23.8 degrees between 691 and 707 m, and the steepest band 15.4 degrees from 900 to 1000. The ground under the line is 35 degrees or steeper on one stretch of 23 metres at 714–723 m. Fri Flyt grades the tour “Easy”, with the steepest point under 30 degrees and “Hazards: none”.",
+      },
+      {
+        title: "The terrain around it",
+        body: "The west, north-west and east sides of the summit are steeper than the route — 35.6 to 44.9 degrees in their steepest windows. Fri Flyt on the grade: “In special conditions (glazed crust or similar) a slide or a fall can be a risk.” The south side faces the sun; Fri Flyt: “do not wait too long into the season before you do the tour”.",
+      },
+      {
+        title: "Before you go",
+        body: "Check today's avalanche forecast for Indre Sogn at varsom.no. Indre Sogn is an A region and is forecast daily in season. Fretland is on Dalavegen up Sogndalsdalen; park in the marked spots by the farms. Bring a transceiver, probe and shovel.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "495 m",
+      endLabel: "1104 m",
+      distanceLabel: "2.8 km",
+      caption: "610 metres of climbing and 2.79 km from Fretland, with the treeline at 860 m and the steepest band between 900 and 1000.",
     },
   },
   ulvsjoberget: {

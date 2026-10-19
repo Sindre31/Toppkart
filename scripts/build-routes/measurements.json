@@ -2824,5 +2824,71 @@
       "figure": "Hardanger (region 3034), regiontype A — varslet daglig i sesongen",
       "how": "Spurt Varsom/NVE på samme endepunkt som appen bruker: api01.nve.no/hydrology/forecast/avalanche/v6.3.0/api/AvalancheWarningByCoordinates/Simple/<lat>/<lng>/1/<dato>/<dato> med toppkoordinaten fra summits.json."
     }
+  ],
+  "heimdalshoe": [
+    {
+      "what": "Toppen, alle sider",
+      "figure": "N 3,7°, NØ 7,8°, Ø 6,3°, SØ 7,6°, S 10,8°, SV 15,9°, V 12,4° og NV 7,7° i snitt over 500 m (3,7 til 15,9°); bratteste 60-metersvindu 20,9° (SV, 270–330 m ut)",
+      "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+    },
+    {
+      "what": "Langs linja",
+      "figure": "skogen slipper ved 1036 moh (1,17 km); Brurskardbekken (registeret 61.47504/8.83554) 132 m vest for linja ved 1618 m (1,62 km); linja svinger østover ved 2219 m (2,22 km), 1181 moh; Molflyhalsen (OSM node/11431614716) 3 m fra linja ved 3598 m (3,60 km), 1447 moh; topp 1732 (node/11431615153) 582 m sørvest for linja; Brurskardet (registeret, Skar) 902 m sørvest for linja; rasteplassen Maurvangen og parkeringa 430 m nord for starten; ut.no sin sommerstart 773 m vest",
+      "how": "Nærmeste punkt på den routede linja i lib/routes.ts til OSM-/registerpunktet, med avstand langs ruta og DTM1-høyden der."
+    },
+    {
+      "what": "Bakken under linja",
+      "figure": "ingen strekk på 15 m med bakke på 35° eller brattere; bratteste celle 34,7°",
+      "how": "DTM1 i 5 m rutenett (geo.dem_tile), helling per celle med numpy.gradient, lest hver 5. meter langs den routede linja; oppgitt er hvert sammenhengende strekk på minst 15 m der bakken under linja er 35° eller brattere, med lengde, høyde og bratteste celle."
+    },
+    {
+      "what": "Varslingsregionen toppkoordinaten ligger i",
+      "figure": "Jotunheimen (region 3028), regiontype A — varslet daglig i sesongen",
+      "how": "Spurt Varsom/NVE på samme endepunkt som appen bruker: api01.nve.no/hydrology/forecast/avalanche/v6.3.0/api/AvalancheWarningByCoordinates/Simple/<lat>/<lng>/1/<dato>/<dato> med toppkoordinaten fra summits.json."
+    }
+  ],
+  "nautgardstinden": [
+    {
+      "what": "Toppen, alle sider",
+      "figure": "N 24,4° i snitt med 60,7° 20–80 m ut; NØ 27,9° 50–110 m ut; Ø 23,0° i snitt med 35,3° 30–90 m ut; SØ 28,7°; S 24,5°; SV 22,3°; V 52,3° 50–110 m ut; NV 38,2° i snitt med 66,4° 20–80 m ut",
+      "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+    },
+    {
+      "what": "Langs linja",
+      "figure": "skogen slipper ved 1013 moh (0,61 km); Steinhøe (OSM node/9980744393) 165 m sør for linja ved 3135 m (3,14 km), 1449 moh; nord for Russlirundhøe ved 4845 m (4,85 km), 1613 moh — Russlirundhøe (node/9980744405) 956 m sør for linja; topp 1743 (node/11431615074) 332 m sør ved 6729 m (6,73 km); østryggen fra 8910 m (8,91 km), 2035 moh; Austre Nautgardstinden (node/3223597468) 701 m nordnordøst for linja ved 9243 m (9,24 km); bandene 1600–1800 moh til sammen 2214 m (2,2 km) grunn",
+      "how": "Nærmeste punkt på den routede linja i lib/routes.ts til OSM-/registerpunktet, med avstand langs ruta og DTM1-høyden der."
+    },
+    {
+      "what": "Bakken under linja",
+      "figure": "17 m med bakke på 35° eller brattere ved 2214–2228 moh (9,54 km, bratteste celle 61°); ingen andre strekk på 15 m",
+      "how": "DTM1 i 5 m rutenett (geo.dem_tile), helling per celle med numpy.gradient, lest hver 5. meter langs den routede linja; oppgitt er hvert sammenhengende strekk på minst 15 m der bakken under linja er 35° eller brattere, med lengde, høyde og bratteste celle."
+    },
+    {
+      "what": "Varslingsregionen toppkoordinaten ligger i",
+      "figure": "Jotunheimen (region 3028), regiontype A — varslet daglig i sesongen",
+      "how": "Spurt Varsom/NVE på samme endepunkt som appen bruker: api01.nve.no/hydrology/forecast/avalanche/v6.3.0/api/AvalancheWarningByCoordinates/Simple/<lat>/<lng>/1/<dato>/<dato> med toppkoordinaten fra summits.json."
+    }
+  ],
+  "tylderingen": [
+    {
+      "what": "Toppen, alle sider",
+      "figure": "N 5,5°, NØ 8,9° og SV 10,3° i snitt over 500 m (5,5 til 10,3°); Ø 18,4° i snitt med 35,6° 220–280 m ut; SØ 33,8° 400–460 m ut; S 33,4° 120–180 m ut; V 41,9° 250–310 m ut; NV 44,9° 310–370 m ut (250 til 370 m)",
+      "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+    },
+    {
+      "what": "Langs linja",
+      "figure": "garden Fretland (OSM node/3894537475) 43 m fra linja ved 130 m; Stokksete (node/10176204100) 80 m fra linja ved 1121 m (1,12 km), 743 moh; skogen slipper ved 860 moh (1,62 km); vestsida av ryggen ved 2561 m (2,56 km), 1062 moh, 233 m (230 m) før toppen ved 2794 m",
+      "how": "Nærmeste punkt på den routede linja i lib/routes.ts til OSM-/registerpunktet, med avstand langs ruta og DTM1-høyden der."
+    },
+    {
+      "what": "Bakken under og ved siden av linja",
+      "figure": "23 m med bakke på 35° eller brattere ved 714–723 moh (1,02 km, bratteste celle 42°); celler på 51,9° 27 m nordnordvest for linja ved 1006 moh og 56,3° 27 m sør for linja ved 1076 moh",
+      "how": "DTM1 i 5 m rutenett (geo.dem_tile), helling per celle med numpy.gradient, lest hver 5. meter langs den routede linja; oppgitt er hvert sammenhengende strekk på minst 15 m der bakken under linja er 35° eller brattere, med lengde, høyde og bratteste celle. Cellene ved siden av: DTM1 som GeoTIFF i 5 m rutenett (geo.dem_tile) langs linja, helling per celle med numpy.gradient; for hvert sjette punkt på den routede linja er bratteste celle innenfor 50 m oppgitt med avstand og peiling fra linja."
+    },
+    {
+      "what": "Varslingsregionen toppkoordinaten ligger i",
+      "figure": "Indre Sogn (region 3029), regiontype A — varslet daglig i sesongen",
+      "how": "Spurt Varsom/NVE på samme endepunkt som appen bruker: api01.nve.no/hydrology/forecast/avalanche/v6.3.0/api/AvalancheWarningByCoordinates/Simple/<lat>/<lng>/1/<dato>/<dato> med toppkoordinaten fra summits.json."
+    }
   ]
 }

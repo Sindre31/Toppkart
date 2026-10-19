@@ -1528,6 +1528,17 @@
   "season": "apr–jun",
   "hasGuide": true
  },
+ "nautgardstinden": {
+  "name": "Nautgardstinden",
+  "region": "Jotunheimen",
+  "summitM": 2257,
+  "verticalM": 1390,
+  "duration": "7–9 t",
+  "grade": 2,
+  "aspect": "Ø",
+  "season": "feb–mai",
+  "hasGuide": true
+ },
  "gronlifjellet": {
   "name": "Grønlifjellet",
   "region": "Sunnfjord",
@@ -1581,6 +1592,17 @@
   "grade": 2,
   "aspect": "N",
   "season": "apr–jun",
+  "hasGuide": true
+ },
+ "heimdalshoe": {
+  "name": "Heimdalshøe",
+  "region": "Jotunheimen",
+  "summitM": 1843,
+  "verticalM": 880,
+  "duration": "4–6 t",
+  "grade": 1,
+  "aspect": "NV",
+  "season": "des–apr",
   "hasGuide": true
  },
  "eggja": {
@@ -1680,6 +1702,17 @@
   "grade": 1,
   "aspect": "NV",
   "season": "feb–mai",
+  "hasGuide": true
+ },
+ "tylderingen": {
+  "name": "Tylderingen",
+  "region": "Sogn",
+  "summitM": 1104,
+  "verticalM": 610,
+  "duration": "2–4 t",
+  "grade": 1,
+  "aspect": "S",
+  "season": "des–apr",
   "hasGuide": true
  },
  "ulvsjoberget": {

@@ -475,4 +475,7 @@ PEAKS = [
     ("sveigen", "Sveigen", ["Ullensvang"], 1543, 59.83730, 7.07723),
     ("vesle-nup", "Vesle Nup", ["Vinje"], 1510, 59.85865, 7.23250),
     ("fjetlandsnuten", "Fjetlandsnuten", ["Ullensvang"], 1287, 59.82273, 6.85390),
+    ("heimdalshoe", "Heimdalshøe", ["Vågå"], 1843, 61.45438, 8.90212),
+    ("nautgardstinden", "Nautgardstinden", ["Lom", "Vågå"], 2258, 61.60330, 8.75943),
+    ("tylderingen", "Tylderingen", ["Sogndal"], 1104, 61.29201, 7.03271),
 ]

@@ -12385,5 +12385,238 @@
       "confidence": "high",
       "notes": "Fri Flyt (Toppturer i Sørvest) og ut.no beskriver samme linje: anleggsvegen fra Tveita/kraftstasjonen, og bekken opp mot masta. Ut.no gir hårnålssvingene og henget ved 750; Fri Flyt gir bekken og faren fra masta. Det er sørvestsiden ut.no kaller den vennlige."
     }
+  },
+  {
+    "slug": "heimdalshoe",
+    "verdict": "ok",
+    "rejectReason": "",
+    "corrections": [
+      "Registerets Heimdalshøe (Fjell, Vågå) løser seg til 1843,0 mot publiserte 1843 — Δ 0,0 m. OSM fører samme topp (node/26863127, natural=peak, ele 1843).",
+      "Fri Flyt: «Turen begynner i skogen innenfor Maurvangen. Du kan følge oppkjørt og stikket trase opp gjennom skogen, men det er ofte like fint å finne eget spor opp gjennom fjellbjørkeskogen.» Fri Flyt beskriver ikke linja over skogen; den er festet etter andrekildene.",
+      "Andrekilde, Bessheim: «Follow the trail marked by sticks across Sjodalsvatn/ Sjodals lake to Brurskaret. When you reach Brurskaret a marked trail goes steep to the top.» Brurskardet er registerets Skar (61.4588/8.84403); Bessheim gir ikke mer av linja.",
+      "Andrekilde, ut.no 116010 (sommerrute): «På snaut 1200 moh forlater man stien, krysser Brurskardbekken på egnet sted og skrår oppover mot Mollflyhalsen. Denne ryggen følges så opp til vel 1600 moh. … Videre mot toppen flater det mer ut.» Molflyhalsen er OSM-punktet node/11431614716 (61.46350/8.85785, 1447,1 moh.). Korridoren følger ut.no-sporet fra 1180 moh. til toppen; ut.no skriver selv at «Kartsporet er noe unøyaktig tegnet inn». Starten er Fri Flyts, ikke ut.nos parkeringslomme mot Vargebakkan, som ligger på den vinterstengte delen av Fv51.",
+      "1843,0 − 970,5 = 873 mot Fri Flyts 1000 og Bessheims «almost 900» høydemeter.",
+      "check_new_corridors: «no mapped parking, only primary, service, unclassified» — nærmeste kartlagte parkering er 430 m nord (node/2098140876, ved rasteplassen Maurvangen); Fri Flyt ber deg avtale parkering med vertskapet. Korridoren står."
+    ],
+    "corridor": {
+      "routeId": "maurvangen",
+      "routeName": "Fra Maurvangen",
+      "routeDescriptionFull": "Fra Maurvangen Fjellpark sørover opp gjennom bjørkeskogen, over Brurskardbekken, opp på Molflyhalsen og ryggen østover til toppen",
+      "trailhead": {
+        "name": "Maurvangen Fjellpark",
+        "lat": 61.48883,
+        "lng": 8.84352,
+        "elevationM": 970.5,
+        "osmEvidence": "OSM node/1356458541 (tourism=alpine_hut, «Maurvangen camping») ved Hoskelivegen (way/26009136, asfalt), like ved Fv51 Gjendevegen (way/26009137). Rasteplassen Maurvangen (node/5691481842) og en parkeringsplass (node/2098140876) ligger 430 m nord. Fri Flyt: «Startsted: Maurvangen Fjellpark. Prat med vertskapet om parkering.» Visit Norway: Fv51 er vinterstengt mellom Garli og Maurvangen, og strekningen fra Vågå til Gjendesheim er åpen hele året. DTM1 leser 970,5 moh."
+      },
+      "waypoints": [
+        {
+          "name": "bjørkeskogen",
+          "lat": 61.483,
+          "lng": 8.842,
+          "elevationM": 1001.1
+        },
+        {
+          "name": "bjørkeskogen",
+          "lat": 61.477,
+          "lng": 8.838,
+          "elevationM": 1065.1
+        },
+        {
+          "name": "over Brurskardbekken",
+          "lat": 61.472,
+          "lng": 8.838,
+          "elevationM": 1138.9
+        },
+        {
+          "name": "mot Molflyhalsen",
+          "lat": 61.46981,
+          "lng": 8.84029,
+          "elevationM": 1180.0
+        },
+        {
+          "name": "mot Molflyhalsen",
+          "lat": 61.46731,
+          "lng": 8.85505,
+          "elevationM": 1394.9
+        },
+        {
+          "name": "Molflyhalsen",
+          "lat": 61.4635,
+          "lng": 8.85785,
+          "elevationM": 1447.1
+        },
+        {
+          "name": "ryggen",
+          "lat": 61.46033,
+          "lng": 8.87102,
+          "elevationM": 1628.9
+        },
+        {
+          "name": "ryggen",
+          "lat": 61.45619,
+          "lng": 8.89067,
+          "elevationM": 1727.5
+        }
+      ],
+      "season": "des–apr",
+      "aspect": "NV",
+      "grade": 1,
+      "gradeReason": "Fri Flyt: «KAST 1 – Enkelt», bratteste punkt under 30 grader, 1000 høydemeter og 4,5 timer; «Slakt og oversiktlig terreng, der det sjelden ligger mye snø.» Grad 1.",
+      "roadClosedInWinter": false,
+      "hazardNotes": "Fri Flyt: «Vær obs på trange og dype bekkefar som samler lange, harde og bratte skavler. Nordvendt bolle i toppen mellom Heimdalshø og vesttoppen 1732 moh, kan samle store mengder snø, og bør bare kjøres på senvinteren og våren.» Snaufjellet over skogen er vindutsatt.",
+      "teaserNo": "880 høydemeter fra Maurvangen: opp gjennom bjørkeskogen, over Brurskardbekken og Molflyhalsen-ryggen til toppen — slakt og oversiktlig, med utsikt over Jotunheimen.",
+      "teaserEn": "880 metres of ascent from Maurvangen: up through the birch forest, across Brurskardbekken and along the Molflyhalsen ridge to the top — gentle and open, with a view over Jotunheimen.",
+      "sources": [
+        "https://www.friflyt.no/topptur/skiturer-jotunheimen/turbeskrivelse-heimdalshoee",
+        "https://bessheim.no/2017/09/04/heimdalsho/?lang=en",
+        "https://ut.no/turforslag/116010/topptur-til-heimdalshe-1843-moh",
+        "https://www.visitnorway.no/reisemal/ostlandet/valdres/nasjonal-turistveg-valdresflye/"
+      ],
+      "confidence": "medium",
+      "notes": "Fri Flyt (Trygge toppturer) er hovedkilden for start, grad og farer, men beskriver bare skogen. Bessheim og ut.no (sommer) gir resten av linja, via Brurskardet/Brurskardbekken og Molflyhalsen. Ingen av dem beskriver hele skilinja, og derfor er confidence medium."
+    }
+  },
+  {
+    "slug": "nautgardstinden",
+    "verdict": "ok",
+    "rejectReason": "",
+    "corrections": [
+      "Registerets Nautgardstinden (Fjell, Lom/Vågå) løser seg til 2257,1 mot publiserte 2258 — −0,9 m. OSM fører samme topp (node/26864047, natural=peak, ele 2258).",
+      "Fri Flyt: «Start med å gå vestover mot Steinhøe og hold til høyre for det brattere terrenget under Russlirundhøe, før du kommer inn på et flatere parti. Herfra stiger det brattere opp mot Nautgardstindene. Austre Nautgardstinden ligger til høyre, hovedtoppen til venstre. Det kan være greit å sette fra seg skiene før det siste bratte partiet mot toppen.» Steinhøe er OSM node/9980744393 (61.59573/8.87339), Russlirundhøe node/9980744405 (61.59506/8.82213) og Austre Nautgardstinden node/3223597468 (61.61073/8.77111). Korridoren går nord for Russlirundhøe og topp 1831 (node/11431614845), over flata vest for dem og opp østryggen til hovedtoppen.",
+      "Andrekilde, Scandinavian Mountains (James Baxter): «Riksveg 51. This is especially attractive as a winter option as the road here is usually accessible throughout the winter» — vinterruta går fra Heimsand opp Russdalen og Nørdre Tverråe, over skulderen 1784 og til sadelen mellom Nautgardstinden og Austre Nautgardstinden: «The last section of the east ridge is relatively steep but should not be a problem in the summer or winter (provided it is not icy).» Den går sør for Russlirundhøe der Fri Flyt går nord, men møter Fri Flyts linje på østsida av toppen og deler siste stykket opp østryggen.",
+      "2257,1 − 874,3 = 1383 mot Fri Flyts 1260 høydemeter; Fri Flyt oppgir ingen starthøyde.",
+      "check_new_corridors: «OSM unreachable, unchecked» — Overpass svarte 500. Parkeringa er kartlagt (way/528959454, amenity=parking, fee=no), lest direkte fra OSM-API-et. Baxter, Glitterheim-ruta: «During the spring, the rim of this corrie sports some huge cornices» og «The last section up to the peak usually has a poor covering of snow in the spring and it is often necessary to remove skis»."
+    ],
+    "corridor": {
+      "routeId": "russlie",
+      "routeName": "Fra Russlie",
+      "routeDescriptionFull": "Fra Russlie ved Fv51 vestover mot Steinhøe, nord for Russlirundhøe, over flata og opp østryggen til hovedtoppen",
+      "trailhead": {
+        "name": "Russlie",
+        "lat": 61.58841,
+        "lng": 8.9303,
+        "elevationM": 874.3,
+        "osmEvidence": "OSM way/528959454 (amenity=parking, fee=no) ved Sjodalsvegen Fv51 (way/70467389), ved setra Russlie (node/4059765477). Fri Flyt: «Startsted: Russlie ved riksvei 51.» Visit Norway: strekningen fra Vågå til Gjendesheim er åpen hele året; Scandinavian Mountains: «the road here is usually accessible throughout the winter». DTM1 leser 874,3 moh."
+      },
+      "waypoints": [
+        {
+          "name": "vestover",
+          "lat": 61.5915,
+          "lng": 8.905,
+          "elevationM": 1181.4
+        },
+        {
+          "name": "mot Steinhøe",
+          "lat": 61.5975,
+          "lng": 8.87,
+          "elevationM": 1451.9
+        },
+        {
+          "name": "nord for Russlirundhøe",
+          "lat": 61.6025,
+          "lng": 8.845,
+          "elevationM": 1616.4
+        },
+        {
+          "name": "flata",
+          "lat": 61.6035,
+          "lng": 8.81,
+          "elevationM": 1747.6
+        },
+        {
+          "name": "mot Nautgardstindene",
+          "lat": 61.604,
+          "lng": 8.785,
+          "elevationM": 1943.4
+        },
+        {
+          "name": "østryggen",
+          "lat": 61.6038,
+          "lng": 8.77,
+          "elevationM": 2035.7
+        }
+      ],
+      "season": "feb–mai",
+      "aspect": "Ø",
+      "grade": 2,
+      "gradeReason": "Fri Flyt: «KAST 1 – Enkelt», bratteste punkt under 25 grader, 1260 høydemeter, 10 km og 6 timer, men «Det kan være greit å sette fra seg skiene før det siste bratte partiet mot toppen», og Baxter kaller siste stykket av østryggen «relatively steep». Lang dag til 2258 moh. Grad 2, ikke 1.",
+      "roadClosedInWinter": false,
+      "hazardNotes": "Fri Flyt: «Bratt terreng rundt toppen. Hold god avstand til skavel på nordvestsiden.» Fri Flyt: «Vær oppmerksom på det bratte partiet under Russlirundhøe.» Baxter: om våren har botnkanten nord for toppen «some huge cornices», og siste stykket opp til toppen har ofte dårlig snødekke, så skiene må ofte av; siste del av østryggen er brattere og kan være islagt.",
+      "teaserNo": "1390 høydemeter fra Russlie i Sjodalen: vestover mot Steinhøe, nord for Russlirundhøe og opp østryggen til en av Jotunheimens høyeste — slakt det meste av veien.",
+      "teaserEn": "1390 metres of ascent from Russlie in Sjodalen: west towards Steinhøe, north of Russlirundhøe and up the east ridge to one of Jotunheimen's highest — gentle most of the way.",
+      "sources": [
+        "https://www.friflyt.no/topptur/skiturer-jotunheimen/turbeskrivelse-nautgardstinden",
+        "https://scandinavianmountains.com/areas/12-sj%C3%B8dalen/mountains/12.01-nautgardstind/alternative.htm",
+        "https://www.scandinavianmountains.com/areas/12-sj%C3%B8dalen/mountains/12.01-nautgardstind/index.htm",
+        "https://www.visitnorway.no/reisemal/ostlandet/valdres/nasjonal-turistveg-valdresflye/"
+      ],
+      "confidence": "medium",
+      "notes": "Fri Flyt (Trygge toppturer) er hovedkilden. Baxter beskriver en vinterrute fra nesten samme sted som deler den øvre delen og østryggen, men går en annen veg opp lia; derfor er confidence medium."
+    }
+  },
+  {
+    "slug": "tylderingen",
+    "verdict": "ok",
+    "rejectReason": "",
+    "corrections": [
+      "Registerets Tylderingen (Fjell, Sogndal) løser seg til 1104,5 mot publiserte 1104 — +0,5 m. OSM fører samme topp (node/2214298702, natural=peak, ele 1104). Fri Flyt skriver både «Tyldringen» og «Tylderingen»; registeret og OSM har Tylderingen.",
+      "Fri Flyt 24.1: «Frå den vestlegaste garden går ein over jordet til stølen Tråna. Herfrå er det ope kulturlandskap opp til tregrensa. Oppturen følgje den sørlegaste ryggformasjonen oppover. Kring 1050 moh går ein på vestsida av ryggen til ein kjem til toppen.» Stølen Tråna finnes ikke i stedsnavnregisteret ved Fretland; korridoren går over jordet nord for gardene og følger den sørligste ryggen, på vestsida av den fra 1059 moh.",
+      "Andrekilde, fjordpeaks.com (Arnt Flatmo, 14. januar 2017): «We drove up to Fretland, and were the first skiers to park for the day. As we had reckoned, tracks were leading up the mountain.» og «This was a fairly short trip – 3,2km up to the summit and just less than 600 vertical meters.» Den bekrefter start, lengde og høydemeter, ikke linja i detalj.",
+      "1104,5 − 495,2 = 609 mot Fri Flyts 604 høydemeter.",
+      "check_new_corridors: «OSM unreachable, unchecked» — Overpass svarte 500. Parkeringa er kartlagt (node/2324484176, amenity=parking), lest direkte fra OSM-API-et."
+    ],
+    "corridor": {
+      "routeId": "fretland",
+      "routeName": "Fra Fretland",
+      "routeDescriptionFull": "Fra gardene på Fretland over jordet og opp den sørligste ryggen, på vestsida av den fra rundt 1050 moh., til toppen",
+      "trailhead": {
+        "name": "Fretland",
+        "lat": 61.27027,
+        "lng": 7.02812,
+        "elevationM": 495.2,
+        "osmEvidence": "OSM node/2324484176 (amenity=parking) ved Fretlandsvegen (way/212000100, highway=unclassified, gravel), ved garden Fretland (node/3894537475). Fri Flyt: «Ta av ved skiltet Fretland og parker oppe ved gardane på egna plassar.» og «Vis omsyn når ein parkerer ved gardane.» Gardene ligger ved Dalavegen opp Sogndalsdalen fra Sogndal, med riksveg 5 like ved. DTM1 leser 495,2 moh."
+      },
+      "waypoints": [
+        {
+          "name": "over jordet",
+          "lat": 61.276,
+          "lng": 7.027,
+          "elevationM": 634.9
+        },
+        {
+          "name": "ryggen",
+          "lat": 61.282,
+          "lng": 7.0262,
+          "elevationM": 822.2
+        },
+        {
+          "name": "ryggen",
+          "lat": 61.2875,
+          "lng": 7.0258,
+          "elevationM": 976.1
+        },
+        {
+          "name": "vestsida av ryggen",
+          "lat": 61.2905,
+          "lng": 7.0295,
+          "elevationM": 1058.9
+        }
+      ],
+      "season": "des–apr",
+      "aspect": "S",
+      "grade": 1,
+      "gradeReason": "Fri Flyt: «E1, L», «Lett», bratteste punkt under 30 grader, 604 høydemeter og 2–4 timer, «Farar: Ingen». Grad 1.",
+      "roadClosedInWinter": false,
+      "hazardNotes": "Fri Flyt oppgir «Farar: Ingen» for normalvegen. Sørsida er solvendt, og Fri Flyt ber deg ta turen tidlig: «Nyt solstrålane i dei kalde månadane og ikkje vent for lenge på sesongen før ein tek turen.» Ved glasert skare kan en utglidning likevel være farlig.",
+      "teaserNo": "610 høydemeter fra Fretland i Sogndalsdalen: over jordet og opp den sørlige ryggen gjennom ope kulturlandskap til toppen — kort og sørvendt, med sola i ansiktet.",
+      "teaserEn": "610 metres of ascent from Fretland in Sogndalsdalen: across the field and up the southern ridge through open farmland to the top — short and south-facing, with the sun in your face.",
+      "sources": [
+        "https://www.friflyt.no/topptur/skiturer-sogn/turbeskrivelse-tyldringen",
+        "https://fjordpeaks.com/2017/01/22/tylderingen-jan-14-2017/"
+      ],
+      "confidence": "medium",
+      "notes": "Fri Flyt (Toppturar i Sogn) 24.1 er hovedkilden. Fjordpeaks bekrefter start, lengde og høydemeter, ikke linja; derfor er confidence medium."
+    }
   }
 ]
