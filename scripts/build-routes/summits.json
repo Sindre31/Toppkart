@@ -1622,5 +1622,37 @@
     "summit_dtm": 1204.0,
     "claims": 1209,
     "stored_off_km": 1.03
+  },
+  "stavsnuten": {
+    "name": "Stavsnuten",
+    "lat": 59.85961,
+    "lng": 7.0101,
+    "summit_dtm": 1660.9,
+    "claims": 1661,
+    "stored_off_km": 0.02
+  },
+  "sveigen": {
+    "name": "Sveigen",
+    "lat": 59.83683,
+    "lng": 7.07817,
+    "summit_dtm": 1543.4,
+    "claims": 1543,
+    "stored_off_km": 0.07
+  },
+  "vesle-nup": {
+    "name": "Vesle Nup",
+    "lat": 59.85855,
+    "lng": 7.23287,
+    "summit_dtm": 1509.8,
+    "claims": 1510,
+    "stored_off_km": 0.02
+  },
+  "fjetlandsnuten": {
+    "name": "Fjetlandsnuten",
+    "lat": 59.82294,
+    "lng": 6.85402,
+    "summit_dtm": 1284.8,
+    "claims": 1287,
+    "stored_off_km": 0.02
   }
 }

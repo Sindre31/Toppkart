@@ -420,6 +420,14 @@ export const TOUR_TEASER_EN: Record<string, string> = {
     "680 metres of ascent from the top of Rørvikfjellet: past Fjelltjønna and up the ridge to the east top of Rimmane, the one Fri Flyt calls Ørnafjellet — reliable snow from early in the season.",
   venevassegga:
     "530 metres of ascent from Rørvik fjellstove: a long, rounded ridge north of Svartenova, up into Jakobskardet and the ridge south to the top — the easy tour on Rørvikfjellet.",
+  stavsnuten:
+    "610 metres of ascent from Holbubekk: the stream valley into Holebudalen, the bowl between the subsidiary tops 1567 and 1603 and the plateau in to the cairn — one of the most-skied tours near Haukeliseter.",
+  sveigen:
+    "560 metres of ascent straight from Pepparsteinen by the Haukeli tunnel: the gully between Sveigen and p1490, then west to the top where it levels out — no approach at all.",
+  "vesle-nup":
+    "600 metres of ascent from Ulevå: the stream valley up to the flat at 1200, the col towards top 1469 and the ridge east to the cairn — the gentle start at Haukeli.",
+  fjetlandsnuten:
+    "900 metres of ascent from Røldal: the access road up Tveitlia, the steep step at 750 and the west-facing stream up to the mast — the village mountain right above Røldal.",
 
 };
 
@@ -6907,6 +6915,74 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       caption: "1237 metres of ascent and 8.64 km from Musland — across the valley, up to Såta, and the steep south ridge with cornices over Limomnen.",
     },
   },
+  stavsnuten: {
+    intro:
+      "610 metres of climbing over 3.48 km from Holbubekk: the stream valley east into Holebudalen, left into the bowl between the subsidiary tops 1567 and 1603, and up onto the plateau that runs gently in to the cairn at 1661 m. The steepest band is 21.9 degrees between 1400 and 1500 m, and the steepest sustained section is 26.4 degrees between 1403 and 1425. Ut.no calls it “perhaps the best-known, and the most-skied ski tour in the area around Haukeliseter” — and the bowl it goes through is ringed by steeper sides.",
+    ascent: [
+      "Start at the car park at Holbubekk, 1054 m, where the E134 crosses the stream on a bridge, 1 km west of the Haukeli tunnel. Fri Flyt: “Park at the car park a few hundred metres past the tunnel by a stream valley and a bridge.” Ut.no starts its track at Midtlæger, by the tunnel mouth; the two lines meet inside Holebudalen. It is open mountain from the first metre.",
+      "Follow the stream valley east. It is gentle: the band from 1100 to 1200 m measures 5.5 degrees over 1080 metres of ground, and after 1.27 km you are in Holebudalen at 1141 m. Fri Flyt tells you to hold your height until you can see Stavsnuten and the bowl; ut.no: “The approach goes into Holebudalen in gentle terrain before you turn left.”",
+      "The line turns north into the bowl at 1255 m, 2.00 km from the start. Ut.no: “The normal route goes into the ‘bowl’ and carries on up midway between the steep sides. Keep left of the subsidiary top (1603 m) on the way up for the most comfortable and secure tour, as to the right there are slopes of a little over 30 degrees that can be avalanche-prone.” The line goes between the two subsidiary tops: 1567 is 462 metres north-west of it, and 1603 is 288 metres south-east. This is where the tour is steep — 18.4 degrees from 1300 to 1400 m and 21.9 from 1400 to 1500, with the steepest section at 26.4 degrees between 1403 and 1425. The ground under the track is never 35 degrees or steeper for 15 metres in a row, but within 50 metres of it there are cells of 43 to 44 degrees between 1368 and 1489 m. Ut.no warns that you pass through runout zones here, though the release areas can be avoided.",
+      "Above 1500 m it eases — 12.4 degrees in the band from 1500 to 1600 — and at 1603 m, 3.16 km from the start, you are up on the plateau. Ut.no: “It can seem as if you are at the top when you reach the plateau, but from here it goes gently on for a stretch more to the summit, which is marked with a cairn (1661 m).” The cairn is 322 metres further in. In poor visibility ut.no recommends stopping at the plateau.",
+    ],
+    descent: [
+      "Fri Flyt: “The obvious way down is the way you came up. Here you get chances for drops and jumps off rocks, and you slide all the way down to the car again.” Ut.no: “Between the subsidiary tops (1567 m and 1603 m) there is room for big turns, as well as drops and jumps off rocks.” Remember the approach: ut.no tells you to “keep a bit of speed on the way back down Holebudalen”.",
+      "Fri Flyt has two more descents. The flank off the left-hand top, 1567, is “even and steep”, and “if you are not careful with your line it can get steeper than 35 degrees” — south-east from 1567 it measures 41.4 degrees in its steepest window. The north-west flank behind Stavsnuten has small gullies and flanks, but in winter you have to climb back up to get to the car. From the summit the south side measures 46.9 degrees 410 to 470 metres out and the north-east side 31.8 degrees 420 to 480 metres out; west and north-west are gentle, 9.3 and 9.9 degrees on average.",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "The steepest band is 21.9 degrees between 1400 and 1500 m, and the steepest sustained section is 26.4 degrees between 1403 and 1425 — both in the bowl. Fri Flyt gives 30 degrees as the steepest point and grades the tour “Easy”. The ground under the line is not 35 degrees or steeper for any continuous stretch of 15 metres.",
+      },
+      {
+        title: "The terrain around it",
+        body: "Ut.no: to the right of 1603 there are slopes of over 30 degrees that can be avalanche-prone, and in the bowl you pass through runout zones. The south side of 1603 measures 51.1 degrees and the south-west side 45.7 in their steepest windows. Fri Flyt: in an easterly wind Stavsnuten can be blown bare, and reaching both tops “requires easy climbing and protection between the tops”.",
+      },
+      {
+        title: "Before you go",
+        body: "Check today's avalanche forecast for Hardanger at varsom.no. Hardanger is an A region and is forecast daily in season. The start is on the E134 over Haukelifjell; check the road reports before you drive. Bring a transceiver, probe and shovel.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "1054 m",
+      endLabel: "1661 m",
+      distanceLabel: "3.5 km",
+      caption: "610 metres of climbing and 3.48 km from Holbubekk, with Holebudalen at 1141 m, the bowl from 1255 and the steepest band between 1400 and 1500.",
+    },
+  },
+  "vesle-nup": {
+    intro:
+      "595 metres of climbing over 5.93 km from Ulevå: the stream valley up to the flat at 1200, south-east past point 1206, up the col between Vesle Nup and top 1469, and the ridge east to the cairn at 1510 m. It is gentle almost all the way — the steepest band is 7.8 degrees between 1400 and 1500 m, and the steepest sustained section is a short drop into the dip south-east of point 1206 — 27.1 degrees between 1197 and 1179 m — and Fri Flyt calls it “the summit for you if you are new to ski touring and want a gentle start”.",
+    ascent: [
+      "Start at the car park at Ulevå, 982 m, on the E134 west of Haukeliseter fjellstue. Fri Flyt: “Park by the road at Ulevå, 2.5 km before Haukeliseter fjellstue when you come from the west. Follow the stream valley up until it levels out at 1200 metres. Now you can see the summit.” Ut.no describes the same line as its route C, and two more routes from the lodge that meet this one at Loftsdokktjønn.",
+      "The stream valley climbs steadily — 6.2 degrees in the band from 1000 to 1100 m — and after 1.75 km you are on the flat, 1171 m. From here you can see Vesle Nup to the north-east. The band from 1100 to 1200 m is 2002 metres of ground at 3.1 degrees, almost level. Ut.no: “Carry on towards the summit between point 1206 and Loftdokkstjønn.” The line goes south of 1206 and passes 79 metres south-east of the point at 2.61 km.",
+      "Between 1206 and Loftsdokktjønn the line gives back 33 metres of height, from 1201 m at 2.61 km down to 1168 at 2.91 km — the steepest section of the tour, 27.1 degrees between 1197 and 1179, is on the way down here — before it turns north along the marked Ålmannvegen towards the col. The ground under the track is steep in only one place, 17 metres at 35 degrees or more at 1190–1198 m. You reach the col between Vesle Nup and top 1469 at 1352 m after 4.44 km; top 1469 is 727 metres north-west of the line.",
+      "Ut.no: “Here you turn right and follow the ridge east about 1 km to the summit itself.” The ridge is 1.48 km from the col to the cairn. The line passes 100 metres south-west of top 1393 and climbs gently — 5.6 degrees from 1300 to 1400 m and 7.8 from 1400 to 1500. The last stretch up to the cairn is the steepest on the ridge.",
+    ],
+    descent: [
+      "Fri Flyt: “Ski down the first flank. Hold your height after that so you do not have to walk across the flat. Ski down the stream valley towards the car.” Ut.no points to route C as the one with “the most continuous descent for those on touring skis”.",
+      "The summit is pointed, and it falls away steeply to the north and east: 52.5 degrees 30 to 90 metres out to the north, 58.2 and 57.1 degrees 10 to 70 metres out to the north-east and east, 49.8 to the south-east. The ridge you came up, to the west, is the gentle side — 10.4 degrees on average over 500 metres.",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "The steepest sustained section is 27.1 degrees between 1197 and 1179 m, a short drop into the dip south-east of 1206, and the steepest band 7.8 degrees from 1400 to 1500. The ground under the track is 35 degrees or steeper on only one stretch of 17 metres, at 1190–1198 m. Fri Flyt gives 25 degrees as the steepest point and grades the tour “Easy”.",
+      },
+      {
+        title: "The terrain around it",
+        body: "The summit falls away at 49.8 to 58.2 degrees to the north, north-east, east and south-east just below the cairn; stay on the ridge from the west. The rest of the tour crosses bare mountain on the high plateau at the southern end of Hardangervidda, with no shelter and few landmarks, and in fog it is navigation that is hard. Fri Flyt warns about deep, heavy snow: then the tour suits mountain skis better.",
+      },
+      {
+        title: "Before you go",
+        body: "Check today's avalanche forecast for Vest-Telemark at varsom.no. Vest-Telemark is an A region and is forecast daily in season. The start is on the E134 over Haukelifjell; check the road reports before you drive. Bring a transceiver, probe and shovel.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "982 m",
+      endLabel: "1510 m",
+      distanceLabel: "5.9 km",
+      caption: "595 metres of climbing and 5.93 km from Ulevå, with the flat at 1171 m, the col at 1352 and the steepest band below the summit.",
+    },
+  },
   gaustatoppen: {
     intro:
       "The most prominent peak in southern Norway, and one of the gentlest to climb on skis: 973 metres of ascent from Langefonn, and not a single step over 25 degrees on the way up.",
@@ -6974,6 +7050,75 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       endLabel: "1462 m",
       distanceLabel: "5.1 km",
       caption: "406 metres of climbing and 5.14 km from Gaustabanen, with 1846 metres on the ice of Heddersvatn and the steepest hundred-metre band between 1300 and 1400 m.",
+    },
+  },
+  sveigen: {
+    intro:
+      "556 metres of climbing over 2.61 km straight from the E134: from Pepparsteinen at the east mouth of the Haukeli tunnel you go up the gully south of the road and, where it levels out, west to the top at 1543 m. The steepest band is the first one, 18.6 degrees from 1000 to 1100 m, and the steepest sustained section is 27.2 degrees between 1115 and 1132. Fri Flyt: “This way has absolutely no approach.”",
+    ascent: [
+      "Start at Pepparsteinen, the rest area on the E134 just east of the Haukeli tunnel, 994 m. Fri Flyt: “Straight up from the car park there is a small gully between Sveigen (1543 m) and p1490. When it starts to level out, head west to the summit.” Ut.no describes the same side as “Sveigen North”: it “can be reached from Pepparsteinen at the east mouth of the Haukeli tunnel, and has next to no approach”. Ut.no's main route is a different one — the east side from Ulevå across Ståvatn.",
+      "The gully starts at once. The band from 1000 to 1100 m measures 18.6 degrees over 304 metres of ground, and the steepest section of the whole line, 27.2 degrees, is between 1115 and 1132 m. Here the ground under the track is steeper than the track: 22, 62 and 28 metres at 35 degrees or more between 1084 and 1130 m, with the steepest cell at 54 degrees. The walls of the gully are steeper again — cells of 51 to 62 degrees 42 to 64 metres from the line between 1074 and 1304 m.",
+      "Above 1200 m the gully eases: 14.3 degrees from 1200 to 1300 and 8.9 from 1300 to 1400. At 1400 m, 1.59 km from the start, it levels out and the line turns west. The last kilometre to the top climbs steadily over open mountain, 10.4 degrees from 1400 to 1500 m.",
+      "The summit is the north top, 1543 m, where Kartverket's place-name register and Fri Flyt put Sveigen. The massif's highest point is 659 metres further south, 1560 m, behind a dip at 1513; ut.no gives 1561 and goes there. The summit area is gentle: 0.3 to 11.1 degrees on average to every side over 500 metres.",
+    ],
+    descent: [
+      "Fri Flyt's easiest descent is the way you came up. “If you want more of a challenge, take a more direct line down. If you do the latter it can get steeper than 35 degrees.”",
+      "The north couloir is the well-known line. Fri Flyt: “The descent is narrow with high side walls. The couloir is steepest at the top.” It is 35 degrees for a few metres at the top and 30 otherwise, and “in a lot of wind the couloir often fills with snow, and you have to be able to judge the snow quality before you drop in.” Ut.no: “The slope on the north side is over 30 degrees, and should only be skied in optimal conditions.”",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "The steepest sustained section is 27.2 degrees between 1115 and 1132 m, and the steepest band 18.6 degrees from 1000 to 1100. The ground under the track is 35 degrees or steeper on three stretches of 22 to 62 metres between 1084 and 1130 m, with the steepest cell at 54 degrees. Fri Flyt gives 30 degrees as the steepest point and grades the tour “Moderate”; here it is grade 3, because the gully goes straight up avalanche terrain with no approach.",
+      },
+      {
+        title: "The terrain around it",
+        body: "Ut.no: “The whole mountain is a potential avalanche area in winter, and in spring and summer there can be a risk of sliding falls when the snow is hard.” The north side is, according to ut.no, “somewhat more demanding and more avalanche-prone” than the east route. The gully rises straight above the road and the car park, so there is no approach to get to know the snow on before you are standing in the steep part.",
+      },
+      {
+        title: "Before you go",
+        body: "Check today's avalanche forecast for Hardanger at varsom.no. Hardanger is an A region and is forecast daily in season. The start is on the E134 over Haukelifjell; check the road reports before you drive. Bring a transceiver, probe and shovel.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "994 m",
+      endLabel: "1543 m",
+      distanceLabel: "2.6 km",
+      caption: "556 metres of climbing and 2.61 km from Pepparsteinen, with the gully between 1051 and 1400 m and the steepest band at the bottom.",
+    },
+  },
+  fjetlandsnuten: {
+    intro:
+      "895 metres of climbing over 5.62 km from Odlandsvegen in Røldal: the access road in hairpins up Tveitlia, north through the steep step at 750 m, and along the west-facing stream up to the mast on the summit, 1285 m. The forest lets go at 935 m. The steepest band is 16.1 degrees between 1100 and 1200 m, and the steepest sustained section 24.0 degrees between 1139 and 1171. Fri Flyt grades the tour “Easy”; ut.no mentions one short stretch with a possible avalanche hazard, on the steep step.",
+    ascent: [
+      "Start where Odlandsvegen ends at the service road to Røldal power station, 396 m, on the east side of Røldalsvatnet. Ut.no: “Start at the power station on the east side of Røldalsvatnet, and follow the road up Tveitlia to a little past the fourth hairpin.” Fri Flyt starts at Tveita: “Drive in to Tveita and park down by the road if the snow lies far enough down. If not, drive up the access road and park in a suitable pull-in.” There is no mapped car park here. The line passes Tveita 115 metres away at 0.74 km.",
+      "The access road climbs the hillside in four hairpins: the first at 1.01 km and 496 m, the second at 1.53 km and 558, the third at 2.17 km and 633 and the fourth at 2.44 km and 656. It is gentle — 6.0 degrees in the band from 400 to 500 m and 6.1 from 500 to 600. The road is not mapped in OSM, and the line is drawn after the ut.no track, not on the road. The ground under the line is 35 degrees or steeper on eight short stretches of 15 to 60 metres between 406 and 562 m, with the steepest cell at 56 degrees; follow the road where you can see it.",
+      "A little past the fourth bend, at 2.67 km and 700 m, the line turns north. Ut.no: “on the steep step at about 750 m you should make an avalanche assessment before climbing on; there is a short stretch with a possible avalanche hazard here.” You reach the step at 2.93 km and 755 m. The band from 700 to 800 m measures 14.3 degrees over 416 metres of ground, and west of the line at 780 m there are cells of 58.7 degrees 42 metres away.",
+      "Above the step the line follows the stream. Fri Flyt: “Follow the west-facing stream as far as it goes; from there you can see the summit mast.” The stream is Gjertrabekk in OSM and the place-name register. The line crosses it at 864 m, 3.45 km from the start, and runs on its north side or in the stream bed above that; at 4.95 km and 1185 m it is 116 metres from the highest mapped point of the stream. The forest lets go at 935 m. The steepest band of the tour is 16.1 degrees from 1100 to 1200 m, with the steepest section at 24.0 degrees between 1139 and 1171.",
+      "From there it is 673 metres to the mast. The summit is gentle to the south and south-west, 8.2 and 9.5 degrees on average over 500 metres, and that is the side you come up. Fri Flyt: “On warm days the sun heats the metal of the mast so that the ice falls off it.” The mast stands 17 metres from where the line ends.",
+    ],
+    descent: [
+      "Fri Flyt: “From the summit ski towards the stream. Follow it back down. It is not very steep, but it is fun, pleasant skiing back to the car. If the snow lies all the way down, ski towards the farm at Tveita.” Ut.no: “The return can be laid many ways, but keep south of Gjertrabekk if you do not want to end up in very steep terrain.” Below 864 m the line is south of the stream.",
+      "North and west of the summit Fjetlandsnuten is steep: 52.8 degrees 300 to 360 metres out to the north, 54.7 degrees 420 to 480 metres out to the north-west and 35.8 to the west. Fri Flyt's Gravgjel couloir goes down there, with its entrance 1.4 km from the summit: “It is steepest at the top, and cornices build up here”, 55 degrees at its steepest and 550 metres of fall — a separate descent for stable conditions, not part of this tour.",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "The steepest sustained section is 24.0 degrees between 1139 and 1171 m, and the steepest band 16.1 degrees from 1100 to 1200. The ground under the line is 35 degrees or steeper on eight short stretches between 406 and 562 m, on the hillside the access road climbs. Fri Flyt gives 30 degrees as the steepest point and grades the tour “Easy”; ut.no tells you to assess the step at 750 m before going on.",
+      },
+      {
+        title: "The terrain around it",
+        body: "The north and west sides of Fjetlandsnuten are steep — 52.8 and 54.7 degrees in their steepest windows to the north and north-west — and ut.no warns of “very steep terrain” north of Gjertrabekk on the way back. Fri Flyt: ice falls off the mast on warm days.",
+      },
+      {
+        title: "Before you go",
+        body: "Check today's avalanche forecast for Hardanger at varsom.no. Hardanger is an A region and is forecast daily in season. Ut.no: “Early and late in the season part of the road may be free of snow, and the tour is then somewhat shorter.” Bring a transceiver, probe and shovel.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "396 m",
+      endLabel: "1285 m",
+      distanceLabel: "5.6 km",
+      caption: "895 metres of climbing and 5.62 km from Odlandsvegen, with the steep step at 755 m, the treeline at 935 and the steepest band between 1100 and 1200.",
     },
   },
   "store-ble": {

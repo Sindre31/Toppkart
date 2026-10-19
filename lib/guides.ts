@@ -6822,6 +6822,78 @@ export const GUIDES: Record<string, TourGuide> = {
       caption: "1237 høydemeter og 8,64 km fra Musland — over dalen, opp til Såta, og den bratte sørryggen med skavler mot Limomnen.",
     },
   },
+  stavsnuten: {
+    slug: "stavsnuten",
+    intro:
+      "610 høydemeter på 3,48 km fra Holbubekk: bekkedalen østover inn Holebudalen, til venstre inn i bollen mellom undertoppene 1567 og 1603, og opp på platået som går slakt inn til varden på 1661 moh. Bratteste bandet er 21,9 grader mellom 1400 og 1500 moh, og bratteste sammenhengende parti er 26,4 grader mellom 1403 og 1425. Ut.no kaller den «kanskje den best kjente, og den mest kjørte toppturen i nærområdet rundt Haukeliseter» — og bollen den går gjennom, er omkranset av brattere sider.",
+    ascent: [
+      "Start på parkeringa ved Holbubekk, 1054 moh, der E134 krysser bekken på bru, 1 km vest for Haukelitunnelen. Fri Flyt: «Parker ved parkeringsplass noen hundre meter etter tunellen ved en bekkedal og en bro.» Ut.no starter sporet ved Midtlæger, ved tunnelmunningen; de to linjene møtes inne i Holebudalen. Det er snaufjell fra første meter.",
+      "Følg bekkedalen østover. Det er slakt: bandet fra 1100 til 1200 moh måler 5,5 grader over 1080 meter grunn, og etter 1,27 km er du inne i Holebudalen på 1141 moh. Fri Flyt ber deg holde høyden til du ser Stavsnuten og bollen; ut.no: «Anmarsjen går inn Holebudalen i slakt terreng før man dreier mot venstre.»",
+      "Linja dreier nordover inn mot bollen ved 1255 moh, 2,00 km fra start. Ut.no: «Normalruten går inn \"bollen\" og fortsetter oppover midt mellom de bratte sidene. Hold til venstre for undertoppen (1603 m.o.h.) under oppstigning for mest behagelig og sikker tur da det mot høyre er helninger i overkant av 30 grader som kan være skredutsatt.» Linja går mellom de to undertoppene: 1567 ligger 462 meter nordvest for den, og 1603 ligger 288 meter sørøst. Det er her turen er bratt — 18,4 grader fra 1300 til 1400 moh og 21,9 fra 1400 til 1500, med bratteste parti på 26,4 grader mellom 1403 og 1425. Bakken under sporet er aldri 35 grader eller brattere i 15 meter sammenhengende, men innenfor 50 meter av det står celler på 43 til 44 grader mellom 1368 og 1489 moh. Ut.no advarer om at du her går gjennom utløpssoner, men at det er mulig å unngå løsneområdene.",
+      "Over 1500 moh slakker det av — 12,4 grader i bandet fra 1500 til 1600 — og ved 1603 moh, 3,16 km fra start, er du oppe på platået. Ut.no: «Det kan virke som man er på toppunktet når man kommer opp på platået, men herfra går det slakt innover enda et stykke mot toppen som er markert med en varde (1661 m.o.h.).» Varden er 322 meter lenger inne. I dårlig sikt anbefaler ut.no å stoppe på platået.",
+    ],
+    descent: [
+      "Fri Flyt: «Den opplagte turen ned er veien du gikk opp. Her får du muligheter til dropp og hopp fra steiner, og du sklir helt ned til bilen igjen.» Ut.no: «Mellom undertoppene (1567 m.o.h. og 1603 m.o.h.) er det mulighet for store svinger, samt dropp og hopp fra steiner.» Husk anmarsjen: ut.no ber deg «beholde litt fart på vei ned Holebudalen igjen».",
+      "Fri Flyt har to nedkjøringer til. Flanken fra venstretoppen, 1567, er «jevn og bratt», og «Hvis du ikke er nøye med veivalget kan det bli brattere enn 35 grader» — sørøst fra 1567 måler den 41,4 grader i bratteste vindu. Nordvestflanken bak Stavsnuten har små renner og flanker, men om vinteren må du gå opp igjen for å komme til bilen. Fra toppen måler sørsida 46,9 grader 410 til 470 meter ut og nordøstsida 31,8 grader 420 til 480 meter ut; vest og nordvest er slake, 9,3 og 9,9 grader i snitt.",
+    ],
+    avalanche: [
+      {
+        title: "Ruta",
+        body: "Bratteste bandet er 21,9 grader mellom 1400 og 1500 moh, og bratteste sammenhengende parti er 26,4 grader mellom 1403 og 1425 — begge i bollen. Fri Flyt oppgir 30 grader som bratteste punkt og graderer turen «Lett». Bakken under linja er ikke 35 grader eller brattere i noe sammenhengende strekk på 15 meter.",
+      },
+      {
+        title: "Terrenget utenfor",
+        body: "Ut.no: til høyre for 1603 er det helninger over 30 grader som kan være skredutsatt, og i bollen går du gjennom utløpssoner. Sørsida av 1603 måler 51,1 grader og sørvestsida 45,7 i bratteste vindu. Fri Flyt: ved østlig vind kan Stavsnuten bli avblåst, og for å nå begge toppene «kreves det lett klatring og sikringsutstyr mellom toppene».",
+      },
+      {
+        title: "Før du går",
+        body: "Sjekk dagens skredvarsel for Hardanger på varsom.no. Hardanger er en A-region og varsles daglig i sesongen. Starten ligger ved E134 over Haukelifjell; sjekk vegmeldingene før du kjører. Ta med sender/mottaker, søkestang og spade.",
+      },
+    ],
+    elevationProfile: {
+      path: "M0,200 L24,199 L47,195 L71,191 L94,187 L117,184 L148,179 L168,178 L187,175 L210,174 L230,174 L257,168 L280,157 L303,148 L326,143 L350,139 L373,127 L396,114 L412,106 L427,95 L450,79 L464,70 L481,57 L505,45 L528,40 L551,33 L572,25 L583,19 L600,18",
+      startLabel: "1054 moh",
+      endLabel: "1661 moh",
+      distanceLabel: "3,5 km",
+      caption: "610 høydemeter og 3,48 km fra Holbubekk, med Holebudalen på 1141 moh, bollen fra 1255 og bratteste bandet mellom 1400 og 1500.",
+    },
+  },
+  "vesle-nup": {
+    slug: "vesle-nup",
+    intro:
+      "595 høydemeter på 5,93 km fra Ulevå: bekkedalen opp til flata ved 1200, sørøst forbi punkt 1206, opp skaret mellom Vesle Nup og topp 1469, og ryggen østover til varden på 1510 moh. Det er slakt nesten hele veien — bratteste bandet er 7,8 grader mellom 1400 og 1500 moh, og bratteste sammenhengende parti er en kort kneik ned i søkket sørøst for punkt 1206 — 27,1 grader mellom 1197 og 1179 moh — og Fri Flyt kaller den «toppen for deg som er som fersk på topptur og ønsker en rolig start».",
+    ascent: [
+      "Start på parkeringa ved Ulevå, 982 moh, ved E134 vest for Haukeliseter fjellstue. Fri Flyt: «Parker langs veien ved Ulevå, 2,5 km før Haukeliseter fjellstue når du kommer fra vest. Følg bekkedalen oppover til det flater ut ved 1200 høydemeter. Nå ser du toppen.» Ut.no beskriver samme linje som sin rute C, og to ruter til fra fjellstua som møter denne ved Loftsdokktjønn.",
+      "Bekkedalen stiger jevnt — 6,2 grader i bandet fra 1000 til 1100 moh — og etter 1,75 km er du på flata, 1171 moh. Herfra ser du Vesle Nup i nordøst. Bandet fra 1100 til 1200 moh er 2002 meter grunn på 3,1 grader, nesten flatt. Ut.no: «Forsett i retning mot toppen mellom punkt 1206 og Loftdokkstjønn.» Linja går sør for 1206 og passerer 79 meter sørøst for punktet ved 2,61 km.",
+      "Mellom 1206 og Loftsdokktjønn gir linja fra seg 33 høydemeter, fra 1201 moh ved 2,61 km ned til 1168 ved 2,91 km — det bratteste partiet på turen, 27,1 grader mellom 1197 og 1179, er på vei ned hit — før den svinger nordover langs den merkede Ålmannvegen mot skaret. Bakken under sporet er bratt bare ett sted, 17 meter på 35 grader eller mer ved 1190–1198 moh. Skaret mellom Vesle Nup og topp 1469 når du på 1352 moh etter 4,44 km; topp 1469 ligger 727 meter nordvest for linja.",
+      "Ut.no: «Her tar du av til høyre og følger fjellryggen østover omtrent 1 km til selve toppen.» Ryggen er 1,48 km fra skaret til varden. Linja passerer 100 meter sørvest for topp 1393 og stiger slakt — 5,6 grader fra 1300 til 1400 moh og 7,8 fra 1400 til 1500. Det siste stykket opp mot varden er det bratteste på ryggen.",
+    ],
+    descent: [
+      "Fri Flyt: «Kjør ned den første flanken. Hold høyden etter dette slik at du ikke må gå over flaten. Kjør ned bekkedalen mot bilen.» Ut.no viser til rute C som den med «mest sammenhengende nedkjøring for deg som går på toppturski».",
+      "Toppen er spiss, og den faller bratt mot nord og øst: 52,5 grader 30 til 90 meter ut mot nord, 58,2 og 57,1 grader 10 til 70 meter ut mot nordøst og øst, 49,8 mot sørøst. Ryggen du kom opp, mot vest, er den slake siden — 10,4 grader i snitt over 500 meter.",
+    ],
+    avalanche: [
+      {
+        title: "Ruta",
+        body: "Bratteste sammenhengende parti er 27,1 grader mellom 1197 og 1179 moh, en kort kneik ned i søkket sørøst for 1206, og bratteste bandet 7,8 grader fra 1400 til 1500. Bakken under sporet er 35 grader eller brattere bare i ett strekk på 17 meter, ved 1190–1198 moh. Fri Flyt oppgir 25 grader som bratteste punkt og graderer turen «Lett».",
+      },
+      {
+        title: "Terrenget utenfor",
+        body: "Toppen faller 49,8 til 58,2 grader mot nord, nordøst, øst og sørøst like under varden; hold deg på ryggen fra vest. Resten av turen går over snaufjell på høyfjellsplatået helt sør på Hardangervidda, uten ly og med få landemerker, og i skodde er det navigasjonen som er det vanskelige. Fri Flyt advarer mot snorkelføre: da passer turen bedre på fjellski.",
+      },
+      {
+        title: "Før du går",
+        body: "Sjekk dagens skredvarsel for Vest-Telemark på varsom.no. Vest-Telemark er en A-region og varsles daglig i sesongen. Starten ligger ved E134 over Haukelifjell; sjekk vegmeldingene før du kjører. Ta med sender/mottaker, søkestang og spade.",
+      },
+    ],
+    elevationProfile: {
+      path: "M0,200 L27,195 L50,190 L68,183 L91,181 L109,173 L127,162 L155,147 L173,136 L191,132 L209,131 L228,127 L242,126 L264,125 L281,131 L297,136 L317,129 L337,127 L355,122 L373,117 L396,107 L415,94 L437,80 L456,70 L478,70 L501,69 L525,53 L547,44 L570,35 L588,24 L600,18",
+      startLabel: "982 moh",
+      endLabel: "1510 moh",
+      distanceLabel: "5,9 km",
+      caption: "595 høydemeter og 5,93 km fra Ulevå, med flata ved 1171 moh, skaret på 1352 og bratteste bandet under toppen.",
+    },
+  },
   gaustatoppen: {
     slug: "gaustatoppen",
     intro:
@@ -6893,6 +6965,79 @@ export const GUIDES: Record<string, TourGuide> = {
       endLabel: "1462 moh",
       distanceLabel: "5,1 km",
       caption: "406 høydemeter og 5,14 km fra Gaustabanen, med 1846 meter på isen av Heddersvatn og bratteste hundremeteren mellom 1300 og 1400 moh.",
+    },
+  },
+  sveigen: {
+    slug: "sveigen",
+    intro:
+      "556 høydemeter på 2,61 km rett fra E134: fra Pepparsteinen ved østre munning av Haukelitunnelen går du opp skaret sør for vegen, og der det flater ut, vestover til toppen på 1543 moh. Bratteste bandet er det første, 18,6 grader fra 1000 til 1100 moh, og bratteste sammenhengende parti er 27,2 grader mellom 1115 og 1132. Fri Flyt: «Denne veien har absolutt ingen anmarsj.»",
+    ascent: [
+      "Start ved Pepparsteinen, rasteplassen ved E134 rett øst for Haukelitunnelen, 994 moh. Fri Flyt: «Rett opp fra parkeringen går det et lite skar mellom Sveigen (1543moh.) og p1490. Når det begynner å flate ut tar du vest mot toppen.» Ut.no beskriver samme side som «Sveigen Nord»: den «kan nås fra Pepparsteinen ved øståpning av Haukelitunnelen, og har så å si ingen anmarsj». Ut.no sin hovedrute er en annen — østsida fra Ulevå over Ståvatn.",
+      "Skaret begynner med en gang. Bandet fra 1000 til 1100 moh måler 18,6 grader over 304 meter grunn, og det bratteste partiet på hele linja, 27,2 grader, ligger mellom 1115 og 1132 moh. Her er bakken under sporet brattere enn sporet: 22, 62 og 28 meter på 35 grader eller mer mellom 1084 og 1130 moh, med bratteste celle 54 grader. Veggene i skaret er brattere igjen — celler på 51 til 62 grader 42 til 64 meter fra linja mellom 1074 og 1304 moh.",
+      "Over 1200 moh slakker skaret av: 14,3 grader fra 1200 til 1300 og 8,9 fra 1300 til 1400. Ved 1400 moh, 1,59 km fra start, flater det ut, og linja svinger vestover. Den siste kilometeren til toppen stiger jevnt over åpent fjell, 10,4 grader fra 1400 til 1500 moh.",
+      "Toppen er nordtoppen, 1543 moh, der Kartverkets stedsnavnregister og Fri Flyt setter Sveigen. Massivets høyeste punkt ligger 659 meter lenger sør, 1560 moh, bak et søkk på 1513; ut.no oppgir 1561 og går dit. Toppflata er slak: 0,3 til 11,1 grader i snitt til alle kanter over 500 meter.",
+    ],
+    descent: [
+      "Fri Flyts letteste nedkjøring er samme vei ned som du gikk opp. «Ønsker du mer utfordring legger du sporet mer direkte ned. Hvis du gjør sistnevnte kan det bli brattere enn 35 grader.»",
+      "Nordrenna er den kjente linja. Fri Flyt: «Nedkjøringen er smal med høye kantvegger. Renna er brattest på toppen.» Den er 35 grader noen meter øverst og ellers 30, og «Ved mye vind fylles ofte denne renna med snø, og du må kunne vurdere snøkvaliteten før du setter utfor.» Ut.no: «Helningen på nordsiden er over 30 grader, og bør kun kjøres under optimale forhold.»",
+    ],
+    avalanche: [
+      {
+        title: "Ruta",
+        body: "Bratteste sammenhengende parti er 27,2 grader mellom 1115 og 1132 moh, og bratteste bandet 18,6 grader fra 1000 til 1100. Bakken under sporet er 35 grader eller brattere på tre strekk på 22 til 62 meter mellom 1084 og 1130 moh, med bratteste celle 54 grader. Fri Flyt oppgir 30 grader som bratteste punkt og graderer turen «Moderat»; her er den grad 3, fordi skaret går rett opp i skredterreng uten anmarsj.",
+      },
+      {
+        title: "Terrenget utenfor",
+        body: "Ut.no: «Hele fjellet er et potensielt skredområde vinterstid, og på vår/sommer kan det være utglidningsfare om det er hardt føre.» Nordsida er ifølge ut.no «noe mer krevende og mer skredutsatt» enn østruta. Skaret ligger rett over vegen og parkeringa, så du har ingen anmarsj å bli kjent med snøen på før du står i det bratte.",
+      },
+      {
+        title: "Før du går",
+        body: "Sjekk dagens skredvarsel for Hardanger på varsom.no. Hardanger er en A-region og varsles daglig i sesongen. Starten ligger ved E134 over Haukelifjell; sjekk vegmeldingene før du kjører. Ta med sender/mottaker, søkestang og spade.",
+      },
+    ],
+    elevationProfile: {
+      path: "M0,199 L21,198 L42,189 L62,181 L73,173 L104,160 L114,154 L135,145 L155,137 L166,131 L178,125 L189,119 L218,116 L238,107 L259,97 L280,86 L300,81 L311,78 L331,74 L352,71 L373,67 L393,67 L424,63 L445,54 L466,45 L487,39 L518,34 L538,29 L559,26 L588,20 L600,18",
+      startLabel: "994 moh",
+      endLabel: "1543 moh",
+      distanceLabel: "2,6 km",
+      caption: "556 høydemeter og 2,61 km fra Pepparsteinen, med skaret mellom 1051 og 1400 moh og bratteste bandet nederst.",
+    },
+  },
+  fjetlandsnuten: {
+    slug: "fjetlandsnuten",
+    intro:
+      "895 høydemeter på 5,62 km fra Odlandsvegen i Røldal: anleggsvegen i hårnålssvinger opp Tveitlia, nordover gjennom henget ved 750 moh, og langs den vestvendte bekken opp til masta på toppen, 1285 moh. Skogen slipper ved 935 moh. Bratteste bandet er 16,1 grader mellom 1100 og 1200 moh, og bratteste sammenhengende parti 24,0 grader mellom 1139 og 1171. Fri Flyt graderer turen «Lett»; ut.no nevner ett kort parti med mulig skredfare, i henget.",
+    ascent: [
+      "Start der Odlandsvegen ender ved servicevegen til Røldal kraftverk, 396 moh, på østsida av Røldalsvatnet. Ut.no: «Start ved kraftstasjonen på østsiden av Røldalsvatnet, og følg veien oppover Tveitlia til litt forbi fjerde hårnålssving.» Fri Flyt starter ved Tveita: «Kjør inn til Tveita og parker nede ved veien hvis snøen ligger langt nok ned. Hvis ikke kjører du bilen opp anleggsveien og parkerer i ei passende lomme.» Det er ingen kartlagt parkeringsplass her. Linja passerer Tveita 115 meter unna ved 0,74 km.",
+      "Anleggsvegen går i fire hårnålssvinger opp lia: den første ved 1,01 km og 496 moh, den andre ved 1,53 km og 558, den tredje ved 2,17 km og 633 og den fjerde ved 2,44 km og 656. Det er slakt — 6,0 grader i bandet fra 400 til 500 moh og 6,1 fra 500 til 600. Vegen er ikke kartlagt i OSM, og linja er tegnet etter ut.no-sporet, ikke på vegen. Bakken under linja er 35 grader eller brattere på åtte korte strekk på 15 til 60 meter mellom 406 og 562 moh, med bratteste celle 56 grader; følg vegen der du ser den.",
+      "Litt forbi fjerde sving, ved 2,67 km og 700 moh, dreier linja nordover. Ut.no: «i henget ca 750 moh bør det foretas skredvurdering før eventuelt videre oppstigning, her er et kort parti med mulig skredfare.» Henget når du ved 2,93 km og 755 moh. Bandet fra 700 til 800 moh måler 14,3 grader over 416 meter grunn, og vest for linja ved 780 moh står celler på 58,7 grader 42 meter unna.",
+      "Over henget følger linja bekken. Fri Flyt: «Følg den vestvendte bekken så langt den går, herfra ser du toppmasta.» Bekken er Gjertrabekk i OSM og stedsnavnregisteret. Linja krysser den ved 864 moh, 3,45 km fra start, og går på nordsida av den eller i bekkefaret oppover; ved 4,95 km og 1185 moh er den 116 meter fra øverste kartlagte punkt på bekken. Skogen slipper ved 935 moh. Bratteste bandet på turen er 16,1 grader fra 1100 til 1200 moh, med bratteste parti på 24,0 grader mellom 1139 og 1171.",
+      "Derfra er det 673 meter igjen til masta. Toppen er slak mot sør og sørvest, 8,2 og 9,5 grader i snitt over 500 meter, og det er den siden du kommer opp. Fri Flyt: «På varme dager varmer sola metallet på masta slik at isen fra masta faller ned.» Masta står 17 meter fra der linja ender.",
+    ],
+    descent: [
+      "Fri Flyt: «Fra toppen kjører du mot bekken. Følg denne ned igjen. Det er ikke så bratt, men det er morsom og hyggelig kjøring tilbake til bilen. Hvis snøen ligger helt ned kjører du mot gården på Tveita.» Ut.no: «Returen kan legges mange veier, men hold deg syd for Gjertrabekk om du ikke vil ut i meget bratt terreng.» Under 864 moh ligger linja sør for bekken.",
+      "Nord og vest for toppen er Fjetlandsnuten bratt: 52,8 grader 300 til 360 meter ut mot nord, 54,7 grader 420 til 480 meter ut mot nordvest og 35,8 mot vest. Fri Flyts Gravgjel-renne går ned der, med inngangen 1,4 km fra toppen: «Den er brattest i toppen, og det bygger seg opp skavler her», bratteste punkt 55 grader og 550 meter fall — en egen nedkjøring for stabile forhold, ikke en del av denne turen.",
+    ],
+    avalanche: [
+      {
+        title: "Ruta",
+        body: "Bratteste sammenhengende parti er 24,0 grader mellom 1139 og 1171 moh, og bratteste bandet 16,1 grader fra 1100 til 1200. Bakken under linja er 35 grader eller brattere på åtte korte strekk mellom 406 og 562 moh, i lia anleggsvegen går opp. Fri Flyt oppgir 30 grader som bratteste punkt og graderer turen «Lett»; ut.no ber deg vurdere henget ved 750 moh før du går videre.",
+      },
+      {
+        title: "Terrenget utenfor",
+        body: "Nord- og vestsida av Fjetlandsnuten er bratte — 52,8 og 54,7 grader i bratteste vindu mot nord og nordvest — og ut.no advarer mot «meget bratt terreng» nord for Gjertrabekk på returen. Fri Flyt: isen faller av masta på varme dager.",
+      },
+      {
+        title: "Før du går",
+        body: "Sjekk dagens skredvarsel for Hardanger på varsom.no. Hardanger er en A-region og varsles daglig i sesongen. Ut.no: «Tidlig og sent på sesongen kan det hende noe av veien er snøfri, og turen blir da noe kortere.» Ta med sender/mottaker, søkestang og spade.",
+      },
+    ],
+    elevationProfile: {
+      path: "M0,200 L24,195 L46,191 L67,186 L85,183 L106,180 L130,175 L154,169 L178,166 L197,161 L226,154 L245,149 L269,142 L285,138 L307,130 L322,121 L341,110 L365,104 L384,98 L397,91 L413,85 L432,80 L451,74 L471,65 L495,59 L516,48 L533,37 L557,31 L581,25 L600,18",
+      startLabel: "396 moh",
+      endLabel: "1285 moh",
+      distanceLabel: "5,6 km",
+      caption: "895 høydemeter og 5,62 km fra Odlandsvegen, med henget ved 755 moh, skoggrensa på 935 og bratteste bandet mellom 1100 og 1200.",
     },
   },
   "store-ble": {

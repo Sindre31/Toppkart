@@ -6594,6 +6594,73 @@ says), `check_routes`, `check_tours` and `check_geometry` clean on 191 tours and
 agreeing), `check_treeline`, `check_gain` and `check_steepness` with nothing to
 look at, and `npm run typecheck`, `lint`, `test` and `build`.
 
+## The Haukeli and Røldal round
+
+Four tours from Fri Flyt's *Toppturer i Sørvest*, three from the E134 by
+Haukeliseter and one from the village in Røldal. 195 tours, 233 routes. Three
+summits answer to **Hardanger** (3034) and Vesle Nup to **Vest-Telemark**
+(3035), both A-regions — Vesle Nup was assumed to be Hardanger until the
+region was queried.
+
+| tour | start | summit | gain | km | steepest 100 m band | steepest 30 m | grade |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Fjetlandsnuten | 396 | 1285 | 895 | 5.62 | 16.1° | 24.0° | 2 |
+| Stavsnuten | 1054 | 1661 | 610 | 3.48 | 21.9° | 26.4° | 2 |
+| Vesle Nup | 982 | 1510 | 595 | 5.93 | 7.8° | 27.1° | 1 |
+| Sveigen | 994 | 1543 | 556 | 2.61 | 18.6° | 27.2° | 3 |
+
+### What was turned away
+
+The corpus index from the Sunnfjord round put Odda–Røldal–Haukeli at about 30
+Fri Flyt pages for peaks the app did not carry, and no tour on the map. Most
+did not pass the round's four conditions. Breifonn, Søre Tinden, Mælen,
+Hegerlandsnuten and Holmansnuten start on the Rv520 over Røldalsfjellet,
+which is closed in winter. Gauthellernuten and Røldalsåta are shuttle tours
+that need a car at both ends. Kistenuten, Store Nup, Verjesteinsnuten and
+Dyrskardsnuten are steeper than a guide with no surveyed line should send
+anyone up. Monsaskukken, Odlandnosa, Kløvsnuten, Havrenos and Søre
+Krossfonnuten had no readable second source for the line.
+
+### Sveigen ends on the top the register names
+
+Fri Flyt's line goes «Rett opp fra parkeringen … et lite skar mellom Sveigen
+(1543moh.) og p1490» and west to the top; the register puts Sveigen on that
+north top, 1543.4 on DTM1. Ut.no gives 1561 and goes to a south point 659 m
+away that reads 1560.0, behind a dip a straight line between them reads at
+1512.6. The tour ends where its primary source ends and the guide says where
+the massif's high point is. Ut.no confirms only that the north side goes from
+Pepparsteinen and «har så å si ingen anmarsj», not the gully, so the record is
+`confidence: medium`. It is grade 3, not Fri Flyt's «Moderat» 2: ut.no calls
+the whole mountain potential avalanche terrain in winter, and the ground under
+the line is 35° or steeper for 112 m between 1084 and 1130 m, straight above
+the road.
+
+### Two lines that went onto water
+
+`check_ground.py` caught both on the first routing. **Fjetlandsnuten ran 393 m
+on Røldalsvatnet**, a regulated lake at 380 m, from the end of Odlandsvegen
+south — the router found the flat ice cheaper than the hillside. **Vesle Nup
+ran 180 m over a tarn at 1185 m** north of point 1206, because the corridor
+point meant to sit «mellom punkt 1206 og Loftdokkstjønn» sat north-east of
+1206 instead. `avoidWater` was tried first and the re-route did not finish
+inside 25 minutes; three points from ut.no's track along the access road and
+a point on the marked path south-east of 1206 took both lines off the water
+instead, and both now pass.
+
+### The access road up Tveitlia
+
+Both Fjetlandsnuten sources go up the access road from the power station in
+Tveitlia: ut.no «til litt forbi fjerde hårnålssving», then north through «henget
+ca 750 moh» where it asks for an avalanche assessment. The road is not in OSM
+beyond a stub, so the hairpins are pinned from ut.no's track, and three legs
+point away from the summit — `check_new_corridors.py` lists them, and the record
+says why they stand. The ground under the drawn line is 35° or steeper on
+eight short stretches between 406 and 562 m; the guide says the line follows
+the track, not the road, and to follow the road where it can be seen. Above the
+step the line follows Gjertrabekk, Fri Flyt's «vestvendte bekken», on its north
+side from 864 m — and lies south of it below that, which is the side ut.no
+says to keep to on the way down.
+
 ## Network
 
 Everything is public and unauthenticated:

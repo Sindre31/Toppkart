@@ -11887,5 +11887,406 @@
       "confidence": "medium",
       "notes": "Fri Flyt (Toppturer i Sunnfjord) 6.1.1 er hovedkilden: start ved Rørvik fjellstove, 540 moh., 490 høydemeter, 2–4 timer, desember–mai, nordvendt. Fjord Norway nevner Venevassegga som den enklere turen fra Rørvikfjellet. Andrekilden bekrefter mål og start, ikke linja, og derfor er confidence medium. Jakobskardet er ikke i registeret."
     }
+  },
+  {
+    "slug": "stavsnuten",
+    "verdict": "ok",
+    "rejectReason": "",
+    "corrections": [
+      "Registerets Stavsnuten (Fjell, Ullensvang) løser seg til 1660,9 mot publiserte 1661 — −0,1 m. OSM fører samme topp (node/11398148137, natural=peak, ele 1661), og ut.no-sporet for turforslag 115204 ender 2 m fra den.",
+      "Fri Flyt: «Fra Haukeliseter kjører du gjennom tunellen mot Røldal. Parker ved parkeringsplass noen hundre meter etter tunellen ved en bekkedal og en bro. Følg bekkedalen inn Holebudalen og hold høyden til du ser Stavsnuten og bollen du kan kjøre ned i. Hold til venstre opp bakkene. Det er minst bratt her. Selve toppunktet på Stavsnuten ligger litt lengre inn.» Bekkedalen er bekken som går under E134 ved Holbubekk (OSM way/353271839 og way/353271802) og kommer ned fra bollen; korridoren følger den østover til Holebudalen.",
+      "Andrekilde, ut.no 115204: «Anmarsjen går inn Holebudalen i slakt terreng før man dreier mot venstre. Normalruten går inn \"bollen\" og fortsetter oppover midt mellom de bratte sidene. Hold til venstre for undertoppen (1603 m.o.h.) under oppstigning for mest behagelig og sikker tur da det mot høyre er helninger i overkant av 30 grader som kan være skredutsatt.» Undertoppen 1603 er OSM node/11398148399 (59.85637/7.00813) og 1567 er node/11398148986 (59.85443/6.99427); korridoren går mellom dem, vest for 1603, slik begge kildene sier.",
+      "Ut.no starter sporet ved Midtlæger, ved vestre tunnelmunning (59.83937/6.98716, toalett og busslomme i OSM), ikke ved Holbubekk 1 km lenger vest. De to startene møtes i Holebudalen. Korridoren bruker Fri Flyts start, som er den kartlagte parkeringsplassen.",
+      "1660,9 − 1054,4 = 607 mot Fri Flyts 550 og ut.nos 576 høydemeter; ut.no starter høyere, ved tunnelen.",
+      "check_new_corridors: «OSM unreachable, unchecked» — Overpass svarte 500. Parkeringa er kartlagt (way/1016662357, amenity=parking), lest direkte fra OSM-API-et."
+    ],
+    "corridor": {
+      "routeId": "holebudalen",
+      "routeName": "Via Holebudalen og bollen",
+      "routeDescriptionFull": "Fra Holbubekk langs bekkedalen inn Holebudalen, til venstre inn i bollen mellom undertoppene 1567 og 1603, opp på platået og slakt inn til varden",
+      "trailhead": {
+        "name": "Holbubekk",
+        "lat": 59.84441,
+        "lng": 6.97281,
+        "elevationM": 1054.4,
+        "osmEvidence": "OSM way/1016662357 (amenity=parking, fee=no) og rasteplassen Holbubekk (node/5699609373, highway=rest_area) ligger ved E134 Haukelivegen, der vegen krysser bekken på bru (way/778075826). Fri Flyt: «Parker ved parkeringsplass noen hundre meter etter tunellen ved en bekkedal og en bro.» E134 over Haukelifjell er åpen vinterstid. DTM1 leser 1054,4 moh."
+      },
+      "waypoints": [
+        {
+          "name": "bekkedalen",
+          "lat": 59.8447,
+          "lng": 6.978,
+          "elevationM": 1073.9
+        },
+        {
+          "name": "bekkedalen",
+          "lat": 59.8445,
+          "lng": 6.9884,
+          "elevationM": 1125.6
+        },
+        {
+          "name": "Holebudalen",
+          "lat": 59.8457,
+          "lng": 6.9941,
+          "elevationM": 1139.7
+        },
+        {
+          "name": "Holebudalen",
+          "lat": 59.8479,
+          "lng": 7.0,
+          "elevationM": 1207.3
+        },
+        {
+          "name": "inn mot bollen",
+          "lat": 59.8501,
+          "lng": 7.0034,
+          "elevationM": 1254.9
+        },
+        {
+          "name": "bollen",
+          "lat": 59.8534,
+          "lng": 7.0027,
+          "elevationM": 1364.1
+        },
+        {
+          "name": "vest for 1603",
+          "lat": 59.85741,
+          "lng": 7.00309,
+          "elevationM": 1562.6
+        },
+        {
+          "name": "platået",
+          "lat": 59.85952,
+          "lng": 7.0053,
+          "elevationM": 1603.2
+        }
+      ],
+      "season": "feb–mai",
+      "aspect": "S",
+      "grade": 2,
+      "gradeReason": "Fri Flyt: «Lett», bratteste punkt 30 grader, 550 høydemeter og 2,5 timer; «en av de enkleste og tryggeste toppturene på Haukeli». Ut.no: normalruta går gjennom utløpssoner under bratte sider, og til høyre for undertoppen 1603 er det helninger «i overkant av 30 grader som kan være skredutsatt». Grad 2, ikke 1, fordi bollen er omkranset av skredterreng.",
+      "roadClosedInWinter": false,
+      "hazardNotes": "Ut.no: hold til venstre for undertoppen 1603 — til høyre er det helninger over 30 grader som kan være skredutsatt — og i bollen går du gjennom utløpssoner, selv om løsneområdene kan unngås. På dager med dårlig sikt anbefaler ut.no å stoppe på platået. Fri Flyt: ved østlig vind kan Stavsnuten bli avblåst, og å ta begge toppene krever lett klatring og sikringsutstyr.",
+      "teaserNo": "610 høydemeter fra Holbubekk: bekkedalen inn Holebudalen, bollen mellom undertoppene 1567 og 1603 og platået inn til varden — en av de mest kjørte toppturene ved Haukeliseter.",
+      "teaserEn": "610 metres of ascent from Holbubekk: the stream valley into Holebudalen, the bowl between the subsidiary tops 1567 and 1603 and the plateau in to the cairn — one of the most-skied tours near Haukeliseter.",
+      "sources": [
+        "https://www.friflyt.no/topptur/skiturer-odda-roeldal-og-haukeli/turbeskrivelse-stavsnuten",
+        "https://ut.no/turforslag/115204/topptur-pa-ski-til-stavsnuten"
+      ],
+      "confidence": "high",
+      "notes": "Fri Flyt (Toppturer i Sørvest) og ut.no beskriver samme linje: Holebudalen, bollen, til venstre for 1603 og platået inn til varden. De er uenige om starten (Holbubekk mot Midtlæger), men linja er den samme fra Holebudalen. Ut.no oppgir starthøyde «1984 moh.», som er en skrivefeil."
+    }
+  },
+  {
+    "slug": "sveigen",
+    "verdict": "ok",
+    "rejectReason": "",
+    "corrections": [
+      "Registerets Sveigen (Fjell, Ullensvang) løser seg til 1543,4 mot publiserte 1543 — +0,4 m. OSM fører samme topp (node/11398148577, natural=peak, ele 1543). Fri Flyt bruker 1543.",
+      "Ut.no oppgir 1561 og legger målet 650 m lenger sør, på OSM node/11147841832 («Sveigen», ele 1561, 59.83093/7.07705), der DTM1 leser 1560,0. Det er massivets høyeste punkt, men registeret setter navnet på nordtoppen, og Fri Flyts linje går dit. Korridoren ender på 1543; sørpunktet ligger 17 m høyere, bak et søkk som rett linje mellom dem leser 1512,6 moh på DTM1.",
+      "Fri Flyt, Opp (Alternativ 2): «Rett opp fra parkeringen går det et lite skar mellom Sveigen (1543moh.) og p1490. Når det begynner å flate ut tar du vest mot toppen. Denne veien har absolutt ingen anmarsj.» Skaret er festet sør for Pepparsteinen, 59.848–59.841 / 7.090–7.094, der DTM1 stiger fra 1050 til 1398 moh. og flater ut; p1490 er OSM node/11398148576.",
+      "Andrekilde, ut.no 115926, alternativ rute «Sveigen Nord»: «Nordsiden kan nås fra Pepparsteinen ved øståpning av Haukelitunnelen, og har så å si ingen anmarsj.» Den bekrefter start og side, ikke skaret. Ruta ut.no tegner på kartet er østruta fra Ulevå over Ståvatn.",
+      "1543,4 − 993,6 = 550 mot Fri Flyts 500 høydemeter.",
+      "check_new_corridors: «trailhead «Pepparsteinen»: no mapped parking, only service, tertiary, track, trunk». Plassen er kartlagt som rasteplass (highway=rest_area), ikke som parkering; korridoren står."
+    ],
+    "corridor": {
+      "routeId": "nordskaret",
+      "routeName": "Skaret fra Pepparsteinen",
+      "routeDescriptionFull": "Fra Pepparsteinen ved østre munning av Haukelitunnelen rett opp skaret mellom Sveigen og p1490, og vestover mot toppen der det flater ut",
+      "trailhead": {
+        "name": "Pepparsteinen",
+        "lat": 59.84988,
+        "lng": 7.08859,
+        "elevationM": 993.6,
+        "osmEvidence": "OSM node/1319360008 (highway=rest_area, uten navn) ligger ved E134, 220 m øst for østre munning av Haukelitunnelen (way/782797643). Fri Flyt: «Startsted: Pepparsteinen ved Tunellen»; ut.no: «Pepparsteinen ved øståpning av Haukelitunnelen». E134 over Haukelifjell er åpen vinterstid. DTM1 leser 993,6 moh."
+      },
+      "waypoints": [
+        {
+          "name": "skaret",
+          "lat": 59.848,
+          "lng": 7.09,
+          "elevationM": 1050.5
+        },
+        {
+          "name": "skaret",
+          "lat": 59.845,
+          "lng": 7.092,
+          "elevationM": 1235.2
+        },
+        {
+          "name": "skaret",
+          "lat": 59.843,
+          "lng": 7.093,
+          "elevationM": 1360.0
+        },
+        {
+          "name": "der det flater ut",
+          "lat": 59.841,
+          "lng": 7.0935,
+          "elevationM": 1398.2
+        },
+        {
+          "name": "vestover mot toppen",
+          "lat": 59.8395,
+          "lng": 7.088,
+          "elevationM": 1437.7
+        },
+        {
+          "name": "vestover mot toppen",
+          "lat": 59.8375,
+          "lng": 7.084,
+          "elevationM": 1497.3
+        }
+      ],
+      "season": "jan–apr",
+      "aspect": "N",
+      "grade": 3,
+      "gradeReason": "Fri Flyt: «Moderat», bratteste punkt 30 grader, 500 høydemeter og 3 timer. Ut.no om nordsiden: «noe mer krevende og mer skredutsatt», med helninger over 30 grader, og «Hele fjellet er et potensielt skredområde vinterstid». Skaret går rett opp uten anmarsj, og bakken under linja er 35 grader eller brattere i 112 meter mellom 1084 og 1130 moh. Grad 3, ikke 2.",
+      "roadClosedInWinter": false,
+      "hazardNotes": "Ut.no: «Hele fjellet er et potensielt skredområde vinterstid, og på vår/sommer kan det være utglidningsfare om det er hardt føre.» Nordsiden er over 30 grader og mer skredutsatt enn østruta. Skaret ligger rett over E134 og parkeringa, så det er ingen anmarsj å bli kjent med snøen på. Nordrenna er en egen nedkjøring med høye kantvegger, 35 grader øverst.",
+      "teaserNo": "560 høydemeter rett fra Pepparsteinen ved Haukelitunnelen: skaret mellom Sveigen og p1490, og vestover til toppen der det flater ut — uten anmarsj.",
+      "teaserEn": "560 metres of ascent straight from Pepparsteinen by the Haukeli tunnel: the gully between Sveigen and p1490, then west to the top where it levels out — no approach at all.",
+      "sources": [
+        "https://www.friflyt.no/topptur/skiturer-odda-roeldal-og-haukeli/turbeskrivelse-sveigen",
+        "https://ut.no/turforslag/115926/topptur-pa-ski-til-sveigen"
+      ],
+      "confidence": "medium",
+      "notes": "Fri Flyt (Toppturer i Sørvest) Alternativ 2 er hovedkilden. Ut.no bekrefter at nordsiden går fra Pepparsteinen uten anmarsj, men beskriver ikke skaret, og derfor er confidence medium. Ut.no sin høyde 1561 hører til sørpunktet."
+    }
+  },
+  {
+    "slug": "vesle-nup",
+    "verdict": "ok",
+    "rejectReason": "",
+    "corrections": [
+      "Registerets Vesle Nup (Fjell, Vinje) løser seg til 1509,8 mot publiserte 1510 — −0,2 m. OSM fører samme topp (node/1392522471, natural=peak, man_made=cairn, ele 1510). Fri Flyt oppgir 1540; ut.no, registeret og DTM1 sier 1510.",
+      "Fri Flyt: «Parker langs veien ved Ulevå, 2,5 km før Haukeliseter fjellstue når du kommer fra vest. Følg bekkedalen oppover til det flater ut ved 1200 høydemeter. Nå ser du toppen.»",
+      "Andrekilde, ut.no 1112154503, rute C: «Fra Ulevå følger du bekkedalen oppover til det flater ut ved 1200 meter. Herfra ser du Vesle Nup i nord-øst. Forsett i retning mot toppen mellom punkt 1206 og Loftdokkstjønn, og oppover skaret mellom Vesle Nup og topp 1469. Her tar du av til høyre og følger fjellryggen østover omtrent 1 km til selve toppen.» Punkt 1206 er OSM node/11384476617 (59.84490/7.20052), topp 1469 er node/11384476618 (59.86338/7.20349). Skaret er festet der den merkede Ålmannvegen (way/38111189) møter stien opp ryggen (way/125347804), 59.85735/7.20824, 1352,5 moh.",
+      "Ryggen fra skaret til varden er 1,5 km, ikke «omtrent 1 km»; stien langs den (way/125347804 og way/125347802) ender ved varden.",
+      "1509,8 − 982,0 = 528 mot Fri Flyts 550 høydemeter.",
+      "check_ground: første ruting gikk 180 m på et tjern på 1185 moh. nord for punkt 1206 — korridorpunktet lå nordøst for 1206, ikke mellom 1206 og Loftsdokktjønn, slik ut.no sier. Punktet er flyttet til den merkede stien sørøst for 1206 (59.8440/7.2062, 1170,6 moh.) med et punkt sør for 1206 foran (59.8436/7.1960, 1192,6), og linja er rutet på nytt."
+    ],
+    "corridor": {
+      "routeId": "ulevaa",
+      "routeName": "Fra Ulevå",
+      "routeDescriptionFull": "Fra Ulevå opp bekkedalen til flata ved 1200 moh., mellom punkt 1206 og Loftsdokktjønn, opp skaret mellom Vesle Nup og topp 1469, og ryggen østover til varden",
+      "trailhead": {
+        "name": "Ulevå",
+        "lat": 59.84255,
+        "lng": 7.15919,
+        "elevationM": 982.0,
+        "osmEvidence": "OSM way/130244831 (amenity=parking, fee=no) ligger ved E134 ved Ulevå. Fri Flyt: «Parker langs veien ved Ulevå, 2,5 km før Haukeliseter fjellstue når du kommer fra vest»; ut.no: «parker langs veien ved Ulevå (omtrent 2,5 kilometer fra Haukeliseter fjellstue mot vest)». E134 over Haukelifjell er åpen vinterstid. DTM1 leser 982,0 moh."
+      },
+      "waypoints": [
+        {
+          "name": "bekkedalen",
+          "lat": 59.8436,
+          "lng": 7.168,
+          "elevationM": 1013.3
+        },
+        {
+          "name": "bekkedalen",
+          "lat": 59.8447,
+          "lng": 7.178,
+          "elevationM": 1073.4
+        },
+        {
+          "name": "flata ved 1200",
+          "lat": 59.8455,
+          "lng": 7.188,
+          "elevationM": 1170.5
+        },
+        {
+          "name": "sør for 1206",
+          "lat": 59.8436,
+          "lng": 7.196,
+          "elevationM": 1192.6
+        },
+        {
+          "name": "mellom 1206 og Loftsdokktjønn",
+          "lat": 59.844,
+          "lng": 7.2062,
+          "elevationM": 1170.6
+        },
+        {
+          "name": "mot skaret",
+          "lat": 59.8505,
+          "lng": 7.2064,
+          "elevationM": 1216.2
+        },
+        {
+          "name": "mot skaret",
+          "lat": 59.8545,
+          "lng": 7.207,
+          "elevationM": 1291.7
+        },
+        {
+          "name": "skaret mot 1469",
+          "lat": 59.85735,
+          "lng": 7.20824,
+          "elevationM": 1352.5
+        },
+        {
+          "name": "ryggen østover",
+          "lat": 59.8563,
+          "lng": 7.214,
+          "elevationM": 1352.2
+        },
+        {
+          "name": "ryggen østover",
+          "lat": 59.8569,
+          "lng": 7.2195,
+          "elevationM": 1396.2
+        },
+        {
+          "name": "ryggen østover",
+          "lat": 59.8575,
+          "lng": 7.2245,
+          "elevationM": 1439.5
+        }
+      ],
+      "season": "des–mai",
+      "aspect": "SV",
+      "grade": 1,
+      "gradeReason": "Fri Flyt: «Lett», bratteste punkt 25 grader, 550 høydemeter; «toppen for deg som er som fersk på topptur og ønsker en rolig start». Ut.no: «en perfekt tur for deg som er fersk med toppturer». Grad 1.",
+      "roadClosedInWinter": false,
+      "hazardNotes": "Fri Flyt: bratteste punkt 25 grader, og turen passer særlig for nybegynnere. Hele turen går over snaufjell på høyfjellsplatået sør på Hardangervidda, uten ly og med få landemerker; i skodde er det navigasjonen som teller. Fri Flyt advarer mot snorkelføre: da er den bedre på fjellski enn på toppturski.",
+      "teaserNo": "600 høydemeter fra Ulevå: bekkedalen opp til flata ved 1200, skaret mot topp 1469 og ryggen østover til varden — den rolige starten på Haukeli.",
+      "teaserEn": "600 metres of ascent from Ulevå: the stream valley up to the flat at 1200, the col towards top 1469 and the ridge east to the cairn — the gentle start at Haukeli.",
+      "sources": [
+        "https://www.friflyt.no/topptur/skiturer-odda-roeldal-og-haukeli/turbeskrivelse-vesle-nup",
+        "https://ut.no/turforslag/1112154503/topptur-pa-ski-til-vesle-nup"
+      ],
+      "confidence": "high",
+      "notes": "Fri Flyt (Toppturer i Sørvest) og ut.no rute C beskriver samme linje fra Ulevå. Ut.no har to ruter til fra Haukeliseter fjellstue (A og B), som møter denne ved Loftsdokktjønn."
+    }
+  },
+  {
+    "slug": "fjetlandsnuten",
+    "verdict": "ok",
+    "rejectReason": "",
+    "corrections": [
+      "Registerets Fjetlandsnuten (Fjell, Ullensvang) løser seg til 1284,8 mot publiserte 1287 — −2,2 m. OSM fører toppen som node/9980744643 (ele 1287) og masta som node/5583843559 (man_made=mast, ele 1285) 10 m unna. Ut.no-sporet for turforslag 119727 ender 15 m fra registerpunktet.",
+      "Fri Flyt: «Kjør inn til Tveita og parker nede ved veien hvis snøen ligger langt nok ned. Hvis ikke kjører du bilen opp anleggsveien og parkerer i ei passende lomme. Følg den vestvendte bekken så langt den går, herfra ser du toppmasta.»",
+      "Andrekilde, ut.no 119727: «Start ved kraftstasjonen på østsiden av Røldalsvatnet, og følg veien oppover Tveitlia til litt forbi fjerde hårnålssving. Drei nordover, i henget ca 750 moh bør det foretas skredvurdering før eventuelt videre oppstigning, her er et kort parti med mulig skredfare. Videre stort sett greit mot masten på toppen.» Hårnålssvingene og henget er festet fra ut.no-sporet; DTM1 leser 757,8 moh. i henget.",
+      "Startpunktet er festet der Odlandsvegen (OSM way/782797246) møter servicevegen til Røldal kraftverk (way/242395984), 200 m sør for ut.no sitt startpunkt ved porten (node/11704063997, access=private). Anleggsvegen opp Tveitlia er ikke kartlagt i OSM utenom en stubb (way/782797252), og hårnålssvingene er festet fra ut.no-sporet.",
+      "Vegen opp Tveitlia gir fire legger som går sørover, bort fra toppen. Det er vegen, ikke en omvei: begge kildene sender deg opp den.",
+      "1284,8 − 395,6 = 889 mot ut.nos 887 og Fri Flyts 800 høydemeter.",
+      "Himmelretning SV: Fri Flyt oppgir V, ut.no kaller sørvestsiden den vennlige, og ruta måler SV.",
+      "check_new_corridors: tre legger «heads 114°/130°/114° away from the summit» — det er hårnålssvingene på anleggsvegen opp Tveitlia, som begge kildene følger. «no mapped parking, only residential, service, unclassified»: ingen parkering er kartlagt ved kraftverket, og Fri Flyt ber deg parkere «nede ved veien». Korridoren står.",
+      "check_ground: første ruting gikk 393 m på Røldalsvatnet (regulert, 380 moh.) fra Odlandsvegen sørover, opptil 29 m fra land. Ingen av kildene går på vatnet. Tre punkter fra ut.no-sporet langs anleggsvegen (405, 418 og 437 moh., terrengklasse Skog) holder linja på land, og den er rutet på nytt."
+    ],
+    "corridor": {
+      "routeId": "tveitlia",
+      "routeName": "Opp Tveitlia",
+      "routeDescriptionFull": "Fra Odlandsvegen ved Røldal kraftverk opp anleggsvegen i Tveitlia forbi fjerde hårnålssving, nordover gjennom henget ved 750 moh. og langs den vestvendte bekken mot masta på toppen",
+      "trailhead": {
+        "name": "Odlandsvegen ved Røldal kraftverk",
+        "lat": 59.81916,
+        "lng": 6.81543,
+        "elevationM": 395.6,
+        "osmEvidence": "Odlandsvegen (OSM way/782797246, highway=residential, asfalt) ender her ved servicevegen til Røldal kraftverk (way/242395984) og Røldal trafostasjon. Ingen parkeringsplass er kartlagt; Fri Flyt: «parker nede ved veien hvis snøen ligger langt nok ned», ut.no: «Start ved kraftstasjonen på østsiden av Røldalsvatnet». Odlandsvegen går fra E134 i Røldal. DTM1 leser 395,6 moh."
+      },
+      "waypoints": [
+        {
+          "name": "anleggsvegen",
+          "lat": 59.81838,
+          "lng": 6.81478,
+          "elevationM": 405.2
+        },
+        {
+          "name": "anleggsvegen",
+          "lat": 59.81754,
+          "lng": 6.81371,
+          "elevationM": 418.1
+        },
+        {
+          "name": "anleggsvegen",
+          "lat": 59.81593,
+          "lng": 6.8132,
+          "elevationM": 437.4
+        },
+        {
+          "name": "anleggsvegen",
+          "lat": 59.81431,
+          "lng": 6.8132,
+          "elevationM": 458.3
+        },
+        {
+          "name": "første hårnålssving",
+          "lat": 59.8107,
+          "lng": 6.81097,
+          "elevationM": 495.5
+        },
+        {
+          "name": "andre hårnålssving",
+          "lat": 59.81431,
+          "lng": 6.81693,
+          "elevationM": 553.6
+        },
+        {
+          "name": "tredje hårnålssving",
+          "lat": 59.80865,
+          "lng": 6.817,
+          "elevationM": 628.6
+        },
+        {
+          "name": "fjerde hårnålssving",
+          "lat": 59.81076,
+          "lng": 6.81915,
+          "elevationM": 655.4
+        },
+        {
+          "name": "drei nordover",
+          "lat": 59.80973,
+          "lng": 6.82273,
+          "elevationM": 699.4
+        },
+        {
+          "name": "henget ved 750",
+          "lat": 59.81182,
+          "lng": 6.82453,
+          "elevationM": 757.8
+        },
+        {
+          "name": "langs bekken",
+          "lat": 59.81625,
+          "lng": 6.82655,
+          "elevationM": 872.2
+        },
+        {
+          "name": "langs bekken",
+          "lat": 59.8181,
+          "lng": 6.83065,
+          "elevationM": 969.4
+        },
+        {
+          "name": "langs bekken",
+          "lat": 59.81775,
+          "lng": 6.84206,
+          "elevationM": 1098.9
+        },
+        {
+          "name": "mot masta",
+          "lat": 59.81987,
+          "lng": 6.85022,
+          "elevationM": 1221.5
+        }
+      ],
+      "season": "des–mai",
+      "aspect": "SV",
+      "grade": 2,
+      "gradeReason": "Fri Flyt: «Lett», bratteste punkt 30 grader, 800 høydemeter og 4 timer. Ut.no: i henget ved 750 moh. er det «et kort parti med mulig skredfare» som skal vurderes før du går videre. Nesten 900 høydemeter fra bygda. Grad 2.",
+      "roadClosedInWinter": false,
+      "hazardNotes": "Ut.no: henget ved rundt 750 moh. har et kort parti med mulig skredfare; vurder det før du går videre. Ut.no: på returen holder du deg sør for Gjertrabekk, ellers kommer du ut i meget bratt terreng. Fri Flyt: på varme dager varmer sola opp masta, og isen faller av. Gravgjel-renna fra toppen er 55 grader øverst og en egen nedkjøring.",
+      "teaserNo": "900 høydemeter fra Røldal: anleggsvegen opp Tveitlia, henget ved 750 og den vestvendte bekken opp til masta — bygdefjellet midt i Røldal.",
+      "teaserEn": "900 metres of ascent from Røldal: the access road up Tveitlia, the steep step at 750 and the west-facing stream up to the mast — the village mountain right above Røldal.",
+      "sources": [
+        "https://www.friflyt.no/topptur/skiturer-odda-roeldal-og-haukeli/turbeskrivelse-fjetlandsnuten",
+        "https://ut.no/turforslag/119727/topptur-pa-ski-til-fjetlandsnuten"
+      ],
+      "confidence": "high",
+      "notes": "Fri Flyt (Toppturer i Sørvest) og ut.no beskriver samme linje: anleggsvegen fra Tveita/kraftstasjonen, og bekken opp mot masta. Ut.no gir hårnålssvingene og henget ved 750; Fri Flyt gir bekken og faren fra masta. Det er sørvestsiden ut.no kaller den vennlige."
+    }
   }
 ]

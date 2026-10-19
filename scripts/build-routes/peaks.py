@@ -468,4 +468,11 @@ PEAKS = [
     #   SUMMIT_SEED i resolve_summits.py set klatringa på OSM node/3888574483.
     ("eggja", "Rimmane", ["Sunnfjord"], 1209, 61.42198, 6.20446),
     ("venevassegga", "Venevassegga", ["Sunnfjord"], 1023, 61.37503, 6.18306),
+    # — Røldal- og Haukeli-runden: fire toppturar frå Fri Flyts Røldal/Haukeli-sider,
+    #   kvar med ein ut.no-skitur som andre kjelde. Tre frå E134 på Haukelifjell,
+    #   ein frå Tveita i Røldal. Vesle Nup: ut.no seier 1510, Fri Flyt 1540. —
+    ("stavsnuten", "Stavsnuten", ["Ullensvang"], 1661, 59.85965, 7.00984),
+    ("sveigen", "Sveigen", ["Ullensvang"], 1543, 59.83730, 7.07723),
+    ("vesle-nup", "Vesle Nup", ["Vinje"], 1510, 59.85865, 7.23250),
+    ("fjetlandsnuten", "Fjetlandsnuten", ["Ullensvang"], 1287, 59.82273, 6.85390),
 ]

@@ -233,4 +233,9 @@ NEW_TOURS = {
     "gronlifjellet": ("Grønlifjellet", "Sunnfjord"),
     "eggja": ("Eggja", "Sunnfjord"),
     "venevassegga": ("Venevassegga", "Sunnfjord"),
+    # — Røldal- og Haukeli-runden —
+    "stavsnuten": ("Stavsnuten", "Haukeli"),
+    "sveigen": ("Sveigen", "Haukeli"),
+    "vesle-nup": ("Vesle Nup", "Haukeli"),
+    "fjetlandsnuten": ("Fjetlandsnuten", "Røldal"),
 }

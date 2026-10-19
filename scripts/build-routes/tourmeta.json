@@ -2023,6 +2023,28 @@
   "season": "jan–apr",
   "hasGuide": true
  },
+ "stavsnuten": {
+  "name": "Stavsnuten",
+  "region": "Haukeli",
+  "summitM": 1661,
+  "verticalM": 610,
+  "duration": "3–5 t",
+  "grade": 2,
+  "aspect": "S",
+  "season": "feb–mai",
+  "hasGuide": true
+ },
+ "vesle-nup": {
+  "name": "Vesle Nup",
+  "region": "Haukeli",
+  "summitM": 1510,
+  "verticalM": 600,
+  "duration": "3–5 t",
+  "grade": 1,
+  "aspect": "SV",
+  "season": "des–mai",
+  "hasGuide": true
+ },
  "gaustatoppen": {
   "name": "Gaustatoppen",
   "region": "Telemark",
@@ -2042,6 +2064,28 @@
   "duration": "2–4 t",
   "grade": 2,
   "aspect": "V",
+  "season": "des–mai",
+  "hasGuide": true
+ },
+ "sveigen": {
+  "name": "Sveigen",
+  "region": "Haukeli",
+  "summitM": 1543,
+  "verticalM": 560,
+  "duration": "2–4 t",
+  "grade": 3,
+  "aspect": "N",
+  "season": "jan–apr",
+  "hasGuide": true
+ },
+ "fjetlandsnuten": {
+  "name": "Fjetlandsnuten",
+  "region": "Røldal",
+  "summitM": 1285,
+  "verticalM": 900,
+  "duration": "4–6 t",
+  "grade": 2,
+  "aspect": "SV",
   "season": "des–mai",
   "hasGuide": true
  },
