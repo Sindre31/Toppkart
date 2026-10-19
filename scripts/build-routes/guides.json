@@ -13386,5 +13386,209 @@
    "Første ruting gikk 393 m på Røldalsvatnet (regulert); korridoren følger nå Blåbergdalsvegen fra krysset, og check_ground er ren.",
    "ADVERSARIAL READ: første utkast sa at anleggsvegen ikke var kartlagt og la linja ved siden av den; den er Blåbergdalsvegen (OSM way/782797255), og linja følger den nå innenfor 33 m til fjerde sving, 5624 m +895 → 5673 m +900, kortet står på 900. De åtte «bratte strekkene» var vegskjæringer; lia over vegen er målt i stedet. Gjertrabekk-advarselen er gjort konkret (sørsida senest ved 866 moh, terreng på 40° og mer 20–170 m nordvest for linja mellom 849 og 997), og Gravgjel er plassert der Fri Flyts beskrivelse fører, nord for linja ved 1029 moh, ikke på nord- og nordvestsida av toppen."
   ]
+ },
+ "heimdalshoe": {
+  "no": {
+   "intro": "879 høydemeter på 6,32 km fra Maurvangen: opp gjennom bjørkeskogen langs Brurskardbekken, opp på Molflyhalsen og ryggen østover til toppen på 1843 moh. Fri Flyt oppgir 1000 meter stigning og 5,2 km. Linja er slak — bratteste bandet er 14,3 grader mellom 1300 og 1400 moh, og bratteste sammenhengende parti 19,3 grader mellom 1383 og 1398. Fri Flyt: «Slakt og oversiktlig terreng, der det sjelden ligger mye snø.»",
+   "caption": "879 høydemeter og 6,32 km fra Maurvangen, med skoggrensa på 1036 moh, Molflyhalsen på 1447 og bratteste bandet mellom 1300 og 1400.",
+   "ascent": [
+    "Start ved Maurvangen Fjellpark, 970 moh, ved Fv51 i Sjodalen. Fri Flyt: «Startsted: Maurvangen Fjellpark. Prat med vertskapet om parkering.» Rasteplassen Maurvangen og en parkeringsplass ligger 430 meter nord. Bessheim: «The starting point is at Besseggen Fjellpark Maurvangen.»",
+    "Fri Flyt: «Turen begynner i skogen innenfor Maurvangen. Du kan følge oppkjørt og stikket trase opp gjennom skogen, men det er ofte like fint å finne eget spor opp gjennom fjellbjørkeskogen.» Den stikkede løypa er kartlagt i OSM, og linja går 31 til 152 meter fra den mellom 0,63 og 2,22 km. Linja går sørover gjennom skogen på østsida av Brurskardbekken, og skogen slipper ved 1036 moh, 1,17 km fra start. Brurskardbekken renner 132 meter vest for linja ved 1,62 km.",
+    "Ved 1181 moh, 2,22 km fra start, svinger linja østover. Ut.no beskriver sommerstien, som kommer inn fra vest, slik: «På snaut 1200 moh forlater man stien, krysser Brurskardbekken på egnet sted og skrår oppover mot Mollflyhalsen.» Her er turen på sitt bratteste — 12,5 grader fra 1200 til 1300 moh og 14,3 fra 1300 til 1400, med bratteste parti på 19,3 grader mellom 1383 og 1398. Her går linja langs et bekkefar: 70 til 80 meter nord for den, ved 1371–1399 moh, faller sida 45 til 57 grader — det er den typen bekkefar Fri Flyt advarer mot. Hold avstand til kanten. Molflyhalsen når du på 1447 moh etter 3,60 km.",
+    "Ut.no: «Denne ryggen følges så opp til vel 1600 moh.» Over 1600 er det nesten flatt — bandet fra 1600 til 1700 moh måler 4,4 grader over 1214 meter grunn — og ut.no skriver at terrenget blir «overveiende steinete». Like over Molflyhalsen står celler på 39 til 42 grader 20 meter sør for linja ved 1502 moh. Bakken under linja er aldri 35 grader eller brattere. Toppen er et platå: 3,7 til 15,9 grader i snitt til alle kanter over 500 meter. Bessheims vinterlinje følger den stikkede løypa til Brurskaret, og derfra en merket trasé «steep to the top»; Brurskardet ligger 902 meter sørvest for denne linja, og løypa går dit: ved 4,81 km og 1661 moh er linja 1481 meter fra den."
+   ],
+   "descent": [
+    "Fri Flyt: «Nedkjøring samme veg som opp, evt ned mellom Heimdalshø og 1732 moh. Her er det ofte har betre føre. Ettersom terrenget er slakt hele vegen, er ikke turen like spennende etter store snøfall.» Topp 1732 ligger 582 meter sørvest for linja.",
+    "Bollen mellom Heimdalshøe og 1732 er den Fri Flyt advarer mot: den «kan samle store mengder snø, og bør bare kjøres på senvinteren og våren». Sadelen mellom toppene ligger på 1669 moh, og mellom 5,40 og 5,76 km går linja 406 til 454 meter nord for den, over øvre del av den nordvendte sida — det kan være øvre del av bollen. Vil du ha den enkle turen, kjører du samme vei ned og holder deg på ryggen."
+   ],
+   "avalanche": [
+    {
+     "title": "Ruta",
+     "body": "Bratteste bandet er 14,3 grader mellom 1300 og 1400 moh, og bratteste sammenhengende parti 19,3 grader mellom 1383 og 1398. Bakken under linja er ikke 35 grader eller brattere noe sted. Fri Flyt graderer turen «KAST 1 – Enkelt» med bratteste punkt under 30 grader."
+    },
+    {
+     "title": "Terrenget utenfor",
+     "body": "Fri Flyt: «Vær obs på trange og dype bekkefar som samler lange, harde og bratte skavler.» Bekkefaret nord for linja ved 1371–1399 moh har sider på 45 til 57 grader. Den nordvendte bollen mellom toppen og 1732 kan samle store mengder snø, og linja krysser øvre del av den nordvendte sida nord for sadelen. Over skogen er det snaufjell uten ly, og toppen er et steinete platå."
+    },
+    {
+     "title": "Før du går",
+     "body": "Sjekk dagens skredvarsel for Jotunheimen på varsom.no. Jotunheimen er en A-region og varsles daglig i sesongen. Fv51 er åpen fra Vågå til Gjendesheim hele året; strekningen over Valdresflye sør for Maurvangen er vinterstengt. Ta med sender/mottaker, søkestang og spade."
+    }
+   ]
+  },
+  "en": {
+   "intro": "879 metres of climbing over 6.32 km from Maurvangen: up through the birch forest along Brurskardbekken, onto Molflyhalsen and along the ridge east to the top at 1843 m. Fri Flyt gives 1000 metres and 5.2 km. The line is gentle — the steepest band is 14.3 degrees between 1300 and 1400 m, and the steepest sustained section 19.3 degrees between 1383 and 1398. Fri Flyt: “Gentle, open terrain where there is seldom much snow.”",
+   "caption": "879 metres of climbing and 6.32 km from Maurvangen, with the treeline at 1036 m, Molflyhalsen at 1447 and the steepest band between 1300 and 1400.",
+   "ascent": [
+    "Start at Maurvangen Fjellpark, 970 m, on the Fv51 in Sjodalen. Fri Flyt: “Start: Maurvangen Fjellpark. Talk to the hosts about parking.” The Maurvangen rest area and a car park are 430 metres north. Bessheim: “The starting point is at Besseggen Fjellpark Maurvangen.”",
+    "Fri Flyt: “The tour starts in the forest beyond Maurvangen. You can follow a packed, staked trail up through the forest, but it is often just as nice to make your own track up through the mountain birch.” The staked trail is mapped in OSM, and the line runs 31 to 152 metres from it between 0.63 and 2.22 km. The line goes south through the forest on the east side of Brurskardbekken, and the forest lets go at 1036 m, 1.17 km from the start. Brurskardbekken runs 132 metres west of the line at 1.62 km.",
+    "At 1181 m, 2.22 km from the start, the line turns east. Ut.no describes the summer path, which comes in from the west, like this: “At just under 1200 m you leave the path, cross Brurskardbekken at a suitable spot and slant up towards Mollflyhalsen.” This is the steepest part of the tour — 12.5 degrees from 1200 to 1300 m and 14.3 from 1300 to 1400, with the steepest section at 19.3 degrees between 1383 and 1398. Here the line runs beside a stream gully: 70 to 80 metres north of it, at 1371–1399 m, the side falls at 45 to 57 degrees — the kind of gully Fri Flyt warns about. Keep away from the edge. You reach Molflyhalsen at 1447 m after 3.60 km.",
+    "Ut.no: “This ridge is then followed up to a little over 1600 m.” Above 1600 it is almost level — the band from 1600 to 1700 m measures 4.4 degrees over 1214 metres of ground — and ut.no writes that the terrain becomes “mostly stony”. Just above Molflyhalsen there are cells of 39 to 42 degrees 20 metres south of the line at 1502 m. The ground under the line is never 35 degrees or steeper. The summit is a plateau: 3.7 to 15.9 degrees on average to every side over 500 metres. Bessheim's winter line follows the staked trail to Brurskaret, and from there a marked trail “steep to the top”; Brurskardet is 902 metres south-west of this line, and the trail goes there: at 4.81 km and 1661 m the line is 1481 metres from it."
+   ],
+   "descent": [
+    "Fri Flyt: “Descent the same way as the ascent, or down between Heimdalshø and 1732 m. The snow is often better there. As the terrain is gentle all the way, the tour is not as exciting after big snowfalls.” Top 1732 is 582 metres south-west of the line.",
+    "The bowl between Heimdalshøe and 1732 is the one Fri Flyt warns about: it “can collect large amounts of snow, and should only be skied in late winter and spring”. The col between the tops is at 1669 m, and between 5.40 and 5.76 km the line runs 406 to 454 metres north of it, across the upper part of the north-facing side — this may be the upper part of the bowl. For the easy tour, ski down the way you came and keep to the ridge."
+   ],
+   "avalanche": [
+    {
+     "title": "The route",
+     "body": "The steepest band is 14.3 degrees between 1300 and 1400 m, and the steepest sustained section 19.3 degrees between 1383 and 1398. The ground under the line is not 35 degrees or steeper anywhere. Fri Flyt grades the tour “KAST 1 – Easy” with the steepest point under 30 degrees."
+    },
+    {
+     "title": "The terrain around it",
+     "body": "Fri Flyt: “Watch out for narrow, deep stream gullies that collect long, hard and steep cornices.” The stream gully north of the line at 1371–1399 m has sides of 45 to 57 degrees. The north-facing bowl between the summit and 1732 can collect large amounts of snow, and the line crosses the upper part of the north-facing side north of the col. Above the forest it is bare mountain with no shelter, and the summit is a stony plateau."
+    },
+    {
+     "title": "Before you go",
+     "body": "Check today's avalanche forecast for Jotunheimen at varsom.no. Jotunheimen is an A region and is forecast daily in season. The Fv51 is open from Vågå to Gjendesheim all year; the stretch over Valdresflye south of Maurvangen is closed in winter. Bring a transceiver, probe and shovel."
+    }
+   ]
+  },
+  "sources": [
+   "https://www.friflyt.no/topptur/skiturer-jotunheimen/turbeskrivelse-heimdalshoee",
+   "https://bessheim.no/2017/09/04/heimdalsho/?lang=en",
+   "https://ut.no/turforslag/116010/topptur-til-heimdalshe-1843-moh",
+   "https://www.visitnorway.no/reisemal/ostlandet/valdres/nasjonal-turistveg-valdresflye/"
+  ],
+  "source": "written against corridors.json, the routed line, flank_probe.py and a 5 m slope grid along the line",
+  "problems": [
+   "ADVERSARIAL READ: «over Brurskardbekken» var feil — linja holder østsida; ut.nos kryssing gjelder sommerstien fra vest. Bekkefaret ved 1371–1399 moh (45–57 grader 70–80 m nord) og cellene over Molflyhalsen er nå plassert, Bessheims trasé er riktig beskrevet, den kartlagte løypa (way/399069671) er nevnt, og Fri Flyts 1000 hm / 5,2 km står i innledningen. Linjas forhold til bollen mot 1732 er sagt med forbehold.",
+   "Fri Flyt beskriver bare skogen; linja over den følger ut.no-sommerstien via Molflyhalsen. Confidence medium."
+  ]
+ },
+ "nautgardstinden": {
+  "no": {
+   "intro": "1387 høydemeter på 9,60 km fra Russlie i Sjodalen: vestover mot Steinhøe, nord for Russlirundhøe, over den lange flata og opp østryggen til toppen på 2257 moh. Fri Flyt oppgir 1260 høydemeter og 10 km uten starthøyde; linja starter på 874 moh. Det meste er slakt — bandene fra 1600 til 1800 moh er 2,2 km grunn på 5,1 grader — og det bratte er det siste: 18,3 grader fra 2100 til 2200 moh og bratteste sammenhengende parti 30,0 grader mellom 2175 og 2194, på østryggen. Fri Flyt: «Det kan være greit å sette fra seg skiene før det siste bratte partiet mot toppen.»",
+   "caption": "1387 høydemeter og 9,60 km fra Russlie, med skoggrensa på 1013 moh, flata mellom 1600 og 1800 og østryggen fra 2028.",
+   "ascent": [
+    "Start på parkeringa ved Russlie, 874 moh, ved Fv51 Sjodalsvegen. Fri Flyt: «Det er flere mulige startsteder for toppturen til Nautgardstinden, men et greit utgangspunkt er Russlie ved veien som går fra Vågå mot Valdresflye.» Skogen slipper ved 1013 moh, 0,61 km fra start.",
+    "Fri Flyt: «Start med å gå vestover mot Steinhøe og hold til høyre for det brattere terrenget under Russlirundhøe, før du kommer inn på et flatere parti.» Linja passerer 165 meter nord for Steinhøe ved 3,14 km og 1449 moh. Mellom 4,6 og 4,9 km, 1554 til 1635 moh, går den opp et steinete trinn under nordøstsida av Russlirundhøe-massivet — celler på 45,1 grader 39 meter nord for linja ved 1594 moh og 36,4 grader 19 meter fra den ved 1635. Det er sannsynligvis det brattere terrenget Fri Flyt ber deg holde til høyre for; trekk ikke mot venstre her, verken opp eller ned. Russlirundhøe selv er nærmest ved 6,11 km og 1711 moh, 956 meter rett sør for linja. Bratteste bandet under 2000 moh er 16,1 grader fra 1000 til 1100, tidlig på turen.",
+    "Så kommer flata. Bandene fra 1600 til 1700 og fra 1700 til 1800 moh måler 5,1 grader hver over 1044 og 1170 meter grunn, og topp 1743 ligger 332 meter sør for linja ved 6,73 km. Fri Flyt: «Herfra stiger det brattere opp mot Nautgardstindene. Austre Nautgardstinden ligger til høyre, hovedtoppen til venstre.» Austre Nautgardstinden ligger 724 meter nordnordvest for linja ved 8,65 km.",
+    "Linja går opp østryggen fra 2028 moh ved 8,90 km — 16,1 grader fra 2000 til 2100 og 18,3 fra 2100 til 2200. Bratteste sammenhengende parti er 30,0 grader mellom 2175 og 2194 moh, og ved 2226–2243 moh krysser linja 21 meter bakke på 35 grader eller mer, med bratteste celle 43 grader. Baxter om vinterruta fra Heimsand: «The last section of the east ridge is relatively steep but should not be a problem in the summer or winter (provided it is not icy).» Fri Flyt anbefaler å gå det siste til fots. Nord for ryggen ligger nordbotnen: der faller bakken 45 grader og mer, 50 til 130 meter fra linja på det siste stykket og 30 meter fra toppen. Hold deg på ryggen og sørsida av den, godt unna kanten."
+   ],
+   "descent": [
+    "Fri Flyt: «Følg ruta fra oppstigningen det første strekket fra toppen. Derfra kan du velge linje i det slake terrenget mot bilen. Vær oppmerksom på det bratte partiet under Russlirundhøe.»",
+    "Toppen faller bratt mot nord, nordvest og vest: 60,7 grader 20 til 80 meter ut mot nord, 66,4 mot nordvest og 52,3 mot vest. Fri Flyt: «Bratt terreng rundt toppen. Hold god avstand til skavel på nordvestsiden.» Baxter om kanten av nordbotnen, som hans rute fra Glitterheim følger: «During the spring, the rim of this corrie sports some huge cornices and a respectful distance should be maintained to avoid plunging through them, especially in poor weather.» Kjør ned østryggen der du gikk opp, og trekk ikke nordover mot kanten."
+   ],
+   "avalanche": [
+    {
+     "title": "Ruta",
+     "body": "Bratteste sammenhengende parti er 30,0 grader mellom 2175 og 2194 moh, på østryggen, og ved 2226–2243 moh er bakken under linja 35 grader eller brattere i 21 meter. Under 2000 moh er bratteste bandet 16,1 grader fra 1000 til 1100, og trinnet ved 1554–1635 moh har 45 grader 39 meter fra linja. Fri Flyt graderer turen «KAST 1 – Enkelt» med bratteste punkt under 25 grader; her er den grad 2 for lengden, høyden og det siste bratte stykket, som du går til fots."
+    },
+    {
+     "title": "Terrenget utenfor",
+     "body": "Nord-, nordvest- og vestsida av toppen er 52,3 til 66,4 grader i bratteste vindu like under toppen. Fri Flyt: «Vær oppmerksom på det bratte partiet under Russlirundhøe.» Fri Flyts læringspunkt er vindtransport av snø: «Se hvordan snøen legger seg i søkk og bekkedaler.»"
+    },
+    {
+     "title": "Før du går",
+     "body": "Sjekk dagens skredvarsel for Jotunheimen på varsom.no. Jotunheimen er en A-region og varsles daglig i sesongen. Fv51 er åpen fra Vågå til Gjendesheim hele året; strekningen over Valdresflye sør for Maurvangen er vinterstengt. Ta med sender/mottaker, søkestang og spade."
+    }
+   ]
+  },
+  "en": {
+   "intro": "1387 metres of climbing over 9.60 km from Russlie in Sjodalen: west towards Steinhøe, north of Russlirundhøe, across the long flat and up the east ridge to the summit at 2257 m. Fri Flyt gives 1260 metres and 10 km with no start height; the line starts at 874 m. Most of it is gentle — the bands from 1600 to 1800 m are 2.2 km of ground at 5.1 degrees — and the steep part is the last: 18.3 degrees from 2100 to 2200 m and the steepest sustained section 30.0 degrees between 2175 and 2194, on the east ridge. Fri Flyt: “It can be a good idea to leave your skis before the last steep section to the top.”",
+   "caption": "1387 metres of climbing and 9.60 km from Russlie, with the treeline at 1013 m, the flat between 1600 and 1800 and the east ridge from 2028.",
+   "ascent": [
+    "Start at the car park at Russlie, 874 m, on the Fv51 Sjodalsvegen. Fri Flyt: “There are several possible starting points for the tour to Nautgardstinden, but a good one is Russlie by the road from Vågå towards Valdresflye.” The forest lets go at 1013 m, 0.61 km from the start.",
+    "Fri Flyt: “Start by heading west towards Steinhøe and keep right of the steeper terrain below Russlirundhøe, before you come onto a flatter stretch.” The line passes 165 metres north of Steinhøe at 3.14 km and 1449 m. Between 4.6 and 4.9 km, 1554 to 1635 m, it climbs a rocky step below the north-east side of the Russlirundhøe massif — cells of 45.1 degrees 39 metres north of the line at 1594 m and 36.4 degrees 19 metres from it at 1635. That is probably the steeper terrain Fri Flyt tells you to keep right of; do not drift left here, on the way up or down. Russlirundhøe itself is closest at 6.11 km and 1711 m, 956 metres due south of the line. The steepest band below 2000 m is 16.1 degrees from 1000 to 1100, early in the tour.",
+    "Then comes the flat. The bands from 1600 to 1700 and from 1700 to 1800 m measure 5.1 degrees each over 1044 and 1170 metres of ground, and top 1743 is 332 metres south of the line at 6.73 km. Fri Flyt: “From here it climbs more steeply towards the Nautgard peaks. Austre Nautgardstinden is on the right, the main summit on the left.” Austre Nautgardstinden is 724 metres north-north-west of the line at 8.65 km.",
+    "The line goes up the east ridge from 2028 m at 8.90 km — 16.1 degrees from 2000 to 2100 and 18.3 from 2100 to 2200. The steepest sustained section is 30.0 degrees between 2175 and 2194 m, and at 2226–2243 m the line crosses 21 metres of ground at 35 degrees or more, with the steepest cell at 43 degrees. Baxter on the winter route from Heimsand: “The last section of the east ridge is relatively steep but should not be a problem in the summer or winter (provided it is not icy).” Fri Flyt recommends doing the last bit on foot. North of the ridge is the north corrie: there the ground falls at 45 degrees and more, 50 to 130 metres from the line on the last stretch and 30 metres from the summit. Stay on the ridge and its south side, well away from the edge."
+   ],
+   "descent": [
+    "Fri Flyt: “Follow the ascent route for the first stretch from the summit. From there you can choose your line in the gentle terrain towards the car. Watch out for the steep section below Russlirundhøe.”",
+    "The summit falls away steeply to the north, north-west and west: 60.7 degrees 20 to 80 metres out to the north, 66.4 to the north-west and 52.3 to the west. Fri Flyt: “Steep terrain around the summit. Keep well away from the cornice on the north-west side.” Baxter on the rim of the north corrie, which his route from Glitterheim follows: “During the spring, the rim of this corrie sports some huge cornices and a respectful distance should be maintained to avoid plunging through them, especially in poor weather.” Ski down the east ridge the way you came up, and do not drift north towards the edge."
+   ],
+   "avalanche": [
+    {
+     "title": "The route",
+     "body": "The steepest sustained section is 30.0 degrees between 2175 and 2194 m, on the east ridge, and at 2226–2243 m the ground under the line is 35 degrees or steeper for 21 metres. Below 2000 m the steepest band is 16.1 degrees from 1000 to 1100, and the step at 1554–1635 m has 45 degrees 39 metres from the line. Fri Flyt grades the tour “KAST 1 – Easy” with the steepest point under 25 degrees; here it is grade 2 for the length, the height and the last steep stretch, which you do on foot."
+    },
+    {
+     "title": "The terrain around it",
+     "body": "The north, north-west and west sides of the summit are 52.3 to 66.4 degrees in their steepest windows just below the top. Fri Flyt: “Watch out for the steep section below Russlirundhøe.” Fri Flyt's learning point is wind transport of snow: “See how the snow settles in hollows and stream gullies.”"
+    },
+    {
+     "title": "Before you go",
+     "body": "Check today's avalanche forecast for Jotunheimen at varsom.no. Jotunheimen is an A region and is forecast daily in season. The Fv51 is open from Vågå to Gjendesheim all year; the stretch over Valdresflye south of Maurvangen is closed in winter. Bring a transceiver, probe and shovel."
+    }
+   ]
+  },
+  "sources": [
+   "https://www.friflyt.no/topptur/skiturer-jotunheimen/turbeskrivelse-nautgardstinden",
+   "https://scandinavianmountains.com/areas/12-sj%C3%B8dalen/mountains/12.01-nautgardstind/alternative.htm",
+   "https://www.scandinavianmountains.com/areas/12-sj%C3%B8dalen/mountains/12.01-nautgardstind/index.htm",
+   "https://www.visitnorway.no/reisemal/ostlandet/valdres/nasjonal-turistveg-valdresflye/"
+  ],
+  "source": "written against corridors.json, the routed line, flank_probe.py and a 5 m slope grid along the line",
+  "problems": [
+   "Høydemeter: linja gir 1387 fra Russlie (874 moh); Fri Flyt oppgir 1260 uten starthøyde.",
+   "Baxters vinterrute går fra Heimsand sør for Russlirundhøe og møter denne linja på østsida av toppen. Confidence medium.",
+   "ADVERSARIAL READ: de siste 300 m gikk langs kanten av nordbotnen, med 42–53 grader 0–20 m fra linja der Fri Flyt advarer mot skavl. Tre punkter på østryggen (61.6036/8.7660, 61.6034/8.7625, 61.60337/8.7610) legger linja 50–130 m fra kanten; 9647 m +1387 → 9596 m +1387, bratteste 30 m går 24,2 → 30,0 grader. Russlirundhøe-avstanden er rettet til 6,11 km, trinnet ved 4,6–4,9 km er plassert, Baxters skavl-sitat er knyttet til Glitterheim-ruta, og «en av Jotunheimens høyeste» er fjernet fra teaseren."
+  ]
+ },
+ "tylderingen": {
+  "no": {
+   "intro": "610 høydemeter på 2,79 km fra Fretland i Sogndalsdalen: over jordet til stølen Tråna, opp lia og den sørligste ryggen, og på vestsida av ryggen det siste stykket til toppen på 1104 moh. Bratteste bandet er 15,4 grader mellom 900 og 1000 moh, og bratteste sammenhengende parti 23,8 grader mellom 691 og 707. Fri Flyt: «Sørsida til Tylderingen er ein flott topptur i vintersola med god utsikt og ope landskap som er skivenleg.»",
+   "caption": "610 høydemeter og 2,79 km fra Fretland, med skoggrensa på 860 moh og bratteste bandet mellom 900 og 1000.",
+   "ascent": [
+    "Start på parkeringa ved gardene på Fretland, 495 moh. Fri Flyt starter ved den vestligste garden; parkeringa ligger øst i tunet, og Stavateig, lenger vest, ligger 346 meter unna. Fri Flyt: «Ta av ved skiltet Fretland og parker oppe ved gardane på egna plassar.» og «Vis omsyn når ein parkerer ved gardane.»",
+    "Fri Flyt: «Frå den vestlegaste garden går ein over jordet til stølen Tråna. Herfrå er det ope kulturlandskap opp til tregrensa.» Linja går nordover over jordet og passerer stølen Tråna 26 meter unna ved 0,62 km og Stokksete 80 meter unna ved 1,12 km. Bandene fra 500 til 900 moh måler 11,3 til 14,0 grader, og bratteste parti på turen, 23,8 grader, ligger mellom 691 og 707 moh. Ved 714–723 moh krysser linja 23 meter bakke på 35 grader eller mer, med bratteste celle 42 grader. Skogen slipper ved 860 moh, 1,62 km fra start.",
+    "Fri Flyt: «Oppturen følgje den sørlegaste ryggformasjonen oppover. Kring 1050 moh går ein på vestsida av ryggen til ein kjem til toppen.» Bandet fra 900 til 1000 moh er det bratteste, 15,4 grader over 385 meter grunn. Linja er på vestsida av ryggen ved 1062 moh, 2,56 km fra start, og toppen er 230 meter lenger inne. Ved siden av ryggen står celler på 51,9 grader 27 meter nordnordvest for linja ved 1006 moh og 56,3 grader 27 meter sør for den ved 1076 moh — brattere knauser og hyller langs ryggen."
+   ],
+   "descent": [
+    "Fri Flyt: «Nedfarten frå Tylderingen gjev god utsikt frå ryggen og sola i ansiktet. Ein kan følgje same veg ned som ein har gått opp. Det er mykje ope kulturlandskap slik at ein har god plass til å boltre seg i snøen.»",
+    "Toppen er slak mot nord, nordøst og sørvest, 5,5 til 10,3 grader i snitt over 500 meter. Mot vest og nordvest faller den 41,9 og 44,9 grader i bratteste vindu 250 til 370 meter ut, og mot øst 35,6 grader 220 til 280 meter ut. Hold deg på sørsida."
+   ],
+   "avalanche": [
+    {
+     "title": "Ruta",
+     "body": "Bratteste sammenhengende parti er 23,8 grader mellom 691 og 707 moh, og bratteste bandet 15,4 grader fra 900 til 1000. Bakken under linja er 35 grader eller brattere i ett strekk på 23 meter ved 714–723 moh. Fri Flyt graderer turen «Lett», med bratteste punkt under 30 grader og «Farar: Ingen»."
+    },
+    {
+     "title": "Terrenget utenfor",
+     "body": "Vest-, nordvest- og østsida av toppen er brattere enn ruta — 35,6 til 44,9 grader i bratteste vindu. Fri Flyt om vanskegraden: «Ved spesielle tilhøve (glasert skare eller liknande) kan ei utgliding eller eit fall utgjere ein risiko.» Sørsida er solvendt; Fri Flyt: «ikkje vent for lenge på sesongen før ein tek turen»."
+    },
+    {
+     "title": "Før du går",
+     "body": "Sjekk dagens skredvarsel for Indre Sogn på varsom.no. Indre Sogn er en A-region og varsles daglig i sesongen. Ta av fra Dalavegen ved skiltet Fretland og parker på egnede plasser ved gardene. Ta med sender/mottaker, søkestang og spade."
+    }
+   ]
+  },
+  "en": {
+   "intro": "610 metres of climbing over 2.79 km from Fretland in Sogndalsdalen: across the field to the summer farm Tråna, up the hillside and the southernmost ridge, and on the west side of the ridge for the last stretch to the top at 1104 m. The steepest band is 15.4 degrees between 900 and 1000 m, and the steepest sustained section 23.8 degrees between 691 and 707. Fri Flyt: “The south side of Tylderingen is a fine tour in the winter sun with good views and open, ski-friendly country.”",
+   "caption": "610 metres of climbing and 2.79 km from Fretland, with the treeline at 860 m and the steepest band between 900 and 1000.",
+   "ascent": [
+    "Start at the car park by the farms at Fretland, 495 m. Fri Flyt starts at the westernmost farm; the car park is at the east end of the farms, and Stavateig, further west, is 346 metres away. Fri Flyt: “Turn off at the Fretland sign and park up by the farms in suitable spots.” and “Show consideration when you park by the farms.”",
+    "Fri Flyt: “From the westernmost farm you cross the field to the summer farm Tråna. From there it is open farmland up to the treeline.” The line goes north across the field and passes the summer farm Tråna 26 metres away at 0.62 km and Stokksete 80 metres away at 1.12 km. The bands from 500 to 900 m measure 11.3 to 14.0 degrees, and the steepest section of the tour, 23.8 degrees, is between 691 and 707 m. At 714–723 m the line crosses 23 metres of ground at 35 degrees or more, with the steepest cell at 42 degrees. The forest lets go at 860 m, 1.62 km from the start.",
+    "Fri Flyt: “The ascent follows the southernmost ridge formation upwards. At about 1050 m you go on the west side of the ridge until you reach the summit.” The band from 900 to 1000 m is the steepest, 15.4 degrees over 385 metres of ground. The line is on the west side of the ridge at 1062 m, 2.56 km from the start, and the summit is 230 metres further on. Beside the ridge there are cells of 51.9 degrees 27 metres north-north-west of the line at 1006 m and 56.3 degrees 27 metres south of it at 1076 m — steeper knolls and ledges along the ridge."
+   ],
+   "descent": [
+    "Fri Flyt: “The descent from Tylderingen gives good views from the ridge and the sun in your face. You can follow the same way down as you came up. There is a lot of open farmland, so there is plenty of room to play in the snow.”",
+    "The summit is gentle to the north, north-east and south-west, 5.5 to 10.3 degrees on average over 500 metres. To the west and north-west it falls 41.9 and 44.9 degrees in its steepest windows 250 to 370 metres out, and to the east 35.6 degrees 220 to 280 metres out. Keep to the south side."
+   ],
+   "avalanche": [
+    {
+     "title": "The route",
+     "body": "The steepest sustained section is 23.8 degrees between 691 and 707 m, and the steepest band 15.4 degrees from 900 to 1000. The ground under the line is 35 degrees or steeper on one stretch of 23 metres at 714–723 m. Fri Flyt grades the tour “Easy”, with the steepest point under 30 degrees and “Hazards: none”."
+    },
+    {
+     "title": "The terrain around it",
+     "body": "The west, north-west and east sides of the summit are steeper than the route — 35.6 to 44.9 degrees in their steepest windows. Fri Flyt on the grade: “In special conditions (glazed crust or similar) a slide or a fall can be a risk.” The south side faces the sun; Fri Flyt: “do not wait too long into the season before you do the tour”."
+    },
+    {
+     "title": "Before you go",
+     "body": "Check today's avalanche forecast for Indre Sogn at varsom.no. Indre Sogn is an A region and is forecast daily in season. Turn off Dalavegen at the Fretland sign and park in suitable spots by the farms. Bring a transceiver, probe and shovel."
+    }
+   ]
+  },
+  "sources": [
+   "https://www.friflyt.no/topptur/skiturer-sogn/turbeskrivelse-tyldringen",
+   "https://fjordpeaks.com/2017/01/22/tylderingen-jan-14-2017/"
+  ],
+  "source": "written against corridors.json, the routed line, flank_probe.py and a 5 m slope grid along the line",
+  "problems": [
+   "Andrekilden (fjordpeaks.com) bekrefter start, lengde og høydemeter, ikke linja. Confidence medium.",
+   "ADVERSARIAL READ: stølen Tråna finnes (registeret 61.27545/7.02854, OSM node/10176204199), 26 m fra linja ved 0,62 km; påstanden om at den manglet er fjernet. «Anviste plasser» er nå Fri Flyts «egna plassar», «knauser du ser» er omformulert, og starten er beskrevet som parkeringa øst i tunet."
+  ]
  }
 }

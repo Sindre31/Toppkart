@@ -238,4 +238,7 @@ NEW_TOURS = {
     "sveigen": ("Sveigen", "Haukeli"),
     "vesle-nup": ("Vesle Nup", "Haukeli"),
     "fjetlandsnuten": ("Fjetlandsnuten", "Røldal"),
+    "heimdalshoe": ("Heimdalshøe", "Jotunheimen"),
+    "nautgardstinden": ("Nautgardstinden", "Jotunheimen"),
+    "tylderingen": ("Tylderingen", "Sogn"),
 }

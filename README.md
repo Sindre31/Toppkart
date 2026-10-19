@@ -122,10 +122,10 @@ components/
 lib/
   config.ts              VIPPS, SITE, GRADE_COLORS, env, isSupabaseConfigured
   types.ts               Tour, TourGuide, Identity
-  tours.ts               The 195 tours, REGIONS, getTour(), routesFor(), routeById(),
+  tours.ts               The 198 tours, REGIONS, getTour(), routesFor(), routeById(),
                          routeFor(), routeProfile()
   routes.ts              Generated ascent routes per tour — see scripts/build-routes/
-  guides.ts              Editorial guide content — all 195 tours, generated
+  guides.ts              Editorial guide content — all 198 tours, generated
   i18n/                  Every user-visible string, no/en. content.ts holds the guides
   access.ts              getIdentity() — who is signed in (admins only)
   tour-marks.ts          Favourite/done rules and reading them back from storage
@@ -136,7 +136,7 @@ lib/
   *.test.ts              Unit tests, run by `npm test` — see "Checks" below
 supabase/
   schema.sql             Tables, policies, RLS
-  seed.sql               The 195 tours and all 195 guides
+  seed.sql               The 198 tours and all 198 guides
 design-reference/        The HTML prototypes and the product/design handoff. Read-only ground
                          truth; not shipped.
 docs/
@@ -280,10 +280,10 @@ content and data quality that has to be settled before the site is promoted wide
   pipeline and what it verifies. What is still missing is ground truth: these lines show where a
   route goes, but nobody has skied them with a GPS. Surveyed GPX per route, served from Supabase
   Storage, is still the production plan.
-- **Thirty-five peaks of 195 have their alternative routes entered, and the Fri Flyt corpus is
+- **Thirty-five peaks of 198 have their alternative routes entered, and the Fri Flyt corpus is
   now exhausted.** The data model takes any number of routes per tour and the map renders a picker
-  when there is more than one; 233 routes now cover 195 tours, and Kjølen, Strandtinden and
-  Rondslottet carry three lines each. The remaining 160 tours have exactly one route. That is no
+  when there is more than one; 236 routes now cover 198 tours, and Kjølen, Strandtinden and
+  Rondslottet carry three lines each. The remaining 163 tours have exactly one route. That is no
   longer a research backlog against the source this collection was built from: every one of Fri
   Flyt's 580 published route pages has been indexed and read, and the four documented second
   starts left in it went in with the round that indexed them. Further second routes have to come
@@ -337,9 +337,19 @@ content and data quality that has to be settled before the site is promoted wide
   ran 393 m on Røldalsvatnet**, a regulated lake, until `check_ground.py` saw it; the corridor now
   follows Blåbergdalsvegen, the access road. See «The Haukeli and Røldal round» in
   `scripts/build-routes/README.md`.
+- **Three more tours from Fri Flyt: Heimdalshøe and Nautgardstinden in Sjodalen, and Tylderingen
+  in Sogndalsdalen.** The two in Sjodalen are from *Trygge toppturer* and start on the stretch of
+  Fv51 from Vågå to Gjendesheim that stays open all winter; Valdresflye south of Maurvangen is
+  closed, which is what turned away Høgdebrotet and the tours off Sognefjellet and Leirvassbu.
+  Tylderingen is the short south side above the farms at Fretland. All three second sources are
+  thin — Bessheim and ut.no's summer path for Heimdalshøe, James Baxter's *Scandinavian
+  Mountains* for Nautgardstinden, a trip report for Tylderingen — and each record says
+  `confidence: medium`. Skørsnøse was held back: its ut.no page is Fri Flyt's text word for word,
+  which is one source, not two. See «The Sjodalen and Sogndal round» in
+  `scripts/build-routes/README.md`.
 - **The tour cards are checked, the guides are checked, the geometry is checked — by machine.**
-  `check_tours.py` and `check_routes.py` come back clean on all 195 tours and `check_guides.py` on
-  every number in all 195 guides: every card height is DTM1 at the resolved summit, every vertical is
+  `check_tours.py` and `check_routes.py` come back clean on all 198 tours and `check_guides.py` on
+  every number in all 198 guides: every card height is DTM1 at the resolved summit, every vertical is
   its route's cumulative ascent to within 10 m, every number in the prose traces to a measurement, and
   `supabase/seed.sql` holds the same figures as `lib/tours.ts`. The last figure without a tracked
   source — a stone tunnel's altitude in Taraldsviktinden's guide — was settled by researching that
@@ -462,12 +472,12 @@ content and data quality that has to be settled before the site is promoted wide
 - **The guide text has not been read by anyone who has skied these tours.** Every number in
   `lib/guides.ts` traces to Kartverket's terrain model, the route research or a cited source, and
   every number is matched mechanically by `check_guides.py` — which reads nynorsk verticals as well
-  as bokmål ones, and comes back clean on all 195 guides with no unsourced number left.
-  On top of that, **115 of the 195 have been through an independent adversarial read** whose only job
+  as bokmål ones, and comes back clean on all 198 guides with no unsourced number left.
+  On top of that, **118 of the 198 have been through an independent adversarial read** whose only job
   is to break it — the 24 of the first round, the 15 of the second, the 7 of the Oslo round, the
   22 of the Sunnmøre and Vestland rounds, the 7 of the Trondheim round, Kjerag, Møysalen and
   Sæbyggjenuten, the 4 of the popularity round, the 8 of the alpine-resort round, the
-  14 newest, Heddersfjell and Mellomkollen, the four of the Sunnfjord round and, last, the four of the Haukeli and Røldal round — the gap every previous round's write-up had to name. That read is written up in
+  14 newest, Heddersfjell and Mellomkollen, the four of the Sunnfjord round, the four of the Haukeli and Røldal round and, last, the three of the Sjodalen and Sogndal round — the gap every previous round's write-up had to name. That read is written up in
   `scripts/build-routes/README.md`. The seventy-five of the fourteen newest rounds — Senja/Helgeland, Romsdal, Troms, Lofoten, Narvik, Sør-Troms, Tjeldsund, Lofast, Grytøya/Kvæfjord-vest, Ibestad, Tjeldøya, the island-completion round, the Møysalen round and the town round — are the current gap. It found four fabricated quotations, seven dropped or
   misplaced source warnings, four superlatives stated in the wrong place on the mountain, three
   bearings pointing the wrong way in fog, a fjord depth measured against water 8 km away, and a

@@ -3118,5 +3118,53 @@
   "aspect": "SV",
   "distanceKm": 5.7,
   "cumdistM": 5672
+ },
+ "heimdalshoe": {
+  "verticalM": 880,
+  "gainM": 879,
+  "distanceM": 6317,
+  "startM": 970,
+  "summitM": 1843,
+  "duration": "4–6 t",
+  "steepestBandAngle": 14.3,
+  "steepestBandFrom": 1300,
+  "steepestBandTo": 1400,
+  "maxStepAngle": 19.3,
+  "grade": 2,
+  "aspect": "NV",
+  "distanceKm": 6.3,
+  "cumdistM": 6317
+ },
+ "nautgardstinden": {
+  "verticalM": 1390,
+  "gainM": 1387,
+  "distanceM": 9596,
+  "startM": 874,
+  "summitM": 2257,
+  "duration": "7–9 t",
+  "steepestBandAngle": 18.3,
+  "steepestBandFrom": 2100,
+  "steepestBandTo": 2200,
+  "maxStepAngle": 30.0,
+  "grade": 3,
+  "aspect": "Ø",
+  "distanceKm": 9.6,
+  "cumdistM": 9596
+ },
+ "tylderingen": {
+  "verticalM": 610,
+  "gainM": 610,
+  "distanceM": 2793,
+  "startM": 495,
+  "summitM": 1104,
+  "duration": "2–4 t",
+  "steepestBandAngle": 15.4,
+  "steepestBandFrom": 900,
+  "steepestBandTo": 1000,
+  "maxStepAngle": 23.8,
+  "grade": 1,
+  "aspect": "S",
+  "distanceKm": 2.8,
+  "cumdistM": 2794
  }
 }

@@ -1654,5 +1654,29 @@
     "summit_dtm": 1284.8,
     "claims": 1287,
     "stored_off_km": 0.02
+  },
+  "heimdalshoe": {
+    "name": "Heimdalshøe",
+    "lat": 61.45438,
+    "lng": 8.90219,
+    "summit_dtm": 1843.0,
+    "claims": 1843,
+    "stored_off_km": 0.0
+  },
+  "nautgardstinden": {
+    "name": "Nautgardstinden",
+    "lat": 61.60324,
+    "lng": 8.75936,
+    "summit_dtm": 2257.1,
+    "claims": 2258,
+    "stored_off_km": 0.01
+  },
+  "tylderingen": {
+    "name": "Tylderingen",
+    "lat": 61.29215,
+    "lng": 7.03255,
+    "summit_dtm": 1104.5,
+    "claims": 1104,
+    "stored_off_km": 0.02
   }
 }

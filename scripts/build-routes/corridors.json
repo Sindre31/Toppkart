@@ -11927,5 +11927,191 @@
     "notes": "Ut.no: henget ved rundt 750 moh. har et kort parti med mulig skredfare; vurder det før du går videre. Ut.no: på returen holder du deg sør for Gjertrabekk, ellers kommer du ut i meget bratt terreng — mellom 864 og 970 moh. ligger terreng på 40 grader og mer 50–220 m nordvest for linja, og inngangen til Gravgjel-renna ligger nord for linja ved rundt 950–1000 moh. Fri Flyt: på varme dager varmer sola opp masta, og isen faller av. Gravgjel er 55 grader øverst, «Vanskelig», med fare for skred og steinfall."
    }
   ]
+ },
+ "heimdalshoe": {
+  "routes": [
+   {
+    "id": "maurvangen",
+    "name": "Fra Maurvangen",
+    "description": "Fra Maurvangen Fjellpark sørover opp gjennom bjørkeskogen, langs Brurskardbekken, opp på Molflyhalsen og ryggen østover til toppen",
+    "trailhead": {
+     "name": "Maurvangen Fjellpark",
+     "lat": 61.48883,
+     "lng": 8.84352,
+     "elevation_m": 970.5,
+     "fullName": "Maurvangen Fjellpark"
+    },
+    "waypoints": [
+     {
+      "name": "bjørkeskogen",
+      "lat": 61.483,
+      "lng": 8.842,
+      "elevation_m": 1001.1
+     },
+     {
+      "name": "bjørkeskogen",
+      "lat": 61.477,
+      "lng": 8.838,
+      "elevation_m": 1065.1
+     },
+     {
+      "name": "langs Brurskardbekken",
+      "lat": 61.472,
+      "lng": 8.838,
+      "elevation_m": 1138.9
+     },
+     {
+      "name": "mot Molflyhalsen",
+      "lat": 61.46981,
+      "lng": 8.84029,
+      "elevation_m": 1180.0
+     },
+     {
+      "name": "mot Molflyhalsen",
+      "lat": 61.46731,
+      "lng": 8.85505,
+      "elevation_m": 1394.9
+     },
+     {
+      "name": "Molflyhalsen",
+      "lat": 61.4635,
+      "lng": 8.85785,
+      "elevation_m": 1447.1
+     },
+     {
+      "name": "ryggen",
+      "lat": 61.46033,
+      "lng": 8.87102,
+      "elevation_m": 1628.9
+     },
+     {
+      "name": "ryggen",
+      "lat": 61.45619,
+      "lng": 8.89067,
+      "elevation_m": 1727.5
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: «Vær obs på trange og dype bekkefar som samler lange, harde og bratte skavler. Nordvendt bolle i toppen mellom Heimdalshø og vesttoppen 1732 moh, kan samle store mengder snø, og bør bare kjøres på senvinteren og våren.» Snaufjellet over skogen er vindutsatt."
+   }
+  ]
+ },
+ "nautgardstinden": {
+  "routes": [
+   {
+    "id": "russlie",
+    "name": "Fra Russlie",
+    "description": "Fra Russlie ved Fv51 vestover mot Steinhøe, nord for Russlirundhøe, over flata og opp østryggen til hovedtoppen",
+    "trailhead": {
+     "name": "Russlie",
+     "lat": 61.58841,
+     "lng": 8.9303,
+     "elevation_m": 874.3,
+     "fullName": "Russlie"
+    },
+    "waypoints": [
+     {
+      "name": "vestover",
+      "lat": 61.5915,
+      "lng": 8.905,
+      "elevation_m": 1181.4
+     },
+     {
+      "name": "mot Steinhøe",
+      "lat": 61.5975,
+      "lng": 8.87,
+      "elevation_m": 1451.9
+     },
+     {
+      "name": "nord for Russlirundhøe",
+      "lat": 61.6025,
+      "lng": 8.845,
+      "elevation_m": 1616.4
+     },
+     {
+      "name": "flata",
+      "lat": 61.6035,
+      "lng": 8.81,
+      "elevation_m": 1747.6
+     },
+     {
+      "name": "mot Nautgardstindene",
+      "lat": 61.604,
+      "lng": 8.785,
+      "elevation_m": 1943.4
+     },
+     {
+      "name": "østryggen",
+      "lat": 61.6038,
+      "lng": 8.77,
+      "elevation_m": 2035.7
+     },
+     {
+      "name": "østryggen",
+      "lat": 61.6036,
+      "lng": 8.766,
+      "elevation_m": 2101.2
+     },
+     {
+      "name": "østryggen",
+      "lat": 61.6034,
+      "lng": 8.7625,
+      "elevation_m": 2164.6
+     },
+     {
+      "name": "østryggen",
+      "lat": 61.60337,
+      "lng": 8.761,
+      "elevation_m": 2214.8
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: «Bratt terreng rundt toppen. Hold god avstand til skavel på nordvestsiden.» Fri Flyt: «Vær oppmerksom på det bratte partiet under Russlirundhøe.» Baxter: om våren har botnkanten nord for toppen «some huge cornices», og siste stykket opp til toppen har ofte dårlig snødekke, så skiene må ofte av; siste del av østryggen er brattere og kan være islagt."
+   }
+  ]
+ },
+ "tylderingen": {
+  "routes": [
+   {
+    "id": "fretland",
+    "name": "Fra Fretland",
+    "description": "Fra gardene på Fretland over jordet og opp den sørligste ryggen, på vestsida av den fra rundt 1050 moh., til toppen",
+    "trailhead": {
+     "name": "Fretland",
+     "lat": 61.27027,
+     "lng": 7.02812,
+     "elevation_m": 495.2,
+     "fullName": "Fretland"
+    },
+    "waypoints": [
+     {
+      "name": "over jordet",
+      "lat": 61.276,
+      "lng": 7.027,
+      "elevation_m": 634.9
+     },
+     {
+      "name": "ryggen",
+      "lat": 61.282,
+      "lng": 7.0262,
+      "elevation_m": 822.2
+     },
+     {
+      "name": "ryggen",
+      "lat": 61.2875,
+      "lng": 7.0258,
+      "elevation_m": 976.1
+     },
+     {
+      "name": "vestsida av ryggen",
+      "lat": 61.2905,
+      "lng": 7.0295,
+      "elevation_m": 1058.9
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt oppgir «Farar: Ingen» for normalvegen. Sørsida er solvendt, og Fri Flyt ber deg ta turen tidlig: «Nyt solstrålane i dei kalde månadane og ikkje vent for lenge på sesongen før ein tek turen.» Ved glasert skare kan en utglidning likevel være farlig."
+   }
+  ]
  }
 }
