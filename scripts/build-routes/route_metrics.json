@@ -1,4 +1,68 @@
 {
+ "gievdnerassa": {
+  "verticalM": 880,
+  "gainM": 880,
+  "distanceM": 6337,
+  "startM": 58,
+  "summitM": 898,
+  "duration": "4–6 t",
+  "steepestBandAngle": 17.3,
+  "steepestBandFrom": 200,
+  "steepestBandTo": 300,
+  "maxStepAngle": 29.1,
+  "grade": 2,
+  "aspect": "S",
+  "distanceKm": 6.3,
+  "cumdistM": 6337
+ },
+ "stortinden-langfjord": {
+  "verticalM": 1010,
+  "gainM": 1006,
+  "distanceM": 7398,
+  "startM": 40,
+  "summitM": 936,
+  "duration": "5–7 t",
+  "steepestBandAngle": 19.6,
+  "steepestBandFrom": 100,
+  "steepestBandTo": 200,
+  "maxStepAngle": 26.3,
+  "grade": 2,
+  "aspect": "SV",
+  "distanceKm": 7.4,
+  "cumdistM": 7398
+ },
+ "laslettind": {
+  "verticalM": 660,
+  "gainM": 665,
+  "distanceM": 2968,
+  "startM": 163,
+  "summitM": 822,
+  "duration": "3–5 t",
+  "steepestBandAngle": 19.6,
+  "steepestBandFrom": 300,
+  "steepestBandTo": 400,
+  "maxStepAngle": 22.1,
+  "grade": 2,
+  "aspect": "SØ",
+  "distanceKm": 3.0,
+  "cumdistM": 2969
+ },
+ "vassnestind": {
+  "verticalM": 880,
+  "gainM": 879,
+  "distanceM": 3930,
+  "startM": 22,
+  "summitM": 896,
+  "duration": "3–5 t",
+  "steepestBandAngle": 19.2,
+  "steepestBandFrom": 400,
+  "steepestBandTo": 500,
+  "maxStepAngle": 26.0,
+  "grade": 2,
+  "aspect": "N",
+  "distanceKm": 3.9,
+  "cumdistM": 3929
+ },
  "storgalten": {
   "verticalM": 1220,
   "gainM": 1215,
@@ -66,7 +130,7 @@
  "rodtinden": {
   "verticalM": 450,
   "gainM": 450,
-  "distanceM": 2321,
+  "distanceM": 2324,
   "startM": 20,
   "summitM": 470,
   "duration": "2–4 t",
@@ -77,7 +141,7 @@
   "grade": 1,
   "aspect": "SØ",
   "distanceKm": 2.3,
-  "cumdistM": 2322
+  "cumdistM": 2324
  },
  "storfjellet": {
   "verticalM": 1050,
@@ -97,9 +161,9 @@
  },
  "skarlitinden": {
   "verticalM": 940,
-  "gainM": 937,
-  "distanceM": 6341,
-  "startM": 31,
+  "gainM": 939,
+  "distanceM": 6359,
+  "startM": 30,
   "summitM": 858,
   "duration": "4–6 t",
   "steepestBandAngle": 21.1,
@@ -108,8 +172,8 @@
   "maxStepAngle": 30.5,
   "grade": 2,
   "aspect": "N",
-  "distanceKm": 6.3,
-  "cumdistM": 6342
+  "distanceKm": 6.4,
+  "cumdistM": 6359
  },
  "fastdalstinden": {
   "verticalM": 1270,
@@ -129,8 +193,8 @@
  },
  "tromsdalstinden": {
   "verticalM": 1210,
-  "gainM": 1212,
-  "distanceM": 8274,
+  "gainM": 1213,
+  "distanceM": 8280,
   "startM": 38,
   "summitM": 1238,
   "duration": "6–8 t",
@@ -141,7 +205,7 @@
   "grade": 2,
   "aspect": "SV",
   "distanceKm": 8.3,
-  "cumdistM": 8274
+  "cumdistM": 8280
  },
  "gabrielfjellet": {
   "verticalM": 1140,
@@ -161,8 +225,8 @@
  },
  "rornestinden": {
   "verticalM": 1020,
-  "gainM": 1018,
-  "distanceM": 5796,
+  "gainM": 1022,
+  "distanceM": 5785,
   "startM": 62,
   "summitM": 1030,
   "duration": "4–6 t",
@@ -173,7 +237,7 @@
   "grade": 2,
   "aspect": "SØ",
   "distanceKm": 5.8,
-  "cumdistM": 5797
+  "cumdistM": 5785
  },
  "hamperokken": {
   "verticalM": 1380,
@@ -192,9 +256,9 @@
   "cumdistM": 5636
  },
  "kavringtinden": {
-  "verticalM": 1250,
-  "gainM": 1251,
-  "distanceM": 5614,
+  "verticalM": 1260,
+  "gainM": 1255,
+  "distanceM": 5638,
   "startM": 62,
   "summitM": 1289,
   "duration": "5–7 t",
@@ -205,12 +269,12 @@
   "grade": 3,
   "aspect": "NØ",
   "distanceKm": 5.6,
-  "cumdistM": 5613
+  "cumdistM": 5638
  },
  "fagerfjellet": {
   "verticalM": 950,
   "gainM": 947,
-  "distanceM": 4303,
+  "distanceM": 4301,
   "startM": 21,
   "summitM": 957,
   "duration": "4–6 t",
@@ -221,12 +285,12 @@
   "grade": 2,
   "aspect": "V",
   "distanceKm": 4.3,
-  "cumdistM": 4305
+  "cumdistM": 4301
  },
  "hesten-segla": {
-  "verticalM": 510,
-  "gainM": 512,
-  "distanceM": 2222,
+  "verticalM": 520,
+  "gainM": 515,
+  "distanceM": 2234,
   "startM": 48,
   "summitM": 557,
   "duration": "2–4 t",
@@ -235,9 +299,9 @@
   "steepestBandTo": 600,
   "maxStepAngle": 25.3,
   "grade": 2,
-  "aspect": "Ø",
+  "aspect": "SØ",
   "distanceKm": 2.2,
-  "cumdistM": 2223
+  "cumdistM": 2234
  },
  "keipen": {
   "verticalM": 840,
@@ -258,7 +322,7 @@
  "husfjellet": {
   "verticalM": 640,
   "gainM": 640,
-  "distanceM": 3295,
+  "distanceM": 3321,
   "startM": 3,
   "summitM": 632,
   "duration": "3–5 t",
@@ -269,7 +333,7 @@
   "grade": 1,
   "aspect": "SØ",
   "distanceKm": 3.3,
-  "cumdistM": 3295
+  "cumdistM": 3321
  },
  "breitinden": {
   "verticalM": 1050,
@@ -417,8 +481,8 @@
  },
  "skjellesvikgalten": {
   "verticalM": 1020,
-  "gainM": 1019,
-  "distanceM": 4105,
+  "gainM": 1022,
+  "distanceM": 4116,
   "startM": 6,
   "summitM": 987,
   "duration": "4–6 t",
@@ -427,9 +491,9 @@
   "steepestBandTo": 600,
   "maxStepAngle": 32.8,
   "grade": 2,
-  "aspect": "SØ",
+  "aspect": "Ø",
   "distanceKm": 4.1,
-  "cumdistM": 4107
+  "cumdistM": 4116
  },
  "nona": {
   "verticalM": 1020,
@@ -450,7 +514,7 @@
  "trolltinden": {
   "verticalM": 940,
   "gainM": 942,
-  "distanceM": 4700,
+  "distanceM": 4709,
   "startM": 2,
   "summitM": 918,
   "duration": "4–6 t",
@@ -461,7 +525,7 @@
   "grade": 2,
   "aspect": "S",
   "distanceKm": 4.7,
-  "cumdistM": 4700
+  "cumdistM": 4709
  },
  "arbostadtinden": {
   "verticalM": 1170,
@@ -514,7 +578,7 @@
  "lundenesgalten": {
   "verticalM": 790,
   "gainM": 788,
-  "distanceM": 4653,
+  "distanceM": 4655,
   "startM": 5,
   "summitM": 787,
   "duration": "3–5 t",
@@ -525,7 +589,7 @@
   "grade": 2,
   "aspect": "SØ",
   "distanceKm": 4.7,
-  "cumdistM": 4653
+  "cumdistM": 4655
  },
  "middagstinden-andorja": {
   "verticalM": 620,
@@ -609,8 +673,8 @@
  },
  "snotinden": {
   "verticalM": 1240,
-  "gainM": 1242,
-  "distanceM": 6763,
+  "gainM": 1243,
+  "distanceM": 6782,
   "startM": 9,
   "summitM": 1215,
   "duration": "5–7 t",
@@ -621,12 +685,12 @@
   "grade": 2,
   "aspect": "V",
   "distanceKm": 6.8,
-  "cumdistM": 6760
+  "cumdistM": 6782
  },
  "storhornet-kvafjord": {
   "verticalM": 660,
   "gainM": 658,
-  "distanceM": 8219,
+  "distanceM": 8222,
   "startM": 175,
   "summitM": 722,
   "duration": "4–6 t",
@@ -637,7 +701,7 @@
   "grade": 1,
   "aspect": "SØ",
   "distanceKm": 8.2,
-  "cumdistM": 8220
+  "cumdistM": 8222
  },
  "vetefjellet": {
   "verticalM": 390,
@@ -658,7 +722,7 @@
  "storlitinden": {
   "verticalM": 450,
   "gainM": 446,
-  "distanceM": 2690,
+  "distanceM": 2698,
   "startM": 167,
   "summitM": 613,
   "duration": "2–4 t",
@@ -669,7 +733,7 @@
   "grade": 1,
   "aspect": "SØ",
   "distanceKm": 2.7,
-  "cumdistM": 2690
+  "cumdistM": 2698
  },
  "stortinden-rolla": {
   "verticalM": 980,
@@ -689,8 +753,8 @@
  },
  "rundtind": {
   "verticalM": 880,
-  "gainM": 880,
-  "distanceM": 5966,
+  "gainM": 881,
+  "distanceM": 5980,
   "startM": 30,
   "summitM": 872,
   "duration": "4–6 t",
@@ -701,12 +765,12 @@
   "grade": 2,
   "aspect": "SV",
   "distanceKm": 6.0,
-  "cumdistM": 5968
+  "cumdistM": 5980
  },
  "sula": {
   "verticalM": 830,
   "gainM": 827,
-  "distanceM": 3820,
+  "distanceM": 3832,
   "startM": 22,
   "summitM": 848,
   "duration": "3–5 t",
@@ -717,12 +781,12 @@
   "grade": 2,
   "aspect": "SØ",
   "distanceKm": 3.8,
-  "cumdistM": 3820
+  "cumdistM": 3832
  },
  "heia": {
   "verticalM": 470,
-  "gainM": 466,
-  "distanceM": 2193,
+  "gainM": 470,
+  "distanceM": 2219,
   "startM": 63,
   "summitM": 527,
   "duration": "2–4 t",
@@ -733,7 +797,7 @@
   "grade": 2,
   "aspect": "NØ",
   "distanceKm": 2.2,
-  "cumdistM": 2193
+  "cumdistM": 2219
  },
  "hinnstein": {
   "verticalM": 510,
@@ -801,8 +865,8 @@
  },
  "nattmalsfjellet": {
   "verticalM": 480,
-  "gainM": 479,
-  "distanceM": 2688,
+  "gainM": 481,
+  "distanceM": 2692,
   "startM": 85,
   "summitM": 546,
   "duration": "2–4 t",
@@ -813,7 +877,7 @@
   "grade": 1,
   "aspect": "NØ",
   "distanceKm": 2.7,
-  "cumdistM": 2689
+  "cumdistM": 2692
  },
  "horntindan": {
   "verticalM": 930,
@@ -945,9 +1009,9 @@
  },
  "haukebotinden": {
   "verticalM": 860,
-  "gainM": 863,
-  "distanceM": 4430,
-  "startM": 46,
+  "gainM": 862,
+  "distanceM": 4432,
+  "startM": 47,
   "summitM": 905,
   "duration": "4–6 t",
   "steepestBandAngle": 18.0,
@@ -957,7 +1021,7 @@
   "grade": 2,
   "aspect": "Ø",
   "distanceKm": 4.4,
-  "cumdistM": 4431
+  "cumdistM": 4432
  },
  "reinspalen": {
   "verticalM": 1370,
@@ -1026,7 +1090,7 @@
  "taraldsviktinden": {
   "verticalM": 780,
   "gainM": 779,
-  "distanceM": 4533,
+  "distanceM": 4539,
   "startM": 5,
   "summitM": 776,
   "duration": "3–5 t",
@@ -1037,7 +1101,7 @@
   "grade": 2,
   "aspect": "NV",
   "distanceKm": 4.5,
-  "cumdistM": 4533
+  "cumdistM": 4539
  },
  "nonstinden": {
   "verticalM": 970,
@@ -1313,8 +1377,8 @@
  },
  "pilan": {
   "verticalM": 840,
-  "gainM": 844,
-  "distanceM": 4095,
+  "gainM": 845,
+  "distanceM": 4102,
   "startM": 5,
   "summitM": 826,
   "duration": "3–5 t",
@@ -1325,7 +1389,7 @@
   "grade": 2,
   "aspect": "SØ",
   "distanceKm": 4.1,
-  "cumdistM": 4095
+  "cumdistM": 4102
  },
  "litletind": {
   "verticalM": 920,
@@ -1376,10 +1440,10 @@
   "cumdistM": 7165
  },
  "torskmannen": {
-  "verticalM": 750,
-  "gainM": 754,
-  "distanceM": 3001,
-  "startM": 5,
+  "verticalM": 760,
+  "gainM": 756,
+  "distanceM": 3006,
+  "startM": 4,
   "summitM": 755,
   "duration": "3–5 t",
   "steepestBandAngle": 21.6,
@@ -1389,7 +1453,7 @@
   "grade": 2,
   "aspect": "SØ",
   "distanceKm": 3.0,
-  "cumdistM": 3002
+  "cumdistM": 3006
  },
  "rundfjellet": {
   "verticalM": 840,
@@ -1425,8 +1489,8 @@
  },
  "varden-smaatindan": {
   "verticalM": 760,
-  "gainM": 763,
-  "distanceM": 4819,
+  "gainM": 765,
+  "distanceM": 4798,
   "startM": 2,
   "summitM": 700,
   "duration": "3–5 t",
@@ -1437,7 +1501,7 @@
   "grade": 2,
   "aspect": "Ø",
   "distanceKm": 4.8,
-  "cumdistM": 4819
+  "cumdistM": 4798
  },
  "himmeltindan": {
   "verticalM": 990,
@@ -1457,9 +1521,9 @@
  },
  "gangnesaksla": {
   "verticalM": 1310,
-  "gainM": 1306,
-  "distanceM": 4899,
-  "startM": 20,
+  "gainM": 1308,
+  "distanceM": 4903,
+  "startM": 19,
   "summitM": 1318,
   "duration": "5–7 t",
   "steepestBandAngle": 20.0,
@@ -1469,7 +1533,7 @@
   "grade": 3,
   "aspect": "S",
   "distanceKm": 4.9,
-  "cumdistM": 4898
+  "cumdistM": 4903
  },
  "justadtinden": {
   "verticalM": 730,
@@ -1503,6 +1567,54 @@
   "distanceKm": 3.1,
   "cumdistM": 3062
  },
+ "heggmotinden": {
+  "verticalM": 770,
+  "gainM": 773,
+  "distanceM": 3388,
+  "startM": 24,
+  "summitM": 797,
+  "duration": "3–5 t",
+  "steepestBandAngle": 16.8,
+  "steepestBandFrom": 500,
+  "steepestBandTo": 600,
+  "maxStepAngle": 25.1,
+  "grade": 1,
+  "aspect": "SV",
+  "distanceKm": 3.4,
+  "cumdistM": 3389
+ },
+ "kvalhornet": {
+  "verticalM": 900,
+  "gainM": 902,
+  "distanceM": 4390,
+  "startM": 63,
+  "summitM": 965,
+  "duration": "4–6 t",
+  "steepestBandAngle": 18.4,
+  "steepestBandFrom": 300,
+  "steepestBandTo": 400,
+  "maxStepAngle": 24.1,
+  "grade": 2,
+  "aspect": "S",
+  "distanceKm": 4.4,
+  "cumdistM": 4390
+ },
+ "kistrandtindan": {
+  "verticalM": 980,
+  "gainM": 976,
+  "distanceM": 3939,
+  "startM": 7,
+  "summitM": 982,
+  "duration": "4–6 t",
+  "steepestBandAngle": 19.1,
+  "steepestBandFrom": 700,
+  "steepestBandTo": 800,
+  "maxStepAngle": 25.8,
+  "grade": 2,
+  "aspect": "S",
+  "distanceKm": 3.9,
+  "cumdistM": 3941
+ },
  "midtitinden": {
   "verticalM": 1050,
   "gainM": 1051,
@@ -1517,7 +1629,7 @@
   "grade": 2,
   "aspect": "SØ",
   "distanceKm": 4.2,
-  "cumdistM": 4148
+  "cumdistM": 4152
  },
  "sandhornet": {
   "verticalM": 1020,
@@ -1586,7 +1698,7 @@
  "vassfjellet": {
   "verticalM": 560,
   "gainM": 560,
-  "distanceM": 4925,
+  "distanceM": 4952,
   "startM": 184,
   "summitM": 711,
   "duration": "3–5 t",
@@ -1596,13 +1708,13 @@
   "maxStepAngle": 23.0,
   "grade": 1,
   "aspect": "NV",
-  "distanceKm": 4.9,
-  "cumdistM": 4927
+  "distanceKm": 5.0,
+  "cumdistM": 4952
  },
  "krakfjellet": {
   "verticalM": 470,
   "gainM": 471,
-  "distanceM": 9604,
+  "distanceM": 9606,
   "startM": 411,
   "summitM": 815,
   "duration": "4–6 t",
@@ -1613,12 +1725,12 @@
   "grade": 1,
   "aspect": "S",
   "distanceKm": 9.6,
-  "cumdistM": 9604
+  "cumdistM": 9606
  },
  "rensfjellet": {
   "verticalM": 700,
   "gainM": 699,
-  "distanceM": 11326,
+  "distanceM": 11330,
   "startM": 411,
   "summitM": 942,
   "duration": "5–7 t",
@@ -1629,7 +1741,7 @@
   "grade": 1,
   "aspect": "V",
   "distanceKm": 11.3,
-  "cumdistM": 11327
+  "cumdistM": 11330
  },
  "snota": {
   "verticalM": 1270,
@@ -1649,8 +1761,8 @@
  },
  "storbekkhoa": {
   "verticalM": 900,
-  "gainM": 897,
-  "distanceM": 5919,
+  "gainM": 898,
+  "distanceM": 5929,
   "startM": 623,
   "summitM": 1504,
   "duration": "4–6 t",
@@ -1661,7 +1773,7 @@
   "grade": 2,
   "aspect": "S",
   "distanceKm": 5.9,
-  "cumdistM": 5921
+  "cumdistM": 5929
  },
  "okla": {
   "verticalM": 1020,
@@ -1682,7 +1794,7 @@
  "storhornet": {
   "verticalM": 940,
   "gainM": 936,
-  "distanceM": 5009,
+  "distanceM": 5011,
   "startM": 653,
   "summitM": 1589,
   "duration": "4–6 t",
@@ -1693,7 +1805,7 @@
   "grade": 2,
   "aspect": "SØ",
   "distanceKm": 5.0,
-  "cumdistM": 5009
+  "cumdistM": 5011
  },
  "kirketaket": {
   "verticalM": 1280,
@@ -1741,12 +1853,12 @@
   "grade": 2,
   "aspect": "N",
   "distanceKm": 5.1,
-  "cumdistM": 5145
+  "cumdistM": 5146
  },
  "blanebba": {
-  "verticalM": 930,
-  "gainM": 934,
-  "distanceM": 4043,
+  "verticalM": 940,
+  "gainM": 937,
+  "distanceM": 4045,
   "startM": 418,
   "summitM": 1317,
   "duration": "4–6 t",
@@ -1757,12 +1869,12 @@
   "grade": 2,
   "aspect": "NØ",
   "distanceKm": 4.0,
-  "cumdistM": 4042
+  "cumdistM": 4045
  },
  "ospetinden": {
   "verticalM": 1060,
   "gainM": 1061,
-  "distanceM": 6878,
+  "distanceM": 6880,
   "startM": 201,
   "summitM": 1228,
   "duration": "5–7 t",
@@ -1773,7 +1885,7 @@
   "grade": 2,
   "aspect": "Ø",
   "distanceKm": 6.9,
-  "cumdistM": 6878
+  "cumdistM": 6880
  },
  "middagstinden": {
   "verticalM": 1290,
@@ -1809,8 +1921,8 @@
  },
  "snohetta": {
   "verticalM": 820,
-  "gainM": 821,
-  "distanceM": 5869,
+  "gainM": 822,
+  "distanceM": 5883,
   "startM": 1474,
   "summitM": 2287,
   "duration": "4–6 t",
@@ -1821,12 +1933,12 @@
   "grade": 2,
   "aspect": "SØ",
   "distanceKm": 5.9,
-  "cumdistM": 5872
+  "cumdistM": 5883
  },
  "jonshornet": {
   "verticalM": 1430,
   "gainM": 1430,
-  "distanceM": 5705,
+  "distanceM": 5719,
   "startM": 107,
   "summitM": 1417,
   "duration": "6–8 t",
@@ -1837,7 +1949,7 @@
   "grade": 3,
   "aspect": "NV",
   "distanceKm": 5.7,
-  "cumdistM": 5707
+  "cumdistM": 5719
  },
  "ytstevasshornet": {
   "verticalM": 820,
@@ -1857,8 +1969,8 @@
  },
  "rana": {
   "verticalM": 1560,
-  "gainM": 1559,
-  "distanceM": 8586,
+  "gainM": 1561,
+  "distanceM": 8569,
   "startM": 63,
   "summitM": 1587,
   "duration": "7–9 t",
@@ -1869,12 +1981,12 @@
   "grade": 3,
   "aspect": "S",
   "distanceKm": 8.6,
-  "cumdistM": 8586
+  "cumdistM": 8569
  },
  "kolastinden": {
   "verticalM": 1120,
   "gainM": 1120,
-  "distanceM": 5670,
+  "distanceM": 5680,
   "startM": 376,
   "summitM": 1431,
   "duration": "5–7 t",
@@ -1885,12 +1997,12 @@
   "grade": 2,
   "aspect": "NØ",
   "distanceKm": 5.7,
-  "cumdistM": 5670
+  "cumdistM": 5680
  },
  "vassdalstinden": {
-  "verticalM": 1210,
-  "gainM": 1210,
-  "distanceM": 6495,
+  "verticalM": 1220,
+  "gainM": 1223,
+  "distanceM": 6560,
   "startM": 92,
   "summitM": 1278,
   "duration": "5–7 t",
@@ -1900,8 +2012,8 @@
   "maxStepAngle": 41.3,
   "grade": 3,
   "aspect": "SØ",
-  "distanceKm": 6.5,
-  "cumdistM": 6495
+  "distanceKm": 6.6,
+  "cumdistM": 6560
  },
  "saudehornet": {
   "verticalM": 1160,
@@ -1921,8 +2033,8 @@
  },
  "slogen": {
   "verticalM": 1540,
-  "gainM": 1535,
-  "distanceM": 6517,
+  "gainM": 1536,
+  "distanceM": 6526,
   "startM": 85,
   "summitM": 1563,
   "duration": "6–8 t",
@@ -1933,12 +2045,12 @@
   "grade": 3,
   "aspect": "Ø",
   "distanceKm": 6.5,
-  "cumdistM": 6517
+  "cumdistM": 6526
  },
  "torvloysa": {
   "verticalM": 1470,
-  "gainM": 1469,
-  "distanceM": 11130,
+  "gainM": 1471,
+  "distanceM": 11154,
   "startM": 453,
   "summitM": 1851,
   "duration": "7–9 t",
@@ -1948,8 +2060,8 @@
   "maxStepAngle": 26.9,
   "grade": 2,
   "aspect": "N",
-  "distanceKm": 11.1,
-  "cumdistM": 11132
+  "distanceKm": 11.2,
+  "cumdistM": 11154
  },
  "skarene": {
   "verticalM": 1230,
@@ -1970,7 +2082,7 @@
  "melshornet": {
   "verticalM": 560,
   "gainM": 565,
-  "distanceM": 3297,
+  "distanceM": 3302,
   "startM": 252,
   "summitM": 809,
   "duration": "2–4 t",
@@ -1981,7 +2093,7 @@
   "grade": 1,
   "aspect": "SØ",
   "distanceKm": 3.3,
-  "cumdistM": 3298
+  "cumdistM": 3302
  },
  "jakta": {
   "verticalM": 1570,
@@ -2080,9 +2192,9 @@
   "cumdistM": 4564
  },
  "rondslottet": {
-  "verticalM": 1280,
-  "gainM": 1283,
-  "distanceM": 12337,
+  "verticalM": 1300,
+  "gainM": 1298,
+  "distanceM": 12391,
   "startM": 1082,
   "summitM": 2178,
   "duration": "7–9 t",
@@ -2092,8 +2204,8 @@
   "maxStepAngle": 34.9,
   "grade": 2,
   "aspect": "SV",
-  "distanceKm": 12.3,
-  "cumdistM": 12339
+  "distanceKm": 12.4,
+  "cumdistM": 12391
  },
  "glitregga": {
   "verticalM": 910,
@@ -2176,9 +2288,9 @@
   "cumdistM": 10633
  },
  "snonipa": {
-  "verticalM": 1490,
-  "gainM": 1494,
-  "distanceM": 8450,
+  "verticalM": 1500,
+  "gainM": 1501,
+  "distanceM": 8525,
   "startM": 351,
   "summitM": 1827,
   "duration": "7–9 t",
@@ -2188,13 +2300,13 @@
   "maxStepAngle": 27.6,
   "grade": 3,
   "aspect": "SØ",
-  "distanceKm": 8.4,
-  "cumdistM": 8451
+  "distanceKm": 8.5,
+  "cumdistM": 8525
  },
  "glittertinden": {
   "verticalM": 1230,
-  "gainM": 1228,
-  "distanceM": 13325,
+  "gainM": 1233,
+  "distanceM": 13418,
   "startM": 1297,
   "summitM": 2451,
   "duration": "7–9 t",
@@ -2204,13 +2316,13 @@
   "maxStepAngle": 18.5,
   "grade": 2,
   "aspect": "SØ",
-  "distanceKm": 13.3,
-  "cumdistM": 13326
+  "distanceKm": 13.4,
+  "cumdistM": 13418
  },
  "galdhopiggen": {
   "verticalM": 640,
   "gainM": 642,
-  "distanceM": 5360,
+  "distanceM": 5376,
   "startM": 1841,
   "summitM": 2469,
   "duration": "3–5 t",
@@ -2221,7 +2333,55 @@
   "grade": 1,
   "aspect": "NØ",
   "distanceKm": 5.4,
-  "cumdistM": 5360
+  "cumdistM": 5376
+ },
+ "nautgardstinden": {
+  "verticalM": 1390,
+  "gainM": 1387,
+  "distanceM": 9596,
+  "startM": 874,
+  "summitM": 2257,
+  "duration": "7–9 t",
+  "steepestBandAngle": 18.3,
+  "steepestBandFrom": 2100,
+  "steepestBandTo": 2200,
+  "maxStepAngle": 30.0,
+  "grade": 3,
+  "aspect": "Ø",
+  "distanceKm": 9.6,
+  "cumdistM": 9596
+ },
+ "gronlifjellet": {
+  "verticalM": 1160,
+  "gainM": 1155,
+  "distanceM": 8102,
+  "startM": 277,
+  "summitM": 1386,
+  "duration": "6–8 t",
+  "steepestBandAngle": 19.2,
+  "steepestBandFrom": 1200,
+  "steepestBandTo": 1300,
+  "maxStepAngle": 23.8,
+  "grade": 2,
+  "aspect": "SØ",
+  "distanceKm": 8.1,
+  "cumdistM": 8102
+ },
+ "gotdalsnipa": {
+  "verticalM": 1000,
+  "gainM": 998,
+  "distanceM": 5253,
+  "startM": 277,
+  "summitM": 1248,
+  "duration": "4–6 t",
+  "steepestBandAngle": 15.4,
+  "steepestBandFrom": 1200,
+  "steepestBandTo": 1300,
+  "maxStepAngle": 24.3,
+  "grade": 2,
+  "aspect": "S",
+  "distanceKm": 5.3,
+  "cumdistM": 5253
  },
  "steindalsnosi": {
   "verticalM": 760,
@@ -2241,8 +2401,8 @@
  },
  "besshoe": {
   "verticalM": 1330,
-  "gainM": 1328,
-  "distanceM": 10048,
+  "gainM": 1329,
+  "distanceM": 10118,
   "startM": 961,
   "summitM": 2257,
   "duration": "7–9 t",
@@ -2252,8 +2412,8 @@
   "maxStepAngle": 28.1,
   "grade": 3,
   "aspect": "Ø",
-  "distanceKm": 10.0,
-  "cumdistM": 10049
+  "distanceKm": 10.1,
+  "cumdistM": 10118
  },
  "fanaraken": {
   "verticalM": 780,
@@ -2270,6 +2430,38 @@
   "aspect": "NØ",
   "distanceKm": 6.7,
   "cumdistM": 6698
+ },
+ "heimdalshoe": {
+  "verticalM": 880,
+  "gainM": 878,
+  "distanceM": 6312,
+  "startM": 971,
+  "summitM": 1843,
+  "duration": "4–6 t",
+  "steepestBandAngle": 14.3,
+  "steepestBandFrom": 1300,
+  "steepestBandTo": 1400,
+  "maxStepAngle": 19.3,
+  "grade": 2,
+  "aspect": "NV",
+  "distanceKm": 6.3,
+  "cumdistM": 6312
+ },
+ "eggja": {
+  "verticalM": 680,
+  "gainM": 680,
+  "distanceM": 2825,
+  "startM": 542,
+  "summitM": 1204,
+  "duration": "3–5 t",
+  "steepestBandAngle": 20.0,
+  "steepestBandFrom": 800,
+  "steepestBandTo": 900,
+  "maxStepAngle": 25.3,
+  "grade": 2,
+  "aspect": "S",
+  "distanceKm": 2.8,
+  "cumdistM": 2826
  },
  "kvamshesten": {
   "verticalM": 830,
@@ -2318,6 +2510,22 @@
   "aspect": "NØ",
   "distanceKm": 1.8,
   "cumdistM": 1834
+ },
+ "venevassegga": {
+  "verticalM": 530,
+  "gainM": 533,
+  "distanceM": 4685,
+  "startM": 542,
+  "summitM": 1024,
+  "duration": "3–5 t",
+  "steepestBandAngle": 14.1,
+  "steepestBandFrom": 500,
+  "steepestBandTo": 600,
+  "maxStepAngle": 26.2,
+  "grade": 1,
+  "aspect": "N",
+  "distanceKm": 4.7,
+  "cumdistM": 4685
  },
  "molden": {
   "verticalM": 630,
@@ -2383,21 +2591,37 @@
   "distanceKm": 3.3,
   "cumdistM": 3272
  },
+ "tylderingen": {
+  "verticalM": 610,
+  "gainM": 610,
+  "distanceM": 2807,
+  "startM": 495,
+  "summitM": 1104,
+  "duration": "2–4 t",
+  "steepestBandAngle": 15.4,
+  "steepestBandFrom": 900,
+  "steepestBandTo": 1000,
+  "maxStepAngle": 23.8,
+  "grade": 1,
+  "aspect": "S",
+  "distanceKm": 2.8,
+  "cumdistM": 2807
+ },
  "ulvsjoberget": {
   "verticalM": 300,
   "gainM": 295,
-  "distanceM": 2172,
+  "distanceM": 2169,
   "startM": 559,
   "summitM": 854,
   "duration": "1–3 t",
-  "steepestBandAngle": 12.3,
+  "steepestBandAngle": 12.5,
   "steepestBandFrom": 500,
   "steepestBandTo": 600,
   "maxStepAngle": 18.6,
   "grade": 1,
   "aspect": "SØ",
   "distanceKm": 2.2,
-  "cumdistM": 2172
+  "cumdistM": 2169
  },
  "nevelfjell": {
   "verticalM": 270,
@@ -2545,8 +2769,8 @@
  },
  "lonahorgi": {
   "verticalM": 1300,
-  "gainM": 1298,
-  "distanceM": 6451,
+  "gainM": 1301,
+  "distanceM": 6455,
   "startM": 139,
   "summitM": 1412,
   "duration": "5–7 t",
@@ -2554,26 +2778,26 @@
   "steepestBandFrom": 800,
   "steepestBandTo": 900,
   "maxStepAngle": 28.9,
-  "grade": 2,
+  "grade": 3,
   "aspect": "NØ",
   "distanceKm": 6.5,
-  "cumdistM": 6451
+  "cumdistM": 6455
  },
  "vatnaknausen": {
   "verticalM": 980,
-  "gainM": 979,
-  "distanceM": 7478,
+  "gainM": 980,
+  "distanceM": 7495,
   "startM": 383,
   "summitM": 1302,
   "duration": "5–7 t",
-  "steepestBandAngle": 13.9,
+  "steepestBandAngle": 13.3,
   "steepestBandFrom": 700,
   "steepestBandTo": 800,
   "maxStepAngle": 21.9,
   "grade": 2,
   "aspect": "V",
   "distanceKm": 7.5,
-  "cumdistM": 7480
+  "cumdistM": 7495
  },
  "horndalsnuten": {
   "verticalM": 1120,
@@ -2593,8 +2817,8 @@
  },
  "folarskardnuten": {
   "verticalM": 1000,
-  "gainM": 997,
-  "distanceM": 13059,
+  "gainM": 998,
+  "distanceM": 13068,
   "startM": 1007,
   "summitM": 1932,
   "duration": "7–9 t",
@@ -2605,12 +2829,12 @@
   "grade": 2,
   "aspect": "SØ",
   "distanceKm": 13.1,
-  "cumdistM": 13059
+  "cumdistM": 13068
  },
  "prestholtskarvet": {
   "verticalM": 960,
   "gainM": 963,
-  "distanceM": 11631,
+  "distanceM": 11634,
   "startM": 963,
   "summitM": 1860,
   "duration": "6–8 t",
@@ -2621,23 +2845,23 @@
   "grade": 2,
   "aspect": "Ø",
   "distanceKm": 11.6,
-  "cumdistM": 11632
+  "cumdistM": 11634
  },
  "gyranfisen": {
   "verticalM": 670,
-  "gainM": 666,
-  "distanceM": 5358,
+  "gainM": 667,
+  "distanceM": 5366,
   "startM": 661,
   "summitM": 1127,
   "duration": "3–5 t",
-  "steepestBandAngle": 15.4,
+  "steepestBandAngle": 14.9,
   "steepestBandFrom": 700,
   "steepestBandTo": 800,
   "maxStepAngle": 24.9,
   "grade": 1,
   "aspect": "Ø",
   "distanceKm": 5.4,
-  "cumdistM": 5360
+  "cumdistM": 5366
  },
  "oksen": {
   "verticalM": 970,
@@ -2658,7 +2882,7 @@
  "ustetind": {
   "verticalM": 420,
   "gainM": 416,
-  "distanceM": 4375,
+  "distanceM": 4384,
   "startM": 989,
   "summitM": 1376,
   "duration": "2–4 t",
@@ -2669,12 +2893,12 @@
   "grade": 1,
   "aspect": "NV",
   "distanceKm": 4.4,
-  "cumdistM": 4376
+  "cumdistM": 4384
  },
  "skrott": {
   "verticalM": 1070,
   "gainM": 1068,
-  "distanceM": 5033,
+  "distanceM": 5037,
   "startM": 272,
   "summitM": 1320,
   "duration": "4–6 t",
@@ -2685,7 +2909,7 @@
   "grade": 2,
   "aspect": "S",
   "distanceKm": 5.0,
-  "cumdistM": 5033
+  "cumdistM": 5037
  },
  "sata": {
   "verticalM": 900,
@@ -2721,8 +2945,8 @@
  },
  "tveitakvitingen": {
   "verticalM": 1000,
-  "gainM": 995,
-  "distanceM": 8561,
+  "gainM": 996,
+  "distanceM": 8579,
   "startM": 382,
   "summitM": 1299,
   "duration": "5–7 t",
@@ -2733,12 +2957,12 @@
   "grade": 2,
   "aspect": "NØ",
   "distanceKm": 8.6,
-  "cumdistM": 8563
+  "cumdistM": 8579
  },
  "grafjell": {
   "verticalM": 600,
-  "gainM": 595,
-  "distanceM": 8043,
+  "gainM": 596,
+  "distanceM": 8057,
   "startM": 910,
   "summitM": 1466,
   "duration": "4–6 t",
@@ -2748,13 +2972,13 @@
   "maxStepAngle": 22.9,
   "grade": 1,
   "aspect": "S",
-  "distanceKm": 8.0,
-  "cumdistM": 8044
+  "distanceKm": 8.1,
+  "cumdistM": 8057
  },
  "vesoldo": {
   "verticalM": 840,
   "gainM": 839,
-  "distanceM": 4207,
+  "distanceM": 4217,
   "startM": 211,
   "summitM": 1046,
   "duration": "3–5 t",
@@ -2765,12 +2989,12 @@
   "grade": 2,
   "aspect": "S",
   "distanceKm": 4.2,
-  "cumdistM": 4206
+  "cumdistM": 4217
  },
  "ranten": {
   "verticalM": 530,
-  "gainM": 532,
-  "distanceM": 5817,
+  "gainM": 534,
+  "distanceM": 5823,
   "startM": 910,
   "summitM": 1416,
   "duration": "3–5 t",
@@ -2781,12 +3005,12 @@
   "grade": 1,
   "aspect": "SØ",
   "distanceKm": 5.8,
-  "cumdistM": 5818
+  "cumdistM": 5823
  },
  "hogevarde": {
   "verticalM": 600,
   "gainM": 598,
-  "distanceM": 4781,
+  "distanceM": 4804,
   "startM": 910,
   "summitM": 1461,
   "duration": "3–5 t",
@@ -2797,7 +3021,7 @@
   "grade": 1,
   "aspect": "SV",
   "distanceKm": 4.8,
-  "cumdistM": 4782
+  "cumdistM": 4804
  },
  "gygrastolen": {
   "verticalM": 1270,
@@ -2816,20 +3040,20 @@
   "cumdistM": 5966
  },
  "mellomkollen": {
-  "verticalM": 400,
-  "gainM": 398,
-  "distanceM": 4109,
+  "verticalM": 410,
+  "gainM": 408,
+  "distanceM": 4158,
   "startM": 186,
   "summitM": 537,
   "duration": "2–4 t",
   "steepestBandAngle": 7.3,
-  "steepestBandFrom": 300,
-  "steepestBandTo": 400,
-  "maxStepAngle": 22.9,
+  "steepestBandFrom": 500,
+  "steepestBandTo": 600,
+  "maxStepAngle": 20.3,
   "grade": 1,
   "aspect": "SØ",
-  "distanceKm": 4.1,
-  "cumdistM": 4110
+  "distanceKm": 4.2,
+  "cumdistM": 4158
  },
  "juklavasstinden": {
   "verticalM": 1340,
@@ -2848,9 +3072,9 @@
   "cumdistM": 7166
  },
  "melderskin": {
-  "verticalM": 1270,
-  "gainM": 1273,
-  "distanceM": 4897,
+  "verticalM": 1280,
+  "gainM": 1275,
+  "distanceM": 4915,
   "startM": 154,
   "summitM": 1426,
   "duration": "5–7 t",
@@ -2861,12 +3085,12 @@
   "grade": 2,
   "aspect": "V",
   "distanceKm": 4.9,
-  "cumdistM": 4900
+  "cumdistM": 4915
  },
  "englafjell": {
   "verticalM": 1240,
   "gainM": 1237,
-  "distanceM": 8643,
+  "distanceM": 8659,
   "startM": 148,
   "summitM": 1200,
   "duration": "6–8 t",
@@ -2876,24 +3100,56 @@
   "maxStepAngle": 30.1,
   "grade": 2,
   "aspect": "N",
-  "distanceKm": 8.6,
-  "cumdistM": 8650
+  "distanceKm": 8.7,
+  "cumdistM": 8659
+ },
+ "stavsnuten": {
+  "verticalM": 610,
+  "gainM": 612,
+  "distanceM": 3595,
+  "startM": 1054,
+  "summitM": 1661,
+  "duration": "3–5 t",
+  "steepestBandAngle": 20.2,
+  "steepestBandFrom": 1400,
+  "steepestBandTo": 1500,
+  "maxStepAngle": 23.8,
+  "grade": 2,
+  "aspect": "S",
+  "distanceKm": 3.6,
+  "cumdistM": 3595
+ },
+ "vesle-nup": {
+  "verticalM": 600,
+  "gainM": 595,
+  "distanceM": 5926,
+  "startM": 982,
+  "summitM": 1510,
+  "duration": "3–5 t",
+  "steepestBandAngle": 7.8,
+  "steepestBandFrom": 1400,
+  "steepestBandTo": 1500,
+  "maxStepAngle": 21.4,
+  "grade": 1,
+  "aspect": "SV",
+  "distanceKm": 5.9,
+  "cumdistM": 5927
  },
  "gaustatoppen": {
-  "verticalM": 970,
-  "gainM": 973,
-  "distanceM": 4421,
+  "verticalM": 980,
+  "gainM": 975,
+  "distanceM": 4434,
   "startM": 922,
   "summitM": 1882,
   "duration": "4–6 t",
   "steepestBandAngle": 17.5,
   "steepestBandFrom": 1700,
   "steepestBandTo": 1800,
-  "maxStepAngle": 24.0,
+  "maxStepAngle": 24.8,
   "grade": 2,
   "aspect": "Ø",
   "distanceKm": 4.4,
-  "cumdistM": 4423
+  "cumdistM": 4434
  },
  "heddersfjell": {
   "verticalM": 410,
@@ -2910,6 +3166,38 @@
   "aspect": "V",
   "distanceKm": 5.1,
   "cumdistM": 5145
+ },
+ "sveigen": {
+  "verticalM": 560,
+  "gainM": 556,
+  "distanceM": 2610,
+  "startM": 994,
+  "summitM": 1543,
+  "duration": "2–4 t",
+  "steepestBandAngle": 18.6,
+  "steepestBandFrom": 1000,
+  "steepestBandTo": 1100,
+  "maxStepAngle": 27.2,
+  "grade": 2,
+  "aspect": "NØ",
+  "distanceKm": 2.6,
+  "cumdistM": 2612
+ },
+ "fjetlandsnuten": {
+  "verticalM": 900,
+  "gainM": 900,
+  "distanceM": 5673,
+  "startM": 396,
+  "summitM": 1285,
+  "duration": "4–6 t",
+  "steepestBandAngle": 13.9,
+  "steepestBandFrom": 700,
+  "steepestBandTo": 800,
+  "maxStepAngle": 25.0,
+  "grade": 2,
+  "aspect": "SV",
+  "distanceKm": 5.7,
+  "cumdistM": 5672
  },
  "store-ble": {
   "verticalM": 660,
@@ -2929,8 +3217,8 @@
  },
  "surloytenuten": {
   "verticalM": 460,
-  "gainM": 456,
-  "distanceM": 6100,
+  "gainM": 457,
+  "distanceM": 6105,
   "startM": 714,
   "summitM": 1097,
   "duration": "3–5 t",
@@ -2941,7 +3229,7 @@
   "grade": 1,
   "aspect": "NØ",
   "distanceKm": 6.1,
-  "cumdistM": 6101
+  "cumdistM": 6105
  },
  "styggemann": {
   "verticalM": 540,
@@ -2962,7 +3250,7 @@
  "saebyggjenuten": {
   "verticalM": 850,
   "gainM": 851,
-  "distanceM": 11306,
+  "distanceM": 11310,
   "startM": 810,
   "summitM": 1506,
   "duration": "6–8 t",
@@ -2973,7 +3261,7 @@
   "grade": 2,
   "aspect": "V",
   "distanceKm": 11.3,
-  "cumdistM": 11308
+  "cumdistM": 11310
  },
  "kjerag": {
   "verticalM": 620,
@@ -2991,293 +3279,21 @@
   "distanceKm": 7.4,
   "cumdistM": 7364
  },
- "gotdalsnipa": {
-  "verticalM": 1000,
-  "gainM": 998,
-  "distanceM": 5253,
-  "startM": 277,
-  "summitM": 1248,
-  "duration": "4–6 t",
-  "steepestBandAngle": 15.4,
-  "steepestBandFrom": 1200,
-  "steepestBandTo": 1300,
-  "maxStepAngle": 24.3,
-  "grade": 2,
-  "aspect": "S",
-  "distanceKm": 5.3,
-  "cumdistM": 5253
- },
- "gronlifjellet": {
-  "verticalM": 1160,
-  "gainM": 1155,
-  "distanceM": 8102,
-  "startM": 277,
-  "summitM": 1386,
-  "duration": "6–8 t",
-  "steepestBandAngle": 19.2,
-  "steepestBandFrom": 1200,
-  "steepestBandTo": 1300,
-  "maxStepAngle": 23.8,
-  "grade": 2,
-  "aspect": "SØ",
-  "distanceKm": 8.1,
-  "cumdistM": 8102
- },
- "venevassegga": {
-  "verticalM": 530,
-  "gainM": 533,
-  "distanceM": 4685,
-  "startM": 542,
-  "summitM": 1024,
+ "hilleknuten": {
+  "verticalM": 690,
+  "gainM": 687,
+  "distanceM": 4016,
+  "startM": 570,
+  "summitM": 1209,
   "duration": "3–5 t",
-  "steepestBandAngle": 14.1,
-  "steepestBandFrom": 500,
-  "steepestBandTo": 600,
-  "maxStepAngle": 26.2,
+  "steepestBandAngle": 13.5,
+  "steepestBandFrom": 600,
+  "steepestBandTo": 700,
+  "maxStepAngle": 23.1,
   "grade": 1,
-  "aspect": "N",
-  "distanceKm": 4.7,
-  "cumdistM": 4685
- },
- "eggja": {
-  "verticalM": 680,
-  "gainM": 680,
-  "distanceM": 2825,
-  "startM": 542,
-  "summitM": 1204,
-  "duration": "3–5 t",
-  "steepestBandAngle": 20.0,
-  "steepestBandFrom": 800,
-  "steepestBandTo": 900,
-  "maxStepAngle": 25.3,
-  "grade": 2,
-  "aspect": "S",
-  "distanceKm": 2.8,
-  "cumdistM": 2826
- },
- "stavsnuten": {
-  "verticalM": 610,
-  "gainM": 612,
-  "distanceM": 3595,
-  "startM": 1054,
-  "summitM": 1661,
-  "duration": "3–5 t",
-  "steepestBandAngle": 20.2,
-  "steepestBandFrom": 1400,
-  "steepestBandTo": 1500,
-  "maxStepAngle": 23.8,
-  "grade": 2,
-  "aspect": "S",
-  "distanceKm": 3.6,
-  "cumdistM": 3595
- },
- "sveigen": {
-  "verticalM": 560,
-  "gainM": 556,
-  "distanceM": 2610,
-  "startM": 994,
-  "summitM": 1543,
-  "duration": "2–4 t",
-  "steepestBandAngle": 18.6,
-  "steepestBandFrom": 1000,
-  "steepestBandTo": 1100,
-  "maxStepAngle": 27.2,
-  "grade": 2,
-  "aspect": "NØ",
-  "distanceKm": 2.6,
-  "cumdistM": 2612
- },
- "vesle-nup": {
-  "verticalM": 600,
-  "gainM": 595,
-  "distanceM": 5926,
-  "startM": 982,
-  "summitM": 1510,
-  "duration": "3–5 t",
-  "steepestBandAngle": 7.8,
-  "steepestBandFrom": 1400,
-  "steepestBandTo": 1500,
-  "maxStepAngle": 21.4,
-  "grade": 1,
-  "aspect": "SV",
-  "distanceKm": 5.9,
-  "cumdistM": 5927
- },
- "fjetlandsnuten": {
-  "verticalM": 900,
-  "gainM": 900,
-  "distanceM": 5673,
-  "startM": 396,
-  "summitM": 1285,
-  "duration": "4–6 t",
-  "steepestBandAngle": 13.9,
-  "steepestBandFrom": 700,
-  "steepestBandTo": 800,
-  "maxStepAngle": 25.0,
-  "grade": 2,
-  "aspect": "SV",
-  "distanceKm": 5.7,
-  "cumdistM": 5672
- },
- "heimdalshoe": {
-  "verticalM": 880,
-  "gainM": 879,
-  "distanceM": 6317,
-  "startM": 970,
-  "summitM": 1843,
-  "duration": "4–6 t",
-  "steepestBandAngle": 14.3,
-  "steepestBandFrom": 1300,
-  "steepestBandTo": 1400,
-  "maxStepAngle": 19.3,
-  "grade": 2,
   "aspect": "NV",
-  "distanceKm": 6.3,
-  "cumdistM": 6317
- },
- "nautgardstinden": {
-  "verticalM": 1390,
-  "gainM": 1387,
-  "distanceM": 9596,
-  "startM": 874,
-  "summitM": 2257,
-  "duration": "7–9 t",
-  "steepestBandAngle": 18.3,
-  "steepestBandFrom": 2100,
-  "steepestBandTo": 2200,
-  "maxStepAngle": 30.0,
-  "grade": 3,
-  "aspect": "Ø",
-  "distanceKm": 9.6,
-  "cumdistM": 9596
- },
- "tylderingen": {
-  "verticalM": 610,
-  "gainM": 610,
-  "distanceM": 2793,
-  "startM": 495,
-  "summitM": 1104,
-  "duration": "2–4 t",
-  "steepestBandAngle": 15.4,
-  "steepestBandFrom": 900,
-  "steepestBandTo": 1000,
-  "maxStepAngle": 23.8,
-  "grade": 1,
-  "aspect": "S",
-  "distanceKm": 2.8,
-  "cumdistM": 2794
- },
- "kvalhornet": {
-  "verticalM": 900,
-  "gainM": 902,
-  "distanceM": 4390,
-  "startM": 63,
-  "summitM": 965,
-  "duration": "4–6 t",
-  "steepestBandAngle": 18.4,
-  "steepestBandFrom": 300,
-  "steepestBandTo": 400,
-  "maxStepAngle": 24.1,
-  "grade": 2,
-  "aspect": "S",
-  "distanceKm": 4.4,
-  "cumdistM": 4390
- },
- "heggmotinden": {
-  "verticalM": 770,
-  "gainM": 773,
-  "distanceM": 3388,
-  "startM": 24,
-  "summitM": 797,
-  "duration": "3–5 t",
-  "steepestBandAngle": 16.8,
-  "steepestBandFrom": 500,
-  "steepestBandTo": 600,
-  "maxStepAngle": 25.1,
-  "grade": 1,
-  "aspect": "SV",
-  "distanceKm": 3.4,
-  "cumdistM": 3389
- },
- "kistrandtindan": {
-  "verticalM": 980,
-  "gainM": 976,
-  "distanceM": 3939,
-  "startM": 7,
-  "summitM": 982,
-  "duration": "4–6 t",
-  "steepestBandAngle": 19.1,
-  "steepestBandFrom": 700,
-  "steepestBandTo": 800,
-  "maxStepAngle": 25.8,
-  "grade": 2,
-  "aspect": "S",
-  "distanceKm": 3.9,
-  "cumdistM": 3941
- },
- "stortinden-langfjord": {
-  "verticalM": 1010,
-  "gainM": 1007,
-  "distanceM": 7404,
-  "startM": 39,
-  "summitM": 936,
-  "duration": "5–7 t",
-  "steepestBandAngle": 19.6,
-  "steepestBandFrom": 100,
-  "steepestBandTo": 200,
-  "maxStepAngle": 26.3,
-  "grade": 2,
-  "aspect": "SV",
-  "distanceKm": 7.4,
-  "cumdistM": 7404
- },
- "gievdnerassa": {
-  "verticalM": 880,
-  "gainM": 879,
-  "distanceM": 6334,
-  "startM": 58,
-  "summitM": 898,
-  "duration": "4–6 t",
-  "steepestBandAngle": 17.3,
-  "steepestBandFrom": 200,
-  "steepestBandTo": 300,
-  "maxStepAngle": 29.1,
-  "grade": 2,
-  "aspect": "S",
-  "distanceKm": 6.3,
-  "cumdistM": 6336
- },
- "laslettind": {
-  "verticalM": 660,
-  "gainM": 665,
-  "distanceM": 2968,
-  "startM": 163,
-  "summitM": 822,
-  "duration": "3–5 t",
-  "steepestBandAngle": 19.6,
-  "steepestBandFrom": 300,
-  "steepestBandTo": 400,
-  "maxStepAngle": 22.1,
-  "grade": 2,
-  "aspect": "SØ",
-  "distanceKm": 3.0,
-  "cumdistM": 2969
- },
- "vassnestind": {
-  "verticalM": 880,
-  "gainM": 879,
-  "distanceM": 3930,
-  "startM": 22,
-  "summitM": 896,
-  "duration": "3–5 t",
-  "steepestBandAngle": 19.2,
-  "steepestBandFrom": 400,
-  "steepestBandTo": 500,
-  "maxStepAngle": 26.0,
-  "grade": 2,
-  "aspect": "N",
-  "distanceKm": 3.9,
-  "cumdistM": 3929
+  "distanceKm": 4.0,
+  "cumdistM": 4015
  },
  "grubba": {
   "verticalM": 500,
@@ -3294,22 +3310,6 @@
   "aspect": "V",
   "distanceKm": 2.5,
   "cumdistM": 2501
- },
- "hilleknuten": {
-  "verticalM": 690,
-  "gainM": 687,
-  "distanceM": 4016,
-  "startM": 570,
-  "summitM": 1209,
-  "duration": "3–5 t",
-  "steepestBandAngle": 13.5,
-  "steepestBandFrom": 600,
-  "steepestBandTo": 700,
-  "maxStepAngle": 23.1,
-  "grade": 1,
-  "aspect": "NV",
-  "distanceKm": 4.0,
-  "cumdistM": 4015
  },
  "roseknuten": {
   "verticalM": 350,
