@@ -2573,5 +2573,98 @@
       "figure": "Oslo (region 3045), regiontype B — B-regionar blir varsla berre ved faregrad 4 og 5",
       "how": "Spurt Varsom/NVE på same endepunkt som appen bruker: api01.nve.no/hydrology/forecast/avalanche/v6.3.2/api/AvalancheWarningByCoordinates/Simple/<lat>/<lng>/1/<dato>/<dato> med toppkoordinaten frå summits.json. Svaret gir RegionName, RegionId og RegionTypeName."
     }
+  ],
+  "gotdalsnipa": [
+    {
+      "what": "Toppen, alle sider",
+      "figure": "N 24,8° i snitt med 40,2° bratteste vindu 80–140 m ut; NØ 46,3° 70–130 m ut; V 46,3° 310–370 m ut; NV 43,8° 290–350 m ut; S 23,0° i snitt og 33,0° 410–470 m ut; SØ 32,2° 270–330 m ut; SV 17,9° i snitt og 29,7° 420–480 m ut",
+      "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+    },
+    {
+      "what": "Langs linja",
+      "figure": "Fjellstøylen 7 m fra linja ved 1664 m, 590 moh; østsida av Fossgrova ved 3407 m, 906 moh; Nonsnipa 11 m fra linja ved 4412 m, 1105 moh; Høgemannsholten 371 m vest for linja; toppen ved 5253 m",
+      "how": "Nærmeste punkt på den routede linja i lib/routes.ts til registerpunktet, med avstand langs ruta og DTM1-høyden der."
+    },
+    {
+      "what": "Skoglia over Dalebø, 300–560 moh",
+      "figure": "linja måler 13,3° i snitt i båndene 300–400 og 400–500 moh, med celler på linja opp til 23,2°; innenfor 50 m står knauser på 36–69° — 68,8° 37 m vest ved 467 moh",
+      "how": "DTM1 som GeoTIFF i 5 m rutenett (geo.dem_tile) langs linja, helling per celle med numpy.gradient; for hvert sjette punkt på den routede linja er bratteste celle innenfor 50 m oppgitt med avstand og peiling fra linja."
+    },
+    {
+      "what": "Varslingsregionen toppkoordinaten ligger i",
+      "figure": "Indre Fjordane (region 3027), regiontype A — varslet daglig i sesongen",
+      "how": "Spurt Varsom/NVE på samme endepunkt som appen bruker: api01.nve.no/hydrology/forecast/avalanche/v6.3.2/api/AvalancheWarningByCoordinates/Simple/<lat>/<lng>/1/<dato>/<dato> med toppkoordinaten fra summits.json."
+    }
+  ],
+  "gronlifjellet": [
+    {
+      "what": "Toppen, alle sider",
+      "figure": "N 38,1° i snitt med 57,6° 40–100 m ut; NV 61,8° 80–140 m ut; V 4,9° i snitt men 52,7° 90–150 m ut; S 42,2° 170–230 m ut; SV 43,3° 320–380 m ut; Ø 37,6° 160–220 m ut; SØ 35,2° 190–250 m ut; NØ 15,2° i snitt og 24,9° 70–130 m ut — ryggen mot Litlebottsegga er den slake sida",
+      "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+    },
+    {
+      "what": "Sørøstryggen, 1150–1386 moh",
+      "figure": "cellene innenfor 50 m av linja når 49–65° mot øst og nordøst — 63,3° 54 m øst ved 1153 moh, 65,2° 54 m øst ved 1271 og 56,0° 51 m nordøst ved 1335 — der Fri Flyt sier egga har skavler mot øst",
+      "how": "DTM1 som GeoTIFF i 5 m rutenett (geo.dem_tile) langs linja, helling per celle med numpy.gradient; for hvert sjette punkt på den routede linja er bratteste celle innenfor 50 m oppgitt med avstand og peiling fra linja."
+    },
+    {
+      "what": "Langs linja",
+      "figure": "Gotdalsstøylen 19 m fra linja ved 3856 m, 563 moh; Tolsbotnen ved 5354 m, 802 moh; Litlebotn ved 6198 m, 900 moh; linja gir fra seg ned til 868 moh før kneika opp på ryggen; ryggen nås ved 6990 m, 1047 moh; toppen ved 8102 m; Litlebottsegga 790 m nord for linja; Brekka 111 m fra linja ved 2334 m, 438 moh; Ålhusdalen (registerpunktet for dalen) 784 m vest for linja",
+      "how": "Nærmeste punkt på den routede linja i lib/routes.ts til registerpunktet, med avstand langs ruta og DTM1-høyden der."
+    },
+    {
+      "what": "Varslingsregionen toppkoordinaten ligger i",
+      "figure": "Indre Fjordane (region 3027), regiontype A — varslet daglig i sesongen",
+      "how": "Spurt Varsom/NVE på samme endepunkt som appen bruker: api01.nve.no/hydrology/forecast/avalanche/v6.3.2/api/AvalancheWarningByCoordinates/Simple/<lat>/<lng>/1/<dato>/<dato> med toppkoordinaten fra summits.json."
+    }
+  ],
+  "eggja": [
+    {
+      "what": "Toppen, alle sider",
+      "figure": "N 30,3° i snitt med 52,3° 390–450 m ut; NV 48,0° 330–390 m ut; SV 39,5° 440–500 m ut; S 14,2° i snitt og 26,1° 230–290 m ut; Ø 19,4° og SØ 18,9° i bratteste vindu; V 8,2° i snitt — kammen mot Rimmane",
+      "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+    },
+    {
+      "what": "Kammen mellom Eggja og registerets Ørnafjellet",
+      "figure": "1202 moh ved Eggja, skar på 1111 moh 650 m østover, 1224 moh 1100 m ut; Ørnafjellet ligger 1121 m fra toppen på peiling 76",
+      "how": "Kamsøk: maksimal DTM1-høyde vinkelrett på linja Eggja–Ørnafjellet hver 50. meter, ±250 m, over et 10 m-rutenett."
+    },
+    {
+      "what": "Ryggen opp fra Fjelltjønna",
+      "figure": "cellene innenfor 50 m av linja når 41–67° mange steder mellom 611 og 1125 moh, og linja selv har enkeltceller på 30–53° — bratteste 30-metersvindu på linja er 25,3° mellom 916 og 940 moh",
+      "how": "DTM1 som GeoTIFF i 5 m rutenett (geo.dem_tile) langs linja, helling per celle med numpy.gradient; for hvert sjette punkt på den routede linja er bratteste celle innenfor 50 m oppgitt med avstand og peiling fra linja."
+    },
+    {
+      "what": "Langs linja",
+      "figure": "øst for Fjelltjønna ved 509 m, 579 moh — registerpunktet for tjernet 70 m vest for linja; ryggformasjonen ved 937 m, 647 moh; der det flater ut ved 2439 m, 1134 moh; toppen ved 2826 m; Rimmane 1125 ligger 827 m vest for linja",
+      "how": "Nærmeste punkt på den routede linja i lib/routes.ts til registerpunktet, med avstand langs ruta og DTM1-høyden der."
+    },
+    {
+      "what": "Varslingsregionen toppkoordinaten ligger i",
+      "figure": "Indre Fjordane (region 3027), regiontype A — varslet daglig i sesongen",
+      "how": "Spurt Varsom/NVE på samme endepunkt som appen bruker: api01.nve.no/hydrology/forecast/avalanche/v6.3.2/api/AvalancheWarningByCoordinates/Simple/<lat>/<lng>/1/<dato>/<dato> med toppkoordinaten fra summits.json."
+    }
+  ],
+  "venevassegga": [
+    {
+      "what": "Toppen, alle sider",
+      "figure": "N 7,3°, NØ 6,1°, Ø 10,1°, SØ 8,9° og V 11,9° i snitt over 500 m; S 17,7° i snitt med 22,8° 440–500 m ut; SV 36,3° 270–330 m ut; NV 52,7° 440–500 m ut",
+      "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+    },
+    {
+      "what": "Langs linja",
+      "figure": "Rørvik fjellstove 133 m fra linja; Svartenova 143 m sørøst for linja ved 2247 m, 751 moh; Jakobskardet ved 2635 m, 798 moh; Rundenova 902 m nordvest for linja; toppen ved 4456 m",
+      "how": "Nærmeste punkt på den routede linja i lib/routes.ts til registerpunktet, med avstand langs ruta og DTM1-høyden der."
+    },
+    {
+      "what": "Ryggen sørvestover fra fjellstova",
+      "figure": "enkeltceller på linja når 40° ved 730 moh og 38° ved 912 moh, og knauser på 53–82° står innenfor 50 m mellom 578 og 912 moh; bratteste 30-metersvindu på linja er 26,2° mellom 679 og 701 moh",
+      "how": "DTM1 som GeoTIFF i 5 m rutenett (geo.dem_tile) langs linja, helling per celle med numpy.gradient; for hvert sjette punkt på den routede linja er bratteste celle innenfor 50 m oppgitt med avstand og peiling fra linja."
+    },
+    {
+      "what": "Varslingsregionen toppkoordinaten ligger i",
+      "figure": "Indre Fjordane (region 3027), regiontype A — varslet daglig i sesongen",
+      "how": "Spurt Varsom/NVE på samme endepunkt som appen bruker: api01.nve.no/hydrology/forecast/avalanche/v6.3.2/api/AvalancheWarningByCoordinates/Simple/<lat>/<lng>/1/<dato>/<dato> med toppkoordinaten fra summits.json."
+    }
   ]
 }

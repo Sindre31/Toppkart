@@ -1528,6 +1528,28 @@
   "season": "apr–jun",
   "hasGuide": true
  },
+ "gronlifjellet": {
+  "name": "Grønlifjellet",
+  "region": "Sunnfjord",
+  "summitM": 1386,
+  "verticalM": 1160,
+  "duration": "6–8 t",
+  "grade": 3,
+  "aspect": "SØ",
+  "season": "jan–apr",
+  "hasGuide": true
+ },
+ "gotdalsnipa": {
+  "name": "Gotdalsnipa",
+  "region": "Sunnfjord",
+  "summitM": 1248,
+  "verticalM": 1000,
+  "duration": "4–6 t",
+  "grade": 2,
+  "aspect": "S",
+  "season": "des–apr",
+  "hasGuide": true
+ },
  "steindalsnosi": {
   "name": "Steindalsnosi",
   "region": "Sogn",
@@ -1561,6 +1583,17 @@
   "season": "apr–jun",
   "hasGuide": true
  },
+ "eggja": {
+  "name": "Eggja",
+  "region": "Sunnfjord",
+  "summitM": 1204,
+  "verticalM": 680,
+  "duration": "3–5 t",
+  "grade": 2,
+  "aspect": "S",
+  "season": "des–apr",
+  "hasGuide": true
+ },
  "kvamshesten": {
   "name": "Kvamshesten",
   "region": "Sunnfjord",
@@ -1592,6 +1625,17 @@
   "grade": 2,
   "aspect": "NØ",
   "season": "jan–apr",
+  "hasGuide": true
+ },
+ "venevassegga": {
+  "name": "Venevassegga",
+  "region": "Sunnfjord",
+  "summitM": 1024,
+  "verticalM": 530,
+  "duration": "3–5 t",
+  "grade": 1,
+  "aspect": "N",
+  "season": "des–mai",
   "hasGuide": true
  },
  "molden": {
