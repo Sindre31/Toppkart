@@ -448,6 +448,12 @@ export const TOUR_TEASER_EN: Record<string, string> = {
     "660 metres of ascent from Jøkelfjordeidet: straight west up a broad east ridge that gets snow early — the safest tour in the Koppartind massif.",
   vassnestind:
     "880 metres of ascent from the fjord at Jøkelfjord: open forest west of Golpeelva, a broad ridge and a wide summit plateau with sea on every side.",
+  grubba:
+    "500 metres of ascent from Fidjeland: east into the col by the lake and up the west-facing flank to Grubbå.",
+  hilleknuten:
+    "690 metres of ascent from the Fv 450 at Storekvæven: up along Bekkene, south across the bog and east up the slopes to the “Chinese house” on Hilleknuten — one of the longest descents in the area.",
+  roseknuten:
+    "350 metres of ascent from Hunnedalsveien: up the ridge at Finndokkje and along the gully to the top — but the line runs close to the edge where the cornice hangs over Røsehola.",
 
 };
 
@@ -7650,6 +7656,107 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       endLabel: "1124 m",
       distanceLabel: "7.4 km",
       caption: "620 metres of ascent and 7.4 km across the Kjerag plateau, where the steepest 30 metres is 29.6 degrees, up on the plateau, and the danger lies 1850 metres north of the high point.",
+    },
+  },
+  hilleknuten: {
+    intro:
+      "687 metres of climbing over 4.02 km from the Fv 450 at Storekvæven: up along Bekkene to the flat, south and then east up the slopes to the tower on Hilleknuten, 1209 m. The steepest band is 13.5 degrees between 600 and 700 m, and the steepest sustained section 23.1 degrees between 842 and 857. Fri Flyt: “The ski tour to Hilleknuten offers one of the longest descents in the area.”",
+    ascent: [
+      "The line starts where it leaves the Fv 450 at Storekvæven, 570 m, north of Fidjeland. Fri Flyt: “Park at Store Kvæven and follow Bekkene up until it flattens out.” There is no mapped car park at Storekvæven; the nearest public car park is 1.7 km north, at the filling station. The alternative is to start from Fidjeland, where the ut.no path goes up along the ski lift.",
+      "The line goes up along Bekkene: the band from 600 to 700 m is the steepest of the tour, 13.5 degrees over 405 metres of ground, and you leave the trees at 795 m, 1.4 km from the start. You reach the flat at 800 m after 1.52 km; a small tarn lies 84 metres from the line just before.",
+      "Fri Flyt: “Follow the bog south before you turn east up the slopes.” The line does. The steepest sustained section is 23.1 degrees between 842 and 857 m, and the band from 900 to 1000 m is 855 metres of ground at 6.0 degrees. Between 916 and 955 m small rock edges of 45 degrees or steeper are 8 to 19 metres from the line. The line turns east at 1102 m, after 3.34 km.",
+      "Up the slopes the bands from 1000 to 1200 m measure 12.2 and 9.3 degrees, and between 1083 and 1117 m rock edges are 12 to 20 metres from the line. The ground under the line is never 35 degrees or steeper for 15 metres in a row. Fri Flyt: “The little building that looks like a Chinese house stands on the top of Hilleknuten.” On the map it is a 23-metre communications tower; keep your distance in winter, ice can fall.",
+      "The summit is gentle on average to the north, north-east, east, south-east and south-west, 6.3 to 10.6 degrees over 500 metres, but the east edge has 31.8 degrees 20 to 80 metres out, and the summit falls more steeply to the west and north-west, 37.0 and 38.2 degrees 260 to 380 metres out, and 39.7 degrees 240 to 300 metres out to the south.",
+    ],
+    descent: [
+      "Fri Flyt: “From the top of Hilleknuten you can ski down in several places. If you aim straight for the bogs you get a very fine descent.” The west and north-west sides of the summit are 37.0 and 38.2 degrees 260 to 380 metres out; the gentlest way down is the line, south-west and out onto the bogs.",
+      "Fri Flyt: “When you reach the flats by the bog it is recommended to climb the little top p1012 before skiing down to the bog again. End the day by going up Kviturdfjellet, so you avoid crossing the flats and get a good run back to the car.” And: “It is recommended that you explore the area more than the book describes.”",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "The steepest sustained section is 23.1 degrees between 842 and 857 m, and the steepest band 13.5 degrees from 600 to 700. The ground under the line is not 35 degrees or steeper for any continuous stretch of 15 metres. Fri Flyt gives 35 degrees as the steepest point and grades the tour “Moderate”.",
+      },
+      {
+        title: "The terrain around it",
+        body: "The south, west and north-west sides of the summit are 37.0 to 39.7 degrees in their steepest windows, and the east edge 31.8 degrees close to the top. Just below the summit, at 1186 m, a rock edge of 64.1 degrees is 47 metres east of the line.",
+      },
+      {
+        title: "Before you go",
+        body: "Check today's avalanche forecast for Heiane at varsom.no. Heiane is an A region and is forecast daily in season. Bring a transceiver, probe and shovel.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "570 m",
+      endLabel: "1209 m",
+      distanceLabel: "4.0 km",
+      caption: "687 metres of climbing and 4.02 km from Storekvæven, with the treeline at 795 m, the flat at 800 and the turn east at 1102.",
+    },
+  },
+  grubba: {
+    intro:
+      "500 metres of climbing over 2.50 km from Smølåsveien at Fidjeland: east to the col by the lake at 859 m and up the west-facing flank to Grubbå, 1184 m. The steepest band is 17.6 degrees between 900 and 1000 m, and the steepest sustained section 23.1 degrees between 717 and 732. Fri Flyt grades the tour “Easy” and gives 27 degrees as the steepest point; the line still has a short rock step on the flank.",
+    ascent: [
+      "Start at the car park on Smølåsveien at Fidjeland, 695 m. Fri Flyt: “Drive in at Leitet and park at the end of the road.” Smølåsveien ends 0.2 km further south. Fri Flyt: “Go so that you come into the col between p893 and the lake at 850 m. There is often a ski trail this way.” The line crosses the mapped ski trail after 0.28 km and heads east; the steepest sustained section is 23.1 degrees between 717 and 732 m, at the bottom.",
+      "The bands from 700 to 900 m measure 10.6 and 9.4 degrees, and you leave the trees at 856 m, 1.0 km from the start. You pass through the col, between a small knoll at 885 m and the lake, from 1.04 to 1.20 km at 862–868 m; the lake, at 859 m on the map, is 27 metres from the line at 1.09 km. Stay on land. Fri Flyt's p893 is not in the terrain model; the knoll south of the line is 885 m, 66 metres away.",
+      "Fri Flyt: “Turn up the west-facing flank and follow it to the top.” The band from 900 to 1000 m is the steepest, 17.6 degrees over 315 metres of ground, and 1000 to 1100 measures 13.6. Between 932 and 1023 m small rock edges of 45 degrees or steeper are 4 to 20 metres from the line, and at 1046–1051 m the line crosses a 10-metre rock step of ground at 35 degrees or more. The last band, 1100 to 1200, is 424 metres of ground at 11.2 degrees up to the top. Ut.no on the cairn: “A cairn has also been built on the highest point (1184 m) a little further north-west (that is probably Grubbå itself).”",
+    ],
+    descent: [
+      "Fri Flyt: “Ski down the flank and home the way you came, or choose a more direct line down between the ridge and the northern stream valley. At the end you get some fun forest skiing before you turn off to the car.”",
+      "The summit is gentle on every side, 3.0 to 14.5 degrees on average over 500 metres. The steepest window is 30.6 degrees 20 to 80 metres out to the south-east.",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "The steepest sustained section is 23.1 degrees between 717 and 732 m, and the steepest band 17.6 degrees from 900 to 1000. The ground under the line is 35 degrees or steeper only on a 10-metre rock step at 1046–1051 m. Fri Flyt gives 27 degrees as the steepest point and grades the tour “Easy”.",
+      },
+      {
+        title: "The terrain around it",
+        body: "Small rock edges along the flank, 4 to 20 metres from the line between 932 and 1023 m. The lake in the col is 27 metres from the line; the ice can be weak.",
+      },
+      {
+        title: "Before you go",
+        body: "Check today's avalanche forecast for Heiane at varsom.no. Heiane is an A region and is forecast daily in season. Bring a transceiver, probe and shovel.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "695 m",
+      endLabel: "1184 m",
+      distanceLabel: "2.5 km",
+      caption: "500 metres of climbing and 2.50 km from Fidjeland, with the treeline at 856 m, the col at 862–868 and the steepest band between 900 and 1000.",
+    },
+  },
+  roseknuten: {
+    intro:
+      "352 metres of climbing over 1.61 km from Hunnedalsveien: up the faint ridge at Finndokkje to p905, on along the ridge south of the gully and along the edge above Røsehola to Røseknuten, 1022 m. The bands from 700 to 1000 m measure 11.2 to 12.9 degrees, and the steepest sustained section is 24.6 degrees between 838 and 857. Fri Flyt: “Røseknuten can be skied from almost every side and is easily combined with a ski tour to Store Knuten.”",
+    ascent: [
+      "Start at the car park on Hunnedalsveien, 674 m. Fri Flyt: “Park at the car park by the power station, or at a larger car park a little further down.” The power station is not mapped. Fri Flyt's starting point is “Gravasstølan/Bekkekrogan”, and the register's Bekkekrokan is 0.48 km north-west of the car park. Fri Flyt: “Go up a faint ridge at Finndokje.” The line goes straight north on it: the bands from 700 to 900 m measure 12.0 and 12.9 degrees, and you leave the trees at 803 m, 0.59 km from the start. At the bottom, between 688 and 712 m, small rock edges of 45 degrees or steeper are 4 to 19 metres from the line.",
+      "The steepest sustained section is 24.6 degrees between 838 and 857 m. You reach p905 at 906 m after 1.08 km. Fri Flyt: “Go up a small gully south-east of p905. Continue on the ridge to the top.” The line keeps to the ridge on the south rim of the gully, not down in it, because the gully leads up towards Røsehola, a shelf in the west face at 949 m.",
+      "Fri Flyt: “At 990 m a cornice hangs out over Røsehola. It breaks much further in than you think, so keep your distance.” There is no way up that keeps well away from that edge. From 1.41 to 1.56 km, at 989–1007 m, the line follows the edge above Røsehola, and ground of 37 degrees or steeper is 5 to 31 metres from the line — where the cornice hangs. Keep to the east and south side of the ridge there. The south side of the summit is steep too, 39.7 degrees 30 to 90 metres out. The ground under the line is never 35 degrees or steeper for 15 metres in a row.",
+    ],
+    descent: [
+      "Fri Flyt's descents are steeper than the line. Røsehola: “The way goes down into an exciting bowl. Fine snow settles easily here because the wind gets little grip.” Sørrenna: “A lovely south-facing hollow runs all the way down to the road.” Both have 35 degrees as the steepest point, and Røsehola runs straight under the cornice.",
+      "The summit is almost flat to the north and north-east, 3.1 and 4.3 degrees on average over 500 metres, but falls steeply to the south and south-east: 39.7 degrees just 30 to 90 metres out to the south, and 56.7 degrees 390 to 450 metres out to the south-east.",
+    ],
+    avalanche: [
+      {
+        title: "The route",
+        body: "The steepest sustained section is 24.6 degrees between 838 and 857 m, and the bands from 700 to 1000 m measure 11.2 to 12.9 degrees. The ground under the line is not 35 degrees or steeper for any continuous stretch of 15 metres. Fri Flyt gives 30 degrees as the steepest point and grades the tour “Easy”.",
+      },
+      {
+        title: "The terrain around it",
+        body: "The cornice at 990 m hangs out over Røsehola and breaks far in, and from 1.41 to 1.56 km the line is 5 to 31 metres from the edge. The south side of the summit is 39.7 degrees 30 to 90 metres out.",
+      },
+      {
+        title: "Before you go",
+        body: "Check today's avalanche forecast for Heiane at varsom.no. Heiane is an A region and is forecast daily in season. The Fv 450 through Hunnedalen can be closed in bad weather. Bring a transceiver, probe and shovel.",
+      },
+    ],
+    elevationProfile: {
+      startLabel: "674 m",
+      endLabel: "1022 m",
+      distanceLabel: "1.6 km",
+      caption: "352 metres of climbing and 1.61 km from Hunnedalsveien, with the treeline at 803 m, p905 after 1.08 km and the ridge south of Røsehola.",
     },
   },
 };

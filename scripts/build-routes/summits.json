@@ -450,10 +450,10 @@
   "grubba": {
     "name": "Grubbå",
     "lat": 58.9492,
-    "lng": 6.98546,
+    "lng": 6.98547,
     "summit_dtm": 1184.5,
     "claims": 1184,
-    "stored_off_km": 0.54
+    "stored_off_km": 0.0
   },
   "jonshornet": {
     "name": "Jønshornet",
@@ -1734,5 +1734,21 @@
     "summit_dtm": 896.2,
     "claims": 897,
     "stored_off_km": 0.01
+  },
+  "hilleknuten": {
+    "name": "Hilleknuten",
+    "lat": 58.97985,
+    "lng": 6.96807,
+    "summit_dtm": 1209.1,
+    "claims": 1209,
+    "stored_off_km": 0.02
+  },
+  "roseknuten": {
+    "name": "Røseknuten",
+    "lat": 58.90747,
+    "lng": 6.79035,
+    "summit_dtm": 1021.5,
+    "claims": 1022,
+    "stored_off_km": 0.0
   }
 }

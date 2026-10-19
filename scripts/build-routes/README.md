@@ -7112,6 +7112,81 @@ routes, `check_ground` clean on all four, `check_guides` and `check_bands` clean
 `check_gain` and `check_steepness` with nothing to look at, and `npm run
 typecheck`, `lint`, `test` and `build`.
 
+## The Sirdal round
+
+Three tours from Fri Flyt's *Toppturer i Sirdal*. 208 tours, 246 routes. The app
+had nothing in Sirdal and only Kjerag in Rogaland. All three summits answer to
+**Heiane** (3037), an A-region, and all three start by the Fv 450, whose winter
+closure is the stretch between Suleskard and Brokke, east of every start.
+
+| tour | start | summit | gain | km | steepest 100 m band | steepest 30 m | grade |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Hilleknuten | 570 | 1209 | 687 | 4.02 | 13.5° | 23.1° | 2 |
+| Grubbå | 695 | 1184 | 500 | 2.50 | 17.6° | 23.1° | 1 |
+| Røseknuten | 674 | 1022 | 352 | 1.61 | 13.6° | 24.6° | 2 |
+
+### Which tours, and which were left
+
+Fri Flyt's Sirdal book has twelve tours the app did not carry, most of them
+250–500 m of climbing. Lyseknuden starts at Lortabu on Lysevegen, which is closed
+in winter; Bjønnskjeggheia is 250 m with 40° in the line; Midstølknuten is a
+50° couloir; Storeknuten lies in Gjesdal and had no second source. The three
+built are the longest, and each has a second source that confirms the top — but
+those are summer routes from other starts, so all three are `confidence: medium`.
+
+### Where the lines go
+
+**Hilleknuten** follows Fri Flyt: up Bekkene to the flat, south along the bog
+and east up the slopes to the tower. No 15 m stretch under the line is 35° or
+more, at 5 m or at 1 m, and it crosses no water. There is no mapped car park at
+Storekvæven: the one 1.4 km north is `access=private`, the nearest public one is
+at the filling station 1.7 km north, and Fidjeland's hiking car park is the
+alternative. The guide says so, and warns of ice falling from the 23 m tower.
+
+**Røseknuten** has no way up that keeps well clear of the edge above Røsehola,
+where Fri Flyt warns of the cornice at 990 m that «knekker mye lenger inn enn du
+tror». The line keeps to the ridge on the south rim of the gully south-east of
+p905, not down in it, and from 1.41 to 1.56 km ground at 37° or more is 5–31 m
+from it. The guide says where, rather than claiming the line avoids it.
+
+### Grubbå's top
+
+The register puts Grubbå on the plateau at 1137 m. Fri Flyt gives 1184, and
+ut.no's trip names «Søndre Grubbå» at 1172 with the highest cairn «litt lenger
+nordvest». DTM1 has the 1184 top 0.5 km west of the register point, and OSM has
+it as a peak; the summit is seeded there (`SUMMIT_SEED`).
+
+### The independent read
+
+The second reader found three serious things. **Hilleknuten's line crossed a
+tarn and a pond**, and the reason the write-up gave for leaving Fri Flyt's line —
+a steep belt through the whole west face — did not hold up. The line now follows
+Fri Flyt south and then east, with no 35° stretch and no water under it.
+**Røseknuten's line ran along the rim above Røsehola**, where the guide said it
+came up from the south 131 m away. No line keeps clear of that edge, so the
+line stays and the guide, record and teaser now say where it runs 5–31 m from
+37° ground. **Grubbå's card repeated Fri Flyt's «i terreng under 30 grader»**,
+while at 1 m the line crosses a 10 m rock step at 35° or more at 1046–1051 m.
+The flank is rerouted, the guide and record state the step, and the teaser and
+grade reason no longer make the claim.
+
+The rest were smaller and are fixed. Hilleknuten starts where the line leaves
+the Fv 450, and the private car park is no longer offered. Røseknuten's guide
+names Fri Flyt's «Gravasstølan/Bekkekrogan» start, 0.48 km from the car park,
+and says the Fv 450 through Hunnedalen can close in blizzards (OSM relation
+3488474). Grubbå's p893 is not in DTM1 — the knoll by the col is 885 m, 66 m from
+the line — and the guide says so. The teasers follow the lines they describe.
+
+### What ran
+
+`check_new_corridors` (Hilleknuten has no mapped car park at its start — said in
+the record and the guide), `check_routes`, `check_tours` and `check_geometry`
+clean on 208 tours and 246 routes, `check_ground` clean on all three
+(water, trail and, after the merge with the house round, buildings),
+`check_guides` and `check_bands` clean (0 unsourced numbers, 6 band claims all
+agreeing), `check_treeline`, `check_gain` and `check_steepness` with nothing to
+look at, and `npm run typecheck`, `lint`, `test` and `build`.
+
 ## Network
 
 Everything is public and unauthenticated:

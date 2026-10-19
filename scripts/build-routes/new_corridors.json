@@ -13415,5 +13415,251 @@
       "confidence": "medium",
       "notes": "Fri Flyt (Trygge toppturer, Finnmark) er hovedkilden, men oppgir to startsteder; korridoren følger faktaboksen og Golpeelva. Wikiloc-sporet kunne ikke leses. Derfor confidence medium."
     }
+  },
+  {
+    "slug": "hilleknuten",
+    "verdict": "ok",
+    "rejectReason": "",
+    "corrections": [
+      "Registerets Hilleknuten (Fjell, Sirdal) løser seg til 1209,1 mot publiserte 1209 — +0,1 m. OSM fører samme topp (node/2133676646, natural=peak, ele 1209) og bygget på toppen (node/5163720725, man_made=tower).",
+      "Fri Flyt, Opp: «Parker i Store Kvæven og følg Bekkene opp til det flater ut. Følg myra sørover før du dreier øst opp bakkene. Det lille bygget som ligner på et kinahus står på toppen av Hilleknuten.» Faktaboks: «Stigning: 650 høydemeter Bratteste punkt: 35 grader Himmelretning: V Vanskelighetsgrad: Moderat». Innledning: «Toppturen til Hilleknuten byr på en av de lengste nedkjøringene i området.» og «Det anbefales at du utforsker området mer enn hva som står i boka.» Storekvæven er registerets Annen terrengdetalj på 58.99787/6.93548, Store Kvævebekken 58.99451/6.93386 og Bekkene 58.98878/6.94325; korridoren starter der linja forlater fv. 450 like sør for dem. Korridoren følger Fri Flyts linje: opp langs Bekkene til flata, sørover over myra og østover opp bakkene til toppen. Bakken under linja er aldri 35 grader eller brattere i 15 m sammenhengende, og linja krysser ikke vann.",
+      "Fri Flyt, Ned 11.1: «Fra toppen av Hilleknuten kan du kjøre ned flere steder. Hvis du sikter rett på myrene får du en veldig fin nedkjøring. Når du ankommer flatene ved myra anbefales det å gå opp på den lille toppen p1012 før du kjører ned til myra igjen. Avslutt dagen med å gå opp til Kviturdfjellet, da slipper du å gå over flatene og du får en bra nedkjøring tilbake til bilen.»",
+      "Andrekilde, ut.no 119426 (fottur, mai–oktober, fra Fidjeland): «Stien opp til Hilleknuten fylgjer skitrekket mest til topps før han svingar til venstre og passerer Svartopstjødna.» og «Hilleknuten ligg 1209 moh. og gjev fritt utsyn i alle retningar.» Ut.no går fra sør, ikke fra Storekvæven.",
+      "1209,1 − 569,7 = 639 mot Fri Flyts 650 høydemeter; den routede linja har 687 med motbakkene."
+    ],
+    "corridor": {
+      "routeId": "storekvaeven",
+      "routeName": "Fra Storekvæven",
+      "routeDescriptionFull": "Fra fv. 450 ved Storekvæven opp langs Bekkene til flata, sørover over myra og østover opp bakkene til tårnet på Hilleknuten",
+      "trailhead": {
+        "name": "Storekvæven ved fv. 450",
+        "lat": 58.9955,
+        "lng": 6.9322,
+        "elevationM": 569.7,
+        "osmEvidence": "Linja starter der den forlater fv. 450 Sirdalsveien (OSM way/532048899, primary) ved Storekvæven, nord for Fidjeland. Fri Flyt: «Parker i Store Kvæven». Ingen parkering er kartlagt her: way/1350603818 1,4 km nord er access=private, nærmeste offentlige parkering er way/1424618386 ved bensinstasjonen 1,7 km nord, og alternativet er turparkeringa på Fidjeland (way/532048807). Fv. 450 er vinterstengt bare mellom Suleskard og Brokke (yr.no, fjelloverganger: «Fv. 450 Brokke - Suleskard»), øst for Ådneram. DTM1 leser 569,7 moh."
+      },
+      "waypoints": [
+        {
+          "name": "opp langs Bekkene",
+          "lat": 58.9915,
+          "lng": 6.933,
+          "elevationM": 643.5
+        },
+        {
+          "name": "opp langs Bekkene",
+          "lat": 58.9908,
+          "lng": 6.94,
+          "elevationM": 773.8
+        },
+        {
+          "name": "flata",
+          "lat": 58.988,
+          "lng": 6.9475,
+          "elevationM": 799.5
+        },
+        {
+          "name": "myra sørover",
+          "lat": 58.9852,
+          "lng": 6.9546,
+          "elevationM": 957.8
+        },
+        {
+          "name": "myra sørover",
+          "lat": 58.9797,
+          "lng": 6.9578,
+          "elevationM": 1005.5
+        },
+        {
+          "name": "myra sørover",
+          "lat": 58.9761,
+          "lng": 6.96,
+          "elevationM": 1093.3
+        },
+        {
+          "name": "østover opp bakkene",
+          "lat": 58.9765,
+          "lng": 6.9623,
+          "elevationM": 1132.0
+        },
+        {
+          "name": "østover opp bakkene",
+          "lat": 58.9782,
+          "lng": 6.9656,
+          "elevationM": 1141.8
+        }
+      ],
+      "season": "des–apr",
+      "aspect": "V",
+      "grade": 2,
+      "gradeReason": "Fri Flyt: «Moderat», bratteste punkt 35 grader, 650 høydemeter og 3 timer. Grad 2.",
+      "roadClosedInWinter": false,
+      "hazardNotes": "Fri Flyt oppgir 35 grader som bratteste punkt og graderer turen «Moderat». Bygget på toppen er et 23 m høyt kommunikasjonstårn (OSM node/5163720725); det kan falle is fra det. Fri Flyt: «Det anbefales at du utforsker området mer enn hva som står i boka.»",
+      "teaserNo": "690 høydemeter fra fv. 450 ved Storekvæven: opp langs Bekkene, sørover over myra og østover opp bakkene til «kinahuset» på Hilleknuten — en av de lengste nedkjøringene i området.",
+      "teaserEn": "690 metres of ascent from the Fv 450 at Storekvæven: up along Bekkene, south across the bog and east up the slopes to the “Chinese house” on Hilleknuten — one of the longest descents in the area.",
+      "sources": [
+        "https://www.friflyt.no/topptur/skiturer-sirdal/turbeskrivelse-hilleknuten",
+        "https://ut.no/turforslag/119426/hilleknuten"
+      ],
+      "confidence": "medium",
+      "notes": "Fri Flyt (Toppturer i Sirdal) er hovedkilden. Ut.no beskriver sommerstien fra Fidjeland, ikke linja fra Storekvæven, og parkeringa ved Storekvæven er ikke kartlagt. Derfor confidence medium."
+    }
+  },
+  {
+    "slug": "roseknuten",
+    "verdict": "ok",
+    "rejectReason": "",
+    "corrections": [
+      "Registerets Røseknuten (Høyde, Sirdal) løser seg til 1021,5 mot publiserte 1022 — −0,5 m. OSM fører samme topp (node/8251780823, natural=peak, ele 1021).",
+      "Fri Flyt, Opp: «Parker på parkeringsplass ved kraftstasjonen, eller på en større parkering litt lengre nede. Gå opp en svak ryggformasjon ved Finndokje. Gå opp en liten renne sørøst for p905. Fortsett på ryggen til toppunktet.» Faktaboks: «Stigning: 475 høydemeter Bratteste punkt: 30 grader Himmelretning: SV Vanskelighetsgrad: Lett». Fare: «På 990 moh. henger en skavl ut mot Røsehola. Denne knekker mye lenger inn enn du tror, så hold avstand.» Finndokkje er registerets Søkk på 58.90517/6.77869; p905 er toppen på 904,6 moh i DTM1 (58.9069/6.7837). Røsehola er registerets Botn på 58.90768/6.78686 (949 moh), en hylle i vestsida under toppkanten; korridoren går på ryggen på sørkanten av renna sørøst for p905, ikke nede i den, fordi renna leder opp mot Røsehola. Ingen veg opp holder seg langt unna kanten: fra 1,41 til 1,56 km, ved 989–1007 moh, står bakke på 37 grader eller brattere 5 til 31 m fra linja, der skavlen henger. Fri Flyts startsted er «Gravasstølan/Bekkekrogan»; registerets Bekkekrokan (Botn, 58.90488/6.77518) ligger 0,48 km fra parkeringa.",
+      "Fri Flyt, Ned 7.1 Røsehola: «Veien går ned i en spennende gryteformasjon. Her legger det seg lett fin snø da vinden får dårlig tak.» og «Bratteste punkt: 35 grader». Ned 7.2 Sørrenna: «Ei herlig sørvendt fordypning går helt ned til veien.» og «Bratteste punkt: 35 grader». Innledning: «Røseknuten kan kjøres fra nesten alle kanter og kombineres lett med en topptur til Store Knuten.»",
+      "Andrekilde, Visit Norway «Topptur til Røseknuten» (sommer, fra Ålsheia Alpint) og Sirdal Seven Summits, der Røseknuten er én av sju topper. De går fra nord, ikke linja fra Hunnedalsveien.",
+      "1021,5 − 674,0 = 348 mot Fri Flyts 475 høydemeter; kraftstasjonen er ikke kartlagt, og Fri Flyts tall passer ikke med noen kartlagt parkering ved Gravasstølen (726 moh) eller Hunnedalsveien (674 moh)."
+    ],
+    "corridor": {
+      "routeId": "hunnedalsveien",
+      "routeName": "Fra Hunnedalsveien via Finndokkje",
+      "routeDescriptionFull": "Fra parkeringa ved Hunnedalsveien opp den svake ryggen ved Finndokkje til p905, ryggen langs renna sørøst for den og kanten over Røsehola til toppen av Røseknuten",
+      "trailhead": {
+        "name": "Parkeringa ved Hunnedalsveien",
+        "lat": 58.90085,
+        "lng": 6.77803,
+        "elevationM": 674.0,
+        "osmEvidence": "OSM way/532234832 (amenity=parking) ved fv. 450 Hunnedalsveien (way/239638286, primary), med en ny parkering like ved (way/532234833); Gravasstølen-parkeringa (way/1290773491, 20 plasser) ligger 1,2 km vest. Fri Flyt: «Parker på parkeringsplass ved kraftstasjonen, eller på en større parkering litt lengre nede.» Hunnedalsveien er hovedvegen mellom Sirdal og Stavanger, og OSM fører en stengingsrelasjon for Hunnedalen (relation/3488474, «Occationally closed during blizzards»). DTM1 leser 674,0 moh."
+      },
+      "waypoints": [
+        {
+          "name": "ryggen ved Finndokkje",
+          "lat": 58.903,
+          "lng": 6.78,
+          "elevationM": 781.6
+        },
+        {
+          "name": "ryggen ved Finndokkje",
+          "lat": 58.9051,
+          "lng": 6.7805,
+          "elevationM": 860.4
+        },
+        {
+          "name": "p905",
+          "lat": 58.9069,
+          "lng": 6.7837,
+          "elevationM": 904.6
+        },
+        {
+          "name": "renna sørøst for p905",
+          "lat": 58.9061,
+          "lng": 6.786,
+          "elevationM": 959.8
+        },
+        {
+          "name": "ryggen sør for Røsehola",
+          "lat": 58.9064,
+          "lng": 6.788,
+          "elevationM": 984.8
+        },
+        {
+          "name": "ryggen sør for Røsehola",
+          "lat": 58.907,
+          "lng": 6.7892,
+          "elevationM": 993.9
+        }
+      ],
+      "season": "des–apr",
+      "aspect": "SV",
+      "grade": 2,
+      "gradeReason": "Fri Flyt: «Lett», bratteste punkt 30 grader, 475 høydemeter og 2,5 timer, men med en skavl på 990 moh som «knekker mye lenger inn enn du tror». Grad 2.",
+      "roadClosedInWinter": false,
+      "hazardNotes": "Fra 1,41 til 1,56 km går linja 5 til 31 m fra kanten mot Røsehola. Fri Flyt: «På 990 moh. henger en skavl ut mot Røsehola. Denne knekker mye lenger inn enn du tror, så hold avstand.» Nedkjøringene i Røsehola og Sørrenna har 35 grader som bratteste punkt. Fv. 450 gjennom Hunnedalen kan bli stengt i uvær.",
+      "teaserNo": "350 høydemeter fra Hunnedalsveien: opp ryggen ved Finndokkje og langs renna til toppen — men linja går nær kanten der skavlen henger over Røsehola.",
+      "teaserEn": "350 metres of ascent from Hunnedalsveien: up the ridge at Finndokkje and along the gully to the top — but the line runs close to the edge where the cornice hangs over Røsehola.",
+      "sources": [
+        "https://www.friflyt.no/topptur/skiturer-sirdal/turbeskrivelse-roeseknuten",
+        "https://www.visitnorway.no/reisemal/sorlandet/listings-lister/topptur-til-r%C3%B8seknuten/20917/"
+      ],
+      "confidence": "medium",
+      "notes": "Fri Flyt (Toppturer i Sirdal) er hovedkilden. Visit Norway beskriver en sommerrute fra Ålsheia, ikke linja; kraftstasjonen er ikke kartlagt, og Fri Flyts 475 høydemeter passer ikke med starten. Derfor confidence medium."
+    }
+  },
+  {
+    "slug": "grubba",
+    "verdict": "ok",
+    "rejectReason": "",
+    "corrections": [
+      "Grubbå er festet med SUMMIT_SEED på 1184-toppen og løser seg til 1184,5 mot publiserte 1184 — +0,5 m; registerets navnepunkt (Fjell, 1136,9 moh) står på platået 0,5 km øst. OSM fører toppen som node/8250022979 (natural=peak, ele 1184).",
+      "Fri Flyt, Opp: «Kjør inn ved Leitet og parker i enden av veien. Gå slik at du kommer inn i skaret mellom p893 og vannet på 850 moh. Det ligger ofte skiløype denne veien. Ta av opp den vestvendte flanken og følg til topps.» Innledning: «Toppturen til Grubbå starter ved Leitet, og turen går i terreng under 30 grader.» Faktaboks: «Stigning: 500 høydemeter Bratteste punkt: 27 grader Himmelretning: V Vanskelighetsgrad: Lett». Leitet er registerets Bakke på 58.95713/6.94023; vatnet er OSM way/893675547 (ele 859). Fri Flyts p893 finnes ikke i DTM1; kollen sør for skaret er 884,6 moh, 66 m fra linja. Linja krysser skiløypa (way/52480369) etter 0,28 km og går ellers egen veg østover.",
+      "Fri Flyt, Ned 10.1 Grubbåbakkene: «Kjør ned flanken og hjem samme vei som du kom, eller velg en mer dirkete rute ned mellom ryggen og den nordlige bekkedalen. På slutten får du litt artig skogskjøring før du svinger av til bilen.»",
+      "Andrekilde, ut.no 1110291410 (fottur, juli–november, fra Hønedalen): «hold til høyre for å komme til den gamle varden på Søndre Grubbå, som er 1172 moh.» og «Det er bygget varde også på det høyeste punktet (1184 moh) litt lenger nordvest (det er vel selve Grubbå).» Ut.no går fra sør, ikke fra Leitet.",
+      "1184,5 − 695,3 = 489 mot Fri Flyts 500 høydemeter."
+    ],
+    "corridor": {
+      "routeId": "leitet",
+      "routeName": "Fra Leitet opp vestflanken",
+      "routeDescriptionFull": "Fra parkeringa ved Smølåsveien på Fidjeland østover til skaret ved vatnet på 859 moh, og opp den vestvendte flanken til Grubbå",
+      "trailhead": {
+        "name": "Parkeringa ved Smølåsveien",
+        "lat": 58.95235,
+        "lng": 6.94737,
+        "elevationM": 695.3,
+        "osmEvidence": "OSM way/532048809 (amenity=parking) ved Smølåsveien (way/374798293), som ender 0,2 km lenger sør, på Fidjeland nedenfor Leitet (registerets Bakke 58.95713/6.94023). Fri Flyt: «Kjør inn ved Leitet og parker i enden av veien.» Fidjeland har alpinanlegg og hotell ved fv. 450, som er vinterstengt bare mellom Suleskard og Brokke. DTM1 leser 695,3 moh."
+      },
+      "waypoints": [
+        {
+          "name": "mot skaret",
+          "lat": 58.951,
+          "lng": 6.953,
+          "elevationM": 731.1
+        },
+        {
+          "name": "mot skaret",
+          "lat": 58.9505,
+          "lng": 6.9625,
+          "elevationM": 856.1
+        },
+        {
+          "name": "skaret ved vatnet på 859",
+          "lat": 58.9506,
+          "lng": 6.966,
+          "elevationM": 866.4
+        },
+        {
+          "name": "den vestvendte flanken",
+          "lat": 58.9517,
+          "lng": 6.9692,
+          "elevationM": 934.2
+        },
+        {
+          "name": "den vestvendte flanken",
+          "lat": 58.9512,
+          "lng": 6.9727,
+          "elevationM": 1008.7
+        },
+        {
+          "name": "den vestvendte flanken",
+          "lat": 58.951,
+          "lng": 6.9762,
+          "elevationM": 1062.5
+        },
+        {
+          "name": "den vestvendte flanken",
+          "lat": 58.9502,
+          "lng": 6.9797,
+          "elevationM": 1117.1
+        }
+      ],
+      "season": "des–apr",
+      "aspect": "V",
+      "grade": 1,
+      "gradeReason": "Fri Flyt: «Lett», bratteste punkt 27 grader, 500 høydemeter og 2,5 timer. Linja går over et bergsteg på 10 m med bakke på 35 grader eller mer ved 1046–1051 moh. Grad 1.",
+      "roadClosedInWinter": false,
+      "hazardNotes": "Fri Flyt oppgir 27 grader som bratteste punkt, men linja går over et bergsteg på 10 m med bakke på 35 grader eller mer ved 1046–1051 moh, og bergkanter står 4 til 20 m fra linja mellom 932 og 1023 moh. Vatnet i skaret ligger 27 m fra linja.",
+      "teaserNo": "500 høydemeter fra Fidjeland: østover inn i skaret ved vatnet og opp den vestvendte flanken til Grubbå.",
+      "teaserEn": "500 metres of ascent from Fidjeland: east into the col by the lake and up the west-facing flank to Grubbå.",
+      "sources": [
+        "https://www.friflyt.no/topptur/skiturer-sirdal/turbeskrivelse-grubbaa",
+        "https://ut.no/turforslag/1110291410/grubba-fra-hnedalen"
+      ],
+      "confidence": "medium",
+      "notes": "Fri Flyt (Toppturer i Sirdal) er hovedkilden. Ut.no bekrefter toppen og høyden, men går fra Hønedalen. Derfor confidence medium."
+    }
   }
 ]
