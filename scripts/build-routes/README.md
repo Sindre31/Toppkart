@@ -6488,6 +6488,112 @@ unsourced numbers, 12 band claims all agreeing — `check_treeline`,
 `check_steepness`, `check_gain` and `check_ground` with nothing to look at, and
 `npm run typecheck`, `lint`, `test` and `build`.
 
+## The Sunnfjord round
+
+Four tours from Fri Flyt's *Toppturer i Sunnfjord*, two from the ski-touring car
+park at Ålhus by Jølstravatnet and two from the top of Rørvikfjellet. 191 tours,
+229 routes. All four summits answer to **Indre Fjordane** (3027), an A-region.
+
+| tour | start | summit | gain | km | steepest 100 m band | steepest 30 m | grade |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Grønlifjellet | 277 | 1386 | 1155 | 8.10 | 19.2° | 23.8° | 3 |
+| Gotdalsnipa | 277 | 1248 | 998 | 5.25 | 15.4° | 24.3° | 2 |
+| Eggja | 542 | 1204 | 680 | 2.83 | 20.0° | 25.3° | 2 |
+| Venevassegga | 542 | 1024 | 533 | 4.68 | 14.1° | 26.2° | 1 |
+
+### The corpus, indexed against the app
+
+The index round built an index of Fri Flyt's 580 route pages to look for second
+routes. This round asked the other question of the same corpus — which pages
+describe a peak the app does not carry? — by fetching every page whose URL no
+record in the repository cites, 468 of them, and matching the rest by name and,
+where the page gives one, by its UTM summit point. **406 pages with a fact box
+describe peaks the app does not have.** Bodø, Sogn and Sunnfjord lead with 37–38
+each, Sunnmøre, Tromsø, Jotunheimen and Odda–Røldal–Haukeli follow with about 30.
+Sunnfjord went first because the app had two tours there and because most of its
+pages are moderate — 20 to 30 degrees, no crampons in the fact box, a road start —
+where Bodø's are mostly steeper than 35 degrees or ask for axe and crampons.
+
+Fri Flyt's «Dronninga av Sunnfjord» is Snønipa, which the app already carries;
+the name match missed it and the summit point did not.
+
+### Eggja is the tour Fri Flyt calls Ørnafjellet
+
+Fri Flyt writes «austover mot Ørnafjellet på 1209 moh.» and ut.no's summer path
+from the same pass goes to «den austlege toppen på fjellpartiet Rimmane, og den
+ligg 1209 moh». Both stated climbs — 680 and 666 m from 535 — end on that top.
+N50 and OSM call the 1209 top **Eggja** (node/3888574483). The register's
+Ørnafjellet is a different summit, 1226 in OSM and 1228.3 on DTM1, 1121 m further
+east behind a col the crest search reads at 1111 m, and neither source goes
+there. The tour ends where its sources end and carries the map's name; the guide
+says what the books call it. Eggja has no register entry, so the summit search is
+seeded from the OSM point (`SUMMIT_SEED`) and climbs to 1204.0, −5.0 against N50.
+
+### Two second sources that confirm the start and not the line
+
+Gotdalsnipa has two independent second sources for the whole climb — skifantomet
+(«via Dalebø, Fjellstøylen, Høgemannsholten, Nonsnipa») and Fjord Norway («Fra
+Fjellstøylen … nesten tusen høydemeter»). The other three are thinner, and their
+records say so with `confidence: medium`: ut.no's Grønlifjellet-area trip is a
+summer path that shares the line only as far as Tolsbotnen, and Fjord Norway
+names Venevassegga and «Ørnefjellet» as tours from Rørvikfjellet without
+describing them.
+
+### Grønlifjellet's ridge, found rather than assumed
+
+Fri Flyt's line holds height from Tolsbotnen «over i Litlebotnen» and then
+follows «ryggen som stig i nordvestleg retning opp mot toppen». The register
+places Litlebotn 1.4 km east of the summit, and the ridge was found with a crest
+search perpendicular to bearing 135 from the top — 1311 m 200 m out, 1229 at
+400, 1124 at 800, 1047 at 1000 — which is where the corridor joins it. The 5 m
+slope grid then put the source's cornice warning on the map: 49–65° cells within
+50 m east and north-east of the upper ridge between 1153 and 1335 m.
+
+### Blånipa above Solheim, held back
+
+Blånipa (1049, Fri Flyt 3.4.1 via Ørnebotnen) has a full description and no
+readable second source. Fjord Norway's «Isdronninga» from Helgheim kirke is a
+different mountain 11 km east, and the one trip blog that names a 1049 m Blånipa
+by Jølstravatnet could not be fetched from here. One-source tours do not ship.
+
+### The independent read
+
+The second reader found twelve things and three of them were serious. **The
+«steepest sustained section» is the gradient along the track, and on three of
+the four tours the ground the track crosses is steeper** — sampled every 5 m on
+the 5 m slope grid, Eggja's line crosses 50 m of ground at 35° or more where it
+turns onto the ridge, with a 61° cell, and 39 m at 921–940 m on the very
+stretch quoted as 25.3°; Grønlifjellet's pitch onto the ridge and Venevassegga's
+first kilometre have the same, shorter. Gotdalsnipa has no such stretch. Each
+guide now says so, with the lengths and the heights. **Venevassegga's
+Jakobskardet was pinned on a 24° east-facing slope**, not in the col: the col is
+the saddle between Venevassegga and Rundenova, found as the highest threshold at
+which the two summits connect on DTM1 (852.6 m), 207 m west of the first line.
+The corridor moved there and the line was re-solved, 4456 m +528 → 4685 m +533;
+the card stays at 530. And **the forest road to Gotdalsstøylen was written as
+if it were safe ground** — it runs along a valley floor under slopes measuring
+35–68° in their steepest windows on both sides, 160–640 m out, and it is the
+return route for Gotdalsnipa as well as the approach for Grønlifjellet.
+
+The rest were smaller and are all fixed: the 1226 m top east of Eggja is not
+unvisited — Fri Flyt lists it as Blåfjellet with its own tour from Hårklau and
+suggests the round trip; Ålhusdalen lies south-west of the road, not west;
+«holder du høyden» did not describe a line that climbs 105 m from Tolsbotnen;
+Grønlifjellet's descent left out the east face it actually skis and a Fri Flyt
+fall warning; Venevassegga quoted Fri Flyt's generic grade definition as a
+description of the tour; two «steepest hundred-metre bands» were partial bands.
+Card durations are left as the route model gives them, which is the pipeline's
+rule; the guides quote Fri Flyt's times.
+
+### What ran
+
+`check_new_corridors` (the Ålhus car park is not mapped in OSM, which the record
+says), `check_routes`, `check_tours` and `check_geometry` clean on 191 tours and
+229 routes, `check_ground` clean on all four — no line on water —
+`check_guides` and `check_bands` clean (0 unsourced numbers, 28 band claims all
+agreeing), `check_treeline`, `check_gain` and `check_steepness` with nothing to
+look at, and `npm run typecheck`, `lint`, `test` and `build`.
+
 ## Network
 
 Everything is public and unauthenticated:

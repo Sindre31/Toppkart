@@ -454,4 +454,18 @@ PEAKS = [
     #   høgda på Mellomkollen, så forventa høgd er DTM1 i registerpunktet (536). —
     ("heddersfjell", "Blånipa", ["Hjartdal"], 1461, 59.83823, 8.75923),
     ("mellomkollen", "Mellomkollen", ["Oslo"], 536, 60.05060, 10.76839),
+    # — Sunnfjord-runden: fire toppturar frå «Toppturer i Sunnfjord» (Fri Flyt),
+    #   to frå toppturparkeringa ved Ålhus og to frå toppen av Rørvikfjellet,
+    #   kvar med ein andre kjelde (Fjord Norway, skifantomet, ut.no). Blånipa ved
+    #   Solheim er researcha og halden att: ingen andre kjelde for linja. —
+    ("gotdalsnipa", "Gotdalsnipa", ["Sunnfjord"], 1249, 61.58916, 6.27908),
+    ("gronlifjellet", "Grønlifjellet", ["Sunnfjord"], 1385, 61.59663, 6.21200),
+    #   Fri Flyt kallar målet «Ørnafjellet på 1209 moh», ut.no «den austlege toppen
+    #   på fjellpartiet Rimmane, 1209 moh». Registeret og N50 kallar 1209-toppen
+    #   Eggja; Ørnafjellet er 1226-toppen 1,1 km lenger aust, bak eit skar på 1111.
+    #   Begge kjeldene sluttar på 1209, så turen gjer det òg, under kartnamnet.
+    #   Eggja finst ikkje i registeret; oppslaget går på fjellpartiet Rimmane, og
+    #   SUMMIT_SEED i resolve_summits.py set klatringa på OSM node/3888574483.
+    ("eggja", "Rimmane", ["Sunnfjord"], 1209, 61.42198, 6.20446),
+    ("venevassegga", "Venevassegga", ["Sunnfjord"], 1023, 61.37503, 6.18306),
 ]

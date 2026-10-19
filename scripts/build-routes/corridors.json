@@ -11299,5 +11299,223 @@
     "notes": "Ut.no: «pass på å unngå stupene som ligger på sørsiden av Gaupekollen.» Nedkjøringa er vanskelegare enn oppturen: «Nedkjøringen kan fort bli ganske teknisk og byksete om man ikke har sett seg ut noen åpne felt på forkant», og kilden rår til å følgje sommerstiane, t.d. den blåmerkte ned til Øyungen. Tett skog, kratt og elver. Kollene liknar kvarandre — «plutselig står du på Mellomkollen når du trodde du var på Midtkollen» — så kart og kompass. Fredet naturreservat."
    }
   ]
+ },
+ "gotdalsnipa": {
+  "routes": [
+   {
+    "id": "fjellstoylen",
+    "name": "Opp via Fjellstøylen",
+    "description": "Fra toppturparkeringa ved Ålhus over brua til Dalebø, traktorvegen et stykke, lia skrått opp mot nordøst forbi Fjellstøylen, opp østsida av Fossgrova mot Nonsnipa og ryggen til Gotdalsnipa",
+    "trailhead": {
+     "name": "Ålhus toppturparkering",
+     "lat": 61.54956,
+     "lng": 6.26109,
+     "elevation_m": 277.0,
+     "fullName": "Ålhus toppturparkering"
+    },
+    "waypoints": [
+     {
+      "name": "Dalebø traktorvegen",
+      "lat": 61.55012,
+      "lng": 6.26574,
+      "elevation_m": 293.3
+     },
+     {
+      "name": "Fjellstøylen",
+      "lat": 61.56141,
+      "lng": 6.27268,
+      "elevation_m": 590.7
+     },
+     {
+      "name": "Fossgrova austside",
+      "lat": 61.576,
+      "lng": 6.281,
+      "elevation_m": 904.7
+     },
+     {
+      "name": "Nonsnipa",
+      "lat": 61.58315,
+      "lng": 6.28765,
+      "elevation_m": 1106.9
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: bratteste på oppturen 25–28 grader mellom 370 og 560 moh., i skoglia over Dalebø. Nedkjøringa rett sør fra toppen ned i Steinbotnen er «Utfordrande» med 30–34 grader mellom 1140 og 980 moh.; vil du ha slakere terreng, følger du ryggen ned mot skaret før Nonsnipa. Skifantomet: skredfare i Ålhusdalen, der det «kommer i løpet vinteren store snøskred ned … ifrå fjellsidene (Blåfjellet, Sølvet og Trollet)» — det er dalen vest for ruta, ikke ruta selv."
+   }
+  ]
+ },
+ "gronlifjellet": {
+  "routes": [
+   {
+    "id": "litlebotn",
+    "name": "Via Litlebotn og sørøstryggen",
+    "description": "Fra toppturparkeringa ved Ålhus skogsvegen vel fire kilometer til Gotdalsstøylen, nordøstover opp i Tolsbotnen, over i Litlebotn og sørøstryggen til toppen av Grønlifjellet",
+    "trailhead": {
+     "name": "Ålhus toppturparkering",
+     "lat": 61.54956,
+     "lng": 6.26109,
+     "elevation_m": 277.0,
+     "fullName": "Ålhus toppturparkering"
+    },
+    "waypoints": [
+     {
+      "name": "skogsvegen",
+      "lat": 61.55493,
+      "lng": 6.2609,
+      "elevation_m": 298.5
+     },
+     {
+      "name": "skogsvegen ved kraftverket",
+      "lat": 61.56225,
+      "lng": 6.26052,
+      "elevation_m": 322.9
+     },
+     {
+      "name": "skogsvegen",
+      "lat": 61.56601,
+      "lng": 6.26328,
+      "elevation_m": 394.4
+     },
+     {
+      "name": "skogsvegen i Ålhusdalen",
+      "lat": 61.57303,
+      "lng": 6.25008,
+      "elevation_m": 527.4
+     },
+     {
+      "name": "Gotdalsstøylen",
+      "lat": 61.58055,
+      "lng": 6.25456,
+      "elevation_m": 562.8
+     },
+     {
+      "name": "Tolsbotnen",
+      "lat": 61.59327,
+      "lng": 6.26062,
+      "elevation_m": 803.0
+     },
+     {
+      "name": "Litlebotn",
+      "lat": 61.59629,
+      "lng": 6.24666,
+      "elevation_m": 900.6
+     },
+     {
+      "name": "sørøstryggen",
+      "lat": 61.592,
+      "lng": 6.2363,
+      "elevation_m": 1047.8
+     },
+     {
+      "name": "sørøstryggen",
+      "lat": 61.59296,
+      "lng": 6.23298,
+      "elevation_m": 1126.3
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: øvre del av egga er smal med skavler mot øst og kan oppleves brattere enn målingene; i hard snø kan du måtte bruke skarejern eller gå til fots. Nedkjøringa fra toppen øst mot Litlebotnen: «Dei første ti høgdemetrane frå toppen kan vere bratte, 35-40 grader avhengig av snøforhold/skavldanning», med 34–36 grader mellom 1070 og 1000 moh. Anmarsjen er vel fire kilometer skogsveg — lang dag. Litlebottsegga nord for Litlebotn har skavldanning langs ryggen fra 990 moh."
+   }
+  ]
+ },
+ "eggja": {
+  "routes": [
+   {
+    "id": "fjelltjonna",
+    "name": "Opp via Fjelltjønna",
+    "description": "Fra parkeringa på toppen av Rørvikfjellet nordover forbi Fjelltjønna, nordøst til ryggformasjonen og den mot nordvest, og over kammen til Eggja, østtoppen på Rimmane",
+    "trailhead": {
+     "name": "Rørvikfjellet",
+     "lat": 61.40309,
+     "lng": 6.2253,
+     "elevation_m": 541.7,
+     "fullName": "Rørvikfjellet"
+    },
+    "waypoints": [
+     {
+      "name": "øst for Fjelltjønna",
+      "lat": 61.4072,
+      "lng": 6.224,
+      "elevation_m": 576.9
+     },
+     {
+      "name": "ryggformasjonen",
+      "lat": 61.41,
+      "lng": 6.227,
+      "elevation_m": 645.6
+     },
+     {
+      "name": "ryggen",
+      "lat": 61.416,
+      "lng": 6.223,
+      "elevation_m": 932.7
+     },
+     {
+      "name": "der det flater ut",
+      "lat": 61.42,
+      "lng": 6.221,
+      "elevation_m": 1134.5
+     }
+    ],
+    "source": "researched, verified (corrected), no local audit",
+    "notes": "Fri Flyt: bratteste parti 27–32 grader mellom 1000 og 1100 moh. Sommerstien går gjennom «ei rås i ein bratt berghammar» som ut.no sier kan virke skummel; vinterlinja følger ryggformasjonen. Dei sørvendte sidene fra Rimmane får sol og løses lett opp på varme dager. Nedkjøringa kan gå samme vei eller på mange linjer mellom toppen og høyden på 1125 moh. langs Rimmane."
+   }
+  ]
+ },
+ "venevassegga": {
+  "routes": [
+   {
+    "id": "jakobskardet",
+    "name": "Via Jakobskardet",
+    "description": "Fra Rørvik fjellstove sørvestover langs den lange ryggen, nord for Svartenova, opp i Jakobskardet og ryggen sørover til Venevassegga",
+    "trailhead": {
+     "name": "Rørvikfjellet",
+     "lat": 61.40309,
+     "lng": 6.2253,
+     "elevation_m": 541.7,
+     "fullName": "Rørvikfjellet"
+    },
+    "waypoints": [
+     {
+      "name": "ryggen",
+      "lat": 61.3995,
+      "lng": 6.216,
+      "elevation_m": 645.6
+     },
+     {
+      "name": "ryggen",
+      "lat": 61.396,
+      "lng": 6.208,
+      "elevation_m": 694.9
+     },
+     {
+      "name": "nord for Svartenova",
+      "lat": 61.3925,
+      "lng": 6.1985,
+      "elevation_m": 735.9
+     },
+     {
+      "name": "Jakobskardet",
+      "lat": 61.38875,
+      "lng": 6.1852,
+      "elevation_m": 852.8
+     },
+     {
+      "name": "ryggen sørover",
+      "lat": 61.384,
+      "lng": 6.187,
+      "elevation_m": 908.1
+     },
+     {
+      "name": "ryggen sørover",
+      "lat": 61.379,
+      "lng": 6.185,
+      "elevation_m": 986.5
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: bratteste parti er kort, 26–30 grader mellom 575 og 600 moh., like over fjellstova; resten er en lang avrundet rygg i oversiktlig terreng. Ryggen er snaufjell uten ly og orienteringen i skodde er det som teller. Nedkjøringa går vanligvis samme vei."
+   }
+  ]
  }
 }
