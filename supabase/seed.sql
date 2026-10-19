@@ -197,7 +197,7 @@ values
   ('ranten', 'Ranten', 'Norefjell', 60.30259, 9.41922, 1416, 530, '3–5 t', 2, 'S', 'jan–apr', '530 høydemeter fra Tempelseter om stikrysset på Raudmyra og vestover opp på den taggete ryggen Kittelsen malte som Soria Moria.', true),
   ('hogevarde', 'Høgevarde', 'Norefjell', 60.2972, 9.46662, 1461, 600, '3–5 t', 1, 'SV', 'jan–apr', '600 høydemeter fra Tempelseter opp den oppstakede løypa til DNT-hytta på 1397, og de siste 560 metrene ut på ryggen til sikteplata.', true),
   ('gygrastolen', 'Gygrastolen', 'Hardanger', 60.05949, 6.16031, 1347, 1270, '5–7 t', 3, 'N', 'feb–apr', '1270 høydemeter fra fjorden i Ænes opp ryggen over Gygrastølvatnet, rett mot Folgefonna.', true),
-  ('mellomkollen', 'Mellomkollen', 'Oslo', 60.0506, 10.76836, 537, 400, '2–4 t', 1, 'SØ', 'des–mar', '400 høydemeter fra bussen på Skar: over Skarselva og gjennom skogen i Maridalsalpene til Mellomkollen, den høyeste kollen i denne delen av Nordmarka — en topptur innenfor bygrensa.', true),
+  ('mellomkollen', 'Mellomkollen', 'Oslo', 60.0506, 10.76836, 537, 410, '2–4 t', 1, 'SØ', 'des–mar', '410 høydemeter fra bussen på Skar: over Skarselva og gjennom skogen i Maridalsalpene til Mellomkollen, den høyeste kollen i denne delen av Nordmarka — en topptur innenfor bygrensa.', true),
   ('juklavasstinden', 'Juklavasstinden', 'Hardanger', 60.00853, 6.13296, 1361, 1340, '6–8 t', 3, 'NV', 'mar–mai', '1340 høydemeter fra Myrdalsvatnet: opp ryggen, ned mot Møsetjørna og opp nordryggen til en skavlet topp.', true),
   ('melderskin',      'Melderskin',      'Hardanger',  60.00623,  6.08261, 1426, 1270, '6–8 t', 3, 'V',  'feb–mai', 'Rosendalsalpenes storslåtte klassiker, fra sjøen til 1426 moh.', true),
   ('englafjell', 'Englafjell', 'Hardanger', 59.89637, 5.87533, 1200, 1240, '6–8 t', 3, 'N', 'jan–apr', '1240 høydemeter fra Musland i Uskedalen: traktorvei og merket sti, over dalen, opp til Såta og sørover den bratte ryggen — med skavlene mot Limomnen som følge til topps.', true),
@@ -5166,9 +5166,9 @@ where slug = 'gygrastolen';
 update public.tk_tours set
   description_up   = 'Bussen stopper ved Skar utfartsparkering, og linja starter like ved, på 186 moh. Første del går ned: langs Maridalsveien og over Skarselva på Vaggesteinbrua, der vegen ligger på 160 moh, forbi Nedre Vaggestein og østover til Kroken på 183. Ut.no-sporet går fra parkeringa via Nedre Vaggestein og Kroken før det svinger nordover, men har bare en rett strek over elva; vegen over Vaggesteinbrua er der du faktisk kommer over.
 
-Fra Kroken går linja nordover. Bandet fra 100 til 200 moh måler 0,6 grader over 1353 meter grunn — vegen og flata — og fra 200 til 300 moh 6,7 grader over 857 meter, opp til Rollveien på 301 moh.
+Fra Kroken går linja nordover over jordet til skogsbilvegen, vestover på den og så nordover på vegen gjennom tunet på Bergerud, der Rollveien tar over. Hold deg på vegen forbi husene. Bandet fra 100 til 200 moh måler 0,6 grader over 1397 meter grunn — vegen og flata — og fra 200 til 300 moh 7,1 grader over 817 meter, langs Rollveien opp til 301 moh.
 
-Etter Rollveien begynner lia mot Jondalen, og herfra er det den samme rytmen til toppen: korte kneiker og flate partier. Bandet fra 300 til 400 moh måler 7,3 grader i snitt. Bandet fra 400 til 500 moh måler 6,8 grader. Snittet skjuler terrenget. Innenfor 50 meter av linja står knauser på 40 til 55 grader mange steder, og det bratteste 30-metersvinduet på selve linja, 22,9 grader, ligger mellom 431 og 445 moh i lia over Jondalen.
+Etter Rollveien begynner lia mot Jondalen, og herfra er det den samme rytmen til toppen: korte kneiker og flate partier. Bandet fra 300 til 400 moh måler 6,9 grader i snitt. Bandet fra 400 til 500 moh måler 6,7 grader. Snittet skjuler terrenget. Innenfor 50 meter av linja står knauser på 40 til 55 grader mange steder, og det bratteste 30-metersvinduet på selve linja, 20,3 grader, ligger mellom 300 og 314 moh, i den første kneika etter Rollveien.
 
 Linja passerer 270 meter vest for Midtkollen og går rett nord mot toppen. På det siste stykket går den forbi et stup OpenStreetMap kartfester 49 meter fra linja, og midten av Svartputten ligger 205 meter øst. Toppen, 537 moh, er skogkledd; ut.no beskriver utsikten derfra mot Lillomarka, Maridalsvannet og Oslofjorden i det fjerne.',
   description_down = 'Nedkjøringa er vanskeligere enn oppturen, og kilden sier det rett ut: «Nedkjøringen kan fort bli ganske teknisk og byksete om man ikke har sett seg ut noen åpne felt på forkant.» Rådet er å se etter åpne skogsfelt på veg opp, og ellers følge sommerstiene — kilden nevner den blåmerkede ned til Øyungen, som tar deg til et annet sted enn bussen. Ut.no-sporet selv kjører samme side ned til 461 moh, går opp igjen én gang, og slutter under toppen.
@@ -5177,7 +5177,7 @@ Mellomkollen er slak på toppen — 3,3 til 11,6 grader i snitt på alle sider o
   avalanche_notes  = jsonb_build_array(
     jsonb_build_object(
       'title', 'Ruta',
-      'body',  'Bratteste sammenhengende parti på linja er 22,9 grader mellom 431 og 445 moh, og bratteste hundremeteren er 300 til 400 moh med 7,3 grader. Etter jordene ved Kroken er det skog hele vegen, til og med 537 moh.'
+      'body',  'Bratteste sammenhengende parti på linja er 20,3 grader mellom 300 og 314 moh, og bratteste hundremeteren er fra 500 moh til toppen med 7,3 grader. Etter jordene ved Kroken og tunet på Bergerud er det skog hele vegen, til og med 537 moh.'
     ),
     jsonb_build_object(
       'title', 'Terrenget utenfor',

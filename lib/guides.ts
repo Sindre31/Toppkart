@@ -6534,11 +6534,11 @@ export const GUIDES: Record<string, TourGuide> = {
   mellomkollen: {
     slug: "mellomkollen",
     intro:
-      "398 høydemeter på 4,11 km fra Skar: langs Maridalsveien over Skarselva, et flatt stykke langs vegen og sporene, og så skog hele vegen til Mellomkollen på 537 moh — den høyeste kollen i denne delen av Nordmarka. Bratteste sammenhengende parti er 22,9 grader mellom 431 og 445 moh, men det som gjør turen krevende er ikke hellinga: det er krattet, knausene og en nedkjøring kilden kaller «byksete».",
+      "408 høydemeter på 4,16 km fra Skar: langs Maridalsveien over Skarselva, et flatt stykke langs vegen og sporene, og så skog hele vegen til Mellomkollen på 537 moh — den høyeste kollen i denne delen av Nordmarka. Bratteste sammenhengende parti er 20,3 grader mellom 300 og 314 moh, men det som gjør turen krevende er ikke hellinga: det er krattet, knausene og en nedkjøring kilden kaller «byksete».",
     ascent: [
       "Bussen stopper ved Skar utfartsparkering, og linja starter like ved, på 186 moh. Første del går ned: langs Maridalsveien og over Skarselva på Vaggesteinbrua, der vegen ligger på 160 moh, forbi Nedre Vaggestein og østover til Kroken på 183. Ut.no-sporet går fra parkeringa via Nedre Vaggestein og Kroken før det svinger nordover, men har bare en rett strek over elva; vegen over Vaggesteinbrua er der du faktisk kommer over.",
-      "Fra Kroken går linja nordover. Bandet fra 100 til 200 moh måler 0,6 grader over 1353 meter grunn — vegen og flata — og fra 200 til 300 moh 6,7 grader over 857 meter, opp til Rollveien på 301 moh.",
-      "Etter Rollveien begynner lia mot Jondalen, og herfra er det den samme rytmen til toppen: korte kneiker og flate partier. Bandet fra 300 til 400 moh måler 7,3 grader i snitt. Bandet fra 400 til 500 moh måler 6,8 grader. Snittet skjuler terrenget. Innenfor 50 meter av linja står knauser på 40 til 55 grader mange steder, og det bratteste 30-metersvinduet på selve linja, 22,9 grader, ligger mellom 431 og 445 moh i lia over Jondalen.",
+      "Fra Kroken går linja nordover over jordet til skogsbilvegen, vestover på den og så nordover på vegen gjennom tunet på Bergerud, der Rollveien tar over. Hold deg på vegen forbi husene. Bandet fra 100 til 200 moh måler 0,6 grader over 1397 meter grunn — vegen og flata — og fra 200 til 300 moh 7,1 grader over 817 meter, langs Rollveien opp til 301 moh.",
+      "Etter Rollveien begynner lia mot Jondalen, og herfra er det den samme rytmen til toppen: korte kneiker og flate partier. Bandet fra 300 til 400 moh måler 6,9 grader i snitt. Bandet fra 400 til 500 moh måler 6,7 grader. Snittet skjuler terrenget. Innenfor 50 meter av linja står knauser på 40 til 55 grader mange steder, og det bratteste 30-metersvinduet på selve linja, 20,3 grader, ligger mellom 300 og 314 moh, i den første kneika etter Rollveien.",
       "Linja passerer 270 meter vest for Midtkollen og går rett nord mot toppen. På det siste stykket går den forbi et stup OpenStreetMap kartfester 49 meter fra linja, og midten av Svartputten ligger 205 meter øst. Toppen, 537 moh, er skogkledd; ut.no beskriver utsikten derfra mot Lillomarka, Maridalsvannet og Oslofjorden i det fjerne.",
     ],
     descent: [
@@ -6548,7 +6548,7 @@ export const GUIDES: Record<string, TourGuide> = {
     avalanche: [
       {
         title: "Ruta",
-        body: "Bratteste sammenhengende parti på linja er 22,9 grader mellom 431 og 445 moh, og bratteste hundremeteren er 300 til 400 moh med 7,3 grader. Etter jordene ved Kroken er det skog hele vegen, til og med 537 moh.",
+        body: "Bratteste sammenhengende parti på linja er 20,3 grader mellom 300 og 314 moh, og bratteste hundremeteren er fra 500 moh til toppen med 7,3 grader. Etter jordene ved Kroken og tunet på Bergerud er det skog hele vegen, til og med 537 moh.",
       },
       {
         title: "Terrenget utenfor",
@@ -6560,11 +6560,11 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,187 L20,190 L46,195 L66,198 L86,192 L105,191 L125,188 L151,184 L178,182 L200,180 L217,175 L237,171 L257,160 L276,145 L300,134 L317,132 L335,130 L355,130 L374,132 L388,124 L401,114 L427,93 L447,81 L467,76 L480,69 L498,57 L519,52 L539,41 L557,42 L578,25 L600,18",
+      path: "M0,188 L14,190 L39,195 L53,198 L78,195 L95,193 L114,190 L130,187 L150,187 L169,184 L189,183 L210,180 L227,175 L247,169 L266,156 L286,143 L305,134 L325,133 L344,130 L364,130 L377,133 L392,124 L409,109 L431,93 L455,80 L471,77 L483,69 L500,58 L525,49 L546,43 L559,41 L579,25 L600,18",
       startLabel: "186 moh",
       endLabel: "537 moh",
-      distanceLabel: "4,1 km",
-      caption: "398 høydemeter og 4,11 km fra Skar, i skog fra Kroken til toppen, med bratteste hundremeteren mellom 300 og 400 moh.",
+      distanceLabel: "4,2 km",
+      caption: "408 høydemeter og 4,16 km fra Skar, i skog fra Bergerud til toppen, med bratteste hundremeteren fra 500 moh til toppen.",
     },
   },
   juklavasstinden: {

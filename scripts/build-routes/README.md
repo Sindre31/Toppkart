@@ -6488,6 +6488,27 @@ unsourced numbers, 12 band claims all agreeing — `check_treeline`,
 `check_steepness`, `check_gain` and `check_ground` with nothing to look at, and
 `npm run typecheck`, `lint`, `test` and `build`.
 
+### Mellomkollen went through a house at Bergerud
+
+Between Kroken and Rollveien the corridor had no waypoint, so the router drew a
+straight line across the fields, and that line went through the house
+`way/100868266` and the shed `way/232381072` at Bergerud. DTM1 does not know about
+buildings, and `check_ground` looks for water and trails, not houses. The ut.no
+track goes round them: north from Kroken to the forest road (`way/369790069`),
+west along it, then north on the road through the yard (`way/8101527`) to where
+Rollveien (`way/130448611`) begins. The corridor now has five waypoints along
+that way. The re-routed line keeps within 3–7 m of the road from the forest road
+to Rollveien, and no building lies on it: the nearest is 5 m away.
+
+The line is now 4158 m with 408 m of climbing, against 4109 m and 398 m before,
+so the card goes from 400 to 410. Above Rollveien the geometry is unchanged
+within 8 m. The vertices still landed a few metres differently, though, and the
+steepest 30 m window moved: 20.3° between 300 and 314 m, where it had been
+22.9° between 431 and 445. The steepest band is now 500 m to the top at 7.3°.
+The guide's numbers were rewritten to match the new line. `check_guides`,
+`check_bands`, `check_ground`, `check_tours` and `check_routes` are clean for the
+tour.
+
 ## Network
 
 Everything is public and unauthenticated:

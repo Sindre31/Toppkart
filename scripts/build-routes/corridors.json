@@ -11259,6 +11259,36 @@
       "elevation_m": 183.0
      },
      {
+      "name": "skogsbilvegen øst for Bergerud",
+      "lat": 60.02672,
+      "lng": 10.787,
+      "elevation_m": 194.1
+     },
+     {
+      "name": "vegen inn på Bergerud",
+      "lat": 60.02679,
+      "lng": 10.78562,
+      "elevation_m": 187.4
+     },
+     {
+      "name": "vegen forbi Bergerud",
+      "lat": 60.02768,
+      "lng": 10.78524,
+      "elevation_m": 194.4
+     },
+     {
+      "name": "vegen nord for Bergerud",
+      "lat": 60.02835,
+      "lng": 10.78481,
+      "elevation_m": 196.9
+     },
+     {
+      "name": "der Rollveien begynner",
+      "lat": 60.02925,
+      "lng": 10.78403,
+      "elevation_m": 197.0
+     },
+     {
       "name": "skogen nord for Kroken",
       "lat": 60.03077,
       "lng": 10.78321,

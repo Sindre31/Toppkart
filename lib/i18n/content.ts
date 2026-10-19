@@ -411,7 +411,7 @@ export const TOUR_TEASER_EN: Record<string, string> = {
   heddersfjell:
     "410 metres of ascent from Gaustabanen: along the ski track, across the ice of Heddersvatn past the point and up the west side to Blånipa — the highest mountain between Tuddal and Tinnsjå, with Gaustatoppen at your back.",
   mellomkollen:
-    "400 metres of ascent from the bus stop at Skar: over Skarselva and up through the forest of the Maridalen “Alps” to Mellomkollen, the highest hill in this part of Nordmarka — a ski tour inside the city limits.",
+    "410 metres of ascent from the bus stop at Skar: over Skarselva and up through the forest of the Maridalen “Alps” to Mellomkollen, the highest hill in this part of Nordmarka — a ski tour inside the city limits.",
 
 };
 
@@ -6626,11 +6626,11 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
   },
   mellomkollen: {
     intro:
-      "398 metres of climbing over 4.11 km from Skar: along Maridalsveien over Skarselva, a flat stretch along the road and the tracks, and then forest all the way to Mellomkollen at 537 m — the highest hill in this part of Nordmarka. The steepest sustained section is 22.9 degrees between 431 and 445 m, but what makes the tour hard is not the gradient: it is the thickets, the knolls and a descent the source calls “bumpy”.",
+      "408 metres of climbing over 4.16 km from Skar: along Maridalsveien over Skarselva, a flat stretch along the road and the tracks, and then forest all the way to Mellomkollen at 537 m — the highest hill in this part of Nordmarka. The steepest sustained section is 20.3 degrees between 300 and 314 m, but what makes the tour hard is not the gradient: it is the thickets, the knolls and a descent the source calls “bumpy”.",
     ascent: [
       "The bus stops at the Skar car park, and the line starts right by it, at 186 m. The first part goes down: along Maridalsveien and over Skarselva on Vaggesteinbrua, where the road sits at 160 m, past Nedre Vaggestein and east to Kroken at 183. The ut.no track goes from the car park via Nedre Vaggestein and Kroken before it turns north, but it only draws a straight line over the river; the road over Vaggesteinbrua is where you actually get across.",
-      "From Kroken the line heads north. The band from 100 to 200 m measures 0.6 degrees over 1353 metres of ground — the road and the flat — and from 200 to 300 m 6.7 degrees over 857 metres, up to Rollveien at 301 m.",
-      "After Rollveien the slope towards Jondalen begins, and from here it is the same rhythm to the top: short pitches and flat stretches. The band from 300 to 400 m averages 7.3 degrees. The band from 400 to 500 m averages 6.8 degrees. The average hides the ground. Within 50 metres of the line there are knolls of 40 to 55 degrees in many places, and the steepest 30-metre window on the line itself, 22.9 degrees, is between 431 and 445 m on the slope above Jondalen.",
+      "From Kroken the line heads north over the field to the forest road, west along it and then north on the road through the yard at Bergerud, where Rollveien takes over. Stay on the road past the houses. The band from 100 to 200 m measures 0.6 degrees over 1397 metres of ground — the road and the flat — and from 200 to 300 m 7.1 degrees over 817 metres, along Rollveien up to 301 m.",
+      "After Rollveien the slope towards Jondalen begins, and from here it is the same rhythm to the top: short pitches and flat stretches. The band from 300 to 400 m averages 6.9 degrees. The band from 400 to 500 m averages 6.7 degrees. The average hides the ground. Within 50 metres of the line there are knolls of 40 to 55 degrees in many places, and the steepest 30-metre window on the line itself, 20.3 degrees, is between 300 and 314 m, on the first pitch after Rollveien.",
       "The line passes 270 metres west of Midtkollen and heads due north for the top. On the last stretch it passes a cliff OpenStreetMap maps 49 metres from the line, and the middle of Svartputten lies 205 metres east. The summit, 537 m, is wooded; ut.no describes the view from it towards Lillomarka, Maridalsvannet and the Oslofjord in the distance.",
     ],
     descent: [
@@ -6640,7 +6640,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
     avalanche: [
       {
         title: "The route",
-        body: "The steepest sustained section on the line is 22.9 degrees between 431 and 445 m, and the steepest hundred-metre band is 300 to 400 m at 7.3 degrees. After the fields at Kroken it is forest the whole way, up to and including 537 m.",
+        body: "The steepest sustained section on the line is 20.3 degrees between 300 and 314 m, and the steepest hundred-metre band is from 500 m to the top at 7.3 degrees. After the fields at Kroken and the yard at Bergerud it is forest the whole way, up to and including 537 m.",
       },
       {
         title: "The terrain around it",
@@ -6654,8 +6654,8 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
     elevationProfile: {
       startLabel: "186 m",
       endLabel: "537 m",
-      distanceLabel: "4.1 km",
-      caption: "398 metres of climbing and 4.11 km from Skar, in forest from Kroken to the summit, with the steepest hundred-metre band between 300 and 400 m.",
+      distanceLabel: "4.2 km",
+      caption: "408 metres of climbing and 4.16 km from Skar, in forest from Bergerud to the summit, with the steepest hundred-metre band from 500 m to the top.",
     },
   },
   juklavasstinden: {
