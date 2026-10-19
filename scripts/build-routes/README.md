@@ -6594,6 +6594,118 @@ says), `check_routes`, `check_tours` and `check_geometry` clean on 191 tours and
 agreeing), `check_treeline`, `check_gain` and `check_steepness` with nothing to
 look at, and `npm run typecheck`, `lint`, `test` and `build`.
 
+## The Haukeli and Røldal round
+
+Four tours from Fri Flyt's *Toppturer i Sørvest*, three from the E134 by
+Haukeliseter and one from the village in Røldal. 195 tours, 233 routes. Three
+summits answer to **Hardanger** (3034) and Vesle Nup to **Vest-Telemark**
+(3035), both A-regions — Vesle Nup was assumed to be Hardanger until the
+region was queried.
+
+| tour | start | summit | gain | km | steepest 100 m band | steepest 30 m | grade |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Fjetlandsnuten | 396 | 1285 | 900 | 5.67 | 13.9° | 25.0° | 2 |
+| Stavsnuten | 1054 | 1661 | 612 | 3.60 | 20.2° | 23.8° | 2 |
+| Vesle Nup | 982 | 1510 | 595 | 5.93 | 7.8° | 27.1° | 1 |
+| Sveigen | 994 | 1543 | 556 | 2.61 | 18.6° | 27.2° | 3 |
+
+### What was turned away
+
+The corpus index from the Sunnfjord round put Odda–Røldal–Haukeli at about 30
+Fri Flyt pages for peaks the app did not carry, and no tour on the map. Most
+did not pass the round's four conditions. Breifonn, Søre Tinden, Mælen,
+Hegerlandsnuten and Holmansnuten start on the Rv520 over Røldalsfjellet,
+which is closed in winter. Gauthellernuten and Røldalsåta are shuttle tours
+that need a car at both ends. Kistenuten, Store Nup, Verjesteinsnuten and
+Dyrskardsnuten are steeper than a guide with no surveyed line should send
+anyone up. Monsaskukken, Odlandnosa, Kløvsnuten, Havrenos and Søre
+Krossfonnuten had no readable second source for the line.
+
+### Sveigen ends on the top the register names
+
+Fri Flyt's line goes «Rett opp fra parkeringen … et lite skar mellom Sveigen
+(1543moh.) og p1490» and west to the top; the register puts Sveigen on that
+north top, 1543.4 on DTM1. Ut.no gives 1561 and goes to a south point 659 m
+away that reads 1560.0, behind a dip a straight line between them reads at
+1512.6. The tour ends where its primary source ends and the guide says where
+the massif's high point is. Ut.no confirms only that the north side goes from
+Pepparsteinen and «har så å si ingen anmarsj», not the gully, so the record is
+`confidence: medium`. It is grade 3, not Fri Flyt's «Moderat» 2: ut.no calls
+the whole mountain potential avalanche terrain in winter, and the ground under
+the line is 35° or steeper for 112 m between 1084 and 1130 m, straight above
+the road.
+
+### Two lines that went onto water
+
+`check_ground.py` caught both on the first routing. **Fjetlandsnuten ran 393 m
+on Røldalsvatnet**, a regulated lake at 380 m, from the end of Odlandsvegen
+south — the router found the flat ice cheaper than the hillside. **Vesle Nup
+ran 180 m over a tarn at 1185 m** north of point 1206, because the corridor
+point meant to sit «mellom punkt 1206 og Loftdokkstjønn» sat north-east of
+1206 instead. `avoidWater` was tried first and the re-route did not finish
+inside 25 minutes; corridor points along the access road and a point on the
+marked path south-east of 1206 took both lines off the water instead, and both
+now pass.
+
+### The access road up Tveitlia
+
+Both Fjetlandsnuten sources go up the access road from the power station in
+Tveitlia: ut.no «til litt forbi fjerde hårnålssving», then north through «henget
+ca 750 moh» where it asks for an avalanche assessment. The road is
+Blåbergdalsvegen (OSM way/782797255), which starts at the trailhead on
+Odlandsvegen and runs through all four hairpins; the corridor follows it with a
+point every 120 m or so, and the line is within 33 m of it to the fourth bend.
+Three legs point away from the summit — `check_new_corridors.py` lists them,
+and the record says why they stand. Above the step the line follows
+Gjertrabekk, Fri Flyt's «vestvendte bekken», on its north side from 866 m —
+and lies south of it below that, which is the side ut.no says to keep to on the
+way down.
+
+### The independent read
+
+The second reader found twelve things and three of them were serious. **The
+first draft said Fjetlandsnuten's access road was not in OSM and drew the line
+beside it, after ut.no's track** — it is Blåbergdalsvegen, starting at the very
+node the corridor started on, and the eight «stretches of 35° or more» the
+guide warned about were the road's cuttings and fill on the 5 m grid. The
+corridor now follows the road (5624 m +895 → 5673 m +900; the card stays at
+900), the guide calls the road by its name, and what is measured instead is
+the wooded hillside above it: 32.5° on average over 400 m, over 40° in places.
+**The Gjertrabekk warning was handled indirectly and Gravgjel was placed on the
+wrong face.** The line follows the north bank from 866 m to the top, with
+terrain of 40° or more 20–170 m west and north-west of it between 849 and
+997 m; the guide now says to be on the south side by 866 m at the latest, and
+that Fri Flyt's directions to the Gravgjel couloir follow this line down to
+1029 m with steep ground north of it — not, as the draft had it, on the summit's
+north and north-west faces. **Stavsnuten's last 150 m ran along the edge of the
+south face**, with 37–56° cells 10–30 m from the line; two points from ut.no's
+track move it onto the north side of the plateau (3483 m +610 → 3595 m +612,
+the card stays at 610), and the guide gives the face below the cairn, 38–43°
+in the first 90 m.
+
+The rest were smaller and are all fixed: Sveigen's «walls of the gully» were
+single steep cells on alternating sides, and «the steepest band is the first»
+was not true; Pepparsteinen is a stone on the slope, not the rest area, and
+the north couloir is now located, reached from Dyrskaret; Vesle Nup's
+«Fri Flyt warns about snorkelføre» was not in the source and is now quoted as
+written, and the lodge routes meet it north-west of Loftsdokktjønn, not at it;
+1567 is west of Stavsnuten's line, not north-west, two flank means were
+swapped, and Fri Flyt's «litt avblåst» had lost its «litt». Each record's
+`gradeReason` now gives ut.no's grade — «Krevende» for three of the four,
+«Middels» for Vesle Nup — and why the card differs.
+
+### What ran
+
+`check_new_corridors` (Pepparsteinen and the Røldal start have no mapped car
+park, Fjetlandsnuten's hairpins head away from the summit, and Overpass
+answered 500 on two trailheads — each is said in the record),
+`check_routes`, `check_tours` and `check_geometry` clean on 195 tours and
+233 routes, `check_ground` clean on all four, `check_guides` and `check_bands`
+clean (0 unsourced numbers, 28 band claims all agreeing), `check_treeline` and
+`check_gain` with nothing to look at, `check_steepness` listing only Vesle Nup,
+whose guide quotes the 5 m window, and `npm run typecheck`, `lint`, `test` and
+`build`.
+
 ## Network
 
 Everything is public and unauthenticated:

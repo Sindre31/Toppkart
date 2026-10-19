@@ -2701,5 +2701,128 @@
       "figure": "20 m og 33 m med bakke på 35° eller brattere ved 702–713 moh (1,22–1,29 km, bratteste celle 54°), 36 m ved 732–735 moh (1,46 km, 42°) og 17 m ved 906–908 moh (3,63 km, 40°)",
       "how": "DTM1 i 5 m rutenett (geo.dem_tile), helling per celle med numpy.gradient, lest hver 5. meter langs den routede linja; oppgitt er hvert sammenhengende strekk på minst 15 m der bakken under linja er 35° eller brattere, med lengde, høyde og bratteste celle."
     }
+  ],
+  "stavsnuten": [
+    {
+      "what": "Toppen, alle sider",
+      "figure": "N 13,9° i snitt med 25,7° 440–500 m ut; NØ 31,8° 420–480 m ut; Ø 19,6°; SØ 20,6°; S 18,4° i snitt med 46,9° 410–470 m ut; SV 33,4° 20–80 m ut; V 9,9° og NV 9,3° i snitt",
+      "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+    },
+    {
+      "what": "Sørsida rett under varden",
+      "figure": "S 38,4° 30–90 m ut, 195° 43,3° 20–80 m ut, 210° 40,6° 10–70 m ut — 38,4 til 43,3° 10 til 90 m fra varden, 31,8–33,4° i snitt over de første 120 m; første 90 m",
+      "how": "flank_probe.py fra toppkoordinaten i summits.json, peiling 180, 195 og 210, --out 120 --step 10, over DTM1."
+    },
+    {
+      "what": "Undertoppene 1603 og 1567",
+      "figure": "1603 (OSM node/11398148399): S 28,5° i snitt over 300 m med 51,1° 50–110 m ut, SV 45,7° 130–190 m ut, V 26,7°; 1567 (node/11398148986): Ø 35,2° 180–240 m ut, SØ 41,4° 80–140 m ut, S 61,2° 280–340 m ut",
+      "how": "flank_probe.py fra OSM-punktet, --out 300 og 400, --step 10, over DTM1."
+    },
+    {
+      "what": "Langs linja",
+      "figure": "Holebudalen nådd ved 1265 m (1,27 km), 1141 moh; inn mot bollen ved 2029 m (2,03 km), 1256 moh; platået ved 3245 m (3,25 km), 1608 moh; varden ved 3595 m, 350 m lenger inne; 1567 ligger 408 m vest for linja (peiling 279), 1603 279 m øst (peiling 95); Midtlæger 558 m fra linja; Holbubekk 1 km vest for den vestre tunnelmunningen",
+      "how": "Nærmeste punkt på den routede linja i lib/routes.ts til OSM-/registerpunktet, med avstand langs ruta og DTM1-høyden der."
+    },
+    {
+      "what": "Bakken ved siden av linja",
+      "figure": "celler på 45,5°, 40,3° og 44,5° 35–62 m fra linja ved 1383, 1492 og 1540 moh (40 til 46°); 53,2° 61 m sørøst for linja ved 1640 moh (3385 m); ingen sammenhengende strekk på 15 m med bakke på 35° eller brattere under linja, bratteste celle 39,4°",
+      "how": "DTM1 som GeoTIFF i 5 m rutenett (geo.dem_tile) langs linja, helling per celle med numpy.gradient; for hvert sjette punkt på den routede linja er bratteste celle innenfor 50 m oppgitt med avstand og peiling fra linja. Strekkene under linja: DTM1 i 5 m rutenett (geo.dem_tile), helling per celle med numpy.gradient, lest hver 5. meter langs den routede linja; oppgitt er hvert sammenhengende strekk på minst 15 m der bakken under linja er 35° eller brattere, med lengde, høyde og bratteste celle."
+    },
+    {
+      "what": "Varslingsregionen toppkoordinaten ligger i",
+      "figure": "Hardanger (region 3034), regiontype A — varslet daglig i sesongen",
+      "how": "Spurt Varsom/NVE på samme endepunkt som appen bruker: api01.nve.no/hydrology/forecast/avalanche/v6.3.0/api/AvalancheWarningByCoordinates/Simple/<lat>/<lng>/1/<dato>/<dato> med toppkoordinaten fra summits.json."
+    }
+  ],
+  "sveigen": [
+    {
+      "what": "Toppen, alle sider",
+      "figure": "N 6,6°, NØ 7,2°, Ø 11,1°, SØ 7,6°, S 0,3°, SV 7,2°, V 6,2° og NV 7,9° i snitt over 500 m; bratteste 60-metersvindu 19,6° (Ø, 440–500 m ut)",
+      "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+    },
+    {
+      "what": "Sørpunktet",
+      "figure": "OSM node/11147841832 («Sveigen», ele 1561) leser 1560,0 moh på DTM1, 659 m sør for toppen; rett linje mellom de to punktene er lavest 1512,6 moh",
+      "how": "DTM1-punktoppslag (ws.geonorge.no/hoydedata/v1/punkt) på OSM-punktet og 41 punkter langs rett linje fra toppkoordinaten i summits.json."
+    },
+    {
+      "what": "Langs linja",
+      "figure": "skaret fra 269 m (1051 moh); der det flater ut ved 1587 m (1,59 km), 1400 moh; toppen ved 2612 m; den vestre munningen av rasoverbygget til Haukelitunnelen 173 m fra linja; Pepparsteinen (stedsnavnregisteret, Stein, 59.8472/7.08783) 33 m fra linja ved 452 m (0,45 km), 1114 moh",
+      "how": "Nærmeste punkt på den routede linja i lib/routes.ts til OSM-/registerpunktet, med avstand langs ruta og DTM1-høyden der."
+    },
+    {
+      "what": "Bakken under og ved siden av linja i skaret",
+      "figure": "22 m (1084–1093 moh, bratteste celle 40°), 62 m (1098–1116 moh, 54°) og 28 m (1120–1130 moh, 49°) med bakke på 35° eller brattere under linja, til sammen 112 m; celler på 51,0–62,1° 42–64 m fra linja mellom 1074 og 1304 moh",
+      "how": "DTM1 i 5 m rutenett (geo.dem_tile), helling per celle med numpy.gradient, lest hver 5. meter langs den routede linja; oppgitt er hvert sammenhengende strekk på minst 15 m der bakken under linja er 35° eller brattere, med lengde, høyde og bratteste celle. Cellene ved siden av: DTM1 som GeoTIFF i 5 m rutenett (geo.dem_tile) langs linja, helling per celle med numpy.gradient; for hvert sjette punkt på den routede linja er bratteste celle innenfor 50 m oppgitt med avstand og peiling fra linja."
+    },
+    {
+      "what": "Varslingsregionen toppkoordinaten ligger i",
+      "figure": "Hardanger (region 3034), regiontype A — varslet daglig i sesongen",
+      "how": "Spurt Varsom/NVE på samme endepunkt som appen bruker: api01.nve.no/hydrology/forecast/avalanche/v6.3.0/api/AvalancheWarningByCoordinates/Simple/<lat>/<lng>/1/<dato>/<dato> med toppkoordinaten fra summits.json."
+    }
+  ],
+  "vesle-nup": [
+    {
+      "what": "Toppen, alle sider",
+      "figure": "N 19,5° i snitt med 52,5° 30–90 m ut; NØ 58,2° 10–70 m ut; Ø 57,1° 10–70 m ut; SØ 49,8° 10–70 m ut; S 38,8° 90–150 m ut; SV 34,6° 160–220 m ut; V 10,4° i snitt med 20,8° 440–500 m ut; NV 32,4° 350–410 m ut",
+      "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+    },
+    {
+      "what": "Langs linja",
+      "figure": "flata ved 1754 m (1,75 km), 1171 moh; punkt 1206 (OSM node/11384476617) 79 m nordvest for linja ved 2610 m (2,61 km), 1201 moh; linja går ned til 1168 moh ved 2910 m (2,91 km), 33 m lavere; Loftsdokktjønn 907 m sørøst; skaret ved 4443 m (4,44 km), 1352 moh; topp 1469 727 m nordvest; topp 1393 100 m nordøst for linja ved 4681 m; varden ved 5926 m, 1483 m (1,48 km) fra skaret; linja gir fra seg 67 m til sammen",
+      "how": "Nærmeste punkt på den routede linja i lib/routes.ts til OSM-/registerpunktet, med avstand langs ruta og DTM1-høyden der."
+    },
+    {
+      "what": "Bakken under linja",
+      "figure": "17 m med bakke på 35° eller brattere ved 1190–1198 moh (2,72 km, bratteste celle 42°); ingen andre strekk på 15 m",
+      "how": "DTM1 i 5 m rutenett (geo.dem_tile), helling per celle med numpy.gradient, lest hver 5. meter langs den routede linja; oppgitt er hvert sammenhengende strekk på minst 15 m der bakken under linja er 35° eller brattere, med lengde, høyde og bratteste celle."
+    },
+    {
+      "what": "Varslingsregionen toppkoordinaten ligger i",
+      "figure": "Vest-Telemark (region 3035), regiontype A — varslet daglig i sesongen",
+      "how": "Spurt Varsom/NVE på samme endepunkt som appen bruker: api01.nve.no/hydrology/forecast/avalanche/v6.3.0/api/AvalancheWarningByCoordinates/Simple/<lat>/<lng>/1/<dato>/<dato> med toppkoordinaten fra summits.json."
+    },
+    {
+      "what": "Bratteste 30-metersvindu over 5 m-profilen",
+      "figure": "27,1° mellom 1197 og 1179 moh, på vei ned i søkket sørøst for punkt 1206 (2,61–2,79 km); over linjas punkter er det 21,4° mellom 1479 og 1494 moh",
+      "how": "check_steepness.py: router.steepest_span over 5 m-profilen check_gain.py henter fra DTM1, sammenlignet med samme vindu over linjas punkter."
+    }
+  ],
+  "fjetlandsnuten": [
+    {
+      "what": "Toppen, alle sider",
+      "figure": "N 26,4° i snitt med 52,8° 300–360 m ut; NØ 14,3°; Ø 13,3°; SØ 14,6°; S 8,2° og SV 9,5° i snitt; V 19,0° i snitt med 35,8° 270–330 m ut; NV 33,9° i snitt med 54,7° 420–480 m ut",
+      "how": "flank_probe.py <lat> <lng> --out 500 --step 10 fra toppkoordinaten i summits.json, åtte peilinger over DTM1. Tallet er det bratteste 60-metersvinduet langs radialen."
+    },
+    {
+      "what": "Langs linja",
+      "figure": "Blåbergdalsvegen (OSM way/782797255) innenfor 33 m av linja fra start til 2,6 km; Tveita 132 m fra linja ved 769 m (0,77 km); hårnålssvingene ved 1006 m (1,01 km, 497 moh), 1515 m (1,52 km, 555), 2163 m (2,16 km, 623) og 2440 m (2,44 km, 656); forlater vegen og dreier nordover ved 2748 m (2,75 km, 700); henget ved 3018 m (3,02 km, 760); ut.no sitt startpunkt 193 m fra linjas start; masta (node/5583843559) 17 m fra linjas ende; 1,4 km før toppen er linja ved 1029 moh",
+      "how": "Nærmeste punkt på den routede linja i lib/routes.ts til OSM-/registerpunktet, med avstand langs ruta og DTM1-høyden der."
+    },
+    {
+      "what": "Lia over Blåbergdalsvegen",
+      "figure": "østover fra vegen ved 59.8165/6.8136, 437 moh: 692 moh 400 m ut, 255 m stigning, 32,5° i snitt; lokalt 44,3° og 47,1° 260 og 300 m ut (over 40° 260 til 300 m ut); terrengklasse Skog",
+      "how": "flank_probe.py 59.8165 6.8136 90 --out 400 --step 10 over DTM1."
+    },
+    {
+      "what": "Gjertrabekk",
+      "figure": "OSM way/353462824, som går gjennom stedsnavnregisterets Gjertrabekk (59.81506/6.81629). Linja er nord for bekken til 499 m (0,50 km, 446 moh), sør for den fra der til 3513 m (3,51 km), 866 moh, og nord for den eller i bekkefaret derfra (krysser ved 4737 og 4863 m); ved 4953 m (4,95 km), 1172 moh, er den 52 m fra øverste kartlagte punkt på bekken, 719 m før masta",
+      "how": "Linja i lib/routes.ts mot bekkens OSM-geometri: for hvert punkt på linja er bekkens nærmeste punkt i lengdegrad sammenlignet i breddegrad; skifte av fortegn er en kryssing."
+    },
+    {
+      "what": "Terrenget nordvest for linja ved Gjertrabekk",
+      "figure": "nærmeste celle på 40° eller brattere 20–170 m vest, nordvest og nord for linja mellom 849 og 997 moh (3,33–4,10 km); 56,4° 300 m nord for linja ved 1029 moh (4,28 km)",
+      "how": "DTM1 i 10 m rutenett (geo.dem_tile), helling per celle med numpy.gradient; for hvert tredje punkt på linja mellom 3,3 og 4,3 km er nærmeste celle på 40° eller mer søkt langs peilingene 270–360° i 10 m-steg."
+    },
+    {
+      "what": "Bakken under linja",
+      "figure": "vegskjæringer og fyllinger langs Blåbergdalsvegen: 17 m (405–406 moh, 54°), 21 m (441–445, 48°), 26 m (510–512, 42°), 45 m (521–535, 44°), 20 m (537–538, 40°) og 15 m (540–542, 42°) mellom 405 og 542 moh; 22 m (869–876 moh, 43°) der linja krysser Gjertrabekk ved 3,54 km",
+      "how": "DTM1 i 5 m rutenett (geo.dem_tile), helling per celle med numpy.gradient, lest hver 5. meter langs den routede linja; oppgitt er hvert sammenhengende strekk på minst 15 m der bakken under linja er 35° eller brattere, med lengde, høyde og bratteste celle."
+    },
+    {
+      "what": "Varslingsregionen toppkoordinaten ligger i",
+      "figure": "Hardanger (region 3034), regiontype A — varslet daglig i sesongen",
+      "how": "Spurt Varsom/NVE på samme endepunkt som appen bruker: api01.nve.no/hydrology/forecast/avalanche/v6.3.0/api/AvalancheWarningByCoordinates/Simple/<lat>/<lng>/1/<dato>/<dato> med toppkoordinaten fra summits.json."
+    }
   ]
 }

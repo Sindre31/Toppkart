@@ -11517,5 +11517,415 @@
     "notes": "Fri Flyt: bratteste parti er kort, 26–30 grader mellom 575 og 600 moh., like over fjellstova; resten er en lang avrundet rygg i oversiktlig terreng. Ryggen er snaufjell uten ly og orienteringen i skodde er det som teller. Nedkjøringa går vanligvis samme vei."
    }
   ]
+ },
+ "stavsnuten": {
+  "routes": [
+   {
+    "id": "holebudalen",
+    "name": "Via Holebudalen og bollen",
+    "description": "Fra Holbubekk langs bekkedalen inn Holebudalen, til venstre inn i bollen mellom undertoppene 1567 og 1603, opp på platået og slakt inn til varden",
+    "trailhead": {
+     "name": "Holbubekk",
+     "lat": 59.84441,
+     "lng": 6.97281,
+     "elevation_m": 1054.4,
+     "fullName": "Holbubekk"
+    },
+    "waypoints": [
+     {
+      "name": "bekkedalen",
+      "lat": 59.8447,
+      "lng": 6.978,
+      "elevation_m": 1073.9
+     },
+     {
+      "name": "bekkedalen",
+      "lat": 59.8445,
+      "lng": 6.9884,
+      "elevation_m": 1125.6
+     },
+     {
+      "name": "Holebudalen",
+      "lat": 59.8457,
+      "lng": 6.9941,
+      "elevation_m": 1139.7
+     },
+     {
+      "name": "Holebudalen",
+      "lat": 59.8479,
+      "lng": 7.0,
+      "elevation_m": 1207.3
+     },
+     {
+      "name": "inn mot bollen",
+      "lat": 59.8501,
+      "lng": 7.0034,
+      "elevation_m": 1254.9
+     },
+     {
+      "name": "bollen",
+      "lat": 59.8534,
+      "lng": 7.0027,
+      "elevation_m": 1364.1
+     },
+     {
+      "name": "vest for 1603",
+      "lat": 59.85741,
+      "lng": 7.00309,
+      "elevation_m": 1562.6
+     },
+     {
+      "name": "platået",
+      "lat": 59.85952,
+      "lng": 7.0053,
+      "elevation_m": 1603.2
+     },
+     {
+      "name": "platået, nord for sørkanten",
+      "lat": 59.86028,
+      "lng": 7.00847,
+      "elevation_m": 1650.6
+     },
+     {
+      "name": "inn mot varden",
+      "lat": 59.86019,
+      "lng": 7.00992,
+      "elevation_m": 1650.5
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Ut.no: hold til venstre for undertoppen 1603 — til høyre er det helninger over 30 grader som kan være skredutsatt — og i bollen går du gjennom utløpssoner, selv om løsneområdene kan unngås. På dager med dårlig sikt anbefaler ut.no å stoppe på platået. Fri Flyt: ved østlig vind kan Stavsnuten bli litt avblåst, og å ta begge toppene krever lett klatring og sikringsutstyr."
+   }
+  ]
+ },
+ "sveigen": {
+  "routes": [
+   {
+    "id": "nordskaret",
+    "name": "Skaret fra Pepparsteinen",
+    "description": "Fra Pepparsteinen ved østre munning av Haukelitunnelen rett opp skaret mellom Sveigen og p1490, og vestover mot toppen der det flater ut",
+    "trailhead": {
+     "name": "Pepparsteinen",
+     "lat": 59.84988,
+     "lng": 7.08859,
+     "elevation_m": 993.6,
+     "fullName": "Pepparsteinen"
+    },
+    "waypoints": [
+     {
+      "name": "skaret",
+      "lat": 59.848,
+      "lng": 7.09,
+      "elevation_m": 1050.5
+     },
+     {
+      "name": "skaret",
+      "lat": 59.845,
+      "lng": 7.092,
+      "elevation_m": 1235.2
+     },
+     {
+      "name": "skaret",
+      "lat": 59.843,
+      "lng": 7.093,
+      "elevation_m": 1360.0
+     },
+     {
+      "name": "der det flater ut",
+      "lat": 59.841,
+      "lng": 7.0935,
+      "elevation_m": 1398.2
+     },
+     {
+      "name": "vestover mot toppen",
+      "lat": 59.8395,
+      "lng": 7.088,
+      "elevation_m": 1437.7
+     },
+     {
+      "name": "vestover mot toppen",
+      "lat": 59.8375,
+      "lng": 7.084,
+      "elevation_m": 1497.3
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Ut.no: «Hele fjellet er et potensielt skredområde vinterstid, og på vår/sommer kan det være utglidningsfare om det er hardt føre.» Nordsiden er over 30 grader og mer skredutsatt enn østruta. Skaret ligger rett over E134 og parkeringa, så det er ingen anmarsj å bli kjent med snøen på. Nordrenna er en egen nedkjøring med høye kantvegger, 35 grader øverst."
+   }
+  ]
+ },
+ "vesle-nup": {
+  "routes": [
+   {
+    "id": "ulevaa",
+    "name": "Fra Ulevå",
+    "description": "Fra Ulevå opp bekkedalen til flata ved 1200 moh., mellom punkt 1206 og Loftsdokktjønn, opp skaret mellom Vesle Nup og topp 1469, og ryggen østover til varden",
+    "trailhead": {
+     "name": "Ulevå",
+     "lat": 59.84255,
+     "lng": 7.15919,
+     "elevation_m": 982.0,
+     "fullName": "Ulevå"
+    },
+    "waypoints": [
+     {
+      "name": "bekkedalen",
+      "lat": 59.8436,
+      "lng": 7.168,
+      "elevation_m": 1013.3
+     },
+     {
+      "name": "bekkedalen",
+      "lat": 59.8447,
+      "lng": 7.178,
+      "elevation_m": 1073.4
+     },
+     {
+      "name": "flata ved 1200",
+      "lat": 59.8455,
+      "lng": 7.188,
+      "elevation_m": 1170.5
+     },
+     {
+      "name": "sør for 1206",
+      "lat": 59.8436,
+      "lng": 7.196,
+      "elevation_m": 1192.6
+     },
+     {
+      "name": "mellom 1206 og Loftsdokktjønn",
+      "lat": 59.844,
+      "lng": 7.2062,
+      "elevation_m": 1170.6
+     },
+     {
+      "name": "mot skaret",
+      "lat": 59.8505,
+      "lng": 7.2064,
+      "elevation_m": 1216.2
+     },
+     {
+      "name": "mot skaret",
+      "lat": 59.8545,
+      "lng": 7.207,
+      "elevation_m": 1291.7
+     },
+     {
+      "name": "skaret mot 1469",
+      "lat": 59.85735,
+      "lng": 7.20824,
+      "elevation_m": 1352.5
+     },
+     {
+      "name": "ryggen østover",
+      "lat": 59.8563,
+      "lng": 7.214,
+      "elevation_m": 1352.2
+     },
+     {
+      "name": "ryggen østover",
+      "lat": 59.8569,
+      "lng": 7.2195,
+      "elevation_m": 1396.2
+     },
+     {
+      "name": "ryggen østover",
+      "lat": 59.8575,
+      "lng": 7.2245,
+      "elevation_m": 1439.5
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: bratteste punkt 25 grader, og turen passer særlig for nybegynnere. Hele turen går over snaufjell på høyfjellsplatået sør på Hardangervidda, uten ly og med få landemerker; i skodde er det navigasjonen som teller. Fri Flyt: «Det er en veldig populær tur på fjellski, men så lenge det ikke er snorkelføre gir den en flott opplevelse på randoutstyr også.»"
+   }
+  ]
+ },
+ "fjetlandsnuten": {
+  "routes": [
+   {
+    "id": "tveitlia",
+    "name": "Opp Tveitlia",
+    "description": "Fra krysset Odlandsvegen/Blåbergdalsvegen ved Røldal kraftverk opp Blåbergdalsvegen i Tveitlia forbi fjerde hårnålssving, nordover gjennom henget ved 750 moh. og langs Gjertrabekk mot masta på toppen",
+    "trailhead": {
+     "name": "Krysset Odlandsvegen/Blåbergdalsvegen",
+     "lat": 59.81916,
+     "lng": 6.81543,
+     "elevation_m": 395.6,
+     "fullName": "Krysset Odlandsvegen/Blåbergdalsvegen"
+    },
+    "waypoints": [
+     {
+      "name": "Blåbergdalsvegen",
+      "lat": 59.81804,
+      "lng": 6.81431,
+      "elevation_m": 411.0
+     },
+     {
+      "name": "Blåbergdalsvegen",
+      "lat": 59.81698,
+      "lng": 6.81373,
+      "elevation_m": 423.4
+     },
+     {
+      "name": "Blåbergdalsvegen",
+      "lat": 59.81593,
+      "lng": 6.81319,
+      "elevation_m": 437.5
+     },
+     {
+      "name": "Blåbergdalsvegen",
+      "lat": 59.81478,
+      "lng": 6.81332,
+      "elevation_m": 451.7
+     },
+     {
+      "name": "Blåbergdalsvegen",
+      "lat": 59.81349,
+      "lng": 6.81295,
+      "elevation_m": 469.9
+     },
+     {
+      "name": "Blåbergdalsvegen",
+      "lat": 59.81241,
+      "lng": 6.81253,
+      "elevation_m": 480.1
+     },
+     {
+      "name": "Blåbergdalsvegen",
+      "lat": 59.81122,
+      "lng": 6.81134,
+      "elevation_m": 489.0
+     },
+     {
+      "name": "første hårnålssving",
+      "lat": 59.81073,
+      "lng": 6.81117,
+      "elevation_m": 496.2
+     },
+     {
+      "name": "Blåbergdalsvegen",
+      "lat": 59.8115,
+      "lng": 6.81269,
+      "elevation_m": 511.9
+     },
+     {
+      "name": "Blåbergdalsvegen",
+      "lat": 59.81244,
+      "lng": 6.81441,
+      "elevation_m": 527.1
+     },
+     {
+      "name": "Blåbergdalsvegen",
+      "lat": 59.81333,
+      "lng": 6.81566,
+      "elevation_m": 539.6
+     },
+     {
+      "name": "andre hårnålssving",
+      "lat": 59.81426,
+      "lng": 6.81686,
+      "elevation_m": 553.7
+     },
+     {
+      "name": "Blåbergdalsvegen",
+      "lat": 59.81312,
+      "lng": 6.81649,
+      "elevation_m": 565.6
+     },
+     {
+      "name": "Blåbergdalsvegen",
+      "lat": 59.81203,
+      "lng": 6.81607,
+      "elevation_m": 577.7
+     },
+     {
+      "name": "Blåbergdalsvegen",
+      "lat": 59.81092,
+      "lng": 6.81604,
+      "elevation_m": 592.1
+     },
+     {
+      "name": "Blåbergdalsvegen",
+      "lat": 59.80981,
+      "lng": 6.81615,
+      "elevation_m": 604.7
+     },
+     {
+      "name": "Blåbergdalsvegen",
+      "lat": 59.8087,
+      "lng": 6.81642,
+      "elevation_m": 619.6
+     },
+     {
+      "name": "tredje hårnålssving",
+      "lat": 59.80859,
+      "lng": 6.8167,
+      "elevation_m": 622.5
+     },
+     {
+      "name": "Blåbergdalsvegen",
+      "lat": 59.80987,
+      "lng": 6.81841,
+      "elevation_m": 641.1
+     },
+     {
+      "name": "fjerde hårnålssving",
+      "lat": 59.81073,
+      "lng": 6.81922,
+      "elevation_m": 655.7
+     },
+     {
+      "name": "Blåbergdalsvegen",
+      "lat": 59.80962,
+      "lng": 6.82017,
+      "elevation_m": 671.7
+     },
+     {
+      "name": "Blåbergdalsvegen",
+      "lat": 59.8094,
+      "lng": 6.8203,
+      "elevation_m": 675.0
+     },
+     {
+      "name": "drei nordover",
+      "lat": 59.80973,
+      "lng": 6.82273,
+      "elevation_m": 699.4
+     },
+     {
+      "name": "henget ved 750",
+      "lat": 59.81182,
+      "lng": 6.82453,
+      "elevation_m": 757.8
+     },
+     {
+      "name": "langs bekken",
+      "lat": 59.81625,
+      "lng": 6.82655,
+      "elevation_m": 872.2
+     },
+     {
+      "name": "langs bekken",
+      "lat": 59.8181,
+      "lng": 6.83065,
+      "elevation_m": 969.4
+     },
+     {
+      "name": "langs bekken",
+      "lat": 59.81775,
+      "lng": 6.84206,
+      "elevation_m": 1098.9
+     },
+     {
+      "name": "mot masta",
+      "lat": 59.81987,
+      "lng": 6.85022,
+      "elevation_m": 1221.5
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Ut.no: henget ved rundt 750 moh. har et kort parti med mulig skredfare; vurder det før du går videre. Ut.no: på returen holder du deg sør for Gjertrabekk, ellers kommer du ut i meget bratt terreng — mellom 864 og 970 moh. ligger terreng på 40 grader og mer 50–220 m nordvest for linja, og inngangen til Gravgjel-renna ligger nord for linja ved rundt 950–1000 moh. Fri Flyt: på varme dager varmer sola opp masta, og isen faller av. Gravgjel er 55 grader øverst, «Vanskelig», med fare for skred og steinfall."
+   }
+  ]
  }
 }
