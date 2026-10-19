@@ -12119,7 +12119,7 @@
    {
     "id": "nattmalstuva",
     "name": "Via Søndre Nattmålstuva",
-    "description": "Fra parkeringa ved Bringsliveien langs sørsida av Grytåga, opp ryggen til Søndre Nattmålstuva på 490 moh., øst for Nattmålstuva 634 og nordvestover inn på toppryggen vest for det bratte henget",
+    "description": "Fra parkeringa ved Bringsliveien langs sørsida av Grytåga, opp ryggen til Søndre Nattmålstuva på 490 moh., forbi Nattmålstuva på østsida og nordvestover inn på toppryggen vest for det bratte henget",
     "trailhead": {
      "name": "Kvalhornet-parkeringa ved Bringsliveien",
      "lat": 67.34361,
@@ -12171,7 +12171,7 @@
       "elevation_m": 600.7
      },
      {
-      "name": "øst for Nattmålstuva 634",
+      "name": "nordøst for Nattmålstuva",
       "lat": 67.36094,
       "lng": 15.17026,
       "elevation_m": 647.4
@@ -12210,8 +12210,8 @@
   "routes": [
    {
     "id": "heggmoen",
-    "name": "Fra Heggmoen via halfpipen",
-    "description": "Fra bommen ved Heggmoen langs skogsvegen og sporet forbi pumpehuset til sletta, nordover gjennom skogen og opp halfpipen til 700 moh., og vestryggen til toppen",
+    "name": "Fra Heggmoen langs halfpipen",
+    "description": "Fra bommen ved Heggmoen langs skogsvegen og sporet vestover, opp ryggen vest for søkket og langs vestkanten av halfpipen til 700 moh., og vestryggen til toppen sør for skavlkanten",
     "trailhead": {
      "name": "Bommen ved Heggmoen",
      "lat": 67.35547,
@@ -12227,43 +12227,43 @@
       "elevation_m": 69.4
      },
      {
-      "name": "veikrysset",
+      "name": "sporet til venstre",
       "lat": 67.35911,
       "lng": 14.86658,
       "elevation_m": 94.9
      },
      {
-      "name": "forbi pumpehuset",
+      "name": "sporet vestover",
       "lat": 67.36051,
       "lng": 14.86027,
       "elevation_m": 130.7
      },
      {
-      "name": "sletta",
+      "name": "foten av ryggen vest for søkket",
       "lat": 67.362,
       "lng": 14.859,
       "elevation_m": 197.8
      },
      {
-      "name": "nordover gjennom skogen",
+      "name": "ryggen vest for søkket",
       "lat": 67.365,
       "lng": 14.861,
       "elevation_m": 303.4
      },
      {
-      "name": "nordover gjennom skogen",
+      "name": "ryggen vest for søkket",
       "lat": 67.368,
       "lng": 14.865,
       "elevation_m": 411.1
      },
      {
-      "name": "halfpipen",
+      "name": "vestkanten av halfpipen",
       "lat": 67.371,
       "lng": 14.8685,
       "elevation_m": 536.4
      },
      {
-      "name": "klippefremspringet på 700",
+      "name": "mot klippefremspringet",
       "lat": 67.374,
       "lng": 14.8705,
       "elevation_m": 657.1
@@ -12276,13 +12276,13 @@
      },
      {
       "name": "vestryggen",
-      "lat": 67.3756,
-      "lng": 14.877,
-      "elevation_m": 773.2
+      "lat": 67.37535,
+      "lng": 14.8768,
+      "elevation_m": 763.0
      }
     ],
     "source": "researched, verified (ok), no local audit",
-    "notes": "Fri Flyt: «Vurder forholdene i søkkformasjonen mellom 300-400 moh med tanke på skred. Alternativt trekk ut på ryggen heiskars venstre for søkket.» og «Vær oppmerksom på skavlkanten på toppeggen.» Ut.no (sommer): «pass deg for kanten mot nord». Fri Flyt: tidlig og sent i sesongen dekker snøen dårlig de nederste 200 høydemeterne. Lia ligger i Heggmoen skytefelt; sjekk skyteplanen."
+    "notes": "Fri Flyt: «Vurder forholdene i søkkformasjonen mellom 300-400 moh med tanke på skred. Alternativt trekk ut på ryggen heiskars venstre for søkket.» og «Vær oppmerksom på skavlkanten på toppeggen.» Ut.no (sommer): «pass deg for kanten mot nord». Fri Flyt om nedkjøringen til Stormyra (Ned 1.1): «Tidlig og sent på sesongen kan snøen dekke dårlig de nederste 200 høydemeterne». Om sydrenna (Ned 1.3): «Sent på sesongen må du spesielt ta hensyn til vårskred». Lia ligger i Heggmoen skytefelt; sjekk skyteplanen."
    }
   ]
  },
@@ -12362,7 +12362,7 @@
      }
     ],
     "source": "researched, verified (ok), no local audit",
-    "notes": "Ut.no: Mølnelva har dannet et markant juv; «På tur nedover anbefales det å krysset juvet/Mølnelva ved ca. 200 moh.» Fri Flyt om flanken mot øst: terrenget ved siden av sporet er rundt 30+ grader i hele den sørøstvendte flanken fra 400 til 700 moh, og «På dager med skredfaregrad 3 må du holde behørig avstand til sørøstflankene». Sørflanken er to kilometer bred med mange valg; hold deg på linja."
+    "notes": "Ut.no: Mølnelva har dannet et markant juv; «På tur nedover anbefales det å krysset juvet/Mølnelva ved ca. 200 moh.» Fri Flyt om p970-ruta (5.2): terrenget vest for sporet er rundt 30+ grader i hele den sørøstvendte flanken fra 400 til 700 moh, og «På dager med skredfaregrad 3 må du holde behørig avstand til sørøstflankene som starter på 400-700 moh.» Sørflanken er to kilometer bred med mange valg; hold deg på linja."
    }
   ]
  }

@@ -3186,18 +3186,18 @@
  "heggmotinden": {
   "verticalM": 770,
   "gainM": 773,
-  "distanceM": 3368,
+  "distanceM": 3388,
   "startM": 24,
   "summitM": 797,
   "duration": "3–5 t",
   "steepestBandAngle": 16.8,
-  "steepestBandFrom": 400,
-  "steepestBandTo": 500,
-  "maxStepAngle": 23.9,
+  "steepestBandFrom": 500,
+  "steepestBandTo": 600,
+  "maxStepAngle": 25.1,
   "grade": 1,
   "aspect": "SV",
   "distanceKm": 3.4,
-  "cumdistM": 3369
+  "cumdistM": 3389
  },
  "kistrandtindan": {
   "verticalM": 980,

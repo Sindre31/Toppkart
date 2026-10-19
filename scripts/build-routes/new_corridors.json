@@ -12646,12 +12646,14 @@
       "Registerets Kvalhornet (Fjell, Fauske/Bodø) løser seg til 965,0 mot publiserte 962 — +3,0 m. OSM fører samme topp (node/3214391267, natural=peak). Ut.no-sporene for turforslag 1112436 og 1112156284 ender 1 og 4 m fra den.",
       "Fri Flyt 6.1: «Fra parkeringen 60 moh følger du flatt terreng NØ ca 200 meter før du dreier nord og følger sørsiden (heiskars venstre) av Grytåga. På 240 moh kommer du til en overbygd sittebenk. Herfra følg den markerte ryggen sør for Grytåga opp mot Søndre Nattmålstuva til 490 moh. Her flater det markant ut.» 7.1: «Skal du på Kvalhornet går du 6.1 opp til 490 moh og fortsetter videre forbi s.Nattmålstuva (634 moh) som passeres på østsiden (heiskars høyre) og fortsetter på en NV kurs 1,5 km til topps i slakt terreng, men mellom 880-940 moh er det 30 grader bratt. Dette henget kan omgås ved å legge sporet vest-over (heiskars venstre) inn på toppryggen.» Korridoren følger ut.no-fotturens spor, som går den samme linja, og legger de to siste punktene vest for henget, inn på toppryggen ved 899 og 951 moh. Grytåga er OSM way/966042727; Nattmålstuva-overgangen er OSM-punktet node/5408070061 (ele 580, 67.35250/15.17583), og sporet passerer den på 491,6 moh.",
       "Andrekilde, ut.no 1112156284 (fottur, hele året): «Ett av dem er parkeringen ved Svarttjønna, som ligger rundt 2 km langs fylkesveien fra Nordvika til Jordbru. Du går opp i skogen og følger traseen opp i lia. Et stykke lenger opp følger du ryggen, opp forbi flogene mot Nattmålstuva (634 moh). Ved varden på Nattmålstuva er den bratteste delen unnagjort. Følg rabbene mot toppen.» Andrekilde, ut.no 1112436 (skitur, desember–mai): «Alternativt og den vel mest gåtte ruta er ikke via Grytåga/høyde 618, men via Søndre Nattmålstuva på vestsiden av Grytåga.»",
-      "965,0 − 63,3 = 902 mot Fri Flyts 900 høydemeter for 7.1. Faktaboksens 430 høydemeter gjelder Søndre Nattmålstuva."
+      "965,0 − 63,3 = 902 mot Fri Flyts 900 høydemeter for 7.1. Faktaboksens 430 høydemeter gjelder Søndre Nattmålstuva.",
+      "Fri Flyt om navnet: «Egentlig er det overgangen på 490 moh som blir omtalt som Nattmålstuva.» Registerets Nattmålstuva (Ås, Fauske) står på 67.35695/15.15942, toppen Fri Flyt kaller «s.Nattmålstuva (634 moh)».",
+      "Fri Flyt, Ned 7.2 østflanken til Leiråga: «Vanskelighetsgrad: Moderat Fare: Sørg for å passere hengeskavlene langs toppeggen før du drar skikjørers venstre ned østflanken. Himmelretning: Ø-SØ Bratteste punkt: 32 grader 700-570 moh. Terrenget høyre og venstre for traseen rett øst er brattere enn 32 grader» og «Dette er et typisk leheng for vestlige vinder.»"
     ],
     "corridor": {
       "routeId": "nattmalstuva",
       "routeName": "Via Søndre Nattmålstuva",
-      "routeDescriptionFull": "Fra parkeringa ved Bringsliveien langs sørsida av Grytåga, opp ryggen til Søndre Nattmålstuva på 490 moh., øst for Nattmålstuva 634 og nordvestover inn på toppryggen vest for det bratte henget",
+      "routeDescriptionFull": "Fra parkeringa ved Bringsliveien langs sørsida av Grytåga, opp ryggen til Søndre Nattmålstuva på 490 moh., forbi Nattmålstuva på østsida og nordvestover inn på toppryggen vest for det bratte henget",
       "trailhead": {
         "name": "Kvalhornet-parkeringa ved Bringsliveien",
         "lat": 67.34361,
@@ -12703,7 +12705,7 @@
           "elevationM": 600.7
         },
         {
-          "name": "øst for Nattmålstuva 634",
+          "name": "nordøst for Nattmålstuva",
           "lat": 67.36094,
           "lng": 15.17026,
           "elevationM": 647.4
@@ -12739,8 +12741,8 @@
       "gradeReason": "Fri Flyt 7.1: «Lett», 900 høydemeter, 3–4 timer, bratteste punkt 30 grader mellom 880 og 940 moh, som kan omgås vestover. Ut.no graderer skituren «Middels» (MODERATE). Grad 2.",
       "roadClosedInWinter": false,
       "hazardNotes": "Fri Flyt: «Ikke kom for langt skikjørers venstre mellom 420-280 moh. Grytåga har to markerte dropp (fine isklatre fosser) og bratte Ø-NØ vendte heng som ender i en åpenbar terrengfelle.» Henget mellom 880 og 940 moh er 30 grader og kan omgås vestover. Ut.no: «Dagene med vind på toppen er vel i flertallet.»",
-      "teaserNo": "900 høydemeter fra Bringsliveien: langs Grytåga, opp ryggen til Søndre Nattmålstuva og nordvestover inn på toppryggen — Bodøs klassiker for årets første skitur.",
-      "teaserEn": "900 metres of ascent from Bringsliveien: along Grytåga, up the ridge to Søndre Nattmålstuva and north-west onto the summit ridge — Bodø's classic for the first ski tour of the season.",
+      "teaserNo": "900 høydemeter fra Bringsliveien: langs Grytåga, opp ryggen til Søndre Nattmålstuva og nordvestover inn på toppryggen — en av Bodø-klassikerne i Fri Flyts bok.",
+      "teaserEn": "900 metres of ascent from Bringsliveien: along Grytåga, up the ridge to Søndre Nattmålstuva and north-west onto the summit ridge — one of the Bodø classics in Fri Flyt's book.",
       "sources": [
         "https://www.friflyt.no/topptur/skiturer-bodoe/turbeskrivelse-soendre-nattmaalstuva-og-kvalhornet",
         "https://ut.no/turforslag/1112436",
@@ -12756,15 +12758,16 @@
     "rejectReason": "",
     "corrections": [
       "Registerets Heggmotinden (Fjell, Bodø) løser seg til 797,4 mot publiserte 798 — −0,6 m. OSM fører samme topp (node/5260170893, natural=peak, ele 798).",
-      "Fri Flyt, Opp (alternativ 2): «Parkér ved bommen og følg skogsveien nordover ca 1,5 km til du treffer et veikryss med skiltet «Advarsel. Isen usikker». Ta inn veien til venstre, følg forbi et lite pumpehus og fortsett sti/åpent spor ca 300 meter til en stor åpen slette. Her dreier du nordover og følg naturlig terreng i retning toppen. Med denne kursen gjennom mest mulig åpen skog, vil du komme rett opp i halfpipen. Følg skålformasjonen til 700 moh og gjør de samme vurderingene som under alternativ 1.» Alternativ 1: «På 700 moh kan du nå toppen via sørvestflanken (høyre side av klippefremspring) eller vestryggen (venstre side av klippefremspring).» Korridoren følger skogsvegen (OSM way/24590742) til der et spor tar av mot venstre (way/784267603) etter 0,6 km, ikke 1,5 km, og går vestryggen fra 700 moh — det slakeste av Fri Flyts to valg.",
-      "Andrekilde, Peakbook (Endre Myrdal Olsen, 16. januar 2016): «Vi parkerte på en P-plass ved Heggmoen. Vi festet skiene på sekken og fulgte en grusvei oppover mot Heggmovatnet. Like før vi kom inn på stien mot vannet, skrådde vi opp i lien.» og «Vi skrådde mot NØ og rennen.» og «Vi gikk sikksakk oppover og ankom halfpipen». Peakbook 19. februar 2016: «Meg og Johannes kjørte inn til Heggmoen kl 08.00 i dag.»",
+      "Fri Flyt, Opp (alternativ 2): «Parkér ved bommen og følg skogsveien nordover ca 1,5 km til du treffer et veikryss med skiltet «Advarsel. Isen usikker». Ta inn veien til venstre, følg forbi et lite pumpehus og fortsett sti/åpent spor ca 300 meter til en stor åpen slette. Her dreier du nordover og følg naturlig terreng i retning toppen. Med denne kursen gjennom mest mulig åpen skog, vil du komme rett opp i halfpipen. Følg skålformasjonen til 700 moh og gjør de samme vurderingene som under alternativ 1.» Alternativ 1: «På 700 moh kan du nå toppen via sørvestflanken (høyre side av klippefremspring) eller vestryggen (venstre side av klippefremspring).» Fri Flyts veikryss er der skogsvegen (OSM way/24590742) ender etter 1,44 km og vegen mot dammen ved Heggmovatnet (way/784267598) går til venstre; pumpehuset og sletta ligger på den traseen. Korridoren tar av 0,9 km før, der et spor går til venstre (way/784267603) etter 0,53 km, og går opp ryggen vest for søkket — Fri Flyts alternativ for søkket: «Vurder forholdene i søkkformasjonen mellom 300-400 moh med tanke på skred. Alternativt trekk ut på ryggen heiskars venstre for søkket.» Fra 550 moh følger den den kartlagte sommerstien (OSM way/551512371) langs vestkanten av halfpipen, og fra 700 moh vestryggen — det slakeste av Fri Flyts to valg.",
+      "Andrekilde, Peakbook (Endre Myrdal Olsen, 16. januar 2016), som gikk Fri Flyts veg mot Heggmovatnet: «Vi festet skiene på sekken og fulgte en grusvei oppover mot Heggmovatnet. Like før vi kom inn på stien mot vannet, skrådde vi opp i lien.» Halfpipen nådde de over 600 moh: «På ca 600 moh kunne vi spenne på oss skiene.» og «Vi gikk sikksakk oppover og ankom halfpipen som jeg har lest mange har skrevet om på facebook. Et lite søkk som samler mye snø. Lang er den også.» Peakbook 19. februar 2016: «Meg og Johannes kjørte inn til Heggmoen kl 08.00 i dag.»",
       "Hele lia sør for toppen har terrengklasse Skytefelt i Kartverkets data, og Heggmoen skytefelt er kartlagt i OSM (way/736382147, landuse=military).",
-      "797,4 − 24,0 = 773 mot Fri Flyts 760 høydemeter for alternativ 2."
+      "797,4 − 24,0 = 773 mot Fri Flyts 760 høydemeter for alternativ 2.",
+      "Fri Flyt, Ned 1.2 halfpipen via sydsøkket til Heggmoen: «Følger samme vei ned som alternativet du valgte opp. Sørvestflanken like under toppen er 30 grader bratt. Følg denne ned men hold skikjørers høyre og rund under klippefremspringet og hold høyden i en travers mot høyre til starten av skålformasjonen (halfpipen).» Ned 1.3 sydrenna mot Heggmovatnet: «Vanskelighetsgrad: Moderat Fare: Nedkjøringen går i en trang formasjon og du har bratt terreng på begge sider – terrengfelle! Sent på sesongen må du spesielt ta hensyn til vårskred» og «Bratteste punkt: 35 grader 500-300 moh»."
     ],
     "corridor": {
       "routeId": "heggmoen",
-      "routeName": "Fra Heggmoen via halfpipen",
-      "routeDescriptionFull": "Fra bommen ved Heggmoen langs skogsvegen og sporet forbi pumpehuset til sletta, nordover gjennom skogen og opp halfpipen til 700 moh., og vestryggen til toppen",
+      "routeName": "Fra Heggmoen langs halfpipen",
+      "routeDescriptionFull": "Fra bommen ved Heggmoen langs skogsvegen og sporet vestover, opp ryggen vest for søkket og langs vestkanten av halfpipen til 700 moh., og vestryggen til toppen sør for skavlkanten",
       "trailhead": {
         "name": "Bommen ved Heggmoen",
         "lat": 67.35547,
@@ -12780,43 +12783,43 @@
           "elevationM": 69.4
         },
         {
-          "name": "veikrysset",
+          "name": "sporet til venstre",
           "lat": 67.35911,
           "lng": 14.86658,
           "elevationM": 94.9
         },
         {
-          "name": "forbi pumpehuset",
+          "name": "sporet vestover",
           "lat": 67.36051,
           "lng": 14.86027,
           "elevationM": 130.7
         },
         {
-          "name": "sletta",
+          "name": "foten av ryggen vest for søkket",
           "lat": 67.362,
           "lng": 14.859,
           "elevationM": 197.8
         },
         {
-          "name": "nordover gjennom skogen",
+          "name": "ryggen vest for søkket",
           "lat": 67.365,
           "lng": 14.861,
           "elevationM": 303.4
         },
         {
-          "name": "nordover gjennom skogen",
+          "name": "ryggen vest for søkket",
           "lat": 67.368,
           "lng": 14.865,
           "elevationM": 411.1
         },
         {
-          "name": "halfpipen",
+          "name": "vestkanten av halfpipen",
           "lat": 67.371,
           "lng": 14.8685,
           "elevationM": 536.4
         },
         {
-          "name": "klippefremspringet på 700",
+          "name": "mot klippefremspringet",
           "lat": 67.374,
           "lng": 14.8705,
           "elevationM": 657.1
@@ -12829,19 +12832,19 @@
         },
         {
           "name": "vestryggen",
-          "lat": 67.3756,
-          "lng": 14.877,
-          "elevationM": 773.2
+          "lat": 67.37535,
+          "lng": 14.8768,
+          "elevationM": 763.0
         }
       ],
       "season": "des–apr",
       "aspect": "SV",
       "grade": 2,
-      "gradeReason": "Fri Flyt: «Lett/Moderat», bratteste punkt 30 grader mellom 300 og 400 og mellom 700 og 770 moh, 760 høydemeter og 2–3 timer. Grad 2.",
+      "gradeReason": "Fri Flyt: «Lett/Moderat», bratteste punkt 30 grader mellom 300 og 400 moh, og mellom 700 og 770 moh «hvis SV flanken på høyre side av klippefremspring velges», 760 høydemeter og 2–3 timer. Grad 2.",
       "roadClosedInWinter": false,
-      "hazardNotes": "Fri Flyt: «Vurder forholdene i søkkformasjonen mellom 300-400 moh med tanke på skred. Alternativt trekk ut på ryggen heiskars venstre for søkket.» og «Vær oppmerksom på skavlkanten på toppeggen.» Ut.no (sommer): «pass deg for kanten mot nord». Fri Flyt: tidlig og sent i sesongen dekker snøen dårlig de nederste 200 høydemeterne. Lia ligger i Heggmoen skytefelt; sjekk skyteplanen.",
-      "teaserNo": "770 høydemeter fra bommen ved Heggmoen: skogsvegen og sletta, opp halfpipen på sørsida og vestryggen til toppen — den nærmeste skitoppen fra Bodø by.",
-      "teaserEn": "770 metres of ascent from the barrier at Heggmoen: the forest road and the clearing, up the half-pipe on the south side and the west ridge to the top — the nearest ski summit to Bodø town.",
+      "hazardNotes": "Fri Flyt: «Vurder forholdene i søkkformasjonen mellom 300-400 moh med tanke på skred. Alternativt trekk ut på ryggen heiskars venstre for søkket.» og «Vær oppmerksom på skavlkanten på toppeggen.» Ut.no (sommer): «pass deg for kanten mot nord». Fri Flyt om nedkjøringen til Stormyra (Ned 1.1): «Tidlig og sent på sesongen kan snøen dekke dårlig de nederste 200 høydemeterne». Om sydrenna (Ned 1.3): «Sent på sesongen må du spesielt ta hensyn til vårskred». Lia ligger i Heggmoen skytefelt; sjekk skyteplanen.",
+      "teaserNo": "770 høydemeter fra bommen ved Heggmoen: skogsvegen, ryggen vest for søkket og langs halfpipen på sørsida, og vestryggen til toppen — den nærmeste skitoppen fra Bodø by.",
+      "teaserEn": "770 metres of ascent from the barrier at Heggmoen: the forest road, the ridge west of the hollow and along the half-pipe on the south side, then the west ridge to the top — the nearest ski summit to Bodø town.",
       "sources": [
         "https://www.friflyt.no/topptur/skiturer-bodoe/turbeskrivelse-heggmotinden",
         "https://peakbook.org/no/tour/153285/Sn%C3%B8fattig+tur+til+Heggmotinden+i+nydelig+januarlys.html",
@@ -12849,7 +12852,7 @@
         "https://ut.no/turforslag/1112178893"
       ],
       "confidence": "high",
-      "notes": "Fri Flyt (Toppturer rundt Bodø) alternativ 2 er hovedkilden. Peakbook beskriver samme start og halfpipen på to vinterturer; ut.no-fotturen går vestryggen sommerstid."
+      "notes": "Fri Flyt (Toppturer rundt Bodø) alternativ 2 er hovedkilden. Peakbook beskriver samme start og halfpipen på to vinterturer; ut.no-fotturen og den kartlagte stien går vestryggen sommerstid."
     }
   },
   {
@@ -12859,10 +12862,9 @@
     "corrections": [
       "Fri Flyts tur går til Kistrandtinden p979, som ikke har eget navn i stedsnavnregisteret; registerets Kistrandtindan (Fjell, Bodø/Fauske) er et navnepunkt på sørflanken på 806 moh. Toppen er festet med SUMMIT_SEED på 979-toppen og løser seg til 981,6 mot publiserte 979 — +2,6 m. OSM har et punkt «Bodø Valnesfjord Kistrandtinden» med ele 979 (node/5408070062) 25 m fra den.",
       "Fri Flyt, Opp (Kistrandtinden p979): «Fra parkeringen, gå i nord-nordvestlig retning med sikte på kraftledningen. Når du treffer kratfledningen, drei nordøst 2-300 meter til du treffer starten på ryggformasjonen sør for Mølnelva. Følg ryggen til flata med tre bjørketrær på 480 moh. Fra flata følg jevnt 25 grader bratt terreng i retning nord mot toppen.» Mølnelva er OSM way/966040227. Flata er festet vest for juvet på 476,1 moh (67.3345/15.0660).",
-      "Andrekilde, ut.no 1112435: «Turen starter fra fotoboksen på rv. 80 på Kistrand. De første 220 høydemeterne går gjennom skogen og på sørvestsiden av Mølnelva. Mølnelva har dannet et markant juv som en kan krysse litt lenger opp ved ca. 430 moh. Derfra går kursen nordøstover i retning Kistrandtinden.» Ut.no deler start og nedre del, men går over juvet til en nabotopp på 967 moh, 853 m øst (Fri Flyts p970, 970,7 moh, ligger 426 m øst); korridoren følger ut.no-sporet til 352 moh. og Fri Flyt derfra.",
+      "Andrekilde, ut.no 1112435: «Turen starter fra fotoboksen på rv. 80 på Kistrand. De første 220 høydemeterne går gjennom skogen og på sørvestsiden av Mølnelva. Mølnelva har dannet et markant juv som en kan krysse litt lenger opp ved ca. 430 moh. Derfra går kursen nordøstover i retning Kistrandtinden.» Ut.no deler start og nedre del, men går over juvet til en topp ut.no kaller Kistrandtinden, 0,85 km øst (967,7 moh i DTM1); korridoren følger ut.no-sporet til 352 moh. og Fri Flyt derfra.",
       "981,6 − 7,3 = 974 mot Fri Flyts 979 høydemeter.",
-      "Fri Flyt, adkomst: «Kjør RV 80 fra Bodø i retning Fauske. Etter 26,3 km parkerer du på busslommen ved Holmen hø side av vei». Busslomma er OSM-stoppet Kistrand (node/3397446653); ut.no kaller samme sted «fotoboksen på rv. 80 på Kistrand».",
-      "check_new_corridors: «no mapped parking, only service, track, trunk» — busslomma er kartlagt som busstopp (node/3397446653), ikke som parkering; både Fri Flyt og ut.no starter her, og nærmeste kartlagte parkeringsplass er 863 m vest. Korridoren står."
+      "Fri Flyt, adkomst: «Etter 26,3 km parkerer du på busslommen ved Holmen hø side av vei, UTM 03879-67365 (opp p979) eller fortsetter videre 1,2 km til Dinesodden med stor parkering på høyre side av veien, UTM 05074-67503 (opp p970).» Ned 5.3: «Velger du andre nedfarter enn der du gikk opp, vil du fra 700-400 moh komme inn i terreng som alltid har enkeltheng brattere enn 30 grader». Fri Flyt: «Kistrandtindan består av de to perlene p979 og p970»."
     ],
     "corridor": {
       "routeId": "kistrand",
@@ -12873,7 +12875,7 @@
         "lat": 67.32276,
         "lng": 15.08989,
         "elevationM": 7.3,
-        "osmEvidence": "OSM node/3397446653 (highway=bus_stop, «Kistrand») ved rv. 80 Valnesfjordveien (way/781024339, trunk). Fri Flyt: «Etter 26,3 km parkerer du på busslommen ved Holmen hø side av vei»; ut.no: «Turen starter fra fotoboksen på rv. 80 på Kistrand.» Rv. 80 er hovedvegen mellom Bodø og Fauske. Nærmeste kartlagte parkering er 1 km vest (node/3397446639). DTM1 leser 7,3 moh."
+        "osmEvidence": "OSM node/3397446653 (highway=bus_stop, «Kistrand») ved rv. 80 Valnesfjordveien (way/781024339, trunk). Fri Flyt: «Etter 26,3 km parkerer du på busslommen ved Holmen hø side av vei»; ut.no: «Turen starter fra fotoboksen på rv. 80 på Kistrand.» Lomma er kartlagt som et busstopp i bruk, og der er parkering ikke tillatt; nærmeste kartlagte parkering er 863 m vest (node/3397446639), og Fri Flyt viser til Dinesodden 1,2 km øst: «fortsetter videre 1,2 km til Dinesodden med stor parkering på høyre side av veien». OSM viser ny trasé for rv. 80 under bygging (way/1554040610, highway=construction) 82 m sør for starten, så lomma og fotoboksen kan bli flyttet. Rv. 80 er hovedvegen mellom Bodø og Fauske. DTM1 leser 7,3 moh."
       },
       "waypoints": [
         {
@@ -12942,15 +12944,15 @@
       "grade": 2,
       "gradeReason": "Fri Flyt: «Lett/Moderat», bratteste punkt 30 grader mellom 350 og 400 moh, ellers jevnt 25 grader, 979 høydemeter fra havet og 3–4 timer. Ut.no graderer skituren «Middels» (MODERATE). Grad 2.",
       "roadClosedInWinter": false,
-      "hazardNotes": "Ut.no: Mølnelva har dannet et markant juv; «På tur nedover anbefales det å krysset juvet/Mølnelva ved ca. 200 moh.» Fri Flyt om flanken mot øst: terrenget ved siden av sporet er rundt 30+ grader i hele den sørøstvendte flanken fra 400 til 700 moh, og «På dager med skredfaregrad 3 må du holde behørig avstand til sørøstflankene». Sørflanken er to kilometer bred med mange valg; hold deg på linja.",
-      "teaserNo": "980 høydemeter fra havet på Kistrand: gjennom skogen og ryggen sør for Mølnelva til flata ved 480, og jevnt nordover til 979-toppen i Kistrandtindan.",
-      "teaserEn": "980 metres of ascent from sea level at Kistrand: through the forest and up the ridge south of Mølnelva to the flat at 480, then steadily north to the 979 top of Kistrandtindan.",
+      "hazardNotes": "Ut.no: Mølnelva har dannet et markant juv; «På tur nedover anbefales det å krysset juvet/Mølnelva ved ca. 200 moh.» Fri Flyt om p970-ruta (5.2): terrenget vest for sporet er rundt 30+ grader i hele den sørøstvendte flanken fra 400 til 700 moh, og «På dager med skredfaregrad 3 må du holde behørig avstand til sørøstflankene som starter på 400-700 moh.» Sørflanken er to kilometer bred med mange valg; hold deg på linja.",
+      "teaserNo": "970 høydemeter fra havet på Kistrand: gjennom skogen og ryggen sør for Mølnelva til flata ved 480, og jevnt nordover til 979-toppen i Kistrandtindan.",
+      "teaserEn": "970 metres of ascent from sea level at Kistrand: through the forest and up the ridge south of Mølnelva to the flat at 480, then steadily north to the 979 top of Kistrandtindan.",
       "sources": [
         "https://www.friflyt.no/topptur/skiturer-bodoe/turbeskrivelse-kistrandtindan",
         "https://ut.no/turforslag/1112435"
       ],
       "confidence": "medium",
-      "notes": "Fri Flyt (Toppturer rundt Bodø) er hovedkilden. Ut.no deler start og nedre del av linja, men går til en nabotopp øst for p970, og 979-toppen har ikke eget registernavn; derfor er confidence medium."
+      "notes": "Fri Flyt (Toppturer rundt Bodø) er hovedkilden. Ut.no deler start og nedre del av linja, men går til en annen topp 0,85 km øst, og 979-toppen har ikke eget registernavn; derfor er confidence medium."
     }
   }
 ]
