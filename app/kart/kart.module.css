@@ -125,8 +125,9 @@
   outline-offset: 2px;
 }
 
-/* Gradbrikkene, med regionen til høyre. */
-.gradeRow {
+/* Gradbrikkene og nedtrekkslistene i én rad som brekker. Hver brikke vokser,
+   så linjene fylles ut uten tomrom mellom filtrene. */
+.filters {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -134,8 +135,10 @@
 }
 .gradeChips { display: contents; }
 .gradeChip {
+  flex: 1 1 auto;
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 6px;
   padding: 6px 12px;
   border-radius: var(--radius-pill);
@@ -156,8 +159,6 @@
 }
 .gradeChip:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 2px; }
 .gradeChip[aria-pressed="true"] .dot { box-shadow: 0 0 0 1.5px var(--color-ink), 0 0 0 2.5px rgba(255, 255, 255, 0.6); }
-
-.filterRow { display: flex; flex-wrap: wrap; gap: 6px; }
 
 .countRow {
   display: flex;
@@ -515,6 +516,11 @@
      overstyrt forskyvningen under. */
   .side { padding: 0 10px 10px; animation: none; transition: transform 0.18s ease-out; }
   .map { padding: 0 10px 10px; }
+  /* Litt tettere filterbrikker, så filtrene får plass på tre linjer også på
+     en vanlig telefon (fra 375px). */
+  .sideHead { padding-inline: 12px; }
+  .filters { gap: 5px; }
+  .gradeChip { padding-inline: 9px; gap: 5px; }
   .page[data-pane="map"] .side {
     transform: translateX(-105%);
     visibility: hidden;
