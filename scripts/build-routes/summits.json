@@ -1678,5 +1678,29 @@
     "summit_dtm": 1104.5,
     "claims": 1104,
     "stored_off_km": 0.02
+  },
+  "kvalhornet": {
+    "name": "Kvalhornet",
+    "lat": 67.37358,
+    "lng": 15.15777,
+    "summit_dtm": 965.0,
+    "claims": 962,
+    "stored_off_km": 0.0
+  },
+  "heggmotinden": {
+    "name": "Heggmotinden",
+    "lat": 67.37541,
+    "lng": 14.87934,
+    "summit_dtm": 797.4,
+    "claims": 798,
+    "stored_off_km": 0.02
+  },
+  "kistrandtindan": {
+    "name": "Kistrandtindan",
+    "lat": 67.34935,
+    "lng": 15.06775,
+    "summit_dtm": 981.6,
+    "claims": 979,
+    "stored_off_km": 0.01
   }
 }

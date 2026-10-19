@@ -7331,6 +7331,114 @@ export const GUIDES: Record<string, TourGuide> = {
       caption: "620 høydemeter og 7,4 km over Kjeragplatået, der bratteste 30 meter er 29,6 grader, oppe på platået, og det farlige ligger 1850 meter nord for toppunktet.",
     },
   },
+  heggmotinden: {
+    slug: "heggmotinden",
+    intro:
+      "773 høydemeter på 3,37 km fra bommen ved Heggmoen: skogsvegen og sporet forbi pumpehuset til sletta, nordover gjennom skogen og opp halfpipen på sørsida, og vestryggen fra 700 moh til toppen på 797 moh. Bratteste bandet er 16,8 grader mellom 400 og 500 moh, og bratteste sammenhengende parti 23,9 grader mellom 498 og 518. Fri Flyt: «Heggmotinden er den nærmeste skitoppen til Bodø by.» Hele lia ligger i Heggmoen skytefelt.",
+    ascent: [
+      "Start ved bommen ved Heggmoen, 24 moh, der skogsvegen tar av fra Vatnveien. Fri Flyt: «Parkér ved bommen og følg skogsveien nordover ca 1,5 km til du treffer et veikryss med skiltet «Advarsel. Isen usikker». Ta inn veien til venstre, følg forbi et lite pumpehus og fortsett sti/åpent spor ca 300 meter til en stor åpen slette.» Linja tar av fra skogsvegen der sporet går til venstre, ved 0,53 km og 95 moh, og er på sletta ved 1,04 km og 192 moh. Peakbook, januar 2016: «Vi parkerte på en P-plass ved Heggmoen.»",
+      "Fri Flyt: «Her dreier du nordover og følg naturlig terreng i retning toppen. Med denne kursen gjennom mest mulig åpen skog, vil du komme rett opp i halfpipen.» Fri Flyt: «Vurder forholdene i søkkformasjonen mellom 300-400 moh med tanke på skred. Alternativt trekk ut på ryggen heiskars venstre for søkket.» Bandene fra 300 til 500 moh måler 14,7 og 16,8 grader, og 35 meter sørøst for linja ved 260 moh står celler på 59,2 grader.",
+      "Over 400 moh går linja opp skålformasjonen, halfpipen, til 700 moh. Peakbook: «Vi gikk sikksakk oppover og ankom halfpipen». Bratteste sammenhengende parti er 23,9 grader mellom 498 og 518 moh, og ved 536–540 moh krysser linja 16 meter bakke på 35 grader eller mer, med bratteste celle 42 grader. Fri Flyt: «Følg skålformasjonen til 700 moh».",
+      "På 700 moh står klippefremspringet. Fri Flyt: «På 700 moh kan du nå toppen via sørvestflanken (høyre side av klippefremspring) eller vestryggen (venstre side av klippefremspring).» Linja går vestryggen, til venstre, fra 709 moh ved 3,06 km; sørvestflanken er Fri Flyts 30-gradersalternativ. Ved fremspringet står celler på 61,2 grader 48 meter sørøst for linja. Toppen er slak mot vest, 13,8 grader i snitt over 500 meter, og det er den siden du kommer opp.",
+    ],
+    descent: [
+      "Fri Flyt: «Følger samme vei ned som alternativet du valgte opp.» og «I enden av halfpipen på 400 moh bør du velge skikjørers høyre for søkkformasjonen videre dersom skredforholdene er uoversiktlige». Fri Flyt: «På 200 moh bør du begynne å tenke skikjørers høyre for å holde høyden slik at du kan gli ut til skogsveien som tar deg ned til parkeringen.»",
+      "Toppen faller bratt mot nord og nordøst: 58,9 grader 40 til 100 meter ut mot nord og 55,8 grader 20 til 80 meter ut mot nordøst. Fri Flyt: «Vær oppmerksom på skavlkanten på toppeggen.» Ut.no: «pass deg for kanten mot nord». Sydrenna mot Heggmovatnet er en egen nedkjøring, «Moderat», 35 grader mellom 500 og 300 moh og en terrengfelle.",
+    ],
+    avalanche: [
+      {
+        title: "Ruta",
+        body: "Bratteste sammenhengende parti er 23,9 grader mellom 498 og 518 moh, og bratteste bandet 16,8 grader fra 400 til 500. Bakken under linja er 35 grader eller brattere i ett strekk på 16 meter ved 536–540 moh, i halfpipen. Fri Flyt oppgir 30 grader mellom 300 og 400 og mellom 700 og 770 moh og graderer turen «Lett/Moderat».",
+      },
+      {
+        title: "Terrenget utenfor",
+        body: "Fri Flyt: «Unngå bekkefaret på 300 moh på dager med skredfare.» Søkket mellom 300 og 400 moh samler snø; ryggen til venstre for det er alternativet. Toppeggen har skavlkant mot nord, og nord- og nordøstsida er 55,8 til 58,9 grader. Fri Flyt: «Tidlig og sent på sesongen kan snøen dekke dårlig de nederste 200 høydemeterne».",
+      },
+      {
+        title: "Før du går",
+        body: "Sjekk dagens skredvarsel for Salten på varsom.no. Salten er en A-region og varsles daglig i sesongen. Lia ligger i Heggmoen skytefelt — sjekk skyteplanen før du går. Ta med sender/mottaker, søkestang og spade.",
+      },
+    ],
+    elevationProfile: {
+      path: "M0,200 L32,194 L54,190 L72,186 L96,183 L124,180 L149,175 L169,168 L185,160 L209,153 L233,147 L248,142 L265,136 L289,129 L313,120 L333,114 L353,105 L375,97 L396,90 L417,81 L427,77 L449,69 L473,58 L497,52 L513,46 L537,40 L553,36 L569,29 L586,22 L600,18",
+      startLabel: "24 moh",
+      endLabel: "797 moh",
+      distanceLabel: "3,4 km",
+      caption: "773 høydemeter og 3,37 km fra Heggmoen, med sletta på 192 moh, halfpipen fra 400 til 700 og vestryggen fra 709.",
+    },
+  },
+  kvalhornet: {
+    slug: "kvalhornet",
+    intro:
+      "902 høydemeter på 4,39 km fra parkeringa ved Bringsliveien: langs sørsida av Grytåga, opp ryggen til Søndre Nattmålstuva på 490 moh, forbi Nattmålstuva og nordvestover inn på toppryggen til Kvalhornet, 965 moh. Bratteste bandet er 18,4 grader mellom 300 og 400 moh, og bratteste sammenhengende parti 24,1 grader mellom 160 og 174, i skogen nederst. Fri Flyt: «For mange i Bodø er disse toppene de største klassikerne.»",
+    ascent: [
+      "Start på parkeringa Kvalhornet ved Bringsliveien, 63 moh, 2 km fra rv. 80 ved Nordvika. Fri Flyt: «Ta hensyn til brøytebilen. Parkér derfor godt ut i kanten.» Fri Flyt: «Fra parkeringen 60 moh følger du flatt terreng NØ ca 200 meter før du dreier nord og følger sørsiden (heiskars venstre) av Grytåga.» Skogen slipper ved 160 moh, 0,55 km fra start, og bratteste parti på turen ligger her, 24,1 grader mellom 160 og 174 moh.",
+      "Fri Flyt: «Herfra følg den markerte ryggen sør for Grytåga opp mot Søndre Nattmålstuva til 490 moh. Her flater det markant ut.» Grytåga renner 80 til 119 meter nordøst for linja de første 1,3 km, nærmest 37 meter ved 155 moh. Den er det Fri Flyt advarer mot: «Grytåga har to markerte dropp (fine isklatre fosser) og bratte Ø-NØ vendte heng som ender i en åpenbar terrengfelle.» Nord og nordøst for linja står celler på 65,5 grader 52 meter unna ved 174 moh og 36,8 til 38,8 grader 44 til 51 meter unna ved 305–363 moh. Bandet fra 300 til 400 moh er det bratteste, 18,4 grader. Søndre Nattmålstuva når du på 493 moh etter 1,62 km.",
+      "Fri Flyt 7.1: «Skal du på Kvalhornet går du 6.1 opp til 490 moh og fortsetter videre forbi s.Nattmålstuva (634 moh) som passeres på østsiden (heiskars høyre) og fortsetter på en NV kurs 1,5 km til topps i slakt terreng». Det er slakt her: 10,1 grader fra 500 til 600 moh, 8,6 fra 600 til 700 og 8,5 fra 700 til 800, over 1935 meter grunn til sammen. Linja passerer Nattmålstuva på østsida ved 646 moh, 2,61 km fra start.",
+      "Fri Flyt: «mellom 880-940 moh er det 30 grader bratt. Dette henget kan omgås ved å legge sporet vest-over (heiskars venstre) inn på toppryggen.» Linja gjør det: den går vest for henget, med celler på 42,3 grader 46 meter nordøst for linja ved 904 moh, og kommer inn på toppryggen ved 953 moh, 4,24 km fra start. Bakken under linja er aldri 35 grader eller brattere i 15 meter sammenhengende. Ut.no: «Dagene med vind på toppen er vel i flertallet.»",
+    ],
+    descent: [
+      "Fri Flyt: «Følger samme vei ned som opp.» og «Ikke kom for langt skikjørers venstre mellom 420-280 moh.» Det er Grytåga og terrengfella. På svært tidlig sesongstart skriver Fri Flyt at terrenget fra 300 moh og ned «bør da forseres med forsiktighet og fartsavpassing. Det er lett å hekte i busker eller treffe bekkehull.»",
+      "Toppen er slak mot sør, sørvest og vest, 10,4 til 17,0 grader i snitt over 500 meter. Mot øst og sørøst faller den 50,4 og 47,7 grader i bratteste vindu 40 til 120 meter ut, og mot nord 58,7 grader. Fri Flyts østflanke (7.2) til Leiråga er «Moderat», og «Sørg for å passere hengeskavlene langs toppeggen før du drar skikjørers venstre ned østflanken.»",
+    ],
+    avalanche: [
+      {
+        title: "Ruta",
+        body: "Bratteste bandet er 18,4 grader mellom 300 og 400 moh, og bratteste sammenhengende parti 24,1 grader mellom 160 og 174 moh. Bakken under linja er ikke 35 grader eller brattere i noe sammenhengende strekk på 15 meter. Fri Flyt oppgir 30 grader som bratteste punkt, i henget mellom 880 og 940 moh som linja går vest for, og graderer turen «Lett»; ut.no kaller den middels.",
+      },
+      {
+        title: "Terrenget utenfor",
+        body: "Grytåga nordøst for linja har bratte øst- og nordøstvendte heng som ender i en terrengfelle; hold deg på ryggen sør for den, særlig mellom 280 og 420 moh på vei ned. Toppen har hengeskavler langs toppeggen, og øst- og nordsida er 47,7 til 58,7 grader.",
+      },
+      {
+        title: "Før du går",
+        body: "Sjekk dagens skredvarsel for Salten på varsom.no. Salten er en A-region og varsles daglig i sesongen. Ta med sender/mottaker, søkestang og spade.",
+      },
+    ],
+    elevationProfile: {
+      path: "M0,200 L18,199 L36,194 L55,188 L75,180 L91,173 L110,166 L129,157 L147,148 L166,139 L180,132 L202,121 L221,113 L239,110 L264,106 L283,101 L307,92 L325,89 L343,86 L360,81 L381,75 L404,70 L418,68 L436,64 L455,60 L473,57 L492,52 L516,45 L535,39 L547,34 L559,30 L578,22 L600,18",
+      startLabel: "63 moh",
+      endLabel: "965 moh",
+      distanceLabel: "4,4 km",
+      caption: "902 høydemeter og 4,39 km fra Bringsliveien, med skoggrensa på 160 moh, Søndre Nattmålstuva på 493 og bratteste bandet mellom 300 og 400.",
+    },
+  },
+  kistrandtindan: {
+    slug: "kistrandtindan",
+    intro:
+      "976 høydemeter på 3,94 km fra havet på Kistrand: gjennom skogen og opp ryggen sør for Mølnelva til flata ved 480 moh, og nordover til 979-toppen i Kistrandtindan, 982 moh på Kartverkets terrengmodell. Bratteste bandet er 19,1 grader mellom 700 og 800 moh, og bratteste sammenhengende parti 25,8 grader mellom 69 og 89, i skogen nederst. Fri Flyt: «Den sydvendte skiflanken er to kilometer bred!»",
+    ascent: [
+      "Start ved busslomma på Kistrand ved rv. 80, 7 moh. Fri Flyt: «Etter 26,3 km parkerer du på busslommen ved Holmen hø side av vei». Ut.no: «Turen starter fra fotoboksen på rv. 80 på Kistrand.» Nærmeste kartlagte parkeringsplass ligger 863 meter vest.",
+      "Fri Flyt: «Fra parkeringen, gå i nord-nordvestlig retning med sikte på kraftledningen. Når du treffer kratfledningen, drei nordøst 2-300 meter til du treffer starten på ryggformasjonen sør for Mølnelva.» Ut.no: «De første 220 høydemeterne går gjennom skogen og på sørvestsiden av Mølnelva.» Skogen slipper ved 207 moh, 0,94 km fra start. Bratteste parti på turen er nederst, 25,8 grader mellom 69 og 89 moh, og bandet fra 100 til 200 moh måler 16,0 grader. Nord for linja står bergkanter på 63 til 69 grader 44 til 52 meter unna mellom 176 og 340 moh.",
+      "Mølnelva er nærmest ved 1,74 km og 373 moh, 46 meter nordnordøst for linja. Ut.no: «Mølnelva har dannet et markant juv som en kan krysse litt lenger opp ved ca. 430 moh.» Ut.no-sporet krysser juvet og går nordøstover til nabotoppen; Fri Flyts linje til 979-toppen holder seg vest for det. Fri Flyt: «Følg ryggen til flata med tre bjørketrær på 480 moh.» Flata når du på 476 moh etter 2,11 km.",
+      "Fri Flyt: «Fra flata følg jevnt 25 grader bratt terreng i retning nord mot toppen.» Bandene fra 500 til 700 moh måler 16,4 og 13,1 grader, og 700 til 800 er det bratteste, 19,1 grader over 298 meter grunn. Bakken under linja er aldri 35 grader eller brattere i 15 meter sammenhengende, men ved siden av den står celler på 38,6 til 41,6 grader 11 til 32 meter unna mellom 558 og 651 moh. Toppen er slak mot sør, 15,6 grader i snitt over 500 meter, og nesten flat mot øst. Fri Flyts andre perle, p970, ligger 426 meter øst.",
+    ],
+    descent: [
+      "Fri Flyt: «Følger samme vei ned som opp.» Ut.no: «På tur nedover anbefales det å krysset juvet/Mølnelva ved ca. 200 moh. Derfra er det litt enklere å ta seg ned gjennomskogen.» Det gjelder ut.no-linja nord for juvet; går du ned der du gikk opp, er du på sørsida hele veien.",
+      "Toppen faller bratt mot nord, nordvest og vest: 56,9 grader 20 til 80 meter ut mot nord, 56,2 mot nordvest og 48,7 mot vest. Fri Flyt om sørøstflanken mot p970: terrenget vest for sporet der er «rundt 30+ grader i hele den sørøstvendte flanken fra 400-700 moh», og «På dager med skredfaregrad 3 må du holde behørig avstand til sørøstflankene».",
+    ],
+    avalanche: [
+      {
+        title: "Ruta",
+        body: "Bratteste sammenhengende parti er 25,8 grader mellom 69 og 89 moh, og bratteste bandet 19,1 grader fra 700 til 800. Bakken under linja er ikke 35 grader eller brattere i noe sammenhengende strekk på 15 meter. Fri Flyt oppgir 30 grader mellom 350 og 400 moh som bratteste punkt og graderer turen «Lett/Moderat»; ut.no kaller den middels.",
+      },
+      {
+        title: "Terrenget utenfor",
+        body: "Mølnelva har et markant juv nord for linja, og bergkanter på over 60 grader står 44 til 52 meter fra linja under 340 moh. Sørflanken er bred med mange valg, men Fri Flyt advarer om at du utenfor sporet fra 700 til 400 moh «vil … komme inn i terreng som alltid har enkeltheng brattere enn 30 grader». Nord- og vestsida av toppen er 48,7 til 56,9 grader.",
+      },
+      {
+        title: "Før du går",
+        body: "Sjekk dagens skredvarsel for Salten på varsom.no. Salten er en A-region og varsles daglig i sesongen. Ta med sender/mottaker, søkestang og spade.",
+      },
+    ],
+    elevationProfile: {
+      path: "M0,200 L27,197 L54,190 L75,183 L109,174 L125,168 L143,163 L164,157 L192,151 L219,145 L246,137 L264,132 L285,123 L309,115 L332,110 L356,103 L383,92 L404,86 L431,80 L459,70 L479,62 L493,56 L514,47 L534,40 L558,34 L582,24 L600,18",
+      startLabel: "7 moh",
+      endLabel: "982 moh",
+      distanceLabel: "3,9 km",
+      caption: "976 høydemeter og 3,94 km fra Kistrand, med skoggrensa på 207 moh, flata ved 476 og bratteste bandet mellom 700 og 800.",
+    },
+  },
 };
 
 export function getGuide(slug: string): TourGuide | undefined {

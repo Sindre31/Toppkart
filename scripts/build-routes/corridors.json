@@ -12113,5 +12113,257 @@
     "notes": "Fri Flyt oppgir «Farar: Ingen» for normalvegen. Sørsida er solvendt, og Fri Flyt ber deg ta turen tidlig: «Nyt solstrålane i dei kalde månadane og ikkje vent for lenge på sesongen før ein tek turen.» Ved glasert skare kan en utglidning likevel være farlig."
    }
   ]
+ },
+ "kvalhornet": {
+  "routes": [
+   {
+    "id": "nattmalstuva",
+    "name": "Via Søndre Nattmålstuva",
+    "description": "Fra parkeringa ved Bringsliveien langs sørsida av Grytåga, opp ryggen til Søndre Nattmålstuva på 490 moh., øst for Nattmålstuva 634 og nordvestover inn på toppryggen vest for det bratte henget",
+    "trailhead": {
+     "name": "Kvalhornet-parkeringa ved Bringsliveien",
+     "lat": 67.34361,
+     "lng": 15.19936,
+     "elevation_m": 63.3,
+     "fullName": "Kvalhornet-parkeringa ved Bringsliveien"
+    },
+    "waypoints": [
+     {
+      "name": "sørsida av Grytåga",
+      "lat": 67.34531,
+      "lng": 15.19992,
+      "elevation_m": 80.0
+     },
+     {
+      "name": "sørsida av Grytåga",
+      "lat": 67.34815,
+      "lng": 15.19601,
+      "elevation_m": 164.4
+     },
+     {
+      "name": "ryggen sør for Grytåga",
+      "lat": 67.3497,
+      "lng": 15.1887,
+      "elevation_m": 265.2
+     },
+     {
+      "name": "ryggen sør for Grytåga",
+      "lat": 67.35139,
+      "lng": 15.18448,
+      "elevation_m": 351.6
+     },
+     {
+      "name": "Søndre Nattmålstuva",
+      "lat": 67.35283,
+      "lng": 15.17544,
+      "elevation_m": 491.6
+     },
+     {
+      "name": "mot Nattmålstuva 634",
+      "lat": 67.35584,
+      "lng": 15.16934,
+      "elevation_m": 549.0
+     },
+     {
+      "name": "mot Nattmålstuva 634",
+      "lat": 67.35786,
+      "lng": 15.16875,
+      "elevation_m": 600.7
+     },
+     {
+      "name": "øst for Nattmålstuva 634",
+      "lat": 67.36094,
+      "lng": 15.17026,
+      "elevation_m": 647.4
+     },
+     {
+      "name": "nordvestover",
+      "lat": 67.36427,
+      "lng": 15.16679,
+      "elevation_m": 709.9
+     },
+     {
+      "name": "nordvestover",
+      "lat": 67.36892,
+      "lng": 15.16209,
+      "elevation_m": 794.5
+     },
+     {
+      "name": "vest inn på toppryggen",
+      "lat": 67.3715,
+      "lng": 15.1535,
+      "elevation_m": 898.9
+     },
+     {
+      "name": "toppryggen",
+      "lat": 67.3728,
+      "lng": 15.1545,
+      "elevation_m": 950.9
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: «Ikke kom for langt skikjørers venstre mellom 420-280 moh. Grytåga har to markerte dropp (fine isklatre fosser) og bratte Ø-NØ vendte heng som ender i en åpenbar terrengfelle.» Henget mellom 880 og 940 moh er 30 grader og kan omgås vestover. Ut.no: «Dagene med vind på toppen er vel i flertallet.»"
+   }
+  ]
+ },
+ "heggmotinden": {
+  "routes": [
+   {
+    "id": "heggmoen",
+    "name": "Fra Heggmoen via halfpipen",
+    "description": "Fra bommen ved Heggmoen langs skogsvegen og sporet forbi pumpehuset til sletta, nordover gjennom skogen og opp halfpipen til 700 moh., og vestryggen til toppen",
+    "trailhead": {
+     "name": "Bommen ved Heggmoen",
+     "lat": 67.35547,
+     "lng": 14.85967,
+     "elevation_m": 24.0,
+     "fullName": "Bommen ved Heggmoen"
+    },
+    "waypoints": [
+     {
+      "name": "skogsvegen",
+      "lat": 67.35775,
+      "lng": 14.86364,
+      "elevation_m": 69.4
+     },
+     {
+      "name": "veikrysset",
+      "lat": 67.35911,
+      "lng": 14.86658,
+      "elevation_m": 94.9
+     },
+     {
+      "name": "forbi pumpehuset",
+      "lat": 67.36051,
+      "lng": 14.86027,
+      "elevation_m": 130.7
+     },
+     {
+      "name": "sletta",
+      "lat": 67.362,
+      "lng": 14.859,
+      "elevation_m": 197.8
+     },
+     {
+      "name": "nordover gjennom skogen",
+      "lat": 67.365,
+      "lng": 14.861,
+      "elevation_m": 303.4
+     },
+     {
+      "name": "nordover gjennom skogen",
+      "lat": 67.368,
+      "lng": 14.865,
+      "elevation_m": 411.1
+     },
+     {
+      "name": "halfpipen",
+      "lat": 67.371,
+      "lng": 14.8685,
+      "elevation_m": 536.4
+     },
+     {
+      "name": "klippefremspringet på 700",
+      "lat": 67.374,
+      "lng": 14.8705,
+      "elevation_m": 657.1
+     },
+     {
+      "name": "vestryggen",
+      "lat": 67.3752,
+      "lng": 14.874,
+      "elevation_m": 709.0
+     },
+     {
+      "name": "vestryggen",
+      "lat": 67.3756,
+      "lng": 14.877,
+      "elevation_m": 773.2
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: «Vurder forholdene i søkkformasjonen mellom 300-400 moh med tanke på skred. Alternativt trekk ut på ryggen heiskars venstre for søkket.» og «Vær oppmerksom på skavlkanten på toppeggen.» Ut.no (sommer): «pass deg for kanten mot nord». Fri Flyt: tidlig og sent i sesongen dekker snøen dårlig de nederste 200 høydemeterne. Lia ligger i Heggmoen skytefelt; sjekk skyteplanen."
+   }
+  ]
+ },
+ "kistrandtindan": {
+  "routes": [
+   {
+    "id": "kistrand",
+    "name": "Fra Kistrand",
+    "description": "Fra busslomma på Kistrand ved rv. 80 opp gjennom skogen og ryggen sør for Mølnelva til flata ved 480 moh., og nordover til 979-toppen",
+    "trailhead": {
+     "name": "Busslomma på Kistrand",
+     "lat": 67.32276,
+     "lng": 15.08989,
+     "elevation_m": 7.3,
+     "fullName": "Busslomma på Kistrand"
+    },
+    "waypoints": [
+     {
+      "name": "mot kraftledningen",
+      "lat": 67.32558,
+      "lng": 15.08771,
+      "elevation_m": 53.9
+     },
+     {
+      "name": "ryggen sør for Mølnelva",
+      "lat": 67.32868,
+      "lng": 15.08932,
+      "elevation_m": 163.9
+     },
+     {
+      "name": "ryggen sør for Mølnelva",
+      "lat": 67.33027,
+      "lng": 15.084,
+      "elevation_m": 250.4
+     },
+     {
+      "name": "ryggen sør for Mølnelva",
+      "lat": 67.33193,
+      "lng": 15.07607,
+      "elevation_m": 323.6
+     },
+     {
+      "name": "ryggen sør for Mølnelva",
+      "lat": 67.33236,
+      "lng": 15.07219,
+      "elevation_m": 351.6
+     },
+     {
+      "name": "vest for juvet",
+      "lat": 67.333,
+      "lng": 15.0685,
+      "elevation_m": 414.9
+     },
+     {
+      "name": "flata ved 480",
+      "lat": 67.3345,
+      "lng": 15.066,
+      "elevation_m": 476.1
+     },
+     {
+      "name": "nordover",
+      "lat": 67.338,
+      "lng": 15.067,
+      "elevation_m": 603.5
+     },
+     {
+      "name": "nordover",
+      "lat": 67.344,
+      "lng": 15.0675,
+      "elevation_m": 809.8
+     },
+     {
+      "name": "nordover",
+      "lat": 67.347,
+      "lng": 15.0678,
+      "elevation_m": 898.2
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Ut.no: Mølnelva har dannet et markant juv; «På tur nedover anbefales det å krysset juvet/Mølnelva ved ca. 200 moh.» Fri Flyt om flanken mot øst: terrenget ved siden av sporet er rundt 30+ grader i hele den sørøstvendte flanken fra 400 til 700 moh, og «På dager med skredfaregrad 3 må du holde behørig avstand til sørøstflankene». Sørflanken er to kilometer bred med mange valg; hold deg på linja."
+   }
+  ]
  }
 }

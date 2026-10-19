@@ -6791,6 +6791,48 @@ unsourced numbers, 14 band claims all agreeing), `check_treeline`, `check_gain`
 and `check_steepness` with nothing to look at, and `npm run typecheck`, `lint`,
 `test` and `build`.
 
+## The Bodø round
+
+Three tours from Fri Flyt's *Toppturer rundt Bodø*. 201 tours, 239 routes. All
+three summits answer to **Salten** (3016), an A-region. The app had two tours
+around Bodø, Midtitinden and Sandhornet.
+
+| tour | start | summit | gain | km | steepest 100 m band | steepest 30 m | grade |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Kistrandtindan | 7 | 982 | 976 | 3.94 | 19.1° | 25.8° | 2 |
+| Kvalhornet | 63 | 965 | 902 | 4.39 | 18.4° | 24.1° | 2 |
+| Heggmotinden | 24 | 797 | 773 | 3.37 | 16.8° | 23.9° | 2 |
+
+### What was turned away
+
+About thirty Bodø pages in the corpus index describe peaks the app does not
+carry, and most of them are steep: Korsviktinden, Spisstind, Småtindan,
+Sfinxen, Store Åselitinden, Sautinden, Bjørnhatten, Børtinden, Ryptinden, Per
+Kalsatinden, Kjerringtinden, Preikestolhola, the Aurnestindan, Fagertinden,
+Midtiskardstinden and Vassviktinden are 33–50° or ask for crampons.
+Grytviktinden is a two-car round trip. Skjelviknubben, Kvarsnestinden,
+Våtvikfjellet and Isvasstinden had no second source beyond list entries.
+Snefjellet at Misvær and Bonden on Sandhornøya were kept for a later round: the
+only second source for both is a French topo that shares the book's steepness
+figures, and their winter road access is inferred rather than documented.
+
+### Kistrandtindan's top has no name
+
+Fri Flyt's tour goes to «Kistrandtinden p979». The register's Kistrandtindan is
+a label on the south flank at 806 m, so the summit is seeded on the 979 top
+(`SUMMIT_SEED`), which climbs to 981.6 m. Ut.no's track starts at the same lay-by
+and shares the ridge south of Mølnelva to 352 m, then crosses the gorge to a 967
+m top 853 m east; the corridor follows Fri Flyt from there, to the flat at 480 m
+and north. The record says `confidence: medium`.
+
+### Heggmotinden is in a firing range
+
+Kartverket's terrain class along the whole south side of Heggmotinden is
+Skytefelt, and OSM maps Heggmoen skytefelt. The guide tells the reader to check
+the firing schedule, and the treeline is not stated because the terrain class
+cannot show it. The line leaves the forest road where a track goes left 0.53 km
+from the barrier, where Fri Flyt says about 1.5 km; the record says so.
+
 ## Network
 
 Everything is public and unauthenticated:

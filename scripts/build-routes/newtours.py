@@ -241,4 +241,7 @@ NEW_TOURS = {
     "heimdalshoe": ("Heimdalshøe", "Jotunheimen"),
     "nautgardstinden": ("Nautgardstinden", "Jotunheimen"),
     "tylderingen": ("Tylderingen", "Sogn"),
+    "kvalhornet": ("Kvalhornet", "Bodø"),
+    "heggmotinden": ("Heggmotinden", "Bodø"),
+    "kistrandtindan": ("Kistrandtindan", "Bodø"),
 }
