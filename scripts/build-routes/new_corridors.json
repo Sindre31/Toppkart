@@ -11585,5 +11585,307 @@
       "confidence": "medium",
       "notes": "Ut.no 1113693 er ein skitur (SKI_TOURING, med Topptur), sesong desember–mars, retning A–B, 6,5 km og 428 høgdemeter, 5 timar, skriven av Ina Othilie Vikøren i serien «20 innenfor 20». Sporet ut.no publiserer er linja: Skar – Kroken – nordover til Rollveien – Jondalen – vest for Midtkollen – Mellomkollen. Korridoren er festa på punkt frå sporet. Oslo-runden avviste Oslomarka fordi kollene ikkje har høgdemeter verdt eit kort; dette er den eine skildra toppturen der, og linja frå Skar måler 398 høgdemeter til toppen. Confidence medium fordi kilden er éin, og fordi turforslaget namngir ein annan topp enn sporet når."
     }
+  },
+  {
+    "slug": "gotdalsnipa",
+    "verdict": "ok",
+    "rejectReason": "",
+    "corrections": [
+      "Registerets Gotdalsnipa (Fjell, Sunnfjord) løser seg til 1248,4 mot publiserte 1249 — −0,6 m. OSM fører samme topp (node/9980744488, ele 1249).",
+      "Fri Flyt 3.7.1: «På Dalebø startar du turen ved å følgje traktorvegen vel 200 meter før du tek av til høgre, og følgjer lia skrått opp i nordaustleg retning. Etter å ha passert Fjellstøylen, held du fram i same retning mot Fossegrova som du følgjer oppover på austsida mot Nonsnipa (1110 moh.).» Traktorvegen fra Dalebø er OSM way/517683366; Fjellstøylen er registerets seter (61.56141/6.27268, 590,7 moh); Fri Flyts «Fossegrova» heter Fossgrova i OSM (way/625460264) og finnes ikke i registeret under noen av navnene; Nonsnipa er registerets og OSMs (ele 1110), DTM1 leser 1106,9.",
+      "Andrekilde 1, skifantomet.wordpress.com: «Rute 1 er via Dalebø, Fjellstøylen, Høgemannsholten, Nonsnipa og vidare opp til Gotdalsnipa … Startstedet er Indrebø for både rute 1 og 2.» Høgemannsholten (OSM node/9980744492, ele 1016) ligger vest for Fossgrova; Fri Flyt sender deg opp på austsida av grova, og korridoren følger Fri Flyt.",
+      "Andrekilde 2, Fjord Norway: «Fra Fjellstøylen kan du starte oppturen til Gotdalsnipa på 1249 m.o.h.. Du starter på omtrent 250 m.o.h, og får nesten tusen høydemeter med prima topptur-terreng. Fra toppen er den beste nedkjøringen nordvendt.» Fri Flyt gir nedkjøringa sørover i Steinbotnen (3.7.2); de to er uenige om nedkjøringa, ikke om oppturen.",
+      "1248,4 − 277,0 = 971 mot Fri Flyts 970 høydemeter."
+    ],
+    "corridor": {
+      "routeId": "fjellstoylen",
+      "routeName": "Opp via Fjellstøylen",
+      "routeDescriptionFull": "Fra toppturparkeringa ved Ålhus over brua til Dalebø, traktorvegen et stykke, lia skrått opp mot nordøst forbi Fjellstøylen, opp østsida av Fossgrova mot Nonsnipa og ryggen til Gotdalsnipa",
+      "trailhead": {
+        "name": "Ålhus toppturparkering",
+        "lat": 61.54956,
+        "lng": 6.26109,
+        "elevationM": 277.0,
+        "osmEvidence": "Fri Flyt: «Ta av E39 ved Ålhus og følg Fv454 til toppturparkering ved brua mellom Indrebø og Dalebø. Parkering mot avgift på toppturparkering.» Brua er OSM way/517683349 («Øvrebø I», Ålhusvegen fv. 5688, old_ref 454). Parkeringa er ikke kartlagt i OSM; startpunktet er krysset rett vest for brua der skogsvegen mot Gotdalsstøylen (way/376761002) tar av. DTM1 leser 277,0 moh; Fri Flyt oppgir starthøyde 280."
+      },
+      "waypoints": [
+        {
+          "name": "Dalebø traktorvegen",
+          "lat": 61.55012,
+          "lng": 6.26574,
+          "elevationM": 293.3
+        },
+        {
+          "name": "Fjellstøylen",
+          "lat": 61.56141,
+          "lng": 6.27268,
+          "elevationM": 590.7
+        },
+        {
+          "name": "Fossgrova austside",
+          "lat": 61.576,
+          "lng": 6.281,
+          "elevationM": 904.7
+        },
+        {
+          "name": "Nonsnipa",
+          "lat": 61.58315,
+          "lng": 6.28765,
+          "elevationM": 1106.9
+        }
+      ],
+      "season": "des–apr",
+      "aspect": "S",
+      "grade": 2,
+      "gradeReason": "Fri Flyt: oppturen er «Enkelt, E1» og «Litt vanskeleg» med 25–28 grader som bratteste (370–560 moh.), men nedkjøringa i Steinbotnen er «Utfordrande» med 30–34 grader. 970 høydemeter og 3–6 timer. Grad 2.",
+      "roadClosedInWinter": false,
+      "hazardNotes": "Fri Flyt: bratteste på oppturen 25–28 grader mellom 370 og 560 moh., i skoglia over Dalebø. Nedkjøringa rett sør fra toppen ned i Steinbotnen er «Utfordrande» med 30–34 grader mellom 1140 og 980 moh.; vil du ha slakere terreng, følger du ryggen ned mot skaret før Nonsnipa. Skifantomet: skredfare i Ålhusdalen, der det «kommer i løpet vinteren store snøskred ned … ifrå fjellsidene (Blåfjellet, Sølvet og Trollet)» — det er dalen vest for ruta, ikke ruta selv.",
+      "teaserNo": "",
+      "teaserEn": "",
+      "sources": [
+        "https://www.friflyt.no/topptur/skiturer-sunnfjord/turbeskrivelse-gotdalsnipa",
+        "https://skifantomet.wordpress.com/turbeskrivelse-til-toppturer/",
+        "https://www.fjordnorway.com/no/reiseinspirasjon/sunnfjord---det-nye-skiparadiset"
+      ],
+      "confidence": "high",
+      "notes": "Fri Flyt (Toppturer i Sunnfjord, Leif Kapstad) 3.7.1 er hovedkilden: start ved brua mellom Indrebø og Dalebø, 280 moh., 970 høydemeter, 3–6 timer, desember–april, sør. To uavhengige andrekilder beskriver samme opptur: skifantomet (Dalebø – Fjellstøylen – Høgemannsholten – Nonsnipa – toppen) og Fjord Norway (fra Fjellstøylen, nesten tusen høydemeter)."
+    }
+  },
+  {
+    "slug": "gronlifjellet",
+    "verdict": "ok",
+    "rejectReason": "",
+    "corrections": [
+      "Registerets Grønlifjellet (Fjell, Sunnfjord) har punktet sitt 450 m øst for toppen; toppsøket klatret til 61.59718/6.22043, 1385,7 mot publiserte 1385 — +0,7 m.",
+      "Fri Flyt 3.6.1: «Den første delen av turen følgjer du traktorvegen vel fire kilometer til Gotdalsstøylen. Frå stølen finn du det slakaste terrenget ved å gå noko nordaustover, og opp i Tolsbotnen. Derifrå held du høgda over i Litlebotnen … Frå Litlebotnen følgjer du ryggen som stig i nordvestleg retning opp mot toppen.» Skogsvegen er OSM way/376761002, 376761006, 376761024 og 376761063 (trailblazed); Gotdalsstøylen (562,8), Tolsbotnen (803,0) og Litlebotn (900,6) er alle registerførte. Fri Flyt skriver «Litlebotnen»; registeret har «Litlebotn».",
+      "Sørøstryggen er målt fra toppen med en kamsøk vinkelrett på peiling 135°: 1311 moh. 200 m ut, 1229 ved 400, 1171 ved 600, 1124 ved 800, 1047 ved 1000 og 968 ved 1100 m. Korridoren går fra Litlebotn opp på ryggen ved 1047,8 (61.5920/6.2363) og følger den til toppen. Fri Flyts bratteste parti, 27–30 grader ved 900–1000 og 1230–1340 moh., ligger på de to stedene: kneika fra Litlebotn opp på ryggen, og øvre del av ryggen.",
+      "Andrekilde 1, ut.no 113714279 (fottur, juli–oktober): «Frå toppturparkeringa på Indrebø på Ålhus går du i nordleg retning på skogsvegen … heilt fram til idylliske Gotdalsstøylen. Frå støylen held du fram i nordleg retning … dreiar du i austleg retning opp mot Tolsbotnen.» Samme linje fra samme parkering til Tolsbotnen.",
+      "Andrekilde 2, Fjord Norway nevner Grønlifjellet fra Gotdalsnipa: «Grønlifjellet, som tilfeldigvis også er et utmerket toppturfjell, et godt mål for deg som søker en lengre og råere tur.»",
+      "1385,7 − 277,0 = 1109 mot Fri Flyts 1105 høydemeter."
+    ],
+    "corridor": {
+      "routeId": "litlebotn",
+      "routeName": "Via Litlebotn og sørøstryggen",
+      "routeDescriptionFull": "Fra toppturparkeringa ved Ålhus skogsvegen vel fire kilometer til Gotdalsstøylen, nordøstover opp i Tolsbotnen, over i Litlebotn og sørøstryggen til toppen av Grønlifjellet",
+      "trailhead": {
+        "name": "Ålhus toppturparkering",
+        "lat": 61.54956,
+        "lng": 6.26109,
+        "elevationM": 277.0,
+        "osmEvidence": "Fri Flyt: «Ta av E39 ved Ålhus og følg Fv454 til toppturparkering ved brua mellom Indrebø og Dalebø. Parkering mot avgift på toppturparkering.» Brua er OSM way/517683349 («Øvrebø I», Ålhusvegen fv. 5688, old_ref 454). Parkeringa er ikke kartlagt i OSM; startpunktet er krysset rett vest for brua der skogsvegen mot Gotdalsstøylen (way/376761002) tar av. DTM1 leser 277,0 moh; Fri Flyt oppgir starthøyde 280."
+      },
+      "waypoints": [
+        {
+          "name": "skogsvegen",
+          "lat": 61.55493,
+          "lng": 6.2609,
+          "elevationM": 298.5
+        },
+        {
+          "name": "skogsvegen ved kraftverket",
+          "lat": 61.56225,
+          "lng": 6.26052,
+          "elevationM": 322.9
+        },
+        {
+          "name": "skogsvegen",
+          "lat": 61.56601,
+          "lng": 6.26328,
+          "elevationM": 394.4
+        },
+        {
+          "name": "skogsvegen i Ålhusdalen",
+          "lat": 61.57303,
+          "lng": 6.25008,
+          "elevationM": 527.4
+        },
+        {
+          "name": "Gotdalsstøylen",
+          "lat": 61.58055,
+          "lng": 6.25456,
+          "elevationM": 562.8
+        },
+        {
+          "name": "Tolsbotnen",
+          "lat": 61.59327,
+          "lng": 6.26062,
+          "elevationM": 803.0
+        },
+        {
+          "name": "Litlebotn",
+          "lat": 61.59629,
+          "lng": 6.24666,
+          "elevationM": 900.6
+        },
+        {
+          "name": "sørøstryggen",
+          "lat": 61.592,
+          "lng": 6.2363,
+          "elevationM": 1047.8
+        },
+        {
+          "name": "sørøstryggen",
+          "lat": 61.59296,
+          "lng": 6.23298,
+          "elevationM": 1126.3
+        }
+      ],
+      "season": "jan–apr",
+      "aspect": "SØ",
+      "grade": 3,
+      "gradeReason": "Fri Flyt: «Utfordrande, E2», «Ganske vanskeleg», 27–30 grader på to steder, 1105 høydemeter og 5–10 timer. «Ruta opp egga kan opplevast brattare enn målingane tilseier på grunn av at egga er nokså smal med skavlar mot aust», og «Om snøen er hard kan du under oppstigninga måtte bruke skarejarn». Grad 3.",
+      "roadClosedInWinter": false,
+      "hazardNotes": "Fri Flyt: øvre del av egga er smal med skavler mot øst og kan oppleves brattere enn målingene; i hard snø kan du måtte bruke skarejern eller gå til fots. Nedkjøringa fra toppen øst mot Litlebotnen: «Dei første ti høgdemetrane frå toppen kan vere bratte, 35-40 grader avhengig av snøforhold/skavldanning», med 34–36 grader mellom 1070 og 1000 moh. Anmarsjen er vel fire kilometer skogsveg — lang dag. Litlebottsegga nord for Litlebotn har skavldanning langs ryggen fra 990 moh.",
+      "teaserNo": "",
+      "teaserEn": "",
+      "sources": [
+        "https://www.friflyt.no/topptur/skiturer-sunnfjord/turbeskrivelse-groenlifjellet-og-litlebottsegga",
+        "https://ut.no/turforslag/113714279",
+        "https://www.fjordnorway.com/no/reiseinspirasjon/sunnfjord---det-nye-skiparadiset"
+      ],
+      "confidence": "medium",
+      "notes": "Fri Flyt (Toppturer i Sunnfjord) 3.6.1 er hovedkilden, med start ved samme toppturparkering som Gotdalsnipa, 280 moh., 1105 høydemeter, 5–10 timer, januar–april. Ut.no 113714279 er en sommersti langs samme linje til Tolsbotnen og bekrefter starten og skogsvegen; Fjord Norway nevner fjellet som toppturmål. Ingen andrekilde beskriver den siste delen fra Litlebotn opp sørøstryggen, og derfor er confidence medium."
+    }
+  },
+  {
+    "slug": "eggja",
+    "verdict": "corrected",
+    "rejectReason": "",
+    "corrections": [
+      "Fri Flyt kaller målet «Ørnafjellet på 1209 moh.», og ut.no 115227 kaller det «den austlege toppen på fjellpartiet Rimmane, og den ligg 1209 moh». Begge peker på 1209-toppen, som N50 og OSM kaller Eggja (node/3888574483, ele 1209). Registerets Ørnafjellet (61.42526/6.24416) er en annen topp, 1226 i OSM og 1228,3 på DTM1, 1,1 km lenger øst bak et skar som kamsøket leser til 1111 moh. Ingen av kildene går dit, og stigningen begge oppgir (680 og 666 m fra 535) passer med 1209-toppen og ikke med 1228. Turen slutter der kildene slutter, under kartets navn.",
+      "Eggja finnes ikke i registeret. Toppsøket startet fra OSM-punktet og klatret til 61.42301/6.22375, 1204,0 mot N50s 1209 — −5,0 m.",
+      "Fri Flyt 6.2.1: «Frå parkeringa går du nordover til du passerer Fjelltjønna, og deretter går du eit lite stykke nordaust mot ryggformasjonen du skal følgje vidare i nordvestleg retning. Når terrenget vert slakare, legg du sporet nordover mot toppen av fjellrekka og deretter austover.» Fjelltjønna er registerets og OSMs (relation/5731416, ele 552). Ut.no: «går vidare på små hamrar med fjelltjønna på venstre side» — linja går øst for tjernet.",
+      "Ryggen nord for Fjelltjønna er lest fra DTM1 i et 200 m-rutenett: 645,6 moh. ved 61.4100/6.2270, 932,7 ved 61.4160/6.2230 og 1134,5 ved 61.4200/6.2210, der det flater ut før kammen. Kammen nås ved 1200,6 rett vest for toppen.",
+      "Ut.no 115227 (fottur, mai–september) starter «på Rørvikfjellet der gamlevegen møter fv 13» og nevner «ei rås i ein bratt berghammar der det for enkelte kan virke litt skummelt. Her kan du heller velje å runde til høgre under fjellhammaren». Det er sommerstien; Fri Flyts vinterlinje følger ryggformasjonen.",
+      "1204,0 − 541,7 = 662 mot Fri Flyts 680 og ut.no sine 666 høydemeter."
+    ],
+    "corridor": {
+      "routeId": "fjelltjonna",
+      "routeName": "Opp via Fjelltjønna",
+      "routeDescriptionFull": "Fra parkeringa på toppen av Rørvikfjellet nordover forbi Fjelltjønna, nordøst til ryggformasjonen og den mot nordvest, og over kammen til Eggja, østtoppen på Rimmane",
+      "trailhead": {
+        "name": "Rørvikfjellet",
+        "lat": 61.40309,
+        "lng": 6.2253,
+        "elevationM": 541.7,
+        "osmEvidence": "Fri Flyt: «Parkeringsplass finn du på toppen av Rørvikfjellet, 100 meter frå Rørvik fjellstove i retning Førde.» OSM node/9804117203 (amenity=parking, asfalt) ligger 136 m nord for registerets Rørvik fjellstove (61.40187/6.22597), ved Holsavegen fv. 613 mot Førde. Fjord Norway: «I vintermånedene har du tilgang til Rørvikfjellet og Haukedalen» — det er Gaularfjellet videre sør som først åpner i april/mai. DTM1 leser 541,7 moh; Fri Flyt oppgir 535 og 540."
+      },
+      "waypoints": [
+        {
+          "name": "øst for Fjelltjønna",
+          "lat": 61.4072,
+          "lng": 6.224,
+          "elevationM": 576.9
+        },
+        {
+          "name": "ryggformasjonen",
+          "lat": 61.41,
+          "lng": 6.227,
+          "elevationM": 645.6
+        },
+        {
+          "name": "ryggen",
+          "lat": 61.416,
+          "lng": 6.223,
+          "elevationM": 932.7
+        },
+        {
+          "name": "der det flater ut",
+          "lat": 61.42,
+          "lng": 6.221,
+          "elevationM": 1134.5
+        }
+      ],
+      "season": "des–apr",
+      "aspect": "S",
+      "grade": 2,
+      "gradeReason": "Fri Flyt: «UTFORDRANDE, E1», «Ganske vanskeleg», bratteste 27–32 grader mellom 1000 og 1100 moh., 680 høydemeter og 2–4 timer. Grad 2.",
+      "roadClosedInWinter": false,
+      "hazardNotes": "Fri Flyt: bratteste parti 27–32 grader mellom 1000 og 1100 moh. Sommerstien går gjennom «ei rås i ein bratt berghammar» som ut.no sier kan virke skummel; vinterlinja følger ryggformasjonen. Dei sørvendte sidene fra Rimmane får sol og løses lett opp på varme dager. Nedkjøringa kan gå samme vei eller på mange linjer mellom toppen og høyden på 1125 moh. langs Rimmane.",
+      "teaserNo": "",
+      "teaserEn": "",
+      "sources": [
+        "https://www.friflyt.no/topptur/skiturer-sunnfjord/turbeskrivelse-oernafjellet",
+        "https://ut.no/turforslag/115227",
+        "https://www.fjordnorway.com/no/reiseinspirasjon/sunnfjord---det-nye-skiparadiset"
+      ],
+      "confidence": "medium",
+      "notes": "Fri Flyt (Toppturer i Sunnfjord) 6.2.1 er hovedkilden: start på toppen av Rørvikfjellet, 535 moh., 680 høydemeter, 2–4 timer, desember–april, snøsikker tidlig i sesongen. Ut.no 115227 er sommerstien fra samme fjellovergang til samme topp. Fjord Norway nevner «Ørnefjellet» fra Rørvikfjellet fjellstove som en snøsikker tur lokale går allerede i november og desember. Confidence medium fordi navnet på toppen er ulikt i alle tre kildene og kartet."
+    }
+  },
+  {
+    "slug": "venevassegga",
+    "verdict": "ok",
+    "rejectReason": "",
+    "corrections": [
+      "Registerets Venevassegga (Fjell, Sunnfjord) løser seg til 1023,6 mot publiserte 1023 — +0,6 m. OSM fører samme topp (node/2956877153, ele 1023).",
+      "Fri Flyt 6.1.1: «Turen startar ved fjellstova og går i oversiktleg terreng sørvestover langs ein lang avrunda rygg. Du passerer nord for Svartenova, og går vidare opp i skaret der ryggen deler seg. Dette skaret vert kalla Jakobskardet. Du følgjer ryggen sørover for å komme til Venevassegga.» Svartenova er registerets Topp (61.39078/6.19949, 838,6 moh.); Jakobskardet finnes ikke i registeret og er festet der ryggen deler seg mellom grenen nordvest mot Rundenova (Topp, 61.39211/6.17375, 901,3) og grenen sør mot Venevassegga — 61.3905/6.1915, 792,8 moh., lest fra DTM1-rutenettet.",
+      "Andrekilde, Fjord Norway: «En enklere tur venter deg i sør på Venevassegga, begge snøsikre turer som lokale går allerede i november og desember.»",
+      "1023,6 − 541,7 = 482 mot Fri Flyts 490 høydemeter."
+    ],
+    "corridor": {
+      "routeId": "jakobskardet",
+      "routeName": "Via Jakobskardet",
+      "routeDescriptionFull": "Fra Rørvik fjellstove sørvestover langs den lange ryggen, nord for Svartenova, opp i Jakobskardet og ryggen sørover til Venevassegga",
+      "trailhead": {
+        "name": "Rørvikfjellet",
+        "lat": 61.40309,
+        "lng": 6.2253,
+        "elevationM": 541.7,
+        "osmEvidence": "Fri Flyt: «Parkeringsplass finn du på toppen av Rørvikfjellet, 100 meter frå Rørvik fjellstove i retning Førde.» OSM node/9804117203 (amenity=parking, asfalt) ligger 136 m nord for registerets Rørvik fjellstove (61.40187/6.22597), ved Holsavegen fv. 613 mot Førde. Fjord Norway: «I vintermånedene har du tilgang til Rørvikfjellet og Haukedalen» — det er Gaularfjellet videre sør som først åpner i april/mai. DTM1 leser 541,7 moh; Fri Flyt oppgir 535 og 540."
+      },
+      "waypoints": [
+        {
+          "name": "ryggen",
+          "lat": 61.3995,
+          "lng": 6.216,
+          "elevationM": 645.6
+        },
+        {
+          "name": "ryggen",
+          "lat": 61.396,
+          "lng": 6.208,
+          "elevationM": 694.9
+        },
+        {
+          "name": "nord for Svartenova",
+          "lat": 61.3925,
+          "lng": 6.1985,
+          "elevationM": 735.9
+        },
+        {
+          "name": "Jakobskardet",
+          "lat": 61.3905,
+          "lng": 6.1915,
+          "elevationM": 792.8
+        },
+        {
+          "name": "ryggen sørover",
+          "lat": 61.384,
+          "lng": 6.187,
+          "elevationM": 908.1
+        },
+        {
+          "name": "ryggen sørover",
+          "lat": 61.379,
+          "lng": 6.185,
+          "elevationM": 986.5
+        }
+      ],
+      "season": "des–mai",
+      "aspect": "N",
+      "grade": 1,
+      "gradeReason": "Fri Flyt: «Enkelt, E1, L», «Lett. Stor jamn side med svak helling», bratteste 26–30 grader i et kort parti mellom 575 og 600 moh., 490 høydemeter og 2–4 timer. «Denne turen passar også fint som fjellskitur.» Grad 1.",
+      "roadClosedInWinter": false,
+      "hazardNotes": "Fri Flyt: bratteste parti er kort, 26–30 grader mellom 575 og 600 moh., like over fjellstova; resten er en lang avrundet rygg i oversiktlig terreng. Ryggen er snaufjell uten ly og orienteringen i skodde er det som teller. Nedkjøringa går vanligvis samme vei.",
+      "teaserNo": "",
+      "teaserEn": "",
+      "sources": [
+        "https://www.friflyt.no/topptur/skiturer-sunnfjord/turbeskrivelse-venevassegga-og-rundenova",
+        "https://www.fjordnorway.com/no/reiseinspirasjon/sunnfjord---det-nye-skiparadiset"
+      ],
+      "confidence": "medium",
+      "notes": "Fri Flyt (Toppturer i Sunnfjord) 6.1.1 er hovedkilden: start ved Rørvik fjellstove, 540 moh., 490 høydemeter, 2–4 timer, desember–mai, nordvendt. Fjord Norway nevner Venevassegga som den enklere turen fra Rørvikfjellet. Andrekilden bekrefter mål og start, ikke linja, og derfor er confidence medium. Jakobskardet er ikke i registeret."
+    }
   }
 ]

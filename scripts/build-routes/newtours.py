@@ -228,4 +228,9 @@ NEW_TOURS = {
     # — Oslo-runden, del to —
     "heddersfjell": ("Heddersfjell", "Telemark"),
     "mellomkollen": ("Mellomkollen", "Oslo"),
+    # — Sunnfjord-runden —
+    "gotdalsnipa": ("Gotdalsnipa", "Sunnfjord"),
+    "gronlifjellet": ("Grønlifjellet", "Sunnfjord"),
+    "eggja": ("Eggja", "Sunnfjord"),
+    "venevassegga": ("Venevassegga", "Sunnfjord"),
 }
