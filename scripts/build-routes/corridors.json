@@ -11933,7 +11933,7 @@
    {
     "id": "maurvangen",
     "name": "Fra Maurvangen",
-    "description": "Fra Maurvangen Fjellpark sørover opp gjennom bjørkeskogen, over Brurskardbekken, opp på Molflyhalsen og ryggen østover til toppen",
+    "description": "Fra Maurvangen Fjellpark sørover opp gjennom bjørkeskogen, langs Brurskardbekken, opp på Molflyhalsen og ryggen østover til toppen",
     "trailhead": {
      "name": "Maurvangen Fjellpark",
      "lat": 61.48883,
@@ -11955,7 +11955,7 @@
       "elevation_m": 1065.1
      },
      {
-      "name": "over Brurskardbekken",
+      "name": "langs Brurskardbekken",
       "lat": 61.472,
       "lng": 8.838,
       "elevation_m": 1138.9
@@ -12045,6 +12045,24 @@
       "lat": 61.6038,
       "lng": 8.77,
       "elevation_m": 2035.7
+     },
+     {
+      "name": "østryggen",
+      "lat": 61.6036,
+      "lng": 8.766,
+      "elevation_m": 2101.2
+     },
+     {
+      "name": "østryggen",
+      "lat": 61.6034,
+      "lng": 8.7625,
+      "elevation_m": 2164.6
+     },
+     {
+      "name": "østryggen",
+      "lat": 61.60337,
+      "lng": 8.761,
+      "elevation_m": 2214.8
      }
     ],
     "source": "researched, verified (ok), no local audit",

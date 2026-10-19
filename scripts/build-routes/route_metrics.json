@@ -3138,18 +3138,18 @@
  "nautgardstinden": {
   "verticalM": 1390,
   "gainM": 1387,
-  "distanceM": 9647,
+  "distanceM": 9596,
   "startM": 874,
   "summitM": 2257,
   "duration": "7–9 t",
-  "steepestBandAngle": 17.2,
-  "steepestBandFrom": 2200,
-  "steepestBandTo": 2300,
-  "maxStepAngle": 24.2,
-  "grade": 2,
+  "steepestBandAngle": 18.3,
+  "steepestBandFrom": 2100,
+  "steepestBandTo": 2200,
+  "maxStepAngle": 30.0,
+  "grade": 3,
   "aspect": "Ø",
   "distanceKm": 9.6,
-  "cumdistM": 9647
+  "cumdistM": 9596
  },
  "tylderingen": {
   "verticalM": 610,

@@ -12401,7 +12401,7 @@
     "corridor": {
       "routeId": "maurvangen",
       "routeName": "Fra Maurvangen",
-      "routeDescriptionFull": "Fra Maurvangen Fjellpark sørover opp gjennom bjørkeskogen, over Brurskardbekken, opp på Molflyhalsen og ryggen østover til toppen",
+      "routeDescriptionFull": "Fra Maurvangen Fjellpark sørover opp gjennom bjørkeskogen, langs Brurskardbekken, opp på Molflyhalsen og ryggen østover til toppen",
       "trailhead": {
         "name": "Maurvangen Fjellpark",
         "lat": 61.48883,
@@ -12423,7 +12423,7 @@
           "elevationM": 1065.1
         },
         {
-          "name": "over Brurskardbekken",
+          "name": "langs Brurskardbekken",
           "lat": 61.472,
           "lng": 8.838,
           "elevationM": 1138.9
@@ -12465,8 +12465,8 @@
       "gradeReason": "Fri Flyt: «KAST 1 – Enkelt», bratteste punkt under 30 grader, 1000 høydemeter og 4,5 timer; «Slakt og oversiktlig terreng, der det sjelden ligger mye snø.» Grad 1.",
       "roadClosedInWinter": false,
       "hazardNotes": "Fri Flyt: «Vær obs på trange og dype bekkefar som samler lange, harde og bratte skavler. Nordvendt bolle i toppen mellom Heimdalshø og vesttoppen 1732 moh, kan samle store mengder snø, og bør bare kjøres på senvinteren og våren.» Snaufjellet over skogen er vindutsatt.",
-      "teaserNo": "880 høydemeter fra Maurvangen: opp gjennom bjørkeskogen, over Brurskardbekken og Molflyhalsen-ryggen til toppen — slakt og oversiktlig, med utsikt over Jotunheimen.",
-      "teaserEn": "880 metres of ascent from Maurvangen: up through the birch forest, across Brurskardbekken and along the Molflyhalsen ridge to the top — gentle and open, with a view over Jotunheimen.",
+      "teaserNo": "880 høydemeter fra Maurvangen: opp gjennom bjørkeskogen, langs Brurskardbekken og opp Molflyhalsen-ryggen til toppen — slakt og oversiktlig, med utsikt over Jotunheimen.",
+      "teaserEn": "880 metres of ascent from Maurvangen: up through the birch forest, along Brurskardbekken and up the Molflyhalsen ridge to the top — gentle and open, with a view over Jotunheimen.",
       "sources": [
         "https://www.friflyt.no/topptur/skiturer-jotunheimen/turbeskrivelse-heimdalshoee",
         "https://bessheim.no/2017/09/04/heimdalsho/?lang=en",
@@ -12486,7 +12486,8 @@
       "Fri Flyt: «Start med å gå vestover mot Steinhøe og hold til høyre for det brattere terrenget under Russlirundhøe, før du kommer inn på et flatere parti. Herfra stiger det brattere opp mot Nautgardstindene. Austre Nautgardstinden ligger til høyre, hovedtoppen til venstre. Det kan være greit å sette fra seg skiene før det siste bratte partiet mot toppen.» Steinhøe er OSM node/9980744393 (61.59573/8.87339), Russlirundhøe node/9980744405 (61.59506/8.82213) og Austre Nautgardstinden node/3223597468 (61.61073/8.77111). Korridoren går nord for Russlirundhøe og topp 1831 (node/11431614845), over flata vest for dem og opp østryggen til hovedtoppen.",
       "Andrekilde, Scandinavian Mountains (James Baxter): «Riksveg 51. This is especially attractive as a winter option as the road here is usually accessible throughout the winter» — vinterruta går fra Heimsand opp Russdalen og Nørdre Tverråe, over skulderen 1784 og til sadelen mellom Nautgardstinden og Austre Nautgardstinden: «The last section of the east ridge is relatively steep but should not be a problem in the summer or winter (provided it is not icy).» Den går sør for Russlirundhøe der Fri Flyt går nord, men møter Fri Flyts linje på østsida av toppen og deler siste stykket opp østryggen.",
       "2257,1 − 874,3 = 1383 mot Fri Flyts 1260 høydemeter; Fri Flyt oppgir ingen starthøyde.",
-      "check_new_corridors: «OSM unreachable, unchecked» — Overpass svarte 500. Parkeringa er kartlagt (way/528959454, amenity=parking, fee=no), lest direkte fra OSM-API-et. Baxter, Glitterheim-ruta: «During the spring, the rim of this corrie sports some huge cornices» og «The last section up to the peak usually has a poor covering of snow in the spring and it is often necessary to remove skis»."
+      "check_new_corridors: «OSM unreachable, unchecked» — Overpass svarte 500. Parkeringa er kartlagt (way/528959454, amenity=parking, fee=no), lest direkte fra OSM-API-et. Baxter, Glitterheim-ruta: «During the spring, the rim of this corrie sports some huge cornices» og «The last section up to the peak usually has a poor covering of snow in the spring and it is often necessary to remove skis».",
+      "Den uavhengige lesingen: de siste 300 m av første ruting gikk langs kanten av nordbotnen, 0–20 m fra 42–53 grader. Tre punkter på østryggen (61.6036/8.7660 2101,2; 61.6034/8.7625 2164,6; 61.60337/8.7610 2214,8 moh) legger linja 50–130 m fra kanten."
     ],
     "corridor": {
       "routeId": "russlie",
@@ -12535,6 +12536,24 @@
           "lat": 61.6038,
           "lng": 8.77,
           "elevationM": 2035.7
+        },
+        {
+          "name": "østryggen",
+          "lat": 61.6036,
+          "lng": 8.766,
+          "elevationM": 2101.2
+        },
+        {
+          "name": "østryggen",
+          "lat": 61.6034,
+          "lng": 8.7625,
+          "elevationM": 2164.6
+        },
+        {
+          "name": "østryggen",
+          "lat": 61.60337,
+          "lng": 8.761,
+          "elevationM": 2214.8
         }
       ],
       "season": "feb–mai",
@@ -12543,8 +12562,8 @@
       "gradeReason": "Fri Flyt: «KAST 1 – Enkelt», bratteste punkt under 25 grader, 1260 høydemeter, 10 km og 6 timer, men «Det kan være greit å sette fra seg skiene før det siste bratte partiet mot toppen», og Baxter kaller siste stykket av østryggen «relatively steep». Lang dag til 2258 moh. Grad 2, ikke 1.",
       "roadClosedInWinter": false,
       "hazardNotes": "Fri Flyt: «Bratt terreng rundt toppen. Hold god avstand til skavel på nordvestsiden.» Fri Flyt: «Vær oppmerksom på det bratte partiet under Russlirundhøe.» Baxter: om våren har botnkanten nord for toppen «some huge cornices», og siste stykket opp til toppen har ofte dårlig snødekke, så skiene må ofte av; siste del av østryggen er brattere og kan være islagt.",
-      "teaserNo": "1390 høydemeter fra Russlie i Sjodalen: vestover mot Steinhøe, nord for Russlirundhøe og opp østryggen til en av Jotunheimens høyeste — slakt det meste av veien.",
-      "teaserEn": "1390 metres of ascent from Russlie in Sjodalen: west towards Steinhøe, north of Russlirundhøe and up the east ridge to one of Jotunheimen's highest — gentle most of the way.",
+      "teaserNo": "1390 høydemeter fra Russlie i Sjodalen: vestover mot Steinhøe, nord for Russlirundhøe og opp østryggen til toppen på 2257 moh — slakt det meste av veien, bratt det siste stykket.",
+      "teaserEn": "1390 metres of ascent from Russlie in Sjodalen: west towards Steinhøe, north of Russlirundhøe and up the east ridge to the summit at 2257 m — gentle most of the way, steep at the end.",
       "sources": [
         "https://www.friflyt.no/topptur/skiturer-jotunheimen/turbeskrivelse-nautgardstinden",
         "https://scandinavianmountains.com/areas/12-sj%C3%B8dalen/mountains/12.01-nautgardstind/alternative.htm",
@@ -12561,7 +12580,7 @@
     "rejectReason": "",
     "corrections": [
       "Registerets Tylderingen (Fjell, Sogndal) løser seg til 1104,5 mot publiserte 1104 — +0,5 m. OSM fører samme topp (node/2214298702, natural=peak, ele 1104). Fri Flyt skriver både «Tyldringen» og «Tylderingen»; registeret og OSM har Tylderingen.",
-      "Fri Flyt 24.1: «Frå den vestlegaste garden går ein over jordet til stølen Tråna. Herfrå er det ope kulturlandskap opp til tregrensa. Oppturen følgje den sørlegaste ryggformasjonen oppover. Kring 1050 moh går ein på vestsida av ryggen til ein kjem til toppen.» Stølen Tråna finnes ikke i stedsnavnregisteret ved Fretland; korridoren går over jordet nord for gardene og følger den sørligste ryggen, på vestsida av den fra 1059 moh.",
+      "Fri Flyt 24.1: «Frå den vestlegaste garden går ein over jordet til stølen Tråna. Herfrå er det ope kulturlandskap opp til tregrensa. Oppturen følgje den sørlegaste ryggformasjonen oppover. Kring 1050 moh går ein på vestsida av ryggen til ein kjem til toppen.» Stølen Tråna er registerets Seter/støl 61.27545/7.02854 (OSM node/10176204199), og linja passerer 26 m fra den; korridoren går over jordet nord for gardene og følger den sørligste ryggen, på vestsida av den fra 1059 moh.",
       "Andrekilde, fjordpeaks.com (Arnt Flatmo, 14. januar 2017): «We drove up to Fretland, and were the first skiers to park for the day. As we had reckoned, tracks were leading up the mountain.» og «This was a fairly short trip – 3,2km up to the summit and just less than 600 vertical meters.» Den bekrefter start, lengde og høydemeter, ikke linja i detalj.",
       "1104,5 − 495,2 = 609 mot Fri Flyts 604 høydemeter.",
       "check_new_corridors: «OSM unreachable, unchecked» — Overpass svarte 500. Parkeringa er kartlagt (node/2324484176, amenity=parking), lest direkte fra OSM-API-et."
@@ -12609,7 +12628,7 @@
       "gradeReason": "Fri Flyt: «E1, L», «Lett», bratteste punkt under 30 grader, 604 høydemeter og 2–4 timer, «Farar: Ingen». Grad 1.",
       "roadClosedInWinter": false,
       "hazardNotes": "Fri Flyt oppgir «Farar: Ingen» for normalvegen. Sørsida er solvendt, og Fri Flyt ber deg ta turen tidlig: «Nyt solstrålane i dei kalde månadane og ikkje vent for lenge på sesongen før ein tek turen.» Ved glasert skare kan en utglidning likevel være farlig.",
-      "teaserNo": "610 høydemeter fra Fretland i Sogndalsdalen: over jordet og opp den sørlige ryggen gjennom ope kulturlandskap til toppen — kort og sørvendt, med sola i ansiktet.",
+      "teaserNo": "610 høydemeter fra Fretland i Sogndalsdalen: over jordet og opp den sørlige ryggen gjennom åpent kulturlandskap til toppen — kort og sørvendt, med sola i ansiktet.",
       "teaserEn": "610 metres of ascent from Fretland in Sogndalsdalen: across the field and up the southern ridge through open farmland to the top — short and south-facing, with the sun in your face.",
       "sources": [
         "https://www.friflyt.no/topptur/skiturer-sogn/turbeskrivelse-tyldringen",

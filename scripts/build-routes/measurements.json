@@ -2833,7 +2833,7 @@
     },
     {
       "what": "Langs linja",
-      "figure": "skogen slipper ved 1036 moh (1,17 km); Brurskardbekken (registeret 61.47504/8.83554) 132 m vest for linja ved 1618 m (1,62 km); linja svinger østover ved 2219 m (2,22 km), 1181 moh; Molflyhalsen (OSM node/11431614716) 3 m fra linja ved 3598 m (3,60 km), 1447 moh; topp 1732 (node/11431615153) 582 m sørvest for linja; Brurskardet (registeret, Skar) 902 m sørvest for linja; rasteplassen Maurvangen og parkeringa 430 m nord for starten; ut.no sin sommerstart 773 m vest",
+      "figure": "skogen slipper ved 1036 moh (1,17 km); Brurskardbekken (registeret 61.47504/8.83554) 132 m vest for linja ved 1618 m (1,62 km); linja svinger østover ved 2219 m (2,22 km), 1181 moh; Molflyhalsen (OSM node/11431614716) 3 m fra linja ved 3598 m (3,60 km), 1447 moh; topp 1732 (node/11431615153) 582 m sørvest for linja; Brurskardet (registeret, Skar) 902 m sørvest for linja; rasteplassen Maurvangen og parkeringa 430 m nord for starten; ut.no sin sommerstart 773 m vest; den stikkede løypa (OSM way/399069671, piste:type=nordic, piste:grooming=backcountry) 31 til 152 m fra linja mellom 628 m (0,63 km) og 2219 m (2,22 km)",
       "how": "Nærmeste punkt på den routede linja i lib/routes.ts til OSM-/registerpunktet, med avstand langs ruta og DTM1-høyden der."
     },
     {
@@ -2845,6 +2845,21 @@
       "what": "Varslingsregionen toppkoordinaten ligger i",
       "figure": "Jotunheimen (region 3028), regiontype A — varslet daglig i sesongen",
       "how": "Spurt Varsom/NVE på samme endepunkt som appen bruker: api01.nve.no/hydrology/forecast/avalanche/v6.3.0/api/AvalancheWarningByCoordinates/Simple/<lat>/<lng>/1/<dato>/<dato> med toppkoordinaten fra summits.json."
+    },
+    {
+      "what": "Bekkefaret og ryggen over Molflyhalsen",
+      "figure": "celler på 45,6°, 47,4° og 57,4° 70–80 m nord for linja ved 1371–1399 moh (3,06–3,15 km), 45 til 57 grader; 39,0° og 42,0° 20 m sør og sørsørøst for linja ved 1502 moh (3,83 km), 39 til 42 grader",
+      "how": "DTM1 i 5 m rutenett (geo.dem_tile), helling per celle med numpy.gradient; fra hvert annet punkt på linja er nærmeste celle på 38° eller mer søkt langs 24 peilinger ut til 100 m."
+    },
+    {
+      "what": "Sadelen mot 1732",
+      "figure": "lavest 1669,3 moh på rett linje mellom toppen og 1732 (61.45323/8.88624); linja er 454, 408, 406 og 436 m nord for den ved 5398, 5534, 5668 og 5759 m (5,40–5,76 km, 1689–1740 moh) — 406 til 454 m",
+      "how": "DTM1-punktoppslag langs 31 punkter mellom toppkoordinaten og OSM-punktet for 1732 (node/11431615153), og avstand fra linjas punkter i lib/routes.ts."
+    },
+    {
+      "what": "Avstanden til den kartlagte løypa",
+      "figure": "den stikkede løypa (OSM-løypenettet, piste:type=nordic) går via Brurskardet; lengst fra den er linja 1481 m ved 4814 m (4,81 km), 1661 moh",
+      "how": "check_ground.py: hvert punkt på linja mot nærmeste punkt på de kartlagte vinterløypene fra Overpass."
     }
   ],
   "nautgardstinden": [
@@ -2855,18 +2870,28 @@
     },
     {
       "what": "Langs linja",
-      "figure": "skogen slipper ved 1013 moh (0,61 km); Steinhøe (OSM node/9980744393) 165 m sør for linja ved 3135 m (3,14 km), 1449 moh; nord for Russlirundhøe ved 4845 m (4,85 km), 1613 moh — Russlirundhøe (node/9980744405) 956 m sør for linja; topp 1743 (node/11431615074) 332 m sør ved 6729 m (6,73 km); østryggen fra 8910 m (8,91 km), 2035 moh; Austre Nautgardstinden (node/3223597468) 701 m nordnordøst for linja ved 9243 m (9,24 km); bandene 1600–1800 moh til sammen 2214 m (2,2 km) grunn",
+      "figure": "skogen slipper ved 1013 moh (0,61 km); Steinhøe (OSM node/9980744393) 165 m sør for linja ved 3135 m (3,14 km), 1449 moh; Russlirundhøe (node/9980744405) nærmest ved 6105 m (6,11 km), 1711 moh, 956 m rett sør for linja; topp 1743 (node/11431615074) 332 m sør ved 6729 m (6,73 km); østryggen fra 8895 m (8,90 km), 2028 moh; Austre Nautgardstinden (node/3223597468) 724 m nordnordvest for linja ved 8648 m (8,65 km); bandene 1600–1800 moh til sammen 2214 m (2,2 km) grunn",
       "how": "Nærmeste punkt på den routede linja i lib/routes.ts til OSM-/registerpunktet, med avstand langs ruta og DTM1-høyden der."
     },
     {
       "what": "Bakken under linja",
-      "figure": "17 m med bakke på 35° eller brattere ved 2214–2228 moh (9,54 km, bratteste celle 61°); ingen andre strekk på 15 m",
+      "figure": "21 m med bakke på 35° eller brattere ved 2226–2243 moh (9,53 km, bratteste celle 43°); ingen andre strekk på 15 m",
       "how": "DTM1 i 5 m rutenett (geo.dem_tile), helling per celle med numpy.gradient, lest hver 5. meter langs den routede linja; oppgitt er hvert sammenhengende strekk på minst 15 m der bakken under linja er 35° eller brattere, med lengde, høyde og bratteste celle."
     },
     {
       "what": "Varslingsregionen toppkoordinaten ligger i",
       "figure": "Jotunheimen (region 3028), regiontype A — varslet daglig i sesongen",
       "how": "Spurt Varsom/NVE på samme endepunkt som appen bruker: api01.nve.no/hydrology/forecast/avalanche/v6.3.0/api/AvalancheWarningByCoordinates/Simple/<lat>/<lng>/1/<dato>/<dato> med toppkoordinaten fra summits.json."
+    },
+    {
+      "what": "Trinnet under Russlirundhøe-massivet",
+      "figure": "mellom 4575 og 4935 m (4,6–4,9 km), 1554 til 1635 moh: celle på 25,0° under linja ved 1554, 45,1° 39 m nord for linja ved 1594 moh og 36,4° 19 m fra linja ved 1635",
+      "how": "DTM1 som GeoTIFF i 5 m rutenett (geo.dem_tile) langs linja, helling per celle med numpy.gradient; for hvert sjette punkt på den routede linja er bratteste celle innenfor 50 m oppgitt med avstand og peiling fra linja."
+    },
+    {
+      "what": "Nordbotnen ved østryggen",
+      "figure": "nærmeste celle på 45° eller brattere rett nord for linja: 120 og 115 m ved 2159 og 2175 moh, 130 m ved 2212, 55 og 50 m ved 2226 og 2230 moh, 30 m ved toppen (50 til 130 m på det siste stykket); østryggen fra 2028 moh",
+      "how": "DTM1 i 5 m rutenett (geo.dem_tile), helling per celle med numpy.gradient, søkt rett nordover i 5 m-steg fra hvert punkt på linja over 8,8 km."
     }
   ],
   "tylderingen": [
@@ -2877,7 +2902,7 @@
     },
     {
       "what": "Langs linja",
-      "figure": "garden Fretland (OSM node/3894537475) 43 m fra linja ved 130 m; Stokksete (node/10176204100) 80 m fra linja ved 1121 m (1,12 km), 743 moh; skogen slipper ved 860 moh (1,62 km); vestsida av ryggen ved 2561 m (2,56 km), 1062 moh, 233 m (230 m) før toppen ved 2794 m",
+      "figure": "garden Fretland (OSM node/3894537475) 43 m fra linja ved 130 m; Stokksete (node/10176204100) 80 m fra linja ved 1121 m (1,12 km), 743 moh; skogen slipper ved 860 moh (1,62 km); vestsida av ryggen ved 2561 m (2,56 km), 1062 moh, 233 m (230 m) før toppen ved 2794 m; stølen Tråna (stedsnavnregisteret Seter/støl 61.27545/7.02854, OSM node/10176204199) 26 m fra linja ved 615 m (0,62 km), 613 moh; garden Stavateig (61.27183/7.02251) 346 m vest for linjas start",
       "how": "Nærmeste punkt på den routede linja i lib/routes.ts til OSM-/registerpunktet, med avstand langs ruta og DTM1-høyden der."
     },
     {
