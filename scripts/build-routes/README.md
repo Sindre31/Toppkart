@@ -6499,7 +6499,7 @@ park at Ålhus by Jølstravatnet and two from the top of Rørvikfjellet. 191 tou
 | Grønlifjellet | 277 | 1386 | 1155 | 8.10 | 19.2° | 23.8° | 3 |
 | Gotdalsnipa | 277 | 1248 | 998 | 5.25 | 15.4° | 24.3° | 2 |
 | Eggja | 542 | 1204 | 680 | 2.83 | 20.0° | 25.3° | 2 |
-| Venevassegga | 542 | 1024 | 528 | 4.46 | 14.1° | 26.2° | 1 |
+| Venevassegga | 542 | 1024 | 533 | 4.68 | 14.1° | 26.2° | 1 |
 
 ### The corpus, indexed against the app
 
@@ -6555,6 +6555,35 @@ Blånipa (1049, Fri Flyt 3.4.1 via Ørnebotnen) has a full description and no
 readable second source. Fjord Norway's «Isdronninga» from Helgheim kirke is a
 different mountain 11 km east, and the one trip blog that names a 1049 m Blånipa
 by Jølstravatnet could not be fetched from here. One-source tours do not ship.
+
+### The independent read
+
+The second reader found twelve things and three of them were serious. **The
+«steepest sustained section» is the gradient along the track, and on three of
+the four tours the ground the track crosses is steeper** — sampled every 5 m on
+the 5 m slope grid, Eggja's line crosses 50 m of ground at 35° or more where it
+turns onto the ridge, with a 61° cell, and 39 m at 921–940 m on the very
+stretch quoted as 25.3°; Grønlifjellet's pitch onto the ridge and Venevassegga's
+first kilometre have the same, shorter. Gotdalsnipa has no such stretch. Each
+guide now says so, with the lengths and the heights. **Venevassegga's
+Jakobskardet was pinned on a 24° east-facing slope**, not in the col: the col is
+the saddle between Venevassegga and Rundenova, found as the highest threshold at
+which the two summits connect on DTM1 (852.6 m), 207 m west of the first line.
+The corridor moved there and the line was re-solved, 4456 m +528 → 4685 m +533;
+the card stays at 530. And **the forest road to Gotdalsstøylen was written as
+if it were safe ground** — it runs along a valley floor under slopes measuring
+35–68° in their steepest windows on both sides, 160–640 m out, and it is the
+return route for Gotdalsnipa as well as the approach for Grønlifjellet.
+
+The rest were smaller and are all fixed: the 1226 m top east of Eggja is not
+unvisited — Fri Flyt lists it as Blåfjellet with its own tour from Hårklau and
+suggests the round trip; Ålhusdalen lies south-west of the road, not west;
+«holder du høyden» did not describe a line that climbs 105 m from Tolsbotnen;
+Grønlifjellet's descent left out the east face it actually skis and a Fri Flyt
+fall warning; Venevassegga quoted Fri Flyt's generic grade definition as a
+description of the tour; two «steepest hundred-metre bands» were partial bands.
+Card durations are left as the route model gives them, which is the pipeline's
+rule; the guides quote Fri Flyt's times.
 
 ### What ran
 

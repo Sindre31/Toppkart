@@ -3025,8 +3025,8 @@
  },
  "venevassegga": {
   "verticalM": 530,
-  "gainM": 528,
-  "distanceM": 4456,
+  "gainM": 533,
+  "distanceM": 4685,
   "startM": 542,
   "summitM": 1024,
   "duration": "3–5 t",
@@ -3036,8 +3036,8 @@
   "maxStepAngle": 26.2,
   "grade": 1,
   "aspect": "N",
-  "distanceKm": 4.5,
-  "cumdistM": 4456
+  "distanceKm": 4.7,
+  "cumdistM": 4685
  },
  "eggja": {
   "verticalM": 680,

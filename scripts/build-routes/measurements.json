@@ -2594,6 +2594,16 @@
       "what": "Varslingsregionen toppkoordinaten ligger i",
       "figure": "Indre Fjordane (region 3027), regiontype A — varslet daglig i sesongen",
       "how": "Spurt Varsom/NVE på samme endepunkt som appen bruker: api01.nve.no/hydrology/forecast/avalanche/v6.3.2/api/AvalancheWarningByCoordinates/Simple/<lat>/<lng>/1/<dato>/<dato> med toppkoordinaten fra summits.json."
+    },
+    {
+      "what": "Bakken under linja",
+      "figure": "ingen strekk på 15 m eller mer over 35°; bratteste celle på linja 41,9°",
+      "how": "DTM1 i 5 m rutenett (geo.dem_tile), helling per celle med numpy.gradient, lest hver 5. meter langs den routede linja; oppgitt er hvert sammenhengende strekk på minst 15 m der bakken under linja er 35° eller brattere, med lengde, høyde og bratteste celle."
+    },
+    {
+      "what": "Lisidene over skogsvegen mellom Brekka og Gotdalsstøylen (returen)",
+      "figure": "bratteste 60-metersvindu oppover fra vegen 35–68° på begge sider, 160–640 m ut, mellom 1,2 og 3,6 km langs Grønlifjellet-linja som følger samme veg",
+      "how": "Radialer fra punkter på skogsvegen hver ~400 m, peiling 45, 90, 135, 225, 270 og 315, 700 m ut i 10 m-steg over DTM1 i 5 m-rutenett; bratteste vindu målt som absolutt helling, slik at lier som stiger fra vegen kommer med."
     }
   ],
   "gronlifjellet": [
@@ -2609,13 +2619,23 @@
     },
     {
       "what": "Langs linja",
-      "figure": "Gotdalsstøylen 19 m fra linja ved 3856 m, 563 moh; Tolsbotnen ved 5354 m, 802 moh; Litlebotn ved 6198 m, 900 moh; linja gir fra seg ned til 868 moh før kneika opp på ryggen; ryggen nås ved 6990 m, 1047 moh; toppen ved 8102 m; Litlebottsegga 790 m nord for linja; Brekka 111 m fra linja ved 2334 m, 438 moh; Ålhusdalen (registerpunktet for dalen) 784 m vest for linja",
+      "figure": "Gotdalsstøylen 19 m fra linja ved 3856 m, 563 moh; Tolsbotnen ved 5354 m, 802 moh; Litlebotn ved 6198 m, 900 moh; linja gir fra seg ned til 868 moh før kneika opp på ryggen; ryggen nås ved 6990 m, 1047 moh; toppen ved 8102 m; Litlebottsegga 790 m nord for linja; Brekka 111 m fra linja ved 2334 m, 438 moh; Ålhusdalen (registerpunktet for dalen) 784 m sørvest for linja (peiling 243)",
       "how": "Nærmeste punkt på den routede linja i lib/routes.ts til registerpunktet, med avstand langs ruta og DTM1-høyden der."
     },
     {
       "what": "Varslingsregionen toppkoordinaten ligger i",
       "figure": "Indre Fjordane (region 3027), regiontype A — varslet daglig i sesongen",
       "how": "Spurt Varsom/NVE på samme endepunkt som appen bruker: api01.nve.no/hydrology/forecast/avalanche/v6.3.2/api/AvalancheWarningByCoordinates/Simple/<lat>/<lng>/1/<dato>/<dato> med toppkoordinaten fra summits.json."
+    },
+    {
+      "what": "Bakken under linja",
+      "figure": "35 m med bakke på 35° eller brattere ved 1044 moh (6,98 km, bratteste celle 47°) og 20 m ved 1068–1075 moh (7,05 km, 50°) — i kneika opp på ryggen der sporet selv måler 23,8°",
+      "how": "DTM1 i 5 m rutenett (geo.dem_tile), helling per celle med numpy.gradient, lest hver 5. meter langs den routede linja; oppgitt er hvert sammenhengende strekk på minst 15 m der bakken under linja er 35° eller brattere, med lengde, høyde og bratteste celle."
+    },
+    {
+      "what": "Lisidene over skogsvegen mellom 1,2 og 3,6 km",
+      "figure": "bratteste 60-metersvindu oppover fra vegen 35–68° på begge sider, 160–640 m ut: 68° mot nordvest og 60° mot vest ved 1,2 km, 62° mot vest ved 1,6 km, 47° mot nordøst og 46° mot sørvest ved 2,4 km, 48° mot nordvest ved 3,2 km",
+      "how": "Radialer fra punkter på skogsvegen hver ~400 m, peiling 45, 90, 135, 225, 270 og 315, 700 m ut i 10 m-steg over DTM1 i 5 m-rutenett; bratteste vindu målt som absolutt helling, slik at lier som stiger fra vegen kommer med."
     }
   ],
   "eggja": [
@@ -2643,6 +2663,16 @@
       "what": "Varslingsregionen toppkoordinaten ligger i",
       "figure": "Indre Fjordane (region 3027), regiontype A — varslet daglig i sesongen",
       "how": "Spurt Varsom/NVE på samme endepunkt som appen bruker: api01.nve.no/hydrology/forecast/avalanche/v6.3.2/api/AvalancheWarningByCoordinates/Simple/<lat>/<lng>/1/<dato>/<dato> med toppkoordinaten fra summits.json."
+    },
+    {
+      "what": "Bakken under linja",
+      "figure": "50 m med bakke på 35° eller brattere ved 628–644 moh (0,89 km, bratteste celle 61°) der linja tar østover inn på ryggformasjonen; 39 m ved 921–940 moh (1,80 km, 47°); 15–23 m ved 617–628, 689–693 og 1114–1126 moh (37–42°)",
+      "how": "DTM1 i 5 m rutenett (geo.dem_tile), helling per celle med numpy.gradient, lest hver 5. meter langs den routede linja; oppgitt er hvert sammenhengende strekk på minst 15 m der bakken under linja er 35° eller brattere, med lengde, høyde og bratteste celle."
+    },
+    {
+      "what": "Fri Flyts Blåfjellet (1226)",
+      "figure": "Fri Flyts side «turbeskrivelse-blaafjellet-1226» har toppunkt 1226 fra Hårklau — samme høyde som OSMs Ørnafjellet 1.1 km øst for Eggja; registerets Blåfjellet (Fjell) ligger på 61.4211/6.25142, 460 m sør for det toppunktet",
+      "how": "Fri Flyt-siden lest; registeroppslag Blåfjellet, Sunnfjord."
     }
   ],
   "venevassegga": [
@@ -2653,18 +2683,23 @@
     },
     {
       "what": "Langs linja",
-      "figure": "Rørvik fjellstove 133 m fra linja; Svartenova 143 m sørøst for linja ved 2247 m, 751 moh; Jakobskardet ved 2635 m, 798 moh; Rundenova 902 m nordvest for linja; toppen ved 4456 m",
+      "figure": "Rørvik fjellstove 133 m fra linja; Svartenova 142 m sørøst for linja ved 2277 m, 756 moh; Jakobskardet — sadelen mellom Venevassegga og Rundenova, 852,6 moh — ved 3059 m, 853 moh; Rundenova 721 m nordvest for linja; toppen ved 4685 m",
       "how": "Nærmeste punkt på den routede linja i lib/routes.ts til registerpunktet, med avstand langs ruta og DTM1-høyden der."
     },
     {
       "what": "Ryggen sørvestover fra fjellstova",
-      "figure": "enkeltceller på linja når 40° ved 730 moh og 38° ved 912 moh, og knauser på 53–82° står innenfor 50 m mellom 578 og 912 moh; bratteste 30-metersvindu på linja er 26,2° mellom 679 og 701 moh",
+      "figure": "knauser og hamrer på 53° og mer står innenfor 50 m av linja mellom 578 og 912 moh; bratteste 30-metersvindu på linja er 26,2° mellom 679 og 701 moh",
       "how": "DTM1 som GeoTIFF i 5 m rutenett (geo.dem_tile) langs linja, helling per celle med numpy.gradient; for hvert sjette punkt på den routede linja er bratteste celle innenfor 50 m oppgitt med avstand og peiling fra linja."
     },
     {
       "what": "Varslingsregionen toppkoordinaten ligger i",
       "figure": "Indre Fjordane (region 3027), regiontype A — varslet daglig i sesongen",
       "how": "Spurt Varsom/NVE på samme endepunkt som appen bruker: api01.nve.no/hydrology/forecast/avalanche/v6.3.2/api/AvalancheWarningByCoordinates/Simple/<lat>/<lng>/1/<dato>/<dato> med toppkoordinaten fra summits.json."
+    },
+    {
+      "what": "Bakken under linja",
+      "figure": "20 m og 33 m med bakke på 35° eller brattere ved 702–713 moh (1,22–1,29 km, bratteste celle 54°), 36 m ved 732–735 moh (1,46 km, 42°) og 17 m ved 906–908 moh (3,63 km, 40°)",
+      "how": "DTM1 i 5 m rutenett (geo.dem_tile), helling per celle med numpy.gradient, lest hver 5. meter langs den routede linja; oppgitt er hvert sammenhengende strekk på minst 15 m der bakken under linja er 35° eller brattere, med lengde, høyde og bratteste celle."
     }
   ]
 }
