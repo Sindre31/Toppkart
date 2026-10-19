@@ -1702,5 +1702,37 @@
     "summit_dtm": 981.6,
     "claims": 979,
     "stored_off_km": 0.01
+  },
+  "stortinden-langfjord": {
+    "name": "Stortinden",
+    "lat": 70.09225,
+    "lng": 22.30233,
+    "summit_dtm": 935.5,
+    "claims": 935,
+    "stored_off_km": 0.0
+  },
+  "gievdnerassa": {
+    "name": "Gievdnerášša",
+    "lat": 70.13487,
+    "lng": 22.59386,
+    "summit_dtm": 897.8,
+    "claims": 897,
+    "stored_off_km": 0.01
+  },
+  "laslettind": {
+    "name": "Laslettind",
+    "lat": 70.04458,
+    "lng": 22.00059,
+    "summit_dtm": 822.1,
+    "claims": 819,
+    "stored_off_km": 0.31
+  },
+  "vassnestind": {
+    "name": "Vassnestind",
+    "lat": 70.03148,
+    "lng": 21.88364,
+    "summit_dtm": 896.2,
+    "claims": 897,
+    "stored_off_km": 0.01
   }
 }

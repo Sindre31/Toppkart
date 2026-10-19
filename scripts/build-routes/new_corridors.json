@@ -12954,5 +12954,324 @@
       "confidence": "medium",
       "notes": "Fri Flyt (Toppturer rundt Bodø) er hovedkilden. Ut.no deler start og nedre del av linja, men går til en annen topp 0,85 km øst, og 979-toppen har ikke eget registernavn; derfor er confidence medium."
     }
+  },
+  {
+    "slug": "stortinden-langfjord",
+    "verdict": "ok",
+    "rejectReason": "",
+    "corrections": [
+      "Registerets Stortinden (Fjell, Kvænangen/Loppa; samisk Ruoššavárri) løser seg til 935,5 mot publiserte 935 — +0,5 m. Fri Flyt og registeret har samme topp; Fri Flyts artikkel om Vest-Finnmark kaller den «Stortinden (920moh)».",
+      "Fri Flyt, OPP: «Start ved den lokale kafeen hundre meter nordøst der E-6 og veien mot Øksjord danner et kryss. Gå rett nordover gjennom grov bjørkeskog. Over tregrensen er fjellet en brei ryggformasjon. Følg ryggen til toppen, dersom du har tenkt deg helt opp.» NED: «Den normale nedkjøringen følger ruta til oppstigningen og byr på bra kjøring fra den første toppen på 839 meter og ned til havet. Skogskjøringen gir ofte dyp og fin løssnø. Kjøringen blir brattere hvis du trekker østover i skogen.» Korridoren går over forhøyningen på 839 (837,7 moh i DTM1, 70.06352/22.26605), 920-toppen (918,5, 70.07891/22.26658) og 918-toppen (919,5, 70.09194/22.27816) før den går østover til toppen.",
+      "Fri Flyt: «De fleste nøyer seg med å gå opp til toppryggen for å nyte skikjøringen derfra i stedet for å gå helt til toppen.» og «Ved startstedet i Langfjordbotn er det normalt at det ligger rundt halvannen meter snø helt ned mot fjordnivå.» Alternativ 1: «Fortsetter du videre mot toppen på 920 moh, kan du slippe deg 500 høydemeter ned i en østvendt gryte mot Øvre Møllevatn. Her pleier snøforholdene å være gode, og øverst kan du få flere bratte nedkjøringer som er svært eksponerte.» Alternativ 2: «Flankene på vestsiden av Stortinden mot Russelvdalen bør vurderes ovenfra og kan by på 500 høydemeter med bratt og vurderingsmessig krevende storfjellskjøring.»",
+      "Andrekilde, Skiforbundet om Langfjordrennet (publisert 1. juni 2026): «Fellesstart i bunn av Stortinden. ca 3 km og 800 hm ventet før man kunne ta seg en velfortjent lunsjpause på toppen.» Fri Flyt (Tore Karlstrøm) om sesongstarten: «Stortinden er omtalt i toppturboka og med som beste sesongåpning i forrige Fri Flyt nummer 99. Her kan komme store mengder snø på nordvest, meget god skogkjøring, lett tilgjengelig og liten rasfare.»",
+      "935,5 − 39,4 = 896 mot Fri Flyts 900 høydemeter."
+    ],
+    "corridor": {
+      "routeId": "langfjordbotn",
+      "routeName": "Fra Langfjordbotn over ryggen",
+      "routeDescriptionFull": "Fra kafeen ved krysset E6/fv. 882 i Langfjordbotn rett nordover gjennom bjørkeskogen, opp den breie ryggen over forhøyningen på 839 og 920-toppen, og langs toppryggen til Stortinden",
+      "trailhead": {
+        "name": "Kafeen i Langfjordbotn",
+        "lat": 70.04022,
+        "lng": 22.25962,
+        "elevationM": 39.4,
+        "osmEvidence": "OSM node/3716139335 (amenity=cafe, «Porten til Finnmark») ved krysset der Tappeluftveien fv. 882 (way/320212571) tar av fra E6 Langfjordveien (way/329837963) i Langfjordbotn. Fri Flyt: «Start ved den lokale kafeen hundre meter nordøst der E-6 og veien mot Øksjord danner et kryss.» Ingen parkering er kartlagt; kafeen og samfunnshuset (node/11003365208) ligger her. DTM1 leser 39,4 moh."
+      },
+      "waypoints": [
+        {
+          "name": "nordover gjennom bjørkeskogen",
+          "lat": 70.05,
+          "lng": 22.262,
+          "elevationM": 256.4
+        },
+        {
+          "name": "ryggen",
+          "lat": 70.0565,
+          "lng": 22.2645,
+          "elevationM": 553.4
+        },
+        {
+          "name": "forhøyningen på 839",
+          "lat": 70.06352,
+          "lng": 22.26605,
+          "elevationM": 837.7
+        },
+        {
+          "name": "ryggen nordover",
+          "lat": 70.07329,
+          "lng": 22.26974,
+          "elevationM": 895.4
+        },
+        {
+          "name": "920-toppen",
+          "lat": 70.07891,
+          "lng": 22.26658,
+          "elevationM": 918.5
+        },
+        {
+          "name": "toppryggen",
+          "lat": 70.08307,
+          "lng": 22.26816,
+          "elevationM": 884.2
+        },
+        {
+          "name": "toppryggen",
+          "lat": 70.08977,
+          "lng": 22.27605,
+          "elevationM": 906.0
+        },
+        {
+          "name": "918-toppen",
+          "lat": 70.09194,
+          "lng": 22.27816,
+          "elevationM": 919.5
+        }
+      ],
+      "season": "nov–mai",
+      "aspect": "S",
+      "grade": 3,
+      "gradeReason": "Fri Flyt: KAST 3, 900 høydemeter, 2–4 timer, «Krevende skredvurdering vest og sør for toppryggen». Ryggen selv er brei, men turen er lang over toppryggen og har bratte flanker på begge sider. Grad 3.",
+      "roadClosedInWinter": false,
+      "hazardNotes": "Fri Flyt: «Krevende skredvurdering vest og sør for toppryggen». Den østvendte gryta mot Øvre Møllevatn har «flere bratte nedkjøringer som er svært eksponerte», og flankene mot Russelvdalen er «bratt og vurderingsmessig krevende storfjellskjøring». Hold deg på ryggen.",
+      "teaserNo": "900 høydemeter rett opp fra E6 i Langfjordbotn: bjørkeskog, en brei rygg over 839 og 920-toppen, og toppryggen til Stortinden — Finnmarks snøsikre sesongåpner.",
+      "teaserEn": "900 metres straight up from the E6 at Langfjordbotn: birch forest, a broad ridge over the 839 and 920 tops, and the summit ridge to Stortinden — Finnmark's snow-sure season opener.",
+      "sources": [
+        "https://www.friflyt.no/topptur/finnmark/stortinden",
+        "https://www.skiforbundet.no/randonee/aktuelle-saker/2026/5/langfjordrennet/",
+        "https://friflyt.no/topptur/anbefalte-toppturer-i-finnmark-i-sesongstarten"
+      ],
+      "confidence": "medium",
+      "notes": "Fri Flyt (Trygge toppturer, Finnmark) er hovedkilden og den eneste som beskriver linja. Skiforbundet bekrefter starten i bunn av fjellet og at fjellet går som løp; Fri Flyts sesongartikkel er samme utgiver. Ingen kartlagt parkering ved kafeen. Derfor confidence medium."
+    }
+  },
+  {
+    "slug": "gievdnerassa",
+    "verdict": "ok",
+    "rejectReason": "",
+    "corrections": [
+      "Registerets Gievdnerášša (Fjell, Alta) løser seg til 897,8 mot publiserte 897 — +0,8 m. Fri Flyt skriver navnet «Gievdnerassa», Peakbook «Gievdnerášša (898 moh)».",
+      "Fri Flyt, Opp: «Fra parkeringen ved den gamle leirskolen, tar du sikte på en rygg som går nordøstover. Her går du opp en jevn fin bakke, før det blir slakere mot toppen av Gievdnerassa.» Ned: «Den tryggeste nedkjøringen følger samme rute ned.» Trygg topptur: «Hele ruta kan gås i terreng under 30 grader.» Fare: «I dårlig sikt er det lett å gli ned i små og store heng brattere enn 30 grader.» Læringspunkt: «Turen gir litt utfordrende mikroterreng å orientere seg i på vei opp og ned, særlig hvis sikten er begrenset og sporene blåser igjen.»",
+      "Fri Flyt: «Topplåtået er som å komme på en bre med overraskende godt føre selv når det blåser surt ned i dalen fra sørøst. Nedkjøringen mot sør der det er enklest å komme opp, gir et langt sammenhengende nedrenn.»",
+      "Andrekilde, Peakbook (Otto Lund, 29. mars 2016): «Parkerte ved Gammelveien nær Øksfjordbotn skole (e-verket).» Startsted «Øksfjordbotn skole (65 moh)». Han gikk en annen linje: «Forlot sommerveien ved noen hytter i Rivarbukteidet og valgte oppgangen øst for Skarpavaggi.»",
+      "897,8 − 57,8 = 840 mot Fri Flyts 797 høydemeter."
+    ],
+    "corridor": {
+      "routeId": "oksfjordbotn",
+      "routeName": "Fra Øksfjordbotn over nordøstryggen",
+      "routeDescriptionFull": "Fra parkeringa ved skolen i Øksfjordbotn opp ryggen nordøstover og over det slake topplatået til Gievdnerášša",
+      "trailhead": {
+        "name": "Parkeringa ved skolen i Øksfjordbotn",
+        "lat": 70.10842,
+        "lng": 22.52829,
+        "elevationM": 57.8,
+        "osmEvidence": "OSM way/550421841 (amenity=parking, grus) ved busstoppet Øksfjordbotn (node/6372262258) og skolebygget (way/667930487, building=school) ved fv. 882 Øksfjordbotnveien; Gammelveien (way/550421851) går forbi. Fri Flyt: «Fra parkeringen ved den gamle leirskolen». Peakbook: «Parkerte ved Gammelveien nær Øksfjordbotn skole (e-verket).» DTM1 leser 57,8 moh."
+      },
+      "waypoints": [
+        {
+          "name": "ryggen nordøstover",
+          "lat": 70.11,
+          "lng": 22.564,
+          "elevationM": 262.1
+        },
+        {
+          "name": "ryggen nordøstover",
+          "lat": 70.115,
+          "lng": 22.572,
+          "elevationM": 450.9
+        },
+        {
+          "name": "ryggen nordøstover",
+          "lat": 70.1195,
+          "lng": 22.582,
+          "elevationM": 605.9
+        },
+        {
+          "name": "ryggen",
+          "lat": 70.124,
+          "lng": 22.592,
+          "elevationM": 748.3
+        },
+        {
+          "name": "slakere mot toppen",
+          "lat": 70.129,
+          "lng": 22.596,
+          "elevationM": 801.8
+        }
+      ],
+      "season": "des–mai",
+      "aspect": "SV",
+      "grade": 2,
+      "gradeReason": "Fri Flyt: KAST 1 – Enkelt, hele ruta under 30 grader, 797 høydemeter og 4 timer. 840 høydemeter fra parkeringa og et platå som er vanskelig å orientere seg på i dårlig sikt gjør den til grad 2.",
+      "roadClosedInWinter": false,
+      "hazardNotes": "Fri Flyt: «I dårlig sikt er det lett å gli ned i små og store heng brattere enn 30 grader.» Mikroterrenget er utfordrende å orientere seg i når sporene blåser igjen.",
+      "teaserNo": "840 høydemeter fra Øksfjordbotn: opp ryggen nordøstover og over et platå som Fri Flyt sammenligner med en bre — med utsikt mot Finnmarksalpene.",
+      "teaserEn": "840 metres of ascent from Øksfjordbotn: up the ridge to the north-east and across a plateau Fri Flyt compares to a glacier — with views to the Finnmark Alps.",
+      "sources": [
+        "https://www.friflyt.no/topptur/finnmark/gievdnerassa",
+        "https://peakbook.org/no/tour/158289/Gievdner%C3%A1%C5%A1%C5%A1a,+Rivartinden+-+Alta.html"
+      ],
+      "confidence": "medium",
+      "notes": "Fri Flyt (Trygge toppturer, Finnmark) er hovedkilden. Peakbook bekrefter start og topp, men gikk en annen linje østfra. Derfor confidence medium."
+    }
+  },
+  {
+    "slug": "laslettind",
+    "verdict": "ok",
+    "rejectReason": "",
+    "corrections": [
+      "Registerets Laslettind (Fjell, Kvænangen) står ved varden på 808,1 moh; toppen løser seg 0,31 km nordvest, til 822,1 mot publiserte 819 — +3,1 m. Fri Flyts GPS-punkt (UTM 33 766136/7786146) er 70.04454/22.00044, 8 m fra den.",
+      "Fri Flyt, Opp: «Start fra den vestligste parkeringsplassen ved Jøkelfjordeidet og gå vestover. Herfra stiger det jevnt opp mot Laslettind.» Ned: «Det tryggeste alternativet er å følge samme rute ned.» Trygg topptur: «Laslettind er en av de mest populære og familievennlige toppturene i området. Hele ruta går i terreng under 30 grader med flere mulige sporvalg.» Fare: «Laslettind er omkranset av stup og bratt renneterreng sør og nord for toppen og ryggen.» Læringspunkt: «Himmelretningen gir ofte godt føre pga leside for vinden fra vest og nord vest.»",
+      "Andrekilde, ut.no 1112155378 og Ut i Nord 204894: «Se etter parkeringsplass på venstre side av veien etter ca. 2 km. Her finner du startpunktet for turen med skilt. Følg stien. Helt i starten av turen krysser du en bekk. Etter dette går du opp langs ryggen på Laslettind. Hold deg til høyre for vardene.» Ut i Nord: «Laslettind er en populær topptur på ski hvor du kan velge en slak trasé og unngå å gå i skredterreng.» Korridoren følger ut.no-sporet, som starter ved OSM-parkeringa node/3367919330, til varden og går derfra til toppen.",
+      "Fri Flyt (Toppturer Lyngenfjord) om Olderbakkfjellet via Laslettinden: «Her er det bare å legge sporet rett oppover mot øst i en lang jevn motbakke opp til varden på Laslettinden.» Faremomenter: «Skavler på toppen». Fri Flyt om Kvænangen: «Vi kjørte store svinger ned den lange åpne østsiden av Laslettind og ned i skogen under.» og «Skoggrensa ligger på rundt 350 moh».",
+      "822,1 − 162,6 = 660 mot ut.nos 651 og Fri Flyts 700 høydemeter."
+    ],
+    "corridor": {
+      "routeId": "jokelfjordeidet",
+      "routeName": "Fra Jøkelfjordeidet opp østryggen",
+      "routeDescriptionFull": "Fra parkeringa ved Jøkelfjordveien på Jøkelfjordeidet vestover over bekken og opp den breie østryggen til varden og toppen av Laslettind",
+      "trailhead": {
+        "name": "Parkeringa ved Jøkelfjordeidet",
+        "lat": 70.0374344,
+        "lng": 22.0692558,
+        "elevationM": 162.6,
+        "osmEvidence": "OSM node/3367919330 (amenity=parking) ved Jøkelfjordveien fv. 7966 (way/127453275), der ut.no-sporet for turforslag 1112155378 starter; ut.no: «Se etter parkeringsplass på venstre side av veien etter ca. 2 km. Her finner du startpunktet for turen med skilt.» Fri Flyt: «Start fra den vestligste parkeringsplassen ved Jøkelfjordeidet». Flere parkeringer er kartlagt langs vegen (way/643194816, way/643194818, way/1473353958). DTM1 leser 162,6 moh."
+      },
+      "waypoints": [
+        {
+          "name": "ut.no-stien",
+          "lat": 70.036279,
+          "lng": 22.060508,
+          "elevationM": 195.7
+        },
+        {
+          "name": "ut.no-stien",
+          "lat": 70.035735,
+          "lng": 22.049995,
+          "elevationM": 275.0
+        },
+        {
+          "name": "ut.no-stien",
+          "lat": 70.03644,
+          "lng": 22.040834,
+          "elevationM": 372.4
+        },
+        {
+          "name": "ut.no-stien",
+          "lat": 70.038409,
+          "lng": 22.032329,
+          "elevationM": 491.2
+        },
+        {
+          "name": "ut.no-stien",
+          "lat": 70.039625,
+          "lng": 22.021988,
+          "elevationM": 622.7
+        },
+        {
+          "name": "varden på Laslettind",
+          "lat": 70.042728,
+          "lng": 22.006588,
+          "elevationM": 808.1
+        }
+      ],
+      "season": "nov–mai",
+      "aspect": "Ø",
+      "grade": 1,
+      "gradeReason": "Fri Flyt: KAST 1 – Enkelt, bratteste punkt under 25 grader, 700 høydemeter og 3–4 timer; «en av de mest populære og familievennlige toppturene i området». Ut i Nord: «velge en slak trasé og unngå å gå i skredterreng». Grad 1.",
+      "roadClosedInWinter": false,
+      "hazardNotes": "Fri Flyt: «Laslettind er omkranset av stup og bratt renneterreng sør og nord for toppen og ryggen.» Fri Flyt (Lyngenfjord): «Skavler på toppen».",
+      "teaserNo": "660 høydemeter fra Jøkelfjordeidet: rett vestover opp en brei østrygg som får snø tidlig — den tryggeste turen i Koppartind-massivet.",
+      "teaserEn": "660 metres of ascent from Jøkelfjordeidet: straight west up a broad east ridge that gets snow early — the safest tour in the Koppartind massif.",
+      "sources": [
+        "https://www.friflyt.no/topptur/finnmark/laslettind",
+        "https://ut.no/turforslag/1112155378/laslettind-jkelfjordeidet",
+        "https://www.utinord.no/turar/204894",
+        "https://www.friflyt.no/topptur/tromso/turbeskrivelse-olderbakkfjellet-via-laslettinden"
+      ],
+      "confidence": "high",
+      "notes": "Fri Flyt (Trygge toppturer, Finnmark) er hovedkilden. Ut.no/Ut i Nord tegner og beskriver samme linje fra skiltet start, og Fri Flyts Lyngenfjord-bok går samme rygg til varden."
+    }
+  },
+  {
+    "slug": "vassnestind",
+    "verdict": "ok",
+    "rejectReason": "",
+    "corrections": [
+      "Registerets Vassnestinden (Fjell, Kvænangen) løser seg til 896,2 mot publiserte 897 — −0,8 m. Fri Flyts GPS-punkt (UTM 33 761884/7784189) er 70.03146/21.88384, samme punkt.",
+      "Fri Flyt, Opp: «Fra Ytre Hamnebukta, der veien langs sørsiden av Jøkelfjorden stopper, følger du slakeste vei sørover til du kommer opp på en bred og slak rygg. Følg denne østover til toppen av Vassnestind. Første delen av ruta opp gjennom glissen skog går langs vestsiden av Golpeelva. I skoggrensen mellom 220-240 moh. er det et litt brattere parti så her anbefales å lese terrenget litt nøye for å legge et hensiktsmessig spor. Vel over er det småkupert videre oppover. Mellom 440-600 moh. finnes små partier som er litt brattere enn 30 grader. Bruk og les terrengformasjoner.» Faktaboksen: «Startsted/parkering: Jøkelfjord. Parkering i grustak på sørsiden av Fv.365» og «Høydemeter: 885 meter». Golpeelva (registerets Elv, 70.05308/21.88041) renner ut ved Jøkelfjord, ikke ved Ytre Hamnebukta 4 km vest, og fra Ytre Hamnebukta er lia mot toppen bratt; korridoren starter derfor i Jøkelfjord vest for Golpeelva, som faktaboksen og 885 høydemeter peker på.",
+      "Fri Flyt: «Vel oppe flater det ut og man sporer bortover det brede topplatået til varden for å nyte matpakke og utsikt.» Ned: «Nedturen følger i samme trase som opp.» Fare: «Hold avstand til det bratte terrenget mot sør og nord.» Faktaboks: «Eksposisjon: N-NV Beste sesong: Januar-mai Bratteste parti: 30 grader (kort parti)».",
+      "Andrekilde, Wikiloc-sporet «Vassnestind 897m from Jøkelfjord» (back-country skiing) har starten i Jøkelfjord; Altaposten skrev om «Topptur i Jøkelfjord» 22. april 2019.",
+      "896,2 − 21,5 = 875 mot Fri Flyts 885 høydemeter."
+    ],
+    "corridor": {
+      "routeId": "jokelfjord",
+      "routeName": "Fra Jøkelfjord vest for Golpeelva",
+      "routeDescriptionFull": "Fra parkeringa i Jøkelfjord sørover gjennom glissen skog vest for Golpeelva, opp den breie ryggen og over topplatået til varden på Vassnestind",
+      "trailhead": {
+        "name": "Parkeringa i Jøkelfjord",
+        "lat": 70.06023,
+        "lng": 21.87301,
+        "elevationM": 21.5,
+        "osmEvidence": "OSM way/643526459 (amenity=parking, asfalt) ved Hamnebuktveien (way/643526469) i Jøkelfjord, ved busstoppet Jøkelfjord (node/7099800524) og vest for Golpeelva. Fri Flyt: «Startsted/parkering: Jøkelfjord. Parkering i grustak på sørsiden av Fv.365»; grustaket er ikke kartlagt. DTM1 leser 21,5 moh."
+      },
+      "waypoints": [
+        {
+          "name": "vest for Golpeelva",
+          "lat": 70.056,
+          "lng": 21.873,
+          "elevationM": 145.1
+        },
+        {
+          "name": "vest for Golpeelva",
+          "lat": 70.0509,
+          "lng": 21.871,
+          "elevationM": 334.1
+        },
+        {
+          "name": "ryggen",
+          "lat": 70.0465,
+          "lng": 21.871,
+          "elevationM": 503.6
+        },
+        {
+          "name": "ryggen",
+          "lat": 70.0422,
+          "lng": 21.869,
+          "elevationM": 651.6
+        },
+        {
+          "name": "ryggen",
+          "lat": 70.0378,
+          "lng": 21.869,
+          "elevationM": 738.4
+        },
+        {
+          "name": "ryggen",
+          "lat": 70.035,
+          "lng": 21.87,
+          "elevationM": 825.0
+        },
+        {
+          "name": "toppplatået",
+          "lat": 70.0335,
+          "lng": 21.874,
+          "elevationM": 869.4
+        }
+      ],
+      "season": "jan–mai",
+      "aspect": "N",
+      "grade": 2,
+      "gradeReason": "Fri Flyt: KAST 1 – Enkelt, «Bratteste parti: 30 grader (kort parti)», 885 høydemeter og 4 timer, med et brattere parti i skoggrensa og små partier over 30 grader mellom 440 og 600 moh. Grad 2.",
+      "roadClosedInWinter": false,
+      "hazardNotes": "Fri Flyt: «Hold avstand til det bratte terrenget mot sør og nord.» Brattere parti i skoggrensa mellom 220 og 240 moh, og små partier brattere enn 30 grader mellom 440 og 600 moh.",
+      "teaserNo": "875 høydemeter fra fjorden i Jøkelfjord: glissen skog vest for Golpeelva, en brei rygg og et vidt topplatå med hav på alle kanter.",
+      "teaserEn": "875 metres of ascent from the fjord at Jøkelfjord: open forest west of Golpeelva, a broad ridge and a wide summit plateau with sea on every side.",
+      "sources": [
+        "https://www.friflyt.no/topptur/finnmark/vassnestind",
+        "https://www.wikiloc.com/back-country-skiing-trails/vassnestind-897m-from-jokelfjord-165361121"
+      ],
+      "confidence": "medium",
+      "notes": "Fri Flyt (Trygge toppturer, Finnmark) er hovedkilden, men oppgir to startsteder; korridoren følger faktaboksen og Golpeelva. Wikiloc-sporet kunne ikke leses. Derfor confidence medium."
+    }
   }
 ]
