@@ -1511,7 +1511,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
     descent: [
       "Down the couloir the same way. The source tells of a freerider who skied the whole couloir straight down during one of Andørja's freeride competitions; for most people it is 30–40 degrees steadily from the top, and spring snow lies in the couloir into May and June.",
       "The south side is the other way down: on the flat before Rundtinden you find the easiest descent southward, in steep ground of 30–45 degrees, to the road that ends at Vasskaret. North and north-east are not a way back — the flank sweep measures 49.2 to 50.3 degrees on average there, with windows of 66.8 and 74.7.",
-      "The second documented route comes from the south, from the road end at Holte in Vasskaret — 998 metres of ascent over 3.86 km, and 173 less to climb than the couloir because the road end sits at 204 m rather than 9. It goes up to the flat before Rundtinden and then east along the south side of the big west-facing flank; the steepest step is 26.7 degrees against the couloir's 29.0.",
+      "The second documented route comes from the south, from the road end at Holte in Vasskaret — 995 metres of ascent over 3.89 km, and 176 less to climb than the couloir because the road end sits at 204 m rather than 9. It goes up to the flat before Rundtinden and then east along the south side of the big west-facing flank; the steepest step is 27.9 degrees against the couloir's 29.0.",
     ],
     avalanche: [
       {

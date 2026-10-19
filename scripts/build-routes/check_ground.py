@@ -532,15 +532,15 @@ def quoted_spans(text):
     return spans
 
 
-# Buildings are asked for along the line itself rather than around its centre.
-# Overpass reads a coordinate list in `around` as a polyline, so this returns
-# only what stands within a few metres of the route — a valley town at the
-# trailhead would otherwise be thousands of footprints nobody walks through.
-BUILDING_NEAR_M = 15.0      # how far from the line a footprint is fetched
+# Buildings are asked for in the route's own bounding box and matched against
+# the line here. Overpass can take the line itself as a polyline in `around`,
+# but that query is slow enough on a loaded mirror to time out on most routes;
+# a bbox is an index lookup, and a mountain's bbox holds few footprints.
+BUILDING_PAD_DEG = 0.0003   # about 30 m north–south, so a footprint at the edge is whole
 BUILDING_STEP_M = 2.0       # the line is sampled this finely against each polygon
 BUILDING_QUERY = """[out:json][timeout:180];
-(way(around:{r},{coords})[building];
- way(around:{r},{coords})[leisure=garden];);
+(way[building]({s},{w},{n},{e});
+ way[leisure=garden]({s},{w},{n},{e}););
 out geom tags;"""
 
 
@@ -567,11 +567,17 @@ def check_buildings(slug, rec):
     garden, and only a reader can tell a yard from a public one.
     """
     pts = rec["points"]
-    # The key carries the line, not just the tour: re-routing a tour must not
-    # read back the buildings that stood along its old line.
-    key = hashlib.sha1(json.dumps(pts).encode()).hexdigest()[:12]
-    coords = ",".join(f"{a:.5f},{b:.5f}" for a, b in pts)
-    els = overpass(f"buildings_{slug}_{rec['id']}_{key}", BUILDING_QUERY.format(r=int(BUILDING_NEAR_M), coords=coords))
+    lats = [p[0] for p in pts]
+    lngs = [p[1] for p in pts]
+    pad_lng = BUILDING_PAD_DEG / math.cos(math.radians(lats[0]))
+    box = {
+        "s": f"{min(lats) - BUILDING_PAD_DEG:.5f}", "w": f"{min(lngs) - pad_lng:.5f}",
+        "n": f"{max(lats) + BUILDING_PAD_DEG:.5f}", "e": f"{max(lngs) + pad_lng:.5f}",
+    }
+    # The key carries the box, not just the tour: a re-route that moves the
+    # line out of its old box must not read back the old box's buildings.
+    key = hashlib.sha1(json.dumps(box, sort_keys=True).encode()).hexdigest()[:12]
+    els = overpass(f"buildings_{slug}_{rec['id']}_{key}", BUILDING_QUERY.format(**box))
     if els is None:
         return ["note: buildings UNCHECKED, Overpass would not answer"]
 

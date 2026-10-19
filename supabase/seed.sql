@@ -1060,7 +1060,7 @@ Så renna: 978 moh der korridoren er festet, og beltet fra 900 til 1000 er det b
 
 Sørsida er den andre veien ned: nede på flata før Rundtinden finner du den enkleste nedkjøringa sørover, i bratt terreng på 30–45 grader, til veien som stopper ved Vasskaret. Nord og nordøst er ikke en retur — flankesveipet måler 49,2 til 50,3 grader i snitt der, med vinduer på 66,8 og 74,7.
 
-Den andre dokumenterte ruta kommer sørfra, fra veienden ved Holte i Vasskaret — 998 høydemeter på 3,86 km, og 173 mindre å stige enn renna fordi veienden ligger på 204 moh og ikke på 9. Den går opp til flata før Rundtinden og deretter østover langs sørsida av den store vestvendte flanken; bratteste steget er 26,7 grader mot rennas 29,0.',
+Den andre dokumenterte ruta kommer sørfra, fra veienden ved Holte i Vasskaret — 995 høydemeter på 3,89 km, og 176 mindre å stige enn renna fordi veienden ligger på 204 moh og ikke på 9. Den går opp til flata før Rundtinden og deretter østover langs sørsida av den store vestvendte flanken; bratteste steget er 27,9 grader mot rennas 29,0.',
   avalanche_notes  = jsonb_build_array(
     jsonb_build_object(
       'title', 'Renna',

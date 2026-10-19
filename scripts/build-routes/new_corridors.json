@@ -10708,6 +10708,12 @@
           },
           "waypoints": [
             {
+              "name": "vest og nord for tunet på Holte",
+              "lat": 68.8962,
+              "lng": 17.2964,
+              "elevationM": 216.1
+            },
+            {
               "name": "opp frå vegenden",
               "lat": 68.9,
               "lng": 17.3,

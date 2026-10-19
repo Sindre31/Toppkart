@@ -1399,9 +1399,10 @@ flip.
 ground, so the router cannot see a house, and a corridor with no waypoint over
 farmland draws a straight line through whatever stands there. Mellomkollen's
 did, through a house and a shed at Bergerud, and none of the other questions
-could see it. The buildings are fetched along the line itself, using Overpass's
-polyline `around:15`, so a town at the trailhead is not thousands of
-footprints. The line is sampled every 2 m against each polygon. A building in
+could see it. The buildings are fetched from the route's bounding box, padded
+by about 30 m, and matched against the line locally. Overpass's polyline
+`around` would fetch only what is near the line, but on a loaded mirror it
+timed out on almost every route. The line is sampled every 2 m against each polygon. A building in
 the last 40 m of the line is the summit cabin or mast the tour goes to, and is
 printed as a note. A `leisure=garden` is a note too, because the tag also covers
 parks. Run against the pre-fix Mellomkollen line, it reports exactly the house
@@ -6520,6 +6521,20 @@ steepest 30 m window moved: 20.3° between 300 and 314 m, where it had been
 The guide's numbers were rewritten to match the new line. `check_guides`,
 `check_bands`, `check_ground`, `check_tours` and `check_routes` are clean for the
 tour.
+
+### Årbostadtinden's south route went through the yard at Holte
+
+The first run of `check_ground.py`'s new house question found the same fault
+on Årbostadtinden's second route. The trailhead is the road end at Holte, and
+the line left it north-east, straight through a shed (`way/925905090`) between
+the farm buildings and the house. One waypoint, west and north of the yard at
+68.8962/17.2964, 216 moh, takes it round the west side. The nearest building is
+now the shed, about 16 m east of the line. The route is now 3889 m and 995 m of
+climbing, against 3863 m and 998 m before. The steepest step is 27.9°, where it
+had been 26.7°, and the guide's paragraph about the route was updated to match.
+The couloir route is unchanged, so the card is too. `generate_routes.py` re-solves
+every route of a tour, and the re-solve moved the couloir's last vertex, so
+that line was put back exactly as it shipped.
 
 ## Network
 
