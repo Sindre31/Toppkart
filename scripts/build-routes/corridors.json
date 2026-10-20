@@ -3977,6 +3977,106 @@
       "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/940286757, way/940286792, way/940286794."
      },
      {
+      "name": "stien ved 0.70 km",
+      "lat": 62.21746,
+      "lng": 6.18045
+     },
+     {
+      "name": "stien ved 0.70 km",
+      "lat": 62.2183,
+      "lng": 6.18104
+     },
+     {
+      "name": "stien ved 0.70 km",
+      "lat": 62.21924,
+      "lng": 6.18132
+     },
+     {
+      "name": "stien ved 0.70 km",
+      "lat": 62.22008,
+      "lng": 6.1826
+     },
+     {
+      "name": "stien ved 0.70 km",
+      "lat": 62.22092,
+      "lng": 6.18387
+     },
+     {
+      "name": "stien ved 0.70 km",
+      "lat": 62.22186,
+      "lng": 6.18398
+     },
+     {
+      "name": "stien ved 0.70 km",
+      "lat": 62.22272,
+      "lng": 6.18337
+     },
+     {
+      "name": "stien ved 0.70 km",
+      "lat": 62.22377,
+      "lng": 6.18363
+     },
+     {
+      "name": "stien ved 0.70 km",
+      "lat": 62.22468,
+      "lng": 6.18331
+     },
+     {
+      "name": "stien ved 0.70 km",
+      "lat": 62.22562,
+      "lng": 6.18416
+     },
+     {
+      "name": "stien ved 0.70 km",
+      "lat": 62.22594,
+      "lng": 6.18421
+     },
+     {
+      "name": "stien ved 0.70 km",
+      "lat": 62.22695,
+      "lng": 6.18354
+     },
+     {
+      "name": "stien ved 0.70 km",
+      "lat": 62.22792,
+      "lng": 6.18367
+     },
+     {
+      "name": "stien ved 0.70 km",
+      "lat": 62.22844,
+      "lng": 6.18493
+     },
+     {
+      "name": "stien ved 0.70 km",
+      "lat": 62.22861,
+      "lng": 6.1859
+     },
+     {
+      "name": "stien ved 0.70 km",
+      "lat": 62.22852,
+      "lng": 6.18739
+     },
+     {
+      "name": "stien ved 0.70 km",
+      "lat": 62.22874,
+      "lng": 6.18879
+     },
+     {
+      "name": "stien ved 0.70 km",
+      "lat": 62.22896,
+      "lng": 6.1902
+     },
+     {
+      "name": "stien ved 0.70 km",
+      "lat": 62.22886,
+      "lng": 6.19229
+     },
+     {
+      "name": "stien ved 0.70 km",
+      "lat": 62.22876,
+      "lng": 6.19439
+     },
+     {
       "name": "Vallasætra",
       "lat": 62.23207,
       "lng": 6.21122,
@@ -4017,7 +4117,8 @@
      }
     ],
     "source": "researched, verified (corrected), no local audit",
-    "notes": "Skredterreng i kneika opp til Bukkedalen og i heile flanken mot toppen. Frå skaret nord for toppen fell Vestrenna 700 høgdemeter i 45–50 grader ned i Nupadalen — ei feilnavigering vestover i dårleg sikt er alvorleg."
+    "notes": "Skredterreng i kneika opp til Bukkedalen og i heile flanken mot toppen. Frå skaret nord for toppen fell Vestrenna 700 høgdemeter i 45–50 grader ned i Nupadalen — ei feilnavigering vestover i dårleg sikt er alvorleg.",
+    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (1469 m from 0.7 km)."
    }
   ]
  },
@@ -4298,10 +4399,44 @@
       "elevation_m": 648.03
      },
      {
-      "name": "Gråsteindalen",
-      "lat": 62.14129,
-      "lng": 7.20479,
-      "elevation_m": 720.89
+      "name": "stien ved 0.63 km",
+      "lat": 62.13426,
+      "lng": 7.19514
+     },
+     {
+      "name": "stien ved 0.63 km",
+      "lat": 62.13405,
+      "lng": 7.19534
+     },
+     {
+      "name": "stien ved 0.63 km",
+      "lat": 62.13395,
+      "lng": 7.1965
+     },
+     {
+      "name": "stien ved 0.63 km",
+      "lat": 62.1345,
+      "lng": 7.19797
+     },
+     {
+      "name": "stien ved 0.63 km",
+      "lat": 62.13531,
+      "lng": 7.19904
+     },
+     {
+      "name": "stien ved 1.42 km",
+      "lat": 62.13979,
+      "lng": 7.20411
+     },
+     {
+      "name": "stien ved 1.42 km",
+      "lat": 62.14067,
+      "lng": 7.20528
+     },
+     {
+      "name": "stien ved 1.42 km",
+      "lat": 62.14156,
+      "lng": 7.20646
      },
      {
       "name": "Dalbotnen, 940",
@@ -4311,7 +4446,8 @@
      }
     ],
     "source": "researched, verified (corrected), no local audit",
-    "notes": "Skredterreng frå botnen av Gråsteindalen og heile vegen opp til toppen — flanken er stor og samanhengande, og det er inga trygg line rundt han. Turen bør gåast på stabile dagar."
+    "notes": "Skredterreng frå botnen av Gråsteindalen og heile vegen opp til toppen — flanken er stor og samanhengande, og det er inga trygg line rundt han. Turen bør gåast på stabile dagar.",
+    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (179 m from 0.63 km, 179 m from 1.42 km); replaced Gråsteindalen."
    }
   ]
  },
@@ -9852,22 +9988,109 @@
       "elevation_m": 401.8
      },
      {
-      "name": "vegen på sørsiden av Berillvatnet",
-      "lat": 62.438,
-      "lng": 7.44,
-      "elevation_m": 411.0
+      "name": "stien ved 0.70 km",
+      "lat": 62.43826,
+      "lng": 7.44784
      },
      {
-      "name": "vestenden av Berillvatnet",
-      "lat": 62.437,
-      "lng": 7.427,
-      "elevation_m": 403.1
+      "name": "stien ved 0.70 km",
+      "lat": 62.4389,
+      "lng": 7.4489
      },
      {
-      "name": "over elva vest for vatnet",
-      "lat": 62.4372,
-      "lng": 7.4245,
-      "elevation_m": 389.7
+      "name": "stien ved 0.70 km",
+      "lat": 62.43955,
+      "lng": 7.44995
+     },
+     {
+      "name": "stien ved 0.70 km",
+      "lat": 62.43988,
+      "lng": 7.44998
+     },
+     {
+      "name": "stien ved 0.70 km",
+      "lat": 62.44006,
+      "lng": 7.44823
+     },
+     {
+      "name": "stien ved 0.70 km",
+      "lat": 62.44024,
+      "lng": 7.44648
+     },
+     {
+      "name": "stien ved 0.70 km",
+      "lat": 62.44028,
+      "lng": 7.44532
+     },
+     {
+      "name": "stien ved 0.70 km",
+      "lat": 62.44032,
+      "lng": 7.44416
+     },
+     {
+      "name": "stien ved 0.70 km",
+      "lat": 62.44017,
+      "lng": 7.443
+     },
+     {
+      "name": "stien ved 0.70 km",
+      "lat": 62.43981,
+      "lng": 7.44148
+     },
+     {
+      "name": "stien ved 0.70 km",
+      "lat": 62.43945,
+      "lng": 7.43996
+     },
+     {
+      "name": "stien ved 0.70 km",
+      "lat": 62.43909,
+      "lng": 7.43843
+     },
+     {
+      "name": "stien ved 0.70 km",
+      "lat": 62.43921,
+      "lng": 7.43647
+     },
+     {
+      "name": "stien ved 0.70 km",
+      "lat": 62.43888,
+      "lng": 7.43434
+     },
+     {
+      "name": "stien ved 0.70 km",
+      "lat": 62.4388,
+      "lng": 7.43203
+     },
+     {
+      "name": "stien ved 0.70 km",
+      "lat": 62.43852,
+      "lng": 7.43054
+     },
+     {
+      "name": "stien ved 0.70 km",
+      "lat": 62.43824,
+      "lng": 7.42905
+     },
+     {
+      "name": "stien ved 0.70 km",
+      "lat": 62.43813,
+      "lng": 7.4275
+     },
+     {
+      "name": "stien ved 0.70 km",
+      "lat": 62.43802,
+      "lng": 7.42595
+     },
+     {
+      "name": "stien ved 0.70 km",
+      "lat": 62.43777,
+      "lng": 7.4249
+     },
+     {
+      "name": "stien ved 0.70 km",
+      "lat": 62.43752,
+      "lng": 7.42385
      },
      {
       "name": "skogen vest for vatnet",
@@ -9901,7 +10124,8 @@
      }
     ],
     "source": "researched, verified (ok), no local audit",
-    "notes": "Fri Flyt: KAST 3 – Komplekst, bratteste punkt 39 grader. Øvre del av bekkedalen mot skaret er bratt og skredutsatt. Ryggen er lite skredutsatt men ofte avblåst — ski på sekken, stegjern og isøks kan trengs. Steinutslag særlig de øverste 100 metrene av vestflanken; skredterreng i heng over 30 grader; nedfartsalternativene ved Gullkoppen måler 45–50 grader. Berillvatnet er regulert — hold vegen på sørsiden."
+    "notes": "Fri Flyt: KAST 3 – Komplekst, bratteste punkt 39 grader. Øvre del av bekkedalen mot skaret er bratt og skredutsatt. Ryggen er lite skredutsatt men ofte avblåst — ski på sekken, stegjern og isøks kan trengs. Steinutslag særlig de øverste 100 metrene av vestflanken; skredterreng i heng over 30 grader; nedfartsalternativene ved Gullkoppen måler 45–50 grader. Berillvatnet er regulert — hold vegen på sørsiden.",
+    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (1217 m from 0.7 km); replaced vegen på sørsiden av Berillvatnet, vestenden av Berillvatnet, over elva vest for vatnet."
    }
   ]
  },
@@ -11213,31 +11437,89 @@
       "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/925902600."
      },
      {
-      "name": "utenom bygningene",
-      "lat": 68.82775,
-      "lng": 17.19022,
-      "elevation_m": 45.0,
-      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/925902445."
+      "name": "stien ved 0.69 km",
+      "lat": 68.82809,
+      "lng": 17.18862
      },
      {
-      "name": "utenom bygningene",
-      "lat": 68.82775,
-      "lng": 17.19052,
-      "elevation_m": 44.0,
-      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/925902445."
+      "name": "stien ved 0.69 km",
+      "lat": 68.82804,
+      "lng": 17.19042
      },
      {
-      "name": "utenom bygningene",
+      "name": "stien ved 0.69 km",
+      "lat": 68.828,
+      "lng": 17.19222
+     },
+     {
+      "name": "stien ved 0.69 km",
       "lat": 68.82771,
-      "lng": 17.19069,
-      "elevation_m": 44.0,
-      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/925902445."
+      "lng": 17.1946
      },
      {
-      "name": "vegen mot Kvantobotn",
-      "lat": 68.825,
-      "lng": 17.2,
-      "elevation_m": 91.0
+      "name": "stien ved 0.69 km",
+      "lat": 68.82715,
+      "lng": 17.19636
+     },
+     {
+      "name": "stien ved 0.69 km",
+      "lat": 68.82659,
+      "lng": 17.19813
+     },
+     {
+      "name": "stien ved 0.69 km",
+      "lat": 68.82603,
+      "lng": 17.1999
+     },
+     {
+      "name": "stien ved 0.69 km",
+      "lat": 68.82548,
+      "lng": 17.20167
+     },
+     {
+      "name": "stien ved 0.69 km",
+      "lat": 68.82522,
+      "lng": 17.20319
+     },
+     {
+      "name": "stien ved 1.96 km",
+      "lat": 68.82725,
+      "lng": 17.21507
+     },
+     {
+      "name": "stien ved 1.96 km",
+      "lat": 68.82781,
+      "lng": 17.21537
+     },
+     {
+      "name": "stien ved 1.96 km",
+      "lat": 68.82837,
+      "lng": 17.21567
+     },
+     {
+      "name": "stien ved 1.96 km",
+      "lat": 68.82877,
+      "lng": 17.21698
+     },
+     {
+      "name": "stien ved 1.96 km",
+      "lat": 68.82893,
+      "lng": 17.21809
+     },
+     {
+      "name": "stien ved 1.96 km",
+      "lat": 68.82894,
+      "lng": 17.22037
+     },
+     {
+      "name": "stien ved 1.96 km",
+      "lat": 68.82895,
+      "lng": 17.22266
+     },
+     {
+      "name": "stien ved 1.96 km",
+      "lat": 68.82847,
+      "lng": 17.22407
      },
      {
       "name": "skogen aust for Snøfjellelva",
@@ -11271,7 +11553,8 @@
      }
     ],
     "source": "researched, verified (ok), no local audit",
-    "notes": "Fri Flyt: KAST 3 – Komplekst. Alpinøks og stegjern. Dokumentert skredhistorikk på sørvendte heng og vest for høgde 1018; ising nær tregrensa; Nordøstrenna (45–50 grader) og Østbratta er ekspertlinjer som krever kontrollerte former. Hold aust for Skjellelva ved nedkjøring mot Juliusvatnet på grunn av ising."
+    "notes": "Fri Flyt: KAST 3 – Komplekst. Alpinøks og stegjern. Dokumentert skredhistorikk på sørvendte heng og vest for høgde 1018; ising nær tregrensa; Nordøstrenna (45–50 grader) og Østbratta er ekspertlinjer som krever kontrollerte former. Hold aust for Skjellelva ved nedkjøring mot Juliusvatnet på grunn av ising.",
+    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (697 m from 0.69 km, 359 m from 1.96 km); replaced utenom bygningene, utenom bygningene, utenom bygningene, vegen mot Kvantobotn."
    }
   ]
  },
@@ -14094,10 +14377,59 @@
     },
     "waypoints": [
      {
-      "name": "nordsida av Storvatnet",
-      "lat": 68.471,
-      "lng": 15.46,
-      "elevation_m": 85.0
+      "name": "stien ved 0.12 km",
+      "lat": 68.46582,
+      "lng": 15.44336
+     },
+     {
+      "name": "stien ved 0.12 km",
+      "lat": 68.46611,
+      "lng": 15.44487
+     },
+     {
+      "name": "stien ved 0.12 km",
+      "lat": 68.4664,
+      "lng": 15.44639
+     },
+     {
+      "name": "stien ved 0.12 km",
+      "lat": 68.4667,
+      "lng": 15.44706
+     },
+     {
+      "name": "stien ved 0.12 km",
+      "lat": 68.46703,
+      "lng": 15.44719
+     },
+     {
+      "name": "stien ved 0.96 km",
+      "lat": 68.46938,
+      "lng": 15.45944
+     },
+     {
+      "name": "stien ved 0.96 km",
+      "lat": 68.46972,
+      "lng": 15.46087
+     },
+     {
+      "name": "stien ved 0.96 km",
+      "lat": 68.47019,
+      "lng": 15.46203
+     },
+     {
+      "name": "stien ved 0.96 km",
+      "lat": 68.47058,
+      "lng": 15.4642
+     },
+     {
+      "name": "stien ved 0.96 km",
+      "lat": 68.47119,
+      "lng": 15.46439
+     },
+     {
+      "name": "stien ved 0.96 km",
+      "lat": 68.47177,
+      "lng": 15.46319
      },
      {
       "name": "nord for høyde 258",
@@ -14132,7 +14464,8 @@
     ],
     "source": "researched, verified (ok), no local audit",
     "notes": "Fri Flyt: KAST 2 – Utfordrende. Alpinøks og stegjern tilrådd, og eit bratt parti rett før toppen der mange ber skia. Nordover langs høgdedraget skal ein halde seg på vestsida — det er bratte parti rett før oppstigninga tek til. Nedkjøringa går same veg, for det meste under 20 grader med eit par parti på 25–30. Toppen sjølv fell 45–48 grader i snitt mot nord, nordvest og vest.",
-    "avoidWater": true
+    "avoidWater": true,
+    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (159 m from 0.12 km, 269 m from 0.96 km); replaced nordsida av Storvatnet."
    }
   ]
  },

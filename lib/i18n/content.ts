@@ -127,11 +127,11 @@ export const TOUR_TEASER_EN: Record<string, string> = {
   rana:
     "1560 m of ascent from Urkegjerdet at the fjord: up the valley to Nordkopen, steeply onto the arête and north along the broad summit ridge.",
   vassdalstinden:
-    "1220 m of ascent from Nupen: the seter road to Vallasætra, the step up into Bukkedalen and one long flank to the top.",
+    "1230 m of ascent from Nupen: the seter road to Vallasætra, the step up into Bukkedalen and one long flank to the top.",
   torvloysa:
     "1470 m of ascent and ten kilometres from Hatlestad over Rellingsætra and Daurmålsfjellet, mostly gentle ridge.",
   skarene:
-    "1220 m of climbing from Korsmyra up Gråsteindalen and the big snow flank to one of the highest peaks above Eidsdal.",
+    "1240 m of climbing from Korsmyra up Gråsteindalen and the big snow flank to one of the highest peaks above Eidsdal.",
   melshornet:
     "560 m of climbing on a groomed track from Helgatun — the local hill, skied after dark all winter.",
   kvitegga:
@@ -267,7 +267,7 @@ export const TOUR_TEASER_EN: Record<string, string> = {
   ospetinden:
     "1060 metres of ascent from the toll booth at Venås: the summer-farm road to Venåssetra, the bog across Stavvasselva, the big east-facing bowl — and the north-east ridge to the pyramid at the head of Måndalen.",
   middagstinden:
-    "1290 metres of ascent from Herdslan in Innfjorden: the road along Berillvatnet, the stream gully to the col at Tindevatnet — and an often wind-scoured ridge, skis on the pack, before the west-facing summit flank.",
+    "1310 metres of ascent from Herdslan in Innfjorden: the road along Berillvatnet, the stream gully to the col at Tindevatnet — and an often wind-scoured ridge, skis on the pack, before the west-facing summit flank.",
   skarlitinden:
     "940 metres of ascent from Sandeggen on Breivikeidet: along Russevankelva into Russevankskaret, a turn south-south-east at point 511 — and a long summit plateau to the cairn with the couloirs below.",
   storfjellet:
@@ -299,7 +299,7 @@ export const TOUR_TEASER_EN: Record<string, string> = {
   gangnesaksla:
     "1310 metres of ascent from the power station in Sørskjomen: the works road along Vesterskarelva, the dam at the treeline and the shelf at 800 — with the Frostisen glacier in view and the Gangnesrenna below the edge.",
   snotinden:
-    "1240 metres of ascent from Ånstad to Andørja's great classic: the forest east of Snøfjellelva, Snøfjellvatnet and the west flank — five named descents, with axe and crampons in the pack.",
+    "1220 metres of ascent from Ånstad to Andørja's great classic: the forest east of Snøfjellelva, Snøfjellvatnet and the west flank — five named descents, with axe and crampons in the pack.",
   "stortinden-rolla":
     "980 metres of ascent from Indre Forså to Rolla's highest: the moors, the east side of Mevatnet on land — and the couloir south of the summit, an even 30–40 degrees, with Drangen as the expert backdrop.",
   reinspalen:
@@ -383,7 +383,7 @@ export const TOUR_TEASER_EN: Record<string, string> = {
   forkledalstindan:
     "980 metres of ascent from the E10 at Litlvatnet: the north side of spot height 462 and the mountainside up to the 700 m top where the source's ski tour turns — and the traverse on over the fore-summit, with the east side as the way round the hard climbing.",
   forselvtinden:
-    "1180 metres of ascent and 8.3 km from the Lofast, over the summit of another tour in the catalogue: up Lakselvtindan first, west to due north of spot height 790 — and the south ridge at the end, with 296 metres given back along the way.",
+    "1190 metres of ascent and 8.4 km from the Lofast, over the summit of another tour in the catalogue: up Lakselvtindan first, west to due north of spot height 790 — and the south ridge at the end, with 296 metres given back along the way.",
   kvasstinden:
     "930 metres of ascent from the E10 at Austerstraumen: the bogs south, down into Trolldalen north of spot height 146 — and the west ridge to an airy summit, where 20–25 degrees is the rule and the axe is for the last few metres.",
   arbostadtinden:
@@ -1978,7 +1978,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
   },
   snotinden: {
     intro:
-      "1243 metres of ascent over 6.78 km from Ånstad to the great classic of Andørja — the island Fri Flyt calls packed with summits. The source rates it KAST 3 – Complex with ice axe and crampons on the gear list and five named descents, several holding 45 degrees; Vestsiden, the line on this card, is the mildest of them, and the climb itself measures 22.7 degrees in its steepest hundred-metre band and 28.1 in its steepest sustained stretch. The card carries grade 4: the mountain around the line is why.",
+      "1215 metres of ascent over 6.89 km from Ånstad to the great classic of Andørja — the island Fri Flyt calls packed with summits. The source rates it KAST 3 – Complex with ice axe and crampons on the gear list and five named descents, several holding 45 degrees; Vestsiden, the line on this card, is the mildest of them, and the climb itself measures 22.7 degrees in its steepest hundred-metre band and 28.1 in its steepest sustained stretch. The card carries grade 4: the mountain around the line is why.",
     ascent: [
       "From the sports ground by the school at Ånstad — 9 m on farmland by the county road. You follow the road towards Kvantobotn (91 m where the line branches off), cross Kvantoelva and climb the forest east of Snøfjellelva: the bands from 100 to 400 m measure 7 degrees over road and moor, then it steepens — 20.9 degrees from 400 to 500 and the tour's steepest band, 22.7 degrees over 253 metres of ground, from 500 to 600, with the steepest sustained stretch at 28.1 between 630 and 648 m. The forest ends at 402 m after 4.27 km.",
       "Above the forest the line passes south and south-east of Snøfjellvatnet — on land the whole way; the first solve crossed 90 metres of the lake, and the reroute is in the research record — and takes the west flank from there: 15–18 degrees in the bands from 700 to 1000.",
@@ -2009,8 +2009,8 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
     elevationProfile: {
       startLabel: "9 m",
       endLabel: "1215 m",
-      distanceLabel: "6.8 km",
-      caption: "1243 metres of ascent and 6.78 km from Ånstad east of Snøfjellelva and south of Snøfjellvatnet, with the treeline at 402 m and the steepest ground — 28.1 degrees between 630 and 648 m — in the forest slope.",
+      distanceLabel: "6.9 km",
+      caption: "1215 metres of ascent and 6.89 km from Ånstad east of Snøfjellelva and south of Snøfjellvatnet, with the treeline at 402 m and the steepest ground — 28.1 degrees between 630 and 648 m — in the forest slope.",
     },
   },
   "storhornet-kvafjord": {
@@ -3029,14 +3029,14 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
   },
   forselvtinden: {
     intro:
-      "1180 metres of ascent over 8.29 km from the Møysalen car park on the E10 to Forselvtinden — the longest tour of the round, and the only route in the app that crosses the summit of another tour on the way. The source's own description opens with “follow the route up Lakselvtindan”, and it is 747 m you stand on before carrying on west. 296 of those metres you give back. Fri Flyt gives KAST 2 – Challenging, but asks you to consider whether the skis should come up: grade 4.",
+      "1193 metres of ascent over 8.38 km from the Møysalen car park on the E10 to Forselvtinden — the longest tour of the round, and the only route in the app that crosses the summit of another tour on the way. The source's own description opens with “follow the route up Lakselvtindan”, and it is 747 m you stand on before carrying on west. 309 of those metres you give back. Fri Flyt gives KAST 2 – Challenging, but asks you to consider whether the skis should come up: grade 4.",
     ascent: [
-      "From the car park — 23 m — as on Lakselvtindan: the north shore of Storvatnet at 85, north of spot height 258, and 217 m where Lakselva is crossed eastward. The forest lets go at 220 m after 2.48 km, and the band from 300 to 400 is the steepest on average at 19.0 degrees over 313 metres of ground.",
+      "From the car park — 23 m — as on Lakselvtindan: the north shore of Storvatnet at 85, north of spot height 258, and 217 m where Lakselva is crossed eastward. The forest lets go at 220 m after 2.57 km, and the band from 300 to 400 is the steepest on average at 19.0 degrees over 313 metres of ground.",
       "Up onto Lakselvtindan, 747 m, and then west along the ridge until you stand due north of spot height 790 — DTM1 measures 790.6, and the corridor stands at 754 just north of it. Between 700 and 800 m lie two kilometres of near-flat high ground: the band measures 2.1 degrees on average over 1955 metres of ground.",
       "Carrying on north the route keeps to the lower — western — side of the ridge, 668 m where the corridor is anchored, because there are steep sections just before the climb begins. Then the south ridge: the steepest step on the whole line, 33.1 degrees, sits between 834 and 863 m, right under the cairn at 907.",
     ],
     descent: [
-      "The same way home, mostly under 20 degrees with a couple of sections at 25–30, says the source. But the way home is a second ascent too: the 296 metres you gave back have to be taken again, and Lakselvtindan stands in the way once more.",
+      "The same way home, mostly under 20 degrees with a couple of sections at 25–30, says the source. But the way home is a second ascent too: the 309 metres you gave back have to be taken again, and Lakselvtindan stands in the way once more.",
       "The flank sweep explains why the south ridge is the only way up and down. S measures 22.5 degrees on average with a 40.8 window 70 to 130 metres out — the steep section the source names. N, NE, W and NW run 46.9 to 48.6 on average with windows from 60.6 to 75.9, and east holds 76.8 only 30 to 90 metres out.",
     ],
     avalanche: [
@@ -3050,14 +3050,14 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       },
       {
         title: "Before you go",
-        body: "Forselvtinden sits in the Lofoten og Vesterålen forecasting region, an A-region with a daily avalanche bulletin through the season. Check varsom.no. The February–April season is Fri Flyt's, and 8.29 km with 296 metres to regain makes this a tour where the hour of the day decides what snow you meet on the way back. An empty page does not mean a safe mountain.",
+        body: "Forselvtinden sits in the Lofoten og Vesterålen forecasting region, an A-region with a daily avalanche bulletin through the season. Check varsom.no. The February–April season is Fri Flyt's, and 8.38 km with 309 metres to regain makes this a tour where the hour of the day decides what snow you meet on the way back. An empty page does not mean a safe mountain.",
       },
     ],
     elevationProfile: {
       startLabel: "23 m",
       endLabel: "907 m",
-      distanceLabel: "8.3 km",
-      caption: "1180 metres of ascent over 8.29 km from the Lofast: over Lakselvtindan at 747, west to north of spot height 790 — and the south ridge to the cairn at 907.",
+      distanceLabel: "8.4 km",
+      caption: "1193 metres of ascent over 8.38 km from the Lofast: over Lakselvtindan at 747, west to north of spot height 790 — and the south ridge to the cairn at 907.",
     },
   },
   middagsfjellet: {
@@ -4623,10 +4623,10 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
   },
   middagstinden: {
     intro:
-      "1291 metres of ascent over 6.04 km from Herdslan in Innfjorden to an alpine summit that is steep on every side — Fri Flyt rates the tour KAST 3 – Complex with a steepest point of 39 degrees, and the normal route feels airy and exposed. The line measures 25.1 degrees in its steepest 100 m band and 30.0 in its steepest sustained stretch, which is the last metres up the west-facing summit flank. The ridge to it is often wind-scoured: skis on the pack, and crampons and ice axe may be needed. This is the most serious tour of the round, and it says so itself.",
+      "1308 metres of ascent over 6.39 km from Herdslan in Innfjorden to an alpine summit that is steep on every side — Fri Flyt rates the tour KAST 3 – Complex with a steepest point of 39 degrees, and the normal route feels airy and exposed. The line measures 25.1 degrees in its steepest 100 m band and 30.0 in its steepest sustained stretch, which is the last metres up the west-facing summit flank. The ridge to it is often wind-scoured: skis on the pack, and crampons and ice axe may be needed. This is the most serious tour of the round, and it says so itself.",
     ascent: [
-      "From Herdslan on the toll road towards Bøstølen — the register's Herdslan is a clearing by the road, and the bog flat where the cars stand reads 348.7 m against Fri Flyt's stated 360. The road is followed west along the south side of Berillvatnet, which is a regulated reservoir: the line rounds the whole lake on land, past its west end at 403 m, and crosses the river west of the lake at a suitable spot as the source says — 390 m where the line takes it. The band from 300 to 400 m measures 3.4 degrees over a kilometre and a half of road.",
-      "From the forest west of the lake — 410 m — the route climbs the stream gully towards the col east of point 943, at Tindevatnet. The forest ends at 740 m after 3.33 km, with open ground from 759, and the gully steepens evenly: 21.0 degrees from 500 to 600 m, 19.2 from 600 to 700 and the tour's steepest band, 25.1 degrees over 170 metres of ground, from 700 to 800. The upper part of the gully is steep and avalanche-prone — the source's own words, and this is where the tour demands its stability.",
+      "From Herdslan on the toll road towards Bøstølen — the register's Herdslan is a clearing by the road, and the bog flat where the cars stand reads 348.7 m against Fri Flyt's stated 360. The road is followed west along the south side of Berillvatnet, which is a regulated reservoir: the line rounds the whole lake on land, past its west end at 403 m, and crosses the river west of the lake at a suitable spot as the source says — 390 m where the line takes it. The band from 300 to 400 m measures 1.3 degrees over 2.4 km of road.",
+      "From the forest west of the lake — 410 m — the route climbs the stream gully towards the col east of point 943, at Tindevatnet. The forest ends at 740 m after 3.68 km, with open ground from 759, and the gully steepens evenly: 21.0 degrees from 500 to 600 m, 19.2 from 600 to 700 and the tour's steepest band, 25.1 degrees over 170 metres of ground, from 700 to 800. The upper part of the gully is steep and avalanche-prone — the source's own words, and this is where the tour demands its stability.",
       "The col reads 937 m where the line takes it, with Tindevatnet at 804 below you to the west. From here the ridge is traversed east towards the summit — 17.3 degrees from 1000 to 1100, 21.3 from 1200 to 1300 — and it is not avalanche terrain to speak of, but often wind-scoured: skis on the pack, and crampons and ice axe may be needed. Where the ridge flattens northward the skis can often go back on along the west side.",
       "The final west-facing flank before the summit is steep — 37 degrees by Fri Flyt, often wind-scoured, and short of space. The line measures 30.0 degrees in its steepest sustained stretch between 1549 and 1568 m, and the band from 1500 to 1600 measures 23.8. The cairn stands at 1568 m; the register point reads 1547, and the summit search climbs to 1568.3 against a published 1569. Norway has 49 mountains called Middagstinden — this is Rauma's.",
     ],
@@ -4655,8 +4655,8 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
     elevationProfile: {
       startLabel: "349 m",
       endLabel: "1568 m",
-      distanceLabel: "6.0 km",
-      caption: "1291 metres of ascent and 6.04 km from Herdslan around Berillvatnet and up the stream gully to the col at Tindevatnet, with the treeline at 740 m and the steepest ground — 30.0 degrees between 1549 and 1568 m — in the west-facing summit flank.",
+      distanceLabel: "6.4 km",
+      caption: "1308 metres of ascent and 6.39 km from Herdslan around Berillvatnet and up the stream gully to the col at Tindevatnet, with the treeline at 740 m and the steepest ground — 30.0 degrees between 1549 and 1568 m — in the west-facing summit flank.",
     },
   },
   auskjeret: {
@@ -4867,10 +4867,10 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
   },
   vassdalstinden: {
     intro:
-      "1223 metres of climbing from 92 m at Nupen, through Bukkedalen and up a long flank that averages 27.8 degrees over the last hundred. The steepest sustained section measures 50.6 degrees and sits high in the flank below the summit, between 1133 and 1171 m.",
+      "1232 metres of climbing from 92 m at Nupen, through Bukkedalen and up a long flank that averages 27.8 degrees over the last hundred. The steepest sustained section measures 50.6 degrees and sits high in the flank below the summit, between 1133 and 1171 m.",
     ascent: [
       "Start at the parking beyond the gate at Nupen, 92 m. Fri Flyt gives “3 hours from Vallasætra” and “4 hours from Nupen”, and the difference is real: the seter sits at 324 m, and the road on to it is a toll road that only applies “if the road is open”.",
-      "Follow Engesetvegen up and east to Vallasætra. The first 829 metres of ground are flat — 0.6 degrees — and then the road gets to work: 5.3 degrees from 100 to 200 m, 9.2 from 200 to 300 and a steeper stretch at 19.9 and 21.8 degrees between 400 and 600 m. The forest holds to 581 m along the line. From there it runs in open ground along the edge of a stand of trees that it clips at 637 m, and from 640 m it is open for good.",
+      "Follow Engesetvegen up and east to Vallasætra. The first 753 metres of ground are flat — 1.1 degrees — and then the road gets to work: 4.3 degrees from 100 to 200 m, 6.1 from 200 to 300 and a steeper stretch at 19.9 and 21.8 degrees between 400 and 600 m. The forest holds to 581 m along the line. From there it runs in open ground along the edge of a stand of trees that it clips at 637 m, and from 640 m it is open for good.",
       "From the seter you go a few hundred metres into Langedalen and then steeply up the step into Bukkedalen, 791 m — with the skis on the pack if need be. The band from 700 to 800 m is gentle, 8.9 degrees over 632 metres of ground, and gives you the breather before the flank.",
       "Follow the valley floor in to 960 m, where the long steep flank begins. From here the line climbs evenly and hard: 19.5 degrees from 1000 to 1100 m, 22.5 from 1100 to 1200 and 24.4 from 1200 to 1300, with the steepest sustained section at 50.6 degrees between 1133 and 1171 m, in the flank below the summit. The summit stands at 1278. Just before the flank begins the line runs 97 metres across a tarn at 946 m, up to 40 metres from shore. It is natural and unregulated, and unnamed in the register.",
     ],
@@ -4895,8 +4895,8 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
     elevationProfile: {
       startLabel: "92 m",
       endLabel: "1278 m",
-      distanceLabel: "6.6 km",
-      caption: "1223 metres of climbing and 6.56 km from Nupen over Vallasætra and Bukkedalen, with the treeline at 637 m and the flank from the valley floor at 960 m to the summit.",
+      distanceLabel: "6.9 km",
+      caption: "1232 metres of climbing and 6.91 km from Nupen over Vallasætra and Bukkedalen, with the treeline at 637 m and the flank from the valley floor at 960 m to the summit.",
     },
   },
   saudehornet: {
@@ -5006,10 +5006,10 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
   },
   skarene: {
     intro:
-      "1226 metres of climbing over 6.59 km from Korsmyra, with two kilometres of flat valley floor before the big snow flank begins. The flank holds 18 to 21 degrees band after band from 900 to 1700 m — and it is continuous avalanche terrain the whole way.",
+      "1239 metres of climbing over 6.72 km from Korsmyra, with two kilometres of flat valley floor before the big snow flank begins. The flank holds 18 to 21 degrees band after band from 900 to 1700 m — and it is continuous avalanche terrain the whole way.",
     ascent: [
       "Start at the car park on Korsmyra, 621 m, on the main road between Eidsdal and Geiranger. Fri Flyt describes the access under Eidshornet, and it is the same place.",
-      "Follow the seter road in to Grandesætra at 648 m and on gently into and up Gråsteindalen, 721 m. The first two bands are almost flat: 3.7 degrees over 1268 metres of ground from 600 to 700 m and 3.6 over 1575 metres from 800 to 900.",
+      "Follow the seter road in to Grandesætra at 648 m and on gently into and up Gråsteindalen, 721 m. The first two bands are almost flat: 3.3 degrees over 1431 metres of ground from 600 to 700 m and 3.6 over 1575 metres from 800 to 900.",
       "Coming in towards the head of the valley at 940 m the big snow flank begins, and it holds the same character all the way up: 17.9 degrees from 900 to 1000 m, 20.5 from 1000 to 1100, 19.6 from 1300 to 1400, 21.2 from 1500 to 1600 and 21.2 from 1600 to 1700 — the two steepest hundred-metre bands. The steepest sustained section measures 27.9 degrees between 1528 and 1544 m.",
       "The last hundred metres of climbing ease to 9.6 degrees and lead to the cairn at 1830 m, one of the highest points in the mountains above Eidsdal. The register spells the mountain Skorene.",
     ],
@@ -5034,7 +5034,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
     elevationProfile: {
       startLabel: "621 m",
       endLabel: "1830 m",
-      distanceLabel: "6.6 km",
+      distanceLabel: "6.7 km",
       caption: "1219 metres of climbing and 6.44 km from Korsmyra over Grandesætra and Gråsteindalen, with the snow flank from the valley floor at 940 m to the cairn at 1830.",
     },
   },

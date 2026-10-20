@@ -1576,7 +1576,7 @@ export const GUIDES: Record<string, TourGuide> = {
   snotinden: {
     slug: "snotinden",
     intro:
-      "1243 høydemeter og 6,78 km fra Ånstad til den store klassikeren på Andørja — øya Fri Flyt kaller tettpakket med fjelltopper. Kilden gir KAST 3 – Komplekst med alpinøks og stegjern i utstyrslista og fem navngitte nedfarter der flere holder 45 grader; Vestsiden, linja på dette kortet, er den mildeste av dem, og selve oppturen måler 22,7 grader i bratteste hundremetersbelte og 28,1 i bratteste sammenhengende parti. Kortet bærer grad 4: fjellet rundt linja er grunnen.",
+      "1215 høydemeter og 6,89 km fra Ånstad til den store klassikeren på Andørja — øya Fri Flyt kaller tettpakket med fjelltopper. Kilden gir KAST 3 – Komplekst med alpinøks og stegjern i utstyrslista og fem navngitte nedfarter der flere holder 45 grader; Vestsiden, linja på dette kortet, er den mildeste av dem, og selve oppturen måler 22,7 grader i bratteste hundremetersbelte og 28,1 i bratteste sammenhengende parti. Kortet bærer grad 4: fjellet rundt linja er grunnen.",
     ascent: [
       "Fra idrettsanlegget ved skolen på Ånstad — 9 moh på dyrket mark ved fylkesveien. Du følger veien mot Kvantobotn (91 moh der linja tar av), krysser Kvantoelva og går opp skogen øst for Snøfjellelva: beltene fra 100 til 400 moh måler 7 grader over veien og myrene, så bratner det — 20,9 grader fra 400 til 500 og turens bratteste belte, 22,7 grader over 253 meter grunn, fra 500 til 600, med det bratteste sammenhengende partiet på 28,1 mellom 630 og 648 moh. Skogen slutter på 402 moh etter 4,27 km.",
       "Over skogen passerer linja sør og sørøst for Snøfjellvatnet — på land hele veien; den første løsningen krysset 90 meter av vannet, og omrutingen står i forskningsposten — og tar vestflanken derfra: 15–18 grader i beltene fra 700 til 1000.",
@@ -1605,11 +1605,11 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,200 L9,199 L21,199 L33,198 L61,195 L73,194 L101,191 L125,191 L153,191 L185,182 L212,181 L244,171 L273,163 L304,157 L336,152 L368,147 L392,134 L405,124 L427,109 L445,98 L460,88 L483,79 L502,70 L527,61 L551,45 L571,35 L588,23 L600,18",
+      path: "M0,200 L9,199 L21,199 L33,198 L60,196 L87,194 L115,192 L142,191 L171,187 L192,184 L219,181 L250,171 L278,163 L309,157 L340,152 L371,147 L395,134 L408,124 L430,109 L447,98 L463,88 L485,79 L504,70 L528,61 L551,45 L571,35 L589,23 L600,18",
       startLabel: "9 moh",
       endLabel: "1215 moh",
-      distanceLabel: "6,8 km",
-      caption: "1243 høydemeter og 6,78 km fra Ånstad øst for Snøfjellelva og sør for Snøfjellvatnet, med skoggrensa på 402 moh og det bratteste — 28,1 grader mellom 630 og 648 moh — i skoglia.",
+      distanceLabel: "6,9 km",
+      caption: "1215 høydemeter og 6,89 km fra Ånstad øst for Snøfjellelva og sør for Snøfjellvatnet, med skoggrensa på 402 moh og det bratteste — 28,1 grader mellom 630 og 648 moh — i skoglia.",
     },
   },
   "storhornet-kvafjord": {
@@ -2689,14 +2689,14 @@ export const GUIDES: Record<string, TourGuide> = {
   forselvtinden: {
     slug: "forselvtinden",
     intro:
-      "1180 høydemeter og 8,29 km fra Møysalens parkering på E10 til Forselvtinden — den lengste turen i runden, og den eneste ruta i appen som går over toppen av en annen tur på veien. Kildens egen beskrivelse starter med «følg ruta opp på Lakselvtindan», og det er 747 moh du står på før du går videre vestover. 296 av høydemeterne gir du fra deg. Fri Flyt gir KAST 2 – Utfordrende, men ber deg vurdere om skiene skal være med opp: grad 4.",
+      "1193 høydemeter og 8,38 km fra Møysalens parkering på E10 til Forselvtinden — den lengste turen i runden, og den eneste ruta i appen som går over toppen av en annen tur på veien. Kildens egen beskrivelse starter med «følg ruta opp på Lakselvtindan», og det er 747 moh du står på før du går videre vestover. 309 av høydemeterne gir du fra deg. Fri Flyt gir KAST 2 – Utfordrende, men ber deg vurdere om skiene skal være med opp: grad 4.",
     ascent: [
-      "Fra parkeringa — 23 moh — som på Lakselvtindan: nordsida av Storvatnet på 85, nord for høyde 258, og 217 moh der Lakselva krysses mot øst. Skogen slipper på 220 moh etter 2,48 km, og beltet fra 300 til 400 er det bratteste i snitt med 19,0 grader over 313 meter grunn.",
+      "Fra parkeringa — 23 moh — som på Lakselvtindan: nordsida av Storvatnet på 85, nord for høyde 258, og 217 moh der Lakselva krysses mot øst. Skogen slipper på 220 moh etter 2,57 km, og beltet fra 300 til 400 er det bratteste i snitt med 19,0 grader over 313 meter grunn.",
       "Opp på Lakselvtindan, 747 moh, og så vestover langs høydedraget til du står rett nord av høyde 790 — DTM1 måler 790,6, og korridoren står på 754 rett nord av den. Mellom 700 og 800 moh ligger to kilometer nesten flatt høyfjell: beltet måler 2,1 grader i snitt over 1955 meter grunn.",
       "Videre nordover holder ruta seg på nedsida — vestsida — av draget, 668 moh der korridoren er festet, fordi det er bratte partier rett før oppstigningen tar til. Så sydryggen: det bratteste steget på hele linja, 33,1 grader, ligger mellom 834 og 863 moh, rett under varden på 907.",
     ],
     descent: [
-      "Samme veien hjem, for det meste under 20 grader med et par partier på 25–30, sier kilden. Men hjemveien er også en ny oppstigning: de 296 høydemeterne du ga fra deg skal tas igjen, og Lakselvtindan står i veien en gang til.",
+      "Samme veien hjem, for det meste under 20 grader med et par partier på 25–30, sier kilden. Men hjemveien er også en ny oppstigning: de 309 høydemeterne du ga fra deg skal tas igjen, og Lakselvtindan står i veien en gang til.",
       "Flankesveipet forklarer hvorfor sydryggen er den eneste veien opp og ned. S måler 22,5 grader i snitt med et 40,8-vindu 70 til 130 meter ute — det bratte partiet kilden nevner. N, NE, V og NV ligger på 46,9 til 48,6 i snitt med vinduer fra 60,6 til 75,9, og øst har 76,8 bare 30 til 90 meter ute.",
     ],
     avalanche: [
@@ -2710,15 +2710,15 @@ export const GUIDES: Record<string, TourGuide> = {
       },
       {
         title: "Før du går",
-        body: "Forselvtinden ligger i varslingsregionen Lofoten og Vesterålen, en A-region med daglig skredvarsel gjennom sesongen. Sjekk varsom.no. Sesongen februar–april er Fri Flyts, og 8,29 km med 296 høydemeter tilbake gjør dette til en tur der tidspunktet på dagen avgjør hvilken snø du møter på returen. En tom side betyr ikke trygt fjell.",
+        body: "Forselvtinden ligger i varslingsregionen Lofoten og Vesterålen, en A-region med daglig skredvarsel gjennom sesongen. Sjekk varsom.no. Sesongen februar–april er Fri Flyts, og 8,38 km med 309 høydemeter tilbake gjør dette til en tur der tidspunktet på dagen avgjør hvilken snø du møter på returen. En tom side betyr ikke trygt fjell.",
       },
     ],
     elevationProfile: {
-      path: "M0,198 L23,200 L48,199 L72,192 L96,185 L117,179 L141,171 L164,156 L186,158 L209,160 L238,148 L256,132 L274,119 L297,103 L317,92 L343,80 L365,58 L382,51 L402,57 L419,62 L437,59 L463,59 L486,49 L505,61 L528,66 L551,50 L577,36 L597,21 L600,18",
+      path: "M0,198 L23,200 L47,199 L72,199 L95,186 L113,185 L136,178 L162,160 L181,158 L206,160 L232,154 L253,140 L268,124 L291,109 L310,97 L336,85 L358,66 L376,52 L394,54 L414,62 L432,57 L455,64 L479,52 L497,55 L523,64 L545,54 L568,43 L589,29 L600,18",
       startLabel: "23 moh",
       endLabel: "907 moh",
-      distanceLabel: "8,3 km",
-      caption: "1180 høydemeter og 8,29 km fra Lofast: over Lakselvtindan på 747, vestover til nord for høyde 790 — og sydryggen til varden på 907.",
+      distanceLabel: "8,4 km",
+      caption: "1193 høydemeter og 8,38 km fra Lofast: over Lakselvtindan på 747, vestover til nord for høyde 790 — og sydryggen til varden på 907.",
     },
   },
   middagsfjellet: {
@@ -4373,10 +4373,10 @@ export const GUIDES: Record<string, TourGuide> = {
   middagstinden: {
     slug: "middagstinden",
     intro:
-      "1291 høydemeter og 6,04 km fra Herdslan i Innfjorden til en alpin topp som er bratt på alle kanter — Fri Flyt gir turen KAST 3 – Komplekst med bratteste punkt 39 grader, og normalveien kjennes luftig og eksponert. Linja måler 25,1 grader i bratteste hundremetersbelte og 30,0 i det bratteste sammenhengende partiet, som er de siste metrene opp den vestvendte toppflanken. Eggen dit er ofte avblåst: ski på sekken, og stegjern og isøks kan trengs. Dette er rundens alvorligste tur, og den sier det selv.",
+      "1308 høydemeter og 6,39 km fra Herdslan i Innfjorden til en alpin topp som er bratt på alle kanter — Fri Flyt gir turen KAST 3 – Komplekst med bratteste punkt 39 grader, og normalveien kjennes luftig og eksponert. Linja måler 25,1 grader i bratteste hundremetersbelte og 30,0 i det bratteste sammenhengende partiet, som er de siste metrene opp den vestvendte toppflanken. Eggen dit er ofte avblåst: ski på sekken, og stegjern og isøks kan trengs. Dette er rundens alvorligste tur, og den sier det selv.",
     ascent: [
-      "Fra Herdslan på bomvegen mot Bøstølen — registerets Herdslan er ei slette ved veien, og myrflata der bilene står leser 348,7 moh mot Fri Flyts oppgitte 360. Veien følges vestover på sørsiden av Berillvatnet, som er regulert: linja runder hele vannet på land, om vestenden på 403 moh, og krysser elva vest for vatnet på egnet sted slik kilden sier — 390 moh der linja tar den. Beltet fra 300 til 400 moh måler 3,4 grader over halvannen kilometer veg.",
-      "Fra skogen vest for vatnet — 410 moh — går det opp bekkedalen mot skaret øst for punkt 943, ved Tindevatnet. Skogen slutter på 740 moh etter 3,33 km, med åpent område fra 759, og dalen bratner jevnt: 21,0 grader fra 500 til 600 moh, 19,2 fra 600 til 700 og turens bratteste belte, 25,1 grader over 170 meter grunn, fra 700 til 800. Øvre del av bekkedalen er bratt og skredutsatt — det er kildens egen formulering, og det er her turen krever sin stabilitet.",
+      "Fra Herdslan på bomvegen mot Bøstølen — registerets Herdslan er ei slette ved veien, og myrflata der bilene står leser 348,7 moh mot Fri Flyts oppgitte 360. Veien følges vestover på sørsiden av Berillvatnet, som er regulert: linja runder hele vannet på land, om vestenden på 403 moh, og krysser elva vest for vatnet på egnet sted slik kilden sier — 390 moh der linja tar den. Beltet fra 300 til 400 moh måler 1,3 grader over 2,4 km veg.",
+      "Fra skogen vest for vatnet — 410 moh — går det opp bekkedalen mot skaret øst for punkt 943, ved Tindevatnet. Skogen slutter på 740 moh etter 3,68 km, med åpent område fra 759, og dalen bratner jevnt: 21,0 grader fra 500 til 600 moh, 19,2 fra 600 til 700 og turens bratteste belte, 25,1 grader over 170 meter grunn, fra 700 til 800. Øvre del av bekkedalen er bratt og skredutsatt — det er kildens egen formulering, og det er her turen krever sin stabilitet.",
       "Skaret leser 937 moh der linja tar det, med Tindevatnet på 804 under deg i vest. Herfra travereres ryggen østover mot toppen — 17,3 grader fra 1000 til 1100, 21,3 fra 1200 til 1300 — og den er lite skredutsatt, men ofte avblåst: skiene på sekken, og stegjern og isøks kan trengs. Når ryggen flater ut nordover kan skiene ofte på igjen langs vestsiden.",
       "Den siste vestvendte flanken før toppen er bratt — 37 grader ifølge Fri Flyt, ofte avblåst, og med liten plass. Linja måler 30,0 grader i det bratteste sammenhengende partiet mellom 1549 og 1568 moh, og beltet fra 1500 til 1600 måler 23,8. Varden står på 1568 moh; registeret leser 1547 på representasjonspunktet, og toppsøket klatrer til 1568,3 mot publiserte 1569. Landet har 49 fjell som heter Middagstinden — dette er Raumas.",
     ],
@@ -4403,11 +4403,11 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,200 L27,197 L45,192 L72,191 L94,191 L116,191 L143,190 L167,192 L189,194 L215,197 L239,189 L255,182 L282,168 L297,161 L313,152 L327,144 L344,132 L367,123 L390,116 L411,108 L428,106 L449,97 L471,87 L489,78 L507,68 L534,52 L556,41 L574,32 L592,24 L600,18",
+      path: "M0,200 L25,197 L51,191 L76,195 L97,196 L119,195 L148,195 L170,196 L199,196 L223,196 L253,192 L273,182 L299,168 L316,159 L333,150 L349,139 L370,125 L396,119 L421,108 L438,106 L462,95 L484,85 L507,71 L525,60 L555,43 L571,34 L593,24 L600,18",
       startLabel: "349 moh",
       endLabel: "1568 moh",
-      distanceLabel: "6,0 km",
-      caption: "1291 høydemeter og 6,04 km fra Herdslan rundt Berillvatnet og opp bekkedalen til skaret ved Tindevatnet, med skoggrensa på 740 moh og det bratteste — 30,0 grader mellom 1549 og 1568 moh — i den vestvendte toppflanken.",
+      distanceLabel: "6,4 km",
+      caption: "1308 høydemeter og 6,39 km fra Herdslan rundt Berillvatnet og opp bekkedalen til skaret ved Tindevatnet, med skoggrensa på 740 moh og det bratteste — 30,0 grader mellom 1549 og 1568 moh — i den vestvendte toppflanken.",
     },
   },
   auskjeret: {
@@ -4631,10 +4631,10 @@ export const GUIDES: Record<string, TourGuide> = {
   vassdalstinden: {
     slug: "vassdalstinden",
     intro:
-      "1223 høydemeter fra 92 moh i Nupen, gjennom Bukkedalen og opp en lang flanke som holder 27,8 grader i snitt de siste hundre. Bratteste sammenhengende parti måler 50,6 grader og ligger høyt i flanken under toppen, mellom 1133 og 1171 moh.",
+      "1232 høydemeter fra 92 moh i Nupen, gjennom Bukkedalen og opp en lang flanke som holder 27,8 grader i snitt de siste hundre. Bratteste sammenhengende parti måler 50,6 grader og ligger høyt i flanken under toppen, mellom 1133 og 1171 moh.",
     ascent: [
       "Start ved bilparkeringa etter bommen i Nupen, 92 moh. Fri Flyt oppgir «3 timer fra Vallasætra» og «4 timer fra Nupen», og forskjellen er reell: setra ligger på 324 moh, og den videre veien dit er bomvei som bare gjelder «hvis veien er åpen».",
-      "Følg Engesetvegen oppover og østover til Vallasætra. De første 829 metrene grunn er flate — 0,6 grader — og så begynner veien: 5,3 grader fra 100 til 200 moh, 9,2 fra 200 til 300 og et brattere parti på 19,9 og 21,8 grader mellom 400 og 600 moh. Skogen holder til 581 moh langs linja. Derfra går den i åpent terreng langs kanten av et skogholt som den streifer på 637 moh, og fra 640 moh er det åpent for godt.",
+      "Følg Engesetvegen oppover og østover til Vallasætra. De første 753 metrene grunn er flate — 1,1 grader — og så begynner veien: 4,3 grader fra 100 til 200 moh, 6,1 fra 200 til 300 og et brattere parti på 19,9 og 21,8 grader mellom 400 og 600 moh. Skogen holder til 581 moh langs linja. Derfra går den i åpent terreng langs kanten av et skogholt som den streifer på 637 moh, og fra 640 moh er det åpent for godt.",
       "Fra setra går du noen hundre meter inn Langedalen og deretter bratt opp kneiken til Bukkedalen, 791 moh — eventuelt med skiene på sekken. Bandet fra 700 til 800 moh er slakt, 8,9 grader over 632 meter grunn, og gir deg pusterommet før flanken.",
       "Følg dalbunnen innover til 960 moh, der den bratte, lange flanken begynner. Herfra stiger linja jevnt og hardt: 19,5 grader fra 1000 til 1100 moh, 22,5 fra 1100 til 1200 og 24,4 fra 1200 til 1300, med bratteste sammenhengende parti på 50,6 grader mellom 1133 og 1171 moh, i flanken under toppen. Toppen står på 1278. Like før flanken begynner går linja 97 meter over et tjern på 946 moh, opptil 40 meter fra land. Det er naturlig og uregulert, og uten navn i registeret.",
     ],
@@ -4657,11 +4657,11 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,198 L9,199 L31,199 L59,198 L92,196 L117,194 L142,191 L166,186 L191,178 L217,169 L240,166 L271,165 L295,163 L302,162 L320,153 L336,144 L356,132 L373,120 L389,110 L413,103 L438,93 L463,89 L483,79 L508,67 L532,62 L554,50 L570,41 L586,29 L600,18",
+      path: "M0,198 L10,198 L37,199 L64,197 L91,194 L116,192 L142,188 L169,182 L193,178 L220,171 L247,167 L278,165 L305,163 L317,162 L334,153 L352,142 L372,129 L388,116 L413,105 L438,98 L462,91 L486,81 L513,67 L536,62 L560,49 L576,38 L597,23 L600,18",
       startLabel: "92 moh",
       endLabel: "1278 moh",
-      distanceLabel: "6,6 km",
-      caption: "1223 høydemeter og 6,56 km fra Nupen over Vallasætra og Bukkedalen, med skoggrensa på 637 moh og flanken fra dalbunnen på 960 moh til toppen.",
+      distanceLabel: "6,9 km",
+      caption: "1232 høydemeter og 6,91 km fra Nupen over Vallasætra og Bukkedalen, med skoggrensa på 637 moh og flanken fra dalbunnen på 960 moh til toppen.",
     },
   },
   saudehornet: {
@@ -4778,10 +4778,10 @@ export const GUIDES: Record<string, TourGuide> = {
   skarene: {
     slug: "skarene",
     intro:
-      "1226 høydemeter på 6,59 km fra Korsmyra, med to kilometer flat dalbotn før den store snøflanken tar til. Flanken holder 18 til 21 grader i band etter band fra 900 til 1700 moh — og den er sammenhengende skredterreng hele veien.",
+      "1239 høydemeter på 6,72 km fra Korsmyra, med to kilometer flat dalbotn før den store snøflanken tar til. Flanken holder 18 til 21 grader i band etter band fra 900 til 1700 moh — og den er sammenhengende skredterreng hele veien.",
     ascent: [
       "Start på biloppstillingsplassen på Korsmyra, 621 moh, ved hovedveien mellom Eidsdal og Geiranger. Tilkomsten står under Eidshornet hos Fri Flyt, og det er den samme plassen.",
-      "Følg seterveien inn til Grandesætra på 648 moh og videre slakt inn og oppover Gråsteindalen, 721 moh. De to første bandene er nesten flate: 3,7 grader over 1268 meter grunn fra 600 til 700 moh og 3,6 over 1575 meter fra 800 til 900.",
+      "Følg seterveien inn til Grandesætra på 648 moh og videre slakt inn og oppover Gråsteindalen, 721 moh. De to første bandene er nesten flate: 3,3 grader over 1431 meter grunn fra 600 til 700 moh og 3,6 over 1575 meter fra 800 til 900.",
       "Kommet inn mot botnen av dalen på 940 moh tar den store snøflanken til, og den holder samme karakter helt opp: 17,9 grader fra 900 til 1000 moh, 20,5 fra 1000 til 1100, 19,6 fra 1300 til 1400, 21,2 fra 1500 til 1600 og 21,2 fra 1600 til 1700 — de to bratteste hundremetrene. Bratteste sammenhengende parti måler 27,9 grader mellom 1528 og 1544 moh.",
       "De siste hundre høydemetrene slaker av til 9,6 grader og fører fram til varden på 1830 moh, et av de høyeste punktene i fjellene over Eidsdal. Registeret skriver fjellet Skorene.",
     ],
@@ -4804,10 +4804,10 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,200 L25,198 L50,198 L77,194 L107,190 L136,185 L161,181 L184,176 L210,171 L236,169 L266,169 L292,168 L316,165 L345,156 L365,145 L382,135 L398,125 L427,112 L446,102 L470,88 L488,77 L505,67 L521,56 L534,48 L554,36 L579,24 L600,18",
+      path: "M0,200 L25,198 L49,198 L66,194 L92,193 L120,189 L153,183 L177,179 L201,174 L226,170 L254,169 L282,169 L307,167 L334,163 L358,152 L376,141 L392,132 L411,121 L436,109 L458,96 L478,85 L497,73 L515,61 L527,54 L543,43 L563,31 L587,21 L600,18",
       startLabel: "621 moh",
       endLabel: "1830 moh",
-      distanceLabel: "6,6 km",
+      distanceLabel: "6,7 km",
       caption: "1219 høydemeter og 6,44 km fra Korsmyra over Grandesætra og Gråsteindalen, med snøflanken fra dalbotnen på 940 moh til varden på 1830.",
     },
   },

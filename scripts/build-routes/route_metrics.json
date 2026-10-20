@@ -672,9 +672,9 @@
   "cumdistM": 4104
  },
  "snotinden": {
-  "verticalM": 1240,
-  "gainM": 1243,
-  "distanceM": 6782,
+  "verticalM": 1220,
+  "gainM": 1215,
+  "distanceM": 6890,
   "startM": 9,
   "summitM": 1215,
   "duration": "5–7 t",
@@ -684,8 +684,8 @@
   "maxStepAngle": 28.1,
   "grade": 2,
   "aspect": "V",
-  "distanceKm": 6.8,
-  "cumdistM": 6782
+  "distanceKm": 6.9,
+  "cumdistM": 6890
  },
  "storhornet-kvafjord": {
   "verticalM": 660,
@@ -1168,9 +1168,9 @@
   "cumdistM": 9772
  },
  "forselvtinden": {
-  "verticalM": 1180,
-  "gainM": 1180,
-  "distanceM": 8289,
+  "verticalM": 1190,
+  "gainM": 1193,
+  "distanceM": 8375,
   "startM": 23,
   "summitM": 907,
   "duration": "6–8 t",
@@ -1180,8 +1180,8 @@
   "maxStepAngle": 33.1,
   "grade": 2,
   "aspect": "S",
-  "distanceKm": 8.3,
-  "cumdistM": 8289
+  "distanceKm": 8.4,
+  "cumdistM": 8375
  },
  "middagsfjellet": {
   "verticalM": 760,
@@ -1888,9 +1888,9 @@
   "cumdistM": 6880
  },
  "middagstinden": {
-  "verticalM": 1290,
-  "gainM": 1291,
-  "distanceM": 6042,
+  "verticalM": 1310,
+  "gainM": 1308,
+  "distanceM": 6395,
   "startM": 349,
   "summitM": 1568,
   "duration": "5–7 t",
@@ -1900,8 +1900,8 @@
   "maxStepAngle": 30.0,
   "grade": 3,
   "aspect": "SV",
-  "distanceKm": 6.0,
-  "cumdistM": 6042
+  "distanceKm": 6.4,
+  "cumdistM": 6395
  },
  "auskjeret": {
   "verticalM": 870,
@@ -2000,9 +2000,9 @@
   "cumdistM": 5680
  },
  "vassdalstinden": {
-  "verticalM": 1220,
-  "gainM": 1223,
-  "distanceM": 6560,
+  "verticalM": 1230,
+  "gainM": 1232,
+  "distanceM": 6905,
   "startM": 92,
   "summitM": 1278,
   "duration": "5–7 t",
@@ -2012,8 +2012,8 @@
   "maxStepAngle": 41.3,
   "grade": 3,
   "aspect": "SØ",
-  "distanceKm": 6.6,
-  "cumdistM": 6560
+  "distanceKm": 6.9,
+  "cumdistM": 6905
  },
  "saudehornet": {
   "verticalM": 1160,
@@ -2064,9 +2064,9 @@
   "cumdistM": 11219
  },
  "skarene": {
-  "verticalM": 1230,
-  "gainM": 1226,
-  "distanceM": 6587,
+  "verticalM": 1240,
+  "gainM": 1239,
+  "distanceM": 6722,
   "startM": 621,
   "summitM": 1830,
   "duration": "5–7 t",
@@ -2076,8 +2076,8 @@
   "maxStepAngle": 27.9,
   "grade": 2,
   "aspect": "S",
-  "distanceKm": 6.6,
-  "cumdistM": 6590
+  "distanceKm": 6.7,
+  "cumdistM": 6722
  },
  "melshornet": {
   "verticalM": 560,

@@ -7208,13 +7208,13 @@ roads (`trails.py`), finds the *detours* — at least 150 m more than 30 m off
 any mapped way, leaving one and coming back to one, mostly within 150 m of
 it — and reads Kartverket's terrain class every 40 m along each.
 
-**49 of the 246 routes were put on the path** where they ran beside it through
+**54 of the 246 routes were put on the path** where they ran beside it through
 forest. What is left, on the shipped lines, is in `follow_trails_run.txt`:
 
 | detours left | | routes |
 | --- | --- | --- |
 | on open ground — skiable either side, left as they are | 220 (102 km) | |
-| mostly `Skog`, each with the reason it stays | 71 | 53 |
+| mostly `Skog`, each with the reason it stays | 64 | 50 |
 
 ### How a forest detour is moved
 
@@ -7243,7 +7243,8 @@ height given back, not more than a degree steeper above 25° — plus one more:
 case: the path through the forest at the bottom of Gråsteindalen undulates, the
 spliced line climbs 1239 m against a card, a seed row and a teaser that say
 1220, and changing all three to draw a line on a path is a different tour, not
-a better line. And a spliced line has to pass `check_geometry` like any other:
+a better line — for this pass. The cards were then changed by hand, five of them
+(«The cards, by hand», below). And a spliced line has to pass `check_geometry` like any other:
 Jakobstinden's crossed itself at the bridge over Kongsvikdalselva and was put
 back.
 
@@ -7267,8 +7268,8 @@ buildings. Eighteen of the routes this round had moved had been changed by it.
 The 23 tours the house round did not touch were carried over as solved; the
 other routes were solved again against the house round's lines, with the house
 round's corridors. Sixteen of those still moved; **Snøtinden** now climbs 1215 m
-on the path against a card that says 1240 and stays, **Vassdalstinden** likewise
-(1232 against 1220), and **Høgevarde** has no forest detour left on its new line.
+on the path against a card that said 1240, **Vassdalstinden** likewise
+(1232 against 1220) — both cards moved later, by hand, and **Høgevarde** has no forest detour left on its new line.
 The forest stretches on lines the house round changed were then read again, and
 four more moved: **Heia**, **Torvløysa**, **Tromsdalstinden's summer route** and
 **Tveitakvitingen**. Where a forest detour held a house-round waypoint
@@ -7333,9 +7334,36 @@ the track itself comes from Åmot on the other side; Taraldsviktinden has no way
 from Nyhoen to Gårdselva, and the tractor road east of the river is a kilometre
 along the E10 away.
 
+### The cards, by hand
+
+The ten routes the card held back were solved again with the card rule off and
+looked at on the map. Five moved, and their cards with them — `lib/tours.ts`,
+the seed row, both teasers and the guide's totals and bands:
+
+| route | line | gain | card |
+| --- | --- | --- | --- |
+| Forselvtinden, the path on the north side of Storvatnet | 8289 → 8375 m | 1180 → 1193 m | 1180 → 1190 |
+| Middagstinden, the road along Berillvatnet | 6042 → 6395 m | 1291 → 1308 m | 1290 → 1310 |
+| Skårene, the path up Gråsteindalen | 6587 → 6722 m | 1226 → 1239 m | 1220 → 1240 |
+| Snøtinden, the road past Brekka and the path | 6782 → 6890 m | 1243 → 1215 m | 1240 → 1220 |
+| Vassdalstinden, Vallasetrevegen | 6560 → 6905 m | 1223 → 1232 m | 1220 → 1230 |
+
+The steepest 30 m is unchanged on all five. Snøtinden's card comes down: the old
+line climbed into the forest beside the road and back. Vassdalstinden still
+crosses itself twice, as it did before; its stretch at 3.6 km is the one that
+read open at 3.26 km, now four forest samples to three.
+
+Three stay. **Lodalskåpa**'s path takes the step at 37.7° in its steepest 30 m
+where the line takes it at 31.1°, which is why the line bulges north there.
+**Rundtinden**'s long stretch is the research's line over the bogs north-east of
+Skavbakkan, and on the road it is 420 m longer; the other two are 160 m
+stretches 40–60 m off. **Vatnaknausen** on the path hooks back on itself above
+Tverrberg and its steepest 30 m goes 21.9° → 23.6°, for two 220 m stretches 50 m
+off.
+
 ### What was left in the forest, and why
 
-Fifty-three routes, with the reason on each in `follow_trails_run.txt`. A
+Fifty routes, with the reason on each in `follow_trails_run.txt`. A
 route can have more than one.
 
 - **The path goes somewhere else** (29 routes — Gygrastølen, Vesoldo, Sula,
@@ -7343,10 +7371,11 @@ route can have more than one.
   than half again as long as the line's detour. These are paths to a hut, a
   farm or another summit that run alongside for a while; the line takes the
   direct way through the forest, which is passable on snow.
-- **The card** (10): the line on the path climbs more than ten metres more or
-  less than the tour's stated vertical — Skårene, Forselvtinden, Lodalskåpa,
-  Snøtinden, Vassdalstinden among them. Those are for a round that is willing
-  to change the card, the teaser and the guide together.
+- **The card, then looked at by hand** (5): the line on the path climbed more
+  than ten metres more or less than the tour's stated vertical. Five of the ten
+  were moved with their cards (below); Lodalskåpa, Rundtinden and Vatnaknausen
+  stay for other reasons, and Sandhornet and Såta were held back by more than
+  the card — sea level and a steeper 30 m, and 110 m given back.
 - **A research waypoint holds the line where it is** (11 — Hamperøkken's
   Vartavarhaugen, Hattfjellet's tractor road in Bjørndalen, Rondslottet's
   Langglupdalen): the corridor puts the line there for a reason the path does
