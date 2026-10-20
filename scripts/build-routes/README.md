@@ -7493,6 +7493,36 @@ Three other places were looked at and left as they are:
 - The spur at 0.7 km follows the marked path along the power line. Cutting it
   left the path waypoints 49–68 m off the line.
 
+## Vesle Nup from Ulevå, smoothed
+
+The Ulevå line turned sharply at four of its waypoints, all on gentle ground
+where no kick turn is needed:
+- a 65° notch round a pond on the flat at 1200 (1.8 km);
+- a 129° corner south of 1206 (2.3 km), where the line meets the path north;
+- a 91° kink between 1206 and Loftsdokktjønn (2.9 km);
+- a 111° turn at the col below 1469 (4.4 km), where the line ran past the col
+  along the path and came back east.
+
+Each was replaced as on Englafjell. This round also changed the slope check in
+the splice tool: it now looks at three vertices before and after the new
+stretch, not just the stretch itself. The first run did not, and its curve at
+2.9 km went straight down the short bank into the dip at 27.6°. The curve that
+stays at 21.4° on that bank turns 43° there, not 24°. The other three now turn
+1°, 28° and 27°. Where the curve south of 1206 rejoins the old line, at
+2.34 km, there is still a 42° turn. A longer curve over the whole notch was
+tried, and every one of the 40 best ran through the pond the line goes round.
+The line is 5786 m and 598 m of climbing, against 5926 m and 595 m. The card
+stays at 600.
+
+Two waypoints moved onto the curve, each with a `note` saying why:
+- «sør for 1206» moved 17 m;
+- «skaret mot 1469» moved 54 m, and the col is now at 1350 m, not 1352 m.
+
+The figures under «Langs linja», «Bakken under linja» and the steepest window
+in `measurements.json` were measured again on the new line. The steepest 30 m
+over the 5 m profile is now 26.5°, not 27.1°. The guide gives the new figures
+in both languages.
+
 ## Network
 
 Everything is public and unauthenticated:

@@ -7218,12 +7218,12 @@ export const GUIDES: Record<string, TourGuide> = {
   "vesle-nup": {
     slug: "vesle-nup",
     intro:
-      "595 høydemeter på 5,93 km fra Ulevå: bekkedalen opp til flata ved 1200, sørøst forbi punkt 1206, opp skaret mellom Vesle Nup og topp 1469, og ryggen østover til varden på 1510 moh. Det er slakt nesten hele veien — bratteste bandet er 7,8 grader mellom 1400 og 1500 moh, og bratteste sammenhengende parti er en kort kneik ned i søkket sørøst for punkt 1206 — 27,1 grader mellom 1197 og 1179 moh — og Fri Flyt kaller den «toppen for deg som er som fersk på topptur og ønsker en rolig start».",
+      "598 høydemeter på 5,79 km fra Ulevå: bekkedalen opp til flata ved 1200, sørøst forbi punkt 1206, opp skaret mellom Vesle Nup og topp 1469, og ryggen østover til varden på 1510 moh. Det er slakt nesten hele veien — bratteste bandet er 7,8 grader mellom 1400 og 1500 moh, og bratteste sammenhengende parti er en kort kneik ned i søkket sørøst for punkt 1206 — 26,5 grader mellom 1197 og 1179 moh — og Fri Flyt kaller den «toppen for deg som er som fersk på topptur og ønsker en rolig start».",
     ascent: [
       "Start på parkeringa ved Ulevå, 982 moh, ved E134 vest for Haukeliseter fjellstue. Fri Flyt: «Parker langs veien ved Ulevå, 2,5 km før Haukeliseter fjellstue når du kommer fra vest. Følg bekkedalen oppover til det flater ut ved 1200 høydemeter. Nå ser du toppen.» Ut.no beskriver samme linje som sin rute C, og to ruter til fra fjellstua som møter denne nordvest for Loftsdokktjønn.",
-      "Bekkedalen stiger jevnt — 6,2 grader i bandet fra 1000 til 1100 moh — og etter 1,75 km er du på flata, 1171 moh. Herfra ser du Vesle Nup i nordøst. Bandet fra 1100 til 1200 moh er 2002 meter grunn på 3,1 grader, nesten flatt. Ut.no: «Forsett i retning mot toppen mellom punkt 1206 og Loftdokkstjønn.» Linja går sør for 1206 og passerer 79 meter sørøst for punktet ved 2,61 km.",
-      "Mellom 1206 og Loftsdokktjønn gir linja fra seg 33 høydemeter, fra 1201 moh ved 2,61 km ned til 1168 ved 2,91 km — det bratteste partiet på turen, 27,1 grader mellom 1197 og 1179, er på vei ned hit — før den svinger nordover langs Ålmannvegen, stien fra fjellstua, mot skaret. Bakken under sporet er bratt bare ett sted, 17 meter på 35 grader eller mer ved 1190–1198 moh. Skaret mellom Vesle Nup og topp 1469 når du på 1352 moh etter 4,44 km; topp 1469 ligger 727 meter nordvest for linja.",
-      "Ut.no: «Her tar du av til høyre og følger fjellryggen østover omtrent 1 km til selve toppen.» Ryggen er 1,48 km fra skaret til varden. Linja passerer 100 meter sørvest for topp 1393 og stiger slakt — 5,6 grader fra 1300 til 1400 moh og 7,8 fra 1400 til 1500. Det siste stykket opp mot varden er det bratteste på ryggen.",
+      "Bekkedalen stiger jevnt — 6,2 grader i bandet fra 1000 til 1100 moh — og etter 1,75 km er du på flata, 1171 moh. Herfra ser du Vesle Nup i nordøst. Bandet fra 1100 til 1200 moh er 1925 meter grunn på 3,2 grader, nesten flatt. Ut.no: «Forsett i retning mot toppen mellom punkt 1206 og Loftdokkstjønn.» Linja går sør for 1206 og passerer 79 meter sørøst for punktet ved 2,55 km.",
+      "Mellom 1206 og Loftsdokktjønn gir linja fra seg 29 høydemeter, fra 1201 moh ved 2,55 km ned til 1172 ved 2,90 km — det bratteste partiet på turen, 26,5 grader mellom 1197 og 1179, er på vei ned hit — før den svinger nordover langs Ålmannvegen, stien fra fjellstua, mot skaret. Bakken under sporet er bratt bare ett sted, 17 meter på 35 grader eller mer ved 1190–1198 moh. Skaret mellom Vesle Nup og topp 1469 når du på 1350 moh etter 4,33 km; topp 1469 ligger 775 meter nordvest for linja.",
+      "Ut.no: «Her tar du av til høyre og følger fjellryggen østover omtrent 1 km til selve toppen.» Ryggen er 1,46 km fra skaret til varden. Linja passerer 100 meter sørvest for topp 1393 og stiger slakt — 6,0 grader fra 1300 til 1400 moh og 7,8 fra 1400 til 1500. Det siste stykket opp mot varden er det bratteste på ryggen.",
     ],
     descent: [
       "Fri Flyt: «Kjør ned den første flanken. Hold høyden etter dette slik at du ikke må gå over flaten. Kjør ned bekkedalen mot bilen.» Ut.no viser til rute C som den med «mest sammenhengende nedkjøring for deg som går på toppturski».",
@@ -7232,7 +7232,7 @@ export const GUIDES: Record<string, TourGuide> = {
     avalanche: [
       {
         title: "Ruta",
-        body: "Bratteste sammenhengende parti er 27,1 grader mellom 1197 og 1179 moh, en kort kneik ned i søkket sørøst for 1206, og bratteste bandet 7,8 grader fra 1400 til 1500. Bakken under sporet er 35 grader eller brattere bare i ett strekk på 17 meter, ved 1190–1198 moh. Fri Flyt oppgir 25 grader som bratteste punkt og graderer turen «Lett».",
+        body: "Bratteste sammenhengende parti er 26,5 grader mellom 1197 og 1179 moh, en kort kneik ned i søkket sørøst for 1206, og bratteste bandet 7,8 grader fra 1400 til 1500. Bakken under sporet er 35 grader eller brattere bare i ett strekk på 17 meter, ved 1190–1198 moh. Fri Flyt oppgir 25 grader som bratteste punkt og graderer turen «Lett».",
       },
       {
         title: "Terrenget utenfor",
@@ -7244,11 +7244,11 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,200 L27,195 L50,190 L68,183 L91,181 L109,173 L127,162 L155,147 L173,136 L191,132 L209,131 L228,127 L242,126 L264,125 L281,131 L297,136 L317,129 L337,127 L355,122 L373,117 L396,107 L415,94 L437,80 L456,70 L478,70 L501,69 L525,53 L547,44 L570,35 L588,24 L600,18",
+      path: "M0,200 L34,194 L65,187 L93,181 L117,168 L149,151 L172,139 L182,135 L192,132 L202,135 L222,127 L232,127 L242,127 L265,125 L286,132 L296,134 L306,133 L331,126 L356,122 L384,112 L412,96 L440,80 L450,72 L460,69 L489,71 L524,53 L555,40 L583,29 L600,18",
       startLabel: "982 moh",
       endLabel: "1510 moh",
-      distanceLabel: "5,9 km",
-      caption: "595 høydemeter og 5,93 km fra Ulevå, med flata ved 1171 moh, skaret på 1352 og bratteste bandet under toppen.",
+      distanceLabel: "5,8 km",
+      caption: "598 høydemeter og 5,79 km fra Ulevå, med flata ved 1171 moh, skaret på 1350 og bratteste bandet under toppen.",
     },
   },
   gaustatoppen: {

@@ -3121,8 +3121,8 @@
  },
  "vesle-nup": {
   "verticalM": 600,
-  "gainM": 595,
-  "distanceM": 5926,
+  "gainM": 598,
+  "distanceM": 5786,
   "startM": 982,
   "summitM": 1510,
   "duration": "3–5 t",
@@ -3132,8 +3132,8 @@
   "maxStepAngle": 21.4,
   "grade": 1,
   "aspect": "SV",
-  "distanceKm": 5.9,
-  "cumdistM": 5927
+  "distanceKm": 5.8,
+  "cumdistM": 5786
  },
  "gaustatoppen": {
   "verticalM": 980,
