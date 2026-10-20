@@ -7546,6 +7546,33 @@ in `measurements.json` were measured again on the new line. The steepest 30 m
 over the 5 m profile is now 26.5°, not 27.1°. The guide gives the new figures
 in both languages.
 
+## Gaustatoppen, three kinks
+
+Viewed in the app, both Gaustatoppen routes had kinks on easy ground.
+
+- **Langefonn route, at the car park.** The line ran 34 m north-east along the
+  gravel road from the car park, then turned back 91°. That vertex is dropped,
+  so the line now runs straight across the edge of the car park. The OSM API
+  shows no water or building in the way. Overpass was down, so the check went
+  to `api/0.6/map` instead. The first «den vinterstengte vegen mot Stavsro»
+  waypoint was on the dropped vertex. It moved 26 m onto the line and has a
+  `note`.
+- **Langefonn route, below Gaustabanen (2.3 km, about 1300 moh).** Heading
+  south, the line made a small zigzag of 94°, 70° and 62°: out east and back. It
+  is now a Chaikin curve with a largest turn of 7°. The curve slants up the slope,
+  and its steepest 30 m is 24.0°, against 21° before. That is under the route's
+  24.8°, and the guide's «aldri over 25°» still holds. No gentler curve exists:
+  a 21.5° cap found none.
+- **Stavsro route, on the path at 1.0 km.** A 55° notch at 6° became a 5° turn.
+
+The Langefonn route is now 4670 m, against 4704 m, with the same 975 m of
+climbing. The bend that reads as a corner in the app is a different one, at
+2.8 km on Toppen av Langefonn (1455 moh): 70° over 50 m, where the climb meets
+Himmelranden and the guide says you turn west-north-west. It stays. The
+Stavsro route lost 1 m. Only the guide caption's distance
+changed. On the 5 m profile the steepest window, 25.2° at 1343–1359 moh, is
+the same before and after: it lies past the new curve.
+
 ## Network
 
 Everything is public and unauthenticated:
