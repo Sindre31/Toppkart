@@ -15514,9 +15514,10 @@
     "waypoints": [
      {
       "name": "skisporet",
-      "lat": 59.853,
-      "lng": 8.6934,
-      "elevation_m": 1082.6
+      "lat": 59.85267,
+      "lng": 8.69311,
+      "elevation_m": 1082.8,
+      "note": "Flyttet inn på linja da hjørnet ved Longefonntjønn ble glattet ut: linja svingte 84° fra sporet mot sørøst, nå bøyer den jevnt av."
      },
      {
       "name": "over sporet",
@@ -15526,9 +15527,10 @@
      },
      {
       "name": "Heddersvatn, vestenden",
-      "lat": 59.8434,
-      "lng": 8.709,
-      "elevation_m": 1137.0
+      "lat": 59.84267,
+      "lng": 8.70927,
+      "elevation_m": 1137.0,
+      "note": "Flyttet inn på linja da V-et ut på isen ble glattet ut: linja gikk nordøst på isen til dette punktet og snudde 100° mot sørøst; nå svinger den jevnt over isen i vestenden."
      },
      {
       "name": "forbi odden",

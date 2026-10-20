@@ -7383,10 +7383,10 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
   },
   heddersfjell: {
     intro:
-      "406 metres of climbing over 5.14 km from Gaustabanen: a stretch along the ski track, almost two kilometres flat across the ice of Heddersvatn, and 325 metres up the west side to Blånipa, the top of Heddersfjell at 1462 m. The steepest sustained section is 21.7 degrees between 1169 and 1187 m, in the pitch straight up from the lake — and that is where the source tells you to get the Varsom app out.",
+      "406 metres of climbing over 5.02 km from Gaustabanen: a stretch along the ski track, almost two kilometres flat across the ice of Heddersvatn, and 325 metres up the west side to Blånipa, the top of Heddersfjell at 1462 m. The steepest sustained section is 21.7 degrees between 1169 and 1187 m, in the pitch straight up from the lake — and that is where the source tells you to get the Varsom app out.",
     ascent: [
       "Start at the free car park by Gaustabanen, 1132 m, 170 metres east of the lower station. The tour begins by going down: 49 metres to the ski track at 1083 m, which you follow south-east up to 1160 m on the flat ground west of Heddersvatn. That is the track the source means by “follow the ski track a while and cut down to the lake”.",
-      "From the track the line drops to the west end of Heddersvatn at 1137 m, and then it is on the ice: 1846 metres flat and up to 213 metres from the shore, past the point that reaches out from the south shore, which the line passes 202 metres to the north. Heddersvatn is a natural lake, not a regulated reservoir, and the source crosses it — but that means the ice has to hold, and that is your judgement on the day, not the map's.",
+      "From the track the line drops to the west end of Heddersvatn at 1137 m, and then it is on the ice: 1810 metres flat and up to 213 metres from the shore, past the point that reaches out from the south shore, which the line passes 202 metres to the north. Heddersvatn is a natural lake, not a regulated reservoir, and the source crosses it — but that means the ice has to hold, and that is your judgement on the day, not the map's.",
       "After the point the climbing starts, from the north-east shore at 1143 m. The first pitch is the steepest on the tour: 21.7 degrees between 1169 and 1187 m, and the ground on both sides is steeper than the line — within 50 metres it measures 35 to 39 degrees, above and below you, between 1159 and 1216 m. That is as close as the terrain model gets to the source's “a section that can be exposed”. The source does not say exactly where it is.",
       "Above the pitch it goes in steps: the band from 1200 to 1300 m measures 11.6 degrees, and from 1300 to 1400 m 16.6 degrees over 378 metres of ground, the steepest band on the tour. The summit cone is steeper than the route on more than one side — 41 to 45 degrees 23 to 48 metres from the line above 1375 m, to the south low down and to the west and south-west between 1428 and 1440 m — so keep to the line. It comes onto the top from the north. Blånipa stands at 1462 m, with Gaustatoppen to the west-north-west.",
     ],
@@ -7405,14 +7405,14 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       },
       {
         title: "Before you go",
-        body: "Check today's avalanche forecast for Vest-Telemark at varsom.no. Vest-Telemark is an A region and is forecast daily in season. Check the ice on Heddersvatn too: the tour goes 1846 metres across it. The plateau is bare mountain with no shelter. Bring a transceiver, probe and shovel.",
+        body: "Check today's avalanche forecast for Vest-Telemark at varsom.no. Vest-Telemark is an A region and is forecast daily in season. Check the ice on Heddersvatn too: the tour goes 1810 metres across it. The plateau is bare mountain with no shelter. Bring a transceiver, probe and shovel.",
       },
     ],
     elevationProfile: {
       startLabel: "1132 m",
       endLabel: "1462 m",
-      distanceLabel: "5.1 km",
-      caption: "406 metres of climbing and 5.14 km from Gaustabanen, with 1846 metres on the ice of Heddersvatn and the steepest hundred-metre band between 1300 and 1400 m.",
+      distanceLabel: "5.0 km",
+      caption: "406 metres of climbing and 5.02 km from Gaustabanen, with 1810 metres on the ice of Heddersvatn and the steepest hundred-metre band between 1300 and 1400 m.",
     },
   },
   sveigen: {

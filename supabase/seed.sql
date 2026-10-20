@@ -5756,7 +5756,7 @@ where slug = 'gaustatoppen';
 update public.tk_tours set
   description_up   = 'Start på gratisparkeringa ved Gaustabanen, 1132 moh, 170 meter øst for nedre stasjon. Turen begynner med å gå ned: 49 høydemeter til skisporet på 1083 moh, som du følger sørøstover opp til 1160 moh på flata vest for Heddersvatn. Det er sporet kilden mener med «følge skisporet et stykke og knekke ned til vannet».
 
-Fra sporet tar linja av ned til vestenden av Heddersvatn på 1137 moh, og så går den på isen: 1846 meter flatt og opptil 213 meter fra land, forbi odden fra sørbreidda, som linja passerer 202 meter nord for. Heddersvatn er et naturlig vatn, ikke et regulert magasin, og kilden går over det — men det betyr at isen må bære, og det er din vurdering den dagen, ikke kartets.
+Fra sporet tar linja av ned til vestenden av Heddersvatn på 1137 moh, og så går den på isen: 1810 meter flatt og opptil 213 meter fra land, forbi odden fra sørbreidda, som linja passerer 202 meter nord for. Heddersvatn er et naturlig vatn, ikke et regulert magasin, og kilden går over det — men det betyr at isen må bære, og det er din vurdering den dagen, ikke kartets.
 
 Etter odden begynner stigningen, fra nordøstbreidda på 1143 moh. Den første kneika er den bratteste på turen: 21,7 grader mellom 1169 og 1187 moh, og terrenget på begge sider er brattere enn linja — innenfor 50 meter måler det 35 til 39 grader, både over og under deg, mellom 1159 og 1216 moh. Det er det nærmeste terrengmodellen kommer kildens «et parti der som kan være utsatt». Kilden sier ikke nøyaktig hvor partiet er.
 
@@ -5775,7 +5775,7 @@ Ikke ta snarveien sørvestover. Den sida er hamaren ned mot Heddersvatn der Huld
     ),
     jsonb_build_object(
       'title', 'Før du går',
-      'body',  'Sjekk dagens skredvarsel for Vest-Telemark på varsom.no. Vest-Telemark er en A-region og varsles daglig i sesongen. Sjekk isen på Heddersvatn også: turen går 1846 meter på den. Platået er snaufjell uten ly. Ta med sender/mottaker, søkestang og spade.'
+      'body',  'Sjekk dagens skredvarsel for Vest-Telemark på varsom.no. Vest-Telemark er en A-region og varsles daglig i sesongen. Sjekk isen på Heddersvatn også: turen går 1810 meter på den. Platået er snaufjell uten ly. Ta med sender/mottaker, søkestang og spade.'
     )
   )
 where slug = 'heddersfjell';

@@ -7573,6 +7573,33 @@ Stavsro route lost 1 m. Only the guide caption's distance
 changed. On the 5 m profile the steepest window, 25.2° at 1343–1359 moh, is
 the same before and after: it lies past the new curve.
 
+## Heddersfjell, two kinks
+
+On the Gaustabanen route, the line had two sharp turns on flat ground.
+
+- **The ski track by Longefonntjønn, 0.4 km.** The line turned 84° from the
+  track towards the south-east, on 2–3° ground. It is now a curve with a
+  largest turn of 9°.
+- **The west end of Heddersvatn, 2.0 km.** The line went out onto the ice,
+  carried on north-east to the waypoint «Heddersvatn, vestenden» and turned
+  back 100° across the lake. It is now a curve on the ice with a largest turn
+  of 8°. The splice tool rejects any curve with a lake sample, so this one ran
+  with `--ice`. That option lets through lakes the route already crosses on
+  purpose; the guide sends the reader over the ice.
+
+Both waypoints moved onto the curve, each with a `note`: «skisporet» by 40 m
+and «Heddersvatn, vestenden» by 82 m. The line is now 5024 m, against
+5145 m, with the same 406 m of climbing. The fall to the track (49 m, down to
+1083 moh) and the 76 m lost on the way are unchanged.
+
+The ice stretch is measured the same way as before, as the run of vertices at
+1137 moh. It is now 1810 m, from 1906 to 3716 m, against 1846 m. The guide
+gives 5,02 km and 1810 m in both languages. `measurements.json` moves the
+odden and Hulderhola marks back 121 m.
+
+The turn up onto the ridge north of Blånipa (105°) stays. Every smooth curve
+there was steeper than the route's 21.7°.
+
 ## Network
 
 Everything is public and unauthenticated:

@@ -2578,12 +2578,12 @@
     },
     {
       "what": "Isen på Heddersvatn",
-      "figure": "1846 m av linja går flatt på 1137 moh, frå 1991 til 3837 m langs ruta; linja passerer 202 m nord for odden ved 3206 m",
+      "figure": "1810 m av linja går flatt på 1137 moh, frå 1906 til 3716 m langs ruta; linja passerer 202 m nord for odden ved 3085 m",
       "how": "Lest av den routede linja i lib/routes.ts (resample_dtm1.py): den samanhengande køyringa av punkt på vass-flata 1137 moh, og næraste punkt til neset 59.83757/8.72841."
     },
     {
       "what": "Hulderhola",
-      "figure": "429 m sør for linja, næraste punkt ved 4583 m langs ruta på 1302 moh",
+      "figure": "429 m sør for linja, næraste punkt ved 4462 m langs ruta på 1302 moh",
       "how": "Haversine frå OSM node/9939327459 (natural=cave_entrance) til næraste punkt på den routede linja."
     },
     {

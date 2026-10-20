@@ -2925,7 +2925,7 @@
   "grade": 2,
   "aspect": "SV",
   "distanceKm": 6.7,
-  "cumdistM": 6653
+  "cumdistM": 6654
  },
  "gullfjellstoppen": {
   "verticalM": 840,
@@ -3154,7 +3154,7 @@
  "heddersfjell": {
   "verticalM": 410,
   "gainM": 406,
-  "distanceM": 5145,
+  "distanceM": 5024,
   "startM": 1132,
   "summitM": 1462,
   "duration": "2–4 t",
@@ -3164,8 +3164,8 @@
   "maxStepAngle": 21.7,
   "grade": 1,
   "aspect": "V",
-  "distanceKm": 5.1,
-  "cumdistM": 5145
+  "distanceKm": 5.0,
+  "cumdistM": 5024
  },
  "sveigen": {
   "verticalM": 560,
