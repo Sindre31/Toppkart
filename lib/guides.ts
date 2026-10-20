@@ -7291,10 +7291,10 @@ export const GUIDES: Record<string, TourGuide> = {
   heddersfjell: {
     slug: "heddersfjell",
     intro:
-      "406 høydemeter på 5,14 km fra Gaustabanen: et stykke langs skisporet, nesten to kilometer flatt over isen på Heddersvatn, og 325 høydemeter opp vestsida til Blånipa, toppen av Heddersfjell på 1462 moh. Bratteste sammenhengende parti er 21,7 grader mellom 1169 og 1187 moh, i kneika rett opp fra vatnet — og det er der kilden ber deg finne fram Varsom-appen.",
+      "406 høydemeter på 5,02 km fra Gaustabanen: et stykke langs skisporet, nesten to kilometer flatt over isen på Heddersvatn, og 325 høydemeter opp vestsida til Blånipa, toppen av Heddersfjell på 1462 moh. Bratteste sammenhengende parti er 21,7 grader mellom 1169 og 1187 moh, i kneika rett opp fra vatnet — og det er der kilden ber deg finne fram Varsom-appen.",
     ascent: [
       "Start på gratisparkeringa ved Gaustabanen, 1132 moh, 170 meter øst for nedre stasjon. Turen begynner med å gå ned: 49 høydemeter til skisporet på 1083 moh, som du følger sørøstover opp til 1160 moh på flata vest for Heddersvatn. Det er sporet kilden mener med «følge skisporet et stykke og knekke ned til vannet».",
-      "Fra sporet tar linja av ned til vestenden av Heddersvatn på 1137 moh, og så går den på isen: 1846 meter flatt og opptil 213 meter fra land, forbi odden fra sørbreidda, som linja passerer 202 meter nord for. Heddersvatn er et naturlig vatn, ikke et regulert magasin, og kilden går over det — men det betyr at isen må bære, og det er din vurdering den dagen, ikke kartets.",
+      "Fra sporet tar linja av ned til vestenden av Heddersvatn på 1137 moh, og så går den på isen: 1810 meter flatt og opptil 213 meter fra land, forbi odden fra sørbreidda, som linja passerer 202 meter nord for. Heddersvatn er et naturlig vatn, ikke et regulert magasin, og kilden går over det — men det betyr at isen må bære, og det er din vurdering den dagen, ikke kartets.",
       "Etter odden begynner stigningen, fra nordøstbreidda på 1143 moh. Den første kneika er den bratteste på turen: 21,7 grader mellom 1169 og 1187 moh, og terrenget på begge sider er brattere enn linja — innenfor 50 meter måler det 35 til 39 grader, både over og under deg, mellom 1159 og 1216 moh. Det er det nærmeste terrengmodellen kommer kildens «et parti der som kan være utsatt». Kilden sier ikke nøyaktig hvor partiet er.",
       "Over kneika går det i trinn: bandet fra 1200 til 1300 moh måler 11,6 grader, og fra 1300 til 1400 moh 16,6 grader over 378 meter grunn, som er det bratteste bandet på turen. Toppkjegla er brattere enn ruta på flere sider — 41 til 45 grader 23 til 48 meter fra linja over 1375 moh, mot sør nederst og mot vest og sørvest mellom 1428 og 1440 moh — så hold linja. Den kommer opp på toppen fra nord. Blånipa står på 1462 moh, med Gaustatoppen i vest-nordvest.",
     ],
@@ -7313,15 +7313,15 @@ export const GUIDES: Record<string, TourGuide> = {
       },
       {
         title: "Før du går",
-        body: "Sjekk dagens skredvarsel for Vest-Telemark på varsom.no. Vest-Telemark er en A-region og varsles daglig i sesongen. Sjekk isen på Heddersvatn også: turen går 1846 meter på den. Platået er snaufjell uten ly. Ta med sender/mottaker, søkestang og spade.",
+        body: "Sjekk dagens skredvarsel for Vest-Telemark på varsom.no. Vest-Telemark er en A-region og varsles daglig i sesongen. Sjekk isen på Heddersvatn også: turen går 1810 meter på den. Platået er snaufjell uten ly. Ta med sender/mottaker, søkestang og spade.",
       },
     ],
     elevationProfile: {
-      path: "M0,176 L17,189 L39,200 L59,199 L85,197 L106,188 L132,171 L153,164 L174,163 L195,169 L211,170 L227,174 L248,174 L269,174 L295,174 L321,174 L342,174 L369,174 L384,174 L405,174 L426,174 L447,174 L469,157 L489,131 L510,123 L531,98 L547,81 L568,56 L589,29 L600,18",
+      path: "M0,176 L23,193 L39,200 L48,200 L56,199 L65,199 L94,195 L121,176 L148,165 L175,163 L201,169 L218,169 L226,174 L235,174 L243,174 L252,174 L261,174 L293,174 L325,174 L352,174 L379,174 L401,174 L428,174 L454,168 L480,137 L503,126 L530,98 L551,78 L578,41 L600,18",
       startLabel: "1132 moh",
       endLabel: "1462 moh",
-      distanceLabel: "5,1 km",
-      caption: "406 høydemeter og 5,14 km fra Gaustabanen, med 1846 meter på isen av Heddersvatn og bratteste hundremeteren mellom 1300 og 1400 moh.",
+      distanceLabel: "5,0 km",
+      caption: "406 høydemeter og 5,02 km fra Gaustabanen, med 1810 meter på isen av Heddersvatn og bratteste hundremeteren mellom 1300 og 1400 moh.",
     },
   },
   sveigen: {
