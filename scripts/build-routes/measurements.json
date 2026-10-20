@@ -2814,12 +2814,12 @@
     },
     {
       "what": "Langs linja",
-      "figure": "flata ved 1754 m (1,75 km), 1171 moh; punkt 1206 (OSM node/11384476617) 79 m nordvest for linja ved 2610 m (2,61 km), 1201 moh; linja går ned til 1168 moh ved 2910 m (2,91 km), 33 m lavere; Loftsdokktjønn 907 m sørøst; skaret ved 4443 m (4,44 km), 1352 moh; topp 1469 727 m nordvest; topp 1393 100 m nordøst for linja ved 4681 m; varden ved 5926 m, 1483 m (1,48 km) fra skaret; linja gir fra seg 67 m til sammen",
+      "figure": "flata ved 1748 m (1,75 km), 1171 moh; punkt 1206 (OSM node/11384476617) 79 m nordvest for linja ved 2550 m (2,55 km), 1201 moh; linja går ned til 1172 moh ved 2903 m (2,90 km), 29 m lavere; Loftsdokktjønn 941 m sørøst; skaret ved 4328 m (4,33 km), 1350 moh; topp 1469 775 m nordvest; topp 1393 101 m nordøst for linja ved 4547 m; varden ved 5786 m, 1458 m (1,46 km) fra skaret; linja gir fra seg 70 m til sammen",
       "how": "Nærmeste punkt på den routede linja i lib/routes.ts til OSM-/registerpunktet, med avstand langs ruta og DTM1-høyden der."
     },
     {
       "what": "Bakken under linja",
-      "figure": "17 m med bakke på 35° eller brattere ved 1190–1198 moh (2,72 km, bratteste celle 42°); ingen andre strekk på 15 m",
+      "figure": "17 m med bakke på 35° eller brattere ved 1190–1198 moh (2,67 km, bratteste celle 42°); ingen andre strekk på 15 m",
       "how": "DTM1 i 5 m rutenett (geo.dem_tile), helling per celle med numpy.gradient, lest hver 5. meter langs den routede linja; oppgitt er hvert sammenhengende strekk på minst 15 m der bakken under linja er 35° eller brattere, med lengde, høyde og bratteste celle."
     },
     {
@@ -2829,7 +2829,7 @@
     },
     {
       "what": "Bratteste 30-metersvindu over 5 m-profilen",
-      "figure": "27,1° mellom 1197 og 1179 moh, på vei ned i søkket sørøst for punkt 1206 (2,61–2,79 km); over linjas punkter er det 21,4° mellom 1479 og 1494 moh",
+      "figure": "26,5° mellom 1197 og 1179 moh, på vei ned i søkket sørøst for punkt 1206 (2,67–2,71 km); over linjas punkter er det 21,4° mellom 1479 og 1494 moh",
       "how": "check_steepness.py: router.steepest_span over 5 m-profilen check_gain.py henter fra DTM1, sammenlignet med samme vindu over linjas punkter."
     }
   ],

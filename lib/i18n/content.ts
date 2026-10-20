@@ -7314,12 +7314,12 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
   },
   "vesle-nup": {
     intro:
-      "595 metres of climbing over 5.93 km from Ulevå: the stream valley up to the flat at 1200, south-east past point 1206, up the col between Vesle Nup and top 1469, and the ridge east to the cairn at 1510 m. It is gentle almost all the way — the steepest band is 7.8 degrees between 1400 and 1500 m, and the steepest sustained section is a short drop into the dip south-east of point 1206 — 27.1 degrees between 1197 and 1179 m — and Fri Flyt calls it “the summit for you if you are new to ski touring and want a gentle start”.",
+      "598 metres of climbing over 5.79 km from Ulevå: the stream valley up to the flat at 1200, south-east past point 1206, up the col between Vesle Nup and top 1469, and the ridge east to the cairn at 1510 m. It is gentle almost all the way — the steepest band is 7.8 degrees between 1400 and 1500 m, and the steepest sustained section is a short drop into the dip south-east of point 1206 — 26.5 degrees between 1197 and 1179 m — and Fri Flyt calls it “the summit for you if you are new to ski touring and want a gentle start”.",
     ascent: [
       "Start at the car park at Ulevå, 982 m, on the E134 west of Haukeliseter fjellstue. Fri Flyt: “Park by the road at Ulevå, 2.5 km before Haukeliseter fjellstue when you come from the west. Follow the stream valley up until it levels out at 1200 metres. Now you can see the summit.” Ut.no describes the same line as its route C, and two more routes from the lodge that meet this one north-west of Loftsdokktjønn.",
-      "The stream valley climbs steadily — 6.2 degrees in the band from 1000 to 1100 m — and after 1.75 km you are on the flat, 1171 m. From here you can see Vesle Nup to the north-east. The band from 1100 to 1200 m is 2002 metres of ground at 3.1 degrees, almost level. Ut.no: “Carry on towards the summit between point 1206 and Loftdokkstjønn.” The line goes south of 1206 and passes 79 metres south-east of the point at 2.61 km.",
-      "Between 1206 and Loftsdokktjønn the line gives back 33 metres of height, from 1201 m at 2.61 km down to 1168 at 2.91 km — the steepest section of the tour, 27.1 degrees between 1197 and 1179, is on the way down here — before it turns north along Ålmannvegen, the path from the lodge, towards the col. The ground under the track is steep in only one place, 17 metres at 35 degrees or more at 1190–1198 m. You reach the col between Vesle Nup and top 1469 at 1352 m after 4.44 km; top 1469 is 727 metres north-west of the line.",
-      "Ut.no: “Here you turn right and follow the ridge east about 1 km to the summit itself.” The ridge is 1.48 km from the col to the cairn. The line passes 100 metres south-west of top 1393 and climbs gently — 5.6 degrees from 1300 to 1400 m and 7.8 from 1400 to 1500. The last stretch up to the cairn is the steepest on the ridge.",
+      "The stream valley climbs steadily — 6.2 degrees in the band from 1000 to 1100 m — and after 1.75 km you are on the flat, 1171 m. From here you can see Vesle Nup to the north-east. The band from 1100 to 1200 m is 1925 metres of ground at 3.2 degrees, almost level. Ut.no: “Carry on towards the summit between point 1206 and Loftdokkstjønn.” The line goes south of 1206 and passes 79 metres south-east of the point at 2.55 km.",
+      "Between 1206 and Loftsdokktjønn the line gives back 29 metres of height, from 1201 m at 2.55 km down to 1172 at 2.90 km — the steepest section of the tour, 26.5 degrees between 1197 and 1179, is on the way down here — before it turns north along Ålmannvegen, the path from the lodge, towards the col. The ground under the track is steep in only one place, 17 metres at 35 degrees or more at 1190–1198 m. You reach the col between Vesle Nup and top 1469 at 1350 m after 4.33 km; top 1469 is 775 metres north-west of the line.",
+      "Ut.no: “Here you turn right and follow the ridge east about 1 km to the summit itself.” The ridge is 1.46 km from the col to the cairn. The line passes 100 metres south-west of top 1393 and climbs gently — 6.0 degrees from 1300 to 1400 m and 7.8 from 1400 to 1500. The last stretch up to the cairn is the steepest on the ridge.",
     ],
     descent: [
       "Fri Flyt: “Ski down the first flank. Hold your height after that so you do not have to walk across the flat. Ski down the stream valley towards the car.” Ut.no points to route C as the one with “the most continuous descent for those on touring skis”.",
@@ -7328,7 +7328,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
     avalanche: [
       {
         title: "The route",
-        body: "The steepest sustained section is 27.1 degrees between 1197 and 1179 m, a short drop into the dip south-east of 1206, and the steepest band 7.8 degrees from 1400 to 1500. The ground under the track is 35 degrees or steeper on only one stretch of 17 metres, at 1190–1198 m. Fri Flyt gives 25 degrees as the steepest point and grades the tour “Easy”.",
+        body: "The steepest sustained section is 26.5 degrees between 1197 and 1179 m, a short drop into the dip south-east of 1206, and the steepest band 7.8 degrees from 1400 to 1500. The ground under the track is 35 degrees or steeper on only one stretch of 17 metres, at 1190–1198 m. Fri Flyt gives 25 degrees as the steepest point and grades the tour “Easy”.",
       },
       {
         title: "The terrain around it",
@@ -7342,8 +7342,8 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
     elevationProfile: {
       startLabel: "982 m",
       endLabel: "1510 m",
-      distanceLabel: "5.9 km",
-      caption: "595 metres of climbing and 5.93 km from Ulevå, with the flat at 1171 m, the col at 1352 and the steepest band below the summit.",
+      distanceLabel: "5.8 km",
+      caption: "598 metres of climbing and 5.79 km from Ulevå, with the flat at 1171 m, the col at 1350 and the steepest band below the summit.",
     },
   },
   gaustatoppen: {

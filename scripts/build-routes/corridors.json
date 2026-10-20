@@ -15920,9 +15920,10 @@
      },
      {
       "name": "sør for 1206",
-      "lat": 59.8436,
-      "lng": 7.196,
-      "elevation_m": 1192.6
+      "lat": 59.84375,
+      "lng": 7.19609,
+      "elevation_m": 1192.3,
+      "note": "Flyttet inn på linja da hjørnet sør for 1206 ble glattet ut: linja svinger nå jevnt inn på stien nordover i stedet for å knekke 129°."
      },
      {
       "name": "mellom 1206 og Loftsdokktjønn",
@@ -15944,9 +15945,10 @@
      },
      {
       "name": "skaret mot 1469",
-      "lat": 59.85735,
-      "lng": 7.20824,
-      "elevation_m": 1352.5
+      "lat": 59.85688,
+      "lng": 7.20851,
+      "elevation_m": 1349.6,
+      "note": "Flyttet inn på linja da knekken i skaret ble glattet ut: linja gikk forbi skaret langs stien og snudde 111° østover; nå svinger den jevnt gjennom skaret."
      },
      {
       "name": "ryggen østover",
