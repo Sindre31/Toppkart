@@ -63,7 +63,7 @@ values
   ('langlitinden', 'Langlitinden', 'Harstad', 68.86785, 17.38742, 1276, 1300, '5–7 t', 4, 'V', 'jan–apr', '1300 høydemeter fra snuplassen ved Vang til Nordens høyeste øytopp: sommerruta langs Bjørndalselva, flata med vatnet på land — og traversen på 800–900, partiet med skredhistorikk, før toppflanken.', true),
   ('krakrotinden', 'Kråkrøtinden', 'Harstad', 68.86266, 17.40083, 1186, 1190, '5–7 t', 4, 'N', 'feb–apr', '1190 høydemeter fra Fornes: dalen mot Blåisen, morenen sør for isen — og 40-graderspassasjen til toppen, med øks og stegjern i sekken.', true),
   ('ristinden', 'Ristinden', 'Harstad', 68.84241, 17.25256, 1056, 1050, '4–6 t', 4, 'SV', 'feb–apr', '1050 høydemeter fra skolen på Ånstad: lia og myrene til Breilifatet — og rampa på sørvestsiden til toppen, der Johammarrenna og Risenrenna venter på stabile dager.', true),
-  ('snotinden', 'Snøtinden', 'Harstad', 68.83669, 17.30588, 1215, 1240, '5–7 t', 4, 'V', 'feb–apr', '1240 høydemeter fra Ånstad til Andørjas store klassiker: skogen øst for Snøfjellelva, Snøfjellvatnet og vestflanken — fem navngitte nedfarter, og øks og stegjern i sekken.', true),
+  ('snotinden', 'Snøtinden', 'Harstad', 68.83669, 17.30588, 1215, 1220, '5–7 t', 4, 'V', 'feb–apr', '1220 høydemeter fra Ånstad til Andørjas store klassiker: skogen øst for Snøfjellelva, Snøfjellvatnet og vestflanken — fem navngitte nedfarter, og øks og stegjern i sekken.', true),
   ('storhornet-kvafjord', 'Storhornet i Kvæfjord', 'Harstad', 68.8246, 16.21309, 722, 660, '4–6 t', 1, 'S', 'nov–apr', '660 høydemeter fra Kvæfjordeidet etter Harstads alltid best preparerte løype til Koven — og en slak, sørvendt rygg videre til varden. Solturen i rundelen.', true),
   ('vetefjellet', 'Vetefjellet', 'Harstad', 68.80013, 16.34039, 547, 390, '2–4 t', 2, 'S', 'feb–apr', '390 høydemeter over Olaåsen: skogsveien inn til traktorveien, Helgevallan og høyde 361 i lett terreng — et lekent skifjell med kort anmarsj og fin skogskjøring.', true),
   ('storlitinden', 'Storlitinden', 'Harstad', 68.79801, 16.31034, 613, 450, '2–4 t', 1, 'S', 'des–apr', '450 høydemeter fra den brøyta parkeringa ved Kvæfjordløypene: traktorveien forbi Kvilheim, vest for Reingjerdhågen og opp den jevne skråninga som også er sommerruta — lett og sikker hele veien.', true),
@@ -94,7 +94,7 @@ values
   ('snotindan', 'Snøtindan', 'Harstad', 68.54343, 15.61609, 996, 1550, '7–9 t', 4, 'Ø', 'jan–apr', '1550 høydemeter fra Løbergsbukta for en 996-topp: midt i Løbergsdalen mellom utløpssonene, over Løbergskaret, mellom vatna — og topphenget på 30–40 grader til slutt.', true),
   ('fiskefjordtindan', 'Fiskefjordtindan', 'Harstad', 68.53218, 16.01129, 965, 1040, '5–7 t', 3, 'SV', 'jan–apr', '1040 høydemeter fra Kanstadbotn: sommerstien, ryggen mellom Kobbedalsvatna — og den eksponerte østryggen til slutt, med øks og stegjern i sekken og en østside som måler 67 grader der den er brattest.', true),
   ('moysalen', 'Møysalen', 'Vesterålen', 68.52598, 15.45215, 1264, 1600, '7–9 t', 4, 'S', 'jan–mai', '1600 høydemeter fra E10 ved Litlvatnet: 355 av dem gir du fra deg underveis, 120 av dem ned til Grønnvatnet på 328.', true),
-  ('forselvtinden', 'Forselvtinden', 'Vesterålen', 68.50934, 15.50105, 907, 1180, '6–8 t', 4, 'S', 'feb–apr', '1180 høydemeter og 8,3 kilometer fra Lofast, over toppen av en annen tur i katalogen: opp Lakselvtindan først, vestover til rett nord av høyde 790 — og sydryggen til slutt, med 296 høydemeter gitt fra deg underveis.', true),
+  ('forselvtinden', 'Forselvtinden', 'Vesterålen', 68.50934, 15.50105, 907, 1190, '6–8 t', 4, 'S', 'feb–apr', '1190 høydemeter og 8,4 kilometer fra Lofast, over toppen av en annen tur i katalogen: opp Lakselvtindan først, vestover til rett nord av høyde 790 — og sydryggen til slutt, med 296 høydemeter gitt fra deg underveis.', true),
   ('middagsfjellet', 'Middagsfjellet', 'Harstad', 68.50879, 15.78279, 810, 760, '3–5 t', 3, 'N', 'des–apr', '760 høydemeter fra rundkjøringa i Gullesfjordbotn — rundens korteste tur, og den slakeste traseen er hele poenget: lia vest for Tverrelva og Blåberget, med brattere skredterreng på alle kanter.', true),
   ('strandtinden', 'Strandtinden', 'Harstad', 68.50455, 16.03441, 1076, 1140, '5–7 t', 3, 'N', 'jan–jun', '1140 høydemeter fra E10 ved havet gjennom Heggedalen og opp vestryggen — Harstad-områdets store klassiker, og fjellet flest går der.', true),
   ('jotind', 'Jotind', 'Harstad', 68.50087, 16.32663, 979, 1050, '5–7 t', 4, 'Ø', 'feb–apr', '1050 høydemeter fra Mølnneset: ryggen over Spannbogen, henget før 600 der skiene gjerne bæres — og den smale toppryggen, med sommerruta på sørsida som utveien.', true),
@@ -139,18 +139,18 @@ values
   ('mjolvafjellet', 'Mjølvafjellet', 'Romsdal', 62.54172, 7.76405, 1215, 1220, '5–7 t', 2, 'N', 'jan–apr', '1220 høydemeter fra fjorden: traktorvegen fra Isfjorden stadion, skogen under Litlehesten, over Steinselva og den slake ryggen om Høgnosa — så sørover til toppen som henger over Romsdalen.', true),
   ('blanebba', 'Blånebba', 'Romsdal', 62.52627, 7.79275, 1317, 940, '4–6 t', 3, 'NØ', 'mar–mai', '940 høydemeter fra Venjesdalssetra til kanten som ser rett ned i Romsdalen: Romsdalseggen-merkinga langs Tverrelva, flata under Storhesten, nordøstflanken til skaret på 1245 — og hovedryggen østover til varden.', true),
   ('ospetinden', 'Øspetinden', 'Romsdal', 62.51586, 7.25081, 1228, 1060, '5–7 t', 3, 'Ø', 'des–mai', '1060 høydemeter fra bomkassa på Venås: setervegen til Venåssetra, myra over Stavvasselva, den store østvendte botnen — og nordøstryggen til pyramiden innerst i Måndalen.', true),
-  ('middagstinden', 'Middagstinden', 'Romsdal', 62.46024, 7.44099, 1568, 1290, '5–7 t', 4, 'V', 'jan–apr', '1290 høydemeter fra Herdslan i Innfjorden: vegen langs Berillvatnet, bekkedalen til skaret ved Tindevatnet — og en ofte avblåst egg med ski på sekken før den vestvendte toppflanken.', true),
+  ('middagstinden', 'Middagstinden', 'Romsdal', 62.46024, 7.44099, 1568, 1310, '5–7 t', 4, 'V', 'jan–apr', '1310 høydemeter fra Herdslan i Innfjorden: vegen langs Berillvatnet, bekkedalen til skaret ved Tindevatnet — og en ofte avblåst egg med ski på sekken før den vestvendte toppflanken.', true),
   ('auskjeret', 'Auskjeret', 'Sunnmøre', 62.37746, 6.77458, 1203, 870, '3–5 t', 2, 'SØ', 'des–apr', '870 høydemeter fra Fausaskiftet i jevn stigning nordover — helårsåpen vei og moderate hellinger.', true),
   ('snohetta',        'Snøhetta',        'Dovrefjell', 62.31992,  9.26747, 2286,  820, '5–7 t', 2, 'Ø',  'apr–jun', 'Storslått og luftig, men overraskende snill — når Snøheimvegen åpner.', true),
   ('jonshornet', 'Jønshornet', 'Sunnmøre', 62.31695, 6.33395, 1417, 1430, '6–8 t', 4, 'N', 'feb–mai', '1430 høydemeter fra Vollane over Rametinden, og de siste hundre på smal egg til varden på Ramoen.', true),
   ('ytstevasshornet', 'Ytstevasshornet', 'Sunnmøre', 62.28014, 6.73548, 1331, 820, '3–5 t', 3, 'Ø', 'jan–mai', '820 høydemeter fra Svartevatnet: bratt opp Vassdalen til vatnene på 950 moh, så nordvest mot en smal og skavlete topprygg.', true),
   ('rana', 'Råna', 'Sunnmøre', 62.27554, 6.57479, 1587, 1560, '7–9 t', 3, 'SØ', 'mar–mai', '1560 høydemeter fra Urkegjerdet ved fjorden: inn dalen til Nordkopen, bratt opp på egga og nordover den brede toppryggen.', true),
   ('kolastinden',     'Kolåstinden',     'Sunnmøre',   62.25886,  6.31102, 1432, 1120, '5–7 t', 3, 'N',  'feb–mai', 'Alpin klassiker fra Standaldalen med velkjent renne og storslått finish.', true),
-  ('vassdalstinden', 'Vassdalstinden', 'Sunnmøre', 62.24405, 6.18966, 1278, 1220, '5–7 t', 3, 'Ø', 'feb–mai', '1220 høydemeter fra Nupen: setervei til Vallasætra, kneiken opp i Bukkedalen og en lang flanke til topps.', true),
+  ('vassdalstinden', 'Vassdalstinden', 'Sunnmøre', 62.24405, 6.18966, 1278, 1230, '5–7 t', 3, 'Ø', 'feb–mai', '1230 høydemeter fra Nupen: setervei til Vallasætra, kneiken opp i Bukkedalen og en lang flanke til topps.', true),
   ('saudehornet', 'Saudehornet', 'Sunnmøre', 62.23578, 6.14246, 1303, 1160, '4–6 t', 3, 'SV', 'jan–mai', '1157 høydemeter fra vannverket i Ørsta, og ryggkammen holder rundt 32° i snitt de siste 170, med det bratteste på 37.', true),
   ('slogen',          'Slogen',          'Sunnmøre',   62.20818,  6.67306, 1564, 1536, '6–8 t', 4, 'Ø',  'mar–mai', 'Sunnmørsalpenes dronning — en alvorlig tur for erfarne, i riktig vindu.', true),
   ('torvloysa', 'Torvløysa', 'Sunnmøre', 62.1834, 7.28026, 1851, 1470, '7–9 t', 2, 'N', 'mar–mai', '1470 høydemeter og ti kilometer fra Hatlestad over Rellingsætra og Daurmålsfjellet, mest slak rygg.', true),
-  ('skarene', 'Skårene', 'Sunnmøre', 62.17982, 7.19977, 1830, 1220, '5–7 t', 3, 'S', 'mar–mai', '1220 høydemeter fra Korsmyra opp Gråsteindalen og den store snøflanken til en av de høyeste toppene over Eidsdal.', true),
+  ('skarene', 'Skårene', 'Sunnmøre', 62.17982, 7.19977, 1830, 1240, '5–7 t', 3, 'S', 'mar–mai', '1240 høydemeter fra Korsmyra opp Gråsteindalen og den store snøflanken til en av de høyeste toppene over Eidsdal.', true),
   ('melshornet', 'Melshornet', 'Sunnmøre', 62.17381, 6.14287, 809, 560, '2–4 t', 1, 'SØ', 'des–apr', '560 høydemeter på preparert løype fra Helgatun — husfjellet som blir gått i mørket hele vinteren.', true),
   ('jakta', 'Jakta', 'Sunnmøre', 62.1711, 6.61671, 1589, 1560, '6–8 t', 3, 'SØ', 'feb–mai', '1560 høydemeter fra Norang: slak stigning inn Konedalen, så en 33-graders side opp på den smale toppryggen.', true),
   ('skarasalen', 'Skårasalen', 'Sunnmøre', 62.16566, 6.48583, 1542, 1452, '6–8 t', 3, 'V', 'jan–mai', '1438 høydemeter fra bommen på Kvistadvegen, med det bratteste opp mot skaret på 1074 moh.', true),
@@ -2218,12 +2218,12 @@ Vanligste feil er å regne turen i høydemeter i stedet for i timer. 1602 høyde
 where slug = 'moysalen';
 
 update public.tk_tours set
-  description_up   = 'Fra parkeringa — 23 moh — som på Lakselvtindan: nordsida av Storvatnet på 85, nord for høyde 258, og 217 moh der Lakselva krysses mot øst. Skogen slipper på 220 moh etter 2,48 km, og beltet fra 300 til 400 er det bratteste i snitt med 19,0 grader over 313 meter grunn.
+  description_up   = 'Fra parkeringa — 23 moh — som på Lakselvtindan: nordsida av Storvatnet på 85, nord for høyde 258, og 217 moh der Lakselva krysses mot øst. Skogen slipper på 220 moh etter 2,57 km, og beltet fra 300 til 400 er det bratteste i snitt med 19,0 grader over 313 meter grunn.
 
 Opp på Lakselvtindan, 747 moh, og så vestover langs høydedraget til du står rett nord av høyde 790 — DTM1 måler 790,6, og korridoren står på 754 rett nord av den. Mellom 700 og 800 moh ligger to kilometer nesten flatt høyfjell: beltet måler 2,1 grader i snitt over 1955 meter grunn.
 
 Videre nordover holder ruta seg på nedsida — vestsida — av draget, 668 moh der korridoren er festet, fordi det er bratte partier rett før oppstigningen tar til. Så sydryggen: det bratteste steget på hele linja, 33,1 grader, ligger mellom 834 og 863 moh, rett under varden på 907.',
-  description_down = 'Samme veien hjem, for det meste under 20 grader med et par partier på 25–30, sier kilden. Men hjemveien er også en ny oppstigning: de 296 høydemeterne du ga fra deg skal tas igjen, og Lakselvtindan står i veien en gang til.
+  description_down = 'Samme veien hjem, for det meste under 20 grader med et par partier på 25–30, sier kilden. Men hjemveien er også en ny oppstigning: de 309 høydemeterne du ga fra deg skal tas igjen, og Lakselvtindan står i veien en gang til.
 
 Flankesveipet forklarer hvorfor sydryggen er den eneste veien opp og ned. S måler 22,5 grader i snitt med et 40,8-vindu 70 til 130 meter ute — det bratte partiet kilden nevner. N, NE, V og NV ligger på 46,9 til 48,6 i snitt med vinduer fra 60,6 til 75,9, og øst har 76,8 bare 30 til 90 meter ute.',
   avalanche_notes  = jsonb_build_array(
@@ -2237,7 +2237,7 @@ Flankesveipet forklarer hvorfor sydryggen er den eneste veien opp og ned. S mål
     ),
     jsonb_build_object(
       'title', 'Før du går',
-      'body',  'Forselvtinden ligger i varslingsregionen Lofoten og Vesterålen, en A-region med daglig skredvarsel gjennom sesongen. Sjekk varsom.no. Sesongen februar–april er Fri Flyts, og 8,29 km med 296 høydemeter tilbake gjør dette til en tur der tidspunktet på dagen avgjør hvilken snø du møter på returen. En tom side betyr ikke trygt fjell.'
+      'body',  'Forselvtinden ligger i varslingsregionen Lofoten og Vesterålen, en A-region med daglig skredvarsel gjennom sesongen. Sjekk varsom.no. Sesongen februar–april er Fri Flyts, og 8,38 km med 309 høydemeter tilbake gjør dette til en tur der tidspunktet på dagen avgjør hvilken snø du møter på returen. En tom side betyr ikke trygt fjell.'
     )
   )
 where slug = 'forselvtinden';
@@ -3497,9 +3497,9 @@ Sørflanken er alternativet: 400 høydemeter jevnt bratt ned mot Øspevatnet, 33
 where slug = 'ospetinden';
 
 update public.tk_tours set
-  description_up   = 'Fra Herdslan på bomvegen mot Bøstølen — registerets Herdslan er ei slette ved veien, og myrflata der bilene står leser 348,7 moh mot Fri Flyts oppgitte 360. Veien følges vestover på sørsiden av Berillvatnet, som er regulert: linja runder hele vannet på land, om vestenden på 403 moh, og krysser elva vest for vatnet på egnet sted slik kilden sier — 390 moh der linja tar den. Beltet fra 300 til 400 moh måler 3,4 grader over halvannen kilometer veg.
+  description_up   = 'Fra Herdslan på bomvegen mot Bøstølen — registerets Herdslan er ei slette ved veien, og myrflata der bilene står leser 348,7 moh mot Fri Flyts oppgitte 360. Veien følges vestover på sørsiden av Berillvatnet, som er regulert: linja runder hele vannet på land, om vestenden på 403 moh, og krysser elva vest for vatnet på egnet sted slik kilden sier — 390 moh der linja tar den. Beltet fra 300 til 400 moh måler 1,3 grader over 2,4 km veg.
 
-Fra skogen vest for vatnet — 410 moh — går det opp bekkedalen mot skaret øst for punkt 943, ved Tindevatnet. Skogen slutter på 740 moh etter 3,33 km, med åpent område fra 759, og dalen bratner jevnt: 21,0 grader fra 500 til 600 moh, 19,2 fra 600 til 700 og turens bratteste belte, 25,1 grader over 170 meter grunn, fra 700 til 800. Øvre del av bekkedalen er bratt og skredutsatt — det er kildens egen formulering, og det er her turen krever sin stabilitet.
+Fra skogen vest for vatnet — 410 moh — går det opp bekkedalen mot skaret øst for punkt 943, ved Tindevatnet. Skogen slutter på 740 moh etter 3,68 km, med åpent område fra 759, og dalen bratner jevnt: 21,0 grader fra 500 til 600 moh, 19,2 fra 600 til 700 og turens bratteste belte, 25,1 grader over 170 meter grunn, fra 700 til 800. Øvre del av bekkedalen er bratt og skredutsatt — det er kildens egen formulering, og det er her turen krever sin stabilitet.
 
 Skaret leser 937 moh der linja tar det, med Tindevatnet på 804 under deg i vest. Herfra travereres ryggen østover mot toppen — 17,3 grader fra 1000 til 1100, 21,3 fra 1200 til 1300 — og den er lite skredutsatt, men ofte avblåst: skiene på sekken, og stegjern og isøks kan trengs. Når ryggen flater ut nordover kan skiene ofte på igjen langs vestsiden.
 
@@ -3696,7 +3696,7 @@ where slug = 'kolastinden';
 update public.tk_tours set
   description_up   = 'Start ved bilparkeringa etter bommen i Nupen, 92 moh. Fri Flyt oppgir «3 timer fra Vallasætra» og «4 timer fra Nupen», og forskjellen er reell: setra ligger på 324 moh, og den videre veien dit er bomvei som bare gjelder «hvis veien er åpen».
 
-Følg Engesetvegen oppover og østover til Vallasætra. De første 829 metrene grunn er flate — 0,6 grader — og så begynner veien: 5,3 grader fra 100 til 200 moh, 9,2 fra 200 til 300 og et brattere parti på 19,9 og 21,8 grader mellom 400 og 600 moh. Skogen holder til 581 moh langs linja. Derfra går den i åpent terreng langs kanten av et skogholt som den streifer på 637 moh, og fra 640 moh er det åpent for godt.
+Følg Engesetvegen oppover og østover til Vallasætra. De første 753 metrene grunn er flate — 1,1 grader — og så begynner veien: 4,3 grader fra 100 til 200 moh, 6,1 fra 200 til 300 og et brattere parti på 19,9 og 21,8 grader mellom 400 og 600 moh. Skogen holder til 581 moh langs linja. Derfra går den i åpent terreng langs kanten av et skogholt som den streifer på 637 moh, og fra 640 moh er det åpent for godt.
 
 Fra setra går du noen hundre meter inn Langedalen og deretter bratt opp kneiken til Bukkedalen, 791 moh — eventuelt med skiene på sekken. Bandet fra 700 til 800 moh er slakt, 8,9 grader over 632 meter grunn, og gir deg pusterommet før flanken.
 
@@ -3810,7 +3810,7 @@ where slug = 'torvloysa';
 update public.tk_tours set
   description_up   = 'Start på biloppstillingsplassen på Korsmyra, 621 moh, ved hovedveien mellom Eidsdal og Geiranger. Tilkomsten står under Eidshornet hos Fri Flyt, og det er den samme plassen.
 
-Følg seterveien inn til Grandesætra på 648 moh og videre slakt inn og oppover Gråsteindalen, 721 moh. De to første bandene er nesten flate: 3,7 grader over 1268 meter grunn fra 600 til 700 moh og 3,6 over 1575 meter fra 800 til 900.
+Følg seterveien inn til Grandesætra på 648 moh og videre slakt inn og oppover Gråsteindalen, 721 moh. De to første bandene er nesten flate: 3,3 grader over 1431 meter grunn fra 600 til 700 moh og 3,6 over 1575 meter fra 800 til 900.
 
 Kommet inn mot botnen av dalen på 940 moh tar den store snøflanken til, og den holder samme karakter helt opp: 17,9 grader fra 900 til 1000 moh, 20,5 fra 1000 til 1100, 19,6 fra 1300 til 1400, 21,2 fra 1500 til 1600 og 21,2 fra 1600 til 1700 — de to bratteste hundremetrene. Bratteste sammenhengende parti måler 27,9 grader mellom 1528 og 1544 moh.
 
