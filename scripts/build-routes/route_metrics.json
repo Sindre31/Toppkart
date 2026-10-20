@@ -3138,7 +3138,7 @@
  "gaustatoppen": {
   "verticalM": 980,
   "gainM": 975,
-  "distanceM": 4434,
+  "distanceM": 4704,
   "startM": 922,
   "summitM": 1882,
   "duration": "4–6 t",
@@ -3148,8 +3148,8 @@
   "maxStepAngle": 24.8,
   "grade": 2,
   "aspect": "Ø",
-  "distanceKm": 4.4,
-  "cumdistM": 4434
+  "distanceKm": 4.7,
+  "cumdistM": 4704
  },
  "heddersfjell": {
   "verticalM": 410,

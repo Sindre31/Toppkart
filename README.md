@@ -372,14 +372,15 @@ content and data quality that has to be settled before the site is promoted wide
   lines; Røseknuten has no way up that keeps clear of the cornice edge above Røsehola, and the
   guide says where the line runs 5–31 m from it. The second sources are summer routes from other starts, so all three are
   `confidence: medium`. See «The Sirdal round» in `scripts/build-routes/README.md`.
-- **Forty-seven lines that ran beside the path through forest now run on it.** A line solved over
+- **Forty-eight lines that ran beside the path through forest now run on it.** A line solved over
   the terrain model does not know a path is drawn on the map, and in places it ran 50–200 m to one
   side of one and came back. On open ground that is left alone — it is snow either side, and the
   winter line is often the better one — but below the treeline the path is where the trees are
   cleared, so `follow_trails.py` puts those stretches on the mapped path or road, changing nothing
-  else on the line: the steepest 30 m is unchanged on 42 of the 47 and one card moved: Englafjell, put on the
-  marked path from Musland by hand, 1240 → 1230 m. 73 forest
-  stretches on 55 routes stay, each with its reason in `follow_trails_run.txt` — mostly a path
+  else on the line: the steepest 30 m is unchanged on 43 of the 48 and one card moved: Englafjell, put on the
+  marked path from Musland by hand, 1240 → 1230 m. Gaustatoppen was put on the road from Langefonn
+  by hand, 270 m longer and otherwise as it was. 72 forest
+  stretches on 54 routes stay, each with its reason in `follow_trails_run.txt` — mostly a path
   that goes somewhere else, a line on the path that would change the card's vertical, or a
   research waypoint that holds the line where it is. See «The path round» in
   `scripts/build-routes/README.md`.

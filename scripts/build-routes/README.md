@@ -7208,13 +7208,13 @@ roads (`trails.py`), finds the *detours* — at least 150 m more than 30 m off
 any mapped way, leaving one and coming back to one, mostly within 150 m of
 it — and reads Kartverket's terrain class every 40 m along each.
 
-**47 of the 246 routes were put on the path** where they ran beside it through
+**48 of the 246 routes were put on the path** where they ran beside it through
 forest. What is left, on the shipped lines, is in `follow_trails_run.txt`:
 
 | detours left | | routes |
 | --- | --- | --- |
 | on open ground — skiable either side, left as they are | 220 (102 km) | |
-| mostly `Skog`, each with the reason it stays | 73 | 55 |
+| mostly `Skog`, each with the reason it stays | 72 | 54 |
 
 ### How a forest detour is moved
 
@@ -7291,9 +7291,22 @@ up and 173 m given back, against 1237 and 185. **The card moved, 1240 →
 1230**, with the teaser, the seed row and the guide, because the line on the
 path is the tour the source describes.
 
+### Gaustatoppen, by hand
+
+The guide sends you up «den vinterstengte veien mot Stavsro» from the car park
+at Langefonn, and the line cut the corner instead: 470 m through the birch,
+50–75 m west of the road, from the car park to where the road turns south.
+The pass could not see the road — Svineroivegen is fv. 3430, a secondary road,
+and `trails.fetch_roads` takes tertiary and below. So the line was put on it by
+hand, ways 267086430, 1098199952, 1098199951 and 860332013, round the bend east
+of the car park to where it already ran on the road, with the road as corridor
+waypoints. It is 270 m longer — Svineroisetra is now a kilometre in, not 850 m,
+which is the kilometre the descriptions talk about — and the gain (975 m), the
+steepest 30 m (24.8°) and the card are as they were.
+
 ### What was left in the forest, and why
 
-Fifty-five routes, with the reason on each in `follow_trails_run.txt`. A
+Fifty-four routes, with the reason on each in `follow_trails_run.txt`. A
 route can have more than one.
 
 - **The path goes somewhere else** (29 routes — Gygrastølen, Vesoldo, Sula,
@@ -7309,11 +7322,9 @@ route can have more than one.
   Vartavarhaugen, Hattfjellet's tractor road in Bjørndalen, Rondslottet's
   Langglupdalen): the corridor puts the line there for a reason the path does
   not share, and this round does not overrule the research.
-- **«Not connected»** (8): the way the line leaves and the way it rejoins are
-  not joined in OSM, roads included, within 40 m. Englafjell was one, and has
-  since been put on the path by hand (below).
-  Gaustatoppen's line runs through the forest beside Svineroivegen, a county
-  road that is not among the minor roads OSM returned for its box.
+- **«Not connected»** (7): the way the line leaves and the way it rejoins are
+  not joined in OSM, roads included, within 40 m. Englafjell and Gaustatoppen were
+  two, and have since been put on the path and the road by hand (below).
 - **The path is steeper, wetter, or will not hold the line** (Sandhornet's
   path from Horsdal runs along the shore at sea level and puts the steepest 30 m
   at 34.5° against 32.5°; Såta's gives back 110 m; Lodalskåpa's, Rundtind's and

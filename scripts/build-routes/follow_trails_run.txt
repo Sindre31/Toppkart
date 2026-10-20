@@ -8,6 +8,7 @@ beisfjordtotta_narvik                    9035 -> 9078    1351 -> 1350   27.0 -> 
 englafjell_musland                       8659 -> 8726    1237 -> 1225   30.1 -> 30.1   (by hand)
 forkledalstindan_sydsiden                5408 -> 5477     985 -> 983    39.4 -> 39.4
 gangnesaksla_normalruta                  4903 -> 4914    1308 -> 1308   26.0 -> 26.0
+gaustatoppen_normalruta                  4434 -> 4704     975 -> 975    24.8 -> 24.8   (by hand)
 gronlifjellet_litlebotn                  8102 -> 8101    1155 -> 1155   23.8 -> 23.8
 gyranfisen_vikerkoia                     5366 -> 5557     667 -> 668    24.9 -> 24.9
 heia_ost-1                               2219 -> 2238     470 -> 470    25.0 -> 24.7
@@ -96,10 +97,8 @@ galdhopiggen_spiterstulen              open   0.41 km   205 m  off  49/ 63 m  Å
 galdhopiggen_spiterstulen              open   1.10 km   863 m  off  79/137 m  ÅpentOmråde 22
 galdhopiggen_spiterstulen              open   2.35 km   969 m  off  72/105 m  ÅpentOmråde 25
 galdhopiggen_spiterstulen              open   5.25 km   339 m  off  45/ 85 m  SnøIsbre 9
-gaustatoppen_normalruta                SKOG   0.11 km   468 m  off 110/218 m  Skog 12
-gaustatoppen_normalruta                open   2.24 km   209 m  off  37/ 40 m  ÅpentOmråde 6
-gaustatoppen_normalruta                open   3.10 km   209 m  off  53/ 68 m  ÅpentOmråde 6
-  -> left as it is: 0.11 km: the path it leaves and the one it rejoins are not connected
+gaustatoppen_normalruta                open   2.50 km   209 m  off  37/ 40 m  ÅpentOmråde 6
+gaustatoppen_normalruta                open   3.37 km   209 m  off  52/ 68 m  ÅpentOmråde 6
 glitregga_normalruta                   SKOG   0.28 km   159 m  off  45/ 59 m  Skog 4, Myr 1
   -> left as it is: 0.28 km: the path is 521 m against 159 m of line
 glittertinden_normalruta               open   0.77 km   599 m  off  32/ 37 m  Myr 9, ÅpentOmråde 6, Innsjø 1
