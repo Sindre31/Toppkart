@@ -7256,7 +7256,7 @@ export const GUIDES: Record<string, TourGuide> = {
     intro:
       "Sør-Norges mest markante topp, og en av de snilleste å gå på ski: 975 høydemeter fra Langefonn, og ikke et steg over 25° på hele oppstigningen.",
     ascent: [
-      "Fra parkeringen ved Langefonn turisthytte, 922 moh, følger du den vinterstengte veien mot Stavsro. Etter 850 meter står du ved Svineroisetra, 1021 moh — det er kilometeren beskrivelsene snakker om. Bjørkebeltet slipper taket rundt 970 moh, og derfra er alt åpent fjell. Østryggen kan også nås fra Stavsro med 706 høydemeter, men veien dit er vinterstengt.",
+      "Fra parkeringen ved Langefonn turisthytte, 922 moh, følger du den vinterstengte veien mot Stavsro, rundt svingen øst for parkeringen og opp gjennom bjørkeskogen. Etter en kilometer står du ved Svineroisetra, 1021 moh — det er kilometeren beskrivelsene snakker om. Bjørkebeltet slipper taket rundt 970 moh, og derfra er alt åpent fjell. Østryggen kan også nås fra Stavsro med 706 høydemeter, men veien dit er vinterstengt.",
       "Ved setra tar du av veien svakt til høyre, sørvest, og setter kursen mot det laveste punktet på Himmelranden — toppen av Langefonn, 1455 moh. Ikke gå rett opp mot varden herfra. Fallinja fra Svineroisetra rett mot toppen holder 35–37° i øverste tredjedel; traversen mot Langefonn stiger jevnt på 12–16° og passerer aldri 25°, og det er den linja denne ruta følger.",
       "Fra det laveste punktet vender du vest-nordvest og følger eggen. Stigningen er jevn: den bratteste hundremeteren på hele turen ligger mellom 1700 og 1800 moh og måler 17,5°, og bratteste enkeltsteg er 24,8°. Underveis kommer du inn på sommerstien fra Stavsro.",
       "På 1831 moh går du ut på toppflata ved Gaustatoppen turisthytte, og derfra er det vel fem hundre meter nordvestover over blokkmark til varden. Flata er åpen og steinete og gir lite å styre etter; i dårlig sikt er hytta holdepunktet du navigerer på, både på vei opp og på vei ned.",
@@ -7281,11 +7281,11 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,200 L25,195 L45,190 L61,187 L86,184 L110,179 L134,174 L165,163 L189,154 L214,147 L232,143 L256,136 L274,129 L291,122 L306,115 L330,108 L354,97 L372,90 L396,79 L421,69 L439,62 L463,52 L482,46 L501,37 L513,33 L523,28 L533,27 L550,23 L574,20 L599,19 L600,18",
+      path: "M0,200 L20,197 L30,196 L45,193 L58,191 L77,189 L90,187 L115,184 L144,178 L173,170 L206,157 L230,149 L253,143 L279,135 L299,127 L318,117 L345,108 L368,97 L391,87 L420,75 L443,64 L466,55 L489,46 L511,34 L522,30 L533,27 L547,23 L576,20 L600,18",
       startLabel: "922 moh",
       endLabel: "1883 moh",
-      distanceLabel: "4,4 km",
-      caption: "922 til 1882 moh på 4,43 km. Bratteste hundremeteren måler 15,8°, og ingenting på linja passerer 25°.",
+      distanceLabel: "4,7 km",
+      caption: "922 til 1882 moh på 4,70 km. Bratteste hundremeteren måler 15,8°, og ingenting på linja passerer 25°.",
     },
   },
   heddersfjell: {

@@ -2176,6 +2176,56 @@
     },
     "waypoints": [
      {
+      "name": "den vinterstengte vegen mot Stavsro",
+      "lat": 59.86843,
+      "lng": 8.68907
+     },
+     {
+      "name": "den vinterstengte vegen mot Stavsro",
+      "lat": 59.86798,
+      "lng": 8.69045
+     },
+     {
+      "name": "den vinterstengte vegen mot Stavsro",
+      "lat": 59.86755,
+      "lng": 8.69102
+     },
+     {
+      "name": "den vinterstengte vegen mot Stavsro",
+      "lat": 59.86715,
+      "lng": 8.69077
+     },
+     {
+      "name": "den vinterstengte vegen mot Stavsro",
+      "lat": 59.86701,
+      "lng": 8.68962
+     },
+     {
+      "name": "den vinterstengte vegen mot Stavsro",
+      "lat": 59.86686,
+      "lng": 8.68846
+     },
+     {
+      "name": "den vinterstengte vegen mot Stavsro",
+      "lat": 59.86613,
+      "lng": 8.68737
+     },
+     {
+      "name": "den vinterstengte vegen mot Stavsro",
+      "lat": 59.86547,
+      "lng": 8.6858
+     },
+     {
+      "name": "den vinterstengte vegen mot Stavsro",
+      "lat": 59.86532,
+      "lng": 8.68506
+     },
+     {
+      "name": "den vinterstengte vegen mot Stavsro",
+      "lat": 59.8654,
+      "lng": 8.68422
+     },
+     {
       "name": "Svineroisetra",
       "lat": 59.86307,
       "lng": 8.68024,
@@ -2230,7 +2280,8 @@
     "source": "audited (ok)",
     "notes": "",
     "implied_start_m": 911.5,
-    "start_vs_implied_m": 10.0
+    "start_vs_implied_m": 10.0,
+    "corridorNote": "Lagt på vegen for hånd (follow_trails.py fant ingen sammenhengende veg, for fylkesvegen var ikke blant de mindre vegene den henter): Svineroivegen, fv. 3430, OSM way/267086430, /1098199952, /1098199951 og /860332013, fra parkeringen ved Langefonn til der linja går av vegen mot Svineroisetra. Linja skar før gjennom bjørkeskogen 50–75 m vest for vegen. Guiden: «følger du den vinterstengte veien mot Stavsro»."
    },
    {
     "id": "stavsro",

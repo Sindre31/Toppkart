@@ -7350,7 +7350,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
     intro:
       "The most prominent peak in southern Norway, and one of the gentlest to climb on skis: 975 metres of ascent from Langefonn, and not a single step over 25 degrees on the way up.",
     ascent: [
-      "From the car park at Langefonn turisthytte, 922 m, follow the winter-closed road towards Stavsro. After 850 metres you are at Svineroisetra, 1021 m — that is the kilometre the descriptions mean. The birch belt lets go at around 970 m, and from there it is open mountain. The east ridge can also be reached from Stavsro with 706 metres of climbing, but that road is closed in winter.",
+      "From the car park at Langefonn turisthytte, 922 m, follow the winter-closed road towards Stavsro, round the bend east of the car park and up through the birch. After a kilometre you are at Svineroisetra, 1021 m — that is the kilometre the descriptions mean. The birch belt lets go at around 970 m, and from there it is open mountain. The east ridge can also be reached from Stavsro with 706 metres of climbing, but that road is closed in winter.",
       "At the seter you leave the road slightly right, south-west, and head for the lowest point on Himmelranden — the top of Langefonn, 1455 m. Do not go straight up at the cairn from here. The fall line from Svineroisetra direct to the summit holds 35–37 degrees in its top third; the traverse towards Langefonn climbs steadily at 12–16 degrees and never passes 25 degrees, and that is the line this route follows.",
       "From the low point you turn west-north-west and follow the ridge. The climb is steady: the steepest hundred metres of the whole tour lies between 1700 and 1800 m and measures 17.5 degrees, and the steepest single step is 24.8 degrees. Partway along you join the summer path from Stavsro.",
       "At 1831 m you come out onto the summit plateau at Gaustatoppen turisthytte, and from there it is a good five hundred metres north-west over boulder ground to the cairn. The plateau is open and stony and gives you little to steer by; in poor visibility the hut is the handrail you navigate on, going up and coming down.",
@@ -7377,8 +7377,8 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
     elevationProfile: {
       startLabel: "922 m",
       endLabel: "1883 m",
-      distanceLabel: "4.4 km",
-      caption: "922 to 1882 m over 4.43 km. The steepest hundred metres measures 15.8 degrees, and nothing on the line passes 25 degrees.",
+      distanceLabel: "4.7 km",
+      caption: "922 to 1882 m over 4.70 km. The steepest hundred metres measures 15.8 degrees, and nothing on the line passes 25 degrees.",
     },
   },
   heddersfjell: {
