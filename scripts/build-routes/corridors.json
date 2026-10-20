@@ -6838,25 +6838,25 @@
       "note": "Lagt inn for hand i hus-runden: linja gjekk gjennom skulebygget og bustadfeltet ved Kvaløysletta; ho følgjer no dei kartlagde stiane aust for husa."
      },
      {
-      "name": "stien aust for bustadfeltet",
-      "lat": 69.695206,
-      "lng": 18.866959,
-      "elevation_m": 42.0,
-      "note": "Lagt inn for hand i hus-runden: linja gjekk gjennom skulebygget og bustadfeltet ved Kvaløysletta; ho følgjer no dei kartlagde stiane aust for husa."
+      "name": "skråninga nord for bustadfeltet",
+      "lat": 69.69535,
+      "lng": 18.86652,
+      "elevation_m": 43.6,
+      "note": "Lagt inn då kroken nord for bustadfeltet vart glatta ut: linja skrår no jamt frå stien nordover mot ryggen, 18 m frå næraste hus, i staden for å knekke."
      },
      {
-      "name": "stien aust for bustadfeltet",
-      "lat": 69.695665,
-      "lng": 18.864276,
-      "elevation_m": 52.6,
-      "note": "Lagt inn for hand i hus-runden: linja gjekk gjennom skulebygget og bustadfeltet ved Kvaløysletta; ho følgjer no dei kartlagde stiane aust for husa."
+      "name": "skråninga nord for bustadfeltet",
+      "lat": 69.69586,
+      "lng": 18.86418,
+      "elevation_m": 56.6,
+      "note": "Lagt inn då kroken nord for bustadfeltet vart glatta ut: linja skrår no jamt frå stien nordover mot ryggen, 18 m frå næraste hus, i staden for å knekke."
      },
      {
-      "name": "stien aust for bustadfeltet",
-      "lat": 69.695916,
-      "lng": 18.860852,
-      "elevation_m": 83.4,
-      "note": "Lagt inn for hand i hus-runden: linja gjekk gjennom skulebygget og bustadfeltet ved Kvaløysletta; ho følgjer no dei kartlagde stiane aust for husa."
+      "name": "skråninga nord for bustadfeltet",
+      "lat": 69.69646,
+      "lng": 18.86239,
+      "elevation_m": 93.3,
+      "note": "Lagt inn då kroken nord for bustadfeltet vart glatta ut: linja skrår no jamt frå stien nordover mot ryggen, 18 m frå næraste hus, i staden for å knekke."
      },
      {
       "name": "alpinanlegget",
@@ -6866,9 +6866,16 @@
      },
      {
       "name": "Slaktarhaugen",
-      "lat": 69.70248,
-      "lng": 18.8607,
-      "elevation_m": 220.0
+      "lat": 69.70216,
+      "lng": 18.85979,
+      "elevation_m": 216.0
+     },
+     {
+      "name": "lia vest for Slaktarhaugen",
+      "lat": 69.70229,
+      "lng": 18.84757,
+      "elevation_m": 265.97,
+      "note": "Lagt inn då hakka i lia vest for Slaktarhaugen vart glatta ut: linja stig jamt i staden for å knekke 55–83° tre gonger."
      },
      {
       "name": "Finnlandsfjellet",
@@ -6884,7 +6891,8 @@
      }
     ],
     "source": "researched, verified (ok), no local audit",
-    "notes": "Fri Flyts 2.4.1 FRA KVALØYSLETTA, KAST 1. Startsted-linja på turen namngir alle fire startstadene kilden skildrar: «Kvaløysletta / (OPP 1 og OPP 2), Storelva / (OPP 3) og Finnvikdalen (OPP 4). Ulike parkeringer.» Appen hadde Finnvikdalen; dette er OPP 1. Alle tre stadnamna ruta nemner er registerførte og ligg på linja: Slaktarhaugen (Haug, 220 moh), Finnlandsfjellet (Fjell, 494) og Litje-Kjølen (Fjell, 652). Bratteste punkt for heile fjellet er «Under 27 grader»."
+    "notes": "Fri Flyts 2.4.1 FRA KVALØYSLETTA, KAST 1. Startsted-linja på turen namngir alle fire startstadene kilden skildrar: «Kvaløysletta / (OPP 1 og OPP 2), Storelva / (OPP 3) og Finnvikdalen (OPP 4). Ulike parkeringer.» Appen hadde Finnvikdalen; dette er OPP 1. Alle tre stadnamna ruta nemner er registerførte og ligg på linja: Slaktarhaugen (Haug, 220 moh), Finnlandsfjellet (Fjell, 494) og Litje-Kjølen (Fjell, 652). Bratteste punkt for heile fjellet er «Under 27 grader».",
+    "corridorNote": "«Slaktarhaugen» moved onto the line when the 76° turn at Slaktarhaugen was smoothed: the smoothed line passes 50 m beside the researched point instead of turning on it (69.70248/18.8607, 220 m); the waypoint now sits where the line already ran, at DTM1 216 m."
    },
    {
     "id": "slettaelva",

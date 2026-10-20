@@ -7369,6 +7369,26 @@ of them on a moved tour or new (Tortenviktinden's «1170 metres», and the
 Istinden and Sandhornet sentences the check has always listed); and `npm run
 typecheck`, `lint`, `test` and `build`.
 
+## Kjølen from Kvaløysletta, smoothed
+
+Viewed in the app, the house round's Kvaløysletta line had three bends that
+read as mistakes. The first was a hook north of the housing estate, where the
+mapped-path detour met the old line again: two turns of 98° and 60° in
+25 m. The second was a 76° turn on Slaktarhaugen at 220 moh, where the line ran
+straight north and then 400 m due west along one latitude. The third was three
+kinks of 55–83° in the slope west of it. None of them is ground a skier turns
+on.
+
+Each stretch was replaced with a Chaikin curve through five of the line's own
+vertices. The vertices were chosen by search to minimise the largest turn while
+keeping 18 m off every building. The curve is resampled every 12 m and read from
+DTM1. No sample is water, and no new stretch is steeper than the 23.1° step the
+route already had. The largest turn is now 7–9°. The line is 167 m shorter, at
+6828 m and 808 m of climbing, against 6995 m and 809 m. The Slaktarhaugen
+waypoint moved onto the curve, 50 m from where the line used to turn on it, with
+a `corridorNote` saying so. The guide now says the route passes Slaktarhaugen
+rather than goes over it.
+
 ## Network
 
 Everything is public and unauthenticated:
