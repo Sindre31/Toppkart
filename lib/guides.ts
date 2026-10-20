@@ -7145,10 +7145,10 @@ export const GUIDES: Record<string, TourGuide> = {
   englafjell: {
     slug: "englafjell",
     intro:
-      "1237 høydemeter og 8,66 km fra Musland i Uskedalen — et skikkelig vestlandsfjell der turen er større enn tallene: Fri Flyt kaller det vanskelig, med skredutsatt terreng, vanskelig navigering og utglidningsfare som faremoment, og 35 grader på enkleste veien. Selve linja måler snillere — bratteste hundremetersbeltet 21,1 grader mellom 300 og 400 moh, bratteste sammenhengende parti 30,1 — men den gir tilbake 185 høydemeter underveis, bærer skia i deler av skogen, og toppryggen har skavler ut over Limomnen. Grad 3 på kortet er summen.",
+      "1225 høydemeter og 8,73 km fra Musland i Uskedalen — et skikkelig vestlandsfjell der turen er større enn tallene: Fri Flyt kaller det vanskelig, med skredutsatt terreng, vanskelig navigering og utglidningsfare som faremoment, og 35 grader på enkleste veien. Selve linja måler snillere — bratteste hundremetersbeltet 21,1 grader mellom 300 og 400 moh, bratteste sammenhengende parti 30,1 — men den gir tilbake 173 høydemeter underveis, bærer skia i deler av skogen, og toppryggen har skavler ut over Limomnen. Grad 3 på kortet er summen.",
     ascent: [
-      "Kjør til Uskedalen og ta av mot Musland; parker ved første gården — tunet ligger på 148 moh, og vær varsom med traktortrafikken, slik kilden ber om. Traktorveien fortsetter nordvestover, og den merkede stien tar til venstre inn i skogen — veien og stinettet er kartlagt, og første stykket bærer du gjerne skia på godt opptråkket sti.",
-      "Stien krysser dalen — botnen leser 140 til 183 moh — før flanken mot Såta tar til. Det er dalens pris: mesteparten av de 185 høydemeterne du gir fra deg, ligger her og i bulkene på ryggen videre. Skogen slutter på 526 moh etter Kartverkets klasser, og flanken opp mot Såta holder 507 og 625 på vei til knausen på 651.",
+      "Kjør til Uskedalen og ta av mot Musland; parker ved første gården — tunet ligger på 148 moh, og vær varsom med traktortrafikken, slik kilden ber om. Traktorveien fortsetter nordvestover, og den merkede stien tar til venstre inn i skogen — veien og stinettet er kartlagt, og første stykket bærer du gjerne skia på godt opptråkket sti. Fra traktorveien ved gården går linja 330 meter i kraftgata, der kartet ikke har noen sti, og følger så den merkede stien langs kraftgata innover Uskedalen til traktorveien vestover mot Bergsdalselva.",
+      "Stien krysser dalen — botnen leser 140 til 183 moh — før flanken mot Såta tar til. Det er dalens pris: mesteparten av de 173 høydemeterne du gir fra deg, ligger her og i bulkene på ryggen videre. Skogen slutter på 526 moh etter Kartverkets klasser, og flanken opp mot Såta holder 507 og 625 på vei til knausen på 651.",
       "Fra Såta går du sør opp den bratte ryggen, slik kilden sier — og ryggen leverer: 869, 1032, 1126 og 1184 moh i jevn, bratt stigning, med 29,3 grader som bratteste sammenhengende parti på selve ryggen, mellom 765 og 788 moh — turens bratteste, 30,1 grader, ligger lenger nede, i flanken opp fra dalkryssinga mellom 312 og 330 moh. Dette er navigasjonsstrekket i tåke: ryggen er logisk i godt vær og diffus i flatt lys.",
       "Toppen står på 1200 moh. Hele veien langs toppryggen: hold avstand til østkanten — skavlene henger ut over Limomnen, botnen på 889 rett under, og nordøstflanken faller 55,5 grader på det bratteste bare 200–260 m fra varden.",
     ],
@@ -7172,11 +7172,11 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,194 L25,197 L47,198 L66,198 L88,194 L110,195 L138,196 L165,199 L188,199 L210,198 L231,191 L256,172 L272,157 L285,147 L303,131 L324,122 L353,108 L375,109 L397,111 L417,102 L437,87 L456,74 L472,62 L497,46 L519,44 L544,35 L569,25 L597,19 L600,18",
+      path: "M0,194 L25,197 L47,198 L64,198 L92,199 L112,199 L132,198 L149,198 L175,198 L197,199 L219,198 L240,186 L263,169 L278,153 L290,143 L312,127 L334,119 L364,105 L382,111 L405,109 L425,100 L442,85 L460,71 L479,59 L507,42 L526,41 L553,32 L578,23 L600,18",
       startLabel: "148 moh",
       endLabel: "1200 moh",
       distanceLabel: "8,7 km",
-      caption: "1237 høydemeter og 8,66 km fra Musland — over dalen, opp til Såta, og den bratte sørryggen med skavler mot Limomnen.",
+      caption: "1225 høydemeter og 8,73 km fra Musland — over dalen, opp til Såta, og den bratte sørryggen med skavler mot Limomnen.",
     },
   },
   stavsnuten: {

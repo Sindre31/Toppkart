@@ -8529,10 +8529,129 @@
       "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/991068179."
      },
      {
-      "name": "stien inn i skogen",
-      "lat": 59.9035,
-      "lng": 5.925,
-      "elevation_m": 166.0
+      "name": "den merkte stien langs kraftgata",
+      "lat": 59.90175,
+      "lng": 5.93636
+     },
+     {
+      "name": "den merkte stien langs kraftgata",
+      "lat": 59.90165,
+      "lng": 5.93596
+     },
+     {
+      "name": "den merkte stien langs kraftgata",
+      "lat": 59.90188,
+      "lng": 5.93533
+     },
+     {
+      "name": "den merkte stien langs kraftgata",
+      "lat": 59.90272,
+      "lng": 5.93454
+     },
+     {
+      "name": "den merkte stien langs kraftgata",
+      "lat": 59.90304,
+      "lng": 5.93396
+     },
+     {
+      "name": "den merkte stien langs kraftgata",
+      "lat": 59.90339,
+      "lng": 5.93209
+     },
+     {
+      "name": "den merkte stien langs kraftgata",
+      "lat": 59.90374,
+      "lng": 5.93021
+     },
+     {
+      "name": "den merkte stien langs kraftgata",
+      "lat": 59.90408,
+      "lng": 5.92834
+     },
+     {
+      "name": "den merkte stien langs kraftgata",
+      "lat": 59.9042,
+      "lng": 5.92719
+     },
+     {
+      "name": "den merkte stien langs kraftgata",
+      "lat": 59.90456,
+      "lng": 5.92646
+     },
+     {
+      "name": "den merkte stien langs kraftgata",
+      "lat": 59.90479,
+      "lng": 5.92635
+     },
+     {
+      "name": "den merkte stien langs kraftgata",
+      "lat": 59.90528,
+      "lng": 5.92477
+     },
+     {
+      "name": "den merkte stien langs kraftgata",
+      "lat": 59.90528,
+      "lng": 5.92472
+     },
+     {
+      "name": "den merkte stien langs kraftgata",
+      "lat": 59.90556,
+      "lng": 5.92419
+     },
+     {
+      "name": "den merkte stien langs kraftgata",
+      "lat": 59.9057,
+      "lng": 5.92351
+     },
+     {
+      "name": "den merkte stien langs kraftgata",
+      "lat": 59.90613,
+      "lng": 5.92264
+     },
+     {
+      "name": "den merkte stien langs kraftgata",
+      "lat": 59.90609,
+      "lng": 5.92187
+     },
+     {
+      "name": "den merkte stien langs kraftgata",
+      "lat": 59.90654,
+      "lng": 5.92094
+     },
+     {
+      "name": "den merkte stien langs kraftgata",
+      "lat": 59.9068,
+      "lng": 5.92069
+     },
+     {
+      "name": "den merkte stien langs kraftgata",
+      "lat": 59.90711,
+      "lng": 5.91989
+     },
+     {
+      "name": "den merkte stien langs kraftgata",
+      "lat": 59.90716,
+      "lng": 5.91925
+     },
+     {
+      "name": "den merkte stien langs kraftgata",
+      "lat": 59.90745,
+      "lng": 5.91864
+     },
+     {
+      "name": "den merkte stien langs kraftgata",
+      "lat": 59.90742,
+      "lng": 5.91739
+     },
+     {
+      "name": "den merkte stien langs kraftgata",
+      "lat": 59.90773,
+      "lng": 5.9167
+     },
+     {
+      "name": "den merkte stien langs kraftgata",
+      "lat": 59.90775,
+      "lng": 5.91547
      },
      {
       "name": "over dalen",
@@ -8578,7 +8697,8 @@
      }
     ],
     "source": "researched, verified (corrected), no local audit",
-    "notes": "Fri Flyt: vanskeleg, brattaste punkt 35 grader på enklaste vegen, faremoment «skredutsatt terreng, vanskelig navigering og utglidningsfare». Skavlar mot Limomnen på toppryggen. Fyrste stykket ber skia på godt opptrakka sti; frå Hjorteklett ber ein vanlegvis skia òg. Nedkøyringa langs bekken aust for Såta berre ved gode snøtilhøve."
+    "notes": "Fri Flyt: vanskeleg, brattaste punkt 35 grader på enklaste vegen, faremoment «skredutsatt terreng, vanskelig navigering og utglidningsfare». Skavlar mot Limomnen på toppryggen. Fyrste stykket ber skia på godt opptrakka sti; frå Hjorteklett ber ein vanlegvis skia òg. Nedkøyringa langs bekken aust for Såta berre ved gode snøtilhøve.",
+    "corridorNote": "Lagt på stien for hånd (follow_trails.py fant ingen sammenhengende sti): den merkte stien langs kraftgata fra Musland, OSM way/967830738, kraftgata der OSM ikke har noen sti (328 m), og way/1388725321, /1388725322, /1386616906 og /1386613186 inn til traktorvegen i Uskedalen. Erstattet «stien inn i skogen», som holdt linja 100–190 m oppe i lia sør for stien. Fri Flyt: «Fyrste stykket ber skia på godt opptrakka sti»."
    }
   ]
  },

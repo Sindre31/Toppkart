@@ -7208,7 +7208,7 @@ roads (`trails.py`), finds the *detours* — at least 150 m more than 30 m off
 any mapped way, leaving one and coming back to one, mostly within 150 m of
 it — and reads Kartverket's terrain class every 40 m along each.
 
-**46 of the 246 routes were put on the path** where they ran beside it through
+**47 of the 246 routes were put on the path** where they ran beside it through
 forest. What is left, on the shipped lines, is in `follow_trails_run.txt`:
 
 | detours left | | routes |
@@ -7275,6 +7275,22 @@ four more moved: **Heia**, **Torvløysa**, **Tromsdalstinden's summer route** an
 («utenom bygningene»), the path replaces it, and `check_ground`'s building check
 was run over every moved line.
 
+### Englafjell, by hand
+
+Fri Flyt says to carry skis on the well-trodden path from Musland, and the line
+ran 100–190 m up the slope south of it through the birch, on a corridor
+waypoint, «stien inn i skogen», that held it there. The pass could not move it:
+the marked path along the power line, OSM way/967830738, stops 328 m short of
+the next mapped path, way/1388725321, and the gap is the cleared power-line
+corridor itself. So the corridor was placed by hand — the marked path from the
+track at Musland, the clearing where OSM has no path, then ways 1388725321,
+1388725322, 1386616906 and 1386613186 to the tractor road in Uskedalen — and
+«stien inn i skogen» is gone. The line is 67 m longer, the steepest 30 m is
+30.1° as before, and it no longer climbs into the slope and back down: 1225 m
+up and 173 m given back, against 1237 and 185. **The card moved, 1240 →
+1230**, with the teaser, the seed row and the guide, because the line on the
+path is the tour the source describes.
+
 ### What was left in the forest, and why
 
 Fifty-five routes, with the reason on each in `follow_trails_run.txt`. A
@@ -7293,20 +7309,18 @@ route can have more than one.
   Vartavarhaugen, Hattfjellet's tractor road in Bjørndalen, Rondslottet's
   Langglupdalen): the corridor puts the line there for a reason the path does
   not share, and this round does not overrule the research.
-- **«Not connected»** (9): the way the line leaves and the way it rejoins are
-  not joined in OSM, roads included, within 40 m. Englafjell is the one worth
-  knowing: the source says to carry skis on the trodden path from Musland, and
-  the line runs 70–190 m above the track by the railway in Uskedalen — but that
-  track does not reach the tractor road the corridor follows next, which is not
-  in OSM at all. It needs a hand-placed corridor, not this pass.
+- **«Not connected»** (8): the way the line leaves and the way it rejoins are
+  not joined in OSM, roads included, within 40 m. Englafjell was one, and has
+  since been put on the path by hand (below).
   Gaustatoppen's line runs through the forest beside Svineroivegen, a county
   road that is not among the minor roads OSM returned for its box.
 - **The path is steeper, wetter, or will not hold the line** (Sandhornet's
   path from Horsdal runs along the shore at sea level and puts the steepest 30 m
   at 34.5° against 32.5°; Såta's gives back 110 m; Lodalskåpa's, Rundtind's and
   Vatnaknausen's re-solves stayed in the forest).
-- **A remainder** (6): a route that moved, with a shorter forest stretch left
-  that the path does not reach.
+- **A remainder** (7): a route that moved, with a shorter forest stretch left
+  that the path does not reach. On Englafjell it is the power-line clearing
+  where the map has no path.
 
 ### Where the path data came from
 
