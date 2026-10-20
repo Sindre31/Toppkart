@@ -41,7 +41,7 @@ export default async function MineTurerPage() {
 
       <main className="page page-account">
         {/* Samme relieff og slør som heroen på `/om`. Dekor, derfor tom alt. */}
-        <header className={styles.hero}>
+        <header className={`${styles.hero} ${styles.heroSoft}`}>
           <Image
             src="/assets/hero-relief.webp"
             alt=""
