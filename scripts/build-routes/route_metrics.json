@@ -1632,20 +1632,20 @@
   "cumdistM": 4152
  },
  "sandhornet": {
-  "verticalM": 1020,
-  "gainM": 1021,
-  "distanceM": 5009,
+  "verticalM": 1030,
+  "gainM": 1033,
+  "distanceM": 5183,
   "startM": 10,
   "summitM": 993,
   "duration": "4–6 t",
   "steepestBandAngle": 21.3,
   "steepestBandFrom": 900,
   "steepestBandTo": 1000,
-  "maxStepAngle": 32.5,
+  "maxStepAngle": 40.2,
   "grade": 2,
   "aspect": "S",
-  "distanceKm": 5.0,
-  "cumdistM": 5009
+  "distanceKm": 5.2,
+  "cumdistM": 5183
  },
  "tortenviktinden": {
   "verticalM": 1020,
@@ -2913,8 +2913,8 @@
  },
  "sata": {
   "verticalM": 900,
-  "gainM": 895,
-  "distanceM": 6602,
+  "gainM": 905,
+  "distanceM": 6653,
   "startM": 459,
   "summitM": 1260,
   "duration": "4–6 t",
@@ -2924,8 +2924,8 @@
   "maxStepAngle": 32.5,
   "grade": 2,
   "aspect": "SV",
-  "distanceKm": 6.6,
-  "cumdistM": 6603
+  "distanceKm": 6.7,
+  "cumdistM": 6653
  },
  "gullfjellstoppen": {
   "verticalM": 840,

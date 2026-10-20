@@ -37,6 +37,8 @@ oksen_normalruta                         3658 -> 3752     967 -> 968    29.1 -> 
 rondslottet_bjornhollia                 12329 -> 12353   1538 -> 1540   33.7 -> 33.7
 rundfjellet-harstad_nordostryggen        6859 -> 6861     774 -> 779    23.9 -> 23.9
 rundfjellet_normalruta                   4820 -> 4778     841 -> 841    29.1 -> 29.1
+sandhornet_horsdal                       5009 -> 5183    1021 -> 1033   32.5 -> 40.2   (by hand, the stairs; card 1020 -> 1030)
+sata_eikedalen                           6602 -> 6653     895 -> 905    32.5 -> 32.5   (Kråvegen, by hand; card 900 -> 910)
 satertinden_ostryggen                    6052 -> 6125    1113 -> 1116   26.9 -> 26.9
 sebortinden_nordsiden                    3989 -> 4023     894 -> 899    31.7 -> 31.7
 skarasalen_normalruta                    7455 -> 7542    1452 -> 1454   26.2 -> 26.2
@@ -278,14 +280,9 @@ rundtind_vest                          SKOG   3.20 km   649 m  off 117/184 m  Sk
   -> left as it is, by hand: 3.20 km is the research's line over the bogs north-east of Skavbakkan (myrane nordaust for Skavbakkan), and on the road it is 420 m longer; 0.61 and 1.61 km are 160 m stretches 40–60 m off
 saebyggjenuten_normalruta              SKOG   0.09 km   259 m  off  67/ 95 m  Skog 7
   -> left as it is: 0.09 km: the path is 469 m against 259 m of line
-sandhornet_horsdal                     SKOG   1.05 km   324 m  off  80/104 m  Skog 9
-sandhornet_horsdal                     open   1.42 km  1516 m  off 122/236 m  ÅpentOmråde 26, Skog 13
-sandhornet_horsdal                     open   3.43 km  1342 m  off 123/238 m  ÅpentOmråde 34
-  -> left as it is: a point sits at or below sea level; steepest 30 m 32.5° -> 34.5°; gain 1067 m against the card's 1020 m
-sata_eikedalen                         SKOG   0.47 km   279 m  off  50/ 75 m  Skog 6, Elv 2
-sata_eikedalen                         open   1.34 km   229 m  off  54/ 68 m  Elv 4, Myr 2
-sata_eikedalen                         open   2.19 km   159 m  off  47/ 55 m  Myr 2, Skog 2, ÅpentOmråde 1
-  -> left as it is: gives back 110 m of 911 m gained; gain 911 m against the card's 900 m
+sandhornet_horsdal                     open   3.60 km  1342 m  off 123/237 m  ÅpentOmråde 34
+sata_eikedalen                         open   1.38 km   229 m  off  54/ 68 m  Elv 4, Myr 2
+sata_eikedalen                         open   2.23 km   159 m  off  47/ 55 m  Myr 2, Skog 2, ÅpentOmråde 1
 satertinden_ostryggen                  SKOG   2.21 km   750 m  off 107/226 m  Skog 14, Myr 3, ÅpentOmråde 3
   -> left as it is: 2.21 km: research waypoint vest for vatnet is not on this path
 sebortinden_nordsiden                  open   1.15 km   329 m  off  60/ 92 m  Innsjø 6, Skog 2, Myr 1

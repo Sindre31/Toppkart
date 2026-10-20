@@ -7797,7 +7797,7 @@
     "description": "Frå den innarste parkeringsplassen ved Eikedalen skisenter etter setervegen dei fyrste hundre høgdemetrane, flatt inn Skeiskvanndalen, og frå Rosselandsbotnen bratt austover opp i skaret nord for toppen",
     "avoidWater": false,
     "waterNote": "Dalbotnen i Skeiskvanndalen ber to naturlege vatn på 551 moh — ei namnlaus tjørn ved 60.413/5.951 og Skeiskvanndalsvatnet (Tjern i registeret, 60.41617/5.95821) — og Fri Flyt seier ikkje kva side den flate anmarsjen tek. Med same is-argumentet som Gullfjellstoppen (kystnært, lågt, «ikkje den mest snøsikre byen») er lina pinna på den tørre nordvestsida forbi begge, målt punkt for punkt mot terrengklassane. Fyrste løysinga med vannkost las den flate myra som vatn og vov; utan vannkost kryssa lina tjørnene. Pinnene er svaret på begge delar, og check_ground.py er dommaren.",
-    "corridorNote": "Trasé etter Fri Flyt: setervegen/Kråvegen austover frå parkeringa (den kartlagde vegen way/544164315 og stien way/953805984), inn dalen til Skeiskvanndalen (registerpunktet), forbi Rosselandsbotnen på fast mark (sørbredda les Myr, 660,44 moh) og til høgre opp flanken mot skaret til venstre for — altså nord for — sjølve toppen. «Skaret» måler 1224 moh på 60.43300/5.98900, og toppryggen sørover derifrå til varden er slak.",
+    "corridorNote": "Trasé etter Fri Flyt: setervegen/Kråvegen austover frå parkeringa (den kartlagde vegen way/544164315 og stien way/953805984), inn dalen til Skeiskvanndalen (registerpunktet), forbi Rosselandsbotnen på fast mark (sørbredda les Myr, 660,44 moh) og til høgre opp flanken mot skaret til venstre for — altså nord for — sjølve toppen. «Skaret» måler 1224 moh på 60.43300/5.98900, og toppryggen sørover derifrå til varden er slak. follow_trails.py: put on the mapped path where the line ran beside it through forest (279 m from 0.47 km). Hårnålssvingen på Kråvegen lagt nøyaktig på vegen for hånd (way/544164315): omleggingen langs vegen kuttet svingen 30–40 m ut i skråningen og fikk en bratteste 30 m på 33,1 grader ved 485–506 moh der det bare er veg.",
     "trailhead": {
      "name": "Eikedalen",
      "lat": 60.4079,
@@ -7807,10 +7807,44 @@
     },
     "waypoints": [
      {
-      "name": "Kråvegen austover",
+      "name": "Kråvegen austover gjennom svingen",
+      "lat": 60.40806,
+      "lng": 5.92836
+     },
+     {
+      "name": "Kråvegen austover gjennom svingen",
       "lat": 60.40814,
-      "lng": 5.92825,
-      "elevation_m": 484.03
+      "lng": 5.92845
+     },
+     {
+      "name": "Kråvegen austover gjennom svingen",
+      "lat": 60.40803,
+      "lng": 5.92911
+     },
+     {
+      "name": "Kråvegen austover gjennom svingen",
+      "lat": 60.407,
+      "lng": 5.92874
+     },
+     {
+      "name": "Kråvegen austover gjennom svingen",
+      "lat": 60.40709,
+      "lng": 5.92901
+     },
+     {
+      "name": "stien ved 0.47 km",
+      "lat": 60.40776,
+      "lng": 5.92967
+     },
+     {
+      "name": "stien ved 0.47 km",
+      "lat": 60.40738,
+      "lng": 5.93148
+     },
+     {
+      "name": "stien ved 0.47 km",
+      "lat": 60.40738,
+      "lng": 5.93284
      },
      {
       "name": "Kråvegen-enden",
@@ -8957,16 +8991,169 @@
       "elevation_m": 27.9
      },
      {
-      "name": "trappene, flata på 190",
-      "lat": 67.09,
-      "lng": 14.07,
-      "elevation_m": 189.0
+      "name": "den merkede stien opp trappene og inn Stjerndalen",
+      "lat": 67.08833,
+      "lng": 14.06361
      },
      {
-      "name": "Stjerndalen",
-      "lat": 67.0915,
-      "lng": 14.075,
-      "elevation_m": 267.59
+      "name": "den merkede stien opp trappene og inn Stjerndalen",
+      "lat": 67.08833,
+      "lng": 14.0633
+     },
+     {
+      "name": "den merkede stien opp trappene og inn Stjerndalen",
+      "lat": 67.08757,
+      "lng": 14.06509
+     },
+     {
+      "name": "den merkede stien opp trappene og inn Stjerndalen",
+      "lat": 67.08712,
+      "lng": 14.06657
+     },
+     {
+      "name": "den merkede stien opp trappene og inn Stjerndalen",
+      "lat": 67.08693,
+      "lng": 14.06854
+     },
+     {
+      "name": "den merkede stien opp trappene og inn Stjerndalen",
+      "lat": 67.08643,
+      "lng": 14.07061
+     },
+     {
+      "name": "den merkede stien opp trappene og inn Stjerndalen",
+      "lat": 67.08638,
+      "lng": 14.07144
+     },
+     {
+      "name": "den merkede stien opp trappene og inn Stjerndalen",
+      "lat": 67.08693,
+      "lng": 14.07225
+     },
+     {
+      "name": "den merkede stien opp trappene og inn Stjerndalen",
+      "lat": 67.08707,
+      "lng": 14.07288
+     },
+     {
+      "name": "den merkede stien opp trappene og inn Stjerndalen",
+      "lat": 67.08747,
+      "lng": 14.07278
+     },
+     {
+      "name": "den merkede stien opp trappene og inn Stjerndalen",
+      "lat": 67.08758,
+      "lng": 14.07426
+     },
+     {
+      "name": "den merkede stien opp trappene og inn Stjerndalen",
+      "lat": 67.08815,
+      "lng": 14.07553
+     },
+     {
+      "name": "den merkede stien opp trappene og inn Stjerndalen",
+      "lat": 67.08884,
+      "lng": 14.07486
+     },
+     {
+      "name": "den merkede stien opp trappene og inn Stjerndalen",
+      "lat": 67.08916,
+      "lng": 14.07541
+     },
+     {
+      "name": "den merkede stien opp trappene og inn Stjerndalen",
+      "lat": 67.08948,
+      "lng": 14.07536
+     },
+     {
+      "name": "den merkede stien opp trappene og inn Stjerndalen",
+      "lat": 67.08995,
+      "lng": 14.07631
+     },
+     {
+      "name": "den merkede stien opp trappene og inn Stjerndalen",
+      "lat": 67.09041,
+      "lng": 14.07726
+     },
+     {
+      "name": "den merkede stien opp trappene og inn Stjerndalen",
+      "lat": 67.09094,
+      "lng": 14.07738
+     },
+     {
+      "name": "den merkede stien opp trappene og inn Stjerndalen",
+      "lat": 67.09139,
+      "lng": 14.07959
+     },
+     {
+      "name": "den merkede stien opp trappene og inn Stjerndalen",
+      "lat": 67.09199,
+      "lng": 14.08061
+     },
+     {
+      "name": "den merkede stien opp trappene og inn Stjerndalen",
+      "lat": 67.09259,
+      "lng": 14.08163
+     },
+     {
+      "name": "den merkede stien opp trappene og inn Stjerndalen",
+      "lat": 67.0932,
+      "lng": 14.08266
+     },
+     {
+      "name": "den merkede stien opp trappene og inn Stjerndalen",
+      "lat": 67.09352,
+      "lng": 14.08371
+     },
+     {
+      "name": "den merkede stien opp trappene og inn Stjerndalen",
+      "lat": 67.09433,
+      "lng": 14.08417
+     },
+     {
+      "name": "den merkede stien opp trappene og inn Stjerndalen",
+      "lat": 67.09474,
+      "lng": 14.08412
+     },
+     {
+      "name": "den merkede stien opp trappene og inn Stjerndalen",
+      "lat": 67.0955,
+      "lng": 14.08347
+     },
+     {
+      "name": "den merkede stien opp trappene og inn Stjerndalen",
+      "lat": 67.09625,
+      "lng": 14.08283
+     },
+     {
+      "name": "den merkede stien opp trappene og inn Stjerndalen",
+      "lat": 67.09665,
+      "lng": 14.08183
+     },
+     {
+      "name": "den merkede stien opp trappene og inn Stjerndalen",
+      "lat": 67.09734,
+      "lng": 14.08085
+     },
+     {
+      "name": "den merkede stien opp trappene og inn Stjerndalen",
+      "lat": 67.09769,
+      "lng": 14.07953
+     },
+     {
+      "name": "den merkede stien opp trappene og inn Stjerndalen",
+      "lat": 67.09804,
+      "lng": 14.07821
+     },
+     {
+      "name": "den merkede stien opp trappene og inn Stjerndalen",
+      "lat": 67.09801,
+      "lng": 14.07647
+     },
+     {
+      "name": "den merkede stien opp trappene og inn Stjerndalen",
+      "lat": 67.09799,
+      "lng": 14.07473
      },
      {
       "name": "nordover mot 450",
@@ -8988,7 +9175,8 @@
      }
     ],
     "source": "researched, verified (corrected), no local audit",
-    "notes": "Fri Flyt: brattaste punkt 30 grader — heile lina held seg under 30 utanom dei siste 50 høgdemetrane — og faremerknaden er ordrett: turen i Stjerndalen går i utløpssoner for skredflanker, spesielt V- og SV-flankane under Isvasstinden, ver OBS på dagar med markert skredfare og om våren. Ravika-ruta med 40-graderspartiet er ikkje korridoren."
+    "notes": "Fri Flyt: brattaste punkt 30 grader — heile lina held seg under 30 utanom dei siste 50 høgdemetrane — og faremerknaden er ordrett: turen i Stjerndalen går i utløpssoner for skredflanker, spesielt V- og SV-flankane under Isvasstinden, ver OBS på dagar med markert skredfare og om våren. Ravika-ruta med 40-graderspartiet er ikkje korridoren.",
+    "corridorNote": "Lagt på stien for hånd: den merkede stien langs fjæra, opp trappene på østsida av Stjernåga og inn Stjerndalen, OSM way/623592096, fra 0,95 km til 3,07 km. Linja gikk før opp vestsida av Stjernåga, på korridorpunktene «trappene, flata på 190» og «Stjerndalen», 120–240 m fra stien; begge er borte. ut.no og Visit Bodø: stien går på østsida av Stjernåga og stiger lenge i Stjerndalen. Det bratteste 30-metersvinduet, 40,2 grader, er trappene, der kilden sier at du bærer skia."
    },
    {
     "id": "nordostsiden",

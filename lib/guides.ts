@@ -3761,18 +3761,18 @@ export const GUIDES: Record<string, TourGuide> = {
   sandhornet: {
     slug: "sandhornet",
     intro:
-      "1021 høydemeter og 5,01 km fra fjæra på Horsdal — øyfjellet sørvest for Bodø som Fri Flyt kaller en av de vakreste kysttoppene i området. Fjellet står i Gildeskål; kortet bærer Bodø slik Strandtinden bærer Harstad, for det er derfra dagen starter. Linja holder seg under 30 grader så nær som de siste femti høydemeterne — og det bratteste sammenhengende partiet på linja, 32,5 grader, ligger ikke der oppe i det hele tatt — det ligger i trappene mellom 26 og 51 moh, der skia uansett er på sekken — og fareteksten hos kilden gjelder ikke brattheten, men utløpssonene linja krysser i Stjerndalen.",
+      "1033 høydemeter og 5,18 km fra fjæra på Horsdal — øyfjellet sørvest for Bodø som Fri Flyt kaller en av de vakreste kysttoppene i området. Fjellet står i Gildeskål; kortet bærer Bodø slik Strandtinden bærer Harstad, for det er derfra dagen starter. Det bratteste sammenhengende partiet på linja, 40,2 grader, ligger ikke i toppflanken i det hele tatt — det ligger i trappene mellom 108 og 134 moh, der skia uansett er på sekken; over trappene måler intet 30-meterssteg mer enn 24,3 grader — og fareteksten hos kilden gjelder ikke brattheten, men utløpssonene linja krysser i Stjerndalen.",
     ascent: [
-      "Fra gården på Horsdal, 10 moh, følger du den merkede stien langs fjæra sørøstover om lag en kilometer — 28 moh på det høyeste, med sjøen rett ved. Så dreier stien nordøst og stiger bratt via trappene; her bærer du skia. Der trappene ender flater terrenget ut på om lag 190 moh — målt 189 — og skia kan på.",
+      "Fra gården på Horsdal, 10 moh, følger du den merkede stien langs fjæra sørøstover knapt halvannen kilometer til munningen av Stjernåga — 28 moh på det høyeste, med sjøen rett ved. Så dreier stien nordøst, opp østsida av elva, og stiger bratt via trappene; her bærer du skia. Der trappene ender, på 166 moh, flater terrenget ut og skia kan på.",
       "Strekket videre inn Stjerndalen er turens faretekst, og kilden er ordrett: dalen går i utløpssoner for skredflanker, spesielt vest- og sørvestflankene under Isvasstinden — fjellet rett øst, som registeret bekrefter. Vær OBS på dager med markert skredfare og utover våren; flata er ikke faresonefri bare fordi den er flat.",
-      "Fra dalen holder du nordover mot 450 — «øst for Stjernelva hele veien», sier kilden — linja leser 463 — og så vestover i slakt terreng nord for punkt 592: 662 og 752 moh i jevn stigning. Skogen sluttet allerede på 267, så alt dette er åpen fjellside med utsyn over Saltfjorden.",
+      "Fra dalen holder du nordover mot 450 — «øst for Stjernelva hele veien», sier kilden — linja leser 463 — og så vestover i slakt terreng nord for punkt 592: 662 og 752 moh i jevn stigning. Skogen sluttet allerede på 324, så alt dette er åpen fjellside med utsyn over Saltfjorden.",
       "Til slutt nordover opp toppflanken: hundremetersbeltet 900–1000 holder 21,3 grader i snitt og 22,9 som bratteste sammenhengende parti på linja. Kilden skriver «i grenseland til 30 grader de siste 50 høydemeterne», og det er fallinja den leser: sør for varden måler sveipet 32,8 grader i bratteste 60 m-vindu, 70–130 m ut. Varden står på 993 moh, med havet på tre kanter.",
     ],
     descent: [
       "Samme vei ned, med rom for østlige varianter som gir brattere kjøring i toppflanken — samme 30-gradersklassen, sier kilden. Fra flata i Stjerndalen gjelder faresonen igjen: kryss utløpsområdene kjapt og én om gangen på dager med markert fare.",
       "Ravika-ruta på nordøstsida er fullt beskrevet hos Fri Flyt — skogsveien fra den grønne garasjen, myrdragene langs Ravikelva, rampe til toppeggen — men nedfarten dens har et 40-gradersparti mellom 920 og 840 moh og skaret 300 m sørøst for toppen som inngang. Den er varianten, ikke normalveien, og den som velger den, har valgt en annen tur.",
-      "Ned trappene bærer du skia igjen, og stien langs fjæra tar deg hjem til Horsdal — 38 høydemeter å gi tilbake har hele turen, så det meste av dagen er ren stigning og ren kjøring.",
-      "Kilden gir nordøstsida egen adkomstbeskrivelse og egen parkering i Ravika, og sier rett ut at du kan velge å gå opp fra den sida. Det er 1033 høydemeter og 5,41 km: skogsveien sørvest langs vestsida av Ravikelva, myrene ved Hornkroken på 252 moh, punkt 385 og det slakere området sør for punkt 580 — og til slutt det ene snøfeltet som når helt opp på toppeggen. Bratteste steget måler 36,1 grader mellom 806 og 830 moh mot 32,5 på ruta fra Horsdal. Kilden oppgir 40 grader mellom 840 og 920 og legger til stegjern og isøks på hardt føre, innblåst snø i utsteget av rampa og skavler langs toppeggen.",
+      "Ned trappene bærer du skia igjen, og stien langs fjæra tar deg hjem til Horsdal — 50 høydemeter å gi tilbake har hele turen, så det meste av dagen er ren stigning og ren kjøring.",
+      "Kilden gir nordøstsida egen adkomstbeskrivelse og egen parkering i Ravika, og sier rett ut at du kan velge å gå opp fra den sida. Det er 1033 høydemeter og 5,41 km: skogsveien sørvest langs vestsida av Ravikelva, myrene ved Hornkroken på 252 moh, punkt 385 og det slakere området sør for punkt 580 — og til slutt det ene snøfeltet som når helt opp på toppeggen. Bratteste steget måler 36,1 grader mellom 806 og 830 moh mot 40,2 i trappene på ruta fra Horsdal. Kilden oppgir 40 grader mellom 840 og 920 og legger til stegjern og isøks på hardt føre, innblåst snø i utsteget av rampa og skavler langs toppeggen.",
     ],
     avalanche: [
       {
@@ -3781,7 +3781,7 @@ export const GUIDES: Record<string, TourGuide> = {
       },
       {
         title: "Toppflanken og kantene",
-        body: "De siste femti høydemeterne måler 22,9 grader som bratteste sammenhengende parti på linja, og kilden kaller dem «i grenseland til 30 grader»; linjas bratteste, 32,5, ligger nede i trappene. Men Sandhornet er et øyfjell med vegger: vestsida faller 59,0 grader på det bratteste bare 110–170 m fra varden, nordvestsida 59,9 og nordsida 61,8 grader 70–130 m ut. Mot havet er kanten absolutt; i skodde er sør hjemveien — linja peiler 189 grader de første femhundre meterne, og Horsdal ligger 200 grader fra varden.",
+        body: "De siste femti høydemeterne måler 22,9 grader som bratteste sammenhengende parti på linja, og kilden kaller dem «i grenseland til 30 grader»; linjas bratteste, 40,2, ligger nede i trappene. Men Sandhornet er et øyfjell med vegger: vestsida faller 59,0 grader på det bratteste bare 110–170 m fra varden, nordvestsida 59,9 og nordsida 61,8 grader 70–130 m ut. Mot havet er kanten absolutt; i skodde er sør hjemveien — linja peiler 189 grader de første femhundre meterne, og Horsdal ligger 200 grader fra varden.",
       },
       {
         title: "Før du går",
@@ -3789,11 +3789,11 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,199 L28,200 L49,197 L75,195 L98,196 L119,198 L141,198 L162,192 L177,184 L200,170 L222,163 L243,157 L270,152 L292,146 L313,138 L329,128 L351,119 L375,115 L397,108 L413,97 L437,89 L459,80 L483,70 L502,64 L524,59 L540,51 L561,40 L581,29 L600,18",
+      path: "M0,199 L32,199 L63,195 L94,195 L122,198 L147,200 L166,197 L181,185 L196,172 L214,167 L232,156 L249,148 L266,141 L286,131 L305,125 L323,122 L341,119 L359,118 L375,115 L403,107 L427,93 L458,83 L487,70 L512,63 L537,54 L563,40 L589,25 L600,18",
       startLabel: "10 moh",
       endLabel: "993 moh",
-      distanceLabel: "5,0 km",
-      caption: "1021 høydemeter og 5,01 km fra fjæra på Horsdal — trappene til Stjerndalen, slake rygger, og 32,5 grader i de siste femti høydemeterne.",
+      distanceLabel: "5,2 km",
+      caption: "1033 høydemeter og 5,18 km fra fjæra på Horsdal — trappene til Stjerndalen, slake rygger, og 22,9 grader i de siste femti høydemeterne.",
     },
   },
   tortenviktinden: {
@@ -6731,10 +6731,10 @@ export const GUIDES: Record<string, TourGuide> = {
   sata: {
     slug: "sata",
     intro:
-      "895 høydemeter og 6,6 km fra den innerste parkeringa ved Eikedalen skisenter til toppen registeret fører under to navn: Såta og Iendefjell. Turen er to turer i én — en nesten flat anmarsj inn Skeiskvanndalen, der beltet fra 500 til 600 moh måler 1,8 grader i snitt over 3,15 km grunn, og så selve fjellet: fra Rosselandsbotnen østover reiser flanken seg, med det bratteste hundremetersbeltet på 18,4 grader mellom 1100 og 1200 moh og et bratteste sammenhengende parti på 32,5 grader mellom 1139 og 1168 moh, rett under skaret.",
+      "905 høydemeter og 6,65 km fra den innerste parkeringa ved Eikedalen skisenter til toppen registeret fører under to navn: Såta og Iendefjell. Turen er to turer i én — en nesten flat anmarsj inn Skeiskvanndalen, der beltet fra 500 til 600 moh måler 1,8 grader i snitt over 3,27 km grunn, og så selve fjellet: fra Rosselandsbotnen østover reiser flanken seg, med det bratteste hundremetersbeltet på 18,4 grader mellom 1100 og 1200 moh og et bratteste sammenhengende parti på 32,5 grader mellom 1139 og 1168 moh, rett under skaret.",
     ascent: [
       "Fra den innerste parkeringa ved Eikedalen skisenter, 459 moh, på Kråvegen. Fri Flyt sender deg opp en setervei de første hundre høydemetrene, og det er Kråvegen østover og stien videre: linja følger den kartlagte veien og stien til om lag 555 moh, der dalen flater ut.",
-      "Så kommer den lange, flate anmarsjen inn Skeiskvanndalen — 1,8 grader i snitt gjennom beltet fra 500 til 600 moh, over 3,15 km grunn. Skogen slutter på 629 moh etter Kartverkets klasser, med åpent område fra 631, så mesteparten av dalen går i glissen fjellskog og myr. Dalbotnen bærer to naturlige vatn på 551 moh — et navnløst tjern og Skeiskvanndalsvatnet — og linja holder den tørre nordvestsida forbi begge. Det er målt, ikke håpet: 0 meter av linja står på vatn.",
+      "Så kommer den lange, flate anmarsjen inn Skeiskvanndalen — 1,8 grader i snitt gjennom beltet fra 500 til 600 moh, over 3,27 km grunn. Skogen slutter på 629 moh etter Kartverkets klasser, med åpent område fra 631, så mesteparten av dalen går i glissen fjellskog og myr. Dalbotnen bærer to naturlige vatn på 551 moh — et navnløst tjern og Skeiskvanndalsvatnet — og linja holder den tørre nordvestsida forbi begge. Det er målt, ikke håpet: 0 meter av linja står på vatn.",
       "Rosselandsbotnen er vendepunktet. Selve registerpunktet for botnen står på tjernet der — 661 moh, klasse innsjø — og linja passerer sørbredden på fast mark. Her forlater du dalbotnen, tar til høyre slik kilden sier, og begynner den bratte stigningen: beltene ovenfor måler 16,1 grader fra 700 til 800 moh, 17,7 fra 900 til 1000 og 18,4 fra 1100 til 1200, det bratteste på turen.",
       "Sikt mot skaret til venstre for — altså nord for — selve toppen. Det måler 1224 moh, 190 meter nord-nordvest for varden, og det bratteste sammenhengende partiet på hele linja ligger rett under det: 32,5 grader mellom 1139 og 1168 moh. Øverste delen av skaret og toppryggen er ofte avblåst og hard, og Fri Flyt nevner isøks som en fordel — det er den delen av turen som avgjør om dagen er innenfor.",
       "Fra skaret går toppryggen sørover til varden, forbi 1248 moh — beltet fra 1200 til 1300 måler 9,1 grader, så det bratte er gjort når du står i skaret. 1260 moh, og Kvamskogen, Fuglafjellet og fjorden under deg.",
@@ -6742,7 +6742,7 @@ export const GUIDES: Record<string, TourGuide> = {
     descent: [
       "Vanligste nedkjøringa er samme veien: nordover av toppryggen, ned gjennom skaret, og vestflanken ned mot Rosselandsbotnen. Flanken du kjører er den samme du gikk opp — 25,4 grader i snitt fra varden mot vest, med 53,0 grader som bratteste 60 m-vindu 740 til 800 meter ut — så linjevalgene på vei opp er linjevalgene på vei ned.",
       "Fri Flyt beskriver også den sørvestvendte renna mellom Såterindane. Kilden sier du skal fortsette forbi toppvarden for å finne den, og registeret setter Såterindane 837 meter sørvest for varden; det bratte rett under varden — 43,4 grader 110 til 170 meter ut i sørvestsveipet — er skuldra på toppen, ikke inngangen til renna. Kilden er tydelig på avslutningen: ta til høyre før botnen av renna, før Såtedalen, og kjør tilbake mot oppstigningsruta. Vestflanken rett ned fra toppen nevner kilden bare for dager med svært stabilt snødekke.",
-      "Fra Rosselandsbotnen tilbake er det de 3 km flate ut dalen og seterveien ned til parkeringa — 94 høydemeter å gi tilbake har turen samlet, det meste av det i den kuperte dalbotnen.",
+      "Fra Rosselandsbotnen tilbake er det de 3 km flate ut dalen og seterveien ned til parkeringa — 104 høydemeter å gi tilbake har turen samlet, det meste av det i den kuperte dalbotnen.",
     ],
     avalanche: [
       {
@@ -6763,11 +6763,11 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,200 L25,196 L50,190 L74,182 L99,179 L115,179 L144,178 L167,179 L193,178 L217,175 L242,179 L258,176 L287,179 L307,173 L332,170 L351,161 L373,155 L397,152 L415,135 L434,122 L454,112 L470,103 L484,95 L499,84 L516,69 L536,56 L561,38 L577,26 L600,18",
+      path: "M0,200 L29,195 L42,191 L56,186 L82,181 L105,179 L131,179 L160,178 L184,178 L214,177 L240,179 L261,176 L290,179 L313,173 L342,165 L362,157 L391,154 L415,136 L431,125 L455,112 L472,102 L488,93 L506,77 L525,60 L553,43 L573,28 L598,19 L600,18",
       startLabel: "459 moh",
       endLabel: "1260 moh",
-      distanceLabel: "6,6 km",
-      caption: "895 høydemeter og 6,6 km fra Eikedalen, med det bratteste — 32,5 grader mellom 1139 og 1168 moh — rett under skaret nord for toppen.",
+      distanceLabel: "6,7 km",
+      caption: "905 høydemeter og 6,65 km fra Eikedalen, med det bratteste — 32,5 grader mellom 1139 og 1168 moh — rett under skaret nord for toppen.",
     },
   },
   gullfjellstoppen: {
