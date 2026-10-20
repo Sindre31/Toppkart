@@ -3915,7 +3915,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
     avalanche: [
       {
         title: "The route",
-        body: "The steepest sustained section is 25.1 degrees between 159 and 180 m, and the steepest band 16.8 degrees from 500 to 600. The ground under the line is 35 degrees or steeper on one stretch of 16 metres at 717–724 m, at the rock nose. Fri Flyt gives 30 degrees between 300 and 400 m, and between 700 and 770 m “if the SW flank to the right of the rock nose is chosen”, and grades the tour “Easy/Moderate”.",
+        body: "The steepest sustained section is 25.1 degrees between 159 and 180 m, and the steepest band 16.8 degrees from 500 to 600. The ground under the line is 35 degrees or steeper on one stretch of 16 metres at 717–724 m, at the rock nose. Fri Flyt gives 30 degrees as the steepest point, in the hollow between 300 and 400 m that the line goes west of, and between 700 and 770 m “if the SW flank to the right of the rock nose is chosen”, and grades the tour “Easy/Moderate”.",
       },
       {
         title: "The terrain around it",

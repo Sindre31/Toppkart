@@ -3625,7 +3625,7 @@ export const GUIDES: Record<string, TourGuide> = {
     avalanche: [
       {
         title: "Ruta",
-        body: "Bratteste sammenhengende parti er 25,1 grader mellom 159 og 180 moh, og bratteste bandet 16,8 grader fra 500 til 600. Bakken under linja er 35 grader eller brattere i ett strekk på 16 meter ved 717–724 moh, ved klippefremspringet. Fri Flyt oppgir 30 grader mellom 300 og 400 moh, og mellom 700 og 770 moh «hvis SV flanken på høyre side av klippefremspring velges», og graderer turen «Lett/Moderat».",
+        body: "Bratteste sammenhengende parti er 25,1 grader mellom 159 og 180 moh, og bratteste bandet 16,8 grader fra 500 til 600. Bakken under linja er 35 grader eller brattere i ett strekk på 16 meter ved 717–724 moh, ved klippefremspringet. Fri Flyt oppgir 30 grader som bratteste punkt, i søkket mellom 300 og 400 moh som linja går vest for, og mellom 700 og 770 moh «hvis SV flanken på høyre side av klippefremspring velges», og graderer turen «Lett/Moderat».",
       },
       {
         title: "Terrenget utenfor",
