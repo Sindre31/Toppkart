@@ -7443,6 +7443,27 @@ waypoint moved onto the curve, 50 m from where the line used to turn on it, with
 a `corridorNote` saying so. The guide now says the route passes Slaktarhaugen
 rather than goes over it.
 
+## Englafjell from Musland, smoothed
+
+In the app, the Musland line showed three sharp turns that no skier would make:
+- an 85° kink at 2.2 km, at 125 moh;
+- a hairpin of 162° at 7.5 km, at 1040 moh, where the line doubled back on
+  itself;
+- a 63° kink at 8.1 km, at 1125 moh.
+
+Each was replaced the same way as on Kjølen: a Chaikin curve through five of the
+line's own vertices, resampled every 12 m and read from DTM1. None of the new
+samples is water. The new stretches are 6–20° at their steepest, well under the
+route's 30.1°. The largest turn in each is now 2–25°. The line is now 8598 m and
+1219 m of climbing, against 8726 m and 1225 m, and the card says 1220.
+
+Three other places were looked at and left as they are:
+- The climb to Såta (3.1–4.3 km) and the climb up the ridge
+  (6.3–6.9 km) are kick-turn zigzags. `chaikin()` in `router.py` keeps them on
+  purpose. Every smooth curve tried there was 32–33° over 30 m.
+- The spur at 0.7 km follows the marked path along the power line. Cutting it
+  left the path waypoints 49–68 m off the line.
+
 ## Network
 
 Everything is public and unauthenticated:
