@@ -345,10 +345,20 @@ export default function MapView({
     setSelectedRouteId(null);
     /* Deliberately does not touch `mobilePane`. Picking a peak off the map
        should draw its route and leave you looking at it — the facts are one tap
-       away in the bar below, not forced over the thing you just asked to see.
-       From the list there is nothing to do either: that pane is already open,
-       and the detail replaces the list in place. */
+       away in the bar below, not forced over the thing you just asked to see. */
   }, []);
+
+  /** Et trykk i lista. På telefon er det toppen i kartet leseren vil se, ikke
+   *  detaljen over lista: kartet flyr dit og tegner ruta, og fakta og guiden
+   *  ligger i linja nederst. Over bruddpunktet står begge rutene framme, og
+   *  `mobilePane` gjør ingenting. */
+  const pickFromList = useCallback(
+    (slug: string) => {
+      openTour(slug);
+      setMobilePane("map");
+    },
+    [openTour],
+  );
 
   const photo = selected ? photos[selected.slug] : undefined;
   /* Tallene for ruta som er valgt; turens egne når den bare har én. */
@@ -482,7 +492,7 @@ export default function MapView({
                 type="button"
                 key={tour.slug}
                 className={`${s.tour}${selectedSlug === tour.slug ? ` ${s.sel}` : ""}`}
-                onClick={() => openTour(tour.slug)}
+                onClick={() => pickFromList(tour.slug)}
                 onMouseEnter={() => setHoveredSlug(tour.slug)}
                 onFocus={() => setHoveredSlug(tour.slug)}
               >
