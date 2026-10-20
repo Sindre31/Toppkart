@@ -7281,11 +7281,11 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,200 L20,197 L30,196 L45,193 L58,191 L77,189 L90,187 L115,184 L144,178 L173,170 L206,157 L230,149 L253,143 L279,135 L299,127 L318,117 L345,108 L368,97 L391,87 L420,75 L443,64 L466,55 L489,46 L511,34 L522,30 L533,27 L547,23 L576,20 L600,18",
+      path: "M0,200 L18,197 L28,195 L44,193 L58,191 L76,189 L90,187 L119,183 L148,177 L177,167 L206,157 L235,147 L258,141 L278,135 L288,131 L297,127 L308,121 L331,111 L360,100 L382,91 L407,79 L430,69 L454,59 L479,49 L505,37 L518,33 L529,28 L540,24 L564,23 L593,20 L600,18",
       startLabel: "922 moh",
       endLabel: "1883 moh",
       distanceLabel: "4,7 km",
-      caption: "922 til 1882 moh på 4,70 km. Bratteste hundremeteren måler 15,8°, og ingenting på linja passerer 25°.",
+      caption: "922 til 1882 moh på 4,67 km. Bratteste hundremeteren måler 15,8°, og ingenting på linja passerer 25°.",
     },
   },
   heddersfjell: {

@@ -7378,7 +7378,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       startLabel: "922 m",
       endLabel: "1883 m",
       distanceLabel: "4.7 km",
-      caption: "922 to 1882 m over 4.70 km. The steepest hundred metres measures 15.8 degrees, and nothing on the line passes 25 degrees.",
+      caption: "922 to 1882 m over 4.67 km. The steepest hundred metres measures 15.8 degrees, and nothing on the line passes 25 degrees.",
     },
   },
   heddersfjell: {
