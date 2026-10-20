@@ -3089,8 +3089,8 @@
  },
  "englafjell": {
   "verticalM": 1220,
-  "gainM": 1225,
-  "distanceM": 8726,
+  "gainM": 1219,
+  "distanceM": 8598,
   "startM": 148,
   "summitM": 1200,
   "duration": "6–8 t",
@@ -3100,8 +3100,8 @@
   "maxStepAngle": 30.1,
   "grade": 2,
   "aspect": "N",
-  "distanceKm": 8.7,
-  "cumdistM": 8726
+  "distanceKm": 8.6,
+  "cumdistM": 8598
  },
  "stavsnuten": {
   "verticalM": 610,
