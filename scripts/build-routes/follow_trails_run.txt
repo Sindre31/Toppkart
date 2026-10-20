@@ -40,7 +40,7 @@ sebortinden_nordsiden                    3989 -> 4023     894 -> 899    31.7 -> 
 skarasalen_normalruta                    7455 -> 7542    1452 -> 1454   26.2 -> 26.2
 skrott_fitjadalen                        5037 -> 5128    1068 -> 1070   28.2 -> 28.2
 slogen_normalruta                        6526 -> 6384    1536 -> 1536   33.0 -> 33.0
-snonipa_veitebergsdalen                  9283 -> 9390    1673 -> 1679   30.3 -> 30.3
+snonipa_veitebergsdalen                  9283 -> 9390    1673 -> 1670   30.3 -> 30.3   (by hand, the forest road from the start)
 snota_grahaugen                         10221 -> 10222   1268 -> 1268   28.9 -> 28.9
 steindalsnosi_helgedalen                 7856 -> 7912    1174 -> 1178   28.4 -> 28.4
 storlitinden_sorsiden                    2698 -> 2760     446 -> 446    19.8 -> 19.8
@@ -51,6 +51,7 @@ togga_brandhaugane                       2640 -> 2598     780 -> 780    27.5 -> 
 torvloysa_normalruta                    11154 -> 11219   1471 -> 1479   26.9 -> 26.9
 tromsdalstinden_sommerruta               6582 -> 6655    1224 -> 1231   30.2 -> 30.2
 tveitakvitingen_furedalen                8579 -> 8586     996 -> 994    25.0 -> 25.0
+tverrfjellet_sorsiden                    5529 -> 5764     885 -> 888    23.9 -> 23.9   (by hand)
 tylderingen_fretland                     2807 -> 3007     610 -> 611    23.8 -> 23.8
 
 ## Every detour left on the shipped lines
@@ -224,7 +225,7 @@ ospetinden_ostflanken                  SKOG   3.89 km   437 m  off 107/168 m  Sk
   -> left as it is: 0.18 km: the path is 1526 m against 369 m of line; 0.62 km: the path is 1829 m against 459 m of line; 2.11 km: research waypoint myra og Stavvasselva is not on this path; 3.89 km: the path is 2810 m against 437 m of line
 pilan_normalruta                       SKOG   0.10 km   509 m  off  73/165 m  Skog 8, ÅpentOmråde 3, DyrketMark 2
 pilan_normalruta                       open   0.79 km   474 m  off  53/101 m  ÅpentOmråde 8, Skog 5
-  -> left as it is: 0.10 km: the path it leaves and the one it rejoins are not connected
+  -> left as it is, by hand: 0.10 km: fields and bog on the map, not forest; the track up Morfjorddalen starts 500 m west, along the E10
 prestholtskarvet_havsdalen             SKOG   0.37 km   189 m  off  44/ 69 m  Skog 3, ÅpentOmråde 2
 prestholtskarvet_havsdalen             open   6.06 km   279 m  off  58/ 82 m  ÅpentOmråde 7, Myr 1
 prestholtskarvet_havsdalen             open   7.28 km   509 m  off 104/194 m  Myr 7, ÅpentOmråde 6
@@ -242,7 +243,7 @@ rensfjellet_haaen                      open  10.01 km  1179 m  off 105/177 m  Å
 rodtinden_storelva                     SKOG   0.51 km   279 m  off  94/125 m  Myr 4, Skog 4
   -> left as it is: 0.51 km: the path is 469 m against 279 m of line
 rombakstotta_normalruta                SKOG   0.12 km   487 m  off 128/162 m  Skog 13
-  -> left as it is: 0.12 km: the path it leaves and the one it rejoins are not connected
+  -> left as it is, by hand: 0.12 km: the source goes into the forest a hundred metres past the old quarry, and no mapped way leads from the quarry to the water-works road
 rondslottet_bjornhollia                SKOG   4.62 km   728 m  off  67/172 m  Skog 18, ÅpentOmråde 1
 rondslottet_bjornhollia                open   5.48 km   879 m  off  64/ 95 m  ÅpentOmråde 23
 rondslottet_bjornhollia                open   6.47 km   499 m  off  54/ 72 m  ÅpentOmråde 13
@@ -268,7 +269,7 @@ rornestinden_normalruta                SKOG   0.68 km   258 m  off  91/151 m  Sk
 rornestinden_normalruta                SKOG   1.16 km   359 m  off  74/153 m  Skog 7, ÅpentOmråde 3
 rornestinden_normalruta                open   2.66 km   245 m  off  59/ 92 m  ÅpentOmråde 7
 rornestinden_normalruta                open   5.00 km   413 m  off 137/173 m  ÅpentOmråde 11
-  -> left as it is: 0.68 km: the path is 1705 m against 258 m of line; 1.16 km: the path it leaves and the one it rejoins are not connected
+  -> left as it is: 0.68 km: the path is 1705 m against 258 m of line; 1.16 km, by hand: the path from Hyttebakken starts 300 m east of Hyttehaugen, where the research leaves the forest road; on it the stretch is about 700 m against 314 m of line
 rundfjellet_kudalsheia                 open   2.09 km   513 m  off 138/223 m  ÅpentOmråde 14
 rundtind_vest                          SKOG   0.61 km   159 m  off  61/ 81 m  Skog 5
 rundtind_vest                          SKOG   1.61 km   169 m  off  43/ 59 m  Skog 3, Myr 2
@@ -311,10 +312,7 @@ snohetta_normalruta                    open   3.70 km   324 m  off  87/154 m  Å
 snohetta_normalruta                    open   4.68 km   156 m  off  48/ 73 m  ÅpentOmråde 5
 snonipa_normalruta                     SKOG   0.12 km   225 m  off  72/113 m  Skog 6
 snonipa_normalruta                     open   0.66 km  1344 m  off 118/169 m  ÅpentOmråde 20, Skog 14
-  -> left as it is: 0.12 km: the path it leaves and the one it rejoins are not connected
-snonipa_veitebergsdalen                open   0.04 km   249 m  off  80/127 m  DyrketMark 5, Skog 1, ? 1
-snonipa_veitebergsdalen                SKOG   0.49 km   169 m  off  56/ 83 m  Skog 3, DyrketMark 2
-  -> left as it is: 0.49 km: the path it leaves and the one it rejoins are not connected
+  -> left as it is, by hand: 0.12 km: the track comes up from Åmot on the far side of the Driva; the line crosses at Høyseth and meets it 300 m up the slope
 snota_grahaugen                        open   1.66 km  1319 m  off  91/123 m  ÅpentOmråde 29, Myr 5
 snota_grahaugen                        open   4.38 km   499 m  off 112/181 m  ÅpentOmråde 13
 snota_grahaugen                        open   8.23 km   467 m  off 114/178 m  ÅpentOmråde 10, SnøIsbre 2
@@ -364,7 +362,7 @@ synshorn_normalruta                    open   0.06 km   596 m  off 115/204 m  Å
 synshorn_normalruta                    open   0.92 km   338 m  off 103/162 m  ÅpentOmråde 9
 taraldsviktinden_nordryggen            open   0.18 km   259 m  off  74/105 m  DyrketMark 3, ÅpentOmråde 3, Skog 1
 taraldsviktinden_nordryggen            SKOG   0.62 km   439 m  off  86/173 m  Skog 12
-  -> left as it is: 0.62 km: the path it leaves and the one it rejoins are not connected
+  -> left as it is, by hand: 0.62 km: no mapped way leads from Nyhoen to the crossing of Gårdselva; the tractor road east of the river is reached from Haugbakken, a kilometre along the E10 from the car park
 togga_brandhaugane                     SKOG   0.32 km   179 m  off  48/ 81 m  Skog 5
 togga_brandhaugane                     open   2.30 km   219 m  off  84/119 m  ÅpentOmråde 6
   -> left as it is: 0.32 km: the path is 449 m against 179 m of line
@@ -375,8 +373,8 @@ trolltinden_ryggruta                   open   0.34 km   209 m  off  70/102 m  Dy
 tveitakvitingen_furedalen              open   5.86 km   268 m  off  80/127 m  ÅpentOmråde 7
 tveitakvitingen_furedalen              open   7.28 km   529 m  off  83/114 m  ÅpentOmråde 12, ? 2
 tveitakvitingen_furedalen              open   7.85 km   389 m  off  70/ 87 m  ÅpentOmråde 9, ? 1
-tverrfjellet_sorsiden                  SKOG   0.32 km   449 m  off 137/198 m  Skog 10, Myr 2
-  -> left as it is: 0.32 km: the path it leaves and the one it rejoins are not connected
+tverrfjellet_sorsiden                  SKOG   0.27 km   159 m  off  78/118 m  Skog 3, ÅpentOmråde 2
+  -> left as it is: on the road: this is fv. 7784, put on by hand; the pass fetches only the minor roads
 tylderingen_fretland                   open   0.96 km   306 m  off  78/133 m  ÅpentOmråde 5, Skog 3
 tylderingen_fretland                   open   1.57 km   539 m  off  86/118 m  ÅpentOmråde 7, Myr 5, Skog 2
 tylderingen_fretland                   open   2.45 km   209 m  off  37/ 51 m  ÅpentOmråde 6

@@ -4525,25 +4525,64 @@
     },
     "waypoints": [
      {
-      "name": "utenom bygningene",
-      "lat": 61.61988,
-      "lng": 6.64423,
-      "elevation_m": 286.0,
-      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/1000238379, way/1000240982."
+      "name": "skogsvegen opp Veitebergsdalen",
+      "lat": 61.61971,
+      "lng": 6.65081
      },
      {
-      "name": "utenom bygningene",
-      "lat": 61.62003,
-      "lng": 6.64357,
-      "elevation_m": 287.0,
-      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/1000238379, way/1000240982."
-     },
-     {
-      "name": "utenom bygningene",
+      "name": "skogsvegen opp Veitebergsdalen",
       "lat": 61.62026,
-      "lng": 6.6431,
-      "elevation_m": 295.0,
-      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/1000238379, way/1000240982."
+      "lng": 6.64966
+     },
+     {
+      "name": "skogsvegen opp Veitebergsdalen",
+      "lat": 61.62081,
+      "lng": 6.64851
+     },
+     {
+      "name": "skogsvegen opp Veitebergsdalen",
+      "lat": 61.62119,
+      "lng": 6.64664
+     },
+     {
+      "name": "skogsvegen opp Veitebergsdalen",
+      "lat": 61.62158,
+      "lng": 6.64478
+     },
+     {
+      "name": "skogsvegen opp Veitebergsdalen",
+      "lat": 61.62165,
+      "lng": 6.64354
+     },
+     {
+      "name": "skogsvegen opp Veitebergsdalen",
+      "lat": 61.62172,
+      "lng": 6.6423
+     },
+     {
+      "name": "skogsvegen opp Veitebergsdalen",
+      "lat": 61.62193,
+      "lng": 6.64101
+     },
+     {
+      "name": "skogsvegen opp Veitebergsdalen",
+      "lat": 61.62212,
+      "lng": 6.64005
+     },
+     {
+      "name": "skogsvegen opp Veitebergsdalen",
+      "lat": 61.62246,
+      "lng": 6.63937
+     },
+     {
+      "name": "skogsvegen opp Veitebergsdalen",
+      "lat": 61.62254,
+      "lng": 6.63815
+     },
+     {
+      "name": "skogsvegen opp Veitebergsdalen",
+      "lat": 61.62287,
+      "lng": 6.63746
      },
      {
       "name": "skogsvegen ved 405",
@@ -4669,7 +4708,7 @@
     ],
     "source": "researched, verified (corrected), no local audit",
     "notes": "Fri Flyt, «Turbeskrivelse Snønipa», rute 4.8.2 OPP VIA VEITEBERGSDALEN (UTFORDRANDE, E2, V): «Du følgjer skogsvegen opp Veitebergsdalen til endes. Her skrår du deg opp skogen, og siktar deg inn mot den markerte moreneryggen kalla Sollirinden som går opp mot Sollibotnen. Det tryggaste rutevalet er å gå opp morene-ryggen. I Sollibotnen svingar du nordaust mot brevatnet og fortset opp første del av brefallet. Du dreiar gradvis nordover i det flate partiet, og kryssar deg opp det bratte brefallet til du kjem opp på breplatået. Du går vidare flatt innover breen og passerer aust for høgda 1687 moh. og vindgryta rundt denne, som lokalt blir kalla Djevelens dansesal. Hald fram nordover til toppen.» Tilkomsten er eit eige startsted i same boka: «Om du vil gå turen opp via Veitebergsdalen startar du turen på Veiteberg. Nokre hundre meter etter at du har passert brua over Veitebergselva, kjem du til ein skogsveg som går opp i Veitebergsdalen. Her er det mogleg å finne parkering.» Kjelda fører 1540 høgdemeter, starthøgde 290 moh, 5–10 timar, sesong februar–mai, himmelretning sør og vest, brattaste punkt 30–35 grader (700–860 moh) med eit kort parti på 35–40 grader øvst på moreneryggen og 30–34 grader (1260–1500 moh), utstyr breutstyr. Appens normalrute går opp Haugadalen og Haugabreen frå Høyseth i Stardalen, på den andre sida av fjellet. Brevatnet på 1103 moh ligg i linja si retning — kjelda sanksjonerer ikkje ei kryssing, så korridoren har eit vegpunkt aust for vatnet og går utanom det. Fyrste løysinga gjekk 541 m over brevatnet, opptil 119 m frå den kartlagde stranda: eit einskilt vegpunkt aust for vatnet held ikkje, for Dijkstra skjer hjørnet på den 1,4 km lange etappen frå Sollibotnen. Tre punkt langs sør- og austbreidda (1117, 1147 og 1188 moh) legg linja rundt vatnet på land; eit fjerde på 1110 midt på austbreidda vart teke ut att, fordi det kosta 37 høgdemeter tilbake utan å flytte linja.",
-    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (219 m from 1.01 km, 509 m from 1.31 km)."
+    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (219 m from 1.01 km, 509 m from 1.31 km). Lagt på skogsvegen for hånd (follow_trails.py fant ingen sammenhengende veg, for Stardalen er ikke blant de mindre vegene den henter): skogsvegen opp Veitebergsdalen, OSM way/183125876, fra parkeringen der den tar av fra Stardalen. Linja gikk før 300 m langs fylkesvegen, mellom husene på Veiteberg og rett opp gjennom skogen til vegen; de tre «utenom bygningene»-punktene på Veiteberg er borte."
    }
   ]
  },
@@ -12216,10 +12255,69 @@
     },
     "waypoints": [
      {
-      "name": "traktorveien",
-      "lat": 68.666,
-      "lng": 16.095,
-      "elevation_m": 23.0
+      "name": "traktorveien på nordsida av Melåelva",
+      "lat": 68.66416,
+      "lng": 16.08168
+     },
+     {
+      "name": "traktorveien på nordsida av Melåelva",
+      "lat": 68.66492,
+      "lng": 16.08216
+     },
+     {
+      "name": "traktorveien på nordsida av Melåelva",
+      "lat": 68.66568,
+      "lng": 16.08264
+     },
+     {
+      "name": "traktorveien på nordsida av Melåelva",
+      "lat": 68.66646,
+      "lng": 16.08255
+     },
+     {
+      "name": "traktorveien på nordsida av Melåelva",
+      "lat": 68.66701,
+      "lng": 16.08291
+     },
+     {
+      "name": "traktorveien på nordsida av Melåelva",
+      "lat": 68.66756,
+      "lng": 16.08327
+     },
+     {
+      "name": "traktorveien på nordsida av Melåelva",
+      "lat": 68.66764,
+      "lng": 16.08574
+     },
+     {
+      "name": "traktorveien på nordsida av Melåelva",
+      "lat": 68.66771,
+      "lng": 16.0882
+     },
+     {
+      "name": "traktorveien på nordsida av Melåelva",
+      "lat": 68.66778,
+      "lng": 16.09067
+     },
+     {
+      "name": "traktorveien på nordsida av Melåelva",
+      "lat": 68.66744,
+      "lng": 16.09252
+     },
+     {
+      "name": "traktorveien på nordsida av Melåelva",
+      "lat": 68.66729,
+      "lng": 16.09501
+     },
+     {
+      "name": "traktorveien på nordsida av Melåelva",
+      "lat": 68.66732,
+      "lng": 16.09683
+     },
+     {
+      "name": "traktorveien på nordsida av Melåelva",
+      "lat": 68.6676,
+      "lng": 16.0977
      },
      {
       "name": "kraftlinja på myrene",
@@ -12247,7 +12345,8 @@
      }
     ],
     "source": "researched, verified (ok), no local audit",
-    "notes": "Fri Flyt: KAST 1 – Enkelt. Sørvendt og oversiktlig; hold den slake linja over det åpne området — terrenget øst for Tverrelvfoten er brattere. Lang tur for graden: nesten 900 høydemeter fra fjorden."
+    "notes": "Fri Flyt: KAST 1 – Enkelt. Sørvendt og oversiktlig; hold den slake linja over det åpne området — terrenget øst for Tverrelvfoten er brattere. Lang tur for graden: nesten 900 høydemeter fra fjorden.",
+    "corridorNote": "Lagt på vegen for hånd (follow_trails.py fant ingen sammenhengende veg, for fv. 7784 er ikke blant de mindre vegene den henter): Austerfjordveien nordover fra Melåa, OSM way/621238984, /621239270, /621239269, /621239268 og /195186920, og traktorveien på nordsida av Melåelva, way/621239039. Linja krysset før Melåelva gjennom skogen sør for elva, og korridorpunktet «traktorveien» lå ved elva, ikke på veien. Kilden: «traktorveien på nordsida av Melåelva»."
    }
   ]
  },

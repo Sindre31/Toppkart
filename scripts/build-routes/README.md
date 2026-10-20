@@ -7208,13 +7208,13 @@ roads (`trails.py`), finds the *detours* — at least 150 m more than 30 m off
 any mapped way, leaving one and coming back to one, mostly within 150 m of
 it — and reads Kartverket's terrain class every 40 m along each.
 
-**48 of the 246 routes were put on the path** where they ran beside it through
+**49 of the 246 routes were put on the path** where they ran beside it through
 forest. What is left, on the shipped lines, is in `follow_trails_run.txt`:
 
 | detours left | | routes |
 | --- | --- | --- |
 | on open ground — skiable either side, left as they are | 220 (102 km) | |
-| mostly `Skog`, each with the reason it stays | 72 | 54 |
+| mostly `Skog`, each with the reason it stays | 71 | 53 |
 
 ### How a forest detour is moved
 
@@ -7304,9 +7304,38 @@ waypoints. It is 270 m longer — Svineroisetra is now a kilometre in, not 850 m
 which is the kilometre the descriptions talk about — and the gain (975 m), the
 steepest 30 m (24.8°) and the card are as they were.
 
+### The rest of «not connected», by hand
+
+The other seven were drawn over the topo map with every OSM way around them,
+roads of every class included. Two were moved:
+
+- **Tverrfjellet** crossed Melåelva through the forest south of the river, on a
+  corridor waypoint, «traktorveien», that sat on the river and not on any road.
+  The source says «traktorveien på nordsida av Melåelva». The line now goes
+  north along fv. 7784, over the bridge, and onto that tractor road (way/621239039)
+  to where it already ran on it: 235 m longer, 888 m up against 885, the steepest
+  30 m as it was, the card (880) as it was. The guide's 23 moh «der linja står i
+  den» is gone with the old line; the 0–100 band now measures 3.9° and the forest
+  ends at 3.47 km.
+- **Snønipa from Veitebergsdalen** walked 300 m along the county road, between
+  the farm buildings at Veiteberg and straight up through the forest to the forest
+  road. It now takes the forest road (way/183125876) from where it leaves Stardalen
+  at the start: the same 9390 m, 1670 m up against 1679, and the three
+  «utenom bygningene» waypoints at Veiteberg are gone.
+
+Five stay, each with the reason in `follow_trails_run.txt`: Pilan crosses fields
+and bog, open on the map, and the track up Morfjorddalen starts 500 m west along
+the E10; Rombakstotta follows the source into the forest past the quarry, and no
+way leads from there to the water-works road; Rørnestinden's path from Hyttebakken
+starts 300 m east of Hyttehaugen and would make 314 m of line about 700; Snønipa
+from Stardalen meets its track 300 m up the slope after crossing the Driva, and
+the track itself comes from Åmot on the other side; Taraldsviktinden has no way
+from Nyhoen to Gårdselva, and the tractor road east of the river is a kilometre
+along the E10 away.
+
 ### What was left in the forest, and why
 
-Fifty-four routes, with the reason on each in `follow_trails_run.txt`. A
+Fifty-three routes, with the reason on each in `follow_trails_run.txt`. A
 route can have more than one.
 
 - **The path goes somewhere else** (29 routes — Gygrastølen, Vesoldo, Sula,
@@ -7322,9 +7351,9 @@ route can have more than one.
   Vartavarhaugen, Hattfjellet's tractor road in Bjørndalen, Rondslottet's
   Langglupdalen): the corridor puts the line there for a reason the path does
   not share, and this round does not overrule the research.
-- **«Not connected»** (7): the way the line leaves and the way it rejoins are
-  not joined in OSM, roads included, within 40 m. Englafjell and Gaustatoppen were
-  two, and have since been put on the path and the road by hand (below).
+- **«Not connected», then looked at by hand** (5): the way the line leaves and
+  the way it rejoins are not joined in OSM, roads included, within 40 m. All nine
+  were looked at by hand; four were moved and these five stay (below).
 - **The path is steeper, wetter, or will not hold the line** (Sandhornet's
   path from Horsdal runs along the shore at sea level and puts the steepest 30 m
   at 34.5° against 32.5°; Såta's gives back 110 m; Lodalskåpa's, Rundtind's and

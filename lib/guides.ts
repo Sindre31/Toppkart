@@ -2075,10 +2075,10 @@ export const GUIDES: Record<string, TourGuide> = {
   tverrfjellet: {
     slug: "tverrfjellet",
     intro:
-      "885 høydemeter og 5,53 km fra fjorden ved Melåa til et fjell registeret ikke har navn på: Tverrfjellet er kildens og nabolagets navn — Tverrfjellelva drenerer det og Tverrelvfoten står under det — og toppen leser 888,9 mot bokas 899. Ingen hundremeter måler mer enn 14,0 grader, det bratteste enkeltpartiet er 23,9, og linja gir tilbake åtte meter på hele turen. KAST 1, sørvendt — enkel men morsom skikjøring, akkurat som kilden sier.",
+      "888 høydemeter og 5,76 km fra fjorden ved Melåa til et fjell registeret ikke har navn på: Tverrfjellet er kildens og nabolagets navn — Tverrfjellelva drenerer det og Tverrelvfoten står under det — og toppen leser 888,9 mot bokas 899. Ingen hundremeter måler mer enn 14,0 grader, det bratteste enkeltpartiet er 23,9, og linja gir tilbake åtte meter på hele turen. KAST 1, sørvendt — enkel men morsom skikjøring, akkurat som kilden sier.",
     ascent: [
-      "Fra lommene langs Austerfjordveien ved Melåa — 12 moh; kildens F104 heter i dag fv. 7784 — følger du traktorveien på nordsida av Melåelva: 23 moh der linja står i den, og kraftlinja krysses på myrene på 171. Beltet fra 0 til 100 måler 4,7 grader over den første drøye kilometeren.",
-      "Skogen slutter først på 419 moh etter 3,24 km — rundens høyeste skoggrense — og Tverrelvfoten, åsen på 577, passeres på vestsida slik kilden sier. Beltet fra 200 til 300 er turens bratteste med 14,0 grader; det bratteste enkeltpartiet, 23,9 mellom 242 og 262 moh, ligger i skogslia.",
+      "Fra lommene langs Austerfjordveien ved Melåa — 12 moh; kildens F104 heter i dag fv. 7784 — går du nordover langs fylkesvegen, over Melåelva, og tar traktorveien på nordsida av elva der den går inn fra vegen. Kraftlinja krysses på myrene på 171. Beltet fra 0 til 100 måler 3,9 grader over den første drøye kilometeren.",
+      "Skogen slutter først på 419 moh etter 3,47 km — rundens høyeste skoggrense — og Tverrelvfoten, åsen på 577, passeres på vestsida slik kilden sier. Beltet fra 200 til 300 er turens bratteste med 14,0 grader; det bratteste enkeltpartiet, 23,9 mellom 242 og 262 moh, ligger i skogslia.",
       "Så åpner det flotte området seg rett opp mot toppen: 650 og 766 moh der linja er festet, og varden på 889. Nordover faller fjellet 49,7 grader mot skaret som skiller det fra 921-kulen — det er et annet fjell, og grensen mellom dem er grunnen til at høyden i boka og høyden på skjermen ikke er samme tall.",
     ],
     descent: [
@@ -2100,11 +2100,11 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,199 L23,200 L44,199 L68,197 L88,191 L112,184 L132,178 L151,178 L171,170 L190,166 L210,155 L229,145 L254,135 L274,131 L303,124 L332,118 L361,113 L386,104 L405,94 L425,83 L448,75 L469,68 L488,63 L508,53 L532,46 L553,38 L571,27 L600,18",
+      path: "M0,198 L16,200 L31,200 L39,200 L52,199 L66,197 L80,193 L89,192 L99,191 L109,191 L127,186 L146,179 L169,177 L193,169 L212,163 L233,148 L259,138 L287,130 L315,123 L348,116 L380,109 L404,97 L425,88 L451,76 L474,68 L495,61 L521,50 L548,41 L568,29 L596,18 L600,18",
       startLabel: "12 moh",
       endLabel: "889 moh",
-      distanceLabel: "5,5 km",
-      caption: "885 høydemeter og 5,53 km fra Melåa langs traktorveien, over myrene ved kraftlinja og vest for Tverrelvfoten — skoggrensa på 419 moh, og det bratteste, 23,9 grader mellom 242 og 262 moh, i skogslia.",
+      distanceLabel: "5,8 km",
+      caption: "888 høydemeter og 5,76 km fra Melåa langs traktorveien, over myrene ved kraftlinja og vest for Tverrelvfoten — skoggrensa på 419 moh, og det bratteste, 23,9 grader mellom 242 og 262 moh, i skogslia.",
     },
   },
   spanstinden: {
@@ -5301,7 +5301,7 @@ export const GUIDES: Record<string, TourGuide> = {
       "Ned samme veien: over platået, ned brefallet og ut Haugadalen. Fallretningen er sørøst.",
       "Vanligste feil: å velge Veitebergsdalen ned fordi den ser kortere ut på kartet. Det er en annen rute fra en annen dal — den finner du som egen linje på dette kortet — og den ender ikke der bilen står.",
       "Den andre er timingen på det flate partiet nederst: det er der naturlig utløste skred kommer når sola har stått på, og det er den delen av turen du går sist.",
-      "Veitebergsdalen er nå en egen rute på kartet, ikke bare en nedkjøringsvariant. Fri Flyts 4.8.2 starter på Veiteberg, ved skogsveien som går opp i dalen — 290 moh, akkurat det boka fører som starthøyde — og går veien til endes på 521, skrått opp skogen mot moreneryggen Sollirinden, opp ryggen til Sollibotnen på 894, rundt brevatnet og opp brefallet, og flatt innover breen øst for høyden 1687 til topps. 1679 høydemeter på 9,39 km mot 1501 på 8,53 km fra Stardalen: den lengste og største av de to. Skogen slipper på 781 moh etter 3,29 km. Bratteste hundremetersbeltet er 20,3 grader fra 600 til 700 moh. Det bratteste 30-metersvinduet, 30,3 grader, går nedover — fra 1139 til 1113, der linja faller mot utløpet av brevatnet på 1103 og må opp igjen; det er også mesteparten av de 142 høydemetrene ruta gir tilbake. Kilden sanksjonerer ingen kryssing av vatnet, så linja runder det på østsida, på land.",
+      "Veitebergsdalen er nå en egen rute på kartet, ikke bare en nedkjøringsvariant. Fri Flyts 4.8.2 starter på Veiteberg, ved skogsveien som går opp i dalen — 290 moh, akkurat det boka fører som starthøyde — og går veien til endes på 521, skrått opp skogen mot moreneryggen Sollirinden, opp ryggen til Sollibotnen på 894, rundt brevatnet og opp brefallet, og flatt innover breen øst for høyden 1687 til topps. 1670 høydemeter på 9,39 km mot 1501 på 8,53 km fra Stardalen: den lengste og største av de to. Skogen slipper på 781 moh etter 3,29 km. Bratteste hundremetersbeltet er 20,3 grader fra 600 til 700 moh. Det bratteste 30-metersvinduet, 30,3 grader, går nedover — fra 1139 til 1113, der linja faller mot utløpet av brevatnet på 1103 og må opp igjen; det er også mesteparten av de 133 høydemetrene ruta gir tilbake. Kilden sanksjonerer ingen kryssing av vatnet, så linja runder det på østsida, på land.",
     ],
     avalanche: [
       {
