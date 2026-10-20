@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 
 import { SiteFooter, SiteNav } from "@/components/SiteChrome";
+import styles from "@/components/landing/landing.module.css";
 import { MyTours, type MyTourInfo } from "@/components/marks/MyTours";
 import { getLang } from "@/lib/i18n/server";
 import { localizeTours } from "@/lib/i18n/content";
@@ -38,13 +40,25 @@ export default async function MineTurerPage() {
       <SiteNav lang={lang} current="/mine-turer" />
 
       <main className="page page-account">
-        <header style={{ padding: "48px 0 32px" }}>
-          <h1 className="display" style={{ fontSize: "clamp(56px, 6.5vw, 84px)" }}>
-            {t.heading}
-          </h1>
-          <p className="lede" style={{ margin: "14px 0 0" }}>
-            {t.storedLocally}
-          </p>
+        {/* Samme relieff og slør som heroen på `/om`. Dekor, derfor tom alt. */}
+        <header className={styles.hero}>
+          <Image
+            src="/assets/hero-relief.webp"
+            alt=""
+            aria-hidden
+            fill
+            priority
+            sizes="(max-width: 920px) 100vw, 920px"
+            className={styles.heroImage}
+          />
+          <div className={styles.heroContent}>
+            <h1 className="display" style={{ fontSize: "clamp(56px, 6.5vw, 84px)" }}>
+              {t.heading}
+            </h1>
+            <p className="lede" style={{ margin: "14px 0 0" }}>
+              {t.storedLocally}
+            </p>
+          </div>
         </header>
 
         <MyTours tours={tours} lang={lang} />
