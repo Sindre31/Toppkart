@@ -896,9 +896,9 @@
   "cumdistM": 3898
  },
  "tverrfjellet": {
-  "verticalM": 880,
-  "gainM": 885,
-  "distanceM": 5529,
+  "verticalM": 890,
+  "gainM": 888,
+  "distanceM": 5764,
   "startM": 12,
   "summitM": 889,
   "duration": "4–6 t",
@@ -908,8 +908,8 @@
   "maxStepAngle": 23.9,
   "grade": 2,
   "aspect": "S",
-  "distanceKm": 5.5,
-  "cumdistM": 5530
+  "distanceKm": 5.8,
+  "cumdistM": 5764
  },
  "spanstinden": {
   "verticalM": 1050,

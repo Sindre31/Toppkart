@@ -2449,10 +2449,10 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
   },
   tverrfjellet: {
     intro:
-      "885 metres of ascent over 5.53 km from the fjord at Melåa to a mountain the register has no name for: Tverrfjellet is the source's and the neighbourhood's name — Tverrfjellelva drains it and Tverrelvfoten stands beneath it — and the summit reads 888.9 against the book's 899. No hundred-metre band measures more than 14.0 degrees, the steepest single stretch is 23.9, and the line gives back eight metres on the whole tour. KAST 1, south-facing — simple but fun skiing, exactly as the source says.",
+      "888 metres of ascent over 5.76 km from the fjord at Melåa to a mountain the register has no name for: Tverrfjellet is the source's and the neighbourhood's name — Tverrfjellelva drains it and Tverrelvfoten stands beneath it — and the summit reads 888.9 against the book's 899. No hundred-metre band measures more than 14.0 degrees, the steepest single stretch is 23.9, and the line gives back eight metres on the whole tour. KAST 1, south-facing — simple but fun skiing, exactly as the source says.",
     ascent: [
-      "From the bays along Austerfjordveien at Melåa — 12 m; the source's F104 is today's fv. 7784 — follow the tractor road on the north side of Melåelva: 23 m where the line stands in it, and the power line is crossed on the moors at 171. The band from 0 to 100 measures 4.7 degrees over the first kilometre and a bit.",
-      "The forest does not end until 419 m after 3.24 km — the round's highest treeline — and Tverrelvfoten, the 577 m hill, is passed on its west side as the source says. The band from 200 to 300 is the tour's steepest at 14.0 degrees; the steepest single stretch, 23.9 between 242 and 262 m, sits in the forest hillside.",
+      "From the bays along Austerfjordveien at Melåa — 12 m; the source's F104 is today's fv. 7784 — walk north along the county road, over Melåelva, and take the tractor road on the north side of the river where it leaves the road. The power line is crossed on the moors at 171. The band from 0 to 100 measures 3.9 degrees over the first kilometre and a bit.",
+      "The forest does not end until 419 m after 3.47 km — the round's highest treeline — and Tverrelvfoten, the 577 m hill, is passed on its west side as the source says. The band from 200 to 300 is the tour's steepest at 14.0 degrees; the steepest single stretch, 23.9 between 242 and 262 m, sits in the forest hillside.",
       "Then the fine open ground opens straight up towards the summit: 650 and 766 m where the line is pinned, and the cairn at 889. Northward the mountain falls 49.7 degrees towards the col that separates it from the 921 knoll — that is another mountain, and the gap between them is why the height in the book and the height on the screen are not the same number.",
     ],
     descent: [
@@ -2476,8 +2476,8 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
     elevationProfile: {
       startLabel: "12 m",
       endLabel: "889 m",
-      distanceLabel: "5.5 km",
-      caption: "885 metres of ascent and 5.53 km from Melåa along the tractor road, across the moors at the power line and west of Tverrelvfoten — the treeline at 419 m, and the steepest ground, 23.9 degrees between 242 and 262 m, in the forest hillside.",
+      distanceLabel: "5.8 km",
+      caption: "888 metres of ascent and 5.76 km from Melåa along the tractor road, across the moors at the power line and west of Tverrelvfoten — the treeline at 419 m, and the steepest ground, 23.9 degrees between 242 and 262 m, in the forest hillside.",
     },
   },
   spanstinden: {
@@ -5501,7 +5501,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       "Back the same way: across the plateau, down the icefall and out Haugadalen. The descent faces south-east.",
       "The usual mistake: choosing Veitebergsdalen for the way down because it looks shorter on the map. That is a different route from a different valley — you will find it as its own line on this map — and it does not end where the car is parked.",
       "The second is the timing on the flat stretch at the bottom: that is where naturally released avalanches come once the sun has been on it, and it is the part of the tour you cross last.",
-      "Veitebergsdalen is now its own route on the map, not merely a descent variant. Fri Flyt's 4.8.2 starts at Veiteberg, at the forest road that runs up the valley — 290 m, exactly the start height the book gives — and follows the road to its end at 521, slanting up through the forest towards the moraine ridge Sollirinden, up the ridge to Sollibotnen at 894, around the glacier lake and up the icefall, and flat across the glacier east of the 1687 knoll to the top. 1679 metres of climbing over 9.39 km against 1501 over 8.53 km from Stardalen: the longer and the bigger of the two. The forest lets go at 781 m after 3.29 km. The steepest hundred-metre band is 20.3 degrees from 600 to 700 m. The steepest 30 m window, 30.3 degrees, runs downhill — from 1139 to 1113, where the line drops towards the outlet of the glacier lake at 1103 and has to climb back; that is also most of the 142 metres the route gives back. The source sanctions no crossing of the lake, so the line rounds it on the east side, on land.",
+      "Veitebergsdalen is now its own route on the map, not merely a descent variant. Fri Flyt's 4.8.2 starts at Veiteberg, at the forest road that runs up the valley — 290 m, exactly the start height the book gives — and follows the road to its end at 521, slanting up through the forest towards the moraine ridge Sollirinden, up the ridge to Sollibotnen at 894, around the glacier lake and up the icefall, and flat across the glacier east of the 1687 knoll to the top. 1670 metres of climbing over 9.39 km against 1501 over 8.53 km from Stardalen: the longer and the bigger of the two. The forest lets go at 781 m after 3.29 km. The steepest hundred-metre band is 20.3 degrees from 600 to 700 m. The steepest 30 m window, 30.3 degrees, runs downhill — from 1139 to 1113, where the line drops towards the outlet of the glacier lake at 1103 and has to climb back; that is also most of the 133 metres the route gives back. The source sanctions no crossing of the lake, so the line rounds it on the east side, on land.",
     ],
     avalanche: [
       {
