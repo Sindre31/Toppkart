@@ -450,10 +450,10 @@
   "grubba": {
     "name": "Grubbå",
     "lat": 58.9492,
-    "lng": 6.98546,
+    "lng": 6.98547,
     "summit_dtm": 1184.5,
     "claims": 1184,
-    "stored_off_km": 0.54
+    "stored_off_km": 0.0
   },
   "jonshornet": {
     "name": "Jønshornet",
@@ -1702,5 +1702,53 @@
     "summit_dtm": 981.6,
     "claims": 979,
     "stored_off_km": 0.01
+  },
+  "stortinden-langfjord": {
+    "name": "Stortinden",
+    "lat": 70.09225,
+    "lng": 22.30233,
+    "summit_dtm": 935.5,
+    "claims": 935,
+    "stored_off_km": 0.0
+  },
+  "gievdnerassa": {
+    "name": "Gievdnerášša",
+    "lat": 70.13487,
+    "lng": 22.59386,
+    "summit_dtm": 897.8,
+    "claims": 897,
+    "stored_off_km": 0.01
+  },
+  "laslettind": {
+    "name": "Laslettind",
+    "lat": 70.04458,
+    "lng": 22.00059,
+    "summit_dtm": 822.1,
+    "claims": 819,
+    "stored_off_km": 0.31
+  },
+  "vassnestind": {
+    "name": "Vassnestind",
+    "lat": 70.03148,
+    "lng": 21.88364,
+    "summit_dtm": 896.2,
+    "claims": 897,
+    "stored_off_km": 0.01
+  },
+  "hilleknuten": {
+    "name": "Hilleknuten",
+    "lat": 58.97985,
+    "lng": 6.96807,
+    "summit_dtm": 1209.1,
+    "claims": 1209,
+    "stored_off_km": 0.02
+  },
+  "roseknuten": {
+    "name": "Røseknuten",
+    "lat": 58.90747,
+    "lng": 6.79035,
+    "summit_dtm": 1021.5,
+    "claims": 1022,
+    "stored_off_km": 0.0
   }
 }

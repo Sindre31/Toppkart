@@ -57,6 +57,12 @@ SAME_TOP_M = 200.0
 # register point, and that is the evidence that settled Ranten. It cannot settle
 # a mountain whose register point sits between two of its own tops.
 SUMMIT_SEED = {
+    # Grubbå's register point (Fjell, 1136.9 m) sits on the plateau east of the
+    # summit. Fri Flyt gives 1184, and ut.no's trip names «Søndre Grubbå» at
+    # 1172 with «det høyeste punktet» on 1184 a little north-west of it. DTM1
+    # has the 1172 top at 58.9447/6.9874 and the 1184 top here, 550 m west of
+    # the register point.
+    "grubba": (58.94919, 6.98546),
     # Eggja (1209) is the east top of the Rimmane massif, the summit both of its
     # sources end on — Fri Flyt calls it «Ørnafjellet på 1209 moh», ut.no «den
     # austlege toppen på fjellpartiet Rimmane». The register has no Eggja; its

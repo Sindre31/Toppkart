@@ -1369,7 +1369,7 @@ factually correct in every number it contained.
 
 What the three shared was that they were checkable against something *outside*
 the terrain model — OpenStreetMap's water polygons and its winter routes — and
-nothing was doing that. `check_ground.py` does. It asks three questions:
+nothing was doing that. `check_ground.py` does. It asks four questions:
 
 **Water.** Which vertices stand on a lake, how far the line runs on it, how far
 offshore it gets, and whether the guide names that height at all. A lake surface
@@ -1395,6 +1395,21 @@ stream, which side is it on? Which way is right depends on which way you are
 walking, so this is resolved from the trailhead-to-summit bearing, and a tour
 that runs east–west is reported as undecidable rather than answered with a coin
 flip.
+
+**House.** Does the line go through a mapped building or garden? DTM1 is bare
+ground, so the router cannot see a house, and a corridor with no waypoint over
+farmland draws a straight line through whatever stands there. Mellomkollen's
+did, through a house and a shed at Bergerud, and none of the other questions
+could see it. The buildings are fetched from the route's bounding box, padded
+by about 30 m, and matched against the line locally. Overpass's polyline
+`around` would fetch only what is near the line, but on a loaded mirror it
+timed out on almost every route. The line is sampled every 2 m against each
+polygon. A building standing within 100 m of the summit is the hut or mast the
+tour goes to, and is printed as a note. Fannaråkhytta stands 90 m from the
+cairn. Gaustatoppen's transmitter and bunkers are 500 m out along the ridge,
+so they are not the summit and still count. A `leisure=garden` is a note too, because the tag also covers
+parks. Run against the pre-fix Mellomkollen line, it reports exactly the house
+and the shed.
 
 It exits non-zero on findings, and it prints the numbers behind each one, because
 the decision is not the script's to make. A frozen tarn a source deliberately
@@ -6489,6 +6504,124 @@ unsourced numbers, 12 band claims all agreeing — `check_treeline`,
 `check_steepness`, `check_gain` and `check_ground` with nothing to look at, and
 `npm run typecheck`, `lint`, `test` and `build`.
 
+### Mellomkollen went through a house at Bergerud
+
+Between Kroken and Rollveien the corridor had no waypoint, so the router drew a
+straight line across the fields, and that line went through the house
+`way/100868266` and the shed `way/232381072` at Bergerud. DTM1 does not know about
+buildings, and `check_ground` looks for water and trails, not houses. The ut.no
+track goes round them: north from Kroken to the forest road (`way/369790069`),
+west along it, then north on the road through the yard (`way/8101527`) to where
+Rollveien (`way/130448611`) begins. The corridor now has five waypoints along
+that way. The re-routed line keeps within 3–7 m of the road from the forest road
+to Rollveien, and no building lies on it: the nearest is 5 m away.
+
+The line is now 4158 m with 408 m of climbing, against 4109 m and 398 m before,
+so the card goes from 400 to 410. Above Rollveien the geometry is unchanged
+within 8 m. The vertices still landed a few metres differently, though, and the
+steepest 30 m window moved: 20.3° between 300 and 314 m, where it had been
+22.9° between 431 and 445. The steepest band is now 500 m to the top at 7.3°.
+The guide's numbers were rewritten to match the new line. `check_guides`,
+`check_bands`, `check_ground`, `check_tours` and `check_routes` are clean for the
+tour.
+
+### Årbostadtinden's south route went through the yard at Holte
+
+The first run of `check_ground.py`'s new house question found the same fault
+on Årbostadtinden's second route. The trailhead is the road end at Holte, and
+the line left it north-east, straight through a shed (`way/925905090`) between
+the farm buildings and the house. One waypoint, west and north of the yard at
+68.8962/17.2964, 216 moh, takes it round the west side. The nearest building is
+now the shed, about 16 m east of the line. The route is now 3889 m and 995 m of
+climbing, against 3863 m and 998 m before. The steepest step is 27.9°, where it
+had been 26.7°, and the guide's paragraph about the route was updated to match.
+The couloir route is unchanged, so the card is too. `generate_routes.py` re-solves
+every route of a tour, and the re-solve moved the couloir's last vertex, so
+that line was put back exactly as it shipped.
+
+### The house round: skirt_buildings.py
+
+`check_ground.py --houses` over every route found the same fault on many more
+lines. Most were at trailheads in farmyards, cabin fields and resorts
+(Gjendesheim, Turtagrø, Spiterstulen, Norefjellstua). A few were mid-route
+cabins and barns, Glitterheim, and the transmitter and bunkers along
+Gaustatoppen's ridge.
+
+Re-solving those tours was tried first and thrown away. A shipped line has been
+through `retrace_trails`, `cut_spurs` and the review rounds, and a fresh solve
+through the corridor undoes them: on the first nineteen it made Fannaråken
+from Turtagrø 300 m shorter and Folarskardnuten 430 m shorter, to fix crossings
+a few dozen metres long. `skirt_buildings.py` does what `cut_spurs.py` does,
+at the building instead of the spur. The line leaves a vertex before the
+crossing and rejoins one after it, through three points offset to the nearer
+side that keeps 5 m off every footprint. The new legs are read from DTM1 every
+15 m and are rejected if they are wet or steeper than 40°. A trailhead that
+stands in or against a building moves to the nearest clear point. The detour
+points go into `corridors.json` as waypoints named «utenom bygningene», so a
+re-solve goes round the same buildings.
+
+Where 5 m does not fit, the pass relaxes the lead and the clearance step by step
+and says which it used. Gaustatoppen's normal route needed 30 m and 3 m to get
+past the bunkers on the ridge, and Spiterstulen's trailhead needed 4 m.
+Husfjellet needed 40 m and 3 m. Sandhornet's north-east route was done by hand:
+it ran through a row of houses between the road and the shore, so it now follows
+the farm track (`way/687759961`) south from the car park and rejoins its old
+line south of the houses. That adds 129 m and 15 m of climbing.
+
+Elsewhere the changes are a few metres. Glittertinden is +93 m past Glitterheim,
+Gjendesheim +70 m and Norefjellstua +45 m. Gain changes by 0–6 m. Every guide figure
+the move touched was rewritten: distances, gains, the band angles and grounds
+`check_bands` reads, and Gaustatoppen's steepest step, which is now 24.8° on the
+ridge detour. Gyranfisen's list of sampled heights changed too, because the
+sampled vertices moved. The cards follow the convention each one already used.
+An exact gain stays exact (Besshø 1328 → 1329), and a rounded one moves only
+when the rounding does (Gaustatoppen 970 → 980, Kavringtinden 1250 → 1260,
+Melderskin 1270 → 1280, Blånebba 930 → 940). Gråfjell's teaser still said
+580 m and 7.8 km from an older line, and now says 600 m and 8.1 km.
+
+The rest of the run added thirteen more routes: Skarlitinden, Skjellesvikgalten,
+Skrott, Snøhetta, Snønipa, Snota from Trollheimshytta, Snøtinden, Spanstinden,
+Torvløysa, Varden, Vassdalstinden, Vassfjellet and Vesoldo. Four started inside
+a building: the cabin at Sandeggen, the hotel at Snøheim, Trollheimshytta and
+the outbuildings at Nupen. Vassdalstinden is the largest change, +65 m and +13 m
+of climbing round the farmyard at Nupen, and its card goes from 1210 to 1220.
+Varden's crossing was a small shed on the shore at Kabelvåg, where DTM1 already
+reads `Havflate` under the shipped line, so every detour failed the water
+test. It was spliced by hand, 12 m north of the shed and no further out.
+Torvløysa's card had said 1460 against a gain of 1469 and now says 1470.
+
+The routes Overpass had not answered for came back with 42 more crossings. Most
+were trailheads, at Juvasshytta and Spiterstulen for Galdhøpiggen, Tempelseter
+for Høgevarde and Ranten, Furedalen, Ustaoset, Tromsdalen and Øye. Here the
+pass learned to drop detour points the line stays clear without, after its
+three-point detours made hooks back on themselves where the line bends at the
+building. Five needed more than the pass:
+
+- **Kjølen from Kvaløysletta** started beside the care home and ran through the
+  housing estate above it. It now follows the mapped paths east of the houses,
+  as the shortest way over OSM's path network. That adds 233 m, and no house is
+  within 24 m of the line.
+- **Rondslottet from Spranget** came in over the ice on Rondvatnet and went
+  through Rondvassbu. No single dry detour exists, because the hut stands on
+  the shore. The line now keeps to the ice south of the yard and comes ashore
+  east of it, 22 m from the nearest building. That adds 54 m and 15 m of
+  climbing, and the card goes from 1280 to 1300.
+- **Rondslottet from Nedre Dørålseter** started inside the main building. The
+  trailhead moved 18 m south, outside it.
+- Rondslottet's Bjørnhollia route and Husfjellet needed the relaxed ladder.
+
+Seven more cards moved with their gain: Hesten-Segla 510 → 520, Rørnestinden
+1018 → 1022, Slogen 1535 → 1536, Snønipa 1490 → 1500, Torskmannen 750 → 760,
+Tromsdalstinden 1212 → 1213, and Rondslottet. A last `check_ground.py
+--houses` over all 229 routes, with fresh footprints for every moved line, came
+back clean.
+
+The fourteen tours main gained while this round ran were checked the same way.
+Four went through buildings: Gievdnerášša, Heimdalshøe from Maurvangen,
+Stortinden from Langfjordbotn and Tylderingen. Two of them started inside one.
+All four took the standard detour, and none of their cards moved. 205 tours and
+243 routes now go through no mapped building.
+
 ## The Sunnfjord round
 
 Four tours from Fri Flyt's *Toppturer i Sunnfjord*, two from the ski-touring car
@@ -6883,6 +7016,178 @@ three, `check_guides` and `check_bands` clean (0 unsourced numbers, 12 band
 claims all agreeing), `check_treeline`, `check_gain` and `check_steepness` with
 nothing to look at, and `npm run typecheck`, `lint`, `test` and `build`.
 
+## The Vest-Finnmark round
+
+Four tours from Fri Flyt's Finnmark series (*Trygge toppturer*). 205 tours, 243
+routes. The app had nothing north of Lyngen and Troms. All four summits answer
+to **Vest-Finnmark** (3007), an A-region. Laslettind and Vassnestind lie in
+Kvænangen, which is Troms; Fri Flyt files them under Finnmark — «Laslettind er
+egentlig i Troms, men vi har adoptert den til Finnmark» — and the region on the
+cards is Vest-Finnmark for all four.
+
+| tour | start | summit | gain | km | steepest 100 m band | steepest 30 m | grade |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Stortinden i Langfjorden | 39 | 936 | 1007 | 7.40 | 19.6° | 26.3° | 3 |
+| Gievdnerášša | 58 | 898 | 879 | 6.33 | 17.3° | 29.1° | 2 |
+| Vassnestind | 22 | 896 | 879 | 3.93 | 19.2° | 26.0° | 2 |
+| Laslettind | 163 | 822 | 665 | 2.97 | 19.6° | 22.1° | 1 |
+
+### Which tours, and which were left
+
+Fri Flyt's Finnmark index has nine tours. Aspenesfjellet, Giskedalstuva, Kista
+and Midtfjellet are 400–580 m of climbing; Middagstinden above Øksfjord gives no
+line beyond «forsenkningen», and the page warns of «raske værskifter». The four
+built are the longest and the ones with a described line. Only Laslettind has a
+second source that draws it — ut.no's signed track and Ut i Nord's text — so it
+is `confidence: high` and the other three are `medium`.
+
+### Two starts for Vassnestind
+
+Fri Flyt's text starts at «Ytre Hamnebukta, der veien langs sørsiden av
+Jøkelfjorden stopper», and its fact box at «Jøkelfjord. Parkering i grustak på
+sørsiden av Fv.365». The text also says the route goes «langs vestsiden av
+Golpeelva», and Golpeelva runs out at Jøkelfjord; Ytre Hamnebukta is 2.9 km west,
+under a hillside that is steep all the way up, and from there the climb would be
+854 m, not the fact box's 885. The line starts at Jøkelfjord.
+
+### Gievdnerášša leaves the river
+
+Routed straight from the school car park towards Fri Flyt's north-east ridge, the
+line went up the Nordelva ravine between walls of 45° and more. It now follows
+Gammelveien and the summer road Geassegeaidnu east — the road Peakbook's trip
+calls «sommerveien» — south of the lake at 111 m that Nordelva drains and east
+of the tarn at 123 m, and climbs east of Skárpavággi, which is Peakbook's way up.
+That adds about a kilometre of nearly flat ground, and the ascent is 879 m
+against Fri Flyt's 797. The road is the Tappeluftløypa snowmobile trail in
+winter, and the guide says so.
+
+### Stortinden's ridge
+
+The line goes over the 839 rise and the 920 top before the summit, so it gives
+back 110 m and the card's vertical is 1010, not Fri Flyt's 900. A steep belt
+crosses the ridge at 596–609 m — 26 m of ground at 35° or more — and at
+880–888 m, 4.07 km out, the line crosses a rock step on the neck. Above it the
+east edge is 13–27 m from the line and is a lee edge under north-westerlies.
+There is no gentler line past the step: west of it is a terrace that ends in
+another step, east of it the cliff. Fri Flyt rates it KAST 3 – Komplekst, and it
+is grade 3.
+
+### The independent read
+
+The second reader found fourteen things and four of them were serious.
+**Vassnestind's line ran up the bed of Golpeelva** for its first 300 m, crossing
+the river four times between gully walls, where the guide said the river was
+9–149 m east. Three waypoints now hold the line on the west bank; the river is
+18–149 m east of it for the first 0.74 km and never west, and the guide warns of
+the ravine. The same reader measured at 1 m what the 5 m grid had missed: two
+stretches of 15 and 16 m at 35° or more at 440–479 m, which the guide now
+states instead of «aldri». **Stortinden's neck sits on a lee rim** and the line
+crosses a 13 m rock step there; an attempt to move it 19 m west put it on a 36 m
+stretch of 51° ground, so the line stayed and the guide now names the step and
+the cornice-prone east edge, and says to keep 20 m west of it. **The summit
+ridge was not «nesten flat»**: it drops to 866 m and to 889 m and gives back
+86 m between the 920 top and the summit, which the guide now gives.
+
+The rest were smaller and are fixed. Nordelva drains the 111 m lake rather than
+running into it, and the teaser no longer says the line crosses the river; the
+lake and tarn are 103 and 72 m from the line, not 160 and 107. Gievdnerášša's
+line now stays on Geassegeaidnu instead of a stream bed beside it, and the guide
+says the road is a snowmobile trail and credits Peakbook's line. «Skavler på
+toppen» belongs to Fri Flyt's Olderbakkfjellet tour, and the guide now says so
+and adds the 40° ground 41 m from Laslettind's top; the nearest 45° ground is
+33 m from the line, not «more than 30». Vassnestind's guide now quotes Fri
+Flyt's «østover» sentence that the Jøkelfjord start only partly fits, places
+Ytre Hamnebukta west-south-west, and warns of the gully head 17–24 m from the
+line at 3.76 km. The café at Langfjordbotn is open only in summer. Two points
+were not changed: the cards round verticals to 10 m, as every card does, and the
+band angles are the pipeline's own measure along the profile, not net rise over
+ground, which is what `check_bands` checks.
+
+### What ran
+
+`check_new_corridors` (Stortinden gives back 34 m between the 920 top and the
+ridge and has no mapped parking at the café — said in the record and the guide),
+`check_routes`, `check_tours` and `check_geometry` clean on 205 tours and 243
+routes, `check_ground` clean on all four, `check_guides` and `check_bands` clean
+(0 unsourced numbers, 18 band claims all agreeing), `check_treeline`,
+`check_gain` and `check_steepness` with nothing to look at, and `npm run
+typecheck`, `lint`, `test` and `build`.
+
+## The Sirdal round
+
+Three tours from Fri Flyt's *Toppturer i Sirdal*. 208 tours, 246 routes. The app
+had nothing in Sirdal and only Kjerag in Rogaland. All three summits answer to
+**Heiane** (3037), an A-region, and all three start by the Fv 450, whose winter
+closure is the stretch between Suleskard and Brokke, east of every start.
+
+| tour | start | summit | gain | km | steepest 100 m band | steepest 30 m | grade |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Hilleknuten | 570 | 1209 | 687 | 4.02 | 13.5° | 23.1° | 2 |
+| Grubbå | 695 | 1184 | 500 | 2.50 | 17.6° | 23.1° | 1 |
+| Røseknuten | 674 | 1022 | 352 | 1.61 | 13.6° | 24.6° | 2 |
+
+### Which tours, and which were left
+
+Fri Flyt's Sirdal book has twelve tours the app did not carry, most of them
+250–500 m of climbing. Lyseknuden starts at Lortabu on Lysevegen, which is closed
+in winter; Bjønnskjeggheia is 250 m with 40° in the line; Midstølknuten is a
+50° couloir; Storeknuten lies in Gjesdal and had no second source. The three
+built are the longest, and each has a second source that confirms the top — but
+those are summer routes from other starts, so all three are `confidence: medium`.
+
+### Where the lines go
+
+**Hilleknuten** follows Fri Flyt: up Bekkene to the flat, south along the bog
+and east up the slopes to the tower. No 15 m stretch under the line is 35° or
+more, at 5 m or at 1 m, and it crosses no water. There is no mapped car park at
+Storekvæven: the one 1.4 km north is `access=private`, the nearest public one is
+at the filling station 1.7 km north, and Fidjeland's hiking car park is the
+alternative. The guide says so, and warns of ice falling from the 23 m tower.
+
+**Røseknuten** has no way up that keeps well clear of the edge above Røsehola,
+where Fri Flyt warns of the cornice at 990 m that «knekker mye lenger inn enn du
+tror». The line keeps to the ridge on the south rim of the gully south-east of
+p905, not down in it, and from 1.41 to 1.56 km ground at 37° or more is 5–31 m
+from it. The guide says where, rather than claiming the line avoids it.
+
+### Grubbå's top
+
+The register puts Grubbå on the plateau at 1137 m. Fri Flyt gives 1184, and
+ut.no's trip names «Søndre Grubbå» at 1172 with the highest cairn «litt lenger
+nordvest». DTM1 has the 1184 top 0.5 km west of the register point, and OSM has
+it as a peak; the summit is seeded there (`SUMMIT_SEED`).
+
+### The independent read
+
+The second reader found three serious things. **Hilleknuten's line crossed a
+tarn and a pond**, and the reason the write-up gave for leaving Fri Flyt's line —
+a steep belt through the whole west face — did not hold up. The line now follows
+Fri Flyt south and then east, with no 35° stretch and no water under it.
+**Røseknuten's line ran along the rim above Røsehola**, where the guide said it
+came up from the south 131 m away. No line keeps clear of that edge, so the
+line stays and the guide, record and teaser now say where it runs 5–31 m from
+37° ground. **Grubbå's card repeated Fri Flyt's «i terreng under 30 grader»**,
+while at 1 m the line crosses a 10 m rock step at 35° or more at 1046–1051 m.
+The flank is rerouted, the guide and record state the step, and the teaser and
+grade reason no longer make the claim.
+
+The rest were smaller and are fixed. Hilleknuten starts where the line leaves
+the Fv 450, and the private car park is no longer offered. Røseknuten's guide
+names Fri Flyt's «Gravasstølan/Bekkekrogan» start, 0.48 km from the car park,
+and says the Fv 450 through Hunnedalen can close in blizzards (OSM relation
+3488474). Grubbå's p893 is not in DTM1 — the knoll by the col is 885 m, 66 m from
+the line — and the guide says so. The teasers follow the lines they describe.
+
+### What ran
+
+`check_new_corridors` (Hilleknuten has no mapped car park at its start — said in
+the record and the guide), `check_routes`, `check_tours` and `check_geometry`
+clean on 208 tours and 246 routes, `check_ground` clean on all three
+(water, trail and, after the merge with the house round, buildings),
+`check_guides` and `check_bands` clean (0 unsourced numbers, 6 band claims all
+agreeing), `check_treeline`, `check_gain` and `check_steepness` with nothing to
+look at, and `npm run typecheck`, `lint`, `test` and `build`.
+
 ## The path round: lines that ran beside the path
 
 A reader looking at the map saw what the checks so far did not ask about: in
@@ -6903,13 +7208,13 @@ roads (`trails.py`), finds the *detours* — at least 150 m more than 30 m off
 any mapped way, leaving one and coming back to one, mostly within 150 m of
 it — and reads Kartverket's terrain class every 40 m along each.
 
-**45 of the 239 routes were put on the path** where they ran beside it through
+**46 of the 246 routes were put on the path** where they ran beside it through
 forest. What is left, on the shipped lines, is in `follow_trails_run.txt`:
 
 | detours left | | routes |
 | --- | --- | --- |
-| on open ground — skiable either side, left as they are | 218 (102 km) | |
-| mostly `Skog`, each with the reason it stays | 73 | 57 |
+| on open ground — skiable either side, left as they are | 220 (102 km) | |
+| mostly `Skog`, each with the reason it stays | 73 | 55 |
 
 ### How a forest detour is moved
 
@@ -6924,12 +7229,12 @@ degree or more steeper** — Melderskin's Myrdalsvatnet line 33.8° → 39.6°,
 Istinden 27.7° → 31.6° — mostly outside the stretch that moved: a re-solve re-cuts the grid and
 lands the smoothing differently everywhere, and at 1 m that moves the steepest
 30 m. So the shipped line keeps every vertex it had, only the forest detours
-are spliced in from the re-solve, and the result is read from DTM1. Of the 45,
-**the steepest 30 m is unchanged on 40**, gentler on three (Oksen 29.1° →
-28.2°, Mellomkollen 22.9° → 21.9°, Lakselvtindan 26.2° → 25.5°), and 0.1–0.4°
+are spliced in from the re-solve, and the result is read from DTM1. Of the 46,
+**the steepest 30 m is unchanged on 41**, gentler on three (Oksen 29.1° →
+28.2°, Lakselvtindan 26.2° → 25.5°, Heia 25.0° → 24.7°), and 0.1–0.4°
 steeper on two (Togga, Litletussen), on the path itself. Lines got up to 368 m
 longer — Horndalsnuten from Skaftedalen, which leaves 1.8 km of birch for the
-path — and Slogen 143 m shorter; no gain moved more than 15 m.
+path — and Slogen 142 m shorter; no gain moved more than 15 m.
 
 The bars are `retrace_trails.py`'s — no new problem from
 `generate_routes.problems_with`, no more than 12% longer or higher, no more
@@ -6954,19 +7259,35 @@ move — Grønlifjellet, Istinden's start by the railway, Kongsviktinden,
 Skarasalen, Snønipa from Veitebergsdalen and Storlitinden — along tracks and
 farm roads. The router's own trail discount still takes paths only.
 
+### The house round landed first
+
+The round was solved against the lines of #141, and three rounds merged into
+`main` before it did — among them the house round, which moved lines round the
+buildings. Eighteen of the routes this round had moved had been changed by it.
+The 23 tours the house round did not touch were carried over as solved; the
+other routes were solved again against the house round's lines, with the house
+round's corridors. Sixteen of those still moved; **Snøtinden** now climbs 1215 m
+on the path against a card that says 1240 and stays, **Vassdalstinden** likewise
+(1232 against 1220), and **Høgevarde** has no forest detour left on its new line.
+The forest stretches on lines the house round changed were then read again, and
+four more moved: **Heia**, **Torvløysa**, **Tromsdalstinden's summer route** and
+**Tveitakvitingen**. Where a forest detour held a house-round waypoint
+(«utenom bygningene»), the path replaces it, and `check_ground`'s building check
+was run over every moved line.
+
 ### What was left in the forest, and why
 
-Fifty-seven routes, with the reason on each in `follow_trails_run.txt`. A
+Fifty-five routes, with the reason on each in `follow_trails_run.txt`. A
 route can have more than one.
 
-- **The path goes somewhere else** (28 routes — Gygrastølen, Vesoldo, Sula,
+- **The path goes somewhere else** (29 routes — Gygrastølen, Vesoldo, Sula,
   Mjølvafjellet among them): the shortest way along the mapped network is more
   than half again as long as the line's detour. These are paths to a hut, a
   farm or another summit that run alongside for a while; the line takes the
   direct way through the forest, which is passable on snow.
-- **The card** (12): the line on the path climbs more than ten metres more or
+- **The card** (10): the line on the path climbs more than ten metres more or
   less than the tour's stated vertical — Skårene, Forselvtinden, Lodalskåpa,
-  Vassdalstinden, Torvløysa among them. Those are for a round that is willing
+  Snøtinden, Vassdalstinden among them. Those are for a round that is willing
   to change the card, the teaser and the guide together.
 - **A research waypoint holds the line where it is** (11 — Hamperøkken's
   Vartavarhaugen, Hattfjellet's tractor road in Bjørndalen, Rondslottet's
@@ -6982,8 +7303,10 @@ route can have more than one.
   road that is not among the minor roads OSM returned for its box.
 - **The path is steeper, wetter, or will not hold the line** (Sandhornet's
   path from Horsdal runs along the shore at sea level and puts the steepest 30 m
-  at 34.5° against 32.5°; Såta's gives back 110 m; Heia's, Rundtind's and
+  at 34.5° against 32.5°; Såta's gives back 110 m; Lodalskåpa's, Rundtind's and
   Vatnaknausen's re-solves stayed in the forest).
+- **A remainder** (6): a route that moved, with a shorter forest stretch left
+  that the path does not reach.
 
 ### Where the path data came from
 
@@ -6997,10 +7320,10 @@ the route's box).
 
 ### The guides
 
-Forty-three of the moved routes have a written guide, and a guide quotes the
+All 44 tours with a moved route have a written guide, and a guide quotes the
 line: its length, its climb, where the forest ends and how steep each hundred
 metres is. All of those were brought up to the new lines in both languages and
-re-emitted (`emit_guides.py` on the 43, every other guide byte for byte):
+re-emitted (`emit_guides.py` on the 44, every other guide byte for byte):
 
 - the total length and climb, and what the line gives back, wherever they are
   stated — including the second-route paragraphs, where only the moved route's
@@ -7008,9 +7331,9 @@ re-emitted (`emit_guides.py` on the 43, every other guide byte for byte):
 - the treeline's height and distance, read from the old line with
   `guide_facts.treeline_scan` and replaced by the new one's;
 - every band figure the old line's `bands()` and the new one's disagree on,
-  which `check_bands.py` agrees with on all 43;
-- **four steepest steps that moved somewhere else.** On Oksen, Lakselvtindan,
-  Litletussen and Mellomkollen the old line's steepest 30 m was in the forest
+  which `check_bands.py` agrees with on all 44;
+- **three steepest steps that moved somewhere else.** On Oksen, Lakselvtindan
+  and Litletussen the old line's steepest 30 m was in the forest
   detour itself, so it went with it: Oksen's 29.1° at 490 m in the forest is
   now 28.2° between 902 and 920 m, and the path through the forest tops out at
   26.3°. The guides say where the steepest step is now, and what the path
@@ -7024,8 +7347,8 @@ re-emitted (`emit_guides.py` on the 43, every other guide byte for byte):
   85 by Storvatnet), and Tylderingen's distances to Tråna and Stokksete.
 
 Heights that are still true of the new line but were only «sourced» because a
-terrain sample happened to land on them — Juklavasstinden's 865, Styggemann's
-830, Stortinden's 92 and 274, Storlitinden's Kvilheim — are now recorded in
+terrain sample or a replaced waypoint happened to carry them — Juklavasstinden's
+865, Styggemann's 830, Stortinden's 92 and 274, Storlitinden's Kvilheim — are now recorded in
 `measurements.json` with where they were read. One pre-existing slip turned up
 on the way: Keipen's Norwegian text said the fall line north of the bowl holds
 29–36° for «de første 180 høydemetrene»; `flank_probe.py` measures 180 metres
@@ -7033,16 +7356,18 @@ of *ground* (593 → 713 m), which is what the English said, and it is fixed.
 
 ### What ran
 
-`follow_trails.py --survey` over all 239 routes before and after;
-`check_routes`, `check_tours` clean on 201 tours and 239 routes;
-`check_geometry` unchanged from before the round apart from Møysalen's,
-Juklavasstinden's and Rondslottet's descent-on-the-way-up figures moving by
-2–6 m; `check_ground` clean on all 45 moved routes; `check_bands` clean on the
-43 guides (173 claims); `check_treeline` with no new finding on them;
-`check_guides` with 1 unsourced number and 2 reassurance claims, none of them
-on a moved tour or new (Tortenviktinden's «1170 metres», and the Istinden and
-Sandhornet sentences the check has always listed); and `npm run typecheck`,
-`lint`, `test` and `build`.
+`follow_trails.py --survey` over all 246 routes before and after;
+`check_routes` and `check_tours` clean on 208 tours and 246 routes;
+`check_geometry` at the same seven things in five tours as before the round,
+apart from Møysalen's, Juklavasstinden's, Rondslottet's and Gyranfisen's
+descent-on-the-way-up figures moving by 1–6 m; `check_ground`, with its
+building check, clean on all 46 moved routes (run against `maps.mail.ru` alone,
+because the rotation gave up on the others); `check_bands` clean on the 44
+guides (180 claims); `check_treeline` with only the three findings it had
+before; `check_guides` with 1 unsourced number and 2 reassurance claims, none
+of them on a moved tour or new (Tortenviktinden's «1170 metres», and the
+Istinden and Sandhornet sentences the check has always listed); and `npm run
+typecheck`, `lint`, `test` and `build`.
 
 ## Network
 

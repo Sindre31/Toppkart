@@ -4,13 +4,13 @@
 ## Put on the path: forest stretches where the line ran beside a mapped path or road
 # route                                 distance m        gain m         steepest 30 m
 
-beisfjordtotta_narvik                    9031 -> 9072    1351 -> 1353   27.0 -> 27.0
+beisfjordtotta_narvik                    9035 -> 9078    1351 -> 1350   27.0 -> 27.0
 forkledalstindan_sydsiden                5408 -> 5477     985 -> 983    39.4 -> 39.4
-gangnesaksla_normalruta                  4899 -> 4920    1306 -> 1306   26.0 -> 26.0
+gangnesaksla_normalruta                  4903 -> 4914    1308 -> 1308   26.0 -> 26.0
 gronlifjellet_litlebotn                  8102 -> 8101    1155 -> 1155   23.8 -> 23.8
-gyranfisen_vikerkoia                     5358 -> 5551     666 -> 666    24.9 -> 24.9
-hesten-segla_normalruta                  2222 -> 2295     512 -> 512    25.3 -> 25.3
-hogevarde_norefjellstua                 11667 -> 11859    826 -> 827    20.5 -> 20.5
+gyranfisen_vikerkoia                     5366 -> 5557     667 -> 668    24.9 -> 24.9
+heia_ost-1                               2219 -> 2238     470 -> 470    25.0 -> 24.7
+hesten-segla_normalruta                  2234 -> 2314     515 -> 515    25.3 -> 25.3
 horndalsnuten_normalruta                 5934 -> 6023    1121 -> 1124   31.4 -> 31.4
 horndalsnuten_skaftedalen                5762 -> 6130    1007 -> 1022   27.7 -> 27.7
 istinden_normalvegen                     5238 -> 5362    1432 -> 1435   27.7 -> 27.7
@@ -22,33 +22,34 @@ kongsviktinden_nordsiden                 8047 -> 8076    1051 -> 1055   31.6 -> 
 lakselvtindan_sorsiden                   5461 -> 5552     819 -> 822    26.2 -> 25.5
 langlitinden_vestsiden                   5528 -> 5589    1305 -> 1305   33.5 -> 33.5
 litletussen_sorostsiden                  4045 -> 4089     765 -> 765    22.4 -> 22.8
-lundenesgalten_sydsiden                  4653 -> 4781     788 -> 788    26.2 -> 26.2
+lundenesgalten_sydsiden                  4655 -> 4793     788 -> 788    26.2 -> 26.2
 melderskin_myrdalsvatnet                 5097 -> 5133    1101 -> 1104   33.8 -> 33.8
-mellomkollen_skar                        4109 -> 4131     398 -> 400    22.9 -> 21.9
+mellomkollen_skar                        4158 -> 4181     408 -> 409    20.3 -> 20.3
 molden_marifjora                         5278 -> 5292    1131 -> 1131   36.3 -> 36.3
 moysalen_vestryggen                      9747 -> 9772    1596 -> 1602   45.9 -> 45.9
 nona_vestsiden                           5423 -> 5426    1024 -> 1016   38.4 -> 38.4
-nona_sorsida                             4548 -> 4652     996 -> 997    27.1 -> 27.1
+nona_sorsida                             4554 -> 4657     996 -> 996    27.1 -> 27.1
 oksen_normalruta                         3658 -> 3752     967 -> 968    29.1 -> 28.2
-rondslottet_bjornhollia                 12316 -> 12355   1538 -> 1541   33.7 -> 33.7
+rondslottet_bjornhollia                 12329 -> 12353   1538 -> 1540   33.7 -> 33.7
 rundfjellet_normalruta                   4820 -> 4778     841 -> 841    29.1 -> 29.1
 rundfjellet-harstad_nordostryggen        6859 -> 6861     774 -> 779    23.9 -> 23.9
 satertinden_ostryggen                    6052 -> 6125    1113 -> 1116   26.9 -> 26.9
 sebortinden_nordsiden                    3989 -> 4023     894 -> 899    31.7 -> 31.7
 skarasalen_normalruta                    7455 -> 7542    1452 -> 1454   26.2 -> 26.2
-skrott_fitjadalen                        5033 -> 5124    1068 -> 1070   28.2 -> 28.2
-slogen_normalruta                        6517 -> 6374    1535 -> 1536   33.0 -> 33.0
-snonipa_veitebergsdalen                  9274 -> 9371    1673 -> 1682   30.3 -> 30.3
+skrott_fitjadalen                        5037 -> 5128    1068 -> 1070   28.2 -> 28.2
+slogen_normalruta                        6526 -> 6384    1536 -> 1536   33.0 -> 33.0
+snonipa_veitebergsdalen                  9283 -> 9390    1673 -> 1679   30.3 -> 30.3
 snota_grahaugen                         10221 -> 10222   1268 -> 1268   28.9 -> 28.9
-snotinden_vestsiden                      6763 -> 6870    1242 -> 1242   28.1 -> 28.1
-steindalsnosi_helgedalen                 7826 -> 7885    1172 -> 1174   28.4 -> 28.4
-storlitinden_sorsiden                    2690 -> 2756     446 -> 446    19.8 -> 19.8
+steindalsnosi_helgedalen                 7856 -> 7912    1174 -> 1178   28.4 -> 28.4
+storlitinden_sorsiden                    2698 -> 2760     446 -> 446    19.8 -> 19.8
 stortinden-sortland_vestsiden            3346 -> 3374    1008 -> 1009   28.9 -> 28.9
 styggemann_ravalsjo                      9477 -> 9583     541 -> 547    23.2 -> 23.2
-surloytenuten_sudstul                    6100 -> 6163     456 -> 459    24.9 -> 24.9
+surloytenuten_sudstul                    6105 -> 6171     457 -> 462    24.9 -> 24.9
 togga_brandhaugane                       2640 -> 2598     780 -> 780    27.5 -> 27.6
-tylderingen_fretland                     2793 -> 2995     610 -> 612    23.8 -> 23.8
-vassdalstinden_normalruta                6495 -> 6630    1210 -> 1214   41.3 -> 41.3
+torvloysa_normalruta                    11154 -> 11219   1471 -> 1479   26.9 -> 26.9
+tromsdalstinden_sommerruta               6582 -> 6655    1224 -> 1231   30.2 -> 30.2
+tveitakvitingen_furedalen                8579 -> 8586     996 -> 994    25.0 -> 25.0
+tylderingen_fretland                     2807 -> 3007     610 -> 611    23.8 -> 23.8
 
 ## Every detour left on the shipped lines
 # SKOG = mostly forest, with the reason it stays; open = open ground, skiable either side of the path.
@@ -58,14 +59,14 @@ arbostadtinden_renna                   SKOG   0.21 km   694 m  off 130/214 m  Sk
 arbostadtinden_renna                   open   1.96 km   529 m  off  95/164 m  ÅpentOmråde 14
 arbostadtinden_renna                   open   2.57 km   258 m  off  89/117 m  ÅpentOmråde 7
   -> left as it is: 0.21 km: the path is 1501 m against 694 m of line
-arbostadtinden_sorsida                 open   2.68 km   372 m  off  73/128 m  ÅpentOmråde 10
-besshoe_normalruta                     open   5.35 km   159 m  off  35/ 40 m  ÅpentOmråde 5
-besshoe_normalruta                     open   6.28 km   388 m  off  58/108 m  ÅpentOmråde 10
-besshoe_normalruta                     open   7.60 km   223 m  off  52/ 90 m  ÅpentOmråde 6
-besshoe_normalruta                     open   7.91 km   238 m  off  83/131 m  ÅpentOmråde 7
+arbostadtinden_sorsida                 open   2.71 km   365 m  off  74/128 m  ÅpentOmråde 10
+besshoe_normalruta                     open   5.41 km   159 m  off  34/ 40 m  ÅpentOmråde 5
+besshoe_normalruta                     open   6.33 km   399 m  off  57/108 m  ÅpentOmråde 11
+besshoe_normalruta                     open   7.67 km   222 m  off  52/ 90 m  ÅpentOmråde 6
+besshoe_normalruta                     open   7.98 km   238 m  off  84/132 m  ÅpentOmråde 7
 bitihorn_normalruta                    open   0.38 km   379 m  off  58/ 78 m  Myr 6, ÅpentOmråde 4
-blanebba_normalveien                   SKOG   0.56 km   764 m  off  91/239 m  Skog 17, ÅpentOmråde 3
-  -> left as it is: 0.56 km: the path is 3850 m against 764 m of line
+blanebba_normalveien                   SKOG   0.57 km   754 m  off  93/240 m  Skog 17, ÅpentOmråde 3
+  -> left as it is: 0.57 km: the path is 3850 m against 754 m of line
 breitinden_normalruta                  open   0.77 km   405 m  off  76/126 m  ÅpentOmråde 5, Skog 4, Myr 2
 breitinden_normalruta                  open   1.77 km   187 m  off  57/ 71 m  ÅpentOmråde 6
 breitinden_normalruta                  open   2.07 km   199 m  off  71/ 86 m  ÅpentOmråde 6
@@ -74,25 +75,26 @@ breitinden_normalruta                  open   2.96 km   256 m  off  70/ 88 m  Å
 breitinden_normalruta                  open   3.69 km   395 m  off  84/118 m  ÅpentOmråde 11
 eggja_fjelltjonna                      open   2.28 km   338 m  off  90/132 m  ÅpentOmråde 9
 englafjell_musland                     open   0.43 km   219 m  off  56/ 94 m  DyrketMark 6
-englafjell_musland                     SKOG   0.85 km  1237 m  off  72/191 m  Skog 29, ÅpentOmråde 2, DyrketMark 1
-  -> left as it is: 0.85 km: the path it leaves and the one it rejoins are not connected
+englafjell_musland                     SKOG   0.86 km  1237 m  off  71/192 m  Skog 29, ÅpentOmråde 2, DyrketMark 1
+  -> left as it is: 0.86 km: the path it leaves and the one it rejoins are not connected
 fanaraken_normalruta                   open   4.82 km   179 m  off  35/ 39 m  SnøIsbre 5
 fanaraken_normalruta                   open   5.50 km   227 m  off  57/ 86 m  ÅpentOmråde 6
-fanaraken_turtagro                     open   5.31 km   207 m  off  70/ 90 m  ÅpentOmråde 6
+fanaraken_turtagro                     open   5.33 km   203 m  off  70/ 90 m  ÅpentOmråde 6
 fastdalstinden_varto                   open   0.87 km   369 m  off  68/103 m  ÅpentOmråde 10
 fastdalstinden_varto                   open   1.33 km   638 m  off 115/199 m  ÅpentOmråde 17
 fastdalstinden_varto                   open   2.22 km   278 m  off  54/ 63 m  ÅpentOmråde 8
 finnbufjellet_halsabakkane             open   3.67 km   368 m  off  72/139 m  ÅpentOmråde 8, Innsjø 2
 fiskefjordtindan_sorvestsiden          open   2.09 km  1268 m  off  69/108 m  ÅpentOmråde 30, Myr 2
-folarskardnuten_normalruta             open   0.71 km   309 m  off  98/169 m  Innsjø 6, ÅpentOmråde 2
-folarskardnuten_normalruta             open   5.80 km   209 m  off  73/107 m  ÅpentOmråde 6
+folarskardnuten_normalruta             open   0.72 km   309 m  off  99/170 m  Innsjø 6, ÅpentOmråde 2
+folarskardnuten_normalruta             open   5.81 km   199 m  off  75/106 m  ÅpentOmråde 6
 forselvtinden_sydryggen                SKOG   0.12 km   159 m  off  42/ 49 m  Skog 4, Myr 1
 forselvtinden_sydryggen                SKOG   0.96 km   269 m  off  78/111 m  Skog 7
   -> left as it is: gain 1193 m against the card's 1180 m
-galdhopiggen_spiterstulen              open   0.41 km   205 m  off  49/ 62 m  ÅpentOmråde 5, Skog 1
-galdhopiggen_spiterstulen              open   1.10 km   862 m  off  79/137 m  ÅpentOmråde 22
+galdhopiggen_normalruta                open   2.49 km   159 m  off  33/ 41 m  ÅpentOmråde 5
+galdhopiggen_spiterstulen              open   0.41 km   205 m  off  49/ 63 m  ÅpentOmråde 5, Skog 1
+galdhopiggen_spiterstulen              open   1.10 km   863 m  off  79/137 m  ÅpentOmråde 22
 galdhopiggen_spiterstulen              open   2.35 km   969 m  off  72/105 m  ÅpentOmråde 25
-galdhopiggen_spiterstulen              open   5.26 km   329 m  off  45/ 85 m  SnøIsbre 9
+galdhopiggen_spiterstulen              open   5.25 km   339 m  off  45/ 85 m  SnøIsbre 9
 gaustatoppen_normalruta                SKOG   0.11 km   468 m  off 110/218 m  Skog 12
 gaustatoppen_normalruta                open   2.24 km   209 m  off  37/ 40 m  ÅpentOmråde 6
 gaustatoppen_normalruta                open   3.10 km   209 m  off  53/ 68 m  ÅpentOmråde 6
@@ -103,12 +105,12 @@ glittertinden_normalruta               open   0.77 km   599 m  off  32/ 37 m  My
 glittertinden_normalruta               open   2.88 km   387 m  off  98/148 m  ÅpentOmråde 10
 glittertinden_normalruta               open   3.96 km   189 m  off  33/ 36 m  ÅpentOmråde 5
 glittertinden_normalruta               open   4.62 km   239 m  off  31/ 40 m  ÅpentOmråde 7
-glittertinden_spiterstulen             open   1.23 km  3217 m  off  92/260 m  ÅpentOmråde 76, Skog 5
-glittertinden_spiterstulen             open   5.56 km   179 m  off  53/ 81 m  ÅpentOmråde 5
+glittertinden_spiterstulen             open   1.23 km  3218 m  off  92/260 m  ÅpentOmråde 76, Skog 5
+glittertinden_spiterstulen             open   5.56 km   179 m  off  54/ 80 m  ÅpentOmråde 5
 glittertinden_spiterstulen             open   6.29 km   269 m  off  43/ 49 m  ÅpentOmråde 7
-glittertinden_spiterstulen             open   8.02 km  1495 m  off  66/ 93 m  ÅpentOmråde 38
-grafjell_tempelseter                   open   1.04 km   849 m  off 129/167 m  Innsjø 20, Myr 1, Skog 1
-grafjell_tempelseter                   open   3.65 km   179 m  off  41/ 60 m  Innsjø 4, ÅpentOmråde 1
+glittertinden_spiterstulen             open   8.02 km  1494 m  off  67/ 93 m  ÅpentOmråde 38
+grafjell_tempelseter                   open   1.05 km   868 m  off 128/167 m  Innsjø 20, Myr 1, Skog 1
+grafjell_tempelseter                   open   3.65 km   179 m  off  40/ 60 m  Innsjø 3, ÅpentOmråde 2
 gronlifjellet_litlebotn                open   0.79 km   229 m  off  39/ 49 m  Myr 4, Skog 2
 gronlifjellet_litlebotn                open   3.27 km   319 m  off  66/ 84 m  Myr 3, Skog 3, ÅpentOmråde 3
 gronlifjellet_litlebotn                open   3.86 km  1378 m  off  72/108 m  ÅpentOmråde 35
@@ -119,34 +121,37 @@ gullfjellstoppen_osavatnet             open   0.01 km   159 m  off  75/113 m  Å
 gygrastolen_normalruta                 SKOG   0.86 km  1229 m  off  68/207 m  Skog 31
 gygrastolen_normalruta                 open   4.37 km   537 m  off 120/172 m  ÅpentOmråde 14
   -> left as it is: 0.86 km: the path is 2122 m against 1229 m of line
-gyranfisen_vikerkoia                   open   0.14 km   319 m  off  92/124 m  Myr 6, Skog 3
-gyranfisen_vikerkoia                   SKOG   0.51 km   289 m  off  89/116 m  Skog 8
-gyranfisen_vikerkoia                   SKOG   3.46 km   898 m  off 116/154 m  Skog 20, Innsjø 1, Myr 1, ÅpentOmråde 1
-  -> left as it is: 0.51 km: the path is 1186 m against 289 m of line; 3.46 km: research waypoint Vest for Venekollen is not on this path
+gyranfisen_vikerkoia                   open   0.14 km   319 m  off  92/125 m  Myr 7, Skog 2
+gyranfisen_vikerkoia                   SKOG   0.51 km   289 m  off  88/118 m  Skog 8
+gyranfisen_vikerkoia                   SKOG   3.47 km   888 m  off 116/154 m  Skog 20, Innsjø 1, Myr 1, ÅpentOmråde 1
+  -> left as it is: 0.51 km: the path is 1186 m against 289 m of line; 3.29 km: research waypoint Vest for Venekollen is not on this path
 hamperokken_normalruta                 SKOG   0.47 km   361 m  off  99/185 m  Skog 10
 hamperokken_normalruta                 open   2.45 km   215 m  off  80/122 m  ÅpentOmråde 6
   -> left as it is: 0.47 km: research waypoint Vartavarhaugen is not on this path
 hattfjellet_sorsiden                   SKOG   0.75 km   346 m  off  85/122 m  Skog 9
   -> left as it is: 0.75 km: research waypoint traktorveien i Bjørndalen is not on this path
-haukebotinden_ostsiden                 open   0.04 km   209 m  off  48/ 61 m  DyrketMark 6
-heia_ost-1                             SKOG   0.60 km   388 m  off  63/ 81 m  Skog 10
-  -> left as it is: still in the forest beside the path: 248 m at 1.24 km
+haukebotinden_ostsiden                 open   0.03 km   219 m  off  48/ 61 m  DyrketMark 5, Skog 1
+heia_ost-1                             SKOG   1.27 km   248 m  off  40/ 59 m  Skog 4, ÅpentOmråde 3
+  -> left as it is: 1.25 km: the path is 577 m against 248 m of line
 himmeltindan_normalruta                open   0.04 km   329 m  off  55/ 96 m  DyrketMark 5, ÅpentOmråde 4
 hinnstein_sorost                       SKOG   0.44 km   298 m  off  73/111 m  Skog 8
 hinnstein_sorost                       SKOG   0.88 km   249 m  off  43/ 67 m  Skog 7
 hinnstein_sorost                       open   2.03 km   328 m  off  57/ 86 m  ÅpentOmråde 7, Skog 2
   -> left as it is: 0.44 km: the path is 837 m against 298 m of line; 0.88 km: the path is 740 m against 249 m of line
-hogevarde_norefjellstua                open   5.29 km   646 m  off  89/181 m  ÅpentOmråde 17
-hogevarde_norefjellstua                open   6.27 km   969 m  off 104/169 m  ÅpentOmråde 25
-hogevarde_tempelseter                  open   0.31 km   279 m  off  69/ 91 m  ÅpentOmråde 5, Skog 3
-hogevarde_tempelseter                  open   0.89 km   189 m  off  58/ 86 m  ÅpentOmråde 5
+hogevarde_norefjellstua                SKOG   0.46 km   279 m  off  73/111 m  Skog 5, ÅpentOmråde 3
+hogevarde_norefjellstua                open   5.14 km   646 m  off  89/182 m  ÅpentOmråde 17
+hogevarde_norefjellstua                open   6.12 km   969 m  off 103/170 m  ÅpentOmråde 25
+hogevarde_norefjellstua                open  11.11 km   159 m  off  45/ 67 m  ÅpentOmråde 3, Innsjø 2
+  -> left as it is: 0.46 km: the path is 579 m against 279 m of line
+hogevarde_tempelseter                  open   0.33 km   279 m  off  68/ 91 m  ÅpentOmråde 5, Skog 3
+hogevarde_tempelseter                  open   0.86 km   239 m  off  50/ 88 m  ÅpentOmråde 7
 horndalsnuten_normalruta               SKOG   0.05 km   229 m  off  54/ 99 m  Skog 6
 horndalsnuten_normalruta               open   0.38 km  1288 m  off 106/220 m  Elv 21, Skog 12
 horndalsnuten_normalruta               SKOG   1.77 km   329 m  off  77/121 m  Skog 9
   -> left as it is: 0.05 km: the path is 623 m against 229 m of line; 1.77 km: the path is 828 m against 329 m of line
 horndalsnuten_skaftedalen              open   3.33 km   177 m  off  53/ 63 m  ÅpentOmråde 5
 horndalsnuten_skaftedalen              open   3.80 km  1945 m  off 112/293 m  ÅpentOmråde 50
-husfjellet_skaland                     open   1.39 km   289 m  off  42/ 60 m  ÅpentOmråde 8
+husfjellet_skaland                     open   1.42 km   279 m  off  43/ 60 m  ÅpentOmråde 8
 istinden_normalvegen                   open   4.59 km   352 m  off 107/131 m  ÅpentOmråde 10
 jakobstinden_sorostsiden               SKOG   0.57 km   386 m  off  59/ 91 m  Skog 9, Elv 2
 jakobstinden_sorostsiden               SKOG   1.43 km   259 m  off  51/ 73 m  Skog 7
@@ -163,16 +168,16 @@ kjerag_normalruta                      open   2.85 km   279 m  off  55/ 76 m  In
 kjolen_finnvikdalen                    open   0.21 km   289 m  off  51/ 60 m  ÅpentOmråde 8
 kjolen_finnvikdalen                    open   0.77 km   848 m  off 125/206 m  ÅpentOmråde 22
 kjolen_finnvikdalen                    open   3.85 km   159 m  off  44/ 48 m  ÅpentOmråde 5
-kjolen_kvaloysletta                    open   6.32 km   369 m  off  80/120 m  ÅpentOmråde 10
+kjolen_kvaloysletta                    open   6.55 km   369 m  off  80/119 m  ÅpentOmråde 10
 kjolen_slettaelva                      open   0.53 km   937 m  off  96/121 m  Myr 11, ÅpentOmråde 7, Skog 6
 kjolen_slettaelva                      open   1.62 km  1133 m  off  97/164 m  ÅpentOmråde 30
 kjolen_slettaelva                      open   3.21 km   717 m  off 117/242 m  ÅpentOmråde 19
 kleppstadheia_normalruta               SKOG   0.29 km  1152 m  off 123/260 m  Skog 17, ÅpentOmråde 13
 kleppstadheia_normalruta               open   1.55 km   229 m  off  66/ 94 m  ÅpentOmråde 6
   -> left as it is: 0.29 km: research waypoint ryggen mot punkt 156 is not on this path
-kolastinden_normalruta                 open   1.95 km   189 m  off  52/ 58 m  ÅpentOmråde 5
-kolastinden_normalruta                 open   2.21 km   159 m  off  46/ 53 m  ÅpentOmråde 5
-kolastinden_normalruta                 open   3.27 km   353 m  off  74/117 m  ÅpentOmråde 8, ? 2
+kolastinden_normalruta                 open   1.96 km   189 m  off  52/ 59 m  ÅpentOmråde 5
+kolastinden_normalruta                 open   2.22 km   159 m  off  46/ 53 m  ÅpentOmråde 5
+kolastinden_normalruta                 open   3.28 km   353 m  off  74/117 m  ÅpentOmråde 8, ? 2
 kvalhornet_nattmalstuva                open   3.62 km   703 m  off  90/136 m  ÅpentOmråde 18
 kvamshesten_normalruta                 open   1.91 km   428 m  off 110/147 m  Innsjø 8, ÅpentOmråde 3
 langlitinden_vestsiden                 SKOG   0.81 km   708 m  off 107/221 m  Skog 19
@@ -190,15 +195,15 @@ lonahorgi_normalruta                   SKOG   0.04 km   619 m  off  84/112 m  Sk
 lonketind_normalruta                   open   2.46 km   329 m  off  59/ 92 m  ÅpentOmråde 9
 melderskin_myrdalsvatnet               SKOG   0.29 km   459 m  off  96/116 m  Skog 12
   -> left as it is: 0.29 km: the path is 871 m against 459 m of line
-mellomkollen_skar                      open   0.68 km   269 m  off  77/104 m  DyrketMark 4, Skog 3
+mellomkollen_skar                      open   0.68 km   259 m  off  76/103 m  DyrketMark 4, Skog 3
 middagstinden_normalveien              SKOG   0.23 km   399 m  off  98/163 m  Skog 9, Myr 2
 middagstinden_normalveien              SKOG   0.70 km  1217 m  off 138/172 m  Skog 25, Myr 6
   -> left as it is: gain 1308 m against the card's 1290 m; 0.23 km: research waypoint vegen inn langs Berillvatnet is not on this path
 midtitinden_sagelva                    SKOG   0.09 km   288 m  off  79/117 m  Skog 7, ÅpentOmråde 1
-  -> left as it is: 0.09 km: the path is 609 m against 288 m of line
+  -> left as it is: 0.09 km: the path is 622 m against 288 m of line
 mjolvafjellet_normalveien              SKOG   0.19 km   626 m  off 101/149 m  Skog 12, Alpinbakke 3, DyrketMark 1
 mjolvafjellet_normalveien              open   2.77 km   227 m  off  68/103 m  ÅpentOmråde 5, Skog 1
-mjolvafjellet_normalveien              open   3.10 km  1801 m  off 118/299 m  ÅpentOmråde 46
+mjolvafjellet_normalveien              open   3.10 km  1802 m  off 118/299 m  ÅpentOmråde 46
   -> left as it is: 0.19 km: the path is 1156 m against 626 m of line
 molden_marifjora                       open   3.19 km   268 m  off  65/ 90 m  ÅpentOmråde 5, Skog 2
 molden_marifjora                       open   3.53 km   219 m  off  63/ 78 m  ÅpentOmråde 6
@@ -209,74 +214,72 @@ moysalen_vestryggen                    open   3.12 km   159 m  off  54/ 79 m  Å
 moysalen_vestryggen                    open   4.27 km   219 m  off  57/ 95 m  Innsjø 6
 moysalen_vestryggen                    open   4.74 km   241 m  off  81/127 m  ÅpentOmråde 7
 nevelfjell_nordseter                   open   2.61 km   239 m  off  78/131 m  ÅpentOmråde 5, Skog 1, Myr 1
-nona_sorsida                           open   0.05 km   299 m  off 109/156 m  DyrketMark 4, Skog 3, ÅpentOmråde 1
-nona_sorsida                           open   2.27 km   738 m  off  68/139 m  ÅpentOmråde 18, Innsjø 1
+nona_sorsida                           open   0.05 km   299 m  off 104/159 m  DyrketMark 3, Skog 3, ÅpentOmråde 2
+nona_sorsida                           open   2.27 km   739 m  off  67/141 m  ÅpentOmråde 17, Innsjø 2
 nonstinden_ostsiden                    open   0.07 km   349 m  off  75/127 m  Myr 4, ÅpentOmråde 3, Skog 2
 ospetinden_ostflanken                  SKOG   0.18 km   369 m  off  75/117 m  Skog 8, Myr 2
 ospetinden_ostflanken                  SKOG   0.62 km   459 m  off  78/106 m  Skog 12
-ospetinden_ostflanken                  SKOG   2.11 km  1659 m  off  86/173 m  Skog 33, Myr 6, ÅpentOmråde 3
-ospetinden_ostflanken                  SKOG   3.89 km   436 m  off 107/167 m  Skog 12
-  -> left as it is: 0.18 km: the path is 1526 m against 369 m of line; 0.62 km: the path is 1829 m against 459 m of line; 2.11 km: research waypoint myra og Stavvasselva is not on this path; 3.89 km: the path is 2810 m against 436 m of line
-pilan_normalruta                       SKOG   0.11 km   489 m  off  75/162 m  Skog 8, DyrketMark 4, ÅpentOmråde 1
-pilan_normalruta                       open   0.78 km   487 m  off  53/102 m  ÅpentOmråde 7, Skog 6
-  -> left as it is: 0.11 km: the path it leaves and the one it rejoins are not connected
-prestholtskarvet_havsdalen             SKOG   0.37 km   189 m  off  45/ 68 m  Skog 3, ÅpentOmråde 2
-prestholtskarvet_havsdalen             open   6.06 km   279 m  off  59/ 82 m  ÅpentOmråde 6, Myr 2
-prestholtskarvet_havsdalen             open   7.28 km   509 m  off 103/194 m  Myr 7, ÅpentOmråde 6
+ospetinden_ostflanken                  SKOG   2.11 km  1658 m  off  86/173 m  Skog 33, Myr 6, ÅpentOmråde 3
+ospetinden_ostflanken                  SKOG   3.89 km   437 m  off 107/168 m  Skog 12
+  -> left as it is: 0.18 km: the path is 1526 m against 369 m of line; 0.62 km: the path is 1829 m against 459 m of line; 2.11 km: research waypoint myra og Stavvasselva is not on this path; 3.89 km: the path is 2810 m against 437 m of line
+pilan_normalruta                       SKOG   0.10 km   509 m  off  73/165 m  Skog 8, ÅpentOmråde 3, DyrketMark 2
+pilan_normalruta                       open   0.79 km   474 m  off  53/101 m  ÅpentOmråde 8, Skog 5
+  -> left as it is: 0.10 km: the path it leaves and the one it rejoins are not connected
+prestholtskarvet_havsdalen             SKOG   0.37 km   189 m  off  44/ 69 m  Skog 3, ÅpentOmråde 2
+prestholtskarvet_havsdalen             open   6.06 km   279 m  off  58/ 82 m  ÅpentOmråde 7, Myr 1
+prestholtskarvet_havsdalen             open   7.28 km   509 m  off 104/194 m  Myr 7, ÅpentOmråde 6
   -> left as it is: 0.37 km: the path is 935 m against 189 m of line
 rana_normalruta                        SKOG   0.67 km   309 m  off  58/ 68 m  Skog 6, Myr 2
-rana_normalruta                        SKOG   1.61 km   258 m  off  48/ 87 m  Skog 5, ÅpentOmråde 2
-rana_normalruta                        open   3.51 km   294 m  off  55/ 85 m  ÅpentOmråde 7, Skog 1
-rana_normalruta                        open   4.07 km   179 m  off  43/ 65 m  ÅpentOmråde 5
-rana_normalruta                        open   7.14 km   285 m  off  78/124 m  ÅpentOmråde 8
-  -> left as it is: 0.67 km: the path is 2164 m against 309 m of line; 1.61 km: the path is 453 m against 258 m of line
+rana_normalruta                        SKOG   1.61 km   249 m  off  49/ 87 m  Skog 5, ÅpentOmråde 2
+rana_normalruta                        open   3.49 km   296 m  off  53/ 87 m  ÅpentOmråde 7, Skog 1
+rana_normalruta                        open   4.05 km   178 m  off  45/ 64 m  ÅpentOmråde 5
+rana_normalruta                        open   7.12 km   267 m  off  81/123 m  ÅpentOmråde 8
+  -> left as it is: 0.67 km: the path is 2164 m against 309 m of line; 1.61 km: the path is 453 m against 249 m of line
 raskarfjellet_sildegjerdet             open   2.16 km   897 m  off  97/126 m  ÅpentOmråde 23
 rasletinden_normalruta                 open   1.15 km   159 m  off  57/ 82 m  ÅpentOmråde 3, Innsjø 2
 rensfjellet_haaen                      open   0.22 km   159 m  off  53/ 70 m  Myr 4, ÅpentOmråde 1
-rensfjellet_haaen                      open  10.01 km  1179 m  off 104/178 m  ÅpentOmråde 29, Myr 1
-rodtinden_storelva                     SKOG   0.51 km   279 m  off  93/126 m  Myr 4, Skog 4
+rensfjellet_haaen                      open  10.01 km  1179 m  off 105/177 m  ÅpentOmråde 28, Myr 2
+rodtinden_storelva                     SKOG   0.51 km   279 m  off  94/125 m  Myr 4, Skog 4
   -> left as it is: 0.51 km: the path is 469 m against 279 m of line
 rombakstotta_normalruta                SKOG   0.12 km   487 m  off 128/162 m  Skog 13
   -> left as it is: 0.12 km: the path it leaves and the one it rejoins are not connected
-rondslottet_bjornhollia                SKOG   4.61 km   729 m  off  68/172 m  Skog 19
+rondslottet_bjornhollia                SKOG   4.62 km   728 m  off  67/172 m  Skog 18, ÅpentOmråde 1
 rondslottet_bjornhollia                open   5.48 km   879 m  off  64/ 95 m  ÅpentOmråde 23
-rondslottet_bjornhollia                open   6.47 km   509 m  off  54/ 72 m  ÅpentOmråde 13
-rondslottet_bjornhollia                open   7.10 km   525 m  off  56/128 m  ÅpentOmråde 14
-rondslottet_bjornhollia                open   7.98 km   629 m  off  72/125 m  ÅpentOmråde 16
-rondslottet_bjornhollia                open  10.29 km   859 m  off  81/183 m  ÅpentOmråde 22
-rondslottet_bjornhollia                open  11.41 km   822 m  off  71/122 m  ÅpentOmråde 22
-  -> left as it is: 4.61 km: research waypoint inn i Langglupdalen is not on this path
-rondslottet_doralseter                 open   4.75 km   767 m  off 119/220 m  ÅpentOmråde 20
-rondslottet_doralseter                 open  11.63 km   187 m  off  46/ 60 m  ÅpentOmråde 5
+rondslottet_bjornhollia                open   6.47 km   499 m  off  54/ 72 m  ÅpentOmråde 13
+rondslottet_bjornhollia                open   7.10 km   528 m  off  56/131 m  ÅpentOmråde 14
+rondslottet_bjornhollia                open   7.98 km   629 m  off  72/124 m  ÅpentOmråde 16
+rondslottet_bjornhollia                open  10.29 km   859 m  off  80/185 m  ÅpentOmråde 22
+rondslottet_bjornhollia                open  11.40 km   812 m  off  71/121 m  ÅpentOmråde 22
+  -> left as it is: 4.60 km: research waypoint inn i Langglupdalen is not on this path
+rondslottet_doralseter                 open   4.73 km   777 m  off 118/221 m  ÅpentOmråde 20
+rondslottet_doralseter                 open  11.63 km   176 m  off  46/ 60 m  ÅpentOmråde 5
 rondslottet_normalruta                 open   0.46 km  1599 m  off  82/165 m  ÅpentOmråde 30, Elv 11
 rondslottet_normalruta                 open   2.68 km   409 m  off  69/108 m  ÅpentOmråde 7, Myr 4
 rondslottet_normalruta                 open   3.87 km   479 m  off  42/ 56 m  ÅpentOmråde 10, Elv 3
 rondslottet_normalruta                 open   5.16 km   489 m  off  38/ 52 m  ÅpentOmråde 7, Elv 6
-rondslottet_normalruta                 open   5.74 km   289 m  off  96/139 m  ÅpentOmråde 6, Elv 1, Innsjø 1
-rondslottet_normalruta                 open   6.19 km   299 m  off  42/ 70 m  ÅpentOmråde 8
-rondslottet_normalruta                 open   6.83 km   399 m  off  65/ 83 m  ÅpentOmråde 11
-rondslottet_normalruta                 open   7.39 km   159 m  off  41/ 48 m  ÅpentOmråde 5
-rondslottet_normalruta                 open   8.50 km   389 m  off  47/ 60 m  ÅpentOmråde 10
-rondslottet_normalruta                 open  11.47 km   159 m  off  47/ 58 m  ÅpentOmråde 5
-rondslottet_normalruta                 open  12.04 km   179 m  off  39/ 48 m  ÅpentOmråde 5
+rondslottet_normalruta                 open   5.74 km   288 m  off  96/139 m  ÅpentOmråde 6, Elv 1, Innsjø 1
+rondslottet_normalruta                 open   6.23 km   299 m  off  42/ 69 m  ÅpentOmråde 8
+rondslottet_normalruta                 open   6.88 km   399 m  off  64/ 83 m  ÅpentOmråde 11
+rondslottet_normalruta                 open   7.44 km   159 m  off  40/ 48 m  ÅpentOmråde 5
+rondslottet_normalruta                 open   8.55 km   389 m  off  47/ 60 m  ÅpentOmråde 10
+rondslottet_normalruta                 open  11.51 km   159 m  off  47/ 58 m  ÅpentOmråde 5
+rondslottet_normalruta                 open  12.09 km   189 m  off  39/ 48 m  ÅpentOmråde 5
 rornestinden_normalruta                SKOG   0.68 km   258 m  off  91/151 m  Skog 7
 rornestinden_normalruta                SKOG   1.16 km   359 m  off  74/153 m  Skog 7, ÅpentOmråde 3
-rornestinden_normalruta                open   2.68 km   247 m  off  59/ 92 m  ÅpentOmråde 7
-rornestinden_normalruta                open   5.01 km   425 m  off 134/174 m  ÅpentOmråde 11
+rornestinden_normalruta                open   2.66 km   245 m  off  59/ 92 m  ÅpentOmråde 7
+rornestinden_normalruta                open   5.00 km   413 m  off 137/173 m  ÅpentOmråde 11
   -> left as it is: 0.68 km: the path is 1705 m against 258 m of line; 1.16 km: the path it leaves and the one it rejoins are not connected
 rundfjellet_kudalsheia                 open   2.09 km   513 m  off 138/223 m  ÅpentOmråde 14
 rundtind_vest                          SKOG   0.61 km   159 m  off  61/ 81 m  Skog 5
 rundtind_vest                          SKOG   1.61 km   169 m  off  43/ 59 m  Skog 3, Myr 2
-rundtind_vest                          open   1.91 km   179 m  off  41/ 51 m  Myr 5
-rundtind_vest                          open   3.20 km   639 m  off 119/184 m  Myr 9, Skog 8
-  -> left as it is: gain 895 m against the card's 880 m; still in the forest beside the path: 639 m at 3.31 km
+rundtind_vest                          SKOG   3.20 km   649 m  off 117/184 m  Skog 9, Myr 8
+  -> left as it is: gain 905 m against the card's 880 m
 saebyggjenuten_normalruta              SKOG   0.09 km   259 m  off  67/ 95 m  Skog 7
   -> left as it is: 0.09 km: the path is 469 m against 259 m of line
 sandhornet_horsdal                     SKOG   1.05 km   324 m  off  80/104 m  Skog 9
 sandhornet_horsdal                     open   1.42 km  1516 m  off 122/236 m  ÅpentOmråde 26, Skog 13
 sandhornet_horsdal                     open   3.43 km  1342 m  off 123/238 m  ÅpentOmråde 34
   -> left as it is: a point sits at or below sea level; steepest 30 m 32.5° -> 34.5°; gain 1067 m against the card's 1020 m
-sandhornet_nordostsiden                open   0.07 km   159 m  off  51/ 80 m  DyrketMark 5
 sata_eikedalen                         SKOG   0.47 km   279 m  off  50/ 75 m  Skog 6, Elv 2
 sata_eikedalen                         open   1.34 km   229 m  off  54/ 68 m  Elv 4, Myr 2
 sata_eikedalen                         open   2.19 km   159 m  off  47/ 55 m  Myr 2, Skog 2, ÅpentOmråde 1
@@ -291,46 +294,47 @@ skarene_normalruta                     open   0.29 km   169 m  off  37/ 44 m  Å
 skarene_normalruta                     SKOG   0.63 km   179 m  off  34/ 47 m  Skog 5
 skarene_normalruta                     SKOG   1.42 km   179 m  off  44/ 52 m  Skog 3, Myr 2
   -> left as it is: gain 1239 m against the card's 1220 m
-skarlitinden_normalruta                SKOG   0.04 km   239 m  off  47/ 85 m  Skog 4, DyrketMark 3
-  -> left as it is: 0.04 km: the path is 389 m against 239 m of line
+skarlitinden_normalruta                SKOG   0.05 km   239 m  off  45/ 88 m  Skog 4, DyrketMark 3
+  -> left as it is: 0.05 km: the path is 389 m against 239 m of line
 skarsteinfjellet_normalruta            SKOG   0.30 km   178 m  off  70/ 98 m  Skog 5
   -> left as it is: 0.30 km: the path is 486 m against 178 m of line
 skarven_normalveien                    SKOG   0.57 km   467 m  off  82/155 m  Skog 10, Myr 2
 skarven_normalveien                    SKOG   1.12 km   353 m  off  89/161 m  Skog 7, ÅpentOmråde 3
   -> left as it is: 0.57 km: the path is 1455 m against 467 m of line; 1.12 km: research waypoint sør for topp 588 is not on this path
-skjellesvikgalten_ostryggen            open   0.13 km   199 m  off  50/ 66 m  DyrketMark 6
+skjellesvikgalten_ostryggen            open   0.12 km   219 m  off  51/ 66 m  DyrketMark 4, Skog 2
 skjomtinden_normalruta                 open   0.13 km   269 m  off  60/ 94 m  DyrketMark 6, Skog 1
-skrott_fitjadalen                      open   3.43 km   219 m  off  53/ 66 m  ÅpentOmråde 6
+skrott_fitjadalen                      open   3.41 km   219 m  off  52/ 68 m  ÅpentOmråde 6
 slattheia_sorostsiden                  open   0.05 km   219 m  off  85/139 m  ÅpentOmråde 3, DyrketMark 3
-slogen_normalruta                      open   3.32 km   259 m  off  82/143 m  ÅpentOmråde 7
-slogen_normalruta                      open   4.50 km   178 m  off  36/ 59 m  ÅpentOmråde 5
-snohetta_normalruta                    open   3.70 km   326 m  off  87/155 m  ÅpentOmråde 9
-snohetta_normalruta                    open   4.66 km   165 m  off  47/ 72 m  ÅpentOmråde 5
-snonipa_normalruta                     SKOG   0.05 km   228 m  off  71/115 m  Skog 5, DyrketMark 1
-snonipa_normalruta                     open   0.58 km  1346 m  off 118/169 m  ÅpentOmråde 19, Skog 14, ? 1
-  -> left as it is: 0.05 km: the path it leaves and the one it rejoins are not connected
+slogen_normalruta                      open   3.33 km   259 m  off  81/144 m  ÅpentOmråde 7
+slogen_normalruta                      open   4.51 km   177 m  off  36/ 58 m  ÅpentOmråde 5
+snohetta_normalruta                    open   3.70 km   324 m  off  87/154 m  ÅpentOmråde 9
+snohetta_normalruta                    open   4.68 km   156 m  off  48/ 73 m  ÅpentOmråde 5
+snonipa_normalruta                     SKOG   0.12 km   225 m  off  72/113 m  Skog 6
+snonipa_normalruta                     open   0.66 km  1344 m  off 118/169 m  ÅpentOmråde 20, Skog 14
+  -> left as it is: 0.12 km: the path it leaves and the one it rejoins are not connected
 snonipa_veitebergsdalen                open   0.04 km   249 m  off  80/127 m  DyrketMark 5, Skog 1, ? 1
-snonipa_veitebergsdalen                SKOG   0.48 km   179 m  off  53/ 83 m  Skog 3, DyrketMark 2
-  -> left as it is: 0.48 km: the path it leaves and the one it rejoins are not connected
+snonipa_veitebergsdalen                SKOG   0.49 km   169 m  off  56/ 83 m  Skog 3, DyrketMark 2
+  -> left as it is: 0.49 km: the path it leaves and the one it rejoins are not connected
 snota_grahaugen                        open   1.66 km  1319 m  off  91/123 m  ÅpentOmråde 29, Myr 5
 snota_grahaugen                        open   4.38 km   499 m  off 112/181 m  ÅpentOmråde 13
 snota_grahaugen                        open   8.23 km   467 m  off 114/178 m  ÅpentOmråde 10, SnøIsbre 2
 snota_grahaugen                        open   8.92 km   827 m  off  66/174 m  ÅpentOmråde 18, SnøIsbre 3
-snota_trollheimshytta                  open   0.28 km   449 m  off 124/208 m  Myr 7, Skog 4, Elv 1
-snota_trollheimshytta                  open   4.53 km   519 m  off  54/ 69 m  ÅpentOmråde 13, Skog 1
-snota_trollheimshytta                  open  10.56 km   465 m  off  55/114 m  ÅpentOmråde 12
-snotinden_vestsiden                    SKOG   0.74 km   628 m  off  62/ 91 m  Skog 15, ÅpentOmråde 1
-  -> left as it is: gain 1218 m against the card's 1240 m
-spanstinden_lapphaugen                 open   3.76 km   858 m  off 114/164 m  ÅpentOmråde 22
+snota_trollheimshytta                  open   0.31 km   459 m  off 120/208 m  Myr 6, Skog 5, Elv 1
+snota_trollheimshytta                  open   4.57 km   529 m  off  54/ 69 m  ÅpentOmråde 13, Skog 1
+snota_trollheimshytta                  open  10.59 km   475 m  off  55/115 m  ÅpentOmråde 13
+snotinden_vestsiden                    SKOG   0.69 km   697 m  off  61/ 90 m  Skog 18
+snotinden_vestsiden                    SKOG   1.96 km   359 m  off  75/113 m  Skog 8, ? 1, Myr 1
+  -> left as it is: gain 1215 m against the card's 1240 m
+spanstinden_lapphaugen                 open   3.75 km   858 m  off 115/163 m  ÅpentOmråde 22
 spanstinden_normalruta                 open   4.22 km   859 m  off 111/167 m  ÅpentOmråde 22
-steindalsnosi_helgedalen               open   0.85 km   859 m  off  84/151 m  ÅpentOmråde 11, Myr 11
-steindalsnosi_helgedalen               open   3.48 km  1325 m  off 134/261 m  ÅpentOmråde 21, Skog 13
-steindalsnosi_helgedalen               open   7.30 km   199 m  off  74/112 m  ÅpentOmråde 6
+steindalsnosi_helgedalen               open   0.87 km   859 m  off  84/150 m  Myr 13, ÅpentOmråde 9
+steindalsnosi_helgedalen               open   3.49 km  1326 m  off 133/261 m  ÅpentOmråde 21, Skog 13
+steindalsnosi_helgedalen               open   7.32 km   208 m  off  71/114 m  ÅpentOmråde 6
 steindalsnosi_normalruta               open   2.12 km  1625 m  off  85/193 m  ÅpentOmråde 42
-storbekkhoa_storli                     open   3.99 km   277 m  off  76/128 m  ÅpentOmråde 7, Innsjø 1
+storbekkhoa_storli                     open   3.99 km   278 m  off  76/128 m  ÅpentOmråde 7, Innsjø 1
 store-blamann_normalruta               open   1.83 km   173 m  off  72/ 96 m  ÅpentOmråde 5
 store-ble_sigridsbu                    open   0.59 km   219 m  off  69/ 87 m  Innsjø 4, Skog 2
-storlitinden_sorsiden                  open   2.49 km   199 m  off  84/133 m  ÅpentOmråde 6
+storlitinden_sorsiden                  open   2.50 km   209 m  off  81/132 m  ÅpentOmråde 6
 storronden_normalruta                  open   0.55 km  1429 m  off  96/178 m  ÅpentOmråde 27, Elv 9
 storronden_normalruta                  open   2.64 km   519 m  off  64/ 93 m  ÅpentOmråde 11, Myr 3
 storronden_normalruta                  open   3.47 km   199 m  off  43/ 67 m  Elv 4, ÅpentOmråde 2
@@ -340,65 +344,62 @@ storronden_normalruta                  open   6.27 km   439 m  off  72/ 82 m  Å
 storronden_normalruta                  open   6.77 km   539 m  off  55/ 66 m  ÅpentOmråde 14
 storronden_normalruta                  open   7.90 km   209 m  off  44/ 49 m  ÅpentOmråde 6
 storronden_normalruta                  open   8.67 km   589 m  off  96/143 m  ÅpentOmråde 15
+stortinden-langfjord_langfjordbotn     open   0.07 km   290 m  off  80/125 m  DyrketMark 7, Skog 1
 stortinden-rolla_vestruta              open   6.34 km   676 m  off  95/189 m  ÅpentOmråde 18
 stortinden-sortland_vestsiden          open   1.07 km   685 m  off 104/198 m  ÅpentOmråde 16, Skog 2
 stortussen_sydryggen                   open   0.06 km   229 m  off  87/144 m  ÅpentOmråde 4, DyrketMark 2
-strandtinden_kanstadbotn               open   0.99 km   749 m  off  62/101 m  ÅpentOmråde 15, Skog 3, Myr 1
+strandtinden_kanstadbotn               open   0.99 km   759 m  off  61/103 m  ÅpentOmråde 16, Skog 3, Myr 1
 styggemann_ravalsjo                    open   0.29 km   999 m  off  94/229 m  Innsjø 14, Skog 7, ÅpentOmråde 3, Myr 2
 styggemann_ravalsjo                    open   3.64 km   199 m  off  47/ 58 m  Innsjø 5, Skog 1
 styggemann_ravalsjo                    open   3.98 km   419 m  off 120/210 m  Innsjø 8, ÅpentOmråde 3
 styggemann_ravalsjo                    open   6.75 km   835 m  off  82/184 m  Skog 10, Myr 4, Innsjø 3, ÅpentOmråde 3, DyrketMark 2
 styggemann_ravalsjo                    SKOG   7.66 km  1019 m  off 102/263 m  Skog 26
   -> left as it is: 7.66 km: the path is 1683 m against 1019 m of line
-sula_fra-breivoll                      SKOG   0.69 km   559 m  off 121/247 m  Skog 12, DyrketMark 3
-sula_fra-breivoll                      open   2.04 km   398 m  off  71/143 m  ÅpentOmråde 8, Skog 3
-  -> left as it is: 0.69 km: the path is 1760 m against 559 m of line
-surloytenuten_sudstul                  SKOG   0.26 km   175 m  off  64/ 88 m  Skog 5
-  -> left as it is: 0.26 km: the path is 450 m against 175 m of line
+sula_fra-breivoll                      SKOG   0.70 km   559 m  off 121/245 m  Skog 12, DyrketMark 3
+sula_fra-breivoll                      open   2.04 km   398 m  off  70/142 m  ÅpentOmråde 8, Skog 3
+  -> left as it is: 0.70 km: the path is 1760 m against 559 m of line
+surloytenuten_sudstul                  SKOG   0.26 km   184 m  off  62/ 88 m  Skog 5
+  -> left as it is: 0.26 km: the path is 450 m against 184 m of line
 synshorn_normalruta                    open   0.06 km   596 m  off 115/204 m  ÅpentOmråde 13, Myr 3
 synshorn_normalruta                    open   0.92 km   338 m  off 103/162 m  ÅpentOmråde 9
-taraldsviktinden_nordryggen            open   0.18 km   249 m  off  80/105 m  DyrketMark 3, ÅpentOmråde 3, Skog 1
-taraldsviktinden_nordryggen            SKOG   0.61 km   449 m  off  86/175 m  Skog 12
-  -> left as it is: 0.61 km: the path it leaves and the one it rejoins are not connected
+taraldsviktinden_nordryggen            open   0.18 km   259 m  off  74/105 m  DyrketMark 3, ÅpentOmråde 3, Skog 1
+taraldsviktinden_nordryggen            SKOG   0.62 km   439 m  off  86/173 m  Skog 12
+  -> left as it is: 0.62 km: the path it leaves and the one it rejoins are not connected
 togga_brandhaugane                     SKOG   0.32 km   179 m  off  48/ 81 m  Skog 5
 togga_brandhaugane                     open   2.30 km   219 m  off  84/119 m  ÅpentOmråde 6
   -> left as it is: 0.32 km: the path is 449 m against 179 m of line
 tomskjevelen_forsland                  open   0.40 km   436 m  off  71/111 m  ÅpentOmråde 12
 toppen_ostsiden                        open   1.92 km   474 m  off 120/198 m  ÅpentOmråde 13
-torvloysa_normalruta                   SKOG   0.05 km   879 m  off  51/ 89 m  Skog 16, Myr 4, ÅpentOmråde 3
-torvloysa_normalruta                   open   1.09 km  1348 m  off  71/116 m  Myr 19, Skog 10, ÅpentOmråde 5
-  -> left as it is: gain 1477 m against the card's 1460 m
-trolltinden_ryggruta                   open   0.33 km   219 m  off  66/102 m  DyrketMark 4, ÅpentOmråde 1, Skog 1
-tromsdalstinden_sommerruta             SKOG   2.46 km   189 m  off  46/ 61 m  Skog 5
-  -> left as it is: 2.46 km: the path is 316 m against 189 m of line
-tveitakvitingen_furedalen              SKOG   1.81 km   358 m  off  68/ 88 m  Skog 8, Myr 1, Elv 1
-tveitakvitingen_furedalen              open   5.86 km   269 m  off  79/125 m  ÅpentOmråde 7
-tveitakvitingen_furedalen              open   7.27 km   539 m  off  82/113 m  ÅpentOmråde 13, ? 1
-tveitakvitingen_furedalen              open   7.85 km   378 m  off  71/ 86 m  ÅpentOmråde 9, ? 1
-  -> left as it is: gain 989 m against the card's 1000 m
+torvloysa_normalruta                   open   1.15 km  1348 m  off  71/116 m  Myr 18, Skog 11, ÅpentOmråde 5
+trolltinden_ryggruta                   open   0.34 km   209 m  off  70/102 m  DyrketMark 4, ÅpentOmråde 1, Skog 1
+tveitakvitingen_furedalen              open   5.86 km   268 m  off  80/127 m  ÅpentOmråde 7
+tveitakvitingen_furedalen              open   7.28 km   529 m  off  83/114 m  ÅpentOmråde 12, ? 2
+tveitakvitingen_furedalen              open   7.85 km   389 m  off  70/ 87 m  ÅpentOmråde 9, ? 1
 tverrfjellet_sorsiden                  SKOG   0.32 km   449 m  off 137/198 m  Skog 10, Myr 2
   -> left as it is: 0.32 km: the path it leaves and the one it rejoins are not connected
-tylderingen_fretland                   open   0.95 km   306 m  off  78/133 m  ÅpentOmråde 5, Skog 3
-tylderingen_fretland                   open   1.56 km   539 m  off  87/117 m  ÅpentOmråde 7, Myr 4, Skog 3
-tylderingen_fretland                   open   2.44 km   209 m  off  37/ 51 m  ÅpentOmråde 6
+tylderingen_fretland                   open   0.96 km   306 m  off  78/133 m  ÅpentOmråde 5, Skog 3
+tylderingen_fretland                   open   1.57 km   539 m  off  86/118 m  ÅpentOmråde 7, Myr 5, Skog 2
+tylderingen_fretland                   open   2.45 km   209 m  off  37/ 51 m  ÅpentOmråde 6
 ustetind_ustaoset                      open   0.06 km   619 m  off  88/206 m  Myr 7, Skog 5, ÅpentOmråde 2, Innsjø 2
-varden-smaatindan_kabelvagmarka        SKOG   1.71 km   861 m  off 115/195 m  Skog 17, ÅpentOmråde 5
-varden-smaatindan_kabelvagmarka        open   4.39 km   206 m  off  44/ 68 m  ÅpentOmråde 6
-  -> left as it is: 1.71 km: research waypoint foten av Aksla, Aksla-ryggen is not on this path
-vassdalstinden_normalruta              SKOG   0.64 km  1468 m  off  78/214 m  Skog 37
-vassdalstinden_normalruta              open   4.68 km   324 m  off  78/123 m  ÅpentOmråde 9
-  -> left as it is: gain 1226 m against the card's 1210 m
+varden-smaatindan_kabelvagmarka        SKOG   1.69 km   861 m  off 115/196 m  Skog 17, ÅpentOmråde 5
+varden-smaatindan_kabelvagmarka        open   4.38 km   207 m  off  44/ 68 m  ÅpentOmråde 6
+  -> left as it is: 1.69 km: research waypoint foten av Aksla, Aksla-ryggen is not on this path
+vassdalstinden_normalruta              SKOG   0.70 km  1469 m  off  77/215 m  Skog 37
+vassdalstinden_normalruta              open   2.75 km   159 m  off  39/ 45 m  ÅpentOmråde 4, Elv 1
+vassdalstinden_normalruta              open   3.26 km   244 m  off  61/ 85 m  ÅpentOmråde 4, Skog 3
+vassdalstinden_normalruta              open   4.61 km   323 m  off  78/122 m  ÅpentOmråde 9
+  -> left as it is: gain 1232 m against the card's 1220 m; still in the forest beside the path: 246 m at 3.6 km
 vatnaknausen_tverrberg                 SKOG   0.11 km   219 m  off  47/ 63 m  Skog 6
 vatnaknausen_tverrberg                 open   1.30 km   199 m  off  47/ 56 m  Myr 4, Skog 2
 vatnaknausen_tverrberg                 SKOG   2.11 km   219 m  off  52/ 54 m  Skog 6
-vatnaknausen_tverrberg                 open   3.79 km   558 m  off  68/111 m  Myr 8, Skog 5, ÅpentOmråde 2
-  -> left as it is: gain 1004 m against the card's 980 m; still in the forest beside the path: 189 m at 1.33 km
+vatnaknausen_tverrberg                 open   3.80 km   557 m  off  69/110 m  Myr 7, Skog 6, ÅpentOmråde 2
+  -> left as it is: gain 1005 m against the card's 980 m; still in the forest beside the path: 189 m at 1.33 km
 venevassegga_jakobskardet              open   0.98 km   489 m  off  87/112 m  ÅpentOmråde 13
 venevassegga_jakobskardet              open   3.74 km   289 m  off  59/ 68 m  ÅpentOmråde 8
 vesle-nup_ulevaa                       open   0.79 km   179 m  off  63/ 87 m  ÅpentOmråde 4, Myr 1
 vesle-nup_ulevaa                       open   1.22 km   359 m  off  63/ 84 m  ÅpentOmråde 10
 vesoldo_normalruta                     SKOG   0.08 km   471 m  off 111/197 m  Skog 13
 vesoldo_normalruta                     SKOG   0.65 km   227 m  off  77/113 m  Skog 6
-vesoldo_normalruta                     open   1.62 km   172 m  off  57/ 88 m  ÅpentOmråde 5
+vesoldo_normalruta                     open   1.63 km   172 m  off  58/ 87 m  ÅpentOmråde 5
   -> left as it is: 0.08 km: the path is 1133 m against 471 m of line; 0.65 km: the path is 1114 m against 227 m of line
 ytstevasshornet_normalruta             open   0.16 km   169 m  off  42/ 71 m  ÅpentOmråde 3, ? 2

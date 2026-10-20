@@ -14,6 +14,13 @@
     },
     "waypoints": [
      {
+      "name": "utenom bygningene",
+      "lat": 69.6312,
+      "lng": 19.03676,
+      "elevation_m": 33.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/133265867."
+     },
+     {
       "name": "Skogsbilvegen, vestsida av Tromsdalselva",
       "lat": 69.617,
       "lng": 19.0625,
@@ -66,10 +73,52 @@
     },
     "waypoints": [
      {
+      "name": "utenom bygningene",
+      "lat": 69.63128,
+      "lng": 19.03652,
+      "elevation_m": 33.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/133265867."
+     },
+     {
       "lat": 69.617,
       "lng": 19.0625,
       "name": "Der stien forlater Tromsdalen",
       "elevation_m": 127.8
+     },
+     {
+      "name": "stien ved 2.46 km",
+      "lat": 69.61448,
+      "lng": 19.06678
+     },
+     {
+      "name": "stien ved 2.46 km",
+      "lat": 69.61387,
+      "lng": 19.06757
+     },
+     {
+      "name": "stien ved 2.46 km",
+      "lat": 69.61327,
+      "lng": 19.06837
+     },
+     {
+      "name": "stien ved 2.46 km",
+      "lat": 69.61315,
+      "lng": 19.06901
+     },
+     {
+      "name": "stien ved 2.46 km",
+      "lat": 69.61329,
+      "lng": 19.06983
+     },
+     {
+      "name": "stien ved 2.46 km",
+      "lat": 69.613,
+      "lng": 19.07147
+     },
+     {
+      "name": "stien ved 2.46 km",
+      "lat": 69.61315,
+      "lng": 19.07224
      },
      {
       "lat": 69.6156,
@@ -99,7 +148,8 @@
     "source": "documented alternative route",
     "note": "Same car park as the ski line, different mountain: this is the marked summer path up the north-north-west ridge. Steep and icy low down in winter.",
     "implied_start_m": null,
-    "start_vs_implied_m": null
+    "start_vs_implied_m": null,
+    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (199 m from 2.46 km)."
    }
   ]
  },
@@ -234,6 +284,13 @@
       "elevation_m": 316.7
      },
      {
+      "name": "utenom bygningene",
+      "lat": 69.56095,
+      "lng": 20.18257,
+      "elevation_m": 322.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/951761899."
+     },
+     {
       "name": "Gjerdelvdalen, sørsida av Gjerdelva",
       "lat": 69.5625,
       "lng": 20.16,
@@ -286,10 +343,31 @@
       "elevation_m": 201.4
      },
      {
+      "name": "utenom bygningene",
+      "lat": 69.56104,
+      "lng": 20.18353,
+      "elevation_m": 312.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/951761899."
+     },
+     {
       "name": "Skihytta, ryggen øst for elva",
       "lat": 69.56103,
       "lng": 20.18306,
       "elevation_m": 316.7
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 69.56091,
+      "lng": 20.18292,
+      "elevation_m": 319.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/951761899."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 69.56096,
+      "lng": 20.18264,
+      "elevation_m": 320.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/951761899."
      },
      {
       "name": "Åpen nordflanke vest for Skihytta",
@@ -338,43 +416,57 @@
     },
     "waypoints": [
      {
+      "name": "utenom bygningene",
+      "lat": 69.50449,
+      "lng": 17.62536,
+      "elevation_m": 50.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/169591270."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 69.50483,
+      "lng": 17.62458,
+      "elevation_m": 50.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/169591270."
+     },
+     {
       "name": "Stistart ved øvre Fjordgård",
       "lat": 69.50818,
       "lng": 17.62134,
       "elevation_m": 49.2
      },
      {
-      "name": "stien ved 0.52 km",
+      "name": "stien ved 0.54 km",
       "lat": 69.50835,
       "lng": 17.62038
      },
      {
-      "name": "stien ved 0.52 km",
+      "name": "stien ved 0.54 km",
       "lat": 69.50818,
       "lng": 17.61944
      },
      {
-      "name": "stien ved 0.52 km",
+      "name": "stien ved 0.54 km",
       "lat": 69.50829,
       "lng": 17.61854
      },
      {
-      "name": "stien ved 0.52 km",
+      "name": "stien ved 0.54 km",
       "lat": 69.50815,
       "lng": 17.61644
      },
      {
-      "name": "stien ved 0.52 km",
+      "name": "stien ved 0.54 km",
       "lat": 69.50855,
       "lng": 17.61484
      },
      {
-      "name": "stien ved 0.52 km",
+      "name": "stien ved 0.54 km",
       "lat": 69.50901,
       "lng": 17.61387
      },
      {
-      "name": "stien ved 0.52 km",
+      "name": "stien ved 0.54 km",
       "lat": 69.50947,
       "lng": 17.6129
      },
@@ -407,7 +499,7 @@
     "notes": "",
     "implied_start_m": 47.4,
     "start_vs_implied_m": 0.1,
-    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (269 m from 0.52 km)."
+    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (259 m from 0.54 km)."
    }
   ]
  },
@@ -639,44 +731,58 @@
     "description": "Normalruta frå Skylstad over Pukkelen",
     "trailhead": {
      "name": "Skylstad i Norangsdalen",
-     "lat": 62.18653,
-     "lng": 6.68992,
-     "elevation_m": 84.7,
+     "lat": 62.18655,
+     "lng": 6.68991,
+     "elevation_m": 85.0,
      "fullName": "Skylstad i Norangsdalen"
     },
     "waypoints": [
      {
-      "name": "stien ved 1.35 km",
+      "name": "utenom bygningene",
+      "lat": 62.18665,
+      "lng": 6.69009,
+      "elevation_m": 83.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/940285094."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 62.18668,
+      "lng": 6.69038,
+      "elevation_m": 83.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/940285094."
+     },
+     {
+      "name": "stien ved 1.36 km",
       "lat": 62.1943,
       "lng": 6.69541
      },
      {
-      "name": "stien ved 1.35 km",
+      "name": "stien ved 1.36 km",
       "lat": 62.19466,
       "lng": 6.69635
      },
      {
-      "name": "stien ved 1.35 km",
+      "name": "stien ved 1.36 km",
       "lat": 62.19501,
       "lng": 6.69728
      },
      {
-      "name": "stien ved 1.35 km",
+      "name": "stien ved 1.36 km",
       "lat": 62.19584,
       "lng": 6.69748
      },
      {
-      "name": "stien ved 2.11 km",
-      "lat": 62.19894,
-      "lng": 6.70072
+      "name": "stien ved 2.12 km",
+      "lat": 62.199,
+      "lng": 6.70078
      },
      {
-      "name": "stien ved 2.11 km",
+      "name": "stien ved 2.12 km",
       "lat": 62.19948,
       "lng": 6.70162
      },
      {
-      "name": "stien ved 2.11 km",
+      "name": "stien ved 2.12 km",
       "lat": 62.19991,
       "lng": 6.70189
      },
@@ -703,7 +809,7 @@
     "notes": "",
     "implied_start_m": 83.4,
     "start_vs_implied_m": 1.3,
-    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (293 m from 1.35 km, 178 m from 2.11 km); replaced Brekkheida (Skylstadbrekka), Over Brekkheida ved Brekkeelva, ~650 m."
+    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (292 m from 1.36 km, 179 m from 2.12 km); replaced Brekkheida (Skylstadbrekka), Over Brekkheida ved Brekkeelva, ~650 m."
    },
    {
     "id": "oye-direkte",
@@ -717,6 +823,13 @@
      "fullName": "Slogen-parkeringa i Norangsdalen"
     },
     "waypoints": [
+     {
+      "name": "utenom bygningene",
+      "lat": 62.1873,
+      "lng": 6.67541,
+      "elevation_m": 51.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/940285161."
+     },
      {
       "name": "Nedre fjellsida",
       "lat": 62.193,
@@ -764,6 +877,27 @@
      "fullName": "Standaleidet ved Standalhytta"
     },
     "waypoints": [
+     {
+      "name": "utenom bygningene",
+      "lat": 62.24731,
+      "lng": 6.35342,
+      "elevation_m": 376.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/940290774, way/940290783."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 62.24755,
+      "lng": 6.35374,
+      "elevation_m": 376.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/940290774, way/940290783."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 62.24781,
+      "lng": 6.35404,
+      "elevation_m": 378.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/940290774, way/940290783."
+     },
      {
       "name": "Inngangen til Kvanndalen",
       "lat": 62.2569,
@@ -953,6 +1087,20 @@
     },
     "waypoints": [
      {
+      "name": "utenom bygningene",
+      "lat": 61.50457,
+      "lng": 7.80214,
+      "elevation_m": 885.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/609791041."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 61.50443,
+      "lng": 7.80237,
+      "elevation_m": 886.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/609791041."
+     },
+     {
       "name": "Helgedalen, dalbotnen",
       "lat": 61.5042,
       "lng": 7.82947,
@@ -1051,98 +1199,105 @@
     },
     "waypoints": [
      {
+      "name": "utenom bygningene",
+      "lat": 61.50457,
+      "lng": 7.80223,
+      "elevation_m": 885.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/609791041."
+     },
+     {
       "name": "Helgedalen, dalbotnen",
       "lat": 61.5042,
       "lng": 7.82947,
       "elevation_m": 910.42
      },
      {
-      "name": "stien ved 1.98 km",
+      "name": "stien ved 2.00 km",
       "lat": 61.50424,
       "lng": 7.83212
      },
      {
-      "name": "stien ved 1.98 km",
+      "name": "stien ved 2.00 km",
       "lat": 61.50458,
       "lng": 7.83248
      },
      {
-      "name": "stien ved 1.98 km",
+      "name": "stien ved 2.00 km",
       "lat": 61.50476,
       "lng": 7.83308
      },
      {
-      "name": "stien ved 1.98 km",
+      "name": "stien ved 2.00 km",
       "lat": 61.5048,
       "lng": 7.83438
      },
      {
-      "name": "stien ved 1.98 km",
+      "name": "stien ved 2.00 km",
       "lat": 61.50516,
       "lng": 7.83646
      },
      {
-      "name": "stien ved 1.98 km",
+      "name": "stien ved 2.00 km",
       "lat": 61.50517,
       "lng": 7.8383
      },
      {
-      "name": "stien ved 1.98 km",
+      "name": "stien ved 2.00 km",
       "lat": 61.50517,
       "lng": 7.84013
      },
      {
-      "name": "stien ved 1.98 km",
+      "name": "stien ved 2.00 km",
       "lat": 61.50526,
       "lng": 7.84133
      },
      {
-      "name": "stien ved 1.98 km",
+      "name": "stien ved 2.00 km",
       "lat": 61.50534,
       "lng": 7.84253
      },
      {
-      "name": "stien ved 1.98 km",
+      "name": "stien ved 2.00 km",
       "lat": 61.50525,
       "lng": 7.84471
      },
      {
-      "name": "stien ved 1.98 km",
+      "name": "stien ved 2.00 km",
       "lat": 61.5054,
       "lng": 7.84602
      },
      {
-      "name": "stien ved 1.98 km",
+      "name": "stien ved 2.00 km",
       "lat": 61.50555,
       "lng": 7.84734
      },
      {
-      "name": "stien ved 1.98 km",
+      "name": "stien ved 2.00 km",
       "lat": 61.50556,
       "lng": 7.84802
      },
      {
-      "name": "stien ved 1.98 km",
+      "name": "stien ved 2.00 km",
       "lat": 61.50516,
       "lng": 7.8498
      },
      {
-      "name": "stien ved 1.98 km",
+      "name": "stien ved 2.00 km",
       "lat": 61.50523,
       "lng": 7.85111
      },
      {
-      "name": "stien ved 1.98 km",
+      "name": "stien ved 2.00 km",
       "lat": 61.5053,
       "lng": 7.85242
      },
      {
-      "name": "stien ved 1.98 km",
+      "name": "stien ved 2.00 km",
       "lat": 61.50499,
       "lng": 7.85373
      },
      {
-      "name": "stien ved 1.98 km",
+      "name": "stien ved 2.00 km",
       "lat": 61.50483,
       "lng": 7.85535
      },
@@ -1199,7 +1354,7 @@
     "note": "Fri Flyt, «Turbeskrivelse Steindalsnosi», rute 1.4 Ned sørsida via Steindalen og Helgedalen, med kjelda si eiga sanksjonering av å gå henne opp: «Når: Mars–midten av mai. (Før Sognefjellet opnar er det best å gå sørsida opp frå Helgedalen.)» Linja, lesen andre vegen: «Køyr vestover frå toppunktet, langs ryggen mot vesttoppen 1936. Når du er nede på 1900 moh og ryggen smalnar, står du ved inngangen til sørsida. Herfrå følgjer du lågaste punktet sørover til Steindøla og vidare på vestsida av denne ned i Helgedalsbotnen. Om det ligg snø ut Helgedalen, stakar du tilbake til Turtagrø ut Helgedalen.» Fanaråken-sida i same boka seier det same rett fram: «Frå Turtagrø inn Helgedalen og opp langs Steindøla og gjennom Steindalen (sjå skildring Steindalsnosi sørside).» Kjelda sine tal for sørsida: 1025 høgdemeter nedkøyring, «32 grader jamt. Passasjar på 34–36 grader (1380–1260 moh langs Steindøla)», og faren «Steindøla opnar seg ein gong i mai». Dette er den einaste vegen opp før Sognefjellet opnar: appens normalrute startar ved Gjuvvatnet på Sognefjellsvegen, som er vinterstengd. Turtagrø er alt eit kartfesta startsted i appen — Fanaråken går derifrå — og dei to rutene deler dei to fyrste vegpunkta inn Helgedalen.",
     "implied_start_m": null,
     "start_vs_implied_m": null,
-    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (1219 m from 1.98 km)."
+    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (1219 m from 2.0 km)."
    }
   ]
  },
@@ -1211,12 +1366,26 @@
     "description": "Normalruta fra Juvasshytta over Styggebrean",
     "trailhead": {
      "name": "Juvasshytta",
-     "lat": 61.67276,
-     "lng": 8.37059,
-     "elevation_m": 1841.32,
+     "lat": 61.6728,
+     "lng": 8.3703,
+     "elevation_m": 1841.0,
      "fullName": "Juvasshytta"
     },
     "waypoints": [
+     {
+      "name": "utenom bygningene",
+      "lat": 61.67275,
+      "lng": 8.37001,
+      "elevation_m": 1841.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/234148105."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 61.67261,
+      "lng": 8.37001,
+      "elevation_m": 1841.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/234148105."
+     },
      {
       "name": "Over Juvflye sorvestover",
       "lat": 61.66198,
@@ -1263,12 +1432,26 @@
     "id": "spiterstulen",
     "name": "Fra Spiterstulen over Svellnose og Keilhaus topp",
     "trailhead": {
-     "lat": 61.62446,
-     "lng": 8.40477,
+     "lat": 61.62449,
+     "lng": 8.40466,
      "name": "Spiterstulen",
-     "elevation_m": 1103.4
+     "elevation_m": 1103.0
     },
     "waypoints": [
+     {
+      "name": "utenom bygningene",
+      "lat": 61.62459,
+      "lng": 8.40405,
+      "elevation_m": 1098.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/242063821, way/242063848, way/242063851."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 61.62487,
+      "lng": 8.40335,
+      "elevation_m": 1095.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/242063821, way/242063848, way/242063851."
+     },
      {
       "lat": 61.63362,
       "lng": 8.33792,
@@ -1450,6 +1633,20 @@
       "elevation_m": 1166.83
      },
      {
+      "name": "utenom bygningene",
+      "lat": 61.87849,
+      "lng": 9.79731,
+      "elevation_m": 1174.0,
+      "note": "Lagt inn for hand i hus-runden: linja gjekk gjennom Rondvassbu (way/199419811). Ho kjem inn over isen på Rondvatnet alt før hytta, så omvegen går sør og aust for tunet langs land, 22 m frå næraste bygning."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 61.87876,
+      "lng": 9.79769,
+      "elevation_m": 1197.0,
+      "note": "Lagt inn for hand i hus-runden: linja gjekk gjennom Rondvassbu (way/199419811). Ho kjem inn over isen på Rondvatnet alt før hytta, så omvegen går sør og aust for tunet langs land, 22 m frå næraste bygning."
+     },
+     {
       "name": "Rondvassbu",
       "lat": 61.87886,
       "lng": 9.79645,
@@ -1483,10 +1680,10 @@
     "id": "doralseter",
     "name": "Fra Dørålseter gjennom Langglupdalen",
     "trailhead": {
-     "lat": 61.99784,
-     "lng": 9.8065,
+     "lat": 61.99768,
+     "lng": 9.80644,
      "name": "Nedre Dørålseter",
-     "elevation_m": 1042.8
+     "elevation_m": 1041.3
     },
     "waypoints": [],
     "source": "documented alternative route",
@@ -1498,12 +1695,26 @@
     "id": "bjornhollia",
     "name": "Fra Bjørnhollia gjennom Langglupdalen",
     "trailhead": {
-     "lat": 61.88408,
-     "lng": 10.01196,
+     "lat": 61.88409,
+     "lng": 10.01181,
      "name": "Bjørnhollia",
-     "elevation_m": 912.81
+     "elevation_m": 913.0
     },
     "waypoints": [
+     {
+      "name": "utenom bygningene",
+      "lat": 61.88421,
+      "lng": 10.01175,
+      "elevation_m": 912.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/199394398."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 61.88437,
+      "lng": 10.01205,
+      "elevation_m": 907.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/199394398."
+     },
      {
       "name": "nordover langs dalen",
       "lat": 61.895,
@@ -1517,22 +1728,22 @@
       "elevation_m": 913.85
      },
      {
-      "name": "stien ved 3.53 km",
+      "name": "stien ved 3.54 km",
       "lat": 61.907,
       "lng": 9.99366
      },
      {
-      "name": "stien ved 3.53 km",
+      "name": "stien ved 3.54 km",
       "lat": 61.90715,
       "lng": 9.9921
      },
      {
-      "name": "stien ved 3.53 km",
+      "name": "stien ved 3.54 km",
       "lat": 61.90729,
       "lng": 9.99055
      },
      {
-      "name": "stien ved 3.53 km",
+      "name": "stien ved 3.54 km",
       "lat": 61.90744,
       "lng": 9.989
      },
@@ -1571,7 +1782,7 @@
     "note": "ut.no 1112154771, «Topptur til Rondeslottet (2178moh) fra Bjørnhollia»: «turen starter fra dørterskelen på hytta. Følg merket rute gjennom Lagglupdalen mot Dørålseter. I Langglupdalen passerer du brua over Langglupå og stiskillet til Høgronden. Ved stiskillet til Rondeslottet følger du merket rute vestover til toppen.» 22,4 km, 1433 høgdemeter, 8 timar, juni–september, VERY_TOUGH. Langglupdalen er registerført (Dal, Folldal). Tredje startstaden på toppen: Spranget i sør, Nedre Dørålseter i nord, Bjørnhollia i aust.",
     "implied_start_m": null,
     "start_vs_implied_m": null,
-    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (189 m from 3.53 km)."
+    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (189 m from 3.54 km)."
    }
   ]
  },
@@ -1583,12 +1794,26 @@
     "description": "Normalruta fra Snøheim over østryggen",
     "trailhead": {
      "name": "Snøheim turisthytte",
-     "lat": 62.29417,
-     "lng": 9.35067,
-     "elevation_m": 1474.49,
+     "lat": 62.29429,
+     "lng": 9.35063,
+     "elevation_m": 1474.0,
      "fullName": "Snøheim turisthytte"
     },
     "waypoints": [
+     {
+      "name": "utenom bygningene",
+      "lat": 62.29429,
+      "lng": 9.35051,
+      "elevation_m": 1473.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/181363141."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 62.29417,
+      "lng": 9.35032,
+      "elevation_m": 1473.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/181363141."
+     },
      {
       "name": "Gangbrua over Stridåi",
       "lat": 62.29365,
@@ -1641,12 +1866,20 @@
     "id": "reinheim",
     "name": "Fra Reinheim i Stroplsjødalen",
     "trailhead": {
-     "lat": 62.34119,
-     "lng": 9.35622,
+     "lat": 62.3412,
+     "lng": 9.35639,
      "name": "Reinheim",
-     "elevation_m": 1342.2
+     "elevation_m": 1342.0
     },
-    "waypoints": [],
+    "waypoints": [
+     {
+      "name": "utenom bygningene",
+      "lat": 62.34114,
+      "lng": 9.35645,
+      "elevation_m": 1342.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/232356154."
+     }
+    ],
     "source": "documented alternative route",
     "note": "The classic hut-to-summit line from the north-east.",
     "implied_start_m": null,
@@ -1791,6 +2024,27 @@
      "fullName": "Kletta p-plass, Rosendal"
     },
     "waypoints": [
+     {
+      "name": "utenom bygningene",
+      "lat": 59.99829,
+      "lng": 6.0199,
+      "elevation_m": 186.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/542983404."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 59.99836,
+      "lng": 6.02009,
+      "elevation_m": 187.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/542983404."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 59.99843,
+      "lng": 6.02028,
+      "elevation_m": 185.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/542983404."
+     },
      {
       "name": "Skogen over Kletta",
       "lat": 60.00062,
@@ -1946,10 +2200,31 @@
       "elevation_m": 1584.91
      },
      {
+      "name": "utenom bygningene",
+      "lat": 59.85015,
+      "lng": 8.65664,
+      "elevation_m": 1804.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/446378712, way/446378720, way/446378727, way/1394548522."
+     },
+     {
       "name": "Inn på toppflata",
       "lat": 59.85033,
       "lng": 8.65542,
       "elevation_m": 1831.03
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 59.85056,
+      "lng": 8.65598,
+      "elevation_m": 1825.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/446378712, way/446378720, way/446378727, way/1394548522."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 59.85122,
+      "lng": 8.65588,
+      "elevation_m": 1831.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/446378712, way/446378720, way/446378727, way/1394548522."
      }
     ],
     "source": "audited (ok)",
@@ -1966,7 +2241,50 @@
      "name": "Stavsro",
      "elevation_m": 1177.1
     },
-    "waypoints": [],
+    "waypoints": [
+     {
+      "name": "utenom bygningene",
+      "lat": 59.8496,
+      "lng": 8.65598,
+      "elevation_m": 1800.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/446378719, way/1394548522."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 59.84984,
+      "lng": 8.65593,
+      "elevation_m": 1808.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/446378719, way/1394548522."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 59.84998,
+      "lng": 8.65576,
+      "elevation_m": 1812.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/446378719, way/1394548522."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 59.85058,
+      "lng": 8.65515,
+      "elevation_m": 1832.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/446378712, way/446378720, way/446378727."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 59.85088,
+      "lng": 8.65519,
+      "elevation_m": 1836.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/446378712, way/446378720, way/446378727."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 59.85117,
+      "lng": 8.65523,
+      "elevation_m": 1839.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/446378712, way/446378720, way/446378727."
+     }
+    ],
     "source": "documented alternative route",
     "note": "The short, popular route from the Rjukan road — the one most people walk in summer.",
     "implied_start_m": null,
@@ -2243,10 +2561,31 @@
     },
     "waypoints": [
      {
+      "name": "utenom bygningene",
+      "lat": 60.29063,
+      "lng": 6.07703,
+      "elevation_m": 495.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/939480409."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 60.29068,
+      "lng": 6.07719,
+      "elevation_m": 497.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/939480409."
+     },
+     {
       "name": "Fadnastølen",
       "lat": 60.29068,
       "lng": 6.07731,
       "elevation_m": 497.65
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 60.29068,
+      "lng": 6.0775,
+      "elevation_m": 498.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/939480409."
      },
      {
       "name": "Nedre del av sørvestryggen",
@@ -2286,6 +2625,48 @@
      "fullName": "Bessheim fjellstue"
     },
     "waypoints": [
+     {
+      "name": "utenom bygningene",
+      "lat": 61.51432,
+      "lng": 8.85285,
+      "elevation_m": 962.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/925439677."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 61.51442,
+      "lng": 8.8526,
+      "elevation_m": 964.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/925439677."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 61.51453,
+      "lng": 8.85213,
+      "elevation_m": 967.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/925439677."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 61.52589,
+      "lng": 8.80939,
+      "elevation_m": 1375.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/925441235."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 61.52594,
+      "lng": 8.80918,
+      "elevation_m": 1375.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/925441235."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 61.52599,
+      "lng": 8.80899,
+      "elevation_m": 1375.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/925441235."
+     },
      {
       "name": "Nordøstenden av Bessvatnet",
       "lat": 61.5262,
@@ -2387,6 +2768,48 @@
     },
     "waypoints": [
      {
+      "name": "utenom bygningene",
+      "lat": 60.51459,
+      "lng": 7.85314,
+      "elevation_m": 1015.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/1003696175."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 60.51469,
+      "lng": 7.85314,
+      "elevation_m": 1015.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/1003696175."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 60.51479,
+      "lng": 7.85314,
+      "elevation_m": 1016.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/1003696175."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 60.51549,
+      "lng": 7.85342,
+      "elevation_m": 1039.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/1003696165."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 60.51565,
+      "lng": 7.85339,
+      "elevation_m": 1041.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/1003696165."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 60.51577,
+      "lng": 7.85333,
+      "elevation_m": 1042.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/1003696165."
+     },
+     {
       "name": "Over stigninga frå Haugastøl, 1212",
       "lat": 60.5515,
       "lng": 7.8231,
@@ -2481,10 +2904,52 @@
       "elevation_m": 1336.93
      },
      {
+      "name": "utenom bygningene",
+      "lat": 61.62342,
+      "lng": 8.63317,
+      "elevation_m": 1386.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/665883713."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 61.6233,
+      "lng": 8.63306,
+      "elevation_m": 1386.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/665883713."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 61.62317,
+      "lng": 8.63294,
+      "elevation_m": 1386.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/665883713."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 61.62264,
+      "lng": 8.63345,
+      "elevation_m": 1381.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/129795626, way/242182692."
+     },
+     {
       "name": "Glitterheim",
       "lat": 61.62265,
       "lng": 8.63237,
       "elevation_m": 1385.11
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 61.6222,
+      "lng": 8.63232,
+      "elevation_m": 1382.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/129795626, way/242182692."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 61.62227,
+      "lng": 8.63176,
+      "elevation_m": 1385.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/129795626, way/242182692."
      },
      {
       "name": "Flanken over Steinbudalen, ca 2010 moh",
@@ -2514,12 +2979,26 @@
     "description": "Fra Spiterstulen nordøst over Skautkampan, over Skauta og videre langs Steindalselve og ryggen østover til toppen",
     "trailhead": {
      "name": "Spiterstulen",
-     "lat": 61.62446,
-     "lng": 8.40477,
+     "lat": 61.62449,
+     "lng": 8.40467,
      "elevation_m": 1103.0,
      "fullName": "Spiterstulen"
     },
     "waypoints": [
+     {
+      "name": "utenom bygningene",
+      "lat": 61.62454,
+      "lng": 8.40465,
+      "elevation_m": 1102.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/242063821."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 61.62466,
+      "lng": 8.40478,
+      "elevation_m": 1103.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/242063821."
+     },
      {
       "name": "Skautkampan",
       "lat": 61.64516,
@@ -2868,6 +3347,27 @@
     },
     "waypoints": [
      {
+      "name": "utenom bygningene",
+      "lat": 59.45143,
+      "lng": 7.44729,
+      "elevation_m": 849.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/918880851."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 59.45147,
+      "lng": 7.44748,
+      "elevation_m": 851.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/918880851."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 59.45152,
+      "lng": 7.44767,
+      "elevation_m": 853.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/918880851."
+     },
+     {
       "name": "Langemyr",
       "lat": 59.45516,
       "lng": 7.46132,
@@ -3126,6 +3626,27 @@
     },
     "waypoints": [
      {
+      "name": "utenom bygningene",
+      "lat": 60.69725,
+      "lng": 6.46071,
+      "elevation_m": 377.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/956344192."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 60.69717,
+      "lng": 6.46058,
+      "elevation_m": 381.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/956344192."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 60.6971,
+      "lng": 6.46044,
+      "elevation_m": 383.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/956344192."
+     },
+     {
       "name": "Bergsstølen",
       "lat": 60.69687,
       "lng": 6.45979,
@@ -3235,6 +3756,13 @@
       "elevation_m": 229.75
      },
      {
+      "name": "utenom bygningene",
+      "lat": 62.23117,
+      "lng": 6.58822,
+      "elevation_m": 228.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/940284681, way/940284685."
+     },
+     {
       "name": "Nordkopen",
       "lat": 62.24521,
       "lng": 6.59171,
@@ -3259,16 +3787,16 @@
       "elevation_m": 1531.35
      },
      {
-      "name": "Toppkammen, 1562",
-      "lat": 62.27523,
-      "lng": 6.57453,
-      "elevation_m": 1562.37
-     },
-     {
       "name": "toppkammen frå sørvest",
       "lat": 62.27496,
       "lng": 6.57356,
       "elevation_m": 1578.7
+     },
+     {
+      "name": "Toppkammen, 1562",
+      "lat": 62.27523,
+      "lng": 6.57453,
+      "elevation_m": 1562.37
      }
     ],
     "source": "researched, verified (corrected), no local audit",
@@ -3331,6 +3859,27 @@
     },
     "waypoints": [
      {
+      "name": "utenom bygningene",
+      "lat": 62.34865,
+      "lng": 6.27906,
+      "elevation_m": 108.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/940286201."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 62.34854,
+      "lng": 6.27917,
+      "elevation_m": 109.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/940286201."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 62.34843,
+      "lng": 6.27928,
+      "elevation_m": 111.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/940286201."
+     },
+     {
       "name": "Vollesætra",
       "lat": 62.34263,
       "lng": 6.29289,
@@ -3356,12 +3905,26 @@
     "description": "Frå bilparkeringa etter bommen i Nupen følgjer ein Engesetvegen oppover og austover til Vallasætra. Frå setra går ein nokre hundre meter inn Langedalen før ein tek bratt opp kneika til Bukkedalen, eventuelt med skia på sekken. Så følgjer ein dalbotnen innover til den bratte, lange flanken som fører opp til toppen.",
     "trailhead": {
      "name": "Nupen",
-     "lat": 62.21249,
-     "lng": 6.1747,
-     "elevation_m": 92.21,
+     "lat": 62.21244,
+     "lng": 6.17475,
+     "elevation_m": 92.0,
      "fullName": "Nupen"
     },
     "waypoints": [
+     {
+      "name": "utenom bygningene",
+      "lat": 62.21235,
+      "lng": 6.17579,
+      "elevation_m": 80.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/940286757, way/940286792, way/940286794."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 62.2126,
+      "lng": 6.17614,
+      "elevation_m": 81.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/940286757, way/940286792, way/940286794."
+     },
      {
       "name": "Vallasætra",
       "lat": 62.23207,
@@ -3369,34 +3932,25 @@
       "elevation_m": 323.48
      },
      {
-      "name": "stien ved 3.22 km",
-      "lat": 62.23263,
-      "lng": 6.21234
+      "name": "utenom bygningene",
+      "lat": 62.23244,
+      "lng": 6.21138,
+      "elevation_m": 325.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/940286525."
      },
      {
-      "name": "stien ved 3.22 km",
-      "lat": 62.23312,
-      "lng": 6.21322
+      "name": "utenom bygningene",
+      "lat": 62.23253,
+      "lng": 6.21148,
+      "elevation_m": 326.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/940286525."
      },
      {
-      "name": "stien ved 3.22 km",
-      "lat": 62.23376,
-      "lng": 6.21347
-     },
-     {
-      "name": "stien ved 3.22 km",
-      "lat": 62.2344,
-      "lng": 6.21373
-     },
-     {
-      "name": "stien ved 3.22 km",
-      "lat": 62.2347,
-      "lng": 6.21243
-     },
-     {
-      "name": "stien ved 3.22 km",
-      "lat": 62.235,
-      "lng": 6.21113
+      "name": "utenom bygningene",
+      "lat": 62.23261,
+      "lng": 6.21157,
+      "elevation_m": 325.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/940286525."
      },
      {
       "name": "Bukkedalen",
@@ -3412,8 +3966,7 @@
      }
     ],
     "source": "researched, verified (corrected), no local audit",
-    "notes": "Skredterreng i kneika opp til Bukkedalen og i heile flanken mot toppen. Frå skaret nord for toppen fell Vestrenna 700 høgdemeter i 45–50 grader ned i Nupadalen — ei feilnavigering vestover i dårleg sikt er alvorleg.",
-    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (227 m from 3.22 km)."
+    "notes": "Skredterreng i kneika opp til Bukkedalen og i heile flanken mot toppen. Frå skaret nord for toppen fell Vestrenna 700 høgdemeter i 45–50 grader ned i Nupadalen — ei feilnavigering vestover i dårleg sikt er alvorleg."
    }
   ]
  },
@@ -3431,6 +3984,27 @@
      "fullName": "Helgatun på Krøvelseidet"
     },
     "waypoints": [
+     {
+      "name": "utenom bygningene",
+      "lat": 62.16307,
+      "lng": 6.17009,
+      "elevation_m": 390.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/986942458."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 62.16311,
+      "lng": 6.1699,
+      "elevation_m": 392.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/986942458."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 62.16316,
+      "lng": 6.16971,
+      "elevation_m": 393.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/986942458."
+     },
      {
       "name": "Ryggen, 519",
       "lat": 62.16419,
@@ -3542,10 +4116,96 @@
     },
     "waypoints": [
      {
+      "name": "stien ved 0.05 km",
+      "lat": 62.24593,
+      "lng": 7.21169
+     },
+     {
+      "name": "stien ved 0.05 km",
+      "lat": 62.24536,
+      "lng": 7.21176
+     },
+     {
+      "name": "stien ved 0.05 km",
+      "lat": 62.24473,
+      "lng": 7.21256
+     },
+     {
+      "name": "stien ved 0.05 km",
+      "lat": 62.2441,
+      "lng": 7.21336
+     },
+     {
+      "name": "stien ved 0.05 km",
+      "lat": 62.24365,
+      "lng": 7.21416
+     },
+     {
+      "name": "stien ved 0.05 km",
+      "lat": 62.24319,
+      "lng": 7.21496
+     },
+     {
+      "name": "stien ved 0.05 km",
+      "lat": 62.24258,
+      "lng": 7.21651
+     },
+     {
+      "name": "stien ved 0.05 km",
+      "lat": 62.24197,
+      "lng": 7.21805
+     },
+     {
+      "name": "stien ved 0.05 km",
+      "lat": 62.24172,
+      "lng": 7.21927
+     },
+     {
+      "name": "stien ved 0.05 km",
+      "lat": 62.24147,
+      "lng": 7.22049
+     },
+     {
+      "name": "stien ved 0.05 km",
+      "lat": 62.241,
+      "lng": 7.22187
+     },
+     {
+      "name": "stien ved 0.05 km",
+      "lat": 62.24053,
+      "lng": 7.22326
+     },
+     {
+      "name": "stien ved 0.05 km",
+      "lat": 62.24029,
+      "lng": 7.2245
+     },
+     {
       "name": "Rellingsætra",
       "lat": 62.23128,
       "lng": 7.24464,
       "elevation_m": 557.05
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 62.23109,
+      "lng": 7.24492,
+      "elevation_m": 553.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/931480867."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 62.23098,
+      "lng": 7.24489,
+      "elevation_m": 550.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/931480867."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 62.23088,
+      "lng": 7.24486,
+      "elevation_m": 548.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/931480867."
      },
      {
       "name": "Daurmålsfjellet",
@@ -3561,7 +4221,8 @@
      }
     ],
     "source": "researched, verified (corrected), no local audit",
-    "notes": "Kneika frå Rellingsætra opp på Daurmålsfjellet er den bratte delen. Ryggen vidare er slak, men lang og utan ly, og sidene av han er ikkje slake: vest 40,9 grader i snitt frå varden, sørvest 36,2 og søraust 35,2, mot 9 grader nord og aust. Vending må avgjerast tidleg."
+    "notes": "Kneika frå Rellingsætra opp på Daurmålsfjellet er den bratte delen. Ryggen vidare er slak, men lang og utan ly, og sidene av han er ikkje slake: vest 40,9 grader i snitt frå varden, sørvest 36,2 og søraust 35,2, mot 9 grader nord og aust. Vending må avgjerast tidleg.",
+    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (879 m from 0.05 km)."
    }
   ]
  },
@@ -3771,6 +4432,20 @@
     },
     "waypoints": [
      {
+      "name": "utenom bygningene",
+      "lat": 61.61816,
+      "lng": 6.71526,
+      "elevation_m": 350.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/1000238405, way/1000238408."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 61.61834,
+      "lng": 6.71587,
+      "elevation_m": 344.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/1000238405, way/1000238408."
+     },
+     {
       "name": "Haugastøylen",
       "lat": 61.63412,
       "lng": 6.73025,
@@ -3799,63 +4474,84 @@
     },
     "waypoints": [
      {
+      "name": "utenom bygningene",
+      "lat": 61.61988,
+      "lng": 6.64423,
+      "elevation_m": 286.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/1000238379, way/1000240982."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 61.62003,
+      "lng": 6.64357,
+      "elevation_m": 287.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/1000238379, way/1000240982."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 61.62026,
+      "lng": 6.6431,
+      "elevation_m": 295.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/1000238379, way/1000240982."
+     },
+     {
       "name": "skogsvegen ved 405",
       "lat": 61.62281,
       "lng": 6.63758,
       "elevation_m": 405.15
      },
      {
-      "name": "stien ved 1.00 km",
+      "name": "stien ved 1.01 km",
       "lat": 61.62391,
       "lng": 6.63663
      },
      {
-      "name": "stien ved 1.00 km",
+      "name": "stien ved 1.01 km",
       "lat": 61.6244,
       "lng": 6.63669
      },
      {
-      "name": "stien ved 1.00 km",
+      "name": "stien ved 1.01 km",
       "lat": 61.62531,
       "lng": 6.63617
      },
      {
-      "name": "stien ved 1.00 km",
+      "name": "stien ved 1.01 km",
       "lat": 61.62621,
       "lng": 6.63566
      },
      {
-      "name": "stien ved 1.30 km",
+      "name": "stien ved 1.31 km",
       "lat": 61.62652,
       "lng": 6.63545
      },
      {
-      "name": "stien ved 1.30 km",
+      "name": "stien ved 1.31 km",
       "lat": 61.62747,
       "lng": 6.636
      },
      {
-      "name": "stien ved 1.30 km",
+      "name": "stien ved 1.31 km",
       "lat": 61.62835,
       "lng": 6.63533
      },
      {
-      "name": "stien ved 1.30 km",
+      "name": "stien ved 1.31 km",
       "lat": 61.62896,
       "lng": 6.63558
      },
      {
-      "name": "stien ved 1.30 km",
+      "name": "stien ved 1.31 km",
       "lat": 61.62958,
       "lng": 6.63582
      },
      {
-      "name": "stien ved 1.30 km",
+      "name": "stien ved 1.31 km",
       "lat": 61.6305,
       "lng": 6.63556
      },
      {
-      "name": "stien ved 1.30 km",
+      "name": "stien ved 1.31 km",
       "lat": 61.63142,
       "lng": 6.6353
      },
@@ -3922,7 +4618,7 @@
     ],
     "source": "researched, verified (corrected), no local audit",
     "notes": "Fri Flyt, «Turbeskrivelse Snønipa», rute 4.8.2 OPP VIA VEITEBERGSDALEN (UTFORDRANDE, E2, V): «Du følgjer skogsvegen opp Veitebergsdalen til endes. Her skrår du deg opp skogen, og siktar deg inn mot den markerte moreneryggen kalla Sollirinden som går opp mot Sollibotnen. Det tryggaste rutevalet er å gå opp morene-ryggen. I Sollibotnen svingar du nordaust mot brevatnet og fortset opp første del av brefallet. Du dreiar gradvis nordover i det flate partiet, og kryssar deg opp det bratte brefallet til du kjem opp på breplatået. Du går vidare flatt innover breen og passerer aust for høgda 1687 moh. og vindgryta rundt denne, som lokalt blir kalla Djevelens dansesal. Hald fram nordover til toppen.» Tilkomsten er eit eige startsted i same boka: «Om du vil gå turen opp via Veitebergsdalen startar du turen på Veiteberg. Nokre hundre meter etter at du har passert brua over Veitebergselva, kjem du til ein skogsveg som går opp i Veitebergsdalen. Her er det mogleg å finne parkering.» Kjelda fører 1540 høgdemeter, starthøgde 290 moh, 5–10 timar, sesong februar–mai, himmelretning sør og vest, brattaste punkt 30–35 grader (700–860 moh) med eit kort parti på 35–40 grader øvst på moreneryggen og 30–34 grader (1260–1500 moh), utstyr breutstyr. Appens normalrute går opp Haugadalen og Haugabreen frå Høyseth i Stardalen, på den andre sida av fjellet. Brevatnet på 1103 moh ligg i linja si retning — kjelda sanksjonerer ikkje ei kryssing, så korridoren har eit vegpunkt aust for vatnet og går utanom det. Fyrste løysinga gjekk 541 m over brevatnet, opptil 119 m frå den kartlagde stranda: eit einskilt vegpunkt aust for vatnet held ikkje, for Dijkstra skjer hjørnet på den 1,4 km lange etappen frå Sollibotnen. Tre punkt langs sør- og austbreidda (1117, 1147 og 1188 moh) legg linja rundt vatnet på land; eit fjerde på 1110 midt på austbreidda vart teke ut att, fordi det kosta 37 høgdemeter tilbake utan å flytte linja.",
-    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (219 m from 1.0 km, 519 m from 1.3 km)."
+    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (219 m from 1.01 km, 509 m from 1.31 km)."
    }
   ]
  },
@@ -4487,6 +5183,27 @@
     },
     "waypoints": [
      {
+      "name": "utenom bygningene",
+      "lat": 60.27064,
+      "lng": 9.40697,
+      "elevation_m": 911.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/938489370."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 60.27083,
+      "lng": 9.40724,
+      "elevation_m": 911.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/938489370."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 60.27104,
+      "lng": 9.40897,
+      "elevation_m": 902.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/938502570."
+     },
+     {
       "name": "Ryggen over skibakken, ca 1190 moh",
       "lat": 60.284,
       "lng": 9.443,
@@ -4515,49 +5232,46 @@
     },
     "waypoints": [
      {
-      "name": "stien ved 0.25 km",
-      "lat": 60.22377,
-      "lng": 9.56065
+      "name": "utenom bygningene",
+      "lat": 60.22265,
+      "lng": 9.56126,
+      "elevation_m": 841.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/949510304, way/1479062555, way/1479062557."
      },
      {
-      "name": "stien ved 0.25 km",
-      "lat": 60.22406,
-      "lng": 9.56272
+      "name": "utenom bygningene",
+      "lat": 60.22319,
+      "lng": 9.56122,
+      "elevation_m": 854.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/949510304, way/1479062555, way/1479062557."
      },
      {
-      "name": "stien ved 0.25 km",
-      "lat": 60.22438,
-      "lng": 9.56276
+      "name": "utenom bygningene",
+      "lat": 60.22369,
+      "lng": 9.56104,
+      "elevation_m": 865.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/949510304, way/1479062555, way/1479062557."
      },
      {
-      "name": "stien ved 0.25 km",
-      "lat": 60.22515,
-      "lng": 9.56235
+      "name": "utenom bygningene",
+      "lat": 60.22427,
+      "lng": 9.55975,
+      "elevation_m": 876.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/256588575, way/1479062551."
      },
      {
-      "name": "stien ved 0.25 km",
-      "lat": 60.22592,
-      "lng": 9.56194
+      "name": "utenom bygningene",
+      "lat": 60.22462,
+      "lng": 9.55946,
+      "elevation_m": 882.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/256588575, way/1479062551."
      },
      {
-      "name": "stien ved 0.25 km",
-      "lat": 60.22626,
-      "lng": 9.5617
-     },
-     {
-      "name": "stien ved 0.25 km",
-      "lat": 60.22689,
-      "lng": 9.56044
-     },
-     {
-      "name": "stien ved 0.25 km",
-      "lat": 60.22752,
-      "lng": 9.55919
-     },
-     {
-      "name": "stien ved 0.25 km",
-      "lat": 60.22815,
-      "lng": 9.55794
+      "name": "utenom bygningene",
+      "lat": 60.22497,
+      "lng": 9.55917,
+      "elevation_m": 888.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/256588575, way/1479062551."
      },
      {
       "name": "Ravnås, passeres på vestsida",
@@ -4579,8 +5293,7 @@
      }
     ],
     "source": "researched, verified (ok), no local audit",
-    "notes": "Den andre dokumenterte starten, fra motsatt side av fjellet og 85 høydemeter lavere. Ut.no fører den som skitur (jan–apr, 10,7 km, 527 høydemeter i deres spor) og anbefaler høyfjellsruta over ryggen framfor løypene i skogen når været tillater det.",
-    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (439 m from 0.25 km)."
+    "notes": "Den andre dokumenterte starten, fra motsatt side av fjellet og 85 høydemeter lavere. Ut.no fører den som skitur (jan–apr, 10,7 km, 527 høydemeter i deres spor) og anbefaler høyfjellsruta over ryggen framfor løypene i skogen når været tillater det."
    }
   ]
  },
@@ -4599,10 +5312,52 @@
     },
     "waypoints": [
      {
+      "name": "utenom bygningene",
+      "lat": 60.26991,
+      "lng": 9.40616,
+      "elevation_m": 909.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/938489373, way/938502311."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 60.26991,
+      "lng": 9.40556,
+      "elevation_m": 910.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/938489373, way/938502311."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 60.26991,
+      "lng": 9.40497,
+      "elevation_m": 911.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/938489373, way/938502311."
+     },
+     {
       "name": "Istjenn",
       "lat": 60.27891,
       "lng": 9.39449,
       "elevation_m": 950.0
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 60.28347,
+      "lng": 9.39339,
+      "elevation_m": 954.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/938488958."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 60.28356,
+      "lng": 9.39331,
+      "elevation_m": 957.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/938488958."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 60.28365,
+      "lng": 9.39323,
+      "elevation_m": 958.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/938488958."
      },
      {
       "name": "Vesletjenn",
@@ -4642,6 +5397,13 @@
      "fullName": "Tempelseter"
     },
     "waypoints": [
+     {
+      "name": "utenom bygningene",
+      "lat": 60.27246,
+      "lng": 9.40792,
+      "elevation_m": 920.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/938489366."
+     },
      {
       "name": "Raudmyra, stikrysset",
       "lat": 60.30176,
@@ -4702,28 +5464,42 @@
     },
     "waypoints": [
      {
+      "name": "utenom bygningene",
+      "lat": 59.77772,
+      "lng": 9.21836,
+      "elevation_m": 719.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/270446077."
+     },
+     {
       "name": "Esperåa bru",
       "lat": 59.77953,
       "lng": 9.21582,
       "elevation_m": 729.65
      },
      {
-      "name": "stien ved 0.89 km",
+      "name": "utenom bygningene",
+      "lat": 59.78002,
+      "lng": 9.21744,
+      "elevation_m": 730.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/943660854."
+     },
+     {
+      "name": "stien ved 0.90 km",
       "lat": 59.7827,
       "lng": 9.22224
      },
      {
-      "name": "stien ved 0.89 km",
+      "name": "stien ved 0.90 km",
       "lat": 59.78304,
       "lng": 9.22304
      },
      {
-      "name": "stien ved 0.89 km",
+      "name": "stien ved 0.90 km",
       "lat": 59.78339,
       "lng": 9.22433
      },
      {
-      "name": "stien ved 0.89 km",
+      "name": "stien ved 0.90 km",
       "lat": 59.78374,
       "lng": 9.22561
      },
@@ -4768,7 +5544,7 @@
     ],
     "source": "researched, verified (corrected), no local audit",
     "notes": "Den bratte nedstigningen mot sør er det eneste partiet på turen der helninga teller, og den er samtidig den anbefalte returen — velg den etter forholdene, ikke etter kartet. Ryggen langs Surløyterinden er avblåst i vind og kan være hard og isete mens sørsida er myk. Blefjell har en sårbar villreinstamme, og ut.no ber uttrykkelig om at det tas hensyn; det er en grunn til å holde seg til den beskrevne ruta framfor å legge egne spor over platået.",
-    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (219 m from 0.89 km, 169 m from 1.32 km)."
+    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (209 m from 0.9 km, 169 m from 1.32 km)."
    }
   ]
  },
@@ -4786,6 +5562,48 @@
      "fullName": "Vikerkoia"
     },
     "waypoints": [
+     {
+      "name": "utenom bygningene",
+      "lat": 60.44769,
+      "lng": 9.95136,
+      "elevation_m": 667.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/1041654703."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 60.44774,
+      "lng": 9.95113,
+      "elevation_m": 668.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/1041654703."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 60.4478,
+      "lng": 9.9509,
+      "elevation_m": 670.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/1041654703."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 60.4494,
+      "lng": 9.94494,
+      "elevation_m": 697.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/1041649733."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 60.44947,
+      "lng": 9.94478,
+      "elevation_m": 699.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/1041649733."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 60.44954,
+      "lng": 9.94461,
+      "elevation_m": 702.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/1041649733."
+     },
      {
       "name": "stien ved 0.92 km",
       "lat": 60.4522,
@@ -4833,13 +5651,18 @@
      },
      {
       "name": "stien ved 0.92 km",
-      "lat": 60.45729,
-      "lng": 9.93858
+      "lat": 60.45717,
+      "lng": 9.9388
      },
      {
       "name": "stien ved 0.92 km",
-      "lat": 60.45794,
-      "lng": 9.93764
+      "lat": 60.4577,
+      "lng": 9.93808
+     },
+     {
+      "name": "stien ved 0.92 km",
+      "lat": 60.45806,
+      "lng": 9.93715
      },
      {
       "name": "Svarttjernskollen",
@@ -4848,79 +5671,84 @@
       "elevation_m": 1054.32
      },
      {
-      "name": "stien ved 2.17 km",
+      "name": "stien ved 2.18 km",
       "lat": 60.46244,
       "lng": 9.93269
      },
      {
-      "name": "stien ved 2.17 km",
+      "name": "stien ved 2.18 km",
       "lat": 60.46292,
       "lng": 9.9333
      },
      {
-      "name": "stien ved 2.17 km",
+      "name": "stien ved 2.18 km",
       "lat": 60.46331,
       "lng": 9.93288
      },
      {
-      "name": "stien ved 2.17 km",
+      "name": "stien ved 2.18 km",
       "lat": 60.46375,
       "lng": 9.93301
      },
      {
-      "name": "stien ved 2.17 km",
+      "name": "stien ved 2.18 km",
       "lat": 60.46434,
       "lng": 9.93251
      },
      {
-      "name": "stien ved 2.17 km",
+      "name": "stien ved 2.18 km",
       "lat": 60.46466,
       "lng": 9.93272
      },
      {
-      "name": "stien ved 2.17 km",
+      "name": "stien ved 2.18 km",
       "lat": 60.46567,
       "lng": 9.93218
      },
      {
-      "name": "stien ved 2.17 km",
+      "name": "stien ved 2.18 km",
       "lat": 60.46642,
       "lng": 9.93145
      },
      {
-      "name": "stien ved 2.17 km",
+      "name": "stien ved 2.18 km",
       "lat": 60.4671,
       "lng": 9.93034
      },
      {
-      "name": "stien ved 2.17 km",
-      "lat": 60.46751,
-      "lng": 9.92906
+      "name": "stien ved 2.18 km",
+      "lat": 60.46747,
+      "lng": 9.92915
      },
      {
-      "name": "stien ved 2.17 km",
-      "lat": 60.46793,
-      "lng": 9.92777
+      "name": "stien ved 2.18 km",
+      "lat": 60.46784,
+      "lng": 9.92796
      },
      {
-      "name": "stien ved 2.17 km",
-      "lat": 60.46866,
-      "lng": 9.92673
+      "name": "stien ved 2.18 km",
+      "lat": 60.46814,
+      "lng": 9.92738
      },
      {
-      "name": "stien ved 2.17 km",
-      "lat": 60.46938,
-      "lng": 9.92569
+      "name": "stien ved 2.18 km",
+      "lat": 60.4688,
+      "lng": 9.92647
      },
      {
-      "name": "stien ved 2.17 km",
+      "name": "stien ved 2.18 km",
+      "lat": 60.46945,
+      "lng": 9.92556
+     },
+     {
+      "name": "stien ved 2.18 km",
       "lat": 60.4701,
       "lng": 9.92465
      },
      {
-      "name": "stien ved 2.17 km",
-      "lat": 60.47028,
-      "lng": 9.92368
+      "name": "stien ved 2.18 km",
+      "lat": 60.47032,
+      "lng": 9.92345
      },
      {
       "name": "Vest for Venekollen",
@@ -4931,7 +5759,7 @@
     ],
     "source": "researched, verified (corrected), no local audit",
     "notes": "Vestsida av Gyranfisen stuper mot Vidalen, og både Bukollen, Gråfjell og Storrustefjell på andre sida av dalen er beskrevet med bratte stup — det er den kanten toppen har, og den er feil veg å kjøre ned. Ryggen fra Svarttjernskollen til toppen er avblåst i vind. Løypene til Gyranfisen og Treknatten kjøres bare når forholdene tillater det, og prioriteres i vinter- og påskeferien; utenfor det er ruta usporet myr og fjell. Vikerfjell naturreservat dekker deler av området.",
-    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (619 m from 0.92 km, 949 m from 2.17 km)."
+    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (629 m from 0.92 km, 949 m from 2.18 km)."
    }
   ]
  },
@@ -5040,10 +5868,31 @@
     },
     "waypoints": [
      {
+      "name": "utenom bygningene",
+      "lat": 63.26156,
+      "lng": 10.34196,
+      "elevation_m": 503.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/939648030."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 63.26146,
+      "lng": 10.34211,
+      "elevation_m": 506.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/939648030."
+     },
+     {
       "name": "Vassfjellhytta",
       "lat": 63.26151,
       "lng": 10.34241,
       "elevation_m": 507.4
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 63.26135,
+      "lng": 10.34263,
+      "elevation_m": 509.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/939648030."
      }
     ],
     "source": "researched, verified (ok), no local audit",
@@ -5100,6 +5949,27 @@
       "lat": 63.11703,
       "lng": 10.57936,
       "elevation_m": 434.8
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 63.11649,
+      "lng": 10.58287,
+      "elevation_m": 445.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/939648158."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 63.11647,
+      "lng": 10.58306,
+      "elevation_m": 447.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/939648158."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 63.11644,
+      "lng": 10.58326,
+      "elevation_m": 448.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/939648158."
      },
      {
       "name": "Kråklivollen",
@@ -5170,6 +6040,13 @@
       "elevation_m": 434.8
      },
      {
+      "name": "utenom bygningene",
+      "lat": 63.11622,
+      "lng": 10.58416,
+      "elevation_m": 451.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/939655018, way/939657358."
+     },
+     {
       "name": "Kråklivollen",
       "lat": 63.11635,
       "lng": 10.58504,
@@ -5207,6 +6084,13 @@
      "fullName": "Bree"
     },
     "waypoints": [
+     {
+      "name": "utenom bygningene",
+      "lat": 62.62057,
+      "lng": 9.46331,
+      "elevation_m": 694.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/955476398."
+     },
      {
       "name": "Vinterløypa over Breeslia",
       "lat": 62.62248,
@@ -5263,6 +6147,13 @@
      "fullName": "Storli"
     },
     "waypoints": [
+     {
+      "name": "utenom bygningene",
+      "lat": 62.69298,
+      "lng": 9.09629,
+      "elevation_m": 624.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/248399557."
+     },
      {
       "name": "Storbekkdalen, ca 1000 moh",
       "lat": 62.716,
@@ -5407,12 +6298,26 @@
     "description": "Frå Trollheimshytta etter merka sommarløype over bruene på Slettåa og Folda, forbi Bossvasshøgda og opp i botnen vest for henne, inn på vinterruta frå Gråhaugen og under Litj-Snota, over breen og opp på toppflanken",
     "trailhead": {
      "name": "Trollheimshytta",
-     "lat": 62.829,
-     "lng": 9.23982,
-     "elevation_m": 533.0,
+     "lat": 62.8291,
+     "lng": 9.23976,
+     "elevation_m": 532.0,
      "fullName": "Trollheimshytta"
     },
     "waypoints": [
+     {
+      "name": "utenom bygningene",
+      "lat": 62.82941,
+      "lng": 9.23987,
+      "elevation_m": 530.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/271455345."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 62.82943,
+      "lng": 9.23966,
+      "elevation_m": 529.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/271455345."
+     },
      {
       "name": "bruene over Slettåa og Folda",
       "lat": 62.832,
@@ -5609,6 +6514,13 @@
     },
     "waypoints": [
      {
+      "name": "utenom bygningene",
+      "lat": 60.54585,
+      "lng": 8.19661,
+      "elevation_m": 968.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/1003689787."
+     },
+     {
       "name": "Inn på løypa vest for Havsdalen",
       "lat": 60.54074,
       "lng": 8.18515,
@@ -5652,6 +6564,20 @@
      "fullName": "Ustaoset"
     },
     "waypoints": [
+     {
+      "name": "utenom bygningene",
+      "lat": 60.48593,
+      "lng": 8.07132,
+      "elevation_m": 1006.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/1003696792."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 60.48521,
+      "lng": 8.07267,
+      "elevation_m": 1015.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/1003695075."
+     },
      {
       "name": "Vest for Måfådalen",
       "lat": 60.4755,
@@ -5761,6 +6687,13 @@
     },
     "waypoints": [
      {
+      "name": "utenom bygningene",
+      "lat": 61.24994,
+      "lng": 12.03561,
+      "elevation_m": 568.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/956096548."
+     },
+     {
       "name": "Opp lia over Vestby",
       "lat": 61.25482,
       "lng": 12.03374,
@@ -5798,6 +6731,13 @@
      "fullName": "Storelva skistadion"
     },
     "waypoints": [
+     {
+      "name": "utenom bygningene",
+      "lat": 69.68624,
+      "lng": 18.78706,
+      "elevation_m": 22.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/1023537831."
+     },
      {
       "name": "Der ruta forlater lysløypa i Storelvdalen",
       "lat": 69.69251,
@@ -5876,6 +6816,48 @@
      "fullName": "Kvaløysletta"
     },
     "waypoints": [
+     {
+      "name": "stien aust for bustadfeltet",
+      "lat": 69.692185,
+      "lng": 18.863915,
+      "elevation_m": 23.0,
+      "note": "Lagt inn for hand i hus-runden: linja gjekk gjennom skulebygget og bustadfeltet ved Kvaløysletta; ho følgjer no dei kartlagde stiane aust for husa."
+     },
+     {
+      "name": "stien aust for bustadfeltet",
+      "lat": 69.692998,
+      "lng": 18.865153,
+      "elevation_m": 25.4,
+      "note": "Lagt inn for hand i hus-runden: linja gjekk gjennom skulebygget og bustadfeltet ved Kvaløysletta; ho følgjer no dei kartlagde stiane aust for husa."
+     },
+     {
+      "name": "stien aust for bustadfeltet",
+      "lat": 69.694055,
+      "lng": 18.866396,
+      "elevation_m": 34.8,
+      "note": "Lagt inn for hand i hus-runden: linja gjekk gjennom skulebygget og bustadfeltet ved Kvaløysletta; ho følgjer no dei kartlagde stiane aust for husa."
+     },
+     {
+      "name": "stien aust for bustadfeltet",
+      "lat": 69.695206,
+      "lng": 18.866959,
+      "elevation_m": 42.0,
+      "note": "Lagt inn for hand i hus-runden: linja gjekk gjennom skulebygget og bustadfeltet ved Kvaløysletta; ho følgjer no dei kartlagde stiane aust for husa."
+     },
+     {
+      "name": "stien aust for bustadfeltet",
+      "lat": 69.695665,
+      "lng": 18.864276,
+      "elevation_m": 52.6,
+      "note": "Lagt inn for hand i hus-runden: linja gjekk gjennom skulebygget og bustadfeltet ved Kvaløysletta; ho følgjer no dei kartlagde stiane aust for husa."
+     },
+     {
+      "name": "stien aust for bustadfeltet",
+      "lat": 69.695916,
+      "lng": 18.860852,
+      "elevation_m": 83.4,
+      "note": "Lagt inn for hand i hus-runden: linja gjekk gjennom skulebygget og bustadfeltet ved Kvaløysletta; ho følgjer no dei kartlagde stiane aust for husa."
+     },
      {
       "name": "alpinanlegget",
       "lat": 69.697,
@@ -6070,6 +7052,20 @@
      "fullName": "Kanstadbotn"
     },
     "waypoints": [
+     {
+      "name": "utenom bygningene",
+      "lat": 68.50246,
+      "lng": 15.88802,
+      "elevation_m": 46.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/953796132."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 68.50405,
+      "lng": 15.89226,
+      "elevation_m": 86.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/953796131."
+     },
      {
       "name": "opp austover",
       "lat": 68.506,
@@ -6704,6 +7700,27 @@
       "elevation_m": 302.6
      },
      {
+      "name": "utenom bygningene",
+      "lat": 60.43042,
+      "lng": 6.1582,
+      "elevation_m": 300.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/939477983, way/939479592."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 60.43061,
+      "lng": 6.15792,
+      "elevation_m": 309.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/939477983, way/939479592."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 60.43081,
+      "lng": 6.15765,
+      "elevation_m": 316.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/939477983, way/939479592."
+     },
+     {
       "name": "stien ved 0.54 km",
       "lat": 60.43151,
       "lng": 6.15783
@@ -6788,7 +7805,7 @@
     "description": "Frå Furedalen alpinsenter etter dei prepparerte løypene på Mødalsvegen til Mødal, opp kliva mot Stoveveggen, sør for Gråskorvenuten, gjennom søkket og siste biten langs ryggen til varden",
     "avoidWater": false,
     "waterNote": "Lina er trekt av ut.no si eiga GPX-linje. Fyrste løysinga køyrde med vannkost og la 281 ekstrapunkt i våte legg utan å bli rein (85 m att); det våte langs lina er myr og småtjørner på platået som kjelda sjølv kryssar. Løyst utan vannkost; vasskontakt målt og handtert med check_ground.py etter Snota/Styggemann-regelen — kryssingar kjelda sjølv tek, blir namngjevne i prosaen, og regulerte vatn finst ikkje på lina.",
-    "corridorNote": "Waypointa er trekte av ut.no si eiga GPX-linje (api/gpx/trip/1112154404, 257 punkt, 8,86 km mot publiserte 9,0), som endar 8 m frå det resolverte toppunktet. Mødalsvegen er kartlagd som piste:type=nordic med grooming classic/skating heile vegen til Mødal — dei «preparerte løypene» i kjelda er langrennsspor på ein seterveg, ikkje alpinbakke; alpintraséane i Furedalen ligg vest for linja. «Stoveveggen» og «Middagshola» i kjelda finst ikkje i registeret nær ruta; søkket på linja mellom 996 og 985 moh er det kjelda kallar Middagshola.",
+    "corridorNote": "Waypointa er trekte av ut.no si eiga GPX-linje (api/gpx/trip/1112154404, 257 punkt, 8,86 km mot publiserte 9,0), som endar 8 m frå det resolverte toppunktet. Mødalsvegen er kartlagd som piste:type=nordic med grooming classic/skating heile vegen til Mødal — dei «preparerte løypene» i kjelda er langrennsspor på ein seterveg, ikkje alpinbakke; alpintraséane i Furedalen ligg vest for linja. «Stoveveggen» og «Middagshola» i kjelda finst ikkje i registeret nær ruta; søkket på linja mellom 996 og 985 moh er det kjelda kallar Middagshola. follow_trails.py: put on the mapped path where the line ran beside it through forest (358 m from 1.82 km); replaced Mødalsvegen ved 517.",
     "trailhead": {
      "name": "Furedalen",
      "lat": 60.37236,
@@ -6804,16 +7821,51 @@
       "elevation_m": 405.86
      },
      {
+      "name": "utenom bygningene",
+      "lat": 60.37003,
+      "lng": 5.97794,
+      "elevation_m": 411.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/939481703."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 60.36873,
+      "lng": 5.97728,
+      "elevation_m": 416.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/939486521."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 60.36853,
+      "lng": 5.97737,
+      "elevation_m": 415.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/939486521."
+     },
+     {
       "name": "Mødalsvegen ved 414",
       "lat": 60.3684,
       "lng": 5.97774,
       "elevation_m": 414.18
      },
      {
+      "name": "utenom bygningene",
+      "lat": 60.36791,
+      "lng": 5.97661,
+      "elevation_m": 425.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/939477484."
+     },
+     {
       "name": "Mødalsvegen ved 440",
       "lat": 60.3661,
       "lng": 5.97483,
       "elevation_m": 440.23
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 60.36606,
+      "lng": 5.97485,
+      "elevation_m": 441.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/939481805."
      },
      {
       "name": "Mødalsvegen ved 483",
@@ -6828,16 +7880,59 @@
       "elevation_m": 499.91
      },
      {
-      "name": "Mødalsvegen ved 517",
-      "lat": 60.35409,
-      "lng": 5.97252,
-      "elevation_m": 517.04
+      "name": "stien ved 1.82 km",
+      "lat": 60.35766,
+      "lng": 5.9731
+     },
+     {
+      "name": "stien ved 1.82 km",
+      "lat": 60.35723,
+      "lng": 5.97265
+     },
+     {
+      "name": "stien ved 1.82 km",
+      "lat": 60.35656,
+      "lng": 5.97258
+     },
+     {
+      "name": "stien ved 1.82 km",
+      "lat": 60.35606,
+      "lng": 5.9722
+     },
+     {
+      "name": "stien ved 1.82 km",
+      "lat": 60.35528,
+      "lng": 5.97221
+     },
+     {
+      "name": "stien ved 1.82 km",
+      "lat": 60.35449,
+      "lng": 5.97223
+     },
+     {
+      "name": "stien ved 1.82 km",
+      "lat": 60.35415,
+      "lng": 5.97243
      },
      {
       "name": "Mødal",
       "lat": 60.3511,
       "lng": 5.97464,
       "elevation_m": 556.53
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 60.35059,
+      "lng": 5.97479,
+      "elevation_m": 556.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/939481730, way/939481732."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 60.35048,
+      "lng": 5.97483,
+      "elevation_m": 556.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/939481730, way/939481732."
      },
      {
       "name": "ovanfor Mødal",
@@ -6998,6 +8093,13 @@
       "elevation_m": 533.0
      },
      {
+      "name": "utenom bygningene",
+      "lat": 60.64397,
+      "lng": 6.57903,
+      "elevation_m": 587.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/709018720."
+     },
+     {
       "name": "Øvraset",
       "lat": 60.64487,
       "lng": 6.58671,
@@ -7010,10 +8112,24 @@
       "elevation_m": 669.58
      },
      {
+      "name": "utenom bygningene",
+      "lat": 60.64395,
+      "lng": 6.6023,
+      "elevation_m": 703.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/706974859."
+     },
+     {
       "name": "Nyestølen",
       "lat": 60.64412,
       "lng": 6.6023,
       "elevation_m": 706.94
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 60.64406,
+      "lng": 6.60259,
+      "elevation_m": 710.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/706974859."
      },
      {
       "name": "skoggrensa nordover",
@@ -7070,6 +8186,13 @@
       "lat": 68.21695,
       "lng": 14.4447,
       "elevation_m": 5.1
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 68.21701,
+      "lng": 14.4444,
+      "elevation_m": 4.0,
+      "note": "Lagt inn for hand i hus-runden: linja gjekk gjennom way/1356282797. Strandkanten her les Havflate i DTM1 alt på den opphavlege linja, så omvegen går 12 m nord for bygget utan å gå lenger ut."
      },
      {
       "name": "lysløypa nordover",
@@ -7153,6 +8276,27 @@
      "fullName": "Sagelva"
     },
     "waypoints": [
+     {
+      "name": "utenom bygningene",
+      "lat": 67.32059,
+      "lng": 15.02824,
+      "elevation_m": 19.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/1356541079."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 67.32068,
+      "lng": 15.0283,
+      "elevation_m": 20.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/1356541079."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 67.32077,
+      "lng": 15.02836,
+      "elevation_m": 21.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/1356541079."
+     },
      {
       "name": "øvste hytta, Geilo",
       "lat": 67.3225,
@@ -7364,6 +8508,27 @@
       "elevation_m": 122.0
      },
      {
+      "name": "utenom bygningene",
+      "lat": 59.90202,
+      "lng": 5.93713,
+      "elevation_m": 122.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/991068179."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 59.90209,
+      "lng": 5.93698,
+      "elevation_m": 122.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/991068179."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 59.90214,
+      "lng": 5.93667,
+      "elevation_m": 122.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/991068179."
+     },
+     {
       "name": "stien inn i skogen",
       "lat": 59.9035,
       "lng": 5.925,
@@ -7483,6 +8648,55 @@
      "fullName": "Ravika"
     },
     "waypoints": [
+     {
+      "name": "traktorvegen sør frå vegen",
+      "lat": 67.1217,
+      "lng": 14.15522,
+      "elevation_m": 2.0,
+      "note": "Lagt inn for hand i hus-runden: linja gjekk gjennom husrekka (way/361009825, way/361009832, way/361009838); traktorvegen (way/687759961) går aust for husa."
+     },
+     {
+      "name": "traktorvegen sør frå vegen",
+      "lat": 67.12096,
+      "lng": 14.15454,
+      "elevation_m": 2.0,
+      "note": "Lagt inn for hand i hus-runden: linja gjekk gjennom husrekka (way/361009825, way/361009832, way/361009838); traktorvegen (way/687759961) går aust for husa."
+     },
+     {
+      "name": "traktorvegen sør frå vegen",
+      "lat": 67.12011,
+      "lng": 14.15432,
+      "elevation_m": 12.0,
+      "note": "Lagt inn for hand i hus-runden: linja gjekk gjennom husrekka (way/361009825, way/361009832, way/361009838); traktorvegen (way/687759961) går aust for husa."
+     },
+     {
+      "name": "traktorvegen sør frå vegen",
+      "lat": 67.11949,
+      "lng": 14.15359,
+      "elevation_m": 16.0,
+      "note": "Lagt inn for hand i hus-runden: linja gjekk gjennom husrekka (way/361009825, way/361009832, way/361009838); traktorvegen (way/687759961) går aust for husa."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 67.11978,
+      "lng": 14.1488,
+      "elevation_m": 20.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/361009838."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 67.11974,
+      "lng": 14.14859,
+      "elevation_m": 20.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/361009838."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 67.1197,
+      "lng": 14.14838,
+      "elevation_m": 21.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/361009838."
+     },
      {
       "name": "skogsvegen",
       "lat": 67.1195,
@@ -7794,6 +9008,48 @@
      "fullName": "Skaland"
     },
     "waypoints": [
+     {
+      "name": "utenom bygningene",
+      "lat": 69.44511,
+      "lng": 17.29779,
+      "elevation_m": 3.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/955344432."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 69.44531,
+      "lng": 17.29789,
+      "elevation_m": 3.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/955344432."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 69.44552,
+      "lng": 17.298,
+      "elevation_m": 3.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/955344432."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 69.44619,
+      "lng": 17.29943,
+      "elevation_m": 20.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/955344436."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 69.44637,
+      "lng": 17.29952,
+      "elevation_m": 21.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/955344436."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 69.44656,
+      "lng": 17.29962,
+      "elevation_m": 23.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/955344436."
+     },
      {
       "name": "Dronningstien mot Grillbua",
       "lat": 69.44746,
@@ -8173,6 +9429,27 @@
     },
     "waypoints": [
      {
+      "name": "utenom bygningene",
+      "lat": 62.53591,
+      "lng": 7.83019,
+      "elevation_m": 417.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/976934487."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 62.53584,
+      "lng": 7.82998,
+      "elevation_m": 416.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/976934487."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 62.53579,
+      "lng": 7.82974,
+      "elevation_m": 412.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/976934487."
+     },
+     {
       "name": "Romsdalseggen-merkinga, nordsida av Tverrelva",
       "lat": 62.531,
       "lng": 7.822,
@@ -8216,6 +9493,27 @@
      "fullName": "Isfjorden stadion"
     },
     "waypoints": [
+     {
+      "name": "utenom bygningene",
+      "lat": 62.5701,
+      "lng": 7.795,
+      "elevation_m": 34.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/976937002."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 62.57004,
+      "lng": 7.79488,
+      "elevation_m": 37.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/976937002."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 62.56997,
+      "lng": 7.79476,
+      "elevation_m": 41.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/976937002."
+     },
      {
       "name": "traktorvegen i søraustlia",
       "lat": 62.568,
@@ -8271,6 +9569,13 @@
       "lat": 62.50809,
       "lng": 7.30469,
       "elevation_m": 393.0
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 62.50801,
+      "lng": 7.30429,
+      "elevation_m": 390.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/976936887."
      },
      {
       "name": "myra og Stavvasselva",
@@ -8390,12 +9695,26 @@
     "description": "Fra skogsvegen ved Sandeggen på Breivikeidet, langs nordsida av Russevankelva opp gjennom storsteinet terreng, inn i Russevankskaret der det flater på rundt 400 moh, ved punkt 511 mot sør-søraust, og jevnt opp på toppplatået forbi 847 til varden",
     "trailhead": {
      "name": "Sandeggen",
-     "lat": 69.6315,
-     "lng": 19.4181,
-     "elevation_m": 31.0,
+     "lat": 69.63145,
+     "lng": 19.41822,
+     "elevation_m": 30.0,
      "fullName": "Sandeggen"
     },
     "waypoints": [
+     {
+      "name": "utenom bygningene",
+      "lat": 69.63139,
+      "lng": 19.41798,
+      "elevation_m": 30.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/172660152."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 69.63147,
+      "lng": 19.41765,
+      "elevation_m": 30.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/172660152."
+     },
      {
       "name": "skogsvegen",
       "lat": 69.633,
@@ -8586,12 +9905,26 @@
     "description": "Fra skolen på Fagernes rundt skoleområdet og opp den dyrka marka, gjennom skogen med kurs for punkt 459, så austover langs en naturlig forsenkning mot varden på 871 der de fleste snur, og videre over småkupert terreng mot 912 på vestsida og opp den siste stigningen til toppen",
     "trailhead": {
      "name": "Fagernes",
-     "lat": 69.5605,
-     "lng": 19.1855,
+     "lat": 69.56048,
+     "lng": 19.18575,
      "elevation_m": 21.0,
      "fullName": "Fagernes"
     },
     "waypoints": [
+     {
+      "name": "utenom bygningene",
+      "lat": 69.56051,
+      "lng": 19.18586,
+      "elevation_m": 21.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/174648851."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 69.56046,
+      "lng": 19.18603,
+      "elevation_m": 22.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/174648851."
+     },
      {
       "name": "den dyrka marka og skogen",
       "lat": 69.558,
@@ -8922,12 +10255,19 @@
     "description": "Fra kraftstasjonen mot nordvest inn marka mot dalbunnen, så tidlig som mulig inn i dalen og langs venstresida opp mot vannet i forsenkinga, videre mot skaret til høyre for toppen, og ryggen den siste biten til topps",
     "trailhead": {
      "name": "Kvitfossen",
-     "lat": 68.3268,
-     "lng": 14.6523,
-     "elevation_m": 5.0,
+     "lat": 68.32689,
+     "lng": 14.65238,
+     "elevation_m": 4.0,
      "fullName": "Kvitfossen"
     },
     "waypoints": [
+     {
+      "name": "utenom bygningene",
+      "lat": 68.32692,
+      "lng": 14.65196,
+      "elevation_m": 6.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/575804061."
+     },
      {
       "name": "dalbunnen",
       "lat": 68.33,
@@ -8972,6 +10312,20 @@
      "fullName": "Laupstad"
     },
     "waypoints": [
+     {
+      "name": "utenom bygningene",
+      "lat": 68.35807,
+      "lng": 14.72259,
+      "elevation_m": 9.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/1009812621."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 68.35816,
+      "lng": 14.72243,
+      "elevation_m": 10.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/1009812621."
+     },
      {
       "name": "dalen mot vannet på 289",
       "lat": 68.363,
@@ -9238,6 +10592,27 @@
     },
     "waypoints": [
      {
+      "name": "utenom bygningene",
+      "lat": 68.44037,
+      "lng": 17.46936,
+      "elevation_m": 205.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/699410997."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 68.4404,
+      "lng": 17.46959,
+      "elevation_m": 206.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/699410997."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 68.44043,
+      "lng": 17.46982,
+      "elevation_m": 206.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/699410997."
+     },
+     {
       "name": "stien opp i Tøttadalen",
       "lat": 68.4441,
       "lng": 17.47518,
@@ -9348,7 +10723,7 @@
     ],
     "source": "researched, verified (ok), no local audit",
     "notes": "Fri Flyt, «Turbeskrivelse Beisfjordtøtta»: «Turbeskrivelsene tar utgangspunkt i Djupvik som startpunkt, men man kan også starte turen fra Narvik og følge den populære turstien som leder inn i Tøttdalen fra minikraftverket nordøst for skiheisene. Stien fører fram til Pumpvatn. Herfra kan du følge turbeskrivelsen videre mot Beirfjordtøtta.» Stien er kartlagd heile vegen: OSM way 103977371 → 103977458 → 1095555870 → 1095555869 → 1095555880 → 1095555886 → 1095555858 → 1095555883 → 1095555881 → 1095555888 → 1095555867 → 769899824 → 1095555865 → 1095555864 → 1095555890 → 1095555891 → 1095555889, 3,8 km frå parkeringa til nordaustenden av Pumpvatnet. Frå Pumpvatnet fell ruta saman med normalruta frå Djupvik, som kjelda seier ho skal. Startsteda er 3,7 km og 145 høgdemeter frå kvarandre: Djupvik ligg på 60 moh ved fjorden, Taraldsvikfossen på 205 moh i byen. Boka fører KAST 2 – Utfordrende, 1350 høgdemeter, 6,5 timar, sesong februar–juni, «Isøks og stegjern kan også behøves om det er harde snøforhold». Forsnesvatnet og Isvatnet er regulerte — linja held land, som på normalruta. Dei to andre oppstigningane i boka, 1.2.2 og 1.2.3, står ikkje her: begge opnar med «Start turen på samme måte som 1.2.1», altså same startsted. Dei to siste vegpunkta — ryggen sør for skaret (1317 moh) og toppryggen (1418 moh) — står berre på denne ruta. Routeren løyste ikkje siste etappen frå skaret til varden på denne korridoren sitt rutenett (bboksen er 4,3 km breiare enn normalruta sin, så cellene ligg annleis og toppblokka kom over 45-gradersgrensa), og dei to punkta er lesne av normalruta si eiga linje mellom dei same to endane, ikkje gjetta. Fyrste løysinga klipte 90 m av Pumpvatnet (325 moh) i nordaustre hjørnet. Vegpunktet normalruta har der — nordaustenden på 68,4428/17,532, 324,9 moh — er sett inn, og linja går rundt utløpet på land slik normalruta gjer.",
-    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (359 m from 2.1 km)."
+    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (358 m from 2.1 km)."
    }
   ]
  },
@@ -9407,6 +10782,27 @@
     },
     "waypoints": [
      {
+      "name": "utenom bygningene",
+      "lat": 68.67946,
+      "lng": 17.91306,
+      "elevation_m": 360.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/1025234329."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 68.67957,
+      "lng": 17.91288,
+      "elevation_m": 360.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/1025234329."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 68.67968,
+      "lng": 17.91271,
+      "elevation_m": 360.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/1025234329."
+     },
+     {
       "name": "over campingen",
       "lat": 68.682,
       "lng": 17.906,
@@ -9450,29 +10846,43 @@
     "description": "Fra kraftstasjonen på anleggsveien som følger Vesterskarelva opp dalen, langs bekken til den lille dammen ved tregrensa, så til høyre gjennom skogen mot nordvest, diagonalt over tregrensa til den tydelige hylla på rundt 800 moh, og videre i samme retning på de slakeste bakkene til toppen via nordaustryggen",
     "trailhead": {
      "name": "Skjomen kraftstasjon",
-     "lat": 68.184,
-     "lng": 17.306,
-     "elevation_m": 20.0,
+     "lat": 68.18405,
+     "lng": 17.30607,
+     "elevation_m": 19.0,
      "fullName": "Skjomen kraftstasjon"
     },
     "waypoints": [
      {
-      "name": "stien ved 0.53 km",
+      "name": "utenom bygningene",
+      "lat": 68.18409,
+      "lng": 17.30603,
+      "elevation_m": 18.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/968741817."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 68.18411,
+      "lng": 17.30573,
+      "elevation_m": 19.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/968741817."
+     },
+     {
+      "name": "stien ved 0.54 km",
       "lat": 68.18479,
       "lng": 17.29367
      },
      {
-      "name": "stien ved 0.53 km",
+      "name": "stien ved 0.54 km",
       "lat": 68.18492,
       "lng": 17.29146
      },
      {
-      "name": "stien ved 0.53 km",
+      "name": "stien ved 0.54 km",
       "lat": 68.18504,
       "lng": 17.28925
      },
      {
-      "name": "stien ved 0.53 km",
+      "name": "stien ved 0.54 km",
       "lat": 68.18495,
       "lng": 17.28736
      },
@@ -9503,7 +10913,7 @@
     ],
     "source": "researched, verified (ok), no local audit",
     "notes": "Fri Flyt: KAST 2 – Utfordrende. Se opp for skred sør for toppen og hull i bekken seint i sesongen. Gangnesrenna mot nordaust er relativt bratt i starten, rundt 40 grader, med ispartier fra bekkeløpet og skredaktivitet lenger nede — isøks, stegjern og eventuelt tau i kildens egen utstyrsliste for renna.",
-    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (239 m from 0.53 km)."
+    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (229 m from 0.54 km)."
    }
   ]
  },
@@ -9522,50 +10932,94 @@
     },
     "waypoints": [
      {
+      "name": "utenom bygningene",
+      "lat": 68.82396,
+      "lng": 17.17786,
+      "elevation_m": 10.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/925904181."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 68.82404,
+      "lng": 17.17803,
+      "elevation_m": 10.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/925904181."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 68.82411,
+      "lng": 17.17817,
+      "elevation_m": 11.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/925904181."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 68.82457,
+      "lng": 17.17866,
+      "elevation_m": 13.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/925903363, way/925905206."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 68.82474,
+      "lng": 17.17894,
+      "elevation_m": 13.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/925903363, way/925905206."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 68.82492,
+      "lng": 17.17921,
+      "elevation_m": 13.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/925903363, way/925905206."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 68.82587,
+      "lng": 17.18066,
+      "elevation_m": 17.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/925902600."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 68.82595,
+      "lng": 17.18078,
+      "elevation_m": 17.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/925902600."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 68.82603,
+      "lng": 17.18091,
+      "elevation_m": 18.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/925902600."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 68.82775,
+      "lng": 17.19022,
+      "elevation_m": 45.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/925902445."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 68.82775,
+      "lng": 17.19052,
+      "elevation_m": 44.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/925902445."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 68.82771,
+      "lng": 17.19069,
+      "elevation_m": 44.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/925902445."
+     },
+     {
       "name": "vegen mot Kvantobotn",
       "lat": 68.825,
       "lng": 17.2,
       "elevation_m": 91.0
-     },
-     {
-      "name": "stien ved 1.95 km",
-      "lat": 68.82725,
-      "lng": 17.21507
-     },
-     {
-      "name": "stien ved 1.95 km",
-      "lat": 68.82781,
-      "lng": 17.21537
-     },
-     {
-      "name": "stien ved 1.95 km",
-      "lat": 68.82837,
-      "lng": 17.21567
-     },
-     {
-      "name": "stien ved 1.95 km",
-      "lat": 68.82877,
-      "lng": 17.21698
-     },
-     {
-      "name": "stien ved 1.95 km",
-      "lat": 68.82893,
-      "lng": 17.21809
-     },
-     {
-      "name": "stien ved 1.95 km",
-      "lat": 68.82894,
-      "lng": 17.22037
-     },
-     {
-      "name": "stien ved 1.95 km",
-      "lat": 68.82895,
-      "lng": 17.22266
-     },
-     {
-      "name": "stien ved 1.95 km",
-      "lat": 68.82847,
-      "lng": 17.22407
      },
      {
       "name": "skogen aust for Snøfjellelva",
@@ -9599,8 +11053,7 @@
      }
     ],
     "source": "researched, verified (ok), no local audit",
-    "notes": "Fri Flyt: KAST 3 – Komplekst. Alpinøks og stegjern. Dokumentert skredhistorikk på sørvendte heng og vest for høgde 1018; ising nær tregrensa; Nordøstrenna (45–50 grader) og Østbratta er ekspertlinjer som krever kontrollerte former. Hold aust for Skjellelva ved nedkjøring mot Juliusvatnet på grunn av ising.",
-    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (359 m from 1.95 km)."
+    "notes": "Fri Flyt: KAST 3 – Komplekst. Alpinøks og stegjern. Dokumentert skredhistorikk på sørvendte heng og vest for høgde 1018; ising nær tregrensa; Nordøstrenna (45–50 grader) og Østbratta er ekspertlinjer som krever kontrollerte former. Hold aust for Skjellelva ved nedkjøring mot Juliusvatnet på grunn av ising."
    }
   ]
  },
@@ -9901,6 +11354,13 @@
       "elevation_m": 301.0
      },
      {
+      "name": "utenom bygningene",
+      "lat": 68.79062,
+      "lng": 16.2947,
+      "elevation_m": 284.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/1001817203."
+     },
+     {
       "name": "mot Koven",
       "lat": 68.8,
       "lng": 16.27,
@@ -10039,12 +11499,19 @@
     "description": "Fra parkeringa ved Gausvik kirke mot demningen, over elva og opp langs austsida av Heimetverrelva, gjennom grinda ved den store furua og det minst krevjande terrenget rett mot toppen",
     "trailhead": {
      "name": "Gausvik",
-     "lat": 68.61117,
-     "lng": 16.49228,
-     "elevation_m": 46.0,
+     "lat": 68.61124,
+     "lng": 16.49209,
+     "elevation_m": 47.0,
      "fullName": "Gausvik"
     },
     "waypoints": [
+     {
+      "name": "utenom bygningene",
+      "lat": 68.61115,
+      "lng": 16.49171,
+      "elevation_m": 48.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/999960603."
+     },
      {
       "name": "demningen",
       "lat": 68.61073,
@@ -10300,6 +11767,20 @@
      "fullName": "Fiskefjorden"
     },
     "waypoints": [
+     {
+      "name": "utenom bygningene",
+      "lat": 68.55596,
+      "lng": 16.08638,
+      "elevation_m": 6.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/944355113."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 68.5568,
+      "lng": 16.08815,
+      "elevation_m": 2.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/944355230."
+     },
      {
       "name": "traktorveien øst for Gårdselva",
       "lat": 68.559,
@@ -10719,6 +12200,27 @@
     },
     "waypoints": [
      {
+      "name": "utenom bygningene",
+      "lat": 68.88953,
+      "lng": 16.447,
+      "elevation_m": 17.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/963161994."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 68.88966,
+      "lng": 16.44717,
+      "elevation_m": 18.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/963161994."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 68.88981,
+      "lng": 16.44734,
+      "elevation_m": 24.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/963161994."
+     },
+     {
       "name": "stien ved 0.48 km",
       "lat": 68.89334,
       "lng": 16.44723
@@ -10804,7 +12306,7 @@
     ],
     "source": "researched, verified (ok), no local audit",
     "notes": "Fri Flyts 4.6.2 Sørsiden, gått motsett veg: «selvsagt lettere å finne hvis man går opp samme rute som man kjører ned». Eigen parkering — og kildens primære: «ved start skogsvei på østsiden av Vaskinn er det en liten parkeringsplass», medan appens vestrute brukar Dale. Ruta går ned til Vadskinndalsvatnet (SSR 68.91088/16.44968) og vidare ned Vaskinnelva (SSR 68.89926/16.44994). Den brattaste sørlina, 4.6.3 Sørsiden direkte på 35–50 grader, er ein annan line og ikkje denne.",
-    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (697 m from 0.48 km); replaced sommarstien gjennom skogen."
+    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (706 m from 0.48 km); replaced sommarstien gjennom skogen."
    }
   ]
  },
@@ -10822,6 +12324,13 @@
      "fullName": "Bjørnerå"
     },
     "waypoints": [
+     {
+      "name": "utenom bygningene",
+      "lat": 68.88348,
+      "lng": 16.50236,
+      "elevation_m": 19.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/963167986."
+     },
      {
       "name": "Bjørnrådalen",
       "lat": 68.896,
@@ -11200,6 +12709,27 @@
     },
     "waypoints": [
      {
+      "name": "utenom bygningene",
+      "lat": 68.71685,
+      "lng": 16.05438,
+      "elevation_m": 19.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/1001818716."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 68.71691,
+      "lng": 16.05471,
+      "elevation_m": 21.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/1001818716."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 68.71698,
+      "lng": 16.05504,
+      "elevation_m": 24.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/1001818716."
+     },
+     {
       "name": "Skommesvik",
       "lat": 68.71811,
       "lng": 16.06108,
@@ -11542,6 +13072,20 @@
      "fullName": "Breivoll"
     },
     "waypoints": [
+     {
+      "name": "utenom bygningene",
+      "lat": 68.7554,
+      "lng": 17.13787,
+      "elevation_m": 24.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/925902823, way/925904007."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 68.75506,
+      "lng": 17.13609,
+      "elevation_m": 30.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/925902823, way/925904007."
+     },
      {
       "name": "traktorveien",
       "lat": 68.7549,
@@ -12046,6 +13590,27 @@
     },
     "waypoints": [
      {
+      "name": "utenom bygningene",
+      "lat": 68.91306,
+      "lng": 16.61139,
+      "elevation_m": 10.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/963365558, way/963365562, way/963365563."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 68.91291,
+      "lng": 16.61047,
+      "elevation_m": 15.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/963365558, way/963365562, way/963365563."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 68.91277,
+      "lng": 16.60958,
+      "elevation_m": 15.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/963365558, way/963365562, way/963365563."
+     },
+     {
       "name": "traktorvegen",
       "lat": 68.91204,
       "lng": 16.60417,
@@ -12399,6 +13964,12 @@
     },
     "waypoints": [
      {
+      "name": "vest og nord for tunet på Holte",
+      "lat": 68.8962,
+      "lng": 17.2964,
+      "elevation_m": 216.1
+     },
+     {
       "name": "opp frå vegenden",
       "lat": 68.9,
       "lng": 17.3,
@@ -12515,16 +14086,61 @@
     },
     "waypoints": [
      {
+      "name": "utenom bygningene",
+      "lat": 68.76342,
+      "lng": 16.54323,
+      "elevation_m": 66.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/731541113."
+     },
+     {
       "name": "venstresida av myra",
       "lat": 68.7615,
       "lng": 16.534,
       "elevation_m": 113.0
      },
      {
-      "name": "det opne feltet",
-      "lat": 68.761,
-      "lng": 16.526,
-      "elevation_m": 205.0
+      "name": "stien ved 0.60 km",
+      "lat": 68.76179,
+      "lng": 16.53089
+     },
+     {
+      "name": "stien ved 0.60 km",
+      "lat": 68.7618,
+      "lng": 16.52928
+     },
+     {
+      "name": "stien ved 0.60 km",
+      "lat": 68.76181,
+      "lng": 16.52767
+     },
+     {
+      "name": "stien ved 0.60 km",
+      "lat": 68.76158,
+      "lng": 16.52555
+     },
+     {
+      "name": "stien ved 0.60 km",
+      "lat": 68.76134,
+      "lng": 16.52342
+     },
+     {
+      "name": "stien ved 0.60 km",
+      "lat": 68.76111,
+      "lng": 16.5213
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 68.76138,
+      "lng": 16.52007,
+      "elevation_m": 314.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/114852992."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 68.76161,
+      "lng": 16.51979,
+      "elevation_m": 319.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/114852992."
      },
      {
       "name": "Maistua",
@@ -12540,7 +14156,8 @@
      }
     ],
     "source": "researched, verified (ok), no local audit",
-    "notes": "Fri Flyt: KAST 1 – Enkelt. Nedkjøringane på dei tre skildra rutene er for det meste 20–30 grader, men kilden er tydeleg på at ein utanfor dei lett kan oppsøkje heng på 40 grader — og at det berre skal gjerast når snøen er stabil. Toppryggen kan vera avblåst og bar eller vindpåverka, og dei fleste stoppar eit stykke nord for toppen."
+    "notes": "Fri Flyt: KAST 1 – Enkelt. Nedkjøringane på dei tre skildra rutene er for det meste 20–30 grader, men kilden er tydeleg på at ein utanfor dei lett kan oppsøkje heng på 40 grader — og at det berre skal gjerast når snøen er stabil. Toppryggen kan vera avblåst og bar eller vindpåverka, og dei fleste stoppar eit stykke nord for toppen.",
+    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (399 m from 0.6 km); replaced det opne feltet."
    }
   ]
  },
@@ -12558,6 +14175,13 @@
      "fullName": "Kilkam idrettsanlegg"
     },
     "waypoints": [
+     {
+      "name": "utenom bygningene",
+      "lat": 68.71494,
+      "lng": 16.49475,
+      "elevation_m": 83.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/1028474926, way/1028475376."
+     },
      {
       "name": "skisporet forbi barnehagen",
       "lat": 68.7155,
@@ -12685,34 +14309,41 @@
     },
     "waypoints": [
      {
-      "name": "stien ved 0.25 km",
+      "name": "utenom bygningene",
+      "lat": 68.87758,
+      "lng": 16.56322,
+      "elevation_m": 9.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/963204594."
+     },
+     {
+      "name": "stien ved 0.26 km",
       "lat": 68.87787,
       "lng": 16.56317
      },
      {
-      "name": "stien ved 0.25 km",
+      "name": "stien ved 0.26 km",
       "lat": 68.87876,
       "lng": 16.56266
      },
      {
-      "name": "stien ved 0.25 km",
+      "name": "stien ved 0.26 km",
       "lat": 68.87965,
       "lng": 16.56215
      },
      {
-      "name": "stien ved 0.25 km",
+      "name": "stien ved 0.26 km",
       "lat": 68.88014,
       "lng": 16.55953
      },
      {
-      "name": "stien ved 0.25 km",
+      "name": "stien ved 0.26 km",
       "lat": 68.88063,
       "lng": 16.5569
      },
      {
-      "name": "stien ved 0.25 km",
-      "lat": 68.88079,
-      "lng": 16.55499
+      "name": "stien ved 0.26 km",
+      "lat": 68.8808,
+      "lng": 16.55482
      },
      {
       "name": "traktorvegen langs Forselva",
@@ -12772,7 +14403,7 @@
     ],
     "source": "researched, verified (ok), no local audit",
     "notes": "Fri Flyt: KAST 2 – Utfordrende. Alpinøks og stegjern. Sørsida er kontinuerleg mellom 25 og 35 grader. «I påsken 1969 gikk det skred på vestsiden av Galten sin sydside, to ble tatt av skredet og en mann omkom.» Den alpine varianten over Nordtinden (610) held 45–50 grader og krev tau, øks, stegjern og eit lite rack — det er ei anna rute enn denne.",
-    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (419 m from 0.25 km, 199 m from 1.97 km)."
+    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (419 m from 0.26 km, 199 m from 1.97 km); replaced utenom bygningene, utenom bygningene."
    }
   ]
  },
@@ -12803,10 +14434,24 @@
       "elevation_m": 225.0
      },
      {
+      "name": "utenom bygningene",
+      "lat": 68.75979,
+      "lng": 17.004,
+      "elevation_m": 261.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/925904451."
+     },
+     {
       "name": "vegenden ved hyttefeltet",
       "lat": 68.76781,
       "lng": 17.00879,
       "elevation_m": 246.0
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 68.76864,
+      "lng": 17.0102,
+      "elevation_m": 248.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/925904423."
      },
      {
       "name": "myrane nordaust for Skavbakkan",
@@ -12972,6 +14617,13 @@
       "lng": 16.3329
      },
      {
+      "name": "utenom bygningene",
+      "lat": 68.78483,
+      "lng": 16.33457,
+      "elevation_m": 229.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/1001817390."
+     },
+     {
       "name": "dyrka mark",
       "lat": 68.7865,
       "lng": 16.334,
@@ -12998,7 +14650,7 @@
     ],
     "source": "researched, verified (ok), no local audit",
     "notes": "Fri Flyt: KAST 1 – Enkelt. Farepunktet er sida ved sida av ruta: «Området til venstre (vest) er atskillig brattere og må ikke kjøres.» Eit par gjerdekryssingar over dyrka mark på veg nordover frå Kvilheim.",
-    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (329 m from 0.28 km); replaced traktorvegen forbi Kvilheim."
+    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (329 m from 0.28 km); replaced traktorvegen forbi Kvilheim, utenom bygningene."
    }
   ]
  },
@@ -13135,6 +14787,36 @@
       "elevation_m": 183.0
      },
      {
+      "name": "skogsbilvegen øst for Bergerud",
+      "lat": 60.02672,
+      "lng": 10.787,
+      "elevation_m": 194.1
+     },
+     {
+      "name": "vegen inn på Bergerud",
+      "lat": 60.02679,
+      "lng": 10.78562,
+      "elevation_m": 187.4
+     },
+     {
+      "name": "vegen forbi Bergerud",
+      "lat": 60.02768,
+      "lng": 10.78524,
+      "elevation_m": 194.4
+     },
+     {
+      "name": "vegen nord for Bergerud",
+      "lat": 60.02835,
+      "lng": 10.78481,
+      "elevation_m": 196.9
+     },
+     {
+      "name": "der Rollveien begynner",
+      "lat": 60.02925,
+      "lng": 10.78403,
+      "elevation_m": 197.0
+     },
+     {
       "name": "skogen nord for Kroken",
       "lat": 60.03077,
       "lng": 10.78321,
@@ -13153,27 +14835,27 @@
       "elevation_m": 319.4
      },
      {
-      "name": "stien ved 3.10 km",
+      "name": "stien ved 3.15 km",
       "lat": 60.04326,
       "lng": 10.77626
      },
      {
-      "name": "stien ved 3.10 km",
+      "name": "stien ved 3.15 km",
       "lat": 60.04382,
       "lng": 10.7759
      },
      {
-      "name": "stien ved 3.10 km",
+      "name": "stien ved 3.15 km",
       "lat": 60.04437,
       "lng": 10.77554
      },
      {
-      "name": "stien ved 3.10 km",
+      "name": "stien ved 3.15 km",
       "lat": 60.04462,
       "lng": 10.77502
      },
      {
-      "name": "stien ved 3.10 km",
+      "name": "stien ved 3.15 km",
       "lat": 60.04486,
       "lng": 10.77336
      },
@@ -13192,7 +14874,7 @@
     ],
     "source": "researched, verified (corrected), no local audit",
     "notes": "Ut.no: «pass på å unngå stupene som ligger på sørsiden av Gaupekollen.» Nedkjøringa er vanskelegare enn oppturen: «Nedkjøringen kan fort bli ganske teknisk og byksete om man ikke har sett seg ut noen åpne felt på forkant», og kilden rår til å følgje sommerstiane, t.d. den blåmerkte ned til Øyungen. Tett skog, kratt og elver. Kollene liknar kvarandre — «plutselig står du på Mellomkollen når du trodde du var på Midtkollen» — så kart og kompass. Fredet naturreservat.",
-    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (208 m from 3.1 km); replaced Jondalen."
+    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (209 m from 3.15 km); replaced Jondalen."
    }
   ]
  },
@@ -13215,6 +14897,13 @@
       "lat": 61.55012,
       "lng": 6.26574,
       "elevation_m": 293.3
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 61.55311,
+      "lng": 6.26857,
+      "elevation_m": 365.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/1000239148."
      },
      {
       "name": "Fjellstøylen",
@@ -13868,12 +15557,26 @@
     "description": "Fra Maurvangen Fjellpark sørover opp gjennom bjørkeskogen, langs Brurskardbekken, opp på Molflyhalsen og ryggen østover til toppen",
     "trailhead": {
      "name": "Maurvangen Fjellpark",
-     "lat": 61.48883,
-     "lng": 8.84352,
-     "elevation_m": 970.5,
+     "lat": 61.48871,
+     "lng": 8.84345,
+     "elevation_m": 971.0,
      "fullName": "Maurvangen Fjellpark"
     },
     "waypoints": [
+     {
+      "name": "utenom bygningene",
+      "lat": 61.4885,
+      "lng": 8.84307,
+      "elevation_m": 971.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/199805839, way/925444497."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 61.48805,
+      "lng": 8.84283,
+      "elevation_m": 973.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/199805839, way/925444497."
+     },
      {
       "name": "bjørkeskogen",
       "lat": 61.483,
@@ -14017,54 +15720,75 @@
     },
     "waypoints": [
      {
-      "name": "stien ved 0.30 km",
+      "name": "utenom bygningene",
+      "lat": 61.27146,
+      "lng": 7.02862,
+      "elevation_m": 515.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/942986306, way/942990631."
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 61.27191,
+      "lng": 7.02884,
+      "elevation_m": 525.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/942986306, way/942990631."
+     },
+     {
+      "name": "stien ved 0.31 km",
       "lat": 61.27262,
       "lng": 7.0292
      },
      {
-      "name": "stien ved 0.30 km",
+      "name": "stien ved 0.31 km",
       "lat": 61.27286,
       "lng": 7.03008
      },
      {
-      "name": "stien ved 0.30 km",
+      "name": "stien ved 0.31 km",
       "lat": 61.27355,
       "lng": 7.03062
      },
      {
-      "name": "stien ved 0.30 km",
+      "name": "stien ved 0.31 km",
       "lat": 61.27425,
       "lng": 7.03116
      },
      {
-      "name": "stien ved 0.30 km",
+      "name": "stien ved 0.31 km",
       "lat": 61.2748,
       "lng": 7.03135
      },
      {
-      "name": "stien ved 0.30 km",
+      "name": "stien ved 0.31 km",
       "lat": 61.27535,
       "lng": 7.03154
      },
      {
-      "name": "stien ved 0.30 km",
+      "name": "stien ved 0.31 km",
       "lat": 61.27564,
       "lng": 7.03125
      },
      {
-      "name": "stien ved 0.30 km",
+      "name": "stien ved 0.31 km",
       "lat": 61.2759,
       "lng": 7.02927
      },
      {
-      "name": "stien ved 0.30 km",
+      "name": "stien ved 0.31 km",
       "lat": 61.27622,
       "lng": 7.02825
      },
      {
-      "name": "stien ved 0.30 km",
+      "name": "stien ved 0.31 km",
       "lat": 61.27616,
       "lng": 7.02725
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 61.27932,
+      "lng": 7.02696,
+      "elevation_m": 742.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/942985593."
      },
      {
       "name": "ryggen",
@@ -14087,7 +15811,7 @@
     ],
     "source": "researched, verified (ok), no local audit",
     "notes": "Fri Flyt oppgir «Farar: Ingen» for normalvegen. Sørsida er solvendt, og Fri Flyt ber deg ta turen tidlig: «Nyt solstrålane i dei kalde månadane og ikkje vent for lenge på sesongen før ein tek turen.» Ved glasert skare kan en utglidning likevel være farlig.",
-    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (388 m from 0.3 km); replaced over jordet."
+    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (388 m from 0.31 km); replaced over jordet."
    }
   ]
  },
@@ -14340,6 +16064,544 @@
     ],
     "source": "researched, verified (ok), no local audit",
     "notes": "Ut.no: Mølnelva har dannet et markant juv; «På tur nedover anbefales det å krysset juvet/Mølnelva ved ca. 200 moh.» Fri Flyt om p970-ruta (5.2): terrenget vest for sporet er rundt 30+ grader i hele den sørøstvendte flanken fra 400 til 700 moh, og «På dager med skredfaregrad 3 må du holde behørig avstand til sørøstflankene som starter på 400-700 moh.» Sørflanken er to kilometer bred med mange valg; hold deg på linja."
+   }
+  ]
+ },
+ "stortinden-langfjord": {
+  "routes": [
+   {
+    "id": "langfjordbotn",
+    "name": "Fra Langfjordbotn over ryggen",
+    "description": "Fra kafeen ved krysset E6/fv. 882 i Langfjordbotn rett nordover gjennom bjørkeskogen, opp den breie ryggen over forhøyningen på 839 og 920-toppen, og langs toppryggen til Stortinden",
+    "trailhead": {
+     "name": "Kafeen i Langfjordbotn",
+     "lat": 70.04028,
+     "lng": 22.2595,
+     "elevation_m": 40.0,
+     "fullName": "Kafeen i Langfjordbotn"
+    },
+    "waypoints": [
+     {
+      "name": "utenom bygningene",
+      "lat": 70.04035,
+      "lng": 22.25931,
+      "elevation_m": 40.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/1008150402."
+     },
+     {
+      "name": "nordover gjennom bjørkeskogen",
+      "lat": 70.05,
+      "lng": 22.262,
+      "elevation_m": 256.4
+     },
+     {
+      "name": "ryggen",
+      "lat": 70.0565,
+      "lng": 22.2645,
+      "elevation_m": 553.4
+     },
+     {
+      "name": "øst for kanten",
+      "lat": 70.0595,
+      "lng": 22.269,
+      "elevation_m": 684.0
+     },
+     {
+      "name": "øst for kanten",
+      "lat": 70.062,
+      "lng": 22.2685,
+      "elevation_m": 790.6
+     },
+     {
+      "name": "forhøyningen på 839",
+      "lat": 70.06352,
+      "lng": 22.26605,
+      "elevation_m": 837.7
+     },
+     {
+      "name": "midt på ryggen",
+      "lat": 70.07,
+      "lng": 22.269,
+      "elevation_m": 854.0
+     },
+     {
+      "name": "midt på ryggen",
+      "lat": 70.0716,
+      "lng": 22.2684,
+      "elevation_m": 876.0
+     },
+     {
+      "name": "midt på ryggen",
+      "lat": 70.0735,
+      "lng": 22.2686,
+      "elevation_m": 886.7
+     },
+     {
+      "name": "920-toppen",
+      "lat": 70.07891,
+      "lng": 22.26658,
+      "elevation_m": 918.5
+     },
+     {
+      "name": "toppryggen",
+      "lat": 70.08307,
+      "lng": 22.26816,
+      "elevation_m": 884.2
+     },
+     {
+      "name": "toppryggen",
+      "lat": 70.08977,
+      "lng": 22.27605,
+      "elevation_m": 906.0
+     },
+     {
+      "name": "918-toppen",
+      "lat": 70.09194,
+      "lng": 22.27816,
+      "elevation_m": 919.5
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: «Krevende skredvurdering vest og sør for toppryggen». Den østvendte gryta mot Øvre Møllevatn har «flere bratte nedkjøringer som er svært eksponerte», og flankene mot Russelvdalen er «bratt og vurderingsmessig krevende storfjellskjøring». Hold deg på ryggen."
+   }
+  ]
+ },
+ "gievdnerassa": {
+  "routes": [
+   {
+    "id": "oksfjordbotn",
+    "name": "Fra Øksfjordbotn over nordøstryggen",
+    "description": "Fra parkeringa ved skolen i Øksfjordbotn langs Gammelveien og sommervegen Geassegeaidnu østover sør for Nordelva-vatnet, opp lia øst for Skárpavággi og over det slake topplatået til Gievdnerášša",
+    "trailhead": {
+     "name": "Parkeringa ved skolen i Øksfjordbotn",
+     "lat": 70.10842,
+     "lng": 22.52829,
+     "elevation_m": 57.8,
+     "fullName": "Parkeringa ved skolen i Øksfjordbotn"
+    },
+    "waypoints": [
+     {
+      "name": "Gammelveien",
+      "lat": 70.10484,
+      "lng": 22.53046,
+      "elevation_m": 60.4
+     },
+     {
+      "name": "utenom bygningene",
+      "lat": 70.10461,
+      "lng": 22.53194,
+      "elevation_m": 62.0,
+      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/759043353."
+     },
+     {
+      "name": "sommervegen Geassegeaidnu",
+      "lat": 70.10407,
+      "lng": 22.53527,
+      "elevation_m": 66.6
+     },
+     {
+      "name": "sommervegen Geassegeaidnu",
+      "lat": 70.10265,
+      "lng": 22.53762,
+      "elevation_m": 74.8
+     },
+     {
+      "name": "sommervegen Geassegeaidnu",
+      "lat": 70.10181,
+      "lng": 22.53864,
+      "elevation_m": 88.5
+     },
+     {
+      "name": "sommervegen Geassegeaidnu",
+      "lat": 70.10181,
+      "lng": 22.54504,
+      "elevation_m": 94.3
+     },
+     {
+      "name": "sommervegen Geassegeaidnu",
+      "lat": 70.10218,
+      "lng": 22.5531,
+      "elevation_m": 117.9
+     },
+     {
+      "name": "stien østover",
+      "lat": 70.1017,
+      "lng": 22.56,
+      "elevation_m": 119.8
+     },
+     {
+      "name": "sør for vatnet",
+      "lat": 70.102,
+      "lng": 22.566,
+      "elevation_m": 142.0
+     },
+     {
+      "name": "øst for tjernet",
+      "lat": 70.1045,
+      "lng": 22.57,
+      "elevation_m": 128.8
+     },
+     {
+      "name": "lia øst for steget",
+      "lat": 70.107,
+      "lng": 22.572,
+      "elevation_m": 170.1
+     },
+     {
+      "name": "ryggen nordøstover",
+      "lat": 70.1095,
+      "lng": 22.5722,
+      "elevation_m": 284.2
+     },
+     {
+      "name": "ryggen nordøstover",
+      "lat": 70.115,
+      "lng": 22.572,
+      "elevation_m": 450.9
+     },
+     {
+      "name": "ryggen nordøstover",
+      "lat": 70.1195,
+      "lng": 22.582,
+      "elevation_m": 605.9
+     },
+     {
+      "name": "ryggen",
+      "lat": 70.124,
+      "lng": 22.592,
+      "elevation_m": 748.3
+     },
+     {
+      "name": "slakere mot toppen",
+      "lat": 70.129,
+      "lng": 22.596,
+      "elevation_m": 801.8
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: «I dårlig sikt er det lett å gli ned i små og store heng brattere enn 30 grader.» Mikroterrenget er utfordrende å orientere seg i når sporene blåser igjen."
+   }
+  ]
+ },
+ "laslettind": {
+  "routes": [
+   {
+    "id": "jokelfjordeidet",
+    "name": "Fra Jøkelfjordeidet opp østryggen",
+    "description": "Fra parkeringa ved Jøkelfjordveien på Jøkelfjordeidet vestover over bekken og opp den breie østryggen til varden og toppen av Laslettind",
+    "trailhead": {
+     "name": "Parkeringa ved Jøkelfjordeidet",
+     "lat": 70.03743,
+     "lng": 22.06926,
+     "elevation_m": 162.6,
+     "fullName": "Parkeringa ved Jøkelfjordeidet"
+    },
+    "waypoints": [
+     {
+      "name": "ut.no-stien",
+      "lat": 70.03628,
+      "lng": 22.06051,
+      "elevation_m": 195.7
+     },
+     {
+      "name": "ut.no-stien",
+      "lat": 70.03574,
+      "lng": 22.04999,
+      "elevation_m": 275.0
+     },
+     {
+      "name": "ut.no-stien",
+      "lat": 70.03644,
+      "lng": 22.04083,
+      "elevation_m": 372.4
+     },
+     {
+      "name": "ut.no-stien",
+      "lat": 70.03841,
+      "lng": 22.03233,
+      "elevation_m": 491.2
+     },
+     {
+      "name": "ut.no-stien",
+      "lat": 70.03963,
+      "lng": 22.02199,
+      "elevation_m": 622.7
+     },
+     {
+      "name": "varden på Laslettind",
+      "lat": 70.04273,
+      "lng": 22.00659,
+      "elevation_m": 808.1
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: «Laslettind er omkranset av stup og bratt renneterreng sør og nord for toppen og ryggen.» Fri Flyt (Lyngenfjord): «Skavler på toppen»."
+   }
+  ]
+ },
+ "vassnestind": {
+  "routes": [
+   {
+    "id": "jokelfjord",
+    "name": "Fra Jøkelfjord vest for Golpeelva",
+    "description": "Fra parkeringa i Jøkelfjord sørover gjennom glissen skog vest for Golpeelva, opp den breie ryggen og over topplatået til varden på Vassnestind",
+    "trailhead": {
+     "name": "Parkeringa i Jøkelfjord",
+     "lat": 70.06023,
+     "lng": 21.87301,
+     "elevation_m": 21.5,
+     "fullName": "Parkeringa i Jøkelfjord"
+    },
+    "waypoints": [
+     {
+      "name": "vest for elva",
+      "lat": 70.0597,
+      "lng": 21.8716,
+      "elevation_m": 35.3
+     },
+     {
+      "name": "vest for gjelet",
+      "lat": 70.0585,
+      "lng": 21.8722,
+      "elevation_m": 58.9
+     },
+     {
+      "name": "vest for gjelet",
+      "lat": 70.0572,
+      "lng": 21.8722,
+      "elevation_m": 101.8
+     },
+     {
+      "name": "vest for Golpeelva",
+      "lat": 70.056,
+      "lng": 21.873,
+      "elevation_m": 145.1
+     },
+     {
+      "name": "vest for Golpeelva",
+      "lat": 70.0509,
+      "lng": 21.871,
+      "elevation_m": 334.1
+     },
+     {
+      "name": "ryggen",
+      "lat": 70.0465,
+      "lng": 21.871,
+      "elevation_m": 503.6
+     },
+     {
+      "name": "ryggen",
+      "lat": 70.0422,
+      "lng": 21.869,
+      "elevation_m": 651.6
+     },
+     {
+      "name": "ryggen",
+      "lat": 70.0378,
+      "lng": 21.869,
+      "elevation_m": 738.4
+     },
+     {
+      "name": "ryggen",
+      "lat": 70.035,
+      "lng": 21.87,
+      "elevation_m": 825.0
+     },
+     {
+      "name": "toppplatået",
+      "lat": 70.0335,
+      "lng": 21.874,
+      "elevation_m": 869.4
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt: «Hold avstand til det bratte terrenget mot sør og nord.» Brattere parti i skoggrensa mellom 220 og 240 moh, og små partier brattere enn 30 grader mellom 440 og 600 moh."
+   }
+  ]
+ },
+ "hilleknuten": {
+  "routes": [
+   {
+    "id": "storekvaeven",
+    "name": "Fra Storekvæven",
+    "description": "Fra fv. 450 ved Storekvæven opp langs Bekkene til flata, sørover over myra og østover opp bakkene til tårnet på Hilleknuten",
+    "trailhead": {
+     "name": "Storekvæven ved fv. 450",
+     "lat": 58.9955,
+     "lng": 6.9322,
+     "elevation_m": 569.7,
+     "fullName": "Storekvæven ved fv. 450"
+    },
+    "waypoints": [
+     {
+      "name": "opp langs Bekkene",
+      "lat": 58.9915,
+      "lng": 6.933,
+      "elevation_m": 643.5
+     },
+     {
+      "name": "opp langs Bekkene",
+      "lat": 58.9908,
+      "lng": 6.94,
+      "elevation_m": 773.8
+     },
+     {
+      "name": "flata",
+      "lat": 58.988,
+      "lng": 6.9475,
+      "elevation_m": 799.5
+     },
+     {
+      "name": "myra sørover",
+      "lat": 58.9852,
+      "lng": 6.9546,
+      "elevation_m": 957.8
+     },
+     {
+      "name": "myra sørover",
+      "lat": 58.9797,
+      "lng": 6.9578,
+      "elevation_m": 1005.5
+     },
+     {
+      "name": "myra sørover",
+      "lat": 58.9761,
+      "lng": 6.96,
+      "elevation_m": 1093.3
+     },
+     {
+      "name": "østover opp bakkene",
+      "lat": 58.9765,
+      "lng": 6.9623,
+      "elevation_m": 1132.0
+     },
+     {
+      "name": "østover opp bakkene",
+      "lat": 58.9782,
+      "lng": 6.9656,
+      "elevation_m": 1141.8
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt oppgir 35 grader som bratteste punkt og graderer turen «Moderat». Bygget på toppen er et 23 m høyt kommunikasjonstårn (OSM node/5163720725); det kan falle is fra det. Fri Flyt: «Det anbefales at du utforsker området mer enn hva som står i boka.»"
+   }
+  ]
+ },
+ "roseknuten": {
+  "routes": [
+   {
+    "id": "hunnedalsveien",
+    "name": "Fra Hunnedalsveien via Finndokkje",
+    "description": "Fra parkeringa ved Hunnedalsveien opp den svake ryggen ved Finndokkje til p905, ryggen langs renna sørøst for den og kanten over Røsehola til toppen av Røseknuten",
+    "trailhead": {
+     "name": "Parkeringa ved Hunnedalsveien",
+     "lat": 58.90085,
+     "lng": 6.77803,
+     "elevation_m": 674.0,
+     "fullName": "Parkeringa ved Hunnedalsveien"
+    },
+    "waypoints": [
+     {
+      "name": "ryggen ved Finndokkje",
+      "lat": 58.903,
+      "lng": 6.78,
+      "elevation_m": 781.6
+     },
+     {
+      "name": "ryggen ved Finndokkje",
+      "lat": 58.9051,
+      "lng": 6.7805,
+      "elevation_m": 860.4
+     },
+     {
+      "name": "p905",
+      "lat": 58.9069,
+      "lng": 6.7837,
+      "elevation_m": 904.6
+     },
+     {
+      "name": "renna sørøst for p905",
+      "lat": 58.9061,
+      "lng": 6.786,
+      "elevation_m": 959.8
+     },
+     {
+      "name": "ryggen sør for Røsehola",
+      "lat": 58.9064,
+      "lng": 6.788,
+      "elevation_m": 984.8
+     },
+     {
+      "name": "ryggen sør for Røsehola",
+      "lat": 58.907,
+      "lng": 6.7892,
+      "elevation_m": 993.9
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fra 1,41 til 1,56 km går linja 5 til 31 m fra kanten mot Røsehola. Fri Flyt: «På 990 moh. henger en skavl ut mot Røsehola. Denne knekker mye lenger inn enn du tror, så hold avstand.» Nedkjøringene i Røsehola og Sørrenna har 35 grader som bratteste punkt. Fv. 450 gjennom Hunnedalen kan bli stengt i uvær."
+   }
+  ]
+ },
+ "grubba": {
+  "routes": [
+   {
+    "id": "leitet",
+    "name": "Fra Leitet opp vestflanken",
+    "description": "Fra parkeringa ved Smølåsveien på Fidjeland østover til skaret ved vatnet på 859 moh, og opp den vestvendte flanken til Grubbå",
+    "trailhead": {
+     "name": "Parkeringa ved Smølåsveien",
+     "lat": 58.95235,
+     "lng": 6.94737,
+     "elevation_m": 695.3,
+     "fullName": "Parkeringa ved Smølåsveien"
+    },
+    "waypoints": [
+     {
+      "name": "mot skaret",
+      "lat": 58.951,
+      "lng": 6.953,
+      "elevation_m": 731.1
+     },
+     {
+      "name": "mot skaret",
+      "lat": 58.9505,
+      "lng": 6.9625,
+      "elevation_m": 856.1
+     },
+     {
+      "name": "skaret ved vatnet på 859",
+      "lat": 58.9506,
+      "lng": 6.966,
+      "elevation_m": 866.4
+     },
+     {
+      "name": "den vestvendte flanken",
+      "lat": 58.9517,
+      "lng": 6.9692,
+      "elevation_m": 934.2
+     },
+     {
+      "name": "den vestvendte flanken",
+      "lat": 58.9512,
+      "lng": 6.9727,
+      "elevation_m": 1008.7
+     },
+     {
+      "name": "den vestvendte flanken",
+      "lat": 58.951,
+      "lng": 6.9762,
+      "elevation_m": 1062.5
+     },
+     {
+      "name": "den vestvendte flanken",
+      "lat": 58.9502,
+      "lng": 6.9797,
+      "elevation_m": 1117.1
+     }
+    ],
+    "source": "researched, verified (ok), no local audit",
+    "notes": "Fri Flyt oppgir 27 grader som bratteste punkt, men linja går over et bergsteg på 10 m med bakke på 35 grader eller mer ved 1046–1051 moh, og bergkanter står 4 til 20 m fra linja mellom 932 og 1023 moh. Vatnet i skaret ligger 27 m fra linja."
    }
   ]
  }

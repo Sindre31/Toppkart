@@ -481,4 +481,16 @@ PEAKS = [
     ("kvalhornet", "Kvalhornet", ["Fauske", "Bodø"], 962, 67.37358, 15.15778),
     ("heggmotinden", "Heggmotinden", ["Bodø"], 798, 67.37538, 14.87980),
     ("kistrandtindan", "Kistrandtindan", ["Bodø", "Fauske"], 979, 67.34940, 15.06760),
+    # Vest-Finnmark-runden (Fri Flyt, «Finnmark»). Laslettind og Vassnestind
+    #   ligg i Kvænangen kommune, men Fri Flyt fører dei under Finnmark og
+    #   varslingsregionen er Vest-Finnmark. Gievdnerassa heiter Gievdnerášša i
+    #   registeret. —
+    ("stortinden-langfjord", "Stortinden", ["Loppa", "Alta"], 935, 70.09224, 22.30232),
+    ("gievdnerassa", "Gievdnerášša", ["Alta"], 897, 70.13490, 22.59406),
+    ("laslettind", "Laslettind", ["Kvænangen"], 819, 70.04275, 22.00658),
+    ("vassnestind", "Vassnestind", ["Kvænangen"], 897, 70.03146, 21.88384),
+    # Sirdal-runden (Fri Flyt, «Toppturer i Sirdal»). —
+    ("hilleknuten", "Hilleknuten", ["Sirdal"], 1209, 58.97976, 6.96783),
+    ("roseknuten", "Røseknuten", ["Sirdal"], 1022, 58.90750, 6.79038),
+    ("grubba", "Grubbå", ["Sirdal"], 1184, 58.94919, 6.98546),
 ]

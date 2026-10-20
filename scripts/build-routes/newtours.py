@@ -244,4 +244,13 @@ NEW_TOURS = {
     "kvalhornet": ("Kvalhornet", "Bodø"),
     "heggmotinden": ("Heggmotinden", "Bodø"),
     "kistrandtindan": ("Kistrandtindan", "Bodø"),
+    # — Vest-Finnmark-runden —
+    "stortinden-langfjord": ("Stortinden i Langfjorden", "Vest-Finnmark"),
+    "gievdnerassa": ("Gievdnerášša", "Vest-Finnmark"),
+    "laslettind": ("Laslettind", "Vest-Finnmark"),
+    "vassnestind": ("Vassnestind", "Vest-Finnmark"),
+    # — Sirdal-runden —
+    "hilleknuten": ("Hilleknuten", "Sirdal"),
+    "roseknuten": ("Røseknuten", "Sirdal"),
+    "grubba": ("Grubbå", "Sirdal"),
 }
