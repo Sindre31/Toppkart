@@ -37,6 +37,7 @@ oksen_normalruta                         3658 -> 3752     967 -> 968    29.1 -> 
 rondslottet_bjornhollia                 12329 -> 12353   1538 -> 1540   33.7 -> 33.7
 rundfjellet-harstad_nordostryggen        6859 -> 6861     774 -> 779    23.9 -> 23.9
 rundfjellet_normalruta                   4820 -> 4778     841 -> 841    29.1 -> 29.1
+rundtind_vest                            5980 -> 6472     881 -> 912    24.8 -> 24.8   (by hand, the road to its end; card 880 -> 910)
 sandhornet_horsdal                       5009 -> 5183    1021 -> 1033   32.5 -> 40.2   (by hand, the stairs; card 1020 -> 1030)
 sata_eikedalen                           6602 -> 6653     895 -> 905    32.5 -> 32.5   (Kråvegen, by hand; card 900 -> 910)
 satertinden_ostryggen                    6052 -> 6125    1113 -> 1116   26.9 -> 26.9
@@ -60,6 +61,7 @@ tveitakvitingen_furedalen                8579 -> 8586     996 -> 994    25.0 -> 
 tverrfjellet_sorsiden                    5529 -> 5764     885 -> 888    23.9 -> 23.9   (by hand)
 tylderingen_fretland                     2807 -> 3007     610 -> 611    23.8 -> 23.8
 vassdalstinden_normalruta                6560 -> 6905    1223 -> 1232   41.3 -> 41.3   (card 1220 -> 1230)
+vatnaknausen_tverrberg                   7495 -> 7596     980 -> 991    21.9 -> 21.9   (by hand, the toll road; card 980 -> 990)
 
 ## Every detour left on the shipped lines
 # SKOG = mostly forest, with the reason it stays; open = open ground, skiable either side of the path.
@@ -191,7 +193,7 @@ langlitinden_vestsiden                 open   4.84 km   278 m  off  64/ 91 m  Å
 litletind_normalruta                   open   0.11 km   259 m  off  59/ 90 m  DyrketMark 6, Skog 1
 litletussen_sorostsiden                open   0.06 km   219 m  off  87/139 m  ÅpentOmråde 3, DyrketMark 3
 lodalskapa_normalruta                  SKOG   3.09 km   336 m  off  94/161 m  Skog 7, ÅpentOmråde 2
-  -> left as it is, by hand: the path climbs the step straight, 37.7° in its steepest 30 m against the line's 31.1°, and the re-solve leaves 235 m of the stretch where it was
+  -> left as it is, by hand: this is the line's switchback up the step at 708–790 moh; the path climbs it straight at up to 41°, and no one- or two-turn zigzag within 80 m of the path stays under 27° — the nearest is this one, 120 m north
 lonahorgi_horgaletten                  open   0.03 km   378 m  off  70/104 m  ÅpentOmråde 10
 lonahorgi_horgaletten                  open   0.51 km   318 m  off  59/120 m  ÅpentOmråde 9
 lonahorgi_horgaletten                  open   2.96 km   249 m  off  40/ 67 m  ÅpentOmråde 7
@@ -274,10 +276,8 @@ rornestinden_normalruta                open   2.66 km   245 m  off  59/ 92 m  Å
 rornestinden_normalruta                open   5.00 km   413 m  off 137/173 m  ÅpentOmråde 11
   -> left as it is: 0.68 km: the path is 1705 m against 258 m of line; 1.16 km, by hand: the path from Hyttebakken starts 300 m east of Hyttehaugen, where the research leaves the forest road; on it the stretch is about 700 m against 314 m of line
 rundfjellet_kudalsheia                 open   2.09 km   513 m  off 138/223 m  ÅpentOmråde 14
-rundtind_vest                          SKOG   0.61 km   159 m  off  61/ 81 m  Skog 5
-rundtind_vest                          SKOG   1.61 km   169 m  off  43/ 59 m  Skog 3, Myr 2
-rundtind_vest                          SKOG   3.20 km   649 m  off 117/184 m  Skog 9, Myr 8
-  -> left as it is, by hand: 3.20 km is the research's line over the bogs north-east of Skavbakkan (myrane nordaust for Skavbakkan), and on the road it is 420 m longer; 0.61 and 1.61 km are 160 m stretches 40–60 m off
+rundtind_vest                          SKOG   3.66 km   649 m  off 116/183 m  Skog 9, Myr 8
+  -> left as it is, by hand: the research's line over the bogs north-east of Skavbakkan (myrane nordaust for Skavbakkan), half bog; the path the pass offered is 420 m longer and doubles back
 saebyggjenuten_normalruta              SKOG   0.09 km   259 m  off  67/ 95 m  Skog 7
   -> left as it is: 0.09 km: the path is 469 m against 259 m of line
 sandhornet_horsdal                     open   3.60 km  1342 m  off 123/237 m  ÅpentOmråde 34
@@ -377,11 +377,7 @@ varden-smaatindan_kabelvagmarka        open   4.38 km   207 m  off  44/ 68 m  Å
 vassdalstinden_normalruta              SKOG   3.60 km   246 m  off  61/ 87 m  Skog 4, ÅpentOmråde 3
 vassdalstinden_normalruta              open   4.95 km   314 m  off  79/121 m  ÅpentOmråde 9
   -> left as it is: the stretch that read open at 3.26 km before the move, 4 forest samples to 3 now
-vatnaknausen_tverrberg                 SKOG   0.11 km   219 m  off  47/ 63 m  Skog 6
-vatnaknausen_tverrberg                 open   1.30 km   199 m  off  47/ 56 m  Myr 4, Skog 2
-vatnaknausen_tverrberg                 SKOG   2.11 km   219 m  off  52/ 54 m  Skog 6
-vatnaknausen_tverrberg                 open   3.80 km   557 m  off  69/110 m  Myr 7, Skog 6, ÅpentOmråde 2
-  -> left as it is, by hand: on the path the line hooks back on itself above Tverrberg and the steepest 30 m goes 21.9° -> 23.6°, for two 220 m stretches 50 m off
+vatnaknausen_tverrberg                 open   3.89 km   557 m  off  70/110 m  Myr 7, Skog 6, ÅpentOmråde 2
 venevassegga_jakobskardet              open   0.98 km   489 m  off  87/112 m  ÅpentOmråde 13
 venevassegga_jakobskardet              open   3.74 km   289 m  off  59/ 68 m  ÅpentOmråde 8
 vesle-nup_ulevaa                       open   0.79 km   179 m  off  63/ 87 m  ÅpentOmråde 4, Myr 1

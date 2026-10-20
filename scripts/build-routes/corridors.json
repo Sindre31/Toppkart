@@ -932,7 +932,8 @@
     "source": "audited (ok)",
     "notes": "",
     "implied_start_m": 351.4,
-    "start_vs_implied_m": 24.3
+    "start_vs_implied_m": 24.3,
+    "corridorNote": "Punktet på 1419 moh like under toppen er fjernet for hånd: det sto på en stein og ga en høydespiss 1388 → 1419 → 1398 over 42 m (check_geometry)."
    }
   ]
  },
@@ -8343,10 +8344,85 @@
     },
     "waypoints": [
      {
+      "name": "Tverrbergsvegen",
+      "lat": 60.65195,
+      "lng": 6.5509
+     },
+     {
+      "name": "Tverrbergsvegen",
+      "lat": 60.65197,
+      "lng": 6.55105
+     },
+     {
+      "name": "Tverrbergsvegen",
+      "lat": 60.65151,
+      "lng": 6.55116
+     },
+     {
+      "name": "Tverrbergsvegen",
+      "lat": 60.65084,
+      "lng": 6.55081
+     },
+     {
+      "name": "Tverrbergsvegen",
+      "lat": 60.65017,
+      "lng": 6.5498
+     },
+     {
+      "name": "Tverrbergsvegen",
+      "lat": 60.6495,
+      "lng": 6.54878
+     },
+     {
+      "name": "Tverrbergsvegen",
+      "lat": 60.64949,
+      "lng": 6.54852
+     },
+     {
       "name": "Tverrbergsvegen sørover",
       "lat": 60.6477,
       "lng": 6.54686,
       "elevation_m": 438.0
+     },
+     {
+      "name": "bomvegen",
+      "lat": 60.64304,
+      "lng": 6.54725
+     },
+     {
+      "name": "bomvegen",
+      "lat": 60.64273,
+      "lng": 6.54886
+     },
+     {
+      "name": "bomvegen",
+      "lat": 60.64242,
+      "lng": 6.55046
+     },
+     {
+      "name": "bomvegen",
+      "lat": 60.64211,
+      "lng": 6.55207
+     },
+     {
+      "name": "bomvegen",
+      "lat": 60.64157,
+      "lng": 6.55287
+     },
+     {
+      "name": "bomvegen",
+      "lat": 60.64142,
+      "lng": 6.55396
+     },
+     {
+      "name": "bomvegen",
+      "lat": 60.64128,
+      "lng": 6.55506
+     },
+     {
+      "name": "bomvegen",
+      "lat": 60.64118,
+      "lng": 6.55675
      },
      {
       "name": "vegdelet mot Øvraset",
@@ -8355,17 +8431,115 @@
       "elevation_m": 475.0
      },
      {
+      "name": "bomvegen",
+      "lat": 60.64108,
+      "lng": 6.55844
+     },
+     {
+      "name": "bomvegen",
+      "lat": 60.6411,
+      "lng": 6.55992
+     },
+     {
+      "name": "bomvegen",
+      "lat": 60.64128,
+      "lng": 6.56077
+     },
+     {
+      "name": "bomvegen",
+      "lat": 60.64122,
+      "lng": 6.56263
+     },
+     {
+      "name": "bomvegen",
+      "lat": 60.64117,
+      "lng": 6.56449
+     },
+     {
+      "name": "bomvegen",
+      "lat": 60.64147,
+      "lng": 6.56586
+     },
+     {
+      "name": "bomvegen",
+      "lat": 60.64177,
+      "lng": 6.56722
+     },
+     {
+      "name": "bomvegen",
+      "lat": 60.64229,
+      "lng": 6.56745
+     },
+     {
+      "name": "bomvegen",
+      "lat": 60.64291,
+      "lng": 6.5687
+     },
+     {
+      "name": "bomvegen",
+      "lat": 60.64353,
+      "lng": 6.56995
+     },
+     {
+      "name": "bomvegen",
+      "lat": 60.6437,
+      "lng": 6.57169
+     },
+     {
       "name": "Øvraset-vegen ved 533",
       "lat": 60.64377,
       "lng": 6.57231,
       "elevation_m": 533.0
      },
      {
-      "name": "utenom bygningene",
-      "lat": 60.64397,
-      "lng": 6.57903,
-      "elevation_m": 587.0,
-      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/709018720."
+      "name": "bomvegen",
+      "lat": 60.64387,
+      "lng": 6.57342
+     },
+     {
+      "name": "bomvegen",
+      "lat": 60.64387,
+      "lng": 6.57438
+     },
+     {
+      "name": "bomvegen",
+      "lat": 60.64368,
+      "lng": 6.57554
+     },
+     {
+      "name": "bomvegen",
+      "lat": 60.64376,
+      "lng": 6.57761
+     },
+     {
+      "name": "bomvegen",
+      "lat": 60.64366,
+      "lng": 6.5786
+     },
+     {
+      "name": "bomvegen",
+      "lat": 60.6439,
+      "lng": 6.57987
+     },
+     {
+      "name": "bomvegen",
+      "lat": 60.64406,
+      "lng": 6.58176
+     },
+     {
+      "name": "bomvegen",
+      "lat": 60.6443,
+      "lng": 6.58277
+     },
+     {
+      "name": "bomvegen",
+      "lat": 60.64454,
+      "lng": 6.58378
+     },
+     {
+      "name": "bomvegen",
+      "lat": 60.64472,
+      "lng": 6.58569
      },
      {
       "name": "Øvraset",
@@ -8431,7 +8605,8 @@
      }
     ],
     "source": "researched, verified (corrected), no local audit",
-    "notes": "Fri Flyt: KAST 2 – Utfordrende. «Småkupert terreng, som krever innsats for å legge tryggest spor mulig under 30 grader» — det brattaste partiet er flanken opp mot eggi mellom skoggrensa og Rjupetjørnane. Nedfarten er same veg. Vestvendt: sola mjuknar snøen utover dagen, og Fri Flyt sel turen på solnedgangen — det er òg tidspunktet vestvende heng gjenfrys."
+    "notes": "Fri Flyt: KAST 2 – Utfordrende. «Småkupert terreng, som krever innsats for å legge tryggest spor mulig under 30 grader» — det brattaste partiet er flanken opp mot eggi mellom skoggrensa og Rjupetjørnane. Nedfarten er same veg. Vestvendt: sola mjuknar snøen utover dagen, og Fri Flyt sel turen på solnedgangen — det er òg tidspunktet vestvende heng gjenfrys.",
+    "corridorNote": "Lagt på bomvegen for hånd: Tverrbergsvegen (OSM way/322409601) og vegen videre mot Øvraset (way/707342766) fra 0,05 til 3,5 km, der linja lå 30–60 m ved siden av vegen i skogen. Guiden: «Tverrbergsvegen fortsetter sørover til veidelet på 475 moh, der Øvraset-vegen tar av østover»."
    }
   ]
  },
@@ -12381,7 +12556,8 @@
      }
     ],
     "source": "researched, verified (ok), no local audit",
-    "notes": "Fri Flyts 3.3.2 Østsia, gått motsett veg. Kilden skildrar ho nedover — «fra toppen kjører man ned den store skrårampen som går ned mot Håkadalen ... vel nede i dalen følger man scootersporet ut mot bensinstasjonen i Kongsvik» — og legg til at «man kan selvsagt gå opp denne ruta også». Eigen parkering: kildens startsted-linje seier «for østsiden parkeres det ved bensinstasjonen i Kongsvik». Det aller meste er 20–30 grader, nokre parti over 30. KAST 3 – Komplekst mot normalrutas KAST 2."
+    "notes": "Fri Flyts 3.3.2 Østsia, gått motsett veg. Kilden skildrar ho nedover — «fra toppen kjører man ned den store skrårampen som går ned mot Håkadalen ... vel nede i dalen følger man scootersporet ut mot bensinstasjonen i Kongsvik» — og legg til at «man kan selvsagt gå opp denne ruta også». Eigen parkering: kildens startsted-linje seier «for østsiden parkeres det ved bensinstasjonen i Kongsvik». Det aller meste er 20–30 grader, nokre parti over 30. KAST 3 – Komplekst mot normalrutas KAST 2.",
+    "corridorNote": "Det siste stykket ved toppen er lagt om for hånd langs den slakeste veien gjennom et 4 m DTM1-rutenett: linja hadde et segment brattere enn 45 grader eller en høydespiss der (check_geometry)."
    }
   ]
  },
@@ -13055,7 +13231,7 @@
     ],
     "source": "researched, verified (ok), no local audit",
     "notes": "Fri Flyts 4.6.2 Sørsiden, gått motsett veg: «selvsagt lettere å finne hvis man går opp samme rute som man kjører ned». Eigen parkering — og kildens primære: «ved start skogsvei på østsiden av Vaskinn er det en liten parkeringsplass», medan appens vestrute brukar Dale. Ruta går ned til Vadskinndalsvatnet (SSR 68.91088/16.44968) og vidare ned Vaskinnelva (SSR 68.89926/16.44994). Den brattaste sørlina, 4.6.3 Sørsiden direkte på 35–50 grader, er ein annan line og ikkje denne.",
-    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (706 m from 0.48 km); replaced sommarstien gjennom skogen."
+    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (706 m from 0.48 km); replaced sommarstien gjennom skogen. Det siste stykket ved toppen er lagt om for hånd langs den slakeste veien gjennom et 4 m DTM1-rutenett: linja hadde et segment brattere enn 45 grader eller en høydespiss der (check_geometry)."
    }
   ]
  },
@@ -15221,10 +15397,130 @@
     },
     "waypoints": [
      {
+      "name": "Mevassveien og Drangenveien",
+      "lat": 68.74608,
+      "lng": 17.00469
+     },
+     {
+      "name": "Mevassveien og Drangenveien",
+      "lat": 68.74591,
+      "lng": 17.00523
+     },
+     {
+      "name": "Mevassveien og Drangenveien",
+      "lat": 68.7458,
+      "lng": 17.00495
+     },
+     {
+      "name": "Mevassveien og Drangenveien",
+      "lat": 68.7456,
+      "lng": 17.00326
+     },
+     {
+      "name": "Mevassveien og Drangenveien",
+      "lat": 68.74595,
+      "lng": 17.00349
+     },
+     {
+      "name": "Mevassveien og Drangenveien",
+      "lat": 68.74588,
+      "lng": 17.00269
+     },
+     {
+      "name": "Mevassveien og Drangenveien",
+      "lat": 68.74623,
+      "lng": 17.00258
+     },
+     {
+      "name": "Mevassveien og Drangenveien",
+      "lat": 68.74643,
+      "lng": 17.00215
+     },
+     {
+      "name": "Mevassveien og Drangenveien",
+      "lat": 68.74705,
+      "lng": 17.00239
+     },
+     {
       "name": "Mevassveien",
       "lat": 68.74705,
       "lng": 17.00239,
       "elevation_m": 161.0
+     },
+     {
+      "name": "Mevassveien og Drangenveien",
+      "lat": 68.74695,
+      "lng": 17.00143
+     },
+     {
+      "name": "Mevassveien og Drangenveien",
+      "lat": 68.74747,
+      "lng": 17.00147
+     },
+     {
+      "name": "Mevassveien og Drangenveien",
+      "lat": 68.74728,
+      "lng": 17.0006
+     },
+     {
+      "name": "Mevassveien og Drangenveien",
+      "lat": 68.74813,
+      "lng": 17.00074
+     },
+     {
+      "name": "Mevassveien og Drangenveien",
+      "lat": 68.74816,
+      "lng": 17.00037
+     },
+     {
+      "name": "Mevassveien og Drangenveien",
+      "lat": 68.74793,
+      "lng": 16.99967
+     },
+     {
+      "name": "Mevassveien og Drangenveien",
+      "lat": 68.7488,
+      "lng": 16.99909
+     },
+     {
+      "name": "Mevassveien og Drangenveien",
+      "lat": 68.74957,
+      "lng": 16.99966
+     },
+     {
+      "name": "Mevassveien og Drangenveien",
+      "lat": 68.75033,
+      "lng": 17.00024
+     },
+     {
+      "name": "Mevassveien og Drangenveien",
+      "lat": 68.7511,
+      "lng": 17.00081
+     },
+     {
+      "name": "Mevassveien og Drangenveien",
+      "lat": 68.75164,
+      "lng": 17.00064
+     },
+     {
+      "name": "Mevassveien og Drangenveien",
+      "lat": 68.75245,
+      "lng": 17.00108
+     },
+     {
+      "name": "Mevassveien og Drangenveien",
+      "lat": 68.75325,
+      "lng": 17.00152
+     },
+     {
+      "name": "Mevassveien og Drangenveien",
+      "lat": 68.75355,
+      "lng": 17.00145
+     },
+     {
+      "name": "Mevassveien og Drangenveien",
+      "lat": 68.75375,
+      "lng": 17.00098
      },
      {
       "name": "Drangenveien",
@@ -15233,17 +15529,130 @@
       "elevation_m": 225.0
      },
      {
-      "name": "utenom bygningene",
+      "name": "Mevassveien og Drangenveien",
+      "lat": 68.75428,
+      "lng": 17.00156
+     },
+     {
+      "name": "Mevassveien og Drangenveien",
+      "lat": 68.75474,
+      "lng": 17.00164
+     },
+     {
+      "name": "Mevassveien og Drangenveien",
+      "lat": 68.75552,
+      "lng": 17.00074
+     },
+     {
+      "name": "Mevassveien og Drangenveien",
+      "lat": 68.75625,
+      "lng": 17.00092
+     },
+     {
+      "name": "Mevassveien og Drangenveien",
+      "lat": 68.75683,
+      "lng": 17.00051
+     },
+     {
+      "name": "Mevassveien og Drangenveien",
+      "lat": 68.75742,
+      "lng": 17.0001
+     },
+     {
+      "name": "Mevassveien og Drangenveien",
+      "lat": 68.75816,
+      "lng": 17.00045
+     },
+     {
+      "name": "Mevassveien og Drangenveien",
+      "lat": 68.7589,
+      "lng": 17.00079
+     },
+     {
+      "name": "Mevassveien og Drangenveien",
+      "lat": 68.75935,
+      "lng": 17.00194
+     },
+     {
+      "name": "Mevassveien og Drangenveien",
+      "lat": 68.75939,
+      "lng": 17.00323
+     },
+     {
+      "name": "Mevassveien og Drangenveien",
       "lat": 68.75979,
-      "lng": 17.004,
-      "elevation_m": 261.0,
-      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/925904451."
+      "lng": 17.00478
+     },
+     {
+      "name": "Mevassveien og Drangenveien",
+      "lat": 68.76038,
+      "lng": 17.00542
+     },
+     {
+      "name": "Mevassveien og Drangenveien",
+      "lat": 68.76097,
+      "lng": 17.00605
+     },
+     {
+      "name": "Mevassveien og Drangenveien",
+      "lat": 68.7619,
+      "lng": 17.00624
+     },
+     {
+      "name": "Mevassveien og Drangenveien",
+      "lat": 68.76283,
+      "lng": 17.00642
+     },
+     {
+      "name": "Mevassveien og Drangenveien",
+      "lat": 68.76356,
+      "lng": 17.00629
+     },
+     {
+      "name": "Mevassveien og Drangenveien",
+      "lat": 68.76397,
+      "lng": 17.00656
+     },
+     {
+      "name": "Mevassveien og Drangenveien",
+      "lat": 68.76449,
+      "lng": 17.0062
+     },
+     {
+      "name": "Mevassveien og Drangenveien",
+      "lat": 68.76519,
+      "lng": 17.00628
+     },
+     {
+      "name": "Mevassveien og Drangenveien",
+      "lat": 68.76611,
+      "lng": 17.00719
+     },
+     {
+      "name": "Mevassveien og Drangenveien",
+      "lat": 68.76658,
+      "lng": 17.00802
+     },
+     {
+      "name": "Mevassveien og Drangenveien",
+      "lat": 68.76738,
+      "lng": 17.00841
      },
      {
       "name": "vegenden ved hyttefeltet",
       "lat": 68.76781,
       "lng": 17.00879,
       "elevation_m": 246.0
+     },
+     {
+      "name": "Mevassveien og Drangenveien",
+      "lat": 68.76819,
+      "lng": 17.00879
+     },
+     {
+      "name": "Mevassveien og Drangenveien",
+      "lat": 68.76811,
+      "lng": 17.00964
      },
      {
       "name": "utenom bygningene",
@@ -15273,7 +15682,8 @@
     ],
     "source": "researched, verified (ok), no local audit",
     "notes": "Fri Flyt: KAST 3 – Komplekst. «Nedkjøringen har noen få heng som er brattere enn 30 grader, men man tilbringer noe tid i utløpssone for skred.» Start oppstiginga nordaust for Skavbakkan, der det ikkje er skrentar. Få parkeringsplassar ved Holtet — kilden ber deg ha ein plan, og få godkjenning frå grunneigar. Sandvatnet ved vegenden er eit regulert magasin (NVE-magasin 743, 240 moh med lågaste regulerte vasstand 231) — isen der kan ikkje reknast med, og ruta går utanom han, over myrene.",
-    "avoidWater": true
+    "avoidWater": true,
+    "corridorNote": "Lagt på vegen for hånd: Mevassveien og Drangenveien (OSM way/967412348, /563721980, /568725911 og /1024678361) fra 0,3 km til vegenden ved hyttefeltet. Linja gikk før langs kraftgata 25–80 m øst for vegen. Guiden og teaseren: «Veien er Mevassveien opp til 161 moh og Drangenveien videre … til veienden», «traktorveien opp til hyttefeltet»."
    }
   ]
  },

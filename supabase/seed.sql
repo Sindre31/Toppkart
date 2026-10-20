@@ -68,7 +68,7 @@ values
   ('vetefjellet', 'Vetefjellet', 'Harstad', 68.80013, 16.34039, 547, 390, '2–4 t', 2, 'S', 'feb–apr', '390 høydemeter over Olaåsen: skogsveien inn til traktorveien, Helgevallan og høyde 361 i lett terreng — et lekent skifjell med kort anmarsj og fin skogskjøring.', true),
   ('storlitinden', 'Storlitinden', 'Harstad', 68.79801, 16.31034, 613, 450, '2–4 t', 1, 'S', 'des–apr', '450 høydemeter fra den brøyta parkeringa ved Kvæfjordløypene: traktorveien forbi Kvilheim, vest for Reingjerdhågen og opp den jevne skråninga som også er sommerruta — lett og sikker hele veien.', true),
   ('stortinden-rolla', 'Stortinden på Rolla', 'Harstad', 68.79234, 17.03681, 1020, 980, '5–7 t', 4, 'V', 'feb–apr', '980 høydemeter fra Indre Forså til Rollas høyeste: myrene, østsida av Mevatnet på land — og renna sør for toppen, jevnt 30–40 grader, med Drangen som ekspertkulisse.', true),
-  ('rundtind', 'Rundtinden', 'Harstad', 68.77916, 17.05198, 872, 880, '4–6 t', 3, 'V', 'feb–apr', '880 høydemeter fra Holtet: traktorveien opp til hyttefeltet ved Sandvatnet, rundt magasinet og over myrene til oppstigninga nordøst for Skavbakkan — den enkleste veien opp på en av Drangens topper, med pinakkelen Tottålen på østsida.', true),
+  ('rundtind', 'Rundtinden', 'Harstad', 68.77916, 17.05198, 872, 910, '4–6 t', 3, 'V', 'feb–apr', '910 høydemeter fra Holtet: traktorveien opp til hyttefeltet ved Sandvatnet, rundt magasinet og over myrene til oppstigninga nordøst for Skavbakkan — den enkleste veien opp på en av Drangens topper, med pinakkelen Tottålen på østsida.', true),
   ('sula', 'Sula', 'Harstad', 68.76819, 17.05909, 848, 830, '3–5 t', 2, 'SØ', 'feb–apr', '830 høydemeter fra Breivoll: den jevne traktorveien, opp Skogsheia der skogen tynnes — og nesten rett linje til M-fjellets topp, på heng som måler litt over 20 grader.', true),
   ('heia', 'Heia', 'Harstad', 68.75594, 16.50177, 527, 470, '2–4 t', 1, 'Ø', 'des–apr', '470 høydemeter fra fotballbanen ved Krafthallen opp den gamle alpinbakken: myra, det åpne feltet og Maistua på 321 — og ryggen over tregrensa. Harstads ettermiddagstur, med lys i bakken på hverdagskvelder.', true),
   ('hinnstein', 'Hinnstein', 'Harstad', 68.74726, 16.50311, 560, 510, '2–4 t', 3, 'SØ', 'jan–apr', '510 høydemeter fra Breivikhaugen: skogsveien grunneierne bygde i 2016, forbi gapahuken og opp den gamle hoppbakken mellom Litle Hinnstein og Hinnstein — og stien opp sørvestsida, den slake sida av et fjell som er avskåret mot nordvest.', true),
@@ -145,7 +145,7 @@ values
   ('jonshornet', 'Jønshornet', 'Sunnmøre', 62.31695, 6.33395, 1417, 1430, '6–8 t', 4, 'N', 'feb–mai', '1430 høydemeter fra Vollane over Rametinden, og de siste hundre på smal egg til varden på Ramoen.', true),
   ('ytstevasshornet', 'Ytstevasshornet', 'Sunnmøre', 62.28014, 6.73548, 1331, 820, '3–5 t', 3, 'Ø', 'jan–mai', '820 høydemeter fra Svartevatnet: bratt opp Vassdalen til vatnene på 950 moh, så nordvest mot en smal og skavlete topprygg.', true),
   ('rana', 'Råna', 'Sunnmøre', 62.27554, 6.57479, 1587, 1560, '7–9 t', 3, 'SØ', 'mar–mai', '1560 høydemeter fra Urkegjerdet ved fjorden: inn dalen til Nordkopen, bratt opp på egga og nordover den brede toppryggen.', true),
-  ('kolastinden',     'Kolåstinden',     'Sunnmøre',   62.25886,  6.31102, 1432, 1120, '5–7 t', 3, 'N',  'feb–mai', 'Alpin klassiker fra Standaldalen med velkjent renne og storslått finish.', true),
+  ('kolastinden',     'Kolåstinden',     'Sunnmøre',   62.25886,  6.31102, 1432, 1100, '5–7 t', 3, 'N',  'feb–mai', 'Alpin klassiker fra Standaldalen med velkjent renne og storslått finish.', true),
   ('vassdalstinden', 'Vassdalstinden', 'Sunnmøre', 62.24405, 6.18966, 1278, 1230, '5–7 t', 3, 'Ø', 'feb–mai', '1230 høydemeter fra Nupen: setervei til Vallasætra, kneiken opp i Bukkedalen og en lang flanke til topps.', true),
   ('saudehornet', 'Saudehornet', 'Sunnmøre', 62.23578, 6.14246, 1303, 1160, '4–6 t', 3, 'SV', 'jan–mai', '1157 høydemeter fra vannverket i Ørsta, og ryggkammen holder rundt 32° i snitt de siste 170, med det bratteste på 37.', true),
   ('slogen',          'Slogen',          'Sunnmøre',   62.20818,  6.67306, 1564, 1536, '6–8 t', 4, 'Ø',  'mar–mai', 'Sunnmørsalpenes dronning — en alvorlig tur for erfarne, i riktig vindu.', true),
@@ -195,7 +195,7 @@ values
   ('storehorn',       'Storehorn',       'Hemsedal',   60.81506,  8.59566, 1482,  470, '3–4 t', 2, 'Ø',  'des–apr', 'Hemsedals husfjell for topptur — kort vei fra bilen, mange linjevalg.', true),
   ('storanosi', 'Storanosi', 'Voss', 60.7663, 6.62341, 1205, 740, '3–5 t', 2, 'NØ', 'jan–apr', '740 høydemeter fra Ljosno gjennom åpen bjørkeskog og ut på platået over Brandsetdalen.', true),
   ('lonahorgi', 'Lønahorgi', 'Voss', 60.69383, 6.41489, 1412, 1300, '5–7 t', 2, 'NØ', 'feb–apr', '1300 høydemeter fra Høyland via Bergsstølen og Breiming, med de siste 107 opp nordryggen fra punkt 1305.', true),
-  ('vatnaknausen', 'Vatnaknausen', 'Voss', 60.64948, 6.649, 1302, 980, '5–7 t', 2, 'V', 'jan–apr', '980 høydemeter fra Tverrberg: bomveien inn Budalen til Nyestølen, opp på egga vest for Rjupetjørnane, og østover platået til utsikta over Voss.', true),
+  ('vatnaknausen', 'Vatnaknausen', 'Voss', 60.64948, 6.649, 1302, 990, '5–7 t', 2, 'V', 'jan–apr', '990 høydemeter fra Tverrberg: bomveien inn Budalen til Nyestølen, opp på egga vest for Rjupetjørnane, og østover platået til utsikta over Voss.', true),
   ('horndalsnuten', 'Horndalsnuten', 'Voss', 60.64218, 6.67655, 1462, 1120, '5–7 t', 3, 'N', 'jan–apr', '1120 høydemeter fra Skiple gjennom Horndalsbotnen, med den bratte kneika fra skuldra til slutt.', true),
   ('folarskardnuten', 'Folarskardnuten', 'Hallingdal', 60.60742, 7.78251, 1932, 998, '6–8 t', 3, 'S', 'mar–mai', 'Over 13 km inn fra Haugastøl og 998 høydemeter, med et kort 29-graders trinn opp fra Folarskardet.', true),
   ('prestholtskarvet', 'Prestholtskarvet', 'Geilo', 60.55843, 8.0126, 1860, 960, '6–8 t', 3, 'S', 'jan–apr', 'Elleve kilometer og 960 høydemeter fra Havsdalen forbi Prestholtstølan og opp Prestholtskardet til Hallingskarvets sørskarv.', true),
@@ -1133,11 +1133,11 @@ Renna slipper deg ut på 843 moh, og de siste hundremeterne mot varden på 1009 
 
 Vurder snødekket før nedkjøring — terrenget er skredterreng i alle varianter, sier kilden. Renna gir kjøring hele veien ned mot Dalsdalen; under skoggrensa på 287 er det sporet hjem til Dale.
 
-Den andre dokumenterte ruta går opp sørsida fra Vaskinn — 996 høydemeter på 4,66 km, og den mildeste veien på fjellet: bratteste steget måler 34,0 grader mot vestsidas 36,2. Den følger sommerstien opp gjennom skogen langs Vaskinnelva og forbi Vadskinndalsvatnet inn i den søndre bollen. Kilden sier det er lettere å finne linja om du går opp samme ruta som du kjører ned.',
+Den andre dokumenterte ruta går opp sørsida fra Vaskinn — 996 høydemeter på 4,63 km, og den mildeste veien på fjellet: bratteste steget måler 34,2 grader mot vestsidas 38,4. Den følger sommerstien opp gjennom skogen langs Vaskinnelva og forbi Vadskinndalsvatnet inn i den søndre bollen. Kilden sier det er lettere å finne linja om du går opp samme ruta som du kjører ned.',
   avalanche_notes  = jsonb_build_array(
     jsonb_build_object(
       'title', 'Renna',
-      'body',  'Kilden gir renna 30–45 grader sammenhengende ned til vann 428 — KAST 3 – Komplekst, med alpinøks og stegjern i lista. Modellens linje måler 36,2 på det bratteste, men ei renne samler alt som losner over deg: her er det snøen som bestemmer dagen.'
+      'body',  'Kilden gir renna 30–45 grader sammenhengende ned til vann 428 — KAST 3 – Komplekst, med alpinøks og stegjern i lista. Modellens linje måler 38,4 grader på det bratteste, men ei renne samler alt som losner over deg: her er det snøen som bestemmer dagen.'
     ),
     jsonb_build_object(
       'title', 'Toppflankene',
@@ -1542,7 +1542,7 @@ where slug = 'stortinden-rolla';
 update public.tk_tours set
   description_up   = 'Fra Holtet, der traktorveien tar av og går opp til hyttefeltet — 30 moh. Kilden er tydelig på parkeringa: det er få plasser her, så ha en plan, og få godkjenning fra grunneieren. Beltet fra 0 til 100 moh måler 18,8 grader over 214 meter grunn — svingene opp fra fjorden er det bratteste på hele den nedre halvdelen.
 
-Veien er Mevassveien opp til 161 moh og Drangenveien videre fra 225 til veienden på 246, ved Sandvatnet. Beltet fra 200 til 300 moh måler 2,1 grader over 2665 meter grunn: to og en halv kilometer nesten vannrett, først vei og så myr. Ruta går rundt magasinet, ikke over, og så innover myrene til 317 moh nordøst for Skavbakkan.
+Veien er Mevassveien opp til 161 moh og Drangenveien videre fra 225 til veienden på 246, ved Sandvatnet. Beltet fra 200 til 300 moh måler 2,0 grader over 2917 meter grunn: knapt tre kilometer nesten vannrett, først vei og så myr. Ruta går rundt magasinet, ikke over, og så innover myrene til 317 moh nordøst for Skavbakkan.
 
 Derfra tar oppstigninga til, over skoggrensa på 475 moh. Skogen slipper på 426 moh etter 4,36 km. Det bratteste hundremetersbeltet måler 19,2 grader mellom 500 og 600 moh, over 278 meter grunn, og det bratteste enkeltsteget, 24,8 grader, ligger mellom 615 og 635. Så er det ryggen mot Mellatinden — 732 moh — og toppen på 872.',
   description_down = 'Ned samme veien. Kilden lover «flott cruising ned der man kan få høy fart og virkelig nyte sola», og sier i samme åndedrag at nedkjøringa har noen få heng brattere enn 30 grader. Målt langs linja er beltet fra 600 til 700 moh 16,4 grader, 700 til 800 er 17,6 og 800 til 900 er 14,2.
@@ -2036,7 +2036,7 @@ Fra senkninga reiser toppflanken seg: 763 moh der ruta står i den, med beltet f
 
 Sørøstsida er skredsida: flere store skred årlig på 30–40 grader, og kilden er utvetydig — den skal ikke kjøres, det finnes tryggere bratt i nærheten. Flankemålingen er enig: 51,0 grader i det første vinduet fra toppen mot sørøst. Vestrenna er ekspertlinja for stabile dager, med øks og stegjern og nedkjøring nordsiden.
 
-Den andre dokumenterte ruta går opp Østsia fra bensinstasjonen i Kongsvik — 923 høydemeter på 4,38 km, under halve normalrutas lengde, opp scootersporet i Håkadalen og den store skrårampa. Kilden beskriver den nedover og legger til at du selvsagt kan gå opp den også; det meste er 20–30 grader, med bratteste steg 30,9.',
+Den andre dokumenterte ruta går opp Østsia fra bensinstasjonen i Kongsvik — 923 høydemeter på 4,36 km, under halve normalrutas lengde, opp scootersporet i Håkadalen og den store skrårampa. Kilden beskriver den nedover og legger til at du selvsagt kan gå opp den også; det meste er 20–30 grader, med bratteste steg 30,9.',
   avalanche_notes  = jsonb_build_array(
     jsonb_build_object(
       'title', 'Ruta',
@@ -3056,7 +3056,7 @@ update public.tk_tours set
 
 Første kilometeren er nesten flat: beltet fra 0 til 100 moh måler 6,7 grader over 761 meter grunn og beltet fra 100 til 200 bare 4,5 over 1 233 meter. Skogen slutter på 152 moh etter Kartverkets klasser, med åpent område fra 158, og skoggrensa kommer 1,66 km ute. Fri Flyt sier «rett opp til du kommer over skogen i nord-nordvestlig retning», og det er den biten.
 
-Over skogen går linja vestover på rabbene, slik kilden sier. Beltene fra 200 til 500 moh ligger jevnt mellom 12,3 og 13,2 grader. Så kommer det flatere partiet den beskriver som «noe ulendt, med små bekkedaler på tvers av fjellet»: beltene fra 700 til 900 moh måler 10,4 og 8,8 grader over til sammen 1 170 meter grunn — det slakeste over skoggrensa, og det lengste. Det er her turen kjennes lang. Her ligger en klynge tjern på 785 til 792 moh, og linja går sør om hele klynga: 0 meter på vann, målt mot OSMs vannpolygon.
+Over skogen går linja vestover på rabbene, slik kilden sier. Beltene fra 200 til 500 moh ligger jevnt mellom 12,3 og 13,2 grader. Så kommer det flatere partiet den beskriver som «noe ulendt, med små bekkedaler på tvers av fjellet»: beltene fra 700 til 900 moh måler 10,4 og 8,8 grader over 495 og 675 meter grunn — det slakeste over skoggrensa, og det lengste. Det er her turen kjennes lang. Her ligger en klynge tjern på 785 til 792 moh, og linja går sør om hele klynga: 0 meter på vann, målt mot OSMs vannpolygon.
 
 «Herfra ser du ikke selve Tortenviktinden, men toppen ligger rett bak det høyeste punktet du ser», sier Fri Flyt. Bak det stiger den siste helninga: beltet fra 900 til 1000 moh måler 18,6 grader, det bratteste på turen, og det bratteste sammenhengende partiet ligger her — 23,7 grader mellom 971 og 994 moh, 5,39 km ute, altså under to hundre meter før varden. 1028 moh mot publiserte 1027.',
   description_down = 'Ned samme ruta. Det bratteste du kjører er de 23,7 gradene rett under toppen, og så blir det slakere hele veien ut — noe som gjør at de siste kilometerne er staking mer enn kjøring.

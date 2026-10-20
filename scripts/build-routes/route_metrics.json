@@ -752,9 +752,9 @@
   "cumdistM": 7266
  },
  "rundtind": {
-  "verticalM": 880,
-  "gainM": 881,
-  "distanceM": 5980,
+  "verticalM": 910,
+  "gainM": 912,
+  "distanceM": 6472,
   "startM": 30,
   "summitM": 872,
   "duration": "4–6 t",
@@ -764,8 +764,8 @@
   "maxStepAngle": 24.8,
   "grade": 2,
   "aspect": "SV",
-  "distanceKm": 6.0,
-  "cumdistM": 5980
+  "distanceKm": 6.5,
+  "cumdistM": 6472
  },
  "sula": {
   "verticalM": 830,
@@ -1984,20 +1984,20 @@
   "cumdistM": 8569
  },
  "kolastinden": {
-  "verticalM": 1120,
-  "gainM": 1120,
-  "distanceM": 5680,
+  "verticalM": 1100,
+  "gainM": 1099,
+  "distanceM": 5648,
   "startM": 376,
   "summitM": 1431,
   "duration": "5–7 t",
-  "steepestBandAngle": 19.1,
-  "steepestBandFrom": 1300,
-  "steepestBandTo": 1400,
+  "steepestBandAngle": 17.6,
+  "steepestBandFrom": 800,
+  "steepestBandTo": 900,
   "maxStepAngle": 43.1,
   "grade": 2,
   "aspect": "NØ",
-  "distanceKm": 5.7,
-  "cumdistM": 5680
+  "distanceKm": 5.6,
+  "cumdistM": 5648
  },
  "vassdalstinden": {
   "verticalM": 1230,
@@ -2784,9 +2784,9 @@
   "cumdistM": 6455
  },
  "vatnaknausen": {
-  "verticalM": 980,
-  "gainM": 980,
-  "distanceM": 7495,
+  "verticalM": 990,
+  "gainM": 991,
+  "distanceM": 7596,
   "startM": 383,
   "summitM": 1302,
   "duration": "5–7 t",
@@ -2796,8 +2796,8 @@
   "maxStepAngle": 21.9,
   "grade": 2,
   "aspect": "V",
-  "distanceKm": 7.5,
-  "cumdistM": 7495
+  "distanceKm": 7.6,
+  "cumdistM": 7596
  },
  "horndalsnuten": {
   "verticalM": 1120,
