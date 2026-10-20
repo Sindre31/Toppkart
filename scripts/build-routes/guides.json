@@ -314,7 +314,7 @@
   "no": {
    "intro": "En middels skitur med en eksperts avslutning. 1383 høydemeter fra Fv91 opp en bred nordvestrygg som aldri blir brattere enn 26 grader — og så 1,7 kilometer eksponert rygg til fots fra Middagsaksla, med stegjern, isøks og et toppsteg på 38 grader.",
    "ascent": [
-    "Fra parkeringa ved Fv91 nedenfor Vartavarhaugen, 65 moh, går ruta østover over Vartavarhaugen på 159 moh og krysser Tverrelva. Bjørka slipper taket rundt 390 moh, og over 403 moh er terrenget åpent hele veien.",
+    "Fra parkeringa ved Fv91 nedenfor Vartavarhaugen, 65 moh, går ruta østover over Vartavarhaugen og krysser Tverrelva. Bjørka slipper taket rundt 390 moh, og over 403 moh er terrenget åpent hele veien.",
     "Derfra følger skisporet den brede nordvestryggen sammenhengende oppover. Terrengmodellen gir jevne 16 til 26 grader fra rundt 350 moh til Middagsaksla, uten bratte trinn: bandene mellom 500 og 1000 moh ligger alle på 19 til 21 grader i snitt. Det er en lang, jevn skitur, og den er lite skredutsatt så lenge du blir på ryggen. Flankene på begge sider er noe annet, og de er terrengfeller i dårlig sikt.",
     "På Middagsaksla, 1076 moh, stopper skituren. Mange setter fra seg skiene her; noen bærer dem til forvarden på rundt 1190 moh og lar dem ligge der. Turrapportene fra vinterbestigninger er samstemte om at ryggen videre går til fots — «over ca. 1100 moh måtte skiene byttes mot stegjern og isøks».",
     "De siste 1,7 kilometerne er eksponert nordvestrygg. Ryggkammen bølger seg oppover fra 1076 til 1393 moh med korte motfall underveis — 47 høydemeter til sammen over Middagsaksla, og ingen av dem mer enn ti om gangen på linja. Det er luftige parti, korte klyvepartier, og helt til slutt ei renne og en bratt topppyramide: den bratteste hundremeteren på hele turen ligger mellom 1300 og 1400 moh og måler 23,9 grader i snitt, mens det bratteste sammenhengende partiet er selve toppsteget: 46,2 grader over tretti meter mellom 1365 og 1397 moh."
@@ -338,12 +338,12 @@
      "body": "Sjekk dagens skredvarsel for Lyngen på varsom.no. Ta med sender/mottaker, søkestang og spade, og stegjern og isøks om du skal videre fra Middagsaksla."
     }
    ],
-   "caption": "1383 høydemeter og 5,64 km fra Fv91. Skituren slutter på Middagsaksla 1076 moh; de siste 1,7 km til fots gir tilbake 47 høydemeter underveis."
+   "caption": "1383 høydemeter og 5,42 km fra Fv91. Skituren slutter på Middagsaksla 1076 moh; de siste 1,7 km til fots gir tilbake 47 høydemeter underveis."
   },
   "en": {
    "intro": "A moderate ski tour with an expert's finish. 1383 metres of climbing from Fv91 up a broad north-west ridge that never exceeds 26 degrees — and then 1.7 kilometres of exposed ridge on foot from Middagsaksla, with crampons, an axe and a summit step of 38 degrees.",
    "ascent": [
-    "From the car park on Fv91 below Vartavarhaugen, 65 m, the route runs east over Vartavarhaugen at 159 m and crosses the Tverrelva. The birch gives up at around 390 m, and above 403 m the ground is open the rest of the way.",
+    "From the car park on Fv91 below Vartavarhaugen, 65 m, the route runs east over Vartavarhaugen and crosses the Tverrelva. The birch gives up at around 390 m, and above 403 m the ground is open the rest of the way.",
     "From there the skin track follows the broad north-west ridge in one unbroken line. The terrain model gives a steady 16 to 26 degrees from about 350 m to Middagsaksla, with no steep steps: the bands between 500 and 1000 m all average 19 to 21 degrees. It is a long, even ski tour, and it is not much exposed to avalanches as long as you stay on the ridge. The flanks on either side are another matter, and they are terrain traps in poor visibility.",
     "At Middagsaksla, 1076 m, the ski tour stops. Many leave their skis here; some carry them to the forward cairn at about 1190 m and leave them there. Winter trip reports agree that the ridge beyond is walked — “above about 1100 m the skis had to be swapped for crampons and an axe”.",
     "The last 1.7 kilometres are exposed north-west ridge. The crest undulates upward from 1076 to 1393 m with short drops on the way — 47 metres in all above Middagsaksla, and none of them more than ten at a time on the line. There are airy sections, short scrambling steps, and right at the end a gully and a steep summit pyramid: the steepest hundred-metre band on the whole tour lies between 1300 and 1400 m and averages 23.9 degrees, while the steepest sustained section is the summit step itself: 46.2 degrees over thirty metres between 1365 and 1397 m."
@@ -367,7 +367,7 @@
      "body": "Check today's avalanche forecast for Lyngen at varsom.no. Bring a transceiver, probe and shovel, and crampons and an axe if you are going beyond Middagsaksla."
     }
    ],
-   "caption": "1383 metres of climbing and 5.64 km from Fv91. The skiing ends at Middagsaksla, 1076 m; the last 1.7 km on foot give back 47 metres of height on the way."
+   "caption": "1383 metres of climbing and 5.42 km from Fv91. The skiing ends at Middagsaksla, 1076 m; the last 1.7 km on foot give back 47 metres of height on the way."
   },
   "source": "written against corridors.json and the routed line",
   "sources": [
@@ -1383,7 +1383,7 @@
  },
  "jakta": {
   "no": {
-   "intro": "1569 høydemeter fra fjorden på under fem kilometer, og det meste av dem kommer i ett strekk. Fra Konedalen går en side opp på en smal topprygg — 25 til 33 grader nederst, 40 til 50 de siste 200 høydemetrene som har skavl mot Konedalen og en om lag 80 grader bratt vegg ned mot Hjørundfjorden på andre sida.",
+   "intro": "1583 høydemeter fra fjorden på drøyt fem kilometer, og det meste av dem kommer i ett strekk. Fra Konedalen går en side opp på en smal topprygg — 25 til 33 grader nederst, 40 til 50 de siste 200 høydemetrene som har skavl mot Konedalen og en om lag 80 grader bratt vegg ned mot Hjørundfjorden på andre sida.",
    "ascent": [
     "Fra veienden ved Lisjeholen sør for Norang-gårdene, 61 moh, tar du den bratte stien opp til Konedalen med skiene på sekken — først på venstre side av elva, så over på høyre. Skogen slutter rundt 395 moh og terrenget er åpent fra 398. Dette er den delen av turen som ikke er skitur, og den stiger 20 til 22 grader i snitt.",
     "Oppe i dalen tar du på deg skiene og følger det slake dalføret sørvestover til om lag 740 moh. Hold deg på sørøstre side på vei inn: det kan gå skred fra Jakta hele veien inn Konedalen, og dalbunnen er utløpssona.",
@@ -1409,10 +1409,10 @@
      "body": "Sjekk dagens skredvarsel for Sunnmøre på varsom.no. Ta med sender/mottaker, søkestang og spade."
     }
    ],
-   "caption": "1569 høydemeter og 4,82 km fra Norang, med den 33–36 grader bratte sida fra Konedalen opp til toppryggen som turens nøkkelparti."
+   "caption": "1583 høydemeter og 5,15 km fra Norang, med den 33–36 grader bratte sida fra Konedalen opp til toppryggen som turens nøkkelparti."
   },
   "en": {
-   "intro": "1569 metres of climbing from the fjord in under five kilometres, most of it in one unbroken push. From Konedalen a flank leads onto a narrow summit ridge — 25 to 33 degrees low down, 40 to 50 over the last 200 metres with cornices towards Konedalen and a roughly 80-degree wall down to the Hjørundfjord on the other side.",
+   "intro": "1583 metres of climbing from the fjord in just over five kilometres, most of it in one unbroken push. From Konedalen a flank leads onto a narrow summit ridge — 25 to 33 degrees low down, 40 to 50 over the last 200 metres with cornices towards Konedalen and a roughly 80-degree wall down to the Hjørundfjord on the other side.",
    "ascent": [
     "From the road end at Lisjeholen south of the Norang farms, 61 m, take the steep path up to Konedalen with the skis on your pack — first on the left bank of the river, then across to the right. The forest ends around 395 m and the ground is open from 398. This is the part of the tour that is not a ski tour, and it climbs at 20 to 22 degrees on average.",
     "Up in the valley you put the skis on and follow the gentle valley floor south-west to about 740 m. Keep to the south-east side on the way in: avalanches run off Jakta the whole length of Konedalen, and the valley floor is the runout.",
@@ -1438,7 +1438,7 @@
      "body": "Check today's avalanche forecast for Sunnmøre at varsom.no. Bring a transceiver, probe and shovel."
     }
    ],
-   "caption": "1569 metres of climbing and 4.82 km from Norang, with the 33–36 degree flank from Konedalen up to the summit ridge as the crux."
+   "caption": "1583 metres of climbing and 5.15 km from Norang, with the 33–36 degree flank from Konedalen up to the summit ridge as the crux."
   },
   "source": "written against corridors.json and the routed line",
   "sources": [
@@ -2791,7 +2791,7 @@
     "Ned igjen følger du oppstigningen: vestover fra varden til Holo, så sørvest gjennom Rindane og over Skarshaug, og til slutt ned lia og gjennom skogen til Kletta.",
     "Vanligste feil: å slippe seg rett ned fra toppen i stedet for å gå tilbake til Holo først. Fallinja fra varden går sørover, og der stuper det — sørflanken snitter 44° over de tre første hundre metrene, med et bergband på 60° i de øverste sytti. Hold vestover til du står på hylla ved Holo, og gå ned oppstigningssporet derfra.",
     "Under Skarshaug møter du bakken mellom 600 og 700 moh igjen, nå vestvendt og med sol på seg fra midt på dagen. Kjør den mens snøen fortsatt bærer; senere blir den tung og våt helt ned i skogen.",
-    "Fri Flyt går ikke opp Melderskin fra Kletta i det hele tatt. Startstedet deres er Myrdalsvatnet på 367 moh — det samme som Juklavasstinden går fra — og ruta følger grusveien litt tilbake til en traktorvei på 430, videre til Nipeelva på 525, opp langs elva og så den tydelige ryggen over Omnetjørnene på 1033 til Omnen på 1155 og toppryggen på 1204. 1104 høydemeter på 5,13 km, mot 1275 på 4,92 km fra Kletta: kortere klatring, lengre linje, og 1,88 km med skog mot 1,76 — furua slipper på 659 moh her mot 618 der. Beltet fra 600 til 700 moh måler 21,8 grader og det bratteste 30-metersvinduet 39,7 grader mellom 1317 og 1345 — brattere enn de 36,5 normalruta måler. Omnetjørnene ligger øst for ryggen — til venstre når du går sørover, som kilden sier — og linja går ikke over dem. «Ta med stegjern og øks» står i faktaboksen til denne ruta, ikke til den andre."
+    "Fri Flyt går ikke opp Melderskin fra Kletta i det hele tatt. Startstedet deres er Myrdalsvatnet på 367 moh — det samme som Juklavasstinden går fra — og ruta følger grusveien litt tilbake til en traktorvei på 430, videre til Nipeelva på 525, opp langs elva og så den tydelige ryggen over Omnetjørnene på 1033 til Omnen på 1155 og toppryggen på 1204. 1106 høydemeter på 5,22 km, mot 1275 på 4,92 km fra Kletta: kortere klatring, lengre linje, og 1,97 km med skog mot 1,76 — furua slipper på 659 moh her mot 618 der. Beltet fra 600 til 700 moh måler 21,8 grader og det bratteste 30-metersvinduet 39,7 grader mellom 1317 og 1345 — brattere enn de 36,5 normalruta måler. Omnetjørnene ligger øst for ryggen — til venstre når du går sørover, som kilden sier — og linja går ikke over dem. «Ta med stegjern og øks» står i faktaboksen til denne ruta, ikke til den andre."
    ],
    "avalanche": [
     {
@@ -2821,7 +2821,7 @@
     "Coming down you retrace the ascent: west from the cairn to Holo, then south-west through Rindane and over Skarshaug, and finally down the slope and through the forest to Kletta.",
     "The common mistake: dropping straight off the summit instead of going back to Holo first. The fall line from the cairn runs south, and south is where it drops away — the south flank averages 44 degrees over the first three hundred metres, with a 60 degrees rock band in the top seventy. Hold west until you are standing on the bench at Holo, and take your ascent track down from there.",
     "Below Skarshaug you meet the 600 to 700 m slope again, west-facing now and with the sun on it from midday. Ski it while the snow still carries; later it turns heavy and wet all the way down into the forest.",
-    "Fri Flyt does not climb Melderskin from Kletta at all. Their start is Myrdalsvatnet at 367 m — the same one Juklavasstinden goes from — and the route follows the gravel road back a little to a tractor track at 430, on to Nipeelva at 525, up along the river and then the distinct ridge over Omnetjørnene at 1033 to Omnen at 1155 and the summit ridge at 1204. 1104 metres of climbing over 5.13 km, against 1275 over 4.92 km from Kletta: less ascent, more line, and 1.88 km of forest against 1.76 — the pines let go at 659 m here against 618 there. The band from 600 to 700 m measures 21.8 degrees and the steepest 30 m window 39.7 degrees between 1317 and 1345 — steeper than the 36.5 the normal route measures. Omnetjørnene lie east of the ridge — on your left going south, as the source says — and the line does not cross them. “Bring crampons and an axe” is in this route's fact box, not the other one's."
+    "Fri Flyt does not climb Melderskin from Kletta at all. Their start is Myrdalsvatnet at 367 m — the same one Juklavasstinden goes from — and the route follows the gravel road back a little to a tractor track at 430, on to Nipeelva at 525, up along the river and then the distinct ridge over Omnetjørnene at 1033 to Omnen at 1155 and the summit ridge at 1204. 1106 metres of climbing over 5.22 km, against 1275 over 4.92 km from Kletta: less ascent, more line, and 1.97 km of forest against 1.76 — the pines let go at 659 m here against 618 there. The band from 600 to 700 m measures 21.8 degrees and the steepest 30 m window 39.7 degrees between 1317 and 1345 — steeper than the 36.5 the normal route measures. Omnetjørnene lie east of the ridge — on your left going south, as the source says — and the line does not cross them. “Bring crampons and an axe” is in this route's fact box, not the other one's."
    ],
    "avalanche": [
     {
@@ -3541,16 +3541,16 @@
  },
  "rana": {
   "no": {
-   "intro": "1561 høydemeter fra 63 moh — fjord til topp på 8,57 km, med et av de eldste navnene i Sunnmørsalpane på skiltet. Bratteste sammenhengende parti måler 28,4 grader og ligger på egga, mellom 1210 og 1232 moh — toppkammen er smal, men linja følger den inn fra sørvest og er slakere enn den ser ut.",
-   "caption": "1561 høydemeter og 8,57 km fra Urkegjerdet over Haukåssætra, Nordkopen og egga, med det bratteste på de siste hundre høydemeterne.",
+   "intro": "1555 høydemeter fra 63 moh — fjord til topp på 8,69 km, med et av de eldste navnene i Sunnmørsalpane på skiltet. Bratteste sammenhengende parti måler 28,4 grader og ligger på egga, mellom 1210 og 1232 moh — toppkammen er smal, men linja følger den inn fra sørvest og er slakere enn den ser ut.",
+   "caption": "1555 høydemeter og 8,69 km fra Urkegjerdet over Haukåssætra, Nordkopen og egga, med det bratteste på de siste hundre høydemeterne.",
    "ascent": [
     "Start ved Urkegjerdet, 63 moh, der grusveien tar av fra hovedveien ved Urke Landhandel. Veien videre mot Haukåssætra er vinterstengt, og det er derfor turen starter nede ved fjorden og ikke oppe ved sætra på 230 moh — Fri Flyts «5 timer fra Haukåssætra» er tida fra et punkt du sjelden kommer til med bil om vinteren.",
-    "Følg veien opp gjennom skogen — Kartverket fører skog til 231 moh — forbi Haukåssætra og inn i dalen mot Nordkopen på 501 moh. Bandet fra 400 til 500 moh måler 11,7 grader, og ellers er hele innmarsjen slak: 5,5 grader fra 100 til 200 moh og 6,6 fra 200 til 300.",
+    "Følg veien opp gjennom skogen — Kartverket fører skog til 231 moh — forbi Haukåssætra og inn i dalen mot Nordkopen på 501 moh. Bandet fra 400 til 500 moh måler 11,7 grader, og ellers er hele innmarsjen slak: 4,9 grader fra 100 til 200 moh og 6,6 fra 200 til 300.",
     "Fra kopen sikksakker ruta bratt opp mot egga i nord, og du tar inn på den til høyre for en markert hammer. Botnen ligger på 987 moh og eggkammen på 1331. Bandet fra 1200 til 1300 moh er bratteste hundremeteren, 19,2 grader i snitt, og partiet fra 700 til 1000 moh under det ligger på 16 til 19 grader.",
     "Derfra følger du toppryggen nordover. Den er bred og slaker av mot 1400 moh — 7,2 grader fra 1300 til 1400 — før den siste stigninga langs kammen fra 1531 og 1562 moh til varden på 1587. Kammen kommer inn fra sørvest, og linja holder den de siste 120 meterne — 1572, 1579 og 1586 moh — i stedet for å gå rundt på østsida. Det bratteste på ruta ligger lenger nede, på egga: 28,4 grader over tretti meter mellom 1210 og 1232 moh."
    ],
    "descent": [
-    "Ned samme veien: kammen, den brede toppryggen, ned egga til Nordkopen og ut dalen til Urkegjerdet. Kortet fører fallretninga som sørøst; linja hjem peiler 182 grader, altså rett sør, og kammen blir holdt på vestsida der skavlene ikke er. Nedkjøringa er lang — 1561 høydemeter i ett strekk fra toppen til fjorden.",
+    "Ned samme veien: kammen, den brede toppryggen, ned egga til Nordkopen og ut dalen til Urkegjerdet. Kortet fører fallretninga som sørøst; linja hjem peiler 182 grader, altså rett sør, og kammen blir holdt på vestsida der skavlene ikke er. Nedkjøringa er lang — 1555 høydemeter i ett strekk fra toppen til fjorden.",
     "Vanligste feil: å holde seg øst på toppryggen. Det ligger store skavler på østsida av ryggen, og en flankemåling fra toppen viser at fjellet er bratt i alle retninger: 22 til 41 grader i snitt over de første 400 meterne, med 60-metersvinduer på 53 til 66 grader. Hold vest for kammen.",
     "Den andre er tidspunktet. Ruta går gjennom skredterreng både inn mot Nordkopen og i sida opp mot egga, og i vårsnø utover ettermiddagen er det den delen av turen som endrer seg raskest."
    ],
@@ -3570,16 +3570,16 @@
    ]
   },
   "en": {
-   "intro": "1561 metres of climbing from 63 m — fjord to summit over 8.57 km, under one of the oldest names in the Sunnmøre Alps. The steepest sustained section measures 28.4 degrees and sits on the arête, between 1210 and 1232 m — the summit crest is narrow, but the line follows it in from the south-west and is gentler than it looks.",
-   "caption": "1561 metres of climbing and 8.57 km from Urkegjerdet over Haukåssætra, Nordkopen and the arête, with the steepest ground in the last hundred metres of climbing.",
+   "intro": "1555 metres of climbing from 63 m — fjord to summit over 8.69 km, under one of the oldest names in the Sunnmøre Alps. The steepest sustained section measures 28.4 degrees and sits on the arête, between 1210 and 1232 m — the summit crest is narrow, but the line follows it in from the south-west and is gentler than it looks.",
+   "caption": "1555 metres of climbing and 8.69 km from Urkegjerdet over Haukåssætra, Nordkopen and the arête, with the steepest ground in the last hundred metres of climbing.",
    "ascent": [
     "Start at Urkegjerdet, 63 m, where the gravel road leaves the main road by Urke Landhandel. The road on towards Haukåssætra is closed in winter, which is why the tour starts down at the fjord and not up at the seter at 230 m — Fri Flyt's “5 hours from Haukåssætra” is time from a point you rarely reach by car in winter.",
-    "Follow the road up through the forest — Kartverket has forest to 231 m — past Haukåssætra and into the valley towards Nordkopen at 501 m. The band from 400 to 500 m measures 11.7 degrees, and otherwise the whole approach is gentle: 5.5 degrees from 100 to 200 m and 6.6 from 200 to 300.",
+    "Follow the road up through the forest — Kartverket has forest to 231 m — past Haukåssætra and into the valley towards Nordkopen at 501 m. The band from 400 to 500 m measures 11.7 degrees, and otherwise the whole approach is gentle: 4.9 degrees from 100 to 200 m and 6.6 from 200 to 300.",
     "From the basin the route zigzags steeply up towards the arête to the north, which you join to the right of a marked rock band. The basin floor is at 987 m and the crest at 1331. The band from 1200 to 1300 m is the steepest hundred-metre band at 19.2 degrees, and the ground from 700 to 1000 m below it runs at 16 to 19.",
     "From there you follow the summit ridge north. It is broad and eases towards 1400 m — 7.2 degrees from 1300 to 1400 — before the final climb along the crest from 1531 and 1562 m to the cairn at 1587. The crest comes in from the south-west, and the line holds it for the last 120 metres — 1572, 1579 and 1586 m — instead of going round on the east side. The steepest ground on the route is lower down, on the arête: 28.4 degrees over thirty metres between 1210 and 1232 m."
    ],
    "descent": [
-    "Back the same way: the crest, the broad summit ridge, down the arête to Nordkopen and out the valley to Urkegjerdet. The card gives the descent aspect as south-east; the line home bears 182 degrees, which is due south, and the crest is held on its west side where the cornices are not. It is long — 1561 metres in one run from the summit to the fjord.",
+    "Back the same way: the crest, the broad summit ridge, down the arête to Nordkopen and out the valley to Urkegjerdet. The card gives the descent aspect as south-east; the line home bears 182 degrees, which is due south, and the crest is held on its west side where the cornices are not. It is long — 1555 metres in one run from the summit to the fjord.",
     "The usual mistake: holding east on the summit ridge. Large cornices sit on the east side, and a flank measurement from the summit shows the mountain is steep in every direction: 22 to 41 degrees on average over the first 400 metres, with 60-metre windows of 53 to 66 degrees. Keep west of the crest.",
     "The second is timing. The route runs through avalanche terrain both into Nordkopen and on the flank up to the arête, and in spring snow through the afternoon that is the part of the tour that changes fastest."
    ],
@@ -4345,8 +4345,8 @@
  },
  "juklavasstinden": {
   "no": {
-   "intro": "1343 høydemeter på 7,42 km fra Myrdalsvatnet — og 349 av dem blir gitt fra seg underveis. Ruta går opp på ryggen over Omnetjørnene, øst ned mot Møsetjørna og opp nordryggen til en topp som bærer skavl.",
-   "caption": "1343 høydemeter og 7,42 km fra Myrdalsvatnet over ryggen på 1033 moh og Møsetjørna på 755, med nordryggen fra 865 moh til varden.",
+   "intro": "1343 høydemeter på 7,49 km fra Myrdalsvatnet — og 349 av dem blir gitt fra seg underveis. Ruta går opp på ryggen over Omnetjørnene, øst ned mot Møsetjørna og opp nordryggen til en topp som bærer skavl.",
+   "caption": "1343 høydemeter og 7,49 km fra Myrdalsvatnet over ryggen på 1033 moh og Møsetjørna på 755, med nordryggen fra 865 moh til varden.",
    "ascent": [
     "Start ved veien ved Myrdalsvatnet, 367 moh, i Uskedalen. Følg veien litt tilbake til en traktorvei og følg denne til Nipelva kommer til syne. Skogen holder til 668 moh.",
     "Følg elva oppover til ryggen over Omnatjørnane — registeret skriver dem slik, ikke Omnetjørnene, og «over» er bare halve historien: linja går 269 meter rett over vatnene på 1066 moh, opptil 100 meter fra land. De ligger på selve ryggen, og de er naturlige. Det er her stigningen står: 21,9 grader fra 500 til 600 moh og 19,0 fra 600 til 700, med bratteste sammenhengende parti på 30,8 grader mellom 995 og 1022 moh. Ryggen topper seg på 1033 moh.",
@@ -4373,8 +4373,8 @@
    ]
   },
   "en": {
-   "intro": "1343 metres of climbing over 7.42 km from Myrdalsvatnet — and 349 of them are given back along the way. The route climbs onto the ridge above Omnetjørnene, drops east towards Møsetjørna and takes the north ridge to a summit that carries a cornice.",
-   "caption": "1343 metres of climbing and 7.42 km from Myrdalsvatnet over the ridge at 1033 m and Møsetjørna at 755, with the north ridge from 865 m to the cairn.",
+   "intro": "1343 metres of climbing over 7.49 km from Myrdalsvatnet — and 349 of them are given back along the way. The route climbs onto the ridge above Omnetjørnene, drops east towards Møsetjørna and takes the north ridge to a summit that carries a cornice.",
+   "caption": "1343 metres of climbing and 7.49 km from Myrdalsvatnet over the ridge at 1033 m and Møsetjørna at 755, with the north ridge from 865 m to the cairn.",
    "ascent": [
     "Start by the road at Myrdalsvatnet, 367 m, in Uskedalen. Follow the road back a little to a tractor road and follow that until Nipelva comes into view. The forest holds to 668 m.",
     "Follow the river up to the ridge above Omnatjørnane — that is the register's spelling, not Omnetjørnene — and “above” is only half the story: the line runs 269 metres straight across the tarns at 1066 m, up to 100 metres from shore. They sit on the ridge itself, and they are natural. This is where the climbing is: 21.9 degrees from 500 to 600 m and 19.0 from 600 to 700, with the steepest sustained section at 30.8 degrees between 995 and 1022 m. The ridge tops out at 1033 m.",
@@ -4741,8 +4741,8 @@
  },
  "gyranfisen": {
   "no": {
-   "intro": "668 høydemeter på 5,56 km fra Vikerkoia, 661 moh, til Ringerikes høyeste punkt på 1127. Differansen mellom de to tallene er søkket: ruta klatrer opp på Svarttjernskollen, 1054 moh, faller ned mot Fjelldalen og går opp igjen, og gir tilbake 200 høydemeter som kommer igjen som stigning på veien hjem.",
-   "caption": "668 høydemeter og 5,56 km fra Vikerkoia over Svarttjernskollen, med skoggrensa på 857 moh og 200 høydemeter gitt tilbake i søkket underveis.",
+   "intro": "652 høydemeter på 5,55 km fra Vikerkoia, 661 moh, til Ringerikes høyeste punkt på 1127. Differansen mellom de to tallene er søkket: ruta klatrer opp på Svarttjernskollen, 1054 moh, faller ned mot Fjelldalen og går opp igjen, og gir tilbake 186 høydemeter som kommer igjen som stigning på veien hjem.",
+   "caption": "652 høydemeter og 5,55 km fra Vikerkoia over Svarttjernskollen, med skoggrensa på 857 moh og 200 høydemeter gitt tilbake i søkket underveis.",
    "ascent": [
     "Start på parkeringa ved Vikerkoia på Vikerseterveien, 661 moh — Kartverket klasser punktet som myr, og det er en presis beskrivelse av Vikerfjell. De første høydemeterne er slake, 4,9 grader fra 600 til 700 moh, før skogen tar over ved 698 moh.",
     "Stigningen opp mot Svarttjernskollen er den bratteste på turen: 14,9 grader fra 700 til 800 moh over 384 meter grunn, med bratteste sammenhengende parti 24,9 grader mellom 767 og 788 moh. Skogen slipper allerede på 857 moh etter 1,04 km, og fra 872 er du ute i åpent terreng.",
@@ -4756,7 +4756,7 @@
    "avalanche": [
     {
      "title": "Ruta",
-     "body": "Slakt terreng med én kneik: 14,9 grader fra 700 til 800 moh over 384 meter grunn, og bratteste sammenhengende parti 24,9 grader mellom 767 og 788 moh. De andre bandene måler 2,1 til 10,5 grader i snitt. Skredfaren er lav; det som kan gå galt er lengden, søkket og at siste stykket opp er umerket."
+     "body": "Slakt terreng med én kneik: 14,9 grader fra 700 til 800 moh over 384 meter grunn, og bratteste sammenhengende parti 24,9 grader mellom 767 og 788 moh. De andre bandene måler 2,5 til 8,0 grader i snitt. Skredfaren er lav; det som kan gå galt er lengden, søkket og at siste stykket opp er umerket."
     },
     {
      "title": "Terrenget utenfor",
@@ -4769,8 +4769,8 @@
    ]
   },
   "en": {
-   "intro": "668 metres of climbing over 5.56 km from Vikerkoia, 661 m, to the highest point in Ringerike at 1127 m. The difference between those two figures is the dip: the route climbs onto Svarttjernskollen, 1054 m, drops towards Fjelldalen and climbs again, giving back 200 metres that come back as climbing on the way home.",
-   "caption": "668 metres of climbing and 5.56 km from Vikerkoia over Svarttjernskollen, with the treeline at 857 m and 200 metres of height given back in the dip on the way.",
+   "intro": "652 metres of climbing over 5.55 km from Vikerkoia, 661 m, to the highest point in Ringerike at 1127 m. The difference between those two figures is the dip: the route climbs onto Svarttjernskollen, 1054 m, drops towards Fjelldalen and climbs again, giving back 186 metres that come back as climbing on the way home.",
+   "caption": "652 metres of climbing and 5.55 km from Vikerkoia over Svarttjernskollen, with the treeline at 857 m and 200 metres of height given back in the dip on the way.",
    "ascent": [
     "Start at the car park by Vikerkoia on Vikerseterveien, 661 m — Kartverket classes the point as bog, which is an accurate description of Vikerfjell. The first metres of climbing are gentle, 4.9 degrees from 600 to 700 m, before the forest takes over at 698 m.",
     "The climb up to Svarttjernskollen is the steepest part of the tour: 14.9 degrees from 700 to 800 m over 384 metres of ground, with a steepest sustained section of 24.9 degrees between 767 and 788 m. The forest lets go as early as 857 m after 1.04 km, and from 872 you are out in open terrain.",
@@ -4784,7 +4784,7 @@
    "avalanche": [
     {
      "title": "The route",
-     "body": "Gentle terrain with one pitch: 14.9 degrees from 700 to 800 m over 384 metres of ground, and a steepest sustained section of 24.9 degrees between 767 and 788 m. The other bands measure 2.1 to 10.5 degrees on average. The avalanche hazard is low; what can go wrong is the length, the dip, and that the last stretch to the top is unmarked."
+     "body": "Gentle terrain with one pitch: 14.9 degrees from 700 to 800 m over 384 metres of ground, and a steepest sustained section of 24.9 degrees between 767 and 788 m. The other bands measure 2.5 to 8.0 degrees on average. The avalanche hazard is low; what can go wrong is the length, the dip, and that the last stretch to the top is unmarked."
     },
     {
      "title": "The terrain around it",
@@ -5699,11 +5699,11 @@
  },
  "prestholtskarvet": {
   "no": {
-   "intro": "963 høydemeter og 11,63 km fra Havsdalen til det høyeste punktet på 1860 moh, tolv kilometer inn på Hallingskarvet. Åtte av dem er flate: bandet fra 1200 til 1300 moh måler 1,3 grader over 5130 meter grunn. Alt det bratte ligger i Prestholtskardet — 17,6 grader fra 1500 til 1600 moh over 315 meter grunn, med et steg på 24,8 grader mellom 1323 og 1344.",
-   "caption": "963 høydemeter og 11,63 km fra Havsdalen forbi Prestholtstølan på 1243 moh og opp Prestholtskardet på 1640, med skogen som slipper taket på 1038 moh.",
+   "intro": "962 høydemeter og 11,57 km fra Havsdalen til det høyeste punktet på 1860 moh, tolv kilometer inn på Hallingskarvet. Åtte av dem er flate: bandet fra 1200 til 1300 moh måler 1,3 grader over 5130 meter grunn. Alt det bratte ligger i Prestholtskardet — 17,6 grader fra 1500 til 1600 moh over 315 meter grunn, med et steg på 24,8 grader mellom 1323 og 1344.",
+   "caption": "962 høydemeter og 11,57 km fra Havsdalen forbi Prestholtstølan på 1243 moh og opp Prestholtskardet på 1640, med skogen som slipper taket på 1038 moh.",
    "ascent": [
     "Start på parkeringa nederst i Havsdalen, 963 moh — tre avgiftsplasser ved siden av hverandre, alle med access=yes i OSM. Ut.no tegner turen sin fra toppen av skisenteret, 1070 moh, som er lettvint hvis heisen går; korridoren her starter der bilen står, og det er forskjellen mellom de to startpunktene som gjør at høydemeterne på kortet er større enn ut.nos oppgitte 855. Skogen slipper taket på 1048 moh og terrenget er åpent fra 1051.",
-    "Fra 1058 moh er du inne på den merkede løypa vestover. Ut.no: «følg merket løype til Prestholtseter (åtte km). Løypa blir tråkket daglig og er følgelig i meget god standard med både klassisk- og skøytespor.» Det er en flat innmarsj i ordets rette forstand — bandet fra 1000 til 1100 moh måler 3,3 grader over 1711 meter grunn, 1100 til 1200 måler 4,6 over 1216, og 1200 til 1300 måler 1,3 over 5130. Linja passerer 1240 moh og holder det nivået i fem kilometer.",
+    "Fra 1058 moh er du inne på den merkede løypa vestover. Ut.no: «følg merket løype til Prestholtseter (åtte km). Løypa blir tråkket daglig og er følgelig i meget god standard med både klassisk- og skøytespor.» Det er en flat innmarsj i ordets rette forstand — bandet fra 1000 til 1100 moh måler 3,3 grader over 1736 meter grunn, 1100 til 1200 måler 4,6 over 1216, og 1200 til 1300 måler 1,3 over 5130. Linja passerer 1240 moh og holder det nivået i fem kilometer.",
     "Prestholtstølan ligger på 1243 moh, rett under sørsiden av skarvet. Herfra begynner turen på nytt: 16,3 grader fra 1300 til 1400 moh over 315 meter grunn, 17,2 fra 1400 til 1500 over 316, og 17,6 fra 1500 til 1600 over 315 — det bratteste bandet. Det bratteste steget på hele linja ligger lavere, 24,8 grader mellom 1323 og 1344 moh. Det er Prestholtskardet, og registerpunktet for skardet måler 1640 moh.",
     "Oppe på skarvet slakner det brått: 10,3 grader fra 1600 til 1700 moh over 540 meter grunn, 7,1 fra 1700 til 1800 over 855, og 4,2 fra 1800 til 1900 over 742. De siste to kilometerne går vestover over vidt, åpent platå til det høyeste punktet, 1860,4 moh. Registerpunktet for Prestholtskarvet ligger 550 meter nordøst, mellom to topper som måler 1860,4 og 1857,5; ut.nos egen linje ender 20 meter fra den høyeste, og det er den kortet fører."
    ],
@@ -5714,7 +5714,7 @@
    "avalanche": [
     {
      "title": "Ruta",
-     "body": "963 høydemeter der bratteste band er 22,0 grader og bratteste steg 25,2, begge i Prestholtskardet. Ruta gir tilbake 66 høydemeter på 11,63 km. Ut.no fører turen som krevende skitur og 21,6 km tur/retur fra heistoppen, og skriver at den «blir oftest gått utpå seinvinter/vår når snøen har satt seg» — det er skardet den setningen handler om."
+     "body": "962 høydemeter der bratteste band er 22,0 grader og bratteste steg 25,2, begge i Prestholtskardet. Ruta gir tilbake 65 høydemeter på 11,57 km. Ut.no fører turen som krevende skitur og 21,6 km tur/retur fra heistoppen, og skriver at den «blir oftest gått utpå seinvinter/vår når snøen har satt seg» — det er skardet den setningen handler om."
     },
     {
      "title": "Terrenget utenfor",
@@ -5727,11 +5727,11 @@
    ]
   },
   "en": {
-   "intro": "963 metres of climbing and 11.63 km from Havsdalen to the high point at 1860 m, twelve kilometres onto Hallingskarvet. Eight of them are flat: the band from 1200 to 1300 m measures 1.3 degrees over 5130 metres of ground. All the climbing sits in Prestholtskardet — 17.6 degrees from 1500 to 1600 m over 315 metres of ground, with a step of 24.8 degrees between 1323 and 1344.",
-   "caption": "963 metres of climbing and 11.63 km from Havsdalen past Prestholtstølan at 1243 m and up Prestholtskardet at 1640, with the forest letting go at 1038 m.",
+   "intro": "962 metres of climbing and 11.57 km from Havsdalen to the high point at 1860 m, twelve kilometres onto Hallingskarvet. Eight of them are flat: the band from 1200 to 1300 m measures 1.3 degrees over 5130 metres of ground. All the climbing sits in Prestholtskardet — 17.6 degrees from 1500 to 1600 m over 315 metres of ground, with a step of 24.8 degrees between 1323 and 1344.",
+   "caption": "962 metres of climbing and 11.57 km from Havsdalen past Prestholtstølan at 1243 m and up Prestholtskardet at 1640, with the forest letting go at 1038 m.",
    "ascent": [
     "Start at the car park at the bottom of Havsdalen, 963 m — three paid plots side by side, all tagged access=yes in OSM. Ut.no draws its tour from the top of the ski centre, 1070 m, which is convenient when the lift runs; the corridor here starts where the car stands, and the difference between the two starting points is why the climb on the card is larger than ut.no's published 855. The forest lets go at 1048 m and the ground is open from 1051.",
-    "From 1058 m you are on the marked trail west. Ut.no: “follow the marked trail to Prestholtseter (eight km). The trail is groomed daily and is accordingly in very good condition, with both classic and skating tracks.” It is a flat approach in the literal sense — the band from 1000 to 1100 m measures 3.3 degrees over 1711 metres of ground, 1100 to 1200 measures 4.6 over 1216, and 1200 to 1300 measures 1.3 over 5130. The line passes 1240 m and holds that level for five kilometres.",
+    "From 1058 m you are on the marked trail west. Ut.no: “follow the marked trail to Prestholtseter (eight km). The trail is groomed daily and is accordingly in very good condition, with both classic and skating tracks.” It is a flat approach in the literal sense — the band from 1000 to 1100 m measures 3.3 degrees over 1736 metres of ground, 1100 to 1200 measures 4.6 over 1216, and 1200 to 1300 measures 1.3 over 5130. The line passes 1240 m and holds that level for five kilometres.",
     "Prestholtstølan sits at 1243 m, directly under the south side of the skarv. From here the tour starts again: 16.3 degrees from 1300 to 1400 m over 315 metres of ground, 17.2 from 1400 to 1500 over 316, and 17.6 from 1500 to 1600 over 315 — the steepest band. The steepest step on the whole line sits lower, 24.8 degrees between 1323 and 1344 m. That is Prestholtskardet, and the register point for the pass measures 1640 m.",
     "Up on the skarv it eases abruptly: 10.3 degrees from 1600 to 1700 m over 540 metres of ground, 7.1 from 1700 to 1800 over 855, and 4.2 from 1800 to 1900 over 742. The last two kilometres run west over a wide, open plateau to the high point, 1860.4 m. The register point for Prestholtskarvet lies 550 metres north-east, between two tops measuring 1860.4 and 1857.5; ut.no's own line ends 20 metres from the higher one, and that is the one the card carries."
    ],
@@ -5742,7 +5742,7 @@
    "avalanche": [
     {
      "title": "The route",
-     "body": "963 metres of climbing where the steepest band is 22.0 degrees and the steepest step 25.2, both in Prestholtskardet. The route gives back 66 metres over 11.63 km. Ut.no grades the tour a demanding ski tour and 21.6 km return from the lift top, and writes that it “is most often done in late winter or spring once the snow has settled” — that sentence is about the pass."
+     "body": "962 metres of climbing where the steepest band is 22.0 degrees and the steepest step 25.2, both in Prestholtskardet. The route gives back 65 metres over 11.57 km. Ut.no grades the tour a demanding ski tour and 21.6 km return from the lift top, and writes that it “is most often done in late winter or spring once the snow has settled” — that sentence is about the pass."
     },
     {
      "title": "The terrain beyond",
@@ -5996,12 +5996,12 @@
  },
  "rodtinden": {
   "no": {
-   "intro": "450 høydemeter og 2,32 km fra Storelva skistadion til toppen på 470 moh — den mest besøkte toppen rundt Tromsø, og en tur for alle anledninger. Bratteste hundremetersband er 15,1 grader mellom 300 og 400 moh, og bratteste steg 24,2 grader mellom 429 og 447. Det eneste virkelig bratte på fjellet ligger sørøst for varden, og ruta går ikke i det.",
-   "caption": "450 høydemeter og 2,32 km fra Storelva skistadion på 20 moh, ut av lysløypa på 96 moh og opp den åpne sørøstsida over 303 og 431.",
+   "intro": "450 høydemeter og 2,46 km fra Storelva skistadion til toppen på 470 moh — den mest besøkte toppen rundt Tromsø, og en tur for alle anledninger. Bratteste hundremetersband er 15,1 grader mellom 300 og 400 moh, og bratteste steg 24,2 grader mellom 429 og 447. Det eneste virkelig bratte på fjellet ligger sørøst for varden, og ruta går ikke i det.",
+   "caption": "450 høydemeter og 2,46 km fra Storelva skistadion på 20 moh, ut av lysløypa på 92 moh og opp den åpne sørøstsida over 303 og 431.",
    "ascent": [
-    "Start ved Storelva skistadion på Kvaløysletta, 20 moh, der det er kartlagt parkering ved anlegget. Fri Flyt oppgir 2,8 km for turen og ut.nos egen linje måler 2,52; den routa linja her er 2,32 km. Fjellet heter Rødtinden på norsk og Ruksesvárri på nordsamisk, og begge navnene er vedtatt i Kartverkets register.",
-    "Den første kilometeren følger lysløypa oppover Storelvdalen — de første 944 metrene av linja stiger 5,1 grader i snitt — og på 96 moh forlater ruta løypa og legger seg inn i lia, og fra da av er stigninga påfallende jevn: 14,5 grader fra 100 til 200 moh, 15,0 fra 200 til 300, 15,1 fra 300 til 400 og 14,9 over det. Turen gir ikke tilbake en eneste høydemeter på hele oppstigninga.",
-    "Kartverket fører skog til 208 moh og åpent terreng fra 218, men skogen her er bjørk med myr imellom — terrengklassen langs linja veksler mellom Skog og Myr på 53, 156 og 241 moh. Over den er det bare å velge spor. Fri Flyt: «Etter hvert kommer man over skogen og det er bare å legge sporet etter behag. (Men det skal godt gjøres hvis det ikke er et spor å følge).» De siste hundre høydemeterne holder ruta godt mot vest der ryggen er slakest, og bratteste steget på turen ligger her — 24,2 grader mellom 429 og 447 moh."
+    "Start ved Storelva skistadion på Kvaløysletta, 20 moh, der det er kartlagt parkering ved anlegget. Fri Flyt oppgir 2,8 km for turen og ut.nos egen linje måler 2,52; den routa linja her er 2,46 km. Fjellet heter Rødtinden på norsk og Ruksesvárri på nordsamisk, og begge navnene er vedtatt i Kartverkets register.",
+    "Den første kilometeren følger lysløypa oppover Storelvdalen — de første 1082 metrene av linja stiger 4,4 grader i snitt — og på 92 moh forlater ruta løypa og legger seg inn i lia, og fra da av er stigninga påfallende jevn: 14,5 grader fra 100 til 200 moh, 15,0 fra 200 til 300, 15,1 fra 300 til 400 og 14,9 over det. Turen gir ikke tilbake en eneste høydemeter på hele oppstigninga.",
+    "Kartverket fører skog til 208 moh og åpent terreng fra 218, men skogen her er bjørk med myr imellom — terrengklassen langs linja veksler mellom Skog og Myr, med myr på 66 og 156 moh. Over den er det bare å velge spor. Fri Flyt: «Etter hvert kommer man over skogen og det er bare å legge sporet etter behag. (Men det skal godt gjøres hvis det ikke er et spor å følge).» De siste hundre høydemeterne holder ruta godt mot vest der ryggen er slakest, og bratteste steget på turen ligger her — 24,2 grader mellom 429 og 447 moh."
    ],
    "descent": [
     "Ned samme veien, sørøstover mot skistadion. Vest for varden måler flanken 3,3 grader i snitt ut til en kilometer og sørvest 15,1, så velger du feil kant er det ikke bratthet som straffer deg, det er at du havner i feil dal.",
@@ -6024,12 +6024,12 @@
    ]
   },
   "en": {
-   "intro": "450 metres of climbing and 2.32 km from the Storelva ski stadium to the summit at 470 m — the most-visited top around Tromsø, and a tour for any occasion. The steepest hundred-metre band is 15.1 degrees between 300 and 400 m, and the steepest step 24.2 degrees between 429 and 447. The one genuinely steep thing on the mountain is south-east of the cairn, and the route does not go in it.",
-   "caption": "450 metres of climbing and 2.32 km from the Storelva ski stadium at 20 m, off the lit trail at 96 m and up the open south-east side past 303 and 431.",
+   "intro": "450 metres of climbing and 2.46 km from the Storelva ski stadium to the summit at 470 m — the most-visited top around Tromsø, and a tour for any occasion. The steepest hundred-metre band is 15.1 degrees between 300 and 400 m, and the steepest step 24.2 degrees between 429 and 447. The one genuinely steep thing on the mountain is south-east of the cairn, and the route does not go in it.",
+   "caption": "450 metres of climbing and 2.46 km from the Storelva ski stadium at 20 m, off the lit trail at 92 m and up the open south-east side past 303 and 431.",
    "ascent": [
-    "Start at the Storelva ski stadium on Kvaløysletta, 20 m, where there is mapped parking at the ski stadium. Fri Flyt gives 2.8 km for the tour and ut.no's own line measures 2.52; the line routed here is 2.32 km. The mountain is Rødtinden in Norwegian and Ruksesvárri in Northern Sami, and Kartverket's register carries both.",
-    "The first kilometre follows the lit trail up Storelvdalen — the line's first 944 metres climb 5.1 degrees on average — and at 96 m the route leaves the trail for the hillside, and from there the gradient is strikingly even: 14.5 degrees from 100 to 200 m, 15.0 from 200 to 300, 15.1 from 300 to 400 and 14.9 above that. The tour gives back not one metre of height on the way up.",
-    "Kartverket carries forest to 208 m and open ground from 218, but the forest here is birch with bog between it — the terrain class along the line alternates between Skog and Myr at 53, 156 and 241 m. Above it you pick your own track. Fri Flyt: “you soon come out above the forest and can lay the track as you please — though you would have to be unlucky not to find one to follow.” The last hundred metres of climbing hold well to the west where the ridge is gentlest, and the steepest step of the tour is here: 24.2 degrees between 429 and 447 m."
+    "Start at the Storelva ski stadium on Kvaløysletta, 20 m, where there is mapped parking at the ski stadium. Fri Flyt gives 2.8 km for the tour and ut.no's own line measures 2.52; the line routed here is 2.46 km. The mountain is Rødtinden in Norwegian and Ruksesvárri in Northern Sami, and Kartverket's register carries both.",
+    "The first kilometre follows the lit trail up Storelvdalen — the line's first 1082 metres climb 4.4 degrees on average — and at 92 m the route leaves the trail for the hillside, and from there the gradient is strikingly even: 14.5 degrees from 100 to 200 m, 15.0 from 200 to 300, 15.1 from 300 to 400 and 14.9 above that. The tour gives back not one metre of height on the way up.",
+    "Kartverket carries forest to 208 m and open ground from 218, but the forest here is birch with bog between it — the terrain class along the line alternates between Skog and Myr, with bog at 66 and 156 m. Above it you pick your own track. Fri Flyt: “you soon come out above the forest and can lay the track as you please — though you would have to be unlucky not to find one to follow.” The last hundred metres of climbing hold well to the west where the ridge is gentlest, and the steepest step of the tour is here: 24.2 degrees between 429 and 447 m."
    ],
    "descent": [
     "Back the same way, south-east towards the stadium. West of the cairn the flank measures 3.3 degrees on average out to a kilometre and south-west 15.1, so picking the wrong edge does not punish you with steepness — it puts you in the wrong valley.",
@@ -7714,9 +7714,9 @@
    "https://peakbook.org/no/peakbook-element/2888/no/Skarven.html"
   ],
   "no": {
-   "intro": "744 høydemeter og 3,34 km fra parkeringsplassen i Skorgedalen til en av Romsdalens store klassikere — turen ut.no kaller en av de korteste i området og likevel en av de store. Fri Flyt gir den KAST 1 – Enkelt med bratteste punkt under 30 grader, og den ferdige linja holder seg innenfor: bratteste hundremetersbelte måler 20,5 grader mellom 400 og 500 moh, og bratteste sammenhengende parti 27,7. Det som krever hodet er ikke linja opp, men østflanken under fortoppen — den kilden selv sier du ikke skal krysse.",
+   "intro": "741 høydemeter og 3,13 km fra parkeringsplassen i Skorgedalen til en av Romsdalens store klassikere — turen ut.no kaller en av de korteste i området og likevel en av de store. Fri Flyt gir den KAST 1 – Enkelt med bratteste punkt under 30 grader, og den ferdige linja holder seg innenfor: bratteste hundremetersbelte måler 20,5 grader mellom 400 og 500 moh, og bratteste sammenhengende parti 27,7. Det som krever hodet er ikke linja opp, men østflanken under fortoppen — den kilden selv sier du ikke skal krysse.",
    "ascent": [
-    "Fra parkeringsplassen i Skorgedalen, 307 moh på bomvegen fra Skorga på E136 — vinteråpen, og kartlagt som parkeringsplass i OSM. Fra plassens nordvestre hjørne går du over flata — myr etter Kartverkets klasser, 350 moh der linja krysser — nord for Kjerringhaugen og DNT-hytta Skorgedalsbu. Så opp bjørkeskogen: beltet fra 400 til 500 moh er turens bratteste, 20,5 grader over 295 meter grunn, og skogen slutter på 556 moh etter 1,35 km, med åpent område fra 557.",
+    "Fra parkeringsplassen i Skorgedalen, 307 moh på bomvegen fra Skorga på E136 — vinteråpen, og kartlagt som parkeringsplass i OSM. Fra plassens nordvestre hjørne går du over flata — myr etter Kartverkets klasser, 350 moh der linja krysser — nord for Kjerringhaugen og DNT-hytta Skorgedalsbu. Så opp bjørkeskogen: beltet fra 400 til 500 moh er turens bratteste, 20,5 grader over 295 meter grunn, og skogen slutter på 483 moh etter 0,99 km, med åpent område fra 494.",
     "Over skoggrensa runder du sør for topp 588 og følger en svak ryggformasjon — 572 moh der linja tar den — mot Skarvens sørlige fortopp på 788. Beltene her måler 16,4 grader fra 600 til 700 moh og 15,7 fra 700 til 800: jevn skinning på åpen rygg, med utsikten østover mot Romsdalen og vestover mot Romsdalsfjorden og Molde voksende for hvert belte.",
     "Fra fortoppen følger ryggen videre over 892 moh til varden. Det bratteste sammenhengende partiet på hele turen ligger her — 27,7 grader mellom 937 og 960 moh — og beltet fra 900 til 1000 måler 19,3 grader. Varden står på 1048 moh: Fri Flyts publiserte GPS-punkt, registerets fjellnavn og terrengmodellens 1048,1 faller sammen på meteren."
    ],
@@ -7742,12 +7742,12 @@
      "body": "Skarven ligger i varslingsregionen Romsdal, en A-region med daglig skredvarsel gjennom sesongen — sjekk varsom.no. Sesongen desember–april er Fri Flyts. Ta med sender/mottaker, søkestang og spade, og les terrenget selv: et varsel beskriver regionen, ikke flanken du står i."
     }
    ],
-   "caption": "744 høydemeter og 3,34 km fra Skorgedalen om Kjerringhaugen og den sørlige fortoppen, med skoggrensa på 556 moh og det bratteste — 27,7 grader mellom 937 og 960 moh — oppe på ryggen."
+   "caption": "741 høydemeter og 3,13 km fra Skorgedalen om Kjerringhaugen og den sørlige fortoppen, med skoggrensa på 483 moh og det bratteste — 27,7 grader mellom 937 og 960 moh — oppe på ryggen."
   },
   "en": {
-   "intro": "744 metres of ascent over 3.34 km from the car park in Skorgedalen to one of Romsdalen's great classics — the tour ut.no calls one of the shortest in the area and still one of the big ones. Fri Flyt rates it KAST 1 – Simple with the steepest point under 30 degrees, and the finished line stays inside that: the steepest 100 m band measures 20.5 degrees between 400 and 500 m, the steepest sustained stretch 27.7. What needs your head is not the line up but the east flank below the fore-summit — the one the source itself tells you not to cross.",
+   "intro": "741 metres of ascent over 3.13 km from the car park in Skorgedalen to one of Romsdalen's great classics — the tour ut.no calls one of the shortest in the area and still one of the big ones. Fri Flyt rates it KAST 1 – Simple with the steepest point under 30 degrees, and the finished line stays inside that: the steepest 100 m band measures 20.5 degrees between 400 and 500 m, the steepest sustained stretch 27.7. What needs your head is not the line up but the east flank below the fore-summit — the one the source itself tells you not to cross.",
    "ascent": [
-    "From the car park in Skorgedalen, 307 m on the toll road from Skorga on the E136 — open in winter, and mapped as a car park in OSM. From its north-west corner you cross the flat — bog in Kartverket's classes, 350 m where the line takes it — north of Kjerringhaugen and the DNT hut Skorgedalsbu. Then up through the birch forest: the band from 400 to 500 m is the steepest of the tour, 20.5 degrees over 295 metres of ground, and the forest ends at 556 m after 1.35 km, with open ground from 557.",
+    "From the car park in Skorgedalen, 307 m on the toll road from Skorga on the E136 — open in winter, and mapped as a car park in OSM. From its north-west corner you cross the flat — bog in Kartverket's classes, 350 m where the line takes it — north of Kjerringhaugen and the DNT hut Skorgedalsbu. Then up through the birch forest: the band from 400 to 500 m is the steepest of the tour, 20.5 degrees over 295 metres of ground, and the forest ends at 483 m after 0.99 km, with open ground from 494.",
     "Above the treeline you round the south side of point 588 and follow a faint ridge formation — 572 m where the line takes it — towards Skarven's southern fore-summit at 788. The bands here measure 16.4 degrees from 600 to 700 m and 15.7 from 700 to 800: even skinning on an open ridge, with the view growing east into Romsdalen and west over Romsdalsfjorden towards Molde.",
     "From the fore-summit the ridge continues over 892 m to the cairn. The steepest sustained stretch of the whole tour is here — 27.7 degrees between 937 and 960 m — and the band from 900 to 1000 measures 19.3 degrees. The cairn stands at 1048 m: Fri Flyt's published GPS point, the name register's mountain and the terrain model's 1048.1 coincide to the metre."
    ],
@@ -7773,7 +7773,7 @@
      "body": "Skarven lies in the Romsdal forecast region, an A-region with a daily avalanche bulletin through the season — check varsom.no. The December–April season is Fri Flyt's. Bring a transceiver, probe and shovel, and read the terrain yourself: a bulletin describes the region, not the flank you are standing in."
     }
    ],
-   "caption": "744 metres of ascent and 3.34 km from Skorgedalen past Kjerringhaugen and the southern fore-summit, with the treeline at 556 m and the steepest ground — 27.7 degrees between 937 and 960 m — up on the ridge."
+   "caption": "741 metres of ascent and 3.13 km from Skorgedalen past Kjerringhaugen and the southern fore-summit, with the treeline at 483 m and the steepest ground — 27.7 degrees between 937 and 960 m — up on the ridge."
   }
  },
  "blanebba": {
@@ -7784,9 +7784,9 @@
    "https://www.randofolk.no/artikler/topptur-til-blanebba-i-isfjorden/"
   ],
   "no": {
-   "intro": "937 høydemeter og 4,04 km fra Venjesdalssetra til kanten som ser rett ned i Romsdalen — fra varden har du Trollveggen, Romsdalshorn og Vengetindene på første rad. Fri Flyt gir turen KAST 2 – Utfordrende med bratteste punkt 40 grader i toppryggen; linja her tar det slakere alternativet kilden selv beskriver, om skaret på 1245 moh, og måler 22,2 grader i bratteste hundremetersbelte og 27,4 i bratteste sammenhengende parti. Kanten du står på til slutt faller 71 grader — den er utsikten, og den er faren.",
+   "intro": "950 høydemeter og 3,95 km fra Venjesdalssetra til kanten som ser rett ned i Romsdalen — fra varden har du Trollveggen, Romsdalshorn og Vengetindene på første rad. Fri Flyt gir turen KAST 2 – Utfordrende med bratteste punkt 40 grader i toppryggen; linja her tar det slakere alternativet kilden selv beskriver, om skaret på 1245 moh, og måler 22,2 grader i bratteste hundremetersbelte og 27,4 i bratteste sammenhengende parti. Kanten du står på til slutt faller 71 grader — den er utsikten, og den er faren.",
    "ascent": [
-    "Fra parkeringa der bomvegen opp Venjesdalen ender, ved Venjesdalssetra — OSM har setra som eget punkt, og DTM1 leser 418 moh der Fri Flyt oppgir 380. Du går sørover etter Romsdalseggen-merkinga gjennom rydda skoggater på nordsida av Tverrelva: beltet fra 400 til 500 moh måler bare 7,2 grader, og skogen slutter allerede på 553 moh etter 1,2 km, med åpent område fra 559.",
+    "Fra parkeringa der bomvegen opp Venjesdalen ender, ved Venjesdalssetra — OSM har setra som eget punkt, og DTM1 leser 418 moh der Fri Flyt oppgir 380. Du går sørover etter Romsdalseggen-merkinga gjennom rydda skoggater på nordsida av Tverrelva: beltet fra 400 til 500 moh måler 11,1 grader, og skogen slutter allerede på 572 moh etter 1,13 km, med åpent område fra 576.",
     "Over skoggrensa åpner flata mellom Blånebba og Storhesten seg — 681 moh der linja krysser. Herfra holder du vestover i slak stigning til du finner nordøstflanken som leder opp mot det laveste punktet på ryggen mellom Blånebba og punkt 1178. Flanken er turens bratteste del: beltet fra 800 til 900 moh måler 22,2 grader over 269 meter grunn, og det bratteste sammenhengende partiet ligger her, 27,4 grader mellom 972 og 999 moh.",
     "Skaret leser 1245 moh på terrengmodellen, 230 meter vest-nordvest for toppen, og hovedryggen følges østover derfra til varden på 1317 — beltet fra 1200 til 1300 måler 17,2 grader. Fri Flyts direkteveg gjennom toppryggen er den andre muligheten, rundt 40 grader ifølge kilden; linja her er traversen han beskriver som det slakere valget rundt 1000 moh. Registeret leser 1272 på representasjonspunktet, toppsøket klatrer til 1317,0 mot publiserte 1320 — et skarpt topp-punkt der laserskannet leser tre meter under den publiserte høyden, samme klasse som Rørnestinden."
    ],
@@ -7812,12 +7812,12 @@
      "body": "Blånebba ligger i varslingsregionen Romsdal, en A-region med daglig skredvarsel gjennom sesongen — sjekk varsom.no. Ta med sender/mottaker, søkestang og spade, og les terrenget selv: et varsel beskriver regionen, ikke flanken du står i."
     }
    ],
-   "caption": "937 høydemeter og 4,04 km fra Venjesdalssetra om flata under Storhesten og skaret på 1245 moh, med skoggrensa på 553 moh og det bratteste — 27,4 grader mellom 972 og 999 moh — i nordøstflanken."
+   "caption": "950 høydemeter og 3,95 km fra Venjesdalssetra om flata under Storhesten og skaret på 1245 moh, med skoggrensa på 572 moh og det bratteste — 27,4 grader mellom 972 og 999 moh — i nordøstflanken."
   },
   "en": {
-   "intro": "937 metres of ascent over 4.04 km from Venjesdalssetra to the edge that looks straight down into Romsdalen — from the cairn you have Trollveggen, Romsdalshorn and the Vengetind peaks in the front row. Fri Flyt rates the tour KAST 2 – Challenging with a steepest point of 40 degrees in the summit ridge; the line here takes the gentler alternative the source itself describes, via the col at 1245 m, and measures 22.2 degrees in its steepest hundred-metre band and 27.4 in its steepest sustained stretch. The edge you finally stand on falls 71 degrees — it is the view, and it is the hazard.",
+   "intro": "950 metres of ascent over 3.95 km from Venjesdalssetra to the edge that looks straight down into Romsdalen — from the cairn you have Trollveggen, Romsdalshorn and the Vengetind peaks in the front row. Fri Flyt rates the tour KAST 2 – Challenging with a steepest point of 40 degrees in the summit ridge; the line here takes the gentler alternative the source itself describes, via the col at 1245 m, and measures 22.2 degrees in its steepest hundred-metre band and 27.4 in its steepest sustained stretch. The edge you finally stand on falls 71 degrees — it is the view, and it is the hazard.",
    "ascent": [
-    "From the parking where the toll road up Venjesdalen ends, at Venjesdalssetra — OSM maps the setra as its own node, and DTM1 reads 418 m where Fri Flyt gives 380. You head south following the Romsdalseggen markers through cleared forest lanes on the north side of Tverrelva: the band from 400 to 500 m measures only 7.2 degrees, and the forest ends already at 553 m after 1.2 km, with open ground from 559.",
+    "From the parking where the toll road up Venjesdalen ends, at Venjesdalssetra — OSM maps the setra as its own node, and DTM1 reads 418 m where Fri Flyt gives 380. You head south following the Romsdalseggen markers through cleared forest lanes on the north side of Tverrelva: the band from 400 to 500 m measures 11.1 degrees, and the forest ends already at 572 m after 1.13 km, with open ground from 576.",
     "Above the treeline the flat between Blånebba and Storhesten opens up — 681 m where the line crosses. From here you hold west in gentle climbing until you find the north-east flank leading up towards the lowest point on the ridge between Blånebba and point 1178. The flank is the steepest part of the tour: the band from 800 to 900 m measures 22.2 degrees over 269 metres of ground, and the steepest sustained stretch is here, 27.4 degrees between 972 and 999 m.",
     "The col reads 1245 m on the terrain model, 230 metres west-north-west of the summit, and the main ridge is followed east from there to the cairn at 1317 — the band from 1200 to 1300 measures 17.2 degrees. Fri Flyt's direct line through the summit ridge is the other option, around 40 degrees by the source; the line here is the traverse it describes as the gentler choice around 1000 m. The register point reads 1272; the summit search climbs to 1317.0 against a published 1320 — a sharp top where the laser scan reads three metres below the published height, the same class as Rørnestinden."
    ],
@@ -7843,7 +7843,7 @@
      "body": "Blånebba lies in the Romsdal forecast region, an A-region with a daily avalanche bulletin through the season — check varsom.no. Bring a transceiver, probe and shovel, and read the terrain yourself: a bulletin describes the region, not the flank you are standing in."
     }
    ],
-   "caption": "937 metres of ascent and 4.04 km from Venjesdalssetra via the flat below Storhesten and the col at 1245 m, with the treeline at 553 m and the steepest ground — 27.4 degrees between 972 and 999 m — in the north-east flank."
+   "caption": "950 metres of ascent and 3.95 km from Venjesdalssetra via the flat below Storhesten and the col at 1245 m, with the treeline at 572 m and the steepest ground — 27.4 degrees between 972 and 999 m — in the north-east flank."
   }
  },
  "mjolvafjellet": {
@@ -7923,9 +7923,9 @@
    "https://morotur.no/tur/OEspetinden"
   ],
   "no": {
-   "intro": "1061 høydemeter og 6,88 km fra bomkassa på Venås til pyramiden innerst i Måndalen — fjellet du ser reise seg foran deg fra første steg, sier morotur. Fri Flyt gir turen KAST 2 – Utfordrende med bratteste punkt rundt 35 grader øverst i botnen; linja her trekker ut på nordøstryggen fra flata på rundt 900 moh, slik kilden anbefaler for skred, og måler 22,4 grader i bratteste hundremetersbelte og 25,6 i bratteste sammenhengende parti. Toppen er ofte snøfri — skiene settes vanligvis igjen noen meter under den.",
+   "intro": "1077 høydemeter og 7,14 km fra bomkassa på Venås til pyramiden innerst i Måndalen — fjellet du ser reise seg foran deg fra første steg, sier morotur. Fri Flyt gir turen KAST 2 – Utfordrende med bratteste punkt rundt 35 grader øverst i botnen; linja her trekker ut på nordøstryggen fra flata på rundt 900 moh, slik kilden anbefaler for skred, og måler 22,4 grader i bratteste hundremetersbelte og 25,6 i bratteste sammenhengende parti. Toppen er ofte snøfri — skiene settes vanligvis igjen noen meter under den.",
    "ascent": [
-    "Fra bomkassa ved gården Venås innerst i Måndalen, 201 moh, følger du bomveien til Venåssetra — beltene fra 200 til 400 moh måler 3,0 og 3,7 grader over nesten tre og en halv kilometer veg, jevn og fin stigning innover dalen. Setra er et godt hvilepunkt på finværsdager, sier morotur. Terrengmodellen leser 393 moh der; Fri Flyts «ca 700» for setra er feil, registeret og terrengmodellen er enige.",
+    "Fra bomkassa ved gården Venås innerst i Måndalen, 201 moh, følger du bomveien til Venåssetra — beltene fra 200 til 400 moh måler 3,0 og 3,2 grader over drøyt tre og en halv kilometer veg, jevn og fin stigning innover dalen. Setra er et godt hvilepunkt på finværsdager, sier morotur. Terrengmodellen leser 393 moh der; Fri Flyts «ca 700» for setra er feil, registeret og terrengmodellen er enige.",
     "Fra setra går du rett vest over myra — 414 moh — og krysser Stavvasselva, så sikter du mot den store østvendte botnen. Skogen slutter på 694 moh etter 4,77 km, men linja streifer skogholt helt opp til 805 moh og er åpen for godt fra 813, og botnen har jevnt stigende bratthet: 15,4 grader fra 600 til 700 moh, og så turens bratteste belte, 22,4 grader fra 700 til 800 over 225 meter grunn, med det bratteste sammenhengende partiet — 25,6 grader — mellom 764 og 779 moh.",
     "Fra flata på rundt 900 moh — 948 der linja tar den — er det vanlig å trekke ut mot nordøstryggen, og det er det linja gjør: beltet fra 900 til 1000 måler bare 8,5 grader på traversen ut. Ryggen tar deg vestover mot varden — 19,0 grader fra 1100 til 1200 — med utsikten over fjordene mot Molde og havet bak deg. Registeret leser 1203 på representasjonspunktet; toppsøket klatrer til 1227,5 mot publiserte 1228. Selve toppen er ofte avblåst med bart berg og hardpakke — det første 60-metersvinduet ned nordøstryggen måler 45,3 grader, så skiene blir stående der du satte dem."
    ],
@@ -7951,12 +7951,12 @@
      "body": "Øspetinden ligger i varslingsregionen Romsdal, en A-region med daglig skredvarsel gjennom sesongen — sjekk varsom.no. Sesongen desember–mai er Fri Flyts. Ta med sender/mottaker, søkestang og spade, og les terrenget selv: et varsel beskriver regionen, ikke flanken du står i."
     }
    ],
-   "caption": "1061 høydemeter og 6,88 km fra Venås om Venåssetra og den østvendte botnen, med skoggrensa på 805 moh og det bratteste — 25,6 grader mellom 764 og 779 moh — i botnen."
+   "caption": "1077 høydemeter og 7,14 km fra Venås om Venåssetra og den østvendte botnen, med skoggrensa på 805 moh og det bratteste — 25,6 grader mellom 764 og 779 moh — i botnen."
   },
   "en": {
-   "intro": "1061 metres of ascent over 6.88 km from the toll booth at Venås to the pyramid at the head of Måndalen — the mountain you see rising ahead of you from the first step, says morotur. Fri Flyt rates the tour KAST 2 – Challenging with a steepest point around 35 degrees at the top of the bowl; the line here pulls out onto the north-east ridge from the flat at about 900 m, as the source recommends with avalanches in mind, and measures 22.4 degrees in its steepest 100 m band and 25.6 in its steepest sustained stretch. The summit itself is often snow-free — skis are usually left a few metres below it.",
+   "intro": "1077 metres of ascent over 7.14 km from the toll booth at Venås to the pyramid at the head of Måndalen — the mountain you see rising ahead of you from the first step, says morotur. Fri Flyt rates the tour KAST 2 – Challenging with a steepest point around 35 degrees at the top of the bowl; the line here pulls out onto the north-east ridge from the flat at about 900 m, as the source recommends with avalanches in mind, and measures 22.4 degrees in its steepest 100 m band and 25.6 in its steepest sustained stretch. The summit itself is often snow-free — skis are usually left a few metres below it.",
    "ascent": [
-    "From the toll booth at the Venås farm at the head of Måndalen, 201 m, you follow the toll road to Venåssetra — the bands from 200 to 400 m measure 3.0 and 3.7 degrees over nearly three and a half kilometres of road, an even, easy climb up the valley. The setra is a good resting place on fine days, says morotur. The terrain model reads 393 m there; Fri Flyt's “about 700” for the setra is wrong, and the register and the terrain model agree.",
+    "From the toll booth at the Venås farm at the head of Måndalen, 201 m, you follow the toll road to Venåssetra — the bands from 200 to 400 m measure 3.0 and 3.2 degrees over just over three and a half kilometres of road, an even, easy climb up the valley. The setra is a good resting place on fine days, says morotur. The terrain model reads 393 m there; Fri Flyt's “about 700” for the setra is wrong, and the register and the terrain model agree.",
     "From the setra you head due west across the bog — 414 m — and cross Stavvasselva, then aim for the big east-facing bowl. The forest ends at 694 m after 4.77 km, but the line clips stands of trees up to 805 m and is open for good from 813, and the bowl steepens evenly: 15.4 degrees from 600 to 700 m, then the tour's steepest band, 22.4 degrees from 700 to 800 over 225 metres of ground, with the steepest sustained stretch — 25.6 degrees — between 764 and 779 m.",
     "From the flat at about 900 m — 948 where the line takes it — the usual move is out onto the north-east ridge, and that is what the line does: the band from 900 to 1000 measures only 8.5 degrees on the traverse out. The ridge takes you west towards the cairn — 19.0 degrees from 1100 to 1200 — with the view over the fjords towards Molde and the sea at your back. The register point reads 1203; the summit search climbs to 1227.5 against a published 1228. The top itself is often wind-scoured, bare rock and hardpack — the first 60 m window down the north-east ridge measures 45.3 degrees, so the skis stay where you left them."
    ],
@@ -7982,7 +7982,7 @@
      "body": "Øspetinden lies in the Romsdal forecast region, an A-region with a daily avalanche bulletin through the season — check varsom.no. The December–May season is Fri Flyt's. Bring a transceiver, probe and shovel, and read the terrain yourself: a bulletin describes the region, not the flank you are standing in."
     }
    ],
-   "caption": "1061 metres of ascent and 6.88 km from Venås via Venåssetra and the east-facing bowl, with the treeline at 805 m and the steepest ground — 25.6 degrees between 764 and 779 m — in the bowl."
+   "caption": "1077 metres of ascent and 7.14 km from Venås via Venåssetra and the east-facing bowl, with the treeline at 805 m and the steepest ground — 25.6 degrees between 764 and 779 m — in the bowl."
   },
   "problems": [
    "CARD ROUND (treeline re-read): guide_facts.json rebuilt from scratch reads the treeline at 805 m, first open 813 m, last forest 5.06 km out; the guide said 668 / 681 / 4.68 km. DTM1 class at every vertex today: Skog to 694 m (4.77 km out), ÅpentOmråde at 707, Skog 727–743, ÅpentOmråde 760–779, Skog 800–805 (5.06 km), ÅpentOmråde from 813 — so «åpent område fra 681» was false against the current classes (681–694 read Skog). The treeline round had already seen stands above the belt on this line. Ascent and caption renumbered in both languages: belt to 694 m after 4.77 km, stands clipped to 805, open for good from 813."
@@ -7996,10 +7996,10 @@
    "http://geirmhafs.blogspot.com/2019/07/middagstinden-1569-innfjorden-i-romsdal.html"
   ],
   "no": {
-   "intro": "1308 høydemeter og 6,39 km fra Herdslan i Innfjorden til en alpin topp som er bratt på alle kanter — Fri Flyt gir turen KAST 3 – Komplekst med bratteste punkt 39 grader, og normalveien kjennes luftig og eksponert. Linja måler 25,1 grader i bratteste hundremetersbelte og 30,0 i det bratteste sammenhengende partiet, som er de siste metrene opp den vestvendte toppflanken. Eggen dit er ofte avblåst: ski på sekken, og stegjern og isøks kan trengs. Dette er rundens alvorligste tur, og den sier det selv.",
+   "intro": "1272 høydemeter og 6,02 km fra Herdslan i Innfjorden til en alpin topp som er bratt på alle kanter — Fri Flyt gir turen KAST 3 – Komplekst med bratteste punkt 39 grader, og normalveien kjennes luftig og eksponert. Linja måler 25,1 grader i bratteste hundremetersbelte og 30,0 i det bratteste sammenhengende partiet, som er de siste metrene opp den vestvendte toppflanken. Eggen dit er ofte avblåst: ski på sekken, og stegjern og isøks kan trengs. Dette er rundens alvorligste tur, og den sier det selv.",
    "ascent": [
     "Fra Herdslan på bomvegen mot Bøstølen — registerets Herdslan er ei slette ved veien, og myrflata der bilene står leser 348,7 moh mot Fri Flyts oppgitte 360. Veien følges vestover på sørsiden av Berillvatnet, som er regulert: linja runder hele vannet på land, om vestenden på 403 moh, og krysser elva vest for vatnet på egnet sted slik kilden sier — 390 moh der linja tar den. Beltet fra 300 til 400 moh måler 1,3 grader over 2,4 km veg.",
-    "Fra skogen vest for vatnet — 410 moh — går det opp bekkedalen mot skaret øst for punkt 943, ved Tindevatnet. Skogen slutter på 740 moh etter 3,68 km, med åpent område fra 759, og dalen bratner jevnt: 21,0 grader fra 500 til 600 moh, 19,2 fra 600 til 700 og turens bratteste belte, 25,1 grader over 170 meter grunn, fra 700 til 800. Øvre del av bekkedalen er bratt og skredutsatt — det er kildens egen formulering, og det er her turen krever sin stabilitet.",
+    "Fra skogen vest for vatnet — 410 moh — går det opp bekkedalen mot skaret øst for punkt 943, ved Tindevatnet. Skogen slutter på 740 moh etter 3,31 km, med åpent område fra 759, og dalen bratner jevnt: 21,0 grader fra 500 til 600 moh, 19,2 fra 600 til 700 og turens bratteste belte, 25,1 grader over 170 meter grunn, fra 700 til 800. Øvre del av bekkedalen er bratt og skredutsatt — det er kildens egen formulering, og det er her turen krever sin stabilitet.",
     "Skaret leser 937 moh der linja tar det, med Tindevatnet på 804 under deg i vest. Herfra travereres ryggen østover mot toppen — 17,3 grader fra 1000 til 1100, 21,3 fra 1200 til 1300 — og den er lite skredutsatt, men ofte avblåst: skiene på sekken, og stegjern og isøks kan trengs. Når ryggen flater ut nordover kan skiene ofte på igjen langs vestsiden.",
     "Den siste vestvendte flanken før toppen er bratt — 37 grader ifølge Fri Flyt, ofte avblåst, og med liten plass. Linja måler 30,0 grader i det bratteste sammenhengende partiet mellom 1549 og 1568 moh, og beltet fra 1500 til 1600 måler 23,8. Varden står på 1568 moh; registeret leser 1547 på representasjonspunktet, og toppsøket klatrer til 1568,3 mot publiserte 1569. Landet har 49 fjell som heter Middagstinden — dette er Raumas."
    ],
@@ -8025,13 +8025,13 @@
      "body": "Middagstinden ligger i varslingsregionen Romsdal, en A-region med daglig skredvarsel gjennom sesongen — sjekk varsom.no. Sesongen januar–april er Fri Flyts. Ta med sender/mottaker, søkestang og spade i tillegg til stegjern og isøks — og les terrenget selv: et varsel beskriver regionen, ikke flanken du står i."
     }
    ],
-   "caption": "1308 høydemeter og 6,39 km fra Herdslan rundt Berillvatnet og opp bekkedalen til skaret ved Tindevatnet, med skoggrensa på 740 moh og det bratteste — 30,0 grader mellom 1549 og 1568 moh — i den vestvendte toppflanken."
+   "caption": "1272 høydemeter og 6,02 km fra Herdslan rundt Berillvatnet og opp bekkedalen til skaret ved Tindevatnet, med skoggrensa på 740 moh og det bratteste — 30,0 grader mellom 1549 og 1568 moh — i den vestvendte toppflanken."
   },
   "en": {
-   "intro": "1308 metres of ascent over 6.39 km from Herdslan in Innfjorden to an alpine summit that is steep on every side — Fri Flyt rates the tour KAST 3 – Complex with a steepest point of 39 degrees, and the normal route feels airy and exposed. The line measures 25.1 degrees in its steepest 100 m band and 30.0 in its steepest sustained stretch, which is the last metres up the west-facing summit flank. The ridge to it is often wind-scoured: skis on the pack, and crampons and ice axe may be needed. This is the most serious tour of the round, and it says so itself.",
+   "intro": "1272 metres of ascent over 6.02 km from Herdslan in Innfjorden to an alpine summit that is steep on every side — Fri Flyt rates the tour KAST 3 – Complex with a steepest point of 39 degrees, and the normal route feels airy and exposed. The line measures 25.1 degrees in its steepest 100 m band and 30.0 in its steepest sustained stretch, which is the last metres up the west-facing summit flank. The ridge to it is often wind-scoured: skis on the pack, and crampons and ice axe may be needed. This is the most serious tour of the round, and it says so itself.",
    "ascent": [
     "From Herdslan on the toll road towards Bøstølen — the register's Herdslan is a clearing by the road, and the bog flat where the cars stand reads 348.7 m against Fri Flyt's stated 360. The road is followed west along the south side of Berillvatnet, which is a regulated reservoir: the line rounds the whole lake on land, past its west end at 403 m, and crosses the river west of the lake at a suitable spot as the source says — 390 m where the line takes it. The band from 300 to 400 m measures 1.3 degrees over 2.4 km of road.",
-    "From the forest west of the lake — 410 m — the route climbs the stream gully towards the col east of point 943, at Tindevatnet. The forest ends at 740 m after 3.68 km, with open ground from 759, and the gully steepens evenly: 21.0 degrees from 500 to 600 m, 19.2 from 600 to 700 and the tour's steepest band, 25.1 degrees over 170 metres of ground, from 700 to 800. The upper part of the gully is steep and avalanche-prone — the source's own words, and this is where the tour demands its stability.",
+    "From the forest west of the lake — 410 m — the route climbs the stream gully towards the col east of point 943, at Tindevatnet. The forest ends at 740 m after 3.31 km, with open ground from 759, and the gully steepens evenly: 21.0 degrees from 500 to 600 m, 19.2 from 600 to 700 and the tour's steepest band, 25.1 degrees over 170 metres of ground, from 700 to 800. The upper part of the gully is steep and avalanche-prone — the source's own words, and this is where the tour demands its stability.",
     "The col reads 937 m where the line takes it, with Tindevatnet at 804 below you to the west. From here the ridge is traversed east towards the summit — 17.3 degrees from 1000 to 1100, 21.3 from 1200 to 1300 — and it is not avalanche terrain to speak of, but often wind-scoured: skis on the pack, and crampons and ice axe may be needed. Where the ridge flattens northward the skis can often go back on along the west side.",
     "The final west-facing flank before the summit is steep — 37 degrees by Fri Flyt, often wind-scoured, and short of space. The line measures 30.0 degrees in its steepest sustained stretch between 1549 and 1568 m, and the band from 1500 to 1600 measures 23.8. The cairn stands at 1568 m; the register point reads 1547, and the summit search climbs to 1568.3 against a published 1569. Norway has 49 mountains called Middagstinden — this is Rauma's."
    ],
@@ -8057,7 +8057,7 @@
      "body": "Middagstinden lies in the Romsdal forecast region, an A-region with a daily avalanche bulletin through the season — check varsom.no. The January–April season is Fri Flyt's. Bring a transceiver, probe and shovel in addition to crampons and ice axe — and read the terrain yourself: a bulletin describes the region, not the flank you are standing in."
     }
    ],
-   "caption": "1308 metres of ascent and 6.39 km from Herdslan around Berillvatnet and up the stream gully to the col at Tindevatnet, with the treeline at 740 m and the steepest ground — 30.0 degrees between 1549 and 1568 m — in the west-facing summit flank."
+   "caption": "1272 metres of ascent and 6.02 km from Herdslan around Berillvatnet and up the stream gully to the col at Tindevatnet, with the treeline at 740 m and the steepest ground — 30.0 degrees between 1549 and 1568 m — in the west-facing summit flank."
   },
   "problems": [
    "SHAPE ROUND (mid-route notches): vertices the coarse solve put on a boulder, a bank or the lip of a step were moved 5-20 m onto ground that reads like their neighbours, and same-height loops of 60-230 m the check had read as spikes were cut; figures re-derived from the line as it now is."
@@ -8070,10 +8070,10 @@
    "http://toppturmania.blogspot.com/2012/01/skardlitinden-857moh-breivikeidets.html"
   ],
   "no": {
-   "intro": "939 høydemeter og 6,36 km fra Sandeggen på Breivikeidet til varden på 857 — en KAST 1-tur med bratteste punkt under 27 grader på selve ruta, der terrenget rundt er historien: elvedalen du følger kan fungere som terrengfelle for skred fra hengene i nord, og rennene på sørøstsiden faller 41 grader i snitt mot dalen du kom fra. Linja samler et hundretall høydemeter mer enn kildens 835, fordi skaret og platået gir tilbake 110 på veien.",
+   "intro": "937 høydemeter og 6,47 km fra Sandeggen på Breivikeidet til varden på 857 — en KAST 1-tur med bratteste punkt under 27 grader på selve ruta, der terrenget rundt er historien: elvedalen du følger kan fungere som terrengfelle for skred fra hengene i nord, og rennene på sørøstsiden faller 41 grader i snitt mot dalen du kom fra. Linja samler et hundretall høydemeter mer enn kildens 835, fordi skaret og platået gir tilbake 110 på veien.",
    "ascent": [
     "Fra skogsvegen ved Sandeggen — 30 moh på Breivikeidvegen, fv. 91, vinteråpen hovedveg — følger du veien inn og tar av langs nordsida av Russevankelva, opp gjennom storsteinet terreng. Beltet fra 100 til 200 moh måler 14,7 grader; skogen slutter allerede på 318 moh etter 2,42 km, med åpent område fra 327.",
-    "På rundt 400 flater det ut inn i Russevankskaret — 452 moh der linja går, og registerets Russevankskaret leser 446. Her er kildens terrengfelle: dalen samler utløp fra hengene i nord, så avstanden til dem er en del av sporvalget. Ved punkt 511 svinger du mot sør-sørøst, og linja gir tilbake det bratteste partiet sitt her — 30,5 grader ned mellom 539 og 516 moh, dippen etter skaret som er grunnen til at turen samler 939 høydemeter der kilden regner 835.",
+    "På rundt 400 flater det ut inn i Russevankskaret — 452 moh der linja går, og registerets Russevankskaret leser 446. Her er kildens terrengfelle: dalen samler utløp fra hengene i nord, så avstanden til dem er en del av sporvalget. Ved punkt 511 svinger du mot sør-sørøst, og linja gir tilbake det bratteste partiet sitt her — 30,5 grader ned mellom 539 og 516 moh, dippen etter skaret som er grunnen til at turen samler 937 høydemeter der kilden regner 835.",
     "Fra svingen stiger det jevnt mot toppplatået: beltet fra 600 til 700 moh er turens bratteste oppover, 21,1 grader over 269 meter grunn, og over 700 slakner det til 13,1 og 8,1. Platået passerer 847 før varden på 857 — Fri Flyts publiserte GPS-punkt, registerets punkt (som har både Skarlitinden og Skardlitinden) og terrengmodellens 857,5 faller sammen."
    ],
    "descent": [
@@ -8098,10 +8098,10 @@
      "body": "Skarlitinden ligger i varslingsregionen Lyngen, en A-region med daglig skredvarsel gjennom sesongen — sjekk varsom.no. Sesongen januar–mai er Fri Flyts. Ta med sender/mottaker, søkestang og spade, og les terrenget selv: et varsel beskriver regionen, ikke flanken du står i."
     }
    ],
-   "caption": "939 høydemeter og 6,36 km fra Sandeggen gjennom Russevankskaret, med skoggrensa på 318 moh og det bratteste — 30,5 grader — i dippen etter punkt 511."
+   "caption": "937 høydemeter og 6,47 km fra Sandeggen gjennom Russevankskaret, med skoggrensa på 318 moh og det bratteste — 30,5 grader — i dippen etter punkt 511."
   },
   "en": {
-   "intro": "939 metres of ascent over 6.36 km from Sandeggen on Breivikeidet to the cairn at 857 — a KAST 1 tour with the steepest point under 27 degrees on the route itself, where the surrounding terrain is the story: the river valley you follow can act as a terrain trap for avalanches off the slopes to the north, and the couloirs on the south-east side fall 41 degrees mean towards the valley you came from. The line collects a hundred-odd vertical metres more than the source's 835, because the col and the plateau give back 110 along the way.",
+   "intro": "937 metres of ascent over 6.47 km from Sandeggen on Breivikeidet to the cairn at 857 — a KAST 1 tour with the steepest point under 27 degrees on the route itself, where the surrounding terrain is the story: the river valley you follow can act as a terrain trap for avalanches off the slopes to the north, and the couloirs on the south-east side fall 41 degrees mean towards the valley you came from. The line collects a hundred-odd vertical metres more than the source's 835, because the col and the plateau give back 110 along the way.",
    "ascent": [
     "From the forest road at Sandeggen — 30 m on Breivikeidvegen, the fv. 91, a winter-open main road — you follow the road in and branch off along the north side of Russevankelva, up through bouldery ground. The band from 100 to 200 m measures 14.7 degrees; the forest ends already at 318 m after 2.42 km, with open ground from 327.",
     "At about 400 it flattens into Russevankskaret — 452 m where the line runs, and the register's Russevankskaret reads 446. Here is the source's terrain trap: the valley collects runouts from the slopes to the north, so your distance from them is part of the track the whole way in. At point 511 you swing south-south-east, and the line gives back its steepest stretch here — 30.5 degrees down between 539 and 516 m, the dip after the col that is why the tour collects 939 vertical metres where the source counts 835.",
@@ -8129,7 +8129,7 @@
      "body": "Skarlitinden lies in the Lyngen forecast region, an A-region with a daily avalanche bulletin through the season — check varsom.no. The January–May season is Fri Flyt's. Bring a transceiver, probe and shovel, and read the terrain yourself: a bulletin describes the region, not the flank you are standing in."
     }
    ],
-   "caption": "939 metres of ascent and 6.36 km from Sandeggen through Russevankskaret, with the treeline at 318 m and the steepest ground — 30.5 degrees — in the dip after point 511."
+   "caption": "939 metres of ascent and 6.47 km from Sandeggen through Russevankskaret, with the treeline at 318 m and the steepest ground — 30.5 degrees — in the dip after point 511."
   }
  },
  "storfjellet": {
@@ -8710,10 +8710,10 @@
    "https://thatadventurer.co.uk/kleppstadheia-lofoten-hiking-guide/"
   ],
   "no": {
-   "intro": "525 høydemeter og 2,19 km fra Kleppstadveien sør for Gimsøybrua — turen Fri Flyt selv bruker som øving i sporvalg: «Bruk av terrenget for å legge fornuftig og godt spor.» Den slake, breie flata mot toppen holder det den lover — 20,9 grader i bratteste hundremetersbelte — og det bratteste sammenhengende partiet, 32,9 grader mellom 111 og 136 moh, ligger nede i skogbrattet. Fra varden ser du Gimsøya, Vestfjorden og Himmeltindan i vest.",
+   "intro": "530 høydemeter og 2,30 km fra Kleppstadveien sør for Gimsøybrua — turen Fri Flyt selv bruker som øving i sporvalg: «Bruk av terrenget for å legge fornuftig og godt spor.» Den slake, breie flata mot toppen holder det den lover — 21,3 grader i bratteste hundremetersbelte — og det bratteste sammenhengende partiet, 27,5 grader mellom 231 og 249 moh, ligger like over skoggrensa. Fra varden ser du Gimsøya, Vestfjorden og Himmeltindan i vest.",
    "ascent": [
-    "Fra parkeringa langs Kleppstadveien på sørsida før Gimsøybrua — 16 moh, med registerets Kleppstad et par hundre meter unna. Du legger sporet opp langs ryggen mot punkt 156: her sitter turens bratteste parti, 32,9 grader mellom 111 og 136 moh, i skogen — beltet fra 100 til 200 måler 20,2 grader, og skogen slutter på 232 moh etter 1,17 km.",
-    "Over skogen er det flata som eier turen: 20,9 grader fra 200 til 300 moh, 19,1 fra 300 til 400, og så slaker det av mot toppen — 7,9 grader i det siste beltet. Brei rygg, valgfritt spor, og terrenget som læremester: hver kul og hvert søkk er en beslutning om hvor sporet skal ligge.",
+    "Fra parkeringa langs Kleppstadveien på sørsida før Gimsøybrua — 16 moh, med registerets Kleppstad et par hundre meter unna. Du legger sporet opp langs ryggen mot punkt 156: stien følger ryggen gjennom skogen — beltet fra 100 til 200 måler 10,3 grader, og skogen slutter på 231 moh etter 1,13 km. Turens bratteste parti, 27,5 grader mellom 231 og 249 moh, ligger like over skoggrensa.",
+    "Over skogen er det flata som eier turen: 21,3 grader fra 200 til 300 moh, 13,2 fra 300 til 400, og så slaker det av mot toppen — 7,9 grader i det siste beltet. Brei rygg, valgfritt spor, og terrenget som læremester: hver kul og hvert søkk er en beslutning om hvor sporet skal ligge.",
     "Varden på 534 — Fri Flyts publiserte GPS-punkt er registerets Kleppstadheia på meteren, og toppsøket løser 533,9. Prominensen er beskjeden, utsikten er det ikke."
    ],
    "descent": [
@@ -8723,7 +8723,7 @@
    "avalanche": [
     {
      "title": "Ruta",
-     "body": "Enkel hos Fri Flyt, bratteste punkt under 30 grader på flata — linjas 32,9-graderssteg ligger i skogen nederst, kort og lesbart. Dette er turen for dager da varselet fraråder bratt terreng, og øvingsturen for alle andre dager."
+     "body": "Enkel hos Fri Flyt, bratteste punkt under 30 grader på flata — linjas bratteste steg, 27,5 grader, ligger like over skoggrensa, kort og lesbart. Dette er turen for dager da varselet fraråder bratt terreng, og øvingsturen for alle andre dager."
     },
     {
      "title": "Kantene",
@@ -8734,13 +8734,13 @@
      "body": "Kleppstadheia ligger i varslingsregionen Lofoten og Vesterålen, en A-region med daglig skredvarsel gjennom sesongen — sjekk varsom.no. Fri Flyt oppgir ingen sesong; jan–apr på kortet er redaksjonell fra naboturene. Ta med sender/mottaker, søkestang og spade — også på øvingsturen."
     }
    ],
-   "caption": "525 høydemeter og 2,19 km fra Kleppstadveien opp ryggen mot punkt 156 og den breie flata, med skoggrensa på 232 moh og det bratteste — 32,9 grader mellom 111 og 136 moh — nede i skogen."
+   "caption": "530 høydemeter og 2,30 km fra Kleppstadveien opp ryggen mot punkt 156 og den breie flata, med skoggrensa på 231 moh og det bratteste — 27,5 grader mellom 231 og 249 moh — like over skogen."
   },
   "en": {
-   "intro": "525 metres of ascent over 2.19 km from Kleppstadveien south of the Gimsøy bridge — the tour Fri Flyt itself uses to practise track-setting: “using the terrain to set a sensible, good track.” The gentle, broad field towards the summit keeps that promise — 20.9 degrees in the steepest 100 m band — and the steepest sustained stretch, 32.9 degrees between 111 and 136 m, sits down in the forest step. From the cairn you see Gimsøya, Vestfjorden and Himmeltindan to the west.",
+   "intro": "530 metres of ascent over 2.30 km from Kleppstadveien south of the Gimsøy bridge — the tour Fri Flyt itself uses to practise track-setting: “using the terrain to set a sensible, good track.” The gentle, broad field towards the summit keeps that promise — 21.3 degrees in the steepest 100 m band — and the steepest sustained stretch, 27.5 degrees between 231 and 249 m, sits just above the treeline. From the cairn you see Gimsøya, Vestfjorden and Himmeltindan to the west.",
    "ascent": [
-    "From the parking along Kleppstadveien on the south side before the Gimsøy bridge — 16 m, with the register's Kleppstad a couple of hundred metres away. You set the track up the ridge towards point 156: the tour's steepest stretch sits here, 32.9 degrees between 111 and 136 m, in the forest — the band from 100 to 200 measures 20.2 degrees, and the forest ends at 232 m after 1.17 km.",
-    "Above the forest the field owns the tour: 20.9 degrees from 200 to 300 m, 19.1 from 300 to 400, then it eases towards the top — 7.9 degrees in the last band. Broad ridge, track wherever you choose, and the terrain as the teacher: every knoll and hollow is a decision about where the track should lie.",
+    "From the parking along Kleppstadveien on the south side before the Gimsøy bridge — 16 m, with the register's Kleppstad a couple of hundred metres away. You set the track up the ridge towards point 156: the path follows the ridge through the forest — the band from 100 to 200 measures 10.3 degrees, and the forest ends at 231 m after 1.13 km. The tour's steepest stretch, 27.5 degrees between 231 and 249 m, sits just above the treeline.",
+    "Above the forest the field owns the tour: 21.3 degrees from 200 to 300 m, 13.2 from 300 to 400, then it eases towards the top — 7.9 degrees in the last band. Broad ridge, track wherever you choose, and the terrain as the teacher: every knoll and hollow is a decision about where the track should lie.",
     "The cairn at 534 — Fri Flyt's published GPS point is the register's Kleppstadheia to the metre, and the summit search resolves 533.9. The prominence is modest; the view is not."
    ],
    "descent": [
@@ -8750,7 +8750,7 @@
    "avalanche": [
     {
      "title": "The route",
-     "body": "Simple by Fri Flyt, steepest point under 30 degrees on the field — the line's 32.9-degree step sits in the forest at the bottom, short and readable. This is the tour for days when the bulletin advises against steep terrain, and the practice tour for every other day."
+     "body": "Simple by Fri Flyt, steepest point under 30 degrees on the field — the line's steepest step, 27.5 degrees, sits just above the treeline, short and readable. This is the tour for days when the bulletin advises against steep terrain, and the practice tour for every other day."
     },
     {
      "title": "The edges",
@@ -8761,7 +8761,7 @@
      "body": "Kleppstadheia lies in the Lofoten og Vesterålen forecast region, an A-region with a daily avalanche bulletin through the season — check varsom.no. Fri Flyt gives no season; the Jan–Apr on the card is editorial from the neighbouring tours. Bring a transceiver, probe and shovel — on the practice tour too."
     }
    ],
-   "caption": "525 metres of ascent and 2.19 km from Kleppstadveien up the ridge towards point 156 and the broad field, with the treeline at 232 m and the steepest ground — 32.9 degrees between 111 and 136 m — down in the forest."
+   "caption": "530 metres of ascent and 2.30 km from Kleppstadveien up the ridge towards point 156 and the broad field, with the treeline at 231 m and the steepest ground — 27.5 degrees between 231 and 249 m — just above the forest."
   }
  },
  "skjomtinden": {
@@ -9485,11 +9485,11 @@
    "https://ut.no/turforslag/1111727/topptur-til-stertinden"
   ],
   "no": {
-   "intro": "1116 høydemeter og 6,12 km fra Sandtorg idrettsanlegg på Årbogen til Tjeldsunds høyeste — staket fra 500 moh, med telefonstolpene som los de siste 200 høydemetrene og nødbu på ryggen ved 700. Det bratteste hundremetersbeltet måler 21,2 grader mellom 900 og 1000 moh, det bratteste sammenhengende partiet 26,9 mellom 827 og 850 — KAST 1 hos Fri Flyt, og målingen er enig. Toppens bratte sider finnes, men de vender sør og vest, dit normalruta ikke går.",
+   "intro": "1095 høydemeter og 5,86 km fra Sandtorg idrettsanlegg på Årbogen til Tjeldsunds høyeste — staket fra 500 moh, med telefonstolpene som los de siste 200 høydemetrene og nødbu på ryggen ved 700. Det bratteste hundremetersbeltet måler 21,2 grader mellom 900 og 1000 moh, det bratteste sammenhengende partiet 26,9 mellom 827 og 850 — KAST 1 hos Fri Flyt, og målingen er enig. Toppens bratte sider finnes, men de vender sør og vest, dit normalruta ikke går.",
    "ascent": [
-    "Fra den store parkeringsplassen ved Sandtorg idrettsanlegg — 15 moh, og rundens eneste startplass med kartlagt parkering i OSM — følger du traktorveien på sørsida av Årbogelva, 63 moh der linja bruker den. Skogen slutter allerede på 348 moh etter 2,86 km; beltet fra 200 til 300 moh måler 5,2 grader, så innmarsjen er slak.",
+    "Fra den store parkeringsplassen ved Sandtorg idrettsanlegg — 15 moh, og rundens eneste startplass med kartlagt parkering i OSM — følger du traktorveien på sørsida av Årbogelva, 63 moh der linja bruker den. Skogen slutter allerede på 349 moh etter 2,56 km; beltet fra 200 til 300 moh måler 8,1 grader, så innmarsjen er slak.",
     "Årbogvatnet passeres på sørsida — vatnet ligger på 258 moh og er Innsjø i terrengmodellen, og linja holder land hele veien. Så tar østryggen over: 522 moh der ruta står på den, forbi nødbua — linja passerer den på 653 — og videre til 785. Fra 500 moh er ruta staket, og de siste 200 høydemetrene følger telefonstolpene til sambandsanlegget.",
-    "Beltet fra 800 til 900 måler 20,5 grader og beltet fra 900 til 1000 er turens bratteste med 21,2 — det bratteste enkeltpartiet, 26,9 grader mellom 827 og 850 moh, ligger der ryggen reiser seg mot platået. Varden og de låste sambandsbyggene står på 1095 — registeret løser 1094,9 — og dronefoto er forbudt på toppen etter NSM-regelverket. Ryggen gir bare tilbake 36 meter på hele turen."
+    "Beltet fra 800 til 900 måler 20,5 grader og beltet fra 900 til 1000 er turens bratteste med 21,2 — det bratteste enkeltpartiet, 26,9 grader mellom 827 og 850 moh, ligger der ryggen reiser seg mot platået. Varden og de låste sambandsbyggene står på 1095 — registeret løser 1094,9 — og dronefoto er forbudt på toppen etter NSM-regelverket. Ryggen gir bare tilbake 15 meter på hele turen."
    ],
    "descent": [
     "Samme vei ned: 15–25 grader i hovedsak hos Fri Flyt, og målingen bekrefter at ingen hundremeter langs linja passerer 21,2 i snitt. Med staking og stolper er dette turen som går i flatt lys — men ryggen er vindutsatt, og hard skare kan gjøre stegjern kjekt å ha.",
@@ -9509,14 +9509,14 @@
      "body": "Sætertinden ligger i varslingsregionen Lofoten og Vesterålen, en A-region med daglig skredvarsel — grensetoppen over Tjeldsundet svarer til det varselet, ikke til Sør-Troms. Sjekk varsom.no. Sesongen februar–april er Fri Flyts. Sender/mottaker, søkestang og spade — og stegjern på skaredager."
     }
    ],
-   "caption": "1116 høydemeter og 6,12 km fra Sandtorg idrettsanlegg langs traktorveien, sør for Årbogvatnet og opp den stakede østryggen — skoggrensa på 348 moh, og det bratteste beltet, 21,2 grader, mellom 900 og 1000 moh."
+   "caption": "1095 høydemeter og 5,86 km fra Sandtorg idrettsanlegg langs traktorveien, sør for Årbogvatnet og opp den stakede østryggen — skoggrensa på 349 moh, og det bratteste beltet, 21,2 grader, mellom 900 og 1000 moh."
   },
   "en": {
-   "intro": "1116 metres of ascent over 6.12 km from the Sandtorg sports ground at Årbogen to Tjeldsund's highest — staked from 500 m, with the telephone poles as pilot for the last 200 vertical metres and an emergency shelter on the ridge at 700. The steepest hundred-metre band measures 21.2 degrees between 900 and 1000 m, the steepest sustained stretch 26.9 between 827 and 850 — KAST 1 by Fri Flyt, and the measurement agrees. The mountain's steep sides exist, but they face south and west, where the normal route does not go.",
+   "intro": "1095 metres of ascent over 5.86 km from the Sandtorg sports ground at Årbogen to Tjeldsund's highest — staked from 500 m, with the telephone poles as pilot for the last 200 vertical metres and an emergency shelter on the ridge at 700. The steepest hundred-metre band measures 21.2 degrees between 900 and 1000 m, the steepest sustained stretch 26.9 between 827 and 850 — KAST 1 by Fri Flyt, and the measurement agrees. The mountain's steep sides exist, but they face south and west, where the normal route does not go.",
    "ascent": [
-    "From the big car park at the Sandtorg sports ground — 15 m, and the round's only start with parking mapped in OSM — follow the tractor road on the south side of Årbogelva, 63 m where the line uses it. The forest ends as early as 348 m after 2.86 km; the band from 200 to 300 m measures 5.2 degrees, so the walk-in is gentle.",
+    "From the big car park at the Sandtorg sports ground — 15 m, and the round's only start with parking mapped in OSM — follow the tractor road on the south side of Årbogelva, 63 m where the line uses it. The forest ends as early as 349 m after 2.56 km; the band from 200 to 300 m measures 8.1 degrees, so the walk-in is gentle.",
     "Årbogvatnet is passed on its south side — the lake sits at 258 m and is classed Innsjø in the terrain model, and the line holds land the whole way. Then the east ridge takes over: 522 m where the route stands on it, past the emergency shelter — the line passes it at 653 — and on to 785. From 500 m the route is staked, and the last 200 vertical metres follow the telephone poles to the communications site.",
-    "The band from 800 to 900 measures 20.5 degrees and the band from 900 to 1000 is the tour's steepest at 21.2 — the steepest single stretch, 26.9 degrees between 827 and 850 m, sits where the ridge rears towards the plateau. The cairn and the locked communications buildings stand at 1095 — the register resolves 1094.9 — and drone photography is prohibited on the summit under NSM rules. The ridge gives back only 36 metres on the whole tour."
+    "The band from 800 to 900 measures 20.5 degrees and the band from 900 to 1000 is the tour's steepest at 21.2 — the steepest single stretch, 26.9 degrees between 827 and 850 m, sits where the ridge rears towards the plateau. The cairn and the locked communications buildings stand at 1095 — the register resolves 1094.9 — and drone photography is prohibited on the summit under NSM rules. The ridge gives back only 15 metres on the whole tour."
    ],
    "descent": [
     "The same way down: mostly 15–25 degrees by Fri Flyt, and the measurement confirms no hundred-metre band along the line passes a mean of 21.2. With the stakes and the poles this is the tour that works in flat light — but the ridge is wind-exposed, and hard crust can make crampons worth having.",
@@ -9536,7 +9536,7 @@
      "body": "Sætertinden lies in the Lofoten og Vesterålen forecast region, an A-region with a daily avalanche bulletin — the border summit above Tjeldsundet answers to that bulletin, not to Sør-Troms. Check varsom.no. The February–April season is Fri Flyt's. Transceiver, probe and shovel — and crampons on crust days."
     }
    ],
-   "caption": "1116 metres of ascent and 6.12 km from the Sandtorg sports ground along the tractor road, south of Årbogvatnet and up the staked east ridge — the treeline at 348 m, and the steepest band, 21.2 degrees, between 900 and 1000 m."
+   "caption": "1095 metres of ascent and 5.86 km from the Sandtorg sports ground along the tractor road, south of Årbogvatnet and up the staked east ridge — the treeline at 349 m, and the steepest band, 21.2 degrees, between 900 and 1000 m."
   }
  },
  "haukebotinden": {
@@ -9740,11 +9740,11 @@
    "https://www.friflyt.no/randonee/turomraade-tjeldsund"
   ],
   "no": {
-   "intro": "1017 høydemeter og 7,40 km fra samme Y-kryss som Kongsviktinden — fire kilometer vinterstengt vei der beltet under 100 moh måler 1,2 grader, så myrene ved Sætran, den brede rampa og platået til toppen med pinakkelen. Det bratteste enkeltpartiet, 31,0 grader mellom 741 og 768 moh, ligger akkurat der rampa møter ryggen — og der skavlen kan stå, sier kilden: hold venstre, mot sør. KAST 2 hos Fri Flyt, alpinøks og stegjern, og et fjell så lite trafikkert at urørt snø er sannsynlig.",
+   "intro": "1014 høydemeter og 7,34 km fra samme Y-kryss som Kongsviktinden — fire kilometer vinterstengt vei der beltet under 100 moh måler 1,2 grader, så myrene ved Sætran, den brede rampa og platået til toppen med pinakkelen. Det bratteste enkeltpartiet, 31,0 grader mellom 741 og 768 moh, ligger akkurat der rampa møter ryggen — og der skavlen kan stå, sier kilden: hold venstre, mot sør. KAST 2 hos Fri Flyt, alpinøks og stegjern, og et fjell så lite trafikkert at urørt snø er sannsynlig.",
    "ascent": [
     "Fra Y-krysset på 25 moh følger du den vinterstengte veien cirka 4 km innover Kongsvikdalen — linja krysser den flettede Kongsvikelva der veien gjør det, på bruene. Ved Sætran tar du til høyre og nordøstover: over myrene på 262 moh, der beltet fra 100 til 200 er turens bratteste hundremeter med 18,0 grader.",
-    "Så kommer rampa: 394 moh der linja tar den, øvre rampa på 502, og skoggrensa på 388 moh etter 5,03 km. Over rampa mot ryggen kan skavlen stå — hold venstre, sør, gjennom partiet, akkurat der det bratteste enkeltpartiet måler 31,0 grader mellom 741 og 768 moh.",
-    "Platået på 720 bærer deg de siste meterne til toppen på 976 — registeret løser 976,0 på grensa mellom Kvæfjord og Tjeldsund. Pinakkelen står nord for varden: M3-klyving for den som vil, med 25 meter tau til rappellen — den er utsikten, ikke turen. 66 meter gir du tilbake underveis."
+    "Så kommer rampa: 394 moh der linja tar den, øvre rampa på 502, og skoggrensa på 388 moh etter 4,97 km. Over rampa mot ryggen kan skavlen stå — hold venstre, sør, gjennom partiet, akkurat der det bratteste enkeltpartiet måler 31,0 grader mellom 741 og 768 moh.",
+    "Platået på 720 bærer deg de siste meterne til toppen på 976 — registeret løser 976,0 på grensa mellom Kvæfjord og Tjeldsund. Pinakkelen står nord for varden: M3-klyving for den som vil, med 25 meter tau til rappellen — den er utsikten, ikke turen. 63 meter gir du tilbake underveis."
    ],
    "descent": [
     "Samme vei ned: 15–30 grader hos Fri Flyt, med fin flyt tilbake mot Kongsvikdalen — og fordi fjellet er lite trafikkert er sjansen god for at linjene dine er de eneste der. I pudder er rampa og myrene sammenhengende kjøring nesten til veien.",
@@ -9764,14 +9764,14 @@
      "body": "Jakobstinden ligger i varslingsregionen Lofoten og Vesterålen, en A-region med daglig skredvarsel gjennom sesongen — sjekk varsom.no. Sesongen januar–april er Fri Flyts. Sender/mottaker, søkestang og spade — og alpinøks og stegjern, som utstyrslista sier."
     }
    ],
-   "caption": "1017 høydemeter og 7,40 km fra Y-krysset i Kongsvik over myrene ved Sætran og opp den brede rampa — skoggrensa på 388 moh, og det bratteste partiet, 31,0 grader mellom 741 og 768 moh, der skavlen kan stå."
+   "caption": "1014 høydemeter og 7,34 km fra Y-krysset i Kongsvik over myrene ved Sætran og opp den brede rampa — skoggrensa på 388 moh, og det bratteste partiet, 31,0 grader mellom 741 og 768 moh, der skavlen kan stå."
   },
   "en": {
-   "intro": "1017 metres of ascent over 7.40 km from the same Y-junction as Kongsviktinden — four kilometres of winter-closed road where the band below 100 m measures 1.2 degrees, then the moors at Sætran, the broad ramp and the plateau to the summit with the pinnacle. The steepest single stretch, 31.0 degrees between 741 and 768 m, sits exactly where the ramp meets the ridge — and where the cornice can stand, says the source: keep left, to the south. KAST 2 by Fri Flyt, ice axe and crampons, and a mountain so little visited that untracked snow is likely.",
+   "intro": "1014 metres of ascent over 7.34 km from the same Y-junction as Kongsviktinden — four kilometres of winter-closed road where the band below 100 m measures 1.2 degrees, then the moors at Sætran, the broad ramp and the plateau to the summit with the pinnacle. The steepest single stretch, 31.0 degrees between 741 and 768 m, sits exactly where the ramp meets the ridge — and where the cornice can stand, says the source: keep left, to the south. KAST 2 by Fri Flyt, ice axe and crampons, and a mountain so little visited that untracked snow is likely.",
    "ascent": [
     "From the Y-junction at 25 m follow the winter-closed road about 4 km into Kongsvikdalen — the line crosses the braided Kongsvikelva where the road does, on the bridges. At Sætran you turn right and north-east: across the moors at 262 m, where the band from 100 to 200 is the tour's steepest hundred metres at 18.0 degrees.",
-    "Then comes the ramp: 394 m where the line takes it, the upper ramp at 502, and the treeline at 388 m after 5.03 km. Above the ramp towards the ridge the cornice can stand — keep left, south, through the section, exactly where the steepest single stretch measures 31.0 degrees between 741 and 768 m.",
-    "The plateau at 720 carries you the last stretch to the summit at 976 — the register resolves 976.0 on the border between Kvæfjord and Tjeldsund. The pinnacle stands north of the cairn: M3 climbing for those who want it, with 25 metres of rope for the rappel — it is the view, not the tour. You give back 66 metres along the way."
+    "Then comes the ramp: 394 m where the line takes it, the upper ramp at 502, and the treeline at 388 m after 4.97 km. Above the ramp towards the ridge the cornice can stand — keep left, south, through the section, exactly where the steepest single stretch measures 31.0 degrees between 741 and 768 m.",
+    "The plateau at 720 carries you the last stretch to the summit at 976 — the register resolves 976.0 on the border between Kvæfjord and Tjeldsund. The pinnacle stands north of the cairn: M3 climbing for those who want it, with 25 metres of rope for the rappel — it is the view, not the tour. You give back 63 metres along the way."
    ],
    "descent": [
     "The same way down: 15–30 degrees by Fri Flyt, with fine flow back towards Kongsvikdalen — and because the mountain sees little traffic, the chances are good your lines are the only ones there. In powder the ramp and the moors are continuous skiing nearly to the road.",
@@ -9791,7 +9791,7 @@
      "body": "Jakobstinden lies in the Lofoten og Vesterålen forecast region, an A-region with a daily avalanche bulletin through the season — check varsom.no. The January–April season is Fri Flyt's. Transceiver, probe and shovel — and ice axe and crampons, as the gear list says."
     }
    ],
-   "caption": "1017 metres of ascent and 7.40 km from the Y-junction at Kongsvik across the moors at Sætran and up the broad ramp — the treeline at 388 m, and the steepest stretch, 31.0 degrees between 741 and 768 m, where the cornice can stand."
+   "caption": "1014 metres of ascent and 7.34 km from the Y-junction at Kongsvik across the moors at Sætran and up the broad ramp — the treeline at 388 m, and the steepest stretch, 31.0 degrees between 741 and 768 m, where the cornice can stand."
   },
   "problems": [
    "SHAPE ROUND: the off-water pass had appended one nudged vertex per wet 2.5 m sample where the road crosses the braided Kongsvikelva, so the line went in circles for 924 of its 8468 m; the pass now inserts one dry vertex per wet run and the tour was re-solved (same corridor, same grid). Gain 1062 -> 1017, distance 8.47 -> 7.40 km, loss 111 -> 66, band under 100 moh 0.9 deg over 4772 m -> 1.2 deg over 3712 m, treeline 388 moh after 5.03 km; card 1060 -> 1020."
@@ -10384,10 +10384,10 @@
    "Skoggrensa: 378 moh etter 2,12 km — guide_facts treeline.last_forest_km."
   ],
   "no": {
-   "intro": "829 høydemeter og 3,97 km fra Grøtavær — lengst fra ferja, med utsikt mot Andøya — til Hattfjellet: toppen løser 857,2 mot publiserte 856. Traktorveien opp Bjørndalen, venstre der det flater, og sørsida til topps; kilden gir sørsida 30–35 grader i nedkjøringa. KAST 2 – Utfordrende med alpinøks og stegjern. Grad 3.",
+   "intro": "827 høydemeter og 3,82 km fra Grøtavær — lengst fra ferja, med utsikt mot Andøya — til Hattfjellet: toppen løser 857,2 mot publiserte 856. Traktorveien opp Bjørndalen, venstre der det flater, og sørsida til topps; kilden gir sørsida 30–35 grader i nedkjøringa. KAST 2 – Utfordrende med alpinøks og stegjern. Grad 3.",
    "ascent": [
-    "Fra veien til skytebanen på Grøtavær — 81 moh der linja tar til — er det bratt fra første meter: beltet fra 0 til 100 måler 26,0 grader over den korte kneika, før traktorveien i Bjørndalen tar over på 121 moh.",
-    "Traktorveien opp Bjørndalen til øvre Bjørndalen på 339 — skoggrensa ligger på 378 etter 2,12 km — og venstre der terrenget flater, på 706 moh slik korridoren står.",
+    "Fra veien til skytebanen på Grøtavær — 81 moh der linja tar til — er det bratt fra første meter: beltet fra 0 til 100 måler 26,0 grader over den korte kneika, før traktorveien i Bjørndalen tar over.",
+    "Traktorveien opp Bjørndalen til øvre Bjørndalen på 339 — skoggrensa ligger på 378 etter 1,98 km — og venstre der terrenget flater, på 706 moh slik korridoren står.",
     "Sørsida til topps fra 800: det bratteste enkeltpartiet på linja, 31,4 grader, ligger allerede mellom 351 og 371 moh nede i lia, og beltet fra 500 til 600 er det bratteste i snitt med 21,6. Varden på 857 har Andøya i horisonten."
    ],
    "descent": [
@@ -10408,13 +10408,13 @@
      "body": "Hattfjellet ligger i varslingsregionen Sør-Troms, en A-region med daglig skredvarsel — for første gang svarer alle ti toppene i runden til samme region. Sjekk varsom.no. Sesongen februar–april er Fri Flyts. Sender/mottaker, søkestang og spade — og alpinøks og stegjern der kilden krever det."
     }
    ],
-   "caption": "829 høydemeter og 3,97 km fra Grøtavær: traktorveien opp Bjørndalen fra 121, venstre der det flater på 706 — og sørsida til varden på 857, med utsikt mot Andøya."
+   "caption": "827 høydemeter og 3,82 km fra Grøtavær: traktorveien opp Bjørndalen, venstre der det flater på 706 — og sørsida til varden på 857, med utsikt mot Andøya."
   },
   "en": {
-   "intro": "829 metres of ascent over 3.97 km from Grøtavær — farthest from the ferry, with Andøya on the horizon — to Hattfjellet: the summit resolves 857.2 against the published 856. The tractor road up Bjørndalen, left where it levels, and the south side to the top; the source gives the south side 30–35 degrees on the descent. KAST 2 – Challenging with ice axe and crampons. Grade 3.",
+   "intro": "827 metres of ascent over 3.82 km from Grøtavær — farthest from the ferry, with Andøya on the horizon — to Hattfjellet: the summit resolves 857.2 against the published 856. The tractor road up Bjørndalen, left where it levels, and the south side to the top; the source gives the south side 30–35 degrees on the descent. KAST 2 – Challenging with ice axe and crampons. Grade 3.",
    "ascent": [
-    "From the road to the shooting range at Grøtavær — 81 m where the line begins — it is steep from the first metre: the band from 0 to 100 measures 26.0 degrees over the short rise, before the tractor road in Bjørndalen takes over at 121 m.",
-    "The tractor road up Bjørndalen to upper Bjørndalen at 339 — the treeline sits at 378 after 2.12 km — then left where the ground levels, at 706 m as the corridor stands.",
+    "From the road to the shooting range at Grøtavær — 81 m where the line begins — it is steep from the first metre: the band from 0 to 100 measures 26.0 degrees over the short rise, before the tractor road in Bjørndalen takes over.",
+    "The tractor road up Bjørndalen to upper Bjørndalen at 339 — the treeline sits at 378 after 1.98 km — then left where the ground levels, at 706 m as the corridor stands.",
     "The south side to the top from 800: the steepest single step on the line, 31.4 degrees, sits already between 351 and 371 m low in the hillside, and the band from 500 to 600 is the steepest on average at 21.6. The cairn at 857 has Andøya on the horizon."
    ],
    "descent": [
@@ -10435,7 +10435,7 @@
      "body": "Hattfjellet sits in the Sør-Troms forecasting region, an A-region with a daily avalanche bulletin — the first round where all ten summits answer to the same region. Check varsom.no. The February–April season is Fri Flyt's. Transceiver, probe and shovel — and ice axe and crampons where the source demands them."
     }
    ],
-   "caption": "829 metres of ascent over 3.97 km from Grøtavær: the tractor road up Bjørndalen from 121, left where it levels at 706 — and the south side to the cairn at 857, with Andøya on the horizon."
+   "caption": "827 metres of ascent over 3.82 km from Grøtavær: the tractor road up Bjørndalen, left where it levels at 706 — and the south side to the cairn at 857, with Andøya on the horizon."
   }
  },
  "slattheia": {
@@ -10774,16 +10774,16 @@
    "SHAPE ROUND (mid-route notches): vertices the coarse solve put on a boulder, a bank or the lip of a step were moved 5-20 m onto ground that reads like their neighbours, and same-height loops of 60-230 m the check had read as spikes were cut; figures re-derived from the line as it now is."
   ],
   "no": {
-   "intro": "1305 høydemeter og 5,59 km fra snuplassen ved Vang til Nordens høyeste øytopp: Langlitinden er Andørjas høyeste, og hele fjellet — fjord til varde — er primærfaktoren. Sommerruta langs Bjørndalselva, flata med vatnet, og traversen på 800–900 der kilden gir skredhistorikk. KAST 3 – Komplekst med alpinøks og stegjern. Grad 4 — for stabile dager.",
+   "intro": "1301 høydemeter og 5,68 km fra snuplassen ved Vang til Nordens høyeste øytopp: Langlitinden er Andørjas høyeste, og hele fjellet — fjord til varde — er primærfaktoren. Sommerruta langs Bjørndalselva, flata med vatnet, og traversen på 800–900 der kilden gir skredhistorikk. KAST 3 – Komplekst med alpinøks og stegjern. Grad 4 — for stabile dager.",
    "ascent": [
-    "Fra snuplassen der Straumbotnveien ender ved Vang — 8 moh — følger du vestsida av Bjørndalselva innover: stien står i linja på 267, og skoggrensa ligger på 435 etter 2,1 km. Beltet fra 400 til 500 er det bratteste i snitt med 21,5 grader, og det bratteste enkeltpartiet, 33,5 grader mellom 496 og 517 moh, ligger i sommerruta opp mot flata.",
+    "Fra snuplassen der Straumbotnveien ender ved Vang — 8 moh — følger du vestsida av Bjørndalselva innover: linja følger stien, og skoggrensa ligger på 435 etter 2,15 km. Beltet fra 400 til 500 er det bratteste i snitt med 21,5 grader, og det bratteste enkeltpartiet, 33,5 grader mellom 496 og 517 moh, ligger i sommerruta opp mot flata.",
     "Over elva og opp sommerruta til flata med det vesle vatnet — 666 moh der linja er festet; vatnet passeres på land. Beltet fra 500 til 600 måler 6,2 grader over den lange flata: pusterommet mellom skogslia og traversen.",
     "Så høyredreining sørover på 800–900 — partiet kilden gir skredhistorikk, og vestflanka måler 39,4 grader i snitt med det bratteste vinduet (52,9) 300–360 m ut fra varden — traversen opp mot 1033-høyden (DTM1 leser 1036,2), og venstre nordover på den store siden til toppen på 1276. De siste 20 metrene kan være avblåst."
    ],
    "descent": [
     "For det meste 20–25 grader hjem, med parti på 35, sier kilden — samme vei som opp, og sørflanka fra varden er den snilleste målingen med 20,5 i snitt. Traversen på 800–900 er stedet der nedturen krever samme fokus som oppturen.",
     "NE og E måler 30,7–31,1 grader i snitt med vindu på 59,6–66,0 rett under varden — Blåisen- og Langlia-linjene bor der. Storeflaska på nordsiden er vedvarende bratt med parti på 45 grader; Lilleflaska, Rytteran, Rytterrenna og Rytterkløfta er de andre variantene. Alt dette er andre turer enn denne.",
-    "Den andre ruta går inn fra Vasskaret i sør: 1148 høydemeter på 6,73 km fra enden av traktorveien, østover mot Mørkevatnet — registerets tjern leser 299 moh der kilden skriver 301, og linja klipper 90 meter av isen på sørenden — og så rett sørover opp Rytterkløfta. Kilden er tydelig på hva det koster: «Kan være mye is første delen så stegjern og øks må tidlig frem men ta med skiene på sekken», og «Sørg for at det er stabile snøforhold når du går opp her siden dette er skredterreng og terrengfelle.» Over kløfta blir det slakere, 30 til 35 grader, til du er på 900 moh; det bratteste 30-metersvinduet på linja er selve sluttstøtet, 37,5 grader mellom 1251 og 1276. Normalruta fra Vang er 1305 høydemeter på 5,59 km med bratteste steg 33,5."
+    "Den andre ruta går inn fra Vasskaret i sør: 1148 høydemeter på 6,73 km fra enden av traktorveien, østover mot Mørkevatnet — registerets tjern leser 299 moh der kilden skriver 301, og linja klipper 90 meter av isen på sørenden — og så rett sørover opp Rytterkløfta. Kilden er tydelig på hva det koster: «Kan være mye is første delen så stegjern og øks må tidlig frem men ta med skiene på sekken», og «Sørg for at det er stabile snøforhold når du går opp her siden dette er skredterreng og terrengfelle.» Over kløfta blir det slakere, 30 til 35 grader, til du er på 900 moh; det bratteste 30-metersvinduet på linja er selve sluttstøtet, 37,5 grader mellom 1251 og 1276. Normalruta fra Vang er 1301 høydemeter på 5,68 km med bratteste steg 33,5."
    ],
    "avalanche": [
     {
@@ -10799,19 +10799,19 @@
      "body": "Langlitinden ligger i varslingsregionen Sør-Troms, en A-region med daglig skredvarsel — som forrige runde svarer alle toppene i runden til samme region. Sjekk varsom.no. Sesongen januar–april er Fri Flyts. Sender/mottaker, søkestang og spade — og alpinøks og stegjern der kilden krever det."
     }
    ],
-   "caption": "1305 høydemeter og 5,59 km fra snuplassen ved Vang: sommerruta langs Bjørndalselva, flata med vatnet på 666 — og traversen på 800–900 mot 1033-høyden, før den store siden til varden på 1276."
+   "caption": "1301 høydemeter og 5,68 km fra snuplassen ved Vang: sommerruta langs Bjørndalselva, flata med vatnet på 666 — og traversen på 800–900 mot 1033-høyden, før den store siden til varden på 1276."
   },
   "en": {
-   "intro": "1305 metres of ascent over 5.59 km from the road end at Vang to the Nordic countries' highest island summit: Langlitinden is Andørja's highest, and the whole mountain — fjord to cairn — is its prominence. The summer route along Bjørndalselva, the flat with the lake, and the traverse at 800–900 where the source records avalanche history. KAST 3 – Complex with ice axe and crampons. Grade 4 — for stable days.",
+   "intro": "1301 metres of ascent over 5.68 km from the road end at Vang to the Nordic countries' highest island summit: Langlitinden is Andørja's highest, and the whole mountain — fjord to cairn — is its prominence. The summer route along Bjørndalselva, the flat with the lake, and the traverse at 800–900 where the source records avalanche history. KAST 3 – Complex with ice axe and crampons. Grade 4 — for stable days.",
    "ascent": [
-    "From the turnaround where Straumbotnveien ends at Vang — 8 m — follow the west side of Bjørndalselva inward: the path stands in the line at 267, and the treeline sits at 435 after 2.1 km. The band from 400 to 500 is the steepest on average at 21.5 degrees, and the steepest single step, 33.5 degrees between 496 and 517 m, sits in the summer route up towards the flat.",
+    "From the turnaround where Straumbotnveien ends at Vang — 8 m — follow the west side of Bjørndalselva inward: the line follows the path, and the treeline sits at 435 after 2.15 km. The band from 400 to 500 is the steepest on average at 21.5 degrees, and the steepest single step, 33.5 degrees between 496 and 517 m, sits in the summer route up towards the flat.",
     "Across the river and up the summer route to the flat with the little lake — 666 m where the line is anchored; the lake is passed on dry land. The band from 500 to 600 measures 6.2 degrees across the long flat: the breather between the forest and the traverse.",
     "Then bear right, south, at 800–900 — the section the source gives avalanche history, and the west flank averages 39.4 degrees with its steepest window (52.9) 300–360 m out from the cairn — the traverse up towards the 1033 knoll (DTM1 reads 1036.2), and left, north, up the broad side to the summit at 1276. The last 20 metres can be wind-stripped."
    ],
    "descent": [
     "Mostly 20–25 degrees home, with sections of 35, says the source — the same way as up, and the south flank off the cairn is the kindest probe at 20.5 on average. The traverse at 800–900 is where the descent demands the same focus as the climb.",
     "NE and E average 30.7–31.1 degrees with windows of 59.6–66.0 right below the cairn — the Blåisen and Langlia lines live there. Storeflaska on the north side is sustained steep with sections of 45 degrees; Lilleflaska, Rytteran, Rytterrenna and Rytterkløfta are the other variants. All of them are other tours than this one.",
-    "The other route comes in from Vasskaret in the south: 1148 metres of ascent over 6.73 km from the end of the tractor road, east towards Mørkevatnet — the register's tarn reads 299 m where the source writes 301, and the line clips 90 metres of ice off its south end — and then straight south up Rytterkløfta. The source is plain about the cost: “there can be a lot of ice on the first part, so crampons and axe come out early and the skis go on the pack”, and “make sure the snow is stable when you climb here, because this is avalanche terrain and a terrain trap”. Above the gully it eases to 30 to 35 degrees until you are at 900 m; the steepest 30-metre window on the line is the summit pull itself, 37.5 degrees between 1251 and 1276. The normal route from Vang is 1305 metres over 5.59 km with a steepest step of 33.5."
+    "The other route comes in from Vasskaret in the south: 1148 metres of ascent over 6.73 km from the end of the tractor road, east towards Mørkevatnet — the register's tarn reads 299 m where the source writes 301, and the line clips 90 metres of ice off its south end — and then straight south up Rytterkløfta. The source is plain about the cost: “there can be a lot of ice on the first part, so crampons and axe come out early and the skis go on the pack”, and “make sure the snow is stable when you climb here, because this is avalanche terrain and a terrain trap”. Above the gully it eases to 30 to 35 degrees until you are at 900 m; the steepest 30-metre window on the line is the summit pull itself, 37.5 degrees between 1251 and 1276. The normal route from Vang is 1301 metres over 5.68 km with a steepest step of 33.5."
    ],
    "avalanche": [
     {
@@ -10827,7 +10827,7 @@
      "body": "Langlitinden sits in the Sør-Troms forecasting region, an A-region with a daily avalanche bulletin — like last round, every summit in the round answers to the same region. Check varsom.no. The January–April season is Fri Flyt's. Transceiver, probe and shovel — and ice axe and crampons where the source demands them."
     }
    ],
-   "caption": "1305 metres of ascent over 5.59 km from the road end at Vang: the summer route along Bjørndalselva, the flat with the lake at 666 — and the traverse at 800–900 towards the 1033 knoll, before the broad side to the cairn at 1276."
+   "caption": "1301 metres of ascent over 5.68 km from the road end at Vang: the summer route along Bjørndalselva, the flat with the lake at 666 — and the traverse at 800–900 towards the 1033 knoll, before the broad side to the cairn at 1276."
   }
  },
  "skartinden": {
@@ -12131,11 +12131,11 @@
    "Skoggrensa: 375 moh etter 1,35 km — guide_facts treeline.last_forest_km."
   ],
   "no": {
-   "intro": "470 høydemeter og 2,24 km fra fotballbanen ved Krafthallen til Heia — den gamle alpinbakken i Harstad, og den turen byen faktisk går. Kilden skriver at det som regel står lys i bakken om kvelden når det er snø, og at fjellet har effektive høydemeter og en hytte underveis som er verdt mer enn et besøk. KAST 1 – Enkelt. Grad 1.",
+   "intro": "470 høydemeter og 2,23 km fra fotballbanen ved Krafthallen til Heia — den gamle alpinbakken i Harstad, og den turen byen faktisk går. Kilden skriver at det som regel står lys i bakken om kvelden når det er snø, og at fjellet har effektive høydemeter og en hytte underveis som er verdt mer enn et besøk. KAST 1 – Enkelt. Grad 1.",
    "ascent": [
     "Fra parkeringa ved fotballbanen — 63 moh — går ruta langs venstresida av myra på sti i skogen: 113 moh der korridoren står. Så ut av skogen og opp det åpne feltet der sommerstien går, 205 moh.",
     "Maistua ligger halvveis, på 321 moh. Den var radiolink før, ble pusset opp høsten 2018, og krever DNT-nøkkel; kilden kaller utsikten fantastisk og stedet et moderne avslapningssted uten sidestykke. Det bratteste hundremetersbeltet måler 17,5 grader mellom 200 og 300 moh, over 313 meter grunn, og det bratteste enkeltsteget på hele linja, 24,7 grader, ligger mellom 267 og 282 moh — altså rett under hytta.",
-    "Etter det flate partiet ved Maistua skrår ruta opp litt sørover, og skogen slipper på 375 moh etter 1,40 km. Over tregrensa følger du ryggen — 481 moh der korridoren er festet — til varden på 527. Ryggen kan være avblåst og bar eller vindpåvirket, og kilden sier at de fleste derfor stopper et stykke nord for toppen."
+    "Etter det flate partiet ved Maistua skrår ruta opp litt sørover, og skogen slipper på 372 moh etter 1,42 km. Over tregrensa følger du ryggen — 481 moh der korridoren er festet — til varden på 527. Ryggen kan være avblåst og bar eller vindpåvirket, og kilden sier at de fleste derfor stopper et stykke nord for toppen."
    ],
    "descent": [
     "Samme vei ned, men helt ned langs det åpne feltet, over gjerdet under kraftlinja og gjennom skogen til fotballbanen. Mange går flere runder — kilden beskriver treningsøkter med tre turer på en kveld, feller på og av, og 1200 høydemeter til sammen. Kilden gir to varianter til: østsida av toppen, der snøen er best, ned heistraseen; og en linje sørøstover ned den ryddede sommerstien i Blåbæråsen til barnehagen ved Høgholtet.",
@@ -12155,14 +12155,14 @@
      "body": "Heia ligger i varslingsregionen Sør-Troms, en A-region med daglig skredvarsel gjennom sesongen. Sjekk varsom.no. Sesongen desember–april er Fri Flyts, og den lengste i runden — dette er fjellet som holder snø når byen ikke gjør det. Sender/mottaker, søkestang og spade, også på en kveldstur ti minutter fra bilen. En tom side betyr ikke trygt fjell."
     }
    ],
-   "caption": "470 høydemeter og 2,24 km fra Krafthallen: myra, det åpne feltet og Maistua på 321 — og ryggen over tregrensa til varden på 527."
+   "caption": "470 høydemeter og 2,23 km fra Krafthallen: myra, det åpne feltet og Maistua på 321 — og ryggen over tregrensa til varden på 527."
   },
   "en": {
-   "intro": "470 metres of ascent over 2.24 km from the football pitch by Krafthallen to Heia — Harstad's old downhill hill, and the tour the town actually skis. The source notes that there are usually lights on the hill in the evening when there is snow, and that the mountain gives efficient vertical and a hut on the way worth more than a visit. KAST 1 – Simple. Grade 1.",
+   "intro": "470 metres of ascent over 2.23 km from the football pitch by Krafthallen to Heia — Harstad's old downhill hill, and the tour the town actually skis. The source notes that there are usually lights on the hill in the evening when there is snow, and that the mountain gives efficient vertical and a hut on the way worth more than a visit. KAST 1 – Simple. Grade 1.",
    "ascent": [
     "From the car park by the football pitch — 63 m — the route runs along the left-hand side of the bog on a path through the forest: 113 m where the corridor stands. Then out of the trees and up the open field the summer path follows, 205 m.",
     "Maistua sits halfway, at 321 m. It was a radio link before, was renovated in the autumn of 2018 and needs a DNT key; the source calls the view fantastic and the place a modern retreat without equal. The steepest 100 m band measures a mean 17.5 degrees between 200 and 300 metres, over 313 metres of ground, and the steepest single step on the whole line, 24.7 degrees, sits between 267 and 282 m — just below the hut.",
-    "Past the flat by Maistua the route slants up a little to the south, and the forest lets go at 375 m after 1.40 km. Above the treeline you follow the ridge — 481 m where the corridor is anchored — to the cairn at 527. The ridge can be scoured and bare or wind-affected, and the source says most people therefore stop a little north of the top."
+    "Past the flat by Maistua the route slants up a little to the south, and the forest lets go at 372 m after 1.42 km. Above the treeline you follow the ridge — 481 m where the corridor is anchored — to the cairn at 527. The ridge can be scoured and bare or wind-affected, and the source says most people therefore stop a little north of the top."
    ],
    "descent": [
     "The same way down, but all the way along the open field, over the fence under the power line and through the forest to the football pitch. Many do several laps — the source describes training sessions of three laps in an evening, skins on and off, and 1200 metres of ascent in total. The source gives two more variants: the east side of the summit, where the snow is best, down the old lift line; and a line to the south-east down the cleared summer path in Blåbæråsen to the kindergarten at Høgholtet.",
@@ -12182,7 +12182,7 @@
      "body": "Heia sits in the Sør-Troms forecasting region, an A-region with a daily avalanche bulletin through the season. Check varsom.no. The December–April season is Fri Flyt's, and the longest in the round — this is the hill that holds snow when the town does not. Transceiver, probe and shovel, even on an evening lap ten minutes from the car. An empty page does not mean a safe mountain."
     }
    ],
-   "caption": "470 metres of ascent over 2.24 km from Krafthallen: the bog, the open field and Maistua at 321 — and the ridge above the treeline to the cairn at 527."
+   "caption": "470 metres of ascent over 2.23 km from Krafthallen: the bog, the open field and Maistua at 321 — and the ridge above the treeline to the cairn at 527."
   }
  },
  "nattmalsfjellet": {
@@ -12259,11 +12259,11 @@
    "Skoggrensa: 496 moh etter 2,51 km — guide_facts treeline.last_forest_km."
   ],
   "no": {
-   "intro": "510 høydemeter og 2,90 km fra Breivikhaugen til Hinnstein — et av de mest brukte turområdene i Harstad, på linje med Heia, og et fjell med bratte sider. Kilden er kort og alvorlig om den mest populære av dem: «det er sørøstsiden som tiltrekker flest skikjørere, men vær obs på at flere er tatt av skred der.» KAST 3 – Komplekst. Grad 3.",
+   "intro": "513 høydemeter og 2,97 km fra Breivikhaugen til Hinnstein — et av de mest brukte turområdene i Harstad, på linje med Heia, og et fjell med bratte sider. Kilden er kort og alvorlig om den mest populære av dem: «det er sørøstsiden som tiltrekker flest skikjørere, men vær obs på at flere er tatt av skred der.» KAST 3 – Komplekst. Grad 3.",
    "ascent": [
-    "Fra den lille parkeringa øverst i Breivikhaugen — 51 moh, og ikke steng snuplassen — følger ruta skogsveien som grunneierne etablerte i 2016: 154 moh der korridoren står i den. Forbi gapahuken på 220.",
+    "Fra den lille parkeringa øverst i Breivikhaugen — 51 moh, og ikke steng snuplassen — følger ruta skogsveien som grunneierne etablerte i 2016, og så stien forbi gapahuken.",
     "Derfra sikter du på skråningen mellom Litle Hinnstein og Hinnstein — 457 moh — som i gamle dager ble brukt til hoppbakke. Litle Hinnstein er et eget registerført punkt og måler 502 moh; det er den lavere av de to.",
-    "Så stien opp på sørvestsida av Hinnstein, 531 moh der korridoren er festet, til varden på 560. Skogen slipper først på 496 moh etter 2,51 km — nesten hele turen går i skog. Det bratteste hundremetersbeltet måler 13,6 grader mellom 400 og 500 moh, over 426 meter grunn, og det bratteste enkeltsteget, 23,7 grader, ligger mellom 394 og 408."
+    "Så stien opp på sørvestsida av Hinnstein, 531 moh der korridoren er festet, til varden på 560. Skogen slipper først på 496 moh etter 2,58 km — nesten hele turen går i skog. Det bratteste hundremetersbeltet måler 13,6 grader mellom 400 og 500 moh, over 426 meter grunn, og det bratteste enkeltsteget, 23,7 grader, ligger mellom 394 og 408."
    ],
    "descent": [
     "Kilden er ærlig om starten: nedkjøringa fra Hinnstein gir lite flyt i begynnelsen på grunn av kratt, lite snø og steiner, og mange setter skiene igjen og går ned samme veien. Etter det er det slak cruising i terreng som ikke er brattere enn 30 grader.",
@@ -12283,14 +12283,14 @@
      "body": "Hinnstein ligger i varslingsregionen Sør-Troms, en A-region med daglig skredvarsel gjennom sesongen. Sjekk varsom.no. Sesongen januar–april er Fri Flyts. Sender/mottaker, søkestang og spade. Skogsveien fra 2016 er grunneiernes gave til turfolket — parker der du skal, og la snuplassen være åpen. En tom side betyr ikke trygt fjell."
     }
    ],
-   "caption": "510 høydemeter og 2,90 km fra Breivikhaugen: skogsveien fra 2016, gapahuken og den gamle hoppbakken — og sørvestsida til varden på 560."
+   "caption": "513 høydemeter og 2,97 km fra Breivikhaugen: skogsveien fra 2016, gapahuken og den gamle hoppbakken — og sørvestsida til varden på 560."
   },
   "en": {
-   "intro": "510 metres of ascent over 2.90 km from Breivikhaugen to Hinnstein — one of the most-used tour areas in Harstad, on a par with Heia, and a mountain with steep sides. The source is short and serious about the most popular of them: “the south-east side attracts the most skiers, but be aware that several have been caught in avalanches there.” KAST 3 – Complex. Grade 3.",
+   "intro": "513 metres of ascent over 2.97 km from Breivikhaugen to Hinnstein — one of the most-used tour areas in Harstad, on a par with Heia, and a mountain with steep sides. The source is short and serious about the most popular of them: “the south-east side attracts the most skiers, but be aware that several have been caught in avalanches there.” KAST 3 – Complex. Grade 3.",
    "ascent": [
-    "From the small car park at the top of Breivikhaugen — 51 m, and do not block the turning circle — the route follows the forest road the landowners built in 2016: 154 m where the corridor stands in it. Past the shelter at 220.",
+    "From the small car park at the top of Breivikhaugen — 51 m, and do not block the turning circle — the route follows the forest road the landowners built in 2016, and then the path past the shelter.",
     "From there you aim for the slope between Litle Hinnstein and Hinnstein — 457 m — which in the old days was used as a ski jump. Litle Hinnstein is a registered point of its own and measures 502 m; it is the lower of the two.",
-    "Then the path up the south-west side of Hinnstein, 531 m where the corridor is anchored, to the cairn at 560. The forest does not let go until 496 m after 2.51 km — almost the whole tour is in trees. The steepest 100 m band measures a mean 13.6 degrees between 400 and 500 metres, over 426 metres of ground, and the steepest single step, 23.7 degrees, sits between 394 and 408."
+    "Then the path up the south-west side of Hinnstein, 531 m where the corridor is anchored, to the cairn at 560. The forest does not let go until 496 m after 2.58 km — almost the whole tour is in trees. The steepest 100 m band measures a mean 13.6 degrees between 400 and 500 metres, over 426 metres of ground, and the steepest single step, 23.7 degrees, sits between 394 and 408."
    ],
    "descent": [
     "The source is honest about the start: the descent from Hinnstein gives little flow at first because of scrub, thin snow and stones, and many leave the skis and walk back down the way they came. After that it is gentle cruising in ground no steeper than 30 degrees.",
@@ -12310,7 +12310,7 @@
      "body": "Hinnstein sits in the Sør-Troms forecasting region, an A-region with a daily avalanche bulletin through the season. Check varsom.no. The January–April season is Fri Flyt's. Transceiver, probe and shovel. The 2016 forest road is the landowners' gift to walkers — park where you should, and leave the turning circle clear. An empty page does not mean a safe mountain."
     }
    ],
-   "caption": "510 metres of ascent over 2.90 km from Breivikhaugen: the 2016 forest road, the shelter and the old ski jump — and the south-west side to the cairn at 560."
+   "caption": "513 metres of ascent over 2.97 km from Breivikhaugen: the 2016 forest road, the shelter and the old ski jump — and the south-west side to the cairn at 560."
   }
  },
  "sorvikfjellet": {
