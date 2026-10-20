@@ -2178,8 +2178,9 @@
     "waypoints": [
      {
       "name": "den vinterstengte vegen mot Stavsro",
-      "lat": 59.86843,
-      "lng": 8.68907
+      "lat": 59.8682,
+      "lng": 8.68916,
+      "note": "Flyttet inn på linja da kroken ved parkeringen ble fjernet: linja gikk 34 m nordøst langs grusvegen og snudde 91° tilbake; nå går den rett fra parkeringen til vegen."
      },
      {
       "name": "den vinterstengte vegen mot Stavsro",
