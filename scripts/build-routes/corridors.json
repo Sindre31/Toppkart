@@ -86,6 +86,41 @@
       "elevation_m": 127.8
      },
      {
+      "name": "stien ved 2.46 km",
+      "lat": 69.61448,
+      "lng": 19.06678
+     },
+     {
+      "name": "stien ved 2.46 km",
+      "lat": 69.61387,
+      "lng": 19.06757
+     },
+     {
+      "name": "stien ved 2.46 km",
+      "lat": 69.61327,
+      "lng": 19.06837
+     },
+     {
+      "name": "stien ved 2.46 km",
+      "lat": 69.61315,
+      "lng": 19.06901
+     },
+     {
+      "name": "stien ved 2.46 km",
+      "lat": 69.61329,
+      "lng": 19.06983
+     },
+     {
+      "name": "stien ved 2.46 km",
+      "lat": 69.613,
+      "lng": 19.07147
+     },
+     {
+      "name": "stien ved 2.46 km",
+      "lat": 69.61315,
+      "lng": 19.07224
+     },
+     {
       "lat": 69.6156,
       "lng": 19.108,
       "name": "NNV-ryggen, ca. 500 moh",
@@ -113,7 +148,8 @@
     "source": "documented alternative route",
     "note": "Same car park as the ski line, different mountain: this is the marked summer path up the north-north-west ridge. Steep and icy low down in winter.",
     "implied_start_m": null,
-    "start_vs_implied_m": null
+    "start_vs_implied_m": null,
+    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (199 m from 2.46 km)."
    }
   ]
  },
@@ -400,6 +436,41 @@
       "elevation_m": 49.2
      },
      {
+      "name": "stien ved 0.54 km",
+      "lat": 69.50835,
+      "lng": 17.62038
+     },
+     {
+      "name": "stien ved 0.54 km",
+      "lat": 69.50818,
+      "lng": 17.61944
+     },
+     {
+      "name": "stien ved 0.54 km",
+      "lat": 69.50829,
+      "lng": 17.61854
+     },
+     {
+      "name": "stien ved 0.54 km",
+      "lat": 69.50815,
+      "lng": 17.61644
+     },
+     {
+      "name": "stien ved 0.54 km",
+      "lat": 69.50855,
+      "lng": 17.61484
+     },
+     {
+      "name": "stien ved 0.54 km",
+      "lat": 69.50901,
+      "lng": 17.61387
+     },
+     {
+      "name": "stien ved 0.54 km",
+      "lat": 69.50947,
+      "lng": 17.6129
+     },
+     {
       "name": "Skogsflanken i Fjordgardlia, ca 140 moh",
       "lat": 69.50971,
       "lng": 17.61256,
@@ -427,7 +498,8 @@
     "source": "audited (corrected)",
     "notes": "",
     "implied_start_m": 47.4,
-    "start_vs_implied_m": 0.1
+    "start_vs_implied_m": 0.1,
+    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (259 m from 0.54 km)."
    }
   ]
  },
@@ -680,16 +752,39 @@
       "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/940285094."
      },
      {
-      "name": "Brekkheida (Skylstadbrekka)",
-      "lat": 62.195,
-      "lng": 6.694,
-      "elevation_m": 433.2
+      "name": "stien ved 1.36 km",
+      "lat": 62.1943,
+      "lng": 6.69541
      },
      {
-      "name": "Over Brekkheida ved Brekkeelva, ~650 m",
-      "lat": 62.1995,
-      "lng": 6.6995,
-      "elevation_m": 647.68
+      "name": "stien ved 1.36 km",
+      "lat": 62.19466,
+      "lng": 6.69635
+     },
+     {
+      "name": "stien ved 1.36 km",
+      "lat": 62.19501,
+      "lng": 6.69728
+     },
+     {
+      "name": "stien ved 1.36 km",
+      "lat": 62.19584,
+      "lng": 6.69748
+     },
+     {
+      "name": "stien ved 2.12 km",
+      "lat": 62.199,
+      "lng": 6.70078
+     },
+     {
+      "name": "stien ved 2.12 km",
+      "lat": 62.19948,
+      "lng": 6.70162
+     },
+     {
+      "name": "stien ved 2.12 km",
+      "lat": 62.19991,
+      "lng": 6.70189
      },
      {
       "name": "Flata sørvest for Patchellhytta, ~795 m",
@@ -713,7 +808,8 @@
     "source": "audited (corrected)",
     "notes": "",
     "implied_start_m": 83.4,
-    "start_vs_implied_m": 1.3
+    "start_vs_implied_m": 1.3,
+    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (292 m from 1.36 km, 179 m from 2.12 km); replaced Brekkheida (Skylstadbrekka), Over Brekkheida ved Brekkeelva, ~650 m."
    },
    {
     "id": "oye-direkte",
@@ -1116,6 +1212,96 @@
       "elevation_m": 910.42
      },
      {
+      "name": "stien ved 2.00 km",
+      "lat": 61.50424,
+      "lng": 7.83212
+     },
+     {
+      "name": "stien ved 2.00 km",
+      "lat": 61.50458,
+      "lng": 7.83248
+     },
+     {
+      "name": "stien ved 2.00 km",
+      "lat": 61.50476,
+      "lng": 7.83308
+     },
+     {
+      "name": "stien ved 2.00 km",
+      "lat": 61.5048,
+      "lng": 7.83438
+     },
+     {
+      "name": "stien ved 2.00 km",
+      "lat": 61.50516,
+      "lng": 7.83646
+     },
+     {
+      "name": "stien ved 2.00 km",
+      "lat": 61.50517,
+      "lng": 7.8383
+     },
+     {
+      "name": "stien ved 2.00 km",
+      "lat": 61.50517,
+      "lng": 7.84013
+     },
+     {
+      "name": "stien ved 2.00 km",
+      "lat": 61.50526,
+      "lng": 7.84133
+     },
+     {
+      "name": "stien ved 2.00 km",
+      "lat": 61.50534,
+      "lng": 7.84253
+     },
+     {
+      "name": "stien ved 2.00 km",
+      "lat": 61.50525,
+      "lng": 7.84471
+     },
+     {
+      "name": "stien ved 2.00 km",
+      "lat": 61.5054,
+      "lng": 7.84602
+     },
+     {
+      "name": "stien ved 2.00 km",
+      "lat": 61.50555,
+      "lng": 7.84734
+     },
+     {
+      "name": "stien ved 2.00 km",
+      "lat": 61.50556,
+      "lng": 7.84802
+     },
+     {
+      "name": "stien ved 2.00 km",
+      "lat": 61.50516,
+      "lng": 7.8498
+     },
+     {
+      "name": "stien ved 2.00 km",
+      "lat": 61.50523,
+      "lng": 7.85111
+     },
+     {
+      "name": "stien ved 2.00 km",
+      "lat": 61.5053,
+      "lng": 7.85242
+     },
+     {
+      "name": "stien ved 2.00 km",
+      "lat": 61.50499,
+      "lng": 7.85373
+     },
+     {
+      "name": "stien ved 2.00 km",
+      "lat": 61.50483,
+      "lng": 7.85535
+     },
+     {
       "name": "indre Helgedalen",
       "lat": 61.506,
       "lng": 7.865,
@@ -1167,7 +1353,8 @@
     "source": "documented alternative route",
     "note": "Fri Flyt, «Turbeskrivelse Steindalsnosi», rute 1.4 Ned sørsida via Steindalen og Helgedalen, med kjelda si eiga sanksjonering av å gå henne opp: «Når: Mars–midten av mai. (Før Sognefjellet opnar er det best å gå sørsida opp frå Helgedalen.)» Linja, lesen andre vegen: «Køyr vestover frå toppunktet, langs ryggen mot vesttoppen 1936. Når du er nede på 1900 moh og ryggen smalnar, står du ved inngangen til sørsida. Herfrå følgjer du lågaste punktet sørover til Steindøla og vidare på vestsida av denne ned i Helgedalsbotnen. Om det ligg snø ut Helgedalen, stakar du tilbake til Turtagrø ut Helgedalen.» Fanaråken-sida i same boka seier det same rett fram: «Frå Turtagrø inn Helgedalen og opp langs Steindøla og gjennom Steindalen (sjå skildring Steindalsnosi sørside).» Kjelda sine tal for sørsida: 1025 høgdemeter nedkøyring, «32 grader jamt. Passasjar på 34–36 grader (1380–1260 moh langs Steindøla)», og faren «Steindøla opnar seg ein gong i mai». Dette er den einaste vegen opp før Sognefjellet opnar: appens normalrute startar ved Gjuvvatnet på Sognefjellsvegen, som er vinterstengd. Turtagrø er alt eit kartfesta startsted i appen — Fanaråken går derifrå — og dei to rutene deler dei to fyrste vegpunkta inn Helgedalen.",
     "implied_start_m": null,
-    "start_vs_implied_m": null
+    "start_vs_implied_m": null,
+    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (1219 m from 2.0 km)."
    }
   ]
  },
@@ -1541,6 +1728,26 @@
       "elevation_m": 913.85
      },
      {
+      "name": "stien ved 3.54 km",
+      "lat": 61.907,
+      "lng": 9.99366
+     },
+     {
+      "name": "stien ved 3.54 km",
+      "lat": 61.90715,
+      "lng": 9.9921
+     },
+     {
+      "name": "stien ved 3.54 km",
+      "lat": 61.90729,
+      "lng": 9.99055
+     },
+     {
+      "name": "stien ved 3.54 km",
+      "lat": 61.90744,
+      "lng": 9.989
+     },
+     {
       "name": "inn i Langglupdalen",
       "lat": 61.913,
       "lng": 9.965,
@@ -1574,7 +1781,8 @@
     "source": "documented alternative route",
     "note": "ut.no 1112154771, «Topptur til Rondeslottet (2178moh) fra Bjørnhollia»: «turen starter fra dørterskelen på hytta. Følg merket rute gjennom Lagglupdalen mot Dørålseter. I Langglupdalen passerer du brua over Langglupå og stiskillet til Høgronden. Ved stiskillet til Rondeslottet følger du merket rute vestover til toppen.» 22,4 km, 1433 høgdemeter, 8 timar, juni–september, VERY_TOUGH. Langglupdalen er registerført (Dal, Folldal). Tredje startstaden på toppen: Spranget i sør, Nedre Dørålseter i nord, Bjørnhollia i aust.",
     "implied_start_m": null,
-    "start_vs_implied_m": null
+    "start_vs_implied_m": null,
+    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (189 m from 3.54 km)."
    }
   ]
  },
@@ -1740,6 +1948,36 @@
     },
     "waypoints": [
      {
+      "name": "stien ved 0.56 km",
+      "lat": 60.45678,
+      "lng": 6.63638
+     },
+     {
+      "name": "stien ved 0.56 km",
+      "lat": 60.45668,
+      "lng": 6.63787
+     },
+     {
+      "name": "stien ved 0.56 km",
+      "lat": 60.45691,
+      "lng": 6.63906
+     },
+     {
+      "name": "stien ved 0.56 km",
+      "lat": 60.45684,
+      "lng": 6.63979
+     },
+     {
+      "name": "stien ved 0.56 km",
+      "lat": 60.45715,
+      "lng": 6.64011
+     },
+     {
+      "name": "stien ved 0.56 km",
+      "lat": 60.45757,
+      "lng": 6.6395
+     },
+     {
       "name": "Vindhovden stølar",
       "lat": 60.4585,
       "lng": 6.6406,
@@ -1767,7 +2005,8 @@
     "source": "audited (ok)",
     "notes": "",
     "implied_start_m": 281.5,
-    "start_vs_implied_m": -5.2
+    "start_vs_implied_m": -5.2,
+    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (229 m from 0.56 km)."
    }
   ]
  },
@@ -1859,6 +2098,31 @@
       "elevation_m": 430.33
      },
      {
+      "name": "stien ved 1.19 km",
+      "lat": 60.02668,
+      "lng": 6.07999
+     },
+     {
+      "name": "stien ved 1.19 km",
+      "lat": 60.02717,
+      "lng": 6.08116
+     },
+     {
+      "name": "stien ved 1.19 km",
+      "lat": 60.02734,
+      "lng": 6.08263
+     },
+     {
+      "name": "stien ved 1.19 km",
+      "lat": 60.02741,
+      "lng": 6.08385
+     },
+     {
+      "name": "stien ved 1.19 km",
+      "lat": 60.02711,
+      "lng": 6.08469
+     },
+     {
       "name": "Nipeelva",
       "lat": 60.02731,
       "lng": 6.08584,
@@ -1892,7 +2156,8 @@
     "source": "documented alternative route",
     "note": "Fri Flyts eige startsted for Melderskin er Myrdalsvannet, ikkje Kletta: «Fra Myrdalsvannet, følg grusveien litt tilbake til du kommer til en traktorvei. Følg veien til Nipelva dukker opp. Følg elva oppover til det blir naturlig å svinge av mot Omnen (1158). Da ligger Omnetjørnene til venstre for deg. Følg den tydelige ryggen opp til toppen.» 1054 høydemeter, 5 timar, NØ, 45 grader på det brattaste, «Ta med stegjern og øks». Omnen er registerført (Topp, Kvinnherad, 60,01449/6,08235) og DTM1 les 1155,5 mot boka sine 1158. Omnetjørnene ligg på 1066 moh aust for ryggen, altså til venstre når ein går sørover — linja kryssar dei ikkje. Startsteda er 2,0 km og 213 høgdemeter frå kvarandre; Myrdalsvatnet er alt eit kartfesta startsted i appen, det Juklavasstinden går frå, og dei to rutene deler den same nedre tilkomsten langs Nipeelva.",
     "implied_start_m": null,
-    "start_vs_implied_m": null
+    "start_vs_implied_m": null,
+    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (199 m from 1.19 km)."
    }
   ]
  },
@@ -2042,6 +2307,221 @@
     },
     "waypoints": [
      {
+      "name": "stien ved 0.23 km",
+      "lat": 62.18439,
+      "lng": 6.41143
+     },
+     {
+      "name": "stien ved 0.23 km",
+      "lat": 62.18439,
+      "lng": 6.41095
+     },
+     {
+      "name": "stien ved 0.23 km",
+      "lat": 62.18416,
+      "lng": 6.41055
+     },
+     {
+      "name": "stien ved 0.23 km",
+      "lat": 62.18346,
+      "lng": 6.41014
+     },
+     {
+      "name": "stien ved 0.23 km",
+      "lat": 62.18271,
+      "lng": 6.4105
+     },
+     {
+      "name": "stien ved 0.23 km",
+      "lat": 62.18196,
+      "lng": 6.41088
+     },
+     {
+      "name": "stien ved 0.23 km",
+      "lat": 62.18121,
+      "lng": 6.41124
+     },
+     {
+      "name": "stien ved 0.23 km",
+      "lat": 62.18056,
+      "lng": 6.41119
+     },
+     {
+      "name": "stien ved 0.23 km",
+      "lat": 62.17991,
+      "lng": 6.41113
+     },
+     {
+      "name": "stien ved 0.23 km",
+      "lat": 62.17935,
+      "lng": 6.41149
+     },
+     {
+      "name": "stien ved 0.23 km",
+      "lat": 62.17879,
+      "lng": 6.41184
+     },
+     {
+      "name": "stien ved 1.03 km",
+      "lat": 62.17727,
+      "lng": 6.41381
+     },
+     {
+      "name": "stien ved 1.03 km",
+      "lat": 62.17668,
+      "lng": 6.41556
+     },
+     {
+      "name": "stien ved 1.03 km",
+      "lat": 62.17593,
+      "lng": 6.41688
+     },
+     {
+      "name": "stien ved 1.03 km",
+      "lat": 62.17519,
+      "lng": 6.41821
+     },
+     {
+      "name": "stien ved 1.03 km",
+      "lat": 62.17477,
+      "lng": 6.4194
+     },
+     {
+      "name": "stien ved 1.03 km",
+      "lat": 62.17437,
+      "lng": 6.42019
+     },
+     {
+      "name": "stien ved 1.03 km",
+      "lat": 62.17396,
+      "lng": 6.42098
+     },
+     {
+      "name": "stien ved 1.03 km",
+      "lat": 62.17353,
+      "lng": 6.42227
+     },
+     {
+      "name": "stien ved 1.03 km",
+      "lat": 62.1731,
+      "lng": 6.42356
+     },
+     {
+      "name": "stien ved 1.03 km",
+      "lat": 62.17268,
+      "lng": 6.42485
+     },
+     {
+      "name": "stien ved 1.03 km",
+      "lat": 62.17229,
+      "lng": 6.42558
+     },
+     {
+      "name": "stien ved 1.03 km",
+      "lat": 62.17171,
+      "lng": 6.42729
+     },
+     {
+      "name": "stien ved 1.03 km",
+      "lat": 62.1709,
+      "lng": 6.42842
+     },
+     {
+      "name": "stien ved 1.03 km",
+      "lat": 62.17008,
+      "lng": 6.42954
+     },
+     {
+      "name": "stien ved 1.03 km",
+      "lat": 62.16963,
+      "lng": 6.4314
+     },
+     {
+      "name": "stien ved 1.03 km",
+      "lat": 62.16918,
+      "lng": 6.43326
+     },
+     {
+      "name": "stien ved 1.03 km",
+      "lat": 62.16867,
+      "lng": 6.43375
+     },
+     {
+      "name": "stien ved 1.03 km",
+      "lat": 62.16796,
+      "lng": 6.43518
+     },
+     {
+      "name": "stien ved 1.03 km",
+      "lat": 62.16709,
+      "lng": 6.4356
+     },
+     {
+      "name": "stien ved 1.03 km",
+      "lat": 62.16623,
+      "lng": 6.43603
+     },
+     {
+      "name": "stien ved 1.03 km",
+      "lat": 62.16575,
+      "lng": 6.43677
+     },
+     {
+      "name": "stien ved 1.03 km",
+      "lat": 62.16527,
+      "lng": 6.43752
+     },
+     {
+      "name": "stien ved 1.03 km",
+      "lat": 62.16485,
+      "lng": 6.43943
+     },
+     {
+      "name": "stien ved 1.03 km",
+      "lat": 62.16422,
+      "lng": 6.44036
+     },
+     {
+      "name": "stien ved 1.03 km",
+      "lat": 62.16359,
+      "lng": 6.4413
+     },
+     {
+      "name": "stien ved 1.03 km",
+      "lat": 62.16318,
+      "lng": 6.44288
+     },
+     {
+      "name": "stien ved 1.03 km",
+      "lat": 62.16276,
+      "lng": 6.44446
+     },
+     {
+      "name": "stien ved 1.03 km",
+      "lat": 62.16196,
+      "lng": 6.44572
+     },
+     {
+      "name": "stien ved 1.03 km",
+      "lat": 62.1617,
+      "lng": 6.44724
+     },
+     {
+      "name": "stien ved 1.03 km",
+      "lat": 62.16101,
+      "lng": 6.44845
+     },
+     {
+      "name": "stien ved 1.03 km",
+      "lat": 62.16032,
+      "lng": 6.44967
+     },
+     {
+      "name": "stien ved 1.03 km",
+      "lat": 62.15963,
+      "lng": 6.45088
+     },
+     {
       "name": "Parkeringa ved Kvistadsætra og Årsetsætra",
       "lat": 62.15893,
       "lng": 6.45179,
@@ -2061,7 +2541,8 @@
      }
     ],
     "source": "researched, verified (ok), no local audit",
-    "notes": "Renna aust for Blåhornet går vanlegvis eitt eller fleire store skred ned mot setervegen kvar vinter, og oppstiginga går rett ved sida av henne; hellinga held 30-40° frå om lag 800 til 1100 moh. På toppplatået ligg det store skavlar mot aust, der fjellet fell 300 høgdemeter på 75 meter ned i Skåradalen - hald god avstand frå eggja. Nedkøyringa Vestrennene er 45° og er ikkje ein del av denne ruta."
+    "notes": "Renna aust for Blåhornet går vanlegvis eitt eller fleire store skred ned mot setervegen kvar vinter, og oppstiginga går rett ved sida av henne; hellinga held 30-40° frå om lag 800 til 1100 moh. På toppplatået ligg det store skavlar mot aust, der fjellet fell 300 høgdemeter på 75 meter ned i Skåradalen - hald god avstand frå eggja. Nedkøyringa Vestrennene er 45° og er ikkje ein del av denne ruta.",
+    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (549 m from 0.23 km, 2807 m from 1.03 km)."
    }
   ]
  },
@@ -2575,6 +3056,26 @@
     },
     "waypoints": [
      {
+      "name": "stien ved 0.46 km",
+      "lat": 62.18266,
+      "lng": 6.65957
+     },
+     {
+      "name": "stien ved 0.46 km",
+      "lat": 62.18197,
+      "lng": 6.65812
+     },
+     {
+      "name": "stien ved 0.46 km",
+      "lat": 62.18142,
+      "lng": 6.65755
+     },
+     {
+      "name": "stien ved 0.46 km",
+      "lat": 62.18047,
+      "lng": 6.65807
+     },
+     {
       "name": "Øvre Konedalen, 742",
       "lat": 62.1745,
       "lng": 6.646,
@@ -2588,7 +3089,8 @@
      }
     ],
     "source": "researched, verified (ok), no local audit",
-    "notes": "Det kan gå skred frå Jakta heile vegen inn Konedalen; hald deg til venstre (søraustre) side på veg inn dalen. Den 33-36 grader bratte sida opp til toppryggen er den store skredfella på turen. På sjølve toppryggen er det skavlar til begge sider - mot Konedalen i søraust, og mot den stupbratte nordvestveggen ned mot Hjørundfjorden, der DTM1 måler om lag 80 grader rett under toppen."
+    "notes": "Det kan gå skred frå Jakta heile vegen inn Konedalen; hald deg til venstre (søraustre) side på veg inn dalen. Den 33-36 grader bratte sida opp til toppryggen er den store skredfella på turen. På sjølve toppryggen er det skavlar til begge sider - mot Konedalen i søraust, og mot den stupbratte nordvestveggen ned mot Hjørundfjorden, der DTM1 måler om lag 80 grader rett under toppen.",
+    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (324 m from 0.46 km)."
    }
   ]
  },
@@ -2606,6 +3108,36 @@
      "fullName": "Parkeringa ved Medfjordbotnvatnan (Fv862)"
     },
     "waypoints": [
+     {
+      "name": "stien ved 0.04 km",
+      "lat": 69.47602,
+      "lng": 17.73944
+     },
+     {
+      "name": "stien ved 0.04 km",
+      "lat": 69.47628,
+      "lng": 17.74008
+     },
+     {
+      "name": "stien ved 0.04 km",
+      "lat": 69.47669,
+      "lng": 17.74021
+     },
+     {
+      "name": "stien ved 0.04 km",
+      "lat": 69.47742,
+      "lng": 17.74125
+     },
+     {
+      "name": "stien ved 0.04 km",
+      "lat": 69.47837,
+      "lng": 17.74038
+     },
+     {
+      "name": "stien ved 0.04 km",
+      "lat": 69.47856,
+      "lng": 17.7398
+     },
      {
       "name": "Keipelva, ~225 moh",
       "lat": 69.4795,
@@ -2632,7 +3164,8 @@
      }
     ],
     "source": "researched, verified (ok), no local audit",
-    "notes": "Skåla sør for toppen er både løsne- og utløpsområde, og henget opp mot toppryggen ligger jevnt på 32-33 grader. Nordsida av toppen faller 60 grader rett under egget, så skavlene henger nordover — hold deg på sørsida av ryggen. De øverste hundre høydemeterne er ofte vindherjet og harde."
+    "notes": "Skåla sør for toppen er både løsne- og utløpsområde, og henget opp mot toppryggen ligger jevnt på 32-33 grader. Nordsida av toppen faller 60 grader rett under egget, så skavlene henger nordover — hold deg på sørsida av ryggen. De øverste hundre høydemeterne er ofte vindherjet og harde.",
+    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (219 m from 0.04 km)."
    }
   ]
  },
@@ -2695,6 +3228,36 @@
     },
     "waypoints": [
      {
+      "name": "stien ved 0.05 km",
+      "lat": 68.46561,
+      "lng": 15.44222
+     },
+     {
+      "name": "stien ved 0.05 km",
+      "lat": 68.466,
+      "lng": 15.4443
+     },
+     {
+      "name": "stien ved 0.05 km",
+      "lat": 68.4664,
+      "lng": 15.44639
+     },
+     {
+      "name": "stien ved 0.05 km",
+      "lat": 68.4667,
+      "lng": 15.44706
+     },
+     {
+      "name": "stien ved 0.05 km",
+      "lat": 68.46748,
+      "lng": 15.44707
+     },
+     {
+      "name": "stien ved 0.05 km",
+      "lat": 68.46812,
+      "lng": 15.44795
+     },
+     {
       "name": "Dalen nord for Litlvatnet",
       "lat": 68.48,
       "lng": 15.4545,
@@ -2720,7 +3283,8 @@
      }
     ],
     "source": "researched, verified (ok), no local audit",
-    "notes": "Turen er lang — 1364 høydemeter kumulativt og 11-18 timer — så tidspunktet avgjør om du møter gjennomvåt eller gjennomfrossen snø i det bratte partiet under breen. Stigningen opp fra Grønnvatnet ligger over 20 grader på lang strekning og har brattere trinn opp mot breen. Toppryggen er eksponert og ofte hard; mange bærer skiene der, og isøks og stegjern hører med."
+    "notes": "Turen er lang — 1364 høydemeter kumulativt og 11-18 timer — så tidspunktet avgjør om du møter gjennomvåt eller gjennomfrossen snø i det bratte partiet under breen. Stigningen opp fra Grønnvatnet ligger over 20 grader på lang strekning og har brattere trinn opp mot breen. Toppryggen er eksponert og ofte hard; mange bærer skiene der, og isøks og stegjern hører med.",
+    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (329 m from 0.05 km)."
    }
   ]
  },
@@ -3552,6 +4116,71 @@
     },
     "waypoints": [
      {
+      "name": "stien ved 0.05 km",
+      "lat": 62.24593,
+      "lng": 7.21169
+     },
+     {
+      "name": "stien ved 0.05 km",
+      "lat": 62.24536,
+      "lng": 7.21176
+     },
+     {
+      "name": "stien ved 0.05 km",
+      "lat": 62.24473,
+      "lng": 7.21256
+     },
+     {
+      "name": "stien ved 0.05 km",
+      "lat": 62.2441,
+      "lng": 7.21336
+     },
+     {
+      "name": "stien ved 0.05 km",
+      "lat": 62.24365,
+      "lng": 7.21416
+     },
+     {
+      "name": "stien ved 0.05 km",
+      "lat": 62.24319,
+      "lng": 7.21496
+     },
+     {
+      "name": "stien ved 0.05 km",
+      "lat": 62.24258,
+      "lng": 7.21651
+     },
+     {
+      "name": "stien ved 0.05 km",
+      "lat": 62.24197,
+      "lng": 7.21805
+     },
+     {
+      "name": "stien ved 0.05 km",
+      "lat": 62.24172,
+      "lng": 7.21927
+     },
+     {
+      "name": "stien ved 0.05 km",
+      "lat": 62.24147,
+      "lng": 7.22049
+     },
+     {
+      "name": "stien ved 0.05 km",
+      "lat": 62.241,
+      "lng": 7.22187
+     },
+     {
+      "name": "stien ved 0.05 km",
+      "lat": 62.24053,
+      "lng": 7.22326
+     },
+     {
+      "name": "stien ved 0.05 km",
+      "lat": 62.24029,
+      "lng": 7.2245
+     },
+     {
       "name": "Rellingsætra",
       "lat": 62.23128,
       "lng": 7.24464,
@@ -3592,7 +4221,8 @@
      }
     ],
     "source": "researched, verified (corrected), no local audit",
-    "notes": "Kneika frå Rellingsætra opp på Daurmålsfjellet er den bratte delen. Ryggen vidare er slak, men lang og utan ly, og sidene av han er ikkje slake: vest 40,9 grader i snitt frå varden, sørvest 36,2 og søraust 35,2, mot 9 grader nord og aust. Vending må avgjerast tidleg."
+    "notes": "Kneika frå Rellingsætra opp på Daurmålsfjellet er den bratte delen. Ryggen vidare er slak, men lang og utan ly, og sidene av han er ikkje slake: vest 40,9 grader i snitt frå varden, sørvest 36,2 og søraust 35,2, mot 9 grader nord og aust. Vending må avgjerast tidleg.",
+    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (879 m from 0.05 km)."
    }
   ]
  },
@@ -3871,6 +4501,61 @@
       "elevation_m": 405.15
      },
      {
+      "name": "stien ved 1.01 km",
+      "lat": 61.62391,
+      "lng": 6.63663
+     },
+     {
+      "name": "stien ved 1.01 km",
+      "lat": 61.6244,
+      "lng": 6.63669
+     },
+     {
+      "name": "stien ved 1.01 km",
+      "lat": 61.62531,
+      "lng": 6.63617
+     },
+     {
+      "name": "stien ved 1.01 km",
+      "lat": 61.62621,
+      "lng": 6.63566
+     },
+     {
+      "name": "stien ved 1.31 km",
+      "lat": 61.62652,
+      "lng": 6.63545
+     },
+     {
+      "name": "stien ved 1.31 km",
+      "lat": 61.62747,
+      "lng": 6.636
+     },
+     {
+      "name": "stien ved 1.31 km",
+      "lat": 61.62835,
+      "lng": 6.63533
+     },
+     {
+      "name": "stien ved 1.31 km",
+      "lat": 61.62896,
+      "lng": 6.63558
+     },
+     {
+      "name": "stien ved 1.31 km",
+      "lat": 61.62958,
+      "lng": 6.63582
+     },
+     {
+      "name": "stien ved 1.31 km",
+      "lat": 61.6305,
+      "lng": 6.63556
+     },
+     {
+      "name": "stien ved 1.31 km",
+      "lat": 61.63142,
+      "lng": 6.6353
+     },
+     {
       "name": "vegenden i Veitebergsdalen",
       "lat": 61.6358,
       "lng": 6.63618,
@@ -3932,7 +4617,8 @@
      }
     ],
     "source": "researched, verified (corrected), no local audit",
-    "notes": "Fri Flyt, «Turbeskrivelse Snønipa», rute 4.8.2 OPP VIA VEITEBERGSDALEN (UTFORDRANDE, E2, V): «Du følgjer skogsvegen opp Veitebergsdalen til endes. Her skrår du deg opp skogen, og siktar deg inn mot den markerte moreneryggen kalla Sollirinden som går opp mot Sollibotnen. Det tryggaste rutevalet er å gå opp morene-ryggen. I Sollibotnen svingar du nordaust mot brevatnet og fortset opp første del av brefallet. Du dreiar gradvis nordover i det flate partiet, og kryssar deg opp det bratte brefallet til du kjem opp på breplatået. Du går vidare flatt innover breen og passerer aust for høgda 1687 moh. og vindgryta rundt denne, som lokalt blir kalla Djevelens dansesal. Hald fram nordover til toppen.» Tilkomsten er eit eige startsted i same boka: «Om du vil gå turen opp via Veitebergsdalen startar du turen på Veiteberg. Nokre hundre meter etter at du har passert brua over Veitebergselva, kjem du til ein skogsveg som går opp i Veitebergsdalen. Her er det mogleg å finne parkering.» Kjelda fører 1540 høgdemeter, starthøgde 290 moh, 5–10 timar, sesong februar–mai, himmelretning sør og vest, brattaste punkt 30–35 grader (700–860 moh) med eit kort parti på 35–40 grader øvst på moreneryggen og 30–34 grader (1260–1500 moh), utstyr breutstyr. Appens normalrute går opp Haugadalen og Haugabreen frå Høyseth i Stardalen, på den andre sida av fjellet. Brevatnet på 1103 moh ligg i linja si retning — kjelda sanksjonerer ikkje ei kryssing, så korridoren har eit vegpunkt aust for vatnet og går utanom det. Fyrste løysinga gjekk 541 m over brevatnet, opptil 119 m frå den kartlagde stranda: eit einskilt vegpunkt aust for vatnet held ikkje, for Dijkstra skjer hjørnet på den 1,4 km lange etappen frå Sollibotnen. Tre punkt langs sør- og austbreidda (1117, 1147 og 1188 moh) legg linja rundt vatnet på land; eit fjerde på 1110 midt på austbreidda vart teke ut att, fordi det kosta 37 høgdemeter tilbake utan å flytte linja."
+    "notes": "Fri Flyt, «Turbeskrivelse Snønipa», rute 4.8.2 OPP VIA VEITEBERGSDALEN (UTFORDRANDE, E2, V): «Du følgjer skogsvegen opp Veitebergsdalen til endes. Her skrår du deg opp skogen, og siktar deg inn mot den markerte moreneryggen kalla Sollirinden som går opp mot Sollibotnen. Det tryggaste rutevalet er å gå opp morene-ryggen. I Sollibotnen svingar du nordaust mot brevatnet og fortset opp første del av brefallet. Du dreiar gradvis nordover i det flate partiet, og kryssar deg opp det bratte brefallet til du kjem opp på breplatået. Du går vidare flatt innover breen og passerer aust for høgda 1687 moh. og vindgryta rundt denne, som lokalt blir kalla Djevelens dansesal. Hald fram nordover til toppen.» Tilkomsten er eit eige startsted i same boka: «Om du vil gå turen opp via Veitebergsdalen startar du turen på Veiteberg. Nokre hundre meter etter at du har passert brua over Veitebergselva, kjem du til ein skogsveg som går opp i Veitebergsdalen. Her er det mogleg å finne parkering.» Kjelda fører 1540 høgdemeter, starthøgde 290 moh, 5–10 timar, sesong februar–mai, himmelretning sør og vest, brattaste punkt 30–35 grader (700–860 moh) med eit kort parti på 35–40 grader øvst på moreneryggen og 30–34 grader (1260–1500 moh), utstyr breutstyr. Appens normalrute går opp Haugadalen og Haugabreen frå Høyseth i Stardalen, på den andre sida av fjellet. Brevatnet på 1103 moh ligg i linja si retning — kjelda sanksjonerer ikkje ei kryssing, så korridoren har eit vegpunkt aust for vatnet og går utanom det. Fyrste løysinga gjekk 541 m over brevatnet, opptil 119 m frå den kartlagde stranda: eit einskilt vegpunkt aust for vatnet held ikkje, for Dijkstra skjer hjørnet på den 1,4 km lange etappen frå Sollibotnen. Tre punkt langs sør- og austbreidda (1117, 1147 og 1188 moh) legg linja rundt vatnet på land; eit fjerde på 1110 midt på austbreidda vart teke ut att, fordi det kosta 37 høgdemeter tilbake utan å flytte linja.",
+    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (219 m from 1.01 km, 509 m from 1.31 km)."
    }
   ]
  },
@@ -4029,10 +4715,34 @@
       "elevation_m": 346.0
      },
      {
-      "name": "Steinkveane",
-      "lat": 61.368,
-      "lng": 7.308,
-      "elevation_m": 555.0
+      "name": "stien ved 1.98 km",
+      "lat": 61.36958,
+      "lng": 7.30964
+     },
+     {
+      "name": "stien ved 1.98 km",
+      "lat": 61.36924,
+      "lng": 7.31023
+     },
+     {
+      "name": "stien ved 1.98 km",
+      "lat": 61.36868,
+      "lng": 7.30991
+     },
+     {
+      "name": "stien ved 1.98 km",
+      "lat": 61.36844,
+      "lng": 7.31
+     },
+     {
+      "name": "stien ved 1.98 km",
+      "lat": 61.3677,
+      "lng": 7.30955
+     },
+     {
+      "name": "stien ved 1.98 km",
+      "lat": 61.36738,
+      "lng": 7.30896
      },
      {
       "name": "Svolsete",
@@ -4048,7 +4758,8 @@
      }
     ],
     "source": "researched, verified (ok), no local audit",
-    "notes": "ut.no 118393, «Fottur til Molden frå Marifjøra»: «Stien startar på traktorveg/grusveg før den etter 1,5 km går bratt oppover i skogen til Steinkveane, der det er bord og benkar … Derifrå går stien i varierande skogsterreng til den nedlagde stølen Svolsete … Etter Svolsete er det fjellterreng med nokre bratte bakkar opp til toppen.» 12,5 km, 1106 høgdemeter, 5 timar, juni–oktober, VERY_TOUGH. Svolsete er registerført (Seter/støl, Luster, 61.35745/7.30467) og les 723,9 moh. Steinkveane finst ikkje i registeret; punktet er sett der linja passerer 555 moh, mellom den bratte skogen og Svolsete. 1120 − 1 = 1119 mot ut.nos 1106. Appens normalrute går frå Mollandsmarki på 501 moh, ei femtedel av stigninga."
+    "notes": "ut.no 118393, «Fottur til Molden frå Marifjøra»: «Stien startar på traktorveg/grusveg før den etter 1,5 km går bratt oppover i skogen til Steinkveane, der det er bord og benkar … Derifrå går stien i varierande skogsterreng til den nedlagde stølen Svolsete … Etter Svolsete er det fjellterreng med nokre bratte bakkar opp til toppen.» 12,5 km, 1106 høgdemeter, 5 timar, juni–oktober, VERY_TOUGH. Svolsete er registerført (Seter/støl, Luster, 61.35745/7.30467) og les 723,9 moh. Steinkveane finst ikkje i registeret; punktet er sett der linja passerer 555 moh, mellom den bratte skogen og Svolsete. 1120 − 1 = 1119 mot ut.nos 1106. Appens normalrute går frå Mollandsmarki på 501 moh, ei femtedel av stigninga.",
+    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (209 m from 1.98 km); replaced Steinkveane."
    }
   ]
  },
@@ -4093,6 +4804,36 @@
     },
     "waypoints": [
      {
+      "name": "stien ved 2.77 km",
+      "lat": 60.65429,
+      "lng": 6.7007
+     },
+     {
+      "name": "stien ved 2.77 km",
+      "lat": 60.6538,
+      "lng": 6.70226
+     },
+     {
+      "name": "stien ved 2.77 km",
+      "lat": 60.65346,
+      "lng": 6.70226
+     },
+     {
+      "name": "stien ved 2.77 km",
+      "lat": 60.65291,
+      "lng": 6.70184
+     },
+     {
+      "name": "stien ved 2.77 km",
+      "lat": 60.65246,
+      "lng": 6.70122
+     },
+     {
+      "name": "stien ved 2.77 km",
+      "lat": 60.652,
+      "lng": 6.70059
+     },
+     {
       "name": "Horndalsbotnen",
       "lat": 60.65143,
       "lng": 6.70104,
@@ -4106,7 +4847,8 @@
      }
     ],
     "source": "researched, verified (corrected), no local audit",
-    "notes": "Skredbaner i den øvre lia mot Bjørnsetstølen — hald deg i skogen der nede. Siste kneika opp mot toppen er brattaste partiet på ruta."
+    "notes": "Skredbaner i den øvre lia mot Bjørnsetstølen — hald deg i skogen der nede. Siste kneika opp mot toppen er brattaste partiet på ruta.",
+    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (229 m from 2.77 km)."
    },
    {
     "id": "skaftedalen",
@@ -4121,16 +4863,160 @@
     },
     "waypoints": [
      {
+      "name": "stien ved 0.18 km",
+      "lat": 60.60028,
+      "lng": 6.64688
+     },
+     {
+      "name": "stien ved 0.18 km",
+      "lat": 60.60095,
+      "lng": 6.64783
+     },
+     {
+      "name": "stien ved 0.18 km",
+      "lat": 60.60163,
+      "lng": 6.64877
+     },
+     {
+      "name": "stien ved 0.18 km",
+      "lat": 60.60232,
+      "lng": 6.64898
+     },
+     {
+      "name": "stien ved 0.18 km",
+      "lat": 60.6031,
+      "lng": 6.65049
+     },
+     {
+      "name": "stien ved 0.18 km",
+      "lat": 60.60387,
+      "lng": 6.65019
+     },
+     {
+      "name": "stien ved 0.18 km",
+      "lat": 60.60464,
+      "lng": 6.64989
+     },
+     {
+      "name": "stien ved 0.77 km",
+      "lat": 60.60607,
+      "lng": 6.65057
+     },
+     {
+      "name": "stien ved 0.77 km",
+      "lat": 60.60683,
+      "lng": 6.65027
+     },
+     {
+      "name": "stien ved 0.77 km",
+      "lat": 60.60759,
+      "lng": 6.64997
+     },
+     {
       "name": "opp dalen",
       "lat": 60.608,
       "lng": 6.65,
       "elevation_m": 661.58
      },
      {
-      "name": "slakt terreng mot stølen",
-      "lat": 60.617,
-      "lng": 6.653,
-      "elevation_m": 724.29
+      "name": "stien ved 1.68 km",
+      "lat": 60.61361,
+      "lng": 6.65143
+     },
+     {
+      "name": "stien ved 1.68 km",
+      "lat": 60.61441,
+      "lng": 6.65152
+     },
+     {
+      "name": "stien ved 1.68 km",
+      "lat": 60.61496,
+      "lng": 6.6528
+     },
+     {
+      "name": "stien ved 1.68 km",
+      "lat": 60.61576,
+      "lng": 6.65379
+     },
+     {
+      "name": "stien ved 1.68 km",
+      "lat": 60.61656,
+      "lng": 6.65478
+     },
+     {
+      "name": "stien ved 1.68 km",
+      "lat": 60.6174,
+      "lng": 6.65549
+     },
+     {
+      "name": "stien ved 1.68 km",
+      "lat": 60.61825,
+      "lng": 6.65619
+     },
+     {
+      "name": "stien ved 1.68 km",
+      "lat": 60.6192,
+      "lng": 6.65671
+     },
+     {
+      "name": "stien ved 1.68 km",
+      "lat": 60.62016,
+      "lng": 6.65722
+     },
+     {
+      "name": "stien ved 1.68 km",
+      "lat": 60.62065,
+      "lng": 6.65774
+     },
+     {
+      "name": "stien ved 1.68 km",
+      "lat": 60.62113,
+      "lng": 6.65825
+     },
+     {
+      "name": "stien ved 1.68 km",
+      "lat": 60.62189,
+      "lng": 6.6582
+     },
+     {
+      "name": "stien ved 1.68 km",
+      "lat": 60.62265,
+      "lng": 6.65814
+     },
+     {
+      "name": "stien ved 1.68 km",
+      "lat": 60.6234,
+      "lng": 6.65808
+     },
+     {
+      "name": "stien ved 1.68 km",
+      "lat": 60.62359,
+      "lng": 6.65718
+     },
+     {
+      "name": "stien ved 1.68 km",
+      "lat": 60.62412,
+      "lng": 6.65677
+     },
+     {
+      "name": "stien ved 1.68 km",
+      "lat": 60.62485,
+      "lng": 6.65666
+     },
+     {
+      "name": "stien ved 1.68 km",
+      "lat": 60.62497,
+      "lng": 6.65616
+     },
+     {
+      "name": "stien ved 1.68 km",
+      "lat": 60.62484,
+      "lng": 6.65543
+     },
+     {
+      "name": "stien ved 1.68 km",
+      "lat": 60.62432,
+      "lng": 6.65464
      },
      {
       "name": "Skytjeset",
@@ -4158,7 +5044,8 @@
      }
     ],
     "source": "researched, verified (corrected), no local audit",
-    "notes": "Fri Flyt, «Turbeskrivelse Horndalsnuten», (FRA SØR): «Det finnes også et flott alternativ på solsiden. Fra Skaftedalen går du i slakt terreng til stølen Skytjeset (omtrent 890 moh). Herfra må du vurdere snøforholdene. Enten går du inn i et bratt, markert dalsøkk som leder til toppen, eller krysser ut til venstre og følger en ryggformasjon, og deretter flanken til topps.» Faktaboksen fører begge startsteda: «Oppstigningen fra nord starter ved Skiple i Raundalen, snaut tjue kilometer øst fra Voss. Oppstigningen fra sør starter i Skaftedalen.» Og innleiinga seier det same: «Det er to gode utgangspunkt for denne turen, et på den skyggefulle nordsiden, og et som ligger solvendt mot sør.» Appens rute er nordruta frå Skiple; dette er sørruta. Skytjeset er registerført (Seter/støl, Voss, 60,62519/6,65564) — vegpunktet her ligg 260 m nord for registerpunktet, på 882 moh, som er kjelda sine «omtrent 890». Ruta her følgjer ryggformasjonen og flanken, ikkje det bratte dalsøkket: kjelda gjer valet avhengig av snøforhold, og ryggen er den linja som er skildra heile vegen til topps."
+    "notes": "Fri Flyt, «Turbeskrivelse Horndalsnuten», (FRA SØR): «Det finnes også et flott alternativ på solsiden. Fra Skaftedalen går du i slakt terreng til stølen Skytjeset (omtrent 890 moh). Herfra må du vurdere snøforholdene. Enten går du inn i et bratt, markert dalsøkk som leder til toppen, eller krysser ut til venstre og følger en ryggformasjon, og deretter flanken til topps.» Faktaboksen fører begge startsteda: «Oppstigningen fra nord starter ved Skiple i Raundalen, snaut tjue kilometer øst fra Voss. Oppstigningen fra sør starter i Skaftedalen.» Og innleiinga seier det same: «Det er to gode utgangspunkt for denne turen, et på den skyggefulle nordsiden, og et som ligger solvendt mot sør.» Appens rute er nordruta frå Skiple; dette er sørruta. Skytjeset er registerført (Seter/støl, Voss, 60,62519/6,65564) — vegpunktet her ligg 260 m nord for registerpunktet, på 882 moh, som er kjelda sine «omtrent 890». Ruta her følgjer ryggformasjonen og flanken, ikkje det bratte dalsøkket: kjelda gjer valet avhengig av snøforhold, og ryggen er den linja som er skildra heile vegen til topps.",
+    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (419 m from 0.18 km, 189 m from 0.77 km, 1218 m from 1.68 km); replaced slakt terreng mot stølen."
    }
   ]
  },
@@ -4203,6 +5090,66 @@
     },
     "waypoints": [
      {
+      "name": "stien ved 0.89 km",
+      "lat": 60.02528,
+      "lng": 6.07541
+     },
+     {
+      "name": "stien ved 0.89 km",
+      "lat": 60.02568,
+      "lng": 6.07563
+     },
+     {
+      "name": "stien ved 0.89 km",
+      "lat": 60.02608,
+      "lng": 6.0776
+     },
+     {
+      "name": "stien ved 0.89 km",
+      "lat": 60.02621,
+      "lng": 6.07887
+     },
+     {
+      "name": "stien ved 0.89 km",
+      "lat": 60.02669,
+      "lng": 6.08002
+     },
+     {
+      "name": "stien ved 0.89 km",
+      "lat": 60.02717,
+      "lng": 6.08116
+     },
+     {
+      "name": "stien ved 0.89 km",
+      "lat": 60.02729,
+      "lng": 6.0825
+     },
+     {
+      "name": "stien ved 0.89 km",
+      "lat": 60.02741,
+      "lng": 6.08385
+     },
+     {
+      "name": "stien ved 0.89 km",
+      "lat": 60.02711,
+      "lng": 6.08469
+     },
+     {
+      "name": "stien ved 0.89 km",
+      "lat": 60.02649,
+      "lng": 6.08518
+     },
+     {
+      "name": "stien ved 0.89 km",
+      "lat": 60.02581,
+      "lng": 6.08603
+     },
+     {
+      "name": "stien ved 0.89 km",
+      "lat": 60.02513,
+      "lng": 6.08688
+     },
+     {
       "name": "Ryggen over Omnetjørnene, 1033",
       "lat": 60.0191,
       "lng": 6.08444,
@@ -4216,7 +5163,8 @@
      }
     ],
     "source": "researched, verified (corrected), no local audit",
-    "notes": "Toppskavl. Turen kan krevje stegjern og isøks. Den vestlege renna ned er 40 grader og eit eige val, ikkje normalruta."
+    "notes": "Toppskavl. Turen kan krevje stegjern og isøks. Den vestlege renna ned er 40 grader og eit eige val, ikkje normalruta.",
+    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (644 m from 0.89 km)."
    }
   ]
  },
@@ -4536,10 +5484,50 @@
       "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/943660854."
      },
      {
+      "name": "stien ved 0.90 km",
+      "lat": 59.7827,
+      "lng": 9.22224
+     },
+     {
+      "name": "stien ved 0.90 km",
+      "lat": 59.78304,
+      "lng": 9.22304
+     },
+     {
+      "name": "stien ved 0.90 km",
+      "lat": 59.78339,
+      "lng": 9.22433
+     },
+     {
+      "name": "stien ved 0.90 km",
+      "lat": 59.78374,
+      "lng": 9.22561
+     },
+     {
       "name": "Sudstul",
       "lat": 59.78396,
       "lng": 9.22618,
       "elevation_m": 726.81
+     },
+     {
+      "name": "stien ved 1.32 km",
+      "lat": 59.78478,
+      "lng": 9.22709
+     },
+     {
+      "name": "stien ved 1.32 km",
+      "lat": 59.78517,
+      "lng": 9.22727
+     },
+     {
+      "name": "stien ved 1.32 km",
+      "lat": 59.78625,
+      "lng": 9.22723
+     },
+     {
+      "name": "stien ved 1.32 km",
+      "lat": 59.78676,
+      "lng": 9.22668
      },
      {
       "name": "Vassholet",
@@ -4555,7 +5543,8 @@
      }
     ],
     "source": "researched, verified (corrected), no local audit",
-    "notes": "Den bratte nedstigningen mot sør er det eneste partiet på turen der helninga teller, og den er samtidig den anbefalte returen — velg den etter forholdene, ikke etter kartet. Ryggen langs Surløyterinden er avblåst i vind og kan være hard og isete mens sørsida er myk. Blefjell har en sårbar villreinstamme, og ut.no ber uttrykkelig om at det tas hensyn; det er en grunn til å holde seg til den beskrevne ruta framfor å legge egne spor over platået."
+    "notes": "Den bratte nedstigningen mot sør er det eneste partiet på turen der helninga teller, og den er samtidig den anbefalte returen — velg den etter forholdene, ikke etter kartet. Ryggen langs Surløyterinden er avblåst i vind og kan være hard og isete mens sørsida er myk. Blefjell har en sårbar villreinstamme, og ut.no ber uttrykkelig om at det tas hensyn; det er en grunn til å holde seg til den beskrevne ruta framfor å legge egne spor over platået.",
+    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (209 m from 0.9 km, 169 m from 1.32 km)."
    }
   ]
  },
@@ -4616,10 +5605,150 @@
       "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/1041649733."
      },
      {
+      "name": "stien ved 0.92 km",
+      "lat": 60.4522,
+      "lng": 9.93971
+     },
+     {
+      "name": "stien ved 0.92 km",
+      "lat": 60.45299,
+      "lng": 9.93932
+     },
+     {
+      "name": "stien ved 0.92 km",
+      "lat": 60.45332,
+      "lng": 9.93981
+     },
+     {
+      "name": "stien ved 0.92 km",
+      "lat": 60.45342,
+      "lng": 9.94065
+     },
+     {
+      "name": "stien ved 0.92 km",
+      "lat": 60.45368,
+      "lng": 9.94085
+     },
+     {
+      "name": "stien ved 0.92 km",
+      "lat": 60.45423,
+      "lng": 9.94068
+     },
+     {
+      "name": "stien ved 0.92 km",
+      "lat": 60.45467,
+      "lng": 9.9402
+     },
+     {
+      "name": "stien ved 0.92 km",
+      "lat": 60.45566,
+      "lng": 9.93986
+     },
+     {
+      "name": "stien ved 0.92 km",
+      "lat": 60.45664,
+      "lng": 9.93953
+     },
+     {
+      "name": "stien ved 0.92 km",
+      "lat": 60.45717,
+      "lng": 9.9388
+     },
+     {
+      "name": "stien ved 0.92 km",
+      "lat": 60.4577,
+      "lng": 9.93808
+     },
+     {
+      "name": "stien ved 0.92 km",
+      "lat": 60.45806,
+      "lng": 9.93715
+     },
+     {
       "name": "Svarttjernskollen",
       "lat": 60.46191,
       "lng": 9.93353,
       "elevation_m": 1054.32
+     },
+     {
+      "name": "stien ved 2.18 km",
+      "lat": 60.46244,
+      "lng": 9.93269
+     },
+     {
+      "name": "stien ved 2.18 km",
+      "lat": 60.46292,
+      "lng": 9.9333
+     },
+     {
+      "name": "stien ved 2.18 km",
+      "lat": 60.46331,
+      "lng": 9.93288
+     },
+     {
+      "name": "stien ved 2.18 km",
+      "lat": 60.46375,
+      "lng": 9.93301
+     },
+     {
+      "name": "stien ved 2.18 km",
+      "lat": 60.46434,
+      "lng": 9.93251
+     },
+     {
+      "name": "stien ved 2.18 km",
+      "lat": 60.46466,
+      "lng": 9.93272
+     },
+     {
+      "name": "stien ved 2.18 km",
+      "lat": 60.46567,
+      "lng": 9.93218
+     },
+     {
+      "name": "stien ved 2.18 km",
+      "lat": 60.46642,
+      "lng": 9.93145
+     },
+     {
+      "name": "stien ved 2.18 km",
+      "lat": 60.4671,
+      "lng": 9.93034
+     },
+     {
+      "name": "stien ved 2.18 km",
+      "lat": 60.46747,
+      "lng": 9.92915
+     },
+     {
+      "name": "stien ved 2.18 km",
+      "lat": 60.46784,
+      "lng": 9.92796
+     },
+     {
+      "name": "stien ved 2.18 km",
+      "lat": 60.46814,
+      "lng": 9.92738
+     },
+     {
+      "name": "stien ved 2.18 km",
+      "lat": 60.4688,
+      "lng": 9.92647
+     },
+     {
+      "name": "stien ved 2.18 km",
+      "lat": 60.46945,
+      "lng": 9.92556
+     },
+     {
+      "name": "stien ved 2.18 km",
+      "lat": 60.4701,
+      "lng": 9.92465
+     },
+     {
+      "name": "stien ved 2.18 km",
+      "lat": 60.47032,
+      "lng": 9.92345
      },
      {
       "name": "Vest for Venekollen",
@@ -4629,7 +5758,8 @@
      }
     ],
     "source": "researched, verified (corrected), no local audit",
-    "notes": "Vestsida av Gyranfisen stuper mot Vidalen, og både Bukollen, Gråfjell og Storrustefjell på andre sida av dalen er beskrevet med bratte stup — det er den kanten toppen har, og den er feil veg å kjøre ned. Ryggen fra Svarttjernskollen til toppen er avblåst i vind. Løypene til Gyranfisen og Treknatten kjøres bare når forholdene tillater det, og prioriteres i vinter- og påskeferien; utenfor det er ruta usporet myr og fjell. Vikerfjell naturreservat dekker deler av området."
+    "notes": "Vestsida av Gyranfisen stuper mot Vidalen, og både Bukollen, Gråfjell og Storrustefjell på andre sida av dalen er beskrevet med bratte stup — det er den kanten toppen har, og den er feil veg å kjøre ned. Ryggen fra Svarttjernskollen til toppen er avblåst i vind. Løypene til Gyranfisen og Treknatten kjøres bare når forholdene tillater det, og prioriteres i vinter- og påskeferien; utenfor det er ruta usporet myr og fjell. Vikerfjell naturreservat dekker deler av området.",
+    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (629 m from 0.92 km, 949 m from 2.18 km)."
    }
   ]
  },
@@ -4654,6 +5784,51 @@
       "elevation_m": 476.29
      },
      {
+      "name": "stien ved 2.60 km",
+      "lat": 59.51162,
+      "lng": 9.57436
+     },
+     {
+      "name": "stien ved 2.60 km",
+      "lat": 59.51163,
+      "lng": 9.57543
+     },
+     {
+      "name": "stien ved 2.60 km",
+      "lat": 59.51191,
+      "lng": 9.57633
+     },
+     {
+      "name": "stien ved 2.60 km",
+      "lat": 59.5121,
+      "lng": 9.5777
+     },
+     {
+      "name": "stien ved 2.60 km",
+      "lat": 59.51198,
+      "lng": 9.57828
+     },
+     {
+      "name": "stien ved 2.60 km",
+      "lat": 59.51205,
+      "lng": 9.57881
+     },
+     {
+      "name": "stien ved 2.60 km",
+      "lat": 59.51195,
+      "lng": 9.57939
+     },
+     {
+      "name": "stien ved 2.60 km",
+      "lat": 59.51174,
+      "lng": 9.57971
+     },
+     {
+      "name": "stien ved 2.60 km",
+      "lat": 59.51092,
+      "lng": 9.58001
+     },
+     {
       "name": "Skrimsetra",
       "lat": 59.50837,
       "lng": 9.59368,
@@ -4674,7 +5849,7 @@
     ],
     "source": "researched, verified (corrected), no local audit",
     "notes": "Toppen ligger over tregrensa og er den eneste plassen på turen der helninga teller: 240 høydemeter opp fra Sørmyrseter på rundt en og en halv kilometer, brattest de siste hundre. Ellers er ruta skogsterreng og myr, og faren er å bomme på løypa i skodde snarere enn skred. Skrim ligger lavt nok til at snøen kommer og går — ut.no fører skisesongen som januar til mars — og løypene mellom Ravalsjø og Sørmyrseter er det som gjør turen gjennomførbar på en dag.",
-    "corridorNote": "«Sørmyrseter» moved onto the line in the review round: the solved line passed 59 m beside the researched point and walked out to it and back (59.50372/9.64855, 620 m); the waypoint now sits where the line already ran, at DTM1 610 m."
+    "corridorNote": "«Sørmyrseter» moved onto the line in the review round: the solved line passed 59 m beside the researched point and walked out to it and back (59.50372/9.64855, 620 m); the waypoint now sits where the line already ran, at DTM1 610 m. follow_trails.py: put on the mapped path where the line ran beside it through forest (279 m from 2.6 km)."
    }
   ]
  },
@@ -5062,6 +6237,21 @@
     },
     "waypoints": [
      {
+      "name": "stien ved 0.24 km",
+      "lat": 62.91578,
+      "lng": 9.12919
+     },
+     {
+      "name": "stien ved 0.24 km",
+      "lat": 62.91526,
+      "lng": 9.12882
+     },
+     {
+      "name": "stien ved 0.24 km",
+      "lat": 62.91474,
+      "lng": 9.12846
+     },
+     {
       "name": "Opp lia over Gråsjøen",
       "lat": 62.9054,
       "lng": 9.12477,
@@ -5099,7 +6289,8 @@
      }
     ],
     "source": "researched, verified (ok), no local audit",
-    "notes": "Ut.no fører tre: ruta går i skredterreng med løsneområder over 30 grader og utløpsområder som ikke kan omgås; fra ca 1380 moh går den over bre i ca 500 m, «så sjekk med lokalkjente i forkant at det er nok snø på dette strekket»; og «toppflanken er stupbratt mot Ø, så hold god avstand her». I tillegg advarer beskrivelsen mot å skrå opp lia for tidlig på grunn av fonna på Gråhaugfjellet, og mot våte løssnøskred utover dagen på varme vårdager."
+    "notes": "Ut.no fører tre: ruta går i skredterreng med løsneområder over 30 grader og utløpsområder som ikke kan omgås; fra ca 1380 moh går den over bre i ca 500 m, «så sjekk med lokalkjente i forkant at det er nok snø på dette strekket»; og «toppflanken er stupbratt mot Ø, så hold god avstand her». I tillegg advarer beskrivelsen mot å skrå opp lia for tidlig på grunn av fonna på Gråhaugfjellet, og mot våte løssnøskred utover dagen på varme vårdager.",
+    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (159 m from 0.24 km)."
    },
    {
     "id": "trollheimshytta",
@@ -6493,7 +7684,7 @@
     "id": "fitjadalen",
     "name": "Fra Fitjadalen om Håsete",
     "description": "Frå parkeringa ved støls- og hyttetunet i Fitjadalen over gangbrua på Kjølo, opp lia til Håsete, vidare nordvestover forbi skihytta og nordover opp i skaret mellom Glynt og toppen",
-    "corridorNote": "Trasé etter Fri Flyt og ut.no 116438, på den kartlagde stikjeda way/376310909 → way/376310905 → way/953805990: sti-start ved Kjølo (302,6 moh), Håsete-stølen (bygning way/1391666538, 21 m frå registerpunktet, 753,8 moh), skihytta (OSM way/939488686, 1109,8 moh — Fri Flyt seier «omtrent 1000 moh», westcoastpeaks «the hut at 1100m»), og skaret mellom Glynt og toppen der sommarstien kryssar skuldra 1300,6 moh 85 m nord for varden. Alternativ-oppstiginga Fri Flyt nemner frå skihytta — sommarstien på skråhyller — er ikkje korridoren: han åtvarar sjølv mot henne ved hardt føre.",
+    "corridorNote": "Trasé etter Fri Flyt og ut.no 116438, på den kartlagde stikjeda way/376310909 → way/376310905 → way/953805990: sti-start ved Kjølo (302,6 moh), Håsete-stølen (bygning way/1391666538, 21 m frå registerpunktet, 753,8 moh), skihytta (OSM way/939488686, 1109,8 moh — Fri Flyt seier «omtrent 1000 moh», westcoastpeaks «the hut at 1100m»), og skaret mellom Glynt og toppen der sommarstien kryssar skuldra 1300,6 moh 85 m nord for varden. Alternativ-oppstiginga Fri Flyt nemner frå skihytta — sommarstien på skråhyller — er ikkje korridoren: han åtvarar sjølv mot henne ved hardt føre. follow_trails.py: put on the mapped path where the line ran beside it through forest (229 m from 0.54 km).",
     "trailhead": {
      "name": "Fitjadalen",
      "lat": 60.4286,
@@ -6528,6 +7719,31 @@
       "lng": 6.15765,
       "elevation_m": 316.0,
       "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/939477983, way/939479592."
+     },
+     {
+      "name": "stien ved 0.54 km",
+      "lat": 60.43151,
+      "lng": 6.15783
+     },
+     {
+      "name": "stien ved 0.54 km",
+      "lat": 60.43182,
+      "lng": 6.1582
+     },
+     {
+      "name": "stien ved 0.54 km",
+      "lat": 60.43269,
+      "lng": 6.15769
+     },
+     {
+      "name": "stien ved 0.54 km",
+      "lat": 60.43319,
+      "lng": 6.15656
+     },
+     {
+      "name": "stien ved 0.54 km",
+      "lat": 60.43369,
+      "lng": 6.15542
      },
      {
       "name": "stien i lia",
@@ -6589,7 +7805,7 @@
     "description": "Frå Furedalen alpinsenter etter dei prepparerte løypene på Mødalsvegen til Mødal, opp kliva mot Stoveveggen, sør for Gråskorvenuten, gjennom søkket og siste biten langs ryggen til varden",
     "avoidWater": false,
     "waterNote": "Lina er trekt av ut.no si eiga GPX-linje. Fyrste løysinga køyrde med vannkost og la 281 ekstrapunkt i våte legg utan å bli rein (85 m att); det våte langs lina er myr og småtjørner på platået som kjelda sjølv kryssar. Løyst utan vannkost; vasskontakt målt og handtert med check_ground.py etter Snota/Styggemann-regelen — kryssingar kjelda sjølv tek, blir namngjevne i prosaen, og regulerte vatn finst ikkje på lina.",
-    "corridorNote": "Waypointa er trekte av ut.no si eiga GPX-linje (api/gpx/trip/1112154404, 257 punkt, 8,86 km mot publiserte 9,0), som endar 8 m frå det resolverte toppunktet. Mødalsvegen er kartlagd som piste:type=nordic med grooming classic/skating heile vegen til Mødal — dei «preparerte løypene» i kjelda er langrennsspor på ein seterveg, ikkje alpinbakke; alpintraséane i Furedalen ligg vest for linja. «Stoveveggen» og «Middagshola» i kjelda finst ikkje i registeret nær ruta; søkket på linja mellom 996 og 985 moh er det kjelda kallar Middagshola.",
+    "corridorNote": "Waypointa er trekte av ut.no si eiga GPX-linje (api/gpx/trip/1112154404, 257 punkt, 8,86 km mot publiserte 9,0), som endar 8 m frå det resolverte toppunktet. Mødalsvegen er kartlagd som piste:type=nordic med grooming classic/skating heile vegen til Mødal — dei «preparerte løypene» i kjelda er langrennsspor på ein seterveg, ikkje alpinbakke; alpintraséane i Furedalen ligg vest for linja. «Stoveveggen» og «Middagshola» i kjelda finst ikkje i registeret nær ruta; søkket på linja mellom 996 og 985 moh er det kjelda kallar Middagshola. follow_trails.py: put on the mapped path where the line ran beside it through forest (358 m from 1.82 km); replaced Mødalsvegen ved 517.",
     "trailhead": {
      "name": "Furedalen",
      "lat": 60.37236,
@@ -6664,10 +7880,39 @@
       "elevation_m": 499.91
      },
      {
-      "name": "Mødalsvegen ved 517",
-      "lat": 60.35409,
-      "lng": 5.97252,
-      "elevation_m": 517.04
+      "name": "stien ved 1.82 km",
+      "lat": 60.35766,
+      "lng": 5.9731
+     },
+     {
+      "name": "stien ved 1.82 km",
+      "lat": 60.35723,
+      "lng": 5.97265
+     },
+     {
+      "name": "stien ved 1.82 km",
+      "lat": 60.35656,
+      "lng": 5.97258
+     },
+     {
+      "name": "stien ved 1.82 km",
+      "lat": 60.35606,
+      "lng": 5.9722
+     },
+     {
+      "name": "stien ved 1.82 km",
+      "lat": 60.35528,
+      "lng": 5.97221
+     },
+     {
+      "name": "stien ved 1.82 km",
+      "lat": 60.35449,
+      "lng": 5.97223
+     },
+     {
+      "name": "stien ved 1.82 km",
+      "lat": 60.35415,
+      "lng": 5.97243
      },
      {
       "name": "Mødal",
@@ -7214,10 +8459,14 @@
       "elevation_m": 542.22
      },
      {
-      "name": "det brattare partiet",
-      "lat": 61.33,
-      "lng": 6.91,
-      "elevation_m": 743.67
+      "name": "stien ved 1.10 km",
+      "lat": 61.32866,
+      "lng": 6.91133
+     },
+     {
+      "name": "stien ved 1.10 km",
+      "lat": 61.32903,
+      "lng": 6.90931
      },
      {
       "name": "Orraleiken",
@@ -7233,7 +8482,8 @@
      }
     ],
     "source": "researched, verified (corrected), no local audit",
-    "notes": "Fri Flyt: brattaste punkt 33–35 grader, og skredåtvaringa gjeld normalvegen sjølv: skiløparar har løyst ut skred i det brattare partiet på søraustryggen under opptur i ustabile forhold. Seks nedfartar hos Fri Flyt (søraust, sør ×2, nord, aust ×2) — normalvegen opp og ned er korridoren."
+    "notes": "Fri Flyt: brattaste punkt 33–35 grader, og skredåtvaringa gjeld normalvegen sjølv: skiløparar har løyst ut skred i det brattare partiet på søraustryggen under opptur i ustabile forhold. Seks nedfartar hos Fri Flyt (søraust, sør ×2, nord, aust ×2) — normalvegen opp og ned er korridoren.",
+    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (206 m from 1.1 km); replaced det brattare partiet."
    }
   ]
  },
@@ -7630,10 +8880,70 @@
     },
     "waypoints": [
      {
+      "name": "stien ved 0.16 km",
+      "lat": 68.97763,
+      "lng": 18.52431
+     },
+     {
+      "name": "stien ved 0.16 km",
+      "lat": 68.97811,
+      "lng": 18.52521
+     },
+     {
+      "name": "stien ved 0.16 km",
+      "lat": 68.97858,
+      "lng": 18.52611
+     },
+     {
+      "name": "stien ved 0.16 km",
+      "lat": 68.97857,
+      "lng": 18.52681
+     },
+     {
+      "name": "stien ved 0.16 km",
+      "lat": 68.97834,
+      "lng": 18.52826
+     },
+     {
+      "name": "stien ved 0.16 km",
+      "lat": 68.97793,
+      "lng": 18.52914
+     },
+     {
+      "name": "stien ved 0.16 km",
+      "lat": 68.97748,
+      "lng": 18.53166
+     },
+     {
       "name": "sørsida av Tindelva",
       "lat": 68.97691,
       "lng": 18.53416,
       "elevation_m": 143.2
+     },
+     {
+      "name": "stien ved 0.63 km",
+      "lat": 68.97665,
+      "lng": 18.53522
+     },
+     {
+      "name": "stien ved 0.63 km",
+      "lat": 68.97605,
+      "lng": 18.53707
+     },
+     {
+      "name": "stien ved 0.63 km",
+      "lat": 68.97585,
+      "lng": 18.53799
+     },
+     {
+      "name": "stien ved 0.63 km",
+      "lat": 68.97559,
+      "lng": 18.54059
+     },
+     {
+      "name": "stien ved 0.63 km",
+      "lat": 68.97506,
+      "lng": 18.54248
      },
      {
       "name": "bjørkelia",
@@ -7679,7 +8989,8 @@
      }
     ],
     "source": "researched, verified (corrected), corridor re-pinned west of the glacier, no local audit",
-    "notes": "Fri Flyt: KAST ikkje klassifisert. Faremomenta er hans eigne: «Skredfare må vurderes nøye på nedkjøringene i botnen mellom Søndre og Vestre Istind og ned fra Søndre Istind. Ryggen opp normalveien er relativt skredsikker. Hold god avstand fra hengeskavlene ut over Nordveggen.» Siste stykket mot toppen er ofte avblåse, så skia må kanskje berast. Nedkøyringsrenna sørvest frå toppen er 30–35 grader. Isøks og stegjern gjeld berre toppegg-varianten frå Søndre Istind."
+    "notes": "Fri Flyt: KAST ikkje klassifisert. Faremomenta er hans eigne: «Skredfare må vurderes nøye på nedkjøringene i botnen mellom Søndre og Vestre Istind og ned fra Søndre Istind. Ryggen opp normalveien er relativt skredsikker. Hold god avstand fra hengeskavlene ut over Nordveggen.» Siste stykket mot toppen er ofte avblåse, så skia må kanskje berast. Nedkøyringsrenna sørvest frå toppen er 30–35 grader. Isøks og stegjern gjeld berre toppegg-varianten frå Søndre Istind.",
+    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (467 m from 0.63 km). follow_trails.py: put on the mapped path where the line ran beside it through forest (259 m from 0.16 km)."
    }
   ]
  },
@@ -8851,10 +10162,19 @@
       "elevation_m": 7.0
      },
      {
-      "name": "marka innover mot fjellfoten",
-      "lat": 68.283,
-      "lng": 14.62,
-      "elevation_m": 20.0
+      "name": "stien ved 1.61 km",
+      "lat": 68.28345,
+      "lng": 14.62089
+     },
+     {
+      "name": "stien ved 1.61 km",
+      "lat": 68.28347,
+      "lng": 14.619
+     },
+     {
+      "name": "stien ved 1.61 km",
+      "lat": 68.28381,
+      "lng": 14.61642
      },
      {
       "name": "fjellfoten",
@@ -8877,7 +10197,7 @@
     ],
     "source": "researched, verified (ok), no local audit",
     "notes": "Fri Flyt: hold deg på toppen av ryggen — området rundt er skredutsatt. Nedkjøringen mot Vatterfjordpollen kan være skredutsatt, brattest der man tar tidlig av ryggen mot venstre på sørsida. Fra Kudalen på nordsida ligger det ofte hard is mot slutten; ta med stegjern og isøks om du skal den veien.",
-    "corridorNote": "«sørryggen» moved onto the line in the review round: the solved line passed 112 m beside the researched point and walked out to it and back (68.283/14.59, 442 m); the waypoint now sits where the line already ran, at DTM1 368 m. «ryggen der den dreier vest» moved onto the line in the review round: the solved line passed 69 m beside the researched point and walked out to it and back (68.286/14.575, 604 m); the waypoint now sits where the line already ran, at DTM1 641 m."
+    "corridorNote": "«sørryggen» moved onto the line in the review round: the solved line passed 112 m beside the researched point and walked out to it and back (68.283/14.59, 442 m); the waypoint now sits where the line already ran, at DTM1 368 m. «ryggen der den dreier vest» moved onto the line in the review round: the solved line passed 69 m beside the researched point and walked out to it and back (68.286/14.575, 604 m); the waypoint now sits where the line already ran, at DTM1 641 m. follow_trails.py: put on the mapped path where the line ran beside it through forest (177 m from 1.61 km); replaced marka innover mot fjellfoten."
    },
    {
     "id": "kudalsheia",
@@ -9311,6 +10631,36 @@
       "elevation_m": 305.66
      },
      {
+      "name": "stien ved 2.10 km",
+      "lat": 68.44682,
+      "lng": 17.50461
+     },
+     {
+      "name": "stien ved 2.10 km",
+      "lat": 68.44709,
+      "lng": 17.50609
+     },
+     {
+      "name": "stien ved 2.10 km",
+      "lat": 68.44691,
+      "lng": 17.50765
+     },
+     {
+      "name": "stien ved 2.10 km",
+      "lat": 68.4464,
+      "lng": 17.50984
+     },
+     {
+      "name": "stien ved 2.10 km",
+      "lat": 68.44548,
+      "lng": 17.51132
+     },
+     {
+      "name": "stien ved 2.10 km",
+      "lat": 68.44518,
+      "lng": 17.51272
+     },
+     {
       "name": "der stien når Pumpvatnet",
       "lat": 68.44379,
       "lng": 17.52957,
@@ -9372,7 +10722,8 @@
      }
     ],
     "source": "researched, verified (ok), no local audit",
-    "notes": "Fri Flyt, «Turbeskrivelse Beisfjordtøtta»: «Turbeskrivelsene tar utgangspunkt i Djupvik som startpunkt, men man kan også starte turen fra Narvik og følge den populære turstien som leder inn i Tøttdalen fra minikraftverket nordøst for skiheisene. Stien fører fram til Pumpvatn. Herfra kan du følge turbeskrivelsen videre mot Beirfjordtøtta.» Stien er kartlagd heile vegen: OSM way 103977371 → 103977458 → 1095555870 → 1095555869 → 1095555880 → 1095555886 → 1095555858 → 1095555883 → 1095555881 → 1095555888 → 1095555867 → 769899824 → 1095555865 → 1095555864 → 1095555890 → 1095555891 → 1095555889, 3,8 km frå parkeringa til nordaustenden av Pumpvatnet. Frå Pumpvatnet fell ruta saman med normalruta frå Djupvik, som kjelda seier ho skal. Startsteda er 3,7 km og 145 høgdemeter frå kvarandre: Djupvik ligg på 60 moh ved fjorden, Taraldsvikfossen på 205 moh i byen. Boka fører KAST 2 – Utfordrende, 1350 høgdemeter, 6,5 timar, sesong februar–juni, «Isøks og stegjern kan også behøves om det er harde snøforhold». Forsnesvatnet og Isvatnet er regulerte — linja held land, som på normalruta. Dei to andre oppstigningane i boka, 1.2.2 og 1.2.3, står ikkje her: begge opnar med «Start turen på samme måte som 1.2.1», altså same startsted. Dei to siste vegpunkta — ryggen sør for skaret (1317 moh) og toppryggen (1418 moh) — står berre på denne ruta. Routeren løyste ikkje siste etappen frå skaret til varden på denne korridoren sitt rutenett (bboksen er 4,3 km breiare enn normalruta sin, så cellene ligg annleis og toppblokka kom over 45-gradersgrensa), og dei to punkta er lesne av normalruta si eiga linje mellom dei same to endane, ikkje gjetta. Fyrste løysinga klipte 90 m av Pumpvatnet (325 moh) i nordaustre hjørnet. Vegpunktet normalruta har der — nordaustenden på 68,4428/17,532, 324,9 moh — er sett inn, og linja går rundt utløpet på land slik normalruta gjer."
+    "notes": "Fri Flyt, «Turbeskrivelse Beisfjordtøtta»: «Turbeskrivelsene tar utgangspunkt i Djupvik som startpunkt, men man kan også starte turen fra Narvik og følge den populære turstien som leder inn i Tøttdalen fra minikraftverket nordøst for skiheisene. Stien fører fram til Pumpvatn. Herfra kan du følge turbeskrivelsen videre mot Beirfjordtøtta.» Stien er kartlagd heile vegen: OSM way 103977371 → 103977458 → 1095555870 → 1095555869 → 1095555880 → 1095555886 → 1095555858 → 1095555883 → 1095555881 → 1095555888 → 1095555867 → 769899824 → 1095555865 → 1095555864 → 1095555890 → 1095555891 → 1095555889, 3,8 km frå parkeringa til nordaustenden av Pumpvatnet. Frå Pumpvatnet fell ruta saman med normalruta frå Djupvik, som kjelda seier ho skal. Startsteda er 3,7 km og 145 høgdemeter frå kvarandre: Djupvik ligg på 60 moh ved fjorden, Taraldsvikfossen på 205 moh i byen. Boka fører KAST 2 – Utfordrende, 1350 høgdemeter, 6,5 timar, sesong februar–juni, «Isøks og stegjern kan også behøves om det er harde snøforhold». Forsnesvatnet og Isvatnet er regulerte — linja held land, som på normalruta. Dei to andre oppstigningane i boka, 1.2.2 og 1.2.3, står ikkje her: begge opnar med «Start turen på samme måte som 1.2.1», altså same startsted. Dei to siste vegpunkta — ryggen sør for skaret (1317 moh) og toppryggen (1418 moh) — står berre på denne ruta. Routeren løyste ikkje siste etappen frå skaret til varden på denne korridoren sitt rutenett (bboksen er 4,3 km breiare enn normalruta sin, så cellene ligg annleis og toppblokka kom over 45-gradersgrensa), og dei to punkta er lesne av normalruta si eiga linje mellom dei same to endane, ikkje gjetta. Fyrste løysinga klipte 90 m av Pumpvatnet (325 moh) i nordaustre hjørnet. Vegpunktet normalruta har der — nordaustenden på 68,4428/17,532, 324,9 moh — er sett inn, og linja går rundt utløpet på land slik normalruta gjer.",
+    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (358 m from 2.1 km)."
    }
   ]
  },
@@ -9516,6 +10867,26 @@
       "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/968741817."
      },
      {
+      "name": "stien ved 0.54 km",
+      "lat": 68.18479,
+      "lng": 17.29367
+     },
+     {
+      "name": "stien ved 0.54 km",
+      "lat": 68.18492,
+      "lng": 17.29146
+     },
+     {
+      "name": "stien ved 0.54 km",
+      "lat": 68.18504,
+      "lng": 17.28925
+     },
+     {
+      "name": "stien ved 0.54 km",
+      "lat": 68.18495,
+      "lng": 17.28736
+     },
+     {
       "name": "anleggsveien langs Vesterskarelva",
       "lat": 68.1855,
       "lng": 17.28,
@@ -9541,7 +10912,8 @@
      }
     ],
     "source": "researched, verified (ok), no local audit",
-    "notes": "Fri Flyt: KAST 2 – Utfordrende. Se opp for skred sør for toppen og hull i bekken seint i sesongen. Gangnesrenna mot nordaust er relativt bratt i starten, rundt 40 grader, med ispartier fra bekkeløpet og skredaktivitet lenger nede — isøks, stegjern og eventuelt tau i kildens egen utstyrsliste for renna."
+    "notes": "Fri Flyt: KAST 2 – Utfordrende. Se opp for skred sør for toppen og hull i bekken seint i sesongen. Gangnesrenna mot nordaust er relativt bratt i starten, rundt 40 grader, med ispartier fra bekkeløpet og skredaktivitet lenger nede — isøks, stegjern og eventuelt tau i kildens egen utstyrsliste for renna.",
+    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (229 m from 0.54 km)."
    }
   ]
  },
@@ -10033,6 +11405,56 @@
       "elevation_m": 63.0
      },
      {
+      "name": "stien ved 1.11 km",
+      "lat": 68.58243,
+      "lng": 16.46545
+     },
+     {
+      "name": "stien ved 1.11 km",
+      "lat": 68.58293,
+      "lng": 16.46338
+     },
+     {
+      "name": "stien ved 1.11 km",
+      "lat": 68.58348,
+      "lng": 16.46223
+     },
+     {
+      "name": "stien ved 1.11 km",
+      "lat": 68.58404,
+      "lng": 16.46109
+     },
+     {
+      "name": "stien ved 1.11 km",
+      "lat": 68.58413,
+      "lng": 16.45916
+     },
+     {
+      "name": "stien ved 1.63 km",
+      "lat": 68.5846,
+      "lng": 16.45439
+     },
+     {
+      "name": "stien ved 1.63 km",
+      "lat": 68.58485,
+      "lng": 16.45271
+     },
+     {
+      "name": "stien ved 1.63 km",
+      "lat": 68.5851,
+      "lng": 16.45103
+     },
+     {
+      "name": "stien ved 1.63 km",
+      "lat": 68.58536,
+      "lng": 16.45007
+     },
+     {
+      "name": "stien ved 1.63 km",
+      "lat": 68.58589,
+      "lng": 16.44897
+     },
+     {
       "name": "sør for Årbogvatnet",
       "lat": 68.5862,
       "lng": 16.439,
@@ -10064,7 +11486,8 @@
      }
     ],
     "source": "researched, verified (ok), no local audit",
-    "notes": "Fri Flyt: KAST 1 – Enkelt på normalruta, men hold ryggen: ved nedkjøring til venstre (nord) er to personer gravd fram av skred (2017 og 2019). Vindutsett; små vasspeil i søkka om våren. Sørrenna og vestrennene er komplekse ekspertlinjer og ikkje denne ruta."
+    "notes": "Fri Flyt: KAST 1 – Enkelt på normalruta, men hold ryggen: ved nedkjøring til venstre (nord) er to personer gravd fram av skred (2017 og 2019). Vindutsett; små vasspeil i søkka om våren. Sørrenna og vestrennene er komplekse ekspertlinjer og ikkje denne ruta.",
+    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (269 m from 1.11 km, 209 m from 1.63 km)."
    }
   ]
  },
@@ -10140,6 +11563,56 @@
     },
     "waypoints": [
      {
+      "name": "stien ved 0.51 km",
+      "lat": 68.57227,
+      "lng": 16.22818
+     },
+     {
+      "name": "stien ved 0.51 km",
+      "lat": 68.57322,
+      "lng": 16.2274
+     },
+     {
+      "name": "stien ved 0.51 km",
+      "lat": 68.57417,
+      "lng": 16.22661
+     },
+     {
+      "name": "stien ved 0.51 km",
+      "lat": 68.57512,
+      "lng": 16.22583
+     },
+     {
+      "name": "stien ved 0.51 km",
+      "lat": 68.57543,
+      "lng": 16.22451
+     },
+     {
+      "name": "stien ved 0.51 km",
+      "lat": 68.57544,
+      "lng": 16.22309
+     },
+     {
+      "name": "stien ved 1.40 km",
+      "lat": 68.57728,
+      "lng": 16.21418
+     },
+     {
+      "name": "stien ved 1.40 km",
+      "lat": 68.57785,
+      "lng": 16.21209
+     },
+     {
+      "name": "stien ved 1.40 km",
+      "lat": 68.57843,
+      "lng": 16.21001
+     },
+     {
+      "name": "stien ved 1.40 km",
+      "lat": 68.57936,
+      "lng": 16.20945
+     },
+     {
       "name": "Kongsvikdalen",
       "lat": 68.58251,
       "lng": 16.20194,
@@ -10184,7 +11657,8 @@
     ],
     "source": "researched, verified (ok), no local audit",
     "notes": "Fri Flyt: KAST 2 – Utfordrende. Alpinøks og stegjern — hard fokksnø og ising nær toppen. Søraustsida er skredsida med fleire store skred årleg (30–40 grader) og skal ikkje køyrast; Vestrenna krev stabil snø og øks/stegjern. Nordsida gir skjerma pudder når andre himmelretningar er avblåste.",
-    "avoidWater": true
+    "avoidWater": true,
+    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (449 m from 0.51 km, 279 m from 1.4 km)."
    },
    {
     "id": "austsia",
@@ -10671,10 +12145,24 @@
       "elevation_m": 97.0
      },
      {
-      "name": "Dalsdalen",
-      "lat": 68.933,
-      "lng": 16.41,
-      "elevation_m": 137.0
+      "name": "stien ved 1.85 km",
+      "lat": 68.93273,
+      "lng": 16.40606
+     },
+     {
+      "name": "stien ved 1.85 km",
+      "lat": 68.93253,
+      "lng": 16.40779
+     },
+     {
+      "name": "stien ved 1.85 km",
+      "lat": 68.93232,
+      "lng": 16.40952
+     },
+     {
+      "name": "stien ved 1.85 km",
+      "lat": 68.93236,
+      "lng": 16.41196
      },
      {
       "name": "øvre Dalsdalen",
@@ -10696,7 +12184,8 @@
      }
     ],
     "source": "researched, verified (ok), no local audit",
-    "notes": "Fri Flyt: KAST 3 – Komplekst. Alpinøks og stegjern. Renna holder 30–45 grader sammenhengende; Syd direkte måler 35–50 og krever stabil snø og presis veivalg. Vurder snødekket før nedkjøring — terrenget er skredterreng i alle varianter."
+    "notes": "Fri Flyt: KAST 3 – Komplekst. Alpinøks og stegjern. Renna holder 30–45 grader sammenhengende; Syd direkte måler 35–50 og krever stabil snø og presis veivalg. Vurder snødekket før nedkjøring — terrenget er skredterreng i alle varianter.",
+    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (219 m from 1.85 km); replaced Dalsdalen."
    },
    {
     "id": "sorsida",
@@ -10732,10 +12221,69 @@
       "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/963161994."
      },
      {
-      "name": "sommarstien gjennom skogen",
-      "lat": 68.8975,
-      "lng": 16.448,
-      "elevation_m": 219.0
+      "name": "stien ved 0.48 km",
+      "lat": 68.89334,
+      "lng": 16.44723
+     },
+     {
+      "name": "stien ved 0.48 km",
+      "lat": 68.89334,
+      "lng": 16.44829
+     },
+     {
+      "name": "stien ved 0.48 km",
+      "lat": 68.89393,
+      "lng": 16.44981
+     },
+     {
+      "name": "stien ved 0.48 km",
+      "lat": 68.89469,
+      "lng": 16.44973
+     },
+     {
+      "name": "stien ved 0.48 km",
+      "lat": 68.89546,
+      "lng": 16.44966
+     },
+     {
+      "name": "stien ved 0.48 km",
+      "lat": 68.89586,
+      "lng": 16.45107
+     },
+     {
+      "name": "stien ved 0.48 km",
+      "lat": 68.89616,
+      "lng": 16.45146
+     },
+     {
+      "name": "stien ved 0.48 km",
+      "lat": 68.89651,
+      "lng": 16.45121
+     },
+     {
+      "name": "stien ved 0.48 km",
+      "lat": 68.89679,
+      "lng": 16.45183
+     },
+     {
+      "name": "stien ved 0.48 km",
+      "lat": 68.89754,
+      "lng": 16.45139
+     },
+     {
+      "name": "stien ved 0.48 km",
+      "lat": 68.89828,
+      "lng": 16.45094
+     },
+     {
+      "name": "stien ved 0.48 km",
+      "lat": 68.89873,
+      "lng": 16.44969
+     },
+     {
+      "name": "stien ved 0.48 km",
+      "lat": 68.8995,
+      "lng": 16.44895
      },
      {
       "name": "Vaskinnelva",
@@ -10757,7 +12305,8 @@
      }
     ],
     "source": "researched, verified (ok), no local audit",
-    "notes": "Fri Flyts 4.6.2 Sørsiden, gått motsett veg: «selvsagt lettere å finne hvis man går opp samme rute som man kjører ned». Eigen parkering — og kildens primære: «ved start skogsvei på østsiden av Vaskinn er det en liten parkeringsplass», medan appens vestrute brukar Dale. Ruta går ned til Vadskinndalsvatnet (SSR 68.91088/16.44968) og vidare ned Vaskinnelva (SSR 68.89926/16.44994). Den brattaste sørlina, 4.6.3 Sørsiden direkte på 35–50 grader, er ein annan line og ikkje denne."
+    "notes": "Fri Flyts 4.6.2 Sørsiden, gått motsett veg: «selvsagt lettere å finne hvis man går opp samme rute som man kjører ned». Eigen parkering — og kildens primære: «ved start skogsvei på østsiden av Vaskinn er det en liten parkeringsplass», medan appens vestrute brukar Dale. Ruta går ned til Vadskinndalsvatnet (SSR 68.91088/16.44968) og vidare ned Vaskinnelva (SSR 68.89926/16.44994). Den brattaste sørlina, 4.6.3 Sørsiden direkte på 35–50 grader, er ein annan line og ikkje denne.",
+    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (706 m from 0.48 km); replaced sommarstien gjennom skogen."
    }
   ]
  },
@@ -10877,6 +12426,51 @@
     },
     "waypoints": [
      {
+      "name": "stien ved 0.44 km",
+      "lat": 68.94195,
+      "lng": 16.36231
+     },
+     {
+      "name": "stien ved 0.44 km",
+      "lat": 68.9425,
+      "lng": 16.36363
+     },
+     {
+      "name": "stien ved 0.44 km",
+      "lat": 68.94305,
+      "lng": 16.36494
+     },
+     {
+      "name": "stien ved 0.44 km",
+      "lat": 68.94361,
+      "lng": 16.36625
+     },
+     {
+      "name": "stien ved 0.44 km",
+      "lat": 68.94408,
+      "lng": 16.36832
+     },
+     {
+      "name": "stien ved 0.44 km",
+      "lat": 68.94455,
+      "lng": 16.3704
+     },
+     {
+      "name": "stien ved 0.44 km",
+      "lat": 68.94509,
+      "lng": 16.37125
+     },
+     {
+      "name": "stien ved 0.44 km",
+      "lat": 68.94563,
+      "lng": 16.37209
+     },
+     {
+      "name": "stien ved 0.44 km",
+      "lat": 68.94656,
+      "lng": 16.37284
+     },
+     {
       "name": "Storvatnet på land",
       "lat": 68.9495,
       "lng": 16.374,
@@ -10903,7 +12497,8 @@
     ],
     "source": "researched, verified (ok), no local audit",
     "notes": "Fri Flyt: KAST 2 – Utfordrende. Alpinøks og stegjern. Unngå skredterrenget i sørflanken på veg opp; fyrste henget i nedkjøringa er brattare enn 30 grader. Vestsida (30–40 samanhengande) er Komplekst og ei anna linje.",
-    "avoidWater": true
+    "avoidWater": true,
+    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (649 m from 0.44 km)."
    }
   ]
  },
@@ -11229,6 +12824,36 @@
     },
     "waypoints": [
      {
+      "name": "stien ved 0.20 km",
+      "lat": 68.86226,
+      "lng": 17.30891
+     },
+     {
+      "name": "stien ved 0.20 km",
+      "lat": 68.86202,
+      "lng": 17.31164
+     },
+     {
+      "name": "stien ved 0.20 km",
+      "lat": 68.86207,
+      "lng": 17.31264
+     },
+     {
+      "name": "stien ved 0.20 km",
+      "lat": 68.86247,
+      "lng": 17.31448
+     },
+     {
+      "name": "stien ved 0.20 km",
+      "lat": 68.86301,
+      "lng": 17.31581
+     },
+     {
+      "name": "stien ved 0.20 km",
+      "lat": 68.86355,
+      "lng": 17.31714
+     },
+     {
       "name": "langs Bjørndalselva",
       "lat": 68.862,
       "lng": 17.33,
@@ -11255,7 +12880,8 @@
     ],
     "source": "researched, verified (ok), no local audit",
     "notes": "Fri Flyt: KAST 3 – Komplekst. Alpinøks og stegjern. Nedkjøringa holder 20–25 grader med parti på 35; traversen på 800–900 er mest utsatt, med historikk for store skred. Storeflaska på nordsiden er vedvarende bratt med parti på 45 grader og en annen linje.",
-    "avoidWater": true
+    "avoidWater": true,
+    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (319 m from 0.2 km)."
    },
    {
     "id": "rytterklofta",
@@ -11543,6 +13169,36 @@
     },
     "waypoints": [
      {
+      "name": "stien ved 0.06 km",
+      "lat": 68.51761,
+      "lng": 16.45175
+     },
+     {
+      "name": "stien ved 0.06 km",
+      "lat": 68.51782,
+      "lng": 16.45115
+     },
+     {
+      "name": "stien ved 0.06 km",
+      "lat": 68.5179,
+      "lng": 16.44967
+     },
+     {
+      "name": "stien ved 0.06 km",
+      "lat": 68.51758,
+      "lng": 16.4479
+     },
+     {
+      "name": "stien ved 0.06 km",
+      "lat": 68.51727,
+      "lng": 16.44613
+     },
+     {
+      "name": "stien ved 0.06 km",
+      "lat": 68.51709,
+      "lng": 16.44577
+     },
+     {
       "name": "opp fra Mølnneset",
       "lat": 68.513,
       "lng": 16.438,
@@ -11568,7 +13224,8 @@
      }
     ],
     "source": "researched, verified (ok), no local audit",
-    "notes": "Fri Flyt: KAST 3 – Komplekst. Alpinøks og stegjern. Henget før 600 er 40 grader og skiene bæres gjerne; toppryggen smalner — sommerruta på sørsida eller tau. Vindutsatt. Nordsida via Svartvasshompen (KAST 2) er en annen linje."
+    "notes": "Fri Flyt: KAST 3 – Komplekst. Alpinøks og stegjern. Henget før 600 er 40 grader og skiene bæres gjerne; toppryggen smalner — sommerruta på sørsida eller tau. Vindutsatt. Nordsida via Svartvasshompen (KAST 2) er en annen linje.",
+    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (189 m from 0.06 km)."
    }
   ]
  },
@@ -11670,6 +13327,36 @@
     },
     "waypoints": [
      {
+      "name": "stien ved 0.05 km",
+      "lat": 68.46561,
+      "lng": 15.44222
+     },
+     {
+      "name": "stien ved 0.05 km",
+      "lat": 68.466,
+      "lng": 15.4443
+     },
+     {
+      "name": "stien ved 0.05 km",
+      "lat": 68.4664,
+      "lng": 15.44639
+     },
+     {
+      "name": "stien ved 0.05 km",
+      "lat": 68.4667,
+      "lng": 15.44706
+     },
+     {
+      "name": "stien ved 0.05 km",
+      "lat": 68.46748,
+      "lng": 15.44707
+     },
+     {
+      "name": "stien ved 0.05 km",
+      "lat": 68.46812,
+      "lng": 15.44795
+     },
+     {
       "name": "Forkledalen",
       "lat": 68.478,
       "lng": 15.456,
@@ -11695,7 +13382,8 @@
      }
     ],
     "source": "researched, verified (ok), no local audit",
-    "notes": "Fri Flyt: KAST 3 – Komplekst. Alpinøks og stegjern. Nedturen krysser skredterreng; Sebortindrenna går med skred hvert eneste år, Forkleet når opp mot 45 grader og Vinkelrenna 30–45 med svært utsatt topparti — alle er varianter, ikke normalruta."
+    "notes": "Fri Flyt: KAST 3 – Komplekst. Alpinøks og stegjern. Nedturen krysser skredterreng; Sebortindrenna går med skred hvert eneste år, Forkleet når opp mot 45 grader og Vinkelrenna 30–45 med svært utsatt topparti — alle er varianter, ikke normalruta.",
+    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (349 m from 0.05 km)."
    }
   ]
  },
@@ -11961,10 +13649,54 @@
     },
     "waypoints": [
      {
-      "name": "nordsida av Storvatnet",
-      "lat": 68.471,
-      "lng": 15.46,
-      "elevation_m": 85.0
+      "name": "stien ved 0.10 km",
+      "lat": 68.46571,
+      "lng": 15.4428
+     },
+     {
+      "name": "stien ved 0.10 km",
+      "lat": 68.46606,
+      "lng": 15.4446
+     },
+     {
+      "name": "stien ved 0.10 km",
+      "lat": 68.4664,
+      "lng": 15.44639
+     },
+     {
+      "name": "stien ved 0.10 km",
+      "lat": 68.4667,
+      "lng": 15.44706
+     },
+     {
+      "name": "stien ved 0.10 km",
+      "lat": 68.46703,
+      "lng": 15.44719
+     },
+     {
+      "name": "stien ved 1.00 km",
+      "lat": 68.46961,
+      "lng": 15.46041
+     },
+     {
+      "name": "stien ved 1.00 km",
+      "lat": 68.47019,
+      "lng": 15.46203
+     },
+     {
+      "name": "stien ved 1.00 km",
+      "lat": 68.47058,
+      "lng": 15.4642
+     },
+     {
+      "name": "stien ved 1.00 km",
+      "lat": 68.47119,
+      "lng": 15.46439
+     },
+     {
+      "name": "stien ved 1.00 km",
+      "lat": 68.4719,
+      "lng": 15.46294
      },
      {
       "name": "mellom Tverrelva og Lakselva",
@@ -11993,7 +13725,8 @@
     ],
     "source": "researched, verified (ok), no local audit",
     "notes": "Fri Flyt: KAST 2 – Utfordrende. Alpinøks og stegjern; kilden nemner at det kan vera skare, så skarejern er tilrådd. Variantane er brattare enn normalruta: Rødhammarrenna på austsida er KAST 3 med eit 45-graders brattheng inn og skredterreng heile renna gjennom, og vestsida ned mot vann 355 mellom Forselvtinden og Forkledalstinden har eit parti på 30–40 grader.",
-    "avoidWater": true
+    "avoidWater": true,
+    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (179 m from 0.1 km, 238 m from 1.0 km); replaced nordsida av Storvatnet."
    }
   ]
  },
@@ -12012,10 +13745,29 @@
     },
     "waypoints": [
      {
-      "name": "nordsida av Storvatnet",
-      "lat": 68.471,
-      "lng": 15.46,
-      "elevation_m": 85.0
+      "name": "stien ved 1.00 km",
+      "lat": 68.46961,
+      "lng": 15.46041
+     },
+     {
+      "name": "stien ved 1.00 km",
+      "lat": 68.47019,
+      "lng": 15.46203
+     },
+     {
+      "name": "stien ved 1.00 km",
+      "lat": 68.47058,
+      "lng": 15.4642
+     },
+     {
+      "name": "stien ved 1.00 km",
+      "lat": 68.47119,
+      "lng": 15.46439
+     },
+     {
+      "name": "stien ved 1.00 km",
+      "lat": 68.47177,
+      "lng": 15.46319
      },
      {
       "name": "nord for høyde 258",
@@ -12044,7 +13796,8 @@
     ],
     "source": "researched, verified (ok), no local audit",
     "notes": "Fri Flyt: KAST 2 opp til 700-toppen, KAST 3 – Komplekst på traversen vidare. Alpinøks og stegjern. Siste del opp til toppen bør takast på austsida i starten for å sleppe vanskeleg klatring, og det må vera stabile forhold — partiet er svært bratt og eksponert, og kilden viser flakskred tett under toppen. Henget ned frå høyde 790 til vann 355 på nordsida er KAST 3, og vestsida ned i Forkledalen er skredutsett frå overliggande terreng nesten heile vegen.",
-    "avoidWater": true
+    "avoidWater": true,
+    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (238 m from 1.0 km); replaced nordsida av Storvatnet."
    }
   ]
  },
@@ -12261,6 +14014,26 @@
       "elevation_m": 155.0
      },
      {
+      "name": "stien ved 1.18 km",
+      "lat": 68.6482,
+      "lng": 16.39024
+     },
+     {
+      "name": "stien ved 1.18 km",
+      "lat": 68.64753,
+      "lng": 16.38926
+     },
+     {
+      "name": "stien ved 1.18 km",
+      "lat": 68.64686,
+      "lng": 16.38827
+     },
+     {
+      "name": "stien ved 1.18 km",
+      "lat": 68.64619,
+      "lng": 16.38729
+     },
+     {
       "name": "vestsida av Storvatnet",
       "lat": 68.6452,
       "lng": 16.3858,
@@ -12293,7 +14066,8 @@
     ],
     "source": "researched, verified (ok), no local audit",
     "notes": "Fri Flyt: KAST 1 – Enkelt. Oppstigninga skal gå midt i bekkedalen nord for høyde 339 nettopp for å unngå skredterreng på begge sider — det er kildens eiga formulering, og den einaste hazard-instruksen ho gir. Nedkjøringa er stort sett 20–25 grader med parti på 30.",
-    "avoidWater": true
+    "avoidWater": true,
+    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (209 m from 1.18 km)."
    }
   ]
  },
@@ -12325,10 +14099,34 @@
       "elevation_m": 113.0
      },
      {
-      "name": "det opne feltet",
-      "lat": 68.761,
-      "lng": 16.526,
-      "elevation_m": 205.0
+      "name": "stien ved 0.60 km",
+      "lat": 68.76179,
+      "lng": 16.53089
+     },
+     {
+      "name": "stien ved 0.60 km",
+      "lat": 68.7618,
+      "lng": 16.52928
+     },
+     {
+      "name": "stien ved 0.60 km",
+      "lat": 68.76181,
+      "lng": 16.52767
+     },
+     {
+      "name": "stien ved 0.60 km",
+      "lat": 68.76158,
+      "lng": 16.52555
+     },
+     {
+      "name": "stien ved 0.60 km",
+      "lat": 68.76134,
+      "lng": 16.52342
+     },
+     {
+      "name": "stien ved 0.60 km",
+      "lat": 68.76111,
+      "lng": 16.5213
      },
      {
       "name": "utenom bygningene",
@@ -12358,7 +14156,8 @@
      }
     ],
     "source": "researched, verified (ok), no local audit",
-    "notes": "Fri Flyt: KAST 1 – Enkelt. Nedkjøringane på dei tre skildra rutene er for det meste 20–30 grader, men kilden er tydeleg på at ein utanfor dei lett kan oppsøkje heng på 40 grader — og at det berre skal gjerast når snøen er stabil. Toppryggen kan vera avblåst og bar eller vindpåverka, og dei fleste stoppar eit stykke nord for toppen."
+    "notes": "Fri Flyt: KAST 1 – Enkelt. Nedkjøringane på dei tre skildra rutene er for det meste 20–30 grader, men kilden er tydeleg på at ein utanfor dei lett kan oppsøkje heng på 40 grader — og at det berre skal gjerast når snøen er stabil. Toppryggen kan vera avblåst og bar eller vindpåverka, og dei fleste stoppar eit stykke nord for toppen.",
+    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (399 m from 0.6 km); replaced det opne feltet."
    }
   ]
  },
@@ -12517,24 +14316,65 @@
       "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/963204594."
      },
      {
-      "name": "utenom bygningene",
-      "lat": 68.8777,
-      "lng": 16.5629,
-      "elevation_m": 11.0,
-      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/963204594."
+      "name": "stien ved 0.26 km",
+      "lat": 68.87787,
+      "lng": 16.56317
      },
      {
-      "name": "utenom bygningene",
-      "lat": 68.87781,
-      "lng": 16.56258,
-      "elevation_m": 12.0,
-      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/963204594."
+      "name": "stien ved 0.26 km",
+      "lat": 68.87876,
+      "lng": 16.56266
+     },
+     {
+      "name": "stien ved 0.26 km",
+      "lat": 68.87965,
+      "lng": 16.56215
+     },
+     {
+      "name": "stien ved 0.26 km",
+      "lat": 68.88014,
+      "lng": 16.55953
+     },
+     {
+      "name": "stien ved 0.26 km",
+      "lat": 68.88063,
+      "lng": 16.5569
+     },
+     {
+      "name": "stien ved 0.26 km",
+      "lat": 68.8808,
+      "lng": 16.55482
      },
      {
       "name": "traktorvegen langs Forselva",
       "lat": 68.8811,
       "lng": 16.553,
       "elevation_m": 47.0
+     },
+     {
+      "name": "stien ved 1.97 km",
+      "lat": 68.8906,
+      "lng": 16.56431
+     },
+     {
+      "name": "stien ved 1.97 km",
+      "lat": 68.8911,
+      "lng": 16.56464
+     },
+     {
+      "name": "stien ved 1.97 km",
+      "lat": 68.8918,
+      "lng": 16.56452
+     },
+     {
+      "name": "stien ved 1.97 km",
+      "lat": 68.89238,
+      "lng": 16.56379
+     },
+     {
+      "name": "stien ved 1.97 km",
+      "lat": 68.89279,
+      "lng": 16.56287
      },
      {
       "name": "Storskogbakkan",
@@ -12562,7 +14402,8 @@
      }
     ],
     "source": "researched, verified (ok), no local audit",
-    "notes": "Fri Flyt: KAST 2 – Utfordrende. Alpinøks og stegjern. Sørsida er kontinuerleg mellom 25 og 35 grader. «I påsken 1969 gikk det skred på vestsiden av Galten sin sydside, to ble tatt av skredet og en mann omkom.» Den alpine varianten over Nordtinden (610) held 45–50 grader og krev tau, øks, stegjern og eit lite rack — det er ei anna rute enn denne."
+    "notes": "Fri Flyt: KAST 2 – Utfordrende. Alpinøks og stegjern. Sørsida er kontinuerleg mellom 25 og 35 grader. «I påsken 1969 gikk det skred på vestsiden av Galten sin sydside, to ble tatt av skredet og en mann omkom.» Den alpine varianten over Nordtinden (610) held 45–50 grader og krev tau, øks, stegjern og eit lite rack — det er ei anna rute enn denne.",
+    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (419 m from 0.26 km, 199 m from 1.97 km); replaced utenom bygningene, utenom bygningene."
    }
   ]
  },
@@ -12652,16 +14493,54 @@
     },
     "waypoints": [
      {
-      "name": "dalmunnen",
-      "lat": 68.6101,
-      "lng": 15.594,
-      "elevation_m": 92.0
+      "name": "stien ved 0.12 km",
+      "lat": 68.61116,
+      "lng": 15.58784
      },
      {
-      "name": "dalen",
-      "lat": 68.6086,
-      "lng": 15.601,
-      "elevation_m": 274.0
+      "name": "stien ved 0.12 km",
+      "lat": 68.61082,
+      "lng": 15.58838
+     },
+     {
+      "name": "stien ved 0.12 km",
+      "lat": 68.61028,
+      "lng": 15.59048
+     },
+     {
+      "name": "stien ved 0.12 km",
+      "lat": 68.60975,
+      "lng": 15.59156
+     },
+     {
+      "name": "stien ved 0.12 km",
+      "lat": 68.60935,
+      "lng": 15.59402
+     },
+     {
+      "name": "stien ved 0.12 km",
+      "lat": 68.60883,
+      "lng": 15.59486
+     },
+     {
+      "name": "stien ved 0.12 km",
+      "lat": 68.60842,
+      "lng": 15.59647
+     },
+     {
+      "name": "stien ved 0.12 km",
+      "lat": 68.6082,
+      "lng": 15.59687
+     },
+     {
+      "name": "stien ved 0.12 km",
+      "lat": 68.60791,
+      "lng": 15.59875
+     },
+     {
+      "name": "stien ved 0.12 km",
+      "lat": 68.60756,
+      "lng": 15.59984
      },
      {
       "name": "under bandet",
@@ -12683,7 +14562,8 @@
      }
     ],
     "source": "researched, verified (ok), no local audit",
-    "notes": "Fri Flyt: KAST 3 – Komplekst. Alpinøks og stegjern. «Følg den bratte dalen som blir brattere og brattere. Sjekk jevnlig snøen og om den er stabil, forholdene kan endre seg oppover.» På ca. 600 moh ligg eit brattare parti, nesten som eit band over heile sida — skift retning til høgre (sørover) for å koma lettare opp på ryggen. Nedkjøringa på vestsida er stort sett 30–40 grader."
+    "notes": "Fri Flyt: KAST 3 – Komplekst. Alpinøks og stegjern. «Følg den bratte dalen som blir brattere og brattere. Sjekk jevnlig snøen og om den er stabil, forholdene kan endre seg oppover.» På ca. 600 moh ligg eit brattare parti, nesten som eit band over heile sida — skift retning til høgre (sørover) for å koma lettare opp på ryggen. Nedkjøringa på vestsida er stort sett 30–40 grader.",
+    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (811 m from 0.12 km); replaced dalmunnen, dalen."
    }
   ]
  },
@@ -12702,17 +14582,39 @@
     },
     "waypoints": [
      {
-      "name": "traktorvegen forbi Kvilheim",
-      "lat": 68.78338,
-      "lng": 16.33343,
-      "elevation_m": 214.0
+      "name": "stien ved 0.28 km",
+      "lat": 68.78038,
+      "lng": 16.33435
      },
      {
-      "name": "utenom bygningene",
-      "lat": 68.78347,
-      "lng": 16.33368,
-      "elevation_m": 215.0,
-      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/1001817386."
+      "name": "stien ved 0.28 km",
+      "lat": 68.78102,
+      "lng": 16.33247
+     },
+     {
+      "name": "stien ved 0.28 km",
+      "lat": 68.78141,
+      "lng": 16.33203
+     },
+     {
+      "name": "stien ved 0.28 km",
+      "lat": 68.78199,
+      "lng": 16.33239
+     },
+     {
+      "name": "stien ved 0.28 km",
+      "lat": 68.78258,
+      "lng": 16.33276
+     },
+     {
+      "name": "stien ved 0.28 km",
+      "lat": 68.78315,
+      "lng": 16.33258
+     },
+     {
+      "name": "stien ved 0.28 km",
+      "lat": 68.78374,
+      "lng": 16.3329
      },
      {
       "name": "utenom bygningene",
@@ -12747,7 +14649,8 @@
      }
     ],
     "source": "researched, verified (ok), no local audit",
-    "notes": "Fri Flyt: KAST 1 – Enkelt. Farepunktet er sida ved sida av ruta: «Området til venstre (vest) er atskillig brattere og må ikke kjøres.» Eit par gjerdekryssingar over dyrka mark på veg nordover frå Kvilheim."
+    "notes": "Fri Flyt: KAST 1 – Enkelt. Farepunktet er sida ved sida av ruta: «Området til venstre (vest) er atskillig brattere og må ikke kjøres.» Eit par gjerdekryssingar over dyrka mark på veg nordover frå Kvilheim.",
+    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (329 m from 0.28 km); replaced traktorvegen forbi Kvilheim, utenom bygningene."
    }
   ]
  },
@@ -12932,10 +14835,29 @@
       "elevation_m": 319.4
      },
      {
-      "name": "Jondalen",
-      "lat": 60.0431,
-      "lng": 10.7764,
-      "elevation_m": 408.2
+      "name": "stien ved 3.15 km",
+      "lat": 60.04326,
+      "lng": 10.77626
+     },
+     {
+      "name": "stien ved 3.15 km",
+      "lat": 60.04382,
+      "lng": 10.7759
+     },
+     {
+      "name": "stien ved 3.15 km",
+      "lat": 60.04437,
+      "lng": 10.77554
+     },
+     {
+      "name": "stien ved 3.15 km",
+      "lat": 60.04462,
+      "lng": 10.77502
+     },
+     {
+      "name": "stien ved 3.15 km",
+      "lat": 60.04486,
+      "lng": 10.77336
      },
      {
       "name": "vest for Midtkollen",
@@ -12951,7 +14873,8 @@
      }
     ],
     "source": "researched, verified (corrected), no local audit",
-    "notes": "Ut.no: «pass på å unngå stupene som ligger på sørsiden av Gaupekollen.» Nedkjøringa er vanskelegare enn oppturen: «Nedkjøringen kan fort bli ganske teknisk og byksete om man ikke har sett seg ut noen åpne felt på forkant», og kilden rår til å følgje sommerstiane, t.d. den blåmerkte ned til Øyungen. Tett skog, kratt og elver. Kollene liknar kvarandre — «plutselig står du på Mellomkollen når du trodde du var på Midtkollen» — så kart og kompass. Fredet naturreservat."
+    "notes": "Ut.no: «pass på å unngå stupene som ligger på sørsiden av Gaupekollen.» Nedkjøringa er vanskelegare enn oppturen: «Nedkjøringen kan fort bli ganske teknisk og byksete om man ikke har sett seg ut noen åpne felt på forkant», og kilden rår til å følgje sommerstiane, t.d. den blåmerkte ned til Øyungen. Tett skog, kratt og elver. Kollene liknar kvarandre — «plutselig står du på Mellomkollen når du trodde du var på Midtkollen» — så kart og kompass. Fredet naturreservat.",
+    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (209 m from 3.15 km); replaced Jondalen."
    }
   ]
  },
@@ -13039,6 +14962,41 @@
       "elevation_m": 394.4
      },
      {
+      "name": "stien ved 2.12 km",
+      "lat": 61.56732,
+      "lng": 6.25992
+     },
+     {
+      "name": "stien ved 2.12 km",
+      "lat": 61.56799,
+      "lng": 6.25912
+     },
+     {
+      "name": "stien ved 2.12 km",
+      "lat": 61.56866,
+      "lng": 6.25832
+     },
+     {
+      "name": "stien ved 2.12 km",
+      "lat": 61.56933,
+      "lng": 6.25751
+     },
+     {
+      "name": "stien ved 2.12 km",
+      "lat": 61.56995,
+      "lng": 6.25647
+     },
+     {
+      "name": "stien ved 2.12 km",
+      "lat": 61.57056,
+      "lng": 6.25543
+     },
+     {
+      "name": "stien ved 2.12 km",
+      "lat": 61.57078,
+      "lng": 6.25469
+     },
+     {
       "name": "skogsvegen i Ålhusdalen",
       "lat": 61.57303,
       "lng": 6.25008,
@@ -13076,7 +15034,8 @@
      }
     ],
     "source": "researched, verified (ok), no local audit",
-    "notes": "Fri Flyt: øvre del av egga er smal med skavler mot øst og kan oppleves brattere enn målingene; i hard snø kan du måtte bruke skarejern eller gå til fots. Nedkjøringa fra toppen øst mot Litlebotnen: «Dei første ti høgdemetrane frå toppen kan vere bratte, 35-40 grader avhengig av snøforhold/skavldanning», med 34–36 grader mellom 1070 og 1000 moh. Anmarsjen er vel fire kilometer skogsveg — lang dag. Litlebottsegga nord for Litlebotn har skavldanning langs ryggen fra 990 moh."
+    "notes": "Fri Flyt: øvre del av egga er smal med skavler mot øst og kan oppleves brattere enn målingene; i hard snø kan du måtte bruke skarejern eller gå til fots. Nedkjøringa fra toppen øst mot Litlebotnen: «Dei første ti høgdemetrane frå toppen kan vere bratte, 35-40 grader avhengig av snøforhold/skavldanning», med 34–36 grader mellom 1070 og 1000 moh. Anmarsjen er vel fire kilometer skogsveg — lang dag. Litlebottsegga nord for Litlebotn har skavldanning langs ryggen fra 990 moh.",
+    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (459 m from 2.12 km)."
    }
   ]
  },
@@ -13775,10 +15734,54 @@
       "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/942986306, way/942990631."
      },
      {
-      "name": "over jordet",
-      "lat": 61.276,
-      "lng": 7.027,
-      "elevation_m": 634.9
+      "name": "stien ved 0.31 km",
+      "lat": 61.27262,
+      "lng": 7.0292
+     },
+     {
+      "name": "stien ved 0.31 km",
+      "lat": 61.27286,
+      "lng": 7.03008
+     },
+     {
+      "name": "stien ved 0.31 km",
+      "lat": 61.27355,
+      "lng": 7.03062
+     },
+     {
+      "name": "stien ved 0.31 km",
+      "lat": 61.27425,
+      "lng": 7.03116
+     },
+     {
+      "name": "stien ved 0.31 km",
+      "lat": 61.2748,
+      "lng": 7.03135
+     },
+     {
+      "name": "stien ved 0.31 km",
+      "lat": 61.27535,
+      "lng": 7.03154
+     },
+     {
+      "name": "stien ved 0.31 km",
+      "lat": 61.27564,
+      "lng": 7.03125
+     },
+     {
+      "name": "stien ved 0.31 km",
+      "lat": 61.2759,
+      "lng": 7.02927
+     },
+     {
+      "name": "stien ved 0.31 km",
+      "lat": 61.27622,
+      "lng": 7.02825
+     },
+     {
+      "name": "stien ved 0.31 km",
+      "lat": 61.27616,
+      "lng": 7.02725
      },
      {
       "name": "utenom bygningene",
@@ -13807,7 +15810,8 @@
      }
     ],
     "source": "researched, verified (ok), no local audit",
-    "notes": "Fri Flyt oppgir «Farar: Ingen» for normalvegen. Sørsida er solvendt, og Fri Flyt ber deg ta turen tidlig: «Nyt solstrålane i dei kalde månadane og ikkje vent for lenge på sesongen før ein tek turen.» Ved glasert skare kan en utglidning likevel være farlig."
+    "notes": "Fri Flyt oppgir «Farar: Ingen» for normalvegen. Sørsida er solvendt, og Fri Flyt ber deg ta turen tidlig: «Nyt solstrålane i dei kalde månadane og ikkje vent for lenge på sesongen før ein tek turen.» Ved glasert skare kan en utglidning likevel være farlig.",
+    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (388 m from 0.31 km); replaced over jordet."
    }
   ]
  },

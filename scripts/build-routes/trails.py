@@ -103,15 +103,36 @@ def _post(url, body, timeout=240):
     return json.loads(urllib.request.urlopen(req, timeout=timeout).read())
 
 
+# The roads, for `follow_trails.py` only. They stay out of `fetch` for the
+# reason the module docstring gives — a road is not a route decision, and the
+# router should not be pulled onto one. But a line that follows the road from
+# the car park is on mapped ground, not beside the footpath next to it, and a
+# path that meets a track by way of fifty metres of farm road is still one
+# path on the ground. Without them, both read as «not connected».
+ROAD_QUERY = """[out:json][timeout:180];
+way["highway"~"^(tertiary|unclassified|residential|service|living_street)$"]({s:.5f},{w:.5f},{n:.5f},{e:.5f});
+out geom;
+"""
+
+
 def fetch(bbox, key):
     """Trail ways inside `bbox`, as a list of lat/lng polylines."""
-    path = os.path.join(CACHE, f"trails_{key}.json")
+    return [w for w in _fetch(bbox, key, QUERY, "trails") if w["kind"] not in SKIP_KINDS]
+
+
+def fetch_roads(bbox, key):
+    """Minor roads inside `bbox`, in the same shape as `fetch`."""
+    return _fetch(bbox, key, ROAD_QUERY, "roads")
+
+
+def _fetch(bbox, key, template, prefix):
+    path = os.path.join(CACHE, f"{prefix}_{key}.json")
     if os.path.exists(path):
         with open(path, encoding="utf-8") as f:
-            return [w for w in json.load(f) if w["kind"] not in SKIP_KINDS]
+            return json.load(f)
 
     s, w, n, e = bbox
-    query = QUERY.format(s=s, w=w, n=n, e=e)
+    query = template.format(s=s, w=w, n=n, e=e)
     last = None
     for attempt in range(6):
         url = ENDPOINTS[attempt % len(ENDPOINTS)]
@@ -142,7 +163,7 @@ def fetch(bbox, key):
         )
     with open(path, "w", encoding="utf-8") as f:
         json.dump(ways, f, ensure_ascii=False)
-    return [w for w in ways if w["kind"] not in SKIP_KINDS]
+    return ways
 
 
 def main():
