@@ -7208,13 +7208,13 @@ roads (`trails.py`), finds the *detours* — at least 150 m more than 30 m off
 any mapped way, leaving one and coming back to one, mostly within 150 m of
 it — and reads Kartverket's terrain class every 40 m along each.
 
-**54 of the 246 routes were put on the path** where they ran beside it through
+**56 of the 246 routes were put on the path** where they ran beside it through
 forest. What is left, on the shipped lines, is in `follow_trails_run.txt`:
 
 | detours left | | routes |
 | --- | --- | --- |
 | on open ground — skiable either side, left as they are | 220 (102 km) | |
-| mostly `Skog`, each with the reason it stays | 64 | 50 |
+| mostly `Skog`, each with the reason it stays | 62 | 48 |
 
 ### How a forest detour is moved
 
@@ -7361,9 +7361,33 @@ stretches 40–60 m off. **Vatnaknausen** on the path hooks back on itself above
 Tverrberg and its steepest 30 m goes 21.9° → 23.6°, for two 220 m stretches 50 m
 off.
 
+### Sandhornet and Såta, by hand
+
+The last two the card held back had other bars against them as well, and both
+were put on the path by hand.
+
+**Sandhornet from Horsdal** climbed the west side of Stjernåga, on the
+waypoints «trappene, flata på 190» and «Stjerndalen», 120–240 m from the marked
+path. ut.no and Visit Bodø both put the path on the east side of Stjernåga, up a
+long climb into Stjerndalen, and the guide's own source carries the skis up the
+stairs. The line now follows that path (way/623592096) from the shore to 3.07 km:
+the shore stretch to the mouth of Stjernåga at 2–28 moh, the stairs to 166 moh,
+and the east side of the valley. 5009 → 5183 m, 1021 → 1033 m up, card 1020 →
+1030. The steepest 30 m is now 40.2°, between 108 and 134 moh — in the stairs,
+where the skis are on the pack; above them nothing measures more than 24.3°. The
+pass had refused it for a point at sea level and a steeper 30 m; on the path the
+lowest point reads 2 moh, and the steeper 30 m is the stairs the source describes.
+
+**Såta from Eikedalen** now takes Kråvegen round its hairpin instead of cutting
+south across the river bend: 6602 → 6653 m, 895 → 905 m up, card 900 → 910, and
+104 m given back against 94, the road's own dip. The pass's re-solve cut the
+hairpin 30–40 m into the bank and read a 33.1° step there; the hairpin was
+spliced onto the road (way/544164315) by hand, and the steepest 30 m is the
+summit flank's 32.5° as before.
+
 ### What was left in the forest, and why
 
-Fifty routes, with the reason on each in `follow_trails_run.txt`. A
+Forty-eight routes, with the reason on each in `follow_trails_run.txt`. A
 route can have more than one.
 
 - **The path goes somewhere else** (29 routes — Gygrastølen, Vesoldo, Sula,
@@ -7371,11 +7395,10 @@ route can have more than one.
   than half again as long as the line's detour. These are paths to a hut, a
   farm or another summit that run alongside for a while; the line takes the
   direct way through the forest, which is passable on snow.
-- **The card, then looked at by hand** (5): the line on the path climbed more
-  than ten metres more or less than the tour's stated vertical. Five of the ten
+- **The card, then looked at by hand** (3): the line on the path climbed more
+  than ten metres more or less than the tour's stated vertical. Seven of the ten
   were moved with their cards (below); Lodalskåpa, Rundtinden and Vatnaknausen
-  stay for other reasons, and Sandhornet and Såta were held back by more than
-  the card — sea level and a steeper 30 m, and 110 m given back.
+  stay for other reasons.
 - **A research waypoint holds the line where it is** (11 — Hamperøkken's
   Vartavarhaugen, Hattfjellet's tractor road in Bjørndalen, Rondslottet's
   Langglupdalen): the corridor puts the line there for a reason the path does

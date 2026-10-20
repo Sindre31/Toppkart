@@ -241,7 +241,7 @@ export const TOUR_TEASER_EN: Record<string, string> = {
   englafjell:
     "1220 metres of ascent from Musland in Uskedalen: tractor road and marked path, across the valley, up to Såta and south along the steep ridge — with the cornices over Limomnen for company to the top.",
   sandhornet:
-    "1020 metres of ascent from the shore at Horsdal: the path along the sea, the stairs to Stjerndalen, and gentle ridges to the cairn on the island mountain above Saltfjorden.",
+    "1030 metres of ascent from the shore at Horsdal: the path along the sea, the stairs to Stjerndalen, and gentle ridges to the cairn on the island mountain above Saltfjorden.",
   tomskjevelen:
     "950 metres of ascent from the field at Forsland on Tomma: the path to Forslandsvatnet, around the tarn on land, and the north-west ridge all the way up the island mountain Fri Flyt calls one of the finest peaks on the Helgeland coast.",
   "tredje-svanfjell":
@@ -4043,18 +4043,18 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
   },
   sandhornet: {
     intro:
-      "1021 metres of ascent and 5.01 km from the shore at Horsdal — the island mountain south-west of Bodø that Fri Flyt calls one of the most beautiful coastal peaks in the area. The mountain stands in Gildeskål; the card carries Bodø the way Strandtinden carries Harstad, because that is where the day starts. The line stays under 30 degrees except for the last fifty vertical metres — and the steepest sustained stretch on the line, 32.5 degrees, is not up there at all — it is in the stairs between 26 and 51 metres, where the skis are on the pack anyway — and the source's hazard text is not about steepness but about the runout zones the line crosses in Stjerndalen.",
+      "1033 metres of ascent and 5.18 km from the shore at Horsdal — the island mountain south-west of Bodø that Fri Flyt calls one of the most beautiful coastal peaks in the area. The mountain stands in Gildeskål; the card carries Bodø the way Strandtinden carries Harstad, because that is where the day starts. The steepest sustained stretch on the line, 40.2 degrees, is not in the summit flank at all — it is in the stairs between 108 and 134 metres, where the skis are on the pack anyway; above the stairs no 30-metre step measures more than 24.3 degrees — and the source's hazard text is not about steepness but about the runout zones the line crosses in Stjerndalen.",
     ascent: [
-      "From the farm at Horsdal, 10 metres, follow the marked path along the shore south-east for about a kilometre — 28 metres at its highest, with the sea right beside you. Then the path turns north-east and climbs steeply via the stairs; here the skis go on the pack. Where the stairs end the ground levels at about 190 metres — measured 189 — and the skis go back on.",
+      "From the farm at Horsdal, 10 metres, follow the marked path along the shore south-east for not quite a kilometre and a half to the mouth of Stjernåga — 28 metres at its highest, with the sea right beside you. Then the path turns north-east, up the east side of the river, and climbs steeply via the stairs; here the skis go on the pack. Where the stairs end, at 166 metres, the ground levels and the skis go back on.",
       "The stretch on into Stjerndalen is the tour's hazard text, and the source is verbatim: the valley runs in runout zones of avalanche flanks, especially the west and south-west flanks under Isvasstinden — the mountain just east, which the register confirms. Be alert on days with considerable danger and into spring; the flat is not outside the danger zone just because it is flat.",
-      "From the valley hold north towards 450 — “east of the Stjernelva the whole way”, says the source — the line reads 463 — and then west in gentle ground north of point 592: 662 and 752 metres in steady climbing. The forest ended already at 267, so all of this is open mountainside with the view over Saltfjorden.",
+      "From the valley hold north towards 450 — “east of the Stjernelva the whole way”, says the source — the line reads 463 — and then west in gentle ground north of point 592: 662 and 752 metres in steady climbing. The forest ended already at 324, so all of this is open mountainside with the view over Saltfjorden.",
       "Finally north up the summit flank: the 900–1000 band holds a mean 21.3 degrees and 22.9 as the steepest sustained stretch on the line. The source writes “on the border of 30 degrees for the last 50 vertical metres”, and it is the fall line it reads: south of the cairn the sweep measures 32.8 degrees in its steepest 60-metre window, 70–130 m out. The cairn stands at 993 metres, with the sea on three sides.",
     ],
     descent: [
       "The same way down, with room for easterly variants that give steeper skiing in the summit flank — the same 30-degree class, says the source. From the flat in Stjerndalen the danger zone applies again: cross the runout areas quickly and one at a time on days with considerable danger.",
       "The Ravika route on the north-east side is fully described by Fri Flyt — the forest road from the green garage, the bog stretches along the Ravikelva, a ramp to the summit ridge — but its descent has a 40-degree section between 920 and 840 metres and enters via the notch 300 m south-east of the top. It is the variant, not the normal route, and whoever chooses it has chosen a different tour.",
-      "Down the stairs the skis go on the pack again, and the shore path takes you home to Horsdal — the whole tour gives back 38 vertical metres, so most of the day is clean climbing and clean skiing.",
-      "The source gives the north-east side its own access description and its own car park at Ravika, and says outright that you may choose to climb from that side. It is 1033 metres of ascent over 5.41 km: the forest road south-west along the west bank of Ravikelva, the bogs at Hornkroken at 252 m, point 385 and the easier ground south of point 580 — and at the end the one snowfield that reaches right up to the summit arête. The steepest step measures 36.1 degrees between 806 and 830 m against 32.5 on the route from Horsdal. The source states 40 degrees between 840 and 920 and adds crampons and an ice axe on hard surfaces, wind-loaded snow at the exit of the ramp and cornices along the arête.",
+      "Down the stairs the skis go on the pack again, and the shore path takes you home to Horsdal — the whole tour gives back 50 vertical metres, so most of the day is clean climbing and clean skiing.",
+      "The source gives the north-east side its own access description and its own car park at Ravika, and says outright that you may choose to climb from that side. It is 1033 metres of ascent over 5.41 km: the forest road south-west along the west bank of Ravikelva, the bogs at Hornkroken at 252 m, point 385 and the easier ground south of point 580 — and at the end the one snowfield that reaches right up to the summit arête. The steepest step measures 36.1 degrees between 806 and 830 m against 40.2 in the stairs on the route from Horsdal. The source states 40 degrees between 840 and 920 and adds crampons and an ice axe on hard surfaces, wind-loaded snow at the exit of the ramp and cornices along the arête.",
     ],
     avalanche: [
       {
@@ -4063,7 +4063,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       },
       {
         title: "The summit flank and the edges",
-        body: "The last fifty vertical metres measure 22.9 degrees as the steepest sustained stretch on the line, and the source calls them “on the border of 30 degrees”; the line's own steepest, 32.5, is down in the stairs. But Sandhornet is an island mountain with walls: the west side falls 59.0 degrees at its steepest only 110–170 m from the cairn, the north-west side 59.9 and the north side 61.8 degrees 70–130 m out. Towards the sea the edge is absolute; in fog, south is the way home — the line bears 189 degrees for the first five hundred metres, and Horsdal lies on bearing 200 from the cairn.",
+        body: "The last fifty vertical metres measure 22.9 degrees as the steepest sustained stretch on the line, and the source calls them “on the border of 30 degrees”; the line's own steepest, 40.2, is down in the stairs. But Sandhornet is an island mountain with walls: the west side falls 59.0 degrees at its steepest only 110–170 m from the cairn, the north-west side 59.9 and the north side 61.8 degrees 70–130 m out. Towards the sea the edge is absolute; in fog, south is the way home — the line bears 189 degrees for the first five hundred metres, and Horsdal lies on bearing 200 from the cairn.",
       },
       {
         title: "Before you go",
@@ -4073,8 +4073,8 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
     elevationProfile: {
       startLabel: "10 m",
       endLabel: "993 m",
-      distanceLabel: "5.0 km",
-      caption: "1021 metres of ascent and 5.01 km from the shore at Horsdal — the stairs to Stjerndalen, gentle ridges, and 32.5 degrees in the last fifty vertical metres.",
+      distanceLabel: "5.2 km",
+      caption: "1033 metres of ascent and 5.18 km from the shore at Horsdal — the stairs to Stjerndalen, gentle ridges, and 22.9 degrees in the last fifty vertical metres.",
     },
   },
   tortenviktinden: {
@@ -6853,10 +6853,10 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
   },
   sata: {
     intro:
-      "895 metres of ascent over 6.6 km from the innermost car park at Eikedalen ski centre to a summit the register carries under two names: Såta and Iendefjell. It is two tours in one — a nearly flat approach into Skeiskvanndalen, where the band from 500 to 600 m measures 1.8 degrees on average over 3.15 km of ground, and then the mountain itself: from Rosselandsbotnen the flank rears up eastward, with the steepest hundred-metre band at 18.4 degrees between 1100 and 1200 m and the steepest sustained stretch at 32.5 degrees between 1139 and 1168 m, directly below the notch.",
+      "905 metres of ascent over 6.65 km from the innermost car park at Eikedalen ski centre to a summit the register carries under two names: Såta and Iendefjell. It is two tours in one — a nearly flat approach into Skeiskvanndalen, where the band from 500 to 600 m measures 1.8 degrees on average over 3.27 km of ground, and then the mountain itself: from Rosselandsbotnen the flank rears up eastward, with the steepest hundred-metre band at 18.4 degrees between 1100 and 1200 m and the steepest sustained stretch at 32.5 degrees between 1139 and 1168 m, directly below the notch.",
     ascent: [
       "From the innermost car park at Eikedalen ski centre, 459 m, on Kråvegen. Fri Flyt sends you up a summer farm road for the first hundred metres of height, and that is Kråvegen eastward and the path beyond it: the line follows the mapped road and path to about 555 m, where the valley levels out.",
-      "Then comes the long, flat approach into Skeiskvanndalen — 1.8 degrees on average through the band from 500 to 600 m, over 3.15 km of ground. The forest ends at 629 m by Kartverket's terrain classes, with open ground from 631, so most of the valley runs through sparse mountain birch and bog. The valley floor holds two natural lakes at 551 m — an unnamed tarn and Skeiskvanndalsvatnet — and the line keeps to the dry north-west side past both. That is measured, not hoped: 0 metres of the line stand on water.",
+      "Then comes the long, flat approach into Skeiskvanndalen — 1.8 degrees on average through the band from 500 to 600 m, over 3.27 km of ground. The forest ends at 629 m by Kartverket's terrain classes, with open ground from 631, so most of the valley runs through sparse mountain birch and bog. The valley floor holds two natural lakes at 551 m — an unnamed tarn and Skeiskvanndalsvatnet — and the line keeps to the dry north-west side past both. That is measured, not hoped: 0 metres of the line stand on water.",
       "Rosselandsbotnen is the turning point. The register point for the botn itself sits on the tarn there — 661 m, terrain class lake — and the line passes its south shore on firm ground. Here you leave the valley floor, turn right as the source says, and start the steep climb: the bands above measure 16.1 degrees from 700 to 800 m, 17.7 from 900 to 1000 and 18.4 from 1100 to 1200, the steepest of the tour.",
       "Aim for the notch to the left of — that is, north of — the summit itself. It measures 1224 m, 190 metres north-north-west of the cairn, and the steepest sustained stretch of the whole line lies directly below it: 32.5 degrees between 1139 and 1168 m. The upper part of the notch and the summit ridge are often wind-blasted and hard, and Fri Flyt mentions an ice axe as an advantage — this is the part of the tour that decides whether the day is on.",
       "From the notch the summit ridge runs south to the cairn, past 1248 m — the band from 1200 to 1300 measures 9.1 degrees, so the steep ground is behind you once you stand in the notch. 1260 m, with Kvamskogen, Fuglafjellet and the fjord below.",
@@ -6864,7 +6864,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
     descent: [
       "The usual descent is the same way: north off the summit ridge, down through the notch, and the west flank down towards Rosselandsbotnen. The flank you ski is the one you climbed — 25.4 degrees on average from the cairn westward, with 53.0 degrees as the steepest 60 m window 740 to 800 metres out — so the line choices on the way up are the line choices on the way down.",
       "Fri Flyt also describes the south-west-facing couloir between Såterindane. The source says to continue past the summit cairn to find it, and the register puts Såterindane 837 metres south-west of the cairn; the steep ground directly below the cairn — 43.4 degrees 110 to 170 metres out in the south-west sweep — is the summit shoulder, not the mouth of the couloir. The source is clear about the finish: turn right before the bottom of the couloir, before Såtedalen, and ski back towards the ascent route. The west flank straight off the top the source mentions only for days with a very stable snowpack.",
-      "From Rosselandsbotnen it is the 3 km of flat valley out and the farm road down to the car park — the tour gives back 94 metres of height in all, most of it in the undulating valley floor.",
+      "From Rosselandsbotnen it is the 3 km of flat valley out and the farm road down to the car park — the tour gives back 104 metres of height in all, most of it in the undulating valley floor.",
     ],
     avalanche: [
       {
@@ -6887,8 +6887,8 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
     elevationProfile: {
       startLabel: "459 m",
       endLabel: "1260 m",
-      distanceLabel: "6.6 km",
-      caption: "895 metres of ascent over 6.6 km from Eikedalen, with the steepest ground — 32.5 degrees between 1139 and 1168 m — directly below the notch north of the summit.",
+      distanceLabel: "6.7 km",
+      caption: "905 metres of ascent over 6.65 km from Eikedalen, with the steepest ground — 32.5 degrees between 1139 and 1168 m — directly below the notch north of the summit.",
     },
   },
   gullfjellstoppen: {
