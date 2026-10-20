@@ -7208,13 +7208,13 @@ roads (`trails.py`), finds the *detours* — at least 150 m more than 30 m off
 any mapped way, leaving one and coming back to one, mostly within 150 m of
 it — and reads Kartverket's terrain class every 40 m along each.
 
-**56 of the 246 routes were put on the path** where they ran beside it through
+**58 of the 246 routes were put on the path** where they ran beside it through
 forest. What is left, on the shipped lines, is in `follow_trails_run.txt`:
 
 | detours left | | routes |
 | --- | --- | --- |
 | on open ground — skiable either side, left as they are | 220 (102 km) | |
-| mostly `Skog`, each with the reason it stays | 62 | 48 |
+| mostly `Skog`, each with the reason it stays | 58 | 47 |
 
 ### How a forest detour is moved
 
@@ -7353,13 +7353,7 @@ line climbed into the forest beside the road and back. Vassdalstinden still
 crosses itself twice, as it did before; its stretch at 3.6 km is the one that
 read open at 3.26 km, now four forest samples to three.
 
-Three stay. **Lodalskåpa**'s path takes the step at 37.7° in its steepest 30 m
-where the line takes it at 31.1°, which is why the line bulges north there.
-**Rundtinden**'s long stretch is the research's line over the bogs north-east of
-Skavbakkan, and on the road it is 420 m longer; the other two are 160 m
-stretches 40–60 m off. **Vatnaknausen** on the path hooks back on itself above
-Tverrberg and its steepest 30 m goes 21.9° → 23.6°, for two 220 m stretches 50 m
-off.
+Three were left for another look, and are taken up by hand below.
 
 ### Sandhornet and Såta, by hand
 
@@ -7385,9 +7379,63 @@ hairpin 30–40 m into the bank and read a 33.1° step there; the hairpin was
 spliced onto the road (way/544164315) by hand, and the steepest 30 m is the
 summit flank's 32.5° as before.
 
+### Lodalskåpa, Rundtinden and Vatnaknausen, by hand
+
+**Lodalskåpa** stays as it is, and now for a measured reason. Its forest stretch
+at 3.1 km is the line's switchback up the step between 708 and 790 moh. The path
+climbs that step straight, at up to 41° in its steepest 30 m. A search over a
+10 m DTM1 grid found no one-turn zigzag under 27° that turns closer than the
+line's own, 120 m north of the path, and no two-turn zigzag within 80 m of the
+path under 27° at all. The bulge is the switchback; it stays.
+
+**Rundtinden** now follows the road. The guide and the teaser both say the route
+is Mevassveien and Drangenveien to the road end by the cabins at Sandvatnet, and
+the research named its waypoints after the two roads — but the line ran up the
+power-line clearing 25–80 m east of the road, through the trees. It is on the road
+by hand from 0.3 km to the road end (ways 967412348, 563721980, 568725911 and
+1024678361), switchbacks and all: 5980 → 6472 m, 881 → 912 m up, 39 → 70 m given
+back on the road's own dips, card 880 → 910. The steepest 30 m is unchanged at
+24.8°. The stretch over the bogs north-east of Skavbakkan stays where the
+research put it.
+
+**Vatnaknausen** is on the toll road. The guide walks «Tverrbergsvegen sørover
+til veidelet på 475 moh, der Øvraset-vegen tar av østover», and the line ran
+30–60 m beside the road in three places. It is on the road by hand from 0.05 to
+3.5 km (ways 322409601 and 707342766), cleanly, without the hook the pass's
+re-solve drew above Tverrberg: 7495 → 7596 m, 980 → 991 m up, card 980 → 990,
+steepest 30 m 21.9° as before. The research's two road waypoints, «vegdelet mot
+Øvraset» and «Øvraset-vegen ved 533», are kept.
+
+### Steep segments and a spike, by hand
+
+`check_geometry.py` reported seven problems across the catalogue: a segment
+steeper than 45° on Breitinden, Nona (both routes), Kongsviktinden, Møysalen and
+Kolåstinden, and an elevation spike on Kolåstinden. Each was re-routed over a
+4 m DTM1 grid along the gentlest way, and the result read for the slope of the
+ground it crosses, not only along it. That second reading decided it:
+
+- **Nona's south side** and **Kongsviktinden's Østsia** now reach the summit by a
+  gentler last 100 m: no segment over 45°, ground under the new line 22–42°
+  where the old one crossed 50° and 65°.
+- **Kolåstinden**'s spike was one vertex on a rock, 1388 → 1419 → 1398 over 42 m.
+  It is removed; the gain drops from 1120 to 1099 m and the card from 1120 to
+  1100, the 31 m having been the rock.
+- **Breitinden**, **Nona's west side** and **Møysalen** stay. The gentler grid
+  lines all traversed ground steeper than the step they avoided — on Møysalen
+  60–79° below a line that skirts the notch — and the three steps are the
+  summit block's last thirty metres, a 45.0° pitch at the top of the gully, and
+  the 51 m notch in Møysalen's summit ridge that this README already shows is
+  real. They are where the skis come off, and the guides say so.
+
+Two guide figures were also corrected on the way. Nona's said the west side's
+steepest was 36.2° in two places, a figure no fact or note carries; the line's
+own is 38.4°, which the same guide quotes elsewhere. Tortenviktinden's «1170
+metres of ground» was the sum of two bands, which the check cannot read as a
+measurement; it now names the two, 495 and 675 m.
+
 ### What was left in the forest, and why
 
-Forty-eight routes, with the reason on each in `follow_trails_run.txt`. A
+Forty-seven routes, with the reason on each in `follow_trails_run.txt`. A
 route can have more than one.
 
 - **The path goes somewhere else** (29 routes — Gygrastølen, Vesoldo, Sula,
@@ -7395,10 +7443,10 @@ route can have more than one.
   than half again as long as the line's detour. These are paths to a hut, a
   farm or another summit that run alongside for a while; the line takes the
   direct way through the forest, which is passable on snow.
-- **The card, then looked at by hand** (3): the line on the path climbed more
-  than ten metres more or less than the tour's stated vertical. Seven of the ten
-  were moved with their cards (below); Lodalskåpa, Rundtinden and Vatnaknausen
-  stay for other reasons.
+- **The card, then looked at by hand** (2): the line on the path climbed more
+  than ten metres more or less than the tour's stated vertical. Nine of the ten
+  were moved with their cards (below). Lodalskåpa stays, because its path is the
+  steeper way up, and so does Rundtinden's stretch over the bogs.
 - **A research waypoint holds the line where it is** (11 — Hamperøkken's
   Vartavarhaugen, Hattfjellet's tractor road in Bjørndalen, Rondslottet's
   Langglupdalen): the corridor puts the line there for a reason the path does

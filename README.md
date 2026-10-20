@@ -372,19 +372,20 @@ content and data quality that has to be settled before the site is promoted wide
   lines; Røseknuten has no way up that keeps clear of the cornice edge above Røsehola, and the
   guide says where the line runs 5–31 m from it. The second sources are summer routes from other starts, so all three are
   `confidence: medium`. See «The Sirdal round» in `scripts/build-routes/README.md`.
-- **Fifty-six lines that ran beside the path through forest now run on it.** A line solved over
+- **Fifty-eight lines that ran beside the path through forest now run on it.** A line solved over
   the terrain model does not know a path is drawn on the map, and in places it ran 50–200 m to one
   side of one and came back. On open ground that is left alone — it is snow either side, and the
   winter line is often the better one — but below the treeline the path is where the trees are
   cleared, so `follow_trails.py` puts those stretches on the mapped path or road, changing nothing
-  else on the line: the steepest 30 m is unchanged on 50 of the 56, and eight cards moved with their lines:
-  Englafjell 1240 → 1230 m, Forselvtinden 1180 → 1190, Middagstinden 1290 → 1310, Sandhornet
+  else on the line: the steepest 30 m is unchanged on 52 of the 58, and ten cards moved with their lines:
+  Englafjell 1240 → 1230 m, Forselvtinden 1180 → 1190, Middagstinden 1290 → 1310, Rundtinden
+  880 → 910 (Mevassveien and Drangenveien to the road end, as the guide says), Sandhornet
   1020 → 1030 (the marked path and its stairs up the east side of Stjernåga, 40.2° in the stairs
-  where the skis are carried), Skårene 1220 → 1240, Snøtinden 1240 → 1220, Såta 900 → 910 and
-  Vassdalstinden 1220 → 1230. Gaustatoppen was put on the road from Langefonn
+  where the skis are carried), Skårene 1220 → 1240, Snøtinden 1240 → 1220, Såta 900 → 910, Vassdalstinden
+  1220 → 1230 and Vatnaknausen 980 → 990 (the toll road). Gaustatoppen was put on the road from Langefonn
   by hand, 270 m longer and otherwise as it was, and so were Tverrfjellet (the tractor road north
-  of Melåelva) and Snønipa from Veitebergsdalen (the forest road from the start). 62 forest
-  stretches on 48 routes stay, each with its reason in `follow_trails_run.txt` — mostly a path
+  of Melåelva) and Snønipa from Veitebergsdalen (the forest road from the start). 58 forest
+  stretches on 47 routes stay, each with its reason in `follow_trails_run.txt` — mostly a path
   that goes somewhere else, a path that is steeper or would not hold the line, or a
   research waypoint that holds the line where it is. See «The path round» in
   `scripts/build-routes/README.md`.

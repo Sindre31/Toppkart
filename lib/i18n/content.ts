@@ -229,7 +229,7 @@ export const TOUR_TEASER_EN: Record<string, string> = {
   finnbufjellet:
     "620 metres of ascent from the camping ground at the top of the Halsabakkane hairpins: across the Sendo river and up the ridge east of Finnbujuvet, where the Voss ski season opens and closes.",
   vatnaknausen:
-    "980 metres of ascent from Tverrberg: the toll road into Budalen to Nyestølen, up onto the ridge west of the Rjupetjørnane tarns, and east across the plateau to the view over Voss.",
+    "990 metres of ascent from Tverrberg: the toll road into Budalen to Nyestølen, up onto the ridge west of the Rjupetjørnane tarns, and east across the plateau to the view over Voss.",
   "varden-smaatindan":
     "760 metres of ascent from Eidet by Kabelvåg: the lit trail along Karlsvatnet, over the neck towards Ørntindaksla and through the notch west of it, and the east flank to the top of the archipelago's most skied tour.",
   midtitinden:
@@ -401,7 +401,7 @@ export const TOUR_TEASER_EN: Record<string, string> = {
   lundenesgalten:
     "790 metres of ascent from Lundenes church: the tractor road along Forselva to Storskogbakkan, then the whole of the great south face — a continuous 25 to 35 degrees, the mountain half of Harstad grows up looking at.",
   rundtind:
-    "880 metres of ascent from Holtet: the tractor road up to the cabins at Sandvatnet, around the reservoir and out across the bogs to the climb north-east of Skavbakkan — the easiest way onto one of Drangen's summits, with the Tottålen pinnacle on the east side.",
+    "910 metres of ascent from Holtet: the tractor road up to the cabins at Sandvatnet, around the reservoir and out across the bogs to the climb north-east of Skavbakkan — the easiest way onto one of Drangen's summits, with the Tottålen pinnacle on the east side.",
   "stortinden-sortland":
     "1010 metres of ascent from the Vangpollen power station: the steep valley that keeps steepening, right beneath the band at 600 m and up the ridge — one of Hinnøya's thousand-metre peaks, with steep skiing all the way back to the sea.",
   storlitinden:
@@ -1620,12 +1620,12 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
     descent: [
       "Back down the way you came — and only there: the flank probes around the summit give N/NE/E 45.7–49.1 degrees on average with windows of 57–66, and SW, the kindest, 27.8. The west-route gully and Syd direkte sit in flanks averaging 37.9 and 34.7; the source gives Syd direkte 35–50 degrees, for stable snow and precise route-finding.",
       "Assess the snowpack before descending — the terrain is avalanche terrain in every variant, says the source. The gully skis all the way down towards Dalsdalen; below the treeline at 287 the track leads home to Dale.",
-      "The second documented route climbs the south side from Vaskinn — 996 metres of ascent over 4.66 km, and the gentlest way on the mountain: the steepest step measures 34.0 degrees against the west side's 36.2. It follows the summer path up through the forest along Vaskinnelva and past Vadskinndalsvatnet into the southern bowl. The source says the line is easier to find if you climb the same route you ski down.",
+      "The second documented route climbs the south side from Vaskinn — 996 metres of ascent over 4.63 km, and the gentlest way on the mountain: the steepest step measures 34.2 degrees against the west side's 38.4. It follows the summer path up through the forest along Vaskinnelva and past Vadskinndalsvatnet into the southern bowl. The source says the line is easier to find if you climb the same route you ski down.",
     ],
     avalanche: [
       {
         title: "The gully",
-        body: "The source gives the gully 30–45 degrees sustained down to lake 428 — KAST 3 – Complex, with ice axe and crampons on the list. The model's line measures 36.2 at its steepest, but a gully collects everything that releases above you: here the snow decides the day.",
+        body: "The source gives the gully 30–45 degrees sustained down to lake 428 — KAST 3 – Complex, with ice axe and crampons on the list. The model's line measures 38.4 degrees at its steepest, but a gully collects everything that releases above you: here the snow decides the day.",
       },
       {
         title: "The summit flanks",
@@ -2151,10 +2151,10 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
   },
   rundtind: {
     intro:
-      "881 metres of ascent over 5.98 km from Holtet to Rundtind — the easiest way onto one of the summits on the Drangen ridge, with the Tottålen pinnacle just east of the cairn. KAST 3 – Complex in Fri Flyt, but with no axe or crampons on the list: what makes it complex is how long it spends in a runout zone. Grade 3.",
+      "912 metres of ascent over 6.47 km from Holtet to Rundtind — the easiest way onto one of the summits on the Drangen ridge, with the Tottålen pinnacle just east of the cairn. KAST 3 – Complex in Fri Flyt, but with no axe or crampons on the list: what makes it complex is how long it spends in a runout zone. Grade 3.",
     ascent: [
       "From Holtet, where the tractor road turns off and climbs to the cabin field — 30 m. The source is blunt about the parking: there are few spaces here, so have a plan, and get the landowner's permission. The band from 0 to 100 m measures a mean 18.8 degrees over 214 metres of ground — the hairpins up from the fjord are the steepest thing on the whole lower half.",
-      "The road is Mevassveien up to 161 m and Drangenveien on from 225 to the road end at 246, by Sandvatnet. The band from 200 to 300 m measures 2.1 degrees over 2665 metres of ground: two and a half kilometres of nearly level going, road first and then bog. The route goes around the reservoir, not over it, and then out across the bogs to 317 m north-east of Skavbakkan.",
+      "The road is Mevassveien up to 161 m and Drangenveien on from 225 to the road end at 246, by Sandvatnet. The band from 200 to 300 m measures 2.0 degrees over 2917 metres of ground: not quite three kilometres of nearly level going, road first and then bog. The route goes around the reservoir, not over it, and then out across the bogs to 317 m north-east of Skavbakkan.",
       "From there the climb begins, over the treeline at 475 m. The forest lets go at 426 m after 4.36 km. The steepest hundred-metre band measures a mean 19.2 degrees between 500 and 600 m over 278 metres of ground, and the steepest single step, 24.8 degrees, lies between 615 and 635. Then the ridge towards Mellatinden — 732 m — and the summit at 872.",
     ],
     descent: [
@@ -2178,8 +2178,8 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
     elevationProfile: {
       startLabel: "30 m",
       endLabel: "872 m",
-      distanceLabel: "6.0 km",
-      caption: "881 metres of ascent over 5.98 km from Holtet: Mevassveien and Drangenveien to the road end at 246, around Sandvatnet and across the bogs — then up north-east of Skavbakkan to 872.",
+      distanceLabel: "6.5 km",
+      caption: "912 metres of ascent over 6.47 km from Holtet: Mevassveien and Drangenveien to the road end at 246, around Sandvatnet and across the bogs — then up north-east of Skavbakkan to 872.",
     },
   },
   sula: {
@@ -2797,7 +2797,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
     descent: [
       "The north side down is the reason to come: mostly 20–25 degrees by Fri Flyt, with two steeper sections at 30 — and sheltered powder when the other aspects are scoured, which are exactly the days the axe and crampons in the pack earn their place on the hard flank up.",
       "The south-east side is the avalanche side: several large avalanches a year on 30–40 degrees, and the source is unambiguous — it is not to be skied, there is steeper-but-sounder ground nearby. The flank probe agrees: 51.0 degrees in the first window from the summit towards the south-east. The west gully is the expert line for stable days, with axe and crampons and a descent by the north side.",
-      "The second documented route climbs the Østsia from the petrol station in Kongsvik — 923 metres of ascent over 4.38 km, under half the normal route's length, up the scooter track in Håkadalen and the big slanting ramp. The source describes it as a descent and adds that you can of course climb it too; most of it is 20–30 degrees, with a steepest step of 30.9.",
+      "The second documented route climbs the Østsia from the petrol station in Kongsvik — 923 metres of ascent over 4.36 km, under half the normal route's length, up the scooter track in Håkadalen and the big slanting ramp. The source describes it as a descent and adds that you can of course climb it too; most of it is 20–30 degrees, with a steepest step of 30.9.",
     ],
     avalanche: [
       {
@@ -3915,7 +3915,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
     avalanche: [
       {
         title: "The route",
-        body: "The steepest sustained section is 25.1 degrees between 159 and 180 m, and the steepest band 16.8 degrees from 500 to 600. The ground under the line is 35 degrees or steeper on one stretch of 16 metres at 717–724 m, at the rock nose. Fri Flyt gives 30 degrees between 300 and 400 m, and between 700 and 770 m “if the SW flank to the right of the rock nose is chosen”, and grades the tour “Easy/Moderate”.",
+        body: "The steepest sustained section is 25.1 degrees between 159 and 180 m, and the steepest band 16.8 degrees from 500 to 600. The ground under the line is 35 degrees or steeper on one stretch of 16 metres at 717–724 m, at the rock nose. Fri Flyt gives 30 degrees as the steepest point, in the hollow between 300 and 400 m that the line goes west of, and between 700 and 770 m “if the SW flank to the right of the rock nose is chosen”, and grades the tour “Easy/Moderate”.",
       },
       {
         title: "The terrain around it",
@@ -4083,7 +4083,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
     ascent: [
       "From the farm Neset by Flostrand, 15 m, on the E12 coastal road. The register places Tortenviktinden in Lurøy while the approach from Flostrand lies in Rana — the mountain and the trailhead are in different municipalities. Visit Helgeland carries the same route at 5.2 km and 1025 metres of ascent one way; the line measures 5.57 km and 1023.",
       "The first kilometre is all but flat: the band from 0 to 100 m measures 6.7 degrees over 761 metres of ground and the band from 100 to 200 only 4.5 over 1233 metres. The forest ends at 152 m by Kartverket's classes, with open ground from 158, and the treeline comes 1.66 km in. Fri Flyt says “straight up until you come out above the forest, heading north-north-west” — and that is this stretch.",
-      "Above the forest the line runs west along the ribs, as the source says. The bands from 200 to 500 m sit evenly between 12.3 and 13.2 degrees. Then comes the flatter section it describes as “somewhat broken, with small stream valleys across the mountain”: the bands from 700 to 900 m measure 10.4 and 8.8 degrees over 1170 metres of ground between them — the gentlest above the treeline, and the longest. This is where the tour feels long. A cluster of tarns sits here between 785 and 792 m, and the line passes south of the whole group: 0 metres on water, measured against OSM's water polygons.",
+      "Above the forest the line runs west along the ribs, as the source says. The bands from 200 to 500 m sit evenly between 12.3 and 13.2 degrees. Then comes the flatter section it describes as “somewhat broken, with small stream valleys across the mountain”: the bands from 700 to 900 m measure 10.4 and 8.8 degrees over 495 and 675 metres of ground — the gentlest above the treeline, and the longest. This is where the tour feels long. A cluster of tarns sits here between 785 and 792 m, and the line passes south of the whole group: 0 metres on water, measured against OSM's water polygons.",
       "“From here you cannot see Tortenviktinden itself, but the summit lies just behind the highest point you can see”, says Fri Flyt. Behind it rises the last slope: the band from 900 to 1000 m measures 18.6 degrees, the steepest of the tour, and the steepest sustained stretch sits here — 23.7 degrees between 971 and 994 m, 5.39 km in, under two hundred metres before the cairn. 1028 m against a published 1027.",
     ],
     descent: [
@@ -4861,8 +4861,8 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
     elevationProfile: {
       startLabel: "376 m",
       endLabel: "1432 m",
-      distanceLabel: "5.7 km",
-      caption: "376 m at Standaleidet to 1432 on Kolåstinden — 1120 vertical metres over 5.68 kilometres, glacier from 1173 m.",
+      distanceLabel: "5.6 km",
+      caption: "376 m at Standaleidet to 1432 on Kolåstinden — 1099 vertical metres over 5.65 kilometres, glacier from 1173 m.",
     },
   },
   vassdalstinden: {
@@ -6570,7 +6570,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
   },
   vatnaknausen: {
     intro:
-      "980 metres of ascent and 7.50 km from Tverrberg, and nearly half of it on a road: the toll road from Selheim ends at the car park at 383 metres, and the road chain on into Budalen carries you past Øvraset to Nyestølen at 707 before the mountain takes over. The numbers on the line itself are kind — steepest 100-metre band 13.3 degrees between 700 and 800 metres, steepest sustained stretch 21.9 — but Fri Flyt rates it KAST 2 – Challenging, and that is about route-finding in the broken ground above the treeline, not about any single steep slope. From the cairn: the panorama over Voss the tour is sold on.",
+      "991 metres of ascent and 7.60 km from Tverrberg, and nearly half of it on a road: the toll road from Selheim ends at the car park at 383 metres, and the road chain on into Budalen carries you past Øvraset to Nyestølen at 707 before the mountain takes over. The numbers on the line itself are kind — steepest 100-metre band 13.3 degrees between 700 and 800 metres, steepest sustained stretch 21.9 — but Fri Flyt rates it KAST 2 – Challenging, and that is about route-finding in the broken ground above the treeline, not about any single steep slope. From the cairn: the panorama over Voss the tour is sold on.",
     ascent: [
       "Follow the road to Selheim farm, pay the toll and crawl steeply up to Tverrberg “or to a suitable stopping place near the snow line”, as the source puts it — the mapped car park reads 383 metres, but the snow line decides where the tour actually begins, and a lower start adds vertical metres. On foot from there: Tverrbergsvegen continues south to the junction at 475 metres, where the Øvraset road branches east.",
       "The Øvraset road carries you into Budalen: 533 metres along the way, Øvraset at 639, and the valley floor at 670 — bog and thinning forest where the valley opens. The road ends and summer-farm country takes over up to Nyestølen at 707 metres. The register holds 27 Nyestølens; this is the one in Budalen.",
@@ -6604,8 +6604,8 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
     elevationProfile: {
       startLabel: "383 m",
       endLabel: "1302 m",
-      distanceLabel: "7.5 km",
-      caption: "980 metres of ascent and 7.50 km from Tverrberg — road into Budalen to Nyestølen, the ridge west of the Rjupetjørnane tarns, and 21.9 degrees as the steepest sustained stretch.",
+      distanceLabel: "7.6 km",
+      caption: "991 metres of ascent and 7.60 km from Tverrberg — road into Budalen to Nyestølen, the ridge west of the Rjupetjørnane tarns, and 21.9 degrees as the steepest sustained stretch.",
     },
   },
   horndalsnuten: {
