@@ -106,3 +106,21 @@
     grid-template-columns: minmax(0, 1fr);
   }
 }
+
+/* `/mine-turer`: samme hero, men på telefon med tynnere slør. Teksten er kort
+   og står midt i bildet, så fjellet over og til høyre for den kan vises, og
+   sløret trenger bare å være tett der linjene faktisk står. */
+@media (max-width: 760px) {
+  .heroSoft::after {
+    background:
+      linear-gradient(to bottom, var(--color-bg), transparent 28px),
+      linear-gradient(to top, var(--color-bg), transparent 90px),
+      linear-gradient(
+        180deg,
+        color-mix(in srgb, var(--color-bg) 20%, transparent) 0%,
+        color-mix(in srgb, var(--color-bg) 72%, transparent) 42%,
+        color-mix(in srgb, var(--color-bg) 72%, transparent) 80%,
+        color-mix(in srgb, var(--color-bg) 50%, transparent) 100%
+      );
+  }
+}
