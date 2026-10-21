@@ -37,28 +37,21 @@ export default async function MineTurerPage() {
 
   return (
     <div className="shell">
+      {/* Relieffet fra `/om`, bak hele vinduet (se `.pageBackdrop`). Dekor,
+          derfor tom alt. */}
+      <div className={styles.pageBackdrop} aria-hidden>
+        <div className={styles.backdropFrame}>
+          <Image src="/assets/hero-relief.webp" alt="" fill priority sizes="(max-width: 760px) 170vw, 78vw" />
+        </div>
+      </div>
+
       <SiteNav lang={lang} current="/mine-turer" />
 
-      <main className="page page-account">
-        {/* Samme relieff og slør som heroen på `/om`. Dekor, derfor tom alt. */}
-        <header className={`${styles.hero} ${styles.heroSoft}`}>
-          <Image
-            src="/assets/hero-relief.webp"
-            alt=""
-            aria-hidden
-            fill
-            priority
-            sizes="(max-width: 920px) 100vw, 920px"
-            className={styles.heroImage}
-          />
-          <div className={styles.heroContent}>
-            <h1 className="display" style={{ fontSize: "clamp(56px, 6.5vw, 84px)" }}>
-              {t.heading}
-            </h1>
-            <p className="lede" style={{ margin: "14px 0 0" }}>
-              {t.storedLocally}
-            </p>
-          </div>
+      <main className={`page ${styles.fullPage}`}>
+        <header className={styles.pageHeader}>
+          <h1 className="display" style={{ fontSize: "clamp(56px, 6.5vw, 84px)" }}>
+            {t.heading}
+          </h1>
         </header>
 
         <MyTours tours={tours} lang={lang} />

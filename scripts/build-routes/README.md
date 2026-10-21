@@ -7736,6 +7736,141 @@ odden and Hulderhola marks back 121 m.
 The turn up onto the ridge north of Blånipa (105°) stays. Every smooth curve
 there was steeper than the route's 21.7°.
 
+## The last ten tours in the list, eleven kinks
+
+The last ten tours in `lib/tours.ts`, Sveigen to Røseknuten, were scanned for
+turns of 50° or more where the ground within three vertices of the turn is
+under 15°. That kind of turn is not a kick turn. The scan found 29. Each was
+tried with the splice tool at the route's own steepest grade and viewed in the
+app.
+
+Eleven were smoothed, each into a curve with a largest turn of 5–16°:
+- Sveigen at 2.3 km.
+- Fjetlandsnuten at 4.2 and 5.1 km.
+- Store Ble at 4.4 km.
+- Surløytenuten at 1.6 km.
+- Styggemann at 3.0, 3.3 and 5.7 km.
+- Sæbyggjenuten at 3.0 km.
+- Kjerag at 3.3 km.
+- Grubbå at the start.
+
+None of the curves passes a building. No waypoint moved more than 13 m.
+
+The other eighteen stay. Twelve are features of the route:
+- Fjetlandsnuten's turns are the hairpins of Blåbergdalsvegen, which ut.no
+  tells you to follow.
+- Store Ble's 135° is at Sigridsbu turisthytte.
+- Surløytenuten crosses Esperåa on the bridge and goes through the yard at
+  Sudstul.
+- Styggemann has the turns at Skrimsetra and the path junction at Sørmyrseter.
+- Kjerag has the turn onto Kjeragplatået.
+- Sveigen's turn at the car park would only come down to 47°.
+
+In the other six, every smooth curve was 7–20° steeper than the ground it
+replaced: three on Hilleknuten, and one each on Sæbyggjenuten, Grubbå and
+Røseknuten. The turn there is probably what keeps the line off the slope.
+
+Five routes gained 4–7 m of climbing and all eight got shorter, by 2–43 m.
+The guides give the new figures in both languages: lengths, climbing, band
+grades and ground, and Fjetlandsnuten's marks along Gjertrabekk. The cards
+stay; they are within `check_tours`' tolerance. `check_steepness` still lists
+Styggemann (28.0° at 705–724 moh) and Kjerag (29.6°, which its guide already
+gives). Both windows lie past the new curves and measure the same before and
+after.
+
+## Kinks on gentle ground, the rest of the list in batches
+
+The other tours are being checked in batches, in list order. Each batch gets
+the same scan as the last ten: a turn of 50° or more where the ground within
+three vertices is under 15°. The splice tool tries every kink at the route's
+own steepest grade. A kink is smoothed only when every one of these holds:
+
+- a curve is found that is dry and clear of buildings;
+- its largest turn is 30° or less;
+- it is at most 6° steeper than the ground at the kink. A corner is often
+  there to keep the line off a bank;
+- the kink is not on a mapped way. The test is the OSM API's map of the 300 m
+  round the kink: the kink and one of its neighbours lie within 8 m of the same
+  highway or piste. That catches a road's hairpins and the place where a line
+  leaves a road on purpose;
+- no waypoint within 30 m names a place, road or path. That means a proper
+  noun, or words such as hytte, bu, bru, seter, stul, kryss, veg, sti, løype,
+  sving, skar, topp, varde or drei.
+
+The line is usually kinked because it is pinned to a waypoint. A plain
+descriptive waypoint («ryggen», «skogkanten») that the curve leaves more than
+12 m behind moves onto the line, with a `note`, if the move is 60 m or less.
+A named one ends the attempt: the whole route goes back as it was.
+
+Overlapping kinks on one route are done from the far end, and the next one
+back is skipped. The guides follow with the same tools as before. Totals and
+bands come from the fact diff. Marks along the route are listed with their
+context and each is checked by hand: alternative routes and other routes'
+lengths give false hits.
+
+### Batch 1, tours 1–25
+
+The batch had 74 kinks. Thirteen were smoothed:
+
+- Gievdnerassa at 2.0 km.
+- Store Skalltinden at 3.1 and 4.9 km, and its Bjørnskardalen route at 1.3 km.
+- Kjølen's Slettaelva route at 2.7 km.
+- Skarlitinden at 3.8 km.
+- Fastdalstinden at 1.5, 2.5 and 2.8 km. The last was a 172–174° spike that
+  made the line cross itself twice; it no longer does.
+- Fagerfjellet at 1.7 and 2.9 km.
+- Husfjellet at 1.9 km.
+- Lonketind at 0.7 km.
+
+Five plain waypoints moved, by 19–57 m. Kjølen's Kvaløysletta route was tried
+and put back: «Litje-Kjølen» would have ended 35 m off the line.
+
+Skarlitinden's English guide had said 939 m of climbing, where the Norwegian
+said 937. Both now say 936.
+
+The other 61 stay:
+
+| Reason | Kinks |
+| --- | --- |
+| Smooth curve 6° or more steeper than the ground | 21 |
+| No dry, clear curve | 16 |
+| On a mapped way | 11 |
+| Next to a named waypoint | 5 |
+| Still over 30° | 3 |
+| Overlapping a curve already made | 4 |
+| Put back with Kvaløysletta | 1 |
+
+### Batch 2, tours 26–50
+
+The batch had 80 kinks. Nine were smoothed:
+
+- Stortussen at 1.2 km.
+- Litletussen at 1.2 and 2.1 km.
+- Skjellesvikgalten at 1.0 km.
+- Langlitinden at 3.0 km. This was a 151° spike that made the line cross
+  itself; it no longer does.
+- Vetefjellet at 1.3 km.
+- Storlitinden at 2.4 km.
+- Stortinden in Rolla at 0.4 and 3.1 km.
+
+Two plain waypoints moved, by 24 and 32 m. The guides' treeline marks moved
+with the line on four tours.
+
+The other 71 stay:
+
+| Reason | Kinks |
+| --- | --- |
+| Still over 30° | 20 |
+| Smooth curve 6° or more steeper than the ground | 19 |
+| No dry, clear curve | 17 |
+| Next to a named waypoint | 12 |
+| Overlapping a curve already made | 2 |
+| On a mapped way | 1 |
+
+`check_steepness` lists Stortussen and Skjellesvikgalten. Both were already
+in their guides' notes from the steepness round. They lie away from the new
+curves.
+
 ## Network
 
 Everything is public and unauthenticated:

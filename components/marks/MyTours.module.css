@@ -2,7 +2,10 @@
    to kort side om side — overskrift i Instrument Serif, som seksjonene i
    turguiden, og turene som rader med fjellnavnet i samme skrift. */
 
-.section { padding: 0 0 24px; }
+/* `flex: 1`: seksjonen tar høyden sida har igjen (se `.fullPage` på
+   `/mine-turer`), så bunnteksten havner nederst i vinduet. Kortene beholder
+   sin naturlige høyde. */
+.section { flex: 1; padding: 0 0 24px; }
 
 .grid {
   display: grid;

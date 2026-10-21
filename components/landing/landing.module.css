@@ -43,6 +43,9 @@
   z-index: 1;
   pointer-events: none;
   background:
+    /* øverste kant: toner inn fra menyen, som er 90 % sidefarge, så det ikke
+       blir en kant der menyen slutter */
+    linear-gradient(to bottom, var(--color-bg), transparent 64px),
     /* høyre kant */
     linear-gradient(to left, var(--color-bg), transparent 160px),
     /* nederste kant */
@@ -68,9 +71,9 @@
    den. Sløret legges ovenfra i stedet for fra siden, og tettere — her er det
    ingen tom flate å sette overskriften på.
 
-   Bare den nederste kanten tones ut. Sidekantene går helt ut til skjermen på
-   telefon, og en toning der ville lest som en vignett rundt hele bildet
-   heller enn som en overgang mot resten av sida. */
+   Bare øverste og nederste kant tones ut. Sidekantene går helt ut til
+   skjermen på telefon, og en toning der ville lest som en vignett rundt hele
+   bildet heller enn som en overgang mot resten av sida. */
 @media (max-width: 760px) {
   .heroImage {
     object-position: 68% 0%;
@@ -78,6 +81,7 @@
 
   .hero::after {
     background:
+      linear-gradient(to bottom, var(--color-bg), transparent 44px),
       linear-gradient(to top, var(--color-bg), transparent 90px),
       linear-gradient(
         180deg,
@@ -107,20 +111,80 @@
   }
 }
 
-/* `/mine-turer`: samme hero, men på telefon med tynnere slør. Teksten er kort
-   og står midt i bildet, så fjellet over og til høyre for den kan vises, og
-   sløret trenger bare å være tett der linjene faktisk står. */
+/* `/mine-turer`: relieffet fra `/om` ligger bak hele vinduet, ikke bare bak
+   overskriften. Det står fast mens sida ruller, forankret i overkanten som
+   heroen (`.heroImage`), så toppen alltid er med. Kortene har egen bakgrunn.
+
+   Menyen er 90 % sidefarge, så et bilde som gikk helt opp, lyste svakt
+   gjennom den og fikk en skarp kant der menyen slutter. Bildet starter
+   derfor like under menyen og toner inn fra sidefargen, så de går i ett, og
+   toner ut igjen mot bunnteksten. */
+.pageBackdrop {
+  position: fixed;
+  inset: 56px 0 0;
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* Bildet i sitt eget format, mindre enn vinduet, så mer av landskapet er
+   med. Kantene toner ut med en maske; der rammen ikke når, er det sidefarge.
+   Forankret til høyre, der fjellet står i bildet. */
+.backdropFrame {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: min(78vw, 1200px);
+  aspect-ratio: 3 / 2;
+  -webkit-mask-image: radial-gradient(ellipse 65% 62% at 60% 36%, #000 45%, transparent 100%);
+  mask-image: radial-gradient(ellipse 65% 62% at 60% 36%, #000 45%, transparent 100%);
+}
+
+.pageBackdrop::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(to bottom, var(--color-bg), transparent 120px),
+    linear-gradient(to top, var(--color-bg) 40px, transparent 240px),
+    /* lesbarhetssløret: tett der overskriften står, ut mot rent bilde der
+       fjellet er */
+    linear-gradient(
+      100deg,
+      var(--color-bg) 0%,
+      color-mix(in srgb, var(--color-bg) 85%, transparent) 30%,
+      color-mix(in srgb, var(--color-bg) 40%, transparent) 58%,
+      color-mix(in srgb, var(--color-bg) 10%, transparent) 80%,
+      transparent 100%
+    );
+}
+
+/* Smalt står overskriften over hele bredden, så sløret legges ovenfra i
+   stedet for fra siden: tettest der overskriften står, tynnere under kortene. */
 @media (max-width: 760px) {
-  .heroSoft::after {
+  /* Smalt er vinduet høyt: `cover` zoomet inn til en stripe av bildet. Her
+     er bildet bredere enn skjermen, men bare så mye at toppen og ruta får
+     plass. */
+  .backdropFrame { width: 170vw; right: -30vw; }
+
+  .pageBackdrop::after {
     background:
-      linear-gradient(to bottom, var(--color-bg), transparent 28px),
-      linear-gradient(to top, var(--color-bg), transparent 90px),
+      linear-gradient(to bottom, var(--color-bg), transparent 60px),
+      linear-gradient(to top, var(--color-bg) 30px, transparent 180px),
       linear-gradient(
         180deg,
-        color-mix(in srgb, var(--color-bg) 20%, transparent) 0%,
-        color-mix(in srgb, var(--color-bg) 72%, transparent) 42%,
-        color-mix(in srgb, var(--color-bg) 72%, transparent) 80%,
-        color-mix(in srgb, var(--color-bg) 50%, transparent) 100%
+        color-mix(in srgb, var(--color-bg) 25%, transparent) 0%,
+        color-mix(in srgb, var(--color-bg) 70%, transparent) 14%,
+        color-mix(in srgb, var(--color-bg) 70%, transparent) 24%,
+        color-mix(in srgb, var(--color-bg) 40%, transparent) 40%,
+        color-mix(in srgb, var(--color-bg) 40%, transparent) 100%
       );
   }
 }
+
+.pageHeader { padding: 96px 0 72px; }
+
+/* Sida i full bredde og høyde. `.shell` er en flex-kolonne, og `margin: auto`
+   krymper `.page` til innholdet; `width` holder den ute. Som flex-kolonne
+   selv lar den kortseksjonen (`MyTours`) ta høyden som er igjen, så
+   bunnteksten havner nederst i vinduet. */
+.fullPage { width: 100%; display: flex; flex-direction: column; }
