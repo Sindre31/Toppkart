@@ -7838,6 +7838,39 @@ The other 71 stay:
 in their guides' notes from the steepness round. They lie away from the new
 curves.
 
+## Gullfjellstoppen from Osavatnet, the V under 700
+
+On the map, the Osavatnet line made a V east of Markskilfossen, 5.2–5.6 km
+out. It ran north up the stream valley to 670 moh, turned 100° east, then
+went south-east and south for 120 m to the waypoint «vegen ved 5356 m» at
+696 moh, turned 150° there and went back north-east. `check_geometry.py`
+missed it: the line does not come back within 12 m of itself, and the climb
+never stops, so it is neither a spur nor a dip.
+
+The waypoint is on the mapped path, but the straight way up to it from
+625 moh is 36° over 30 m. That is why the solver went round to the north.
+Every smooth curve that cuts inside the corner was 35–48°, so the line still
+goes round to the north. Only the V is gone.
+
+The stretch from 637 to 709 moh is now a Chaikin curve through five of the
+line's own vertices, chosen by search to minimise the largest turn. It is
+resampled every 12 m and each new vertex is read from DTM1. It is 26.1° at
+its steepest, under the route's 27.4°. No sample is water. The largest turn
+is now 32°, against 100° and 150°. It ends on the vertex at 709 moh, so the
+27.4° step between 709 and 727 moh stays as it was.
+
+The waypoint moved 92 m north onto the curve, with a `note`. The line is now
+7635 m, against 7802 m, with the same 839 m of climbing and 159 m given back.
+The 600–700 moh band is now 7.9° over 666 m of ground, against 6.4° over
+843 m, so the guide's «none of the other six bands exceeds 6.9» now says 7.9.
+The tarn is now 6.03 km out and Middagsdalen 7.23 km, against 6.21 and 7.40.
+The new stretch was read for terrain class every 2 m (185 samples): all
+`ÅpentOmråde` or unclassified, as on the stretch it replaces, and none water.
+The whole line was then swept again, a sample every 2 m: 3 819 samples,
+none water (3 415 `ÅpentOmråde`, 93 `Myr`, 75 `Skog`, 236 unclassified), so
+the guide now says 0 m of 7 635. The duration model now gives 5.48 h, against
+5.53 h before, which moves it from «5–7 t» to «4–6 t». The card follows.
+
 ## Network
 
 Everything is public and unauthenticated:
