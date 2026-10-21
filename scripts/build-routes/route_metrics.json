@@ -2050,7 +2050,7 @@
  "torvloysa": {
   "verticalM": 1480,
   "gainM": 1479,
-  "distanceM": 11219,
+  "distanceM": 11218,
   "startM": 453,
   "summitM": 1851,
   "duration": "7–9 t",
@@ -2061,12 +2061,12 @@
   "grade": 2,
   "aspect": "N",
   "distanceKm": 11.2,
-  "cumdistM": 11219
+  "cumdistM": 11218
  },
  "skarene": {
   "verticalM": 1240,
   "gainM": 1239,
-  "distanceM": 6722,
+  "distanceM": 6709,
   "startM": 621,
   "summitM": 1830,
   "duration": "5–7 t",
@@ -2077,7 +2077,7 @@
   "grade": 2,
   "aspect": "S",
   "distanceKm": 6.7,
-  "cumdistM": 6722
+  "cumdistM": 6709
  },
  "melshornet": {
   "verticalM": 560,

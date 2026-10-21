@@ -4744,7 +4744,7 @@ export const GUIDES: Record<string, TourGuide> = {
       "1479 høydemeter på 11,22 km fra Hatlestad — en av de lengste turene i Norddal, og en av de slakeste. Bratteste sammenhengende parti måler 27,2 grader, og fem kilometer av ruta ligger på ryggen fra Daurmålsfjellet til toppen.",
     ascent: [
       "Start på den kartfestede parkeringa på Hatlestad, 453 moh, over Norddalen. Fri Flyt skriver at du parkerer på 350 moh; terrengmodellen leser gårdene til 412 og p-plassen til 453, og differansen er grunnen til at turen her måler 1479 høydemeter og ikke 1500.",
-      "Gå slakt inn i munningen av Dyrdalen og opp til Rellingsætra på 557 moh. De to første bandene er nesten flate — 2,8 grader fra 400 til 500 moh og 2,1 over 2678 meter grunn fra 500 til 600.",
+      "Gå slakt inn i munningen av Dyrdalen og opp til Rellingsætra på 557 moh. De to første bandene er nesten flate — 2,8 grader fra 400 til 500 moh og 2,1 over 2676 meter grunn fra 500 til 600.",
       "Fra setra tar kneiken opp på Daurmålsfjellet, 825 moh: 15,4 grader fra 600 til 700 moh og 15,5 fra 700 til 800. Skogen holder til 800 moh. Dette er den bratte delen av turen, og den er kort.",
       "Så følger ryggen. Fem kilometer i slakt terreng, over ryggpunktet på 1186 moh, med band mellom 7 og 16 grader hele veien: 7,0 fra 1000 til 1100 moh, 15,5 fra 1200 til 1300, 16,4 fra 1700 til 1800 — bratteste hundremeteren — og 9,9 de siste hundre til varden på 1851 moh. Kartverket registrerer ikke breterreng noe sted på selve linja: hvert punkt mellom 1380 og 1520 moh er åpent område. Den nærmeste cella som er klassifisert SnøIsbre ligger omtrent 300 meter fra ruta, på 1482 moh.",
     ],
@@ -4768,7 +4768,7 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,200 L24,198 L49,196 L66,190 L93,187 L117,185 L137,188 L162,188 L186,187 L207,179 L228,163 L248,154 L272,151 L297,147 L321,142 L347,133 L368,121 L395,117 L419,106 L439,103 L460,89 L482,76 L506,69 L528,59 L554,47 L576,30 L597,18 L600,18",
+      path: "M0,200 L24,198 L49,196 L66,190 L93,187 L109,184 L117,185 L134,186 L152,188 L176,185 L200,181 L222,167 L241,154 L265,153 L289,148 L313,143 L340,136 L361,124 L388,117 L412,109 L434,104 L453,95 L475,80 L499,69 L520,62 L544,50 L568,36 L590,22 L600,18",
       startLabel: "453 moh",
       endLabel: "1851 moh",
       distanceLabel: "11,2 km",
@@ -4778,10 +4778,10 @@ export const GUIDES: Record<string, TourGuide> = {
   skarene: {
     slug: "skarene",
     intro:
-      "1239 høydemeter på 6,72 km fra Korsmyra, med to kilometer flat dalbotn før den store snøflanken tar til. Flanken holder 18 til 21 grader i band etter band fra 900 til 1700 moh — og den er sammenhengende skredterreng hele veien.",
+      "1239 høydemeter på 6,71 km fra Korsmyra, med to kilometer flat dalbotn før den store snøflanken tar til. Flanken holder 18 til 21 grader i band etter band fra 900 til 1700 moh — og den er sammenhengende skredterreng hele veien.",
     ascent: [
       "Start på biloppstillingsplassen på Korsmyra, 621 moh, ved hovedveien mellom Eidsdal og Geiranger. Tilkomsten står under Eidshornet hos Fri Flyt, og det er den samme plassen.",
-      "Følg seterveien inn til Grandesætra på 648 moh og videre slakt inn og oppover Gråsteindalen, 721 moh. De to første bandene er nesten flate: 3,3 grader over 1431 meter grunn fra 600 til 700 moh og 3,6 over 1575 meter fra 800 til 900.",
+      "Følg seterveien inn til Grandesætra på 648 moh og videre slakt inn og oppover Gråsteindalen, 721 moh. De to første bandene er nesten flate: 3,4 grader over 1418 meter grunn fra 600 til 700 moh og 3,6 over 1575 meter fra 800 til 900.",
       "Kommet inn mot botnen av dalen på 940 moh tar den store snøflanken til, og den holder samme karakter helt opp: 17,9 grader fra 900 til 1000 moh, 20,5 fra 1000 til 1100, 19,6 fra 1300 til 1400, 21,2 fra 1500 til 1600 og 21,2 fra 1600 til 1700 — de to bratteste hundremetrene. Bratteste sammenhengende parti måler 27,9 grader mellom 1528 og 1544 moh.",
       "De siste hundre høydemetrene slaker av til 9,6 grader og fører fram til varden på 1830 moh, et av de høyeste punktene i fjellene over Eidsdal. Registeret skriver fjellet Skorene.",
     ],
@@ -4804,11 +4804,11 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,200 L25,198 L49,198 L66,194 L92,193 L120,189 L153,183 L177,179 L201,174 L226,170 L254,169 L282,169 L307,167 L334,163 L358,152 L376,141 L392,132 L411,121 L436,109 L458,96 L478,85 L497,73 L515,61 L527,54 L543,43 L563,31 L587,21 L600,18",
+      path: "M0,200 L25,198 L49,198 L66,194 L78,194 L87,193 L95,192 L107,191 L136,186 L164,182 L188,176 L213,172 L241,169 L269,169 L293,168 L317,165 L345,158 L366,147 L384,136 L401,125 L426,115 L446,103 L470,90 L486,80 L502,69 L521,57 L535,48 L551,38 L575,26 L600,18",
       startLabel: "621 moh",
       endLabel: "1830 moh",
       distanceLabel: "6,7 km",
-      caption: "1219 høydemeter og 6,44 km fra Korsmyra over Grandesætra og Gråsteindalen, med snøflanken fra dalbotnen på 940 moh til varden på 1830.",
+      caption: "1239 høydemeter og 6,71 km fra Korsmyra over Grandesætra og Gråsteindalen, med snøflanken fra dalbotnen på 940 moh til varden på 1830.",
     },
   },
   melshornet: {

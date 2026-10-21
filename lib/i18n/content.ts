@@ -4974,7 +4974,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       "1479 metres of climbing over 11.22 km from Hatlestad — one of the longest tours above Norddal, and one of the gentlest. The steepest sustained section measures 27.2 degrees, and five kilometres of the route lie on the ridge from Daurmålsfjellet to the summit.",
     ascent: [
       "Start at the mapped car park at Hatlestad, 453 m, above Norddalen. Fri Flyt says you park at 350 m; the terrain model reads the farms at 412 and the car park at 453, and that difference is why this tour measures 1479 metres of climbing and not 1500.",
-      "Walk gently into the mouth of Dyrdalen and up to Rellingsætra at 557 m. The first two bands are nearly flat — 2.8 degrees from 400 to 500 m and 2.1 over 2678 metres of ground from 500 to 600.",
+      "Walk gently into the mouth of Dyrdalen and up to Rellingsætra at 557 m. The first two bands are nearly flat — 2.8 degrees from 400 to 500 m and 2.1 over 2676 metres of ground from 500 to 600.",
       "From the seter the step climbs onto Daurmålsfjellet, 825 m: 15.4 degrees from 600 to 700 m and 15.5 from 700 to 800. The forest holds to 800 m. This is the steep part of the tour, and it is short.",
       "Then comes the ridge. Five kilometres of gentle ground, over the ridge point at 1186 m, with bands between 7 and 16 degrees the whole way: 7.0 from 1000 to 1100 m, 15.5 from 1200 to 1300, 16.4 from 1700 to 1800 — the steepest hundred-metre band — and 9.9 for the last hundred to the cairn at 1851 m. Kartverket registers no glacier terrain anywhere on the line itself: every point between 1380 and 1520 m is open ground. The nearest cell classed as glacier lies about 300 metres off the route, at 1482 m.",
     ],
@@ -5006,10 +5006,10 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
   },
   skarene: {
     intro:
-      "1239 metres of climbing over 6.72 km from Korsmyra, with two kilometres of flat valley floor before the big snow flank begins. The flank holds 18 to 21 degrees band after band from 900 to 1700 m — and it is continuous avalanche terrain the whole way.",
+      "1239 metres of climbing over 6.71 km from Korsmyra, with two kilometres of flat valley floor before the big snow flank begins. The flank holds 18 to 21 degrees band after band from 900 to 1700 m — and it is continuous avalanche terrain the whole way.",
     ascent: [
       "Start at the car park on Korsmyra, 621 m, on the main road between Eidsdal and Geiranger. Fri Flyt describes the access under Eidshornet, and it is the same place.",
-      "Follow the seter road in to Grandesætra at 648 m and on gently into and up Gråsteindalen, 721 m. The first two bands are almost flat: 3.3 degrees over 1431 metres of ground from 600 to 700 m and 3.6 over 1575 metres from 800 to 900.",
+      "Follow the seter road in to Grandesætra at 648 m and on gently into and up Gråsteindalen, 721 m. The first two bands are almost flat: 3.4 degrees over 1418 metres of ground from 600 to 700 m and 3.6 over 1575 metres from 800 to 900.",
       "Coming in towards the head of the valley at 940 m the big snow flank begins, and it holds the same character all the way up: 17.9 degrees from 900 to 1000 m, 20.5 from 1000 to 1100, 19.6 from 1300 to 1400, 21.2 from 1500 to 1600 and 21.2 from 1600 to 1700 — the two steepest hundred-metre bands. The steepest sustained section measures 27.9 degrees between 1528 and 1544 m.",
       "The last hundred metres of climbing ease to 9.6 degrees and lead to the cairn at 1830 m, one of the highest points in the mountains above Eidsdal. The register spells the mountain Skorene.",
     ],
@@ -5035,7 +5035,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       startLabel: "621 m",
       endLabel: "1830 m",
       distanceLabel: "6.7 km",
-      caption: "1219 metres of climbing and 6.44 km from Korsmyra over Grandesætra and Gråsteindalen, with the snow flank from the valley floor at 940 m to the cairn at 1830.",
+      caption: "1239 metres of climbing and 6.71 km from Korsmyra over Grandesætra and Gråsteindalen, with the snow flank from the valley floor at 940 m to the cairn at 1830.",
     },
   },
   melshornet: {
