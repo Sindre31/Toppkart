@@ -7745,6 +7745,68 @@ Styggemann (28.0° at 705–724 moh) and Kjerag (29.6°, which its guide already
 gives). Both windows lie past the new curves and measure the same before and
 after.
 
+## Kinks on gentle ground, the rest of the list in batches
+
+The other tours are being checked in batches, in list order. Each batch gets
+the same scan as the last ten: a turn of 50° or more where the ground within
+three vertices is under 15°. The splice tool tries every kink at the route's
+own steepest grade. A kink is smoothed only when every one of these holds:
+
+- a curve is found that is dry and clear of buildings;
+- its largest turn is 30° or less;
+- it is at most 6° steeper than the ground at the kink. A corner is often
+  there to keep the line off a bank;
+- the kink is not on a mapped way. The test is the OSM API's map of the 300 m
+  round the kink: the kink and one of its neighbours lie within 8 m of the same
+  highway or piste. That catches a road's hairpins and the place where a line
+  leaves a road on purpose;
+- no waypoint within 30 m names a place, road or path. That means a proper
+  noun, or words such as hytte, bu, bru, seter, stul, kryss, veg, sti, løype,
+  sving, skar, topp, varde or drei.
+
+The line is usually kinked because it is pinned to a waypoint. A plain
+descriptive waypoint («ryggen», «skogkanten») that the curve leaves more than
+12 m behind moves onto the line, with a `note`, if the move is 60 m or less.
+A named one ends the attempt: the whole route goes back as it was.
+
+Overlapping kinks on one route are done from the far end, and the next one
+back is skipped. The guides follow with the same tools as before. Totals and
+bands come from the fact diff. Marks along the route are listed with their
+context and each is checked by hand: alternative routes and other routes'
+lengths give false hits.
+
+### Batch 1, tours 1–25
+
+The batch had 74 kinks. Thirteen were smoothed:
+
+- Gievdnerassa at 2.0 km.
+- Store Skalltinden at 3.1 and 4.9 km, and its Bjørnskardalen route at 1.3 km.
+- Kjølen's Slettaelva route at 2.7 km.
+- Skarlitinden at 3.8 km.
+- Fastdalstinden at 1.5, 2.5 and 2.8 km. The last was a 172–174° spike that
+  made the line cross itself twice; it no longer does.
+- Fagerfjellet at 1.7 and 2.9 km.
+- Husfjellet at 1.9 km.
+- Lonketind at 0.7 km.
+
+Five plain waypoints moved, by 19–57 m. Kjølen's Kvaløysletta route was tried
+and put back: «Litje-Kjølen» would have ended 35 m off the line.
+
+Skarlitinden's English guide had said 939 m of climbing, where the Norwegian
+said 937. Both now say 936.
+
+The other 61 stay:
+
+| Reason | Kinks |
+| --- | --- |
+| Smooth curve 6° or more steeper than the ground | 21 |
+| No dry, clear curve | 16 |
+| On a mapped way | 11 |
+| Next to a named waypoint | 5 |
+| Still over 30° | 3 |
+| Overlapping a curve already made | 4 |
+| Put back with Kvaløysletta | 1 |
+
 ## Network
 
 Everything is public and unauthenticated:
