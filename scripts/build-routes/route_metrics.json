@@ -417,8 +417,8 @@
  },
  "stortussen": {
   "verticalM": 1020,
-  "gainM": 1024,
-  "distanceM": 5552,
+  "gainM": 1025,
+  "distanceM": 5537,
   "startM": 58,
   "summitM": 945,
   "duration": "4–6 t",
@@ -428,13 +428,13 @@
   "maxStepAngle": 36.2,
   "grade": 2,
   "aspect": "S",
-  "distanceKm": 5.6,
-  "cumdistM": 5552
+  "distanceKm": 5.5,
+  "cumdistM": 5537
  },
  "litletussen": {
-  "verticalM": 760,
-  "gainM": 765,
-  "distanceM": 4089,
+  "verticalM": 770,
+  "gainM": 766,
+  "distanceM": 4062,
   "startM": 58,
   "summitM": 795,
   "duration": "3–5 t",
@@ -445,7 +445,7 @@
   "grade": 2,
   "aspect": "SV",
   "distanceKm": 4.1,
-  "cumdistM": 4089
+  "cumdistM": 4062
  },
  "slattheia": {
   "verticalM": 640,
@@ -482,7 +482,7 @@
  "skjellesvikgalten": {
   "verticalM": 1020,
   "gainM": 1022,
-  "distanceM": 4116,
+  "distanceM": 4089,
   "startM": 6,
   "summitM": 987,
   "duration": "4–6 t",
@@ -493,7 +493,7 @@
   "grade": 2,
   "aspect": "Ø",
   "distanceKm": 4.1,
-  "cumdistM": 4116
+  "cumdistM": 4089
  },
  "nona": {
   "verticalM": 1020,
@@ -625,8 +625,8 @@
  },
  "langlitinden": {
   "verticalM": 1300,
-  "gainM": 1301,
-  "distanceM": 5683,
+  "gainM": 1297,
+  "distanceM": 5669,
   "startM": 8,
   "summitM": 1276,
   "duration": "5–7 t",
@@ -634,10 +634,10 @@
   "steepestBandFrom": 400,
   "steepestBandTo": 500,
   "maxStepAngle": 33.5,
-  "grade": 3,
+  "grade": 2,
   "aspect": "SV",
   "distanceKm": 5.7,
-  "cumdistM": 5683
+  "cumdistM": 5669
  },
  "krakrotinden": {
   "verticalM": 1190,
@@ -705,8 +705,8 @@
  },
  "vetefjellet": {
   "verticalM": 390,
-  "gainM": 392,
-  "distanceM": 2853,
+  "gainM": 393,
+  "distanceM": 2839,
   "startM": 167,
   "summitM": 547,
   "duration": "2–4 t",
@@ -716,13 +716,13 @@
   "maxStepAngle": 19.8,
   "grade": 1,
   "aspect": "S",
-  "distanceKm": 2.9,
-  "cumdistM": 2853
+  "distanceKm": 2.8,
+  "cumdistM": 2839
  },
  "storlitinden": {
   "verticalM": 450,
   "gainM": 446,
-  "distanceM": 2760,
+  "distanceM": 2757,
   "startM": 167,
   "summitM": 613,
   "duration": "2–4 t",
@@ -733,12 +733,12 @@
   "grade": 1,
   "aspect": "SØ",
   "distanceKm": 2.8,
-  "cumdistM": 2760
+  "cumdistM": 2757
  },
  "stortinden-rolla": {
-  "verticalM": 980,
-  "gainM": 984,
-  "distanceM": 7264,
+  "verticalM": 990,
+  "gainM": 986,
+  "distanceM": 7265,
   "startM": 85,
   "summitM": 1020,
   "duration": "5–7 t",
@@ -749,7 +749,7 @@
   "grade": 2,
   "aspect": "S",
   "distanceKm": 7.3,
-  "cumdistM": 7266
+  "cumdistM": 7265
  },
  "rundtind": {
   "verticalM": 910,

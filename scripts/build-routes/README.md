@@ -7807,6 +7807,37 @@ The other 61 stay:
 | Overlapping a curve already made | 4 |
 | Put back with Kvaløysletta | 1 |
 
+### Batch 2, tours 26–50
+
+The batch had 80 kinks. Nine were smoothed:
+
+- Stortussen at 1.2 km.
+- Litletussen at 1.2 and 2.1 km.
+- Skjellesvikgalten at 1.0 km.
+- Langlitinden at 3.0 km. This was a 151° spike that made the line cross
+  itself; it no longer does.
+- Vetefjellet at 1.3 km.
+- Storlitinden at 2.4 km.
+- Stortinden in Rolla at 0.4 and 3.1 km.
+
+Two plain waypoints moved, by 24 and 32 m. The guides' treeline marks moved
+with the line on four tours.
+
+The other 71 stay:
+
+| Reason | Kinks |
+| --- | --- |
+| Still over 30° | 20 |
+| Smooth curve 6° or more steeper than the ground | 19 |
+| No dry, clear curve | 17 |
+| Next to a named waypoint | 12 |
+| Overlapping a curve already made | 2 |
+| On a mapped way | 1 |
+
+`check_steepness` lists Stortussen and Skjellesvikgalten. Both were already
+in their guides' notes from the steepness round. They lie away from the new
+curves.
+
 ## Network
 
 Everything is public and unauthenticated:
