@@ -4043,9 +4043,10 @@
     "waypoints": [
      {
       "name": "opp frå heisen",
-      "lat": 60.673,
-      "lng": 6.389,
-      "elevation_m": 979.04
+      "lat": 60.67294,
+      "lng": 6.38929,
+      "elevation_m": 976.1,
+      "note": "Flyttet inn på linja da knekken ved 0,27, 0,37 km ble glattet ut."
      },
      {
       "name": "Vådalseggi",
@@ -9149,9 +9150,10 @@
      },
      {
       "name": "ryggen ved 1220",
-      "lat": 60.884,
-      "lng": 6.455,
-      "elevation_m": 1221.37
+      "lat": 60.88368,
+      "lng": 6.45494,
+      "elevation_m": 1219.8,
+      "note": "Flyttet inn på linja da knekken ved 3,24 km ble glattet ut."
      },
      {
       "name": "austryggen ved 1300",
