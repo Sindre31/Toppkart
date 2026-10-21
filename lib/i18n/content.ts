@@ -6610,7 +6610,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
   },
   horndalsnuten: {
     intro:
-      "1170 metres of climbing over 7.0 km from Skiple in Raundalen, with a long, gentle approach on the tractor road over Raundalselvi and past Horndalsbruni before the ground starts to rise. The steepest sustained section measures 31.4 degrees between 1093 and 1116 m — north-facing, and the final pitch to the summit is the steepest part of the route.",
+      "1171 metres of climbing over 7.0 km from Skiple in Raundalen, with a long, gentle approach on the tractor road over Raundalselvi and past Horndalsbruni before the ground starts to rise. The steepest sustained section measures 31.4 degrees between 1093 and 1116 m — north-facing, and the final pitch to the summit is the steepest part of the route.",
     ascent: [
       "Start at the mapped car park by Raundalsvegen at Skiple, 398 m, about twenty kilometres east of Voss. Go straight down through the forest to Horndalsvegen and over the bridge over Raundalselvi, where the source starts the tour, and follow the tractor road on south along the west side. South of the bridge the river runs in a gorge below Horndalsberget; the route stays on the road and does not go down into it. The tractor road climbs gently over Fureneset and gives a little back towards Horndøla: the band from 300 to 400 m measures 0.1 degrees over 1104 metres of ground, and 400 to 500 m 3.3 degrees over 1818 metres.",
       "Follow the tractor road past Horndalsbruni and into Horndalsbotnen at 757 m. The forest holds to 781 m, and in the upper slope towards Bjørnsetstølen there are avalanche paths; keep to the forest down there.",
@@ -6620,7 +6620,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
     descent: [
       "Back the same way, north through Horndalsbotnen and out along the tractor road to the bridge and Skiple. The descent faces north, so the mountain holds cold snow for a long time — which is also why there is rarely spring corn to be had here.",
       "The usual mistake: putting the descent into the upper slope towards Bjørnsetstølen because it looks open. That ground is avalanche paths. The second is underestimating the approach: the tractor road from Horndøla to the bridge is over two kilometres of gentle ground, with a short climb over Fureneset on the way out, and the tour is longer than its vertical suggests. And do not take the shortcut along the riverbed below Horndalsberget — Raundalselvi runs in a gorge there.",
-      "The source lists two starts, one on each side of the mountain: “The ascent from the north starts at Skiple in Raundalen, a little under twenty kilometres east of Voss. The ascent from the south starts in Skaftedalen.” And it says why: “There are two good starting points for this tour, one on the shady north side, and one facing the sun to the south.” The app's route is the northern one; the southern now sits beside it. From the end of Skaftedalsvegen at 486 m the line goes in gentle terrain north-east up the valley past 662 and 766 to the summer farm Skytjeset at 882 — the source's “about 890 m” — and from there on the ridge formation over 1063, the flank at 1249 and 1368 to the top. 1022 metres of climbing over 6.13 km against 1170 over 7.0 km from Skiple: shorter and with less climbing, and the opposite sun. The forest lets go at 758 m after 2.91 km, against 781 on the north route. The steepest hundred-metre band is 19.5 degrees from 900 to 1000 m, and the steepest 30 m window 33.2 between 1211 and 1231, against 31.4 on the north route. The source offers a choice up high — either the steep, marked gully or the ridge formation and the flank; the line here is the ridge, which is the one the source describes all the way to the top.",
+      "The source lists two starts, one on each side of the mountain: “The ascent from the north starts at Skiple in Raundalen, a little under twenty kilometres east of Voss. The ascent from the south starts in Skaftedalen.” And it says why: “There are two good starting points for this tour, one on the shady north side, and one facing the sun to the south.” The app's route is the northern one; the southern now sits beside it. From the end of Skaftedalsvegen at 486 m the line goes in gentle terrain north-east up the valley past 662 and 766 to the summer farm Skytjeset at 882 — the source's “about 890 m” — and from there on the ridge formation over 1063, the flank at 1249 and 1368 to the top. 1022 metres of climbing over 6.13 km against 1171 over 7.0 km from Skiple: shorter and with less climbing, and the opposite sun. The forest lets go at 758 m after 2.91 km, against 781 on the north route. The steepest hundred-metre band is 19.5 degrees from 900 to 1000 m, and the steepest 30 m window 33.2 between 1211 and 1231, against 31.4 on the north route. The source offers a choice up high — either the steep, marked gully or the ridge formation and the flank; the line here is the ridge, which is the one the source describes all the way to the top.",
     ],
     avalanche: [
       {
@@ -6640,7 +6640,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       startLabel: "398 m",
       endLabel: "1462 m",
       distanceLabel: "7.0 km",
-      caption: "1170 metres of climbing and 7.0 km from Skiple over Raundalselvi and through Horndalsbotnen, with the treeline at 781 m and the shoulder at 1153 m before the summit pitch.",
+      caption: "1171 metres of climbing and 7.0 km from Skiple over Raundalselvi and through Horndalsbotnen, with the treeline at 781 m and the shoulder at 1153 m before the summit pitch.",
     },
   },
   folarskardnuten: {
@@ -6679,10 +6679,10 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
   },
   prestholtskarvet: {
     intro:
-      "962 metres of climbing and 11.57 km from Havsdalen to the high point at 1860 m, twelve kilometres onto Hallingskarvet. Eight of them are flat: the band from 1200 to 1300 m measures 1.3 degrees over 5130 metres of ground. All the climbing sits in Prestholtskardet — 17.6 degrees from 1500 to 1600 m over 315 metres of ground, with a step of 24.8 degrees between 1323 and 1344.",
+      "965 metres of climbing and 11.56 km from Havsdalen to the high point at 1860 m, twelve kilometres onto Hallingskarvet. Eight of them are flat: the band from 1200 to 1300 m measures 1.3 degrees over 5121 metres of ground. All the climbing sits in Prestholtskardet — 17.6 degrees from 1500 to 1600 m over 315 metres of ground, with a step of 24.8 degrees between 1323 and 1344.",
     ascent: [
       "Start at the car park at the bottom of Havsdalen, 963 m — three paid plots side by side, all tagged access=yes in OSM. Ut.no draws its tour from the top of the ski centre, 1070 m, which is convenient when the lift runs; the corridor here starts where the car stands, and the difference between the two starting points is why the climb on the card is larger than ut.no's published 855. The forest lets go at 1048 m and the ground is open from 1051.",
-      "From 1058 m you are on the marked trail west. Ut.no: “follow the marked trail to Prestholtseter (eight km). The trail is groomed daily and is accordingly in very good condition, with both classic and skating tracks.” It is a flat approach in the literal sense — the band from 1000 to 1100 m measures 3.3 degrees over 1736 metres of ground, 1100 to 1200 measures 4.6 over 1216, and 1200 to 1300 measures 1.3 over 5130. The line passes 1240 m and holds that level for five kilometres.",
+      "From 1058 m you are on the marked trail west. Ut.no: “follow the marked trail to Prestholtseter (eight km). The trail is groomed daily and is accordingly in very good condition, with both classic and skating tracks.” It is a flat approach in the literal sense — the band from 1000 to 1100 m measures 3.3 degrees over 1736 metres of ground, 1100 to 1200 measures 4.6 over 1216, and 1200 to 1300 measures 1.3 over 5121. The line passes 1240 m and holds that level for five kilometres.",
       "Prestholtstølan sits at 1243 m, directly under the south side of the skarv. From here the tour starts again: 16.3 degrees from 1300 to 1400 m over 315 metres of ground, 17.2 from 1400 to 1500 over 316, and 17.6 from 1500 to 1600 over 315 — the steepest band. The steepest step on the whole line sits lower, 24.8 degrees between 1323 and 1344 m. That is Prestholtskardet, and the register point for the pass measures 1640 m.",
       "Up on the skarv it eases abruptly: 10.3 degrees from 1600 to 1700 m over 540 metres of ground, 7.1 from 1700 to 1800 over 855, and 4.2 from 1800 to 1900 over 742. The last two kilometres run west over a wide, open plateau to the high point, 1860.4 m. The register point for Prestholtskarvet lies 550 metres north-east, between two tops measuring 1860.4 and 1857.5; ut.no's own line ends 20 metres from the higher one, and that is the one the card carries.",
     ],
@@ -6693,7 +6693,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
     avalanche: [
       {
         title: "The route",
-        body: "962 metres of climbing where the steepest band is 22.0 degrees and the steepest step 25.2, both in Prestholtskardet. The route gives back 65 metres over 11.57 km. Ut.no grades the tour a demanding ski tour and 21.6 km return from the lift top, and writes that it “is most often done in late winter or spring once the snow has settled” — that sentence is about the pass.",
+        body: "965 metres of climbing where the steepest band is 22.0 degrees and the steepest step 25.2, both in Prestholtskardet. The route gives back 68 metres over 11.56 km. Ut.no grades the tour a demanding ski tour and 21.6 km return from the lift top, and writes that it “is most often done in late winter or spring once the snow has settled” — that sentence is about the pass.",
       },
       {
         title: "The terrain beyond",
@@ -6708,7 +6708,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       startLabel: "963 m",
       endLabel: "1860 m",
       distanceLabel: "11.6 km",
-      caption: "962 metres of climbing and 11.57 km from Havsdalen past Prestholtstølan at 1243 m and up Prestholtskardet at 1640, with the forest letting go at 1038 m.",
+      caption: "965 metres of climbing and 11.56 km from Havsdalen past Prestholtstølan at 1243 m and up Prestholtskardet at 1640, with the forest letting go at 1038 m.",
     },
   },
   gyranfisen: {
@@ -7073,11 +7073,11 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
   },
   hogevarde: {
     intro:
-      "598 metres of climbing over 4.80 km from Tempelseter, on a staked and usually groomed track. No part of the ascent is steep: the steepest sustained section measures 19.5 degrees, between 1179 and 1195 m, and the steepest hundred-metre band, 1200 to 1300 m, averages 11.8 degrees. What you plan around here is the weather and the east side, not the gradient under your skins.",
+      "598 metres of climbing over 4.80 km from Tempelseter, on a staked and usually groomed track. No part of the ascent is steep: the steepest sustained section measures 19.5 degrees, between 1179 and 1195 m, and the steepest hundred-metre band, 1200 to 1300 m, averages 11.9 degrees. What you plan around here is the weather and the east side, not the gradient under your skins.",
     ascent: [
       "Start at the car park by Tempelseter, 910 m, and climb to the right of the ski slope. The track is staked and usually groomed, and the first hundred metres of climbing are the gentlest on the tour: the band from 900 to 1000 m measures 3.9 degrees over 1327 metres of ground.",
       "Above the lift it climbs evenly — 8.8 degrees from 1000 to 1100 m and 7.8 from 1100 to 1200 — and somewhere in there, between 1179 and 1195 m, sits the steepest sustained section of the whole tour: 19.5 degrees. Not one of the points Kartverket samples along this route is classed as forest. You start above the treeline and can see where you are going the whole way, which helps right up until the visibility goes. Note that it is the lower part that is groomed. The line follows the mapped network closely for the first 1.2 kilometres and the last 1.5, but between 1.5 and 3.7 km out it goes its own way over the ridge — at worst 572 metres from the nearest mapped track, at 1283 m. What is mapped there is unmarked cross-country loops rather than a marked summit route, so there is no track to follow over the ridge.",
-      "From the ridge at around 1190 m the route swings north-east towards the hut. The band from 1200 to 1300 m is the steepest on the tour, 11.8 degrees over 496 metres of ground, and above it the ground flattens again: 7.7 degrees from 1300 to 1400.",
+      "From the ridge at around 1190 m the route swings north-east towards the hut. The band from 1200 to 1300 m is the steepest on the tour, 11.9 degrees over 493 metres of ground, and above it the ground flattens again: 7.7 degrees from 1300 to 1400.",
       "The DNT hut Høgevarde sits at 1397 m, and the summit 560 metres further north-east, at 1461. The last band, above 1400 m, measures 3.5 degrees over 810 metres of ground — flat, and at the same time the most weather-exposed part of the day. The old Høgevarde tourist hut serves waffles in the winter holidays and at Easter, and a sign at the bottom of the slope tells you whether it is open. Note that the line crosses Høgevardtjenn at 1378 m on the way to the top — 68 metres on the Tempelseter route, up to 60 metres from shore, and 45 metres on the Norefjellstua route, up to 20 metres out. It is a small tarn, natural and unregulated, and both lines cut a corner of it.",
     ],
     descent: [
@@ -7087,7 +7087,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
     avalanche: [
       {
         title: "The route",
-        body: "A staked and usually groomed track in gentle terrain the whole way. The steepest sustained section measures 19.5 degrees and sits between 1179 and 1195 m; the steepest hundred-metre band, 1200 to 1300 m, holds 11.8 degrees over 496 metres of ground. Staking is not brushing — ut.no points out that early in the season the poles are not always supplemented with markers, and above the treeline there is nothing else to navigate by.",
+        body: "A staked and usually groomed track in gentle terrain the whole way. The steepest sustained section measures 19.5 degrees and sits between 1179 and 1195 m; the steepest hundred-metre band, 1200 to 1300 m, holds 11.9 degrees over 493 metres of ground. Staking is not brushing — ut.no points out that early in the season the poles are not always supplemented with markers, and above the treeline there is nothing else to navigate by.",
       },
       {
         title: "The terrain around it",

@@ -2801,8 +2801,8 @@
  },
  "horndalsnuten": {
   "verticalM": 1170,
-  "gainM": 1170,
-  "distanceM": 7005,
+  "gainM": 1171,
+  "distanceM": 6990,
   "startM": 398,
   "summitM": 1462,
   "duration": "5–7 t",
@@ -2813,7 +2813,7 @@
   "grade": 2,
   "aspect": "N",
   "distanceKm": 7.0,
-  "cumdistM": 7004
+  "cumdistM": 6990
  },
  "folarskardnuten": {
   "verticalM": 1000,
@@ -2833,8 +2833,8 @@
  },
  "prestholtskarvet": {
   "verticalM": 960,
-  "gainM": 962,
-  "distanceM": 11569,
+  "gainM": 965,
+  "distanceM": 11560,
   "startM": 963,
   "summitM": 1860,
   "duration": "6–8 t",
@@ -2845,7 +2845,7 @@
   "grade": 2,
   "aspect": "Ø",
   "distanceKm": 11.6,
-  "cumdistM": 11569
+  "cumdistM": 11560
  },
  "gyranfisen": {
   "verticalM": 650,
@@ -3010,18 +3010,18 @@
  "hogevarde": {
   "verticalM": 600,
   "gainM": 598,
-  "distanceM": 4804,
+  "distanceM": 4801,
   "startM": 910,
   "summitM": 1461,
   "duration": "3–5 t",
-  "steepestBandAngle": 11.8,
+  "steepestBandAngle": 11.9,
   "steepestBandFrom": 1200,
   "steepestBandTo": 1300,
   "maxStepAngle": 19.5,
   "grade": 1,
   "aspect": "SV",
   "distanceKm": 4.8,
-  "cumdistM": 4804
+  "cumdistM": 4801
  },
  "gygrastolen": {
   "verticalM": 1270,
