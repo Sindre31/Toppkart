@@ -1595,7 +1595,7 @@
     },
     {
       "what": "Kor det korte bratte partiet ligg",
-      "figure": "30,0° mellom 564 og 588 moh, 2,14 km ute på ei linje på 3,06 km. Fri Flyt: «Rundt 550 moh. er det et kort parti som er 30–35 grader»",
+      "figure": "30,0° mellom 564 og 588 moh, 2,12 km ute på ei linje på 3,03 km. Fri Flyt: «Rundt 550 moh. er det et kort parti som er 30–35 grader»",
       "how": "steepestStep i guide_facts.json mot kumulativ lengd langs routes.json."
     },
     {
@@ -1889,7 +1889,7 @@
     },
     {
       "what": "Skoggrensa langs linja",
-      "figure": "2,16 km ute",
+      "figure": "2,15 km ute",
       "how": "treeline_scan i guide_facts.py: siste skogsverteks langs linja, med 600 m grunn og 150 m høgd utan skog som stoppkrav."
     }
   ],
@@ -2792,7 +2792,7 @@
     },
     {
       "what": "Langs linja",
-      "figure": "skaret fra 269 m (1051 moh); der det flater ut ved 1587 m (1,59 km), 1400 moh; toppen ved 2612 m; den vestre munningen av rasoverbygget til Haukelitunnelen 173 m fra linja; Pepparsteinen (stedsnavnregisteret, Stein, 59.8472/7.08783) 33 m fra linja ved 452 m (0,45 km), 1114 moh",
+      "figure": "skaret fra 269 m (1051 moh); der det flater ut ved 1587 m (1,59 km), 1400 moh; toppen ved 2601 m; den vestre munningen av rasoverbygget til Haukelitunnelen 173 m fra linja; Pepparsteinen (stedsnavnregisteret, Stein, 59.8472/7.08783) 33 m fra linja ved 452 m (0,45 km), 1114 moh",
       "how": "Nærmeste punkt på den routede linja i lib/routes.ts til OSM-/registerpunktet, med avstand langs ruta og DTM1-høyden der."
     },
     {
@@ -2851,7 +2851,7 @@
     },
     {
       "what": "Gjertrabekk",
-      "figure": "OSM way/353462824, som går gjennom stedsnavnregisterets Gjertrabekk (59.81506/6.81629). Linja er nord for bekken til 499 m (0,50 km, 446 moh), sør for den fra der til 3513 m (3,51 km), 866 moh, og nord for den eller i bekkefaret derfra (krysser ved 4737 og 4863 m); ved 4953 m (4,95 km), 1172 moh, er den 52 m fra øverste kartlagte punkt på bekken, 719 m før masta",
+      "figure": "OSM way/353462824, som går gjennom stedsnavnregisterets Gjertrabekk (59.81506/6.81629). Linja er nord for bekken til 499 m (0,50 km, 446 moh), sør for den fra der til 3513 m (3,51 km), 866 moh, og nord for den eller i bekkefaret derfra (krysser ved 4721 og 4847 m); ved 4937 m (4,94 km), 1172 moh, er den 52 m fra øverste kartlagte punkt på bekken, 715 m før masta",
       "how": "Linja i lib/routes.ts mot bekkens OSM-geometri: for hvert punkt på linja er bekkens nærmeste punkt i lengdegrad sammenlignet i breddegrad; skifte av fortegn er en kryssing."
     },
     {
@@ -3107,7 +3107,7 @@
     },
     {
       "what": "Langs linja",
-      "figure": "parkeringa (OSM way/550421841) på 58 moh ved skolebygget (way/667930487); Gammelveien ved 413 m; Geassegeaidnu ved 1077 m; vatnet på 111 moh (OSM way/865418501, NVE 204367), som Nordelva (way/865418444) renner ut av, 103 m fra linja ved 1538 m; Nordelva aldri nærmere enn 207 m; tjernet på 123 moh (way/865418423) 72 m fra linja ved 2439 m; Skárpavággi (registerets Dal, 70.11801/22.57181) 168 m vest for linja ved 4059 m, 513 moh; Geassegeaidnu (way/550421843) snowmobile=designated, «Tappeluftløypa» ref 10",
+      "figure": "parkeringa (OSM way/550421841) på 58 moh ved skolebygget (way/667930487); Gammelveien ved 413 m; Geassegeaidnu ved 1077 m; vatnet på 111 moh (OSM way/865418501, NVE 204367), som Nordelva (way/865418444) renner ut av, 103 m fra linja ved 1538 m; Nordelva aldri nærmere enn 207 m; tjernet på 123 moh (way/865418423) 72 m fra linja ved 2432 m; Skárpavággi (registerets Dal, 70.11801/22.57181) 168 m vest for linja ved 4052 m, 513 moh; Geassegeaidnu (way/550421843) snowmobile=designated, «Tappeluftløypa» ref 10",
       "how": "Nærmeste punkt på den routede linja i lib/routes.ts til OSM-/registerpunktet, med avstand langs ruta og DTM1-høyden der."
     },
     {

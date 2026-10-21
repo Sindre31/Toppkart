@@ -9337,9 +9337,10 @@
      },
      {
       "name": "sør for vatnet",
-      "lat": 69.6048,
-      "lng": 20.205,
-      "elevation_m": 530.9
+      "lat": 69.60497,
+      "lng": 20.20491,
+      "elevation_m": 527.1,
+      "note": "Flyttet inn på linja da knekken ved 1,53, 2,47, 2,76 km ble glattet ut."
      },
      {
       "name": "vestbredda på land",
@@ -10352,9 +10353,10 @@
      },
      {
       "name": "skogkanten",
-      "lat": 69.0811,
-      "lng": 16.938,
-      "elevation_m": 150.1
+      "lat": 69.08118,
+      "lng": 16.9385,
+      "elevation_m": 146.7,
+      "note": "Flyttet inn på linja da knekken ved 0,65 km ble glattet ut."
      },
      {
       "name": "ryggfoten mot Lonketuva",
@@ -11432,9 +11434,10 @@
      },
      {
       "name": "ved punkt 511",
-      "lat": 69.645,
-      "lng": 19.333,
-      "elevation_m": 448.0
+      "lat": 69.6445,
+      "lng": 19.33342,
+      "elevation_m": 454.1,
+      "note": "Flyttet inn på linja da knekken ved 3,84 km ble glattet ut."
      },
      {
       "name": "svingen mot sør-søraust",
@@ -11733,9 +11736,10 @@
      },
      {
       "name": "ryggen vest for vatnet",
-      "lat": 69.848,
-      "lng": 19.305,
-      "elevation_m": 429.0
+      "lat": 69.84809,
+      "lng": 19.30565,
+      "elevation_m": 432.2,
+      "note": "Flyttet inn på linja da knekken ved 3,05, 4,87 km ble glattet ut."
      },
      {
       "name": "flata sørvest for punkt 695",
@@ -11745,9 +11749,10 @@
      },
      {
       "name": "ryggen",
-      "lat": 69.863,
-      "lng": 19.295,
-      "elevation_m": 587.0
+      "lat": 69.86289,
+      "lng": 19.29573,
+      "elevation_m": 595.7,
+      "note": "Flyttet inn på linja da knekken ved 3,05, 4,87 km ble glattet ut."
      }
     ],
     "source": "researched, verified (ok), no local audit",
