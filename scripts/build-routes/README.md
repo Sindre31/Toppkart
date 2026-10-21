@@ -7648,6 +7648,48 @@ odden and Hulderhola marks back 121 m.
 The turn up onto the ridge north of Blånipa (105°) stays. Every smooth curve
 there was steeper than the route's 21.7°.
 
+## The last ten tours in the list, eleven kinks
+
+The last ten tours in `lib/tours.ts`, Sveigen to Røseknuten, were scanned for
+turns of 50° or more where the ground within three vertices of the turn is
+under 15°. That kind of turn is not a kick turn. The scan found 29. Each was
+tried with the splice tool at the route's own steepest grade and viewed in the
+app.
+
+Eleven were smoothed, each into a curve with a largest turn of 5–16°:
+- Sveigen at 2.3 km.
+- Fjetlandsnuten at 4.2 and 5.1 km.
+- Store Ble at 4.4 km.
+- Surløytenuten at 1.6 km.
+- Styggemann at 3.0, 3.3 and 5.7 km.
+- Sæbyggjenuten at 3.0 km.
+- Kjerag at 3.3 km.
+- Grubbå at the start.
+
+None of the curves passes a building. No waypoint moved more than 13 m.
+
+The other eighteen stay. Twelve are features of the route:
+- Fjetlandsnuten's turns are the hairpins of Blåbergdalsvegen, which ut.no
+  tells you to follow.
+- Store Ble's 135° is at Sigridsbu turisthytte.
+- Surløytenuten crosses Esperåa on the bridge and goes through the yard at
+  Sudstul.
+- Styggemann has the turns at Skrimsetra and the path junction at Sørmyrseter.
+- Kjerag has the turn onto Kjeragplatået.
+- Sveigen's turn at the car park would only come down to 47°.
+
+In the other six, every smooth curve was 7–20° steeper than the ground it
+replaced: three on Hilleknuten, and one each on Sæbyggjenuten, Grubbå and
+Røseknuten. The turn there is probably what keeps the line off the slope.
+
+Five routes gained 4–7 m of climbing and all eight got shorter, by 2–43 m.
+The guides give the new figures in both languages: lengths, climbing, band
+grades and ground, and Fjetlandsnuten's marks along Gjertrabekk. The cards
+stay; they are within `check_tours`' tolerance. `check_steepness` still lists
+Styggemann (28.0° at 705–724 moh) and Kjerag (29.6°, which its guide already
+gives). Both windows lie past the new curves and measure the same before and
+after.
+
 ## Network
 
 Everything is public and unauthenticated:

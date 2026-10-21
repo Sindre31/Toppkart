@@ -7327,11 +7327,11 @@ export const GUIDES: Record<string, TourGuide> = {
   sveigen: {
     slug: "sveigen",
     intro:
-      "556 høydemeter på 2,61 km rett fra E134: fra Pepparsteinen ved østre munning av Haukelitunnelen går du opp skaret sør for vegen, og der det flater ut, vestover til toppen på 1543 moh. Bratteste bandet er 18,6 grader fra 1000 til 1100 moh, rett over vegen, og bratteste sammenhengende parti er 27,2 grader mellom 1115 og 1132. Fri Flyt: «Denne veien har absolutt ingen anmarsj.»",
+      "556 høydemeter på 2,60 km rett fra E134: fra Pepparsteinen ved østre munning av Haukelitunnelen går du opp skaret sør for vegen, og der det flater ut, vestover til toppen på 1543 moh. Bratteste bandet er 18,6 grader fra 1000 til 1100 moh, rett over vegen, og bratteste sammenhengende parti er 27,2 grader mellom 1115 og 1132. Fri Flyt: «Denne veien har absolutt ingen anmarsj.»",
     ascent: [
       "Start på rasteplassen ved E134 rett øst for Haukelitunnelen, 994 moh. Pepparsteinen, som har gitt stedet navn, ligger i lia over, 33 meter fra linja ved 0,45 km. Fri Flyt: «Rett opp fra parkeringen går det et lite skar mellom Sveigen (1543moh.) og p1490. Når det begynner å flate ut tar du vest mot toppen.» Ut.no beskriver samme side som «Sveigen Nord»: den «kan nås fra Pepparsteinen ved øståpning av Haukelitunnelen, og har så å si ingen anmarsj». Ut.no sin hovedrute er en annen — østsida fra Ulevå over Ståvatn.",
       "Skaret begynner med en gang. Bandet fra 1000 til 1100 moh måler 18,6 grader over 304 meter grunn, og det bratteste partiet på hele linja, 27,2 grader, ligger mellom 1115 og 1132 moh. Her er bakken under sporet brattere enn sporet: 22, 62 og 28 meter på 35 grader eller mer mellom 1084 og 1130 moh, med bratteste celle 54 grader. Ved siden av linja står enkeltceller på 51 til 62 grader — berg og kanter — 42 til 64 meter fra den mellom 1074 og 1304 moh.",
-      "Over 1200 moh slakker skaret av: 14,3 grader fra 1200 til 1300 og 8,9 fra 1300 til 1400. Ved 1400 moh, 1,59 km fra start, flater det ut, og linja svinger vestover. Den siste kilometeren til toppen stiger jevnt over åpent fjell, 10,4 grader fra 1400 til 1500 moh.",
+      "Over 1200 moh slakker skaret av: 14,3 grader fra 1200 til 1300 og 8,9 fra 1300 til 1400. Ved 1400 moh, 1,59 km fra start, flater det ut, og linja svinger vestover. Den siste kilometeren til toppen stiger jevnt over åpent fjell, 10,7 grader fra 1400 til 1500 moh.",
       "Toppen er nordtoppen, 1543 moh, der Kartverkets stedsnavnregister og Fri Flyt setter Sveigen. Massivets høyeste punkt ligger 659 meter lenger sør, 1560 moh, bak et søkk på 1513; ut.no oppgir 1561 og går dit. Toppflata er slak: 0,3 til 11,1 grader i snitt til alle kanter over 500 meter.",
     ],
     descent: [
@@ -7353,23 +7353,23 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,199 L21,198 L42,189 L62,181 L73,173 L104,160 L114,154 L135,145 L155,137 L166,131 L178,125 L189,119 L218,116 L238,107 L259,97 L280,86 L300,81 L311,78 L331,74 L352,71 L373,67 L393,67 L424,63 L445,54 L466,45 L487,39 L518,34 L538,29 L559,26 L588,20 L600,18",
+      path: "M0,199 L24,196 L52,184 L73,173 L104,160 L125,150 L156,137 L171,130 L188,120 L219,116 L240,107 L271,92 L302,81 L322,76 L353,71 L374,67 L405,67 L437,60 L468,45 L491,38 L503,36 L514,35 L525,32 L536,30 L547,29 L559,26 L590,20 L600,18",
       startLabel: "994 moh",
       endLabel: "1543 moh",
       distanceLabel: "2,6 km",
-      caption: "556 høydemeter og 2,61 km fra Pepparsteinen, med skaret mellom 1051 og 1400 moh og bratteste bandet nederst.",
+      caption: "556 høydemeter og 2,60 km fra Pepparsteinen, med skaret mellom 1051 og 1400 moh og bratteste bandet nederst.",
     },
   },
   fjetlandsnuten: {
     slug: "fjetlandsnuten",
     intro:
-      "900 høydemeter på 5,67 km fra Odlandsvegen i Røldal: Blåbergdalsvegen i hårnålssvinger opp Tveitlia, nordover gjennom henget ved 750 moh, og langs Gjertrabekk — Fri Flyts «vestvendte bekken» — opp til masta på toppen, 1285 moh. Skogen slipper ved 937 moh. Bratteste sammenhengende parti er 25,0 grader mellom 746 og 762 moh, i henget, og bratteste bandet 13,9 grader fra 700 til 800. Fri Flyt graderer turen «Lett»; ut.no nevner ett kort parti med mulig skredfare, i henget, og advarer mot meget bratt terreng nord for bekken.",
+      "906 høydemeter på 5,65 km fra Odlandsvegen i Røldal: Blåbergdalsvegen i hårnålssvinger opp Tveitlia, nordover gjennom henget ved 750 moh, og langs Gjertrabekk — Fri Flyts «vestvendte bekken» — opp til masta på toppen, 1285 moh. Skogen slipper ved 937 moh. Bratteste sammenhengende parti er 25,0 grader mellom 746 og 762 moh, i henget, og bratteste bandet 13,9 grader fra 700 til 800. Fri Flyt graderer turen «Lett»; ut.no nevner ett kort parti med mulig skredfare, i henget, og advarer mot meget bratt terreng nord for bekken.",
     ascent: [
       "Start i krysset der Blåbergdalsvegen går ut fra Odlandsvegen ved Røldal kraftverk, 396 moh, på østsida av Røldalsvatnet. Ut.no: «Start ved kraftstasjonen på østsiden av Røldalsvatnet, og følg veien oppover Tveitlia til litt forbi fjerde hårnålssving.» Fri Flyt starter ved Tveita: «Kjør inn til Tveita og parker nede ved veien hvis snøen ligger langt nok ned. Hvis ikke kjører du bilen opp anleggsveien og parkerer i ei passende lomme.» Det er ingen kartlagt parkeringsplass her. Linja passerer Tveita 132 meter unna ved 0,77 km.",
       "Blåbergdalsvegen er anleggsvegen, og linja følger den gjennom fire hårnålssvinger: den første ved 1,01 km og 497 moh, den andre ved 1,52 km og 555, den tredje ved 2,16 km og 623 og den fjerde ved 2,44 km og 656. Det er slakt — 6,2 grader i bandet fra 400 til 500 moh og 5,7 fra 500 til 600. Lia over vegen er ikke slak: østover fra vegen ved 437 moh stiger den 255 meter på 400 meter, 32,5 grader i snitt og over 40 grader 260 til 300 meter ut. Den er skogkledd, men den ligger over deg hele veien opp svingene. Terrengmodellen leser vegskjæringer og fyllinger som korte strekk på 35 grader eller mer under linja mellom 405 og 542 moh; det er vegkanten, ikke lia.",
       "Litt forbi fjerde sving, ved 2,75 km og 700 moh, forlater linja vegen og dreier nordover. Ut.no: «i henget ca 750 moh bør det foretas skredvurdering før eventuelt videre oppstigning, her er et kort parti med mulig skredfare.» Henget når du ved 3,02 km og 760 moh, og det er det bratteste på turen: 25,0 grader mellom 746 og 762 moh, og 13,9 grader i bandet fra 700 til 800.",
-      "Over henget går linja inn til bekken. Fri Flyt: «Følg den vestvendte bekken så langt den går, herfra ser du toppmasta.» Bekken er Gjertrabekk i stedsnavnregisteret; registerpunktet ligger på bekken i OSM. Fra 0,50 km har linja ligget sør for den. Ved 866 moh, 3,51 km fra start, krysser linja over til nordsida, og derfra følger den nordbredden eller bekkefaret oppover — slik ut.no-sporet gjør. Her er det bratt rett ved siden av: terreng på 40 grader og mer ligger 20 til 170 meter vest og nordvest for linja mellom 849 og 997 moh. Skogen slipper ved 937 moh. Ved 4,95 km og 1172 moh er linja 52 meter fra øverste kartlagte punkt på bekken.",
-      "Derfra er det 719 meter igjen til masta, med 13,9 grader i bandet fra 1100 til 1200 moh. Toppen er slak mot sør og sørvest, 8,2 og 9,5 grader i snitt over 500 meter, og det er den siden du kommer opp. Fri Flyt: «På varme dager varmer sola metallet på masta slik at isen fra masta faller ned.» Masta står 17 meter fra der linja ender; hold avstand til den på varme dager.",
+      "Over henget går linja inn til bekken. Fri Flyt: «Følg den vestvendte bekken så langt den går, herfra ser du toppmasta.» Bekken er Gjertrabekk i stedsnavnregisteret; registerpunktet ligger på bekken i OSM. Fra 0,50 km har linja ligget sør for den. Ved 866 moh, 3,51 km fra start, krysser linja over til nordsida, og derfra følger den nordbredden eller bekkefaret oppover — slik ut.no-sporet gjør. Her er det bratt rett ved siden av: terreng på 40 grader og mer ligger 20 til 170 meter vest og nordvest for linja mellom 849 og 997 moh. Skogen slipper ved 937 moh. Ved 4,94 km og 1172 moh er linja 52 meter fra øverste kartlagte punkt på bekken.",
+      "Derfra er det 715 meter igjen til masta, med 13,8 grader i bandet fra 1100 til 1200 moh. Toppen er slak mot sør og sørvest, 8,2 og 9,5 grader i snitt over 500 meter, og det er den siden du kommer opp. Fri Flyt: «På varme dager varmer sola metallet på masta slik at isen fra masta faller ned.» Masta står 17 meter fra der linja ender; hold avstand til den på varme dager.",
     ],
     descent: [
       "Fri Flyt: «Fra toppen kjører du mot bekken. Følg denne ned igjen. Det er ikke så bratt, men det er morsom og hyggelig kjøring tilbake til bilen. Hvis snøen ligger helt ned kjører du mot gården på Tveita.» Ut.no: «Returen kan legges mange veier, men hold deg syd for Gjertrabekk om du ikke vil ut i meget bratt terreng.» Linja ligger på nordsida av bekken fra toppen ned til 866 moh, der den krysser. Senest der skal du over på sørsida — fortsetter du nedover nord for bekken, kommer du ut i terrenget på 40 grader og mer vest og nordvest for linja.",
@@ -7390,21 +7390,21 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,200 L29,194 L47,190 L67,186 L96,182 L115,177 L139,172 L167,166 L196,161 L218,156 L238,152 L258,147 L286,140 L310,131 L329,120 L353,107 L376,102 L395,93 L417,84 L437,76 L457,69 L476,61 L501,53 L529,39 L553,32 L574,28 L600,18",
+      path: "M0,200 L29,194 L53,190 L78,183 L107,179 L133,172 L163,167 L196,161 L220,156 L244,151 L273,144 L301,136 L325,123 L349,110 L378,102 L401,90 L421,82 L437,77 L447,72 L457,69 L472,64 L500,54 L525,41 L536,36 L546,34 L562,30 L586,24 L600,18",
       startLabel: "396 moh",
       endLabel: "1285 moh",
       distanceLabel: "5,7 km",
-      caption: "900 høydemeter og 5,67 km fra Odlandsvegen, med henget ved 760 moh, skoggrensa på 937 og Gjertrabekk fra 866.",
+      caption: "906 høydemeter og 5,65 km fra Odlandsvegen, med henget ved 760 moh, skoggrensa på 937 og Gjertrabekk fra 866.",
     },
   },
   "store-ble": {
     slug: "store-ble",
     intro:
-      "664 høydemeter på 6,33 km fra Nordstulvatnet: nesten to kilometer flat skog, en kneik gjennom Langedalen der bandet fra 800 til 900 moh måler 11,2 grader, og et høyfjellsplatå over. Bratteste sammenhengende parti, 35,2 grader mellom 1228 og 1251 moh, ligger i toppanløpet — og det er den sida beskrivelsene sier du kan måtte klatre opp i lite snø.",
+      "670 høydemeter på 6,32 km fra Nordstulvatnet: nesten to kilometer flat skog, en kneik gjennom Langedalen der bandet fra 800 til 900 moh måler 11,2 grader, og et høyfjellsplatå over. Bratteste sammenhengende parti, 35,2 grader mellom 1228 og 1251 moh, ligger i toppanløpet — og det er den sida beskrivelsene sier du kan måtte klatre opp i lite snø.",
     ascent: [
       "Start på den store parkeringa ved Nordstulvatnet, 714 moh. Ruta går slakt oppover gjennom åpen skog og krysser elva som renner ut av Sønstevatn, 746 moh; randofolk.no beskriver ei bru der. Bandet fra 700 til 800 moh måler 2,9 grader over 1785 meter grunn — det er den flate innmarsjen, og den er lengre enn den ser ut på kartet.",
       "Så kommer stigningen. 11,2 grader fra 800 til 900 moh over 512 meter grunn, som er bratteste hundremeteren på turen, og 7,0 grader fra 900 til 1000. Skogen slipper taket ved 945 moh, og først på 952 moh er du i åpent terreng for godt. Det er her T-ruta deler seg: opp Langedalen, eller utsiktsløypa om Sigridsbu. Linja går opp Langedalen.",
-      "Øverst i Langedalen passerer linja 180 meter nord for Sigridsbu, som ligger på 1175 moh, og derfra flater det ut. Bandet fra 1100 til 1200 moh måler 3,8 grader over 1529 meter grunn — halvannen kilometer platå med vidåpen utsikt.",
+      "Øverst i Langedalen passerer linja 180 meter nord for Sigridsbu, som ligger på 1175 moh, og derfra flater det ut. Bandet fra 1100 til 1200 moh måler 3,8 grader over 1518 meter grunn — halvannen kilometer platå med vidåpen utsikt.",
       "Toppanløpet er det bratte. Mellom 1290 og 1314 moh måler bratteste sammenhengende parti 35,2 grader, og det er sørsida av toppen randofolk.no beskriver som å «karre deg opp» når snøen er tynn. Alternativet i beskrivelsen er å gå langs fjellet og opp fra nordsida, som måler 5,8 grader i snitt. Varden står på 1343 moh.",
     ],
     descent: [
@@ -7426,20 +7426,20 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,200 L21,194 L42,189 L64,191 L89,190 L111,190 L136,186 L162,179 L183,164 L209,151 L232,137 L260,128 L285,120 L311,110 L337,96 L363,86 L384,80 L414,74 L435,63 L452,64 L473,59 L499,60 L520,59 L541,56 L559,42 L580,22 L600,18",
+      path: "M0,200 L21,194 L42,189 L64,191 L90,190 L111,190 L137,186 L162,179 L184,164 L209,151 L232,137 L261,128 L286,120 L312,110 L337,96 L363,86 L384,80 L402,78 L410,76 L418,71 L426,66 L439,63 L456,62 L477,59 L503,62 L524,56 L546,55 L563,38 L583,21 L600,18",
       startLabel: "714 moh",
       endLabel: "1343 moh",
       distanceLabel: "6,3 km",
-      caption: "664 høydemeter og 6,33 km fra Nordstul, med skoggrensa på 945 moh, Sigridsbu på 1175 og bratteste hundremeteren mellom 800 og 900 moh.",
+      caption: "670 høydemeter og 6,32 km fra Nordstul, med skoggrensa på 945 moh, Sigridsbu på 1175 og bratteste hundremeteren mellom 800 og 900 moh.",
     },
   },
   surloytenuten: {
     slug: "surloytenuten",
     intro:
-      "462 høydemeter på 6,17 km fra Nordstul, og den slakeste turen i denne delen av Blefjell: bratteste hundremeteren måler 5,3 grader. Ruta går nordover forbi toppen til Vassholet på 993 moh og kommer tilbake sørover langs Surløyterinden — det er derfor de siste kilometerne føles som en rygg og ikke som en bakke.",
+      "462 høydemeter på 6,15 km fra Nordstul, og den slakeste turen i denne delen av Blefjell: bratteste hundremeteren måler 5,3 grader. Ruta går nordover forbi toppen til Vassholet på 993 moh og kommer tilbake sørover langs Surløyterinden — det er derfor de siste kilometerne føles som en rygg og ikke som en bakke.",
     ascent: [
       "Fra nordenden av parkeringa ved Nordstul, 714 moh, går stien ned til høyre og over Esperåa på bru, 730 moh. Hold til høyre og følg den kloppelagte stien til setervollen Sudstul, 727 moh, der DNT-ruta mellom Selsli og Sigridsbu krysser.",
-      "Rett før siste hytta på vollen tar du av til høyre på umerket, men godt synlig sti. Nå går det nordover og oppover gjennom skog og myr: bandet fra 700 til 800 moh måler 2,6 grader over 1912 meter grunn og 800 til 900 moh 4,2 grader over 1346. Skogen slipper taket ved 951 moh.",
+      "Rett før siste hytta på vollen tar du av til høyre på umerket, men godt synlig sti. Nå går det nordover og oppover gjennom skog og myr: bandet fra 700 til 800 moh måler 2,6 grader over 1889 meter grunn og 800 til 900 moh 4,2 grader over 1346. Skogen slipper taket ved 951 moh.",
       "Ved Vassholet, 993 moh, snur ruta. Herfra følger du det ytre høydedraget sørover langs Surløyterinden, 1085 moh, og bratteste sammenhengende parti på hele turen ligger i kneika opp dit: 24,9 grader mellom 994 og 1014 moh. I selve søkket går linja 45 meter over et tjern på 1068 moh, 10 meter fra land — et hjørnekutt, og tjernet er naturlig og uten navn i registeret.",
       "Ryggen sørover er nesten flat — bandet fra 1000 til 1100 moh måler 2,8 grader over 1697 meter grunn — og ender ved varden på 1097 moh. I nordvest ser du Tverrgrønuten, Blerinden og Bletoppen.",
     ],
@@ -7462,20 +7462,20 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,200 L15,198 L35,192 L47,192 L61,193 L89,196 L115,194 L132,183 L152,176 L173,166 L199,153 L225,145 L248,138 L273,130 L293,116 L317,111 L347,103 L374,87 L396,76 L422,69 L440,54 L466,28 L486,24 L502,39 L531,38 L553,32 L580,22 L600,18",
+      path: "M0,200 L16,198 L35,192 L47,192 L61,193 L89,196 L116,194 L133,183 L147,179 L155,172 L163,169 L171,166 L197,153 L224,145 L247,138 L271,130 L292,116 L316,111 L346,103 L373,87 L395,76 L421,69 L439,54 L465,28 L485,24 L502,39 L531,38 L553,32 L580,22 L600,18",
       startLabel: "714 moh",
       endLabel: "1097 moh",
-      distanceLabel: "6,2 km",
-      caption: "462 høydemeter og 6,17 km fra Nordstul om Sudstul og Vassholet, med skoggrensa på 951 moh og varden på 1097.",
+      distanceLabel: "6,1 km",
+      caption: "462 høydemeter og 6,15 km fra Nordstul om Sudstul og Vassholet, med skoggrensa på 951 moh og varden på 1097.",
     },
   },
   styggemann: {
     slug: "styggemann",
     intro:
-      "547 høydemeter på 9,58 km fra Ravalsjø til Skrims høyeste topp, og de fleste av dem kommer til slutt: de første seks kilometerne holder under 2 grader i snitt per hundremeter. Toppen er den bratte delen — 15,1 grader fra 800 til 900 moh, og østsida rett under varden faller 48,5 grader.",
+      "554 høydemeter på 9,54 km fra Ravalsjø til Skrims høyeste topp, og de fleste av dem kommer til slutt: de første seks kilometerne holder under 2 grader i snitt per hundremeter. Toppen er den bratte delen — 15,1 grader fra 800 til 900 moh, og østsida rett under varden faller 48,5 grader.",
     ascent: [
       "Start på parkeringa ved Ravalsjø, 483 moh, og følg skilting og merking forbi Ormetangen, 476 moh, og opp lia øst for vatnet. Dette er skogsterreng med oppkjørte løyper, og de er det som gjør turen til en dagstur: bandet fra 400 til 500 moh måler 0,6 grader over 1848 meter grunn.",
-      "Videre forbi Skrimsetra, 591 moh, og over Fugleleikskarva, 635 moh. Bandet fra 500 til 600 moh måler 1,7 grader over 3392 meter grunn og 600 til 700 moh 1,5 grader over 3695 — det er nesten sju kilometer skog og myr mellom 483 og 700 moh. Kartverket klasser punktet på 611 moh som dyrket mark — det er setervollen på Sørmyrseter, like før hytta.",
+      "Videre forbi Skrimsetra, 591 moh, og over Fugleleikskarva, 635 moh. Bandet fra 500 til 600 moh måler 1,7 grader over 3359 meter grunn og 600 til 700 moh 1,5 grader over 3685 — det er nesten sju kilometer skog og myr mellom 483 og 700 moh. Kartverket klasser punktet på 611 moh som dyrket mark — det er setervollen på Sørmyrseter, like før hytta.",
       "Fem steder går linja over is, 1541 av de 9608 meterne. Den lengste kommer med en gang: 630 meter tvers over Ravalsjø på 475 moh, forbi holmen Kjelen, før ruta tar opp lia øst for vatnet. Så Skrimsvannet på 575 moh to ganger, 191 og 270 meter, Urdstjerna på 594 moh på 225 og Stulstjernet på 602 moh på 225. Alle fem er naturlige vatn, ingen av dem regulert, og ingen kryssing går mer enn 99 meter fra land — dette er smale skogsvatn løypa går tvers over, og DNTs egen vinterkjede fra Ravalsjø går gjennom det samme terrenget. Men is er is: det er de eneste stedene på en ellers rolig løypetur der underlaget ikke er bakke, og tidlig og sent i sesongen er de verdt et blikk før du går ut på dem.",
       "Sørmyrseter ligger på 620 moh, og herfra oppgir DNT rundt 240 høydemeter opp til Styggemann. Nå begynner turen å stige på ordentlig: 14,6 grader fra 700 til 800 moh over 404 meter grunn, med bratteste sammenhengende parti 23,2 grader mellom 700 og 719 moh. Skogen slipper taket ved 700 moh, og på 830 moh er du i åpent terreng.",
       "Det siste bandet, 800 til 900 moh, er det bratteste: 15,1 grader over bare 244 meter grunn. Ut.no kaller oppstigningen «temmelig bratt». Rådet deres om å sette igjen sekken i stikrysset gjelder den andre adkomsten, fra Ivarsbu i øst, der krysset ligger vest på Jotefjell, sørøst for varden. Varden står på 871 moh, og Styggemannshytta ligger rett ved.",
@@ -7499,17 +7499,17 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,195 L26,196 L48,199 L75,199 L99,195 L124,179 L150,164 L175,159 L192,155 L215,154 L241,153 L260,153 L289,143 L311,144 L339,134 L365,126 L384,127 L407,127 L432,133 L458,140 L478,136 L500,112 L523,107 L548,114 L565,80 L582,54 L599,19 L600,18",
+      path: "M0,195 L29,196 L54,199 L82,199 L108,191 L139,166 L164,162 L187,160 L196,155 L205,155 L214,154 L240,153 L265,153 L295,143 L322,145 L346,129 L355,126 L364,126 L383,127 L409,127 L435,140 L461,137 L484,125 L511,105 L537,117 L559,96 L576,61 L596,26 L600,18",
       startLabel: "483 moh",
       endLabel: "871 moh",
-      distanceLabel: "9,6 km",
-      caption: "547 høydemeter og 9,58 km fra Ravalsjø om Skrimsetra, Fugleleikskarva og Sørmyrseter, med skoggrensa på 700 moh og all stigningen over 700 moh.",
+      distanceLabel: "9,5 km",
+      caption: "554 høydemeter og 9,54 km fra Ravalsjø om Skrimsetra, Fugleleikskarva og Sørmyrseter, med skoggrensa på 700 moh og all stigningen over 700 moh.",
     },
   },
   saebyggjenuten: {
     slug: "saebyggjenuten",
     intro:
-      "Agders høyeste — så vidt det er: fylkesgrensa krysser selve toppen, og det registrerte toppunktet på 1506 moh ligger i Tokke i Telemark, ti meter øst for Agder-sida, som når 1504. En tur der tallet som betyr noe er 11,31 km og ikke 851 høydemeter. Ingen sti, ingen merking, tre skar og et vann underveis, og et terreng så slakt at det bratteste 400-metersvinduet måler 13,7 grader. Det eneste bratte på fjellet vender nord, og du skal ikke dit.",
+      "Agders høyeste — så vidt det er: fylkesgrensa krysser selve toppen, og det registrerte toppunktet på 1506 moh ligger i Tokke i Telemark, ti meter øst for Agder-sida, som når 1504. En tur der tallet som betyr noe er 11,30 km og ikke 855 høydemeter. Ingen sti, ingen merking, tre skar og et vann underveis, og et terreng så slakt at det bratteste 400-metersvinduet måler 13,7 grader. Det eneste bratte på fjellet vender nord, og du skal ikke dit.",
     ascent: [
       "Fra parkeringa ved bommen innerst i Berdalen hyttegrend, 810 moh, går ruta østover. Peilinga fra parkeringa til toppen er 82 grader — Berdalen ligger vest for fjellet, og du går inn mot det hele dagen. Riksveg 9 mellom Bykle og Hovden er brøytet hele vinteren, og ut.no presiserer at du ikke skal kjøre den siste kilometeren etter bommen: «Veien er privat.» Den første kilometeren deler trasé med oppkjørte løyper i Berdalen; linja her er terrenglinja og ikke løypa.",
       "Forbi Langemyr på 891 moh går det jevnt oppover mot Tverrheiskaret på 1028 moh. Dette er den eneste stigninga på turen som kjennes som en stigning: bratteste 30 meter måler 26,2 grader mellom 1000 og 1022 moh, 2350 meter ute, og bratteste 400 meter 13,7 grader fra 963 til 1062 moh. Skogen står høyt her: DTM1 gir terrengklasse Skog i selve Tverrheiskaret på 1028 moh. Langs linja står skogen til 1044 moh, og fra 1052 er det åpent.",
@@ -7520,7 +7520,7 @@ export const GUIDES: Record<string, TourGuide> = {
     descent: [
       "Ned samme vei, og ned vestsida. Fallvektet gjennomsnittsretning er 258 grader, altså vest-sørvest, som er den flanken du kom opp. Sveipet fra toppen gir 9,8 grader i snitt vestover og 9,2 sørvestover ut til 1000 meter — det er slakt nok til at nedkjøringa mest er transport, men også slakt nok til at du ikke trenger lete etter noe bedre.",
       "Og det er poenget. Den eneste bratte sida på Sæbyggjenuten er nordsida, og den er skavlkantet: 15,0 grader i snitt nordover mot 9,8 vestover, med et bratteste 60-metersvindu på 41,9 grader 460 til 520 meter ute, 42,3 grader nordøstover og 46,1 grader på peiling 10 grader. Skavlen står på de siste høydemeterne, og i flatt lys ligger kanten der uten at terrenget varsler. Kom opp vestsida og gå ned vestsida.",
-      "Den andre feilen er lengden. Elleve kilometer inn — 11,31 km måler linja — med over fire kilometer flatt høyfjell mellom 1100 og 1200 moh, betyr at værvinduet og ikke hellinga styrer turen. Merking finnes ikke; sti finnes så vidt. ut.no skriver «Gå stien inn til Langemyr», og OSM har én umerket traktorvei på den første strekninga — etter det er det terreng. Snur du på Gjuvvatn, har du sju kilometer igjen til bilen.",
+      "Den andre feilen er lengden. Elleve kilometer inn — 11,30 km måler linja — med over fire kilometer flatt høyfjell mellom 1100 og 1200 moh, betyr at værvinduet og ikke hellinga styrer turen. Merking finnes ikke; sti finnes så vidt. ut.no skriver «Gå stien inn til Langemyr», og OSM har én umerket traktorvei på den første strekninga — etter det er det terreng. Snur du på Gjuvvatn, har du sju kilometer igjen til bilen.",
     ],
     avalanche: [
       {
@@ -7537,11 +7537,11 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,200 L21,191 L36,182 L60,178 L82,178 L106,167 L129,142 L151,134 L170,135 L192,134 L213,130 L239,115 L261,111 L287,108 L307,105 L332,99 L356,103 L378,112 L400,118 L421,118 L443,110 L461,102 L483,96 L509,81 L535,59 L555,52 L576,43 L597,22 L600,18",
+      path: "M0,200 L21,190 L40,181 L65,178 L89,176 L118,158 L141,133 L154,134 L162,135 L183,136 L206,132 L232,120 L256,107 L284,107 L307,105 L335,99 L359,104 L382,115 L406,118 L431,117 L452,106 L476,97 L499,90 L528,66 L552,52 L574,45 L597,22 L600,18",
       startLabel: "810 moh",
       endLabel: "1506 moh",
       distanceLabel: "11,3 km",
-      caption: "851 høydemeter og 11,31 km fra Berdalen over Tverrheiskara og Midtre Gjuvvatn, der alt bratt vender nord og ruta holder seg vest.",
+      caption: "855 høydemeter og 11,30 km fra Berdalen over Tverrheiskara og Midtre Gjuvvatn, der alt bratt vender nord og ruta holder seg vest.",
     },
   },
   kjerag: {
@@ -7552,7 +7552,7 @@ export const GUIDES: Record<string, TourGuide> = {
       "Fra parkeringa på Øygardstøl, 641 moh, følger du Lysevegen sørover. Veien er vinterstengt — OSM har motor_vehicle:conditional=no @ Nov-May og snowplowing=no på fylkesvei 4224, og Sirdal kommune bekrefter det — så dette er en vårtur og ikke en vintertur. Linja her ligger aldri mer enn 100 meter fra kartlagt vei, men den kutter hårnålssvingene — svinger, ikke stigning. Det bratteste 30-meterssteget på hele ruta ligger oppe: 29,6 grader mellom 1083 og 1102 moh, på Kjeragplatået.",
       "Ved Stølsdalen bru på 850 moh tar anleggsveien mot Langavatn av, og du følger Langvassvegen sørvestover. På 925 moh går linja 225 meter over et umerket vatn like ved veien, høyst 24 meter fra land. Terrengklassen i DTM1 er Innsjø og ikke InnsjøRegulert, og OSM-polygonet (way 1312542069, ref:nve:vann 195944) bærer ingen reservoartagger — det er et naturlig vatn, ikke et magasin. Veien er den egentlige ferdselslinja her; vatnet ligger der linja skjærer svingen.",
       "På 944 moh forlater du veien og holder vest inn på Kjeragplatået. Peilinga fra veipunktet til toppunktet er 265 grader — rett vest. (Korridorforskninga oppga 271; den målte mot et toppunkt som ligger 338 meter fra det registrerte.) Turbeskrivelsene skriver «mot nordvest», og nordvest derfra fører til Kjeragbolten, som ligger 1921 meter fra toppunktet på peiling 10 grader. Det er et annet mål og en annen rute — og varden turbeskrivelsene snakker om står oppe ved bolten, ikke der linja ender; ut.no skriver at «Kjeragbolten ligger ca. 300 meter sør for varden».",
-      "Over platået er det slakt hele veien: bandet 900 til 1000 moh måler 4,2 grader i snitt over 1441 meter grunn, bandet 1000 til 1100 moh 2,3 grader over 2746 meter. Linja går tvers over fire vatn til: 45 meter på 975 moh, 45 meter på 1064 moh, 686 meter på 1075 moh med høyst 32 meter til land, og 90 meter på 1080 moh. Alle er naturlige. Til sammen går ruta 1091 av 7362 meter på vatn. Det som gjør platået krevende er ikke helninga, men at det er svaberg uten merking, med korte brå kanter mellom slake parti — det bratteste 60-metersvinduet rett vest for toppunktet måler 38,1 grader og ligger bare 90 meter ute.",
+      "Over platået er det slakt hele veien: bandet 900 til 1000 moh måler 4,2 grader i snitt over 1433 meter grunn, bandet 1000 til 1100 moh 2,3 grader over 2746 meter. Linja går tvers over fire vatn til: 45 meter på 975 moh, 45 meter på 1064 moh, 686 meter på 1075 moh med høyst 32 meter til land, og 90 meter på 1080 moh. Alle er naturlige. Til sammen går ruta 1091 av 7362 meter på vatn. Det som gjør platået krevende er ikke helninga, men at det er svaberg uten merking, med korte brå kanter mellom slake parti — det bratteste 60-metersvinduet rett vest for toppunktet måler 38,1 grader og ligger bare 90 meter ute.",
       "Siste etappe kommer inn fra øst over litt høyere mark. Linja topper på 1129 moh 6640 meter ute, faller 66 meter til 1063, og stiger så 21,2 grader over 60 meter fra 1077 til 1112 moh — det bratteste sammenhengende partiet på turen — før de siste 500 meterne går på peiling 294 grader og stiger 59 meter til toppunktet på 1124 moh. Høyeste mark på hele platået er 1163,7 moh og ligger 1347 meter øst-nordøst; toppunktet her er det registrerte Kjerag-punktet, ikke det høyeste.",
     ],
     descent: [
@@ -7574,7 +7574,7 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,200 L22,193 L41,171 L59,165 L83,157 L103,150 L125,135 L147,125 L167,117 L188,109 L213,95 L235,94 L257,89 L279,84 L298,72 L321,58 L345,41 L367,36 L390,36 L411,33 L433,38 L459,38 L481,34 L499,36 L521,24 L543,22 L569,37 L585,22 L600,20",
+      path: "M0,200 L26,190 L45,170 L67,162 L92,154 L114,144 L143,126 L166,118 L188,109 L214,95 L243,94 L262,87 L271,84 L280,83 L297,74 L321,58 L349,39 L374,37 L397,31 L422,38 L449,38 L474,38 L496,36 L521,24 L547,25 L572,31 L594,22 L600,20",
       startLabel: "641 moh",
       endLabel: "1124 moh",
       distanceLabel: "7,4 km",
@@ -7621,10 +7621,10 @@ export const GUIDES: Record<string, TourGuide> = {
   grubba: {
     slug: "grubba",
     intro:
-      "500 høydemeter på 2,50 km fra Smølåsveien på Fidjeland: østover til skaret ved vatnet på 859 moh og opp den vestvendte flanken til Grubbå, 1184 moh. Bratteste bandet er 17,6 grader mellom 900 og 1000 moh, og bratteste sammenhengende parti 23,1 grader mellom 717 og 732. Fri Flyt graderer turen «Lett» og oppgir 27 grader som bratteste punkt; linja har likevel et kort bergsteg på flanken.",
+      "504 høydemeter på 2,50 km fra Smølåsveien på Fidjeland: østover til skaret ved vatnet på 859 moh og opp den vestvendte flanken til Grubbå, 1184 moh. Bratteste bandet er 17,6 grader mellom 900 og 1000 moh, og bratteste sammenhengende parti 23,1 grader mellom 717 og 732. Fri Flyt graderer turen «Lett» og oppgir 27 grader som bratteste punkt; linja har likevel et kort bergsteg på flanken.",
     ascent: [
       "Start på parkeringa ved Smølåsveien på Fidjeland, 695 moh. Fri Flyt: «Kjør inn ved Leitet og parker i enden av veien.» Smølåsveien ender 0,2 km lenger sør. Fri Flyt: «Gå slik at du kommer inn i skaret mellom p893 og vannet på 850 moh. Det ligger ofte skiløype denne veien.» Linja krysser den kartlagte skiløypa etter 0,28 km og går østover; bratteste sammenhengende parti er 23,1 grader mellom 717 og 732 moh, nederst.",
-      "Bandene fra 700 til 900 moh måler 10,6 og 9,4 grader, og du er ute av skogen ved 856 moh, 1,0 km fra start. Skaret, mellom en liten kolle på 885 moh og vatnet, går du gjennom fra 1,04 til 1,20 km på 862–868 moh; vatnet, på 859 moh i kartet, ligger 27 meter fra linja ved 1,09 km. Hold deg på land. Fri Flyts p893 finnes ikke i terrengmodellen; kollen sør for linja er 885 moh, 66 meter unna.",
+      "Bandene fra 700 til 900 moh måler 10,3 og 9,4 grader, og du er ute av skogen ved 856 moh, 1,0 km fra start. Skaret, mellom en liten kolle på 885 moh og vatnet, går du gjennom fra 1,04 til 1,20 km på 862–868 moh; vatnet, på 859 moh i kartet, ligger 27 meter fra linja ved 1,09 km. Hold deg på land. Fri Flyts p893 finnes ikke i terrengmodellen; kollen sør for linja er 885 moh, 66 meter unna.",
       "Fri Flyt: «Ta av opp den vestvendte flanken og følg til topps.» Bandet fra 900 til 1000 moh er det bratteste, 17,6 grader over 315 meter grunn, og 1000 til 1100 måler 13,6. Mellom 932 og 1023 moh står små bergkanter på 45 grader eller brattere 4 til 20 meter fra linja, og ved 1046–1051 moh går linja over et bergsteg på 10 meter med bakke på 35 grader eller mer. Det siste bandet, 1100 til 1200, er 424 meter grunn på 11,2 grader opp til toppen. Ut.no skriver om varden: «Det er bygget varde også på det høyeste punktet (1184 moh) litt lenger nordvest (det er vel selve Grubbå).»",
     ],
     descent: [
@@ -7646,11 +7646,11 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,200 L23,199 L44,199 L66,198 L89,191 L109,183 L131,182 L147,172 L163,167 L196,156 L213,152 L231,145 L253,136 L271,137 L293,136 L318,128 L335,117 L348,111 L368,101 L385,94 L400,86 L412,80 L434,74 L455,65 L477,54 L507,46 L531,38 L552,36 L574,26 L600,18",
+      path: "M0,200 L18,199 L26,199 L35,198 L44,199 L52,198 L65,198 L88,191 L108,183 L130,182 L146,172 L163,167 L195,156 L213,152 L230,145 L252,136 L271,137 L292,136 L317,128 L335,117 L348,111 L368,101 L385,94 L399,86 L412,80 L433,74 L455,65 L477,54 L507,46 L531,38 L552,36 L574,26 L600,18",
       startLabel: "695 moh",
       endLabel: "1184 moh",
       distanceLabel: "2,5 km",
-      caption: "500 høydemeter og 2,50 km fra Fidjeland, med skoggrensa på 856 moh, skaret på 862–868 og bratteste bandet mellom 900 og 1000.",
+      caption: "504 høydemeter og 2,50 km fra Fidjeland, med skoggrensa på 856 moh, skaret på 862–868 og bratteste bandet mellom 900 og 1000.",
     },
   },
   roseknuten: {
