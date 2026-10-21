@@ -317,6 +317,6 @@ and confirm the origin is in the Redirect URLs allow-list.
 
 **Anonymous users can write to the database.**
 If you adapt `tk_tours_public` or add a view of your own, remember that a single-table view with
-no aggregate is auto-updatable, Supabase grants writes on new objects to `anon` by default, and a
+no aggregate is auto-updatable, older Supabase databases grant writes on new objects to `anon` by default, and a
 non-`security_invoker` view executes as its owner, which bypasses RLS. `schema.sql` revokes those
 grants explicitly for that reason. Supabase's advisor does not flag this combination.
