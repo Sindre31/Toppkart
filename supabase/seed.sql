@@ -2279,7 +2279,7 @@ Fra 570 svinger ruta sørover og holder østsida av bollen. Der ligger bratteste
 
 Rett nord for varden er det uansett bratt: 40,9 grader i bratteste 60-metersvindu bare 20 til 80 meter ut, med 24,8 grader i snitt ut til en kilometer. Der ligger også snøen som blir liggende — Kartverket fører terrengklassen SnøIsbre på nordsida fra rundt 1050 moh og nedover, mens ryggen ruta går på er bar mark i alle de seksten siste vertexene. De tre andre kantene er alvorlige: sør måler 30,6 grader i snitt med 63,9 grader i vinduet 20 til 80 meter fra varden, sørøst 30,9 med 62,5, øst 29,0 med 54,9, og sørvest 24,1 med 56,0. Fri Flyts to andre linjer — Kvanntoa i nordøst og Kvannto i øst — har partier på 45 grader og rappellfeste, og de er ikke ruta dette kortet beskriver.
 
-To av kildens sju linjer er egne oppstigninger med egen parkering, og begge møter turen først på høyde 779 — 787 moh der linja passerer — der de siste 300 høydemeterne nordøstover er felles. Fra Kåringen er det 1063 høydemeter og 8,18 km over Nordfjellaksla på 344 moh: den lengste og slakeste av de tre, med bratteste steg 32,2 grader mellom 973 og 994 moh, og kilden kaller den «en meget populær skitur med fjellski» der du oftest kan følge skispor fra veien. Fra Kanstadbotn er det 1140 høydemeter og 7,68 km, nord for høyde 519 og sør for Trollvatnan på 418 — kildens «sprekere variant», med et steg på 30,8 grader mellom 776 og 799.',
+To av kildens sju linjer er egne oppstigninger med egen parkering, og begge møter turen først på høyde 779 — 787 moh der linja passerer — der de siste 300 høydemeterne nordøstover er felles. Fra Kåringen er det 1065 høydemeter og 8,18 km over Nordfjellaksla på 344 moh: den lengste og slakeste av de tre, med bratteste steg 32,2 grader mellom 973 og 994 moh, og kilden kaller den «en meget populær skitur med fjellski» der du oftest kan følge skispor fra veien. Fra Kanstadbotn er det 1139 høydemeter og 7,63 km, nord for høyde 519 og sør for Trollvatnan på 418 — kildens «sprekere variant», med et steg på 30,8 grader mellom 776 og 799.',
   avalanche_notes  = jsonb_build_array(
     jsonb_build_object(
       'title', 'Bollen',
@@ -2324,10 +2324,10 @@ where slug = 'jotind';
 update public.tk_tours set
   description_up   = 'Fra parkeringa på Ingelsfjordeidet — 23 moh — samme start som Lakselvtindan: nordsida av Storvatnet på stien, og opp til nord for høyde 258. Linja holder seg på land der kilden krysser isen, slik bokas egen Forkledalen-rute fra samme parkering gjør.
 
-Derfra går oppstigningen vestover i det slakeste terrenget, over nordsida av høyde 462 — DTM1 måler 461,1 — på 400 moh der korridoren står, og videre opp fjellsida på 509. Skogen slipper på 226 moh etter 2,51 km, og beltet fra 400 til 500 er det bratteste i snitt med 21,2 grader over 260 meter grunn.
+Derfra går oppstigningen vestover i det slakeste terrenget, over nordsida av høyde 462 — DTM1 måler 461,1 — på 400 moh der korridoren står, og videre opp fjellsida på 509. Skogen slipper på 226 moh etter 2,50 km, og beltet fra 400 til 500 er det bratteste i snitt med 21,2 grader over 260 meter grunn.
 
 Toppen på 700 — 707 moh på linja — er der kildens skitur ender. Traversen videre over fortoppen er den alpine delen: det bratteste enkeltsteget på ruta, 45,0 grader, ligger mellom 869 og 901 moh, i det siste stykket opp til varden. Siste stykket opp til varden på 901 tar du med fordel på østsida i starten, sier kilden — der slipper du den vanskelige klatringen.',
-  description_down = '105 av de 985 høydemetrene gir du fra deg underveis. Mange starter nedkjøringa allerede fra 700-toppen, i slakt terreng med et brattheng som kan gås utenom, og det er den turen kildens høydemetertall beskriver.
+  description_down = '110 av de 988 høydemetrene gir du fra deg underveis. Mange starter nedkjøringa allerede fra 700-toppen, i slakt terreng med et brattheng som kan gås utenom, og det er den turen kildens høydemetertall beskriver.
 
 Fra hovedtoppen er nordvestsida linja: den starter mellom 902 og sørtoppen og er 20–25 grader med brattheng på 30–40 i nedre del. Nordøstsida er 30–40 grader og følger etter hvert vestruta til Lakselvtindan ned i Forkledalen. Begge går eksponert for skred fra høyereliggende terreng nesten hele veien.',
   avalanche_notes  = jsonb_build_array(
@@ -2702,9 +2702,9 @@ Sørvest- og vestsida er en annen verden: 40,7 og 40,0 grader i snitt med vindue
 where slug = 'torskmannen';
 
 update public.tk_tours set
-  description_up   = 'Fra parkeringsplassen ved Vatterfjordpollen på E10, ti kilometer fra Svolvær mot Fiskebøl. Linja på kartet begynner på vestsida av den lille brua over strømmen — terrengmodellen fører sundet som sjø, og brua finnes ikke i den, så spaserturen over brua fra parkeringa står her i stedet for i geometrien. Så langs høyresida av pollen og innover marka mot fjellfoten: beltet fra 0 til 100 moh måler 3,1 grader over nesten to kilometer, og skogen slutter allerede på 94 moh etter 1,88 km.
+  description_up   = 'Fra parkeringsplassen ved Vatterfjordpollen på E10, ti kilometer fra Svolvær mot Fiskebøl. Linja på kartet begynner på vestsida av den lille brua over strømmen — terrengmodellen fører sundet som sjø, og brua finnes ikke i den, så spaserturen over brua fra parkeringa står her i stedet for i geometrien. Så langs høyresida av pollen og innover marka mot fjellfoten: beltet fra 0 til 100 moh måler 3,1 grader over nesten to kilometer, og skogen slutter allerede på 94 moh etter 1,86 km.
 
-Fra fjellfoten opp på sørryggen — beltet fra 100 til 200 moh er turens bratteste, 18,4 grader over 271 meter grunn — og så nordover langs ryggen til den dreier vest. Ryggen er kupert: 44 høydemeter gis tilbake underveis, og beltene ligger på 10 til 15,2 grader — jevn, lesbar skinning med Austnesfjorden på den ene sida og Higravstindan i synsranda.
+Fra fjellfoten opp på sørryggen — beltet fra 100 til 200 moh er turens bratteste, 18,4 grader over 271 meter grunn — og så nordover langs ryggen til den dreier vest. Ryggen er kupert: 46 høydemeter gis tilbake underveis, og beltene ligger på 10 til 15,2 grader — jevn, lesbar skinning med Austnesfjorden på den ene sida og Higravstindan i synsranda.
 
 Der ryggen dreier vest — 641 moh der linja tar svingen — venter det siste: 15,1 grader i beltet fra 700 til 800, med det bratteste sammenhengende partiet, 29,1 grader, mellom 644 og 663 moh. Varden på 803; registeret og toppsøket løser 802,6.',
   description_down = 'Normalen er ryggen tilbake — sørsektoren måler 13,7 grader i snitt over 500 meter, og de mange variantene er grunnen til at turen tåler å gås igjen. Hold igjen der ryggen slutter: nedkjøringen mot Vatterfjordpollen kan være skredutsatt, brattest om du tar tidlig av ryggen mot venstre på sørsida, sier kilden.

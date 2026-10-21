@@ -1232,9 +1232,9 @@
   "cumdistM": 6343
  },
  "forkledalstindan": {
-  "verticalM": 980,
-  "gainM": 983,
-  "distanceM": 5477,
+  "verticalM": 990,
+  "gainM": 988,
+  "distanceM": 5466,
   "startM": 23,
   "summitM": 901,
   "duration": "4–6 t",
@@ -1245,12 +1245,12 @@
   "grade": 2,
   "aspect": "S",
   "distanceKm": 5.5,
-  "cumdistM": 5477
+  "cumdistM": 5466
  },
  "lakselvtindan": {
   "verticalM": 820,
   "gainM": 822,
-  "distanceM": 5552,
+  "distanceM": 5487,
   "startM": 23,
   "summitM": 747,
   "duration": "4–6 t",
@@ -1260,8 +1260,8 @@
   "maxStepAngle": 25.5,
   "grade": 2,
   "aspect": "SV",
-  "distanceKm": 5.6,
-  "cumdistM": 5552
+  "distanceKm": 5.5,
+  "cumdistM": 5487
  },
  "siriskolten": {
   "verticalM": 670,
@@ -1457,8 +1457,8 @@
  },
  "rundfjellet": {
   "verticalM": 840,
-  "gainM": 841,
-  "distanceM": 4778,
+  "gainM": 843,
+  "distanceM": 4759,
   "startM": 6,
   "summitM": 803,
   "duration": "4–6 t",
@@ -1467,9 +1467,9 @@
   "steepestBandTo": 200,
   "maxStepAngle": 29.1,
   "grade": 2,
-  "aspect": "SØ",
+  "aspect": "Ø",
   "distanceKm": 4.8,
-  "cumdistM": 4778
+  "cumdistM": 4759
  },
  "kleppstadheia": {
   "verticalM": 530,
@@ -1537,8 +1537,8 @@
  },
  "justadtinden": {
   "verticalM": 730,
-  "gainM": 733,
-  "distanceM": 2875,
+  "gainM": 729,
+  "distanceM": 2818,
   "startM": 14,
   "summitM": 736,
   "duration": "3–5 t",
@@ -1548,8 +1548,8 @@
   "maxStepAngle": 29.8,
   "grade": 2,
   "aspect": "S",
-  "distanceKm": 2.9,
-  "cumdistM": 2877
+  "distanceKm": 2.8,
+  "cumdistM": 2818
  },
  "stornappstinden": {
   "verticalM": 680,
