@@ -47,9 +47,7 @@ export default async function MineTurerPage() {
 
       <SiteNav lang={lang} current="/mine-turer" />
 
-      {/* `.shell` er en flex-kolonne, og `margin: auto` krymper `.page` til
-          innholdet; `width` holder den i full bredde. */}
-      <main className="page" style={{ width: "100%" }}>
+      <main className={`page ${styles.fullPage}`}>
         <header className={`${styles.hero} ${styles.heroSoft}`}>
           <Image
             src="/assets/hero-relief.webp"

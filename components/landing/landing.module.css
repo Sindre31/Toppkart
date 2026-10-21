@@ -132,11 +132,20 @@
    på telefon er det omvendt. */
 .pageBackdrop { display: none; }
 
+/* Sida i full bredde og, på PC, full høyde. `.shell` er en flex-kolonne, og
+   `margin: auto` krymper `.page` til innholdet; `width` holder den ute. Som
+   flex-kolonne selv lar den kortene (`MyTours`) ta høyden som er igjen, så
+   bunnteksten havner nederst i vinduet. */
+.fullPage { width: 100%; }
+
 @media (min-width: 761px) {
+  /* Menyen er 90 % sidefarge, så et bilde som gikk helt opp, lyste svakt
+     gjennom den og fikk en skarp kant der menyen slutter. Bildet starter
+     derfor like under menyen og toner inn fra sidefargen, så de går i ett. */
   .pageBackdrop {
     display: block;
     position: fixed;
-    inset: 0;
+    inset: 56px 0 0;
     z-index: -1;
     pointer-events: none;
   }
@@ -145,15 +154,19 @@
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(
-      100deg,
-      var(--color-bg) 0%,
-      color-mix(in srgb, var(--color-bg) 85%, transparent) 30%,
-      color-mix(in srgb, var(--color-bg) 40%, transparent) 58%,
-      color-mix(in srgb, var(--color-bg) 10%, transparent) 80%,
-      transparent 100%
-    );
+    background:
+      linear-gradient(to bottom, var(--color-bg), transparent 120px),
+      linear-gradient(
+        100deg,
+        var(--color-bg) 0%,
+        color-mix(in srgb, var(--color-bg) 85%, transparent) 30%,
+        color-mix(in srgb, var(--color-bg) 40%, transparent) 58%,
+        color-mix(in srgb, var(--color-bg) 10%, transparent) 80%,
+        transparent 100%
+      );
   }
+
+  .fullPage { display: flex; flex-direction: column; }
 
   .heroSoft > .heroImage,
   .heroSoft::after { display: none; }
