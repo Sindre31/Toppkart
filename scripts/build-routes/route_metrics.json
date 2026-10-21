@@ -2800,9 +2800,9 @@
   "cumdistM": 7599
  },
  "horndalsnuten": {
-  "verticalM": 1120,
-  "gainM": 1124,
-  "distanceM": 6023,
+  "verticalM": 1170,
+  "gainM": 1170,
+  "distanceM": 7005,
   "startM": 398,
   "summitM": 1462,
   "duration": "5–7 t",
@@ -2811,9 +2811,9 @@
   "steepestBandTo": 1100,
   "maxStepAngle": 31.4,
   "grade": 2,
-  "aspect": "NØ",
-  "distanceKm": 6.0,
-  "cumdistM": 6023
+  "aspect": "N",
+  "distanceKm": 7.0,
+  "cumdistM": 7004
  },
  "folarskardnuten": {
   "verticalM": 1000,
@@ -2977,19 +2977,19 @@
  },
  "vesoldo": {
   "verticalM": 840,
-  "gainM": 839,
-  "distanceM": 4217,
+  "gainM": 841,
+  "distanceM": 4678,
   "startM": 211,
   "summitM": 1046,
-  "duration": "3–5 t",
-  "steepestBandAngle": 16.5,
-  "steepestBandFrom": 300,
-  "steepestBandTo": 400,
-  "maxStepAngle": 28.9,
+  "duration": "4–6 t",
+  "steepestBandAngle": 15.9,
+  "steepestBandFrom": 500,
+  "steepestBandTo": 600,
+  "maxStepAngle": 28.2,
   "grade": 2,
   "aspect": "S",
-  "distanceKm": 4.2,
-  "cumdistM": 4217
+  "distanceKm": 4.7,
+  "cumdistM": 4679
  },
  "ranten": {
   "verticalM": 530,

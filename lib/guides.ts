@@ -350,7 +350,7 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,200 L9,200 L18,199 L33,198 L55,196 L87,194 L115,192 L128,189 L145,188 L159,186 L174,185 L187,183 L199,181 L213,179 L227,175 L241,171 L264,166 L286,159 L318,145 L340,134 L362,124 L391,112 L417,101 L439,90 L465,77 L494,63 L524,50 L549,41 L572,35 L593,23 L600,18",
+      path: "M0,200 L9,200 L18,199 L33,198 L55,196 L87,194 L114,192 L128,189 L145,188 L159,186 L174,185 L187,183 L199,181 L213,179 L227,175 L241,171 L264,166 L286,159 L319,145 L341,134 L363,124 L391,112 L417,101 L439,90 L465,77 L494,63 L524,50 L549,41 L572,35 L593,23 L600,18",
       startLabel: "20 moh",
       endLabel: "470 moh",
       distanceLabel: "2,5 km",
@@ -619,7 +619,7 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,200 L33,191 L56,188 L73,188 L85,188 L101,183 L127,175 L146,167 L166,160 L196,150 L218,142 L236,134 L261,126 L279,120 L300,110 L325,98 L350,87 L370,78 L386,71 L410,62 L440,62 L471,55 L494,51 L524,47 L550,41 L574,33 L594,24 L600,18",
+      path: "M0,200 L33,191 L56,188 L73,188 L85,188 L101,183 L126,175 L146,167 L166,160 L196,150 L218,142 L236,134 L261,126 L279,120 L300,110 L325,98 L350,87 L370,78 L386,71 L410,62 L440,62 L471,55 L494,51 L524,47 L550,41 L574,33 L594,24 L600,18",
       startLabel: "65 moh",
       endLabel: "1397 moh",
       distanceLabel: "5,4 km",
@@ -995,7 +995,7 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,200 L22,190 L43,189 L79,188 L100,185 L117,184 L127,185 L137,188 L152,191 L169,189 L189,179 L206,170 L231,161 L254,148 L275,140 L296,139 L310,130 L331,116 L352,109 L374,99 L389,90 L404,82 L421,71 L438,62 L466,55 L481,49 L508,42 L538,33 L568,26 L593,20 L600,18",
+      path: "M0,200 L22,190 L43,189 L79,188 L100,185 L117,184 L127,185 L138,188 L152,191 L169,189 L189,179 L206,170 L231,161 L254,148 L275,140 L296,139 L310,130 L331,116 L352,109 L374,99 L389,90 L404,82 L421,71 L438,62 L466,55 L481,49 L508,42 L538,33 L568,26 L593,20 L600,18",
       startLabel: "81 moh",
       endLabel: "857 moh",
       distanceLabel: "3,8 km",
@@ -1854,7 +1854,7 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,200 L8,199 L26,195 L50,195 L87,188 L108,184 L125,180 L147,171 L170,166 L194,152 L206,145 L227,137 L247,128 L267,120 L291,107 L304,102 L313,100 L324,99 L342,98 L355,91 L367,85 L376,80 L388,76 L402,71 L415,64 L430,55 L440,51 L459,42 L495,34 L519,31 L555,25 L577,22 L600,18",
+      path: "M0,200 L8,199 L26,195 L50,195 L87,188 L108,184 L125,180 L147,171 L170,166 L194,152 L206,145 L227,137 L247,128 L267,120 L291,107 L304,102 L313,100 L324,99 L342,98 L355,91 L367,85 L376,80 L388,76 L403,71 L415,64 L430,55 L440,51 L459,42 L495,34 L519,31 L555,25 L577,22 L600,18",
       startLabel: "63 moh",
       endLabel: "527 moh",
       distanceLabel: "2,2 km",
@@ -1889,7 +1889,7 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,200 L26,197 L54,190 L86,183 L99,181 L107,181 L119,179 L136,176 L153,170 L163,166 L177,161 L190,157 L199,155 L209,153 L219,150 L232,144 L246,138 L269,131 L299,122 L322,113 L349,105 L382,98 L413,94 L431,82 L450,70 L483,57 L504,52 L514,45 L537,32 L559,25 L586,21 L600,18",
+      path: "M0,200 L26,197 L54,190 L86,183 L99,181 L107,181 L119,179 L136,176 L153,170 L163,166 L177,161 L190,157 L199,155 L208,153 L219,150 L232,144 L246,138 L269,131 L299,122 L322,113 L349,105 L382,98 L413,94 L431,82 L450,70 L483,57 L504,52 L514,45 L537,32 L559,25 L586,21 L600,18",
       startLabel: "51 moh",
       endLabel: "560 moh",
       distanceLabel: "3,0 km",
@@ -2100,7 +2100,7 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,198 L16,200 L31,200 L39,200 L52,199 L66,197 L80,193 L89,192 L99,191 L109,191 L127,186 L146,179 L169,177 L193,169 L212,163 L233,148 L259,138 L287,130 L315,123 L348,116 L380,109 L404,97 L425,88 L451,76 L474,68 L495,61 L521,50 L548,41 L568,29 L596,18 L600,18",
+      path: "M0,198 L16,200 L31,200 L39,200 L52,199 L66,197 L80,193 L88,192 L99,191 L109,191 L127,186 L146,179 L169,177 L193,169 L212,163 L233,148 L259,138 L287,130 L315,123 L348,116 L380,109 L404,97 L425,88 L451,76 L474,68 L495,61 L521,50 L548,41 L568,29 L596,18 L600,18",
       startLabel: "12 moh",
       endLabel: "889 moh",
       distanceLabel: "5,8 km",
@@ -3411,7 +3411,7 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,199 L36,194 L59,191 L76,185 L91,182 L105,177 L120,174 L132,168 L147,166 L166,162 L178,160 L190,157 L203,154 L214,152 L236,150 L253,142 L274,133 L289,126 L302,118 L315,110 L325,106 L347,97 L368,93 L388,88 L407,82 L424,79 L452,66 L487,50 L522,35 L557,25 L581,20 L600,18",
+      path: "M0,199 L36,194 L59,191 L76,185 L91,182 L105,177 L120,174 L132,168 L147,166 L166,162 L178,160 L190,157 L203,154 L213,152 L236,150 L253,142 L274,133 L289,126 L302,118 L315,110 L325,106 L347,97 L368,93 L388,88 L407,82 L425,79 L452,66 L487,50 L522,35 L557,25 L581,20 L600,18",
       startLabel: "16 moh",
       endLabel: "534 moh",
       distanceLabel: "2,3 km",
@@ -3789,7 +3789,7 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,199 L32,199 L63,195 L94,195 L122,198 L147,200 L166,197 L181,185 L196,172 L214,167 L232,156 L249,148 L266,141 L286,131 L305,125 L323,122 L341,119 L359,118 L375,115 L403,107 L427,93 L458,83 L487,70 L512,63 L537,54 L563,40 L589,25 L600,18",
+      path: "M0,199 L32,199 L63,195 L94,195 L122,198 L147,200 L166,197 L181,185 L197,172 L214,167 L232,156 L249,148 L266,141 L286,131 L305,125 L323,122 L341,119 L359,118 L375,115 L403,107 L427,93 L458,83 L487,70 L512,63 L537,54 L563,40 L589,25 L600,18",
       startLabel: "10 moh",
       endLabel: "993 moh",
       distanceLabel: "5,2 km",
@@ -4246,7 +4246,7 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,200 L25,198 L60,196 L86,192 L120,186 L146,178 L163,169 L189,157 L206,149 L215,145 L225,142 L238,138 L245,138 L259,136 L268,136 L287,134 L322,127 L348,121 L371,111 L385,104 L408,93 L425,86 L444,82 L468,72 L494,62 L514,54 L537,45 L554,36 L572,27 L597,18 L600,18",
+      path: "M0,200 L25,198 L60,196 L86,192 L120,186 L146,178 L163,169 L189,157 L206,149 L215,145 L225,142 L238,138 L244,138 L259,136 L268,136 L287,134 L322,127 L348,121 L371,111 L385,104 L408,93 L425,86 L444,82 L468,72 L494,62 L514,54 L537,45 L554,36 L572,27 L597,18 L600,18",
       startLabel: "307 moh",
       endLabel: "1048 moh",
       distanceLabel: "3,1 km",
@@ -4324,7 +4324,7 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,192 L14,196 L33,199 L53,200 L63,199 L76,198 L88,196 L98,193 L108,188 L117,185 L127,181 L139,175 L151,172 L161,167 L174,161 L186,156 L197,152 L229,142 L259,131 L293,117 L320,104 L348,92 L371,79 L396,73 L437,66 L478,59 L505,49 L553,34 L581,23 L600,18",
+      path: "M0,192 L14,196 L33,199 L53,200 L63,199 L76,198 L88,196 L98,193 L108,188 L117,185 L127,181 L139,175 L151,172 L161,167 L174,161 L186,156 L198,152 L229,142 L259,131 L293,117 L321,104 L348,92 L371,79 L396,73 L437,66 L478,59 L505,49 L553,34 L581,23 L600,18",
       startLabel: "418 moh",
       endLabel: "1317 moh",
       distanceLabel: "3,9 km",
@@ -4403,7 +4403,7 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,200 L23,198 L38,197 L53,196 L79,195 L106,195 L133,195 L160,197 L187,195 L218,197 L244,186 L267,176 L289,164 L310,154 L325,145 L343,132 L370,122 L397,112 L420,109 L440,101 L462,91 L485,80 L507,68 L538,49 L561,39 L583,29 L600,18",
+      path: "M0,200 L23,198 L38,197 L52,196 L79,195 L106,195 L133,195 L160,197 L187,195 L218,197 L244,186 L267,176 L289,164 L310,154 L325,145 L343,132 L370,122 L397,112 L420,109 L440,101 L462,91 L485,80 L507,68 L538,49 L561,39 L583,29 L600,18",
       startLabel: "349 moh",
       endLabel: "1568 moh",
       distanceLabel: "6,0 km",
@@ -4584,7 +4584,7 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,200 L16,198 L32,197 L52,195 L67,193 L82,190 L97,189 L109,187 L122,185 L134,182 L150,180 L178,175 L208,165 L243,155 L268,148 L297,138 L324,127 L346,118 L368,105 L392,90 L421,79 L449,69 L468,57 L501,46 L522,43 L551,34 L579,26 L600,18",
+      path: "M0,200 L16,198 L32,197 L52,195 L67,193 L82,190 L97,189 L109,187 L122,185 L134,182 L150,180 L178,175 L208,165 L243,155 L268,148 L297,138 L324,127 L346,118 L368,105 L392,90 L421,79 L449,69 L469,57 L501,46 L522,43 L551,34 L579,26 L600,18",
       startLabel: "63 moh",
       endLabel: "1587 moh",
       distanceLabel: "8,7 km",
@@ -6464,7 +6464,7 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,200 L15,196 L29,193 L53,189 L75,186 L97,181 L118,178 L133,179 L149,183 L168,182 L187,178 L207,173 L226,168 L242,164 L261,156 L279,150 L302,148 L333,142 L358,136 L377,126 L405,109 L437,92 L469,79 L492,71 L519,58 L543,47 L575,30 L600,18",
+      path: "M0,200 L15,196 L29,193 L53,189 L75,186 L97,181 L118,178 L134,179 L149,183 L168,182 L187,178 L207,173 L226,168 L242,164 L261,156 L279,150 L302,148 L333,142 L358,136 L377,126 L405,109 L437,92 L469,79 L492,71 L519,58 L543,47 L575,30 L600,18",
       startLabel: "383 moh",
       endLabel: "1302 moh",
       distanceLabel: "7,6 km",
@@ -6474,22 +6474,22 @@ export const GUIDES: Record<string, TourGuide> = {
   horndalsnuten: {
     slug: "horndalsnuten",
     intro:
-      "1124 høydemeter på 6,02 km fra Skiple i Raundalen, med halvannen kilometer flat innmarsj før terrenget tar til å stige. Bratteste sammenhengende parti måler 31,4 grader og ligger mellom 1093 og 1116 moh — nordvendt, og siste kneika til toppen er bratteste delen av ruta.",
+      "1170 høydemeter på 7,0 km fra Skiple i Raundalen, med en lang og slak innmarsj på traktorveien over Raundalselvi og forbi Horndalsbruni før terrenget tar til å stige. Bratteste sammenhengende parti måler 31,4 grader og ligger mellom 1093 og 1116 moh — nordvendt, og siste kneika til toppen er bratteste delen av ruta.",
     ascent: [
-      "Start ved den kartfestede parkeringa ved brua over Raundalselvi ved Skiple, 398 moh, omtrent tjue kilometer øst for Voss. De første 1490 metrene grunn er tilnærmet flate — bandet fra 300 til 400 moh måler 0,8 grader — og ruta krysser elva tidlig.",
+      "Start ved den kartfestede parkeringa ved Raundalsvegen på Skiple, 398 moh, omtrent tjue kilometer øst for Voss. Gå rett ned gjennom skogen til Horndalsvegen og over brua over Raundalselvi, der kilden starter turen, og følg traktorveien videre sørover på vestsida. Sør for brua renner elva i et juv under Horndalsberget; ruta holder seg på veien og går ikke ned i det. Traktorveien stiger slakt opp over Fureneset og gir litt tilbake ned mot Horndøla: bandet fra 300 til 400 moh måler 0,1 grader over 1104 meter grunn, og 400 til 500 moh 3,3 grader over 1818 meter.",
       "Følg traktorveien forbi Horndalsbruni og inn i Horndalsbotnen på 757 moh. Skogen holder til 781 moh, og i den øvre lia mot Bjørnsetstølen er det skredbaner; hold deg i skogen der nede.",
       "Fra botnen stiger ruta mot skuldra. Bandet fra 900 til 1000 moh måler 16,9 grader og 1000 til 1100 moh 21,4, som er bratteste hundremeteren. Bratteste sammenhengende parti på hele turen ligger her, 31,4 grader over tretti meter mellom 1093 og 1116 moh.",
       "Over skuldra på 1153 moh flater det ut en stund, 13,3 grader fra 1100 til 1200 moh, før den siste kneika: 20,6 grader fra 1200 til 1300 moh, og deretter jevnere terreng til varden på 1462.",
     ],
     descent: [
-      "Ned samme veien, nordover gjennom Horndalsbotnen og ut den flate innmarsjen til Skiple. Fallretninga er nord, og fjellet holder derfor kaldt føre lenge — det er også grunnen til at det sjelden er vårføre å hente her.",
-      "Vanligste feil: å legge nedkjøringa i den øvre lia mot Bjørnsetstølen fordi den ser åpen ut. Der er det skredbaner. Den andre er å undervurdere innmarsjen: 1490 meter tilnærmet flat grunn er tungt å gå tilbake i myk snø, og turen er lengre enn høydemetrene tilsier.",
-      "Kilden fører to startsteder, ett på hver side av fjellet: «Oppstigningen fra nord starter ved Skiple i Raundalen, snaut tjue kilometer øst fra Voss. Oppstigningen fra sør starter i Skaftedalen.» Og den sier hvorfor: «Det er to gode utgangspunkt for denne turen, et på den skyggefulle nordsiden, og et som ligger solvendt mot sør.» Appens rute er nordruta; sørruta ligger nå ved siden av den. Fra enden av Skaftedalsvegen på 486 moh går linja i slakt terreng nordøstover opp dalen forbi 662 og 766 til stølen Skytjeset på 882 — kildens «omtrent 890 moh» — og derfra på ryggformasjonen over 1063, flanken på 1249 og 1368 til topps. 1022 høydemeter på 6,13 km mot 1124 på 6,02 km fra Skiple: nesten samme tur, motsatt sol. Skogen slipper på 758 moh etter 2,91 km, mot 781 på nordruta. Bratteste hundremetersbeltet er 19,5 grader fra 900 til 1000 moh, og bratteste 30-metersvinduet 33,2 mellom 1211 og 1231, mot 31,4 på nordruta. Kilden gir et valg øverst — enten det bratte, markerte dalsøkket eller ryggformasjonen og flanken; linja her er ryggen, som er den kilden beskriver helt til topps.",
+      "Ned samme veien, nordover gjennom Horndalsbotnen og ut traktorveien til brua og Skiple. Fallretninga er nord, og fjellet holder derfor kaldt føre lenge — det er også grunnen til at det sjelden er vårføre å hente her.",
+      "Vanligste feil: å legge nedkjøringa i den øvre lia mot Bjørnsetstølen fordi den ser åpen ut. Der er det skredbaner. Den andre er å undervurdere innmarsjen: traktorveien fra Horndøla til brua er over to kilometer slak grunn, med en kort stigning over Fureneset på vei ut, og turen er lengre enn høydemetrene tilsier. Og ikke ta snarveien i elveløpet under Horndalsberget — Raundalselvi renner der i et juv.",
+      "Kilden fører to startsteder, ett på hver side av fjellet: «Oppstigningen fra nord starter ved Skiple i Raundalen, snaut tjue kilometer øst fra Voss. Oppstigningen fra sør starter i Skaftedalen.» Og den sier hvorfor: «Det er to gode utgangspunkt for denne turen, et på den skyggefulle nordsiden, og et som ligger solvendt mot sør.» Appens rute er nordruta; sørruta ligger nå ved siden av den. Fra enden av Skaftedalsvegen på 486 moh går linja i slakt terreng nordøstover opp dalen forbi 662 og 766 til stølen Skytjeset på 882 — kildens «omtrent 890 moh» — og derfra på ryggformasjonen over 1063, flanken på 1249 og 1368 til topps. 1022 høydemeter på 6,13 km mot 1170 på 7,0 km fra Skiple: kortere og med mindre stigning, og motsatt sol. Skogen slipper på 758 moh etter 2,91 km, mot 781 på nordruta. Bratteste hundremetersbeltet er 19,5 grader fra 900 til 1000 moh, og bratteste 30-metersvinduet 33,2 mellom 1211 og 1231, mot 31,4 på nordruta. Kilden gir et valg øverst — enten det bratte, markerte dalsøkket eller ryggformasjonen og flanken; linja her er ryggen, som er den kilden beskriver helt til topps.",
     ],
     avalanche: [
       {
         title: "Ruta",
-        body: "Flat innmarsj, jevn midtdel og en bratt kneik til slutt. Bratteste hundremeteren, 1000 til 1100 moh, måler 21,4 grader, og bratteste sammenhengende parti 31,4 grader mellom 1093 og 1116 moh. Hele fjellsida er nordvendt.",
+        body: "Slak innmarsj på traktorveien, jevn midtdel og en bratt kneik til slutt. Bratteste hundremeteren, 1000 til 1100 moh, måler 21,4 grader, og bratteste sammenhengende parti 31,4 grader mellom 1093 og 1116 moh. Hele fjellsida er nordvendt.",
       },
       {
         title: "Terrenget rundt",
@@ -6501,11 +6501,11 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,194 L24,198 L46,197 L68,198 L95,197 L122,196 L148,190 L166,185 L193,176 L225,162 L252,154 L278,146 L299,139 L316,136 L337,133 L359,128 L381,120 L406,111 L427,101 L443,93 L462,83 L478,71 L494,67 L512,58 L529,46 L545,37 L565,32 L592,22 L600,18",
+      path: "M0,192 L27,199 L45,199 L58,198 L74,195 L87,193 L103,190 L120,187 L132,185 L146,182 L160,179 L175,176 L190,177 L203,178 L220,180 L243,178 L288,157 L325,144 L354,135 L385,128 L420,116 L451,100 L478,85 L501,70 L528,55 L551,38 L583,27 L600,18",
       startLabel: "398 moh",
       endLabel: "1462 moh",
-      distanceLabel: "6,0 km",
-      caption: "1124 høydemeter og 6,02 km fra Skiple gjennom Horndalsbotnen, med skoggrensa på 781 moh og skuldra på 1153 moh før toppkneika.",
+      distanceLabel: "7,0 km",
+      caption: "1170 høydemeter og 7,0 km fra Skiple over Raundalselvi og gjennom Horndalsbotnen, med skoggrensa på 781 moh og skuldra på 1153 moh før toppkneika.",
     },
   },
   folarskardnuten: {
@@ -6609,7 +6609,7 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,200 L10,196 L44,188 L59,179 L88,150 L113,123 L142,91 L174,74 L205,62 L233,46 L255,60 L279,80 L313,84 L347,97 L375,107 L386,109 L398,110 L408,111 L419,110 L428,108 L442,103 L452,105 L463,103 L476,102 L497,101 L522,78 L554,50 L585,24 L600,18",
+      path: "M0,200 L10,196 L44,188 L59,179 L88,150 L113,123 L142,91 L174,74 L205,62 L233,46 L254,60 L279,80 L313,84 L347,97 L375,107 L386,109 L398,110 L408,111 L419,110 L428,108 L442,103 L452,105 L463,103 L476,102 L497,101 L522,78 L554,50 L585,24 L600,18",
       startLabel: "661 moh",
       endLabel: "1127 moh",
       distanceLabel: "5,5 km",
@@ -6890,12 +6890,12 @@ export const GUIDES: Record<string, TourGuide> = {
   vesoldo: {
     slug: "vesoldo",
     intro:
-      "838 høydemeter fra Byrkjenes, og en tur som blir slakere jo høyere du kommer: bratt skogsli nederst, åpen og jevn rygg over. Toppkuppelen er lettvint å gå — men den ligger et par hundre meter over stupene mot vest og nordvest, og en halv kilometer over dem mot nord, og i flatt lys er kanten ikke synlig.",
+      "841 høydemeter fra Byrkjenes, og en tur som blir slakere jo høyere du kommer: bratt skogsli nederst, åpen og jevn rygg over. Toppkuppelen er lettvint å gå — men den ligger et par hundre meter over stupene mot vest og nordvest, og en halv kilometer over dem mot nord, og i flatt lys er kanten ikke synlig.",
     ascent: [
-      "Fra parkeringa ved Byrkjenes, 211 moh, innerst på Tordalsvegen nord for Strandebarm, går du opp den bratte skogkledde lia mot Fadnastølen, 498 moh. Dette er den bratteste delen av turen: bratteste hundremeteren ligger mellom 300 og 400 moh og måler 16,5 grader i snitt. Tordalsvegen er privat bomvei, og brøyting helt fram til parkeringa er ikke garantert — ring eller sjekk før du kjører langt.",
-      "Over stølen åpner terrenget seg, med skog i flekker opp til rundt 577 moh. Ruta holder nordøstover inn på den brede sørvestryggen ved 629 moh.",
+      "Fra parkeringa ved Byrkjenes, 211 moh, innerst på Tordalsvegen nord for Strandebarm, går du opp den bratte skogkledde lia mot Fadnastølen, 498 moh, på stien: den går først sørover fra parkeringa og tar lia i lange slag før den svinger nordover til stølen, og krysser Fannastølselva én gang, like nedenfor. Hold deg på stien — elva renner i flere løp under Røynliane, og en linje rett opp nordsida krysser den tre ganger. Bratteste tretti meter på turen ligger her, 28,2 grader mellom 290 og 311 moh, mens hundremeteren fra 300 til 400 moh måler 13,4 grader i snitt. Tordalsvegen er privat bomvei, og brøyting helt fram til parkeringa er ikke garantert — ring eller sjekk før du kjører langt.",
+      "Over stølen åpner terrenget seg, med skog i flekker opp til rundt 580 moh. Ruta holder nordøstover inn på den brede sørvestryggen ved 629 moh, og stigningen fra stølen og opp dit er turens bratteste hundremeter: 15,9 grader fra 500 til 600 moh.",
       "Derfra følger du ryggen sammenhengende nordover — 791 moh, så skulderen på 977 moh. Hele den øvre delen ligger på 10 til 13 grader: det er slakere enn sørfallet like ved, som holder 20,8 grader i snitt med et 33,7-graders belte 580 til 640 meter ute fra toppen. Sørvestryggen måler 9,5 grader i snitt, og det er grunnen til at linja ligger der den ligger.",
-      "De siste hundre metrene svinger nordøstover opp den slake toppkuppelen til varden på 1046 moh. Bratteste sammenhengende parti på hele linja måler 28,9 grader, og det ligger nede i skogslia.",
+      "De siste hundre metrene svinger nordøstover opp den slake toppkuppelen til varden på 1046 moh. Bratteste sammenhengende parti på hele linja måler 28,2 grader, og det ligger nede i skogslia.",
     ],
     descent: [
       "Ned samme ryggen: sørover over skuldra på 977 moh og 791 moh, ned til 629 og videre til Fadnastølen. Fra stølen og ned er det skogsli — bratt nok til å være fin kjøring, og bratt nok til å gå løs etter mildvær og regn.",
@@ -6905,7 +6905,7 @@ export const GUIDES: Record<string, TourGuide> = {
     avalanche: [
       {
         title: "Ruta",
-        body: "Nederste halvdelen er bratt skogsli, rundt 19 grader i snitt fra parkeringa til Fadnastølen, mens hele den øvre ryggen ligger på 10 til 13 grader. Bratteste sammenhengende parti på linja måler 28,9 grader. Den skogkledde lia over Byrkjenes er bratt nok til å gå løs etter mildvær og regn — det er den delen av ruta som endrer seg med været, ikke ryggen.",
+        body: "Nederste halvdelen er bratt skogsli, rundt 19 grader i snitt fra parkeringa til Fadnastølen, mens hele den øvre ryggen ligger på 10 til 13 grader. Bratteste sammenhengende parti på linja måler 28,2 grader. Den skogkledde lia over Byrkjenes er bratt nok til å gå løs etter mildvær og regn — det er den delen av ruta som endrer seg med været, ikke ryggen.",
       },
       {
         title: "Terrenget rundt",
@@ -6917,11 +6917,11 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,200 L23,194 L41,187 L57,180 L80,173 L96,163 L108,156 L139,146 L160,139 L168,137 L187,134 L206,123 L227,114 L251,109 L263,105 L283,100 L308,89 L334,79 L359,75 L379,72 L404,62 L428,57 L443,52 L468,47 L494,43 L518,35 L536,32 L565,29 L590,20 L600,18",
+      path: "M0,200 L19,195 L39,192 L56,188 L75,174 L92,168 L108,163 L124,157 L143,148 L163,147 L179,146 L197,141 L210,137 L233,130 L262,115 L286,109 L309,102 L337,89 L372,76 L399,72 L429,61 L454,54 L481,47 L516,40 L539,33 L571,28 L600,18",
       startLabel: "211 moh",
       endLabel: "1046 moh",
-      distanceLabel: "4,2 km",
-      caption: "838 høydemeter og 4,25 km fra Byrkjenes, med det bratteste — 16,5 grader mellom 300 og 400 moh — nede i skogslia.",
+      distanceLabel: "4,7 km",
+      caption: "841 høydemeter og 4,68 km fra Byrkjenes, på stien opp skogslia til Fadnastølen og den åpne ryggen over — bratteste tretti meter, 28,2 grader mellom 290 og 311 moh, ligger nede i lia.",
     },
   },
   ranten: {

@@ -2689,6 +2689,146 @@
     },
     "waypoints": [
      {
+      "name": "stien fra Byrkjenes til Fadnastølen",
+      "lat": 60.28679,
+      "lng": 6.06602
+     },
+     {
+      "name": "stien fra Byrkjenes til Fadnastølen",
+      "lat": 60.28599,
+      "lng": 6.06638
+     },
+     {
+      "name": "stien fra Byrkjenes til Fadnastølen",
+      "lat": 60.28534,
+      "lng": 6.0663
+     },
+     {
+      "name": "stien fra Byrkjenes til Fadnastølen",
+      "lat": 60.28449,
+      "lng": 6.06723
+     },
+     {
+      "name": "stien fra Byrkjenes til Fadnastølen",
+      "lat": 60.28359,
+      "lng": 6.06753
+     },
+     {
+      "name": "stien fra Byrkjenes til Fadnastølen",
+      "lat": 60.28327,
+      "lng": 6.06802
+     },
+     {
+      "name": "stien fra Byrkjenes til Fadnastølen",
+      "lat": 60.28335,
+      "lng": 6.0687
+     },
+     {
+      "name": "stien fra Byrkjenes til Fadnastølen",
+      "lat": 60.28348,
+      "lng": 6.06892
+     },
+     {
+      "name": "stien fra Byrkjenes til Fadnastølen",
+      "lat": 60.28412,
+      "lng": 6.06907
+     },
+     {
+      "name": "stien fra Byrkjenes til Fadnastølen",
+      "lat": 60.28428,
+      "lng": 6.06935
+     },
+     {
+      "name": "stien fra Byrkjenes til Fadnastølen",
+      "lat": 60.28454,
+      "lng": 6.0702
+     },
+     {
+      "name": "stien fra Byrkjenes til Fadnastølen",
+      "lat": 60.28433,
+      "lng": 6.07053
+     },
+     {
+      "name": "stien fra Byrkjenes til Fadnastølen",
+      "lat": 60.2844,
+      "lng": 6.07113
+     },
+     {
+      "name": "stien fra Byrkjenes til Fadnastølen",
+      "lat": 60.28466,
+      "lng": 6.07115
+     },
+     {
+      "name": "stien fra Byrkjenes til Fadnastølen",
+      "lat": 60.28554,
+      "lng": 6.07192
+     },
+     {
+      "name": "stien fra Byrkjenes til Fadnastølen",
+      "lat": 60.28616,
+      "lng": 6.07181
+     },
+     {
+      "name": "stien fra Byrkjenes til Fadnastølen",
+      "lat": 60.28692,
+      "lng": 6.07303
+     },
+     {
+      "name": "stien fra Byrkjenes til Fadnastølen",
+      "lat": 60.28758,
+      "lng": 6.07351
+     },
+     {
+      "name": "stien fra Byrkjenes til Fadnastølen",
+      "lat": 60.28824,
+      "lng": 6.074
+     },
+     {
+      "name": "stien fra Byrkjenes til Fadnastølen",
+      "lat": 60.28889,
+      "lng": 6.07476
+     },
+     {
+      "name": "stien fra Byrkjenes til Fadnastølen",
+      "lat": 60.28924,
+      "lng": 6.07454
+     },
+     {
+      "name": "stien fra Byrkjenes til Fadnastølen",
+      "lat": 60.28955,
+      "lng": 6.07465
+     },
+     {
+      "name": "stien fra Byrkjenes til Fadnastølen",
+      "lat": 60.28971,
+      "lng": 6.07491
+     },
+     {
+      "name": "stien fra Byrkjenes til Fadnastølen",
+      "lat": 60.28984,
+      "lng": 6.07575
+     },
+     {
+      "name": "stien fra Byrkjenes til Fadnastølen",
+      "lat": 60.29023,
+      "lng": 6.07609
+     },
+     {
+      "name": "stien fra Byrkjenes til Fadnastølen",
+      "lat": 60.29047,
+      "lng": 6.07664
+     },
+     {
+      "name": "stien fra Byrkjenes til Fadnastølen",
+      "lat": 60.29041,
+      "lng": 6.07702
+     },
+     {
+      "name": "stien fra Byrkjenes til Fadnastølen",
+      "lat": 60.29063,
+      "lng": 6.07703
+     },
+     {
       "name": "utenom bygningene",
       "lat": 60.29063,
       "lng": 6.07703,
@@ -2735,7 +2875,8 @@
      }
     ],
     "source": "researched, verified (ok), no local audit",
-    "notes": "Hald deg på sørvestryggen heilt opp. Nordsida og nordvestsida av toppen fell 55° og vestsida 48° innanfor 800 m frå varden, og i flatt lys er kanten ikkje synleg. Den skogkledde lia over Byrkjenes er bratt nok til å gå laus etter mildvêr og regn, og Tordalsvegen er privat bomveg – brøyting til parkeringa er ikkje garantert."
+    "notes": "Hald deg på sørvestryggen heilt opp. Nordsida og nordvestsida av toppen fell 55° og vestsida 48° innanfor 800 m frå varden, og i flatt lys er kanten ikkje synleg. Den skogkledde lia over Byrkjenes er bratt nok til å gå laus etter mildvêr og regn, og Tordalsvegen er privat bomveg – brøyting til parkeringa er ikkje garantert.",
+    "corridorNote": "Lagt på stien for hånd: fra parkeringa ved Byrkjenes langs stien OSM way/288358041 og /1118672851, sørover og opp den bratte skoglia til Fadnastølen, med én kryssing av Fannastølselva der stien krysser. Linja gikk før nordover over elva inn i Røynliane og krysset Fannastølselva tre ganger."
    }
   ]
  },
@@ -5330,6 +5471,191 @@
     },
     "waypoints": [
      {
+      "name": "traktorvegen over Raundalselvi og forbi Horndalsbruni",
+      "lat": 60.67693,
+      "lng": 6.68829
+     },
+     {
+      "name": "traktorvegen over Raundalselvi og forbi Horndalsbruni",
+      "lat": 60.67648,
+      "lng": 6.68631
+     },
+     {
+      "name": "traktorvegen over Raundalselvi og forbi Horndalsbruni",
+      "lat": 60.67669,
+      "lng": 6.68486
+     },
+     {
+      "name": "traktorvegen over Raundalselvi og forbi Horndalsbruni",
+      "lat": 60.67654,
+      "lng": 6.68284
+     },
+     {
+      "name": "traktorvegen over Raundalselvi og forbi Horndalsbruni",
+      "lat": 60.67606,
+      "lng": 6.68182
+     },
+     {
+      "name": "traktorvegen over Raundalselvi og forbi Horndalsbruni",
+      "lat": 60.67557,
+      "lng": 6.6808
+     },
+     {
+      "name": "traktorvegen over Raundalselvi og forbi Horndalsbruni",
+      "lat": 60.67479,
+      "lng": 6.68067
+     },
+     {
+      "name": "traktorvegen over Raundalselvi og forbi Horndalsbruni",
+      "lat": 60.67425,
+      "lng": 6.68148
+     },
+     {
+      "name": "traktorvegen over Raundalselvi og forbi Horndalsbruni",
+      "lat": 60.67371,
+      "lng": 6.68229
+     },
+     {
+      "name": "traktorvegen over Raundalselvi og forbi Horndalsbruni",
+      "lat": 60.67311,
+      "lng": 6.68259
+     },
+     {
+      "name": "traktorvegen over Raundalselvi og forbi Horndalsbruni",
+      "lat": 60.67298,
+      "lng": 6.68309
+     },
+     {
+      "name": "traktorvegen over Raundalselvi og forbi Horndalsbruni",
+      "lat": 60.67293,
+      "lng": 6.68445
+     },
+     {
+      "name": "traktorvegen over Raundalselvi og forbi Horndalsbruni",
+      "lat": 60.6728,
+      "lng": 6.68474
+     },
+     {
+      "name": "traktorvegen over Raundalselvi og forbi Horndalsbruni",
+      "lat": 60.67244,
+      "lng": 6.68503
+     },
+     {
+      "name": "traktorvegen over Raundalselvi og forbi Horndalsbruni",
+      "lat": 60.67187,
+      "lng": 6.68517
+     },
+     {
+      "name": "traktorvegen over Raundalselvi og forbi Horndalsbruni",
+      "lat": 60.6713,
+      "lng": 6.68531
+     },
+     {
+      "name": "traktorvegen over Raundalselvi og forbi Horndalsbruni",
+      "lat": 60.67082,
+      "lng": 6.68604
+     },
+     {
+      "name": "traktorvegen over Raundalselvi og forbi Horndalsbruni",
+      "lat": 60.67048,
+      "lng": 6.68721
+     },
+     {
+      "name": "traktorvegen over Raundalselvi og forbi Horndalsbruni",
+      "lat": 60.67033,
+      "lng": 6.68885
+     },
+     {
+      "name": "traktorvegen over Raundalselvi og forbi Horndalsbruni",
+      "lat": 60.67016,
+      "lng": 6.68936
+     },
+     {
+      "name": "traktorvegen over Raundalselvi og forbi Horndalsbruni",
+      "lat": 60.66985,
+      "lng": 6.6894
+     },
+     {
+      "name": "traktorvegen over Raundalselvi og forbi Horndalsbruni",
+      "lat": 60.66953,
+      "lng": 6.689
+     },
+     {
+      "name": "traktorvegen over Raundalselvi og forbi Horndalsbruni",
+      "lat": 60.66987,
+      "lng": 6.6872
+     },
+     {
+      "name": "traktorvegen over Raundalselvi og forbi Horndalsbruni",
+      "lat": 60.66978,
+      "lng": 6.68699
+     },
+     {
+      "name": "traktorvegen over Raundalselvi og forbi Horndalsbruni",
+      "lat": 60.66915,
+      "lng": 6.68842
+     },
+     {
+      "name": "traktorvegen over Raundalselvi og forbi Horndalsbruni",
+      "lat": 60.66874,
+      "lng": 6.68872
+     },
+     {
+      "name": "traktorvegen over Raundalselvi og forbi Horndalsbruni",
+      "lat": 60.66775,
+      "lng": 6.6882
+     },
+     {
+      "name": "traktorvegen over Raundalselvi og forbi Horndalsbruni",
+      "lat": 60.66668,
+      "lng": 6.68817
+     },
+     {
+      "name": "traktorvegen over Raundalselvi og forbi Horndalsbruni",
+      "lat": 60.66613,
+      "lng": 6.68779
+     },
+     {
+      "name": "traktorvegen over Raundalselvi og forbi Horndalsbruni",
+      "lat": 60.66558,
+      "lng": 6.68741
+     },
+     {
+      "name": "traktorvegen over Raundalselvi og forbi Horndalsbruni",
+      "lat": 60.66489,
+      "lng": 6.68749
+     },
+     {
+      "name": "traktorvegen over Raundalselvi og forbi Horndalsbruni",
+      "lat": 60.66403,
+      "lng": 6.68855
+     },
+     {
+      "name": "traktorvegen over Raundalselvi og forbi Horndalsbruni",
+      "lat": 60.66318,
+      "lng": 6.68961
+     },
+     {
+      "name": "traktorvegen over Raundalselvi og forbi Horndalsbruni",
+      "lat": 60.66297,
+      "lng": 6.69123
+     },
+     {
+      "name": "traktorvegen over Raundalselvi og forbi Horndalsbruni",
+      "lat": 60.66276,
+      "lng": 6.69286
+     },
+     {
+      "name": "traktorvegen over Raundalselvi og forbi Horndalsbruni",
+      "lat": 60.66257,
+      "lng": 6.6938
+     },
+     {
+      "name": "traktorvegen over Raundalselvi og forbi Horndalsbruni",
+      "lat": 60.66243,
+      "lng": 6.69373
+     },
+     {
       "name": "stien ved 2.77 km",
       "lat": 60.65429,
       "lng": 6.7007
@@ -5374,7 +5700,7 @@
     ],
     "source": "researched, verified (corrected), no local audit",
     "notes": "Skredbaner i den øvre lia mot Bjørnsetstølen — hald deg i skogen der nede. Siste kneika opp mot toppen er brattaste partiet på ruta.",
-    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (229 m from 2.77 km)."
+    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (229 m from 2.77 km). Lagt på traktorvegen for hånd: fra parkeringa rett ned til Horndalsvegen ved brua over Raundalselvi (OSM way/608601584, brua way/429374579, /429363586 og /511553955), så traktorvegen way/441797694 opp over Fureneset og forbi Horndalsbruni til Horndøla, som kilden beskriver («Frå brua over Raundalselvi ved Skiple følgjer ein traktorvegen forbi Horndalsbruni og inn i Horndalsbotnen»). Linja gikk før i elveløpet til Raundalselvi gjennom juvet under Horndalsberget, 0,5–1,4 km."
    },
    {
     "id": "skaftedalen",

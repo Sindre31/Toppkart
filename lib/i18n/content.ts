@@ -107,7 +107,7 @@ export const TOUR_TEASER_EN: Record<string, string> = {
   lonahorgi:
     "1300 m of ascent from Høyland via Bergsstølen and Breiming, the last 107 up the north ridge from point 1305.",
   vesoldo:
-    "838 m of ascent from Byrkjenes, forest up to Fadnastølen and an open south-west shoulder above; the north and west sides fall 48–55 degrees.",
+    "841 m of ascent from Byrkjenes, forest up to Fadnastølen and an open south-west shoulder above; the north and west sides fall 48–55 degrees.",
   hamperokken:
     "1400 m of ascent from Fv91, but the skis stay on Middagsaksla at 1076 m – the last 1.4 km is an exposed ridge on foot.",
   breitinden:
@@ -155,7 +155,7 @@ export const TOUR_TEASER_EN: Record<string, string> = {
   storanosi:
     "740 m of ascent from Ljosno through open birch forest and out onto the plateau above Brandsetdalen.",
   horndalsnuten:
-    "1120 m of climbing from Skiple through Horndalsbotnen, with the steep pitch off the shoulder at the end.",
+    "1170 m of climbing from Skiple through Horndalsbotnen, with the steep pitch off the shoulder at the end.",
   gygrastolen:
     "1270 m of ascent from the fjord at Ænes up the ridge above Gygrastølvatnet, facing the Folgefonna icecap.",
   juklavasstinden:
@@ -6610,22 +6610,22 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
   },
   horndalsnuten: {
     intro:
-      "1124 metres of climbing over 6.02 km from Skiple in Raundalen, with a kilometre and a half of flat approach before the ground starts to rise. The steepest sustained section measures 31.4 degrees between 1093 and 1116 m — north-facing, and the final pitch to the summit is the steepest part of the route.",
+      "1170 metres of climbing over 7.0 km from Skiple in Raundalen, with a long, gentle approach on the tractor road over Raundalselvi and past Horndalsbruni before the ground starts to rise. The steepest sustained section measures 31.4 degrees between 1093 and 1116 m — north-facing, and the final pitch to the summit is the steepest part of the route.",
     ascent: [
-      "Start at the mapped car park by the bridge over Raundalselvi at Skiple, 398 m, about twenty kilometres east of Voss. The first 1490 metres of ground are near-flat — the band from 300 to 400 m measures 0.8 degrees — and the route crosses the river early.",
+      "Start at the mapped car park by Raundalsvegen at Skiple, 398 m, about twenty kilometres east of Voss. Go straight down through the forest to Horndalsvegen and over the bridge over Raundalselvi, where the source starts the tour, and follow the tractor road on south along the west side. South of the bridge the river runs in a gorge below Horndalsberget; the route stays on the road and does not go down into it. The tractor road climbs gently over Fureneset and gives a little back towards Horndøla: the band from 300 to 400 m measures 0.1 degrees over 1104 metres of ground, and 400 to 500 m 3.3 degrees over 1818 metres.",
       "Follow the tractor road past Horndalsbruni and into Horndalsbotnen at 757 m. The forest holds to 781 m, and in the upper slope towards Bjørnsetstølen there are avalanche paths; keep to the forest down there.",
       "From the basin the route climbs towards the shoulder. The band from 900 to 1000 m measures 16.9 degrees and 1000 to 1100 m runs at 21.4, the steepest hundred-metre band. The steepest sustained section of the whole tour is here, 31.4 degrees over thirty metres between 1093 and 1116 m.",
       "Above the shoulder at 1153 m it eases for a while, 13.3 degrees from 1100 to 1200 m, before the last pitch: 20.6 degrees from 1200 to 1300 m, and then steadier ground to the cairn at 1462.",
     ],
     descent: [
-      "Back the same way, north through Horndalsbotnen and out along the flat approach to Skiple. The descent faces north, so the mountain holds cold snow for a long time — which is also why there is rarely spring corn to be had here.",
-      "The usual mistake: putting the descent into the upper slope towards Bjørnsetstølen because it looks open. That ground is avalanche paths. The second is underestimating the approach: 1490 metres of near-flat ground is hard work on the way back in soft snow, and the tour is longer than its vertical suggests.",
-      "The source lists two starts, one on each side of the mountain: “The ascent from the north starts at Skiple in Raundalen, a little under twenty kilometres east of Voss. The ascent from the south starts in Skaftedalen.” And it says why: “There are two good starting points for this tour, one on the shady north side, and one facing the sun to the south.” The app's route is the northern one; the southern now sits beside it. From the end of Skaftedalsvegen at 486 m the line goes in gentle terrain north-east up the valley past 662 and 766 to the summer farm Skytjeset at 882 — the source's “about 890 m” — and from there on the ridge formation over 1063, the flank at 1249 and 1368 to the top. 1022 metres of climbing over 6.13 km against 1124 over 6.02 km from Skiple: nearly the same tour, the opposite sun. The forest lets go at 758 m after 2.91 km, against 781 on the north route. The steepest hundred-metre band is 19.5 degrees from 900 to 1000 m, and the steepest 30 m window 33.2 between 1211 and 1231, against 31.4 on the north route. The source offers a choice up high — either the steep, marked gully or the ridge formation and the flank; the line here is the ridge, which is the one the source describes all the way to the top.",
+      "Back the same way, north through Horndalsbotnen and out along the tractor road to the bridge and Skiple. The descent faces north, so the mountain holds cold snow for a long time — which is also why there is rarely spring corn to be had here.",
+      "The usual mistake: putting the descent into the upper slope towards Bjørnsetstølen because it looks open. That ground is avalanche paths. The second is underestimating the approach: the tractor road from Horndøla to the bridge is over two kilometres of gentle ground, with a short climb over Fureneset on the way out, and the tour is longer than its vertical suggests. And do not take the shortcut along the riverbed below Horndalsberget — Raundalselvi runs in a gorge there.",
+      "The source lists two starts, one on each side of the mountain: “The ascent from the north starts at Skiple in Raundalen, a little under twenty kilometres east of Voss. The ascent from the south starts in Skaftedalen.” And it says why: “There are two good starting points for this tour, one on the shady north side, and one facing the sun to the south.” The app's route is the northern one; the southern now sits beside it. From the end of Skaftedalsvegen at 486 m the line goes in gentle terrain north-east up the valley past 662 and 766 to the summer farm Skytjeset at 882 — the source's “about 890 m” — and from there on the ridge formation over 1063, the flank at 1249 and 1368 to the top. 1022 metres of climbing over 6.13 km against 1170 over 7.0 km from Skiple: shorter and with less climbing, and the opposite sun. The forest lets go at 758 m after 2.91 km, against 781 on the north route. The steepest hundred-metre band is 19.5 degrees from 900 to 1000 m, and the steepest 30 m window 33.2 between 1211 and 1231, against 31.4 on the north route. The source offers a choice up high — either the steep, marked gully or the ridge formation and the flank; the line here is the ridge, which is the one the source describes all the way to the top.",
     ],
     avalanche: [
       {
         title: "The route",
-        body: "A flat approach, an even middle and a steep pitch at the end. The steepest hundred-metre band, 1000 to 1100 m, measures 21.4 degrees, and the steepest sustained section 31.4 degrees between 1093 and 1116 m. The whole face is north-facing.",
+        body: "A gentle approach on the tractor road, an even middle and a steep pitch at the end. The steepest hundred-metre band, 1000 to 1100 m, measures 21.4 degrees, and the steepest sustained section 31.4 degrees between 1093 and 1116 m. The whole face is north-facing.",
       },
       {
         title: "The terrain around it",
@@ -6639,8 +6639,8 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
     elevationProfile: {
       startLabel: "398 m",
       endLabel: "1462 m",
-      distanceLabel: "6.0 km",
-      caption: "1124 metres of climbing and 6.02 km from Skiple through Horndalsbotnen, with the treeline at 781 m and the shoulder at 1153 m before the summit pitch.",
+      distanceLabel: "7.0 km",
+      caption: "1170 metres of climbing and 7.0 km from Skiple over Raundalselvi and through Horndalsbotnen, with the treeline at 781 m and the shoulder at 1153 m before the summit pitch.",
     },
   },
   folarskardnuten: {
@@ -7004,12 +7004,12 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
   },
   vesoldo: {
     intro:
-      "838 metres of climbing from Byrkjenes, and a tour that gets gentler the higher you go: steep forested slope at the bottom, open even ridge above. The summit dome is easy walking — but it sits a couple of hundred metres above the cliffs to the west and north-west, and half a kilometre above those to the north, and in flat light the edge is invisible.",
+      "841 metres of climbing from Byrkjenes, and a tour that gets gentler the higher you go: steep forested slope at the bottom, open even ridge above. The summit dome is easy walking — but it sits a couple of hundred metres above the cliffs to the west and north-west, and half a kilometre above those to the north, and in flat light the edge is invisible.",
     ascent: [
-      "From the car park at Byrkjenes, 211 m, at the far end of Tordalsvegen north of Strandebarm, climb the steep forested slope towards Fadnastølen, 498 m. This is the steepest part of the tour: the steepest hundred-metre band lies between 300 and 400 m and averages 16.5 degrees. Tordalsvegen is a private toll road, and ploughing all the way to the car park is not guaranteed — check before you drive far.",
-      "Above the summer farm the ground opens up, with patches of forest to around 577 m. The route holds north-east onto the broad south-west ridge at 629 m.",
+      "From the car park at Byrkjenes, 211 m, at the far end of Tordalsvegen north of Strandebarm, climb the steep forested slope towards Fadnastølen, 498 m, on the path: it first heads south from the car park and takes the slope in long turns before swinging north to the farm, crossing Fannastølselva once, just below it. Keep to the path — the river runs in several channels below Røynliane, and a line straight up the north side crosses it three times. The steepest thirty metres of the tour are here, 28.2 degrees between 290 and 311 m, while the hundred-metre band from 300 to 400 m averages 13.4 degrees. Tordalsvegen is a private toll road, and ploughing all the way to the car park is not guaranteed — check before you drive far.",
+      "Above the summer farm the ground opens up, with patches of forest to around 580 m. The route holds north-east onto the broad south-west ridge at 629 m, and the climb from the farm up to it is the steepest hundred-metre band of the tour: 15.9 degrees from 500 to 600 m.",
       "From there you follow the ridge continuously north — 791 m, then the shoulder at 977 m. The whole upper part runs at 10 to 13 degrees: gentler than the south face right beside it, which averages 20.8 degrees with a 33.7-degree belt 580 to 640 metres out from the summit. The south-west ridge measures 9.5 degrees on average, and that is why the line runs where it does.",
-      "The last hundred metres curve north-east up the gentle summit dome to the cairn at 1046 m. The steepest sustained section on the whole line measures 28.9 degrees, and it is down in the forested slope.",
+      "The last hundred metres curve north-east up the gentle summit dome to the cairn at 1046 m. The steepest sustained section on the whole line measures 28.2 degrees, and it is down in the forested slope.",
     ],
     descent: [
       "Down the same ridge: south over the shoulder at 977 m and 791 m, down to 629 and on to Fadnastølen. From the farm down it is forested slope — steep enough to be good skiing, and steep enough to release after mild weather and rain.",
@@ -7019,7 +7019,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
     avalanche: [
       {
         title: "The route",
-        body: "The lower half is a steep forested slope, around 19 degrees on average from the car park to Fadnastølen, while the whole upper ridge runs at 10 to 13 degrees. The steepest sustained section on the line measures 28.9 degrees. The forested slope above Byrkjenes is steep enough to release after mild weather and rain — that is the part of the route that changes with the weather, not the ridge.",
+        body: "The lower half is a steep forested slope, around 19 degrees on average from the car park to Fadnastølen, while the whole upper ridge runs at 10 to 13 degrees. The steepest sustained section on the line measures 28.2 degrees. The forested slope above Byrkjenes is steep enough to release after mild weather and rain — that is the part of the route that changes with the weather, not the ridge.",
       },
       {
         title: "The terrain around it",
@@ -7033,8 +7033,8 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
     elevationProfile: {
       startLabel: "211 m",
       endLabel: "1046 m",
-      distanceLabel: "4.2 km",
-      caption: "838 metres of climbing and 4.25 km from Byrkjenes, with the steepest ground — 16.5 degrees between 300 and 400 m — down in the forest.",
+      distanceLabel: "4.7 km",
+      caption: "841 metres of climbing and 4.68 km from Byrkjenes, on the path up the forested slope to Fadnastølen and the open ridge above — the steepest thirty metres, 28.2 degrees between 290 and 311 m, are down on the slope.",
     },
   },
   ranten: {
