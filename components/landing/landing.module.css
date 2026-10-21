@@ -134,8 +134,8 @@
 
 /* Sida i full bredde og, på PC, full høyde. `.shell` er en flex-kolonne, og
    `margin: auto` krymper `.page` til innholdet; `width` holder den ute. Som
-   flex-kolonne selv lar den kortene (`MyTours`) ta høyden som er igjen, så
-   bunnteksten havner nederst i vinduet. */
+   flex-kolonne selv lar den kortseksjonen (`MyTours`) ta høyden som er igjen,
+   så bunnteksten havner nederst i vinduet. */
 .fullPage { width: 100%; }
 
 @media (min-width: 761px) {
