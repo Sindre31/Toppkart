@@ -2402,7 +2402,7 @@
  "besshoe": {
   "verticalM": 1330,
   "gainM": 1329,
-  "distanceM": 10118,
+  "distanceM": 10109,
   "startM": 961,
   "summitM": 2257,
   "duration": "7–9 t",
@@ -2413,7 +2413,7 @@
   "grade": 3,
   "aspect": "Ø",
   "distanceKm": 10.1,
-  "cumdistM": 10118
+  "cumdistM": 10109
  },
  "fanaraken": {
   "verticalM": 780,
@@ -2722,7 +2722,7 @@
  "finnbufjellet": {
   "verticalM": 620,
   "gainM": 619,
-  "distanceM": 4366,
+  "distanceM": 4332,
   "startM": 772,
   "summitM": 1357,
   "duration": "3–5 t",
@@ -2732,8 +2732,8 @@
   "maxStepAngle": 23.3,
   "grade": 1,
   "aspect": "NØ",
-  "distanceKm": 4.4,
-  "cumdistM": 4367
+  "distanceKm": 4.3,
+  "cumdistM": 4332
  },
  "storehorn": {
   "verticalM": 470,

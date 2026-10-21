@@ -8013,6 +8013,30 @@ The other 59 stay:
 | On a mapped way | 2 |
 | Put back with Slogen | 1 |
 
+### Batch 7, tours 151–175
+
+The batch had 55 kinks. Five were smoothed: Besshøe at 6.8 km, Molden's
+Marifjora line at 3.3 km, Finnbufjellet at 3.2 km and Lønahorgi's Horgaletten
+line at 0.3 and 0.4 km. Two plain waypoints moved onto the new line: «ryggen ved
+1220» on Finnbufjellet (36 m) and «opp frå heisen» on Lønahorgi (17 m).
+Fanaråken's kink at 2.2 km was tried and put back, because the curve added 7 m
+of climbing.
+
+The guides follow the new lines: Finnbufjellet is 4.33 km, the Horgaletten line
+507 m of climbing and 43 m of loss over 3.65 km, and the summit of Besshøe is
+9.57 km from Bessheim.
+
+The other 50 stay:
+
+| Reason | Kinks |
+| --- | --- |
+| Smooth curve 6° or more steeper than the ground | 19 |
+| Next to a named waypoint | 14 |
+| No dry, clear curve | 12 |
+| Still over 30° | 3 |
+| On a mapped way | 1 |
+| Put back for climbing | 1 |
+
 ## Network
 
 Everything is public and unauthenticated:

@@ -5576,11 +5576,11 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,200 L8,199 L35,188 L61,175 L83,166 L110,154 L133,146 L155,144 L177,142 L198,142 L225,141 L246,141 L270,141 L291,140 L323,140 L347,139 L369,139 L393,140 L416,129 L436,118 L457,104 L476,91 L494,79 L513,68 L541,48 L566,36 L585,23 L600,18",
+      path: "M0,200 L8,199 L35,188 L61,175 L83,166 L110,154 L133,146 L155,144 L178,142 L198,142 L225,141 L246,141 L270,141 L292,140 L323,140 L348,139 L369,139 L393,140 L404,137 L417,129 L438,117 L457,104 L477,91 L495,79 L515,66 L542,47 L568,35 L588,22 L600,18",
       startLabel: "961 moh",
       endLabel: "2257 moh",
       distanceLabel: "10,1 km",
-      caption: "1305 høydemeter og 9,58 km fra Bessheim til toppen, der tre og en halv kilometer av dem er flatt vatn på 1372 moh.",
+      caption: "1305 høydemeter og 9,57 km fra Bessheim til toppen, der tre og en halv kilometer av dem er flatt vatn på 1372 moh.",
     },
   },
   fanaraken: {
@@ -6281,7 +6281,7 @@ export const GUIDES: Record<string, TourGuide> = {
   finnbufjellet: {
     slug: "finnbufjellet",
     intro:
-      "620 høydemeter og 4,37 km fra leirplassen på toppen av Halsabakkane — fjellet Fri Flyt-indeksen kaller stedet der skisesongen på Voss blir åpnet og avsluttet. Hele linja går i åpent terreng over skoggrensa, og tallene er snille: bratteste hundremetersbeltet måler 13,2 grader mellom 900 og 1000 moh, og det bratteste sammenhengende partiet 23,3 grader. Navnene trenger en setning: Fri Flyt kaller fjellet Finnbufjellet og oppgir 1358 moh, men toppen selv heter Finnbunuten i registeret, og terrengmodellen leser 1357 — samme mønsteret som Kirketaket, der guidebok og register bærer hvert sitt navn.",
+      "620 høydemeter og 4,33 km fra leirplassen på toppen av Halsabakkane — fjellet Fri Flyt-indeksen kaller stedet der skisesongen på Voss blir åpnet og avsluttet. Hele linja går i åpent terreng over skoggrensa, og tallene er snille: bratteste hundremetersbeltet måler 13,2 grader mellom 900 og 1000 moh, og det bratteste sammenhengende partiet 23,3 grader. Navnene trenger en setning: Fri Flyt kaller fjellet Finnbufjellet og oppgir 1358 moh, men toppen selv heter Finnbunuten i registeret, og terrengmodellen leser 1357 — samme mønsteret som Kirketaket, der guidebok og register bærer hvert sitt navn.",
     ascent: [
       "Starten er flata der rv13 topper hårnålssvingene i Halsabakkane og møter Sendo-elva — leirplassen ved Sendo, 766–779 moh på åpen mark. Kildene ser ut til å motsi hverandre her, og terrenget avgjør: Fri Flyts faktaboks sier «Høydemeter: 770», Utemagasinet-versjonen av samme beskrivelsen sier 588 høydemeter fra samme parkeringa — og veien passerer 770 moh nøyaktig der bakkene flater ut. 770 er starthøyden, ikke stigningen; den routede linja samler 620 høydemeter.",
       "Kryss brua over Sendo-elva og hold sørover. Elva du krysser renner østover langs flata og stuper så gjennom fossen ned i Kvassdalen, dalen rv13 kommer opp fra — dalbunnen der nede leser 574 moh. Vest for deg skjærer Finnbu-bekkene juv ned mot elva, med Finnbuene-stølen på vestbredden. Ryggen mellom juvet og Kvassdalen er ruta: det er den Fri Flyt peker på som det sikreste alternativet, og den er den eneste ryggen øst for juvet.",
@@ -6313,11 +6313,11 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,198 L19,198 L44,192 L62,185 L92,172 L105,162 L124,147 L145,135 L164,128 L186,126 L204,122 L223,111 L247,101 L266,98 L289,100 L308,100 L328,96 L347,89 L359,80 L375,68 L396,65 L415,64 L439,62 L458,61 L483,59 L507,52 L526,38 L545,36 L576,30 L600,18",
+      path: "M0,198 L19,198 L44,192 L63,185 L92,172 L106,162 L125,147 L147,135 L165,128 L187,126 L206,122 L225,111 L249,101 L268,98 L291,100 L310,100 L331,96 L349,89 L362,80 L378,68 L399,65 L418,64 L435,64 L444,62 L452,60 L460,61 L482,59 L507,52 L525,38 L544,36 L575,30 L600,18",
       startLabel: "772 moh",
       endLabel: "1357 moh",
-      distanceLabel: "4,4 km",
-      caption: "620 høydemeter og 4,37 km fra leirplassen ved Sendo — åpen rygg hele veien, med 23,3 grader som bratteste sammenhengende parti.",
+      distanceLabel: "4,3 km",
+      caption: "620 høydemeter og 4,33 km fra leirplassen ved Sendo — åpen rygg hele veien, med 23,3 grader som bratteste sammenhengende parti.",
     },
   },
   storehorn: {
@@ -6405,7 +6405,7 @@ export const GUIDES: Record<string, TourGuide> = {
       "Ned samme linja: nordryggen til punkt 1305, østover over Svartahorgi og ned til Breiming og Bergsstølen, og til slutt skogsbilveien ned til Høyland. Fallretninga på nedkjøringa er nordøst. Nederste delen er tynn: snødekket ved Høyland og Bergsstølen er kortvarig, og utpå våren er det verdt å gå av tidlig heller enn å skrape de siste hundre høydemeterne.",
       "Vanligste feil: å tro at Bodegaen er nedkjøringa på denne turen. Den kjente frikjøringssida ligger sørøst på fjellet og mater tilbake i heissystemet i Bavallen — den ender ikke ved bilen din på Høyland. Den dokumenterte varianten fra denne ruta er å ta seg ned i Årdalen fra punkt 1307 ved stabile forhold, og Årdalen er østsida, den bratte delen av fjellet.",
       "Den andre feilen er å bruke det trange dalføret ved Breiming som nedkjøringslinje uten å tenke på hva som ligger over. Store svaskred løsner sent på våren her og går langt.",
-      "Appens rute er den kilden kaller den andre. Faktaboksen fører to startsteder — «Voss Fjellheiser, øverst i Horgaletten, eller den nedlagte gården Høyland sør for Tvinne» — med hver sin tid, «2 timer fra Horgaletten, 4 timer fra Høyland», og OPP-teksten er tydelig på hva folk faktisk gjør: «De aller fleste besøkende velger å benytte seg av heissystemet. Øverst i Horgaletten-heisen, ved rundt 920 meters høyde, er det bare å feste feller under skiene. Deretter labbe i vei langs de tydelige stakene som leder langs Vådalseggi til topps.» Den ruta ligger nå på kortet. Startstedet er toppstasjonen på Horgaletten-trekket, 948 moh — ikke en parkeringsplass, men et startsted du kommer til med heis, slik Reinheim, Bjørnhollia og Trollheimshytta er startsteder du kommer til på ski. Derfra 506 høydemeter på 3,66 km: opp fra heisen på 979, over Vådalseggi på 1051, inn på den merkede ruta på 1088 og videre langs stakene på 1164, 1284, 1344 og 1378 til varden. Mot normalrutas 1301 høydemeter på 6,46 km er det under halve turen, og det bratteste 30-metersvinduet er 24,4 grader mellom 1025 og 1041 mot 28,9. Ruta gir tilbake 42 høydemeter der ryggen dukker.",
+      "Appens rute er den kilden kaller den andre. Faktaboksen fører to startsteder — «Voss Fjellheiser, øverst i Horgaletten, eller den nedlagte gården Høyland sør for Tvinne» — med hver sin tid, «2 timer fra Horgaletten, 4 timer fra Høyland», og OPP-teksten er tydelig på hva folk faktisk gjør: «De aller fleste besøkende velger å benytte seg av heissystemet. Øverst i Horgaletten-heisen, ved rundt 920 meters høyde, er det bare å feste feller under skiene. Deretter labbe i vei langs de tydelige stakene som leder langs Vådalseggi til topps.» Den ruta ligger nå på kortet. Startstedet er toppstasjonen på Horgaletten-trekket, 948 moh — ikke en parkeringsplass, men et startsted du kommer til med heis, slik Reinheim, Bjørnhollia og Trollheimshytta er startsteder du kommer til på ski. Derfra 507 høydemeter på 3,65 km: opp fra heisen på 979, over Vådalseggi på 1051, inn på den merkede ruta på 1088 og videre langs stakene på 1164, 1284, 1344 og 1378 til varden. Mot normalrutas 1301 høydemeter på 6,46 km er det under halve turen, og det bratteste 30-metersvinduet er 24,4 grader mellom 1025 og 1041 mot 28,9. Ruta gir tilbake 43 høydemeter der ryggen dukker.",
     ],
     avalanche: [
       {
