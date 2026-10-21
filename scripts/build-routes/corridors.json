@@ -2093,10 +2093,85 @@
     },
     "waypoints": [
      {
+      "name": "traktorvegen mot Nipeelva",
+      "lat": 60.0228,
+      "lng": 6.06171
+     },
+     {
+      "name": "traktorvegen mot Nipeelva",
+      "lat": 60.02311,
+      "lng": 6.06261
+     },
+     {
+      "name": "traktorvegen mot Nipeelva",
+      "lat": 60.02296,
+      "lng": 6.06356
+     },
+     {
+      "name": "traktorvegen mot Nipeelva",
+      "lat": 60.02301,
+      "lng": 6.0654
+     },
+     {
+      "name": "traktorvegen mot Nipeelva",
+      "lat": 60.02263,
+      "lng": 6.06615
+     },
+     {
+      "name": "traktorvegen mot Nipeelva",
+      "lat": 60.02309,
+      "lng": 6.06746
+     },
+     {
+      "name": "traktorvegen mot Nipeelva",
+      "lat": 60.02354,
+      "lng": 6.06878
+     },
+     {
+      "name": "traktorvegen mot Nipeelva",
+      "lat": 60.0235,
+      "lng": 6.0694
+     },
+     {
+      "name": "traktorvegen mot Nipeelva",
+      "lat": 60.02374,
+      "lng": 6.07038
+     },
+     {
+      "name": "traktorvegen mot Nipeelva",
+      "lat": 60.02398,
+      "lng": 6.07136
+     },
+     {
+      "name": "traktorvegen mot Nipeelva",
+      "lat": 60.02429,
+      "lng": 6.07195
+     },
+     {
       "name": "traktorvegen",
       "lat": 60.025,
       "lng": 6.073,
       "elevation_m": 430.33
+     },
+     {
+      "name": "traktorvegen mot Nipeelva",
+      "lat": 60.02466,
+      "lng": 6.07374
+     },
+     {
+      "name": "traktorvegen mot Nipeelva",
+      "lat": 60.02498,
+      "lng": 6.07425
+     },
+     {
+      "name": "traktorvegen mot Nipeelva",
+      "lat": 60.02502,
+      "lng": 6.07461
+     },
+     {
+      "name": "traktorvegen mot Nipeelva",
+      "lat": 60.02495,
+      "lng": 6.07451
      },
      {
       "name": "stien ved 1.19 km",
@@ -2158,7 +2233,7 @@
     "note": "Fri Flyts eige startsted for Melderskin er Myrdalsvannet, ikkje Kletta: «Fra Myrdalsvannet, følg grusveien litt tilbake til du kommer til en traktorvei. Følg veien til Nipelva dukker opp. Følg elva oppover til det blir naturlig å svinge av mot Omnen (1158). Da ligger Omnetjørnene til venstre for deg. Følg den tydelige ryggen opp til toppen.» 1054 høydemeter, 5 timar, NØ, 45 grader på det brattaste, «Ta med stegjern og øks». Omnen er registerført (Topp, Kvinnherad, 60,01449/6,08235) og DTM1 les 1155,5 mot boka sine 1158. Omnetjørnene ligg på 1066 moh aust for ryggen, altså til venstre når ein går sørover — linja kryssar dei ikkje. Startsteda er 2,0 km og 213 høgdemeter frå kvarandre; Myrdalsvatnet er alt eit kartfesta startsted i appen, det Juklavasstinden går frå, og dei to rutene deler den same nedre tilkomsten langs Nipeelva.",
     "implied_start_m": null,
     "start_vs_implied_m": null,
-    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (199 m from 1.19 km)."
+    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (199 m from 1.19 km). Lagt på traktorvegen for hånd: grusvegen tilbake (OSM way/368726570) og traktorvegen mot Nipeelva (way/540035054) fra Myrdalsvatnet til 0,81 km, der linja før gikk 50–120 m nord for traktorvegen gjennom skogen. Kilden: «følger grusveien litt tilbake til en traktorvei … videre til Nipeelva»."
    }
   ]
  },
@@ -3109,6 +3184,56 @@
     },
     "waypoints": [
      {
+      "name": "stien opp til Konedalen",
+      "lat": 62.18607,
+      "lng": 6.66485
+     },
+     {
+      "name": "stien opp til Konedalen",
+      "lat": 62.18673,
+      "lng": 6.66352
+     },
+     {
+      "name": "stien opp til Konedalen",
+      "lat": 62.18655,
+      "lng": 6.66308
+     },
+     {
+      "name": "stien opp til Konedalen",
+      "lat": 62.18643,
+      "lng": 6.66093
+     },
+     {
+      "name": "stien opp til Konedalen",
+      "lat": 62.18586,
+      "lng": 6.65952
+     },
+     {
+      "name": "stien opp til Konedalen",
+      "lat": 62.18537,
+      "lng": 6.65898
+     },
+     {
+      "name": "stien opp til Konedalen",
+      "lat": 62.18505,
+      "lng": 6.659
+     },
+     {
+      "name": "stien opp til Konedalen",
+      "lat": 62.18433,
+      "lng": 6.65924
+     },
+     {
+      "name": "stien opp til Konedalen",
+      "lat": 62.1836,
+      "lng": 6.65949
+     },
+     {
+      "name": "stien opp til Konedalen",
+      "lat": 62.18288,
+      "lng": 6.65973
+     },
+     {
       "name": "stien ved 0.46 km",
       "lat": 62.18266,
       "lng": 6.65957
@@ -3143,7 +3268,7 @@
     ],
     "source": "researched, verified (ok), no local audit",
     "notes": "Det kan gå skred frå Jakta heile vegen inn Konedalen; hald deg til venstre (søraustre) side på veg inn dalen. Den 33-36 grader bratte sida opp til toppryggen er den store skredfella på turen. På sjølve toppryggen er det skavlar til begge sider - mot Konedalen i søraust, og mot den stupbratte nordvestveggen ned mot Hjørundfjorden, der DTM1 måler om lag 80 grader rett under toppen.",
-    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (324 m from 0.46 km)."
+    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (324 m from 0.46 km). Lagt på stien for hånd: fra veienden ved Lisjeholen langs vegen (OSM way/618221843) til stien ved Storeholen og stien (way/702914022) langs Holåa til 0,4 km, der linja før skar rett over innmarka og opp gjennom skogen. Guiden: «tar du den bratte stien opp til Konedalen med skiene på sekken»."
    }
   ]
  },
@@ -3597,10 +3722,44 @@
     },
     "waypoints": [
      {
-      "name": "Vartavarhaugen",
-      "lat": 69.58614,
-      "lng": 19.28303,
-      "elevation_m": 158.76
+      "name": "stien over Vartavarhaugen",
+      "lat": 69.58497,
+      "lng": 19.27923
+     },
+     {
+      "name": "stien over Vartavarhaugen",
+      "lat": 69.58484,
+      "lng": 19.27901
+     },
+     {
+      "name": "stien over Vartavarhaugen",
+      "lat": 69.58478,
+      "lng": 19.27926
+     },
+     {
+      "name": "stien over Vartavarhaugen",
+      "lat": 69.58458,
+      "lng": 19.28087
+     },
+     {
+      "name": "stien over Vartavarhaugen",
+      "lat": 69.58438,
+      "lng": 19.28247
+     },
+     {
+      "name": "stien over Vartavarhaugen",
+      "lat": 69.58401,
+      "lng": 19.28351
+     },
+     {
+      "name": "stien over Vartavarhaugen",
+      "lat": 69.58394,
+      "lng": 19.28446
+     },
+     {
+      "name": "stien over Vartavarhaugen",
+      "lat": 69.58322,
+      "lng": 19.28621
      },
      {
       "name": "Nordvestryggen, ~610 moh",
@@ -3616,7 +3775,8 @@
      }
     ],
     "source": "researched, verified (ok), no local audit",
-    "notes": "Skituren opp ryggen er lite skredutsatt, men flankene på begge sider av nordvestryggen er bratte og terrengfeller: hold deg på ryggen i dårlig sikt. Toppryggen er den reelle faren - luftig, delvis skavlet mot nordøst, og med isete klyvepartier som krever stegjern, isøks og tau-vurdering. Snu på Middagsaksla hvis ryggen er isete eller sikten er dårlig; det er der skituren uansett slutter."
+    "notes": "Skituren opp ryggen er lite skredutsatt, men flankene på begge sider av nordvestryggen er bratte og terrengfeller: hold deg på ryggen i dårlig sikt. Toppryggen er den reelle faren - luftig, delvis skavlet mot nordøst, og med isete klyvepartier som krever stegjern, isøks og tau-vurdering. Snu på Middagsaksla hvis ryggen er isete eller sikten er dårlig; det er der skituren uansett slutter.",
+    "corridorNote": "Lagt på stien for hånd fra 0,45 til 1,0 km (OSM way/1019920966). Linja gikk en V opp til korridorpunktet «Vartavarhaugen» og ned igjen, 170 m nord for stien; punktet lå der Kartverket skriver navnet, ikke på toppen. Stien går selv over haugen, på 161 moh, så ruta går fortsatt «over Vartavarhaugen», 211 m kortere og uten den unødvendige svingen."
    }
   ]
  },
@@ -3803,17 +3963,155 @@
     },
     "waypoints": [
      {
+      "name": "vegen opp mot Haukåssætra",
+      "lat": 62.21813,
+      "lng": 6.57122
+     },
+     {
+      "name": "vegen opp mot Haukåssætra",
+      "lat": 62.21879,
+      "lng": 6.57181
+     },
+     {
+      "name": "vegen opp mot Haukåssætra",
+      "lat": 62.21956,
+      "lng": 6.57219
+     },
+     {
+      "name": "vegen opp mot Haukåssætra",
+      "lat": 62.22032,
+      "lng": 6.57258
+     },
+     {
+      "name": "vegen opp mot Haukåssætra",
+      "lat": 62.22109,
+      "lng": 6.57297
+     },
+     {
+      "name": "vegen opp mot Haukåssætra",
+      "lat": 62.22163,
+      "lng": 6.57351
+     },
+     {
+      "name": "vegen opp mot Haukåssætra",
+      "lat": 62.22217,
+      "lng": 6.57405
+     },
+     {
+      "name": "vegen opp mot Haukåssætra",
+      "lat": 62.22272,
+      "lng": 6.57432
+     },
+     {
+      "name": "vegen opp mot Haukåssætra",
+      "lat": 62.22328,
+      "lng": 6.5746
+     },
+     {
+      "name": "vegen opp mot Haukåssætra",
+      "lat": 62.22416,
+      "lng": 6.57475
+     },
+     {
+      "name": "vegen opp mot Haukåssætra",
+      "lat": 62.22505,
+      "lng": 6.57491
+     },
+     {
+      "name": "vegen opp mot Haukåssætra",
+      "lat": 62.22604,
+      "lng": 6.5756
+     },
+     {
+      "name": "vegen opp mot Haukåssætra",
+      "lat": 62.22657,
+      "lng": 6.57633
+     },
+     {
+      "name": "vegen opp mot Haukåssætra",
+      "lat": 62.22729,
+      "lng": 6.57668
+     },
+     {
+      "name": "vegen opp mot Haukåssætra",
+      "lat": 62.22799,
+      "lng": 6.57794
+     },
+     {
+      "name": "vegen opp mot Haukåssætra",
+      "lat": 62.22843,
+      "lng": 6.57944
+     },
+     {
+      "name": "vegen opp mot Haukåssætra",
+      "lat": 62.22867,
+      "lng": 6.58086
+     },
+     {
+      "name": "vegen opp mot Haukåssætra",
+      "lat": 62.22875,
+      "lng": 6.58239
+     },
+     {
+      "name": "vegen opp mot Haukåssætra",
+      "lat": 62.22895,
+      "lng": 6.58303
+     },
+     {
+      "name": "vegen opp mot Haukåssætra",
+      "lat": 62.22963,
+      "lng": 6.58333
+     },
+     {
+      "name": "vegen opp mot Haukåssætra",
+      "lat": 62.23032,
+      "lng": 6.58362
+     },
+     {
+      "name": "vegen opp mot Haukåssætra",
+      "lat": 62.23076,
+      "lng": 6.58418
+     },
+     {
+      "name": "vegen opp mot Haukåssætra",
+      "lat": 62.23155,
+      "lng": 6.58379
+     },
+     {
+      "name": "vegen opp mot Haukåssætra",
+      "lat": 62.23139,
+      "lng": 6.58459
+     },
+     {
+      "name": "vegen opp mot Haukåssætra",
+      "lat": 62.23112,
+      "lng": 6.58517
+     },
+     {
+      "name": "vegen opp mot Haukåssætra",
+      "lat": 62.23182,
+      "lng": 6.58576
+     },
+     {
+      "name": "vegen opp mot Haukåssætra",
+      "lat": 62.23207,
+      "lng": 6.58664
+     },
+     {
+      "name": "vegen opp mot Haukåssætra",
+      "lat": 62.23195,
+      "lng": 6.58734
+     },
+     {
+      "name": "vegen opp mot Haukåssætra",
+      "lat": 62.23151,
+      "lng": 6.58806
+     },
+     {
       "name": "Haukåssætra",
       "lat": 62.23111,
       "lng": 6.58833,
       "elevation_m": 229.75
-     },
-     {
-      "name": "utenom bygningene",
-      "lat": 62.23117,
-      "lng": 6.58822,
-      "elevation_m": 228.0,
-      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/940284681, way/940284685."
      },
      {
       "name": "Nordkopen",
@@ -3854,7 +4152,7 @@
     ],
     "source": "researched, verified (corrected), no local audit",
     "notes": "Skredterreng inn mot Nordkopen og i sida opp frå kopen til egga. Store skavlar på austsida av den breie toppryggen — hald deg vest for kammen. Ekstra varsemd i vårsnø utover ettermiddagen.",
-    "corridorNote": "«toppkammen frå sørvest» added in the shape round: the cairn is a spire whose only gentle side is the south-west crest (DTM1 1572/1579/1580/1586 m at 120/90/60/30 m out on bearing 225°, against 1520–1554 at 30 m on every other side); the shipped line hooked round onto the east face and finished +57 m over 18 m. The crest is the guide's own «kammen»."
+    "corridorNote": "«toppkammen frå sørvest» added in the shape round: the cairn is a spire whose only gentle side is the south-west crest (DTM1 1572/1579/1580/1586 m at 120/90/60/30 m out on bearing 225°, against 1520–1554 at 30 m on every other side); the shipped line hooked round onto the east face and finished +57 m over 18 m. The crest is the guide's own «kammen». Lagt på vegen for hånd: grusvegen fra Urkegjerdet (OSM way/39091487), vegen opp Storedalen på vestsida av Urkeelva (way/618221832) og svingene opp til Haukåssætra (way/39091488), 0–1,9 km. Linja gikk før på gårdsvegen øst for elva og krysset elva to ganger, 30–70 m fra vegen. Guiden: «Følg veien opp gjennom skogen … forbi Haukåssætra»."
    }
   ]
  },
@@ -5318,6 +5616,46 @@
     },
     "waypoints": [
      {
+      "name": "traktorvegen mot Nipelva",
+      "lat": 60.02322,
+      "lng": 6.0622
+     },
+     {
+      "name": "traktorvegen mot Nipelva",
+      "lat": 60.02305,
+      "lng": 6.0623
+     },
+     {
+      "name": "traktorvegen mot Nipelva",
+      "lat": 60.02311,
+      "lng": 6.06261
+     },
+     {
+      "name": "traktorvegen mot Nipelva",
+      "lat": 60.02296,
+      "lng": 6.06356
+     },
+     {
+      "name": "traktorvegen mot Nipelva",
+      "lat": 60.02301,
+      "lng": 6.0654
+     },
+     {
+      "name": "traktorvegen mot Nipelva",
+      "lat": 60.02263,
+      "lng": 6.06615
+     },
+     {
+      "name": "traktorvegen mot Nipelva",
+      "lat": 60.02311,
+      "lng": 6.06774
+     },
+     {
+      "name": "traktorvegen mot Nipelva",
+      "lat": 60.0236,
+      "lng": 6.06884
+     },
+     {
       "name": "stien ved 0.89 km",
       "lat": 60.02528,
       "lng": 6.07541
@@ -5392,7 +5730,7 @@
     ],
     "source": "researched, verified (corrected), no local audit",
     "notes": "Toppskavl. Turen kan krevje stegjern og isøks. Den vestlege renna ned er 40 grader og eit eige val, ikkje normalruta.",
-    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (644 m from 0.89 km)."
+    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (644 m from 0.89 km). Lagt på traktorvegen for hånd: vegen (OSM way/368726570) og traktorvegen mot Nipelva (way/540035054) fra 0,07 til 0,45 km, der linja før skar over svingen gjennom skogen. Guiden: «Følg veien litt tilbake til en traktorvei og følg denne til Nipelva kommer til syne»."
    }
   ]
  },
@@ -5979,15 +6317,104 @@
       "lng": 9.92345
      },
      {
-      "name": "Vest for Venekollen",
-      "lat": 60.47604,
-      "lng": 9.9126,
-      "elevation_m": 948.76
+      "name": "stien vest for Venekollen",
+      "lat": 60.47073,
+      "lng": 9.92227
+     },
+     {
+      "name": "stien vest for Venekollen",
+      "lat": 60.47061,
+      "lng": 9.92203
+     },
+     {
+      "name": "stien vest for Venekollen",
+      "lat": 60.47107,
+      "lng": 9.9202
+     },
+     {
+      "name": "stien vest for Venekollen",
+      "lat": 60.47147,
+      "lng": 9.91912
+     },
+     {
+      "name": "stien vest for Venekollen",
+      "lat": 60.47141,
+      "lng": 9.91851
+     },
+     {
+      "name": "stien vest for Venekollen",
+      "lat": 60.47151,
+      "lng": 9.91766
+     },
+     {
+      "name": "stien vest for Venekollen",
+      "lat": 60.47163,
+      "lng": 9.91762
+     },
+     {
+      "name": "stien vest for Venekollen",
+      "lat": 60.47171,
+      "lng": 9.91715
+     },
+     {
+      "name": "stien vest for Venekollen",
+      "lat": 60.47233,
+      "lng": 9.91674
+     },
+     {
+      "name": "stien vest for Venekollen",
+      "lat": 60.47294,
+      "lng": 9.91561
+     },
+     {
+      "name": "stien vest for Venekollen",
+      "lat": 60.47327,
+      "lng": 9.91534
+     },
+     {
+      "name": "stien vest for Venekollen",
+      "lat": 60.47349,
+      "lng": 9.91437
+     },
+     {
+      "name": "stien vest for Venekollen",
+      "lat": 60.474,
+      "lng": 9.9136
+     },
+     {
+      "name": "stien vest for Venekollen",
+      "lat": 60.47402,
+      "lng": 9.91315
+     },
+     {
+      "name": "stien vest for Venekollen",
+      "lat": 60.47438,
+      "lng": 9.91265
+     },
+     {
+      "name": "stien vest for Venekollen",
+      "lat": 60.47451,
+      "lng": 9.91178
+     },
+     {
+      "name": "stien vest for Venekollen",
+      "lat": 60.47503,
+      "lng": 9.91078
+     },
+     {
+      "name": "stien vest for Venekollen",
+      "lat": 60.47512,
+      "lng": 9.91012
+     },
+     {
+      "name": "stien vest for Venekollen",
+      "lat": 60.47549,
+      "lng": 9.9092
      }
     ],
     "source": "researched, verified (corrected), no local audit",
     "notes": "Vestsida av Gyranfisen stuper mot Vidalen, og både Bukollen, Gråfjell og Storrustefjell på andre sida av dalen er beskrevet med bratte stup — det er den kanten toppen har, og den er feil veg å kjøre ned. Ryggen fra Svarttjernskollen til toppen er avblåst i vind. Løypene til Gyranfisen og Treknatten kjøres bare når forholdene tillater det, og prioriteres i vinter- og påskeferien; utenfor det er ruta usporet myr og fjell. Vikerfjell naturreservat dekker deler av området.",
-    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (629 m from 0.92 km, 949 m from 2.18 km)."
+    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (629 m from 0.92 km, 949 m from 2.18 km). Lagt på stien for hånd fra 3,4 til 4,4 km: stien vest for Venekollen forbi Venehytta, OSM way/179365287. Linja gikk før 50–140 m nordøst for stien gjennom skogen i lia under Venekollen, over korridorpunktet «Vest for Venekollen»; stien passerer også vest for Venekollen, 150 m lenger sørvest, og gir 16 høydemeter mindre opp og ned."
    }
   ]
  },
@@ -6742,11 +7169,49 @@
     },
     "waypoints": [
      {
-      "name": "utenom bygningene",
-      "lat": 60.54585,
-      "lng": 8.19661,
-      "elevation_m": 968.0,
-      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/1003689787."
+      "name": "vegen gjennom hyttefeltet",
+      "lat": 60.54579,
+      "lng": 8.19729
+     },
+     {
+      "name": "vegen gjennom hyttefeltet",
+      "lat": 60.54563,
+      "lng": 8.19592
+     },
+     {
+      "name": "vegen gjennom hyttefeltet",
+      "lat": 60.54546,
+      "lng": 8.19455
+     },
+     {
+      "name": "vegen gjennom hyttefeltet",
+      "lat": 60.54512,
+      "lng": 8.19311
+     },
+     {
+      "name": "vegen gjennom hyttefeltet",
+      "lat": 60.54477,
+      "lng": 8.19168
+     },
+     {
+      "name": "vegen gjennom hyttefeltet",
+      "lat": 60.54443,
+      "lng": 8.19025
+     },
+     {
+      "name": "vegen gjennom hyttefeltet",
+      "lat": 60.54406,
+      "lng": 8.18925
+     },
+     {
+      "name": "vegen gjennom hyttefeltet",
+      "lat": 60.54363,
+      "lng": 8.18857
+     },
+     {
+      "name": "vegen gjennom hyttefeltet",
+      "lat": 60.5432,
+      "lng": 8.18789
      },
      {
       "name": "Inn på løypa vest for Havsdalen",
@@ -6774,7 +7239,8 @@
      }
     ],
     "source": "researched, verified (corrected), no local audit",
-    "notes": "Ut.no navngir ingen faremomenter ut over at turen «blir oftest gått utpå seinvinter/vår når snøen har satt seg og dagene er lengre», og at den er overkommelig i godvær for alle med noe langrennserfaring. Det er to ting å lese ut av den setningen: den er en godværstur, og «når snøen har satt seg» handler om Prestholtskardet, som er den ene bratte flanken på hele ruta. Oppe på skarvet er problemet vind og sikt — platået er flatt og eksponert, og kanten mot nord faller flere hundre meter."
+    "notes": "Ut.no navngir ingen faremomenter ut over at turen «blir oftest gått utpå seinvinter/vår når snøen har satt seg og dagene er lengre», og at den er overkommelig i godvær for alle med noe langrennserfaring. Det er to ting å lese ut av den setningen: den er en godværstur, og «når snøen har satt seg» handler om Prestholtskardet, som er den ene bratte flanken på hele ruta. Oppe på skarvet er problemet vind og sikt — platået er flatt og eksponert, og kanten mot nord faller flere hundre meter.",
+    "corridorNote": "Lagt på vegen for hånd: vegen opp gjennom hyttefeltet i Havsdalen (OSM way/476047988) fra parkeringa til løypa ved 0,8 km, i stedet for buen nord langs Vesleåne og mellom hyttene; «utenom bygningene»-punktet er borte, og check_ground må bekrefte at vegen holder seg klar av hyttene."
    }
   ]
  },
@@ -6967,6 +7433,46 @@
       "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/1023537831."
      },
      {
+      "name": "lysløypa opp Storelvdalen",
+      "lat": 69.68922,
+      "lng": 18.78213
+     },
+     {
+      "name": "lysløypa opp Storelvdalen",
+      "lat": 69.69012,
+      "lng": 18.78328
+     },
+     {
+      "name": "lysløypa opp Storelvdalen",
+      "lat": 69.69107,
+      "lng": 18.78322
+     },
+     {
+      "name": "lysløypa opp Storelvdalen",
+      "lat": 69.69153,
+      "lng": 18.78221
+     },
+     {
+      "name": "lysløypa opp Storelvdalen",
+      "lat": 69.69199,
+      "lng": 18.78119
+     },
+     {
+      "name": "lysløypa opp Storelvdalen",
+      "lat": 69.69241,
+      "lng": 18.77859
+     },
+     {
+      "name": "lysløypa opp Storelvdalen",
+      "lat": 69.69226,
+      "lng": 18.77762
+     },
+     {
+      "name": "lysløypa opp Storelvdalen",
+      "lat": 69.6923,
+      "lng": 18.77678
+     },
+     {
       "name": "Der ruta forlater lysløypa i Storelvdalen",
       "lat": 69.69251,
       "lng": 18.77594,
@@ -6986,7 +7492,8 @@
      }
     ],
     "source": "researched, verified (ok), no local audit",
-    "notes": "Fri Flyts eneste faremoment: «Like før toppen mot SØ er det heng med bratthet opp mot 40 grader.» Ellers går ruta i terreng under 25 grader. Nordvestover fra toppen stiger ryggen videre mot Storbogtinden uten sadel, så i dårlig sikt er det lett å gå forbi toppunktet."
+    "notes": "Fri Flyts eneste faremoment: «Like før toppen mot SØ er det heng med bratthet opp mot 40 grader.» Ellers går ruta i terreng under 25 grader. Nordvestover fra toppen stiger ryggen videre mot Storbogtinden uten sadel, så i dårlig sikt er det lett å gå forbi toppunktet.",
+    "corridorNote": "Lagt på lysløypa for hånd: skiløypene opp Storelvdalen (OSM piste:type=nordic, way/1394531001 m.fl.) fra 0,45 til 0,85 km, der linja før skar over Langmyra 60–120 m vest for løypa. Guiden: «Den første kilometeren følger lysløypa oppover Storelvdalen»."
    }
   ]
  },
@@ -10103,10 +10610,39 @@
       "elevation_m": 350.52
      },
      {
-      "name": "sør for topp 588",
-      "lat": 62.601,
-      "lng": 7.625,
-      "elevation_m": 535.0
+      "name": "stien sør for topp 588",
+      "lat": 62.5994,
+      "lng": 7.62525
+     },
+     {
+      "name": "stien sør for topp 588",
+      "lat": 62.59959,
+      "lng": 7.62412
+     },
+     {
+      "name": "stien sør for topp 588",
+      "lat": 62.59977,
+      "lng": 7.623
+     },
+     {
+      "name": "stien sør for topp 588",
+      "lat": 62.59964,
+      "lng": 7.62223
+     },
+     {
+      "name": "stien sør for topp 588",
+      "lat": 62.59962,
+      "lng": 7.62078
+     },
+     {
+      "name": "stien sør for topp 588",
+      "lat": 62.59986,
+      "lng": 7.61936
+     },
+     {
+      "name": "stien sør for topp 588",
+      "lat": 62.59994,
+      "lng": 7.61952
      },
      {
       "name": "ryggformasjonen",
@@ -10128,7 +10664,8 @@
      }
     ],
     "source": "researched, verified (ok), no local audit",
-    "notes": "Fri Flyt: KAST 1 – Enkelt, bratteste punkt under 30 grader. Egen advarsel: «Ikke kryss østflanken under Skarvens fortopp. Dette er et av få områder på denne siden av fjellet som kan være skredutsatt.» Skredfare i de øvre delene etter vind fra nordvest; soleksponert på vårdager. Nedfartene utenom normalveien er brattere: NM-løypa fra 1940 måler 33 grader over 100 m (1020–920 moh), Vasslia direkte 40–42 grader med passasjer på 45."
+    "notes": "Fri Flyt: KAST 1 – Enkelt, bratteste punkt under 30 grader. Egen advarsel: «Ikke kryss østflanken under Skarvens fortopp. Dette er et av få områder på denne siden av fjellet som kan være skredutsatt.» Skredfare i de øvre delene etter vind fra nordvest; soleksponert på vårdager. Nedfartene utenom normalveien er brattere: NM-løypa fra 1940 måler 33 grader over 100 m (1020–920 moh), Vasslia direkte 40–42 grader med passasjer på 45.",
+    "corridorNote": "Lagt på stien for hånd forbi topp 588: den merkede sommerstien langs Fremste Kjerringhaugelva (OSM way/1349974486) fra 1,08 til 1,6 km. Linja gikk før ut i en bue nordover til korridorpunktet «sør for topp 588», som lå øst for toppen og ikke sør; stien går faktisk sør for 588, 200 m kortere og slakere (18,5° mot 20,1° bratteste 30 m)."
    }
   ]
  },
@@ -10168,10 +10705,129 @@
       "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/976934487."
      },
      {
-      "name": "Romsdalseggen-merkinga, nordsida av Tverrelva",
-      "lat": 62.531,
-      "lng": 7.822,
-      "elevation_m": 427.0
+      "name": "Romsdalseggen-merkinga nord for Tverrelva",
+      "lat": 62.53558,
+      "lng": 7.82844
+     },
+     {
+      "name": "Romsdalseggen-merkinga nord for Tverrelva",
+      "lat": 62.53547,
+      "lng": 7.82815
+     },
+     {
+      "name": "Romsdalseggen-merkinga nord for Tverrelva",
+      "lat": 62.53559,
+      "lng": 7.82752
+     },
+     {
+      "name": "Romsdalseggen-merkinga nord for Tverrelva",
+      "lat": 62.53537,
+      "lng": 7.82651
+     },
+     {
+      "name": "Romsdalseggen-merkinga nord for Tverrelva",
+      "lat": 62.53541,
+      "lng": 7.82569
+     },
+     {
+      "name": "Romsdalseggen-merkinga nord for Tverrelva",
+      "lat": 62.53574,
+      "lng": 7.82574
+     },
+     {
+      "name": "Romsdalseggen-merkinga nord for Tverrelva",
+      "lat": 62.53592,
+      "lng": 7.82535
+     },
+     {
+      "name": "Romsdalseggen-merkinga nord for Tverrelva",
+      "lat": 62.53536,
+      "lng": 7.82401
+     },
+     {
+      "name": "Romsdalseggen-merkinga nord for Tverrelva",
+      "lat": 62.5346,
+      "lng": 7.82375
+     },
+     {
+      "name": "Romsdalseggen-merkinga nord for Tverrelva",
+      "lat": 62.53395,
+      "lng": 7.82295
+     },
+     {
+      "name": "Romsdalseggen-merkinga nord for Tverrelva",
+      "lat": 62.53378,
+      "lng": 7.82204
+     },
+     {
+      "name": "Romsdalseggen-merkinga nord for Tverrelva",
+      "lat": 62.53383,
+      "lng": 7.82082
+     },
+     {
+      "name": "Romsdalseggen-merkinga nord for Tverrelva",
+      "lat": 62.53388,
+      "lng": 7.81959
+     },
+     {
+      "name": "Romsdalseggen-merkinga nord for Tverrelva",
+      "lat": 62.53374,
+      "lng": 7.81928
+     },
+     {
+      "name": "Romsdalseggen-merkinga nord for Tverrelva",
+      "lat": 62.53384,
+      "lng": 7.81711
+     },
+     {
+      "name": "Romsdalseggen-merkinga nord for Tverrelva",
+      "lat": 62.53399,
+      "lng": 7.817
+     },
+     {
+      "name": "Romsdalseggen-merkinga nord for Tverrelva",
+      "lat": 62.53399,
+      "lng": 7.8166
+     },
+     {
+      "name": "Romsdalseggen-merkinga nord for Tverrelva",
+      "lat": 62.53376,
+      "lng": 7.81634
+     },
+     {
+      "name": "Romsdalseggen-merkinga nord for Tverrelva",
+      "lat": 62.53359,
+      "lng": 7.81555
+     },
+     {
+      "name": "Romsdalseggen-merkinga nord for Tverrelva",
+      "lat": 62.53364,
+      "lng": 7.81466
+     },
+     {
+      "name": "Romsdalseggen-merkinga nord for Tverrelva",
+      "lat": 62.53341,
+      "lng": 7.81403
+     },
+     {
+      "name": "Romsdalseggen-merkinga nord for Tverrelva",
+      "lat": 62.53306,
+      "lng": 7.81358
+     },
+     {
+      "name": "Romsdalseggen-merkinga nord for Tverrelva",
+      "lat": 62.53298,
+      "lng": 7.81314
+     },
+     {
+      "name": "Romsdalseggen-merkinga nord for Tverrelva",
+      "lat": 62.53238,
+      "lng": 7.81185
+     },
+     {
+      "name": "Romsdalseggen-merkinga nord for Tverrelva",
+      "lat": 62.53222,
+      "lng": 7.81176
      },
      {
       "name": "flata mellom Blånebba og Storhesten",
@@ -10193,7 +10849,8 @@
      }
     ],
     "source": "researched, verified (ok), no local audit",
-    "notes": "Fri Flyt: KAST 2 – Utfordrende, faremomenter skred og skavl, bratteste punkt 40 grader. Skredterreng i toppryggen og flankene; skavleksponering mot nord; terrenget er omkranset av steinheng med store konsekvensområder. Nordryggen (den avanserte nedfarten) måler 38–43 grader med passasjer på 45."
+    "notes": "Fri Flyt: KAST 2 – Utfordrende, faremomenter skred og skavl, bratteste punkt 40 grader. Skredterreng i toppryggen og flankene; skavleksponering mot nord; terrenget er omkranset av steinheng med store konsekvensområder. Nordryggen (den avanserte nedfarten) måler 38–43 grader med passasjer på 45.",
+    "corridorNote": "Lagt på stien for hånd: Romsdalseggen-merkinga fra Venjesdalsbu, OSM way/706123491 (trappestien), /1236535585, /1236535589, /1193634684, /1236535588, /1236535587 og /1236535586, nord for Tverrelva og over elva opp til stien på Hestheia. Linja gikk før sør for Tverrelva gjennom skogen, 100–240 m fra stien, selv om korridorpunktet het «Romsdalseggen-merkinga, nordsida av Tverrelva». Stisøket fant den ikke fordi trappene (highway=steps) ikke er med i nettet det søker i."
    }
   ]
  },
@@ -10283,17 +10940,225 @@
     },
     "waypoints": [
      {
+      "name": "bomvegen til Venåssetra",
+      "lat": 62.50864,
+      "lng": 7.35009
+     },
+     {
+      "name": "bomvegen til Venåssetra",
+      "lat": 62.50873,
+      "lng": 7.34807
+     },
+     {
+      "name": "bomvegen til Venåssetra",
+      "lat": 62.50848,
+      "lng": 7.34661
+     },
+     {
+      "name": "bomvegen til Venåssetra",
+      "lat": 62.50824,
+      "lng": 7.34514
+     },
+     {
+      "name": "bomvegen til Venåssetra",
+      "lat": 62.50799,
+      "lng": 7.34367
+     },
+     {
+      "name": "bomvegen til Venåssetra",
+      "lat": 62.50758,
+      "lng": 7.34277
+     },
+     {
+      "name": "bomvegen til Venåssetra",
+      "lat": 62.50717,
+      "lng": 7.34187
+     },
+     {
+      "name": "bomvegen til Venåssetra",
+      "lat": 62.5068,
+      "lng": 7.3406
+     },
+     {
+      "name": "bomvegen til Venåssetra",
+      "lat": 62.50642,
+      "lng": 7.33932
+     },
+     {
+      "name": "bomvegen til Venåssetra",
+      "lat": 62.50578,
+      "lng": 7.33811
+     },
+     {
+      "name": "bomvegen til Venåssetra",
+      "lat": 62.50515,
+      "lng": 7.33689
+     },
+     {
+      "name": "bomvegen til Venåssetra",
+      "lat": 62.50451,
+      "lng": 7.33567
+     },
+     {
+      "name": "bomvegen til Venåssetra",
+      "lat": 62.50381,
+      "lng": 7.33514
+     },
+     {
+      "name": "bomvegen til Venåssetra",
+      "lat": 62.50342,
+      "lng": 7.33431
+     },
+     {
+      "name": "bomvegen til Venåssetra",
+      "lat": 62.50302,
+      "lng": 7.33349
+     },
+     {
+      "name": "bomvegen til Venåssetra",
+      "lat": 62.50275,
+      "lng": 7.33219
+     },
+     {
+      "name": "bomvegen til Venåssetra",
+      "lat": 62.50247,
+      "lng": 7.33089
+     },
+     {
+      "name": "bomvegen til Venåssetra",
+      "lat": 62.50235,
+      "lng": 7.32974
+     },
+     {
+      "name": "bomvegen til Venåssetra",
+      "lat": 62.50222,
+      "lng": 7.32858
+     },
+     {
+      "name": "bomvegen til Venåssetra",
+      "lat": 62.50242,
+      "lng": 7.32734
+     },
+     {
+      "name": "bomvegen til Venåssetra",
+      "lat": 62.50241,
+      "lng": 7.32628
+     },
+     {
+      "name": "bomvegen til Venåssetra",
+      "lat": 62.50276,
+      "lng": 7.32461
+     },
+     {
+      "name": "bomvegen til Venåssetra",
+      "lat": 62.50293,
+      "lng": 7.32314
+     },
+     {
+      "name": "bomvegen til Venåssetra",
+      "lat": 62.5031,
+      "lng": 7.32168
+     },
+     {
+      "name": "bomvegen til Venåssetra",
+      "lat": 62.50335,
+      "lng": 7.3213
+     },
+     {
+      "name": "bomvegen til Venåssetra",
+      "lat": 62.50377,
+      "lng": 7.3212
+     },
+     {
+      "name": "bomvegen til Venåssetra",
+      "lat": 62.50404,
+      "lng": 7.32074
+     },
+     {
+      "name": "bomvegen til Venåssetra",
+      "lat": 62.50435,
+      "lng": 7.31961
+     },
+     {
+      "name": "bomvegen til Venåssetra",
+      "lat": 62.50465,
+      "lng": 7.31848
+     },
+     {
+      "name": "bomvegen til Venåssetra",
+      "lat": 62.50504,
+      "lng": 7.31798
+     },
+     {
+      "name": "bomvegen til Venåssetra",
+      "lat": 62.50519,
+      "lng": 7.3165
+     },
+     {
+      "name": "bomvegen til Venåssetra",
+      "lat": 62.50534,
+      "lng": 7.31503
+     },
+     {
+      "name": "bomvegen til Venåssetra",
+      "lat": 62.50578,
+      "lng": 7.31323
+     },
+     {
+      "name": "bomvegen til Venåssetra",
+      "lat": 62.50665,
+      "lng": 7.31213
+     },
+     {
+      "name": "bomvegen til Venåssetra",
+      "lat": 62.50752,
+      "lng": 7.31103
+     },
+     {
+      "name": "bomvegen til Venåssetra",
+      "lat": 62.5077,
+      "lng": 7.30948
+     },
+     {
+      "name": "bomvegen til Venåssetra",
+      "lat": 62.50788,
+      "lng": 7.30794
+     },
+     {
+      "name": "bomvegen til Venåssetra",
+      "lat": 62.50832,
+      "lng": 7.30721
+     },
+     {
+      "name": "bomvegen til Venåssetra",
+      "lat": 62.50899,
+      "lng": 7.30687
+     },
+     {
+      "name": "bomvegen til Venåssetra",
+      "lat": 62.50921,
+      "lng": 7.30631
+     },
+     {
+      "name": "bomvegen til Venåssetra",
+      "lat": 62.50925,
+      "lng": 7.3049
+     },
+     {
+      "name": "bomvegen til Venåssetra",
+      "lat": 62.5093,
+      "lng": 7.30349
+     },
+     {
       "name": "Venåssetra",
       "lat": 62.50809,
       "lng": 7.30469,
       "elevation_m": 393.0
      },
      {
-      "name": "utenom bygningene",
-      "lat": 62.50801,
-      "lng": 7.30429,
-      "elevation_m": 390.0,
-      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/976936887."
+      "name": "bomvegen til Venåssetra",
+      "lat": 62.50855,
+      "lng": 7.30255
      },
      {
       "name": "myra og Stavvasselva",
@@ -10321,7 +11186,8 @@
      }
     ],
     "source": "researched, verified (ok), no local audit",
-    "notes": "Fri Flyt: KAST 2 – Utfordrende, bratteste punkt ca. 35 grader ved toppen av botnen. Nordøstryggen er den tryggeste linja i forhold til skred; sørøst- og nordøstryggene danner leheng i henholdsvis sørlig og nordlig vind. Toppen er ofte snøfri — bart berg og hardpakke, glifare, skiene settes vanligvis igjen noen meter under toppen. Sørflanken (nedfartsalternativet mot Øspevatnet) er jevnt bratt, 33–40 grader."
+    "notes": "Fri Flyt: KAST 2 – Utfordrende, bratteste punkt ca. 35 grader ved toppen av botnen. Nordøstryggen er den tryggeste linja i forhold til skred; sørøst- og nordøstryggene danner leheng i henholdsvis sørlig og nordlig vind. Toppen er ofte snøfri — bart berg og hardpakke, glifare, skiene settes vanligvis igjen noen meter under toppen. Sørflanken (nedfartsalternativet mot Øspevatnet) er jevnt bratt, 33–40 grader.",
+    "corridorNote": "Lagt på bomvegen for hånd: fra bomkassa ved Venås langs bomvegen (OSM way/374079489) til vegenden ved Venåssetra, 0,1–2,9 km. Linja gikk før langs elveløpet til Måna 40–120 m sør for vegen. Guiden: «følger du bomveien til Venåssetra»."
    }
   ]
  },
@@ -10340,36 +11206,34 @@
     },
     "waypoints": [
      {
-      "name": "sørbredden av Berillvatnet, austenden",
-      "lat": 62.439,
-      "lng": 7.455,
-      "elevation_m": 369.7
+      "name": "vegen inn langs Berillvatnet",
+      "lat": 62.43967,
+      "lng": 7.45618
      },
      {
       "name": "vegen inn langs Berillvatnet",
-      "lat": 62.4382,
-      "lng": 7.452,
-      "elevation_m": 401.8
-     },
-     {
-      "name": "stien ved 0.70 km",
-      "lat": 62.43826,
-      "lng": 7.44784
-     },
-     {
-      "name": "stien ved 0.70 km",
-      "lat": 62.4389,
-      "lng": 7.4489
-     },
-     {
-      "name": "stien ved 0.70 km",
       "lat": 62.43955,
-      "lng": 7.44995
+      "lng": 7.4559
      },
      {
-      "name": "stien ved 0.70 km",
-      "lat": 62.43988,
-      "lng": 7.44998
+      "name": "vegen inn langs Berillvatnet",
+      "lat": 62.43969,
+      "lng": 7.45524
+     },
+     {
+      "name": "vegen inn langs Berillvatnet",
+      "lat": 62.4397,
+      "lng": 7.45327
+     },
+     {
+      "name": "vegen inn langs Berillvatnet",
+      "lat": 62.4397,
+      "lng": 7.45129
+     },
+     {
+      "name": "vegen inn langs Berillvatnet",
+      "lat": 62.43994,
+      "lng": 7.44953
      },
      {
       "name": "stien ved 0.70 km",
@@ -10489,7 +11353,7 @@
     ],
     "source": "researched, verified (ok), no local audit",
     "notes": "Fri Flyt: KAST 3 – Komplekst, bratteste punkt 39 grader. Øvre del av bekkedalen mot skaret er bratt og skredutsatt. Ryggen er lite skredutsatt men ofte avblåst — ski på sekken, stegjern og isøks kan trengs. Steinutslag særlig de øverste 100 metrene av vestflanken; skredterreng i heng over 30 grader; nedfartsalternativene ved Gullkoppen måler 45–50 grader. Berillvatnet er regulert — hold vegen på sørsiden.",
-    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (1217 m from 0.7 km); replaced vegen på sørsiden av Berillvatnet, vestenden av Berillvatnet, over elva vest for vatnet."
+    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (1217 m from 0.7 km); replaced vegen på sørsiden av Berillvatnet, vestenden av Berillvatnet, over elva vest for vatnet. Lagt på vegen for hånd: fra 0,18 km følger linja bomvegen vestover langs sørsiden av Berillvatnet (OSM way/368047875 og way/1116615831) i stedet for kroken sørover gjennom skog og myr til 400 moh og tilbake – 359 m veg mot 731 m linje."
    }
   ]
  },
@@ -10508,18 +11372,44 @@
     },
     "waypoints": [
      {
-      "name": "utenom bygningene",
-      "lat": 69.63139,
-      "lng": 19.41798,
-      "elevation_m": 30.0,
-      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/172660152."
+      "name": "skogsvegen fra Sandeggen",
+      "lat": 69.63179,
+      "lng": 19.41822
      },
      {
-      "name": "utenom bygningene",
-      "lat": 69.63147,
-      "lng": 19.41765,
-      "elevation_m": 30.0,
-      "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/172660152."
+      "name": "skogsvegen fra Sandeggen",
+      "lat": 69.63221,
+      "lng": 19.41641
+     },
+     {
+      "name": "skogsvegen fra Sandeggen",
+      "lat": 69.63269,
+      "lng": 19.41628
+     },
+     {
+      "name": "skogsvegen fra Sandeggen",
+      "lat": 69.63314,
+      "lng": 19.41489
+     },
+     {
+      "name": "skogsvegen fra Sandeggen",
+      "lat": 69.63321,
+      "lng": 19.41378
+     },
+     {
+      "name": "skogsvegen fra Sandeggen",
+      "lat": 69.63273,
+      "lng": 19.41106
+     },
+     {
+      "name": "skogsvegen fra Sandeggen",
+      "lat": 69.63263,
+      "lng": 19.40997
+     },
+     {
+      "name": "skogsvegen fra Sandeggen",
+      "lat": 69.63272,
+      "lng": 19.40983
      },
      {
       "name": "skogsvegen",
@@ -10559,7 +11449,8 @@
      }
     ],
     "source": "researched, verified (ok), no local audit",
-    "notes": "Fri Flyt: KAST 1 – Enkelt, bratteste punkt under 27 grader, faremoment «Terrengfelle. Skavler». Elvedalen langs Russevankelva kan fungere som terrengfelle ved skred fra hengene i nord. Østerenna, nedfartsalternativet mot øst, er KAST 3 – Komplekst og måler 30–45 grader mellom 760 og 380 moh — skikjøring i skredterreng."
+    "notes": "Fri Flyt: KAST 1 – Enkelt, bratteste punkt under 27 grader, faremoment «Terrengfelle. Skavler». Elvedalen langs Russevankelva kan fungere som terrengfelle ved skred fra hengene i nord. Østerenna, nedfartsalternativet mot øst, er KAST 3 – Komplekst og måler 30–45 grader mellom 760 og 380 moh — skikjøring i skredterreng.",
+    "corridorNote": "Lagt på vegen for hånd: tunvegen fra Sandeggen (OSM way/77083300) til fv. 91 og skogsvegen videre (way/173874901) til der linja krysser den ved 0,37 km. Linja skar før rett gjennom skogen mellom gården og skogsvegen. Guiden: «følger du veien inn»."
    }
   ]
  },
@@ -11171,10 +12062,124 @@
     },
     "waypoints": [
      {
-      "name": "ryggen mot punkt 156",
-      "lat": 68.261,
-      "lng": 14.29,
-      "elevation_m": 101.0
+      "name": "stien langs ryggen over punkt 156",
+      "lat": 68.25843,
+      "lng": 14.28003
+     },
+     {
+      "name": "stien langs ryggen over punkt 156",
+      "lat": 68.25807,
+      "lng": 14.28121
+     },
+     {
+      "name": "stien langs ryggen over punkt 156",
+      "lat": 68.2582,
+      "lng": 14.28252
+     },
+     {
+      "name": "stien langs ryggen over punkt 156",
+      "lat": 68.25818,
+      "lng": 14.28399
+     },
+     {
+      "name": "stien langs ryggen over punkt 156",
+      "lat": 68.25791,
+      "lng": 14.28567
+     },
+     {
+      "name": "stien langs ryggen over punkt 156",
+      "lat": 68.25807,
+      "lng": 14.28656
+     },
+     {
+      "name": "stien langs ryggen over punkt 156",
+      "lat": 68.258,
+      "lng": 14.28748
+     },
+     {
+      "name": "stien langs ryggen over punkt 156",
+      "lat": 68.25811,
+      "lng": 14.28858
+     },
+     {
+      "name": "stien langs ryggen over punkt 156",
+      "lat": 68.25839,
+      "lng": 14.29017
+     },
+     {
+      "name": "stien langs ryggen over punkt 156",
+      "lat": 68.25868,
+      "lng": 14.29176
+     },
+     {
+      "name": "stien langs ryggen over punkt 156",
+      "lat": 68.2585,
+      "lng": 14.29223
+     },
+     {
+      "name": "stien langs ryggen over punkt 156",
+      "lat": 68.25889,
+      "lng": 14.29403
+     },
+     {
+      "name": "stien langs ryggen over punkt 156",
+      "lat": 68.25947,
+      "lng": 14.29567
+     },
+     {
+      "name": "stien langs ryggen over punkt 156",
+      "lat": 68.26012,
+      "lng": 14.29639
+     },
+     {
+      "name": "stien langs ryggen over punkt 156",
+      "lat": 68.26054,
+      "lng": 14.29747
+     },
+     {
+      "name": "stien langs ryggen over punkt 156",
+      "lat": 68.26095,
+      "lng": 14.29856
+     },
+     {
+      "name": "stien langs ryggen over punkt 156",
+      "lat": 68.26107,
+      "lng": 14.29834
+     },
+     {
+      "name": "stien langs ryggen over punkt 156",
+      "lat": 68.26118,
+      "lng": 14.2987
+     },
+     {
+      "name": "stien langs ryggen over punkt 156",
+      "lat": 68.26191,
+      "lng": 14.29916
+     },
+     {
+      "name": "stien langs ryggen over punkt 156",
+      "lat": 68.26247,
+      "lng": 14.29894
+     },
+     {
+      "name": "stien langs ryggen over punkt 156",
+      "lat": 68.26303,
+      "lng": 14.29872
+     },
+     {
+      "name": "stien langs ryggen over punkt 156",
+      "lat": 68.26345,
+      "lng": 14.29963
+     },
+     {
+      "name": "stien langs ryggen over punkt 156",
+      "lat": 68.26401,
+      "lng": 14.30001
+     },
+     {
+      "name": "stien langs ryggen over punkt 156",
+      "lat": 68.26404,
+      "lng": 14.29962
      },
      {
       "name": "den slake, breie flata",
@@ -11184,7 +12189,8 @@
      }
     ],
     "source": "researched, verified (ok), no local audit",
-    "notes": "Fri Flyt: noen partier langs sørsiden av ryggen med bratt terreng — hold sporet på ryggen og flata. Ellers enkel: bratteste punkt under 30 grader."
+    "notes": "Fri Flyt: noen partier langs sørsiden av ryggen med bratt terreng — hold sporet på ryggen og flata. Ellers enkel: bratteste punkt under 30 grader.",
+    "corridorNote": "Lagt på stien for hånd: stien langs ryggen over punkt 156 (OSM way/359659218) og videre opp mot flata (way/359659215), 0,25–1,49 km. Linja gikk før nordøst gjennom skogen nord for ryggen, på korridorpunktet «ryggen mot punkt 156», som lå 330 m nord for punktet og ikke på ryggen. Fri Flyt: «hold sporet på ryggen og flata … bratteste punkt under 30 grader»; på ryggen er bratteste 30 m 27,5 grader mot 32,9 i skogen."
    }
   ]
  },
@@ -12295,41 +13301,99 @@
       "lng": 16.45916
      },
      {
-      "name": "stien ved 1.63 km",
-      "lat": 68.5846,
-      "lng": 16.45439
+      "name": "stien sør for Årbogvatnet",
+      "lat": 68.58457,
+      "lng": 16.45511
      },
      {
-      "name": "stien ved 1.63 km",
+      "name": "stien sør for Årbogvatnet",
+      "lat": 68.58459,
+      "lng": 16.45393
+     },
+     {
+      "name": "stien sør for Årbogvatnet",
       "lat": 68.58485,
-      "lng": 16.45271
+      "lng": 16.45248
      },
      {
-      "name": "stien ved 1.63 km",
+      "name": "stien sør for Årbogvatnet",
       "lat": 68.5851,
       "lng": 16.45103
      },
      {
-      "name": "stien ved 1.63 km",
-      "lat": 68.58536,
-      "lng": 16.45007
+      "name": "stien sør for Årbogvatnet",
+      "lat": 68.5851,
+      "lng": 16.44908
      },
      {
-      "name": "stien ved 1.63 km",
-      "lat": 68.58589,
-      "lng": 16.44897
+      "name": "stien sør for Årbogvatnet",
+      "lat": 68.5851,
+      "lng": 16.44712
      },
      {
-      "name": "sør for Årbogvatnet",
-      "lat": 68.5862,
-      "lng": 16.439,
-      "elevation_m": 297.0
+      "name": "stien sør for Årbogvatnet",
+      "lat": 68.58551,
+      "lng": 16.44536
      },
      {
-      "name": "vest for vatnet",
-      "lat": 68.5872,
-      "lng": 16.433,
-      "elevation_m": 277.0
+      "name": "stien sør for Årbogvatnet",
+      "lat": 68.58553,
+      "lng": 16.44433
+     },
+     {
+      "name": "stien sør for Årbogvatnet",
+      "lat": 68.58538,
+      "lng": 16.44325
+     },
+     {
+      "name": "stien sør for Årbogvatnet",
+      "lat": 68.5856,
+      "lng": 16.44064
+     },
+     {
+      "name": "stien sør for Årbogvatnet",
+      "lat": 68.58511,
+      "lng": 16.43823
+     },
+     {
+      "name": "stien sør for Årbogvatnet",
+      "lat": 68.58515,
+      "lng": 16.43644
+     },
+     {
+      "name": "stien sør for Årbogvatnet",
+      "lat": 68.58489,
+      "lng": 16.43455
+     },
+     {
+      "name": "stien sør for Årbogvatnet",
+      "lat": 68.58492,
+      "lng": 16.4338
+     },
+     {
+      "name": "stien sør for Årbogvatnet",
+      "lat": 68.58468,
+      "lng": 16.43306
+     },
+     {
+      "name": "stien sør for Årbogvatnet",
+      "lat": 68.5844,
+      "lng": 16.43126
+     },
+     {
+      "name": "stien sør for Årbogvatnet",
+      "lat": 68.58441,
+      "lng": 16.42965
+     },
+     {
+      "name": "stien sør for Årbogvatnet",
+      "lat": 68.58442,
+      "lng": 16.42804
+     },
+     {
+      "name": "stien sør for Årbogvatnet",
+      "lat": 68.58467,
+      "lng": 16.42791
      },
      {
       "name": "østryggen",
@@ -12352,7 +13416,7 @@
     ],
     "source": "researched, verified (ok), no local audit",
     "notes": "Fri Flyt: KAST 1 – Enkelt på normalruta, men hold ryggen: ved nedkjøring til venstre (nord) er to personer gravd fram av skred (2017 og 2019). Vindutsett; små vasspeil i søkka om våren. Sørrenna og vestrennene er komplekse ekspertlinjer og ikkje denne ruta.",
-    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (269 m from 1.11 km, 209 m from 1.63 km)."
+    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (269 m from 1.11 km, 209 m from 1.63 km). Lagt på stien sør for Årbogvatnet (way/613916543) der linja tok en krok nordover mot vatnet gjennom skogen."
    }
   ]
  },
@@ -12577,10 +13641,190 @@
     },
     "waypoints": [
      {
+      "name": "Kongsvikdalveien",
+      "lat": 68.57091,
+      "lng": 16.23517
+     },
+     {
+      "name": "Kongsvikdalveien",
+      "lat": 68.57067,
+      "lng": 16.23371
+     },
+     {
+      "name": "Kongsvikdalveien",
+      "lat": 68.57043,
+      "lng": 16.23226
+     },
+     {
+      "name": "Kongsvikdalveien",
+      "lat": 68.57064,
+      "lng": 16.23095
+     },
+     {
+      "name": "Kongsvikdalveien",
+      "lat": 68.57121,
+      "lng": 16.23015
+     },
+     {
+      "name": "Kongsvikdalveien",
+      "lat": 68.57178,
+      "lng": 16.22935
+     },
+     {
+      "name": "Kongsvikdalveien",
+      "lat": 68.5724,
+      "lng": 16.22797
+     },
+     {
+      "name": "Kongsvikdalveien",
+      "lat": 68.57298,
+      "lng": 16.22765
+     },
+     {
+      "name": "Kongsvikdalveien",
+      "lat": 68.57355,
+      "lng": 16.22733
+     },
+     {
+      "name": "Kongsvikdalveien",
+      "lat": 68.57434,
+      "lng": 16.22658
+     },
+     {
+      "name": "Kongsvikdalveien",
+      "lat": 68.57512,
+      "lng": 16.22583
+     },
+     {
+      "name": "Kongsvikdalveien",
+      "lat": 68.57543,
+      "lng": 16.22451
+     },
+     {
+      "name": "Kongsvikdalveien",
+      "lat": 68.57552,
+      "lng": 16.22196
+     },
+     {
+      "name": "Kongsvikdalveien",
+      "lat": 68.57592,
+      "lng": 16.22045
+     },
+     {
+      "name": "Kongsvikdalveien",
+      "lat": 68.57633,
+      "lng": 16.21893
+     },
+     {
+      "name": "Kongsvikdalveien",
+      "lat": 68.5768,
+      "lng": 16.21656
+     },
+     {
+      "name": "Kongsvikdalveien",
+      "lat": 68.57728,
+      "lng": 16.21418
+     },
+     {
+      "name": "Kongsvikdalveien",
+      "lat": 68.57774,
+      "lng": 16.21235
+     },
+     {
+      "name": "Kongsvikdalveien",
+      "lat": 68.57821,
+      "lng": 16.21051
+     },
+     {
+      "name": "Kongsvikdalveien",
+      "lat": 68.57859,
+      "lng": 16.20982
+     },
+     {
+      "name": "Kongsvikdalveien",
+      "lat": 68.5796,
+      "lng": 16.20908
+     },
+     {
+      "name": "Kongsvikdalveien",
+      "lat": 68.58033,
+      "lng": 16.2073
+     },
+     {
+      "name": "Kongsvikdalveien",
+      "lat": 68.58105,
+      "lng": 16.20551
+     },
+     {
+      "name": "Kongsvikdalveien",
+      "lat": 68.58178,
+      "lng": 16.20373
+     },
+     {
+      "name": "Kongsvikdalveien",
+      "lat": 68.58251,
+      "lng": 16.20194
+     },
+     {
       "name": "Kongsvikdalen",
       "lat": 68.58251,
       "lng": 16.20194,
       "elevation_m": 57.0
+     },
+     {
+      "name": "Kongsvikdalveien",
+      "lat": 68.58314,
+      "lng": 16.20113
+     },
+     {
+      "name": "Kongsvikdalveien",
+      "lat": 68.5841,
+      "lng": 16.20041
+     },
+     {
+      "name": "Kongsvikdalveien",
+      "lat": 68.58507,
+      "lng": 16.19969
+     },
+     {
+      "name": "Kongsvikdalveien",
+      "lat": 68.58603,
+      "lng": 16.19897
+     },
+     {
+      "name": "Kongsvikdalveien",
+      "lat": 68.58699,
+      "lng": 16.19825
+     },
+     {
+      "name": "Kongsvikdalveien",
+      "lat": 68.58801,
+      "lng": 16.19815
+     },
+     {
+      "name": "Kongsvikdalveien",
+      "lat": 68.58873,
+      "lng": 16.19843
+     },
+     {
+      "name": "Kongsvikdalveien",
+      "lat": 68.58944,
+      "lng": 16.19872
+     },
+     {
+      "name": "Kongsvikdalveien",
+      "lat": 68.59016,
+      "lng": 16.199
+     },
+     {
+      "name": "Kongsvikdalveien",
+      "lat": 68.59098,
+      "lng": 16.19825
+     },
+     {
+      "name": "Kongsvikdalveien",
+      "lat": 68.5918,
+      "lng": 16.1975
      },
      {
       "name": "Sætran",
@@ -12615,7 +13859,8 @@
     ],
     "source": "researched, verified (ok), no local audit",
     "notes": "Fri Flyt: KAST 2 – Utfordrende. Alpinøks og stegjern. Skavl kan danne seg over rampa mot ryggen — hold venstre (sør) gjennom partiet. Pinakkelen nord for toppen er M3-klyving med rappell og er ikkje turen. Lite trafikkert fjell.",
-    "avoidWater": true
+    "avoidWater": true,
+    "corridorNote": "Lagt på vegen for hånd: Kongsvikdalveien (OSM way/363815335) fra Y-krysset til Sætran, 0–3,3 km. Linja gikk før 20–90 m ved siden av vegen, delvis i elveløpet til Kongsvikelva; omleggingen i stirunden krysset seg selv ved brua og ble forkastet. Guiden: «følger du den vinterstengte veien cirka 4 km innover Kongsvikdalen»."
    }
   ]
  },
@@ -13444,9 +14689,43 @@
     "waypoints": [
      {
       "name": "traktorveien i Bjørndalen",
-      "lat": 68.974,
-      "lng": 16.28,
-      "elevation_m": 121.0
+      "lat": 68.97209,
+      "lng": 16.27901
+     },
+     {
+      "name": "traktorveien i Bjørndalen",
+      "lat": 68.97174,
+      "lng": 16.27889
+     },
+     {
+      "name": "traktorveien i Bjørndalen",
+      "lat": 68.97148,
+      "lng": 16.27935
+     },
+     {
+      "name": "traktorveien i Bjørndalen",
+      "lat": 68.97147,
+      "lng": 16.27976
+     },
+     {
+      "name": "traktorveien i Bjørndalen",
+      "lat": 68.97222,
+      "lng": 16.28186
+     },
+     {
+      "name": "traktorveien i Bjørndalen",
+      "lat": 68.97254,
+      "lng": 16.28397
+     },
+     {
+      "name": "traktorveien i Bjørndalen",
+      "lat": 68.9727,
+      "lng": 16.28419
+     },
+     {
+      "name": "traktorveien i Bjørndalen",
+      "lat": 68.97272,
+      "lng": 16.28392
      },
      {
       "name": "øvre Bjørndalen",
@@ -13468,7 +14747,8 @@
      }
     ],
     "source": "researched, verified (ok), no local audit",
-    "notes": "Fri Flyt: KAST 2 – Utfordrende. Alpinøks og stegjern. Sørsida held 30–35 grader; Sydrenna 35–40. Nordlinjene Goldfishrenna og Frogman (45–50 grader) krev rappell frå skavlen og er ekspertlinjer. Varsom.no for snø- og skredvarsel."
+    "notes": "Fri Flyt: KAST 2 – Utfordrende. Alpinøks og stegjern. Sørsida held 30–35 grader; Sydrenna 35–40. Nordlinjene Goldfishrenna og Frogman (45–50 grader) krev rappell frå skavlen og er ekspertlinjer. Varsom.no for snø- og skredvarsel.",
+    "corridorNote": "Lagt på traktorveien i Bjørndalen for hånd (OSM way/609491482) rundt Småtindaksla. Linja gikk en V opp til korridorpunktet «traktorveien i Bjørndalen», som lå 85 m fra nærmeste vei, og ned igjen; nå følger den traktorveien selv, 116 m kortere."
    }
   ]
  },
@@ -13780,10 +15060,89 @@
       "lng": 17.31714
      },
      {
-      "name": "langs Bjørndalselva",
-      "lat": 68.862,
-      "lng": 17.33,
-      "elevation_m": 267.0
+      "name": "stien langs Bjørndalselva",
+      "lat": 68.8638,
+      "lng": 17.3199
+     },
+     {
+      "name": "stien langs Bjørndalselva",
+      "lat": 68.86373,
+      "lng": 17.31979
+     },
+     {
+      "name": "stien langs Bjørndalselva",
+      "lat": 68.86363,
+      "lng": 17.32054
+     },
+     {
+      "name": "stien langs Bjørndalselva",
+      "lat": 68.86385,
+      "lng": 17.32204
+     },
+     {
+      "name": "stien langs Bjørndalselva",
+      "lat": 68.86408,
+      "lng": 17.32354
+     },
+     {
+      "name": "stien langs Bjørndalselva",
+      "lat": 68.86394,
+      "lng": 17.32499
+     },
+     {
+      "name": "stien langs Bjørndalselva",
+      "lat": 68.86381,
+      "lng": 17.32644
+     },
+     {
+      "name": "stien langs Bjørndalselva",
+      "lat": 68.86427,
+      "lng": 17.3288
+     },
+     {
+      "name": "stien langs Bjørndalselva",
+      "lat": 68.86404,
+      "lng": 17.33063
+     },
+     {
+      "name": "stien langs Bjørndalselva",
+      "lat": 68.86382,
+      "lng": 17.33247
+     },
+     {
+      "name": "stien langs Bjørndalselva",
+      "lat": 68.86377,
+      "lng": 17.33416
+     },
+     {
+      "name": "stien langs Bjørndalselva",
+      "lat": 68.86314,
+      "lng": 17.33476
+     },
+     {
+      "name": "stien langs Bjørndalselva",
+      "lat": 68.86261,
+      "lng": 17.33687
+     },
+     {
+      "name": "stien langs Bjørndalselva",
+      "lat": 68.86211,
+      "lng": 17.33801
+     },
+     {
+      "name": "stien langs Bjørndalselva",
+      "lat": 68.86162,
+      "lng": 17.33915
+     },
+     {
+      "name": "stien langs Bjørndalselva",
+      "lat": 68.86152,
+      "lng": 17.33964
+     },
+     {
+      "name": "stien langs Bjørndalselva",
+      "lat": 68.86172,
+      "lng": 17.33995
      },
      {
       "name": "sommerruta",
@@ -13807,7 +15166,7 @@
     "source": "researched, verified (ok), no local audit",
     "notes": "Fri Flyt: KAST 3 – Komplekst. Alpinøks og stegjern. Nedkjøringa holder 20–25 grader med parti på 35; traversen på 800–900 er mest utsatt, med historikk for store skred. Storeflaska på nordsiden er vedvarende bratt med parti på 45 grader og en annen linje.",
     "avoidWater": true,
-    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (319 m from 0.2 km)."
+    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (319 m from 0.2 km). Lagt på stien for hånd: stien langs Bjørndalselva (OSM way/1360123120) til der den krysser elva, og sommerruta videre (way/1360123121), 0,72–1,63 km. Linja krysset før elva tidlig og gikk 100–200 m sør for stien gjennom skogen, med en krok ved 1,2 km, på korridorpunktet «langs Bjørndalselva» som lå utenfor stien."
    },
    {
     "id": "rytterklofta",
@@ -15125,6 +16484,41 @@
       "elevation_m": 321.0
      },
      {
+      "name": "stien sørvest fra Maistua",
+      "lat": 68.76156,
+      "lng": 16.51887
+     },
+     {
+      "name": "stien sørvest fra Maistua",
+      "lat": 68.76086,
+      "lng": 16.51724
+     },
+     {
+      "name": "stien sørvest fra Maistua",
+      "lat": 68.76059,
+      "lng": 16.51566
+     },
+     {
+      "name": "stien sørvest fra Maistua",
+      "lat": 68.76029,
+      "lng": 16.515
+     },
+     {
+      "name": "stien sørvest fra Maistua",
+      "lat": 68.76029,
+      "lng": 16.51398
+     },
+     {
+      "name": "stien sørvest fra Maistua",
+      "lat": 68.76043,
+      "lng": 16.51339
+     },
+     {
+      "name": "stien sørvest fra Maistua",
+      "lat": 68.75982,
+      "lng": 16.51115
+     },
+     {
       "name": "ryggen over tregrensa",
       "lat": 68.7585,
       "lng": 16.509,
@@ -15133,7 +16527,7 @@
     ],
     "source": "researched, verified (ok), no local audit",
     "notes": "Fri Flyt: KAST 1 – Enkelt. Nedkjøringane på dei tre skildra rutene er for det meste 20–30 grader, men kilden er tydeleg på at ein utanfor dei lett kan oppsøkje heng på 40 grader — og at det berre skal gjerast når snøen er stabil. Toppryggen kan vera avblåst og bar eller vindpåverka, og dei fleste stoppar eit stykke nord for toppen.",
-    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (399 m from 0.6 km); replaced det opne feltet."
+    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (399 m from 0.6 km); replaced det opne feltet. Lagt på stien for hånd fra Maistua og opp mot ryggen (OSM way/437558644). Stien skrår opp sørvestover fra hytta, slik guiden beskriver («skrår ruta opp litt sørover»); linja gikk 40–60 m nord for den. Like lang og samme stigning."
    }
   ]
  },
@@ -15203,16 +16597,69 @@
     },
     "waypoints": [
      {
-      "name": "skogsvegen fra 2016",
-      "lat": 68.7485,
-      "lng": 16.535,
-      "elevation_m": 154.0
+      "name": "skogsveien fra 2016",
+      "lat": 68.74897,
+      "lng": 16.54027
      },
      {
-      "name": "gapahuken",
-      "lat": 68.747,
-      "lng": 16.525,
-      "elevation_m": 220.0
+      "name": "skogsveien fra 2016",
+      "lat": 68.74834,
+      "lng": 16.53858
+     },
+     {
+      "name": "skogsveien fra 2016",
+      "lat": 68.74802,
+      "lng": 16.53816
+     },
+     {
+      "name": "skogsveien fra 2016",
+      "lat": 68.74756,
+      "lng": 16.53594
+     },
+     {
+      "name": "skogsveien fra 2016",
+      "lat": 68.74709,
+      "lng": 16.53371
+     },
+     {
+      "name": "skogsveien fra 2016",
+      "lat": 68.74663,
+      "lng": 16.53149
+     },
+     {
+      "name": "skogsveien fra 2016",
+      "lat": 68.74617,
+      "lng": 16.52926
+     },
+     {
+      "name": "skogsveien fra 2016",
+      "lat": 68.74613,
+      "lng": 16.52834
+     },
+     {
+      "name": "skogsveien fra 2016",
+      "lat": 68.74644,
+      "lng": 16.52796
+     },
+     {
+      "name": "skogsveien fra 2016",
+      "lat": 68.74663,
+      "lng": 16.52684
+     },
+     {
+      "name": "skogsveien fra 2016",
+      "lat": 68.74657,
+      "lng": 16.52519
+     },
+     {
+      "name": "skogsveien fra 2016",
+      "lat": 68.74651,
+      "lng": 16.52354
+     },
+     {
+      "name": "skogsveien fra 2016",
+      "lat": 68.74662,
+      "lng": 16.52375
      },
      {
       "name": "skråninga mellom Litle Hinnstein og Hinnstein",
@@ -15228,7 +16675,8 @@
      }
     ],
     "source": "researched, verified (ok), no local audit",
-    "notes": "Fri Flyt: KAST 3 – Komplekst. «Hinnstein har bratte sider og det er sørøstsiden som tiltrekker flest skikjørere, men vær obs på at flere er tatt av skred der.» Sørøst 2, på framsida, er 35–45 grader. Normalruta si eiga nedkjøring er ikkje brattare enn 30 grader, men startar med kratt, lite snø og steinar, og mange set skia igjen og går ned same vegen."
+    "notes": "Fri Flyt: KAST 3 – Komplekst. «Hinnstein har bratte sider og det er sørøstsiden som tiltrekker flest skikjørere, men vær obs på at flere er tatt av skred der.» Sørøst 2, på framsida, er 35–45 grader. Normalruta si eiga nedkjøring er ikkje brattare enn 30 grader, men startar med kratt, lite snø og steinar, og mange set skia igjen og går ned same vegen.",
+    "corridorNote": "Lagt på skogsveien for hånd (OSM way/433123054, grusvei, tracktype grade1, privat motorferdsel, første gang kartlagt juli 2016) til Næverbakkan og videre på stien OSM way/128045015 forbi gapahuken. Linja gikk gjennom skogen mellom veien og stien, etter korridorpunktene «skogsvegen fra 2016» (112 m fra veien) og «gapahuken» (50 m fra stien), som var avrundet til tre desimaler."
    }
   ]
  },

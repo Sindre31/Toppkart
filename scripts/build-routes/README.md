@@ -7433,34 +7433,89 @@ own is 38.4°, which the same guide quotes elsewhere. Tortenviktinden's «1170
 metres of ground» was the sum of two bands, which the check cannot read as a
 measurement; it now names the two, 495 and 675 m.
 
+### The forty-seven, by hand
+
+The pass left 47 routes with a forest stretch, each with the reason it gave
+(«the path is 1501 m against 694 m of line», «research waypoint … is not on
+this path»). Nine of them had already been decided by hand in the sections
+above. The other 38 were each drawn over the topo map with every OSM way
+around them, the guide, the corridor's waypoints and the source, and either
+put on the way by hand or left with a measured reason. **Twenty moved:**
+
+| route | onto | line | gain |
+| --- | --- | --- | --- |
+| Blånebba | the Romsdalseggen path north of Tverrelva, with its steps | 4045 → 3946 m | 937 → 950 m |
+| Gyranfisen (3.5 km) | the path past Venehytta | 5557 → 5549 m | 668 → 652 m |
+| Hamperøkken | the path over Vartavarhaugen | 5636 → 5425 m | 1383 m |
+| Hattfjellet | the tractor road in Bjørndalen | 3970 → 3823 m | 829 → 827 m |
+| Heia (east) | the path south-west from Maistua | 2238 → 2233 m | 470 m |
+| Hinnstein | the landowners' 2016 forest road and the path past the shelter | 2898 → 2966 m | 510 → 513 m |
+| Jakobstinden | Kongsvikdalveien to Sætran | 7401 → 7340 m | 1017 → 1014 m |
+| Jakta | the road end and the steep path along Holåa | 4818 → 5146 m | 1569 → 1583 m |
+| Juklavasstinden | the track and tractor road towards Nipelva | 7422 → 7487 m | 1343 m |
+| Kleppstadheia | the ridge path over point 156 | 2191 → 2303 m | 525 → 530 m |
+| Langlitinden (west) | the path along Bjørndalselva | 5589 → 5683 m | 1305 → 1301 m |
+| Melderskin (Myrdalsvatnet) | the gravel road and tractor road, Juklavasstinden's start | 5133 → 5222 m | 1104 → 1106 m |
+| Middagstinden | the road along Berillvatnet | 6395 → 6018 m | 1308 → 1272 m |
+| Ospetinden | the toll road to Venåssetra | 6880 → 7136 m | 1061 → 1077 m |
+| Prestholtskarvet | the road through the cabin field | 11634 → 11569 m | 963 → 962 m |
+| Rana | the winter-closed road up the west bank of Urkeelva | 8569 → 8694 m | 1561 → 1555 m |
+| Rødtinden | the floodlit ski trail up Storelvdalen | 2324 → 2462 m | 450 m |
+| Sætertinden | the path south of Årbogvatnet | 6125 → 5860 m | 1116 → 1095 m |
+| Skarlitinden | the farm road and forest road from Sandeggen | 6359 → 6466 m | 939 → 937 m |
+| Skarven (1.1 km) | the summer path along Fremste Kjerringhaugelva | 3340 → 3135 m | 744 → 741 m |
+
+Most of them were a corridor waypoint that sat off the way it was named for:
+the research's «traktorveien i Bjørndalen», «vegen inn langs Berillvatnet»,
+«ryggen mot punkt 156», «langs Bjørndalselva» and «sør for topp 588» each sat
+85–330 m from the road, ridge or path, and the line made a V through the trees
+to reach it. Blånebba's path was invisible to the pass because it is
+`highway=steps` for a stretch. Kleppstadheia's line is now on the ridge Fri
+Flyt says to keep to, and its steepest 30 m comes down from 32.9° to 27.5°;
+on the other nineteen it is unchanged. Two spliced lines turned back on
+themselves where the way met the old line — Hattfjellet at the end of the
+tractor road, Rana at Haukåssætra — and the hook vertices were removed: 31 and
+100 m shorter, no crossing left. **Five cards moved**, with the seed row, both
+teasers and the guide: Gyranfisen 670 → 650, Jakta 1560 → 1580,
+Middagstinden 1310 → 1270 (its earlier line had climbed into the forest
+beside the road and back), Ospetinden 1060 → 1080 and Sætertinden 1110 → 1100.
+
+**Eighteen stay**, and three of the moved routes keep a shorter stretch. The
+reason on each is in `follow_trails_run.txt`, measured:
+
+- **the path goes somewhere else, or round** — Arbostadtinden (the only path is
+  1.5 km west), Gygrastølen, Høgevarde, Horndalsnuten, Lonahorgi, Midtitinden,
+  Mjølvafjellet (tractor roads zigzag 1156 m for 676 m of line),
+  Rørnestinden, Skarsteinfjellet (one hairpin of the tractor road, cut at 13°),
+  Vesoldo (the paths loop 700 m south: 1593 m against 1032 m), Gyranfisen's
+  0.5 km and Ospetinden's 4.1 km;
+- **the source puts the line there** — Sæbyggjenuten («linja her er
+  terrenglinja og ikke løypa»), Sula («tar du av oppover Skogsheia»),
+  Surløytenuten (down to the bridge over Esperåa, which OSM does not reach),
+  Togga («Gå mot sørøstryggen»), Varden («Aksla er ryggen opp»), Rondslottet
+  (open fell on the topo map, birch the map does not draw) and Ospetinden's
+  bog west of the setra;
+- **the path is steeper or climbs more** — Styggemann (the marked path over the
+  Jota shoulder climbs 50 m more) and Skarven's 0.6 km (the path climbs the
+  birch at 29.4° against the line's 22.3°);
+- **the way is not in OSM** — Glitregga's gravel road up Ålandsleitet, whose
+  lower part is not mapped; the line is on its track.
+
+Two of the eighteen want a look of their own, not a path move: Vesoldo's first
+kilometre goes north of Fannastølselva into Røynliane and crosses the river
+three times, and Horndalsnuten's line runs on or beside the river between 0.6
+and 1.4 km (the survey reads 21 of its samples there as `Elv`).
+
 ### What was left in the forest, and why
 
-Forty-seven routes, with the reason on each in `follow_trails_run.txt`. A
-route can have more than one.
-
-- **The path goes somewhere else** (29 routes — Gygrastølen, Vesoldo, Sula,
-  Mjølvafjellet among them): the shortest way along the mapped network is more
-  than half again as long as the line's detour. These are paths to a hut, a
-  farm or another summit that run alongside for a while; the line takes the
-  direct way through the forest, which is passable on snow.
-- **The card, then looked at by hand** (2): the line on the path climbed more
-  than ten metres more or less than the tour's stated vertical. Nine of the ten
-  were moved with their cards (below). Lodalskåpa stays, because its path is the
-  steeper way up, and so does Rundtinden's stretch over the bogs.
-- **A research waypoint holds the line where it is** (11 — Hamperøkken's
-  Vartavarhaugen, Hattfjellet's tractor road in Bjørndalen, Rondslottet's
-  Langglupdalen): the corridor puts the line there for a reason the path does
-  not share, and this round does not overrule the research.
-- **«Not connected», then looked at by hand** (5): the way the line leaves and
-  the way it rejoins are not joined in OSM, roads included, within 40 m. All nine
-  were looked at by hand; four were moved and these five stay (below).
-- **The path is steeper, wetter, or will not hold the line** (Sandhornet's
-  path from Horsdal runs along the shore at sea level and puts the steepest 30 m
-  at 34.5° against 32.5°; Såta's gives back 110 m; Lodalskåpa's, Rundtind's and
-  Vatnaknausen's re-solves stayed in the forest).
-- **A remainder** (7): a route that moved, with a shorter forest stretch left
-  that the path does not reach. On Englafjell it is the power-line clearing
-  where the map has no path.
+Thirty routes, 35 stretches, every one looked at by hand, with the reason in
+`follow_trails_run.txt`: the eighteen above, the remainders on Gyranfisen,
+Ospetinden and Skarven, and the nine decided earlier — Englafjell's
+power-line clearing, Lodalskåpa's switchback, Pilan's fields, Rombakstøtta's
+quarry, Rundtinden's bogs, Snønipa's river crossing at Høyseth, Taraldsviktinden's
+Gårdselva, Tverrfjellet's fv. 7784 and Vassdalstinden's remainder. The survey
+also lists a 266 m stretch on Blånebba: the line is on the steps there, which
+the survey's way set leaves out.
 
 ### Where the path data came from
 
