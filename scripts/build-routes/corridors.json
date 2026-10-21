@@ -14654,9 +14654,10 @@
      },
      {
       "name": "myrene nordaust",
-      "lat": 68.953,
-      "lng": 16.385,
-      "elevation_m": 262.0
+      "lat": 68.95322,
+      "lng": 16.38489,
+      "elevation_m": 257.6,
+      "note": "Flyttet inn på linja da knekken ved 1,16, 2,11 km ble glattet ut."
      },
      {
       "name": "lia",
@@ -15908,9 +15909,10 @@
      },
      {
       "name": "opp ryggen",
-      "lat": 68.914,
-      "lng": 16.59,
-      "elevation_m": 151.0
+      "lat": 68.91412,
+      "lng": 16.59073,
+      "elevation_m": 146.2,
+      "note": "Flyttet inn på linja da knekken ved 0,99 km ble glattet ut."
      },
      {
       "name": "austryggen",
