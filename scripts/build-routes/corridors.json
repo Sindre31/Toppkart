@@ -16182,9 +16182,10 @@
      },
      {
       "name": "rett nord av høyde 790",
-      "lat": 68.4985,
-      "lng": 15.5073,
-      "elevation_m": 754.0
+      "lat": 68.49853,
+      "lng": 15.50764,
+      "elevation_m": 752.2,
+      "note": "Flyttet inn på linja da knekken ved 6,74 km ble glattet ut."
      },
      {
       "name": "vestsida av høgdedraget",

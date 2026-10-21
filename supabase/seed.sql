@@ -378,7 +378,7 @@ where slug = 'storgalten';
 update public.tk_tours set
   description_up   = 'Fra det gamle grustaket i Glimbukta ved fv. 863 — 11,0 moh, vinteråpen fylkesveg. Du går opp lia mot vatnet på 100: skogen slutter allerede på 185 moh etter 1,39 km, med åpent område fra 199. Videre mot Skallvatnet på 320 er det småbratte parti mellom 230 og 300 moh som kilden ber deg navigere med omhu — beltet fra 300 til 400 måler 11,0 grader.
 
-Linja holder land ved sørenden av Skallvatnet, slik kilden legger den, og går opp ryggen vestover. Ryggen er kupert — 91 høydemeter gis tilbake underveis — og fra flata sørvest for punkt 695 sikter du nord-nordvest. Vatnet på 543 moh der er en del av linja: den krysser 103 meter av det, aldri mer enn 18 meter fra land — et naturlig vatn, ikke regulert, og på vinterisen er det ordinær vinterferdsel.
+Linja holder land ved sørenden av Skallvatnet, slik kilden legger den, og går opp ryggen vestover. Ryggen er kupert — 90 høydemeter gis tilbake underveis — og fra flata sørvest for punkt 695 sikter du nord-nordvest. Vatnet på 543 moh der er en del av linja: den krysser 103 meter av det, aldri mer enn 18 meter fra land — et naturlig vatn, ikke regulert, og på vinterisen er det ordinær vinterferdsel.
 
 De siste 800 metrene mot toppen er turens alvor: beltet fra 700 til 800 moh måler 21,6 grader over 225 meter grunn med det bratteste sammenhengende partiet på 27,0 mellom 763 og 785, og kilden gir parti på 30–40 grader som krever terrengvurdering — med bratt terreng på begge sider av linja. Varden på 901; registerets Store Skalltinden ligger 31 m fra Fri Flyts publiserte punkt, og toppsøket løser 901,1 mot publiserte 900.',
   description_down = 'Ned samme vei, med varianter etter forholdene. Sørøstsektoren linja følger er den slakeste på toppen — 16,5 grader i snitt over 500 meter med 33,7 som bratteste 60-metersvindu 240 til 300 meter ut.
@@ -559,7 +559,7 @@ Dammen fortjener sin egen setning: Rottenvikvatnet er et magasin — regulert, m
 Fra nordenden av vannet stiger terrenget til flata Fri Flyt setter på 650 moh — målt 650 på metern. Videre vestover passerer linja nord for det vesle vatnet på 697, og så kommer ryggformasjonen kilden ber deg være våken på: «Her er det små områder som er rundt 30 grader, så bruk litt tid på å gjøre gode veivalg». Linja holder 815 → 1070 på ryggen, med linjevalget som verktøyet.
 
 Fra ryggen er det rett mot toppen, slik kilden sier. Varden står på 1275 moh, og sørøstsida du kom opp er den slakeste sektoren fjellet har: 16,0 grader i snitt og 28,4 som bratteste 60 m-vindu de første hundre metrene.',
-  description_down = 'Samme trasé ned som opp er kildens råd, og tallene er med den: sørøst og sør er de eneste sektorene uten et 30-gradersvindu i sveipet — 28,4 og 28,2 grader som bratteste 60 m — og linja selv peiler 169 til 180 grader ned. Ned ryggen, forbi det vesle vatnet, ned på flata og rundt magasinet på land igjen — 119 høydemeter å gi tilbake har turen samlet, det meste rundt vatnet og på anleggsveien.
+  description_down = 'Samme trasé ned som opp er kildens råd, og tallene er med den: sørøst og sør er de eneste sektorene uten et 30-gradersvindu i sveipet — 28,4 og 28,2 grader som bratteste 60 m — og linja selv peiler 169 til 180 grader ned. Ned ryggen, forbi det vesle vatnet, ned på flata og rundt magasinet på land igjen — 123 høydemeter å gi tilbake har turen samlet, det meste rundt vatnet og på anleggsveien.
 
 Sørsidenedfarten Fri Flyt nevner — 35–45 grader ned mot Rottenvikvatnet — er ikke denne linja, og kilden sier selv hvorfor med uvanlig tunge ord — «Sørsiden av fjellet har vært åsted for et par tragiske skredulykker med dødelig utfall», skriver den, og den skriver det i beskrivelsen av normalruta, ikke om varianten: steinparti rundt 1000 moh må identifiseres på vei opp, og utkjøringa krever sikker is på et vann som er regulert. Denne guiden tegner den ikke.
 
@@ -946,7 +946,7 @@ Over det flater det ut mot varden, slik kilden sier: beltet fra 800 til 900 moh 
 
 Fri Flyts eneste advarsel for toppryggen gjelder skavler: «Vær obs på skavler på toppryggen.» Fra varden er nordvest den slakeste sektoren med 18,8 grader i snitt, mens nordøst måler 34,4, sørvest 33,9 og sør 30,2 — dette er en topp som faller bratt i nesten alle retninger, og ryggen er den ene veien som ikke gjør det.
 
-Fra ryggfoten ved Lonketuva er det myra ut igjen, og turen gir bare 5 høydemeter tilbake underveis.',
+Fra ryggfoten ved Lonketuva er det myra ut igjen, og turen gir bare 2 høydemeter tilbake underveis.',
   avalanche_notes  = jsonb_build_array(
     jsonb_build_object(
       'title', 'Ruta',
@@ -996,7 +996,7 @@ Opp der terrenget er slakest, mellom høydene på 406, og inn på ryggen fra 587
 Ryggen nordover — 740 moh der korridoren peker mot varden — og sluttpartiet som krever ekstra fokus: ski kan settes igjen, og kilden nevner 30 m tau og litt utstyr for vanskelige forhold. Beltet fra 800 til 900 er det bratteste i snitt med 18,9 grader; varden står på 945.',
   description_down = 'Sør er den slake sida: flankemålinga gir 20,0 grader i snitt der sydryggen kommer, mot 46,1 i nord — med 66,5-vindu 30–90 m ut — og 69,3 mot nordøst. Nedkjøringsvariantene måler 35–40 grader (nordrenna og østsida) og opp mot 50 øverst på vestsida: vurder snøen før valg.
 
-Linja gir tilbake 137 av de 1025 meterne den vinner — undulasjonen langs vannene og ryggen, som også bærer Fri Flyts 1080 høydemeter. Regn hjemturen som kupert: felle av og på langs Trollvatnet og Storvatnet før sporet ned til Dale.',
+Linja gir tilbake 138 av de 1025 meterne den vinner — undulasjonen langs vannene og ryggen, som også bærer Fri Flyts 1080 høydemeter. Regn hjemturen som kupert: felle av og på langs Trollvatnet og Storvatnet før sporet ned til Dale.',
   avalanche_notes  = jsonb_build_array(
     jsonb_build_object(
       'title', 'Toppartiet',
@@ -1640,7 +1640,7 @@ Framsida er en annen sak. Sørøst 2 holder 35–45 grader, med det enkleste len
 where slug = 'hinnstein';
 
 update public.tk_tours set
-  description_up   = 'Fra den vesle parkeringa på nedsida av fv. 848 der Storelva renner ut i havet — 39 moh — går linja opp lia østover: skoggrensa ligger på 327 etter 1,62 km, og beltet fra 0 til 100 måler 4,4 grader langs elva før lia tar til.
+  description_up   = 'Fra den vesle parkeringa på nedsida av fv. 848 der Storelva renner ut i havet — 39 moh — går linja opp lia østover: skoggrensa ligger på 327 etter 1,60 km, og beltet fra 0 til 100 måler 4,5 grader langs elva før lia tar til.
 
 Opp lia til 435 og inn på Rollryggen fra 682: beltet fra 500 til 600 er det bratteste i snitt med 24,2 grader, og det bratteste enkeltpartiet, 31,3 grader mellom 565 og 597 moh, ligger i innsteget til ryggen.
 
@@ -1848,7 +1848,7 @@ Grunnen til at ruta går inn litt sør for toppen står i målingen: sør er den
 where slug = 'sorvikfjellet';
 
 update public.tk_tours set
-  description_up   = 'Fra lommene ved Melå — 11 moh; traktorveien går på sørsida av Melåelva, i motsetning til Tverrfjellet-turens nordside — og bratt gjennom skogslia først: beltet fra 100 til 200 er linjas bratteste i snitt med 23,7 grader. Skoggrensa ligger på 355 etter 2,58 km.
+  description_up   = 'Fra lommene ved Melå — 11 moh; traktorveien går på sørsida av Melåelva, i motsetning til Tverrfjellet-turens nordside — og bratt gjennom skogslia først: beltet fra 100 til 200 er linjas bratteste i snitt med 23,7 grader. Skoggrensa ligger på 355 etter 2,57 km.
 
 Traktorveien står i linja på 230 og Dalbotnen på 296 — beltet fra 200 til 300 måler 3,7 grader over halvannen kilometer — så til høyre (sør) mot 505-høyda og forbi den vesle slitne hytta.
 
@@ -1873,11 +1873,11 @@ Hold ryggen: østsida mot Austerfjorden er brattere, og ryggen hjemover måler 2
 where slug = 'melaaksla';
 
 update public.tk_tours set
-  description_up   = 'Fra den store parkeringa ved DNT-hytta — 212 moh — faller linja mot Storvatnet og følger vestsida sørover: 155, 145 og 140 moh der korridoren er festet. Vatnet er stort, og de 123 høydemetrene du gir fra deg her er halve forklaringen på at kilden oppgir 800 for et fjell som ligger 656 meter over hytta.
+  description_up   = 'Fra den store parkeringa ved DNT-hytta — 212 moh — faller linja mot Storvatnet og følger vestsida sørover: 155, 145 og 140 moh der korridoren er festet. Vatnet er stort, og de 124 høydemetrene du gir fra deg her er halve forklaringen på at kilden oppgir 800 for et fjell som ligger 656 meter over hytta.
 
 Kilden skriver «Gå over Rundfjellvannet», men linja går på land nord for tjernet — samme regel som ellers i appen. Fra sørvestenden av Storvatnet stiger ruta opp bekkedalen på nordsida av høyde 339, som terrengmodellen måler til 337,7. Midt i dalen er ikke en tilfeldig formulering: det er skredterreng på begge sider, og det er den eneste hazard-instruksen kilden gir.
 
-Over Rundfjellvatnet på 300 moh og opp på nordøstryggen — 602 der korridoren står i den. Skogen slipper først på 344 moh etter 4,97 km, den lengste skogsmarsjen i runden. Det bratteste hundremetersbeltet måler 18,5 grader mellom 700 og 800 moh, over 325 meter grunn, og det bratteste enkeltsteget, 23,9 grader, ligger mellom 509 og 529 moh.',
+Over Rundfjellvatnet på 300 moh og opp på nordøstryggen — 602 der korridoren står i den. Skogen slipper først på 344 moh etter 4,95 km, den lengste skogsmarsjen i runden. Det bratteste hundremetersbeltet måler 18,5 grader mellom 700 og 800 moh, over 325 meter grunn, og det bratteste enkeltsteget, 23,9 grader, ligger mellom 509 og 529 moh.',
   description_down = 'Samme ryggen hjem. Kilden lover «for det meste 20-25 graders kjøring, men noen partier er 30 grader», og linja holder seg under det hele veien: ingen av beltene måler over 18,5 grader i snitt.
 
 Flankesveipet plasserer det bratte der kilden ikke sender deg: sør for varden ligger et 54,6-vindu 20–80 meter ute og sørøst 50,3 bare 10–70 meter ute. Sørvest er den slake sida med 8,8 grader i snitt. Ryggen nordøstover er ruta, og den måler 20,2.',
@@ -1992,7 +1992,7 @@ Vestrennene (30–50 grader) er terrengfeller ved ustabilitet, sier kilden, og N
     ),
     jsonb_build_object(
       'title', 'Opp-og-ned-regnskapet',
-      'body',  '255 meter gis tilbake på ryggene — det er 255 meter som skal klatres igjen på hjemveien. Regn timene deretter: kilden gir 6–7, og de er ærlige.'
+      'body',  '256 meter gis tilbake på ryggene — det er 256 meter som skal klatres igjen på hjemveien. Regn timene deretter: kilden gir 6–7, og de er ærlige.'
     ),
     jsonb_build_object(
       'title', 'Før du går',
@@ -2106,7 +2106,7 @@ Den andre dokumenterte ruta tar østsida fra båthamna i Kongsvik — 792 høyde
 where slug = 'taraldsviktinden';
 
 update public.tk_tours set
-  description_up   = 'Fra den store parkeringsplassen ved rundkjøringa — 49 moh — går du vest rundt botn, forbi parkeringa på vestsida, og gir fra deg 46 meter ned mot fjæra før ryggfoten tar imot på 75. Skogen slutter allerede på 125 moh etter 2,77 km — det meste av skituren er over tregrensa.
+  description_up   = 'Fra den store parkeringsplassen ved rundkjøringa — 49 moh — går du vest rundt botn, forbi parkeringa på vestsida, og gir fra deg 46 meter ned mot fjæra før ryggfoten tar imot på 75. Skogen slutter allerede på 125 moh etter 2,76 km — det meste av skituren er over tregrensa.
 
 Ryggen nordover er førsteakten: 289 moh der linja står på den, med beltet fra 100 til 200 på 20,5 grader. Før det brattere partiet svinger du vest inn i renna på 376 — og det er her fjellet viser seg: beltet fra 500 til 600 måler 24,1 grader, med turens bratteste enkeltparti, 31,1, mellom 542 og 563.
 
@@ -2140,7 +2140,7 @@ Fra hyllene tar toppflanken over: 13,9 og 18,1 grader i beltene fra 800, og det 
 
 Sør- og østsida er en annen historie: 39,1 og 38,6 grader i snitt med vinduer på 59,7 og 52,8. Og i dalen gjelder samme regel ned som opp: midt i, mellom utløpssonene.
 
-Kilden gir to startsteder, ikke ett: «Egen parkeringsplass langs R85, rett på sørsiden av elveutløpet. For østruta parkeres det på Gullesfjordbotn camping.» Østruta er den andre, og den kommer inn fra motsatt side av fjellet. Fra campingen på 3 moh holder linja nordsiden av Vesterelva forbi 86 og 91, over vatnet på 76 — 121 der linja går — og videre mellom vatnene på 167 til vatnet på 113, som krysses vestover på 278. Så den bratte traseen kilden setter til 30–40 grader, opp forbi 293 og 326 til vatnet på 289 på 332, og sørover langs den slake ryggen på 440 til høyda 667. Derfra under toppen av Vestbotntinden — linja går over skuldra på 864, ikke over toppen på 935 — og ned 259 høydemeter til Øvre Storelvvatnet på 605, over vatnet, og opp igjen på 652 og 803 inn på ruta fra Snytindhytta som runder toppen på vestsiden. 1360 høydemeter på 8,52 km mot 1544 på 8,80 km fra Løbergsbukta: litt kortere, mindre klatring, 367 meter tilbake mot 561 — det er to traverser av samme fjell fra hver sin fjord. Linja står på is fire steder, og alle fire er kildens egne: 135 meter over vatnet på 76, 90 meter over vatnet på 115 — kildens «vann 113» — 191 meter over vatnet på 274, og 150 meter over Øvre Storelvvatnet på 590. «Krysset vann 76», «vann 113 krysses vestover», «stak over vannet», skriver den. Skogen slipper på 212 moh etter 2,46 km. Beltet fra 400 til 500 moh måler 21,1 grader og det bratteste 30-metersvinduet 36,5 mellom 973 og 996, i topphenget. Alpinøks og stegjern står i faktaboksen for begge rutene.',
+Kilden gir to startsteder, ikke ett: «Egen parkeringsplass langs R85, rett på sørsiden av elveutløpet. For østruta parkeres det på Gullesfjordbotn camping.» Østruta er den andre, og den kommer inn fra motsatt side av fjellet. Fra campingen på 3 moh holder linja nordsiden av Vesterelva forbi 86 og 91, over vatnet på 76 — 121 der linja går — og videre mellom vatnene på 167 til vatnet på 113, som krysses vestover på 278. Så den bratte traseen kilden setter til 30–40 grader, opp forbi 293 og 326 til vatnet på 289 på 332, og sørover langs den slake ryggen på 440 til høyda 667. Derfra under toppen av Vestbotntinden — linja går over skuldra på 864, ikke over toppen på 935 — og ned 259 høydemeter til Øvre Storelvvatnet på 605, over vatnet, og opp igjen på 652 og 803 inn på ruta fra Snytindhytta som runder toppen på vestsiden. 1365 høydemeter på 8,52 km mot 1544 på 8,80 km fra Løbergsbukta: litt kortere, mindre klatring, 372 meter tilbake mot 561 — det er to traverser av samme fjell fra hver sin fjord. Linja står på is fire steder, og alle fire er kildens egne: 135 meter over vatnet på 76, 90 meter over vatnet på 115 — kildens «vann 113» — 191 meter over vatnet på 274, og 150 meter over Øvre Storelvvatnet på 590. «Krysset vann 76», «vann 113 krysses vestover», «stak over vannet», skriver den. Skogen slipper på 212 moh etter 2,46 km. Beltet fra 400 til 500 moh måler 21,1 grader og det bratteste 30-metersvinduet 36,5 mellom 973 og 996, i topphenget. Alpinøks og stegjern står i faktaboksen for begge rutene.',
   avalanche_notes  = jsonb_build_array(
     jsonb_build_object(
       'title', 'Ruta',
@@ -2220,10 +2220,10 @@ where slug = 'moysalen';
 update public.tk_tours set
   description_up   = 'Fra parkeringa — 23 moh — som på Lakselvtindan: nordsida av Storvatnet på 85, nord for høyde 258, og 217 moh der Lakselva krysses mot øst. Skogen slipper på 220 moh etter 2,57 km, og beltet fra 300 til 400 er det bratteste i snitt med 19,0 grader over 313 meter grunn.
 
-Opp på Lakselvtindan, 747 moh, og så vestover langs høydedraget til du står rett nord av høyde 790 — DTM1 måler 790,6, og korridoren står på 754 rett nord av den. Mellom 700 og 800 moh ligger to kilometer nesten flatt høyfjell: beltet måler 2,1 grader i snitt over 1955 meter grunn.
+Opp på Lakselvtindan, 747 moh, og så vestover langs høydedraget til du står rett nord av høyde 790 — DTM1 måler 790,6, og korridoren står på 754 rett nord av den. Mellom 700 og 800 moh ligger to kilometer nesten flatt høyfjell: beltet måler 2,1 grader i snitt over 1946 meter grunn.
 
 Videre nordover holder ruta seg på nedsida — vestsida — av draget, 668 moh der korridoren er festet, fordi det er bratte partier rett før oppstigningen tar til. Så sydryggen: det bratteste steget på hele linja, 33,1 grader, ligger mellom 834 og 863 moh, rett under varden på 907.',
-  description_down = 'Samme veien hjem, for det meste under 20 grader med et par partier på 25–30, sier kilden. Men hjemveien er også en ny oppstigning: de 309 høydemeterne du ga fra deg skal tas igjen, og Lakselvtindan står i veien en gang til.
+  description_down = 'Samme veien hjem, for det meste under 20 grader med et par partier på 25–30, sier kilden. Men hjemveien er også en ny oppstigning: de 313 høydemeterne du ga fra deg skal tas igjen, og Lakselvtindan står i veien en gang til.
 
 Flankesveipet forklarer hvorfor sydryggen er den eneste veien opp og ned. S måler 22,5 grader i snitt med et 40,8-vindu 70 til 130 meter ute — det bratte partiet kilden nevner. N, NE, V og NV ligger på 46,9 til 48,6 i snitt med vinduer fra 60,6 til 75,9, og øst har 76,8 bare 30 til 90 meter ute.',
   avalanche_notes  = jsonb_build_array(
@@ -2237,7 +2237,7 @@ Flankesveipet forklarer hvorfor sydryggen er den eneste veien opp og ned. S mål
     ),
     jsonb_build_object(
       'title', 'Før du går',
-      'body',  'Forselvtinden ligger i varslingsregionen Lofoten og Vesterålen, en A-region med daglig skredvarsel gjennom sesongen. Sjekk varsom.no. Sesongen februar–april er Fri Flyts, og 8,38 km med 309 høydemeter tilbake gjør dette til en tur der tidspunktet på dagen avgjør hvilken snø du møter på returen. En tom side betyr ikke trygt fjell.'
+      'body',  'Forselvtinden ligger i varslingsregionen Lofoten og Vesterålen, en A-region med daglig skredvarsel gjennom sesongen. Sjekk varsom.no. Sesongen februar–april er Fri Flyts, og 8,37 km med 313 høydemeter tilbake gjør dette til en tur der tidspunktet på dagen avgjør hvilken snø du møter på returen. En tom side betyr ikke trygt fjell.'
     )
   )
 where slug = 'forselvtinden';
@@ -5906,7 +5906,7 @@ De andre sidene av toppen er ikke det. Øst måler 48,5 grader i 60-metersvindue
   avalanche_notes  = jsonb_build_array(
     jsonb_build_object(
       'title', 'Ruta',
-      'body',  'Sju kilometer skogsterreng under 2 grader, og så en kilometer som stiger: 14,6 grader fra 700 til 800 moh og 15,1 fra 800 til 900, med bratteste sammenhengende parti 23,2 grader mellom 700 og 719 moh. Ruta gir tilbake 159 høydemeter over de rullende skogsryggene mellom Ravalsjø og Sørmyrseter. Ruta krysser dessuten 1541 meter is fordelt på fem vatn mellom 475 og 602 moh — ikke skredterreng, men heller ikke bakke.'
+      'body',  'Sju kilometer skogsterreng under 2 grader, og så en kilometer som stiger: 14,6 grader fra 700 til 800 moh og 15,1 fra 800 til 900, med bratteste sammenhengende parti 23,2 grader mellom 700 og 719 moh. Ruta gir tilbake 166 høydemeter over de rullende skogsryggene mellom Ravalsjø og Sørmyrseter. Ruta krysser dessuten 1541 meter is fordelt på fem vatn mellom 475 og 602 moh — ikke skredterreng, men heller ikke bakke.'
     ),
     jsonb_build_object(
       'title', 'Terrenget utenfor',

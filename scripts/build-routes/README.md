@@ -7838,6 +7838,41 @@ The other 71 stay:
 in their guides' notes from the steepness round. They lie away from the new
 curves.
 
+### Batch 3, tours 51–75
+
+Two rules changed in this batch.
+
+- **Overlapping kinks are no longer skipped.** They are done from the far end,
+  so each kink's vertex numbers are still the line's own. The old rule had
+  left the spikes alone, and the spikes are the ones most worth fixing.
+- **A curve that adds more than 5 m of climbing is undone.** A smoother line
+  that climbs more has found a hump the corner went round.
+
+The batch had 94 kinks. Fifteen were smoothed:
+
+- Lasselitinden at 0.5 and 0.6 km.
+- Melåaksla at 2.0 and 3.6 km. Its third curve, at 4.2 km, added 6 m and was
+  undone.
+- Rundfjellet at 4.1 km, a 159° spike.
+- Reinspælen at 4.2 km, two spikes of 165° and 177°, and at 4.3 km. The line
+  now crosses itself once, not twice.
+- Kongsviktinden at 6.0 km.
+- Nonstinden at 0.7 km, a 155° spike and the turn after it.
+- Snøtindan's Gullesfjordbotn route at 3.5 km.
+- Forselvtinden at 6.7 km.
+
+One plain waypoint moved, by 14 m. Snøtindan's Løbergsdalen route was put
+back, because «sør for tjernet på 573» would have ended 107 m off the line.
+
+The fact diff now also compares the metres a route gives back. That turned up
+guides from earlier batches that still gave the old figure. Those now say
+Store Skalltinden 90, Fastdalstinden 123, Lonketind 2, Stortussen 138 and
+Styggemann 166. This batch's own guides now say Rundfjellet 124, Reinspælen
+256, Kongsviktinden 101, Snøtindan 372 and Forselvtinden 313.
+
+`check_geometry` lists a self-crossing on Snøtindan's Gullesfjordbotn route.
+It was there before this batch.
+
 ## Network
 
 Everything is public and unauthenticated:
