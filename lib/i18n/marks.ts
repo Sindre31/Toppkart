@@ -24,8 +24,6 @@ export interface MarksDict {
   metaTitle: string;
   metaDescription: string;
   heading: string;
-  /** Under the heading: where the list lives. */
-  storedLocally: string;
   favoritesTitle: string;
   doneTitle: string;
   doneTotals: (count: number, vertical: string) => string;
@@ -50,8 +48,6 @@ const MARKS: Translated<MarksDict> = {
     metaTitle: "Mine turer",
     metaDescription: "Favorittene dine og turene du har gått, lagret på enheten din.",
     heading: "Mine turer",
-    storedLocally:
-      "Lista ligger på denne enheten, i denne nettleseren. Toppkart har ingen kontoer, så den følger ikke med til en annen telefon eller PC.",
     favoritesTitle: "Favoritter",
     doneTitle: "Turer du har gått",
     doneTotals: (count, vertical) =>
@@ -75,8 +71,6 @@ const MARKS: Translated<MarksDict> = {
     metaTitle: "My tours",
     metaDescription: "Your favourites and the tours you have done, saved on your device.",
     heading: "My tours",
-    storedLocally:
-      "The list lives on this device, in this browser. Toppkart has no accounts, so it does not follow you to another phone or computer.",
     favoritesTitle: "Favourites",
     doneTitle: "Tours you have done",
     doneTotals: (count, vertical) =>

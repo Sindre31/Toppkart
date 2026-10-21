@@ -47,3 +47,10 @@
 .aside { font-size: 13px; color: var(--color-label); text-align: right; white-space: nowrap; }
 
 .empty { margin: 0 0 6px; font-size: 14px; line-height: 21px; color: var(--color-muted); }
+
+/* PC: seksjonen tar høyden sida har igjen (se `.fullPage` på `/mine-turer`),
+   så bunnteksten havner nederst i vinduet. Kortene beholder sin naturlige
+   høyde. */
+@media (min-width: 761px) {
+  .section { flex: 1; }
+}
