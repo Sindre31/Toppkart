@@ -1153,13 +1153,13 @@
     },
     {
       "what": "Kor linja passerer Svartavatnet og tjørna på 766",
-      "figure": "Sørstranda av Svartavatnet 2,47 km ute på 410 moh; tjørna 6,21 km ute på 769 moh; Middagsdalen 7,40 km ute på 939 moh",
+      "figure": "Sørstranda av Svartavatnet 2,47 km ute på 410 moh; tjørna 6,03 km ute på 769 moh; Middagsdalen 7,23 km ute på 939 moh",
       "how": "Næraste vertex til kvart punkt i routes.json: 7 m frå sørstranda, 5 m frå tjørna, 71 m frå Middagsdalen-punktet i corridors.json."
     },
     {
       "what": "Kor mykje av linja som står på vatn",
-      "figure": "0 m av 7 803",
-      "how": "Kartverkets terrengklasse lesen kvar 2. m langs den runda linja (3 769 punkt), og check_ground.py mot OSMs vasspolygon. Begge svarar 0."
+      "figure": "0 m av 7 635",
+      "how": "Kartverkets terrengklasse lesen kvar 2. m langs den runda linja (3 819 punkt), og check_ground.py mot OSMs vasspolygon. Begge svarar 0."
     },
     {
       "what": "Glumragjelet — kjeldas eige faremoment — i registeret og i terrenget",

@@ -2930,18 +2930,18 @@
  "gullfjellstoppen": {
   "verticalM": 840,
   "gainM": 839,
-  "distanceM": 7802,
+  "distanceM": 7635,
   "startM": 307,
   "summitM": 987,
-  "duration": "5–7 t",
+  "duration": "4–6 t",
   "steepestBandAngle": 8.1,
   "steepestBandFrom": 800,
   "steepestBandTo": 900,
   "maxStepAngle": 27.4,
   "grade": 2,
   "aspect": "SV",
-  "distanceKm": 7.8,
-  "cumdistM": 7803
+  "distanceKm": 7.6,
+  "cumdistM": 7635
  },
  "tveitakvitingen": {
   "verticalM": 990,
