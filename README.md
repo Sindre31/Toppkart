@@ -372,13 +372,14 @@ content and data quality that has to be settled before the site is promoted wide
   lines; Røseknuten has no way up that keeps clear of the cornice edge above Røsehola, and the
   guide says where the line runs 5–31 m from it. The second sources are summer routes from other starts, so all three are
   `confidence: medium`. See «The Sirdal round» in `scripts/build-routes/README.md`.
-- **Seventy lines that ran beside the path through forest now run on it.** A line solved over
+- **Seventy-one lines that ran beside the path through forest now run on it.** A line solved over
   the terrain model does not know a path is drawn on the map, and in places it ran 50–200 m to one
   side of one and came back. On open ground that is left alone — it is snow either side, and the
   winter line is often the better one — but below the treeline the path is where the trees are
   cleared, so `follow_trails.py` puts those stretches on the mapped path or road, changing nothing
-  else on the line: the steepest 30 m is unchanged on 63 of the 70, and fourteen cards moved with their lines:
-  Englafjell 1240 → 1230 m, Forselvtinden 1180 → 1190, Gyranfisen 670 → 650, Jakta 1560 → 1580,
+  else on the line: the steepest 30 m is unchanged on 63 of the 71, and fifteen cards moved with their lines:
+  Englafjell 1240 → 1230 m, Forselvtinden 1180 → 1190, Gyranfisen 670 → 650, Horndalsnuten 1120 → 1170
+  (the tractor road over the bridge, where the line had run in the river gorge), Jakta 1560 → 1580,
   Middagstinden 1290 → 1270 (the road along Berillvatnet), Ospetinden 1060 → 1080 (the toll road to
   Venåssetra), Rundtinden
   880 → 910 (Mevassveien and Drangenveien to the road end, as the guide says), Sandhornet
@@ -388,7 +389,8 @@ content and data quality that has to be settled before the site is promoted wide
   by hand, 270 m longer and otherwise as it was, and so were Tverrfjellet (the tractor road north
   of Melåelva) and Snønipa from Veitebergsdalen (the forest road from the start). The 47 routes the
   pass left were then each looked at by hand: twenty more moved, most of them a corridor waypoint that
-  sat off the road or path it was named for. 35 forest stretches on 30 routes stay, each with a
+  sat off the road or path it was named for, and Vesoldo onto the path that crosses Fannastølselva once
+  instead of three times. 31 forest stretches on 29 routes stay, each with a
   measured reason in `follow_trails_run.txt` — mostly a path that goes somewhere else or round, a
   source that puts the line there, or a path that is steeper. See «The path round» in
   `scripts/build-routes/README.md`.

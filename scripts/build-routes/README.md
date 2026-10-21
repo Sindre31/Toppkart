@@ -7487,8 +7487,7 @@ reason on each is in `follow_trails_run.txt`, measured:
   1.5 km west), Gygrastølen, Høgevarde, Horndalsnuten, Lonahorgi, Midtitinden,
   Mjølvafjellet (tractor roads zigzag 1156 m for 676 m of line),
   Rørnestinden, Skarsteinfjellet (one hairpin of the tractor road, cut at 13°),
-  Vesoldo (the paths loop 700 m south: 1593 m against 1032 m), Gyranfisen's
-  0.5 km and Ospetinden's 4.1 km;
+  Gyranfisen's 0.5 km and Ospetinden's 4.1 km;
 - **the source puts the line there** — Sæbyggjenuten («linja her er
   terrenglinja og ikke løypa»), Sula («tar du av oppover Skogsheia»),
   Surløytenuten (down to the bridge over Esperåa, which OSM does not reach),
@@ -7501,15 +7500,49 @@ reason on each is in `follow_trails_run.txt`, measured:
 - **the way is not in OSM** — Glitregga's gravel road up Ålandsleitet, whose
   lower part is not mapped; the line is on its track.
 
-Two of the eighteen want a look of their own, not a path move: Vesoldo's first
-kilometre goes north of Fannastølselva into Røynliane and crosses the river
-three times, and Horndalsnuten's line runs on or beside the river between 0.6
-and 1.4 km (the survey reads 21 of its samples there as `Elv`).
+### Vesoldo and Horndalsnuten, by hand
+
+Two of the eighteen kept stretches turned out to have a worse problem than a path
+beside them. The line crossed a river where it did not need to, or ran in it.
+
+**Vesoldo** climbed north from the car park at Byrkjenes over the braided
+mouth of Fannastølselva, up into Røynliane and back down over the river, and
+crossed it a third time below Fadnastølen. The line is now on the mapped path
+from the car park (ways 288358041 and 1118672851). The path heads south and
+takes the steep forested slope in long turns before swinging north to the
+summer farm, and crosses the river once, where the path itself crosses it.
+That is the loop the triage turned down as 700 m south for nothing: 4217 →
+4678 m, 839 → 841 m up, card 840 as before. The steepest 30 m comes down from
+28.9° to 28.2°. A grid search along the south bank that was not allowed to
+cross the river was tried first. It was shorter, but it traversed the
+riverbank at up to 47°, against 34° under the old line. With the steep ground
+priced in, it drew the path's loop. The guide now
+says to keep to the path, and its steepest hundred metres move from 300–400
+moh (16.5°) on the old line to 500–600 above the farm (15.9°).
+
+**Horndalsnuten** ran in the bed of Raundalselvi, through the gorge below
+Horndalsberget, from 0.5 to 1.4 km. That flat riverbed was the guide's
+«halvannen kilometer flat innmarsj». The source starts at the bridge over
+Raundalselvi and follows the tractor road past Horndalsbruni into
+Horndalsbotnen, and the line now does that:
+- from the car park straight down through the forest to Horndalsvegen at the
+  bridge, 238 m at up to 19° (way/608601584, the bridge way/429374579, then
+  /429363586 and /511553955);
+- then the tractor road (way/441797694) up the hairpins on Fureneset, along
+  above the gorge and down to Horndøla, where the old line picks up again.
+
+The figures: 6023 → 7005 m, 1124 → 1170 m up, card 1120 → 1170, and 106 m
+given back against 60, mostly the road's dip after Fureneset. The steepest
+30 m is 31.4° at the top, as before. The river is crossed once, on the bridge;
+the old line ran in it for nine hundred metres. The bog stretch from
+the car park, kept before, is gone with it. The guide, teaser and seed row
+follow.
 
 ### What was left in the forest, and why
 
-Thirty routes, 35 stretches, every one looked at by hand, with the reason in
-`follow_trails_run.txt`: the eighteen above, the remainders on Gyranfisen,
+Twenty-nine routes, 31 stretches, every one looked at by hand, with the reason in
+`follow_trails_run.txt`: seventeen of the eighteen above (Horndalsnuten keeps one
+of its two), the remainders on Gyranfisen,
 Ospetinden and Skarven, and the nine decided earlier — Englafjell's
 power-line clearing, Lodalskåpa's switchback, Pilan's fields, Rombakstøtta's
 quarry, Rundtinden's bogs, Snønipa's river crossing at Høyseth, Taraldsviktinden's

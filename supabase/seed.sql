@@ -196,7 +196,7 @@ values
   ('storanosi', 'Storanosi', 'Voss', 60.7663, 6.62341, 1205, 740, '3–5 t', 2, 'NØ', 'jan–apr', '740 høydemeter fra Ljosno gjennom åpen bjørkeskog og ut på platået over Brandsetdalen.', true),
   ('lonahorgi', 'Lønahorgi', 'Voss', 60.69383, 6.41489, 1412, 1300, '5–7 t', 2, 'NØ', 'feb–apr', '1300 høydemeter fra Høyland via Bergsstølen og Breiming, med de siste 107 opp nordryggen fra punkt 1305.', true),
   ('vatnaknausen', 'Vatnaknausen', 'Voss', 60.64948, 6.649, 1302, 990, '5–7 t', 2, 'V', 'jan–apr', '990 høydemeter fra Tverrberg: bomveien inn Budalen til Nyestølen, opp på egga vest for Rjupetjørnane, og østover platået til utsikta over Voss.', true),
-  ('horndalsnuten', 'Horndalsnuten', 'Voss', 60.64218, 6.67655, 1462, 1120, '5–7 t', 3, 'N', 'jan–apr', '1120 høydemeter fra Skiple gjennom Horndalsbotnen, med den bratte kneika fra skuldra til slutt.', true),
+  ('horndalsnuten', 'Horndalsnuten', 'Voss', 60.64218, 6.67655, 1462, 1170, '5–7 t', 3, 'N', 'jan–apr', '1170 høydemeter fra Skiple gjennom Horndalsbotnen, med den bratte kneika fra skuldra til slutt.', true),
   ('folarskardnuten', 'Folarskardnuten', 'Hallingdal', 60.60742, 7.78251, 1932, 998, '6–8 t', 3, 'S', 'mar–mai', 'Over 13 km inn fra Haugastøl og 998 høydemeter, med et kort 29-graders trinn opp fra Folarskardet.', true),
   ('prestholtskarvet', 'Prestholtskarvet', 'Geilo', 60.55843, 8.0126, 1860, 960, '6–8 t', 3, 'S', 'jan–apr', 'Elleve kilometer og 960 høydemeter fra Havsdalen forbi Prestholtstølan og opp Prestholtskardet til Hallingskarvets sørskarv.', true),
   ('gyranfisen', 'Gyranfisen', 'Vikerfjell', 60.47203, 9.89027, 1127, 650, '3–5 t', 2, 'Ø', 'jan–apr', '650 høydemeter fra Vikerkoia over Svarttjernskollen, med 200 av dem gitt tilbake i søkket før Ringerikes høyeste punkt.', true),
@@ -207,7 +207,7 @@ values
   ('gullfjellstoppen', 'Gullfjellstoppen', 'Bergen', 60.38756, 5.59037, 987, 840, '5–7 t', 2, 'SV', 'jan–apr', '839 høydemeter fra veienden ved Osavatnet, forbi Redningshytta og opp Middagsdalen til Bergens høyeste punkt.', true),
   ('tveitakvitingen', 'Tveitakvitingen', 'Kvamskogen', 60.3254, 5.90858, 1299, 1000, '5–7 t', 3, 'NØ', 'jan–apr', '996 høydemeter og 8,6 km fra Furedalen alpinsenter: langrennssporene på Mødalsvegen til Mødal, bratte kliv forbi Gråskorvenuten og en langstrakt rygg til varden.', true),
   ('grafjell', 'Gråfjell', 'Norefjell', 60.31831, 9.39572, 1466, 596, '4–6 t', 2, 'S', 'des–mar', '600 høydemeter og 8,1 km fra Tempelsetra forbi Istjenn og Donkelitjenn til Norefjells høyeste topp.', true),
-  ('vesoldo', 'Vesoldo', 'Hardanger', 60.31237, 6.09197, 1046, 840, '3–5 t', 2, 'SV', 'feb–apr', '838 høydemeter fra Byrkjenes, skog opp til Fadnastølen og åpen sørvestrygg over; nord- og vestsida av toppen faller 48–55°.', true),
+  ('vesoldo', 'Vesoldo', 'Hardanger', 60.31237, 6.09197, 1046, 840, '3–5 t', 2, 'SV', 'feb–apr', '841 høydemeter fra Byrkjenes, skog opp til Fadnastølen og åpen sørvestrygg over; nord- og vestsida av toppen faller 48–55°.', true),
   ('ranten', 'Ranten', 'Norefjell', 60.30259, 9.41922, 1416, 530, '3–5 t', 2, 'S', 'jan–apr', '530 høydemeter fra Tempelseter om stikrysset på Raudmyra og vestover opp på den taggete ryggen Kittelsen malte som Soria Moria.', true),
   ('hogevarde', 'Høgevarde', 'Norefjell', 60.2972, 9.46662, 1461, 600, '3–5 t', 1, 'SV', 'jan–apr', '600 høydemeter fra Tempelseter opp den oppstakede løypa til DNT-hytta på 1397, og de siste 560 metrene ut på ryggen til sikteplata.', true),
   ('gygrastolen', 'Gygrastolen', 'Hardanger', 60.05949, 6.16031, 1347, 1270, '5–7 t', 3, 'N', 'feb–apr', '1270 høydemeter fra fjorden i Ænes opp ryggen over Gygrastølvatnet, rett mot Folgefonna.', true),
@@ -5118,22 +5118,22 @@ Fra eggen samme vei tilbake: ned flanken til Nyestølen, og veikjeden ut Budalen
 where slug = 'vatnaknausen';
 
 update public.tk_tours set
-  description_up   = 'Start ved den kartfestede parkeringa ved brua over Raundalselvi ved Skiple, 398 moh, omtrent tjue kilometer øst for Voss. De første 1490 metrene grunn er tilnærmet flate — bandet fra 300 til 400 moh måler 0,8 grader — og ruta krysser elva tidlig.
+  description_up   = 'Start ved den kartfestede parkeringa ved Raundalsvegen på Skiple, 398 moh, omtrent tjue kilometer øst for Voss. Gå rett ned gjennom skogen til Horndalsvegen og over brua over Raundalselvi, der kilden starter turen, og følg traktorveien videre sørover på vestsida. Sør for brua renner elva i et juv under Horndalsberget; ruta holder seg på veien og går ikke ned i det. Traktorveien stiger slakt opp over Fureneset og gir litt tilbake ned mot Horndøla: bandet fra 300 til 400 moh måler 0,1 grader over 1104 meter grunn, og 400 til 500 moh 3,3 grader over 1818 meter.
 
 Følg traktorveien forbi Horndalsbruni og inn i Horndalsbotnen på 757 moh. Skogen holder til 781 moh, og i den øvre lia mot Bjørnsetstølen er det skredbaner; hold deg i skogen der nede.
 
 Fra botnen stiger ruta mot skuldra. Bandet fra 900 til 1000 moh måler 16,9 grader og 1000 til 1100 moh 21,4, som er bratteste hundremeteren. Bratteste sammenhengende parti på hele turen ligger her, 31,4 grader over tretti meter mellom 1093 og 1116 moh.
 
 Over skuldra på 1153 moh flater det ut en stund, 13,3 grader fra 1100 til 1200 moh, før den siste kneika: 20,6 grader fra 1200 til 1300 moh, og deretter jevnere terreng til varden på 1462.',
-  description_down = 'Ned samme veien, nordover gjennom Horndalsbotnen og ut den flate innmarsjen til Skiple. Fallretninga er nord, og fjellet holder derfor kaldt føre lenge — det er også grunnen til at det sjelden er vårføre å hente her.
+  description_down = 'Ned samme veien, nordover gjennom Horndalsbotnen og ut traktorveien til brua og Skiple. Fallretninga er nord, og fjellet holder derfor kaldt føre lenge — det er også grunnen til at det sjelden er vårføre å hente her.
 
-Vanligste feil: å legge nedkjøringa i den øvre lia mot Bjørnsetstølen fordi den ser åpen ut. Der er det skredbaner. Den andre er å undervurdere innmarsjen: 1490 meter tilnærmet flat grunn er tungt å gå tilbake i myk snø, og turen er lengre enn høydemetrene tilsier.
+Vanligste feil: å legge nedkjøringa i den øvre lia mot Bjørnsetstølen fordi den ser åpen ut. Der er det skredbaner. Den andre er å undervurdere innmarsjen: traktorveien fra Horndøla til brua er over to kilometer slak grunn, med en kort stigning over Fureneset på vei ut, og turen er lengre enn høydemetrene tilsier. Og ikke ta snarveien i elveløpet under Horndalsberget — Raundalselvi renner der i et juv.
 
-Kilden fører to startsteder, ett på hver side av fjellet: «Oppstigningen fra nord starter ved Skiple i Raundalen, snaut tjue kilometer øst fra Voss. Oppstigningen fra sør starter i Skaftedalen.» Og den sier hvorfor: «Det er to gode utgangspunkt for denne turen, et på den skyggefulle nordsiden, og et som ligger solvendt mot sør.» Appens rute er nordruta; sørruta ligger nå ved siden av den. Fra enden av Skaftedalsvegen på 486 moh går linja i slakt terreng nordøstover opp dalen forbi 662 og 766 til stølen Skytjeset på 882 — kildens «omtrent 890 moh» — og derfra på ryggformasjonen over 1063, flanken på 1249 og 1368 til topps. 1022 høydemeter på 6,13 km mot 1124 på 6,02 km fra Skiple: nesten samme tur, motsatt sol. Skogen slipper på 758 moh etter 2,91 km, mot 781 på nordruta. Bratteste hundremetersbeltet er 19,5 grader fra 900 til 1000 moh, og bratteste 30-metersvinduet 33,2 mellom 1211 og 1231, mot 31,4 på nordruta. Kilden gir et valg øverst — enten det bratte, markerte dalsøkket eller ryggformasjonen og flanken; linja her er ryggen, som er den kilden beskriver helt til topps.',
+Kilden fører to startsteder, ett på hver side av fjellet: «Oppstigningen fra nord starter ved Skiple i Raundalen, snaut tjue kilometer øst fra Voss. Oppstigningen fra sør starter i Skaftedalen.» Og den sier hvorfor: «Det er to gode utgangspunkt for denne turen, et på den skyggefulle nordsiden, og et som ligger solvendt mot sør.» Appens rute er nordruta; sørruta ligger nå ved siden av den. Fra enden av Skaftedalsvegen på 486 moh går linja i slakt terreng nordøstover opp dalen forbi 662 og 766 til stølen Skytjeset på 882 — kildens «omtrent 890 moh» — og derfra på ryggformasjonen over 1063, flanken på 1249 og 1368 til topps. 1022 høydemeter på 6,13 km mot 1170 på 7,0 km fra Skiple: kortere og med mindre stigning, og motsatt sol. Skogen slipper på 758 moh etter 2,91 km, mot 781 på nordruta. Bratteste hundremetersbeltet er 19,5 grader fra 900 til 1000 moh, og bratteste 30-metersvinduet 33,2 mellom 1211 og 1231, mot 31,4 på nordruta. Kilden gir et valg øverst — enten det bratte, markerte dalsøkket eller ryggformasjonen og flanken; linja her er ryggen, som er den kilden beskriver helt til topps.',
   avalanche_notes  = jsonb_build_array(
     jsonb_build_object(
       'title', 'Ruta',
-      'body',  'Flat innmarsj, jevn midtdel og en bratt kneik til slutt. Bratteste hundremeteren, 1000 til 1100 moh, måler 21,4 grader, og bratteste sammenhengende parti 31,4 grader mellom 1093 og 1116 moh. Hele fjellsida er nordvendt.'
+      'body',  'Slak innmarsj på traktorveien, jevn midtdel og en bratt kneik til slutt. Bratteste hundremeteren, 1000 til 1100 moh, måler 21,4 grader, og bratteste sammenhengende parti 31,4 grader mellom 1093 og 1116 moh. Hele fjellsida er nordvendt.'
     ),
     jsonb_build_object(
       'title', 'Terrenget rundt',
@@ -5447,13 +5447,13 @@ Det er derfor Gråfjell er en navigasjonstur og ikke en skredtur. Går du feil n
 where slug = 'grafjell';
 
 update public.tk_tours set
-  description_up   = 'Fra parkeringa ved Byrkjenes, 211 moh, innerst på Tordalsvegen nord for Strandebarm, går du opp den bratte skogkledde lia mot Fadnastølen, 498 moh. Dette er den bratteste delen av turen: bratteste hundremeteren ligger mellom 300 og 400 moh og måler 16,5 grader i snitt. Tordalsvegen er privat bomvei, og brøyting helt fram til parkeringa er ikke garantert — ring eller sjekk før du kjører langt.
+  description_up   = 'Fra parkeringa ved Byrkjenes, 211 moh, innerst på Tordalsvegen nord for Strandebarm, går du opp den bratte skogkledde lia mot Fadnastølen, 498 moh, på stien: den går først sørover fra parkeringa og tar lia i lange slag før den svinger nordover til stølen, og krysser Fannastølselva én gang, like nedenfor. Hold deg på stien — elva renner i flere løp under Røynliane, og en linje rett opp nordsida krysser den tre ganger. Bratteste tretti meter på turen ligger her, 28,2 grader mellom 290 og 311 moh, mens hundremeteren fra 300 til 400 moh måler 13,4 grader i snitt. Tordalsvegen er privat bomvei, og brøyting helt fram til parkeringa er ikke garantert — ring eller sjekk før du kjører langt.
 
-Over stølen åpner terrenget seg, med skog i flekker opp til rundt 577 moh. Ruta holder nordøstover inn på den brede sørvestryggen ved 629 moh.
+Over stølen åpner terrenget seg, med skog i flekker opp til rundt 580 moh. Ruta holder nordøstover inn på den brede sørvestryggen ved 629 moh, og stigningen fra stølen og opp dit er turens bratteste hundremeter: 15,9 grader fra 500 til 600 moh.
 
 Derfra følger du ryggen sammenhengende nordover — 791 moh, så skulderen på 977 moh. Hele den øvre delen ligger på 10 til 13 grader: det er slakere enn sørfallet like ved, som holder 20,8 grader i snitt med et 33,7-graders belte 580 til 640 meter ute fra toppen. Sørvestryggen måler 9,5 grader i snitt, og det er grunnen til at linja ligger der den ligger.
 
-De siste hundre metrene svinger nordøstover opp den slake toppkuppelen til varden på 1046 moh. Bratteste sammenhengende parti på hele linja måler 28,9 grader, og det ligger nede i skogslia.',
+De siste hundre metrene svinger nordøstover opp den slake toppkuppelen til varden på 1046 moh. Bratteste sammenhengende parti på hele linja måler 28,2 grader, og det ligger nede i skogslia.',
   description_down = 'Ned samme ryggen: sørover over skuldra på 977 moh og 791 moh, ned til 629 og videre til Fadnastølen. Fra stølen og ned er det skogsli — bratt nok til å være fin kjøring, og bratt nok til å gå løs etter mildvær og regn.
 
 Vanligste feil: å gå for langt vest eller nord fra varden. Nord, nordvest og vest faller 19 til 26 grader i snitt, men bryter av i 48 til 55 grader en halv kilometer ute fra varden, og toppkuppelen er så slak at du ikke kjenner det på skia før kanten er der. I flatt lys er det den eneste reelle faren på turen.
@@ -5462,7 +5462,7 @@ Den andre feilen er å ta sørfallet ned fra toppen i stedet for sørvestryggen.
   avalanche_notes  = jsonb_build_array(
     jsonb_build_object(
       'title', 'Ruta',
-      'body',  'Nederste halvdelen er bratt skogsli, rundt 19 grader i snitt fra parkeringa til Fadnastølen, mens hele den øvre ryggen ligger på 10 til 13 grader. Bratteste sammenhengende parti på linja måler 28,9 grader. Den skogkledde lia over Byrkjenes er bratt nok til å gå løs etter mildvær og regn — det er den delen av ruta som endrer seg med været, ikke ryggen.'
+      'body',  'Nederste halvdelen er bratt skogsli, rundt 19 grader i snitt fra parkeringa til Fadnastølen, mens hele den øvre ryggen ligger på 10 til 13 grader. Bratteste sammenhengende parti på linja måler 28,2 grader. Den skogkledde lia over Byrkjenes er bratt nok til å gå løs etter mildvær og regn — det er den delen av ruta som endrer seg med været, ikke ryggen.'
     ),
     jsonb_build_object(
       'title', 'Terrenget rundt',

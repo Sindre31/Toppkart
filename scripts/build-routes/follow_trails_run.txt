@@ -18,7 +18,7 @@ hattfjellet_sorsiden                     3970 -> 3854     829 -> 830    31.4 -> 
 heia_ost-1                               2219 -> 2233     470 -> 470    25.0 -> 24.7   (by hand)
 hesten-segla_normalruta                  2234 -> 2314     515 -> 515    25.3 -> 25.3
 hinnstein_sorost                         2898 -> 2966     510 -> 513    23.7 -> 23.7   (by hand)
-horndalsnuten_normalruta                 5934 -> 6023    1121 -> 1124   31.4 -> 31.4
+horndalsnuten_normalruta                 5934 -> 7005    1121 -> 1170   31.4 -> 31.4   (by hand, the tractor road over the bridge; card 1120 -> 1170)
 horndalsnuten_skaftedalen                5762 -> 6130    1007 -> 1022   27.7 -> 27.7
 istinden_normalvegen                     5238 -> 5362    1432 -> 1435   27.7 -> 27.7
 jakobstinden_sorostsiden                 7401 -> 7340    1017 -> 1014   31.0 -> 31.0   (by hand)
@@ -74,6 +74,7 @@ tverrfjellet_sorsiden                    5529 -> 5764     885 -> 888    23.9 -> 
 tylderingen_fretland                     2807 -> 3007     610 -> 611    23.8 -> 23.8
 vassdalstinden_normalruta                6560 -> 6905    1223 -> 1232   41.3 -> 41.3   (card 1220 -> 1230)
 vatnaknausen_tverrberg                   7495 -> 7596     980 -> 991    21.9 -> 21.9   (by hand, the toll road; card 980 -> 990)
+vesoldo_normalruta                       4217 -> 4678     839 -> 841    28.9 -> 28.2   (by hand, the path; the line crossed Fannastølselva three times)
 
 ## Every detour left on the shipped lines
 # SKOG = mostly forest, with the reason it stays; open = open ground, skiable either side of the path.
@@ -154,10 +155,8 @@ hogevarde_norefjellstua                open  11.11 km   159 m  off  45/ 67 m  Å
   -> left as it is, by hand: no mapped link from the end of cabin road way/610550455 (888 moh) to path way/1072230370 (234 m gap); the way round via way/408406902 east of the cabins is 579 m against 279 m (2.1x), and 3 of 8 samples are open ground
 hogevarde_tempelseter                  open   0.33 km   279 m  off  68/ 91 m  ÅpentOmråde 5, Skog 3
 hogevarde_tempelseter                  open   0.86 km   239 m  off  50/ 88 m  ÅpentOmråde 7
-horndalsnuten_normalruta               SKOG   0.05 km   229 m  off  54/ 99 m  Skog 6
-horndalsnuten_normalruta               open   0.38 km  1288 m  off 106/220 m  Elv 21, Skog 12
-horndalsnuten_normalruta               SKOG   1.77 km   329 m  off  77/121 m  Skog 9
-  -> left as it is, by hand: 0.05 km: Horndalsvegen loops 300 m east of the bog the line crosses straight from the car park (road 623 m against 229 m); 1.77 km: the tractor road and the paths wind west and east of the line's straight climb from the road crossing to the path at 2.1 km (828 m against 329 m)
+horndalsnuten_normalruta               SKOG   2.75 km   319 m  off  77/121 m  Skog 9
+  -> left as it is, by hand: the tractor road and the paths wind west and east of the line's straight climb from the end of the road to the path at 3.1 km (828 m against 319 m). The line ran in the bed of Raundalselvi through the gorge at 0.5-1.4 km and is now on the tractor road over the bridge, by hand
 horndalsnuten_skaftedalen              open   3.33 km   177 m  off  53/ 63 m  ÅpentOmråde 5
 horndalsnuten_skaftedalen              open   3.80 km  1945 m  off 112/293 m  ÅpentOmråde 50
 husfjellet_skaland                     open   1.42 km   279 m  off  43/ 60 m  ÅpentOmråde 8
@@ -355,8 +354,5 @@ venevassegga_jakobskardet              open   0.98 km   489 m  off  87/112 m  Å
 venevassegga_jakobskardet              open   3.74 km   289 m  off  59/ 68 m  ÅpentOmråde 8
 vesle-nup_ulevaa                       open   0.79 km   179 m  off  63/ 87 m  ÅpentOmråde 4, Myr 1
 vesle-nup_ulevaa                       open   1.22 km   359 m  off  63/ 84 m  ÅpentOmråde 10
-vesoldo_normalruta                     SKOG   0.08 km   471 m  off 111/197 m  Skog 13
-vesoldo_normalruta                     SKOG   0.65 km   227 m  off  77/113 m  Skog 6
-vesoldo_normalruta                     open   1.63 km   172 m  off  58/ 87 m  ÅpentOmråde 5
-  -> left as it is, by hand: the mapped paths from Byrkjenes to Fadnastølen (ways 1385765443, 288358041, 1118672851) loop 700 m south before turning north — 1593 m against 1032 m of line for the same 260 m of climbing (steepest 30 m 28.2° against 28.9°); not worth the loop
+vesoldo_normalruta                     open   2.09 km   174 m  off  56/ 88 m  ÅpentOmråde 5
 ytstevasshornet_normalruta             open   0.16 km   169 m  off  42/ 71 m  ÅpentOmråde 3, ? 2

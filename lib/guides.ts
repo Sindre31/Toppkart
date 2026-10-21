@@ -6474,22 +6474,22 @@ export const GUIDES: Record<string, TourGuide> = {
   horndalsnuten: {
     slug: "horndalsnuten",
     intro:
-      "1124 høydemeter på 6,02 km fra Skiple i Raundalen, med halvannen kilometer flat innmarsj før terrenget tar til å stige. Bratteste sammenhengende parti måler 31,4 grader og ligger mellom 1093 og 1116 moh — nordvendt, og siste kneika til toppen er bratteste delen av ruta.",
+      "1170 høydemeter på 7,0 km fra Skiple i Raundalen, med en lang og slak innmarsj på traktorveien over Raundalselvi og forbi Horndalsbruni før terrenget tar til å stige. Bratteste sammenhengende parti måler 31,4 grader og ligger mellom 1093 og 1116 moh — nordvendt, og siste kneika til toppen er bratteste delen av ruta.",
     ascent: [
-      "Start ved den kartfestede parkeringa ved brua over Raundalselvi ved Skiple, 398 moh, omtrent tjue kilometer øst for Voss. De første 1490 metrene grunn er tilnærmet flate — bandet fra 300 til 400 moh måler 0,8 grader — og ruta krysser elva tidlig.",
+      "Start ved den kartfestede parkeringa ved Raundalsvegen på Skiple, 398 moh, omtrent tjue kilometer øst for Voss. Gå rett ned gjennom skogen til Horndalsvegen og over brua over Raundalselvi, der kilden starter turen, og følg traktorveien videre sørover på vestsida. Sør for brua renner elva i et juv under Horndalsberget; ruta holder seg på veien og går ikke ned i det. Traktorveien stiger slakt opp over Fureneset og gir litt tilbake ned mot Horndøla: bandet fra 300 til 400 moh måler 0,1 grader over 1104 meter grunn, og 400 til 500 moh 3,3 grader over 1818 meter.",
       "Følg traktorveien forbi Horndalsbruni og inn i Horndalsbotnen på 757 moh. Skogen holder til 781 moh, og i den øvre lia mot Bjørnsetstølen er det skredbaner; hold deg i skogen der nede.",
       "Fra botnen stiger ruta mot skuldra. Bandet fra 900 til 1000 moh måler 16,9 grader og 1000 til 1100 moh 21,4, som er bratteste hundremeteren. Bratteste sammenhengende parti på hele turen ligger her, 31,4 grader over tretti meter mellom 1093 og 1116 moh.",
       "Over skuldra på 1153 moh flater det ut en stund, 13,3 grader fra 1100 til 1200 moh, før den siste kneika: 20,6 grader fra 1200 til 1300 moh, og deretter jevnere terreng til varden på 1462.",
     ],
     descent: [
-      "Ned samme veien, nordover gjennom Horndalsbotnen og ut den flate innmarsjen til Skiple. Fallretninga er nord, og fjellet holder derfor kaldt føre lenge — det er også grunnen til at det sjelden er vårføre å hente her.",
-      "Vanligste feil: å legge nedkjøringa i den øvre lia mot Bjørnsetstølen fordi den ser åpen ut. Der er det skredbaner. Den andre er å undervurdere innmarsjen: 1490 meter tilnærmet flat grunn er tungt å gå tilbake i myk snø, og turen er lengre enn høydemetrene tilsier.",
-      "Kilden fører to startsteder, ett på hver side av fjellet: «Oppstigningen fra nord starter ved Skiple i Raundalen, snaut tjue kilometer øst fra Voss. Oppstigningen fra sør starter i Skaftedalen.» Og den sier hvorfor: «Det er to gode utgangspunkt for denne turen, et på den skyggefulle nordsiden, og et som ligger solvendt mot sør.» Appens rute er nordruta; sørruta ligger nå ved siden av den. Fra enden av Skaftedalsvegen på 486 moh går linja i slakt terreng nordøstover opp dalen forbi 662 og 766 til stølen Skytjeset på 882 — kildens «omtrent 890 moh» — og derfra på ryggformasjonen over 1063, flanken på 1249 og 1368 til topps. 1022 høydemeter på 6,13 km mot 1124 på 6,02 km fra Skiple: nesten samme tur, motsatt sol. Skogen slipper på 758 moh etter 2,91 km, mot 781 på nordruta. Bratteste hundremetersbeltet er 19,5 grader fra 900 til 1000 moh, og bratteste 30-metersvinduet 33,2 mellom 1211 og 1231, mot 31,4 på nordruta. Kilden gir et valg øverst — enten det bratte, markerte dalsøkket eller ryggformasjonen og flanken; linja her er ryggen, som er den kilden beskriver helt til topps.",
+      "Ned samme veien, nordover gjennom Horndalsbotnen og ut traktorveien til brua og Skiple. Fallretninga er nord, og fjellet holder derfor kaldt føre lenge — det er også grunnen til at det sjelden er vårføre å hente her.",
+      "Vanligste feil: å legge nedkjøringa i den øvre lia mot Bjørnsetstølen fordi den ser åpen ut. Der er det skredbaner. Den andre er å undervurdere innmarsjen: traktorveien fra Horndøla til brua er over to kilometer slak grunn, med en kort stigning over Fureneset på vei ut, og turen er lengre enn høydemetrene tilsier. Og ikke ta snarveien i elveløpet under Horndalsberget — Raundalselvi renner der i et juv.",
+      "Kilden fører to startsteder, ett på hver side av fjellet: «Oppstigningen fra nord starter ved Skiple i Raundalen, snaut tjue kilometer øst fra Voss. Oppstigningen fra sør starter i Skaftedalen.» Og den sier hvorfor: «Det er to gode utgangspunkt for denne turen, et på den skyggefulle nordsiden, og et som ligger solvendt mot sør.» Appens rute er nordruta; sørruta ligger nå ved siden av den. Fra enden av Skaftedalsvegen på 486 moh går linja i slakt terreng nordøstover opp dalen forbi 662 og 766 til stølen Skytjeset på 882 — kildens «omtrent 890 moh» — og derfra på ryggformasjonen over 1063, flanken på 1249 og 1368 til topps. 1022 høydemeter på 6,13 km mot 1170 på 7,0 km fra Skiple: kortere og med mindre stigning, og motsatt sol. Skogen slipper på 758 moh etter 2,91 km, mot 781 på nordruta. Bratteste hundremetersbeltet er 19,5 grader fra 900 til 1000 moh, og bratteste 30-metersvinduet 33,2 mellom 1211 og 1231, mot 31,4 på nordruta. Kilden gir et valg øverst — enten det bratte, markerte dalsøkket eller ryggformasjonen og flanken; linja her er ryggen, som er den kilden beskriver helt til topps.",
     ],
     avalanche: [
       {
         title: "Ruta",
-        body: "Flat innmarsj, jevn midtdel og en bratt kneik til slutt. Bratteste hundremeteren, 1000 til 1100 moh, måler 21,4 grader, og bratteste sammenhengende parti 31,4 grader mellom 1093 og 1116 moh. Hele fjellsida er nordvendt.",
+        body: "Slak innmarsj på traktorveien, jevn midtdel og en bratt kneik til slutt. Bratteste hundremeteren, 1000 til 1100 moh, måler 21,4 grader, og bratteste sammenhengende parti 31,4 grader mellom 1093 og 1116 moh. Hele fjellsida er nordvendt.",
       },
       {
         title: "Terrenget rundt",
@@ -6501,11 +6501,11 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,194 L24,198 L46,197 L68,198 L95,197 L122,196 L148,190 L166,185 L193,176 L225,162 L252,154 L278,146 L299,139 L316,136 L337,133 L359,128 L381,120 L406,111 L427,101 L443,93 L462,83 L478,71 L494,67 L512,58 L529,46 L545,37 L565,32 L592,22 L600,18",
+      path: "M0,192 L27,199 L44,199 L58,198 L74,195 L87,193 L103,190 L120,187 L132,185 L146,182 L160,179 L175,176 L190,177 L203,178 L220,180 L243,178 L288,157 L325,144 L354,135 L385,128 L420,116 L451,100 L478,85 L501,70 L528,55 L551,38 L583,27 L600,18",
       startLabel: "398 moh",
       endLabel: "1462 moh",
-      distanceLabel: "6,0 km",
-      caption: "1124 høydemeter og 6,02 km fra Skiple gjennom Horndalsbotnen, med skoggrensa på 781 moh og skuldra på 1153 moh før toppkneika.",
+      distanceLabel: "7,0 km",
+      caption: "1170 høydemeter og 7,0 km fra Skiple over Raundalselvi og gjennom Horndalsbotnen, med skoggrensa på 781 moh og skuldra på 1153 moh før toppkneika.",
     },
   },
   folarskardnuten: {
@@ -6890,12 +6890,12 @@ export const GUIDES: Record<string, TourGuide> = {
   vesoldo: {
     slug: "vesoldo",
     intro:
-      "838 høydemeter fra Byrkjenes, og en tur som blir slakere jo høyere du kommer: bratt skogsli nederst, åpen og jevn rygg over. Toppkuppelen er lettvint å gå — men den ligger et par hundre meter over stupene mot vest og nordvest, og en halv kilometer over dem mot nord, og i flatt lys er kanten ikke synlig.",
+      "841 høydemeter fra Byrkjenes, og en tur som blir slakere jo høyere du kommer: bratt skogsli nederst, åpen og jevn rygg over. Toppkuppelen er lettvint å gå — men den ligger et par hundre meter over stupene mot vest og nordvest, og en halv kilometer over dem mot nord, og i flatt lys er kanten ikke synlig.",
     ascent: [
-      "Fra parkeringa ved Byrkjenes, 211 moh, innerst på Tordalsvegen nord for Strandebarm, går du opp den bratte skogkledde lia mot Fadnastølen, 498 moh. Dette er den bratteste delen av turen: bratteste hundremeteren ligger mellom 300 og 400 moh og måler 16,5 grader i snitt. Tordalsvegen er privat bomvei, og brøyting helt fram til parkeringa er ikke garantert — ring eller sjekk før du kjører langt.",
-      "Over stølen åpner terrenget seg, med skog i flekker opp til rundt 577 moh. Ruta holder nordøstover inn på den brede sørvestryggen ved 629 moh.",
+      "Fra parkeringa ved Byrkjenes, 211 moh, innerst på Tordalsvegen nord for Strandebarm, går du opp den bratte skogkledde lia mot Fadnastølen, 498 moh, på stien: den går først sørover fra parkeringa og tar lia i lange slag før den svinger nordover til stølen, og krysser Fannastølselva én gang, like nedenfor. Hold deg på stien — elva renner i flere løp under Røynliane, og en linje rett opp nordsida krysser den tre ganger. Bratteste tretti meter på turen ligger her, 28,2 grader mellom 290 og 311 moh, mens hundremeteren fra 300 til 400 moh måler 13,4 grader i snitt. Tordalsvegen er privat bomvei, og brøyting helt fram til parkeringa er ikke garantert — ring eller sjekk før du kjører langt.",
+      "Over stølen åpner terrenget seg, med skog i flekker opp til rundt 580 moh. Ruta holder nordøstover inn på den brede sørvestryggen ved 629 moh, og stigningen fra stølen og opp dit er turens bratteste hundremeter: 15,9 grader fra 500 til 600 moh.",
       "Derfra følger du ryggen sammenhengende nordover — 791 moh, så skulderen på 977 moh. Hele den øvre delen ligger på 10 til 13 grader: det er slakere enn sørfallet like ved, som holder 20,8 grader i snitt med et 33,7-graders belte 580 til 640 meter ute fra toppen. Sørvestryggen måler 9,5 grader i snitt, og det er grunnen til at linja ligger der den ligger.",
-      "De siste hundre metrene svinger nordøstover opp den slake toppkuppelen til varden på 1046 moh. Bratteste sammenhengende parti på hele linja måler 28,9 grader, og det ligger nede i skogslia.",
+      "De siste hundre metrene svinger nordøstover opp den slake toppkuppelen til varden på 1046 moh. Bratteste sammenhengende parti på hele linja måler 28,2 grader, og det ligger nede i skogslia.",
     ],
     descent: [
       "Ned samme ryggen: sørover over skuldra på 977 moh og 791 moh, ned til 629 og videre til Fadnastølen. Fra stølen og ned er det skogsli — bratt nok til å være fin kjøring, og bratt nok til å gå løs etter mildvær og regn.",
@@ -6905,7 +6905,7 @@ export const GUIDES: Record<string, TourGuide> = {
     avalanche: [
       {
         title: "Ruta",
-        body: "Nederste halvdelen er bratt skogsli, rundt 19 grader i snitt fra parkeringa til Fadnastølen, mens hele den øvre ryggen ligger på 10 til 13 grader. Bratteste sammenhengende parti på linja måler 28,9 grader. Den skogkledde lia over Byrkjenes er bratt nok til å gå løs etter mildvær og regn — det er den delen av ruta som endrer seg med været, ikke ryggen.",
+        body: "Nederste halvdelen er bratt skogsli, rundt 19 grader i snitt fra parkeringa til Fadnastølen, mens hele den øvre ryggen ligger på 10 til 13 grader. Bratteste sammenhengende parti på linja måler 28,2 grader. Den skogkledde lia over Byrkjenes er bratt nok til å gå løs etter mildvær og regn — det er den delen av ruta som endrer seg med været, ikke ryggen.",
       },
       {
         title: "Terrenget rundt",
@@ -6917,11 +6917,11 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,200 L23,194 L41,187 L57,180 L80,173 L96,163 L108,156 L139,146 L160,139 L168,137 L187,134 L206,123 L227,114 L251,109 L263,105 L283,100 L308,89 L334,79 L359,75 L379,72 L404,62 L428,57 L443,52 L468,47 L494,43 L518,35 L536,32 L565,29 L590,20 L600,18",
+      path: "M0,200 L19,195 L39,192 L56,188 L75,174 L92,168 L108,163 L124,157 L143,148 L163,147 L179,146 L197,141 L210,137 L233,130 L262,115 L286,109 L309,102 L337,89 L372,76 L399,72 L429,61 L454,54 L481,47 L516,40 L539,33 L571,28 L600,18",
       startLabel: "211 moh",
       endLabel: "1046 moh",
-      distanceLabel: "4,2 km",
-      caption: "838 høydemeter og 4,25 km fra Byrkjenes, med det bratteste — 16,5 grader mellom 300 og 400 moh — nede i skogslia.",
+      distanceLabel: "4,7 km",
+      caption: "841 høydemeter og 4,68 km fra Byrkjenes, på stien opp skogslia til Fadnastølen og den åpne ryggen over — bratteste tretti meter, 28,2 grader mellom 290 og 311 moh, ligger nede i lia.",
     },
   },
   ranten: {
