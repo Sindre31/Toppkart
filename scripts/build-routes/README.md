@@ -7837,9 +7837,8 @@ The new stretch was read for terrain class every 2 m (185 samples): all
 `ÅpentOmråde` or unclassified, as on the stretch it replaces, and none water.
 The whole line was then swept again, a sample every 2 m: 3 819 samples,
 none water (3 415 `ÅpentOmråde`, 93 `Myr`, 75 `Skog`, 236 unclassified), so
-the guide now says 0 m of 7 635. The duration model now gives 5.48 h, which
-rounds into «4–6 t» in `route_metrics.json`. The card keeps «5–7 t», since
-the model sits 0.02 h from the band edge, against 5.53 h before.
+the guide now says 0 m of 7 635. The duration model now gives 5.48 h, against
+5.53 h before, which moves it from «5–7 t» to «4–6 t». The card follows.
 
 ## Network
 
