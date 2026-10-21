@@ -1633,8 +1633,8 @@
  },
  "sandhornet": {
   "verticalM": 1030,
-  "gainM": 1033,
-  "distanceM": 5183,
+  "gainM": 1032,
+  "distanceM": 5162,
   "startM": 10,
   "summitM": 993,
   "duration": "4–6 t",
@@ -1645,12 +1645,12 @@
   "grade": 2,
   "aspect": "S",
   "distanceKm": 5.2,
-  "cumdistM": 5183
+  "cumdistM": 5162
  },
  "tortenviktinden": {
   "verticalM": 1020,
-  "gainM": 1023,
-  "distanceM": 5570,
+  "gainM": 1024,
+  "distanceM": 5567,
   "startM": 15,
   "summitM": 1028,
   "duration": "4–6 t",
@@ -1661,7 +1661,7 @@
   "grade": 2,
   "aspect": "SØ",
   "distanceKm": 5.6,
-  "cumdistM": 5570
+  "cumdistM": 5567
  },
  "tomskjevelen": {
   "verticalM": 950,
@@ -1713,8 +1713,8 @@
  },
  "krakfjellet": {
   "verticalM": 470,
-  "gainM": 471,
-  "distanceM": 9606,
+  "gainM": 472,
+  "distanceM": 9595,
   "startM": 411,
   "summitM": 815,
   "duration": "4–6 t",
@@ -1723,9 +1723,9 @@
   "steepestBandTo": 800,
   "maxStepAngle": 16.1,
   "grade": 1,
-  "aspect": "S",
+  "aspect": "SV",
   "distanceKm": 9.6,
-  "cumdistM": 9606
+  "cumdistM": 9595
  },
  "rensfjellet": {
   "verticalM": 700,
