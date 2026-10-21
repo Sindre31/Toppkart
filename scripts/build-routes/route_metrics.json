@@ -765,7 +765,7 @@
   "grade": 2,
   "aspect": "SV",
   "distanceKm": 6.5,
-  "cumdistM": 6472
+  "cumdistM": 6474
  },
  "sula": {
   "verticalM": 830,
@@ -2797,7 +2797,7 @@
   "grade": 2,
   "aspect": "V",
   "distanceKm": 7.6,
-  "cumdistM": 7596
+  "cumdistM": 7599
  },
  "horndalsnuten": {
   "verticalM": 1120,
@@ -3170,7 +3170,7 @@
  "sveigen": {
   "verticalM": 560,
   "gainM": 556,
-  "distanceM": 2610,
+  "distanceM": 2601,
   "startM": 994,
   "summitM": 1543,
   "duration": "2–4 t",
@@ -3181,12 +3181,12 @@
   "grade": 2,
   "aspect": "NØ",
   "distanceKm": 2.6,
-  "cumdistM": 2612
+  "cumdistM": 2601
  },
  "fjetlandsnuten": {
-  "verticalM": 900,
-  "gainM": 900,
-  "distanceM": 5673,
+  "verticalM": 910,
+  "gainM": 906,
+  "distanceM": 5652,
   "startM": 396,
   "summitM": 1285,
   "duration": "4–6 t",
@@ -3197,12 +3197,12 @@
   "grade": 2,
   "aspect": "SV",
   "distanceKm": 5.7,
-  "cumdistM": 5672
+  "cumdistM": 5652
  },
  "store-ble": {
-  "verticalM": 660,
-  "gainM": 664,
-  "distanceM": 6328,
+  "verticalM": 670,
+  "gainM": 670,
+  "distanceM": 6317,
   "startM": 714,
   "summitM": 1343,
   "duration": "4–6 t",
@@ -3213,12 +3213,12 @@
   "grade": 1,
   "aspect": "SØ",
   "distanceKm": 6.3,
-  "cumdistM": 6328
+  "cumdistM": 6317
  },
  "surloytenuten": {
   "verticalM": 460,
   "gainM": 462,
-  "distanceM": 6171,
+  "distanceM": 6148,
   "startM": 714,
   "summitM": 1097,
   "duration": "3–5 t",
@@ -3228,13 +3228,13 @@
   "maxStepAngle": 24.9,
   "grade": 1,
   "aspect": "Ø",
-  "distanceKm": 6.2,
-  "cumdistM": 6171
+  "distanceKm": 6.1,
+  "cumdistM": 6148
  },
  "styggemann": {
   "verticalM": 550,
-  "gainM": 547,
-  "distanceM": 9583,
+  "gainM": 554,
+  "distanceM": 9540,
   "startM": 483,
   "summitM": 871,
   "duration": "4–6 t",
@@ -3244,13 +3244,13 @@
   "maxStepAngle": 23.2,
   "grade": 1,
   "aspect": "SV",
-  "distanceKm": 9.6,
-  "cumdistM": 9583
+  "distanceKm": 9.5,
+  "cumdistM": 9540
  },
  "saebyggjenuten": {
-  "verticalM": 850,
-  "gainM": 851,
-  "distanceM": 11310,
+  "verticalM": 860,
+  "gainM": 855,
+  "distanceM": 11299,
   "startM": 810,
   "summitM": 1506,
   "duration": "6–8 t",
@@ -3261,12 +3261,12 @@
   "grade": 2,
   "aspect": "V",
   "distanceKm": 11.3,
-  "cumdistM": 11310
+  "cumdistM": 11299
  },
  "kjerag": {
   "verticalM": 620,
   "gainM": 617,
-  "distanceM": 7362,
+  "distanceM": 7356,
   "startM": 641,
   "summitM": 1124,
   "duration": "4–6 t",
@@ -3277,7 +3277,7 @@
   "grade": 1,
   "aspect": "Ø",
   "distanceKm": 7.4,
-  "cumdistM": 7364
+  "cumdistM": 7356
  },
  "hilleknuten": {
   "verticalM": 690,
@@ -3297,8 +3297,8 @@
  },
  "grubba": {
   "verticalM": 500,
-  "gainM": 500,
-  "distanceM": 2499,
+  "gainM": 504,
+  "distanceM": 2497,
   "startM": 695,
   "summitM": 1184,
   "duration": "2–4 t",
@@ -3309,7 +3309,7 @@
   "grade": 1,
   "aspect": "V",
   "distanceKm": 2.5,
-  "cumdistM": 2501
+  "cumdistM": 2497
  },
  "roseknuten": {
   "verticalM": 350,
