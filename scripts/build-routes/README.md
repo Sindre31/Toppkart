@@ -8037,6 +8037,27 @@ The other 50 stay:
 | On a mapped way | 1 |
 | Put back for climbing | 1 |
 
+### Batch 8, tours 176–193
+
+The batch had 98 kinks. Three were smoothed: Horndalsnuten at 3.7 km,
+Prestholtskarvet at 4.0 km and Høgevarde's Tempelseter line at 2.9 km. Sata's
+five kinks on the Eikedalen line were tried and put back, because the waypoint
+«nordvest for Skeiskvanndalsvatnet» would have ended 36 m off the line.
+
+The guides follow the new lines: Horndalsnuten 1171 m of climbing, Prestholtskarvet
+965 m of climbing and 68 m of loss over 11.56 km with the flat band at 1200–1300
+over 5121 m of ground, and Høgevarde's steepest band 11.9° over 493 m.
+
+The other 90 stay:
+
+| Reason | Kinks |
+| --- | --- |
+| Next to a named waypoint | 37 |
+| No dry, clear curve | 23 |
+| Smooth curve 6° or more steeper than the ground | 15 |
+| Still over 30° | 13 |
+| On a mapped way | 2 |
+
 ## Network
 
 Everything is public and unauthenticated:

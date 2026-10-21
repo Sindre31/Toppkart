@@ -6474,7 +6474,7 @@ export const GUIDES: Record<string, TourGuide> = {
   horndalsnuten: {
     slug: "horndalsnuten",
     intro:
-      "1170 høydemeter på 7,0 km fra Skiple i Raundalen, med en lang og slak innmarsj på traktorveien over Raundalselvi og forbi Horndalsbruni før terrenget tar til å stige. Bratteste sammenhengende parti måler 31,4 grader og ligger mellom 1093 og 1116 moh — nordvendt, og siste kneika til toppen er bratteste delen av ruta.",
+      "1171 høydemeter på 7,0 km fra Skiple i Raundalen, med en lang og slak innmarsj på traktorveien over Raundalselvi og forbi Horndalsbruni før terrenget tar til å stige. Bratteste sammenhengende parti måler 31,4 grader og ligger mellom 1093 og 1116 moh — nordvendt, og siste kneika til toppen er bratteste delen av ruta.",
     ascent: [
       "Start ved den kartfestede parkeringa ved Raundalsvegen på Skiple, 398 moh, omtrent tjue kilometer øst for Voss. Gå rett ned gjennom skogen til Horndalsvegen og over brua over Raundalselvi, der kilden starter turen, og følg traktorveien videre sørover på vestsida. Sør for brua renner elva i et juv under Horndalsberget; ruta holder seg på veien og går ikke ned i det. Traktorveien stiger slakt opp over Fureneset og gir litt tilbake ned mot Horndøla: bandet fra 300 til 400 moh måler 0,1 grader over 1104 meter grunn, og 400 til 500 moh 3,3 grader over 1818 meter.",
       "Følg traktorveien forbi Horndalsbruni og inn i Horndalsbotnen på 757 moh. Skogen holder til 781 moh, og i den øvre lia mot Bjørnsetstølen er det skredbaner; hold deg i skogen der nede.",
@@ -6484,7 +6484,7 @@ export const GUIDES: Record<string, TourGuide> = {
     descent: [
       "Ned samme veien, nordover gjennom Horndalsbotnen og ut traktorveien til brua og Skiple. Fallretninga er nord, og fjellet holder derfor kaldt føre lenge — det er også grunnen til at det sjelden er vårføre å hente her.",
       "Vanligste feil: å legge nedkjøringa i den øvre lia mot Bjørnsetstølen fordi den ser åpen ut. Der er det skredbaner. Den andre er å undervurdere innmarsjen: traktorveien fra Horndøla til brua er over to kilometer slak grunn, med en kort stigning over Fureneset på vei ut, og turen er lengre enn høydemetrene tilsier. Og ikke ta snarveien i elveløpet under Horndalsberget — Raundalselvi renner der i et juv.",
-      "Kilden fører to startsteder, ett på hver side av fjellet: «Oppstigningen fra nord starter ved Skiple i Raundalen, snaut tjue kilometer øst fra Voss. Oppstigningen fra sør starter i Skaftedalen.» Og den sier hvorfor: «Det er to gode utgangspunkt for denne turen, et på den skyggefulle nordsiden, og et som ligger solvendt mot sør.» Appens rute er nordruta; sørruta ligger nå ved siden av den. Fra enden av Skaftedalsvegen på 486 moh går linja i slakt terreng nordøstover opp dalen forbi 662 og 766 til stølen Skytjeset på 882 — kildens «omtrent 890 moh» — og derfra på ryggformasjonen over 1063, flanken på 1249 og 1368 til topps. 1022 høydemeter på 6,13 km mot 1170 på 7,0 km fra Skiple: kortere og med mindre stigning, og motsatt sol. Skogen slipper på 758 moh etter 2,91 km, mot 781 på nordruta. Bratteste hundremetersbeltet er 19,5 grader fra 900 til 1000 moh, og bratteste 30-metersvinduet 33,2 mellom 1211 og 1231, mot 31,4 på nordruta. Kilden gir et valg øverst — enten det bratte, markerte dalsøkket eller ryggformasjonen og flanken; linja her er ryggen, som er den kilden beskriver helt til topps.",
+      "Kilden fører to startsteder, ett på hver side av fjellet: «Oppstigningen fra nord starter ved Skiple i Raundalen, snaut tjue kilometer øst fra Voss. Oppstigningen fra sør starter i Skaftedalen.» Og den sier hvorfor: «Det er to gode utgangspunkt for denne turen, et på den skyggefulle nordsiden, og et som ligger solvendt mot sør.» Appens rute er nordruta; sørruta ligger nå ved siden av den. Fra enden av Skaftedalsvegen på 486 moh går linja i slakt terreng nordøstover opp dalen forbi 662 og 766 til stølen Skytjeset på 882 — kildens «omtrent 890 moh» — og derfra på ryggformasjonen over 1063, flanken på 1249 og 1368 til topps. 1022 høydemeter på 6,13 km mot 1171 på 7,0 km fra Skiple: kortere og med mindre stigning, og motsatt sol. Skogen slipper på 758 moh etter 2,91 km, mot 781 på nordruta. Bratteste hundremetersbeltet er 19,5 grader fra 900 til 1000 moh, og bratteste 30-metersvinduet 33,2 mellom 1211 og 1231, mot 31,4 på nordruta. Kilden gir et valg øverst — enten det bratte, markerte dalsøkket eller ryggformasjonen og flanken; linja her er ryggen, som er den kilden beskriver helt til topps.",
     ],
     avalanche: [
       {
@@ -6501,11 +6501,11 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,192 L27,199 L45,199 L58,198 L74,195 L87,193 L103,190 L120,187 L132,185 L146,182 L160,179 L175,176 L190,177 L203,178 L220,180 L243,178 L288,157 L325,144 L354,135 L385,128 L420,116 L451,100 L478,85 L501,70 L528,55 L551,38 L583,27 L600,18",
+      path: "M0,192 L28,199 L45,199 L58,198 L74,195 L88,193 L103,190 L121,187 L132,185 L146,182 L161,179 L175,176 L191,177 L204,178 L221,180 L243,178 L288,157 L315,148 L327,143 L354,135 L385,128 L419,116 L451,100 L477,85 L500,70 L528,55 L551,38 L583,27 L600,18",
       startLabel: "398 moh",
       endLabel: "1462 moh",
       distanceLabel: "7,0 km",
-      caption: "1170 høydemeter og 7,0 km fra Skiple over Raundalselvi og gjennom Horndalsbotnen, med skoggrensa på 781 moh og skuldra på 1153 moh før toppkneika.",
+      caption: "1171 høydemeter og 7,0 km fra Skiple over Raundalselvi og gjennom Horndalsbotnen, med skoggrensa på 781 moh og skuldra på 1153 moh før toppkneika.",
     },
   },
   folarskardnuten: {
@@ -6547,10 +6547,10 @@ export const GUIDES: Record<string, TourGuide> = {
   prestholtskarvet: {
     slug: "prestholtskarvet",
     intro:
-      "962 høydemeter og 11,57 km fra Havsdalen til det høyeste punktet på 1860 moh, tolv kilometer inn på Hallingskarvet. Åtte av dem er flate: bandet fra 1200 til 1300 moh måler 1,3 grader over 5130 meter grunn. Alt det bratte ligger i Prestholtskardet — 17,6 grader fra 1500 til 1600 moh over 315 meter grunn, med et steg på 24,8 grader mellom 1323 og 1344.",
+      "965 høydemeter og 11,56 km fra Havsdalen til det høyeste punktet på 1860 moh, tolv kilometer inn på Hallingskarvet. Åtte av dem er flate: bandet fra 1200 til 1300 moh måler 1,3 grader over 5121 meter grunn. Alt det bratte ligger i Prestholtskardet — 17,6 grader fra 1500 til 1600 moh over 315 meter grunn, med et steg på 24,8 grader mellom 1323 og 1344.",
     ascent: [
       "Start på parkeringa nederst i Havsdalen, 963 moh — tre avgiftsplasser ved siden av hverandre, alle med access=yes i OSM. Ut.no tegner turen sin fra toppen av skisenteret, 1070 moh, som er lettvint hvis heisen går; korridoren her starter der bilen står, og det er forskjellen mellom de to startpunktene som gjør at høydemeterne på kortet er større enn ut.nos oppgitte 855. Skogen slipper taket på 1048 moh og terrenget er åpent fra 1051.",
-      "Fra 1058 moh er du inne på den merkede løypa vestover. Ut.no: «følg merket løype til Prestholtseter (åtte km). Løypa blir tråkket daglig og er følgelig i meget god standard med både klassisk- og skøytespor.» Det er en flat innmarsj i ordets rette forstand — bandet fra 1000 til 1100 moh måler 3,3 grader over 1736 meter grunn, 1100 til 1200 måler 4,6 over 1216, og 1200 til 1300 måler 1,3 over 5130. Linja passerer 1240 moh og holder det nivået i fem kilometer.",
+      "Fra 1058 moh er du inne på den merkede løypa vestover. Ut.no: «følg merket løype til Prestholtseter (åtte km). Løypa blir tråkket daglig og er følgelig i meget god standard med både klassisk- og skøytespor.» Det er en flat innmarsj i ordets rette forstand — bandet fra 1000 til 1100 moh måler 3,3 grader over 1736 meter grunn, 1100 til 1200 måler 4,6 over 1216, og 1200 til 1300 måler 1,3 over 5121. Linja passerer 1240 moh og holder det nivået i fem kilometer.",
       "Prestholtstølan ligger på 1243 moh, rett under sørsiden av skarvet. Herfra begynner turen på nytt: 16,3 grader fra 1300 til 1400 moh over 315 meter grunn, 17,2 fra 1400 til 1500 over 316, og 17,6 fra 1500 til 1600 over 315 — det bratteste bandet. Det bratteste steget på hele linja ligger lavere, 24,8 grader mellom 1323 og 1344 moh. Det er Prestholtskardet, og registerpunktet for skardet måler 1640 moh.",
       "Oppe på skarvet slakner det brått: 10,3 grader fra 1600 til 1700 moh over 540 meter grunn, 7,1 fra 1700 til 1800 over 855, og 4,2 fra 1800 til 1900 over 742. De siste to kilometerne går vestover over vidt, åpent platå til det høyeste punktet, 1860,4 moh. Registerpunktet for Prestholtskarvet ligger 550 meter nordøst, mellom to topper som måler 1860,4 og 1857,5; ut.nos egen linje ender 20 meter fra den høyeste, og det er den kortet fører.",
     ],
@@ -6561,7 +6561,7 @@ export const GUIDES: Record<string, TourGuide> = {
     avalanche: [
       {
         title: "Ruta",
-        body: "962 høydemeter der bratteste band er 22,0 grader og bratteste steg 25,2, begge i Prestholtskardet. Ruta gir tilbake 65 høydemeter på 11,57 km. Ut.no fører turen som krevende skitur og 21,6 km tur/retur fra heistoppen, og skriver at den «blir oftest gått utpå seinvinter/vår når snøen har satt seg» — det er skardet den setningen handler om.",
+        body: "965 høydemeter der bratteste band er 22,0 grader og bratteste steg 25,2, begge i Prestholtskardet. Ruta gir tilbake 68 høydemeter på 11,56 km. Ut.no fører turen som krevende skitur og 21,6 km tur/retur fra heistoppen, og skriver at den «blir oftest gått utpå seinvinter/vår når snøen har satt seg» — det er skardet den setningen handler om.",
       },
       {
         title: "Terrenget utenfor",
@@ -6573,11 +6573,11 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,200 L15,195 L28,190 L43,183 L67,181 L91,176 L113,172 L137,164 L158,154 L186,149 L211,143 L235,143 L259,145 L284,144 L305,145 L330,145 L354,144 L379,145 L405,144 L426,141 L450,120 L473,91 L491,69 L513,53 L538,42 L564,27 L589,22 L600,18",
+      path: "M0,200 L15,195 L28,190 L43,183 L67,181 L91,176 L113,172 L137,164 L158,154 L186,149 L203,145 L211,143 L227,144 L251,145 L277,145 L297,144 L321,145 L347,144 L372,144 L396,145 L419,142 L445,123 L466,100 L485,74 L508,58 L533,44 L554,32 L582,22 L600,18",
       startLabel: "963 moh",
       endLabel: "1860 moh",
       distanceLabel: "11,6 km",
-      caption: "962 høydemeter og 11,57 km fra Havsdalen forbi Prestholtstølan på 1243 moh og opp Prestholtskardet på 1640, med skogen som slipper taket på 1038 moh.",
+      caption: "965 høydemeter og 11,56 km fra Havsdalen forbi Prestholtstølan på 1243 moh og opp Prestholtskardet på 1640, med skogen som slipper taket på 1038 moh.",
     },
   },
   gyranfisen: {
@@ -6963,11 +6963,11 @@ export const GUIDES: Record<string, TourGuide> = {
   hogevarde: {
     slug: "hogevarde",
     intro:
-      "598 høydemeter på 4,80 km fra Tempelseter, i en oppstaket og som regel oppkjørt løype. Ingen del av oppstigningen er bratt: bratteste sammenhengende parti måler 19,5 grader, mellom 1179 og 1195 moh, og bratteste hundremeteren, 1200 til 1300 moh, holder 11,8 grader i snitt. Det du planlegger etter her er været og østsida, ikke hellinga i sporet.",
+      "598 høydemeter på 4,80 km fra Tempelseter, i en oppstaket og som regel oppkjørt løype. Ingen del av oppstigningen er bratt: bratteste sammenhengende parti måler 19,5 grader, mellom 1179 og 1195 moh, og bratteste hundremeteren, 1200 til 1300 moh, holder 11,9 grader i snitt. Det du planlegger etter her er været og østsida, ikke hellinga i sporet.",
     ascent: [
       "Start på parkeringa ved Tempelseter, 910 moh, og gå opp til høyre for skibakken. Løypa er stukket og som regel kjørt, og de første hundre høydemeterne er det slakeste på turen: bandet fra 900 til 1000 moh måler 3,9 grader over 1327 meter grunn.",
       "Over anlegget stiger det jevnt — 8,8 grader fra 1000 til 1100 moh og 7,8 fra 1100 til 1200 — og et sted der inne, mellom 1179 og 1195 moh, ligger bratteste sammenhengende parti på hele turen: 19,5 grader. Ingen av punktene Kartverket sampler langs ruta er klasset som skog. Du starter over skoggrensa og ser hvor du skal hele veien, og det er en fordel helt til sikten forsvinner. Merk at det er den nederste delen som er oppkjørt. Linja følger løypenettet tett de første 1,2 kilometerne og de siste 1,5, men mellom 1,5 og 3,7 km ut går den sin egen veg over ryggen — verst 572 meter fra nærmeste kartlagte spor, ved 1283 moh. Det som er kartlagt der er umerkte langrennsløyper, ikke en merket toppruta, så det er ikke noe spor å følge over ryggen.",
-      "Fra ryggen på rundt 1190 moh svinger ruta nordøstover mot hytta. Bandet fra 1200 til 1300 moh er det bratteste på turen, 11,8 grader over 496 meter grunn, og over det flater det ut igjen: 7,7 grader fra 1300 til 1400.",
+      "Fra ryggen på rundt 1190 moh svinger ruta nordøstover mot hytta. Bandet fra 1200 til 1300 moh er det bratteste på turen, 11,9 grader over 493 meter grunn, og over det flater det ut igjen: 7,7 grader fra 1300 til 1400.",
       "DNT-hytta Høgevarde ligger på 1397 moh, og toppen 560 meter lenger nordøst, på 1461. Det siste bandet, over 1400 moh, måler 3,5 grader over 810 meter grunn — flatt, og samtidig den mest værutsatte delen av turen. Gamle Høgevarde turisthytte har kafé i vinterferiene og påsken, og skilt nederst i bakken sier om den er åpen. Merk at linja går over Høgevardtjenn på 1378 moh på veg mot toppen — 68 meter på Tempelseter-ruta, opptil 60 meter fra land, og 45 meter på Norefjellstua-ruta, opptil 20 meter fra land. Det er et lite tjern, naturlig og uregulert, og begge linjene skjærer et hjørne av det.",
     ],
     descent: [
@@ -6977,7 +6977,7 @@ export const GUIDES: Record<string, TourGuide> = {
     avalanche: [
       {
         title: "Ruta",
-        body: "Oppstaket og som regel oppkjørt løype i slakt terreng hele veien. Bratteste sammenhengende parti måler 19,5 grader og ligger mellom 1179 og 1195 moh; bratteste hundremeteren, 1200 til 1300 moh, holder 11,8 grader over 496 meter grunn. Staking er ikke kvisting — ut.no minner om at løypa tidlig i sesongen ikke alltid er supplert med kvist, og over skoggrensa er det ingenting annet å navigere etter.",
+        body: "Oppstaket og som regel oppkjørt løype i slakt terreng hele veien. Bratteste sammenhengende parti måler 19,5 grader og ligger mellom 1179 og 1195 moh; bratteste hundremeteren, 1200 til 1300 moh, holder 11,9 grader over 493 meter grunn. Staking er ikke kvisting — ut.no minner om at løypa tidlig i sesongen ikke alltid er supplert med kvist, og over skoggrensa er det ingenting annet å navigere etter.",
       },
       {
         title: "Terrenget utenfor",
@@ -6989,7 +6989,7 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,197 L12,196 L19,197 L28,200 L42,198 L64,188 L85,183 L104,179 L126,176 L146,170 L161,168 L183,165 L203,158 L228,145 L256,132 L278,127 L306,120 L331,107 L351,96 L374,83 L396,71 L417,60 L436,47 L455,36 L481,37 L503,36 L526,38 L545,45 L571,39 L593,22 L600,18",
+      path: "M0,197 L14,196 L23,198 L35,200 L59,192 L85,183 L110,178 L132,175 L155,168 L177,167 L203,158 L233,142 L264,129 L295,123 L329,109 L351,96 L361,89 L369,85 L379,80 L396,71 L419,59 L447,39 L469,37 L501,36 L526,38 L548,45 L582,30 L600,18",
       startLabel: "910 moh",
       endLabel: "1461 moh",
       distanceLabel: "4,8 km",
