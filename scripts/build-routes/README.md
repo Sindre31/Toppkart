@@ -7939,6 +7939,35 @@ none water (3 415 `ÅpentOmråde`, 93 `Myr`, 75 `Skog`, 236 unclassified), so
 the guide now says 0 m of 7 635. The duration model now gives 5.48 h, against
 5.53 h before, which moves it from «5–7 t» to «4–6 t». The card follows.
 
+### Batch 4, tours 76–100
+
+The batch had 68 kinks. Seven were smoothed:
+
+- Strandtinden's Kåringen route at 2.5 km, and its Kanstadbotn route at
+  1.9 km.
+- Forkledalstindan at 0.6 km.
+- Lakselvtindan at 2.5 km, and at 4.3 km, where a 180° spike turned the line
+  straight back on itself.
+- Rundfjellet in Vesterålen at 0.6 km.
+- Justadtinden at 0.7 km.
+
+Four plain waypoints moved, by 17–52 m. Forkledalstindan's Norwegian guide had
+given 985 m of climbing where the English gave 983. Both now give 988.
+
+The other 61 stay:
+
+| Reason | Kinks |
+| --- | --- |
+| Smooth curve 6° or more steeper than the ground | 27 |
+| No dry, clear curve | 13 |
+| Next to a named waypoint | 11 |
+| Still over 30° | 6 |
+| On a mapped way | 4 |
+
+`check_steepness` lists Strandtinden's Kåringen route and Forkledalstindan.
+Both were already in their guides' notes from the steepness round, at the
+same figures.
+
 ## Network
 
 Everything is public and unauthenticated:

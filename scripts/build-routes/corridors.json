@@ -8143,9 +8143,10 @@
      },
      {
       "name": "nord for høyde 519",
-      "lat": 68.509,
-      "lng": 15.92,
-      "elevation_m": 284.0
+      "lat": 68.50855,
+      "lng": 15.91965,
+      "elevation_m": 283.8,
+      "note": "Flyttet inn på linja da knekken ved 1,88 km ble glattet ut."
      },
      {
       "name": "sør for Trollvatnan",
@@ -12148,9 +12149,10 @@
     "waypoints": [
      {
       "name": "lia over gården",
-      "lat": 68.172,
-      "lng": 13.798,
-      "elevation_m": 179.0
+      "lat": 68.17176,
+      "lng": 13.79897,
+      "elevation_m": 179.7,
+      "note": "Flyttet inn på linja da knekken ved 0,7 km ble glattet ut."
      },
      {
       "name": "ryggen",
@@ -12186,9 +12188,10 @@
     "waypoints": [
      {
       "name": "nordsida av pollen, vestover",
-      "lat": 68.2842,
-      "lng": 14.638,
-      "elevation_m": 7.0
+      "lat": 68.28435,
+      "lng": 14.63813,
+      "elevation_m": 8.7,
+      "note": "Flyttet inn på linja da knekken ved 0,59 km ble glattet ut."
      },
      {
       "name": "stien ved 1.61 km",
@@ -16325,9 +16328,10 @@
      },
      {
       "name": "nord for høyde 258",
-      "lat": 68.4772,
-      "lng": 15.4818,
-      "elevation_m": 231.0
+      "lat": 68.47748,
+      "lng": 15.48118,
+      "elevation_m": 227.3,
+      "note": "Flyttet inn på linja da knekken ved 2,49, 4,29 km ble glattet ut."
      },
      {
       "name": "Lakselva kryssast mot aust",

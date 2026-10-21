@@ -1945,7 +1945,7 @@
     },
     {
       "what": "Skoggrensa langs linja",
-      "figure": "1,93 km ute",
+      "figure": "1,91 km ute",
       "how": "treeline_scan i guide_facts.py: siste skogsverteks langs linja, med 600 m grunn og 150 m høgd utan skog som stoppkrav."
     }
   ],

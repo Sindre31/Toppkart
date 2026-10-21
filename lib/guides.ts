@@ -2769,7 +2769,7 @@ export const GUIDES: Record<string, TourGuide> = {
       "Ned samme veien: ryggen ned til benken, benken østover og nordsida ned Heggedalen. Det er linja fjellet er kjent for — «nedkjøringen er samme rute som opp og er klassikeren der du kan dundre på og oppnå virkelig fri flyt og brede glis» — og i sesongen kjører man helt ned til veien ved havet. Snøen på nordsida ligger lenge nok til at midnattssol i juni ikke er uvanlig.",
       "Å gå rundt koster det å gå rundt koster. Den første korridoren tok toppen rett opp nordøstribba, og den linja var 4,77 km med 1090 høydemeter; over vestryggen er turen 5,79 km med 1156 og 89 meter gitt tilbake underveis. Fri Flyt er tydelig på hvorfor: «Det er helt klart mulig å gå opp på andre siden, men den er mer eksponert.» Ribba måler 1010,2 moh 150 meter fra toppen mot nordøst der ryggen måler 1039,8 mot nordvest — den er brattere hele veien opp.",
       "Rett nord for varden er det uansett bratt: 40,9 grader i bratteste 60-metersvindu bare 20 til 80 meter ut, med 24,8 grader i snitt ut til en kilometer. Der ligger også snøen som blir liggende — Kartverket fører terrengklassen SnøIsbre på nordsida fra rundt 1050 moh og nedover, mens ryggen ruta går på er bar mark i alle de seksten siste vertexene. De tre andre kantene er alvorlige: sør måler 30,6 grader i snitt med 63,9 grader i vinduet 20 til 80 meter fra varden, sørøst 30,9 med 62,5, øst 29,0 med 54,9, og sørvest 24,1 med 56,0. Fri Flyts to andre linjer — Kvanntoa i nordøst og Kvannto i øst — har partier på 45 grader og rappellfeste, og de er ikke ruta dette kortet beskriver.",
-      "To av kildens sju linjer er egne oppstigninger med egen parkering, og begge møter turen først på høyde 779 — 787 moh der linja passerer — der de siste 300 høydemeterne nordøstover er felles. Fra Kåringen er det 1063 høydemeter og 8,18 km over Nordfjellaksla på 344 moh: den lengste og slakeste av de tre, med bratteste steg 32,2 grader mellom 973 og 994 moh, og kilden kaller den «en meget populær skitur med fjellski» der du oftest kan følge skispor fra veien. Fra Kanstadbotn er det 1140 høydemeter og 7,68 km, nord for høyde 519 og sør for Trollvatnan på 418 — kildens «sprekere variant», med et steg på 30,8 grader mellom 776 og 799.",
+      "To av kildens sju linjer er egne oppstigninger med egen parkering, og begge møter turen først på høyde 779 — 787 moh der linja passerer — der de siste 300 høydemeterne nordøstover er felles. Fra Kåringen er det 1065 høydemeter og 8,18 km over Nordfjellaksla på 344 moh: den lengste og slakeste av de tre, med bratteste steg 32,2 grader mellom 973 og 994 moh, og kilden kaller den «en meget populær skitur med fjellski» der du oftest kan følge skispor fra veien. Fra Kanstadbotn er det 1139 høydemeter og 7,63 km, nord for høyde 519 og sør for Trollvatnan på 418 — kildens «sprekere variant», med et steg på 30,8 grader mellom 776 og 799.",
     ],
     avalanche: [
       {
@@ -2831,14 +2831,14 @@ export const GUIDES: Record<string, TourGuide> = {
   forkledalstindan: {
     slug: "forkledalstindan",
     intro:
-      "983 høydemeter og 5,48 km fra E10 ved Litlvatnet til Forkledalstindan — en tur som skifter karakter midtveis. Fri Flyt gir sydsida KAST 2 – Utfordrende opp til toppen på 700, og der snur mange og kjører ned; traversen videre til hovedtoppen på 901 er KAST 3 – Komplekst, med nedklatring på snø eller berg avhengig av forholdene. Kildens «700 høydemeter» er skituren, ikke fjellet. Grad 4.",
+      "988 høydemeter og 5,47 km fra E10 ved Litlvatnet til Forkledalstindan — en tur som skifter karakter midtveis. Fri Flyt gir sydsida KAST 2 – Utfordrende opp til toppen på 700, og der snur mange og kjører ned; traversen videre til hovedtoppen på 901 er KAST 3 – Komplekst, med nedklatring på snø eller berg avhengig av forholdene. Kildens «700 høydemeter» er skituren, ikke fjellet. Grad 4.",
     ascent: [
       "Fra parkeringa på Ingelsfjordeidet — 23 moh — samme start som Lakselvtindan: nordsida av Storvatnet på stien, og opp til nord for høyde 258. Linja holder seg på land der kilden krysser isen, slik bokas egen Forkledalen-rute fra samme parkering gjør.",
-      "Derfra går oppstigningen vestover i det slakeste terrenget, over nordsida av høyde 462 — DTM1 måler 461,1 — på 400 moh der korridoren står, og videre opp fjellsida på 509. Skogen slipper på 226 moh etter 2,51 km, og beltet fra 400 til 500 er det bratteste i snitt med 21,2 grader over 260 meter grunn.",
+      "Derfra går oppstigningen vestover i det slakeste terrenget, over nordsida av høyde 462 — DTM1 måler 461,1 — på 400 moh der korridoren står, og videre opp fjellsida på 509. Skogen slipper på 226 moh etter 2,50 km, og beltet fra 400 til 500 er det bratteste i snitt med 21,2 grader over 260 meter grunn.",
       "Toppen på 700 — 707 moh på linja — er der kildens skitur ender. Traversen videre over fortoppen er den alpine delen: det bratteste enkeltsteget på ruta, 45,0 grader, ligger mellom 869 og 901 moh, i det siste stykket opp til varden. Siste stykket opp til varden på 901 tar du med fordel på østsida i starten, sier kilden — der slipper du den vanskelige klatringen.",
     ],
     descent: [
-      "105 av de 985 høydemetrene gir du fra deg underveis. Mange starter nedkjøringa allerede fra 700-toppen, i slakt terreng med et brattheng som kan gås utenom, og det er den turen kildens høydemetertall beskriver.",
+      "110 av de 988 høydemetrene gir du fra deg underveis. Mange starter nedkjøringa allerede fra 700-toppen, i slakt terreng med et brattheng som kan gås utenom, og det er den turen kildens høydemetertall beskriver.",
       "Fra hovedtoppen er nordvestsida linja: den starter mellom 902 og sørtoppen og er 20–25 grader med brattheng på 30–40 i nedre del. Nordøstsida er 30–40 grader og følger etter hvert vestruta til Lakselvtindan ned i Forkledalen. Begge går eksponert for skred fra høyereliggende terreng nesten hele veien.",
     ],
     avalanche: [
@@ -2856,17 +2856,17 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,198 L25,199 L55,200 L75,199 L99,198 L130,193 L147,185 L170,188 L191,179 L215,178 L240,165 L265,155 L289,157 L309,152 L324,142 L353,126 L373,125 L392,115 L416,98 L435,88 L452,77 L466,69 L482,61 L500,56 L517,49 L539,41 L559,31 L583,29 L600,18",
+      path: "M0,198 L30,200 L50,199 L61,199 L71,199 L89,200 L119,196 L144,186 L169,188 L190,179 L220,174 L253,158 L275,156 L304,152 L323,143 L353,126 L377,124 L402,107 L422,94 L442,83 L461,71 L481,61 L500,56 L518,48 L548,36 L568,32 L595,25 L600,18",
       startLabel: "23 moh",
       endLabel: "901 moh",
       distanceLabel: "5,5 km",
-      caption: "983 høydemeter og 5,48 km fra Litlvatnet: nordsida av høyde 462, fjellsida til toppen på 700 — og traversen videre til varden på 901.",
+      caption: "988 høydemeter og 5,47 km fra Litlvatnet: nordsida av høyde 462, fjellsida til toppen på 700 — og traversen videre til varden på 901.",
     },
   },
   lakselvtindan: {
     slug: "lakselvtindan",
     intro:
-      "822 høydemeter og 5,55 km fra Møysalens parkering på E10 til Lakselvtindan — den mildeste toppen i denne runden. Flankesveipet måler 5,4 grader i snitt mot nordvest og 17,7 mot sørvest, der ryggen kommer, og ingen av peilingene har et brattere vindu enn 50,4. Fri Flyt gir KAST 2 – Utfordrende og setter alpinøks og stegjern på utstyrslista; grad 3 kommer av utstyret og skaren kilden advarer mot, ikke av bratthet.",
+      "822 høydemeter og 5,49 km fra Møysalens parkering på E10 til Lakselvtindan — den mildeste toppen i denne runden. Flankesveipet måler 5,4 grader i snitt mot nordvest og 17,7 mot sørvest, der ryggen kommer, og ingen av peilingene har et brattere vindu enn 50,4. Fri Flyt gir KAST 2 – Utfordrende og setter alpinøks og stegjern på utstyrslista; grad 3 kommer av utstyret og skaren kilden advarer mot, ikke av bratthet.",
     ascent: [
       "Fra den store parkeringa på Ingelsfjordeidet — 23 moh — går linja langs nordsida av Storvatnet, på stien. Kilden skriver «kryss Storvatnet», men bokas egen rutebeskrivelse for Forkledalen fra samme parkering sier «følger man Nordsiden av Storvatnet». Kartet bærer landlinja; isen er ikke en forutsetning.",
       "Opp mellom Tverrelva og Lakselva — 158 moh — og nord for høyde 258, som DTM1 måler til 258,3. Skogen slipper på 220 moh etter 2,62 km, og beltet fra 300 til 400 er det bratteste i snitt med 20,0 grader over 261 meter grunn.",
@@ -2891,11 +2891,11 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,197 L24,198 L45,198 L73,199 L87,200 L104,198 L130,191 L152,181 L179,178 L200,175 L225,164 L249,150 L269,145 L293,149 L322,152 L346,150 L366,140 L391,126 L409,110 L434,94 L458,84 L465,84 L488,78 L513,67 L541,52 L557,40 L576,26 L600,18",
+      path: "M0,197 L25,198 L45,198 L74,199 L88,200 L105,198 L131,191 L153,181 L181,178 L203,175 L227,164 L252,150 L267,147 L276,148 L285,149 L310,151 L334,151 L357,145 L384,131 L403,115 L428,98 L449,86 L464,84 L477,83 L497,75 L526,60 L551,44 L566,34 L590,19 L600,18",
       startLabel: "23 moh",
       endLabel: "747 moh",
-      distanceLabel: "5,6 km",
-      caption: "822 høydemeter og 5,55 km fra Lofast: nordsida av Storvatnet, opp mellom elvene forbi høyde 258 — og ryggen øst for Lakselva til varden på 747.",
+      distanceLabel: "5,5 km",
+      caption: "822 høydemeter og 5,49 km fra Lofast: nordsida av Storvatnet, opp mellom elvene forbi høyde 258 — og ryggen øst for Lakselva til varden på 747.",
     },
   },
   siriskolten: {
@@ -3346,10 +3346,10 @@ export const GUIDES: Record<string, TourGuide> = {
   rundfjellet: {
     slug: "rundfjellet",
     intro:
-      "840 høydemeter og 4,78 km fra havet ved Vatterfjordpollen til Svolværs nærmeste klassiker — en enkel topp med mange varianter ifølge utemagasinet, der linja langs ryggen er poenget: hold deg på toppen av den, sier Fri Flyt, for området rundt er skredutsatt, og målingen er enig — sørsektoren ryggen bruker måler 13,7 grader i snitt der alle de andre kantene av toppen har vinduer på 40 til 65. Ryggen gir tilbake 44 høydemeter på veien, og det er derfor kortet bærer 840 der kilden regner 800.",
+      "840 høydemeter og 4,76 km fra havet ved Vatterfjordpollen til Svolværs nærmeste klassiker — en enkel topp med mange varianter ifølge utemagasinet, der linja langs ryggen er poenget: hold deg på toppen av den, sier Fri Flyt, for området rundt er skredutsatt, og målingen er enig — sørsektoren ryggen bruker måler 13,7 grader i snitt der alle de andre kantene av toppen har vinduer på 40 til 65. Ryggen gir tilbake 46 høydemeter på veien, og det er derfor kortet bærer 840 der kilden regner 800.",
     ascent: [
-      "Fra parkeringsplassen ved Vatterfjordpollen på E10, ti kilometer fra Svolvær mot Fiskebøl. Linja på kartet begynner på vestsida av den lille brua over strømmen — terrengmodellen fører sundet som sjø, og brua finnes ikke i den, så spaserturen over brua fra parkeringa står her i stedet for i geometrien. Så langs høyresida av pollen og innover marka mot fjellfoten: beltet fra 0 til 100 moh måler 3,1 grader over nesten to kilometer, og skogen slutter allerede på 94 moh etter 1,88 km.",
-      "Fra fjellfoten opp på sørryggen — beltet fra 100 til 200 moh er turens bratteste, 18,4 grader over 271 meter grunn — og så nordover langs ryggen til den dreier vest. Ryggen er kupert: 44 høydemeter gis tilbake underveis, og beltene ligger på 10 til 15,2 grader — jevn, lesbar skinning med Austnesfjorden på den ene sida og Higravstindan i synsranda.",
+      "Fra parkeringsplassen ved Vatterfjordpollen på E10, ti kilometer fra Svolvær mot Fiskebøl. Linja på kartet begynner på vestsida av den lille brua over strømmen — terrengmodellen fører sundet som sjø, og brua finnes ikke i den, så spaserturen over brua fra parkeringa står her i stedet for i geometrien. Så langs høyresida av pollen og innover marka mot fjellfoten: beltet fra 0 til 100 moh måler 3,1 grader over nesten to kilometer, og skogen slutter allerede på 94 moh etter 1,86 km.",
+      "Fra fjellfoten opp på sørryggen — beltet fra 100 til 200 moh er turens bratteste, 18,4 grader over 271 meter grunn — og så nordover langs ryggen til den dreier vest. Ryggen er kupert: 46 høydemeter gis tilbake underveis, og beltene ligger på 10 til 15,2 grader — jevn, lesbar skinning med Austnesfjorden på den ene sida og Higravstindan i synsranda.",
       "Der ryggen dreier vest — 641 moh der linja tar svingen — venter det siste: 15,1 grader i beltet fra 700 til 800, med det bratteste sammenhengende partiet, 29,1 grader, mellom 644 og 663 moh. Varden på 803; registeret og toppsøket løser 802,6.",
     ],
     descent: [
@@ -3376,11 +3376,11 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,199 L21,200 L50,199 L74,199 L102,199 L123,199 L151,198 L174,198 L197,198 L220,188 L242,175 L265,161 L285,153 L310,147 L333,136 L355,125 L378,118 L402,111 L417,102 L440,93 L469,80 L491,71 L511,60 L524,56 L541,46 L559,37 L586,25 L600,18",
+      path: "M0,199 L21,200 L50,199 L61,199 L71,198 L80,199 L89,199 L98,199 L121,199 L144,198 L171,198 L193,197 L217,190 L235,179 L259,164 L281,154 L303,151 L327,137 L349,126 L371,119 L400,112 L414,103 L438,94 L462,82 L485,75 L508,62 L523,57 L535,49 L557,37 L580,28 L600,18",
       startLabel: "6 moh",
       endLabel: "803 moh",
       distanceLabel: "4,8 km",
-      caption: "840 høydemeter og 4,78 km fra Vatterfjordpollen opp sørryggen og ryggtoppen hele veien, med skoggrensa på 94 moh og det bratteste — 29,1 grader mellom 644 og 663 moh — der ryggen dreier vest.",
+      caption: "840 høydemeter og 4,76 km fra Vatterfjordpollen opp sørryggen og ryggtoppen hele veien, med skoggrensa på 94 moh og det bratteste — 29,1 grader mellom 644 og 663 moh — der ryggen dreier vest.",
     },
   },
   kleppstadheia: {
@@ -3535,7 +3535,7 @@ export const GUIDES: Record<string, TourGuide> = {
   justadtinden: {
     slug: "justadtinden",
     intro:
-      "733 høydemeter og 2,88 km fra gården Justad til den høyeste toppen på østsida av Vestvågøy — slakt og lekent skiterreng ifølge kildene, med Vågakallen og Henningsvær under deg fra varden. Ingen hundremeter måler mer enn 22,6 grader, og det bratteste sammenhengende partiet er 29,8. Fri Flyts Lofoten-sider er eldre og bærer ingen KAST; det de bærer er farepunktene, og de er målbare: hengskavlene mot nordøst henger over en side som faller 41 grader i snitt.",
+      "729 høydemeter og 2,82 km fra gården Justad til den høyeste toppen på østsida av Vestvågøy — slakt og lekent skiterreng ifølge kildene, med Vågakallen og Henningsvær under deg fra varden. Ingen hundremeter måler mer enn 22,6 grader, og det bratteste sammenhengende partiet er 29,8. Fri Flyts Lofoten-sider er eldre og bærer ingen KAST; det de bærer er farepunktene, og de er målbare: hengskavlene mot nordøst henger over en side som faller 41 grader i snitt.",
     ascent: [
       "Fra gården Justad ved fv. 815 — 14 moh på dyrket mark, med parkering langs veien slik kilden sier. Lia over gården er åpen praktisk talt fra fjæra: terrengklassene langs linja har ingen sammenhengende skog i det hele tatt, så hele turen er lesbar fra bilen. Beltet fra 0 til 100 moh måler 11,7 grader.",
       "Linja følger ryggformasjonen nordover over Skjærheia: beltet fra 300 til 400 moh er turens bratteste, 22,6 grader over 250 meter grunn, med det bratteste sammenhengende partiet — 29,8 grader — mellom 363 og 389 moh. Over 400 slakner det til 11,0 før de øvre beltene legger seg på 17–20 grader.",
@@ -3564,11 +3564,11 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,200 L36,197 L56,189 L75,181 L93,176 L112,169 L140,159 L159,158 L183,154 L216,153 L244,150 L259,144 L275,137 L292,131 L317,121 L332,114 L351,103 L375,94 L403,85 L431,83 L450,78 L461,74 L488,64 L507,56 L526,46 L544,40 L573,30 L591,21 L600,18",
+      path: "M0,200 L37,197 L57,189 L76,181 L95,176 L115,169 L125,165 L135,161 L145,159 L156,157 L174,154 L208,153 L236,150 L252,144 L268,137 L285,131 L311,121 L327,114 L346,103 L370,94 L399,85 L428,83 L447,78 L459,74 L486,64 L505,56 L524,46 L543,40 L572,30 L591,21 L600,18",
       startLabel: "14 moh",
       endLabel: "736 moh",
-      distanceLabel: "2,9 km",
-      caption: "733 høydemeter og 2,88 km fra Justad over Skjærheia, uten skog å snakke om langs linja, med det bratteste — 29,8 grader mellom 363 og 389 moh — midt på ryggen.",
+      distanceLabel: "2,8 km",
+      caption: "729 høydemeter og 2,82 km fra Justad over Skjærheia, uten skog å snakke om langs linja, med det bratteste — 29,8 grader mellom 363 og 389 moh — midt på ryggen.",
     },
   },
   stornappstinden: {
