@@ -107,6 +107,11 @@
       "what": "Kvar det brattaste 30-metersvindauget på den routede linja ligg",
       "figure": "20,7° mellom 1275 og 1292 moh, på peiling 305 frå toppen og 1,09 km ut, altså 1090 m langs bakken",
       "how": "router.steepest_span over routes.json-linja, og peiling/haversine frå toppkoordinaten i summits.json til det fyrste punktet i vindauget."
+    },
+    {
+      "what": "Vesletjenn linja kryssar",
+      "figure": "90 m på 1095 moh (v121–124), høgst 20 m frå land. Terrengklasse Innsjø; SSR: Vesletjenn, 25 m frå kryssinga.",
+      "how": "DTM1-terrengklasse (ws.geonorge.no/hoydedata/v1/punkt) på kvar vertex i flate køyringar langs lib/routes.ts, som check_ground.py; lengd = summen av segmenta mellom første og siste vertex på vatn; avstand frå land = for kvar vatn-vertex næraste punkt med anna klasse, 16 retningar i 5 m-steg (tak 150 m); namn frå ws.geonorge.no/stedsnavn/v1/punkt."
     }
   ],
   "ranten": [
@@ -427,6 +432,11 @@
       "what": "Foten av nordryggen",
       "figure": "865 moh",
       "how": "Vertex 188 av ruta «normalruta» i routes.json etter stirunden (follow_trails.py), lest fra DTM1 av resample: 865 moh, 5.93 km ut. Tallet sto før i terrengprøvene til guide_facts; skjøten flyttet prøvepunktene, ikke høyden."
+    },
+    {
+      "what": "Møsetjørna linja kryssar",
+      "figure": "90 m på 755 moh (v173–176), opptil 55 m frå land. Terrengklasse Innsjø; SSR: Møsetjørna, 1 m frå kryssinga.",
+      "how": "DTM1-terrengklasse (ws.geonorge.no/hoydedata/v1/punkt) på kvar vertex i flate køyringar langs lib/routes.ts, som check_ground.py; lengd = summen av segmenta mellom første og siste vertex på vatn; avstand frå land = for kvar vatn-vertex næraste punkt med anna klasse, 16 retningar i 5 m-steg (tak 150 m); namn frå ws.geonorge.no/stedsnavn/v1/punkt."
     }
   ],
   "gygrastolen": [
@@ -434,6 +444,11 @@
       "what": "Åtte-peilings flankesveip frå toppen (snitt over 500 m / brattaste 60-metersvindauge)",
       "figure": "N 33,4/60,0 · NØ 11,4/55,2 · Ø 10,2/26,5 · SØ 24,4/37,3 · S 34,2/64,2 · SV 40,7/59,8 · V 37,7/60,7 · NV 26,7/52,7",
       "how": "flank_probe.py <lat> <lng> --out 500 --step 10 frå toppkoordinaten i summits.json, åtte peilingar over DTM1. Snittet er over heile radialen; vindauget er det brattaste 60-metersvindauget langs han."
+    },
+    {
+      "what": "Gygrastølvatnet linja kryssar",
+      "figure": "90 m på 492 moh (v64–67), opptil 55 m frå land. Terrengklasse Innsjø, ikkje InnsjøRegulert; SSR: Gygrastolsvatnet, 16 m frå kryssinga.",
+      "how": "DTM1-terrengklasse (ws.geonorge.no/hoydedata/v1/punkt) på kvar vertex i flate køyringar langs lib/routes.ts, som check_ground.py; lengd = summen av segmenta mellom første og siste vertex på vatn; avstand frå land = for kvar vatn-vertex næraste punkt med anna klasse, 16 retningar i 5 m-steg (tak 150 m); namn frå ws.geonorge.no/stedsnavn/v1/punkt."
     }
   ],
   "skarsteinfjellet": [
@@ -547,6 +562,11 @@
       "what": "Håen: vassflate, brøytegrense og skogsbilvegen austover",
       "figure": "Vassflata på Håen måler 433,0 moh på DTM1 med terrengklasse InnsjøRegulert. Parkeringa (OSM way/145361330) måler 411,1 moh, altså 22 m under det regulerte vatnet. Lundadalsvegen sluttar ikkje ved parkeringa: OSM way/617153815 (Lundadalsvegen, toll=yes) held fram 2,6 km austover langs nordsida av vatnet, frå 410,5 moh ved parkeringa til 434,8 moh ved austenden 290 m frå Kråklivollen. Det er skogsbilvegen ut.no nemner.",
       "how": "DTM1-punktoppslag på vassflata og langs vegen, og Overpass-uttrekk av way/145361330, way/617154075, way/15054350 og way/617153815."
+    },
+    {
+      "what": "Rundtjønnin linja kryssar",
+      "figure": "135 m på 526 moh (v182–186), opptil 40 m frå land. Terrengklasse Innsjø, ikkje InnsjøRegulert; SSR: Rundtjønnin, 3 m frå kryssinga.",
+      "how": "DTM1-terrengklasse (ws.geonorge.no/hoydedata/v1/punkt) på kvar vertex i flate køyringar langs lib/routes.ts, som check_ground.py; lengd = summen av segmenta mellom første og siste vertex på vatn; avstand frå land = for kvar vatn-vertex næraste punkt med anna klasse, 16 retningar i 5 m-steg (tak 150 m); namn frå ws.geonorge.no/stedsnavn/v1/punkt."
     }
   ],
   "rensfjellet": [
@@ -564,6 +584,11 @@
       "what": "Håen: vassflate, brøytegrense og skogsbilvegen austover",
       "figure": "Vassflata på Håen måler 433,0 moh på DTM1 med terrengklasse InnsjøRegulert. Parkeringa (OSM way/145361330) måler 411,1 moh, altså 22 m under det regulerte vatnet. Lundadalsvegen sluttar ikkje ved parkeringa: OSM way/617153815 (Lundadalsvegen, toll=yes) held fram 2,6 km austover langs nordsida av vatnet, frå 410,5 moh ved parkeringa til 434,8 moh ved austenden 290 m frå Kråklivollen. Det er skogsbilvegen ut.no nemner.",
       "how": "DTM1-punktoppslag på vassflata og langs vegen, og Overpass-uttrekk av way/145361330, way/617154075, way/15054350 og way/617153815."
+    },
+    {
+      "what": "Rundtjønnin linja kryssar",
+      "figure": "74 m på 526 moh (v160–163), opptil 35 m frå land. Terrengklasse Innsjø, ikkje InnsjøRegulert; SSR: Rundtjønnin.",
+      "how": "DTM1-terrengklasse (ws.geonorge.no/hoydedata/v1/punkt) på kvar vertex i flate køyringar langs lib/routes.ts, som check_ground.py; lengd = summen av segmenta mellom første og siste vertex på vatn; avstand frå land = for kvar vatn-vertex næraste punkt med anna klasse, 16 retningar i 5 m-steg (tak 150 m); namn frå ws.geonorge.no/stedsnavn/v1/punkt."
     }
   ],
   "storhornet": [
@@ -652,6 +677,11 @@
       "what": "Vatn linja kryssar",
       "figure": "Svartvatnet på 888–889 moh: 870 m av linja, som er den kryssinga ut.no namngjev. I tillegg går 90 m av linja over eit lite unamngjeve vatn på 1024,0 moh (terrengklasse Innsjø) ved foten av Litj-Snota, rett før vegpunktet på 1026. Den kartlagde skitour-løypa i området (OSM way/344344060, 8,83 km, piste:grooming=backcountry) går utanom Svartvatnet — ho ligg 478 m frå linja der — og endar 1075 m frå toppen.",
       "how": "DTM1-terrengklasse på kvar vertex i routes.json, og Overpass-uttrekk av piste:type rundt ruta."
+    },
+    {
+      "what": "Svartvatnet linja kryssar",
+      "figure": "To strekk på isen, 674 m (v143–161) og 239 m (v165–171), til saman 913 m på 888–889 moh; midt på vatnet over 150 m frå land (målinga stoppar på 150). Terrengklasse Innsjø, ikkje InnsjøRegulert.",
+      "how": "DTM1-terrengklasse (ws.geonorge.no/hoydedata/v1/punkt) på kvar vertex i flate køyringar langs lib/routes.ts, som check_ground.py; lengd = summen av segmenta mellom første og siste vertex på vatn; avstand frå land = for kvar vatn-vertex næraste punkt med anna klasse, 16 retningar i 5 m-steg (tak 150 m); namn frå ws.geonorge.no/stedsnavn/v1/punkt."
     }
   ],
   "fanaraken": [
