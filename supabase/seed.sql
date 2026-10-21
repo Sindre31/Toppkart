@@ -3781,7 +3781,7 @@ where slug = 'slogen';
 update public.tk_tours set
   description_up   = 'Start på den kartfestede parkeringa på Hatlestad, 453 moh, over Norddalen. Fri Flyt skriver at du parkerer på 350 moh; terrengmodellen leser gårdene til 412 og p-plassen til 453, og differansen er grunnen til at turen her måler 1479 høydemeter og ikke 1500.
 
-Gå slakt inn i munningen av Dyrdalen og opp til Rellingsætra på 557 moh. De to første bandene er nesten flate — 2,8 grader fra 400 til 500 moh og 2,1 over 2678 meter grunn fra 500 til 600.
+Gå slakt inn i munningen av Dyrdalen og opp til Rellingsætra på 557 moh. De to første bandene er nesten flate — 2,8 grader fra 400 til 500 moh og 2,1 over 2676 meter grunn fra 500 til 600.
 
 Fra setra tar kneiken opp på Daurmålsfjellet, 825 moh: 15,4 grader fra 600 til 700 moh og 15,5 fra 700 til 800. Skogen holder til 800 moh. Dette er den bratte delen av turen, og den er kort.
 
@@ -3810,7 +3810,7 @@ where slug = 'torvloysa';
 update public.tk_tours set
   description_up   = 'Start på biloppstillingsplassen på Korsmyra, 621 moh, ved hovedveien mellom Eidsdal og Geiranger. Tilkomsten står under Eidshornet hos Fri Flyt, og det er den samme plassen.
 
-Følg seterveien inn til Grandesætra på 648 moh og videre slakt inn og oppover Gråsteindalen, 721 moh. De to første bandene er nesten flate: 3,3 grader over 1431 meter grunn fra 600 til 700 moh og 3,6 over 1575 meter fra 800 til 900.
+Følg seterveien inn til Grandesætra på 648 moh og videre slakt inn og oppover Gråsteindalen, 721 moh. De to første bandene er nesten flate: 3,4 grader over 1418 meter grunn fra 600 til 700 moh og 3,6 over 1575 meter fra 800 til 900.
 
 Kommet inn mot botnen av dalen på 940 moh tar den store snøflanken til, og den holder samme karakter helt opp: 17,9 grader fra 900 til 1000 moh, 20,5 fra 1000 til 1100, 19,6 fra 1300 til 1400, 21,2 fra 1500 til 1600 og 21,2 fra 1600 til 1700 — de to bratteste hundremetrene. Bratteste sammenhengende parti måler 27,9 grader mellom 1528 og 1544 moh.
 

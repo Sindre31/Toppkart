@@ -7993,6 +7993,26 @@ The other 77 stay:
 | On a mapped way | 5 |
 | Put back with Rensfjellet | 3 |
 
+### Batch 6, tours 126–150
+
+The batch had 61 kinks. Two were smoothed: Torvløysa at 2.1 km and Skarene at
+1.0 km. Slogen's kink was tried and put back, because the waypoint «stien ved
+2.12 km» would have ended 17 m off the line.
+
+Skarene's caption still said 1219 m of climbing and 6.44 km, from an older
+line. It now gives the same figures as the introduction: 1239 m and 6.71 km.
+
+The other 59 stay:
+
+| Reason | Kinks |
+| --- | --- |
+| Smooth curve 6° or more steeper than the ground | 20 |
+| No dry, clear curve | 16 |
+| Next to a named waypoint | 16 |
+| Still over 30° | 4 |
+| On a mapped way | 2 |
+| Put back with Slogen | 1 |
+
 ## Network
 
 Everything is public and unauthenticated:
