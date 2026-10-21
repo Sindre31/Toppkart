@@ -124,3 +124,37 @@
       );
   }
 }
+
+/* `/mine-turer` på PC: bildet ligger bak hele vinduet, ikke bare bak
+   overskriften. Det står fast mens sida ruller, forankret i overkanten som
+   heroen, så toppen alltid er med. Sløret fra venstre holder overskriften
+   lesbar; kortene har egen bakgrunn. Heroens eget bilde og slør skjules her —
+   på telefon er det omvendt. */
+.pageBackdrop { display: none; }
+
+@media (min-width: 761px) {
+  .pageBackdrop {
+    display: block;
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+  }
+
+  .pageBackdrop::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      100deg,
+      var(--color-bg) 0%,
+      color-mix(in srgb, var(--color-bg) 85%, transparent) 30%,
+      color-mix(in srgb, var(--color-bg) 40%, transparent) 58%,
+      color-mix(in srgb, var(--color-bg) 10%, transparent) 80%,
+      transparent 100%
+    );
+  }
+
+  .heroSoft > .heroImage,
+  .heroSoft::after { display: none; }
+}

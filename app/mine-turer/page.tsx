@@ -37,27 +37,32 @@ export default async function MineTurerPage() {
 
   return (
     <div className="shell">
+      {/* Relieffet fra `/om`: bak hele vinduet på PC, bak overskriften på
+          telefon (se `.pageBackdrop` og `.heroSoft`). Bare ett av dem vises,
+          og uten `priority` henter nettleseren ikke det skjulte. Dekor, derfor
+          tom alt. */}
+      <div className={styles.pageBackdrop} aria-hidden>
+        <Image src="/assets/hero-relief.webp" alt="" fill sizes="100vw" className={styles.heroImage} />
+      </div>
+
       <SiteNav lang={lang} current="/mine-turer" />
 
-      <main className="page page-account">
-        {/* Samme relieff og slør som heroen på `/om`. Dekor, derfor tom alt. */}
+      {/* `.shell` er en flex-kolonne, og `margin: auto` krymper `.page` til
+          innholdet; `width` holder den i full bredde. */}
+      <main className="page" style={{ width: "100%" }}>
         <header className={`${styles.hero} ${styles.heroSoft}`}>
           <Image
             src="/assets/hero-relief.webp"
             alt=""
             aria-hidden
             fill
-            priority
-            sizes="(max-width: 920px) 100vw, 920px"
+            sizes="100vw"
             className={styles.heroImage}
           />
           <div className={styles.heroContent}>
             <h1 className="display" style={{ fontSize: "clamp(56px, 6.5vw, 84px)" }}>
               {t.heading}
             </h1>
-            <p className="lede" style={{ margin: "14px 0 0" }}>
-              {t.storedLocally}
-            </p>
           </div>
         </header>
 
