@@ -7968,6 +7968,31 @@ The other 61 stay:
 Both were already in their guides' notes from the steepness round, at the
 same figures.
 
+### Batch 5, tours 101–125
+
+One more rule: if a route's curves add more than 6 m of climbing in all, the
+whole route goes back. Each curve is still held to 5 m on its own.
+Rensfjellet's three curves added 11 m between them, which raised the metres
+it gives back from 168 to 179. Its guide holds that figure up against ut.no's
+«ca 130». The route was put back.
+
+The batch had 80 kinks. Three were smoothed:
+
+- Sandhornet from Horsdal at 0.9 km.
+- Tortenviktinden at 2.4 km.
+- Kråkfjellet at 1.6 km.
+
+The other 77 stay:
+
+| Reason | Kinks |
+| --- | --- |
+| Smooth curve 6° or more steeper than the ground | 19 |
+| Next to a named waypoint | 19 |
+| No dry, clear curve | 18 |
+| Still over 30° | 13 |
+| On a mapped way | 5 |
+| Put back with Rensfjellet | 3 |
+
 ## Network
 
 Everything is public and unauthenticated:

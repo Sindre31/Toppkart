@@ -3032,7 +3032,7 @@ Til slutt nordover opp toppflanken: hundremetersbeltet 900–1000 holder 21,3 gr
 
 Ravika-ruta på nordøstsida er fullt beskrevet hos Fri Flyt — skogsveien fra den grønne garasjen, myrdragene langs Ravikelva, rampe til toppeggen — men nedfarten dens har et 40-gradersparti mellom 920 og 840 moh og skaret 300 m sørøst for toppen som inngang. Den er varianten, ikke normalveien, og den som velger den, har valgt en annen tur.
 
-Ned trappene bærer du skia igjen, og stien langs fjæra tar deg hjem til Horsdal — 50 høydemeter å gi tilbake har hele turen, så det meste av dagen er ren stigning og ren kjøring.
+Ned trappene bærer du skia igjen, og stien langs fjæra tar deg hjem til Horsdal — 49 høydemeter å gi tilbake har hele turen, så det meste av dagen er ren stigning og ren kjøring.
 
 Kilden gir nordøstsida egen adkomstbeskrivelse og egen parkering i Ravika, og sier rett ut at du kan velge å gå opp fra den sida. Det er 1033 høydemeter og 5,41 km: skogsveien sørvest langs vestsida av Ravikelva, myrene ved Hornkroken på 252 moh, punkt 385 og det slakere området sør for punkt 580 — og til slutt det ene snøfeltet som når helt opp på toppeggen. Bratteste steget måler 36,1 grader mellom 806 og 830 moh mot 40,2 i trappene på ruta fra Horsdal. Kilden oppgir 40 grader mellom 840 og 920 og legger til stegjern og isøks på hardt føre, innblåst snø i utsteget av rampa og skavler langs toppeggen.',
   avalanche_notes  = jsonb_build_array(
@@ -3052,11 +3052,11 @@ Kilden gir nordøstsida egen adkomstbeskrivelse og egen parkering i Ravika, og s
 where slug = 'sandhornet';
 
 update public.tk_tours set
-  description_up   = 'Fra gården Neset ved Flostrand, 15 moh, på E12 kystriksvegen. Registeret setter Tortenviktinden i Lurøy, mens tilkomsten fra Flostrand ligger i Rana — fjellet og startstedet er i hver sin kommune. Visit Helgeland fører samme ruta med 5,2 km og 1 025 høydemeter én vei; linja måler 5,57 km og 1 023.
+  description_up   = 'Fra gården Neset ved Flostrand, 15 moh, på E12 kystriksvegen. Registeret setter Tortenviktinden i Lurøy, mens tilkomsten fra Flostrand ligger i Rana — fjellet og startstedet er i hver sin kommune. Visit Helgeland fører samme ruta med 5,2 km og 1 025 høydemeter én vei; linja måler 5,57 km og 1 024.
 
 Første kilometeren er nesten flat: beltet fra 0 til 100 moh måler 6,7 grader over 761 meter grunn og beltet fra 100 til 200 bare 4,5 over 1 233 meter. Skogen slutter på 152 moh etter Kartverkets klasser, med åpent område fra 158, og skoggrensa kommer 1,66 km ute. Fri Flyt sier «rett opp til du kommer over skogen i nord-nordvestlig retning», og det er den biten.
 
-Over skogen går linja vestover på rabbene, slik kilden sier. Beltene fra 200 til 500 moh ligger jevnt mellom 12,3 og 13,2 grader. Så kommer det flatere partiet den beskriver som «noe ulendt, med små bekkedaler på tvers av fjellet»: beltene fra 700 til 900 moh måler 10,4 og 8,8 grader over 495 og 675 meter grunn — det slakeste over skoggrensa, og det lengste. Det er her turen kjennes lang. Her ligger en klynge tjern på 785 til 792 moh, og linja går sør om hele klynga: 0 meter på vann, målt mot OSMs vannpolygon.
+Over skogen går linja vestover på rabbene, slik kilden sier. Beltene fra 200 til 500 moh ligger jevnt mellom 12,3 og 13,4 grader. Så kommer det flatere partiet den beskriver som «noe ulendt, med små bekkedaler på tvers av fjellet»: beltene fra 700 til 900 moh måler 10,4 og 8,8 grader over 495 og 675 meter grunn — det slakeste over skoggrensa, og det lengste. Det er her turen kjennes lang. Her ligger en klynge tjern på 785 til 792 moh, og linja går sør om hele klynga: 0 meter på vann, målt mot OSMs vannpolygon.
 
 «Herfra ser du ikke selve Tortenviktinden, men toppen ligger rett bak det høyeste punktet du ser», sier Fri Flyt. Bak det stiger den siste helninga: beltet fra 900 til 1000 moh måler 18,6 grader, det bratteste på turen, og det bratteste sammenhengende partiet ligger her — 23,7 grader mellom 971 og 994 moh, 5,39 km ute, altså under to hundre meter før varden. 1028 moh mot publiserte 1027.',
   description_down = 'Ned samme ruta. Det bratteste du kjører er de 23,7 gradene rett under toppen, og så blir det slakere hele veien ut — noe som gjør at de siste kilometerne er staking mer enn kjøring.
@@ -3182,7 +3182,7 @@ update public.tk_tours set
 
 Grunnen til at den gjør det står i vatnet ved sida av. Vannflata på Håen måler 433 moh og er klassifisert som regulert innsjø: magasinet tappes ned hver vinter, parkeringa ligger 22 meter under full vannflate, og ut.no ber deg holde deg unna usikker is langs kanten. Veien ligger på land hele veien, fra 411 moh ved bilen til 435 ved østenden.
 
-Etter knapt tre kilometer kommer du til Kråklivollen, 452 moh, der veien slutter og ruta går opp i skogen, opp Kråklia og vest for Samsjølia. Skogen slipper taket på 570 moh, og fra 574 er du i åpent terreng. Bandet fra 400 til 500 moh måler 1,2 grader over 4507 meter grunn — det er avstanden, ikke stigninga, som er turen her.
+Etter knapt tre kilometer kommer du til Kråklivollen, 452 moh, der veien slutter og ruta går opp i skogen, opp Kråklia og vest for Samsjølia. Skogen slipper taket på 570 moh, og fra 574 er du i åpent terreng. Bandet fra 400 til 500 moh måler 1,2 grader over 4495 meter grunn — det er avstanden, ikke stigninga, som er turen her.
 
 Rundtjønnin ligger på 526 moh, og det er kontrollmålet på at ruta ligger der beskrivelsen sier: ut.no oppgir 525. Videre nord og nordøst følger du rygger eller søkk i samme retning, avhengig av snø og føre, til ruta dreier mot nord og nordvest opp mot toppen. Bandene over Rundtjønnin måler 2,4, 3,6, 6,0 og 5,7 grader, og det siste av dem dekker bare 149 meter grunn.
 
@@ -3193,7 +3193,7 @@ Sveipet finner ingen bratt side på dette fjellet: bratteste 60-metersvindu i no
   avalanche_notes  = jsonb_build_array(
     jsonb_build_object(
       'title', 'Ruta',
-      'body',  'Ni og en halv kilometer der bandene måler 1,2, 2,4, 3,6, 6,0 og 5,7 grader, og bratteste sammenhengende steg er 16,1 grader mellom 467 og 480 moh. Ruta gir tilbake 67 høydemeter og stiger 468 mot ut.nos oppgitte 519 og «ca 140» tapte. Resten av forskjellen ligger i linjevalget mellom ryggene, som beskrivelsen selv overlater til snøen og føret.'
+      'body',  'Ni og en halv kilometer der bandene måler 1,2, 2,4, 3,6, 6,0 og 5,7 grader, og bratteste sammenhengende steg er 16,1 grader mellom 467 og 480 moh. Ruta gir tilbake 68 høydemeter og stiger 468 mot ut.nos oppgitte 519 og «ca 140» tapte. Resten av forskjellen ligger i linjevalget mellom ryggene, som beskrivelsen selv overlater til snøen og føret.'
     ),
     jsonb_build_object(
       'title', 'Terrenget utenfor',
