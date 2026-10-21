@@ -289,6 +289,13 @@ alter table public.tk_feedback      enable row level security;
 alter table public.tk_rate_limit    enable row level security;
 alter table public.tk_tour_marks    enable row level security;
 
+-- Grants are spelled out per table below, service role included. Supabase used
+-- to hand `anon`, `authenticated` and `service_role` full access to every new
+-- table in `public` on its own; from 30 October 2026 a table created in a new
+-- project, a preview branch or after `supabase db reset` gets nothing, and the
+-- Data API answers «permission denied». The revokes stay for databases that
+-- still carry the old defaults.
+
 -- ---------------------------------------------------------------- tours -----
 
 -- Everything on a published tour is open to everyone — Toppkart is free.
@@ -314,6 +321,7 @@ grant select on public.tk_tours to anon, authenticated;
 -- writes anyway (there is no write policy), but a grant nobody should hold is
 -- one dropped policy away from being a hole.
 revoke insert, update, delete, truncate on public.tk_tours from anon, authenticated;
+grant select, insert, update, delete on public.tk_tours to service_role;
 
 -- ------------------------------------------------------------- profiles -----
 
@@ -351,6 +359,8 @@ create policy "tk_profiles: update own row"
 -- not be sitting there waiting for a policy edit to go wrong.
 revoke insert, update, delete, truncate on public.tk_profiles from anon;
 revoke delete, truncate on public.tk_profiles from authenticated;
+grant select, insert, update on public.tk_profiles to authenticated;
+grant select, insert, update, delete on public.tk_profiles to service_role;
 
 -- ----------------------------------------------------------- tour_marks -----
 
@@ -392,6 +402,7 @@ create policy "tk_tour_marks: delete own rows"
 revoke all on public.tk_tour_marks from anon;
 revoke truncate on public.tk_tour_marks from authenticated;
 grant select, insert, update, delete on public.tk_tour_marks to authenticated;
+grant select, insert, update, delete on public.tk_tour_marks to service_role;
 
 -- tk_feedback ----------------------------------------------------------------
 -- No policies at all, deliberately. The table is written by the service role
@@ -404,12 +415,16 @@ grant select, insert, update, delete on public.tk_tour_marks to authenticated;
 -- refuses the writes on its own today — but a grant nobody should hold is one
 -- mistake away from mattering.
 revoke all on public.tk_feedback from anon, authenticated;
+-- /api/tilbakemelding inserts and /admin/tilbakemeldinger reads and updates,
+-- both with the service role.
+grant select, insert, update, delete on public.tk_feedback to service_role;
 
 -- tk_rate_limit --------------------------------------------------------------
 -- Same shape and the same reasoning: no policies, and the grant taken back.
 -- Only `tk_rate_limit_hit()` touches this table, and it runs as its owner, so
 -- nothing needs to reach the rows directly. A caller who could write here could
--- also zero their own counter, which is the whole limit gone.
+-- also zero their own counter, which is the whole limit gone. The service role
+-- reaches it through that function too, so it gets no grant of its own.
 revoke all on public.tk_rate_limit from anon, authenticated;
 
 -- ============================================================================
@@ -469,11 +484,6 @@ grant select on public.tk_tours_public to anon, authenticated;
 -- with RLS bypassed entirely. Read-only is the whole contract of this view.
 revoke insert, update, delete, truncate on public.tk_tours_public from anon, authenticated;
 
--- The trigger function is reachable over `/rest/v1/rpc/` by default. Postgres
--- refuses to run a plpgsql trigger function outside a trigger context, so this
--- is tidiness rather than a live hole — but nothing should be able to call it.
-revoke all on function public.tk_handle_new_user() from anon, authenticated;
-
 -- ============================================================================
 -- 7. Keep profiles in step with auth.users
 -- ----------------------------------------------------------------------------
@@ -494,6 +504,13 @@ begin
   return new;
 end;
 $$;
+
+-- The trigger function is reachable over `/rest/v1/rpc/` by default. Postgres
+-- refuses to run a plpgsql trigger function outside a trigger context, so this
+-- is tidiness rather than a live hole — but nothing should be able to call it.
+-- It sits after the `create`: on a fresh database the function does not exist
+-- until here, and a revoke on a missing function stops the whole script.
+revoke all on function public.tk_handle_new_user() from anon, authenticated;
 
 drop trigger if exists tk_on_auth_user_created on auth.users;
 create trigger tk_on_auth_user_created
