@@ -6893,24 +6893,24 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
   },
   gullfjellstoppen: {
     intro:
-      "839 metres of climbing and 7.8 km from the road end at Osavatnet to the highest point in Bergen. This is the gentlest tour in the collection: no hundred-metre band of the line averages more than 8.1 degrees, and the steepest sustained section is a single 27.4-degree step. The hazard is not in the route but in its last hundred metres — the summit dome is gentle, and the west side falls 59.0 degrees 200 to 260 metres from the cairn.",
+      "839 metres of climbing and 7.64 km from the road end at Osavatnet to the highest point in Bergen. This is the gentlest tour in the collection: no hundred-metre band of the line averages more than 8.1 degrees, and the steepest sustained section is a single 27.4-degree step. The hazard is not in the route but in its last hundred metres — the summit dome is gentle, and the west side falls 59.0 degrees 200 to 260 metres from the cairn.",
     ascent: [
       "From the paid car park at the end of Gullfjellsvegen, 307 m, at the head of Bjørndalen. The first two kilometres follow a gravel road and are all but flat: the band from 300 to 400 m averages 2.5 degrees over 2.1 km of ground. The forest stops at 324 m, and everything above that is classed as open ground by Kartverket — this is a tour with no treeline to speak of.",
       "At 2.47 km you reach the south end of Svartavatnet, 410 m. Fri Flyt describes the road as running “to the right of Svartavatnet”, and that is where the line goes: on land the whole way past. Svartavatnet is registered as a regulated lake. Fri Flyt gives 392 m, the terrain model reads the water surface at 408, and the difference is not drawdown — it is the new dam: Bergen municipality built one downstream in 2012–2014 and raised the highest regulated level by 20 metres.",
       "Redningshytta sits 18 metres off the line, 4.23 km in; the hut point itself measures 597.5 m and the line where it passes 592, against the “600 m” the source gives. Just after it comes the small dip the descriptions mention, and it is real: the line loses 50 metres, from 605 to 555 m over 252 metres of ground, between 4.11 and 4.36 km. That is 50 of the 159 metres the tour gives back along the way.",
       "From 555 m it climbs steadily again, and the steepest ground on the whole tour is here: a 27.4-degree step between 709 and 727 m. It is short, and it is the steepest thirty metres on the line.",
-      "Past the tarn at 769 m, 6.21 km in, the ground levels into what the source calls a broken ridge of high ground. The steepest hundred-metre band of the tour is here, between 800 and 900 m, and it averages 8.1 degrees over 720 metres of ground. Then through Middagsdalen at 939 m, 7.40 km in, and up to the cairn at 987.",
+      "Past the tarn at 769 m, 6.03 km in, the ground levels into what the source calls a broken ridge of high ground. The steepest hundred-metre band of the tour is here, between 800 and 900 m, and it averages 8.1 degrees over 720 metres of ground. Then through Middagsdalen at 939 m, 7.23 km in, and up to the cairn at 987.",
     ],
     descent: [
       "Back down the same line: through Middagsdalen, over the high ground, past the tarn and down to Redningshytta. Below the hut the 50 metres you lost on the way up are waiting, this time as a climb. From Svartavatnet out it is gravel road at 2.5 degrees — you walk the last two kilometres.",
       "The common mistake on this mountain is drifting west or north-west from the cairn. The summit dome is gentle enough that the transition is not felt underfoot: the north side falls 45.8 degrees only 30 to 90 metres from the cairn, the north-west 61.2 degrees 90 to 150 metres out, and the west 59.0 degrees 200 to 260 metres out. The south side, the one you came up, averages 4.9 degrees over the first 800 metres. In flat light the difference is invisible.",
       "Fri Flyt also describes descents from the main summit by way of Gullfjellshalsen and Vossevardane to Svartavatnet. Those are different lines from this one, and they are not measured here.",
-      "Fri Flyt lists three starts for Gullfjellet, and the northern one has its own description: from the closed Gullbotn Turistheim at Trengereid, “follow the waymarks up into Gullbotn itself north of Mannaleitnipa (593 m) and on to Gullfjellshalsen”. The waymarking is mapped the whole way. From the car park at 244 m the path leaves at 293, runs through Gullbotn itself at 447 north of Mannaleitnipa, over 699 and up onto Gullfjellhalsen — on the register as a ridge, 941 m — and from there the last metres to the cairn. 753 metres of climbing over 3.96 km against 839 over 7.80 km from Osavatnet: half the length, almost the same ascent, and no gravel road. It costs steepness. The band from 600 to 700 m measures 19.4 degrees against 8.1 in the steepest band on the western route, and the steepest 30 m window is 26.1 degrees between 607 and 629 against 27.4. It is not a single window that separates them — it is that the climbing here arrives in under half the distance. The forest lets go at 406 m after 1.4 km. This line gives back only 10 metres, against 159 on the western one.",
+      "Fri Flyt lists three starts for Gullfjellet, and the northern one has its own description: from the closed Gullbotn Turistheim at Trengereid, “follow the waymarks up into Gullbotn itself north of Mannaleitnipa (593 m) and on to Gullfjellshalsen”. The waymarking is mapped the whole way. From the car park at 244 m the path leaves at 293, runs through Gullbotn itself at 447 north of Mannaleitnipa, over 699 and up onto Gullfjellhalsen — on the register as a ridge, 941 m — and from there the last metres to the cairn. 753 metres of climbing over 3.96 km against 839 over 7.64 km from Osavatnet: half the length, almost the same ascent, and no gravel road. It costs steepness. The band from 600 to 700 m measures 19.4 degrees against 8.1 in the steepest band on the western route, and the steepest 30 m window is 26.1 degrees between 607 and 629 against 27.4. It is not a single window that separates them — it is that the climbing here arrives in under half the distance. The forest lets go at 406 m after 1.4 km. This line gives back only 10 metres, against 159 on the western one.",
     ],
     avalanche: [
       {
         title: "The route",
-        body: "The line is gentle throughout. The steepest hundred-metre band, 800 to 900 m, averages 8.1 degrees, and none of the other six bands exceeds 6.9. The steepest sustained section is the 27.4-degree step between 709 and 727 m. What changes with the weather here is not the angle but the snow: the tour starts at 307 m on the coast, and the snow line often sits above the car park. Fri Flyt's own hazard note is not about this line but about the gullies in the massif: “The whole of Glumragjelet, as well as the two gullies, is very avalanche-prone in winter, and in spring ice and rock often come down from the sheer mountainsides”. The register spells the name Glamregjelet and puts the gully 663 metres due west of the cairn, at 576 m — below the west side the route does not ski, but stands directly above.",
+        body: "The line is gentle throughout. The steepest hundred-metre band, 800 to 900 m, averages 8.1 degrees, and none of the other six bands exceeds 7.9. The steepest sustained section is the 27.4-degree step between 709 and 727 m. What changes with the weather here is not the angle but the snow: the tour starts at 307 m on the coast, and the snow line often sits above the car park. Fri Flyt's own hazard note is not about this line but about the gullies in the massif: “The whole of Glumragjelet, as well as the two gullies, is very avalanche-prone in winter, and in spring ice and rock often come down from the sheer mountainsides”. The register spells the name Glamregjelet and puts the gully 663 metres due west of the cairn, at 576 m — below the west side the route does not ski, but stands directly above.",
       },
       {
         title: "The summit",
@@ -6918,7 +6918,7 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
       },
       {
         title: "The ice",
-        body: "Osavatnet sits at 307 m on the coast at the latitude of Bergen, and Svartavatnet is registered as regulated. The line is therefore laid on land the whole way: 0 metres of 7 803 stand on water, checked against Kartverket's terrain class every two metres along the whole line — 3 769 points — and against OSM's water polygons. A regulated lake is drawn down in winter, and ice left spanning the void carries nothing.",
+        body: "Osavatnet sits at 307 m on the coast at the latitude of Bergen, and Svartavatnet is registered as regulated. The line is therefore laid on land the whole way: 0 metres of 7 635 stand on water, checked against Kartverket's terrain class every two metres along the whole line — 3 819 points — and against OSM's water polygons. A regulated lake is drawn down in winter, and ice left spanning the void carries nothing.",
       },
       {
         title: "Before you go",
@@ -6928,8 +6928,8 @@ export const GUIDE_EN: Record<string, GuideTextEn> = {
     elevationProfile: {
       startLabel: "307 m",
       endLabel: "987 m",
-      distanceLabel: "7.8 km",
-      caption: "839 metres of climbing and 7.8 km from Osavatnet, with the steepest ground — a 27.4-degree step between 709 and 727 m — halfway up.",
+      distanceLabel: "7.6 km",
+      caption: "839 metres of climbing and 7.6 km from Osavatnet, with the steepest ground — a 27.4-degree step between 709 and 727 m — halfway up.",
     },
   },
   tveitakvitingen: {

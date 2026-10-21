@@ -6773,24 +6773,24 @@ export const GUIDES: Record<string, TourGuide> = {
   gullfjellstoppen: {
     slug: "gullfjellstoppen",
     intro:
-      "839 høydemeter og 7,8 km fra veienden ved Osavatnet til Bergens høyeste punkt. Dette er den slakeste turen i samlinga: ingen hundremeter av linja holder mer enn 8,1 grader i snitt, og det bratteste sammenhengende partiet er ett eneste trinn på 27,4 grader. Faren ligger ikke i ruta, men i de siste hundre metrene av den — toppkuppelen er slak, og vestsida faller 59,0 grader 200 til 260 meter fra varden.",
+      "839 høydemeter og 7,64 km fra veienden ved Osavatnet til Bergens høyeste punkt. Dette er den slakeste turen i samlinga: ingen hundremeter av linja holder mer enn 8,1 grader i snitt, og det bratteste sammenhengende partiet er ett eneste trinn på 27,4 grader. Faren ligger ikke i ruta, men i de siste hundre metrene av den — toppkuppelen er slak, og vestsida faller 59,0 grader 200 til 260 meter fra varden.",
     ascent: [
       "Fra avgiftsparkeringa ved veienden på Gullfjellsvegen, 307 moh, innerst i Bjørndalen. De første to kilometerne går på grusvei og er så godt som flate: beltet fra 300 til 400 moh måler 2,5 grader i snitt over 2,1 km grunn. Skogen slutter allerede på 324 moh, og alt over det klassifiserer Kartverket som åpent område — dette er en tur uten tregrense å snakke om.",
       "Ved 2,47 km står du ved sørenden av Svartavatnet, 410 moh. Fri Flyt beskriver veien som «til høyre for Svartavatnet», og det er der linja går: på land, hele veien forbi. Svartavatnet er registrert som regulert vann. Fri Flyt oppgir 392 moh, terrengmodellen leser vannflata til 408, og forskjellen er ikke nedtapping — den er den nye dammen: Bergen kommune bygde dam nedstrøms i 2012–2014 og hevet høyeste regulerte vannstand med 20 meter.",
       "Redningshytta ligger 18 meter fra linja, 4,23 km ute; selve hyttepunktet måler 597,5 moh og linja der den passerer 592, mot de «600 moh» kilden oppgir. Rett etter kommer den vesle unnabakken kildene nevner, og den er reell: linja mister 50 høydemeter, fra 605 til 555 moh over 252 meter grunn, mellom 4,11 og 4,36 km. Det er 50 av de 159 høydemetrene turen gir tilbake underveis.",
       "Fra 555 moh stiger det jevnt igjen, og det bratteste på hele turen ligger her: et trinn på 27,4 grader mellom 709 og 727 moh. Det er kort, og det er den bratteste tretti-meteren på linja.",
-      "Over tjørna på 769 moh, 6,21 km ute, flater det ut i det kilden kaller et kupert høydedrag. Det bratteste hundremeterbeltet på turen ligger her, mellom 800 og 900 moh, og det måler 8,1 grader i snitt over 720 meter grunn. Så gjennom Middagsdalen på 939 moh, 7,40 km ute, og opp til varden på 987.",
+      "Over tjørna på 769 moh, 6,03 km ute, flater det ut i det kilden kaller et kupert høydedrag. Det bratteste hundremeterbeltet på turen ligger her, mellom 800 og 900 moh, og det måler 8,1 grader i snitt over 720 meter grunn. Så gjennom Middagsdalen på 939 moh, 7,23 km ute, og opp til varden på 987.",
     ],
     descent: [
       "Ned samme linja: gjennom Middagsdalen, over høydedraget, forbi tjørna og ned til Redningshytta. Under hytta venter de 50 høydemetrene du mistet på vei opp, denne gangen som stigning. Fra Svartavatnet og ut er det grusvei og 2,5 grader — de siste to kilometerne går du.",
       "Vanligste feilen på dette fjellet er å ta av vestover eller nordvestover fra varden. Toppkuppelen er så slak at overgangen ikke kjennes på skia: nordsida faller 45,8 grader bare 30 til 90 meter fra varden, nordvestsida 61,2 grader 90 til 150 meter ut, og vestsida 59,0 grader 200 til 260 meter ut. Sørsida, som er den du kom opp, holder 4,9 grader i snitt de første 800 metrene. I flatt lys er forskjellen usynlig.",
       "Fri Flyt beskriver også nedkjøringer fra hovedtoppen om Gullfjellshalsen og Vossevardane til Svartavatnet. Det er andre linjer enn denne, og de er ikke målt her.",
-      "Fri Flyt fører tre startsteder for Gullfjellet, og nordruta har sin egen beskrivelse: fra den nedlagte Gullbotn Turistheim ved Trengereid, «følg merkingen opp i selve Gullbotn nord for Mannaleitnipa (593 moh) og videre til Gullfjellshalsen». Merkinga er kartlagt hele veien. Fra parkeringa på 244 moh tar stien av på 293, går gjennom selve Gullbotn på 447 nord for Mannaleitnipa, over 699 og opp på Gullfjellhalsen — registerført som rygg, 941 moh — og derfra de siste metrene til varden. 753 høydemeter på 3,96 km mot 839 på 7,80 km fra Osavatnet: halve lengden, nesten samme stigningen, og ingen grusvei. Det koster bratthet. Beltet fra 600 til 700 moh måler 19,4 grader mot 8,1 i det bratteste beltet på vestruta, og det bratteste 30-metersvinduet er 26,1 grader mellom 607 og 629 mot 27,4. Det er ikke et enkelt vindu som skiller dem — det er at stigningen her kommer på under halve lengden. Skogen slipper på 406 moh etter 1,4 km. Ruta gir bare 10 høydemeter tilbake, mot 159 på vestruta.",
+      "Fri Flyt fører tre startsteder for Gullfjellet, og nordruta har sin egen beskrivelse: fra den nedlagte Gullbotn Turistheim ved Trengereid, «følg merkingen opp i selve Gullbotn nord for Mannaleitnipa (593 moh) og videre til Gullfjellshalsen». Merkinga er kartlagt hele veien. Fra parkeringa på 244 moh tar stien av på 293, går gjennom selve Gullbotn på 447 nord for Mannaleitnipa, over 699 og opp på Gullfjellhalsen — registerført som rygg, 941 moh — og derfra de siste metrene til varden. 753 høydemeter på 3,96 km mot 839 på 7,64 km fra Osavatnet: halve lengden, nesten samme stigningen, og ingen grusvei. Det koster bratthet. Beltet fra 600 til 700 moh måler 19,4 grader mot 8,1 i det bratteste beltet på vestruta, og det bratteste 30-metersvinduet er 26,1 grader mellom 607 og 629 mot 27,4. Det er ikke et enkelt vindu som skiller dem — det er at stigningen her kommer på under halve lengden. Skogen slipper på 406 moh etter 1,4 km. Ruta gir bare 10 høydemeter tilbake, mot 159 på vestruta.",
     ],
     avalanche: [
       {
         title: "Ruta",
-        body: "Linja er slak hele veien. Det bratteste hundremeterbeltet, 800 til 900 moh, måler 8,1 grader i snitt, og ingen av de seks andre beltene holder mer enn 6,9. Bratteste sammenhengende parti er trinnet på 27,4 grader mellom 709 og 727 moh. Det som skifter med været her er ikke bratthenget, men føret: turen starter på 307 moh ved kysten, og snøgrensa ligger ofte over parkeringa. Fri Flyts eget faremoment gjelder ikke denne linja, men gjelet i massivet: «Hele Glumragjelet, samt de to rennene, er veldig skredutsatt vinterstid, og på våren kommer det ofte is og stein ned fra de stupbratte fjellsidene.» Registeret skriver navnet Glamregjelet og setter juvet 663 meter rett vest for varden, på 576 moh — under den vestsida ruta ikke kjører, men står rett over.",
+        body: "Linja er slak hele veien. Det bratteste hundremeterbeltet, 800 til 900 moh, måler 8,1 grader i snitt, og ingen av de seks andre beltene holder mer enn 7,9. Bratteste sammenhengende parti er trinnet på 27,4 grader mellom 709 og 727 moh. Det som skifter med været her er ikke bratthenget, men føret: turen starter på 307 moh ved kysten, og snøgrensa ligger ofte over parkeringa. Fri Flyts eget faremoment gjelder ikke denne linja, men gjelet i massivet: «Hele Glumragjelet, samt de to rennene, er veldig skredutsatt vinterstid, og på våren kommer det ofte is og stein ned fra de stupbratte fjellsidene.» Registeret skriver navnet Glamregjelet og setter juvet 663 meter rett vest for varden, på 576 moh — under den vestsida ruta ikke kjører, men står rett over.",
       },
       {
         title: "Toppen",
@@ -6798,7 +6798,7 @@ export const GUIDES: Record<string, TourGuide> = {
       },
       {
         title: "Isen",
-        body: "Osavatnet ligger på 307 moh ved kysten på Bergens breddegrad, og Svartavatnet er registrert som regulert. Linja er derfor lagt på land hele veien: 0 meter av 7 803 står på vann, kontrollert mot Kartverkets terrengklasse hver andre meter langs hele linja — 3 769 punkt — og mot OSMs vannpolygon. Et regulert vann blir tappet ned om vinteren, og is som blir liggende igjen over tomrom bærer ingenting.",
+        body: "Osavatnet ligger på 307 moh ved kysten på Bergens breddegrad, og Svartavatnet er registrert som regulert. Linja er derfor lagt på land hele veien: 0 meter av 7 635 står på vann, kontrollert mot Kartverkets terrengklasse hver andre meter langs hele linja — 3 819 punkt — og mot OSMs vannpolygon. Et regulert vann blir tappet ned om vinteren, og is som blir liggende igjen over tomrom bærer ingenting.",
       },
       {
         title: "Før du går",
@@ -6806,11 +6806,11 @@ export const GUIDES: Record<string, TourGuide> = {
       },
     ],
     elevationProfile: {
-      path: "M0,200 L26,195 L48,199 L72,199 L97,194 L117,185 L142,186 L166,174 L191,173 L200,172 L225,160 L252,145 L277,137 L304,122 L327,129 L350,135 L372,126 L391,114 L412,97 L434,88 L457,76 L474,77 L477,76 L496,66 L520,61 L541,48 L565,31 L590,23 L600,18",
+      path: "M0,200 L27,195 L49,199 L74,199 L99,194 L120,185 L145,186 L169,174 L195,173 L205,172 L230,160 L258,145 L283,137 L311,122 L334,129 L357,135 L381,126 L399,114 L411,104 L421,97 L430,88 L454,76 L471,77 L475,76 L494,66 L519,61 L540,48 L565,31 L589,23 L600,18",
       startLabel: "307 moh",
       endLabel: "987 moh",
-      distanceLabel: "7,8 km",
-      caption: "839 høydemeter og 7,8 km fra Osavatnet, med det bratteste — et trinn på 27,4 grader mellom 709 og 727 moh — midtveis opp.",
+      distanceLabel: "7,6 km",
+      caption: "839 høydemeter og 7,6 km fra Osavatnet, med det bratteste — et trinn på 27,4 grader mellom 709 og 727 moh — midtveis opp.",
     },
   },
   tveitakvitingen: {
