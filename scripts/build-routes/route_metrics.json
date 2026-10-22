@@ -497,8 +497,8 @@
  },
  "nona": {
   "verticalM": 1020,
-  "gainM": 1016,
-  "distanceM": 5426,
+  "gainM": 1024,
+  "distanceM": 5518,
   "startM": 58,
   "summitM": 1009,
   "duration": "4–6 t",
@@ -508,8 +508,8 @@
   "maxStepAngle": 38.4,
   "grade": 2,
   "aspect": "NV",
-  "distanceKm": 5.4,
-  "cumdistM": 5426
+  "distanceKm": 5.5,
+  "cumdistM": 5518
  },
  "trolltinden": {
   "verticalM": 940,
@@ -1104,9 +1104,9 @@
   "cumdistM": 4539
  },
  "nonstinden": {
-  "verticalM": 970,
-  "gainM": 973,
-  "distanceM": 5707,
+  "verticalM": 980,
+  "gainM": 979,
+  "distanceM": 6154,
   "startM": 49,
   "summitM": 930,
   "duration": "4–6 t",
@@ -1116,8 +1116,8 @@
   "maxStepAngle": 31.1,
   "grade": 3,
   "aspect": "SØ",
-  "distanceKm": 5.7,
-  "cumdistM": 5707
+  "distanceKm": 6.2,
+  "cumdistM": 6154
  },
  "snotindan": {
   "verticalM": 1540,
@@ -2001,8 +2001,8 @@
  },
  "vassdalstinden": {
   "verticalM": 1230,
-  "gainM": 1232,
-  "distanceM": 6905,
+  "gainM": 1228,
+  "distanceM": 6892,
   "startM": 92,
   "summitM": 1278,
   "duration": "5–7 t",
@@ -2013,7 +2013,7 @@
   "grade": 3,
   "aspect": "SØ",
   "distanceKm": 6.9,
-  "cumdistM": 6905
+  "cumdistM": 6892
  },
  "saudehornet": {
   "verticalM": 1160,
@@ -2192,9 +2192,9 @@
   "cumdistM": 4564
  },
  "rondslottet": {
-  "verticalM": 1300,
-  "gainM": 1300,
-  "distanceM": 12414,
+  "verticalM": 1290,
+  "gainM": 1288,
+  "distanceM": 12616,
   "startM": 1082,
   "summitM": 2178,
   "duration": "7–9 t",
@@ -2202,10 +2202,10 @@
   "steepestBandFrom": 1600,
   "steepestBandTo": 1700,
   "maxStepAngle": 34.9,
-  "grade": 3,
+  "grade": 2,
   "aspect": "SV",
-  "distanceKm": 12.4,
-  "cumdistM": 12414
+  "distanceKm": 12.6,
+  "cumdistM": 12616
  },
  "glitregga": {
   "verticalM": 910,
@@ -2225,8 +2225,8 @@
  },
  "storronden": {
   "verticalM": 1110,
-  "gainM": 1108,
-  "distanceM": 10233,
+  "gainM": 1109,
+  "distanceM": 10450,
   "startM": 1082,
   "summitM": 2139,
   "duration": "6–8 t",
@@ -2236,8 +2236,8 @@
   "maxStepAngle": 25.7,
   "grade": 2,
   "aspect": "SV",
-  "distanceKm": 10.2,
-  "cumdistM": 10233
+  "distanceKm": 10.4,
+  "cumdistM": 10450
  },
  "skala": {
   "verticalM": 1820,
@@ -2272,9 +2272,9 @@
   "cumdistM": 5838
  },
  "lodalskapa": {
-  "verticalM": 1590,
-  "gainM": 1594,
-  "distanceM": 10745,
+  "verticalM": 1600,
+  "gainM": 1599,
+  "distanceM": 11042,
   "startM": 584,
   "summitM": 2082,
   "duration": "8–10 t",
@@ -2284,8 +2284,8 @@
   "maxStepAngle": 31.1,
   "grade": 3,
   "aspect": "NV",
-  "distanceKm": 10.7,
-  "cumdistM": 10745
+  "distanceKm": 11.0,
+  "cumdistM": 11042
  },
  "snonipa": {
   "verticalM": 1500,

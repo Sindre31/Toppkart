@@ -1454,6 +1454,13 @@
       "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/242063821, way/242063848, way/242063851."
      },
      {
+      "name": "gangbrua over Visa",
+      "lat": 61.62458,
+      "lng": 8.40257,
+      "elevation_m": 1092.0,
+      "note": "Lagt inn i elverunden: linja kryssar elva her, på brua."
+     },
+     {
       "lat": 61.63362,
       "lng": 8.33792,
       "name": "Svellnose",
@@ -1469,7 +1476,8 @@
     "source": "documented alternative route",
     "note": "The other standard route. Its 1434 m of gain from the valley floor is why the app's old 1100 m figure matched neither start: it sat between this and the 632 m from Juvasshytta.",
     "implied_start_m": null,
-    "start_vs_implied_m": null
+    "start_vs_implied_m": null,
+    "corridorNote": "Elverunden: linja kryssa Visa 40–60 m nord for gangbrua; no går ho over brua."
    }
   ]
  },
@@ -1616,16 +1624,18 @@
     },
     "waypoints": [
      {
-      "name": "Stien fra Spranget, ca 1140 m",
-      "lat": 61.8522,
-      "lng": 9.7567,
-      "elevation_m": 1136.98
+      "name": "Tjønnbakkvegen, ca 1140 m",
+      "lat": 61.85082,
+      "lng": 9.76151,
+      "elevation_m": 1148.0,
+      "note": "Flytt inn på linja i elverunden frå 61.8522/9.7567."
      },
      {
-      "name": "Dalen sørvest for Rondvassbu",
-      "lat": 61.8692,
-      "lng": 9.7873,
-      "elevation_m": 1171.73
+      "name": "Tjønnbakkvegen sørvest for Rondvassbu",
+      "lat": 61.86762,
+      "lng": 9.79045,
+      "elevation_m": 1193.0,
+      "note": "Flytt inn på linja i elverunden frå 61.8692/9.7873."
      },
      {
       "name": "Austsida av vika ved Lonin",
@@ -1665,7 +1675,7 @@
     "implied_start_m": 938.4,
     "start_vs_implied_m": 143.3,
     "avoidWater": true,
-    "corridorNote": "Vannrunden: linja gjekk på isen i vika ved Lonin (hus-runden la omvegen sør for tunet ut på vatnet). No følgjer ho Storronden-linja på land aust for vika og forbi Rondvassbu; vegpunkta under er flytte inn på den."
+    "corridorNote": "Vannrunden: linja gjekk på isen i vika ved Lonin (hus-runden la omvegen sør for tunet ut på vatnet). No følgjer ho Storronden-linja på land aust for vika og forbi Rondvassbu; vegpunkta under er flytte inn på den. Elverunden: linja gjekk i Storula på sommarstien; no følgjer ho Tjønnbakkvegen (preparert løype) frå Spranget til aust for Lonin."
    },
    {
     "id": "doralseter",
@@ -1676,11 +1686,20 @@
      "name": "Nedre Dørålseter",
      "elevation_m": 1041.3
     },
-    "waypoints": [],
+    "waypoints": [
+     {
+      "name": "gangbrua over Atna",
+      "lat": 61.99073,
+      "lng": 9.7982,
+      "elevation_m": 1029.0,
+      "note": "Lagt inn i elverunden: linja kryssar elva her, på brua."
+     }
+    ],
     "source": "documented alternative route",
     "note": "The northern approach, from the Dørålen side.",
     "implied_start_m": null,
-    "start_vs_implied_m": null
+    "start_vs_implied_m": null,
+    "corridorNote": "Elverunden: linja kryssa Atna 40–60 m frå gangbrua; no går ho over brua."
    },
    {
     "id": "bjornhollia",
@@ -3803,16 +3822,18 @@
     },
     "waypoints": [
      {
-      "name": "Stien fra Spranget, ca 1140 moh",
-      "lat": 61.8522,
-      "lng": 9.7567,
-      "elevation_m": 1136.98
+      "name": "Tjønnbakkvegen, ca 1140 moh",
+      "lat": 61.85082,
+      "lng": 9.76151,
+      "elevation_m": 1148.0,
+      "note": "Flytt inn på linja i elverunden frå 61.8522/9.7567."
      },
      {
-      "name": "Dalen sørvest for Rondvassbu",
-      "lat": 61.8692,
-      "lng": 9.7873,
-      "elevation_m": 1171.73
+      "name": "Tjønnbakkvegen sørvest for Rondvassbu",
+      "lat": 61.86762,
+      "lng": 9.79045,
+      "elevation_m": 1193.0,
+      "note": "Flytt inn på linja i elverunden frå 61.8692/9.7873."
      },
      {
       "name": "Rondvassbu",
@@ -3834,7 +3855,8 @@
      }
     ],
     "source": "researched, verified (ok), no local audit",
-    "notes": "Vestryggen er slak, men det er bare den ene sida av fjellet som er det: nord faller 63°, øst og sørøst 56–67°, og rett vest fra toppen 50°. Hold deg på ryggen fra stidelet og oppover, og la være å slippe deg nordover mot Rondholet fra toppen. Ur på ryggen blåser ofte bar, og da bæres skiene. Rondane ligger i varslingsregion Nord-Gudbrandsdalen, en B-region på varsom.no der skredvarsel bare publiseres ved faregrad 4–5 — en tom side betyr ikke trygt fjell."
+    "notes": "Vestryggen er slak, men det er bare den ene sida av fjellet som er det: nord faller 63°, øst og sørøst 56–67°, og rett vest fra toppen 50°. Hold deg på ryggen fra stidelet og oppover, og la være å slippe deg nordover mot Rondholet fra toppen. Ur på ryggen blåser ofte bar, og da bæres skiene. Rondane ligger i varslingsregion Nord-Gudbrandsdalen, en B-region på varsom.no der skredvarsel bare publiseres ved faregrad 4–5 — en tom side betyr ikke trygt fjell.",
+    "corridorNote": "Elverunden: linja gjekk i Storula på sommarstien; no følgjer ho Tjønnbakkvegen (preparert løype) frå Spranget til aust for Lonin."
    }
   ]
  },
@@ -4509,6 +4531,13 @@
       "lng": 6.19439
      },
      {
+      "name": "Engesetvegen langs Sætreelva",
+      "lat": 62.23115,
+      "lng": 6.20874,
+      "elevation_m": 315.0,
+      "note": "Lagt inn i elverunden: linja kryssar elva her, på brua."
+     },
+     {
       "name": "Vallasætra",
       "lat": 62.23207,
       "lng": 6.21122,
@@ -4550,7 +4579,7 @@
     ],
     "source": "researched, verified (corrected), no local audit",
     "notes": "Skredterreng i kneika opp til Bukkedalen og i heile flanken mot toppen. Frå skaret nord for toppen fell Vestrenna 700 høgdemeter i 45–50 grader ned i Nupadalen — ei feilnavigering vestover i dårleg sikt er alvorleg.",
-    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (1469 m from 0.7 km)."
+    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (1469 m from 0.7 km). Elverunden: linja gjekk langs og i Sætreelva ved sida av Engesetvegen; no følgjer ho vegen."
    }
   ]
  },
@@ -4949,6 +4978,13 @@
     },
     "waypoints": [
      {
+      "name": "brua over Bødalselva",
+      "lat": 61.80838,
+      "lng": 7.0834,
+      "elevation_m": 586.0,
+      "note": "Lagt inn i elverunden: linja kryssar elva her, på brua."
+     },
+     {
       "name": "Sætrevatnet",
       "lat": 61.79786,
       "lng": 7.10352,
@@ -4970,7 +5006,7 @@
     "source": "researched, verified (ok), no local audit",
     "notes": "Bresprekker, og svært djupe sprekker på Bohrsbreen — tau og breutstyr er ikkje valfritt. Brattebakkane er skredterreng. Stegjern og isøks når snøen er hard.",
     "avoidWater": true,
-    "corridorNote": "«Sætrevatnet» flytta frå namnepunktet på vatnet (61.79603/7.10282, vassflata) til linja ved osen, på land (61.79786/7.10352, 608 m), 207 m: vegpunktet på isen drog linja ut på vatnet, og Fri Flyt seier «gå mot Kåpevatnet, vend i sørlig retning». «Kåpevatnet» flytta frå namnepunktet på vatnet (61.7994/7.17403, vassflata) til linja ved sørbredden, på land (61.79685/7.17313, 1222 m), 287 m: vegpunktet på isen drog linja ut på vatnet, og Fri Flyt seier «gå mot Kåpevatnet, vend i sørlig retning». avoidWater: vårtur i mai–juni, isen kan ikkje takast for gitt."
+    "corridorNote": "«Sætrevatnet» flytta frå namnepunktet på vatnet (61.79603/7.10282, vassflata) til linja ved osen, på land (61.79786/7.10352, 608 m), 207 m: vegpunktet på isen drog linja ut på vatnet, og Fri Flyt seier «gå mot Kåpevatnet, vend i sørlig retning». «Kåpevatnet» flytta frå namnepunktet på vatnet (61.7994/7.17403, vassflata) til linja ved sørbredden, på land (61.79685/7.17313, 1222 m), 287 m: vegpunktet på isen drog linja ut på vatnet, og Fri Flyt seier «gå mot Kåpevatnet, vend i sørlig retning». avoidWater: vårtur i mai–juni, isen kan ikkje takast for gitt. Elverunden: linja gjekk i elva frå parkeringa; no går ho på sporet over bruene og stien."
    }
   ]
  },
@@ -7294,10 +7330,18 @@
       "note": "Lagt inn av skirt_buildings.py: linja gjekk gjennom way/271455345."
      },
      {
-      "name": "bruene over Slettåa og Folda",
-      "lat": 62.832,
-      "lng": 9.23,
-      "elevation_m": 522.0
+      "name": "brua over Slettåa",
+      "lat": 62.83462,
+      "lng": 9.22719,
+      "elevation_m": 506.0,
+      "note": "Lagt inn i elverunden: linja kryssar elva her, på brua."
+     },
+     {
+      "name": "hengebrua over Folda",
+      "lat": 62.83184,
+      "lng": 9.22323,
+      "elevation_m": 516.0,
+      "note": "Lagt inn i elverunden: linja kryssar elva her, på brua."
      },
      {
       "name": "mot Bossvasshøgda",
@@ -7356,7 +7400,7 @@
     ],
     "source": "researched, verified (ok), no local audit",
     "notes": "ut.no 1112155423, «Snota 1668 fra Trollheimshytta, Surnadal. Topptur, ski.», skriven av Håvard Engen og gjennomgått av Trondhjems Turistforening — same forfattar som appens Gråhaugen-rute. 11,5 km, 1249 høgdemeter, 4:30 opp, KAST-klasse 2, eksposisjon Ø. Kilden: «Følg merka sommerløype ut fra hytta og over bruer over Slettåa og Folda … forbi Bossvasshøgda … tar av til høyre fra denne i retning NV før du passerer 1000 moh … til du kommer inn på vinterruta fra Gråhaugen på ca 1070 moh.» Bossvasshøgda (Haug, 810,6) og Litj-Snota (Fjell, 1551,4) er registerførte. Punktet «breen» les SnøIsbre på DTM1, som er den same breen appens normalrute kryssar på 1515 moh. Åtvaringa er kildens eiga: «Ruta går i skredterreng, både løsneområder over 30 grader bratt og utløpsområder som det ikke er mulig å omgå», og «Toppflanken er stupbratt mot Ø.» Dei to siste punkta følgjer kildens eiga svingjing: «Når du er ferdig med breen på ca 1470 moh og kommer opp på toppflanken dreier ruta SV, S og til slutt S-SØ til toppunktet» — første forsøk gjekk rett på toppen frå nordaust og fekk eit steg på 42,7 grader.",
-    "corridorNote": "«inn på vinterruta frå Gråhaugen» moved onto the line in the review round: the solved line passed 61 m beside the researched point and walked out to it and back (62.854/9.125, 1054 m); the waypoint now sits where the line already ran, at DTM1 993 m."
+    "corridorNote": "«inn på vinterruta frå Gråhaugen» moved onto the line in the review round: the solved line passed 61 m beside the researched point and walked out to it and back (62.854/9.125, 1054 m); the waypoint now sits where the line already ran, at DTM1 993 m. Elverunden: linja kryssa Folda 170 m frå hengebrua og Slettåa utanfor brua; no går ho over begge bruene, slik guiden seier."
    }
   ]
  },
@@ -14428,6 +14472,20 @@
     },
     "waypoints": [
      {
+      "name": "Lakselvbrua",
+      "lat": 68.52903,
+      "lng": 15.75161,
+      "elevation_m": 11.0,
+      "note": "Lagt inn i elverunden: linja kryssar elva her, på brua."
+     },
+     {
+      "name": "brua over Vesterelva",
+      "lat": 68.53115,
+      "lng": 15.7281,
+      "elevation_m": 9.0,
+      "note": "Lagt inn i elverunden: linja kryssar elva her, på brua."
+     },
+     {
       "name": "vest for botn",
       "lat": 68.5353,
       "lng": 15.7229,
@@ -14467,7 +14525,8 @@
     "source": "researched, verified (ok), no local audit",
     "notes": "Fri Flyt: Komplekst. Alpinøks og stegjern. Nedkjøringen holder 25–40 grader; Karirenna mot nordøst er 45–50 grader med stort steinsprangfare i øvre del og krever stabil snø; vestsida mot Løbergsdalen måler 30–40. Fire bratte nedkjøringer — velg etter snøen.",
     "avoidWater": true,
-    "waterNote": "avoidWater set in the shape round: the line shipped on Havflate (the harbour shore / the tidal inlet), which is not ice and never will be."
+    "waterNote": "avoidWater set in the shape round: the line shipped on Havflate (the harbour shore / the tidal inlet), which is not ice and never will be.",
+    "corridorNote": "Elverunden: linja kryssa osane til Lakselva og Vesterelva i fjæra; no går ho på Våtvollveien over bruene."
    }
   ]
  },
@@ -14641,9 +14700,10 @@
     "waypoints": [
      {
       "name": "skogsveien",
-      "lat": 68.936,
-      "lng": 16.383,
-      "elevation_m": 97.0
+      "lat": 68.93765,
+      "lng": 16.38511,
+      "elevation_m": 104.0,
+      "note": "Flytt inn på linja i elverunden frå 68.936/16.383."
      },
      {
       "name": "stien ved 1.85 km",
@@ -14686,7 +14746,7 @@
     ],
     "source": "researched, verified (ok), no local audit",
     "notes": "Fri Flyt: KAST 3 – Komplekst. Alpinøks og stegjern. Renna holder 30–45 grader sammenhengende; Syd direkte måler 35–50 og krever stabil snø og presis veivalg. Vurder snødekket før nedkjøring — terrenget er skredterreng i alle varianter.",
-    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (219 m from 1.85 km); replaced Dalsdalen."
+    "corridorNote": "follow_trails.py: put on the mapped path where the line ran beside it through forest (219 m from 1.85 km); replaced Dalsdalen. Elverunden: linja gjekk i Dalselva; no følgjer ho skogsvegen innover Dalsdalen."
    },
    {
     "id": "sorsida",
