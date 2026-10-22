@@ -1361,8 +1361,8 @@
  },
  "beisfjordtotta": {
   "verticalM": 1430,
-  "gainM": 1428,
-  "distanceM": 7188,
+  "gainM": 1427,
+  "distanceM": 7194,
   "startM": 60,
   "summitM": 1448,
   "duration": "6–8 t",
@@ -1373,7 +1373,7 @@
   "grade": 3,
   "aspect": "N",
   "distanceKm": 7.2,
-  "cumdistM": 7187
+  "cumdistM": 7194
  },
  "pilan": {
   "verticalM": 840,
@@ -2193,8 +2193,8 @@
  },
  "rondslottet": {
   "verticalM": 1300,
-  "gainM": 1298,
-  "distanceM": 12391,
+  "gainM": 1300,
+  "distanceM": 12414,
   "startM": 1082,
   "summitM": 2178,
   "duration": "7–9 t",
@@ -2202,10 +2202,10 @@
   "steepestBandFrom": 1600,
   "steepestBandTo": 1700,
   "maxStepAngle": 34.9,
-  "grade": 2,
+  "grade": 3,
   "aspect": "SV",
   "distanceKm": 12.4,
-  "cumdistM": 12391
+  "cumdistM": 12414
  },
  "glitregga": {
   "verticalM": 910,
@@ -2272,20 +2272,20 @@
   "cumdistM": 5838
  },
  "lodalskapa": {
-  "verticalM": 1530,
-  "gainM": 1526,
-  "distanceM": 10633,
+  "verticalM": 1590,
+  "gainM": 1594,
+  "distanceM": 10745,
   "startM": 584,
   "summitM": 2082,
-  "duration": "7–9 t",
+  "duration": "8–10 t",
   "steepestBandAngle": 20.5,
   "steepestBandFrom": 1300,
   "steepestBandTo": 1400,
   "maxStepAngle": 31.1,
   "grade": 3,
   "aspect": "NV",
-  "distanceKm": 10.6,
-  "cumdistM": 10633
+  "distanceKm": 10.7,
+  "cumdistM": 10745
  },
  "snonipa": {
   "verticalM": 1500,
@@ -3201,8 +3201,8 @@
  },
  "store-ble": {
   "verticalM": 670,
-  "gainM": 670,
-  "distanceM": 6317,
+  "gainM": 673,
+  "distanceM": 6439,
   "startM": 714,
   "summitM": 1343,
   "duration": "4–6 t",
@@ -3212,8 +3212,8 @@
   "maxStepAngle": 35.2,
   "grade": 1,
   "aspect": "SØ",
-  "distanceKm": 6.3,
-  "cumdistM": 6317
+  "distanceKm": 6.4,
+  "cumdistM": 6439
  },
  "surloytenuten": {
   "verticalM": 460,

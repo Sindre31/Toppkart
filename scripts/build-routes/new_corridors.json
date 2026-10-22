@@ -1983,15 +1983,15 @@
       "waypoints": [
         {
           "name": "Sætrevatnet",
-          "lat": 61.79603,
-          "lng": 7.10282,
-          "elevationM": 606.0
+          "lat": 61.79786,
+          "lng": 7.10352,
+          "elevationM": 608.0
         },
         {
           "name": "Kåpevatnet",
-          "lat": 61.7994,
-          "lng": 7.17403,
-          "elevationM": 1211.0
+          "lat": 61.79685,
+          "lng": 7.17313,
+          "elevationM": 1222.0
         },
         {
           "name": "Bohrsbreen under Veslekåpa",
@@ -2881,9 +2881,9 @@
       },
       "waypoints": [
         {
-          "name": "Utløpet av Sønstevatn",
-          "lat": 59.779,
-          "lng": 9.21,
+          "name": "Brua over utløpet av Sønstevatn",
+          "lat": 59.77811,
+          "lng": 9.20746,
           "elevationM": 746.0
         },
         {

@@ -1628,30 +1628,18 @@
       "elevation_m": 1171.73
      },
      {
-      "name": "Vestsida av vika ved Lonin",
-      "lat": 61.8782,
-      "lng": 9.795,
-      "elevation_m": 1166.83
-     },
-     {
-      "name": "utenom bygningene",
-      "lat": 61.87849,
-      "lng": 9.79731,
-      "elevation_m": 1174.0,
-      "note": "Lagt inn for hand i hus-runden: linja gjekk gjennom Rondvassbu (way/199419811). Ho kjem inn over isen på Rondvatnet alt før hytta, så omvegen går sør og aust for tunet langs land, 22 m frå næraste bygning."
-     },
-     {
-      "name": "utenom bygningene",
-      "lat": 61.87876,
-      "lng": 9.79769,
-      "elevation_m": 1197.0,
-      "note": "Lagt inn for hand i hus-runden: linja gjekk gjennom Rondvassbu (way/199419811). Ho kjem inn over isen på Rondvatnet alt før hytta, så omvegen går sør og aust for tunet langs land, 22 m frå næraste bygning."
+      "name": "Austsida av vika ved Lonin",
+      "lat": 61.87694,
+      "lng": 9.79986,
+      "elevation_m": 1222.0,
+      "note": "Erstattar «Vestsida av vika ved Lonin» (61.8782/9.795): den sida fører over isen i vika for å nå hytta."
      },
      {
       "name": "Rondvassbu",
-      "lat": 61.87886,
-      "lng": 9.79645,
-      "elevation_m": 1169.19
+      "lat": 61.87891,
+      "lng": 9.79826,
+      "elevation_m": 1219.0,
+      "note": "Flytt frå hytta (61.87886/9.79645) til linja aust for tunet, 95 m."
      },
      {
       "name": "Stikrysset over Rondvassbu, ca 1440 m",
@@ -1675,7 +1663,9 @@
     "source": "audited (corrected)",
     "notes": "",
     "implied_start_m": 938.4,
-    "start_vs_implied_m": 143.3
+    "start_vs_implied_m": 143.3,
+    "avoidWater": true,
+    "corridorNote": "Vannrunden: linja gjekk på isen i vika ved Lonin (hus-runden la omvegen sør for tunet ut på vatnet). No følgjer ho Storronden-linja på land aust for vika og forbi Rondvassbu; vegpunkta under er flytte inn på den."
    },
    {
     "id": "doralseter",
@@ -4960,15 +4950,15 @@
     "waypoints": [
      {
       "name": "Sætrevatnet",
-      "lat": 61.79603,
-      "lng": 7.10282,
-      "elevation_m": 606.0
+      "lat": 61.79786,
+      "lng": 7.10352,
+      "elevation_m": 608.0
      },
      {
       "name": "Kåpevatnet",
-      "lat": 61.7994,
-      "lng": 7.17403,
-      "elevation_m": 1211.0
+      "lat": 61.79685,
+      "lng": 7.17313,
+      "elevation_m": 1222.0
      },
      {
       "name": "Bohrsbreen under Veslekåpa",
@@ -4978,7 +4968,9 @@
      }
     ],
     "source": "researched, verified (ok), no local audit",
-    "notes": "Bresprekker, og svært djupe sprekker på Bohrsbreen — tau og breutstyr er ikkje valfritt. Brattebakkane er skredterreng. Stegjern og isøks når snøen er hard."
+    "notes": "Bresprekker, og svært djupe sprekker på Bohrsbreen — tau og breutstyr er ikkje valfritt. Brattebakkane er skredterreng. Stegjern og isøks når snøen er hard.",
+    "avoidWater": true,
+    "corridorNote": "«Sætrevatnet» flytta frå namnepunktet på vatnet (61.79603/7.10282, vassflata) til linja ved osen, på land (61.79786/7.10352, 608 m), 207 m: vegpunktet på isen drog linja ut på vatnet, og Fri Flyt seier «gå mot Kåpevatnet, vend i sørlig retning». «Kåpevatnet» flytta frå namnepunktet på vatnet (61.7994/7.17403, vassflata) til linja ved sørbredden, på land (61.79685/7.17313, 1222 m), 287 m: vegpunktet på isen drog linja ut på vatnet, og Fri Flyt seier «gå mot Kåpevatnet, vend i sørlig retning». avoidWater: vårtur i mai–juni, isen kan ikkje takast for gitt."
    }
   ]
  },
@@ -6324,10 +6316,11 @@
     },
     "waypoints": [
      {
-      "name": "Utløpet av Sønstevatn",
-      "lat": 59.779,
-      "lng": 9.21,
-      "elevation_m": 746.0
+      "name": "Brua over utløpet av Sønstevatn",
+      "lat": 59.77811,
+      "lng": 9.20746,
+      "elevation_m": 746.0,
+      "note": "Flytt frå 59.779/9.21, som ligg i sundet, til brua (way 1017803125) på den merkte stien."
      },
      {
       "name": "Sigridsbu turisthytte",
@@ -6338,7 +6331,7 @@
     ],
     "source": "researched, verified (ok), no local audit",
     "notes": "Langedalen er den ene plassen på Blefjell der skred faktisk teller: randofolk.no skriver «vær oppmerksom på utløpssoner!» både for oppstigningen og for nedkjøringa den vegen. Selve toppen tas enten fra sørsida, som er brattest og steinete i lite snø, eller langs fjellet og opp fra nordsida, som er den slake. Skogpartiet ned mot Nordstulvatnet er brattere enn resten av ruta. Blefjell er høyfjell med tynt jordlag og lys kvartsitt — vinden pakker snøen hardt over tregrensa, og orienteringspunktene er få i skodde.",
-    "corridorNote": "«Sigridsbu turisthytte» moved onto the line in the review round: the solved line passed 180 m beside the researched point and walked out to it and back (59.79453/9.15568, 1175 m); the waypoint now sits where the line already ran, at DTM1 1184 m."
+    "corridorNote": "«Sigridsbu turisthytte» moved onto the line in the review round: the solved line passed 180 m beside the researched point and walked out to it and back (59.79453/9.15568, 1175 m); the waypoint now sits where the line already ran, at DTM1 1184 m. Vannrunden: linja kryssa sundet i Sønstevatn utan bru; no går ho på stien over brua (way 1017803125)."
    }
   ]
  },

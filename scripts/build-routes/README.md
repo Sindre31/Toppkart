@@ -8058,6 +8058,86 @@ The other 90 stay:
 | Still over 30° | 13 |
 | On a mapped way | 2 |
 
+## The water round: every route, every lake
+
+Every one of the 246 shipped routes was read for standing water the way
+`check_ground.py` reads it: runs of identical DTM1 elevation, and the terrain
+class at each of their vertices. 39 routes have at least one vertex on a lake.
+For each crossing the distance from shore was measured from the same terrain
+class, the nearest point that is not water in 16 bearings at 5 m steps, capped
+at 150 m. Overpass was too slow for this. Each crossing was then read against
+the guide and the source. None of the 39 is on a regulated lake.
+
+**Four lines moved, because the crossing was wrong:**
+
+- **Rondslottet from Spranget** ran 60 m across the bay at Lonin, the outlet end
+  of Rondvatnet. The guide's first paragraph tells the reader not to do that
+  («der er isen tynnest»), and its next sentence said the line had no vertex on
+  water. The house round put it there: its detour round Rondvassbu went south of
+  the yard, onto the ice. The line now takes Storronden's line from the same car
+  park between v133 and v177, on land east of the bay and past the hut. That
+  line was already clear of buildings and water. The outlet river crossing at the
+  mouth of the bay went with it. 12 391 → 12 414 m, +1298 → +1300 m, card 1300
+  as before. «Vestsida av vika ved Lonin» and the two house-round detour points
+  came out of the corridor. «Austsida av vika ved Lonin» and a Rondvassbu point
+  on the line replace them, and the corridor has `avoidWater`.
+- **Lodalskåpa** ran 2.0 km diagonally across Kåpevatnet and 180 m onto
+  Sætrevatnet. The research had pinned both waypoints on the lakes' name points,
+  in the middle of the water. Fri Flyt says «Gå mot Kåpevatnet, vend i sørlig
+  retning», and the tour is a May–June spring tour. The Kåpevatnet stretch
+  (v160–v222) is re-solved with `avoid_water` through three points on the south
+  shore. The line holds land to the east end of the lake, and the shore costs
+  the knolls at the water's edge. The spur out to the Sætrevatnet name point
+  (v54–v73) is cut on land along the north shore. 10 633 → 10 745 m,
+  +1526 → +1594 m, card 1520 → 1590. The 600–700 band is now 4.6° over 1238 m,
+  and the 1200–1300 band 2.0° over 2920 m. Both waypoints moved onto the line,
+  and the corridor has `avoidWater`.
+- **Store Ble from Sigridsbu** crossed the sound of Sønstevatn for 135 m where
+  there is no bridge. Its guide says the route crosses the outlet on randofolk's
+  bridge. It now follows the marked path (ways 1017803124, 1017803125 and
+  963218279) over that bridge. The two bridge vertices read `Innsjø`, 5 m.
+  6317 → 6439 m, +670 → +673 m, and the 700–800 band 2.6° over 1903 m. The
+  waypoint «Utløpet av Sønstevatn», which sat in the sound, is now the bridge.
+- **Beisfjordtøtta** stood 45 m on Pumpvatnet under «rundt vannet på land».
+  Three vertices moved 5–20 m onto the forest shore with the pipeline's own
+  `_off_water`. 7188 → 7194 m, +1428 → +1427 m.
+
+**Six became prose.** Each is natural, within 55 m of shore except Svartvatnet,
+and on a line the source uses or passes. Each guide now names the lake, the
+height, the length and the distance from shore:
+
+| Route | Lake | On water | From shore |
+| --- | --- | --- | --- |
+| Snota / Gråhaugen | Svartvatnet, 888–889 m | 674 + 239 m | over 150 m |
+| Kråkfjellet | Rundtjønnin, 526 m | 135 m | 40 m |
+| Rensfjellet | Rundtjønnin, 526 m | 74 m | 35 m |
+| Gygrastølen | Gygrastølvatnet, 492 m | 90 m | 55 m |
+| Juklavasstinden | Møsetjørna, 755 m | 90 m | 55 m |
+| Grafjell | Vesletjenn, 1095 m | 90 m | 20 m |
+
+The measurements are recorded in `measurements.json`. Grafjell's caption still
+said 581 m and 7.84 km from an older line, and now says 596 and 8.06 like the
+intro. Snøtindan said «linja holder land forbi alle vatnene» about the whole
+tour. That is true of the line from Løbergsbukta and not of the east route,
+which crosses four lakes as the source does. Both sentences now say which line.
+
+**The rest are right as they are.**
+
+- *Named in the guide, on the source's line:* Folarskardnuten, Heddersfjell,
+  Høgevarde (both), Kjerag, Kvamshesten, Langlitinden, Møysalen, Okla,
+  Rasletinden, Rombakstøtta, Rondslottet from Bjørnhollia, Sæbyggjenuten,
+  Snøtindan from Gullesfjordbotn, Spanstinden, Store Skalltinden (both),
+  Storehorn, Styggemann, Surløytenuten, Vassdalstinden, and Grafjell's Istjenn
+  and Donkelitjenn.
+- *Under the check's own thresholds* (under 60 m and near shore, a corner the
+  grid clips): Gullfjellstoppen from Gullbotn (45 m, 20 m out), Gyranfisen (45 m,
+  20 m), Nona (44 m, 30 m), Stortinden (45 m, 25 m), Strandtinden (45 m, 5 m),
+  Sunndalsnipa (7 m), Litletind and Rundfjellet (one vertex each).
+
+Rivers were not part of this round, except where a fix took one with it.
+Rondslottet and Storronden still cross Storula about 800 m south of
+Rondvassbu, on the line of the path from Spranget rather than the road's bridge.
+
 ## Network
 
 Everything is public and unauthenticated:
