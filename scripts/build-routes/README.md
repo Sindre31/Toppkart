@@ -8134,9 +8134,54 @@ which crosses four lakes as the source does. Both sentences now say which line.
   20 m), Nona (44 m, 30 m), Stortinden (45 m, 25 m), Strandtinden (45 m, 5 m),
   Sunndalsnipa (7 m), Litletind and Rundfjellet (one vertex each).
 
-Rivers were not part of this round, except where a fix took one with it.
-Rondslottet and Storronden still cross Storula about 800 m south of
-Rondvassbu, on the line of the path from Spranget rather than the road's bridge.
+Rivers were not part of this round, except where a fix took one with it. They
+are the next section's.
+
+## The river round
+
+Rivers do not show up as flat runs, because they fall. So every shipped line
+was read for DTM1 terrain class `Elv` every 15 m along its length instead:
+112 442 points, cached like the rest. `Elv` is the class for rivers mapped as
+areas, so a narrow stream does not show. 18 routes had at least one stretch
+on a river, 61 stretches in all. Each stretch was checked against OSM: the
+nearest bridge or ford, the river's name, and the mapped way the line was
+meant to be on. Then it was read against the guide.
+
+**Nine lines moved.** Most of them were not crossing a river so much as
+running along one, inside its mapped area.
+
+| Route | Was | Now | Line |
+| --- | --- | --- | --- |
+| Storronden / Spranget | 1163 m in Storula in 12 stretches, on and beside the summer path | Tjønnbakkvegen, the groomed track the guide names, from the car park to east of Lonin | 10 233 → 10 450 m, +1108 → +1109 |
+| Rondslottet / Spranget | 826 m in Storula, same approach | the same road | 12 414 → 12 616 m, +1300 → +1288, card 1300 → 1290 |
+| Nona / vestsiden | 251 m in Dalselva from the start | the forest road into Dalsdalen | 5426 → 5518 m, +1016 → +1024 |
+| Lodalskåpa | 237 m in the braided river below Bødalssætra | the track over its bridges and the path over Bødalselva | 10 745 → 11 042 m, +1594 → +1599, card 1590 → 1600 |
+| Vassdalstinden | 181 m along and in Sætreelva, 13–44 m off the road the guide says to follow | Engesetvegen | 6905 → 6892 m, +1232 → +1228 |
+| Nonstinden / østsiden | across the mouths of Lakselva and Vesterelva on the shore, 3–9 m above sea level | Våtvollveien over Lakselvbrua and the Vesterelva bridge | 5707 → 6154 m, +973 → +979 |
+| Snota / Trollheimshytta | across Slettåa off the bridge, and across Folda 170 m from the suspension bridge, under «over bruene på Slettåa og Folda» | over both bridges | 11 408 → 12 145 m, +1322 → +1345 |
+| Galdhøpiggen / Spiterstulen | across Visa 40–60 m north of the footbridge | over the footbridge | 5706 → 5800 m, +1440 → +1445 |
+| Rondslottet / Dørålseter | across Atna 40–60 m from the footbridge | over the footbridge | 12 437 → 12 495 m, +1278 → +1282 |
+
+Each new stretch is the mapped way itself: OSM nodes, densified to 45 m and read
+from DTM1. Snota's Folda stretch is the router's solve through the two ends of
+the bridge. Where a stretch still reads `Elv`, it is on a bridge. Every moved
+waypoint is now on the line, and each bridge is a corridor waypoint. The guides
+follow the new figures, and Nonstinden's says to walk round on the road rather
+than across the river mouths.
+
+**The rest are right as they are:**
+
+- *On a road bridge:* Mellomkollen (Skarselva), Tveitakvitingen (Mødalselva) and
+  Taraldsviktinden (Dalelva).
+- *Where the guide or source puts the crossing:*
+  - Finnbufjellet crosses Sendo at the research's waypoint «brua over Sendo-elva». The bridge is not in OSM.
+  - Middagstinden crosses Innfjordselva «på egnet sted slik kilden sier».
+  - Råskardfjellet's crossing was confirmed earlier (above).
+  - Fanaråken and Steindalsnosi cross Skauta below Turtagrø 4–9 m from the path, where the path crosses, with no bridge mapped.
+- *On a path along the bank:* Såta's Eikedalen line is 3–4 m from the mapped path
+  up Teigaelva. Lodalskåpa's last 15 m is one sample on the path along
+  Bødalselva. The river polygon and the path disagree by a few metres, and the
+  line follows the path the guide names.
 
 ## Network
 

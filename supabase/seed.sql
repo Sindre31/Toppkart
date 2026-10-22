@@ -158,12 +158,12 @@ values
   ('hornindalsrokken', 'Hornindalsrokken', 'Sunnmøre', 62.07148, 6.65766, 1527, 1470, '6–8 t', 4, 'Ø', 'mar–mai', '1470 høydemeter fra Langøylia over Aksla, Trollaksla og Sætrenibba; de siste 103 går på utsatt rygg.', true),
   ('sunndalsnipa', 'Sunndalsnipa', 'Sunnmøre', 62.01816, 6.32162, 1395, 990, '4–6 t', 2, 'S', 'des–apr', '990 høydemeter fra Grøndalsvatnet opp sørøstryggen, og en kilometer flatt platå fram til varden.', true),
   ('eidskyrkja', 'Eidskyrkja', 'Sunnmøre', 62.01709, 6.2624, 1482, 1120, '4–6 t', 3, 'N', 'mar–mai', '1120 høydemeter fra Skinnviksætra opp Blåbreen: 25 grader nederst på breen og et vidt toppplatå øverst.', true),
-  ('rondslottet',     'Rondslottet',     'Rondane',    61.9149,  9.8512, 2178, 1300, '6–8 t', 2, 'S',  'mar–mai', 'Rondanes høyeste: rolig høyfjellsterreng og stabil vårsesong.', true),
+  ('rondslottet',     'Rondslottet',     'Rondane',    61.9149,  9.8512, 2178, 1290, '6–8 t', 2, 'S',  'mar–mai', 'Rondanes høyeste: rolig høyfjellsterreng og stabil vårsesong.', true),
   ('glitregga', 'Glitregga', 'Nordfjord', 61.90741, 6.37278, 1297, 900, '4–6 t', 2, 'S', 'des–apr', '900 høydemeter fra idrettsanlegget i Randabygd, sørvendt og slak hele veien opp.', true),
   ('storronden', 'Storronden', 'Rondane', 61.8917, 9.86198, 2139, 1110, '6–8 t', 2, 'SV', 'mar–mai', '1110 høydemeter fra Spranget: seks kilometer innmarsj til Rondvassbu, så 2,6 km jevn vestrygg fra stidelet på 1440 moh.', true),
   ('skala',           'Skåla',           'Nordfjord',  61.86923,  6.97251, 1848, 1820, '6–8 t', 3, 'SV', 'mar–jun', '1848 sammenhengende høydemeter fra fjorden i Loen — en av landets lengste nedkjøringer.', true),
   ('skarsteinfjellet', 'Skarsteinsfjellet', 'Nordfjord', 61.83055, 6.73533, 1567, 1220, '5–7 t', 2, 'V', 'jan–apr', '1220 høydemeter opp en jevn rygg over Innvikdalen — hele ruta i terreng under 30 grader.', true),
-  ('lodalskapa', 'Lodalskåpa', 'Nordfjord', 61.79051, 7.20475, 2082, 1590, '7–9 t', 4, 'V', 'mai–jun', '1590 høydemeter fra Bødalssætra langs Kåpevatnet og over Bohrsbreen til det eneste 2000-metersfjellet i Nordfjord.', true),
+  ('lodalskapa', 'Lodalskåpa', 'Nordfjord', 61.79051, 7.20475, 2082, 1600, '7–9 t', 4, 'V', 'mai–jun', '1600 høydemeter fra Bødalssætra langs Kåpevatnet og over Bohrsbreen til det eneste 2000-metersfjellet i Nordfjord.', true),
   ('snonipa', 'Snønipa', 'Sunnfjord', 61.67808, 6.69055, 1827, 1500, '7–9 t', 3, 'SØ', 'feb–mai', '1500 høydemeter opp Haugadalen og midt i brefallet på Haugabreen til det høyeste fjellet i Sunnfjord.', true),
   ('glittertinden', 'Glittertinden', 'Jotunheimen', 61.65138, 8.5575, 2451, 1233, '7–9 t', 3, 'SØ', 'jun–jul', '13,4 km og 1233 høydemeter fra Veodalen: 7 km flat innmarsj til Glitterheim, så jevn stigning øst for Glitterbrean.', true),
   ('galdhopiggen',    'Galdhøpiggen',    'Jotunheimen',61.63644,  8.31243, 2469, 642, '6–8 t', 3, 'N',  'apr–jun', 'Norges tak på ski — bre, tau og stor høyde; vanligvis gått fra Juvasshytta.', true),
@@ -1124,7 +1124,7 @@ Sydrennene (30–45 grader) er variantene for stabil snø — E har 54,6-vindu 3
 where slug = 'skjellesvikgalten';
 
 update public.tk_tours set
-  description_up   = 'Fra Dale på vestsida av øya — 58 moh, like før skogsveien starter — følger du skitursporet innover Dalsdalen: skogsveien på 97, dalbotnen på 118, og skoggrensa allerede på 287 moh etter 3,21 km slak innmarsj. De to første hundremeterbeltene måler 1,9 og 3,7 grader: dette er transport, ikke klatring.
+  description_up   = 'Fra Dale på vestsida av øya — 58 moh, like før skogsveien starter — følger du skitursporet innover Dalsdalen: skogsveien på 97, dalbotnen på 118, og skoggrensa allerede på 287 moh etter 3,21 km slak innmarsj. De to første hundremeterbeltene måler 5,4 og 2,4 grader: dette er transport, ikke klatring.
 
 Gjennom øvre Dalsdalen på 280 og inn i renna på 453 moh. Kilden gir renna 30–45 grader sammenhengende ned til vann 428; på modellens linje ligger det bratteste enkeltpartiet, 38,4 grader, mellom 587 og 612 moh, og beltet fra 700 til 800 måler 22,7 i snitt.
 
@@ -2106,11 +2106,11 @@ Den andre dokumenterte ruta tar østsida fra båthamna i Kongsvik — 792 høyde
 where slug = 'taraldsviktinden';
 
 update public.tk_tours set
-  description_up   = 'Fra den store parkeringsplassen ved rundkjøringa — 49 moh — går du vest rundt botn, forbi parkeringa på vestsida, og gir fra deg 46 meter ned mot fjæra før ryggfoten tar imot på 75. Skogen slutter allerede på 125 moh etter 2,76 km — det meste av skituren er over tregrensa.
+  description_up   = 'Fra den store parkeringsplassen ved rundkjøringa — 49 moh — går du vest rundt botn på Våtvollveien, over Lakselvbrua og brua over Vesterelva — ikke over elveosene i fjæra, der isen ikke er å stole på — forbi parkeringa på vestsida, og gir fra deg 46 meter ned mot fjæra før ryggfoten tar imot på 75. Skogen slutter allerede på 125 moh etter 2,76 km — det meste av skituren er over tregrensa.
 
 Ryggen nordover er førsteakten: 289 moh der linja står på den, med beltet fra 100 til 200 på 20,5 grader. Før det brattere partiet svinger du vest inn i renna på 376 — og det er her fjellet viser seg: beltet fra 500 til 600 måler 24,1 grader, med turens bratteste enkeltparti, 31,1, mellom 542 og 563.
 
-Renna leverer deg på platået vest for 685-høyden — 475 moh der linja tar det — og traversen vestover passerer 793 før varden på 930; registeret løser 929,9. 92 meter gir du tilbake underveis, fjæra rundt botn medregnet.',
+Renna leverer deg på platået vest for 685-høyden — 475 moh der linja tar det — og traversen vestover passerer 793 før varden på 930; registeret løser 929,9. 98 meter gir du tilbake underveis, fjæra rundt botn medregnet.',
   description_down = 'Samme vei ned er normalen: 25–40 grader hos Fri Flyt, og renna krever den samme snøen ned som opp. De tre andre — nordsiden med parti på 30–40, vestsida mot Løbergsdalen på 30–40, og Karirenna — er grunnene til at fjellet står i denne boka.
 
 Karirenna mot nordøst er ekspertlinja: 45–50 grader med stor steinsprangfare i øvre del, og kilden krever stabil snø med god fylling. Flankemålingen gir nordøstflanken 50,3 grader — dagen for den velges med omhu, og den velges sjelden.',
@@ -3247,7 +3247,7 @@ Over breen, på 1516 moh, kommer du opp på toppflanken, og ruta dreier sørvest
 
 Det er verdt å vite hvorfor det første trekket går nordvest. Øst fra toppunktet måler 48,1 grader i snitt over 400 meter med et 57,9 graders vindu 130 til 190 meter ut — det er «toppflanken er stupbratt mot Ø» i tall. Sør og sørøst måler 42,0 og 36,5 i snitt, med vindu på 71,4 og 71,0 grader bare 10 til 70 meter ut, og nordøst 42,0 med 64,2. Vest og nordvest, der ruta kommer opp og går ned, måler 14,8 og 9,4.
 
-Den andre ruta kommer fra øst, fra Trollheimshytta: 1322 høydemeter på 11,41 km, over bruene på Slettåa og Folda, forbi Bossvasshøgda på 811 moh og opp i botnen vest for den. Ved 993 moh kommer den inn på den samme vinterruta fra Gråhaugen som resten av dette kortet beskriver, og derfra deler de to hylla under Litj-Snota, breen og toppflanken. Kilden er den samme forfatteren, og advarselen står uendret: ruta går i skredterreng, «både løsneområder over 30 grader bratt og utløpsområder som det ikke er mulig å omgå», og toppflanken er stupbratt mot øst. Linja fra Trollheimshytta gir fra seg 185 høydemeter underveis mot 95 fra Gråhaugen, og bratteste steget måler 35,3 grader mellom 1490 og 1514 moh.',
+Den andre ruta kommer fra øst, fra Trollheimshytta: 1345 høydemeter på 12,15 km, over bruene på Slettåa og Folda, forbi Bossvasshøgda på 811 moh og opp i botnen vest for den. Ved 993 moh kommer den inn på den samme vinterruta fra Gråhaugen som resten av dette kortet beskriver, og derfra deler de to hylla under Litj-Snota, breen og toppflanken. Kilden er den samme forfatteren, og advarselen står uendret: ruta går i skredterreng, «både løsneområder over 30 grader bratt og utløpsområder som det ikke er mulig å omgå», og toppflanken er stupbratt mot øst. Linja fra Trollheimshytta gir fra seg 209 høydemeter underveis mot 95 fra Gråhaugen, og bratteste steget måler 35,3 grader mellom 1490 og 1514 moh.',
   avalanche_notes  = jsonb_build_array(
     jsonb_build_object(
       'title', 'Ruta',
@@ -3696,7 +3696,7 @@ where slug = 'kolastinden';
 update public.tk_tours set
   description_up   = 'Start ved bilparkeringa etter bommen i Nupen, 92 moh. Fri Flyt oppgir «3 timer fra Vallasætra» og «4 timer fra Nupen», og forskjellen er reell: setra ligger på 324 moh, og den videre veien dit er bomvei som bare gjelder «hvis veien er åpen».
 
-Følg Engesetvegen oppover og østover til Vallasætra. De første 753 metrene grunn er flate — 1,1 grader — og så begynner veien: 4,3 grader fra 100 til 200 moh, 6,1 fra 200 til 300 og et brattere parti på 19,9 og 21,8 grader mellom 400 og 600 moh. Skogen holder til 581 moh langs linja. Derfra går den i åpent terreng langs kanten av et skogholt som den streifer på 637 moh, og fra 640 moh er det åpent for godt.
+Følg Engesetvegen oppover og østover til Vallasætra. De første 753 metrene grunn er flate — 1,1 grader — og så begynner veien: 4,3 grader fra 100 til 200 moh, 6,8 fra 200 til 300 og et brattere parti på 19,9 og 21,8 grader mellom 400 og 600 moh. Skogen holder til 581 moh langs linja. Derfra går den i åpent terreng langs kanten av et skogholt som den streifer på 637 moh, og fra 640 moh er det åpent for godt.
 
 Fra setra går du noen hundre meter inn Langedalen og deretter bratt opp kneiken til Bukkedalen, 791 moh — eventuelt med skiene på sekken. Bandet fra 700 til 800 moh er slakt, 8,9 grader over 632 meter grunn, og gir deg pusterommet før flanken.
 
@@ -4090,7 +4090,7 @@ Vanligste feil: å kjøre rett ned fra toppen i stedet for å ta seg tilbake til
 where slug = 'glitregga';
 
 update public.tk_tours set
-  description_up   = 'Fra Spranget p-plass, 1082 moh, følger du Rondvassbu-vegen seks kilometer nordøstover: over 1137 moh, gjennom dalen sørvest for hytta og fram til Rondvassbu på 1214 moh. Bandet mellom 1100 og 1200 moh måler 1,3 grader i snitt over fire og en halv kilometer. Rundt vika ved Lonin i sørenden av Rondvatnet holder du deg på land i stedet for å ta snarvegen over isen.
+  description_up   = 'Fra Spranget p-plass, 1082 moh, følger du Rondvassbu-vegen seks kilometer nordøstover: over 1137 moh, gjennom dalen sørvest for hytta og fram til Rondvassbu på 1214 moh. Bandet mellom 1100 og 1200 moh måler 1,3 grader i snitt over 4,7 kilometer. Rundt vika ved Lonin i sørenden av Rondvatnet holder du deg på land i stedet for å ta snarvegen over isen.
 
 Merk startpunktet: bomvegen til Spranget brøytes ikke, og parkeringa er offisielt åpen fra midten av juni. I mars–mai er Mysusæter siste brøytepunkt — det er 4,5 kilometer og hundre høydemeter lenger ned, og de kommer i tillegg til alt som står her.
 
@@ -4175,7 +4175,7 @@ where slug = 'skarsteinfjellet';
 update public.tk_tours set
   description_up   = 'Start på parkeringa ved Bødalssætra, 584 moh, snaut tretti kilometer fra Stryn forbi Loen og langs Lovatnet. Veien inn Bødalen er stengt om vinteren og åpner i mai eller juni — dette er en vårskitur, og sesongen står deretter.
 
-Gå østover langs nordøstsida av dalen mot osen av Sætrevatnet, 606 moh, og følg elva videre innover. Innmarsjen er lang og flat: bandet fra 500 til 600 moh måler 0,6 grader over 1628 meter grunn, 600 til 700 moh 4,6 grader over 1238, og 1200 til 1300 moh 2,0 grader over 2920 meter.
+Gå østover langs nordøstsida av dalen mot osen av Sætrevatnet, 606 moh, og følg elva videre innover. Innmarsjen er lang og flat: bandet fra 500 til 600 moh måler 0,5 grader over 1925 meter grunn, 600 til 700 moh 4,6 grader over 1238, og 1200 til 1300 moh 2,0 grader over 2920 meter.
 
 Ved Kåpevatnet, 1211 moh, holder linja land langs sørbredden til østenden av vatnet, og derfra svinger ruta sørover og opp Brattebakkane inn på Bohrsbreen. Den går ikke over isen: Fri Flyt sier «gå mot Kåpevatnet, vend i sørlig retning», og på en vårtur i mai og juni er isen på et vatn det underlaget du vet minst om. Langs land gir du tilbake noen titalls høydemeter over knausene ved strandkanten. Herfra er det bre: Kartverket registrerer breterreng på linja fra 1825 moh, og Fri Flyt beskriver svært dype sprekker på Bohrsbreen. Bandet fra 1300 til 1400 moh måler 20,5 grader, den bratteste hundremeteren på turen.
 
